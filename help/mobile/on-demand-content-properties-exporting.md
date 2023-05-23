@@ -13,7 +13,7 @@ exl-id: db1c33c9-8539-436d-b4d0-3d5e6fd688ed
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '330'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -50,22 +50,22 @@ De volgende tabel toont **Eigenschappen en knooppunten van app**.
   </tr>
   <tr>
    <td>dps-projectId</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td><p>Id/URI van het Mobile On-Demand-project waaraan deze app is gekoppeld of gekoppeld.</p> <p>Deze vereniging wordt gevormd via de Manage tegel van de Verbinding wanneer een auteur het project van een lijst van beschikbare projecten voor de bijbehorende Mobiele Cloud Service On-Demand kiest.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>App-titel.</td>
   </tr>
   <tr>
    <td>dps-resourceType</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Inhoudstype.</td>
   </tr>
   <tr>
    <td>dps-sharedHTMLResources-lastUploaded</td>
-   <td>Date</td>
+   <td>Datum</td>
    <td>Datum van laatste upload van gedeelde bronnen van AEM naar AEM Mobile.</td>
   </tr>
   <tr>

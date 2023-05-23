@@ -13,7 +13,7 @@ exl-id: e755159f-374f-42b8-b28b-e8864df44f9d
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '2034'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -154,20 +154,20 @@ Een toegankelijk formulier kan volledig worden ingevuld met alleen het toetsenbo
 
 De volgende sneltoetsen zijn beschikbaar in AEM Forms.
 
-| Actie | Sneltoets |
+| Handeling | Sneltoets |
 |---|---|
 | De cursor door een formulier verplaatsen | Tab |
 | De cursor achterwaarts door een formulier verplaatsen | Shift+Tab |
 | Naar volgend deelvenster gaan | Alt+Pijl-rechts |
 | Naar het vorige deelvenster gaan | Alt+Pijl-links |
 | De gevulde gegevens in een formulier opnieuw instellen | Alt+R |
-| Een formulier verzenden | Alt+Z |
+| Een formulier verzenden | Alt+S |
 
 Daarnaast zijn er verschillende sneltoetsen beschikbaar voor de **[!UICONTROL Date Picker]** in Adaptief Forms. Tik op de knop **[!UICONTROL Date Picker]** component en tik ![Configureren](assets/configure-icon.svg) om de eigenschappen te openen. In de **[!UICONTROL Patterns]** selecteert u een weergavepatroon met de **[!UICONTROL Type]** en **[!UICONTROL Pattern]** vervolgkeuzelijsten. Sla de eigenschappen op om het gebruik van sneltoetsen voor de **[!UICONTROL Date Picker]** component.
 
 De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adaptive Forms:
 
-| Actie | Sneltoets |
+| Handeling | Sneltoets |
 |---|---|
 | <ul><li>De opties van de component Date Picker weergeven wanneer de tabfocus het kalenderpictogram markeert</li><li>De gebeurtenis click uitvoeren wanneer de tabfocus een optie markeert</li> | Ruimte of Enter |
 | De opties van de component Datumkiezer verbergen | Esc |
@@ -177,9 +177,9 @@ De volgende sneltoetsen zijn beschikbaar voor de component Date Picker in Adapti
 | De cursor omhoog verplaatsen in de kalender die beschikbaar is in de component Datumkiezer | Pijl-omhoog |
 | De cursor achterwaarts verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-links |
 | De cursor vooruit verplaatsen in de kalender die beschikbaar is in de component Date Picker | Pijl-rechts |
-| Voer de handeling uit voor het bijschrift dat beschikbaar is tussen rechter- en linkernavigatiepijlen in de kalender | Shift+Pijl-omhoog |
-| Handeling voor pijl-rechts uitvoeren ![pijl-rechts](assets/right-navigation-icon.svg) beschikbaar in de kalender | Shift+Pijl-links |
-| Handeling voor pijlpictogram links uitvoeren ![pijl-links](assets/left-navigation-icon.svg) beschikbaar in de kalender | Shift+Pijl-rechts |
+| Voer de handeling uit voor het bijschrift dat beschikbaar is tussen rechter- en linkernavigatiepijlen in de kalender | Shift + Pijl-omhoog |
+| Handeling voor pijl-rechts uitvoeren ![pijl-rechts](assets/right-navigation-icon.svg) beschikbaar in de kalender | Shift + Pijl-links |
+| Handeling voor pijlpictogram links uitvoeren ![pijl-links](assets/left-navigation-icon.svg) beschikbaar in de kalender | Shift + Pijl-rechts |
 
 ## Gebruik het gereedschap Toegankelijkheid om resterende toegankelijkheidsproblemen te zoeken
 

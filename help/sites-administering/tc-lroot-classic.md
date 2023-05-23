@@ -53,7 +53,7 @@ De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot
    | Type taalkopie | Beschrijving |
    |---|---|
    | auto | Gebruikt het gedrag van bovenliggende pagina&#39;s |
-   | ignore | Er wordt geen kopie van deze pagina en de onderliggende elementen gemaakt |
+   | negeren | Er wordt geen kopie van deze pagina en de onderliggende elementen gemaakt |
    | `<language>+` (bijvoorbeeld Frans+) | Kopieert de pagina en alle onderliggende items van die taal |
    | `<language>` (bijvoorbeeld Frans) | Hiermee wordt alleen de pagina uit die taal gekopieerd |
 

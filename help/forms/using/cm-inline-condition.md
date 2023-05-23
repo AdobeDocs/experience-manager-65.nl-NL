@@ -26,7 +26,7 @@ Met AEM Forms kunt u inline-voorwaarden in tekstmodules gebruiken om de weergave
 
 De voorwaarden voeren berekeningen uit op gegevenswaarden die door het model/gegevenswoordenboek van de vormgegevens of door eind - gebruikers worden verstrekt. Met inline voorwaarden kunt u tijd besparen en menselijke fouten verminderen, terwijl u tegelijkertijd zeer contextuele en gepersonaliseerde interactieve communicatie/letters maakt.
 
-Meer informatie:
+Zie voor meer informatie:
 
 * [Een interactieve communicatie maken](../../forms/using/create-interactive-communication.md)
 * [Overzicht van Correspondentenbeheer](/help/forms/using/cm-overview.md)

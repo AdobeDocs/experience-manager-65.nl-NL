@@ -27,7 +27,7 @@ Voor informatie over extra lettertype-instellingen raadpleegt u [Algemene instel
 
 1. Klik in de beheerconsole op Instellingen > Core Systems Settings > Configurations.
 1. Typ in het vak Locatie van de map Systeemlettertypen het pad naar de map Klantlettertypen. U kunt meerdere mappen toevoegen, gescheiden door een puntkomma **;**
-1. Klik op OK.
+1. Klik op OK.
 1. Start het systeem opnieuw waarop AEM formulieren zijn geïnstalleerd.
 
 >[!NOTE]

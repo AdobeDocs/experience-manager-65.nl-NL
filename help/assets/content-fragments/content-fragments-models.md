@@ -92,7 +92,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
 1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist. Bijvoorbeeld:
 
-   ![save](assets/cfm-models-07.png)
+   ![opslaan](assets/cfm-models-07.png)
 
 1. Selecteren **Opslaan** om de definitie te handhaven.
 

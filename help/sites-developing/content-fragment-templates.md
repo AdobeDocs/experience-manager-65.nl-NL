@@ -14,7 +14,7 @@ exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
 source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
 workflow-type: tm+mt
 source-wordcount: '674'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -107,7 +107,7 @@ Met de specifieke structuur:
 
 Meer details over de knopen en hun eigenschappen zijn:
 
-* **Sjabloonmodel**
+* **Sjabloon**
 
    <table>
    <tbody>
@@ -123,7 +123,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>required<br /> </p> </td>
+     <td><p><code>String</code></p> <p>vereist<br /> </p> </td>
      <td>De titel van de sjabloon (weergegeven in de <strong>Fragment maken</strong> wizard).</td>
     </tr>
     <tr>
@@ -138,12 +138,12 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>precreateElements</code></td>
-     <td><p><code>Boolean</code></p> <p>required</p> </td>
+     <td><p><code>Boolean</code></p> <p>vereist</p> </td>
      <td><p><code>true</code>, als de subassets die de elementen (behalve het master element) van het inhoudsfragment vertegenwoordigen, moeten worden gemaakt wanneer het inhoudsfragment wordt gemaakt; <em>false</em> als ze "ter plekke" moeten worden gemaakt.</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
-     <td><p><code>Long</code></p> <p>required</p> </td>
+     <td><p><code>Long</code></p> <p>vereist</p> </td>
      <td><p>Versie van de inhoudsstructuur; momenteel ondersteund:</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>2</code>.<br /> </p> </td>
     </tr>
    </tbody>
@@ -160,7 +160,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>elements</code> </td>
-     <td><p><code>nt:unstructured</code></p> <p>required</p> </td>
+     <td><p><code>nt:unstructured</code></p> <p>vereist</p> </td>
      <td><p>Knooppunt dat de definitie van de elementen van het inhoudsfragment bevat. Het is verplicht en moet ten minste één onderliggend knooppunt voor het <strong>Hoofd</strong> element, but can contain [1..n] onderliggende knooppunten.</p> <p>Wanneer de sjabloon wordt gebruikt, wordt de elementensubvertakking gekopieerd naar de modelsubvertakking van het fragment.</p> <p>Het eerste element (zoals weergegeven in CRXDE Lite) wordt automatisch beschouwd als het eerste element <i>hoofd</i> element; de knooppuntnaam is irrelevant en het knooppunt zelf heeft geen speciale betekenis, afgezien van het feit dat het wordt vertegenwoordigd door het hoofdactief; de overige elementen worden behandeld als subactiva.</p> </td>
     </tr>
    </tbody>
@@ -182,17 +182,17 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>vereist</p> </td>
      <td>De titel van het element (wordt weergegeven in de elementenkiezer van de fragmenteditor).</td>
     </tr>
     <tr>
      <td><code>defaultContent</code></td>
-     <td><p><code>String</code></p> <p>optioneel</p> <p>default: ""</p> </td>
+     <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: ""</p> </td>
      <td>de initiële inhoud van het element; alleen worden gebruikt als <code>precreateElements</code><i> = </i><code>true</code></td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
-     <td><p><code>String</code></p> <p>optioneel</p> <p>default: <code>text/html</code></p> </td>
+     <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: <code>text/html</code></p> </td>
      <td><p>Eerste inhoudstype van het element; alleen worden gebruikt als <code>precreateElements</code><i> = </i><code>true</code>; momenteel ondersteund:</p>
       <ul>
        <li><code>text/html</code></li>
@@ -202,7 +202,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>name</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>vereist</p> </td>
      <td>De interne naam van het element; moet uniek zijn voor het fragmenttype.</td>
     </tr>
    </tbody>
@@ -242,12 +242,12 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>jcr:title</code></td>
-     <td><p><code>String</code></p> <p>required</p> </td>
+     <td><p><code>String</code></p> <p>vereist</p> </td>
      <td>De titel van de variatie (weergegeven in de fragmenteditor) <strong>Variatie</strong> tab (linkerspoor).</td>
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
-     <td><p><code>String</code></p> <p>optioneel</p> <p>default: ""</p> </td>
+     <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: ""</p> </td>
      <td>Een tekst die een beschrijving van de wijziging bevat <span>(weergegeven in de <strong>Variatie</strong> tab (linkerspoor).</code></td>
     </tr>
    </tbody>

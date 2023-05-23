@@ -43,7 +43,7 @@ Voordat u producten maakt, moet u een [steiger](/help/sites-authoring/scaffoldin
 
 Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat wordt met de producten geassocieerd door:
 
-* path
+* pad
 * het product kan verwijzen naar het substraat
 
 >[!NOTE]

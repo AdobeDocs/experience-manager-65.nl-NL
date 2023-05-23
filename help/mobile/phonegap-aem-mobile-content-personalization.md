@@ -113,7 +113,7 @@ Nadat de beheerder de twee cloudservices heeft geconfigureerd en de ontwikkelaar
 
 Voor het ontwerpen van doelgerichte inhoud in een AEM Mobile-app wordt een vergelijkbare procedure gevolgd als voor het ontwerpen van AEM Sites:
 
-Hier vindt u een volledig overzicht van [Doelinhoud ontwerpen in AEM](/help/sites-authoring/personalization.md)
+Klik hier voor een volledig overzicht op [Doelinhoud ontwerpen in AEM](/help/sites-authoring/personalization.md)
 
 ## Voor ontwikkelaars {#for-developers}
 
@@ -252,7 +252,7 @@ Wanneer de auteur van de inhoud klaar is met het maken van inhoud voor de mobiel
    <td>Indien waar (true), worden alle video's die in de aanbieding zijn opgenomen, weergegeven. Als er onjuiste video's worden overgeslagen.</td>
   </tr>
   <tr>
-   <td>path</td>
+   <td>pad</td>
    <td>/content/campagnes/&lt;brand&gt;</td>
    <td>wijst op het merk van de campagne waaraan de aanbiedingen deelnemen. Momenteel moeten alle aanbiedingen van dezelfde campagne afkomstig zijn.</td>
   </tr>

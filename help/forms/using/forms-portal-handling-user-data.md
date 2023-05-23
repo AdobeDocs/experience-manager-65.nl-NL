@@ -102,8 +102,8 @@ Concepten en verzendgegevens voor alle anonieme gebruikers worden opgeslagen in 
 
 Wanneer AEM wordt gevormd om gegevens in een gegevensbestand op te slaan, vormen portalconcept en voorleggingsgegevens in de volgende gegevensbestandlijsten voor zowel het programma geopende als anonieme gebruikers worden opgeslagen:
 
-* gegevens
-* metadata
+* data
+* metagegevens
 * aanvullende metagegevens
 
 #### Gebruikersgegevens openen {#access-user-data-1}

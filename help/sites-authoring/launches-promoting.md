@@ -105,7 +105,7 @@ Wanneer u een startpagina bewerkt, wordt **Starten bevorderen** actie is ook bes
 
 ## Een geneste start bevorderen {#promoting-a-nested-launch}
 
-Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar elk van de bronnen, inclusief de hoofdbron (productie).
+Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de bronnen, inclusief de hoofdbron (productie).
 
 ![chlimage_1-104](assets/chlimage_1-104.png)
 

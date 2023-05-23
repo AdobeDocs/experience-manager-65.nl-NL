@@ -13,7 +13,7 @@ exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '434'
-ht-degree: 4%
+ht-degree: 2%
 
 ---
 
@@ -25,7 +25,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon]
 
    * SCF Sandbox - De hoofdpagina voor de Engelse versie van de site.
 
-   * SCF-afspelen - Onderliggend item van de hoofdpagina waarop wordt afgespeeld.
+   * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
 
 Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md), wordt het ontworpen zodat de wortelpagina opsporing van de aangewezen taal voor de gebruiker door de kopbal van de HTML kan uitvoeren, en aan de aangewezen belangrijkste pagina voor de taal opnieuw richt. De conventie is de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, &quot;fr&quot; voor Frans, enzovoort.
 

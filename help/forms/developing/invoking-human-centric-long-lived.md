@@ -489,7 +489,7 @@ Bericht onder de Verwijzingen van de Dienst, zijn er twee punten. Het eerste ite
 1. In de **Sjablonen** list, selecteer **ASP.NET-website**.
 1. In de **Locatie** selecteert u een locatie voor uw project. Geef uw project een naam *InvokePreLoanProcess*.
 1. In de **Taal** doos, uitgezochte Visuele C#
-1. Klik op OK.
+1. Klik op OK.
 
 **Serviceverwijzingen toevoegen:**
 

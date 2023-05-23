@@ -226,7 +226,7 @@ Te gebruiken [!DNL Adobe Launch] configuratie in een bestaand adaptief formulier
 1. Selecteer het adaptieve formulier en tik op **[!UICONTROL Properties]**.
 1. In de **[!UICONTROL Basic]** selecteert u de [configuratiecontainer](#create-adobe-launch-configuration) wordt gebruikt tijdens het maken van de Adobe Launch-configuratie.
 1. Tik op **[!UICONTROL Save & Close]**. Het adaptieve formulier is ingeschakeld voor [!DNL Adobe Analytics].
-1. Het formulierontwerp publiceren.
+1. Publiceer het formulier.
 
 Nadat u [!DNL Adobe Analytics] voor een adaptief formulier kunt u [validate](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/implement-solutions/analytics.html?lang=en#validate-the-page-view-beacon) als er een geschikte gegevensgebeurtenisstroom is tussen AEM Forms en [!DNL Adobe Analytics]. De integratie van AEM Forms met Adobe Analytics is voltooid. U kunt nu [configureren en weergeven van rapporten in Adobe Analytics](#view-reports-adobe-analytics).
 

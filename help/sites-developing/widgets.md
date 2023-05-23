@@ -54,10 +54,10 @@ Een clientbibliotheek maken:
 
 1. Hieronder een knooppunt maken `/apps/<project>` met de volgende eigenschappen:
 
-   * name=&quot;clientlib&quot;
+   * name = &quot;clientlib&quot;
    * jcr:mixinTypes=&quot;[mix:vergrendelbaar]&quot;
-   * jcr:primaryType=&quot;cq:ClientLibraryFolder&quot;
-   * sling:resourceType=&quot;widgets/clientlib&quot;
+   * JCR: primaryType = &quot;CQ: ClientLibraryFolder&quot;
+   * strop: resourceType = &quot;widgets/clientlib&quot;
    * categorieën=&quot;[&lt;category-name>]&quot;
    * afhankelijkheden=&quot;[cq.widgets]&quot;
 
@@ -326,11 +326,11 @@ De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en JavaScrip
 Als u de opdracht **Instelbaar** dialoogvenster:
 
 1. Het dialoogvenster van het dialoogvenster **Dynamisch dialoogvenster** met de **Instelbaar** dialoogvenster: volgt u de beschreven stappen voor de [Voorbeeld 2: Dialoogvenster Eén venster](#example-single-panel-dialog)
-1. Edit the component: the dialog displays as follows:
+1. Bewerk de component: het dialoogvenster wordt als volgt weergegeven:
 
 ![screen_shot_2012-02-01at115300am](assets/screen_shot_2012-02-01at115300am.png)
 
-#### Example 3: Toggle Fields Dialog {#example-toggle-fields-dialog}
+#### Voorbeeld 3: het dialoogvenster velden in-/uitschakelen {#example-toggle-fields-dialog}
 
 De **Velden in-/uitschakelen** wordt een venster met één tab weergegeven. De tab heeft een selectievakje: wanneer deze is ingeschakeld, wordt een veldset met twee tekstvelden weergegeven.
 
@@ -410,12 +410,12 @@ De aangepaste `multifield` widget (xtype = `ejstcustom`):
 * Overschrijvingen `CQ.Ext.Component#initComponent` om de drie velden toe te voegen:
    * `allowField` is een [CQ.form.Selection](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.Selection) object van het type &#39;select&#39;. optionsProvider is een configuratie van het Selection-object die wordt geïnstantieerd met de optionsProvider-configuratie van de CustomWidget die is gedefinieerd in het dialoogvenster
    * `otherField` is een [CQ.Ext.form.TextField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.form.TextField) object
-* Treedt de methodes `setValue`, `getValue`, en `getRawValue` van [ CQ.form.CompositeField ](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) met voeten om de waarde van CustomWidget met het formaat te plaatsen en terug te winnen:
+* Hiermee overschrijft u de methoden `setValue`, `getValue`, en `getRawValue` van [CQ.form.CompositeField](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.form.CompositeField) om de waarde van CustomWidget met de indeling in te stellen en op te halen:
    `<allowField value>/<otherField value>, for example: 'Bla1/hello'`.
-* Registreert zichzelf als &#39; `ejstcustom`&#39; xtype:
+* Registreert zichzelf als &#39; `ejstcustom` &#39; &#39; xtype:
    `CQ.Ext.reg('ejstcustom', Ejst.CustomWidget);`
 
-The **Custom Multifield** widget-based dialog displays as follows:
+Het aangepaste dialoogvenster voor op een **groepsbeleidsobject gebaseerde multifields** wordt als volgt weergegeven:
 
 ![screen_shot_2012-02-01at115840am](assets/screen_shot_2012-02-01at115840am.png)
 
@@ -501,9 +501,9 @@ De **Insteekmodule Rich Text Editor (RTE)** Het dialoogvenster ziet er als volgt
 
 >[!NOTE]
 >
->In dit voorbeeld wordt alleen getoond hoe u het clientgedeelte van de logica implementeert: placeholders (*[tekst]*) moeten dan op server-kant uitdrukkelijk (bijvoorbeeld, in de component JSP) worden ontleed.
+>In dit voorbeeld wordt alleen getoond hoe u het clientgedeelte van de logica implementeert: de plaatsaanduidingen (*[text]*) moet vervolgens expliciet op de server worden geparseerd (bijvoorbeeld in de JSP-component).
 
-### Tree Overview {#tree-overview}
+### Overzicht van boomstructuur {#tree-overview}
 
 De out-of-the-box ` [CQ.Ext.tree.TreePanel](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.Ext.tree.TreePanel)` -object biedt een gestructureerde UI-representatie van gegevens met boomstructuur. De component Overzicht van de Boom inbegrepen in **ExtJS-widgets gebruiken** toont hoe u het pakket kunt gebruiken `TreePanel` object om een JCR-structuur onder een bepaald pad weer te geven. Het venster zelf kan worden gekoppeld of losgekoppeld. In dit voorbeeld is de vensterlogica ingesloten in de JSP-component tussen &lt;script>&lt;/script> -tags.
 
@@ -526,7 +526,7 @@ De component Overzicht van de Boom:
 
 * In het dialoogvenster kunt u de grootte van het venster instellen en het venster koppelen of loskoppelen (zie de details hieronder).
 
-The component jsp:
+De component JSP:
 
 * Haalt de breedte, hoogte en gedokte eigenschappen op uit de opslagplaats.
 * Geeft enige tekst weer over de gegevensindeling van het boomoverzicht.
@@ -590,8 +590,8 @@ De component wordt als volgt weergegeven:
 
 In zijn versie van de doos, **Rasteroverzicht** geeft een venster weer met statische gegevens in tabelvorm. In dit voorbeeld wordt de logica op twee manieren ingesloten in de jsp van de component:
 
-* the generic logic is defined between &lt;script>&lt;/script> tags
-* the specific logic is available in a separate .js file and is linked to in the jsp. This setup lets you switch between the two logic (static/dynamic) by commenting the desired &lt;script> tags.
+* de algemene logica wordt gedefinieerd tussen &lt;script>&lt;/script> tags
+* de specifieke logica is beschikbaar in een afzonderlijk JS-bestand en is gekoppeld in het Jsp. Met deze instelling kunt u schakelen tussen de twee logica (statisch/dynamisch) door een opmerking over de gewenste &lt;script> tags.
 
 De component Rasteroverzicht:
 
@@ -599,7 +599,7 @@ De component Rasteroverzicht:
    `/apps/extjstraining/components/gridoverview`
 * In het dialoogvenster kunt u de grootte van het venster instellen en het venster koppelen of ontkoppelen.
 
-The component jsp:
+De component JSP:
 
 * Haalt de breedte, hoogte en gedokte eigenschappen op uit de opslagplaats.
 * Geeft wat tekst weer als inleiding op de gegevensindeling van het rasteroverzicht.

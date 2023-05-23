@@ -14,7 +14,7 @@ exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
 source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
 workflow-type: tm+mt
 source-wordcount: '3337'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -83,7 +83,7 @@ Zie [Document met recordsjabloonconfiguratie](#document-of-record-template-confi
 
 In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden weergegeven in een recorddocument.
 
-### Fields {#fields}
+### Velden {#fields}
 
 <table>
  <tbody>
@@ -91,7 +91,7 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
    <th>Aangepast formulieronderdeel</th>
    <th>Overeenkomende XFA-component</th>
    <th>Standaard opgenomen in document van recordsjabloon?</th>
-   <th>Opmerkingen</th>
+   <th>Notities</th>
   </tr>
   <tr>
    <td>Knop</td>
@@ -154,8 +154,8 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
    <td> </td>
   </tr>
   <tr>
-   <td>Verzendknop</td>
-   <td><p>Knop Verzenden via e-mail</p> <p>Knop HTTP verzenden</p> </td>
+   <td>Verzenden, knop</td>
+   <td><p>Knop E-mail verzenden</p> <p>Knop HTTP verzenden</p> </td>
    <td>false</td>
    <td> </td>
   </tr>
@@ -181,7 +181,7 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
   <tr>
    <th>Aangepast formulieronderdeel</th>
    <th>Overeenkomende XFA-component</th>
-   <th>Opmerkingen</th>
+   <th>Notities</th>
   </tr>
   <tr>
    <td>Deelvenster<br /> </td>
@@ -193,7 +193,7 @@ In de volgende secties wordt beschreven hoe adaptieve formulierelementen worden 
 
 ### Statische componenten {#static-components}
 
-| Aangepast formulieronderdeel | Overeenkomende XFA-component | Opmerkingen |
+| Aangepast formulieronderdeel | Overeenkomende XFA-component | Notities |
 |---|---|---|
 | Afbeelding | Afbeelding | De gebonden of niet-gebonden componenten TextDraw en Image worden altijd in het recorddocument weergegeven voor een adaptief formulier op basis van XSD, tenzij ze worden uitgesloten met behulp van het document met recordinstellingen. |
 | Tekst | Tekst |
@@ -387,7 +387,7 @@ Het document met recordinstellingen van een component is beschikbaar onder de ei
    * **[!UICONTROL After]** > **[!UICONTROL Go To Next Page]**: Hiermee wordt het vullen van de volgende pagina gestart nadat het deelvenster is geplaatst.
    * **[!UICONTROL After]** > **[!UICONTROL Go To Page]** > Naam van pagina: Hiermee wordt het vullen van de opgegeven pagina gestart nadat het deelvenster is geplaatst.
 * **[!UICONTROL Pagination]** > **[!UICONTROL Overflow]**: Hiermee stelt u een overloop in voor een deelvenster of een tabel die meerdere pagina&#39;s beslaat. De volgende velden zijn beschikbaar in het dialoogvenster **[!UICONTROL Overflow]** sectie:
-   * **[!UICONTROL Overflow]** > **[!UICONTROL None]**: Hiermee wordt een begin gemaakt met het invullen van de volgende pagina. Als een pagina-einde niet automatisch wordt ingevoegd, [!DNL AEM Forms] voegt een pagina-einde toe.
+   * **[!UICONTROL Overflow]** > **[!UICONTROL None]**: Hiermee wordt het vullen van de volgende pagina gestart. Als een pagina-einde niet automatisch wordt ingevoegd, [!DNL AEM Forms] voegt een pagina-einde toe.
    * **[!UICONTROL Overflow]** > **[!UICONTROL Go to Content Area]** > Naam van inhoudsgebied: Hiermee wordt het vullen van het opgegeven inhoudsgebied gestart.
    * **[!UICONTROL Overflow]** > **[!UICONTROL Go To Page]** > Naam van pagina: Hiermee wordt het vullen van de opgegeven pagina gestart.
 

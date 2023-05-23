@@ -92,7 +92,7 @@ Een component in- of uitschakelen:
    Op de **Toegestane componenten** tab, bepaalt u welke componenten voor parsys beschikbaar zijn.
 
    * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-   * U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
+   * U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
    * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.

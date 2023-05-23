@@ -22,7 +22,7 @@ ht-degree: 0%
 
 U kunt Experience Manager-elementen die in Dynamic Media Classic (Scene7) zijn gepubliceerd, in verschillende viewers weergeven:
 
-* In-/uitzoomen
+* Zoomen
 * Flyout
 * Video
 * Afbeeldingssjabloon
@@ -130,7 +130,7 @@ Adobe raadt u aan elementen alleen vanuit de doelmap Dynamic Media Classic (Scen
 
 De volgende Dynamic Media Classic (Scene7)-componenten zijn beschikbaar in de Experience Manager:
 
-* In-/uitzoomen
+* Zoomen
 * Flyout (zoomen)
 * Afbeeldingssjabloon
 * Afbeelding
@@ -199,7 +199,7 @@ U stelt deze configuratieopties in door bijvoorbeeld een Dynamic Media Classic-c
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-### In-/uitzoomen {#zoom}
+### Zoomen {#zoom}
 
 De HTML5 component van het Gezoem toont een groter beeld wanneer u + knoop drukt.
 

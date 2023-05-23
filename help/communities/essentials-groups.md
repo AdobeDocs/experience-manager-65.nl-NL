@@ -38,7 +38,7 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack)k
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/group/components/hbs/communitygroupmemberlist/communitygroupmemberlist.hbs<br /> </td>
   </tr>
   <tr>
@@ -65,7 +65,7 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack)k
    <td>cq.social.hbs.communitygroups</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/group/components/hbs/communitygroups/communitygroups.hbs<br /> </td>
   </tr>
   <tr>

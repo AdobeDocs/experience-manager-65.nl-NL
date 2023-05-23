@@ -52,7 +52,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> <p>Voor grotere catalogi wordt aanbevolen de handelsmigratietaak afzonderlijk uit te voeren door de volgende Java-systeemeigenschap aan AEM door te geven:</p> <p><code>propertyname: com.adobe.upgrade.forcemigration</code></p> <p><code>property value: com.day.cq.compat.codeupgrade.impl.cq64.CQ64CommerceMigrationTask</code></p> <p>Na de migratie moet AEM opnieuw worden opgestart.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>

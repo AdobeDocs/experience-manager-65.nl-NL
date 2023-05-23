@@ -143,7 +143,7 @@ Gebruik de volgende procedure om een tekenreeks toe te voegen.
    ![chlimage_1-209](assets/chlimage_1-209.png)
 
 1. Typ de Engelse tekenreeks in het vak Tekenreeks van het dialoogvenster Tekenreeks toevoegen. Typ indien nodig een vertaaltip voor de vertaler in het vak Opmerking.
-1. Klik op OK.
+1. Klik op OK.
 1. Klik op Opslaan.
 
    ![chlimage_1-210](assets/chlimage_1-210.png)

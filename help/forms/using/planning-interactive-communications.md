@@ -132,8 +132,8 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
    <td>Gespecialiseerde vraag - Uitgaand</td>
    <td><p>Kolomnamen:</p>
     <ul>
-     <li>Date</li>
-     <li>Time</li>
+     <li>Datum</li>
+     <li>Tijd</li>
      <li>Getal</li>
      <li>Duur</li>
      <li>Heffingen</li>

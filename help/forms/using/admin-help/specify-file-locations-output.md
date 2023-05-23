@@ -13,7 +13,7 @@ exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '314'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -35,7 +35,7 @@ De standaardwaarde is een lege tekenreeks.
 
 De standaardwaarde is `com/adobe/formServer/PA/pa_output.xci`.
 
-**Cachelocatie:** Hiermee geeft u de locatie van de uitvoerschijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Kies een van de volgende opties:
+**Cachelocatie:** Hiermee geeft u de locatie van de uitvoerschijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Selecteer een van de volgende opties:
 
 **Standaardlocatie:** Dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
 

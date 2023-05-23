@@ -15,7 +15,7 @@ exl-id: 90503d29-e079-43f4-a5dc-ce90ed7844c6
 source-git-commit: 1b2d743f8f2172c4e4663917d598734cb1ea1ea4
 workflow-type: tm+mt
 source-wordcount: '477'
-ht-degree: 14%
+ht-degree: 0%
 
 ---
 
@@ -39,11 +39,11 @@ Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld
 
 
 1. Start het installatieprogramma van AEM Forms Designer door te dubbelklikken op setup.exe.
-1. Ga verder en geef uw details en het serienummer op het scherm Personaliseren op.
-1. Als u de licentieovereenkomst wilt accepteren, klikt u op Volgende om door te gaan.
-1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een andere locatie wilt installeren. Klik op Next.
-1. Klik op Vorige als u voorkeuren wilt wijzigen. Klik op Installeren om Designer te installeren.
-1. Klik na de installatie op Voltooien.
+1. Ga verder en geef uw gegevens en het serienummer op het scherm Personaliseren op.
+1. Als u de licentieovereenkomst accepteert, klikt u op Volgende om door te gaan.
+1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een door u gekozen locatie wilt installeren. Klik op Next.
+1. Klik op Vorige om voorkeuren te wijzigen. Klik op Installeren om Designer te installeren.
+1. Klik op Voltooien als de installatie is voltooid.
 
 U kunt de AEM Forms Designer ook via de opdrachtregel installeren in de passieve of stille modus.
 

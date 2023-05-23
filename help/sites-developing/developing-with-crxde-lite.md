@@ -104,7 +104,7 @@ CRXDE Lite biedt de volgende functionaliteit:
    <td><p><strong>Alles opslaan</strong>:<br /> </p> <p>Hiermee slaat u alle aangebrachte wijzigingen op. Totdat u op Opslaan klikt, zijn de wijzigingen tijdelijk en gaan deze verloren wanneer u de console afsluit.</p> <p><strong>Vorige versie</strong>:</p> <p>Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in het geselecteerde knooppunt sinds de laatste opslaghandeling en wordt vervolgens de huidige status van de opslagruimte voor het geselecteerde knooppunt opnieuw geladen.</p> <p><strong>Alles herstellen</strong>:</p> <p>Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in de gehele opslagplaats sinds de laatste opslaghandeling, en wordt vervolgens de huidige status van de opslagplaats opnieuw geladen.</p> </td>
   </tr>
   <tr>
-   <td>Maken ...<br /> </td>
+   <td>Maken...<br /> </td>
    <td><p>Vervolgkeuzemenu voor het maken van het volgende onder het geselecteerde knooppunt:<br /> </p> <p>- <strong>Knooppunt</strong>: een knooppunt met een willekeurig knooppunttype<br /> </p> <p>- <strong>Bestand</strong>: nt:bestandnode en het bijbehorende nt:resource subnode</p> <p>- <strong>Map</strong>: nt:mapknooppunt</p> <p>- <strong>Sjabloon</strong>: AEM sjabloon</p> <p>- <strong>Component</strong>: AEM</p> <p>- <strong>Dialoog</strong>: Dialoogvenster AEM</p> </td>
   </tr>
   <tr>
@@ -124,7 +124,7 @@ CRXDE Lite biedt de volgende functionaliteit:
    <td>Hiermee verplaatst u het geselecteerde knooppunt naar het knooppunt dat via het dialoogvenster is ingesteld.</td>
   </tr>
   <tr>
-   <td>Naam wijzigen ...<br /> </td>
+   <td>Naam wijzigen...<br /> </td>
    <td>Wijzigt de naam van het geselecteerde knooppunt.<br /> </td>
   </tr>
   <tr>
@@ -132,7 +132,7 @@ CRXDE Lite biedt de volgende functionaliteit:
    <td>Hiermee kunt u mixingtypen toevoegen aan het knooppunttype. De mixintypes worden meestal gebruikt om geavanceerde eigenschappen zoals versioning, toegangsbeheer toe te voegen, van verwijzingen voorzien, en het sluiten aan de knoop.</td>
   </tr>
   <tr>
-   <td>Opties<br /> </td>
+   <td>Gereedschappen<br /> </td>
    <td><p>Vervolgkeuzemenu met de volgende gereedschappen:</p> <p>- <strong>Serverconfiguratie...</strong>: om toegang te krijgen tot de Felix-console.</p> <p>- <strong>Query uitvoeren...</strong>: om een query uit te voeren op de repository.</p> <p>- <strong>Bevoegdheden ...</strong>: om het beheer van bevoegdheden te openen, waar u bevoegdheden kunt weergeven en toevoegen.</p> <p>- <strong>Toegangsbeheer testen...</strong>: een plaats waar u de toestemming voor bepaalde weg en/of hoofd kunt testen.</p> <p>- <strong>Notitietype exporteren</strong>: om knooppunttypes in het systeem als knoopaantekening uit te voeren.</p> <p>- <strong>Nodetype importeren...</strong>: om knooppunttypen te importeren met gebruik van codenotatie.</p> <p>- <strong>Foutopsporing SiteCatalyst installeren...</strong>: instructies voor het installeren van Analytics Debugger.</p> </td>
   </tr>
   <tr>

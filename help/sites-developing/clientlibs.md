@@ -352,7 +352,7 @@ Een preprocessorconfiguratie op de clientlib knoop neemt belangrijkheid over de 
 
 ### Indeling en voorbeelden {#format-and-examples}
 
-#### Format {#format}
+#### Indeling {#format}
 
 ```xml
 config:= mode ":" processorName options*;

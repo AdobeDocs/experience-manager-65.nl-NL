@@ -52,7 +52,7 @@ In de volgende tabel wordt de koppeling tussen sjablonen en paginacomponent opge
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Sjabloonmodel</strong></p> </td>
+   <td><p><strong>Sjabloon</strong></p> </td>
    <td><p><strong>Pagina-component</strong></p> </td>
   </tr>
   <tr>

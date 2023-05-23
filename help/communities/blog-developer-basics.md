@@ -14,7 +14,7 @@ exl-id: 51f616e8-4aba-47f6-b948-d5147d84bbb6
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '442'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -51,7 +51,7 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door het t
    <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.journaal</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/journal/components/hbs/journal/journal.hbs<br /> /libs/social/journal/components/hbs/entry_topic/list-item.hbs</td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door het t
 |---|---|
 | [**inclusief**](/help/communities/scf.md#add-or-include-a-communities-component) | Nee |
 | [**clientllibs**](/help/communities/clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| **sjablonen** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **eigenschappen** | zie [Blogonderdeel](/help/communities/blog-feature.md) |
 
@@ -98,7 +98,7 @@ Met ingang van AEM 6.1. [gemeenschappelijk archief](/help/communities/working-wi
 
 **De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
-Zie :
+Zie:
 
 * [Overzicht opslagbronprovider](/help/communities/srp.md) - introductie en overzicht van het gebruik in de repository.
 * [SRP en UGC Essentials](/help/communities/srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.

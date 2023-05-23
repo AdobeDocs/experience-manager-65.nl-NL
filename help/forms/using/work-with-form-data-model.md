@@ -456,7 +456,7 @@ In de volgende tabel worden de beperkingen voor invoergegevens weergegeven die z
    <td>Invoergegevensbron</td> 
   </tr> 
   <tr> 
-   <td>required</td> 
+   <td>vereist</td> 
    <td>Indien waar (true), moet de parameter in de invoergegevens worden opgenomen.</td> 
    <td>Swagger, WSDL en database</td> 
   </tr> 
@@ -496,7 +496,7 @@ In de volgende tabel worden de beperkingen voor invoergegevens weergegeven die z
    <td>Swagger, WSDL, Odata en database</td> 
   </tr> 
   <tr> 
-   <td>pattern</td> 
+   <td>patroon</td> 
    <td>Geeft een vaste reeks tekens aan. De invoertekenreeks wordt alleen gevalideerd als de tekens voldoen aan het opgegeven patroon.</td> 
    <td>Swagger</td> 
   </tr> 

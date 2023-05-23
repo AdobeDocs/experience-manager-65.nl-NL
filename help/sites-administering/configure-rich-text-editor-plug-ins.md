@@ -62,7 +62,7 @@ Nadat u een plug-in hebt geactiveerd, volgt u deze richtlijnen om de `features` 
 |  | Alle functies inschakelen | Enkele specifieke functies inschakelen | Alle functies uitschakelen |
 |---|---|---|---|
 | Naam | functies | functies | functies |
-| Type | Tekenreeks | String[] (meerdere tekenreeksen; Stel Type in op String en klik op Meerdere in CRXDE Lite) | Tekenreeks |
+| Type | String | String[] (meerdere tekenreeksen; Stel Type in op String en klik op Meerdere in CRXDE Lite) | String |
 | Waarde | `*` (een sterretje) | ingesteld op een of meer functiewaarden | - |
 
 ## Begrijp de findreplace plug-in {#findreplace}
@@ -162,8 +162,8 @@ U kunt de volgende eigenschappen gebruiken voor `htmlPasteRules`.
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| `allowBlockTags` | Tekenreeks | Hiermee definieert u de lijst met blokcodes die zijn toegestaan. Enkele mogelijke blokcodes zijn: <ul> <li>koppen (h1, h2, h3)</li> <li>lid p)</li> <li>lijsten (ol, ul)</li> <li>tabellen (tabel)</li> </ul> |
-| `fallbackBlockTag` | Tekenreeks | Hiermee definieert u de bloktag die wordt gebruikt voor blokken met een bloktag die niet zijn opgenomen in `allowBlockTags`. `p` in de meeste gevallen voldoende. |
+| `allowBlockTags` | String | Hiermee definieert u de lijst met blokcodes die zijn toegestaan. Enkele mogelijke blokcodes zijn: <ul> <li>koppen (h1, h2, h3)</li> <li>lid p)</li> <li>lijsten (ol, ul)</li> <li>tabellen (tabel)</li> </ul> |
+| `fallbackBlockTag` | String | Hiermee definieert u de bloktag die wordt gebruikt voor blokken met een bloktag die niet zijn opgenomen in `allowBlockTags`. `p` in de meeste gevallen voldoende. |
 | table | nt:ongestructureerd | Hiermee definieert u het gedrag bij het plakken van tabellen. Deze node moet de eigenschap hebben `allow` (type Boolean) om te bepalen of het plakken van tabellen is toegestaan. Indien allow ingesteld op `false`moet u de eigenschap opgeven `ignoreMode` (type String) om te definiëren hoe geplakte tabelinhoud wordt verwerkt. Geldige waarden voor `ignoreMode` zijn: <ul> <li>`remove`: Hiermee verwijdert u tabelinhoud.</li> <li>`paragraph`: Hiermee zet u tabelcellen om in alinea&#39;s.</li> </ul> |
 | list | nt:ongestructureerd | Hiermee definieert u het gedrag bij het plakken van lijsten. Moet de eigenschap hebben `allow` (type Boolean) om te definiëren of het plakken van lijsten is toegestaan. Indien `allow` is ingesteld op `false`moet u de eigenschap opgeven `ignoreMode` (type String) om te definiëren hoe inhoud uit de lijst moet worden verwerkt. Geldige waarden voor `ignoreMode` zijn: <ul><li> `remove`: Hiermee verwijdert u de inhoud van de lijst.</li> <li>`paragraph`: Hiermee zet u lijstitems om in alinea&#39;s.</li> </ul> |
 

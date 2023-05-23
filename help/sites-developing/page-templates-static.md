@@ -49,32 +49,32 @@ Een sjabloon is een knooppunt van het type cq:Template en heeft de volgende eige
   </tr>
   <tr>
    <td> allowedChildren </td>
-   <td> Tekenreeks[]</td>
+   <td> String[]</td>
    <td>Pad van een sjabloon dat een onderliggend element van deze sjabloon mag zijn.<br /> </td>
   </tr>
   <tr>
    <td> allowedParents</td>
-   <td> Tekenreeks[]</td>
+   <td> String[]</td>
    <td>Pad van een sjabloon dat bovenliggend element van deze sjabloon mag zijn.<br /> </td>
   </tr>
   <tr>
    <td> allowedPaths</td>
-   <td> Tekenreeks[]</td>
+   <td> String[]</td>
    <td>Pad van een pagina die mag worden gebaseerd op deze sjabloon.<br /> </td>
   </tr>
   <tr>
    <td> jcr:gemaakt</td>
-   <td> Date</td>
+   <td> Datum</td>
    <td>Datum waarop de sjabloon is gemaakt.<br /> </td>
   </tr>
   <tr>
    <td> jcr:beschrijving</td>
-   <td> Tekenreeks</td>
+   <td> String</td>
    <td>Beschrijving van de sjabloon.<br /> </td>
   </tr>
   <tr>
    <td> jcr:titel</td>
-   <td> Tekenreeks</td>
+   <td> String</td>
    <td>Titel van de sjabloon.<br /> </td>
   </tr>
   <tr>

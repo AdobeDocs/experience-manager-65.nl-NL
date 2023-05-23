@@ -11,7 +11,7 @@ exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
 source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -46,7 +46,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>U kunt het volgende migratiescript in werking stellen om aan de nieuwe plaats te migreren:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>U kunt de configuratie ook bewerken in de gebruikersinterface van de Experience Manager en de wijzigingen worden opgeslagen op de nieuwe locatie.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -73,7 +73,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -96,7 +96,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>U kunt het migratiescript hieronder in werking stellen om zich aan het recentste model te richten:</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.jso</em></p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -119,7 +119,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>1. Alle video's van YouTube verwijderen<br /> 2. De YouTube-configuratie maken met de nieuwe TouchUI (van <code>/conf</code>) inclusief het kopiëren van alle kanalen van de oude locatie<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -142,7 +142,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>De klant kan het onderstaande migratiescript uitvoeren.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> <p>U kunt de configuratie ook bewerken in de gebruikersinterface van de Experience Manager en de wijzigingen worden opgeslagen op de nieuwe locatie.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -163,7 +163,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>De klant kan het onderstaande migratiescript uitvoeren.</p> <p><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>

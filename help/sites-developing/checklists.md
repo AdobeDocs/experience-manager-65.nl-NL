@@ -13,7 +13,7 @@ exl-id: 16c5f9aa-024d-4d8a-ba08-22b073289cfd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '157'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 In de volgende checklist worden enkele van de belangrijkste problemen beschreven. Lees de andere secties over Testen voor meer informatie.
 
-| Vinkje | Antwoord | Actie | Eigenaar | Verwacht |
+| Controleren | Antwoord | Handeling | Eigenaar | Verwacht |
 |---|---|---|---|---|
 | Is er een duidelijk en regelmatig rapportagemechanisme opgezet? |  |  |  |  |
 | Zijn de belangrijkste spelers (van het testteam) betrokken bij de statusvergaderingen? |  |  |  |  |

@@ -57,7 +57,7 @@ De extra hulpmiddelen die met om het even welke bovengenoemde taken beschikbaar 
 * Delen
 * Consult
 * Return
-* Opmerkingen
+* Notities
 * Bijlagen
 
 ## Taken openen {#opening-tasks}

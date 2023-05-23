@@ -580,7 +580,7 @@ Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam 
 
    `\w+-R([0-9]+)-\w+`
 
-   or
+   of
 
    `\w+-(\d+)-\w+`
 
@@ -588,7 +588,7 @@ Wanneer de centrifugeerset wordt geüpload en gepubliceerd, activeert u de naam 
 
    `\w+-\w+-C([0-9]+)`
 
-   or
+   of
 
    `\w+-\w+-C(\d+)`
 

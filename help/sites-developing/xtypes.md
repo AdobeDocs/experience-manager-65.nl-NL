@@ -111,7 +111,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
    Het BulkEditorForm biedt [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor) omgeven door een HTML-formulier. Dit is de stand-alone versie van [CQ.wcm.BulkEditor](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.BulkEditor), HTML-formulier is vereist voor de knop Importeren.
 
-* button
+* knop
 
    [CQ.ext.Button](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)
 
@@ -211,7 +211,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
    [CQ.ext.container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container)
 
-   Basisklasse voor alle [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) die andere componenten kunnen bevatten. Containers verwerken het basisgedrag van het bevatten van items, namelijk het toevoegen, invoegen en verwijderen van items.
+   Basisklasse voor alle [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) die andere componenten kunnen bevatten. Containers verwerken het basisgedrag van het bevatten van items, namelijk items toevoegen, invoegen en verwijderen.
 
    De meest gebruikte Container-klassen zijn [CQ.ext.panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) en [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
 
@@ -401,7 +401,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
    Het dialoogvenster HeavyMoveDialog is een dialoogvenster voor het verplaatsen van een pagina en de onderliggende pagina&#39;s, waarin ook wordt overwogen eerder geactiveerde pagina&#39;s opnieuw te activeren (&#39;zware&#39; verplaatsing).
 
-* hidden
+* verborgen
 
    [CQ.Ext.form.Hidden](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Hidden)
 
@@ -545,7 +545,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
    Voegt een statische teksttekenreeks toe aan een menu dat gewoonlijk wordt gebruikt als een kop- of groepsscheidingsteken.
 
-* metadata
+* metagegevens
 
    [CQ.dam.form.Metadata](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.dam.form.Metadata)
 
@@ -787,7 +787,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
    Een gesplitste knop met een ingebouwde vervolgkeuzepijl die een gebeurtenis afzonderlijk van de standaardklikgebeurtenis van de knop kan starten. Dit wordt doorgaans gebruikt om een vervolgkeuzemenu weer te geven dat aanvullende opties biedt voor de primaire knopactie, maar elke aangepaste handler kan de arrowclick-implementatie leveren.
 
-* statisch
+* static
 
    [CQ.Static](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Static)
 
@@ -885,13 +885,13 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
    Voegt een scheidingsbalk toe aan een menu dat wordt gebruikt om logische groepen menu-items te verdelen. Het scheidingsteken kan bovendien een titel dragen.
 
-* toolbar
+* werkbalk
 
    [CQ.ext.toolbar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Toolbar)
 
    Standaardwerkbalkklasse. Hoewel de [`defaultType`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) voor werkbalk is [`button`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Button)Werkbalkelementen (onderliggende items voor de werkbalkcontainer) kunnen vrijwel elk type component zijn. Werkbalkelementen kunnen expliciet via hun constructors worden gemaakt.
 
-* tooltip
+* knopinfo
 
    [CQ.Ext.ToolTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.ToolTip)
 

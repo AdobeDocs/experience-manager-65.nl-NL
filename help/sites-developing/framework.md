@@ -117,7 +117,7 @@ In de volgende tabel ziet u een aantal voorbeeld-ID&#39;s, de bijbehorende eleme
    <td>kleur/rood</td>
    <td>default</td>
    <td>kleur/rood</td>
-   <td>color</td>
+   <td>kleur</td>
    <td>rood</td>
    <td>/content/cq:tags/default/color/red</td>
   </tr>
@@ -125,15 +125,15 @@ In de volgende tabel ziet u een aantal voorbeeld-ID&#39;s, de bijbehorende eleme
    <td>lucht</td>
    <td>default</td>
    <td>lucht</td>
-   <td>(none)</td>
+   <td>(geen)</td>
    <td>lucht</td>
    <td>/content/cq:tags/default/sky</td>
   </tr>
   <tr>
    <td>dam:</td>
    <td>dam</td>
-   <td>(none)</td>
-   <td>(none)</td>
+   <td>(geen)</td>
+   <td>(geen)</td>
    <td>(geen, de naamruimte)</td>
    <td>/content/cq:tags/dam</td>
   </tr>

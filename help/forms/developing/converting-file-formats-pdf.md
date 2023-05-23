@@ -60,7 +60,7 @@ Met de service PDF genereren zet u de volgende op standaarden gebaseerde bestand
 
 Met de service PDF genereren wordt PDF omgezet in de volgende bestandsindelingen (alleen Windows):
 
-* EPS (Encapsulated PostScript)
+* Encapsulated PostScript (EPS)
 * HTML 3.2
 * HTML 4.01 met CSS 1.0
 * DOC (Microsoft Word-indeling)
@@ -761,7 +761,7 @@ Het script bevat instructies die door de vensterelementen van de native toepassi
 
 Bepaal in de native toepassing door welke vensterelementen u moet navigeren en welke reacties u moet uitvoeren om het document af te drukken. Let op de dialoogvensters die het resultaat zijn van reacties. De stappen zijn vergelijkbaar met de volgende stappen:
 
-1. Selecteer Bestand > Openen
+1. Selecteer Bestand > Openen.
 1. Geef het pad op en klik op Openen.
 1. Selecteer Bestand > Afdrukken op de menubalk.
 1. Geef de vereiste eigenschappen voor de printer op.

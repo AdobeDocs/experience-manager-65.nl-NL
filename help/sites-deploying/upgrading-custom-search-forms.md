@@ -99,7 +99,7 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>path</td>
+   <td>pad</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -156,7 +156,7 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
 
 De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opties, een voor publicatie en een voor LiveCopy-status.
 
-**Acties:**
+**Handelingen:**
 
 * Verwijder de `pagestatuspredicate` node
 * Knooppunt kopiëren
@@ -399,7 +399,7 @@ In 6.1 maakte het standaard fulltext predikaat deel uit van het onderzoeksformul
 
 ### Voorspellingen voor bestandsgrootte {#file-size-predicates}
 
-| Knooppunt(en) in standaardzoekformulier in 6.1 | filesize |
+| Knooppunt(en) in standaardzoekformulier in 6.1 | bestandsgrootte |
 |---|---|
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/filesizepredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search preates/sliderangepredicate |
@@ -422,7 +422,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/publish predikate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/publish predikate |
 
-**Acties:**
+**Handelingen:**
 
 * Pas de `resourceType` eigenschap (toevoegen &quot;**/koraal**&quot; zoals op de hierboven vermelde locatie 6.2)
 
@@ -468,12 +468,12 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 ### Richtingsvoorspelling {#orientation-predicate}
 
-| Knooppunt(en) in standaardzoekformulier in 6.1 | orientation |
+| Knooppunt(en) in standaardzoekformulier in 6.1 | oriëntatie |
 |---|---|
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/searchPreates/tagsfilterPreate |
 | Type bron in 6.2 | cq/gui/components/koral/common/admin/customsearch/search preates/tagspredicate |
 
-**Acties:**
+**Handelingen:**
 
 * Pas de `resourceType` eigenschap (toevoegen &quot;**/koraal**&quot; zoals op de hierboven vermelde locatie 6.2)
 
@@ -490,7 +490,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/searchPreates/tagsfilterPreate |
 | Type bron in 6.2 | cq/gui/components/koral/common/admin/customsearch/search preates/tagspredicate |
 
-**Acties:**
+**Handelingen:**
 
 * Pas de `resourceType` eigenschap (toevoegen &quot;**/koraal**&quot; zoals op de hierboven vermelde locatie 6.2)
 

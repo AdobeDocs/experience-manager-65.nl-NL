@@ -14,7 +14,7 @@ exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '737'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Het AEM testframework gebruikt Hobbes.js, een testbibliotheek die in Javascript 
 
 Wanneer het gebruiken van geautomatiseerde tests binnen AEM, zijn de volgende termijnen belangrijk om te begrijpen:
 
-| Actie | An **Handeling** is een specifieke activiteit op een Web-pagina zoals het klikken van een verbinding of een knoop. |
+| Handeling | An **Handeling** is een specifieke activiteit op een Web-pagina zoals het klikken van een verbinding of een knoop. |
 |---|---|
 | Testcase | A **Testcase** een specifieke situatie is die kan bestaan uit een of meer **Handelingen**. |
 | Testsuite | A **Testsuite** is een groep van verwante **Testgevallen** die samen een specifiek gebruiksgeval testen. |
@@ -118,8 +118,8 @@ Voor volledige informatie over het maken van uw eigen testsuites raadpleegt u de
 
    | Naam | Type | Waarde |
    |---|---|---|
-   | `categories` | Tekenreeks[] | `granite.testing.hobbes.tests` |
-   | `dependencies` | Tekenreeks[] | `granite.testing.hobbes.testrunner` |
+   | `categories` | String[] | `granite.testing.hobbes.tests` |
+   | `dependencies` | String[] | `granite.testing.hobbes.testrunner` |
 
    >[!NOTE]
    >

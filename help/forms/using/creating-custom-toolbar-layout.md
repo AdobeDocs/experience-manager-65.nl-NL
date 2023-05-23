@@ -92,7 +92,7 @@ Aangepaste werkbalkindeling demo
 
    Het pad van het bestand customToolbarLayout.css
 
-   Voorbeeld `customToolbarLayout.jsp`:
+   Monster `customToolbarLayout.jsp`:
 
    ```jsp
    <%@include file="/libs/fd/af/components/guidesglobal.jsp" %>
@@ -110,7 +110,7 @@ Aangepaste werkbalkindeling demo
    >
    >Voeg de klasse guidetoolbar voor de lay-out toe. De stijl voor de werkbalk buiten het vak wordt gedefinieerd ten opzichte van de klasse guidetoolbar.
 
-   Voorbeeld `toolBarCommon.jsp`:
+   Monster `toolBarCommon.jsp`:
 
    ```jsp
    <%@taglib prefix="fn" uri="https://java.sun.com/jsp/jstl/functions"%>

@@ -42,7 +42,7 @@ U kunt een of meer uitgenodigde gebruikersaccounts tegelijk toevoegen aan de doc
 
    Het bericht dat u hebt gemaakt toen u de uitgenodigde gebruikersregistratie inschakelde, wordt naar de gebruikers verzonden. (Zie [Opgeroepen gebruikersregistratie configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configuring-invited-user-registration).)
 
-1. Klik op OK.
+1. Klik op OK.
 
 ## Informatie weergeven over een lokale gebruiker {#view-information-about-a-local-user}
 

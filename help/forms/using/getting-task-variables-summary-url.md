@@ -28,8 +28,8 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
 
    * naam
    * leegmaken
-   * reason
-   * duration
+   * reden
+   * duur
 
    >[!NOTE]
    >

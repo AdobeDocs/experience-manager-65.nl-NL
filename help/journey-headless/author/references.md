@@ -55,7 +55,7 @@ U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
 
 * Plaats
 * Bedrijf
-* Person
+* Persoon
 * Awards
 
 Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.

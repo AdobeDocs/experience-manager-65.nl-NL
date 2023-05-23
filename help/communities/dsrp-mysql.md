@@ -98,7 +98,7 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 1. Selecteren `Test Connection` om de verbinding aan de lopende dienst te verifiëren MySQL
 
-**Opmerkingen**:
+**Notities**:
 
 * De standaardpoort is `3306`
 * De gekozen verbindingsnaam is ingevoerd als naam van de gegevensbron in [JDBC OSGi-configuratie](#configurejdbcconnections)

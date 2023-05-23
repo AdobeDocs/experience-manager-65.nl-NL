@@ -28,7 +28,7 @@ Zodra u installeert [AEM Forms-invoegtoepassing](../../forms/using/installing-co
 <table>
  <tbody>
   <tr>
-   <td>Groeperen</td> 
+   <td>Groep</td> 
    <td>Taken</td> 
   </tr>
   <tr>

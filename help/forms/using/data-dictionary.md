@@ -273,32 +273,32 @@ In de volgende tabel worden de algemene kenmerken beschreven die aan een DDE zij
   </tr>
   <tr>
    <td>Naam</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Vereist.<br /> Naam van de DDE. Het moet uniek zijn.</td>
   </tr>
   <tr>
    <td>Referentie<br /> Naam</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Vereist. Unieke referentienaam voor de DDE die verwijzingen naar DDE toestaat die van veranderingen in de hiërarchie of de structuur van het gegevenswoordenboek onafhankelijk zijn. Tekstmodules worden met deze naam toegewezen</td>
   </tr>
   <tr>
    <td>displaynaam</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Een optionele gebruiksvriendelijke naam van de DDE.</td>
   </tr>
   <tr>
    <td>beschrijving</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Beschrijving van de DDE.</td>
   </tr>
   <tr>
    <td>elementType</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Vereist. Het type DDE: STRING, NUMBER, DATE, Boolean, COMPOSITE, COLLECTION.</td>
   </tr>
   <tr>
    <td>elementSubType</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Het subtype voor DDE: ENUM. Alleen toegestaan voor STRING en NUMBER-elementtype.</td>
   </tr>
   <tr>
@@ -313,7 +313,7 @@ In de volgende tabel worden de algemene kenmerken beschreven die aan een DDE zij
   </tr>
   <tr>
    <td>expression</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>De expressie voor de 'berekende' DDE. De dienst van de uitdrukkingsevaluatie die door gebrek wordt verscheept steunt uitdrukkingen JSP EL. U kunt de expressieservice vervangen door een aangepaste implementatie.</td>
   </tr>
   <tr>
@@ -528,7 +528,7 @@ In het volgende voorbeeld wordt een eenvoudig schema getoond.
 
 | **Element gegevenswoordenboek** | **Standaardbinding XML** |
 |---|---|
-| age | /age |
+| leeftijd | /age |
 | prijs | /prijs |
 
 ### Samengestelde elementen toewijzen {#mapping-composite-elements}

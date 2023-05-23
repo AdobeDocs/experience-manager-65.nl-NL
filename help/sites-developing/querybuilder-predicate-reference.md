@@ -13,7 +13,7 @@ exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
 source-git-commit: f97eb2e028263016131b0c86be5a0508ae4def9b
 workflow-type: tm+mt
 source-wordcount: '2371'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -46,12 +46,12 @@ ht-degree: 2%
 * [exclusief paden](/help/sites-developing/querybuilder-predicate-reference.md#excludepaths)
 * [fulltext](/help/sites-developing/querybuilder-predicate-reference.md#fulltext)
 * [hasPermission](/help/sites-developing/querybuilder-predicate-reference.md#haspermission)
-* [language](/help/sites-developing/querybuilder-predicate-reference.md#language)
+* [taal](/help/sites-developing/querybuilder-predicate-reference.md#language)
 * [hoofdmiddel](/help/sites-developing/querybuilder-predicate-reference.md#mainasset)
 * [lidOf](/help/sites-developing/querybuilder-predicate-reference.md#memberof)
 * [nodenaam](/help/sites-developing/querybuilder-predicate-reference.md#nodename)
 * [notexpired](/help/sites-developing/querybuilder-predicate-reference.md#notexpired)
-* [path](/help/sites-developing/querybuilder-predicate-reference.md#path)
+* [pad](/help/sites-developing/querybuilder-predicate-reference.md#path)
 * [eigenschap](/help/sites-developing/querybuilder-predicate-reference.md#property)
 * [rangeproperty](/help/sites-developing/querybuilder-predicate-reference.md#rangeproperty)
 * [relativedaterange](/help/sites-developing/querybuilder-predicate-reference.md#relativedaterange)
@@ -74,11 +74,11 @@ Ondersteunt facetextractie. Zal emmers leveren voor elk `true` of `false` waarde
 
 * **boolproperty**
 relatief pad naar eigenschap, bijvoorbeeld 
-`myFeatureEnabled` or `jcr:content/myFeatureEnabled`
+`myFeatureEnabled` of `jcr:content/myFeatureEnabled`
 
 * **value**
 waarde waarop de eigenschap moet worden gecontroleerd, &quot; 
-`true`&quot; or &quot; `false`&quot;
+`true`&quot; of &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -109,7 +109,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
    path to second date, eigenschap
 
-* **operation**
+* **bewerking**
 
    &quot; `equals`&quot; voor exacte overeenkomst, &quot; `!=`&quot; voor de vergelijking van ongelijkheid &quot; `greater`&quot; voor eigenschap1 groter dan eigenschap2, &quot; `>=`&quot; voor property1 groter dan of gelijk aan property2. De standaardwaarde is &quot; `equals`&quot;.
 
@@ -242,7 +242,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 
    de door komma&#39;s gescheiden voorrechten van het JCR die de huidige gebruikerszitting ALLE voor de knoop in kwestie moet hebben; bijvoorbeeld `jcr:write`, `jcr:modifyAccessControl`
 
-### language {#language}
+### taal {#language}
 
 Hiermee zoekt u CQ-pagina&#39;s in een specifieke taal. Hierbij wordt zowel naar de eigenschap language van de pagina als naar het paginapad gekeken, dat vaak de taal of landinstelling in een sitestructuur op hoofdniveau bevat.
 
@@ -252,7 +252,7 @@ Ondersteunt facetextractie. Zal emmers voor elke unieke taalcode verstrekken.
 
 #### Eigenschappen {#properties-8}
 
-* **language**
+* **taal**
 
    ISO-taalcode, bijvoorbeeld &quot; `de`&quot;
 
@@ -330,7 +330,7 @@ Hiermee kunt u het resultaat sorteren. Als het opdracht geven door veelvoudige e
 
    indien ingesteld op &quot; `ignore`&quot; het sorteren ongevoelig zal maken, wat betekent dat &quot;a&quot; vóór &quot;B&quot; komt; indien leeg of weggelaten, wordt onderscheid gemaakt tussen hoofdletters en kleine letters, wat betekent dat &quot;B&quot; voor &quot;a&quot; komt
 
-### path {#path}
+### pad {#path}
 
 Hiermee zoekt u in een bepaald pad.
 
@@ -338,7 +338,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 #### Eigenschappen {#properties-14}
 
-* **path**
+* **pad**
 
    padpatroon; afhankelijk van de exacte waarde, komt de volledige substructuur overeen (zoals bij toevoegen) `//*` in xpath, maar merk op dat dit niet het basispad bevat) (exact=false, standaard) of alleen een exact pad dat overeenkomt met, wat jokertekens kan bevatten ( `*`); als self is ingesteld, wordt de gehele substructuur, inclusief het basisknooppunt, doorzocht
 
@@ -374,11 +374,11 @@ Ondersteunt facetextractie. Zal emmers verstrekken voor elke unieke eigenschapwa
 
    gebruiken `1_value`, `2_value`, ... controleren op meerdere waarden (gecombineerd met `OR` standaard, met `AND` if en=true) (sinds 5.3)
 
-* **and**
+* **en**
 
    ingesteld op true voor het combineren van meerdere waarden ( `N_value`) met EN (sinds 5.3)
 
-* **operation**
+* **bewerking**
 
    &quot;`equals`&quot; voor exacte overeenkomst (standaardwaarde), &quot; `unequals`&quot; voor de vergelijking van ongelijkheid &quot; `like`&quot; voor het gebruik van de `jcr:like` xpath, functie (optioneel), &quot; `not`&quot; voor geen overeenkomst (bijv. &quot;`not(@prop)`&quot; in xpath, value param will be ignored) of &quot; `exists`&quot; voor existentiecontrole (waarde kan waar zijn - eigenschap moet bestaan, standaardwaarde - of vals - zelfde als &quot; `not`&quot;)
 
@@ -416,7 +416,7 @@ Biedt geen ondersteuning voor facetextractie.
 
    &quot; `<`&quot; (standaardwaarde) of &quot; `<=`&quot;, is van toepassing op `lowerValue`
 
-* **decimal**
+* **decimaal**
 
    &quot; `true`&quot; als de gecontroleerde eigenschap van het type Decimaal is
 
@@ -579,7 +579,7 @@ Biedt geen ondersteuning voor facetextractie.
 
    om alleen in een bepaalde gelokaliseerde tagtitel te zoeken (bijvoorbeeld &quot; `de`&quot;)
 
-* **all**
+* **alles**
 
    (bool) doorzoek volledige labeltekst, dus alle titels, beschrijving enz. (heeft voorrang op &quot;l `ang`&quot;)
 

@@ -12,7 +12,7 @@ discoiquuid: 89f4d3cf-eb2e-4d55-8209-16ecbba03792
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '5877'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -243,7 +243,7 @@ Voor instructies over het verkrijgen van toegang tot deze instelling raadpleegt 
 ### Lettertypen {#fonts}
 
 1. Selecteren **Lettertypen.**
-1. Kies een van de volgende opties:
+1. Selecteer een van de volgende opties:
 
    **Insluiting van alle fonts ongedaan maken:** Hiermee worden alle ingesloten lettertypen verwijderd.
 
@@ -416,7 +416,7 @@ Deze opties bepalen hoe Microsoft Excel-bestanden worden geconverteerd. Voor ins
 
 **PDF/A-1a-compatibel bestand maken**: Dwingt het gebruik van de PDF/A-1b:2005 RGB Adobe PDF-instelling.
 
-**Bladwijzers toevoegen aan Adobe PDF**: Hiermee converteert u Excel-werkbladnamen naar bladwijzers. Deze optie is standaard geselecteerd.
+**Bladwijzers toevoegen aan Adobe PDF**: Hiermee converteert u Excel-werkbladnamen naar bladwijzers. Deze optie is standaard ingeschakeld.
 
 **Werkblad aanpassen aan enkele pagina**: Hiermee wordt de tekst verkleind zodat deze op één pagina in het werkblad past.
 
@@ -444,15 +444,15 @@ Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Voo
 
 **[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is ppt, pptx. Neem geen punt voor of spatie op tussen de extensies.
 
-**[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
+**[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard ingeschakeld.
 
-**[!UICONTROL Add Bookmarks To Adobe PDF]**: Hiermee converteert u PowerPoint-titels naar bladwijzers. Deze optie is standaard geselecteerd.
+**[!UICONTROL Add Bookmarks To Adobe PDF]**: Hiermee converteert u PowerPoint-titels naar bladwijzers. Deze optie is standaard ingeschakeld.
 
-**[!UICONTROL Attach Source File To Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand. Deze optie is standaard niet geselecteerd.
+**[!UICONTROL Attach Source File To Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand. Deze optie is standaard uitgeschakeld.
 
-**[!UICONTROL Enable Accessibility And Reflow With Tagged Adobe PDF]**: Hiermee sluit u tags in het PDF-bestand in. Deze optie is standaard niet geselecteerd.
+**[!UICONTROL Enable Accessibility And Reflow With Tagged Adobe PDF]**: Hiermee sluit u tags in het PDF-bestand in. Deze optie is standaard uitgeschakeld.
 
-**[!UICONTROL Convert Multimedia To PDF Multimedia]**: Hiermee zet u waar mogelijk multimedia om in PDF-multimedia. Deze optie is standaard geselecteerd.
+**[!UICONTROL Convert Multimedia To PDF Multimedia]**: Hiermee zet u waar mogelijk multimedia om in PDF-multimedia. Deze optie is standaard ingeschakeld.
 
 **[!UICONTROL Convert Speaker Notes]**: Hiermee converteert u sprekersnotities naar PDF.
 
@@ -460,9 +460,9 @@ Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Voo
 
 **[!UICONTROL PDF Layout Based On PowerPoint Printer Settings]**: Gebruikt PowerPoint-printerinstellingen om het PDF-document op te maken.
 
-**[!UICONTROL Add Links To Adobe PDF]**: Bestaande koppelingen blijven behouden wanneer het bestand wordt geconverteerd. De weergave van koppelingen is over het algemeen ongewijzigd. Koppelingen kunnen alleen worden gemaakt als de optie Toegankelijkheid inschakelen ook is geselecteerd. Deze optie is standaard niet geselecteerd.
+**[!UICONTROL Add Links To Adobe PDF]**: Bestaande koppelingen blijven behouden wanneer het bestand wordt geconverteerd. De weergave van koppelingen is over het algemeen ongewijzigd. Koppelingen kunnen alleen worden gemaakt als de optie Toegankelijkheid inschakelen ook is geselecteerd. Deze optie is standaard uitgeschakeld.
 
-**[!UICONTROL Save Slide Transitions In Adobe PDF]**: Hiermee converteert u diaovergangen. Deze optie is standaard geselecteerd.
+**[!UICONTROL Save Slide Transitions In Adobe PDF]**: Hiermee converteert u diaovergangen. Deze optie is standaard ingeschakeld.
 
 **[!UICONTROL Save Animations In Adobe PDF]**: Hiermee slaat u geconverteerde animaties op in het PDF-bestand.
 
@@ -476,7 +476,7 @@ Deze opties bepalen hoe Microsoft-projectbestanden worden geconverteerd. Voor in
 
 1. **[!UICONTROL Filename Extensions:]** Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `mpp`. Neem geen punt voor of spatie op tussen de extensies.
 
-1. **[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
+1. **[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard ingeschakeld.
 1. **[!UICONTROL Attach Source File To Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand.
 1. **[!UICONTROL Create PDF/A-1a Compliant File]**: Dwingt het gebruik van de PDF/A-1b:2005 RGB Adobe PDF-instelling.
 1. **[!UICONTROL Run Macros Automatically]**: Hiermee worden eventuele macro&#39;s in het Microsoft-projectdocument uitgevoerd (bijvoorbeeld een macro dat de huidige tijd invoegt) voordat het document wordt geconverteerd.
@@ -489,15 +489,15 @@ Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Voor inst
 
 **[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `doc,docx,rtf,txt`. Neem geen punt voor of spatie op tussen de extensies.
 
-**[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
+**[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard ingeschakeld.
 
-**[!UICONTROL Add Bookmarks To Adobe PDF]**: Hiermee converteert u koppen naar bladwijzers. Deze optie is standaard geselecteerd.
+**[!UICONTROL Add Bookmarks To Adobe PDF]**: Hiermee converteert u koppen naar bladwijzers. Deze optie is standaard ingeschakeld.
 
 **[!UICONTROL Attach Source File To Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand.
 
-**[!UICONTROL Convert Cross-References And Table Of Contents To Links]**: Hiermee converteert u alle kruisverwijzingen en items in de inhoudsopgave naar koppelingen. Deze optie is standaard geselecteerd.
+**[!UICONTROL Convert Cross-References And Table Of Contents To Links]**: Hiermee converteert u alle kruisverwijzingen en items in de inhoudsopgave naar koppelingen. Deze optie is standaard ingeschakeld.
 
-**[!UICONTROL Enable Accessibility And Reflow With Tagged Adobe PDF]**: Hiermee sluit u tags in het PDF-bestand in. Deze optie is standaard geselecteerd.
+**[!UICONTROL Enable Accessibility And Reflow With Tagged Adobe PDF]**: Hiermee sluit u tags in het PDF-bestand in. Deze optie is standaard ingeschakeld.
 
 **[!UICONTROL Create PDF/A-1a Compliant File]**: Als deze optie is geselecteerd, wordt de Adobe PDF-instelling PDF/A-1b:2005 RGB gebruikt.
 
@@ -523,11 +523,11 @@ Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) be
 
 ## Microsoft Visio-instellingen (alleen Windows) {#visio}
 
-**Documentgegevens converteren**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd. Deze optie is standaard ingeschakeld.
+**Documentgegevens converteren**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard ingeschakeld. Deze optie is standaard ingeschakeld.
 
-**Koppelingen toevoegen aan Adobe PDF**: Hiermee blijven alle koppelingen behouden. Deze optie is standaard geselecteerd.
+**Koppelingen toevoegen aan Adobe PDF**: Hiermee blijven alle koppelingen behouden. Deze optie is standaard ingeschakeld.
 
-**Bladwijzers toevoegen aan Adobe PDF**: Hiermee converteert u koppen naar bladwijzers. Deze optie is standaard geselecteerd.
+**Bladwijzers toevoegen aan Adobe PDF**: Hiermee converteert u koppen naar bladwijzers. Deze optie is standaard ingeschakeld.
 
 **Bronbestand bijvoegen bij Adobe PDF**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand.
 
@@ -535,7 +535,7 @@ Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) be
 
 **Alle pagina&#39;s converteren**: Hiermee converteert u alle pagina&#39;s van het Visio-bestand.
 
-**Deelvenster Lagen openen bij weergave in Adobe Acrobat**: Als Visio-lagen niet worden samengevoegd, wordt een venster geopend waarin u kunt opgeven welke lagen in het PDF-bestand behouden blijven wanneer u het opent met Acrobat. Deze optie is standaard geselecteerd.
+**Deelvenster Lagen openen bij weergave in Adobe Acrobat**: Als Visio-lagen niet worden samengevoegd, wordt een venster geopend waarin u kunt opgeven welke lagen in het PDF-bestand behouden blijven wanneer u het opent met Acrobat. Deze optie is standaard ingeschakeld.
 
 **PDF/A-1b-compatibel bestand maken**: Dwingt het gebruik van de Adobe PDF-instelling PDF/A-1b:2005 (RGB).
 
@@ -553,7 +553,7 @@ Deze opties bepalen hoe AutoCAD-bestanden worden geconverteerd. Voor instructies
 
 **[!UICONTROL Filename Extensions]**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. De standaardwaarde is `dwg`. Neem geen punt voor of spatie op tussen de extensies.
 
-**[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
+**[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard ingeschakeld.
 
 **[!UICONTROL Add Bookmarks To Adobe PDF]**: Hiermee converteert u koppen naar bladwijzers.
 

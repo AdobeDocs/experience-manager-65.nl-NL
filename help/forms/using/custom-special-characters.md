@@ -14,7 +14,7 @@ exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '636'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -77,8 +77,8 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
 
    | Naam | Type | Waarde |
    |---|---|---|
-   | cmConfigurationType | Tekenreeks | cmTextEditorConfiguration |
-   | cssPath | Tekenreeks | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
+   | cmConfigurationType | String | cmTextEditorConfiguration |
+   | cssPath | String | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
 1. Klik met de rechtermuisknop op de knop **[!UICONTROL specialcharacters]** map op het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op **Alles opslaan**:
 
@@ -91,7 +91,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
 <table>
  <tbody>
   <tr>
-   <td><strong>Naar...</strong></td>
+   <td><strong>Aan...</strong></td>
    <td><strong>Voer de volgende stappen uit</strong></td>
   </tr>
   <tr>

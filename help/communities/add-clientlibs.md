@@ -14,7 +14,7 @@ exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '682'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -30,8 +30,8 @@ De `categories` De eigenschapwaarde die aan deze clientbibliotheek wordt gegeven
 
 1. Klikken met rechtermuisknop `an-scf-sandbox` en selecteert u `Create Node`
 
-   * Naam : `clientlibs`
-   * Type : `cq:ClientLibraryFolder`
+   * Naam: `clientlibs`
+   * Type: `cq:ClientLibraryFolder`
 
 1. Klikken **OK**
 
@@ -85,8 +85,8 @@ Als u slechts één functie op één pagina gebruikt, kunt u de volledige client
 
 In dit geval, met inbegrip van hen allen en zo worden de meer basiscliënten SCF die de auteur clientlibs zijn verkiesd:
 
-* Naam : **`embed`**
-* Type : **`String`**
+* Naam: **`embed`**
+* Type: **`String`**
 * Klik op **`Multi`**
 * Waarde: **`cq.social.scf`**
 
@@ -164,7 +164,7 @@ Een pakket maken:
 
    * Pakketnaam: an-scf-sandbox-minimum-pkg
    * Versie: 0,1
-   * Groeperen: `leave as default`
+   * Groep: `leave as default`
    * Klikken **OK**
 
 * Klikken **Bewerken**

@@ -12,7 +12,7 @@ exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2109'
-ht-degree: 8%
+ht-degree: 0%
 
 ---
 
@@ -192,7 +192,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Tijdstempel voor de volgende herinnering.<br /> </td>
   </tr>
   <tr>
-   <td>priority<br /> </td>
+   <td>prioriteit<br /> </td>
    <td>F</td>
    <td>Het bevat een prioriteit.<br /> 1 = hoogste prioriteit<br /> 2 = Hoge prioriteit<br /> 3 = Normale prioriteit<br /> 4 = Lage prioriteit<br /> 5 = Laagste prioriteit<br /> </td>
   </tr>
@@ -359,7 +359,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>dataUrl<br /> </td>
    <td>T</td>
-   <td>Het is de URL voor de gegevens in de vorm van een taak.<br /> </td>
+   <td>Het is de URL voor de gegevens van de vorm van een taak.<br /> </td>
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td>
@@ -728,7 +728,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>Indien waar (true), is de opmerking een uitgebreide (lange) notitie.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>permissions<br type="_moz" /> </td>
+   <td>machtigingen<br type="_moz" /> </td>
    <td>F</td>
    <td>Machtigingen die aan een bijlage zijn gekoppeld. allowRead-veld is bestemd voor leesmachtigingen, allowWrite is voor schrijfmachtigingen, allowDelete is voor verwijderingsmachtigingen.<br type="_moz" /> </td>
   </tr>
@@ -812,12 +812,12 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    <td>True if user is out-of-office.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>achterNaam<br type="_moz" /> </td>
+   <td>lastName<br type="_moz" /> </td>
    <td>F</td>
    <td>Achternaam van de gebruiker.<br type="_moz" /> </td>
   </tr>
   <tr>
-   <td>voorNaam<br type="_moz" /> </td>
+   <td>firstName<br type="_moz" /> </td>
    <td>F</td>
    <td>Voornaam van de gebruiker.<br type="_moz" /> </td>
   </tr>

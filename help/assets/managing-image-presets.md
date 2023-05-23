@@ -321,7 +321,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
    <td>Voer in pixels de grootte in waarmee de afbeelding wordt geleverd. De breedte en hoogte moeten groter zijn dan 0 pixels. Als een van deze waarden 0 is, wordt geen voorinstelling gemaakt. Als beide waarden leeg zijn, wordt een responsieve voorinstelling voor de afbeelding gemaakt.</td>
   </tr>
   <tr>
-   <td><strong>Format</strong></td>
+   <td><strong>Indeling</strong></td>
    <td><p>Kies een indeling in het menu.</p> <p>Kiezen <strong>JPEG</strong> biedt de volgende aanvullende opties:</p>
     <ul>
      <li><strong>Kwaliteit</strong> - Hiermee bepaalt u het compressieniveau JPEG. Deze instelling is van invloed op zowel de bestandsgrootte als de afbeeldingskwaliteit. De schaal van de kwaliteit van de JPEG is 1-100. De schaal is zichtbaar wanneer u de schuifregelaar versleept.</li>

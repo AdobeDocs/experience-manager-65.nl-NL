@@ -70,9 +70,9 @@ De tagconsole openen:
 * aanmelden met beheerdersrechten
 * van globale navigatie
 
-   * select **`Tools`**
-   * select **`General`**
-   * select **`Tagging`**
+   * selecteren **`Tools`**
+   * selecteren **`General`**
+   * selecteren **`Tagging`**
 
 ![managing_tags_usingThetagasministrationconsole](assets/managing_tags_usingthetagasministrationconsolea.png)
 

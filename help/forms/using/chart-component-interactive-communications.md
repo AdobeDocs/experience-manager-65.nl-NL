@@ -232,7 +232,7 @@ Zodra u een douanefunctie hebt geschreven, doe het volgende om het voor gebruik 
 
 1. Als u de aangepaste functie wilt weergeven in de keuzelijst Functie, maakt u in CRXDe Lite een `nt:unstructured` in de map apps met de volgende eigenschappen:
 
-   * Eigenschap toevoegen `guideComponentType` met waarde als `fd/af/reducer`. (mandatory)
+   * Eigenschap toevoegen `guideComponentType` met waarde als `fd/af/reducer`. (verplicht)
 
    * Eigenschap toevoegen `value` naar een volledig gekwalificeerde naam van de aangepaste JavaScript™-functie. (verplicht) en de waarde ervan instellen op de naam van de aangepaste functie, zoals Vermenigvuldigen.
    * Eigenschap toevoegen `jcr:description` met de waarde die u wilt weergeven als de naam van de aangepaste functie die wordt weergegeven in de vervolgkeuzelijst Functie. Bijvoorbeeld: **Vermenigvuldigen**.

@@ -14,7 +14,7 @@ exl-id: 7f9c77c6-447a-407f-ae58-6735176dc99c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '612'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
@@ -75,7 +75,7 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
    <td>Volledige naam maand van huidige landinstelling<br /> </td>
   </tr>
   <tr>
-   <td>EEE</td>
+   <td>EEA</td>
    <td>Verkorte weekdagnaam van de huidige landinstelling<br /> </td>
   </tr>
   <tr>
@@ -83,11 +83,11 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
    <td>Volledige weekdagnaam van de huidige landinstelling<br /> </td>
   </tr>
   <tr>
-   <td>YY</td>
+   <td>JJ</td>
    <td>Jaar met twee cijfers, waarbij 00 = 2000, 29 = 2029, 30 = 1930 en 99 = 1999<br /> </td>
   </tr>
   <tr>
-   <td>YYYY</td>
+   <td>JJJJ</td>
    <td>Jaar met vier cijfers<br /> </td>
   </tr>
  </tbody>

@@ -7,7 +7,7 @@ exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
 source-wordcount: '2426'
-ht-degree: 10%
+ht-degree: 9%
 
 ---
 
@@ -87,7 +87,7 @@ De teksteditor voor volledig scherm biedt:
 * Toegang tot verschillende [handelingen](#actions)
 * Afhankelijk van de [format](#formats), aanvullende opmaakopties ([RTF](#rich-text))
 
-### Acties {#actions}
+### Handelingen {#actions}
 
 De volgende acties zijn ook beschikbaar (voor alle [formaten](#formats)) als de volledige-schermeditor (d.w.z. tekst met meerdere regels) is geopend:
 

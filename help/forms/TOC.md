@@ -11,7 +11,7 @@ role: User
 source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
 workflow-type: tm+mt
 source-wordcount: '3846'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -374,11 +374,11 @@ ht-degree: 1%
 + Forms Designer {#use-forms-designer}
    + [Help bij Forms Designer](using/forms-designer-help.md)
    + [Designer gebruiken](https://www.adobe.com/go/learn_aemforms_designer_65)
-   + [Zelfstudies om snel aan de slag te gaan met Designer ](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
-   + [Voorbeelden in Designer ](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
-   + [Grondbeginselen van scripts voor Designer ](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
-   + [Scriptreferentie in Designer ](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
-   + [Referentiehandleiding van FormCalc voor Designer ](https://www.adobe.com/go/learn_aemforms_formCalc_65)
+   + [Tutorials voor snel aan de slag met Designer](https://www.adobe.com/go/learn_aemforms_designer_quick_start_65)
+   + [Voorbeelden voor Designer](https://www.adobe.com/go/learn_aemforms_designer_samples_65)
+   + [Grondbeginselen van scripts in Designer](https://www.adobe.com/go/learn_aemforms_scriptingBasics_65)
+   + [Scriptreferentie in Designer](https://www.adobe.com/go/learn_aemforms_scriptingReference_65)
+   + [Referentiehandleiding van FormCalc in Designer](https://www.adobe.com/go/learn_aemforms_formCalc_65)
    + [Krabbelhandtekening gebruiken in HTML5-formulieren](using/scribble-signature.md)
    + [Pagina-nulinhoud wijzigen in Designer](using/changing-page-zero-content-designer.md)
 + AEM Forms aanpassen {#customize-aem-forms}

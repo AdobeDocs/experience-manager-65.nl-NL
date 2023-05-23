@@ -572,7 +572,7 @@ Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerd
    1. string
    1. getal
    1. boolean
-   1. scope
+   1. bereik
 
    Bereik wordt gebruikt voor verwijzingen naar velden van een adaptief formulier. Wanneer in een formulier het laden is vertraagd, kunt u `scope` om de velden te openen. U kunt velden openen wanneer de velden worden geladen of als de velden algemeen zijn gemarkeerd.
 

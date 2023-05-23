@@ -13,7 +13,7 @@ exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
    <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.qna</td>
   </tr>
   <tr>
-   <td> templates</td>
+   <td> sjablonen</td>
    <td> /libs/social/qna/components/hbs/qnaforum/qnaforum.hbs<br /> /libs/social/qna/components/hbs/qnaforum/activity-title.hbs</td>
   </tr>
   <tr>

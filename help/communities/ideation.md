@@ -13,7 +13,7 @@ exl-id: 7ad3592b-f8b5-45c0-97bc-15f781d7b811
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
    <td>cq.social.hbs.stemden<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/ideation/components/hbs/ideation/ideation.hbs<br /> /libs/social/ideation/components/hbs/ideation/ideationlists.hbs<br /> /libs/social/ideation/components/hbs/ideation/composer.hbs</td>
   </tr>
   <tr>

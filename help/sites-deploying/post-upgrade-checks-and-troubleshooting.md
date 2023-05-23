@@ -153,7 +153,7 @@ Als bundels niet beginnen zou u om het even welke ontevreden gebiedsdelen moeten
 
 Als dit probleem zich voordoet, maar het is gebaseerd op een mislukte pakketinstallatie die ertoe heeft geleid dat bundels niet werden bijgewerkt, worden zij onverenigbaar geacht voor de nieuwe versie. Voor meer informatie over hoe te om dit problemen op te lossen, zie **Pakketten en pakketten kunnen niet worden bijgewerkt** hierboven.
 
-Het wordt ook aanbevolen de bundellijst van een nieuwe AEM 6.5-instantie te vergelijken met de bijgewerkte versie om de bundels te detecteren die niet zijn bijgewerkt. Hierdoor wordt het bereik vergroot van wat er in de `error.log`.
+Het wordt ook aanbevolen de bundellijst van een nieuwe AEM 6.5-instantie te vergelijken met de bijgewerkte versie om de bundels te detecteren die niet zijn bijgewerkt. Hierdoor wordt het bereik vergroot van wat er moet worden gezocht in het dialoogvenster `error.log`.
 
 ### Aangepaste bundels die niet overschakelen op de actieve staat {#custom-bundles-not-switching-to-the-active-state}
 
@@ -195,7 +195,7 @@ Sommige foutberichten zijn mogelijk niet direct expliciet. In dit geval kunt u d
 
 * `grep -B` voor het toevoegen van regels vóór de fout;
 
-or
+of
 
 * `grep -A` voor het toevoegen van regels na.
 

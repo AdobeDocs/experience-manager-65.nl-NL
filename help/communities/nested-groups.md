@@ -14,7 +14,7 @@ exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
 source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
 workflow-type: tm+mt
 source-wordcount: '533'
-ht-degree: 3%
+ht-degree: 1%
 
 ---
 
@@ -105,21 +105,21 @@ De `arts` groep moet ook een `groups` , maar een map die leeg is en waarin nieuw
 
    * Titel: `Visual Arts`
    * Naam: `visual`
-   * Sjabloonmodel: `Reference Group`
+   * Sjabloon: `Reference Group`
    * Lidmaatschap: selecteren `Optional Membership`, een openbare groep, open voor alle leden.
 
 1. **[!UICONTROL Auditory]**
 
    * Titel: `Auditory Arts`
    * Naam: `auditory`
-   * Sjabloonmodel: `Reference Group`
+   * Sjabloon: `Reference Group`
    * Lidmaatschap: selecteren `Required Membership`, een open groep, beschikbaar voor leden om zich bij te voegen.
 
 1. **[!UICONTROL History]**
 
    * Titel: `Art History`
    * Naam: `history`
-   * Sjabloonmodel: `Reference Group`
+   * Sjabloon: `Reference Group`
    * Lidmaatschap: selecteren `Restricted Membership`, een geheime groep, die alleen zichtbaar is voor uitgenodigde leden. U kunt bijvoorbeeld uitnodigen [demo-gebruiker](/help/communities/tutorials.md#demo-users) `emily.andrews@mailinator.com`.
 
 Vernieuw de pagina om alle drie geneste groepen (subgemeenschappen) weer te geven.

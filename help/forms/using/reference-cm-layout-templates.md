@@ -36,7 +36,7 @@ Nadat u het pakket hebt geïnstalleerd, worden de lay-outsjablonen (XDP&#39;s) w
 
 Hier volgen de veelvoorkomende velden in alle sjablonen in dit pakket:
 
-* Date
+* Datum
 * Aanhef
 * Tekst sluiten
 * Handtekeningtekst

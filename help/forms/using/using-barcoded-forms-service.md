@@ -13,7 +13,7 @@ exl-id: edaf12be-473f-4175-b4e0-549b41159a55
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1022'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ De service Barcoded Forms biedt ondersteuning voor het volgende: **tweedimension
 De service biedt ook ondersteuning voor het volgende: **eendimensionaal** symbolen die worden aangeboden als gescande TIFF- of PDF-documenten:
 
 * Codabar
-* Code 128
+* Code128
 * Code 3 of 9
 * EAN13
 * EAN8

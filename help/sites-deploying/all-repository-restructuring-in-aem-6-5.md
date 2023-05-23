@@ -13,7 +13,7 @@ exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
 source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
 workflow-type: tm+mt
 source-wordcount: '2690'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -99,14 +99,14 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
       <ol>
        <li>Bijvoorbeeld exporteren:
         <ul>
-         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code> and </li>
+         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code> en </li>
          <li><code>/var/workflow/models/dam/my_workflow_model</code></li>
         </ul> </li>
       </ol> </li>
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De oplossing van het workflowmodel vindt plaats in de volgende volgorde:</p>
     <ol>
      <li><code>/conf/global/settings/workflow/models</code></li>
@@ -134,7 +134,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><p>Er is geen actie vereist om uit te lijnen met de nieuwe locatie.</p> <p>Historische Werkstroominstanties kunnen veilig blijven in de Vorige Plaats verblijven, en de nieuwe Instanties van het Werkschema zullen in de Nieuwe Plaats worden gecreeerd.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>Alle expliciete padverwijzingen in
     <code>
      custom
@@ -163,7 +163,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De werkstroom starten wordt in de volgende volgorde opgelost:</p>
     <ol>
      <li><code>/conf/global/settings/workflow/launcher</code></li>
@@ -198,7 +198,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>AEM 6.4 SP1, wanneer het wordt vrijgegeven, maakt het zodat deze herstructurering kan worden uitgesteld tot 6.5
      <code>
       upgrade
@@ -234,7 +234,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -273,7 +273,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -312,7 +312,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -351,7 +351,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -390,7 +390,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -413,7 +413,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><p>Geen actie vereist.</p> <p>De openbare vorige plaats doet dienst als volmachtseindpunt voor de privé nieuwe plaats.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -436,7 +436,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><p>Geen actie vereist.</p> <p>De openbare vorige plaats doet dienst als volmachtseindpunt voor de privé nieuwe plaats.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -459,7 +459,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td>Gebruik de <strong>Onderhoudstaken in postvak wissen</strong> om oude taken zo nodig van de vorige locatie te verwijderen.</td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Er is geen actie vereist voor het migreren van taken naar de nieuwe locatie.</p>
     <ul>
      <li>Taken die zich bevinden op de vorige locatie, blijven beschikbaar en functioneren.</li>
@@ -490,7 +490,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -520,7 +520,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>Als het compatibiliteitspakket AEM 6.4 wordt toegepast, moet de uitlijning van de repository worden uitgevoerd op het moment dat het compatibiliteitspakket wordt verwijderd.</td>
   </tr>
  </tbody>
@@ -547,7 +547,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De enige gesteunde nieuwe E-mailMalplaatjes van het Bericht van de Replicatie moeten nieuwe scènes steunen.</p> <p>De resolutie van het E-mailmalplaatje van het bericht van de replicatie komt in de volgende orde voor:</p>
     <ol>
      <li><code>/etc/notification/email/default/com.day.cq.replication</code></li>
@@ -581,7 +581,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Als u de bundel Dagcommunique Tagging OSGi opnieuw start, wordt de nieuwe locatie alleen geregistreerd als de hoofdcode als de vorige locatie leeg is.</p> <p>Verwijzingen naar de vorige locatie blijven werken na het migreren naar nieuwe locatie voor alle functies die gebruikmaken van AEM API voor tagbeheer voor het oplossen van tags.</p> <p>Elke aangepaste code die expliciet naar het pad verwijst <code>/etc/tags</code> moet worden bijgewerkt tot <span class="code">/content/
       <code>
        cq
@@ -626,7 +626,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De Cloud Services van de vertaling komt in de volgende orde voor:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li>
@@ -658,7 +658,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De resolutie van het vertaalpad vindt plaats in de volgende volgorde:</p>
     <ol>
      <li><code>/etc/translation/supportedLanguages</code></li>
@@ -686,7 +686,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><p>Een gewijzigd XML-bestand met vertaalregels moet naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, of <code>/conf/global</code>).</p> <p>1. Kopieer het XML-bestand met gewijzigde vertaalregels van de vorige locatie naar de nieuwe locatie.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De resolutie van XML van de Regels van de replicatie komt in de volgende orde voor:</p>
     <ol>
      <li><code>/conf/global/settings/translation/rules/translation_rules.xml</code></li>
@@ -733,7 +733,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -745,7 +745,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
 |---|---|
 | **Nieuwe locatie(s)** | `/libs/replication/treeactivation` |
 | **Herstructureringsrichtsnoeren** | Geen actie vereist. |
-| **Opmerkingen** | De webconsole voor activering van de structuur is nu beschikbaar via **Extra > Implementatie > Replicatie > Boom activeren**. |
+| **Notities** | De webconsole voor activering van de structuur is nu beschikbaar via **Extra > Implementatie > Replicatie > Boom activeren**. |
 
 {style="table-layout:auto"}
 
@@ -784,7 +784,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De Cloud Services van de vertaling komt in de volgende orde voor:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
@@ -817,7 +817,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>E-mailsjabloonresolutie voor workflowmelding vindt in de volgende volgorde plaats:</p>
     <ol>
      <li><code>/etc/workflow/notification</code></li>
@@ -850,7 +850,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Workflowpakketten die zijn gemaakt via de Classic UI Miscadmin-console blijven behouden op de vorige locatie, terwijl alle andere pakketten worden voortgezet naar de nieuwe locatie.</p> <p>De pakketten van het werkschema die in of de vorige of lagere plaatsen worden opgeslagen kunnen via de Klassieke console UI Miscadmin worden beheerd.</p> </td>
   </tr>
  </tbody>

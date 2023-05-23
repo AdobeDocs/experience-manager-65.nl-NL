@@ -118,7 +118,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
   </tr>
   <tr>
    <td>Configuratie van verouderde (5.6.0) catalogus-uitrol</td>
-   <td>Afgekeurd. Gebruik Catalogusgenerator in plaats van MSM voor catalogusrollouts.</td>
+   <td>Vervangen. Gebruik Catalogusgenerator in plaats van MSM voor catalogusrollouts.</td>
    <td>Bij rollout</td>
    <td>editProperties</td>
   </tr>
@@ -196,7 +196,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
    <td>doel: (String) Het pad naar het workflowmodel.<br /> </td>
   </tr>
   <tr>
-   <td>mandatory</td>
+   <td>verplicht</td>
    <td><p>Plaatst de toestemming van verscheidene ACLs op de levende exemplaarpagina aan read-only voor een specifieke gebruikersgroep. De volgende ACLs wordt gevormd:</p>
     <ul>
      <li>ActionSet.ACTION_NAME_REMOVE</li>

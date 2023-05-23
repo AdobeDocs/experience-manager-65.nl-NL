@@ -8,7 +8,7 @@ exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1448'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -382,7 +382,7 @@ U moet lid zijn van de [form-power-user-group](forms-groups-privileges-tasks.md)
  <tbody>
   <tr>
    <th><strong></strong>Component \ Event</th>
-   <th>initialize <br /> </th>
+   <th>initialiseren <br /> </th>
    <td>Berekenen</td>
    <td>Zichtbaarheid</td>
    <td>Valideren</td>
@@ -636,7 +636,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de bovengrens voor numerieke waarden en datums op. Standaard wordt de maximumwaarde opgenomen.</p> </td>
    <td>
     <ul>
@@ -647,7 +647,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>minimum</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de ondergrens voor numerieke waarden en datums op. Standaard wordt de minimumwaarde opgenomen.</p> </td>
    <td>
     <ul>
@@ -680,7 +680,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>minLength</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee wordt het minimale aantal tekens opgegeven dat in een component is toegestaan. De minimumlengte moet gelijk zijn aan of groter zijn dan nul.</p> </td>
    <td>
     <ul>
@@ -689,7 +689,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><code>maxLength</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Hiermee wordt het maximale aantal tekens opgegeven dat in een component is toegestaan. De maximumlengte moet gelijk zijn aan of groter zijn dan nul.</td>
    <td>
     <ul>
@@ -698,7 +698,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de volgorde van de tekens op. Een component accepteert de tekens als de tekens overeenkomen met het opgegeven patroon.</p> <p>De eigenschap pattern verwijst naar het validatiepatroon van de overeenkomstige adaptieve formuliercomponent.</p> </td>
    <td>
     <ul>
@@ -707,13 +707,13 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
   </tr>
   <tr>
    <td><code>maxItems</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Geeft het maximale aantal items in een array op. De maximale items moeten gelijk zijn aan of groter zijn dan nul.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>minItems</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>Geeft het minimale aantal items in een array op. De minimale items moeten gelijk zijn aan of groter zijn dan nul.</td>
    <td> </td>
   </tr>

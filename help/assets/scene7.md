@@ -24,7 +24,7 @@ ht-degree: 0%
 
 U kunt in Dynamic Media Classic gepubliceerde Experience Managers weergeven in verschillende viewers:
 
-* In-/uitzoomen
+* Zoomen
 * Flyout
 * Video
 * Afbeeldingssjabloon
@@ -58,7 +58,7 @@ U kunt digitale elementen als volgt naar Dynamic Media Classic publiceren:
 
 De volgende Dynamic Media Classic-componenten zijn beschikbaar in de Experience Manager:
 
-* In-/uitzoomen
+* Zoomen
 * Flyout (zoomen)
 * Afbeeldingssjabloon
 * Afbeelding
@@ -137,7 +137,7 @@ U stelt deze configuratieopties in door bijvoorbeeld een Dynamic Media Classic-c
 
 ![chlimage_1-226](assets/chlimage_1-226.png)
 
-### In-/uitzoomen {#zoom}
+### Zoomen {#zoom}
 
 De HTML5-component Zoom geeft een grotere afbeelding weer wanneer u op de knop **[!UICONTROL +]** knop.
 

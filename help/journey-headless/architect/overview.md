@@ -22,7 +22,7 @@ Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals geb
 Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 
 * Begrijp wat de inhoud zonder kop levert en zijn voordelen.
-* Begrijp hoe u uw inhoud kunt modelleren voor AEM functies zonder kop.
+* Begrijp hoe u uw inhoud modelleert voor AEM functies zonder kop.
 * Heb de capaciteit om de eerste stappen te nemen die uw inhoud voor uw eerste AEM zonder hoofd modelleren project.
 
 ## AEM Documentenreizen {#documentation-journeys}

@@ -253,7 +253,7 @@ Elementeditorcomponenten toevoegen:
 
 | Component | Beschrijving |
 |---|---|
-| **[!UICONTROL Metadata Form]and[!UICONTROL Metadata Text Field]** | Hiermee kunt u aanvullende metagegevens aan een element toevoegen en een handeling op dat element uitvoeren, zoals verzenden. |
+| **[!UICONTROL Metadata Form]en[!UICONTROL Metadata Text Field]** | Hiermee kunt u aanvullende metagegevens aan een element toevoegen en een handeling op dat element uitvoeren, zoals verzenden. |
 | **[!UICONTROL Sub Assets]** | Hiermee kunt u subelementen aanpassen. |
 | **Tags** | Gebruikers kunnen tags selecteren en aan een element toevoegen. |
 | **[!UICONTROL Thumbnail]** | Toont een duimnagel van het element, zijn filename, en laat u een afwisselende tekst toevoegen. U kunt hier ook acties voor middeleneditors toevoegen. |
@@ -291,7 +291,7 @@ Zie [Elementen aanpassen en uitbreiden](/help/assets/extending-assets.md) voor i
 
 Hieronder ziet u een voorbeeld van een metagegevensformulier met verschillende velden:
 
-![metadata](assets/chlimage_1-390.png)
+![metagegevens](assets/chlimage_1-390.png)
 
 Op de pagina Asset Editor kunnen gebruikers vervolgens waarden invoeren in de metagegevensvelden (als deze bewerkbaar zijn) en de eindactie uitvoeren (bijvoorbeeld door de wijzigingen te verzenden).
 
@@ -373,7 +373,7 @@ Handelingen toevoegen aan de pagina Asset Editor:
 
 De volgende acties zijn beschikbaar:
 
-| Actie | Beschrijving |
+| Handeling | Beschrijving |
 |---|---|
 | [!UICONTROL Download] | Hiermee kunnen gebruikers geselecteerde elementen downloaden naar hun computers. |
 | [!UICONTROL Editors] | Gebruikers kunnen een afbeelding bewerken (interactief bewerken) |

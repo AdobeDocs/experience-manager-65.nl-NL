@@ -13,7 +13,7 @@ exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '822'
-ht-degree: 15%
+ht-degree: 0%
 
 ---
 
@@ -108,11 +108,11 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
 
 ## Een voorbeeld van een formulier weergeven met behulp van voorbeeldgegevens {#to-preview-a-form-using-sample-data}
 
-Designer biedt u de mogelijkheid een voorbeeld van formulieren weer te geven en formulieren te testen met XML-voorbeeldgegevens. Het verdient aanbeveling regelmatig uw formulier te testen met voorbeeldgegevens om ervoor te zorgen dat het formulier correct wordt weergegeven.
+Met Designer kunt u een voorbeeld van een formulier bekijken en het formulier testen met XML-voorbeeldgegevens. Het wordt aanbevolen om regelmatig uw formulier te testen met voorbeeldgegevens om te controleren of het formulier correct wordt weergegeven.
 
-Als u geen voorbeeldgegevens hebt, kunt u die laten maken in Designer of deze zelf maken. (Zie [Voorbeeldgegevens automatisch genereren voor een voorbeeldweergave van een formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) en [Voorbeeldgegevens maken voor een voorbeeldweergave van uw formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
+Als u geen voorbeeldgegevens hebt, kunt u deze in Designer maken of deze zelf maken. (Zie [Voorbeeldgegevens automatisch genereren voor een voorbeeldweergave van het formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) en [Voorbeeldgegevens maken voor een voorbeeldweergave van uw formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
-Als u een formulier test met een bron voor voorbeeldgegevens, weer u zeker dat de gegevens en de velden zijn gekoppeld en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken met voldoende ruimte voor elk object om de samengevoegde gegevens weer te geven.
+Als u het formulier test met een voorbeeldgegevensbron, weet u zeker dat de gegevens en velden zijn toegewezen en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken met de juiste ruimte voor elk object om de samengevoegde gegevens weer te geven.
 
 1. Selecteren **Bestand > Formuliereigenschappen**.
 

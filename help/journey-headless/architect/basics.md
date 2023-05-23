@@ -5,7 +5,7 @@ exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '905'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -127,7 +127,7 @@ U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
 
 * Plaats
 * Bedrijf
-* Person
+* Persoon
 * Awards
 
 Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.

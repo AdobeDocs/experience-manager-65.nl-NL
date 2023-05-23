@@ -13,7 +13,7 @@ exl-id: 6d653331-c1ce-4ccb-bb45-656b6413ac3e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '256'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de bestandsbibli
    <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.filelibrary</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/filelibrary/components/hbs/filelibrary/filelibrary.hbs<br /> /libs/social/filelibrary/components/hbs/folder/folder.hbs<br /> /libs/social/filelibrary/components/hbs/folder/item.hbs<br /> /libs/social/filelibrary/components/hbs/document/document.hbs<br /> /libs/social/filelibrary/components/hbs/document/item.hbs<br /> </td>
   </tr>
   <tr>

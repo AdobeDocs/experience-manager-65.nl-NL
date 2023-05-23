@@ -64,7 +64,7 @@ U kunt naar gebeurtenissen op de pagina Gebeurtenissen zoeken met een combinatie
 
 **Gebeurtenissen met betrekking tot mijn documenten:** Gebruikers kunnen alle gebeurtenissen vinden die betrekking hebben op hun eigen documenten die met een beleid zijn beveiligd. De gebruikers zien de gebeurtenissen die door elke persoon worden geproduceerd die hun documenten behandelde.
 
-**Beleidssetcoördinatoren:** Kan gecontroleerde gebeurtenissen, inclusief document- en beleidsgebeurtenissen, weergeven voor documenten die door beleid worden beveiligd tegen hun beleidssets. De volgende opties zijn beschikbaar:
+**Beleidssetcoördinatoren:** Kan gecontroleerde gebeurtenissen, inclusief document- en beleidsgebeurtenissen, weergeven voor documenten die door beleid worden beveiligd tegen hun beleidssets. Deze opties zijn beschikbaar:
 
 **Documentgebeurtenissen waarbij ik als beleidssetcoördinator ben:** Coördinatoren met beleidssets die de machtiging voor weergavegebeurtenissen hebben, kunnen gebeurtenissen vinden die gerelateerd zijn aan documenten die door het beleid van hun beleidssets worden beveiligd.
 

@@ -15,7 +15,7 @@ exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4150'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -27,7 +27,7 @@ De Forms-service geeft formulieren als HTML weer in reactie op een HTTP-aanvraag
 
 Als u een formulier wilt weergeven als HTML, moet het formulierontwerp worden opgeslagen als een XDP-bestand. Een formulierontwerp dat is opgeslagen als een PDF-bestand, kan niet worden weergegeven als HTML. Houd rekening met de volgende criteria wanneer u een formulierontwerp ontwikkelt in Designer dat wordt weergegeven als HTML:
 
-* Gebruik niet de randeigenschappen van een object om lijnen, vakken of rasters op een formulier te tekenen. In sommige browsers worden randen mogelijk niet zo weergegeven zoals ze in de voorbeeldweergave van te zien zijn. Objecten kunnen gelaagd worden weergegeven of ze kunnen andere objecten van hun verwachte positie afduwen.
+* Gebruik niet de randeigenschappen van een object om lijnen, vakken of rasters op het formulier te tekenen. In sommige browsers worden randen mogelijk niet precies zo weergegeven als in een voorvertoning. Objecten kunnen gelaagd worden weergegeven of kunnen andere objecten van hun verwachte positie wegduwen.
 * U kunt lijnen, rechthoeken en cirkels gebruiken om de achtergrond te definiëren.
 * Teken tekst iets groter dan nodig lijkt om ruimte te maken voor de tekst. In sommige webbrowsers wordt de tekst niet leesbaar weergegeven.
 

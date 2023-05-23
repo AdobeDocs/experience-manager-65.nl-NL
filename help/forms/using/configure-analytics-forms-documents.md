@@ -95,10 +95,10 @@ Voer de volgende stappen uit om een rapportsuite te maken.
    | renderen | Teller |
    | panelVisit | Teller |
    | fieldVisit | Teller |
-   | save | Teller |
-   | error | Teller |
+   | opslaan | Teller |
+   | fout | Teller |
    | help | Teller |
-   | submit | Teller |
+   | indienen | Teller |
    | timeSpent | Numeriek |
 
    >[!NOTE]

@@ -33,7 +33,7 @@ AEM Forms biedt een component Tabel in de deelvensterbrowser op het zijpaneel wa
 * Ondersteuning voor het toevoegen van rijen of cellen met XSD-elementen van complexe typen
 * Gegevens uit een XML-bestand samenvoegen
 
-## Maak een tabel {#create-a-table}
+## Een tabel maken {#create-a-table}
 
 Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser in het hulpwerkgebied naar het aangepaste formulier. Standaard bevat de tabel twee kolommen en drie rijen, inclusief de koptekstrij.
 

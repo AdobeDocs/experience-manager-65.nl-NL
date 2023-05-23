@@ -127,7 +127,7 @@ De **Pakketinstellingen** is beschikbaar via **Bewerken** knop wanneer [maken](#
 | Veld | Beschrijving |
 |---|---|
 | Naam | De naam van het pakket |
-| Groeperen | Voor het organiseren van pakketten kunt u de naam van een nieuwe groep typen of een bestaande groep selecteren |
+| Groep | Voor het organiseren van pakketten kunt u de naam van een nieuwe groep typen of een bestaande groep selecteren |
 | Versie | Te gebruiken tekst voor de versie |
 | Beschrijving | Een korte beschrijving van het pakket waarmee HTML-opmaakcodes voor opmaak kunnen worden gebruikt |
 | Miniatuur | Het pictogram dat bij de pakketvermelding wordt weergegeven |

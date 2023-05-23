@@ -75,7 +75,7 @@ U kunt een formuliergegevensmodel kiezen wanneer u een interactieve communicatie
 
 Tabblad Algemeen van dialoogvenster Interactieve communicatie maken
 
-Meer informatie:
+Zie voor meer informatie:
 
 [Een interactieve communicatie maken](../../forms/using/create-interactive-communication.md)
 

@@ -13,7 +13,7 @@ exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1035'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -55,7 +55,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>Als een aangepaste code afhankelijk is van deze locatie (dat wil zeggen: de code baseert zich uitdrukkelijk op dit weg) dan moet de code worden bijgewerkt om de nieuwe plaats te gebruiken alvorens te bevorderen; In het ideale geval worden Java-API's gebruikt wanneer deze beschikbaar zijn om afhankelijkheden van een specifiek pad in de JCR te verminderen.</p> <p>Tijdelijke locatie om ZIP-bestand op te slaan zodat de client het kan downloaden. Er hoeft geen update te worden uitgevoerd omdat de client het element wil downloaden. Er wordt een bestand op de nieuwe locatie gegenereerd.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -90,7 +90,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -120,7 +120,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> <p>Voor om het even welke Ontwerpen die niet in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp worden beheerd, verplaats geen authorable ontwerpen uit <code>/etc</code>.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -153,7 +153,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>while <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> wordt technisch ondersteund voor opzoeken (heeft voorrang vóór /apps via gebruikelijke opzoekactie van Sling CAConfig, maar na <code>/etc</code>) kan de sjabloon in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Dit wordt echter niet aanbevolen omdat er geen runtime-interface is om het bewerken van de e-mailsjabloon te vergemakkelijken.</td>
   </tr>
  </tbody>
@@ -165,7 +165,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 |---|---|
 | **Nieuwe locatie(s)** | `/libs/settings/dam/drm` |
 | **Herstructureringsrichtsnoeren** | N.v.t. |
-| **Opmerkingen** | N.v.t. |
+| **Notities** | N.v.t. |
 
 ### E-mailmeldingssjabloon voor delen van koppeling {#link-share-e-mail-notification-template}
 
@@ -194,7 +194,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>while <code>/conf/global/settings/dam/adhocassetshare</code> wordt technisch ondersteund voor opzoeken (het heeft eerder prioriteit <code>/apps</code> via gebruikelijke Sling CAConfig lookup, maar na <code>/etc</code>), kan de sjabloon in <code>/conf/global/settings/dam/adhocassetshare</code>. Dit wordt echter niet aanbevolen omdat er geen runtime-interface is om het bewerken van de e-mailsjabloon te vergemakkelijken</td>
   </tr>
  </tbody>
@@ -228,7 +228,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>Aangepaste scripts wordt aangeraden onder <code>/apps</code>, aangezien dat de plaats is waar de code moet worden opgeslagen.</td>
   </tr>
  </tbody>
@@ -255,7 +255,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -282,7 +282,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> <p>Merk op dat u hun copyURL/embed code niet moet aanpassen om aan te wijzen <code>/conf</code>. Het bestaande verzoek aan <code>/etc</code> wordt vanuit <code>/conf</code>.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.</td>
   </tr>
  </tbody>
@@ -305,7 +305,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>Verwijzingen aanpassen naar de nieuwe bronnen onder <code>/libs</code> met de <code>/etc.clientlibs/</code> proxyvoorvoegsel toestaan.</p> <p>Tot slot kunt u het bestand opschonen door de mappen voor de gemigreerde clientlibs te verwijderen <code>/etc/clientlibs/foundation/</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>

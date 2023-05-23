@@ -13,7 +13,7 @@ exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '144'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -32,7 +32,7 @@ Met Betrouwbaarheidswinkelbeheer kunt u lijsten voor certificaatintrekking impor
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Certificaatintrekkingslijsten.
 1. Klik op de naam van de alias van de CRL die u wilt exporteren en klik vervolgens op Exporteren.
 1. Volg de aanwijzingen om de CRL te exporteren. CRLs wordt uitgevoerd in het coderen Base64.
-1. Klik op OK.
+1. Klik op OK.
 
 ## CRL verwijderen {#delete-a-crl}
 

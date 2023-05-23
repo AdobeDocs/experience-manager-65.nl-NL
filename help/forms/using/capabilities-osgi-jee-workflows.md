@@ -19,7 +19,7 @@ U kunt AEM Inbox gebruiken om Forms-centric AEM Workflows op OSGi uit te voeren 
 <table>
  <tbody>
   <tr>
-   <td>Acties</td>
+   <td>Handelingen</td>
    <td>AEM Postvak IN</td>
    <td>HTML-werkruimte</td>
   </tr>
@@ -403,7 +403,7 @@ In de volgende tabel worden de mogelijkheden van de toepassingen AEM Inbox en AE
 <table>
  <tbody>
   <tr>
-   <td><p><strong>Acties</strong></p> </td>
+   <td><p><strong>Handelingen</strong></p> </td>
    <td><p><strong>AEM Postvak IN</strong></p> </td>
    <td><p><strong>AEM Forms App</strong></p> </td>
   </tr>

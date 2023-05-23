@@ -74,7 +74,7 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
 
 * **runModes (String)**: Een door komma&#39;s gescheiden lijst met toegestane uitvoeringsmodi voor de uitvoering van de workflow. Enkele voorbeelden:
 
-   * author
+   * auteur
 
    * publish
 
@@ -322,7 +322,7 @@ Voer de volgende stappen uit om bestanden te verwerken met behulp van workflows:
    * Uw aangepaste implementatie van de WorkflowContextProcessor-interface
    * workItem
    * workflowSession
-   * metadata
+   * metagegevens
 
 Als u de programmeertaal Java gebruikt om de workflow te implementeren, biedt de AEM-workflowengine waarde voor workItem-, workflowSession- en metagegevensvariabelen. Deze variabelen worden als argumenten doorgegeven aan de methode execute() van uw aangepaste WorkflowProcess-implementatie.
 

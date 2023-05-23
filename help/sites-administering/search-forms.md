@@ -9,7 +9,7 @@ exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
 source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
 workflow-type: tm+mt
 source-wordcount: '2042'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -21,7 +21,7 @@ A [voorspelbare](#predicates-and-their-settings)s is beschikbaar buiten de doos.
 
 U kunt [de zoekformulieren configureren](#configuring-your-search-forms) worden gebruikt in verschillende consoles en de middelenbrowser (bij het bewerken van pagina&#39;s). De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) kan worden geraadpleegd via:
 
-* **Opties**
+* **Gereedschappen**
 
    * **Algemeen**
 
@@ -135,7 +135,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
     </ul> </td>
   </tr>
   <tr>
-   <td>Date </td>
+   <td>Datum </td>
    <td>Op schuifregelaars gebaseerde zoekopdracht naar elementen op basis van een datumeigenschap.</td>
    <td>
     <ul>
@@ -537,7 +537,7 @@ In de volgende tabel worden de machtigingen weergegeven die vereist zijn voor he
 <table>
  <tbody>
   <tr>
-   <td><strong>Actie</strong></td>
+   <td><strong>Handeling</strong></td>
    <td><strong>Machtigingen</strong></td>
   </tr>
   <tr>

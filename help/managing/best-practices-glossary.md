@@ -1025,7 +1025,7 @@ Gedetailleerde specificatie van de concepten met betrekking tot rollen en toegan
 * rollen
 * groepen
 * gebruikers
-* permissions
+* machtigingen
 * en gebruikersbeheer en -provisioning
 
 ### Het concept Rollen en Rechten voldoet aan beveiligingsrichtlijnen {#roles-and-rights-concept-meets-security-guidelines}

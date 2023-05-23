@@ -13,7 +13,7 @@ exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '2718'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -329,7 +329,7 @@ In de volgende tabel worden alle beschikbare VLT-opdrachten beschreven. Zie de a
 | `proplist` | `pl` | Hiermee worden de eigenschappen afgedrukt op bestanden of mappen. |
 | `propset` | `ps` | Hiermee wordt de waarde van een eigenschap voor bestanden of mappen ingesteld. |
 | `add` |  | Hiermee plaatst u bestanden en mappen onder versiebeheer. |
-| `delete` | `del` or `rm` | Hiermee verwijdert u bestanden en mappen uit versiebeheer. |
+| `delete` | `del` of `rm` | Hiermee verwijdert u bestanden en mappen uit versiebeheer. |
 | `diff` | `di` | Hiermee geeft u de verschillen tussen twee paden weer. |
 | `console` |  | Hiermee wordt een interactieve console uitgevoerd. |
 | `rcp` |  | Kopieert een knooppuntenstructuur van de ene externe opslagplaats naar een andere. |

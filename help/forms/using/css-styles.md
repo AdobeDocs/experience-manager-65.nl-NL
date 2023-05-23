@@ -14,7 +14,7 @@ exl-id: 8cc90ff7-284e-41cd-bfda-7fa09371e270
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '812'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -92,7 +92,7 @@ Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met
   </tr>
   <tr>
    <td>Subformulier</td>
-   <td>subform</td>
+   <td>subformulier</td>
    <td>Door gebruiker gedefinieerde naam</td>
   </tr>
   <tr>
@@ -112,7 +112,7 @@ Naast de klasse type en name bevat de veldcomponent ook een extra CSS-klasse met
   </tr>
   <tr>
    <td>Bijschrift</td>
-   <td>caption</td>
+   <td>bijschrift</td>
    <td>NA</td>
   </tr>
   <tr>
@@ -178,7 +178,7 @@ Aan elk veld is een widget gekoppeld die het interface-element vertegenwoordigt.
    <td>choicelist<br type="_moz" /> </td>
    <td>dropDownListWidget<br type="_moz" /> </td>
    <td>choicelistwidget<br type="_moz" /> </td>
-   <td>select</td>
+   <td>selecteren</td>
   </tr>
   <tr>
    <td>ListBox<br type="_moz" /> </td>
@@ -233,7 +233,7 @@ Met AEM Forms Designer kunt u statische tekenelementen, zoals tekst en afbeeldin
 |---|---|
 | Tekst | text |
 | Afbeelding | afbeelding |
-| Rechthoek | rectangle |
+| Rechthoek | rechthoek |
 | Lijn | line |
 
 ## Andere delen van het formulier opmaken {#styling-other-parts-of-the-form}

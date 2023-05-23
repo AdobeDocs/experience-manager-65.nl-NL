@@ -133,7 +133,7 @@ Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in h
 
 ## Alleen afbeeldingen voor handelingen weergeven {#showing-only-images-for-actions}
 
-Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Zie voor meer informatie [Beelden voor routeacties](/help/forms/using/images-route-actions.md).
+Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldingen aan die worden gebruikt bij routehandelingen. Zie voor meer informatie [Beelden voor routehandelingen](/help/forms/using/images-route-actions.md).
 
 ### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 

@@ -12,7 +12,7 @@ exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '573'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -78,56 +78,56 @@ In de volgende tabel worden de eigenschappen van Export Configs weergegeven:
   </tr>
   <tr>
    <td>includeComponents</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td>alles opnemen</td>
    <td>sling:resourceType</td>
    <td>uitsluiten, details voor knooppunten met opgegeven volgorde:resourceType van JSON-export</td>
   </tr>
   <tr>
    <td>excludeComponents</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td>niets uitsluiten</td>
    <td>sling:resourceType</td>
    <td>alleen details opnemen voor knooppunten met opgegeven afstand:resourceType van JSON-export</td>
   </tr>
   <tr>
    <td>excludePropertyPrefixes</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td>niets uitsluiten</td>
    <td>Voorvoegsels voor eigenschappen</td>
    <td>eigenschappen die beginnen met opgegeven voorvoegsels, uitsluiten van JSON-export</td>
   </tr>
   <tr>
    <td>excludeProperties</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td>niets uitsluiten</td>
    <td>Namen van eigenschappen</td>
    <td>opgegeven eigenschappen uitsluiten van JSON-export</td>
   </tr>
   <tr>
    <td>includeProperties</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td>alles opnemen</td>
    <td>Namen van eigenschappen</td>
    <td><p>if excludePropertyPrefixes set<br /> dit omvat opgegeven eigenschappen, ook al komen deze overeen met het voorvoegsel dat wordt uitgesloten,</p> <p>else (eigenschappen uitsluiten genegeerd) bevatten alleen deze eigenschappen</p> </td>
   </tr>
   <tr>
    <td>includeChildren</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td>alles opnemen</td>
    <td>onderliggende namen</td>
    <td>gespecificeerde kinderen van de uitvoer van JSON uitsluiten</td>
   </tr>
   <tr>
    <td>excludeChildren</td>
-   <td>Tekenreeks[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>niets uitsluiten</td>
    <td>onderliggende namen</td>
    <td>alleen opgegeven onderliggende items opnemen van JSON-export, andere uitsluiten</td>
   </tr>
   <tr>
    <td>renameProperties</td>
-   <td>Tekenreeks[]<br /> <br /> </td>
+   <td>String[]<br /> <br /> </td>
    <td>naam wijzigen</td>
    <td>&lt;actual_property_name&gt;,&lt;replacement_property_name&gt;</td>
    <td>naam van eigenschappen wijzigen met vervangingen</td>
@@ -156,7 +156,7 @@ In de volgende tabel worden de eigenschappen weergegeven:
   </tr>
   <tr>
    <td>&lt;SELECTOR_TO_INC&gt;</td>
-   <td>Tekenreeks[] </td>
+   <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
    <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>

@@ -13,7 +13,7 @@ exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1184'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -109,31 +109,31 @@ Hieronder vindt u een aantal van de doorzoekbare eigenschappen die worden gebrui
 |---|---|
 | isFlagged | *Boolean* |
 | isSpam | *Boolean* |
-| read | *Boolean* |
+| lezen | *Boolean* |
 | invloed | *Boolean* |
 | bijlagen | *Boolean* |
 | sentiment | *Lang* |
 | gemarkeerd | *Boolean* |
-| added | *Date* |
-| modifiedDate | *Date* |
-| state | *Tekenreeks* |
-| userIdentifier | *Tekenreeks* |
+| added | *Datum* |
+| modifiedDate | *Datum* |
+| state | *String* |
+| userIdentifier | *String* |
 | antwoorden | *Lang* |
-| jcr:titel | *Tekenreeks* |
-| jcr:beschrijving | *Tekenreeks* |
-| sling:resourceType | *Tekenreeks* |
+| jcr:titel | *String* |
+| jcr:beschrijving | *String* |
+| sling:resourceType | *String* |
 | allowThreadedReply | *Boolean* |
 | isDraft | *Boolean* |
-| publishDate | *Date* |
-| publishJobId | *Tekenreeks* |
+| publishDate | *Datum* |
+| publishJobId | *String* |
 | beantwoord | *Boolean* |
 | chosenanswer | *Boolean* |
-| tag | *Tekenreeks* |
-| cq:Tag | *Tekenreeks* |
-| maker_display_name | *Tekenreeks* |
-| location_t | *Tekenreeks* |
-| parentPath | *Tekenreeks* |
-| parentTitle | *Tekenreeks* |
+| tag | *String* |
+| cq:Tag | *String* |
+| maker_display_name | *String* |
+| location_t | *String* |
+| parentPath | *String* |
+| parentTitle | *String* |
 
 ### Naamgeving van aangepaste eigenschappen {#naming-of-custom-properties}
 
@@ -152,7 +152,7 @@ Solr is een voorbeeld van een vraagtaal die een schema gebruikt.
 | _dt | *Kalender* |
 | _d | *Dubbel* |
 | _tl | *Lang* |
-| _s | *Tekenreeks* |
+| _s | *String* |
 | _t | *Tekst* |
 
 **Opmerkingen:**

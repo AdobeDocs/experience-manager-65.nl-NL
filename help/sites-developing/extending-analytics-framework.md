@@ -207,7 +207,7 @@ Uw javascript moet daarom worden ingesteld `s.usePlugins` tot `true` zodat de co
    * Label: `sitecatalyst`
    * Titel: `sitecatalyst`
    * Supertype: `/libs/cq/analytics/components/sitecatalyst`
-   * Groeperen: `hidden`
+   * Groep: `hidden`
 
 1. Klik herhaaldelijk op Volgende totdat de knop OK is ingeschakeld en klik vervolgens op OK.
 

@@ -13,7 +13,7 @@ exl-id: 42e8d804-6b6a-432e-a651-940b9f45db4e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '554'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -76,7 +76,7 @@ Geeft de namen van de cookies weer die, indien aanwezig, aangeven dat de gebruik
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een array van cookie namen.
 
@@ -88,7 +88,7 @@ Retourneert de namen van cookies die kunnen worden gebruikt, ongeacht de toestem
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een array van cookie namen.
 
@@ -100,7 +100,7 @@ Hiermee wordt bepaald of de browser van de gebruiker cookies bevat die aangeven 
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een booleaanse waarde van `true` als een cookie wordt gevonden die aangeeft dat er geen toestemming is, en als de waarde `false` als er geen cookies zijn die aangeven dat er geen toestemming is gegeven.
 
@@ -112,6 +112,6 @@ Hiermee wordt bepaald of een specifieke cookie in de browser van de gebruiker ka
 
 * cookieName: Tekenreeks. De naam van het cookie.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een booleaanse waarde van `true` indien `cookieName` kan worden gebruikt, of een waarde van `false` indien `cookieName` kan niet worden gebruikt.

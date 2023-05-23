@@ -12,7 +12,7 @@ exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1927'
-ht-degree: 5%
+ht-degree: 1%
 
 ---
 
@@ -133,7 +133,7 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
    |---|---|
    | Lettertypefamilie | Arial |
    | Lettertypekleur | FFFFFF |
-   | Fontgrootte | 54px |
+   | Tekengrootte | 54px |
 
 1. Tik op de knop [!UICONTROL header] widget en tik **[!UICONTROL Header]**. De opties voor het opmaken van de koptekstwidget worden links weergegeven. Breid uit **[!UICONTROL Dimensions & Position]** accordeon instellen **[!UICONTROL Height]** tot `120px`en tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Breid uit **[!UICONTROL Background]** stelt de accordeon van de koptekstwidget in **[!UICONTROL Background Color]** tot `F6921E.`
@@ -213,7 +213,7 @@ U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast
      </tr> 
      <tr> 
       <td>Tekst</td> 
-      <td>Fontgrootte</td> 
+      <td>Tekengrootte</td> 
       <td>18px</td> 
      </tr> 
      <tr> 
@@ -282,7 +282,7 @@ U kunt een aangepast thema gebruiken om een identieke stijl toe te passen op all
      </tr> 
      <tr> 
       <td>Tekst</td> 
-      <td>Fontgrootte</td> 
+      <td>Tekengrootte</td> 
       <td>18px</td> 
      </tr> 
     </tbody> 
@@ -305,7 +305,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
 
    | Eigenschap | Waarde |
    |---|---|
-   | Zwevend | Links |
+   | Float | Links |
    | Breedte | 10% |
 
 1. Tik op de knop **[!UICONTROL Government approved address proof]** tikken en tikken op de knop ![aem_6_3_edit](assets/aem_6_3_edit.png)pictogram. Stel de volgende eigenschappen in:
@@ -319,7 +319,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
      </tr> 
      <tr> 
       <td>Dimension en positie</td> 
-      <td>Zwevend</td> 
+      <td>Float</td> 
       <td>Links</td> 
      </tr> 
      <tr> 
@@ -362,7 +362,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
      <tr> 
       <td>Rand</td> 
       <td>Randstijl</td> 
-      <td>Een ononderbroken lijn</td> 
+      <td>Effen</td> 
      </tr> 
      <tr> 
       <td>Rand</td> 
@@ -386,7 +386,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
      </tr> 
      <tr> 
       <td>Tekst</td> 
-      <td>Fontgrootte</td> 
+      <td>Tekengrootte</td> 
       <td>18px</td> 
      </tr> 
      <tr> 
@@ -409,7 +409,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
      </tr> 
      <tr> 
       <td>Dimension en positie</td> 
-      <td>Zwevend</td> 
+      <td>Float</td> 
       <td>Rechts</td> 
      </tr> 
      <tr> 

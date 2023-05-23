@@ -145,7 +145,7 @@ U kunt specificeren hoe de dienst van de Assembler de beelden die in de bronXDP 
    <td>Hiermee worden referenties niet opgelost.</td> 
   </tr> 
   <tr> 
-   <td>all</td> 
+   <td>alles</td> 
    <td>Hiermee worden alle afbeeldingen waarnaar wordt verwezen, ingesloten in het XDP-brondocument.</td> 
   </tr> 
   <tr> 

@@ -12,7 +12,7 @@ exl-id: 9bf090db-2c14-439e-ad78-6832678a309d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '6430'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -3664,7 +3664,7 @@ Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formuli
    <td>Hiermee geeft u het pad en de naam van het invoerbestand op. Het bestand kan van het type PDF of XDP zijn. Als alleen de bestandsnaam wordt opgegeven, wordt het bestand gelezen ten opzichte van de inhoudRoot die in de opties is opgegeven.</td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>Een XML-bestand dat de gegevens bevat die met het PDF-document zijn samengevoegd.<br /> </td>
   </tr>
   <tr>
@@ -3754,7 +3754,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gegenereerd door een f
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het formulierontwerp en de XML-gegevens worden opgeslagen op een netwerklocatie, lokaal, of op een HTTP-locatie als letterlijke waarden, gebruikt u de [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
+Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het formulierontwerp en de XML-gegevens worden opgeslagen op een netwerklocatie, lokaal, of op een HTTP-locatie als letterlijke waarden, gebruikt u de optie [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) API.
 
 **Syntaxis:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3771,7 +3771,7 @@ Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formuli
    <td>Hiermee geeft u het pad en de naam van het invoerbestand op. Het bestand kan van het type PDF of XDP zijn. Als alleen de bestandsnaam wordt opgegeven, wordt het bestand gelezen ten opzichte van de inhoudRoot die in de opties is opgegeven. <br /> </td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>Een XML-bestand dat de gegevens bevat die met het PDF-document zijn samengevoegd.<br /> </td>
   </tr>
   <tr>
@@ -3877,11 +3877,11 @@ Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te m
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td>templates<br /> </td>
+   <td>sjablonen<br /> </td>
    <td>Geeft de map met sleutel- en sjabloonbestandsnaam op.<br /> </td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>Geeft de Kaart van sleutel- en gegevensdocument aan. Als de sleutel niet ongeldig is, dan wordt het gegevensdocument teruggegeven met malplaatje voor overeenkomstige die sleutel in de malplaatjesKaart wordt gespecificeerd. </td>
   </tr>
   <tr>
@@ -3998,7 +3998,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwer
    <td>Hiermee geeft u het pad en de naam van het invoerbestand op. Als alleen de bestandsnaam wordt opgegeven, wordt het bestand gelezen ten opzichte van de inhoudRoot die in de opties is opgegeven. Het bestand kan van het type PDF of XDP zijn.<br /> </td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>Een XML-bestand dat gegevens bevat die zijn samengevoegd met PDF-documenten.<br /> </td>
   </tr>
   <tr>
@@ -4089,7 +4089,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formul
    <td>Hiermee geeft u het pad en de naam van het invoerbestand op. Als alleen de bestandsnaam wordt opgegeven, wordt het bestand gelezen ten opzichte van de inhoudRoot die in de opties is opgegeven. Het bestand kan van het type XDP zijn. </td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>Een XML-bestand dat gegevens bevat die zijn samengevoegd met PDF-documenten.<br /> </td>
   </tr>
   <tr>
@@ -4170,11 +4170,11 @@ Hiermee genereert u een document met de PS-, PCL- en ZPL-indeling door een formu
    <th>Beschrijving</th>
   </tr>
   <tr>
-   <td>templates<br /> </td>
+   <td>sjablonen<br /> </td>
    <td>Hiermee geeft u de kaart van de bestandsnaam van de toets en de sjabloon op.<br /> </td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>Hiermee geeft u een kaart van sleutel- en gegevensdocument op. Als de sleutel niet ongeldig is, dan wordt het gegevensdocument teruggegeven met malplaatje voor overeenkomstige sleutel in de malplaatjesKaart.<br /> </td>
   </tr>
   <tr>
@@ -4326,7 +4326,7 @@ Hiermee exporteert u formuliergegevens van een interactief PDF-formulier in XML-
 
 In het volgende Java-codevoorbeeld worden formuliergegevens geëxporteerd uit een interactief PDF-formulier in XML- en XDP-indeling.
 
-#### Voorbeeld {#sample}
+#### Monster {#sample}
 
 ```java
 @Reference private FormsService formsService;
@@ -4410,7 +4410,7 @@ Hiermee importeert u formuliergegevens in een interactief PDF-formulier.
 
 In het volgende Java-codevoorbeeld worden formuliergegevens geïmporteerd in een interactief PDF-formulier.
 
-#### Voorbeeld {#sample-1}
+#### Monster {#sample-1}
 
 ```java
 @Reference private FormsService formsService

@@ -191,7 +191,7 @@ Om het aantal parallelle banen te vormen IDS:
 
 1. Selecteer de verwerkingsrij IDS onder `Apache Sling Job Queue Configuration`.
 
-1. Set:
+1. Instellen:
 
    * **Type** - `Parallel`
    * **Maximale parallelle taken** - `<*x*>` (zoals hierboven berekend)

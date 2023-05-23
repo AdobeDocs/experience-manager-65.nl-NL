@@ -13,7 +13,7 @@ exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
 source-git-commit: de5eb53f6160991ca0718d61afaeed2078a4fa88
 workflow-type: tm+mt
 source-wordcount: '2483'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -45,19 +45,19 @@ Deze heeft de volgende kenmerken:
 
 **categorieën** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle JavaScript- en CSS-bibliotheken voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-Is gelijk aan: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
+Equivalent met: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeIncludes`
 
 **thema** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle themabibliotheken (zowel CSS als JS) voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-Is gelijk aan: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
+Equivalent met: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeThemeInclude`
 
 **js** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle bibliotheken Javascript voor de bepaalde categorieën.
 
-Is gelijk aan: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
+Equivalent met: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclude`
 
 **css** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle CSS-bibliotheken voor de opgegeven categorieën.
 
-Is gelijk aan: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
+Equivalent met: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
 **thema** - Een vlag die alleen verwijst naar bibliotheken met of zonder thema. Als deze waarde wordt weggelaten, worden beide sets opgenomen. Alleen van toepassing op zuivere JS- of CSS-include-bestanden (niet voor categorieën of thema-include-bestanden).
 
@@ -214,7 +214,7 @@ Deze heeft de volgende kenmerken:
 
 * Een Booleaanse waarde die definieert of de uitvoer moet worden verwijderd voordat het doel wordt opgenomen.
 
-**path**
+**pad**
 
 * De weg aan het middelvoorwerp dat in de huidige verzoekverwerking moet worden omvat. Als dit pad relatief is, wordt het toegevoegd aan het pad van de huidige bron waarvan het script de opgegeven bron bevat. Of weg en resourceType, of manuscript moet worden gespecificeerd.
 
@@ -266,7 +266,7 @@ Deze heeft de volgende kenmerken:
 
 **categorieën** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle JavaScript- en CSS-bibliotheken voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-Is gelijk aan: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
+Equivalent met: `com.day.cq.widget.HtmlLibraryManager#writeIncludes`
 
 **thema** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle themabibliotheken (zowel CSS als JS) voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
@@ -274,11 +274,11 @@ Equivalent met: `com.day.cq.widget.HtmlLibraryManager#`writeThemeInclude
 
 **js** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle bibliotheken Javascript voor de bepaalde categorieën.
 
-Is gelijk aan: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
+Equivalent met: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
 **css** - Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle CSS-bibliotheken voor de opgegeven categorieën.
 
-Is gelijk aan: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
+Equivalent met: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
 **thema** - Een vlag die alleen verwijst naar bibliotheken met of zonder thema. Als deze waarde wordt weggelaten, worden beide sets opgenomen. Alleen van toepassing op zuivere JS- of CSS-include-bestanden (niet voor categorieën of thema-include-bestanden).
 
@@ -526,7 +526,7 @@ Deze heeft de volgende kenmerken:
 
 * Het bronobject dat moet worden opgenomen in de huidige aanvraagverwerking. resource of pad moet worden opgegeven. Als beide zijn opgegeven, heeft de bron voorrang.
 
-**path**
+**pad**
 
 * De weg aan het middelvoorwerp dat in de huidige verzoekverwerking moet worden omvat. Als dit pad relatief is, wordt het toegevoegd aan het pad van de huidige bron waarvan het script de opgegeven bron bevat. resource of pad moet worden opgegeven. Als beide zijn opgegeven, heeft de bron voorrang.
 
@@ -588,7 +588,7 @@ De `<sling:defineObjects>` tag stelt de volgende, regelmatig gebruikte scriptobj
 **slingResponse**
 
 * SlingHttpServletResponse-object, dat toegang biedt voor de HTTP-reactie die door de server wordt gemaakt. Dit is momenteel het zelfde als HttpServletResponse waarvan het zich uitbreidt.**verzoek**
-* Het standaard JSP verzoekvoorwerp dat een zuivere HttpServletRequest is.**response**
+* Het standaard JSP verzoekvoorwerp dat een zuivere HttpServletRequest is.**reactie**
 * Het standaard JSP-responsobject dat een zuivere HttpServletResponse is.
 
 **resourceResolver**

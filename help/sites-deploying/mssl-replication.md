@@ -14,7 +14,7 @@ exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1409'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -69,7 +69,7 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
 
    | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -alias | author | publish |
+   | -alias | auteur | publish |
    | -keystore | author.keystore | publish.keystore |
 
 1. Als u het certificaat wilt exporteren, voert u de volgende opdracht in met behulp van de optiewaarden uit de onderstaande tabel:
@@ -80,7 +80,7 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
 
    | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -alias | author | publish |
+   | -alias | auteur | publish |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
@@ -120,7 +120,7 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    | Optie | Auteur | Publicatie |
    |---|---|---|
    | -signkey | author.key | publish.key |
-   | -inch | auteur_request.csr | publish_request.csr |
+   | -in | auteur_request.csr | publish_request.csr |
    | -out | author.cer | publish.cer |
 
 1. Als u uw persoonlijke sleutel en het ondertekende certificaat aan een bestand pkcs#12 wilt toevoegen, voert u de volgende opdracht in met de optiewaarden uit de onderstaande tabel:
@@ -133,8 +133,8 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
-   | -inch | author.cer | publish.cer |
-   | -name | author | publish |
+   | -in | author.cer | publish.cer |
+   | -name | auteur | publish |
 
 ## Privésleutel en TrustStore installeren op auteur {#install-the-private-key-and-truststore-on-author}
 

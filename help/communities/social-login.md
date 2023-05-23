@@ -187,8 +187,8 @@ Als bewerken nodig is, wordt op elke AEM-publicatie-instantie het volgende weerg
       * first_name
       * last_name
       * link
-      * locale
-      * picture
+      * landinstelling
+      * beeld
       * tijdzone
       * update_time
       * geverifieerd

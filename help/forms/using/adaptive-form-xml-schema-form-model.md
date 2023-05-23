@@ -8,7 +8,7 @@ exl-id: 35d5859f-54c4-4d14-9c64-0d9291ef9029
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '1073'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -182,7 +182,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>totalDigits</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee wordt het maximale aantal cijfers opgegeven dat in een component is toegestaan. Het opgegeven aantal cijfers moet groter zijn dan nul.</p> </td>
    <td>
     <ul>
@@ -192,7 +192,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>maximum</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de bovengrens voor numerieke waarden en datums op. Standaard wordt de maximumwaarde opgenomen.</p> </td>
    <td>
     <ul>
@@ -203,7 +203,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>minimum</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de ondergrens voor numerieke waarden en datums op. Standaard wordt de minimumwaarde opgenomen.</p> </td>
    <td>
     <ul>
@@ -236,7 +236,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>minLength</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee wordt het minimale aantal tekens opgegeven dat in een component is toegestaan. De minimumlengte moet gelijk zijn aan of groter zijn dan nul.</p> </td>
    <td>
     <ul>
@@ -245,7 +245,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>maxLength</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee wordt het maximale aantal tekens opgegeven dat in een component is toegestaan. De maximumlengte moet groter zijn dan nul.</p> </td>
    <td>
     <ul>
@@ -254,7 +254,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>length</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee wordt het exacte aantal tekens opgegeven dat in een component is toegestaan. De lengte moet gelijk zijn aan of groter zijn dan nul.</p> </td>
    <td>
     <ul>
@@ -263,7 +263,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>fractionDigits</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee wordt het maximale aantal decimalen opgegeven dat in een component is toegestaan. De fractionDigits moet gelijk zijn aan of groter dan nul.</p> </td>
    <td>
     <ul>
@@ -272,7 +272,7 @@ U kunt de volgende beperkingen toevoegen aan elementen van het XML-schema om de 
   </tr>
   <tr>
    <td><p><code>pattern</code></p> </td>
-   <td><p>Tekenreeks</p> </td>
+   <td><p>String</p> </td>
    <td><p>Hiermee geeft u de volgorde van de tekens op. Een component accepteert de tekens als de tekens overeenkomen met het opgegeven patroon.</p> <p>De eigenschap pattern verwijst naar het validatiepatroon van de overeenkomstige adaptieve formuliercomponent.</p> </td>
    <td>
     <ul>

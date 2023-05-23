@@ -14,7 +14,7 @@ exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '4443'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -88,10 +88,10 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
-      | fieldLabel | Tekenreeks | De naam die u het veld of de eigenschap wilt geven. (Hier: Locatie van ontvangers) |
-      | name | Tekenreeks | `./extendedproperties/GeoLocation` (Houd dezelfde waarde als de veldnaam die u onder het knooppunt Items hebt gemaakt) |
+      | fieldLabel | String | De naam die u het veld of de eigenschap wilt geven. (Hier: Locatie van ontvangers) |
+      | name | String | `./extendedproperties/GeoLocation` (Houd dezelfde waarde als de veldnaam die u onder het knooppunt Items hebt gemaakt) |
       | renderReadOnly | Boolean | true |
-      | sling:resourceType | Tekenreeks | `granite/ui/components/coral/foundation/form/textfield` |
+      | sling:resourceType | String | `granite/ui/components/coral/foundation/form/textfield` |
 
    1. Klikken **Alles opslaan**.
 
@@ -127,12 +127,12 @@ In dit scenario ziet u hoe u een aangepaste eigenschap aan alle elementtypen kun
    </tr>
    <tr>
       <td>fieldLabel</td>
-      <td>Tekenreeks</td>
+      <td>String</td>
       <td>De naam die u het veld of de eigenschap wilt geven. (Hier: geografische toewijzing)</td>
    </tr>
    <tr>
       <td>name</td>
-      <td>Tekenreeks</td>
+      <td>String</td>
       <td>./extendedProperties/geographicaletoewijzing (houd de waarde zelfde als de gebiedsnaam u onder de puntenknoop creeerde)</td>
    </tr>
    <tr>
@@ -142,7 +142,7 @@ In dit scenario ziet u hoe u een aangepaste eigenschap aan alle elementtypen kun
    </tr>
    <tr>
       <td>sling:resourceType</td>
-      <td>Tekenreeks</td>
+      <td>String</td>
       <td>graniet/ui/componenten/koraal/stichting/vorm/selecteren<br /> </td>
    </tr>
    </tbody>
@@ -163,12 +163,12 @@ In dit scenario ziet u hoe u een aangepaste eigenschap aan alle elementtypen kun
          </tr>
          <tr>
           <td>text</td>
-          <td>Tekenreeks</td>
+          <td>String</td>
           <td>Dit is de waarde van de drop-down optie die aan de gebruiker zichtbaar is. Laat deze leeg voor de lege waarde (standaardwaarde) of voer de waarde in, zoals <strong>Internationaal</strong> of <strong>Binnen de VS</strong>.<br /> </td>
          </tr>
          <tr>
           <td>value</td>
-          <td>Tekenreeks</td>
+          <td>String</td>
           <td>Waarde die is opgeslagen in CRXDE voor de tekst. Voer een uniek trefwoord in. <br /> </td>
          </tr>
          </tbody>
@@ -235,12 +235,12 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
          </tr>
          <tr>
           <td>jcr:titel</td>
-          <td>Tekenreeks</td>
+          <td>String</td>
           <td>De naam die u aan de kolom wilt geven. (Hier: Ontvangers)</td>
          </tr>
          <tr>
           <td>sling:resourceType</td>
-          <td>Tekenreeks</td>
+          <td>String</td>
           <td>graniet/ui/componenten/koraal/stichting/container<br /> </td>
    </tr>
          </tbody>
@@ -279,7 +279,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
          </tr>
          <tr>
            <td>sling:resourceType</td>
-           <td>Tekenreeks</td>
+           <td>String</td>
            <td>graniet/ui/componenten/koraal/stichting/container<br /> </td>
          </tr>
          </tbody>
@@ -309,10 +309,10 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
-      | fieldLabel | Tekenreeks | Locatie van ontvangers (of de naam die u het veld wilt geven). |
-      | name | Tekenreeks | ./extendedProperties/GeogragraphicLocation |
+      | fieldLabel | String | Locatie van ontvangers (of de naam die u het veld wilt geven). |
+      | name | String | ./extendedProperties/GeogragraphicLocation |
       | renderReadOnly | Boolean | true |
-      | sling:resourceType | Tekenreeks | `/libs/granite/ui/components/coral/foundation/form/textfield` |
+      | sling:resourceType | String | `/libs/granite/ui/components/coral/foundation/form/textfield` |
 
 1. Als u dit tabblad voor letters wilt toevoegen, maakt u een overlaymap met een pad/structuur die lijkt op de volgende itemmap in het volgende pad:
 
@@ -356,13 +356,13 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
            <td><strong>Waarde</strong></td>
          </tr>
          <tr>
-           <td>path<br /> </td>
-           <td>Tekenreeks</td>
+           <td>pad<br /> </td>
+           <td>String</td>
            <td>fd/cm/ma/gui/content/cmmetadataproperties/commontab<br /> </td>
          </tr>
          <tr>
            <td>sling:resourceType</td>
-           <td>Tekenreeks</td>
+           <td>String</td>
            <td>graniet/ui/componenten/koraal/stichting/inclusief<br /> </td>
          </tr>
          </tbody>
@@ -438,8 +438,8 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
-      | sling:resourceType | Tekenreeks | graniet/ui/componenten/koraal/stichting/container |
-      | jcr:titel | Tekenreeks | De naam van het veld in de gebruikersinterface (hier het tabblad Mijn) |
+      | sling:resourceType | String | graniet/ui/componenten/koraal/stichting/container |
+      | jcr:titel | String | De naam van het veld in de gebruikersinterface (hier het tabblad Mijn) |
 
    1. Klikken **Alles opslaan**.
 
@@ -474,7 +474,7 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
          </tr>
          <tr>
            <td>sling:resourceType</td>
-           <td>Tekenreeks</td>
+           <td>String</td>
            <td>graniet/ui/componenten/koraal/stichting/container<br /> </td>
          </tr>
          </tbody>
@@ -504,10 +504,10 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
-      | fieldLabel | Tekenreeks | Locatie van ontvangers (of de naam die u het veld wilt geven). |
-      | name | Tekenreeks | `./extendedproperties/GeoLocation` |
+      | fieldLabel | String | Locatie van ontvangers (of de naam die u het veld wilt geven). |
+      | name | String | `./extendedproperties/GeoLocation` |
       | renderReadOnly | Boolean | true |
-      | sling:resourceType | Tekenreeks | graniet/ui/componenten/koraal/stichting/vorm/tekstveld |
+      | sling:resourceType | String | graniet/ui/componenten/koraal/stichting/vorm/tekstveld |
 
 1. Als u de aanpassing wilt weergeven, houdt u de muisaanwijzer boven het desbetreffende element (hier een tekst), klikt u op Eigenschappen weergeven en klikt u op **Bewerken**. Het nieuwe tabblad en veld (Locatie van ontvangers) worden weergegeven in de gebruikersinterface.
 
@@ -561,8 +561,8 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
    <td><strong>Waarde</strong></td>
   </tr>
   <tr>
-   <td>path</td>
-   <td>Tekenreeks</td>
+   <td>pad</td>
+   <td>String</td>
    <td><p>Dit pad is de aanwijzer naar de kolom die is gemaakt in:</p>
     <ul>
      <li>Voor het algemene tabblad voor alle elementtypen: /apps/fd/cm/ma/gui/content/cmmetadataproperties/commontab/items/col1</li>
@@ -571,7 +571,7 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
   </tr>
   <tr>
    <td>sling:resourceType</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td> graniet/ui/componenten/koraal/stichting/inclusief<br /> </td>
   </tr>
  </tbody>
@@ -635,7 +635,7 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
          </tr>
          <tr>
            <td>jcr:titel</td>
-           <td>Tekenreeks</td>
+           <td>String</td>
            <td><p>GeographicLocation</p> <p>Deze waarde wordt als kolomkop in de gebruikersinterface weergegeven. </p> </td>
          </tr>
          <tr>
@@ -745,7 +745,7 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
   </tr>
   <tr>
    <td>sling:orderBefore</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td><p>De naam van het kolomknooppunt op het pad "/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list/columns", waarna de aangepaste kolom moet worden weergegeven in de gebruikersinterface.</p> <p>Als u hier de kolom Geografische locatie wilt weergeven vóór (links van) de kolom Versie, voegt u de eigenschap sling:orderBefore toe aan het knooppunt GeoLocation op het pad ""/apps/fd/cm/gui/content/cmassets/jcr:content/views/list/columns/GeoLocation" en stelt u de waarde van de eigenschap in op version.</p> </td>
   </tr>
  </tbody>
@@ -803,8 +803,8 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
            <td><strong>Waarde</strong></td>
          </tr>
          <tr>
-           <td>path</td>
-           <td>Tekenreeks</td>
+           <td>pad</td>
+           <td>String</td>
            <td>extendedProperties<br /> </td>
          </tr>
          </tbody>
@@ -828,8 +828,8 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
-      | geanalyseerd | Tekenreeks | true |
-      | name | Tekenreeks | extendedProperties/location (of the name of the property you want to add to search) |
+      | geanalyseerd | String | true |
+      | name | String | extendedProperties/location (of the name of the property you want to add to search) |
       | propertyIndex | Boolean | true |
       | useInSuggest | Boolean | true |
 
@@ -875,7 +875,7 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
-      <td>Tekenreeks</td>
+      <td>String</td>
       <td>kaart</td>
    </tr>
    </tbody>
@@ -921,7 +921,7 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
    </tr>
    <tr>
       <td>sling:orderBefore<br /> </td>
-      <td>Tekenreeks</td>
+      <td>String</td>
       <td>kaart</td>
    </tr>
    </tbody>
@@ -945,7 +945,7 @@ Voer de volgende stappen uit om de aangepaste eigenschappen weer te geven of te 
    </tr>
    <tr>
       <td>sling:resourceType<br /> </td>
-      <td>Tekenreeks</td>
+      <td>String</td>
       <td>fd/cm/ma/gui/components/admin/assetsproperties/custompropertyconfig<br /> </td>
    </tr>
    </tbody>

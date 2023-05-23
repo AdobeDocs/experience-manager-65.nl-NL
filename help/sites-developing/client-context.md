@@ -524,9 +524,9 @@ Voor de component Context Store is een dialoogvenster voor bewerken vereist. Het
 
    | Naam | Type | Waarde |
    |---|---|---|
-   | cls | Tekenreeks | x-form-field-set-description |
-   | text | Tekenreeks | Voor de geoloc-component is geen configuratie vereist. |
-   | xtype | Tekenreeks | statisch |
+   | cls | String | x-form-field-set-description |
+   | text | String | Voor de geoloc-component is geen configuratie vereist. |
+   | xtype | String | static |
 
 1. Klik op Alles opslaan.
 

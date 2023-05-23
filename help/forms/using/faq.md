@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van scripts en het bereik van HTML5-formulieren.
 
-## Indeling {#layout}
+## Layout {#layout}
 
 1. Waarom worden streepjescodes en handtekeningvelden niet in mijn formulier weergegeven?
 

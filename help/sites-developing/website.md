@@ -798,9 +798,9 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
 
    | Naam | Type | Waarde |
    |---|---|---|
-   | fieldLabel | Tekenreeks | Pad van hoofdmap van lijst |
-   | name | Tekenreeks | ./listroot |
-   | xtype | Tekenreeks | textfield |
+   | fieldLabel | String | Pad van hoofdmap van lijst |
+   | name | String | ./listroot |
+   | xtype | String | textfield |
 
    ![screen_shot_2012-03-07at51433pm](assets/screen_shot_2012-03-07at51433pm.png)
 
@@ -835,7 +835,7 @@ Als u de volledige werking van deze component wilt zien, kunt u de pagina Produc
 
 1. ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. Als pad van hoofdmap van lijst voert u in: `/content/mywebsite/en`. Klik op OK. De component listchildren op de pagina ziet er nu als volgt uit:
+1. Als pad van hoofdmap van lijst voert u in: `/content/mywebsite/en`. Klik op OK. De component listchildren op de pagina ziet er nu als volgt uit:
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -927,11 +927,11 @@ Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerp
 
    | Naam | Type | Waarde |
    |---|---|---|
-   | fileNameParameter | Tekenreeks | ./imageName |
-   | fileReferenceParameter | Tekenreeks | ./imageReference |
-   | name | Tekenreeks | ./afbeelding |
-   | title | Tekenreeks | Afbeelding |
-   | xtype | Tekenreeks | html5smartimage |
+   | fileNameParameter | String | ./imageName |
+   | fileReferenceParameter | String | ./imageReference |
+   | name | String | ./afbeelding |
+   | titel | String | Afbeelding |
+   | xtype | String | html5smartimage |
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
@@ -1198,9 +1198,9 @@ In deze sectie gebruikt u het knooppunt cq:editConfig om u in staat te stellen e
 
 | Naam | Type | Waarde |
 |---|---|---|
-| accepteren | Tekenreeks | image/(gif) | jpeg | png) |
-| groepen | Tekenreeks | media |
-| propertyName | Tekenreeks | ./imageReference |
+| accepteren | String | image/(gif) | jpeg | png) |
+| groepen | String | media |
+| propertyName | String | ./imageReference |
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 

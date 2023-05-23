@@ -14,7 +14,7 @@ exl-id: b41af9fe-c698-44b3-9ac6-97d42cdc02d4
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '786'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -62,7 +62,7 @@ Meer informatie vindt u in het gedeelte [JSP EL-specificatie](https://download.o
    * java.lang.Long
    * Lang
    * java.lang.Float
-   * Zwevend
+   * Float
    * java.util.Calendar
    * java.util.Date
    * java.util.List
@@ -114,7 +114,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
    * java.lang.Long
    * Lang
    * java.lang.Float
-   * Zwevend
+   * Float
    * java.util.Calendar
    * java.util.Date
    * java.util.List

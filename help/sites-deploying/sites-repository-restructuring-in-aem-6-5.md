@@ -67,7 +67,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
        property.value=/etc/segmentation/contexthub/%</code><br /> <br /> Dit kan worden uitgevoerd via <a href="/help/sites-developing/querybuilder-api.md" target="_blank">AEM foutopsporingsinterface van QueryBuilder</a>. Merk op dat dit een het doorlopen vraag is, zodat stel het niet tegen productie in werking, en verzeker traversale grenzen aangepast zoals nodig.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De Segmenten van ContextHub persisteerden aan de vorige plaatsvertoning als read-only in <strong>AEM &gt; Persoonlijkheid &gt; Soorten publiek</strong>.</p> <p>Als de Segmenten ContextHub in AEM editable moeten zijn, moeten zij aan de nieuwe plaats (<code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>). Om het even welke nieuwe die segmenten ContentHub in AEM worden gecreeerd worden voortgeduurd aan de nieuwe plaats (<code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p> <p>AEM Sites Pagina-eigenschappen staan alleen de vorige locatie toe (<code>/etc</code>) of één nieuwe locatie (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>) om worden geselecteerd, zodat moeten de Segmenten ContextHub dienovereenkomstig worden gemigreerd.</p> <p>Om het even welke ongebruikte Segmenten ContextHub van AEM verwijzingsplaatsen kunnen worden verwijderd en niet aan de Nieuwe Plaats worden gemigreerd:</p>
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
@@ -107,7 +107,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Het bewerken van deze clientbibliotheken is nooit ondersteund.</p> <p>Ga voor het verkrijgen van de categorieën Client Library naar elk <code>cq:ClientLIbraryFolder</code> knoop via CRXDELite en inspecteer het categoriebezit.</p>
     <ul>
      <li><code>/libs/cq/analytics/clientlibs/sitecatalyst/appmeasurement</code></li>
@@ -147,7 +147,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -190,7 +190,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>De resolutie van de Configuraties van de Emulator van het Mobiel Apparaat komt in de volgende orde voor:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/mobile</code></li>
@@ -224,7 +224,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Alle AEM configuraties voor beheer op meerdere locaties vindt u in de nieuwe locatie op <code>/libs</code>.</p> <p>De inhoud verwijst niet naar de Blauwe Configuraties van de Manager van de Multisite daarom zijn er geen inhoudsverwijzingen om aan te passen.</p> </td>
   </tr>
  </tbody>
@@ -251,7 +251,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> <p>Verwijder gemigreerde configuraties voor de implementatie van meerdere sites uit de vorige locatie.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>Als u de gemigreerde implementatieconfiguraties voor beheer op meerdere sites niet verwijdert van de vorige locatie, resulteert dit in dubbele implementatieopties die worden weergegeven aan AEM auteurs.</td>
   </tr>
  </tbody>
@@ -279,7 +279,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Nieuwe of gewijzigde E-mailsjablonen voor gebeurtenismeldingen voor pagina moeten naar de nieuwe locatie worden gemigreerd onder <code>/apps</code>:</p>
     <ol>
      <li>Kopieer nieuwe of gewijzigde E-mailsjablonen voor gebeurtenismeldingen voor de pagina van de vorige locatie naar de nieuwe locatie (<code>/apps</code>).</li>
@@ -312,7 +312,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td>Basisstructuur die onder de vorige locatie is gemaakt, gebruikt het oudere framework voor segmentering en kan niet naar de nieuwe locatie worden gemigreerd. Om met de Nieuwe Plaats te richten moet om het even welke erfenisBasisstructuur opnieuw worden ontwikkeld gebruikend het gesteunde Kader van de Basisstructuur.</td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -338,7 +338,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>Verwijzen naar een niet-bestaand <code>grid_base.less</code> resulteert in de lay-outmodus van de Pagina- en de Sjablooneditor niet en een verstoring van de pagina-indeling.</td>
   </tr>
  </tbody>
@@ -371,7 +371,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>De aanbevolen aanpak is om AEM Sites en Pagina's samen te stellen met Bewerkbare sjablonen die Structuurelementen en -beleid gebruiken in plaats van Ontwerpen.</td>
   </tr>
  </tbody>
@@ -440,7 +440,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Het bewerken van deze clientbibliotheken is nooit ondersteund.</p> <p>Om de categorieën van de Bibliotheek van de Cliënt te verkrijgen, bezoek elk knoop cq:ClientLILibraryFolder via CRXDELite en inspecteer het categoriebezit:</p>
     <ul>
      <li><code>/libs/cq/testandtarget/clientlibs/testandtarget/testandtarget</code></li>
@@ -481,7 +481,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td><p>Het bewerken van deze clientbibliotheken is nooit ondersteund.</p> <p>Ga voor het verkrijgen van de categorieën Client Library naar elk <code>cq:ClientLIbraryFolder</code> knoop via CRXDELite en inspecteer het categoriebezit:</p>
     <ul>
      <li><code>/libs/wcm/foundation/clientlibs/accessibility</code></li>

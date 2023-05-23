@@ -38,7 +38,7 @@ CIF breidt de Experience Manager met de hulpmiddelen van het de productcatalogus
 
 De integratie van de API&#39;s van de productcatalogus is vereist om deze gebruiksgevallen te ontgrendelen.
 
-## Gebruiksscenario&#39;s vooraan
+## Voorste gebruikscenario&#39;s
 
 [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) gegevens ophalen en uitwisselen via de door CIF ondersteunde Adobe Commerce API&#39;s. Om componenten te hergebruiken, moeten de respectieve APIs worden uitgevoerd.
 

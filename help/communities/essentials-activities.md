@@ -53,7 +53,7 @@ A *[sociale grafiek](/help/communities/essentials-socialgraph.md)* vangt de volg
    <td>cq.social.hbs.activitystreams</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/activitystreams/components/hbs/activitystreams/activitystreams.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity-title.hbs<br /> /libs/social/activitystreams/components/hbs/activitystreams/activity/activity.hbs</td>
   </tr>
   <tr>

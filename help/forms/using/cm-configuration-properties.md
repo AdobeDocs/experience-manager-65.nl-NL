@@ -76,7 +76,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr>
    <td><p>Type markering van inhoud</p> </td>
    <td><p>Type markering voor inhoud in de toepassing Correspondentie maken</p> </td>
-   <td><p>Opvulling</p> </td>
+   <td><p>Vullen</p> </td>
    <td><p>border / fill / none</p> </td>
   </tr>
   <tr>
@@ -88,7 +88,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr>
    <td><p>Type markering veld</p> </td>
    <td><p>Type veldmarkering in de toepassing Correspondentie maken</p> </td>
-   <td><p>fill</p> </td>
+   <td><p>vullen</p> </td>
    <td><p>border / fill / none</p> </td>
   </tr>
   <tr>

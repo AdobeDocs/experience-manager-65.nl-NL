@@ -362,7 +362,7 @@ Reeks lijnen (verbindende punten die de daadwerkelijke momentopnamen vertegenwoo
          * `totals` ( `Boolean`)
 
             Waar (true) als een extra regel de **Totaal** worden weergegeven.
-standaardwaarde: `false`
+standaard: `false`
 
          * `series` ( `Long`)
 
@@ -650,11 +650,11 @@ N:definitions
          Deze eigenschap kan worden gebruikt om een achtervoegsel op te geven dat aan het pad moet worden toegevoegd voordat de waarde wordt omgezet.
    * `pathextension`
 
-      * `path` (mandatory)
+      * `path` (verplicht)
 
          Definieert het pad dat moet worden voorafgegaan.
 
-      * `propertyName` (mandatory)
+      * `propertyName` (verplicht)
 
          Definieert de eigenschap op het omgezette pad waar de werkelijke waarde zich bevindt.
 

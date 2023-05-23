@@ -13,7 +13,7 @@ exl-id: 0d9eb7fe-28a6-444e-957d-023687158c61
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '804'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -79,7 +79,7 @@ De volgende vermelding is een voorbeeld van een item in het fonttoewijzingsbesta
 
 De standaardwaarde is een lege tekenreeks.
 
-**Cachelocatie:** Hiermee geeft u de locatie van de Forms-schijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Kies een van de volgende opties:
+**Cachelocatie:** Hiermee geeft u de locatie van de Forms-schijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Selecteer een van de volgende opties:
 
 **Standaardlocatie:** Dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
 

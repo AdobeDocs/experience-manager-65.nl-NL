@@ -44,7 +44,7 @@ Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten
    <td>cq.social.hbs.reviews</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/reviews/components/hbs/reviews/reviews.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/review.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/status.hbs<br /> /libs/social/reviews/components/hbs/reviews/review/toolbar.hbs</td>
   </tr>
   <tr>
@@ -64,7 +64,7 @@ Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten
 |---|---|
 | [**inclusief**](scf.md#add-or-include-a-communities-component) | Ja - eigenschappen kunnen worden bewerkt in *design *mode |
 | [**clientllibs**](client-customize.md#clientlibs-for-scf) | cq.social.hbs.reviews |
-| **templates** | /libs/social/reviews/components/hbs/summary/summary.hbs |
+| **sjablonen** | /libs/social/reviews/components/hbs/summary/summary.hbs |
 | **css** | /libs/social/reviews/components/hbs/reviews/clientlibs/review.css |
 | **eigenschappen** | Zie [Revisies gebruiken](reviews.md) |
 

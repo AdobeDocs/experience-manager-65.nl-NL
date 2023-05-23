@@ -71,6 +71,6 @@ Uit de doos, wordt de taakstap van de Toewijzing gevormd om het standaardmalplaa
 
 1. Selecteer de nieuwe HTML E-mailsjabloon.
 
-1. Klik op OK. De sjabloon is gewijzigd.
+1. Klik op OK. De sjabloon is gewijzigd.
 
 Een e-mailmelding gebruikt ook [metagegevens](../../forms/using/use-metadata-in-email-notifications.md). Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt de sjabloon ook configureren voor gebruik [aangepaste metagegevens](../../forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).

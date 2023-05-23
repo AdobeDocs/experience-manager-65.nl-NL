@@ -200,7 +200,7 @@ Aya beantwoordt een paar vragen om haar geschiktheid te bevestigen door een kort
    >
    >Als de gebruiker meer dan $200.000/jaar verdient, komen ze niet in aanmerking.
 
-1. Klik op de knop **Komt ik in aanmerking?**&quot; button.
+1. Klik op de knop **Komt ik in aanmerking?**&quot;.
 1. Klik op de knop **Nu toepassen**&quot; om verder te gaan.
 
    ![Koppeling Nu toepassen](/help/forms/using/assets/apply_now_link.png)

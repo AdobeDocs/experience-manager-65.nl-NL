@@ -14,7 +14,7 @@ exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '818'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ Controleer de volgende parameters:
    <td>Absoluut pad van het gegevensbestand dat met de sjabloon is samengevoegd.<br /> Opmerking: Het pad definieert het absolute pad van het gegevensbestand.</td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>UTF-8-gecodeerde gegevensbytes die met de sjabloon worden samengevoegd.</td>
   </tr>
  </tbody>
@@ -88,7 +88,7 @@ Controleer de volgende parameters:
    * profiel
    * runtime
    * scrollnav
-   * toolbar
+   * werkbalk
    * xfalib
 
 1. Controleer of de bestanden die in het bestand css.txt worden vermeld, aanwezig zijn in de CRX DE-lijst op /libs/fd/xfaforms/clientlibs/xfalib/css.
@@ -175,7 +175,7 @@ Controleer de volgende parameters:
    <td>Absoluut pad van het gegevensbestand dat met de sjabloon is samengevoegd.<br /> Opmerking: Het pad definieert het absolute pad van het gegevensbestand.</td>
   </tr>
   <tr>
-   <td>gegevens</td>
+   <td>data</td>
    <td>UTF-8-gecodeerde gegevensbytes die met de sjabloon worden samengevoegd.</td>
   </tr>
  </tbody>

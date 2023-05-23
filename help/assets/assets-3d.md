@@ -35,7 +35,7 @@ Dynamic Media ondersteunt de volgende 3D-indelingen.
 
 Zie ook [Ondersteunde 3D-indelingen](/help/assets/assets-formats.md).
 
-| 3D-bestandsextensie | Bestandsindeling | MIME-type | Opmerkingen |
+| 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
 | GLB | Binaire GL-transmissie | model/gltf-binair | Hiermee neemt u de materialen en structuren op als één enkel element. |
 | OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |

@@ -49,7 +49,7 @@ Als u formulieren wilt doorzoeken met de REST API, stuurt u een verzoek van de G
     </ul> </td>
   </tr>
   <tr>
-   <td>relation<br /> </td>
+   <td>relatie<br /> </td>
    <td>Hiermee geeft u de verwante elementen op die samen met de zoekresultaten moeten worden opgehaald. U kunt een van de volgende opties kiezen om gerelateerde elementen op te halen:
     <ul>
      <li><strong>NO_RELATION</strong>: Verwante elementen niet ophalen.</li>

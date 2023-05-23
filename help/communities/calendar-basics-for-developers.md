@@ -13,7 +13,7 @@ exl-id: 069e379d-c6fd-49ca-b337-df6fd466e023
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '215'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Deze pagina bevat essentiële informatie over het werken met de kalenderfunctie.
    <td>cq.social.hbs.calendar</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td>/libs/social/calendar/components/hbs/calendar/calendar.hbs</td>
    <td> </td>
   </tr>

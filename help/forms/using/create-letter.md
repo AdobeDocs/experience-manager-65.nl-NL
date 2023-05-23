@@ -12,7 +12,7 @@ exl-id: 2f996a50-7c7d-41b6-84b2-523b6609254b
 source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
 workflow-type: tm+mt
 source-wordcount: '3979'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -386,7 +386,7 @@ De volgende waarden in de tabel
    <td>N.v.t.</td> 
   </tr> 
   <tr> 
-   <td><strong>time</strong></td> 
+   <td><strong>tijd</strong></td> 
    <td>Ja</td> 
    <td>Nee</td> 
    <td>Ja</td> 
@@ -416,7 +416,7 @@ De volgende waarden in de tabel
    <td>N.v.t.</td> 
   </tr> 
   <tr> 
-   <td><strong>float</strong></td> 
+   <td><strong>zweven</strong></td> 
    <td>Ja</td> 
    <td>Nee</td> 
    <td>Ja</td> 
@@ -456,7 +456,7 @@ De volgende waarden in de tabel
    <td>N.v.t.</td> 
   </tr> 
   <tr> 
-   <td><strong>signature</strong></td> 
+   <td><strong>handtekening</strong></td> 
    <td>Nee</td> 
    <td>Nee</td> 
    <td>Nee<br /> </td> 

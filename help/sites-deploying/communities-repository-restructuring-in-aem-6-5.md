@@ -13,7 +13,7 @@ exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1011'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -57,7 +57,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>Handmatige migratie is nodig als u naar een nieuw pad wilt gaan onder "<code>/apps/settings</code>". U kunt de Manager van de Configuratie van Granite gebruiken om de migratie uit te voeren.</p> <p>U kunt de migratie uitvoeren door de eigenschap in te stellen <code>mergeList</code> tot <code>true</code> op de "<code>/libs/settings/community/subscriptions</code>" en voeg een <code>nt:unstructured</code> onderliggende node.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -80,7 +80,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>Handmatige migratie is nodig als u naar een nieuw pad wilt gaan onder "<code>/apps/settings</code>". U kunt de Manager van de Configuratie van Granite gebruiken om de migratie uit te voeren.</p> <p>U kunt de migratie uitvoeren door de eigenschap in te stellen <code>mergeList</code> tot <code>true</code> op de "<code>/libs/settings/community/subscriptions</code>" en voeg een <code>nt:unstructured</code> onderliggende node.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -103,7 +103,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td>Er is een "Lazy Migration Task" beschikbaar om de Community Configurations op te schonen.<br /> <p>De taak verplaatst wachtwoorden van <code>/etc/watchwords</code> tot <code>/conf/global/settings/community/watchwords</code>.</p> <p>Als de aangepaste wachtwoorden in SCM worden opgeslagen, dan zouden zij aan moeten worden opgesteld <code>/apps/settings/...</code> en u moet ervoor zorgen dat er geen sprake is van een bedekking <code>/conf/global/settings/...</code> configuratie die voorrang zou krijgen.</p> <p>Migratietaak wordt verwijderd <code>/etc</code> locaties.</p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -139,7 +139,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> <p> </p> <p>Tot slot kunt u opschonen door de resource te verwijderen <code>/etc/community/badging</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -162,7 +162,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td>N.v.t.</td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -187,7 +187,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Nieuwe Facebook Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Facebook</strong>.<br /> or <br /> </li>
+       <li>Nieuwe Facebook Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Facebook</strong>.<br /> of <br /> </li>
        <li>Kopieer nieuwe Facebook Cloud Configurations van vorige locatie naar de juiste nieuwe locatie, onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Als u de hoofdmap van de AEM Communities-site wilt bijwerken en wilt verwijzen naar de nieuwe configuratie voor sociale aanmelding van Facebook, stelt u de optie <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
@@ -195,7 +195,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -218,7 +218,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td>N.v.t.<br /> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -243,7 +243,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Nieuwe Pinterest Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Pinterest</strong>.<br /> or</li>
+       <li>Nieuwe Pinterest Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Pinterest</strong>.<br /> of</li>
        <li>Kopieer nieuwe Pinterest Cloud Configurations van vorige locatie naar de juiste nieuwe locatie onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Als u een AEM Communities Site-hoofdmap wilt bijwerken, verwijst u naar de nieuwe Pinterest Social Login Configuration op basis van de instellingen in het dialoogvenster <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
@@ -251,7 +251,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -284,7 +284,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> <p>Overbodig verwijderen: De bron verwijderen <code>/etc/community/scoring</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -309,7 +309,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Nieuwe Twitter Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Twitter</strong>.<br /> or <br /> </li>
+       <li>Nieuwe Twitter Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Twitter</strong>.<br /> of <br /> </li>
        <li>Kopieer nieuwe Twitter Cloud Configurations van vorige locatie naar de juiste nieuwe locatie, onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Als u de hoofdmap van de AEM Communities-site wilt bijwerken en wilt verwijzen naar de nieuwe configuratie voor sociale aanmelding van Twitter, stelt u de optie <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
@@ -317,7 +317,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     </ol> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>N.v.t.<br /> </td>
   </tr>
  </tbody>
@@ -340,7 +340,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>Adobe heeft een migratiehulpprogramma beschikbaar gesteld op:</p> <p><a href="https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration">https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-template-migration</a></p> </td>
   </tr>
   <tr>
-   <td><strong>Opmerkingen</strong></td>
+   <td><strong>Notities</strong></td>
    <td>De bestaande aangepaste sjablonen worden verplaatst naar <code>/conf/global/settings/community/template/&lt;groups/sites/functions&gt;</code></td>
   </tr>
  </tbody>

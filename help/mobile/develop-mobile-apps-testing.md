@@ -59,7 +59,7 @@ Uw app moet niet alleen automatisch testen, maar ook handmatig testen. Klanten d
    * prestaties,
    * gegevens/energieverbruik enz.
 
-## Opties {#tools}
+## Gereedschappen {#tools}
 
 Er is een groot aantal gereedschappen beschikbaar voor het testen van mobiele apps. De keuze van degenen die u wilt gebruiken, is gebaseerd op uw specifieke situatie: kenmerken, prijs, ondersteuning, dekking, enz. Hieronder volgt slechts een kleine beschrijving van een aantal beschikbare gereedschappen en services.
 

@@ -12,7 +12,7 @@ exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '208'
-ht-degree: 14%
+ht-degree: 0%
 
 ---
 
@@ -39,7 +39,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
   </tr>
   <tr>
    <td><p>checkIfNull</p> </td>
-   <td><p>initialize</p> </td>
+   <td><p>initialiseren</p> </td>
    <td><p>instanceTemplateId</p> </td>
   </tr>
   <tr>
@@ -58,7 +58,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
    <td><p>instances</p> </td>
   </tr>
   <tr>
-   <td><p>title</p> </td>
+   <td><p>titel</p> </td>
    <td><p>resolveNode</p> </td>
    <td><p>syncXFAProps</p> </td>
   </tr>
@@ -103,7 +103,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
    <td><p>name</p> </td>
   </tr>
   <tr>
-   <td><p>mandatory</p> </td>
+   <td><p>verplicht</p> </td>
    <td><p>deelvenster</p> </td>
    <td><p>templateId</p> </td>
   </tr>
@@ -198,7 +198,7 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
    <td><p>activePart</p> </td>
   </tr>
   <tr>
-   <td><p>toolbar</p> </td>
+   <td><p>werkbalk</p> </td>
    <td><p>completionBeforeMessage</p> </td>
    <td><p>isLastPart</p> </td>
   </tr>

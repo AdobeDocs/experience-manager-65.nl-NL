@@ -12,7 +12,7 @@ exl-id: f2abae0a-f7fd-4a39-bd8c-03492ce06fe9
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1117'
-ht-degree: 16%
+ht-degree: 0%
 
 ---
 
@@ -111,12 +111,12 @@ Herhalbaar subformulier is vergelijkbaar met de herhaalbare deelvensters in Adap
 
 1. Selecteer in het palet Hiërarchie het bovenliggende subformulier van het subformulier dat u wilt herhalen.
 1. Klik in het palet Object op het tabblad Subformulier en selecteer Overlopen in de lijst Inhoud.
-1. Selecteer het subformulier dat moet worden herhaald.
+1. Selecteer het subformulier dat u wilt herhalen.
 1. Klik in het palet Object op het tabblad Subformulier en selecteer Geplaatst of Overlopen in de lijst Inhoud.
 1. Klik op het tabblad Binding en selecteer Subformulier herhalen voor elk gegevensitem.
-1. Als u een minimumaantal herhalingen wilt opgeven, selecteert u Min. aantal en typt u een aantal in het bijbehorende vak. Als deze optie is ingesteld op 0 en er geen gegevens zijn opgegeven voor de objecten in het subformulier wanneer de gegevens worden samengevoegd, wordt het subformulier niet geplaatst wanneer het formulier wordt gegenereerd.
-1. Als u een maximumaantal herhalingen van het subformulier wilt opgeven, selecteert u Max en typt u een aantal in het bijbehorende vak. Als u geen waarde opgeeft in het vak Max, is het aantal herhalingen van het subformulier onbeperkt.
-1. Als u een setnummer van subformulierherhalingen wilt opgeven, ongeacht de hoeveelheid gegevens, selecteert u de optie Eerste telling en typt u een aantal in het bijbehorende vak. Als u deze optie selecteert en er geen gegevens beschikbaar zijn of er minder gegevensvermeldingen zijn dan opgegeven bij Eerste telling, worden lege exemplaren van het subformulier toch in het formulier geplaatst.
+1. Als u het minimale aantal herhalingen wilt opgeven, selecteert u Min. aantal en typt u een getal in het bijbehorende vak. Als deze optie is ingesteld op 0 en er geen gegevens zijn opgegeven voor de objecten in het subformulier bij het samenvoegen van gegevens, wordt het subformulier niet geplaatst wanneer het formulier wordt gegenereerd.
+1. Als u het maximale aantal herhalingen van subformulieren wilt opgeven, selecteert u Max en typt u een getal in het bijbehorende vak. Als u geen waarde opgeeft in het vak Max, is het aantal herhalingen van het subformulier onbeperkt.
+1. Als u een ingesteld aantal herhalingen van subformulieren wilt opgeven, ongeacht de hoeveelheid gegevens, selecteert u Eerste telling en typt u een getal in het bijbehorende vak. Als u deze optie selecteert en er geen gegevens beschikbaar zijn of er minder gegevensitems zijn dan de opgegeven waarde bij Eerste telling, worden lege exemplaren van het subformulier nog steeds op het formulier geplaatst.
 1. Voeg twee knoppen toe aan het bovenliggende subformulier: een voor het toevoegen van een exemplaar en een andere voor het verwijderen van exemplaren van herhaalbare subformulieren. Voor gedetailleerde stappen raadpleegt u [Een handeling maken](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c74572b5612a87ca2b56-8000.2.html#WS107c29ade9134a2c-1f74d86012a87d4fe55-8000.2).
 1. Koppel nu de formuliersjabloon aan het adaptieve formulier. Voor gedetailleerde stappen raadpleegt u [Een adaptief formulier maken op basis van een sjabloon](/help/forms/using/creating-adaptive-form.md#create-an-adaptive-form-based-on-a-template).
 1. Gebruik de knoppen die u in stap 9 hebt gemaakt om subformulieren toe te voegen en te verwijderen.

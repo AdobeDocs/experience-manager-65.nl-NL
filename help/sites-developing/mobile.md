@@ -85,12 +85,12 @@ De **We.Retail Mobile Demo Site** gebruikt de volgende mobiele componenten die z
  <tbody>
   <tr>
    <td>Naam</td>
-   <td>Groeperen</td>
+   <td>Groep</td>
    <td>Kenmerken</td>
   </tr>
   <tr>
    <td>mobiele voettekst</td>
-   <td>hidden</td>
+   <td>verborgen</td>
    <td>- voettekst</td>
   </tr>
   <tr>
@@ -105,7 +105,7 @@ De **We.Retail Mobile Demo Site** gebruikt de volgende mobiele componenten die z
   </tr>
   <tr>
    <td>mobilelogo</td>
-   <td>hidden</td>
+   <td>verborgen</td>
    <td>- gebaseerd op de basiscomponent van het logo<br /> - rendert een afbeelding als het apparaat<br /> </td>
   </tr>
   <tr>
@@ -120,7 +120,7 @@ De **We.Retail Mobile Demo Site** gebruikt de volgende mobiele componenten die z
   </tr>
   <tr>
    <td>mobiletopnav</td>
-   <td>hidden</td>
+   <td>verborgen</td>
    <td><p>- op basis van de bovenste grondcomponent</p> <p>- alleen tekst wordt weergegeven</p> </td>
   </tr>
  </tbody>
@@ -272,7 +272,7 @@ Op de **Algemeen** tab:
 
 
 
-1. Klik op OK.
+1. Klik op OK.
 
 Het dialoogvenster voor de configuratie van groepen mobiele apparaten ziet er als volgt uit:
 

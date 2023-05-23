@@ -452,7 +452,7 @@ Het gaat om de volgende processen:
    * Alle wijzigingen (automatisch opslaan inbegrepen) worden uitgevoerd op het actieve inhoudsfragment - niet in een gescheiden, beveiligd gebied.
    * Deze wijzigingen worden daarom direct doorgevoerd op AEM pagina&#39;s die naar het desbetreffende inhoudsfragment verwijzen
 
-#### Acties {#actions}
+#### Handelingen {#actions}
 
 De mogelijke acties zijn:
 

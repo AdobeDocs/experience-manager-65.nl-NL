@@ -102,7 +102,7 @@ Voer een van de volgende handelingen uit om de subelementen te genereren:
    * Selecteer een element en klik op [!UICONTROL Timeline] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klikken [!UICONTROL Start Workflow], selecteert u [!UICONTROL DAM Update Asset], klikt u op [!UICONTROL Start]en klik op [!UICONTROL Proceed].
    * Selecteer een element en klik op [!UICONTROL Create] > [!UICONTROL Workflow] op de werkbalk. Selecteer in het pop-updialoogvenster de optie [!UICONTROL DAM Update Asset] workflow, klik op [!UICONTROL Start]en klik op [!UICONTROL Proceed].
 
-Met name voor Microsoft Word-documenten voert u de opdracht **[!UICONTROL DAM Parse Word Documents]** workflow. Het genereert een `cq:Page` uit de inhoud van het Microsoft Word-document. Er wordt verwezen naar de afbeeldingen die uit het document zijn geëxtraheerd. `cq:Page` component. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
+Met name voor Microsoft Word-documenten voert u de opdracht **[!UICONTROL DAM Parse Word Documents]** workflow. Het genereert een `cq:Page` uit de inhoud van het Microsoft Word-document. Er wordt verwezen naar de afbeeldingen die uit het document zijn geëxtraheerd. `cq:Page` component. Deze afbeeldingen worden uitgepakt, zelfs als het genereren van subelementen is uitgeschakeld.
 
 >[!NOTE]
 >

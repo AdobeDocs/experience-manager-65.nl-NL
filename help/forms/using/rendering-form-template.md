@@ -13,7 +13,7 @@ exl-id: 022b9953-2d64-473f-87b7-aac1602f6a7e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '535'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -69,7 +69,7 @@ De volgende aanvraagparameters worden ondersteund bij het weergeven van het form
 | Parameter | Beschrijving |
 |---|---|
 | dataRef | Deze parameter specificeert **absoluut pad** van het gegevensbestand dat met de sjabloon is samengevoegd. Deze parameter kan een URL zijn naar een andere service die de gegevens retourneert in XML-indeling. |
-| gegevens | Deze parameter geeft de UTF-8-gecodeerde gegevensbytes aan die met de sjabloon worden samengevoegd. Als deze parameter wordt opgegeven, negeert de HTML5-vorm de parameter dataRef. |
+| data | Deze parameter geeft de UTF-8-gecodeerde gegevensbytes aan die met de sjabloon worden samengevoegd. Als deze parameter wordt opgegeven, negeert de HTML5-vorm de parameter dataRef. |
 
 ### De renderparameter doorgeven {#passing-the-render-parameter}
 

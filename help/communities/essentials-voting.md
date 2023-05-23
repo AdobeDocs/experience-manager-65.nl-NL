@@ -42,7 +42,7 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
    <td> cq.social.hbs.voting</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td><p> /libs/social/tally/components/hbs/voting/voting.hbs<br /> /libs/social/tally/components/hbs/voting/activity-title.hbs</p> </td>
   </tr>
   <tr>

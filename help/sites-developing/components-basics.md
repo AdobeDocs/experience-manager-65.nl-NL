@@ -171,7 +171,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    Wordt gebruikt om het gedrag van de resulterende instantie van de component te implementeren.
 
-* **Basisknooppunt**:
+* **Hoofdknooppunt**:
 
    * `<mycomponent> (cq:Component)` - Hiërarchieknooppunt van component.
 
@@ -199,7 +199,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
       * `cq:dialog` ( `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `cq:design_dialog` ( `nt:unstructured`) - Ontwerpbewerking voor deze component
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `dialog` ( `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `design_dialog` ( `cq:Dialog`) - Ontwerpbewerking voor deze component.

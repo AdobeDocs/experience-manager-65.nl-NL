@@ -12,7 +12,7 @@ exl-id: d0280a15-5d0d-49cf-bce9-ad1c40530eae
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '446'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -35,15 +35,15 @@ Uit het vak worden de volgende gebeurtenissen bijgehouden in een adaptieve vorm 
    <td>formName, formTitle, formInstance, panelName, panelTitle</td>
   </tr>
   <tr>
-   <td>save</td>
+   <td>opslaan</td>
    <td>formName, formTitle, formInstance, panelName, source</td>
   </tr>
   <tr>
-   <td>submit</td>
+   <td>indienen</td>
    <td>formName, formTitle, formInstance, source</td>
   </tr>
   <tr>
-   <td>error</td>
+   <td>fout</td>
    <td>formName, formTitle, fieldName, fieldTitle, panelTitle</td>
   </tr>
   <tr>
@@ -77,7 +77,7 @@ U kunt de waarde evalueren van *eventName* en *variableValueMap* argumenten om h
 
 * U kunt ervoor kiezen om de gebeurtenis helemaal niet naar de analyseserver te duwen.
 
-### Voorbeeld {#sample}
+### Monster {#sample}
 
 Geef in het volgende voorbeeld de naam *fout* elk *fieldName* wordt behouden. De gebeurtenis wordt alleen naar de analyseserver verzonden als er opnieuw een fout optreedt.
 

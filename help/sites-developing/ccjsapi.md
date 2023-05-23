@@ -14,7 +14,7 @@ exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '3153'
-ht-degree: 4%
+ht-degree: 0%
 
 ---
 
@@ -36,7 +36,7 @@ Retourneert een sessiearchief met een opgegeven naam. Zie ook [Een sessiewinkel 
 
 * naam: Tekenreeks. De naam van de sessiewinkel.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een CQ_Analytics.SessionStore-object dat de zittingsopslag van de opgegeven naam vertegenwoordigt. Retourneert `null` als er geen opslagplaats met de opgegeven naam bestaat.
 
@@ -48,7 +48,7 @@ Registreert een zittingsopslag met de Context van de Cliënt. Hiermee worden geb
 
 * sessionstore: CQ_Analytics.SessionStore. Het sessieopslagobject dat moet worden geregistreerd.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -80,7 +80,7 @@ Wanneer de vertraging is ingesteld op `true` Voor een aantal milliseconden, wach
 * callback: Functie. De functie om op archiefinitialisatie te roepen.
 * vertraging: Boolean of Number. De hoeveelheid tijd om de vraag aan de callback functie, in milliseconden te vertragen. Een booleaanse waarde van `true` gebruikt de standaardvertraging van `200 ms`. Een booleaanse waarde van `false` of een negatief getal zorgt ervoor dat geen vertraging wordt gebruikt.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -93,7 +93,7 @@ Registreert een callback functie die wordt geroepen wanneer een zittingsopslag w
 * storeName: Tekenreeks. De naam van het sessiearchief om de listener toe te voegen.
 * callback: Functie. De functie om op archiefinitialisatie te roepen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -123,7 +123,7 @@ Maakt een CQ_Analytics.JSONPStore-object.
 * deferLoading: (Optioneel) Booleaans. De waarde true voorkomt dat de JSONP-service bij het maken van objecten wordt aangeroepen. Een waarde van vals veroorzaakt de dienst JSONP om worden geroepen.
 * loadingCallback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het nieuwe object CQ_Analytics.JSONPStore of null als storeName null is.
 
@@ -135,7 +135,7 @@ Hiermee wordt de URL opgehaald van de JSONP-service die dit object gebruikt om J
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een tekenreeks die de service-URL vertegenwoordigt, of null als er geen service-URL is geconfigureerd.
 
@@ -149,7 +149,7 @@ Roept de dienst JSONP aan. JSONP URL is de dienst URL die met een bepaalde callb
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
 * callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -164,7 +164,7 @@ Maakt een CQ_Analytics.JSONPStore-object en registreert de winkel met Client-con
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
 * callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het geregistreerde object CQ_Analytics.JSONPStore.
 
@@ -176,7 +176,7 @@ Plaatst URL van de dienst JSONP voor het terugwinnen van JSON- gegevens te gebru
 
 * serviceURL: Tekenreeks. De URL van de JSONP-service die JSON-gegevens levert
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -212,7 +212,7 @@ Verwijdert de gegevens van de zittingsopslag en verwijdert alle initialiseringse
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -225,7 +225,7 @@ Maakt een CQ_Analytics.JSONStore-object met een opgegeven naam en geïnitialisee
 * storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het object CQ_Analytics.JSONStore.
 
@@ -237,7 +237,7 @@ Haalt de gegevens van de sessieopslag op in JSON-indeling.
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een object dat de opslaggegevens in JSON-indeling vertegenwoordigt.
 
@@ -249,7 +249,7 @@ Wist de zittingsopslag en initialiseert het met het initialiseringsbezit. Hierme
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde gegevens.
 
@@ -280,7 +280,7 @@ B/B1: "valueBB1"
 * jsonData: Een JSON-object dat de gegevens bevat die moeten worden opgeslagen.
 * doNotClear: Bij de waarde true blijven de bestaande initialisatie-eigenschappen behouden en worden de eigenschappen toegevoegd die zijn afgeleid van het JSON-object. Bij de waarde false worden de bestaande initialisatie-eigenschappen verwijderd voordat de eigenschappen uit het JSON-object worden toegevoegd.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -293,7 +293,7 @@ Maakt een CQ_Analytics.JSONStore-object met een opgegeven naam en geïnitialisee
 * storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het object CQ_Analytics.JSONStore.
 
@@ -313,7 +313,7 @@ Registreert een listener voor een gebeurtenis. Zie ook [Listener maken om te rea
 * fct: Functie. De functie die wordt aangeroepen wanneer de gebeurtenis plaatsvindt.
 * bereik: (Optioneel) Object. Het bereik waarin de handlerfunctie moet worden uitgevoerd. De context van de handlerfunctie &#39;this&#39;.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -326,7 +326,7 @@ Verwijdert de opgegeven gebeurtenishandler voor een gebeurtenis.
 * gebeurtenis: Tekenreeks. De naam van de gebeurtenis.
 * fct: Functie. De gebeurtenishandler.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -352,7 +352,7 @@ Maakt een CQ_Analytics.PersistedJSONPStore-object.
 * deferLoading: (Optioneel) Booleaans. De waarde true voorkomt dat de JSONP-service bij het maken van objecten wordt aangeroepen. Een waarde van vals veroorzaakt de dienst JSONP om worden geroepen.
 * loadingCallback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het nieuwe object CQ_Analytics.PersistedJSONPStore of null als storeName null is.
 
@@ -364,7 +364,7 @@ Hiermee wordt de URL opgehaald van de JSONP-service die dit object gebruikt om J
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een tekenreeks die de service-URL vertegenwoordigt, of null als er geen service-URL is geconfigureerd.
 
@@ -378,7 +378,7 @@ Roept de dienst JSONP aan. JSONP URL is de dienst URL die met een bepaalde callb
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
 * callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -393,7 +393,7 @@ Maakt een CQ_Analytics.PersistedJSONPStore-object en registreert de winkel met C
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
 * callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het geregistreerde object CQ_Analytics.PersistedJSONPStore.
 
@@ -405,7 +405,7 @@ Plaatst URL van de dienst JSONP voor het terugwinnen van JSON- gegevens te gebru
 
 * serviceURL: Tekenreeks. De URL van de JSONP-service die JSON-gegevens levert
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -438,7 +438,7 @@ Maakt een CQ_Analytics.PersistedJSONStore-object met een opgegeven naam en geïn
 * storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het object CQ_Analytics.PersistedJSONStore.
 
@@ -450,7 +450,7 @@ Haalt de gegevens van de sessieopslag op in JSON-indeling.
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een object dat de opslaggegevens in JSON-indeling vertegenwoordigt.
 
@@ -481,7 +481,7 @@ B/B1: "valueBB1"
 * jsonData: Een JSON-object dat de gegevens bevat die moeten worden opgeslagen.
 * doNotClear: Bij de waarde true blijven de bestaande initialisatie-eigenschappen behouden en worden de eigenschappen toegevoegd die zijn afgeleid van het JSON-object. Bij de waarde false worden de bestaande initialisatie-eigenschappen verwijderd voordat de eigenschappen uit het JSON-object worden toegevoegd.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -494,7 +494,7 @@ Maakt een CQ_Analytics.PersistedJSONStore-object met een opgegeven naam en geïn
 * storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Het object CQ_Analytics.PersistedJSONStore.
 
@@ -526,7 +526,7 @@ Hiermee wordt het dialoogvenster `STOREKEY` eigenschap.
 
 Geen
 
-**Geeft als resultaat**
+**Retourneert**
 
 De waarde van de `STOREKEY` eigenschap.
 
@@ -538,7 +538,7 @@ Hiermee wordt bepaald of een gegevenseigenschap wordt gepresteerd.
 
 * naam: Tekenreeks. De naam van de eigenschap.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een Booleaanse waarde van `true` als de eigenschap aanhoudt, en een waarde van `false` als de waarde geen blijvend bezit is.
 
@@ -554,7 +554,7 @@ Hiermee wordt het `persist` gebeurtenis na voltooiing.
 
 Geen
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -566,7 +566,7 @@ Hiermee verwijdert u alle gegevenseigenschappen uit de winkel en gaat u door met
 
 * delayEvent: De waarde true voorkomt het `update` -gebeurtenis worden geactiveerd. Een waarde van `false` zorgt dat de updategebeurtenis wordt gestart.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -578,7 +578,7 @@ Hiermee wordt een gegevenseigenschap gemarkeerd als niet voortgezet.
 
 * naam: Tekenreeks. The name of the property that is not to be persisted.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen retourwaarde.
 
@@ -609,7 +609,7 @@ Gebruik loadInitProperties om de gegevens van de zittingsopslag met de initialis
 * naam: Tekenreeks. De naam van de eigenschap die moet worden toegevoegd.
 * waarde: Tekenreeks. De waarde van de eigenschap die moet worden toegevoegd.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -621,7 +621,7 @@ Hiermee verwijdert u alle gegevenseigenschappen uit de opslagruimte.
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen retourwaarde.
 
@@ -633,7 +633,7 @@ Retourneert de opslaggegevens. Hiermee worden naameigenschappen eventueel uitges
 
 uitgesloten: (Optioneel) Een array met namen van eigenschappen die worden uitgesloten van de geretourneerde gegevens.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een object met eigenschappen en hun waarden.
 
@@ -645,7 +645,7 @@ Hiermee wordt de waarde van een eigenschap data opgehaald.
 
 * naam: Tekenreeks. The name of the data property to retrieve.
 
-**Geeft als resultaat**
+**Retourneert**
 
 De waarde van de eigenschap data. Returns `null` als de zittingsopslag geen bezit van de bepaalde naam bevat.
 
@@ -657,7 +657,7 @@ Retourneert de naam van de sessiewinkel.
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een tekenreekswaarde die staat voor de winkelnaam.
 
@@ -670,7 +670,7 @@ Retourneert de waarde van een eigenschap. De waarde wordt geretourneerd als de o
 * naam: Tekenreeks. The name of the data property to retrieve.
 * raw: Booleaans. De waarde true zorgt ervoor dat de waarde van de onbewerkte eigenschap wordt geretourneerd. Bij de waarde false wordt de geretourneerde waarde XSS-gefilterd.
 
-**Geeft als resultaat**
+**Retourneert**
 
 De waarde van de eigenschap data.
 
@@ -682,7 +682,7 @@ Retourneert de namen van de eigenschappen die de sessieopslag bevat. roept de `i
 
 uitgesloten: (Optioneel) Een array met namen van eigenschappen die uit de resultaten moeten worden weggelaten.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een array met tekenreekswaarden die staan voor de namen van de sessieeigenschappen.
 
@@ -694,9 +694,9 @@ Retourneert de sessiewinkel die aan het huidige object is gekoppeld.
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
-this
+dit
 
 #### init() {#init-1}
 
@@ -706,7 +706,7 @@ Hiermee wordt de winkel gemarkeerd als geïnitialiseerd en wordt de knop `initia
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -718,7 +718,7 @@ Geeft aan of de opslag van sessies is geïnitialiseerd.
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Een waarde van `true` als de winkel is geïnitialiseerd, en een waarde van `false` als de winkel niet is geïnitialiseerd.
 
@@ -731,7 +731,7 @@ Voegt de eigenschappen van een bepaald voorwerp aan de initialisatiegegevens van
 * obj: Een object dat opsombare eigenschappen bevat.
 * setValues: Indien waar (true), worden de eigenschappen obj toegevoegd aan de opslaggegevens van de sessie als de opslaggegevens nog geen eigenschap met dezelfde naam bevatten. Wanneer de waarde false is, worden geen gegevens toegevoegd aan de opslaggegevens van de sessie.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -743,7 +743,7 @@ Hiermee wordt een eigenschap uit de sessieopslag verwijderd. Hiermee wordt het `
 
 * naam: Tekenreeks. De naam van de eigenschap die moet worden verwijderd.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -755,7 +755,7 @@ Hiermee herstelt u de oorspronkelijke waarden van de gegevensopslag. De standaar
 
 Geen.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -767,7 +767,7 @@ Stelt de waarden van meerdere eigenschappen in. Hiermee wordt het `update` gebeu
 
 * Eigenschappen: Object. Een object dat opsombare eigenschappen bevat. Elke eigenschapsnaam en -waarde wordt toegevoegd aan de winkel.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.
 
@@ -780,6 +780,6 @@ Hiermee wordt de waarde van een eigenschap ingesteld. Hiermee wordt het `update`
 * naam: Tekenreeks. De naam van de eigenschap.
 * waarde: Tekenreeks. Waarde eigenschap.
 
-**Geeft als resultaat**
+**Retourneert**
 
 Geen geretourneerde waarde.

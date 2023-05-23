@@ -14,7 +14,7 @@ exl-id: c3b6ee31-ccbb-4446-86c8-f618226fefc4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '413'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -51,8 +51,8 @@ Een andere (en veiligere) manier om de toepassing Create Correspondence aan te r
 
 | **Naam** | **Type** | **Beschrijving** |
 |---|---|---|
-| cmLetterInstanceId | Tekenreeks | De id voor de letter-instantie. |
-| cmLetterId | Tekenreeks | De naam van de Letter-sjabloon. |
+| cmLetterInstanceId | String | De id voor de letter-instantie. |
+| cmLetterId | String | De naam van de Letter-sjabloon. |
 
 De volgorde van parameters in de tabel geeft de voorkeur aan parameters die worden gebruikt voor het laden van de letter.
 
@@ -72,7 +72,7 @@ De volgorde van parameters in de tabel geeft de voorkeur aan parameters die word
   </tr>
   <tr>
    <td>cmLetterInstanceId</td> 
-   <td>Tekenreeks</td> 
+   <td>String</td> 
    <td>XML-gegevens gebruiken die beschikbaar zijn in Letter Instance.</td> 
   </tr>
   <tr>

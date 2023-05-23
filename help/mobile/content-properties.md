@@ -13,7 +13,7 @@ exl-id: 05c8c846-69cc-4075-9149-33890b3d1e08
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '355'
-ht-degree: 12%
+ht-degree: 1%
 
 ---
 
@@ -33,39 +33,39 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | **Eigenschapnaam** | **Type** | **Standaardwaarden of Verwachte waarden** | **Beschrijving** |
 |---|---|---|---|
-| dps-id | Tekenreeks |  | toegewezen door AEM Mobile en opgeslagen door AEM zodra geüpload naar AEM Mobile of geïmporteerd uit AEM Mobile |
-| dps-resourceType | Tekenreeks | dps:Artikel | dps:banner | dps:Verzameling | eigenschap type entiteit |
-| dps-versie | Tekenreeks |  | versie van AEM Mobile-entiteit (ook opgenomen in de volledige AMM-id) |
-| dps-lastSynced | Date |  | datum van laatste synchronisatie/import uit AEM Mobile naar AEM |
-| dps-lastUploaded | Date |  | datum van laatste upload van AEM naar AEM Mobile |
+| dps-id | String |  | toegewezen door AEM Mobile en opgeslagen door AEM zodra geüpload naar AEM Mobile of geïmporteerd uit AEM Mobile |
+| dps-resourceType | String | dps:Artikel | dps:banner | dps:Verzameling | eigenschap type entiteit |
+| dps-versie | String |  | versie van AEM Mobile-entiteit (ook opgenomen in de volledige AMM-id) |
+| dps-lastSynced | Datum |  | datum van laatste synchronisatie/import uit AEM Mobile naar AEM |
+| dps-lastUploaded | Datum |  | datum van laatste upload van AEM naar AEM Mobile |
 | dps-lastUploadedBy | String:userid |  | De gebruiker van identiteitskaart die het laatste uploadverzoek van AEM aan AEM Mobile uitvoerde |
 
 ## Eigenschappen van kernmetagegevens {#core-metadata-properties}
 
 | Eigenschapnaam | Type | Standaardwaarden of Verwachte waarden |
 |--- |--- |--- |
-| dps-title | Tekenreeks |  |
-| dps-shortTitle | Tekenreeks |  |
-| dps-abstract | Tekenreeks |  |
-| dps-shortAbstract | Tekenreeks |  |
-| dps-afdeling | Tekenreeks |  |
-| dps-categorie | Tekenreeks |  |
-| dps-trefwoorden | Tekenreeks[] |  |
-| dps-internalKeywords | Tekenreeks[] |  |
-| dps-belang | Tekenreeks[] | Important from {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
+| dps-title | String |  |
+| dps-shortTitle | String |  |
+| dps-abstract | String |  |
+| dps-shortAbstract | String |  |
+| dps-afdeling | String |  |
+| dps-categorie | String |  |
+| dps-trefwoorden | String[] |  |
+| dps-internalKeywords | String[] |  |
+| dps-belang | String[] | Important from {&quot;low&quot;, &quot;normal&quot;, &quot;high&quot;} |
 
 ### Artikelen {#articles}
 
 | **Eigenschapnaam** | **Type** | **Standaardwaarden of Verwachte waarden** |
 |---|---|---|
-| dps-auteur | Tekenreeks |  |
-| dps-auteurURL | Tekenreeks |  |
+| dps-auteur | String |  |
+| dps-auteurURL | String |  |
 | dps-hideFromBrowsePage | Boolean |  |
-| dps-toegang | Tekenreeks | ProtectedAccess from {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
+| dps-toegang | String | ProtectedAccess from {&quot;protected&quot;, &quot;metered&quot;, &quot;free&quot;} |
 | **Sociaal** |  |  |
-| dps-socialShareURL | Tekenreeks |  |
-| dps-articleText | Tekenreeks |  |
-| dps-url | Tekenreeks |  |
+| dps-socialShareURL | String |  |
+| dps-articleText | String |  |
+| dps-url | String |  |
 
 ### Banners {#banners}
 
@@ -78,12 +78,12 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Eigenschapnaam | Type | Standaardwaarden of Verwachte waarden |
 |--- |--- |--- |
-| dps-productId | Tekenreeks |  |
-| dps-readingPosition | Tekenreeks | from {&quot;reset&quot;,&quot;keep&quot;} |
+| dps-productId | String |  |
+| dps-readingPosition | String | from {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Boolean |  |
 | dps-allowDownload | Boolean |  |
-| dps-openDefault | Tekenreeks | from {&quot;browsePage&quot;,&quot;contentView&quot;} |
-| dps-lay-out | Tekenreeks |  |
+| dps-openDefault | String | from {&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-lay-out | String |  |
 
 ## Inhoudsknooppunten {#content-nodes}
 

@@ -220,7 +220,7 @@ Dus laten wij zeggen enkel omdat u een knoop van type &quot;Document&quot;zou ku
 
 #### Voorbeeld {#example-7}
 
-Gebruiken:
+Gebruik:
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments/front.jpg

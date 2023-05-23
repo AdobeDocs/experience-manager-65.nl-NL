@@ -77,7 +77,7 @@ Bijvoorbeeld van `/apps/weretail/components/hbs/rating/rating.hbs`:
 </div>
 ```
 
-## Eigen eigenschappen {#custom-properties}
+## Aangepaste eigenschappen {#custom-properties}
 
 Wanneer u een component uitbreidt of bedekt, is het mogelijk eigenschappen toe te voegen aan een gewijzigd dialoogvenster.
 

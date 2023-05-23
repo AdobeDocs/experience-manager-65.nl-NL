@@ -49,7 +49,7 @@ Er zijn een aantal vereisten voordat u begint met SPA in AEM.
 * Basisvaardigheden AEM het creëren van de Fragmenten van de Inhoud en het gebruiken van de redacteur
 * Controleer of u het document wilt reviseren [Hoofdletters en headless in AEM](/help/sites-developing/headful-headless.md) om inzicht te krijgen in de verschillende niveaus van SPA mogelijke integratie.
 
-### Opties {#tools}
+### Gereedschappen {#tools}
 
 * Sandbox-toegang voor het testen van de implementatie van uw project
 * Local development instance for data modelling and testing

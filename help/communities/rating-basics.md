@@ -42,7 +42,7 @@ Anonieme detachering van een rating wordt niet ondersteund. Sitebezoekers moeten
    <td> cq.social.hbs.rating</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td><p> /libs/social/tally/components/hbs/rating/rating.hbs<br /> /libs/social/tally/components/hbs/rating/display.hbs<br /> /libs/social/tally/components/hbs/rating/histogram.hbs</p> </td>
   </tr>
   <tr>

@@ -11,7 +11,7 @@ exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
 source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
 workflow-type: tm+mt
 source-wordcount: '1320'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -173,7 +173,7 @@ Met de volgende stappen kunt u de handeling voor het verzenden van e-mail config
    |--- |--- |
    | Van | `donotreply@weretail.com` |
    | Naar | `${customer_Email}` |
-   | Subject | Bevestiging: Je hebt een verzendadres toegevoegd op de website We.Retail. |
+   | Onderwerp | Bevestiging: Je hebt een verzendadres toegevoegd op de website We.Retail. |
    | E-mailsjabloon | Hallo `${customer_Name}`, Het volgende adres wordt toegevoegd als het verzendadres voor je account: <br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Met vriendelijke groeten, wij.Retail |
    | Bijlagen opnemen | Ingeschakeld |
 

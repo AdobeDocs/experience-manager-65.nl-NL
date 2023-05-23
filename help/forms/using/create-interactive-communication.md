@@ -314,7 +314,7 @@ Als het opgegeven weergavepatroon onjuist is of niet kan worden toegepast, worde
 
 Tik op de component of het deel van de inhoud en selecteer ![createruleus](assets/createruleicon.png) (Regel maken) om de Regel-editor te starten.
 
-Meer informatie:
+Zie voor meer informatie:
 
 * [Regeleditor](/help/forms/using/rule-editor.md)
 * [Inleiding tot interactieve communicatie authoring](/help/forms/using/introduction-interactive-communication-authoring.md)

@@ -176,7 +176,7 @@ Deze componenten kunnen worden gemigreerd door ze te openen in de Rule Editor in
 
 Nadat u het migratiehulpprogramma hebt uitgevoerd, moet u de volgende huishoudelijke taken uitvoeren:
 
-1. Zorg ervoor dat de XFA-versie van lay-outs en fragmentlay-outs 3.3 of hoger is. Als u lay-outs en fragmentlay-outs van een oudere versie gebruikt, kunnen er problemen optreden bij het renderen van de letter. Voer de volgende stappen uit om de versie van een oudere XFA bij te werken naar de nieuwste versie:
+1. Zorg ervoor dat de XFA-versie van lay-outs en fragmentlay-outs 3.3 of hoger is. Als u lay-outs en fragmentlay-outs van een oudere versie gebruikt, kunnen er problemen optreden bij het renderen van de letter. Voer de volgende stappen uit om de versie van een oudere XFA bij te werken naar de meest recente versie:
 
    1. [XFA downloaden als ZIP-bestand](../../forms/using/import-export-forms-templates.md#p-import-and-export-assets-in-correspondence-management-p) in de Forms-gebruikersinterface.
    1. Extraheer het bestand.

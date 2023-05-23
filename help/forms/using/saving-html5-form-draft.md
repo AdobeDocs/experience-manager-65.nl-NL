@@ -13,7 +13,7 @@ exl-id: a9879445-d626-4279-8a95-a9009294b483
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '300'
-ht-degree: 3%
+ht-degree: 0%
 
 ---
 
@@ -37,13 +37,13 @@ Opslaan als concept inschakelen voor uw bestaande [aangepast profiel](/help/form
   </tr>
   <tr>
    <td>mfAllowFPDraft</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>true</td>
    <td><p>Hiermee wordt de functie Opslaan als concept ingeschakeld</p> <p>voor dit profiel.</p> </td>
   </tr>
   <tr>
    <td>mfAllowAttachments</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>true</td>
    <td><p>Hiermee kunt u bijlagen uploaden</p> <p>met dit profiel.</p> </td>
   </tr>
@@ -66,7 +66,7 @@ Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding 
   </tr>
   <tr>
    <td>fp.enablePortalSubmit</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>true</td>
    <td>Concepten en formulieren weergeven in<br /> Forms Portal Concepten en verzendingen na verzending</td>
   </tr>

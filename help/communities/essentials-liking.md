@@ -43,7 +43,7 @@ Anonieme post van een soortgelijk object wordt niet ondersteund. Sitebezoekers m
    <td> cq.social.hbs.liking</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td><p> /libs/social/tally/components/hbs/liking/liking.hbs<br /> /libs/social/tally/components/hbs/liking/activity-icon.hbs<br /> /libs/social/tally/components/hbs/liking/activity-title.hbs</p> </td>
   </tr>
   <tr>

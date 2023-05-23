@@ -13,7 +13,7 @@ exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -38,7 +38,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie Forum
    <td>cq.ckeditor<br /> cq.social.hbs.stemden<br /> cq.social.hbs.forum</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/forum/components/hbs/forum/forum.hbs<br /> /libs/social/forum/components/hbs/post/post.hbs<br /> /libs/social/forum/components/hbs/topic/topic.hbs<br /> /libs/social/forum/components/hbs/topic/list-item.hbs<br /> </td>
   </tr>
   <tr>

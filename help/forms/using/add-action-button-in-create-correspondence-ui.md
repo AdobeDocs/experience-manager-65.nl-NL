@@ -109,7 +109,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
    |---|---|
    | name | De alfanumerieke naam voor de handeling die moet worden uitgevoerd. Waarde van deze tag is vereist, moet uniek zijn (binnen de tag modelExtension) en moet beginnen met een alfabet. |
    | label | Het label dat op de actieknop moet worden weergegeven |
-   | tooltip | Knopinfo-tekst van de knop, die wordt weergegeven wanneer de gebruiker de muisaanwijzer op de knop plaatst. |
+   | knopinfo | Knopinfo-tekst van de knop, die wordt weergegeven wanneer de gebruiker de muisaanwijzer op de knop plaatst. |
    | styleName | Naam van de aangepaste stijl die op de actieknop wordt toegepast. |
    | permissionName | De overeenkomstige actie wordt getoond slechts als de gebruiker de toestemming heeft die door permissionName wordt gespecificeerd. Wanneer u permissionName opgeeft als `forms-users`, krijgen alle gebruikers toegang tot deze optie. |
    | actionHandler | Volledig gekwalificeerde naam van de klasse ActionHandler die wordt aangeroepen wanneer de gebruiker op de knop klikt. |

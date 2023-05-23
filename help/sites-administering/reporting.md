@@ -381,7 +381,7 @@ Het pagina-activiteitenrapport bevat een overzicht van de pagina&#39;s en de act
 [Kolommen met informatie](#selecting-and-positioning-the-data-columns) informatie:
 
 * Pagina
-* Time
+* Tijd
 * Type
 * Gebruiker
 
@@ -403,7 +403,7 @@ Dit rapport bevat informatie over door gebruikers gegenereerde inhoud. Dit zijn 
 
 [Kolommen met informatie](#selecting-and-positioning-the-data-columns) op:
 
-* Date
+* Datum
 * IP-adres
 * Pagina
 * Referenter

@@ -15,7 +15,7 @@ exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
 source-git-commit: 07f8a9f629122102d30676926b225d57e542147d
 workflow-type: tm+mt
 source-wordcount: '1060'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -130,11 +130,11 @@ In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig o
   <tr>
    <th>Eigenschap</th>
    <th>Type</th>
-   <th>Waarde Beschrijving</th>
+   <th>Beschrijving van waarde</th>
   </tr>
   <tr>
    <td>badgingPath</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td><em>(Vereist)</em> Een tekenreeks met meerdere waarden voor badge-afbeeldingen tot het aantal badgingLevels. De wegen van het badge beeld moeten worden bevolen zodat eerste aan de hoogste deskundige wordt toegekend. Als er minder badges zijn dan aangegeven door badgingLevels, vult het laatste badge in de array de rest van de array in. Voorbeeld:<br /> <code>/libs/settings/community/badging/images/expert-badge/jcr:content/expert.png</code></td>
   </tr>
   <tr>
@@ -144,12 +144,12 @@ In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig o
   </tr>
   <tr>
    <td>badgingType</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td><em>(Vereist)</em> Hiermee wordt de scoring-engine aangeduid als "basic" of "advanced". Ingesteld op "advanced" anders is de standaardwaarde "basic".</td>
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>Tekenreeks[]</td>
+   <td>String[]</td>
    <td><em>(Optioneel)</em> Een tekenreeks met meerdere waarden waarmee de merkingsregel wordt beperkt tot het scoren van gebeurtenissen die worden geïdentificeerd door de vermelde scoreregel(s).<br /> Voorbeeld:<br /> <code>/libs/settings/community/scoring/rules/adv-comments-scoring</code><br /> Standaard is geen beperking.</td>
   </tr>
  </tbody>

@@ -13,7 +13,7 @@ exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '909'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -63,7 +63,7 @@ AEM [!DNL Forms] een component AEM [!DNL Forms] Container voor het insluiten van
 
 1. Open het browsertabblad met AEM [!DNL Sites] pagina geopend in stap 1. Tik op de knop **[!UICONTROL Drag components here]** doos en tik **+.** In de **[!UICONTROL Insert New Component]** doos, tikken **[!UICONTROL AEM Form]**. De **[!UICONTROL AEM Forms Container]** wordt toegevoegd aan de pagina.
 1. Tik op de knop **[!UICONTROL AEM Forms container]** component en tik ![configure-icon](assets/configure-icon.svg). Een dialoogvenster met eigenschappen van AEM [!DNL Forms] Container wordt weergegeven. In de **[!UICONTROL Asset Path]** , bladert u en selecteert u het adaptieve formulier voor het verzendadres-add-update-form. Tikken ![save_icon](assets/save_icon.svg). Het adaptieve formulier is ingesloten op de pagina.
-1. Publiceer zowel het adaptieve formulier als [!DNL Sites] pagina. Hierna volgt een aantal punten waarmee u rekening kunt houden:
+1. Publiceer zowel het adaptieve formulier als [!DNL Sites] pagina. Hieronder volgen enkele punten die u in overweging wilt nemen:
 
    * Als u de AEM publiceert [!DNL Sites] voor het eerst pagina&#39;s maken en een ingesloten formulier bevatten, publiceert u de [!DNL Sites] en het ingesloten formulier.
    * Als u alleen het ingesloten formulier op een gepubliceerde sitepagina wijzigt, publiceert u het oorspronkelijke formulier en de wijzigingen worden weerspiegeld in de gepubliceerde sitepagina. De gepubliceerde sitepagina bevat een verwijzing naar het formulier en de pagina hoeft niet opnieuw te worden gepubliceerd.

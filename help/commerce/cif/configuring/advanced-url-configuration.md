@@ -38,7 +38,7 @@ Om het `UrlProvider` De dienst volgens de eisen van SEO en vereist een project m
 
 Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u de volgende opties:
 
-* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (standaardwaarde)
+* `{{page}}.html/{{sku}}.html#{{variant_sku}}` (standaard)
 * `{{page}}.html/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_key}}.html#{{variant_sku}}`
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
@@ -60,7 +60,7 @@ Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgema
 
 Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of productlijst en ondersteunt u de volgende opties:
 
-* `{{page}}.html/{{url_path}}.html` (standaardwaarde)
+* `{{page}}.html/{{url_path}}.html` (standaard)
 * `{{page}}.html/{{url_key}}.html`
 
 In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):

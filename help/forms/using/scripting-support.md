@@ -14,7 +14,7 @@ exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
 source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
 workflow-type: tm+mt
 source-wordcount: '3892'
-ht-degree: 35%
+ht-degree: 1%
 
 ---
 
@@ -33,7 +33,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>prevText</code></td>
-   <td>Hiermee wordt de inhoud van het veld aangegeven voordat deze is gewijzigd als gevolg van de handelingen van een gebruiker. Deze waarde kan worden teruggeroepen, vergelijkbaar met een functie voor ongedaan maken.</td>
+   <td>Hiermee geeft u de inhoud van het veld op voordat deze wordt gewijzigd als reactie op de acties van een gebruiker. Deze waarde kan worden teruggeroepen, vergelijkbaar met een functie voor ongedaan maken.</td>
    <td><p>Werkt niet voor vervolgkeuzelijsten en keuzelijsten. <code>PrevText </code>werkt niet correct in de volgende gevallen:</p>
     <ul>
      <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (,), &amp;, @ en meer) in numerieke velden op de iPad, en </li>
@@ -47,7 +47,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>newtext</code></td>
-   <td>Hiermee geeft u de inhoud van het veld aan nadat deze is gewijzigd door de actie van een gebruiker.</td>
+   <td>Hiermee geeft u de inhoud van het veld op nadat deze is gewijzigd als reactie op handelingen van de gebruiker.</td>
    <td><p>De <code>newText</code> De eigenschap werkt niet goed voor de volgende gevallen:</p>
     <ul>
      <li>Bij het selecteren van teksten</li>
@@ -61,8 +61,8 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
     </div> </td>
   </tr>
   <tr>
-   <td>change</td>
-   <td>Hiermee wordt de waarde aangegeven die een gebruiker in een veld typt of plakt onmiddellijk nadat de actie is uitgevoerd. </td>
+   <td>wijzigen</td>
+   <td>Hiermee wordt de waarde opgegeven die een gebruiker in een veld typt of plakt direct nadat de handeling is uitgevoerd. </td>
    <td><p>De eigenschap change werkt niet goed voor de volgende gevallen:</p>
     <ul>
      <li>Bij het selecteren van teksten</li>
@@ -74,12 +74,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>keydown</td>
-   <td>Hiermee wordt bepaald of een gebruiker op een pijltoets drukt om een item te selecteren. Deze eigenschap is alleen beschikbaar voor keuzelijsten en vervolgkeuzelijsten.</td>
+   <td>Hiermee wordt bepaald of een gebruiker op een pijltoets drukt om een selectie te maken. Deze eigenschap is alleen beschikbaar voor keuzelijsten en vervolgkeuzelijsten.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>modifier</td>
-   <td>Hiermee wordt bepaald of de modifier-toets (bijvoorbeeld Ctrl in Microsoft Windows®) wordt ingedrukt wanneer een specifieke gebeurtenis wordt uitgevoerd.</td>
+   <td>Hiermee wordt bepaald of de modifier-toets (bijvoorbeeld Ctrl in Microsoft® Windows®) wordt ingedrukt wanneer een bepaalde gebeurtenis wordt uitgevoerd.</td>
    <td>Geen</td>
   </tr>
  </tbody>
@@ -97,7 +97,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td><code>apptype</code></td>
    <td>Retourneert het toepassingstype van de host. Alleen beschikbaar voor clienttoepassingen.</td>
-   <td>Geeft als resultaat <code>HTML 5</code>.</td>
+   <td>Retourneert <code>HTML 5</code>.</td>
   </tr>
   <tr>
    <td><code>name</code></td>
@@ -126,7 +126,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>calculationsEnabled</code></td>
-   <td>Hiermee wordt aangegeven of er berekeningsscripts worden uitgevoerd.<br /> </td>
+   <td>Hiermee wordt opgegeven of berekeningsscripts worden uitgevoerd.<br /> </td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -141,7 +141,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>pageDown</code></td>
-   <td>Hiermee gaat u naar de volgende pagina van een formulier. Gebruik de methode pageDown tijdens de uitvoering.</td>
+   <td>Hiermee gaat u naar de volgende pagina van een formulier. Gebruik de methode pageDown tijdens de runtime.</td>
    <td> </td>
   </tr>
   <tr>
@@ -151,7 +151,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>resetdata</code></td>
-   <td>Hiermee worden in een document de velden weer op de standaardwaarden ingesteld.</td>
+   <td>Hiermee herstelt u de standaardwaarden van de velden in een document.</td>
    <td>Hiermee wist u alle gegevens in een formulier met samengevoegde gegevens en herstelt u deze niet tot de standaardwaarden.</td>
   </tr>
   <tr>
@@ -161,7 +161,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>currentPage</td>
-   <td><p>Hiermee wordt de huidige actieve pagina van een document bij uitvoering ingesteld.</p> <p>De paginanummers beginnen bij 0, waardoor de eerste pagina van een document de waarde 0 retourneert.</p> <p>De eigenschap currentPage is beschikbaar wanneer layout:ready wordt uitgevoerd op een client. De eigenschap is echter niet beschikbaar wanneer layout:ready wordt uitgevoerd op de server, omdat de eigenschap pas wordt uitgevoerd wanneer de formulierindeling wordt uitgevoerd.</p> </td>
+   <td><p>Hiermee wordt de huidige actieve pagina van een document bij uitvoering ingesteld.</p> <p>De paginanummers beginnen bij 0, dus de eerste pagina van een document retourneert de waarde 0.</p> <p>De eigenschap currentPage is beschikbaar wanneer layout:ready op een client wordt uitgevoerd. De eigenschap is echter niet beschikbaar wanneer layout:ready wordt uitgevoerd op de server, omdat de eigenschap pas wordt uitgevoerd wanneer de formulierindeling wordt uitgevoerd.</p> </td>
    <td>Geen</td>
   </tr>
  </tbody>
@@ -213,7 +213,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>formatMessage</code></td>
-   <td>Hiermee wordt de tekenreeks van het validatiebericht voor opmaak voor dit veld aangegeven.</td>
+   <td>Specifies the format validation message string for this field.</td>
    <td>Instelling <code>formatMessage </code>via script wordt niet ondersteund.</td>
   </tr>
   <tr>
@@ -223,22 +223,22 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>border</code></td>
-   <td>Met het border-object wordt de rand rond een object beschreven.</td>
+   <td>Met het randobject wordt de rand rondom een object beschreven.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>ui</code></td>
-   <td>In het ui-object wordt de gebruikersinterfacebeschrijving van een formulierobject ingesloten.</td>
+   <td>Het ui-object bevat de gebruikersinterfacebeschrijving van een formulierobject.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>mandatory</code></td>
-   <td>Hiermee wordt de nullTest-waarde voor dit veld opgegeven.</td>
+   <td>Specifies the nullTest value for the field.</td>
    <td> </td>
   </tr>
   <tr>
    <td><code>borderColor</code></td>
-   <td>Hiermee wordt de waarde van de randkleur voor dit veld opgegeven. U moet de eigenschap border.edge.presence instellen op visible separately.</td>
+   <td>Specifies the border color value for this field. U moet de eigenschap border.edge.presence instellen op visible separately.</td>
    <td>De standaardrandkleur van het veld wordt niet correct geretourneerd.</td>
   </tr>
   <tr>
@@ -258,7 +258,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>boundItem</code></td>
-   <td>Hiermee wordt de gebonden waarde van een bepaald weergave-item van een vervolgkeuzelijst of keuzelijst opgehaald.</td>
+   <td>Hiermee wordt de gebonden waarde van een specifiek weergaveitem van een vervolgkeuzelijst of keuzelijst opgehaald.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -273,17 +273,17 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>execEvent</code></td>
-   <td>Hiermee wordt het script voor gebeurtenissen van het object uitgevoerd.</td>
+   <td>Hiermee wordt het gebeurtenisscript van het object uitgevoerd.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td><code>getItemState</code></td>
-   <td>Hiermee wordt de selectiestatus van het opgegeven item als resultaat gegeven</td>
+   <td>Hiermee wordt de selectiestatus van het opgegeven item geretourneerd</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td><code>setItemState</code></td>
-   <td>Hiermee wordt de selectiestatus van het opgegeven item als resultaat ingesteld.</td>
+   <td>Hiermee wordt de selectiestatus van het opgegeven item ingesteld.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -308,12 +308,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>h</td>
-   <td>Een meetwaarde voor de hoogte van de indeling.</td>
+   <td>A measurement of the height for the layout.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>w</td>
-   <td>Een meetwaarde waarmee de breedte van de indeling wordt aangegeven.</td>
+   <td>A measurement specifying the width for the layout.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -327,13 +327,13 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>caption</td>
-   <td>Met het caption-object wordt een beschrijvend label beschreven dat aan een object in een formulierontwerp is gekoppeld.<br /> </td>
+   <td>bijschrift</td>
+   <td>Met het bijschriftobject wordt een beschrijvend label beschreven dat aan een formulierontwerpobject is gekoppeld.<br /> </td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>validate</td>
-   <td>Met het object validate wordt de validatie van door gebruikers ingevoerde gegevens op een formulier bepaald. Het validate-object kan meerdere malen worden geactiveerd tijdens de levensduur van een formulier.</td>
+   <td>Met het object validate wordt de validatie van door de gebruiker opgegeven gegevens op een formulier beheerd. Het object validate kan meerdere malen worden geactiveerd tijdens de levensduur van een formulier.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -349,11 +349,11 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## formulier {#form}
+## Formulier {#form}
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| formNodes | Hiermee wordt een lijst met alle formuliermodelobjecten die zijn gebonden aan een opgegeven gegevensobject, als resultaat gegeven. |  |
+| formNodes | Hiermee wordt een lijst geretourneerd van alle formuliermodelobjecten die zijn gebonden aan een opgegeven gegevensobject. |  |
 
 ## InstanceManager {#instancemanager}
 
@@ -375,22 +375,22 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 | Eigenschap | Beschrijving |
 |---|---|
 | `length` | Het aantal elementen in de lijst. |
-| `item` | Een index met als eerste nummer nul in de verzameling. |
+| `item` | Een op nul gebaseerde index in de verzameling. |
 | `append` | Hiermee wordt een knooppunt toegevoegd aan het einde van de lijst met knooppunten. |
 | `remove` | Hiermee wordt een knooppunt uit de lijst met knooppunten verwijderd. |
-| `insert` | Hiermee wordt een knooppunt ingevoegd vóór een specifiek knooppunt in de lijst met knooppunten. |
+| `insert` | Voegt een knooppunt in vóór een specifiek knooppunt in de lijst met knooppunten. |
 
 ## node {#node}
 
 | Eigenschap | Beschrijving | Uitzondering |
 |---|---|---|
 | createNode | Hiermee wordt een nieuw knooppunt gemaakt op basis van een geldige klassenaam. | Geen |
-| `isContainer` | Hiermee wordt aangegeven of dit object een containerobject is. | Geen |
+| `isContainer` | Geeft aan of dit object een containerobject is. | Geen |
 | `isNull` | Geeft aan of de huidige gegevenswaarde een null-waarde is. | Geen |
 | `resolveNode` | Evalueert de opgegeven SOM-expressie, te beginnen met het huidige object in het XML-formulierobjectmodel, en retourneert de waarde van het object dat is opgegeven in de SOM-expressie. | Geen |
 | `resolveNodes` | Evalueert de opgegeven SOM-expressie, te beginnen met het huidige object in het XML-formulierobjectmodel, en retourneert de waarde van het object dat is opgegeven in de SOM-expressie. | Geen |
 | oneOfChild | Hiermee wordt een nieuw knooppunt gemaakt op basis van een geldige klassenaam. | Geen |
-| getElement | Hiermee wordt een opgegeven onderliggend object als resultaat gegeven. | Geen |
+| getElement | Retourneert een opgegeven onderliggend object. | Geen |
 | getAttribute | Hiermee wordt een opgegeven eigenschapswaarde opgehaald. | Geen |
 | setAttribute | Hiermee wordt de waarde van een opgegeven eigenschap ingesteld. | Geen |
 
@@ -416,7 +416,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>execEvent</td>
-   <td>Hiermee wordt het script voor gebeurtenissen van het object uitgevoerd.</td>
+   <td>Hiermee wordt het gebeurtenisscript van het object uitgevoerd.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -426,22 +426,22 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>border</td>
-   <td>Met het border-object wordt de rand rond een object beschreven.</td>
+   <td>Met het randobject wordt de rand rondom een object beschreven.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>borderColor</td>
-   <td>Hiermee wordt de waarde van de randkleur voor dit veld opgegeven. U moet de eigenschap border.edge.presence instellen op visible separately.</td>
+   <td>Specifies the border color value for this field. U moet de eigenschap border.edge.presence instellen op visible separately.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>h</td>
-   <td>Een meetwaarde voor de hoogte van de indeling.</td>
+   <td>A measurement of the height for the layout.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>w</td>
-   <td>Een meetwaarde waarmee de breedte van de indeling wordt aangegeven.</td>
+   <td>A measurement specifying the width for the layout.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -456,7 +456,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>validate</td>
-   <td>Met het object validate wordt de validatie van door gebruikers ingevoerde gegevens op een formulier bepaald. Het validate-object kan meerdere malen worden geactiveerd tijdens de levensduur van een formulier.</td>
+   <td>Met het object validate wordt de validatie van door de gebruiker opgegeven gegevens op een formulier beheerd. Het object validate kan meerdere malen worden geactiveerd tijdens de levensduur van een formulier.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -465,29 +465,29 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>presence</td>
-   <td>Hiermee wordt de zichtbaarheid van een object opgegeven.</td>
+   <td>aanwezigheid</td>
+   <td>Hiermee geeft u de zichtbaarheid van een object op.</td>
    <td>Geen</td>
   </tr>
   <tr>
-   <td>access</td>
-   <td>Deze eigenschap bepaalt de toegang tot de inhoud van een container object, zoals een subformulier.</td>
+   <td>toegang</td>
+   <td>Controls user access to the contents of a container object, such as a subform.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>execValidate</td>
-   <td>Berekent de index van een subformulier of een subformulierset op basis van de locatie ten opzichte van andere instanties van hetzelfde formulierobject.</td>
+   <td>Hiermee wordt de index van een subformulier of subformulierset berekend op basis van de locatie ten opzichte van andere instanties van hetzelfde formulierobject.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>instanceManager</td>
-   <td>Met het object instanceManager worden het maken, verwijderen en verplaatsen van exemplaren van formuliermodelobjecten beheerd.<br /> </td>
+   <td>Het instanceManager-object beheert het maken, verwijderen en verplaatsen van exemplaren van formuliermodelobjecten.<br /> </td>
    <td>Geen</td>
   </tr>
  </tbody>
 </table>
 
-### submit {#submit}
+### indienen {#submit}
 
 | Eigenschap | Beschrijving |
 |---|---|
@@ -503,8 +503,8 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <th>Uitzondering</th>
   </tr>
   <tr>
-   <td>nodes</td>
-   <td>Hiermee wordt een lijst als resultaat gegeven met alle onderliggende objecten van het huidige object.</td>
+   <td>knooppunten</td>
+   <td>Retourneert een lijst met alle onderliggende objecten van het huidige object.</td>
    <td>
     <ul>
      <li>Niet ondersteund voor xfa.nodes, desc</li>
@@ -548,19 +548,19 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 | Eigenschap | Beschrijving | Uitzondering |
 |---|---|---|
-| instanceManager | Met het object instanceManager worden het maken, verwijderen en verplaatsen van exemplaren van formuliermodelobjecten beheerd. | Geen |
+| instanceManager | Het instanceManager-object beheert het maken, verwijderen en verplaatsen van exemplaren van formuliermodelobjecten. | Geen |
 
 ## content {#content}
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| isNull | Hiermee wordt aangegeven of de huidige gegevenswaarde de null-waarde is. |  |
+| isNull | Geeft aan of de huidige gegevenswaarde de null-waarde is. |  |
 
 ## dataValue {#datavalue}
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| isNull | Hiermee wordt aangegeven of de huidige gegevenswaarde de null-waarde is. |  |
+| isNull | Geeft aan of de huidige gegevenswaarde de null-waarde is. |  |
 
 ## edge {#edge}
 
@@ -572,7 +572,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de kleureigenschap wordt een unieke kleur voor het patroonobject beschreven.</td>
    <td>
     <ul>
@@ -583,7 +583,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## fill {#fill}
+## vullen {#fill}
 
 <table>
  <tbody>
@@ -593,7 +593,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>De kleureigenschappen definiëren een unieke vulkleur.</td>
    <td>
     <ul>
@@ -604,7 +604,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## linear {#linear}
+## lineair {#linear}
 
 <table>
  <tbody>
@@ -614,7 +614,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de eigenschap color wordt een unieke kleur beschreven voor een lineaire verloopvulling op een formulier.</td>
    <td>
     <ul>
@@ -636,13 +636,13 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het edge-object wordt een boog, een lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-## pattern {#pattern}
+## patroon {#pattern}
 
 <table>
  <tbody>
@@ -652,7 +652,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de kleureigenschap wordt een unieke kleur voor het patroonobject beschreven. </td>
    <td>
     <ul>
@@ -663,7 +663,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
  </tbody>
 </table>
 
-## radial {#radial}
+## radiaal {#radial}
 
 <table>
  <tbody>
@@ -673,7 +673,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de eigenschap color wordt een unieke kleur voor het radiale object beschreven</td>
    <td>
     <ul>
@@ -694,7 +694,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de eigenschap color wordt een unieke kleur voor het stipple-object beschreven.</td>
    <td>
     <ul>
@@ -716,33 +716,33 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>ui</td>
-   <td>In het ui-object wordt de gebruikersinterfacebeschrijving van een formulierobject ingesloten.<br /> </td>
+   <td>Het ui-object bevat de gebruikersinterfacebeschrijving van een formulierobject.<br /> </td>
    <td> </td>
   </tr>
   <tr>
-   <td>caption</td>
-   <td>Met het caption-object wordt een beschrijvend label beschreven dat aan een object in een formulierontwerp is gekoppeld.</td>
+   <td>bijschrift</td>
+   <td>Met het bijschriftobject wordt een beschrijvend label beschreven dat aan een formulierontwerpobject is gekoppeld.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>presence</td>
-   <td>Hiermee wordt de zichtbaarheid van een object opgegeven.</td>
+   <td>aanwezigheid</td>
+   <td>Hiermee geeft u de zichtbaarheid van een object op.</td>
    <td> </td>
   </tr>
   <tr>
    <td>name</td>
-   <td>Geeft een id die kan worden gebruikt om in scriptexpressies dit object of deze gebeurtenis op te geven.</td>
+   <td>Hiermee wordt een id opgegeven die kan worden gebruikt om dit object of deze gebeurtenis op te geven in scriptexpressies.</td>
    <td>Het instellen van de waarde tijdens de runtime wordt niet ondersteund</td>
   </tr>
   <tr>
    <td>value</td>
-   <td>In het value-object wordt één gegevensinhoudseenheid ingesloten.<br /> </td>
+   <td>Het waardeobject omsluit één gegevensinhoudseenheid.<br /> </td>
    <td> </td>
   </tr>
  </tbody>
 </table>
 
-## corner {#corner}
+## hoek {#corner}
 
 <table>
  <tbody>
@@ -752,7 +752,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td><strong>Uitzondering</strong></td>
   </tr>
   <tr>
-   <td>color</td>
+   <td>kleur</td>
    <td>Met de kleureigenschap wordt een unieke kleur voor het hoekobject beschreven.</td>
    <td>
     <ul>
@@ -814,7 +814,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>contentType</td>
-   <td>Hiermee wordt het type inhoud opgegeven in het document waarnaar wordt verwezen, uitgedrukt als een MIME-type.</td>
+   <td>Geeft het type inhoud aan in het document waarnaar wordt verwezen, uitgedrukt als een MIME-type.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -835,7 +835,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| border | Met het border-object wordt de rand rond een object beschreven. | none |
+| border | Met het randobject wordt de rand rondom een object beschreven. | none |
 
 ## object {#object}
 
@@ -848,13 +848,13 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>className</td>
-   <td>Hiermee wordt de naam van de klasse van dit object bepaald.<br /> </td>
+   <td>Bepaalt de naam van de klasse van dit object.<br /> </td>
    <td>none</td>
   </tr>
  </tbody>
 </table>
 
-## rectangle {#rectangle}
+## rechthoek {#rectangle}
 
 <table>
  <tbody>
@@ -865,7 +865,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het edge-object wordt een boog, een lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund.</td>
   </tr>
  </tbody>
@@ -882,7 +882,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>border</td>
-   <td>Met het border-object wordt de rand rond een object beschreven.<br /> </td>
+   <td>Met het randobject wordt de rand rondom een object beschreven.<br /> </td>
    <td>Geen</td>
   </tr>
  </tbody>
@@ -899,7 +899,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>layout</td>
-   <td>Hiermee wordt de indelingsstrategie opgegeven die door dit object wordt gebruikt.</td>
+   <td>Geeft aan welke indelingsstrategie door dit object moet worden gebruikt.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -908,8 +908,8 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>mandatory</td>
-   <td>Hiermee wordt de nullTest-waarde voor dit veld opgegeven.</td>
+   <td>verplicht</td>
+   <td>Specifies the nullTest value for the field.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -919,22 +919,22 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>borderWidth</td>
-   <td>Hiermee wordt de randbreedte voor dit veld opgegeven.</td>
+   <td>Specifies the border width for this field.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>h</td>
-   <td>Een meetwaarde voor de hoogte van de indeling.</td>
+   <td>A measurement of the height for the layout.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>transient</td>
-   <td>Hiermee wordt opgegeven of de verwerkende toepassing de waarde van de uitsluitingsgroep moet opslaan als onderdeel van een formulierverzending of opslagprocedure.</td>
+   <td>Hiermee wordt opgegeven of de verwerkende toepassing de waarde van de uitsluitingsgroep moet opslaan als onderdeel van een formulierverzending of opslagbewerking.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>w</td>
-   <td>Een meetwaarde waarmee de breedte van de indeling wordt aangegeven.</td>
+   <td>A measurement specifying the width for the layout.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -948,33 +948,33 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>caption</td>
-   <td>Met het caption-object wordt een beschrijvend label beschreven dat aan een object in een formulierontwerp is gekoppeld.<br /> </td>
+   <td>bijschrift</td>
+   <td>Met het bijschriftobject wordt een beschrijvend label beschreven dat aan een formulierontwerpobject is gekoppeld.<br /> </td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>validate</td>
-   <td>Met het object validate wordt de validatie van door gebruikers ingevoerde gegevens op een formulier bepaald. Het validate-object kan meerdere malen worden geactiveerd tijdens de levensduur van een formulier.</td>
+   <td>Met het object validate wordt de validatie van door de gebruiker opgegeven gegevens op een formulier beheerd. Het object validate kan meerdere malen worden geactiveerd tijdens de levensduur van een formulier.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>dataNode</td>
-   <td>Haalt het gegevensknooppunt op waaraan een formulierknooppunt wordt gebonden na het samenvoegen.</td>
+   <td>Hiermee wordt het gegevensknooppunt opgehaald waaraan een formulierknooppunt wordt gebonden na het samenvoegen.</td>
    <td>Geen</td>
   </tr>
   <tr>
-   <td>presence</td>
-   <td>Hiermee wordt de zichtbaarheid van een object opgegeven.</td>
+   <td>aanwezigheid</td>
+   <td>Hiermee geeft u de zichtbaarheid van een object op.</td>
    <td> </td>
   </tr>
   <tr>
-   <td>access</td>
-   <td>Deze eigenschap bepaalt de toegang tot de inhoud van een container object, zoals een subformulier.</td>
+   <td>toegang</td>
+   <td>Controls user access to the contents of a container object, such as a subform.</td>
    <td>Voor afzonderlijke items in de uitzondering wordt altijd open geretourneerd. </td>
   </tr>
   <tr>
    <td>name</td>
-   <td>Geeft een id die kan worden gebruikt om in scriptexpressies dit object of deze gebeurtenis op te geven.</td>
+   <td>Hiermee wordt een id opgegeven die kan worden gebruikt om dit object of deze gebeurtenis op te geven in scriptexpressies.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -984,7 +984,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>selectedMember</td>
-   <td>Hiermee wordt het geselecteerde lid van een uitsluitingsgroep als resultaat gegeven.</td>
+   <td>Retourneert het geselecteerde lid van een uitsluitingsgroep.</td>
    <td>Geen</td>
   </tr>
   <tr>
@@ -993,14 +993,14 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Geen</td>
   </tr>
   <tr>
-   <td>calculate</td>
-   <td>Met het calculate-object wordt de berekening van de waarde van een veld bestuurd.<br /> </td>
+   <td>berekenen</td>
+   <td>Het object calculate bepaalt de berekening van de waarde van een veld.<br /> </td>
    <td>Geen</td>
   </tr>
  </tbody>
 </table>
 
-## arc {#arc}
+## boog {#arc}
 
 <table>
  <tbody>
@@ -1011,7 +1011,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het edge-object wordt een boog, een lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund. </td>
   </tr>
  </tbody>
@@ -1028,7 +1028,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>edge</td>
-   <td>Met het edge-object wordt een boog, een lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
+   <td>Met het randobject wordt een boog, lijn of één zijde van een rand of rechthoek beschreven.<br /> </td>
    <td>Kenmerken zoals kleur, uiteinde en meer worden niet ondersteund. </td>
   </tr>
  </tbody>
@@ -1045,7 +1045,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>h</td>
-   <td>Hiermee wordt de hoogte bepaald van een formulierontwerpobject.<br /> </td>
+   <td>Hiermee wordt de hoogte van een formulierontwerpobject bepaald.<br /> </td>
    <td>
     <ul>
      <li>De eigenschap Hoogte (h) wordt niet ondersteund voor paginagebied en inhoudsgebied. </li>
@@ -1054,7 +1054,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>w</td>
-   <td>Hiermee wordt de breedte bepaald van een formulierontwerpobject.</td>
+   <td>Hiermee wordt de breedte van een formulierontwerpobject bepaald.</td>
    <td>
     <ul>
      <li>De eigenschap width (w) wordt niet ondersteund voor paginagebied en inhoudsgebied. </li>
@@ -1081,7 +1081,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>pagecount</td>
-   <td>Hiermee wordt het aantal pagina's van het huidige formulier bepaald.</td>
+   <td>Hiermee bepaalt u het aantal pagina's van het huidige formulier.</td>
    <td>
     <ul>
      <li>layout.pageCount() methode retourneert verschillende waarden voor PDF- en HTML-formulieren.</li>
@@ -1090,12 +1090,12 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>pagecontent</td>
-   <td>Hiermee worden typen formulierontwerpobjecten van een bepaalde pagina van een formulier opgevraagd.</td>
+   <td>Hiermee worden typen formulierontwerpobjecten opgehaald van een opgegeven pagina van een formulier.</td>
    <td>Geen</td>
   </tr>
   <tr>
    <td>absPageCount</td>
-   <td>Hiermee wordt het aantal pagina'sa van het huidige formulier bepaald.</td>
+   <td>Hiermee bepaalt u het aantal pagina's van het huidige formulier.</td>
    <td>
     <ul>
      <li>layout.pageCount() methode retourneert verschillende waarden voor PDF- en HTML-formulieren.</li>
@@ -1109,7 +1109,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| presence | Hiermee wordt de zichtbaarheid van een object opgegeven. | Geen |
+| aanwezigheid | Hiermee geeft u de zichtbaarheid van een object op. | Geen |
 
 ## FormCalc {#formcalc}
 
@@ -1124,7 +1124,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   <tr>
    <td><strong>Categorie </strong></td>
    <td><strong>Beschrijving </strong></td>
-   <td><strong>Voorbeeld </strong></td>
+   <td><strong>Monster </strong></td>
   </tr>
   <tr>
    <td>Eenvoudige expressie</td>
@@ -1186,7 +1186,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
    1. Min()
    1. Mod()
    1. Round()
-   1. Som()
+   1. Sum()
 
 1. **Wetenschappelijke functies**
 
@@ -1207,7 +1207,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
 
 1. **Financiële functies**
 
-   1. Apr()
+   1. apr()
    1. Cterm()
    1. fv()
    1. ipmt()
@@ -1221,20 +1221,20 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
 1. **Logische functies**
 
    1. Choose()
-   1. If()
+   1. if()
    1. Oneof()
    1. Within()
 
-1. **Reeksfuncties**
+1. **Tekenreeksfuncties**
 
    1. At()
    1. Concat()
-   1. Links()
+   1. Left()
    1. Len()
    1. Lower()
    1. Ltrim()
    1. Replace()
-   1. Rechts()
+   1. Right()
    1. Rtrim()
    1. Space()
    1. Stuff()
@@ -1267,7 +1267,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   </tr>
   <tr>
    <td>app.beep()</td>
-   <td>Hiermee wordt door het systeem een geluid afgespeeld.</td>
+   <td>Zorgt ervoor dat het systeem een geluid afspeelt.</td>
    <td>Er wordt geen actie uitgevoerd.</td>
   </tr>
   <tr>

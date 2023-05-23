@@ -246,7 +246,7 @@ Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebru
 
    ![](assets/chlimage_1-40.png)
 
-1. Klik op OK.
+1. Klik op OK.
 1. Ga terug naar de startpagina van Geometrixx Outdoors en vernieuw de pagina. De Context van de cliënt omvat nu de informatie van de component van de Winkel JSONP.
 
    ![](assets/chlimage_1-41.png)

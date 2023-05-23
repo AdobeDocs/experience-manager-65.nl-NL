@@ -1293,7 +1293,7 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 Als u een nieuw watermerk wilt maken, moet u de kenmerken van het watermerk instellen. Het kenmerk name moet altijd worden gedefinieerd. Naast het kenmerk name moet u ten minste een van de volgende kenmerken instellen:
 
-* Eigen tekst
+* Aangepaste tekst
 * DateIncluded
 * UserIdIncluded
 * UserNameIncluded
@@ -1342,7 +1342,7 @@ De volgende tabel bevat een lijst met sleutel- en waardeparen die zijn vereist v
   <tr>
    <td><p><code>WaterBackCmd:SCALE</code></p></td>
    <td><p>Als deze waarde is opgegeven, <code>WaterBackCmd:IS_SIZE_ENABLED</code> moet aanwezig zijn en de waarde moet waar zijn. Als dit kenmerk niet is opgegeven, wordt het standaardgedrag aan de pagina aangepast.</p></td>
-   <td><p>Een waarde die groter is dan 0.0 en kleiner dan of gelijk aan 1.0.</p></td>
+   <td><p>Een waarde groter dan 0,0 en kleiner dan of gelijk aan 1,0.</p></td>
   </tr>
   <tr>
    <td><p><code>WaterBackCmd:HORIZ_ALIGN</code></p></td>

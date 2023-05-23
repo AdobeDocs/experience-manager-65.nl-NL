@@ -45,7 +45,7 @@ ECMAScript is een scripttaal. Het wordt gebruikt voor client-side scripting en s
 
       | Naam | Type | Waarde |
       |--- |--- |--- |
-      | jcr:titel | Tekenreeks | Geef de naam van het script op. Kies bijvoorbeeld de dichtstbijzijnde veldagent. Deze naam wordt weergegeven in de stappen Taak toewijzen en Document ondertekenen. |
+      | jcr:titel | String | Geef de naam van het script op. Kies bijvoorbeeld de dichtstbijzijnde veldagent. Deze naam wordt weergegeven in de stappen Taak toewijzen en Document ondertekenen. |
 
    1. Klikken **Alles opslaan**. Het script wordt beschikbaar voor selectie in de componenten van AEM Workflow.
 

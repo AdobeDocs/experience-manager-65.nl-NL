@@ -13,7 +13,7 @@ exl-id: 67cfecb8-c31d-4192-904d-7bfaa1a31ea5
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '525'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -91,7 +91,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
   <tr>
    <td><p>Lange beschrijving</p> </td>
    <td><p>text-align</p> </td>
-   <td><p>center</p> </td>
+   <td><p>midden</p> </td>
    <td><p>Lijnt de lange beschrijving voor het centreren uit</p> </td>
   </tr>
  </tbody>

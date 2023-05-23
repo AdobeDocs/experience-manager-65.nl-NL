@@ -32,7 +32,7 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
    * `.core-wcm`: De standaardbasiscomponenten
    * `.core-wcm-form`: De kerncomponenten voor het verzenden van formulieren
 
-   Choose `.core-wcm`.
+   Kies `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 

@@ -8,7 +8,7 @@ exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '253'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -50,7 +50,7 @@ De [Webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 
 1. Dubbelklikken **[!UICONTROL Day CQ DAM Event Recorder]**.
 
-1. Vinkje **[!UICONTROL Enables this service]**.
+1. Controleren **[!UICONTROL Enables this service]**.
 
 1. Controleren welke **[!UICONTROL Event Types]** u wilt worden opgenomen in de gebruikersactiviteitsstroom.
 

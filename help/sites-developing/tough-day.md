@@ -7,7 +7,7 @@ exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
 source-git-commit: 1b92b973209fdbd2509b1c644c1064a1e9224a9e
 workflow-type: tm+mt
 source-wordcount: '1849'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -314,7 +314,7 @@ Bovendien kunnen tests een `count` eigenschap, die het aantal uitvoeringen tot e
 java -jar toughday2.jar --host=localhost --add CreateAssetTreeTest weight=5 --add CreatePageTreeTest weight=10 count=100 --runmode=normal concurrency=20
 ```
 
-or
+of
 
 ```xml
 - add : CreateAssetTreeTest
@@ -355,7 +355,7 @@ Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren
 | Min&#42; | Laagste uitvoeringstijd van de test. |
 | Max&#42; | Hoogste duur van de uitvoering van de test. |
 | Mediaan&#42; | Berekende mediane duur van alle testuitvoeringen. |
-| Gemiddelde&#42; | Berekende gemiddelde duur van alle testuitvoeringen. |
+| Gemiddeld&#42; | Berekende gemiddelde duur van alle testuitvoeringen. |
 | StdDev&#42; | De standaardafwijking. |
 | 90p&#42; | 90 percentiel. |
 | 99p&#42; | 99 percentiel. |

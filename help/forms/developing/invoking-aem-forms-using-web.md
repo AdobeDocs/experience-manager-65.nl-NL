@@ -75,7 +75,7 @@ De volgende lijst maakt een lijst van de dienstWSDL definities (veronderstellend
    <td><p><code>http://localhost:8080/soap/services/BackupService?wsdl</code></p></td>
   </tr>
   <tr>
-   <td><p>Barcoded Forms</p></td>
+   <td><p>streepjescodes</p></td>
    <td><p><code>http://localhost:8080/soap/services/ BarcodedFormsService?wsdl</code></p></td>
   </tr>
   <tr>

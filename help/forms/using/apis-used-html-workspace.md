@@ -12,7 +12,7 @@ exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '997'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -49,7 +49,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
   <tr>
    <td>submitTask</td>
    <td>ProcessManagementDocumentHandlingService</td>
-   <td>submit</td>
+   <td>indienen</td>
    <td>Het verzendt het documentvoorwerp verbonden aan een taak (en verzendt beurtelings proces).</td>
   </tr>
   <tr>
@@ -107,9 +107,9 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>De formuliergegevens (doorgegeven als tekenreeks) die aan een taak zijn gekoppeld, worden met de verzendAPI van TaskManager verzonden. Deze wordt gebruikt voor flex-formulieren die de verzend-API van de callTaskManager niet oproepen.</td>
   </tr>
   <tr>
-   <td>save</td>
+   <td>opslaan</td>
    <td>ProcessManagementTaskService</td>
-   <td>save</td>
+   <td>opslaan</td>
    <td>Er wordt een taak op de server opgeslagen.</td>
   </tr>
   <tr>
@@ -317,9 +317,9 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Hiermee wordt een bijlage verwijderd.</td>
   </tr>
   <tr>
-   <td>initialize</td>
+   <td>initialiseren</td>
    <td>ProcessManagementClientSessionService</td>
-   <td>initialize</td>
+   <td>initialiseren</td>
    <td>Zo nodig wordt dit opnieuw bevestigd. Hiermee wordt de gebruiker geverifieerd. Stelt sessieparameters in voor server-/clientinformatie. Retourneert gebruikersinformatie en opiniepeilingsinterval.</td>
   </tr>
   <tr>

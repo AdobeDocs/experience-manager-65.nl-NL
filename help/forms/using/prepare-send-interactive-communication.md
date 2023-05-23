@@ -157,7 +157,7 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 
 ![docfragoptions](assets/docfragoptions.png)
 
-* Bewerken (alleen tekstfragmenten): Open een RTF-editor voor het bewerken van het tekstdocumentfragment. Zie [Tekst opmaken](#formattingtext) voor meer informatie.
+* Bewerken (alleen tekstfragmenten): Open een RTF-editor voor het bewerken van het tekstdocumentfragment. Zie voor meer informatie [Tekst opmaken](#formattingtext).
 
 * Selectie (oogpictogram): Hiermee\nHiermee sluit u het documentfragment uit van de interactieve communicatie.
 * Niet-gevulde waarden (info): Hiermee geeft u het aantal niet-gevulde variabelen in het documentfragment aan.

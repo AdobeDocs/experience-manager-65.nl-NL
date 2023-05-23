@@ -14,7 +14,7 @@ exl-id: 8f9b10ae-1600-49c2-a061-153a2a89c67e
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '697'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -55,7 +55,7 @@ De scripts die zijn gemarkeerd om op de server te worden uitgevoerd, worden serv
    <td><p><strong>Beschrijving</strong></p> </td>
   </tr>
   <tr>
-   <td><p>activity</p> </td>
+   <td><p>activiteit</p> </td>
    <td><p>De activiteit bevat de gebeurtenissen die het verzoek teweegbrengen. Bijvoorbeeld klikken, afsluiten of wijzigen</p> </td>
   </tr>
   <tr>
@@ -63,7 +63,7 @@ De scripts die zijn gemarkeerd om op de server te worden uitgevoerd, worden serv
    <td><p>contextSom bevat SOM-expressie van het object waar gebeurtenissen worden uitgevoerd.</p> </td>
   </tr>
   <tr>
-   <td><p>Sjabloonmodel</p> </td>
+   <td><p>Sjabloon</p> </td>
    <td><p>De sjabloon bevat de sjabloon die wordt gebruikt om het formulier te genereren.</p> </td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@ De scripts die zijn gemarkeerd om op de server te worden uitgevoerd, worden serv
    <td><p>contentRoot bevat de hoofdmap van de sjabloon die wordt gebruikt om het formulier weer te geven.</p> </td>
   </tr>
   <tr>
-   <td><p>Data</p> </td>
+   <td><p>Gegevens</p> </td>
    <td><p>Gegevens bevatten batchbytes die worden gebruikt om het formulier te genereren.</p> </td>
   </tr>
   <tr>
@@ -100,7 +100,7 @@ Als u op de knop Verzenden klikt, sturen HTML5-formulieren gegevens naar de serv
    <td><p><strong>Beschrijving</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Sjabloonmodel</p> </td>
+   <td><p>Sjabloon</p> </td>
    <td><p>Sjabloon waarmee het formulier wordt gegenereerd.</p> </td>
   </tr>
   <tr>
@@ -108,7 +108,7 @@ Als u op de knop Verzenden klikt, sturen HTML5-formulieren gegevens naar de serv
    <td><p>de hoofdmap van de sjabloon die wordt gebruikt om het formulier te genereren.</p> </td>
   </tr>
   <tr>
-   <td><p>Data</p> </td>
+   <td><p>Gegevens</p> </td>
    <td><p>batchbytes die worden gebruikt om het formulier weer te geven.</p> </td>
   </tr>
   <tr>

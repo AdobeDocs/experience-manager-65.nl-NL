@@ -16,7 +16,7 @@ exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
 source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
 workflow-type: tm+mt
 source-wordcount: '2868'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -139,8 +139,8 @@ Als het knooppunt van het type is `cq:Page` (aanbevolen), voegt u met behulp van
 
 | **Eigenschap** | **Type** | **Beschrijving** |
 |---|---|---|
-| badgingRules | Tekenreeks | een arraylijst met [spelregels](#badging-rules) |
-| scoringRules | Tekenreeks | een arraylijst met [scores](#scoring-rules) |
+| badgingRules | String | een arraylijst met [spelregels](#badging-rules) |
+| scoringRules | String | een arraylijst met [scores](#scoring-rules) |
 
 >[!NOTE]
 >
@@ -218,7 +218,7 @@ Subregels zijn knooppunten van het type `cq:Page` met eigenschappen `jcr:content
   <tr>
    <th>Eigenschap</th>
    <th>Type</th>
-   <th> Waarde Beschrijving</th>
+   <th> Beschrijving van waarde</th>
   </tr>
   <tr>
    <td><i><code>VERB</code></i></td>
@@ -236,7 +236,7 @@ Subregels zijn knooppunten van het type `cq:Page` met eigenschappen `jcr:content
   </tr>
   <tr>
    <td><code>topics</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>
     <ul>
      <li>facultatief; beperkt subregel tot componenten van de gemeenschap die door gebeurtenisonderwerpen worden geïdentificeerd</li>
@@ -258,7 +258,7 @@ Subregels zijn knooppunten van het type `cq:Page` met eigenschappen `jcr:content
   </tr>
   <tr>
    <td><code>scoringType</code></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>
     <ul>
      <li>facultatief; geeft de scores aan</li>
@@ -341,11 +341,11 @@ De `scoringRules` het bezit op een merkingsregel beperkt eenvoudig welke het sch
   <tr>
    <th>Eigenschap</th>
    <th>Type</th>
-   <th>Waarde Beschrijving</th>
+   <th>Beschrijving van waarde</th>
   </tr>
   <tr>
    <td>drempelwaarden</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td><em>(vereist)</em> Een tekenreeks met meerdere waarden van het formulier 'number|path'
     <ul>
      <li>number = score</li>
@@ -355,12 +355,12 @@ De `scoringRules` het bezit op een merkingsregel beperkt eenvoudig welke het sch
   </tr>
   <tr>
    <td>badgingType</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td><em>(optioneel)</em> Hiermee wordt de scoring-engine aangeduid als "basic" of "advanced". Zie <a href="/help/communities/advanced.md">Geavanceerde scores en Badges</a>. De standaardwaarde is "basic".</td>
   </tr>
   <tr>
    <td>scoringRules</td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>(<em>optioneel</em>) Een tekenreeks met meerdere waarden waarmee de merkingsregel wordt beperkt tot het scoren van gebeurtenissen die worden bepaald door de scoreregels</td>
   </tr>
  </tbody>

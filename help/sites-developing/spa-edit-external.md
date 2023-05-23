@@ -153,7 +153,7 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
 
 Zodra authorable React componenten worden gecreeerd, kunnen wij hen door de toepassing gebruiken.
 
-Neem een voorbeeldpagina waar wij een tekst van het WKND SPA project moeten toevoegen. In dit voorbeeld willen we de tekst &quot;Hello World!&quot; weergeven on `/content/wknd-spa-react/us/en/home.html`.
+Neem een voorbeeldpagina waar wij een tekst van het WKND SPA project moeten toevoegen. In dit voorbeeld willen we de tekst &quot;Hello World!&quot; weergeven op `/content/wknd-spa-react/us/en/home.html`.
 
 1. Bepaal het pad van het knooppunt dat moet worden weergegeven.
 

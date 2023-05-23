@@ -13,7 +13,7 @@ exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1147'
-ht-degree: 10%
+ht-degree: 0%
 
 ---
 
@@ -23,7 +23,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 ## Adaptieve formuliereditor {#adaptiveformeditor}
 
-| **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
 | Eigenschappen-browser openen voor de geselecteerde adaptieve formuliercomponent | Alt+Enter | Alt+Return |
 | De browser Eigenschappen sluiten voor de geselecteerde adaptieve formuliercomponent | Ctrl+Alt+W | Command+Alt+W |
@@ -57,7 +57,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 ## Thema-editor  {#themeeditor}
 
-| **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
 | Eigenschappen voor de geselecteerde component in een thema openen | Alt+Enter | Alt+Return |
 | Eigenschappen van browser sluiten voor de geselecteerde component in een thema | Ctrl+Alt+W | Command+Alt+W |
@@ -71,7 +71,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 ## Inhoudsbrowser  {#contentbrowser}
 
-| **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
 | Alle accordeons in de structuur Formulierobjecten van de Inhoudsbrowser uitvouwen wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-rechts, om uit te vouwen | Command+A om alle accordeons te selecteren gevolgd door Pijl-rechts om uit te vouwen |
 | Alle accordeons samenvouwen in de structuur Formulierobjecten van de inhoudbrowser wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen | Command+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen |
@@ -176,12 +176,12 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   </tr>
   <tr>
    <td><p>Cursor naar einde van pagina verplaatsen</p> </td> 
-   <td><p>PgDn</p> </td> 
+   <td><p>Page Down</p> </td> 
    <td>Fn+Pijl-omlaag</td> 
   </tr>
   <tr>
    <td><p>Cursor naar begin van pagina verplaatsen</p> </td> 
-   <td><p>PgUp</p> </td> 
+   <td><p>Page Up</p> </td> 
    <td>Fn+Pijl-omhoog</td> 
   </tr>
   <tr>

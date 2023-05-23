@@ -13,7 +13,7 @@ exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '683'
-ht-degree: 5%
+ht-degree: 0%
 
 ---
 
@@ -33,7 +33,7 @@ Dit artikel bevat een lijst met ondersteunde XFA-gebeurtenissen, -eigenschappen 
 
 ## Ondersteunde XFA-elementen en hun toewijzing in adaptieve formulieren {#supported-xfa-elements-and-their-mapping-in-adaptive-forms-br}
 
-### Fields {#fields}
+### Velden {#fields}
 
 Wanneer een adaptief formulier wordt gemaakt met een XDP-bestand, kunt u een XFA-veld naar het adaptieve formulier slepen. In de volgende tabel wordt aangegeven hoe XFA-velden worden toegewezen aan adaptieve formuliervelden.
 
@@ -117,11 +117,11 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de eigenschap Bind reference (bindRef) in adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>presence </p> </td>
+   <td><p>aanwezigheid </p> </td>
    <td><p>Toegewezen aan de eigenschap visible in adaptieve vorm. U kunt deze negeren met behulp van de zichtbaarheidsexpressie.</p> </td>
   </tr>
   <tr>
-   <td><p>access </p> </td>
+   <td><p>toegang </p> </td>
    <td><p>Toegewezen aan de eigenschap enabled in adaptieve vorm. U kunt het met de uitdrukking van de Toegang met voeten treden.</p> </td>
   </tr>
   <tr>
@@ -190,11 +190,11 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in het X
    <td><p><strong>Corresponsief gedrag in adaptieve formulieren</strong></p> </td>
   </tr>
   <tr>
-   <td><p>initialize </p> </td>
+   <td><p>initialiseren </p> </td>
    <td><p>Dit script wordt uitgevoerd bij uitvoering en kan niet worden overschreven in de adaptieve vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>calculate</p> </td>
+   <td><p>berekenen</p> </td>
    <td><p>Toegewezen aan de expressie Berekenen in adaptieve vorm.</p> </td>
   </tr>
   <tr>
@@ -248,7 +248,7 @@ In de volgende tabel wordt vastgelegd hoe XFA-validaties worden toegewezen aan v
   </tr>
   <tr>
    <td><p>Vereist (nullTest)</p> </td>
-   <td><p>mandatory </p> </td>
+   <td><p>verplicht </p> </td>
   </tr>
   <tr>
    <td><p>Leeg bericht (nullTestMessage) </p> </td>

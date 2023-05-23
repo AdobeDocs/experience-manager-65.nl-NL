@@ -64,7 +64,7 @@ Voer het volgende bevel uit om een lokaal project tot stand te brengen dat op ar
 De opdracht downloadt de Maven-plug-ins en archetype-informatie van de opslagplaats en genereert een project op basis van de volgende informatie:
 
 * **groupId**: Groep-id gebruikt door het gegenereerde Maven-project
-* **artifactId**: Artefact-id die wordt gebruikt door het gegenereerde Maven-project.
+* **artifactId**: ArtefactID die door het gegenereerde Maven-project wordt gebruikt.
 * **versie**: Versie voor het gegenereerde Maven-project.
 * **package**: Pakket gebruikt voor de bestandsstructuur.
 * **artifactName**: Artefactnaam van het gegenereerde AEM.

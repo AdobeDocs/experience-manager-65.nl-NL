@@ -91,7 +91,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
  <tbody>
   <tr>
    <td>HTTP-aanvraagmethode</td>
-   <td>Acties</td>
+   <td>Handelingen</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -110,7 +110,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
 `http://localhost:4502/etc/workflow/instances.{state}`
 
-| HTTP-aanvraagmethode | Acties |
+| HTTP-aanvraagmethode | Handelingen |
 |---|---|
 | `GET` | Hier worden de beschikbare workflowinstanties en hun statussen weergegeven ( `RUNNING`, `SUSPENDED`, `ABORTED` of `COMPLETED`) |
 
@@ -124,7 +124,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
  <tbody>
   <tr>
    <td>HTTP-aanvraagmethode</td>
-   <td>Acties</td>
+   <td>Handelingen</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -147,7 +147,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
  <tbody>
   <tr>
    <td>HTTP-aanvraagmethode</td>
-   <td>Acties</td>
+   <td>Handelingen</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -232,7 +232,7 @@ Wanneer `*{uri}*` Dit is het pad naar het modelknooppunt in de repository.
  <tbody>
   <tr>
    <td>HTTP-aanvraagmethode</td>
-   <td>Acties</td>
+   <td>Handelingen</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -337,7 +337,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
 `http://localhost:4502/etc/workflow/models/{id}.{version}`
 
-| HTTP-aanvraagmethode | Acties |
+| HTTP-aanvraagmethode | Handelingen |
 |---|---|
 | `GET` | Haalt de gegevens van het model op in de opgegeven versie (indien aanwezig). |
 
@@ -351,7 +351,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
  <tbody>
   <tr>
    <td>HTTP-aanvraagmethode</td>
-   <td>Acties</td>
+   <td>Handelingen</td>
   </tr>
   <tr>
    <td><code>GET</code></td>
@@ -370,7 +370,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
 `http://localhost:4502/bin/workflow/inbox/{id}`
 
-| HTTP-aanvraagmethode | Acties |
+| HTTP-aanvraagmethode | Handelingen |
 |---|---|
 | `GET` | Hiermee worden de gegevens (definitie en metagegevens) van het Postvak IN opgehaald `WorkItem` geïdentificeerd door zijn ID. |
 

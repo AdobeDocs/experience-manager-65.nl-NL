@@ -144,7 +144,7 @@ U kunt een standaard offline huurperiode configureren. De leaseperiode kan worde
 
 1. Voor de pagina van de documentveiligheid, klik Configuratie > de Configuratie van de Server.
 1. Typ in het vak Offline standaardleaseperiode het aantal dagen voor de offline leaseperiode.
-1. Klik op OK.
+1. Klik op OK.
 
 ### Toetsrollovers beheren {#manage-key-rollovers}
 
@@ -168,7 +168,7 @@ Als u offlinedocumenten gebruikt, biedt documentbeveiliging u uit vertrouwelijkh
 
 1. Voor de pagina van de documentveiligheid, klik Configuratie > Zeer belangrijk Beheer.
 1. Typ in het vak Frequentie sleutelrollover het aantal dagen voor de rolloverperiode.
-1. Klik op OK.
+1. Klik op OK.
 
 **Handmatig over hoofdtoetsen schuiven**
 
@@ -214,7 +214,7 @@ Wanneer u de servercontrole toelaat, kunt u de gecontroleerde gebeurtenissen op 
 
       (Zie [Opties voor gebeurteniscontrole](configuring-client-server-options.md#event-auditing-options).)
 
-1. Klik op OK.
+1. Klik op OK.
 
 >[!NOTE]
 >
@@ -232,7 +232,7 @@ U kunt een privacymeldingsbericht in- en uitschakelen. Wanneer u privacymeldinge
    Als het beleid verbonden aan een document geen anonieme gebruikerstoegang toestaat, zal de gebruiker het privacyberichtbericht zien.
 
 1. Typ, indien van toepassing, in het vak Privacy URL de URL naar de pagina voor privacybeleid. Als het vak Privacy-URL leeg blijft, wordt de privacypagina van adobe.com weergegeven.
-1. Klik op OK.
+1. Klik op OK.
 
 >[!NOTE]
 >
@@ -245,13 +245,13 @@ Als u een document veiligheid-toegelaten toepassing gebruikt die controle van ex
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Gebeurtenisbeheer.
 1. Klik op Bladeren om naar het XML-bestand te gaan dat u wilt importeren en klik op Importeren.
 1. Bij het importeren worden bestaande aangepaste auditgebeurtenistypen op de server overschreven als identieke gebeurteniscode en naamruimtecombinaties worden gevonden.
-1. Klik op OK.
+1. Klik op OK.
 
 ### Een aangepast type auditgebeurtenis verwijderen {#delete-a-custom-audit-event-type}
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Gebeurtenisbeheer.
 1. Schakel het selectievakje naast het type aangepaste auditgebeurtenis dat u wilt verwijderen in en klik op Verwijderen.
-1. Klik op OK.
+1. Klik op OK.
 
 ### Controles exporteren {#export-audit-events}
 
@@ -518,14 +518,14 @@ U kunt dynamische watermerksjablonen maken. Deze sjablonen blijven beschikbaar a
    Selecteer waar u het watermerk wilt laten verschijnen. Standaard wordt het watermerk zowel op elektronische (online) als op papier (afdrukken) weergegeven.
 
 1. Klikken **Nieuw** onder watermerkelementen om indien nodig meer watermerkelementen toe te voegen.
-1. Klik op OK.
+1. Klik op OK.
 
 ### Een sjabloon voor een dynamisch watermerk bewerken {#edit-a-dynamic-watermark-template}
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Watermerken.
 1. Klik op het desbetreffende watermerk in de lijst.
 1. Wijzig desgewenst de instellingen op de pagina Watermerken bewerken.
-1. Klik op OK.
+1. Klik op OK.
 
 ### Een sjabloon voor een dynamisch watermerk verwijderen {#delete-a-dynamic-watermark-template}
 
@@ -533,7 +533,7 @@ Wanneer u een dynamisch watermerk verwijdert, kunt u dit niet meer toevoegen aan
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Configuratie > Watermerken.
 1. Schakel het selectievakje naast het desbetreffende watermerk in en klik op Verwijderen.
-1. Klik op OK.
+1. Klik op OK.
 
 ## Opgeroepen gebruikersregistratie configureren {#configuring-invited-user-registration}
 
@@ -571,7 +571,7 @@ Standaard is het registratieproces voor uitgenodigde gebruikers uitgeschakeld. U
    * [E-mail voor opnieuw instellen van wachtwoord configureren](configuring-client-server-options.md#configure-a-password-reset-email)
 
 1. (Optioneel) Selecteer Ja onder Ingebouwde registratie om deze optie in te schakelen. Als u ingebouwde registratie niet inschakelt, moet u een eigen gebruikersregistratiesysteem instellen.
-1. Klik op OK.
+1. Klik op OK.
 
 ### Een externe gebruiker of groep uitsluiten of opnemen {#exclude-or-include-an-external-user-or-group}
 
@@ -740,14 +740,14 @@ U kunt de volgende wijzigingen aanbrengen met behulp van het configuratiebestand
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging 11 > Configuratie > Handmatige configuratie.
 1. Klik op Exporteren en sla het configuratiebestand op een andere locatie op. De standaardbestandsnaam is config.xml.
-1. Klik op OK.
+1. Klik op OK.
 1. Voordat u het configuratiebestand wijzigt, moet u een reservekopie maken voor het geval u het bestand moet herstellen.
 
 **Een configuratiebestand importeren**
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging 11 > Configuratie > Handmatige configuratie.
 1. Klik doorbladeren om naar het configuratiedossier te gaan en dan de Invoer te klikken. U kunt het pad niet rechtstreeks in het vak Bestandsnaam typen.
-1. Klik op OK.
+1. Klik op OK.
 
 ### Een time-outperiode voor offline synchronisatie opgeven {#specify-a-timeout-period-for-offline-synchronization}
 
@@ -761,7 +761,7 @@ In het configuratiebestand voor documentbeveiliging kunt u de standaardfrequenti
 1. Open het configuratiebestand in een editor en zoek de `PolicyServer` knooppunt. Zoek onder dat knooppunt de `ServerSettings` knooppunt.
 1. In de `ServerSettings` , voeg deze volgende vermelding toe en sla het bestand op:
 
-   `<entry key="BackgroundSyncFrequency" value="`*time* `"/>`
+   `<entry key="BackgroundSyncFrequency" value="`*tijd* `"/>`
 
    waar *tijd* is het aantal seconden tussen automatische achtergrondsynchronisaties. Als u deze waarde hebt verzonden naar `0`Synchronisatie vindt altijd plaats. De standaardwaarde is `14400` seconden (om de vier uur).
 

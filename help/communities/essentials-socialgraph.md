@@ -13,7 +13,7 @@ exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '249'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -44,7 +44,7 @@ De `following` de component maakt een lijst van de leden die of het huidige lid 
    <td>cq.social.hbs.socialgraph</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/socialgraph/components/hbs/relationships/relationships.hbs</td>
   </tr>
   <tr>
@@ -76,7 +76,7 @@ De `following` de component maakt een lijst van de leden die of het huidige lid 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
 | [**inclusief**](scf.md#add-or-include-a-communities-component) | Nee |
-| **templates** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
+| **sjablonen** | `/libs/social/socialgraph/components/hbs/following/following.hbs` |
 | **css** | `/libs/social/socialgraph/components/hbs/following/clientlibs/following.css` |
 
 * [Aanpassingen aan de clientzijde](client-customize.md)

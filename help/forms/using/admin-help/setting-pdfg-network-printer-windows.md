@@ -69,4 +69,4 @@ Gebruikers die de rol van PDFG-beheerder of PDFG-gebruiker hebben, kunnen een PD
 
    ***notitie **: Als het wachtwoord van de gebruiker verandert, moeten gebruikers de PDFG-netwerkprinter opnieuw installeren op hun computer. U kunt het wachtwoord niet bijwerken vanaf de beheerconsole.*
 
-1. Klik op OK.
+1. Klik op OK.

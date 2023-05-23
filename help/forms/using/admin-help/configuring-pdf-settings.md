@@ -226,7 +226,7 @@ Met deze opties configureert u afbeeldingen in kleur, grijswaarden en monochroom
 
 **Bicubische downsampling naar:** Gebruikt een gewogen gemiddelde om pixelkleur te bepalen en geeft gewoonlijk betere resultaten dan de eenvoudige het gemiddelde nemen methode van downsampling. Bicubisch is de langzaamste maar meest nauwkeurige methode en resulteert in de meest vloeiende kleurovergangen.
 
-**Subsampling naar:** Hiermee selecteert u een pixel in het midden van het monstergebied en vervangt u het hele gebied door die pixel bij de opgegeven resolutie. Subsampling vermindert significant de omzettingstijd in vergelijking met downsampling, maar het resulteert in beelden die minder vlot en ononderbroken zijn.
+**Subsampling naar:** Hiermee selecteert u een pixel in het midden van het monstergebied en vervangt u het gehele gebied door die pixel bij de opgegeven resolutie. Subsampling vermindert significant de omzettingstijd in vergelijking met downsampling, maar het resulteert in beelden die minder vlot en ononderbroken zijn.
 
 De resolutie-instelling voor kleur en grijswaarden moet 1,5 tot 2 keer de rasterliniatuur zijn waarmee het bestand wordt afgedrukt. (Als u deze aanbevolen resolutie-instelling niet overschrijdt, worden afbeeldingen zonder rechte lijnen of geometrische of herhalende patronen niet beïnvloed door een lagere resolutie.) De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat. Houd er echter rekening mee dat als u een monochrome afbeelding opslaat met een resolutie die hoger is dan 1500 dpi, de bestandsgrootte toeneemt zonder dat de beeldkwaliteit merkbaar toeneemt.
 
@@ -341,7 +341,7 @@ Als u Geen hebt geselecteerd bij Instellingenbestand, wordt in het gebied Beleid
 
 Grijswaardenafbeeldingen blijven ongewijzigd, ongeacht de compatibiliteitsoptie die u selecteert. Hierdoor wordt de grootte van PDF-bestanden meestal verkleind en de weergavesnelheid van deze bestanden verhoogd, omdat er minder informatie nodig is om RGB-afbeeldingen te beschrijven dan om CMYK-afbeeldingen te beschrijven. Omdat RGB de eigen kleurruimte is die wordt gebruikt op monitoren, is er geen kleurconversie nodig tijdens het weergeven, wat bijdraagt aan een snelle online weergave. Deze optie wordt aanbevolen als het PDF-bestand online of met printers met een lage resolutie moet worden gebruikt.
 
-**Render-intentie document:** De methode voor het toewijzen van kleuren tussen kleurruimten. Het resultaat van een bepaalde methode hangt af van de profielen van de kleurruimten. Sommige profielen produceren bijvoorbeeld identieke resultaten met verschillende methoden. De volgende opties zijn beschikbaar:
+**Render-intentie document:** De methode voor het toewijzen van kleuren tussen kleurruimten. Het resultaat van een bepaalde methode hangt af van de profielen van de kleurruimten. Sommige profielen produceren bijvoorbeeld identieke resultaten met verschillende methoden. Deze opties zijn beschikbaar:
 
 >[!NOTE]
 >
@@ -359,7 +359,7 @@ Grijswaardenafbeeldingen blijven ongewijzigd, ongeacht de compatibiliteitsoptie 
 
 ### Werkruimten {#working-spaces}
 
-Voor alle waarden in de lijst onder Beleid voor kleurbeheer, behalve Kleur ongewijzigd laten, selecteert u een van de lijsten in het gebied Werkruimte om op te geven welke ICC-profielen worden gebruikt voor het definiëren en kalibreren van de grijswaarden-, RGB- en CMYK-kleurruimten in gedistilleerde PDF-bestanden. De volgende opties zijn beschikbaar:
+Voor alle waarden in de lijst onder Beleid voor kleurbeheer, behalve Kleur ongewijzigd laten, selecteert u een van de lijsten in het gebied Werkruimte om op te geven welke ICC-profielen worden gebruikt voor het definiëren en kalibreren van de grijswaarden-, RGB- en CMYK-kleurruimten in gedistilleerde PDF-bestanden. Deze opties zijn beschikbaar:
 
 **Grijs:** Hiermee definieert u de kleurruimte van alle grijswaardenafbeeldingen in bestanden. Deze optie is alleen beschikbaar als u Alles labelen voor kleurbeheer of Alleen labels toewijzen voor afbeeldingen voor kleurbeheer hebt gekozen. Het standaard-ICC-profiel voor grijswaardenafbeeldingen is Grijsgamma 2.2. U kunt ook Geen selecteren om te voorkomen dat grijswaardenafbeeldingen worden geconverteerd.
 

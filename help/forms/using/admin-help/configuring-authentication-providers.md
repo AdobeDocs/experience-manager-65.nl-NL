@@ -37,7 +37,7 @@ Als u SSO gebruikend SPNEGO toelaat, voeg een Kerberos authentificatieleverancie
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op het desbetreffende domein in de lijst.
 1. Selecteer op de pagina die wordt weergegeven de juiste verificatieprovider in de lijst en breng de gewenste wijzigingen aan. (Zie [Verificatieinstellingen](configuring-authentication-providers.md#authentication-settings).)
-1. Klik op OK.
+1. Klik op OK.
 
 ## Een verificatieprovider verwijderen {#delete-an-authentication-provider}
 

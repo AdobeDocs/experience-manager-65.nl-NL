@@ -544,7 +544,7 @@ Wanneer u deze taak hebt voltooid, hebt u een pakketbestand dat de voorinstellin
    In Experience Manager: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 1. Maak het pakket.
-1. Download of deel het voorinstellingspakket voor Video Analytics, zodat dit kan worden gedeeld met de volgende nieuwe auteurknooppunten.
+1. Download of deel het voorinstellingspakket voor Video Analytics, zodat het kan worden gedeeld met de volgende nieuwe auteurknooppunten.
 
 ### Installeer het voorinstellingspakket voor Video Analytics voordat u meer Auteur-knooppunten configureert {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
@@ -934,37 +934,37 @@ Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaar
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html">iccprofilergb</a></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaardkleurprofiel RGB.</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html">icprofilecmyk</a></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard CMYK-kleurprofiel.</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html">icprofilegray</a></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaardkleurprofiel Grijs.</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcrgb.html">iccprofilesrcrgb</a></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaardkleurprofiel RGB dat wordt gebruikt voor RGB-afbeeldingen zonder ingesloten kleurprofiel</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrccmyk.html">iccprofilesrcmyk</a></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard CMYK-kleurprofiel dat wordt gebruikt voor CMYK-afbeeldingen zonder ingesloten kleurprofiel.</td>
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilesrcgray.html">iccprofilesrcgray</a></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>&lt;empty&gt;</td>
    <td>Naam van het standaard grijskleurprofiel dat wordt gebruikt voor CMYK-afbeeldingen zonder ingesloten kleurprofiel.</td>
   </tr>
@@ -982,7 +982,7 @@ Nadat u het functiepakket hebt geïnstalleerd, configureert u de juiste standaar
   </tr>
   <tr>
    <td><a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccrenderintent.html">iccrenderintent</a></td>
-   <td>Tekenreeks</td>
+   <td>String</td>
    <td>relatief</td>
    <td><p>Geeft de render-intentie aan. Acceptabele waarden zijn: <strong>perceptueel, relatief, verzadiging, absoluut. </strong><i></i>Adobe beveelt aan <strong>relatief </strong><i></i>als standaard.</p> </td>
   </tr>

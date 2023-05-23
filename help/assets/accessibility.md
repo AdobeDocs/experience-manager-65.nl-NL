@@ -80,7 +80,7 @@ Veel elementen van de gebruikersinterface die kunnen worden aangeklikt of geacti
 
 De volgende acties in [!DNL Assets] werken met de vermelde sneltoetsen. De meeste sneltoetsen die van toepassing zijn op [!DNL Experience Manager] Consoles zijn ook van toepassing op [!DNL Assets]. Zie [sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md#keyboard-shortcuts). Zie hoe te [de sneltoetsen in- of uitschakelen](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts).
 
-| Gebruikersinterface of scenario | Sneltoets | Actie |
+| Gebruikersinterface of scenario | Sneltoets | Handeling |
 |---|---|---|
 | Kolomweergave in [!DNL Assets] gebruikersinterface | Pijl-omhoog en Pijl-omlaag | Navigeer naar bestanden en mappen in dezelfde hiërarchie. |
 | Kolomweergave in [!DNL Assets] gebruikersinterface | Pijl-links en Pijl-rechts | Navigeer naar bestanden en mappen boven of onder de huidige map. |

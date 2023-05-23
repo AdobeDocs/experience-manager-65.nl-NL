@@ -14,7 +14,7 @@ exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
 source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
 workflow-type: tm+mt
 source-wordcount: '4872'
-ht-degree: 9%
+ht-degree: 8%
 
 ---
 
@@ -320,7 +320,7 @@ De volgende aspecten van een sjabloon kunnen worden bewerkt:
    >
    >In **Oorspronkelijke inhoud** zowel in de modus als op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen die een toegankelijk bovenliggend element hebben (d.w.z. onderdelen in een lay-outcontainer) worden verwijderd.
 
-* [Indeling](#editingatemplatelayout)
+* [Layout](#editingatemplatelayout)
 
    Hier kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf definiëren. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out** voor het ontwerpen van pagina&#39;s](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -338,7 +338,7 @@ De **Modus** in de werkbalk kunt u het juiste aspect van de sjabloon selecteren 
 
 * [Structuur](#editingatemplatestructure)
 * [Oorspronkelijke inhoud](#editingatemplateinitialcontent)
-* [Indeling](#editingatemplatelayout)
+* [Layout](#editingatemplatelayout)
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 

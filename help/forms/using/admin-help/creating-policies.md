@@ -381,7 +381,7 @@ Externe gebruikers kunnen beleid alleen kopiëren als de beheerder deze mogelijk
    >
    >U kunt een beleidsnaam maken die uitgebreide tekens bevat. wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als identiek beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of er al een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
 
-1. Klik op OK.
+1. Klik op OK.
 
 ## Een beleid verwijderen {#delete-a-policy}
 

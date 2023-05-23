@@ -15,7 +15,7 @@ exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1510'
-ht-degree: 2%
+ht-degree: 0%
 
 ---
 
@@ -76,7 +76,7 @@ De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhanke
    <td> </td>
    <td><strong>Beheer</strong></td>
    <td><strong>Moderator</strong></td>
-   <td><strong>Creator</strong></td>
+   <td><strong>Maker</strong></td>
    <td><strong>Lid</strong></td>
    <td><strong>Bezoeker</strong></td>
    <td><strong>Gebeurtenis<br /> Trigger</strong></td>

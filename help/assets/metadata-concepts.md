@@ -143,7 +143,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 
 * EXIF - Technische informatie van camera, inclusief GPS-positie.
 * CRS - [!DNL Camera Raw] schema.
-* `iptc4xmpCore` and `iptc4xmpExt`.
+* `iptc4xmpCore` en `iptc4xmpExt`.
 * TIFF - metagegevens van afbeeldingen (niet alleen voor TIFF-afbeeldingen).
 
 ### Afdrukspecifieke metagegevens {#print-specific-metadata}
@@ -179,13 +179,13 @@ Naast het DCMES zijn er andere metagegevenselementen die door het Dublin Core-in
 | beschrijving | Meer informatie over het element. |
 | format | De bestandsindeling, het fysieke medium of de afmetingen van het element. [!DNL Experience Manager] gebruik `dc:format` om het MIME-type van het element aan te duiden. |
 | id | Een unieke verwijzing naar het element. |
-| language | De taal van het element (bijvoorbeeld `en` voor het Engels). |
+| taal | De taal van het element (bijvoorbeeld `en` voor het Engels). |
 | uitgever | De persoon of het bedrijf die verantwoordelijk is voor het ter beschikking stellen van het actief. |
-| relation | Een gerelateerd actief. |
+| relatie | Een gerelateerd actief. |
 | rechten | Informatie over wie de rechten op dit actief heeft. |
-| source | Een gerelateerd actief waarvan het actief is afgeleid. |
+| bron | Een gerelateerd actief waarvan het actief is afgeleid. |
 | onderwerp | Het onderwerp van de activa. |
-| title | Een naam voor het element. |
+| titel | Een naam voor het element. |
 | type | De aard of het genre van het actief. |
 
 ### IPTC {#iptc}
@@ -301,4 +301,4 @@ Deze eigenschap is momenteel echter niet geïndexeerd om conflicten met aangepas
 
 De **[!UICONTROL IPTC]** tabblad van het dialoogvenster [!UICONTROL Properties] op de pagina worden ook trefwoorden weergegeven die via Adobe Bridge en andere Adobe Creative Cloud-apps aan middelen zijn toegevoegd. U kunt deze trefwoorden ook bewerken en meer trefwoorden toevoegen via het menu **[!UICONTROL IPTC]** tab.
 
-![keywords](assets/keywords-in-iptc-tab.png)
+![trefwoorden](assets/keywords-in-iptc-tab.png)

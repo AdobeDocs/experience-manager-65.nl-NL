@@ -85,7 +85,7 @@ De taken u met deze vooraf gevormde werkschema&#39;s kunt uitvoeren:
 
 Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Media Handlers voor middelen](media-handlers.md)voor een lijst met standaardworkflows.
 
-## [!DNL Experience Manager Assets] and [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
+## [!DNL Experience Manager Assets] en [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 Zie [Middelen en Media Library](medialibrary.md) voor informatie over de verschillen.
 

@@ -11,8 +11,8 @@ docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
 source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '2230'
+ht-degree: 8%
 
 ---
 

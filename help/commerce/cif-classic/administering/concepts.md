@@ -430,7 +430,7 @@ Voor alle implementaties kan rekening worden gehouden met de volgende punten:
 
    `//element(*,my:Sku)[@country=’france’ and @language=’fr’`
 
-   and
+   en
 
    `@category=’shoe’ and @brand=’reebok’ and @product=’pump’]`
 

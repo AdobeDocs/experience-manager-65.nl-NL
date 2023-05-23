@@ -13,7 +13,7 @@ exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '1837'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -51,12 +51,12 @@ Hier volgt een lijst met de queryparameters voor bulkeditors:
   </tr>
   <tr>
    <td> rootPath / rp<br /> </td>
-   <td> Tekenreeks </td>
+   <td> String </td>
    <td> zoekhoofdpad</td>
   </tr>
   <tr>
    <td> queryParams / qp<br /> </td>
-   <td> Tekenreeks</td>
+   <td> String</td>
    <td> zoekquery</td>
   </tr>
   <tr>
@@ -66,12 +66,12 @@ Hier volgt een lijst met de queryparameters voor bulkeditors:
   </tr>
   <tr>
    <td> colsValue / cv<br /> </td>
-   <td> Tekenreeks[]</td>
+   <td> String[]</td>
    <td> gezochte eigenschappen (gecontroleerde waarden van colsSelection weergegeven als checkboxes)</td>
   </tr>
   <tr>
    <td> extraCols / ec<br /> </td>
-   <td> Tekenreeks[]</td>
+   <td> String[]</td>
    <td> extra gezochte eigenschappen (die in een komma-gescheiden tekstgebied worden getoond)</td>
   </tr>
   <tr>
@@ -81,7 +81,7 @@ Hier volgt een lijst met de queryparameters voor bulkeditors:
   </tr>
   <tr>
    <td> colsSelection / cs<br /> </td>
-   <td> Tekenreeks[]</td>
+   <td> String[]</td>
    <td> selectie van gezochte eigenschappen (weergegeven als selectievakjes)</td>
   </tr>
   <tr>

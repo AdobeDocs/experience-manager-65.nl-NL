@@ -59,7 +59,7 @@ U kunt de details van een folder uitgeven die u eerder vormde.
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op het juiste domein in de lijst en selecteer op de pagina die wordt weergegeven de juiste map in de lijst.
 1. Configureer de directory-, gebruikers- en groepsinstellingen naar wens. (Zie [Directoryinstellingen](configuring-directories.md#directory-settings).)
-1. Klik op OK.
+1. Klik op OK.
 
 ## Een map verwijderen {#delete-a-directory}
 

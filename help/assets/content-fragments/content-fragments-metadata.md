@@ -7,7 +7,7 @@ exl-id: 6316ef72-7647-4e85-b8cf-152557b26540
 source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
 workflow-type: tm+mt
 source-wordcount: '222'
-ht-degree: 5%
+ht-degree: 4%
 
 ---
 
@@ -24,7 +24,7 @@ U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewer
 
    * Selecteren [**Eigenschappen weergeven** om de dialoogvensters te openen](/help/assets/manage-assets.md#editing-properties). Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
    * Open het inhoudsfragment voor bewerking en selecteer vervolgens **Metagegevens** in het zijpaneel.
-   ![metadata](assets/cfm-metadata-01.png)
+   ![metagegevens](assets/cfm-metadata-01.png)
 
 3. De **Basis** bevat opties die u kunt weergeven of bewerken:
 
@@ -41,4 +41,4 @@ U kunt bijvoorbeeld relevante fragmenten labelen als &#39;kerstlancering&#39; om
 
    * **Gemaakt** (alleen weergeven)
    Bijvoorbeeld:
-   ![metadata](assets/cfm-metadata-02.png)
+   ![metagegevens](assets/cfm-metadata-02.png)

@@ -202,7 +202,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
    1. Een eigenschap maken `sling:hideResource`
 
       * type: `Boolean`
-      * value: `true`
+      * waarde: `true`
 
 * **Onderliggende items van een knooppunt verbergen (terwijl de eigenschappen van het knooppunt behouden blijven)**
 
@@ -229,7 +229,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
          Dit specificeert de knoop (zoals in `/libs`) dat het huidige knooppunt moet worden geplaatst voor:
 
          * type: `String`
-         * value: `<before-SiblingName>`
+         * waarde: `<before-SiblingName>`
 
 ### Het aanroepen van de Verschuivende Fusie van het Middel van uw code {#invoking-the-sling-resource-merger-from-your-code}
 
@@ -245,7 +245,7 @@ De samenvoeging van het Verspreide Middel omvat twee leveranciers van douanemidd
 
    * doel: bronnen samenvoegen op basis van zoekpad
    * koppelpunt: `/mnt/overlay`
-   * usage: `mount point + relative path`
+   * gebruik: `mount point + relative path`
    * voorbeeld:
 
       * `getResource('/mnt/overlay' + '<relative-path-to-resource>');`
@@ -254,7 +254,7 @@ De samenvoeging van het Verspreide Middel omvat twee leveranciers van douanemidd
 
    * doel: samenvoegbronnen op basis van hun supertype
    * koppelpunt: `/mnt/overide`
-   * usage: `mount point + absolute path`
+   * gebruik: `mount point + absolute path`
    * voorbeeld:
 
       * `getResource('/mnt/override' + '<absolute-path-to-resource>');`

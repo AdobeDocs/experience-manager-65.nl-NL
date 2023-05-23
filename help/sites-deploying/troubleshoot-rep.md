@@ -112,4 +112,4 @@ In sommige gevallen wordt de replicatiewachtrij geblokkeerd wanneer wordt geprob
 1. Klikken **Item toevoegen** (het plusteken).
 1. Voer de naam van de gebruiker in.
 1. Selecteren `jcr:namespaceManagement` uit de lijst met bevoegdheden.
-1. Klik op OK.
+1. Klik op OK.

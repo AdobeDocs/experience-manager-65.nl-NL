@@ -12,7 +12,7 @@ exl-id: 3458471a-9815-463e-8044-68631073863c
 source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
 workflow-type: tm+mt
 source-wordcount: '1170'
-ht-degree: 2%
+ht-degree: 1%
 
 ---
 
@@ -59,7 +59,7 @@ Hier volgen de ingestelde globale opties. Deze opties zijn beschikbaar voor elk 
    <td>De positie van het veld in de tabvolgorde van het formulier. Overschrijf de tabIndex alleen als u de standaardtabvolgorde van het formulier wilt wijzigen.</td>
   </tr>
   <tr>
-   <td>role</td>
+   <td>rol</td>
    <td>Rol van het element, bijvoorbeeld Kop of Tabel.</td>
   </tr>
   <tr>
@@ -71,7 +71,7 @@ Hier volgen de ingestelde globale opties. Deze opties zijn beschikbaar voor elk 
    <td>De breedte van de widget. Deze wordt opgegeven in pixels.</td>
   </tr>
   <tr>
-   <td>access</td>
+   <td>toegang</td>
    <td>Controls used to access the contents of a container object, such as a subform.</td>
   </tr>
   <tr>
@@ -236,7 +236,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
 | leadDigits | Maximum aantal voorloopcijfers toegestaan in het decimale getal. |
 | fracDigits | Maximum aantal breukcijfers toegestaan in het decimale getal. |
 | nul | Tekenreeksrepresentatie van nul in landinstelling van het veld. |
-| decimal | Tekenreeksrepresentatie van decimaal in landinstelling van veld. |
+| decimaal | Tekenreeksrepresentatie van decimaal in landinstelling van veld. |
 
 ### CheckButton: RadioButton, CheckBox {#checkbutton-radiobutton-checkbox}
 

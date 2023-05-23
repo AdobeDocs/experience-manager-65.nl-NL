@@ -235,7 +235,7 @@ U kunt een PDF-document desassembleren met de API (webservice) van de Assembler-
    * De `MyMapOf_xsd_string_To_xsd_anyType` object dat het te demonteren PDF-document bevat
    * An `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
 
-   De `invokeDDX` methode retourneert een `AssemblerResult` object dat de taakresultaten en eventuele uitzonderingen bevat die zijn opgetreden.
+   De `invokeDDX` methode retourneert een `AssemblerResult` -object dat de taakresultaten en eventuele uitzonderingen bevat die zijn opgetreden.
 
 1. Sla de gedemonteerde PDF-documenten op.
 

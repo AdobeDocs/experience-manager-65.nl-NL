@@ -60,7 +60,7 @@ Gebruik de volgende stappen om een taak tot stand te brengen om een brief in AEM
 
 1. Klik op Actieprofielen beheren. Het dialoogvenster Actieprofiel beheren wordt geopend. Zorg ervoor dat het renderproces en het verzendproces op de juiste wijze zijn geselecteerd.
 1. Als u de letter wilt openen met een XML-gegevensbestand voor gegevens, bladert u naar het desbetreffende gegevensbestand in het proces Gegevens voorbereiden en selecteert u dit.
-1. Klik op OK.
+1. Klik op OK.
 1. Definieer de variabelen voor Uitvoer beginpunt en Taakbijlagen. De gedefinieerde variabelen bevatten gegevens van Start Point Output en Task Attachments.
 1. (Optioneel) Als u een andere gebruiker aan de workflow wilt toevoegen, sleept u een activiteitskiezer, configureert u deze en wijst u deze toe aan een gebruiker. Schrijf een douaneomslag (hieronder steekproef wordt gegeven) of download en installeer DSC (hieronder gegeven) om het malplaatje van de Brief, de Output van het Punt van het Begin, en taakgehechtheid uit te breiden.
 

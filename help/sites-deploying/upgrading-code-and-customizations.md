@@ -165,7 +165,7 @@ De structuur voor bewerkbare sjablonen is gewijzigd tussen AEM 6.2 en 6.3. Als u
 
 ### Wijzigingen in CUG-implementatie {#cug-implementation-changes}
 
-De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de Touch UI. Als u van 6.2 of vroeger bevordert, dan kunnen de instructies om aan de nieuwe implementatie van CUG te migreren vinden [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
+De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de aanraakinterface. Als u van 6.2 of vroeger bevordert, dan kunnen de instructies om aan de nieuwe implementatie van CUG te migreren vinden [hier](/help/sites-administering/closed-user-groups.md#upgradetoaem63).
 
 ## Testprocedure {#testing-procedure}
 

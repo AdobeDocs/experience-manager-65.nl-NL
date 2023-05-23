@@ -33,7 +33,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias aan te duiden. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van uw HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Klik op HSM-connectiviteit testen. Als AEM formulieren verbinding kunnen maken met het HSM-apparaat, wordt een bericht weergegeven met de mededeling dat de HSM beschikbaar is. Klik op Next.
 1. Gebruik of de Symbolische Naam, identiteitskaart van de Slot, of Index van de Lijst van de Slot om te identificeren waar de geloofsbrieven op HSM worden opgeslagen.
 
@@ -48,7 +48,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
 1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias aan te duiden. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van uw HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Schakel het selectievakje Offline profiel maken in. Klik op Next.
 1. Selecteer in de lijst HSM-apparaat de fabrikant van het HSM-apparaat waar de referentie is opgeslagen.
 1. Selecteer in de lijst Slot-type de optie Groef-id, Slot-index of Token-naam en geef een waarde op in het vak Slot-info. AEM formulieren gebruiken deze instellingen om te bepalen waar de referenties op de HSM worden opgeslagen.

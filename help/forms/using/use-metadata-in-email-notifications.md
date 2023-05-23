@@ -191,7 +191,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
       | Naam | jcr:titel |
       |---|---|
-      | Type | Tekenreeks |
+      | Type | String |
       | Waarde | Geef de titel van het script op. Bijvoorbeeld, douanemetagegevens voor de verzekeringnemer. De opgegeven waarde wordt weergegeven in de taakstap toewijzen. |
 
 ### Een OSGi-bundel en Java-interface gebruiken om aangepaste metagegevens toe te voegen {#use-an-osgi-bundle-and-java-interface-to-add-custom-metadata}

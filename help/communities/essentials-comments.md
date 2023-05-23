@@ -13,7 +13,7 @@ exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
 source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
 workflow-type: tm+mt
 source-wordcount: '344'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
@@ -40,7 +40,7 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
    <td>cq.ckeditor<br /> cq.social.hbs.comments<br /> cq.social.hbs.stemden</td>
   </tr>
   <tr>
-   <td> <strong>templates</strong></td>
+   <td> <strong>sjablonen</strong></td>
    <td> /libs/social/commons/components/hbs/comments/comments.hbs<br /> </td>
   </tr>
   <tr>

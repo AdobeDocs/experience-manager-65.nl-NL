@@ -215,7 +215,7 @@ resulteert in een publicatie-instantie die wordt uitgevoerd op **`localhost:4503
 
 U installeert deze twee varianten bijvoorbeeld in
 
-`<aem-install>/author`and
+`<aem-install>/author`en
 
 **`<aem-install>/publish`**
 

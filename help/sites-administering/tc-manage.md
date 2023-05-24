@@ -2,9 +2,9 @@
 title: Vertaalprojecten beheren
 description: Leer hoe u vertaalprojecten in AEM kunt beheren.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 7efb1b8d345b07835e5f45a1afe9da13163411b2
+source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
 workflow-type: tm+mt
-source-wordcount: '3536'
+source-wordcount: '3587'
 ht-degree: 0%
 
 ---
@@ -412,13 +412,20 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de master taal die u vertaalt
 
 ## Een bronpagina verplaatsen of de naam ervan wijzigen {#move-source}
 
-Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, wordt er een nieuwe taalkopie gemaakt op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig.
+Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, wordt er een nieuwe taalkopie gemaakt op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig. Om dit te voorkomen, kunt u de functionaliteit voor het kopiëren van de updatetaal na de verplaatsing gebruiken:
 
-De beste praktijk in dit scenario is deze procedure te volgen:
-1. Publiceer de taalkopieën die zijn gekoppeld aan de bronpagina die u wilt verplaatsen.
-1. Verwijder ze.
-1. Maak nieuwe taalkopieën van de nieuw verplaatste bronpagina.
-1. Publiceer de zojuist gemaakte taalkopieën.
+1. Verplaats een pagina met een taalkopie.
+1. Selecteer de hoofdmap van de taalkopie.
+1. Open de **Verwijzingen** deelvenster.
+1. Selecteren **Kopieën van talen**.
+1. Selecteer de doeltalen die u wilt bijwerken.
+1. Selecteren **Taalkopieën bijwerken**.
+1. Klikken **Bijwerken**. A [Starten](/help/sites-authoring/launches-promoting.md) wordt gemaakt.
+1. Navigeer naar de vereiste hoofdtaal en selecteer deze.
+1. Met de **Verwijzingen** deelvenster, selecteert u **Starten**.
+1. Klik op de Launch die zojuist is gemaakt en klik op **Starten bevorderen**.
+
+Nu is de bronpagina verplaatst en is ook de bijbehorende taalkopie gemaakt.
 
 ## Een vertaalproject maken met de projectconsole {#creating-a-translation-project-using-the-projects-console}
 

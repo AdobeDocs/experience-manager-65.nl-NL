@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
-source-git-commit: f8af806bbb78623d5ba12379fc547a2cffc03841
+source-git-commit: 0bce05571590bc09e2b65f6bd6c1f387c71fba3a
 workflow-type: tm+mt
-source-wordcount: '2595'
+source-wordcount: '2609'
 ht-degree: 0%
 
 ---
@@ -70,6 +70,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn:
 * Kan geen workflow activeren voor meerdere geselecteerde elementen die zijn gevonden met zoekfilters. (ACTIVA-7689)
 * Wanneer u een element (of meerdere elementen) selecteert in de zoekresultaten, is de optie Relatief of Niet-gerelateerd niet zichtbaar. Maar de optie is beschikbaar, anders. (ACTIVA-7679)
 * Het deelvenster Zoekfilters wordt slechts eenmaal geopend na de aanmelding en wordt niet geopend als u de zoekpagina afsluit en de zoekopdracht opnieuw uitvoert. (ACTIVA-7671)
+* De keuzelijst met e-mailadressen geeft geen juiste contrastverhouding weer tijdens het delen van een koppeling. (ACTIVA-17349)
 
 <!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST 
 * When you select any file in a Collection and click `Download`, and then navigate to the email checkbox and expand it, regular text and email link is not recognizable due to background color. (ASSETS-17349) 

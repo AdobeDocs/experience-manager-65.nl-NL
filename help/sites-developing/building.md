@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tagging
 exl-id: d885520d-d0ed-45fa-8511-faa2495d667a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: be028f116ccb83853cd46dc742438babd2207314
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '903'
 ht-degree: 0%
 
 ---
@@ -199,3 +199,7 @@ De nieuwe taal (Fins) is nu beschikbaar in het tagdialoogvenster van de pagina-e
 >[!NOTE]
 >
 >De nieuwe taal moet een van de AEM erkende talen zijn, d.w.z. het moet beschikbaar zijn als een hieronder knooppunt `/libs/wcm/core/resources/languages`.
+
+>[!CAUTION]
+>
+>Wanneer u een servicepack installeert, wordt de eigenschap languages van het knooppunt /content/cq:tags opnieuw ingesteld op de standaardwaarde. Daarom is het noodzakelijk om het uit de eigenschappen vóór installatie toe te voegen.

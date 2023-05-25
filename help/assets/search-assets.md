@@ -7,9 +7,9 @@ feature: Search, Metadata
 role: User
 exl-id: 588433b2-564a-430f-9d04-480465ece2ad
 hide: true
-source-git-commit: eac578f8c8ef3bfc3c94929814398486777094f0
+source-git-commit: b138bc434ecad849b2c588864868cab6666d50c9
 workflow-type: tm+mt
-source-wordcount: '5552'
+source-wordcount: '5684'
 ht-degree: 4%
 
 ---
@@ -419,6 +419,10 @@ U kunt het volgende doen met de middelen u hebt gezocht in [!DNL Experience Mana
 * Download een of meer middelen.
 * Gebruik Desktophandelingen om deze middelen in de bureaubladtoepassing te openen.
 * Slimme verzamelingen maken.
+* Een versie maken
+* Een workflow starten
+* Relatieve of ongerelateerde elementen
+* Pas filters toe met behulp van het deelvenster Filters dat na het uitvoeren van de zoekopdracht automatisch wordt weergegeven om de zoekresultaten te beperken.
 
 ### Zoekresultaten sorteren {#sort}
 
@@ -458,6 +462,18 @@ Een verzameling is een geordende set elementen die elementen van verschillende l
 * Een dynamische lijst (slimme verzameling) die elementen in de verzameling vult op basis van zoekcriteria.
 
 U kunt slimme verzamelingen maken op basis van de zoekcriteria. Selecteer in het deelvenster **[!UICONTROL Filters]** de optie **[!UICONTROL Files]** en klik op **[!UICONTROL Save Smart Collection]**. Zie [Verzamelingen beheren](/help/assets/manage-collections.md).
+
+### Een versie maken {#create-version}
+
+Maak een versie voor de elementen die in de zoekresultaten worden weergegeven. Selecteer het element en klik op **[!UICONTROL Create]** > **[!UICONTROL Version]**. Voeg een optioneel label of een opmerking toe en klik op **[!UICONTROL Create]**. U kunt ook meerdere elementen tegelijk selecteren en er versies voor maken.
+
+### Een workflow maken {#create-workflow}
+
+Net als bij de functie voor het maken van een versie kunt u ook een workflow maken voor de elementen die in de zoekresultaten worden weergegeven. Selecteer de elementen en klik op **[!UICONTROL Create]** > **[!UICONTROL Workflow]**. Selecteer het workflowmodel, geef een titel voor de workflow op en klik op **[!UICONTROL Start]**.
+
+### Relatieve en niet-gerelateerde elementen {#relate-unrelate-assets}
+
+Verwante en losse elementen die in de zoekresultaten worden weergegeven. Selecteer de elementen en klik op **[!UICONTROL Relate]** of **[!UICONTROL Unrelate]**.
 
 ## Onverwachte zoekresultaten en problemen {#unexpected-results}
 

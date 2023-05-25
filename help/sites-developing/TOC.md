@@ -8,9 +8,9 @@ breadcrumb-title: Handleiding voor ontwikkeling
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM-instantie kunt samenstellen.
 feature: Developing
 role: Developer
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '1285'
+source-wordcount: '1296'
 ht-degree: 6%
 
 ---
@@ -142,6 +142,8 @@ ht-degree: 6%
       + [GraphQL-eindpunten beheren](/help/sites-developing/headless/graphql-api/graphql-endpoint.md)
       + [GraphiQL IDE gebruiken](/help/sites-developing/headless/graphql-api/graphiql-ide.md)
       + [Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md)
+      + [GraphQL-query&#39;s optimaliseren](/help/sites-developing/headless/graphql-api/graphql-optimization.md)
+      + [Inhoudsfragmenten bijwerken voor geoptimaliseerde GraphQL-filters](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md)
       + [Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-authentication-content-fragments.md)
       + [GraphQL API AEM met inhoudsfragmenten - Voorbeeldinhoud en query&#39;s](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md)
 + Ontwikkeling van hybride en SPA AEM{#spas}
@@ -189,7 +191,7 @@ ht-degree: 6%
    + [Voorbeeld van UI-moduletypen van ContextHub](ch-samplemodules.md)
    + [ContextHub Diagnostics](ch-diagnostics.md)
    + [Ontwikkelen voor gerichte inhoud](target.md)
-   + [ContextHub JavaScript API-naslaggids](contexthub-api.md)
+   + [JavaScript API-naslaggids voor ContextHub](contexthub-api.md)
    + Clientcontext{#client-context}
       + [Clientcontext in detail](client-context.md)
       + [JavaScript-API voor clientcontext](ccjsapi.md)

@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: cf78742614fd2d35f59905895dfacb83190140cd
+source-git-commit: 1481d613783089046b44d4652d38f7b4b16acc4d
 workflow-type: tm+mt
-source-wordcount: '3250'
+source-wordcount: '4479'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Door de GraphQL API in AEM te gebruiken, kunt u inhoudsfragmenten efficiënt aan
 
 >[!NOTE]
 >
->GraphQL wordt momenteel gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM):
+>GraphQL wordt gebruikt in twee (afzonderlijke) scenario&#39;s in Adobe Experience Manager (AEM):
 >
 >* [AEM Commerce gebruikt gegevens van een Commerce-platform via GraphQL](/help/commerce/cif/integrating/magento.md).
 >* AEM Content Fragments werken samen met de AEM GraphQL API (een aangepaste implementatie op basis van standaard GraphQL) voor gestructureerde inhoud voor gebruik in uw toepassingen.
@@ -38,17 +38,17 @@ Klanten die GraphQL gebruiken, moeten het AEM Content Fragment installeren met G
 
 GraphQL is:
 
-* &quot;*...een querytaal voor API&#39;s en een runtime voor het uitvoeren van deze query&#39;s met uw bestaande gegevens. GraphQL biedt een volledige en begrijpelijke beschrijving van de gegevens in uw API, geeft clients de mogelijkheid om precies te vragen wat ze nodig hebben en niets meer, maakt het gemakkelijker om API&#39;s in de loop der tijd te ontwikkelen en maakt krachtige ontwikkelaarsgereedschappen mogelijk.*&quot;.
+* &quot;*...een querytaal voor API&#39;s en een runtime voor het uitvoeren van deze query&#39;s met uw bestaande gegevens. GraphQL geeft een volledige en begrijpelijke beschrijving van de gegevens in uw API. Het geeft cliënten de macht om precies te vragen wat zij en niets meer nodig hebben, maakt het gemakkelijker om APIs in tijd te evolueren, en laat krachtige ontwikkelaarshulpmiddelen toe.*&quot;.
 
    Zie [GraphQL.org](https://graphql.org)
 
-* &quot;*...een open specificatie voor een flexibele API-laag. Plaats GraphQL over uw bestaande achtergronden om producten sneller dan ooit te bouwen....*&quot;.
+* &quot;*...een open specificatie voor een flexibele API-laag. Plaats GraphQL over uw bestaande achtergronden zodat u producten sneller dan ooit kunt bouwen....*&quot;.
 
-   Zie [GraphQL verkennen](https://www.graphql.com).
+   Zie [GraphQL verkennen](https://graphql.com/).
 
 * *&quot;...een taal en specificatie voor gegevensquery die in 2012 intern door Facebook zijn ontwikkeld, voordat deze in 2015 openbaar is uitbesteed. Het biedt een alternatief voor op REST gebaseerde architecturen met als doel de productiviteit van ontwikkelaars te verhogen en de hoeveelheden overgedragen gegevens te minimaliseren. GraphQL wordt gebruikt in productie door honderden organisaties van elke omvang...&quot;*
 
-   Zie [GraphQL Foundation](https://foundation.graphql.org/).
+   Zie [GraphQL Foundation](https://graphql.org/foundation).
 
 <!--
 "*Explore GraphQL is maintained by the Apollo team. Our goal is to give developers and technical leaders around the world all of the tools they need to understand and adopt GraphQL.*". 
@@ -64,17 +64,14 @@ Raadpleeg de volgende secties (onder andere over veel andere bronnen) voor meer 
 
 * At [graphql.com](https://graphql.com):
 
-   * [Hulplijnen](https://www.graphql.com/guides/)
+   * [Tutorials](https://graphql.com/tutorials/)
 
-   * [Tutorials](https://www.graphql.com/tutorials/)
 
-   * [Casestudy&#39;s](https://www.graphql.com/case-studies/)
-
-De GraphQL for AEM-implementatie is gebaseerd op de standaard GraphQL Java Library. Zie:
+De GraphQL for AEM-implementatie is gebaseerd op de standaard GraphQL Java™-bibliotheek. Zie:
 
 * [graphQL.org - Java](https://graphql.org/code/#java)
 
-* [GraphQL Java bij GitHub](https://github.com/graphql-java)
+* [GraphQL Java™ bij GitHub](https://github.com/graphql-java)
 
 ### GraphQL Terminologie {#graphql-terminology}
 
@@ -104,7 +101,7 @@ Met GraphQL kunt u query&#39;s uitvoeren die worden geretourneerd:
 
 * A **[lijst van vermeldingen](https://graphql.org/learn/schema/#lists-and-non-null)**
 
-AEM biedt mogelijkheden om query&#39;s (beide typen) om te zetten in [Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md), die door Dispatcher en CDN in de cache kunnen worden opgeslagen.
+AEM biedt mogelijkheden om query&#39;s (beide typen) om te zetten in [Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md) die door Dispatcher en CDN in het cachegeheugen worden opgeslagen.
 
 ### Aanbevolen werkwijzen voor GraphQL-query (Dispatcher en CDN) {#graphql-query-best-practices}
 
@@ -120,7 +117,7 @@ De [Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted
 
 GraphQL-query&#39;s die gebruikmaken van POST-aanvragen worden niet aanbevolen omdat ze niet in de cache zijn opgeslagen, zodat in een standaardinstantie de Dispatcher is geconfigureerd om dergelijke query&#39;s te blokkeren.
 
-Hoewel GraphQL ook GET-aanvragen ondersteunt, kunnen deze limieten bereiken (bijvoorbeeld de lengte van de URL) die kunnen worden vermeden door middel van permanente query&#39;s.
+Hoewel GraphQL ook GET-aanvragen ondersteunt, kunnen deze aanvragen limieten bereiken (bijvoorbeeld de lengte van de URL) die kunnen worden vermeden met behulp van Blijvende query&#39;s.
 
 >[!NOTE]
 >
@@ -132,9 +129,9 @@ Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-
 
 >[!NOTE]
 >
->GraphiQL is inbegrepen in alle milieu&#39;s van AEM (maar zal slechts toegankelijk/zichtbaar zijn wanneer u uw eindpunten vormt).
+>GraphiQL is inbegrepen in alle milieu&#39;s van AEM (maar is slechts toegankelijk/zichtbaar wanneer u uw eindpunten vormt).
 >
->In vorige versies was een pakket nodig om GraphiQL IDE te installeren. Als u deze installatie hebt, kunt u deze nu verwijderen.
+>In vorige versies had u een pakket nodig om GraphiQL IDE te installeren. Als u dit pakket hebt geïnstalleerd, kan het nu worden verwijderd.
 
 Met deze interface kunt u query&#39;s rechtstreeks invoeren en testen.
 
@@ -142,13 +139,13 @@ Bijvoorbeeld:
 
 * `http://localhost:4502/content/graphiql.html`
 
-Dit biedt functies zoals syntaxismarkering, automatisch aanvullen, automatisch voorstellen, samen met een geschiedenis en online documentatie:
+De klasse biedt functies zoals syntaxismarkering, automatisch aanvullen en automatisch voorstellen, samen met een geschiedenis en online documentatie:
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
 >[!NOTE]
 >
->Zie voor meer informatie [GraphiQL IDE gebruiken](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+>Zie [GraphiQL IDE gebruiken](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
 
 ## Kwesties gebruiken voor auteur- en publicatie-omgevingen {#use-cases-author-publish-environments}
 
@@ -159,22 +156,22 @@ De gebruiksgevallen kunnen afhankelijk zijn van het type AEM omgeving:
 
 * Auteursomgeving; gebruikt voor:
    * Query-gegevens voor &quot;inhoudsbeheerdoeleinden&quot;:
-      * GraphQL in AEM is momenteel een alleen-lezen API.
+      * GraphQL in AEM is een alleen-lezen API.
       * De REST-API kan worden gebruikt voor CR(u)D-bewerkingen.
 
 ## Machtigingen {#permission}
 
 De machtigingen zijn vereist voor toegang tot middelen.
 
-GraphQL query&#39;s worden uitgevoerd met toestemming van de AEM gebruiker van het onderliggende verzoek. Als de gebruiker geen leestoegang heeft tot bepaalde fragmenten (die als Elementen worden opgeslagen), zullen zij geen deel van de resultaatreeks worden.
+GraphQL query&#39;s worden uitgevoerd met toestemming van de AEM gebruiker van het onderliggende verzoek. Als de gebruiker geen leestoegang heeft tot bepaalde fragmenten (opgeslagen als elementen), maken deze geen deel uit van de resultatenset.
 
-Bovendien moet de gebruiker toegang hebben tot een GraphQL-eindpunt om GraphQL-query&#39;s uit te kunnen voeren.
+Ook, moet de gebruiker toegang tot een eindpunt van GraphQL hebben om de vragen van GraphQL in werking te kunnen stellen.
 
 ## Schema genereren {#schema-generation}
 
-GraphQL is een sterk getypeerde API, wat betekent dat de gegevens duidelijk gestructureerd en ingedeeld moeten zijn per type.
+GraphQL is een getypeerde API, wat betekent dat de gegevens duidelijk gestructureerd en ingedeeld moeten zijn op basis van het type.
 
-De GraphQL-specificatie biedt een aantal richtlijnen voor het maken van een robuuste API voor het ondervragen van gegevens over een bepaalde instantie. Om dit te doen, moet een cliënt halen [Schema](#schema-generation), die alle typen bevat die nodig zijn voor een query.
+De GraphQL-specificatie biedt een aantal richtlijnen voor het maken van een robuuste API voor het ondervragen van gegevens over een bepaalde instantie. Om deze richtlijnen te voltooien, moet een cliënt halen [Schema](#schema-generation), die alle typen bevat die nodig zijn voor een query.
 
 Voor inhoudsfragmenten zijn de GraphQL-schema&#39;s (structuur en typen) gebaseerd op **Ingeschakeld** [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) en hun gegevenstypen.
 
@@ -182,9 +179,9 @@ Voor inhoudsfragmenten zijn de GraphQL-schema&#39;s (structuur en typen) gebasee
 >
 >Alle GraphQL-schema&#39;s (afgeleid van Content Fragment Models) die zijn **Ingeschakeld**) zijn leesbaar via het GraphQL-eindpunt.
 >
->Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, aangezien deze op deze manier kunnen worden gelekt; Dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
+>Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden gelekt. Het bevat bijvoorbeeld informatie die als veldnamen aanwezig kan zijn in de modeldefinitie.
 
-Als een gebruiker bijvoorbeeld een Content Fragment Model heeft gemaakt, genaamd `Article`AEM het object genereren `article` van een type `ArticleModel`. De velden in dit type komen overeen met de velden en gegevenstypen die in het model zijn gedefinieerd.
+Als een gebruiker bijvoorbeeld een Content Fragment Model heeft gemaakt, genaamd `Article`AEM vervolgens een GraphQL-type genereert `ArticleModel`. De velden in dit type komen overeen met de velden en gegevenstypen die in het model zijn gedefinieerd. Bovendien leidt het tot sommige ingangspunten voor de vragen die op dit type werken, zoals `articleByPath` of `articleList`.
 
 1. A Content Fragment Model:
 
@@ -193,15 +190,15 @@ Als een gebruiker bijvoorbeeld een Content Fragment Model heeft gemaakt, genaamd
 1. Het corresponderende GraphQL-schema (uitvoer van de automatische documentatie GraphiQL):
    ![GraphQL-schema gebaseerd op inhoudsfragmentmodel](assets/cfm-graphqlapi-02.png "GraphQL-schema gebaseerd op inhoudsfragmentmodel")
 
-   Dit toont aan dat het geproduceerde type `ArticleModel` bevat diverse [velden](#fields).
+   Deze afbeelding laat zien dat het gegenereerde type `ArticleModel` bevat diverse [velden](#fields).
 
-   * Drie van hen zijn gecontroleerd door de gebruiker: `author`, `main` en `referencearticle`.
+   * Drie van hen zijn gecontroleerd door de gebruiker: `author`, `main`, en `referencearticle`.
 
-   * De andere velden zijn automatisch toegevoegd door AEM en zijn nuttige methoden voor het verschaffen van informatie over een bepaald inhoudsfragment. in dit voorbeeld: `_path`, `_metadata`, `_variations`. Deze [helpervelden](#helper-fields) zijn gemarkeerd met een voorgaande `_` om onderscheid te maken tussen wat door de gebruiker is gedefinieerd en wat automatisch is gegenereerd.
+   * De andere velden zijn automatisch AEM toegevoegd en zijn nuttige methoden voor het verschaffen van informatie over een bepaald inhoudsfragment. In dit voorbeeld, [helpervelden](#helper-fields)) `_path`, `_metadata`, `_variations`.
 
 1. Nadat een gebruiker een inhoudsfragment heeft gemaakt op basis van het artikelmodel, kan het vervolgens worden ondervraagd via GraphQL. Zie voor voorbeelden de [Voorbeeldquery&#39;s](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#graphql-sample-queries) (op basis van een [voorbeeldstructuur van inhoudsfragment voor gebruik met GraphQL](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)).
 
-In GraphQL for AEM is het schema flexibel. Dit betekent dat deze telkens automatisch wordt gegenereerd wanneer een inhoudsfragmentmodel wordt gemaakt, bijgewerkt of verwijderd. De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
+In GraphQL for AEM is het schema flexibel. Deze flexibiliteit betekent dat deze automatisch wordt gegenereerd wanneer een inhoudsfragmentmodel wordt gemaakt, bijgewerkt of verwijderd. De caches voor het gegevensschema worden ook vernieuwd wanneer u een model van het inhoudsfragment bijwerkt.
 
 De service Sites GraphQL luistert (op de achtergrond) naar eventuele wijzigingen die zijn aangebracht in een inhoudsfragmentmodel. Wanneer updates worden ontdekt, slechts wordt dat deel van het schema opnieuw geproduceerd. Deze optimalisatie bespaart tijd en zorgt voor stabiliteit.
 
@@ -209,7 +206,7 @@ Als u bijvoorbeeld:
 
 1. Een pakket installeren met `Content-Fragment-Model-1` en `Content-Fragment-Model-2`:
 
-   1. GraphQL-typen voor `Model-1` en `Model-2` wordt gegenereerd.
+   1. GraphQL-typen voor `Model-1` en `Model-2` worden gegenereerd.
 
 1. Vervolgens wijzigen `Content-Fragment-Model-2`:
 
@@ -219,7 +216,7 @@ Als u bijvoorbeeld:
 
 >[!NOTE]
 >
->Dit is belangrijk om op te merken voor het geval u bulkupdates op de Modellen van het Fragment van de Inhoud door REST api, of anders wilt doen.
+>Dit detail is belangrijk om nota te nemen enkel voor het geval u bulkupdates op de Modellen van het Fragment van de Inhoud door REST api, of anders wilt doen.
 
 Het schema wordt gediend door het zelfde eindpunt zoals de vragen van GraphQL, met de cliënt die het feit behandelt dat het schema met de uitbreiding wordt geroepen `GQLschema`. U kunt bijvoorbeeld een eenvoudige `GET` verzoek op `/content/cq:graphql/global/endpoint.GQLschema` resulteert in de uitvoer van het schema met het inhoudstype: `text/x-graphql-schema;charset=iso-8859-1`.
 
@@ -229,7 +226,7 @@ Wanneer Inhoudsfragmenten zijn genest, kan een bovenliggend inhoudsfragmentmodel
 
 >[!NOTE]
 >
->De AEM UI verhindert dit gebeurt, maar als het publiceren programmatically, of met inhoudspakketten wordt gemaakt, kan het voorkomen.
+>De AEM gebruikersinterface verhindert dit te gebeuren, maar als het publiceren programmatically, of met inhoudspakketten wordt gemaakt, kan het voorkomen.
 
 Wanneer dit gebeurt, genereert AEM een *onvolledig* Schema voor het bovenliggende inhoudsfragmentmodel. Dit betekent dat de fragmentverwijzing, die afhankelijk is van het niet-gepubliceerde model, uit het schema wordt verwijderd.
 
@@ -241,11 +238,11 @@ Binnen het schema zijn er afzonderlijke velden, van twee basiscategorieën:
 
    Een selectie van [Gegevenstypen](#data-types) worden gebruikt om velden te maken die zijn gebaseerd op de manier waarop u het inhoudsfragmentmodel configureert. De veldnamen zijn afkomstig uit het **Eigenschapnaam** van het **Gegevenstype**.
 
-   * Er is ook **Renderen als** in aanmerking te nemen eigenschap, omdat gebruikers bepaalde gegevenstypen kunnen configureren; bijvoorbeeld als tekst met één regel of als een tekstveld met meerdere regels.
+   * Er is ook **Renderen als** het plaatsen om te overwegen, aangezien de gebruikers bepaalde gegevenstypes kunnen vormen. Een tekstveld met één regel kan bijvoorbeeld zo worden geconfigureerd dat het meerdere tekst met één regel bevat `multifield` in de vervolgkeuzelijst.
 
 * GraphQL for AEM genereert ook een aantal [helpervelden](#helper-fields).
 
-   Deze worden gebruikt om een inhoudsfragment te identificeren of om meer informatie over een inhoudsfragment te krijgen.
+   Deze velden worden gebruikt om een inhoudsfragment te identificeren of om meer informatie over een inhoudsfragment te krijgen.
 
 ### Gegevenstypen {#data-types}
 
@@ -253,8 +250,8 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 
 | Inhoudsfragmentmodel - Gegevenstype | GraphQL-type | Beschrijving |
 |--- |--- |--- |
-| Tekst met één regel | `String`, `[String]` |  Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs, locaties, enzovoort. |
-| Tekst met meerdere regels | `String` |  Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
+| Tekst met één regel | `String`, `[String]` |  Wordt gebruikt voor eenvoudige tekenreeksen, zoals namen van auteurs en locaties. |
+| Meerdere regels tekst | `String` |  Wordt gebruikt voor het uitvoeren van tekst, zoals de hoofdtekst van een artikel |
 | Getal |  `Float`, `[Float]` | Wordt gebruikt om het zwevende-kommagetal en de reguliere getallen weer te geven |
 | Boolean |  `Boolean` |  Gebruikt om selectievakjes weer te geven → eenvoudige true/false-instructies |
 | Datum en tijd | `Calendar` |  Wordt gebruikt om datum en tijd weer te geven in de ISO 8086-indeling. Afhankelijk van het geselecteerde type zijn er drie kleuren beschikbaar voor gebruik in AEM GraphQL: `onlyDate`, `onlyTime`, `dateTime` |
@@ -267,18 +264,20 @@ GraphQL for AEM ondersteunt een lijst met typen. Alle ondersteunde gegevenstypen
 
 ### Helpervelden {#helper-fields}
 
-Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL for AEM ook een aantal *helper* velden voor het herkennen van een inhoudsfragment of voor het verschaffen van aanvullende informatie over een inhoudsfragment.
+Naast de gegevenstypen voor door de gebruiker gegenereerde velden, genereert GraphQL for AEM ook verschillende *helper* velden voor het herkennen van een inhoudsfragment of voor aanvullende informatie over een inhoudsfragment.
+
+Deze [helpervelden](#helper-fields) zijn gemarkeerd met een voorgaande `_` om onderscheid te maken tussen wat door de gebruiker is gedefinieerd en wat automatisch is gegenereerd.
 
 #### Pad {#path}
 
-Het padveld wordt gebruikt als een identifier in GraphQL. Het vertegenwoordigt het pad van het Content Fragment-element in de AEM opslagplaats. Dit is de id van een inhoudsfragment, omdat dit:
+Het padveld wordt gebruikt als een identifier in AEM GraphQL. Het vertegenwoordigt het pad van het Content Fragment-element in de AEM opslagplaats. Dit pad wordt gekozen als de id van een inhoudsfragment, omdat het:
 
 * uniek is binnen AEM,
 * kan gemakkelijk worden opgehaald.
 
-De volgende code geeft de paden weer van alle inhoudsfragmenten die zijn gemaakt op basis van het model van het inhoudsfragment `Person`.
+Met de volgende code worden de paden weergegeven van alle inhoudsfragmenten die zijn gemaakt op basis van het model van het inhoudsfragment `Person`.
 
-```xml
+```graphql
 {
   personList {
     items {
@@ -288,11 +287,11 @@ De volgende code geeft de paden weer van alle inhoudsfragmenten die zijn gemaakt
 }
 ```
 
-Als u één inhoudsfragment van een bepaald type wilt ophalen, moet u ook eerst het pad bepalen. bijvoorbeeld:
+Als u één inhoudsfragment van een bepaald type wilt ophalen, moet u ook eerst het pad ervan bepalen. Bijvoorbeeld:
 
-```xml
+```graphql
 {
-  personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
+  authorByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
       _path
       firstName
@@ -306,9 +305,14 @@ Zie [Voorbeeldquery - één specifiek stedenfragment](/help/sites-developing/hea
 
 #### Metagegevens {#metadata}
 
-Via GraphQL worden AEM ook de metagegevens van een inhoudsfragment beschikbaar gemaakt. Metagegevens zijn de informatie die een inhoudsfragment beschrijft, zoals de titel van een inhoudsfragment, het miniatuurpad, de beschrijving van een inhoudsfragment en de datum waarop het is gemaakt.
+Via GraphQL worden AEM ook de metagegevens van een inhoudsfragment beschikbaar gemaakt. Metagegevens zijn de informatie die een inhoudsfragment beschrijft, zoals het volgende:
 
-Omdat metagegevens worden gegenereerd via de Schema-editor en als zodanig geen specifieke structuur hebben, `TypedMetaData` Het GraphQL-type is geïmplementeerd om de metagegevens van een inhoudsfragment beschikbaar te maken. `TypedMetaData` stelt de informatie bloot die door de volgende scalaire types wordt gegroepeerd:
+* de titel van een inhoudsfragment
+* het pad naar de miniatuur
+* de beschrijving van een inhoudsfragment
+* en de datum waarop het is gemaakt, onder andere.
+
+Omdat metagegevens worden gegenereerd via de Schema-editor en als zodanig geen specifieke structuur hebben, `TypedMetaData` Het GraphQL-type is geïmplementeerd om de metagegevens van een inhoudsfragment beschikbaar te maken. De `TypedMetaData` stelt de informatie bloot die door de volgende scalaire types wordt gegroepeerd:
 
 | Veld |
 |--- |
@@ -325,11 +329,11 @@ Omdat metagegevens worden gegenereerd via de Schema-editor en als zodanig geen s
 
 Elk scalair type vertegenwoordigt of één enkel naam-waarde paar of een serie van naam-waarde paren, waar de waarde van dat paar van het type is het werd gegroepeerd.
 
-Als u bijvoorbeeld de titel van een inhoudsfragment wilt ophalen, weten we dat deze eigenschap een String-eigenschap is, zodat we een query voor alle String-metagegevens uitvoeren:
+Als u bijvoorbeeld de titel van een inhoudsfragment wilt ophalen, is deze eigenschap een eigenschap String, zodat u een query voor alle metagegevens van tekenreeks kunt uitvoeren:
 
 Ga als volgt te werk om te zoeken naar metagegevens:
 
-```xml
+```graphql
 {
   personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
@@ -352,7 +356,7 @@ U kunt alle GraphQL-typen voor metagegevens weergeven als u het schema Gegeneree
 >**Verschil tussen normale metagegevens en arraymetagegevens**
 >Houd er rekening mee dat `StringMetadata` en `StringArrayMetadata` beide verwijzen naar wat in de bewaarplaats wordt opgeslagen, niet hoe u hen terugwint.
 >
->Bijvoorbeeld door de `stringMetadata` veld, ontvangt u een array van alle metagegevens die in de repository zijn opgeslagen als een `String` en als u `stringArrayMetadata` u ontvangt dan een array met alle metagegevens die in de repository zijn opgeslagen als `String[]`.
+>Bijvoorbeeld door `stringMetadata` veld, ontvangt u een array van alle metagegevens die in de repository zijn opgeslagen als een `String`. En als je `stringArrayMetadata`ontvangt u een array van alle metagegevens die in de opslagplaats zijn opgeslagen als `String[]`.
 
 Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidingen: GB](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-metadata-awards-gb).
 
@@ -360,7 +364,7 @@ Zie [Voorbeeldquery voor metagegevens - Lijst met metagegevens voor onderscheidi
 
 De `_variations` is geïmplementeerd om het opvragen van variaties in een inhoudsfragment te vereenvoudigen. Bijvoorbeeld:
 
-```xml
+```graphql
 {
   personByPath(_path: "/content/dam/path/to/fragment/john-doe") {
     item {
@@ -370,11 +374,15 @@ De `_variations` is geïmplementeerd om het opvragen van variaties in een inhoud
 }
 ```
 
+>[!NOTE]
+>
+>De `_variations` veld bevat geen `master` variatie, als technisch gezien de oorspronkelijke gegevens (als *Master* in de UI) wordt niet als een expliciete wijziging beschouwd.
+
 Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation).
 
 >[!NOTE]
 >
->Als de opgegeven variatie niet bestaat voor een inhoudsfragment, wordt de master variatie geretourneerd als standaard (fallback).
+>Als de opgegeven variatie niet bestaat voor een inhoudsfragment, worden de oorspronkelijke gegevens (ook wel de master variatie genoemd) geretourneerd als een standaardinstelling (fallback).
 
 <!--
 ## Security Considerations {#security-considerations}
@@ -382,13 +390,13 @@ Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/sites-develop
 
 ## GraphQL-variabelen {#graphql-variables}
 
-GraphQL staat toe dat variabelen in de query worden geplaatst. Voor meer informatie kunt u de [GraphQL-documentatie voor variabelen](https://graphql.org/learn/queries/#variables).
+GraphQL staat toe dat variabelen in de query worden geplaatst. Zie voor meer informatie [GraphQL-documentatie voor variabelen](https://graphql.org/learn/queries/#variables).
 
 Als u bijvoorbeeld alle inhoudsfragmenten van het type wilt ophalen `Article` die een specifieke variatie hebben, kunt u de variabele opgeven `variation` in GraphiQL.
 
 ![GraphQL-variabelen](assets/cfm-graphqlapi-03.png "GraphQL-variabelen")
 
-```xml
+```graphql
 ### query
 query GetArticlesByVariation($variation: String!) {
     articleList(variation: $variation) {
@@ -408,13 +416,13 @@ query GetArticlesByVariation($variation: String!) {
 
 ## GraphQL-richtlijnen {#graphql-directives}
 
-In GraphQL bestaat de mogelijkheid om de query te wijzigen op basis van variabelen, de zogenaamde GraphQL-richtlijnen.
+In GraphQL is er een mogelijkheid om de query te wijzigen op basis van variabelen, de zogenaamde GraphQL-richtlijnen.
 
 U kunt bijvoorbeeld de opdracht `adventurePrice` veld in een query voor alle `AdventureModels`, gebaseerd op een variabele `includePrice`.
 
 ![GraphQL-richtlijnen](assets/cfm-graphqlapi-04.png "GraphQL-richtlijnen")
 
-```xml
+```graphql
 ### query
 query GetAdventureByType($includePrice: Boolean!) {
   adventureList {
@@ -437,30 +445,89 @@ U kunt filteren ook gebruiken in uw GraphQL-query&#39;s om specifieke gegevens t
 
 Bij het filteren wordt een syntaxis gebruikt die is gebaseerd op logische operatoren en expressies.
 
-Met de volgende (basis)query worden bijvoorbeeld alle personen gefilterd die een naam hebben van `Jobs` of `Smith`:
+Het meest atomische deel bestaat uit één expressie die kan worden toegepast op de inhoud van een bepaald veld. De inhoud van het veld wordt vergeleken met een bepaalde constante waarde.
 
-```xml
-query {
-  personList(filter: {
-    name: {
+De volgende expressie zou bijvoorbeeld de inhoud van het veld vergelijken met de waarde `some text`en slagen als de inhoud gelijk is aan de waarde. Anders mislukt de expressie:
+
+```graphql
+{
+  value: "some text"
+  _op: EQUALS
+}
+```
+
+De volgende operatoren kunnen worden gebruikt om velden met een bepaalde waarde te vergelijken:
+
+| Operator | Typen | De expressie slaagt als ... |
+|--- |--- |--- |
+| `EQUALS` | `String`, `ID`, `Boolean` | ... de waarde is gelijk aan de inhoud van het veld |
+| `EQUALS_NOT` | `String`, `ID` | ... de waarde is *niet* gelijk aan de inhoud van het veld |
+| `CONTAINS` | `String` | ... de inhoud van het veld bevat de waarde (`{ value: "mas", _op: CONTAINS }` overeenkomsten `Christmas`, `Xmas`, `master`, ...) |
+| `CONTAINS_NOT` | `String` | ... de inhoud van het veld doet *niet* bevatten de waarde |
+| `STARTS_WITH` | `ID` | ... De id begint met een bepaalde waarde (`{ value: "/content/dam/", _op: STARTS_WITH` overeenkomsten `/content/dam/path/to/fragment`, maar niet `/namespace/content/dam/something` |
+| `EQUAL` | `Int`, `Float` | ... de waarde is gelijk aan de inhoud van het veld |
+| `UNEQUAL` | `Int`, `Float` | ... de waarde is *niet* gelijk aan de inhoud van het veld |
+| `GREATER` | `Int`, `Float` | ... de inhoud van het veld is groter dan de waarde |
+| `GREATER_EQUAL` | `Int`, `Float` | ... de inhoud van het veld groter is dan of gelijk is aan de waarde |
+| `LOWER` | `Int`, `Float` | ... de inhoud van het veld is lager dan de waarde |
+| `LOWER_EQUAL` | `Int`, `Float` | ... de inhoud van het veld is lager dan of gelijk aan de waarde |
+| `AT` | `Calendar`, `Date`, `Time` | ... de inhoud van het veld is gelijk aan de waarde (inclusief tijdzone-instelling) |
+| `NOT_AT` | `Calendar`, `Date`, `Time` | ... de inhoud van het veld is *niet* gelijk aan de waarde |
+| `BEFORE` | `Calendar`, `Date`, `Time` | ... het punt in de tijd dat door de waarde wordt aangegeven, zich vóór het punt in de tijd bevindt dat door de inhoud van het veld wordt aangegeven |
+| `AT_OR_BEFORE` | `Calendar`, `Date`, `Time` | ... het tijdpunt dat door de waarde wordt aangegeven, zich vóór of op hetzelfde tijdpunt bevindt dat door de inhoud van het veld wordt aangegeven |
+| `AFTER` | `Calendar`, `Date`, `Time` | ... het punt in de tijd dat door de waarde wordt aangegeven, na het punt in de tijd dat door de inhoud van het veld wordt aangegeven |
+| `AT_OR_AFTER` | `Calendar`, `Date`, `Time` | ... het tijdpunt dat door de waarde wordt aangegeven, na of op hetzelfde tijdpunt ligt dat door de inhoud van het veld wordt aangegeven |
+
+Bij sommige typen kunt u ook aanvullende opties opgeven die wijzigen hoe een expressie wordt geëvalueerd:
+
+| Optie | Typen | Beschrijving |
+|--- |--- |--- |
+| `_ignoreCase` | `String` | Negeert het geval van een tekenreeks, bijvoorbeeld een waarde van `time` overeenkomsten `TIME`, `time`, `tImE`, ... |
+| `_sensitiveness` | `Float` | Hiermee wordt een bepaalde marge toegestaan voor `float` als hetzelfde te beschouwen waarden (om technische beperkingen te omzeilen als gevolg van de interne representatie van `float` waarden; moet worden vermeden, aangezien deze optie een negatief effect kan hebben op de prestaties |
+
+Expressies kunnen met behulp van een logische operator worden gecombineerd tot een set (`_logOp`):
+
+* `OR` - de reeks expressies slaagt als ten minste één expressie slaagt
+* `AND` - de reeks expressies slaagt als alle expressies slagen (standaardwaarde)
+
+Elk veld kan met een eigen set expressies worden gefilterd. De expressiesets van alle velden die in het filterargument worden vermeld, worden uiteindelijk gecombineerd door de eigen logische operator.
+
+Een filterdefinitie (doorgegeven als de `filter` argument voor een query) bevat:
+
+* Een subdefinitie voor elk gebied (het gebied kan door zijn naam worden betreden, bijvoorbeeld, is er een `lastName` veld in het filter voor de `lastName` veld in het gegevenstype (veld)
+* Elke subdefinitie bevat de `_expressions` array, die de expressieset en de `_logOp` veld waarin de logische operator wordt gedefinieerd, moeten de expressies worden gecombineerd met
+* Elke expressie wordt gedefinieerd door de waarde (`value` veld) en de operator (`_operator` veld) de inhoud van een veld moet worden vergeleken met
+
+U kunt weglaten `_logOp` als je objecten wilt combineren met `AND` en `_operator` als u op gelijkheid wilt controleren, omdat deze waarden standaardwaarden zijn.
+
+Het volgende voorbeeld toont een volledige vraag aan die alle personen filtert die een `lastName` van `Provo` of die `sjö`onafhankelijk van de zaak:
+
+```graphql
+{
+  authorList(filter: {
+    lastname: {
       _logOp: OR
       _expressions: [
         {
-          value: "Jobs"
+          value: "sjö",
+          _operator: CONTAINS,
+          _ignoreCase: true
         },
         {
-          value: "Smith"
+          value: "Provo"
         }
       ]
     }
   }) {
     items {
-      name
+      lastName
       firstName
     }
   }
 }
 ```
+
+U kunt ook filteren op geneste velden, maar dit wordt afgeraden omdat dit tot prestatieproblemen kan leiden.
 
 Zie voor meer voorbeelden:
 
@@ -472,18 +539,183 @@ Zie voor meer voorbeelden:
 
 * [Voorbeeldquery&#39;s op basis van het WKND-project](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-queries-using-wknd-project)
 
+## Sorteren {#sorting}
+
+>[!NOTE]
+>
+>Houd voor de beste prestaties rekening met [Inhoudsfragmenten bijwerken voor pagineren en sorteren in GraphQL-filters](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+
+Met deze functie kunt u de queryresultaten sorteren op een opgegeven veld.
+
+De sorteercriteria:
+
+* is een door komma&#39;s gescheiden lijst met waarden die het veldpad aangeven
+   * het eerste veld in de lijst definieert de primaire sorteervolgorde
+      * het tweede veld wordt gebruikt als twee waarden van het primaire sorteercriterium gelijk zijn
+      * het derde veld wordt gebruikt als de eerste twee criteria gelijk zijn , enzovoort .
+   * puntnotatie, d.w.z. veld1.subveld.subveld, enzovoort..
+* met een optionele bestelrichting
+   * ASC (oplopend) of DESC (aflopend); als standaard-ASC wordt toegepast
+   * de richting kan per veld worden opgegeven; Dit betekent dat u één veld in oplopende volgorde kunt sorteren, een ander veld in aflopende volgorde (naam, voornaam DESC)
+
+Bijvoorbeeld:
+
+```graphql
+query {
+  authorList(sort: "lastName, firstName") {
+    items {
+      firstName
+      lastName
+    }
+  }
+}
+```
+
+En ook:
+
+```graphql
+{
+  authorList(sort: "lastName DESC, firstName DESC") {
+    items {
+        lastName
+        firstName
+    }
+  }
+}
+```
+
+U kunt ook sorteren op een veld in een genest fragment in de notatie `nestedFragmentname.fieldname`.
+
+>[!NOTE]
+>
+>Deze indeling kan negatieve gevolgen hebben voor de prestaties.
+
+Bijvoorbeeld:
+
+```graphql
+query {
+  articleList(sort: "authorFragment.lastName")  {
+    items {
+      title
+      authorFragment {
+        firstName
+        lastName
+        birthDay
+      }
+      slug
+    }
+  }
+}
+```
+
+## Paginering {#paging}
+
+>[!NOTE]
+>
+>Houd voor de beste prestaties rekening met [Inhoudsfragmenten bijwerken voor pagineren en sorteren in GraphQL-filters](/help/sites-developing/headless/graphql-api/graphql-optimized-filtering-content-update.md).
+
+Met deze functie kunt u pagineren uitvoeren op querytypen die een lijst retourneren. Er zijn twee methoden:
+
+* `offset` en `limit` in een `List` query
+* `first` en `after` in een `Paginated` query
+
+### Lijstquery - Verschuiven en beperken {#list-offset-limit}
+
+In een `...List`query die u kunt gebruiken `offset` en `limit` om een specifieke subset van resultaten te retourneren:
+
+* `offset`: Geeft de eerste gegevensset aan die moet worden geretourneerd
+* `limit`: Hiermee wordt het maximale aantal gegevenssets opgegeven dat moet worden geretourneerd
+
+Als u bijvoorbeeld de resultatenpagina wilt weergeven met maximaal vijf artikelen, te beginnen bij het vijfde artikel van het dialoogvenster *complete* resultatenlijst:
+
+```graphql
+query {
+   articleList(offset: 5, limit: 5) {
+    items {
+      authorFragment {
+        lastName
+        firstName
+      }
+    }
+  }
+}
+```
+
+<!-- When available link to BP and replace "JCR query level" with a more neutral term. -->
+
+<!-- When available link to BP and replace "JCR query result set" with a more neutral term. -->
+
+>[!NOTE]
+>
+>* De paginering vereist een stabiele soortorde om correct over veelvoudige vragen te werken die verschillende pagina&#39;s van de zelfde resultaatreeks vragen. Standaard wordt het pad naar de opslagplaats van elk item van de resultaatset gebruikt om ervoor te zorgen dat de volgorde altijd gelijk is. Als een verschillende sorteervolgorde wordt gebruikt en als die sortering niet kan worden uitgevoerd op JCR-queryniveau, heeft dat een negatief effect op de prestaties. De reden hiervoor is dat de volledige resultaatset in het geheugen moet worden geladen voordat de pagina&#39;s worden bepaald.
+>
+>* Hoe hoger de verschuiving, des te meer tijd neemt het om de items van de volledige set JCR-queryresultaten over te slaan. Een alternatieve oplossing voor grote resultaatreeksen is de gepagineerde vraag met te gebruiken `first` en `after` methode.
+
+
+### Gepagineerde query - eerste en volgende {#paginated-first-after}
+
+De `...Paginated` het vraagtype gebruikt het grootste deel van `...List` functies voor querytypen (filteren, sorteren), maar in plaats van `offset`/`limit` argumenten, gebruikt het de `first`/`after` argumenten zoals gedefinieerd door [de GraphQL Cursor Connections Specification](https://relay.dev/graphql/connections.htm). U vindt een minder formele introductie in het dialoogvenster [Inleiding GraphQL](https://graphql.org/learn/pagination/#pagination-and-edges).
+
+* `first`: De `n` eerste objecten die moeten worden geretourneerd.
+De standaardwaarde is `50`.
+Het maximum is `100`.
+* `after`: De cursor die het begin van de opgevraagde pagina bepaalt. Het punt dat door de curseur wordt vertegenwoordigd is niet inbegrepen in de resultaatreeks. De cursor van een item wordt bepaald door de `cursor` van het `edges` structuur.
+
+Voer bijvoorbeeld de resultatenpagina uit met maximaal vijf avonturen, te beginnen bij het opgegeven cursoritem in het dialoogvenster *complete* resultatenlijst:
+
+```graphql
+query {
+    adventurePaginated(first: 5, after: "ODg1MmMyMmEtZTAzMy00MTNjLThiMzMtZGQyMzY5ZTNjN2M1") {
+        edges {
+          cursor
+          node {
+            title
+          }
+        }
+        pageInfo {
+          endCursor
+          hasNextPage
+        }
+    }
+}
+```
+
+<!-- When available link to BP -->
+<!-- Due to internal technical constraints, performance will degrade if sorting and filtering is applied on nested fields. Therefore it is recommended to use filter/sort fields stored at root level. For more information, see the [Best Practices document](link). -->
+
+>[!NOTE]
+>
+>* Standaard wordt bij paginering de UUID gebruikt van het opslagplaats-knooppunt dat het fragment vertegenwoordigt voor de volgorde van de resultaten, om ervoor te zorgen dat de volgorde van de resultaten altijd gelijk is. Wanneer `sort` wordt gebruikt, wordt UUID impliciet gebruikt om een unieke soort te verzekeren; zelfs voor twee items met identieke sorteersleutels.
+>
+>* Als gevolg van interne technische beperkingen neemt de prestatie af als sortering en filtering worden toegepast op geneste velden. Gebruik daarom filter-/sorteervelden die op hoofdniveau zijn opgeslagen. Deze techniek is ook de geadviseerde manier als u grote gepagineerde resultaatreeksen wilt vragen.
+
+
 ## GraphQL for AEM - Overzicht van extensies {#graphql-extensions}
 
-De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspecificatie van GraphQL. Voor GraphQL-query&#39;s met AEM zijn er een paar extensies:
+De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspecificatie van GraphQL. Voor GraphQL-query&#39;s met AEM zijn er een aantal extensies:
 
 * Als u één resultaat nodig hebt:
-   * de modelnaam gebruiken; Bijvoorbeeld stad
+   * de modelnaam gebruiken; bijvoorbeeld stad
 
 * Als u een lijst met resultaten verwacht:
    * toevoegen `List` de modelnaam; bijvoorbeeld:  `cityList`
-   * Zie [Voorbeeldquery - Alle informatie over alle steden](#sample-all-information-all-cities)
+   * Zie [Voorbeeldquery - Alle informatie over alle steden](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
 
-* Het filter `includeVariations` is opgenomen in de `List` querytype.  Als u Variaties in inhoudsfragmenten wilt ophalen in de queryresultaten, voert u de opdracht `includeVariations` filter moet worden ingesteld op `true`.
+   U kunt dan:
+
+   * [De resultaten sorteren](#sorting)
+
+      * `ASC` : Oplopend
+      * `DESC` : Aflopend
+   * Retourneer een pagina met resultaten met:
+
+      * [Een lijstvraag met compensatie en grens](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#list-offset-limit)
+      * [Een gepagineerde query met eerste en volgende](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#paginated-first-after)
+   * Zie [Voorbeeldquery - Alle informatie over alle steden](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-all-information-all-cities)
+
+
+
+* Het filter `includeVariations` is opgenomen in de `List` querytype. Als u Variaties in inhoudsfragmenten wilt ophalen in de queryresultaten, kunt u de opdracht `includeVariations` filter moet worden ingesteld op `true`.
 
    >[!CAUTION]
    >Het filter `includeVariations` kan niet samen met het door het systeem gegenereerde veld worden gebruikt `_variation`.
@@ -521,7 +753,7 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
          >Het door het systeem gegenereerde veld `_variation` kan niet samen met het filter worden gebruikt `includeVariations`.
 
          * Zie [Voorbeeldquery - Alle steden met een benoemde variatie](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-cities-named-variation)
-      * `_tags` : om de id&#39;s weer te geven van inhoudsfragmenten of variaties die codes bevatten; this is an array of `cq:tags` id&#39;s.
+      * `_tags` : om de id&#39;s weer te geven van inhoudsfragmenten of variaties die codes bevatten; deze lijst is een array van `cq:tags` id&#39;s.
 
          * Zie [Voorbeeldquery - Namen van alle steden die zijn getagd als stadseinden](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-names-all-cities-tagged-city-breaks)
          * Zie [Voorbeeldquery voor inhoudfragmentvariaties van een bepaald model waaraan een specifieke tag is gekoppeld](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#sample-wknd-fragment-variations-given-model-specific-tag)
@@ -556,15 +788,15 @@ De basisverrichting van vragen met GraphQL voor AEM voldoet aan de standaardspec
 
 * Extra fallback bij het opvragen van geneste fragmenten:
 
-   * Als de gevraagde variatie niet bestaat in een genest fragment, wordt de **Master** variatie wordt geretourneerd.
+   * Als de gevraagde variatie niet bestaat in een genest fragment, wordt de **Master** variation is returned.
 
 ### CORS-filter {#cors-filter}
 
 >[!NOTE]
 >
->Voor een gedetailleerd overzicht van het beleid voor het delen van bronnen in AEM zie [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
+>Voor een gedetailleerd overzicht van het beleid van CORS voor het delen van bronnen in AEM, zie [Werken met het delen van bronnen tussen verschillende bronnen (CORS)](https://experienceleague.adobe.com/docs/experience-manager-learn/foundation/security/understand-cross-origin-resource-sharing.html#understand-cross-origin-resource-sharing-(cors)).
 
-Om tot het eindpunt van GraphQL toegang te hebben, moet een beleid CORS in de bewaarplaats van de Kit van de klant worden gevormd. Dit wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor het gewenste eindpunt (s) toe te voegen.
+Om tot het eindpunt van GraphQL toegang te hebben, vorm een beleid CORS in de bewaarplaats van de Kit van de klant. Deze configuratie wordt gedaan door een aangewezen OSGi CORS configuratiedossier voor één of meerdere gewenste eindpunten toe te voegen.
 
 Deze configuratie moet een vertrouwde website-oorsprong opgeven `alloworigin` of `alloworiginregexp` waarvoor toegang moet worden verleend.
 
@@ -607,9 +839,9 @@ Als u een ijdelingspad voor het eindpunt hebt gevormd, kunt u het binnen ook geb
 
 ### Refererfilter {#referrer-filter}
 
-Naast de configuratie CORS, moet een filter van de Referateur worden gevormd om toegang van derdeshosts toe te staan.
+Naast de configuratie CORS, moet een filter van de Referateur worden gevormd om toegang van derdegastheren toe te staan.
 
-Dit wordt gedaan door een aangewezen OSGi de configuratiedossier van de Filter toe te voegen dat:
+Dit filter wordt gedaan door een aangewezen OSGi de configuratiedossier van de Filter toe te voegen dat:
 
 * geeft een hostnaam voor een vertrouwde website aan; ofwel `allow.hosts` of `allow.hosts.regexp`,
 * verleent toegang voor deze gastheernaam.
@@ -643,15 +875,15 @@ Bijvoorbeeld om toegang voor verzoeken met de Referiteur te verlenen `my.domain`
 >Het blijft de verantwoordelijkheid van de klant om:
 >
 >* alleen toegang verlenen tot vertrouwde domeinen
->* ervoor zorgen geen gevoelige informatie wordt blootgesteld
->* geen jokerteken gebruiken [*] syntaxis; dit zal zowel voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar maken als het aan de volledige wereld blootstellen.
+>* ervoor zorgen dat geen gevoelige informatie wordt blootgesteld
+>* geen jokerteken gebruiken [*] syntaxis; deze functionaliteit maakt voor authentiek verklaarde toegang tot het eindpunt van GraphQL onbruikbaar en stelt het ook aan de volledige wereld bloot.
 
 
 >[!CAUTION]
 >
 >Alle GraphQL [schema&#39;s](#schema-generation) (afgeleid van Content Fragment Models die **Ingeschakeld**) zijn leesbaar via het GraphQL-eindpunt.
 >
->Dit betekent dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, aangezien deze op deze manier kunnen worden gelekt; Dit omvat bijvoorbeeld informatie die als veldnamen in de modeldefinitie aanwezig kan zijn.
+>Deze functionaliteit houdt in dat u ervoor moet zorgen dat er geen gevoelige gegevens beschikbaar zijn, omdat deze op deze manier kunnen worden gelekt. Het bevat bijvoorbeeld informatie die als veldnamen aanwezig kan zijn in de modeldefinitie.
 
 ## Verificatie {#authentication}
 
@@ -664,8 +896,8 @@ De gerezen vragen:
 1. **Q**: &quot;*Hoe verschilt de GraphQL API voor AEM van de Query Builder-API?*&quot;
 
    * **A**: &quot;*De AEM GraphQL API biedt volledige controle op de JSON-uitvoer en is een industriestandaard voor het opvragen van inhoud.
-AEM is van plan om in de AEM GraphQL API te investeren.*&quot;
+In de toekomst is AEM van plan te investeren in de AEM GraphQL API.*&quot;
 
 ## Zelfstudie - Aan de slag met AEM Headless en GraphQL {#tutorial}
 
-Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM Headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met de GraphQL-API&#39;s van AEM en die door een externe toepassing wordt verbruikt.
+Op zoek naar een praktische zelfstudie? Uitchecken [Aan de slag met AEM Headless en GraphQL](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) end-to-end zelfstudie waarin wordt geïllustreerd hoe u in een CMS-scenario inhoud kunt ontwikkelen en beschikbaar maken met behulp van AEM GraphQL API&#39;s en die door een externe toepassing wordt verbruikt.

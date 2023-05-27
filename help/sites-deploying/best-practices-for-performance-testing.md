@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 669018a0-f6ef-42b2-9c6f-83d7dd5a7095
 exl-id: fcac75e1-15c1-4a37-8d43-93c95267b903
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 18f843ed3ffb719d168b67826baaffd926ffd2dd
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 0%
@@ -60,7 +60,7 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 
 * **Runner laden** is een belastingstestproduct voor bedrijven. Er is een gratis evaluatieversie beschikbaar. Meer informatie vindt u op [https://www.microfocus.com/en-us/portfolio/performance-engineering/overview](https://www.microfocus.com/en-us/portfolio/performance-engineering/overview)
 
-* Testprogramma&#39;s voor het laden van websites, zoals [Neustar](https://neustarsecurityservices.com/web-performance-management) kan ook worden gebruikt.
+* Testprogramma&#39;s voor het laden van websites, zoals [Vercara](https://vercara.com/website-performance-management) kan ook worden gebruikt.
 * Bij het testen van mobiele of responsieve websites moet een aparte set gereedschappen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Tot de meer gebruikte gereedschappen behoren onder meer:
 
    * **[Netwerkkoppelingsvoorwaarde](https://nshipster.com/network-link-conditioner/)** - het verstrekt gemakkelijk om UI te gebruiken en werkt op vrij laag niveau op de voorzien van een netwerkstapel. Dit omvat versies voor OS X en iOS;

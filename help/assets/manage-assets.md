@@ -7,10 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
 workflow-type: tm+mt
-source-wordcount: '9733'
-ht-degree: 3%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -402,6 +402,9 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
    ![Tijdkiezer op de datum of gebruik de toetsenbordtoetsen in het veld Op tijd om datum en tijd voor activering van het element toe te voegen](assets/datepicker.png)
 
    *Afbeelding: Gebruik de datumkiezer om activering van middelen te plannen.*
+
+1. U moet controleren **[!UICONTROL On/Off Time Reached]** als u de replicatieagent-triggers wilt bijwerken in de eigenschappen van metagegevens.
+   ![Instellingen agent](assets-dm/Agent-settings.png)
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast de **[!UICONTROL Off Time]** veld. De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time], een actief en de uitleveringen ervan niet beschikbaar via de [!DNL Assets] webinterface of via de HTTP-API.
 

@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
+source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
 workflow-type: tm+mt
-source-wordcount: '1865'
+source-wordcount: '1913'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren
 * SOAP-webservices
 * OData-diensten
 
-De integratie van gegevens steunt OAuth2.0, Basisauthentificatie, en API Zeer belangrijke authentificatietypes out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op ZEEP-Gebaseerde, en de diensten OData in de Diensten van de Wolk van AEM worden gevormd, JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel worden gevormd in AEM Webconsole.
+Gegevensintegratie ondersteunt OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, en API Key authentication types out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op ZEEP-Gebaseerde, en de diensten OData in de Diensten van de Wolk van AEM worden gevormd, JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel worden gevormd in AEM Webconsole.
 
 ## Relationele database configureren {#configure-relational-database}
 
@@ -132,7 +132,7 @@ Doe het volgende de diensten RESTful vormen:
       * Host: De domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
       * Basispad: Het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
          Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
-   * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, Sleutel API, Douane Authentificatie, of Wederzijdse Authentificatie — om tot de RESTful dienst toegang te hebben, en dienovereenkomstig details voor authentificatie te verstrekken.
+   * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, Custom Authentication, of Mutual Authentication, om toegang te krijgen tot de RESTful-service en dienovereenkomstig gegevens te verstrekken voor verificatie.
 
    Als u **[!UICONTROL API Key]** Geef als verificatietype de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in het menu **[!UICONTROL Location]** vervolgkeuzelijst en geef de naam van de header of de parameter query op in de **[!UICONTROL Parameter Name]** veld dienovereenkomstig.
 
@@ -174,7 +174,7 @@ SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)
 
    * WSDL-URL voor de webservice.
    * Service Endpoint. Specificeer een waarde op dit gebied om het de diensteindpunt met voeten te treden dat in WSDL wordt vermeld.
-   * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, de Authentificatie van de Douane, Symbolische X509, of Wederzijdse Authentificatie — om tot de dienst van de ZEEP toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basisverificatie, Aangepaste verificatie, Token X509 of Wederzijdse verificatie — voor toegang tot de SOAP-service en dienovereenkomstig de gegevens voor verificatie opgeven.
 
       Als u **[!UICONTROL X509 Token]** Als het type van Authentificatie, vorm het X509- certificaat. Zie voor meer informatie [Certificaten instellen](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Geef de alias KeyStore voor het X509-certificaat op in het dialoogvenster **[!UICONTROL Key Alias]** veld. Geef de tijd in seconden op totdat de verificatieaanvraag geldig blijft in het dialoogvenster **[!UICONTROL Time To Live]** veld. Selecteer desgewenst om de berichttekst, de tijdstempelkop of beide te ondertekenen.
@@ -200,7 +200,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een 
 1. Specificeer de volgende details voor de dienst OData:
 
    * Service Root URL voor de OData-service die moet worden geconfigureerd.
-   * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, of de Authentificatie van de Douane — om tot de dienst toegang te hebben OData, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basisverificatie of Aangepaste verificatie — toegang tot de OData-service en dienovereenkomstig de gegevens voor verificatie te verstrekken.
 
    >[!NOTE]
    >

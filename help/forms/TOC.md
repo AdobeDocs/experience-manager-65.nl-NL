@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Handleiding voor formulieren
 breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
-source-git-commit: 071d7bf2e7c9ceb3328e77262cc45ed3f2e303cc
+source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
 workflow-type: tm+mt
-source-wordcount: '3846'
+source-wordcount: '3860'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,7 @@ ht-degree: 0%
    + [Inleiding tot AEM Forms Data Integration](using/data-integration.md)
    + [Gegevensbronnen configureren](using/configure-data-sources.md)
    + [Configuratie Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
+   + [Salesforce-integratie met behulp van OAuth 2.0-clientaanmeldingsgegevens](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Formuliergegevensmodel maken](using/create-form-data-models.md)
    + [Werken met formuliergegevensmodel](using/work-with-form-data-model.md)
    + [Formuliergegevensmodel gebruiken](using/using-form-data-model.md)
@@ -690,6 +691,7 @@ ht-degree: 0%
    + [Kan CRX Repository niet herstellen](/help/forms/using/restore-crx-repository.md)
    + [Service niet-beschikbare fouten na installatie van AEM servicepack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Probleem met installatie van AEM Forms JEE 6.5.15.0-servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
+   + [EAR-implementatie mislukt op JEE WebLogic-server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)

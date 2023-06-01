@@ -2,9 +2,9 @@
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatieinstructies voor OSGi- en JEE-omgeving
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 01bf12ec46966ab2c78e2e825840230ea1bd3395
+source-git-commit: 57ead48ba3211075ae4b85801ba8cf6394582a9d
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 | Product | Adobe Experience Manager 6.5 Forms |
 |---|---|
-| Versie | 6.5.16.0 |
+| Versie | 6.5.17.0 |
 | Type | Service Pack-release |
-| Datum | 2 maart 2023 |
+| Datum | 1 juni 2023 |
 | URL downloaden | [Laatste AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -240,4 +240,4 @@ Er zijn twee verschillende methoden die u automatisch kunt installeren [!DNL Exp
 
 * Controleer de monitorlogboeken (error.log) zodra de installatie voor om het even welke activiteit volledig is. Wacht een paar minuten totdat er geen activiteit in de logboeken voorkomt. Start de AEM opnieuw.
 
-* Als u een **service-niet-beschikbare fout** na installatie van het AEM Forms 6.5.15.0-servicepakket, [het serverfragment en de bundel installeren](/help/forms/using/aem-service-pack-installation-solution.md) om de fout te herstellen.
+* Als u een **service-niet-beschikbare fout** na installatie van het servicepakket AEM Forms 6.5.15.0 of hoger, [het serverfragment en de bundel installeren](/help/forms/using/aem-service-pack-installation-solution.md) om de fout te herstellen.

@@ -6,7 +6,7 @@ role: User
 feature: Asset Management
 exl-id: 21d3e0bd-5955-470a-8ca2-4d995c17eb4c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: d6587ef59332d6b4d419c7d7b6e29930f366d171
 workflow-type: tm+mt
 source-wordcount: '5033'
 ht-degree: 7%
@@ -524,9 +524,9 @@ Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepas
    >
    >Het kan lang duren voordat foutberichten of foutberichten definitief worden opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
-   >    * Configuratie Apache Sling-taakwachtrij
-   >    * Adobe Granite-workflow - Externe verwerking van taken
-   >    * Tijdelijke wachtrij voor Granite Workflow
+   >* Configuratie Apache Sling-taakwachtrij
+   >* Adobe Granite-workflow - Externe verwerking van taken
+   >* Tijdelijke wachtrij voor Granite Workflow
 
    >
    >U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
@@ -557,13 +557,10 @@ Wanneer u een nieuwe video uploadt naar een map waarop videocodering is toegepas
    >
    >Het kan lang duren voordat het foutbericht eindelijk is opgenomen omdat er meerdere workflowconfiguraties zijn **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** van [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr), bijvoorbeeld:
    >
-   >
-   >
-   >    * Configuratie Apache Sling-taakwachtrij
-   >    * Adobe Granite-workflow - Externe verwerking van taken
-   >    * Tijdelijke wachtrij voor Granite Workflow
+   >* Configuratie Apache Sling-taakwachtrij
+   >* Adobe Granite-workflow - Externe verwerking van taken
+   >* Tijdelijke wachtrij voor Granite Workflow
 
-   >
    >
    >U kunt de **[!UICONTROL retries]**, **[!UICONTROL retry delay]**, en **[!UICONTROL timeout]** eigenschappen in deze configuraties.
 

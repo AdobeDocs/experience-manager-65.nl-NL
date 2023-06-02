@@ -2,9 +2,9 @@
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatieinstructies voor OSGi- en JEE-omgeving
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 57ead48ba3211075ae4b85801ba8cf6394582a9d
+source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
 workflow-type: tm+mt
-source-wordcount: '1704'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) Forms Service Pack bevat nieuwe en verbeterde fun
 
 >[!NOTE]
 >
-> Adobe geeft elk 6e servicepakket een volledig installatieprogramma uit. AEM 6.5 Forms Service Pack 12 (6.5.12.0) op JEE was de laatste volledige installateur. Het volledige installatieprogramma biedt ondersteuning voor nieuwe platforms, terwijl het installatieprogramma voor het gewone servicepack nieuwe functies bevat, oplossingen voor problemen en algemene verbeteringen. Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software voor uw AEM 6.5 Forms in JEE-omgeving te gebruiken, raadt Adobe aan AEM 6.5.12.0 Forms op het volledige installatieprogramma van JEE te gebruiken dat op 3 maart 2022 wordt uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 wordt uitgebracht. Installeer na gebruik van het volledige installatieprogramma het nieuwste servicepakket.
+> Adobe geeft een volledig installatieprogramma elke zesde service pack uit. AEM 6.5 Forms Service Pack 12 (6.5.12.0) op JEE was de laatste volledige installateur. Het volledige installatieprogramma biedt ondersteuning voor nieuwe platforms, terwijl het installatieprogramma voor het gewone servicepack nieuwe functies bevat, oplossingen voor problemen en algemene verbeteringen. Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software voor uw AEM 6.5 Forms in JEE-omgeving te gebruiken, raadt Adobe aan AEM 6.5.12.0 Forms op het volledige installatieprogramma van JEE te gebruiken dat op 3 maart 2022 wordt uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 wordt uitgebracht. Installeer na gebruik van het volledige installatieprogramma het nieuwste servicepakket.
 
 ## Download en installeer Service Pack op een AEM FormOn JEE-omgeving {#download-and-install-for-jee-service-pack}
 
@@ -112,11 +112,11 @@ Navigeer naar de juiste map en van een shell en type
 
 +++
 
-+++4. Het serverfragment installeren
++++4. Installeer het serverfragment (AEM Service Pack 6.5.14.0 of eerder)
 
 >[!NOTE]
 >
-> * Voor het geval dat u een upgrade uitvoert van **AEM Service Pack 6.5.15.0**, is het niet nodig de **servlet-fragment**. Als u een upgrade uitvoert vanaf een eerdere versie dan **AEM Service Pack 6.5.15.0** is het verplicht de **servlet-fragment**.
+> * Als u een upgrade uitvoert van **AEM Service Pack 6.5.15.0**, de installatie van de **servlet-fragment** is niet vereist. Voor versies **AEM Service Pack 6.5.14.0** of eerder is het verplicht het servletfragment te installeren.
 > * Het is verplicht de **servlet-fragment** voor alle toepassingsservers behalve de servers die worden uitgevoerd **JBoss® EAP 7.4.0**.
 
 

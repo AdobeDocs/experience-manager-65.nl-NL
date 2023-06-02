@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2391eb74979b7ee9ed148763ffebf125ef09fc88
+source-git-commit: a54d75ba653f469495203fa4643dbd78dbd7c38f
 workflow-type: tm+mt
-source-wordcount: '3464'
+source-wordcount: '3488'
 ht-degree: 0%
 
 ---
@@ -52,9 +52,9 @@ Enkele belangrijke functies en verbeteringen in deze release zijn:
 * **Integratie van Adaptive Forms op AEM sitepagina&#39;s**: U kunt naadloos digitale inschrijvingservaringen creëren door gebruik te maken van Adaptieve Forms-componenten in de AEM Sites-editor met: - Adaptieve Forms-container en Adaptive Forms - Embed(v2)-componenten.
 * **Ondersteuning voor reCAPTCHA Enterprise in AEM Forms**: Extra ondersteuning voor reCAPTCHA Enterprise in AEM Forms, die een betere bescherming biedt tegen frauduleuze activiteiten en spam, in aanvulling op de bestaande Google reCAPTCHA v2-ondersteuning.
 * **Steun aan Adobe Acrobat Sign voor de regering met AEM Forms**: Een veilige en compatibele integratie van AEM Forms met Adobe Sign for Government (FedRAMP-compatibel) toestaan.
-* **Integratie van Salesforce met AEM Forms inschakelen voor gegevensuitwisseling**: OAuth 2.0 de cliëntgeloofsbrieven stromen voor veilige en directe toepassingsauthentificatie en vergunning in toepassing Salesforce om naadloze communicatie tussen toepassingen zonder gebruikersbetrokkenheid toe te laten.
-* **Optimalisatie en verbeterde functionaliteit van de Workflow Engine**: Het minimaliseren van het aantal werkstroominstanties verhoogt de prestaties van de werkstroomengines. Naast `COMPLETED` en `RUNNING` statuswaarden, de workflow ondersteunt ook drie nieuwe statuswaarden: `ABORTED`, `SUSPENDED`, en `FAILED`.
-* De ZPL-uitvoerindeling ondersteunt verschillende papierformaten, zoals letter, A4 en A5.
+* **Integratie van Salesforce met AEM Forms inschakelen voor gegevensuitwisseling**: Vorm de integratie tussen AEM vormen en de toepassing Salesforce gebruikend de OAuth 2.0 stroom van cliëntgeloofsbrieven. Dit maakt veilige en directe verificatie en autorisatie van de toepassing mogelijk en maakt naadloze communicatie mogelijk zonder betrokkenheid van de gebruiker.
+* **Optimalisatie en verbeterde functionaliteit van de workflow-engine**: Verhoog de prestaties van de workflowengines door het aantal workflowinstanties te minimaliseren. Naast `COMPLETED` en `RUNNING` statuswaarden, de workflow ondersteunt ook drie nieuwe statuswaarden: `ABORTED`, `SUSPENDED`, en `FAILED`.
+* **Ondersteuning voor papierformaten voor ZPL-uitvoer**: In AEM Forms Designer genereert XMLFM ZPL-uitvoer met verschillende papierformaten, zoals letter, A4 en A5, voor XDP-sjablonen.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 

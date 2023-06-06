@@ -7,9 +7,9 @@ role: User, Admin, Architect
 feature: Asset Management,Multi Site Manager
 exl-id: 4d0367c4-88aa-4aef-b23d-828609b0df09
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 56632bd6ce9fc90f0bc61f903f84f7ea8bbcd12d
 workflow-type: tm+mt
-source-wordcount: '3280'
+source-wordcount: '3179'
 ht-degree: 10%
 
 ---
@@ -287,22 +287,6 @@ Als u meerdere elementen in een live-kopieermap hebt, kan het lastig zijn om act
    ![U kunt gemakkelijk veel elementen in mappen met live kopieën bijwerken vanuit de overzichtsconsole van Live Copy](assets/livecopyconsole_update_many_assets.png)
 
    *Afbeelding: U kunt gemakkelijk veel elementen in mappen met live kopieën bijwerken vanuit de [!UICONTROL Live Copy Overview] console.*
-
-## MSM uitbreiden voor [!DNL Assets] {#extend-api}
-
-[!DNL Experience Manager] Hiermee kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor [!DNL Assets], werkt het uitbreiden enkel het zelfde als het met MSM voor werkt [!DNL Sites]. Zie voor meer informatie [Het MSM uitbreiden](/help/sites-developing/extending-msm.md) en het volgende voor informatie over specifieke taken:
-
-* [Overzicht van API&#39;s](/help/sites-developing/extending-msm.md#overview-of-the-java-api)
-* [Een synchronisatiehandeling maken](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)
-* [Een rollout-configuratie maken](/help/sites-developing/extending-msm.md#creating-a-new-rollout-configuration)
-* [Een eenvoudige klasse LiveActionFactory maken en gebruiken](/help/sites-developing/extending-msm.md#creating-and-using-a-simple-liveactionfactory-class)
-
->[!NOTE]
->
->* Blauwdruk in MSM voor [!DNL Sites] wordt Live Copy-bron genoemd in MSM voor [!DNL Assets].
->* Het verwijderen van de hoofdstukstap in de wizard voor het maken van sites wordt niet ondersteund in MSM for [!DNL Assets].
->* Het vormen MSM sloten, op de pagina-eigenschappen (Touch-enabled UI), wordt niet gesteund in MSM voor [!DNL Assets].
-
 
 ## Effect van taken inzake middelenbeheer op levende kopieën {#manage-assets}
 

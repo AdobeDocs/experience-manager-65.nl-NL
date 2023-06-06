@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 206242583fcbf651dbc6234dc01be5140d0cfca7
+source-git-commit: 46e76c36db3396a013c8610b62f5cff9f1ea14d9
 workflow-type: tm+mt
-source-wordcount: '3526'
+source-wordcount: '3537'
 ht-degree: 0%
 
 ---
@@ -394,6 +394,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
    ```
 
 * Op JBoss® 7.1.4-platform, wanneer de gebruiker AEM 6.5.16.0 of hoger servicepack installeert, `adobe-livecycle-jboss.ear` implementatie mislukt.
+* JDK-versie hoger dan 1.8.0_281 wordt niet ondersteund voor WebLogic JEE-server.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 9bf19cd21db185229d565d684dbac9e44f236532
+source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
 workflow-type: tm+mt
-source-wordcount: '3574'
+source-wordcount: '3555'
 ht-degree: 0%
 
 ---
@@ -104,9 +104,8 @@ Enkele belangrijke functies en verbeteringen in deze release zijn:
 
 ## [!DNL Forms]{#forms-6517}
 
-* Wanneer een gebruiker aan Experience Manager 6.5.16.0 Service Pack upgradet, wordt het bijgevoegde dossier niet behoorlijk teruggewonnen. (FORMS-8906)
-* Na het bijwerken naar Experience Manager 6.5.15.0 Service Pack, werken de HTML5-formulieren niet of worden ze niet goed geladen in de Edge-browser met IE-compatibiliteitsmodus. (FORMS-8526, FORMS-8523)
-* Wanneer een gebruiker Experience Manager 6.5.16.0 Service Pack toepast, ontbreekt de regelredacteur om te openen. (FORMS-8290)
+* Na het bijwerken naar AEM 6.5.15.0 Service Pack, werken de HTML5-formulieren niet of worden ze niet correct geladen in de Edge-browser met de IE-compatibiliteitsmodus. (FORMS-8526, FORMS-8523)
+* Wanneer een gebruiker AEM 6.5.16.0 Service Pack toepast, ontbreekt de regelredacteur om te openen. (FORMS-8290)
 * Wanneer het maximale aantal cijfers voor validatie wordt toegepast op een component Numeriek vak, mislukt dit. (FORMS-7938)
 * Tijdens het creëren van interactieve communicatie verklaringen, wordt de grafiekcomponent in de PDF niet behoorlijk geproduceerd. (FORMS-7827, FORMS-8297)
 * Java™ garbage collection is unable to clear old gen heap on an Experience Manager Forms OSGi server. (FORMS-8207)

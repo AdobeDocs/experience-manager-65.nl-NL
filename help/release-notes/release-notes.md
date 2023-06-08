@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 2c9337af99811d7b58712e1d0def7b5af5661c11
+source-git-commit: 36edc2507d9acd7d5f94e433a654ccc1647bb58a
 workflow-type: tm+mt
-source-wordcount: '3555'
+source-wordcount: '3556'
 ht-degree: 0%
 
 ---
@@ -187,7 +187,7 @@ Nieuwe mappen van `cache` en `diff-cache` automatisch worden gemaakt en er is ge
 * Er worden geen taalkopieën van een pagina bijgewerkt zoals u had verwacht. (SITES-11191)
 * Aanroep van niet-campagnepagina&#39;s openen `targeteditor.html` onnodig. Verwijder de `targeteditor` vraag wanneer niet nodig. (SITES-12469)
 * Er kunnen geen actieve kopieën worden gemaakt voor pagina&#39;s met annotaties. (SITES-12154)
-* De rollout van pagina&#39;s werkt aan Experience Manager 6.5.16. (SITES-12008)
+* De rollout van pagina&#39;s werkt niet aan Experience Manager 6.5.16. (SITES-12008)
 * Onvoldoende geheugen; hoge opruimactiviteit door `NotificationManagerImpl`. `NotificationManager` bundelupgrade naar Experience Manager 6.5. (SITES-11440)
 * Vaste WCM IT tests die de dienstverpakking blokkeerden 17. (SITES-13089)
 * Het ophalen van verwijzingen naar sites mislukt op servlet. (SITES-10901)

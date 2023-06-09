@@ -7,10 +7,10 @@ feature: Asset Management,Search
 mini-toc-levels: 4
 exl-id: 158607e6-b4e9-4a3f-b023-4023d60c97d2
 hide: true
-source-git-commit: 7bfa9a9e143f199c42161b92dcba66ae441ad1fb
+source-git-commit: 0afd721ff02f2c9abeed40c4b8f4fdf169523c35
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '9827'
+ht-degree: 2%
 
 ---
 
@@ -33,7 +33,6 @@ Bij het organiseren van een verzameling elementen, bijvoorbeeld alle `Nature` af
 >
 >* Een [!DNL Assets] map met het type `sling:OrderedFolder` wordt niet ondersteund bij delen naar Experience Cloud. Als u een map wilt delen, selecteert u [!UICONTROL Ordered] wanneer u een map maakt.
 >* [!DNL Experience Manager] staat het gebruik van `subassets` woord als de naam van een map. Het is een sleutelwoord dat voor een knoop wordt gereserveerd die subassets voor samengestelde activa bevat.
-
 
 1. Navigeer naar de plaats in de map met digitale elementen waar u een map wilt maken. Klik in het menu op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
 1. In de **[!UICONTROL Title]** veld, geef een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
@@ -58,6 +57,12 @@ U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bes
 >[!NOTE]
 >
 >In de modus Dynamic Media - Scene7 is de standaardbestandsgrootte voor het uploaden van middelen 2 GB of minder. Als u het uploaden van middelen groter dan 2 GB tot 15 GB wilt configureren, raadpleegt u [(Optioneel) Configureer de Dynamic Media-Scene7-modus voor het uploaden van middelen groter dan 2 GB](/help/assets/config-dms7.md#optional-config-dms7-assets-larger-than-2gb).
+
+>[!IMPORTANT]
+>
+>Elementen die u uploadt naar een Experience Manager met een bestandsnaam die groter is dan 100 tekens, krijgen een kortere naam wanneer ze worden gebruikt in Dynamic Media.
+>
+>De eerste 100 tekens in de bestandsnaam worden ongewijzigd gebruikt. eventuele resterende tekens worden vervangen door een alfanumerieke tekenreeks. Deze methode voor het wijzigen van de naam garandeert een unieke naam wanneer het element in Dynamic Media wordt gebruikt. Het is ook bedoeld om rekening te houden met de maximale lengte voor elementbestanden die in Dynamic Media is toegestaan.
 
 U kunt ervoor kiezen elementen te uploaden naar mappen waaraan al dan niet een verwerkingsprofiel is toegewezen.
 
@@ -104,7 +109,6 @@ Ga naar om de opschoningstaak voor de onvoltooide taken voor het uploaden naar `
 >* Om ervoor te zorgen dat het uploaden van brokken is ingeschakeld voor bestanden met grootten die tijdens het uploaden waarschijnlijk resulteren in een vervaldatum van de referentie.
 >
 >* Om ervoor te zorgen dat elk segment eindigt alvorens de referentie verloopt.
-
 
 Als u een element uploadt met dezelfde naam als een element dat al beschikbaar is op de locatie waar u het element uploadt, wordt een waarschuwingsvenster weergegeven.
 
@@ -198,22 +202,22 @@ Als u een uploadtaak die wordt uitgevoerd wilt annuleren, klikt u op **[!UICONTR
 
 | Uploaden, optie | Suboption | Beschrijving |
 |---|---|---|
-| Taaknaam |  | De standaardnaam die vooraf in het tekstveld is ingevuld, bevat het door de gebruiker ingevoerde gedeelte van de naam en de datum- en tijdstempel. U kunt de standaardnaam gebruiken of een naam invoeren van uw eigen ontwerp voor deze uploadtaak. <br>De baan en andere upload en het publiceren banen worden geregistreerd op de pagina van Banen, waar u de status van banen kunt controleren. |
-| Publiceren na uploaden |  | Hiermee publiceert u automatisch de elementen die u uploadt. |
-| Overschrijven in een willekeurige map, dezelfde naam van basiselement, ongeacht de extensie |  | Selecteer deze optie als u wilt dat de bestanden die u uploadt, bestaande bestanden met dezelfde naam vervangen. De naam van deze optie kan verschillen, afhankelijk van de instellingen in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
-| ZIP- of Tar-bestanden bij uploaden decomprimeren |  |  |
-| Taakopties |  | Klikken **[!UICONTROL Job Options]** zodat u de [!UICONTROL Upload Job Options] en kiest u opties die van invloed zijn op de volledige uploadtaak. Deze opties zijn hetzelfde voor alle bestandstypen.<br>U kunt standaardopties kiezen voor het uploaden van bestanden die beginnen op de pagina Algemene instellingen van toepassing. Kies **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Selecteer **[!UICONTROL Default Upload Options]** om de [!UICONTROL Upload Job Options] in. |
-|  | Wanneer | Selecteer Eenmalig of Herhalend. Als u een terugkerende taak wilt instellen, kiest u de optie Herhalen (Dagelijks, Wekelijks, Maandelijks of Aangepast) om op te geven wanneer de FTP-uploadtaak moet worden herhaald. Geef vervolgens de gewenste planningsopties op. |
-|  | Inclusief submappen | Upload alle submappen in de map die u wilt uploaden. De namen van de map en de submappen die u uploadt, worden automatisch ingevoerd in [!DNL Experience Manager Assets]. |
-|  | Opties voor uitsnijden | Als u handmatig wilt uitsnijden aan weerszijden van een afbeelding, selecteert u het menu Uitsnijden en kiest u Handmatig. Voer vervolgens het aantal pixels in dat u aan elke zijde van de afbeelding wilt uitsnijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand. Als de afbeelding bijvoorbeeld 150 ppi weergeeft en u 75 invoert in de tekstvakken Boven, Rechts, Onder en Links, wordt aan beide zijden een halve inch bijgesneden.<br> Als u pixels in witruimte automatisch wilt uitsnijden in een afbeelding, opent u het menu Uitsnijden, kiest u Handmatig en voert u pixelmetingen in in de velden Boven, Rechts, Onder en Links om van de zijkanten bij te snijden. U kunt ook Bijsnijden kiezen in het menu Uitsnijden en de volgende opties kiezen:<br> **Wegsnijden op basis van** <ul><li>**Kleur** - Kies de optie Kleur. Selecteer vervolgens het menu Hoek en kies de hoek van de afbeelding met de kleur die het beste overeenkomt met de kleur voor de witruimte die u wilt uitsnijden.</li><li>**Transparantie** - Kies de optie Transparantie.<br> **Tolerantie** - Sleep de schuifregelaar om een tolerantie tussen 0 en 1 op te geven. Geef voor bijsnijden op basis van kleur 0 op om alleen pixels bij te snijden als deze exact overeenkomen met de kleur die u in de hoek van de afbeelding hebt geselecteerd. De aantallen dichter aan 1 staan voor meer kleurenverschil toe.<br>Voor het bijsnijden op basis van transparantie geeft u 0 op om alleen pixels bij te snijden als deze transparant zijn. De aantallen dichter aan 1 staan voor meer transparantie toe.</li></ul><br>Deze opties voor uitsnijden zijn niet-destructief. |
-|  | Opties voor kleurprofiel | Kies een kleurconversie wanneer u geoptimaliseerde bestanden maakt die worden gebruikt voor levering:<ul><li>Standaardkleurbehoud: De kleuren van de bronafbeelding blijven behouden wanneer de afbeeldingen kleurruimte-informatie bevatten. er is geen kleurconversie. In bijna alle afbeeldingen van vandaag is het juiste kleurprofiel al ingesloten. Als een CMYK-bronafbeelding echter geen ingesloten kleurprofiel bevat, worden de kleuren omgezet in de kleurruimte sRGB (standaard rood-groen-blauw). sRGB is de aanbevolen kleurruimte voor het weergeven van afbeeldingen op webpagina&#39;s.</li><li>Oorspronkelijke kleurruimte behouden: Behoudt de oorspronkelijke kleuren zonder kleurconversie op het punt. Voor afbeeldingen zonder ingesloten kleurprofiel wordt elke kleurconversie uitgevoerd met de standaardkleurprofielen die zijn geconfigureerd in de Publicatie-instellingen. De kleurprofielen worden mogelijk niet uitgelijnd met de kleur in de bestanden die met deze optie zijn gemaakt. Daarom wordt u aangeraden de optie Standaardkleurbehoud te gebruiken.</li><li>Aangepast van > tot<br> Hiermee opent u menu&#39;s, zodat u een optie kunt kiezen voor Omzetten van en Omzetten in kleurruimte. Deze geavanceerde optie negeert alle kleurinformatie die in het bronbestand is ingesloten. Selecteer deze optie als alle afbeeldingen die u verzendt, onjuiste of ontbrekende kleurprofielgegevens bevatten.</li></ul> |
-|  | Opties voor beeldbewerking | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> Zie [Opties instellen voor het bewerken van afbeeldingen tijdens het uploaden](#setting-image-editing-options-at-upload). |
-|  | PostScript-opties | U kunt PostScript® rasteren, bestanden uitsnijden, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie [Uploadopties voor PostScript en Illustrator instellen](#setting-postscript-and-illustrator-upload-options). |
-|  | Photoshop-opties | U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeven hoe lagen worden benoemd, tekst extraheren en opgeven hoe afbeeldingen in sjablonen worden verankerd.<br> Sjablonen worden niet ondersteund in [!DNL Experience Manager].<br> Zie [Photoshop-upopties instellen](#setting-photoshop-upload-options). |
-|  | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br>eCatalogi worden niet ondersteund in [!DNL Experience Manager]. <br> Zie [Opties voor het uploaden naar PDF instellen](#setting-pdf-upload-options).<br>**Opmerking**: Het maximumaantal pagina&#39;s voor een PDF dat voor extractie in aanmerking komt, is 5000 voor nieuwe uploads. Deze limiet verandert in 100 pagina&#39;s (voor alle PDF) op 31 december 2022. Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md). |
-|  | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie [Uploadopties voor PostScript en Illustrator instellen](#setting-postscript-and-illustrator-upload-options). |
-|  | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> Zie [Uploadopties voor eVideo instellen](#setting-evideo-upload-options). |
-|  | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingsinstellingen/batchsets van Dynamic Media Classic.<br> Zie [Voorinstellingen voor batchsets configureren voor het automatisch genereren van afbeeldingssets en centrifuges](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) voor meer informatie over het maken van voorinstellingen voor batchsets.<br> Zie [Voorinstellingen voor batchset instellen bij uploaden](#setting-batch-set-presets-at-upload). |
+| Taaknaam | | De standaardnaam die vooraf in het tekstveld is ingevuld, bevat het door de gebruiker ingevoerde gedeelte van de naam en de datum- en tijdstempel. U kunt de standaardnaam gebruiken of een naam invoeren van uw eigen ontwerp voor deze uploadtaak. <br>De baan en andere upload en het publiceren banen worden geregistreerd op de pagina van Banen, waar u de status van banen kunt controleren. |
+| Publiceren na uploaden | | Hiermee publiceert u automatisch de elementen die u uploadt. |
+| Overschrijven in een willekeurige map, dezelfde naam van basiselement, ongeacht de extensie | | Selecteer deze optie als u wilt dat de bestanden die u uploadt, bestaande bestanden met dezelfde naam vervangen. De naam van deze optie kan verschillen, afhankelijk van de instellingen in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
+| ZIP- of Tar-bestanden bij uploaden decomprimeren | | |
+| Taakopties | | Klikken **[!UICONTROL Job Options]** zodat u de [!UICONTROL Upload Job Options] en kiest u opties die van invloed zijn op de volledige uploadtaak. Deze opties zijn hetzelfde voor alle bestandstypen.<br>U kunt standaardopties kiezen voor het uploaden van bestanden die beginnen op de pagina Algemene instellingen van toepassing. Kies **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Selecteer **[!UICONTROL Default Upload Options]** om de [!UICONTROL Upload Job Options] in. |
+| | Wanneer | Selecteer Eenmalig of Herhalend. Als u een terugkerende taak wilt instellen, kiest u de optie Herhalen (Dagelijks, Wekelijks, Maandelijks of Aangepast) om op te geven wanneer de FTP-uploadtaak moet worden herhaald. Geef vervolgens de gewenste planningsopties op. |
+| | Inclusief submappen | Upload alle submappen in de map die u wilt uploaden. De namen van de map en de submappen die u uploadt, worden automatisch ingevoerd in [!DNL Experience Manager Assets]. |
+| | Opties voor uitsnijden | Als u handmatig wilt uitsnijden aan weerszijden van een afbeelding, selecteert u het menu Uitsnijden en kiest u Handmatig. Voer vervolgens het aantal pixels in dat u aan elke zijde van de afbeelding wilt uitsnijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand. Als de afbeelding bijvoorbeeld 150 ppi weergeeft en u 75 invoert in de tekstvakken Boven, Rechts, Onder en Links, wordt aan beide zijden een halve inch bijgesneden.<br> Als u pixels in witruimte automatisch wilt uitsnijden in een afbeelding, opent u het menu Uitsnijden, kiest u Handmatig en voert u pixelmetingen in in de velden Boven, Rechts, Onder en Links om van de zijkanten bij te snijden. U kunt ook Bijsnijden kiezen in het menu Uitsnijden en de volgende opties kiezen:<br> **Wegsnijden op basis van** <ul><li>**Kleur** - Kies de optie Kleur. Selecteer vervolgens het menu Hoek en kies de hoek van de afbeelding met de kleur die het beste overeenkomt met de kleur voor de witruimte die u wilt uitsnijden.</li><li>**Transparantie** - Kies de optie Transparantie.<br> **Tolerantie** - Sleep de schuifregelaar om een tolerantie tussen 0 en 1 op te geven. Geef voor bijsnijden op basis van kleur 0 op om alleen pixels bij te snijden als deze exact overeenkomen met de kleur die u in de hoek van de afbeelding hebt geselecteerd. De aantallen dichter aan 1 staan voor meer kleurenverschil toe.<br>Voor het bijsnijden op basis van transparantie geeft u 0 op om alleen pixels bij te snijden als deze transparant zijn. De aantallen dichter aan 1 staan voor meer transparantie toe.</li></ul><br>Deze opties voor uitsnijden zijn niet-destructief. |
+| | Opties voor kleurprofiel | Kies een kleurconversie wanneer u geoptimaliseerde bestanden maakt die worden gebruikt voor levering:<ul><li>Standaardkleurbehoud: De kleuren van de bronafbeelding blijven behouden wanneer de afbeeldingen kleurruimte-informatie bevatten. er is geen kleurconversie. In bijna alle afbeeldingen van vandaag is het juiste kleurprofiel al ingesloten. Als een CMYK-bronafbeelding echter geen ingesloten kleurprofiel bevat, worden de kleuren omgezet in de kleurruimte sRGB (standaard rood-groen-blauw). sRGB is de aanbevolen kleurruimte voor het weergeven van afbeeldingen op webpagina&#39;s.</li><li>Oorspronkelijke kleurruimte behouden: Behoudt de oorspronkelijke kleuren zonder kleurconversie op het punt. Voor afbeeldingen zonder ingesloten kleurprofiel wordt elke kleurconversie uitgevoerd met de standaardkleurprofielen die zijn geconfigureerd in de Publicatie-instellingen. De kleurprofielen worden mogelijk niet uitgelijnd met de kleur in de bestanden die met deze optie zijn gemaakt. Daarom wordt u aangeraden de optie Standaardkleurbehoud te gebruiken.</li><li>Aangepast van > tot<br> Hiermee opent u menu&#39;s, zodat u een optie kunt kiezen voor Omzetten van en Omzetten in kleurruimte. Deze geavanceerde optie negeert alle kleurinformatie die in het bronbestand is ingesloten. Selecteer deze optie als alle afbeeldingen die u verzendt, onjuiste of ontbrekende kleurprofielgegevens bevatten.</li></ul> |
+| | Opties voor beeldbewerking | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> Zie [Opties instellen voor het bewerken van afbeeldingen tijdens het uploaden](#setting-image-editing-options-at-upload). |
+| | PostScript-opties | U kunt PostScript® rasteren, bestanden uitsnijden, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie [Uploadopties voor PostScript en Illustrator instellen](#setting-postscript-and-illustrator-upload-options). |
+| | Photoshop-opties | U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeven hoe lagen worden benoemd, tekst extraheren en opgeven hoe afbeeldingen in sjablonen worden verankerd.<br> Sjablonen worden niet ondersteund in [!DNL Experience Manager].<br> Zie [Photoshop-upopties instellen](#setting-photoshop-upload-options). |
+| | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br>eCatalogi worden niet ondersteund in [!DNL Experience Manager]. <br> Zie [Opties voor het uploaden naar PDF instellen](#setting-pdf-upload-options).<br>**Opmerking**: Het maximumaantal pagina&#39;s voor een PDF dat voor extractie in aanmerking komt, is 5000 voor nieuwe uploads. Deze limiet verandert in 100 pagina&#39;s (voor alle PDF) op 31 december 2022. Zie ook [Dynamic Media-beperkingen](/help/assets/limitations.md). |
+| | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie [Uploadopties voor PostScript en Illustrator instellen](#setting-postscript-and-illustrator-upload-options). |
+| | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> Zie [Uploadopties voor eVideo instellen](#setting-evideo-upload-options). |
+| | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingsinstellingen/batchsets van Dynamic Media Classic.<br> Zie [Voorinstellingen voor batchsets configureren voor het automatisch genereren van afbeeldingssets en centrifuges](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) voor meer informatie over het maken van voorinstellingen voor batchsets.<br> Zie [Voorinstellingen voor batchset instellen bij uploaden](#setting-batch-set-presets-at-upload). |
 
 #### Opties instellen voor afbeeldingsbewerkingen tijdens het uploaden {#setting-image-editing-options-at-upload}
 
@@ -247,14 +251,14 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 
 | Optie | Suboption | Beschrijving |
 |---|---|---|
-| Verwerking |  | Kies **[!UICONTROL Rasterize]** om vectorafbeeldingen in het bestand om te zetten in de bitmapindeling. |
-| Transparante achtergrond behouden in gerenderde afbeelding |  | De achtergrondtransparantie van het bestand behouden. |
-| Resolutie |  | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het bestand worden weergegeven. |
-| Kleurruimte |  | Selecteer het menu Kleurruimte en kies een van de volgende opties voor kleurruimte: |
-|  | Automatisch detecteren | Hiermee behoudt u de kleurruimte van het bestand. |
-|  | Krachten als RGB | Hiermee wordt de kleurruimte RGB omgezet. |
-|  | Inschakelen als CMYK | Zet om in de CMYK-kleurruimte. |
-|  | Forceren als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
+| Verwerking | | Kies **[!UICONTROL Rasterize]** om vectorafbeeldingen in het bestand om te zetten in de bitmapindeling. |
+| Transparante achtergrond behouden in gerenderde afbeelding | | De achtergrondtransparantie van het bestand behouden. |
+| Resolutie | | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het bestand worden weergegeven. |
+| Kleurruimte | | Selecteer het menu Kleurruimte en kies een van de volgende opties voor kleurruimte: |
+| | Automatisch detecteren | Hiermee behoudt u de kleurruimte van het bestand. |
+| | Krachten als RGB | Hiermee wordt de kleurruimte RGB omgezet. |
+| | Inschakelen als CMYK | Zet om in de CMYK-kleurruimte. |
+| | Forceren als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
 #### Photoshop-upopties instellen {#setting-photoshop-upload-options}
 
@@ -270,15 +274,15 @@ Gebruik de [!UICONTROL Crop Options] en [!UICONTROL Color Profile Options], zoal
 
 | Optie | Suboption | Beschrijving |
 |---|---|---|
-| Lagen behouden |  | Hiermee worden de lagen in de PSD, indien aanwezig, uitgelijnd op afzonderlijke elementen. De elementlagen blijven gekoppeld aan de PSD. U kunt deze weergeven door het PSD-bestand te openen in de gedetailleerde weergave en het deelvenster Lagen te selecteren. |
-| Sjabloon maken |  | Hiermee maakt u een sjabloon op basis van de lagen in het PSD-bestand. |
-| Tekst extraheren |  | Extraheert de tekst zodat gebruikers naar tekst in een viewer kunnen zoeken. |
-| Lagen uitbreiden naar achtergrondgrootte |  | Hiermee vergroot u de grootte van de uitgesneden afbeeldingslagen tot de grootte van de achtergrondlaag. |
-| Laagnaamgeving |  | Lagen in het PSD-bestand worden geüpload als aparte afbeeldingen. |
-|  | Laagnaam | De afbeeldingen krijgen een naam na hun laagnamen in het PSD-bestand. Een laag met de naam Prijscode in het oorspronkelijke PSD-bestand wordt bijvoorbeeld een afbeelding met de naam Prijscode. Als de laagnamen in het PSD-bestand echter standaard Photoshop-laagnamen zijn (Achtergrond, Laag 1, Laag 2, enzovoort), krijgen de afbeeldingen een naam na hun laagnummers in het PSD-bestand. Ze krijgen geen naam achter hun standaardlaagnamen. |
-|  | Photoshop en Layer Number | De afbeeldingen krijgen een naam na hun laagnummer in het PSD-bestand, waarbij de namen van de oorspronkelijke lagen worden genegeerd. Afbeeldingen krijgen de naam Photoshop en een toegevoegd laagnummer. De tweede laag van een bestand met de naam Voorjaar-Ad.psd krijgt bijvoorbeeld de naam Voorjaar-Ad_2, zelfs als deze in Photoshop een andere naam heeft dan de standaardnaam. |
-|  | Photoshop- en laagnaam | De afbeeldingen krijgen een naam na het PSD-bestand gevolgd door de naam van de laag of het laagnummer. Het laagnummer wordt gebruikt als de laagnamen in het PSD-bestand standaard Photoshop-laagnamen zijn. Een laag met de naam Price Tag in een PSD-bestand met de naam SpringAd krijgt bijvoorbeeld de naam Spring Ad_Price Tag. Een laag met de standaardnaam Laag 2 wordt genoemd Lente Ad_2. |
-| Anker |  | Geef op hoe afbeeldingen worden verankerd in sjablonen die worden gegenereerd op basis van de laagsamenstelling die uit het PSD-bestand is samengesteld. Standaard is het anker het middelpunt. Met een middelste anker kunnen vervangende afbeeldingen dezelfde ruimte het beste vullen, ongeacht de hoogte-breedteverhouding van de vervangende afbeelding. Afbeeldingen met een ander aspect dat deze afbeelding vervangt, nemen bij het verwijzen naar de sjabloon en het gebruik van parametervervanging in feite dezelfde ruimte in. Schakel over naar een andere instelling als de vervangende afbeeldingen de toegewezen ruimte in de sjabloon moeten vullen. |
+| Lagen behouden | | Hiermee worden de lagen in de PSD, indien aanwezig, uitgelijnd op afzonderlijke elementen. De elementlagen blijven gekoppeld aan de PSD. U kunt deze weergeven door het PSD-bestand te openen in de gedetailleerde weergave en het deelvenster Lagen te selecteren. |
+| Sjabloon maken | | Hiermee maakt u een sjabloon op basis van de lagen in het PSD-bestand. |
+| Tekst extraheren | | Extraheert de tekst zodat gebruikers naar tekst in een viewer kunnen zoeken. |
+| Lagen uitbreiden naar achtergrondgrootte | | Hiermee vergroot u de grootte van de uitgesneden afbeeldingslagen tot de grootte van de achtergrondlaag. |
+| Laagnaamgeving | | Lagen in het PSD-bestand worden geüpload als aparte afbeeldingen. |
+| | Laagnaam | De afbeeldingen krijgen een naam na hun laagnamen in het PSD-bestand. Een laag met de naam Prijscode in het oorspronkelijke PSD-bestand wordt bijvoorbeeld een afbeelding met de naam Prijscode. Als de laagnamen in het PSD-bestand echter standaard Photoshop-laagnamen zijn (Achtergrond, Laag 1, Laag 2, enzovoort), krijgen de afbeeldingen een naam na hun laagnummers in het PSD-bestand. Ze krijgen geen naam achter hun standaardlaagnamen. |
+| | Photoshop en Layer Number | De afbeeldingen krijgen een naam na hun laagnummer in het PSD-bestand, waarbij de namen van de oorspronkelijke lagen worden genegeerd. Afbeeldingen krijgen de naam Photoshop en een toegevoegd laagnummer. De tweede laag van een bestand met de naam Voorjaar-Ad.psd krijgt bijvoorbeeld de naam Voorjaar-Ad_2, zelfs als deze in Photoshop een andere naam heeft dan de standaardnaam. |
+| | Photoshop- en laagnaam | De afbeeldingen krijgen een naam na het PSD-bestand gevolgd door de naam van de laag of het laagnummer. Het laagnummer wordt gebruikt als de laagnamen in het PSD-bestand standaard Photoshop-laagnamen zijn. Een laag met de naam Price Tag in een PSD-bestand met de naam SpringAd krijgt bijvoorbeeld de naam Spring Ad_Price Tag. Een laag met de standaardnaam Laag 2 wordt genoemd Lente Ad_2. |
+| Anker | | Geef op hoe afbeeldingen worden verankerd in sjablonen die worden gegenereerd op basis van de laagsamenstelling die uit het PSD-bestand is samengesteld. Standaard is het anker het middelpunt. Met een middelste anker kunnen vervangende afbeeldingen dezelfde ruimte het beste vullen, ongeacht de hoogte-breedteverhouding van de vervangende afbeelding. Afbeeldingen met een ander aspect dat deze afbeelding vervangt, nemen bij het verwijzen naar de sjabloon en het gebruik van parametervervanging in feite dezelfde ruimte in. Schakel over naar een andere instelling als de vervangende afbeeldingen de toegewezen ruimte in de sjabloon moeten vullen. |
 
 #### Opties voor het uploaden naar PDF instellen {#setting-pdf-upload-options}
 
@@ -296,14 +300,14 @@ Kies een van de volgende opties:
 |---|---|---|
 | Verwerking | Rasteren | (Standaard) Hiermee worden de pagina&#39;s in het PDF-bestand weggesneden en worden vectorafbeeldingen omgezet in bitmapafbeeldingen. Kies deze optie als u een eCatalog wilt maken. |
 | Extraheren | Woorden zoeken | Extraheert woorden uit het PDF-bestand, zodat het bestand op trefwoord in een eCatalog-viewer kan worden doorzocht. |
-|  | Koppelingen | Extraheert koppelingen uit de PDF-bestanden en converteert deze naar Afbeeldingen met hyperlinks die worden gebruikt in een eCatalog-viewer. |
-| E-catalogus automatisch genereren op basis van PDF van meerdere pagina&#39;s |  | Hiermee wordt automatisch een eCatalog gemaakt op basis van het PDF-bestand. De eCatalog wordt genoemd naar het dossier van de PDF u uploadde. (Deze optie is alleen beschikbaar als u het PDF-bestand rastert terwijl u het uploadt.) |
-| Resolutie |  | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het PDF-bestand worden weergegeven. De standaardwaarde is 150. |
-| Kleurruimte |  | Selecteer het menu Kleurruimte en kies een kleurruimte voor het PDF-bestand. De meeste PDF-bestanden hebben zowel RGB- als CMYK-kleurenafbeeldingen. De kleurruimte RGB heeft de voorkeur voor onlineweergave. |
-|  | Automatisch detecteren | Hiermee behoudt u de kleurruimte van het PDF-bestand. |
-|  | Krachten als RGB | Hiermee wordt de kleurruimte RGB omgezet. |
-|  | Krachten als CMYK | Zet om in de CMYK-kleurruimte. |
-|  | Krachtig maken als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
+| | Koppelingen | Extraheert koppelingen uit de PDF-bestanden en converteert deze naar Afbeeldingen met hyperlinks die worden gebruikt in een eCatalog-viewer. |
+| E-catalogus automatisch genereren op basis van PDF van meerdere pagina&#39;s | | Hiermee wordt automatisch een eCatalog gemaakt op basis van het PDF-bestand. De eCatalog wordt genoemd naar het dossier van de PDF u uploadde. (Deze optie is alleen beschikbaar als u het PDF-bestand rastert terwijl u het uploadt.) |
+| Resolutie | | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het PDF-bestand worden weergegeven. De standaardwaarde is 150. |
+| Kleurruimte | | Selecteer het menu Kleurruimte en kies een kleurruimte voor het PDF-bestand. De meeste PDF-bestanden hebben zowel RGB- als CMYK-kleurenafbeeldingen. De kleurruimte RGB heeft de voorkeur voor onlineweergave. |
+| | Automatisch detecteren | Hiermee behoudt u de kleurruimte van het PDF-bestand. |
+| | Krachten als RGB | Hiermee wordt de kleurruimte RGB omgezet. |
+| | Krachten als CMYK | Zet om in de CMYK-kleurruimte. |
+| | Krachtig maken als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
 #### Uploadopties voor eVideo instellen {#setting-evideo-upload-options}
 
@@ -311,11 +315,11 @@ U transcodeert een videobestand door een keuze te maken uit verschillende videov
 
 | Optie | Suboption | Beschrijving |
 |---|---|---|
-| Adaptieve video |  | Eén coderingsvoorinstelling die met een willekeurige hoogte-breedteverhouding werkt voor het maken van video&#39;s voor levering op mobiele apparaten, tablets en desktops. Geüploade bronvideo&#39;s die met deze voorinstelling zijn gecodeerd, worden ingesteld met een vaste hoogte. De breedte wordt echter automatisch geschaald om de hoogte-breedteverhouding van de video te behouden. <br>Aangepaste videocodering wordt aanbevolen. |
+| Adaptieve video | | Eén coderingsvoorinstelling die met een willekeurige hoogte-breedteverhouding werkt voor het maken van video&#39;s voor levering op mobiele apparaten, tablets en desktops. Geüploade bronvideo&#39;s die met deze voorinstelling zijn gecodeerd, worden ingesteld met een vaste hoogte. De breedte wordt echter automatisch geschaald om de hoogte-breedteverhouding van de video te behouden. <br>Aangepaste videocodering wordt aanbevolen. |
 | Enkele coderingsvoorinstellingen | Voorinstellingen voor codering sorteren | Selecteren **[!UICONTROL Name]** of **[!UICONTROL Size]** als u de coderingsvoorinstellingen onder Desktop, Mobile en Tablet wilt sorteren op naam of op resolutiegrootte. |
-|  | Desktop | Maak een MP4-bestand voor een streaming of progressieve videobeleving op bureaubladcomputers. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
-|  | Mobiel | Maak een MP4-bestand voor levering op mobiele iPhone- of Android™-apparaten. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
-|  | Tablet | Maak een MP4-bestand voor levering op iPad- of Android™-tablets. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
+| | Desktop | Maak een MP4-bestand voor een streaming of progressieve videobeleving op bureaubladcomputers. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
+| | Mobiel | Maak een MP4-bestand voor levering op mobiele iPhone- of Android™-apparaten. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
+| | Tablet | Maak een MP4-bestand voor levering op iPad- of Android™-tablets. Selecteer een of meer hoogte-breedteverhoudingen met de gewenste resolutie- en doelgegevenssnelheid. |
 
 #### Voorinstellingen batchset instellen bij uploaden {#setting-batch-set-presets-at-upload}
 
@@ -382,7 +386,6 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 >* [Voorbeeld Dynamic Media-middelen bekijken](/help/assets/previewing-assets.md).
 >* [Subelementen weergeven](managing-linked-subassets.md#viewing-subassets).
 
-
 ## Eigenschappen en metagegevens bewerken {#editing-properties}
 
 1. Navigeer naar de locatie van het element waarvan u de metagegevens wilt bewerken.
@@ -403,7 +406,7 @@ Voer de volgende stappen uit om een voorvertoning van een element weer te geven 
 
    *Afbeelding: Gebruik de datumkiezer om activering van middelen te plannen.*
 
-1. U moet controleren **[!UICONTROL On/Off Time Reached]** als u de replicatieagent-triggers wilt bijwerken in de eigenschappen van metagegevens.
+1. Controleren **[!UICONTROL On/Off Time Reached]** als u de replicatieagent-triggers wilt bijwerken in de eigenschappen van metagegevens.
    ![Instellingen agent](assets-dm/Agent-settings.png)
 
 1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum/tijd van deactivering in de datumkiezer naast de **[!UICONTROL Off Time]** veld. De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time], een actief en de uitleveringen ervan niet beschikbaar via de [!DNL Assets] webinterface of via de HTTP-API.
@@ -482,11 +485,11 @@ Elementen of mappen verplaatsen:
    * Geef de naam voor het element op nadat het is verplaatst. Klik vervolgens op **[!UICONTROL Next]** om verder te gaan.
 
    * Klikken **[!UICONTROL Cancel]** om het proces te stoppen.
+
    >[!NOTE]
    >
    >* U kunt dezelfde naam opgeven voor het element als er geen element met die naam is op de nieuwe locatie. U moet echter een andere naam gebruiken als u het element verplaatst naar een locatie waar zich een element met dezelfde naam bevindt. Als u dezelfde naam gebruikt, genereert het systeem automatisch een variatie in de naam. Als uw element bijvoorbeeld de naam Vierkant heeft, genereert het systeem de naam Vierkant1 voor de kopie.
    >* Bij het wijzigen van de naam is witruimte niet toegestaan in de bestandsnaam.
-
 
 1. Op de **[!UICONTROL Select Destination]** voert u een van de volgende handelingen uit:
 
@@ -557,7 +560,7 @@ Elementen verplaatsen door ze te slepen, wordt niet geopend [!UICONTROL Move Ass
    >
    >Videoaantekeningen worden alleen ondersteund in browsers met video-indelingen die compatibel zijn met HTML5. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund. De MXF-video-indeling wordt echter nog niet ondersteund met video-annotaties.
 
-Voor meer informatie over het genereren en weergeven van subelementen raadpleegt u [submiddelen beheren](managing-linked-subassets.md#generate-subassets).
+Voor meer informatie over het genereren en weergeven van subelementen raadpleegt u [Submiddelen beheren](managing-linked-subassets.md#generate-subassets).
 
 ## Elementen verwijderen {#deleting-assets}
 
@@ -576,11 +579,11 @@ Middelen of mappen met elementen verwijderen:
    * Als het element geen verwijzingen bevat, wordt het element verwijderd.
 
    * Als het element verwijzingen bevat, wordt u via een foutbericht geïnformeerd dat **Naar een of meer elementen wordt verwezen**. U kunt **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]**.
+
    >[!NOTE]
    >
    >* Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert. Schakel ook de optie voor forceren verwijderen uit met behulp van een overlay, zodat gebruikers geen bestanden waarnaar wordt verwezen kunnen verwijderen en verbroken koppelingen behouden blijven.
    >* Het is mogelijk een *map* die uitgecheckte elementbestanden bevat. Voordat u een map verwijdert, moet u controleren of er geen digitale elementen zijn uitgecheckt door gebruikers.
-
 
 >[!NOTE]
 >
@@ -683,7 +686,7 @@ De bewerkingsgereedschappen in het dialoogvenster [!DNL Assets] kunt u kleine be
 
 1. Als u de afbeelding wilt uitsnijden, klikt u op **[!UICONTROL Crop]** ![Optie voor het uitsnijden van een afbeelding](assets/do-not-localize/crop.png).
 
-1. Selecteer de gewenste optie in de lijst. Het bijsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **Vrije hand** kunt u de afbeelding bijsnijden zonder beperkingen voor de hoogte-breedteverhouding.
+1. Selecteer de gewenste optie in de lijst. Het uitsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **Vrije hand** kunt u de afbeelding bijsnijden zonder beperkingen voor de hoogte-breedteverhouding.
 
 1. Selecteer het gebied dat u wilt bijsnijden en wijzig de grootte of de positie van het gebied in de afbeelding.
 
@@ -863,12 +866,12 @@ Hier is een voorbeeld van hoe u kunt vormen [!DNL Experience Manager] om annotat
 
 1. Download Google Noto CJK-lettertypen van de volgende koppelingen en sla deze op in de lettertypemap die is geconfigureerd in Font Manager Service.
 
-   * All in One Super CJK font: [https://www.google.com/get/noto/help/cjk/](https://www.google.com/get/noto/help/cjk/)
-   * Noto Sans (voor Europese talen): [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
-   * Geen lettertypen voor een taal van uw keuze: [https://www.google.com/get/noto/](https://www.google.com/get/noto/)
+   * All in One Super CJK font: [https://fonts.google.com/noto/use](https://fonts.google.com/noto/use)
+   * Noto Sans (voor Europese talen): [https://fonts.google.com/noto](https://fonts.google.com/noto)
+   * Geen lettertypen voor een taal van uw keuze: [https://fonts.google.com/noto](https://fonts.google.com/noto)
 
 1. Configureer het PDF-bestand van de annotatie door de parameter font-family in te stellen op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif`. Deze configuratie is standaard beschikbaar en werkt voor alle Europese en CJK-talen.
-1. Als de taal van uw keuze afwijkt van de talen die in stap 2 worden genoemd, voegt u een geschikt item (gescheiden door komma&#39;s) toe aan de standaardlettertypefamilie.
+1. Als de taal van uw keuze afwijkt van de talen die in stap 2 worden genoemd, voegt u een toepasselijke (door komma&#39;s gescheiden) vermelding toe aan de standaardlettertypefamilie.
 
 ## Elementversies maken, beheren, voorvertonen en herstellen {#asset-versioning}
 
@@ -895,9 +898,9 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klikken **[!UICONTROL Save as Version]** zodat u een versie voor het element kunt maken. Voeg desgewenst een label en opmerking toe.
    * Klikken **[!UICONTROL Create]** om een versie te maken.
 
-      ![Elementversie maken van zijbalk](assets/create-new-version-from-timeline.png)
+     ![Elementversie maken van zijbalk](assets/create-new-version-from-timeline.png)
 
-      *Afbeelding: Een versie van een element maken op basis van de [!UICONTROL Timeline] linkerzijbalk.*
+     *Afbeelding: Een versie van een element maken op basis van de [!UICONTROL Timeline] linkerzijbalk.*
 
 1. Een versie van een element weergeven:
 
@@ -911,9 +914,9 @@ U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een v
    * Klik op een versie van het element. Voeg desgewenst een label en een opmerking toe.
    * Klik op **[!UICONTROL Revert to this Version]**.
 
-      ![Een versie selecteren om naar deze versie terug te keren](assets/select_version.png)
+     ![Een versie selecteren om naar deze versie terug te keren](assets/select_version.png)
 
-      *Afbeelding: Selecteer een versie en herstel deze. Het wordt de huidige versie die dan beschikbaar aan de gebruikers DAM is.*
+     *Afbeelding: Selecteer een versie en herstel deze. Het wordt de huidige versie die dan beschikbaar aan de gebruikers DAM is.*
 
 1. Voer de volgende stappen uit om twee versies van een afbeelding te vergelijken:
    * Klik op de versie die u met de huidige versie wilt vergelijken.
@@ -934,7 +937,7 @@ Een verzameling is een geordende set elementen. Gebruik verzamelingen om gerelat
 * Een verzameling kan elementen van verschillende locaties bevatten, omdat deze alleen verwijzingen naar deze elementen bevatten. Bij elke verzameling blijft de referentiële integriteit van de elementen behouden.
 * U kunt verzamelingen delen met meerdere gebruikers met verschillende machtigingsniveaus, zoals bewerken, weergeven, enzovoort.
 
-Voor meer informatie over het beheer van verzamelingen raadpleegt u [Verzamelingen beheren](/help/assets/manage-collections.md).
+Voor meer informatie over het beheer van verzamelingen raadpleegt u [Verzamelingen digitale middelen beheren](/help/assets/manage-collections.md).
 
 ## Verlopen elementen verbergen bij weergave van elementen in bureaubladtoepassing of Adobe Asset Link {#hide-expired-assets-via-acp-api}
 
@@ -954,4 +957,4 @@ curl -v -u admin:admin --location --request POST 'http://localhost:4502/conf/glo
 --data-urlencode '../../jcr:primaryType=sling:Folder'
 ```
 
-Meer informatie vindt u in [door DAM-middelen bladeren met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [hoe te om Adobe Asset Link te gebruiken](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-assets-using-adobe-asset-link.ug.html).
+Meer informatie vindt u in [door DAM-middelen bladeren met bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#browse-search-preview-assets) en [hoe te om Adobe Asset Link te gebruiken](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).

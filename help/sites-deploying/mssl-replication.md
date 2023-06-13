@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1392'
 ht-degree: 1%
 
 ---
@@ -202,8 +202,7 @@ Als u de volgende procedure wilt uitvoeren, moet u zijn aangemeld als beheerder 
 ### Auteurscertificaat installeren {#install-the-author-certificate}
 
 1. Open de pagina Gebruikersbeheer voor de publicatie-instantie. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Zoek de gebruikersaccount die u gebruikt om replicatieverzoeken uit te voeren en klik of tik op de gebruikersnaam.
-1. Als de koppeling TrustStore maken wordt weergegeven in het gedeelte Accountinstellingen, klikt u op de koppeling, maakt u een wachtwoord voor de TrustStore en klikt u op OK.
+1. Als de koppeling TrustStore maken wordt weergegeven in het gebied Global Trust Store, klikt u op de koppeling, maakt u een wachtwoord voor de TrustStore en klikt u op OK.
 1. Klik in het gedeelte Accountinstellingen op Betrouwbaarheidsopslag beheren.
 1. Klik op Certificaat toevoegen uit CER-bestand.
 1. Controleer of de optie Certificaat toewijzen aan gebruiker is geselecteerd. Klik op Certificaatbestand selecteren, selecteer auteur.cer en klik op Openen.

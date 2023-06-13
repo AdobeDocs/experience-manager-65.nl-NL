@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 70be796a50a93267b965d00db1b359d9a809ec08
 workflow-type: tm+mt
-source-wordcount: '1116'
+source-wordcount: '1070'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De AEM e-mailcomponenten zijn afgekeurd. Vanwege de aard van e-mail, waarin inhoud en stijl worden samengevoegd, worden de e-mailcomponenten die door AEM buiten de box worden geleverd van beperkte hergebruik voor klanten omdat aangepaste stijlen moeten worden geïmplementeerd in alle componenten die vereist zijn voor projecten.
+>Dit artikel is op de afgekeurde Componenten van de Stichting van toepassing die AEM e-mailcomponenten worden gebaseerd.
 >
->E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Deze vervangen onderdelen mogen echter niet worden gebruikt voor projecten.
+>Gebruikers worden aangemoedigd gebruik te maken van de moderne [E-mailcomponenten van kerncomponenten.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/email/introduction.html)
 
 In dit document worden enkele van de aanbevolen procedures beschreven voor het ontwerpen van e-mailberichten. Dit resulteert in een goed ontwikkelde sjabloon voor e-mailcampagnes.
 

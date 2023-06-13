@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
 workflow-type: tm+mt
-source-wordcount: '1508'
+source-wordcount: '1509'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
-|  | **[Aanpassing aan clientzijde☐](client-customize.md)** |
+|   | **[Aanpassing aan clientzijde☐](client-customize.md)** |
 
 Handlebars Helpers (helpers) zijn methodes callable van de manuscripten van Handlebars om het werken met componenten te vergemakkelijken SCF.
 
@@ -49,19 +49,19 @@ Als safeString is ingesteld op true, is de geretourneerde tekenreeks een SafeStr
 
 * **context**: String
 
-   (Optioneel) Standaard is de lege tekenreeks
+  (Optioneel) Standaard is de lege tekenreeks
 
 * **maxLength**: Getal
 
-   (Optioneel) Standaard is de lengte van de context.
+  (Optioneel) Standaard is de lengte van de context.
 
 * **maxWords**: Getal
 
-   (Optioneel) De standaardwaarde is het aantal woorden in de bijgesneden tekenreeks.
+  (Optioneel) De standaardwaarde is het aantal woorden in de bijgesneden tekenreeks.
 
 * **safeString**: Boolean
 
-   (Optioneel) Retourneert een handlerBar.SafeString() indien true. De standaardwaarde is false.
+  (Optioneel) Retourneert een handlerBar.SafeString() indien true. De standaardwaarde is false.
 
 ### Voorbeelden {#examples}
 
@@ -97,23 +97,23 @@ Een hulpmiddel om twee reeksen onder een div toe te voegen, één voor de volled
 
 * **context**: String
 
-   (Optioneel) Standaard is de lege tekenreeks.
+  (Optioneel) Standaard is de lege tekenreeks.
 
 * **numChars**: Getal
 
-   (Optioneel) Het aantal tekens dat moet worden weergegeven wanneer geen volledige tekst wordt weergegeven. De standaardwaarde is 100.
+  (Optioneel) Het aantal tekens dat moet worden weergegeven wanneer geen volledige tekst wordt weergegeven. De standaardwaarde is 100.
 
 * **moreText**: String
 
-   (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er meer tekst moet worden weergegeven. Standaard is &quot;meer&quot;.
+  (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er meer tekst moet worden weergegeven. Standaard is &quot;meer&quot;.
 
 * **ellipsesText**: String
 
-   (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er verborgen tekst is. Standaard is &quot;...&quot;.
+  (Optioneel) De tekst die moet worden weergegeven om aan te geven dat er verborgen tekst is. Standaard is &quot;...&quot;.
 
 * **safeString**: Boolean
 
-   (Optioneel) Booleaanse waarde die aangeeft of Handlebars.SafeString() al dan niet moet worden toegepast voordat het resultaat wordt geretourneerd. De standaardwaarde is false.
+  (Optioneel) Booleaanse waarde die aangeeft of Handlebars.SafeString() al dan niet moet worden toegepast voordat het resultaat wordt geretourneerd. De standaardwaarde is false.
 
 ### Voorbeeld {#example}
 
@@ -137,11 +137,11 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
 * **context**: Getal
 
-   (Optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
+  (Optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
 
 * **format**: String
 
-   (Optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18&quot;:17:13-07:00&quot;
+  (Optioneel) De datumnotatie die moet worden toegepast. Standaard is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18&quot;:17:13-07:00&quot;
 
 ### Voorbeelden {#examples-1}
 
@@ -165,11 +165,11 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 * **lvalue**: String
 
-   De waarde aan de linkerkant die moet worden vergeleken.
+  De waarde aan de linkerkant die moet worden vergeleken.
 
 * **tegenwaarde**: String
 
-   De rechterwaarde die moet worden vergeleken.
+  De rechterwaarde die moet worden vergeleken.
 
 ### Voorbeeld {#example-1}
 
@@ -189,11 +189,11 @@ Een blokhelper die de huidige waarde van test [WCM-modus](https://helpx.adobe.co
 
 * **context**: String
 
-   (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
+  (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
 * **mode**: String
 
-   (Optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) om te testen of deze is ingesteld.
+  (Optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) om te testen of deze is ingesteld.
 
 ### Voorbeeld {#example-2}
 
@@ -215,15 +215,15 @@ Zie ook [Tekenreeksen internationaliseren in JavaScript-code](../../help/sites-d
 
 * **context**: String
 
-   (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
+  (Optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
 * **default**: String
 
-   (Optioneel) De standaardtekenreeks die moet worden getransleerd. Vereist als er geen context is opgegeven.
+  (Optioneel) De standaardtekenreeks die moet worden getransleerd. Vereist als er geen context is opgegeven.
 
 * **opmerking**: String
 
-   (Optioneel) Een vertaaltip
+  (Optioneel) Een vertaaltip
 
 ### Voorbeeld {#example-3}
 
@@ -246,27 +246,27 @@ Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit di
 
 * **context**: Tekenreeks of object
 
-   (Optioneel, tenzij een relatief pad wordt opgegeven)
+  (Optioneel, tenzij een relatief pad wordt opgegeven)
 
-   Gebruiken `this` om de huidige context door te geven.
+  Gebruiken `this` om de huidige context door te geven.
 
-   Gebruiken `this.id` om de bron te verkrijgen op `id` voor het renderen van het aangevraagde resourceType.
+  Gebruiken `this.id` om de bron te verkrijgen op `id` voor het renderen van het aangevraagde resourceType.
 
 * **resourceType**: String
 
-   (Facultatief) middeltype zal aan middeltype van context in gebreke blijven.
+  (Facultatief) middeltype zal aan middeltype van context in gebreke blijven.
 
 * **template**: String
 
-   Pad naar componentscript.
+  Pad naar componentscript.
 
 * **pad**: String
 
-   (Vereist) Het pad naar de bron. Als het pad relatief is, moet een context worden opgegeven, anders wordt de lege tekenreeks geretourneerd.
+  (Vereist) Het pad naar de bron. Als het pad relatief is, moet een context worden opgegeven, anders wordt de lege tekenreeks geretourneerd.
 
 * **authoringDisabled**: Boolean
 
-   (Optioneel) Standaard is false. Uitsluitend voor intern gebruik.
+  (Optioneel) Standaard is false. Uitsluitend voor intern gebruik.
 
 ### Voorbeeld {#example-4}
 
@@ -286,19 +286,19 @@ Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit di
 
 * **categorieën**: String
 
-   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle JavaScript- en CSS-bibliotheken voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
+  (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle JavaScript- en CSS-bibliotheken voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
 * **thema**: String
 
-   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle themabibliotheken (zowel CSS als JS) voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
+  (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle themabibliotheken (zowel CSS als JS) voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
 * **js**: String
 
-   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle bibliotheken Javascript voor de bepaalde categorieën.
+  (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle bibliotheken Javascript voor de bepaalde categorieën.
 
 * **css**: String
 
-   (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle CSS-bibliotheken voor de opgegeven categorieën.
+  (Optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle CSS-bibliotheken voor de opgegeven categorieën.
 
 ### Voorbeelden {#examples-2}
 
@@ -353,11 +353,11 @@ Bijvoorbeeld:
 
 * **context**: Getal
 
-   Een tijd in het verleden om te vergelijken met &quot;nu&quot;. Tijd wordt uitgedrukt als een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk).
+  Een tijd in het verleden om te vergelijken met &quot;nu&quot;. Tijd wordt uitgedrukt als een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk).
 
 * **daysCutoff**: Getal
 
-   Het aantal dagen geleden voordat wordt overgeschakeld op een werkelijke datum. De standaardwaarde is 60.
+  Het aantal dagen geleden voordat wordt overgeschakeld op een werkelijke datum. De standaardwaarde is 60.
 
 ### Voorbeeld {#example-5}
 
@@ -385,7 +385,7 @@ OPMERKING: Dit is geen validator en moet niet worden gebruikt voor het schrijven
 
 * **context**: object
 
-   De HTML die moet worden gecodeerd.
+  De HTML die moet worden gecodeerd.
 
 ### Voorbeeld {#example-6}
 
@@ -403,7 +403,7 @@ OPMERKING: dit is geen validator en moet niet worden gebruikt voor het schrijven
 
 * **context**: Object
 
-   De HTML die moet worden gecodeerd.
+  De HTML die moet worden gecodeerd.
 
 ### Voorbeeld {#example-7}
 
@@ -421,7 +421,7 @@ OPMERKING: Dit is geen validator en mag niet worden gebruikt voor het schrijven 
 
 * **context**: Object
 
-   De HTML die moet worden gecodeerd.
+  De HTML die moet worden gecodeerd.
 
 ### Voorbeeld {#example-8}
 
@@ -439,7 +439,7 @@ OPMERKING: dit kan een lege tekenreeks retourneren
 
 * **context**: Object
 
-   De URL die moet worden ontsmet.
+  De URL die moet worden ontsmet.
 
 ### Voorbeeld {#example-9}
 
@@ -457,7 +457,7 @@ OPMERKING: dit kan een lege tekenreeks retourneren
 * De context kan een String, Number, boolean of een JSON-gegevensobject zijn.
 * Het is mogelijk een object door te geven dat in de huidige context als de context is genest, zoals `this.url` of `this.id` (zie de volgende voorbeelden van eenvoudige en blokhulplijnen).
 
-* De helpers van het blok zijn functies die van overal in het malplaatje kunnen worden geroepen. Ze kunnen een blok van de sjabloon telkens nul of meer keer aanroepen met een andere context. Ze bevatten een context tussen {{#*name*}} and {{/*name*}}.
+* De helpers van het blok zijn functies die van overal in het malplaatje kunnen worden geroepen. Ze kunnen een blok van de sjabloon telkens nul of meer keer aanroepen met een andere context. Ze bevatten een context tussen `{{#*name*}}` en `{{/*name*}}`.
 
 * Handlebars verstrekt een definitieve parameter aan helpers genoemd &quot;opties&quot;. Het speciale object &#39;options&#39; bevat
 
@@ -603,4 +603,4 @@ Opmerking: de SCF-helpers worden gedefinieerd in `/etc/clientlibs/social/commons
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
-|  | **[Aanpassing aan clientzijde☐](client-customize.md)** |
+|   | **[Aanpassing aan clientzijde☐](client-customize.md)** |

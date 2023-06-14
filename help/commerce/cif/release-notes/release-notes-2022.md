@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM 2022
 description: Opmerkingen bij de release AEM 2022
 exl-id: d0a66e70-c4f1-4051-8161-11f07dad0612
-source-git-commit: 0fdff88695646603cec120d25f156f8c918686df
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '812'
+source-wordcount: '816'
 ht-degree: 4%
 
 ---
@@ -17,7 +17,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Systeemvereisten |
 |:-------|:-----:|
-| CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Magento 2.3.5 GraphQL-schema&#39;s |
+| CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL-schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -45,7 +45,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 ### Wat is er nieuw? {#what-is-new-july}
 
 * Koppeling van AEM pagina&#39;s naar producten en categorieën via AEM pagina-eigenschappen plus overzicht in de cockpit van het product
-   ![productcockpit page association](/help/assets/CIF/product_cockpit_page_association.png)
+  ![productcockpit page association](/help/assets/CIF/product_cockpit_page_association.png)
 
 ## Releasedatum: juni 2022
 
@@ -57,7 +57,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 ### Wat is er nieuw? {#what-is-new-june}
 
-* Verrijking van productcatalogus ondersteunt nu AEM pagina&#39;s. Hierdoor kunnen auteurs pagina - productkoppeling beheren.
+* De verrijking van de productcatalogus steunt nu AEM pagina&#39;s, toelatend auteurs om pagina - productvereniging te beheren.
 
 * Verschillende verbeteringen voor CIF Core-componenten
 
@@ -65,9 +65,9 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Aanmeldingstoken toevoegen aan prijsophaalbewerkingen op de client
 
-* Onjuiste paginacomponent in de datalaag
+* Onjuiste paginacomponent in gegevenslaag.
 
-## Releasedatum: Mei 2022
+## Releasedatum: mei 2022
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
@@ -81,13 +81,13 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 ![overzicht van de eigenschappen van productcockpit](/help/assets/CIF/product_cockpit_properties_overview.png)
 
-* Verbeterde compatibiliteit en robuustheid voor connectors van andere leveranciers op I/O Runtime
+* Verbeterde compatibiliteit en robuustheid voor connectors van derden op I/O Runtime
 
-* Verbeterde ondersteuning voor GQL Client configuration overwrites (bijv. aangepast caching gedrag instellen)
+* Verbeterde ondersteuning voor overschreven GQL Client-configuratie (bijvoorbeeld aangepaste caching-functionaliteit instellen)
 
 ### Bugfixes {#bug-fixes-may}
 
-* In het veld Meerwaardeproductkiezer worden de tweede en aanvullende producten als ongeldig weergegeven
+* In het veld voor de productkiezer voor meerdere waarden worden de tweede en aanvullende producten als ongeldig weergegeven
 
 * De productkiezer wordt soms verborgen achter componenten
 
@@ -103,11 +103,11 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Snelle toegang tot productcockpit: Eenvoudig toegang tot volledige gedetailleerde productinformatie met één klik in de Editor voor sites
 
-   ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
+  ![Enable wishlist](/help/assets/CIF/enable-wishlist.png)
 
 * Steun voor extra marketingcomponenten: De componenten kunnen worden gevormd om toe:voegen-aan-kar en toe:voegen-aan-wenslijst vraag-aan-actie te tonen
 
-   ![Snelkoppeling naar productcockpit in Sites-editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
+  ![Snelkoppeling naar productcockpit in Sites-editor](/help/assets/CIF/sites-editor-shortcut-to-cockpit.png)
 
 ## Releasedatum: februari 2022
 
@@ -121,11 +121,11 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Bèta: AEM ondersteuning voor Kerncomponent CIF Search Commerce LiveSearch
 * Verbeterde SEO voor meerdere winkelscenario&#39;s: URL-indelingen voor PDP/PLP kunnen nu op archiefniveau worden geconfigureerd via de CIF Cloud Config-eigenschappen
-* Productkiezer ondersteunt gefaseerde producten via een nieuwe filteroptie in de gebruikersinterface.  Hierdoor kunnen gebruikers van inhoud het beheer van de productinhoud voorbereiden op de volgende productlanceringen
+* Productkiezer ondersteunt gefaseerde producten via de nieuwe filteroptie in de gebruikersinterface. Laat inhoudsartsen toe om het beheer van productinhoud voor te bereiden voor de aanstaande productlanceringen
 * Vereenvoudigd CIF-configuratiebeheer en foutafhandeling door CIF Cloud Config-naam te gebruiken in plaats van proxyURL te configureren
-* Handmatige categorieselectie voor productlijst en carrouselcomponenten. Hierdoor kunnen gebruikers van inhoud deze componenten gebruiken op inhoudspagina&#39;s, buiten de ervaring met catalogi
+* Handmatige categorieselectie voor productlijst en carrouselcomponenten. Hiermee kunnen gebruikers van inhoud deze componenten gebruiken op inhoudspagina&#39;s, buiten de cataloguservaring
 
-## Releasedatum: januari 2022
+## Releasedatum: Januari 2022
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|

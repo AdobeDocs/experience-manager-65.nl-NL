@@ -1,8 +1,6 @@
 ---
 title: Is uw hybride app gereed voor AEM Mobile?
-seo-title: Is your hybrid app ready for AEM Mobile?
-description: Volg deze pagina om meer te weten te komen over hrybrid-apps. Een toepassing in AEM bestaat meestal uit twee delen. De 'shell' en 'content' en deze pagina bieden meer inzicht in deze onderwerpen.
-seo-description: Follow this page to learn about hrybrid apps. An app in AEM is commonly divided into two parts. The 'shell' and 'content' and this page provides more insight on these topics.
+description: Meer informatie over hybride apps. Een toepassing in Experience Manager bestaat meestal uit twee delen. De 'shell' en 'content' en deze pagina bieden meer inzicht in deze onderwerpen.
 uuid: cbcce3fa-9100-46ea-9f24-931b42666709
 contentOwner: User
 content-type: reference
@@ -11,34 +9,34 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b7fd7954-f2a5-402d-b259-e18b5a618be9
 pagetitle: Is your hybrid app ready for AEM Mobile?
 exl-id: 4625890c-2b76-4c78-88e8-23741bc09f5b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
 
-# Is uw hybride app gereed voor AEM Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
+# Is uw hybride app gereed voor Adobe Experience Manager Mobile?{#is-your-hybrid-app-ready-for-aem-mobile}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-Dus u hebt uw Hybride PhoneGap- of Cordova-app geïmporteerd in AEM, wat nu? Waarschijnlijk zult u authorable inhoud aan uw app willen toevoegen. Hiervoor hebt u een algemeen inzicht in de structuur van een AEM-app nodig. Een toepassing in AEM bestaat meestal uit twee delen. De &#39;shell&#39; en &#39;content&#39;. De &#39;shell&#39; bestaat uit de statische delen van uw app. zoals de PhoneGap-configuratiebestanden, het app-framework en de navigatiebesturingselementen. De inhoud van het archief dat u hebt geïmporteerd, wordt opgeslagen als onderdeel van de shell. In de context van dit document is de shell alle niet-AEM authored inhoud van uw Hybride toepassing PhoneGap die door de toepassingsontwikkelaar wordt gebouwd.
+Dus u hebt uw Hybride PhoneGap- of Cordova-app geïmporteerd in AEM, wat nu? Waarschijnlijk wilt u authorable inhoud aan uw app toevoegen. Hiervoor hebt u een algemeen inzicht in de structuur van een AEM-app nodig. Een toepassing in AEM bestaat meestal uit twee delen. De &#39;shell&#39; en &#39;content&#39;. De &#39;shell&#39; bestaat uit de statische delen van uw app. zoals de PhoneGap-configuratiebestanden, het app-framework en de navigatiebesturingselementen. De inhoud van het archief dat u hebt geïmporteerd, wordt opgeslagen als onderdeel van de shell. In de context van dit document is de shell alle niet-AEM authored inhoud van uw Hybride toepassing PhoneGap die door de toepassingsontwikkelaar wordt gebouwd.
 
-De inhoud verwijst naar de componenten, de malplaatjes en de authored pagina&#39;s die in AEM door de AEM Ontwikkelaar worden ontworpen. Inhoud wordt gecategoriseerd als inhoud voor ontwikkelaars of als geschreven inhoud. Componenten, ontwerpen en paginasjablonen worden beschouwd als ontwikkelinhoud omdat ze zijn gemaakt door een ontwikkelaar. auteur-inhoud zijn pagina&#39;s die met de componenten en de malplaatjes zijn gebouwd. Deze worden typisch gedaan door een ontwerper of een telleraar.
+De inhoud verwijst naar de componenten, de malplaatjes, en de authored pagina&#39;s die in AEM door de AEM Ontwikkelaar worden ontworpen. Inhoud wordt gecategoriseerd als inhoud voor ontwikkelaars of als geschreven inhoud. Componenten, ontwerpen en paginasjablonen worden beschouwd als ontwikkelinhoud omdat ze zijn gemaakt door een ontwikkelaar. Auteur-inhoud zijn pagina&#39;s die zijn samengesteld met de componenten en de malplaatjes. Deze pagina&#39;s worden meestal uitgevoerd door een Designer of een Marktspeler.
 
-Voor het toevoegen van geschreven AEM pagina&#39;s aan uw Hybride-app is coördinatie tussen de ontwikkelaar van de app en de AEM-ontwikkelaar vereist. Overal in de app waar u geschreven inhoud wilt toevoegen, moet de ontwikkelaar van de app deze pagina&#39;s ordenen in een structuur die kan worden overschreven in AEM. De ontwikkelaar van de app moet de AEM ontwikkelaar de paden kunnen geven naar waar de AEM geschreven inhoud moet worden toegevoegd en vervolgens een tijdelijke aanduiding in de Hybride-app kunnen opgeven die wordt vervangen nadat de AEM ontwikkelaar de pagina-inhoud heeft geschreven.
+Voor het toevoegen van geschreven AEM pagina&#39;s aan uw Hybride-app is coördinatie tussen de ontwikkelaar van de app en de AEM-ontwikkelaar vereist. Overal in de app waar u geschreven inhoud wilt toevoegen, moet de ontwikkelaar van de app deze pagina&#39;s ordenen in een structuur die in de Experience Manager kan worden bedekt. De ontwikkelaar van de app moet de ontwikkelaar van de Experience Manager de wegen kunnen voorzien van waar de Experience Manager authored inhoud wordt toegevoegd. Geef vervolgens een tijdelijke aanduiding op in de Hybride app die wordt vervangen nadat de ontwikkelaar van de Experience Manager de pagina-inhoud heeft gemaakt.
 
-Om de verklaring makkelijker te kunnen volgen, gebruiken we de AEM Marketing Cloud: AEM Mobile Hybrid Reference to claritrop the concepts. De Hybride Reference-app bestaat uit een welkomstpagina met een zijmenu.
+Om de verklaring gemakkelijker te kunnen volgen, wordt de AEM Experience Cloud gebruikt: AEM Mobile Hybrid Reference to claritrop the concepts. De Hybride Reference-app bestaat uit een welkomstpagina met een zijmenu.
 
 ![chlimage_1-76](assets/chlimage_1-76.png)
 
-In dit voorbeeld gaan we de welkomstpagina van de toepassing schrijven. Een blik werpen op de bron [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). We zien dat de ontwikkelaar van de app een welkomstpagina heeft gedefinieerd en een sjabloon heeft verschaft voor de pagina die door de app wordt weergegeven. Dit is waar de toepassingsontwikkelaar en AEM ontwikkelaar moeten coördineren. Het pad naar de welkomstpaginasjabloon in de Hybride Reference App is gedefinieerd als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Deze weg is uiterst belangrijk omdat de AEM ontwikkelaar hun welkomstpagina in de AEM bewaarplaats gebruikend de zelfde weg zal ontwerpen.
+In dit voorbeeld wordt de welkomstpagina van de toepassing gemaakt. De bron bekijken [https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/hybrid-app/www/js/app.js#L75). De ontwikkelaar van de app heeft een welkomstpagina gedefinieerd en een sjabloon verschaft voor de pagina die door de app wordt weergegeven. Op deze pagina moeten de ontwikkelaar van de app en AEM ontwikkelaar coördineren. Het pad naar de welkomstpaginasjabloon in de Hybride Reference App is gedefinieerd als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;. Dit pad is belangrijk, omdat de AEM ontwikkelaar zijn welkomstpagina in de AEM-opslagplaats met hetzelfde pad zal samenstellen.
 
 ![chlimage_1-77](assets/chlimage_1-77.png)
 
-Het is belangrijk dat de hybride app en de AEM geschreven inhoud hetzelfde pad gebruiken, omdat we afhankelijk zijn van de mogelijkheid om inhoud te bedekken met Content Sync om nieuwe pagina&#39;s toe te voegen aan de hybride app. Wanneer de hybride app in AEM wordt geïmporteerd als onderdeel van het importproces, worden de configuraties Content Sync ingesteld.
+Het is belangrijk dat de hybride app en de AEM geschreven inhoud hetzelfde pad gebruiken omdat deze afhankelijk zijn van de mogelijkheid om inhoud te bedekken met Content Sync om nieuwe pagina&#39;s toe te voegen aan de Hybride app. Wanneer de hybride app in AEM wordt geïmporteerd als onderdeel van het importproces, worden configuraties voor Content Sync ingesteld.
 
 ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -46,6 +44,6 @@ Wanneer u Bron downloaden vanaf het dashboard van de app gebruikt, worden deze C
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-ContentSync wordt eerst in &#39;shell&#39; van de app opgehaald, waar alle toepassingen die inhoud van de Hybrid-app hebben ontwikkeld, worden opgeslagen en vervolgens in de &#39;content&#39; van de app worden opgehaald. Als er nu pagina&#39;s in de shell zijn die hetzelfde pad hebben als in &#39;content&#39;, worden de pagina&#39;s onder &#39;shell&#39; (vervangen) door de pagina&#39;s onder &#39;content&#39;. Met andere woorden in het voorbeeld voor de hybride referentie-app als we een pagina maken in AEM die hetzelfde pad heeft als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39; wanneer ContentSync wordt uitgevoerd, wordt de pagina bedekt die deel uitmaakte van de Hybride Reference-app met wat er zich op die locatie AEM bevindt. De overlay wordt verzorgd door ContentSync, zodat voor iemand die de app gebruikt de updates voor de app met AEM geschreven inhoud er naadloos uitzien en de app niet opnieuw hoeft te worden samengesteld. Als u de app uitvoert, wordt de welkomstpagina als volgt weergegeven:
+ContentSync wordt eerst in &#39;shell&#39; van de app opgehaald, waar alle toepassingen die inhoud van de Hybrid-app hebben ontwikkeld, worden opgeslagen. Vervolgens wordt de inhoud van de app opgehaald. Als er nu pagina&#39;s in de shell zijn die hetzelfde pad hebben als in &#39;content&#39;, worden de pagina&#39;s onder &#39;shell&#39; (vervangen) door de pagina&#39;s onder &#39;content&#39;. Als in het voorbeeld van de Hybride Reference App dus een pagina wordt gemaakt in AEM die hetzelfde pad heeft als &#39;&#39;content/mobileapps/hybrid-reference-app/en/welcome.template.html&#39;&#39;, bedekt deze pagina de pagina die deel uitmaakte van de Hybride Reference-app wanneer ContentSync wordt uitgevoerd. Het bedekt het met wat er op die locatie AEM is. De overlay wordt verzorgd door ContentSync. Voor iemand die de app gebruikt, zien de updates voor de app met AEM geschreven inhoud er dus naadloos uit en hoeven de app niet opnieuw te worden samengesteld. Als u de app uitvoert, wordt de welkomstpagina daarom als volgt weergegeven:
 
 ![chlimage_1-80](assets/chlimage_1-80.png)

@@ -1,12 +1,10 @@
 ---
 title: AEM 6.5 de Hub van de Gids van de Gebruiker
-seo-title: AEM 6.5 User Guide Hub
-description: Een overzicht van alle essentiële bronnen voor het begrijpen, installeren, beheren en gebruiken van AEM 6.5
-seo-description: An overview of all of the essential resources for understanding, installing, managing, and using AEM 6.5
+description: Een overzicht van de essentiële bronnen voor het begrijpen, installeren, beheren en gebruiken van AEM 6.5
 exl-id: 51788662-6214-408e-98d9-692950c366be
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '212'
 ht-degree: 1%
 
 ---
@@ -15,7 +13,7 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-| [Eerste stappen](https://helpx.adobe.com/experience-manager/get-started.html) | [Functievideo&#39;s](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html) | [Releaseopmerkingen](https://helpx.adobe.com/experience-manager/6-5/release-notes.html) |
+| [Eerste stappen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/home.html) | [Tutorials](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html) | [Releaseopmerkingen](https://experienceleague.adobe.com/docs/experience-manager-65/release-notes/release-notes.html?lang=en) |
 |:-:|:-:|:-:|
 | Zelfstudies en artikelen voor AEM | Een selectie video&#39;s waarin de nieuwe functies van 6.5 worden benadrukt | Ontdek nieuwe functies in AEM 6.5 |
 
@@ -38,11 +36,11 @@ ht-degree: 1%
 Ondersteuningsafgevaardigden kunnen ondersteuning krijgen via:
 
 * Web: Ondersteuningsportaal voor Experience Managers
-* Telefoon: [Zoek het telefoonnummer voor uw regio.](https://helpx.adobe.com/contact/dma-external/DMACustomeCareRegionalPhoneNumbers.html)
+* Telefoon: [Zoek het telefoonnummer voor uw regio.](https://experienceleague.adobe.com/?support-tab=home#support)
 
 >[!NOTE]
 >
->Niet zeker of u een **supportgedelegeerde**? Ontdek of dit [gebruikerstype is op u van toepassing](https://helpx.adobe.com/experience-cloud/supported-users.html) en meer informatie over onze [voorwaarden voor bedrijfsondersteuning](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+>Niet zeker of je een **supportgedelegeerde**? Ontdek of dit [gebruikerstype is op u van toepassing](https://helpx.adobe.com/experience-cloud/supported-users.html) en meer informatie over Adobe [voorwaarden voor bedrijfsondersteuning](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Gemeenschap {#community}
 
@@ -52,4 +50,4 @@ Doe mee aan het gesprek!
 * [AEM Communities Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-communities.html)
 * [AEM Forms Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-forms.html)
 * [AEM Assets Forum](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/aem-assets.html)
-* [AEM Mobile Forum](https://forums.adobe.com/community/experiencemanagermobile)
+* [AEM Mobile Forum](https://experienceleaguecommunities.adobe.com/)

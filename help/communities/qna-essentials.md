@@ -1,8 +1,6 @@
 ---
 title: QnA Essentials
-seo-title: QnA Essentials
 description: Functie van forum met vragen en antwoorden
-seo-description: Questions and answers forum feature
 uuid: c718a8e3-b3bd-4db9-8c0f-6dd973d40583
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -10,9 +8,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ceace3aa-78a5-485e-b519-630479e087d8
 exl-id: a7b295c1-cc9d-4881-8016-804b21fc1098
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
@@ -30,7 +28,7 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
    <td>social/qna/components/hbs/qnaforum</td>
   </tr>
   <tr>
-   <td> <a href="scf.md#add-or-include-a-communities-component">inclusief</a></td>
+   <td> <a href="scf.md#add-or-include-a-communities-component">include</a></td>
    <td>Nee</td>
   </tr>
   <tr>
@@ -56,22 +54,22 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie voor 
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [QnA API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
+* [QnA API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/api/package-summary.html)
 
-* [QnA-eindpunten](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
+* [QnA-eindpunten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/qna/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### QnA-functie {#qna-function}
 
-Een community-sitestructuur die de [QnA-functie](functions.md#qna-function) zal gevormd hebben `QnA` en instellingen die invloed hebben op de matiging en het labelen. De functie QnA ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](users.md#privileged-members-group).
+Een community-sitestructuur die de [QnA-functie](functions.md#qna-function) heeft gevormd `QnA` en instellingen die invloed hebben op de matiging en codering. De functie QnA ondersteunt het identificeren van een [geprivilegieerde gebruikersgroep](users.md#privileged-members-group).
 
 ### Toegang tot berichten van het Forum QnA (UGC) {#accessing-qna-forum-posts-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
+Zie [Door de gebruiker gegenereerde inhoud moderniseren](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 

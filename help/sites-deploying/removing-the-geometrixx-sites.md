@@ -1,16 +1,14 @@
 ---
 title: De sites van de Geometrixx verwijderen
-seo-title: Removing the Geometrixx Sites
 description: Leer hoe u de inhoud van de Geometrixx van het voorbeeld kunt verwijderen.
-seo-description: Learn how to remove the sample Geometrixx content.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
-source-git-commit: 1f7a45adc73b407c402a51b061632e72d97ca306
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '132'
+source-wordcount: '126'
 ht-degree: 0%
 
 ---
@@ -38,11 +36,11 @@ Er is ook een superpakket:
 
 * `cq-geometrixx-all-pkg-5.6.12.zip`
 
-Dit pakket bevat alle bovenstaande afzonderlijke pakketten. Als u alle geometrixx-gerelateerde inhoud tegelijk wilt verwijderen, klikt u op **Verwijderen** over dit pakket. Het superpakket wordt verwijderd en alle afzonderlijke pakketten verdwijnen uit de weergave voor pakketbeheer.
+Dit pakket bevat alle bovenstaande afzonderlijke pakketten. Als u alle geometrixx-gerelateerde inhoud tegelijk wilt verwijderen, klikt u op **Verwijderen** over dit pakket. Het superpakket wordt verwijderd en alle afzonderlijke pakketten verdwijnen uit de weergave Pakketbeheer.
 
 U hebt nu een &quot;lege&quot; AEM-instantie zonder demonstratiesites.
 
 >[!NOTE]
 >
->Tijdens de upgrade worden geometrixx-sites automatisch opnieuw geïnstalleerd. Mogelijk moet u geometrixx-websites verwijderen na de upgrade als u deze voorbeelden niet wilt gebruiken.
+>Wanneer u een upgrade uitvoert, worden de Geometrixx-sites automatisch opnieuw geïnstalleerd. Verwijder websites van de Geometrixx na verbetering als u deze steekproeven niet wilt.
 

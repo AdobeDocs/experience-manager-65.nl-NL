@@ -1,8 +1,6 @@
 ---
 title: Apps ontwikkelen met PhoneGap CLI
-seo-title: Developing Apps with PhoneGap CLI
-description: Volg deze pagina voor meer informatie over het ontwikkelen van toepassingen met PhoneGap CLI.
-seo-description: Follow this page to learn about developing apps with PhoneGap CLI.
+description: Meer informatie over het ontwikkelen van toepassingen met PhoneGap CLI.
 uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '696'
+source-wordcount: '689'
 ht-degree: 0%
 
 ---
@@ -21,11 +19,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Als ontwikkelaar kunt u uw app op elk gewenst moment op een apparaat of in een emulator uitvoeren, op voorwaarde dat u de ontwikkelomgeving hebt geconfigureerd.
 
-Voor het uitvoeren van de volgende voorbeelden hebt u een systeem nodig waarop OSx (Mac) met Xcode wordt uitgevoerd, of een Mac/Win/Linux-systeem waarop de Android SDK is geïnstalleerd.
+Voor het uitvoeren van de volgende voorbeelden hebt u een systeem nodig waarop OS X (Mac) met Xcode wordt uitgevoerd, of een Mac/Win/Linux-systeem waarop de Android™ SDK is geïnstalleerd.
 
 ## Bootstrap uw ontwikkelomgeving {#bootstrap-your-development-environment}
 
@@ -33,17 +31,17 @@ Voor het uitvoeren van de volgende voorbeelden hebt u een systeem nodig waarop O
 
 Voor iOS: Voor het ontwikkelen voor iPhones en iPads hebt u Apple Xcode IDE nodig.
 
-* Gratis downloaden [hier](https://developer.apple.com/xcode/downloads/).
+* Gratis downloaden [hier](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
 * [Handleiding bij PhoneGap iOS-platform](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
 
-Voor Android: Voor het ontwikkelen voor iPhones en iPads hebt u Google Android Stuido IDE nodig.
+Voor Android™: Voor het ontwikkelen voor iPhones en iPads hebt u Google Android™ Stuido IDE nodig.
 
-* Gratis downloaden [hier](https://developer.android.com/sdk/index.html).
-* [Handleiding bij PhoneGap Android-platform](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* Gratis downloaden [hier](https://developer.android.com/studio).
+* [Handleiding bij PhoneGap Android™-platform](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
 
 ## De bron downloaden {#download-the-source}
 
-Als u de ontwikkelomgeving hebt opgestart, downloadt u de bron van de AEM App Build Tile:
+Wanneer u de ontwikkelomgeving hebt opgestart, downloadt u de bron van de AEM App Build Tile:
 
 * Klik op de PhoneGap Build tieldropdown chevron.
 
@@ -56,9 +54,9 @@ Als u de ontwikkelomgeving hebt opgestart, downloadt u de bron van de AEM App Bu
 
 >[!NOTE]
 >
->De ontwikkelingsbron bevat de meest recente status van uw app en bevat niet-gefaseerde wijzigingen. Gebruik de Staging-bron voor het samenstellen van releasekandidaten voor het indienen bij leveranciers van App Store.
+>De ontwikkelingsbron bevat de meest recente status van uw app, maar inclusief niet-gefaseerde wijzigingen. Gebruik de Staging-bron voor het samenstellen van releasekandidaten voor het indienen bij leveranciers van App Store.
 >
->Als u uw app nooit plaatst, wordt de testworkflow geactiveerd wanneer u Staging selecteert (tip: deze verschijnt als een gefaseerde app in de PhoneGap Enterprise Viewer-app (beschikbaar in de AppStore en Google PlayStore).
+>Als u uw app nooit plaatst, wordt de testworkflow geactiveerd wanneer u Staging selecteert (tip: wordt weergegeven als een gefaseerde app in de PhoneGap Enterprise Viewer-app (beschikbaar in de AppStore en Google PlayStore).
 
 * Klik op Downloaden en sla het ZIP-bestand op uw computer op.
 * Extraheer het gedownloade ZIP-bestand naar uw werkruimte.
@@ -85,21 +83,20 @@ phonegap run ios
 
 >[!NOTE]
 >
->Als er op dit moment problemen zijn, ga dan terug naar de basis om problemen op te lossen -
+>Als u op dit punt problemen hebt, ga terug naar grondbeginselen om problemen op te lossen -
 >
->1. Een nieuwe map maken (mkdir-test)
+>1. Een map maken (mkdir-test)
 >1. Navigeren naar deze nieuwe map (cd-test)
->1. &#39;phonegap create helloWorld&#39; uitvoeren
+>1. Uitvoeren `phonegap create helloWorld`
 >1. Navigeer in helloWorld (cd helloWorld)
->1. Voer &#39;phonegap run android (of vervang android door ios as above) uit.
->1. Emulator opent de uitvoering van de zojuist gemaakte PhoneGap-app met de tekst &#39;Apparaatklaar&#39; als de JavaScript-bridge naar native actief is.
-
+>1. Uitvoeren `phonegap run android` (of vervang android door iOS zoals hierboven).
+>1. Emulator opent het runnen van uw onlangs gecreeerd App PhoneGap, die &quot;Apparaat Klaar&quot;zegt als de Brug JavaScript aan inheems operationeel is.
 >
->Dit zal verifiëren dat u CLI van PhoneGap ontwikkelomgeving is correct in werking gesteld.
+>Dit het oplossen van problemen verifieert dat uw CLI van PhoneGap ontwikkelomgeving correct loopt.
 
-## Fouten opsporen in JavaScript met Safari- en IOS-foutopsporing {#debug-javascripts-with-safari-and-ios-debug}
+## Foutopsporing in JavaScript met Safari- en IOS-foutopsporing {#debug-javascripts-with-safari-and-ios-debug}
 
-U kunt fouten in JavaScripts van uw app opsporen met de ontwikkelaarsprogramma&#39;s van Safari, net als bij een webtoepassing.
+U kunt fouten in JavaScript van uw app opsporen met de ontwikkelaarsprogramma&#39;s van Safari, net als bij een webtoepassing.
 
 ## Safari Developer Tools inschakelen {#enable-safari-developer-tools}
 
@@ -122,7 +119,7 @@ De gereedschappen voor ontwikkelaars inschakelen:
 U kunt Safari verbinden met een iOS-apparaat of emulator.
 
 * Navigeer in een consolevenster naar de hoofdmap van de uitgepakte bron.
-* Voer de volgende opdracht in om uw toepassing op uw apparaat of emulator te starten.
+* Voer de volgende opdracht in, zodat u de app op uw apparaat of emulator kunt starten.
 
 ```xml
 phonegap run <platform> --device
@@ -141,11 +138,11 @@ phonegap run <platform> --emulator
 
 ## Foutopsporing in JavaScript met Safari&#39;s webcontrole {#debug-javascript-with-safari-s-web-inspector}
 
-U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulator of apparaat werkt, stopt de uitvoering van uw app bij deze onderbrekingspunten. U kunt door de uitvoering stappen en de waarden in variabelen inspecteren.
+U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulator of apparaat werkt, stopt de uitvoering van uw app bij die onderbrekingspunten. U kunt de uitvoering doorlopen en de waarden in variabelen inspecteren.
 
 * Klik Middelen in het venster van de Inspecteur van het Web
-* Navigeren in de bronstructuur en klikken op het gewenste bronbestand
-* Klik op het regelnummer naast om een onderbrekingspunt toe te voegen
+* Navigeer in de bronstructuur en klik op het gewenste bronbestand
+* Klik op het regelnummer naast een onderbrekingspunt
 * Interactie met apparaat of emulator
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
@@ -160,4 +157,4 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 
 ## De volgende stappen {#the-next-steps}
 
-Als u eenmaal geleerd hebt over het ontwikkelen van toepassingen met PhoneGap CLI, raadpleegt u [Apparaatfuncties openen](/help/mobile/phonegap-access-device-features.md).
+Nadat u over het Ontwikkelen van Apps met CLI hebt geleerd PhoneGap, zie [Apparaatfuncties openen](/help/mobile/phonegap-access-device-features.md).

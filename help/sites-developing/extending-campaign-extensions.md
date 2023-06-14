@@ -1,8 +1,6 @@
 ---
 title: Aangepaste extensies maken
-seo-title: Creating Custom Extensions
-description: U kunt uw aangepaste code in Adobe Campaign opvragen van AEM of van AEM naar Adobe Campaign
-seo-description: You can call your custom code in Adobe Campaign from AEM or from AEM to Adobe Campaign
+description: Je kunt in Adobe Campaign je aangepaste code bellen van AEM naar Adobe Campaign of van AEM naar.
 uuid: 8392aa0d-06cd-4b37-bb20-f67e6a0550b1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
 workflow-type: tm+mt
-source-wordcount: '518'
+source-wordcount: '510'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ Over het algemeen wanneer u een project implementeert, hebt u aangepaste code in
 
 ## Vereisten {#prerequisites}
 
-U moet het volgende installeren:
+U moet het volgende hebben geïnstalleerd:
 
 * Adobe Experience Manager
 * Adobe Campaign 6.1
@@ -32,21 +30,21 @@ Zie [AEM integreren met Adobe Campaign 6.1](/help/sites-administering/campaignon
 
 ## Voorbeeld 1: AEM naar Adobe Campaign {#example-aem-to-adobe-campaign}
 
-De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP-bestanden vindt u in de Campagne-console en beginnen allemaal met **amc** (Adobe Marketing Cloud).
+De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP-bestanden vindt u in de Campagne-console en beginnen allemaal met **aec** (Adobe Experience Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
 >[!NOTE]
 >
->[Zie voor dit voorbeeld Geometrixx](/help/sites-developing/we-retail.md), die beschikbaar is bij Package Share.
+>[Zie Geometrixx voor dit voorbeeld](/help/sites-developing/we-retail.md), die beschikbaar is bij Package Share.
 
-In dit voorbeeld maken we een nieuw aangepast JSSP-bestand en roepen we dat van de AEM aan om het resultaat op te halen. Dit kan bijvoorbeeld worden gebruikt om gegevens op te halen uit Adobe Campaign of om gegevens op te slaan in Adobe Campaign.
+In dit voorbeeld is een nieuw aangepast JSSP-bestand gemaakt en wordt dat vanuit de AEM aangeroepen om het resultaat op te halen. Deze kan bijvoorbeeld worden gebruikt om gegevens op te halen uit Adobe Campaign of om gegevens op te slaan in Adobe Campaign.
 
-1. Als u in Adobe Campaign een nieuw JSSP-bestand wilt maken, klikt u op de knop **Nieuw** pictogram.
+1. Als u in Adobe Campaign een JSSP-bestand wilt maken, klikt u op de knop **Nieuw** pictogram.
 
    ![](do-not-localize/chlimage_1-4a.png)
 
-1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld gebruiken we **cus:custom.jssp** (in de vorm van **cus** naamruimte).
+1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld: **cus:custom.jssp** wordt gebruikt (in de **cus** naamruimte).
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
@@ -60,10 +58,10 @@ In dit voorbeeld maken we een nieuw aangepast JSSP-bestand en roepen we dat van 
    ```
 
 1. Sla uw werk op. Het resterende werk is in AEM.
-1. Creeer een eenvoudige servlet op de AEM kant om dit JSSP te roepen. In dit voorbeeld gaan we uit van het volgende:
+1. Creeer een eenvoudige servlet op de AEM kant zodat kunt u dit JSSP roepen. In dit voorbeeld kunt u het volgende aannemen:
 
    * U hebt de verbinding tussen AEM en Campagne
-   * De campagnecloudservice is geconfigureerd op **/content/geometrixx-outdoor**
+   * De campagnewolkendienst wordt gevormd op **/content/geometrixx-outdoor**
 
    Het belangrijkste object in dit voorbeeld is het **GenericCampaignConnector**, waarmee u jssp-bestanden kunt aanroepen (ophalen en posten) aan de Adobe Campaign-zijde.
 
@@ -79,7 +77,7 @@ In dit voorbeeld maken we een nieuw aangepast JSSP-bestand en roepen we dat van 
    return results.bodyAsString();
    ```
 
-1. Zoals u in dit voorbeeld ziet, moet u in de geloofsbrieven in de vraag overgaan. U kunt dit bereiken via de methode getCredentials(), waarbij u een pagina doorgeeft waarvoor de Campagnewolkenservice is geconfigureerd.
+1. In dit voorbeeld, moet u de geloofsbrieven in de vraag overgaan. U kunt ze ophalen met de methode getCredentials(), waarbij u een pagina doorgeeft waarvoor de Campagnewolkenservice is geconfigureerd.
 
    ```xml
    // page containing the cloudservice for Adobe Campaign
@@ -170,21 +168,21 @@ AEM biedt API&#39;s van de box uit om de objecten op te halen die overal beschik
 
 >[!NOTE]
 >
->[Zie voor dit voorbeeld Geometrixx](/help/sites-developing/we-retail.md), die beschikbaar is bij Package Share.
+>[Zie Geometrixx voor dit voorbeeld](/help/sites-developing/we-retail.md), die beschikbaar is bij Package Share.
 
 Voor elk knooppunt in de verkenner is er een API die eraan is gekoppeld. Bijvoorbeeld voor het knooppunt:
 
 * [http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends](http://localhost:4502/siteadmin#/content/campaigns/geometrixx/scott-recommends)
 
-de API is:
+De API is:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Het einde van de URL **.1.json** kan worden vervangen door **.2.json**, **.3.json**, op basis van het aantal subniveaus die u wilt ophalen Het trefwoord **oneindig** kan worden gebruikt:
+Het einde van de URL **.1.json** kan worden vervangen door **.2.json**, **.3.json**, afhankelijk van het aantal subniveaus dat u wilt ophalen. Om alle hen het sleutelwoord te verkrijgen, **oneindig** kan worden gebruikt:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Nu moeten we weten dat AEM standaard basisverificatie gebruikt om de API te gebruiken.
+AEM standaard basisverificatie gebruikt om de API te gebruiken.
 
 Een JS-bibliotheek met een naam **amcIntegration.js** is beschikbaar in 6.1.1 (build 8624 en hoger) die onder meer die logica implementeert.
 

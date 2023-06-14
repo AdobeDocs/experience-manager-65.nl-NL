@@ -1,8 +1,6 @@
 ---
 title: Functie bestandsbibliotheek
-seo-title: File Library Feature
 description: Met de functie Bestandsbibliotheek kunnen aangemelde sitebezoekers bestanden uploaden, beheren en downloaden
-seo-description: The File Library feature lets signed-in site visitors upload, manage, and download files
 uuid: e78a90bd-f1d3-44f8-98eb-1498a55e8217
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ea2b23af-49c3-409b-a041-43c42d846f21
 docset: aem65
 exl-id: 05cfaab5-a12d-475f-9095-a9fb13571d0a
-source-git-commit: fe731e1a8866fbdd1f982d67d6ff29cbf7f0cd7c
+source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '733'
 ht-degree: 0%
 
 ---
@@ -22,7 +20,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De functie voor bestandsbibliotheek biedt een plaats voor ingetekende sitebezoekers (leden van de community) voor het uploaden, beheren en downloaden van bestanden binnen de site van de gebruikersgemeenschap.
+De functie voor bestandsbibliotheek biedt een plaats voor ingetekende sitebezoekers (leden van de community) voor het uploaden, beheren en downloaden van bestanden binnen de communitysite.
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
@@ -35,17 +33,17 @@ Als u een `File Library` naar een pagina in de auteursmodus, zoek de component:
 
 * `Communities / File Library`
 
-en sleep het naar de juiste plaats op een pagina.
+En sleep het naar de juiste plaats op een pagina.
 
 Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
 
-Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, is dit hoe `File Library` wordt weergegeven:
+Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-file-library.md#essentials-for-client-side) worden opgenomen, is het hoe `File Library` wordt weergegeven:
 
 ![file-library1](assets/file-library1.png)
 
 ### Bestandsbibliotheek configureren {#configuring-file-library}
 
-Selecteer de geplaatste `File Library` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `File Library` zodat u de `Configure` Het pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
 ![configure-new](assets/configure-new.png)
 
@@ -65,7 +63,7 @@ Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade best
 
 * **Max. bestandsgrootte**
 
-  Met deze waarde beperkt u de grootte van het geüploade bestand. Standaardlimiet is 104857600 (10 MB).
+  Deze waarde beperkt de grootte van het geüploade bestand. De standaardwaarde is 104857600 (10 MB).
 
 * **Max. berichtlengte**
 
@@ -73,7 +71,7 @@ Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade best
 
 * **Toegestane bestandstypen**
 
-  Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet zo opgegeven dat alle bestandstypen zijn toegestaan.
+  Een door komma&#39;s gescheiden lijst met bestandsextensies met het scheidingsteken &#39;punt&#39;. Bijvoorbeeld .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn bestandstypen die niet zijn opgegeven niet toegestaan. De standaardinstelling is niet zo opgegeven dat alle bestandstypen zijn toegestaan.
 
 * **RTF-editor**
 
@@ -89,7 +87,7 @@ Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade best
 
 * **Toegestane naamruimten**
 
-  Als Tags toestaan is ingeschakeld, worden de beschikbare tags beperkt tot de geselecteerde naamruimten. Als er geen optie is geselecteerd, zijn alle opties toegestaan. Standaard zijn alle naamruimten.
+  Als Tags toestaan is ingeschakeld, zijn de beschikbare tags beperkt tot de naamruimten die zijn gecontroleerd. Als er geen naamruimten zijn gecontroleerd, zijn alle toegestaan. Standaard zijn alle naamruimten.
 
 * **Suggestiegrenswaarde**
 
@@ -97,7 +95,7 @@ Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade best
 
 * **Stemmen toestaan**
 
-  Als deze optie is ingeschakeld, wordt de mogelijkheid om voor een bestand te stemmen ingeschakeld. De optie Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, is de mogelijkheid om op een bestand te stemmen ingeschakeld. De optie Standaard is uitgeschakeld.
 
 * **Volgen toestaan**
 
@@ -113,7 +111,7 @@ Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade best
 
 * **Menatiepatroon gebruikersinterface**
 
-  Geef de toegestane patroontekenreeks op om de geregistreerde gebruiker in een bericht te labelen (@genoemd). Bijvoorbeeld `~{{familyName}}{{givenName}}`.
+  Geef de toegestane patroontekenreeks op, zodat u de geregistreerde gebruiker in een advertentie kunt voorzien van een tag (@genoemd). Bijvoorbeeld, `~{{familyName}}{{givenName}}`.
 
 * **Reacties met verbindingen toestaan**
 
@@ -129,7 +127,7 @@ Onder de **Moderatie gebruiker** tab, configureer de moderatie van opmerkingen a
 
 * **Opmerkingen verwijderen**
 
-  Als deze optie is ingeschakeld, kan de bezoeker die de opmerking heeft geplaatst deze verwijderen. Standaard is ingeschakeld.
+  Als deze optie is ingeschakeld, kan de bezoeker die de opmerking heeft geplaatst deze desgewenst verwijderen. Standaard is ingeschakeld.
 
 * **Opmerkingen weigeren**
 
@@ -169,6 +167,6 @@ Instellen als standaard
 
 Meer informatie is te vinden op de [Essentiële elementen bestandsbibliotheek](/help/communities/essentials-file-library.md) pagina voor ontwikkelaars.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
+Voor moderatie van geposte onderwerpen en commentaren, zie [Door de gebruiker gegenereerde inhoud moderniseren](/help/communities/moderate-ugc.md).
 
-Voor het etiketteren van geposte onderwerpen en commentaren, zie [Door gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md).
+Voor het etiketteren van geposte onderwerpen en commentaren, zie [Door de gebruiker gegenereerde inhoud labelen](/help/communities/tag-ugc.md).

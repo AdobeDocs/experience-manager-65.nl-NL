@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Handleiding voor formulieren
 breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
-source-git-commit: f0ffa552bd4a5b8b20a58aed7847c4de07acc4f4
+source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
 workflow-type: tm+mt
-source-wordcount: '3860'
+source-wordcount: '3870'
 ht-degree: 0%
 
 ---
@@ -134,6 +134,7 @@ ht-degree: 0%
 + Adaptieve Forms - Basisontwerp {#adaptive-forms-basic-authoring}
    + [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](using/adaptive-forms-best-practices.md)
    + [Een adaptief formulier maken](using/creating-adaptive-form.md)
+   + [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina](using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
    + [Adaptieve formulierfragmenten](using/adaptive-form-fragments.md)
    + [De handeling Verzenden configureren](using/configuring-submit-actions.md)
    + [CAPTCHA gebruiken in aangepaste vormen](using/captcha-adaptive-forms.md)
@@ -563,7 +564,7 @@ ht-degree: 0%
       + [Back-ups maken van de AEM formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md)
       + [Back-up- en herstelstrategie voor AEM formulieren](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [PDF Generator-back-upbeperkingen](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [Beperkingen voor back-up van PDF Generatoren](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Back-upstrategieën voor gecontroleerde mappen](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [De AEM formuliergegevens herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Back-upstrategie voor Connector voor EMC Documentum gebruikers](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)

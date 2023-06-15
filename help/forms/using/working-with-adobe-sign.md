@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 4714554609a10e58b1c7141696d694fac46887a6
+source-git-commit: 66674f0e2621d8786ab4d662cddad373122d8b51
 workflow-type: tm+mt
-source-wordcount: '3624'
+source-wordcount: '3653'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,8 @@ Voer de volgende stappen uit om velden toe te voegen aan een adaptief formulier 
    >
    >    * Gebruiken [!DNL Adobe Sign] blok is niet verplicht [!DNL Adobe Sign] in een adaptieve vorm. Als u het niet gebruikt [!DNL Adobe Sign] blok en voeg gebieden voor de ondertekenaars toe, dan wordt het standaardhandtekeningsgebied getoond bij de bodem van de het ondertekenen documenten.
    >    * Gebruiken [!DNL Adobe Sign] alleen blokkeren voor de adaptieve formulieren die automatisch een Document of Record genereren. Als u een aangepaste XDP gebruikt voor het genereren van het Document of een op een formuliersjabloon gebaseerd adaptief formulier, [!DNL Adobe Sign] blok wordt niet ondersteund.
-
+   >
+   >
 
 1. Selecteer **[!UICONTROL Adobe Sign Block]** en tik op de **Bewerken** ![aem_6_3_edit](assets/aem_6_3_edit.png) pictogram. Er worden opties weergegeven voor het toevoegen van velden en het opmaken van de weergave van een veld.
 
@@ -194,11 +195,13 @@ U kunt slechts één ondertekenaar of meerdere ondertekenaars hebben voor een ad
 
    * **[!UICONTROL Signer Email address]:** Geef het e-mailadres van de ondertekenaar op. Ondertekenaar ontvangt om ondertekende documenten/formulier te zijn op het opgegeven e-mailadres. U kunt een e-mailadres gebruiken dat wordt opgegeven in een formulierveld, in AEM gebruikersprofiel van de aangemelde gebruiker, of handmatig een e-mailadres invoeren. Het is een verplichte stap. Zorg ervoor dat het e-mailadres van de eerste ondertekenaar of de enige ondertekenaar (in het geval van één ondertekenaar) niet hetzelfde is als [!DNL Adobe Sign] account gebruikt om AEM-cloudservices te configureren.
 
-   * **[!UICONTROL Signer Authentication Method]:** Geef de methode op voor het verifiëren van een gebruiker voordat u een formulier voor ondertekening opent. U kunt tussen telefoon, kennisbasis, en sociale op identiteit-gebaseerde authentificatie kiezen.
+   * **[!UICONTROL Signer Authentication Method]:** Geef de methode op voor het verifiëren van een gebruiker voordat u een formulier voor ondertekening opent. U kunt tussen telefoon, kennisbasis, en sociale op identiteit-gebaseerde authentificatie kiezen. Voor Adobe Acrobat Sign Solutions for Government zijn alleen opties voor telefoon en verificatie op basis van kennis beschikbaar.
+
    >[!NOTE]
    >
    >    * Standaard biedt verificatie op basis van sociale identiteit een optie voor verificatie met behulp van Facebook, Google en LinkedIn. U kunt contact opnemen met [!DNL Adobe Sign] ondersteuning om andere aanbieders van sociale authenticatie mogelijk te maken.
-
+   >
+   >
 
    * **[!DNL Adobe Sign]velden die moeten worden ingevuld of ondertekend:** Selecteren [!DNL Adobe Sign] velden voor de ondertekenaar. Een adaptief formulier kan meerdere [!DNL Adobe Sign] velden. U kunt specifieke velden inschakelen voor een ondertekenaar. In het veld worden alle beschikbare [!DNL Adobe Sign] Blokken. Wanneer u een blok selecteert, worden alle velden van het blok geselecteerd. U kunt het X-pictogram gebruiken om de selectie van een veld op te heffen.
 
@@ -248,7 +251,8 @@ Na [aanpassen formuliereigenschappen voor Adobe-teken bewerken](../../forms/usin
 
    Digitale handtekeningen toepassen op het adaptieve formulier met:
 
-   * Wolkhandtekeningen: Ondertekenen met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) gehost door een vertrouwde serviceprovider.
+   * Wolkhandtekeningen: Ondertekenen met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) gehost door een vertrouwde serviceprovider. De optie Cloud Signature is niet beschikbaar voor Adobe Acrobat Sign Solutions for Government.
+
    * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of een digitale id op basis van een bestand.
 
    Nadat u het handtekeningveld voor de cloud aan het adaptieve formulier hebt toegevoegd, voert u de volgende stappen uit om het configuratieproces te voltooien:
@@ -257,7 +261,6 @@ Na [aanpassen formuliereigenschappen voor Adobe-teken bewerken](../../forms/usin
    * [Selecteer Adobe Sign Cloud Service voor een adaptief formulier](../../forms/using/working-with-adobe-sign.md#selectadobesigncloudserviceforanadaptiveform)
    * [Adobe Sign-ondertekenaars toevoegen aan een adaptief formulier](../../forms/using/working-with-adobe-sign.md#addsignerstoanadaptiveform)
    * [Selecteer Handeling verzenden voor een adaptief formulier](../../forms/using/working-with-adobe-sign.md#selectsubmitactionforanadaptiveform)
-
 
 ## Ervaring voor ondertekenen in formulieren maken {#create-in-form-signing-experience}
 
@@ -297,7 +300,6 @@ Voer de volgende stappen uit om de component van de Stap van de Handtekening te 
    >
    >* Wanneer u de **[!UICONTROL Signature Step]** aan het formulier, de **[!UICONTROL Is the signer and the person filling the form same?]** optie wordt automatisch ingesteld op **Ja**. U moet het formulier blijven gebruiken.
    >* Gebruik de component Samenvattingsstap na de component Handtekeningstap voor een optimale ervaring. De stap Overzicht verzendt het formulier automatisch en direct nadat u het ondertekenen van een formulier hebt voltooid in de component Stap handtekening. Als u de overzichtsstap niet gebruikt, wordt een automatische voorlegging teweeggebracht slechts na het interval dat wordt geplaatst gebruikend [Adobe Sign Configuration Service](../../forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-scheduler-to-sync-the-signing-status).
-
    >
    >Enkele aanbevolen procedures zijn:
    >
@@ -306,7 +308,6 @@ Voer de volgende stappen uit om de component van de Stap van de Handtekening te 
    >* Adaptieve formulieren met de stap Handtekening kunnen niet worden verzonden.
    >* De verzending van de adaptieve formulieren met de stap Handtekening wordt afgehandeld via een achtergrondservice of de stap Samenvatting. Als er één geconfigureerde ondertekenaar is die het formulier ook invult, heeft de verwerking van het adaptieve formulier via de stap Samenvatting als voordeel dat deze direct evalueert dat de ondertekenaar het formulier heeft ondertekend en de actie Verzenden heeft geactiveerd. Een achtergrondservice heeft meer tijd nodig om te beoordelen of alle geconfigureerde ondertekenaars het formulier hebben ondertekend en de verzending van het adaptieve formulier vertragen.
    >* Ontwerp het formulier zodanig dat een gebruiker niet kan terugnavigeren vanuit een deelvenster dat de stap Handtekening of Overzicht bevat.
-
 
 
 ### De component voor de prullenbak of overzichtsstap configureren {#configure-the-thank-you-page-or-summary-step-component}

@@ -2,19 +2,15 @@
 title: Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina
 description: Ontdek hoe u moeiteloos een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer stapsgewijze technieken en tips en trucs voor het integreren van dynamische en aanpasbare formulieren in uw website en het optimaliseren van uw digitale ervaringen voor maximale impact.
 feature: Adaptive Forms
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '2822'
+source-wordcount: '2810'
 ht-degree: 0%
 
 ---
 
 
 # Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina {#create-or-add-an-adaptive-form-to-aem-sites-page}
-
-[!BADGE pre-releasedocumentatie]{type=Caution tooltip="Gele status"}
-
-<span class="preview"> Dit is pre-releasedocumentatie en kan worden gewijzigd.</span>
 
 Met AEM Forms kunt u naadloos adaptieve formulieren opnemen in uw webpagina&#39;s. Zo kunnen bezoekers formulieren op een gemakkelijke manier invullen en verzenden zonder de pagina waarop ze staan te verlaten. Op die manier kunnen ze moeiteloos betrokken blijven bij andere elementen van de website terwijl ze actief met het formulier communiceren.
 
@@ -236,8 +232,6 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/using/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
    ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Selecteer een formuliergegevensmodel. Open de **[!UICONTROL Basic]** tab. Selecteer in de service Prefill de optie **[!UICONTROL Forms Portal Draft Prefill Service]**.
-
-
 1. Klik op **[!UICONTROL Done]**.
 
 ## Leid de gebruiker om naar een nieuwe gebruiker bij het indienen van een formulier of toon een bedankje

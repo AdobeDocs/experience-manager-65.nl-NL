@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 36edc2507d9acd7d5f94e433a654ccc1647bb58a
+source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
 workflow-type: tm+mt
-source-wordcount: '3556'
+source-wordcount: '3726'
 ht-degree: 0%
 
 ---
@@ -45,14 +45,20 @@ Enkele belangrijke functies en verbeteringen in deze release zijn:
    * Een versie maken
    * Relatieve of niet-gerelateerde elementen
 
-   U hoeft niet naar de middelenlocatie te navigeren en de eigenschappen ervan te bekijken om deze bewerkingen uit te voeren.
+  U hoeft niet naar de middelenlocatie te navigeren en de eigenschappen ervan te bekijken om deze bewerkingen uit te voeren.
 * **Dynamic Media _Opname_**- Experimenteer met testafbeeldingen of Dynamic Media-URL&#39;s om de uitvoer van verschillende afbeeldingsmodifiers en Smart Imaging-optimalisaties voor de bestandsgrootte (met WebP- en AVIF-levering), de netwerkbandbreedte en de pixelverhouding van het apparaat te bekijken. Zie [Dynamic Media-momentopname](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/dynamic-media/images/dynamic-media-snapshot.html).
 * **DASH-streaming met Dynamic Media** - Ondersteuning voor het nieuwe protocol (DASH - Dynamic Adaptive Streaming via HTTP) dat wordt gestart voor Adaptive streaming in Dynamic Media-video (met CMAF ingeschakeld). Nu beschikbaar voor alle regio&#39;s, [ingeschakeld via een ondersteuningsticket](/help/assets/video.md#enable-dash-on-your-account-enable-dash).
 * **Integratie van Experience Manager Sites en Content Fragments met Assets Next-Generation Dynamic Media** - Gebruikers van Experience Manager Assets as a Cloud Service Next-Generation Dynamic Media kunnen deze door de cloud gehoste middelen nu gebruiken voor het ontwerpen en leveren van on-premise of Managed Services-exemplaren van Experience Manager Sites 6.5.
-* **Integratie van Adaptive Forms op Experience Manager Sites-pagina&#39;s**: U kunt naadloos digitale inschrijvingen maken door Adaptive Forms-componenten in de Experience Manager Sites-editor te gebruiken met: - Adaptieve Forms-container en Adaptive Forms - Embed(v2)-componenten.
-* **Ondersteuning voor reCAPTCHA Enterprise in Experience Manager Forms**: Extra ondersteuning voor reCAPTCHA Enterprise in Experience Manager Forms, die een betere bescherming biedt tegen frauduleuze activiteiten en spam, in aanvulling op de bestaande Google reCAPTCHA v2-ondersteuning.
-* **Steun aan Adobe Acrobat Sign voor de regering met Experience Manager Forms**: Een veilige en compatibele integratie van Experience Manager Forms met Adobe Sign for Government (FedRAMP-compatibel) toestaan.
-* **Integratie van Salesforce met Experience Manager Forms inschakelen voor gegevensuitwisseling**: Configureer de integratie tussen Experience Manager Forms en de Salesforce-toepassing met behulp van de OAuth 2.0-clientaanmeldingsgegevens. Deze mogelijkheid maakt een veilige en directe verificatie en verificatie van de toepassing mogelijk en maakt naadloze communicatie zonder betrokkenheid van de gebruiker mogelijk.
+
+**AEM Forms**
+
+* **[Adaptieve Forms in AEM paginaeditor](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)**: U kunt nu AEM Pagina-editor gebruiken om snel meerdere formulieren te maken en aan uw sitepagina&#39;s toe te voegen. Dankzij deze functie kunnen auteurs van inhoud naadloze ervaringen met gegevensvastlegging maken op sitepagina&#39;s met behulp van de kracht van adaptieve formuliercomponenten, zoals dynamisch gedrag, validaties, gegevensintegratie, het genereren van een document van registratie- en bedrijfsprocesautomatisering. U kunt:
+   * Maak een adaptief formulier door formuliercomponenten te slepen en neer te zetten op Adaptive Forms Container Component in AEM Sites Editor of Experience Fragments.
+   * Met de wizard Adaptive Forms in de AEM Sites-editor kunt u onafhankelijk van elke sitepagina formulieren maken die u de vrijheid geven dergelijke formulieren op meerdere pagina&#39;s opnieuw te gebruiken.
+   * Voeg meerdere formulieren toe aan een sitepagina, zodat de gebruikerservaring wordt gestroomlijnd en er meer flexibiliteit wordt geboden.
+* **[Ondersteuning voor reCAPTCHA Enterprise in Experience Manager Forms](/help/forms/using/captcha-adaptive-forms.md)**: Extra ondersteuning voor reCAPTCHA Enterprise in Experience Manager Forms, die een betere bescherming biedt tegen frauduleuze activiteiten en spam, in aanvulling op de bestaande Google reCAPTCHA v2-ondersteuning.
+* **[Steun aan Adobe Acrobat Sign voor de regering met Experience Manager Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md)**: AEM Forms is nu geïntegreerd met Adobe Acrobat Sign for Government (FedRAMP-compatibel). Deze integratie biedt een geavanceerd niveau van naleving en beveiliging voor e-handtekeningen met Adaptief formulier-inzendingen voor met de overheid verband houdende rekeningen (overheidsdiensten en agentschappen). Dankzij de integratie met Adobe Acrobat Sign for Government kunnen Adobe en klanten van de overheid elektronische handtekeningen gebruiken in Adaptive Forms voor een aantal van de meest bedrijfskritieke en gevoelige bedrijfsonderdelen. Deze extra laag van veiligheid zorgt ervoor dat alle e-handtekeningen volledig volgzaam met de Matige naleving FedRAMP zijn, die Adobe klanten van vrede van mening voorzien.
+* **[Integratie van Salesforce met Experience Manager Forms inschakelen voor gegevensuitwisseling](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)**: Configureer de integratie tussen Experience Manager Forms en de Salesforce-toepassing met behulp van de OAuth 2.0-clientaanmeldingsgegevens. Deze mogelijkheid maakt een veilige en directe verificatie en verificatie van de toepassing mogelijk en maakt naadloze communicatie zonder betrokkenheid van de gebruiker mogelijk.
 * **Optimalisatie en verbeterde functionaliteit van de workflow-engine**: Verhoog de prestaties van de workflowengines door het aantal workflowinstanties te minimaliseren. Naast `COMPLETED` en `RUNNING` statuswaarden, de workflow ondersteunt ook drie nieuwe statuswaarden: `ABORTED`, `SUSPENDED`, en `FAILED`.
 
 
@@ -357,14 +363,14 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * Een GraphQL-query kan de opdracht `damAssetLucene` index in plaats van de `fragments` index. Deze handeling kan resulteren in GraphQL-query&#39;s die mislukken of die lang duren.
 
-   Om het probleem te verhelpen, `damAssetLucene` moet worden gevormd om de volgende twee eigenschappen te omvatten:
+  Om het probleem te verhelpen, `damAssetLucene` moet worden gevormd om de volgende twee eigenschappen te omvatten:
 
    * `contentFragment`
    * `model`
 
-   Nadat de indexdefinitie is gewijzigd, is opnieuw indexeren vereist (`reindex` = `true`).
+  Nadat de indexdefinitie is gewijzigd, is opnieuw indexeren vereist (`reindex` = `true`).
 
-   Na deze stappen zouden de vragen van GraphQL sneller moeten presteren.
+  Na deze stappen zouden de vragen van GraphQL sneller moeten presteren.
 
 * Als [!DNL Microsoft® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL Experience Manager Forms 6.5.10.0].
 
@@ -385,12 +391,12 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 * Wanneer u probeert inhoudsfragmenten, sites of pagina&#39;s te verplaatsen, te verwijderen of te publiceren, is er een probleem wanneer verwijzingen naar inhoudsfragmenten worden opgehaald, omdat de achtergrondquery mislukt. De functionaliteit werkt dus niet.
 Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de knoop van de indexdefinitie toevoegen `/oak:index/damAssetLucene` (opnieuw indexeren is niet vereist):
 
-   ```xml
-   "tags": [
-       "visualSimilaritySearch"
-     ]
-   "refresh": true
-   ```
+  ```xml
+  "tags": [
+      "visualSimilaritySearch"
+    ]
+  "refresh": true
+  ```
 
 * Op het JBoss® 7.1.4-platform, wanneer de gebruiker Experience Manager 6.5.16.0 of hoger servicepack installeert, `adobe-livecycle-jboss.ear` implementatie mislukt.
 * JDK-versie hoger dan 1.8.0_281 wordt niet ondersteund voor WebLogic JEE-server.
@@ -414,4 +420,3 @@ Deze websites zijn alleen beschikbaar voor klanten. Als u een klant bent en toeg
 >* [[!DNL Experience Manager] productpagina](https://business.adobe.com/products/experience-manager/adobe-experience-manager.html)
 >* [[!DNL Experience Manager] 6.5 Documentatie](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 >* [Abonneren op updates van prioritaire Adobe-producten](https://www.adobe.com/subscription/priority-product-update.html)
-

@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 4e6521f0d40fc10e016bf197d5b31033192e3214
+source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 0%
@@ -40,9 +40,9 @@ AEM Forms-gebruikers kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA
 
 ### reCAPTCHA Enterprise configureren  {#steps-to-implement-reCAPTCHA-enterprise-in-forms}
 
-1. Een [reCAPTCHA Enterprise-project](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) ingeschakeld met [reCAPTCHA Enterprise API](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-reCAPTCHA-enterprise-api).
+1. Een [reCAPTCHA Enterprise-project](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#before-you-begin) ingeschakeld met [reCAPTCHA Enterprise API](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#enable-the-recaptcha-enterprise-api).
 1. [Verkrijgen](https://support.google.com/googleapi/answer/7014113?hl=en#:~:text=To%20locate%20your%20project%20ID,a%20member%20of%20are%20displayed) de project-id.
-1. Een [API-sleutel](https://cloud.google.com/reCAPTCHA-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) en [sitecode voor websites](https://cloud.google.com/reCAPTCHA-enterprise/docs/create-key#create-key).
+1. Een [API-sleutel](https://cloud.google.com/recaptcha-enterprise/docs/set-up-non-google-cloud-environments-api-keys#create_an_api_key) en [sitecode voor websites](https://cloud.google.com/recaptcha-enterprise/docs/create-key#create-key).
 1. Configuratiecontainer maken voor cloudservices.
 
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**. Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
@@ -60,7 +60,7 @@ AEM Forms-gebruikers kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA
    1. Tik op **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die u in de vorige stap hebt gemaakt en tik op **[!UICONTROL Create]**.
    1. Selecteer een versie als reCAPTCHA Enterprise en geef een naam op. Project-id, Sitecode en API-sleutel (verkregen in stap 2 en 3) voor de reCAPTCHA Enterprise-service.
    1. Selecteer sleuteltype, zou het zeer belangrijke type moeten zijn zoals de plaatstoets die in het Google wolkenproject wordt gevormd, bijvoorbeeld: **Sitetoets selectievakje** of **Score-gebaseerde sitesleutel**.
-   1. Geef een drempelscore op in het bereik 0 tot en met 1 ([Klik voor meer informatie over de score](https://cloud.google.com/reCAPTCHA-enterprise/docs/interpret-assessment#interpret_scores)). Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
+   1. Geef een drempelscore op in het bereik 0 tot en met 1 ([Klik voor meer informatie over de score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
 
       > Opmerking:
       >
@@ -77,7 +77,7 @@ Zodra de reCAPTCHA Enterprise-service is ingeschakeld, is deze beschikbaar voor 
 
 ## Google reCAPTCHA v2 configureren {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
-1. Verkrijgen [reCAPTCHA API-sleutelpaar](https://www.google.com/reCAPTCHA/admin) uit Google. Het omvat een **sitesleutel** en **geheime sleutel**.
+1. Verkrijgen [reCAPTCHA API-sleutelpaar](https://www.google.com/recaptcha/admin) uit Google. Het omvat een **sitesleutel** en **geheime sleutel**.
 1. Configuratiecontainer maken voor cloudservices.
    1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**. Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
    1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.

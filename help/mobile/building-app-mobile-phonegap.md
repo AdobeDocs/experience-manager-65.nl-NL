@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Verplaats de inhoud van uw mobiele toepassing naar uw bestandssysteem.
 
 ### De CLI van PhoneGap gebruiken om te bouwen {#using-the-phonegap-cli-to-build}
 
-Gebruik de CLI van PhoneGap om de toepassing te compileren en te installeren. Voor informatie over hoe te om CLI te gebruiken PhoneGap, zie PhoneGap [Opdrachtregelinterface](https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html) documentatie.
+Gebruik de CLI van PhoneGap om de toepassing te compileren en te installeren. Voor informatie over hoe te om CLI te gebruiken PhoneGap, zie de bevel-lijn Interface PhoneGap (`https://docs.phonegap.com/en/3.0.0/guide_cli_index.md.html`).
 
 1. Open een terminal- of opdrachtprompt en wijzig de huidige map in het gedownloade ZIP-bestand van de toepassing. Met de volgende code wordt de map bijvoorbeeld gewijzigd in het bestand ng-app-cli.1392137825303.zip:
 
@@ -162,7 +162,7 @@ Verzend uw toepassingsbronnen naar PhoneGap Build voor compilatie voor de versch
 
    **Opmerking:** De bètaversie van AEM Bèta leidt tot geen Inbox- bericht wanneer de bouwstijl met succes voltooit.
 
-1. Klik in het dialoogvenster Succes op PhoneGap Build om de Adobe PhoneGap Build-pagina te openen op [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Als u wacht tot uw app wordt weergegeven, kunt u de knop [Status van PhoneGap Build](https://status.build.phonegap.com/) pagina.
+1. Klik in het dialoogvenster Succes op PhoneGap Build om de Adobe PhoneGap Build-pagina te openen op `https://build.phonegap.com/apps`. Als u wacht tot uw app wordt weergegeven, kunt u de status van de PhoneGap Build controleren op `https://status.build.phonegap.com/`.
 
    Voor informatie over het installeren van de build raadpleegt u de [Documentatie PhoneGap Build](https://github.com/phonegap/phonegap-docs/tree/master/docs/4-phonegap-build).
 

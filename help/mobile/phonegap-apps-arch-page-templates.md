@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: f45d8a9b-14d6-468f-a44c-3933e962922c
 exl-id: 7f00d426-4d28-41ee-8c54-636349e48669
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2653'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ De hoofdtekst van een pagina van de Angular wordt anders weergegeven afhankelijk
 
 In de auteurmodus wordt elke afzonderlijke pagina afzonderlijk weergegeven. Angular behandelt het verpletteren tussen pagina&#39;s niet, noch is een ng-mening die wordt gebruikt om een gedeeltelijk malplaatje te laden dat de componenten van de pagina bevat. In plaats daarvan wordt de inhoud van de paginasjabloon (template.jsp) aan de serverzijde opgenomen via de `cq:include` tag.
 
-Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, Sidetrap, ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
+Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, de Sidekick, de ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
 
 Merk op dat het malplaatje.jsp omvat in a verpakt is `div` element dat het `ng-controller` richtlijn. Met deze structuur kunt u de DOM-inhoud koppelen aan de controller. Daarom, hoewel de pagina&#39;s die zich op de cliëntkant teruggeven ontbreken, individuele componenten die dit doen goed werken (zie sectie over Componenten hieronder).
 
@@ -369,7 +369,7 @@ De map www bevat alle webinhoud (HTML-, JS- en CSS-bestanden) die de weergave en
 
 ### www/config.xml {#www-config-xml}
 
-De [PhoneGap-documentatie](https://docs.phonegap.com) verwijst naar dit bestand als een &#39;globaal configuratiebestand&#39;. Het bestand config.xml bevat veel app-eigenschappen, zoals de naam van de app, de &#39;voorkeuren&#39; van de toepassing (bijvoorbeeld of een iOS-webweergave het mogelijk maakt om te schuiven) en insteekmodules die *alleen* verbruikt door PhoneGap-build.
+De PhoneGap-documentatie (`https://docs.phonegap.com`) verwijst naar dit bestand als een &#39;globaal configuratiebestand&#39;. Het bestand config.xml bevat veel app-eigenschappen, zoals de naam van de app, de &#39;voorkeuren&#39; van de toepassing (bijvoorbeeld of een iOS-webweergave het mogelijk maakt om te schuiven) en insteekmodules die *alleen* verbruikt door PhoneGap-build.
 
 Het bestand config.xml is een statisch bestand in AEM en wordt als zodanig geëxporteerd via Content Sync.
 
@@ -381,7 +381,7 @@ Het bestand config.xml bevat de `content` element:
 
 `<content src="content/phonegap/weretail/apps/ng-we-retail/en.html" />`
 
-In [de PhoneGap-documentatie](https://docs.phonegap.com), wordt dit element beschreven als &quot;The optional &lt;content> Het element definieert de startpagina van de app in de map met webelementen op het hoogste niveau. De standaardwaarde is index.html, die gewoonlijk in de top-level folder van een project www.&quot;verschijnt
+In de PhoneGap-documentatie (`https://docs.phonegap.com`), wordt dit element beschreven als &quot;The optional &lt;content> Het element definieert de startpagina van de app in de map met webelementen op het hoogste niveau. De standaardwaarde is index.html, die gewoonlijk in de top-level folder van een project www.&quot;verschijnt
 
 De PhoneGap-build mislukt als er geen bestand index.html aanwezig is. Daarom is dit bestand opgenomen.
 

@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '689'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -27,17 +27,17 @@ Voor het uitvoeren van de volgende voorbeelden hebt u een systeem nodig waarop O
 
 ## Bootstrap uw ontwikkelomgeving {#bootstrap-your-development-environment}
 
-[PhoneGap CLI instellen](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
+PhoneGap CLI instellen (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
 Voor iOS: Voor het ontwikkelen voor iPhones en iPads hebt u Apple Xcode IDE nodig.
 
 * Gratis downloaden [hier](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
-* [Handleiding bij PhoneGap iOS-platform](https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide)
+* Handleiding bij PhoneGap iOS-platform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
 Voor Android™: Voor het ontwikkelen voor iPhones en iPads hebt u Google Android™ Stuido IDE nodig.
 
 * Gratis downloaden [hier](https://developer.android.com/studio).
-* [Handleiding bij PhoneGap Android™-platform](https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide)
+* Handleiding bij PhoneGap Android™-platform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## De bron downloaden {#download-the-source}
 
@@ -67,7 +67,7 @@ PhoneGap CLI kan een platformproject tot stand brengen, de bron compileren, en a
 
 >[!NOTE]
 >
->U kunt al deze stappen afzonderlijk uitvoeren, zie [PhoneGap CLI-documenten](https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/).
+>U kunt al deze stappen afzonderlijk uitvoeren, zie CLI-documenten van PhoneGap (`https://phonegap.com/blog/2014/11/13/phonegap-cli-3-6-3/`).
 
 1. Controleer of u PhoneGap CLI hebt geïnstalleerd, zie hierboven.
 1. Navigeer in een consolevenster (of terminalvenster) naar de hoofdmap van de uitgepakte bron.

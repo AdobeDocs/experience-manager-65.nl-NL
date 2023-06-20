@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1005'
 ht-degree: 0%
 
 ---
@@ -93,9 +93,9 @@ Deze pictogrammen vertegenwoordigen een pakket met de inhoudsversie voor app-inh
 
 ### De PhoneGap Build-tegel {#the-phonegap-build-tile}
 
-De **PhoneGap Build-tegel** verbindt met [https://build.phonegap.com](https://build.phonegap.com) om verre bouwstijlen te bouwen en te ontvangen. Nadat de build is gemaakt, wordt de build beschikbaar gesteld als een download of rechtstreeks aan uw apparaat via een QR-code.
+De **PhoneGap Build-tegel** verbindt met `https://build.phonegap.com` om verre bouwstijlen te bouwen en te ontvangen. Nadat de build is gemaakt, wordt de build beschikbaar gesteld als een download of rechtstreeks aan uw apparaat via een QR-code.
 
-U kunt de apparaatbron ook downloaden om lokaal te bouwen via de [PhoneGap CLI](https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html).
+U kunt ook de apparaatbron downloaden om lokaal te bouwen via de PhoneGap CLI (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
 ![PhoneGap Build-tegel](assets/chlimage_1-140.png)
 

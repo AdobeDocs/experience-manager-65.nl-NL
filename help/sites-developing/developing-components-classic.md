@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
 source-wordcount: '2392'
 ht-degree: 0%
@@ -85,23 +85,23 @@ Er zijn drie methodes om tot inhoud in AEM WCM toegang te hebben:
 
 * Via het object properties dat is geïntroduceerd in `global.jsp`:
 
-   Het object properties is een instantie van een ValueMap (zie [Verkopen-API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) en bevat alle eigenschappen van de huidige bron.
+  Het object properties is een instantie van een ValueMap (zie [Verkopen-API](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/ValueMap.html)) en bevat alle eigenschappen van de huidige bron.
 
-   Voorbeeld: `String pageTitle = properties.get("jcr:title", "no title");` gebruikt in het renderscript van een paginacomponent.
+  Voorbeeld: `String pageTitle = properties.get("jcr:title", "no title");` gebruikt in het renderscript van een paginacomponent.
 
-   Voorbeeld: `String paragraphTitle = properties.get("jcr:title", "no title");` gebruikt in het renderscript van een standaard-alineacomponent.
+  Voorbeeld: `String paragraphTitle = properties.get("jcr:title", "no title");` gebruikt in het renderscript van een standaard-alineacomponent.
 
 * Via de `currentPage` object geïntroduceerd in `global.jsp`:
 
-   De `currentPage` object is een instantie van een pagina (zie [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.mhtml)). De paginaklasse biedt enkele methoden om toegang te krijgen tot inhoud.
+  De `currentPage` object is een instantie van een pagina (zie [AEM API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)). De paginaklasse biedt enkele methoden om toegang te krijgen tot inhoud.
 
-   Voorbeeld: `String pageTitle = currentPage.getTitle();`
+  Voorbeeld: `String pageTitle = currentPage.getTitle();`
 
 * Via `currentNode` object geïntroduceerd in `global.jsp`:
 
-   De `currentNode` object is een instantie van een knooppunt (zie [JCR-API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). De eigenschappen van een knooppunt kunnen worden benaderd door de `getProperty()` methode.
+  De `currentNode` object is een instantie van een knooppunt (zie [JCR-API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). De eigenschappen van een knooppunt kunnen worden benaderd door de `getProperty()` methode.
 
-   Voorbeeld: `String pageTitle = currentNode.getProperty("jcr:title");`
+  Voorbeeld: `String pageTitle = currentNode.getProperty("jcr:title");`
 
 ## JSP-tagbibliotheken {#jsp-tag-libraries}
 
@@ -167,6 +167,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
 
       * `cq:dialog` - dialoogvenster voor de interface met aanraakbediening
       * `dialog` - dialoog voor de klassieke gebruikersinterface
+
    * ter vervanging van `.jsp` bestand (naam na nieuwe component)
    * of de volledige component volledig opnieuw te bewerken als u wilt
 
@@ -178,7 +179,6 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
    >
    >* Interface met aanraakbediening [Graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) componenten
    >* Klassieke UI gebruikt [ExtJS-widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
-
 
    >[!NOTE]
    >
@@ -215,9 +215,9 @@ Nadat de component is ontwikkeld, voegt u deze toe aan het alineasysteem, waarme
 
    * toevoegen `?wcmmode=design` aan het einde van de URL en de toegang tot de URL, bijvoorbeeld:
 
-      `<contextPath>/ Test.html?wcmmode=design`
+     `<contextPath>/ Test.html?wcmmode=design`
 
-   * klikken op Ontwerpen in Sidetrap
+   * klikken op Ontwerp in Sidekick
 
    U bevindt zich nu in de ontwerpmodus en kunt het alineasysteem bewerken.
 
@@ -273,8 +273,7 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
    >De definitie van het dialoogvenster is afhankelijk van de gebruikersinterface:
    >
    >* Interface met aanraakbediening: `textimage/cq:dialog`
-   >* Klassieke gebruikersinterface: `textimage/dialog`
-
+   >* Klassieke interface: `textimage/dialog`
 
 1. Bewerk de metagegevens van de component:
 
@@ -282,9 +281,11 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
 
       * Set `jcr:description` tot `Text Image Component (Extended)`
       * Set `jcr:title` tot `Text Image (Extended)`
+
    * Groep, waar de component in sidekick (verlaat zoals is) wordt vermeld
 
       * Verlaten `componentGroup` instellen op `General`
+
    * Bovenliggende component voor de nieuwe component (de standaard textielcomponent)
 
       * Set `sling:resourceSuperType` tot `foundation/components/textimage`
@@ -308,6 +309,7 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
       * Xtype wijzigen in cqinclude (om over te nemen van de standaardcomponent).
       * Een padeigenschap met waarden toevoegen `/libs/foundation/components/textimage/dialog/items/tab1.infinity.json`en `/libs/foundation/components/textimage/dialog/items/tab2.infinity.json`, respectievelijk.
       * Alle andere eigenschappen of subknooppunten verwijderen.
+
    * Voor tab3:
 
       * Eigenschappen en subknooppunten ongewijzigd laten
@@ -318,9 +320,11 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
          * `xtype`: `selection`
          * `fieldLabel`: `Image Position`
          * `type`: `select`
+
       * Subknooppunt toevoegen `position/options` van het type `cq:WidgetCollection` om de twee keuzen voor beeldplaatsing te vertegenwoordigen, en onder het creeert twee knopen, o1 en o2 van type `nt:unstructured`.
       * Voor knooppunt `position/options/o1` stel de eigenschappen in: `text` tot `Left` en `value` tot `left.`
       * Voor knooppunt `position/options/o2` stel de eigenschappen in: `text` tot `Right` en `value` tot `right`.
+
    * Tabblad4 verwijderen.
 
    Afbeeldingspositie wordt in de inhoud aangehouden als de `imagePosition`eigenschap of the node representing `textimage` alinea. Na deze stappen ziet het dialoogvenster van de component er als volgt uit:
@@ -355,7 +359,7 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
 Nadat de component is ontwikkeld, kunt u deze aan het alineasysteem toevoegen. Hiermee kunnen auteurs de component selecteren en gebruiken tijdens het bewerken van een pagina. Met deze stappen kunt u de component testen.
 
 1. Open een pagina in Geometrixx zoals Engels / Bedrijf.
-1. Schakel over naar de ontwerpmodus door op Ontwerpen in Sidetrap te klikken.
+1. Schakel over naar de ontwerpmodus door in Sidekick op Ontwerpen te klikken.
 1. Bewerk het ontwerp van het alineasysteem door op Bewerken te klikken op het alineasysteem in het midden van de pagina. Er wordt een lijst weergegeven met componenten die in het alineasysteem kunnen worden geplaatst. De nieuwe component, Text Image (Extended), moet hierin worden opgenomen. Activeer het voor het alineasysteem door het te selecteren en op OK te klikken.
 1. Ga terug naar de bewerkingsmodus.
 1. Voeg de alinea Tekstafbeelding (Extended) toe aan het alineasysteem en initialiseer tekst en afbeelding met voorbeeldinhoud. Sla de wijzigingen op.

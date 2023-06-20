@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: cfc7ad16-965e-4075-bc4d-5630abeaba55
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
@@ -369,7 +369,7 @@ De map www bevat alle webinhoud (HTML-, JS- en CSS-bestanden) die de weergave en
 
 #### www/config.xml {#www-config-xml}
 
-De [PhoneGap-documentatie](https://docs.phonegap.com) verwijst naar dit bestand als een &#39;globaal configuratiebestand&#39;. Het bestand config.xml bevat veel app-eigenschappen, zoals de naam van de app, de &#39;voorkeuren&#39; van de toepassing (bijvoorbeeld of een iOS-webweergave het mogelijk maakt om te schuiven) en insteekmodules die *alleen* verbruikt door PhoneGap-build.
+De PhoneGap-documentatie (`https://docs.phonegap.com`) verwijst naar dit bestand als een &#39;globaal configuratiebestand&#39;. Het bestand config.xml bevat veel app-eigenschappen, zoals de naam van de app, de &#39;voorkeuren&#39; van de toepassing (bijvoorbeeld of een iOS-webweergave het mogelijk maakt om te schuiven) en insteekmodules die *alleen* verbruikt door PhoneGap-build.
 
 Het bestand config.xml is een statisch bestand in AEM en wordt als zodanig geëxporteerd via Content Sync.
 
@@ -381,7 +381,7 @@ Het bestand config.xml bevat de `content` element:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-In [de PhoneGap-documentatie](https://docs.phonegap.com), wordt dit element beschreven als &quot;The optional &lt;content> Het element definieert de startpagina van de app in de map met webelementen op het hoogste niveau. De standaardwaarde is index.html, die gewoonlijk in de top-level folder van een project www.&quot;verschijnt
+In de PhoneGap-documentatie (`https://docs.phonegap.com`), wordt dit element beschreven als &quot;The optional &lt;content> Het element definieert de startpagina van de app in de map met webelementen op het hoogste niveau. De standaardwaarde is index.html, die gewoonlijk in de top-level folder van een project www.&quot;verschijnt
 
 De PhoneGap-build mislukt als er geen bestand index.html aanwezig is. Daarom is dit bestand opgenomen.
 

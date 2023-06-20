@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '1025'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Bij de ontwikkeling van een mobiele app zijn er veel nieuwe problemen die specif
 
 * Functioneel - Voldoet uw app aan alle vereisten?
 * Gebruiksmogelijkheden - Is de toepassing gebruiksvriendelijk en begrijpelijk voor uw klant?
-* Prestaties - Wat gebeurt er tijdens een piek in het gebruik? Zijn de app-elementen, zoals vegen en carrousels, snel en trekken ze niet uit de ervaring?
+* Prestaties - Wat gebeurt er tijdens een piek in het gebruik? Zijn de app-elementen, zoals vegen en carrousels, snel en trekken ze niet af van de ervaring?
 * Mislukking of Onderbreking - wat gebeurt wanneer er een inkomende vraag of bericht terwijl uw app loopt is? Wat gebeurt als er een netwerkstroomonderbreking of macht weg is?
 * Installatie en updates - Hoe wordt de installatie uitgevoerd? Hoe worden updates uitgeduwd?
 * Technisch - verbruikt uw app te veel stroom van een apparaat?
@@ -46,7 +46,7 @@ Er moet enige mate van geautomatiseerde tests worden uitgevoerd om de verschille
 
 ## Handmatig testen {#manual-testing}
 
-Uw app moet niet alleen automatisch testen, maar ook handmatig testen. Klanten die de app op een echt apparaat uitvoeren, kunnen niet door een script worden gedupliceerd. Ook hier hebt u veel mogelijkheden. U kunt een platform, zoals HockeyApp, gebruiken om te bepalen wie toegang heeft en verzamelt terugkoppelt. Of u kunt het hele proces uitbesteden aan een service zoals UTest, ElusiveStars of Testin. Als u een groep interne testers hebt, maar geen apparaatvariatie hebt, zijn er cloudservices waarmee u handmatige tests kunt uitvoeren op hun aantal apparaten. Een van die services is SauceLabs. U kunt ook op afstand toepassingen maken op PhoneGap Enterprise en deze op lokale apparaten installeren voor acceptatietests of demoing. Zie de [PhoneGap](https://phonegap.com/) website voor de meest recente functies en documentatie. Ongeacht de aanpak moeten handmatige tests worden uitgevoerd;
+Uw app moet niet alleen automatisch testen, maar ook handmatig testen. Klanten die de app op een echt apparaat uitvoeren, kunnen niet door een script worden gedupliceerd. Ook hier hebt u veel mogelijkheden. U kunt een platform, zoals HockeyApp, gebruiken om te bepalen wie toegang heeft en verzamelt terugkoppelt. Of u kunt het hele proces uitbesteden aan een service zoals UTest, ElusiveStars of Testin. Als u een groep interne testers hebt, maar geen apparaatvariatie hebt, zijn er cloudservices waarmee u handmatige tests kunt uitvoeren op hun aantal apparaten. Een van die services is SauceLabs. U kunt ook op afstand toepassingen maken op PhoneGap Enterprise en deze op lokale apparaten installeren voor acceptatietests of demoing. Zie PhoneGap (`https://phonegap.com/`) voor de meest recente functies en documentatie. Ongeacht de aanpak moeten handmatige tests worden uitgevoerd;
 
 * een groot doelwit van testers bereiken;
 * test tegen een grote groep apparaten (idealiter echte apparaten, maar simulatoren/emulators als er geen echte apparaten beschikbaar zijn);

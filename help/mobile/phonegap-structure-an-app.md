@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: c614a7ff-0d13-4407-bda0-c0a402a13dcd
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '940'
+source-wordcount: '939'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Als uw clientcode nauw aan een specifieke component is gekoppeld, plaatst u die 
 
 ## PhoneGap-configuratie {#phonegap-configuration}
 
-Elke AEM Mobile-app bevat een map die fungeert als host voor de configuratiebestanden die worden gebruikt door PhoneGap [opdrachtregelinterface](https://github.com/phonegap/phonegap-cli) en [PhoneGap-build](https://build.phonegap.com/) om van uw webinhoud een uitvoerbare toepassing te maken. In het voorbeeld Geometrixx bevindt deze map (content/content/phonegap/geometrixx-outdoor/shell/jcr:content/page-app/app-content) zich als onderdeel van de Shell; een ontwerpbesluit dat is genomen omdat het alleen inhoud bevat die niet via de lucht kan worden bijgewerkt, zoals plug-ins die betrekking hebben op apparaat-API&#39;s en de configuratie van de app zelf.
+Elke AEM Mobile-app bevat een map die fungeert als host voor de configuratiebestanden die worden gebruikt door PhoneGap [opdrachtregelinterface](https://github.com/phonegap/phonegap-cli) en PhoneGap-build op `https://build.phonegap.com/` om van uw webinhoud een uitvoerbare toepassing te maken. In het voorbeeld Geometrixx bevindt deze map (content/content/phonegap/geometrixx-outdoor/shell/jcr:content/page-app/app-content) zich als onderdeel van de Shell; een ontwerpbesluit dat is genomen omdat het alleen inhoud bevat die niet via de lucht kan worden bijgewerkt, zoals plug-ins die betrekking hebben op apparaat-API&#39;s en de configuratie van de app zelf.
 
 In deze map vindt u ook een aantal [Cordova hooks](https://cordova.apache.org/docs/en/edge/guide_appdev_hooks_index.md.html#Hooks%20Guide) die kunnen worden gebruikt om insteekmodules te installeren, bronbestanden op hun platformspecifieke locaties te plaatsen en andere acties die als onderdeel van de build moeten worden uitgevoerd. Opmerking: als alternatief voor het downloaden van elke insteekmodule als onderdeel van de build, kunt u het patroon van de Kitchen Sink-app volgen en [broncode van insteekmodule opnemen](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/content/phonegap/kitchen-sink/shell/_jcr_content/pge-app/app-content/phonegap/plugins) met de rest van uw app-project.
 

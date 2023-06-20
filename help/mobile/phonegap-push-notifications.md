@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
 workflow-type: tm+mt
-source-wordcount: '3293'
+source-wordcount: '3280'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,6 @@ Ga als volgt te werk om Amazon SNS in te stellen voor pushberichten:
    1. Klik op het tabblad Beveiligingsreferenties.
    1. Vanaf hier zie je je toetsen en maak je nieuwe toetsen. Sla de toetsen op voor later gebruik.
 
-
 1. **Een onderwerp maken**
 
    1. Klikken **Onderwerp maken** en kies een onderwerpnaam. Registreer alle velden, zoals Onderwerpnaam, Onderwerpeigenaar, Gebied en Weergavenaam.
@@ -150,8 +149,8 @@ Ga als volgt te werk om Amazon SNS in te stellen voor pushberichten:
 
       1. Voor APNS moeten een P12-bestand, een wachtwoord, een certificaat en een persoonlijke sleutel worden ingevoerd. Deze hadden in de stap moeten worden verkregen *De Apple Push Notification Service (APNS) gebruiken* hierboven.
       1. Voor GCM moet een API-sleutel worden ingevoerd. Dit had in de stap moeten worden verkregen *De Google Cloud Messaging (GCM)-service gebruiken* hierboven.
-   1. Herhaal de bovenstaande stap eenmaal voor elk platform dat u wilt ondersteunen. Als u zowel naar iOS als naar Android wilt gaan, moet u twee Platform-toepassingen maken.
 
+   1. Herhaal de bovenstaande stap eenmaal voor elk platform dat u wilt ondersteunen. Als u zowel naar iOS als naar Android wilt gaan, moet u twee Platform-toepassingen maken.
 
 1. **Een identiteitsgroep maken**
 
@@ -178,7 +177,6 @@ Ga als volgt te werk om Amazon SNS in te stellen voor pushberichten:
     </table>
 
    1. Klikken op **Beleid toepassen**
-
 
 #### De Pushwoosh-berichtenservice gebruiken {#using-the-pushwoosh-messaging-service}
 
@@ -276,9 +274,9 @@ Er zijn twee manieren om uw app te maken en te implementeren met PhoneGap.
 
 **Opmerking:** Voor het testen van pushberichten zijn emulators niet voldoende omdat pushberichten een afzonderlijk protocol gebruiken tussen de pushprovider (Apple of Google) en het apparaat. De huidige Mac/PC-hardware en -emulators ondersteunen dit niet.
 
-1. *PhoneGap Build* is een service die wordt aangeboden door PhoneGap en waarmee u uw app op de servers kunt maken en rechtstreeks naar het apparaat kunt downloaden. Zie de [PhoneGap Build](https://build.phonegap.com/) voor meer informatie over het instellen en gebruiken van PhoneGap Build.
+1. *PhoneGap Build* is een service die wordt aangeboden door PhoneGap en waarmee u uw app op de servers kunt maken en rechtstreeks naar het apparaat kunt downloaden. Zie de documentatie van PhoneGap Build op `https://build.phonegap.com/` voor meer informatie over het instellen en gebruiken van PhoneGap Build.
 
-1. *PhoneGap-opdrachtregelinterface* (CLI) laat u een rijke reeks bevelen PhoneGap op uw bevellijn gebruiken om uw app te bouwen, te zuiveren en op te stellen. Zie de [documentatie voor PhoneGap-ontwikkelaars](https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface) om te leren hoe u PhoneGap CLI instelt en gebruikt.
+1. *PhoneGap-opdrachtregelinterface* (CLI) laat u een rijke reeks bevelen PhoneGap op uw bevellijn gebruiken om uw app te bouwen, te zuiveren en op te stellen. Raadpleeg de documentatie voor PhoneGap-ontwikkelaars (`https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface`) om te leren hoe u PhoneGap CLI kunt instellen en gebruiken.
 
 ### Stap 7: Een pushmelding verzenden {#step-send-a-push-notification}
 

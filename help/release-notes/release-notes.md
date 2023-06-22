@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 3
 exl-id: fed4e110-9415-4740-aba1-75da522039a9
-source-git-commit: 1077aeabacb1dbb489dbc7222c45da0a35b8cf16
+source-git-commit: fa8ddf107e2cf19b4d162501a5fbb21cf48b8e66
 workflow-type: tm+mt
-source-wordcount: '3765'
+source-wordcount: '3786'
 ht-degree: 0%
 
 ---
@@ -145,6 +145,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn:
 * Wanneer een gebruiker Experience Manager Forms 6.5.16.0 Service Pack bijwerkt en probeert om `LicenseType` tot `Production`, worden de wijzigingen niet doorgevoerd. (FORMS-7594)
 * Wanneer een gebruiker een proces LCA met een PDF probeert aan te halen die uit omvat `Chinese Full Width Characters`, treedt een probleem op met de `ValidateForm` proces. (FORMS-7464)
 * In Experience Manager Forms Designer genereert XMLFM ZPL-uitvoer met verschillende papierformaten, zoals letter, A4 en A5, voor XDP-sjablonen. (FORMS-7898)
+* De optie Automatisch invullen in het formulier werkt niet meer als browserbeperking na 194 formuliervelden, in Experience Manager Forms 6.5.14.0. (FORMS-9426)
 
 ## Integrations{#integrations-6517}
 

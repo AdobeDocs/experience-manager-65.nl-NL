@@ -3,9 +3,9 @@ title: Technische vereisten
 description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: fe9c77644daf3669df8cca18e65fb0f6918f853b
+source-git-commit: 3b08d5001e7d3c683caa021ecf051f44762bb9ac
 workflow-type: tm+mt
-source-wordcount: '3513'
+source-wordcount: '3526'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,6 @@ Minimumvereisten voor Adobe Experience Manager:
 >* Voor het gebruik van digitale middelen is meer basisgeheugen nodig. Zie [Implementeren en onderhouden](/help/sites-deploying/deploy.md#default-local-install) voor meer informatie.
 >* [AEM Forms-invoegtoepassing](/help/forms/using/installing-configuring-aem-forms-osgi.md) vereist 15 GB tijdelijke ruimte.
 >
-
 
 Zie voor meer informatie de [Richtlijnen voor hardwareaanpassing](/help/managing/hardware-sizing-guidelines.md).
 
@@ -95,8 +94,8 @@ Adobe Experience Manager werkt met de volgende versies van Java™ Virtual Machi
 | Oracle Java™ SE 8 JDK - 64-bits | A: Ondersteund `[1]` | [Downloaden](https://experience.adobe.com/#/downloads/content/software-distribution/en/general.html?fulltext=Oracle*+JDK*+8*&amp;orderby=%40jcr%3Acontent%2Fjcr%3AlastModified&amp;orderby.sort=desc&amp;layout=list&amp;p.offset=0&amp;p.limit=10) |
 | IBM® J9 VM - build 2.9, JRE 1.8.0 | A: Ondersteund `[2]` |
 | IBM® J9 VM - build 2.8, JRE 1.8.0 | A: Ondersteund `[2]` |
-| Azul Zulu OpenJDK 11 - 64-bits | A: Ondersteund `[3]` |  |
-| Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[3]` |  |
+| Azul Zulu OpenJDK 11 - 64-bits | A: Ondersteund `[3]` | |
+| Azul Zulu OpenJDK 8 - 64-bits | A: Ondersteund `[3]` | |
 
 1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java™ SE-producten. Java™ 9, Java™ 10 en Java™ 12 zijn niet-LTS releases per Oracle (zie [Ondersteuning voor roadmap voor oracle Java™ SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Om AEM in productieomgeving te implementeren, biedt Adobe alleen ondersteuning voor de LTS-versies van Java™. Ondersteuning en distributie van het Oracle Java™ SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die de Oracle Java™ SE-technologie gebruiken. Zie de [Java™-ondersteuningsbeleid voor Adobe Experience Manager](assets/Java_Policy_for_Adobe_Experience_Manager.pdf).
    **Belangrijk: Oracle Java™ 11 wordt minimaal ondersteund tot september 2026. Ondersteuning voor Oracle Java™ 17 is in voorbereiding.**
@@ -135,19 +134,29 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 1. Ondersteund voor AEM Forms-upgradeklanten. Niet ondersteund voor nieuwe installaties.
 
 >[!NOTE]
+>
 Zie [Gemeenschappen inzetten](/help/communities/deploy-communities.md) voor aanvullende informatie over de AEM Communities-capaciteit.
 
 >[!NOTE]
+>
 MongoDB is software van derden en is niet opgenomen in het AEM licentiepakket. Zie voor meer informatie de [MongoDB-licentiebeleid](https://www.mongodb.com/community/licensing) pagina.
+>
 Om optimaal gebruik te kunnen maken van uw AEM met MongoDB, raadt Adobe aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat deze profiteert van professionele ondersteuning. Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie .
+>
 De licentie bevat een standaard replicaset, die bestaat uit één primaire en twee secundaire instanties die kunnen worden gebruikt voor de auteur of de publicatieimplementaties.
+>
 Als u zowel de auteur als de publicatie op MongoDB wilt uitvoeren, moet u twee aparte licenties aanschaffen.
+>
 De klantenservice van Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM.
+>
 Zie voor meer informatie de [Pagina MongoDB voor Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
 >[!NOTE]
+>
 Ondersteunde relationele databases zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM licentiepakket.
+>
 Om AEM 6.5 met een gesteunde relationele gegevensbestand in werking te stellen, wordt een afzonderlijk steuncontract met een gegevensbestandverkoper vereist. De klantenservice van Adobe helpt kwalificerende problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
+>
 **De meeste relationele gegevensbanken worden momenteel ondersteund in niveau-R op AEM 6.5, dat vergezeld gaat van steuncriteria en een steunprogramma zoals vermeld in de bovenstaande beschrijving van niveau-R.**
 
 ### Servlet-engines/toepassingsservers {#servlet-engines-application-servers}
@@ -192,11 +201,14 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 1. AEM Forms wordt ondersteund op Microsoft® Window Server zonder de ondersteuningsbeperkingen.
 
 >[!NOTE]
+>
 Als u AEM Forms 6.5 installeert, zorg ervoor u volgende 32 beetje Microsoft® Visuele C++ redistributable geïnstalleerd hebt.
+>
 * Microsoft® Visual C++ 2008 herdistribueerbaar
 * Microsoft® Visual C++ 2010 herdistribueerbaar
 * Microsoft® Visual C++ 2012 herdistribueerbaar
-* Microsoft® Visual C++ 2013 herdistribueerbaar (vanaf 6.5)
+* Microsoft® Visual C++ 2013 herdistribueerbaar
+* Microsoft® Visual C++ 2019 (VC14.28 of groter) herdistribueerbaar
 
 
 
@@ -240,7 +252,9 @@ De Adobe Experience Manager-gebruikersinterface werkt met de volgende clientplat
 De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans laptops en desktopcomputers) en tabletvormfactoren (zoals Apple iPad of Microsoft® Surface). De telefoonvormfactor wordt niet ondersteund.
 
 >[!NOTE]
+>
 **Ondersteuning voor browsers met snelle releasecycli:**
+>
 De release van Mozilla Firefox, Google Chrome en Microsoft® Edge wordt elke paar maanden bijgewerkt. Adobe heeft zich ertoe verbonden updates beschikbaar te stellen voor Adobe Experience Manager om het supportniveau te handhaven zoals hieronder vermeld in de komende versies van deze browsers.
 
 <table>
@@ -344,7 +358,9 @@ AEM Dynamic Media is standaard uitgeschakeld. Zie hier [Dynamic Media inschakele
 Als Dynamic Media ingeschakeld is, zijn de volgende aanvullende technische voorschriften van toepassing.
 
 >[!NOTE]
+>
 Deze systeemvereisten **alleen** toepassen als u de Dynamic Media - hybride modus gebruikt; Dynamic Media - Hybride modus heeft een ingesloten imageserver, die alleen op bepaalde besturingssystemen is gecertificeerd.
+>
 Voor Dynamic Media-klanten die de Dynamic Media-Scene7-modus (dat wil zeggen: **dynamicmedia_scene7** &quot;run mode&quot;), zijn er geen aanvullende systeemvereisten; alleen dezelfde systeemvereisten als AEM. Dynamic Media - Scene7-modusarchitectuur gebruikt de op cloud gebaseerde beeldservice en niet de service die in AEM is ingesloten.
 
 #### Hardware {#hardware}
@@ -364,19 +380,27 @@ Als u Dynamic Media op Linux® gebruikt, moet aan de volgende voorwaarden worden
 * SELinux uitgeschakeld (zie onderstaande opmerking)
 
 >[!NOTE]
+>
 Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF-8`, werkt Dynamic Media niet. Om te zien wat zijn waarde is, typ &quot;scène&quot;bij de bevelherinnering. Als het niet behoorlijk plaatst, dan plaats de LC_CTYPE milieuvariabele aan het lege koord door &quot;uitvoer LC_CTYPE=&quot;te typen alvorens AEM in werking te stellen.
 
 >[!NOTE]
+>
 **SELinux uitschakelen:** De service Image Serving werkt niet wanneer SELinux is ingeschakeld. Deze optie is standaard ingeschakeld. Als u dit probleem wilt verhelpen, bewerkt u de **/etc/selinux/config** en wijzig de SELinux-waarde van:
+>
 `SELINUX=enforcing` **tot** `SELINUX=disabled`
 
 >[!NOTE]
+>
 **NUMA-architectuur:** Systemen met processors met AMD64 en Intel® EM64T worden doorgaans geconfigureerd als niet-uniforme geheugenarchitectuurplatforms (NUMA). Dat wil zeggen dat de kernel meerdere geheugenknooppunten samenstelt bij opstarttijd in plaats van één geheugenknooppunt te maken.
+>
 De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
+>
 Daarom adviseert Adobe dat als u zulk een systeem in werking stelt dat u NUMA gebruikend **numa=off** laarsoptie om de kernel te vermijden die deze processen doden.
 
 >[!NOTE]
+>
 **Serverhostnaam moet worden opgelost:** Zorg ervoor dat de hostnaam van de server kan worden omgezet naar een IP-adres. Als dat niet mogelijk is, voeg volledig - gekwalificeerde gastheernaam en het IP adres aan toe **/etc/hosts**:
+>
 `<ip address> <fully qualified hostname>`
 
 #### Windows {#windows}
@@ -461,20 +485,22 @@ Voor Windows x86:
 </table>
 
 >[!NOTE]
-PDF Generator ondersteunt alleen Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+>
+PDF Generator ondersteunt alleen de Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+>
 Daarnaast
+>
 * PDF Generator vereist 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
 * PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
-* PDF Generator ondersteunt alleen de 32-bits Retail-versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie op Windows-besturingssystemen.
+* PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie naar Windows.
 * PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux®-besturingssysteem.
 * PDF Generator biedt geen ondersteuning voor Microsoft® Office 365.
 * De functies OCR PDF, Optimize PDF en Export PDF worden alleen in Windows ondersteund.
-* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. Tijdens de looptijd van de AEM Forms-licentie heeft de gebundelde versie alleen via programmacode toegang tot de gebundelde versie met AEM Forms, voor gebruik met AEM Forms PDF Generator. Zie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
+* Een versie van Acrobat wordt met AEM Forms gebundeld om de functionaliteit van de PDF Generator in te schakelen. Programmaticaal toegang tot de gebundelde versie slechts met AEM Forms, tijdens de duur van de vergunning van AEM Forms, voor gebruik met AEM Forms PDF Generator. Zie de productbeschrijving van AEM Forms volgens uw implementatie ([Op locatie](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-on-premise.html) of [Managed Services](https://helpx.adobe.com/legal/product-descriptions/adobe-experience-manager-managed-services.html))
 * PDF Generator-service biedt geen ondersteuning voor Microsoft® Windows 10.
 * PDF Generator kan bestanden niet converteren met Microsoft® Visio 2019. U kunt Microsoft® Visio 2016 blijven gebruiken voor conversie `.VSD` en `.VSDX` bestanden.
 * PDF Generator kan bestanden niet converteren met Microsoft® Project 2019. U kunt Microsoft® Project 2016 blijven gebruiken voor conversie `.VSD` en `.VSDX` bestanden.
 >
-
 
 ### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
 
@@ -486,8 +512,9 @@ Daarnaast
 * 2,35 GB beschikbare ruimte op de vaste schijf
 * Monitorresolutie van 1024 x 768 pixels of hoger
 * Hardwareversnelling voor video (optioneel)
-* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
-* Beheerdersrechten voor het installeren van Designer.
+* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
+* Beheerdersrechten voor de installatie van Designer
+* Microsoft Visual C++ 2019 (VC 14.28 of hoger) 32-bits runtime
 
 ### Vereisten voor het terugschrijven van metagegevens van AEM Assets XMP {#requirements-for-aem-assets-xmp-metadata-write-back}
 

@@ -5,7 +5,7 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
 source-wordcount: '1621'
 ht-degree: 0%
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-configure.html?lang=en) |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-configure.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
 Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] vormt de verbeterde schakelaar na het installeren van het. Voor instructies voor installatie raadpleegt u [De connector installeren](/help/assets/workfront-integrations.md).
@@ -30,7 +30,6 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] vormt de v
 >* Adobe steunt verbeterde schakelaarversies 1.7.4 en hoger. Eerdere pre-release en aangepaste versies worden niet ondersteund. Navigeer naar de `digital.hoodoo` groep beschikbaar in het linkerdeelvenster in [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html?lang=en).
 >
 >* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
-
 
 ## Gebeurtenisabonnementen configureren {#event-subscriptions}
 
@@ -46,7 +45,7 @@ Schakel gebeurtenisabonnementen in als u deze functies wilt gebruiken.
 * Selecteer [!UICONTROL Workfront Custom Integration] die u in sectie 6 hebt gemaakt.
 * Klik op [!UICONTROL Enable Workfront Event Subscriptions].
 
-   ![Abonnement voor gebeurtenissen](/help/assets/assets/event-subs.png)
+  ![Abonnement voor gebeurtenissen](/help/assets/assets/event-subs.png)
 
 ## Gekoppelde mappen configureren {#linked-folders}
 

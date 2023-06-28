@@ -5,9 +5,9 @@ role: Admin,Leader,Architect
 feature: Integrations
 exl-id: 57e2bffe-8094-4557-99c8-7b482681687e
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-integrations.html?lang=en) |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-integrations.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
 [!DNL Adobe Workfront] is een werkbeheertoepassing waarmee u de volledige levenscyclus van het werk op één locatie kunt beheren. De integratie tussen [!DNL Workfront] en [!DNL Adobe Experience Manager Assets] kunnen organisaties de snelheid van de inhoud en de tijd-aan-markt verbeteren door het werk en het beheer van digitale activa intrinsiek met elkaar te verbinden. In het kader van het beheer van hun werk in Workfront hebben gebruikers toegang tot de vereiste documenten en afbeeldingen.
@@ -43,7 +43,6 @@ Raadpleeg de platformondersteuning en [eerste vereisten voor de verbeterde aansl
 >
 >* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 ## Verschillende integraties vergelijken tussen [!DNL Assets] en [!DNL Workfront] {#feature-parity-matrix}
 
 Hieronder volgen de details van de functies die beschikbaar zijn via verschillende soorten integratie tussen [!DNL Assets] en [!DNL Workfront].
@@ -52,7 +51,7 @@ Hieronder volgen de details van de functies die beschikbaar zijn via verschillen
 |----|----|----|-----|-----|
 | Implementatiemethoden | Geschikt voor [!DNL Assets] aanbieden. | Assets Essentials | Beheerde services van Adobe, op locatie | Cloud Service |
 | **Algemeen** |
-| Digitale bestanden verzenden vanuit [!DNL Workfront] tot [!DNL Assets] | De nieuwste versie van een WF-document kan worden geüpload naar AEM Assets, dat als een nieuwe versie van het document wordt gekoppeld. | ✓ | ✓ | ✓ |
+| Digitale bestanden verzenden vanuit [!DNL Workfront] tot [!DNL Assets] | De nieuwste versie van een WF-document kan worden geüpload naar AEM Assets, dat is gekoppeld als een nieuwe versie van het document. | ✓ | ✓ | ✓ |
 | Mappen handmatig koppelen AEM aan Workfront-objecten | Bestaande AEM mappen kunnen worden gekoppeld als een Workfront-map en de onderliggende elementen ervan worden gekoppeld als nieuwe Workfront-documenten. | ✓ | ✓ | ✓ |
 | Koppeling [!DNL Assets] naar Workfront-objecten | Bestaande elementen in AEM kunnen worden gekoppeld aan een nieuw Workfront-document of als een nieuwe versie van een bestaand document. | ✓ | ✓ | ✓ |
 | Middelen die aan gekoppelde mappen worden toegevoegd, worden automatisch naar AEM verzonden | Als het document wordt toegevoegd aan een gekoppelde map, wordt het bijbehorende element automatisch geüpload naar AEM Assets als een nieuw element. | ✓ | ✓ | ✓ |
@@ -71,14 +70,14 @@ Hieronder volgen de details van de functies die beschikbaar zijn via verschillen
 | Ondersteuning voor meerdere Workfront-omgevingen die verbinding maken met één AEM | Gebruikers van meerdere Workfront-omgevingen kunnen verbinding maken met één AEM. | ✓ | Nee | ✓ |
 | Ondersteuning voor meerdere AEM omgevingen die verbinding maken met één Workfront-omgeving | Gebruikers in één Workfront-omgeving kunnen middelen verzenden of koppelen tussen meerdere AEM. | ✓ | ✓ | ✓ |
 | **Metagegevens** |
-| Metagegevens Workfront-element toewijzen aan AEM Assets | Workfront-object en aangepaste formuliereigenschappen kunnen worden toegewezen aan AEM eigenschappen van metagegevens van elementen. Waarden worden geduwd op eerste upload/verbinding. | ✓ | ✓ | ✓ |
+| Metagegevens Workfront-element toewijzen aan AEM Assets | Workfront-object en aangepaste formuliereigenschappen kunnen worden toegewezen aan AEM eigenschappen van metagegevens van elementen. Waarden worden geduwd op aanvankelijke upload/verbinding. | ✓ | ✓ | ✓ |
 | Automatisch aangepaste Forms voor documenten maken in Workfront | Voeg aangepaste formulieren toe aan Workfront-documenten, -taken en -problemen met behulp van AEM workflows. | Nee | ✓ | Nee |
 | Automatisch in twee richtingen bijwerken van metagegevens tussen AEM Assets en Workfront | Metagegevens automatisch bijwerken tussen AEM Assets en Workfront. Het middel moet aanvankelijk van Workfront aan AEM worden geduwd en de activa van Workfront moeten meta-gegevens aan AEM activa voor bidirectionele meta-gegevensupdates worden in kaart gebracht om geschikt te werken. | Nee | ✓ | Nee |
 | Real-time weergave in Workfront voor metagegevens die zijn toegewezen aan AEM | Bekijk de bijgewerkte metagegevens die zijn toegewezen aan AEM in de deelvensters Documentdetails en Documentoverzicht van Workfront. | ✓ | Nee | ✓ |
 | Real-time push van bijgewerkte Workfront-metagegevens naar AEM | Werk automatisch de toegewezen Workfront-metagegevens bij naar AEM zonder een element of een nieuwe versie van een element te herstellen. | ✓ | Nee | ✓ |
 | Workfront-metagegevens toewijzen aan AEM Assets-mappen | Metagegevens van Workfront-projecten synchroniseren met gekoppelde AEM. | Nee | ✓ | ✓ |
 | Metagegevensupdates AEM met nieuwe versies | U kunt een configuratie in AEM maken om te bepalen of een nieuw versioned element in Workfront ook wijzigingen in de metagegevens doorvoert. | Nee | ✓ | Nee |
-| AEM metagegevens automatisch bijwerken bij wijzigingen in Aangepast Forms in Workfront | AEM kunt u zich abonneren op de updates van de documentformulieren in Workfront. Als gevolg hiervan worden bij updates van de metagegevens van het aangepaste Workfront-document de waarden voor de toegewezen AEM gewijzigd. | Nee | ✓ | Nee |
+| AEM metagegevens automatisch bijwerken bij wijzigingen in Aangepast Forms in Workfront | AEM kunt u zich abonneren op de updates van de documentformulieren in Workfront. Als gevolg hiervan worden bij updates van de metagegevens van het aangepaste Workfront-document de waarden voor de toegewezen AEM metagegevensvelden bewerkt. | Nee | ✓ | Nee |
 | **Workflows (uit-de-box)** |
 | Nieuwe proefversie maken op gekoppelde elementen | Na het koppelen van een element in Workfront kan automatisch een bewijs worden gegenereerd. | Nee | Aangepast | Nee |
 | Status instellen voor Workfront-objecten | Workfront-objectstatussen instellen op basis van configureerbare voorwaarden met behulp van AEM workflows | Nee | ✓ | Binnenkort |

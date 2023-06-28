@@ -5,7 +5,7 @@ role: Admin
 feature: Integrations
 exl-id: 087bc811-e8f8-4db5-b066-627a9b082f57
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 39930967e2f423b7fbbc79bcb85f78d15809e97d
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 1%
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/integrations/workfront-connector-install.html?lang=en) |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets-view/integrations/workfront-connector-install.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
 Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] installeert de verbeterde schakelaar. Bekijk voordat u gaat installeren de platformondersteuning en andere [eerste vereisten voor de aansluiting](https://one.workfront.com/s/csh?context=2467&amp;pubname=the-new-workfront-experience).
@@ -31,12 +31,11 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] installeer
 >
 >* Zie [Partnercertificatieexamen voor Workfront voor verbeterde connector voor Experience Manager Assets](https://solutionpartners.adobe.com/solution-partners/home/applications/experience_cloud/workfront/journey/dev_core.html). Voor informatie over het examen, zie [Handleiding voor Examen](https://express.adobe.com/page/Tc7Mq6zLbPFy8/).
 
-
 Voer de volgende stappen uit om de aansluiting te installeren:
 
 1. Download de connector van [[!DNL Software Distribution] link](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/product/assets/workfront-tools.ui.apps.zip).
 1. [De firewall configureren](https://one.workfront.com/s/document-item?bundleId=the-new-workfront-experience&amp;topicId=Content%2FAdministration_and_Setup%2FGet_started-WF_administration%2Fconfigure-your-firewall.html).
-1. Toestaan dat in de verzender HTTP-headers met de naam `authorization`, `username`, en `apikey`. Toestaan `GET`, `POST`, en `PUT` verzoeken om `/bin/workfront-tools`.
+1. Toestaan dat in de Dispatcher HTTP-headers met de naam `authorization`, `username`, en `apikey`. Toestaan `GET`, `POST`, en `PUT` verzoeken om `/bin/workfront-tools`.
 1. Controleer of de volgende paden niet bestaan in [!DNL Experience Manager] opslagplaats:
 
    * `/apps/dam/gui/coral/components/admin/schemaforms/formbuilder`

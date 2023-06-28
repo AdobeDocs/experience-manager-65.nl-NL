@@ -10,14 +10,19 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
 exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1080'
 ht-degree: 0%
 
 ---
 
 # Standaardvalidatiefoutenberichten voor adaptieve formulieren {#standard-validation-error-messages}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
 
 Aangepaste formulieren valideren de invoer die u in velden opgeeft op basis van vooraf ingestelde validatiecriteria. De validatiecriteria verwijzen naar de aanvaardbare invoerwaarden voor velden in een adaptieve vorm. U kunt de validatiecriteria instellen op basis van de gegevensbron die u gebruikt bij het adaptieve formulier. Als u bijvoorbeeld RESTful-webservices gebruikt als gegevensbron, kunt u de validatiecriteria definiëren in een Swagger-definitiebestand.
 

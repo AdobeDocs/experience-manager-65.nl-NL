@@ -2,15 +2,20 @@
 title: Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina
 description: Ontdek hoe u moeiteloos een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer stapsgewijze technieken en tips en trucs voor het integreren van dynamische en aanpasbare formulieren in uw website en het optimaliseren van uw digitale ervaringen voor maximale impact.
 feature: Adaptive Forms
-source-git-commit: 8f2c8964c2a6c2f0fcb446b7bca1f8cb822906f7
+exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
+source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
 workflow-type: tm+mt
-source-wordcount: '2810'
+source-wordcount: '2831'
 ht-degree: 0%
 
 ---
 
-
 # Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina {#create-or-add-an-adaptive-form-to-aem-sites-page}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/create-or-add-an-adaptive-form-to-aem-sites-page.html) |
 
 Met AEM Forms kunt u naadloos adaptieve formulieren opnemen in uw webpagina&#39;s. Zo kunnen bezoekers formulieren op een gemakkelijke manier invullen en verzenden zonder de pagina waarop ze staan te verlaten. Op die manier kunnen ze moeiteloos betrokken blijven bij andere elementen van de website terwijl ze actief met het formulier communiceren.
 
@@ -246,7 +251,3 @@ Bij het verzenden van een formulier kunt u de gebruiker omleiden naar een andere
    * Als u een omleidings-URL wilt configureren, selecteert u bij Verzenden de optie Omleiden naar URL en geeft u een absoluut adres, een omleidings-URL of een relatief pad van een AEM Sites-pagina op.
 
    * Als u een aangepast bericht of een bedankbericht wilt configureren, selecteert u bij Verzenden de optie Bericht tonen en geeft u een bericht op in het vak Berichtinhoud. Het is een tekstvak met tekstopmaak. U kunt de optie Volledig scherm gebruiken om alle beschikbare tekstitems met tekstopmaak weer te geven.
-
-
-
-

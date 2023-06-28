@@ -11,7 +11,7 @@ discoiquuid: 4c53dfc0-25ca-419d-abfe-cf31fc6ebf61
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 031c683029c61f8f49c07d276c27e05b3fcfd5fc
+source-git-commit: 294a7de1c777c49acf8590ec0900b0342f01e7eb
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 0%
@@ -75,7 +75,7 @@ Zodra de reCAPTCHA Enterprise-service is ingeschakeld, is deze beschikbaar voor 
 ![reCAPTCHA Enterprise](/help/forms/using/assets/recaptcha1-enterprise.png)
 
 
-## Google reCAPTCHA v2 configureren {#steps-to-implement-reCAPTCHA-v2-in-forms}
+### Google reCAPTCHA v2 configureren {#steps-to-implement-reCAPTCHA-v2-in-forms}
 
 1. Verkrijgen [reCAPTCHA API-sleutelpaar](https://www.google.com/recaptcha/admin) uit Google. Het omvat een **sitesleutel** en **geheime sleutel**.
 1. Configuratiecontainer maken voor cloudservices.
@@ -335,4 +335,4 @@ public interface GuideCaptchaValidator {
 
 `captchaPropertyNodePath` Verwijst naar de middelweg van de component CAPTCHA in de Verschuivende bewaarplaats. Gebruik deze eigenschap om details op te nemen die specifiek zijn voor de component CAPTCHA. Bijvoorbeeld: `captchaPropertyNodePath` omvat informatie voor de reCAPTCHA wolkenconfiguratie die op de component CAPTCHA wordt gevormd. De informatie over de cloudconfiguratie biedt **[!UICONTROL Site Key]** en **[!UICONTROL Secret Key]** instellingen voor de implementatie van de reCAPTCHA-service.
 
-`userResponseToken` verwijst naar de `g_reCAPTCHA_response` die wordt gegenereerd nadat een CAPTCHA in een formulier is opgelost.
+`userResponseToken` Verwijst naar de `g_reCAPTCHA_response` die wordt gegenereerd nadat een CAPTCHA in een formulier is opgelost.

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '3371'
+source-wordcount: '3392'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Raadpleeg de volgende secties voor meer informatie over het gebruik van videocom
 
 >[!NOTE]
 >
->Als Dynamic Media Classic (Scene7)-middelen niet correct worden weergegeven, controleert u of Dynamic Media [uitgeschakeld](/help/assets/config-dynamic.md#disabling-dynamic-media) en vernieuw vervolgens de pagina.
+>Als Dynamic Media Classic (Scene7)-elementen niet correct worden weergegeven, controleert u of Dynamic Media [uitgeschakeld](/help/assets/config-dynamic.md#disabling-dynamic-media) en vernieuw vervolgens de pagina.
 
 ## Handmatig publiceren naar Dynamic Media Classic (Scene7) van middelen {#manually-publishing-to-scene-from-assets}
 
@@ -49,6 +49,7 @@ U kunt digitale middelen naar Dynamic Media Classic (Scene7) publiceren vanuit d
 >[!NOTE]
 >
 >Experience Manager publiceert asynchroon naar Dynamic Media Classic (Scene7). Nadat u **[!UICONTROL Publish]** kan het enkele seconden duren voordat uw middelen naar Dynamic Media Classic (Scene7) zijn gepubliceerd.
+>
 
 ### Publiceren vanaf de middelenconsole {#publishing-from-the-assets-console}
 
@@ -203,9 +204,9 @@ U stelt deze configuratieopties in door bijvoorbeeld een Dynamic Media Classic-c
 
 De HTML5 component van het Gezoem toont een groter beeld wanneer u + knoop drukt.
 
-Het element heeft onderaan zoomgereedschappen. Selecteren **[!UICONTROL +]** vergroten. Selecteren **[!UICONTROL -]** om te verminderen. Het selecteren van **[!UICONTROL x]** Als u de zoompijl opnieuw instelt, wordt de oorspronkelijke grootte van de afbeelding hersteld. Selecteer de diagonale pijlen zodat u deze op volledig scherm kunt weergeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](#settings-common-to-all-scene-components).
+Het element heeft onderaan zoomgereedschappen. Selecteren **[!UICONTROL +]** vergroten. Selecteren **[!UICONTROL -]** om te verminderen. Het selecteren van **[!UICONTROL x]** of met de zoompijl opnieuw instellen wordt de oorspronkelijke grootte van de afbeelding hersteld. Selecteer de diagonale pijlen zodat u deze op volledig scherm kunt weergeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](#settings-common-to-all-scene-components).
 
-![](do-not-localize/chlimage_1-3.png)
+![Afbeelding van tulpbloemen in de HTML5-zoomcomponent.](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
 
@@ -223,7 +224,7 @@ In de HTML5 Flyout-component wordt het element weergegeven als een gesplitst sch
 
 Met de Dynamic Media Classic (Scene7) Image-component kunt u Dynamic Media Classic-functionaliteit (Scene7) aan uw afbeeldingen toevoegen, zoals wijzigingstoetsen voor Dynamic Media Classic (Scene7), voorinstellingen voor afbeeldingen of viewers en verscherpen. De Dynamic Media Classic (Scene7)-afbeeldingscomponent is vergelijkbaar met andere afbeeldingscomponenten in Experience Manager met speciale Dynamic Media Classic-functionaliteit (Scene7). In dit voorbeeld heeft de afbeelding de optie Dynamic Media Classic (Scene7) URL, `&op_invert=1` toegepast.
 
-![](do-not-localize/chlimage_1-4.png)
+![Afbeelding van een bol binnen de Dynamic Media Classic-afbeeldingscomponent (scène 7)](do-not-localize/chlimage_1-4.png)
 
 **Titel, Alt-tekst** - Voeg op het tabblad Geavanceerd een titel toe aan de afbeelding en alternatieve tekst voor gebruikers die afbeeldingen hebben uitgeschakeld.
 
@@ -312,7 +313,7 @@ Zie [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) 
 
 ### Bekende beperkingen voor de video-component {#known-limitations-for-the-video-component}
 
-Adobe DAM en WCM laten zien of een primaire bronvideo is geüpload. Deze proxy-elementen worden niet weergegeven:
+Adobe DAM en WCM tonen als een primaire bronvideo wordt geupload. Deze proxy-elementen worden niet weergegeven:
 
 * Dynamic Media Classic (Scene7) gecodeerde uitvoeringen
 * Dynamic Media Classic (Scene7) adaptieve videosets
@@ -331,16 +332,15 @@ Als u veelvoudige configuraties hebt, toont de Experience Manager door gebrek [s
 >* Wanneer [Beveiligde voorvertoning is ingeschakeld](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), zowel gepubliceerde als niet-gepubliceerde middelen op Dynamic Media Classic (Scene7) worden wel weergegeven in de Dynamic Media Classic (Scene7)-inhoudbrowser.
 >* Als u niet ziet **[!UICONTROL Dynamic Media Classic (Scene7)]** of de **[!UICONTROL S7]** als optie in de inhoudbrowser, moet u [Dynamic Media Classic (Scene7) configureren voor samenwerking met Experience Manager](/help/sites-administering/scene7.md).
 >* Voor video ondersteunt de Dynamic Media Classic (Scene7)-inhoudbrowser:
-   >   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
-   >   * Eén MP4-video
-   >   * Single F4V-video
-
+>   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
+>   * Eén MP4-video
+>   * Single F4V-video
 
 ### Bladeren door inhoud {#browsing-content-in-the-classic-ui}
 
 Door inhoud in Dynamic Media Classic (Scene7) te bladeren door **[!UICONTROL S7]** tab.
 
-U kunt de configuratie veranderen u toegang hebt door de configuratie te selecteren. De mappen veranderen, afhankelijk van de configuratie die u selecteert.
+U kunt de configuratie veranderen u toegang hebt door de configuratie te selecteren. De mappen veranderen afhankelijk van de geselecteerde configuratie.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -357,7 +357,6 @@ Elementen worden standaard weergegeven op bestandsnaam. U kunt resultaten echter
 >* Single F4V-video
 >
 
-
 ### Zoeken naar Dynamic Media Classic (Scene7)-elementen met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
 
 Het zoeken naar Dynamic Media Classic (Scene7)-elementen lijkt op het zoeken naar Experience Managers. De uitzondering is dat wanneer u zoekt, u eigenlijk een verre mening van de activa in het systeem van Dynamic Media Classic (Scene7) ziet, eerder dan hen direct in Experience Manager in te voeren.
@@ -366,7 +365,7 @@ U kunt zowel de klassieke interface als de interface met geoptimaliseerde aanrak
 
 Wanneer u in een van beide UI zoekt, kunt u filteren op de volgende criteria (die hier in de voor aanraking geoptimaliseerde UI worden getoond):
 
-**Trefwoorden invoeren** - U kunt elementen zoeken op naam. Wanneer u de trefwoorden zoekt, geeft u op waar de bestandsnaam mee begint. Als u bijvoorbeeld het woord &quot;zwemmen&quot; typt, wordt gezocht naar namen van elementbestanden die met die letters in die volgorde beginnen. Zorg ervoor dat u Enter selecteert nadat u de term hebt getypt om het element te zoeken.
+**Trefwoorden invoeren** - U kunt elementen zoeken op naam. Wanneer u de trefwoorden zoekt, geeft u op waar de bestandsnaam mee begint. Als u bijvoorbeeld het woord &quot;zwemmen&quot; typt, wordt gezocht naar namen van elementbestanden die met die letters in die volgorde beginnen. Zorg ervoor dat u `Enter` nadat u de term hebt getypt om het element te zoeken.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -397,7 +396,6 @@ Standaard zoekt de Experience Manager naar de geselecteerde map en naar alle sub
 >* Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke uitvoering (alleen &#42;.mp4) en de gecodeerde uitvoering.
 >* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
 >
-
 
 **Status publiceren** - U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus: Niet gepubliceerd of gepubliceerd. Als u geen publicatiestatus selecteert, zoekt de Experience Manager standaard naar alle publicatiestatussen.
 

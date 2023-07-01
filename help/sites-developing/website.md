@@ -1,8 +1,6 @@
 ---
 title: Een volledig functionele website (JSP) maken
-seo-title: Create a Fully-Featured Website (JSP)
 description: Met deze zelfstudie kunt u een volledig uitgeruste website maken met AEM
-seo-description: This tutorial enables you to create a fully featured website with AEM
 uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +9,7 @@ content-type: reference
 discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
 source-wordcount: '4935'
 ht-degree: 1%
@@ -24,7 +22,7 @@ ht-degree: 1%
 >
 >In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals in detail wordt beschreven in het artikel [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
 
-Met deze zelfstudie kunt u een volledig uitgeruste website maken met Adobe Experience Manager (AEM). De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkeling vindt plaats in een auteur-omgeving.
+Met deze zelfstudie kunt u een volledig uitgeruste website maken met Adobe Experience Manager (AEM). De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkelingen vinden plaats in een auteursomgeving.
 
 In deze zelfstudie wordt beschreven hoe u:
 
@@ -293,8 +291,8 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
       * **Naam:** sling:resourceSuperType
       * **Type:** String
       * **Waarde:** basis/componenten/pagina
-   1. Klik op Alles opslaan.
 
+   1. Klik op Alles opslaan.
 
 1. Open de `contentpage.jsp` bestand onder `/apps/mywebsite/components/contentpage` en vervang de bestaande code door de volgende code:
 
@@ -313,7 +311,7 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Open de paginabron om de elementen javascript en HTML te zien die de scripts head.jsp en body.jsp genereerden. Het volgende scriptfragment opent Sidetrap wanneer u de pagina opent:
+   Open de paginabron om de elementen javascript en HTML te zien die de scripts head.jsp en body.jsp genereerden. Het volgende scriptfragment opent Sidekick wanneer u de pagina opent:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -481,7 +479,7 @@ Het onderwerp opnemen in de component ContentPage:
 De component Pagina definieert eigenschappen waarmee u ondertitels voor pagina&#39;s kunt opgeven. Voeg ondertitels toe die informatie over de pagina-inhoud bevatten.
 
 1. Open in uw browser de **Producten** pagina.
-1. Op de Sidetrap **Pagina** tabblad, klikt u op **Pagina-eigenschappen**.
+1. Op de Sidekick **Pagina** tabblad, klikt u op **Pagina-eigenschappen**.
 1. Vouw op het tabblad Standaard van het dialoogvenster de optie **Meer titels en beschrijvingen,** en voor de **Ondertitel** eigenschap, type **wat wij doen**. Klikken **OK**.
 1. Herhaal de vorige stappen om de ondertitel toe te voegen **over onze services** aan de **Services** pagina.
 1. Herhaal de vorige stappen om de ondertitel toe te voegen **het vertrouwen dat we verdienen** aan de **Klanten** pagina.
@@ -524,9 +522,9 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
 
 1. De volgende code kopiëren naar `navimage.png.java.`De code breidt de klasse AbstractImageServlet uit:
 
-   * [AbstractImageServlet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) Maakt een ImageContext-object dat de eigenschappen van de huidige bron opslaat.
+   * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) Maakt een ImageContext-object dat de eigenschappen van de huidige bron opslaat.
    * De bovenliggende pagina van de bron wordt geëxtraheerd uit het ImageContext-object. De paginatitel en -ondertitel worden vervolgens opgehaald.
-   * [ImageHelper](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ImageHelper.html) wordt gebruikt om de afbeelding te genereren op basis van het bestand navimage_bg.jpg van het siteontwerp, de paginatitel en de subtitel van de pagina.
+   * [ImageHelper](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/ImageHelper.html) wordt gebruikt om de afbeelding te genereren op basis van het bestand navimage_bg.jpg van het siteontwerp, de paginatitel en de subtitel van de pagina.
 
    ```java
    package apps.mywebsite.components.contentpage;
@@ -656,7 +654,7 @@ Maak de component listchildren die een lijst met paginakoppelingen genereert die
 
 #### Productpagina&#39;s maken {#creating-product-pages}
 
-Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee specifieke producten beschrijft, plaatst u een titel, een beschrijving, en een datum.
+Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina die twee specifieke producten beschrijft, plaatst u een titel, een beschrijving, en een datum.
 
 1. Selecteer in de mapstructuur van de pagina Websites het item Websites/Mijn website/Engels/Producten en klik op Nieuw > Nieuwe pagina.
 1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op Maken:
@@ -679,6 +677,7 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee spe
       * Naam: `jcr:description`
       * Type: `String`
       * Waarde: `This is a description of the Product 1!.`
+
    1. Klikken **Toevoegen**.
    1. In de **Eigenschappen** kunt u een andere eigenschap maken met de volgende waarden:
 
@@ -686,9 +685,8 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee spe
       * Type: String
       * Waarde: 14-02-2008
       * Klik op Toevoegen.
+
    1. Klik op Alles opslaan.
-
-
 
 1. Stel in CRXDE Lite een beschrijving en een datum in voor de pagina Product 2:
 
@@ -698,6 +696,7 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee spe
       * Naam: jcr:beschrijving
       * Type: String
       * Waarde: Dit is een beschrijving van Product 2!
+
    1. Klikken **Toevoegen**.
    1. Vervang in dezelfde tekstvakken de vorige waarden door de volgende waarden:
 
@@ -705,9 +704,8 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina, die twee spe
       * Type: String
       * Waarde: 11-05-2012
       * Klik op Toevoegen.
+
    1. Klik op Alles opslaan.
-
-
 
 #### De component List Children maken {#creating-the-list-children-component-1}
 
@@ -1031,16 +1029,16 @@ public class img_GET extends AbstractImageServlet {
 
 In deze sectie wordt beschreven hoe u een afbeelding instelt als uw logo in het dialoogvenster Ontwerpmodus.
 
-1. Open de pagina Producten in uw browser en klik op de knop Ontwerpen onder aan Sidetrap om de ontwerpmodus te activeren.
+1. Open de pagina Producten in uw browser en klik op de knop Ontwerpen onder aan de Sidekick om de ontwerpmodus te activeren.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![De knop Ontwerpen wordt aangegeven door een vierkant rechts.](do-not-localize/chlimage_1-1.png)
 
 1. Klik in het ontwerp van de logobalk op Bewerken om het dialoogvenster te gebruiken voor het bewerken van de instellingen voor de logocomponent.
 1. Klik in het dialoogvenster in het deelvenster Afbeelding, blader naar de afbeelding logo.png die u uit het bestand mywebsite.zip hebt geëxtraheerd en klik op OK.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
-1. Klik op het driehoekje op de titelbalk van de sidelschop om terug te keren naar de modus Bewerken.
+1. Klik op het driehoekje op de titelbalk van de Sidekick om terug te keren naar de modus Bewerken.
 
    ![chlimage_1-3](assets/chlimage_1-3.jpeg)
 
@@ -1206,7 +1204,7 @@ In deze sectie gebruikt u het knooppunt cq:editConfig om u in staat te stellen e
 
 #### Het pictogram toevoegen {#adding-the-icon}
 
-In deze sectie voegt u het pictogram toe dat naast de afbeeldingscomponent wordt weergegeven wanneer deze in Sidetrap wordt weergegeven:
+In deze sectie voegt u het pictogram toe dat naast de afbeeldingscomponent wordt weergegeven wanneer deze in de Sidekick wordt weergegeven:
 
 1. Klik in CRXDE Lite met de rechtermuisknop op het bestand `/libs/foundation/components/image/icon.png` en selecteert u **Kopiëren.**
 1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/image` en klik op **Plakken** en klik vervolgens op **Alles opslaan**.
@@ -1220,7 +1218,7 @@ In deze sectie ziet u de **Producten** en voeg de afbeeldingscomponent toe aan h
 1. Klik op de knop Bewerken om het ontwerpdialoogvenster van par te bewerken.
 1. In het dialoogvenster wordt een lijst met **Toegestane componenten** wordt getoond; navigeren naar **MyWebsite**, selecteert u de **Mijn afbeeldingscomponent** en klik op **OK.**
 1. Terug naar **bewerkingsmodus.**
-1. Dubbelklik op het parsys-frame (ingeschakeld) **Componenten of elementen hierheen slepen**). De **Nieuwe component invoegen** en **Sidetrap** kiezers zien er als volgt uit:
+1. Dubbelklik op het parsys-frame (ingeschakeld) **Componenten of elementen hierheen slepen**). De **Nieuwe component invoegen** en **Sidekick** kiezers zien er als volgt uit:
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -1281,10 +1279,10 @@ Het invoervak voor de zoekopdracht ziet er als volgt uit **Engels** pagina:
       * Titel: Mijn zoekcomponent
       * Omschrijving: Dit is mijn zoekcomponent
       * Groep: MyWebsite
+
    1. Klik op Volgende. Klik nogmaals op Volgende.
    1. Klik in het deelvenster Toegestane bovenliggende elementen op de knop + en typ `*/parsys`.
    1. Klik op Volgende en vervolgens op OK.
-
 
 1. Klik op Alles opslaan.
 1. Kopieer de volgende knooppunten en plak deze naar apps/mywebsite/components/search node:
@@ -1500,11 +1498,11 @@ Ga als volgt te werk om een invoervak voor zoekopdrachten op te nemen in de link
 In deze sectie voegt u uw zoekcomponent toe aan het alineasysteem.
 
 1. Open de zoekpagina in uw browser.
-1. Klik in de Sidetrap op het pictogram van de ontwerpmodus.
+1. Klik in de Sidekick op het pictogram van de ontwerpmodus.
 1. Klik op Bewerken in het ontwerpblok van het par-blok (onder de titel Zoeken).
 1. Blader in het dialoogvenster omlaag naar de  **Mijn websites** groep, selecteren **Mijn zoekcomponent** en klik op **OK**.
-1. Klik op het driehoekje bij Sidetrap om terug te keren naar de bewerkingsmodus.
-1. Sleep de Mijn Component van het Onderzoek van Sidetrap in het parsys kader. Het ziet er als volgt uit:
+1. Klik in de Sidekick op het driehoekje om terug te keren naar de bewerkingsmodus.
+1. Sleep de Mijn Component van het Onderzoek van de Sidekick in het parsys kader. Het ziet er als volgt uit:
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 

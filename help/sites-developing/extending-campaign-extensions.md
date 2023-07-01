@@ -8,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '510'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ In dit voorbeeld is een nieuw aangepast JSSP-bestand gemaakt en wordt dat vanuit
 
 1. Als u in Adobe Campaign een JSSP-bestand wilt maken, klikt u op de knop **Nieuw** pictogram.
 
-   ![](do-not-localize/chlimage_1-4a.png)
+   ![Het pictogram Nieuw, zoals wordt aangegeven door een pagina met een ster in de linkerbovenhoek.](do-not-localize/chlimage_1-4a.png)
 
 1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld: **cus:custom.jssp** wordt gebruikt (in de **cus** naamruimte).
 

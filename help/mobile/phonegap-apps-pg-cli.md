@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -89,10 +89,10 @@ phonegap run ios
 >1. Navigeren naar deze nieuwe map (cd-test)
 >1. Uitvoeren `phonegap create helloWorld`
 >1. Navigeer in helloWorld (cd helloWorld)
->1. Uitvoeren `phonegap run android` (of vervang android door iOS zoals hierboven).
->1. Emulator opent het runnen van uw onlangs gecreeerd App PhoneGap, die &quot;Apparaat Klaar&quot;zegt als de Brug JavaScript aan inheems operationeel is.
+>1. Uitvoeren `phonegap run android` (of vervang Android™ door iOS zoals hierboven beschreven).
+1. Emulator opent het runnen van uw onlangs gecreeerd App PhoneGap, die &quot;Apparaat Klaar&quot;zegt als de Brug JavaScript aan inheems operationeel is.
 >
->Dit het oplossen van problemen verifieert dat uw CLI van PhoneGap ontwikkelomgeving correct loopt.
+Dit het oplossen van problemen verifieert dat uw CLI van PhoneGap ontwikkelomgeving correct loopt.
 
 ## Foutopsporing in JavaScript met Safari- en IOS-foutopsporing {#debug-javascripts-with-safari-and-ios-debug}
 
@@ -147,13 +147,13 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 
 ![chlimage_1-49](assets/chlimage_1-49.png)
 
-* Gebruik de bedieningsknoppen om door te gaan met uitvoeren, stap over, stap in en stap uit van methoden:
+* Gebruik de besturingsknoppen om door te gaan met de uitvoering, stap over, stap in en stap uit de methoden:
 
-![](do-not-localize/chlimage_1-4.png)
+![Vijf verschillende werkende die controleknopen in een horizontale rij worden gericht.](do-not-localize/chlimage_1-4.png)
 
 >[!NOTE]
 >
->Houd de muis boven de huidige methode om de waarden van variabelen weer te geven.
+Houd de muis boven de huidige methode om de waarden van variabelen weer te geven.
 
 ## De volgende stappen {#the-next-steps}
 

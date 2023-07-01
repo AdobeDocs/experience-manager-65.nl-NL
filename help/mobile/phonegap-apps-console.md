@@ -1,8 +1,6 @@
 ---
 title: Apps maken en bewerken met de toepassingsconsole
-seo-title: Creating and Editing Apps Using the Apps Console
 description: Volg deze pagina voor meer informatie over het maken en bewerken van apps met de toepassingsconsole.
-seo-description: Follow this page to learn about creating and editing apps using apps console.
 uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '2615'
+source-wordcount: '2695'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In het AEM ontwikkelingsproces voor mobiele toepassingen wordt erkend dat gebruikers met verschillende expertise bijdragen aan de ontwikkeling van mobiele toepassingen. De volgende procesafbeelding illustreert de algemene volgorde waarin inhoudsauteurs en toepassingsontwikkelaars taken uitvoeren.
 
@@ -62,7 +60,7 @@ De taalpagina heeft twee doelen:
 
 ### De startpagina {#the-home-page}
 
-De pagina Home of index.html van een taalvariatie van een toepassing wordt weergegeven wanneer de toepassing wordt geopend. De startpagina biedt gebruikers een menu met koppelingen naar verschillende pagina&#39;s in de toepassing. Met het alineasysteem kunt u componenten aan de pagina toevoegen om inhoud te maken.
+De pagina Home of index.html van een taalvariatie van een toepassing wordt weergegeven wanneer de toepassing wordt geopend. De homepage voorziet gebruikers van een menu van verbindingen aan diverse pagina&#39;s in de toepassing. Met het alineasysteem kunt u componenten aan de pagina toevoegen om inhoud te maken.
 
 ## Een mobiele toepassing maken {#creating-a-mobile-application}
 
@@ -89,9 +87,9 @@ Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en
 In de volgende procedure wordt de Touch UI gebruikt om een mobiele toepassing te maken.
 
 1. Klik op Apps op de rail.
-1. Klik of tik op het pictogram Maken.
+1. Klik op het pictogram Maken.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![Het pictogram Maken dat wordt aangegeven door een plusteken binnen een vierkant.](do-not-localize/chlimage_1-7.png)
 
 1. (Optioneel) Geef op het tabblad Geavanceerd een beschrijving voor de toepassing op en wijzig de URL van de server indien nodig.
 1. (Optioneel) Als u de toepassing compileert met PhoneGap Build, selecteert u op het tabblad Build de configuratie die u wilt gebruiken.
@@ -114,30 +112,30 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 1. Klik of tik op Apps op de rail.
 1. Selecteer de toepassing die u wilt configureren en klik op het pictogram Pagina-eigenschappen weergeven.
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Het pictogram Pagina-eigenschappen weergeven dat wordt aangegeven met de letter I in een cirkel.](do-not-localize/chlimage_1-8.png)
 
 1. Als u eigenschapswaarden wilt wijzigen, klikt of tikt u op het pictogram Bewerken.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![Het pictogram Bewerken dat wordt aangegeven door een potlood.](do-not-localize/chlimage_1-9.png)
 
 1. Configureer de eigenschappen Standaard en Geavanceerd en klik of tik op het pictogram Gereed.
 
-   ![](do-not-localize/chlimage_1-10.png)
+   ![Het pictogram Done dat wordt aangeduid door een vinkje.](do-not-localize/chlimage_1-10.png)
 
 #### Vorm een Variatie van de Taal van de Toepassing {#configure-a-language-variation-of-the-application}
 
-1. Klik of tik op Apps op de rail.
-1. Klik hierop om de mobiele toepassing die u wilt bewerken, weer te geven in de beheerconsole voor apps. Selecteer de taalversie van de toepassing die u wilt configureren en klik op het pictogram Toepassingseigenschappen weergeven.
+1. Klik op Apps op de rail.
+1. Klik om de mobiele toepassing die u wilt bewerken, in te roepen in de Admin Console apps. Selecteer de taalversie van de toepassing die u wilt configureren en klik op het pictogram Toepassingseigenschappen weergeven.
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![Het pictogram Toepassingseigenschappen weergeven dat wordt aangegeven met de letter I in een cirkel.](do-not-localize/chlimage_1-11.png)
 
 1. Als u eigenschapswaarden wilt wijzigen, klikt of tikt u op het pictogram Bewerken.
 
-   ![](do-not-localize/chlimage_1-12.png)
+   ![Het pictogram Bewerken dat wordt aangegeven door een potlood.](do-not-localize/chlimage_1-12.png)
 
 1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Samenstellen en Analyse en klik of tik op het pictogram Gereed.
 
-   ![](do-not-localize/chlimage_1-13.png)
+   ![Het pictogram Done dat wordt aangeduid door een vinkje.](do-not-localize/chlimage_1-13.png)
 
 ### De inhoud van een mobiele toepassing ontwerpen {#authoring-the-content-of-a-mobile-application}
 
@@ -167,7 +165,7 @@ Voer de volgende procedure uit op de instantie waar u het cachegeheugen wilt bij
 1. Klik of tik op Apps op de rail en klik of tik op uw toepassing.
 1. Selecteer de welkomstpagina en klik of tik op het pictogram Cache bijwerken.
 
-   ![](do-not-localize/chlimage_1-14.png)
+   ![Het pictogram Cache bijwerken dat wordt aangegeven door een gestreepte streepte streepjeslijn met daarop een recyclingsymbool.](do-not-localize/chlimage_1-14.png)
 
 ### App-sjablonen gebruiken {#using-app-templates}
 
@@ -183,7 +181,7 @@ Het meest recente AEM Apps 6.1 voorbeeldenpakket bevat een bijgewerkte versie va
 Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 
 1. Zorg ervoor dat u het nieuwste AEM Apps 6.1 functiepakket en referentiemonsteringspakketten hebt geïnstalleerd
-1. Klik op Apps van de linkerspoorstaaf.
+1. Klik Apps van de linkerspoorstaaf.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
@@ -195,7 +193,7 @@ Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 1. Klik op Next.
 1. Geef een app-id en -titel op, maar u wilt mogelijk ook een naam en een beschrijving opnemen.
 
-   1. Bovendien kunt u een PNG-bestand (ondersteunde PhoneGap-pictogramindeling) opgeven als pictogram door AEM elementen te bladeren.
+   1. U kunt ook een PNG-bestand (ondersteunde PhoneGap-pictogramindeling) opgeven als pictogram door AEM elementen te bladeren.
    1. U kunt al deze velden bewerken nadat de app is gemaakt in de tegel App beheren. Met uitzondering van de toepassings-id kunt u deze niet wijzigen nadat de toepassings-id is ingesteld.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -222,7 +220,7 @@ Als u de toepassing wilt openen, klikt u in de track op Mobiele toepassingen en 
 Elke pagina van de mobiele app bevat de volgende functies:
 
 * Een knop Terug om terug te keren naar de bovenliggende pagina. De knop Terug wordt niet weergegeven op de startpagina.
-* Een uitvouwbare rail die een menu van bevelen en verbindingen biedt:
+* Een uitbreidbare rail met een menu van opdrachten en koppelingen:
 
    * Open de pagina Locaties.
    * Open het winkelwagentje.
@@ -251,7 +249,7 @@ Elke categoriepagina gebruikt dezelfde inhoudsstructuur als de pagina Verwerk. D
 
 ### De productpagina - de mobiele toepassing van Geometrixx {#the-products-page-geometrixx-mobile-app}
 
-Op de pagina Producten en de bijbehorende hiërarchie van onderliggende pagina&#39;s wordt een classificatiesysteem voor productpagina&#39;s geïmplementeerd. De laagste pagina&#39;s in elke vertakking van de hiërarchie zijn een productpagina die een ng component van het Product bevat.
+De pagina Producten en zijn hiërarchie van kindpagina&#39;s voeren een classificatiesysteem voor productpagina&#39;s uit. De laagste pagina&#39;s in elke vertakking van de hiërarchie zijn een productpagina die een ng component van het Product bevat.
 
 De pagina Producten is niet beschikbaar voor gebruikers van de toepassing. De pagina Gear biedt toegang tot elke productpagina.
 
@@ -269,7 +267,7 @@ Wanneer u de toepassing gebruikt, is de pagina News beschikbaar via de carrousel
 
 ### De pagina Over ons - Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
 
-De pagina Over ons bevat een aantal twee kolomrijcomponenten. Elke kolom bevat een component Image of Text. De componenten zijn bewerkbaar en in het alineasysteem kunt u componenten toevoegen.
+De pagina Info over ons bevat verschillende componenten Twee kolomrijen. Elke kolom bevat een component Image of Text. De componenten zijn bewerkbaar en in het alineasysteem kunt u componenten toevoegen.
 
 Wanneer u de toepassing gebruikt, is de pagina Over gebruikers beschikbaar via de carrousel op de Engelse pagina.
 
@@ -281,7 +279,7 @@ Wanneer u de toepassing gebruikt, is de pagina Locaties beschikbaar in de menuli
 
 ## Voorbeeld van mobiele componenten {#sample-mobile-components}
 
-Verschillende componenten zijn direct beschikbaar in Sidetrap wanneer u de pagina&#39;s van een mobiele toepassing ontwerpt. De componenten behoren tot de PhoneGap-componentgroep.
+Verschillende componenten zijn direct beschikbaar in Sidekick wanneer u pagina&#39;s van een mobiele toepassing ontwerpt. De componenten behoren tot de PhoneGap-componentgroep.
 
 ### Swipe Carousel {#swipe-carousel}
 

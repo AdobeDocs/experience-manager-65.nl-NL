@@ -1,8 +1,6 @@
 ---
 title: Uw gebruikersinterface testen
-seo-title: Testing Your UI
 description: AEM biedt een raamwerk voor het automatiseren van tests voor uw AEM UI
-seo-description: AEM provides a framework for automating tests for your AEM UI
 uuid: 408a60b5-cba9-4c9f-abd3-5c1fb5be1c50
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '737'
+source-wordcount: '771'
 ht-degree: 0%
 
 ---
@@ -26,13 +24,13 @@ ht-degree: 0%
 >
 >Zie [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-features.md).
 
-AEM biedt een raamwerk voor het automatiseren van tests voor uw AEM UI. Met behulp van het framework schrijft en voert u tests voor de gebruikersinterface rechtstreeks in een webbrowser uit. Het framework biedt een javascript API voor het maken van tests.
+AEM biedt een raamwerk voor het automatiseren van tests voor uw AEM UI. Met behulp van het framework schrijft en voert u tests voor de gebruikersinterface rechtstreeks in een webbrowser uit. Het framework biedt een JavaScript API voor het maken van tests.
 
-Het AEM testframework gebruikt Hobbes.js, een testbibliotheek die in Javascript is geschreven. Het Hobbes.js-framework is ontwikkeld voor het testen van AEM als onderdeel van het ontwikkelingsproces. Het framework is nu beschikbaar voor gebruik door het publiek om uw AEM toepassingen te testen.
+Het AEM testframework gebruikt Hobbes.js, een testbibliotheek die in JavaScript is geschreven. Het Hobbes.js-framework is ontwikkeld voor het testen van AEM als onderdeel van het ontwikkelingsproces. Het framework is nu beschikbaar voor gebruik door het publiek om uw AEM toepassingen te testen.
 
 >[!NOTE]
 >
->Raadpleeg Hobbes.js [documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html) voor volledige informatie over de API.
+>Raadpleeg Hobbes.js [documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html) voor volledige informatie over de API.
 
 ## Structuur van de tests {#structure-of-tests}
 
@@ -53,7 +51,7 @@ Ga via **Algemene navigatie -> Gereedschappen > Bewerkingen -> Testen**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
-Wanneer het openen van de console, zijn de Suites van de Test vermeld aan de linkerzijde samen met een optie om alle hen opeenvolgend in werking te stellen. De ruimte aan het recht die met een gevlokte achtergrond wordt getoond, is placeholder voor het tonen van paginainhoud aangezien de tests in werking stellen.
+Wanneer het openen van de console, zijn de Suites van de Test vermeld aan de linkerzijde samen met een optie om alle hen opeenvolgend in werking te stellen. De ruimte aan het recht die met een gevlokte achtergrond wordt getoond is een placeholder voor het tonen van paginainhoud aangezien de tests in werking stellen.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
@@ -63,11 +61,11 @@ Testsets kunnen afzonderlijk worden uitgevoerd. Wanneer u een testsuite uitvoert
 
 Een vinkje geeft aan dat een test is geslaagd:
 
-![](do-not-localize/chlimage_1-2.png)
+![Pictogram vinkje.](do-not-localize/chlimage_1-2.png)
 
 Een X-pictogram geeft aan dat een test is mislukt:
 
-![](do-not-localize/chlimage_1-3.png)
+![Mislukte testpictogram aangegeven door een X in een cirkel.](do-not-localize/chlimage_1-3.png)
 
 Een testsuite uitvoeren:
 
@@ -75,9 +73,9 @@ Een testsuite uitvoeren:
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Klik of tik op **Test uitvoeren** knop.
+1. Klikken **Test uitvoeren**.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Een afbeelding van de knop Test uitvoeren, aangegeven door een naar rechts wijzende aanwijzer binnen een cirkel.](do-not-localize/chlimage_1-4.png)
 
 1. De tijdelijke aanduiding wordt tijdens de test vervangen door pagina-inhoud.
 
@@ -95,9 +93,9 @@ Testsets worden opeenvolgend uitgevoerd in de volgorde waarin ze in de console w
 
 1. Tik op het deelvenster Tests of klik op **Alle tests uitvoeren** of de **Tests uitvoeren** onder de titel van de testsuite die u wilt uitvoeren.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Een afbeelding van de knop Alle tests uitvoeren en de knop Test uitvoeren, die wordt aangegeven door een naar rechts wijzende aanwijzer in een cirkel.](do-not-localize/chlimage_1-5.png)
 
-1. Tik of klik op de titel van de testcase om de resultaten van elke testcase weer te geven. Tikken of klikken op de naam van de test in het dialoogvenster **Resultaat** worden alle details weergegeven.
+1. Klik op de titel van de testcase om de resultaten van elke testcase weer te geven. Klik op de naam van de test in het dialoogvenster **Resultaat** worden alle details weergegeven.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -105,7 +103,7 @@ Testsets worden opeenvolgend uitgevoerd in de volgorde waarin ze in de console w
 
 De volgende procedure doorloopt u het maken en uitvoeren van een testsuite met [Wij.Detailinhoud](/help/sites-developing/we-retail.md), maar u kunt de test gemakkelijk wijzigen om een andere webpagina te gebruiken.
 
-Voor volledige informatie over het maken van uw eigen testsuites raadpleegt u de [Documentatie Hobbes.js API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/test-api/index.html).
+Voor volledige informatie over het maken van uw eigen testsuites raadpleegt u de [Documentatie Hobbes.js API](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Klik met de rechtermuisknop op de knop `/etc/clientlibs` map en klik op **Maken > Map maken**. Type `myTests` voor de naam en klik op **OK**.

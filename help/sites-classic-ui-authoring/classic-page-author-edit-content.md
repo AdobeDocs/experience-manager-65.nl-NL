@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1755'
+source-wordcount: '1836'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Inhoud wordt toegevoegd met [componenten](/help/sites-classic-ui-authoring/class
 >
 >Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
 
-## Sidetrap {#sidekick}
+## Sidekick {#sidekick}
 
 De assistent is een belangrijk hulpmiddel bij het ontwerpen van pagina&#39;s. Het zweeft wanneer het ontwerpen van een pagina, zodat is het altijd zichtbaar.
 
@@ -207,19 +207,19 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
 Er zijn twee pictogrammen in de onderrand van het hulpstuk die belangrijk zijn voor het voorvertonen van pagina&#39;s:
 
-![](do-not-localize/chlimage_1-5.png)
+![De onderrand van het hulpje met een horizontale rij van zeven pictogrammen. Twee van de pictogrammen aan het begin van de rij, het bewerkingspictogram en het pictogram van de voorvertoningsmodus, worden aangegeven met respectievelijk een potloodsymbool en een vergrootglassymbool.](do-not-localize/chlimage_1-5.png)
 
 * Met het potloodpictogram kunt u zien dat u in de bewerkingsmodus werkt waar u inhoud kunt toevoegen, wijzigen, verplaatsen of verwijderen.
 
-   ![](do-not-localize/chlimage_1-6.png)
+  ![Het pictogram Bewerken dat wordt aangegeven door een potloodsymbool.](do-not-localize/chlimage_1-6.png)
 
 * Met het vergrootglaspictogram kunt u de voorvertoningsmodus selecteren waarin de pagina wordt weergegeven zoals deze wordt weergegeven in de publicatieomgeving (pagina&#39;s moeten soms ook worden vernieuwd):
 
-   ![](do-not-localize/chlimage_1-7.png)
+  ![Voorvertoningsmoduspictogram dat wordt aangeduid door een vergrootglassymbool.](do-not-localize/chlimage_1-7.png)
 
-   In de voorvertoningsmodus wordt het hulpgereedschap kleiner, klikt u op het pijlpictogram omlaag om terug te keren naar de bewerkingsmodus:
+  In de voorvertoningsmodus wordt het hulpgereedschap kleiner, klikt u op het pijlpictogram omlaag om terug te keren naar de bewerkingsmodus:
 
-   ![](do-not-localize/chlimage_1-8.png)
+  ![Staaf met AEM als titel en pictogram van de bewerkingsmodus rechts van de titel die wordt aangegeven door een pijl-omlaag.](do-not-localize/chlimage_1-8.png)
 
 ## Zoeken en vervangen {#find-replace}
 
@@ -286,7 +286,6 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >* U kunt maximaal 20 bewerkhandelingen ongedaan maken (standaardinstelling).
 >* ook gebruiken [Sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
 >
-
 
 U kunt de volgende typen paginawijzigingen ongedaan maken en opnieuw uitvoeren:
 

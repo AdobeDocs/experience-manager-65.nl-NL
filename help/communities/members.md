@@ -1,8 +1,6 @@
 ---
 title: Leden en groepen beheerconsoles
-seo-title: Members & Groups Management Consoles
 description: Toegang tot leden en groepen beheerconsoles
-seo-description: How to access Members and Groups Management consoles
 uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '896'
 ht-degree: 1%
 
 ---
@@ -55,7 +53,7 @@ In het auteursmilieu, om de console van Leden te bereiken voor het beheren van l
 
 Selecteer het pictogram van het zijpaneel aan de linkerkant van het deelvenster `Members` om het deelvenster met de zoekzijde te openen.
 
-![](assets/leftpanel-icon.png)
+![Pictogram van zijpaneel zoeken.](assets/leftpanel-icon.png)
 
 
 ![member-console2](assets/member-console2.png)
@@ -97,19 +95,19 @@ Het lid kan zijn e-mailadres wijzigen bij het bijwerken van zijn profiel.I Als d
 
 * **[!UICONTROL Password]**
 
-   (*Vereist*) Het aanmeldingswachtwoord.
+  (*Vereist*) Het aanmeldingswachtwoord.
 
 * **[!UICONTROL Retype Password]**
 
-   (*Vereist*) Voer het wachtwoord opnieuw in ter verificatie.
+  (*Vereist*) Voer het wachtwoord opnieuw in ter verificatie.
 
 * **[!UICONTROL Add Member to Sites]**
 
-   (*Optioneel*) Maak een keuze uit bestaande gemeenschapssites om het lid toe te voegen aan de groep met leden van de site van de community.
+  (*Optioneel*) Maak een keuze uit bestaande gemeenschapssites om het lid toe te voegen aan de groep leden van de site van de community.
 
 * **[!UICONTROL Add Member to Groups]**
 
-   (*Optioneel*) Maak een keuze uit bestaande lidgroepen om het lid aan die groep toe te voegen.
+  (*Optioneel*) Selecteer uit bestaande lidgroepen om het lid aan die groep toe te voegen.
 
 * Selecteer **[!UICONTROL Save]**
 
@@ -122,17 +120,17 @@ Onder de montages van de Rekening is het mogelijk voor een communautaire beheerd
 
    * Niet verboden Een lid heeft volledige toegang tot de site van de community.
 
-   Standaard is `Not Banned`.
+  Standaard is `Not Banned`.
 
 * **[!UICONTROL Contribution Limits]**
 
-   Als deze optie is ingeschakeld, is de mogelijkheid voor leden om inhoud te posten beperkt.
+  Als deze optie is ingeschakeld, is de mogelijkheid voor leden om inhoud te posten beperkt.
 Het gebrek hangt van de configuratie van bijdragegrenzen af.
 Zie [Limieten voor bijdragen van de lidstaten](limits.md).
 
 * **[!UICONTROL Change Password]**
 
-   Een koppeling die aanwezig is wanneer een bestaand lid wordt gewijzigd. Verstrekt de capaciteit voor een communautaire beheerder om een wachtwoord voor een lid terug te stellen.
+  Een koppeling die aanwezig is wanneer een bestaand lid wordt gewijzigd. Verstrekt de capaciteit voor een communautaire beheerder om een wachtwoord voor een lid terug te stellen.
 
 ### ALGEMEEN - Foto {#general-photo}
 
@@ -181,23 +179,23 @@ De vereiste gebieden voor het creëren van een nieuwe publish-side lidgroep zijn
 
 * **[!UICONTROL ID]**
 
-   (*Vereist*) De unieke groep-id.
+  (*Vereist*) De unieke groep-id.
 
-   *Nadat de id is gemaakt, kan deze niet meer worden gewijzigd.*
+  *Nadat de id is gemaakt, kan deze niet meer worden gewijzigd.*
 
 * **[!UICONTROL Name]**
 
-   (*Optioneel*) De weergavenaam voor de groep.
+  (*Optioneel*) De weergavenaam voor de groep.
 
-   De standaardwaarde is ID.
+  De standaardwaarde is ID.
 
 * **[!UICONTROL Description]**
 
-   (*Optioneel*) Een beschrijving van het doel en de machtigingen van de groep.
+  (*Optioneel*) Een beschrijving van het doel en de machtigingen van de groep.
 
 * **[!UICONTROL Add Members To Group]**
 
-   (*Optioneel*) Selecteer leden aan de publiczijde die u wilt opnemen als eerste leden van de groep.
+  (*Optioneel*) Selecteer leden aan de publiczijde die u wilt opnemen als eerste leden van de groep.
 
 * Selecteer **[!UICONTROL Save]**
 

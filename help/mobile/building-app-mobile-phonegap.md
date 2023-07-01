@@ -1,8 +1,6 @@
 ---
 title: Mobiele toepassingen maken
-seo-title: Building Mobile Applications
-description: Deze pagina verstrekt een volledig geleidelijke artikel op hoe te om een mobiele toepassing te bouwen gebruikend code beschikbaar bij GitHub is hier beschikbaar.Bouw uw toepassing om aan een apparaat of simulator voor het testen of voor het publiceren aan app winkels te installeren. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Build.
-seo-description: This page provides a complete step-by-step article on how to build a mobile application using code available from GitHub is available here.Build your application to install to a device or simulator for testing or for publishing to app stores. You can build applications locally using the PhoneGap Command Line Interface, or in the cloud using PhoneGap Build.
+description: Deze pagina verstrekt een volledig geleidelijke artikel op hoe te om een mobiele toepassing te bouwen gebruikend code beschikbaar bij GitHub is hier beschikbaar. Stel uw toepassing samen om deze op een apparaat of simulator te installeren voor testdoeleinden of voor publicatie in de App Store. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Build.
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 exl-id: 7c2e5ed8-9f8e-4a81-b736-589ef4089f29
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Stel uw toepassing samen om deze op een apparaat of simulator te installeren voor testdoeleinden of voor publicatie in de App Store. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Build.
 
@@ -59,14 +57,14 @@ Compileer de toepassing PhoneGap op uw computer gebruikend bevel-lijn Interface 
 
 Om te bouwen gebruikend CLI PhoneGap, moet u Node.js en het de cliëntnut installeren PhoneGap. U hebt een internetverbinding nodig om de volgende procedure uit te voeren.
 
-1. Downloaden en installeren [Node.js](https://nodejs.org/).
+1. Downloaden en installeren [Node.js](https://nodejs.org/en).
 1. Open een terminal of bevelherinnering en ga het volgende knoopbevel in om het nut te installeren PhoneGap:
 
    ```shell
    npm install -g phonegap
    ```
 
-   Op een Unix- of Linux-systeem moet u mogelijk een voorvoegsel voor de opdracht toevoegen `sudo`.
+   Op een UNIX®- of Linux®-systeem moet u mogelijk een voorvoegsel voor de opdracht toevoegen `sudo`.
 
    De terminal toont de resultaten van een reeks opdrachten van HTTP-GET. Wanneer de installatie succesvol is, toont de terminal waar de bibliotheken geïnstalleerd gelijkaardig aan het volgende voorbeeld zijn:
 
@@ -88,16 +86,16 @@ Om te bouwen gebruikend CLI PhoneGap, moet u Node.js en het de cliëntnut instal
 1. (Optioneel) Vraag de SDK aan voor het mobiele platform waarvoor u het doelplatform wilt:
 
    * Installeer de nieuwste versie van [Xcode](https://developer.apple.com/xcode/).
-   * Installeer de [Android-SDK](https://developer.android.com/).
+   * Installeer de [Android™ SDK](https://developer.android.com/).
 
 ### Het ZIP-bestand voor inhoud downloaden {#downloading-the-content-zip-file}
 
 Verplaats de inhoud van uw mobiele toepassing naar uw bestandssysteem.
 
 1. Selecteer de toepassing op de pagina Mobiele toepassingen.
-1. (Optioneel) Als u de toepassing voor volledige installaties wilt maken, klikt of tikt u op het pictogram Cache wissen op de werkbalk.
+1. (Optioneel) Als u de toepassing voor volledige installaties wilt maken, klikt u op de werkbalk op het pictogram Cache wissen.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Cachepictogram wissen dat wordt aangegeven door een verbroken koppelingssymbool.](do-not-localize/chlimage_1.png)
 
    >[!NOTE]
    >
@@ -105,7 +103,7 @@ Verplaats de inhoud van uw mobiele toepassing naar uw bestandssysteem.
 
 1. Klik of tik op het pictogram CLI-elementen downloaden op de werkbalk.
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Het pictogram CLI-elementen downloaden dat wordt aangegeven door het overlappende tabletsymbool.](do-not-localize/chlimage_1-1.png)
 
 1. Nadat u het ZIP-bestand hebt opgeslagen, klikt u op Sluiten in het dialoogvenster Succes.
 1. Extraheer de inhoud van het ZIP-bestand.
@@ -120,7 +118,7 @@ Gebruik de CLI van PhoneGap om de toepassing te compileren en te installeren. Vo
    cd ~/Downloads/ng-app-cli.1392137825303
    ```
 
-1. Voer de phonegap-opdracht in voor het platform waarvoor u een doelversie kiest. Met de volgende opdracht wordt bijvoorbeeld de app voor Android gemaakt:
+1. Voer de phonegap-opdracht in voor het platform waarvoor u een doelversie kiest. Met de volgende opdracht wordt bijvoorbeeld de app voor Android™ gemaakt:
 
    ```shell
    phonegap build android
@@ -150,7 +148,7 @@ Verzend uw toepassingsbronnen naar PhoneGap Build voor compilatie voor de versch
 1. Open uw mobiele toepassing op de pagina Mobiele toepassingen. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (Optioneel) Als u de toepassing voor volledige installaties wilt maken, selecteert u de toepassing en klikt u op het pictogram Cache wissen.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Cachepictogram wissen dat wordt aangegeven door een verbroken koppelingssymbool.](do-not-localize/chlimage_1-2.png)
 
    >[!NOTE]
    >
@@ -158,7 +156,7 @@ Verzend uw toepassingsbronnen naar PhoneGap Build voor compilatie voor de versch
 
 1. Selecteer de welkomstpagina en klik op het pictogram Extern maken.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Build Remote-pictogram aangegeven met twee ronde versnellingen.](do-not-localize/chlimage_1-3.png)
 
    **Opmerking:** De bètaversie van AEM Bèta leidt tot geen Inbox- bericht wanneer de bouwstijl met succes voltooit.
 

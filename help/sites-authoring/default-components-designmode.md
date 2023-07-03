@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -68,13 +68,13 @@ Een component in- of uitschakelen:
 
 1. Klik of tik op **Bovenliggend** pictogram.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103204.png)
+   ![Bovenliggend](do-not-localize/screen_shot_2018-03-22at103204.png)
 
    Hiermee selecteert u het alineasysteem dat de huidige component bevat.
 
 1. De **Configureren** pictogram voor het alineasysteem wordt weergegeven op de actiebalk van het bovenliggende element.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256.png)
+   ![Configureren](do-not-localize/screen_shot_2018-03-22at103256.png)
 
    Selecteer deze optie om het dialoogvenster weer te geven.
 
@@ -92,7 +92,7 @@ Een component in- of uitschakelen:
    Op de **Toegestane componenten** tab, bepaalt u welke componenten voor parsys beschikbaar zijn.
 
    * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-   * U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
+   * U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
    * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
@@ -121,7 +121,7 @@ Een component in- of uitschakelen:
 
 1. Gebruik de **Configureren** om het dialoogvenster te openen.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103256-1.png)
+   ![Pictogram Configureren](do-not-localize/screen_shot_2018-03-22at103256-1.png)
 
    In het ontwerpdialoogvenster kunt u de component configureren op basis van de beschikbare ontwerpparameters.
 
@@ -151,12 +151,12 @@ Een component in- of uitschakelen:
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-   Gebruik het pictogram** Verwijderen **pictogram om een item uit een lijst met meervoudige items te verwijderen.
+   Gebruik de **Verwijderen** pictogram om een item uit een lijst met meervoudige invoerdialoogvensters te verwijderen.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103809.png)
+   ![Verwijderen](do-not-localize/screen_shot_2018-03-22at103809.png)
 
    Gebruik de **Verplaatsen** om de volgorde van items in een meervoudige-invoerdialooglijst te wijzigen.
 
-   ![](do-not-localize/screen_shot_2018-03-22at103816.png)
+   ![Verplaatsen](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Klik of tik op **Gereed** om het dialoogvenster op te slaan en te sluiten.

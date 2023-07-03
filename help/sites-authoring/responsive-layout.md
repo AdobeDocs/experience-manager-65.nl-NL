@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1805'
 ht-degree: 6%
 
 ---
@@ -40,11 +40,11 @@ AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinati
 
 * [**Layout Container**](#adding-a-layout-container-and-its-content-edit-mode) component
 
-   Deze component is beschikbaar in het dialoogvenster [componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser) en biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
+  Deze component is beschikbaar in het dialoogvenster [componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser) en biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster. Deze kan ook als het standaardalineasysteem op de pagina worden ingesteld.
 
 * [**Lay-outmodus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-   Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om inhoud binnen het responsieve raster te plaatsen.
+  Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om inhoud binnen het responsieve raster te plaatsen.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
 Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
@@ -101,7 +101,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 
 1. Selecteer **Emulator** pictogram van de bovenste werkbalk:
 
-   ![](do-not-localize/screen_shot_2018-03-23at084256.png)
+   ![Emulator](do-not-localize/screen_shot_2018-03-23at084256.png)
 
 1. De emulatorwerkbalk wordt geopend.
 
@@ -111,11 +111,11 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 
    * **Apparaat roteren** - Hiermee kunt u een apparaat roteren van verticale (staande) richting naar horizontale (liggende) richting en andersom.
 
-   ![](do-not-localize/screen_shot_2018-03-23at084612.png) ![](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Apparaat roteren](do-not-localize/screen_shot_2018-03-23at084612.png) ![Apparaat roteren](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Apparaat selecteren** - Definieer een specifiek apparaat dat u wilt emuleren vanuit een lijst (zie de volgende stap voor meer informatie)
 
-   ![](do-not-localize/screen_shot_2018-03-23at084743.png)
+     ![Apparaat selecteren](do-not-localize/screen_shot_2018-03-23at084743.png)
 
 1. Als u een specifiek apparaat wilt selecteren om te emuleren, kunt u:
 
@@ -138,8 +138,6 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
    * De vouw kan ook worden beschouwd als het pagina-regeleinde (niet te verwarren met het [onderbrekingspunten](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints)) voor de inhoud. Dit wordt voor het gemak weergegeven om aan te geven welk deel van de inhoud de gebruiker op het apparaat ziet voordat hij of zij schuift.
    * De lijn voor de vouwlijn wordt niet weergegeven als de hoogte van het geëmuleerde apparaat groter is dan de schermgrootte.
    * De vouw wordt getoond voor het gemak van de auteur en niet op de gepubliceerde pagina getoond.
-
-
 
 ## Een lay-outcontainer en de bijbehorende content toevoegen (modus Bewerken) {#adding-a-layout-container-and-its-content-edit-mode}
 
@@ -172,7 +170,7 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 
    U moet de **Bovenliggend** optie.
 
-   ![](do-not-localize/screen_shot_2018-03-23at085417.png)
+   ![Bovenliggend, optie](do-not-localize/screen_shot_2018-03-23at085417.png)
 
 1. Als de lay-outcomponent genest is, selecteert u de **Bovenliggend** bevat een vervolgkeuzelijst, waarmee u de geneste lay-outcontainer of de bovenliggende container(s) kunt selecteren.
 
@@ -212,62 +210,63 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
 * Wijzig de grootte van de inhoudcomponenten met de blauwe stippen. Het resizing zal altijd breken-aan-net. Wanneer u het formaat van het achtergrondraster wijzigt, wordt dit weergegeven als hulp bij het uitlijnen:
 
-   ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
+  ![screen_shot_2018-03-23at090140](assets/screen_shot_2018-03-23at090140.png)
 
-   >[!NOTE]
-   >
-   >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
+  >[!NOTE]
+  >
+  >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
 
 * Klik/tik op een inhoudscomponent, op de werkbalk kunt u:
 
    * **Bovenliggend**
 
-      Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen voor het geheel.
+     Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen voor het geheel.
 
    * **Zweven naar nieuwe regel**
 
-      De component wordt naar een nieuwe regel verplaatst, afhankelijk van de ruimte die beschikbaar is in het raster.
+     De component wordt naar een nieuwe regel verplaatst, afhankelijk van de ruimte die beschikbaar is in het raster.
 
    * **Component verbergen**
 
-      De component wordt onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
-   ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
+     De component wordt onzichtbaar gemaakt (u kunt deze herstellen vanaf de werkbalk van de container voor lay-outs).
+
+  ![screen_shot_2018-03-23at090246](assets/screen_shot_2018-03-23at090246.png)
 
 * In **Layout** modus waarop u kunt tikken of klikken op de knop **Componenten hierheen slepen** om de volledige component te selecteren. De werkbalk voor deze modus wordt dan weergegeven.
 
-   De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
+  De werkbalk heeft verschillende opties, afhankelijk van de status van de lay-outcomponent en de onderdelen ervan. Bijvoorbeeld:
 
    * **Bovenliggend** - Selecteer de bovenliggende component.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090823.png)
+     ![Bovenliggend](do-not-localize/screen_shot_2018-03-23at090823.png)
 
    * **Verborgen componenten tonen** - Alle of afzonderlijke componenten tonen. Het getal geeft aan hoeveel verborgen componenten er momenteel zijn. De teller toont hoeveel componenten verborgen zijn.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091007.png)
+     ![Verborgen componenten tonen](do-not-localize/screen_shot_2018-03-23at091007.png)
 
    * **De indeling van het onderbrekingspunt herstellen** - De standaardlay-out herstellen. Dit betekent dat er geen aangepaste indeling wordt opgelegd.
 
-   ![](do-not-localize/screen_shot_2018-03-23at091013.png)
+     ![Schermindeling onderbrekingspunt herstellen](do-not-localize/screen_shot_2018-03-23at091013.png)
 
    * **Zweven naar nieuwe regel** - Verplaats de component omhoog als de afstand dit toestaat.
 
-   ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
+     ![screen_shot_2018-03-23at090829](assets/screen_shot_2018-03-23at090829.png)
 
    * **Component verbergen** - Verberg de huidige component.
 
-   ![](do-not-localize/screen_shot_2018-03-23at090834.png)
+     ![Component verbergen](do-not-localize/screen_shot_2018-03-23at090834.png)
 
-   >[!NOTE]
-   >
-   >In het bovenstaande voorbeeld zijn de acties voor zweven en verbergen beschikbaar omdat deze container van de layout is genest in een bovenliggende container van de layout.
+     >[!NOTE]
+     >
+     >In het bovenstaande voorbeeld zijn de acties voor zweven en verbergen beschikbaar omdat deze container van de layout is genest in een bovenliggende container van de layout.
 
    * **Componenten zichtbaar maken**
-Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht 
-**Verborgen componenten tonen** optie. In dit voorbeeld zijn twee componenten verborgen.
-   ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
+Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht **Verborgen componenten tonen** optie. In dit voorbeeld zijn twee componenten verborgen.
 
-   Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
+     ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 
-   ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+  Als u de optie **Verborgen componenten weergeven** selecteert, worden de componenten die momenteel op hun oorspronkelijke positie zijn verborgen, blauw weergegeven.
 
-   Selecteren **Alles herstellen** alle verborgen componenten zichtbaar maken.
+  ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
+
+  Selecteren **Alles herstellen** alle verborgen componenten zichtbaar maken.

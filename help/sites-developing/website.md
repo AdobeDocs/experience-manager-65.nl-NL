@@ -1214,7 +1214,7 @@ In deze sectie voegt u het pictogram toe dat naast de afbeeldingscomponent wordt
 In deze sectie ziet u de **Producten** en voeg de afbeeldingscomponent toe aan het alineasysteem.
 
 1. Laad in uw browser de **Producten** pagina.
-1. Klik op de knop **ontwerpmodus** pictogram.
+1. Klik in de Sidekick op de knop **ontwerpmodus** pictogram.
 1. Klik op de knop Bewerken om het ontwerpdialoogvenster van par te bewerken.
 1. In het dialoogvenster wordt een lijst met **Toegestane componenten** wordt getoond; navigeren naar **MyWebsite**, selecteert u de **Mijn afbeeldingscomponent** en klik op **OK.**
 1. Terug naar **bewerkingsmodus.**

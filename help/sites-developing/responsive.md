@@ -1,8 +1,6 @@
 ---
 title: Responsief ontwerp voor webpagina's
-seo-title: Responsive design for web pages
-description: Met responsief ontwerp kunnen dezelfde pagina's effectief op meerdere apparaten worden weergegeven in meerdere richtingen
-seo-description: With responsive design, the same pages can be effectively displayed on multiple devices in multiple orientations
+description: Met responsief ontwerp kunnen dezelfde pagina's effectief op meerdere apparaten in meerdere richtingen worden weergegeven.
 uuid: 3d324557-e7ff-4c82-920f-9b5a906925e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +9,9 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 exl-id: c705710b-a94a-4f4f-affa-ddd4fc6cb0ec
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
 workflow-type: tm+mt
-source-wordcount: '5324'
+source-wordcount: '5363'
 ht-degree: 0%
 
 ---
@@ -23,6 +21,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe raadt u aan de SPA Editor te gebruiken voor projecten waarvoor rendering op basis van één pagina op basis van raamwerk van toepassingen vereist is (zoals _Reageren_). [Meer informatie](/help/sites-developing/spa-overview.md).
+>
 
 >[!NOTE]
 >
@@ -201,7 +200,7 @@ Als u bijvoorbeeld een ` [sling:OsgiConfig](/help/sites-deploying/configuring-os
 * Bovenliggende map: `/apps/application_name/config`
 * Naam: `com.day.cq.wcm.mobile.core.impl.MobileEmulatorProvider-*alias*`
 
-   De `*alias*` achtervoegsel wordt vereist omdat de dienst MobileEmulatorProvider een fabrieksdienst is. Gebruik een alias die uniek is voor deze fabriek.
+  De `*alias*` achtervoegsel wordt vereist omdat de dienst MobileEmulatorProvider een fabrieksdienst is. Gebruik een alias die uniek is voor deze fabriek.
 
 * jcr:primaryType: `sling:OsgiConfig`
 
@@ -211,12 +210,12 @@ Voeg de volgende knooppunteigenschap toe:
 * Type: `String[]`
 * Waarde: De paden naar de paginacomponenten die uw webpagina&#39;s weergeven. De geometrixx-media-app gebruikt bijvoorbeeld de volgende waarden:
 
-   ```
-   geometrixx-media/components/page
-    geometrixx-unlimited/components/pages/page
-    geometrixx-unlimited/components/pages/coverpage
-    geometrixx-unlimited/components/pages/issue
-   ```
+  ```
+  geometrixx-media/components/page
+   geometrixx-unlimited/components/pages/page
+   geometrixx-unlimited/components/pages/coverpage
+   geometrixx-unlimited/components/pages/issue
+  ```
 
 ### De apparaatgroepen opgeven {#specifying-the-device-groups}
 
@@ -235,6 +234,7 @@ Gebruik de console van Hulpmiddelen aan [apparaatgroepen maken en bewerken](/hel
 >[!NOTE]
 >
 >Voor apparaatgroepen die u gebruikt voor responsief ontwerp, bewerkt u de apparaatgroep en selecteert u Emulator uitschakelen op het tabblad Algemeen. Met deze optie voorkomt u dat de carrousel van de emulator wordt weergegeven. Dit is niet relevant voor responsieve ontwerpen.
+>
 
 ## Aangepaste afbeeldingen gebruiken {#using-adaptive-images}
 
@@ -326,6 +326,7 @@ In het volgende voorbeeld wordt HTML geselecteerd uit twee DAM-uitvoeringen van 
 >* Script dat de HTML genereert: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
 >
 >In het volgende gedeelte vindt u meer informatie over deze component.
+>
 
 ### Renderen van afbeeldingen in AEM {#understanding-image-rendering-in-aem}
 
@@ -366,6 +367,7 @@ De component moet de volgende taken uitvoeren:
 >[!NOTE]
 >
 >De webclient gebruikt de JavaScript-bibliotheken (of vergelijkbare bibliotheken) matchMedia en Picturefill om de mediaselectors te evalueren.
+>
 
 servlet die het beeldverzoek verwerkt moet de volgende taken uitvoeren:
 
@@ -657,6 +659,7 @@ De `ImageReferenceModificationServlet` klasse overschrijft de klasse `createLaye
 
 >[!NOTE]
 >De [com.day.cq.commons.DownloadResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/DownloadResource.html) biedt de methode getFileReference.
+>
 
 ## Een dynamisch raster ontwikkelen {#developing-a-fluid-grid}
 
@@ -698,6 +701,7 @@ De voorbeeldgeometrixx-media-toepassing bevat bijvoorbeeld de media-home-compone
 >[!NOTE]
 >
 >Wanneer een component meerdere componenten bevat `cq:include` elementen die van verwijzingen voorzien de parsys component, elk `path` kenmerk moet een andere waarde hebben.
+>
 
 #### Het raster van de component Pagina schalen {#scaling-the-page-component-grid}
 
@@ -862,13 +866,13 @@ Gebruik voor elk bereik van viewportbreedten waarop u zich richt een statische p
 
 Gebruik rasters om inhoudsblokken te schalen en deze aan te passen aan verschillende viewportgrootten. Inhoudsblokken beslaan een specifiek aantal kolommen. Naarmate de kolombreedten groter of kleiner worden om in verschillende viewportgrootten te passen, neemt de breedte van de inhoudsblokken dienovereenkomstig toe of af. Schalen kan zowel grote als middelgrote viewports steunen die genoeg breed zijn om de zij-aan-zijplaatsing van inhoudsblokken aan te passen.
 
-![](do-not-localize/chlimage_1-1a.png)
+![Afbeelding van twee rasters, waarvan de ene kleiner is dan de andere.](do-not-localize/chlimage_1-1a.png)
 
 #### Inhoud in het raster verplaatsen {#repositioning-content-in-the-grid}
 
 De grootte van inhoudsblokken kan worden beperkt door een minimumbreedte, waarvoorbij schalen niet meer effectief is. Voor kleinere viewports, kan het net worden gebruikt om blokken van inhoud verticaal te verdelen eerder dan horizontaal.
 
-![](do-not-localize/chlimage_1-2a.png)
+![Afbeelding van twee rasters, waarvan de ene kleiner is geplaatst dan de andere.](do-not-localize/chlimage_1-2a.png)
 
 ### Het raster ontwerpen {#designing-the-grid}
 
@@ -953,7 +957,7 @@ De floatstijl van het dialoogvenster `.row-fluid` -klasse zodat u kunt bepalen o
 
 Voeg de stijl toe aan de `.row-fluid` in elke mediaquery. Stel de waarde in op basis van de pagina-indeling die u gebruikt voor de mediaquery. Het volgende diagram illustreert bijvoorbeeld een rij die inhoud horizontaal verdeelt voor brede viewports, en verticaal voor smalle viewports.
 
-![](do-not-localize/chlimage_1-3a.png)
+![Twee afbeeldingen van inhoudsblokken in een rij, de tweede afbeelding die de verplaatste rij weergeeft.](do-not-localize/chlimage_1-3a.png)
 
 In de volgende CSS kan dit gedrag worden geïmplementeerd:
 

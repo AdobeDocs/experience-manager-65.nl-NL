@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: bc1f0bd20804bbae78c7ea9a5209e183d6bbaaf3
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '2230'
+source-wordcount: '2242'
 ht-degree: 8%
 
 ---
@@ -69,21 +69,21 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 * **Mobiel apparaat (bijvoorbeeld iPad)**
 
-   De componentbrowser beslaat volledig de pagina die wordt bewerkt.
+  De componentbrowser beslaat volledig de pagina die wordt bewerkt.
 
-   Als u een component aan de pagina wilt toevoegen, houdt u de vereiste component ingedrukt en verplaatst u deze naar rechts (de componentbrowser wordt dan gesloten om de pagina weer weer te geven), waar u de component kunt plaatsen.
+  Als u een component aan de pagina wilt toevoegen, houdt u de vereiste component ingedrukt en verplaatst u deze naar rechts (de componentbrowser wordt dan gesloten om de pagina weer weer te geven), waar u de component kunt plaatsen.
 
-   ![ateat-04](assets/ateat-04.png)
+  ![ateat-04](assets/ateat-04.png)
 
 * **Bureaubladapparaat**
 
-   De componentbrowser wordt links in het venster geopend.
+  De componentbrowser wordt links in het venster geopend.
 
-   Als u een component aan de pagina wilt toevoegen, klikt u op de gewenste component en sleept u deze naar de gewenste locatie.
+  Als u een component aan de pagina wilt toevoegen, klikt u op de gewenste component en sleept u deze naar de gewenste locatie.
 
-   ![ateat-05](assets/ateat-05.png)
+  ![ateat-05](assets/ateat-05.png)
 
-   Componenten worden vertegenwoordigd door
+  Componenten worden vertegenwoordigd door
 
    * Componentnaam
    * Componentgroep (grijs)
@@ -92,16 +92,16 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
       * De standaardcomponentpictogrammen zijn monochroom.
       * Afkortingen zijn altijd de eerste twee tekens van de componentnaam.
 
-   Vanaf de bovenste werkbalk in het dialoogvenster **Componenten** browser die u kunt:
+  Vanaf de bovenste werkbalk in het dialoogvenster **Componenten** browser die u kunt:
 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
 
-   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor de **Lay-outcontainer**:
+  Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor de **Lay-outcontainer**:
 
-   ![ateat-06](assets/ateat-06.png)
+  ![ateat-06](assets/ateat-06.png)
 
-   Voor nog meer informatie over de componenten waarover u beschikt, ziet u de [Component Console](/help/sites-authoring/default-components-console.md).
+  Voor nog meer informatie over de componenten waarover u beschikt, ziet u de [Component Console](/help/sites-authoring/default-components-console.md).
 
 ## Browser voor middelen {#assets-browser}
 
@@ -150,23 +150,23 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 * **Mobiel apparaat zoals iPad**
 
-   De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
+  De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
 
-   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
+  Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
 
-   ![ateat-09](assets/ateat-09.png)
+  ![ateat-09](assets/ateat-09.png)
 
 * **Bureaubladapparaat**
 
-   De middelenbrowser wordt links in het venster geopend.
+  De middelenbrowser wordt links in het venster geopend.
 
-   Als u een element aan de pagina wilt toevoegen, klikt u op het gewenste element en sleept u het naar de gewenste component of locatie.
+  Als u een element aan de pagina wilt toevoegen, klikt u op het gewenste element en sleept u het naar de gewenste component of locatie.
 
-   ![ateat-10](assets/ateat-10.png)
+  ![ateat-10](assets/ateat-10.png)
 
 Als u snel een wijziging in een element moet aanbrengen, kunt u de opdracht [middeleneditor](/help/assets/manage-assets.md) rechtstreeks vanuit de elementenbrowser door op het bewerkingspictogram naast de naam van het element te klikken.
 
-![](do-not-localize/screen_shot_2018-03-22at142448.png)
+![Assets Browser Desktop-apparaat](do-not-localize/screen_shot_2018-03-22at142448.png)
 
 ## Inhoudsstructuur {#content-tree}
 
@@ -174,7 +174,7 @@ De **Inhoudsstructuur** geeft een overzicht van alle componenten op de pagina in
 
 De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met componenten en elementen). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
 
-![](do-not-localize/screen_shot_2018-03-22at142042.png)
+![Inhoudsstructuur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
 Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Bovendien wordt het op een complexe pagina gemakkelijker om tussen componenten van de pagina te springen.
 
@@ -196,19 +196,19 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
 * Bijvoorbeeld een basispagina:
 
-   `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html`
 
-   ![ateat-12](assets/ateat-12.png)
+  ![ateat-12](assets/ateat-12.png)
 
-   Als de component waarop u klikt in de structuur bewerkbaar is, wordt er een moersleutelpictogram rechts van de naam weergegeven. Als u op dit pictogram klikt, wordt het dialoogvenster Bewerken voor de component direct gestart.
+  Als de component waarop u klikt in de structuur bewerkbaar is, wordt er een moersleutelpictogram rechts van de naam weergegeven. Als u op dit pictogram klikt, wordt het dialoogvenster Bewerken voor de component direct gestart.
 
-   ![](do-not-localize/screen_shot_2018-03-22at142725.png)
+  ![Spelpictogram - Bewerken](do-not-localize/screen_shot_2018-03-22at142725.png)
 
 * Of een pagina die deel uitmaakt van een [livecopy](/help/sites-administering/msm.md), waarbij componenten van een andere pagina worden overgeërfd; bijvoorbeeld:
 
-   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
-   ![ateat-13](assets/ateat-13.png)
+  ![ateat-13](assets/ateat-13.png)
 
 ## Fragmenten - gekoppelde inhoudsbrowser {#fragments-associated-content-browser}
 
@@ -320,7 +320,6 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Er is een [sneltoets](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
 >
 
-
 ## Padselectie {#path-selection}
 
 Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. Om een pad gemakkelijk te selecteren, [padvelden](/help/sites-authoring/author-environment-tools.md#path-fields) aanbieden en [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) maakt een robuustere selectie mogelijk.
@@ -333,7 +332,7 @@ De gebieden van de weg hebben auto-volledige en blik-vooruit functionaliteit nu 
 
 Klik op de knop **Dialoogvenster Selectie openen** in het veld Pad wordt de knop [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) voor gedetailleerdere selectieopties.
 
-![](do-not-localize/screen_shot_2018-03-22at154427.png)
+![Dialoogvenster Selectie openen](do-not-localize/screen_shot_2018-03-22at154427.png)
 
 U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden terwijl u typt.
 
@@ -351,7 +350,7 @@ De padbrowser is geordend als de [kolomweergave](/help/sites-authoring/basic-han
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de knop **X** in het zoekveld om de zoekopdracht te wissen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.
 
-   ![ateat-21](assets/ateat-21.png)
+  ![ateat-21](assets/ateat-21.png)
 
 ## Sneltoetsen {#keyboard-shortcuts}
 

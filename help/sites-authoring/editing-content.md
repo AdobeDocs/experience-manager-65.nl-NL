@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
 workflow-type: tm+mt
-source-wordcount: '3047'
+source-wordcount: '3082'
 ht-degree: 5%
 
 ---
@@ -46,51 +46,51 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 * **Zijpaneel in-/uitschakelen**
 
-   Hiermee opent/sluit u het zijpaneel, dat de [Middelenbrowser](/help/sites-authoring/author-environment-tools.md#assets-browser), [Componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser), en [Inhoudsstructuur](/help/sites-authoring/author-environment-tools.md#content-tree).
+  Hiermee opent/sluit u het zijpaneel, dat de [Middelenbrowser](/help/sites-authoring/author-environment-tools.md#assets-browser), [Componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser), en [Inhoudsstructuur](/help/sites-authoring/author-environment-tools.md#content-tree).
 
-   ![](do-not-localize/screen_shot_2018-03-22at111425.png)
+  ![Zijpaneel in-/uitschakelen](do-not-localize/screen_shot_2018-03-22at111425.png)
 
 * **Pagina-informatie**
 
-   Biedt toegang tot de [Pagina-informatie](/help/sites-authoring/author-environment-tools.md#page-information) menu met paginagegevens en handelingen die op de pagina kunnen worden uitgevoerd, zoals het weergeven en bewerken van pagina-informatie, het weergeven van pagina-eigenschappen en het publiceren/ongedaan maken van de publicatie van de pagina.
+  Biedt toegang tot de [Pagina-informatie](/help/sites-authoring/author-environment-tools.md#page-information) menu met paginagegevens en handelingen die op de pagina kunnen worden uitgevoerd, zoals het weergeven en bewerken van pagina-informatie, het weergeven van pagina-eigenschappen en het publiceren/ongedaan maken van de publicatie van de pagina.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111437.png)
+  ![Pagina-informatie](do-not-localize/screen_shot_2018-03-22at111437.png)
 
 * **Emulator**
 
-   Hiermee schakelt u het [emulator, werkbalk](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), die wordt gebruikt om het uiterlijk van de pagina op een ander apparaat na te bootsen. Dit wordt automatisch in- en uitgeschakeld in de lay-outmodus.
+  Hiermee schakelt u het [emulator, werkbalk](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate), die wordt gebruikt om het uiterlijk van de pagina op een ander apparaat na te bootsen. Dit wordt automatisch in- en uitgeschakeld in de lay-outmodus.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111442.png)
+  ![Emulator](do-not-localize/screen_shot_2018-03-22at111442.png)
 
 * **ContextHub**
 
-   Hiermee opent u de [contexthub](/help/sites-authoring/ch-previewing.md). Alleen beschikbaar in de modus Voorbeeld.
+  Hiermee opent u de [contexthub](/help/sites-authoring/ch-previewing.md). Alleen beschikbaar in de modus Voorbeeld.
 
-   ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
 
 * **Paginatitel**
 
-   Dit is puur informatief.
+  Dit is puur informatief.
 
-   ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
 
 * **Modus selecteren**
 
-   Geeft de huidige [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
+  Geeft de huidige [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
 
-   ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![chlimage_1-120](assets/chlimage_1-120.png)
 
 * **Voorvertoning**
 
-   Inschakelen [voorbeeldmodus](/help/sites-authoring/editing-content.md#preview-mode). Hiermee wordt de pagina weergegeven zoals deze wordt weergegeven bij publicatie.
+  Inschakelen [voorbeeldmodus](/help/sites-authoring/editing-content.md#preview-mode). Hiermee wordt de pagina weergegeven zoals deze wordt weergegeven bij publicatie.
 
-   ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![chlimage_1-121](assets/chlimage_1-121.png)
 
 * **Annoteren**
 
-   Hiermee kunt u [annotaties](/help/sites-authoring/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
+  Hiermee kunt u [annotaties](/help/sites-authoring/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
 
-   ![](do-not-localize/screen_shot_2018-03-22at111638.png)
+  ![Annoteren](do-not-localize/screen_shot_2018-03-22at111638.png)
 
 ### Statusmelding {#status-notification}
 
@@ -122,11 +122,11 @@ De tijdelijke aanduiding van de component is een indicator waarmee wordt aangege
 
 * Bij het toevoegen van een nieuwe component aan de pagina (slepen vanuit de componentbrowser):
 
-   ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
 
 * Bij het verplaatsen van een bestaande component:
 
-   ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
 
 ## Een component invoegen {#inserting-a-component}
 
@@ -230,77 +230,77 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
 * **Bewerken**
 
-   [Afhankelijk van het componenttype](/help/sites-authoring/default-components.md) op die manier kunt u [de inhoud van de component bewerken](#edit-content). Er wordt vaak een werkbalk weergegeven.
+  [Afhankelijk van het componenttype](/help/sites-authoring/default-components.md) op die manier kunt u [de inhoud van de component bewerken](#edit-content). Er wordt vaak een werkbalk weergegeven.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112936.png)
+  ![Bewerken](do-not-localize/screen_shot_2018-03-22at112936.png)
 
 * **Configureren**
 
-   [Afhankelijk van het componenttype](/help/sites-authoring/default-components.md) hierdoor kunt u de eigenschappen van de component bewerken en configureren. Vaak wordt een dialoogvenster geopend.
+  [Afhankelijk van het componenttype](/help/sites-authoring/default-components.md) hierdoor kunt u de eigenschappen van de component bewerken en configureren. Vaak wordt een dialoogvenster geopend.
 
-   ![](do-not-localize/screen_shot_2018-03-22at112955.png)
+  ![Configureren](do-not-localize/screen_shot_2018-03-22at112955.png)
 
 * **Kopiëren**
 
-   Hiermee wordt de component naar het klembord gekopieerd. Na de plakactie, zal de originele component blijven.
+  Hiermee wordt de component naar het klembord gekopieerd. Na de plakactie, zal de originele component blijven.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113000.png)
+  ![Kopiëren](do-not-localize/screen_shot_2018-03-22at113000.png)
 
 * **Knippen**
 
-   Hiermee wordt de component naar het klembord gekopieerd. Na de plakhandeling wordt de oorspronkelijke component verwijderd.
+  Hiermee wordt de component naar het klembord gekopieerd. Na de plakhandeling wordt de oorspronkelijke component verwijderd.
 
-   ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
 
 * **Verwijderen**
 
-   Hiermee verwijdert u de component van de pagina met uw bevestiging.
+  Hiermee verwijdert u de component van de pagina met uw bevestiging.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113012.png)
+  ![Verwijderen](do-not-localize/screen_shot_2018-03-22at113012.png)
 
 * **Component invoegen**
 
-   Hiermee wordt het dialoogvenster geopend voor [een nieuwe component toevoegen](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
+  Hiermee wordt het dialoogvenster geopend voor [een nieuwe component toevoegen](/help/sites-authoring/editing-content.md#inserting-a-component-from-the-paragraph-system).
 
-   ![](do-not-localize/screen_shot_2018-03-22at113017.png)
+  ![Component invoegen](do-not-localize/screen_shot_2018-03-22at113017.png)
 
 * **Plakken**
 
-   Hiermee wordt de component van het klembord naar de pagina geplakt. Of het origineel overblijft, hangt af van het feit of u de kopie of het knipsel hebt gebruikt.
+  Hiermee wordt de component van het klembord naar de pagina geplakt. Of het origineel overblijft, hangt af van het feit of u de kopie of het knipsel hebt gebruikt.
 
    * U kunt op dezelfde pagina of op een andere pagina plakken.
    * Het geplakte item wordt boven het item geplakt waar u de plakactie selecteert.
    * De handeling Pate wordt alleen weergegeven als er inhoud op het klembord staat.
 
-   ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
-   >[!NOTE]
-   >
-   >Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet u de pagina vernieuwen om de geplakte inhoud te zien.
+  >[!NOTE]
+  >
+  >Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet u de pagina vernieuwen om de geplakte inhoud te zien.
 
 * **Groep**
 
-   Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
+  Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113240.png)
+  ![Groep](do-not-localize/screen_shot_2018-03-22at113240.png)
 
 * **Bovenliggend**
 
-   Hiermee kunt u de bovenliggende component van de geselecteerde component selecteren.
+  Hiermee kunt u de bovenliggende component van de geselecteerde component selecteren.
 
-   ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
-   Hierdoor kunt u de [layout](/help/sites-authoring/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-authoring/author-environment-tools.md#page-modes) voor de gehele pagina.
+  Hierdoor kunt u de [layout](/help/sites-authoring/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-authoring/author-environment-tools.md#page-modes) voor de gehele pagina.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113044.png)
+  ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Omzetten in een ervaringsfragmentvariatie**
 
-   Zo kunt u een nieuwe [ervaren, fragment](/help/sites-authoring/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
+  Zo kunt u een nieuwe [ervaren, fragment](/help/sites-authoring/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
 
-   ![](do-not-localize/screen_shot_2018-03-22at113033.png)
+  ![Omzetten in ervaringsfragmentvariatie](do-not-localize/screen_shot_2018-03-22at113033.png)
 
 ## Bewerken (inhoud) {#edit-content}
 
@@ -317,28 +317,28 @@ De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige compo
 
 * [Tekstcomponent](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-   ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
 
 * Afbeeldingscomponent
 
-   ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
 
-   >[!NOTE]
-   >
-   >Bewerken werkt niet op een lege afbeeldingscomponent.
-   >
-   >
-   >U moet [een afbeelding slepen of uploaden (met Configureren)](/help/sites-authoring/default-components-foundation.md#image) voordat u kunt beginnen met bewerken.
+  >[!NOTE]
+  >
+  >Bewerken werkt niet op een lege afbeeldingscomponent.
+  >
+  >
+  >U moet [een afbeelding slepen of uploaden (met Configureren)](/help/sites-authoring/default-components-foundation.md#image) voordat u kunt beginnen met bewerken.
 
 * Afbeeldingscomponent - volledig scherm
 
-   [Door de volledige-schermmodus te openen](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
+  [Door de volledige-schermmodus te openen](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
 
-   ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
 * Onderdelen die zijn vervaardigd uit meer dan één basisonderdeel, zoals de [Component voor tekst- en afbeeldingsbasis](/help/sites-authoring/default-components-foundation.md#text-image)Vraag u eerst om te bevestigen welke set bewerkingsopties u wilt:
 
-   ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![chlimage_1-123](assets/chlimage_1-123.png)
 
 ### Elementen naar component slepen en neerzetten {#drag-and-drop-assets-into-component}
 
@@ -356,7 +356,7 @@ Voor specifieke componenttypen kunt u elementen van de elementenbrowser rechtstr
 
 Voor alle componenten kunt u de modus Volledig scherm openen (en afsluiten):
 
-![](do-not-localize/chlimage_1-20.png)
+![Modus Volledig scherm bewerken](do-not-localize/chlimage_1-20.png)
 
 De **Tekst** component:
 
@@ -391,7 +391,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
    Klik of tik op **Layout** actie om de lay-out van de component aan te passen.
 
-   ![](do-not-localize/chlimage_1-21.png)
+   ![Component, werkbalk](do-not-localize/chlimage_1-21.png)
 
 1. Nadat de handeling Lay-out is geselecteerd:
 
@@ -405,7 +405,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
 1. Klik op de knop **Sluiten** in het actiemenu van de component om het wijzigen van de lay-out van de component op te houden. De werkbalk van de component keert terug naar de normale bewerkingsstatus.
 
-   ![](do-not-localize/screen_shot_2018-03-22at133920.png)
+   ![Sluiten](do-not-localize/screen_shot_2018-03-22at133920.png)
 
 >[!NOTE]
 >
@@ -425,27 +425,27 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
 * **Live kopie**
 
-   De componentwerkbalk als de component zich op een pagina bevindt die deel uitmaakt van een live kopie of introductie (op basis van een live kopie). Bijvoorbeeld:
+  De componentwerkbalk als de component zich op een pagina bevindt die deel uitmaakt van een live kopie of introductie (op basis van een live kopie). Bijvoorbeeld:
 
-   ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
 
-   De optie Overerving annuleren is beschikbaar:
+  De optie Overerving annuleren is beschikbaar:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134406.png)
+  ![Overerving annuleren](do-not-localize/screen_shot_2018-03-22at134406.png)
 
-   Of herstel overname indien reeds geannuleerd:
+  Of herstel overname indien reeds geannuleerd:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134417.png)
+  ![Herhaalbare overerving](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   De actie Uitvoer is ook beschikbaar in de blauwdruk of Live Copy-bron:
+  De actie Uitvoer is ook beschikbaar in de blauwdruk of Live Copy-bron:
 
-   ![](do-not-localize/screen_shot_2018-03-22at134516.png)
+  ![Uitrol](do-not-localize/screen_shot_2018-03-22at134516.png)
 
 * **Een overerfd alineasysteem**
 
-   Het configuratiedialoogvenster. Bijvoorbeeld, zoals met het Overgenomen Systeem van de Paragraaf:
+  Het configuratiedialoogvenster. Bijvoorbeeld, zoals met het Overgenomen Systeem van de Paragraaf:
 
-   ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ## De paginasjabloon bewerken {#editing-the-page-template}
 
@@ -485,7 +485,6 @@ Er zijn twee opties voor het voorvertonen van een pagina:
 >* Gebruik de [sneltoets](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` om te schakelen tussen de voorvertoning en de laatst geselecteerde modus.
 >
 
-
 >[!NOTE]
 >
 >Het WCM-moduscookie wordt ingesteld voor beide opties.
@@ -517,7 +516,7 @@ Een pagina kan worden vergrendeld vanuit:
    1. Selecteer de pagina met [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Selecteer het vergrendelingspictogram.
 
-   ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Pagina-editor**
 
@@ -552,7 +551,7 @@ In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en he
 
 Met de volgende pictogrammen kunt u een handeling ongedaan maken of opnieuw uitvoeren. Deze worden in voorkomend geval weergegeven op de werkbalk:
 
-![](do-not-localize/screen_shot_2018-03-23at093614.png)
+![Ongedaan maken en Opnieuw](do-not-localize/screen_shot_2018-03-23at093614.png)
 
 >[!NOTE]
 >
@@ -584,7 +583,6 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >* U kunt maximaal 20 bewerkingen ongedaan maken (standaardinstelling).
 >* Ook gebruiken [Sneltoetsen](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
 >
-
 
 U kunt de volgende typen paginawijzigingen ongedaan maken en opnieuw uitvoeren:
 

@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 144fbe2d0efe20d848e9556f8d652a403d1835b2
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2019'
+source-wordcount: '2026'
 ht-degree: 0%
 
 ---
@@ -144,11 +144,11 @@ Wanneer &lt;text_x> Dit kan een combinatie zijn van statische tekst en dynamisch
 * `${userId}`, de id van de gebruiker die de gebeurtenis heeft geactiveerd.
 * `${modifications}`beschrijft het type paginagebeurtenis en het paginapad in de notatie:
 
-   &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
+  &lt;page event=&quot;&quot; type=&quot;&quot;> => &lt;page path=&quot;&quot;>
 
-   Bijvoorbeeld:
+  Bijvoorbeeld:
 
-   PageModified => /content/geometrixx/nl/products
+  PageModified => /content/geometrixx/nl/products
 
 ### E-mailsjablonen voor workflowmelding {#email-templates-for-workflow-notification}
 
@@ -342,7 +342,7 @@ Bevestig ten slotte de configuratie door:
 1. Zoeken naar **Azure Active Directory** in de zoekbalk en klik op het resultaat. U kunt ook rechtstreeks bladeren naar [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Klikken op **Toepassingsregistratie** - **Nieuwe registratie**
 
-   ![](assets/oauth-outlook1.png)
+   ![Microsoft Outlook-configuratie](assets/oauth-outlook1.png)
 
 1. Vul de gegevens naar wens in en klik op **Registreren**
 1. Ga naar de nieuwe app en selecteer **API-machtigingen**
@@ -397,7 +397,7 @@ Vervolgens integreert u uw OAuth2-instellingen met AEM:
 
 Zodra gevormd, zouden de montages als dit moeten kijken:
 
-![](assets/oauth-outlook-smptconfig.png)
+![Weergave AEM zijconfiguraties](assets/oauth-outlook-smptconfig.png)
 
 Activeer nu de OAuth-componenten. U kunt dit doen door:
 

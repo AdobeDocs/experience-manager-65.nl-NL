@@ -10,9 +10,9 @@ discoiquuid: e72da81b-4085-49b0-86c3-11ad48978a8a
 docset: aem65
 exl-id: 53d8c654-8017-4528-a44e-e362d8b59f82
 feature: Security
-source-git-commit: 3430897fc98aecbcf6cc7bf6bdc9b3df24e92366
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '5398'
+source-wordcount: '5402'
 ht-degree: 0%
 
 ---
@@ -284,14 +284,14 @@ Hieronder volgen aanbevelingen voor het beheren van toegangsbeheerlijsten:
 
 * Wijs de machtigingen niet rechtstreeks toe aan gebruikers. Alleen aan groepen toewijzen.
 
-   Dit vereenvoudigt het onderhoud, aangezien het aantal groepen veel kleiner is dan het aantal gebruikers, en ook minder volatiel.
+  Dit vereenvoudigt het onderhoud, aangezien het aantal groepen veel kleiner is dan het aantal gebruikers, en ook minder volatiel.
 
 * Als u wilt dat een groep/gebruiker pagina&#39;s alleen kan wijzigen, geeft u deze geen rechten. Hiermee geeft u ze alleen bewerkings- en leesrechten.
 * Maak spaarzaam gebruik van Weigeren. Gebruik voor zover mogelijk alleen toestaan.
 
-   Het gebruiken ontkent kan onverwachte gevolgen veroorzaken als de toestemmingen in een verschillende orde worden toegepast dan de verwachte orde. Als een gebruiker lid is van meer dan één groep, kunnen de Deny-instructies van de ene groep de Allow-instructie van een andere groep annuleren of op de andere manier. Het is moeilijk om een overzicht te houden wanneer zoiets gebeurt en gemakkelijk tot onvoorziene resultaten kan leiden, terwijl Toewijzingen toestaan dergelijke conflicten niet veroorzaakt.
+  Het gebruiken ontkent kan onverwachte gevolgen veroorzaken als de toestemmingen in een verschillende orde worden toegepast dan de verwachte orde. Als een gebruiker lid is van meer dan één groep, kunnen de Deny-instructies van de ene groep de Allow-instructie van een andere groep annuleren of op de andere manier. Het is moeilijk om een overzicht te houden wanneer zoiets gebeurt en gemakkelijk tot onvoorziene resultaten kan leiden, terwijl Toewijzingen toestaan dergelijke conflicten niet veroorzaakt.
 
-   Adobe raadt u aan om met Toestaan te werken in plaats van Weigeren raadpleegt u [Aanbevolen werkwijzen](#best-practices).
+  Adobe raadt u aan om met Toestaan te werken in plaats van Weigeren raadpleegt u [Aanbevolen werkwijzen](#best-practices).
 
 Voordat u een van beide machtigingen wijzigt, moet u weten hoe deze werken en hoe ze elkaar beïnvloeden. Zie de CRX documentatie die illustreert hoe AEM WCM [evalueert toegangsrechten](/help/sites-administering/user-group-ac-admin.md#how-access-rights-are-evaluated)en voorbeelden van het instellen van toegangslijsten.
 
@@ -391,7 +391,7 @@ Voer een van de volgende handelingen uit om toegang te krijgen tot AEM WCM-bevei
 
 * Klik in het welkomstscherm of op verschillende locaties in AEM op het beveiligingspictogram:
 
-![](do-not-localize/wcmtoolbar.png)
+![AEM tabblad WCM-beveiliging](do-not-localize/wcmtoolbar.png)
 
 * Ga rechtstreeks naar `https://<server>:<port>/useradmin`. Zorg ervoor dat u zich als beheerder aanmeldt bij AEM.
 
@@ -640,7 +640,6 @@ Het replicatievoorrecht is het recht om inhoud te publiceren, en het kan voor gr
 >* De replicatiebevoegdheden van een gebruiker hebben voorrang op de replicatiebevoegdheden van een groep.
 >* De Allow replicatierechten hebben een hogere belangrijkheid dan de Deny replicatierechten. Zie [Machtigingen in AEM](#permissions-in-aem) voor meer informatie .
 >
-
 
 Om replicatievoorrechten te plaatsen:
 

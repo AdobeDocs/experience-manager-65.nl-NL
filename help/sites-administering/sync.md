@@ -12,9 +12,9 @@ discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 002b9035f37a1379556378686b64d26bbbc30288
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2527'
 ht-degree: 1%
 
 ---
@@ -90,6 +90,7 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * lokaliseren `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `name`: **`socialpubsync`**
@@ -97,8 +98,7 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
       * Selecteer de `Enabled` selectievakje
       * selecteren `Save`
 
-
-![](assets/chlimage_1-20.png)
+![Apache Sling Distribution Agent](assets/chlimage_1-20.png)
 
 ### 2. Geautoriseerde gebruiker maken {#createauthuser}
 
@@ -111,15 +111,15 @@ Deze gemachtigde gebruiker zal in stap 3 worden gebruikt om de distributie van h
    * toegang tot [Beveiligingsconsole](/help/sites-administering/security.md)
 
       * bijvoorbeeld: [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
+
    * een nieuwe gebruiker maken
 
       * bijvoorbeeld: `usersync-admin`
+
    * deze gebruiker toevoegen aan de **`administrators`** gebruikersgroep
    * [voeg ACL voor deze gebruiker aan /home toe](#howtoaddacl)
 
       * `Allow jcr:all` met beperking `rep:glob=*/activities/*`
-
-
 
 >[!CAUTION]
 >
@@ -128,7 +128,6 @@ Deze gemachtigde gebruiker zal in stap 3 worden gebruikt om de distributie van h
 >* De standaardgebruiker die is toegewezen **`admin`**.
 >* Niet gebruiken `communities-user-admin user.`
 >
-
 
 #### Hoe te om ACL toe te voegen {#addacls}
 
@@ -148,7 +147,7 @@ Deze gemachtigde gebruiker zal in stap 3 worden gebruikt om de distributie van h
 
 * selecteren **Alles opslaan**
 
-![](assets/chlimage_1-21.png)
+![ACL-venster toevoegen](assets/chlimage_1-21.png)
 
 Zie ook
 
@@ -167,6 +166,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * lokaliseren `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `property name`: **`socialpubsync-publishUser`**
 
@@ -174,8 +174,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
 
       * bijvoorbeeld: `usersync-admin`
 
-
-![](assets/chlimage_1-22.png)
+![Geheime provider van wachtwoordtransport](assets/chlimage_1-22.png)
 
 ### 4. Apache Sling Distribution Agent - Queue Agents Factory {#apache-sling-distribution-agent-queue-agents-factory}
 
@@ -187,17 +186,17 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+
    * lokaliseren `Apache Sling Distribution Agent - Queue Agents Factory`
 
       * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `Name`: `socialpubsync-reverse`
 
       * Selecteer de `Enabled` selectievakje
       * selecteren `Save`
+
    * **herhalen** voor elke publicatie-instantie
 
-
-
-![](assets/chlimage_1-23.png)
+![Queue Agents Factory](assets/chlimage_1-23.png)
 
 ### 5. Adobe Social Sync - Diff Observer Factory {#diffobserver}
 
@@ -209,17 +208,17 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
+
    * lokaliseren **`Adobe Social Sync - Diff Observer Factory`**
 
       * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram)
 
-         Verifiëren `agent name`: `socialpubsync-reverse`
+        Verifiëren `agent name`: `socialpubsync-reverse`
 
       * Selecteer de `Enabled` selectievakje
       * selecteren `Save`
 
-
-![](assets/screen-shot_2019-05-24at090809.png)
+![Fabriek van Diff Observer](assets/screen-shot_2019-05-24at090809.png)
 
 ### 6. Apache Sling Distribution Trigger - Scheduled Triggers Factory {#apache-sling-distribution-trigger-scheduled-triggers-factory}
 
@@ -233,17 +232,17 @@ Standaard wordt elke 30 seconden een opiniepeiling uitgevoerd. U wijzigt dit int
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * lokaliseren `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
       * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram)
 
          * Verifiëren `Name`: `socialpubsync-scheduled-trigger`
+
       * instellen `Interval in Seconds` naar het gewenste interval
       * selecteren `Save`
 
-
-
-![](assets/chlimage_1-24.png)
+![Geplande Triggers Factory](assets/chlimage_1-24.png)
 
 ## Configureren voor meerdere publicatie-instanties {#configure-for-multiple-publish-instances}
 
@@ -259,12 +258,12 @@ De standaardconfiguratie is voor één enkele publicatieinstantie. Aangezien de 
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
+
    * lokaliseren `Apache Sling Distribution Agent - Sync Agents Factory`
 
       * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `Name`: `socialpubsync`
 
-
-![](assets/chlimage_1-25.png)
+![Fabrikant van agents synchroniseren](assets/chlimage_1-25.png)
 
 * **Eindpunten van export**
 Voor elke publicatie-instantie moet een eindpunt voor de exportfunctie aanwezig zijn. Als er bijvoorbeeld 2 publicatie-instanties zijn, localhost:4503 en 4504, moeten er 2 vermeldingen zijn:
@@ -292,11 +291,11 @@ Als er aangepaste gegevens zijn die moeten worden gesynchroniseerd in meerdere p
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld: `https://localhost:4503/system/console/configMgr`
+
    * lokaliseren `AEM Communities User Sync Listener`
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `Name`: `socialpubsync-scheduled-trigger`
 
-
-![](assets/chlimage_1-26.png)
+![AEM Communities User Sync Listener](assets/chlimage_1-26.png)
 
 * **Knooppunttypen**
 Dit is de lijst met knooptypen die worden gesynchroniseerd. Elk knooppunttype anders dan sling:Folder moet hier worden vermeld (sling:folder wordt afzonderlijk behandeld).
@@ -340,7 +339,7 @@ Om te controleren of alle waarden voor de Verschuivende id verschillen, publicee
 1. bladeren naar `http://<host>:<port>/system/console/status-slingsettings`
 1. controleer de waarde van **Verkoop-id**
 
-![](assets/chlimage_1-27.png)
+![De waarde van de verkocht-id controleren](assets/chlimage_1-27.png)
 
 Als de Verschuivende-id van een publicatie-instantie overeenkomt met de Verschuivende-id van een andere publicatie-instantie, geldt het volgende:
 
@@ -350,10 +349,10 @@ Als de Verschuivende-id van een publicatie-instantie overeenkomt met de Verschui
    * zoeken naar en het bestand met de naam *sling.id.file*
 
       * bijvoorbeeld op een Linux-systeem:
-         `rm -i $(find . -type f -name sling.id.file)`
+        `rm -i $(find . -type f -name sling.id.file)`
 
       * bijvoorbeeld op een Windows-systeem:
-         `use windows explorer and search for *sling.id.file*`
+        `use windows explorer and search for *sling.id.file*`
 
 1. De publicatie-instantie starten
 
@@ -387,10 +386,10 @@ Voor een correcte synchronisatie van updates is het nodig om de builder van het 
    * om bestaande rep:beleidsknopen met nieuwe te overschrijven, voeg een derde Filter van het Pakket toe:
 
       * `/home/users|+.*/rep:policy`
+
    * om te voorkomen dat het beleid wordt verspreid,
 
       * `Acl Handling:` `IGNORE`
-
 
 ![Vault Package Builder-fabriek](assets/vault-package-builder-factory.png)
 
@@ -423,13 +422,13 @@ Om de staat van de distributierij te controleren:
       * zoeken naar items in `/var/sling/distribution/packages`
 
          * mapknooppunten met de naam van het patroon `distrpackage_*`
+
    * gebruiken [Pakketbeheer](/help/sites-administering/package-manager.md)
 
       * zoeken naar hangende pakketten (nog niet geïnstalleerd)
 
          * genoemd met het patroon `socialpubsync-vlt*`
          * gemaakt door `communities-user-admin`
-
 
 Schakel gebruikerssynchronisatie uit wanneer de distributiestrijd leeg is:
 
@@ -453,7 +452,7 @@ Als u gewoon de diagnostische console voor gebruikerssynchronisatie invoert, wor
 
 Dit is wat wordt getoond wanneer de Synchronisatie van de Gebruiker niet is toegelaten:
 
-![](assets/chlimage_1-28.png)
+![Waarschuwing dat diagnose gebruikerssync niet is ingeschakeld](assets/chlimage_1-28.png)
 
 #### Diagnostiek voor publicatie-instanties uitvoeren {#how-to-run-diagnostics-for-publish-instances}
 
@@ -463,7 +462,7 @@ In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnosti
 
 **Opmerking**: voordat u de URL start, *geautoriseerde synchronisatiegebruiker* moet al zijn aangemeld bij dat publicatieexemplaar.
 
-![](assets/chlimage_1-29.png)
+![Diagnostiek voor publicatie-instanties](assets/chlimage_1-29.png)
 
 ### Configuratie onjuist toegevoegd {#configuration-improperly-added}
 
@@ -473,23 +472,23 @@ Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van he
 
 #### (auteur) Eén Apache Sling Distribution Agent - Sync Agents Factory {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
-![](assets/chlimage_1-30.png)
+![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-30.png)
 
 #### (auteur) Eén Apache Sling Distribution Transport Credentials - Gebruikersreferenties gebaseerd DistributionTransportSecretProvider {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
 
-![](assets/chlimage_1-31.png)
+![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-31.png)
 
 #### (publiceren) Eén Apache Sling Distribution Agent - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![](assets/chlimage_1-32.png)
+![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-32.png)
 
 #### (publiceren) Eén Adobe Social Sync - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
 
-![](assets/chlimage_1-33.png)
+![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-33.png)
 
 #### (auteur) One Apache Sling Distribution Trigger - Scheduled Triggers Factory {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
-![](assets/chlimage_1-34.png)
+![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-34.png)
 
 ### Uitzondering bewerking wijzigen tijdens reactieverwerking {#modify-operation-exception-during-response-processing}
 
@@ -540,8 +539,8 @@ Zie sectie [9. Unieke verkoper-id](#unique-sling-id)
 
          * Tabblad Filters: Filter toevoegen: Hoofdpad: `/home`
          * Het tabblad Geavanceerd: Wisselstroomverwerking: `Overwrite`
-   * [het pakket exporteren](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
+   * [het pakket exporteren](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
 * in andere publicatiegevallen:
 
@@ -576,6 +575,7 @@ Een publicatie-instantie verwijderen uit het dialoogvenster [Apache Sling Distri
 
       * `Exporter Endpoints`
       * `Importer Endpoints`
+
    * gebruikerssynchronisatie opnieuw inschakelen
 
       * controleren `Enabled` selectievakje voor [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)

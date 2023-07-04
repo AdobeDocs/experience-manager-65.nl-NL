@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1226'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Individuele bezoekers van uw website kunnen alleen worden geïdentificeerd wanne
 * [AEM Communities](/help/communities/overview.md)Sitebezoekers moeten zich aanmelden om inhoud naar de community te posten.
 * [Gesloten gebruikersgroepen](/help/sites-administering/cug.md)
 
-   Mogelijk moet u de toegang tot uw website (of gedeelten ervan) beperken tot specifieke bezoekers.
+  Mogelijk moet u de toegang tot uw website (of gedeelten ervan) beperken tot specifieke bezoekers.
 
 * [Personalisatie](/help/sites-administering/personalization.md) Toestaan dat bezoekers bepaalde aspecten configureren van hoe ze toegang krijgen tot uw website.
 
@@ -33,15 +33,15 @@ De functionaliteit voor aanmelden (en uitloggen) wordt geleverd door een [accoun
 
 * Zelfregistratie vanaf de website
 
-   A [Community-site](/help/communities/sites-console.md) kan zo worden geconfigureerd dat bezoekers zich zelf kunnen registreren of zich kunnen aanmelden bij hun Facebook- of Twitter-accounts.
+  A [Community-site](/help/communities/sites-console.md) kan zo worden geconfigureerd dat bezoekers zich zelf kunnen registreren of zich kunnen aanmelden bij hun Facebook- of Twitter-accounts.
 
 * Registratieverzoek van de website
 
-   Voor een gesloten gebruikersgroep kunt u bezoekers toestaan om registratie aan te vragen, maar u kunt toestemming afdwingen door middel van een workflow.
+  Voor een gesloten gebruikersgroep kunt u bezoekers toestaan om registratie aan te vragen, maar u kunt toestemming afdwingen door middel van een workflow.
 
 * Registreer elk account in de auteursomgeving
 
-   Als u een klein aantal profielen hebt, waarvoor toch toestemming nodig is, kunt u besluiten om elk profiel rechtstreeks te registreren.
+  Als u een klein aantal profielen hebt, waarvoor toch toestemming nodig is, kunt u besluiten om elk profiel rechtstreeks te registreren.
 
 Om bezoekers in staat te stellen zich te registreren, kan een reeks componenten en formulieren worden gebruikt om de vereiste identificatiegegevens te verzamelen, dan de extra (vaak facultatieve) profielinformatie. Nadat zij zich hebben geregistreerd, moeten zij ook de gegevens die zij hebben ingediend, kunnen controleren en bijwerken.
 
@@ -106,7 +106,7 @@ U kunt een ander profiel weergeven met de opdracht [clientcontext](/help/sites-a
 1. Druk **control-alt-C** om de clientcontext te openen.
 1. Klik in de linkerbovenhoek van de clientcontext op de knop **Een profiel laden** knop.
 
-   ![](do-not-localize/loadprofile.png)
+   ![De knop Profiel laden](do-not-localize/loadprofile.png)
 
 1. Selecteer een ander profiel in de vervolgkeuzelijst in het dialoogvenster. bijvoorbeeld: **Alison Parker**.
 1. Klikken **OK**.
@@ -156,11 +156,11 @@ Dit gebeurt met:
 
 * [Providers](#state-providers)
 
-   De twee statussen van een specifieke eigenschap en de overgangen tussen beide beheren.
+  De twee statussen van een specifieke eigenschap en de overgangen tussen beide beheren.
 
 * [Workflows](#workflows)
 
-   Handelingen met betrekking tot de staten beheren.
+  Handelingen met betrekking tot de staten beheren.
 
 Er kunnen meerdere statussen worden gedefinieerd; in de Geometrixx zijn bijvoorbeeld :
 

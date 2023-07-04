@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '945'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmidde
 
 * [Gebruikersbeheer](#user-administration)
 
-   ![chlimage_1-73](assets/chlimage_1-73a.png)
+  ![chlimage_1-73](assets/chlimage_1-73a.png)
 
-   De **Gebruikers** consolelijsten:
+  De **Gebruikers** consolelijsten:
 
    * de gebruikersnaam
    * de aanmeldnaam van de gebruiker (accountnaam)
@@ -42,9 +42,9 @@ Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmidde
 
 * [Groepsbeheer](#group-administration)
 
-   ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![chlimage_1-74](assets/chlimage_1-74a.png)
 
-   De **Groepen** consolelijsten:
+  De **Groepen** consolelijsten:
 
    * de groepsnaam
    * de groepsbeschrijving
@@ -56,7 +56,7 @@ Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmidde
 
 1. Gebruik de **Gebruiker toevoegen** pictogram:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Gebruiker toevoegen](do-not-localize/chlimage_1-1.png)
 
 1. De **Gebruiker maken** formulier wordt geopend:
 
@@ -66,16 +66,16 @@ Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmidde
 
    * **ID**
 
-      Dit is de unieke identificatie voor de gebruikersaccount. Het is verplicht en mag geen spaties bevatten.
+     Dit is de unieke identificatie voor de gebruikersaccount. Het is verplicht en mag geen spaties bevatten.
 
    * **E-mailadres**
    * **Wachtwoord**
 
-      Een wachtwoord is verplicht.
+     Een wachtwoord is verplicht.
 
    * **Wachtwoord opnieuw invoeren**
 
-      Dit is verplicht omdat dit vereist is voor bevestiging van het wachtwoord.
+     Dit is verplicht omdat dit vereist is voor bevestiging van het wachtwoord.
 
    * **Voornaam**
    * **Achternaam**
@@ -93,24 +93,23 @@ Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmidde
    * **Accountinstellingen**
 
       * **Status**
-U kunt de account markeren als 
-**actief** of **inactief**.
+U kunt de account markeren als **actief** of **inactief**.
+
    * **Foto**
 
-      Hier kunt u een foto uploaden om als avatar te gebruiken.
+     Hier kunt u een foto uploaden om als avatar te gebruiken.
 
-      Geaccepteerde bestandstypen: `.jpg .png .tif .gif`
+     Geaccepteerde bestandstypen: `.jpg .png .tif .gif`
 
-      Voorkeursgrootte: `240x240px`
+     Voorkeursgrootte: `240x240px`
 
    * **Gebruiker toevoegen aan groepen**
 
-      Gebruik het keuzemenu Selectie om groepen te selecteren waarvan de gebruiker lid zou moeten zijn. Als deze optie is geselecteerd, gebruikt u de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
+     Gebruik het keuzemenu Selectie om groepen te selecteren waarvan de gebruiker lid zou moeten zijn. Als deze optie is geselecteerd, gebruikt u de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
 
    * **Groepen**
 
-      Een lijst met groepen waarvan de gebruiker momenteel lid is. Gebruik de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
-
+     Een lijst met groepen waarvan de gebruiker momenteel lid is. Gebruik de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
 
 1. Wanneer u het gebruik van de gebruikersaccount hebt gedefinieerd:
 
@@ -146,7 +145,7 @@ U kunt de account markeren als
 1. Gebruik het klikvakje om één of meerdere gebruikers te markeren.
 1. Gebruik de **Groepen** pictogram:
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Het pictogram Groepen gebruiken](do-not-localize/chlimage_1-2.png)
 
    Het keuzemenu Groepsselectie openen:
 
@@ -164,7 +163,7 @@ U kunt de account markeren als
 1. Gebruik het klikvakje om één of meerdere gebruikers te markeren.
 1. Gebruik de **Verwijderen** pictogram om de gebruikersgegevens te verwijderen:
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Bestaande gebruikersgegevens verwijderen](do-not-localize/chlimage_1-3.png)
 
 1. U wordt gevraagd de verwijdering te bevestigen, dan zal een bericht bevestigen dat de daadwerkelijke schrapping heeft plaatsgevonden.
 
@@ -174,7 +173,7 @@ U kunt de account markeren als
 
 1. Gebruik het pictogram Groep toevoegen:
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Een nieuwe groep toevoegen](do-not-localize/chlimage_1-4.png)
 
 1. De **Groep maken** formulier wordt geopend:
 
@@ -184,23 +183,23 @@ U kunt de account markeren als
 
    * **ID**
 
-      Dit is een unieke id voor de groep. Dit is verplicht en mag geen spaties bevatten.
+     Dit is een unieke id voor de groep. Dit is verplicht en mag geen spaties bevatten.
 
    * **Naam**
 
-      Een naam voor de groep; het zal in de console van Groepen worden getoond.
+     Een naam voor de groep; het zal in de console van Groepen worden getoond.
 
    * **Beschrijving**
 
-      Een beschrijving van de groep.
+     Een beschrijving van de groep.
 
    * **Leden aan groep toevoegen**
 
-      Gebruik de keuzelijst Selectie om gebruiker(s) te selecteren die u aan de groep wilt toevoegen. Als deze optie is geselecteerd, gebruikt u de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
+     Gebruik de keuzelijst Selectie om gebruiker(s) te selecteren die u aan de groep wilt toevoegen. Als deze optie is geselecteerd, gebruikt u de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
 
    * **Groepsleden**
 
-      Een lijst met gebruikers in de groep. Gebruik de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
+     Een lijst met gebruikers in de groep. Gebruik de **X** door de naam die u wilt uitschakelen voordat u het bestand opslaat.
 
 1. Wanneer u de groep hebt gedefinieerd, gebruikt u:
 
@@ -218,7 +217,7 @@ U kunt de account markeren als
 1. Gebruik het klikvakje om een groep te markeren.
 1. Gebruik de **Kopiëren** pictogram om de groepdetails te kopiëren:
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Een bestaande groep kopiëren](do-not-localize/chlimage_1-5.png)
 
 1. De **Groepsinstellingen bewerken** formulier wordt geopend.
 
@@ -231,6 +230,6 @@ U kunt de account markeren als
 1. Gebruik het klikvakje om één of meerdere groepen te markeren.
 1. Gebruik de **Verwijderen** pictogram om de groepdetails te verwijderen:
 
-   ![](do-not-localize/chlimage_1-6.png)
+   ![Een bestaande groep verwijderen](do-not-localize/chlimage_1-6.png)
 
 1. U wordt gevraagd de verwijdering te bevestigen, dan zal een bericht bevestigen dat de daadwerkelijke schrapping heeft plaatsgevonden.

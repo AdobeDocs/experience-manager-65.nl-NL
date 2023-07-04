@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '751'
 ht-degree: 0%
 
 ---
@@ -137,11 +137,11 @@ AEM eCommerce biedt:
    * Vouchers
    * en andere
 
-   ![](/help/sites-administering/assets/chlimage_1-130.png)
+  ![voorbeeld geometrixx-componenten](/help/sites-administering/assets/chlimage_1-130.png)
 
-   >[!NOTE]
-   >
-   >Met het integratieframework dat AEM biedt, kunt u ook extra AEM maken voor handelsmogelijkheden, onafhankelijk van uw specifieke eCommerce-engine.
+  >[!NOTE]
+  >
+  >Met het integratieframework dat AEM biedt, kunt u ook extra AEM maken voor handelsmogelijkheden, onafhankelijk van uw specifieke eCommerce-engine.
 
 * **Zoeken** - met gebruikmaking van:
 
@@ -150,28 +150,28 @@ AEM eCommerce biedt:
    * een zoekopdracht van derden
    * of een combinatie daarvan.
 
-   ![](/help/sites-administering/assets/chlimage_1-131.png)
+  ![zoekvoorbeeld](/help/sites-administering/assets/chlimage_1-131.png)
 
 * Gebruikt de AEM **presenteer uw inhoud op meerdere kanalen**, of dit nu het volledige browservenster of het mobiele apparaat is. Hierdoor wordt uw inhoud geleverd in de indeling die uw bezoekers nodig hebben.
 
-   ![](/help/sites-administering/assets/chlimage_1-132.png)
+  ![voorbeeld van mobiele weergave](/help/sites-administering/assets/chlimage_1-132.png)
 
 * De mogelijkheid om **uw eigen integratieimplementatie ontwikkelen op basis van de [AEM eCommerce-kader](#the-framework)**.
 
-   De twee momenteel beschikbare implementaties zijn beide op dezelfde basis gebaseerd - bovenop de algemene API (het framework). Het implementeren van een nieuwe integratie houdt alleen in dat u de functies implementeert die uw integratie nodig heeft. De front-end componenten kunnen door om het even welke nieuwe implementatie worden gebruikt aangezien zij interfaces (zo onafhankelijk van de implementatie zijn) gebruiken.
+  De twee momenteel beschikbare implementaties zijn beide op dezelfde basis gebaseerd - bovenop de algemene API (het framework). Het implementeren van een nieuwe integratie houdt alleen in dat u de functies implementeert die uw integratie nodig heeft. De front-end componenten kunnen door om het even welke nieuwe implementatie worden gebruikt aangezien zij interfaces (zo onafhankelijk van de implementatie zijn) gebruiken.
 
 * De mogelijkheid om **ervaringsgestuurde handel op basis van verkoopgegevens en activiteiten**. Dit staat u toe om vele scenario&#39;s te realiseren:
 
    * Een voorbeeld hiervan kan zijn het verlagen van de verzendkosten wanneer de totale bestelling een bepaald bedrag overschrijdt.
    * Een andere mogelijkheid is mogelijk om seizoensgebonden aanbiedingen te doen die profielgegevens gebruiken (bijvoorbeeld locatie). Deze kunnen vervolgens worden gemarkeerd, ook als dat nodig is, afhankelijk van andere factoren.
 
-   In het onderstaande voorbeeld ziet u een gummetje omdat de inhoud van het karretje minder dan $75 bedraagt:
+  In het onderstaande voorbeeld ziet u een gummetje omdat de inhoud van het karretje minder dan $75 bedraagt:
 
-   ![](/help/sites-administering/assets/chlimage_1-133.png)
+  ![winkelwagentje met clientcontext](/help/sites-administering/assets/chlimage_1-133.png)
 
-   Dit kan worden gewijzigd wanneer de inhoud van het winkelwagentje meer dan $75 bedraagt:
+  Dit kan worden gewijzigd wanneer de inhoud van het winkelwagentje meer dan $75 bedraagt:
 
-   ![](/help/sites-administering/assets/chlimage_1-134.png)
+  ![winkelwagentje met clientcontext na wijziging](/help/sites-administering/assets/chlimage_1-134.png)
 
 * en andere functies, zoals:
 

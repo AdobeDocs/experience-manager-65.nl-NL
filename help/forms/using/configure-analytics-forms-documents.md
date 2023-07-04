@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: 66631fd0813f623f3321072fc00fd90f7fa33d21
+source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
 workflow-type: tm+mt
-source-wordcount: '1531'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -112,7 +112,7 @@ Voer de volgende stappen uit om een rapportsuite te maken.
 Configuratie van Cloud Servicen is informatie over uw Adobe Analytics-account. Met de configuratie kan Adobe Experience Manager (AEM) verbinding maken met Adobe Analytics. Maak een aparte configuratie voor elke analytische account die u gebruikt.
 
 1. Meld u als beheerder aan bij de AEM auteur-instantie.
-1. Klik in de linkerbovenhoek op **Adobe Experience Manager** > **Gereedschappen** ![](/help/forms/using/assets/tools.png) > **Cloud Services** > **Oudere Cloud Services**.
+1. Klik in de linkerbovenhoek op **Adobe Experience Manager** > **Gereedschappen** ![hamerpictogram](/help/forms/using/assets/tools.png) > **Cloud Services** > **Oudere Cloud Services**.
 1. Zoeken **Adobe Analytics** pictogram. Klikken **Configuraties tonen** en ga vervolgens door met klikken **[+]** om nieuwe configuratie toe te voegen.
 
    Als u voor het eerst een gebruiker bent, klikt u op **Nu configureren**.
@@ -145,7 +145,7 @@ Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-var
 
    ![information_to_send_to_report_suite](assets/information_to_send_to_report_suite.png)
 
-1. Sleep een **Component Formulieranalyse** van de **overige** van SideKick naar het framework.
+1. Sleep een **Component Formulieranalyse** van de **overige** categorie van Sidekick naar het kader.
 1. Als u analytische variabelen wilt toewijzen aan variabelen die in de component zijn gedefinieerd, sleept u een variabele van AEM Content Finder naar een veld in de component tracking.
 
    ![AEM variabelen toewijzen aan Adobe Analytics-variabelen](assets/analytics_new.png)
@@ -169,6 +169,7 @@ Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-var
    * **Overzicht van synchronisatie van analyserapporten**: Uitsnijdexpressie opgeven voor het ophalen van rapporten uit Adobe Analytics. De standaardwaarde is 0 0 2? &#42; &#42;.
 
    * **Time-out testrapport:** Geef de tijdsduur in seconden op, waarna de server moet reageren op het analyserapport. De standaardtijd is 120 seconden.
+
    >[!NOTE]
    >
    >Het kan tot 10 seconden meer aan onderbrekingsrapport nemen haal verrichting toen het gespecificeerde aantal seconden.

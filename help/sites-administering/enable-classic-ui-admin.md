@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6dbe82c2-7a25-49ab-a980-3635f0344817
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b4370d23c7b1bd43e1f02a862f11952d04892eb3
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatse
 
    Bijvoorbeeld
 
-   [ `https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
+   [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
 1. Selecteer de knoop die aan de console beantwoordt waarvoor u Klassieke UI wilt re-toelaten. Voor ons voorbeeld, zullen wij klassieke UI voor de console van Plaatsen re-toelaten.
 
@@ -50,6 +50,6 @@ In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatse
 
 1. De **Klassieke interface** deze optie is weer beschikbaar als een popover-optie in de beheerconsole.
 
-   ![](assets/syui-01-2019-02-27-15-16-55.png)
+   ![Klassieke UI-popover, optie](assets/syui-01-2019-02-27-15-16-55.png)
 
 Herhaal deze stappen voor elke console waarvoor u toegang tot de Klassieke versie van UI wenst opnieuw toe te laten.

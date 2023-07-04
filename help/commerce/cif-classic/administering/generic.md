@@ -8,9 +8,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 6ebcc7bd5c72c01672244fdfba353a8949f6e331
 workflow-type: tm+mt
-source-wordcount: '2910'
+source-wordcount: '2979'
 ht-degree: 0%
 
 ---
@@ -66,21 +66,22 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 1. Met de **Producten** navigeren naar de gewenste locatie.
 1. Gebruik de **Producten importeren** om de wizard te openen.
 
-   ![chlimage_1-1](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![Pictogram Producten importeren](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. Geef het volgende op:
 
    * **Importeur**
 
-      De importeur voor de specifieke [handelsprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)standaard `Geometrixx`.
+     De importeur voor de specifieke [handelsprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers)standaard `Geometrixx`.
 
    * **Bron**
 
-      Het bestand dat u wilt importeren; u kunt de browser gebruiken om een bestand te selecteren.
+     Het bestand dat u wilt importeren; u kunt de browser gebruiken om een bestand te selecteren.
 
    * **Incrementele import**
 
-      Geef aan of dit een incrementele invoer is (in tegenstelling tot volledige invoer).
+     Geef aan of dit een incrementele invoer is (in tegenstelling tot volledige invoer).
+
    >[!NOTE]
    >
    >De incrementele invoer (van de voorbeeldgeometrixx-outdoorimporteur) vindt plaats op productniveau.
@@ -104,27 +105,27 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 1. Met de **Gereedschappen** de console opent **Handel** map.
 1. Dubbelklik om het dialoogvenster **Producimporteur**:
 
-   ![chlimage_1-22](/help/sites-administering/assets/chlimage_1-22.jpeg)
+   ![Console voor importeren van producten](/help/sites-administering/assets/chlimage_1-22.jpeg)
 
 1. Geef het volgende op:
 
    * **Winkelnaam**
 
-      Producten worden geïmporteerd naar:
+     Producten worden geïmporteerd naar:
 
-      `/etc/commerce/products/<*store name*>/`
+     `/etc/commerce/products/<*store name*>/`
 
    * **Handelsprovider**
 
-      De importer voor uw [handelsprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); standaard Geometrixx.
+     De importer voor uw [handelsprovider](/help/commerce/cif-classic/administering/concepts.md#commerce-providers); standaard Geometrixx.
 
    * **Bronbestand**
 
-      De locatie in de opslagplaats van het bestand dat u wilt importeren.
+     De locatie in de opslagplaats van het bestand dat u wilt importeren.
 
    * **Incrementele import**
 
-      Geef aan of dit een incrementele invoer is (in tegenstelling tot volledige invoer).
+     Geef aan of dit een incrementele invoer is (in tegenstelling tot volledige invoer).
 
 1. Klikken **Producten importeren**.
 
@@ -142,7 +143,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
    * **Product maken**
    * **Productvariatie maken**
 
-   ![chlimage_1-14](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![Pictogram voor maken in de vorm van een plusteken](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. De wizard wordt geopend. Gebruik de **Basis** en **Tabs product** om de [productkenmerken](/help/commerce/cif-classic/administering/concepts.md#product-attributes) voor het nieuwe product of de nieuwe productvariant.
 
@@ -178,7 +179,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    Selecteer **Productgegevens weergeven** pictogram:
 
-   ![chlimage_1-3](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![pictogram met productgegevens weergeven - informatiepictogram](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. De [productkenmerken](/help/commerce/cif-classic/administering/concepts.md#product-attributes) wordt weergegeven. Gebruiken **Bewerken** en **Gereed** om wijzigingen aan te brengen.
 
@@ -189,11 +190,11 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 1. Met de **Producten** console (via **Handel**) navigeer naar de productinformatie.
 1. Open de secundaire rail voor Referenties met het pictogram:
 
-   ![chlimage_1-4](/help/sites-administering/do-not-localize/chlimage_1-16.png)
+   ![pictogram dubbele pijl](/help/sites-administering/do-not-localize/chlimage_1-16.png)
 
 1. Selecteer het vereiste product. De secundaire rail wordt bijgewerkt en geeft de beschikbare referentietypen weer:
 
-   ![chlimage_1-88](/help/sites-administering/assets/chlimage_1-88.png)
+   ![productconsole met open verwijzingen](/help/sites-administering/assets/chlimage_1-88.png)
 
 1. Klik/tik op het referentietype (bijvoorbeeld productpagina&#39;s) om de lijst uit te vouwen.
 1. Selecteer een specifieke verwijzing om de opties weer te geven:
@@ -201,18 +202,18 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
    * Naar productpagina navigeren
    * Productpagina bewerken
 
-   ![chlimage_1-89](/help/sites-administering/assets/chlimage_1-89.png)
+   ![Referentiepaneel van de productconsole](/help/sites-administering/assets/chlimage_1-89.png)
 
 ### Zoeken naar producten {#search-for-products}
 
 1. Ga naar de **Producten** console, via **Handel**.
 1. Open de secundaire rail voor Onderzoek met het pictogram:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-17.png)
+   ![vergrootglaspictogram](/help/sites-administering/do-not-localize/chlimage_1-17.png)
 
 1. U kunt op verschillende manieren naar producten zoeken. U kunt slechts één of meerdere facetten voor een onderzoek gebruiken. De gevonden producten worden weergegeven:
 
-   ![chlimage_1-90](/help/sites-administering/assets/chlimage_1-90.png)
+   ![Productgegevens in productconsole](/help/sites-administering/assets/chlimage_1-90.png)
 
 1. Als u op een product klikt of erop tikt, wordt het geopend. U kunt het ook publiceren of de productgegevens bekijken.
 
@@ -250,7 +251,7 @@ U kunt meerdere elementen toevoegen aan de productcomponent en vervolgens het el
 1. Tik op het pictogram Bewerken of klik op het pictogram Bewerken.
 1. Schuiven naar **Toevoegen**.
 
-   ![chlimage_1-91](/help/sites-administering/assets/chlimage_1-91.png)
+   ![Screenshot van productgegevens toevoegen](/help/sites-administering/assets/chlimage_1-91.png)
 
 1. Tikken/klikken **Toevoegen**. Er wordt een nieuwe plaatsaanduiding voor elementen weergegeven.
 1. Door te tikken of te klikken op **Wijzigen **Hiermee opent u een dialoogvenster waarin u een element kunt kiezen.
@@ -337,7 +338,7 @@ Het mechanisme voor het selecteren van de afbeelding die moet worden weergegeven
 
    Selecteer **Publiceren** of **Publiceren ongedaan maken** pictogram naar wens:
 
-   ![chlimage_1-6](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![chlimage_1-7](/help/sites-administering/do-not-localize/chlimage_1-19.png)
+   ![wereldpictogram](/help/sites-administering/do-not-localize/chlimage_1-18.png) ![wereldpictogram met een kruisje - geen teken](/help/sites-administering/do-not-localize/chlimage_1-19.png)
 
    De productinformatie zal worden gepubliceerd of, indien van toepassing, niet gepubliceerd.
 
@@ -367,7 +368,7 @@ Voor de `PRODUCT_*` gebeurtenissen, wijst het pad naar het basisproduct in `/etc
 
 U kunt hen in de Console van het Web in gebeurtenissen bekijken OSGI ( `/system/console/events`), bijvoorbeeld:
 
-![](/help/sites-administering/do-not-localize/chlimage_1-20.png)
+![Voorbeelden van OSGI-gebeurtenissen](/help/sites-administering/do-not-localize/chlimage_1-20.png)
 
 >[!NOTE]
 >
@@ -389,15 +390,15 @@ Als u op de hotspot klikt, wordt een dialoogvenster geopend waarin u de grootte 
 
 1. Klik op het pictogram Volledig scherm.
 
-   ![chlimage_1-92](/help/sites-administering/assets/chlimage_1-92.png)
+   ![pictogram Volledig scherm](/help/sites-administering/assets/chlimage_1-92.png)
 
 1. Klik op het pictogram Startmap.
 
-   ![chlimage_1-93](/help/sites-administering/assets/chlimage_1-93.png)
+   ![Startnerschap](/help/sites-administering/assets/chlimage_1-93.png)
 
 1. Klik op een van de vormpictogrammen.
 
-   ![chlimage_1-21](/help/sites-administering/do-not-localize/chlimage_1-21.png)
+   ![vormpictogrammen](/help/sites-administering/do-not-localize/chlimage_1-21.png)
 
 1. Wijzig en verplaats de vorm naar wens.
 1. Klik op de vorm.
@@ -407,17 +408,17 @@ Als u op de hotspot klikt, wordt een dialoogvenster geopend waarin u de grootte 
    >
    >U kunt ook rechtstreeks het productpad typen dat zich op productniveau moet bevinden, niet het variantniveau.
 
-   ![chlimage_1-94](/help/sites-administering/assets/chlimage_1-94.png)
+   ![tekstpad](/help/sites-administering/assets/chlimage_1-94.png)
 
 1. Klik tweemaal op het bevestigingspictogram en klik op Volledig scherm afsluiten.
 1. Klik ergens op de pagina naast de component. De pagina moet worden vernieuwd en u ziet het volgende symbool in uw afbeelding:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-22.png)
+   ![plus-symbool](/help/sites-administering/do-not-localize/chlimage_1-22.png)
 
 1. Overschakelen op [voorvertoning](/help/sites-authoring/editing-content.md#previewingpagestouchoptimizedui) in.
 1. Klik op + hotspot. Er wordt een dialoogvenster geopend waarin u de grootte en de hoeveelheid van het product kunt kiezen die u hebt ingevoerd **Pad**.
 
-   ![chlimage_1-95](/help/sites-administering/assets/chlimage_1-95.png)
+   ![productvoorbeeld: poncho](/help/sites-administering/assets/chlimage_1-95.png)
 
 1. Voer een grootte en een hoeveelheid in.
 1. Klik op de knop Toevoegen aan winkelwagentje. Het dialoogvenster wordt gesloten.
@@ -429,15 +430,15 @@ U kunt configureren hoe het dialoogvenster eruitziet wanneer u op de hotspot kli
 
 1. Klik de component en klik vormen pictogram.
 
-   ![chlimage_1-96](/help/sites-administering/assets/chlimage_1-96.png)
+   ![Configuratiepictogram](/help/sites-administering/assets/chlimage_1-96.png)
 
 1. Omlaag schuiven. Er is een **TOEVOEGEN AAN KAART** tab.
 
-   ![chlimage_1-97](/help/sites-administering/assets/chlimage_1-97.png)
+   ![Toevoegen aan tabblad Kaart](/help/sites-administering/assets/chlimage_1-97.png)
 
 1. Klikken **TOEVOEGEN AAN KAART**. Er zijn 3 configuratieopties die u kunt gebruiken.
 
-   ![chlimage_1-98](/help/sites-administering/assets/chlimage_1-98.png)
+   ![configuratieopties](/help/sites-administering/assets/chlimage_1-98.png)
 
 1. Klik op het pictogram Gereed.
 
@@ -461,18 +462,18 @@ Een catalogus genereren:
 
 1. In de lijst selecteert u **Catalogus maken** wordt de wizard Catalogus maken geopend.
 
-   ![chlimage_1-99](/help/sites-administering/assets/chlimage_1-99.png)
+   ![wizard Catalogus maken](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigeer naar de gewenste blauwdruk van de catalogus.
 1. Tikken/klikken **Selecteren** en tik/klik op de gewenste blauwdruk van de catalogus.
 1. Tikken/klikken **Volgende**.
 
-   ![chlimage_1-100](/help/sites-administering/assets/chlimage_1-100.png)
+   ![wizard Cataloguseigenschappen](/help/sites-administering/assets/chlimage_1-100.png)
 
 1. Typ a **Titel** en **Naam**.
 1. Tik/klik op de knop **Maken** knop. De catalogus wordt gemaakt en er wordt een dialoogvenster geopend.
 
-   ![chlimage_1-101](/help/sites-administering/assets/chlimage_1-101.png)
+   ![dialoogvenster Catalogus gemaakt](/help/sites-administering/assets/chlimage_1-101.png)
 
 1. Tapping/klikken **Gereed** brengt u terug naar de console van Plaatsen waar u uw catalogus zult kunnen zien.
 
@@ -548,11 +549,11 @@ Een catalogus uitrollen:
 1. Navigeer naar de locatie waar u de blauwdruk van de catalogus wilt importeren.
 1. Tik/klik op de knop **Blauwdrukken importeren** pictogram.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-13.png)
+   ![Pictogram Blauwafdrukken importeren](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
 1. Selecteer in de wizard de gewenste bron en tik/klik op **Volgende**.
 
-   ![chlimage_1-340](/help/sites-administering/assets/chlimage_1-102.png)
+   ![blauwdruk, wizard](/help/sites-administering/assets/chlimage_1-102.png)
 
 1. Tikken/klikken **Gereed** zodra het importeren is voltooid.
 
@@ -661,7 +662,7 @@ Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de car
 1. Met de **Orders** navigeren naar de gewenste locatie.
 1. Gebruik de **Maken** pictogram om te selecteren **Volgorde maken**.
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-14.png)
+   ![Pictogram voor maken in de vorm van een plusteken](/help/sites-administering/do-not-localize/chlimage_1-14.png)
 
 1. De wizard wordt geopend. Gebruik de **Basis**, **Inhoud**, **Betaling** en **Afhandeling** tabs om de [informatie over de nieuwe order](/help/commerce/cif-classic/administering/concepts.md#order-information).
 
@@ -679,7 +680,7 @@ Op de demo-site (Geometrixx Outdoors - Engels) ziet u het bonformulier op de car
 
    Selecteer **Bestelgegevens weergeven** pictogram:
 
-   ![](/help/sites-administering/do-not-localize/chlimage_1-15.png)
+   ![informatiepictogram](/help/sites-administering/do-not-localize/chlimage_1-15.png)
 
 1. De [ordergegevens](/help/commerce/cif-classic/administering/concepts.md#order-information) wordt weergegeven. Gebruiken **Bewerken** en **Gereed** om wijzigingen aan te brengen.
 

@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 8f98d018518f2491f29211552863d3fa005cc0b7
 workflow-type: tm+mt
-source-wordcount: '1070'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
+
 
 # Segmentatie configureren {#configuring-segmentation}
 
@@ -34,7 +35,7 @@ AEM kunt u eenvoudig segmenten, trasters en campagnes maken en bijwerken. Het st
 
 De **Segmenteditor** Hiermee kunt u eenvoudig een segment definiëren:
 
-![](assets/segmenteditor.png)
+![Het venster Segmenteditor](assets/segmenteditor.png)
 
 U kunt **Bewerken** elk segment dat een **Titel**, **Beschrijving** en **Verhogen** factor. Met de hulpwerkbalk kunt u toevoegen **EN** en **OF** containers voor het definiëren van de **Segmentlogica** Voeg vervolgens de vereiste **Segmentsporen** om de selectiecriteria te definiëren.
 
@@ -130,17 +131,17 @@ Het nieuwe segment definiëren:
 1. Een [nieuwe pagina](/help/sites-authoring/editing-content.md#creatinganewpage) met de **Segment** sjabloon.
 1. Open de nieuwe pagina om de segmenteditor weer te geven:
 
-   ![](assets/screen_shot_2012-02-02at101726am.png)
+   ![De eerste stap van het creëren van een nieuw segment in de Redacteur van het Segment](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Gebruik de zijbalk of het contextmenu (klik met de rechtermuisknop en selecteer vervolgens **Nieuw...** om het venster van de Component van het Tussenvoegsel Nieuwe te openen) om het segmentspoor te vinden u wenst. Sleep het vervolgens naar de **Segmenteditor** wordt standaard weergegeven **EN** container.
 1. Dubbelklik op de nieuwe eigenschap om de specifieke parameters te bewerken; bijvoorbeeld de muispositie:
 
-   ![](assets/screen_shot_2012-02-02at103135am.png)
+   ![Een component bewerken in de Segmenteditor](assets/screen_shot_2012-02-02at103135am.png)
 
 1. Klikken **OK** om uw definitie op te slaan:
 1. U kunt **Bewerken** de segmentdefinitie om het een **Titel**, **Beschrijving** en **[Verhogen](#boost-factor)** factor:
 
-   ![](assets/screen_shot_2012-02-02at103547am.png)
+   ![De segmentinstellingen bewerken in de Segmenteditor](assets/screen_shot_2012-02-02at103547am.png)
 
 1. Voeg desgewenst meer kenmerken toe. U kunt booleaanse expressies formuleren met de opdracht **EN Container** en **OF Container** componenten gevonden onder **Segmentlogica**. Met de segmentredacteur kunt u eigenschappen of containers schrappen niet meer nodig, of hen slepen aan nieuwe posities binnen de verklaring.
 
@@ -161,7 +162,7 @@ Vrouwen tussen 16 en 62 jaar
 
 Aangezien de belangrijkste exploitant OF is moet u met beginnen **OF Container**. Binnen dit hebt u 2 EN verklaringen voor elk van hen nodig **EN Container**, waarin u de afzonderlijke kenmerken kunt toevoegen.
 
-![](assets/screen_shot_2012-02-02at105145am.png)
+![Een voorbeeld van AND en OR operatoren in de Segment Editor](assets/screen_shot_2012-02-02at105145am.png)
 
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 
@@ -174,11 +175,11 @@ Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van w
 
 Een eenvoudige segmentdefinitie kan bijvoorbeeld gebaseerd zijn op de leeftijd en het geslacht van de gebruiker. Wanneer u een specifiek profiel laadt, wordt getoond dat het segment is opgelost:
 
-![](assets/screen_shot_2012-02-02at105926am.png)
+![Het gebruiken van het venster van de Context van de Cliënt om een EN segmentatieverrichting te testen](assets/screen_shot_2012-02-02at105926am.png)
 
 Of niet:
 
-![](assets/screen_shot_2012-02-02at110019am.png)
+![Het gebruiken van het venster van de Context van de Cliënt om een NOT segmenteringsverrichting te testen](assets/screen_shot_2012-02-02at110019am.png)
 
 >[!NOTE]
 >
@@ -188,7 +189,7 @@ Dergelijke tests kunnen ook worden uitgevoerd op inhoudspagina&#39;s en in combi
 
 Bij de muisaanwijzer op een teasalinea worden de toegepaste segmenten weergegeven, ongeacht of deze momenteel zijn opgelost en waarom de huidige teaser-instantie is geselecteerd:
 
-![](assets/chlimage_1-47.png)
+![Een voorbeeldmuis over een segment](assets/chlimage_1-47.png)
 
 ### Uw segment gebruiken {#using-your-segment}
 

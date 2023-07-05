@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 4dd216167f97eb6f6181586b57694b139872c5ef
 workflow-type: tm+mt
-source-wordcount: '945'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
+
 
 # granietbewerkingen - gebruikers- en groepsbeheer{#granite-operations-user-and-group-administration}
 
@@ -26,7 +27,7 @@ Deze rekeningen vormen de onderliggende grondslag van de [AEM](/help/sites-admin
 
 De gebruikers- en groepsbeheerconsoles in graniet zijn beide beschikbaar in de **[Gereedschappen](/help/sites-administering/tools-consoles.md)** console van de interface voor geoptimaliseerde aanrakingen:
 
-![chlimage_1-72](assets/chlimage_1-72a.png)
+![Tools Console](assets/chlimage_1-72a.png)
 
 Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmiddelen zal de aangewezen console openen. In beide gevallen kunt u actie ondernemen via het selectievakje en vervolgens via de werkbalk of door de accountgegevens te openen via de koppeling onder **Naam**.
 
@@ -42,7 +43,7 @@ Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmidde
 
 * [Groepsbeheer](#group-administration)
 
-  ![chlimage_1-74](assets/chlimage_1-74a.png)
+  ![Gebruikersbeheerconsole](assets/chlimage_1-74a.png)
 
   De **Groepen** consolelijsten:
 
@@ -56,11 +57,11 @@ Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmidde
 
 1. Gebruik de **Gebruiker toevoegen** pictogram:
 
-   ![Gebruiker toevoegen](do-not-localize/chlimage_1-1.png)
+   ![Gebruikerspictogram toevoegen](do-not-localize/chlimage_1-1.png)
 
 1. De **Gebruiker maken** formulier wordt geopend:
 
-   ![chlimage_1-75](assets/chlimage_1-75a.png)
+   ![Formulier met gebruikersgegevens](assets/chlimage_1-75a.png)
 
    Hier kunt u de gebruikersgegevens voor de account invoeren (de meeste zijn standaard en zonder uitleg):
 
@@ -132,11 +133,11 @@ U kunt de account markeren als **actief** of **inactief**.
 
 1. U kunt de gegevens nu op dezelfde manier bewerken als in [Een nieuwe gebruiker toevoegen](#adding-a-new-user). Onder **Accountinstellingen** er is een verband voor **Wachtwoord wijzigen**.
 
-   ![chlimage_1-76](assets/chlimage_1-76a.png)
+   ![Accountinstellingen, dialoogvenster](assets/chlimage_1-76a.png)
 
 1. De **Wachtwoord wijzigen** wordt geopend. Voer het nieuwe wachtwoord en het wachtwoord in en typ het opnieuw. Gebruiken **OK** om de wijzigingen te bevestigen.
 
-   ![chlimage_1-77](assets/chlimage_1-77a.png)
+   ![Het dialoogvenster Wachtwoord wijzigen](assets/chlimage_1-77a.png)
 
    Een bericht zal bevestigen dat het wachtwoord is veranderd.
 
@@ -149,7 +150,7 @@ U kunt de account markeren als **actief** of **inactief**.
 
    Het keuzemenu Groepsselectie openen:
 
-   ![chlimage_1-78](assets/chlimage_1-78a.png)
+   ![Groepen, kiezer](assets/chlimage_1-78a.png)
 
 1. In het selectievak kunt u groepen selecteren of deselecteren waartoe de gebruikersaccount behoort.
 
@@ -177,7 +178,7 @@ U kunt de account markeren als **actief** of **inactief**.
 
 1. De **Groep maken** formulier wordt geopend:
 
-   ![chlimage_1-79](assets/chlimage_1-79a.png)
+   ![Formulier Groepsdetails](assets/chlimage_1-79a.png)
 
    Hier kunt u de groepdetails invoeren:
 

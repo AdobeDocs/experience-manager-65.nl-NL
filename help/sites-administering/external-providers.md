@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
+
 
 # Analyse met externe providers {#analytics-with-external-providers}
 
@@ -70,15 +71,15 @@ Voor de basisconfiguratie:
 1. Vanuit het linkervenster uitvouwen **Configuraties van Cloud Services**.
 1. Dubbelklikken op **Generic Analytics-fragment** om de pagina te openen:
 
-   ![](assets/analytics_genericoverview.png)
+   ![Generic Analytics-fragment](assets/analytics_genericoverview.png)
 
 1. Klik op + om een nieuwe configuratie toe te voegen gebruikend de dialoog; minimaal een naam toewijzen, bijvoorbeeld google analytics:
 
-   ![](assets/analytics_addconfig.png)
+   ![Configuratie maken](assets/analytics_addconfig.png)
 
 1. Klikken **Maken**, wordt het dialoogvenster met fragmenten direct geopend. U kunt het juiste JavaScript-fragment in het veld plakken:
 
-   ![](assets/analytics_snippet.png)
+   ![De component bewerken](assets/analytics_snippet.png)
 
 1. Klikken **OK** om op te slaan.
 
@@ -90,12 +91,12 @@ Nadat u de de dienstconfiguratie hebt gecreeerd moet u nu de vereiste pagina&#39
 1. Open de **Pagina-eigenschappen** van sidekick, dan **Cloud Services** tab.
 1. Klikken **Service toevoegen** selecteert u vervolgens de gewenste service; bijvoorbeeld **Generic Analytics-fragment**:
 
-   ![](assets/analytics_selectservice.png)
+   ![Een cloudservice toevoegen](assets/analytics_selectservice.png)
 
 1. Klikken **OK** om op te slaan.
 1. U wordt teruggestuurd naar de **Cloud Services** tab. De **Generic Analytics-fragment** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren; bijvoorbeeld google-analytics:
 
-   ![](assets/analytics_selectspecificservice.png)
+   ![Configuratie van cloudservice toevoegen](assets/analytics_selectspecificservice.png)
 
 1. Klikken **OK** om op te slaan.
 

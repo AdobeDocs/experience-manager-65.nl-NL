@@ -10,12 +10,13 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
 workflow-type: tm+mt
-source-wordcount: '1600'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
+
 
 # Koppeling bijhouden configureren voor Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
@@ -28,7 +29,7 @@ Wanneer gebruikers op koppelingen op pagina&#39;s van uw website klikken, kunt u
 1. Gebruiken **Configuraties tonen**, opent u het vereiste Adobe Analytics-kader.
 1. Breid uit **Configuratie van bijhouden koppeling** sectie en configureer indien nodig (op deze pagina vindt u meer informatie):
 
-   ![aa-08](assets/aa-08.png)
+   ![Analyseframework](assets/aa-08.png)
 
 ## Bestandsdownloads volgen {#tracking-file-downloads}
 
@@ -48,7 +49,7 @@ Downloads van de volgende bestandstypen worden standaard bijgehouden:
 * pdf
 * xls
 
-Als downloadtracering bijvoorbeeld is ingeschakeld voor PDF-bestanden en gebruikers op koppelingen naar PDF-bestanden klikken, wordt de download van de PDF bijgehouden.
+Als het bijhouden van de download bijvoorbeeld is ingeschakeld voor PDF-bestanden, wordt het downloaden van de PDF bijgehouden wanneer gebruikers op koppelingen naar PDF-bestanden klikken.
 
 De eigenschappen voor het bijhouden van de download van het framework worden geïmplementeerd als code in het dialoogvenster `analytics.sitecatalyst.js` bestand dat voor een pagina wordt gegenereerd. In het volgende codevoorbeeld wordt de standaardconfiguratie voor het bijhouden van downloads weergegeven:
 
@@ -80,19 +81,19 @@ Hiermee schakelt u het bijhouden van externe koppelingen in.
 * **Externe filters**
 (Optioneel) Definieert filters voor het afstemmen van de externe URL&#39;s van de koppelingsdoelen. Wanneer de koppelingsdoelen overeenkomen met het filter, wordt de koppeling bijgehouden. Externe filters zijn handig voor het bijhouden van slechts enkele externe koppelingen op uw pagina&#39;s.
 
-   Als u de externe koppelingen wilt opgeven die moeten worden bijgehouden, typt u de volledige URL of een deel van de URL van het koppelingsdoel. Scheid meerdere filters met een komma. Letterlijke tekens voor tekenreeksen sluiten binnen enkele aanhalingstekens. Geen waarde (de standaardwaarde van `''`, twee enkele aanhalingstekens) worden alle externe koppelingen bijgehouden.
+  Als u de externe koppelingen wilt opgeven die moeten worden bijgehouden, typt u de volledige URL of een deel van de URL van het koppelingsdoel. Scheid meerdere filters met een komma. Letterlijke tekens voor tekenreeksen sluiten binnen enkele aanhalingstekens. Geen waarde (de standaardwaarde van `''`, twee enkele aanhalingstekens) worden alle externe koppelingen bijgehouden.
 
 * **Interne filters**
 Definieert filters voor het afstemmen van de URL&#39;s van interne koppelingen. Wanneer de koppeling verwijst naar URL&#39;s die overeenkomen met dit filter, wordt de koppeling niet bijgehouden. De standaardwaarde is een javascript-opdracht die de hostnaam van de URL voor het huidige vensteradres retourneert.
 
-   Als u de interne koppelingen wilt opgeven die niet worden bijgehouden, typt u de volledige of gedeeltelijke interne URL van het koppelingsdoel. Scheid meerdere filters met een komma. Letterlijke tekens voor tekenreeksen sluiten binnen enkele aanhalingstekens.
+  Als u de interne koppelingen wilt opgeven die niet worden bijgehouden, typt u de volledige of gedeeltelijke interne URL van het koppelingsdoel. Scheid meerdere filters met een komma. Letterlijke tekens voor tekenreeksen sluiten binnen enkele aanhalingstekens.
 
-   De standaardwaarde is `'javascript:,'+window.location.hostname`
+  De standaardwaarde is `'javascript:,'+window.location.hostname`
 
 * **Query-tekenreeks behouden**
 Neemt URL-parameters op bij het evalueren van overeenkomsten met interne en externe filters.
 
-   Schakel deze optie in om URL-parameters op te nemen wanneer u URL&#39;s van koppelingsdoelen evalueert op basis van externe en interne filters.
+  Schakel deze optie in om URL-parameters op te nemen wanneer u URL&#39;s van koppelingsdoelen evalueert op basis van externe en interne filters.
 
 De externe eigenschappen voor het bijhouden van koppelingen worden als code geïmplementeerd in het dialoogvenster `analytics.sitecatalyst.js` bestand dat voor een pagina wordt gegenereerd. De volgende voorbeeldcode wordt geproduceerd voor een pagina die met een kader wordt geassocieerd dat externe verbinding het volgen met de volgende configuratie heeft toegelaten:
 
@@ -123,14 +124,14 @@ Eigenschappen voor het verzenden van variabele gegevens met koppelingsklikken:
 * **Gebeurtenissen track koppelen**
 Voer de Adobe Analytics-gebeurtenisvariabelen in die u wilt gebruiken voor het tellen van koppelingsklikken.
 
-   Scheid meerdere variabelennamen met een komma.
+  Scheid meerdere variabelennamen met een komma.
 
-   De standaardwaarde van `None` veroorzaakt geen gebeurtenis het volgen.
+  De standaardwaarde van `None` veroorzaakt geen gebeurtenis het volgen.
 
 * **Trackvariabelen koppelen**
 Voer de Adobe Analytics-variabelen in die u naar Adobe Analytics wilt verzenden wanneer op koppelingen wordt geklikt. Scheid meerdere variabelennamen met een komma.
 
-   De standaardwaarde van `None` zorgt ervoor dat geen variabele gegevens worden verzonden.
+  De standaardwaarde van `None` zorgt ervoor dat geen variabele gegevens worden verzonden.
 
 Wanneer u de te verzenden gebeurtenissen en variabelen specificeert, wordt de configuratie uitgevoerd als code in `analytics.sitecatalyst.js` bestand dat voor een pagina wordt gegenereerd. De volgende voorbeeldcode wordt voor een pagina gegenereerd wanneer het framework de `event10` en de `prop4` eigenschap:
 
@@ -148,7 +149,7 @@ Voer de volgende procedures uit om het gedrag van het verbinden volgen van de in
 In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van tracering en foutopsporing:
 
 1. Open het framework dat aan een webpagina is gekoppeld.
-1. Sleep de **Pagina** aan het toewijzingsgebied van het framework. De **Pagina** component behoort tot de **Algemeen** in Sidetrap.
+1. Sleep de **Pagina** aan het toewijzingsgebied van het framework. De **Pagina** component behoort tot de **Algemeen** componentgroep in Sidekick.
 
    >[!NOTE]
    >
@@ -178,7 +179,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
  </tbody>
 </table>
 
-1. Sleep de component Search naar het toewijzingsgebied van het framework. De component van het Onderzoek behoort tot de Algemene componentengroep in Sidetrap. Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) uit het linkerzijpaneel te slepen:
+1. Sleep de component Search naar het toewijzingsgebied van het framework. De component van het Onderzoek behoort tot de Algemene componentengroep in Sidekick. Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) uit het linkerzijpaneel te slepen:
 
 <table>
  <tbody>
@@ -236,7 +237,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
 
 De aangeroepen oproep ziet er zo uit als u deze bekijkt met de Adobe Marketing Cloud Debugger:
 
-![aa-leavequery search-blank](assets/aa-leavequerysearch-blank.png)
+![Adobe Marketing Cloud Debugger](assets/aa-leavequerysearch-blank.png)
 
 >[!NOTE]
 >
@@ -250,7 +251,7 @@ De aangeroepen oproep ziet er zo uit als u deze bekijkt met de Adobe Marketing C
 
 De vraagdetails die in Foutopsporing van Adobe Marketing Cloud verschijnen zijn gelijkaardig aan het volgende voorbeeld:
 
-![aa-leavequeryquerysearch-active](assets/aa-leavequerysearch-active.png)
+![Adobe Marketing Cloud Debugger opnieuw](assets/aa-leavequerysearch-active.png)
 
 >[!NOTE]
 >
@@ -323,7 +324,7 @@ Gebruik de volgende procedure om verbinding het volgen voor een te vormen **Teks
 
 1. Selecteer de tekst die u als hypertekst wilt gebruiken en klik op de knop Hyperlink.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Koppelingspictogram](do-not-localize/chlimage_1.png)
 
 1. Voeg de doel-URL toe in het vak Koppelen naar en vouw vervolgens het gebied Koppeling bijhouden uit.
 
@@ -333,7 +334,7 @@ Gebruik de volgende procedure om verbinding het volgen voor een te vormen **Teks
    >
    >Het zal slechts worden toegelaten wanneer u een geldige Verbinding in RTE hebt geselecteerd.
 
-   ![aa-17](assets/aa-17.png)
+   ![Koppeling bijhouden inschakelen](assets/aa-17.png)
 
 1. Inschakelen **Aangepaste koppeling bijhouden** om de configuratie voor het bijhouden van koppelingen van het Adobe Analytics-framework te overschrijven en om het bijhouden van koppelingen voor de huidige koppeling in te schakelen.
 

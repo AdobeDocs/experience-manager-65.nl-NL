@@ -10,12 +10,13 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 93dfac20bbb761abd580a004741ade20dc4ee2fe
 workflow-type: tm+mt
-source-wordcount: '2026'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
+
 
 # E-mailmelding configureren{#configuring-email-notification}
 
@@ -54,7 +55,7 @@ Om u te helpen een probleem met **CQ-mailservice op dag** kunt u de logbestanden
 
 De configuratie kijkt als volgt in de console van het Web:
 
-![chlimage_1-276](assets/chlimage_1-276.png)
+![Het OSGi-configuratievenster van de Day CQ Mail Service](assets/chlimage_1-276.png)
 
 ## Het kanaal voor e-mailmeldingen configureren {#configuring-the-email-notification-channel}
 
@@ -88,7 +89,7 @@ Wanneer u e-mailmeldingen over de workflow ontvangt, worden zowel het adres van 
 
 De standaardconfiguratie kijkt als volgt in de Console van het Web:
 
-![chlimage_1-277](assets/chlimage_1-277.png)
+![Het configuratievenster voor de Day CQ Workflow Email Notification Service](assets/chlimage_1-277.png)
 
 ### E-mailsjablonen voor paginamelding {#email-templates-for-page-notification}
 
@@ -233,7 +234,7 @@ De volgende variabelen kunnen binnen het e-mailmalplaatje worden gebruikt:
 
 * `${payload.type}`, het ladingstype
 * `${payload.path}`, pad van de lading
-* `${host.prefix}`, hostvoorvoegsel, bijvoorbeeld: http://localhost:4502
+* `${host.prefix}`, hostvoorvoegsel, bijvoorbeeld: `http://localhost:4502`
 
 ### Een e-mailsjabloon toevoegen voor een nieuwe taal {#adding-an-email-template-for-a-new-language}
 
@@ -310,11 +311,11 @@ Daarna, vorm uw leverancier SMTP OAuth door de hieronder procedure te volgen:
    * Vervaldatum token vernieuwen: nooit
 1. Klikken **Opslaan**.
 
-<!-- clarify refresh token expiry, currrently not present in the UI -->
+<!-- clarify refresh token expiry, currently not present in the UI -->
 
 Zodra gevormd, zouden de montages als dit moeten kijken:
 
-![oauth smtp provider](assets/oauth-smtpprov2.png)
+![Het de configuratievenster van de Server van de Server SMTP Oauth2 van de Aannemer CQ](assets/oauth-smtpprov2.png)
 
 Activeer nu de OAuth-componenten. U kunt dit doen door:
 
@@ -324,7 +325,7 @@ Activeer nu de OAuth-componenten. U kunt dit doen door:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Druk het pictogram van het Spel links van de componenten
 
-   ![componenten](assets/oauth-components-play.png)
+   ![Lijst met componenten die de OAuthCodeGenerateServlet en OAuthCodeAccessTokenGenerator tonen](assets/oauth-components-play.png)
 
 Bevestig ten slotte de configuratie door:
 
@@ -342,7 +343,7 @@ Bevestig ten slotte de configuratie door:
 1. Zoeken naar **Azure Active Directory** in de zoekbalk en klik op het resultaat. U kunt ook rechtstreeks bladeren naar [https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview](https://portal.azure.com/#blade/Microsoft_AAD_IAM/ActiveDirectoryMenuBlade/Overview)
 1. Klikken op **Toepassingsregistratie** - **Nieuwe registratie**
 
-   ![Microsoft Outlook-configuratie](assets/oauth-outlook1.png)
+   ![De nieuwe registratieknop bij het configureren van Microsoft Outlook](assets/oauth-outlook1.png)
 
 1. Vul de gegevens naar wens in en klik op **Registreren**
 1. Ga naar de nieuwe app en selecteer **API-machtigingen**
@@ -397,7 +398,7 @@ Vervolgens integreert u uw OAuth2-instellingen met AEM:
 
 Zodra gevormd, zouden de montages als dit moeten kijken:
 
-![Weergave AEM zijconfiguraties](assets/oauth-outlook-smptconfig.png)
+![De voltooide configuratie van SMTP OAuth2 van de Mailer CQ](assets/oauth-outlook-smptconfig.png)
 
 Activeer nu de OAuth-componenten. U kunt dit doen door:
 
@@ -407,7 +408,7 @@ Activeer nu de OAuth-componenten. U kunt dit doen door:
    * `com.day.cq.mailer.oauth.servlets.handler.OAuthCodeAccessTokenGenerator`
 1. Druk het pictogram van het Spel links van de componenten
 
-![components2](assets/oauth-components-play.png)
+![Een fragment van de componentenlijst die OAuthCodeGenerateServlet en OAuthCodeAccessTokenGenerator bevat](assets/oauth-components-play.png)
 
 Bevestig ten slotte de configuratie door:
 

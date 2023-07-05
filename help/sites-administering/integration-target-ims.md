@@ -2,12 +2,13 @@
 title: Integratie met Adobe Target met IMS
 description: Meer informatie over het integreren van AEM met Adobe Target met IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 5c3de9c272030b3e258aea95899a58553c3b33db
+source-git-commit: 2f5f6a94a20feb2813b6da1b71e22f8675529ea5
 workflow-type: tm+mt
-source-wordcount: '1503'
+source-wordcount: '1548'
 ht-degree: 0%
 
 ---
+
 
 # Integratie met Adobe Target met IMS{#integration-with-adobe-target-using-ims}
 
@@ -50,7 +51,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 1. Activeren **Nieuw certificaat maken** en voert u een nieuwe alias in.
 1. Bevestigen met **Certificaat maken**.
 
-   ![](assets/integrate-target-io-01.png)
+   ![wizard Technische accountconfiguratie van Adobe IMS](assets/integrate-target-io-01.png)
 
 1. Selecteren **Downloaden** (of **Openbare sleutel downloaden**) om het bestand naar uw lokale station te downloaden, zodat het klaar is voor gebruik wanneer [IMS configureren voor Adobe Target-integratie met AEM](#configuring-ims-for-adobe-target-integration-with-aem).
 
@@ -58,7 +59,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
    >
    >Zorg dat deze configuratie geopend blijft, dat deze opnieuw nodig is wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-target-io-02.png)
+   ![Informatiebericht om certificaat toe te voegen bij Adobe I/O](assets/integrate-target-io-02.png)
 
 ## IMS configureren voor Adobe Target-integratie met AEM {#configuring-ims-for-adobe-target-integration-with-aem}
 
@@ -75,14 +76,14 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
 1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van:
 
    * Als u nog geen project hebt, **Nieuw project maken** wordt midden onderaan weergegeven.
-      ![Nieuw project maken - eerste project](assets/integration-target-io-02.png)
+     ![Nieuw project maken - eerste project](assets/integration-target-io-02.png)
    * Als u al bestaande projecten hebt, worden deze weergegeven en **Nieuw project maken** is helemaal rechts.
-      ![Nieuw project maken - Meerdere projecten](assets/integration-target-io-03.png)
+     ![Nieuw project maken - Meerdere projecten](assets/integration-target-io-03.png)
 
 
 1. Selecteren **Toevoegen aan project** gevolgd door **API**:
 
-   ![](assets/integration-target-io-10.png)
+   ![Adobe Developer Console](assets/integration-target-io-10.png)
 
 1. Selecteren **Adobe Target** vervolgens **Volgende**:
 
@@ -90,15 +91,15 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
    >
    >Als je bent geabonneerd op Adobe Target, maar deze niet ziet, moet je de knop [Vereisten](#prerequisites).
 
-   ![](assets/integration-target-io-12.png)
+   ![Klik op Volgende](assets/integration-target-io-12.png)
 
 1. **Uw openbare sleutel uploaden** en, indien voltooid, doorgaan met **Volgende**:
 
-   ![](assets/integration-target-io-13.png)
+   ![Integraties toevoegen met Developer Console](assets/integration-target-io-13.png)
 
 1. Controleer de referenties en ga verder met **Volgende**:
 
-   ![](assets/integration-target-io-15.png)
+   ![Een nieuw project maken](assets/integration-target-io-15.png)
 
 1. Selecteer de vereiste productprofielen en ga verder met **geconfigureerde API opslaan**:
 
@@ -109,8 +110,7 @@ Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM
    >* Adobe Target Standard - alleen **Standaardwerkruimte** is beschikbaar
    >* Adobe Target Premium - alle beschikbare werkruimten worden weergegeven, zoals hieronder wordt weergegeven
 
-
-   ![](assets/integration-target-io-16.png)
+   ![Een API selecteren om toe te voegen](assets/integration-target-io-16.png)
 
 1. De oprichting zal worden bevestigd.
 
@@ -173,7 +173,7 @@ Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste 
 
 1. Uw Adobe Target-configuratie wordt weergegeven in de AEM console.
 
-   ![](assets/integrate-target-io-11.png)
+   ![Configuratie technische account van Adobe IMS](assets/integrate-target-io-11.png)
 
 ## De IMS-configuratie bevestigen {#confirming-the-ims-configuration}
 
@@ -187,15 +187,14 @@ Om te bevestigen dat de configuratie zoals verwacht werkt:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
 
-
 1. Selecteer uw configuratie.
 1. Selecteren **Health controleren** van de werkbalk, gevolgd door **Controleren**.
 
-   ![](assets/integrate-target-io-12.png)
+   ![Adobe IMS-configuraties](assets/integrate-target-io-12.png)
 
 1. Als dit lukt, wordt het bericht weergegeven:
 
-   ![](assets/integrate-target-io-13.png)
+   ![Een configuratie controleren](assets/integrate-target-io-13.png)
 
 ## De Adobe Target-Cloud Service configureren {#configuring-the-adobe-target-cloud-service}
 
@@ -220,15 +219,15 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
 
    * **Tenant-id**: de Adobe IMS Tenant ID. Zie ook de [Aanbestedings-id en clientcode](#tenant-client) sectie.
 
-      >[!NOTE]
-      >
-      >Voor IMS moet deze waarde van Target zelf worden genomen. U kunt zich aanmelden bij Target en de Tenant-id uit de URL extraheren.
-      >
-      >Als de URL bijvoorbeeld:
-      >
-      >`https://experience.adobe.com/#/@yourtenantid/target/activities`
-      >
-      >Vervolgens gebruikt u `yourtenantid`.
+     >[!NOTE]
+     >
+     >Voor IMS moet deze waarde van Target zelf worden genomen. U kunt zich aanmelden bij Target en de Tenant-id uit de URL extraheren.
+     >
+     >Als de URL bijvoorbeeld:
+     >
+     >`https://experience.adobe.com/#/@yourtenantid/target/activities`
+     >
+     >Vervolgens gebruikt u `yourtenantid`.
 
    * **Clientcode**: Zie de [Aanbestedings-id en clientcode](#tenant-client) sectie.
 
@@ -247,6 +246,7 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
    * **Tag Management System gebruiken om clientbibliotheek te leveren**: Gebruik DTM (afgekeurd), Adobe Launch of een ander systeem voor tagbeheer.
 
    * **Aangepaste AT.js**: Laat leeg als u het vak Tag Management hebt ingeschakeld of als u de standaard-AT.js wilt gebruiken. U kunt ook uw aangepaste AT.js uploaden. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
+
    >[!NOTE]
    >
    >[Configuratie van een Cloud Service om de Klassieke API van het Doel te gebruiken](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) is vervangen (gebruikt het tabblad Adobe Recommendations-instellingen).
@@ -283,4 +283,3 @@ Zoals eerder vermeld, is de eerste zaak de meest voorkomende voor AEM 6.5. Hoe d
 >1. Voer de huurder-id opnieuw in.
 >2. Maak opnieuw verbinding met Doel.
 >3. Sla de configuratie op.
-

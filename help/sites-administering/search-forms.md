@@ -6,12 +6,13 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1a3e0f90bbe133a7b0fc383b997e69b10ca82478
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2067'
 ht-degree: 1%
 
 ---
+
 
 # Zoekformulieren configureren{#configuring-search-forms}
 
@@ -29,7 +30,7 @@ U kunt [de zoekformulieren configureren](#configuring-your-search-forms) worden 
 
 Wanneer u eerst tot deze console toegang hebt kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u de configuratie hebt aangepast zal het slot - tenzij u verdwijnen [verwijder uw aangepaste configuratie](#deleting-a-configuration-to-reinstate-the-default), in welk geval de standaardwaarde (en de hangslotindicator) opnieuw worden ingevoerd.
 
-![chlimage_1-374](assets/chlimage_1-374.png)
+![Venster Formulieren zoeken](assets/chlimage_1-374.png)
 
 ## Configuraties {#configurations}
 
@@ -37,63 +38,63 @@ De beschikbare standaardconfiguraties zijn:
 
 * **Pagina-editor (zoeken naar documenten):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar document in middelenbrowser (wanneer het uitgeven van een pagina).
+  Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar document in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (zoeken naar afbeeldingen):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar beelden in middelenbrowser (wanneer het uitgeven van een pagina).
+  Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar beelden in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (Manuscript-zoekopdracht):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar manuscripten in middelenbrowser (wanneer het uitgeven van een pagina).
+  Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar manuscripten in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (zoeken naar pagina):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar pagina&#39;s in middelenbrowser (wanneer het uitgeven van een pagina).
+  Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar pagina&#39;s in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (zoeken naar alinea&#39;s):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar paragrafen in middelenbrowser (wanneer het uitgeven van een pagina).
+  Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar paragrafen in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (zoeken naar producten):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar producten in middelenbrowser (wanneer het uitgeven van een pagina).
+  Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar producten in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Pagina-editor (Dynamic Media Classic [voorheen Scene7] zoeken)**:
 
-   Deze configuratie definieert de beschikbare opties bij het zoeken naar Scene7-bronnen in de middelenbrowser (bij het bewerken van een pagina).
+  Deze configuratie definieert de beschikbare opties bij het zoeken naar Scene7-bronnen in de middelenbrowser (bij het bewerken van een pagina).
 
 * **Sites Admin Search Rail**:
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het gebruiken van de onderzoekslijn van de console van Plaatsen.
+  Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het gebruiken van de onderzoekslijn van de console van Plaatsen.
 
 * **Pagina-editor (videozoekopdracht):**
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar video&#39;s in middelenbrowser (wanneer het uitgeven van een pagina).
+  Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar video&#39;s in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Middelen Admin Search Rail:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het gebruiken van de console van Activa.
+  Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het gebruiken van de console van Activa.
 
 * **Zoekspoor voor catalogusbeheer:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van een handelscatalogus.
+  Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van een handelscatalogus.
 
 * **Zoekspoor voor bestellingen Admin:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van handelsorden.
+  Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van handelsorden.
 
 * **Zoekspoor voor productverzamelingen Admin:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van handelsproductinzamelingen.
+  Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van handelsproductinzamelingen.
 
 * **Zoekspoor voor productbeheer:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van handelsproducten.
+  Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van handelsproducten.
 
 * **Zoekspoor voor projectbeheerder:**
 
-   Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van projecten.
+  Deze configuratie bepaalt de onderzoeksopties beschikbaar aan de gebruiker wanneer het zoeken van projecten.
 
 ## Voorspellen en instellingen {#predicates-and-their-settings}
 
@@ -329,11 +330,11 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 >[!NOTE]
 >
 >* De algemene zoekvoorspelling wordt gedefinieerd in:
-   >  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
+>  `/libs/cq/gui/components/common/admin/customsearch/searchpredicates`
 >
 >* Zoekvoorspellingen die alleen betrekking hebben op sitebeheer (klassieke UI) bevinden zich onder:
-   >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
-   >   * Deze zijn verouderd en zijn alleen beschikbaar voor achterwaartse compatibiliteit.
+>  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
+>   * Deze zijn verouderd en zijn alleen beschikbaar voor achterwaartse compatibiliteit.
 >
 >Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
 
@@ -343,47 +344,46 @@ Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voo
 
 * **Veldlabel**
 
-   Het label dat wordt weergegeven als de inklapbare koptekst of als veldlabel van de voorspelling.
+  Het label dat wordt weergegeven als de inklapbare koptekst of als veldlabel van de voorspelling.
 
 * **Beschrijving**
 
-   Beschrijvende details voor de gebruiker.
+  Beschrijvende details voor de gebruiker.
 
 * **Plaatsaanduiding**
 
-   Lege tekst of de plaatsaanduiding van de voorspelling voor het geval er geen filtertekst wordt ingevoerd.
+  Lege tekst of de plaatsaanduiding van de voorspelling voor het geval er geen filtertekst wordt ingevoerd.
 
 * **Eigenschapnaam**
 
-   De eigenschap waarop moet worden gezocht. Er wordt een relatief pad en de jokertekens gebruikt `*/*/*` Geef de diepte van de eigenschap op ten opzichte van de `jcr:content` knooppunt (elke asterisk vertegenwoordigt één knooppuntniveau).
+  De eigenschap waarop moet worden gezocht. Er wordt een relatief pad en de jokertekens gebruikt `*/*/*` Geef de diepte van de eigenschap op ten opzichte van de `jcr:content` knooppunt (elke asterisk vertegenwoordigt één knooppuntniveau).
 
-   Als u slechts op een eerste niveaukindknoop van het middel wilt zoeken dat heeft `x` eigenschap op de `jcr:content` knooppuntgebruik `*/jcr:content/x`
+  Als u slechts op een eerste niveaukindknoop van het middel wilt zoeken dat heeft `x` eigenschap op de `jcr:content` knooppuntgebruik `*/jcr:content/x`
 
 * **Diepte van eigenschap**
 
-   De maximumdiepte om naar dat bezit binnen de middelen te zoeken. Een zoekopdracht naar die eigenschap kan dus worden uitgevoerd op een resource en recursieve onderliggende elementen totdat het niveau van de onderliggende elementen overeenkomt met de opgegeven diepte.
+  De maximumdiepte om naar dat bezit binnen de middelen te zoeken. Een zoekopdracht naar die eigenschap kan dus worden uitgevoerd op een resource en recursieve onderliggende elementen totdat het niveau van de onderliggende elementen overeenkomt met de opgegeven diepte.
 
 * **Waarde van eigenschap**
 
-   De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld: `cq:Page` of
+  De eigenschapswaarde als een absolute tekenreeks of als expressietaal; bijvoorbeeld: `cq:Page` of
 
-   `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
+  `${empty requestPathInfo.suffix ? "/content" : requestPathInfo.suffix}`.
 
 * **Bereik tekst**
 
-   Het label van het bereikveld in het dialoogvenster **Datumbereik** voorspellen.
+  Het label van het bereikveld in het dialoogvenster **Datumbereik** voorspellen.
 
 * **Optiepad**
 
-   De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram dat moet worden verwijderd, indien vereist).
+  De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram dat moet worden verwijderd, indien vereist).
 
-   De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
+  De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
 
-   `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
+  `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
 * **Pad naar knooppunt Opties**
-In feite hetzelfde als 
-**Pad naar opties** Alleen dit gebeurt in het gemeenschappelijke voorspelde veld, het andere is specifiek voor elementen.
+In feite hetzelfde als **Pad naar opties** Alleen dit gebeurt in het gemeenschappelijke voorspelde veld, het andere is specifiek voor elementen.
 
 * **Enkel selecteren**
 Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
@@ -411,7 +411,6 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
    >* `/apps/cq/gui/content/facets/<option>`
    >* `/apps/commerce/gui/content/facets/<option>`
 
-
 ### Een voorspelbaar veld toevoegen/bewerken en veldinstellingen definiëren {#add-edit-a-predicate-field-and-define-field-settings}
 
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
@@ -419,20 +418,21 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
 1. Als u een nieuw veld wilt toevoegen, opent u het dialoogvenster **Predicate selecteren** en sleep de vereiste voorspelling naar de gewenste locatie. De **Datumbereik**:
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![Een zoekformulier bewerken](assets/chlimage_1-375.png)
 
 1. Afhankelijk van of:
 
    * U voegt een nieuw veld toe:
 
-      Na het toevoegen van predikaat **Instellingen** worden de eigenschappen die kunnen worden gedefinieerd, geopend en weergegeven.
+     Na het toevoegen van predikaat **Instellingen** worden de eigenschappen die kunnen worden gedefinieerd, geopend en weergegeven.
 
    * U wilt een bestaande voorspelling bijwerken:
 
-      Selecteer het voorloopveld (rechts) en open vervolgens het **Instellingen** tab.
+     Selecteer het voorloopveld (rechts) en open vervolgens het **Instellingen** tab.
+
    De instellingen voor de **Datumbereik**:
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![Eigenschappen voor Datumbereik](assets/chlimage_1-376.png)
 
 1. Breng de gewenste wijzigingen aan en bevestig deze met **Gereed**.
 
@@ -440,11 +440,11 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
 1. Selecteer het pictogram Voorvertoning:
 
-   ![](do-not-localize/chlimage_1-31.png)
+   ![Pictogram Voorvertoning](do-not-localize/chlimage_1-31.png)
 
 1. Hierdoor worden de zoekformulieren weergegeven zoals deze worden weergegeven (volledig uitgevouwen) in de kolom Zoeken van de desbetreffende console.
 
-   ![chlimage_1-377](assets/chlimage_1-377.png)
+   ![Een voorbeeld van het zoekformulier bekijken](assets/chlimage_1-377.png)
 
 1. **Sluiten** de voorvertoning om de configuratie te retourneren en te voltooien.
 
@@ -453,7 +453,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
 1. Selecteer het voorloopveld (rechts) en open het dialoogvenster **Instellingen** en selecteert u vervolgens de **Verwijderen** pictogram (linksonder).
 
-   ![](do-not-localize/chlimage_1-32.png)
+   ![Pictogram Verwijderen](do-not-localize/chlimage_1-32.png)
 
 1. In een dialoogvenster wordt bevestiging van de verwijderactie gevraagd.
 
@@ -471,7 +471,7 @@ Het schrappen van een aangepaste configuratie wordt gedaan van de console:
 
 1. Selecteer de vereiste configuratie (bijvoorbeeld **Pagina-editor (zoeken in alinea&#39;s)**) en vervolgens de **Verwijderen** pictogram in de werkbalk:
 
-   ![chlimage_1-378](assets/chlimage_1-378.png)
+   ![Een formulier verwijderen](assets/chlimage_1-378.png)
 
 1. De aangepaste configuratie wordt verwijderd en de standaardinstelling wordt hersteld (dit wordt aangegeven door het opnieuw verschijnen van het hangslotsymbool in de console).
 
@@ -490,7 +490,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    * `jcr:title` - het veldetiket dat in de zoekrail moet worden aangebracht;
    * `value` - de waarde van de eigenschap waarop moet worden gezocht
 
-   ![chlimage_1-379](assets/chlimage_1-379.png)
+   ![Opties toevoegen in CRXDE](assets/chlimage_1-379.png)
 
    >[!NOTE]
    >
@@ -504,7 +504,6 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    >1. `/libs/cq/gui/content/common/options/predicates`
    >1. Breng wijzigingen aan in `/apps.`
 
-
 1. Open de **Zoeken in Forms** console en selecteer de configuratie u wilt bijwerken. Bijvoorbeeld: **Sites Admin Search Rail**.
 
    Klik vervolgens op **Zoekformulieren bewerken** pictogram.
@@ -514,21 +513,22 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    * **Eigenschapnaam**
 
-      Specifiek het knoopbezit dat op de doelknopen moet worden gezocht. Bijvoorbeeld:
+     Specifiek het knoopbezit dat op de doelknopen moet worden gezocht. Bijvoorbeeld:
 
-      `jcr:content/cq:template`
+     `jcr:content/cq:template`
 
    * **Pad naar knooppunt Option**
 
-      Selecteer het pad naar de locatie waar uw opties staan. Bijvoorbeeld:
+     Selecteer het pad naar de locatie waar uw opties staan. Bijvoorbeeld:
 
-      `/apps/cq/gui/content/common/options/predicates/templatetype`
-   ![chlimage_1-380](assets/chlimage_1-380.png)
+     `/apps/cq/gui/content/common/options/predicates/templatetype`
+
+   ![Eigenschapspad toevoegen](assets/chlimage_1-380.png)
 
 1. Selecteren **Gereed** om uw configuratie op te slaan.
 1. Navigeer aan de aangewezen console (in dit voorbeeld, **Sites**) en opent u de **Zoeken** spoorwegen. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven:
 
-   ![chlimage_1-381](assets/chlimage_1-381.png)
+   ![De eindresultaten](assets/chlimage_1-381.png)
 
 ## Gebruikersmachtigingen {#user-permissions}
 

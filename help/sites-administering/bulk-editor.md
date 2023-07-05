@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
+
 
 # De Bulkeditor{#the-bulk-editor}
 
@@ -46,11 +47,11 @@ Een voorbeeld om een dergelijk gebruiksgeval te illustreren is opgenomen in de w
 1. Ga naar de **Ondersteuning** en vervolgens naar de **Tevredenheid van de Dienst van de klant** enquête.
 1. **Bewerken** de **Begin van formulier** alinea. Klik in het dialoogvenster op de knop **Geavanceerd** tabblad, vouwt u de **Configuratie van handelingen** en klik vervolgens op **Gegevens weergeven...**.
 
-   ![](assets/custsatsurvey.png)
+   ![Voorbeeld van klanttevredenheidsonderzoek](assets/custsatsurvey.png)
 
 1. De Bulk-editor is volledig aanpasbaar. In dit voorbeeld staat de bulkeditor gebruikers echter niet toe de inhoud te bewerken, maar laat ze de informatie alleen exporteren naar een spreadsheet.
 
-   ![](assets/bulkeditor.png)
+   ![Bulkbewerkingsconsole](assets/bulkeditor.png)
 
 ## De Bulkeditor gebruiken {#how-to-use-the-bulk-editor}
 
@@ -100,16 +101,16 @@ Om de bulkredacteur te gebruiken om veelvoudige punten gelijktijdig uit te geven
 
 Bijvoorbeeld:
 
-![](assets/searchfilter.png)
+![Opties voor het filter Bulkeditor](assets/searchfilter.png)
 
 1. Klikken **Zoeken**. De resultaten worden weergegeven in de Bulk-editor.
 In het bovenstaande voorbeeld worden alle pagina&#39;s die voldoen aan uw zoekcriteria geretourneerd en weergegeven met de gevraagde kolommen.
 
-   ![](assets/chlimage_1-39.png)
+   ![Resultaten van de Bulkeditor](assets/chlimage_1-39.png)
 
 1. Breng de gewenste wijzigingen aan door in een cel te dubbelklikken.
 
-   ![](assets/srchresultedit.png)
+   ![bulksgewijs bewerken](assets/srchresultedit.png)
 
 1. Klikken **Opslaan** om uw wijzigingen op te slaan (de **Opslaan** wordt geactiveerd nadat u een cel hebt bewerkt).
 
@@ -137,12 +138,12 @@ Inhoud exporteren:
    >
    >Wijzigingen worden standaard gecodeerd in [Windows-1252](https://en.wikipedia.org/wiki/Windows-1252) (ook bekend als CP-1252). U kunt UTF-8 controleren om de wijzigingen in UTF-8 te exporteren.
 
-   ![](assets/srchrsesultexport.png)
+   ![Resultaten exporteren](assets/srchrsesultexport.png)
 
 1. Selecteer de locatie en bevestig dat u het bestand wilt downloaden.
 1. Nadat u het bestand hebt gedownload, kunt u het openen vanuit uw spreadsheetprogramma, bijvoorbeeld Microsoft Excel. Het spreadsheetprogramma importeert het bestand en zet het om in een spreadsheetindeling.
 
-   ![](assets/exportinexcel.png)
+   ![Geëxporteerde resultaten in een spreadsheet](assets/exportinexcel.png)
 
 ### Inhoud importeren {#importing-content}
 

@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 02afc4eb78acaacc40d3ba1830ccb1e9c3907d0f
+source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
 workflow-type: tm+mt
-source-wordcount: '1877'
+source-wordcount: '1973'
 ht-degree: 0%
 
 ---
+
 
 # Clientcontext{#client-context}
 
@@ -26,9 +27,9 @@ ht-degree: 0%
 
 De context van de Cliënt is een mechanisme dat u van bepaalde informatie over de huidige pagina en de bezoeker voorziet. Het kan worden geopend met **Ctrl-Alt-c** (vensters) of **control-option-c** (Mac):
 
-![](assets/clientcontext_alisonparker.png)
+![Een voorbeeld van het venster Client Context](assets/clientcontext_alisonparker.png)
 
-In beide [omgeving waarin informatie wordt weergegeven publiceren en schrijven](#propertiesavailableintheclientcontext) informatie:
+In zowel de publicatie- als de auteursomgeving wordt informatie weergegeven over:
 
 * de bezoeker; afhankelijk van uw instantie wordt bepaalde informatie gevraagd, of afgeleid.
 * Paginalabels en het aantal keren dat deze labels door de huidige bezoeker zijn geopend (dit wordt weergegeven wanneer u de muis over een specifieke tag beweegt).
@@ -38,7 +39,7 @@ In beide [omgeving waarin informatie wordt weergegeven publiceren en schrijven](
 
 Met de pictogrammen (alleen beschikbaar in de auteursomgeving) kunt u de details van de clientcontext configureren:
 
-![](do-not-localize/clientcontext_icons.png)
+![De pictogrammen Bewerken, Laden en Herstellen van het venster Clientcontext](do-not-localize/clientcontext_icons.png)
 
 * **Bewerken**
 Er wordt een nieuwe pagina geopend, zodat u [een profieleigenschap bewerken, toevoegen of verwijderen](#editingprofiledetails).
@@ -116,6 +117,7 @@ Hiermee wordt bijvoorbeeld aangegeven of de muis zich momenteel op het linker- o
 **Cloud labelen** Hiermee geeft u de tags weer die zijn ingesteld op de huidige pagina en de tags die tijdens het surfen op de site zijn verzameld. Als u de muis over een tag beweegt, wordt het aantal keren weergegeven dat de huidige gebruiker pagina&#39;s met die specifieke tag heeft geopend.
 
 >[!NOTE]
+>
 Labels die zijn ingesteld op DAM-elementen die worden weergegeven op de bezochte pagina&#39;s, worden niet meegeteld.
 
 **Technografische opslag** Deze component is afhankelijk van uw installatie.
@@ -127,6 +129,7 @@ Deze zittingsopslag heeft geen standaardcomponent van de cliëntcontext.
 Zie voor meer informatie [Clientcontext in detail](/help/sites-developing/client-context.md).
 
 >[!NOTE]
+>
 Paginagegevens bevinden zich niet meer in de clientcontext als een standaardcomponent. Indien nodig kunt u dit toevoegen door de clientcontext te bewerken en de **Algemene winkeleigenschappen** component, dan vormt dit om te bepalen **Winkel** als `pagedata`.
 
 ## Het clientcontextprofiel wijzigen {#changing-the-client-context-profile}
@@ -149,11 +152,11 @@ Wanneer u klaar bent, kunt u [het profiel opnieuw instellen](#resetting-the-prof
 
 1. Klik op het pictogram Profiel laden:
 
-   ![](do-not-localize/clientcontext_loadprofile.png)
+   ![Het pictogram Profiel laden van clientcontext](do-not-localize/clientcontext_loadprofile.png)
 
 1. Hiermee wordt het dialoogvenster geopend waarin u het profiel kunt selecteren dat u wilt laden:
 
-   ![](assets/clientcontext_profileloader.png)
+   ![Het dialoogvenster Profiellader waarin de vervolgkeuzelijst voor het selecteren van een profiel wordt weergegeven](assets/clientcontext_profileloader.png)
 
 1. Klikken **OK** om te laden.
 
@@ -163,7 +166,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Dubbelklik op het pictogram dat de huidige gebruiker vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare profielen te bekijken:
 
-   ![](assets/clientcontext_profileselector.png)
+   ![De gebruikerskiezer](assets/clientcontext_profileselector.png)
 
 1. Klik op het profiel dat u wilt laden. Klik buiten de kiezer om de details te sluiten wanneer deze zijn geladen.
 
@@ -171,13 +174,13 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Gebruik het pictogram Herstellen om het profiel in de context van de Cliënt aan dat van de huidige gebruiker terug te keren:
 
-   ![](do-not-localize/clientcontext_resetprofile.png)
+   ![Het pictogram Opnieuw instellen](do-not-localize/clientcontext_resetprofile.png)
 
 ### Het Platform Browser wijzigen {#changing-the-browser-platform}
 
 1. Dubbelklik op het pictogram dat het browserplatform vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare platforms/browsers te bekijken:
 
-   ![](assets/clientcontext_browserplatform.png)
+   ![Selector browserplatform](assets/clientcontext_browserplatform.png)
 
 1. Klik op de platformbrowser die u wilt laden. Klik buiten de kiezer om de details te sluiten wanneer deze zijn geladen.
 
@@ -185,7 +188,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Dubbelklik op het geolocatiepictogram. Er wordt een uitgevouwen kaart geopend waarin u het markeerteken naar een nieuwe locatie kunt slepen:
 
-   ![](assets/clientcontext_geomocationrelocate.png)
+   ![Geolocatie](assets/clientcontext_geomocationrelocate.png)
 
 1. Klik buiten de kaart om deze te sluiten.
 
@@ -193,7 +196,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 1. Dubbelklik op het gedeelte Tagwolk van de clientcontext. Het dialoogvenster wordt geopend, waar u tags kunt selecteren:
 
-   ![](assets/clientcontext_tagselection.png)
+   ![Dialoogvenster Tagwolk](assets/clientcontext_tagselection.png)
 
 1. Klik op OK om te laden in de clientcontext.
 
@@ -205,13 +208,13 @@ Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaald
 
 Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaalde eigenschappen in te stellen (of opnieuw in te stellen). Dit staat u toe om specifieke scenario&#39;s (met name nuttig te testen voor [segmentatie](/help/sites-administering/campaign-segmentation.md) en [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
-![](assets/clientcontext_alisonparker_edit.png)
+![De clientcontext bewerken](assets/clientcontext_alisonparker_edit.png)
 
 ### Een component Property toevoegen {#adding-a-property-component}
 
 Nadat u de **ClientContext-ontwerppagina** kunt u ook **Toevoegen** een volledig nieuwe eigenschap met behulp van de beschikbare componenten (de componenten worden vermeld op zowel de hulpwerkplaats als op de **Nieuwe component invoegen** wordt geopend nadat u dubbelklikt op de knop **Componenten of elementen hierheen slepen** vak):
 
-![](assets/clientcontext_alisonparker_new.png)
+![Een eigenschap toevoegen aan het venster Client Context](assets/clientcontext_alisonparker_new.png)
 
 ### Een component Property verwijderen {#removing-a-property-component}
 
@@ -231,11 +234,11 @@ Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebru
 1. Druk op Ctrl+Alt+c (vensters) of Control+Option+c (Mac) om de clientcontext te openen.
 1. Klik op het bewerkingspictogram boven aan Client Context om Client Context Designer te openen.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Koppelingspictogram](do-not-localize/chlimage_1.png)
 
 1. Sleep de JSONP Store-component naar Client-context.
 
-   ![](assets/chlimage_1-4.jpeg)
+   ![Het slepen van en het laten vallen van de component van de Opslag JSONP in de Context van de Cliënt](assets/chlimage_1-4.jpeg)
 
 1. Dubbelklik op de component om het dialoogvenster Bewerken te openen.
 1. Voer in het vak URL JSONP-service de volgende URL in en klik op Opslag zoeken:
@@ -244,12 +247,12 @@ Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebru
 
    De component roept de dienst JSONP en maakt een lijst van alle eigenschappen die de teruggekeerde gegevens bevat. De eigenschappen die in de lijst zijn zijn die die in de Context van de Cliënt beschikbaar zullen zijn.
 
-   ![](assets/chlimage_1-40.png)
+   ![De eigenschappen van de JSONP-service](assets/chlimage_1-40.png)
 
 1. Klik op OK.
 1. Ga terug naar de startpagina van Geometrixx Outdoors en vernieuw de pagina. De Context van de cliënt omvat nu de informatie van de component van de Winkel JSONP.
 
-   ![](assets/chlimage_1-41.png)
+   ![Voorbeeld van de JSONP-component die is gevuld met gegevens](assets/chlimage_1-41.png)
 
 ### Het segment maken {#create-the-segment}
 
@@ -270,7 +273,7 @@ Gebruik de gegevens van de zittingsopslag die u gebruikend de JSONP opslagcompon
 1. Klik met de rechtermuisknop op het wintersegment en klik op Openen.
 1. Sleep het Algemene bezit van de Opslag aan het gebrek EN container.
 
-   ![](assets/chlimage_1-5.jpeg)
+   ![Een component toevoegen aan de segmenteditor](assets/chlimage_1-5.jpeg)
 
 1. Dubbelklik op de component om het dialoogvenster Bewerken te openen, geef de volgende eigenschapswaarden op en klik op OK:
 

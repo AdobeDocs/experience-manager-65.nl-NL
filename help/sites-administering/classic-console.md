@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
 workflow-type: tm+mt
-source-wordcount: '860'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
+
 
 # Klassieke UI-tagconsole{#classic-ui-tagging-console}
 
@@ -30,7 +31,7 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 * aanmelden met beheerdersrechten
 * naar de console bladeren, bijvoorbeeld [https://localhost:4502/tagging](https://localhost:4502/tagging)
 
-![](assets/managing_tags_usingthetagasministrationconsole.png)
+![Klassiek consolevenster](assets/managing_tags_usingthetagasministrationconsole.png)
 
 ## Tags en naamruimten maken {#creating-tags-and-namespaces}
 
@@ -38,33 +39,29 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 
    Als u **Tags** u kunt een naamruimte maken:
 
-   ![](assets/creating_tags_andnamespaces.png)
+   ![Een dialoogvenster voor naamruimte maken](assets/creating_tags_andnamespaces.png)
 
    Als u een naamruimte selecteert (bijvoorbeeld **Demo**) U kunt een tag maken binnen die naamruimte:
 
-   ![](assets/creating_tags_andnamespacesinnewnamespace.png)
+   ![Een tagdialoogvenster maken](assets/creating_tags_andnamespacesinnewnamespace.png)
 
 1. In beide gevallen voert u
 
    * **Titel**
-(
-*Vereist*) De titel van de weergave voor de tag. U kunt elk teken invoeren, maar u kunt het beste deze speciale tekens niet gebruiken:
+(*Vereist*) De titel van de weergave voor de tag. U kunt elk teken invoeren, maar u kunt het beste deze speciale tekens niet gebruiken:
 
       * `colon (:)` - naamruimtescheidingsteken
       * `forward slash (/)` - scheidingsteken voor subtags
 
-      Deze tekens worden niet weergegeven als ze worden ingevoerd.
+     Deze tekens worden niet weergegeven als ze worden ingevoerd.
 
    * **Naam**
-(
-*Vereist*) De knooppuntnaam voor de tag.
+(*Vereist*) De knooppuntnaam voor de tag.
 
    * **Beschrijving**
-(
-*Optioneel*) Een beschrijving voor de tag.
+(*Optioneel*) Een beschrijving voor de tag.
 
    * selecteren **Maken**
-
 
 ## Tags bewerken {#editing-tags}
 
@@ -90,7 +87,7 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 
 **Lijst** Hiermee opent u een nieuw venster waarin de paden van alle pagina&#39;s met de gemarkeerde code worden weergegeven:
 
-![](assets/list_showing_wheretagsarereferenced.png)
+![Zoeken waar naar tags wordt verwezen](assets/list_showing_wheretagsarereferenced.png)
 
 ## Labels verplaatsen {#moving-tags}
 
@@ -107,7 +104,7 @@ Als u wilt helpen dat tagbeheerders en ontwikkelaars de taxonomie opschonen of d
 
 De **Tag verplaatsen** ziet er als volgt uit:
 
-![](assets/move_tag.png)
+![Een tag verplaatsen](assets/move_tag.png)
 
 >[!NOTE]
 >
@@ -129,7 +126,7 @@ Een tag samenvoegen in een andere tag:
 
 De **Tag samenvoegen** ziet er als volgt uit:
 
-![](assets/mergetag.png)
+![Een tag samenvoegen](assets/mergetag.png)
 
 ## Gebruik van tags tellen {#counting-usage-of-tags}
 
@@ -158,7 +155,7 @@ De volgende procedure laat zien hoe u de `title`van de tag **Dieren** in het Eng
 
 Het dialoogvenster ziet er als volgt uit:
 
-![](assets/edit_tag.png)
+![Een tag bewerken](assets/edit_tag.png)
 
 In de tagconsole wordt de taalinstelling van de gebruiker gebruikt. Voor de tag Animal wordt &#39;Animaux&#39; weergegeven voor een gebruiker die de taal in gebruikerseigenschappen instelt op Frans.
 
@@ -175,11 +172,11 @@ Standaard wordt de tag `titles`in de pagina-eigenschappen worden weergegeven in 
 
    Selecteer **Dieren** (**Animaux**) en selecteert u buiten het dialoogvenster om het te sluiten en de tag toe te voegen aan de pagina-eigenschappen.
 
-   ![](assets/french_tag.png)
+   ![Een andere tag bewerken](assets/french_tag.png)
 
 Standaard wordt in het dialoogvenster Pagina-eigenschappen het label weergegeven `titles`volgens de paginataal.
 
-In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) wordt in andere gevallen gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
+In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de paginataal beschikbaar is. Wanneer de [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) wordt in andere gevallen gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
 
 >[!NOTE]
 >

@@ -11,12 +11,13 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 7803f1df1e05dc838cb458026f8dbd27de9cb924
+source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
 workflow-type: tm+mt
-source-wordcount: '1226'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
+
 
 # Identity Management{#identity-management}
 
@@ -61,11 +62,11 @@ A [formulier](/help/sites-authoring/default-components.md#form-component) kan wo
 Gebruikers kunnen bijvoorbeeld een nieuw profiel aanvragen met de pagina Geometrixx
 `http://localhost:4502/content/geometrixx-outdoors/en/user/register.html`
 
-![registerform](assets/registerform.png)
+![Voorbeeld van registratieformulier](assets/registerform.png)
 
 Na het verzenden van de aanvraag wordt de profielpagina geopend waar de gebruiker persoonlijke gegevens kan opgeven.
 
-![profielpagina](assets/profilepage.png)
+![Voorbeeldprofielpagina](assets/profilepage.png)
 
 Het nieuwe account is ook zichtbaar in het dialoogvenster [Gebruikersconsole](/help/sites-administering/security.md).
 
@@ -79,7 +80,7 @@ Gebruikers kunnen zich bijvoorbeeld aanmelden of een nieuwe account maken met de
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![aanmelden](assets/login.png)
+![Voorbeeld van aanmeldingspagina](assets/login.png)
 
 ## Afmelden {#logging-out}
 
@@ -106,13 +107,13 @@ U kunt een ander profiel weergeven met de opdracht [clientcontext](/help/sites-a
 1. Druk **control-alt-C** om de clientcontext te openen.
 1. Klik in de linkerbovenhoek van de clientcontext op de knop **Een profiel laden** knop.
 
-   ![De knop Profiel laden](do-not-localize/loadprofile.png)
+   ![Een profielpictogram laden](do-not-localize/loadprofile.png)
 
 1. Selecteer een ander profiel in de vervolgkeuzelijst in het dialoogvenster. bijvoorbeeld: **Alison Parker**.
 1. Klikken **OK**.
 1. Klik nogmaals op **Mijn profiel**. Het formulier wordt bijgewerkt met de gegevens van Alison.
 
-   ![winstbejag](assets/profilealison.png)
+   ![Voorbeeldprofiel van Alison](assets/profilealison.png)
 
 1. U kunt nu **Profiel bewerken** of **Wachtwoord wijzigen** om de details bij te werken.
 
@@ -136,11 +137,11 @@ U kunt velden toevoegen aan de profieldefinitie. U kunt bijvoorbeeld het veld Fa
 
    De volgende keer dat u een profiel weergeeft, kunt u een favoriete kleur selecteren:
 
-   ![aparkerfavcolor](assets/aparkerfavcolour.png)
+   ![Favoriete kleurvoorbeeldveld van Alison Parker](assets/aparkerfavcolour.png)
 
    Het veld wordt opgeslagen onder het tabblad **profiel** deel van de desbetreffende gebruikersaccount:
 
-   ![aparkercrxdeliet](assets/aparkercrxdelite.png)
+   ![Gegevens van Alison Parker in CRXDE](assets/aparkercrxdelite.png)
 
 ## Profielstatussen {#profile-states}
 
@@ -188,7 +189,7 @@ Profielen worden als onderdeel van de[gebruikersaccount](/help/sites-administeri
 
 Het profiel is te vinden onder `/home/users/geometrixx`:
 
-![chlimage_1-138](assets/chlimage_1-138.png)
+![Profielen zoals weergegeven in CRXDE](assets/chlimage_1-138.png)
 
 Bij een standaardinstallatie (auteur of publicatie) heeft iedereen toegang tot de volledige profielgegevens van alle gebruikers. iedereen is een &quot;*Geïntegreerde groep die automatisch alle bestaande gebruikers en groepen bevat. De ledenlijst kan niet worden bewerkt*&quot;.
 
@@ -205,7 +206,7 @@ Als deze toegang niet geschikt is voor uw installatie, kunt u deze standaardinst
 
 Dit kan worden gedaan gebruikend **[Toegangsbeheer](/help/sites-administering/user-group-ac-admin.md#access-right-management)** tab:
 
-![aclmanager](assets/aclmanager.png)
+![Het beheren van ACLs in CRXDE](assets/aclmanager.png)
 
 ## Profielcomponenten {#profile-components}
 
@@ -220,22 +221,22 @@ Deze component bevat twee velden voor:
 
 Met standaardinstellingen wordt de component als volgt weergegeven:
 
-![dc_profiles_checkedpassword](assets/dc_profiles_checkedpassword.png)
+![Het dialoogvenster Wachtwoord controleren](assets/dc_profiles_checkedpassword.png)
 
 ### Profiel Avatar Photo {#profile-avatar-photo}
 
 Deze component biedt de gebruiker een mechanisme voor het selecteren en uploaden van een Avatar Photo-bestand.
 
-![dc_profiles_avatarphoto](assets/dc_profiles_avatarphoto.png)
+![Avatar-kiezer](assets/dc_profiles_avatarphoto.png)
 
 ### Gedetailleerde naam profiel {#profile-detailed-name}
 
 Met deze component kan de gebruiker een gedetailleerde naam invoeren.
 
-![dc_profiles_detailedname](assets/dc_profiles_detailedname.png)
+![Dialoogvenster Gedetailleerde naam](assets/dc_profiles_detailedname.png)
 
 ### Profiel Geslacht {#profile-gender}
 
 Met deze component kan de gebruiker zijn geslacht invoeren.
 
-![dc_profiles_gender](assets/dc_profiles_gender.png)
+![Genderselectie](assets/dc_profiles_gender.png)

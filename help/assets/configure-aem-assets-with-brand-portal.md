@@ -13,12 +13,13 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '2007'
 ht-degree: 10%
 
 ---
+
 
 # AEM Assets configureren met Brand Portal {#configure-integration-65}
 
@@ -103,6 +104,7 @@ Voor het configureren van AEM Assets met Brand Portal zijn configuraties vereist
 >Een AEM Assets-auteur-instantie mag slechts met één Brand Portal-huurder worden geconfigureerd.
 
 Voer de volgende stappen in de vermelde reeks uit als u AEM Assets voor het eerst met Brand Portal configureert:
+
 1. [Openbaar certificaat verkrijgen](#public-certificate)
 1. [Verbinding voor serviceaccount (JWT) maken](#createnewintegration)
 1. [IMS-account configureren](#create-ims-account-configuration)
@@ -274,7 +276,7 @@ Voer de volgende stappen uit om de IMS-account te configureren.
 
    Klikken **[!UICONTROL Check]** in het dialoogvenster. Bij een geslaagde configuratie verschijnt het bericht dat de *Token is opgehaald*.
 
-   ![](assets/create-new-integration5.png)
+   ![Dialoogvenster Bevestiging van gezonde configuratie](assets/create-new-integration5.png)
 
 >[!CAUTION]
 >
@@ -298,7 +300,7 @@ Voer de volgende stappen uit om de Brand Portal-cloudservice te configureren:
 
    In de **[!UICONTROL Service URL]** -veld, geeft u de URL van uw Brand Portal-huurder (organisatie) op.
 
-   ![](assets/create-cloud-service.png)
+   ![Brand Portal-configuratievenster](assets/create-cloud-service.png)
 
 1. Klik op **[!UICONTROL Save & Close]**. De cloudconfiguratie wordt gemaakt.
 
@@ -312,17 +314,17 @@ Voer de volgende stappen uit om de configuratie te valideren:
 
 1. Van de **Gereedschappen** ![Gereedschappen](assets/do-not-localize/tools.png) deelvenster, navigeren naar **[!UICONTROL Deployment]** > **[!UICONTROL Replication]**.
 
-   ![](assets/test-integration1.png)
+   ![Het deelvenster Gereedschappen](assets/test-integration1.png)
 
 1. Klik op de pagina Replicatie op **[!UICONTROL Agents on author]**.
 
-   ![](assets/test-integration2.png)
+   ![Replicatiepagina](assets/test-integration2.png)
 
    U kunt de vier replicatieagenten zien die voor uw huurder van Brand Portal worden gecreeerd.
 
    Bepaal de plaats van de replicatieagenten van uw Brand Portal huurder en klik op de replicatieagent URL.
 
-   ![](assets/test-integration3.png)
+   ![Configuratie voor middelenreplicatie](assets/test-integration3.png)
 
    >[!NOTE]
    >
@@ -330,11 +332,11 @@ Voer de volgende stappen uit om de configuratie te valideren:
 
 1. Als u de verbinding tussen AEM Assets en Brand Portal wilt controleren, klikt u op de knop **[!UICONTROL Test Connection]** pictogram.
 
-   ![](assets/test-integration4.png)
+   ![Replicatie-instellingen voor elementen controleren](assets/test-integration4.png)
 
    Er verschijnt een bericht dat uw *testpakket is afgeleverd*.
 
-   ![](assets/test-integration5.png)
+   ![Uitvoer van bevestiging testen](assets/test-integration5.png)
 
 1. Verifieer de testresultaten op alle vier replicatieagenten.
 
@@ -362,6 +364,7 @@ Zie [Brand Portal-documentatie](https://experienceleague.adobe.com/docs/experien
 ## Upgradeconfiguratie {#upgrade-integration-65}
 
 Voer de volgende stappen in de vermelde reeks uit om uw bestaande configuraties bij te werken naar Adobe Developer Console:
+
 1. [Werken met taken controleren](#verify-jobs)
 1. [Bestaande configuraties verwijderen](#delete-existing-configuration)
 1. [Configuratie maken](#configure-new-integration-65)
@@ -376,13 +379,13 @@ Zorg ervoor dat er geen publicatietaak wordt uitgevoerd op de AEM Assets-ontwerp
 
 1. Klik op de pagina Replicatie op **[!UICONTROL Agents on author]**.
 
-   ![](assets/test-integration2.png)
+   ![Replicatieagents voor elementen](assets/test-integration2.png)
 
 1. Bepaal de plaats van de replicatieagenten van uw huurder van Brand Portal.
 
    Zorg ervoor dat de **Wachtrij is inactief** voor alle replicatieagenten, is geen het publiceren baan actief.
 
-   ![](assets/test-integration3.png)
+   ![Instellingen voor replicatiewachtrij](assets/test-integration3.png)
 
 ### Bestaande configuraties verwijderen {#delete-existing-configuration}
 
@@ -395,15 +398,15 @@ U moet de volgende controlelijst in werking stellen terwijl het schrappen van de
 
 1. Navigeren naar `/etc/replications/agents.author` en schrapt alle vier replicatieagenten van uw Brand Portal huurder.
 
-   ![](assets/delete-replication-agent.png)
+   ![Replicatieagent in CRXDE](assets/delete-replication-agent.png)
 
 1. Navigeren naar `/etc/cloudservices/mediaportal` en verwijder de configuratie van de Brand Portal-cloudservice.
 
-   ![](assets/delete-cloud-service.png)
+   ![Detail van replicatieagent in CRXDE](assets/delete-cloud-service.png)
 
 1. Navigeren naar `/home/users/mac` en de **Mac-gebruiker** van je Brand Portal-huurder.
 
-   ![](assets/delete-mac-user.png)
+   ![Meer detail van replicatieagent in CRXDE](assets/delete-mac-user.png)
 
 
 U kunt nu [configuratie maken](#configure-new-integration-65) via Adobe Developer Console op uw AEM 6.5-auteurexemplaar.

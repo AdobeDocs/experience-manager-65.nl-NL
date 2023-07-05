@@ -2,12 +2,13 @@
 title: Integratie met Adobe Analytics met IMS
 description: Meer informatie over het integreren van AEM met Adobe Analytics met IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 5789954afea2d42444b6f6f9f185d7926624e7f0
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1056'
 ht-degree: 0%
 
 ---
+
 
 # Integratie met Adobe Analytics met IMS {#integration-with-adobe-analytics-using-ims}
 
@@ -51,7 +52,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
 1. Activeren **Nieuw certificaat maken** en voert u een nieuwe alias in.
 1. Bevestigen met **Certificaat maken**.
 
-   ![](assets/integrate-analytics-io-01.png)
+   ![wizard Technische accountconfiguratie van Adobe IMS](assets/integrate-analytics-io-01.png)
 
 1. Selecteren **Downloaden** (of **Openbare sleutel downloaden**) om het bestand naar uw lokale station te downloaden, zodat het klaar is voor gebruik wanneer [IMS configureren voor Adobe Analytics-integratie met AEM](#configuring-ims-for-adobe-analytics-integration-with-aem).
 
@@ -59,7 +60,7 @@ De eerste fase van de configuratie is het creëren van een Configuratie IMS in A
    >
    >Zorg dat deze configuratie geopend blijft, dat deze opnieuw nodig is wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
 
-   ![](assets/integrate-analytics-io-02.png)
+   ![Dialoogvenster Info om de toets aan de Adobe I/O toe te voegen](assets/integrate-analytics-io-02.png)
 
 ## IMS configureren voor Adobe Analytics-integratie met AEM {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
@@ -76,9 +77,9 @@ Open de Adobe Developer-console om een project te maken met Adobe Analytics dat 
 1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van:
 
    * Als u nog geen project hebt, **Nieuw project maken** wordt midden onderaan weergegeven.
-      ![Nieuw project maken - eerste project](assets/integration-analytics-io-02.png)
+     ![Nieuw project maken - eerste project](assets/integration-analytics-io-02.png)
    * Als u al bestaande projecten hebt, worden deze weergegeven en **Nieuw project maken** is helemaal rechts.
-      ![Nieuw project maken - Meerdere projecten](assets/integration-analytics-io-03.png)
+     ![Nieuw project maken - Meerdere projecten](assets/integration-analytics-io-03.png)
 
 
 1. Selecteren **Toevoegen aan project** gevolgd door **API**:
@@ -177,7 +178,6 @@ Om te bevestigen dat de configuratie zoals verwacht werkt:
    Bijvoorbeeld:
 
    * `https://localhost:4502/libs/cq/adobeims-configuration/content/configurations.html`
-
 
 1. Selecteer uw configuratie.
 1. Selecteren **Health controleren** van de werkbalk, gevolgd door **Controleren**.

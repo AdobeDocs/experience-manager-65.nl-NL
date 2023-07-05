@@ -9,12 +9,13 @@ content-type: reference
 discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
 workflow-type: tm+mt
-source-wordcount: '896'
-ht-degree: 1%
+source-wordcount: '915'
+ht-degree: 0%
 
 ---
+
 
 # Leden en groepen beheerconsoles {#members-groups-management-consoles}
 
@@ -47,7 +48,7 @@ In het auteursmilieu, om de console van Leden te bereiken voor het beheren van l
 >
 >Het zal niet mogelijk zijn om de console van Leden te gebruiken als [tunneldienst](deploy-communities.md#tunnel-service-on-author) is niet ingeschakeld.
 
-![member-console1](assets/member-console1.png)
+![De lidconsole](assets/member-console1.png)
 
 ### Zoeken {#search-features}
 
@@ -56,7 +57,7 @@ Selecteer het pictogram van het zijpaneel aan de linkerkant van het deelvenster 
 ![Pictogram van zijpaneel zoeken.](assets/leftpanel-icon.png)
 
 
-![member-console2](assets/member-console2.png)
+![Filteropties voor de lidconsole](assets/member-console2.png)
 
 Selecteer het zoekpictogram aan de linkerkant van het dialoogvenster `Members` om het venster met de zoekzijde te sluiten.
 
@@ -76,7 +77,7 @@ De kolomkoppen zijn
 
 Selecteren `Create Member` om een gebruiker te maken in de publicatieomgeving.
 
-![create-member1](assets/create-member1.png)
+![Het venster Nieuw lid maken](assets/create-member1.png)
 
 ### ALGEMEEN - Gegevens van de leden {#general-member-details}
 
@@ -150,7 +151,7 @@ De `BADGES` biedt de mogelijkheid om handmatig badges toe te wijzen en deze in t
 
 Zie ook [Scores en badges](implementing-scoring.md).
 
-![create-member2](assets/create-member2.png)
+![Het venster Membership Settings bewerken](assets/create-member2.png)
 
 * **[!UICONTROL Add badges]**
    * Begin te typen om te selecteren uit [beschikbare badges](badges.md). Wanneer een badge is geselecteerd, kiest u elke site of alle sites waarop de badge samen met de avatar van het lid moet worden weergegeven.
@@ -173,7 +174,7 @@ De console Groepen openen:
 
 Selecteren `Add Group` om een groep te maken in de publicatieomgeving.
 
-![group-console1](assets/group-console1.png)
+![Het venster Nieuwe groep maken](assets/group-console1.png)
 
 De vereiste gebieden voor het creëren van een nieuwe publish-side lidgroep zijn:
 

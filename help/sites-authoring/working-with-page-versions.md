@@ -9,10 +9,10 @@ content-type: reference
 discoiquuid: 1368347a-9b65-4cfc-87e1-62993dc627fd
 docset: aem65
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 0a06837576e102d0e46f7afd0f5a197c292ddae7
 workflow-type: tm+mt
-source-wordcount: '1492'
-ht-degree: 4%
+source-wordcount: '1496'
+ht-degree: 2%
 
 ---
 
@@ -21,8 +21,10 @@ ht-degree: 4%
 Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaald tijdstip. Met versioning kunt u de volgende handelingen uitvoeren:
 
 * Maak een versie van een pagina.
-* Herstel een pagina naar een vorige versie om bijvoorbeeld een wijziging in een pagina ongedaan te maken.
-* Vergelijk de huidige versie van een pagina met een vorige versie met verschillen in de gemarkeerde tekst en afbeeldingen.
+* Een pagina herstellen naar een vorige versie; bijvoorbeeld:
+   * om een wijziging die u hebt aangebracht in de pagina ongedaan te maken.
+* Vergelijk de huidige versie van een pagina met een vorige versie:
+   * om verschillen in de tekst en afbeeldingen te benadrukken.
 
 ## Een nieuwe versie maken {#creating-a-new-version}
 
@@ -38,12 +40,12 @@ U kunt een versie van uw bron maken op basis van:
 1. Open de **Tijdlijn** kolom.
 1. Klik op de pijlpunt of tik op het veld Opmerking om de opties weer te geven:
 
-   ![screen-shot_2019-03-05at112335](assets/screen-shot_2019-03-05at112335.png)
+   ![Tijdlijn - Opslaan als versie](assets/screen-shot_2019-03-05at112335.png)
 
 1. Selecteren **Opslaan als versie**.
 1. Voer een **Label** en **Opmerking** indien nodig.
 
-   ![chlimage_1-42](assets/chlimage_1-42.png)
+   ![Versie maken - label en opmerking toevoegen](assets/chlimage_1-42.png)
 
 1. De nieuwe versie bevestigen met **Maken**.
 
@@ -53,10 +55,10 @@ U kunt een versie van uw bron maken op basis van:
 
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
 1. Selecteer de pagina in [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Selecteer **Maken** van de werkbalk.
-1. Het dialoogvenster wordt geopend. U kunt een **Label** en **Opmerking** indien vereist:
+1. Selecteer **Maken** van de werkbalk om het dialoogvenster te openen.
+1. In het dialoogvenster kunt u een **Label** en **Opmerking** indien vereist:
 
-   ![screen_shot_2012-02-15at105050am](assets/screen_shot_2012-02-15at105050am.png)
+   ![Een label en opmerking invoeren](assets/screen_shot_2012-02-15at105050am.png)
 
 1. De nieuwe versie bevestigen met **Maken**.
 
@@ -68,17 +70,17 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 
 * de **Deze versie herstellen** van de [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) spoor
 
-   Vorige versie van geselecteerde pagina opnieuw installeren.
+  Vorige versie van geselecteerde pagina opnieuw installeren.
 
 * de **Herstellen** opties van boven [werkbalk Handelingen](/help/sites-authoring/basic-handling.md#actions-toolbar)
 
    * **Versie herstellen**
 
-      Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. dit kan ook het herstellen van pagina&#39;s omvatten die eerder zijn verwijderd.
+     Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. dit kan ook het herstellen van pagina&#39;s omvatten die eerder zijn verwijderd.
 
    * **Boom herstellen**
 
-      Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd.
+     Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd.
 
 >[!NOTE]
 >
@@ -88,10 +90,9 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 >
 >1. Maak versies van een willekeurige pagina.
 >1. De initiële labels en namen van versieknooppunten zijn 1.0, 1.1, 1.2 enzovoort.
->1. De eerste versie opnieuw installeren; d.w.z. 1.0.
->1. Maak opnieuw nieuwe versies.
+>1. De eerste versie opnieuw installeren; in dit geval, 1.0.
+>1. Maak opnieuw versies.
 >1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
-
 
 ### Versie herstellen {#revert-to-a-version}
 
@@ -120,9 +121,8 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
    >
    >* u één pagina hebt geselecteerd die nooit onderliggende pagina&#39;s heeft gehad,
    >* of geen van de pagina&#39;s in de map een versie heeft,
-
    >
-   >Dan zal de vertoning leeg zijn aangezien er geen toepasselijke versies zijn.
+   >Dan is de vertoning leeg aangezien er geen toepasselijke versies zijn.
 
 1. De beschikbare versies worden weergegeven:
 
@@ -171,7 +171,7 @@ U kunt een voorvertoning van een specifieke versie weergeven:
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt voorvertonen:
 
-   ![screen-shot_2019-03-05at112505-1](assets/screen-shot_2019-03-05at112505-1.png)
+   ![Selecteer de versie die u wilt voorvertonen](assets/screen-shot_2019-03-05at112505-1.png)
 
 1. Selecteren **Voorvertoning**. De pagina wordt weergegeven op een nieuw tabblad.
 
@@ -180,7 +180,6 @@ U kunt een voorvertoning van een specifieke versie weergeven:
    >Als een pagina is verplaatst, kunt u geen voorvertoning meer weergeven van versies die vóór de verplaatsing zijn gemaakt.
    >
    >* Als u problemen ondervindt met een voorvertoning, controleert u de [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
-
 
 ## Een versie vergelijken met de huidige pagina {#comparing-a-version-with-current-page}
 
@@ -191,9 +190,9 @@ Een vorige versie vergelijken met de huidige pagina:
 1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt vergelijken:
 
-   ![screen-shot_2019-03-05at112505-2](assets/screen-shot_2019-03-05at112505-2.png)
+   ![Paginaversies weergegeven - versie selecteren](assets/screen-shot_2019-03-05at112505-2.png)
 
-1. Selecteren **Vergelijken met huidige**. De [pagina diff](/help/sites-authoring/page-diff.md) opent en toont de verschillen.
+1. Selecteren **Vergelijken met huidige**. De [pagina diff](/help/sites-authoring/page-diff.md) wordt geopend om de verschillen weer te geven.
 
 ## Timewarp {#timewarp}
 
@@ -203,14 +202,12 @@ Timewarp is een eigenschap die wordt ontworpen om het *gepubliceerd* staat van e
 >
 >[Tijdverdraaiing kan ook worden gebruikt bij Startpagina&#39;s om een voorvertoning van de toekomst weer te geven](/help/sites-authoring/launches.md) wanneer AEM 6.5.10.0 of hoger wordt uitgevoerd.
 
-Omdat content creation een doorlopend en gezamenlijk proces is, is het doel van Timewarp om auteurs in staat te stellen de gepubliceerde website in de loop van de tijd bij te houden om te begrijpen hoe de inhoud is gewijzigd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen.
-
-Dit doet u als volgt:
+Het maken van inhoud is een doorlopend en gezamenlijk proces. Het doel van Timewarp is auteurs toe te staan om de gepubliceerde website in tijd te volgen, om hen te helpen begrijpen hoe de inhoud is veranderd. Deze functie gebruikt de paginaversies om de status van de publicatieomgeving te bepalen:
 
 * Het systeem zoekt naar de paginaversie die op het geselecteerde tijdstip actief was.
-* Dit betekent dat de weergegeven versie is gemaakt/geactiveerd *voor* het punt in tijd dat in Timewarp wordt geselecteerd.
-* Wanneer u naar een verwijderde pagina navigeert, wordt deze ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
-* Als geen gepubliceerde versie wordt gevonden, dan zal Timewarp aan de huidige staat van de pagina op het auteursmilieu terugkeren (dit is om een fout/404 pagina te verhinderen, die het doorbladeren zou verhinderen).
+   * Deze paginaversie is gemaakt/geactiveerd *voor* het punt in tijd dat in Timewarp wordt geselecteerd.
+* Wanneer u naar een pagina navigeert die is verwijderd, wordt deze ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
+* Als geen gepubliceerde versie wordt gevonden, dan keert Timewarp aan de huidige staat van de pagina op het auteursmilieu terug (om een fout/404 pagina te verhinderen, die het doorbladeren zou verhinderen).
 
 ### Tijdverdraaiing gebruiken {#using-timewarp}
 
@@ -218,27 +215,27 @@ Timewaring is een [mode](/help/sites-authoring/author-environment-tools.md#page-
 
 1. Start de editor voor de pagina waarop u Tijdverdraaiing wilt starten en selecteer vervolgens **Timewarp** in de modusselectie.
 
-   ![wwpv-01](assets/wwpv-01.png)
+   ![Selecteer Timewaring in de wijzeselectie](assets/wwpv-01.png)
 
-1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
+1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd als standaardwaarde genomen.
 
-   ![wwpv-02](assets/wwpv-02.png)
+   ![Datum instellen](assets/wwpv-02.png)
 
 1. De pagina wordt weergegeven op basis van de datumset. De modus Tijdlijn verdraaien wordt aangegeven via de blauwe statusbalk boven in het venster. Gebruik de koppelingen op de statusbalk om een nieuwe doeldatum of einddatum voor de tijdverdraaiingsmodus te selecteren.
 
-   ![wwpv-03](assets/wwpv-03.png)
+   ![Indicator voor tijdverdraaiing](assets/wwpv-03.png)
 
 ### Beperkingen voor tijdverdraaiing {#timewarp-limitations}
 
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 
-* **Tijdlijn verdraaien werkt op basis van gepubliceerde pagina&#39;s** - Tijdlijn-verdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
+* **Tijdlijn verdraaien werkt op basis van gepubliceerde pagina&#39;s** - Tijdlijn verdraaien werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
 * **Timewaring gebruikt paginaversies** - Als u navigeert naar een pagina die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies beïnvloeden Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp niet de juiste weergave tonen.
 
 * **Timewarp is read-only** - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#reverting-to-a-page-version).
 
-* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, zal de weergave afwijken van wat oorspronkelijk het geval was, aangezien deze items niet zijn geversieerd in de opslagplaats.
+* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als de elementen voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat oorspronkelijk was, aangezien deze items niet zijn geversieerd in de repository. Dergelijke elementen zijn onder andere code, css, assets/images.
 
 >[!CAUTION]
 >

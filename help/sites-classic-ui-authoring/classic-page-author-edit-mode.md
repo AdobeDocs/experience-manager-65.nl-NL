@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 9aa0521f-f321-42e9-b022-7ff968a36212
 docset: aem65
 exl-id: 88af99df-846b-47b3-9b1f-68bfdfc40eb8
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '6035'
+source-wordcount: '6036'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ De algemene componenten zijn de basiscomponenten die u gebruikt om inhoud te mak
 
 U kunt een koppeling definiëren met een titel en beschrijving.
 
-![](do-not-localize/chlimage_1-2.png)
+![Koppeling](do-not-localize/chlimage_1-2.png)
 
 ### Aangepaste afbeelding {#adaptive-image}
 
@@ -163,11 +163,12 @@ Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
          * **Bovenliggende pagina**
 Geef een pad handmatig of met de kiezer op. Laat leeg als u de huidige pagina als bovenliggend item wilt gebruiken.
+
       * **Opties voor vaste lijst**
 
          * **Pagina&#39;s**
-Selecteer een lijst met pagina&#39;s. Gebruiken 
-`+` om meer items toe te voegen en de knoppen Omhoog en Omlaag om de volgorde aan te passen.
+Selecteer een lijst met pagina&#39;s. Gebruiken `+` om meer items toe te voegen en de knoppen Omhoog en Omlaag om de volgorde aan te passen.
+
       * **Zoekopties**
 
          * **Starten in**
@@ -175,21 +176,18 @@ Voer handmatig of met de kiezer een beginpad in.
 
          * **Zoekquery**
 U kunt een zoekquery voor normale tekst invoeren.
+
       * **Opties voor Geavanceerd zoeken**
 
          * **Querybuilder prediknotatie**
 U kunt een onderzoeksvraag ingaan gebruikend Querybuilder prediknotatie. U kunt bijvoorbeeld &quot;fulltext=Marketing&quot; invoeren om alle pagina&#39;s met &quot;Marketing&quot; in de inhoud weer te geven in de carrousel.
 Zie [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) voor volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
+
    * **Volgorde van**
-Selecteren 
-`jcr:title`, `jcr:created`, `cq:lastModified`, of `cq:template` in het vervolgkeuzemenu.
+Selecteren `jcr:title`, `jcr:created`, `cq:lastModified`, of `cq:template` in het vervolgkeuzemenu.
 
    * **Limiet**
 Optioneel. Het maximumaantal items dat u in de carrousel wilt gebruiken.
-
-
-
-
 
 >[!NOTE]
 >
@@ -262,19 +260,19 @@ De integratiecomponent van de externe toepassing (**Extern**) kunt u externe toe
 
    * **Doeltoepassing**
 
-      Geef de URL op van de webtoepassing die moet worden geïntegreerd; bijvoorbeeld:
+     Geef de URL op van de webtoepassing die moet worden geïntegreerd; bijvoorbeeld:
 
-      ```
-      https://en.wikipedia.org/wiki/Main_Page
-      ```
+     ```
+     https://en.wikipedia.org/wiki/Main_Page
+     ```
 
    * **Parameters doorgeven**
 
-      Schakel het selectievakje in als de parameters naar de toepassing moeten worden doorgegeven.
+     Schakel het selectievakje in als de parameters naar de toepassing moeten worden doorgegeven.
 
    * **Breedte en Hoogte**
 
-      De grootte van het iframe definiëren
+     De grootte van het iframe definiëren
 
 De externe toepassing is geïntegreerd in het alineasysteem van de AEM. bijvoorbeeld wanneer u een doeltoepassing gebruikt van `https://en.wikipedia.org/wiki/Main_Page`:
 
@@ -292,37 +290,37 @@ Met de component Flash kunt u een Flash-film laden. U kunt een Flash-element van
 
    * **Flash-film**
 
-      Het Flash-filmbestand. Sleep een element van de zoekfunctie voor inhoud of klik om een bladervenster te openen.
+     Het Flash-filmbestand. Sleep een element van de zoekfunctie voor inhoud of klik om een bladervenster te openen.
 
    * **Grootte**
 
-      Dimension in pixels van het weergavegebied dat de film bevat.
+     Dimension in pixels van het weergavegebied dat de film bevat.
 
 * **Alternatieve afbeelding**
 
-   Een alternatieve afbeelding die moet worden weergegeven
+  Een alternatieve afbeelding die moet worden weergegeven
 
 * **Geavanceerd**
 
    * **Contextmenu**
 
-      Geeft aan of het contextmenu moet worden weergegeven of verborgen.
+     Geeft aan of het contextmenu moet worden weergegeven of verborgen.
 
    * **Venstermodus**
 
-      Hoe het venster eruitziet, bijvoorbeeld dekkend, transparant of als een duidelijk (effen) venster.
+     Hoe het venster eruitziet, bijvoorbeeld dekkend, transparant of als een duidelijk (effen) venster.
 
    * **Achtergrondkleur**
 
-      Een achtergrondkleur die is geselecteerd in het kleurendiagram dat wordt weergegeven.
+     Een achtergrondkleur die is geselecteerd in het kleurendiagram dat wordt weergegeven.
 
    * **Minimumversie**
 
-      De minimale versie van Adobe Flash Player die is vereist om de film uit te voeren. De standaardwaarde is 9.0.0.
+     De minimale versie van Adobe Flash Player die is vereist om de film uit te voeren. De standaardwaarde is 9.0.0.
 
    * **Attributen**
 
-      Eventuele andere vereiste kenmerken.
+     Eventuele andere vereiste kenmerken.
 
 ### Afbeelding {#image}
 
@@ -346,43 +344,43 @@ Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
 * **Kaart**
 
-   Als u een afbeelding wilt toewijzen, selecteert u Kaart. U kunt opgeven hoe u de afbeelding met hyperlinks wilt maken (rechthoek, veelhoek enzovoort) en waar het gebied naartoe moet wijzen.
+  Als u een afbeelding wilt toewijzen, selecteert u Kaart. U kunt opgeven hoe u de afbeelding met hyperlinks wilt maken (rechthoek, veelhoek enzovoort) en waar het gebied naartoe moet wijzen.
 
 * **Uitsnijden**
 
-   Selecteer Uitsnijden zodat u een gedeelte van een afbeelding kunt uitknippen. Gebruik de muis om de afbeelding uit te snijden.
+  Selecteer Uitsnijden zodat u een gedeelte van een afbeelding kunt uitknippen. Gebruik de muis om de afbeelding uit te snijden.
 
 * **Roteren**
 
-   Selecteer Roteren als u een afbeelding wilt roteren. Herhaal deze bewerking totdat de afbeelding op de gewenste manier is geroteerd.
+  Selecteer Roteren als u een afbeelding wilt roteren. Herhaal deze bewerking totdat de afbeelding op de gewenste manier is geroteerd.
 
 * **Wissen**
 
-   Verwijder de huidige afbeelding.
+  Verwijder de huidige afbeelding.
 
 * **Zoombalk**
 
-   Als u wilt in- of uitzoomen op de afbeelding, gebruikt u de schuifbalk onder de afbeelding (boven de knoppen OK en Annuleren)
+  Als u wilt in- of uitzoomen op de afbeelding, gebruikt u de schuifbalk onder de afbeelding (boven de knoppen OK en Annuleren)
 
 * **Titel**
 
-   De titel van de afbeelding.
+  De titel van de afbeelding.
 
 * **Alt-tekst**
 
-   Een alternatieve tekst die kan worden gebruikt bij het maken van toegankelijke inhoud.
+  Een alternatieve tekst die kan worden gebruikt bij het maken van toegankelijke inhoud.
 
 * **Koppelen naar**
 
-   Maak een koppeling naar elementen of andere pagina&#39;s binnen uw website.
+  Maak een koppeling naar elementen of andere pagina&#39;s binnen uw website.
 
 * **Beschrijving**
 
-   Een beschrijving van de afbeelding.
+  Een beschrijving van de afbeelding.
 
 * **Grootte**
 
-   Hiermee stelt u de hoogte en de breedte van de afbeelding in.
+  Hiermee stelt u de hoogte en de breedte van de afbeelding in.
 
 De uiteindelijke afbeelding (met **Titel** en **Beschrijving**) kan worden weergegeven als:
 
@@ -402,61 +400,61 @@ Met de component List kunt u zoekcriteria configureren voor het weergeven van ee
 
    * **Lijst samenstellen met**
 
-      Hier geeft u op waar de lijst de inhoud ophaalt. Er zijn verschillende methoden:
+     Hier geeft u op waar de lijst de inhoud ophaalt. Er zijn verschillende methoden:
 
    * Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
       * **Opties voor onderliggende pagina&#39;s**
 
          * **Kinderen van** (Bovenliggende pagina) Geef een pad handmatig op of met de kiezer. Laat leeg als u de huidige pagina als bovenliggend item wilt gebruiken.
+
       * **Opties voor vaste lijst**
 
          * **Pagina&#39;s**
 
-            Selecteer een lijst met pagina&#39;s. Gebruik + om meer items toe te voegen en klik op de knop Omhoog/Omlaag om de volgorde aan te passen.
+           Selecteer een lijst met pagina&#39;s. Gebruik + om meer items toe te voegen en klik op de knop Omhoog/Omlaag om de volgorde aan te passen.
+
       * **Zoekopties**
 
          * **Starten in**
 
-            Voer handmatig of met de kiezer een beginpad in.
+           Voer handmatig of met de kiezer een beginpad in.
 
          * **Zoekquery**
 
-            U kunt een zoekquery voor normale tekst invoeren.
+           U kunt een zoekquery voor normale tekst invoeren.
+
       * **Opties voor Geavanceerd zoeken**
 
          * **Querybuilder prediknotatie**
 
-            U kunt een onderzoeksvraag ingaan gebruikend Querybuilder prediknotatie. U kunt bijvoorbeeld &quot;fulltext=Marketing&quot; invoeren om alle pagina&#39;s met &quot;Marketing&quot; in de inhoud weer te geven in de carrousel.
+           U kunt een onderzoeksvraag ingaan gebruikend Querybuilder prediknotatie. U kunt bijvoorbeeld &quot;fulltext=Marketing&quot; invoeren om alle pagina&#39;s met &quot;Marketing&quot; in de inhoud weer te geven in de carrousel.
 
-            Zie [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) voor volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
+           Zie [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) voor volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
+
       * **Tags**
 
-         Geef de **Bovenliggende pagina**, **Tags/trefwoorden** en de vereiste overeenkomende criteria.
+        Geef de **Bovenliggende pagina**, **Tags/trefwoorden** en de vereiste overeenkomende criteria.
+
    * **Weergeven als**
 
-      Hoe je de objecten wilt aanbieden; Dit zijn onder andere koppelingen, lesgevers en nieuws.
+     Hoe je de objecten wilt aanbieden; Dit zijn onder andere koppelingen, lesgevers en nieuws.
 
    * **Volgorde van**
 
-      Of de lijst moet worden besteld en, zo ja, welke criteria moeten worden gebruikt voor sorteren. U kunt criteria invoeren of een criteria selecteren in de opgegeven vervolgkeuzelijst.
+     Of de lijst moet worden besteld en, zo ja, welke criteria moeten worden gebruikt voor sorteren. U kunt criteria invoeren of een criteria selecteren in de opgegeven vervolgkeuzelijst.
 
    * **Limiet**
 
-      Geef het maximumaantal items op dat u in de lijst wilt weergeven.
+     Geef het maximumaantal items op dat u in de lijst wilt weergeven.
 
    * **Feed inschakelen**
 
-      Geeft aan of een RSS-feed voor de lijst moet worden geactiveerd.
+     Geeft aan of een RSS-feed voor de lijst moet worden geactiveerd.
 
    * **Pagineren na**
 
-      Hier kunt u het aantal lijstitems opgeven dat tegelijkertijd moet worden weergegeven. Een lijst met meer items dan opgegeven gebruikt paginering om de lijst in verschillende delen weer te geven.
-
-
-
-
-
+     Hier kunt u het aantal lijstitems opgeven dat tegelijkertijd moet worden weergegeven. Een lijst met meer items dan opgegeven gebruikt paginering om de lijst in verschillende delen weer te geven.
 
 In het volgende voorbeeld wordt een **Lijst** op dezelfde manier waarop een lijst met onderliggende pagina&#39;s wordt weergegeven (het ontwerp wordt bepaald door de aangepaste CSS-definities van een siteontwerp).
 
@@ -474,29 +472,29 @@ U kunt configureren:
 
    * Sectielabel
 
-      Invultekst voor de invoervelden.
+     Invultekst voor de invoervelden.
 
    * Label voor gebruikersnaam
 
-      Tekst die een label moet geven aan het veld gebruikersnaam.
+     Tekst die een label moet geven aan het veld gebruikersnaam.
 
    * Wachtwoordlabel
 
-      Tekst om het wachtwoordveld een label te geven.
+     Tekst om het wachtwoordveld een label te geven.
 
    * Label van de knop Aanmelden
 
-      Tekst voor de aanmeldknop.
+     Tekst voor de aanmeldknop.
 
    * Omleiden naar
 
-      U kunt de pagina op uw website opgeven die moet worden geopend nadat de gebruiker zich heeft aangemeld.
+     U kunt de pagina op uw website opgeven die moet worden geopend nadat de gebruiker zich heeft aangemeld.
 
 * Al aangemeld
 
    * Doorgaan, knoplabel
 
-      Tekst die aangeeft dat de gebruiker al is aangemeld.
+     Tekst die aangeeft dat de gebruiker al is aangemeld.
 
 ### Status van bestelling {#order-status}
 
@@ -504,15 +502,15 @@ U kunt configureren:
 
    * **Titel**
 
-      Geef de titeltekst op die u wilt weergeven.
+     Geef de titeltekst op die u wilt weergeven.
 
    * **Koppeling**
 
-      Geef de pagina (het product) op waarvoor de status van de bestelling moet worden weergegeven.
+     Geef de pagina (het product) op waarvoor de status van de bestelling moet worden weergegeven.
 
    * **Type/Grootte**
 
-      Maak een keuze uit de beschikbare selectie.
+     Maak een keuze uit de beschikbare selectie.
 
 ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -524,7 +522,7 @@ De **Referentie** kunt u tekst van een andere pagina van uw AEM website (in de h
 
    * **Referentie**
 
-      Geef het pad op naar de pagina en alinea waarnaar u wilt verwijzen (inhoud opnemen).
+     Geef het pad op naar de pagina en alinea waarnaar u wilt verwijzen (inhoud opnemen).
 
 Als u het pad naar een alinea wilt opgeven, moet u het pad (naar de pagina) als volgt achtervoegsel geven:
 
@@ -556,52 +554,52 @@ U kunt configureren:
 
    * **Knooppunttypen**
 
-      Als de zoekopdracht moet worden beperkt tot een specifieke lijst van knooppunttypen, moeten deze hier worden vermeld; bijvoorbeeld: `cq:Page`.
+     Als de zoekopdracht moet worden beperkt tot een specifieke lijst van knooppunttypen, moeten deze hier worden vermeld; bijvoorbeeld: `cq:Page`.
 
    * **Pad om in te zoeken**
 
-      Geef de basispagina op van de vertakking die u wilt doorzoeken.
+     Geef de basispagina op van de vertakking die u wilt doorzoeken.
 
    * **Tekst van knop Zoeken**
 
-      De naam die wordt weergegeven op de werkelijke zoekknop.
+     De naam die wordt weergegeven op de werkelijke zoekknop.
 
    * **Statistische tekst**
 
-      De tekst die boven de zoekresultaten wordt weergegeven.
+     De tekst die boven de zoekresultaten wordt weergegeven.
 
    * **Geen resultaattekst**
 
-      Als er geen resultaten zijn, wordt de hier ingevoerde tekst weergegeven.
+     Als er geen resultaten zijn, wordt de hier ingevoerde tekst weergegeven.
 
    * **Spellcheck-tekst**
 
-      Als iemand een gelijkaardige termijn ingaat, wordt deze tekst getoond vóór de termijn.
+     Als iemand een gelijkaardige termijn ingaat, wordt deze tekst getoond vóór de termijn.
 Als u bijvoorbeeld `Geometrixxe`, geeft het systeem &quot;Bedoelde u? Geometrixx&quot;.
 
    * **Tekst op vergelijkbare pagina&#39;s**
 
-      De tekst die wordt weergegeven naast een resultaat voor vergelijkbare pagina&#39;s. Klik op deze koppeling om een deel van een afbeelding uit te knippen.
+     De tekst die wordt weergegeven naast een resultaat voor vergelijkbare pagina&#39;s. Klik op deze koppeling om een deel van een afbeelding uit te knippen.
 
    * **Tekst verwante zoekopdrachten**
 
-      De tekst die naast onderzoeken naar verwante termijnen en onderwerpen verschijnt.
+     De tekst die naast onderzoeken naar verwante termijnen en onderwerpen verschijnt.
 
    * **Tekst voor trends zoeken**
 
-      De titel boven de zoektermen die een gebruiker invoert.
+     De titel boven de zoektermen die een gebruiker invoert.
 
    * **Label voor resultaatpagina&#39;s**
 
-      De tekst die onder aan deze lijst wordt weergegeven met koppelingen naar andere resultatenpagina&#39;s.
+     De tekst die onder aan deze lijst wordt weergegeven met koppelingen naar andere resultatenpagina&#39;s.
 
    * **Vorige label**
 
-      De naam die wordt weergegeven op de koppeling naar vorige zoekpagina&#39;s.
+     De naam die wordt weergegeven op de koppeling naar vorige zoekpagina&#39;s.
 
    * **Volgende label**
 
-      De naam die wordt weergegeven op de koppeling naar volgende zoekpagina&#39;s.
+     De naam die wordt weergegeven op de koppeling naar volgende zoekpagina&#39;s.
 
 In het volgende voorbeeld wordt de component Zoeken weergegeven na een zoekopdracht naar het woord *`geometrixx`* in de hoofdmap van een standaardinstallatie. Ook wordt de paginering van de resultaten geïllustreerd:
 
@@ -623,7 +621,7 @@ Indien nodig, kunt u vormen:
 
    * **Hoofdpad**
 
-      Pad vanaf waar de aanbieding moet beginnen.
+     Pad vanaf waar de aanbieding moet beginnen.
 
 ### Presentatie {#slideshow}
 
@@ -635,17 +633,17 @@ U kunt configureren:
 
    * **Nieuwe dia**
 
-      U kunt een selectie dia&#39;s opgeven met de opdracht **Toevoegen** (en **Verwijderen**).
+     U kunt een selectie dia&#39;s opgeven met de opdracht **Toevoegen** (en **Verwijderen**).
 
    * **Titel**
 
-      Geef indien nodig een titel op. Deze titel wordt over de juiste dia geplaatst.
+     Geef indien nodig een titel op. Deze titel wordt over de juiste dia geplaatst.
 
 * **Geavanceerd**
 
    * **Grootte**
 
-      Geef de breedte en hoogte op in pixels.
+     Geef de breedte en hoogte op in pixels.
 
 In de diapresentatie-component worden vervolgens herhaaldelijk alle elementen in de juiste volgorde weergegeven, gedurende een korte tijd, voordat de volgende dia wordt afgevlakt:
 
@@ -723,35 +721,35 @@ U kunt configureren:
 
 * **Componentstijlen** (**Stijlen**)
 
-   Hier kunt u de afbeelding links of rechts uitlijnen. De standaardwaarde is **Links** uitgelijnd, met de afbeelding aan de linkerkant.
+  Hier kunt u de afbeelding links of rechts uitlijnen. De standaardwaarde is **Links** uitgelijnd, met de afbeelding aan de linkerkant.
 
 * **Eigenschappen van afbeelding** (**Geavanceerde afbeeldingseigenschappen**)
 
-   Hier kunt u het volgende opgeven:
+  Hier kunt u het volgende opgeven:
 
    * **Afbeeldingselement**
 
-      Upload de vereiste afbeelding.
+     Upload de vereiste afbeelding.
 
    * **Titel**
 
-      De titel voor het blok. Het wordt getoond door mouseover.
+     De titel voor het blok. Het wordt getoond door mouseover.
 
    * **Alt-tekst**
 
-      Alternatieve tekst die moet worden weergegeven als de afbeelding niet kan worden weergegeven. Als de titel leeg blijft, wordt deze gebruikt.
+     Alternatieve tekst die moet worden weergegeven als de afbeelding niet kan worden weergegeven. Als de titel leeg blijft, wordt deze gebruikt.
 
    * **Koppeling naar**
 
-      Geef een doelpad op.
+     Geef een doelpad op.
 
    * **Beschrijving**
 
-      Een beschrijving van de afbeelding.
+     Een beschrijving van de afbeelding.
 
    * **Grootte**
 
-      Hiermee stelt u de hoogte en breedte van de afbeelding in.
+     Hiermee stelt u de hoogte en breedte van de afbeelding in.
 
 In het volgende voorbeeld ziet u een component Tekstafbeelding waarmee de afbeelding links wordt uitgelijnd:
 
@@ -768,15 +766,15 @@ U kunt het volgende configureren:
 
 * **Titel**
 
-   Als u een andere naam dan de paginatitel wilt gebruiken, voert u deze hier in.
+  Als u een andere naam dan de paginatitel wilt gebruiken, voert u deze hier in.
 
 * **Koppeling**
 
-   De URI als de titel moet werken als een koppeling.
+  De URI als de titel moet werken als een koppeling.
 
 * **Type/Grootte**
 
-   Selecteer Klein of Groot in de vervolgkeuzelijst. Klein wordt gegenereerd als een afbeelding. Groot wordt gegenereerd als tekst.
+  Selecteer Klein of Groot in de vervolgkeuzelijst. Klein wordt gegenereerd als een afbeelding. Groot wordt gegenereerd als tekst.
 
 In het volgende voorbeeld wordt een **Titel** component die wordt weergegeven; het ontwerp wordt bepaald door de sitespecifieke CSS.
 
@@ -794,11 +792,11 @@ Nadat u een instantie van de component op de pagina hebt geplaatst, kunt u het v
 
    * **Video-element**
 
-      Upload of zet uw video-element neer.
+     Upload of zet uw video-element neer.
 
    * **Grootte**
 
-      De native grootte van de video (breedte x hoogte in pixels) wordt weergegeven in de vakken naast Grootte (zie boven). Voer hier handmatig de afmetingen voor breedte en hoogte in als u de native afmetingen van de video wilt overschrijven. Selecteren **OK** Hiermee wordt het dialoogvenster gesloten.
+     De native grootte van de video (breedte x hoogte in pixels) wordt weergegeven in de vakken naast Grootte (zie boven). Voer hier handmatig de afmetingen voor breedte en hoogte in als u de native afmetingen van de video wilt overschrijven. Selecteren **OK** Hiermee wordt het dialoogvenster gesloten.
 
 >[!NOTE]
 >
@@ -808,7 +806,6 @@ Nadat u een instantie van de component op de pagina hebt geplaatst, kunt u het v
 >* `Ogg`
 >* `FLV` (video Flash)
 >
-
 
 ## Kolommen {#columns}
 
@@ -834,7 +831,7 @@ Met de component Kolombeheer kunnen gebruikers selecteren hoe ze de inhoud in he
 
    * **Kolomlay-out**
 
-      Selecteer het aantal kolommen dat u wilt renderen. Nadat elke kolom is gemaakt, bevat deze een eigen koppeling voor het slepen van componenten of elementen tijdens het toevoegen van inhoud.
+     Selecteer het aantal kolommen dat u wilt renderen. Nadat elke kolom is gemaakt, bevat deze een eigen koppeling voor het slepen van componenten of elementen tijdens het toevoegen van inhoud.
 
 ## Formulier {#form}
 
@@ -848,15 +845,15 @@ Forms is opgebouwd uit verschillende onderdelen:
 
 * **Formulier**
 
-   De formuliercomponent definieert het begin en einde van een nieuw formulier op een pagina. Andere componenten kunnen vervolgens tussen deze elementen worden geplaatst, zoals tabellen en downloads.
+  De formuliercomponent definieert het begin en einde van een nieuw formulier op een pagina. Andere componenten kunnen vervolgens tussen deze elementen worden geplaatst, zoals tabellen en downloads.
 
 * **Formuliervelden en -elementen**
 
-   Formuliervelden en -elementen kunnen tekstvakken, keuzerondjes en afbeeldingen bevatten. De gebruiker voert vaak een handeling uit in een formulierveld, zoals het typen van tekst. Zie de afzonderlijke formulierelementen voor meer informatie.
+  Formuliervelden en -elementen kunnen tekstvakken, keuzerondjes en afbeeldingen bevatten. De gebruiker voert vaak een handeling uit in een formulierveld, zoals het typen van tekst. Zie de afzonderlijke formulierelementen voor meer informatie.
 
 * **Profielcomponenten**
 
-   Profielcomponenten hebben betrekking op bezoekersprofielen die worden gebruikt voor sociale samenwerking en andere gebieden waar personalisatie van bezoekers vereist is.
+  Profielcomponenten hebben betrekking op bezoekersprofielen die worden gebruikt voor sociale samenwerking en andere gebieden waar personalisatie van bezoekers vereist is.
 
 Hieronder ziet u een voorbeeldformulier. Het bestaat uit **Formulier** component (begin en eind), met twee **Formulier** **Tekst** velden die worden gebruikt voor invoer, a **Algemeen** **Tekst** voor de tekst van de lead-in en een **Verzenden** knop.
 
@@ -874,19 +871,19 @@ Wanneer u een van de formuliercomponenten configureert, zijn de volgende tabblad
 
 * **Titel en tekst**
 
-   Hier moet u de basisinformatie opgeven, zoals de titel van het formulier en eventuele begeleidende tekst. In voorkomend geval kunt u ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
+  Hier moet u de basisinformatie opgeven, zoals de titel van het formulier en eventuele begeleidende tekst. In voorkomend geval kunt u ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
 
 * **Beginwaarden**
 
-   Hiermee kunt u een standaardwaarde opgeven.
+  Hiermee kunt u een standaardwaarde opgeven.
 
 * **Restricties**
 
-   Hier kunt u opgeven of een veld verplicht is en beperkingen in dat veld plaatsen, bijvoorbeeld numeriek.
+  Hier kunt u opgeven of een veld verplicht is en beperkingen in dat veld plaatsen, bijvoorbeeld numeriek.
 
 * **Stijlen**
 
-   Hiermee geeft u de grootte en opmaak van de velden aan.
+  Hiermee geeft u de grootte en opmaak van de velden aan.
 
 >[!NOTE]
 >
@@ -898,57 +895,57 @@ Deze lusjes voorzien u van de noodzakelijke parameters. De tabbladen zijn afhank
 
    * **Elementnaam**
 
-      Naam van het formulierelement. Het geeft aan waar in de gegevensopslagruimte de gegevens worden opgeslagen.
+     Naam van het formulierelement. Het geeft aan waar in de gegevensopslagruimte de gegevens worden opgeslagen.
 Dit veld is verplicht en mag alleen de volgende tekens bevatten:
 
       * alfanumerieke tekens
       * `_ . / : -`
+
    * **Titel**
 
-      De titel die bij het veld wordt weergegeven. Indien leeg gelaten, wordt de standaardtitel getoond.
+     De titel die bij het veld wordt weergegeven. Indien leeg gelaten, wordt de standaardtitel getoond.
 
    * **Beschrijving**
 
-      Hiermee kunt u, indien nodig, aanvullende informatie voor de gebruiker opgeven. In het formulier wordt deze beschrijving weergegeven onder het veld, in een kleiner lettertype dan de titel.
+     Hiermee kunt u, indien nodig, aanvullende informatie voor de gebruiker opgeven. In het formulier wordt deze beschrijving weergegeven onder het veld, in een kleiner lettertype dan de titel.
 
    * **Tonen/verbergen**
 
-      Hiermee bepaalt u wanneer het veld zichtbaar is.
-
+     Hiermee bepaalt u wanneer het veld zichtbaar is.
 
 * **Beginwaarden**
 
    * **Standaardwaarde**
 
-      De waarde die in het veld wordt weergegeven wanneer het formulier wordt geopend. Dat wil zeggen, voordat de gebruiker invoer heeft ingevoerd.
+     De waarde die in het veld wordt weergegeven wanneer het formulier wordt geopend. Dat wil zeggen, voordat de gebruiker invoer heeft ingevoerd.
 
 * **Restricties**
 
    * **Vereist**
 
-      Deze beperking is afhankelijk van het type formuliercomponent, maar bevat een of meer klikvakken om aan te geven dat dit veld is vereist of dat bepaalde delen van dit veld zijn vereist.
+     Deze beperking is afhankelijk van het type formuliercomponent, maar bevat een of meer klikvakken om aan te geven dat dit veld is vereist of dat bepaalde delen van dit veld zijn vereist.
 
    * **Vereist bericht**
 
-      Een bericht om gebruikers te laten weten dat dit veld is vereist. Een vereist veld is gemarkeerd met een sterretje.
+     Een bericht om gebruikers te laten weten dat dit veld is vereist. Een vereist veld is gemarkeerd met een sterretje.
 
    * **Restrictie**
 
-      Welke beperkingen beschikbaar zijn voor de selectie, is afhankelijk van het type formuliercomponent.
+     Welke beperkingen beschikbaar zijn voor de selectie, is afhankelijk van het type formuliercomponent.
 
    * **Restrictiebericht**
 
-      Een bericht om gebruikers te informeren wat wordt vereist.
+     Een bericht om gebruikers te informeren wat wordt vereist.
 
 * **Stijlen**
 
    * **Grootte**
 
-      In rijen en kolommen.
+     In rijen en kolommen.
 
    * **Breedte**
 
-      In pixels.
+     In pixels.
 
    * **CSS**
 
@@ -968,19 +965,19 @@ Met deze vereiste component wordt het begin van een nieuw formulier op een pagin
 
    * **Dankbriefje**
 
-      De pagina waarnaar wordt verwezen om bezoekers te bedanken voor hun invoer. Als het formulier leeg blijft, wordt het na verzending opnieuw weergegeven.
+     De pagina waarnaar wordt verwezen om bezoekers te bedanken voor hun invoer. Als het formulier leeg blijft, wordt het na verzending opnieuw weergegeven.
 
    * **Workflow starten**
 
-      Hiermee bepaalt u welke workflow wordt geactiveerd wanneer een formulier wordt verzonden.
+     Hiermee bepaalt u welke workflow wordt geactiveerd wanneer een formulier wordt verzonden.
 
 * **Geavanceerd**
 
    * **Type handeling**
 
-      Een formulier heeft een handeling nodig. De handeling definieert de bewerking die wordt geactiveerd voor uitvoering met de gegevens die door de gebruiker worden verzonden (vergelijkbaar met action= in HTML). Sommigen hebben een overeenkomstige **Configuratie van handelingen**.
+     Een formulier heeft een handeling nodig. De handeling definieert de bewerking die wordt geactiveerd voor uitvoering met de gegevens die door de gebruiker worden verzonden (vergelijkbaar met action= in HTML). Sommigen hebben een overeenkomstige **Configuratie van handelingen**.
 
-      Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
+     Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
       * **Account-verzoek**
       * **Inhoud maken**
@@ -999,142 +996,142 @@ Met deze vereiste component wordt het begin van een nieuw formulier op een pagin
       * **Wachtwoord instellen**
       * **Winkelinhoud**
 
-         Het standaardhandelingstype.
+        Het standaardhandelingstype.
 
       * **Inhoud opslaan met uploads**
       * **Bestelling verzenden**
       * **Abonnement opzeggen**
       * **Volgorde bijwerken**
+
    * **Formulierid**
 
-      De formulier-id vormt een unieke identificatie van het formulier. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt; zorg ervoor zij verschillende herkenningstekens hebben.
+     De formulier-id vormt een unieke identificatie van het formulier. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt; zorg ervoor zij verschillende herkenningstekens hebben.
 
    * **Pad laden**
 
-      Het pad naar knooppunteigenschappen dat wordt gebruikt om vooraf gedefinieerde waarden in de formuliervelden te laden.
+     Het pad naar knooppunteigenschappen dat wordt gebruikt om vooraf gedefinieerde waarden in de formuliervelden te laden.
 Dit veld is optioneel en geeft het pad naar een knooppunt in de repository aan. Als dit knooppunt eigenschappen heeft die overeenkomen met de veldnamen, worden de desbetreffende velden op het formulier vooraf geladen met de waarde van die eigenschappen. Als er geen overeenkomst bestaat, bevat het veld de standaardwaarde.
 Gebruiken **Pad laden** U kunt het formulier vooraf laden met waarden in de vereiste velden. Zie [Formulierwaarden vooraf laden](/help/sites-developing/developing-forms.md#preloading-form-values).
 
    * **Clientvalidatie**
 
-      Hiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie) *altijd* komt voor.). Validatie wordt bereikt met de **Forms Captcha** component.
+     Hiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie) *altijd* komt voor.). Validatie wordt bereikt met de **Forms Captcha** component.
 
    * **Brontype voor validatie**
 
-      Hiermee definieert u het type resource voor formuliervalidatie als u het volledige formulier wilt valideren (in plaats van afzonderlijke velden). Als u het volledige formulier valideert, voert u ook een van de volgende handelingen uit:
+     Hiermee definieert u het type resource voor formuliervalidatie als u het volledige formulier wilt valideren (in plaats van afzonderlijke velden). Als u het volledige formulier valideert, voert u ook een van de volgende handelingen uit:
 
       * Een script voor clientvalidatie:
 
-         `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
+        `/apps/<myApp>/form/<myValidation>/formclientvalidation.jsp`
 
       * Een script voor validatie aan de serverzijde:
 
-         `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+        `/apps/<myApp>/form/<myValidation>/formservervalidation.jsp`
+
    * **Configuratie van handelingen**
 
-      De opties die beschikbaar zijn in **Configuratie van handelingen** afhankelijk zijn van de geselecteerde **Type handeling**:
+     De opties die beschikbaar zijn in **Configuratie van handelingen** afhankelijk zijn van de geselecteerde **Type handeling**:
 
       * **Account-verzoek**
 
          * **Accountpagina maken**
 De pagina die wordt gebruikt bij het maken van een account.
+
       * **Inhoud maken**
 
          * Inhoudspad Het inhoudspad voor alle inhoud die door het formulier wordt neergezet. Een pad invoeren dat eindigt met een schuine streep `/`. De slash betekent dat voor elke formulierpoort een nieuw knooppunt wordt gemaakt op de opgegeven locatie. bijvoorbeeld:
-            `/forms/feedback/`
+           `/forms/feedback/`
 
          * **Type**
 
-            Selecteer het gewenste type.
+           Selecteer het gewenste type.
 
          * **Formulier**
 
-            Geef het formulier op.
+           Geef het formulier op.
 
          * **Renderen met**
 
-            Selecteer de gewenste optie in de lijst.
+           Selecteer de gewenste optie in de lijst.
 
          * **Type bron**
 
-            Indien ingesteld, wordt deze aan elke opmerking toegevoegd als `sling:resourceType`
+           Indien ingesteld, wordt deze aan elke opmerking toegevoegd als `sling:resourceType`
 
          * **Kiezer weergeven**
+
       * **Lead maken**
 
          * **De lead wordt toegevoegd aan deze lijst**
 Geef de lijst met vereiste leads op.
+
       * **Account maken en bijwerken**
 
          * **Eerste groep**
 
-            Groep waaraan nieuwe gebruiker moet worden toegewezen.
+           Groep waaraan nieuwe gebruiker moet worden toegewezen.
 
          * **Home**
 
-            Pagina die moet worden weergegeven na geslaagde aanmelding.
+           Pagina die moet worden weergegeven na geslaagde aanmelding.
 
          * **Pad**
 
-            Het pad (relatief) naar waar de nieuwe account wordt gemaakt en opgeslagen.
+           Het pad (relatief) naar waar de nieuwe account wordt gemaakt en opgeslagen.
 
          * **Gegevens weergeven...**
 
-            Selecteer de knop, zodat u toegang kunt krijgen tot de informatie over de formulierresultaten in de Bulk-editor. Van hieruit kunt u de gegevens exporteren naar een `.tsv` (tabgescheiden) bestand (bijvoorbeeld in een Excel-spreadsheet).
+           Selecteer de knop, zodat u toegang kunt krijgen tot de informatie over de formulierresultaten in de Bulk-editor. Van hieruit kunt u de gegevens exporteren naar een `.tsv` (tabgescheiden) bestand (bijvoorbeeld in een Excel-spreadsheet).
+
       * **Mail**
 
          * **Van**
 
-            Voer het e-mailadres in waaruit de e-mail moet komen.
+           Voer het e-mailadres in waaruit de e-mail moet komen.
 
          * **Mailto**
 
-            Voer een of meer e-mailadressen in waarnaar het formulier wordt verzonden.
+           Voer een of meer e-mailadressen in waarnaar het formulier wordt verzonden.
 
          * **CC**
 
-            Voer een of meer CC-e-mailadressen in.
+           Voer een of meer CC-e-mailadressen in.
 
          * **BCC**
 
-            Voer een of meer BCC-e-mailadressen in.
+           Voer een of meer BCC-e-mailadressen in.
 
          * **Onderwerp**
 
-            Voer een onderwerp voor de e-mail in.
+           Voer een onderwerp voor de e-mail in.
+
       * **Wachtwoord opnieuw instellen**
 
          * **Wachtwoordpagina wijzigen**
 
-            De pagina die wordt gebruikt bij het wijzigen van het wachtwoord.
+           De pagina die wordt gebruikt bij het wijzigen van het wachtwoord.
+
       * **Winkelinhoud**
 
          * **Inhoudspad**
 
-            Het inhoudspad voor alle inhoud die door het formulier wordt neergezet. Een pad invoeren dat eindigt met een schuine streep `/`. De slash betekent dat voor elke formulierpoort een nieuw knooppunt wordt gemaakt op de opgegeven locatie. bijvoorbeeld:
-            `/forms/feedback/`
+           Het inhoudspad voor alle inhoud die door het formulier wordt neergezet. Een pad invoeren dat eindigt met een schuine streep `/`. De slash betekent dat voor elke formulierpoort een nieuw knooppunt wordt gemaakt op de opgegeven locatie. bijvoorbeeld:
+           `/forms/feedback/`
 
          * **Gegevens weergeven...**
 
-            Selecteer de knop, zodat u toegang kunt krijgen tot de informatie over de formulierresultaten in de Bulk-editor. Van hieruit kunt u de informatie exporteren naar een .tsv-bestand (gescheiden door tabs) (bijvoorbeeld in een Excel-spreadsheet).
+           Selecteer de knop, zodat u toegang kunt krijgen tot de informatie over de formulierresultaten in de Bulk-editor. Van hieruit kunt u de informatie exporteren naar een .tsv-bestand (gescheiden door tabs) (bijvoorbeeld in een Excel-spreadsheet).
+
       * **Inhoud opslaan met uploads**
 
-         Heeft dezelfde opties als **Winkelinhoud**.
+        Heeft dezelfde opties als **Winkelinhoud**.
 
       * **Abonnement opzeggen**
 
          * **De lead wordt uit deze lijst verwijderd**
 
-            Geef de lijst met vereiste leads op.
-
-
-
-
-
-
-
-
-
+           Geef de lijst met vereiste leads op.
 
 #### Einde van formulier {#end-of-form}
 
@@ -1144,27 +1141,27 @@ Hiermee markeert u het einde van het formulier. U kunt het volgende configureren
 
    * **Verzendknop tonen**
 
-      Geeft aan of een knop Verzenden moet worden weergegeven.
+     Geeft aan of een knop Verzenden moet worden weergegeven.
 
    * **Naam verzenden**
 
-      Een id als u meerdere verzendknoppen in een formulier gebruikt.
+     Een id als u meerdere verzendknoppen in een formulier gebruikt.
 
    * **Titel verzenden**
 
-      De naam die op de knop wordt weergegeven, zoals Verzenden of Verzenden.
+     De naam die op de knop wordt weergegeven, zoals Verzenden of Verzenden.
 
    * **Knop Herstellen tonen**
 
-      Als u het selectievakje inschakelt, wordt de knop Herstellen zichtbaar.
+     Als u het selectievakje inschakelt, wordt de knop Herstellen zichtbaar.
 
    * **Titel opnieuw instellen**
 
-      De naam die wordt weergegeven op de knop Herstellen.
+     De naam die wordt weergegeven op de knop Herstellen.
 
    * **Beschrijving**
 
-      Informatie die onder de knop wordt weergegeven.
+     Informatie die onder de knop wordt weergegeven.
 
 ### Accountnaam {#account-name}
 
@@ -1323,9 +1320,9 @@ U kunt verschillende parameters opgeven, inclusief de naamruimten die kunnen wor
       * **Standaardlabels**
       * **Marketing**
       * **Eigenschappen van element**
+
    * **Breedte in pixels**
    * **Grootte pop-up**
-
 
 ### Tekstveld {#text-field}
 

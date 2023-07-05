@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ De rijke Redacteur van de Tekst verstrekt een waaier van eigenschappen, deze [af
 
 ### Standaardtekenopmaak {#basic-character-formats}
 
-![](do-not-localize/cq55_rte_basicchars.png)
+![Werkbalk Tekenindeling](do-not-localize/cq55_rte_basicchars.png)
 
 Hier kunt u opmaak toepassen op geselecteerde tekens (gemarkeerd); Sommige opties hebben ook sneltoetsen:
 
@@ -98,7 +98,7 @@ Een stijl kan worden verwijderd. Plaats de cursor in de tekst waarop de stijl is
 
 ### Knippen, kopiëren en plakken {#cut-copy-paste}
 
-![](do-not-localize/cq55_rte_cutcopypaste.png)
+![Werkbalk Knippen, Kopiëren, Plakken](do-not-localize/cq55_rte_cutcopypaste.png)
 
 De standaardfuncties van **[!UICONTROL Cut]** en **[!UICONTROL Copy]** zijn beschikbaar. Verschillende aroma&#39;s van **[!UICONTROL Paste]** worden verstrekt om rekening te houden met verschillende formaten.
 
@@ -112,7 +112,7 @@ De standaardfuncties van **[!UICONTROL Cut]** en **[!UICONTROL Copy]** zijn besc
 
 ### Ongedaan maken, Opnieuw {#undo-redo}
 
-![](do-not-localize/cq55_rte_undoredo.png)
+![Ongedaan maken, Opnieuw, werkbalk](do-not-localize/cq55_rte_undoredo.png)
 
 AEM houdt een overzicht bij van de laatste 50 acties in de huidige component, in chronologische volgorde. Deze handelingen kunnen desgewenst ongedaan worden gemaakt (en vervolgens opnieuw worden uitgevoerd).
 
@@ -126,7 +126,7 @@ AEM houdt een overzicht bij van de laatste 50 acties in de huidige component, in
 
 ### Uitlijning {#alignment}
 
-![](do-not-localize/cq55_rte_alignment.png)
+![Uitlijning, werkbalk](do-not-localize/cq55_rte_alignment.png)
 
 De tekst kan links, gecentreerd of rechts worden uitgelijnd.
 
@@ -134,7 +134,7 @@ De tekst kan links, gecentreerd of rechts worden uitgelijnd.
 
 ### Inspringing {#indentation}
 
-![](do-not-localize/cq55_rte_indent.png)
+![Werkbalk Inspringing](do-not-localize/cq55_rte_indent.png)
 
 De inspringing van een alinea kan worden vergroot of verkleind. De geselecteerde alinea wordt ingesprongen, alle nieuwe tekst die wordt ingevoerd, behoudt het huidige inspringingsniveau.
 
@@ -142,7 +142,7 @@ De inspringing van een alinea kan worden vergroot of verkleind. De geselecteerde
 
 ### Lijsten {#lists}
 
-![](do-not-localize/cq55_rte_lists.png)
+![Lijsten, werkbalk](do-not-localize/cq55_rte_lists.png)
 
 U kunt zowel lijsten met opsommingstekens als genummerde lijsten maken in uw tekst. Selecteer het lijsttype en begin met typen of markeer de tekst die u wilt omzetten. In beide gevallen wordt met een lijnfeed een nieuw lijstitem gestart.
 
@@ -154,11 +154,11 @@ U kunt de stijl van een lijst wijzigen door de cursor in de lijst te plaatsen en
 
 ### Koppelingen {#links}
 
-![](do-not-localize/cq55_rte_links.png)
+![Koppelingen, werkbalk](do-not-localize/cq55_rte_links.png)
 
 Een koppeling naar een URL (binnen uw website of een externe locatie) wordt gegenereerd door de vereiste tekst te markeren en vervolgens op het hyperlinkpictogram te klikken:
 
-![](do-not-localize/chlimage_1-9.png)
+![Pictogram Hyperlink](do-not-localize/chlimage_1-9.png)
 
 In een dialoogvenster kunt u de doel-URL opgeven. ook of het in een nieuw venster moet worden geopend.
 
@@ -178,11 +178,11 @@ U kunt:
 
 Als u de koppelingspositie wilt verbreken, plaatst u de cursor ergens in de koppelingstekst en klikt u op de knop [!UICONTROL Unlink] pictogram:
 
-![](do-not-localize/chlimage_1-10.png)
+![Pictogram Ontkoppelen](do-not-localize/chlimage_1-10.png)
 
 ### Ankers {#anchors}
 
-![](do-not-localize/cq55_rte_anchor.png)
+![Werkbalk Ankers](do-not-localize/cq55_rte_anchor.png)
 
 U kunt overal in de tekst een anker maken door de cursor te plaatsen of tekst te selecteren. Klik vervolgens op de knop **Anker** om het dialoogvenster te openen.
 
@@ -196,7 +196,7 @@ Het anker wordt weergegeven wanneer de component wordt bewerkt en kan nu worden 
 
 ### Zoeken en vervangen {#find-and-replace}
 
-![](do-not-localize/cq55_rte_findreplace.png)
+![Werkbalk Zoeken en vervangen](do-not-localize/cq55_rte_findreplace.png)
 
 AEM biedt beide **Zoeken** en **Vervangen** (zoeken en vervangen).
 
@@ -222,7 +222,7 @@ Afbeeldingen kunnen worden gesleept vanuit de zoekfunctie voor inhoud om ze aan 
 
 ### Spellingcontrole {#spelling-checker}
 
-![](do-not-localize/cq55_rte_spellchecker.png)
+![Spellingcontrole](do-not-localize/cq55_rte_spellchecker.png)
 
 De spellingcontrole controleert alle tekst in de huidige component.
 
@@ -240,15 +240,15 @@ Tabellen zijn beschikbaar:
 
 * Als de **Tabel** component
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+  ![Tabelcomponent](assets/chlimage_1-105.png)
 
 * Van binnen **Tekst** component
 
-   ![](do-not-localize/chlimage_1-11.png)
+  ![Tekst, werkbalk](do-not-localize/chlimage_1-11.png)
 
-   >[!NOTE]
-   >
-   >Hoewel de lijsten in RTE beschikbaar zijn, wordt het geadviseerd om te gebruiken **Tabel** gebruiken bij het maken van tabellen.
+  >[!NOTE]
+  >
+  >Hoewel de lijsten in RTE beschikbaar zijn, wordt het geadviseerd om te gebruiken **Tabel** gebruiken bij het maken van tabellen.
 
 In beide **Tekst** en **Tabel** de functionaliteit van de componentenlijst is beschikbaar via het contextmenu (gewoonlijk de juist-muis-knoop) binnen de lijst wordt geklikt; bijvoorbeeld:
 
@@ -362,7 +362,6 @@ Als u een geneste tabel maakt, wordt er een nieuwe, op zichzelf staande tabel in
 >* Windows IE: Gebruik Ctrl+klikken terwijl u de muis ingedrukt houdt (meestal links) om meerdere cellen te selecteren.
 >* Firefox: Sleep de aanwijzer om een celbereik te selecteren.
 
-
 #### Tabel verwijderen {#remove-table}
 
 ![cq55_rte_removetable](assets/cq55_rte_removetable.png)
@@ -371,7 +370,7 @@ Gebruik de optie om de tabel uit de **[!UICONTROL Text]** component.
 
 ### Speciale tekens {#special-characters}
 
-![](do-not-localize/cq55_rte_specialchars.png)
+![Werkbalk Speciale tekens](do-not-localize/cq55_rte_specialchars.png)
 
 Speciale tekens kunnen beschikbaar worden gemaakt in de RTF-editor. deze kunnen variëren afhankelijk van uw installatie.
 
@@ -381,7 +380,7 @@ Gebruik de muisaanwijzer om een vergrote versie van het teken weer te geven en k
 
 ### Bronbewerkingsmodus {#source-editing-mode}
 
-![](do-not-localize/cq55_rte_sourceedit.png)
+![Werkbalk Bronbewerkingsmodus](do-not-localize/cq55_rte_sourceedit.png)
 
 In de bronbewerkingsmodus kunt u de onderliggende HTML van de component zien en bewerken.
 

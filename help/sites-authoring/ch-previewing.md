@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 exl-id: 78673609-8cbc-4b4b-953e-56c31ea1b4ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '365'
+source-wordcount: '369'
 ht-degree: 2%
 
 ---
@@ -42,7 +42,7 @@ De toolbar ContextHub is beschikbaar op de wijze van de Voorproef. De werkbalk i
 
 1. Klik of tik op het pictogram ContextHub om de werkbalk weer te geven.
 
-   ![](do-not-localize/screen_shot_2018-03-23at093621.png)
+   ![Context Hub](do-not-localize/screen_shot_2018-03-23at093621.png)
 
 ## Functies van de UI-module {#ui-module-features}
 
@@ -68,4 +68,4 @@ De popup bekleding van een module kan vormelementen omvatten die u toelaten om d
 
 Popup overlays kunnen een pictogram omvatten dat u klikt of tikt om popup inhoud uit te breiden om het volledige browser venster of het scherm te behandelen.
 
-![](do-not-localize/chlimage_1-18.png)
+![Volledig scherm](do-not-localize/chlimage_1-18.png)

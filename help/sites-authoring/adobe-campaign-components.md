@@ -9,9 +9,9 @@ topic-tags: personalization
 discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '2826'
+source-wordcount: '2837'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ U kunt een afbeelding slepen en neerzetten vanuit de [Middelenbrowser](/help/sit
 
 Nadat de afbeelding is geüpload (en niet eerder) kunt u [plaatsen, bewerken](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) om de afbeelding naar wens uit te snijden of te roteren:
 
-![](do-not-localize/chlimage_1-10.png)
+![Werkbalk Verwerken](do-not-localize/chlimage_1-10.png)
 
 >[!NOTE]
 >
@@ -95,7 +95,7 @@ Nadat de afbeelding is geüpload (en niet eerder) kunt u [plaatsen, bewerken](/h
 
 In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. bijvoorbeeld toewijzen en zoomen:
 
-![](do-not-localize/chlimage_1-11.png)
+![Modus Volledig scherm bewerken](do-not-localize/chlimage_1-11.png)
 
 Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
@@ -132,6 +132,7 @@ Hiermee stelt u de hoogte en de breedte van de afbeelding in.
 >U moet gegevens invoeren in het dialoogvenster **Alt-tekst** in het **Geavanceerd** of de afbeelding kan niet worden opgeslagen. Het volgende foutbericht wordt weergegeven:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 In het volgende voorbeeld ziet u een component Image (Campaign) die wordt weergegeven.
 
@@ -150,8 +151,7 @@ Het bijschrift voor de koppeling. Dit is de tekst die gebruikers zien.
 Hiermee voegt u aanvullende informatie toe over het gebruik van de koppeling.
 
 * **LinkType**
-Selecteer in de vervolgkeuzelijst tussen een 
-**Aangepaste URL** en **Aangepast document**. Dit veld is verplicht. Als u Aangepaste URL selecteert, kunt u de URL van de koppeling opgeven. Als u Aangepast document selecteert, kunt u het documentpad opgeven.
+Selecteer in de vervolgkeuzelijst tussen een **Aangepaste URL** en **Aangepast document**. Dit veld is verplicht. Als u Aangepaste URL selecteert, kunt u de URL van de koppeling opgeven. Als u Aangepast document selecteert, kunt u het documentpad opgeven.
 
 * **Aanvullende URL-parameter**
 Voeg aanvullende URL-parameters toe. Klik op Item toevoegen om meerdere items toe te voegen.
@@ -161,6 +161,7 @@ Voeg aanvullende URL-parameters toe. Klik op Item toevoegen om meerdere items to
 >U moet gegevens invoeren in het dialoogvenster **Koppelingstype** in het **URL-info** of de component kan niet worden opgeslagen. Het volgende foutbericht wordt weergegeven:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 In het volgende voorbeeld ziet u een component Link (Campagne) die wordt weergegeven.
 
@@ -196,11 +197,11 @@ Wanneer u klikt om de component te vormen, selecteert u Tekst of Beeld.
 
 Selecteren **Tekst** geeft een online editor weer:
 
-![](do-not-localize/chlimage_1-12.png)
+![Tekst, werkbalk](do-not-localize/chlimage_1-12.png)
 
 Selecteren **Afbeelding** Hiermee geeft u de lokale editor voor afbeeldingen weer:
 
-![](do-not-localize/chlimage_1-13.png)
+![Afbeelding, werkbalk](do-not-localize/chlimage_1-13.png)
 
 Zie [Component Afbeelding (campagne)](#image-campaign) voor meer informatie over het werken met afbeeldingen. Zie [Component Tekst en persoonlijke voorkeur (campagne)](#text-personalization-campaign) voor meer informatie over het werken met tekst.
 
@@ -234,6 +235,7 @@ Hiermee stelt u de hoogte en breedte van de afbeelding in.
 >De **Alt-tekst** in het **Geavanceerd** is vereist of de component kan niet opslaan en u ziet het volgende foutbericht:
 >
 >`Validation failed. Verify the values of the marked fields.`
+>
 
 In het volgende voorbeeld ziet u een component Text &amp; Image (Campaign) die wordt weergegeven.
 

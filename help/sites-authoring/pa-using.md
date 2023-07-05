@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ Openen [Inhoudsinzicht](/help/sites-authoring/content-insights.md) van de consol
 1. Selecteer in de Sites-console de pagina waarvoor u Inhoudsgegevens wilt weergeven.
 1. Klik op het pictogram Analytics en Recommendations op de werkbalk.
 
-   ![](do-not-localize/chlimage_1-16a.png)
+   ![Pictogram Analytics en Recommendations](do-not-localize/chlimage_1-16a.png)
 
 ## Analyses zichtbaar in de Pagina-editor (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 

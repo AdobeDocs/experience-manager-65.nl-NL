@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 10466b49-f8bd-4c2c-8106-b0c7ba054989
 docset: aem65
 exl-id: cb2d2d0d-feb4-4b89-8325-80f735816904
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '509'
 ht-degree: 0%
 
 ---
@@ -43,31 +43,31 @@ De inhoud van een productpagina kan bijvoorbeeld een alineasysteem bevatten dat 
 
 In de ontwerpmodus wordt het hulpprogramma geminimaliseerd en kunt u de componenten configureren die toegankelijk zijn voor ontwerpen:
 
-1. Als u de ontwerpmodus wilt activeren, opent u een pagina die u wilt bewerken en gebruikt u het pictogram Sidetrap:
+1. Als u de ontwerpmodus wilt activeren, opent u een pagina die u wilt bewerken en gebruikt u het pictogram Sidekick:
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Ontwerpmodus](do-not-localize/chlimage_1.png)
 
 1. Klikken **Bewerken** over het alineasysteem (**Ontwerp van onderdeel**).
 
    ![screen_shot_2012-02-08at102726am](assets/screen_shot_2012-02-08at102726am.png)
 
-1. Er wordt een dialoogvenster geopend met een lijst van de componentgroepen die in de Sidetrap worden weergegeven, samen met de afzonderlijke componenten die ze bevatten.
+1. Er wordt een dialoogvenster geopend met een lijst van de componentgroepen die in de Sidekick worden weergegeven, samen met de afzonderlijke componenten die ze bevatten.
 
    Selecteer de gewenste onderdelen om de componenten toe te voegen of te verwijderen die beschikbaar moeten zijn in het zijpaneel.
 
    ![screen_shot_2012-02-08at103407am](assets/screen_shot_2012-02-08at103407am.png)
 
-1. In de ontwerpmodus wordt de Sidetrap geminimaliseerd. Door op de pijl te klikken kunt u de Sidetrap maximaliseren en terugkeren naar de bewerkingsmodus:
+1. De Sidekick minimaliseert in de ontwerpmodus. Door op de pijl te klikken kunt u de Sidetrap maximaliseren en terugkeren naar de bewerkingsmodus:
 
-   ![](do-not-localize/sidekick-collapsed.png)
+   ![Sidekick geminimaliseerd](do-not-localize/sidekick-collapsed.png)
 
 ## Het ontwerp van een component configureren {#configuring-the-design-of-a-component}
 
 In de ontwerpmodus kunt u ook kenmerken configureren voor de afzonderlijke componenten. Elke component heeft zijn eigen parameters, toont het volgende voorbeeld **Afbeelding** component:
 
-1. Als u de ontwerpmodus wilt activeren, opent u een pagina die u wilt bewerken en gebruikt u het pictogram Sidetrap:
+1. Als u de ontwerpmodus wilt activeren, opent u een pagina die u wilt bewerken en gebruikt u het pictogram Sidekick:
 
-   ![](do-not-localize/chlimage_1-1.png)
+   ![Ontwerpmodus - Sidekick](do-not-localize/chlimage_1-1.png)
 
 1. U kunt het ontwerp van componenten configureren.
 
@@ -77,6 +77,6 @@ In de ontwerpmodus kunt u ook kenmerken configureren voor de afzonderlijke compo
 
 1. Klikken **OK** om uw wijzigingen op te slaan.
 
-1. In de ontwerpmodus wordt de Sidetrap geminimaliseerd. Door op de pijl te klikken kunt u de Sidetrap maximaliseren en terugkeren naar de bewerkingsmodus:
+1. De Sidekick minimaliseert in de ontwerpmodus. Door op de pijl te klikken kunt u de Sidetrap maximaliseren en terugkeren naar de bewerkingsmodus:
 
-   ![](do-not-localize/sidekick-collapsed-1.png)
+   ![Sidekick geminimaliseerd](do-not-localize/sidekick-collapsed-1.png)

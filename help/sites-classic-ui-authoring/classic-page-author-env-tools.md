@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Diversen **Help** bronnen zijn rechtstreeks toegankelijk vanuit AEM:
 
 en toegang tot [Help van de werkbalken van de console](/help/sites-classic-ui-authoring/author-env-basic-handling.md#accessing-help), kunt u tot de hulp van sidekick ook toegang hebben (gebruikend ? pictogram) bij het bewerken van een pagina:
 
-![](do-not-localize/sidekick-collapsed-2.png)
+![Sidekick samengevouwen](do-not-localize/sidekick-collapsed-2.png)
 
 Of door **Help** in het dialoogvenster voor bewerken van specifieke componenten; dit zal contextgevoelige hulp tonen .
 
@@ -165,7 +165,7 @@ Verwijzingen naar directe pagina&#39;s weergeven:
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
-In bepaalde situaties zijn verdere acties beschikbaar bij Sidetrap, waaronder:
+In bepaalde situaties zijn verdere acties beschikbaar bij de Sidekick, waaronder:
 
 * [Lanceringen](/help/sites-classic-ui-authoring/classic-launches.md)
 * [Actieve kopieën](/help/sites-administering/msm.md)
@@ -188,9 +188,9 @@ De websiteconsole [biedt informatie over de huidige status van de pagina](/help/
 
 Wanneer u een pagina bewerkt met de klassieke UI, zijn er verschillende modi die kunnen worden geopend met de pictogrammen onder aan het zijpaneel:
 
-![](do-not-localize/chlimage_1-12.png)
+![Paginamodi](do-not-localize/chlimage_1-12.png)
 
-De rij met pictogrammen onder aan de Sidetrap wordt gebruikt voor het schakelen tussen modi voor het werken met de pagina&#39;s:
+De rij met pictogrammen onder aan de Sidekick wordt gebruikt voor het schakelen tussen modi voor het werken met de pagina&#39;s:
 
 * [Bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 Dit is de standaardmodus, waarmee u de pagina kunt bewerken, componenten kunt toevoegen of verwijderen en andere wijzigingen kunt aanbrengen.
@@ -209,7 +209,6 @@ In deze modus kunt u het ontwerp van de pagina bewerken door de toegankelijke co
 >* [Clientcontext](/help/sites-administering/client-context.md)
 >* Websites - hiermee opent u de websiteconsole.
 >* Opnieuw laden - De pagina wordt vernieuwd.
-
 
 ## Sneltoetsen {#keyboard-shortcuts}
 

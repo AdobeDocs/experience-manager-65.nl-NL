@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '5349'
+source-wordcount: '5390'
 ht-degree: 5%
 
 ---
@@ -178,7 +178,7 @@ U kunt aangepaste voorstellen opslaan in een aanbiedingsbibliotheek als u beslui
 
 ### Ervaringen toevoegen en verwijderen met de doelmodus {#adding-and-removing-experiences-using-targeting-mode}
 
-De stap Maken van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en ook de naam ervan wijzigen.
+De stap Maken van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en deze ook een andere naam geven.
 
 #### Ervaringen toevoegen met de doelmodus {#adding-experiences-using-targeting-mode}
 
@@ -253,7 +253,7 @@ Voer de volgende procedure uit na [starten van het doelproces](/help/sites-autho
 
 1. Klik of tik op het pictogram Doel.
 
-   ![](do-not-localize/chlimage_1.png)
+   ![Doel](do-not-localize/chlimage_1.png)
 
    De inhoud van de component is de aanbieding voor de Standaardervaring. Wanneer een component wordt gericht, zal zijn standaardknoop voor elke ervaring worden herhaald. Dit is nodig voor het bewerken van het juiste inhoudsknooppunt tijdens specifieke ontwerphandelingen. Voor deze niet-standaard ervaringen geldt het volgende: [een aangepaste aanbieding toevoegen](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) of [een bibliotheekaanbieding toevoegen](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
@@ -275,7 +275,7 @@ In de modus Doel heeft de component Doel een blauwe rand en geeft het bericht vo
 
 In de modus Bewerken heeft de component Doel een pictogram met een opsommingsteken.
 
-![](do-not-localize/chlimage_1-1.png)
+![Doelcomponent in bewerkingsmodus](do-not-localize/chlimage_1-1.png)
 
 Wanneer u componenten naar de component van het Doel sleept, zijn zij gerichte componenten.
 
@@ -296,6 +296,8 @@ Als u de doelinhoud wilt bewerken, moet u klikken of tikken **Doelstelling start
    >
    >
    >Beheerders kunnen bepalen of deze configuratie vereist is bij **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
+   >
+   >
    Als u wilt dat gebruikers een locatie moeten invoeren, schakelt u het selectievakje **Locatie forceren ** in.
 
 1. Selecteer de ervaring waarvoor u de aanbieding wilt maken.
@@ -321,7 +323,7 @@ Als u besluit dat de aanbieding voor andere ervaringen kan worden gebruikt, kunt
 
 1. Klik of tik op de aanbieding om het aanbiedingsmenu weer te geven en klik op het bewerkingspictogram.
 
-   ![](do-not-localize/chlimage_1-2.png)
+   ![Het menu Aanbieding](do-not-localize/chlimage_1-2.png)
 
 1. Bewerk de inhoud van de component.
 
@@ -338,7 +340,7 @@ U kunt geen bibliotheekaanbiedingen toevoegen aan de standaardervaring.
 
 1. Klik of tik op het mappictogram.
 
-   ![](do-not-localize/chlimage_1-3.png)
+   ![Mappictogram](do-not-localize/chlimage_1-3.png)
 
 1. Selecteer de aanbieding in de bibliotheek en klik of tik op het pictogram van het vinkje.
 
@@ -371,7 +373,7 @@ Voor informatie over het gebruiken van de console van Aanbiedingen om een herbru
 1. Selecteer de ervaring om de aangepaste aanbieding weer te geven.
 1. Klik of tik op de aangepaste aanbieding om het aanbiedingsmenu weer te geven en klik of tik op de knop **Aanbieding opslaan naar aanbiedingenbibliotheek** pictogram.
 
-   ![](do-not-localize/chlimage_1-4.png)
+   ![Voorstel opslaan in bibliotheek met voorstellen](do-not-localize/chlimage_1-4.png)
 
 1. Typ een naam voor de aanbieding, selecteer de bibliotheek waaraan u de aanbieding toevoegt, dan klik of tik het controlemerkpictogram.
 
@@ -382,7 +384,7 @@ Een bibliotheekaanbieding omzetten in een aangepaste aanbieding om de aanbieding
 1. Selecteer de ervaring om het bibliotheekaanbod weer te geven.
 1. Klik of tik op de bibliotheekaanbieding om het aanbiedingsmenu weer te geven en klik vervolgens op het pictogram Omzetten in inline-aanbieding of tik op dit pictogram.
 
-   ![](do-not-localize/chlimage_1-5.png)
+   ![Omzetten in inline aanbieding](do-not-localize/chlimage_1-5.png)
 
 #### Een bibliotheekaanbod bewerken {#editing-a-library-offer}
 
@@ -410,7 +412,7 @@ Voor informatie over motoren, zie [Richtingsmotor](/help/sites-authoring/persona
 
 Een publiek mag niet door meer dan één ervaring worden gebruikt. Er verschijnt een waarschuwingssymbool naast een ervaring wanneer het wordt toegewezen aan een publiek dat is toegewezen aan een andere ervaring.
 
-![](do-not-localize/chlimage_1-6.png)
+![Waarschuwingssymbool wanneer toegewezen aan een publiek dat is toegewezen aan een andere ervaring](do-not-localize/chlimage_1-6.png)
 
 ### Ervaringen met het publiek koppelen (AEM of Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
@@ -577,11 +579,13 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
    Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteren **Geavanceerde instellingen** toegang tot deze gegevens. Zie hoe succesmetriek in vorige lijst worden geteld en zie [Adobe Target-documentatie](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
+   >
    Er moet ten minste één doel zijn gedefinieerd.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
    >[!NOTE]
+   >
    Als er informatie ontbreekt in metrisch, omringt een rode lijn metrisch.
 
 1. Klikken **Een nieuwe metrisch toevoegen** om extra succesmetriek te vormen.
@@ -589,6 +593,7 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
    >[!NOTE]
+   >
    U kunt aanvullende doelen verwijderen door op de drie punten te klikken of erop te tikken en te klikken of te tikken **Verwijderen**. AEM vereist dat u minstens één doel hebt gedefinieerd.
 
 1. Als u meer controle wilt hebben over de manier waarop succesmetriek worden geteld, klikt u of tikt u op **Geavanceerde instellingen** toegang tot deze gegevens.
@@ -611,6 +616,7 @@ De volgende criteria bepalen de inhoud die wordt weergegeven wanneer bezoekerser
 Als er onverwachte inhoud op de pagina wordt weergegeven wanneer u een profiel laadt, controleert u de configuratie van elk item in deze lijst.
 
 >[!NOTE]
+>
 Als u A/B het testen gebruikt, wanneer het simuleren van ervaringen wordt getoond gebaseerd op verkeerspercentage. Dit wordt gecontroleerd door Adobe Target, wat tot onverwachte resultaten voor auteurs kan leiden. (De _auteuractiviteit is gesynchroniseerd met specifieke montages die herevaluatie tijdens simulatie toestaan.) De auteurs kunnen moeten verfrissen om de andere ervaringen te zien die op hun verkeersmontages worden gebaseerd.
 
 Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
@@ -621,7 +627,7 @@ Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
 1. Klik of tik op de werkbalk om te schakelen naar de modus Voorbeeld **Voorvertoning**.
 1. Voor de hulpmiddelbar, klik of tik het pictogram van de Hub van de Context.
 
-   ![](do-not-localize/chlimage_1-7.png)
+   ![Context Hub](do-not-localize/chlimage_1-7.png)
 
 1. Gebruik Context Hub om context-eigenschappen te wijzigen. Klik of tik bijvoorbeeld op de eigenschap Person om een andere gebruiker te selecteren.
 
@@ -637,7 +643,7 @@ U kunt de component van het Doel aanpassen door tot de opties van de component o
 
 1. Nadat u de doelcomponent hebt geselecteerd, klikt of tikt u in de doelcomponent op de component en vervolgens op het instellingspictogram (cog).
 
-   ![](do-not-localize/chlimage_1-8.png)
+   ![Menu Doelcomponent](do-not-localize/chlimage_1-8.png)
 
    AEM geeft het venster met opties voor de doelcomponent weer.
 
@@ -645,7 +651,7 @@ U kunt de component van het Doel aanpassen door tot de opties van de component o
 
 1. U kunt deze instellingen ook openen in de modus Volledig scherm door in het venster met opties voor de doelcomponent op het pictogram voor het volledige scherm te klikken of te tikken.
 
-   ![](do-not-localize/chlimage_1-9.png)
+   ![Venster Opties doelcomponent](do-not-localize/chlimage_1-9.png)
 
    AEM geeft het venster met opties voor de doelcomponent voor volledig scherm weer.
 
@@ -704,6 +710,7 @@ Als u Adobe Target als engine selecteert:
 </table>
 
 >[!NOTE]
+>
 Wanneer u een component selecteert en deze doelbaar maakt, vervangt AEM ook de component en injecteert een Adobe Target-component. (De Adobe Target-component wordt niet alleen gebruikt wanneer u deze handmatig aan de pagina toevoegt, maar ook wanneer u een bestaande component als doel instelt.)
 
 Als u Client Context (clientzijde) selecteert als de engine:

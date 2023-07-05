@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1524'
+source-wordcount: '1526'
 ht-degree: 1%
 
 ---
@@ -33,11 +33,11 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
 * Uw [melding](/help/sites-authoring/inbox.md) indicator (werkbalk) wordt verhoogd:
 
-   ![](do-not-localize/wf-57.png)
+  ![Aanmeldingsindicator](do-not-localize/wf-57.png)
 
 * Het object wordt aangeboden in je bericht [Inbox](/help/sites-authoring/inbox.md):
 
-   ![wf-58](assets/wf-58.png)
+  ![wf-58](assets/wf-58.png)
 
 * Wanneer u de pagina-editor gebruikt, wordt de statusbalk weergegeven:
 
@@ -48,18 +48,18 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
       * Klik/tik op het daadwerkelijke aantal om een drop-down lijst van alle toepasselijke werkschema&#39;s te openen, dan selecteer het werkschema u in de statusbar wilt tonen.
 
-   ![wf-59](assets/wf-59.png)
+  ![wf-59](assets/wf-59.png)
 
-   >[!NOTE]
-   >
-   >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden. bijvoorbeeld leden van de `workflow-users` groep.
-   >
-   >
-   >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
+  >[!NOTE]
+  >
+  >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden. bijvoorbeeld leden van de `workflow-users` groep.
+  >
+  >
+  >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
 
 * Wanneer **Tijdlijn** is geopend voor de bron, wordt de workflowstap weergegeven. Wanneer u op de waarschuwingsbanner klikt of tikt, worden ook de beschikbare acties weergegeven:
 
-   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
+  ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
 ### Een deelnemersstap voltooien {#completing-a-participant-step}
 
@@ -229,19 +229,19 @@ De workflowdetails worden weergegeven op tabbladen en de juiste acties zijn besc
 
 * **WORKITEM** tab:
 
-   ![wf-72](assets/wf-72.png)
+  ![wf-72](assets/wf-72.png)
 
 * **WORKFLOW-INFO** tab:
 
-   ![wf-73](assets/wf-73.png)
+  ![wf-73](assets/wf-73.png)
 
-   Indien [Werkstroomfasen](/help/sites-developing/workflows.md#workflow-stages) zijn geconfigureerd voor het model, kunt u de voortgang als volgt bekijken:
+  Indien [Werkstroomfasen](/help/sites-developing/workflows.md#workflow-stages) zijn geconfigureerd voor het model, kunt u de voortgang als volgt bekijken:
 
-   ![wf-107](assets/wf-107.png)
+  ![wf-107](assets/wf-107.png)
 
 * **OPMERKINGEN** tab:
 
-   ![wf-75](assets/wf-75.png)
+  ![wf-75](assets/wf-75.png)
 
 U kunt de details van het werkitem openen vanuit:
 

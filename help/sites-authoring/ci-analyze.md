@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 57cd61d5-78f2-4f8c-99ee-75e100c052ef
 docset: aem65
 exl-id: 14484a90-4e44-4c85-9411-b78ed11dc70d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '662'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Om de rapportageperiode van een pagina Inhoudscontrole te wijzigen:
 
 1. Als de tijdlijn niet boven aan de pagina wordt weergegeven, klikt of tikt u op het pictogram Tijdlijn in-/uitschakelen.
 
-   ![](do-not-localize/chlimage_1-22.png)
+   ![Tijdschema in-/uitschakelen](do-not-localize/chlimage_1-22.png)
 
 1. Als u de begindatum van de rapportageperiode wilt wijzigen, sleept u de cirkel die links van het schaduwgebied wordt weergegeven naar de gewenste begindatum.
 
@@ -92,7 +92,7 @@ Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
 1. Klik of tik het informatiepictogram voor de aanbeveling SEO.
 
-   ![](do-not-localize/chlimage_1-23.png)
+   ![Onformatiepictogram](do-not-localize/chlimage_1-23.png)
 
 1. Klik op het omcirkelde driehoekje naast het informatiepictogram.
 

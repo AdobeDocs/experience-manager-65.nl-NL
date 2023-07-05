@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 11ff8bb3-39eb-4f77-b3dc-720262fa7f3f
 docset: aem65
 exl-id: 0e13112b-d9df-4ba6-bd73-431c87890b79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '1175'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -148,7 +148,7 @@ Voor de afzonderlijke campagnes zijn twee weergaven beschikbaar:
 
    Gebruik het pictogram:
 
-   ![](do-not-localize/mcm_iconcalendarview.png)
+   ![Kalenderweergave](do-not-localize/mcm_iconcalendarview.png)
 
    Hierin wordt een lijst weergegeven van alle (grijze) aanraakpunten met een horizontaal tijdkader van de (groene) ervaringen die met dat aanraakpunt zijn verbonden:
 
@@ -166,7 +166,7 @@ Voor de afzonderlijke campagnes zijn twee weergaven beschikbaar:
 
    Gebruik het pictogram:
 
-   ![](do-not-localize/mcm_icon_listview.png)
+   ![Lijstweergave](do-not-localize/mcm_icon_listview.png)
 
    Hier worden alle ervaringen (zoals theaters en nieuwsbrieven) voor de geselecteerde campagne weergegeven:
 

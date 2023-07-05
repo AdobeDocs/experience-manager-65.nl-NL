@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '634'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
@@ -53,14 +53,13 @@ Een speciale [mode](/help/sites-authoring/author-environment-tools.md#page-modes
 >* [Video-elementen annoteren](/help/assets/managing-video-assets.md#annotate-video-assets)
 >
 
-
 ### Een component annoteren {#annotating-a-component}
 
 In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
 
 1. U kunt de modus Annotatie activeren met het pictogram op de werkbalk (rechtsboven) wanneer u een pagina bewerkt:
 
-   ![](do-not-localize/screen_shot_2018-03-22at110414.png)
+   ![Annoteren](do-not-localize/screen_shot_2018-03-22at110414.png)
 
    U kunt nu bestaande annotaties weergeven.
 
@@ -83,16 +82,17 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
    * Voer de annotatietekst in.
    * Maak een schets (lijnen en vormen) om een gebied van de component te markeren.
 
-      De cursor verandert in een kruisdraad wanneer u een schets maakt. U kunt meerdere afzonderlijke lijnen tekenen. De schetslijn geeft de annotatiekleur weer en kan een pijl, cirkel of ovaal zijn.
-   ![](do-not-localize/screen_shot_2018-03-22at110640.png)
+     De cursor verandert in een kruisdraad wanneer u een schets maakt. U kunt meerdere afzonderlijke lijnen tekenen. De schetslijn geeft de annotatiekleur weer en kan een pijl, cirkel of ovaal zijn.
+
+     ![Schets](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Kies of wijzig de kleur:
 
-   ![](do-not-localize/chlimage_1-19.png)
+     ![Kleur kiezen/wijzigen](do-not-localize/chlimage_1-19.png)
 
    * Verwijder de annotatie.
 
-   ![](do-not-localize/screen_shot_2018-03-22at110647.png)
+     ![Annotatie verwijderen](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. U kunt het dialoogvenster met annotaties sluiten door buiten het dialoogvenster te klikken of erop te tikken. Een afgekapte weergave (het eerste woord) van de annotatie wordt samen met eventuele schetsen weergegeven:
 
@@ -103,12 +103,12 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
    * Klik of tik op de tekstmarkering om de annotatie te openen. Nadat u de volledige tekst hebt geopend, kunt u de annotatie wijzigen of verwijderen.
 
       * Schetsen kunnen niet onafhankelijk van de annotatie worden verwijderd.
+
    * Verander de positie van de tekstmarkering.
    * Klik of tik op een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
    * Een component verplaatsen of kopiëren
 
       * Eventuele verwante annotaties en de bijbehorende schetsen worden ook verplaatst of gekopieerd en hun positie ten opzichte van de alinea blijft dezelfde.
-
 
 1. Tik op het pictogram Annotatie (x-symbool) rechts van de bovenste werkbalk of klik op het pictogram Annotatie om de Annotatiemodus te sluiten en terug te keren naar de eerder gebruikte modus.
 

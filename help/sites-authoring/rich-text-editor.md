@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Deze werkbalk bevat de volgende opties:
 
 ## Volledig scherm bewerken {#full-screen-editing}
 
-Tik voor op tekst gebaseerde componenten op de modus Volledig scherm op de werkbalk ![](do-not-localize/screen_shot_2018-03-21at163236.png) Hiermee opent u de RTF-editor en verbergt u de rest van de pagina-inhoud.
+Tik voor op tekst gebaseerde componenten op de modus Volledig scherm op de werkbalk ![Modus Volledig scherm bewerken](do-not-localize/screen_shot_2018-03-21at163236.png) Hiermee opent u de RTF-editor en verbergt u de rest van de pagina-inhoud.
 
 In de modus Volledig scherm worden alle geconfigureerde opties weergegeven die u kunt gebruiken voor ontwerpen. De beschikbaarheid is opties [afhankelijk van de configuratie](/help/sites-administering/rich-text-editor.md).
 

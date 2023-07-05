@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '507'
 ht-degree: 6%
 
 ---
@@ -28,7 +28,7 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 Zoeken is beschikbaar op de bovenste werkbalk:
 
-![](do-not-localize/chlimage_1-17.png)
+![Zoeken](do-not-localize/chlimage_1-17.png)
 
 Met de zoekrail kunt u:
 
@@ -61,7 +61,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
 1. Als u verder omlaag wilt boren, selecteert u het symbool Rail (linksboven) om het zijpaneel te openen **Filters en opties**.
 
-   ![](do-not-localize/screen_shot_2018-03-23at101542.png)
+   ![Filters en opties](do-not-localize/screen_shot_2018-03-23at101542.png)
 
    Volgens het middeltypeOnderzoek zal een vooraf bepaalde selectie van onderzoek/filtercriteria tonen.
 
@@ -80,7 +80,8 @@ U kunt als volgt uw bronnen zoeken en filteren:
    >
    >    * Afhankelijk van het type resource dat u hebt geselecteerd; Zo zijn bijvoorbeeld de activa- en Gemeenschapscriteria begrijpelijkerwijs gespecialiseerd.
    >    * Uw instantie als de [Zoeken in Forms](/help/sites-administering/search-forms.md) kan worden aangepast (aangepast aan de locatie in AEM).
-
+   >
+   >
 
    ![screen-shot_2019-03-05at102509](assets/screen-shot_2019-03-05at102509.png)
 

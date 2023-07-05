@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1580'
 ht-degree: 4%
 
 ---
@@ -64,7 +64,6 @@ Voordat u het overzicht van de details geeft, is er een kleine verzameling algem
 >* [Sneltoetsen bij het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
 >
-
 
 ### Uw pagina zoeken {#finding-your-page}
 
@@ -119,6 +118,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
    ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
    * De kaart wordt bedekt met een vinkje om aan te geven dat de pagina is geselecteerd.
+
    >[!NOTE]
    >
    >Eenmaal in de selectiemodus **Selecteren** wordt gewijzigd in **Deselecteren** pictogram (een kruis).
@@ -154,8 +154,9 @@ Uw pagina bewerken:
       * het selecteren van de componenten tabel (het [componentenbrowser](/help/sites-authoring/author-environment-tools.md#components-browser))
       * Sleep de vereiste component naar de pagina.
 
-      Het zijpaneel kan worden geopend (en gesloten) met:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+     Het zijpaneel kan worden geopend (en gesloten) met:
+
+     ![Zijpaneel openen](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [De inhoud van een bestaande component bewerken](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) op de pagina:
 
@@ -163,18 +164,21 @@ Uw pagina bewerken:
       * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
       * U kunt als volgt alle beschikbare acties weergeven:
 
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+     ![Modus Volledig scherm](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [De eigenschappen van een bestaande component configureren](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Configureren** (moersleutel) om het dialoogvenster te openen.
+
    * [Een component verplaatsen](/help/sites-authoring/editing-content.md#moving-a-component) ofwel:
 
       * Sleep de vereiste component naar de nieuwe locatie.
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen indien nodig.
+
    * [Kopiëren (en Plakken)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component:
 
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Kopiëren** dan **Plakken** pictogrammen naar wens.
+
    >[!NOTE]
    >
    >U kunt **Plakken** op dezelfde pagina of op een andere pagina. Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet de pagina worden vernieuwd.
@@ -182,15 +186,17 @@ Uw pagina bewerken:
    * [Verwijderen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component:
 
       * Open de werkbalk van de component met Tik of klik en gebruik vervolgens de knop **Verwijderen** pictogram.
+
    * [Annotaties toevoegen](/help/sites-authoring/annotations.md#annotations) op de pagina:
 
       * Selecteer **Annoteren** (pictogram spraakballon). Annotaties toevoegen met de opdracht **Annotatie toevoegen** (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
 
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+     ![Annoteren](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Een voorvertoning van een pagina weergeven](/help/sites-authoring/editing-content.md#preview-mode) (om te zien hoe het in het publicatiemilieu zal verschijnen)
 
       * Selecteren **Voorvertoning** op de werkbalk.
+
    * Ga terug naar de bewerkingsmodus (of selecteer een andere modus) met de opdracht **Bewerken** keuzelijst.
 
    >[!NOTE]
@@ -209,17 +215,16 @@ Er zijn twee (belangrijkste) methoden [bewerken, pagina-eigenschappen](/help/sit
       * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selectiingyourpageforfurtheraction).
 
-   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
+  ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
    1. De pagina-eigenschappen worden weergegeven. U kunt naar wens updates uitvoeren en vervolgens Opslaan gebruiken om deze bij te houden
-
 
 * Wanneer [bewerken van uw pagina](#editing-your-page-content):
 
    1. Open de **Pagina-informatie** -menu.
    1. Selecteren **Eigenschappen openen** om het dialoogvenster voor het bewerken van de eigenschappen te openen.
 
-   ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
+  ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
 ### Uw pagina publiceren (of Publiceren ongedaan maken) {#publishing-your-page-or-unpublishing}
 
@@ -233,22 +238,22 @@ Er zijn twee hoofdmethoden [publiceren, uw pagina](/help/sites-authoring/publish
       * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selectiingyourpageforfurtheraction) (biedt ook toegang tot [Later publiceren](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
-   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
+  ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Wanneer [bewerken van uw pagina](#editing-your-page-content):
 
    1. Open de **Pagina-informatie** -menu.
    1. Selecteren **Pagina publiceren**.
 
-   ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
+  ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * U kunt het publiceren van een pagina vanuit de console alleen ongedaan maken via de optie **Publicatie beheren**, die alleen beschikbaar is op de werkbalk (niet via de snelle acties).
 
-   De **Publicatie van pagina ongedaan maken** deze optie is nog steeds beschikbaar via de **Pagina-informatie** in de editor.
+  De **Publicatie van pagina ongedaan maken** deze optie is nog steeds beschikbaar via de **Pagina-informatie** in de editor.
 
-   ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
+  ![screen_shot_2018-03-21at161059](assets/screen_shot_2018-03-21at161059.png)
 
-   Zie [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md#unpublishing-pages) voor meer informatie .
+  Zie [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md#unpublishing-pages) voor meer informatie .
 
 ### De pagina verplaatsen, kopiëren en plakken of verwijderen {#move-copy-and-paste-or-delete-your-page}
 
@@ -265,12 +270,15 @@ Deze acties kunnen allemaal worden geactiveerd door:
    * Kopiëren:
 
       * Vervolgens moet u naar de nieuwe locatie navigeren en plakken.
+
    * Verplaatsen:
 
       * De wizard wordt geopend om de gegevens te verzamelen die nodig zijn om de pagina te verplaatsen. Volg de aanwijzingen op het scherm.
+
    * Verwijderen:
 
       * U wordt gevraagd de actie te bevestigen.
+
    >[!NOTE]
    >
    >Verwijderen is niet beschikbaar als een snelle handeling.
@@ -330,6 +338,7 @@ Hetzelfde basismechanisme wordt gebruikt bij het herstellen en/of vergelijken va
    * **Deze versie herstellen**
 
       * De versie wordt hersteld.
+
    * **Verschillen tonen**
 
       * De pagina wordt geopend met de verschillen (tussen de twee versies) gemarkeerd.

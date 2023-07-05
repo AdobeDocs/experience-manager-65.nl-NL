@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
 workflow-type: tm+mt
-source-wordcount: '91'
+source-wordcount: '93'
 ht-degree: 4%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 4%
 1. Selecteer uw nieuwe campagne in de linkerruit, of klik het in de juiste ruit tweemaal.
 1. Selecteer de lijstweergave met het pictogram:
 
-   ![](do-not-localize/chlimage_1-11.png)
+   ![Lijstweergave](do-not-localize/chlimage_1-11.png)
 
 1. Klikken **Nieuw...**
 1. U kunt de **Titel**, **Naam** en type ervaring die moet worden opgedaan; in dit geval test&amp;Target-aanbieding.

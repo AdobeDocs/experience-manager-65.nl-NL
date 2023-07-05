@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: c96f83b84ed1473aee0ddcca08a0e585ec088aa1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '2192'
+source-wordcount: '2200'
 ht-degree: 0%
 
 ---
@@ -56,14 +56,13 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 >* Betere implementatieopties voor toepassingen van één pagina
 >* AT.js bevat de componenten die in target.js inbegrepen waren, zodat is er niet meer een vraag aan doel.
 
-
 <!-- OLD URL WHICH IS 404 https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/mbox-implement/mbox-download.html -->
 
 ### Voorziene eigenschappen van doelframework {#provisioned-target-framework-properties}
 
 Het provisioned Kader van het Doel dat de Opt-in tovenaar creeert wordt gevormd om contextgegevens van de opslag van de Gegevens van het Profiel te verzenden. De pagina- en geslachtsgegevensitems van de winkel worden standaard naar Target verzonden. Uw oplossing vereist waarschijnlijk extra parameters om worden verzonden.
 
-![chlimage_1-158](assets/chlimage_1-158.png)
+![Voorlopig doelframework](assets/chlimage_1-158.png)
 
 U kunt het framework zodanig configureren dat aanvullende contextgegevens naar Target worden verzonden, zoals beschreven in [Een doelframework toevoegen](/help/sites-administering/target-configuring.md#adding-a-target-framework).
 
@@ -93,7 +92,6 @@ Hiervoor geeft u op met welke A4T-cloudconfiguratie uw Adobe Target-cloudconfigu
    1. De eigenschap instellen **disable** tot **false**.
    1. Tik of klik op **Alles opslaan**.
 
-
 #### Dialoogvenster Configuratie A4T-analyse {#a4t-analytics-config-dialog}
 
 ```xml
@@ -109,8 +107,11 @@ Klikken **OK**. Wanneer u inhoud aanwijst met Adobe Target, kunt u [selecteer uw
 Handmatig integreren met Adobe Target in plaats van de wizard Optie gebruiken.
 
 >[!NOTE]
+>
 het doelbibliotheekbestand, [AT.JS](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/mboxcreate-atjs/), is een nieuwe implementatiebibliotheek voor Adobe Target die is ontworpen voor zowel gangbare webimplementaties als toepassingen die uit één pagina bestaan. Adobe raadt u aan AT.js te gebruiken in plaats van mbox.js als clientbibliotheek.
+>
 AT.js biedt verschillende verbeteringen aan ten opzichte van de bibliotheek mbox.js:
+>
 * Verbeterde laadtijden voor webimplementaties
 * Verbeterde beveiliging
 * Betere implementatieopties voor toepassingen van één pagina
@@ -146,12 +147,13 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
    ![AdobeTargetSettings](assets/adobe-target-settings.jpg)
 
    >[!NOTE]
+   >
    Wanneer het vormen van A4T met AEM, kunt u een verwijzing van de Configuratie zien ontbrekende ingang. Ga als volgt te werk om het analyseframework te kunnen selecteren:
+   >
    1. Navigeren naar **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
    1. Navigeren naar **/libs/cq/analytics/components/testandtargetPage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. De eigenschap instellen **disable** tot **false**.
    1. Tik of klik op **Alles opslaan**.
-
 
 1. Geef in het dialoogvenster waarden op voor deze eigenschappen.
 
@@ -169,9 +171,13 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
    * **Aangepaste AT.js**: Laat leeg als u het vak DTM hebt ingeschakeld of als u de standaard-AT.js wilt gebruiken. U kunt ook uw aangepaste AT.js uploaden. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
 
    >[!NOTE]
+   >
    Wanneer u zich aanmeldt bij de Adobe Target-configuratietovenaar, wordt Accurate gericht inschakelen.
+   >
    Nauwkeurige het richten betekent dat de configuratie van de wolkendienst op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
+   >
    Nauwkeurige het richten wordt altijd toegelaten op de auteursinstantie. Op de publicatie-instantie kunt u er echter voor kiezen om nauwkeurig afstemmen globaal uit te schakelen door het vinkje naast Accurate Targeting in de cloudserviceconfiguratie (**http://localhost:4502/etc/cloudservices.html**). U kunt nauwkeurige het richten voor individuele componenten ook nog uitzetten ongeacht uw plaatsen in de configuratie van de wolkendienst.
+   >
    Als u ***reeds*** Als u deze instelling wijzigt, hebben de wijzigingen geen invloed op de componenten die u hebt gemaakt. Wijzig deze componenten rechtstreeks.
 
 1. Klikken **Verbinden met doel** om de verbinding met Doel te initialiseren. Als de verbinding tot stand is gebracht, wordt het bericht **Verbinding gelukt** wordt weergegeven. Klikken **OK** op het bericht en vervolgens **OK** in het dialoogvenster.
@@ -187,26 +193,28 @@ U kunt veelvoudige kaders voor één enkele configuratie van het Doel tot stand 
 1. Voor uw de configuratiepagina van het Doel, klik **+** (plusteken) naast Beschikbare kaders.
 1. Geef in het dialoogvenster Kader maken een **Titel**, selecteert u de **Adobe Target Framework** en klik op **Maken**.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+   ![Dialoogvenster Framework maken](assets/chlimage_1-161.png)
 
-   De pagina Framework wordt geopend. Sidetrap biedt componenten die informatie van de [Clientcontext](/help/sites-administering/client-context.md) of [ContextHub](/help/sites-developing/ch-configuring.md) dat u kunt toewijzen.
+   De pagina Framework wordt geopend. Sidekick verstrekt componenten die informatie van de [Clientcontext](/help/sites-administering/client-context.md) of [ContextHub](/help/sites-developing/ch-configuring.md) dat u kunt toewijzen.
 
-   ![chlimage_1-162](assets/chlimage_1-162.png)
+   ![Componenten voor framework](assets/chlimage_1-162.png)
 
 1. Sleep de component van de Context van de Cliënt die de gegevens vertegenwoordigt die u voor afbeelding aan het dalingsdoel wilt gebruiken. U kunt ook de **ContextHub Store** aan het framework.
 
    >[!NOTE]
+   >
    Bij toewijzing worden parameters via eenvoudige tekenreeksen aan een box doorgegeven. U kunt geen series van ContextHub in kaart brengen.
 
    Bijvoorbeeld om te gebruiken **Profielgegevens** over uw sitebezoekers om uw doelcampagne te beheren, sleept u de **Profielgegevens** naar de pagina. De variabelen van profielgegevens die voor afbeelding aan de parameters van het Doel beschikbaar zijn verschijnen.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+   ![profielgegevens](assets/chlimage_1-163.png)
 
 1. Selecteer de variabelen die u zichtbaar wilt maken voor het Adobe Target-systeem door de optie **Delen** in de desbetreffende kolommen.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+   ![Delen](assets/chlimage_1-164.png)
 
    >[!NOTE]
+   >
    Het synchroniseren van parameters is slechts één manier - van AEM naar Adobe Target.
 
 Uw framework is gemaakt. Als u het framework wilt repliceren naar de publicatie-instantie, gebruikt u de opdracht **Framework activeren** van het hulpwerktuig.
@@ -216,8 +224,12 @@ Uw framework is gemaakt. Als u het framework wilt repliceren naar de publicatie-
 Koppel uw [AEM](/help/sites-authoring/activitylib.md) met uw doelwolkenconfiguratie zodat u de activiteiten in [Adobe Target](https://experienceleague.adobe.com/docs/target/using/experiences/offers/manage-content.html).
 
 >[!NOTE]
+>
 Welke soorten activiteiten beschikbaar zijn, wordt bepaald door:
+>
+>
 * Als de **alleen_xt** Deze optie is ingeschakeld in de Adobe Target-agent (clientcode) die aan de AEM zijde wordt gebruikt om verbinding te maken met Adobe Target. Vervolgens kunt u **alleen** XT-activiteiten in AEM.
+>
 * Als de **alleen_xt** optie is **niet** ingeschakeld in de Adobe Target-huurder (clientcode), kunt u vervolgens **beide** XT- en A/B-activiteiten in AEM.
 >
 **Aanvullende opmerking:** **alleen_xt** Deze optie is een instelling die wordt toegepast op een bepaalde doelgebruiker (clientcode) en kan alleen rechtstreeks in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
@@ -234,17 +246,19 @@ Wanneer u een pagina aan het framework koppelt, nemen de onderliggende pagina&#3
 1. Tikken/klikken **Bewerken**.
 1. Tikken/klikken **Configuratie toevoegen** krachtens **Configuraties van Cloud Servicen** en selecteert u **Adobe Target**.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+   ![Configuratie toevoegen](assets/chlimage_1-165.png)
 
 1. Selecteer het framework dat u wilt gebruiken onder **Configuratieverwijzing**.
 
    >[!NOTE]
+   >
    Zorg ervoor dat u de specifieke **kader** die u hebt gemaakt en niet de doelwolkenconfiguratie waaronder deze is gemaakt.
 
 1. Tikken/klikken **Gereed**.
 1. Activeer de hoofdpagina van de website zodat u deze naar de publicatieserver kopieert. (Zie [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]
+   >
    Als het framework dat u aan de pagina hebt gekoppeld nog niet is geactiveerd, wordt een wizard geopend waarmee u het framework ook kunt publiceren.
 
 ## Problemen met doelverbinding oplossen {#troubleshooting-target-connection-problems}

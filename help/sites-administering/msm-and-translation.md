@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
 
-![chlimage_1-71](assets/chlimage_1-71a.png)
+![Diagram dat belangrijkste concepten MSM en Vertaling toont](assets/chlimage_1-71a.png)
 
 >[!NOTE]
 >
@@ -61,9 +61,8 @@ In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet a
 >Voor alle gebruiksgevallen is het raadzaam de volgende aanbevolen procedures te lezen:
 >
 >* [Beste praktijken voor MSM](/help/sites-administering/msm-best-practices.md); met name:
-   >
-   >   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
-   >   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
+>   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
 >
 >* [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md)
-

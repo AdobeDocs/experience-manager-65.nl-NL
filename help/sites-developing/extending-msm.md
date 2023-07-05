@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '2575'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,6 @@ Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitb
 >* [Configuraties van blauwdruk voor beheer op meerdere locaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-blueprint-configurations)
 >* [Uitrolconfiguraties voor beheer op meerdere locaties](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/restructuring/sites-repository-restructuring-in-aem-6-5.html#multi-site-manager-rollout-configurations)
 
-
 >[!CAUTION]
 >
 >De beheer van meerdere sites en de bijbehorende API worden gebruikt bij het ontwerpen van een website. Ze zijn dus alleen bedoeld voor gebruik in een auteursomgeving.
@@ -50,13 +49,13 @@ Beheer van meerdere sites bestaat uit de volgende pakketten:
 
 De belangrijkste MSM API-objecten hebben de volgende interactie (zie ook [Gebruikte termen](/help/sites-administering/msm.md#terms-used)):
 
-![chlimage_1-73](assets/chlimage_1-73.png)
+![Belangrijkste MSM API-objecten](assets/chlimage_1-73.png)
 
 * **`Blueprint`**
 
-   A `Blueprint` (zoals in [blauwdrukconfiguratie](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) geeft de pagina&#39;s aan waarvan een live kopie inhoud kan overnemen.
+  A `Blueprint` (zoals in [blauwdrukconfiguratie](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)) geeft de pagina&#39;s aan waarvan een live kopie inhoud kan overnemen.
 
-   ![chlimage_1-74](assets/chlimage_1-74.png)
+  ![Blauwdruk](assets/chlimage_1-74.png)
 
    * Het gebruik van een blauwdrukconfiguratie ( `Blueprint`) is optioneel, maar:
 
@@ -66,7 +65,7 @@ De belangrijkste MSM API-objecten hebben de volgende interactie (zie ook [Gebrui
 
 * **`LiveRelationship`**
 
-   De `LiveRelationship` Hiermee geeft u de verbinding (relatie) op tussen een bron in de actieve kopieervertakking en de equivalente bron/blauwdrukbron.
+  De `LiveRelationship` Hiermee geeft u de verbinding (relatie) op tussen een bron in de actieve kopieervertakking en de equivalente bron/blauwdrukbron.
 
    * De relaties worden gebruikt bij het realiseren van overerving en rollout.
    * `LiveRelationship` objecten bieden toegang (verwijzingen) tot de rollout-configuraties ( `RolloutConfig`), `LiveCopy`, en `LiveStatus` objecten die verband houden met de relatie.
@@ -75,7 +74,7 @@ De belangrijkste MSM API-objecten hebben de volgende interactie (zie ook [Gebrui
 
 * **`LiveCopy`**
 
-   `LiveCopy` bevat de configuratiedetails voor de relaties ( `LiveRelationship`) tussen de bronnen van de live kopie en de bron-/blauwdrukbronnen ervan.
+  `LiveCopy` bevat de configuratiedetails voor de relaties ( `LiveRelationship`) tussen de bronnen van de live kopie en de bron-/blauwdrukbronnen ervan.
 
    * Gebruik de `LiveCopy` klasse voor toegang tot het pad van de pagina, het pad van de bron-/blauwdrukpagina, de rollout-configuraties en of onderliggende pagina&#39;s ook in de `LiveCopy`.
 
@@ -83,21 +82,21 @@ De belangrijkste MSM API-objecten hebben de volgende interactie (zie ook [Gebrui
 
 * **`LiveStatus`**
 
-   `LiveStatus` objecten bieden toegang tot de runtimestatus van een `LiveRelationship`. Wordt gebruikt om de synchronisatiestatus van een live kopie te controleren.
+  `LiveStatus` objecten bieden toegang tot de runtimestatus van een `LiveRelationship`. Wordt gebruikt om de synchronisatiestatus van een live kopie te controleren.
 
 * **`LiveAction`**
 
-   A `LiveAction` is een actie die op elk middel wordt uitgevoerd dat bij de rollout betrokken is.
+  A `LiveAction` is een actie die op elk middel wordt uitgevoerd dat bij de rollout betrokken is.
 
    * LiveActions wordt slechts geproduceerd door RolloutConfigs.
 
 * **`LiveActionFactory`**
 
-   Creates `LiveAction` objecten gegeven `LiveAction` configuratie. Configuraties worden opgeslagen als bronnen in de opslagplaats.
+  Creates `LiveAction` objecten gegeven `LiveAction` configuratie. Configuraties worden opgeslagen als bronnen in de opslagplaats.
 
 * **`RolloutConfig`**
 
-   De `RolloutConfig` bevat een lijst met `LiveActions`te gebruiken wanneer deze wordt geactiveerd. De `LiveCopy` erft de `RolloutConfig` en het resultaat is aanwezig in de `LiveRelationship`.
+  De `RolloutConfig` bevat een lijst met `LiveActions`te gebruiken wanneer deze wordt geactiveerd. De `LiveCopy` erft de `RolloutConfig` en het resultaat is aanwezig in de `LiveRelationship`.
 
    * Voor het eerst dat een live kopie wordt ingesteld, wordt ook een RolloutConfig gebruikt (die de LiveActions activeert).
 
@@ -105,8 +104,8 @@ De belangrijkste MSM API-objecten hebben de volgende interactie (zie ook [Gebrui
 
 Creeer de acties van de douanesynchronisatie om met uw rollout configuraties te gebruiken. Maak een synchronisatiehandeling wanneer de [geïnstalleerde handelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions) voldoet niet aan uw specifieke toepassingsvereisten. Hiertoe maakt u twee klassen:
 
-* De uitvoering van de [ `com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface die de handeling uitvoert.
-* Een component OSGI die de [ `com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) en maakt instanties van uw `LiveAction` klasse.
+* De uitvoering van de [`com.day.cq.wcm.msm.api.LiveAction`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveAction.html) interface die de handeling uitvoert.
+* Een component OSGI die de [`com.day.cq.wcm.msm.api.LiveActionFactory`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveActionFactory.html) en maakt instanties van uw `LiveAction` klasse.
 
 De `LiveActionFactory` maakt instanties van de `LiveAction` klasse voor een bepaalde configuratie:
 
@@ -147,9 +146,9 @@ public LiveAction createAction(Resource resource) throws WCMException {
 
 De volgende objecten worden opgegeven als parameters van de `execute` methode `LiveAction` object:
 
-* A [ `Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) object dat de bron van de actieve kopie vertegenwoordigt.
+* A [`Resource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) object dat de bron van de actieve kopie vertegenwoordigt.
 * A `Resource` object dat het doel van de actieve kopie vertegenwoordigt.
-* De [ `LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) -object voor de live kopie.
+* De [`LiveRelationship`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/msm/api/LiveRelationship.html) -object voor de live kopie.
 * De `autoSave` waarde geeft aan of uw `LiveAction` moeten wijzigingen opslaan die in de gegevensopslagruimte zijn aangebracht.
 
 * De reset-waarde geeft de rollout reset-modus aan.
@@ -166,7 +165,7 @@ Node sourcenode = source.adaptTo(javax.jcr.Node.class);
 
 >[!NOTE]
 >
->De `Resource` argumenten kunnen `null` of `Resources` objecten die niet worden aangepast aan `Node` objecten, zoals [ `NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objecten.
+>De `Resource` argumenten kunnen `null` of `Resources` objecten die niet worden aangepast aan `Node` objecten, zoals [`NonExistingResource`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/NonExistingResource.html) objecten.
 
 ## Een nieuwe rollout-configuratie maken {#creating-a-new-rollout-configuration}
 
@@ -205,7 +204,6 @@ Een nieuwe rollout-configuratie maken:
    >* Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
    >* Breng wijzigingen aan in `/apps`
 
-
 1. Krachtens deze **Maken** een knooppunt met de volgende eigenschappen:
 
    * **Naam**: De knooppuntnaam van de rollout configuratie. md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow`.
@@ -213,17 +211,14 @@ Een nieuwe rollout-configuratie maken:
 
 1. Voeg de volgende eigenschappen toe aan dit knooppunt:
    * **Naam**: `jcr:title`
-
-      **Type**: `String`
-      **Waarde**: Een identificerende titel die in UI zal verschijnen.
+     **Type**: `String`
+     **Waarde**: Een identificerende titel die in UI zal verschijnen.
    * **Naam**: `jcr:description`
-
-      **Type**: `String`
-      **Waarde**: Een optionele beschrijving.
+     **Type**: `String`
+     **Waarde**: Een optionele beschrijving.
    * **Naam**: `cq:trigger`
-
-      **Type**: `String`
-      **Waarde**: De [Rollout Trigger](/help/sites-administering/msm-sync.md#rollout-triggers) te gebruiken. Selecteer  vanuit:
+     **Type**: `String`
+     **Waarde**: De [Rollout Trigger](/help/sites-administering/msm-sync.md#rollout-triggers) te gebruiken. Selecteer  vanuit:
       * `rollout`
       * `modification`
       * `publish`
@@ -639,7 +634,7 @@ De taallijst wordt opgeslagen onder de `/libs/wcm/core/resources/languages` knoo
 * De `country` eigenschap of the node slaat de volledige naam van het land voor de code op.
 * Wanneer de knooppuntnaam slechts uit een taalcode (zoals `en`), de landgoederen `*`en een aanvullende `defaultCountry` in de eigenschap wordt de code van het taalland opgeslagen om aan te geven welk land moet worden gebruikt.
 
-![chlimage_1-76](assets/chlimage_1-76.png)
+![Taaldefinitie](assets/chlimage_1-76.png)
 
 De talen wijzigen:
 
@@ -648,7 +643,7 @@ De talen wijzigen:
 
    Geef een naam op voor de nieuwe map `wcm`.
 
-1. Herhaal de vorige stap om de `/apps/wcm/core` mapstructuur. Een knooppunt van het type maken `sling:Folder` in `core` gebeld `resources`. <!-- ![chlimage_1-77](assets/chlimage_1-77.png) -->
+1. Herhaal de vorige stap om de `/apps/wcm/core` mapstructuur. Een knooppunt van het type maken `sling:Folder` in `core` gebeld `resources`. <!-- ![Resources](assets/chlimage_1-77.png) -->
 
 1. Klik met de rechtermuisknop op de knop `/libs/wcm/core/resources/languages` knoop en klik **Kopiëren**.
 1. Klik met de rechtermuisknop op de knop `/apps/wcm/core/resources` map en klik op **Plakken**. Wijzig de onderliggende knooppunten naar wens.
@@ -656,7 +651,7 @@ De talen wijzigen:
 1. Klikken **Gereedschappen**, **Bewerkingen** dan **Webconsole**. Van deze console klik **OSGi** vervolgens **Configuratie**.
 1. Zoeken en klikken **Day CQ WCM Language Manager** en wijzigt u de waarde van **Taallijst** tot `/apps/wcm/core/resources/languages`en klik vervolgens op **Opslaan**.
 
-   ![chlimage_1-78](assets/chlimage_1-78.png)
+   ![Day CQ WCM Language Manager](assets/chlimage_1-78.png)
 
 ## MSM-vergrendelingen configureren op pagina-eigenschappen (interface met aanraakbediening) {#configuring-msm-locks-on-page-properties-touch-enabled-ui}
 
@@ -693,7 +688,7 @@ Of een pagina-eigenschap moet worden geïmplementeerd en, afhankelijk van het an
       * **Type**: `String`
 
       * **Waarde**: houder is van de naam van het betrokken goed (en vergelijkbaar is met de waarde van het goed) `name`; zie bijvoorbeeld
-         `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
+        `/libs/foundation/components/page/cq:dialog/content/items/tabs/items/basic/items/column/items/title/items/title`
 
 Wanneer `cq-msm-lockable` is gedefinieerd, heeft het breken/sluiten van de keten op de volgende manier interactie met MSM:
 
@@ -702,12 +697,12 @@ Wanneer `cq-msm-lockable` is gedefinieerd, heeft het breken/sluiten van de keten
    * **Relatief** (bijvoorbeeld `myProperty` of `./myProperty`)
 
       * de eigenschap wordt toegevoegd en verwijderd uit `cq:propertyInheritanceCancelled`.
+
    * **Absoluut** (bijvoorbeeld `/image`)
 
       * Als u de keten breekt, wordt de overerving geannuleerd door het toevoegen van de `cq:LiveSyncCancelled` mixen naar `./image` en instellen `cq:isCancelledForChildren` tot `true`.
 
       * als de keten wordt gesloten , wordt de overerving hersteld .
-
 
 >[!NOTE]
 >

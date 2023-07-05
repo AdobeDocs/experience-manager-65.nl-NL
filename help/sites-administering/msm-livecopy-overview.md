@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ De **Overzicht van live kopiëren** kan worden geopend vanuit de **Verwijzingen*
 1. In de **Sites** console, [navigeer naar uw blauwdrukpagina en selecteer deze](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)** en selecteert u **Actieve kopieën**.
 
-   ![chlimage_1-359](assets/chlimage_1-359.png)
+   ![Verwijzingen, deelvenster - Live kopieën](assets/chlimage_1-359.png)
 
    >[!NOTE]
    >
@@ -60,7 +60,7 @@ De **Overzicht van live kopiëren** kan worden geopend wanneer u de eigenschappe
 1. Openen **Eigenschappen** voor de juiste blauwdrukpagina.
 1. Open de **Blauwdruk** tab - the **Overzicht van live kopiëren** Deze optie wordt weergegeven in de bovenste werkbalk:
 
-   ![chlimage_1-360](assets/chlimage_1-360.png)
+   ![Tabblad Vervagen - Overzicht van actieve kopie](assets/chlimage_1-360.png)
 
 1. Selecteren **Overzicht van live kopiëren** om het overzicht van alle actieve kopieën met betrekking tot de huidige blauwdruk weer te geven en te gebruiken.
 
@@ -81,7 +81,7 @@ De **Overzicht van live kopiëren** kan ook worden gebruikt om acties op het lev
 
 Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
-![chlimage_1-361](assets/chlimage_1-361.png)
+![Geselecteerde vervaging - beschikbare handelingen](assets/chlimage_1-361.png)
 
 * Bewerken
 
@@ -95,7 +95,7 @@ Wanneer u een blauwdrukpagina selecteert, zijn de volgende acties beschikbaar:
 
 Wanneer u een pagina voor live kopiëren selecteert, zijn de volgende acties beschikbaar:
 
-![chlimage_1-362](assets/chlimage_1-362.png)
+![Live kopiëren pagina geselecteerd - handelingen beschikbaar](assets/chlimage_1-362.png)
 
 * Bewerken
 
@@ -136,10 +136,10 @@ De **Relationistatiestatus** console heeft twee tabbladen die een reeks functies
 
 Dit tabblad bevat gedetailleerde informatie over de status van de relatie tussen de blauwdruk en de live kopie:
 
-![chlimage_1-363](assets/chlimage_1-363.png)
+![Relatie statusinformatie](assets/chlimage_1-363.png)
 
 ### Informatie over live kopiëren {#live-copy-information}
 
 Op dit tabblad kunt u de configuratie van de live kopie weergeven en bewerken:
 
-![chlimage_1-364](assets/chlimage_1-364.png)
+![Informatie over live kopiëren](assets/chlimage_1-364.png)

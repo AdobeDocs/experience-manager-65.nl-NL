@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: 7f595bec8ea138d5a73a17d0548320a31544dcd1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '1018'
+source-wordcount: '1040'
 ht-degree: 13%
 
 ---
@@ -41,6 +41,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    * **Lanceringen**:
 
       1. Selecteren **Starten maken** op de werkbalk om de wizard te openen.
+
    * **Sites**:
 
       1. Selecteren **Maken** van de werkbalk om het selectievak te openen.
@@ -59,7 +60,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    Herhaal deze bewerking zo nodig.
 
-   ![chlimage_1-225](assets/chlimage_1-225.png)
+   ![Bron selecteren en pagina&#39;s toevoegen](assets/chlimage_1-225.png)
 
    >[!NOTE]
    >
@@ -77,7 +78,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    Doorgaan met **Volgende**.
 
-   ![chlimage_1-226](assets/chlimage_1-226.png)
+   ![Opgeven of pagina&#39;s moeten worden opgenomen](assets/chlimage_1-226.png)
 
 1. In de **Eigenschappen** stap van de wizard die u kunt opgeven:
 
@@ -86,11 +87,11 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    * **een nieuwe sjabloon gebruiken om de pagina te vervangen**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
    * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van [live kopie](/help/sites-administering/msm.md).
 
-      Deze optie is standaard geselecteerd.
+     Deze optie is standaard geselecteerd.
 
    * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
-   ![chlimage_1-227](assets/chlimage_1-227.png)
+   ![Eigenschappen opgeven](assets/chlimage_1-227.png)
 
 1. Gebruiken **Maken** om het proces te voltooien en uw nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
@@ -101,22 +102,20 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
 ### Starten met nieuwe sjabloon maken {#create-launch-with-new-template}
 
-Wanneer [starten](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) U kunt kiezen of u een nieuwe sjabloon wilt gebruiken:
-
-**een nieuwe sjabloon gebruiken om de pagina te vervangen**
+Wanneer [starten](/help/sites-authoring/launches-creating.md#create-launch-with-new-template) U kunt kiezen of u een nieuwe sjabloon wilt gebruiken met de optie: **een nieuwe sjabloon gebruiken om de pagina te vervangen**
 
 >[!CAUTION]
 >
 >Deze optie is alleen beschikbaar wanneer u een opstart maakt via het dialoogvenster **Sites** console. Deze functie is niet beschikbaar wanneer u een opstart maakt via de **Starten** console.
 
-![chlimage_1-228](assets/chlimage_1-228.png)
+![Een nieuwe sjabloon gebruiken om de pagina te vervangen](assets/chlimage_1-228.png)
 
 Selecteer deze optie:
 
 * de andere beschikbare opties bijwerken;
 * Neem een nieuwe stap op waarin u de vereiste sjabloon kunt selecteren.
 
-![chlimage_1-229](assets/chlimage_1-229.png)
+![Sjabloon selecteren](assets/chlimage_1-229.png)
 
 >[!CAUTION]
 >
@@ -139,11 +138,11 @@ Een geneste opstart maken vanuit de **Starten** console is in wezen het zelfde a
 1. In de **Starten** console selecteren **Maken**.
 1. Selecteer **Pagina&#39;s toevoegen** en ga naar de startvertakking door `/content/launches` in het filter op te geven. Selecteer de vereiste start en bevestig dit met **Selecteren**:
 
-   ![chlimage_1-230](assets/chlimage_1-230.png)
+   ![Starten selecteren](assets/chlimage_1-230.png)
 
 1. Doorgaan met **Volgende** en de **Eigenschappen** zoals bij elke andere lancering.
 
-   ![chlimage_1-231](assets/chlimage_1-231.png)
+   ![Eigenschappen opgeven](assets/chlimage_1-231.png)
 
 #### Een geneste start maken - Sites-console {#creating-a-nested-launch-sites-console}
 

@@ -10,9 +10,9 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '754'
+source-wordcount: '773'
 ht-degree: 1%
 
 ---
@@ -48,7 +48,6 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 >* [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor meer informatie over automatische promotie en publicatie.
 >
 
-
 U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** console:
 
 1. Open:
@@ -60,17 +59,18 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
       1. Selecteren **Starten** (bv. Startpagina&#39;s (1)) om een lijst weer te geven met de specifieke lanceringen.
       1. Selecteer de specifieke lancering om de beschikbare acties te tonen.
       1. Selecteren **Starten bevorderen** om de wizard te openen.
+
    * de **Starten** console:
 
       1. Selecteer de start (tik op de miniatuur of klik erop).
       1. Selecteren **Bevorderen**.
-
 
 1. In de eerste stap kunt u het volgende opgeven:
 
    * **Doel**
 
       * **Starten na promotie verwijderen**
+
    * **Scope**
 
       * **Volledige introductie bevorderen**
@@ -89,7 +89,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
 1. Selecteren **Volgende** om verder te gaan.
 1. U kunt de pagina&#39;s bekijken die u wilt promoten. Deze zijn afhankelijk van het gekozen paginabereik:
 
-   ![chlimage_1-102](assets/chlimage_1-102.png)
+   ![Te promoten pagina&#39;s controleren](assets/chlimage_1-102.png)
 
 1. Selecteren **Bevorderen**.
 
@@ -97,7 +97,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
 
 Wanneer u een startpagina bewerkt, wordt **Starten bevorderen** actie is ook beschikbaar via **Pagina-informatie**. Hierdoor wordt de wizard geopend die de benodigde informatie verzamelt.
 
-![chlimage_1-103](assets/chlimage_1-103.png)
+![Starten bevorderen](assets/chlimage_1-103.png)
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Wanneer u een startpagina bewerkt, wordt **Starten bevorderen** actie is ook bes
 
 Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de bronnen, inclusief de hoofdbron (productie).
 
-![chlimage_1-104](assets/chlimage_1-104.png)
+![Overzicht van het promoten van een geneste introductie](assets/chlimage_1-104.png)
 
 1. Zoals met [Een geneste start maken](#creatinganestedlaunchlaunchwithinalaunch), navigeer naar en selecteer de vereiste start in een van de **Starten** of de **Verwijzingen** spoorwegen.
 1. Selecteren **Starten bevorderen** om de wizard te openen.
@@ -121,6 +121,7 @@ U kunt een van de bronnen promoten.
 
       * **Starten na promotie verwijderen**
 Na de promotie worden de geselecteerde lancering, en om het even welke genestelde lanceringen binnen het, geschrapt.
+
    * **Toepassingsgebied**
 Hier kunt u kiezen of u de volledige opstart wilt bevorderen of alleen pagina&#39;s die daadwerkelijk zijn bewerkt. In het laatste geval kunt u opgeven of u subpagina&#39;s wilt opnemen of uitsluiten. De standaardconfiguratie is dat alleen paginawijzigingen voor de huidige pagina worden bevorderd:
 
@@ -129,12 +130,12 @@ Hier kunt u kiezen of u de volledige opstart wilt bevorderen of alleen pagina&#3
       * **Huidige pagina promoten**
       * **Huidige pagina en subpagina&#39;s promoten**
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![Instellingen voor het promoten van een opstart](assets/chlimage_1-105.png)
 
 1. Selecteren **Volgende**.
 1. De details van de aanbieding bekijken voordat je de selectie maakt **Bevorderen**:
 
-   ![chlimage_1-106](assets/chlimage_1-106.png)
+   ![Details bekijken en promoten](assets/chlimage_1-106.png)
 
    >[!NOTE]
    >
@@ -142,7 +143,7 @@ Hier kunt u kiezen of u de volledige opstart wilt bevorderen of alleen pagina&#3
 
 1. Uw wijzigingen worden bevorderd en weerspiegeld in de **Starten** console:
 
-   ![chlimage_1-107](assets/chlimage_1-107.png)
+   ![Startconsole](assets/chlimage_1-107.png)
 
 ## Promotiepagina&#39;s verwerken met AEM-workflow {#processing-promoted-pages-using-aem-workflow}
 
@@ -156,4 +157,4 @@ Als u automatisch een workflow wilt starten wanneer pagina&#39;s worden geconver
 
 U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
 
-![chlimage_1-108](assets/chlimage_1-108.png)
+![Workflow starten](assets/chlimage_1-108.png)

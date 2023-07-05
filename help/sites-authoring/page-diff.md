@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
@@ -52,7 +52,7 @@ Als u bijvoorbeeld versies vergelijkt, wordt de huidige versie links weergegeven
 
 De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk boven in het browservenster.
 
-![chlimage_1-109](assets/chlimage_1-109.png)
+![Bron weergegeven in koptekst](assets/chlimage_1-109.png)
 
 Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
@@ -78,7 +78,7 @@ Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor e
 
 De geselecteerde zijde vult het gehele venster, maar de balk blijft boven aan de pagina zodat u tussen de twee pagina&#39;s kunt schakelen.
 
-![chlimage_1-110](assets/chlimage_1-110.png)
+![Met de balk boven kunt u schakelen tussen pagina&#39;s](assets/chlimage_1-110.png)
 
 U kunt de volledige schermweergave ook sluiten door op het pictogram Volledig scherm afsluiten te klikken.
 

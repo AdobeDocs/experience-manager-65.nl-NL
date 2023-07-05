@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '833'
+source-wordcount: '846'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,7 @@ Met Launches kunt u:
 
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+  ![Overzicht van lanceeracties](assets/chlimage_1-111.png)
 
 * De startconfiguratie bewerken:
 
@@ -67,32 +67,32 @@ Met Launches kunt u:
       * Bevestig uw opstartafhoud terug naar de **Doel** (bronpagina&#39;s) wanneer deze gereed is voor publicatie.
       * Publiceer de inhoud van de bronpagina&#39;s (na het promoten van de achterpagina&#39;s).
       * Alle pagina&#39;s of alleen gewijzigde pagina&#39;s promoten.
+
    * Automatisch - dit omvat het volgende:
 
       * De **Starten**(**Live**) **date** veld: dit kan worden ingesteld wanneer u een opstart maakt of bewerkt.
 
       * De **Gereed voor productie** markering: dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
       * Als de **Gereed voor productie** markering is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
-         Als er geen datum is ingesteld, heeft de markering geen effect.
-
+        Als er geen datum is ingesteld, heeft de markering geen effect.
 
 * Werk de bron- en startpagina&#39;s parallel bij:
 
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+  ![Overzicht van updates](assets/chlimage_1-112.png)
 
 * [Een geneste start maken](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
 
    * De bron is een bestaande opstart.
    * U kunt [een geneste introductie promoten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) aan alle doelgroepen; Dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
 
-   ![chlimage_1-113](assets/chlimage_1-113.png)
+  ![Overzicht van geneste lancering](assets/chlimage_1-113.png)
 
-   >[!CAUTION]
-   >
-   >Als u een opstart verwijdert, wordt de opstart zelf en alle afstammende geneste opstarties verwijderd.
+  >[!CAUTION]
+  >
+  >Als u een opstart verwijdert, wordt de opstart zelf en alle afstammende geneste opstarties verwijderd.
 
 >[!NOTE]
 >
@@ -121,8 +121,8 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u
 1. Open de **Verwijzingen** rails en selecteer de bronpagina.
 1. Selecteren **Starten** worden de bestaande lanceringen vermeld:
 
-   ![screen-shot_2019-03-05at121901-1](assets/screen-shot_2019-03-05at121901-1.png)
+   ![Referentie, tabblad - Starten](assets/screen-shot_2019-03-05at121901-1.png)
 
 1. Tik/klik op de gewenste opstart. De lijst met mogelijke acties wordt weergegeven:
 
-   ![screen-shot_2019-03-05at121952-1](assets/screen-shot_2019-03-05at121952-1.png)
+   ![Selecteer Starten om mogelijke acties weer te geven](assets/screen-shot_2019-03-05at121952-1.png)

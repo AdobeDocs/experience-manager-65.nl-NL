@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 96aa75dec7433aa3961944fa57a80c4719316ba5
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '2696'
+source-wordcount: '2702'
 ht-degree: 0%
 
 ---
@@ -322,7 +322,7 @@ Verscheidene eigenschappen en knooptypes worden uitgesloten door gebrek, worden 
 
 Standaard worden eigenschappen die overeenkomen met de volgende reguliere expressies uitgesloten (d.w.z. niet bijgewerkt) bij rollout:
 
-![chlimage_1](assets/chlimage_1.png)
+![Update-actie CQ MSM-inhoud](assets/chlimage_1.png)
 
 U kunt de expressies wijzigen die de uitsluitingslijst naar wens definiëren.
 
@@ -384,7 +384,7 @@ U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wann
 
    De **Configuratie** toont de rollout configuraties die de pagina erft.
 
-   ![chlimage_1-1](assets/chlimage_1-1.png)
+   ![Configuratie](assets/chlimage_1-1.png)
 
 1. Pas indien nodig de **Overerving van Actieve kopie** markering. Als deze optie is ingeschakeld, is de configuratie van de live kopie effectief voor alle onderliggende elementen.
 
@@ -392,7 +392,7 @@ U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wann
 
    De geselecteerde rollout configuraties verschijnen onder de drop-down lijst.
 
-   ![chlimage_1-2](assets/chlimage_1-2.png)
+   ![Geselecteerde rollout-configuraties](assets/chlimage_1-2.png)
 
 1. Klikken of tikken **Opslaan**.
 
@@ -413,8 +413,7 @@ De onderliggende pagina&#39;s van de blauwdrukpagina nemen de configuratie over.
 Geef een rollout-configuratie op die u als systeemstandaard wilt gebruiken. Om het gebrek te specificeren, vorm de dienst OSGi:
 
 * **Day CQ WCM Live Relationship Manager**
-de service-PID is 
-`com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
+de service-PID is `com.day.cq.wcm.msm.impl.LiveRelationshipManagerImpl`
 
 Vorm de dienst gebruikend of [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of [opslagknooppunt](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository).
 

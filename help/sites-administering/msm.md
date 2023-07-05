@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 exl-id: 1e839845-fb5c-4200-8ec5-6ff744a96943
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
 workflow-type: tm+mt
-source-wordcount: '2664'
+source-wordcount: '2667'
 ht-degree: 0%
 
 ---
@@ -45,80 +45,79 @@ Er zijn vele gebruiksgevallen voor MSM en levende exemplaren, sommige scènes om
 
 * **Multinationals - wereldwijd tot lokaal bedrijf**
 
-   Een typisch gebruiksgeval dat MSM steunt is inhoud in verscheidene multinationale plaatsen van het zelfde-Taal opnieuw te gebruiken. Hierdoor kan de kerninhoud opnieuw worden gebruikt, terwijl nationale variaties mogelijk zijn.
+  Een typisch gebruiksgeval dat MSM steunt is inhoud in verscheidene multinationale plaatsen van het zelfde-Taal opnieuw te gebruiken. Hierdoor kan de kerninhoud opnieuw worden gebruikt, terwijl nationale variaties mogelijk zijn.
 
-   Bijvoorbeeld, wordt de Engelse sectie van de steekproef van de Plaats van de Verwijzing Wij.Retail gecreeerd voor klanten in de V.S. De meeste inhoud in deze plaats kan ook voor andere plaatsen worden gebruikt Web.Retail die aan Engelstalige klanten van verschillende landen en culturen behandelen. De kerninhoud blijft voor alle sites hetzelfde, terwijl regionale aanpassingen kunnen worden aangebracht.
+  Bijvoorbeeld, wordt de Engelse sectie van de steekproef van de Plaats van de Verwijzing Wij.Retail gecreeerd voor klanten in de V.S. De meeste inhoud in deze plaats kan ook voor andere plaatsen worden gebruikt Web.Retail die aan Engelstalige klanten van verschillende landen en culturen behandelen. De kerninhoud blijft voor alle sites hetzelfde, terwijl regionale aanpassingen kunnen worden aangebracht.
 
-   De volgende structuur kan voor plaatsen voor de Verenigde Staten, het Verenigd Koninkrijk, Canada, en Australië worden gebruikt:
+  De volgende structuur kan voor plaatsen voor de Verenigde Staten, het Verenigd Koninkrijk, Canada, en Australië worden gebruikt:
 
-   ```xml
-   /content
-       |- we.retail
-           |- language-masters
-               |- en
-       |- we.retail
-           |- us
-               |- en
-       |- we.retail
-           |- gb
-               |- en
-       |- we.retail
-           |- ca
-               |- en
-       |- we.retail
-           |- au
-               |- en
-   ```
+  ```xml
+  /content
+      |- we.retail
+          |- language-masters
+              |- en
+      |- we.retail
+          |- us
+              |- en
+      |- we.retail
+          |- gb
+              |- en
+      |- we.retail
+          |- ca
+              |- en
+      |- we.retail
+          |- au
+              |- en
+  ```
 
-   >[!NOTE]
-   >
-   >MSM vertaalt de inhoud niet. Het wordt gebruikt om de vereiste structuur tot stand te brengen en de inhoud op te stellen.
-   >
-   >
-   >Zie [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md) als u een dergelijk voorbeeld wilt uitbreiden.
+  >[!NOTE]
+  >
+  >MSM vertaalt de inhoud niet. Het wordt gebruikt om de vereiste structuur tot stand te brengen en de inhoud op te stellen.
+  >
+  >
+  >Zie [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md) als u een dergelijk voorbeeld wilt uitbreiden.
 
 * **Nationaal — Hoofdkantoor van regionale afdelingen**
 
-   Een bedrijf met een netwerk van dealers zou ook aparte websites voor hun individuele dealers willen, elk een variant van de hoofdsite die door het hoofdkantoor wordt aangeboden. Dit kan het geval zijn voor één enkele onderneming met meerdere regionale kantoren, of voor een nationaal franchisesysteem dat bestaat uit een centrale franchisegever en meerdere lokale franchisehouders.
+  Een bedrijf met een netwerk van dealers zou ook aparte websites voor hun individuele dealers willen, elk een variant van de hoofdsite die door het hoofdkantoor wordt aangeboden. Dit kan het geval zijn voor één enkele onderneming met meerdere regionale kantoren, of voor een nationaal franchisesysteem dat bestaat uit een centrale franchisegever en meerdere lokale franchisehouders.
 
-   Het hoofdkantoor kan de kerninformatie verstrekken, terwijl de regionale entiteiten lokale informatie kunnen toevoegen, zoals contactgegevens, openingstijden en evenementen.
+  Het hoofdkantoor kan de kerninformatie verstrekken, terwijl de regionale entiteiten lokale informatie kunnen toevoegen, zoals contactgegevens, openingstijden en evenementen.
 
-   ```xml
-   /content
-       |- head-office-Berlin
-       |- branch-Hamburg
-       |- branch-Stuttgart
-       |- branch-Munich
-       |- branch-Frankfurt
-   ```
+  ```xml
+  /content
+      |- head-office-Berlin
+      |- branch-Hamburg
+      |- branch-Stuttgart
+      |- branch-Munich
+      |- branch-Frankfurt
+  ```
 
 * **Meerdere versies**
 
-   Of u kunt MSM gebruiken om versies van een specifieke subtak tot stand te brengen, bijvoorbeeld, een steunsubsite die details van de verschillende versies van een specifiek product houdt, waar de basisinformatie constant blijft en slechts de bijgewerkte eigenschappen moeten worden veranderd:
+  Of u kunt MSM gebruiken om versies van een specifieke subtak tot stand te brengen, bijvoorbeeld, een steunsubsite die details van de verschillende versies van een specifiek product houdt, waar de basisinformatie constant blijft en slechts de bijgewerkte eigenschappen moeten worden veranderd:
 
-   ```xml
-   /content
-       |- support
-           |- product X
-               |- v5.0
-               |- v4.0
-               |- v3.0
-               |- v2.0
-               |- v1.0
-   ```
+  ```xml
+  /content
+      |- support
+          |- product X
+              |- v5.0
+              |- v4.0
+              |- v3.0
+              |- v2.0
+              |- v1.0
+  ```
 
-   >[!NOTE]
-   >
-   >In een dergelijk scenario is het altijd de vraag of er een eenvoudige kopie moet worden gemaakt of dat er live kopieën moeten worden gemaakt.
-   >
-   >Er is een evenwicht tussen:
-   >
-   >  * Hoeveel van de kerninhoud zal over de veelvoudige versies moeten bijwerken.
-   >
-   >Tegen:
-   >
-   >  * Hoeveel van de afzonderlijke kopieën moeten worden aangepast.
-
+  >[!NOTE]
+  >
+  >In een dergelijk scenario is het altijd de vraag of er een eenvoudige kopie moet worden gemaakt of dat er live kopieën moeten worden gemaakt.
+  >
+  >Er is een evenwicht tussen:
+  >
+  >  * Hoeveel van de kerninhoud zal over de veelvoudige versies moeten bijwerken.
+  >
+  >Tegen:
+  >
+  >  * Hoeveel van de afzonderlijke kopieën moeten worden aangepast.
 
 ## MSM van UI {#msm-from-the-ui}
 
@@ -304,7 +303,7 @@ De basisvorm van een kopie van het origineel is:
 
 * Wijzigingen kunnen [gesynchroniseerd](/help/sites-administering/msm-livecopy.md#synchronizing-your-live-copy) volgens de eisen.
 
-![chlimage_1-367](assets/chlimage_1-367.png)
+![Synchroniseren](assets/chlimage_1-367.png)
 
 #### Live kopiëren met pagina&#39;s die niet live zijn gekopieerd {#live-copy-with-non-live-copy-pages}
 
@@ -313,7 +312,7 @@ Wanneer u een live kopie maakt in AEM kunt u de live kopie van de vertakking zie
 * Dergelijke bronnen hebben geen live relatie met de bron-/blauwdrukpagina&#39;s en zijn niet gesynchroniseerd.
 * De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in zowel de vertakking van de bron/blauwdruk als de vertakking van de actieve kopie. Zie voor dergelijke situaties [Conflicten MSM-rollout](/help/sites-administering/msm-rollout-conflicts.md) voor meer informatie .
 
-![chlimage_1-368](assets/chlimage_1-368.png)
+![Conflicten bij rollout](assets/chlimage_1-368.png)
 
 #### Geneste actieve kopieën {#nested-live-copies}
 
@@ -322,9 +321,9 @@ Wanneer u (of een proces) een [nieuwe pagina in een bestaande live kopie](#live-
 * Een uitgebreide rollout die wordt geactiveerd voor de live kopie op hoofdniveau, kan worden voortgezet in de geneste live kopie (bijvoorbeeld als de trigger overeenkomt).
 * Alle koppelingen tussen de bronnen worden in de live kopieën herschreven.
 
-   Koppelingen van de tweede naar de eerste blauwdruk worden bijvoorbeeld herschreven als koppelingen van de geneste/tweede live kopie naar de eerste live kopie.
+  Koppelingen van de tweede naar de eerste blauwdruk worden bijvoorbeeld herschreven als koppelingen van de geneste/tweede live kopie naar de eerste live kopie.
 
-![chlimage_1-369](assets/chlimage_1-369.png)
+![Koppelingen tussen bronnen](assets/chlimage_1-369.png)
 
 >[!NOTE]
 >
@@ -350,13 +349,13 @@ De bron vormt de blauwdruk voor het levende exemplaar. De blauwdruk wordt gedefi
 
 * [Een blauwdrukconfiguratie maken](/help/sites-administering/msm-livecopy.md#creating-a-blueprint-configuration)
 
-   De configuratie definieert (vooraf) de pagina&#39;s die moeten worden gebruikt om de live kopie te maken.
+  De configuratie definieert (vooraf) de pagina&#39;s die moeten worden gebruikt om de live kopie te maken.
 
 * [Een actieve kopie van een pagina maken](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   De pagina&#39;s die worden gebruikt om de live kopie (de bronpagina&#39;s) te maken, zijn de blauwdrukpagina&#39;s.
+  De pagina&#39;s die worden gebruikt om de live kopie (de bronpagina&#39;s) te maken, zijn de blauwdrukpagina&#39;s.
 
-   Naar de bronpagina kan door een blauwdrukconfiguratie worden verwezen, of niet.
+  Naar de bronpagina kan door een blauwdrukconfiguratie worden verwezen, of niet.
 
 ### Uitvoeren en synchroniseren {#rollout-and-synchronize}
 
@@ -365,15 +364,15 @@ Een rollout is de centrale actie MSM die levende exemplaren met hun bron synchro
 * A [rollout-configuratie](#rollout-configurations) kunnen worden gedefinieerd zodat specifieke [gebeurtenissen](/help/sites-administering/msm-sync.md#rollout-triggers) kan ertoe leiden dat een rollout automatisch voorkomt.
 * Wanneer u een pagina met een blauwdruk maakt, kunt u de opdracht [Uitrol](/help/sites-administering/msm-livecopy.md#rolling-out-a-blueprint) om wijzigingen in de live kopie door te voeren.
 
-   **De rollout** is beschikbaar op een pagina van de blauwdruk die door een blauwdrukconfiguratie van verwijzingen wordt voorzien.
+  **De rollout** is beschikbaar op een pagina van de blauwdruk die door een blauwdrukconfiguratie van verwijzingen wordt voorzien.
 
-   ![chlimage_1-370](assets/chlimage_1-370.png)
+  ![Uitrol](assets/chlimage_1-370.png)
 
 * Wanneer u een pagina voor live kopieën maakt, kunt u de opdracht [Synchroniseren](/help/sites-administering/msm-livecopy.md#synchronizing-a-live-copy) gebruiken om wijzigingen van de bron naar de live kopie te trekken.
 
-   De **Synchroniseren** is altijd beschikbaar op de live kopieerpagina (ongeacht of de bron-/blauwdrukpagina wordt omringd door een blauwdrukconfiguratie).
+  De **Synchroniseren** is altijd beschikbaar op de live kopieerpagina (ongeacht of de bron-/blauwdrukpagina wordt omringd door een blauwdrukconfiguratie).
 
-   ![chlimage_1-371](assets/chlimage_1-371.png)
+  ![Synchroniseren](assets/chlimage_1-371.png)
 
 ### Uitrolconfiguraties {#rollout-configurations}
 
@@ -381,15 +380,15 @@ Een rollout-configuratie bepaalt wanneer en hoe een live kopie wordt gesynchroni
 
 * **Trigger**
 
-   Een trigger is een gebeurtenis die ervoor zorgt dat de synchronisatie van een live actie plaatsvindt, zoals de activering van een bronpagina. MSM bepaalt de trekkers die u kunt gebruiken.
+  Een trigger is een gebeurtenis die ervoor zorgt dat de synchronisatie van een live actie plaatsvindt, zoals de activering van een bronpagina. MSM bepaalt de trekkers die u kunt gebruiken.
 
 * **Synchronisatiehandelingen**
 
-   Wordt uitgevoerd op de live kopie om deze te synchroniseren met de bron. Voorbeelden van handelingen zijn het kopiëren van inhoud, het bestellen van onderliggende knooppunten en het activeren van de pagina voor live kopiëren. MSM biedt een aantal synchronisatiehandelingen.
+  Wordt uitgevoerd op de live kopie om deze te synchroniseren met de bron. Voorbeelden van handelingen zijn het kopiëren van inhoud, het bestellen van onderliggende knooppunten en het activeren van de pagina voor live kopiëren. MSM biedt een aantal synchronisatiehandelingen.
 
-   >[!NOTE]
-   >
-   >U kunt aangepaste handelingen voor uw instantie maken met de Java API.
+  >[!NOTE]
+  >
+  >U kunt aangepaste handelingen voor uw instantie maken met de Java API.
 
 De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan één levende kopie de zelfde rollout configuratie kan gebruiken. Meerdere [rollout-configuraties](/help/sites-administering/msm-sync.md#installed-rollout-configurations) zijn opgenomen in een standaardinstallatie.
 
@@ -440,10 +439,10 @@ De volgende stappen beschrijven de standaardprocedure voor het gebruiken van MSM
 MSM verstrekt hulpmiddelen zodat uw implementatie aan de uitzonderlijke ingewikkeldheid kan aanpassen die wanneer het delen van inhoud kan bestaan:
 
 * **Aangepaste implementatieconfiguraties**
-   [Een rollout-configuratie maken](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) als de geïnstalleerde implementatieconfiguraties niet aan uw vereisten voldoen. U kunt elke beschikbare uitrolltrigger- en synchronisatiehandeling gebruiken.
+  [Een rollout-configuratie maken](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) als de geïnstalleerde implementatieconfiguraties niet aan uw vereisten voldoen. U kunt elke beschikbare uitrolltrigger- en synchronisatiehandeling gebruiken.
 
 * **Aangepaste synchronisatiehandelingen**
-   [Een aangepaste synchronisatiehandeling maken](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) als de geïnstalleerde acties niet voldoen aan uw specifieke toepassingsvereisten. MSM biedt een Java API voor het maken van aangepaste synchronisatiehandelingen.
+  [Een aangepaste synchronisatiehandeling maken](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) als de geïnstalleerde acties niet voldoen aan uw specifieke toepassingsvereisten. MSM biedt een Java API voor het maken van aangepaste synchronisatiehandelingen.
 
 ## Best practices voor {#best-practices}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ De auteursomgeving verstrekt de mechanismen om deze inhoud tot stand te brengen,
 * Een auteur maakt en beoordeelt de inhoud (dit kan van verschillende typen zijn). bijvoorbeeld pagina&#39;s, middelen, publicaties, enz.)
 * die op een gegeven moment op uw website worden gepubliceerd.
 
-![chlimage_1-132](assets/chlimage_1-132.png)
+![Overzicht van omgevingen](assets/chlimage_1-132.png)
 
 Op het auteursmilieu wordt de functionaliteit van AEM ter beschikking gesteld door twee UIs. Voor het publicatiemilieu ontwerpt u de volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
 
@@ -79,15 +79,14 @@ Wanneer de AEM-site een [community-site](/help/communities/overview.md), of omva
 >Helaas is er soms sprake van een overlapping in de gebruikte terminologie. Dit kan gebeuren met:
 >
 >* **Publiceren/Publiceren ongedaan maken**
-   >  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
+>  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
 >
 >* **Activeren/deactiveren**
-   >  Deze termen zijn synoniem met publiceren/verwijderen.
+>  Deze termen zijn synoniem met publiceren/verwijderen.
 >
 >* **Replicatie/replicatie**
-   >  Dit zijn de technische termen die worden gebruikt om de verplaatsing van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikersopmerkingen) van de ene omgeving naar de andere aan te geven; d.w.z. bij het publiceren of omgekeerd repliceren van gebruikersopmerkingen.
+>  Dit zijn de technische termen die worden gebruikt om de verplaatsing van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikersopmerkingen) van de ene omgeving naar de andere aan te geven; d.w.z. bij het publiceren of omgekeerd repliceren van gebruikersopmerkingen.
 >
-
 
 #### Dispatcher {#dispatcher}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '263'
 ht-degree: 22%
 
 ---
@@ -42,35 +42,37 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
 
 * **Eigenschappen**
 
-   ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
+  ![screen_shot_2018-03-27at165847](assets/screen_shot_2018-03-27at165847.png)
 
-   Op het tabblad Eigenschappen kunt u het volgende doen:
+  Op het tabblad Eigenschappen kunt u het volgende doen:
 
    * De algemene eigenschappen van de component weergeven.
    * Weergeven hoe de [pictogram of afkorting is gedefinieerd](/help/sites-developing/components-basics.md#component-icon-in-touch-ui) voor de component.
 
       * Als u op de bron van het pictogram klikt, gaat u naar die component.
+
    * De weergave van **Type bron** en **Super Type resource** (indien gedefinieerd) voor de component.
 
       * Als u op het Super Type van Middel klikt, gaat u naar die component.
-   >[!NOTE]
-   >
-   >Omdat `/apps` kan tijdens runtime niet worden bewerkt, is de Componentenconsole alleen-lezen.
+
+  >[!NOTE]
+  >
+  >Omdat `/apps` kan tijdens runtime niet worden bewerkt, is de Componentenconsole alleen-lezen.
 
 * **Beleid**
 
-   ![chlimage_1-169](assets/chlimage_1-169.png)
+  ![Beleid](assets/chlimage_1-169.png)
 
 * **Live-gebruik**
 
-   ![chlimage_1-170](assets/chlimage_1-170.png)
+  ![Live-gebruik](assets/chlimage_1-170.png)
 
-   >[!CAUTION]
-   >
-   >Vanwege de aard van de informatie die voor deze weergave wordt verzameld, kan het enige tijd duren voordat deze wordt gesorteerd of weergegeven.
+  >[!CAUTION]
+  >
+  >Vanwege de aard van de informatie die voor deze weergave wordt verzameld, kan het enige tijd duren voordat deze wordt gesorteerd of weergegeven.
 
 * **Documentatie**
 
-   Als de ontwikkelaar [documentatie voor de component](/help/sites-developing/developing-components.md#documenting-your-component), verschijnt het op de **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven.
+  Als de ontwikkelaar [documentatie voor de component](/help/sites-developing/developing-components.md#documenting-your-component), verschijnt het op de **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven.
 
-   ![chlimage_1-171](assets/chlimage_1-171.png)
+  ![Documentatie](assets/chlimage_1-171.png)

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1558'
 ht-degree: 4%
 
 ---
@@ -44,13 +44,13 @@ Voordat u het overzicht van de details geeft, is er een kleine verzameling algem
 
 * Pagina&#39;s in een map opnieuw ordenen
 
-   * Dit kan worden gedaan in [Lijstweergave](/help/sites-authoring/basic-handling.md#list-view). De wijzigingen worden toegepast en zijn zichtbaar in andere weergaven.
+   * Dit kan worden gedaan in [Lijstweergave](/help/sites-authoring/basic-handling.md#list-view). De wijzigingen worden toegepast en zichtbaar in andere weergaven.
 
 #### Pagina&#39;s ontwerpen {#page-authoring}
 
 * Navigeren door koppelingen
 
-   * ***Koppelingen zijn niet beschikbaar voor navigatie*** wanneer u binnen bent **Bewerken** in. Als u wilt navigeren met koppelingen, moet u [voorvertoning van de pagina](/help/sites-authoring/editing-content.md#previewing-pages) door gebruik te maken van:
+   * ***Koppelingen zijn niet beschikbaar voor navigatie*** wanneer u binnen bent **Bewerken** in. Als u met koppelingen wilt navigeren, moet u [voorvertoning van de pagina](/help/sites-authoring/editing-content.md#previewing-pages) door gebruik te maken van:
 
       * [Voorvertoningsmodus](/help/sites-authoring/editing-content.md#preview-mode)
       * [Weergeven als gepubliceerd](/help/sites-authoring/editing-content.md#view-as-published)
@@ -59,7 +59,7 @@ Voordat u het overzicht van de details geeft, is er een kleine verzameling algem
 
 >[!NOTE]
 >
->Er zijn een aantal sneltoetsen die de ontwerpervaring kunnen vereenvoudigen.
+>Er zijn verschillende sneltoetsen waarmee u het schrijven van documenten eenvoudiger kunt maken.
 >
 >* [Sneltoetsen bij het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -69,7 +69,7 @@ Voordat u het overzicht van de details geeft, is er een kleine verzameling algem
 
 Het zoeken naar een pagina kent verschillende aspecten. u kunt navigeren en/of zoeken:
 
-1. Open de **Sites** console (met de **Sites** in de [Algemene navigatie](/help/sites-authoring/basic-handling.md#global-navigation) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de Adobe Experience Manager-koppeling selecteert (linksboven).
+1. Open de **Sites** console (met de **Sites** in de [Algemene navigatie](/help/sites-authoring/basic-handling.md#global-navigation)) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de Adobe Experience Manager-koppeling selecteert (linksboven).
 
 1. Navigeer omlaag door op de desbetreffende pagina te tikken of te klikken. Hoe de paginabronnen worden weergegeven, is afhankelijk van de weergave die u gebruikt - [Kaart, lijst of kolom](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -85,9 +85,9 @@ Het zoeken naar een pagina kent verschillende aspecten. u kunt navigeren en/of z
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
-Naar [een nieuwe pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page):
+Naar [een pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page):
 
-1. [Naar de locatie navigeren](#finding-your-page) op de plaats waar u de nieuwe pagina wilt maken.
+1. [Naar de locatie navigeren](#finding-your-page) op de plaats waar u de pagina wilt maken.
 1. Gebruik de **Maken** pictogram en selecteer vervolgens **Pagina** in de lijst:
 
    ![qgtap-02](assets/qgtap-02.png)
@@ -134,8 +134,6 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
 ### De pagina-inhoud bewerken {#editing-your-page-content}
 
-Uw pagina bewerken:
-
 1. [Naar de pagina navigeren](#finding-your-page) wilt bewerken.
 1. [Uw pagina openen om te bewerken](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing) met het pictogram Bewerken (potlood):
 
@@ -143,12 +141,12 @@ Uw pagina bewerken:
 
    Dit is toegankelijk via:
 
-   * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
+   * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de passende bron.
    * De werkbalk wanneer uw [pagina is geselecteerd](#selectiingyourpageforfurtheraction).
 
 1. Wanneer de editor wordt geopend, kunt u:
 
-   * [Een nieuwe versie van uw pagina toevoegen](/help/sites-authoring/editing-content.md#inserting-a-component) door:
+   * [Een nieuwe component aan de pagina toevoegen](/help/sites-authoring/editing-content.md#inserting-a-component) door:
 
       * openen, zijpaneel
       * het selecteren van de componenten tabel (het [componentenbrowser](/help/sites-authoring/author-environment-tools.md#components-browser))
@@ -201,7 +199,7 @@ Uw pagina bewerken:
 
    >[!NOTE]
    >
-   >Als u wilt navigeren met koppelingen in de inhoud, moet u deze gebruiken [Voorvertoningsmodus](/help/sites-authoring/editing-content.md#preview-mode).
+   >Als u wilt navigeren met koppelingen in de inhoud, moet u [Voorvertoningsmodus](/help/sites-authoring/editing-content.md#preview-mode).
 
 ### De pagina-eigenschappen bewerken {#editing-the-page-properties}
 
@@ -212,7 +210,7 @@ Er zijn twee (belangrijkste) methoden [bewerken, pagina-eigenschappen](/help/sit
    1. [Naar de pagina navigeren](#finding-your-page) wilt publiceren.
    1. Selecteer **Eigenschappen** pictogram uit:
 
-      * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
+      * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de passende bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selectiingyourpageforfurtheraction).
 
   ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
@@ -235,7 +233,7 @@ Er zijn twee hoofdmethoden [publiceren, uw pagina](/help/sites-authoring/publish
    1. [Naar de pagina navigeren](#finding-your-page) wilt publiceren.
    1. Selecteer **Snel publiceren** pictogram uit:
 
-      * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
+      * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de passende bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selectiingyourpageforfurtheraction) (biedt ook toegang tot [Later publiceren](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
 
   ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
@@ -269,11 +267,11 @@ Deze acties kunnen allemaal worden geactiveerd door:
 
    * Kopiëren:
 
-      * Vervolgens moet u naar de nieuwe locatie navigeren en plakken.
+      * Navigeer naar de nieuwe locatie en plak.
 
    * Verplaatsen:
 
-      * De wizard wordt geopend om de gegevens te verzamelen die nodig zijn om de pagina te verplaatsen. Volg de aanwijzingen op het scherm.
+      * De wizard wordt geopend om de informatie te verzamelen die nodig is om de pagina te verplaatsen. Volg de aanwijzingen op het scherm.
 
    * Verwijderen:
 
@@ -288,7 +286,7 @@ Deze acties kunnen allemaal worden geactiveerd door:
 [Door een pagina te vergrendelen](/help/sites-authoring/editing-content.md#locking-a-page) voorkomt u dat andere auteurs op hetzelfde moment als u op de pagina kunnen werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u hier:
 
 * De werkbalk wanneer uw [pagina is geselecteerd](#selecting-your-page-for-further-action).
-* De [Paginagegevens, vervolgkeuzelijst](#editing-the-page-properties) wanneer u een pagina bewerkt.
+* De [Vervolgkeuzelijst Pagina-informatie](#editing-the-page-properties) wanneer u een pagina bewerkt.
 * De pagina-werkbalk tijdens het bewerken van een pagina (wanneer de pagina is vergrendeld)
 
 Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:
@@ -297,7 +295,7 @@ Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:
 
 ### Paginaverwijzingen openen {#accessing-page-references}
 
-[Snelle toegang tot verwijzingen](/help/sites-authoring/author-environment-tools.md#references) van of naar een pagina zijn beschikbaar in de References Rail.
+[Snelle toegang tot verwijzingen](/help/sites-authoring/author-environment-tools.md#references) naar een pagina of van een pagina zijn beschikbaar in de Rail van Verwijzingen.
 
 1. Selecteren **Verwijzingen** met het pictogram van de werkbalk (voor of na [pagina selecteren](#selecting-your-page-for-further-action)):
 

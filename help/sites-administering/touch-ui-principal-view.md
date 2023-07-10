@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: ddd908ed8287d77d9009633399c1e0bc1a12fe1b
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '760'
+source-wordcount: '774'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ U kunt rechten toevoegen door te zoeken in het tekstveld en vervolgens te select
 >
 >Voor een volledige lijst met rechten en beschrijvingen raadpleegt u [deze pagina](/help/sites-administering/user-group-ac-admin.md#access-right-management).
 
-![Zoekopdracht voor een bepaald pad](assets/image2019-3-21_0-5-47.png) ![](assets/image2019-3-21_0-6-53.png)
+![Zoekopdracht voor een bepaald pad.](assets/image2019-3-21_0-5-47.png) ![Voeg nieuw item voor &#39;dam-users&#39; toe, zoals wordt weergegeven door een pad dat is geselecteerd in verticale kolommen.](assets/image2019-3-21_0-6-53.png)
 
 Nadat de lijst met bevoegdheden is geselecteerd, kan de gebruiker het machtigingstype kiezen: Weigeren of Toestaan, zoals hieronder wordt weergegeven.
 

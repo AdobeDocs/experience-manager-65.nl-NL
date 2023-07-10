@@ -5,9 +5,9 @@ description: AEM Communities implementeren
 seo-description: How to deploy AEM Communities
 content-type: reference
 topic-tags: deploying
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
 workflow-type: tm+mt
-source-wordcount: '1682'
+source-wordcount: '1755'
 ht-degree: 1%
 
 ---
@@ -53,27 +53,27 @@ ht-degree: 1%
       * [MongoDB installeren en configureren](/help/communities/msrp.md#mongodb-configuration)
       * [Solr configureren](/help/communities/solr.md)
       * [Selecteer MSRP](/help/communities/srp-config.md)
+
    * Indien relationele database SRP [(DSRP)](/help/communities/dsrp.md)
 
       * [Installeer het JDBC-stuurprogramma voor MySQL](#jdbc-driver-for-mysql)
       * [Installeer en vorm MySQL voor DSRP](/help/communities/dsrp-mysql.md)
       * [Solr configureren](/help/communities/solr.md)
       * [DSRP selecteren](/help/communities/srp-config.md)
+
    * Indien Adobe SRP [(ASRP)](/help/communities/asrp.md)
 
       * Werk voor provisioning met uw accountvertegenwoordiger.
       * [Selecteer ASRP](/help/communities/srp-config.md)
+
    * Als JCR SRP [(JSRP)](/help/communities/jsrp.md)
 
       * Geen gedeelde UGC-opslag:
 
          * UGC wordt nooit gerepliceerd.
          * UGC is alleen zichtbaar op AEM instantie of cluster waarin het is ingevoerd.
+
       * Standaard is JSRP
-
-
-
-
 
 
 ## Laatste releases {#latest-releases}
@@ -124,7 +124,7 @@ Meer informatie over het installeren van bundels vindt u op de [Webconsole](/hel
 
 #### Voorbeeld: MySQL-connectorbundel is geïnstalleerd {#example-installed-mysql-connector-bundle}
 
-![](../assets/mysql-connector.png)
+![Adobe Experience Manager Web Console MySQL Connector-bundel](../assets/mysql-connector.png)
 
 ### Geavanceerde MLS AEM {#aem-advanced-mls}
 
@@ -186,7 +186,7 @@ Standaard worden de `AEM Communities Publisher Configuration` De configuratie OS
 
 Daarom moet **bewerk de configuratie op alle secundaire publicatieinstanties** om de controle van **`Primary Publisher`** selectievakje.
 
-![](../assets/primary-publisher.png)
+![Het dialoogvenster Configuratie van AEM Communities Publisher dat het selectievakje Primaire uitgever weergeeft](../assets/primary-publisher.png)
 
 Voor alle andere (secundaire) publiceer instanties in publiceer landbouwbedrijf:
 
@@ -234,7 +234,7 @@ In de volgende afbeeldingen ziet u de resultaten van het wijzigen van de poort v
 
 #### Reverse Replication Agent (publiceren reverse) {#reverse-replication-agent-publish-reverse}
 
-![](../assets/reverse-replication-agent.png)
+![De omgekeerde Agent van de Replicatie (publiceer revers) die toont dat het wordt aangezet of toegelaten.](../assets/reverse-replication-agent.png)
 
 ### Tunnelservice op auteur {#tunnel-service-on-author}
 
@@ -256,7 +256,7 @@ Om de tunneldienst toe te laten:
 * Selecteer **enable** selectievakje
 * selecteren **Opslaan**
 
-![](../assets/tunnel-service.png)
+![AEM Communities Publish Tunnel Service met het selectievakje &quot;enable&quot; geselecteerd of ingeschakeld.](../assets/tunnel-service.png)
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
@@ -270,25 +270,25 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 
    * Zoek de `com.adobe.granite.crypto.file` bundelen in het lokale bestandssysteem
 
-      Bijvoorbeeld,
+     Bijvoorbeeld,
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
       * De `bundle.info` bestand zal de bundel identificeren
+
    * Navigeer bijvoorbeeld naar de gegevensmap
 
       * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * Kopieer de hoofd- en primaire knoopdossiers.
-
-
 
 * Voor elke AEM
 
    * Navigeer bijvoorbeeld naar de gegevensmap
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
+
    * Plak de twee eerder gekopieerde bestanden
    * Het is noodzakelijk [De Granite Crypto-bundel vernieuwen](#refresh-the-granite-crypto-bundle) als het doel-AEM momenteel wordt uitgevoerd.
-
 
 >[!CAUTION]
 >
@@ -315,7 +315,7 @@ Gebruiken [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 
 * [De Granite Crypto-bundel vernieuwen](#refresh-the-granite-crypto-bundle)
 
-![](../assets/replicare-repository.png)
+![CRXDE Lite die het pad/etc/key in het linkerdeelvenster weergeeft en het tabblad Replicatie dat u in het rechterbenedendeelvenster hebt geselecteerd.](../assets/replicare-repository.png)
 
 #### De graniet-cryptobundel vernieuwen {#refresh-the-granite-crypto-bundle}
 
@@ -326,10 +326,10 @@ Gebruiken [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) :
 * Zoeken `Adobe Granite Crypto Support` bundle (com.adobe.granite.crypto)
 * Selecteren **Vernieuwen**
 
-![](../assets/refresh-granite-bundle.png)
+![De Adobe Granite Crypto Support-bundel vernieuwen.](../assets/refresh-granite-bundle.png)
 
 * Na een ogenblik **Succes** wordt weergegeven:
-   `Operation completed successfully.`
+  `Operation completed successfully.`
 
 ### Apache HTTP Server {#apache-http-server}
 

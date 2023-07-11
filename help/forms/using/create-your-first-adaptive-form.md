@@ -9,9 +9,9 @@ discoiquuid: 1142bcd4-e3a7-41ce-a710-132ae6c21dbe
 docset: aem65
 feature: Adaptive Forms
 exl-id: 77a05f83-ac9a-4221-85ac-439e82623a28
-source-git-commit: 318347178fd626dea8e5a15caa7cdad8fe353eba
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '965'
+source-wordcount: '966'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Doelstellingen:
 
 ## Stap 4: Stijl uw adaptieve formulier {#step-style-your-adaptive-form}
 
-![](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
+![adaptieve vormgeving](/help/forms/using/assets/09-style-your-adaptive-form-small.png)
 
 Adaptieve formulieren bieden thema&#39;s en een [editor](../../forms/using/themes.md) om thema&#39;s voor de adaptieve formulieren te maken. Een thema bevat opmaakgegevens voor componenten en deelvensters en u kunt een thema in verschillende formulieren opnieuw gebruiken. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u het thema toepast op het formulier, weerspiegelt de opgegeven stijl de overeenkomstige componenten van het formulier. Adaptieve formulieren ondersteunen ook inline opmaak voor stijlen die specifiek zijn voor een formulier.
 

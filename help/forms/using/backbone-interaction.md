@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 538591fe-29e4-40c4-a045-06095cc0c6b8
 docset: aem65
 exl-id: 8fd9770b-6ec4-4b09-b6b2-47a5e5d40f79
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ In de backboneweergave is er een gebeurteniskaart die de verschillende gebeurten
 
 Wanneer een mening wordt geïnitialiseerd, roept de mening zijn overeenkomstig model om gegevens van server te halen. Zodra alle gegevens die door een mening worden vereist beschikbaar zijn, geeft de mening de gegevens in het formaat terug dat door het malplaatje van de HTML wordt gespecificeerd. Meerdere weergaven kunnen hetzelfde model voor communicatie delen.
 
-![](do-not-localize/aem_forms_workflow.png)
+![Achtergrondweergave van formulieren AEM](do-not-localize/aem_forms_workflow.png)
 
 Een voorbeeld:
 

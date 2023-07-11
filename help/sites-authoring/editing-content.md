@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: d9155cdac183acbdd190da552512a1e9bcc43d64
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3080'
 ht-degree: 5%
 
 ---
@@ -40,7 +40,7 @@ Inhoud wordt toegevoegd met [componenten](/help/sites-authoring/default-componen
 
 De paginawerkbalk biedt toegang tot de juiste functionaliteit, afhankelijk van de paginaconfiguratie.
 
-![screen_shot_2018-03-22at111338](assets/screen_shot_2018-03-22at111338.png)
+![Werkbalk Pagina](assets/screen_shot_2018-03-22at111338.png)
 
 De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidige context en configuratie zijn sommige opties mogelijk niet beschikbaar.
 
@@ -66,25 +66,25 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
   Hiermee opent u de [contexthub](/help/sites-authoring/ch-previewing.md). Alleen beschikbaar in de modus Voorbeeld.
 
-  ![screen_shot_2018-03-22at111543](assets/screen_shot_2018-03-22at111543.png)
+  ![Context Hub](assets/screen_shot_2018-03-22at111543.png)
 
 * **Paginatitel**
 
   Dit is puur informatief.
 
-  ![screen_shot_2018-03-22at111554](assets/screen_shot_2018-03-22at111554.png)
+  ![Paginatitel](assets/screen_shot_2018-03-22at111554.png)
 
 * **Modus selecteren**
 
   Geeft de huidige [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
 
-  ![chlimage_1-120](assets/chlimage_1-120.png)
+  ![Modus selecteren](assets/chlimage_1-120.png)
 
 * **Voorvertoning**
 
   Inschakelen [voorbeeldmodus](/help/sites-authoring/editing-content.md#preview-mode). Hiermee wordt de pagina weergegeven zoals deze wordt weergegeven bij publicatie.
 
-  ![chlimage_1-121](assets/chlimage_1-121.png)
+  ![Voorvertoningsmodus](assets/chlimage_1-121.png)
 
 * **Annoteren**
 
@@ -96,7 +96,7 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 Als een pagina deel uitmaakt van een [werkstroom](/help/sites-authoring/workflows.md) Voor meerdere workflows wordt deze informatie weergegeven in een berichtenbalk boven aan het scherm wanneer u de pagina bewerkt.
 
-![screen_shot_2018-03-22at111739](assets/screen_shot_2018-03-22at111739.png)
+![workflowmelding](assets/screen_shot_2018-03-22at111739.png)
 
 >[!NOTE]
 >
@@ -114,7 +114,7 @@ Workflowstappen uitvoeren en delegeren via de berichtenbalk werkt op dezelfde ma
 
 Als de pagina aan veelvoudige werkschema&#39;s onderworpen is, wordt het aantal werkschema&#39;s getoond aan het rechtereind van het bericht samen met pijlknopen om u toe te staan om door de werkschema&#39;s te scrollen.
 
-![chlimage_1-122](assets/chlimage_1-122.png)
+![Melding van het aantal werkstromen](assets/chlimage_1-122.png)
 
 ## Tijdelijke aanduiding voor onderdeel {#component-placeholder}
 
@@ -122,11 +122,11 @@ De tijdelijke aanduiding van de component is een indicator waarmee wordt aangege
 
 * Bij het toevoegen van een nieuwe component aan de pagina (slepen vanuit de componentbrowser):
 
-  ![screen_shot_2018-03-22at111928](assets/screen_shot_2018-03-22at111928.png)
+  ![toevoegen van een nieuwe component](assets/screen_shot_2018-03-22at111928.png)
 
 * Bij het verplaatsen van een bestaande component:
 
-  ![screen_shot_2018-03-22at112445](assets/screen_shot_2018-03-22at112445.png)
+  ![verplaatsen van een bestaande component](assets/screen_shot_2018-03-22at112445.png)
 
 ## Een component invoegen {#inserting-a-component}
 
@@ -153,13 +153,13 @@ U kunt een nieuwe component toevoegen door de **Componenten hierheen slepen** va
 
    * Selecteer **Component invoegen** van de werkbalk van een bestaande component of van de **Componenten hierheen slepen** doos.
 
-   ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
+   ![Componentselectie invoegen](assets/screen_shot_2018-03-22at112536.png)
 
    * Als u zich op een desktopapparaat bevindt, kunt u dubbelklikken op de knop **Componenten hierheen slepen** doos.
 
    De **Nieuwe component invoegen** wordt geopend zodat u de gewenste component kunt selecteren:
 
-   ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
+   ![Nieuwe component invoegen](assets/screen_shot_2018-03-22at112650.png)
 
 1. De geselecteerde component wordt onder aan de pagina toegevoegd. [Bewerken](#editmovecopypastedelete) de component naar wens.
 
@@ -218,7 +218,7 @@ Een component maken door een van de bovenstaande elementtypen te slepen:
 
 Als u bij het bladeren in de elementen opmerkt dat u snel een wijziging in een element moet aanbrengen, kunt u het dialoogvenster [middeleneditor](/help/assets/manage-assets.md) rechtstreeks vanuit de browser door op het pictogram Bewerken naast de naam van het element te klikken.
 
-![screen_shot_2018-03-22at112735](assets/screen_shot_2018-03-22at112735.png)
+![bewerkingspictogram](assets/screen_shot_2018-03-22at112735.png)
 
 ## Bewerken/configureren/kopiëren/knippen/verwijderen/plakken {#edit-configure-copy-cut-delete-paste}
 
@@ -226,7 +226,7 @@ Als u een component selecteert, wordt de werkbalk geopend. Dit verleent toegang 
 
 De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijze weergegeven en niet alle acties worden hier beschreven.
 
-![screen_shot_2018-03-22at112909](assets/screen_shot_2018-03-22at112909.png)
+![werkbalkopties van component](assets/screen_shot_2018-03-22at112909.png)
 
 * **Bewerken**
 
@@ -250,7 +250,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
   Hiermee wordt de component naar het klembord gekopieerd. Na de plakhandeling wordt de oorspronkelijke component verwijderd.
 
-  ![screen_shot_2018-03-22at113007](assets/screen_shot_2018-03-22at113007.png)
+  ![Knippen](assets/screen_shot_2018-03-22at113007.png)
 
 * **Verwijderen**
 
@@ -272,7 +272,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
    * Het geplakte item wordt boven het item geplakt waar u de plakactie selecteert.
    * De handeling Pate wordt alleen weergegeven als er inhoud op het klembord staat.
 
-  ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
+  ![Plakken](assets/screen_shot_2018-03-22at113553.png)
 
   >[!NOTE]
   >
@@ -288,7 +288,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
   Hiermee kunt u de bovenliggende component van de geselecteerde component selecteren.
 
-  ![screen_shot_2018-03-22at113028](assets/screen_shot_2018-03-22at113028.png)
+  ![Bovenliggend](assets/screen_shot_2018-03-22at113028.png)
 
 * **Layout**
 
@@ -317,11 +317,11 @@ De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige compo
 
 * [Tekstcomponent](/help/sites-authoring/rich-text-editor.md#main-pars-title-24)
 
-  ![screen_shot_2018-03-22at120215](assets/screen_shot_2018-03-22at120215.png)
+  ![Tekstcomponent](assets/screen_shot_2018-03-22at120215.png)
 
 * Afbeeldingscomponent
 
-  ![screen_shot_2018-03-22at120252](assets/screen_shot_2018-03-22at120252.png)
+  ![Afbeeldingscomponent](assets/screen_shot_2018-03-22at120252.png)
 
   >[!NOTE]
   >
@@ -334,11 +334,11 @@ De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige compo
 
   [Door de volledige-schermmodus te openen](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
 
-  ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
+  ![Afbeeldingscomponent volledig scherm](assets/screen_shot_2018-03-22at120529.png)
 
 * Onderdelen die zijn vervaardigd uit meer dan één basisonderdeel, zoals de [Component voor tekst- en afbeeldingsbasis](/help/sites-authoring/default-components-foundation.md#text-image)Vraag u eerst om te bevestigen welke set bewerkingsopties u wilt:
 
-  ![chlimage_1-123](assets/chlimage_1-123.png)
+  ![Bewerkingsopties voor componenten](assets/chlimage_1-123.png)
 
 ### Elementen naar component slepen en neerzetten {#drag-and-drop-assets-into-component}
 
@@ -360,7 +360,7 @@ Voor alle componenten kunt u de modus Volledig scherm openen (en afsluiten):
 
 De **Tekst** component:
 
-![screen_shot_2018-03-22at121616](assets/screen_shot_2018-03-22at121616.png)
+![Teksteditor](assets/screen_shot_2018-03-22at121616.png)
 
 >[!NOTE]
 >
@@ -373,7 +373,7 @@ Een alineacomponent verplaatsen:
 1. Selecteer de alinea die u wilt verplaatsen met Tik en houd de muisknop ingedrukt of klik en houd de muisknop ingedrukt.
 1. Sleep de alinea naar de nieuwe locatie. AEM geeft aan waar de alinea kan worden gedeponeerd. Zet het neer op de gewenste plaats.
 
-   ![screen_shot_2018-03-22at121821](assets/screen_shot_2018-03-22at121821.png)
+   ![alinea-component verplaatsen](assets/screen_shot_2018-03-22at121821.png)
 
 1. Uw alinea wordt verplaatst.
 
@@ -387,7 +387,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
 
 1. Wanneer in **Bewerken** wijze van de plaatsenconsole, die een component selecteert openbaart de toolbar van de component.
 
-   ![screen_shot_2018-03-22at133756](assets/screen_shot_2018-03-22at133756.png)
+   ![Bewerkmodus in formulier](assets/screen_shot_2018-03-22at133756.png)
 
    Klik of tik op **Layout** actie om de lay-out van de component aan te passen.
 
@@ -399,7 +399,7 @@ In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de la
    * De emulatorwerkbalk wordt boven in het scherm weergegeven.
    * De acties van de lay-out in plaats van de standaard geeft acties uit tonen op de componententoolbar.
 
-   ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
+   ![Formuliervoorbeeld op meerdere apparaten](assets/screen_shot_2018-03-22at133843.png)
 
    U kunt nu de lay-out van de component wijzigen zoals u zou doen binnen [lay-outmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
@@ -427,7 +427,7 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
   De componentwerkbalk als de component zich op een pagina bevindt die deel uitmaakt van een live kopie of introductie (op basis van een live kopie). Bijvoorbeeld:
 
-  ![screen_shot_2018-03-22at134339](assets/screen_shot_2018-03-22at134339.png)
+  ![Live kopie](assets/screen_shot_2018-03-22at134339.png)
 
   De optie Overerving annuleren is beschikbaar:
 
@@ -445,7 +445,7 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
   Het configuratiedialoogvenster. Bijvoorbeeld, zoals met het Overgenomen Systeem van de Paragraaf:
 
-  ![chlimage_1-124](assets/chlimage_1-124.png)
+  ![Overgenomen alineasysteem](assets/chlimage_1-124.png)
 
 ## De paginasjabloon bewerken {#editing-the-page-template}
 
@@ -464,7 +464,7 @@ De [De paginamodus Actieve kopie](/help/sites-authoring/author-environment-tools
 
 Bijvoorbeeld:
 
-![screen_shot_2018-03-22at134820](assets/screen_shot_2018-03-22at134820.png)
+![Overervingsstatus van live kopie](assets/screen_shot_2018-03-22at134820.png)
 
 ## Annotaties toevoegen {#adding-annotations}
 
@@ -499,7 +499,7 @@ Wanneer u inhoud bewerkt, kunt u een voorvertoning van de pagina weergeven met b
 
 Tijdens het ontwerpen is de voorvertoningsmodus beschikbaar met het pictogram rechtsboven in de pagina-editor:
 
-![chlimage_1-125](assets/chlimage_1-125.png)
+![Voorvertoning](assets/chlimage_1-125.png)
 
 ### Weergeven als gepubliceerd {#view-as-published}
 
@@ -516,7 +516,7 @@ Een pagina kan worden vergrendeld vanuit:
    1. Selecteer de pagina met [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Selecteer het vergrendelingspictogram.
 
-  ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
+  ![Vergrendelingspictogram](assets/screen_shot_2018-03-22at134928.png)
 
 * **Pagina-editor**
 
@@ -525,7 +525,7 @@ Een pagina kan worden vergrendeld vanuit:
 
 Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt en wanneer u een vergrendelingssymbool bewerkt, wordt deze weergegeven op de werkbalk.
 
-![screen_shot_2018-03-22at135010](assets/screen_shot_2018-03-22at135010.png)
+![Symbool vergrendelen](assets/screen_shot_2018-03-22at135010.png)
 
 >[!CAUTION]
 >
@@ -539,7 +539,7 @@ Het ontgrendelen van een pagina lijkt veel op [de pagina vergrendelen](#locking-
 
 In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en het pictogram Vergrendelen in de Sites-console wordt vervangen door een pictogram **Ontgrendelen**.
 
-![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
+![Ontgrendelen](assets/screen_shot_2018-03-22at134942.png)
 
 >[!CAUTION]
 >

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1992'
+source-wordcount: '1993'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
       * [Opgemaakte tekst uit andere toepassingen kopiëren](#pasteformattedtext)
       * [Tekstgedeelten markeren](#highlightemphasize)
+
    * [Speciale tekens](#specialcharacters)
    * [Sneltoetsen](/help/forms/using/keyboard-shortcuts.md)
 
@@ -147,7 +148,7 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 
 ### Documentfragmenten {#document-fragments}
 
-![](do-not-localize/contentoptionsdocfragments.png)
+![document-fragments-ui-operations](do-not-localize/contentoptionsdocfragments.png)
 
 * **Pijlen omhoog en omlaag**: Pijlt om documentfragmenten omhoog of omlaag te verplaatsen in de interactieve communicatie.
 * **Verwijderen**: Verwijder, indien toegestaan, het documentfragment uit de interactieve communicatie.
@@ -324,20 +325,20 @@ In de volgende tabel wordt het voorbeeld uitgelegd `ccrDocumentInstance` SPI-imp
   <td><p><strong>Voorbeelden van databaseservices</strong></p></td> 
    </tr>
   <tr>
-   <td><p>U kunt een concept voor een interactieve communicatie maken of deze rechtstreeks verzenden. De API voor sparen verrichting controleert als Interactieve Communicatie als ontwerp wordt voorgelegd en het een ontwerp naam omvat. De API roept dan de dienst mySQLDataBaseServiceCRUD met sparen als inputmethode.</p></br><img src="assets/save-as-draft-save-operation.png"/></br>[#$sd1_sf1_dp9]</td>
-   <td><p>De mySQLDataBaseServiceCRUD-service verifieert Opslaan als de invoermethode en genereert een automatisch gegenereerde concept-id en retourneert deze naar AEM. De logica om een ontwerpID te produceren kan variëren gebaseerd op het gegevensbestand.</p></br><img src="assets/save-operation-service.png"/></br>[#$sd1_sf1_dp13]</td>
+   <td><p>U kunt een concept voor een interactieve communicatie maken of deze rechtstreeks verzenden. De API voor sparen verrichting controleert als Interactieve Communicatie als ontwerp wordt voorgelegd en het een ontwerp naam omvat. De API roept dan de dienst mySQLDataBaseServiceCRUD met sparen als inputmethode.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>De mySQLDataBaseServiceCRUD-service verifieert Opslaan als de invoermethode en genereert een automatisch gegenereerde concept-id en retourneert deze naar AEM. De logica om een ontwerpID te produceren kan variëren gebaseerd op het gegevensbestand.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>
-   <td><p>De API voor de updateverrichting wint de status van Interactief Communicatie ontwerp terug en controleert als de Interactieve Communicatie een ontwerpnaam omvat. De API roept de mySQLDataBaseServiceCRUD-service aan om die status in de database bij te werken.</p></br><img src="assets/save-as-draft-update-operation.png"/></br>[#$sd1_sf1_dp17]</td>
+   <td><p>De API voor de updateverrichting wint de status van Interactief Communicatie ontwerp terug en controleert als de Interactieve Communicatie een ontwerpnaam omvat. De API roept de mySQLDataBaseServiceCRUD-service aan om die status in de database bij te werken.</p></br><img src="assets/save-as-draft-update-operation.png"/></td>
    <td><p>De mySQLDataBaseServiceCRUD dienst verifieert Update als inputmethode en bewaart de status van Interactief Communicatie ontwerp in het gegevensbestand.</br></p><img src="assets/update-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>De API voor de get-bewerking controleert of de interactieve communicatie een concept-id bevat. De API roept dan de dienst mySQLDataBaseServiceCRUD met krijgen als inputmethode om de gegevens voor de Interactieve Mededeling terug te winnen.</br></p><img src="assets/save-as-draft-get-operation.png"/></td>
-   <td><p>De mySQLDataBaseServiceCRUD dienst verifieert krijgen als inputmethode en wint de gegevens voor de Interactieve Communicatie terug die op ontwerpidentiteitskaart wordt gebaseerd.</p></br><img src="assets/get-operation-service.png"/></br>[#$sd1_sf1_dp29]</td>
+   <td><p>De mySQLDataBaseServiceCRUD dienst verifieert krijgen als inputmethode en wint de gegevens voor de Interactieve Communicatie terug die op ontwerpidentiteitskaart wordt gebaseerd.</p></br><img src="assets/get-operation-service.png"/></td>
    </tr>
    <tr>
    <td><p>De API voor de bewerking getAll roept de mySQLGetALLData-service aan om gegevens op te halen voor alle interactieve communicatie die in de database is opgeslagen.</br></p><img src="assets/save-as-draft-getall-operation.png"/></td>
-   <td><p>De mySQLGetALLData-service haalt gegevens op voor alle interactieve communicatie die in de database is opgeslagen.</p></br><img src="assets/getall-operation-service.png"/></br>[#$sd1_sf1_dp37]</td>
+   <td><p>De mySQLGetALLData-service haalt gegevens op voor alle interactieve communicatie die in de database is opgeslagen.</p></br><img src="assets/getall-operation-service.png"/></td>
    </tr>
   </tbody>
 </table>

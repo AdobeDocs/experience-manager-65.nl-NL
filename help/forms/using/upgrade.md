@@ -11,9 +11,9 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: a98550c11405e6d0f43ff7ed8905644a3aedd78c
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogel
 
 Het volgende diagram toont de beschikbare verbeteringspaden voor AEM Forms op OSGi:
 
-![](do-not-localize/osgi-upgrade-path.png)
+![OSGi-upgradestroom](do-not-localize/osgi-upgrade-path.png)
 
 U kunt een directe upgrade uitvoeren vanaf:
 

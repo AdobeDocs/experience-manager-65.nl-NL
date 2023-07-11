@@ -10,9 +10,9 @@ discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager 6.0 (AEM 6
 
 Met HTML5-formulieren worden documenten gegenereerd op basis van standaard HTML5-constructies. U kunt HTML5-formulieren weergeven in alle moderne browsers die HTML 25 ondersteunen. Hiervoor hoeft u geen extra browserplug-ins voor de browsers te installeren. Voor meer informatie over ondersteunde browsers raadpleegt u [Ondersteunde clientplatforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
-![](do-not-localize/mobile_form_on_an_ipad_date_14.png)
+![HTML5-formuliervoorbeeld](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 
 ## Belangrijkste mogelijkheden van HTML5-formulieren {#key-capabilities-of-html-forms-br}
 

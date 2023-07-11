@@ -9,16 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: d9608d584e822accc0c198fcf1d1b706d065938e
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '3593'
+source-wordcount: '3594'
 ht-degree: 0%
 
 ---
 
 # Forms-centric workflow op OSGi{#forms-centric-workflow-on-osgi}
 
-![](do-not-localize/header.png)
+![hoofdafbeelding](do-not-localize/header.png)
 
 Ondernemingen verzamelen gegevens uit honderden en duizenden formulieren, verschillende back-endsystemen en online of offline gegevensbronnen. Zij hebben ook een dynamische reeks gebruikers om besluiten over de gegevens te nemen, die herhalende herbeoordeling en goedkeuringsprocessen impliceren.
 
@@ -59,7 +59,7 @@ AEM biedt een intuïtieve gebruikersinterface voor het maken van een workflowmod
 
 ### Een model maken voor een goedkeurings- en revisiewerkstroom {#create-a-model-for-an-approval-and-review-workflow}
 
-Goedkeuring- en revisiewerkstroom is bedoeld voor de taken waarvoor menselijke tussenkomst vereist is om beslissingen te nemen. In het volgende voorbeeld wordt een workflowmodel gemaakt voor een hypotheekleningaanvraag die moet worden ingevuld door een bankagent van het hoofdkantoor. Nadat de aanvraag is ingevuld, wordt deze ter goedkeuring verzonden. Later wordt de goedgekeurde aanvraag met Adobe Sign naar de aanvrager van elektronische handtekeningen gezonden.
+Goedkeuring- en revisiewerkstroom is bedoeld voor de taken waarvoor menselijke tussenkomst vereist is om beslissingen te nemen. In het volgende voorbeeld wordt een workflowmodel gemaakt voor een hypotheekleningaanvraag die moet worden ingevuld door een bankagent voor het hoofdkantoor. Nadat de aanvraag is ingevuld, wordt deze ter goedkeuring verzonden. Later wordt de goedgekeurde aanvraag met Adobe Sign naar de aanvrager van elektronische handtekeningen gezonden.
 
 Het voorbeeld is beschikbaar als een hieronder bijgevoegd pakket. Importeer en installeer het voorbeeld met pakketbeheer. U kunt ook de volgende stappen uitvoeren om handmatig het workflowmodel voor de toepassing te maken:
 
@@ -236,7 +236,7 @@ Een beheerder (een lid van de groep van fd-beheerders) kan een netwerkomslag vor
   </tr>
   <tr>
    <td><span class="uicontrol">Bestanden verwerken met</code></td>
-   <td>Selecteer <span class="uicontrol">Workflow </code>optie. </code></td>
+   <td>Selecteer <span class="uicontrol">Workflow </code>optie. </td>
   </tr>
   <tr>
    <td><span class="uicontrol">Workflowmodel</code></td>

@@ -10,16 +10,16 @@ discoiquuid: e24dbd0e-4481-4f9d-9570-3a4046b3ef35
 docset: aem65
 feature: Adaptive Forms
 exl-id: c039faec-f832-43d5-8a86-22afa3bef2a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
 
 # Zelfstudie: Het aangepaste formulier publiceren {#tutorial-publish-your-adaptive-form}
 
-![](do-not-localize/13-publish-your-adaptive-form-small.png)
+![Hoofdafbeelding](do-not-localize/13-publish-your-adaptive-form-small.png)
 
 Deze zelfstudie is een stap in de [Uw eerste adaptieve formulier maken](https://helpx.adobe.com/experience-manager/6-3/forms/using/create-your-first-adaptive-form.html) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
@@ -69,7 +69,8 @@ AEM [!DNL Forms] een component AEM [!DNL Forms] Container voor het insluiten van
    * Als u alleen het ingesloten formulier op een gepubliceerde sitepagina wijzigt, publiceert u het oorspronkelijke formulier en de wijzigingen worden weerspiegeld in de gepubliceerde sitepagina. De gepubliceerde sitepagina bevat een verwijzing naar het formulier en de pagina hoeft niet opnieuw te worden gepubliceerd.
    * Als u de [!DNL Sites] pagina en het ingesloten formulier, publiceert u de [!DNL Sites] en het formulier.
 
-      ![insluiten-in-aem-sites](assets/embed-in-aem-sites.png)
+     ![insluiten-in-aem-sites](assets/embed-in-aem-sites.png)
+
    Formulier Verzendadres en factuuradres wijzigen toegevoegd aan een AEM [!DNL Sites] pagina.
 
 ## Het adaptieve formulier insluiten in een externe webpagina {#embed-the-adaptive-form-in-an-external-webpage}

@@ -10,7 +10,7 @@ discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
 source-wordcount: '1793'
 ht-degree: 0%
@@ -93,6 +93,7 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
 
       * Heffingen
       * Grafieken
+
    * ItemCalls
    * Nu betalen
    * ValueAddedServices
@@ -162,6 +163,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
    1. Selecteren **.xdp** van de **Opslaan als type** vervolgkeuzelijst.
 
    1. Tikken **Opslaan**.
+
    Nadat u een XDP-sjabloon voor een lay-outfragment hebt gemaakt met de Forms Designer, moet u [uploaden](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) wordt naar de AEM Forms-server gestuurd, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van lay-outfragmenten.
 
 ## Sjabloon maken voor webkanaal {#create-template-for-web-channel}
@@ -231,7 +233,7 @@ Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in te
    1. Opgeven **Bill Details** in het veld Titel.
    1. Selecteren **1** van de **Aantal kolommen** vervolgkeuzelijst.
 
-   1. Tikken ![](/help/forms/using/assets/done_icon.png) om de eigenschappen op te slaan.
+   1. Tikken ![Opslaan](/help/forms/using/assets/done_icon.png) om de eigenschappen op te slaan.
 
    De naam van het deelvenster wordt bijgewerkt naar **Bill Details** in de inhoudsstructuur.
 
@@ -275,4 +277,4 @@ Op basis van het gebruiksgeval moet u de optie **Nu betalen** en **Abonneren** k
 
    ![Toegestane componenten](assets/allowed_components_af_new.png)
 
-1. Tikken ![done_icon](assets/done_icon.png) om de eigenschappen op te slaan.
+1. Tikken ![opslaan](assets/done_icon.png) om de eigenschappen op te slaan.

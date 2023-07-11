@@ -8,9 +8,9 @@ uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 feature: Adaptive Forms
 exl-id: c0a2adcd-528a-41af-99b5-d8b423cd6605
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1324'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Het is eenvoudiger om formulieren te maken en te beheren wanneer een correct pro
 * [Een adaptief formulier voorvertonen en verzenden](/help/forms/using/create-adaptive-form.md)
 
 Aan het einde van het artikel hebt u een formulier dat vergelijkbaar is met het volgende:\
-[![](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
+[![Formuliervoorbeeld in mobiele apparaten](do-not-localize/form-preview-mobile.gif)](do-not-localize/form-preview-mobile.gif)
 
 ## Stap 1: Het adaptieve formulier maken {#step-create-the-adaptive-form}
 

@@ -5,9 +5,9 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1718'
 ht-degree: 0%
 
 ---
@@ -393,163 +393,163 @@ U moet lid zijn van de [form-power-user-group](forms-groups-privileges-tasks.md)
   </tr>
   <tr>
    <td>Tekstveld</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Numeriek veld</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Numerieke stap</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Keuzerondje</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Telefoon</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Overschakelen</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Knop</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
   </tr>
   <tr>
    <td>Selectievakje</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Vervolgkeuzelijst</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Afbeeldingskeuze</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
   </tr>
   <tr>
    <td>Datuminvoerveld</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Datumkiezer</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Bestandsbijlage</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
   </tr>
   <tr>
    <td>Afbeelding</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -558,9 +558,9 @@ U moet lid zijn van de [form-power-user-group](forms-groups-privileges-tasks.md)
   </tr>
   <tr>
    <td>Tekenen</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>
@@ -569,9 +569,9 @@ U moet lid zijn van de [form-power-user-group](forms-groups-privileges-tasks.md)
   </tr>
   <tr>
    <td>Deelvenster</td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
-   <td><img alt="" src="assets/yes_tick.png" /></td>
+   <td><img alt="Pictogram Ja" src="assets/yes_tick.png" /></td>
    <td> </td>
    <td> </td>
    <td> </td>

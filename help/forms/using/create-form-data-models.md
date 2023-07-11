@@ -10,16 +10,16 @@ discoiquuid: 7c392909-ff84-4411-b44f-16f99dffac54
 docset: aem65
 feature: Form Data Model
 exl-id: 7f5978c3-6c9f-4ce4-b0fb-660ac1d49244
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '906'
 ht-degree: 0%
 
 ---
 
 # Formuliergegevensmodel maken{#create-form-data-model}
 
-![](do-not-localize/data-integeration.png)
+![hoofdafbeelding](do-not-localize/data-integration.png)
 
 AEM Forms-gegevensintegratie biedt een intuïtieve gebruikersinterface voor het maken van en werken met formuliergegevensmodellen. Een formuliergegevensmodel is gebaseerd op gegevensbronnen voor gegevensuitwisseling; u kunt echter wel een formuliergegevensmodel maken met of zonder gegevensbron. Er zijn twee benaderingen om van gegevensmodel afhankelijk van tot stand te brengen of u gegevensbronnen hebt gevormd:
 

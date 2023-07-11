@@ -10,9 +10,9 @@ discoiquuid: 76d178d1-8e40-41b3-80d4-66b2f8d04211
 docset: aem65
 feature: Adaptive Forms
 exl-id: 096f61b0-59f4-4699-9093-8fb1ed81fded
-source-git-commit: 9ee8e79777b89fbf4d6e5b5fd1dbb1ef3bc9ad5d
+source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,7 @@ U kunt tikken op de knop **Configureren** ![vormen](assets/configure.png) pictog
 >[!NOTE]
 >
 >Handtekeningen worden altijd opgeslagen in de PNG-indeling.
+>
 
 ## Een adaptief formulier configureren voor het gebruik van de Krabbelhandtekening {#configure-an-adaptive-form-to-use-scribble-signature}
 
@@ -54,12 +55,14 @@ U kunt tikken op de knop **Configureren** ![vormen](assets/configure.png) pictog
    >[!NOTE]
    >
    >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
+   >
 
-1. Tik in de Inhoudsbrowser op **Formuliercontainer** en tik op de knop **Configureren** ![](/help/forms/using/assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** optie. Tik op Gereed ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan.
+1. Tik in de Inhoudsbrowser op **Formuliercontainer** en tik op de knop **Configureren** ![vormen](/help/forms/using/assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeren naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en deselecteer de **Adobe Sign inschakelen** optie. Tik op Gereed ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan.
 
    >[!NOTE]
    >
    >Wanneer u een component Handtekeningstap toevoegt aan een adaptief formulier, wordt de optie Adobe Sign inschakelen automatisch geselecteerd.
+   >
 
 1. Tik op de knop **Configureren** ![vormen](assets/configure.png) pictogram. De eigenschappenbrowser wordt geopend en de eigenschappen voor stap Handtekening worden weergegeven. Configureer de volgende eigenschappen:
 

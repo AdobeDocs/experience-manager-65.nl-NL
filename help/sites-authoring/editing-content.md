@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
 workflow-type: tm+mt
 source-wordcount: '3080'
 ht-degree: 5%
@@ -270,7 +270,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
    * U kunt op dezelfde pagina of op een andere pagina plakken.
    * Het geplakte item wordt boven het item geplakt waar u de plakactie selecteert.
-   * De handeling Pate wordt alleen weergegeven als er inhoud op het klembord staat.
+   * De handeling Plakken wordt alleen weergegeven als het Klembord inhoud bevat.
 
   ![Plakken](assets/screen_shot_2018-03-22at113553.png)
 

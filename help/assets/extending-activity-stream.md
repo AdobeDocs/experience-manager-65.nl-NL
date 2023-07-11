@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Asset Management
 exl-id: 2a08a7c1-8be9-42d1-9983-f9c8b12ea4e8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Deze integratie kan CPU- en schijfruimte in beslag nemen, bijvoorbeeld bij het i
 
 ## Ondersteunde handelingsgebeurtenissen {#supported-action-events}
 
-De volgende gebeurtenissen kunnen worden geconfigureerd om te worden opgenomen:
+U kunt de volgende gebeurtenissen configureren die moeten worden opgenomen:
 
 * Licentie geaccepteerd (AANVAARD)
 * Gemaakte activa (ASSET_CREATED)
@@ -37,7 +37,7 @@ De volgende gebeurtenissen kunnen worden geconfigureerd om te worden opgenomen:
 * Oorspronkelijk bijgewerkt element (ORIGINAL_UPDATED)
 * Vertoning van element bijgewerkt (RENDITION_UPDATED)
 * Vertoning van element verwijderd (RENDITION_REMOVED)
-* Submiddel bijgewerkt (SUBASSET_UPDATED)
+* Subelement bijgewerkt (SUBASSET_UPDATED)
 * Subelement verwijderd (SUBASSET_REMOVED)
 
 ## Configureren [!DNL Assets] gebeurtenissen opnemen {#configuring-aem-assets-events-recording}
@@ -52,10 +52,10 @@ De [Webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 
 1. Controleren **[!UICONTROL Enables this service]**.
 
-1. Controleren welke **[!UICONTROL Event Types]** u wilt worden opgenomen in de gebruikersactiviteitsstroom.
+1. Controleren welke **[!UICONTROL Event Types]** die u in de stroom van de gebruikersactiviteit wilt worden geregistreerd.
 
 1. Klik op **[!UICONTROL Save]**.
 
 ## Opgenomen gebeurtenissen lezen {#reading-recorded-events}
 
-De opgenomen gebeurtenissen worden opgeslagen als activiteiten. U kunt ze programmatisch lezen met de opdracht [ActivityManager-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+De opgenomen gebeurtenissen worden opgeslagen als activiteiten. U kunt ze programmatisch lezen met de opdracht [ActivityManager-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).

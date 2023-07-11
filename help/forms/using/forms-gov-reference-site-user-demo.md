@@ -1,16 +1,12 @@
 ---
 title: We.Gov en We.Finance
-seo-title: We.Gov and We.Finance reference site walkthrough
 description: Gebruik fictieve gebruikers en groepen om AEM Forms-taken uit te voeren met het Demopakket We.Gov en We.Finance.
-seo-description: Use fictitious users and groups to perform AEM Forms tasks using We.Gov and We.Finance demo package.
-uuid: 797e301a-36ed-4bae-9ea8-ee77285c786d
 contentOwner: anujkapo
-discoiquuid: ddb3778b-be06-4cde-bc6e-0994efa42b18
 docset: aem65
 exl-id: 288d5459-bc69-4328-b6c9-4b4960bf4977
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2476'
 ht-degree: 0%
 
 ---
@@ -32,7 +28,7 @@ De referentiesite instellen zoals beschreven in [De referentiesite We.Gov en We.
 * AEM Forms
 
    * Gegevens vastleggen
-   * (Optioneel) Gegevensintegratie (MS Dynamics)
+   * (Optioneel) Gegevensintegratie (MS® Dynamics)
    * (Optioneel) Adobe Sign
 
 * Workflow
@@ -79,10 +75,10 @@ De volgende groepen zijn eveneens opgenomen:
 1. **Imiteren**: Gedefinieerde gebruikers en groepen in AEM demo.
 1. **Knop**: Gekleurde rechthoek of omcirkelde pijl voor navigatie.
 1. **Klikken**: Een handeling uitvoeren in het gebruikersartikel.
-1. **Koppelingen**: Deze bevindt zich boven aan het hoofdmenu op de site Web.Gov.
+1. **Koppelingen**: Bovenaan in het hoofdmenu op de website Web.Gov.
 1. **Gebruikersinstructies**: Een reeks numerieke stappen om door het verhaal van de gebruiker te navigeren.
 1. **Forms Portal**: *https://&lt;aemserver>:&lt;port>/content/we-gov/formsportal.html*
-1. **Mobiele weergave**:Wij.Gov-gebruikers kunnen een mobiele weergave repliceren met een browser van een andere grootte.
+1. **Mobiele weergave**:Wij.Gov-gebruikers kunnen een mobiele weergave repliceren met een browser waarvan de grootte is gewijzigd.
 1. **Bureaubladweergave**: We gov-gebruikers bekijken de demo op een laptop of desktop.
 1. **Pre-screener-formulier**: Formulier op de startpagina van de website Web.Gov.
 1. **Adaptief formulier**: Inschrijvingsaanvraagformulier voor We.gov-demo.
@@ -101,7 +97,7 @@ De volgende groepen zijn eveneens opgenomen:
 
 ## automatede form conversion (Camila) {#automated-forms-conversion}
 
-**Deze sectie**: Camila de CX Lead heeft een bestaande op PDF gebaseerde vorm die werd gebruikt als onderdeel van een op papier gebaseerd proces. Als onderdeel van een moderniseringsinspanning wil ze dit PDF formulier gebruiken om automatisch een nieuwe, moderne Adaptieve Forms te creëren.
+**Deze sectie**: Camila de CX Lead heeft een bestaande op PDF gebaseerde vorm die werd gebruikt als onderdeel van een op papier gebaseerd proces. Als onderdeel van een moderniseringsinspanning wil Camila dit PDF-formulier gebruiken om automatisch een nieuw modern Adaptief Forms te creëren.
 
 ### automatede form conversion - We.Gov (Camila) {#automated-forms-conversion-wegov}
 
@@ -110,7 +106,7 @@ De volgende groepen zijn eveneens opgenomen:
 1. Aanmelden met:
    * **Gebruiker**: camila.santos
    * **Wachtwoord**: password
-1. Selecteer op de hoofdpagina Forms > Forms &amp; Documents > AEM Forms Web.gov Forms > AFC.
+1. Kies op de hoofdpagina Forms > Forms &amp; Documents > AEM Forms Web Forms > AFC.
 1. Camila uploadt de PDF naar AEM Forms.
 
    ![Formulier uploaden](assets/aftia-upload-form.jpg)
@@ -121,7 +117,7 @@ De volgende groepen zijn eveneens opgenomen:
    >
    >De instellingen in AFC zijn vooraf geconfigureerd voor de eindgebruiker, wat betekent dat deze instellingen niet mogen worden gewijzigd.
 
-   * **Optioneel**: Als u het Accessible Ultramarine-thema wilt gebruiken, klikt u gewoon op het pictogram Een adaptief formulierthema opgeven en selecteert u het Accessible-Ultramarine-thema dat wordt weergegeven in de lijst met opties.
+   * **Optioneel**: Als u het Accessible Ultramarine-thema wilt gebruiken, klikt u gewoon op Een adaptief formulierthema opgeven en selecteert u het Accessible-Ultramarine-thema dat wordt weergegeven in de lijst met opties.
 
    ![Conversie starten](assets/aftia-start-conversion.jpg)
 
@@ -133,7 +129,7 @@ De volgende groepen zijn eveneens opgenomen:
 
    ![Omzetting controleren](assets/aftia-review-conversion.jpg)
 
-1. Camilla begint vervolgens met het bewerken van het formulier. Ze selecteert Hoofdvenster > Bewerken (de moersleutel) > Tabs bovenaan in het vervolgkeuzemenu Indeling deelvenster > Selecteert het selectievakje.
+1. Camilla begint vervolgens met het bewerken van het formulier en selecteert Hoofdvenster > Bewerken (de moersleutel) > Tabs bovenaan in het vervolgkeuzemenu Indeling van deelvenster > Selecteert het selectievakje.
 
    ![Eigenschappen van revisie](assets/aftia-review-properties.jpg)
 
@@ -143,18 +139,18 @@ De volgende groepen zijn eveneens opgenomen:
 
 ### Formuliergegevensmodel en gegevensbronnen (Camila) {#data-sources}
 
-**Deze sectie**: Nadat het document is geconverteerd en een adaptieve vorm heeft geproduceerd, moet Camila het adaptieve formulier vervolgens verbinden met een gegevensbron.
+**Deze sectie**: Nadat het document is geconverteerd en een adaptieve vorm heeft verkregen, moet Camila het adaptieve formulier verbinden met een gegevensbron.
 
 1. Camila opent de eigenschappen op het formulier dat is geconverteerd naar [automatede form conversion - We.Gov](#automated-forms-conversion-wegov).
 
 1. In Camila selecteert u vervolgens Formuliermodel > Formuliergegevensmodel selecteren in het vervolgkeuzemenu Selecteert de FDM voor inschrijving via Web.gov in de lijst met opties.
 
-1. Klik op de knop Opslaan en sluiten.
+1. Klik op Opslaan en sluiten.
 
    ![FDM-selectie](assets/aftia-select-fdm.jpg)
 
 1. Camila klikt op de knop **output** , selecteert het aangepaste formulier en klikt u op **Bewerken** om het ingevulde We.Gov-formulier te openen.
-1. Camila selecteert een adaptief formulierveld en klikt op ![Pictogram Configureren](assets/configure-icon.svg). Ze maakt een binding met de entiteiten van het formuliergegevensmodel met de **Bindverwijzing** veld. Ze herhaalt deze stap voor alle velden in het adaptieve formulier.
+1. Camila selecteert een adaptief formulierveld en klikt op ![Pictogram Configureren](assets/configure-icon.svg) en maakt binding met de formuliergegevensmodelentiteiten met de **Bindverwijzing** veld. Camila herhaalt deze stap voor alle velden in het adaptieve formulier.
 
 ### Toegankelijkheidstest formulier (Camila) {#form-accessibility-testing}
 
@@ -186,7 +182,7 @@ Camila controleert ook of de gemaakte inhoud correct en volledig toegankelijk is
 
 ![Fictieve gebruiker](/help/forms/using/assets/aya_tan_new-1.png)
 
-**Deze sectie**: Aya is een burger. Ze hoort van een vriend dat ze in aanmerking komt voor een service van een overheidsinstelling. Aya navigeert vanaf haar mobiele telefoon naar de website We.Gov voor meer informatie over services waarvoor ze in aanmerking komt.
+**Deze sectie**: Aya is een burger en hoort van een vriend dat ze in aanmerking komt voor een service van een overheidsinstelling. Aya navigeert vanaf haar mobiele telefoon naar de website We.Gov voor meer informatie over services waarvoor ze in aanmerking komt.
 
 ### We.Gov Pre-Screener (Aya) {#aya-user-story-we-gov-pre-screener}
 
@@ -200,8 +196,8 @@ Aya beantwoordt een paar vragen om haar geschiktheid te bevestigen door een kort
    >
    >Als de gebruiker meer dan $200.000/jaar verdient, komen ze niet in aanmerking.
 
-1. Klik op de knop **Komt ik in aanmerking?**&quot;.
-1. Klik op de knop **Nu toepassen**&quot; om verder te gaan.
+1. Klikken **Komt ik in aanmerking?**.
+1. Klikken **Nu toepassen** om verder te gaan.
 
    ![Koppeling Nu toepassen](/help/forms/using/assets/apply_now_link.png)
 
@@ -239,14 +235,14 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 ## Bureaubladdemo {#desktop-demo}
 
-**Deze sectie:** Terug thuis heeft Aya de informatie gevonden die ze nodig heeft en de toepassing hervat vanaf haar bureaublad. Navigeert altijd naar de online formulierportal om haar toepassing te hervatten. Met een eenvoudige aanpassing kunnen agentschappen ook automatisch een koppeling genereren en e-mailen om de toepassing te hervatten.
+**Deze sectie:** Terug thuis heeft Aya de informatie gevonden die ze nodig heeft en de toepassing hervat vanaf haar bureaublad. Navigeert altijd naar de online Forms Portal om haar toepassing te hervatten. Met een eenvoudige aanpassing kunnen agentschappen ook automatisch een koppeling genereren en e-mailen om de toepassing te hervatten.
 
 ### Vervolg adaptief formulier (Aya) {#aya-user-story-continued-adaptive-form}
 
 **Gebruikersinstructies:**
 
 1. Navigeren naar *https://&lt;aemserver>:&lt;port>/content/we-gov/home.html*
-1. Selecteer op de navigatiebalk de optie &quot;**Online services**&quot;.
+1. Selecteer op de navigatiebalk de optie **Online services**.
 1. Selecteer in het deelvenster &quot;Concept Forms&quot; de bestaande &quot;Inschrijvingstoepassing voor gezondheidsvoordelen&quot;.
 
    ![Inschrijvingsaanvraag voor gezondheidsvoordelen](/help/forms/using/assets/enrollment_application.png)
@@ -255,7 +251,7 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
    **Gebruikersinstructies:**
 
-1. Klik op Cirkel CTA rechts om naar de volgende sectie te gaan.
+1. Klik met de rechtermuisknop op Cirkel-CTA om naar de volgende sectie te gaan.
 
    ![Rechthoekcirkel CTA](/help/forms/using/assets/right_circle_cta_new.png)
 
@@ -267,7 +263,7 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
    >
    >Wanneer Aya het veld Telefoonnummer invult, moet ze het invullen als een doorlopend getal van 11 cijfers zonder streepjes, spaties of afbreekstreepjes.
 
-   Na het verzenden van Aya ontvangt je pagina Bedankt. Desgewenst ontvangt zij ook een e-mail die zij kan openen om het document van registratie elektronisch met Adobe Sign te ondertekenen.
+   Na verzending ontvangt Aya de pagina Bedankt. Aya ontvangt desgewenst ook een e-mail die ze kan openen om het document van registratie elektronisch met Adobe Sign te ondertekenen.
 
 ### Optioneel: Adobe Sign (Aya) {#adobe-sign}
 
@@ -280,10 +276,10 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 
 **Gebruikersinstructies:**
 
-1. Controleer &quot;**Ik ga akkoord**&quot;.
-1. Klik op ‘**Accepteren**&quot;.
+1. Controleren **Ik ga akkoord**.
+1. Klikken **Accepteren**.
 1. Blader naar de onderkant van het gereviseerde document.
-1. Klik op de gemarkeerde gele tab om het document te ondertekenen.
+1. Klik op het gemarkeerde gele tabblad, zodat u het document kunt ondertekenen.
 
    ![Het document ondertekenen](/help/forms/using/assets/sign_document_new.png) ![Onderteken het testdocument](/help/forms/using/assets/sign_test_document.png)
 
@@ -298,34 +294,34 @@ Aya moet sommige documenten thuis herzien alvorens zij de toepassing van het de 
 **Gebruikersinstructies:**
 
 1. Navigeren naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik &quot;**Afmelden**&quot;, of de &quot;**Imiteren als**&quot; als u momenteel bent aangemeld bij een beheerder.
+1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik de knop **Afmelden** of de **Imiteren als** als u momenteel bent aangemeld bij een beheerder.
 
    1. Aanmelden met:
 
       1. **Gebruiker:** george.lang
       1. **Wachtwoord:** password
+
    1. Of imiteren:
 
-      1. Typ &quot;**George**&quot; in de &quot;**Imiteren als**&quot;.
+      1. Type `George` in de **Imiteren als** veld.
 
       1. Klik op OK om u voor te doen.
 
-
 1. Klik in de rechterbovenhoek op het pictogram Melding (bel).
-1. Klik op ‘**Alles weergeven**&quot; om naar Inbox te navigeren.
-1. Open in het vak Inbox de laatste &quot;**Evaluatie van de gezondheidsuitkeringen**&quot; taak.
+1. Klikken **Alles weergeven** om naar Inbox te navigeren.
+1. Open vanuit de Postvak IN de laatste **Evaluatie van de gezondheidsuitkeringen** taak.
 
    ![Evaluatie van de gezondheidsuitkeringen](/help/forms/using/assets/health_benefits.png)
 
-### Optioneel: AEM Inbox &amp; MS Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
+### Optioneel: AEM Inbox &amp; MS® Dynamics (George) {#george-user-story-aem-inbox-and-ms-dynamics}
 
-Dankzij gegevensintegratie en geautomatiseerde workflows wordt de toepassing van Aya weergegeven, samen met een CRM-record dat automatisch is gegenereerd op het moment dat de gegevens werden verzonden.
+Dankzij gegevensintegratie en geautomatiseerde workflows wordt de toepassing van Aya samen met een CRM-record weergegeven die automatisch is gegenereerd op het moment dat de gegevens werden verzonden.
 
 **Gebruikersinstructies:**
 
 1. Open en inspecteer het alleen-lezen adaptieve formulier.
-1. Klik op de knop &quot;**MS Dynamics openen**&quot; om de record van MS Dynamics in een nieuw venster te openen.
-1. In CRM kunt u alle informatie zien kan worden bijgewerkt
+1. Klikken **MS® Dynamics openen** om de record voor MS® Dynamics in een nieuw venster te openen.
+1. In CRM, ziet u alle informatie die kan worden bijgewerkt.
 
    1. Voeg desgewenst enkele revisienotities rechtstreeks toe in Dynamiek.
 
@@ -339,7 +335,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 **Gebruikersinstructies:**
 
-1. Ga naar de linkerbovenhoek en klik op &quot;**Goedkeuren**&quot; om de aanvraag goed te keuren.
+1. Ga naar de linkerbovenhoek en klik op **Goedkeuren** om de aanvraag goed te keuren.
 1. In de modale modus kunt u een bericht voor de CX-lead achterlaten.
 1. Klik op Gereed.
 1. (Burgerrol) Open uw e-mailclient om de e-mail te bekijken die naar Aya is verzonden.
@@ -350,45 +346,45 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 ![Camila (CX lead)](/help/forms/using/assets/camila_santos-1.png)
 
-**Deze sectie:** Camila de CX Lead organiseert een welkome telefoongesprek met Aya om uit te leggen hoe gebruik kan worden gemaakt van de overheidsdiensten waarvoor ze is goedgekeurd.
+**Deze sectie:** Camila de CX Lead organiseert een welkome telefoongesprek met Aya om uit te leggen hoe u overheidsdiensten kunt gebruiken waarvoor ze is goedgekeurd.
 
-### (Optioneel) AEM Inbox en MS Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
+### (Optioneel) AEM Inbox &amp; MS® Dynamics {#camila-user-story-aem-inbox-ms-dynamics}
 
 **Gebruikersinstructies:**
 
 1. Navigeren naar *https://&lt;aemserver>:&lt;port>/aem/start.html*
-1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik &quot;**Afmelden**&quot;, of de &quot;**Imiteren als**&quot; als u momenteel bent aangemeld bij een beheerder.
+1. Klik op het gebruikerspictogram (rechterbovenhoek) en gebruik de knop **Afmelden** of de **Imiteren als** als u momenteel bent aangemeld bij een beheerder.
 
    1. Aanmelden met:
 
       1. **Gebruiker**: camila.santos
       1. **Wachtwoord**: password
+
    1. Of imiteren:
 
-      1. Typ &quot;**Camila**&quot; in de &quot;**Imiteren als**&quot;.
+      1. Type `Camila` in de **Imiteren als** veld.
 
       1. Klik op OK om u voor te doen.
 
-
 1. Klik in de rechterbovenhoek op het pictogram Melding (bel).
-1. Klik op ‘**Alles weergeven**&quot; om naar Inbox te navigeren.
-1. Open in het vak Inbox de laatste &quot;**Nieuwe contactgoedkeuring**&quot; taak.
+1. Klikken **Alles weergeven** om naar Inbox te navigeren.
+1. Open vanuit de Postvak IN de laatste **Nieuwe contactgoedkeuring** taak.
 
 ![Nieuwe contactgoedkeuring](/help/forms/using/assets/new_contact_approval.png)
 
 **(Optioneel) Gebruikersinstructies:**
 
 1. Open en inspecteer het alleen-lezen adaptieve formulier.
-1. Klik op de knop &quot;**MS Dynamics openen**&quot; om de record van MS Dynamics in een nieuw venster te openen.
-1. In CRM kunt u alle informatie zien kan worden bijgewerkt
+1. Klikken **MS® Dynamics openen** om de record voor MS® Dynamics in een nieuw venster te openen.
+1. In CRM kunt u alle informatie zien die kan worden bijgewerkt.
 
-   1. Naar keuze, voeg direct een nieuwe vraagactiviteit in Dynamiek toe.
-   1. Open &quot;**Activiteiten**&quot;.
-   1. Klik op de knop &quot;**Nieuwe telefoongesprek**&quot;.
+   1. Naar keuze, voeg direct een vraagactiviteit in Dynamiek toe.
+   1. Open de **Activiteiten** sectie.
+   1. Klikken **Nieuwe telefoongesprek**.
    1. Voeg telefoongesprekdetails toe.
    1. Sla het venster op en sluit het.
 
-1. Navigeer terug in AEM naar de linkerbovenhoek en klik op &quot;**Verzenden**&quot; om de aanvraag in te dienen.
+1. Navigeer terug in AEM naar de linkerbovenhoek en klik op **Verzenden** om de aanvraag in te dienen.
 1. In de modale modus kunt u een bericht achterlaten.
 1. Klik op Gereed.
 
@@ -405,9 +401,9 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 1. Zoek en open de welkomstkit-e-mail.
 1. Schuif naar PDF-bijlage onder aan de pagina.
 1. Klik om de bijlage van de PDF te openen.
-1. Blader weer omhoog in uw e-mailclient en klik op &quot;**Welkom-kit online weergeven**&quot;.
+1. Een back-up in uw e-mailclient maken en klikken **Welkom-kit online weergeven**.
 
-   1. Hiermee wordt de webkanaalversie van hetzelfde document geopend.
+   1. Hierdoor wordt de webkanaalversie van hetzelfde document geopend.
 
 1. Voor een snelle verwijzing naar PDF direct:
 
@@ -429,7 +425,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 1. Navigeer naar uw e-mailclient.
 1. Zoek en open het e-mailbericht Herinnering voor vernieuwen.
-1. Klik op de knop &quot;**Een nieuwe toepassing verzenden**&quot; om het adaptieve formulier te openen.
+1. Klikken **Een nieuwe toepassing verzenden** zodat u het adaptieve formulier kunt openen.
 
    1. Deze sectie wordt opzettelijk leeg gelaten ter ondersteuning van gegevens die vooraf in fase 2 worden ingevuld.
 
@@ -443,15 +439,15 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
 **Deze sectie**: Camila navigeert aan de pagina van Gegevensbronnen om de gegevens te bevestigen die de server binnen het gegevensbestand van Derby heeft herhaald.
 
-1. Nadat de gebruikerservaring is voltooid, navigeert Camila naar het tabblad Gegevensbronnen in AEM Forms (**Forms** > **Gegevensintegratie**)
+1. Nadat de gebruikerservaring volledig is en de gebruikersinzending wordt voltooid, navigeert Camila naar het lusje van Gegevensbronnen binnen AEM Forms (**Forms** > **Gegevensintegratie**)
 
-1. Camila selecteert vervolgens AEM Forms **We.gov FDM** en bewerk vervolgens de **We.gov-inschrijving voor FDM**.
+1. Camila selecteert vervolgens AEM Forms We.gov FDM en bewerkt vervolgens het **We.gov-inschrijving voor FDM**.
 
 1. Camila selecteert vervolgens de **Contact** > **Leesservice** te testen.
 
    ![Contact opnemen met leesservice](assets/aftia-contact-read-service.jpg)
 
-1. Camila verstrekt dan de testdienst van contactidentiteitskaart en klikt dan op de knoop van de Test. 1 of 2, bijvoorbeeld als u het formulier hebt verzonden. Als u het formulier niet hebt verzonden, worden er geen gegevens geretourneerd.
+1. Camila voorziet dan de testdienst van contactidentiteitskaart en klikt dan **Testen**. 1 of 2, bijvoorbeeld als u het formulier hebt verzonden. Als u het formulier niet hebt verzonden, worden er geen gegevens geretourneerd.
 
    ![Contact opnemen met leesservice](assets/aftia-test-service.jpg)
 
@@ -486,25 +482,25 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 ### Adobe Analytics Sites Reporting (Camila) {#camila-reviews-sites-reporting-we-gov-adobe-analytics}
 
 1. Navigeren naar *https://&lt;aemserver>:&lt;port>/sites.html/content*
-1. Selecteer &quot;**AEM Forms Web.Gov-site**&quot; om de sitepagina&#39;s weer te geven.
-1. Selecteer een van de sitepagina (bijvoorbeeld Home) en kies &quot;**Analyse en Recommendations**&quot;.
+1. Selecteren **AEM Forms Web.Gov-site** om de sitepagina&#39;s weer te geven.
+1. Selecteer een van de sitepagina&#39;s (bijvoorbeeld Home) en kies **Analyse en Recommendations**.
 
    ![Analyse en aanbeveling](/help/forms/using/assets/analytics_recommendation.jpg)
 
-1. Op deze pagina wordt opgehaalde informatie van Adobe Analytics weergegeven die betrekking heeft op de AEM Sites-pagina (OPMERKING: Deze informatie wordt door het ontwerp periodiek vernieuwd vanuit Adobe Analytics en wordt niet in real-time weergegeven).
+1. Op deze pagina ziet u opgehaalde informatie uit Adobe Analytics die betrekking heeft op de AEM Sites-pagina (OPMERKING: deze informatie wordt door het ontwerp periodiek vernieuwd vanuit Adobe Analytics en niet in real time weergegeven).
 
    ![Metrische Adobe Analytics-sleutel](/help/forms/using/assets/analytics_key_metrics.jpg)
 
-1. Terug op de pagina van de paginamening (die in stap 3 wordt betreden), kunt u de informatie van de paginamening ook bekijken door de vertoning te veranderen plaatsend om punten in &quot;**Lijstweergave**&quot;.
-1. Zoek de &quot;**Weergave**&quot; vervolgkeuzemenu en selecteer &quot;**Lijstweergave**&quot;.
+1. Terug op de pagina van de paginaweergave (die in stap 3 wordt geopend), kunt u de informatie van de paginaweergave ook bekijken door de weergave-instelling te wijzigen zodat de items in **Lijstweergave**.
+1. Zoek de **Weergave** vervolgkeuzelijst en selecteert u **Lijstweergave**.
 
    ![Lijstweergave in het vervolgkeuzemenu Weergave](/help/forms/using/assets/list_view_view_dropdown.jpg)
 
-1. Selecteer in hetzelfde menu de optie &quot;**Weergave-instelling**&quot; en selecteert u de kolommen die u wilt weergeven in het menu &quot;**Analyse**&quot;.
+1. Selecteer in hetzelfde menu de optie **Weergave-instelling** en selecteer de kolommen die u wilt weergeven in het menu **Analyse** sectie.
 
    ![De weergave van kolommen configureren](/help/forms/using/assets/view_setting_analytics.jpg)
 
-1. Klik op ‘**Bijwerken**&quot; om de nieuwe kolommen beschikbaar te maken.
+1. Klikken **Bijwerken** om de nieuwe kolommen beschikbaar te maken.
 
    ![Nieuwe kolommen beschikbaar maken](/help/forms/using/assets/new_columns_available.jpg)
 
@@ -514,7 +510,7 @@ George keurt de aanvraag van Aya goed en dankzij een bestaande geautomatiseerde 
 
    *https://&lt;aemserver>:&lt;port>/aem/forms.html/content/dam/formsanddocuments/adobe-gov-forms*
 
-1. Selecteer &quot;**Inschrijvingsaanvraag voor gezondheidsvoordelen**&quot; en selecteert u het &quot;**Analyserapport**&quot;.
+1. Selecteer **Inschrijvingsaanvraag voor gezondheidsvoordelen** adaptief formulier en selecteer de **Analyserapport** optie.
 
    ![Inschrijvingsaanvraag voor gezondheidsvoordelen](/help/forms/using/assets/analytics_report_benefits.jpg)
 

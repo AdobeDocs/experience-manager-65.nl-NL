@@ -1,19 +1,15 @@
 ---
 title: Analyse met externe providers
-seo-title: Analytics with External Providers
 description: Meer informatie over Analytics met externe providers.
-seo-description: Learn about Analytics with External Providers.
-uuid: 31a773ca-901e-45f2-be8f-951c26f9dbc5
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: bab465bc-1ff4-4f21-9885-e4a875c73a8d
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: ec4f24528089fe3de639b974ff4ab6f8807fc7fc
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -28,13 +24,13 @@ Verschillende configuraties buiten de box zijn beschikbaar voor integratie met d
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
 * [Adobe Target](/help/sites-administering/target.md)
 
-U kunt ook uw eigen instantie van de **Algemene analyseclusters** om nieuwe de dienstconfiguraties te bepalen.
+U kunt ook uw eigen instantie van de **Algemene analyseclusters** om een nieuwe de dienstconfiguratie te bepalen.
 
-De informatie wordt vervolgens verzameld door middel van kleine codefragmenten die aan de webpagina&#39;s worden toegevoegd. Bijvoorbeeld:
+De informatie wordt vervolgens verzameld door kleine codefragmenten die aan de webpagina&#39;s worden toegevoegd. Bijvoorbeeld:
 
 >[!CAUTION]
 >
->Scripts mogen niet zijn ingesloten in `script` -tags.
+>Scripts niet opnemen in `script` -tags.
 
 ```
 var _gaq = _gaq || [];
@@ -57,27 +53,27 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 
 >[!CAUTION]
 >
->De demosite Geometrixx-buiten is zo geconfigureerd dat de kenmerken die worden opgegeven in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` endtag) in de bijbehorende `js` script.
+>De demosite Geometrixx-buiten is zo geconfigureerd dat de kenmerken die worden opgegeven in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` eindtag) in de bijbehorende `js` script.
 >
 >Als u uw eigen `/apps` niet overerven van de standaardpagina-component ( `/libs/foundation/components/page`) moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` scripts worden opgenomen, bijvoorbeeld door `cq/cloudserviceconfigs/components/servicescomponents`of met een soortgelijk mechanisme.
 >
->Zonder dit, zal geen van de diensten (Generic, Analytics, Target, etc.) werken.
+>Zonder dit, zal geen van de diensten (Generic, Analytics, Doel, etc.) werken.
 
-## Een nieuwe service maken met een algemeen fragment {#creating-a-new-service-with-a-generic-snippet}
+## Een service maken met een algemeen fragment {#creating-a-new-service-with-a-generic-snippet}
 
 Voor de basisconfiguratie:
 
 1. Open de **Gereedschappen** console.
-1. Vanuit het linkervenster uitvouwen **Configuraties van Cloud Services**.
-1. Dubbelklikken op **Generic Analytics-fragment** om de pagina te openen:
+1. Vouw vanuit het linkerdeelvenster uit **Configuraties van Cloud Services**.
+1. Dubbelklikken **Generic Analytics-fragment** om de pagina te openen:
 
    ![Generic Analytics-fragment](assets/analytics_genericoverview.png)
 
-1. Klik op + om een nieuwe configuratie toe te voegen gebruikend de dialoog; minimaal een naam toewijzen, bijvoorbeeld google analytics:
+1. Klik op + om een nieuwe configuratie toe te voegen met behulp van het dialoogvenster. Wijs ten minste een naam toe, bijvoorbeeld Google Analytics:
 
    ![Configuratie maken](assets/analytics_addconfig.png)
 
-1. Klikken **Maken**, wordt het dialoogvenster met fragmenten direct geopend. U kunt het juiste JavaScript-fragment in het veld plakken:
+1. Klikken **Maken**, wordt het dialoogvenster Fragment direct geopend. U kunt het JavaScript-fragment dat u wilt gebruiken in het veld plakken:
 
    ![De component bewerken](assets/analytics_snippet.png)
 
@@ -85,16 +81,16 @@ Voor de basisconfiguratie:
 
 ## Uw nieuwe service op pagina&#39;s gebruiken {#using-your-new-service-on-pages}
 
-Nadat u de de dienstconfiguratie hebt gecreeerd moet u nu de vereiste pagina&#39;s vormen om het te gebruiken:
+Nadat u de de dienstconfiguratie hebt gecreeerd, moet u nu de vereiste pagina&#39;s vormen om het te gebruiken:
 
 1. Navigeer naar de pagina.
 1. Open de **Pagina-eigenschappen** van sidekick, dan **Cloud Services** tab.
-1. Klikken **Service toevoegen** selecteert u vervolgens de gewenste service; bijvoorbeeld **Generic Analytics-fragment**:
+1. Klikken **Service toevoegen** selecteert u vervolgens de gewenste service. De **Generic Analytics-fragment**:
 
    ![Een cloudservice toevoegen](assets/analytics_selectservice.png)
 
 1. Klikken **OK** om op te slaan.
-1. U wordt teruggestuurd naar de **Cloud Services** tab. De **Generic Analytics-fragment** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren; bijvoorbeeld google-analytics:
+1. U bent teruggekeerd aan **Cloud Services** tab. De **Generic Analytics-fragment** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren. Voorbeeld: google-analytics:
 
    ![Configuratie van cloudservice toevoegen](assets/analytics_selectspecificservice.png)
 
@@ -102,7 +98,7 @@ Nadat u de de dienstconfiguratie hebt gecreeerd moet u nu de vereiste pagina&#39
 
    Het fragment kan nu worden weergegeven als u de paginabron voor de pagina bekijkt.
 
-   Nadat een geschikte periode is verstreken, kunt u de verzamelde statistieken bekijken.
+   Nadat een hoeveelheid tijd is verstreken, kunt u de verzamelde statistieken bekijken.
 
    >[!NOTE]
    >

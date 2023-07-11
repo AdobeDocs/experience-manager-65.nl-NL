@@ -1,20 +1,16 @@
 ---
 title: Uw upgrade plannen
-seo-title: Planning Your Upgrade
-description: Dit artikel helpt duidelijke doelstellingen, fasen en te leveren te vestigen wanneer het plannen van de AEM verbetering.
-seo-description: This article helps establish clear goals, phases and deliverables when planning the AEM upgrade.
-uuid: 6128ac53-4115-4262-82d9-a0ad7d498ea6
+description: Dit artikel helpt duidelijke doelstellingen, fasen, en te vestigen leverables wanneer het plannen van de AEM verbetering.
 contentOwner: sarchiz
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: upgrading
-discoiquuid: 49210824-ad87-4b6a-9ae8-77dcfe2b5c06
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '2430'
+source-wordcount: '2399'
 ht-degree: 0%
 
 ---
@@ -23,13 +19,13 @@ ht-degree: 0%
 
 ## Overzicht van AEM project {#aem-project-overview}
 
-AEM wordt vaak gebruikt in implementaties met een hoog effect die miljoenen gebruikers ten goede kunnen komen. In de meeste gevallen, zijn er douanetoepassingen die op de instanties worden opgesteld, die aan de ingewikkeldheid toevoegen. Om het even welke inspanning om zulk een plaatsing te bevorderen moet methodisch worden behandeld.
+AEM wordt vaak gebruikt in implementaties met een hoog effect die miljoenen gebruikers ten goede kunnen komen. Gewoonlijk zijn er aangepaste toepassingen die op de instanties worden geïmplementeerd en die de complexiteit vergroten. Om het even welke inspanning om zulk een plaatsing te bevorderen moet methodisch worden behandeld.
 
-Deze gids helpt met het vestigen van duidelijke doelstellingen, fasen en te leveren punten wanneer het plannen van uw verbetering. Het is gericht op de algemene uitvoering van het project en de richtsnoeren. Hoewel het een overzicht van de daadwerkelijke verbeteringsstappen verstrekt, verwijst het naar beschikbare technische middelen waar geschikt. Het moet worden gebruikt in combinatie met de in het document vermelde beschikbare technische middelen.
+Deze gids helpt met het vestigen van duidelijke doelstellingen, fasen, en te leveren punten wanneer het plannen van uw verbetering. Het is gericht op de algemene uitvoering van het project en de richtsnoeren. Hoewel het een overzicht van de daadwerkelijke verbeteringsstappen verstrekt, verwijst het naar beschikbare technische middelen waar geschikt. Het moet worden gebruikt met de in het document vermelde beschikbare technische middelen.
 
-Het proces van de Verbetering van de AEM vereist zorgvuldig behandelde planning, analyse en uitvoeringsfasen met zeer belangrijke te leveren producten die voor elke fase worden bepaald.
+Het proces van de Verbetering van de AEM vereist zorgvuldig behandelde planning, analyse, en uitvoeringsfasen met zeer belangrijke te leveren producten die voor elke fase worden bepaald.
 
-Merk op dat het mogelijk is rechtstreeks van AEM versies 6.0 en tot 6.5 te bevorderen. Klanten met 5.6.x en lager moeten eerst een upgrade uitvoeren naar versie 6.0 of hoger, waarbij 6.0(SP3) wordt aanbevolen. Bovendien wordt de nieuwe indeling OAK-segmentteer nu gebruikt voor de Segment Node Store sinds 6.3 en is de migratie van de opslagplaats naar deze nieuwe indeling zelfs verplicht voor 6.0, 6.1 en 6.2.
+Het is mogelijk om rechtstreeks van AEM versies 6.0 en tot 6.5 te bevorderen. Klanten met 5.6.x en lager moeten eerst een upgrade uitvoeren naar versie 6.0 of hoger, waarbij 6.0(SP3) wordt aanbevolen. Bovendien wordt de nieuwe indeling voor Oak Segment Tar nu gebruikt voor de Segment Node Store sinds 6.3 en is de migratie naar deze nieuwe indeling verplicht, zelfs voor 6.0, 6.1 en 6.2.
 
 >[!CAUTION]
 >
@@ -52,14 +48,14 @@ Hieronder vindt u een lijst met gebieden die van invloed zijn op een standaard A
    <td>Op het moment van de AEM upgrade kan het tijd zijn om ook het besturingssysteem te upgraden en dit kan enige invloed hebben.</td>
   </tr>
   <tr>
-   <td>Java Runtime</td>
+   <td>Java™ Runtime</td>
    <td>Matige impact</td>
    <td>AEM 6.3 vereist JRE 1.7.x (64 bits) of later. JRE 1.8 is de enige versie die momenteel door Oracle wordt ondersteund.</td>
   </tr>
   <tr>
    <td>Hardware</td>
    <td>Matige impact</td>
-   <td>Onlinerevisie-opschoning is gratis<br /> schijfruimte gelijk aan 25% van de grootte van de opslagplaats en 15% vrije heapruimte<br /> om succesvol te voltooien. Mogelijk moet u uw hardware upgraden naar<br /> ervoor zorgen dat er voldoende bronnen zijn voor het opschonen van online revisie<br /> uitvoeren. Als u een upgrade uitvoert van een versie die ouder is dan AEM 6, is er bovendien<br /> kunnen aanvullende opslagvereisten zijn.</td>
+   <td>Onlinerevisie-opschoning is gratis<br /> schijfruimte gelijk aan 25% van de grootte van de opslagplaats en 15% vrije heapruimte<br /> om succesvol te voltooien. Mogelijk moet u uw hardware upgraden naar<br /> ervoor zorgen dat er voldoende bronnen zijn voor het opschonen van online revisie<br /> uitvoeren. Als u een upgrade uitvoert vanaf een versie die ouder is dan AEM 6, kunt u ook<br /> kunnen aanvullende opslagvereisten zijn.</td>
   </tr>
   <tr>
    <td>Inhoudsopslagplaats (CRX of eikel)</td>
@@ -69,12 +65,12 @@ Hieronder vindt u een lijst met gebieden die van invloed zijn op een standaard A
   <tr>
    <td>Componenten/inhoud AEM</td>
    <td>Matige impact</td>
-   <td><code>/libs</code> en <code>/apps</code> zijn gemakkelijk behandeld door de verbetering, maar <code>/etc</code> De aanpassingen moeten meestal handmatig opnieuw worden toegepast.</td>
+   <td><code>/libs</code> en <code>/apps</code> zijn gemakkelijk behandeld door de verbetering, maar <code>/etc</code> Meestal moet de aanpassing handmatig opnieuw worden toegepast.</td>
   </tr>
   <tr>
    <td>AEM</td>
    <td>Lage impact</td>
-   <td>De meeste AEM kerndiensten worden getest voor verbetering. Dit is een gebied met een lage impact.</td>
+   <td>De meeste AEM kerndiensten worden getest voor verbetering. Dit is een gebied met weinig effect.</td>
   </tr>
   <tr>
    <td>Aangepaste toepassingsservices</td>
@@ -89,31 +85,31 @@ Hieronder vindt u een lijst met gebieden die van invloed zijn op een standaard A
  </tbody>
 </table>
 
-Het is belangrijk om ervoor te zorgen dat u een ondersteund besturingssysteem gebruikt, Java-runtime, httpd en Dispatcher-versie. Zie voor meer informatie de [AEM 6.5 pagina Technische vereisten](/help/sites-deploying/technical-requirements.md). De bevordering van deze componenten zal rekenschap moeten geven in uw projectplan en zou moeten plaatsvinden alvorens AEM te bevorderen.
+Het is belangrijk dat u een ondersteund besturingssysteem, Java™-runtime, httpd en Dispatcher-versie gebruikt. Zie voor meer informatie de [AEM 6.5 pagina Technische vereisten](/help/sites-deploying/technical-requirements.md). De bevordering van deze componenten zal rekenschap moeten geven in uw projectplan en zou moeten plaatsvinden alvorens AEM te bevorderen.
 
 ## Projectfasen {#project-phases}
 
-Veel werk gaat in planning en het uitvoeren van een AEM verbetering. Om de verschillende inspanningen die in dit proces worden geleverd te verduidelijken, hebben we de plannings- en uitvoeringsoefeningen in afzonderlijke fasen opgesplitst. In de onderstaande secties resulteert elke fase in een leverbaar dat vaak wordt gebruikt door een toekomstige fase van het project.
+Veel werk gaat in planning en het runnen van een AEM verbetering. Om de verschillende inspanningen die in dit proces worden geleverd te verduidelijken, heeft Adobe de plannings- en uitvoeringsoefeningen in afzonderlijke fasen opgesplitst. In de onderstaande secties resulteert elke fase in een te leveren item dat vaak wordt gebruikt in een toekomstige fase van het project.
 
 ### Planning voor training van auteurs {#planning-for-author-training}
 
-Met om het even welke nieuwe versie, zijn er potentiële veranderingen in UI en gebruikerswerkschema&#39;s die kunnen worden geïntroduceerd. Daarnaast introduceren nieuwe releases nieuwe functies die de onderneming kunnen helpen bij het maken van een hefboomeffect. We raden u aan de geïntroduceerde functionele wijzigingen te evalueren en een plan te organiseren om uw gebruikers te trainen op een effectieve manier gebruik te maken van deze wijzigingen.
+Met om het even welke nieuwe versie, zijn er potentiële veranderingen in UI en gebruikerswerkschema&#39;s die kunnen worden geïntroduceerd. Ook, introduceren de nieuwe versies nieuwe eigenschappen die voor de zaken aan gebruik gunstig kunnen zijn. Adobe raadt aan de ingevoerde functionele wijzigingen te evalueren en een plan te organiseren om uw gebruikers te leren hoe ze deze effectief kunnen gebruiken.
 
 ![unu_cropped](assets/unu_cropped.png)
 
-De nieuwe functies in AEM 6.5 zijn te vinden in [het AEM gedeelte van adobe.com](/help/release-notes/release-notes.md). Zorg ervoor om op om het even welke veranderingen in UIs of producteigenschappen nota te nemen die algemeen in uw organisatie worden gebruikt. Wanneer u de nieuwe functies doorloopt, moet u ook rekening houden met alle functies die van belang kunnen zijn voor uw organisatie. Na het bekijken van wat in AEM 6.5 is veranderd, ontwikkelt een opleidingsplan voor uw auteurs. Dit kan bestaan uit het gebruik van vrij beschikbare bronnen, zoals video&#39;s met de helpx-functie of formele training die via [Adobe Digital Learning-services](https://www.adobe.com/training.html).
+De nieuwe functies in AEM 6.5 zijn te vinden in [het AEM gedeelte van adobe.com](/help/release-notes/release-notes.md). Zorg ervoor om op om het even welke veranderingen in UIs of producteigenschappen nota te nemen die algemeen in uw organisatie worden gebruikt. Wanneer u de nieuwe functies doorloopt, moet u ook rekening houden met alle functies die van belang kunnen zijn voor uw organisatie. Na het bekijken van wat in AEM 6.5 is veranderd, ontwikkelt een opleidingsplan voor uw auteurs. Dit kan het gebruiken van vrij beschikbare middelen zoals hulpeigenschapvideo&#39;s of formele die opleiding door [Adobe Digital Learning-services](https://learning.adobe.com/).
 
 ### Een testplan maken {#creating-a-test-plan}
 
-De implementatie van AEM door elke klant is uniek en is aangepast om aan hun bedrijfsvereisten te voldoen. Daarom is het belangrijk om alle aanpassingen te bepalen die in het systeem zijn aangebracht zodat deze in een testplan kunnen worden opgenomen. Dit testplan zal het proces van QA aandrijven dat wij op de promotieinstantie uitvoeren.
+De implementatie van AEM door elke klant is uniek en is aangepast om aan hun bedrijfsvereisten te voldoen. Daarom is het belangrijk om alle aanpassingen te bepalen die in het systeem zijn aangebracht zodat deze in een testplan kunnen worden opgenomen. Dit testplan zal het proces van QA aandrijven dat Adobe op de promotieinstantie uitvoert.
 
 ![testplan](assets/test-plan.png)
 
-De exacte productieomgeving moet worden gedupliceerd en na de upgrade moeten er tests op worden uitgevoerd om te controleren of alle toepassingen en aangepaste code nog steeds naar wens worden uitgevoerd. U moet al uw aanpassingen terugbrengen en prestaties, lading en veiligheidstests uitvoeren. Wanneer het organiseren van uw testplan, zorg ervoor om alle aanpassingen te behandelen die aan het systeem naast uit de doos UIs en werkschema&#39;s zijn gemaakt die in uw dagelijkse verrichtingen worden gebruikt. Deze kunnen de diensten en de diensten van douaneOSGI, integraties aan de Adobe Marketing Cloud, integraties met derde partijen door AEM schakelaars, de integratie van de douanederde, douanecomponenten en malplaatjes, de overlays van de douane UI in AEM, en douanewerkschema&#39;s omvatten. Voor klanten die van een versie voorafgaand aan AEM 6 migreren, zouden om het even welke douanevragen moeten worden geanalyseerd aangezien deze kunnen moeten worden geïndexeerd. Voor klanten die reeds op een versie van AEM 6.x zijn, zouden deze vragen nog moeten worden getest om ervoor te zorgen dat hun indexen effectief na bevordering blijven werken.
+De exacte productieomgeving moet worden gedupliceerd en na de upgrade moeten er tests op worden uitgevoerd om te controleren of alle toepassingen en aangepaste code nog steeds naar wens worden uitgevoerd. Regenereer al uw aanpassingen en de prestaties, belasting en beveiligingstests. Wanneer het organiseren van uw testplan, zorg ervoor om alle aanpassingen te behandelen die aan het systeem naast uit de doos UIs en werkschema&#39;s zijn aangebracht die in uw dagelijkse verrichtingen worden gebruikt. Deze kunnen de diensten en de diensten van douaneOSGI, integraties aan de Adobe Experience Cloud, integraties met derde partijen door AEM schakelaars, de integratie van de douanederde, douanecomponenten en malplaatjes, de overlays van de douane UI in AEM, en douanewerkschema&#39;s omvatten. Voor klanten die van een versie voorafgaand aan AEM 6 migreren, zouden om het even welke douanevragen moeten worden geanalyseerd aangezien deze kunnen moeten worden geïndexeerd. Voor klanten die reeds op een versie van AEM 6.x zijn, zouden deze vragen nog moeten worden getest om ervoor te zorgen dat hun indexen effectief na bevordering blijven werken.
 
 ### Vaststellen welke wijzigingen in architectuur en infrastructuur nodig zijn {#determining-architectural-and-infrastructure-changes-needed}
 
-Wanneer u een upgrade uitvoert, is het mogelijk dat u ook andere onderdelen in uw technische stapel moet bijwerken, zoals het besturingssysteem of JVM. Bovendien is het mogelijk dat als gevolg van wijzigingen in de samenstelling van de opslagplaats extra hardware nodig kan zijn. Dit komt gewoonlijk slechts voor klanten die van pre 6.x instanties migreren maar is belangrijk om te overwegen. Tot slot kunnen er wijzigingen nodig zijn in uw operationele praktijken met inbegrip van controle, onderhoud, en steun en rampenterugwinningsprocessen.
+Wanneer u een upgrade uitvoert, is het mogelijk dat u ook andere onderdelen in uw technische stapel moet bijwerken, zoals het besturingssysteem of JVM. Het is ook mogelijk dat als gevolg van wijzigingen in de samenstelling van de opslagplaats extra hardware nodig kan zijn. Dit komt slechts voor klanten die van pre 6.x instanties migreren maar is belangrijk om te overwegen. Tot slot kunnen er wijzigingen nodig zijn in uw operationele praktijken met inbegrip van controle, onderhoud, en steun en rampenterugwinningsprocessen.
 
 ![doi_cropped](assets/doi_cropped.png)
 
@@ -139,15 +135,15 @@ Controleer de technische vereisten voor AEM 6.5 en zorg ervoor dat uw huidige ha
 
 #### Overwegingen bij de herstructurering van inhoud {#content-restructuring-considerations}
 
-AEM heeft wijzigingen aangebracht in de structuur van de opslagplaats die zullen helpen om upgrades naadloos te maken. De veranderingen impliceren het bewegen van inhoud uit de /etc omslag naar omslagen met inbegrip van /libs, /apps, en /content, die op worden gebaseerd of Adobe of een klant de inhoud bezit, zo het beperken van de kansen om inhoud tijdens versies te beschrijven. De reorganisatie van de repository is zo uitgevoerd dat er geen codesamenstelling nodig is op het moment van de upgrade van 6.5, hoewel het aanbevolen is om de details te bekijken op [Herstructurering van AEM](/help/sites-deploying/repository-restructuring.md) tijdens het plannen van een upgrade.
+AEM heeft wijzigingen aangebracht in de structuur van de opslagplaats die zullen helpen om upgrades naadloos te maken. De veranderingen impliceren het bewegen van inhoud uit de /etc omslag naar omslagen met inbegrip van /libs, /apps, en /content, die op worden gebaseerd of Adobe of een klant de inhoud bezit, zo het beperken van de kansen om inhoud tijdens versies te beschrijven. De reorganisatie van de repository is zo uitgevoerd dat er geen codesamenstelling nodig is op het moment van de upgrade van 6.5, hoewel het aanbevolen is de details te bekijken op [Herstructurering van AEM](/help/sites-deploying/repository-restructuring.md) tijdens het plannen van een upgrade.
 
 ### Complexiteit van upgrade beoordelen {#assessing-upgrade-complexity}
 
-Gezien de grote verscheidenheid in de hoeveelheid en de aard van aanpassingen die onze klanten op hun AEM milieu&#39;s toepassen, is het belangrijk om wat tijd vooruit door te brengen om het algemene niveau van inspanning te bepalen dat in uw verbetering zou moeten worden verwacht.
+Gezien de grote verscheidenheid in de hoeveelheid en de aard van aanpassingen die klanten van de Adobe op hun AEM milieu&#39;s van toepassing zijn, is het belangrijk om wat tijd vooruit door te brengen om het algemene niveau van inspanning te bepalen dat in uw verbetering zou moeten worden verwacht.
 
-Er zijn twee benaderingen u kunt nemen om de ingewikkeldheid van de verbetering te beoordelen, kan een inleidende fase enkel de onlangs geïntroduceerde Detector van het Patroon gebruiken die beschikbaar is om op uw AEM 6.1, 6.2 en 6.3 instanties te lopen. De patroondetector is de eenvoudigste manier om de algemene complexiteit van de upgrade te beoordelen die met behulp van gerapporteerde patronen kan worden verwacht. Het patroondetectorrapport bevat patronen voor het identificeren van niet-beschikbare API&#39;s die worden gebruikt door de aangepaste codebase (dit is gebeurd met compatibiliteitscontroles vóór de upgrade in 6.3).
+Er zijn twee benaderingen die u kunt volgen om de complexiteit van de upgrade te beoordelen. Een voorlopige fase kan de nieuw geïntroduceerde Patroondetector gebruiken. Deze is beschikbaar voor uitvoering op AEM 6.1-, 6.2- en 6.3-instanties. De patroondetector is de eenvoudigste manier om de algemene complexiteit van de upgrade te beoordelen die met behulp van gerapporteerde patronen kan worden verwacht. Het patroondetectorrapport bevat patronen voor het identificeren van niet-beschikbare API&#39;s die worden gebruikt door de aangepaste codebase (dit is gebeurd met de compatibiliteitscontroles vóór de upgrade in 6.3).
 
-Na de eerste beoordeling zou een uitgebreidere volgende stap kunnen bestaan uit het uitvoeren van een upgrade op een testinstantie en het uitvoeren van een aantal basistests voor rook. Adobe biedt ook enkele . Daarnaast bevat de lijst met [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-features.md) moet niet alleen worden gecontroleerd op de versie waarnaar u een upgrade uitvoert, maar ook op versies tussen uw bron- en doelversie. Als u bijvoorbeeld een upgrade uitvoert van AEM 6.2 naar 6.5, is het belangrijk om naast de functies voor AEM 6.5 ook de vervangen en verwijderde AEM 6.3 te bekijken.
+Na de eerste beoordeling zou een uitgebreidere volgende stap kunnen bestaan uit het uitvoeren van een upgrade op een testinstantie en het uitvoeren van een aantal basistests voor rook. Adobe biedt ook enkele . De lijst met [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-features.md) moet niet alleen worden gecontroleerd op de versie waarnaar u een upgrade uitvoert, maar ook op versies tussen uw bron- en doelversie. Als u bijvoorbeeld een upgrade uitvoert van AEM 6.2 naar 6.5, is het belangrijk om naast de functies voor AEM 6.5 ook de vervangen en verwijderde AEM 6.3 te bekijken.
 
 ![trei_bijgesneden](assets/trei_cropped.png)
 
@@ -155,15 +151,15 @@ De Patroondetector die onlangs is geïntroduceerd, geeft u een vrij nauwkeurige 
 
 ### Het opbouwen van Runbook van de Verbetering en van het Terugschroeven van prijzen {#building-the-upgrade-and-rollback-runbook}
 
-Terwijl Adobe het proces voor de bevordering van een AEM instantie heeft gedocumenteerd, zullen de het netwerklay-out van elke klant, plaatsingsarchitectuur en aanpassingen verfijnen en het maken van deze benadering vereisen. Daarom moedigen wij u aan om alle documentatie te herzien die wij hebben verstrekt en het te gebruiken om een projectspecifieke runbook te informeren die de specifieke verbetering en terugdraaiprocedures beschrijft die u in uw milieu zult volgen. Als u een upgrade uitvoert van CRX2, dient u te evalueren hoe lang de migratie van inhoud duurt wanneer u van CRX2 naar eiken gaat. Voor grote gegevensbanken kan het aanzienlijk zijn.
+Terwijl Adobe het proces voor de bevordering van een AEM instantie heeft gedocumenteerd, vereisen de het netwerklay-out van elke klant, plaatsingsarchitectuur, en aanpassingen het verfijnen en het maken van deze benadering. Om deze reden, moedigt Adobe u aan om alle verstrekte documentatie te herzien en het te gebruiken om een project-specifieke runbook te informeren die de specifieke verbetering en terugschroeven van prijzenprocedures beschrijft die u in uw milieu zult volgen. Als u een upgrade uitvoert van CRX2, dient u te evalueren hoe lang de migratie van inhoud duurt wanneer u van CRX2 naar eiken gaat. Voor grote gegevensbanken kan het aanzienlijk zijn.
 
 ![runbook-diagram](assets/runbook-diagram.png)
 
-We hebben upgrade- en terugdraaiprocedures beschikbaar gesteld in [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md) en stapsgewijze instructies voor het toepassen van de upgrade bij het uitvoeren van een [Upgrade op locatie](/help/sites-deploying/in-place-upgrade.md). Deze instructies zouden met uw systeemarchitectuur, aanpassingen, en downtime tolerantie moeten worden herzien en in overweging genomen om de aangewezen schakelaar-over en rollback procedures te bepalen die u tijdens de verbetering zult uitvoeren. Wijzigingen in architectuur of serverformaten moeten worden opgenomen wanneer u uw aangepaste runbook gaat maken. Het is belangrijk om op te merken dat dit als een eerste ontwerp moet worden behandeld. Aangezien uw team hun QA en ontwikkelingscycli voltooit en de verbetering aan het opvoeren milieu opstelt, is het waarschijnlijk dat de behoefte aan sommige extra stappen kan worden vereist. In het ideale geval moet dit document voldoende informatie bevatten, zodat de upgrade volledig kan worden uitgevoerd op basis van de informatie die erin is opgenomen als het document aan een medewerker van uw bedrijf is overhandigd.
+Adobe heeft upgrade- en terugdraaiprocedures beschikbaar gesteld in [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md) en stapsgewijze instructies voor het toepassen van de upgrade bij het uitvoeren van een [Upgrade op locatie](/help/sites-deploying/in-place-upgrade.md). Deze instructies zouden met uw systeemarchitectuur, aanpassingen, en downtime tolerantie moeten worden herzien en overwogen om de aangewezen schakelaar-over en terugschroeven van prijzenprocedures te bepalen die u tijdens de verbetering zult uitvoeren. Wijzigingen in architectuur of serverformaten moeten worden opgenomen wanneer u uw aangepaste runbook gaat maken. Het is belangrijk om op te merken dat dit als een eerste ontwerp moet worden behandeld. Aangezien uw team hun QA en ontwikkelingscycli voltooit en de verbetering aan het opvoeren milieu opstelt, is het waarschijnlijk dat de behoefte aan sommige extra stappen kan worden vereist. In het ideale geval moet dit document voldoende informatie bevatten, zodat de upgrade volledig kan worden uitgevoerd op basis van de informatie die erin is opgenomen als het document aan een medewerker van uw bedrijf is overhandigd.
 
 ### Een projectplan ontwikkelen {#developing-a-project-plan}
 
-Wij kunnen de output van de vorige oefeningen gebruiken om een projectplan te bouwen dat de verwachte termijnen voor onze test of ontwikkelingsinspanningen, opleiding, en daadwerkelijke verbeteringsuitvoering behandelt.
+De output van de vorige oefeningen kan worden gebruikt om een projectplan te bouwen dat de verwachte chronologie voor uw test of ontwikkelingsinspanningen, opleiding, en daadwerkelijke verbeteringsuitvoering behandelt.
 
 ![ontwikkelingsplan](assets/develop-project-plan.png)
 
@@ -174,13 +170,13 @@ Een alomvattend projectplan moet het volgende omvatten:
 * De aangepaste codebasis voor AEM 6.5 bijwerken
 * Een test en reparatiecyclus van kwaliteitscontrole
 * De testomgeving upgraden
-* Integratie, prestaties en belasting testen
+* Integratie, prestaties en het testen van de belasting
 * Milieu-certificering
 * Live gaan
 
 ### Ontwikkeling en kwaliteitscontrole {#performing-development-and-qa}
 
-Wij hebben procedures voor [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md) verenigbaar zijn met AEM 6.5. Aangezien dit iteratieve proces wordt uitgevoerd, zouden veranderingen in runbook moeten worden aangebracht zoals nodig. Zie ook [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md) voor informatie over hoe uw aanpassingen in de meeste gevallen achterwaarts compatibel kunnen blijven zonder dat ontwikkeling direct na de upgrade nodig is.
+Adobe heeft procedures vastgesteld voor [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md) verenigbaar zijn met AEM 6.5. Wanneer dit iteratieve proces wordt uitgevoerd, moeten wijzigingen worden aangebracht in de runbook. Zie ook [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md) voor informatie over hoe uw aanpassingen achteruit compatibel kunnen blijven gewoonlijk zonder ontwikkeling onmiddellijk na verbetering te vereisen.
 
 ![patroon_bijgesneden](assets/patru_cropped.png)
 
@@ -188,16 +184,16 @@ Het ontwikkelings- en testproces is doorgaans een herhalend proces. Door aanpass
 
 ### Eindtest {#final-testing}
 
-Wij adviseren een definitieve ronde van het testen nadat codebase door het team van QA van uw organisatie is verklaard. Deze testronde omvat het valideren van uw runbook in een testomgeving, gevolgd door gebruikersacceptatie, prestaties en beveiligingstests.
+Adobe beveelt een laatste testronde aan nadat de codebase is gecertificeerd door het QA-team van uw organisatie. Deze testronde omvat het valideren van uw runbook in een testomgeving, gevolgd door gebruikersacceptatie, prestaties en beveiligingstests.
 
 ![cinci_cropped](assets/cinci_cropped.png)
 
-Deze stap is essentieel aangezien het de enige tijd is dat u de stappen in runbook tegen een productie-als milieu kunt bevestigen. Zodra het milieu is bevorderd, is het belangrijk om eindgebruikers wat tijd toe te staan om binnen te registreren en door de activiteiten te gaan zij wanneer het gebruiken van het systeem in hun dagelijkse activiteiten doen. Het is niet ongebruikelijk dat gebruikers een deel van het systeem leveraging dat niet eerder in overweging werd genomen. Het vinden en corrigeren van problemen in deze gebieden vóór go-live kan kostbare productieonderbrekingen helpen voorkomen. Aangezien een nieuwe versie van AEM significante veranderingen in het onderliggende platform bevat, is het ook belangrijk om prestaties, lading en veiligheidstests op het systeem uit te voeren alsof wij het voor het eerst lanceerden.
+Deze stap is essentieel aangezien het de enige tijd is dat u de stappen in runbook tegen een productie-als milieu kunt bevestigen. Zodra het milieu is bevorderd, is het belangrijk om eind - gebruikers wat tijd toe te staan om zich aan te melden en door de activiteiten te gaan zij doen wanneer het gebruiken van het systeem in hun dagelijkse activiteiten. Het is niet ongebruikelijk dat gebruikers een deel van het systeem gebruiken dat niet eerder in overweging werd genomen. Het vinden en corrigeren van problemen in deze gebieden vóór go-live kan kostbare productieonderbrekingen helpen voorkomen. Aangezien een nieuwe versie van AEM significante veranderingen in het onderliggende platform bevat, is het ook belangrijk om prestaties, lading, en veiligheidstests op het systeem uit te voeren alsof u het voor het eerst lanceerde.
 
 ### De upgrade uitvoeren {#performing-the-upgrade}
 
-Zodra de definitieve aftekening van alle belanghebbenden is ontvangen, is het tijd om de vastgestelde runboekprocedures uit te voeren. We hebben stappen voor upgrade en terugdraaiversies beschikbaar gesteld [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md) en installatiestappen in het uitvoeren van een [Upgrade op locatie](/help/sites-deploying/in-place-upgrade.md) als referentiepunt.
+Zodra de definitieve aftekening van alle belanghebbenden is ontvangen, is het tijd om de gedefinieerde runbook-procedures uit te voeren. Adobe heeft stappen voor upgrade en terugdraaiversies beschikbaar gesteld [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md) en installatiestappen in het uitvoeren van een [Upgrade op locatie](/help/sites-deploying/in-place-upgrade.md) als referentiepunt.
 
 ![uitvoeren-upgrade](assets/perform-upgrade.png)
 
-Wij hebben enkele stappen in de verbeteringsinstructies voor omgevingsbevestiging verstrekt. Deze omvatten basiscontroles zoals het aftasten van de verbeteringslogboeken en het verifiëren dat alle bundels OSGi behoorlijk zijn begonnen, maar wij adviseren ook het bevestigen met uw eigen testgevallen die op uw bedrijfsprocessen worden gebaseerd. Wij adviseren ook het controleren van het programma van AEM Online Opruiming van de Revisie en verwante routines om ervoor te zorgen dat zij tijdens een rustige tijd voor uw bedrijf zullen voorkomen. Deze routines zijn essentieel voor de prestaties op lange termijn van AEM.
+Adobe heeft enkele stappen opgegeven in de upgradeinstructies voor omgevingsvalidatie. Deze omvatten basiscontroles zoals het aftasten van de verbeteringslogboeken en het verifiëren dat alle bundels OSGi behoorlijk zijn begonnen, maar Adobe adviseert ook het bevestigen met uw eigen testgevallen die op uw bedrijfsprocessen worden gebaseerd. Adobe adviseert ook het controleren van het programma van AEM Online Correctie van de Revisie en verwante routines om ervoor te zorgen dat zij tijdens een rustige tijd voor uw bedrijf zullen voorkomen. Deze routines zijn essentieel voor de prestaties op lange termijn van AEM.

@@ -1,14 +1,13 @@
 ---
 title: AEM gebruiken met SAP Commerce Cloud
 description: Leer hoe u AEM kunt gebruiken met SAP Commerce Cloud.
-uuid: cee1a781-fcba-461e-a0a4-c561a1dbcbf3
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1702'
 ht-degree: 1%
 
 ---
@@ -17,7 +16,7 @@ ht-degree: 1%
 
 Na de installatie kunt u uw instantie configureren:
 
-1. [De gefacetteerde zoekopdracht voor Geometrixx Outdoors configureren](#configure-the-facetted-search-for-geometrixx-outdoors).
+1. [De beperkte zoekopdracht voor Geometrixx Outdoors configureren](#configure-the-facetted-search-for-geometrixx-outdoors).
 1. [De catalogusversie configureren](#configure-the-catalog-version).
 1. [De importstructuur configureren](#configure-the-import-structure).
 1. [De te laden productkenmerken configureren](#configure-the-product-attributes-to-load).
@@ -25,7 +24,7 @@ Na de installatie kunt u uw instantie configureren:
 1. [De importmodule voor catalogi configureren](#configure-the-catalog-importer).
 1. Gebruik de [Importeren om de catalogus te importeren](#catalog-import) naar een specifieke locatie in AEM.
 
-## De gefacetteerde zoekopdracht voor Geometrixx Outdoors configureren {#configure-the-facetted-search-for-geometrixx-outdoors}
+## De beperkte zoekopdracht voor Geometrixx Outdoors configureren {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -52,27 +51,27 @@ Na de installatie kunt u uw instantie configureren:
    >
    >Gebruik het contextmenu (meestal klikken met de rechtermuisknop) om `Create Solr sort`.
    >
-   >Voor Hybris 5.0.0 opent u de `Indexed Types` tab, dubbelklikken op `ClothesVariantProduct`, dan de tab `SOLR Sort`.
+   >Voor Hybris 5.0.0 opent u de `Indexed Types` tab, dubbelklikken `ClothesVariantProduct`, dan de tab `SOLR Sort`.
 
    ![chlimage_1-36](/help/sites-administering/assets/chlimage_1-36a.png)
 
-1. In de **Geïndexeerde typen** tabset **Samengesteld type** tot:
+1. In de **Geïndexeerde typen** tabblad, stelt u de **Samengesteld type** tot:
 
    `Product - Product`
 
-1. In de **Geïndexeerde typen** tabblad wijzigt u de **Indexeervragen** for `full`:
+1. In de **Geïndexeerde typen** tabblad, wijzigt u de **Indexeervragen** for `full`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}})
    ```
 
-1. In de **Geïndexeerde typen** tabblad wijzigt u de **Indexeervragen** for `incremental`:
+1. In de **Geïndexeerde typen** tabblad, wijzigt u de **Indexeervragen** for `incremental`:
 
    ```shell
    SELECT {pk} FROM {Product} WHERE {pk} NOT IN ({{SELECT {baseProductpk} FROM {variantproduct}}}) AND {modifiedtime} <= ?lastIndexTime
    ```
 
-1. In de **Geïndexeerde typen** tabblad wijzigt u de `category` facet. Dubbelklik op het laatste item in de categorielijst om het dialoogvenster **Geïndexeerde eigenschap** tab:
+1. In de **Geïndexeerde typen** tabblad, wijzigt u de `category` facet. Dubbelklik op het laatste item in de categorielijst om het dialoogvenster **Geïndexeerde eigenschap** tab:
 
    >[!NOTE]
    >
@@ -85,7 +84,7 @@ Na de installatie kunt u uw instantie configureren:
    ![chlimage_1-39](/help/sites-administering/assets/chlimage_1-39a.png)
 
 1. **Sla de wijzigingen op.**
-1. Opnieuw van **Soorten SOLR-item**, wijzigt u de `price` facet volgens de volgende schermafbeeldingen. Zoals met `category`, dubbelklik op `price` om de **Geïndexeerde eigenschap** tab:
+1. Opnieuw van **Soorten SOLR-item**, wijzigt u de `price` facet volgens de volgende schermafbeeldingen. Zoals met `category`, dubbelklikken `price` om de **Geïndexeerde eigenschap** tab:
 
    ![chlimage_1-40](/help/sites-administering/assets/chlimage_1-40a.png)
 
@@ -106,11 +105,11 @@ De **Catalogusversie** ( `hybris.catalog.version`) die wordt ingevoerd kan voor 
 **Configuratie bedrijfs-hybride van dagelijkse CQ-handel**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Catalogusversie** is gewoonlijk ingesteld op een van de `Online` of `Staged` (de standaardinstelling).
+**Catalogusversie** is ingesteld op `Online` of `Staged` (de standaardinstelling).
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
 De logboekoutput verstrekt terugkoppelen op de gecreeerde pagina&#39;s en de componenten en meldt potentiële fouten.
 
@@ -151,7 +150,7 @@ Hieronder ziet u een voorbeeldstructuur (van elementen, pagina&#39;s en componen
               + ...
 ```
 
-Een dergelijke structuur wordt gecreëerd door de OSGi-dienst `DefaultImportHandler` die de `ImportHandler` interface. De daadwerkelijke importeur roept een importhandler op om producten, productvariaties, categorieën, activa, enz. te maken.
+Een dergelijke structuur wordt gecreëerd door de OSGi-dienst `DefaultImportHandler` die de `ImportHandler` interface. De importer zelf roept een importhandler op om producten, productvariaties, categorieën, elementen enzovoort te maken.
 
 >[!NOTE]
 >
@@ -162,7 +161,7 @@ De structuur die bij het importeren moet worden gegenereerd, kan worden geconfig
 &quot;**Day CQ Commerce Hybris, standaardimporthandler**
 `(com.adobe.cq.commerce.hybris.importer.DefaultImportHandler`)
 
-Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
 ## De te laden productkenmerken configureren {#configure-the-product-attributes-to-load}
 
@@ -177,7 +176,7 @@ De reactiesparser kan worden gevormd om de eigenschappen en de attributen te bep
 
    >[!NOTE]
    >
-   >Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
+   >Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
 ## De productgegevens importeren {#importing-the-product-data}
 
@@ -205,9 +204,9 @@ De volgende eigenschappen geven het verband met hybris aan:
 
 ### Volledig importeren {#full-import}
 
-1. Verwijder zo nodig alle bestaande productgegevens met CRXDE Lite.
+1. Verwijder zo nodig alle bestaande productgegevens met behulp van CRXDE Lite.
 
-   1. Navigeer naar de subboomstructuur met de productgegevens:
+   1. Navigeer naar de substructuur met de productgegevens:
 
       `/etc/commerce/products`
 
@@ -244,7 +243,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
 ### Incrementele import {#incremental-import}
 
-1. Controleer de informatie in AEM voor het (de) betrokken product(en) in de desbetreffende substructuur onder:
+1. Controleer de informatie die in AEM voor de betrokken producten is opgeslagen, in de desbetreffende substructuur onder:
 
    `/etc/commerce/products`
 
@@ -252,7 +251,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Werk in hybris de informatie bij die op het (de) relevante product(en) staat (staan).
+1. Werk in hybris de informatie over de desbetreffende producten bij.
 
 1. Open de hybris-importmodule in AEM:
 
@@ -262,7 +261,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Klikbox selecteren **Incrementele import**.
+1. Selecteren met het selectievakje **Incrementele import**.
 1. Klikken **Catalogus importeren** om het importeren te starten.
 
    Na voltooiing kunt u de gegevens controleren die in AEM onder worden bijgewerkt:
@@ -276,7 +275,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
 Het importproces kan lang duren, zodat u als uitbreiding van de productsynchronisatie specifieke gebieden van de catalogus kunt selecteren voor een express update die handmatig wordt geactiveerd. Dit gebruikt de de uitvoervoer samen met de standaardattributenconfiguratie.
 
-1. Controleer de informatie in AEM voor het (de) betrokken product(en) in de desbetreffende substructuur onder:
+1. Controleer de informatie die in AEM voor de betrokken producten is opgeslagen, in de desbetreffende substructuur onder:
 
    `/etc/commerce/products`
 
@@ -284,9 +283,9 @@ Het importproces kan lang duren, zodat u als uitbreiding van de productsynchroni
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-1. Werk in hybris de informatie bij die op het (de) relevante product(en) staat (staan).
+1. Werk in hybris de informatie over de desbetreffende producten bij.
 
-1. Voeg in hybris het product of de producten toe aan de expreswachtrij. bijvoorbeeld:
+1. In hybris, voeg één of meerdere producten aan de Uitdrukkelijke Rij toe; bijvoorbeeld:
 
    ![chlimage_1-43](/help/sites-administering/assets/chlimage_1-43a.png)
 
@@ -298,7 +297,7 @@ Het importproces kan lang duren, zodat u als uitbreiding van de productsynchroni
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Klikbox selecteren **Express Update**.
+1. Selecteren met het selectievakje **Express Update**.
 1. Klikken **Catalogus importeren** om het importeren te starten.
 
    Na voltooiing kunt u de gegevens controleren die in AEM onder worden bijgewerkt:
@@ -309,14 +308,14 @@ Het importproces kan lang duren, zodat u als uitbreiding van de productsynchroni
 
 ## De importmodule voor catalogi configureren {#configure-the-catalog-importer}
 
-De hybriscatalogus kan in AEM worden geïmporteerd, waarbij de batchimporteur voor hybriscatalogi, -categorieën en -producten wordt gebruikt.
+De hybriscatalogus kan in AEM worden geïmporteerd, waarbij de batchimporter voor hybriscatalogi, -categorieën en -producten wordt gebruikt.
 
 De parameters die door de importeur worden gebruikt, kunnen worden geconfigureerd voor:
 
 **Dag CQ-handel Hybris-catalogus Importeren**
 ( `com.adobe.cq.commerce.hybris.impl.importer.DefaultHybrisImporter`)
 
-Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
 ## Catalogus importeren {#catalog-import}
 
@@ -352,7 +351,7 @@ Een of meer producten uit de catalogus verwijderen:
 
    >[!NOTE]
    >
-   >Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
+   >Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie. Zie ook de console voor een volledige lijst van configureerbare parameters en hun gebreken.
 
 1. Initialiseer de importer door twee incrementele updates uit te voeren (zie [Catalogus importeren](#catalog-import)):
 
@@ -378,21 +377,21 @@ Een of meer producten uit de catalogus verwijderen:
    * Zoeken naar `Cajamara`
    * Selecteer dit product en wijzig de goedkeuringsstatus in `unapproved`
 
-1. Nog een incrementele update uitvoeren (zie [Catalogus importeren](#catalog-import)). In het logbestand wordt het verwijderde product vermeld.
-1. [Uitrol](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) de passende catalogus. De product- en productpagina is uit AEM verwijderd.
+1. Nog een incrementele update uitvoeren (zie [Catalogus importeren](#catalog-import)). In het logbestand wordt het verwijderde product weergegeven.
+1. [Uitrol](/help/commerce/cif-classic/administering/generic.md#rolling-out-a-catalog) de passende catalogus. De product- en productpagina zijn uit AEM verwijderd.
 
    Bijvoorbeeld:
 
    * Open:
 
-      [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
+     [http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris](http://localhost:4502/aem/catalogs.html/content/catalogs/geometrixx-outdoors-hybris)
 
    * De `Hybris Base` catalogus
    * Open:
 
-      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
+     [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * De `Cajamara` het product wordt verwijderd uit het `Bike` categorie
+   * De `Cajamara` product wordt uit het `Bike` categorie
 
 1. Het product opnieuw installeren:
 
@@ -436,4 +435,3 @@ Orderhistorie toevoegen aan de [clientcontext](/help/sites-developing/client-con
    >* Klik op het segment ([http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html](http://localhost:4502/etc/segmentation/geometrixx-outdoors/returning-customer.html))
    >
    >* Het segment wordt gebouwd gebruikend **Orderhistorie, eigenschap** eigenschap.
-

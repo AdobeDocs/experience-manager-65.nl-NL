@@ -1,16 +1,14 @@
 ---
 title: xtypes gebruiken (klassieke UI)
-description: Meer informatie over alle xtypes die beschikbaar zijn bij AEM
-uuid: 6497caa4-2f9b-4f21-9023-88d485fd1d78
+description: Meer informatie over alle xtypes die beschikbaar zijn in Adobe Experience Manager
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 exl-id: 06ca4e6d-9ab7-4c5b-905c-07c448632f2b
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '6400'
+source-wordcount: '6384'
 ht-degree: 0%
 
 ---
@@ -35,13 +33,13 @@ Om te weten te komen waarin de componenten een bepaalde xtype in AEM worden gebr
 
 ## xtypes {#xtypes}
 
-Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
+Hieronder ziet u de beschikbare xtypes in Adobe Experience Manager:
 
 * aantekening
 
   [CQ.wcm.Annotatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.Annotation)
 
-  Het dialoogvenster is een speciaal venster met een formulier in de hoofdtekst en een knopgroep in de voettekst. Deze wordt doorgaans gebruikt om inhoud te bewerken, maar kan ook alleen informatie weergeven.
+  Het dialoogvenster is een speciaal venster met een formulier in de hoofdtekst en een knopgroep in de voettekst. Deze wordt gewoonlijk gebruikt om inhoud te bewerken, maar kan ook alleen informatie weergeven.
 
 * arraystore
 
@@ -49,7 +47,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   Vroeger bekend als &quot;SimpleStore&quot;.
 
-  Kleine hulpklasse voor het maken van [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s van de gegevens van de Serie gemakkelijker. Een ArrayStore wordt automatisch geconfigureerd met een [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader).
+  Kleine hulpklasse voor het maken van [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s van de gegevens van de Serie gemakkelijker. Een ArrayStore wordt automatisch gevormd met een [CQ.Ext.data.ArrayReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.ArrayReader).
 
 * asseteditor
 
@@ -181,7 +179,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.ext.Component](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Component)
 
-  Basisklasse voor alle Ext-componenten. Alle subklassen van Component kunnen deelnemen aan de door de [Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) klasse. Componenten kunnen via de [items](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) config-optie op het moment dat de Container wordt gemaakt.
+  Basisklasse voor alle Ext-componenten. Alle subklassen van Component kunnen deelnemen aan de automatische Ext componentenlevenscyclus van verwezenlijking, het teruggeven, en de vernietiging die door wordt verstrekt [Container](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) klasse. Componenten kunnen via de [items](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Container) config-optie op het moment dat de Container wordt gemaakt.
 
 * componentextractor
 
@@ -211,7 +209,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   Basisklasse voor alle [CQ.Ext.BoxComponent](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.BoxComponent) die andere componenten kunnen bevatten. Containers verwerken het basisgedrag van het bevatten van items, namelijk items toevoegen, invoegen en verwijderen.
 
-  De meest gebruikte Container-klassen zijn [CQ.ext.panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window) en [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
+  De meest gebruikte Container-klassen zijn [CQ.ext.panel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Panel), [CQ.Ext.Window](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Window), en [CQ.Ext.TabPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.TabPanel).
 
 * contentfinder
 
@@ -295,7 +293,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Dialog](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Dialog)
 
-  Het dialoogvenster is een speciaal venster met een formulier in de hoofdtekst en een knopgroep in de voettekst. Deze wordt doorgaans gebruikt om inhoud te bewerken, maar kan ook alleen informatie weergeven.
+  Het dialoogvenster is een speciaal venster met een formulier in de hoofdtekst en een knopgroep in de voettekst. Deze wordt gewoonlijk gebruikt om inhoud te bewerken, maar kan ook alleen informatie weergeven.
 
 * dialogfieldset
 
@@ -385,13 +383,13 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Ext.grid.GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)
 
-  Deze klasse vertegenwoordigt de primaire interface van een component gebaseerd netcontrole om gegevens in een in tabelvorm formaat van rijen en kolommen te vertegenwoordigen.
+  Deze klasse vertegenwoordigt de primaire interface van een op component-gebaseerd netcontrole om gegevens in een tabelvorm formaat van rijen en kolommen te vertegenwoordigen.
 
 * groupingstore
 
   [CQ.Ext.data.GroupingStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.GroupingStore)
 
-  Een gespecialiseerde opslagimplementatie die het groeperen van verslagen door één van de beschikbare gebieden voorziet. Dit wordt gewoonlijk gebruikt in combinatie met een [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) om het gegevensmodel voor gegroepeerde GridPanel te bewijzen.
+  Een gespecialiseerde opslagimplementatie die het groeperen van verslagen door één van de beschikbare gebieden voorziet. Dit wordt gebruikt met een [CQ.Ext.grid.GroupingView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GroupingView) om het gegevensmodel voor gegroepeerde GridPanel te bewijzen.
 
 * hevige dialoog
 
@@ -441,7 +439,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Ext.data.JsonStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonStore)
 
-  Kleine hulpklasse voor het maken van [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s van JSON gegevens gemakkelijker. Er wordt automatisch een JsonStore geconfigureerd met een [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader).
+  Kleine hulpklasse voor het maken van [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s van JSON gegevens gemakkelijker. Een JsonStore wordt automatisch gevormd met een [CQ.Ext.data.JsonReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.JsonReader).
 
 * label
 
@@ -517,7 +515,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Ext.menu.BaseItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.BaseItem)
 
-  De basisklasse voor alle items die in menu&#39;s worden gerenderd. BaseItem biedt standaard rendering, geactiveerd statusbeheer en basisconfiguratieopties die door alle menucomponenten worden gedeeld.
+  De basisklasse voor alle items die in menu&#39;s worden gerenderd. BaseItem verstrekt gebrek die, geactiveerd staatsbeheer, en de opties van de basisconfiguratie teruggeeft door alle menucomponenten worden gedeeld.
 
 * menuCheckitem
 
@@ -535,19 +533,19 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Ext.menu.Separator](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Separator)
 
-  Voegt een scheidingsbalk toe aan een menu dat wordt gebruikt om logische groepen menu-items te verdelen. Over het algemeen zult u één van deze door &quot;-&quot;in te gebruiken u aanroept om toe te voegen () of in uw punten config eerder dan direct tot stand te brengen zult toevoegen.
+  Voegt een scheidingsbalk toe aan een menu dat wordt gebruikt om logische groepen menu-items te verdelen. Over het algemeen, voegt u één van deze toe door &quot;-&quot;te gebruiken in u roept om toe te voegen () of in uw punten config eerder dan direct tot stand te brengen.
 
 * menuTextem
 
   [CQ.Ext.menu.TextItem](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.TextItem)
 
-  Voegt een statische teksttekenreeks toe aan een menu dat gewoonlijk wordt gebruikt als een kop- of groepsscheidingsteken.
+  Voegt een statische teksttekenreeks toe aan een menu dat wordt gebruikt als een kop- of groepsscheidingsteken.
 
 * metagegevens
 
   [CQ.dam.form.Metadata](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.dam.form.Metadata)
 
-  Metagegevens bevatten een set velden waarmee de informatie wordt bepaald die nodig is voor een metagegevensveld, zoals bijvoorbeeld wordt gebruikt op pagina&#39;s voor middeleneditors.
+  Metagegevens bevatten een set velden waarmee de informatie wordt bepaald die nodig is voor een metagegevensveld, zoals bijvoorbeeld wordt gebruikt op pagina&#39;s in de Editor.
 
   Deze biedt de volgende velden:
 
@@ -561,7 +559,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.form.MVT](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.MVT)
 
-  Met de testcomponent Multivariate kunt u een set afbeeldingen definiëren en bewerken die als wisselende banners worden weergegeven. Klik door tariefstatistieken worden verzameld per banner.
+  Met de Multivariate Testing-component kunt u een set afbeeldingen definiëren en bewerken die als wisselende banners worden weergegeven. Klik door tariefstatistieken worden verzameld per banner.
 
 * kennisgevingsvak
 
@@ -579,7 +577,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-  De OfflineImporter is een hulpmiddel om documenten van Microsoft Word in AEM pagina&#39;s in te voeren en om te zetten. Met deze functie kan inhoud offline worden bewerkt met een tekstverwerker.
+  De OfflineImporter is een programma voor het importeren en converteren van Microsoft® Word-documenten naar AEM pagina&#39;s. Met deze functie kan inhoud offline worden bewerkt met een tekstverwerker.
 
 * eigenaarschap
 
@@ -591,7 +589,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Ext.PagingToolbar](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.PagingToolbar)
 
-  Naarmate de hoeveelheid records toeneemt, neemt de tijd die de browser nodig heeft om deze weer te geven toe. Met paginering wordt de hoeveelheid gegevens die met de klant wordt uitgewisseld, verminderd.
+  Naarmate het aantal records toeneemt, neemt de tijd die de browser nodig heeft om deze weer te geven toe. Met paginering wordt de hoeveelheid gegevens die met de klant wordt uitgewisseld, verminderd.
 
 * deelvenster
 
@@ -605,7 +603,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.form.ParagraphReference](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.ParagraphReference)
 
-  In het veld Alineasereferentie kunt u door pagina&#39;s bladeren en een van de alinea&#39;s selecteren. Het bestaat uit een triggerveld en een gekoppeld alineafbladerdialoogvenster.
+  In het veld Alineaslaggids kunt u door pagina&#39;s bladeren en een van de alinea&#39;s selecteren. Het bestaat uit een triggerveld en een gekoppeld alineascherm.
 
 * password
 
@@ -765,7 +763,7 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   De SmartImage is een intelligente uploader voor afbeeldingen. Het biedt gereedschappen voor het verwerken van een geüploade afbeelding, bijvoorbeeld een gereedschap voor het definiëren van afbeeldingen met hyperlinks en een functie voor het uitsnijden van afbeeldingen.
 
-  De component is voornamelijk ontworpen voor gebruik op een apart tabblad in het dialoogvenster.
+  De component is ontworpen voor gebruik op een afzonderlijk dialoogtabblad.
 
 * spacer
 
@@ -801,13 +799,13 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)
 
-  De klasse Store kapselt een cliënt zijgeheime voorgeheugen van in [Opnemen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record) objecten die invoergegevens leveren voor componenten zoals de [GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)de [ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)of de [DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView).
+  Met de Store-klasse wordt een cache op de client ingekapseld van [Opnemen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Record) objecten die invoergegevens leveren voor componenten zoals de [GridPanel](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.grid.GridPanel)de [ComboBox](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.ComboBox)of de [DataView](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.DataView).
 
 * suggestfield
 
   [CQ.form.SuggestField](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.SuggestField)
 
-  Het SuggestField verstrekt de gebruiker van suggesties die op zijn ingang worden gebaseerd.
+  Het SuggestField verstrekt de gebruiker van suggesties die op hun ingang worden gebaseerd.
 
 * schakelaar
 
@@ -875,13 +873,13 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.ext.tip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tip)
 
-  @xtype tip Dit is de basisklasse voor [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) en [CQ.ext.tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) die de basislay-out en het plaatsen verstrekt die alle op uiteinde-gebaseerde klassen vereisen. Deze klasse kan direct voor eenvoudige, statisch-gepositioneerde uiteinden worden gebruikt.
+  @xtype tip Dit is de basisklasse voor [CQ.Ext.QuickTip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.QuickTip) en [CQ.ext.tooltip](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Tooltip) die de basislay-out en het plaatsen verstrekt die alle op uiteinde-gebaseerde klassen vereisen. Deze klasse kan direct voor eenvoudige, statisch gepositioneerde uiteinden worden gebruikt.
 
 * titleseparator
 
   [CQ.menu.TitleSeparator](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.menu.TitleSeparator)
 
-  Voegt een scheidingsbalk toe aan een menu dat wordt gebruikt om logische groepen menu-items te verdelen. Het scheidingsteken kan bovendien een titel dragen.
+  Voegt een scheidingsbalk toe aan een menu dat wordt gebruikt om logische groepen menu-items te verdelen. Het scheidingsteken kan ook een titel bevatten.
 
 * werkbalk
 
@@ -945,6 +943,6 @@ Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
   [CQ.Ext.data.XmlStore](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlStore)
 
-  Kleine hulpklasse voor het maken van [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s van XML gegevens gemakkelijker. Er wordt automatisch een XmlStore geconfigureerd met een [CQ.Ext.data.XMLReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader).
+  Kleine hulpklasse voor het maken van [CQ.Ext.data.Store](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.Store)s van XML gegevens gemakkelijker. Een XmlStore wordt automatisch gevormd met een [CQ.Ext.data.XMLReader](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.data.XmlReader).
 
   **cqinclude** Pseudo xtype dat widgetdefinities van een verschillend pad in de gegevensopslagruimte bevat. Deze wordt meestal gebruikt in paginadialoogvensters. Er is geen werkelijke JavaScript-widgetklasse voor dit xtype. Het wordt verwerkt door de formatData() functie van de CQ.Util klasse. Zie dit kennisbankartikel voor meer informatie.

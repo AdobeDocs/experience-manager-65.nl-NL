@@ -1,18 +1,14 @@
 ---
 title: Dispatcher configureren voor Gemeenschappen
-seo-title: Configuring Dispatcher for Communities
-description: De dispatcher voor AEM Communities configureren
-seo-description: Configure the dispatcher for AEM Communities
-uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
+description: Dispatcher voor AEM Communities configureren
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 exl-id: fb4e3973-2193-4bb5-8120-bf2f3ec80112
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -25,25 +21,25 @@ Voor AEM Communities is het nodig de Dispatcher te configureren om ervoor te zor
 
 Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
-* Contact [Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html)
+* Contact [Klantenservice](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)
 
-Zie ook het hoofdgedeelte [Documentatie van Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html).
+Zie ook het hoofdgedeelte [Documentatie van Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
 ## Caching van Dispatcher {#dispatcher-caching}
 
 ### Overzicht {#overview}
 
-Dispatcher caching for AEM Communities is de mogelijkheid voor de verzender om volledig in cache opgeslagen versies van de pagina&#39;s van een gemeenschapssite te bedienen.
+Dispatcher caching for AEM Communities is de mogelijkheid voor de Dispatcher om volledig in cache opgeslagen versies van de pagina&#39;s van een gemeenschapssite te bedienen.
 
-Momenteel wordt deze functie alleen ondersteund voor anonieme sitebezoekers, zoals gebruikers die door de site van de community bladeren, of die door een zoekopdracht op een pagina van de community landen, en voor zoekprogramma&#39;s die pagina&#39;s indexeren. Het voordeel is dat anonieme gebruikers en zoekmachines betere prestaties zullen ervaren.
+Momenteel wordt deze functie alleen ondersteund voor anonieme sitebezoekers, zoals gebruikers die door de site van de community bladeren, of die door een zoekopdracht op een pagina van de community landen, en voor zoekmachines die pagina&#39;s indexeren. Het voordeel is dat anonieme gebruikers en zoekmachines betere prestaties ervaren.
 
-Voor ondertekende in leden, overslaat de verzender het geheime voorgeheugen, die verzoeken rechtstreeks aan de uitgever herleid, zodat alle pagina&#39;s worden geproduceerd en dynamisch geleverd.
+Voor ondertekende in leden, overslaat de Dispatcher het geheime voorgeheugen, die verzoeken rechtstreeks aan de uitgever herleid, zodat alle pagina&#39;s dynamisch worden geproduceerd en geleverd.
 
-Wanneer gevormd om verzender caching te steunen, wordt een op TTL-Gebaseerde &quot;maximum leeftijd&quot;vervaldatum toegevoegd aan de kopbal om de verzender caching pagina&#39;s huidig te verzekeren.
+Wanneer gevormd om het caching van de Verzender te steunen, wordt een op TTL-Gebaseerde &quot;maximum leeftijd&quot;vervaldatum toegevoegd aan de kopbal om ervoor te zorgen dat de Verzender caching pagina&#39;s huidig zijn.
 
 ### Vereisten {#requirements}
 
-* Dispatcher versie 4.1.2 of hoger (zie [Dispatcher installeren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html) voor de meest recente versie)
+* Dispatcher versie 4.1.2 of hoger (zie [Dispatcher installeren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en) voor de meest recente versie)
 * [ACS AEM Commons-pakket](https://adobe-consulting-services.github.io/acs-aem-commons/)
 
    * Versie 3.3.2 of hoger
@@ -53,45 +49,45 @@ Wanneer gevormd om verzender caching te steunen, wordt een op TTL-Gebaseerde &qu
 
 De OSGi-configuratie **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van de Dispatcher - Maximale Leeftijd** Hiermee stelt u de vervaldatum in van pagina&#39;s in de cache die onder een opgegeven pad worden weergegeven.
 
-* Van de [Webconsole](../../help/sites-deploying/configuring-osgi.md)
+* Van de [Webconsole](../../help/sites-deploying/configuring-osgi.md).
 
    * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Zoeken `ACS AEM Commons - Dispatcher Cache Control Header - Max Age`
-* Selecteer het plusteken (+) om een nieuwe verbindingsconfiguratie tot stand te brengen
+* Selecteer het plusteken (+) zodat u een verbindingsconfiguratie kunt tot stand brengen.
 
-   ![verzender](assets/dispatcher.png)
+  ![verzender](assets/dispatcher.png)
 
 * **Filterpatronen**
-
-   *(vereist)* Een of meer paden naar gemeenschapspagina&#39;s. Bijvoorbeeld, `/content/sites/engage/(.*)`.
+  *(vereist)* Een of meer paden naar gemeenschapspagina&#39;s. Bijvoorbeeld, `/content/sites/engage/(.*)`.
 
 * **Besturingselement voor cache maximaal pagina**
-
-   *(vereist)* De maximale pagina (in seconden) die moet worden toegevoegd aan de koptekst voor de cachebesturing. De waarde moet groter zijn dan nul (0).
+  *(vereist)* De maximumleeftijd (in seconden) om aan de kopbal van de Controle van het Geheime voorgeheugen toe te voegen. De waarde moet groter zijn dan nul (0).
 
 ## Verzendfilters {#dispatcher-filters}
 
-Het gedeelte /filter van het dialoogvenster `dispatcher.any` bestand wordt gedocumenteerd in [Toegang tot inhoud configureren - /filter](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#filter).
+Het gedeelte /filter van het dialoogvenster `dispatcher.any` bestand wordt gedocumenteerd in [Toegang tot inhoud configureren - /filter](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en).
 
 In deze sectie worden vermeldingen beschreven die waarschijnlijk nodig zijn voor een goede werking van de functies van de Gemeenschappen.
 
-De namen van filtereigenschappen volgen de conventie om een getal van vier cijfers te gebruiken om de volgorde aan te geven waarin filterpatronen moeten worden toegepast. Wanneer meerdere filterpatronen van toepassing zijn op een aanvraag, is het laatste filterpatroon dat van toepassing is, effectief. Zo, wordt het zeer eerste filterpatroon vaak gebruikt om alles te ontkennen, zodat de volgende patronen dienen om toegang op een gecontroleerde manier te herstellen.
+De namen van filtereigenschappen volgen de conventie om een getal van vier cijfers te gebruiken om de volgorde aan te geven waarin filterpatronen moeten worden toegepast. Wanneer meerdere filterpatronen van toepassing zijn op een aanvraag, is het laatst toegepaste filterpatroon effectief. Daarom wordt het eerste filterpatroon vaak gebruikt om alles te ontkennen, zodat de volgende patronen dienen om toegang op een gecontroleerde manier te herstellen.
 
-De volgende voorbeelden gebruiken eigenschapnamen die waarschijnlijk moeten worden gewijzigd om in een bepaald dispatcher.any-bestand te passen.
+De volgende voorbeelden gebruiken eigenschapnamen die waarschijnlijk moeten worden gewijzigd om in een bepaald voorbeeld te passen `dispatcher.any` bestand.
 
 Zie ook:
 
-* [Controlelijst voor beveiliging van verzender](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)
+* [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html?lang=en)
 
 >[!NOTE]
 >
 >**Voorbeelden van eigenschapnamen**
->Alle getoonde eigenschapnamen, zoals **/0050** en **/0170**, moet worden aangepast aan een bestaande dispatcher.elk configuratiebestand.
+>Alle getoonde eigenschapnamen, zoals **/0050** en **/0170**, moet worden aangepast aan bestaande `dispatcher.any` configuratiebestand.
+>
 
 >[!CAUTION]
 >
->Zie de [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) voor verdere overwegingen wanneer het beperken van toegang gebruikend Dispatcher. Lees ook de [Beveiligingslijst AEM](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/security-checklist.html) voor extra veiligheidsdetails betreffende uw AEM installatie.
+>Zie de [Controlelijst voor beveiliging van verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/security-checklist.html) voor verdere overwegingen wanneer het beperken van toegang gebruikend Dispatcher. Lees ook de [Beveiligingschecklist AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) voor extra veiligheidsdetails betreffende uw AEM installatie.
+>
 
 De volgende ingangen zouden aan het eind van de /filter sectie moeten worden toegevoegd, vooral nadat allen ingangen ontkent.
 
@@ -275,7 +271,7 @@ De sectie Regels van `dispatcher.any` definieert welke reacties in de cache moet
 
 Een belangrijke bron van problemen is het opnemen van filterregels zonder aandacht voor het effect op vroegere regels, vooral wanneer het toevoegen van een regel om toegang te ontkennen.
 
-Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer er meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
+Het eerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer er meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat wordt toegepast het filter dat wordt toegepast.
 
 ## Voorbeeld van verzender.any {#sample-dispatcher-any}
 

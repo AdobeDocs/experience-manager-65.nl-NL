@@ -1,26 +1,22 @@
 ---
 title: De testcase definiëren
-seo-title: Defining your Test Cases
 description: Uw testgevallen moeten gebaseerd zijn op de gebruiksgevallen en de gedetailleerde specificaties van de eisen
-seo-description: Your test cases should be based upon the use cases and the detailed requirements specification
-uuid: daaa5370-bcd3-45a6-9974-f9b5af6a1529
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
-discoiquuid: f01eb2aa-6891-4f5d-8a4a-43fc1534c222
 docset: aem65
 exl-id: c09cde0d-401c-437f-9ec8-a0530c1312d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
 
 # De testcase definiëren{#defining-your-test-cases}
 
-Uw testgevallen moeten gebaseerd zijn op:
+Uw testgevallen moeten zijn gebaseerd op:
 
 **Gevallen gebruiken**
 
@@ -38,40 +34,40 @@ De tests moeten duidelijk omschrijven:
 * Verwachte resultaten.
 * Duidelijke criteria voor slagen of zakken.
 
-Het vooruitzicht om testgevallen te automatiseren is duidelijk aantrekkelijk, aangezien het herhalende taken kan elimineren.
+Het vooruitzicht om testgevallen te automatiseren is aantrekkelijk omdat het herhalende taken elimineert.
 
 ## Handmatige en geautomatiseerde tests {#manual-versus-automated-tests}
 
 Het automatiseren van testgevallen is echter een belangrijke investering, dus moeten bepaalde aspecten in overweging worden genomen:
 
-* Vereis tijd, inspanning en ervaring aan opstelling en vorm.
+* Vereis tijd, inspanning, en ervaring aan opstelling en vorm.
 * Als browser wordt gebaseerd, is er een verhoogd risico op problemen wanneer browser updates worden geïnstalleerd; meer tijd nodig hebben om te corrigeren.
-* Alleen echt haalbaar voor grote projecten.
+* Alleen haalbaar voor grote projecten.
 * Goed als er meerdere releases worden gegenereerd voor tests of in het langetermijnreleaseplan.
 
 ## Specifieke aspecten testen {#testing-specific-aspects}
 
-Bij het testen AEM zijn enkele specifieke details van bijzonder belang:
+Bij het testen van AEM zijn enkele specifieke details van bijzonder belang:
 
 **Auteur- en publicatie-omgevingen**
 
-Hoewel, [Omgevingen](/help/sites-developing/the-basics.md#environments) er moet worden gewezen op een doorslaggevende factor van AEM met betrekking tot tests .
+Hoewel het [Omgevingen](/help/sites-developing/the-basics.md#environments)Het is de moeite waard om een doorslaggevende factor van AEM voor het testen te benadrukken.
 
-U moet AEM als twee toepassingen beschouwen:
+AEM twee toepassingen:
 
 * de *Auteur* omgeving Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
 Dit heeft een kleine (er), voorspelbare reeks gebruikers, voor wie specifieke functionaliteit en prestaties cruciaal zijn.
 
 * de *Publiceren* omgeving Deze instantie presenteert de website in de gepubliceerde vorm voor toegang door bezoekers.
-Dit heeft gewoonlijk een grotere reeks gebruikers, waar het volume van verkeer niet altijd 100% voorspelbaar is. Prestaties zijn nog steeds van cruciaal belang - bij het beantwoorden van verzoeken. Er moet ook rekening worden gehouden met caching en taakverdeling.
+Dit heeft gewoonlijk een grotere reeks gebruikers, waar het volume van verkeer niet altijd 100% voorspelbaar is. Prestaties zijn nog steeds van cruciaal belang - bij het beantwoorden van verzoeken. Overweeg ook caching en lading-in evenwicht brengen.
 
 Alhoewel dezelfde software als dusdanig:
 
 * verschillende doeleinden dienen
-* verschillende eisen hebben met betrekking tot functionaliteit en prestaties
+* verschillende eisen inzake functionaliteit en prestaties hebben
 * zijn verschillend gevormd
 * afzonderlijk worden afgebeeld
-* zullen elk hun eigen reeks goedkeuringstests hebben
+* elk heeft zijn eigen reeks goedkeuringstests
 
 Met andere woorden, zij moeten afzonderlijk en met verschillende testgevallen worden getest.
 
@@ -79,22 +75,22 @@ Met andere woorden, zij moeten afzonderlijk en met verschillende testgevallen wo
 
 Wanneer het testen van verpersoonlijking elk individueel gebruiksgeval zou moeten worden herhaald gebruikend veelvoudige gebruikersrekeningen om gedrag te bewijzen.
 
-Het cachegeheugen moet ook op correct gedrag worden gecontroleerd.
+Schakel het in cache plaatsen ook in voor het juiste gedrag.
 
 **De verzender**
 
-De meeste projecten zullen Dispatcher voor caching en lading het in evenwicht brengen installeren.
+De meeste projecten installeren Dispatcher voor caching en lading het in evenwicht brengen.
 
 Testen is moeilijk (caching vindt plaats op verschillende niveaus en op verschillende locaties) en moet gebeuren op basis van een zwarte doos. De belangrijkste aspecten waarop u wilt testen zijn:
 
 * **Nauwkeurigheid**
-zorgt ervoor dat de websitebezoeker de inhoud kan bijwerken.
+Hiermee zorgt u ervoor dat de bijgewerkte inhoud door de websitebezoeker wordt bekeken.
 
 * **Continuïteit**
-zorgt u ervoor dat de website beschikbaar blijft wanneer één server wordt afgesloten.
+Zorg ervoor dat de website nog steeds beschikbaar is wanneer één server wordt afgesloten.
 
 * **Clusters**
-Clusters worden gebruikt voor:
+Wordt gebruikt om het volgende op te geven:
 
    * **Failover**
 Als één server uitvalt, nemen andere servers in de cluster de verwerking over.

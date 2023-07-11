@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '910'
+source-wordcount: '898'
 ht-degree: 3%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moet bij veel AEM projecten rekening worden gehouden met de bezorgdheid van de ZOO. Lees [Aanbevolen werkwijzen voor SEO- en URL-beheer](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) voor aanvullende informatie.
+>SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moeten de zorgen van de SEO over vele AEM projecten worden aangepakt. Zie [Aanbevolen werkwijzen voor SEO- en URL-beheer](https://experienceleague.adobe.com/docs/experience-manager-65/managing/managing-further-reference/seo-and-url-management.html) voor aanvullende informatie.
 
 [AEM CIF Core-componenten](https://github.com/adobe/aem-core-cif-components) biedt geavanceerde configuraties om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen. In veel implementaties worden deze URL&#39;s aangepast voor SEO-doeleinden (Search Engine Optimization, optimalisatie van zoekprogramma&#39;s). De volgende videodetails hoe te om te vormen `UrlProvider` Service en kenmerken van [Sling Mapping](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) om de URL&#39;s voor product- en categoriepagina&#39;s aan te passen.
 
@@ -28,7 +28,7 @@ ht-degree: 3%
 
 ## Configuratie {#configuration}
 
-Om het `UrlProvider` De dienst volgens de eisen van SEO en vereist een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF URL&quot;verstrekken.
+Om het `UrlProvider` De dienst volgens de SEO vereisten en vereist een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF&quot;verstrekken.
 
 >[!NOTE]
 >
@@ -47,14 +47,14 @@ Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u 
 In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/product-page`
-* `{{sku}}` worden vervangen door de sku van het product, bijvoorbeeld `VP09`
-* `{{url_key}}` worden vervangen door de `url_key` eigenschap, bijvoorbeeld `lenora-crochet-shorts`
-* `{{url_path}}` worden vervangen door de `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
-* `{{variant_sku}}` worden vervangen door de momenteel geselecteerde variant, bijvoorbeeld `VP09-KH-S`
+* `{{sku}}` wordt bijvoorbeeld vervangen door de SKU van het product, `VP09`
+* `{{url_key}}` wordt vervangen door `url_key` eigenschap, bijvoorbeeld `lenora-crochet-shorts`
+* `{{url_path}}` wordt vervangen door `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
+* `{{variant_sku}}` wordt vervangen door bijvoorbeeld de geselecteerde variant; `VP09-KH-S`
 
-Aangezien `url_path` verouderd zijn, de vooraf gedefinieerde product-URL-indelingen gebruiken de `url_rewrites` en kies het pad met de meeste padsegmenten als alternatief als de optie `url_path` is niet beschikbaar.
+Aangezien `url_path` verouderd zijn, de vooraf gedefinieerde product-URL-indelingen gebruiken de `url_rewrites` en kies het pad met de meeste padsegmenten als alternatief `url_path` is niet beschikbaar.
 
-Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling er ongeveer zo uit `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
+Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
 ### Categorie Pagina-URL-indeling {#product-list}
 
@@ -66,8 +66,8 @@ Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of prod
 In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/category-page`
-* `{{url_key}}` worden vervangen door de categorie `url_key` eigenschap
-* `{{url_path}}` worden vervangen door de categorie `url_path`
+* `{{url_key}}` wordt vervangen door de categorie `url_key` eigenschap
+* `{{url_path}}` wordt vervangen door de categorie `url_path`
 
 Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/category-page.html/venia-bottoms/venia-pants.html`.
 
@@ -85,17 +85,17 @@ Bij publicatie-klasseninstanties daarentegen moeten URL&#39;s van cataloguspagin
 
 ## Aangepaste URL-indelingen {#custom-url-format}
 
-Om een formaat van douaneURL te verstrekken kan een project of uitvoeren [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) of de [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) de dienstinterface en registreert de implementatie als dienst OSGI. Deze implementaties, indien beschikbaar, vervangen de geconfigureerde, vooraf gedefinieerde indeling. Als er meerdere implementaties zijn geregistreerd, vervangt degene met de hogere servicerangschikking degene(n) door de lagere servicerangschikking.
+Om een formaat van douaneURL te verstrekken dat een project of kan uitvoeren [`ProductUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/ProductUrlFormat.html) of de [`CategoryUrlFormat`](https://javadoc.io/doc/com.adobe.commerce.cif/core-cif-components-core/latest/com/adobe/cq/commerce/core/components/services/urls/CategoryUrlFormat.html) de dienstinterface en registreert de implementatie als dienst OSGI. Deze implementaties, indien beschikbaar, vervangen de geconfigureerde, vooraf gedefinieerde indeling. Als er veelvoudige geregistreerde implementaties zijn, vervangt één met de hogere de dienstrangschikking degenen met de lagere de dienstrangschikking.
 
 De de formaatimplementaties van douaneURL moeten een paar methodes uitvoeren om een URL van bepaalde parameters te bouwen, en een URL te ontleden om de zelfde parameters respectievelijk terug te keren.
 
 ## Combineren met Sling Mappings {#sling-mapping}
 
-Naast de `UrlProvider`is het ook mogelijk [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) om URL&#39;s te herschrijven en te verwerken. Het project AEM Archetype biedt ook [een voorbeeldconfiguratie](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Toewijzingen van de Verschuiving voor haven 4503 (publiceren) en 80 (verzender) te vormen.
+Naast de `UrlProvider`is het ook mogelijk [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) om URL&#39;s te herschrijven en te verwerken. Het project AEM Archetype biedt ook [een voorbeeldconfiguratie](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Wijzen van het Monteren voor haven 4503 (publiceren) en 80 (Verzender) te vormen.
 
 ## Combineren met AEM Dispatcher {#dispatcher}
 
-URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server te gebruiken met `mod_rewrite` module. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basisomvat [herschrijfregels](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de gegenereerde grootte.
+URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` module. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basisomvat [herschrijfregels](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de gegenereerde grootte.
 
 ## Voorbeeld
 

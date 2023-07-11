@@ -1,37 +1,33 @@
 ---
 title: AEM uitvoeren in productielocatie
-seo-title: Running AEM in Production Ready Mode
 description: Leer hoe u AEM kunt uitvoeren in de productielodus.
-seo-description: Learn how to run AEM in Production Ready Mode.
-uuid: f48c8bae-c72f-4772-967e-f1526f096399
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
 exl-id: 3c342014-f8ec-4404-afe5-514bdb651aae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '378'
 ht-degree: 1%
 
 ---
 
 # AEM uitvoeren in productielocatie{#running-aem-in-production-ready-mode}
 
-Met AEM 6.1 introduceert Adobe de nieuwe `"nosamplecontent"` runmode gericht op automatisering van de stappen die nodig zijn om een AEM voor te bereiden voor gebruik in een productieomgeving.
+Met AEM 6.1 introduceert Adobe de nieuwe `"nosamplecontent"` de uitvoeringsmodus, die tot doel heeft de stappen te automatiseren die nodig zijn om een AEM voor te bereiden voor de implementatie in een productieomgeving.
 
-De nieuwe runmode zal niet alleen automatisch de instantie vormen om aan de veiligheid beste praktijken te houden die in veiligheidscontrolelijst worden beschreven, maar zal ook alle toepassingen en configuraties van de steekproefgeometrixx in het proces verwijderen.
+De nieuwe looppaswijze zal niet alleen automatisch de instantie vormen om aan de veiligheid beste praktijken te houden die in veiligheidscontrolelijst worden beschreven, maar zal ook alle toepassingen en configuraties van de steekproef Geometrixx in het proces verwijderen.
 
 >[!NOTE]
 >
->Aangezien de AEM productieklaar om praktische redenen slechts een groot deel van de taken omvat die nodig zijn om een instantie te beveiligen, wordt u ten zeerste aangeraden de [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md) voordat u met uw productieomgeving gaat leven.
+>Omdat de AEM productielocatie gereed is om praktische redenen alleen de meeste taken bestrijkt die nodig zijn om een instantie te beveiligen, wordt u ten zeerste aangeraden de [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md) voordat u met uw productieomgeving gaat leven.
 >
 >Ook, merk op dat het runnen van AEM in Productie Klaar Wijze effectief toegang tot CRXDE Lite zal onbruikbaar maken. Als u het voor het zuiveren doeleinden nodig hebt, zie [CRXDE Lite inschakelen in AEM](/help/sites-administering/enabling-crxde-lite.md).
 
 ![chlimage_1-83](assets/chlimage_1-83a.png)
 
-Als u AEM wilt uitvoeren in de productieloestaanmodus, hoeft u alleen maar het volgende te doen: `nosamplecontent` via de `-r` runmode schakelaar aan uw bestaande startargumenten:
+Als u AEM wilt uitvoeren in de productielocmodus, hoeft u alleen maar het volgende te doen: `nosamplecontent` via de `-r` looppas wijzeschakelaar aan uw bestaande startargumenten:
 
 ```shell
 java -jar aem-quickstart.jar -r nosamplecontent
@@ -45,14 +41,14 @@ java -jar aem-quickstart.jar -r author,crx3,crx3mongo,nosamplecontent -Doak.mong
 
 ## Verandert een deel van de Productie Klaar Wijze {#changes-part-of-the-production-ready-mode}
 
-Meer specifiek, zullen de volgende configuratieveranderingen worden uitgevoerd wanneer AEM op productie klaar wijze in werking wordt gesteld:
+Meer specifiek, worden de volgende configuratieveranderingen uitgevoerd wanneer AEM op productie klaar wijze in werking wordt gesteld:
 
 1. De **CRXDE-ondersteuningsbundel** ( `com.adobe.granite.crxde-support`) is standaard uitgeschakeld in de modus voor productie-klaar. Het kan op elk ogenblik van de Adobe openbare Maven bewaarplaats worden geïnstalleerd. Versie 3.0.0 is vereist voor AEM 6.1.
 
 1. De **Apache Sling Simple WebDAV Access to repositories** ( `org.apache.sling.jcr.webdav`) is alleen beschikbaar op **auteur** instanties.
 
 1. Nieuwe gebruikers moeten het wachtwoord wijzigen bij de eerste aanmelding. Dit is niet van toepassing op de beheerder.
-1. **Foutopsporingsinfo genereren** is uitgeschakeld voor de **Apache Sling Java Script Handler**.
+1. **Foutopsporingsinfo genereren** is uitgeschakeld voor de **Apache Sling JavaScript-handler**.
 
 1. **Toegewezen inhoud** en **Foutopsporingsinfo genereren** zijn uitgeschakeld voor de **Apache Sling JSP Script Handler**.
 

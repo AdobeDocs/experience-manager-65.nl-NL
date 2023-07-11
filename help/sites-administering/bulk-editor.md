@@ -1,19 +1,15 @@
 ---
 title: De Bulkeditor
-seo-title: The Bulk Editor
 description: Leer hoe u de Bulk-editor kunt gebruiken.
-seo-description: Learn how to use the Bulk Editor.
-uuid: 5f5e4190-d9b2-40a6-8cf4-4b7aebe35ad3
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 3649cffb-418a-4ad6-862f-56346a831b0b
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: feef7362b832f2ddef1902ef2a25d55323b6be26
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -21,10 +17,10 @@ ht-degree: 0%
 
 # De Bulkeditor{#the-bulk-editor}
 
-Met de Bulkeditor kunt u op zeer efficiënte wijze pagina&#39;s bewerken als de context van de visuele pagina niet nodig is, omdat u hiermee de volgende mogelijkheden hebt:
+Met de Bulkeditor kunt u op efficiënte wijze pagina&#39;s bewerken wanneer de context van de visuele pagina niet nodig is, omdat u hiermee de volgende mogelijkheden hebt:
 
 * zoeken naar (en weergeven) inhoud van meerdere pagina&#39;s; dit wordt gedaan gebruikend GQL (de Taal van de Vraag van Google)
-* deze inhoud rechtstreeks in de bulkeditor bewerken
+* deze inhoud rechtstreeks in de Bulkeditor bewerken
 * de wijzigingen opslaan (op de pagina&#39;s die beginnen)
 * deze inhoud exporteren naar een spreadsheetbestand met tabs als scheidingsteken (.tsv)
 
@@ -32,7 +28,7 @@ Met de Bulkeditor kunt u op zeer efficiënte wijze pagina&#39;s bewerken als de 
 >
 >U kunt ook inhoud importeren in de gegevensopslagruimte, maar dit is standaard uitgeschakeld voor de Bulk-editor, zoals beschikbaar in de **Gereedschappen** console.
 
-In deze sectie wordt beschreven hoe u met de bulkeditor in de **Gereedschappen** console. Gewoonlijk gebruiken beheerders de bulkeditor om meerdere items te zoeken en bewerken. Dit wordt gedaan door de lijst te bevolken gebruikend een vraag GQL en dan door de inhoudspunten te selecteren om aan te werken. Auteurs gebruiken doorgaans de bulkeditor als onderdeel van een aangepaste bulkbewerkingstoepassing die toegankelijk is via de [productaanbieding](/help/sites-authoring/default-components.md#productlist) component.
+In deze sectie wordt beschreven hoe u met de Bulk-editor in de **Gereedschappen** console. Gewoonlijk gebruiken beheerders de Bulk-editor om meerdere items te zoeken en bewerken. Dit wordt gedaan door de lijst te bevolken gebruikend een vraag GQL en dan door de inhoudspunten te selecteren om aan te werken. Auteurs gebruiken doorgaans de Bulk-editor als onderdeel van een aangepaste Bulk Editor-toepassing die toegankelijk is via de [productaanbieding](/help/sites-authoring/default-components.md#productlist) component.
 
 >[!CAUTION]
 >
@@ -49,13 +45,13 @@ Een voorbeeld om een dergelijk gebruiksgeval te illustreren is opgenomen in de w
 
    ![Voorbeeld van klanttevredenheidsonderzoek](assets/custsatsurvey.png)
 
-1. De Bulk-editor is volledig aanpasbaar. In dit voorbeeld staat de bulkeditor gebruikers echter niet toe de inhoud te bewerken, maar laat ze de informatie alleen exporteren naar een spreadsheet.
+1. De Bulkeditor is volledig aanpasbaar, maar in dit voorbeeld staat de Bulkeditor gebruikers niet toe de inhoud te bewerken, maar laat ze de informatie alleen exporteren naar een spreadsheet.
 
    ![Bulkbewerkingsconsole](assets/bulkeditor.png)
 
 ## De Bulkeditor gebruiken {#how-to-use-the-bulk-editor}
 
-Met de bulkeditor kunt u:
+Met de Bulkeditor kunt u:
 
 * [zoeken naar inhoud die op vraagparameters wordt gebaseerd, om gespecificeerde eigenschappen van de resultaten in kolommen te tonen, deze inhoud uit te geven en de veranderingen te bewaren](#searching-and-editing-content)
 * [om deze inhoud te exporteren naar een spreadsheet met tabs als scheidingsteken](#exporting-content)
@@ -64,7 +60,7 @@ Met de bulkeditor kunt u:
 
 ### Inhoud zoeken en bewerken {#searching-and-editing-content}
 
-Om de bulkredacteur te gebruiken om veelvoudige punten gelijktijdig uit te geven:
+De Bulkeditor gebruiken om meerdere items tegelijk te bewerken:
 
 1. In de **Gereedschappen** console, klik **Importeurs** map om deze uit te vouwen.
 1. Dubbelklik op de knop **Bulkeditor** om het te openen.
@@ -78,11 +74,11 @@ Om de bulkredacteur te gebruiken om veelvoudige punten gelijktijdig uit te geven
   </tr>
   <tr>
    <td>Hoofdpad</td>
-   <td>Wijst op de wortelweg de bulkredacteursonderzoeken.<br /> Bijvoorbeeld, <code>/content/geometrixx/en</code>. De bulkbewerker zoekt naar alle onderliggende knooppunten.</td>
+   <td>Hiermee geeft u het hoofdpad aan dat door de Bulk-editor wordt gezocht.<br /> Bijvoorbeeld, <code>/content/geometrixx/en</code>. De Bulk-editor zoekt naar alle onderliggende knooppunten.</td>
   </tr>
   <tr>
    <td>Zoekparameters</td>
-   <td>Gebruikend parameters GQL, ga het onderzoekskoord in u de bulkredacteur wilt zoeken in de bewaarplaats; bijvoorbeeld: <code>type:Page</code> zoekt naar alle pagina's in het hoofdpad; <code>text:professional</code> zoekt naar alle pagina's waarop het woord "professioneel" staat, en <code>"jcr:title":English</code> zoekt naar alle pagina's die "Engels"als titel hebben. U kunt alleen naar tekenreeksen zoeken.</td>
+   <td>Gebruikend parameters GQL, ga het onderzoekskoord in u de BulkRedacteur wilt zoeken in de bewaarplaats; bijvoorbeeld: <code>type:Page</code> zoekt naar alle pagina's in het hoofdpad; <code>text:professional</code> zoekt naar alle pagina's waarop het woord "professioneel" staat, en <code>"jcr:title":English</code> zoekt naar alle pagina's die "Engels"als titel hebben. U kunt alleen naar tekenreeksen zoeken.</td>
   </tr>
   <tr>
    <td>Inhoudsmodus, selectievakje</td>
@@ -90,7 +86,7 @@ Om de bulkredacteur te gebruiken om veelvoudige punten gelijktijdig uit te geven
   </tr>
   <tr>
    <td>Eigenschappen/kolommen</td>
-   <td>Schakel de selectievakjes in voor de eigenschappen die de bulkeditor moet retourneren. De eigenschappen die u selecteert, zijn de kolomkoppen in het resultatenvenster. Standaard wordt het knooppuntpad weergegeven in de resultaten.</td>
+   <td>Schakel de selectievakjes in voor de eigenschappen die de Bulk-editor moet retourneren. De eigenschappen die u selecteert, zijn de kolomkoppen in het resultatenvenster. Standaard wordt het knooppuntpad weergegeven in de resultaten.</td>
   </tr>
   <tr>
    <td>Aangepaste eigenschappen/kolommen</td>
@@ -120,14 +116,14 @@ In het bovenstaande voorbeeld worden alle pagina&#39;s die voldoen aan uw zoekcr
 
 #### Aanvullende GQL-zoekparameters {#additional-gql-query-parameters}
 
-* **pad:** alleen zoekknooppunten onder dit pad. Als u meer dan één termijn met een wegprefix specificeert, slechts zal laatste worden overwogen.
-* **type:** alleen retourknooppunten van de opgegeven knooppunttypen. Dit omvat zowel primaire als gemengde typen. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
-* **bestelling:** het resultaat van de opgegeven eigenschappen te bepalen. U kunt meerdere door komma&#39;s gescheiden eigenschapsnamen opgeven. Als u het resultaat in aflopende volgorde wilt rangschikken, plaatst u gewoon een minteken voor de naam van de eigenschap. Bijvoorbeeld: order:-name. Als u een plusteken gebruikt, wordt het resultaat in oplopende volgorde geretourneerd. Dit is ook de standaardinstelling.
-* **limiet:** Hiermee beperkt u het aantal resultaten met een interval. Bijvoorbeeld: limit:10..20 Let op: het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. Bijvoorbeeld limit:10 (retourneert de eerste 10 resultaten)
+* **pad:** alleen zoekknooppunten onder dit pad. Als u meer dan één termijn met een wegprefix specificeert, slechts wordt het laatste overwogen.
+* **type:** alleen retourknooppunten van de opgegeven knooppunttypen. Dit omvat primaire en mixintypes. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
+* **bestelling:** het resultaat van de opgegeven eigenschappen te bepalen. U kunt meerdere door komma&#39;s gescheiden eigenschapsnamen opgeven. Als u het resultaat in aflopende volgorde wilt rangschikken, plaatst u gewoon een minteken voor de naam van de eigenschap. Bijvoorbeeld de volgorde:-name. Als u een plusteken gebruikt, wordt het resultaat in oplopende volgorde geretourneerd. Dit is ook de standaardinstelling.
+* **limiet:** Hiermee beperkt u het aantal resultaten met een interval. Limiet:10..20 Het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. limit:10 (retourneert de eerste tien resultaten).
 
 ### Inhoud exporteren {#exporting-content}
 
-U moet mogelijk inhoud exporteren en er wijzigingen in aanbrengen in een Excel-spreadsheet. Bijvoorbeeld, kunt u een postingslijst willen uitvoeren en de gebiedscode van alle vermelde telefoonaantallen direct in Excel veranderen, extra lijnen toevoegen, etc.
+U moet mogelijk inhoud exporteren en er wijzigingen in aanbrengen in een Excel-spreadsheet. U kunt bijvoorbeeld een mailinglijst exporteren en de gebiedscode van alle vermelde telefoonnummers rechtstreeks in Excel wijzigen, of extra regels toevoegen enzovoort.
 
 Inhoud exporteren:
 
@@ -141,7 +137,7 @@ Inhoud exporteren:
    ![Resultaten exporteren](assets/srchrsesultexport.png)
 
 1. Selecteer de locatie en bevestig dat u het bestand wilt downloaden.
-1. Nadat u het bestand hebt gedownload, kunt u het openen vanuit uw spreadsheetprogramma, bijvoorbeeld Microsoft Excel. Het spreadsheetprogramma importeert het bestand en zet het om in een spreadsheetindeling.
+1. Nadat u het bestand hebt gedownload, kunt u het openen vanuit uw spreadsheetprogramma, bijvoorbeeld Microsoft® Excel. Het spreadsheetprogramma importeert het bestand en zet het om in een spreadsheetindeling.
 
    ![Geëxporteerde resultaten in een spreadsheet](assets/exportinexcel.png)
 

@@ -1,18 +1,14 @@
 ---
 title: We.Retail Reference Implementation
-seo-title: We.Retail Reference Implementation
 description: We.Retail is een voorvertoning van een referentie-implementatie die de aanbevolen manier illustreert om een online aanwezigheid in te stellen met AEM
-seo-description: We.Retail is a technology preview of a reference implementation that illustrates the recommended way of setting up an online presence with AEM
-uuid: d8833192-b592-4812-bf9b-bd882e8ee7f0
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: f50150af-deff-4c29-bfe0-1cfc67b29d51
 exl-id: 504c61c7-dcd3-412c-9239-d24a2b78e4b9
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '749'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 1%
 
 Wij.Retail is een referentie-implementatie en voorbeeldinhoud die de aanbevolen manier illustreren om een online aanwezigheid met Adobe Experience Manager in te stellen.
 
-Wij.Retail maakt gebruik van de nieuwste AEM technologieën zoals HTML, responsieve lay-outs, bewerkbare sjablonen, kerncomponenten en nog veel meer.
+Wij.Retail gebruikt de nieuwste AEM technologieën zoals HTML, responsieve lay-outs, bewerkbare sjablonen, kerncomponenten en nog veel meer.
 
 Hoewel het een verticale handelsversie illustreert, kan de manier waarop de site is ingesteld op elke verticale locatie worden toegepast en zijn alleen de productcatalogus en de winkelwagenfuncties specifiek voor de detailhandel.
 
@@ -45,11 +41,11 @@ Als AEM standaardimplementatie van verwijzingen, toont Wij.Retail enkele van de 
 
 ## Aan de slag {#getting-started}
 
-Wij.Detailhandel wordt geleverd als AEM voorbeeldinhoud. Om te kunnen gebruiken, [AEM beginnen zoals u normaal zou doen](/help/sites-deploying/deploy.md#getting-started), zorgt u ervoor dat de voorbeeldinhoud niet wordt uitgeschakeld.
+Wij.Detailhandel wordt geleverd als AEM voorbeeldinhoud. Eenvoudig gebruiken [AEM beginnen zoals u normaal zou doen](/help/sites-deploying/deploy.md#getting-started), zorgt u ervoor dat de voorbeeldinhoud niet wordt uitgeschakeld.
 
 >[!CAUTION]
 >
->Wij.Detailhandel zou niet op productieinstanties moeten worden geïnstalleerd. De productie-instanties moeten worden gestart in `nosamplecontent` [runmode](/help/sites-deploying/configure-runmodes.md).
+>Installeer We.Retail niet op productieexemplaren. De productie-instanties moeten worden gestart in `nosamplecontent` [uitvoeringsmodus](/help/sites-deploying/configure-runmodes.md).
 
 >[!CAUTION]
 >
@@ -62,7 +58,7 @@ Hoewel wij.Retail met de AEM release wordt gedistribueerd, kunnen updates van de
 ### Eerste stappen {#first-steps}
 
 1. Nadat AEM is gestart (en/of We.Retail is geïnstalleerd), wordt de site **Wij.Detailhandel** is beschikbaar in het dialoogvenster [siteconsole](/help/sites-authoring/basic-handling.md#global-navigation).
-1. De volgende pagina kan bijvoorbeeld worden geopend en moet er uitzien zoals deze wordt weergegeven in het dialoogvenster [aanhangsel](#appendix) hieronder:
+1. De volgende pagina kan bijvoorbeeld worden geopend en moet er zo uitzien als in het dialoogvenster [aanhangsel](#appendix) hieronder:
 
    `https://<server name>:<port number>/editor.html/content/we-retail/language-masters/en.html`
 
@@ -109,11 +105,11 @@ CODE VOOR GITHUB
 U kunt de code van deze pagina op GitHub vinden
 
 * [Open aem-steekproef-wij-kleinhandelsproject op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail)
-* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/archive/master.zip)
+* Het project downloaden als [een ZIP-bestand](https://codeload.github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/zip/refs/heads/master)
 
-De nieuwste release kan ook [rechtstreeks gedownload](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/latest) als een installeerbaar pakket.
+De nieuwste release kan ook [rechtstreeks gedownload](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/releases/tag/we.retail.reactor-4.0.0) als een installeerbaar pakket.
 
-Als u problemen ondervindt, kunt u [GitHub-problemen](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
+Als u problemen ondervindt, kunt u een [GitHub-probleem](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/issues).
 
 Voel vrij om te vorken of om mee bij te dragen [verzoeken om terugtrekking](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail/pulls).
 

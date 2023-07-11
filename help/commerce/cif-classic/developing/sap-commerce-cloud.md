@@ -1,17 +1,14 @@
 ---
 title: Ontwikkelen met SAP Commerce Cloud
-seo-title: Developing with SAP Commerce Cloud
 description: Het SAP Commerce Cloud-integratieframework bevat een integratielaag met een API
-seo-description: The SAP Commerce Cloud integration framework includes an integration layer with an API
-uuid: a780dd17-027a-4a61-af8f-3e2f600524c7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
 workflow-type: tm+mt
-source-wordcount: '2308'
+source-wordcount: '2298'
 ht-degree: 0%
 
 ---
@@ -20,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt. In bepaalde specifieke en hier behandelde voorbeelden wordt verwezen naar de [hybris](https://www.hybris.com/) oplossing.
+>Het eCommerce-kader kan met elke oplossing voor eCommerce worden gebruikt. Bepaalde specifieke en hier behandelde voorbeelden hebben betrekking op de [hybris](https://www.sap.com/products/crm.html) oplossing.
 
 Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 
@@ -34,17 +31,17 @@ Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 >
 >[API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
-Een aantal uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
+Verscheidene uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
 
 * een productweergaveonderdeel
 * een winkelwagentje
 * uitchecken
 
-Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, het onderzoek van het eCommerce systeem, een derdenonderzoek of een combinatie daarvan te gebruiken.
+Voor onderzoek, wordt een integratiehaak verstrekt die u het AEM onderzoek, het onderzoek van het eCommerce systeem, een derdenonderzoek, of een combinatie van daarvan laat gebruiken.
 
 ## Selectie van eCommerce-engine {#ecommerce-engine-selection}
 
-Het eCommerce-kader kan worden gebruikt met elke oplossing voor e-handel, waarbij de gebruikte motor moet worden geïdentificeerd aan de hand van AEM:
+Het eCommerce-kader kan bij elke eCommerce-oplossing worden gebruikt; de motor die wordt gebruikt, moet identificeerbaar zijn door AEM:
 
 * eCommerce Engines zijn OSGi-diensten die de `CommerceService` interface
 
@@ -57,18 +54,18 @@ Het eCommerce-kader kan worden gebruikt met elke oplossing voor e-handel, waarbi
       * Indien gevonden, wordt de waarde gebruikt om de raadpleging van de handelsdienst te filtreren.
 
       * Indien niet gevonden, wordt de hoogste commerciële dienst gebruikt.
-   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk-getypte middelen worden toegevoegd.
 
+   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk getypte middelen worden toegevoegd.
 
 * De `cq:commerceProvider` eigenschap wordt ook gebruikt om te verwijzen naar de juiste definitie van de handelsfabriek .
 
-   * Bijvoorbeeld een `cq:commerceProvider` eigenschap met de waarde `hybris` zal correleren met de configuratie OSGi voor **Day CQ Commerce Factory voor Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - waarbij de parameter `commerceProvider` heeft ook de waarde `hybris`.
+   * Bijvoorbeeld een `cq:commerceProvider` eigenschap met de waarde `hybris` correleert met de OSGi-configuratie voor **Day CQ Commerce Factory voor Hybris** (com.adobe.cq.commerce.hybris.impl.HybrisServiceFactory) - waarbij de parameter `commerceProvider` heeft ook de waarde `hybris`.
 
    * Hier komen nog andere eigenschappen, zoals **Catalogusversie** kan worden geconfigureerd (indien van toepassing en beschikbaar).
 
 Zie de volgende voorbeelden:
 
-| `cq:commerceProvider = geometrixx` | in een standaard AEM installatie is een specifieke implementatie vereist; bijvoorbeeld het geometrixx-voorbeeld, dat minimale extensies voor de algemene API bevat |
+| `cq:commerceProvider = geometrixx` | in een standaard AEM installatie is een specifieke implementatie vereist. Het voorbeeld Geometrixx bevat bijvoorbeeld minimale extensies voor de algemene API |
 |--- |--- |
 | `cq:commerceProvider = hybris` | hybrusimplementatie |
 
@@ -110,9 +107,9 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
 * Voeg bij het aanroepen van de methode het volgende opdrachtregelargument toe aan de opdracht
 
-   `-P hybris4`
+  `-P hybris4`
 
-   Het downloadt de vooraf geconfigureerde distributie van Hybris 4 en sluit het in de bundel in `cq-commerce-hybris-server`.
+  Het downloadt de vooraf geconfigureerde distributie van Hybris 4 en sluit het in de bundel in `cq-commerce-hybris-server`.
 
 * In de OSGi configuratiemanager:
 
@@ -122,7 +119,7 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
 ### Sessieafhandeling {#session-handling}
 
-hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winkelwagentje van de klant . De sessie-id wordt geretourneerd door hybris in een `JSESSIONID` cookie die moet worden verzonden bij volgende verzoeken aan hybris. Om te voorkomen dat de sessie-id in de opslagplaats wordt opgeslagen, wordt deze gecodeerd in een ander cookie dat in de browser van de winkels wordt opgeslagen. De volgende stappen worden uitgevoerd:
+hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winkelwagentje van de klant . De sessie-id wordt geretourneerd door hybris in een `JSESSIONID` cookie die op volgende verzoeken naar hybris moet worden verzonden. Als u wilt voorkomen dat de sessie-id in de opslagplaats wordt opgeslagen, wordt deze gecodeerd in een ander cookie dat in de browser van de winkel wordt opgeslagen. De volgende stappen worden uitgevoerd:
 
 * Op het eerste verzoek wordt geen cookie ingesteld op verzoek van de klant; er wordt dus een verzoek naar de instantie hybris verzonden om een sessie te maken.
 
@@ -142,11 +139,11 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
 
    * de verschillende berekeningen op het karretje uitvoert;
 
-      `commerceSession.getProductPrice(Product product)`
+     `commerceSession.getProductPrice(Product product)`
 
 * Heeft de *opslaglocatie* voor de **bestellen** data
 
-   `CommerceSession.getUserContext()`
+  `CommerceSession.getUserContext()`
 
 * Eigenaar van **betaling** verwerkingsverbinding
 
@@ -158,8 +155,8 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 
 * Een eerste lading id&#39;s wordt geleverd door hybris als voer. Deze feed kan worden bijgewerkt.
 * hybris zal bijgewerkte informatie verstrekken via een feed ( die AEM opiniepeilingen ) .
-* Wanneer AEM productgegevens gebruikt, worden aanvragen voor de huidige gegevens teruggestuurd naar hybris (voorwaardelijk verzoek ophalen met de laatst gewijzigde datum).
-* Bij hybris is is het mogelijk de voederinhoud op declaratieve wijze te specificeren.
+* Wanneer AEM productgegevens gebruikt, verzendt het verzoeken terug naar hybris voor de huidige gegevens (voorwaardelijk krijgen verzoek gebruikend laatste gewijzigde datum).
+* Bij hybriden is het mogelijk de voederinhoud op declaratieve wijze te specificeren.
 * Het toewijzen van de voederstructuur aan het AEM inhoudsmodel gebeurt in de voederadapter aan de AEM kant.
 
 ![chlimage_1-12](/help/sites-developing/assets/chlimage_1-12a.png)
@@ -167,26 +164,26 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 * De importer (b) wordt gebruikt voor de initiële installatie van de paginaboomstructuur in AEM voor catalogi.
 * Veranderingen in de hybris in de catalogus worden via een diervoeder aan AEM gemeld en vervolgens doorgegeven aan AEM b)
 
-   * Product toegevoegd/verwijderd/gewijzigd ten opzichte van catalogusversie.
+   * Product toegevoegd/verwijderd/gewijzigd met betrekking tot catalogusversie.
 
    * Goedgekeurd product.
 
 * De hybris-extensie biedt een pollingimporter (&quot;hybris&quot;-schema), die kan worden geconfigureerd om wijzigingen met een opgegeven interval in AEM te importeren (bijvoorbeeld elke 24 uur waarin het interval in seconden wordt opgegeven):
 
-   ```JavaScript
-       http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
-        {
-        * "jcr:mixinTypes": ["cq:PollConfig"],
-        * "enabled": true,
-        * "source": "hybris:outdoors",
-        * "jcr:primaryType": "cq:PageContent",
-        * "interval": 86400
-        }
-   ```
+  ```JavaScript
+      http://localhost:4502/content/geometrixx-outdoors/en_US/jcr:content.json
+       {
+       * "jcr:mixinTypes": ["cq:PollConfig"],
+       * "enabled": true,
+       * "source": "hybris:outdoors",
+       * "jcr:primaryType": "cq:PageContent",
+       * "interval": 86400
+       }
+  ```
 
 * De catalogusconfiguratie in AEM herkent **Staand** en **Online** catalogusversies.
 
-* Voor het synchroniseren van producten tussen catalogusversies moet de bijbehorende AEM (a, c) worden geactiveerd.
+* Voor het synchroniseren van producten tussen catalogusversies moet de bijbehorende AEM pagina (a, c) worden geactiveerd of gedeactiveerd.
 
    * Een product toevoegen aan een **Online** catalogusversie moet op de productpagina worden geactiveerd.
 
@@ -206,15 +203,15 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 
 #### Architectuur van product en varianten {#architecture-of-product-and-variants}
 
-Eén product kan meerdere variaties hebben; kan bijvoorbeeld variëren per kleur en/of grootte. Een product moet bepalen welke eigenschappen de variatie aansturen; wij noemen deze *Alternatieve assen*.
+Eén product kan meerdere variaties hebben; kan bijvoorbeeld variëren per kleur en/of grootte. Een product moet bepalen welke eigenschappen de variatie aansturen; Adobe noemt dit *Alternatieve assen*.
 
 Niet alle eigenschappen zijn echter variantassen. Variaties kunnen ook andere eigenschappen beïnvloeden; de prijs kan bijvoorbeeld afhankelijk zijn van de omvang . Deze eigenschappen kunnen niet door de verkoopster worden geselecteerd en worden daarom niet beschouwd als variantassen.
 
 Elk product en/of elke variant wordt vertegenwoordigd door een middel, en daarom kaarten 1:1 aan een gegevensopslagknoop. Het gevolg is dat een specifiek product en/of specifieke variant op unieke wijze kan worden geïdentificeerd door het pad ervan.
 
-De product/variant-bron bevat niet altijd de werkelijke productgegevens. Dit kan een representatie zijn van gegevens die daadwerkelijk op een ander systeem worden opgeslagen (zoals hybris). Productbeschrijvingen, prijzen, enz. worden bijvoorbeeld niet in AEM opgeslagen, maar in real-time opgehaald van de eCommerce-engine.
+De product/variant-bron bevat niet altijd de werkelijke productgegevens. Het kan een representatie zijn van gegevens die op een ander systeem (zoals hybris) worden opgeslagen. Zo worden productbeschrijvingen, prijzen enzovoort niet opgeslagen in AEM, maar in real-time opgehaald van de eCommerce-engine.
 
-Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden van een voorouder kunnen overerven), maar er zijn ook aanroepen die de set variaties weergeven ( `getVariantAxes()`, `getVariants()`, enz.).
+Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden van een voorouder kunnen overerven), maar er zijn ook aanroepen die de set variaties weergeven ( `getVariantAxes()`, `getVariants()`, enzovoort).
 
 >[!NOTE]
 >
@@ -226,17 +223,12 @@ Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste a
 >1. `size`
 >
 >1. plus één of meer
-
 >
 >Deze extra variant wordt geselecteerd via `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Outdoors).
 
 #### Productverwijzingen en productgegevens {#product-references-and-product-data}
 
-In het algemeen:
-
-* productgegevens bevinden zich onder `/etc`
-
-* en productverwijzingen onder `/content`.
+In het algemeen bevinden de productgegevens zich onder `/etc`en productverwijzingen onder `/content`.
 
 Er moet een 1:1-kaart zijn tussen productvariaties en productgegevensknooppunten.
 
@@ -349,12 +341,12 @@ public class AxisFilter implements VariantFilter {
          * De productgegevens zijn hiërarchisch; productkenmerken worden overgenomen van de voorouders van een productgegevensknooppunt.
 
          * De verwijzingen van het product kunnen lokale eigenschappen ook bevatten, die die in hun productgegevens worden gespecificeerd met voeten treden.
+
       * Een product zelf:
 
          * Zonder `productData` eigenschap.
 
          * Een productknooppunt dat alle eigenschappen lokaal bevat (en geen eigenschap productData bevat), neemt productkenmerken rechtstreeks van zijn eigen voorouders over.
-
 
 * **AEM-generieke productstructuur**
 
@@ -423,11 +415,11 @@ public class AxisFilter implements VariantFilter {
       * Kwantiseringen.
       * Verschillende valuta&#39;s.
       * BTW-plichtig en btw-vrij.
-   * De modifiers zijn volledig open-eind met de volgende interface:
+
+   * De modifiers zijn open-end met de volgende interface:
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
-
 
 **Opslag**
 
@@ -438,7 +430,7 @@ public class AxisFilter implements VariantFilter {
 
 **Personalisatie**
 
-* Personalisatie moet altijd door de [ClientContext](/help/sites-administering/client-context.md).
+* Zorg altijd voor personalisatie via de [ClientContext](/help/sites-administering/client-context.md).
 * A ClientContext `/version/` van het karretje wordt in alle gevallen gecreëerd:
 
    * De producten moeten worden toegevoegd door `CommerceSession.addCartEntry()` methode.
@@ -492,7 +484,7 @@ De `CommerceSession` eigenaar van de drie elementen:
 
 **Verzendberekeningen**
 
-* Vaak moeten bestelformulieren meerdere verzendopties (en prijzen) bieden.
+* Orderformulieren moeten vaak meerdere verzendopties (en prijzen) bevatten.
 * De prijzen kunnen gebaseerd zijn op artikelen en gegevens van de bestelling, zoals gewicht en/of bezorgadres.
 * De `CommerceSession` heeft toegang tot alle afhankelijkheden, zodat het op een vergelijkbare manier kan worden behandeld als productprijzen:
 
@@ -510,7 +502,6 @@ De `CommerceSession` eigenaar van de drie elementen:
 >* Controleren of de methode beschikbaar is
 >* Prijsinformatie toevoegen
 >* Om kopers in staat te stellen de bestelpagina in AEM bij te werken (met inbegrip van de superset van de verzendmethoden en de beschrijvende tekst), terwijl ze toch de controle hebben om de relevante `CommerceSession` informatie.
-
 
 **Betalingsverwerking**
 
@@ -551,7 +542,7 @@ Het kernproject bevat verschillende algemene klassen/hulpklassen:
 
 1. `FacetParamHelper`
 
-   Is een hulpprogrammaklasse die één statische methode verstrekt - `toParams` - die worden gebruikt voor het genereren van `GET` parametertekenreeksen van een lijst met facetten en één in-/uitschakelen waarde. Dit is handig aan de UI-zijde, waar u een hyperlink moet weergeven voor elke waarde van elk facet, zodat wanneer de gebruiker op de hyperlink klikt, de desbetreffende waarde wordt in- en uitgeschakeld (als deze is geselecteerd, wordt deze verwijderd uit de query, anders toegevoegd). Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, overschrijvende waarden, enzovoort.
+   Is een hulpprogrammaklasse die één statische methode verstrekt - `toParams` - die worden gebruikt voor het genereren van `GET` parametertekenreeksen van een lijst met facetten en één in-/uitschakelen waarde. Dit is nuttig aan de kant UI, waar u een hyperlink voor elke waarde van elk facet moet tonen, zodat wanneer de gebruiker de hyperlink klikt de respectieve waarde van een knevel wordt voorzien (namelijk als het werd geselecteerd wordt het verwijderd uit de vraag, anders toegevoegd). Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, het overschrijven van waarden enzovoort.
 
 Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `CommerceResult` object. Zie de [API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) voor meer informatie over dit onderwerp.
 
@@ -561,24 +552,24 @@ Er wordt gezorgd voor integratie tussen AEM en verschillende systemen voor e-han
 
 * Verificatie
 
-   AEM wordt geacht de *alleen* front-end voor het web en dus *alles* verificatie.
+  AEM wordt geacht de *alleen* front-end voor het web en dus *alles* verificatie.
 
 * Rekeningen in hybriden
 
-   AEM maakt een bijbehorende (ondergeschikte) account in hybris voor elke winkel. De gebruikersnaam van dit account is gelijk aan de AEM gebruikersnaam. Een cryptografisch-willekeurig wachtwoord wordt auto-geproduceerd en (gecodeerd) opgeslagen in AEM.
+  AEM maakt een bijbehorende (ondergeschikte) account in hybris voor elke winkel. De gebruikersnaam van dit account is gelijk aan de AEM gebruikersnaam. Een cryptografisch willekeurig wachtwoord wordt automatisch geproduceerd en (gecodeerd) opgeslagen in AEM.
 
 #### Bestaande gebruikers {#pre-existing-users}
 
-Een AEM front-end kan vóór een bestaande hybris implementatie worden geplaatst. Ook kan een hybris-engine aan een bestaande AEM-installatie worden toegevoegd. Hiertoe moeten de systemen bestaande gebruikers in elk systeem netjes kunnen verwerken:
+Een AEM front-end kan vóór een bestaande hybris-implementatie worden geplaatst. Ook kan een hybris-engine aan een bestaande AEM-installatie worden toegevoegd. Hiertoe moeten de systemen bestaande gebruikers in elk systeem netjes kunnen verwerken:
 
 * AEM -> hybris
 
-   * Wanneer u zich aanmeldt bij hybris, als de AEM gebruiker nog niet bestaat:
+   * Wanneer u zich aanmeldt bij hybris, als de AEM gebruiker niet bestaat:
 
       * een nieuwe hybrusgebruiker maken met een cryptografisch willekeurig wachtwoord
       * sla de hybris-gebruikersnaam op in de gebruikersmap van de AEM gebruiker
-   * Zie: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
+   * Zie: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
 * hybris -> AEM
 
@@ -586,10 +577,10 @@ Een AEM front-end kan vóór een bestaande hybris implementatie worden geplaatst
 
       * poging om zich aan te melden bij hybris met geleverde gebruikersnaam/pwd
       * als dit lukt, maakt u de nieuwe gebruiker AEM met hetzelfde wachtwoord (AEM-specifieke salt resulteert in AEM-specifieke hash).
+
    * Het bovenstaande algoritme wordt geïmplementeerd in een Sling `AuthenticationInfoPostProcessor`
 
       * Zie: `com.adobe.cq.commerce.hybris.impl.user.LazyUserImporter.java`
-
 
 ### Het importproces aanpassen {#customizing-the-import-process}
 
@@ -659,7 +650,7 @@ public interface ImportHandler {
 }
 ```
 
-Uw aangepaste handler kan alleen door de importer worden herkend als deze de optie `service.ranking`eigenschap met een waarde hoger dan 0; bijvoorbeeld.
+Uw aangepaste handler kan alleen door de importer worden herkend als deze de optie `service.ranking`eigenschap met een waarde hoger dan 0, bijvoorbeeld.
 
 ```java
 @Component

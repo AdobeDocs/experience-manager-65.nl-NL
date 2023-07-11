@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
 workflow-type: tm+mt
-source-wordcount: '1949'
+source-wordcount: '1973'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Beide methoden kunnen worden gebruikt, hoewel er subtiele verschillen zijn, voor
 
    * De console van het Web is de standaardinterface voor configuratie OSGi. Deze interface biedt een interface voor het bewerken van de verschillende eigenschappen, waarbij mogelijke waarden uit vooraf gedefinieerde lijsten kunnen worden geselecteerd.
 
-      Als zodanig is het de eenvoudigste methode.
+     Als zodanig is het de eenvoudigste methode.
 
    * Om het even welke configuraties die met de Console van het Web worden aangebracht worden onmiddellijk toegepast en van toepassing op de huidige instantie, ongeacht de huidige looppaswijze, of om het even welke verdere veranderingen in de looppaswijze.
 
@@ -86,11 +86,12 @@ Een configuratie bijwerken met de webconsole:
 
    * De webconsole openen via de koppeling op het tabblad **Gereedschap -> Bewerkingen** -menu. Na het registreren in de console, kunt u het drop-down menu gebruiken van:
 
-      **OSGi >**
+     **OSGi >**
 
    * De directe URL; bijvoorbeeld:
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`
+
    Er wordt een lijst weergegeven.
 
 1. Selecteer de bundel die u door één van beiden wilt vormen:
@@ -124,7 +125,9 @@ Deze bestanden kunnen worden opgenomen in inhoudspakketten en opnieuw worden geb
 
 >[!NOTE]
 >
->De indeling van de configuratiebestanden is specifiek. Zie de [Documentatie over Sling Apache](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format) voor volledige informatie.
+>De indeling van de configuratiebestanden is specifiek. Raadpleeg de documentatie bij Sling Apache voor:
+>* volledige informatie over [Apache Sling Provisioning Model en Apache SlingStart](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>* zelfstudies en voorbeelden van [Bronnen en eigenschappen ophalen bij verkoop](https://sling.apache.org/documentation/tutorials-how-tos/getting-resources-and-properties-in-sling.html).
 >
 >Daarom wordt aangeraden het configuratiebestand te maken en te onderhouden door werkelijke wijzigingen aan te brengen in de webconsole.
 
@@ -230,7 +233,8 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
    * Type: `sling:OsgiConfig`
    * Naam: de persistente identiteit (PID);
 
-      bijvoorbeeld voor AEM gebruik van WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
+     bijvoorbeeld voor AEM gebruik van WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
+
    >[!NOTE]
    >
    >Bij het toevoegen van een fabrieksconfiguratie `-<identifier>` op de naam.
@@ -310,15 +314,15 @@ In de volgende lijst ziet u een kleine selectie van de configuraties die beschik
 
 * Auteur - AEM WCM-filter:
 
-   `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.author/com.day.cq.wcm.core.WCMRequestFilter`
 
 * Publiceren - AEM WCM-filter:
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
 * Publiceren - AEM WCM-paginatiestatistieken:
 
-   `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
+  `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
 >[!NOTE]
 >
@@ -332,25 +336,25 @@ Om van alle configuratieknooppunten in uw instantie een lijst te maken, gebruik 
 
 * Als u een configuratie door de console van het Web verandert, wordt het (gewoonlijk) geschreven in de bewaarplaats bij:
 
-   `/apps/{somewhere}`
+  `/apps/{somewhere}`
 
    * Standaard `{somewhere}` is `system/config` zodat wordt de configuratie geschreven aan
 
-      `/apps/system/config`
+     `/apps/system/config`
 
    * Als u echter een configuratie bewerkt die oorspronkelijk van elders in de opslagplaats afkomstig was: bijvoorbeeld:
 
-      /libs/foo/config/someconfig
+     /libs/foo/config/someconfig
 
-      Dan wordt de bijgewerkte configuratie geschreven onder de originele plaats; bijvoorbeeld:
+     Dan wordt de bijgewerkte configuratie geschreven onder de originele plaats; bijvoorbeeld:
 
-      `/apps/foo/config/someconfig`
+     `/apps/foo/config/someconfig`
 
 * Instellingen die worden gewijzigd door `admin` worden opgeslagen in `*.config` bestanden onder:
 
-   ```
-      /crx-quickstart/launchpad/config
-   ```
+  ```
+     /crx-quickstart/launchpad/config
+  ```
 
    * Dit gebied is de privé gegevens van OSGi configuratie admin en houdt alle configuratiedetails die door worden gespecificeerd `admin`, ongeacht hoe zij het systeem zijn binnengekomen.
    * Dit gebied is een implementatiedetail en u mag deze map nooit rechtstreeks bewerken.
@@ -358,11 +362,11 @@ Om van alle configuratieknooppunten in uw instantie een lijst te maken, gebruik 
 
       * Apache Felix OSGi Management Console
 
-         `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
+        `../crx/org/apache/felix/webconsole/internal/servlet/OsgiManager.config`
 
       * CRX Sling Client Repository
 
-         `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
+        `../com/day/crx/sling/client/impl/CRXSlingClientRepository/<pid-nr>.config`
 
 >[!CAUTION]
 >

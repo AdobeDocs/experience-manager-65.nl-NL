@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1232'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
 
 Er zijn verschillende manieren om de weergave en/of het gedrag van een AEM Communities-component op de client aan te passen.
 
@@ -63,7 +63,7 @@ Om een component te binden, moet het volledige componentenmanuscript binnen een 
 
 * `data-component-id`=&quot;{{id}}&quot;
 
-   wordt vanuit de context omgezet in de eigenschap id
+  wordt vanuit de context omgezet in de eigenschap id
 
 * `data-scf-component`=&quot;*&lt;resourcetype>*
 
@@ -87,16 +87,16 @@ Alle eigenschappen die op een component/een middel worden geplaatst kunnen worde
 
 ## CSS schuintrekken {#skinning-css}
 
-Componenten aanpassen aan het algemene thema van de website kan worden bereikt door &#39;skins&#39; toe te wijzen. Kleuren, lettertypen, afbeeldingen, knoppen, koppelingen, afstand en zelfs positionering worden in zekere mate gewijzigd.
+Componenten aanpassen aan het algemene thema van de website kan worden bereikt door &#39;skins&#39; toe te wijzen. Kleuren, lettertypen, afbeeldingen, knoppen, koppelingen, afstand en zelfs een bepaalde positie worden gewijzigd.
 
-Skin maken kan worden bereikt door de framestijlen selectief te overschrijven of door geheel nieuwe stijlpagina&#39;s te schrijven. De componenten SCF bepalen namespaced, modulaire en semantische CSS klassen die de diverse elementen beïnvloeden die omhoog een component maken.
+Skin maken kan worden bereikt door de framestijlen selectief te overschrijven of door geheel nieuwe stijlpagina&#39;s te schrijven. De componenten SCF bepalen namespaced, modulaire, en semantische CSS klassen die de diverse elementen beïnvloeden die omhoog een component maken.
 
 Een skin toewijzen aan een component:
 
-1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: compositiegebied, werkbalkknoppen, berichtlettertype, enz.).
+1. Identificeer de elementen die u wilt veranderen (voorbeeld - composer gebied, toolbarknopen, berichtdoopvont, etc.).
 1. Identificeer de CSS klasse/de regels die deze elementen beïnvloeden.
 1. Maak een stijlbladbestand (.css).
-1. Het stijlblad opnemen in een clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat deze wordt opgenomen in uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
+1. Stijlblad opnemen in clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat deze wordt opgenomen in uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
 
 1. Definieer de CSS-klassen en -regels die u hebt geïdentificeerd (#2) in uw stijlpagina opnieuw en voeg stijlen toe.
 
@@ -104,16 +104,16 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 
 >[!CAUTION]
 >
->Elke CSS-klassennaam die vooraf is voorzien van `scf-js` heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
+>Elke CSS-klassennaam die vooraf is voorzien van `scf-js` heeft een specifiek gebruik in JavaScript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
 >
->Terwijl de `scf-js` klassen zijn niet van invloed op stijlen, de klassennamen kunnen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
+>Terwijl de `scf-js` klassen zijn niet van invloed op stijlen. De klassennamen kunnen in stijlbladen worden gebruikt met het voorwendsel dat er bijwerkingen kunnen optreden wanneer deze de status van elementen bepalen.
 
 ## JavaScript uitbreiden {#extending-javascript}
 
 Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 
-1. Maak een component voor u-app met een jcr:resourceSuperType dat is ingesteld op de waarde van jcr:resourceType van de uitgebreide component, bijvoorbeeld social/forum/components/hbs/forum.
-1. Onderzoek Javascript van de standaardSCF component om te bepalen welke methodes moeten worden geregistreerd gebruikend SCF.registerComponent ().
+1. Maak een component voor uw app met een jcr:resourceSuperType dat is ingesteld op de waarde van jcr:resourceType van de uitgebreide component, bijvoorbeeld social/forum/components/hbs/forum.
+1. Onderzoek JavaScript van de standaardSCF component om te bepalen welke methodes moeten worden geregistreerd gebruikend SCF.registerComponent ().
 1. Kopieer het JavaScript van de uitgebreide component of begin helemaal opnieuw.
 1. Breid de methode uit.
 1. Gebruik SCF.registerComponent() om alle methoden te registreren met de standaardinstellingen of de aangepaste objecten en weergaven.
@@ -151,7 +151,7 @@ Scripttags in SCF-scripts mogen niet worden verwijderd wanneer componenten worde
 
 ## Clientlibs voor SCF {#clientlibs-for-scf}
 
-Het gebruik van [clientbibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs), biedt een manier om de JavaScript en CSS die worden gebruikt voor het renderen van inhoud op de client, te organiseren en te optimaliseren.
+Het gebruik van [clientbibliotheken](../../help/sites-developing/clientlibs.md) (clientlibs), biedt een manier om de JavaScript en CSS die worden gebruikt om inhoud op de client te renderen, te organiseren en te optimaliseren.
 
 De clientlibs voor SCF volgen een zeer specifiek noemingspatroon voor twee varianten, die slechts door de aanwezigheid van &quot;auteur&quot;in de categorienaam variëren:
 
@@ -200,10 +200,10 @@ De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&q
 
 Elke site is anders in de manier waarop ze clientbibliotheken beheren. Enkele factoren zijn:
 
-* Totale snelheid: Misschien is het de wens dat de site reageert, maar het is acceptabel dat de eerste pagina een beetje traag wordt geladen. Als veel van de pagina&#39;s dezelfde Javascript gebruiken, kunnen de verschillende Javascripts in één client worden ingesloten en kan er vanaf de eerste pagina naar worden verwezen om te laden. Het JavaScript in deze enkele download blijft in het cachegeheugen opgeslagen, waardoor de hoeveelheid gegevens die voor volgende pagina&#39;s moet worden gedownload, tot een minimum wordt beperkt.
-* Korte tijd tot eerste pagina: Misschien is het de bedoeling dat de eerste pagina snel wordt geladen. In dit geval bevat het JavaScript-bestand meerdere kleine bestanden waarnaar alleen kan worden verwezen als dat nodig is.
+* Totale snelheid: Misschien is het de wens dat de site reageert, maar het is acceptabel dat de eerste pagina een beetje traag wordt geladen. Als veel pagina&#39;s dezelfde JavaScript gebruiken, kunnen de verschillende JavaScript-code in één client worden ingesloten en kan er vanaf de eerste pagina die moet worden geladen naar worden verwezen. Het JavaScript in deze enkele download blijft in het cachegeheugen opgeslagen, waardoor de hoeveelheid gegevens die voor volgende pagina&#39;s moet worden gedownload, tot een minimum wordt beperkt.
+* Korte tijd tot eerste pagina: Misschien is het de bedoeling dat de eerste pagina snel wordt geladen. In dit geval bestaat de JavaScript-code uit meerdere kleine bestanden waarnaar alleen kan worden verwezen als dat nodig is.
 * Een balans tussen het laden van de eerste pagina en volgende downloads.
 
 | **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |

@@ -5,9 +5,9 @@ contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '714'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-De [noodzakelijke eCommerce-pakketten](#packages-needed-for-ecommerce-with-hybris) zal de volledige functionaliteit van het eCommerce-kader bieden, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien in een hybris-implementatie (inclusief een demonstratiecatalogus)
+De [noodzakelijke eCommerce-pakketten](#packages-needed-for-ecommerce-with-hybris) biedt de volledige functionaliteit van het eCommerce-kader, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien in een hybris-implementatie (inclusief een demonstratiecatalogus)
 
 Dit is beschikbaar onder de Engelse (Amerikaanse) tak ( `/content/geometrixx-outdoors/en_US`) van de site Geometrixx Outdoors:
 
@@ -44,10 +44,9 @@ De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om H
 >[!NOTE]
 >
 >* Ondersteunt versies 18.11 en hoger.
->* U hebt Java 7 nodig om de [hybris 5-server.](https://www.hybris.com/en/architecture-technology)
->* De hybris-invoegtoepassing, de [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), wordt niet ondersteund door de AEM extensie.
+>* U hebt Java™ 7 nodig om de [hybris 5-server.](https://www.sap.com/products/crm.html)
+* De hybris-invoegtoepassing, de [Telco Accelerator](https://www.sap.com/products/crm.html), wordt niet ondersteund door de AEM extensie.
 >
-
 
 ### Pakketten die nodig zijn voor e-handel met hybris {#packages-needed-for-ecommerce-with-hybris}
 
@@ -78,7 +77,7 @@ Voor het installeren van een volledige configuratie (met de demonstratiecatalogu
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
-1. Installeer de demonstratieinhoudpakketten met de [pakketbeheer](/help/sites-administering/package-manager.md):
+1. Installeer de demonstratieinhoudpakketten met de [Pakketbeheer](/help/sites-administering/package-manager.md):
 
    1. ` [cq-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-hybris-content)`
    1. ` [cq-geometrixx-hybris-content-6.3.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/cq-geometrixx-hybris-content)`
@@ -92,29 +91,29 @@ Voor het installeren van een volledige configuratie (met de demonstratiecatalogu
 
 >[!CAUTION]
 >
->Voor het gebruik van de hybrisserver is een aparte licentie voor hybris vereist.
+Voor het gebruik van de hybrisserver is een aparte licentie voor hybris vereist.
 
 >[!NOTE]
 >
->Voor ontwikkelaars [API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) kan ook worden gedownload.
+Voor ontwikkelaars [API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) kan ook worden gedownload.
 
 ### Uw hybrisserver downloaden en samenstellen {#download-and-build-your-hybris-server}
 
-De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het zal ook de aanvankelijke configuraties die voor de verbindingen tussen hybris en cq worden vereist maken. De extensie kan dan worden gebruikt met de standaardinstellingen.
+De stappen in deze procedure downloaden en bouwen de hybrisserver. Het maakt ook de aanvankelijke configuraties die voor de verbindingen tussen hybris en cq worden vereist. De extensie kan vervolgens worden gebruikt met de standaardinstellingen.
 
 >[!CAUTION]
 >
->Hybrusversies ouder dan 5.5.1 worden niet ondersteund.
+Hybrusversies ouder dan 5.5.1 worden niet ondersteund.
 
 >[!NOTE]
 >
->Om dit te voltooien, zult u nodig hebben [Groovy](https://groovy-lang.org/) op uw systeem geïnstalleerd.
+Om dit te voltooien, moet u [Groovy](https://groovy-lang.org/) op uw systeem geïnstalleerd.
 
 1. Download de **hybris Commerce Suite** distributie via de hybris - downloadsite .
 
    >[!CAUTION]
    >
-   >U hebt een account (van hybris) nodig om dit te kunnen openen.
+   U hebt een account (van hybris) nodig om toegang te krijgen tot deze account.
 
 1. Pak het distributiebestand uit op de gewenste locatie (doorverwijzen naar &lt;hybris-root-directory>).
 1. Voer de volgende handelingen uit vanaf de opdrachtregel:
@@ -128,11 +127,11 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
 
    >[!NOTE]
    >
-   >Bij uitvoering:
+   Bij uitvoering:
    >
-   >`ant clean all`
+   `ant clean all`
    >
-   >Druk `Return` indien vereist.
+   Druk `Return` indien vereist.
 
 1. Download de volgende bestanden naar de hoofdmap van de geëxtraheerde hybrisdistributie,
 
@@ -145,7 +144,7 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
 
    >[!NOTE]
    >
-   >Gebruik voor hybris 5.6.0 en hoger de volgende setup.groovy.
+   Voor hybris 5.6.0 en later, gebruik volgende setup.groovy.
 
    5.6.0 en hoger
 
@@ -166,7 +165,7 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
 
    >[!NOTE]
    >
-   >Afhankelijk van uw systeem kunnen verschillende van deze stappen enkele minuten duren.
+   Afhankelijk van uw systeem kunnen verschillende van deze stappen enkele minuten duren.
 
 1. Navigeer in uw browser naar de **hybris-beheerconsole** om:
 
@@ -174,15 +173,15 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
 
 1. Klikken **Initialiseren** en bevestig vervolgens de initialisatieactie (aangezien bestaande gegevens worden verwijderd).
 
-   De voortgang wordt weergegeven op de console, met `FINISHED` afwerking aangeven.
+   De vooruitgang wordt getoond op de console, met `FINISHED` afwerking aangeven.
 
    >[!NOTE]
    >
-   >Afhankelijk van uw systeem kan het enkele minuten duren voordat de bewerking is voltooid.
+   Afhankelijk van uw systeem kan het enkele minuten duren voordat de bewerking is voltooid.
 
 ### De Geometrixx Outdoors Store instellen {#setup-the-geometrixx-outdoors-store}
 
-Deze procedure zal de demonstratieopslag - Geometrixx Online uploaden en vormen.
+Deze procedure uploadt en configureert de demonstratiewinkel - Geometrixx Online.
 
 1. Start de hybris-instantie. Voer de volgende handelingen uit vanaf de opdrachtregel:
 
@@ -213,7 +212,7 @@ Deze procedure zal de demonstratieopslag - Geometrixx Online uploaden en vormen.
 
 [Bestand ophalen](/help/sites-deploying/assets/geometrixx-outdoors-images.zip)
 
-1. Klikken **Start** om de opgegeven bestanden te importeren. De **Resultaat** worden alle logbestandvermeldingen weergegeven.
+1. Klikken **Start** om de opgegeven bestanden te importeren. De **Resultaat** worden alle logitems weergegeven.
 
 1. Klikken **Gereed** om het importvenster te sluiten.
 
@@ -231,7 +230,7 @@ Deze procedure zal de demonstratieopslag - Geometrixx Online uploaden en vormen.
 
    `en_US - English (United States)`
 
-1. Klikken **Start** om de opgegeven bestanden te importeren. De **Resultaat** worden alle logbestandvermeldingen weergegeven.
+1. Klikken **Start** om de opgegeven bestanden te importeren. De **Resultaat** worden alle logitems weergegeven.
 
 1. Klikken **Gereed** om het importvenster te sluiten.
 

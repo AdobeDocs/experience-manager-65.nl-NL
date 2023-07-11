@@ -1,9 +1,6 @@
 ---
-title: MongoDB voor demo instellen
-seo-title: How to Setup MongoDB for Demo
+title: MongoDB instellen voor demo
 description: Hoe te opstelling MSRP voor één auteursinstantie en één publiceer instantie
-seo-description: How to setup MSRP for one author instance and one publish instance
-uuid: d2035a9e-f05c-4f90-949d-7cdae9646750
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -11,20 +8,20 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
 
-# MongoDB voor demo instellen {#how-to-setup-mongodb-for-demo}
+# MongoDB instellen voor demo {#how-to-setup-mongodb-for-demo}
 
 ## Inleiding {#introduction}
 
-In deze zelfstudie wordt beschreven hoe u de installatie kunt uitvoeren [MSRP](msrp.md) for *één auteur* instantie en *één publicatie* -instantie.
+In deze zelfstudie wordt beschreven hoe u het programma kunt instellen [MSRP](msrp.md) for *één auteur* instantie en *één publicatie* -instantie.
 
-Met deze opstelling, is de communautaire inhoud toegankelijk van zowel auteur als publicatiemilieu&#39;s zonder het moeten voorwaarts of omgekeerd door:sturen gebruiker geproduceerde inhoud (UGC).
+Met deze opstelling, is de communautaire inhoud toegankelijk van zowel auteur als publicatiemilieu&#39;s zonder het moeten voorwaarts of omgekeerd repliceren user-generated inhoud (UGC).
 
 Deze configuratie is geschikt voor *niet-productie* omgevingen zoals voor ontwikkeling en/of demonstratie.
 
@@ -38,17 +35,17 @@ Deze configuratie is geschikt voor *niet-productie* omgevingen zoals voor ontwik
 
 ### MongoDB installeren {#install-mongodb}
 
-* MongoDB downloaden van [https://www.mongodb.org/](https://www.mongodb.org/)
+* MongoDB downloaden van [https://www.mongodb.com/](https://www.mongodb.com/)
 
    * Keuze van besturingssysteem:
 
-      * Linux
+      * Linux®
       * Mac 10.8
       * Windows 7
+
    * Keuze van versie:
 
       * Gebruik minimaal versie 2.6
-
 
 * Basisconfiguratie
 
@@ -56,9 +53,9 @@ Deze configuratie is geschikt voor *niet-productie* omgevingen zoals voor ontwik
    * Configureer voor monniken:
 
       * Het is niet nodig mongo&#39;s te configureren of te verschepen.
-   * De geïnstalleerde MongoDB-map wordt aangeduid als &lt;mongo-install>.
-   * Het gedefinieerde pad naar de gegevensmap wordt &lt;mongo-dbpath>.
 
+   * De geïnstalleerde MongoDB-map wordt genoemd &lt;mongo-install>.
+   * Het gedefinieerde pad naar de gegevensmap wordt &lt;mongo-dbpath>.
 
 * MongoDB kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd.
 
@@ -66,7 +63,7 @@ Deze configuratie is geschikt voor *niet-productie* omgevingen zoals voor ontwik
 
 * &lt;mongo-install>/bin/mongod —dbpath &lt;mongo-dbpath>
 
-Hiermee wordt een MongoDB-server gestart met de standaardpoort 27017.
+Dit begint een server MongoDB gebruikend standaardhaven 27017.
 
 * Gebruik voor Mac een hogere limiet met de beginmarkering &#39;ulimit -n 2048&#39;
 
@@ -100,13 +97,13 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
 
    * Geschikt voor elk besturingssysteem.
    * Solr versie 7.0.
-   * Solr vereist Java 1.7 of hoger.
+   * Solr vereist Java™ 1.7 of hoger.
 
 * Basisconfiguratie
 
    * Volg &#39;voorbeeld&#39; Solr instellen.
    * Er is geen service nodig.
-   * De geïnstalleerde Solr-map wordt &lt;solr-install>.
+   * De geïnstalleerde map Solr wordt aangeroepen &lt;solr-install>.
 
 ### Solr voor AEM Communities configureren {#configure-solr-for-aem-communities}
 
@@ -122,20 +119,21 @@ De methode voor het uitvoeren van Solr kan verschillen, afhankelijk van de versi
 Voor het gemak, gebruikend versie 4.10 als voorbeeld, begin Solr op standalone wijze:
 
 * cd naar &lt;solrinstall>/example
-* java -jar start.jar
+* Java™ -jar start.jar
 
-Hierdoor wordt een Solr HTTP-server gestart met de standaardpoort 8983. U kunt naar de Solr Console bladeren om een Solr console voor het testen te krijgen.
+Dit proces begint een Solr server van HTTP gebruikend standaardhaven 8983. U kunt naar de Solr Console bladeren om een Solr console voor het testen te krijgen.
 
 * standaard solr-console: [http://localhost:8983/solr/](http://localhost:8983/solr/)
 
 >[!NOTE]
 >
 >Als Solr Console niet beschikbaar is, controleer de logboeken onder &lt;solrinstall>/example/logs. Kijk of SOLR probeert te binden aan een specifieke hostname die niet kan worden opgelost (bijvoorbeeld &quot;user-macbook-pro&quot;).
-Als dat het geval is, werkt u het etc/hosts-bestand bij met een nieuwe vermelding voor deze hostnaam (bijvoorbeeld 127.0.0.1 user-macbook-pro) en start Solr op de juiste wijze.
+>
+Zo ja, update `etc/hosts` bestand met een nieuwe vermelding voor deze hostnaam (bijvoorbeeld 127.0.0.1 user-macbook-pro) om ster Solr op de juiste wijze te openen.
 
 ### SolrCloud {#solrcloud}
 
-U kunt een eenvoudige solrCloud-instelling (geen productie) uitvoeren door solr te starten met:
+Start solr met:
 
 * `java -Dbootstrap_confdir=./solr/collection1/conf -Dbootstrap_conf=true -DzkRun -jar start.jar`
 
@@ -161,7 +159,7 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
    ![view-comment](assets/view-comment.png)
 
-   Opmerking: Terwijl er JCR-knooppunten onder de *asipath* Op auteur, zijn deze voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
+   Opmerking: Terwijl er JCR-knooppunten onder de *asipath* Op auteur, zijn deze knopen voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
 
 1. UGC weergeven in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 
@@ -182,11 +180,11 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
 1. Controleer of MongoDB op de juiste wijze is geïnstalleerd en uitgevoerd.
 
-1. Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn:
+1. Zorg ervoor dat MSRP is gevormd om de standaardleverancier te zijn:
 
-   * Ga bij alle auteurs en publiceer AEM [Opslagconfiguratieconsole](srp-config.md) of controleer de AEM opslagplaats:
+   * Ga bij alle auteurs en publiceer AEM [Opslagconfiguratieconsole](srp-config.md)of controleer de AEM opslagplaats:
 
-   * In JCR, als [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, betekent het de opslagleverancier JSRP is.
+   * In JCR, als [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/) bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc) knoop, betekent het dat de opslagleverancier JSRP is.
    * Als het srpc-knooppunt bestaat en het knooppunt bevat [standaardconfiguratie](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration), zouden de eigenschappen van de standaardconfiguratie MSRP moeten bepalen om de standaardleverancier te zijn.
 
-1. Zorg ervoor dat AEM opnieuw is gestart nadat MSRP is geselecteerd.
+1. Zorg ervoor dat AEM opnieuw begonnen was nadat MSRP selecteerde.

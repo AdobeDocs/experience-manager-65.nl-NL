@@ -1,14 +1,10 @@
 ---
 title: Referentiesite voor werving van werknemers doorloopt
-seo-title: Employee recruitment
 description: Op de AEM Forms-site wordt uitgelegd hoe organisaties AEM Forms-functies kunnen gebruiken om de workflow voor het werven van werknemers te implementeren.
-seo-description: AEM Forms reference site showcases how organizations can use AEM Forms features to implement employee recruitment workflow.
-uuid: 27e456ba-3c08-4c43-ad54-1ba0070995ad
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5f04b13e-ea40-4c86-9168-e020c52435a2
 exl-id: bdfc0a20-1e98-47f9-a1d1-5af5b3ef15db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
 source-wordcount: '1413'
 ht-degree: 0%
@@ -86,13 +82,13 @@ De startpagina van We.Finance en de carrièrepagina zijn AEM Sites-pagina&#39;s.
 
 ### Zie het zelf {#see-it-yourself}
 
-Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` en klik op **[!UICONTROL Career]**. Klikken **[!UICONTROL Search]** om de taaklijst te vullen en klik vervolgens op **[!UICONTROL Apply]** voor een baan. Vul het formulier in en verzend de aanvraag.
+Ga naar `https://[publishHost]:[publishPort]/content/we-finance/global/en.html` en klik op **[!UICONTROL Career]**. Klikken **[!UICONTROL Search]** zodat u de takenlijst invult en vervolgens op **[!UICONTROL Apply]** voor een baan. Vul het formulier in en verzend de aanvraag.
 
-Zorg ervoor dat u een geldige e-mailid opgeeft in de toepassing omdat alle communicatie via deze analyse wordt verzonden naar de opgegeven e-mailid.
+Zorg ervoor dat u een geldige e-mailid opgeeft in de toepassing omdat de communicatie via deze analyse wordt verzonden naar de opgegeven e-mailid.
 
 ## John Jacobs verkiest het profiel van Sarah Rose voor de screening van de huurmanager {#john-jacobs-shortlists-sarah-rose-s-profile-for-the-hiring-manager-s-screening}
 
-De organisatie ontvangt de sollicitatie van Sarah. John Jacobs, een rekruteur, heeft de taak gekregen om Sarah&#39;s profiel te herzien. Hij evalueert de taak in zijn AEM Postvak In, zoekt het profiel dat overeenkomt met de vereiste taak en klikt op Snellijst. Sarah&#39;s profiel wordt doorgestuurd naar Gloria Rios, de huurmanager, voor haar goedkeuring.
+De organisatie ontvangt de sollicitatie van Sarah. John Jacobs, een rekruteur, heeft de taak gekregen om Sarah&#39;s profiel te herzien. John evalueert de taak in zijn AEM Inbox, vindt het profiel dat aan het baanvereiste beantwoordt, en klikt Kortere lijst. Sarah&#39;s profiel wordt doorgestuurd naar Gloria Rios, de huurmanager, voor haar goedkeuring.
 
 ![jjacobs-inbox-1](assets/jjacobs-inbox-1.png)
 
@@ -116,7 +112,7 @@ Gloria, de huurmanager, ontvangt het geshortlist profiel als taak in haar AEM In
 
 ![gloriainbox](assets/gloriainbox.png)
 
-Gloria&#39;s AEM inbox
+Gloria&#39;s AEM Inbox
 
 ![gloriaschedulesinterview](assets/gloriaschedulesinterview.png)
 
@@ -138,7 +134,7 @@ John Doe krijgt de taak om een interview te plannen in zijn inbox. John Doe sele
 
 ![johnjacobsaeminbox](assets/johnjacobsaeminbox.png)
 
-John Doe&#39;s AEM inbox
+John Doe&#39;s AEM Inbox
 
 ![johndoescheduleinterview](assets/johndoescheduleinterview.png)
 
@@ -146,7 +142,7 @@ John Doe plant het interview en stuurt de details naar Sarah Rose
 
 ## Sarah Rose ontvangt een e-mail met een interviewschema {#sarah-rose-receives-the-email-with-interview-schedule}
 
-Sarah Rose ontvangt de e-mail met interviewplanning, locatie en andere details. Ze klikt op Accepteren om aan te geven dat ze de interviewplanning en -locatie op orde heeft. Zoals de exacte informatie ons laat zien, maakt Sarah het aan de interviews.
+Sarah Rose ontvangt de e-mail met interviewplanning, locatie en andere details. Sarah klikt Accepteren om te verklaren dat zij OK met het interviewschema en de plaats is. Zoals de exacte informatie ons laat zien, maakt Sarah het aan de interviews.
 
 ![sarahroseinterviewemail](assets/sarahroseinterviewemail.png)
 
@@ -158,7 +154,7 @@ Nadat Sarah Rose door de interviews gaat en hen ontruimt, opent Gloria Rios, de 
 
 ![gloriariosinboxaanbieding](assets/gloriariosinboxoffer.png)
 
-Gloria&#39;s AEM inbox
+Gloria&#39;s AEM Inbox
 
 ![gloriariosselectkandidaat](assets/gloriariosselectcandidate.png)
 
@@ -166,7 +162,7 @@ Gloria Rios selecteert Sarah Rose na de interviews
 
 ## John Doe vraagt om meer informatie {#john-doe-requests-more-information}
 
-Voordat een kandidaat wordt gevraagd om deel te nemen aan de organisatie, moet zijn achtergrond worden gecontroleerd. John Doe opent en bekijkt de details van de geselecteerde aanvrager en constateert dat sommige van haar gegevens over werkgelegenheid en onderwijs nog niet zijn ingevuld. John Doe klikt heeft Meer Informatie nodig.
+Voordat een kandidaat wordt gevraagd om deel te nemen aan de organisatie, moet de achtergrond van Sarah worden gecontroleerd. John Doe opent en bekijkt de details van de geselecteerde aanvrager en constateert dat sommige van haar gegevens over werkgelegenheid en onderwijs nog niet zijn ingevuld. John Doe klikt heeft Meer Informatie nodig.
 
 ![johndoeinbox](assets/johndoeinbox.png) ![johndoeneedmoreinformation](assets/johndoeneedmoreinformation.png)
 
@@ -208,7 +204,7 @@ John Jacobs ziet het verzoek van de achtergrondcontrole in zijn inbox. John Jaco
 
 ![johnjacobsbackgroundcheckinbox](assets/johnjacobsbackgroundcheckinbox.png)
 
-John Jacobs AEM inbox
+John Jacobs AEM Inbox
 
 ![johnjacobsbackgroundcheck](assets/johnjacobsbackgroundcheckgoahead.png)
 
@@ -216,11 +212,11 @@ Als John Jacobs de achtergrondcontrole heeft uitgevoerd, klikt u op Vooruit
 
 ## John Doe stuurt de gezamenlijke brief naar Sarah Rose {#john-doe-sends-out-the-joining-letter-to-sarah-rose}
 
-John Doe ontvangt een verzoek in zijn AEM inbox voor het verzenden van de aansluitende brief. John opent het verzoek en bekijkt de details. John Doe voegt de bij elkaar liggende letter PDF toe en klikt vervolgens op Bijvoegen en Joining Letter verzenden.
+John Doe ontvangt een verzoek in zijn AEM Inbox voor het verzenden van de aansluitende brief. John opent het verzoek en bekijkt de details. John Doe voegt de bij elkaar liggende letter PDF toe en klikt vervolgens op Bijvoegen en Joining Letter verzenden.
 
 ![johndoejoiningletterinbox](assets/johndoejoiningletterinbox.png)
 
-John Doe&#39;s AEM inbox
+John Doe&#39;s AEM Inbox
 
 ![johndoejoinletterattachandsend](assets/johndoejoiningletterattachandsend.png)
 
@@ -234,7 +230,7 @@ Sarah Rose ontvangt de aansluitende brief voor ondertekening. Sarah klikt hier o
 
 Sarah Rose ontvangt de aansluitende brief voor ondertekening
 
-Sarah kan kiezen of ze wil intypen, tekenen om te schrijven, een afbeelding van een handtekening in te voegen of het touchscreen van haar mobiele telefoon gebruiken om haar handtekening te tekenen. Sarah typt haar naam, klikt op Klik om te ondertekenen en downloadt de ondertekende kopie van de bij elkaar gevoegde brief.
+Sarah kan kiezen of ze wil intypen, tekenen om te schrijven, een afbeelding van een handtekening in te voegen of het touchscreen van haar mobiele telefoon gebruiken om haar handtekening te tekenen. Sarah typt haar naam, klikt op Klik om te ondertekenen en downloadt de ondertekende kopie van de bij elkaar horende brief.
 
 ![sarahrosejoininglettersign](assets/sarahrosejoininglettersign.png)
 

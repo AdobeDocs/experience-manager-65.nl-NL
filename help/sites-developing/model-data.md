@@ -1,18 +1,14 @@
 ---
 title: Gegevensmodellering - David Nuescheler's model
-seo-title: Data Modeling - David Nuescheler's Model
 description: Aanbevelingen van David Nuescheler voor het modelleren van inhoud
-seo-description: David Nuescheler's content modelling recommendations
-uuid: acb27e81-9143-4e0d-a37a-ba26491a841f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 exl-id: 6ce6a204-db59-4ed2-8383-00c6afba82b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1795'
 ht-degree: 0%
 
 ---
@@ -23,21 +19,21 @@ ht-degree: 0%
 
 De volgende details zijn ideeën en opmerkingen van David Nuescheler.
 
-David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd opgevraagd. Hij is nu mede en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Bewaarplaats van de Inhoud van Java (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
+David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd aangeschaft. Hij is nu mede en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Opslagplaats van de Inhoud van Java™ (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
 
 Meer updates zijn ook beschikbaar op [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ## Inleiding van David {#introduction-from-david}
 
-In verschillende discussies heb ik kunnen vaststellen dat ontwikkelaars enigszins ongerust zijn over de kenmerken en functies die het JCR heeft voorgesteld op het gebied van contentmodellering. Er is nog geen gids en zeer weinig ervaring met het modelleren van inhoud in een opslagplaats en waarom het ene inhoudsmodel beter is dan het andere.
+In verschillende discussies heb ik kunnen vaststellen dat ontwikkelaars enigszins ongerust zijn over de functies en functies die het JCR heeft voorgesteld bij het modelleren van content. Er is nog geen gids en weinig ervaring met het modelleren van inhoud in een opslagplaats en waarom het ene inhoudsmodel beter is dan het andere.
 
-Terwijl in de relationele wereld de softwareindustrie veel ervaring heeft over hoe te om gegevens te modelleren, zijn wij nog in de vroege stadia voor de ruimte van de inhoudsbewaarplaats.
+Terwijl in de relationele wereld, heeft de softwareindustrie veel ervaring op hoe te om gegevens te modelleren, zijn wij nog in de vroege stadia voor de ruimte van de inhoudsbewaarplaats.
 
-Ik wil deze leemte graag opvullen door mijn persoonlijke mening te geven over de manier waarop inhoud moet worden gemodelleerd, in de hoop dat dit ooit zou kunnen uitmonden in iets wat zinvoller is voor de gemeenschap van ontwikkelaars, en dat is niet alleen mijn mening, maar iets wat meer algemeen toepasbaar is. Denk eraan dat dit mijn eerste stap is.
+Ik wil deze leemte opvullen door mijn mening te geven over de manier waarop inhoud moet worden gemodelleerd, in de hoop dat dit op een dag zou kunnen uitmonden in iets dat de gemeenschap van ontwikkelaars zinvoller is, en dat is niet alleen mijn mening, maar iets dat meer algemeen toepasbaar is. Denk eraan dat dit mijn eerste stap is.
 
 >[!NOTE]
 >
->Disclaimer: Deze richtsnoeren geven mijn persoonlijke, soms controversiële standpunten weer. Ik zie ernaar uit deze richtsnoeren te bespreken en te verfijnen.
+>Disclaimer: Deze richtsnoeren geven mijn persoonlijke, soms controversiële standpunten weer. Ik verheug mij erop deze richtsnoeren te bespreken en te verfijnen.
 
 ## Zeven eenvoudige regels {#seven-simple-rules}
 
@@ -49,9 +45,9 @@ Ik raad aan om me geen zorgen te maken over een gedeclareerde gegevensstructuur 
 
 Leer om van nt te houden:ongestructureerde (&amp; vrienden) in ontwikkeling.
 
-Ik denk dat Stefano dit ongeveer samenvat.
+Ik denk dat Stefano dit zo&#39;n beetje samenvat.
 
-Mijn onderste regel: Structuur is duur en in veel gevallen is het volstrekt overbodig om de structuur expliciet aan de onderliggende opslag te declareren.
+Mijn onderste regel: Structuur is duur en vaak is het helemaal niet nodig om de structuur expliciet aan de onderliggende opslag te declareren.
 
 Er is een impliciet contract voor de structuur die uw toepassing inherent gebruikt. Stel dat ik de wijzigingsdatum van een blogbericht opsla in een lastModified-eigenschap. Mijn App zal automatisch weten om de wijzigingsdatum van dat zelfde bezit opnieuw te lezen, is er echt geen behoefte om dat uitdrukkelijk te verklaren.
 
@@ -65,23 +61,23 @@ In het bovenstaande voorbeeld wordt een `lastModified` De eigenschap Date op bij
 
 #### Toelichting {#explanation-2}
 
-De inhoudshiërarchie is een zeer waardevol middel. Laat het dus niet gewoon gebeuren, ontwerp het. Als u geen &quot;goede&quot;, mens-leesbare naam voor een knoop hebt, is dat waarschijnlijk iets dat u zou moeten heroverwegen. Willekeurige getallen zijn nauwelijks een &quot;goede naam&quot;.
+De inhoudshiërarchie is een waardevol element. Laat het dus niet gewoon gebeuren, ontwerp het. Als u geen &quot;goede&quot;, mens-leesbare naam voor een knoop hebt, is dat waarschijnlijk iets dat u zou moeten heroverwegen. Willekeurige getallen zijn nauwelijks een &quot;goede naam&quot;.
 
-Hoewel het bijzonder gemakkelijk kan zijn om een bestaand relationeel model in een hiërarchisch model snel te zetten, zou men in dat proces wat moeten denken.
+Hoewel het gemakkelijk kan zijn om een bestaand relationeel model in een hiërarchisch model snel te zetten, zou men één of andere overweging in dat proces moeten zetten.
 
-In mijn ervaring als men aan toegangsbeheer en insluiting denkt gewoonlijk goede bestuurders voor de inhoudshiërarchie. Beschouw het als uw bestandssysteem. Gebruik zelfs bestanden en mappen om deze op uw lokale schijf te modelleren.
+In mijn ervaring, als men van toegangscontrole en insluiting gewoonlijk goede bestuurders voor de inhoudshiërarchie denkt. Beschouw het als uw bestandssysteem. Gebruik zelfs bestanden en mappen om deze op uw lokale schijf te modelleren.
 
-Persoonlijk geef ik in veel gevallen in eerste instantie de voorkeur aan hiërarchische conventies boven het nodetyping-systeem en stel ik het typen later in.
+Persoonlijk geef ik in veel gevallen in eerste instantie de voorkeur aan hiërarchische conventies boven het nodetyping-systeem en introduceer ik het typen later.
 
 >[!CAUTION]
 >
->De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats over het algemeen niet 1&#39;000 moeten overschrijden.
+>De manier waarop een opslagplaats voor inhoud gestructureerd is, kan ook van invloed zijn op de prestaties. Voor de beste prestaties, zou het aantal kindknopen in bijlage aan individuele knopen in een inhoudsbewaarplaats niet 1&#39;000 moeten overschrijden.
 >
 >Zie [Hoeveel gegevens kan CRX verwerken?](https://helpx.adobe.com/experience-manager/kb/CrxLimitation.html) voor meer informatie .
 
 #### Voorbeeld {#example-2}
 
-Ik zou een eenvoudig blogsysteem als volgt modelleren. Let op: in eerste instantie geef ik niet eens om de nodetypes die ik op dit moment gebruik.
+Ik zou een eenvoudig blogsysteem als volgt modelleren. Aanvankelijk geef ik niet eens om de nodetypes die ik op dit moment gebruik.
 
 ```xml
 /content/myblog
@@ -107,13 +103,13 @@ Als u het niet gebruikt `clone()`, `merge()` of `update()` -methoden in uw toepa
 
 &quot;Overeenkomende knooppunten&quot; is een concept dat is gedefinieerd in de specificatie JCR. In principe worden knooppunten die dezelfde inhoud vertegenwoordigen, in verschillende zogenaamde werkruimten samengevoegd.
 
-Het JCR introduceert het zeer abstracte concept van Werkruimten, dat veel ontwikkelaars onduidelijk laat over wat met hen te doen. Ik zou willen voorstellen om uw gebruik van werkruimten als volgt te testen.
+Het JCR introduceert het abstracte concept Workspaces, dat veel ontwikkelaars onduidelijk maakt wat ze moeten doen. Ik zou willen voorstellen om uw gebruik van werkruimten als volgt te testen.
 
 Als u een aanzienlijke overlapping van &quot;overeenkomstige&quot;knopen (hoofdzakelijk de knopen met zelfde UUID) in veelvoudige werkruimten hebt, zet u waarschijnlijk werkruimten aan goed gebruik.
 
 Als knooppunten niet overlappen met dezelfde UUID, maakt u waarschijnlijk misbruik van werkruimten.
 
-De werkruimten zouden niet voor toegangsbeheer moeten worden gebruikt. Zichtbaarheid van inhoud voor een bepaalde groep gebruikers is geen goed argument om dingen in verschillende werkruimten te scheiden. JCR heeft &#39;Toegangsbeheer&#39; in de opslagplaats voor inhoud om dat mogelijk te maken.
+Gebruik geen werkruimten voor toegangsbeheer. Zichtbaarheid van inhoud voor een bepaalde groep gebruikers is geen goed argument om dingen in verschillende werkruimten te scheiden. JCR heeft &#39;Toegangsbeheer&#39; in de opslagplaats voor inhoud om dat mogelijk te maken.
 
 De werkruimten zijn de grens voor verwijzingen en vraag.
 
@@ -134,7 +130,7 @@ Gebruik geen werkruimten voor bijvoorbeeld:
 
 #### Toelichting {#explanation-4}
 
-Terwijl de Vergelijkende Naam Siblings (SNS) in de specificatie zijn geïntroduceerd om verenigbaarheid met gegevensstructuren toe te staan die voor en uitgedrukt door XML worden ontworpen en daarom uiterst waardevol voor JCR zijn, komt SNS met een aanzienlijke overheadkosten en ingewikkeldheid voor de bewaarplaats.
+Terwijl de Vergelijkende Naam Siblings (SNS) in de specificatie zijn geïntroduceerd om verenigbaarheid met gegevensstructuren toe te staan die voor en uitgedrukt door XML worden ontworpen en daarom waardevol voor JCR zijn, komt SNS met een aanzienlijke overheadkosten en ingewikkeldheid voor de bewaarplaats.
 
 Om het even welk weg in de inhoudsbewaarplaats die SNS in één van zijn wegsegmenten bevat wordt veel minder stabiel, als SNS wordt verwijderd of opnieuw in orde gebracht, heeft het een effect op de wegen van alle andere SNS en hun kinderen.
 
@@ -149,7 +145,7 @@ Gebruiken
 /content/myblog/posts/iphone_shipping
 ```
 
-in plaats van
+In plaats van
 
 ```xml
 /content/blog[1]/post[1]
@@ -162,7 +158,7 @@ in plaats van
 
 Referenties impliceren referentiële integriteit. Ik vind het belangrijk om te begrijpen dat verwijzingen niet alleen extra kosten voor de bewaarplaats toevoegen die de referentiële integriteit beheren, maar ook uit een oogpunt van inhoudflexibiliteit duur zijn.
 
-Persoonlijk zorg ik ervoor ik slechts verwijzingen gebruik wanneer ik echt niet met een gevaarlijke verwijzing kan behandelen en anders een weg, een naam of een koordUID om naar een andere knoop te verwijzen.
+Persoonlijk zorg ik ervoor ik slechts verwijzingen gebruik wanneer ik werkelijk niet met een gevaarlijke verwijzing kan behandelen en anders een weg, een naam, of een koordUID om naar een andere knoop te verwijzen.
 
 #### Voorbeeld {#example-5}
 
@@ -176,13 +172,13 @@ Ik denk dat er gevallen zijn waarin een systeem echt niet kan werken als een ver
 
 #### Toelichting {#explanation-6}
 
-Als een inhoudsmodel iets blootstelt dat zelfs ver *smelten* zoals een bestand of een map die ik probeer te gebruiken (of uitbreiden vanuit) `nt:file`, `nt:folder` en `nt:resource`.
+Als een inhoudsmodel iets blootstelt dat zelfs ver als een dossier of een omslag ruikt, probeer ik te gebruiken (of zich uit uit te breiden van) `nt:file`, `nt:folder`, en `nt:resource`.
 
-In mijn ervaring staan veel generieke toepassingen interactie met nt:folder en nt:dossiers impliciet toe en weten hoe te om die gebeurtenis te behandelen en te tonen als zij met extra meta-informatie worden verrijkt. Zo wordt een directe interactie met bestandsserverimplementaties, zoals CIFS of WebDAV die boven op de JCR zitten, impliciet.
+In mijn ervaring, staan vele generische toepassingen interactie met nt:omslag en niet:dossiers impliciet toe en weten hoe te om die gebeurtenissen te behandelen en te tonen als zij met extra meta-informatie worden verrijkt. Bijvoorbeeld, wordt een directe interactie met de implementaties van de dossierserver zoals CIFS of WebDAV die bovenop JCR zitten impliciet.
 
-Ik denk dat als goede duim men het volgende zou kunnen gebruiken: Als u de bestandsnaam en het mime-type moet opslaan, moet u `nt:file`/ `nt:resource` is een zeer goede match. Als u meerdere &quot;bestanden&quot; zou kunnen hebben, is de map nt:een goede plaats om deze op te slaan.
+Ik denk dat als goede duim men het volgende zou kunnen gebruiken: Als u de bestandsnaam en het mime-type moet opslaan, `nt:file`/ `nt:resource` is een goede match. Als u meerdere &quot;bestanden&quot; zou kunnen hebben, is de map nt:een goede plaats om deze op te slaan.
 
-Als u meta-informatie voor uw middel moet toevoegen, zeggen &quot;auteur&quot;of &quot;beschrijving&quot;bezit, breid uit `nt:resource` niet `nt:file`. Ik breid zelden nt uit:bestand en breid vaak uit `nt:resource`.
+Als u meta-informatie voor uw middel moet toevoegen, zeggen &quot;auteur&quot;of een &quot;beschrijving&quot;bezit, breid uit `nt:resource` niet `nt:file`. Ik breid zelden nt uit:bestand en breid vaak uit `nt:resource`.
 
 #### Voorbeeld {#example-6}
 
@@ -192,9 +188,9 @@ Laten we aannemen dat iemand een afbeelding naar een blogbericht wil uploaden op
 /content/myblog/posts/iphone_shipping
 ```
 
-en misschien zou de eerste darmreactie bestaan uit het toevoegen van een binaire eigenschap met het beeld.
+Misschien zou de eerste darmreactie zijn om een binaire eigenschap toe te voegen die het beeld bevat.
 
-Hoewel er zeker goede gebruiksgevallen zijn om enkel een binair bezit te gebruiken (laten wij zeggen de naam irrelevant is en mime-type impliciet is) in dit geval zou ik de volgende structuur voor mijn blogvoorbeeld adviseren.
+Hoewel er zeker goede gebruiksgevallen zijn om enkel een binair bezit te gebruiken (laten we zeggen is de naam irrelevant en mime-type impliciet is), in dit geval adviseer ik de volgende structuur voor mijn blogvoorbeeld.
 
 ```xml
 /content/myblog/posts/iphone_shipping/attachments [nt:folder]
@@ -208,15 +204,15 @@ Hoewel er zeker goede gebruiksgevallen zijn om enkel een binair bezit te gebruik
 
 In relationele databases zijn id&#39;s een noodzakelijke manier om relaties tot stand te brengen, zodat mensen ze ook in inhoudsmodellen gebruiken. Vooral om de verkeerde redenen.
 
-Als uw inhoudsmodel vol eigenschappen is die in &quot;Id&quot;beëindigen u waarschijnlijk niet behoorlijk leveraging de hiërarchie.
+Als uw inhoudsmodel vol eigenschappen is die in &quot;Id&quot;beëindigen, gebruikt u waarschijnlijk niet behoorlijk de hiërarchie.
 
-Het is waar dat sommige knooppunten gedurende hun gehele levenscyclus een stabiele identificatie nodig hebben. Veel minder dan je zou denken. mix:verwijzing verstrekt zulk een mechanisme dat in de bewaarplaats wordt ingebouwd, zodat is er echt geen behoefte om met een extra manier op een stabiele manier omhoog te komen om een knoop te identificeren.
+Het is waar dat sommige knooppunten gedurende hun gehele levenscyclus een stabiele identificatie nodig hebben. Veel minder dan je zou denken. mix:verwijzing verstrekt zulk een mechanisme dat in de bewaarplaats wordt ingebouwd, zodat is er echt geen behoefte om met een extra middel te komen om een knoop op een stabiele manier te identificeren.
 
-Houd ook in mening dat de punten door weg kunnen worden geïdentificeerd, en aangezien &quot;symlinks&quot;voor de meeste gebruikers veel zinvoller dan hardlinks in een unix filesystem maken, een weg voor de meeste toepassingen een betekenis heeft om naar een doelknoop te verwijzen.
+Houd er ook rekening mee dat items via pad kunnen worden geïdentificeerd. En, zo veel als &quot;symlinks&quot;voor de meeste gebruikers veel redelijker dan harde verbindingen in een UNIX® filesystem maken, een weg voor de meeste toepassingen het nut om naar een doelknoop te verwijzen.
 
 Nog belangrijker is dat het **mengen**:referenceable wat betekent dat het op een knoop op het punt in tijd kan worden toegepast wanneer u eigenlijk het moet van verwijzingen voorzien.
 
-Dus laten wij zeggen enkel omdat u een knoop van type &quot;Document&quot;zou kunnen van verwijzingen voorzien betekent niet dat uw &quot;document&quot;nodetype zich van mengeling moet uitbreiden:verwijzing op een statische manier aangezien het aan om het even welke instantie van het &quot;Document&quot;dynamisch kan worden toegevoegd.
+Dus laten wij zeggen enkel omdat u een knoop van type &quot;Document&quot;zou kunnen van verwijzingen voorzien betekent niet dat uw &quot;Document&quot;knooptype zich van mengeling moet uitbreiden:verwijzing op een statische manier aangezien het aan om het even welke instantie van &quot;Document&quot;dynamisch kan worden toegevoegd.
 
 #### Voorbeeld {#example-7}
 
@@ -226,7 +222,7 @@ Gebruik:
 /content/myblog/posts/iphone_shipping/attachments/front.jpg
 ```
 
-in plaats van:
+In plaats van:
 
 ```xml
 [Blog]

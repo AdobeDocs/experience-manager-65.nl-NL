@@ -1,19 +1,15 @@
 ---
 title: Authoring
-seo-title: Authoring
-description: Concepten van ontwerpen in AEM
-seo-description: Concepts of authoring in AEM
-uuid: eaa5f613-a138-4215-8f84-dfc962fe7fa7
+description: Concepten van ontwerpen in Adobe Experience Manager
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 81ff6f6f-11b3-4f8e-80e6-b3e104158394
 docset: aem65
 exl-id: dcda537a-1bb2-4ce3-9904-40d158b47556
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -29,24 +25,24 @@ AEM biedt u twee omgevingen:
 
 Met deze interacties kunt u inhoud op uw website beschikbaar maken, zodat uw bezoekers deze kunnen lezen.
 
-De auteursomgeving verstrekt de mechanismen om deze inhoud tot stand te brengen, bij te werken en te herzien alvorens het daadwerkelijk te publiceren:
+De auteursomgeving verstrekt de mechanismen om, deze inhoud tot stand te brengen bij te werken en te herzien alvorens het daadwerkelijk te publiceren:
 
-* Een auteur maakt en beoordeelt de inhoud (dit kan van verschillende typen zijn). bijvoorbeeld pagina&#39;s, middelen, publicaties, enz.)
+* Een auteur maakt en beoordeelt de inhoud (dit kan van verschillende typen zijn). bijvoorbeeld pagina&#39;s, middelen, publicaties, enzovoort)
 * die op een gegeven moment op uw website worden gepubliceerd.
 
 ![Overzicht van omgevingen](assets/chlimage_1-132.png)
 
-Op het auteursmilieu wordt de functionaliteit van AEM ter beschikking gesteld door twee UIs. Voor het publicatiemilieu ontwerpt u de volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
+Op het auteursmilieu, wordt de functionaliteit van AEM ter beschikking gesteld door twee UIs. Voor het publicatiemilieu, ontwerpt u het volledige blik-en-gevoel van de interface die aan uw gebruikers ter beschikking wordt gesteld.
 
 ### Auteursomgeving {#author-environment}
 
-De auteur werkt in wat bekend staat als de **auteursomgeving**. Dit verstrekt een makkelijk te gebruiken interface (grafische gebruikersinterface (GUI of UI)) voor het creëren van de inhoud. Het wordt gewoonlijk gevestigd achter de firewall van een bedrijf die volledige bescherming biedt en de auteur aan login vereist, gebruikend een rekening die de aangewezen toegangsrechten is toegewezen.
+De auteur werkt in wat bekend staat als de **auteursomgeving**. Dit verstrekt een makkelijk te gebruiken interface (grafische gebruikersinterface (GUI of UI)) voor het creëren van de inhoud. Het wordt gevestigd achter de firewall van een bedrijf die volledige bescherming biedt en de auteur vereist om zich aan te melden, gebruikend een rekening die de aangewezen toegangsrechten is toegewezen.
 
 >[!NOTE]
 >
 >Uw account heeft de juiste toegangsrechten nodig om inhoud te maken, bewerken of publiceren.
 
-Afhankelijk van hoe uw instantie en uw persoonlijke toegangsrechten worden gevormd kunt u vele taken op uw inhoud, met inbegrip van (onder andere) uitvoeren:
+Afhankelijk van hoe uw instantie en uw persoonlijke toegangsrechten worden gevormd kunt u vele taken op uw inhoud, met inbegrip van (onder anderen) uitvoeren:
 
 * nieuwe inhoud genereren of bestaande inhoud bewerken op een pagina
 * vooraf gedefinieerde sjablonen gebruiken om nieuwe inhoudspagina&#39;s te maken
@@ -54,17 +50,17 @@ Afhankelijk van hoe uw instantie en uw persoonlijke toegangsrechten worden gevor
 * uw publicaties maken, bewerken en beheren
 * uw campagnes en de bijbehorende bronnen ontwikkelen
 * gemeenschapssites ontwikkelen en beheren
-* inhoudspagina&#39;s, elementen, enz. verplaatsen, kopiëren of verwijderen
-* pagina&#39;s, elementen, enz. publiceren (of de publicatie ervan ongedaan maken)
+* inhoudspagina&#39;s, elementen, enzovoort verplaatsen, kopiëren of verwijderen
+* pagina&#39;s, elementen, enzovoort publiceren (of de publicatie ervan ongedaan maken)
 
-Daarnaast zijn er beheertaken die u helpen uw inhoud te beheren:
+Bovendien zijn er beheertaken die u helpen uw inhoud te beheren:
 
-* workflows die bepalen hoe wijzigingen worden beheerd; bijvoorbeeld. een toetsing vóór publicatie afdwingen
+* workflows die bepalen hoe wijzigingen worden beheerd; bijvoorbeeld een revisie vóór publicatie afdwingen
 * projecten die individuele taken coördineren
 
 >[!NOTE]
 >
->AEM is ook [toegediend](/help/sites-administering/home.md) (voor het merendeel van de taken) uit de ontwerpomgeving.
+>AEM is ook [toegediend](/help/sites-administering/home.md) (voor de meeste taken) uit de auteursomgeving.
 
 #### Publicatie-omgeving {#publish-environment}
 
@@ -72,7 +68,7 @@ Als de inhoud van de AEM-site gereed is, wordt deze gepubliceerd naar de **publi
 
 Meestal bevindt de publicatieomgeving zich in de gedemilitariseerde zone. met andere woorden , beschikbaar voor het internet , maar niet langer onder volledige bescherming van het interne netwerk .
 
-Wanneer de AEM-site een [community-site](/help/communities/overview.md), of omvat [Community-componenten](/help/communities/author-communities.md), kunnen bezoekers (leden) die zich hebben aangemeld, communiceren met de kenmerken van de Gemeenschappen. Ze kunnen bijvoorbeeld posten naar een forum, een opmerking plaatsen of andere leden volgen. Leden kunnen toestemming krijgen om activiteiten uit te voeren die normaal gesproken beperkt zijn tot de auteursomgeving, zoals het maken van nieuwe pagina&#39;s (groepen van gemeenschappen), blogartikelen en gematigde posten van andere leden.
+Wanneer de AEM-site een [community-site](/help/communities/overview.md), of omvat [Community-componenten](/help/communities/author-communities.md), kunnen bezoekers (leden) die zich hebben aangemeld, communiceren met de kenmerken van de Gemeenschappen. Ze kunnen bijvoorbeeld posten naar een forum, een opmerking plaatsen of andere leden volgen. Leden kunnen toestemming krijgen om activiteiten uit te voeren die gewoonlijk beperkt zijn tot de auteursomgeving, zoals het maken van nieuwe pagina&#39;s (groepen van gemeenschappen), blogartikelen en gematigde posten van andere leden.
 
 >[!NOTE]
 >
@@ -85,9 +81,9 @@ Wanneer de AEM-site een [community-site](/help/communities/overview.md), of omva
 >  Deze termen zijn synoniem met publiceren/verwijderen.
 >
 >* **Replicatie/replicatie**
->  Dit zijn de technische termen die worden gebruikt om de verplaatsing van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikersopmerkingen) van de ene omgeving naar de andere aan te geven; d.w.z. bij het publiceren of omgekeerd repliceren van gebruikersopmerkingen.
+>  Dit zijn de technische termen die worden gebruikt om de verplaatsing van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikersopmerkingen) van de ene omgeving naar de andere aan te geven. dat wil zeggen, bij het publiceren of omgekeerd repliceren van gebruikersopmerkingen.
 >
 
 #### Dispatcher {#dispatcher}
 
-Om de prestaties voor bezoekers van uw website te optimaliseren, **[verzender](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html)** implementeert taakverdeling en caching.
+Om de prestaties voor bezoekers van uw website te optimaliseren, **[Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)** implementeert taakverdeling en caching.

@@ -1,19 +1,15 @@
 ---
 title: Clientlibs voor Community-componenten
-seo-title: Clientlibs for Communities Components
 description: Clientbibliotheken voor gemeenschappen
-seo-description: Client-side libraries for Communities
-uuid: d2a9f986-96cf-4ee8-81e6-36a96f45ddcb
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 68ce47c8-a03f-40d6-a7f3-2cc64aee0594
 docset: aem65
 exl-id: 94415926-a273-4f03-b7b6-57fdac12c741
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '373'
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ In deze sectie van de documentatie wordt beschreven hoe u clientbibliotheken (cl
 
 Voor basisinformatie gaat u naar :
 
-* [Client-Side bibliotheken gebruiken](/help/sites-developing/clientlibs.md) die zowel gebruiksdetails als foutopsporingsgereedschappen biedt
+* [Client-Side bibliotheken gebruiken](/help/sites-developing/clientlibs.md) die gebruiksdetails en het zuiveren hulpmiddelen verstrekt
 * [Clientlibs voor SCF](/help/communities/client-customize.md#clientlibs) die nuttige informatie verstrekt wanneer het aanpassen van componenten SCF
 
 
@@ -34,7 +30,7 @@ Voor basisinformatie gaat u naar :
 
 Clientlibs zijn vereist voor het correct functioneren (JavaScript) en opmaken (CSS) van een component.
 
-Wanneer er een [gemeenschapsfunctie](/help/communities/functions.md) voor een eigenschap , zullen alle noodzakelijke componenten en configuraties, met inbegrip van de vereiste clientlibs, in de communautaire plaats aanwezig zijn. Alleen als de auteurs extra componenten ter beschikking moeten hebben, moeten er extra clientlibs worden toegevoegd.
+Wanneer er een [gemeenschapsfunctie](/help/communities/functions.md) voor een eigenschap, zijn alle noodzakelijke componenten en configuraties, met inbegrip van de vereiste clientlibs, aanwezig in de communautaire plaats. Alleen als de auteurs extra componenten ter beschikking moeten stellen, moeten extra clientlibs worden toegevoegd.
 
 Wanneer de vereiste clientlibs ontbreken, [een onderdeel van een Gemeenschappen aan een pagina toevoegen](/help/communities/author-communities.md) kan resulteren in JavaScript-fouten en een onverwachte weergave.
 
@@ -52,7 +48,7 @@ De essentiële eigenschapinformatie voor ontwikkelaars identificeert de vereiste
 
 Bovendien kunt u vanuit een AEM naar de [Community Components Guide](/help/communities/components-guide.md) biedt toegang tot een lijst met clientlib-categorieën die vereist zijn voor een component.
 
-Bijvoorbeeld helemaal boven aan de [Pagina Revisies](https://localhost:4502/content/community-components/en/reviews.html) de vereiste clientlibs worden vermeld
+Bijvoorbeeld, bij de bovenkant van [Pagina Revisies](https://localhost:4502/content/community-components/en/reviews.html) de vereiste clientlibs worden vermeld
 
 * cq.ckeditor
 * cq.social.hbs.reviews
@@ -83,8 +79,8 @@ Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE L
          * Herhaal deze bewerking om meer clientbibliotheken toe te voegen.
 
          * Selecteren **OK**.
-   * Selecteren **Alles opslaan**.
 
+   * Selecteren **Alles opslaan**.
 
 >[!NOTE]
 >

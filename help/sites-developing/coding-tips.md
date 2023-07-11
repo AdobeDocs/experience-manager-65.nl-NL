@@ -1,18 +1,14 @@
 ---
 title: Codetips
-seo-title: Coding Tips
 description: Tips voor het coderen van AEM
-seo-description: Tips for coding for AEM
-uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
 workflow-type: tm+mt
-source-wordcount: '867'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -21,27 +17,27 @@ ht-degree: 0%
 
 ## Taglibs of HTML zoveel mogelijk gebruiken {#use-taglibs-or-htl-as-much-as-possible}
 
-Het opnemen van scriptlets in JSPs maakt het moeilijk om kwesties in de code te zuiveren. Bovendien, door scriptlets in JSPs op te nemen, is het moeilijk om bedrijfslogica van de meningslaag te scheiden, die een schending van het Enige Verantwoordelijkheidsbeginsel en het ontwerppatroon MVC vormt.
+Het opnemen van scriptlets in JSPs maakt het moeilijk om kwesties in de code te zuiveren. Door scriptlets in JSPs op te nemen, is het ook moeilijk om bedrijfslogica van de meningslaag te scheiden, die een schending van het Enige Verantwoordelijkheidsbeginsel en het ontwerppatroon MVC vormt.
 
 ### Leesbare code schrijven {#write-readable-code}
 
-Code wordt één keer geschreven, maar vaak gelezen. Als we enige tijd op voorhand besteden aan het opschonen van de code die we schrijven, zullen we dividend uitbetalen over de weg, terwijl we en andere ontwikkelaars het later moeten lezen.
+Code wordt één keer geschreven, maar vaak gelezen. Als u enige tijd vooruit besteedt aan het opschonen van de geschreven code, wordt het verschil over de weg verdeeld terwijl u en andere ontwikkelaars het later lezen.
 
 ### Namen kiezen die bedoeld zijn om te onthullen {#choose-intention-revealing-names}
 
-Idealiter hoeft een andere programmeur geen module te openen om te begrijpen wat deze doet. Ze moeten ook kunnen zien wat een methode doet zonder deze te lezen. Hoe beter we ons kunnen abonneren op deze ideeën, hoe gemakkelijker het is om onze code te lezen en hoe sneller we onze code kunnen schrijven en wijzigen.
+Idealiter hoeft een andere programmeur geen module te openen om te begrijpen wat deze doet. Ze moeten ook kunnen zien wat een methode doet zonder deze te lezen. Hoe beter u zich op deze ideeën kunt abonneren, hoe gemakkelijker het is om de code te lezen en hoe sneller u de code kunt schrijven en wijzigen.
 
 In de basis van de AEM code worden de volgende conventies gebruikt:
 
 
-* Één enkele implementatie van een interface wordt genoemd `<Interface>Impl`, d.w.z. `ReaderImpl`.
-* De veelvoudige implementaties van een interface worden genoemd `<Variant><Interface>`, d.w.z. `JcrReader` en `FileSystemReader`.
+* Één enkele implementatie van een interface wordt genoemd `<Interface>Impl`, dat wil zeggen: `ReaderImpl`.
+* De veelvoudige implementaties van een interface worden genoemd `<Variant><Interface>`, dat wil zeggen: `JcrReader` en `FileSystemReader`.
 * Abstracte basisklassen krijgen een naam `Abstract<Interface>` of `Abstract<Variant><Interface>`.
-* Pakketten krijgen een naam `com.adobe.product.module`.  Elke Maven-artefact- of OSGi-bundel moet een eigen pakket hebben.
-* Java-implementaties worden in een impl-pakket onder de bijbehorende API geplaatst.
+* Pakketten krijgen een naam `com.adobe.product.module`. Elke Maven-artefact- of OSGi-bundel moet een eigen pakket hebben.
+* Java™-implementaties worden in een impl-pakket onder de bijbehorende API geplaatst.
 
 
-Deze conventies hoeven niet noodzakelijkerwijs van toepassing te zijn op de implementaties van de klant, maar het is belangrijk dat conventies worden gedefinieerd en nageleefd, zodat de code behouden kan blijven.
+Deze overeenkomsten zijn niet noodzakelijk op klantenimplementaties van toepassing, maar het is belangrijk dat de overeenkomsten worden bepaald en vastgehouden zodat de code kan handhaven.
 
 In het ideale geval zouden namen hun intentie moeten onthullen. Een gemeenschappelijke codetest voor wanneer de namen niet zo duidelijk zijn aangezien zij zouden moeten zijn de aanwezigheid van commentaren die verklaren wat de variabele of de methode voor zijn:
 
@@ -68,7 +64,7 @@ DRY geeft aan dat dezelfde codeset nooit mag worden gedupliceerd. Dit geldt ook 
 
 ### Naakte CSS-regels vermijden {#avoid-naked-css-rules}
 
-CSS-regels moeten specifiek zijn voor uw doelelement in de context van uw toepassing. Bijvoorbeeld een CSS-regel die wordt toegepast op *.content.center* Deze stijl zou te breed zijn en zou mogelijk veel inhoud in uw systeem beïnvloeden, waardoor anderen deze stijl in de toekomst moeten overschrijven. *.mijnapp-centertext* zou een specifiekere regel zijn aangezien het gecentreerd specificeert *text* in de context van uw toepassing.
+CSS-regels moeten specifiek zijn voor uw doelelement in de context van uw toepassing. Bijvoorbeeld een CSS-regel die wordt toegepast op *.content.center* Deze stijl zou te breed zijn en zou mogelijk veel inhoud in uw systeem beïnvloeden, waardoor anderen deze stijl in de toekomst moeten overschrijven. Overwegende dat *.mijnapp-centertext* zou een specifiekere regel zijn aangezien het gecentreerd specificeert *text* in de context van uw toepassing.
 
 ### Gebruik van verouderde API&#39;s elimineren {#eliminate-usage-of-deprecated-apis}
 
@@ -88,9 +84,9 @@ AEM verstrekt een XSS API om parameters gemakkelijk schoon te maken en veilighei
 
 ### Pas het aangewezen registreren toe {#implement-appropriate-logging}
 
-Voor code Java, AEM steunt slf4j als standaard API voor het registreren van berichten en zou samen met de configuraties moeten worden gebruikt die door de console OSGi voor consistentie in beleid ter beschikking worden gesteld. Slf4j stelt vijf verschillende registrerenniveaus bloot. Wij adviseren gebruikend de volgende richtlijnen wanneer het kiezen welk niveau om een bericht bij te registreren:
+Voor code Java™, AEM steunt slf4j als standaard API voor het registreren van berichten en zou met de configuraties moeten worden gebruikt die door de console OSGi ter wille van consistentie in beleid ter beschikking worden gesteld. Slf4j stelt vijf verschillende registrerenniveaus bloot. Adobe raadt u aan de volgende richtlijnen te gebruiken wanneer u kiest op welk niveau een bericht moet worden geregistreerd:
 
-* FOUT: Wanneer er iets in de code is verbroken en de verwerking niet kan worden voortgezet. Dit gebeurt vaak als gevolg van een onverwachte uitzondering. Het is meestal handig om stacksporen in deze scenario&#39;s op te nemen.
+* FOUT: Wanneer er iets in de code is verbroken en de verwerking niet kan worden voortgezet. Dit gebeurt vaak als gevolg van een onverwachte uitzondering. Het is handig om stacksporen in deze scenario&#39;s op te nemen.
 * WAARSCHUWING: Als iets niet goed heeft gewerkt, maar de verwerking kan doorgaan. Dit zal vaak het resultaat zijn van een uitzondering die we verwachtten, zoals een *PathNotFoundException*.
 * INFO: Informatie die nuttig zou zijn wanneer het controleren van een systeem. Onthoud dat dit de standaardinstelling is en dat de meeste klanten dit op hun plaats zullen laten in hun omgeving. Gebruik het daarom niet te veel.
 * FOUTOPSPORING: Informatie op een lager niveau over verwerking. Nuttig wanneer het zuiveren van een kwestie met steun.

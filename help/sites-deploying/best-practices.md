@@ -1,29 +1,25 @@
 ---
 title: Best practices implementeren
-seo-title: Deploying Best Practices
 description: Het opstellen en handhaven van beste praktijken.
-seo-description: Deploying and maintaining best practices.
-uuid: 4546ed2c-43d5-40f3-874f-567b324e78c2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
 # Best practices implementeren{#deploying-best-practices}
 
-Het opstellen van beste praktijken beschrijft hoe te om AEM op de meest efficiënte en meest efficiënte manier op te stellen of te handhaven. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
+Met behulp van best practices wordt beschreven hoe Adobe Experience Manager (AEM) op de meest efficiënte en effectieve manier kan worden geïmplementeerd of onderhouden. Deze groeiende lijst met onderwerpen omvat verschillende gebieden in AEM.
 
 Op de volgende gebieden is documentatie beschikbaar over het implementeren en onderhouden van best practices en aanbevelingen:
 
-* [OAK](#oak)
+* [Eik](#oak)
 * [Gemeenschappen](#communities)
 * [UI](#ui)
 * [Prestaties](#performance)
@@ -36,7 +32,7 @@ Raadpleeg een van de volgende bronnen voor beste praktijken bij het beheren, ont
 
 Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
-## OAK {#oak}
+## Eik {#oak}
 
 [Eik](/help/sites-deploying/platform.md) is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
 
@@ -48,7 +44,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
    <td>Biedt een witboek waarin de technische flexibiliteit, hoge prestaties en functies voor noodherstel van geluid worden besproken</td>
   </tr>
   <tr>
-   <td>Aanbevolen OAK-implementaties</td>
+   <td>Aanbevolen Oak-implementaties</td>
    <td><a href="/help/sites-deploying/recommended-deploys.md">Aanbevolen implementaties</a></td>
    <td>Beschrijft plaatsingsscenario's</td>
   </tr>
@@ -63,7 +59,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
    <td>In dit document worden de aanbevolen procedures voor het opslaan van binaire gegevens en inhoudsknooppunten uitgelegd. Bevat informatie over het gebruik van de Amazon S3-gegevensopslag.</td>
   </tr>
   <tr>
-   <td>Zoeken in OAK</td>
+   <td>Zoeken in eiken</td>
    <td><a href="/help/sites-deploying/best-practices-for-queries-and-indexing.md">Beste praktijken voor Vragen en het Indexeren</a><br /> </td>
    <td>Beschrijft beste praktijken op hoe te om inhoud te indexeren.</td>
   </tr>
@@ -74,7 +70,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 AEM Communities vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM Communities worden hier beschreven:
 
-[Community Content Store](/help/communities/working-with-srp.md) - Bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker geproduceerde inhoud (UGC) en de overwegingen om het onderliggende te kiezen [topologie](/help/communities/topologies.md).
+[Community Content Store](/help/communities/working-with-srp.md) - Bespreekt de nieuwe gedeelde opslageigenschap voor gebruiker-geproduceerde inhoud (UGC) en de overwegingen voor het kiezen van het onderliggende [topologie](/help/communities/topologies.md).
 
 [Aanbevolen implementaties voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
 
@@ -95,11 +91,11 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   <tr>
    <td>Beste praktijken voor kwaliteitsborging</td>
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Beste praktijken voor kwaliteitsborging</a></td>
-   <td>Een gestandaardiseerd overzicht van de kwesties betrokken bij het bepalen van een Concept van de Test specifiek voor prestatietests op uw <em>publish</em> milieu. Dit is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers en systeembeheerders.</td>
+   <td>Een gestandaardiseerd overzicht van de kwesties betrokken bij het bepalen van een Concept van de Test specifiek voor prestatietests op uw <em>publish</em> milieu. Dit is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers, en systeembeheerders.</td>
   </tr>
   <tr>
    <td>Dispatcher gebruiken met een CDN</td>
-   <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a></td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a></td>
    <td>Een CDN (Content Delivery Network), zoals Akamai Edge Delivery of Amazon Cloud Front, levert inhoud op een locatie die dicht bij de eindgebruiker ligt.</td>
   </tr>
   <tr>

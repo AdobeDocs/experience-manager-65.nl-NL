@@ -1,24 +1,19 @@
 ---
 title: Een SCF-sandbox maken
-seo-title: Create An SCF Sandbox
-description: Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geinteresseerd zijn.  Het door de verwezenlijking van een zandbakplaats SCF
-seo-description: This tutorial is primarily for developers, new to AEM, who are interested in using SCF components.  It walks through the creation of An SCF Sandbox site
-uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
+description: Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geinteresseerd zijn. Het door de verwezenlijking van een zandbakplaats SCF
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 exl-id: 89858814-6625-4a56-8359-cc1eca402816
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
 
 # Een SCF-sandbox maken  {#create-an-scf-sandbox}
-
 
 Vanaf AEM 6.1 Gemeenschappen is het maken van een communitysite de eenvoudigste manier om snel een sandbox te maken. Zie [Aan de slag met AEM Communities](getting-started.md).
 
@@ -41,7 +36,7 @@ De stappen in deze zelfstudie zijn:
 
 >[!CAUTION]
 >
->Deze zelfstudie maakt geen community-site met de functionaliteit die is gemaakt met de [Community Sites-console](sites-console.md). In deze zelfstudie wordt bijvoorbeeld niet beschreven hoe u aanmelding, zelfregistratie kunt instellen, [sociale aanmelding](social-login.md), berichten, profielen enzovoort.
+>Deze zelfstudie maakt geen community-site met de functionaliteit die is gemaakt met de [Community Sites-console](sites-console.md). In deze zelfstudie wordt bijvoorbeeld niet beschreven hoe u aanmeldingsgegevens, zelfregistratie kunt instellen, [sociale aanmelding](social-login.md), berichten, profielen enzovoort.
 >
 >Als u de voorkeur geeft aan een eenvoudige communitysite, voert u de [Een voorbeeldpagina maken](create-sample-page.md) zelfstudie.
 
@@ -74,16 +69,16 @@ Nadat u zich hebt aangemeld met beheerdersrechten, kunt u op verschillende manie
 
    Bijvoorbeeld op een lokale auteur-instantie: [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-Als u met CRXDE Lite wilt werken, moet u zich aanmelden met ontwikkelaars- of beheerdersprikkels. Voor de standaardinstantie localhost kunt u zich aanmelden met
+Als u met CRXDE Lite wilt werken, moet u zich aanmelden met de ontwikkelaar- of beheerdersrechten. Voor de standaardinstantie localhost kunt u zich aanmelden met
 
 * `username: admin`
 * `password: admin`
 
 
-**Wees voorzichtig** dat deze login onderbreking zal en u periodiek opnieuw zult moeten inloggen gebruikend de trek neer op het juiste eind van de CRXDe Lite hulpmiddelbar.
+Deze login tijden uit en u moet periodiek opnieuw login gebruikend het pull-down op het rechtereind van de het hulpmiddelbar van de CRXDE Lite.
 
 Als u zich niet hebt aangemeld, kunt u niet door de JCR-opslagplaats navigeren of bewerkingen uitvoeren/opslaan.
 
-***Bij twijfel kunt u zich opnieuw aanmelden!***
+***Bij twijfel meldt u zich opnieuw aan!***
 
 ![opnieuw aanmelden](assets/relogin.png)

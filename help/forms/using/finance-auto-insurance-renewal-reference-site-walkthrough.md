@@ -1,17 +1,14 @@
 ---
 title: We.Doorloop van de referentiewebsite voor Verzekering van financiële automatische vernieuwing
-seo-title: We.Finance Auto Insurance Renewal reference site walkthrough
 description: We.Doorloop van de referentiewebsite voor Verzekering van financiële automatische vernieuwing
-uuid: c749a6f7-71f1-4f47-b824-9c7b699072c7
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
-discoiquuid: ad450124-49a5-4afb-aac3-ed3733d6504b
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -22,11 +19,11 @@ ht-degree: 0%
 
 Wij.Finance-site is een site voor financiële services die u helpt interactieve communicatiemogelijkheden van AEM Forms te leren kennen.
 
-Lees meer over de uitgebreide doorlichting van We.Finance Auto Insurance gebruikscase die laat zien hoe AEM formulieren en de integratie ervan met Microsoft Dynamics de klantervaring in een bedrijf voor financiële services helpen personaliseren. De interactieve analyse wordt ontworpen om implementatie van complexe digitale transacties en klantenmededeling in een financieel bedrijf te vergemakkelijken.
+Lees de uitgebreide analyse van We.Finance Auto Insurance use case die laat zien hoe AEM formulieren en de integratie ervan met Microsoft® Dynamics de klantervaring in een bedrijf voor financiële services kunnen personaliseren. De interactieve analyse wordt ontworpen om implementatie van complexe digitale transacties en klantenmededeling in een financieel bedrijf te vergemakkelijken.
 
 **De rit begint met de gebruikscase:**
 
-Sarah Rose is een bestaande We.Finance-klant en heeft een autoverzekeringspolis gekocht. Het is nu de tijd van het jaar voor de verlenging van haar verzekeringspolis. Gloria Rios, verzekeringsagent, We.Finance stuurt een herinnering aan Sarah over haar beleidsvernieuwing. Sarah volgt de instructies in de e-mail en voltooit het proces.
+Sarah Rose is een bestaande We.Finance-klant en heeft een autoverzekeringspolis gekocht. Nu is het de tijd van het jaar voor de verlenging van Sarah&#39;s verzekeringspolis. Gloria Rios, verzekeringsagent, We.Finance stuurt een herinnering aan Sarah over haar beleidsvernieuwing. Sarah volgt de instructies in de e-mail en voltooit het proces.
 
 ## Doorloop van toepassing voor automatische verzekering {#auto-insurance-application-walkthrough}
 
@@ -45,15 +42,15 @@ Sarah ontvangt een e-mail met het onderwerp &quot;Uw automatische Verzekering Ve
 
 #### Zie het zelf {#see-it-yourself}
 
-Ga naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten** > **Wij.Financiën** > **Automatische verzekering**. Verzekering automatisch vernieuwen selecteren **interactieve communicatie** en klik op **Gebruikersinterface van agent openen**. De interactieve mededeling opent omhoog in de Agent UI. Voer een geldig e-mailadres in om de e-mail te ontvangen met het bijgevoegde beleidsdocument en klik op Verzenden.
+Ga naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten** > **Wij.Financiën** > **Automatische verzekering**. Verzekering automatisch vernieuwen selecteren **interactieve communicatie** en klik op **Gebruikersinterface van agent openen**. De interactieve mededeling opent omhoog in de Agent UI. Voer een geldig e-mailadres in, zodat zij het e-mailbericht met het bijgevoegde beleidsdocument kunnen ontvangen en op Verzenden kunnen klikken.
 
 U hebt rechtstreeks vanuit `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah ontvangt een mededeling over de verlenging van verzekeringsovereenkomsten van We.Finance en besluit te verlengen {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah ontvangt een e-mail met een bijlage van We.Finance die haar eraan herinnert dat haar Autoverzekeringspolis op het punt staat te verlopen. De bijlage is de afdrukversie van haar brief voor automatische verzekering.
+Sarah ontvangt een e-mail met een bijlage van We.Finance en herinnert Sarah eraan dat haar beleid voor automatische verzekering bijna zal verlopen. De bijlage is de afdrukversie van Sarah&#39;s Auto Insurance letter.
 
-Sarah kliks **Nu vernieuwen** en wordt verwezen naar de webversie van haar brief over automatische verzekering. Naast deze brief vindt Sarah nog een aantal dagen dat haar beleid moet verlopen. De pagina biedt Sarah een basisoverzicht van haar verzekeringsbeleidsdetails zoals het aantal van het Beleid, het Gelverschuldigd Bedrag, en andere informatie zoals kortingsaanbiedingen en loyaliteitsbeloningen. Sarah klikt opnieuw **Nu vernieuwen** onderaan het beleid.
+Sarah kliks **Nu vernieuwen** en wordt verwezen naar de webversie van haar brief over automatische verzekering. Naast deze brief vindt Sarah hoeveel tijd er nog over is voor haar beleid voordat het verloopt. De pagina biedt Sarah een basisoverzicht van haar verzekeringsbeleidsdetails zoals het aantal van het Beleid, het Gelverschuldigd Bedrag, en andere informatie zoals kortingsaanbiedingen en loyaliteitsbeloningen. Sarah klikt opnieuw **Nu vernieuwen** onderaan het beleid.
 
 ![ref1](assets/ref1.png)
 
@@ -67,7 +64,7 @@ De knop Nu vernieuwen in de e-mail is gekoppeld aan de toepassing voor automatis
 
 U moet een e-mail met een bijgevoegde PDF hebben ontvangen. De PDF is een afdrukversie van uw brief voor automatische verzekering. Klikken **Nu vernieuwen** om de webversie van het beleid te bereiken. Controleer uw persoonlijke gegevens en beleidsgegevens en klik op **Nu vernieuwen** Hiermee gaat u naar een andere interactieve communicatie.
 
-De **Nu vernieuwen** in de e-mail stuurt Sarah naar de webversie van het beleid. U kunt de volgende URL bezoeken:
+De **Nu vernieuwen** in de e-mail leidt Sarah naar het beleid op het web. U kunt de volgende URL bezoeken:
 
 `https://[authorServer]:[authorPort]/content/document.html?schema=fdm&documentId=/content/forms/af/we-finance/autoinsurance/auto-insurance-renewal/channels/web.html&customerId=1`
 

@@ -1,19 +1,15 @@
 ---
 title: Clientlibs toevoegen
-seo-title: Add Clientlibs
 description: Een ClientLibraryFolder toevoegen
-seo-description: Add a ClientLibraryFolder
-uuid: 2944923d-caca-4607-81a4-4122a2ce8e41
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 46f81c3f-6512-43f1-8ec1-cc717ab6f6ff
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -45,7 +41,7 @@ In de **Eigenschappen** tab voor de nieuwe `clientlibs` knoop, ga in **categorie
 * Klikken **Toevoegen**
 * Klikken **Alles opslaan**
 
-Opmerking: De waarde voor categorieën wordt voorafgegaan door &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs.  BELANGRIJK : Plaatsaanduiding toevoegen `js.tx`t en **`css.txt`** bestanden. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
+Opmerking: De waarde voor categorieën wordt voorafgegaan door &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs. BELANGRIJK: Plaatsaanduiding toevoegen `js.tx`t en **`css.txt`** bestanden. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
 
 1. Klikken met rechtermuisknop **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Selecteren **Bestand maken...**
@@ -75,15 +71,15 @@ Maak vervolgens een bestand onder clientlibs met de naam style.css en stel de in
 
 ### SCF-clips insluiten {#embed-scf-clientlibs}
 
-In de **Eigenschappen** tab voor de `clientlibs` node, voer de eigenschap String voor meerdere waarden in **insluiten**. Dit sluit de noodzakelijke [client-side bibliotheken (clientlibs) voor SCF-componenten](/help/communities/client-customize.md#clientlibs-for-scf). Voor deze zelfstudie worden veel clientlibs toegevoegd die nodig zijn voor de onderdelen Communities.
+In de **Eigenschappen** tab voor de `clientlibs` node, voer de eigenschap String voor meerdere waarden in **insluiten**. Dit sluit de noodzakelijke [client-side bibliotheken (clientlibs) voor SCF-componenten](/help/communities/client-customize.md#clientlibs-for-scf). Voor deze zelfstudie worden veel van de clientlibs die nodig zijn voor de onderdelen Communities toegevoegd.
 
-**Opmerking** dat dit al dan niet de gewenste benadering voor een productiesite kan zijn aangezien er overwegingen van gemak tegenover grootte/snelheid van de clientlibs die voor elke pagina worden gedownload zijn.
+Dit kan al dan niet de gewenste benadering voor een productiesite zijn aangezien er overwegingen van gemak tegenover grootte/snelheid van de clientlibs die voor elke pagina worden gedownload zijn.
 
-Als u slechts één functie op één pagina gebruikt, kunt u de volledige clientlib van die functie rechtstreeks op de pagina opnemen, bijvoorbeeld:
+Als u slechts één functie op één pagina gebruikt, kunt u de volledige clientlib van die functie direct op de pagina opnemen, bijvoorbeeld
 
 `% ui:includeClientLib categories=cq.social.hbs.forum" %`
 
-In dit geval, met inbegrip van hen allen en zo worden de meer basiscliënten SCF die de auteur clientlibs zijn verkiesd:
+In dit geval, met inbegrip van hen allen en zo de meer basiscliënten SCF die de auteur clientlibs zijn worden geprefereerd:
 
 * Naam: **`embed`**
 * Type: **`String`**
@@ -110,7 +106,7 @@ Zo `/etc/designs/an-scf-sandbox/clientlibs` moet nu in de gegevensopslagruimte w
 
 ### Clientlibs opnemen in PlayPage-sjabloon {#include-clientlibs-in-playpage-template}
 
-Zonder de `apps.an-scf-sandbox` De categorie ClientLibraryFolder op de pagina, de SCF-componenten zijn niet functioneel en niet opgemaakt omdat de benodigde Javascript(s) en stijl(en) niet beschikbaar zijn.
+Zonder de `apps.an-scf-sandbox` De categorie ClientLibraryFolder op de pagina, SCF-componenten zijn niet functioneel en niet opgemaakt omdat de benodigde JavaScript-stijlen niet beschikbaar zijn.
 
 Bijvoorbeeld, zonder de clientlibs op te nemen, lijkt de SCF commentaarcomponent ongestileerd:
 
@@ -153,9 +149,9 @@ Laad uw website in de browser en controleer of de achtergrond geen blauwe tint h
 
 ### Uw werk tot nu toe opslaan {#saving-your-work-so-far}
 
-Op dit moment bestaat er een minimalistische sandbox en het is misschien de moeite waard om op te slaan als een pakket, zodat u tijdens het afspelen, als uw opslagplaats beschadigd raakt en u opnieuw wilt beginnen, uw server kunt uitschakelen, de naam van de map crx-quickstart/ wijzigen of verwijderen, uw server in kunt schakelen, uploaden en installeren van dit opgeslagen pakket, en deze basisstappen niet hoeft te herhalen.
+Op dit moment bestaat er een minimalistische sandbox en het kan de moeite waard zijn om op te slaan als een pakket, zodat u tijdens het afspelen, als uw opslagplaats beschadigd raakt en u opnieuw wilt beginnen, uw server kunt uitschakelen, de naam van de map crx-quickstart/ kunt wijzigen of verwijderen, uw server kunt inschakelen, dit opgeslagen pakket uploaden en installeren en deze basisstappen niet hoeft te herhalen.
 
-Dit pakket is beschikbaar op het tabblad [Een voorbeeldpagina maken](/help/communities/create-sample-page.md) zelfstudie voor hen die niet kunnen wachten om gewoon binnen te springen en te beginnen met afspelen...
+Dit pakket is beschikbaar op het tabblad [Een voorbeeldpagina maken](/help/communities/create-sample-page.md) zelfstudie voor hen die niet kunnen wachten om binnen te springen en te beginnen met afspelen...
 
 Een pakket maken:
 
@@ -180,9 +176,9 @@ Een pakket maken:
       * Klikken **Filter toevoegen**
       * Hoofdpad: bladeren naar `/content/an-scf-sandbox**`
       * Klikken **Gereed**
-   * Klikken **Opslaan**
 
+   * Klikken **Opslaan**
 
 * Klikken **Opbouwen**
 
-Nu kunt u **Downloaden** opslaan naar schijf en **Pakket uploaden** en selecteert u **Meer > Repliceren** om de sandbox naar een publicatieinstantie van de localhost te verplaatsen en het domein van de sandbox uit te breiden.
+Nu kunt u **Downloaden** opslaan naar schijf en **Pakket uploaden** en selecteer **Meer > Repliceren** om de sandbox naar een publicatieinstantie van de localhost te duwen, zodat de sandbox meer ruimte krijgt.

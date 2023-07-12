@@ -1,26 +1,24 @@
 ---
 title: Basisstructuur
-description: Soms moet u een grote set pagina's maken die dezelfde structuur hebben maar andere inhoud hebben. Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig pagina's maken op basis van deze structuur.
-uuid: 5904abc0-b256-4da4-a7d7-3c17ea299648
+description: Soms moet u een grote set pagina's maken die structuur delen, maar andere inhoud hebben. Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig op deze structuur gebaseerde pagina's maken.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: a63e5732-b1a3-4639-9838-652af401e788
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
 workflow-type: tm+mt
-source-wordcount: '1448'
+source-wordcount: '1432'
 ht-degree: 0%
 
 ---
 
 # Basisstructuur{#scaffolding}
 
-Soms moet u een grote set pagina&#39;s maken die dezelfde structuur hebben maar andere inhoud hebben. Via de standaardinstelling voor AEM moet u elke pagina maken, de juiste componenten naar de pagina slepen en elk van de pagina&#39;s afzonderlijk invullen.
+Soms moet u een grote set pagina&#39;s maken die structuur delen, maar andere inhoud hebben. Via de standaard Adobe Experience Manager-interface (AEM) moet u elke pagina maken, de juiste componenten naar de pagina slepen en elk afzonderlijk invullen.
 
-Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina&#39;s weerspiegelen. Met dit formulier kunt u eenvoudig pagina&#39;s maken op basis van deze structuur.
+Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina&#39;s weerspiegelen. Met dit formulier kunt u eenvoudig op deze structuur gebaseerde pagina&#39;s maken.
 
 >[!NOTE]
 >
@@ -30,9 +28,9 @@ Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die
 
 Basispagina&#39;s worden opgeslagen in de **Gereedschappen** console van de sitebeheerder.
 
-* Open de **Gereedschappen** console en klik op **Standaardpaginascheiding**.
-* Onder deze klik klikt u op **geometrixx**.
-* Onder **geometrixx** u vindt een *basispagina* gebeld **Nieuws**. Dubbelklik om deze pagina te openen.
+* Open de **Gereedschappen** console, en klik **Standaardpaginascheiding**.
+* Klik onder deze optie op **Geometrixx**.
+* Onder **Geometrixx**, vindt u een *basispagina* gebeld **Nieuws**. Dubbelklik om deze pagina te openen.
 
 ![howscaffiles_work](assets/howscaffolds_work.png)
 
@@ -42,10 +40,10 @@ Het subformulier bestaat uit een formulier met een veld voor elk stuk inhoud dat
 
 De basispagina-eigenschappen zijn:
 
-* **Titeltekst**: Dit is de naam van deze basispagina zelf. In dit voorbeeld heet het &quot;Nieuws&quot;.
+* **Titeltekst**: Dit is de naam van deze basispagina zelf. In dit voorbeeld heet het &#39;Nieuws&#39;.
 * **Beschrijving**: Dit wordt onder de titel op de basispagina weergegeven.
-* **Doelsjabloon**: Dit is de sjabloon die dit subbestand gebruikt wanneer het een nieuwe pagina maakt. In dit voorbeeld is het een *Geometrixinhouds pagina* sjabloon.
-* **Doelpad**: Dit is het pad van de bovenliggende pagina waaronder dit subbestand nieuwe pagina&#39;s maakt. In dit voorbeeld is het pad */content/geometrixx/nl/news*.
+* **Doelsjabloon**: Dit is de sjabloon die dit subbestand gebruikt wanneer het een pagina maakt. In dit voorbeeld is het een *Pagina met inhoud Geometrixx* sjabloon.
+* **Doelpad**: Dit is het pad van de bovenliggende pagina waaronder dit subbestand pagina&#39;s maakt. In dit voorbeeld is het pad */content/geometrixx/nl/news*.
 
 Het lichaam van het substraat is de vorm. Wanneer een gebruiker een pagina wil maken met het subformulier, vult hij het formulier in en klikt u op *Maken*, onderaan. In de **Nieuws** Het voorbeeld boven het formulier heeft de volgende velden:
 
@@ -60,11 +58,11 @@ Het lichaam van het substraat is de vorm. Wanneer een gebruiker een pagina wil m
 
 ### Een stapel maken {#creating-a-scaffold}
 
-Als u een nieuw subformulier wilt maken, gaat u naar de **Gereedschappen** console, dan **Standaardpaginascheiding** en maak een nieuwe pagina. Er is één paginasjabloontype beschikbaar, namelijk *Basisstructuursjabloon.*
+Als u een nieuw subformulier wilt maken, gaat u naar de **Gereedschappen** console, dan **Standaardpaginascheiding** en maakt u een pagina. Er is één paginasjabloontype beschikbaar, namelijk *Basisstructuursjabloon.*
 
-Ga naar de **Pagina-eigenschappen** van de nieuwe pagina en stel de *Titeltekst*, *Beschrijving*, *Doelsjabloon* en *Doelpad*, zoals hierboven beschreven.
+Ga naar de **Pagina-eigenschappen** van de nieuwe pagina en stel de *Titeltekst*, *Beschrijving*, *Doelsjabloon*, en *Doelpad*, zoals hierboven beschreven.
 
-Vervolgens moet u de structuur definiëren van de pagina die dit subbestand maakt. Ga hiervoor naar **[ontwerpmodus](/help/sites-authoring/page-authoring.md#sidekick)** op de basispagina. Er wordt een koppeling weergegeven waarmee u het subformulier in het dialoogvenster **dialoogeditor**.
+Vervolgens moet u de structuur definiëren van de pagina die dit subbestand maakt. Om dit te doen, ga **[ontwerpmodus](/help/sites-authoring/page-authoring.md#sidekick)** op de basispagina. Er wordt een koppeling weergegeven waarmee u het subformulier in het dialoogvenster **dialoogeditor**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 
@@ -78,7 +76,7 @@ De dialoogdefinitie van een subformulier werkt op dezelfde manier als een compon
 
 Een blik bij het voorbeeld **Nieuws** het subold-dialoogvenster in de dialoogeditor helpt u uit te leggen hoe dit werkt. Ga naar de ontwerpmodus op de basispagina en klik op de koppeling voor de dialoogeditor.
 
-Klik nu op het dialoogvenster **Dialog > Tab Panel > Text > Text**, als volgt:
+Klik nu op het veld Dialoogvenster **Dialog > Tab Panel > Text > Text**, als volgt:
 
 ![textedit](assets/textedit.png)
 
@@ -97,7 +95,7 @@ Hiermee bepaalt u de locatie van de opslag van de inhoud voor de tekst die in di
 * Het feit dat de tekenreeks die hier wordt opgeslagen, moet worden geïnterpreteerd als *rijke tekst*, en
 * welke component moet worden gebruikt om deze inhoud weer te geven op de resulterende pagina.
 
-Let op: in een normaal componentdialoogvenster hoeft u deze informatie niet op te geven omdat dit impliciet is in het feit dat het dialoogvenster al is gebonden aan een specifieke component.
+In een normaal componentendialoog zou u deze informatie niet moeten specificeren omdat het impliciet in het feit is dat de dialoog reeds aan een specifieke component gebonden is.
 
 Als u deze twee gegevens wilt opgeven, gebruikt u verborgen velden. Klik op het eerste verborgen veld **Dialog > Tab Panel > Text > Hidden**, als volgt:
 
@@ -113,13 +111,13 @@ De eigenschap name van dit verborgen veld is
 
 Dit is een Booleaanse eigenschap die wordt gebruikt om de tekstreeks te interpreteren die is opgeslagen op `./jcr:content/par/text/text`.
 
-Omdat we weten dat de tekst moet worden geïnterpreteerd als een rijke tekst, specificeren we de `value` eigenschap van dit veld als `true`.
+Omdat we weten dat de tekst moet worden geïnterpreteerd als tekst met opmaak, moeten we de eigenschap `value` eigenschap van dit veld als `true`.
 
 >[!CAUTION]
 >
->In de dialoogvenster-editor kan de gebruiker de waarden wijzigen van *bestaand* in de definitie van het dialoogvenster. Om een nieuwe eigenschap toe te voegen, moet de gebruiker [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Wanneer bijvoorbeeld een nieuw verborgen veld wordt toegevoegd aan een dialoogdefinitie met de dialoogeditor, heeft dit veld geen *value* eigenschap (d.w.z. een eigenschap met de naam &quot;value&quot;). Als het verborgen veld in kwestie een standaard vereist *value* in te stellen eigenschap moet deze eigenschap handmatig worden toegevoegd met een van de CRX-gereedschappen. De waarde kan niet worden toegevoegd met de dialoogeditor zelf. Als de eigenschap echter aanwezig is, kan de waarde ervan worden bewerkt in de dialoogeditor.
+>In de dialoogvenster-editor kan de gebruiker de waarden wijzigen van *bestaand* in de definitie van het dialoogvenster. Om een nieuwe eigenschap toe te voegen, moet de gebruiker [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Wanneer bijvoorbeeld een nieuw verborgen veld wordt toegevoegd aan een dialoogdefinitie met de dialoogeditor, heeft dit veld geen *value* eigenschap (dat wil zeggen, een eigenschap met de naam &quot;value&quot;). Als voor het verborgen veld in kwestie een standaardeigenschap moet worden ingesteld, moet deze eigenschap handmatig met een van de CRX-gereedschappen worden toegevoegd. De waarde kan niet worden toegevoegd met de dialoogeditor zelf. Als de eigenschap echter aanwezig is, kan de waarde ervan worden bewerkt in de dialoogeditor.
 
-Het tweede verborgen veld is zichtbaar door er als volgt op te klikken:
+Het tweede verborgen veld kan worden weergegeven door er als volgt op te klikken:
 
 ![hidden2](assets/hidden2.png)
 
@@ -131,7 +129,7 @@ De eigenschap name van dit verborgen veld is
 
 `./jcr:content/par/text/sling:resourceType`
 
-en de vaste waarde die voor deze eigenschap is opgegeven, is
+De vaste waarde die voor deze eigenschap is opgegeven, is
 
 `foundation/components/textimage`
 
@@ -143,7 +141,7 @@ In de klassieke UI, is het steigeren volledig geïntegreerd met overerving MSM (
 
 Wanneer u een pagina opent in **Basisstructuur** in de modus (met het pictogram onder aan sidekick) worden componenten die overerving ondergaan, aangeduid met:
 
-* een slotsymbool (voor de meeste onderdelen); bijv. tekst en titel)
+* een slotsymbool (voor de meeste onderdelen); bijvoorbeeld Tekst en Titel)
 * een masker met de tekst **Klik om overerving te annuleren** (voor afbeeldingscomponenten)
 
 Hierin ziet u dat de component niet kan worden bewerkt, totdat de overerving wordt geannuleerd.
@@ -156,7 +154,7 @@ Hierin ziet u dat de component niet kan worden bewerkt, totdat de overerving wor
 
 Als u op het vergrendelingssymbool of het afbeeldingspictogram klikt, kunt u de overerving verbreken:
 
-* het symbool verandert in een open hangslot .
+* het symbool verandert in een open hangslot.
 * als de vergrendeling eenmaal is opgeheven, kunt u de inhoud bewerken.
 
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
@@ -165,4 +163,4 @@ Na ontgrendelen kunt u de overerving herstellen door op het ontgrendelde hangslo
 
 >[!NOTE]
 >
->Als de overerving wordt geannuleerd op paginaniveau (op het tabblad Bibliotheek van Pagina-eigenschappen), kunnen alle componenten worden bewerkt in **Basisstructuur** modus (deze worden in ontgrendelde toestand weergegeven).
+>Als de overerving op paginaniveau wordt geannuleerd (op het tabblad Bibliotheek van Pagina-eigenschappen), kunnen alle componenten worden bewerkt in **Basisstructuur** modus (deze worden in ontgrendelde toestand weergegeven).

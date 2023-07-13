@@ -1,18 +1,14 @@
 ---
 title: Gedeelde wachtrijen configureren
-seo-title: Configuring Shared Queues
 description: Met gedeelde wachtrijen kunt u gebruikerswachtrijen op effectieve wijze configureren en beheren. Leer hoe te om gedeelde rijen te vormen.
-seo-description: Shared Queues allow you to configure and manage user queues effectively. Learn how to configure shared queues.
-uuid: 69ab611d-334b-40a5-bd2d-533d4cb25eda
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
 exl-id: 5f4467c1-0f3f-4dc6-9bd5-98259f327295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '642'
 ht-degree: 0%
 
 ---
@@ -31,29 +27,29 @@ Met deze optie kunt u gedeelde wachtrijen beheren die aan een geselecteerde gebr
 
 ## Toegang tot een geselecteerde gebruikerswachtrij beheren {#managing-access-to-a-selected-user-queue}
 
-Met de functie Toegang tot een gebruiker beheren kunt u de toegang tot een geselecteerde gebruikerswachtrij beheren. U kunt toegang tot een geselecteerde gebruikersrij aan andere gebruikers in uw organisatie verlenen of intrekken. Kara Bowman is bijvoorbeeld niet meer aan het werk. Met behulp van de functie Toegang tot een gebruiker beheren kan haar wachtrij worden gedeeld met Akira Tanaka en John Jacobs voor voltooiing. Op een later tijdstip, wanneer Kara Bowman naar het kantoor terugkeert, kunt u de toegang tot haar rij intrekken van Akira Tanaka en John Jacobs.
+Met de functie Toegang tot een gebruiker beheren kunt u de toegang tot een geselecteerde gebruikerswachtrij beheren. U kunt toegang tot een geselecteerde gebruikersrij aan andere gebruikers in uw organisatie verlenen of intrekken. Kara Bowman is bijvoorbeeld niet meer aan het werk. Met behulp van de functie Toegang tot een gebruiker beheren kan de wachtrij van Kara worden gedeeld met Akira Tanaka en John Jacobs voor voltooiing. Op een later moment, wanneer Kara terugkeert naar het kantoor, kunt u de toegang tot haar rij intrekken van Akira Tanaka en John Jacobs.
 
 Zodra gedeeld, kunnen deze taken door de gebruiker, met toegang tot de rij worden voltooid, gebruikend Werkruimte.
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor AEM formulierrelease.
+>De Flex Workspace is verouderd voor AEM formulierrelease.
 
 ### Toegang tot een geselecteerde gebruikerswachtrij configureren {#configuring-access-to-a-selected-user-queue}
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteren **Services** > **formulierworkflow** > **Gedeelde wachtrij**.
+1. Selecteren **Services** > **Forms Workflow** > **Gedeelde wachtrij**.
 
-1. Zoek en selecteer op het tabblad Toegang tot een gebruiker beheren de gebruiker wiens wachtrij u wilt delen. Op elk gewenst moment wordt in het rechterondervenster de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij.
-1. Zoek en selecteer de gebruiker in het linkerondervenster. Klik op Delen.
+1. Zoek op het tabblad Toegang tot een gebruiker beheren naar de gebruiker wiens wachtrij u wilt delen en selecteer deze. Op elk gewenst moment wordt in het rechterondervenster de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij.
+1. Zoek en selecteer de gebruiker in het deelvenster linksonder. Klik op Delen.
 1. Klik op Opslaan om te voltooien.
 
 ### Toegang tot een geselecteerde gebruikerswachtrij intrekken {#revoking-access-to-a-selected-user-queue}
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteren **Services** > **formulierworkflow** > **Gedeelde wachtrij**.
+1. Selecteren **Services** > **Forms Workflow** > **Gedeelde wachtrij**.
 
-1. Zoek en selecteer op het tabblad Toegang tot een gebruiker beheren de gebruiker wiens wachtrij u wilt beheren.
+1. Zoek op het tabblad Toegang tot een gebruiker beheren naar de gebruiker wiens wachtrij u wilt beheren en selecteer deze.
 1. In het rechterbenedendeelvenster wordt de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij. Selecteer de gebruiker en klik op Intrekken.
 1. Klik op Opslaan om te voltooien.
 
@@ -65,22 +61,22 @@ Zodra toegewezen, kunnen deze taken door de gebruiker worden voltooid gebruikend
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor AEM formulierrelease.
+>De Flex Workspace is verouderd voor AEM formulierrelease.
 
 ### Toegang verlenen tot een geselecteerde gebruikerswachtrij {#granting-access-to-a-selected-user-queue}
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteren **Services** > **formulierworkflow** > **Gedeelde wachtrij**.
+1. Selecteren **Services** > **Forms Workflow** > **Gedeelde wachtrij**.
 
-1. Zoek en selecteer op het tabblad Toegang tot gebruiker beheren de gebruiker van wie u de wachtrij wilt delen. Op elk gewenst moment wordt in het rechterondervenster de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij.
-1. Zoek en selecteer in het linkerondervenster gebruikerswachtrijen die u met de geselecteerde gebruiker wilt delen. Klik op Delen.
+1. Zoek op het tabblad Toegang tot gebruiker beheren naar de gebruiker waarvan u de wachtrij wilt delen en selecteer deze. Op elk gewenst moment wordt in het rechterondervenster de lijst weergegeven met gebruikers die toegang hebben tot de geselecteerde gebruikerswachtrij.
+1. Zoek en selecteer in het linkerbenedendeelvenster gebruikerswachtrijen die u met de geselecteerde gebruiker wilt delen. Klik op Delen.
 1. Klik op Opslaan om te voltooien.
 
 ### Toegang tot een geselecteerde gebruikerswachtrij intrekken {#revoking_access_to_a_selected_user_queue-1}
 
 1. Meld u met een beheerdersaccount aan bij de beheerconsole.
-1. Selecteren **Services** > **formulierworkflow** > **Gedeelde wachtrij**.
+1. Selecteren **Services** > **Forms Workflow** > **Gedeelde wachtrij**.
 
-1. Zoek en selecteer op het tabblad Toegang beheren door gebruiker van wie u de wachtrij wilt beheren.
+1. Zoek op het tabblad Toegang beheren door een gebruiker naar de gebruiker wiens wachtrij u wilt beheren en selecteer deze.
 1. In het rechterbenedendeelvenster wordt de lijst weergegeven met gebruikerswachtrijen die aan de geselecteerde gebruiker zijn toegewezen. Selecteer de gebruikerswachtrij en klik op Intrekken.
 1. Klik op Opslaan om te voltooien.

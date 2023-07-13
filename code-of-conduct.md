@@ -1,22 +1,24 @@
 ---
-source-git-commit: e3f12a9bbcb111e9a174e6bc3a0ec634df73c60f
-translation-type: tm+mt
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 0%
 
 ---
-# Adobe-gedragscode
+# Gedragscode Adobe
 
-## Onze belofte
+## Toezegging
 
-Om een open en welkome omgeving te bevorderen, verbinden wij als contribuanten en onderhoudsgerechtigden ons ertoe om van deelname aan ons project en onze gemeenschap een pesterijen-vrije ervaring te maken voor iedereen, ongeacht leeftijd, lichaamsgrootte, handicap, etnische afkomst, genderidentiteit en expressie, niveau van ervaring, nationaliteit, persoonlijke verschijning, ras, godsdienst of seksuele identiteit en geaardheid.
+Om een open en welkome omgeving te bevorderen, verbindt het documentatieteam, als contribuanten en onderhoudsgerechtigden, zich ertoe om van deelname aan een project en onze gemeenschap een pesterijen-vrije ervaring te maken voor iedereen, ongeacht leeftijd, lichaamsgrootte, handicap, etnische afkomst, genderidentiteit en expressie, niveau van ervaring, nationaliteit, persoonlijk uiterlijk, ras, godsdienst of seksuele identiteit en geaardheid.
 
-## Onze standaarden
+## Normen
 
 Voorbeelden van gedrag dat bijdraagt tot het maken van een positieve omgeving zijn:
 
 * Het gebruiken van verwelkomings en inclusieve taal
 * Naleving van verschillende standpunten en ervaringen
 * Erg vriendelijk constructieve kritiek te aanvaarden
-* Focussen op wat het beste is voor de gemeenschap
+* Focus op wat het beste is voor de gemeenschap
 * Empathie tonen ten opzichte van andere leden van de gemeenschap
 
 Voorbeelden van onacceptabel gedrag van deelnemers zijn:
@@ -27,7 +29,7 @@ Voorbeelden van onacceptabel gedrag van deelnemers zijn:
 * Persoonlijke gegevens van anderen publiceren, zoals een fysiek of elektronisch adres, zonder uitdrukkelijke toestemming
 * Andere gedragingen die redelijkerwijs als ongeschikt in een professionele omgeving kunnen worden beschouwd
 
-## Onze verantwoordelijkheden
+## Verantwoordelijkheden
 
 Projectbeheerders zijn verantwoordelijk voor het verduidelijken van de normen voor aanvaardbaar gedrag en zullen naar verwachting passende en eerlijke corrigerende maatregelen nemen in geval van onaanvaardbare gedragingen.
 
@@ -45,4 +47,4 @@ Projectbeheerders die de gedragscode te goeder trouw niet naleven of handhaven, 
 
 ## Attributie
 
-Deze gedragscode is aangepast aan het [bijdrageverdrag](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).
+Deze gedragscode is aangepast aan de [Medebijdrageovereenkomst](https://contributor-covenant.org), versie 1.4, beschikbaar op [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/).

@@ -1,18 +1,14 @@
 ---
 title: Start en stop opdrachtregel
-seo-title: Command Line Start and Stop
-description: Leer om AEM van de bevellijn te beginnen en tegen te houden.
-seo-description: Learn how to start and stop AEM from the command line.
-uuid: 585f071c-2286-4a2c-af07-404bf298cba8
+description: Leer hoe u Adobe Experience Manager start en stopt vanaf de opdrachtregel.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
 exl-id: 21041b55-240c-487d-9d79-c54c877f4e1e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 0%
 
 ## Adobe Experience Manager starten vanaf de opdrachtregel {#starting-adobe-experience-manager-from-the-command-line}
 
-De `start` script is beschikbaar onder *de &lt;cq-installation>/bin* directory. Zowel Unix als de versies van Vensters worden verstrekt. Het script start de instantie die in *&lt;cq-installation>* directory.
+De `start` script is beschikbaar onder *de &lt;cq-installation>/bin* directory. Zowel UNIX® als de versies van Vensters worden verstrekt. Het script start de instantie die in *&lt;cq-installation>* directory.
 
-Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen worden gebruikt om het AEM te starten en af te stemmen.
+Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen worden gebruikt om de instantie Adobe Experience Manager (AEM) te starten en af te stemmen.
 
 <table>
  <tbody>
@@ -45,7 +41,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
   </tr>
   <tr>
    <td>CQ_RUNMODE</td>
-   <td>Runmode(s) gescheiden door komma<br /> </td>
+   <td>Afloopmodi, gescheiden door komma's<br /> </td>
   </tr>
   <tr>
    <td>CQ_JARFILE</td>
@@ -68,7 +64,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
 
 >[!CAUTION]
 >
->Houd er rekening mee dat bepaalde uitvoermodi, waaronder auteur en publicatie, moeten worden ingesteld voordat de AEM voor het eerst wordt gestart en dat deze naderhand niet kunnen worden gewijzigd. Voordat u een AEM-instantie instelt die in de productie moet worden gebruikt, raadpleegt u de [documentatie bij uitvoermodi](/help/sites-deploying/configure-runmodes.md) voor meer informatie.
+>Sommige uitvoeringsmodi, waaronder auteur en publicatie, moeten worden ingesteld voordat de AEM voor het eerst wordt gestart en kunnen daarna niet worden gewijzigd. Voordat u een AEM-instantie instelt die in productie wordt gebruikt, raadpleegt u [documentatie bij uitvoermodi](/help/sites-deploying/configure-runmodes.md) voor meer informatie.
 
 ### Windows-platform start.bat-scriptvoorbeeld {#windows-platform-start-bat-script-example}
 
@@ -76,7 +72,7 @@ Deze twee versies ondersteunen een lijst met omgevingsvariabelen die kunnen word
 SET CQ_PORT=1234 & ./start.bat
 ```
 
-### Startscriptvoorbeeld van Unix-platform {#unix-platform-start-script-example}
+### UNIX® platform start script voorbeeld {#unix-platform-start-script-example}
 
 ```shell
 CQ_PORT=1234 ./start
@@ -93,17 +89,17 @@ Voer een van de volgende handelingen uit om AEM te stoppen:
 * Afhankelijk van het platform dat u gebruikt:
 
    * Als u AEM bent begonnen via een script of de opdrachtregel, drukt u op **Ctrl+C** om de server uit te schakelen.
-   * Als u het beginmanuscript op UNIX hebt gebruikt, moet u het stopmanuscript gebruiken om AEM tegen te houden.
+   * Als u het beginmanuscript op UNIX® hebt gebruikt, moet u het stopmanuscript gebruiken om AEM tegen te houden.
 
 * Als u AEM bent begonnen door te dubbelklikken op het jar-bestand, klikt u op de knop **Aan** knop in het opstartvenster (de knop verandert in **Uit**) om de server uit te schakelen.
 
-   ![chlimage_1-63](assets/chlimage_1-63.png)
+  ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ## Adobe Experience Manager stoppen vanaf de opdrachtregel {#stopping-adobe-experience-manager-from-the-command-line}
 
-De `stop` script is beschikbaar onder *de &lt;cq-installation>/bin* directory. Zowel Unix als de versies van Vensters worden verstrekt. Het script stopt de actieve instantie die is geïnstalleerd in *&lt;cq-installation>* directory.
+De `stop` script is beschikbaar onder *de &lt;cq-installation>/bin* directory. Zowel UNIX® als de versies van Vensters worden verstrekt. Het script stopt de actieve instantie die is geïnstalleerd in *&lt;cq-installation>* directory.
 
-### Unix platform stop script voorbeeld {#unix-platform-stop-script-example}
+### Voorbeeld van UNIX®-platformstop {#unix-platform-stop-script-example}
 
 ```shell
 ./stop
@@ -115,9 +111,9 @@ De `stop` script is beschikbaar onder *de &lt;cq-installation>/bin* directory. Z
 ./stop.bat
 ```
 
-Als u enkel de bewaarplaats wilt vooraf vormen (zonder het te verplaatsen) moet u slechts:
+Als u de repository alleen vooraf wilt configureren (zonder deze te verplaatsen), hoeft u alleen:
 
-* extract `repository.xml` naar de vereiste locatie
+* Extraheren `repository.xml` naar de vereiste locatie
 
 * update `repository.xml` vereist
 

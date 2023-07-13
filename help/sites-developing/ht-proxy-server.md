@@ -1,25 +1,21 @@
 ---
 title: Het gereedschap Proxyserver gebruiken
-seo-title: How to use the Proxy Server Tool
 description: De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt
-seo-description: The proxy server acts as an intermediate server that relays requests between a client and a server
-uuid: 30f4f46d-839e-4d23-a511-12f29b3cc8aa
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '943'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
 
 # Het gereedschap Proxyserver gebruiken{#how-to-use-the-proxy-server-tool}
 
-De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver houdt spoor van alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit staat u toe om precies te controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
+De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver volgt alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit laat u precies controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
 
 U kunt hier de proxyserver in uw AEM-installatie vinden:
 
@@ -52,7 +48,7 @@ Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling van een
 
 `<localport>`
 
-Dit is de poort op uw lokale computer waarmee u verbinding wilt maken om toegang te krijgen tot de CRX-instantie via de proxy.
+Dit is de poort op uw lokale computer die u wilt gebruiken om verbinding te maken met de CRX-instantie via de proxy.
 
 **Opties**
 
@@ -106,11 +102,11 @@ Neem bijvoorbeeld een pagina die op verzoek de volgende code produceert:
 
 ### Voorbeeld {#example}
 
-Neem bijvoorbeeld een heel eenvoudig HTML-document dat zich bevindt in de repository op
+Neem bijvoorbeeld een eenvoudig HTML-document in de repository op
 
 `/content/test.html`
 
-naast een afbeeldingsbestand op
+Naast een afbeeldingsbestand op
 
 `/content/test.jpg`
 
@@ -128,26 +124,26 @@ De inhoud van `test.html` is:
 </html>
 ```
 
-Ervan uitgaande dat de AEM-instantie ingeschakeld is `localhost:4502` wij beginnen de volmacht als dit:
+Ervan uitgaande dat de AEM-instantie ingeschakeld is `localhost:4502`, wordt de proxy als volgt gestart:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
 De CQ/CRX-instantie is nu toegankelijk via de proxy op `localhost:4444` en alle communicatie via deze poort is aangemeld bij `test.log`.
 
-Als we nu de uitvoer van de proxy bekijken, zien we de interactie tussen de browser en de AEM.
+Als u nu de uitvoer van de proxy bekijkt, ziet u de interactie tussen de browser en de AEM.
 
-Bij het opstarten geeft de proxy de volgende resultaten:
+Bij het opstarten voert de proxy het volgende uit:
 
 ```xml
 starting proxy for localhost:4502 on port 4444
 using logfile: <some-dir>/crx-quickstart/opt/helpers/test.log
 ```
 
-Vervolgens opent u een browser en opent u de testpagina:
+Open nu een browser en open de testpagina:
 
 `http://localhost:4444/content/test.html`
 
-en we zien dat de browser een `GET` verzoek om de pagina:
+Je ziet dat de browser een `GET` verzoek om de pagina:
 
 ```shell
 C-0-#000000 -> [GET /content/test.html HTTP/1.1 ]
@@ -208,7 +204,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Controleren of Keep-Alive werkt**
 
-Levend houden is een eigenschap van HTTP die een cliënt toestaat om de verbinding van TCP aan de server opnieuw te gebruiken om veelvoudige verzoeken (voor de paginacode, beelden, stijlbladen, etc.) te maken. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
+Levend is een eigenschap van HTTP die een cliënt toestaat om de verbinding van TCP aan de server opnieuw te gebruiken om veelvoudige verzoeken (voor de paginacode, beelden, stijlbladen, etc.) te maken. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
 Controleren of in leven houden werkt:
 
@@ -219,7 +215,7 @@ Controleren of in leven houden werkt:
 
 **Verzoeken om verlies zoeken**
 
-Als u aanvragen kwijtraakt in een complexe serverinstelling, bijvoorbeeld met een firewall en een verzender, kunt u de proxyserver gebruiken om te bepalen waar de aanvraag verloren is gegaan. In het geval van een firewall:
+Als u verzoeken in een complexe serverinstelling verliest, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
 
 * Een proxy starten voor een firewall
 * Een andere proxy starten na een firewall
@@ -231,4 +227,4 @@ Als u van tijd tot tijd hangende verzoeken ervaart:
 
 * Start de proxy.
 * Wacht of schrijf het toegangslogboek in een dossier met elke ingang die een timestamp heeft.
-* Wanneer het verzoek begint hangend kunt u zien hoeveel verbindingen open waren en welk verzoek problemen veroorzaakt.
+* Wanneer het verzoek begint te hangen, kunt u zien hoeveel verbindingen open waren en welk verzoek problemen veroorzaakt.

@@ -1,41 +1,37 @@
 ---
 title: Een aangepaste Cloud Service maken
-seo-title: Creating a Custom Cloud Service
 description: De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen
-seo-description: The default set of Cloud Services can be extended with custom Cloud Service types
-uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '406'
 ht-degree: 0%
 
 ---
 
 # Een aangepaste Cloud Service maken{#creating-a-custom-cloud-service}
 
-De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen. Hierdoor kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is in de eerste plaats handig voor andere leveranciers van analysemogelijkheden, zoals Google Analytics, Chartbone, enz. Cloud Services worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
+De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen. Hierdoor kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is vooral handig voor externe analyseproviders, zoals Google Analytics, Chartbeat, enzovoort. Cloud Services worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
 
 >[!NOTE]
 >
->Deze stapsgewijze handleiding voor het maken van een nieuwe Cloud Service is een voorbeeld van het gebruik van Google Analytics. Alles is mogelijk niet van toepassing op het gebruik.
+>Deze stapsgewijze handleiding voor het maken van een Cloud Service is een voorbeeld van het gebruik van Google Analytics. Alles is mogelijk niet van toepassing op het gebruik.
 
-1. Maak in CRXDE Lite een nieuw knooppunt onder `/apps`:
+1. In CRXDE Lite maakt u een knooppunt onder `/apps`:
 
    * **Naam**: `acs`
    * **Type**: `nt:folder`
 
-1. Een nieuw knooppunt maken onder `/apps/acs`:
+1. Een knooppunt maken onder `/apps/acs`:
 
    * **Naam**: `analytics`
    * **Type**: `sling:Folder`
 
-1. Twee nieuwe knooppunten maken onder `/apps/acs/analytics`:
+1. Twee knooppunten maken onder `/apps/acs/analytics`:
 
    * **Naam**: componenten
    * **Type**: `sling:Folder`
@@ -45,8 +41,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    * **Naam**: sjablonen
    * **Type**: `sling:Folder`
 
-
-1. Rechtsklik ingeschakeld `/apps/acs/analytics/components`. Selecteren **Maken...** gevolgd door **Component maken...** In het dialoogvenster dat wordt geopend, kunt u het volgende opgeven:
+1. Klikken met rechtermuisknop aan op `/apps/acs/analytics/components`. Selecteren **Maken...** gevolgd door **Component maken...** In het dialoogvenster dat wordt geopend, kunt u het volgende opgeven:
 
    * **Label**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
@@ -64,7 +59,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    * **Naam:** `cq:defaultView`
    * **Waarde:** `html`
 
-1. Een nieuw bestand maken met de naam `content.jsp` krachtens `/apps/acs/analytics/components/googleanalyticspage`, met de volgende inhoud:
+1. Een bestand met de naam `content.jsp` krachtens `/apps/acs/analytics/components/googleanalyticspage`, met de volgende inhoud:
 
    ```xml
    <%@page contentType="text/html"
@@ -79,7 +74,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    </div>
    ```
 
-1. Een nieuw knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/`:
 
    * **Naam**: `dialog`
    * **Type**: `cq:Dialog`
@@ -92,7 +87,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
       * **Type**: `String`
       * **Waarde**: `dialog`
 
-1. Een nieuw knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog`:
 
    * **Naam**: `items`
    * **Type**: `cq:Widget`
@@ -102,12 +97,12 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
       * **Type**: `String`
       * **Waarde**: `tabpanel`
 
-1. Een nieuw knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items`:
 
    * **Naam**: `items`
    * **Type**: `cq:WidgetCollection`
 
-1. Een nieuw knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items`:
 
    * **Naam**: tab1
    * **Type**: `cq:Panel`
@@ -117,7 +112,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
       * **Type**: `String`
       * **Waarde**: `Config`
 
-1. Een nieuw knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
+1. Een knooppunt maken onder `/apps/acs/analytics/components/googleanalyticspage/dialog/items/items/tab1`:
 
    * **Naam**: items
    * **Type**: `nt:unstructured`
@@ -142,7 +137,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
       * **Waarde**: `textfield`
 
 1. Kopiëren `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` tot `/apps/acs/analytics/components/googleanalyticspage/body.jsp` en wijzigen `libs` tot `apps` op regel 34 en maak van de scriptverwijzing op regel 79 een volledig gekwalificeerd pad.
-1. Een nieuwe sjabloon maken onder `/apps/acs/analytics/templates/`:
+1. Een sjabloon maken onder `/apps/acs/analytics/templates/`:
 
    * with **Type bron** = `acs/analytics/components/googleanalyticspage`
    * with **Label** = `googleanalytics`
@@ -152,7 +147,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (op sjabloonknooppunt, niet het knooppunt jcr:content)
    * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (op jcr:content)
 
-1. Nieuwe component maken: `/apps/acs/analytics/components/googleanalytics`.
+1. Een component maken: `/apps/acs/analytics/components/googleanalytics`.
 
    Voeg de volgende inhoud toe aan `googleanalytics.jsp`:
 
@@ -195,7 +190,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
 
    Dit zou de douanemarkering moeten uitvoeren die op de configuratieeigenschappen wordt gebaseerd.
 
-1. Navigeren naar `http://localhost:4502/miscadmin#/etc/cloudservices` en maak een nieuwe pagina:
+1. Navigeren naar `http://localhost:4502/miscadmin#/etc/cloudservices` en maak een pagina:
 
    * **Titel**: `Google Analytics`
    * **Naam**: `googleanalytics`
@@ -206,8 +201,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    * **Type**: `String`
    * **Waarde**: `acs/analytics/components/googleanalytics`
 
-
-1. Navigeer aan de pas gecreëerde pagina van de Dienst ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) en klik op de knop **+** om een nieuwe config tot stand te brengen:
+1. Navigeer aan de pas gecreëerde pagina van de Dienst ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) en klik op de knop **+** om een config te creëren:
 
    * **Bovenliggende configuratie**: `/etc/cloudservices/googleanalytics`
    * **Titel:**  `My First GA Config`

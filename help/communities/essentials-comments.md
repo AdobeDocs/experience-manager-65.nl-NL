@@ -1,25 +1,21 @@
 ---
 title: Essentiële opmerkingen
-seo-title: Comments Essentials
 description: Overzicht van de component Opmerkingen
-seo-description: Comments component overview
-uuid: 58b7bb58-f598-4bcb-93ae-b7795cab51cd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
 
 # Essentiële opmerkingen {#comments-essentials}
 
-Deze pagina bevat de belangrijkste elementen van het werken met het opmerkingensysteem (de component comments) en opties voor het beheer van de door de gebruiker gegenereerde inhoud (UGC) die worden gemaakt wanneer leden opmerkingen of antwoorden plaatsen.
+Deze pagina bevat de belangrijkste elementen van het werken met het opmerkingensysteem (de component comments) en opties voor het beheer van de door de gebruiker gegenereerde inhoud (UGC) die worden geproduceerd wanneer leden opmerkingen of antwoorden plaatsen.
 
 De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke post door een commentaarcomponent (enkelvoudig) wordt vertegenwoordigd. Het is het opmerkingsysteem dat op de pagina is opgenomen. De afzonderlijke opmerkingen worden gemaakt wanneer deze worden aangeroepen.
 
@@ -79,18 +75,18 @@ Dit geldt voor alle componenten die een opmerkingsysteem uitbreiden.
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [API voor opmerkingen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
+* [API voor opmerkingen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/api/package-summary.html)
 
-* [Eindpunten opmerkingen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
+* [Eindpunten opmerkingen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/comments/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Toegang tot geposte opmerkingen (UGC) {#accessing-posted-comments-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
+Zie [Door de gebruiker gegenereerde inhoud moderniseren](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 

@@ -8,7 +8,7 @@ activity: develop
 audience: developer
 feature: Commerce Integration Framework
 exl-id: 1e7c3748-92b5-45f1-8dd9-f1816e3e34aa
-source-git-commit: dceb187ba28ad7c377e98d29d6c815fe37e23077
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
 source-wordcount: '623'
 ht-degree: 0%
@@ -21,7 +21,7 @@ AEM Content &amp; Commerce Authoring biedt een reeks ontwerpgereedschappen waarm
 
 ## Productkiezer {#product-picker}
 
-Om de productkiezer in een projectcomponent te gebruiken moet een ontwikkelaar toevoegen `commerce/gui/components/common/cifproductfield` naar een componentdialoogvenster. Gebruik bijvoorbeeld het volgende voor de cq:dialog:
+Om de productkiezer in een projectcomponent te gebruiken, moet een ontwikkelaar toevoegen `commerce/gui/components/common/cifproductfield` naar een componentdialoogvenster. Gebruik bijvoorbeeld het volgende voor de cq:dialog:
 
 ```xml
 <product jcr:primaryType="nt:unstructured"
@@ -33,23 +33,23 @@ Om de productkiezer in een projectcomponent te gebruiken moet een ontwikkelaar t
     selectionId="sku"/>
 ```
 
-In het productveld kan worden genavigeerd naar het product dat een gebruiker wil selecteren via de verschillende weergaven. Door gebrek keert het productgebied identiteitskaart van het product terug, maar het kan het vormen gebruikend `selectionId` kenmerk.
+In het productveld kan worden genavigeerd naar het product dat een gebruiker wil selecteren op basis van de verschillende weergaven. Door gebrek keert het productgebied identiteitskaart van het product terug, maar het kan het vormen gebruikend `selectionId` kenmerk.
 
 Het veld Productkiezer ondersteunt de volgende optionele eigenschappen:
 
-- selectionId (id, uid, sku, slug, gecombineerdeSlug, CombinationSku) - maakt het mogelijk het productkenmerk te kiezen dat door de kiezer moet worden geretourneerd (standaard = id). Het gebruiken van sku keert de sku van het geselecteerde product terug, terwijl het gebruiken van compiledSku en keert een koord als base#variant met de skus van het basisproduct en de geselecteerde variant, of één enkele sku terug als een basisproduct wordt geselecteerd.
-- filter (folderOrProduct, folderOrProductOrVariant) - filtert de inhoud die door de kiezer moet worden gerenderd tijdens het navigeren in de productstructuur. folderOrProduct - rendert mappen en producten. folderOrProductOrVariant - geeft omslagen, product en productvarianten terug. Als een product of productvariant wordt weergegeven, wordt deze ook selecteerbaar in de kiezer. (standaard = folderOrProduct)
+- selectionId (id, uid, sku, slug, gecombineerdeSlug, gecombineerdeSku) - laat u het productkenmerk kiezen dat door de kiezer moet worden geretourneerd (gebrek = id). Het gebruiken van sku keert de sku van het geselecteerde product terug, terwijl het gebruiken van compiledSku en keert een koord als base#variant met de skus van het basisproduct en de geselecteerde variant, of één enkele sku terug als een basisproduct wordt geselecteerd.
+- filter (folderOrProduct, folderOrProductOrVariant) - filtert de inhoud die door de kiezer moet worden gerenderd tijdens het navigeren in de productstructuur. folderOrProduct - rendert mappen en producten. folderOrProductOrVariant - geeft omslagen, product, en productvarianten terug. Als een product of productvariant wordt weergegeven, wordt deze ook selecteerbaar in de kiezer. (standaard = folderOrProduct)
 - meerdere (true, false) - de selectie van een of meerdere producten inschakelen (standaard = false)
 - emptyText - om de lege tekstwaarde van het plukkerveld te vormen
 
-Ook standaardeigenschappen voor diagramvelden, zoals `name`, `fieldLabel`, of `fieldDescription` worden ook ondersteund.
+Ook standaarddialoogveldeigenschappen, zoals `name`, `fieldLabel`, of `fieldDescription`, worden ook ondersteund.
 
 >[!CAUTION]
 >
 >De `cifproductfield` component vereist de `cif.shell.picker` clientlib. Als u een clientlib aan een dialoogvenster wilt toevoegen, kunt u de eigenschap extraClientlibs gebruiken.
 >[!CAUTION]
 >
->Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. We raden u aan het gebruik van `sku` of `slug` als product-id. Wij blijven steun verlenen `id` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
+>Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Adobe raadt u aan `sku` of `slug` als product-id. Adobe blijft ondersteuning bieden `id` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
 
 Een volledig werkend voorbeeld van het `cifproductfield` kunt u vinden in het dialoogvenster [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/productteaser/v1/productteaser/_cq_dialog/.content.xml) project. Zie ook [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de AEM Core Components documentatie.
 
@@ -69,16 +69,16 @@ Het volgende fragment kan in een cq:dialog-configuratie worden gebruikt:
 
 Het veld Categoriekiezer ondersteunt de volgende optionele eigenschappen:
 
-- selectionId(id, uid, slug, urlPath, idAndUrlPath) _(afgekeurd)_, uidAndUrlPath _(afgekeurd)_) - hiermee kunt u het categoriekenmerk kiezen dat door de kiezer moet worden geretourneerd (standaard = id).
+- selectionId(id, uid, slug, urlPath, idAndUrlPath) _(afgekeurd)_, uidAndUrlPath _(afgekeurd)_) - Hiermee kunt u het categoriekenmerk kiezen dat door de kiezer moet worden geretourneerd (standaard = id).
 - meerdere (true, false) - de selectie van een of meerdere categorieën inschakelen (standaard = false)
 
-Ook standaardeigenschappen voor diagramvelden, zoals `name`, `fieldLabel`, of `fieldDescription` worden ook ondersteund.
+Ook standaarddialoogveldeigenschappen, zoals `name`, `fieldLabel`, of `fieldDescription` worden ook ondersteund.
 
 >[!CAUTION]
 >
 >Gelijk aan de `cifproductfield` de component `cifcategoryfield` de component vereist ook `cif.shell.picker` clientlib. Als u een clientlib aan een dialoogvenster wilt toevoegen, kunt u de opdracht `extraClientlibs` eigenschap. Zie [Dialoogvensters aanpassen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/customizing.html?lang=en#customizing-dialogs) van de AEM Core Components documentatie.
 >[!CAUTION]
 >
->Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. We raden u aan het gebruik van `uid` of `urlPath` als categorie-id. Wij blijven steun verlenen `id` &amp; `idAndUrlPath` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
+>Vanaf CIF Core Components versie 2.0.0 wordt de ondersteuning voor `id` is verwijderd en vervangen door `uid`. Adobe raadt u aan `uid` of `urlPath` als categorie-id. Adobe blijft ondersteuning bieden `id` &amp; `idAndUrlPath` alleen voor projecten die CIF Core Components versie 1.x gebruiken.
 
 Een volledig werkend voorbeeld van het `cifcategoryfield` kunt u vinden in het dialoogvenster [CIF Core-componenten](https://github.com/adobe/aem-core-cif-components/blob/master/ui.apps/src/main/content/jcr_root/apps/core/cif/components/commerce/featuredcategorylist/v1/featuredcategorylist/_cq_dialog/.content.xml) project.

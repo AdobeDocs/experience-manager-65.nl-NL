@@ -1,17 +1,17 @@
 ---
-title: Een externe SPA bewerken in AEM
-description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een AEM-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van ontwerpen.
+title: Een externe SPA bewerken in Adobe Experience Manager
+description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een Adobe Experience Manager-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van het schrijven.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 90f3fb05581820167ea0dcf50fb23048609af31d
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '2446'
+source-wordcount: '2441'
 ht-degree: 0%
 
 ---
 
-# Een externe SPA bewerken in AEM {#editing-external-spa-within-aem}
+# Een externe SPA bewerken in Adobe Experience Manager {#editing-external-spa-within-aem}
 
-Wanneer u bepaalt welk integratieniveau u tussen uw externe SPA en AEM wilt hebben, moet u vaak in staat zijn om te bewerken en de SPA binnen AEM te bekijken.
+Wanneer u bepaalt welk integratieniveau u wilt hebben tussen uw externe SPA en Adobe Experience Manager (AEM), moet u vaak de SPA binnen AEM kunnen bewerken en bekijken.
 
 ## Overzicht {#overview}
 
@@ -22,18 +22,18 @@ In dit document worden de aanbevolen stappen beschreven voor het uploaden van ee
 De voorwaarden zijn eenvoudig.
 
 * Zorg ervoor dat een instantie van AEM lokaal wordt uitgevoerd.
-* Een basis AEM SPA project maken met [het AEM Project Archetype.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties)
-   * Dit zal de basis vormen van het AEM project dat zal worden bijgewerkt met de externe SPA.
-   * Voor de voorbeelden in dit document gebruiken we het beginpunt van [het WKND-SPA-project.](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor)
+* Een basis AEM SPA project maken met [het AEM Project Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html?#available-properties).
+   * Dit vormt de basis van het AEM project dat zal worden bijgewerkt met de externe SPA.
+   * De voorbeelden in dit document gebruiken het beginpunt van [het WKND-SPA-project](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html#spa-editor).
 * Heb de werkende, externe Reactie SPA die u bij hand wilt integreren.
 
 ## SPA uploaden naar AEM project {#upload-spa-to-aem-project}
 
-Eerst moet u de externe SPA uploaden naar uw AEM project.
+Eerst, moet u de externe SPA aan uw AEM project uploaden.
 
 1. Vervangen `src` in de `/ui.frontend` projectmap met de React-toepassing `src` map.
 1. Eventuele extra afhankelijkheden opnemen in de app `package.json` in de `/ui.frontend/package.json` bestand.
-   * Zorg ervoor dat de SPA SDK-afhankelijkheden [aanbevolen versies.](spa-getting-started-react.md#dependencies)
+   * Zorg ervoor dat de SPA SDK-afhankelijkheden [aanbevolen versies](spa-getting-started-react.md#dependencies).
 1. Alle aanpassingen opnemen in het dialoogvenster `/public` map.
 1. Inclusief inline scripts of stijlen die zijn toegevoegd in het dialoogvenster `/public/index.html` bestand.
 
@@ -49,7 +49,7 @@ Om uit AEM SPA eigenschappen voordeel te halen, zijn er gebiedsdelen op de volge
 * [`@adobe/aem-spa-component-mapping`](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [`@adobe/aem-spa-page-model-manager`](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 
-`@adobe/aem-spa-page-model-manager` verstrekt API voor het initialiseren van een ModelManager en het terugwinnen van het model van de AEM instantie. Dit model kan vervolgens worden gebruikt om AEM componenten te renderen met behulp van API&#39;s van `@adobe/aem-react-editable-components` en `@adobe/aem-spa-component-mapping`.
+De `@adobe/aem-spa-page-model-manager` verstrekt API voor het initialiseren van een ModelManager en het terugwinnen van het model van de AEM instantie. Dit model kan vervolgens worden gebruikt om AEM componenten te renderen met behulp van API&#39;s van `@adobe/aem-react-editable-components` en `@adobe/aem-spa-component-mapping`.
 
 #### Installatie {#installation}
 
@@ -61,19 +61,19 @@ npm install --save @adobe/aem-spa-component-mapping @adobe/aem-spa-page-model-ma
 
 ### ModelManager-initialisatie {#model-manager-initialization}
 
-Voordat de app wordt gerenderd, wordt de [`ModelManager`](spa-blueprint.md#pagemodelmanager) moet worden geïnitialiseerd om de oprichting van de AEM af te handelen `ModelStore`.
+Voordat de app wordt gerenderd, wordt de [`ModelManager`](spa-blueprint.md#pagemodelmanager) moet worden geïnitialiseerd om het maken van de AEM af te handelen `ModelStore`.
 
 Dit moet gebeuren binnen de `src/index.js` van uw toepassing of waar de hoofdmap van de toepassing wordt weergegeven.
 
-Hiervoor kunnen we `initializationAsync` API van de `ModelManager`.
+Gebruik hiervoor `initializationAsync` API van de `ModelManager`.
 
-De volgende schermafbeelding laat zien hoe u initialisatie van de `ModelManager` in een eenvoudige React-toepassing. De enige beperking is dat `initializationAsync` vóór `ReactDOM.render()`.
+De volgende schermafbeelding laat zien hoe u initialisatie van de `ModelManager` in een eenvoudige React-toepassing. De enige beperking is dat `initializationAsync` moet vóór `ReactDOM.render()`.
 
 ![Modelbeheer initialiseren](assets/external-spa-initialize-modelmanager.png)
 
 In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore` wordt gemaakt.
 
-`initializationAsync` kan optioneel een `options` object als parameter:
+De `initializationAsync` kan optioneel een `options` object als parameter:
 
 * `path` - Bij initialisatie wordt het model op het gedefinieerde pad opgehaald en opgeslagen in het dialoogvenster `ModelStore`. Dit kan worden gebruikt om `rootModel` bij initialisatie, indien nodig.
 * `modelClient` - Hiermee kunt u een aangepaste client opgeven die verantwoordelijk is voor het ophalen van het model.
@@ -81,7 +81,7 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
 
 ### AEM authorable Leaf Components {#authorable-leaf-components}
 
-1. Maak/identificeer een AEM component waarvoor een authorable React component zal worden gecreeerd. In dit voorbeeld, gebruiken wij de de tekstcomponent van het WKND-project.
+1. Maak/identificeer een AEM component waarvoor een authorable React component zal worden gecreeerd. In dit voorbeeld gebruikt het WKND-project de tekstcomponent.
 
    ![WKND-tekstcomponent](assets/external-spa-text-component.png)
 
@@ -93,13 +93,13 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
 
    ![config-object maken](assets/external-spa-config-object.png)
 
-   * `resourceType` is verplicht om de component React aan de AEM component in kaart te brengen en het uitgeven toe te laten wanneer het openen in de AEM redacteur.
+   * `resourceType` is verplicht om de component React aan de AEM component in kaart te brengen en het uitgeven toe te laten wanneer het openen in de AEMRedacteur.
 
 1. De wrapperfunctie gebruiken `withMappable`.
 
    ![Gebruiken met Mappable](assets/external-spa-withmappable.png)
 
-   Deze omslagfunctie wijst de React component aan de AEM toe `resourceType` gespecificeerd in config en laat het uitgeven mogelijkheden toe wanneer geopend in de AEM redacteur. Voor standalone componenten, zal het ook de modelinhoud voor de specifieke knoop halen.
+   Deze omslagfunctie wijst de React component aan de AEM toe `resourceType` gespecificeerd in config en laat het uitgeven mogelijkheden toe wanneer geopend in de Redacteur van de AEM. Voor standalone componenten, haalt het ook de modelinhoud voor de specifieke knoop.
 
    >[!NOTE]
    >
@@ -111,7 +111,7 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
 
    ![Eigenschappen van tekstcomponent](assets/external-spa-text-properties.png)
 
-   Deze waarden worden als eigenschappen doorgegeven aan het nieuwe object `AEMText` React-component en kan worden gebruikt om de inhoud te renderen.
+   Deze waarden worden als eigenschappen doorgegeven aan het nieuwe gemaakte `AEMText` React-component en kan worden gebruikt om de inhoud te renderen.
 
    ```javascript
    import React from 'react';
@@ -134,7 +134,7 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
    export const AEMText = withMappable(Text, TextEditConfig);
    ```
 
-   Dit is hoe de component zal verschijnen wanneer de AEM configuraties volledig zijn.
+   Dit is hoe de component verschijnt wanneer de AEM configuraties volledig zijn.
 
    ```javascript
    const Text = ({ cqPath, richText, text }) => {
@@ -147,18 +147,18 @@ In dit voorbeeld wordt `ModelManager` is geïnitialiseerd en is leeg `ModelStore
 
    >[!NOTE]
    >
-   >In dit voorbeeld hebben wij verdere aanpassingen aangebracht aan de teruggegeven component om de bestaande tekstcomponent aan te passen. Dit houdt echter geen verband met het schrijven in AEM.
+   >In dit voorbeeld zijn verdere aanpassingen aangebracht aan de gerenderde component, zodat deze overeenkomen met de bestaande tekstcomponent. Dit houdt echter geen verband met het schrijven in AEM.
 
 #### Authorable Components toevoegen aan de pagina {#add-authorable-component-to-page}
 
-Zodra authorable React componenten worden gecreeerd, kunnen wij hen door de toepassing gebruiken.
+Wanneer de authorable React componenten worden gecreeerd, kunnen zij door de toepassing worden gebruikt.
 
-Neem een voorbeeldpagina waar wij een tekst van het WKND SPA project moeten toevoegen. In dit voorbeeld willen we de tekst &quot;Hello World!&quot; weergeven op `/content/wknd-spa-react/us/en/home.html`.
+Neem een voorbeeldpagina waar de tekst van het WKND SPA project moet worden toegevoegd. In dit voorbeeld wilt u de tekst &quot;Hello World!&quot; weergeven op `/content/wknd-spa-react/us/en/home.html`.
 
 1. Bepaal het pad van het knooppunt dat moet worden weergegeven.
 
-   * `pagePath`: De pagina die het knooppunt bevat, in ons voorbeeld `/content/wknd-spa-react/us/en/home`
-   * `itemPath`: Pad naar het knooppunt binnen de pagina, in ons voorbeeld `root/responsivegrid/text`
+   * `pagePath`: De pagina die het knooppunt bevat, in het voorbeeld `/content/wknd-spa-react/us/en/home`
+   * `itemPath`: Pad naar het knooppunt binnen de pagina, in het voorbeeld `root/responsivegrid/text`
       * Dit bestaat uit de namen van de bevattende items op de pagina.
 
    ![Pad van het knooppunt](assets/external-spa-path.png)
@@ -171,7 +171,7 @@ Neem een voorbeeldpagina waar wij een tekst van het WKND SPA project moeten toev
 
 #### Bewerken van tekstinhoud op AEM controleren {#verify-text-edit}
 
-We kunnen nu de component testen op onze actieve AEM-instantie.
+Test nu de component op de actieve AEM-instantie.
 
 1. Voer de volgende Maven-opdracht uit vanuit de `aem-guides-wknd-spa` directory om het project te bouwen en op te stellen aan AEM.
 
@@ -188,8 +188,8 @@ De `AEMText` -component kan nu worden AEM.
 ### AEM Authorable Pages {#aem-authorable-pages}
 
 1. Identificeer een pagina die voor creatie in de SPA moet worden toegevoegd. Dit voorbeeld gebruikt `/content/wknd-spa-react/us/en/home.html`.
-1. Een nieuw bestand maken (bijvoorbeeld `Page.js`) voor de authorable Page Component. Hier kunt u de pagina-component hergebruiken die is opgegeven in `@adobe/cq-react-editable-components`.
-1. Stap vier in de sectie herhalen [AEM authorable leaf components.](#authorable-leaf-components) De wrapperfunctie gebruiken `withMappable` op de component.
+1. Een bestand maken (bijvoorbeeld `Page.js`) voor de authorable Page Component. Hier kunt u de paginacomponent opnieuw gebruiken die is opgenomen in `@adobe/cq-react-editable-components`.
+1. Stap vier in de sectie herhalen [AEM authorable bladcomponenten](#authorable-leaf-components). De wrapperfunctie gebruiken `withMappable` op de component.
 1. Zoals eerder is gebeurd, is het van toepassing `MapTo` aan de AEM middeltypes voor alle kindcomponenten binnen de pagina.
 
    ```javascript
@@ -203,13 +203,13 @@ De `AEMText` -component kan nu worden AEM.
 
    >[!NOTE]
    >
-   >In dit voorbeeld gebruiken we de tekstcomponent React zonder omloop in plaats van de omloop `AEMText` eerder gemaakt. Wanneer de component deel uitmaakt van een pagina/container en niet zelfstandig is, zorgt de container ervoor dat de component recursief in kaart wordt gebracht en dat ontwerpmogelijkheden worden ingeschakeld en dat de extra omloop niet nodig is voor elk onderliggend element.
+   >In dit voorbeeld wordt de tekstcomponent React zonder omloop gebruikt in plaats van de omloop `AEMText` eerder gemaakt. Wanneer de component deel uitmaakt van een pagina/container en niet zelfstandig is, zorgt de container ervoor dat de component recursief in kaart wordt gebracht en dat ontwerpmogelijkheden worden ingeschakeld en dat de extra omloop niet nodig is voor elk onderliggend element.
 
-1. Voer dezelfde stappen uit in de sectie om een pagina die u kunt schrijven, aan de SPA toe te voegen [Voeg authorable Componenten aan de Pagina toe.](#add-authorable-component-to-page) Hier kunnen we de `itemPath` eigenschap.
+1. Voer dezelfde stappen uit in de sectie om een pagina die u kunt schrijven, aan de SPA toe te voegen [Authorable Components toevoegen aan de pagina](#add-authorable-component-to-page). Hier kunnen we de `itemPath` eigenschap.
 
 #### Pagina-inhoud controleren op AEM {#verify-page-content}
 
-Volg dezelfde stappen in de sectie om te controleren of de pagina kan worden bewerkt [Verifieer het uitgeven van de Inhoud van de Tekst op AEM.](#verify-text-edit)
+Volg dezelfde stappen in de sectie om te controleren of de pagina kan worden bewerkt [Bewerken van tekstinhoud op AEM controleren](#verify-text-edit).
 
 ![Een pagina bewerken in AEM](assets/external-spa-edit-page.png)
 
@@ -237,7 +237,7 @@ De `TestPage` ziet er als volgt uit na het toevoegen van de virtuele component.
 >
 >Zorg ervoor dat de `AEMText` component heeft `resourceType` in de configuratie instellen om deze functie in te schakelen.
 
-U kunt de wijzigingen nu implementeren in AEM volgende stappen in de sectie [Verifieer het uitgeven van de Inhoud van de Tekst op AEM.](#verify-text-edit) Er wordt een tijdelijke aanduiding weergegeven voor de momenteel niet bestaande `text_20` knooppunt.
+U kunt de wijzigingen nu implementeren in AEM volgende stappen in de sectie [Bewerken van tekstinhoud op AEM controleren](#verify-text-edit). Er wordt een tijdelijke aanduiding weergegeven voor de momenteel niet bestaande `text_20` knooppunt.
 
 ![The text_20 node in name](assets/external-spa-text20-aem.png)
 
@@ -247,13 +247,13 @@ Wanneer de auteur van de inhoud deze component bijwerkt, wordt een nieuwe `text_
 
 #### Eisen en beperkingen {#limitations}
 
-Er zijn een aantal vereisten om virtuele bladcomponenten en enkele beperkingen toe te voegen.
+Er zijn verschillende vereisten om virtuele bladcomponenten toe te voegen en enkele beperkingen.
 
 * De `pagePath` eigenschap is verplicht voor het maken van een virtuele component.
 * Het paginaknooppunt dat is opgegeven op het pad in `pagePath` moet in het AEM-project bestaan.
 * De naam van het knooppunt dat moet worden gemaakt, moet worden opgegeven in het dialoogvenster `itemPath`.
 * De component kan op elk niveau worden gemaakt.
-   * Als wij een `itemPath='text_20'` in het vorige voorbeeld wordt het nieuwe knooppunt direct onder de pagina gemaakt, dus `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
+   * Als wij een `itemPath='text_20'` in het vorige voorbeeld wordt het nieuwe knooppunt direct onder de pagina gemaakt, namelijk `/content/wknd-spa-react/us/en/home/jcr:content/text_20`
 * Het pad naar het knooppunt waar een nieuw knooppunt wordt gemaakt, moet geldig zijn als het wordt opgegeven via `itemPath`.
    * In dit voorbeeld: `root/responsivegrid` moet bestaan zodat de nieuwe knoop `text_20` kan daar worden gecreëerd.
 * Alleen het maken van bladcomponenten wordt ondersteund. Virtuele container en pagina worden in toekomstige versies ondersteund.
@@ -286,7 +286,7 @@ Meer componenten en inhoud kunnen nu aan de container worden toegevoegd zoals de
 
 #### Eisen en beperkingen {#container-limitations}
 
-Er zijn een aantal vereisten om virtuele containers en enkele beperkingen toe te voegen.
+Er zijn verschillende vereisten om virtuele containers toe te voegen en enkele beperkingen.
 
 * Het beleid om te bepalen welke componenten kunnen worden toegevoegd zal van de oudercontainer worden geërft.
 * Het directe bovenliggende element van de container die moet worden gemaakt, moet al in AEM bestaan.
@@ -324,7 +324,7 @@ Stel dat we een SPA hebben waarin de toepassing wordt gerenderd in een `div` van
 
 ### Het uitgeven van React SPA met het Verpletteren {#editing-react-spa-with-routing}
 
-Als de externe SPA toepassing Reageren meerdere pagina&#39;s heeft, [het kan het verpletteren gebruiken om de pagina/component te bepalen om terug te geven.](spa-routing.md) Het basisgebruiksgeval moet momenteel - actieve URL met de weg aanpassen die voor een route wordt verstrekt. Om het uitgeven op zulk toe te laten verpletterend toegelaten toepassingen, de weg aan te passen tegen moet worden getransformeerd om AEM-specifieke info aan te passen.
+Als de externe SPA toepassing Reageren meerdere pagina&#39;s heeft, [het kan het verpletteren gebruiken om de pagina/component te bepalen om terug te geven](spa-routing.md). Het basisgebruiksgeval moet momenteel - actieve URL met de weg aanpassen die voor een route wordt verstrekt. Om het uitgeven op zulk toe te laten verpletterend toegelaten toepassingen, de weg aan te passen tegen moet worden getransformeerd om AEM-specifieke info aan te passen.
 
 In het volgende voorbeeld hebben we een eenvoudige React-toepassing met twee pagina&#39;s. De pagina die moet worden teruggegeven wordt bepaald door de weg aan de router tegen actieve URL wordt verstrekt aan te passen. Bijvoorbeeld als we aan zijn `mydomain.com/test`, `TestPage` wordt weergegeven.
 
@@ -351,9 +351,8 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
       * De weg die voor het verpletteren wordt vereist
       * De oorsprong-URL van de AEM instantie waar de SPA wordt bewerkt
       * De projectwortel op AEM zoals bepaald in eerste stap
+
    * Deze waarden kunnen worden ingesteld als omgevingsvariabelen voor meer flexibiliteit.
-
-
 
 1. Verifieer het uitgeven van de pagina in AEM.
 
@@ -361,7 +360,7 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 
 ## Kaderbeperkingen {#framework-limitations}
 
-De component RemotePage verwacht dat de implementatie activa-manifest zoals levert [hier gevonden.](https://github.com/shellscape/webpack-manifest-plugin) De component RemotePage, echter, is slechts getest om met het React kader (en Next.js via ver-pagina-volgende component) te werken, en daarom steunt ver het laden van toepassingen van andere kaders, zoals Angular niet.
+De component RemotePage verwacht dat de implementatie activa-manifest zoals levert [hier gevonden](https://github.com/shellscape/webpack-manifest-plugin). De component RemotePage, echter, is slechts getest om met het React kader (en Next.js via ver-pagina-volgende component) te werken, en daarom steunt ver het laden van toepassingen van andere kaders, zoals Angular niet.
 
 ## Aanvullende bronnen {#additional-resources}
 

@@ -1,24 +1,24 @@
 ---
-title: Verificatie voor externe AEM GraphQL-query's op inhoudsfragmenten
-description: Begrijp de authentificatie die voor de vragen van de Verre AEM GraphQL wordt vereist om uw inhoud zonder kop te beveiligen.
+title: Verificatie voor externe Adobe Experience Manager GraphQL-query's op inhoudsfragmenten
+description: Begrijp de vereiste verificatie voor externe Adobe Experience Manager GraphQL-query's om de levering van inhoud zonder kop te beveiligen.
 feature: Content Fragments,GraphQL API
 exl-id: 167f3318-7bc7-48fc-aaa9-73da43433f2f
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: e068cee192c0837f1473802143e0793674d400e8
 workflow-type: tm+mt
-source-wordcount: '111'
+source-wordcount: '110'
 ht-degree: 0%
 
 ---
 
-# Verificatie voor externe AEM GraphQL-query&#39;s op inhoudsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
+# Verificatie voor externe Adobe Experience Manager GraphQL-query&#39;s op inhoudsfragmenten {#authentication-for-remote-aem-graphql-queries-on-content-fragments}
 
 Een hoofdgebruik voor het [Adobe Experience Manager (AEM) GraphQL API voor levering van inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) moet verre vragen van derdetoepassingen of de diensten goedkeuren. Deze externe query&#39;s vereisen mogelijk geverifieerde API-toegang om de levering van inhoud zonder kop te beveiligen.
 
 >[!NOTE]
 >
->Voor testen en ontwikkeling kunt u ook de AEM GraphQL API rechtstreeks openen met de [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface) interface.
+>Voor test- en ontwikkelingsdoeleinden hebt u ook rechtstreeks toegang tot de AEM GraphQL API via de [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#graphiql-interface).
 
-Voor verificatie moet de service van derden verifiëren met de gebruikersnaam en het wachtwoord van de AEM account.
+Voor authentificatie, moet de derdedienst voor authentiek verklaren, gebruikend de AEM rekeningsgebruikersbenaming en het wachtwoord.
 
 <!-- 6.5.10.0 - does this content/page need to be migrated? -->
 

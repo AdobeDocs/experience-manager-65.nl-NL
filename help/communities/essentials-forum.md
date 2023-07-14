@@ -1,18 +1,14 @@
 ---
 title: Essentiële elementen van forum
-seo-title: Forum Essentials
 description: Overzicht van forum
-seo-description: Forum overview
-uuid: 68849582-8742-40be-9e7e-0b574ae38815
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 059c5bbe-07eb-4873-8157-2196df887b27
 exl-id: 622cf6ca-f119-4310-ad14-537576bd6f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -56,22 +52,22 @@ Deze pagina bevat de essentiële informatie voor het werken met de functie Forum
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Forum-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
+* [Forum-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/api/package-summary.html)
 
-* [Eindpunten van forum](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
+* [Eindpunten van forum](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/forum/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Functie van forum {#forum-function}
 
-Een community-sitestructuur die de [Forum, functie](functions.md#forum-function)bevat een configuratie `forum` en instellingen die invloed hebben op de matiging, de codering en de vertaling.
+Een community-sitestructuur die de [Forum, functie](functions.md#forum-function)bevat een configuratie `forum` en instellingen die invloed hebben op de moderatie, codering en vertaling.
 
 ### Toegang tot forumberichten (UGC) {#accessing-forum-posts-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
-Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
+Zie [Door de gebruiker gegenereerde inhoud moderniseren](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Vanaf Adobe Experience Manager 6.1 Gemeenschappen wordt het gebruik van een [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 

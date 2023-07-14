@@ -1,17 +1,13 @@
 ---
 title: Opmerkingen gebruiken
-seo-title: Using Comments
 description: Met de functie Opmerkingen kunnen aangemelde bezoekers hun mening en kennis delen
-seo-description: Comments feature lets signed-in site visitors share their opinions and knowledge
-uuid: 40acd962-846c-483c-b789-aab3a7d2b31b
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 216cfb3e-777e-4773-afba-749debdca000
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
 source-wordcount: '980'
 ht-degree: 0%
@@ -65,43 +61,43 @@ Onder de **Opmerkingen** , geeft u op hoe bezoekers opmerkingen invoeren.
 
 * **Antwoorden toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden reageren op bestaande opmerkingen. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden reageren op bestaande opmerkingen. Standaard is uitgeschakeld.
 
 * **Opmerkingen per pagina**
 
-   Hiermee beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. De standaardwaarde is 10.
+  Hiermee beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. De standaardwaarde is 10.
 
 * **Uploaden van bestanden toestaan**
 
-   Als deze optie is ingeschakeld, wordt de optie voor het uploaden van een bestand weergegeven in het tekstinvoervak. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, wordt de optie voor het uploaden van een bestand weergegeven in het tekstinvoervak. Standaard is uitgeschakeld.
 
 * **Max. bestandsgrootte**
 
-   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Deze waarde beperkt de grootte van het geüploade bestand. Standaardlimiet is 10 MB.
+  Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Deze waarde beperkt de grootte van het geüploade bestand. Standaardlimiet is 10 MB.
 
 * **Max. berichtlengte**
 
-   Maximumaantal tekens dat in het tekstvak kan worden ingevoerd. De standaardwaarde is 4096 tekens.
+  Maximumaantal tekens dat in het tekstvak kan worden ingevoerd. De standaardwaarde is 4096 tekens.
 
 * **Toegestane bestandstypen**
 
-   Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het puntscheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+  Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het puntscheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
 * **RTF-editor**
 
-   Als deze optie is ingeschakeld, worden opmerkingen ingevoerd met een markering. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, worden opmerkingen ingevoerd met een markering. Standaard is uitgeschakeld.
 
 * **Stemmen toestaan**
 
-   Als deze optie is ingeschakeld, wordt de optie om omhoog of omlaag te stemmen weergegeven met het tekstinvoervak. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, wordt de optie om omhoog of omlaag te stemmen weergegeven met het tekstinvoervak. Standaard is uitgeschakeld.
 
 * **Volgen toestaan**
 
-   Als deze optie is ingeschakeld, kunnen leden opmerkingen volgen. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden opmerkingen volgen. Standaard is uitgeschakeld.
 
 * **Badges weergeven**
 
-   Als deze optie is ingeschakeld, kunnen verdiende en toegekende badges worden weergegeven. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen verdiende en toegekende badges worden weergegeven. Standaard is uitgeschakeld.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
@@ -109,39 +105,39 @@ Onder de **Moderatie gebruiker** , geeft u op hoe de geposte opmerkingen worden 
 
 * **Pre-moderatie**
 
-   Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. Standaard is uitgeschakeld.
 
 * **Opmerkingen verwijderen**
 
-   Als deze optie is ingeschakeld, kan het lid dat de opmerking heeft geplaatst deze verwijderen. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kan het lid dat de opmerking heeft geplaatst deze verwijderen. Standaard is uitgeschakeld.
 
 * **Opmerkingen weigeren**
 
-   Indien gecontroleerd, sta moderators toe om commentaren te ontkennen. Standaard is uitgeschakeld.
+  Indien gecontroleerd, sta moderators toe om commentaren te ontkennen. Standaard is uitgeschakeld.
 
 * **Opmerkingen sluiten/opnieuw openen**
 
-   Als deze optie ingeschakeld is, kan de moderator opmerkingen sluiten en opnieuw openen. Standaard is uitgeschakeld.
+  Als deze optie ingeschakeld is, kan de moderator opmerkingen sluiten en opnieuw openen. Standaard is uitgeschakeld.
 
 * **Opmerkingen markeren**
 
-   Als deze optie is ingeschakeld, kunnen leden opmerkingen als onjuist markeren. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden opmerkingen als onjuist markeren. Standaard is uitgeschakeld.
 
 * **Lijst met redenen voor vlag**
 
-   Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst de reden kiezen waarom een opmerking als onjuist wordt gemarkeerd. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst de reden kiezen waarom een opmerking als onjuist wordt gemarkeerd. Standaard is uitgeschakeld.
 
 * **Reden voor aangepaste vlag**
 
-   Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een opmerking als ongeschikt te markeren. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een opmerking als ongeschikt te markeren. Standaard is uitgeschakeld.
 
 * **Moderniseringsdrempel**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd door de leden voordat de moderatoren op de hoogte worden gesteld. De standaardwaarde is één keer (1).
+  Voer het aantal keren in dat een opmerking moet worden gemarkeerd door de leden voordat de moderatoren op de hoogte worden gesteld. De standaardwaarde is één keer (1).
 
 * **Limiet voor markering**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **Moderniseringsdrempel**. De standaardwaarde is 5.
+  Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **Moderniseringsdrempel**. De standaardwaarde is 5.
 
 #### Tabblad Instellingen sorteren {#sort-settings-tab}
 
@@ -149,11 +145,11 @@ Onder de **Instellingen sorteren** , geeft u op hoe de geposte opmerkingen worde
 
 * **Veld sorteren**
 
-   Omlaag trekken om een van de volgende opties te selecteren `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`.
+  Omlaag trekken om een van de volgende opties te selecteren `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`.
 
 * **Sorteervolgorde**
 
-   Omlaag trekken om een van de volgende opties te selecteren `Ascending` of `Descending`.
+  Omlaag trekken om een van de volgende opties te selecteren `Ascending` of `Descending`.
 
 ### Wijzigen in type aangepaste opmerking {#changing-to-a-custom-comment-type}
 
@@ -167,19 +163,19 @@ Onder de **Brontypen** tab, specificeer het custom resourceType voor nieuwe inst
 
 * **Type bron van opmerking**
 
-   Navigeer naar het resourceType van uitgebreid `comment` component (enkele opmerking) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
+  Navigeer naar het resourceType van uitgebreid `comment` component (enkele opmerking) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
 
-   Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
+  Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
 * **Type stembron**
 
-   Navigeer naar het resourceType van uitgebreid `voting` in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
+  Navigeer naar het resourceType van uitgebreid `voting` in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
 
-   Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
+  Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
 
 * **Brontype voor opmerkingensysteem**
 
-   Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](/help/communities/scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [{{include}} helper](/help/communities/handlebars-helpers.md#include).
+  Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](/help/communities/scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [{{include}} helper](/help/communities/handlebars-helpers.md#include).
 
 ### Ervaring met sitebezoekers {#site-visitor-experience}
 

@@ -1,25 +1,21 @@
 ---
 title: Community Components Guide
-seo-title: Community Components Guide
 description: Een interactief ontwikkelingsinstrument om aan de slag te gaan met het raamwerk voor sociale componenten (SCF)
-seo-description: An interactive development tool to get started with the social component framework (SCF)
-uuid: 120e56d1-b93c-4f92-bab4-6bb5e40e0ddf
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 exl-id: 12c0eae5-fd76-4480-a012-25d3312f3570
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '1184'
+source-wordcount: '1178'
 ht-degree: 0%
 
 ---
 
 # Community Components Guide  {#community-components-guide}
 
-De Community Components Guide is een interactief ontwikkelingsinstrument voor de [Sociaal-componentkader (SCF)](scf.md). Het biedt een lijst met beschikbare AEM Communities-componenten of de complexere functies van meerdere componenten.
+De Community Components Guide is een interactief ontwikkelingsinstrument voor de [Sociaal-componentkader (SCF)](scf.md). Het verstrekt een lijst van beschikbare componenten van de Gemeenschappen van Adobe Experience Manager (AEM) of de complexere eigenschappen die van veelvoudige componenten worden gebouwd.
 
 Samen met basisinformatie voor elke component, staat de gids voor het experimenteren met toe hoe de componenten SCF/de eigenschappen werken en hoe zij kunnen worden gevormd of worden aangepast.
 
@@ -27,28 +23,28 @@ Voor informatie over de essentiële ontwikkelingsaspecten van elke component, zi
 
 ## Aan de slag {#getting-started}
 
-De handleiding is bedoeld voor gebruik in ontwikkelinstallaties van de auteur (localhost:4502) en publiceer instanties (localhost:4503).
+De handleiding is bedoeld voor gebruik in ontwikkelinstallaties van instanties van de auteur (localhost:4502) en voor het publiceren van instanties (localhost:4503).
 
 De site Community Components is toegankelijk door naar
 
 * [https://&lt;server>:&lt;port>/content/community-components/en.html](http://localhost:4502/content/community-components/en.html)
 
-De wisselwerking met de communautaire componenten is afhankelijk van:
+De interactie met de communautaire componenten is afhankelijk van:
 
 * De server (auteur of publicatie).
 * Of de bezoeker van de site al dan niet is aangemeld.
 * Indien aangemeld, de aan het lid toegewezen rechten.
-* Al dan niet de standaard SRP [JSRP](jsrp.md), is in gebruik.
+* Of de standaard SRP [JSRP](jsrp.md), is in gebruik.
 
 Als de auteur de bewerkingsmodus wil activeren, voegt u een van de volgende twee in `editor.html` of `cf#` als het eerste padsegment na de servernaam:
 
 * Standaardinterface:
 
-   [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
 * Klassieke interface:
 
-   [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
+  [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
 >[!NOTE]
 >
@@ -86,7 +82,7 @@ De hoofdtekst van de hulplijn wordt weergegeven:
    * Indien inbegrepen, wordt weergegeven tekst: &quot;Deze component wordt dynamisch opgenomen.&quot;
    * Indien niet inbegrepen, dan wordt geen tekst getoond
 
-1. Voorbeeldcomponent of -functie: een actieve instantie van de component of eigenschap. Als een component, kan het met veranderingen worden veranderd die in de malplaatjes, CSS en gegevens worden aangebracht die in de lusjesectie worden verstrekt.
+1. Voorbeeldcomponent of -functie: een actieve instantie van de component of eigenschap. Als een component, kan het met veranderingen worden veranderd die in de malplaatjes, CSS, en gegevens worden aangebracht die in de lusjesectie worden verstrekt.
 
 >[!NOTE]
 >
@@ -96,7 +92,7 @@ De hoofdtekst van de hulplijn wordt weergegeven:
 
 Wanneer u de handleiding gebruikt voor een instantie van de auteur, kunt u het configureren van een component ervaren door het dialoogvenster te openen. Informatie voor ontwikkelaars is te vinden in het [Grondbeginselen van componenten en functies](essentials.md) in de documentatie, terwijl de dialoogvensterinstellingen worden beschreven in [Community-componenten](author-communities.md) voor auteurs.
 
-Voor de Community Components-handleiding worden bepaalde dialoogvensterinstellingen van componenten overschreven door de [Inclusief](scf.md#add-or-include-a-communities-component) schakelstatus. Als u wilt schakelen tussen het gebruik van de bestaande bron of een dynamisch opgenomen bron, selecteert u in de bewerkingsmodus zowel de component als de insluitende tekst en dubbelklikt u om het dialoogvenster Bewerken te openen:
+Voor de Community Components-handleiding worden bepaalde instellingen in het dialoogvenster Component geplaatst met de [Inclusief](scf.md#add-or-include-a-communities-component) schakelstatus. Als u wilt schakelen tussen het gebruik van de bestaande bron of een dynamisch opgenomen bron, selecteert u in de bewerkingsmodus zowel de component als de insluitende tekst en dubbelklikt u om het dialoogvenster Bewerken te openen:
 
 ![community-component3](assets/community-component3.png)
 
@@ -106,15 +102,15 @@ Onder de **Sjablonen** tab:
 
 * **Inclusief de onderliggende component met sling:include**
 
-   Als deze optie niet is ingeschakeld, gebruikt de Component Guide de bestaande bron in de repository (een jcr-knooppunt dat een onderliggend knooppunt is van een par-knooppunt).
+  Als deze optie niet is ingeschakeld, gebruikt de Component Guide de bestaande bron in de repository (een jcr-knooppunt dat een onderliggend knooppunt is van een par-knooppunt).
 
    * weergegeven tekst is: &quot;Deze component is opgenomen via het pari-knooppunt.&quot;
 
-   Indien gecontroleerd, zal de Gids van de Component sling gebruiken om dynamisch een component van het resourceType van de kindknoop (niet-bestaande middel) te omvatten.
+  Indien gecontroleerd, gebruikt de Gids van de Component sling om dynamisch een component van het resourceType van de kindknoop (niet-bestaande middel) te omvatten.
 
    * weergegeven tekst is: &quot;Deze component wordt dynamisch opgenomen.&quot;
 
-   De optie Standaard is uitgeschakeld.
+  De optie Standaard is uitgeschakeld.
 
 ### Interacties publiceren {#publish-interactions}
 
@@ -126,19 +122,19 @@ Wanneer u de handleiding gebruikt op een publicatie-instantie, kunt u de compone
 
 ## Client-Side bibliotheken {#client-side-libraries}
 
-De client-side bibliotheken (clientlibs) die voor elke component worden vermeld, zijn de *vereist* waarnaar moet worden verwezen wanneer de component op een pagina wordt geplaatst. De clientlibs bieden een manier om het downloaden van Javascript en CSS die worden gebruikt om de component in de browser te renderen, te beheren en te optimaliseren.
+De client-side bibliotheken (clientlibs) die voor elke component worden vermeld, zijn de *vereist* waarnaar moet worden verwezen wanneer de component op een pagina wordt geplaatst. De clientlibs bieden een manier om het downloaden van JavaScript en CSS die worden gebruikt om de component in de browser te renderen, te beheren en te optimaliseren.
 
 Ga voor meer informatie naar [Clientlibs voor Community-componenten](clientlibs.md).
 
 ## Imitatie {#impersonation}
 
-Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van **[!UICONTROL Impersonate]** om in de gebruikersnaam te typen of om een keuze te maken in de keuzelijst en vervolgens op de knop te klikken. Klik op Vorige versie om af te melden en de imitatie te beëindigen.
+Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van **[!UICONTROL Impersonate]** om in de gebruikersnaam te typen of een keuze te maken in de keuzelijst en vervolgens op de knop te klikken. Klik op Vorige versie om u af te melden en de imitatie te beëindigen.
 
 De publicatie-instantie hoeft zich niet voor te doen. U gebruikt gewoon de koppeling Aanmelden/Afmelden om verschillende gebruikers na te bootsen, zoals de [demo-gebruikers](tutorials.md#demo-users).
 
 ## Aanpassing {#customization}
 
-Wanneer toegelaten, is elke component SCF beschikbaar voor prototyping van mogelijke aanpassingen door het malplaatje van de component, CSS en gegevens tijdelijk te wijzigen.
+Wanneer toegelaten, is elke component SCF beschikbaar voor prototyping van mogelijke aanpassingen door het malplaatje van de component, CSS, en gegevens tijdelijk te wijzigen.
 
 ### Aanpassing inschakelen {#enabling-customization}
 

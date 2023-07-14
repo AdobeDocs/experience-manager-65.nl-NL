@@ -1,25 +1,21 @@
 ---
 title: Essentiële elementen van gebruikersgroepen
-seo-title: Community Group Essentials
 description: Communitysites dynamisch maken
-seo-description: Creating community sites dynamically
-uuid: 168e7aeb-6e9a-468d-8ac4-274007cea252
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 4f85cd3c-5158-4f23-abe2-7e375fd0c8d4
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
 workflow-type: tm+mt
-source-wordcount: '418'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
 
 # Essentiële elementen van gebruikersgroepen  {#community-group-essentials}
 
-De eigenschap van communautaire groepen is de capaciteit voor een subcommunity dynamisch om binnen een communautaire plaats door erkende gebruikers van de publicatie en auteursmilieu&#39;s worden gecreeerd.
+De eigenschap van communautaire groepen is de capaciteit voor een subcommunity om dynamisch binnen een communautaire plaats door erkende gebruikers van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
 Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack)kunnen groepen worden genest binnen andere groepen
 
@@ -79,17 +75,17 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack)k
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Community Group API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
+* [Community Group API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/api/package-summary.html)
 
-* [Eindpunten van groepen Gemeenschap](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
+* [Eindpunten van groepen Gemeenschap](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/group/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
 ### Functie Groepen {#groups-function}
 
-Een community-sitestructuur die een [Groepen, functie](functions.md#groups-function) zal de oprichting van nieuwe `community groups` vanuit de publicatie- en auteursomgevingen. De ingestelde community-groep omvat een `community groups member list` die een lijst met de leden van de groep zal weergeven.
+Een community-sitestructuur die een [Groepen, functie](functions.md#groups-function) ondersteunt de oprichting van nieuwe `community groups` vanuit de publicatie- en auteursomgevingen. De gemaakte community-groep bevat een `community groups member list` die de leden van de groep opsomt.
 
-Een of meer [communitygroepsjablonen](tools-groups.md), die het ontwerp van de pagina(&#39;s) van de communautaire groep bieden, kan worden geconfigureerd voor de functie Groepen wanneer de functie wordt toegevoegd aan een [sjabloon voor community-site](sites.md) of genest binnen een groepssjabloon van een gemeenschap.
+Een of meer [communitygroepsjablonen](tools-groups.md), die het ontwerp van de pagina&#39;s van de communautaire groep verstrekken, kan voor de functie van Groepen worden gevormd wanneer de functie aan een [sjabloon voor community-site](sites.md) of genest binnen een groepssjabloon van een gemeenschap.
 
 Het opnemen van veelvoudige communautaire groepsmalplaatjes resulteert in een keus van ontwerp dat aan de erkende gebruiker op het tijdstip wordt voorgesteld een nieuwe communautaire groep voor de communautaire plaats wordt gecreeerd, zoals aangetoond in de sectie over [communautaire groepen](creating-groups.md) voor auteurs.
 
@@ -103,7 +99,7 @@ Wanneer een communautaire plaats of groepsmalplaatje de functie van Groepen omva
 
 * Maak een groep in de publicatieomgeving wanneer deze is geconfigureerd om deze toe te staan.
 
-Wanneer u een groep maakt in de ontwerpomgeving, moet u eerst de communitysite publiceren en vervolgens de groep publiceren. Het publiceren van de communautaire plaats zal de pagina&#39;s van de groep publiceren, zonder de subcommunity&#39;s lidgroepen tot stand te brengen waaraan ACLs wordt geplaatst. Een beperkte (geheime) groep kan dus zichtbaar zijn totdat de groep expliciet wordt gepubliceerd.
+Wanneer u een groep maakt in de ontwerpomgeving, moet u eerst de communitysite publiceren en vervolgens de groep publiceren. Het publiceren van de communautaire plaats publiceert de pagina&#39;s van de groep, zonder de de lidgroepen van subcommunity te creëren waaraan ACLs wordt geplaatst. Een beperkte (geheime) groep kan dus zichtbaar zijn totdat de groep expliciet wordt gepubliceerd.
 
 ## Koppelingen en verwante informatie {#links-and-related-information}
 

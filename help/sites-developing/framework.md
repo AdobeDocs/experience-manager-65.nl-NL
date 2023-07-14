@@ -8,27 +8,37 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1642'
 ht-degree: 0%
 
 ---
 
+
 # Kader voor tags AEM {#aem-tagging-framework}
 
-U kunt als volgt de inhoud labelen en de AEM Tags toevoegen-infrastructuur gebruiken:
+Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden geclassificeerd door een naamruimte en een taxonomie. Voor gedetailleerde informatie over het gebruik van tags:
 
-* De tag moet bestaan als een knooppunt van het type ` [cq:Tag](#tags-cq-tag-node-type)` onder de [taxonomie root node](#taxonomy-root-node)
+* Zie het document [Tags gebruiken](/help/sites-authoring/tags.md) voor informatie over het labelen van inhoud als auteur van inhoud.
+* Zie het document [Tags beheren](/help/sites-administering/tags.md) voor het standpunt van een beheerder over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 
-* NodeType van het gelabelde inhoudsknooppunt moet het volgende bevatten: [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixen
-* De [TagID](#tagid) wordt toegevoegd aan de inhoud van het knooppunt [`cq:tags`](#tagged-content-cq-tags-property) eigenschap en wordt omgezet in een knooppunt van het type ` [cq:Tag](#tags-cq-tag-node-type)`
+Dit artikel richt zich op het onderliggende kader dat het etiketteren in AEM steunt en hoe te om het als ontwikkelaar te gebruiken.
+
+## Inleiding {#introduction}
+
+U kunt als volgt inhoud labelen en de infrastructuur voor AEM tags gebruiken:
+
+* De tag moet bestaan als een knooppunt van het type `[cq:Tag](#tags-cq-tag-node-type)` onder de [taxonomie root node.](#taxonomy-root-node)
+
+* Het knooppunt voor gecodeerde inhoud `NodeType` moet de [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mixin.
+* De [`TagID`](#tagid) wordt toegevoegd aan de inhoud van het knooppunt [`cq:tags`](#tagged-content-cq-tags-property) eigenschap en wordt omgezet in een knooppunt van het type ` [cq:Tag](#tags-cq-tag-node-type)`.
 
 ## Tags: cq:Type tagknooppunt  {#tags-cq-tag-node-type}
 
-De declaratie van een tag wordt vastgelegd in de repository in een knooppunt van het type `cq:Tag.`
+De declaratie van een tag wordt vastgelegd in de repository in een knooppunt van het type `cq:Tag`.
 
-Een label kan een eenvoudig woord zijn (bijvoorbeeld een hemel) of een hiërarchische taxonomie (bijvoorbeeld fruit/appel, wat zowel de algemene vrucht als de specifiekere appel betekent).
+Een tag kan een eenvoudig woord zijn (bijvoorbeeld `sky`) of een hiërarchische taxonomie vertegenwoordigen (bijvoorbeeld `fruit/apple`, wat zowel generieke `fruit` en meer specifiek `apple`).
 
 Tags worden geïdentificeerd door een unieke TagID.
 
@@ -38,120 +48,72 @@ Met het coderingsframework kunt u auteurs en sitebezoekers ook beperken tot het 
 
 ### Tagkenmerken {#tag-characteristics}
 
-* knooppunttype is `cq:Tag`
-* de knooppuntnaam is een component van ` [TagID](#tagid)`
-* de ` [TagID](#tagid)` bevat altijd een [namespace](#tag-namespace)
+* Node type is `cq:Tag`n
+* Node name is een component van [TagID](#tagid).
+* De [TagID](#tagid) bevat altijd een [naamruimte.](#tag-namespace)
+* De `jcr:title` eigenschap (de titel die in de UI moet worden weergegeven) is optioneel.
+* De `jcr:description` eigenschap is optioneel.
+* Als onderliggende knooppunten worden opgenomen, wordt de tag aangeduid als een [containertag.](#container-tags)
+* De tag wordt in de repository opgeslagen onder een basispad dat het basispad heet [taxonomie root node.](#taxonomy-root-node)
 
-* optioneel `jcr:title` eigenschap (de titel die moet worden weergegeven in de UI)
-
-* optioneel `jcr:description` eigenschap
-
-* als onderliggende knooppunten worden opgenomen, wordt [containertag](#container-tags)
-* wordt opgeslagen in de repository onder een basispad dat het [taxonomie root node](#taxonomy-root-node)
+Aangezien tags alleen JCR-knooppunten zijn, moeten de knooppuntnamen zich uiteraard houden aan de [JCR-naamgevingsconventie.](naming-conventions.md)
 
 ### TagID {#tagid}
 
 Een TagID identificeert een pad dat wordt omgezet naar een tagknooppunt in de repository.
 
-De tagID is doorgaans een steno-tagID die begint met de naamruimte, of het kan een absolute tagID zijn die begint op het tabblad [taxonomie root node](#taxonomy-root-node).
+De tagID is doorgaans een steno-tagID die begint met de naamruimte, of het kan een absolute tagID zijn die begint op het tabblad [taxonomie root node.](#taxonomy-root-node)
 
-Als inhoud is gelabeld en nog niet bestaat, wordt het ` [cq:tags](#tagged-content-cq-tags-property)` eigenschap wordt toegevoegd aan het inhoudsknooppunt en de TagID wordt toegevoegd aan de arraywaarde van de eigenschap String.
+Als inhoud is gelabeld en nog niet bestaat, wordt het `[cq:tags](#tagged-content-cq-tags-property)` eigenschap wordt toegevoegd aan het inhoudsknooppunt en de TagID wordt toegevoegd aan de eigenschap `String` arraywaarde.
 
-De tagID bestaat uit een [namespace](#tag-namespace) gevolgd door de lokale TagID. [Containerlabels](#container-tags) beschikken over subtags die een hiërarchische volgorde in de taxonomie aangeven. Subtags kunnen worden gebruikt om naar labels te verwijzen op dezelfde manier als elke lokale TagID. Zo is het bijvoorbeeld toegestaan om inhoud met &quot;vruchten&quot; te labelen, zelfs als het gaat om een containertag met subcodes, zoals &quot;fruit/appel&quot; en &quot;fruit/banaan&quot;.
+De tagID bestaat uit een [namespace](#tag-namespace) gevolgd door de lokale TagID. [Containerlabels](#container-tags) beschikken over subtags die een hiërarchische volgorde in de taxonomie aangeven. Subtags kunnen worden gebruikt om naar labels te verwijzen op dezelfde manier als elke lokale TagID. Inhoud bijvoorbeeld labelen met `fruit` is toegestaan, zelfs als het een containertag met subtags is, zoals `fruit/apple` en `fruit/banana`.
 
 ### Taxonomy Root Node {#taxonomy-root-node}
 
-Het basisknooppunt van de taxonomie is het basispad voor alle tags in de gegevensopslagruimte. Het knooppunt van de taxonomiwortel moet *niet* zijn een knooppunt van het type `  cq   :Tag`.
+Het basisknooppunt van de taxonomie is het basispad voor alle tags in de gegevensopslagruimte. Het taxonomiwortelknooppunt mag geen knooppunt van het type zijn `cq:Tag`.
 
-In AEM is het basispad `/content/  cq   :tags` en de hoofdnode is van het type `  cq   :Folder`.
+In AEM is het basispad `/content/cq:tags` en de hoofdnode is van het type `cq:Folder`.
 
 ### Tagnaamruimte {#tag-namespace}
 
-Met naamruimten kunt u items groeperen. Het meest gangbare geval bij gebruik is een naamruimte per (web)site (bijvoorbeeld public, internal en portal) of per grotere toepassing (bijvoorbeeld WCM, Assets, Communities), maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (dat wil zeggen tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
+Met naamruimten kunt u items groeperen. Het meest gangbare geval van gebruik is een naamruimte per site (bijv. publiek, intern en portaal) of per grotere toepassing (bijv. WCM, Middelen, Communities). Maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (d.w.z. tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
 
-De naamruimte van de tag is het eerste niveau in de taxonomy-substructuur. Dit is het knooppunt direct onder de [taxonomie root node](#taxonomy-root-node). Een naamruimte is een knooppunt van het type `cq:Tag` waarvan de ouder geen `cq:Tag`knooppunttype.
+De naamruimte van de tag is het eerste niveau in de taxonomy-substructuur. Dit is het knooppunt direct onder de [taxonomie root node](#taxonomy-root-node). Een naamruimte is een knooppunt van het type `cq:Tag` waarvan de ouder geen `cq:Tag` knooppunttype.
 
-Alle tags hebben een naamruimte. Als er geen naamruimte is opgegeven, wordt de tag toegewezen aan de standaardnaamruimte, namelijk TagID `default` (Titel is `Standard Tags),`dat `/content/cq:tags/default.`
+Alle tags hebben een naamruimte. Als er geen naamruimte is opgegeven, wordt de tag toegewezen aan de standaardnaamruimte, namelijk TagID `default` met de titel `Standard Tags`, d.w.z. `/content/cq:tags/default`.
 
 ### Containerlabels {#container-tags}
 
 Een containertag is een knooppunt van het type `cq:Tag` met een willekeurig aantal onderliggende knooppunten en een willekeurig type onderliggende knooppunten, waardoor het tagmodel kan worden verbeterd met aangepaste metagegevens.
 
-Bovendien fungeren containercodes (of super-tags) in een taxonomie als de subsummatie van alle subtags. Zo wordt bijvoorbeeld inhoud die met vruchten/appelen is getagd, ook als getagd met fruit beschouwd. Met andere woorden, als u naar inhoud zoekt die is gelabeld met fruit, vindt u ook de inhoud die is gelabeld met fruit/appel.
+Bovendien dienen containertags (of supertags) in een taxonomie als de subsumptie van alle subtags. Inhoud die bijvoorbeeld is gelabeld met `fruit/apple` wordt beschouwd als getagd met `fruit` ook. Met andere woorden, zoeken naar inhoud waaraan labels zijn toegevoegd `fruit` zou ook de inhoud vinden waaraan `fruit/apple`.
 
 ### TagID&#39;s oplossen {#resolving-tagids}
 
-Als de tag-id een dubbele punt &quot;:&quot; bevat, scheidt de dubbele punt de naamruimte van de tag of subtaxonomie, die vervolgens worden gescheiden met de normale slashes &quot;/&quot;. Als de tag-id geen dubbele punt heeft, wordt de standaardnaamruimte geïmpliceerd.
+Als de tagID een dubbele punt bevat (`:`), scheidt de dubbele punt de naamruimte van de tag of subtaxonomie, die verder wordt gescheiden met schuine strepen (`/`). Als de tagID geen dubbele punt heeft, wordt de standaardnaamruimte geïmpliceerd.
 
-De standaard en enige locatie van tags is onder /content/cq:tags.
+De standaardlocatie en de enige locatie voor tags is lager dan `/content/cq:tags`.
 
-Code die verwijst naar niet-bestaande paden of paden die niet naar een cq:Tag-knooppunt verwijzen, wordt als ongeldig beschouwd en wordt genegeerd.
-
-In de volgende tabel ziet u een aantal voorbeeld-ID&#39;s, de bijbehorende elementen en de manier waarop de TagID wordt omgezet in een absoluut pad in de opslagplaats:
+Label dat verwijst naar niet-bestaande paden of paden die niet verwijzen naar een `cq:Tag` knooppunt wordt als ongeldig beschouwd en wordt genegeerd.
 
 In de volgende tabel ziet u een aantal voorbeeld-ID&#39;s, de bijbehorende elementen en de manier waarop de TagID wordt omgezet in een absoluut pad in de opslagplaats:
 
-<table>
- <tbody>
-  <tr>
-   <td><strong>TagID<br /> </strong></td>
-   <td><strong>Naamruimte</strong></td>
-   <td><strong>Lokale id</strong></td>
-   <td><strong>Containerlabels</strong></td>
-   <td><strong>Tag Leaf</strong></td>
-   <td><strong>Bewaarplaats<br /> Absoluut tagpad</strong></td>
-  </tr>
-  <tr>
-   <td>dam:fruit/appel/braeburn</td>
-   <td>dam</td>
-   <td>fruit/appel/braeburn</td>
-   <td>vruchten, appel</td>
-   <td>braedoorn</td>
-   <td>/content/cq:tags/dam/fruit/appel/braeburn</td>
-  </tr>
-  <tr>
-   <td>kleur/rood</td>
-   <td>default</td>
-   <td>kleur/rood</td>
-   <td>kleur</td>
-   <td>rood</td>
-   <td>/content/cq:tags/default/color/red</td>
-  </tr>
-  <tr>
-   <td>lucht</td>
-   <td>default</td>
-   <td>lucht</td>
-   <td>(geen)</td>
-   <td>lucht</td>
-   <td>/content/cq:tags/default/sky</td>
-  </tr>
-  <tr>
-   <td>dam:</td>
-   <td>dam</td>
-   <td>(geen)</td>
-   <td>(geen)</td>
-   <td>(geen, de naamruimte)</td>
-   <td>/content/cq:tags/dam</td>
-  </tr>
-  <tr>
-   <td>/content/cq:tags/category/car</td>
-   <td>categorie</td>
-   <td>auto</td>
-   <td>auto</td>
-   <td>auto</td>
-   <td>/content/cq:tags/category/car</td>
-  </tr>
- </tbody>
-</table>
+| TagID | Naamruimte | Lokale id | Containerlabels | Label blad | Absoluut tagpad opslagplaats |
+|---|---|---|---|---|---|
+| `dam:fruit/apple/braeburn` | `dam` | `fruit/apple/braeburn` | `fruit`, `apple` | `braeburn` | `/content/cq:tags/dam/fruit/apple/braeburn` |
+| `color/red` | `default` | `color/red` | `color` | `red` | `/content/cq:tags/default/color/red` |
+| `sky` | `default` | `sky` | Geen | `sky` | `/content/cq:tags/default/sky` |
+| `dam:` | `dam` | Geen | Geen | Geen, de naamruimte | `/content/cq:tags/dam` |
+| `/content/cq:tags/category/car` | `category` | `car` | `car` | `car` | `/content/cq:tags/category/car` |
 
 ### Localisatie van tagtitel {#localization-of-tag-title}
 
-Wanneer de tag de optionele titeltekenreeks bevat ( `jcr:title`) het is mogelijk de titel voor weergave te lokaliseren door de eigenschap toe te voegen `jcr:title.<locale>`.
+Wanneer de tag de optionele titeltekenreeks bevat ( `jcr:title`), is het mogelijk de titel voor weergave te lokaliseren door de eigenschap toe te voegen `jcr:title.<locale>`.
 
-Zie voor meer informatie
+Raadpleeg de volgende documenten voor meer informatie:
 
-* [Tags in verschillende talen](/help/sites-developing/building.md#tags-in-different-languages) - waarin het gebruik van de API&#39;s wordt beschreven
-* [Tags beheren in verschillende talen](/help/sites-administering/tags.md#managing-tags-in-different-languages) - die het gebruik van de Tagingconsole beschrijft
+* [Tags in verschillende talen](/help/sites-developing/building.md#tags-in-different-languages), waarin het gebruik van de API&#39;s wordt beschreven
+* [Tags beheren in verschillende talen](/help/sites-administering/tags.md#managing-tags-in-different-languages), waarin het gebruik van de coderingsconsole wordt beschreven
 
 ### Toegangsbeheer {#access-control}
 
@@ -162,9 +124,8 @@ Door het weigeren van leesmachtigingen voor bepaalde tags of naamruimten, wordt 
 Een gebruikelijke praktijk omvat:
 
 * De `tag-administrators` groep/rol schrijven toegang tot alle namespaces (toevoegen/wijzigen onder `/content/cq:tags`). Deze groep wordt geleverd met AEM out-of-the-box.
-
 * Gebruikers/auteurs toegang verlenen tot alle naamruimten die voor hen (meestal alle) leesbaar moeten zijn.
-* Gebruikers/auteurs toegang toestaan tot naamruimten waar tags vrij kunnen worden gedefinieerd door gebruikers/auteurs (add_node onder `/content/cq:tags/some_namespace`)
+* Gebruikers/auteurs toegang toestaan tot naamruimten waar tags vrij kunnen worden gedefinieerd door gebruikers/auteurs (voeg een knooppunt toe onder `/content/cq:tags/some_namespace`)
 
 ## Tagable Content: cq:Tagable Mixin {#taggable-content-cq-taggable-mixin}
 
@@ -174,16 +135,15 @@ De `cq:OwnerTaggable` mixin, dat overerft van `cq:Taggable`, is bedoeld om aan t
 
 >[!NOTE]
 >
->Het wordt aanbevolen alleen tags in te schakelen op het knooppunt op het hoogste niveau van een samengevoegd inhoudsitem (of op het knooppunt jcr:content). Voorbeelden zijn:
+>Het wordt aanbevolen alleen labels in te schakelen op het knooppunt op het hoogste niveau van een samengevoegd inhoudsitem (of op het bijbehorende item `jcr:content` knooppunt). Voorbeelden zijn:
 >
->* pagina&#39;s ( `cq:Page`) waarbij de `jcr:content`node is type `cq:PageContent` die de `cq:Taggable` mixin.
->
->* activa ( `cq:Asset`) waarbij de `jcr:content/metadata` node heeft altijd de `cq:Taggable` mixin.
+>* Pagina&#39;s (`cq:Page`) waarbij de `jcr:content`node is type `cq:PageContent` die de `cq:Taggable` mixen
+>* Activa ( `cq:Asset`) waarbij de `jcr:content/metadata` node heeft altijd de `cq:Taggable` mixen
 >
 
 ### Node Type Notation (CND) {#node-type-notation-cnd}
 
-Node Type definities bestaan in de bewaarplaats als Cnd- dossiers. De CND-notatie wordt gedefinieerd als onderdeel van de JCR-documentatie [hier](https://jackrabbit.apache.org/jcr/node-type-notation.html).
+In de gegevensopslagruimte bestaan definities van knooppunttypen als CND-bestanden. De CND-notatie wordt gedefinieerd als onderdeel van de JCR-documentatie [hier](https://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 De belangrijkste definities voor de in AEM opgenomen knooppunttypen zijn:
 
@@ -204,7 +164,7 @@ De belangrijkste definities voor de in AEM opgenomen knooppunttypen zijn:
 
 ## Gelabelde inhoud: cq:eigenschap tags {#tagged-content-cq-tags-property}
 
-De `cq:tags` eigenschap is een array String die wordt gebruikt om een of meer tagID&#39;s op te slaan wanneer deze door auteurs of sitebezoekers op inhoud worden toegepast. De eigenschap heeft alleen betekenis wanneer deze wordt toegevoegd aan een knooppunt dat is gedefinieerd met het `[cq:Taggable](#taggable-content-cq-taggable-mixin)` mixin.
+De `cq:tags` eigenschap is een `String` array die wordt gebruikt om een of meer tag-id&#39;s op te slaan wanneer deze door auteurs of bezoekers van de site op inhoud worden toegepast. De eigenschap heeft alleen betekenis wanneer deze wordt toegevoegd aan een knooppunt dat is gedefinieerd met het `[cq:Taggable](#taggable-content-cq-taggable-mixin)` mixin.
 
 >[!NOTE]
 >
@@ -212,24 +172,27 @@ De `cq:tags` eigenschap is een array String die wordt gebruikt om een of meer ta
 
 ## Labels verplaatsen en samenvoegen {#moving-and-merging-tags}
 
-Hieronder volgt een beschrijving van de effecten in de repository wanneer u tags verplaatst of samenvoegt met behulp van de [Tagingconsole](/help/sites-administering/tags.md):
+Hieronder volgt een beschrijving van de effecten in de repository wanneer u tags verplaatst of samenvoegt met behulp van de [tagconsole](/help/sites-administering/tags.md):
 
 * Wanneer een tag A wordt verplaatst of samengevoegd met tag B onder `/content/cq:tags`:
 
-   * tag A wordt niet verwijderd en krijgt een `cq:movedTo` eigenschap.
-   * tag B wordt gemaakt (als er een verplaatsing heeft plaatsgevonden) en krijgt een `cq:backlinks` eigenschap.
+   * Label A wordt niet verwijderd en krijgt een `cq:movedTo` eigenschap.
+   * Label B wordt gemaakt (als er een verplaatsing heeft plaatsgevonden) en krijgt een `cq:backlinks` eigenschap.
 
-* `cq:movedTo` verwijst naar label B. Deze eigenschap betekent dat tag A is verplaatst of samengevoegd met tag B. Als u tag B verplaatst, wordt deze eigenschap dienovereenkomstig bijgewerkt. Tag A is dus verborgen en wordt alleen in de opslagplaats bewaard om tag-id&#39;s op te lossen in inhoudsknooppunten die verwijzen naar tag A. De opschoonfunctie voor ongewenste details verwijdert tags zoals tag A, als er geen inhoudsknooppunten meer naar wijzen.
-Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`: wordt toegepast wanneer de tag wordt verwijderd, maar niet kan worden verwijderd uit de repository omdat er subtags zijn met een `cq:movedTo` dat moet worden bewaard.
+* `cq:movedTo` verwijst naar label B.
+
+   * Deze eigenschap betekent dat tag A is verplaatst of samengevoegd met tag B. Als u tag B verplaatst, wordt deze eigenschap dienovereenkomstig bijgewerkt. Tag A is dus verborgen en wordt alleen in de opslagplaats bewaard om tag-id&#39;s op te lossen in inhoudsknooppunten die verwijzen naar tag A. De opschoonfunctie voor ongewenste details verwijdert tags zoals tag A, als er geen inhoudsknooppunten meer naar wijzen.
+
+   * Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`. De tag wordt toegepast wanneer de tag wordt verwijderd, maar kan niet uit de repository worden verwijderd omdat er subtags zijn met een `cq:movedTo` dat moet worden bewaard.
 
   >[!NOTE]
   >
   >De `cq:movedTo` De eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
   >
-  >1. De tag wordt gebruikt in inhoud (dit betekent dat deze een referentie heeft) OR
+  >1. De tag wordt gebruikt in inhoud (wat betekent dat deze een referentie heeft) of
   >1. De tag bevat onderliggende elementen die al zijn verplaatst.
 
-* `cq:backlinks` houdt de verwijzingen in de andere richting. Dit betekent dat er een lijst wordt bijgehouden met alle tags die zijn verplaatst naar of samengevoegd met tag B. Dit is meestal vereist om te behouden `cq:movedTo`eigenschappen zijn up-to-date wanneer tag B wordt verplaatst/samengevoegd/verwijderd of wanneer tag B wordt geactiveerd; in dat geval moeten ook alle tags met de achtergrond worden geactiveerd.
+* `cq:backlinks` houdt de verwijzingen in de andere richting. Dit betekent dat er een lijst wordt bijgehouden met alle tags die zijn verplaatst naar of samengevoegd met tag B. Dit is meestal vereist om te behouden `cq:movedTo` eigenschappen zijn up-to-date wanneer tag B wordt verplaatst/samengevoegd/verwijderd of wanneer tag B wordt geactiveerd; in dat geval moeten ook alle tags met de achtergrond worden geactiveerd.
 
   >[!NOTE]
   >
@@ -238,106 +201,26 @@ Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`: wordt toegepas
   >1. De tag wordt gebruikt in inhoud (dit betekent dat deze een referentie heeft) OR
   >1. De tag bevat onderliggende elementen die al zijn verplaatst.
 
-* Een `cq:tags` De eigenschap van een inhoudsknooppunt omvat het volgende oplossen:
+* Een `cq:tags` Voor eigenschap van een inhoudsknooppunt wordt de volgende resolutie gebruikt:
 
    1. Als er geen overeenkomst onder `/content/cq:tags`, er wordt geen tag geretourneerd.
+
    1. Als de tag een `cq:movedTo` eigenschap ingesteld, wordt de tag-id waarnaar wordt verwezen gevolgd.
-Deze stap wordt herhaald zolang de volgende tag een `cq:movedTo` eigenschap.
+
+      * Deze stap wordt herhaald zolang de volgende tag een `cq:movedTo` eigenschap.
 
    1. Als de volgende tag geen `cq:movedTo` eigenschap, wordt de tag gelezen.
 
-* Als u de wijziging wilt publiceren wanneer een tag is verplaatst of samengevoegd, gaat u naar `cq:Tag` knooppunt en alle achtergronden ervan moeten worden gerepliceerd: dit wordt automatisch gedaan wanneer de markering in de console van het markeringsbeleid wordt geactiveerd.
+* Als u de wijziging wilt publiceren wanneer een tag is verplaatst of samengevoegd, gaat u naar `cq:Tag` node en al zijn backlinks moeten worden gerepliceerd. Dit wordt automatisch gedaan wanneer de markering in de console van het markeringsbeleid wordt geactiveerd.
 
-* Later wordt de pagina bijgewerkt met `cq:tags` wijzigt de eigenschap automatisch de &quot;oude&quot; verwijzingen. Dit wordt geactiveerd omdat het omzetten van een verplaatste tag via de API de doeltag retourneert, waardoor de doeltag-id wordt opgegeven.
+* Later wordt de pagina bijgewerkt met `cq:tags` wijzigt de eigenschap automatisch de oude verwijzingen. Dit wordt geactiveerd omdat het omzetten van een verplaatste tag via de API de doeltag retourneert, waardoor de doeltag-id wordt opgegeven.
 
 >[!NOTE]
 >
 >Het verplaatsen van tags verschilt van het migreren van tags.
 
-## Tags migreren {#tags-migration}
+## Tagmigratie {#tags-migration}
 
-Experience Manager 6.4 en volgende tags worden opgeslagen onder `/content/cq:tags`, die eerder onder `/etc/tags`. In scenario&#39;s waarin Adobe Experience Manager vanaf de vorige versie is geüpgraded, zijn de tags echter nog steeds aanwezig onder de oude locatie `/etc/tags`. In geüpgraded systemen moeten codes worden gemigreerd onder `/content/cq:tags`.
+Sinds Adobe Experience Manager 6.4 worden tags opgeslagen onder `/content/cq:tags` overwegende dat eerdere versies labels hebben opgeslagen onder `/etc/tags`.
 
->[!NOTE]
->
->In Pagina-eigenschappen van de tagpagina wordt aangeraden de tag-id (`geometrixx-outdoors:activity/biking`) in plaats van de harde code het basispad van de tag (bijvoorbeeld `/etc/tags/geometrixx-outdoors/activity/biking`).
->
->Als u labels wilt weergeven, `com.day.cq.tagging.servlets.TagListServlet` kan worden gebruikt.
-
->[!NOTE]
->
->Het wordt aangeraden de API voor tagbeheer als bron te gebruiken.
-
-### Als de bijgewerkte AEM-instantie de API van TagManager ondersteunt {#upgraded-instance-support-tagmanager-api}
-
-1. Aan het begin van de component detecteert de API van TagManager of het een geüpgrade AEM-instantie is. In een geüpgraded systeem worden codes opgeslagen onder `/etc/tags`.
-
-1. De API van TagManager wordt dan uitgevoerd in achterwaartse verenigbaarheidswijze, wat betekent API gebruikt `/etc/tags` als het basispad. Zo niet, dan wordt een nieuwe locatie gebruikt `/content/cq:tags`.
-
-1. Werk de taglocatie bij.
-
-1. Nadat u tags naar de nieuwe locatie hebt gemigreerd, voert u het volgende script uit:
-
-```java
-import org.apache.sling.api.resource.*
-import javax.jcr.*
-
-ResourceResolverFactory resourceResolverFactory = osgi.getService(ResourceResolverFactory.class);
-ResourceResolver resolver = resourceResolverFactory.getAdministrativeResourceResolver(null);
-Session session = resolver.adaptTo(Session.class);
-
-def queryManager = session.workspace.queryManager;
-def statement = "/jcr:root/content/cq:tags//element(*, cq:Tag)[jcr:contains(@cq:movedTo,\'/etc/tags\') or jcr:contains(@cq:backlinks,\'/etc/tags\')]";
-def query = queryManager.createQuery(statement, "xpath");
-
-println "query = ${query.statement}\n";
-
-def tags = query.execute().getNodes();
-
-
-tags.each { node ->
-  def tagPath = node.path;
-  println "tag = ${tagPath}";
-
-  if(node.hasProperty("cq:movedTo") && node.getProperty("cq:movedTo").getValue().toString().startsWith("/etc/tags"))
-    {
-     def movedTo = node.getProperty("cq:movedTo").getValue().toString();
-
-     println "cq:movedTo = ${movedTo} \n";
-
-     movedTo = movedTo.replace("/etc/tags","/content/cq:tags");
-     node.setProperty("cq:movedTo",movedTo);
-     } else if(node.hasProperty("cq:backlinks")){
-
-     String[] backLinks = node.getProperty("cq:backlinks").getValues();
-     int count = 0;
-
-     backLinks.each { value ->
-             if(value.startsWith("/etc/tags")){
-                     println "cq:backlinks = ${value}\n";
-                     backLinks[count] = value.replace("/etc/tags","/content/cq:tags");
-    }
-             count++;
-     }
-
-    node.setProperty("cq:backlinks",backLinks);
-  }
-}
-session.save();
-
-println "---------------------------------Success-------------------------------------"
-```
-
-Het script haalt alle tags op die `/etc/tags` in de waarde van `cq:movedTo/cq:backLinks` eigenschap. Het herhaalt dan door de opgehaalde resultaatreeks en lost op `cq:movedTo` en `cq:backlinks` eigenschapswaarden naar `/content/cq:tags` paden (wanneer `/etc/tags` wordt gedetecteerd in de waarde).
-
-### Als de geüpgrade AEM instantie wordt uitgevoerd op de klassieke UI {#upgraded-instance-runs-classic-ui}
-
->[!NOTE]
->
->Klassieke UI is niet nul onderbreking volgzaam en steunt geen nieuw weg van de markeringsbasis. Als u klassieke UI wilt gebruiken, dan `/etc/tags` moet worden gemaakt, gevolgd door `cq-tagging` opnieuw opstarten.
-
-Als AEM instanties worden bijgewerkt die door de API TagManager worden ondersteund en in de klassieke gebruikersinterface worden uitgevoerd:
-
-1. Eenmaal verwijzingen naar het oude basispad voor tags `/etc/tags` worden vervangen door tagId of nieuwe taglocatie te gebruiken `/content/cq:tags`kunt u tags migreren naar de nieuwe locatie `/content/cq:tags` in CRX gevolgd door opnieuw opstarten van de component.
-
-1. Nadat u tags naar de nieuwe locatie hebt gemigreerd, voert u het bovenstaande script uit.
+Tags moeten worden gemigreerd wanneer u een AEM upgradet vanaf een eerdere versie dan versie 6.4 `/content/cq:tags`. Zie het document [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tags) voor meer informatie .

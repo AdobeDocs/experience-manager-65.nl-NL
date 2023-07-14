@@ -1,17 +1,15 @@
 ---
 title: Werken met paginaversies
 description: Met Versioning maakt u een "momentopname" van een pagina op een bepaald tijdstip.
-uuid: 06e112cd-e4ae-4ee0-882d-7009f53ac85b
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 48936115-4be2-4b0c-81ce-d61e43e4535d
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1362'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -21,7 +19,7 @@ ht-degree: 0%
 Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaald tijdstip. Met versioning kunt u de volgende handelingen uitvoeren:
 
 * Maak een versie van een pagina.
-* Herstel een pagina naar een vorige versie om bijvoorbeeld een wijziging in een pagina ongedaan te maken.
+* Herstel een pagina naar een vorige versie om een wijziging die u bijvoorbeeld in een pagina hebt aangebracht, ongedaan te maken.
 * Vergelijk de huidige versie van een pagina met een vorige versie met verschillen in de gemarkeerde tekst en afbeeldingen.
 
 ## Een nieuwe versie maken {#creating-a-new-version}
@@ -29,7 +27,7 @@ Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaal
 Een nieuwe versie van een pagina maken:
 
 1. Open in uw browser de pagina waarvoor u een nieuwe versie wilt maken.
-1. Selecteer in de Sidetrap de optie **Versioning** en vervolgens de **Versie maken** subtabblad.
+1. Selecteer in de Sidekick de optie **Versioning** en vervolgens de **Versie maken** subtabblad.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -41,7 +39,7 @@ Een nieuwe versie van een pagina maken:
 >
 >Er wordt automatisch een versie gemaakt wanneer de pagina wordt geactiveerd.
 
-## Paginaversie herstellen vanaf Sidetrap {#restoring-a-page-version-from-sidekick}
+## Paginaversie herstellen vanuit Sidekick {#restoring-a-page-version-from-sidekick}
 
 De pagina herstellen naar een vorige versie:
 
@@ -65,7 +63,7 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Selecteer de versie die u wilt herstellen en klik op **Herstellen**. AEM herstelt de versie(s) (of bomen) die u selecteert.
+1. Selecteer de versie die u wilt herstellen en klik op **Herstellen**. AEM herstelt de versies (of bomen) die u selecteert.
 
 ### Een structuur herstellen vanuit de console {#restoring-a-tree-from-the-console}
 
@@ -84,11 +82,11 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 De huidige versie van de pagina vergelijken met een vorige versie:
 
 1. Open in uw browser de pagina die u met een vorige versie wilt vergelijken.
-1. Selecteer in de Sidetrap de optie **Versioning** en vervolgens de **Versie herstellen** n subtabblad.
+1. Selecteer in de Sidekick de optie **Versioning** en vervolgens de **Versie herstellen** n subtabblad.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
-1. Selecteer de versie die u wilt vergelijken en klik op de knop **Diff** knop.
+1. Selecteer de versie die u wilt vergelijken en klik op **Diff** knop.
 1. De verschillen tussen de huidige versie en de geselecteerde versie worden als volgt weergegeven:
 
    * Tekst die is verwijderd, is rood en doorgehaald.
@@ -97,7 +95,7 @@ De huidige versie van de pagina vergelijken met een vorige versie:
 
    ![chlimage_1-75](assets/chlimage_1-75.png)
 
-1. Selecteer in de Sidetrap de optie **Versie herstellen** subtab en klik op de knop **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> om de huidige versie weer te geven.**
+1. Selecteer in de Sidekick de optie **Versie herstellen** subtab en klik op de knop **&lt;&lt;back span=&quot;&quot; id=&quot;3&quot; translate=&quot;no&quot; /> om de huidige versie weer te geven.**
 
 ## Timewarp {#timewarp}
 
@@ -114,7 +112,7 @@ Dit doet u als volgt:
 
 >[!NOTE]
 >
->Als versies uit de dataopslag worden verwijderd, kan Timewarp niet de correcte mening tonen. Als elementen (zoals code, css, afbeeldingen, enz.) voor het renderen van de website zijn gewijzigd, zal de weergave ook verschillen van wat deze oorspronkelijk was, aangezien deze items niet zijn geversileerd in de opslagplaats.
+>Als versies uit de dataopslag worden verwijderd, kan Timewarp niet de correcte mening tonen. Als de elementen (zoals code, css en afbeeldingen) voor het renderen van de website zijn gewijzigd, verschilt de weergave ook van wat oorspronkelijk was, omdat deze items niet in de repository zijn geversileerd.
 
 ### De tijdverdraaiingskalender gebruiken {#using-the-timewarp-calendar}
 
@@ -140,7 +138,7 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
    >[!NOTE]
    >
-   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, doet u dat handmatig met [terugzetten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Klik wanneer u de pagina hebt bekeken:
 
@@ -155,13 +153,13 @@ De tijdlijnversie wordt gebruikt als u een overzicht wilt zien van de publicatie
 
 Als u de tijdlijn van het document wilt weergeven:
 
-1. U kunt de tijdlijn als volgt weergeven:
+1. Voer een van de volgende handelingen uit om de tijdlijn weer te geven:
 
-   1. Open de **Versioning** en klik vervolgens op **Timewarp** (vlakbij de onderkant van het hulpje).
+   1. Open de **Versioning** en klikt u op **Timewarp** (vlakbij de onderkant van het hulpje).
 
    1. Het dialoogvenster sidekick gebruiken dat wordt weergegeven na [gebruiken van de Kalender Timewarp](#using-the-timewarp-calendar).
 
-1. Klikken op **Tijdlijn tonen** - de tijdlijn van het document wordt weergegeven; bijvoorbeeld:
+1. Klikken **Tijdlijn tonen** - de tijdlijn van het document wordt weergegeven; bijvoorbeeld:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -175,7 +173,7 @@ In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt ti
 
 1. Klik op:
 
-   1. **Ga** om de inhoud van de gepubliceerde pagina op het geselecteerde tijdpunt weer te geven.
+   1. **Ga** om de inhoud van de gepubliceerde pagina op het geselecteerde tijdstip weer te geven.
    1. Wanneer u die inhoud weergeeft, gebruikt u **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
 
 ### Beperkingen voor tijdverdraaiing {#timewarp-limitations}
@@ -186,10 +184,10 @@ Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de
 * **Timewaring gebruikt paginaversies** - Als u navigeert naar een pagina die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies beïnvloeden Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp niet de juiste weergave tonen.
 
-* **Timewarp is read-only** - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met [terugzetten](#main-pars-title-1).
+* **Timewarp is read-only** - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, doet u dat handmatig met [terugzetten](#main-pars-title-1).
 
-* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, zal de weergave afwijken van wat oorspronkelijk het geval was, aangezien deze items niet zijn geversieerd in de opslagplaats.
+* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als elementen (zoals code, css en afbeeldingselementen) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat oorspronkelijk was, omdat deze items niet zijn geversieerd in de repository.
 
 >[!CAUTION]
 >
->Timewarp is ontworpen als een hulpmiddel om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.
+>Timewarp is ontworpen om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.

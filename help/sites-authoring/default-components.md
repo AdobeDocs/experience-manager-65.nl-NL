@@ -1,31 +1,29 @@
 ---
 title: Standaardcomponenten
-description: Adobe Experience Manager wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites.
-uuid: 55caeec3-add7-4d05-a620-07e33901adb7
+description: Adobe Experience Manager wordt geleverd met verschillende kant-en-klare componenten die uitgebreide functionaliteit bieden voor auteurs van websites.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
 
 # Onderdelen{#components}
 
-Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Deze zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md) en worden gegroepeerd per hoofdfunctioneel gebied (de zogenaamde componentgroep) om te helpen filteren.
+Adobe Experience Manager (AEM) wordt geleverd met verschillende kant-en-klare componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Deze zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md) en worden gegroepeerd per hoofdfunctioneel gebied (de zogenaamde componentgroep) om te helpen filteren.
 
-De componenten zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md). Om het filtreren te helpen, worden de componenten gegroepeerd door belangrijkste functionele gebied (d.w.z. componentengroep).
+De componenten zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-authoring/editing-content.md). Om het filtreren te helpen, worden de componenten gegroepeerd door belangrijkste functionele gebied (namelijk componentengroep).
 
 >[!NOTE]
 >
 >Deze sectie bespreekt slechts componenten die uit-van-de-doos in een standaard AEM installatie beschikbaar zijn.
 >
->Afhankelijk van uw instantie kunt u aangepaste componenten hebben die uitdrukkelijk voor uw vereisten worden ontwikkeld. Deze kunnen zelfs de zelfde naam hebben zoals sommige componenten die hier worden besproken.
+>Afhankelijk van uw instantie, kunt u aangepaste componenten hebben die uitdrukkelijk voor uw vereisten worden ontwikkeld. Deze kunnen zelfs de zelfde naam hebben zoals sommige componenten die hier worden besproken.
 
 ## Algemeen gebruik {#general-usage}
 
@@ -38,7 +36,7 @@ U kunt een component selecteren en naar de gewenste locatie op de pagina slepen.
 
 * [Inhoud bewerken - Modus Volledig scherm](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Zie het artikel voor meer informatie over het toevoegen van componenten aan een pagina [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md).
+Zie voor meer informatie over het toevoegen van componenten aan een pagina [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md).
 Componenten worden gesorteerd op basis van verschillende categorieën, componentgroepen genaamd. Voorbeelden van dergelijke componentgroepen zijn:
 
 * **Wij.Detailhandel**: Omvat de kerncomponenten proxied voor gebruik met [We.Retail-referentieimplementatie](/help/sites-developing/we-retail.md).
@@ -49,7 +47,7 @@ Componenten worden gesorteerd op basis van verschillende categorieën, component
 
 ## Overzicht van alle componenten {#overview-of-all-components}
 
-De [Componentenconsole](/help/sites-authoring/default-components-console.md) geeft een overzicht van de componentengroepen, en componenten, die door uw AEM installatie worden verstrekt. U kunt belangrijke informatie over de individuele componenten en hun gebruik bekijken.
+De [Componentenconsole](/help/sites-authoring/default-components-console.md) geeft een overzicht van de componentengroepen, en componenten die door uw AEM installatie worden verstrekt. U kunt belangrijke informatie over de individuele componenten en hun gebruik bekijken.
 
 ## Componenten - Belangrijkste gebieden {#components-major-areas}
 

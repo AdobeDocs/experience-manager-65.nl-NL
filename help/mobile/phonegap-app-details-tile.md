@@ -1,18 +1,14 @@
 ---
 title: App-tegel beheren
-seo-title: Manage App Tile
 description: Volg deze pagina om meer te weten te komen over de Manage App Tile op het app dashboard die de mogelijkheid biedt om details over de toepassing te wijzigen.
-seo-description: Follow this page to learn about the Manage App Tile on the app dashboard that provides the ability to modify details about the Application.
-uuid: bde75ecd-8694-427c-9b16-2c4ab2fd4d8b
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1263'
+source-wordcount: '1252'
 ht-degree: 0%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-De **App beheren** De tegel op het dashboard van de App verstrekt de capaciteit om details over de Toepassing te wijzigen. Als u de pagina Details wilt openen, klikt u op de detailkoppeling van de app Beheren. Vanuit de beheerpagina kunt u de configuratie-instellingen (config.xml) van de PhoneGap-toepassing bewerken en uw toepassing voorbereiden voor verzending naar de verschillende opslagruimten van toepassingen.
+De **App beheren** De tegel op het dashboard van de App verstrekt de capaciteit om details over de Toepassing te wijzigen. Als u de pagina Details wilt openen, klikt u op de detailkoppeling van de app beheren. Vanuit de beheerpagina kunt u de configuratie-instellingen (config.xml) van de PhoneGap-toepassing bewerken en uw toepassing voorbereiden voor verzending naar de verschillende opslagruimten van toepassingen.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -50,7 +46,7 @@ Weergegeven Platforms worden aangestuurd door de inhoud PhoneGap config.xml:
 </widget>
 ```
 
-Elke winkel met toepassingen van leveranciers, zoals Apple App Store of Google Play Store, heeft bijvoorbeeld een of meer schermafbeeldingen van uw mobiele toepassing nodig om uw toepassingsgegevens aan klanten weer te geven. Deze schermafbeeldingen kunnen strikte vereisten hebben rond afmetingen en inhoud (in feite moeten ze de toepassing echt vertegenwoordigen). AEM Apps biedt ondersteuning voor het selecteren en beheren van deze schermafbeeldingen voor de ondersteunde platforms en het bekijken van poortafmetingen, zoals vereist door de toepassingsopslag van elke leverancier.
+Elke winkel van leverancierstoepassingen, bijvoorbeeld Apple App Store of Google Play Store, vereist een of meer schermafbeeldingen van uw mobiele toepassing om uw toepassingsdetails aan klanten te tonen. Deze schermafbeeldingen kunnen strikte vereisten hebben rond afmetingen en inhoud (in feite moeten ze de toepassing echt vertegenwoordigen). AEM Apps biedt ondersteuning voor het selecteren en beheren van deze schermafbeeldingen voor de ondersteunde platforms en het bekijken van poortafmetingen, zoals vereist door de toepassingsopslag van elke leverancier.
 
 >[!NOTE]
 >
@@ -78,7 +74,7 @@ In deze sectie definieert u de URL van de Content Update Server, de openingspagi
 
 **PhoneGap-versie** Dit is de versie waarin u uw toepassing wilt compileren met PhoneGap. De beste manier is om de huidige versie bij te houden zodat u de nieuwste en beste functies en oplossingen voor problemen krijgt.
 
-**URL van server voor bijwerken van inhoud** Dit is de URL die uw toepassing gebruikt om te bellen naar ContentSync-updates. Deze moet worden ingesteld op de URL van uw verzender of, als u geen verzender gebruikt, op een van uw publicatie-instanties die worden gebruikt om ContentSync-updates aan uw toepassing te leveren.
+**URL van server voor bijwerken van inhoud** Dit is de URL die uw toepassing gebruikt om te bellen naar ContentSync-updates. Deze moet worden ingesteld op de URL van uw verzender of, als u geen Dispatcher gebruikt, op een van uw publicatie-instanties die wordt gebruikt om ContentSync-updates aan uw toepassing te leveren.
 
 ![chlimage_1-119](assets/chlimage_1-119.png)
 
@@ -112,9 +108,9 @@ De exportfunctionaliteit wordt gebruikt om een handige manier te bieden om de sc
 
 ![chlimage_1-120](assets/chlimage_1-120.png)
 
-#### Metagegevens Android {#android-metadata}
+#### Metagegevens Android™ {#android-metadata}
 
-Wanneer u het Android-platform selecteert, zijn er op dit punt geen aangepaste metagegevens die kunnen worden ingesteld. Wanneer u als ZIP-bestand op de downloadknop klikt, wordt een eigenschappenbestand gegenereerd dat alle metagegevens en de bijbehorende schermafbeeldingen bevat.
+Wanneer u het Android™-platform selecteert, zijn er op dit punt geen aangepaste metagegevens die kunnen worden ingesteld. Wanneer u op de knop Downloaden klikt, wordt een ZIP-bestand gegenereerd met een eigenschappenbestand dat alle metagegevens en de bijbehorende schermafbeeldingen bevat.
 
 De exportfunctionaliteit wordt gebruikt om een handige manier te bieden om de schermafbeeldingen en metagegevens te verzamelen die kunnen worden doorgegeven aan de uitgever van de toepassing voor invoer in de specifieke toepassingsopslag van de leverancier.
 
@@ -124,7 +120,7 @@ De exportfunctionaliteit wordt gebruikt om een handige manier te bieden om de sc
 
 Een van de belangrijkste functies van AEM Apps is de mogelijkheid om een mobiele toepassing nieuwe inhoud te laten aanvragen via ContentSync, waar inhoud kan bestaan uit HTML-bronnen, pagina&#39;s, video, afbeeldingen, tekst en meer. Nadat de inhoud door de auteur is bijgewerkt en vervolgens is gepubliceerd, stelt de server de update van de inhoud beschikbaar zodat de mobiele toepassing deze kan downloaden.
 
-Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te publiceren instantie moet richten; rechtstreeks of via de verzender of CDN. De indeling van de URL is eenvoudig:
+Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te publiceren instantie moet richten; rechtstreeks of via de Dispatcher of CDN. De indeling van de URL is eenvoudig:
 
 `https://[hostname]:[port]`
 
@@ -150,13 +146,13 @@ De **Schermafbeeldingen** worden de ondersteunde schermresoluties op verschillen
 
 ### Het tabblad Verificatie {#the-authentication-tab}
 
-De **Verificatie** kunt u een OAuth-client selecteren die aan uw toepassing moet worden gekoppeld en kan een ontwikkelaar Adobe Experience Manager OAuth-verificatie gebruiken.
+De **Verificatie** kunt u een OAuth-client selecteren die u aan uw toepassing wilt koppelen en een ontwikkelaar in staat stellen Adobe Experience Manager OAuth-verificatie te gebruiken.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
 ### De volgende stappen {#the-next-steps}
 
-Nadat u kennis hebt genomen van het beheren van App Tile in het toepassingsdashboard, raadpleegt u de volgende bronnen voor andere ontwerprollen:
+Zodra u over het Leiden van de Toepassing in het toepassingsdashboard hebt geleerd, zie de volgende middelen voor andere auteursrollen:
 
 * [App-metagegevens bewerken](/help/mobile/phonegap-editmetadata.md)
 * [Toepassingsdefinities](/help/mobile/phonegap-app-definitions.md)

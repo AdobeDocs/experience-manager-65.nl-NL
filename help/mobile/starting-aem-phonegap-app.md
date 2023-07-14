@@ -1,18 +1,14 @@
 ---
 title: AEM PhoneGap starten
-seo-title: Starting AEM PhoneGap
-description: Volg deze pagina voor meer informatie over de starterkit voor ontwikkelaars.
-seo-description: Follow this page to learn about the starterkit for developers.
-uuid: 952bf9f9-5c79-4212-91b7-1d3850ec2402
+description: Meer informatie over de starterkit voor ontwikkelaars.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 2ecf05ed-4e56-4e0b-89cf-5161741f9001
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -21,20 +17,20 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Voor ontwikkelaars is het de beste plek om te beginnen de Adobe Experience Manager Mobile Starterkit in github te bekijken
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-Met de starterkit kunt u snel aan de slag door de basisbeginselen van AEM Mobile-ontwikkeling te doorlopen, te beginnen met het maken en beheren van projecten, het installeren van het benodigde gereedschap, het definiëren van een Maven-archetype, het bouwen, implementeren en vervolgens uw eigen ervaring creëren.
+De starterkit zorgt ervoor dat u snel aan de slag kunt door de basisbeginselen van AEM Mobile-ontwikkeling te doorlopen, te beginnen met het maken en beheren van projecten, het installeren van het benodigde gereedschap, het definiëren van een Maven-archetype, het bouwen, implementeren en vervolgens uw eigen ervaring creëren.
 
-De ontwikkelaars kunnen dit voorbeeld gebruiken als beginpunt voor het uitproberen van een AEM Mobile-toepassing met PhoneGap. Als u de starterkit en de referentietoepassing doorloopt, krijgt u een goed begrip van de basisbeginselen voor het maken van geavanceerde mobiele toepassingen.
+De ontwikkelaars kunnen dit voorbeeld gebruiken als beginpunt voor het uitproberen van een AEM Mobile-toepassing met PhoneGap. Het runnen door starterkit en de verwijzingstoepassing geeft een stevig inzicht in de grondbeginselen om rijke Mobiele Toepassingen tot stand te brengen.
 
 * Gebruik de [AEM PhoneGap Starter-kit](https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit) om apps te maken die geschikt zijn voor de AEM Mobile-catalogus.
 * A [referentie-app](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) met de volledige bron is gemaakt, waarin veel van de nieuwe functies in AEM Mobile worden getoond, of u nu een bestaande app naar AEM Mobile migreert of een nieuwe toepassing start.
-* Alle voorbeelden zijn hier te vinden op github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) en omvat het overvullen van uw project met Maven.
-* De meeste conferentiebesprekingen zullen hefboomwerking hebben [Zelfstudie Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), die u ook kunt vinden in Github en die zich richt op het gebruik van de native uitbreidbaarheid van Apache Cordova.
+* Alle voorbeelden zijn te vinden op github: [https://github.com/Adobe-Marketing-Cloud-Apps](https://github.com/Adobe-Marketing-Cloud-Apps) en omvat het overvullen van uw project met Maven.
+* De meeste conferentiegesprekken gebruiken [Zelfstudie Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink), die u ook in GitHub kunt vinden en op het gebruik van inheemse rekbaarheid van Apache Cordova geconcentreerd is.
 
 >[!NOTE]
 >
@@ -42,7 +38,7 @@ De ontwikkelaars kunnen dit voorbeeld gebruiken als beginpunt voor het uitprober
 
 ## Sjablonen en componenten {#templates-and-components}
 
-AEM *Sjablonen* en *Componenten* de lijn van bedrijfseigenaars toestaan om douaneervaringen tot stand te brengen. Beide *Templates *and *Componenten* zijn beschikbaar uit-van-de-doos of kunnen door u, de ontwikkelaar worden ontwikkeld of door bestaande componenten uit te breiden of (geavanceerd) tot stand te brengen greenfield. *Sjablonen* en *Componenten* Dit is de manier waarop de AEM-auteur items kan slepen en neerzetten om aantrekkelijke en relevante ervaringen te creëren.
+AEM *Sjablonen* en *Componenten* laat lijn-van-bedrijfseigenaars toe om douaneervaringen tot stand te brengen. Beide *Templates *and *Componenten* zijn beschikbaar uit-van-de-doos of kunnen door u, de ontwikkelaar worden ontwikkeld of door bestaande componenten uit te breiden of (geavanceerd) tot stand te brengen greenfield. *Sjablonen* en *Componenten* Dit is de manier waarop de AEM-auteur interessante en relevante ervaringen kan opdoen.
 
 1. [Componenten maken](/help/sites-developing/components.md)
 1. [Sjablonen maken](/help/sites-developing/templates.md)

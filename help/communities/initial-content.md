@@ -1,18 +1,14 @@
 ---
 title: Oorspronkelijke inhoud van sandbox
-seo-title: Initial Sandbox Content
 description: Inhoud maken
-seo-description: Create content
-uuid: 9810fe47-8d1a-4238-9b9c-0cc47c63d97a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '429'
 ht-degree: 2%
 
 ---
@@ -25,13 +21,13 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon]
 
    * SCF Sandbox - De hoofdpagina voor de Engelse versie van de site.
 
-   * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
+   * SCF-afspelen - Onderliggend item van de hoofdpagina waarop wordt afgespeeld.
 
-Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md), wordt het ontworpen zodat de wortelpagina opsporing van de aangewezen taal voor de gebruiker door de kopbal van de HTML kan uitvoeren, en aan de aangewezen belangrijkste pagina voor de taal opnieuw richt. De conventie is de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, &quot;fr&quot; voor Frans, enzovoort.
+Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md), wordt het ontworpen zodat de wortelpagina opsporing van de aangewezen taal voor de gebruiker door de kopbal van de HTML kan uitvoeren, en aan de aangewezen belangrijkste pagina voor de taal opnieuw richt. De conventie is om de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, en &quot;fr&quot; voor Frans.
 
 ## Eerste pagina&#39;s maken {#create-first-pages}
 
-Nu is er een [paginasjabloon](initial-app.md#createthepagetemplate), kunnen wij de wortelpagina van de website in de /content folder vestigen.
+Nu is er een [paginasjabloon](initial-app.md#createthepagetemplate), kunt u de wortelpagina van de website in de /content folder vestigen.
 
 1. De standaard-UI biedt momenteel blauwdrukken voor het maken van sites. Aangezien deze zelfstudie een eenvoudige plaats creeert, is klassieke UI nuttig.
 
@@ -58,14 +54,14 @@ Nu is er een [paginasjabloon](initial-app.md#createthepagetemplate), kunnen wij 
 
    ![classic-ui-create-page](assets/classic-ui-create-page.png)
 
-1. Selecteer in het deelvenster Verkenner de pagina die u zojuist hebt gemaakt. `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**:
+1. Selecteer in het verkenner-venster de pagina die u hebt gemaakt. `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**:
 
    * Titel: `SCF Sandbox`
    * Naam: `en`
    * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
    * Klik op **[!UICONTROL Create]**
 
-1. Selecteer in het deelvenster Verkenner de pagina die u zojuist hebt gemaakt. `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**
+1. Selecteer in het verkenner-venster de pagina die u hebt gemaakt. `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL New]** > **[!UICONTROL New Page]**
 
    * Titel: `SCF Play`
    * Naam: `play`
@@ -86,7 +82,7 @@ Wanneer ` [/etc/designs/an-scf-sandbox](setup-website.md#setupthedesigntreeetcde
 
 * `cq:template="/libs/wcm/core/templates/designpage"`
 
-is gedefinieerd, waardoor u optioneel kunt verwijzen naar ontwerpelementen in een script dat `currentDesign.getPath()`. Bijvoorbeeld
+Is gedefinieerd, wat de optionele mogelijkheid biedt om in een script te verwijzen naar ontwerpelementen met `currentDesign.getPath()`. Bijvoorbeeld
 
 * `% String favIcon = currentDesign.getPath() + "/favicon.ico"; %`
 
@@ -97,14 +93,14 @@ is gedefinieerd, waardoor u optioneel kunt verwijzen naar ontwerpelementen in ee
 
 * Klik op groen `[+] Add`
 
-De oplossing moet er als volgt uitzien:
+De gegevensopslagruimte moet er als volgt uitzien:
 
 ![classic-ui-repository-path](assets/classic-ui-repository-path.png)
 
 * Klik op **[!UICONTROL Save All]**
 
-In het geval van om het even welk probleem dat de configuratie bewaart, re-login en vorm opnieuw.
+Als er om het even welk probleem is die de configuratie opslaan, login opnieuw en vormen opnieuw.
 
 >[!NOTE]
 >
->Het gebruik van `cq:designPath` is optioneel en staat los van de [gebruik van clientlibs](develop-app.md#includeclientlibsintemplate), die hoofdzakelijk worden vereist aangezien de componenten SCF gebruiken [clientlibs](client-customize.md#clientlibs-for-scf) om hun JS en CSS te beheren.
+>Het gebruik van `cq:designPath` is optioneel en staat los van de [gebruik van clientlibs](develop-app.md#includeclientlibsintemplate), die vereist zijn als SCF-componenten worden gebruikt [clientlibs](client-customize.md#clientlibs-for-scf) om hun JS en CSS te beheren.

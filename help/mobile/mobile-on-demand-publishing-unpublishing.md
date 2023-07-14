@@ -1,18 +1,14 @@
 ---
 title: Inhoud publiceren ongedaan maken
-seo-title: Publish UnPublish Content
 description: Wanneer u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, volgt u deze pagina voor meer informatie over het publiceren van uw inhoud. Ook kunt u de publicatie van uw inhoud ongedaan maken.
-seo-description: Once you are familiar with content management actions on articles, banners, and collections, follow this page to learn about how you can publish your content. Also you can unpublish your content.
-uuid: 75179aa8-022c-4876-9664-6dd2b826174c
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 exl-id: 3924bb8f-27cb-4648-8be2-9444e9a58c66
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -21,17 +17,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, kunt u de inhoud publiceren. Ook kunt u de publicatie van uw inhoud ongedaan maken.
 
 >[!NOTE]
 >
->Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in online Help.
+>Ga voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps naar [Ontwerpaspecten voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/aem-mobile-end-of-life-faq.html) in online Help.
 
 ## De inhoud publiceren/verwijderen {#publishing-unpublishing-the-content}
 
-Dit verschilt van een &#39;AEM-publicatie&#39;. Wij duwen geen inhoud aan een AEM publiceren serverinstantie om het openbaar te maken viewable. Hier informeren we Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
+Dit verschilt van een &#39;AEM-publicatie&#39;. U duwt geen inhoud aan een AEM publiceren serverinstantie om het openbaar te maken viewable. Hier geeft u een melding weer over Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
 
 >[!NOTE]
 >
@@ -53,11 +49,9 @@ De algemene workflow voor het publiceren/publiceren van een artikel:
 
 ### De volgende stappen {#the-next-steps}
 
-Zie
+Als u eenmaal hebt geleerd hoe u inhoud maakt en publiceert, raadpleegt u het volgende:
 
 * [AEM voor AEM Mobile On-demand Services ontwikkelen](/help/mobile/aem-mobile-on-demand.md)
 * [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
-Of nog moet over de auteursonderwerpen leren, zie
-
-[AEM voor AEM Mobile On-demand Services-apps maken](/help/mobile/mobile-apps-ondemand.md)
+Of, als u nog meer over de auteursonderwerpen wilt leren, zie [AEM voor AEM Mobile On-demand Services-apps maken](/help/mobile/mobile-apps-ondemand.md).

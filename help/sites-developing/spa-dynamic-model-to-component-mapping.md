@@ -1,16 +1,12 @@
 ---
 title: Dynamisch model naar componenttoewijzing voor SPA
-seo-title: Dynamic Model to Component Mapping for SPAs
-description: In dit artikel wordt beschreven hoe het dynamische model naar componenttoewijzing wordt uitgevoerd in de Javascript SPA SDK voor AEM.
-seo-description: This article describes how the dynamic model to component mapping occurs in the Javascript SPA SDK for AEM.
-uuid: 337b8d90-efd7-442e-9fac-66c33cc26212
+description: Leer hoe het dynamische model aan componentenafbeelding in JavaScript SPA SDK voor Adobe Experience Manager voorkomt.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 0%
@@ -19,11 +15,11 @@ ht-degree: 0%
 
 # Dynamisch model naar componenttoewijzing voor SPA{#dynamic-model-to-component-mapping-for-spas}
 
-In dit document wordt beschreven hoe het dynamische model naar componenttoewijzing wordt uitgevoerd in de Javascript SPA SDK voor AEM.
+In dit document wordt beschreven hoe het dynamische model wordt toegewezen aan componenttoewijzing in de JavaScript SPA SDK voor Adobe Experience Manager (AEM).
 
 >[!NOTE]
 >
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
 ## ComponentMapping-module {#componentmapping-module}
 
@@ -31,13 +27,13 @@ De `ComponentMapping` wordt verstrekt als pakket NPM aan het front-end project. 
 
 Elk onderdeel in het model bevat een `:type` veld dat een AEM-brontype weergeeft. Als de front-end component is gekoppeld, kan deze zichzelf renderen met behulp van het fragment van het model dat is ontvangen van de onderliggende bibliotheken.
 
-Raadpleeg de [SPA](/help/sites-developing/spa-blueprint.md) document voor meer informatie over modelontleding en de front-end componententoegang tot het model.
+Zie [SPA](/help/sites-developing/spa-blueprint.md) voor meer informatie over modelontleding en de front-end componententoegang tot het model.
 
 Zie ook het npm-pakket: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Modelgestuurde toepassing voor één pagina {#model-driven-single-page-application}
 
-Toepassingen met één pagina die gebruikmaken van de Javascript SPA SDK voor AEM, worden modelgestuurd:
+Toepassingen met één pagina die de JavaScript SPA SDK voor AEM gebruiken, zijn op modellen gebaseerd:
 
 1. Voorste-end componenten registreren zich aan [Opslag voor componenttoewijzing](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Vervolgens worden de [Container](/help/sites-developing/spa-blueprint.md#container), zodra het door de [Modelleverancier](/help/sites-developing/spa-blueprint.md#the-model-provider), herhaalt de modelinhoud ( `:items`).
@@ -46,10 +42,10 @@ Toepassingen met één pagina die gebruikmaken van de Javascript SPA SDK voor AE
 
 ## Toepassingsinitialisatie {#app-initialization}
 
-Elke component wordt uitgebreid met de mogelijkheden van [ `ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). Initialisatie heeft derhalve de volgende algemene vorm:
+Elke component wordt uitgebreid met de mogelijkheden van [`ModelProvider`](/help/sites-developing/spa-blueprint.md#the-model-provider). Initialisatie heeft derhalve de volgende algemene vorm:
 
 1. Elke modelleverancier initialiseert zich en luistert naar veranderingen die aan het stuk van model worden aangebracht dat aan zijn binnencomponent beantwoordt.
-1. De [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) moet worden geïnitialiseerd als vertegenwoordigd door de [initialisatiestroom](/help/sites-developing/spa-blueprint.md).
+1. De [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) moet worden geïnitialiseerd als vertegenwoordigd door de [initialisatiestroom](/help/sites-developing/spa-blueprint.md).
 
 1. Nadat het paginamodel is opgeslagen, retourneert de paginamodelbeheerder het volledige model van de app.
 1. Dit model wordt dan overgegaan tot de front-end wortel [Container](/help/sites-developing/spa-blueprint.md#container) van de toepassing.

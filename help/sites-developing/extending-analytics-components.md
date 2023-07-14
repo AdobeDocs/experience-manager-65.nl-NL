@@ -1,16 +1,14 @@
 ---
 title: Adobe Analytics-tracking toevoegen aan componenten
 description: Adobe Analytics-tracking toevoegen aan componenten
-uuid: 447b140c-678c-428d-a1c9-ecbdec75cd42
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1266'
 ht-degree: 0%
 
 ---
@@ -134,7 +132,7 @@ Componenten kunnen communiceren met het Adobe Analytics-framework wanneer de com
 
 * `cq:trackevents`: Identificeert de CQ-gebeurtenissen die de component beschikbaar maakt. (Zie Aangepaste gebeurtenissen.)
 * `cq:trackvars`: De CQ-variabelen die zijn toegewezen aan Adobe Analytics-eigenschappen krijgen een naam.
-* `cq:componentName`: De naam voor de component die in Sidetrap wordt weergegeven.
+* `cq:componentName`: De naam voor de component die in Sidekick wordt weergegeven.
 * `cq:componentGroup`: De groep in Sidekick die de component omvat.
 
 De code in de component JSP voegt het JavaScript toe aan de pagina die het volgen activeert, en bepaalt de gegevens die worden gevolgd. De naam van de gebeurtenis en de gegevensnamen die in het JavaScript worden gebruikt, moeten overeenkomen met de corresponderende waarden van de `analytics` knoopeigenschappen.
@@ -170,13 +168,13 @@ Configureer de bovenste component en bewerk het JSP-bestand om de volgende gebeu
    * Naam: `analytics`
    * Type: `nt:unstructured`
 
-1. Voeg de volgende eigenschap toe aan het analytische knooppunt om de gebeurtenis tracking een naam te geven:
+1. Voeg de volgende eigenschap toe aan het analytische knooppunt zodat u de gebeurtenis tracking een naam kunt geven:
 
    * Naam: cq:trackevents
    * Type: String
    * Waarde: topnavClick
 
-1. Voeg de volgende eigenschap toe aan het knooppunt Analytics om de gegevensvariabelen een naam te geven:
+1. Voeg de volgende eigenschap toe aan het knooppunt Analytics, zodat u de gegevensvariabelen een naam kunt geven:
 
    * Naam: cq:trackvars
    * Type: String
@@ -196,7 +194,7 @@ Configureer de bovenste component en bewerk het JSP-bestand om de volgende gebeu
 
 1. Klik op Alles opslaan.
 1. Open de `topnav.jsp` bestand.
-1. Voeg in het element a het volgende kenmerk toe:
+1. Voeg in het element het volgende kenmerk toe:
 
    ```xml
    onclick = "tracknav('<%= child.getPath() %>.html')"
@@ -362,7 +360,7 @@ De `analytics` knooppunt van de component moet de variabelenamen zichtbaar maken
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-De module eCommerce biedt verschillende componenten die variabele gegevens van s.products genereren. Bijvoorbeeld, de subordercomponent ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genereert JavaScript die vergelijkbaar is met het volgende voorbeeld:
+De module eCommerce biedt verschillende componenten die variabele gegevens van s.products genereren. De `submitorder` component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genereert JavaScript die vergelijkbaar is met het volgende voorbeeld:
 
 ```
 <script type="text/javascript">
@@ -438,6 +436,6 @@ De module eCommerce biedt verschillende componenten die variabele gegevens van s
 
 #### Het beperken van de Grootte van het Volgen Vraag {#limiting-the-size-of-tracking-calls}
 
-Webbrowsers beperken doorgaans de grootte van GET-aanvragen. Omdat CQ-product- en SKU-waarden opslagpaden zijn, kunnen productarrays met meerdere waarden de limiet van de aanvraaggrootte overschrijden. Uw componenten moeten daarom het aantal items in de `product` array van elk `CQ_Analytics.record function`. Maak meerdere functies als het aantal items dat u wilt bijhouden de limiet kan overschrijden.
+Webbrowsers beperken doorgaans de grootte van GET-aanvragen. Omdat CQ-product- en SKU-waarden opslagpaden zijn, kunnen productarrays met meerdere waarden de limiet van de aanvraaggrootte overschrijden. Uw componenten moeten daarom het aantal items in de `product` array van elk `CQ_Analytics.record function`. Maak meerdere functies als het aantal items dat u moet bijhouden de limiet kan overschrijden.
 
-Met de component eCommerce-submitorder wordt bijvoorbeeld het aantal `product` punten in een vraag aan vier. Wanneer de kar meer dan vier producten bevat, produceert het veelvoudige `CQ_Analytics.record` functies.
+Bijvoorbeeld de eCommerce `submitorder` component beperkt het aantal `product` punten in een vraag aan vier. Wanneer de kar meer dan vier producten bevat, produceert het veelvoudige `CQ_Analytics.record` functies.

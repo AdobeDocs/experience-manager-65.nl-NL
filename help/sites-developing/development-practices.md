@@ -1,25 +1,21 @@
 ---
 title: Ontwikkelingspraktijken
-seo-title: Development Practices
-description: Aanbevolen werkwijzen voor het ontwikkelen op AEM
-seo-description: Best practices for developing on AEM
-uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
+description: Aanbevolen procedures voor ontwikkeling op Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
 
 # Ontwikkelingspraktijken{#development-practices}
 
-## Werken volgens een definitie van Gereed {#work-according-to-a-definition-of-done}
+## Werken volgens de definitie van Gereed (DoD) {#work-according-to-a-definition-of-done}
 
 Elk team heeft een andere definitie van wat &quot;gedaan&quot;betekent, maar het is belangrijk om te hebben en ervoor te zorgen dat een verhaal aan de bepaalde criteria alvorens wordt goedgekeurd voldoet.
 
@@ -40,9 +36,9 @@ Dingen als inspringingsniveaus en witruimte lijken misschien niet belangrijk, ma
 
 ### Doel van hoge testdekking  {#aim-for-high-test-coverage}
 
-Naarmate een projectimplementatie groter wordt, zal ook de tijd die nodig is om deze te testen, toenemen. Zonder goede testdekking, zal het testteam niet kunnen schrapen en de ontwikkelaars zullen uiteindelijk begraven in insecten worden.
+Naarmate een projectimplementatie groter wordt, neemt ook de tijd die nodig is om deze te testen toe. Zonder goede testdekking, kan het testteam niet schrapen en de ontwikkelaars uiteindelijk begraven in insecten.
 
-Ontwikkelaars zouden TDD moeten gebruiken en ontbrekende eenheidstests vóór de productiecode schrijven die aan hun vereisten zal voldoen. QA zou een geautomatiseerde reeks goedkeuringstests moeten tot stand brengen om ervoor te zorgen dat het systeem zoals verwacht van een hoog niveau werkt.
+Ontwikkelaars moeten tests op &#39;Test Driven Development&#39; (TDD) uitvoeren, waarbij defecte eenheidstests worden geschreven voordat de productiecode aan hun vereisten voldoet. QA zou een geautomatiseerde reeks goedkeuringstests moeten tot stand brengen om ervoor te zorgen dat het systeem zoals verwacht van een hoog niveau werkt.
 
 Er zijn aangepaste frameworks beschikbaar, zoals Jackalope en Prosper, om het kopiëren van JCR API&#39;s eenvoudiger te maken om de productiviteit van ontwikkelaars te garanderen terwijl ze eenheidstests schrijven.
 
@@ -52,15 +48,15 @@ Het systeem zou aan het eind van elke herhaling voor demo aan de zaken moeten be
 
 ### Een ononderbroken integratieomgeving implementeren en gebruiken {#implement-a-continuous-integration-environment-and-use-it}
 
-Het uitvoeren van een ononderbroken integratiemilieu zal u toestaan om eenheidstests en integratietests gemakkelijk en herhaalbaar in werking te stellen. Het zal ook plaatsingen van het ontwikkelingsteam loskoppelen, die de andere delen van het team om efficiënter en makend voor stabielere en voorspelbaardere plaatsingen toelaat te zijn.
+Door een ononderbroken integratieomgeving te implementeren kunt u eenvoudig en herhaaldelijk eenheidstests en integratietests uitvoeren. Het ontkoppelt ook plaatsingen van het ontwikkelingsteam, dat de andere delen van het team machtigt om efficiënter te zijn en voor stabielere en voorspelbaardere plaatsingen te maken.
 
 ### Houd de ontwikkelingscyclus snel door de buildtijden laag te houden {#keep-the-development-cycle-fast-by-keeping-build-times-low}
 
-Als de eenheidstests lang duren, zullen de ontwikkelaars vermijden lopend hen en zij zullen hun waarde verliezen. Als het lang duurt om de code te bouwen en op te stellen, zullen de mensen dit minder vaak doen. Het maken van korte bouwtijden een prioriteit verzekert dat de tijd wij in onze testdekking en infrastructuur van CI hebben geïnvesteerd het team productiever zal blijven maken.
+Als de eenheidstests lang duren, zullen de ontwikkelaars vermijden lopend hen en zij zullen hun waarde verliezen. Als het lang duurt om de code te bouwen en op te stellen, zullen de mensen dit minder vaak doen. Het maken van korte bouwstijl tijden een prioriteit verzekert dat de tijd die u in testdekking en infrastructuur van CI hebt geïnvesteerd het team productiever blijft maken.
 
-### Sonar en andere statische hulpmiddelen van de codeanalyse nauwkeurig afstemmen en op hun rapporten handelen {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
+### Sonar en andere statische hulpmiddelen van de codeanalyse verfijnen en op hun rapporten handelen {#fine-tune-sonar-and-other-static-code-analysis-tools-and-act-on-their-reports}
 
-De instrumenten van de codeanalyse kunnen waardevol zijn, maar slechts als hun rapporten tot actie van de kant van het ontwikkelingsteam leiden. Zonder de analyse die deze instrumenten opleveren te verfijnen, zullen de aanbevelingen die ze genereren niet relevant zijn en zullen ze hun waarde verliezen.
+De instrumenten van de codeanalyse kunnen waardevol zijn, maar slechts als hun rapporten tot actie van de kant van het ontwikkelingsteam leiden. Zonder de analyse die deze instrumenten opleveren te verfijnen, worden de aanbevelingen die ze genereren irrelevant en verliezen ze hun waarde.
 
 ### Volg de Scout voor de jongen {#follow-the-boy-scout-rule}
 
@@ -68,4 +64,4 @@ De Scouten van de Jongen hebben een regel: &quot;Laat het beter staan dan u het 
 
 ### Gebruik geen YAGNI-functies {#avoid-implementing-yagni-features}
 
-YAGNI-functies (of u hebt het niet nodig) worden geïmplementeerd wanneer we verwachten dat we in de toekomst iets nodig hebben, ook al hebben we het nu niet nodig. In het ideale geval moeten we het eenvoudigste ding implementeren dat vandaag werkt en ononderbroken refactoring gebruiken om ervoor te zorgen dat de architectuur van het systeem in de loop der tijd evolueert met de vereisten. Hierdoor kunnen we ons concentreren op wat belangrijk is en codeblok en eigenschapscrupules voorkomen.
+YAGNI (U hebt het niet nodig) zijn functies die worden geïmplementeerd wanneer we verwachten dat we in de toekomst iets nodig hebben, ook al hebben we het nu niet nodig. In het ideale geval moeten we het eenvoudigste ding implementeren dat vandaag werkt en ononderbroken refactoring gebruiken om ervoor te zorgen dat de architectuur van het systeem in de loop der tijd evolueert met de vereisten. Hierdoor kunnen we ons concentreren op wat er belangrijk is en codeblok en functieschepping voorkomen.

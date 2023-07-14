@@ -1,18 +1,14 @@
 ---
 title: Mobiel op aanvraag
-seo-title: Mobile On-Demand
-description: Volg deze pagina om meer te weten te komen over de rollen en verantwoordelijkheden van AEM auteur van mobiele On-Demand-services.
-seo-description: Follow this page to learn about the roles and responsibilities for AEM mobile On-Demand services author.
-uuid: dd0184d8-1220-4f6a-96b2-acdb31caae17
+description: Volg deze pagina voor meer informatie over de rollen en verantwoordelijkheden van de auteur van Adobe Experience Manager Mobile On-Demand Services.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
 exl-id: 357e75f8-2c98-4377-afef-016d58505b4d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '273'
 ht-degree: 1%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -35,9 +31,9 @@ ht-degree: 1%
 
 ## AEM Mobile-auteur {#aem-mobile-author}
 
-An ***AEM-auteur* (of *Marketer*)**gebruikt aangepaste of kant-en-klare sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt dan gebruikt door *AEM-auteurs* rijke en relevante ervaringen in de app te creëren, met inbegrip van integratie met de rest van de Adobe Marketing Cloud.
+An ***AEM-auteur* (of *Marketer*)**gebruikt aangepaste of kant-en-klare sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt dan gebruikt door *AEM-auteurs* het creëren van rijke en relevante ervaringen binnen de app, waaronder integratie met de rest van de Adobe Experience Cloud.
 
-Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On Demand Services.
+Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On-demand Services.
 
 **Authoring AEM inhoud voor AEM Mobile On-demand Services App** omvat de volgende acties:
 
@@ -55,7 +51,6 @@ Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/
 >* [Sjablonen](/help/sites-developing/templates.md)
 >* [Onderdelen](/help/sites-developing/components.md)
 >
-
 
 ## Aanvullende bronnen {#additional-resources}
 

@@ -1,27 +1,23 @@
 ---
 title: Brontoewijzing
-seo-title: Resource Mapping
-description: Leer hoe te om omleidingen, ijdelheid URLs en virtuele gastheren voor AEM te bepalen door middel van middeltoewijzing.
-seo-description: Learn how to define redirects, vanity URLs and virtual hosts for AEM by using resource mapping.
-uuid: 2ca2d0e4-6f90-4ecc-82db-26991f08c66f
+description: Leer hoe u omleidingen, ijdelings-URL's en virtuele hosts voor Adobe Experience Manager definieert aan de hand van resourceretoewijzing.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 3582a4d8-a47b-467a-9e25-cb45f969ec93
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 7c24379c01f247f5ad45e3ecd40f3edef4ac3cfb
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
 
 # Brontoewijzing{#resource-mapping}
 
-De afbeelding van het middel wordt gebruikt om omleidingen, ijdelheid URLs en virtuele gastheren voor AEM te bepalen.
+Brontoewijzing wordt gebruikt om omleidingen, ijdelings-URL&#39;s en virtuele hosts voor Adobe Experience Manager (AEM) te definiëren.
 
 U kunt bijvoorbeeld de volgende toewijzingen gebruiken:
 
@@ -32,11 +28,11 @@ Eén mogelijke HTTP-toewijzing vooraf bepaalt alle aanvragen aan `localhost:4503
 
 `localhost:4503/content/we-retail/en/products.html`
 
-die toegankelijk zijn via:
+Te benaderen via:
 
 `localhost:4503/we-retail/en/products.html`
 
-als de toewijzing automatisch het voorvoegsel toevoegt `/content` tot `/we-retail/en/products.html`.
+Als de toewijzing automatisch het voorvoegsel toevoegt `/content` tot `/we-retail/en/products.html`.
 
 >[!CAUTION]
 >
@@ -44,7 +40,7 @@ als de toewijzing automatisch het voorvoegsel toevoegt `/content` tot `/we-retai
 
 >[!NOTE]
 >
->Zie de documentatie over verkopers, en [Toewijzingen voor resolutie van bronnen](https://sling.apache.org/site/resources.html) en [Bronnen](https://sling.apache.org/site/mappings-for-resource-resolution.html) voor nadere informatie.
+>Zie de documentatie over verkopers, en [Toewijzingen voor resolutie van bronnen](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) en [Bronnen](https://sling.apache.org/documentation/the-sling-engine/resources.html) voor nadere informatie.
 
 ## Definities voor weergavetoewijzing {#viewing-mapping-definitions}
 
@@ -62,7 +58,7 @@ De lijst van ingangen die door de methodes ResourceResolver.resolve worden gebru
 * **Toewijzingskaartitems**
 De lijst van ingangen die door de methodes ResourceResolver.map worden gebruikt om de Wegen van het Middel aan URLs in kaart te brengen.
 
-De twee lijsten bevatten verschillende items, waaronder items die door de toepassing(en) als standaardwaarden zijn gedefinieerd. Deze zijn vaak bedoeld om URL&#39;s voor de gebruiker te vereenvoudigen.
+De twee lijsten tonen diverse ingangen, met inbegrip van die die als gebreken door de toepassingen worden bepaald. Deze zijn vaak bedoeld om URL&#39;s voor de gebruiker te vereenvoudigen.
 
 De lijsten vormen een paar **Patroon**, een reguliere expressie die overeenkomt met de aanvraag, met een **Vervanging** Hiermee definieert u de omleiding die moet worden toegepast.
 
@@ -70,15 +66,15 @@ Bijvoorbeeld:
 
 **Patroon** `^[^/]+/[^/]+/welcome$`
 
-wordt geactiveerd voor:
+Hiermee wordt het volgende geactiveerd:
 
 **Vervanging** `/libs/cq/core/content/welcome.html`.
 
-om een verzoek om te leiden:
+Een aanvraag doorsturen:
 
 `https://localhost:4503/welcome` ``
 
-tot:
+Aan:
 
 `https://localhost:4503/libs/cq/core/content/welcome.html`
 
@@ -86,7 +82,7 @@ Er worden nieuwe toewijzingsdefinities gemaakt in de repository.
 
 >[!NOTE]
 >
->Er zijn vele beschikbare middelen die helpen verklaren hoe te om regelmatige uitdrukkingen te bepalen; bijvoorbeeld [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
+>Er zijn vele beschikbare middelen die helpen verklaren hoe te om regelmatige uitdrukkingen te bepalen. Bijvoorbeeld: [https://www.regular-expressions.info/](https://www.regular-expressions.info/).
 
 ### Toewijzingsdefinities maken in AEM {#creating-mapping-definitions-in-aem}
 
@@ -102,7 +98,7 @@ Om de afbeelding tot stand te brengen die om het even welk verzoek aan https://l
 
 1. Met CRXDE navigeert u naar `/etc/map/http`.
 
-1. Een nieuw knooppunt maken:
+1. Een knooppunt maken:
 
    * **Type** `sling:Mapping`
 Dit knooppunttype is bedoeld voor dergelijke afbeeldingen, hoewel het gebruik ervan niet verplicht is.
@@ -117,12 +113,12 @@ Dit knooppunttype is bedoeld voor dergelijke afbeeldingen, hoewel het gebruik er
       * **Type** `String`
 
       * **Waarde** `localhost.4503/`
+
    * **Naam** `sling:internalRedirect`
 
       * **Type** `String[]`
 
       * **Waarde** `/content/`
-
 
 1. Klikken **Alles opslaan**.
 
@@ -134,8 +130,8 @@ is aangevraagd.
 
 >[!NOTE]
 >
->Zie [Bronnen](https://sling.apache.org/site/mappings-for-resource-resolution.html) in de Verschuivende Documentatie voor verdere informatie over de beschikbare hellingseigenschappen en hoe zij kunnen worden gevormd.
+>Zie [Bronnen](https://sling.apache.org/documentation/the-sling-engine/resources.html) in de Verschuivende Documentatie voor verdere informatie over de beschikbare hellingseigenschappen en hoe zij kunnen worden gevormd.
 
 >[!NOTE]
 >
->U kunt `/etc/map.publish` om de configuraties voor het publicatiemilieu te houden. Deze moeten vervolgens worden gerepliceerd en de nieuwe locatie ( `/etc/map.publish`) geconfigureerd voor de **Toewijzingslocatie** van de [Resolver Apache Sling-resource](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) van de publicatieomgeving.
+>U kunt `/etc/map.publish` om de configuraties voor het publicatiemilieu te houden. Deze moeten worden gerepliceerd en de nieuwe locatie ( `/etc/map.publish`) geconfigureerd voor de **Toewijzingslocatie** van de [Resolver Apache Sling-resource](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) van de publicatieomgeving.

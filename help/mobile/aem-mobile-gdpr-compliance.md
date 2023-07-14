@@ -3,11 +3,10 @@ title: Adobe Experience Manager Mobile - GDPR-gereedheid
 description: Adobe Experience Manager Mobile - GDPR-gereedheid
 uuid: 817c434f-4b78-40f7-99d6-6efafdedb77e
 contentOwner: trushton
-discoiquuid: 9399dd3d-a485-4f53-a6f2-7b190da4235b
 exl-id: d06e675f-fb61-47da-85de-e0b50dd44153
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -16,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy; zoals GDPR, CCPA enz.
+>GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy; zoals GDPR en CCPA.
 
 ## AEM Mobile GDPR-ondersteuning {#aem-mobile-gdpr-support}
 
@@ -26,15 +25,15 @@ AEM Mobile is bereid klanten te helpen bij hun verplichtingen om aan de GDPR-nor
 
 ## Adobe Digital Publishing Suite {#adobe-digital-publishing-suite}
 
-Adobe) biedt ondersteuning voor initiatieven op het gebied van Adobe en gereedheid voor digitale publicaties. Zie [https://www.adobe.com/privacy/general-data-protection-regulation.html](https://www.adobe.com/privacy/general-data-protection-regulation.html). Hieronder vindt u specifieke informatie over ondersteuning voor GDPR-functies die relevant zijn voor het Digital Publishing Suite-product, zoals hoe u met Adobe kunt werken om GDPR-aanvragen te initiëren.
+Adobe) biedt ondersteuning voor initiatieven op het gebied van Adobe en gereedheid voor digitale publicaties. Zie [https://business.adobe.com/privacy/general-data-protection-regulation.html](https://business.adobe.com/privacy/general-data-protection-regulation.html). Hieronder vindt u specifieke informatie over ondersteuning van GDPR-functies in het product van de Digital Publishing Suite, zoals hoe met Adobe kan worden gewerkt om GDPR-aanvragen te initiëren.
 
-U kunt zich hier aanmelden bij het Digital Publishing Suite-product om ervoor te zorgen dat AEM Mobile niet wordt verward met het oudere Digital Publishing Suite-product:
+U kunt zich hier aanmelden bij het product van de Digital Publishing Suite om ervoor te zorgen dat AEM Mobile niet wordt verward met het oudere product van de Digital Publishing Suite:
 
 [https://acrobat.adobe.com/us/en/](https://acrobat.adobe.com/us/en/)
 
 ### Een GDPR-verzoek starten {#initiating-a-gdpr-request}
 
-Neem contact op met de klantenservice van Adobe om een GDPR-aanvraag voor de Digital Publishing Suite te starten.
+Neem contact op met de klantenservice van Adobe, zodat u een GDPR-aanvraag voor de Digital Publishing Suite kunt starten.
 
 De volgende id&#39;s zijn vereist om klantgegevens te zoeken. Alle ontvangen subsets betekenen dat de andere id&#39;s niet van toepassing waren op deze gebruiker.
 
@@ -52,19 +51,19 @@ Geef ten minste 1 van de volgende gegevens op:
 
 **Zal Adobe mijn App Store-aankopen verwijderen wanneer een DELETE-aanvraag wordt gestart?**
 
-Adobe verwijdert de informatie over aankopen in de App Store (abonnementen, enz.) maar aankopen worden wel geregistreerd in de App-winkels. Als de app (eindgebruiker) is aangemeld bij de App Store, worden deze ontvangstbewijzen opnieuw opgehaald en verzonden naar Adobe en vervolgens worden deze beschouwd als nieuwe aankopen en worden ze door de App hersteld zodat ze weer toegang hebben.
+Adobe verwijdert informatie over aankopen in de App store (abonnementen, enzovoort), maar aankopen staan nog steeds in de App Store. Als de app (eindgebruiker) is aangemeld bij de App Store, worden deze ontvangstbewijzen opnieuw opgehaald en verzonden naar Adobe en hoger. Deze worden beschouwd als nieuwe aankopen en worden door de App hersteld om opnieuw toegang te hebben.
 
 **Zal Adobe klant verstrekte rechten schrappen wanneer het in werking stellen van een DELETE verzoek?**
 
-Adobe zal informatie verwijderen die hij heeft over de extra directe rechten van de klant. Als de app (eindgebruiker) zich aanmeldt bij het OAuth-mechanisme dat de klant heeft gebruikt, stuurt het informatie naar Adobe en nemen de services de extra rechten weer op.
+Adobe schrapt informatie die het van de extra directe toestemmingstoelagen van de klant heeft. Als de app (eindgebruiker) zich aanmeldt bij het OAuth-mechanisme dat de klant heeft gebruikt, stuurt het informatie naar Adobe en halen de services de extra rechten opnieuw op.
 
 **Wat wordt van de eindgebruiker verwacht?**
 
-Aangezien de sleutel voor het toewijzen van rechten aan de toepassing zich op het apparaat bevindt als onderdeel van de viewersoftware, moet de eindgebruiker de toepassing verwijderen. De eindgebruiker moet zich realiseren dat als hij de app opnieuw installeert, bestaande aankopen (gekoppeld aan de gebruiker van de App store) en directe machtigingsrechten (gekoppeld aan de OAuth-gebruiker van de klant) nog steeds worden hersteld.
+Aangezien de sleutel voor het toewijzen van rechten aan de app zich op het apparaat bevindt als onderdeel van de viewersoftware, moet de eindgebruiker de toepassing verwijderen. De eindgebruiker moet zich realiseren dat als hij de app opnieuw installeert, bestaande aankopen (gekoppeld aan de gebruiker van de App store) en directe machtigingsrechten (gekoppeld aan de OAuth-gebruiker van de klant) nog steeds worden hersteld.
 
 **Wat gebeurt er als een app wordt gedeeld tussen mensen op een apparaat?**
 
-Adobe heeft zeer weinig informatie die direct terug naar een specifieke gebruiker associeert. Het associeert de gegevens gebruikend een willekeurig gecreeerde UUID die in de gegevens van de App wordt gehouden en in elk verzoek wordt overgegaan App initieert. Dit betekent dat eindgebruikers die de app delen op hetzelfde apparaat dezelfde UUID gebruiken en dat alle gegevens worden beschouwd als eigendom van de persoon die het GDPR-verzoek indient. Voor zowel de Toegang als van de Schrapping verzoeken, zal DPSC mensen overwegen die een App als één persoon delen.
+Adobe heeft minimale informatie die rechtstreeks aan een specifieke gebruiker associeert. Het associeert de gegevens gebruikend een willekeurig gecreeerde UUID die in de gegevens van de App wordt gehouden en in elk verzoek wordt overgegaan App initieert. Dit betekent dat eindgebruikers die de app delen op hetzelfde apparaat dezelfde UUID gebruiken en dat alle gegevens worden beschouwd als eigendom van de persoon die het GDPR-verzoek indient. Voor zowel de Toegang als verzoeken van de Schrapping, beschouwt DPSC mensen die een App als één persoon delen.
 
 **Welke persoonlijke gegevens worden bij Analytics bijgehouden?**
 
@@ -72,13 +71,13 @@ Geen. Er worden gegevens bijgehouden, maar deze bevinden zich op toepassingsnive
 
 **De eindgebruiker heeft zijn gegevens verstrekt, maar er is niets gevonden. Waarom niet?**
 
-Naarmate het Digital Publishing Suite-product zich ontwikkelde, zijn serviceimplementaties gewijzigd en zijn meer gegevens verduisterd. Als er geen gegevens zijn gevonden met behulp van de door de gebruiker opgegeven gegevens, betekent dit dat de gegevens van de gebruiker niet naar die persoon kunnen worden bijgehouden.
+Aangezien het product van de Digital Publishing Suite evolueerde, werden de de dienstimplementaties veranderd en meer gegevens werd verduisterd. Als er geen gegevens zijn gevonden met behulp van de door de gebruiker opgegeven gegevens, betekent dit dat de gegevens van de gebruiker niet naar die persoon kunnen worden bijgehouden.
 
 ### Voorbeeld {#example}
 
-Neem contact op met de klantenservice van Adobe om een GDPR-aanvraag te starten.
+Neem contact op met de klantenservice van Adobe, zodat u een GDPR-aanvraag kunt starten.
 
-Hier volgt een voorbeeld van de invoer en de resulterende uitvoer van een Digital Publishing Suite GDPR-aanvraag:
+Hier is een voorbeeld van de input en de resulterende output van een Digital Publishing Suite GDPR verzoek:
 
 #### Invoer: {#inputs}
 

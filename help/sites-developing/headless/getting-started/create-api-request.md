@@ -2,9 +2,9 @@
 title: Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten
 description: Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor het zonder kop leveren van inhoud met fragmenten.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '558'
 ht-degree: 0%
 
 ---
@@ -25,18 +25,18 @@ De rest van deze handleiding is gericht op GraphQL-toegang en levering van inhou
 
 ## Een inhoudsfragment afleveren met GraphQL {#how-to-deliver-a-content-fragment}
 
-De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten ontwerpen om inhoud te leveren. Deze vragen zullen over het algemeen slechts eens per eindpunt per model moeten worden overwogen. Met het oog op deze gids om aan de slag te gaan, zullen wij slechts één gids moeten creëren.
+De architecten van de informatie moeten vragen voor hun kanaaleindpunten ontwerpen om inhoud te leveren. Deze vragen moeten slechts eens per eindpunt per model worden overwogen. In deze gids Aan de slag hoeft u slechts één gids te maken.
 
 1. Meld u aan bij AEM en open de [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md):
    * Bijvoorbeeld: `http://<host>:<port>/aem/graphiql.html`.
 
-1. GraphiQL is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen hoofdelijk als JSON te leveren.
+1. GraphiQL is een in-browser vraagredacteur voor GraphQL. U kunt het gebruiken om vragen te bouwen om de Fragmenten van de Inhoud terug te winnen om hen onophoudelijk als JSON te leveren.
    * In het linkerdeelvenster kunt u een query maken.
    * De resultaten worden weergegeven in het rechterdeelvenster.
    * De vraagredacteur kenmerkt codevoltooiing en hotkeys om de vraag gemakkelijk uit te voeren.
-      ![GraphiQL-editor](assets/graphiql.png)
+     ![GraphiQL-editor](assets/graphiql.png)
 
-1. Ervan uitgaande dat het model dat we hebben gemaakt, werd aangeroepen `person` met velden `firstName`, `lastName`, en `position`, kunnen wij een eenvoudige vraag bouwen om de inhoud van ons Inhoudsfragment terug te winnen.
+1. Ervan uitgaande dat het model dat u hebt gemaakt, werd aangeroepen `person` met velden `firstName`, `lastName`, en `position`kunt u een eenvoudige query maken om de inhoud van het inhoudsfragment op te halen.
 
    ```text
    query 
@@ -53,7 +53,6 @@ De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten 
    ```
 
 1. Voer de query in het linkerdeelvenster in.
-
 <!--
    ![GraphiQL query](assets/graphiql-query.png)
 -->
@@ -62,18 +61,18 @@ De architecten van de informatie zullen vragen voor hun kanaaleindpunten moeten 
    ![GraphiQL-resultaten](assets/graphiql-results.png)
 
 1. Klik op:
-   * **Docs** rechtsboven op de pagina om in-context documentatie te tonen waarmee u query&#39;s kunt maken die u kunt aanpassen aan uw eigen modellen.
+   * **Docs** rechtsboven op de pagina om in-context documentatie te tonen om u te helpen uw vragen bouwen die aan uw eigen modellen aanpassen.
    * **Historie** in de bovenste werkbalk om vorige query&#39;s weer te geven.
    * **Opslaan als** en **Opslaan** om uw vragen te bewaren, waarna u hen van kunt een lijst maken en terugwinnen **Blijvende query&#39;s** en **Publiceren**.
-      ![GraphiQL-documentatie](assets/graphiql-documentation.png)
+     ![GraphiQL-documentatie](assets/graphiql-documentation.png)
 
-GraphQL laat gestructureerde vragen toe die niet alleen specifieke gegevensreeksen of individuele gegevensvoorwerpen kunnen richten, maar ook specifieke elementen van de voorwerpen, genestelde resultaten kunnen leveren, biedt steun voor vraagvariabelen, en veel meer.
+GraphQL laat gestructureerde vragen toe die niet alleen specifieke gegevensreeksen of individuele gegevensvoorwerpen kunnen richten, maar ook specifieke elementen van de voorwerpen, genestelde resultaten, biedt steun voor vraagvariabelen, en veel meer kunnen leveren.
 
-GraphQL kan herhalende API-aanvragen en overlevering voorkomen en in plaats daarvan kan bulksgewijs worden geleverd wat precies nodig is voor rendering als reactie op één API-query. De resulterende JSON kan worden gebruikt om gegevens te leveren aan andere sites of apps.
+GraphQL kan herhalende API-aanvragen en overlevering voorkomen. In plaats daarvan is het mogelijk om in grote hoeveelheden te leveren wat precies nodig is voor rendering als reactie op één API-query. De resulterende JSON kan worden gebruikt om gegevens te leveren aan andere sites of apps.
 
 ## Volgende stappen {#next-steps}
 
-Dat is het! U hebt nu een basiskennis van beheer van inhoud zonder kop in AEM. Natuurlijk zijn er veel meer middelen waar u zich verdiept voor een uitgebreid inzicht in de beschikbare functies.
+Dat is het! U hebt nu een basiskennis van beheer van inhoud zonder kop in AEM. Er zijn veel meer bronnen waar u dieper kunt duiken voor een volledig begrip van de beschikbare functies.
 
 * **[Configuratiebrowser](create-configuration.md)** - Voor meer informatie over de AEM Configuration Browser
 * **[Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)** - Meer informatie over het maken en beheren van inhoudsfragmenten

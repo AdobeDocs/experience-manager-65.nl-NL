@@ -1,19 +1,15 @@
 ---
 title: Componentgegevens toewijzen aan Adobe Analytics-eigenschappen
-seo-title: Mapping Component Data with Adobe Analytics Properties
 description: Leer hoe u componentgegevens kunt toewijzen met SiteCatalyst-eigenschappen.
-seo-description: Learn how to map component data with SiteCatalyst properties.
-uuid: b08ab37f-ad58-4c04-978f-8e21a3823ae8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 6c1f8869-62d9-4fac-aa0d-b99bb0e86d6b
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1445'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -39,7 +35,7 @@ De toegewezen gegevens worden naar Adobe Analytics verzonden wanneer de pagina w
 
 Gebruik de volgende procedure om CQ-componentvariabelen toe te wijzen aan Adobe Analytics-rapporteigenschappen.
 
-1. In de **AEM** Sleep een trackingcomponent van sidekick naar het framework. Sleep bijvoorbeeld de **Pagina** component van de component **Algemeen** categorie.
+1. In de **AEM** Sleep een trackingcomponent van sidekick naar het framework. Sleep bijvoorbeeld de **Pagina** uit de **Algemeen** categorie.
 
    ![aa-13](assets/aa-13.png)
 
@@ -57,7 +53,7 @@ Gebruik de volgende procedure om CQ-componentvariabelen toe te wijzen aan Adobe 
 
    >[!NOTE]
    >
-   >U kunt meerdere analytische variabelen toewijzen (bijvoorbeeld `props`, `eVars`, `events`) aan dezelfde CQ-variabele (bijv. `pagedata.title`)
+   >U kunt meerdere analytische variabelen toewijzen (bijvoorbeeld `props`, `eVars`, `events`) aan dezelfde CQ-variabele (bijvoorbeeld `pagedata.title`)
 
    >[!CAUTION]
    >
@@ -65,7 +61,6 @@ Gebruik de volgende procedure om CQ-componentvariabelen toe te wijzen aan Adobe 
    >
    >* `eVars` en `props` worden toegewezen aan CQ-variabelen die beginnen met `pagedata.X` of `eventdata.X`
    >* overwegende dat gebeurtenissen moeten worden toegewezen aan variabelen die beginnen met `eventdata.events.X`
-
 
 1. Als u het framework beschikbaar wilt maken op de publicatie-instantie van uw site, opent u het dialoogvenster **Pagina** tabblad van de assistent en klik op **Activeer Framework.**
 
@@ -94,7 +89,7 @@ Verschillende AEM Commerce-componenten gebruiken deze variabelenamen.
 1. Zorg ervoor RSID wordt geselecteerd die in de vorige stappen wordt gebruikt.
 1. In **Rapporten** (aan de linkerkant van de pagina) selecteer **Aangepaste omzetting** vervolgens **Aangepaste omzetting 1-10** en selecteer de variabele die overeenkomt met `eVar7`
 
-1. Afhankelijk van de versie van Adobe Analytics die u gebruikt, moet u gemiddeld 45 minuten wachten tot het rapport met de gebruikte zoekterm wordt bijgewerkt; bijv. aubergine in het voorbeeld
+1. Afhankelijk van de versie van Adobe Analytics die u gebruikt, moet u gemiddeld 45 minuten wachten tot het rapport met de gebruikte zoekterm wordt bijgewerkt; Bijvoorbeeld, aubergine in het voorbeeld
 
 ## De Content Finder (cf#) gebruiken met Adobe Analytics-frameworks {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
@@ -105,7 +100,7 @@ Wanneer u in eerste instantie een Adobe Analytics-framework opent, bevat de zoek
 * Gebeurtenissen
 
 Wanneer RSID wordt geselecteerd worden alle variabelen die tot dat RSID behoren toegevoegd aan de lijst.\
-De `cf#` is nodig om analytische variabelen toe te wijzen aan de CQ-variabelen die op de verschillende volgcomponenten aanwezig zijn. Zie Een framework instellen voor basistracking.
+De `cf#` is nodig om analytische variabelen toe te wijzen aan de CQ-variabelen die aanwezig zijn op de verschillende volgcomponenten. Zie Een framework instellen voor basistracking.
 
 Afhankelijk van de weergave die voor het framework is geselecteerd, wordt de zoeker van de inhoud gevuld met variabelen voor Analytics (in AEM weergave) of CQ-variabelen (in de weergave Analytics).
 
@@ -127,19 +122,19 @@ De lijst kan op de volgende manieren worden gemanipuleerd:
    1. De lijst kan op elk moment opnieuw worden geladen met de knop met de strijkpijlen.
    1. Als veelvoudige RSIDs op het kader wordt geselecteerd, zullen alle variabelen in de lijst worden getoond gebruikend alle etiketten die binnen geselecteerde RSIDs worden gebruikt.
 
-
 1. In de weergave Adobe Analytics worden alle CQ-variabelen weergegeven die horen bij de volgende componenten die in de CQ-weergave zijn gesleept.
 
-   * bv. in het geval van **Component downloaden** is de *slechts één gesleept* in CQ-weergave (met twee toewijzingsvariabelen) *eventdata.downloadLink* en *eventdata.events.startDownload*), ziet de zoeker er naar inhoud er als volgt uit wanneer u overschakelt naar de Adobe Analytics-weergave:
+   * Bijvoorbeeld voor het geval **Component downloaden** is de *slechts één gesleept* in CQ-weergave (met twee toewijzingsvariabelen) *eventdata.downloadLink* en *eventdata.events.startDownload*), ziet de zoekfunctie voor inhoud er als volgt uit wanneer u overschakelt naar de Adobe Analytics-weergave:
 
    ![aa-22](assets/aa-22.png)
 
    * De variabelen kunnen naar elke Adobe Analytics-variabele worden gesleept die tot een van de drie variabele secties behoort (**Verkeer**, **Conversie** en **Gebeurtenissen**).
 
    * Wanneer u een nieuwe traceringscomponent naar het framework sleept in de CQ-weergave, worden de CQ-variabelen die bij de component horen automatisch toegevoegd aan de Content Finder (cf#) in de Adobe Analytics-weergave.
+
    >[!NOTE]
    >
-   >Er kan slechts één CQ-variabele op elk moment aan een Adobe Analytics-variabele worden toegewezen.
+   >Er kan slechts één CQ-variabele op elk moment worden toegewezen aan een Adobe Analytics-variabele.
 
 ## De weergave AEM en Analyse gebruiken {#using-aem-view-and-analytics-view}
 
@@ -160,15 +155,15 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, kunt u **AEM** heeft de vo
    1. Als het framework componenten bevat die zijn overgeërfd van het bovenliggende element, worden deze hier vermeld, samen met de variabelen die aan de componenten zijn toegewezen.
 
       1. Overerfde componenten zijn vergrendeld.
-      1. Als u een overgeërfde component wilt ontgrendelen, dubbelklikt u op het hangslot naast de naam van de component.
-      1. Als u de overerving wilt herstellen, moet u de ontgrendelde component verwijderen. waarna de vergrendelde status weer wordt hersteld.
-   1. **Sleep componenten hier naartoe om ze op te nemen in het analyseframework**: Componenten kunnen van de Sidetrap worden gesleept en hier neergezet.
+      1. Als u een overgeërfde component wilt ontgrendelen, dubbelklikt u op de vergrendeling naast de naam van de component
+      1. Als u de overerving wilt herstellen, verwijdert u de ontgrendelde component. waarna de vergrendelde status weer wordt hersteld.
+
+   1. **Sleep componenten hier naartoe om ze op te nemen in het analyseframework**: Componenten kunnen vanuit de Sidekick worden gesleept en hier neergezet.
    1. U kunt alle componenten vinden die momenteel in het analytische framework zijn opgenomen:
 
       1. Als u een component wilt toevoegen, sleept u een component van het tabblad Componenten van het zijpaneel
       1. Als u een component en alle bijbehorende toewijzingen wilt verwijderen, selecteert u Verwijderen in het contextmenu van de component en accepteert u de verwijdering in het bevestigingsdialoogvenster.
       1. Onthoud dat een component alleen kan worden verwijderd uit het framework waarin de component is gemaakt en niet in de traditionele zin kan worden verwijderd uit onderliggende frameworks (ze kunnen alleen worden overschreven).
-
 
 ### Analyseweergave {#analytics-view}
 
@@ -185,24 +180,26 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, kunt u **AEM** heeft de vo
       * Verkeersvariabele ( `prop1`) toegewezen aan een CQ-variabele ( `eventdata.downloadLink`)
 
       * Wanneer er naast de component een Padlock staat, betekent dit dat deze wordt overgeërfd van een bovenliggend framework en dus niet kan worden bewerkt
+
    * **Conversie**:
 
       * Conversievariabele ( `eVar1`) toegewezen aan een CQ-variabele ( `pagedata.title`)
 
       * Conversievariabele ( `eVar3`) die is toegewezen aan een JavaScript-expressie die inline is toegevoegd door te dubbelklikken op het veld CQ-variabele en de code handmatig in te voeren
+
    * **Gebeurtenis**:
 
       * Gebeurtenisvariabele ( `event1`) toegewezen aan een CQ-gebeurtenis ( `eventdata.events.pageView`)
 
-
-
 >[!NOTE]
 >
->De CQ-variabele kolom van een tabel kan ook inline worden ingevuld door te dubbelklikken op het veld en er tekst aan toe te voegen. Deze velden accepteren javascript als invoer.
+>De CQ-variabele kolom van een tabel kan ook inline worden ingevuld door te dubbelklikken op het veld en er tekst aan toe te voegen. Deze velden accepteren JavaScript als invoer.
 >
 >Bijvoorbeeld naast `prop3` u kunt toevoegen:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
 om de *titel* van een pagina samengevoegd met de *plaats* gebruiken *:* (dubbele punt) en voorgefixeerd met *Adobe* als `prop3`
+>
 
 >[!CAUTION]
-Er kan slechts één CQ-variabele op elk moment aan een Adobe Analytics-variabele worden toegewezen.
+>
+Er kan slechts één CQ-variabele op elk moment worden toegewezen aan een Adobe Analytics-variabele.

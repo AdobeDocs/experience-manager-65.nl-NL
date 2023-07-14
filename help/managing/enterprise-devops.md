@@ -1,28 +1,24 @@
 ---
 title: Enterprise DevOps
-seo-title: Enterprise DevOps
-description: Leer over de processen, methoden en communicatie die zijn vereist om implementatie en samenwerking te vereenvoudigen.
-seo-description: Learn about the processes, methods and communication required to ease deployment and simplify collaboration.
-uuid: ca4806d2-c845-4c18-9498-4b66f0980a5e
+description: Leer over de processen, de methodes, en de mededeling die worden vereist om plaatsing te verlichten en samenwerking te vereenvoudigen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
-discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '989'
-ht-degree: 93%
+source-wordcount: '983'
+ht-degree: 60%
 
 ---
 
 # Enterprise DevOps{#enterprise-devops}
 
-DevOps omvat de processen, methoden en communicatie die nodig zijn voor de volgende stappen:
+DevOps omvat de processen, de methodes, en de mededeling die worden vereist om:
 
 * Eenvoudige implementatie van uw software in verschillende omgevingen.
-* Eenvoudige samenwerking tussen de ontwikkelings-, test- en implementatieteams.
+* Vereenvoudig de samenwerking tussen de ontwikkelings-, test- en implementatieteams.
 
 DevOps heeft als doel om de onderstaande problemen te voorkomen:
 
@@ -47,16 +43,16 @@ Een Adobe Experience Manager-implementatie (AEM) bestaat gewoonlijk uit meerdere
 
 ### Ontwikkeling {#development}
 
-Ontwikkelaars zijn verantwoordelijk voor het ontwikkelen en aanpassen van het voorgestelde project (website, mobiele apps, DAM-implementatie, enz.) met alle vereiste functionaliteit. Ontwikkelaars:
+De ontwikkelaars zijn verantwoordelijk voor het ontwikkelen en aanpassen van het voorgestelde project (website, mobiele toepassingen, DAM-implementatie, enzovoort), met alle vereiste functionaliteit. Ontwikkelaars:
 
 * ontwikkelen alle benodigde elementen en maken deze op maat, bijvoorbeeld sjablonen, componenten, workflows, applicaties
 * realiseren het ontwerp
 * ontwikkelen de services en scripts die nodig zijn voor de implementatie van de vereiste functionaliteit
 
-De configuratie van de [ontwikkelomgeving](/help/sites-developing/best-practices.md) is afhankelijk van verschillende factoren, hoewel deze meestal bestaat uit:
+De configuratie van de [ontwikkeling](/help/sites-developing/best-practices.md) het milieu kan van verschillende factoren afhangen , hoewel het bestaat uit :
 
 * Een geïntegreerd ontwikkelingssysteem met versiebeheer dat dient als een geïntegreerde codebasis. Dit systeem wordt gebruikt om de code van de individuele ontwikkelomgevingen van de verschillende ontwikkelaars samen te voegen en te consolideren.
-* Een persoonlijke omgeving voor elke ontwikkelaar; gewoonlijk op hun lokale machine. Op geplande tijdstippen wordt de code gesynchroniseerd met het versiebeheersysteem
+* Een persoonlijke omgeving voor elke ontwikkelaar; gewoonlijk op hun lokale machine. Met de juiste intervallen wordt de code gesynchroniseerd met het versiebeheersysteem
 
 Afhankelijk van de schaal van uw systeem kan de ontwikkelomgeving beschikken over zowel auteur- als publicatie-instanties.
 
@@ -66,10 +62,10 @@ Deze omgeving wordt door het team voor kwaliteitsborging uitgebreid gebruikt [te
 
 ### Staging {#staging}
 
-De stagingomgeving moet een spiegel zijn van de productieomgeving: configuratie, code en content:
+De testomgeving moet een spiegel zijn van de productieomgeving - configuratie, code en inhoud:
 
 * In deze omgeving worden scripts getest waarmee de daadwerkelijke implementatie wordt uitgevoerd.
-* Deze omgeving kan worden toegepast voor definitieve tests (ontwerp, functionaliteit en interfaces) voorafgaand aan de implementatie op productieomgevingen.
+* Het kan voor definitieve tests (ontwerp, functionaliteit, en interfaces) worden gebruikt alvorens aan de productiemilieu&#39;s op te stellen.
 * Hoewel de stagingomgeving nooit identiek kan zijn aan de productieomgeving, moet deze zo dicht mogelijk bij de uiteindelijk gewenste niveaus voor prestaties en belasting liggen.
 
 ### Productie - Auteur en Publicatie {#production-author-and-publish}
@@ -81,7 +77,7 @@ Een productieomgeving bestaat uit ten minste één auteurinstantie en één publ
 * Een [auteurinstantie](#author) voor de invoer van content.
 * Een [publicatie-instantie](#publish) voor content die aan uw bezoekers/gebruikers ter beschikking wordt gesteld.
 
-Afhankelijk van de schaal van het project, bestaat een project vaak uit verscheidene auteur- en/of publicatie-instanties. Op een lager niveau kan de repository ook naar meerdere instanties worden geclusterd.
+Afhankelijk van de schaal van het project, bestaat het vaak uit verscheidene auteursinstanties, of verscheidene publiceer instanties, of allebei. Op een lager niveau kan de repository ook naar meerdere instanties worden geclusterd.
 
 #### Auteur {#author}
 
@@ -94,11 +90,11 @@ Auteurinstanties bevinden zich gewoonlijk achter de interne firewall. Dit is de 
 
 Content die is geactiveerd, wordt in een pakket geplaatst en naar de replicatiewachtrij van de auteuromgeving verzonden. Het replicatieproces verplaatst de content dan naar de publicatieomgeving.
 
-Om gegevens die in een publicatieomgeving zijn geproduceerd te repliceren en terug te sturen naar de auteuromgeving, moet een replicatielistener in de auteuromgeving pollingbewerkingen uitvoeren in de publicatieomgeving en dergelijke content ophalen uit het postvak UIT voor omgekeerde replicatie van de publicatieomgeving.
+Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren naar de auteursomgeving, pollt een replicatielistener in de auteuromgeving de publicatieomgeving en haalt u deze inhoud op uit de omgekeerde replicatieoutbox van de publicatieomgeving.
 
 #### Publicatie {#publish}
 
-Een publicatieomgeving bevindt zich gewoonlijk in de &#39;gedemilitariseerde zone&#39; (DMZ). In deze omgeving hebben bezoekers toegang tot uw content (bijvoorbeeld via een website of in de vorm van een mobiele app) en kunnen ze met de content aan de slag, ofwel via een openbaar netwerk, of binnen uw intranet. Een publicatieomgeving:
+Een publicatieomgeving bevindt zich in de gedemilitariseerde zone (DMZ). Dit is de omgeving waarin bezoekers toegang krijgen tot uw inhoud (bijvoorbeeld via een website of in de vorm van een mobiele toepassing) en ermee communiceren; moet het openbaar zijn, of binnen uw Intranet. Een publicatieomgeving:
 
 * bevat content die is gerepliceerd vanuit de auteuromgeving
 * stelt die content ter beschikking van de bezoekers
@@ -109,19 +105,19 @@ De publicatieomgeving genereert uw content dynamisch in realtime. Ook kan de con
 
 ## Codeverplaatsing {#code-movement}
 
-Code moet altijd van beneden naar boven worden doorgegeven:
+Code altijd van beneden naar boven verschuiven:
 
 * de code wordt aanvankelijk ontwikkeld op de lokale omgeving en vervolgens geïntegreerd in de ontwikkelomgevingen
-* gevolgd door grondig testen van de kwaliteitscontroleomgeving(en)
+* gevolgd door grondig testen op de QA-omgevingen
 * vervolgens opnieuw getest op testomgevingen
 * en pas hierna kan de code worden geïmplementeerd in de productieomgevingen
 
-De code (bijvoorbeeld aangepaste functionaliteit van webapplicaties en ontwerpsjablonen) wordt meestal overgedragen door pakketten te exporteren en te importeren tussen de verschillende content-repository&#39;s. Waar zinvol kan deze replicatie als automatisch proces worden geconfigureerd.
+De code (bijvoorbeeld aangepaste functionaliteit van webtoepassingen en ontwerpsjablonen) wordt overgedragen door pakketten te exporteren en te importeren tussen de verschillende opslagplaatsen voor inhoud. Waar zinvol kan deze replicatie als automatisch proces worden geconfigureerd.
 
-AEM projecten activeren vaak de implementatie van code:
+AEM Projecten activeren vaak de implementatie van code:
 
 * Automatisch: voor overdracht naar de ontwikkelings- en kwaliteitscontroleomgevingen.
-* Handmatig: implementaties in de staging- en productieomgevingen gebeurt op een meer beheerste en vaak handmatige manier; automatisering is echter mogelijk als dat nodig is.
+* Handmatig: de implementatie in de staging- en productieomgevingen gebeurt op een meer beheerste en vaak handmatige manier; automatisering is echter mogelijk , indien nodig .
 
 ![chlimage_1](assets/chlimage_1.png)
 
@@ -135,11 +131,11 @@ Productiecontent moet van de productieomgeving naar de stagingomgeving worden ve
 
 >[!NOTE]
 >
->Dit betekent niet dat stagingcontent voortdurend moet worden gesynchroniseerd met productiecontent (regelmatige updates zijn voldoende), maar met name voordat een nieuwe code-iteratie wordt getest. Content in de kwaliteitscontrole- en ontwikkelingsomgevingen hoeft niet zo vaak te worden bijgewerkt, maar moet alleen een goede representatie van de productiecontent zijn.
+>Dit betekent niet dat het opvoeren van inhoud voortdurend met productie moet worden gesynchroniseerd, zijn de regelmatige updates voldoende, maar vooral alvorens een nieuwe herhaling van code te testen. Inhoud in de kwaliteitscontrole- en ontwikkelingsomgevingen hoeft niet zo vaak te worden bijgewerkt, maar moet een goede weergave van de productie-inhoud zijn.
 
-Content kan worden overgedragen:
+Inhoud kan worden overgedragen:
 
 * Tussen de verschillende omgevingen: door pakketten te exporteren en te importeren.
-* Tussen verschillende instanties - door rechtstreeks te repliceren ([AEM replicatie](/help/sites-deploying/replication.md)) de inhoud (via een HTTP- of HTTPS-verbinding).
+* Tussen verschillende instanties - door rechtstreeks te repliceren ([AEM replicatie](/help/sites-deploying/replication.md)), de inhoud (via een HTTP- of HTTPS-verbinding).
 
 ![chlimage_1-1](assets/chlimage_1-1.png)

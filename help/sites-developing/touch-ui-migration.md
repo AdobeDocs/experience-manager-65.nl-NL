@@ -1,28 +1,24 @@
 ---
 title: Migratie naar de aanraakinterface
-seo-title: Migration to the Touch UI
 description: Migratie naar de aanraakinterface
-seo-description: Migration to the Touch UI
-uuid: 47c43b56-532b-4ada-8503-04d66bab3564
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
-discoiquuid: b315720f-e9b8-4063-99e2-1b9aa6bba460
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '659'
 ht-degree: 1%
 
 ---
 
 # Migratie naar de aanraakinterface{#migration-to-the-touch-ui}
 
-Vanaf versie 6.0 introduceerde Adobe Experience Manager (AEM) een nieuwe gebruikersinterface die *interface met aanraakbediening* (ook wel bekend als de *aanraakinterface*). De interface wordt uitgelijnd op de Adobe Marketing Cloud en de algemene richtlijnen voor de gebruikersinterface van Adobe. Dit is de standaard UI in AEM met de erfenis, Desktop-oriented interface geworden die als *klassieke gebruikersinterface*.
+Vanaf versie 6.0 introduceerde Adobe Experience Manager (AEM) een nieuwe gebruikersinterface die *interface met aanraakbediening* (ook wel bekend als de *aanraakinterface*). De interface wordt uitgelijnd op de Adobe Experience Cloud en de algemene richtlijnen voor de gebruikersinterface van Adobe. Dit is de standaard UI in AEM met de erfenis, Desktop-oriented interface geworden die als *klassieke gebruikersinterface*.
 
-Als u AEM met klassieke UI hebt gebruikt, zult u actie moeten ondernemen om uw instantie te migreren. Deze pagina is bedoeld als springboard door koppelingen naar individuele bronnen aan te bieden.
+Als u AEM met klassieke UI hebt gebruikt, neem actie om uw instantie te migreren. Deze pagina is bedoeld als springboard door koppelingen naar individuele bronnen aan te bieden.
 
 >[!NOTE]
 >
@@ -30,7 +26,7 @@ Als u AEM met klassieke UI hebt gebruikt, zult u actie moeten ondernemen om uw i
 
 ## De basisbeginselen {#the-basics}
 
-Houd tijdens het migreren rekening met de volgende (grote) verschillen tussen de klassieke interface en de aanraakinterface:
+Houd tijdens het migreren rekening met de volgende grote verschillen tussen de klassieke interface en de aanraakinterface:
 
 <table>
  <tbody>
@@ -40,7 +36,7 @@ Houd tijdens het migreren rekening met de volgende (grote) verschillen tussen de
   </tr>
   <tr>
    <td>Wordt in de JCR-opslagplaats beschreven als een structuur van knooppunten. Elke knoop die een element van UI vertegenwoordigt wordt genoemd een <em>ExtJS-widget</em> en op de client worden gerenderd door <code>ExtJS</code>.</td>
-   <td>Wordt in de JCR-opslagplaats ook beschreven als een structuur van knooppunten. In dit geval verwijst elk knooppunt echter naar een Sling-brontype (Sling-component), dat verantwoordelijk is voor de rendering ervan. De gebruikersinterface wordt (in feite) weergegeven op de server.</td>
+   <td>Wordt in de JCR-opslagplaats ook beschreven als een structuur van knooppunten. In dit geval verwijst elk knooppunt echter naar een Sling-brontype (Sling-component) dat verantwoordelijk is voor de rendering ervan. De gebruikersinterface wordt (in feite) weergegeven op de server.</td>
   </tr>
   <tr>
    <td><p><code>sling:resourceType</code></p>
@@ -66,11 +62,11 @@ Houd tijdens het migreren rekening met de volgende (grote) verschillen tussen de
     </ul> </td>
   </tr>
   <tr>
-   <td><p>Javascript-locatie:</p>
+   <td><p>JavaScript-locatie:</p>
     <ul>
      <li>Imperatieve onderdelen worden rechtstreeks ingesloten met behulp van listeners of beheerd in clientlibs.</li>
     </ul> </td>
-   <td><p>Javascript-locatie:</p>
+   <td><p>JavaScript-locatie:</p>
     <ul>
      <li>Imperatieve onderdelen kunnen niet worden ingesloten in de definitie van het dialoogvenster. scheiding van verantwoordelijkheden.</li>
     </ul> </td>
@@ -78,7 +74,7 @@ Houd tijdens het migreren rekening met de volgende (grote) verschillen tussen de
   <tr>
    <td><p>Gebeurtenisafhandeling:</p>
     <ul>
-     <li>Dialoogwidgets verwijzen rechtstreeks naar JavaScript-code.</li>
+     <li>Dialoogvensterwidgets verwijzen rechtstreeks naar JavaScript-code.</li>
     </ul> </td>
    <td><p>Gebeurtenisafhandeling:</p>
     <ul>
@@ -149,12 +145,12 @@ Hoewel er niet rechtstreeks verband is met een migratie naar de aanraakinterface
 Voor volledige informatie over het ontwikkelen AEM zie de inzameling van middelen onder:
 
 * [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md)
-* [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+* [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 * [AEM 6.5 Tutorials en video&#39;s van sites](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/overview.html)
 * [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](/help/sites-developing/getting-started.md)
-* [AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html)
+* [AEM Gems](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/overview.html?lang=en)
 * [AEM-moderniseringstools](https://opensource.adobe.com/aem-modernize-tools/)
 
 >[!CAUTION]
 >
->AEM Moderniseringsgereedschappen zijn een gemeenschapsinspanning en worden niet ondersteund of gegarandeerd door Adobe.
+>AEM Moderniseringsinstrumenten zijn een gemeenschapsinspanning en worden niet gesteund of gerechtvaardigd door Adobe.

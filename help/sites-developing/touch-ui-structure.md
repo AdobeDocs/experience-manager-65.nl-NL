@@ -1,25 +1,21 @@
 ---
-title: Structuur van de interface voor AEM aanraakbediening
-seo-title: Structure of the AEM Touch-Enabled UI
-description: De interface die is geoptimaliseerd voor aanrakingen, zoals geïmplementeerd in AEM, heeft verschillende onderliggende principes en bestaat uit verschillende sleutelelementen
-seo-description: The touch-optimized UI, as implemented in AEM, has several underlying principles and is made up of several key elements
-uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
+title: Structuur van de gebruikersinterface voor Adobe Experience Manager Touch
+description: De gebruikersinterface die is geoptimaliseerd voor aanrakingen, zoals geïmplementeerd in Adobe Experience Manager, heeft verschillende onderliggende principes en bestaat uit verschillende sleutelelementen
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
-# Structuur van de interface voor AEM aanraakbediening{#structure-of-the-aem-touch-enabled-ui}
+# Structuur van de gebruikersinterface voor Adobe Experience Manager Touch{#structure-of-the-aem-touch-enabled-ui}
 
-De AEM interface met aanraakbediening heeft verschillende onderliggende principes en bestaat uit verschillende belangrijke elementen:
+De UI met aanraakbediening voor Adobe Experience Manager (AEM) heeft verschillende onderliggende principes en bestaat uit verschillende belangrijke elementen:
 
 ## Consoles {#consoles}
 
@@ -58,7 +54,7 @@ Op de werkbalk ziet u de acties die momenteel beschikbaar zijn.
 
 ![chlimage_1-145](assets/chlimage_1-145.png)
 
-Ook afhankelijk van of een bron momenteel is geselecteerd:
+Ook afhankelijk van of een bron is geselecteerd:
 
 ![chlimage_1-146](assets/chlimage_1-146.png)
 
@@ -80,7 +76,7 @@ Bij het ontwerpen van pagina&#39;s ziet u de volgende structurele gebieden.
 
 ### Inhoudskader {#content-frame}
 
-De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudskader is volledig onafhankelijk van de editor - om ervoor te zorgen dat er geen conflicten zijn die te wijten zijn aan CSS of javascript.
+De pagina-inhoud wordt weergegeven in het inhoudskader. Het inhoudsframe is onafhankelijk van de editor. Er zijn dan geen conflicten die te wijten zijn aan CSS of JavaScript.
 
 Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werkbalk.
 
@@ -101,9 +97,9 @@ Het editorkader is een container (abstract) voor alle *pagina-ontwerpelementen*.
 
 ### Zijpaneel {#side-panel}
 
-Dit bevat twee standaardtabbladen waarmee u elementen en componenten kunt selecteren. ze kunnen hier worden gesleept en op de pagina worden neergezet.
+Dit bevat twee standaardtabbladen waarmee u elementen en componenten kunt selecteren. U kunt ze hier naartoe slepen en op de pagina neerzetten.
 
-Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of schuift deze over om het hele venster te bedekken (als het vensterformaat kleiner is dan een breedte van 1024 px); zoals bijvoorbeeld op een mobiel apparaat).
+Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of wordt deze over het gehele venster geschoven (als het vensterformaat kleiner is dan een breedte van 1024 px); zoals bijvoorbeeld op een mobiel apparaat).
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -127,7 +123,7 @@ Op het tabblad Componenten kunt u een keuze maken uit het bereik van componenten
 
 ### Bedekkingen {#overlays}
 
-Deze bedekken het inhoudsframe en worden gebruikt door de [lagen](#layer) om te realiseren hoe u (volledig transparant) kunt communiceren met de componenten en hun inhoud.
+Deze bedekken het inhoudsframe en worden gebruikt door de [lagen](#layer) om te realiseren hoe u (transparant) kunt communiceren met de componenten en hun inhoud.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
@@ -146,19 +142,19 @@ AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het
 
 >[!NOTE]
 >
->Lagen zijn een krachtig concept dat invloed heeft op de weergave van de gebruiker en de interactie met de pagina-inhoud. Wanneer u uw eigen lagen ontwikkelt, moet u ervoor zorgen dat de laag wordt opgeschoond wanneer deze wordt afgesloten.
+>Lagen zijn een krachtig concept dat invloed heeft op de weergave van en interactie met de pagina-inhoud. Wanneer u uw eigen lagen ontwikkelt, moet u ervoor zorgen dat de laag wordt opgeschoond wanneer deze wordt afgesloten.
 
 ### Laagschakelaar {#layer-switcher}
 
 Met de laagschakeloptie kunt u de laag kiezen die u wilt gebruiken. Als u deze optie sluit, wordt de laag weergegeven die momenteel wordt gebruikt.
 
-De laagschakelaar is beschikbaar als daling onderaan van de toolbar (bij de bovenkant van het venster, binnen het redacteurskader).
+De laagschakelaar is beschikbaar als drop-down van de toolbar (bij de bovenkant van het venster, binnen het redacteurskader).
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
 ### Werkbalk Component {#component-toolbar}
 
-Elke instantie van een component zal zijn toolbar tonen wanneer geklikt (of eens of met een langzaam tweemaal klikken). De werkbalk bevat de specifieke handelingen (bijvoorbeeld kopiëren, plakken, open editor) die beschikbaar zijn voor de componentinstantie (Bewerkbaar) op de pagina.
+Elke instantie van een component toont zijn toolbar wanneer geklikt (of eens of met een langzaam tweemaal klikken). De werkbalk bevat de specifieke handelingen (bijvoorbeeld kopiëren, plakken, open editor) die beschikbaar zijn voor de componentinstantie (Bewerkbaar) op de pagina.
 
 Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst bij de bovenkant, of bodem, juiste hoek van de aangewezen component.
 
@@ -166,6 +162,6 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 
 ## Aanvullende informatie {#further-information}
 
-Ga voor meer informatie over de concepten van de interface met aanraakbediening naar het artikel [Concepten van de interface AEM Touch-Enabled](/help/sites-developing/touch-ui-concepts.md).
+Voor meer informatie over de concepten van de interface met aanraakbediening leest u [Concepten van de interface AEM Touch-Enabled](/help/sites-developing/touch-ui-concepts.md).
 
-Voor meer technische informatie raadpleegt u de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor met aanraakbediening.
+Zie voor meer technische informatie [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor met aanraakbediening.

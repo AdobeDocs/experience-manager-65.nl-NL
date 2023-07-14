@@ -1,19 +1,15 @@
 ---
 title: Teasers en strategieën
-seo-title: Teasers and Strategies
 description: Campagnes gebruiken vaak theaters als een mechanisme om een specifiek segment van de bezoekersbevolking door te zetten tot inhoud die op hun belangen is gericht. Een of meer theaters zijn gedefinieerd voor een specifieke campagne.
-seo-description: Campaigns often use teasers as a mechanism to entice a specific segment of the visitor population through to content focused on their interests. One or more teasers are defined for a specific campaign.
-uuid: c78ec858-4b0a-48d5-99b2-5ddd9e15183d
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7f378b94-5233-4358-8d93-a7b3386df00b
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '1200'
+source-wordcount: '1196'
 ht-degree: 4%
 
 ---
@@ -24,25 +20,25 @@ Campagnes gebruiken vaak theaters als een mechanisme om een specifiek segment va
 
 >[!NOTE]
 >
->De component Teaser is afgekeurd in AEM 6.2. Gebruik de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md) in plaats daarvan.
+>De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
 
 * **Merk pagina&#39;s** worden opgeslagen in de sectie Campagnes van de website. Een merk bevat de afzonderlijke campagnes.
 * **Campagnepagina&#39;s** worden opgeslagen in de sectie Campagnes van de website. Elke campagne heeft een afzonderlijke pagina waarop de teasdefinities staan. De container, of overzichtspagina, bevat ook bepaalde informatie en statistieken over de afzonderlijke laserpagina&#39;s.
 
-Teasers binnen AEM bestaan uit verschillende delen:
+Teasers binnen AEM bestaan uit verschillende onderdelen:
 
 * **Teaserpagina&#39;s** worden opgeslagen onder de juiste campagnepagina en houden de definities van de teasalinea&#39;s beschikbaar voor elke specifieke campagne. Deze definities worden gebruikt bij de weergave van de laseralinea&#39;s; inclusief variaties in de inhoud, het segment dat moet worden gebruikt voor het selecteren van een variatie- en versterkingsfactor.
-* De **Teaglascomponent** is beschikbaar buiten het vak en kunt u een exemplaar van uw specifieke tasalinea op een inhoudspagina maken. U kunt de lasercomponent van het hulpapparaat slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **Opmerking:** De component Teaser is afgekeurd in AEM 6.2. Gebruik de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md) in plaats daarvan.
+* De **Teaglascomponent** is beschikbaar buiten het vak en kunt u een exemplaar van uw specifieke tasalinea op een inhoudspagina maken. U kunt de lasercomponent van het hulpapparaat slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **Opmerking:** De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
 * **Twiteralinea&#39;s** Dit zijn de werkelijke instanties van het gummetje in een inhoudspagina. Deze maken een deel van de bezoekers bekend met inhoud die op hun belangen is toegespitst.
 * Pagina&#39;s die de inhoud van de campagne bevatten, hebben de focus op een specifiek bezoekerssegment. Doorgaans leiden de laseralinea&#39;s de bezoeker naar dergelijke pagina&#39;s.
 
 ## Strategieën {#strategies}
 
-Wanneer u een laseralinea toevoegt aan een pagina, moet u de opties **Strategie**.
+Wanneer u een laseralinea aan een pagina toevoegt, moet u de **Strategie**.
 
 Dit is voor het geval dat verscheidene tellers voor selectie beschikbaar zijn aangezien hun toegewezen segmenten allen met succes oplossen. De **Strategie** geeft vervolgens een extra criterium op dat wordt gebruikt voor het selecteren van de getoonde taser:
 
-* **Clikstream score**, is gebaseerd op de tags en verwante tagtreffers die in de clientcontext van de bezoeker worden gehouden (toon hoe vaak een bezoeker op pagina&#39;s met de desbetreffende tag heeft geklikt). De snelheden voor tags die op de teaspagina zijn gedefinieerd, worden vergeleken.
+* **Clikstream score**, is gebaseerd op de tags en verwante tagtreffers die in de clientcontext van de bezoeker worden gehouden (laat zien hoe vaak een bezoeker heeft geklikt op pagina&#39;s die de desbetreffende tag bevatten). De snelheden voor tags die op de teaspagina zijn gedefinieerd, worden vergeleken.
 * **Willekeurig**, voor &quot;willekeurige&quot; selectie; gebruikt de willekeurige factor die voor een pagina is gegenereerd. Dit is te zien bij de [clientcontext](/help/sites-administering/client-context.md).
 * **Eerste** in de lijst van opgeloste segmenten. De volgorde is die van de trapsgewijze elementen op de pagina met de campagneccontainer.
 
@@ -68,7 +64,7 @@ En wij gebruiken de volgende teasdefinities:
   <tr>
    <td>Campagne</td>
    <td>Teaser</td>
-   <td>Toegewezen segment</td>
+   <td>Toegewezen segmenten</td>
    <td>Toegewezen labels </td>
   </tr>
   <tr>
@@ -112,10 +108,10 @@ En wij gebruiken de volgende teasdefinities:
 
 Als we dit vervolgens toepassen op een bezoeker waar:
 
-* **S1**, **S2** en **S6** gelukt
+* **S1**, **S2, en **S6** gelukt
 
-* de tag **marketing** heeft 3 treffers
-* de tag **zakendoen** heeft 6 treffers
+* de tag **marketing** heeft drie treffers
+* de tag **zakendoen** heeft zes treffers
 
 We zien het resultaat:
 
@@ -130,7 +126,7 @@ die worden berekend voordat de passende strategie wordt toegepast:
   <tr>
    <td>Campagne</td>
    <td>Teaser</td>
-   <td>Toegewezen segment</td>
+   <td>Toegewezen segmenten</td>
    <td>Tags </td>
    <td>Succesvolle overeenkomst?</td>
    <td>Resulterende boostfactor</td>
@@ -193,7 +189,7 @@ die worden berekend voordat de passende strategie wordt toegepast:
  </tbody>
 </table>
 
-Deze waarden worden gebruikt om de taser(s) te bepalen die de bezoeker zal zien, afhankelijk van de **Strategie** toegepast op de tasalinea:
+Deze waarden worden gebruikt om te bepalen in welke perioden de bezoeker het scherm ziet, afhankelijk van de **Strategie** toegepast op de tasalinea:
 
 <table>
  <tbody>
@@ -224,11 +220,11 @@ Deze waarden worden gebruikt om de taser(s) te bepalen die de bezoeker zal zien,
 >
 >Als er na de bovenstaande resolutietechnieken meerdere teasers beschikbaar zijn voor selectie, wordt met een interne selectie (willekeurig) één teaser voor weergave geselecteerd.
 >
->Als de strategie bijvoorbeeld Clickstream Score was en T5 dezelfde Clickstream Score had als T6 (d.w.z. 6 in plaats van 3), zou de interne selectie (willekeurig) worden gebruikt om een van deze twee te selecteren.
+>Als de strategie bijvoorbeeld Clickstream Score was en T5 dezelfde Clickstream Score had als T6 (dus zes in plaats van drie), zou de interne selectie (willekeurig) worden gebruikt om een van deze twee te selecteren.
 
-Taserpagina&#39;s/alinea&#39;s worden gebruikt om bepaalde bezoekerssegmenten te sturen naar inhoud die op hun belangen is toegespitst. Zij kunnen een waaier van opties voor de bezoeker voorstellen om van te kiezen, of slechts één teaser paragraaf tonen die op het specifieke bezoekerssegment gebaseerd is; zo kan de getoonde laseralinea afhankelijk zijn van de leeftijd van de bezoeker .
+Taserpagina&#39;s/alinea&#39;s worden gebruikt om bepaalde bezoekerssegmenten te sturen naar inhoud die op hun belangen is toegespitst. Ze kunnen een reeks opties weergeven waaruit de bezoeker kan kiezen, of ze kunnen slechts één laseralinea weergeven die is gebaseerd op het specifieke bezoekerssegment. De weergegeven teasalinea kan bijvoorbeeld afhankelijk zijn van de leeftijd van de bezoeker.
 
-Een laserpagina is doorgaans een tijdelijke actie die een bepaalde periode duurt, totdat deze wordt vervangen door de volgende laserpagina.
+Een laserpagina is doorgaans een tijdelijke actie die een bepaalde tijd duurt, totdat deze wordt vervangen door de volgende laserpagina.
 
 Nadat u uw merk en campagne hebt gemaakt, kunt u uw taservaring maken en instellen.
 
@@ -236,10 +232,10 @@ Nadat u uw merk en campagne hebt gemaakt, kunt u uw taservaring maken en instell
 
 >[!NOTE]
 >
->De component Teaser is afgekeurd in AEM 6.2. Gebruik de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md) in plaats daarvan.
+>De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
 
 1. Navigeer naar de inhoudspagina waar u de tasalinea wilt plaatsen die tot uw campagnepagina zal leiden.
-1. Voeg een **Teaser** component (beschikbaar in de **Personalisatie** in de gewenste positie. Wanneer eerst gecreeerd zal het tonen dat de campagneweg nog niet wordt gevormd:
+1. Voeg een **Teaser** component (beschikbaar in de **Personalisatie** in de gewenste positie. Wanneer eerst gecreeerd, zal het tonen dat de campagneweg nog niet wordt gevormd:
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -250,6 +246,7 @@ Pad naar de campagnepagina die de afzonderlijke teaspagina bevat; De segmenten b
 
    * **[Strategie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
 Methode die wordt gebruikt voor selectie wanneer de veelvoudige segmenten met succes oplossen.
+
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
 1. Klikken **OK** om op te slaan. Afhankelijk van de segmenten die u hebt ingesteld op het taser en het profiel van de gebruiker die u momenteel als gebruiker bent aangemeld, wordt de juiste inhoud weergegeven:

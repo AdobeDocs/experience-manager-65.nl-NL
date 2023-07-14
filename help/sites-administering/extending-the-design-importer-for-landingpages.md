@@ -1,19 +1,15 @@
 ---
 title: De importmodule voor ontwerpen voor bestemmingspagina's uitbreiden en configureren
-seo-title: Extending and Configuring the Design Importer for Landing Pages
 description: Leer hoe u de ontwerpimportmodule configureert voor het openen van pagina's.
-seo-description: Learn how to configure the Design Importer for landing pages.
-uuid: a2dd0c30-03e4-4e52-ba01-6b0b306c90fc
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e02f5484-fbc2-40dc-8d06-ddb53fd9afc2
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
 workflow-type: tm+mt
-source-wordcount: '3503'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -28,7 +24,7 @@ Hier volgen de logische stappen waarmee ontwerpimporters uw aangepaste component
 
 1. Een TagHandler maken
 
-   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een geneste &lt;p> -tag, de &lt;p> -tag wordt ook naar uw TagHandler gegenereerd en het is aan u hoe u deze wilt beheren.
+   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een geneste &lt;p> -tag, de &lt;p> -tag wordt ook naar uw TagHandler gegenereerd en het is aan u hoe u ervoor wilt zorgen.
    * De interface van de markeringsmanager is gelijkaardig aan een interface van de inhoudsmanager van SAX. Het ontvangt SAX-gebeurtenissen voor elke HTML-tag. Als leverancier van labelafhandelingen moet u bepaalde levenscyclusmethoden implementeren die automatisch worden aangeroepen door het framework van ontwerporters.
 
 1. Maak de bijbehorende TagHandlerFactory.
@@ -127,15 +123,15 @@ De browsers die &#39;slepen en neerzetten&#39; van het zip-ontwerp ondersteunen,
 
 ### Modernizr wordt niet ondersteund {#modernizr-is-not-supported}
 
-`Modernizr.js` is een op javascript gebaseerd hulpmiddel dat inheemse mogelijkheden van browsers ontdekt en ontdekt of zij voor html5 elementen of niet geschikt zijn. Ontwerpen die Modernisering gebruiken voor het verbeteren van ondersteuning in oudere versies van verschillende browsers kunnen problemen met importeren veroorzaken in de oplossing van de bestemmingspagina. `Modernizr.js` scripts worden niet ondersteund door de Design importer.
+`Modernizr.js` is een op JavaScript gebaseerd hulpmiddel dat inheemse mogelijkheden van browsers ontdekt en ontdekt of zij voor html5 elementen of niet geschikt zijn. Ontwerpen die Modernisering gebruiken voor het verbeteren van ondersteuning in oudere versies van verschillende browsers kunnen problemen met importeren veroorzaken in de oplossing van de bestemmingspagina. `Modernizr.js` scripts worden niet ondersteund door de Design importer.
 
 ### Pagina-eigenschappen blijven niet behouden op het moment dat het ontwerppakket wordt geïmporteerd {#page-properties-are-not-preserved-at-the-time-of-importing-design-package}
 
-Elke pagina-eigenschap (bijvoorbeeld aangepast domein, HTTPS afdwingen, enz.) Deze instelling voor een pagina (die de sjabloon Lege landingspagina gebruikt) gebruikt voordat het ontwerppakket is geïmporteerd, gaat verloren nadat het ontwerp is geïmporteerd. Daarom wordt het aanbevolen om de pagina-eigenschappen in te stellen nadat het ontwerppakket is geïmporteerd.
+Elke pagina-eigenschap (bijvoorbeeld Aangepast domein, Afdwingend HTTPS, enzovoort) die is ingesteld voor een pagina (die de sjabloon Lege landingspagina gebruikt) voordat het ontwerppakket wordt geïmporteerd, gaat verloren nadat het ontwerp is geïmporteerd. Daarom wordt het aanbevolen om de pagina-eigenschappen in te stellen nadat het ontwerppakket is geïmporteerd.
 
 ### Markeringen alleen HTML gebruikt {#html-only-markup-assumed}
 
-Tijdens het importeren wordt de markering om veiligheidsredenen ontsmet en om het importeren en publiceren van ongeldige opmaak te voorkomen. Dit veronderstelt HTML-slechts prijsverhoging en alle andere vorm van elementen zoals gealigneerde SVG of de Componenten van het Web zullen uit worden gefiltreerd.
+Bij het importeren wordt de markering om veiligheidsredenen ontsmet en om het importeren en publiceren van ongeldige opmaak te voorkomen. Dit veronderstelt HTML-slechts prijsverhoging en alle andere vorm van elementen zoals gealigneerde SVG of de Componenten van het Web zullen uit worden gefiltreerd.
 
 ### Tekst {#text}
 
@@ -191,7 +187,7 @@ Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 * Hiermee stelt u de `jcr:title` eigenschap van de gemaakte component title naar de tekst binnen tag heading die is opgenomen in div.
 * Hiermee stelt u de `type` eigenschap aan de tag heading, in dit geval `h1`.
 
-De titelcomponent ondersteunt 7 typen - `h1, h2, h3, h4, h5, h6` en `default`.
+De titelcomponent ondersteunt zeven typen - `h1, h2, h3, h4, h5, h6` en `default`.
 
 **Declaratie van tag voor korte component**:
 
@@ -251,7 +247,7 @@ Ondersteunde eigenschappen
 
 * Label, met opties voor vet, cursief en onderstrepen
 * Doel-URL, ondersteunt derden en AEM URL
-* Renderopties voor pagina&#39;s (zelfde venster, nieuw venster, enz.)
+* Renderopties voor pagina (zelfde venster, nieuw venster, enzovoort)
 
 HTML-tag om de component op te nemen, klikt u door de component in de geïmporteerde postcode. Hier ziet u hoe u URL&#39;s als doel instelt, &#39;Productdetails weergeven&#39; verwijst naar label enzovoort.
 
@@ -277,16 +273,16 @@ Deze component kan in elke standalone toepassing worden gebruikt of uit zip word
 
 #### Grafische koppeling {#graphical-link}
 
-Deze component CTA kan worden gebruikt om het even welk grafisch beeld met verbinding op de het landen pagina toe te voegen. De afbeelding kan een eenvoudige knop zijn of een grafische afbeelding als achtergrond. Wanneer op de afbeelding wordt geklikt, wordt de gebruiker naar de doel-URL gegaan die in de componenteigenschappen is opgegeven. Het maakt deel uit van de &quot;Vraag aan Actie&quot;groep.
+Deze component CTA kan worden gebruikt om het even welk grafisch beeld met verbinding op de het landen pagina toe te voegen. De afbeelding kan een eenvoudige knop zijn of een grafische afbeelding als achtergrond. Wanneer op de afbeelding wordt geklikt, gaat de gebruiker naar de doel-URL die in de componenteigenschappen is opgegeven. Het maakt deel uit van de &quot;Vraag aan Actie&quot;groep.
 
 Ondersteunde eigenschappen
 
 * Uitsnijden, roteren van afbeelding
 * Tekst, beschrijving, grootte in px aanwijzen
 * Doel-URL, ondersteunt derden en AEM URL
-* Renderopties voor pagina&#39;s (zelfde venster, nieuw venster, enz.)
+* Renderopties voor pagina (zelfde venster, nieuw venster, enzovoort)
 
-HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zip. Hier wordt href toegewezen aan doel-URL, img src de renderingafbeelding, &#39;title&#39; wordt gebruikt als aanwijstekst enzovoort.
+HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zip. Hier wordt href toegewezen aan doel-URL, img src is de renderingafbeelding, &#39;title&#39; wordt gebruikt als aanwijstekst enzovoort.
 
 ```xml
 <div id="cqcanvas">
@@ -304,9 +300,9 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 >
 >Als u een klikdoorgehaalde grafische verbinding wilt tot stand brengen, moet u een ankermarkering en de beeldmarkering in div met verpakken `data-cq-component="clickthroughgraphicallink"` kenmerk.
 >
->bijv. `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Bijvoorbeeld, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
->Andere manieren om een afbeelding aan een ankertag te koppelen met gebruik van CSS worden niet ondersteund. De volgende markering werkt bijvoorbeeld niet:
+>Andere manieren om een afbeelding aan een ankertag te koppelen met CSS worden niet ondersteund. De volgende markering werkt bijvoorbeeld niet:
 >
 >`<div data-cq-component="clickthroughgraphicallink">`
 >
@@ -315,6 +311,7 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 >`</div>`
 >
 >met een geassocieerd `css .hasbackground { background-image: pathtoimage }`
+>
 
 ### Voorloopformulier {#lead-form}
 
@@ -323,19 +320,19 @@ Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegeve
 **Ondersteunde functies**
 
 * Vooraf gedefinieerde loodvelden: voornaam, achternaam, adres, dob, geslacht, about, userId, emailId, submit button zijn beschikbaar in het secundaire bestand. U hoeft alleen het vereiste onderdeel in het formulier voor lead te slepen.
-* Met behulp van deze componenten kan de auteur een zelfstandig hoofdformulier ontwerpen. Deze velden komen overeen met voorbeeldformuliervelden. In een zelfstandige of geïmporteerde ZIP-toepassing kan de gebruiker extra velden toevoegen met behulp van CQ:form- of CTA-leadformuliervelden. Geef deze velden een naam en ontwerp ze volgens de vereisten.
+* Met behulp van deze componenten kan de auteur een zelfstandig hoofdformulier ontwerpen. Deze velden komen overeen met voorbeeldformuliervelden. In een zelfstandige of geïmporteerde ZIP-toepassing kan de gebruiker extra velden toevoegen met behulp van CQ:form- of CTA-voorbeeldformuliervelden, een naam geven en deze ontwerpen volgens de vereisten.
 * Velden voor lead toewijzen met behulp van specifieke vooraf gedefinieerde namen van CTA-lead-formulieren, bijvoorbeeld - firstName voor voornaam in lead-formulier, enzovoort.
-* Velden die niet zijn toegewezen aan een formulier voor leads, worden toegewezen aan cq:formuliercomponenten - tekst, radio, selectievakje, vervolgkeuzelijst, verborgen, wachtwoord.
+* Velden die niet zijn toegewezen voor het uitvoeren van formulierkaarten naar cq:formuliercomponenten - tekst, radio, selectievakje, vervolgkeuzelijst, verborgen, wachtwoord.
 * De gebruiker kan de titel opgeven met de tag &quot;label&quot; en kan de stijl toepassen met het kenmerk &quot;class&quot; van de stijl (alleen beschikbaar voor CTA-voorbeeldformuliercomponenten).
 * De pagina Bedankt en de abonnementenlijst kunnen worden opgegeven als een verborgen parameter van het formulier (aanwezig in index.htm) of kunnen worden toegevoegd/bewerkt in de bewerkbalk van het &quot;Formulier voor begin van lead&quot;.
 
-   &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;redirectUrl&quot; value=&quot;/content/we-retail/en/user/register/thank_you&quot;/>
 
-   &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
+  &lt;input type=&quot;hidden&quot; name=&quot;groupName&quot; value=&quot;leadForm&quot;/>
 
 * Beperkingen als - vereist kunnen worden opgegeven in de bewerkingsconfiguratie van elk onderdeel.
 
-HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zip. Hier wordt &#39;firstName&#39; toegewezen aan &#39;lead form firstName&#39; enzovoort, behalve voor selectievakjes. Deze twee selectievakjes worden toegewezen aan de component cq:form dropdown.
+HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zip. Hier wordt &#39;firstName&#39; toegewezen aan &#39;lead form firstName&#39;, enzovoort, behalve voor selectievakjes. Deze twee selectievakjes worden toegewezen aan de component cq:form dropdown.
 
 ```xml
 <div id="cqcanvas">
@@ -467,7 +464,7 @@ Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voo
 | E:nde-van-type(n) | een E-element, het n-de broedsel van het type | [Structurele pseudo-klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 | E:nde-laatste-van-type(n) | een E-element, het n-de-bros van het type, tellend van het laatste | [Structurele pseudo-klassen](https://www.w3.org/TR/css3-selectors/#structural-pseudos) |
 
-Dit is te wijten aan het feit dat extra html-elementen, zoals &lt;div> -tag wordt na het importeren toegevoegd aan de gegenereerde HTML.
+Dit komt omdat extra HTML-elementen zoals &lt;div> -tag wordt na het importeren toegevoegd aan de gegenereerde HTML.
 
 * Scripts die op de hierboven beschreven structuur vertrouwen, worden ook niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor conversie naar AEM componenten.
 * Stijlen op de opmaakcodes gebruiken voor componentconversie, zoals &lt;div data-cq-component=&quot;&amp;ast;&quot;> wordt niet aanbevolen.
@@ -519,7 +516,7 @@ In de onderstaande tabel worden de eigenschappen kort beschreven:
   <tr>
    <td> </td>
    <td>Patroon vervangen</td>
-   <td>Het patroon dat de gevonden overeenkomsten vervangt. U kunt regex groepsverwijzingen zoals $1, $2 gebruiken. Bovendien ondersteunt dit patroon trefwoorden zoals {designPath} die met de werkelijke waarde worden opgelost tijdens het importeren.</td>
+   <td>Het patroon dat de gevonden overeenkomsten vervangt. U kunt regex groepsverwijzingen zoals $1, $2 gebruiken. Dit patroon ondersteunt ook trefwoorden zoals {designPath} die worden opgelost met de werkelijke waarde tijdens het importeren.</td>
   </tr>
  </tbody>
 </table>
@@ -530,10 +527,12 @@ In de onderstaande tabel worden de eigenschappen kort beschreven:
 >Als u wijzigingen in het zoekpatroon wilt aanbrengen en u de eigenschappeneditor voor het voorvoegsel opent, moet u handmatig backslash-tekens toevoegen om de metatekens voor het voorloopgebied te omzeilen. Als u niet handmatig backslash-tekens toevoegt, wordt de regex als ongeldig beschouwd en wordt de oudere niet vervangen.
 >
 >Als de standaardconfiguratie bijvoorbeeld
->`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
 >
->En u moet vervangen >`CQ_DESIGN_PATH` with `VIPURL` in het zoekpatroon ziet uw zoekpatroon er als volgt uit:
-`/\* *VIPURL *\*/ *(['"])`
+>>`/\* *CQ_DESIGN_PATH *\*/ *(['"])`
+>
+>En u moet vervangen `CQ_DESIGN_PATH` with `VIPURL` in het zoekpatroon ziet uw zoekpatroon er als volgt uit:
+>
+>`/\* *VIPURL *\*/ *(['"])`
 
 ## Problemen oplossen {#troubleshooting}
 
@@ -545,14 +544,14 @@ Als het ontwerppakket een parsys componentenprijsverhoging bevat, dan na het inv
 
 ### Foutberichten die tijdens het importeren worden weergegeven {#error-messages-displayed-during-import}
 
-In het geval van fouten (het geïmporteerde pakket is bijvoorbeeld geen geldige postcode), wordt het pakket niet geïmporteerd tijdens het importeren van het ontwerp. In plaats daarvan wordt boven op de pagina net boven het vak Slepen en neerzetten een foutbericht weergegeven. Hier worden voorbeelden van foutscenario&#39;s gegeven. Nadat u de fout hebt gecorrigeerd, kunt u de bijgewerkte zip opnieuw importeren op dezelfde lege landingspagina. Er zijn verschillende scenario&#39;s waarin fouten worden gegenereerd:
+Als er fouten zijn opgetreden (het geïmporteerde pakket is bijvoorbeeld geen geldige postcode), wordt het pakket niet geïmporteerd tijdens het importeren van het ontwerp. In plaats daarvan wordt boven op de pagina net boven het vak Slepen en neerzetten een foutbericht weergegeven. Hier worden voorbeelden van foutscenario&#39;s gegeven. Nadat u de fout hebt gecorrigeerd, kunt u de bijgewerkte zip opnieuw importeren op dezelfde lege landingspagina. Er zijn verschillende scenario&#39;s waarin fouten worden gegenereerd:
 
 * Geïmporteerd ontwerppakket is geen geldig zip-archief.
 * Het geïmporteerde ontwerppakket bevat geen index.html op het hoofdniveau.
 
 ### Waarschuwingen weergegeven na importeren {#warnings-displayed-after-import}
 
-In het geval van waarschuwingen (bijv. HTML verwijst naar afbeeldingen die niet in het pakket aanwezig zijn), importeert de ontwerpimporteur het zip, maar geeft hij tegelijkertijd een lijst weer met problemen/waarschuwingen in het resultatenvenster. Klik op de koppeling voor problemen om een lijst met waarschuwingen weer te geven waarin alle problemen in het ontwerppakket worden vermeld. Er zijn verschillende scenario&#39;s waarin waarschuwingen worden afgevangen en weergegeven door ontwerpimporteurs:
+Als er waarschuwingen zijn (bijvoorbeeld HTML verwijst naar afbeeldingen die niet in het pakket aanwezig zijn), importeert de ontwerpimporteur het ZIP-bestand, maar geeft hij tegelijkertijd een lijst weer met problemen/waarschuwingen in het resultatenvenster. Klik op de desbetreffende koppeling om de problemen op te lossen, en geeft hij een lijst weer met waarschuwingen waarin de problemen in het ontwerppakket worden vermeld. Er zijn verschillende scenario&#39;s waarin waarschuwingen worden afgevangen en weergegeven door ontwerpimporteurs:
 
 * HTML verwijst naar afbeeldingen die niet in het pakket voorkomen.
 * HTML verwijst naar scripts die niet in het pakket voorkomen.
@@ -560,11 +559,11 @@ In het geval van waarschuwingen (bijv. HTML verwijst naar afbeeldingen die niet 
 
 ### Waar worden de bestanden van het ZIP-bestand opgeslagen in AEM? {#where-are-the-files-of-the-zip-file-being-stored-in-aem}
 
-Nadat de bestemmingspagina is geïmporteerd, worden de bestanden (afbeeldingen, css, js, enz.) in het ontwerppakket worden opgeslagen op de volgende locatie in AEM:
+Nadat de bestemmingspagina is geïmporteerd, worden de bestanden (afbeeldingen, css, js enzovoort) in het ontwerppakket opgeslagen op de volgende locatie in AEM:
 
 `/etc/designs/default/canvas/content/campaigns/<name of brand>/<name of campaign>/<name of landing page>`
 
-Stel dat de landingspagina is gemaakt onder de campagne We.Retail en de naam van de landingspagina is **myBlankLandingPage** Vervolgens ziet u de volgende locatie voor ZIP-bestanden:
+Stel dat de landingspagina is gemaakt in het kader van de campagne We.Retail en de naam van de landingspagina is **myBlankLandingPage** Vervolgens ziet u de volgende locatie voor ZIP-bestanden:
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
@@ -589,7 +588,7 @@ met een CSS toegepast op de klasse `box` als volgt:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Vervolgens `box img` wordt gebruikt in de ontwerpimportmodule, lijkt de resulterende landingspagina de opmaak niet te hebben behouden. Als u dit wilt omzeilen, moet u er rekening mee houden dat AEM div-tags aan het CSS toevoegt en de code dienovereenkomstig herschrijft. Anders zijn sommige CSS-regels ongeldig.
+Vervolgens `box img` wordt gebruikt in de ontwerpimportmodule, lijkt de resulterende landingspagina de opmaak niet te hebben behouden. Als u dit wilt omzeilen, voegt AEM div-tags toe aan de CSS en herschrijft u de code dienovereenkomstig. Anders zijn sommige CSS-regels ongeldig.
 
 ```xml
 .box img
@@ -598,4 +597,5 @@ Vervolgens `box img` wordt gebruikt in de ontwerpimportmodule, lijkt de resulter
 ```
 
 >[!NOTE]
-Ontwerpers dienen zich er ook van bewust te zijn dat alleen code binnen de **id=cqcanvas** wordt door de importeur erkend, anders blijft het ontwerp niet behouden.
+>
+>Ontwerpers dienen zich er ook van bewust te zijn dat alleen code binnen de **id=cqcanvas** wordt door de importeur erkend, anders blijft het ontwerp niet behouden.

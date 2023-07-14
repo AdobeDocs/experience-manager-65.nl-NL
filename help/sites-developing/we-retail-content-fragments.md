@@ -1,25 +1,21 @@
 ---
 title: Inhoudsfragmenten in We.Retail uitproberen
-seo-title: Trying out Content Fragments in We.Retail
 description: Inhoudsfragmenten in We.Retail uitproberen
-seo-description: null
-uuid: 66daddfe-8e98-47b6-8499-db055887ac17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '455'
 ht-degree: 3%
 
 ---
 
 # Inhoudsfragmenten in We.Retail uitproberen{#trying-out-content-fragments-in-we-retail}
 
-Met inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. **Wij.Detailhandel** (zoals beschikbaar in een out-of-the-box-instantie van AEM) biedt het fragment **Arctic Surfing in Lofoten** als basissteekproef. Hieruit blijkt dat:
+Met inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. **Wij.Detailhandel** (zoals beschikbaar in een out-of-the-box-instantie van Adobe Experience Manager) biedt het fragment **Arctic Surfing in Lofoten** als basissteekproef. Hieruit blijkt dat:
 
 * Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties.
 
@@ -37,7 +33,7 @@ Voor de volledige documentatie over het maken, beheren, gebruiken en ontwikkelen
 >
 >**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** zijn verschillende functies in AEM:
 >
->* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
+>* **Inhoudsfragmenten** Dit zijn redactionele inhoud, voornamelijk tekst, en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **Ervaar fragmenten** volledig zijn ingedeeld; een fragment van een webpagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
@@ -48,7 +44,7 @@ Er zijn verscheidene fragmenten van de steekproefinhoud in Wij.Retail; navigeren
 
 Hieronder vallen **Arctic Surfing in Lofoten**, een fragment samen met gerelateerde visuele elementen:
 
-* Navigeren via **Activa**, **Bestanden**, **Wij.Detailhandel**, **Engels**, **Ervaringen**, **Artic Surfing in Lofoten**:
+* Navigeren door **Activa**, **Bestanden**, **Wij.Detailhandel**, **Engels**, **Ervaringen**, **Arctic Surfing in Lofoten**:
 
    * [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
 

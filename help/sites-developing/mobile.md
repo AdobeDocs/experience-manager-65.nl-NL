@@ -1,20 +1,16 @@
 ---
 title: Sites maken voor mobiele apparaten
-seo-title: Creating Sites for Mobile Devices
 description: Het maken van een mobiele site lijkt op het maken van een standaardsite, omdat er ook sjablonen en componenten moeten worden gemaakt
-seo-description: Creating a mobile site is similar to creating a standard site as it also involves creating templates and components
-uuid: 6b19042c-03f1-4e33-970e-475f9fb8c5fb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: mobile-web
 content-type: reference
-discoiquuid: 0aabfb0a-ef9c-4b06-b698-61cad101c3c1
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '3840'
+source-wordcount: '3787'
 ht-degree: 0%
 
 ---
@@ -23,13 +19,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-Het maken van een mobiele site lijkt op het maken van een standaardsite, omdat sjablonen en componenten moeten worden gemaakt. Raadpleeg de volgende pagina&#39;s voor meer informatie over het maken van sjablonen en componenten: [Sjablonen](/help/sites-developing/templates.md), [Componenten](/help/sites-developing/components.md) en [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md). Het belangrijkste verschil bestaat erin de AEM ingebouwde mobiele functies binnen de site mogelijk te maken. Dit wordt bereikt door een sjabloon te maken die afhankelijk is van het component voor mobiele pagina.
+Het maken van een mobiele site lijkt op het maken van een standaardsite, omdat sjablonen en componenten moeten worden gemaakt. Raadpleeg de volgende pagina&#39;s voor meer informatie over het maken van sjablonen en componenten: [Sjablonen](/help/sites-developing/templates.md), [Componenten](/help/sites-developing/components.md), en [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md). Het belangrijkste verschil bestaat erin de ingebouwde mobiele functies van Adobe Experience Manager (AEM) binnen de site mogelijk te maken. Dit wordt bereikt door een sjabloon te maken die afhankelijk is van het component voor mobiele pagina.
 
-U moet ook overwegen om [responsief ontwerp](/help/sites-developing/responsive.md)en één site maken die geschikt is voor meerdere schermgrootten.
+Gebruik [responsief ontwerp](/help/sites-developing/responsive.md)en één site maken die geschikt is voor meerdere schermgrootten.
 
-Als u aan de slag wilt gaan, kunt u de **We.Retail Mobile Demo Site** dat beschikbaar is in AEM.
+Om aan de slag te gaan, kunt u de **We.Retail Mobile Demo Site** dat beschikbaar is in AEM.
 
 Ga als volgt te werk om een mobiele site te maken:
 
@@ -69,13 +65,13 @@ Met MSM (Multi Site Manager) kunt u een live mobiele kopie van een standaardsite
 
 ## Server-Side Mobile-API {#server-side-mobile-api}
 
-De Java-pakketten met de mobiele klassen zijn:
+De Java™-pakketten met de mobiele klassen zijn:
 
-* [com.day.cq.wcm.mobile.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definieert MobileConstants.
-* [com.day.cq.wcm.mobile.api.device](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - definieert Device, DeviceGroup en DeviceGroupList.
-* [com.day.cq.wcm.mobile.api.device.capabilities](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definieert DeviceCapability.
-* [com.day.cq.wcm.mobile.api.wurfl](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - definieert WurflQueryEngine.
-* [com.day.cq.wcm.mobile.core](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - definieert MobileUtil, die verschillende hulpprogrammamethoden biedt die rondom WCM Mobile draaien.
+* [com.day.cq.wcm.mobile.api](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definieert MobileConstants.
+* [com.day.cq.wcm.mobile.api.device](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/package-summary.html) - definieert Device, DeviceGroup en DeviceGroupList.
+* [com.day.cq.wcm.mobile.api.device.capabilities](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/api/device/capability/package-summary.html) - definieert DeviceCapability.
+* [com.day.cq.wcm.mobile.api.wurfl](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/workflow/api/package-summary.html) - definieert WurflQueryEngine.
+* [com.day.cq.wcm.mobile.core](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/mobile/core/package-summary.html) - definieert MobileUtil, die verschillende hulpprogrammamethoden biedt die rondom WCM Mobile draaien.
 
 ### Mobiele componenten {#mobile-components}
 
@@ -131,26 +127,27 @@ De **We.Retail Mobile Demo Site** gebruikt de volgende mobiele componenten die z
 Met het AEM mobiele framework kunt u componenten ontwikkelen die gevoelig zijn voor het apparaat dat het verzoek doet. De volgende codevoorbeelden laten zien hoe u de AEM mobiele API in een componentspaak kunt gebruiken en vooral hoe u dit kunt doen:
 
 * Haal het apparaat op uit de aanvraag:
-   `Device device = slingRequest.adaptTo(Device.class);`
+  `Device device = slingRequest.adaptTo(Device.class);`
 
 * De apparaatgroep ophalen:
-   `DeviceGroup deviceGroup = device.getDeviceGroup();`
+  `DeviceGroup deviceGroup = device.getDeviceGroup();`
 
 * Krijg de mogelijkheden van de apparatengroep:
-   `Collection<DeviceCapability> capabilities = deviceGroup.getCapabilities();`
+  `Collection<DeviceCapability> capabilities = deviceGroup.getCapabilities();`
 
 * Haal de apparaatkenmerken op (onbewerkte capaciteitstoets/waarden uit de WURFL-database):
-   `Map<String,String> deviceAttributes = device.getAttributes();`
+  `Map<String,String> deviceAttributes = device.getAttributes();`
 
 * Haal de user-agent van het apparaat op:
-   `String userAgent = device.getUserAgent();`
+  `String userAgent = device.getUserAgent();`
 
 * Haal de lijst met apparaatgroepen (apparaatgroepen die door de auteur aan de site zijn toegewezen) op van de huidige pagina:
-   `DeviceGroupList deviceGroupList = currentPage.adaptTo(DeviceGroupList.class);`
+  `DeviceGroupList deviceGroupList = currentPage.adaptTo(DeviceGroupList.class);`
 
 * Controleren of de apparaatgroep afbeeldingen ondersteunt
-   `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
-... OF ...   `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
+  `if (deviceGroup.hasCapability(DeviceCapability.CAPABILITY_IMAGES)) {`
+... OF
+  `if MobileUtil.hasCapability(request, DeviceCapability.CAPABILITY_IMAGES) {`
 ...
 
 >[!NOTE]
@@ -161,22 +158,22 @@ Met het AEM mobiele framework kunt u componenten ontwikkelen die gevoelig zijn v
 
 Emulatorgebaseerde authoring biedt auteurs de mogelijkheid om inhoudspagina&#39;s te maken die bedoeld zijn voor mobiele clients. Mobiele inhoud schrijven volgens hetzelfde principe als WYSIWYG bewerken. Auteurs kunnen de weergave van de pagina op een mobiel apparaat alleen zien als ze een pagina met mobiele inhoud bewerken met een apparaatemulator.
 
-Mobiele apparaten emulators zijn gebaseerd op het generieke emulatorframework. Zie voor meer informatie de [Emulators](/help/sites-developing/emulators.md) pagina.
+Mobiele apparaten emulators zijn gebaseerd op het generieke emulatorframework. Zie voor meer informatie [Emulators](/help/sites-developing/emulators.md).
 
-De apparatenmededinger toont het mobiele apparaat op de pagina terwijl het gebruikelijke uitgeven (parsys, componenten) binnen het scherm van het apparaat voorkomt. De apparaatemulator is afhankelijk van de apparaatgroepen die voor de site zijn geconfigureerd. Verschillende emulators kunnen worden toegewezen aan een apparaatgroep. Alle emulators zijn vervolgens beschikbaar op de inhoudspagina. Standaard wordt de eerste emulator weergegeven die is toegewezen aan de eerste apparaatgroep die aan de site is toegewezen. Emulators kunnen worden geschakeld via de emulatorcarrousel boven aan de pagina of via de bewerkingsknop van de Sidetrap.
+De apparatenmededinger toont het mobiele apparaat op de pagina terwijl het gebruikelijke uitgeven (parsys, componenten) binnen het scherm van het apparaat voorkomt. De apparaatemulator is afhankelijk van de apparaatgroepen die voor de site zijn geconfigureerd. Verschillende emulators kunnen worden toegewezen aan een apparaatgroep. Alle emulators zijn vervolgens beschikbaar op de inhoudspagina. Standaard wordt de eerste emulator weergegeven die is toegewezen aan de eerste apparaatgroep die aan de site is toegewezen. Emulators kunnen worden geschakeld via de emulatorcarrousel boven aan de pagina of via de bewerkingsknop van de Sidekick.
 
 **Emulator maken**
 
-Als u een emulator wilt maken, raadpleegt u de [Aangepaste mobiele emulator maken](/help/sites-developing/emulators.md) in de generieke pagina Emulators.
+Als u een emulator wilt maken, raadpleegt u [Aangepaste mobiele emulator maken](/help/sites-developing/emulators.md) in de generieke pagina Emulators.
 
 **Belangrijkste kenmerken van mobiele emulators**
 
 * Een apparaatgroep bestaat uit een of meer emulators: de configuratiepagina van de apparaatgroep, bijvoorbeeld /etc/mobile/groups/touch, bevat de `emulators` eigenschap onder de `jcr:content` knooppunt.
 Opmerking: hoewel het mogelijk is dat dezelfde emulator tot verschillende apparaatgroepen behoort, heeft het weinig zin.
 
-* Via het de configuratiedialoog van de apparatengroep, `emulators` wordt ingesteld met het pad van de gewenste emulator(s). Bijvoorbeeld: `/libs/wcm/mobile/components/emulators/iPhone4`.
+* Via het de configuratiedialoog van de apparatengroep, `emulators` eigenschap wordt ingesteld met het pad van de gewenste emulators. Bijvoorbeeld: `/libs/wcm/mobile/components/emulators/iPhone4`.
 
-* De emulatorcomponenten (bv. `/libs/wcm/mobile/components/emulators/iPhone4`) de mobiele basisemulatorcomponent uitbreiden ( `/libs/wcm/mobile/components/emulators/base`).
+* De emulatorcomponenten (bijvoorbeeld `/libs/wcm/mobile/components/emulators/iPhone4`) de mobiele basisemulatorcomponent uitbreiden ( `/libs/wcm/mobile/components/emulators/base`).
 
 * Elke component die de basis mobiele emulator uitbreidt, is beschikbaar voor selectie wanneer u een apparaatgroep configureert. Aangepaste emulators kunnen dus gemakkelijk worden gemaakt of uitgebreid.
 * Op verzoek wordt de emulatorimplementatie gebruikt om de pagina weer te geven in de bewerkingsmodus.
@@ -197,9 +194,9 @@ Apparaatgroepen worden hieronder gedefinieerd als inhoudspagina&#39;s `/etc/mobi
 Wanneer u een mobiele site maakt, moet u apparaatgroepen aan uw site toewijzen. AEM biedt drie apparaatgroepen, afhankelijk van de HTML- en JavaScript-rendermogelijkheden van het apparaat:
 
 * **Functie** telefoons, voor eigenschapapparaten zoals Sony Ericsson W800 met steun voor basis HTML maar geen steun voor beelden en JavaScript.
-* **Slim** telefoons, voor apparaten zoals Blackberry met ondersteuning voor standaard HTML en afbeeldingen, maar geen ondersteuning voor JavaScript.
+* **Slim** telefoons, voor apparaten zoals BlackBerry® met ondersteuning voor standaard HTML en afbeeldingen, maar geen ondersteuning voor JavaScript.
 
-* **Aanraken** telefoons, voor apparaten zoals iPad met volledige steun voor HTML, beelden, JavaScript en apparatenomwenteling.
+* **Aanraken** telefoons, voor apparaten zoals iPad met volledige steun voor HTML, beelden, JavaScript, en apparatenomwenteling.
 
 Als emulators kunnen worden gekoppeld aan een apparaatgroep (zie de sectie [Een apparaatgroep maken](#creating-a-device-group)), kan de auteur door het toewijzen van een apparaatgroep aan een site een keuze maken tussen de emulators die aan de apparaatgroep zijn gekoppeld om de pagina te bewerken.
 
@@ -239,11 +236,11 @@ Zie voor meer informatie [Apparaatgroepfilters maken](/help/sites-developing/gro
 Maak een apparaatgroep als de groepen die AEM installeren niet aan uw vereisten voldoen.
 
 1. Ga in uw browser naar **Gereedschappen** console.
-1. Een nieuwe pagina maken hieronder **Gereedschappen** > **Mobiel** > **Apparaatgroepen**. In de **Pagina maken** dialoogvenster:
+1. Een pagina maken hieronder **Gereedschappen** > **Mobiel** > **Apparaatgroepen**. In de **Pagina maken** dialoogvenster:
 
-   * Als **Titel** enter `Special Phones`.
+   * Als **Titel**, enter `Special Phones`.
 
-   * Als **Naam** enter `special`.
+   * Als **Naam**, enter `special`.
 
    * Selecteer **Sjabloon mobiele apparaatgroep**.
    * Klikken **Maken**.
@@ -257,7 +254,7 @@ Op de **Algemeen** tab:
    * **Titel**: de naam van de mobiele apparaatgroep.
    * **Beschrijving**: beschrijving van de groep.
    * **Gebruikersagent**: user-agent-tekenreeks waar de apparaten aan worden aangepast. Het is optioneel en kan een regex zijn. Voorbeeld: `BlackBerryZ10`
-   * **Mogelijkheden**: Hiermee bepaalt u of de groep afbeeldingen, CSS, JavaScript of het roteren van apparaten kan verwerken.
+   * **Mogelijkheden**: Hiermee bepaalt u of de groep afbeeldingen, CSS, JavaScript of apparaatrotatie kan verwerken.
    * **Minimale schermbreedte** en **Hoogte**
    * **Emulator uitschakelen**: om de emulator tijdens het bewerken van inhoud in of uit te schakelen.
 
@@ -270,8 +267,6 @@ Op de **Algemeen** tab:
    * Als u een filter wilt toevoegen, klikt u op Item toevoegen en selecteert u een filter in de vervolgkeuzelijst.
    * Filters worden geëvalueerd in de volgorde waarin ze worden weergegeven. Wanneer een apparaat niet aan de criteria van een filter voldoet, worden de opeenvolgende filters in de lijst niet geëvalueerd.
 
-
-
 1. Klik op OK.
 
 Het dialoogvenster voor de configuratie van groepen mobiele apparaten ziet er als volgt uit:
@@ -280,10 +275,10 @@ Het dialoogvenster voor de configuratie van groepen mobiele apparaten ziet er al
 
 #### Aangepaste CSS per apparaatgroep {#custom-css-per-device-group}
 
-Zoals eerder is beschreven, is het mogelijk om een aangepaste CSS te koppelen aan een apparaatgroeppagina, ongeveer zoals de CSS van een ontwerppagina. Deze CSS wordt gebruikt om de apparaatgroepspecifieke weergave van de pagina-inhoud bij auteur en publicatie te beïnvloeden.Deze CSS wordt vervolgens automatisch opgenomen:
+Zoals eerder is beschreven, is het mogelijk om een aangepaste CSS te koppelen aan een apparaatgroeppagina, ongeveer zoals de CSS van een ontwerppagina. Deze CSS wordt gebruikt om de apparaatgroepspecifieke rendering van de pagina-inhoud bij auteur en publicatie te beïnvloeden. Deze CSS wordt vervolgens automatisch opgenomen:
 
-* In de pagina op de auteurinstantie voor elke mededinger die door deze apparatengroep wordt gebruikt.
-* In de pagina op de publicatieinstantie als de gebruikersagent van de aanvraag overeenkomt met een mobiel apparaat in deze specifieke apparaatgroep.
+* In de pagina op de auteurinstantie, voor elke mededinger die door deze apparatengroep wordt gebruikt.
+* Op de pagina op de publicatie-instantie als de gebruikersagent van de aanvraag overeenkomt met een mobiel apparaat in deze specifieke apparaatgroep.
 
 ## Apparaatdetectie op de server {#server-side-device-detection}
 
@@ -301,13 +296,13 @@ Ga voor meer informatie naar [Apparaatgroepfilters maken](/help/sites-developing
 
 ### De WURFL™-database gebruiken {#using-the-wurfl-database}
 
-AEM gebruikt een afgekapte versie van de [WURFL](https://wurfl.sourceforge.net/)™-database voor het opvragen van apparaatmogelijkheden, zoals schermresolutie of javascript-ondersteuning, op basis van de gebruikersagent van het apparaat.
+AEM gebruikt een afgekapte versie van de [WURFL](https://wurfl.sourceforge.net/)™-database voor het opvragen van apparaatmogelijkheden, zoals schermresolutie of JavaScript-ondersteuning, op basis van de gebruikersagent van het apparaat.
 
 De XML-code van de WURFL™-database wordt hieronder weergegeven als knooppunten `/var/mobile/devicespecs` door de `wurfl.xml`bestand bij `/libs/wcm/mobile/devicespecs/wurfl.xml.` De uitbreiding aan knopen komt de eerste keer voor dat `cq-mobile-core` bundel is gestart.
 
 Apparaatmogelijkheden worden opgeslagen als knoopeigenschappen en knooppunten vertegenwoordigen apparaatmodellen. U kunt query&#39;s gebruiken om de mogelijkheden van een apparaat of gebruikersagent op te halen.
 
-Aangezien het WURFL™ gegevensbestand evolueert, kunt u het moeten aanpassen of vervangen. Voor het bijwerken van de database voor mobiele apparaten hebt u de volgende opties:
+Aangezien het WURFL™ gegevensbestand evolueert, kunt u het moeten aanpassen of vervangen. Als u de database voor mobiele apparaten wilt bijwerken, hebt u de volgende opties:
 
 * Vervang het bestand door de nieuwste versie als u een licentie hebt die dit gebruik toestaat. Zie Een andere WURFL-database installeren.
 * Gebruik de versie die in AEM beschikbaar is en vorm een regexp die uw gebruiker-Agent koorden en punten aan een bestaand apparaat WURFL™ aanpast. Zie [Een op regexp gebaseerde overeenstemmende gebruikersagent toevoegen](#adding-a-regexp-based-user-agent-matching).
@@ -338,21 +333,21 @@ AEM automatisch de `wurfl.xml` bestand en werkt de onderstaande knooppunten bij 
 
 Voeg een user-agent als regelmatige uitdrukking onder /apps/wcm/mobile/devicespecs/wurfl/regexp toe om aan een bestaand WURFL™ apparatentype te richten.
 
-1. In **CRXDE Lite**, maakt u een knooppunt onder /apps/wcm/mobile/devicespecs/regexp, bijvoorbeeld apple_ipad_ver1.
+1. In **CRXDE Lite** maakt u bijvoorbeeld een knooppunt onder /apps/wcm/mobile/devicespecs/regexp. `apple_ipad_ver1`.
 1. Voeg de volgende eigenschappen toe aan het knooppunt:
 
-   * **regexp**: reguliere expressie die user-agents definieert, bijvoorbeeld: .&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
-   * **deviceId**: de apparaat-id zoals gedefinieerd in het bestand wurfl.xml, bijvoorbeeld: apple_ipad_ver1
+   * **regexp**: reguliere expressie die user-agents definieert, bijvoorbeeld .&#42;Mozilla.&#42;iPad.&#42;AppleWebKit.&#42;Safari.&#42;
+   * **deviceId**: de apparaat-id, zoals bijvoorbeeld gedefinieerd in het bestand wurfl.xml, `apple_ipad_ver1`
 
 De bovenstaande configuratie veroorzaakt apparaten waarvoor de gebruiker-Agent de geleverde regelmatige uitdrukking aanpast om aan apple_ipad_ver1 WURFL™ apparatenidentiteitskaart worden in kaart gebracht, als het bestaat.
 
 ## Apparaatdetectie op de client {#client-side-device-detection}
 
-In deze sectie wordt beschreven hoe u de clientdetectie van AEM van het apparaat kunt gebruiken om de weergave van pagina&#39;s te optimaliseren of om de client alternatieve websiteversies te bieden.
+In deze sectie wordt beschreven hoe u de detectie van AEM op de client van het apparaat kunt gebruiken om de weergave van pagina&#39;s te optimaliseren of om de client alternatieve websiteversies te bieden.
 
 AEM ondersteunt apparaatclientdetectie op basis van `BrowserMap`. `BrowserMap` wordt in AEM verzonden als een clientbibliotheek onder `/etc/clientlibs/browsermap`.
 
-`BrowserMap` biedt u drie strategieën waarmee u een alternatieve website aan een client kunt aanbieden. Deze worden in de volgende volgorde gebruikt:
+`BrowserMap` biedt u drie strategieën die u kunt gebruiken om een alternatieve website aan een client te leveren. Deze wordt in de volgende volgorde gebruikt:
 
 1. [Alternatieve koppelingen](#providing-alternate-links)
 1. [Specifieke URL voor apparaatgroep](#definingdevicegroupspecificurl)
@@ -360,36 +355,36 @@ AEM ondersteunt apparaatclientdetectie op basis van `BrowserMap`. `BrowserMap` w
 
 >[!NOTE]
 >
->Voor meer informatie over de integratie van de clientbibliotheek leest u de [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md) sectie.
+Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
 
 ### Alternatieve koppelingen opgeven {#providing-alternate-links}
 
-De `PageVariantsProvider` De dienst OSGi kan afwisselende verbindingen voor plaatsen produceren die tot de zelfde familie behoren. Om sites te configureren waarmee de service rekening moet houden, kan een `cq:siteVariant` knooppunt moet worden toegevoegd aan de `jcr:content` knooppunt van de hoofdmap van de site.
+De `PageVariantsProvider` De dienst OSGi kan afwisselende verbindingen voor plaatsen produceren die tot de zelfde familie behoren. Om plaatsen te vormen die door de dienst moeten worden overwogen, a `cq:siteVariant` knooppunt moet worden toegevoegd aan de `jcr:content` knooppunt van de hoofdmap van de site.
 
 De `cq:siteVariant` node moet de volgende eigenschappen hebben:
 
-* `cq:childNodesMapTo` - bepaalt aan welk kenmerk van het koppelingselement de onderliggende knooppunten worden toegewezen; het wordt aanbevolen de inhoud van uw website zodanig te ordenen dat de onderliggende items van het hoofdknooppunt de basis vormen voor een taalvariant van uw globale website (bijvoorbeeld `/content/mysite/en`, `/content/mysite/de`), in welk geval de waarde van de `cq:childNodesMapTo` moeten `hreflang`;
+* `cq:childNodesMapTo` - bepaalt aan welk attribuut van het verbindingselement dat de kindknopen zullen worden in kaart gebracht; het wordt aanbevolen de inhoud van uw website zodanig te ordenen dat de onderliggende items van het hoofdknooppunt de basis vormen voor een taalvariant van uw globale website (bijvoorbeeld `/content/mysite/en`, `/content/mysite/de`), in welk geval de waarde van de `cq:childNodesMapTo` moeten `hreflang`;
 * `cq:variantDomain` - geeft aan wat `Externalizer` het domein wordt gebruikt om de absolute URL&#39;s van de paginariabelen te genereren; als deze waarde niet is ingesteld, worden de paginariabelen gegenereerd met relatieve koppelingen;
 * `cq:variantFamily` - geeft aan tot welke familie van websites deze site behoort; meerdere apparaatspecifieke vertegenwoordigingen van dezelfde website moeten tot dezelfde familie behoren;
 * `media` - slaat de waarden van het mediakenmerk van het koppelingselement op; wordt aangeraden de naam van de `BrowserMap` geregistreerd `DeviceGroups`, zodat de `BrowserMap` De bibliotheek kan de cliënten aan de correcte variant van de website automatisch door:sturen.
 
 #### PageVariantsProvider en Externalalizer {#pagevariantsprovider-and-externalizer}
 
-Wanneer de waarde van de `cq:variantDomain` eigenschap van een `cq:siteVariant` node is not empty, the `PageVariantsProvider` de dienst zal absolute verbindingen produceren gebruikend deze waarde als gevormd domein voor `Externalizer` service. Zorg ervoor dat u de `Externalizer` om uw opstelling te weerspiegelen.
+Wanneer de waarde van de `cq:variantDomain` eigenschap van een `cq:siteVariant` node is not empty, the `PageVariantsProvider` de dienst produceert absolute verbindingen gebruikend deze waarde als gevormd domein voor `Externalizer` service. Zorg ervoor dat u de `Externalizer` om uw opstelling te weerspiegelen.
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 ### Een apparaatgroepspecifieke URL definiëren {#defining-a-device-group-specific-url}
 
-Als u geen alternatieve verbindingen wilt gebruiken, kunt u een globale URL voor elk vormen `DeviceGroup`. We raden u aan uw eigen clientbibliotheek te maken die de `browsermap.standard` clientbibliotheek, maar definieert de apparaatgroepen opnieuw.
+Als u geen alternatieve verbindingen wilt gebruiken, kunt u een globale URL voor elk vormen `DeviceGroup`. Adobe raadt u aan uw eigen clientbibliotheek te maken die de `browsermap.standard` clientbibliotheek, maar definieert de apparaatgroepen opnieuw.
 
-BrowserMap is zodanig ontworpen dat de definities van apparaatgroepen kunnen worden overschreven door een nieuwe apparaatgroep met dezelfde naam te maken en aan de `BrowserMap` -object uit uw aangepaste clientbibliotheek.
+BrowserMap is zodanig ontworpen dat de definities van apparaatgroepen kunnen worden overschreven door een apparaatgroep met dezelfde naam te maken en aan de `BrowserMap` -object uit uw aangepaste clientbibliotheek.
 
 >[!NOTE]
 >
->Lees voor meer informatie de [Aangepaste BrowserMap](#creatingacustomisedbrowsermap) sectie.
+Zie voor meer informatie [Aangepaste BrowserMap](#creatingacustomisedbrowsermap).
 
 ### Op kiezers gebaseerde URL&#39;s definiëren {#defining-selector-based-urls}
 
@@ -415,9 +410,9 @@ Bovendien moet u manueel roepen `BrowserMap.forwardRequest()` in uw `JavaScript`
 
 >[!NOTE]
 >
->Voor meer informatie over de integratie van de clientbibliotheek leest u de [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md) sectie.
+Voor meer informatie over de integratie van de Bibliotheek van de Cliënt, zie [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md).
 
-Nadat u de aangepaste `BrowserMap` clientbibliotheek, stellen wij de volgende aanpak voor:
+Nadat u de aangepaste `BrowserMap` Adobe stelt de volgende aanpak voor in de clientbibliotheek:
 
 1. Een `browsermap.jsp` bestand in uw toepassing
 
@@ -525,21 +520,21 @@ U kunt het apparaat van om het even welk verzoek dwingen om een specifieke versi
 
 >[!NOTE]
 >
->De `wcmmode` paratemer is ingesteld op `disabled` om het gedrag van een publicatie-instantie te simuleren.
+De `wcmmode` parameter is ingesteld op `disabled` om het gedrag van een publicatie-instantie te simuleren.
 
-De overschreven apparaatwaarde wordt opgeslagen in een cookie, zodat u door uw website kunt bladeren zonder de `device` parameter voor elke `URL`.
+De overschrijvende apparaatwaarde wordt opgeslagen in een cookie, zodat u door uw website kunt bladeren zonder de `device` parameter voor elke `URL`.
 
-Dientengevolge moet u het zelfde roepen `URL` met de `device` instellen op `browser` om terug te keren naar de bureaubladversie van de website.
+Dientengevolge moet u het zelfde roepen `URL` met de `device` instellen op `browser` om terug te gaan naar de bureaubladversie van de website.
 
 >[!NOTE]
 >
->BrowserMap slaat de overschreven apparaatwaarde op in een cookie met de naam `BMAP_device`. Als u deze cookie verwijdert, zorgt u ervoor dat CQ de juiste versie van de website aanbiedt op basis van uw huidige apparaat (bijvoorbeeld bureaublad of mobiel).
+BrowserMap slaat de het met voeten treden apparatenwaarde in genoemd koekje op `BMAP_device`. Als u deze cookie verwijdert, zorgt u ervoor dat CQ de juiste versie van de website aanbiedt op basis van uw huidige apparaat (bijvoorbeeld bureaublad of mobiel).
 
 ## Mobiele aanvraagverwerking {#mobile-request-processing}
 
 AEM verwerkt als volgt een aanvraag die is uitgegeven door een mobiel apparaat dat tot de aanraakapparaatgroep behoort:
 
-1. Een iPad verzendt een verzoek naar de AEM-publicatie-instantie, bijvoorbeeld `https://localhost:4503/content/geometrixx_mobile/en/products.html`
+1. Een iPad verzendt bijvoorbeeld een aanvraag naar de AEM-publicatie-instantie. `https://localhost:4503/content/geometrixx_mobile/en/products.html`
 1. AEM bepaalt of de site van de aangevraagde pagina een mobiele site is (door te controleren of de pagina op het eerste niveau `/content/geometrixx_mobile` breidt het mobiele paginacomponent uit). Zo ja:
 1. AEM kijkt omhoog de apparatenmogelijkheden die op gebruiker-Agent in de verzoekkopbal worden gebaseerd.
 1. AEM wijst de apparatenmogelijkheden aan de apparatengroep toe en plaatst `touch` als de selector van de apparaatgroep.
@@ -569,19 +564,19 @@ De **Statistieken** De pagina ziet er als volgt uit:
 
 >[!NOTE]
 >
->De **Statistieken** Deze pagina wordt gemaakt wanneer een mobiel apparaat voor het eerst toegang krijgt tot AEM en wordt gedetecteerd. Daarvoor is het niet beschikbaar.
+De **Statistieken** Deze pagina wordt gemaakt wanneer een mobiel apparaat voor het eerst toegang krijgt tot AEM en wordt gedetecteerd. Daarvoor is het niet beschikbaar.
 
 Als u een ingang in de statistieken moet produceren, kunt u als volgt te werk gaan:
 
 1. Gebruik een mobiel apparaat of een emulator (bijvoorbeeld https://chrispederick.com/work/user-agent-switcher/ op Firefox).
-1. Vraag een mobiele pagina aan op de auteurinstantie door de auteurswijze onbruikbaar te maken, b.v.:
+1. Vraag een mobiele pagina op de auteurinstantie door de auteurswijze onbruikbaar te maken, bijvoorbeeld:
    `https://localhost:4502/content/geometrixx_mobile/en/products.html?wcmmode=disabled`
 
 De **Statistieken** is nu beschikbaar.
 
 ### Ondersteunende pagina-caching voor koppelingen naar vrienden verzenden {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobiele pagina&#39;s kunnen doorgaans in de cache van Dispatcher worden geplaatst, omdat pagina&#39;s die voor een apparaatgroep worden weergegeven, in de pagina-URL worden onderscheiden door de kiezer van de apparaatgroep, bijvoorbeeld `/content/mobilepage.touch.html`. Een aanvraag naar een mobiele pagina zonder kiezer wordt nooit in de cache geplaatst, aangezien in dit geval de apparaatdetectie werkt en ten slotte wordt omgeleid naar de overeenkomende apparaatgroep (of &quot;nomatch&quot; voor dat geval). Een mobiele pagina die wordt weergegeven met een apparaatgroepkiezer, wordt verwerkt door de koppelingenrewriter, die alle koppelingen binnen de pagina herschrijft om ook de apparaatgroepkiezer te bevatten, zodat apparaatdetectie niet opnieuw kan worden uitgevoerd voor elke klik op een reeds gekwalificeerde pagina.
+Mobiele pagina&#39;s kunnen in cache worden geplaatst op Dispatcher, omdat pagina&#39;s die voor een apparaatgroep worden weergegeven, in de pagina-URL worden onderscheiden door de kiezer van de apparaatgroep, bijvoorbeeld `/content/mobilepage.touch.html`. Een aanvraag naar een mobiele pagina zonder kiezer wordt nooit in de cache geplaatst, aangezien in dit geval de apparaatdetectie werkt en ten slotte wordt omgeleid naar de overeenkomende apparaatgroep (of &quot;nomatch&quot; voor dat geval). Een mobiele pagina die wordt weergegeven met een apparaatgroepkiezer, wordt verwerkt door de koppelingenrewriter, die alle koppelingen binnen de pagina herschrijft om ook de apparaatgroepkiezer te bevatten, zodat apparaatdetectie niet opnieuw kan worden uitgevoerd voor elke klik op een reeds gekwalificeerde pagina.
 
 Daarom zou u het volgende scenario kunnen ontmoeten:
 
@@ -589,4 +584,4 @@ Alice van gebruiker wordt opnieuw gericht aan `coolpage.feature.html`en verzendt
 
 Indien `coolpage.feature.html` wordt gediend van een voorste voorste geheime voorgeheugen, krijgt AEM geen kans om het verzoek te analyseren om te weten te komen dat de mobiele selecteur niet de nieuwe gebruiker-Agent aanpast, en het Loodje krijgt de verkeerde vertegenwoordiging.
 
-Als u dit wilt oplossen, kunt u een eenvoudige selectie-UI op de pagina&#39;s opnemen, waar eindgebruikers de apparaatgroep die is geselecteerd door AEM kunnen overschrijven. In het bovenstaande voorbeeld kan de eindgebruiker met een koppeling (of een pictogram) op de pagina schakelen naar `coolpage.touch.html` als hij denkt dat zijn apparaat daarvoor goed genoeg is .
+Als u dit wilt oplossen, kunt u een eenvoudige selectie-UI op de pagina&#39;s opnemen, waar eindgebruikers de apparaatgroep die is geselecteerd door AEM kunnen overschrijven. In het bovenstaande voorbeeld kan de eindgebruiker met een koppeling (of een pictogram) op de pagina schakelen naar `coolpage.touch.html` als ze denken dat hun apparaat daar goed genoeg voor is.

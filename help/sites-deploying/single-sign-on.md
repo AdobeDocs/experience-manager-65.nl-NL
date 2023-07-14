@@ -1,28 +1,24 @@
 ---
 title: Single Sign On
-seo-title: Single Sign On
-description: Leer hoe te om Enige Sign aan (SSO) voor een AEM instantie te vormen.
-seo-description: Learn how to configure Single Sign On (SSO) for an AEM instance.
-uuid: b8dcb28e-4604-4da5-b8dd-4e1e2cbdda18
+description: Leer hoe u SSO (Single Sign On) voor een instantie van Adobe Experience Manager (AEM) configureert.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring, Security
 content-type: reference
-discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 feature: Configuring
 exl-id: 7d2e4620-c3a5-4f5a-9eb6-42a706479d41
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '742'
 ht-degree: 0%
 
 ---
 
 # Single Sign On {#single-sign-on}
 
-Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (dat als vertrouwde op authentiek wordt bekend) voert de authentificatie uit en verstrekt Experience Manager de gebruikersgeloofsbrieven. De Experience Manager controleert en handhaaft de toegangstoestemmingen voor de gebruiker (d.w.z. bepaalt welke middelen de gebruiker wordt toegestaan om toegang te hebben).
+Met Single Sign On (SSO) heeft een gebruiker toegang tot meerdere systemen nadat hij de verificatiegegevens (zoals een gebruikersnaam en wachtwoord) eenmaal heeft opgegeven. Een afzonderlijk systeem (dat als vertrouwde op authentiek wordt bekend) voert de authentificatie uit en verstrekt Experience Manager de gebruikersgeloofsbrieven. De Experience Manager controleert en dwingt de toegangstoestemmingen voor de gebruiker (namelijk bepaalt welke middelen de gebruiker wordt toegestaan om toegang te hebben) af.
 
-De dienst van de Handler van de Authentificatie SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verwerkt de verificatieresultaten die door de vertrouwde authenticator worden verschaft. De manager van de Authentificatie SSO zoekt naar een ssid (Herkenningsteken SSO) als waarde van een speciaal attribuut in de volgende plaatsen in deze orde:
+De dienst van de Handler van de Authentificatie SSO ( `com.adobe.granite.auth.sso.impl.SsoAuthenticationHandler`) verwerkt de verificatieresultaten die door de vertrouwde authenticator worden verschaft. De manager van de Authentificatie SSO zoekt naar een Herkenningsteken SSO (SSID) als waarde van een speciaal attribuut in de volgende plaatsen in deze orde:
 
 1. Aanvraagkoppen
 1. Cookies
@@ -30,18 +26,18 @@ De dienst van de Handler van de Authentificatie SSO ( `com.adobe.granite.auth.ss
 
 Wanneer een waarde wordt gevonden, is het onderzoek gebeëindigd en deze waarde wordt gebruikt.
 
-Vorm de volgende twee diensten om de naam van de attributen te erkennen die de steun opslaan:
+Vorm de volgende twee diensten om de naam van de attributen te erkennen die SSID opslaat:
 
 * De aanmeldingsmodule.
 * De SSO-verificatieservice.
 
-U moet dezelfde kenmerknaam opgeven voor beide services. Het kenmerk is opgenomen in de `SimpleCredentials` die worden verstrekt aan `Repository.login`. De waarde van het kenmerk is irrelevant en wordt genegeerd, de aanwezigheid ervan is alleen belangrijk en geverifieerd.
+Geef dezelfde kenmerknaam op voor beide services. Het kenmerk is opgenomen in de `SimpleCredentials` die worden verstrekt aan `Repository.login`. De waarde van het kenmerk is irrelevant en wordt genegeerd, de aanwezigheid ervan is alleen belangrijk en geverifieerd.
 
 ## SSO configureren {#configuring-sso}
 
-Om SSO voor een AEM instantie te vormen, moet u vormen [SSO-verificatiehandler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
+Om SSO voor een AEM instantie te vormen, vormt u [SSO-verificatiehandler](/help/sites-deploying/osgi-configuration-settings.md#adobegranitessoauthenticationhandler):
 
-1. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+1. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
    Bijvoorbeeld voor NTLM-set:
 
@@ -49,7 +45,8 @@ Om SSO voor een AEM instantie te vormen, moet u vormen [SSO-verificatiehandler](
    * **Namen van koptekst**: `LOGON_USER`
    * **ID-indeling**: `^<DOMAIN>\\(.+)$`
 
-      Wanneer `<*DOMAIN*>` wordt vervangen door uw eigen domeinnaam.
+     Wanneer `<*DOMAIN*>` wordt vervangen door de naam van uw eigen domein.
+
    Voor CoSign:
 
    * **Pad:** indien nodig; bijvoorbeeld: `/`
@@ -62,44 +59,41 @@ Om SSO voor een AEM instantie te vormen, moet u vormen [SSO-verificatiehandler](
    * **Naam koptekst:** SM_USER
    * **ID-indeling**: asIs
 
-
-
 1. Bevestig dat Single Sign On naar wens werkt. met inbegrip van de vergunning.
 
 >[!CAUTION]
 >
 >Zorg ervoor dat de gebruikers tot AEM niet direct kunnen toegang hebben als SSO wordt gevormd.
 >
->Door gebruikers te verplichten door een Webserver te gaan die de agent van uw SSO systeem in werking stelt, wordt gewaarborgd dat geen gebruiker een kopbal, een koekje of een parameter kan direct verzenden die de gebruiker zal leiden om door AEM worden vertrouwd, aangezien de agent dergelijke informatie zal filtreren indien verzonden van de buitenkant.
+>Door gebruikers te vereisen om door een Webserver te gaan die de agent van uw SSO systeem in werking stelt, wordt het gewaarborgd dat geen gebruiker een kopbal, een koekje, of een parameter kan direct verzenden die de gebruiker zal leiden om door AEM worden vertrouwd, aangezien de agent dergelijke informatie zal filtreren indien verzonden van de buitenkant.
 >
->Elke gebruiker die rechtstreeks toegang heeft tot de AEM zonder de webserver te gebruiken, kan als gebruiker optreden door de header, cookie of parameter te verzenden als de namen bekend zijn.
+>Om het even welke gebruiker die tot uw AEM instantie direct kan toegang hebben zonder door de Webserver te gaan zal als om het even welke gebruiker kunnen handelen door kopbal, koekje, of parameter te verzenden als de namen gekend zijn.
 >
->Zorg ook dat van kopballen, koekjes en de namen van de verzoekparameter, u slechts vormt die voor uw opstelling SSO wordt vereist.
+>Zorg ook dat van kopballen, koekjes, en de namen van de verzoekparameter, u slechts vormt die voor uw opstelling SSO wordt vereist.
+>
 
 >[!NOTE]
 >
->Single Sign On wordt vaak gebruikt in combinatie met [LDAP](/help/sites-administering/ldap-config.md).
+>Single Sign On wordt vaak gebruikt met [LDAP](/help/sites-administering/ldap-config.md).
 
 >[!NOTE]
 >
->Als u ook de [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) met de Microsoft Internet Information Server (IIS) is een aanvullende configuratie vereist in:
+>Als u ook de [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) met de Microsoft® Internet Information Server (IIS), dan wordt de extra configuratie vereist in:
 >
->* `disp_iis.ini`
->* IIS
+* `disp_iis.ini`
+* IIS
 >
->In `disp_iis.ini` set:
->(zie [Dispatcher installeren met de Microsoft Internet Information Server](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html#microsoft-internet-information-server) voor volledige informatie)
+In `disp_iis.ini` set: (zie [Dispatcher installeren met de Microsoft® Internet Information Server](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/getting-started/dispatcher-install.html?lang=en#microsoft-internet-information-server) voor volledige informatie)
 >
->* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
->* `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
+* `servervariables=1` (stuurt IIS-servervariabelen als aanvraagheaders door naar de externe instantie)
+* `replaceauthorization=1` (Vervangt een koptekst met de naam &quot;Autorisatie&quot;, anders dan &quot;Standaard&quot;, door de waarde &quot;Standaard&quot;.)
 >
->In IIS:
+In IIS:
 >
->* disable **Anonieme toegang**
+* disable **Anonieme toegang**
 >
->* enable **Geïntegreerde Windows-verificatie**
+* enable **Geïntegreerde Windows-verificatie**
 >
-
 
 U kunt zien welke authentificatiemanager op om het even welke sectie van de inhoudsboom wordt toegepast door te gebruiken **Authenticator** optie van de Felix Console; bijvoorbeeld:
 
@@ -157,20 +151,20 @@ Of u kunt de volgende krullingsopdracht gebruiken om de `TestHeader` header naar
 
 >[!NOTE]
 >
->Wanneer u de aanvraagparameter in een browser gebruikt, ziet u slechts een deel van de HTML - zonder CSS. Dit komt omdat alle verzoeken van de HTML zonder de verzoekparameter worden gedaan.
+Wanneer u de aanvraagparameter in een browser gebruikt, ziet u slechts een deel van de HTML - zonder CSS. Dit komt omdat alle verzoeken van de HTML zonder de verzoekparameter worden gedaan.
 
 ## Koppelingen AEM afmelden verwijderen {#removing-aem-sign-out-links}
 
 Wanneer u SSO gebruikt, worden aanmelden en afmelden extern afgehandeld, zodat AEM eigen aftekenkoppelingen niet langer van toepassing zijn en moeten worden verwijderd.
 
-U kunt de koppeling Afmelden op het welkomstscherm als volgt verwijderen.
+U kunt de koppeling voor uitloggen op het welkomstscherm als volgt verwijderen.
 
 1. Bedekking `/libs/cq/core/components/welcome/welcome.jsp` tot `/apps/cq/core/components/welcome/welcome.jsp`
 1. het volgende deel uit het gsp verwijderen.
 
    `<a href="#" onclick="signout('<%= request.getContextPath() %>');" class="signout"><%= i18n.get("sign out", "welcome screen") %>`
 
-Voer de volgende stappen uit om de koppeling Afmelden die beschikbaar is in het persoonlijke menu van de gebruiker in de rechterbovenhoek te verwijderen:
+Ga als volgt te werk om de koppeling voor uitloggen die beschikbaar is in het persoonlijke menu van de gebruiker in de rechterbovenhoek te verwijderen:
 
 1. Bedekking `/libs/cq/ui/widgets/source/widgets/UserInfo.js` tot `/apps/cq/ui/widgets/source/widgets/UserInfo.js`
 

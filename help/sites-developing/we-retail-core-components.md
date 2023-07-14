@@ -1,18 +1,14 @@
 ---
 title: Core Components uitproberen in We.Retail
-seo-title: Trying out Core Components in We.Retail
 description: Core Components uitproberen in We.Retail
-seo-description: null
-uuid: 8d1cea0b-99d9-49b2-b275-41f14864b1ff
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
 workflow-type: tm+mt
-source-wordcount: '535'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 ## Uitproberen {#trying-it-out}
 
-1. Start AEM met de inhoud van het monster We.Retail en open de [Componentenconsole](/help/sites-authoring/default-components-console.md).
+1. Start Adobe Experience Manager (AEM) met de voorbeeldinhoud Web.Retail en open de [Componentenconsole](/help/sites-authoring/default-components-console.md).
 
    **Algemene navigatie -> Gereedschappen -> Componenten**
 
@@ -52,13 +48,13 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Klik op de knop **Live-gebruik** om te zien op welke pagina&#39;s deze component momenteel wordt gebruikt. Klik op de eerste knop **Bedankt** pagina om de pagina te bewerken.
+1. Klik op de knop **Live-gebruik** om te zien op welke pagina&#39;s deze component wordt gebruikt. Klik op de eerste knop **Bedankt** pagina om de pagina te bewerken.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
 1. Selecteer op de pagina Hartelijk dank de tekstcomponent en klik in het bewerkingsmenu van de component op het pictogram Overerving annuleren.
 
-   [We.Retail heeft een geglobaliseerde sitestructuur](/help/sites-developing/we-retail-globalized-site-structure.md) waar inhoud van taalstramienen naar [live kopieën via een mechanisme dat overerving wordt genoemd](/help/sites-administering/msm.md). Daarom moet overerving worden geannuleerd om een gebruiker in staat te stellen tekst handmatig te bewerken.
+   [We.Retail heeft een geglobaliseerde sitestructuur](/help/sites-developing/we-retail-globalized-site-structure.md) waar inhoud van taalstramienen naar [live kopieën via een mechanisme dat overerving wordt genoemd](/help/sites-administering/msm.md). Daarom moet overerving worden geannuleerd, zodat een gebruiker tekst handmatig kan bewerken.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
@@ -66,7 +62,7 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. Nadat de overerving is geannuleerd en u de tekstcomponenten selecteert, zijn er veel meer opties beschikbaar. Klik op** Bewerken**.
+1. Nadat de overerving is geannuleerd en u de tekstcomponenten selecteert, zijn er veel meer opties beschikbaar. Klikken **Bewerken**.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
@@ -74,12 +70,12 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
-1. Van de **Pagina-informatie** menu selecteren **Sjabloon bewerken**.
+1. Van de **Pagina-informatie** menu, selecteert u **Sjabloon bewerken**.
 1. Klik in de Sjablooneditor van de pagina op de knop **Beleid** pictogram van de component Text in het deelvenster **Layout Container** van de pagina.
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Met de kerncomponenten kan een sjabloonauteur configureren welke eigenschappen beschikbaar zijn voor de auteurs van de pagina. Het gaat hierbij onder andere om functies zoals toegestane bronnen voor plakken, opmaakopties, beschikbare alineastijlen, enzovoort.
+1. Met de kerncomponenten kan een sjabloonauteur configureren welke eigenschappen beschikbaar zijn voor de auteurs van de pagina. Dit zijn onder andere functies zoals toegestane bronnen voor plakken, opmaakopties en beschikbare alineastijlen.
 
    Dergelijke ontwerpdialoogvensters zijn beschikbaar voor veel kerncomponenten en werken samen met de sjablooneditor. Zodra toegelaten, zijn zij beschikbaar aan de auteur door de componentenredacteurs.
 
@@ -87,6 +83,6 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 ## Aanvullende informatie {#further-information}
 
-Raadpleeg het ontwerpdocument voor meer informatie over de kerncomponenten [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
+Raadpleeg het ontwerpdocument voor meer informatie over de kerncomponenten [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en) voor een technisch overzicht.
 
 Mogelijk wilt u verder onderzoek uitvoeren [bewerkbare sjablonen](/help/sites-developing/we-retail-editable-templates.md). Verwijs naar het auteursdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige details over bewerkbare sjablonen.

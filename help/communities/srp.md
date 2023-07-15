@@ -1,18 +1,14 @@
 ---
 title: Overzicht opslagbronprovider
-seo-title: Storage Resource Provider Overview
 description: Gemeenschappelijke opslag voor de Gemeenschappen
-seo-description: Common storage for Communities
-uuid: abdf4e5a-767b-428f-9aa4-0dc06819a26e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 63abeda4-6ea1-4b45-b188-f9c6b44ca0cd
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1125'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Vanaf AEM Communities 6.1 wordt community-inhoud, die doorgaans door gebruikers gegenereerde inhoud (UGC) wordt genoemd, opgeslagen in één gemeenschappelijke winkel die wordt geleverd door een [opslagbronprovider](working-with-srp.md) (SRP).
+Vanaf Adobe Experience Manager (AEM) Communities 6.1 wordt community-inhoud, die doorgaans door gebruikers gegenereerde inhoud (UGC) wordt genoemd, opgeslagen in één gemeenschappelijke opslagplaats die wordt geleverd door een [opslagbronprovider](working-with-srp.md) (SRP).
 
 Er zijn verscheidene opties SRP, die allen tot UGC door een nieuwe interface van AEM Communities toegang hebben, [API voor SocialResourceProvider](srp-and-ugc.md) (SRP API), die alle (CRUD)-bewerkingen (create, read, update and delete) omvat.
 
@@ -41,17 +37,17 @@ Zie ook:
 
 ## Informatie over de opslagplaats {#about-the-repository}
 
-Om SRP te begrijpen, is het nuttig om de rol van de AEM bewaarplaats (OAK) in een AEM communautaire plaats te begrijpen.
+Om SRP te begrijpen, is het nuttig om de rol van de AEM bewaarplaats (Oak) in een AEM communautaire plaats te begrijpen.
 
-**Java Content Repository (JCR)**
-Deze standaard definieert een gegevensmodel en een programmeerinterface voor toepassingen ([JCR-API](https://jackrabbit.apache.org/jcr/jcr-api.html)) voor opslagplaatsen voor inhoud. Het combineert kenmerken van conventionele dossiersystemen met die van relationele gegevensbestanden, en voegt een aantal extra eigenschappen toe die inhoudstoepassingen vaak nodig hebben.
+**Java™ Content Repository (JCR)**
+Deze standaard definieert een gegevensmodel en een programmeerinterface voor toepassingen ([JCR-API](https://jackrabbit.apache.org/jcr/jcr-api.html)) voor opslagplaatsen voor inhoud. Het combineert kenmerken van conventionele dossiersystemen met die van relationele gegevensbestanden, en voegt verscheidene extra eigenschappen toe die inhoudstoepassingen vaak nodig hebben.
 
-Eén implementatie van JCR is de AEM opslagplaats, OAK.
+Eén implementatie van JCR is de AEM opslagplaats, Oak.
 
-**Apache Jackrabbit Oak (OAK)**
-[OAK](../../help/sites-deploying/platform.md) is een implementatie van JCR 2.0 die een gegevensopslagsysteem specifiek voor inhoud-centric toepassingen wordt ontworpen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De dataopslag slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De interface voor het benaderen van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
+**Apache Jackrabbit Oak**
+[Eik](../../help/sites-deploying/platform.md) is een implementatie van JCR 2.0 die een gegevensopslagsysteem is dat voor inhoud-centric toepassingen wordt ontworpen. Dit is een soort hiërarchische database die is ontworpen voor ongestructureerde en semi-gestructureerde gegevens. De gegevensopslagruimte slaat niet alleen de gebruikersgerichte inhoud op, maar ook alle code, sjablonen en interne gegevens die door de toepassing worden gebruikt. De interface voor het benaderen van inhoud is [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md).
 
-Zowel JCR als OAK worden typisch gebruikt om naar de AEM bewaarplaats te verwijzen.
+Zowel JCR als Oak worden doorgaans gebruikt om naar de AEM opslagplaats te verwijzen.
 
 Nadat u site-inhoud hebt ontwikkeld in de omgeving van de privéauteur, moet u deze kopiëren naar de openbare publicatieomgeving. Dit gebeurt vaak via een bewerking die *[replicatie](deploy-communities.md#replication-agents-on-author)*. Dit gebeurt onder controle van de auteur/ontwikkelaar/beheerder.
 
@@ -71,7 +67,7 @@ Wanneer UGC aan gedeelde opslag wordt bewaard, is er één enkel geval van lidin
 
 ### ASRP {#asrp}
 
-In het geval van ASRP, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in de wolkendienst die door Adobe wordt ontvangen en wordt beheerd. UGC die in ASRP is opgeslagen, kan niet met CRXDE Lite worden bekeken en kan niet worden benaderd met behulp van de JCR API.
+Als er ASRP is, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in de wolkendienst die door Adobe wordt ontvangen en wordt beheerd. UGC die in ASRP is opgeslagen, wordt mogelijk niet weergegeven met CRXDE Lite of benaderd via de JCR API.
 
 Zie [ASRP - Adobe Storage Resource Provider](asrp.md).
 
@@ -81,7 +77,7 @@ ASRP gebruikt de wolk van Adobe voor vragen.
 
 ### MSRP {#msrp}
 
-In het geval van MSRP, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in MongoDB. UGC die is opgeslagen in MSRP kan niet worden weergegeven met CRXDE Lite en kan niet worden benaderd via de JCR API.
+Als er is, MSRP, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in MongoDB. UGC opgeslagen in MSRP kan niet met CRXDE Lite worden bekeken of worden betreden gebruikend JCR API.
 
 Zie [MSRP - MongoDB Storage Resource Provider](msrp.md).
 
@@ -91,11 +87,11 @@ MSRP gebruikt Solr voor vragen.
 
 ### JSRP {#jsrp}
 
-JSRP is de standaardleverancier voor de toegang tot van al UGC op één enkele AEM instantie. Het verstrekt de capaciteit om AEM Communities 6.1 zonder de behoefte aan vestiging MSRP of ASRP snel te ervaren.
+JSRP is de standaardleverancier voor de toegang tot van al UGC op één enkele AEM instantie. Het laat u snel AEM Communities 6.1 zonder de behoefte ervaren om opstelling MSRP of ASRP.
 
 Zie [JSRP - JCR Storage Resource Provider](jsrp.md).
 
-In het geval van JSRP, terwijl UGC wordt opgeslagen in JCR, en toegankelijk via zowel CRXDE Lite als JCR API, wordt ten zeerste geadviseerd dat JCR API nooit wordt gebruikt om dit te doen, anders kunnen toekomstige veranderingen douanecode beïnvloeden.
+Als er JSRP is, terwijl UGC wordt opgeslagen in JCR en toegankelijk via zowel de CRXDE Lite- als de JCR-API, wordt aanbevolen dat u hiervoor nooit de JCR API gebruikt, anders kunnen toekomstige wijzigingen van invloed zijn op aangepaste code.
 
 Bovendien wordt de opslagplaats voor de auteur- en publicatieomgevingen niet gedeeld. Hoewel een cluster met publicatie-instanties resulteert in een gedeelde publicatierecorder, is UGC die tijdens publicatie wordt ingevoerd, niet zichtbaar voor de auteur, zodat de auteur de UGC niet kan beheren. UGC blijft alleen behouden in de AEM repository (JCR) van de instantie waarin het werd ingevoerd.
 
@@ -136,17 +132,17 @@ Hieronder ziet u een voorbeeld van een schaduwknooppunt, waarbij u de opdracht [
 
 * De component bestaat in de lokale opslagplaats op:
 
-   `/content/community-components/en/comments/jcr:content/content/includable/comments`
+  `/content/community-components/en/comments/jcr:content/content/includable/comments`
 
 * Het corresponderende schaduwknooppunt bestaat in de lokale opslagruimte op:
 
-   `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
+  `/content/usergenerated/content/community-components/en/comments/jcr:content/content/includable/comments`
 
-Er wordt geen UGC gevonden onder het schaduwknooppunt.
+Er is geen UGC gevonden onder het schaduwknooppunt.
 
 Standaard worden schaduwknooppunten ingesteld op een publicatie-instantie wanneer naar de relevante substructuur wordt verwezen voor lezen of schrijven.
 
-Als voorbeeld, veronderstel de plaatsing [MSRP](msrp.md) met een TarMK-publicatiebedrijf.
+Als voorbeeld, veronderstel dat de plaatsing is [MSRP](msrp.md) met een TarMK-publicatiebedrijf.
 
 Wanneer een [lid](users.md) Hiermee wordt UGC op pub1 geplaatst (opgeslagen in MongoDB), worden schaduwknooppunten gemaakt in JCR op pub1.
 

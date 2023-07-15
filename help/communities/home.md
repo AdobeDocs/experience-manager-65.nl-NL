@@ -1,25 +1,23 @@
 ---
 title: Adobe Experience Manager 6.5 Community Guide
-seo-title: Adobe Experience Manager 6.5 Communities Guide
-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. Blader door onze gids die verklaart hoe te om op te stellen, te beheren, te ontwikkelen en auteursgemeenschappen te schrijven.
-seo-description: Covers all AEM Communities tasks, such as creating online experiences such as forums, user groups, learning resources, and other social features.
+description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. Blader door deze gids die verklaart hoe te om op te stellen, te beheren, te ontwikkelen, en auteursgemeenschappen.
 exl-id: 63040353-d34c-4306-9e7a-584ba48d8ad5
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '355'
-ht-degree: 22%
+source-wordcount: '352'
+ht-degree: 18%
 
 ---
 
-# Adobe Experience Manager 6.5 Community Guide
+# Adobe Experience Manager (AEM) 6.5 Community Guide
 
-Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. Blader door onze gids die verklaart hoe te om op te stellen, te beheren, te ontwikkelen en auteursgemeenschappen te schrijven.
+Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies. Blader door deze gids die verklaart hoe te om op te stellen, te beheren, te ontwikkelen, en auteursgemeenschappen.
 
 ## AEM
 
 * [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
-* [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
+* [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html?lang=en)
 * [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.5-gebruikershandleidingen
@@ -42,11 +40,11 @@ Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere s
 
 ## Belangrijke AEM
 
-* [Zelfstudies AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Zelfstudies AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en)
 * [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/introduction.html?lang=en)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
-* [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
+* [Experience League](https://experienceleague.adobe.com/#home)
+* [AEM-communityforum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community)

@@ -9,9 +9,9 @@ topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptive Forms
 exl-id: 7742c3ca-1755-44c5-b70f-61309f09d1b8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1931'
 ht-degree: 1%
 
 ---
@@ -234,7 +234,7 @@ U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast
 
 1. Tik op het lege gebied boven de **[!UICONTROL Customer ID]** veld en tik **[!UICONTROL Responsive Panel Container]**. Stel de **[!UICONTROL Background]** > **[!UICONTROL Background Color]** tot F1F2F2. Tikken ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
-   ![](do-not-localize/responsive-panel-container.png)
+   ![Container voor responsief deelvenster](do-not-localize/responsive-panel-container.png)
 
 ### De knoppen opmaken {#style-the-buttons}
 

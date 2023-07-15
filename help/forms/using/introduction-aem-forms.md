@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '894'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ Met name voor mensen in het veld is het handig om gegevens offline vast te legge
 * Aanpasbare dashboards voor real-time inzicht in bedrijfsverrichtingen
 * API voor verbinding met rapportagehulpprogramma&#39;s van derden
 
-![](do-not-localize/3rd-draft.gif)
+![Derde concept](do-not-localize/3rd-draft.gif)
 
 ## Persoonlijke communicatie {#personalized-communication}
 
@@ -115,6 +115,6 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 * Ondersteuning voor digitale handtekeningen om de integriteit van de inhoud en de identiteit van de ondertekenaar te valideren
 * Invoegtoepassing voor documentbeveiliging voor AEM Forms, inclusief codering, gebruiksbeleid, bijhouden en controleren
 
-![](do-not-localize/layout-02.png)
+![Layout twee](do-not-localize/layout-02.png)
 
 Gestroomlijnde workflow voor persoonlijke communicatie

@@ -1,18 +1,14 @@
 ---
 title: Essentiële elementen voor community-sites
-seo-title: Community Site Essentials
 description: Websites exporteren en verwijderen en aangepaste sitesjablonen maken
-seo-description: Exporting and deleting community sites and creating custom site templates
-uuid: f0ec0e71-64e9-415a-b14a-939a9b1611c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 exl-id: 1dc568cd-315c-4944-9a3e-e5d7794e5dc0
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '498'
+source-wordcount: '495'
 ht-degree: 0%
 
 ---
@@ -56,7 +52,7 @@ Bijvoorbeeld: `/content/sites/engage/en/configuration`
 
 >[!CAUTION]
 >
->Als de aangepaste sjabloon de naam krijgt *site.hbs* Vervolgens worden alle communitysites aangepast.
+>Als de aangepaste sjabloon de naam krijgt *site.hbs*, dan worden alle communautaire plaatsen aangepast.
 
 ### Voorbeeld van aangepaste sitesjabloon {#custom-site-template-example}
 
@@ -73,19 +69,19 @@ Identificeer het douanemalplaatje door een `page-template` eigenschap voor het c
 
 ![crxde-siteconfiguration](assets/crxde-siteconfiguration.png)
 
-Zorg ervoor dat u **Alles opslaan** en repliceer douanecode aan alle AEM instanties (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd).
+Zorg ervoor dat u **Alles opslaan** en repliceer douanecode aan alle instanties van Adobe Experience Manager (AEM) (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd).
 
 Voor het repliceren van aangepaste code wordt het volgende aanbevolen: [een pakket maken](../../help/sites-administering/package-manager.md#creating-a-new-package) en implementeren.
 
 ## Een communautaire site exporteren {#exporting-a-community-site}
 
-Wanneer een gemeenschapssite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
+Wanneer een gemeenschapssite is gemaakt, is het mogelijk de site te exporteren als een AEM pakket dat is opgeslagen in Package Manager en dat beschikbaar is voor downloaden en uploaden.
 
 Dit is beschikbaar via de [Community Sites-console](sites-console.md#exporting-the-site).
 
-Merk op dat UGC en douanecode niet inbegrepen in het pakket van de communautaire plaats is.
+UGC en aangepaste code worden niet opgenomen in het pakket met de communitysite.
 
-Als u UGC wilt exporteren, gebruikt u de opdracht [AEM Communities UGC-migratiehulpprogramma](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration), een open bronmigratiehulpmiddel beschikbaar op GitHub.
+Als u UGC wilt exporteren, gebruikt u de opdracht [AEM Communities UGC-migratiehulpprogramma](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration), een opensource migratiehulpmiddel beschikbaar op GitHub.
 
 ## Een Community-site verwijderen {#deleting-a-community-site}
 
@@ -105,7 +101,7 @@ U kunt als volgt de unieke site-id identificeren die aan de gemeenschapssite is 
 
 * De site-id is de derde component van `rep:principalName`
 
-   Als `rep:principalName = community-enable-nrh9h-members`
+  Als `rep:principalName = community-enable-nrh9h-members`
 
    * **sitenaam** = *enable*
    * **site-id** = *nrh9h*
@@ -113,9 +109,9 @@ U kunt als volgt de unieke site-id identificeren die aan de gemeenschapssite is 
 
 ### Door gebruiker gegenereerde inhoud {#user-generated-content}
 
-Verkrijg het gemeenschappen-srpTools project van Github:
+Verkrijg het gemeenschap-srp-hulpmiddelen project van GitHub:
 
-* [https://github.com/Adobe-Marketing-Cloud/communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/communities-srp-tools)
+* [https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools](https://github.com/Adobe-Marketing-Cloud/aem-communities-srp-tools)
 
 Dit bevat servlet om al UGC van om het even welk SRP te schrappen.
 

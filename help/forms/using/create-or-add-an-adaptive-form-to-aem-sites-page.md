@@ -3,9 +3,9 @@ title: Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina
 description: Ontdek hoe u moeiteloos een adaptief formulier kunt maken of toevoegen aan uw AEM Sites-pagina. Leer stapsgewijze technieken en tips en trucs voor het integreren van dynamische en aanpasbare formulieren in uw website en het optimaliseren van uw digitale ervaringen voor maximale impact.
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: cd6d9b4d019e24002e4fe1cc8679d270b24c2934
+source-git-commit: 762e918a2c65898fc518f131d44421fb82ce4d6f
 workflow-type: tm+mt
-source-wordcount: '2831'
+source-wordcount: '2861'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Met AEM paginaeditor kunt u snel meerdere formulieren maken en toevoegen aan uw 
 
 AEM Forms biedt adaptieve formuliercontainer en adaptieve Forms - Embed-componenten. Met de component Adaptief Forms - Embed kunt u een bestaand adaptief formulier toevoegen of een nieuw formulier maken met de Adaptief Forms Editor.
 
-![](/help/forms/using/assets/adaptive-form-in-sites-page.png)
+![Aangepast formulier op sitepagina](/help/forms/using/assets/adaptive-form-in-sites-page.png)
 
 ## Voordelen van het gebruik van de component Aangepaste formuliercontainer in AEM paginaeditor of Ervaar fragment
 
@@ -177,7 +177,7 @@ Een adaptief formulier in AEM Sites-pagina converteren naar een Experience-fragm
 1. Open de AEM Sites-pagina met het adaptieve formulier (in de Adaptive Forms Container-component) in de bewerkingsmodus.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
 1. Selecteer in de menubalk de optie ![Omzetten in ervaringspictogram voor fragmentvariatie](/help/forms/using/assets/Smock_FilingCabinet_18_N.svg) Omzetten in het pictogram voor het ervaren van fragmentvariatie.
-   ![](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
+   ![Formulier in sitepagina converteren naar een ervaringsfragment](/help/forms/using/assets/convert-form-in-sites-page-to-an-experience-fragment.png)
 
    Er wordt een dialoogvenster weergegeven waarin u de container Adaptief formulier kunt converteren naar een nieuw Ervaringsfragment of een bestaand Erviteitsfragment kunt uitbreiden
 1. Stel in het dialoogvenster Converteren naar ervaringsfragmentvariatie waarden in voor de volgende opties:
@@ -195,7 +195,7 @@ Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn va
 1. Open de AEM van de Pagina-editor of Ervaar Fragment dat het adaptieve formulier bevat.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/using/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van verzendacties wordt geopend.
-   ![](/help/forms/using/assets/adaptive-forms-container.png)
+   ![Container voor adaptieve formulieren](/help/forms/using/assets/adaptive-forms-container.png)
 1. Selecteer en vorm een Submit actie, die op uw vereisten wordt gebaseerd. Zie voor meer informatie over Handelingen verzenden [Handeling Adaptief verzenden van formulier](configuring-submit-actions.md)
 
 
@@ -213,7 +213,7 @@ Een JSON-schema of formuliergegevensmodel configureren voor uw formulier:
 1. Open de AEM van de Pagina-editor of Ervaar Fragment dat het adaptieve formulier bevat.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/using/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
-   ![](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
+   ![Formuliergegevensmodel adaptieve formuliercontainer](/help/forms/using/assets/form-data-model-adaptive-forms-container.png)
 1. Selecteer en configureer een JSON-schema of formuliergegevensmodel op basis van uw vereisten. Zie voor meer informatie over Handelingen verzenden [Handeling Adaptief verzenden van formulier](configuring-submit-actions.md).
 
    * Wanneer u **[!UICONTROL Form Model]** gebruiken **[!UICONTROL Select Form Data Model]** om een vooraf geconfigureerd formuliergegevensmodel te selecteren.
@@ -235,7 +235,7 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 1. Open de AEM van de Pagina-editor of Ervaar Fragment dat het adaptieve formulier bevat.
 1. Open de inhoudsstructuur en selecteer de **[!UICONTROL Adaptive Forms Container]** dat als host fungeert voor uw adaptieve formulier. Een AEM Sites-pagina kan meerdere Adaptive Forms hosten. Selecteer dus zorgvuldig de juiste adaptieve Forms-container.
 1. Klik op de eigenschappen van de container van het adaptieve formulier ![Eigenschappen van adaptieve formuliercontainers](/help/forms/using/assets/configure-icon.svg) pictogram. Het dialoogvenster Aangepaste formuliercontainer voor het configureren van gegevensmodellen wordt geopend.
-   ![](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
+   ![Pagina-editor voor Fdm-sites vooraf invullen](/help/forms/using/assets/prefill-service-fdm-aem-sites-page-editor.png)
 1. Selecteer een formuliergegevensmodel. Open de **[!UICONTROL Basic]** tab. Selecteer in de service Prefill de optie **[!UICONTROL Forms Portal Draft Prefill Service]**.
 1. Klik op **[!UICONTROL Done]**.
 

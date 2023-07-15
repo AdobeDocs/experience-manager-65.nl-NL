@@ -1,18 +1,14 @@
 ---
 title: Framework sociale component
-seo-title: Social Component Framework
 description: Het kader van de sociale component (SCF) vereenvoudigt het proces om, componenten van de Gemeenschappen te vormen aan te passen en uit te breiden
-seo-description: The social component framework (SCF) simplifies the process of configuring, customizing, and extending Communities components
-uuid: 23b4418d-b91c-46fc-bf42-1154ef79fe5a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: 1d5cfff10735ea31dc0289b6909851b8717936eb
+source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1478'
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ De voordelen van het kader:
 * **Functioneel**: Eenvoud van integratie buiten de handgreep met weinig of geen aanpassing voor 80% van de gebruikscategorieën.
 * **Skinnable**: Consistent gebruik van HTML-kenmerken voor CSS-opmaak.
 * **Uitbreidbaar**: De implementatie van de component is object-oriented en licht op bedrijfslogica - gemakkelijk om stijgende bedrijfslogin op server toe te voegen.
-* **Flexibel**: Eenvoudige JavaScript-sjablonen zonder logica die eenvoudig kunnen worden overschreven en aangepast.
+* **Flexibel**: Eenvoudige JavaScript-sjablonen zonder logica die gemakkelijk kunnen worden bedekt en aangepast.
 * **Toegankelijk**: De HTTP-API ondersteunt het posten vanaf elke client, inclusief mobiele apps.
 * **Overdraagbaar**: Integreer/sluit in om het even welke webpagina in die op om het even welke technologie wordt gebouwd.
 
@@ -56,11 +52,11 @@ Als u de componenten wilt aanpassen of uitbreiden, schrijft u alleen de overlays
    * Wijzig de JS-sjabloon en de CSS.
 * Voor look, Voel en UX:
    * De JS-sjabloon, CSS en [JavaScript uitbreiden/overschrijven](client-customize.md#extending-javascript).
-* Om de informatie te wijzigen beschikbaar aan het Malplaatje JS of aan het eindpunt van GET:
+* Om de informatie beschikbaar aan het Malplaatje JS of aan het eindpunt van GET te wijzigen:
    * Breid uit [SocialComponent](server-customize.md#socialcomponent-interface).
 * Aangepaste verwerking toevoegen tijdens bewerkingen:
    * Schrijf een [OperationExtension](server-customize.md#operationextension-class).
-* Een nieuwe aangepaste bewerking toevoegen:
+* Een aangepaste bewerking toevoegen:
    * Een nieuwe [Verschuiving na bewerking](server-customize.md#postoperation-class).
    * Bestaande gebruiken [OperationServices](server-customize.md#operationservice-class) indien nodig.
    * Voeg JavaScript-code toe om de bewerking zo nodig vanaf de client aan te roepen.
@@ -69,9 +65,9 @@ Als u de componenten wilt aanpassen of uitbreiden, schrijft u alleen de overlays
 
 Het framework biedt API&#39;s voor toegang tot functionaliteit op de server en voor ondersteuning van interactie tussen de client en de server.
 
-### Java API&#39;s {#java-apis}
+### Java™ API&#39;s {#java-apis}
 
-De Java API&#39;s bieden abstracte klassen en interfaces die gemakkelijk kunnen worden overgeërfd of gesubclassificeerd.
+De Java™ API&#39;s bieden abstracte klassen en interfaces die gemakkelijk kunnen worden overgeërfd of gesubclassificeerd.
 
 De hoofdklassen worden beschreven op het tabblad [Aanpassing op de server](server-customize.md) pagina.
 
@@ -101,9 +97,9 @@ Een standaard GET servlet luistert naar .social.json verzoeken waaraan de Social
 
 ### HTTP API - POST-aanvragen {#http-api-post-requests}
 
-Naast de (Gelezen) verrichtingen van de GET, bepaalt het kader een eindpuntpatroon om andere verrichtingen op een component toe te laten, met inbegrip van Create, Update en Schrapping. Deze eindpunten zijn HTTP-API&#39;s die invoer accepteren en reageren met HTTP-statuscodes of met een JSON-reactieobject.
+Naast de (Gelezen) verrichtingen van de GET, bepaalt het kader een eindpuntpatroon om andere verrichtingen op een component toe te laten, met inbegrip van Create, Update, en Schrapping. Deze eindpunten zijn HTTP-API&#39;s die invoer accepteren en reageren met een HTTP-statuscode of met een JSON-reactieobject.
 
-Met dit eindpuntpatroon van het framework worden CUD-bewerkingen uitbreidbaar, herbruikbaar en getest.
+Dit patroon van het kadereindpunt maakt de verrichtingen van de CUD verlengbaar, herbruikbaar, en testbaar.
 
 **`POST Request`**
 
@@ -127,15 +123,15 @@ Bezoek [Aanpassingen op de server](server-customize.md) voor informatie over het
 
 Een van de meest opvallende wijzigingen in het nieuwe kader is het gebruik van de `Handlebars JS` (HBS)sjabloontaal, een populaire open-source technologie voor server-client rendering.
 
-HBS-scripts zijn eenvoudig, zonder logica, kunnen op zowel de server als de client worden gecompileerd, zijn eenvoudig te bedekken en aan te passen en zijn op natuurlijke wijze gebonden aan de client-UX, omdat HBS renderen aan de clientzijde ondersteunt.
+HBS-scripts zijn eenvoudig, zonder logica, kunnen op zowel de server als de client worden gecompileerd, zijn eenvoudig te bedekken en aan te passen en zijn op natuurlijke wijze gebonden aan de client-UX, omdat HBS renderen op de client ondersteunt.
 
 Het kader biedt verschillende [Handbalkhelpers](handlebars-helpers.md) die nuttig zijn bij het ontwikkelen van sociale componenten.
 
-Op de server, wanneer het Sling een verzoek van de GET verhelpt, identificeert het het manuscript dat zal worden gebruikt om op het verzoek te antwoorden. Als het manuscript een malplaatje HBS (.hbs) is, zal het Sling het verzoek aan de Motor van Handlebars delegeren. De Motor Handlebars zal dan de SocialComponent van aangewezen SocialComponentFactory krijgen, een context bouwen, en de HTML teruggeven.
+Op de server, wanneer het Sling een verzoek van de GET verhelpt, identificeert het het manuscript dat wordt gebruikt om op het verzoek te antwoorden. Als het manuscript een malplaatje HBS (.hbs) is, zal het Sling het verzoek aan de Motor van Handlebars delegeren. De Motor Handlebars zal dan de SocialComponent van aangewezen SocialComponentFactory krijgen, een context bouwen, en de HTML teruggeven.
 
 ### Geen toegangsbeperking {#no-access-restriction}
 
-Handlebars (HBS) malplaatjedossiers (.hbs) zijn analoog aan .jsp en .html malplaatjedossiers, behalve zij kunnen voor het teruggeven zowel in cliëntbrowser als op de server worden gebruikt. Daarom zal een cliëntbrowser die om een cliënt-zijmalplaatje verzoekt een .hbs dossier van de server ontvangen.
+Handlebars (HBS) malplaatjedossiers (.hbs) zijn analoog aan .jsp en .html malplaatjedossiers, behalve zij kunnen voor het teruggeven zowel in cliëntbrowser als op de server worden gebruikt. Daarom ontvangt een cliëntbrowser die om een cliënt-zijmalplaatje verzoekt een .hbs dossier van de server.
 
 Dit vereist dat alle malplaatjes van HBS in de sling onderzoekspad (om het even welke .hbs dossiers onder /libs/ of /apps) door om het even welke gebruiker van auteur kunnen worden gehaald of publiceren.
 
@@ -157,7 +153,7 @@ Het resultaat is een JCR-onderliggend knooppunt onder een pari-knooppunt, dat ad
 
 Het opnemen van een component verwijst naar het proces waarbij een verwijzing naar een component wordt toegevoegd [&quot;niet-bestaande&quot; resource](srp.md#for-non-existing-resources-ners) (geen JCR-knooppunt) in de sjabloon, zoals het gebruik van een scripttaal.
 
-Vanaf AEM 6.1, wanneer een component dynamisch in plaats van toegevoegd wordt omvat, is het mogelijk om de eigenschappen van de component in auteur *design *mode uit te geven.
+Vanaf Adobe Experience Manager (AEM) 6.1 is het mogelijk om, wanneer een component dynamisch wordt opgenomen in plaats van toegevoegd, de eigenschappen van de component te bewerken in de auteur *ontwerp* in.
 
 Slechts een paar AEM Communities-componenten kunnen dynamisch worden opgenomen. Het zijn:
 
@@ -166,7 +162,7 @@ Slechts een paar AEM Communities-componenten kunnen dynamisch worden opgenomen. 
 * [Revisies](reviews-basics.md)
 * [Stemming](essentials-voting.md)
 
-De [Community Components Guide](components-guide.md) staat toe inbegrepen componenten om van worden een knevel te schakelen van worden toegevoegd aan worden omvat.
+De [Community Components Guide](components-guide.md) staat toe inbegrepen componenten om van worden een knevel te schakelen aan worden opgenomen.
 
 **Bij gebruik van handgrepen** sjabloontaal, de niet-bestaande bron wordt opgenomen met de [inclusief helper](handlebars-helpers.md#include) door zijn resourceType te specificeren:
 
@@ -189,18 +185,18 @@ Zie [SCF Handlebars Helpers](handlebars-helpers.md) voor een lijst en beschrijvi
 
 ## Client-Side Framework {#client-side-framework}
 
-### JavaScript-framework voor modelweergave {#model-view-javascript-framework}
+### JavaScript-framework modelweergave {#model-view-javascript-framework}
 
-Het kader omvat een verlenging van [Backbone.js](https://www.backbonejs.org/), een model-weergave JavaScript-framework, om de ontwikkeling van rijke, interactieve componenten te vergemakkelijken. De objectgeoriënteerde aard ondersteunt een uitbreidbaar/herbruikbaar framework. De communicatie tussen client en server wordt vereenvoudigd door middel van de HTTP API.
+Het kader omvat een verlenging van [Backbone.js](https://backbonejs.org/), een model-weergave JavaScript-framework, om de ontwikkeling van rijke, interactieve componenten te vergemakkelijken. De objectgeoriënteerde aard ondersteunt een uitbreidbaar/herbruikbaar framework. De communicatie tussen client en server wordt vereenvoudigd met de HTTP API.
 
-Het framework maakt gebruik van Handlebars-sjablonen aan de serverzijde om de componenten voor de client te renderen. De modellen zijn gebaseerd op de JSON-reacties die door de HTTP-API zijn gegenereerd. De meningen binden zich aan HTML die door de malplaatjes Handlebars wordt geproduceerd en verstrekken interactiviteit.
+Het framework gebruikt server-side Handlebars-sjablonen om de componenten voor de client te renderen. De modellen zijn gebaseerd op de JSON-reacties die door de HTTP-API zijn gegenereerd. De meningen binden zich aan HTML die door de malplaatjes Handlebars wordt geproduceerd en verstrekken interactiviteit.
 
 ### CSS-conventies {#css-conventions}
 
 Hieronder vindt u aanbevolen conventies voor het definiëren en gebruiken van CSS-klassen:
 
-* Gebruik duidelijk benoemde CSS-klassenselectienamen en vermijd generieke namen zoals &#39;kop&#39;, &#39;afbeelding&#39;, enzovoort.
-* Definieer specifieke klassenselectorstijlen, zodat de CSS-opmaakmodellen goed werken met andere elementen en stijlen op de pagina. Bijvoorbeeld: `.social-forum .topic-list .li { color: blue; }`
+* Gebruik duidelijk benoemde CSS-klassenselectienamen en vermijd generieke namen zoals &#39;heading&#39; en &#39;image&#39;.
+* Definieer specifieke klassenselectorstijlen, zodat de CSS-stijlpagina&#39;s goed werken met andere elementen en stijlen op de pagina. Bijvoorbeeld: `.social-forum .topic-list .li { color: blue; }`
 * Houd CSS-klassen voor opmaak gescheiden van CSS-klassen voor UX die door JavaScript worden aangestuurd.
 
 ### Aanpassingen op de client {#client-side-customizations}

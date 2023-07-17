@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Handleiding voor formulieren
 breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
-source-git-commit: 73271612633ec349ee1c002044724f408324e5a2
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '3870'
+source-wordcount: '3881'
 ht-degree: 0%
 
 ---
@@ -127,10 +127,13 @@ ht-degree: 0%
    + [Inleiding tot AEM Forms Data Integration](using/data-integration.md)
    + [Gegevensbronnen configureren](using/configure-data-sources.md)
    + [Configuratie Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
-   + [Salesforce-integratie met behulp van OAuth 2.0-clientaanmeldingsgegevens](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Formuliergegevensmodel maken](using/create-form-data-models.md)
    + [Werken met formuliergegevensmodel](using/work-with-form-data-model.md)
    + [Formuliergegevensmodel gebruiken](using/using-form-data-model.md)
++ Adaptieve Forms - Core-componenten {#adaptive-forms-core-components}
+   + [Core Components voor uw omgeving inschakelen](/help/forms/using/enable-adaptive-forms-core-components.md)
+   + [Een adaptief formulier op basis van kerncomponenten maken](/help/forms/using/create-an-adaptive-form-core-components.md)
+   + [Thema&#39;s maken voor adaptieve Forms op basis van Core Components](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
 + Adaptieve Forms - Basisontwerp {#adaptive-forms-basic-authoring}
    + [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](using/adaptive-forms-best-practices.md)
    + [Een adaptief formulier maken](using/creating-adaptive-form.md)
@@ -475,7 +478,7 @@ ht-degree: 0%
       + [Adobe PDF-instellingen configureren](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Beveiligingsinstellingen configureren](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Instellingen voor bestandstypen configureren](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [PDF Generator-configuratiebestanden importeren en exporteren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [Configuratiebestanden van PDF Generatoren importeren en exporteren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [Ondersteuning voor PDF/A inschakelen](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Een PDFG-netwerkprinter instellen (alleen Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Terugvallettertypen configureren](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -692,7 +695,6 @@ ht-degree: 0%
    + [Kan CRX Repository niet herstellen](/help/forms/using/restore-crx-repository.md)
    + [Service niet-beschikbare fouten na installatie van AEM servicepack 6.5.15.0](/help/forms/using/aem-service-pack-installation-solution.md)
    + [Probleem met installatie van AEM Forms JEE 6.5.15.0-servicepack in JBoss Linux-omgeving](/help/forms/using/linux-jboss-installation-issue-on-sp15.md)
-   + [EAR-implementatie mislukt op JEE WebLogic-server](/help/forms/using/ear-deployment-failing-on-jee-weblogic-server.md)
 + Oudere documentatie {#legacy-documentation}
    + [De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken](developing/building-xml.md)
    + [Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC](developing/compressing-decompressing-custom-dsc.md)

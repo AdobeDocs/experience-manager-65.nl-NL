@@ -9,7 +9,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
 source-wordcount: '1799'
 ht-degree: 0%
@@ -30,13 +30,13 @@ Voordat u begint, moet u meer weten over het type Forms-componenten waarover u b
 
 * [Adaptieve Forms Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html?lang=en): Dit zijn gestandaardiseerde componenten voor het vastleggen van gegevens. Deze componenten bieden aanpassingsmogelijkheden, kortere ontwikkelingstijd en lagere onderhoudskosten voor uw digitale inschrijving. Een ontwikkelaar kan deze componenten eenvoudig aanpassen en opmaken. Adobe raadt aan deze moderne en uitbreidbare componenten te gebruiken om Adaptive Forms te ontwikkelen.
 
-* [Aangepaste Forms Foundation-componenten](creating-adaptive-form.md): Dit zijn klassieke (oude) componenten voor gegevensvastlegging. U kunt deze blijven gebruiken om uw bestaande basiscomponenten te bewerken op basis van adaptief formulier. Adobe raadt u aan formulieren te gebruiken als u formulieren maakt  [Adaptieve Forms Core-componenten](creating-adaptive-form-core-components.md) om een Adaptieve Forms te maken.
+* [Aangepaste Forms Foundation-componenten](creating-adaptive-form.md): Dit zijn klassieke (oude) componenten voor gegevensvastlegging. U kunt deze blijven gebruiken om uw bestaande basiscomponenten te bewerken op basis van adaptief formulier. Adobe raadt u aan formulieren te gebruiken als u formulieren maakt  [Adaptieve Forms Core-componenten](/help/forms/using/create-adaptive-form.md) om een Adaptieve Forms te maken.
 
 ## Voorwaarden
 
 U hebt het volgende nodig om een adaptief formulier te maken:
 
-* **Adaptieve Forms Core-componenten inschakelen voor uw omgeving**: AEM Archetype-project versie 41 of hoger is vereist voor [Core Components voor uw omgeving inschakelen](/help/forms/using/installing-core-components.md). Als u de Core Components voor uw omgeving inschakelt, **Adaptieve Forms (Core Component)** sjabloon en Canvasthema worden toegevoegd aan uw omgeving.
+* **Adaptieve Forms Core-componenten inschakelen voor uw omgeving**: AEM Archetype-project versie 41 of hoger is vereist voor [Core Components voor uw omgeving inschakelen](/help/forms/using/enable-adaptive-forms-core-components.md). Als u de Core Components voor uw omgeving inschakelt, **Adaptieve Forms (Core Component)** sjabloon en Canvasthema worden toegevoegd aan uw omgeving.
 
 * **Een adaptieve formuliersjabloon**: Een sjabloon biedt een basisstructuur en definieert de vormgeving (lay-outs en stijlen) van een adaptief formulier. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier. Bijvoorbeeld, verzendend de verzamelde gegevens naar een gegevensbron. De benoemde sjabloon `blank` wordt ondersteund voor OOTB:
 
@@ -46,7 +46,7 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
   >[!NOTE]
   >
-  > Als u dat niet doet, **Adaptieve Forms (Core Component)** sjabloon op uw omgeving, [Adaptieve Forms Core-componenten inschakelen voor uw omgeving](/help/forms/using/installing-core-components.md). Als u de Core Components voor uw omgeving inschakelt, **Adaptieve Forms (Core Component)** sjabloon wordt toegevoegd aan uw omgeving.
+  > Als u dat niet doet, **Adaptieve Forms (Core Component)** sjabloon op uw omgeving, [Adaptieve Forms Core-componenten inschakelen voor uw omgeving](/help/forms/using/enable-adaptive-forms-core-components.md). Als u de Core Components voor uw omgeving inschakelt, **Adaptieve Forms (Core Component)** sjabloon wordt toegevoegd aan uw omgeving.
 
 * **Een adaptief formulierthema**: Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten.  De `Canvas` thema wordt standaard toegevoegd wanneer u kerncomponenten voor uw omgeving inschakelt. U kunt ook [de referentiethema&#39;s downloaden en aanpassen](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
@@ -91,7 +91,7 @@ Met een handeling Verzenden kunt u de bestemming kiezen van gegevens die zijn va
 
    ![Klik op het pictogram Sleutel om het dialoogvenster Aangepaste formuliercontainer te openen om een verzendactie te configureren](/help/forms/using/assets/adaptive-forms-submit-message.png)
 
-1. Selecteer en vorm een **[!UICONTROL Submit action]**, op basis van uw vereisten. Zie voor meer informatie over Handelingen verzenden [Handeling Adaptief verzenden van formulier](/help/forms/configuring-submit-actions.md)
+1. Selecteer en vorm een **[!UICONTROL Submit action]**, op basis van uw vereisten. Zie voor meer informatie over Handelingen verzenden [Handeling Adaptief verzenden van formulier](/help/forms/using/configuring-submit-actions.md)
 
 <!--
     
@@ -117,8 +117,8 @@ Bij het verzenden van een formulier kunt u de gebruiker omleiden naar een andere
 
 Met het formuliergegevensmodel kunt u een formulier verbinden met een gegevensbron om gegevens te verzenden en te ontvangen op basis van gebruikersacties. U kunt een formulier ook verbinden met een JSON-schema om de verzonden gegevens in een vooraf gedefinieerde indeling te ontvangen. Afhankelijk van de vereiste verbinding, sluit uw formulier aan op een JSON-schema of formuliergegevensmodel:
 
-* [Een JSON-schema maken en uploaden naar uw omgeving](/help/forms/adaptive-form-json-schema-form-model.md)
-* [Een formuliergegevensmodel maken](/help/forms/create-form-data-models.md)
+* [Een JSON-schema maken en uploaden naar uw omgeving](/help/forms/using/adaptive-form-json-schema-form-model.md)
+* [Een formuliergegevensmodel maken](/help/forms/using/create-form-data-models.md)
 
 ### Een JSON-schema of formuliergegevensmodel voor uw formulier configureren
 
@@ -141,7 +141,7 @@ Een JSON-schema of formuliergegevensmodel configureren voor uw formulier:
 
 U kunt de Prefill-service gebruiken om automatisch velden van een adaptief formulier in te vullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. U kunt:
 
-* [Een aangepaste prefill-service maken](/help/forms/prepopulate-adaptive-form-fields.md)
+* [Een aangepaste prefill-service maken](/help/forms/using/prepopulate-adaptive-form-fields.md)
 * [Vooraf ingevulde service Formuliergegevensmodel gebruiken](#fdm-prefill-service)
 
 ### De service Vooraf invullen van formuliergegevensmodel gebruiken om velden van een adaptief formulier vooraf in te vullen {#fdm-prefill-service}
@@ -171,6 +171,6 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 
 ## Zie ook
 
-* [Een adaptief formulier op basis van kerncomponenten maken](/help/forms/using/create-an-adaptive-form-core-components.md)
-* [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Een adaptief formulier op basis van kerncomponenten maken](create-an-adaptive-form-core-components.md)
+* [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

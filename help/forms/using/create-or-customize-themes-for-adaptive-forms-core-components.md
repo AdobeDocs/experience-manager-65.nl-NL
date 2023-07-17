@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 85f423b98ff680d7ed7cdbdde65e2dec1cfe4c03
+source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
 workflow-type: tm+mt
-source-wordcount: '2060'
+source-wordcount: '2066'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 
 ### Vereisten om een thema aan te passen {#prerequisites}
 
-* [Adaptieve Forms Core-componenten inschakelen](/help/forms/using/installing-core-components.md) voor uw omgeving.
+* [Adaptieve Forms Core-componenten inschakelen](/help/forms/using/enable-adaptive-forms-core-components.md) voor uw omgeving.
 
 * Installeer de nieuwste versie van [Apache Maven.](https://maven.apache.org/download.cgi) Apache Maven is een &#39;build automation tool&#39; die veel wordt gebruikt voor Java™-projecten. De installatie van de recentste versie verzekert u de noodzakelijke gebiedsdelen voor themaaanpassing.
 
@@ -145,20 +145,17 @@ De `variable.scss` bevat de algemene variabelen van het thema. Door deze variabe
 
 1. Open de `<your-theme-sources>/src/site/_variables.scss` bestand voor bewerking.
 1. Wijzig de waarde van een willekeurige eigenschap. De standaardfoutkleur is bijvoorbeeld rood. Als u de kleur van de fout wilt wijzigen van rood in blauw, wijzigt u de hexadecimale kleurcode van het dialoogvenster `$error`variabele. Bijvoorbeeld, `$error: #196ee5`.
+
+   ![Voorbeeld: Foutkleur ingesteld op blauw](/help/forms/using/assets/theme-level-changes.png)
+
 1. Sla het bestand op en sluit het.
 
-<!--
-
-![Example: Error color set to blue](/help/forms/using/assets/variable-customization.png)
-
--->
 
 U kunt ook de opdracht `variable.scss` bestand voor het instellen van lettertypefamilie en -type, thema- en lettertypekleuren, lettergrootte, themaspatiëring, foutpictogram, themarand en meer variabele die van invloed zijn op meerdere componenten van Adaptief formulier.
 
 ##### Stijlen op componentniveau instellen {#component-based-customization}
 
 U kunt ook het lettertype, de kleur, de grootte en andere CSS-eigenschappen aanpassen van specifieke kerncomponenten van Adaptief formulier, zoals knoppen, selectievakjes, containers, voetteksten en nog veel meer. Door het CSS-bestand te bewerken dat aan de specifieke component is gekoppeld, kunt u de stijl ervan uitlijnen met de branding van uw organisatie. Ga als volgt te werk om de stijl van een component aan te passen:
-
 
 1. Het bestand openen `<your-theme-sources>/src/components/<component>/<component.scss>` voor bewerken. Als u bijvoorbeeld de lettertypekleur van de knopcomponent wilt wijzigen, opent u de knop `<your-theme-sources>/src/components/button/button.scss`, bestand.
 1. Wijzig desgewenst de waarde van een object. Als u bijvoorbeeld de kleur van de knopcomponent wilt wijzigen als u de muisaanwijzer op groen plaatst, wijzigt u de waarde van de optie `color: $white` eigenschap in de `cmp-adaptiveform-button__widget:hover` klasse aan hexadecimale code #12b453 of een andere groene tint. De uiteindelijke code ziet er als volgt uit:
@@ -326,9 +323,9 @@ Ongebruikte of ongewenste thema&#39;s verwijderen:
 
 ## Zie ook
 
-* [Een adaptief formulier op basis van kerncomponenten maken](/help/forms/using/create-an-adaptive-form-core-components.md)
+* [Een adaptief formulier op basis van kerncomponenten maken](create-an-adaptive-form-core-components.md)
 * [Regeleditor gebruiken om dynamisch gedrag aan formulier toe te voegen](rule-editor.md)
 * [Thema&#39;s maken of aanpassen voor adaptieve Forms op basis van Core Components](create-or-customize-themes-for-adaptive-forms-core-components.md)
 * [Een sjabloon maken voor Adaptief Forms op basis van Core Components](template-editor.md)
-* [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md)
+* [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 

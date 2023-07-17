@@ -1,16 +1,14 @@
 ---
 title: Probleemoplossing in de Gemeenschap
 description: De Gemeenschap van het oplossen van problemen met inbegrip van Bekende Kwesties
-uuid: 99225430-fa2a-4393-ae5a-18b19541c358
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ Deze sectie bevat gemeenschappelijke zorgen en bekende kwesties wanneer het oplo
 
 ### Terugzetfout verzender mislukt {#dispatcher-refetch-fails}
 
-Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
+Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat op de time-out van het verzoek is gewacht.
 
 Dit probleem wordt opgelost door Dispatcher 4.1.6 of hoger te gebruiken.
 
@@ -47,23 +45,23 @@ Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 * Van: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Aan: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-De fout is anders bij auteur en publiceren. Op auteur ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij publicatie wordt de fout op de pagina gegenereerd.
+De fout is anders bij auteur en publiceren. Op auteur, ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij publicatie wordt de fout op de pagina gegenereerd.
 
-Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
+Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
 ## Algemene problemen {#common-concerns}
 
 ### Waarschuwing bij logbestanden: Afgekeurde kleurenbalken {#warning-in-logs-handlebars-deprecated}
 
-Tijdens het opstarten (niet 1st - maar om het even welke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
+Tijdens het opstarten (niet de eerste - maar elke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
 
 * `11.04.2014 08:38:07.223 WARN [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper 'i18n'` is vervangen door `com.adobe.cq.social.handlebars.I18nHelper@15bac645`
 
-Deze waarschuwing kan veilig worden genegeerd als `jknack.handlebars.Handlebars`, gebruikt door [SCF](scf.md#handlebarsjavascripttemplatinglanguage), wordt geleverd met een eigen i18n helper-hulpprogramma. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig worden genegeerd als `jknack.handlebars.Handlebars`, gebruikt door [SCF](scf.md#handlebarsjavascripttemplatinglanguage), wordt geleverd met een eigen i18n helper-hulpprogramma. Bij het opstarten wordt deze vervangen door een AEM [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij logbestanden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
-Het posten van een aantal onderwerpen van het Forum van Sociale Gemeenschappen kan in enorme hoeveelheden waarschuwing en informatielogboeken van OakResourceListener processOsgiEventQueue resulteren.
+Het posten van verscheidene het forumonderwerpen van de Sociale Gemeenschappen kan in enorme hoeveelheden waarschuwing en informatielogboeken van OakResourceListener processOsgiEventQueue resulteren.
 
 Deze waarschuwingen kunnen veilig worden genegeerd.
 

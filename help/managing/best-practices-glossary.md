@@ -1,26 +1,22 @@
 ---
 title: Verklarende woordenlijst
-seo-title: Glossary
 description: Deze verklarende woordenlijst maakt (alfabetisch) een lijst van details van alle Geleverde documenten van Checklist van het Project.
-seo-description: This glossary lists (alphabetically) details of all Deliverable documents from the Project Checklist.
-uuid: 5f919b05-3ec5-4b18-b966-5dcf706407f4
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist
 content-type: reference
-discoiquuid: cca21688-40b1-433d-93dc-cd62e5558507
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
 workflow-type: tm+mt
-source-wordcount: '7036'
+source-wordcount: '6949'
 ht-degree: 0%
 
 ---
 
 # Verklarende woordenlijst{#glossary}
 
-In deze woordenlijst worden (alpabetisch) details weergegeven van alle te leveren documenten uit de [Projectchecklist](/help/managing/best-practices-checklist.md).
+In deze woordenlijst worden (alfabetisch) details weergegeven van alle te leveren documenten uit de [Projectchecklist](/help/managing/best-practices-checklist.md).
 
 ## Aanvaarding door belanghebbenden uit het bedrijfsleven {#acceptance-from-business-stakeholders}
 
@@ -37,7 +33,7 @@ Acceptatietests worden gebruikt om te bevestigen dat:
 * Gebruikers accepteren de oplossing en kunnen overwegen ermee te werken.
 * De klant accepteert het project.
 
-Hoe eerder u uw acceptatietests plant en ontwerpt, hoe eenvoudiger de definitieve implementatie wordt. Zij zouden samen met de klant en uw team van de Verzekering van de Kwaliteit moeten worden bepaald.
+Hoe eerder u uw acceptatietests plant en ontwerpt, hoe eenvoudiger de definitieve implementatie. Zij zouden samen met de klant en uw team van de Verzekering van de Kwaliteit moeten worden bepaald.
 
 Hoewel u niet alle details bij het begin van het project kunt bepalen, zouden de aanvankelijke definities moeten worden besproken en worden overeengekomen. De goedkeuringstests zullen waarschijnlijk gebaseerd zijn op de fundamentele eisen (functionele eisen en prestaties).
 
@@ -47,7 +43,7 @@ Zorg ervoor dat de vereiste niveaus van systeemtoegang aan alle rollen zijn verl
 
 ### Beveiligingschecklist Adobe {#adobe-security-checklist}
 
-De [Beveiligingschecklist Adobe](/help/sites-administering/security-checklist.md) is de officiële controlelijst die wordt verstrekt om ervoor te zorgen dat AEM bij installatie veilig is. Het bevat de beveiligingsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te garanderen.
+De [Beveiligingschecklist Adobe](/help/sites-administering/security-checklist.md) de officiële controlelijst wordt verstrekt om ervoor te zorgen dat Adobe Experience Manager (AEM) veilig is bij installatie. Het bevat de veiligheidsmaatregelen en verificatiestappen die u moet uitvoeren om de integriteit van uw instantie te verzekeren.
 
 ### Adobe Support Portal Project instellen {#adobe-support-portal-project-set-up}
 
@@ -65,7 +61,7 @@ Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. 
 
 ### Certificeringsexamen AEM {#aem-certification-exam}
 
-Ervoor zorgen dat de juiste persoon geregistreerd is om de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
+Ervoor zorgen dat de juiste personen geregistreerd zijn om de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 ### AEM gecertificeerd {#aem-certified}
 
@@ -73,11 +69,11 @@ Ervoor zorgen dat de juiste persoon met goed gevolg de relevante [certificerings
 
 ### Technische AEM {#aem-technical-training}
 
-het verstrekken van een technische opleiding voor het desbetreffende personeel; bijvoorbeeld ontwikkelaars , architecten , ingenieurs en praktijkmensen .
+het verstrekken van een technische opleiding voor het desbetreffende personeel; bijvoorbeeld ontwikkelaars, architecten, ingenieurs en praktijkmensen.
 
 ### Overeenkomst inzake KPI&#39;s die als doelstellingen voor het project zijn gedefinieerd {#agreement-on-kpis-defined-as-goals-for-the-project}
 
-De belangrijkste Indicatoren van Prestaties (KPIs) helpen een organisatie om vooruitgang in de richting van organisatorische doelstellingen en doelstellingen te bepalen en te meten. Zodra een organisatie haar missie heeft geanalyseerd en haar doelstellingen heeft bepaald, moet zij de vooruitgang in de richting van die doelstellingen meten. KPI&#39;s bieden een meetmechanisme.
+De belangrijkste Indicatoren van Prestaties (KPIs) helpen een organisatie om vooruitgang in de richting van organisatorische doelstellingen te bepalen en te meten. Zodra een organisatie zijn opdracht heeft geanalyseerd en zijn doelstellingen heeft bepaald, moet het vooruitgang in de richting van die doelstellingen meten. KPI&#39;s bieden een meetmechanisme.
 
 ### Bedrijfs en Prestaties KPIs richten {#align-business-and-performance-kpis}
 
@@ -89,7 +85,7 @@ Ervoor zorgen dat de voorgestelde inhoudarchitectuur wordt afgestemd op de relev
 
 ### Uitlijning van de routekaart van de Klant met de tijdlijn van het Project {#alignment-of-the-customer-roadmap-with-project-timeline}
 
-De routekaart van de Klant bestaat uit mijlpalen op hoog niveau en bedrijfsdoelstellingen. De projecttijdlijn moet deze strategie volgen en er op aansluiten, zodat mogelijke risico&#39;s en/of mogelijke afwijkingen moeten worden gemarkeerd en bijgehouden.
+De routekaart van de Klant is samengesteld uit mijlpalen op hoog niveau en bedrijfsdoelstellingen. De projecttijdlijn moet deze strategie volgen en er op aansluiten, zodat mogelijke risico&#39;s en/of mogelijke afwijkingen moeten worden gemarkeerd en bijgehouden.
 
 ### Definitie toepassingsarchitectuur {#application-architecture-definition}
 
@@ -97,7 +93,7 @@ De [toepassingsarchitectuur](/help/managing/best-practices.md#development-prepar
 
 Het is gericht op:
 
-* Hoe zij met elkaar en met gebruikers zullen in wisselwerking staan.
+* Hoe zij met elkaar en met gebruikers in wisselwerking staan.
 * De gegevens die door toepassingen moeten worden verbruikt en geproduceerd, in plaats van hun interne structuur.
 
 ### Toepassingsspecifieke onderhoudstaken gedefinieerd {#application-specific-maintenance-tasks-defined}
@@ -131,7 +127,7 @@ De Architecture Review Board is een organisatieoverschrijdend orgaan dat:
 * ziet toe op de uitvoering van een coherente strategie
 * zorgt ervoor dat systemen aan de eisen voldoen
 
-De toetsingsraad moet representatief zijn voor alle belangrijke belanghebbenden die bij de architectuur betrokken zijn. Doorgaans zullen zij bestaan uit een groep leidinggevenden die verantwoordelijk zijn voor de evaluatie en het onderhoud van de algemene architectuur.
+De toetsingsraad moet representatief zijn voor alle belangrijke belanghebbenden die bij de architectuur betrokken zijn. Doorgaans bestaan zij uit een groep leidinggevenden die verantwoordelijk zijn voor de revisie en het onderhoud van de algemene architectuur.
 
 ### Geautomatiseerde testsuite die is aangepast voor werkelijke inhoud en resultaten in vergelijking met KPI&#39;s {#automated-test-suite-adapted-for-real-content-and-results-compared-to-kpis}
 
@@ -183,7 +179,7 @@ In het concept Back-up en Herstel wordt de technische functionaliteit beschreven
 
 Een volledige end-to-end test op basis van het Concept Back-up en Herstel.
 
-### Bedrijfscase(s) {#business-case-s}
+### Zakelijke zaken {#business-case-s}
 
 In een bedrijfscasedocument worden de argumenten weergegeven die verband houden met het nemen van de actie, het nemen van alternatieve actie (indien beschikbaar) of het niet ondernemen van actie. De argumenten moeten evenwichtig zijn, gebaseerd op concrete feiten (waar mogelijk/relevant) en zowel de voordelen als de risico&#39;s voor alle gevallen benadrukken.
 
@@ -201,7 +197,7 @@ De Business Analyst moet bevestigen dat hij of zij volledig begrijpt:
 
 Organisaties gebruiken de Belangrijkste Indicatoren van Prestaties (KPIs) om hun succes bij het bereiken van doelstellingen te evalueren.
 
-Bedrijfs KPIs bepaalt meetbare waarden die aantonen hoe effectief een bedrijf belangrijke bedrijfsdoelstellingen bereikt. Het is belangrijk om KPIs te kiezen aangewezen aan uw zaken/scenario met duidelijke definities van wat zij zijn, hoe zij zullen worden gemeten, hoe zij zullen worden gebruikt en door wie.
+Bedrijfs KPIs bepaalt meetbare waarden die aantonen hoe effectief een bedrijf belangrijke bedrijfsdoelstellingen bereikt. Het is belangrijk om KPIs te kiezen aangewezen aan uw zaken/scenario met duidelijke definities van wat zij zijn, hoe zij worden gemeten, hoe zij worden gebruikt, en door wie.
 
 ### Documentatie over bedrijfsvereisten {#business-requirements-documentation}
 
@@ -219,7 +215,7 @@ Om het even welke aanpassingen die uit deze processen voortvloeien moeten door d
 
 In de cachestrategie wordt beschreven wat er in cache wordt geplaatst voor de eindgebruiker. Het moet met de KPIs van Prestaties in overeenstemming zijn.
 
-Bijvoorbeeld, kunnen de elementen zoals beelden, javascript en andere serverdossiers in het voorgeheugen ondergebracht worden om de prestaties van een oplossing te verbeteren.
+Elementen zoals afbeeldingen, JavaScript en andere serverbestanden kunnen bijvoorbeeld in cache worden geplaatst om de prestaties van een oplossing te verbeteren.
 
 ### Codeerrichtlijnen {#coding-guidelines}
 
@@ -273,7 +269,7 @@ Specificatiegegevens voor elk van de te implementeren onderdelen.
 
 Het concept van de wijze waarop externe interfaces kunnen worden ontwikkeld en getest die niet voor de ontwikkelings- of testomgeving open/beschikbaar zijn.
 
-Plan/implementeer mock-ups van deze interfaces om ervoor te zorgen dat het testen zo dicht mogelijk bij productiegedrag ligt.
+Plan/implementeer mock-ups van deze interfaces om ervoor te zorgen dat het testen zo dicht mogelijk bij productiegedrag is.
 
 ### Document voor inhoudsarchitectuur {#content-architecture-document}
 
@@ -302,7 +298,7 @@ Beleid van de klant met betrekking tot:
 * back-upprocessen voor zowel gegevens als de oplossing
 * opslag van de back-up
 * bevestiging dat de back-up naar verwachting functioneert
-* herstel, in geval van een storing
+* herstel, indien er een fout optreedt
 
 ### Richtlijnen voor klantcodering {#customer-coding-guidelines}
 
@@ -324,7 +320,7 @@ Het programma dat door de klant voor versies aan de productiemilieu&#39;s wordt 
 
 ### Beleid en vereisten voor klantrapportage {#customer-reporting-policies-and-requirements}
 
-Beleid en/of vereisten van de klant met betrekking tot rapportage. Deze kunnen het volgende omvatten:
+Beleid, vereisten of beide, dat de klant heeft met betrekking tot rapportage. Deze kunnen het volgende omvatten:
 
 * hoe vaak specifieke verslagen moeten worden ingediend
 * het formaat van specifieke verslagen
@@ -344,7 +340,7 @@ De klant (zaken en IT) zal beleid hebben dat de vereiste veiligheidsniveaus voor
 
 ### Richtlijnen voor klantspecificaties {#customer-specification-guidelines}
 
-Alle richtlijnen die de klant heeft met betrekking tot de vorm, de levering en de aftekening van specificaties.
+Om het even welke richtlijnen de klant heeft die op het formaat, levering, en teken-off van specificaties betrekking hebben.
 
 ### Testrapporten klant {#customer-test-reports}
 
@@ -375,7 +371,7 @@ Zorg ervoor dat de standaardbeveiligingsinstellingen voor AEM zijn ingeschakeld/
 
 ### Beleid en processen voor implementatie/vrijgave {#deployment-release-policies-and-processes}
 
-Het formele beleid dat zowel de plaatsing als versie(s) van uw project behandelt. Deze kunnen het volgende omvatten:
+Het formele beleid dat zowel de plaatsing als de versies van uw project behandelt. Deze kunnen het volgende omvatten:
 
 * tijd voor releases
 * vakantieplanning
@@ -390,7 +386,7 @@ Definieer de vereiste frequentie van implementaties in verschillende omgevingen.
 
 Een methodologie voor softwareontwikkeling omvat het verbreken van het gehele proces van softwareontwikkelingswerk in afzonderlijke fasen (of fasen), elk met verschillende activiteiten. Het doel is de planning en het beheer te verbeteren.
 
-Wanneer het bepalen van de methodologie zou u specifieke te ontwikkelen producten en artefacten moeten vooraf bepalen die door het projectteam worden gecreeerd en voltooid om uw toepassing te ontwikkelen of te handhaven.
+Wanneer het bepalen van de methodologie, zou u specifieke te ontwikkelen producten en artefacten moeten vooraf bepalen die door het projectteam worden gecreeerd en voltooid om uw toepassing te ontwikkelen of te handhaven.
 
 ### Definitie van ontwikkelingsrol {#development-role-definition}
 
@@ -406,7 +402,7 @@ Het ontwikkelingsteam moet bevestigen dat zij volledig begrijpen:
 
 * het toepassingsgebied van het project
 * alle verwachtingen van de klant
-* dat dit de basis is voor alle besluiten die per persoon, per fase in het project worden genomen
+* de basis voor alle besluiten per persoon, per fase in het project
 
 ### Dialogusspecificatie {#dialogs-specification}
 
@@ -430,7 +426,7 @@ De duurzaamheidstest toont de prestaties van de oplossing onder een bepaalde bel
 
 ### Duurzaamheidstest uitgevoerd {#durability-test-executed}
 
-Uitvoering van de duurzaamheidstest(s).
+Uitvoering van de duurzaamheidstests.
 
 ### Fout bij afhandeling concept {#error-handling-concept}
 
@@ -464,11 +460,11 @@ Een diagram (of een reeks diagrammen) van de bestaande systemen en afhankelijkhe
 
 De projectsponsor verzamelt de zakelijke verwachtingen met betrekking tot het succes van het project. Het is belangrijk dat aan het begin van een project alle verwachtingen worden gewekt, aangezien deze van invloed moeten zijn op alle beslissingen die tijdens de uitvoering worden genomen.
 
-De verwachtingen kunnen omvatten:
+De verwachtingen kunnen zijn:
 
 * specifieke KPI&#39;s, zoals de procentuele toename van het aantal pagina&#39;s dat wordt bediend
 * kortere tijd voor het publiceren van inhoud
-* hogere niveaudoelstellingen, zoals een makkelijk te gebruiken interface
+* hoger-vlakke doelstellingen, zoals een makkelijk te gebruiken interface
 
 ### Vereisten voor ervaringsontwerpen {#experience-designs-requirements}
 
@@ -480,14 +476,14 @@ Gegevens over de vereisten voor het ontwerp van de ervaring.
 
 ### Externe systeem- en gebruikersafhankelijkheden/systeemcontext {#external-system-and-user-dependencies-system-context}
 
-Een diagram (of een reeks diagrammen) waarin het volledige ecosysteem van de oplossing wordt beschreven. Dit moet elementen omvatten zoals de externe integratie, interfaces, afhankelijkheden en netwerken.
+Een diagram (of een reeks diagrammen) waarin het volledige ecosysteem van de oplossing wordt beschreven. Dit zou elementen zoals de externe integratie, interfaces, gebiedsdelen, en netwerken moeten omvatten.
 
 ### Terugvalsysteem en -procedure {#fallback-system-and-procedure}
 
 De definitie van het terugvalsysteem:
 
-* de bedrijfskritieke functies die in geval van een kritieke storing operationeel moeten blijven
-* de vereiste processen in het geval van terugvallen
+* de bedrijfskritieke functies die moeten blijven functioneren als er een kritieke fout optreedt
+* de processen die vereist zijn als er sprake is van fallback
 
 ### Systeem en procedure getest {#fallback-system-and-procedure-tested}
 
@@ -495,7 +491,7 @@ Test van begin tot eind van het terugvalsysteem.
 
 ### Afmelden van bedrijfsbelanghebbenden bij noodsysteem {#fallback-system-sign-off-from-business-stakeholders}
 
-Onderteken, van de belanghebbenden bij het bedrijfsleven, dat het fallback-systeem en de bijbehorende procedures de kritieke bedrijfsfuncties zullen waarborgen.
+Onderteken, van de belanghebbenden bij het bedrijfsleven, dat het fallback-systeem en de bijbehorende procedures de kritieke bedrijfsfuncties waarborgen.
 
 ### Bevestiging van haalbaarheid van KPI&#39;s {#feasibility-confirmation-on-kpis}
 
@@ -514,7 +510,7 @@ Bevestiging dat de belanghebbenden het volgende volledig aanvaarden:
 
 ### Live-planning {#go-live-schedule}
 
-Tijdlijn en schema voor de vereiste activiteiten voor:
+Tijdschema en tijdschema voor de activiteiten die vereist zijn voor:
 
 * voorbereiding voor live gaan
 * de echte go live
@@ -536,20 +532,20 @@ Bevestiging dat alle omgevingen over de minimaal vereiste hardware beschikken.
 
 ### Vereisten op hoog niveau {#high-level-requirements}
 
-De definitie van de vereisten op hoog niveau zorgt voor een algemene uitsplitsing van de vereisten voor het systeem, die aspecten omvat zoals:
+De definitie van de vereisten op hoog niveau biedt een algemene uitsplitsing van de vereisten voor het systeem, die aspecten omvat zoals:
 
 * Bedrijfsprocessen
 * Belangrijkste systeemfuncties
 
-De basisdetails over deze functies zijn gewoonlijk bekend, zodat zou dit document geen schatting moeten zijn.
+De basisdetails over deze functies zijn typisch gekend, zodat zou dit document geen schatting moeten zijn.
 
 ### Oplossingsontwerp op hoog niveau {#high-level-solution-design}
 
-Het ontwerp van de oplossing op hoog niveau verklaart de architectuur die voor het ontwikkelen van de oplossing zal worden gebruikt. Het architectuurdiagram verstrekt een overzicht van het volledige systeem, dat de belangrijkste componenten identificeert die voor het product en hun interfaces zullen worden ontwikkeld.
+Het ontwerp van de oplossing op hoog niveau verklaart de architectuur die voor het ontwikkelen van de oplossing wordt gebruikt. Het architectuurdiagram verstrekt een overzicht van het volledige systeem, dat de belangrijkste componenten identificeert die voor het product en hun interfaces worden ontwikkeld.
 
 ### Systeemkaart op hoog niveau {#high-level-system-map}
 
-Deze systeemkaart zou een zeer hoog niveaudiagram van het systeem moeten verstrekken. Het verschilt van de Context van de Oplossing in die zin dat het een algemene kaart van alle betrokken systemen is, zijn er geen interfaces op dit diagram.
+Deze systeemkaart zou een diagram op hoog niveau van het systeem moeten verstrekken. Het verschilt van de Context van de Oplossing in die zin dat het een algemene kaart van alle betrokken systemen is, zijn er geen interfaces op dit diagram.
 
 ### Structuur van historische inhoud {#historical-content-structure}
 
@@ -621,7 +617,7 @@ Implementatie van de ontworpen workflows.
 
 ### Implementatieconcept {#implementation-concept}
 
-Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoering. Daarbij moet rekening worden gehouden met:
+Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoering. De Commissie dient te overwegen:
 
 * Bewerkingen
 *  Onderhoud
@@ -630,7 +626,7 @@ Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoeri
 * Beveiliging
 * Schaalbaarheid
 
-Dit concept kan ook de kaders, bibliotheken en andere artefacten beschrijven die in de oplossing worden gebruikt.
+Dit concept schetst ook het kader, de bibliotheken, en andere artefacten die in de oplossing worden gebruikt.
 
 ### Adobe-ondersteuning op de hoogte stellen van het schema Go Live {#inform-adobe-support-about-the-go-live-schedule}
 
@@ -656,7 +652,7 @@ Een volgsysteem, samen met de vereiste processen, voor het registreren van alle 
 
 Alle belanghebbenden bij het project moeten toegang hebben om de transparantie van de projectstatus te vergemakkelijken.
 
-Voorbeelden zijn Atlassiaanse JIRA en HP Quality Center.
+Voorbeelden zijn Atlassian JIRA en HP Quality Center.
 
 ### Systeemproces voor bijhouden van problemen is ingesteld en geïntegreerd {#issue-tracking-system-process-is-set-up-and-integrated}
 
@@ -679,13 +675,13 @@ een overzicht van de instrumenten die bij de uitvoering zullen worden gebruikt; 
 
 ### Lijst van Gebruikers die Toegang tot het Portaal van de Steun van Adobe vereisen {#list-of-users-that-require-access-to-adobe-support-portal}
 
-Een lijst van alle gebruikers en rollen die toegang tot het Portaal van de Steun van Adobe zullen vereisen.
+Een lijst van alle gebruikers en rollen die toegang tot het Portaal van de Steun van Adobe nodig hebben.
 
 De lijst bestaat gewoonlijk uit de Architect van de Oplossing en/of het personeel van IT van de klant.
 
 ### Analyse van logbestand {#log-file-analysis}
 
-Een analyse, samen met de resulterende aanbevelingen, die bepaalt wat moet worden geregistreerd om de oplossing te controleren:
+Een analyse, samen met de resulterende aanbevelingen, die bepalen wat moet worden geregistreerd om de oplossing te controleren:
 
 * te registreren activiteiten
 * mate van granulariteit
@@ -844,15 +840,15 @@ Rapporten die voor de zaken worden gecreeerd die de resultaten van de penetratie
 
 ### Concept voor prestaties en schaalbaarheid {#performance-and-scalability-concept}
 
-Conceptueel document over hoe te om ervoor te zorgen dat uw implementatie de prestaties KPIs ontmoet, en hoe te om de oplossing te schrapen zodat het die KPIs blijft ontmoeten.
+Conceptueel document over hoe te om ervoor te zorgen dat uw implementatie prestaties KPIs ontmoet, en hoe te om de oplossing te schrapen zodat het die KPIs blijft ontmoeten.
 
 ### Prestatiebenchmark {#performance-benchmark}
 
-De prestatie-benchmark wordt gebruikt om prestatietests, duurzaamheidstests en -bewaking te definiëren. Dit gebeurt door de prestatiekenmerken van de oplossing en systeemhardware te beoordelen.
+De prestatienetest wordt gebruikt om prestatietests, duurzaamheidstests, en controle te bepalen. Dit gebeurt door de prestatiekenmerken van de oplossing en systeemhardware te beoordelen.
 
 ### Prestatie-KPI&#39;s {#performance-kpis}
 
-Deze definiëren de prestatiekernindicatoren (KPI&#39;s) die nodig zijn om de prestaties van het systeem te meten. Voorbeelden hiervan zijn laadtijd van de pagina, responstijd van de server en queryprestaties van de database.
+Deze definiëren de prestatiekernindicatoren (KPI&#39;s) die nodig zijn om de prestaties van het systeem te meten. Voorbeelden zijn laadtijd van pagina&#39;s, responstijd van servers en queryprestaties van databases.
 
 ### Prestatietests - Rapport {#performance-tests-report}
 
@@ -890,7 +886,7 @@ Bevestig dat de productieomgeving gereed is, met automatische implementaties.
 
 ### Productiehandtekening van belanghebbenden uit het bedrijfsleven {#production-sign-off-from-business-stakeholders}
 
-Voordat Go Live naar de productieomgeving kan gaan, moet de productieonderbreking (PSO) worden toegestaan. Dit is het resultaat van een herziening van de release die in productie zal worden genomen, samen met alle bekende problemen. Afmelden wordt gegeven als onderdeel van de Go Live-planning.
+Voordat Go Live naar de productieomgeving kan gaan, moet de productieafmelding (PSO) worden toegekend. Dit is het resultaat van een herziening van de release die in productie zal worden genomen, samen met alle bekende problemen. Afmelding wordt gegeven als onderdeel van het schema Go Live.
 
 ### Proces en beleid voor afmelding van productie {#production-sign-off-process-and-policy}
 
@@ -904,7 +900,7 @@ Bepaal het communicatie plan voor zowel bedrijfs belanghebbenden als het project
 
 De [initiële ramingen](#project-efforts-initial-estimates) hoog waren en werden uitgevoerd overeenkomstig de hoge eisen voor de uitvoering.
 
-Deze worden nu herzien, verfijnd en uitgebreid om de definitieve ramingen te kunnen maken. De ramingen moeten worden opgesteld door elk geschikt projectleider, met inbegrip van projectbeheer, consultancy, architectuur, tests en ontwikkeling.
+Deze worden nu herzien, verfijnd en uitgebreid om de definitieve ramingen te verstrekken. De ramingen moeten worden verstrekt door elk geschikt projectleider, met inbegrip van projectbeheer, raadpleging, architectuur, tests, en ontwikkeling.
 
 Deze ramingen worden gebruikt voor de financiering en de begroting.
 
@@ -944,7 +940,7 @@ Zij moet trachten de haalbaarheid van de oplossing aan te tonen, nagaan of zij h
 
 ### Regels leegmaken {#purge-rules}
 
-AEM onderhoudt meerdere versies van elementen en inhoud. Leegregels worden ontworpen en geconfigureerd om de oudere versies periodiek te verwijderen, zodat de status en grootte van de opslagplaats behouden blijven.
+AEM onderhoudt meerdere versies van elementen en inhoud. De zuiveringsregels worden ontworpen en gevormd om de oudere versies periodiek te verwijderen om bewaarplaatgezondheid en grootte te handhaven.
 
 ### Formaat kwaliteitsrapport en Cadence {#quality-report-format-and-cadence}
 
@@ -975,7 +971,7 @@ Laatste release actief en actief in productie.
 
 ### Relevante contractvoorwaarden {#relevant-contract-terms}
 
-U dient specifieke contractvoorwaarden te benadrukken die relevant zijn voor de uitvoering van het project; zoals contractuele mijlpalen, factuurperioden of personeelsvereisten.
+de specifieke contractvoorwaarden te vermelden die relevant zijn voor de uitvoering van het project; zoals contractuele mijlpalen, factuurperioden of personeelsvereisten.
 
 ### RapportageCadence {#reporting-cadence}
 
@@ -1001,7 +997,7 @@ Ervoor zorgen dat alle rollen die nodig zijn voor live gaan, bemand en beschikba
 
 ### Risicobeoordeling {#risk-assessment}
 
-De risicobeoordeling wordt uitgevoerd door de IT- en/of beveiligingsafdeling(en) van de klant.
+De risicobeoordeling wordt uitgevoerd door de IT-afdeling van de klant of de beveiligingsafdeling, of beide.
 
 Zij beoordeelt de technische en zakelijke risico&#39;s van het project. De evaluatie is vereist voor de oplossing om naleving van veiligheidsbeleid te verzekeren.
 
@@ -1051,13 +1047,13 @@ In deze richtsnoeren wordt gedefinieerd hoe de ontwikkelingscodering moet worden
 
 ### Beveiligingscontrolelijst {#security-checklist}
 
-Project specifieke controlelijst van punten, die op het Concept van de Veiligheid samen met om het even welk extra beleid wordt gebaseerd die wordt vereist om naleving van de oplossing te verzekeren.
+Projectspecifieke controlelijst van punten, die op het Concept van de Veiligheid samen met om het even welk extra beleid wordt gebaseerd die wordt vereist om naleving van de oplossing te verzekeren.
 
 Dit wordt vaak ook opgenomen als onderdeel van de stappen na de implementatie in het runbook.
 
 ### Beveiligingsconcept {#security-concept}
 
-Definieer en documenteer details van de beveiligingsconfiguratie die vereist is voor de toepassing, architectuur en infrastructuur.
+Definieer en documentdetails van de beveiligingsconfiguratie die vereist is voor de toepassing, architectuur en infrastructuur.
 
 ### Concept voor beveiligingsconcept {#security-concept-draft}
 
@@ -1095,11 +1091,11 @@ Rooktests moeten op alle systemen worden uitgevoerd om ervoor te zorgen dat de b
 
 ### Software Architecture-strategie {#software-architecture-strategy}
 
-de strategie op hoog niveau voor de softwarearchitectuur; met inbegrip van diensten, diensten, kaders en andere uitvoeringsbesluiten.
+de strategie op hoog niveau voor de softwarearchitectuur; met inbegrip van diensten, diensten, kaders, en andere uitvoeringsbesluiten.
 
 ### Oplossingsbeoordelingsraad ingesteld en vergaderingenset {#solution-review-board-established-and-meeting-cadence-set}
 
-De Raad van het Overzicht van de Oplossing is gewoonlijk samengesteld uit klantenbelanghebbenden.
+De Raad van het Overzicht van de Oplossing bestaat uit klantenbelanghebbenden.
 
 De raad van bestuur houdt regelmatig vergaderingen om de thans geldende vereisten en relevante specificaties doorlopend te evalueren. Het doel is te zorgen voor de afstemming op de definitie en criteria van succes en tevens een bijdrage te leveren aan de ontwikkeling van de eisen.
 
@@ -1127,7 +1123,7 @@ Om het even welke richtlijnen van de klant over hoe de specificatie zou moeten w
 
 ### Specificatie- en goedkeuringsproces gedefinieerd en meegedeeld {#specification-review-and-approval-process-defined-and-communicated}
 
-Er moet een duidelijk proces worden ingevoerd voor het aftekenen van specificaties door de klant. Dit proces garandeert duidelijkheid en nauwkeurigheid van de reikwijdte van de eisen.
+Er moet een duidelijk proces voor de aftekening van specificaties door de klant worden ingevoerd. Dit proces garandeert duidelijkheid en nauwkeurigheid van de reikwijdte van de eisen.
 
 ### Personeel geselecteerd voor training AEM beheerder {#staff-selected-for-aem-administrator-training}
 
@@ -1135,7 +1131,7 @@ Interne staf die training nodig heeft om de oplossing te beheren.
 
 ### Personeel geselecteerd voor training van auteur en eindgebruiker {#staff-selected-for-author-and-end-user-training}
 
-Interne medewerkers die een training voor auteurs van de oplossing nodig hebben.
+Interne staf die een training voor auteur over de oplossing nodig heeft.
 
 ### Belanghebbenden {#stakeholders}
 
@@ -1160,9 +1156,9 @@ Statusrapporten zijn een belangrijk communicatiemiddel. Het formaat moet worden 
 
 ### Succescriteria en definitie {#success-criteria-and-definition}
 
-De klant, de projectsponsor en de projectmanager of consultant moeten specificeren:
+De klant, de projectsponsor en de projectmanager of consultant moeten het volgende specificeren:
 
-* Wat bepaalt een succesvol resultaat voor het project.
+* Wat bepaalt een succesvol resultaat voor het project?
 * De specifieke criteria die vereist zijn om aan die definitie van succes te voldoen.
 
 Deze worden gebruikt om ervoor te zorgen dat aan de criteria voor succes wordt voldaan:
@@ -1176,7 +1172,7 @@ Een deel van de verantwoordelijkheid van de Quality Lead is ervoor te zorgen dat
 
 ### Ondersteuningsprocessen en toegang tot Adobe Support Portal {#support-processes-and-access-to-adobe-support-portal}
 
-De toegang tot het Adobe Support Portal is van cruciaal belang voor het indienen van tickets over op producten gebaseerde problemen die zich tijdens de implementatie kunnen voordoen.
+Toegang tot het Adobe Support Portal is van cruciaal belang voor het indienen van tickets over eventuele productgerelateerde problemen die zich tijdens de implementatie kunnen voordoen.
 
 De toegang zou aan zeer belangrijke leden van het team moeten worden toegewezen.
 
@@ -1186,7 +1182,7 @@ Een eerste voorstel en definitie van de architectuur voor alle milieu&#39;s van 
 
 ### Documentatie systeemarchitectuur {#system-architecture-documentation}
 
-een document met gedetailleerde informatie over de systeemarchitectuur; met inbegrip van interfaces, netwerklocatie en integratie voor alle omgevingen, onder andere informatie.
+een document met gedetailleerde informatie over de systeemarchitectuur; met inbegrip van interfaces, netwerkplaats, en integratie voor alle milieu&#39;s, onder andere informatie.
 
 ### Beveiligingsconcept systeemarchitectuur {#system-architecture-security-concept}
 
@@ -1200,7 +1196,7 @@ Een overzicht op hoog niveau van hoe te om de systeemarchitectuur volgzaam met o
 
 ### Systeemrisicofactoren geïdentificeerd en geverifieerd {#system-risk-factors-identified-and-verified}
 
-Eventuele risicofactoren die bij de risicobeoordeling (of andere beoordelingen) worden aangetroffen, worden geïdentificeerd en beoordeeld:
+Eventuele risicofactoren die in de risicobeoordeling (of andere beoordelingen) worden aangetroffen, worden geïdentificeerd en beoordeeld:
 
 * het risiconiveau dat in elk van beide wordt geïmpliceerd
 * samen met de geraamde inspanningen voor eventuele wijzigingen in de uitvoering die nodig zijn om deze aan te pakken.
@@ -1243,7 +1239,7 @@ De technische specificatie heeft onder meer betrekking op:
 
 ### Sjabloonspecificatie {#template-specification}
 
-De specificaties voor de vereiste sjablonen. Deze moeten onder meer details omvatten, zoals parsys, blauwdruk en overerving.
+De specificaties voor de vereiste sjablonen. Deze zouden details met inbegrip van parsys, blauwdruk en erfenisafbeelding, onder andere moeten omvatten.
 
 De specificaties zijn gebaseerd op de bedrijfsvereisten en ervaringsvereisten.
 
@@ -1274,7 +1270,7 @@ Er zij op gewezen dat:
 
 ### Testsuite {#test-suite}
 
-Selectie van de automatiseringssuite en gereedschappen. Deze zullen worden gebruikt om tests, met inbegrip van die voor gebruiksgevallen, te automatiseren.
+Selectie van de automatiseringssuite en gereedschappen. Deze worden gebruikt om tests, met inbegrip van die voor gebruiksgevallen te automatiseren.
 
 ### Gereedschapsset testen geselecteerd {#test-tooling-suite-selected}
 
@@ -1282,7 +1278,7 @@ Automatiseringssuite en gereedschap geselecteerd voor automatisering van hoofdle
 
 ### Testconcept {#testing-concept}
 
-Het testconcept is het kader op zeer hoog niveau voor het testen van het project; inclusief QA, UAT, prestaties, beveiliging en integratietests.
+Het testconcept is het overzicht op hoog niveau van het testen voor het project; inclusief QA, UAT, prestaties, beveiliging en integratietests.
 
 ### Testplannen {#testing-plans}
 
@@ -1314,7 +1310,7 @@ Ervoor zorgen dat alle systemen van derden, met de juiste documentatie, beschikb
 
 ### Toegang tot systemen van derden ingeschakeld {#third-party-systems-access-enabled}
 
-Vereiste toegangsrechten verleend aan de respectieve rollen die samen met systemen van derden worden gebruikt.
+Vereiste toegangsrechten verleend aan de respectieve rollen die met systemen van derden worden gebruikt.
 
 ### Testconcept van derden {#third-party-testing-concept}
 
@@ -1347,7 +1343,7 @@ Als er in de overeenkomst een steunniveau is opgenomen, moeten ook inspanningen 
 
 ### Trainingsmaterialen {#training-materials}
 
-Materialen voor trainingssessies. De materialen zouden specifiek voor de oplossing moeten worden gecreeerd en worden ontworpen om samen met de Gidsen van de Gebruiker te worden gebruikt.
+Materialen voor trainingssessies. De materialen zouden specifiek voor de oplossing moeten worden gecreeerd en worden ontworpen om met de Gidsen van de Gebruiker worden gebruikt.
 
 ### Begrijpt de reikwijdte van het project en de verwachtingen {#understands-scope-of-project-and-expectations}
 
@@ -1395,11 +1391,11 @@ Het begrotingsplan moet door alle belanghebbenden worden herzien en gevalideerd.
 
 ### Testresultaten witte doos {#white-box-test-results}
 
-Het testen van een witte doos is een methode die de interne structuren of de werking van een toepassing in tegenstelling tot zijn functionaliteit test. Het testen van de witte doos kan worden toegepast op de eenheid, integratie en systeemniveaus van het softwaretestproces.
+Het testen van een witte doos is een methode die de interne structuren of de werking van een toepassing in tegenstelling tot zijn functionaliteit test. Het testen van de witte doos kan op de eenheid, de integratie, en systeemniveaus van het softwaretestproces worden toegepast.
 
 ### Workflowspecificaties {#workflow-specifications}
 
-Op basis van het concept Workflows moeten deze specificaties in detail de stappen definiëren die de volledige workflow zullen maken.
+Op basis van het concept Workflows moeten deze specificaties in detail de stappen definiëren die de volledige workflow maken.
 
 De specificatie van elke workflow moet (ten minste) het volgende omvatten:
 

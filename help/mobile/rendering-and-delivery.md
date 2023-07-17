@@ -1,17 +1,13 @@
 ---
 title: Rendering en levering
-seo-title: Rendering and Delivery
 description: Rendering en levering
-seo-description: null
-uuid: 1253b6a5-6bf3-42b1-be3a-efa23b6ddb51
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '580'
 ht-degree: 0%
 
 ---
@@ -20,13 +16,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-AEM inhoud kan eenvoudig worden gerenderd via [Standaardservers splitsen](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) renderen [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen.
+Adobe Experience Manager-inhoud (AEM) kan eenvoudig worden gerenderd via [Standaardservers splitsen](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) renderen [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen.
 
 Die buiten-de-box-renders lopen doorgaans de repository en retourneren inhoud zoals ze is.
 
-AEM, via Sling, steunt ook het ontwikkelen van en het opstellen van douane rangschikkende renderers om volledige controle van het teruggegeven schema en de inhoud te nemen.
+AEM, als Verbergen, steunt ook het ontwikkelen van en het opstellen van douane het plaatsen renderers om volledige controle van het teruggegeven schema en de inhoud te nemen.
 
 De Standaard Renderers van de Diensten van de inhoud vullen het hiaat tussen uit-van-de-doos het Verspreiden Gebreken en de Ontwikkeling van de Douane die aanpassing en controle van vele aspecten van de teruggegeven inhoud zonder ontwikkeling toestaat.
 
@@ -159,7 +155,7 @@ In de volgende tabel worden de eigenschappen weergegeven:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Voor de volgende het rangschikken middeltypes, keer niet de standaardJson van CaaS uitvoer.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
@@ -173,7 +169,7 @@ De Diensten van de inhoud omvat twee uitvoerconfiguraties:
 
 #### Standaard exportconfiguratie {#default-export-configuration}
 
-De standaard de uitvoerconfiguratie van de Diensten van de inhoud zal worden toegepast als een config in gevraagde URI wordt gespecificeerd.
+De standaard de uitvoerconfiguratie van de Diensten van de inhoud wordt toegepast als een config in gevraagde URI wordt gespecificeerd.
 
 &lt;resource>.caas[.&lt;depth-int>].json
 

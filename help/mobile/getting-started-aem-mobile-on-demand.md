@@ -1,16 +1,14 @@
 ---
 title: Adobe Experience Manager Mobile On-Demand
-description: Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. Volg deze pagina om aan de slag te gaan met AEM mobiele On-Demand-services.
-uuid: 175c609d-3cb8-4a1b-bfea-278df272e500
+description: Voor het starten van een nieuwe Adobe Experience Manager (AEM) Mobile-app-ervaring is een combinatie van rollen vereist voordat deze gereed is voor het bewerken van inhoud. Volg deze pagina om aan de slag te gaan met AEM mobiele On-Demand-services.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: introduction
 content-type: reference
-discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
 exl-id: 4be199d8-963d-4807-b9bb-e23fa577c5f2
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '772'
 ht-degree: 0%
 
 ---
@@ -19,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Als u AEM niet gebruikt als bron voor inhoudsbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u Adobe Experience Manager (AEM) niet gebruikt als bron voor inhoudsbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 AEM biedt verschillende gereedschappen waarmee u uw inhoud kunt integreren in mobiele toepassingen.
 
@@ -45,7 +43,7 @@ AEM Preflight-toepassing kan worden beschouwd als een testomgeving voor het voor
 
 AEM Mobile is slechts één pijler die het volledige AEM platform vormt.
 
-Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een nieuwe AEM Mobile-toepassing:
+Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een AEM Mobile-toepassing:
 
 * **Beheerder**
 * **Developer**
@@ -57,11 +55,11 @@ Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolco
 
 ### Het AEM Mobile-toepassingsdashboard begrijpen {#understanding-the-aem-mobile-application-dashboard}
 
-Voordat de gebruiker de rollen en verantwoordelijkheden begrijpt, moet hij of zij over voldoende kennis van **AEM Mobile Control Center** of de **Toepassingsdashboard**. Klikken [hier](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor een diepgaand begrip.
+Alvorens de rollen en de verantwoordelijkheden te begrijpen, zou de gebruiker grondige kennis van moeten hebben **AEM Mobile Control Center** of de **Toepassingsdashboard**. Klikken [hier](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor een diepgaand begrip.
 
 ### AEM-beheerder {#aem-administrator}
 
-An ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een nieuwe toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een nieuwe app maken met AEM Mobile *wizard Maken* Selecteer doorgaans een van de gewenste toepassingssjablonen uit onze naslagvoorbeelden of (in de meeste gevallen) een aangepaste toepassingssjabloon die is gemaakt door *AEM ontwikkelaars.*
+An ***AEM*** is verantwoordelijk voor het toevoegen van een toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een app maken met AEM Mobile *wizard Maken* Selecteer doorgaans een van de gewenste app-sjablonen uit de keuzelijst met referentiemonsters of (gewoonlijk) een aangepaste app-sjabloon die is gemaakt met *AEM ontwikkelaars.*
 
 Een AEM beheerder is verantwoordelijk voor de volgende taken wanneer u een app maakt met AEM Mobile On-demand Services:
 
@@ -74,7 +72,7 @@ Om met de rollen en de verantwoordelijkheden van een Beheerder te beginnen, zie 
 
 ## AEM Developer {#aem-developer}
 
-An **AEM ontwikkelaar** breidt en creeert douaneWebmalplaatjes en componenten uit om *AEM Auteur *toe te laten om mooie en boeiende mobiele ervaringen tot stand te brengen. Deze sjablonen en componenten zijn niet alleen geoptimaliseerd voor mobiele apps; maar communiceer zowel aan het apparaat als aan de AEM server (om het even welke verre server) aan de eindpunten van de netwerkdienst. AEM ingebouwde inhoudeditor wordt gebruikt door *AEM-auteurs* rijke en relevante ervaringen in de app te creëren, met inbegrip van integratie met de rest van de Adobe Marketing Cloud.
+An **AEM ontwikkelaar** breidt en creeert douaneWebmalplaatjes en componenten uit om *AEM Auteur *toe te laten om mooie en boeiende mobiele ervaringen tot stand te brengen. Deze sjablonen en componenten zijn niet alleen geoptimaliseerd voor mobiele apps; maar communiceer zowel aan het apparaat als aan de AEM server (om het even welke verre server) aan de eindpunten van de netwerkdienst. AEM ingebouwde inhoudeditor wordt gebruikt door *AEM-auteurs* het creëren van rijke en relevante ervaringen binnen de app, waaronder integratie met de rest van de Adobe Experience Cloud.
 
 Een AEM ontwikkelaar is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On-demand Services:
 
@@ -91,7 +89,7 @@ Ga als volgt te werk om aan de slag te gaan met de rollen en verantwoordelijkhed
 
 ## AEM-auteur {#aem-author}
 
-An ***AEM-auteur* (of *Marketer*)**gebruikt de aangepaste ontwikkelde of out-of-the-box sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt dan gebruikt door *AEM-auteurs* rijke en relevante ervaringen in de app te creëren, met inbegrip van integratie met de rest van de Adobe Marketing Cloud.
+An ***AEM-auteur* (of *Marketer*)**gebruikt de aangepaste ontwikkelde of out-of-the-box sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt dan gebruikt door *AEM-auteurs* het creëren van rijke en relevante ervaringen binnen de app, waaronder integratie met de rest van de Adobe Experience Cloud.
 
 Een AEM auteur moet de volgende onderwerpen begrijpen wanneer hij een app maakt met AEM Mobile On-demand Services:
 

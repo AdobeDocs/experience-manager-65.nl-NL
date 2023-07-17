@@ -1,24 +1,20 @@
 ---
-title: Gebruikers van de service in AEM
-seo-title: Service Users in AEM
-description: Meer informatie over servicegebruikers in AEM.
-seo-description: Learn about Service Users in AEM.
-uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
+title: Servicegebruikers in Adobe Experience Manager
+description: Meer informatie over servicegebruikers in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1766'
 ht-degree: 0%
 
 ---
 
-# Gebruikers van de service in AEM{#service-users-in-aem}
+# Gebruikers van services in Adobe Experience Manager (AEM) {#service-users-in-aem}
 
 ## Overzicht {#overview}
 
@@ -66,7 +62,7 @@ Ook, zorg ervoor dat om het even welke nieuwe eigenschappen u ontwikkelt zich aa
 
 * **Privacy-instellingen respecteren**
 
-   * In het geval van privéprofielen kunt u bijvoorbeeld de profielafbeelding, e-mail of volledige naam die op de privécomputer is gevonden, niet weergeven `/profile` knooppunt.
+   * Als er privéprofielen zijn, kunt u bijvoorbeeld de profielafbeelding, e-mail of volledige naam die op de privécomputer is gevonden, niet weergeven `/profile` knooppunt.
 
 ## Strikte toegangscontrole {#strict-access-control}
 
@@ -86,9 +82,9 @@ Of u toegangsbeheer terwijl het herstructureren van inhoud toepast of wanneer u 
 Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de Gebruiker van de Dienst aan, die toestaat om een bundel-aan-gebruiker afbeelding en twee overeenkomstige API methodes te vormen: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` en ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` die een zitting/middeloplosser met de voorrechten van een gevormde slechts gebruiker terugkeren. Deze methoden hebben de volgende kenmerken:
 
 * Zij staan kaartdiensten aan gebruikers toe
-* Zij maken het mogelijk om subservicegebruikers te definiëren
+* Zij maken het mogelijk om de gebruikers van de subdienst te bepalen
 * Het centrale configuratiepunt is: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` = `service-name` [ &quot;:&quot; subservice-name ] 
+* `service-id` = `service-name` [&quot;:&quot; subservice-name]
 
 * `service-id` is toegewezen aan een resourceoplosser en/of JCR-opslaggebruikers-id voor verificatie
 * `service-name` is de symbolische naam van de bundel die de dienst verleent
@@ -99,12 +95,12 @@ Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de
 
 Een servicegebruiker is een JCR-gebruiker zonder wachtwoord en met een minimale set rechten die nodig zijn om een bepaalde taak uit te voeren. Als er geen wachtwoord is ingesteld, kan u zich niet aanmelden bij een servicegebruiker.
 
-Een manier om een administratieve zitting te verwerpen is het door de zittingen van de de dienstgebruiker te vervangen. Indien nodig kan de subservice ook door meerdere gebruikers worden vervangen.
+Een manier om een administratieve zitting te verwerpen is het door de zittingen van de de dienstgebruiker te vervangen. Het zou ook door veelvoudige subservice gebruikers indien nodig kunnen worden vervangen.
 
 Als u de beheersessie wilt vervangen door een servicegebruiker, moet u de volgende stappen uitvoeren:
 
 1. Identificeer de noodzakelijke toestemmingen voor uw dienst, die het beginsel van minste toestemming in mening houden.
-1. Controleer of er al een gebruiker beschikbaar is met exact de juiste instellingen voor machtigingen. Maak een nieuwe gebruiker van de systeemservice als geen bestaande gebruiker aan uw wensen voldoet. RTC is vereist om een nieuwe de dienstgebruiker tot stand te brengen. Soms is het handig om meerdere gebruikers van subservices te maken (bijvoorbeeld een voor schrijven en een voor lezen) om de toegang nog verder te compartimenteren.
+1. Controleer of er al een gebruiker beschikbaar is met exact de juiste instellingen voor machtigingen. Maak een gebruiker van de systeemservice als geen bestaande gebruiker aan uw behoeften voldoet. RTC is nodig om een servicegebruiker te maken. Soms, is het zinvol om veelvoudige subservice gebruikers (bijvoorbeeld, voor schrijven en voor lezing) tot stand te brengen om toegang nog meer te compartimentaliseren.
 1. Opstelling en test ACEs voor uw gebruiker.
 1. Voeg een `service-user` toewijzing voor uw dienst en voor `user/sub-users`
 
@@ -112,7 +108,7 @@ Als u de beheersessie wilt vervangen door een servicegebruiker, moet u de volgen
 
 1. Vervang de `admin-session` in uw code met de `loginService` of `getServiceResourceResolver` API&#39;s.
 
-## Een nieuwe servicegebruiker maken {#creating-a-new-service-user}
+## Een servicegebruiker maken {#creating-a-new-service-user}
 
 Nadat u hebt gecontroleerd dat geen gebruiker in de lijst met AEM gebruikers van toepassing is voor uw gebruiksscenario en de bijbehorende RTC-problemen zijn goedgekeurd, kunt u doorgaan en de nieuwe gebruiker toevoegen aan de standaardinhoud.
 
@@ -124,7 +120,7 @@ U kunt servicegebruikers maken door:
 
 1. Ga naar de verkenner van de repository op *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 1. Aanmelden als beheerder door op de knop **Aanmelden** in de linkerbovenhoek van het scherm.
-1. Maak vervolgens een systeemgebruiker en geef deze een naam. Als u de gebruiker als systeem wilt maken, stelt u het tussentijdse pad in als `system` en voeg optionele submappen toe, afhankelijk van uw behoeften:
+1. Maak vervolgens een systeemgebruiker en geef deze een naam. Als u de gebruiker als een systeemgebruiker wilt maken, stelt u het tussentijdse pad in als `system` en voeg optionele submappen toe, afhankelijk van uw behoeften:
 
    ![chlimage_1-102](assets/chlimage_1-102a.png)
 
@@ -134,7 +130,7 @@ U kunt servicegebruikers maken door:
 
    >[!NOTE]
    >
-   >Merk op dat er geen mixintypes verbonden aan de dienstgebruikers zijn. Dit betekent dat er geen beleid voor toegangsbeheer voor systeemgebruikers zal zijn.
+   >Er zijn geen mixintypes verbonden aan de dienstgebruikers. Dit betekent dat er geen beleid voor toegangsbeheer voor systeemgebruikers zal zijn.
 
 Wanneer u het corresponderende .content.xml toevoegt aan de inhoud van uw bundel, moet u ervoor zorgen dat u de `rep:authorizableId` en dat het primaire type `rep:SystemUser`. Het moet er als volgt uitzien:
 
@@ -149,15 +145,15 @@ Wanneer u het corresponderende .content.xml toevoegt aan de inhoud van uw bundel
 
 ## Het toevoegen van een configuratieamendement aan de configuratie ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systeem toe te voegen moet u een fabrieksconfiguratie voor creëren ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` service. Om deze modulaire configuratie te houden kunnen dergelijke configuraties worden verstrekt gebruikend [Sling-wijzigingsmechanisme](https://issues.apache.org/jira/browse/SLING-3578). U wordt aangeraden dergelijke configuraties met uw bundel te installeren door [Eerste inhoud bij verkoop laden](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systeem toe te voegen, creeer een fabrieksconfiguratie voor ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` service. Om dit modulaire te houden, kan dergelijke configuratie worden verstrekt gebruikend [Sling-wijzigingsmechanisme](https://issues.apache.org/jira/browse/SLING-3578). U wordt aangeraden dergelijke configuraties met uw bundel te installeren door [Eerste inhoud bij verkoop laden](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Een submap SLING-INF/content maken onder de map src/main/resources van uw bundel
-1. In deze map maakt u een bestand met de naam org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml met de inhoud van uw fabrieksconfiguratie (met inbegrip van alle subservice gebruikerstoewijzingen). Voorbeeld:
+1. Maak in deze map een bestand met de naam org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml met de inhoud van uw fabrieksconfiguratie (met inbegrip van alle afbeeldingen van de subservicestgebruiker). Voorbeeld:
 
 1. Een `SLING-INF/content` map onder de `src/main/resources` map van de bundel;
-1. Maak in deze map een bestand `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` met de inhoud van uw fabrieksconfiguratie, met inbegrip van alle subservice gebruikerstoewijzingen.
+1. Maak in deze map een bestand `named org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-<a unique name for your factory configuration>.xml` met de inhoud van uw fabrieksconfiguratie, inclusief alle toewijzingen van gebruikers van de subservice.
 
-   Voor illustratiedoeleinden gebruikt u een bestand dat `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
+   Voor illustratiedoeleinden gebruikt u het bestand `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.amended-com.adobe.granite.auth.saml.xml`:
 
    ```xml
    <?xml version="1.0" encoding="UTF-8"?>
@@ -184,7 +180,7 @@ Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systee
    </Sling-Initial-Content>
    ```
 
-1. Installeer de bundel en zorg ervoor de fabrieksconfiguratie is geïnstalleerd. U kunt dit doen door:
+1. Installeer de bundel en controleer of de fabrieksconfiguratie is geïnstalleerd. U kunt dit doen door:
 
    * Ga naar de webconsole op *https://serverhost:serveraddress/system/console/configMgr*
    * Zoeken naar **Wijziging van de Gebruikerstoewijzingsservice Apache Sling Service**
@@ -195,7 +191,7 @@ Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systee
 verzoekt `loginAdministrative()` worden vaak samen met gedeelde sessies weergegeven. Deze zittingen worden verworven bij de dienstactivering en slechts het programma geopend nadat de dienst wordt tegengehouden. Hoewel dit gebruikelijk is, leidt het tot twee problemen:
 
 * **Beveiliging:** Dergelijke beheersessies worden gebruikt om bronnen of andere objecten die aan de gedeelde sessie zijn gebonden, in cache te plaatsen en terug te sturen. Later in de vraagstapel konden deze voorwerpen aan zittingen of middeloplossers met opgeheven voorrechten worden aangepast, en het is vaak niet duidelijk aan de bezoeker dat het een adminzitting is zij met werken.
-* **Prestaties:** Bij gedeelde sessies met eikel kunnen prestatieproblemen optreden en het wordt momenteel afgeraden deze te gebruiken.
+* **Prestaties:** In eiken kunnen gedeelde sessies prestatieproblemen veroorzaken en het wordt afgeraden deze te gebruiken.
 
 De meest voor de hand liggende oplossing voor het veiligheidsrisico is eenvoudigweg de vervanging van de `loginAdministrative()` bellen met een `loginService()` een voor een gebruiker met beperkte rechten. Dit heeft echter geen invloed op een mogelijke verslechtering van de prestaties. Een mogelijkheid om dat te beperken is alle gevraagde informatie te verpakken in een object dat geen koppeling heeft met de sessie. Maak vervolgens de sessie op verzoek (of vernietigt deze).
 
@@ -214,7 +210,7 @@ De eerste methode heeft de voorkeur.
 
 ## Verwerkingsgebeurtenissen, replicatievoorprocessoren en taken {#processing-events-replication-preprocessors-and-jobs}
 
-Bij het verwerken van gebeurtenissen of taken en in sommige gevallen van workflows gaat de bijbehorende sessie die de gebeurtenis heeft geactiveerd, meestal verloren. Dit leidt ertoe dat gebeurtenismanagers en baanbewerkers vaak administratieve zittingen gebruiken om hun werk te doen. Er zijn verschillende denkbare benaderingen om dit probleem op te lossen, elk met hun voor- en nadelen:
+Bij het verwerken van gebeurtenissen of taken, en soms ook van workflows, gaat de bijbehorende sessie die de gebeurtenis heeft geactiveerd, verloren. Dit leidt ertoe dat gebeurtenismanagers en baanbewerkers vaak administratieve zittingen gebruiken om hun werk te doen. Er zijn verschillende denkbare benaderingen om dit probleem op te lossen, elk met hun voor- en nadelen:
 
 1. Geef de `user-id` in de gebeurtenislading en gebruik imitatie.
 
@@ -226,21 +222,21 @@ Bij het verwerken van gebeurtenissen of taken en in sommige gevallen van workflo
 
    **Voordelen:** In overeenstemming met het huidige ontwerp. Moet minimaal worden gewijzigd.
 
-   **Nadelen:** Vereist zeer krachtige de dienstgebruikers om flexibel te zijn, wat tot voorrechtescalaties kan gemakkelijk leiden. Hiermee wordt het beveiligingsmodel omzeild.
+   **Nadelen:** Vereist krachtige de dienstgebruikers om flexibel te zijn, wat tot voorrechtescalaties kan gemakkelijk leiden. Hiermee wordt het beveiligingsmodel omzeild.
 
 1. Geef een serialisatie van de `Subject` in de gebeurtenislading, en creeer `ResourceResolver` op basis van dat onderwerp. Een voorbeeld hiervan is het gebruik van de JAAS `doAsPrivileged` in de `ResourceResolverFactory`.
 
-   **Voordelen:** Schone implementatie vanuit veiligheidsoogpunt. Het vermijdt re-authentificatie en het werkt met de originele voorrechten. Beveiligingsrelevante code is transparant voor de consument van het evenement.
+   **Voordelen:** Schone implementatie vanuit veiligheidsoogpunt. Het vermijdt opnieuw authentificatie en het werkt met de originele voorrechten. Beveiligingsrelevante code is transparant voor de consument van het evenement.
 
    **Nadelen:** Needs refactoring. Het feit dat de veiligheidsrelevante code transparant is voor de consument van het evenement kan ook tot problemen leiden.
 
-De derde aanpak is momenteel de voorkeurstechniek.
+De derde aanpak is de voorkeurstechniek.
 
 ## Workflowprocessen {#workflow-processes}
 
-Binnen de implementaties van het werkschemaproces wordt de overeenkomstige gebruikerszitting die het werkschema teweegbracht gewoonlijk verloren. Dit leidt tot werkschemaprocessen vaak gebruikend administratieve zittingen om hun werk uit te voeren.
+Binnen de implementaties van het werkschemaproces, wordt de overeenkomstige gebruikerszitting die het werkschema teweegbracht verloren. Dit leidt tot werkschemaprocessen die vaak administratieve zittingen gebruiken om hun werk uit te voeren.
 
-Om deze problemen op te lossen wordt aanbevolen om dezelfde aanpak te volgen als in [Verwerkingsgebeurtenissen, replicatievoorprocessoren en taken](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) worden gebruikt.
+Om deze problemen op te lossen, wordt aanbevolen om dezelfde aanpak te kiezen als in [Verwerkingsgebeurtenissen, replicatievoorprocessoren en taken](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) worden gebruikt.
 
 ## Verkoopprocessors en verwijderde POSTEN {#sling-post-processors-and-deleted-pages}
 

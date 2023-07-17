@@ -1,31 +1,27 @@
 ---
-title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
-seo-title: How to Audit User Management Operations in AEM
-description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
-seo-description: Learn how to audit User Management Operations in AEM.
-uuid: 9d177afb-172c-4858-a678-254c97cfa472
+title: Gebruikersbeheerbewerkingen in Adobe Experience Manager controleren
+description: Leer hoe u gebruikersbeheerbewerkingen in Adobe Experience Manager kunt controleren.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: ba6a56e5-b91c-4779-9154-d4300b2827f8
 docset: aem65
 exl-id: 7a4406c9-2f98-4bf8-b32c-1ec1e7ff36f0
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '308'
-ht-degree: 0%
+source-wordcount: '300'
+ht-degree: 1%
 
 ---
 
-# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren{#how-to-audit-user-management-operations-in-aem}
+# Gebruikersbeheerbewerkingen in Adobe Experience Manager controleren (AEM) {#how-to-audit-user-management-operations-in-aem}
 
 ## Inleiding {#introduction}
 
-AEM heeft de capaciteit geïntroduceerd om toestemmingsveranderingen te registreren zodat kunnen zij in een recentere tijd worden gecontroleerd.
+AEM heeft de capaciteit geïntroduceerd om toestemmingsveranderingen te registreren zodat u hen kunt controleren later.
 
-Dankzij deze uitbreiding kunt u de CRUD-handelingen (Maken, Lezen, Bijwerken, Verwijderen) controleren op machtigingen en groepstoewijzingen van gebruikers. Meer specifiek zal het registreren:
+Dankzij deze uitbreiding kunt u de CRUD-handelingen (Maken, Lezen, Bijwerken, Verwijderen) controleren op machtigingen en groepstoewijzingen van gebruikers. Meer specifiek, registreert het:
 
 * Een nieuwe gebruiker die wordt aangemaakt
 * Een gebruiker die aan een groep wordt toegevoegd
@@ -35,10 +31,10 @@ Standaard worden de items naar de `error.log` bestand. Om controle gemakkelijker
 
 ## De uitvoer wordt omgeleid naar een afzonderlijk logbestand {#redirecting-the-output-to-a-separate-log-file}
 
-Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, moet u een nieuw logbestand maken **Logboekregistratie voor Apache Sling** configuratie. We gebruiken `useraudit.log` als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
+Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, maakt u een **Logboekregistratie voor Apache Sling** configuratie. Laten we gebruiken `useraudit.log` als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
 
 1. Ga naar de webconsole door naar *https://serveraddress:serverport/system/console/configMgr*
-1. Zoeken naar **Logboekconfiguratie Apache Sling Logging**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een nieuwe fabrieksconfiguratie te maken.
+1. Zoeken naar **Logboekconfiguratie Apache Sling Logging**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een fabrieksconfiguratie te maken.
 1. Maak de volgende configuratie:
 
    * **Logniveau:** Informatie

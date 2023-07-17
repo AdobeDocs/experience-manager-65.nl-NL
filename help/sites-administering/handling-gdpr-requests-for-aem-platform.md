@@ -1,20 +1,16 @@
 ---
-title: Behandeling van GDPR-verzoeken aan de AEM Stichting
-seo-title: Handling GDPR Requests for the AEM Foundation
-description: Behandeling van GDPR-verzoeken aan de AEM Stichting
-seo-description: null
-uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
+title: Behandeling van GDPR-verzoeken voor de Adobe Experience Manager Foundation
+description: Behandeling van GDPR-verzoeken voor de Adobe Experience Manager Foundation
 contentOwner: sarchiz
-discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '430'
-ht-degree: 6%
+source-wordcount: '431'
+ht-degree: 0%
 
 ---
 
-# Behandeling van GDPR-verzoeken aan de AEM Stichting{#handling-gdpr-requests-for-the-aem-foundation}
+# Behandeling van GDPR-verzoeken voor de Adobe Experience Manager (AEM) Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
@@ -22,7 +18,7 @@ ht-degree: 6%
 
 ## Ondersteuning van AEM Foundation GDPR {#aem-foundation-gdpr-support}
 
-Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opgeslagen het Profiel van de Gebruiker. Daarom richt de informatie in dit artikel hoofdzakelijk hoe te om tot gebruikersprofielen toegang te hebben en te schrappen, om de verzoeken van de Toegang te richten GDPR en van de Schrapping respectievelijk.
+Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opgeslagen het Profiel van de Gebruiker. Daarom richt de informatie in dit artikel hoofdzakelijk hoe te om tot gebruikersprofielen toegang te hebben en te schrappen, om de Toegang te richten GDPR, en verzoeken te schrappen.
 
 ## Een gebruikersprofiel openen {#accessing-a-user-profile}
 
@@ -76,7 +72,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 ### Gebruiker uitschakelen {#disable-user}
 
 1. Open de console van het Beleid van de Gebruiker en onderzoek naar de gebruiker in kwestie, zoals hierboven beschreven.
-1. Houd de muisaanwijzer boven de gebruiker en klik op het pictogram Selecteren. Het profiel wordt grijs om aan te geven dat het is geselecteerd.
+1. Houd de muisaanwijzer boven de gebruiker en klik op het pictogram Selecteren. Het profiel wordt grijs weergegeven om aan te geven dat het is geselecteerd.
 
 1. Druk op de knop Uitschakelen in het bovenste menu om de gebruiker uit te schakelen:
 
@@ -86,7 +82,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_1-40-58](assets/image2018-2-6_1-40-58.png)
 
-   De gebruikersinterface geeft vervolgens aan dat de gebruiker is gedeactiveerd door uit te graaien en een vergrendeling toe te voegen aan de profielkaart:
+   De gebruikersinterface geeft aan dat de gebruiker is gedeactiveerd door de profielkaart te verslepen en er een vergrendeling aan toe te voegen:
 
    ![gehandicapte gebruiker](assets/disableduser.png)
 
@@ -109,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP-API {#http-api-1}
 
-In de volgende procedures wordt het opdrachtregelprogramma `curl` gebruikt om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en hoe u de profielen die beschikbaar zijn op de standaardlocatie, kunt verwijderen.
+Bij de volgende procedures wordt gebruikgemaakt van de `curl` opdrachtregelprogramma om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en profielen verwijderen van `cavery` die beschikbaar zijn op de standaardlocatie.
 
 * *De startpagina van de gebruiker opzoeken*
 
@@ -126,7 +122,7 @@ Gebruikend de knoopweg van het huisbezit van de nuttige lading JSON die van het 
 curl -X POST -u user:password -FdisableUser="describe the reasons for disabling this user (GDPR in this case)" 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN.rw.userprops.html'
 ```
 
-* *Gebruikersprofiel(en) verwijderen*
+* *Gebruikersprofielen verwijderen*
 
 Het gebruiken van de knoopweg van het huisbezit van de nuttige lading JSON die van het bevel van de rekeningsontdekking en het gekende uit de knoopplaatsen van het kaderprofiel is teruggekeerd:
 

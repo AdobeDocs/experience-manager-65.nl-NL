@@ -1,13 +1,11 @@
 ---
-title: Ontwerpen voor Adobe PhoneGap Enterprise in AEM
+title: Ontwerpen voor Adobe PhoneGap Enterprise in Adobe Experience Manager
 description: PhoneGap
-uuid: 256a9f66-4c66-434c-be79-01be3c02d688
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
 source-wordcount: '207'
 ht-degree: 1%
@@ -18,11 +16,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM platform vormt.
 
-Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een nieuwe AEM Mobile-toepassing:
+Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een AEM Mobile-toepassing:
 
 * **Beheerder**
 * **Developer**
@@ -39,14 +37,14 @@ Zie de volgende bronnen om aan de slag te gaan:
 * [App-tegel beheren](/help/mobile/phonegap-app-details-tile.md)
 * [App-metagegevens bewerken](/help/mobile/phonegap-editmetadata.md)
 * [Toepassingsdefinities](/help/mobile/phonegap-app-definitions.md)
-* [Een nieuwe AEM Mobile-app maken met de wizard Maken](/help/mobile/phonegap-create-new-app.md)
+* [Een AEM Mobile-app maken met een wizard maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
 Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
 
 ## Aanvullende bronnen {#additional-resources}
 
-Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkheden van een beheerder en ontwikkelaar:
+Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 
 * [Ontwikkelen voor Adobe PhoneGap Enterprise met AEM](/help/mobile/developing-in-phonegap.md)
 * [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](/help/mobile/administer-phonegap.md)

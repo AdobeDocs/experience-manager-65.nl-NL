@@ -1,16 +1,14 @@
 ---
 title: Aan de slag met mobiele on-demand services van Adobe Experience Manager
-description: Ga aan de slag met het beheer van AEM mobiele On-Demand Services-app. Het verstrekt een overzicht van de rollen en de verantwoordelijkheden van een AEM beheerder voor de diensten op bestelling.
-uuid: fd99c032-287a-489b-9690-b18980c55c29
+description: Ga aan de slag met het beheer van de mobiele On-Demand Services-app van Adobe Experience Manager (AEM). Het verstrekt een overzicht van de rollen en de verantwoordelijkheden van een AEM beheerder voor de diensten op bestelling.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 content-type: reference
 topic-tags: administering-on-demand-services-app
-discoiquuid: 5e1e6a51-67e1-42e3-bcb0-e16bc92c9cb3
 exl-id: 95cbedaf-9a94-45fa-8ddb-15be7a09f86d
-source-git-commit: ff7e37f24990a94510331a33cb05b7b44b3bfe85
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '298'
 ht-degree: 1%
 
 ---
@@ -19,11 +17,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
->Als u AEM niet gebruikt als bron voor inhoudsbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u Adobe Experience Manage (AEM) niet gebruikt als bron voor inhoudsbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 ## AEM-beheerder {#aem-administrator}
 
@@ -33,7 +31,7 @@ ht-degree: 1%
 >
 >Voordat u aan de slag gaat met het instellen van uw omgeving voor AEM Mobile On-demand Services, raadpleegt u [AEM Mobile Application Dashboard of Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-An ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een nieuwe toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een nieuwe app maken met AEM Mobile *wizard Maken* Selecteer doorgaans een van de gewenste toepassingssjablonen uit onze naslagvoorbeelden of (in de meeste gevallen) een aangepaste toepassingssjabloon die is gemaakt door *AEM ontwikkelaars.*
+An ***AEM*** is verantwoordelijk voor het toevoegen van een toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren. AEM beheerders die een app maken met AEM Mobile *wizard Maken* Selecteer doorgaans een van de gewenste app-sjablonen uit de keuzelijst met referentiemonsters of (gewoonlijk) een aangepaste app-sjabloon die is gemaakt met *AEM ontwikkelaars.*
 
 >[!NOTE]
 >
@@ -41,7 +39,7 @@ An ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aa
 
 Een AEM beheerder is verantwoordelijk voor de volgende taken wanneer u een app maakt met AEM Mobile On-demand Services:
 
-* [AEM Mobile instellen](/help/mobile/aem-mobile-setup.md), die
+* [AEM Mobile instellen](/help/mobile/aem-mobile-setup.md) die
 
    * AEM Mobile-provisioning
    * Projecten maken voor AEM Mobile

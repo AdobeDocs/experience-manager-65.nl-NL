@@ -1,16 +1,14 @@
 ---
 title: Mobiel met inhoudssynchronisatie
-description: Volg deze pagina voor meer informatie over Inhoud synchroniseren. Pagina's die in AEM zijn gemaakt, kunnen als toepassingsinhoud worden gebruikt, zelfs als het apparaat offline is. Omdat AEM pagina's zijn gebaseerd op webstandaarden, werken ze bovendien op verschillende platforms, zodat u ze in elke native wrapper kunt insluiten. Deze strategie beperkt de ontwikkelingsinspanningen en stelt u in staat om toepassingsinhoud eenvoudig bij te werken.
-uuid: 11f74cc5-99a5-4186-9b60-b19351305432
+description: Volg deze pagina voor meer informatie over Inhoud synchroniseren. Pagina's die in Adobe Experience Manager (AEM) zijn gemaakt, kunnen als inhoud van de app worden gebruikt, zelfs als het apparaat offline is. Omdat AEM pagina's zijn gebaseerd op webstandaarden, werken ze bovendien op verschillende platforms, zodat u ze in elke native wrapper kunt insluiten. Deze strategie beperkt de ontwikkelingsinspanningen en stelt u in staat om toepassingsinhoud eenvoudig bij te werken.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
-discoiquuid: 8fb70ca4-86fc-477d-9773-35b84d5e85a8
 exl-id: a6e59334-09e2-4bb8-b445-1868035da556
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: 96e2e945012046e6eac878389b7332985221204e
 workflow-type: tm+mt
-source-wordcount: '2995'
+source-wordcount: '2976'
 ht-degree: 0%
 
 ---
@@ -19,9 +17,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
-Gebruik Content Sync om inhoud te verpakken zodat deze kan worden gebruikt in systeemeigen mobiele toepassingen. Pagina&#39;s die in AEM zijn gemaakt, kunnen als toepassingsinhoud worden gebruikt, zelfs als het apparaat offline is. Omdat AEM pagina&#39;s zijn gebaseerd op webstandaarden, werken ze bovendien op verschillende platforms, zodat u ze in elke native wrapper kunt insluiten. Deze strategie beperkt de ontwikkelingsinspanningen en stelt u in staat om toepassingsinhoud eenvoudig bij te werken.
+Gebruik Content Sync om inhoud te verpakken zodat deze kan worden gebruikt in systeemeigen mobiele toepassingen. Pagina&#39;s die in Adobe Experience Manager (AEM) zijn gemaakt, kunnen als inhoud van de app worden gebruikt, zelfs als het apparaat offline is. Omdat AEM pagina&#39;s zijn gebaseerd op webstandaarden, werken ze bovendien op verschillende platforms, zodat u ze in elke native wrapper kunt insluiten. Deze strategie beperkt de ontwikkelingsinspanningen en stelt u in staat om toepassingsinhoud eenvoudig bij te werken.
 
 Met het raamwerk van Content Sync wordt een archiefbestand gemaakt dat de webinhoud bevat. De inhoud kan om het even wat van eenvoudige pagina&#39;s, beelden, en de dossiers van PDF, of volledige toepassingen van het Web zijn. De API voor het synchroniseren van inhoud biedt toegang tot het archiefbestand via mobiele apps of om processen te maken zodat de inhoud kan worden opgehaald en opgenomen in de app.
 
@@ -40,8 +38,8 @@ Enkele richtlijnen voor het ontwikkelen van Inhoud synchroniseren-handlers zijn 
 
 * Handlers moeten implementeren *com.day.cq.contentsync.handler.ContentUpdateHandler* (rechtstreeks of door een klasse uit te breiden die dit doet)
 * Handlers kunnen *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler*
-* Handler mag alleen true rapporteren als deze de cache ContentSync bijwerkt. Bij onjuist rapporteren van true AEM een update worden gemaakt die niet daadwerkelijk werd uitgevoerd.
-* De manager zou slechts het geheime voorgeheugen moeten bijwerken als de inhoud werkelijk veranderde. Schrijf niet naar de cache als een wit niet nodig is. Hierdoor wordt een onnodige update gemaakt.
+* Handler mag alleen true rapporteren als deze de cache ContentSync bijwerkt. Onjuiste rapportage van true heeft AEM een update gemaakt die niet daadwerkelijk werd uitgevoerd.
+* De manager zou slechts het geheime voorgeheugen moeten bijwerken als de inhoud veranderde. Schrijf niet naar de cache als een wit niet nodig is. Hierdoor wordt een onnodige update gemaakt.
 
 >[!NOTE]
 >
@@ -99,7 +97,7 @@ Als de `cq:ContentSyncConfig` de knoop heeft geen toegelaten bezit, bepaalt de s
 
 Wanneer een gebruiker een update uitvoert naar de cache van Content Sync, voert een specifieke gebruikersaccount de actie uit namens de gebruiker. De anonieme gebruiker werkt standaard alle cache voor Content Sync bij.
 
-U kunt de standaardgebruiker overschrijven en een gebruiker of groep opgeven die een specifieke cache voor inhoudssynchronisatie bijwerkt.
+U kunt de standaardgebruiker overschrijven en een gebruiker of groep opgeven die een specifieke cache voor het synchroniseren van inhoud bijwerkt.
 
 Als u de standaardgebruiker wilt overschrijven, geeft u een gebruiker of groep op die updates uitvoert voor een specifieke configuratie van Content Sync door de volgende eigenschap toe te voegen aan de node cq:ContentSyncConfig:
 
@@ -113,7 +111,7 @@ Als de `cq:ContentSyncConfig` node heeft geen `updateuser` eigenschap, de standa
 
 Verwerking kan variëren van het renderen van eenvoudige JSON tot volledige rendering van pagina&#39;s, inclusief de elementen waarnaar wordt verwezen. Deze sectie maakt een lijst van de beschikbare configuratietypen en hun specifieke parameters:
 
-**kopiëren** Kopieer gewoon bestanden en mappen.
+**kopiëren** - Kopieer bestanden en mappen.
 
 * **pad** - Als het pad naar één bestand wijst, wordt alleen het bestand gekopieerd. Als de map naar een map verwijst (inclusief paginaknooppunten), worden alle onderstaande bestanden en mappen gekopieerd.
 
@@ -124,7 +122,7 @@ Verwerking kan variëren van het renderen van eenvoudige JSON tot volledige rend
 
 * **kiezer** - Optionele kiezers, gescheiden door punt. Algemene voorbeelden *tikken* voor het weergeven van mobiele versies van een pagina of *oneindig* voor JSON-uitvoer.
 
-**clientlib** Een JavaScript- of CSS-clientbibliotheek in een pakket plaatsen.
+**clientlib** - Een JavaScript- of CSS-clientbibliotheek verpakken.
 
 * **pad** - Pad naar de hoofdmap van de clientbibliotheek.
 * **extension** - Type clientbibliotheek. Dit moet worden ingesteld op: *js* of *css* op dit moment.
@@ -135,13 +133,13 @@ Oorspronkelijke uitvoeringen van elementen verzamelen.
 
 * **pad** - Pad naar een map met middelen onder /content/dam.
 
-**image** Verzamel een afbeelding.
+**image** - Verzamel een afbeelding.
 
 * **pad** - Pad naar een afbeeldingsbron.
 
 Het afbeeldingstype wordt gebruikt om het We Retail-logo op te nemen in het ZIP-bestand.
 
-**pagina&#39;s** Render AEM pagina&#39;s en verzamel elementen waarnaar wordt verwezen.
+**pagina&#39;s** - AEM pagina&#39;s renderen en elementen waarnaar wordt verwezen verzamelen.
 
 * **pad** - Pad naar een pagina.
 * **extension** - Uitbreiding die in het verzoek moet worden gebruikt. Voor pagina&#39;s is dit bijna altijd *html*, maar andere zijn nog mogelijk.
@@ -152,9 +150,9 @@ Het afbeeldingstype wordt gebruikt om het We Retail-logo op te nemen in het ZIP-
 
 * **includeImages** - Optionele booleaanse eigenschap die bepaalt of afbeeldingen moeten worden opgenomen. De standaardwaarde is *true*.
 
-   Standaard worden alleen afbeeldingscomponenten met een type basis/componenten/afbeelding als opname beschouwd. U kunt meer middeltypes toevoegen door te vormen **Update-handler voor CQ-WCM-pagina&#39;s op dag** in de webconsole.
+  Standaard worden alleen afbeeldingscomponenten met een type basis/componenten/afbeelding als opname beschouwd. U kunt meer middeltypes toevoegen door te vormen **Update-handler voor CQ-WCM-pagina&#39;s op dag** in de webconsole.
 
-**herschrijven** Het knooppunt rewrite definieert hoe de koppelingen in de geëxporteerde pagina worden herschreven. De herschreven koppelingen kunnen verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
+**herschrijven** - Het knooppunt rewrite definieert hoe de koppelingen in de geëxporteerde pagina worden herschreven. De herschreven koppelingen kunnen verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
 
 De `rewrite` knooppunt moet zich onder de `page` knooppunt.
 
@@ -171,7 +169,7 @@ Elke eigenschap kan een van de volgende waarden hebben:
 
 * `REWRITE_EXTERNAL`: herschrijft de weg door aan het middel op de server te richten, gebruikend de AEM [ExternalAlizer-service](/help/sites-developing/externalizer.md).
 
-De AEM-service **PathRewriterTransformerFactory** staat u toe om de specifieke html attributen te vormen die zullen worden herschreven. De dienst kan in de console van het Web worden gevormd en heeft een configuratie voor elk bezit van `rewrite` knooppunt: `clientlibs`, `images` en `links`.
+De AEM-service **PathRewriterTransformerFactory** staat u toe om de specifieke html attributen te vormen die zullen worden herschreven. De dienst kan in de console van het Web worden gevormd en heeft een configuratie voor elk bezit van `rewrite` knooppunt: `clientlibs`, `images`, en `links`.
 
 Deze functie is toegevoegd in AEM 5.5.
 
@@ -213,19 +211,19 @@ Hieronder ziet u een voorbeeldconfiguratie voor Content Sync.
   + ...
 ```
 
-**etc.designs.default en etc.designs.mobile** De eerste twee ingangen van de configuratie zouden vrij duidelijk moeten zijn. Aangezien wij een aantal mobiele pagina&#39;s gaan omvatten, hebben wij de verwante ontwerpdossiers hieronder /etc/designs nodig. En omdat er geen extra verwerkingstijd nodig is, volstaat een kopie.
+**etc.designs.default en etc.designs.mobile** - De eerste twee vermeldingen in de configuratie zijn duidelijk. Als u meerdere mobiele pagina&#39;s wilt opnemen, hebt u de bijbehorende ontwerpbestanden nodig onder /etc/designs. En omdat er geen extra verwerkingstijd nodig is, volstaat een kopie.
 
-**events.plist** Deze vermelding is een beetje speciaal. Zoals vermeld in de inleiding, zou de toepassing een kaartweergave van tellers van de plaatsen van de gebeurtenissen moeten verstrekken. De benodigde locatie-informatie wordt als een afzonderlijk bestand in PLIST-indeling verstrekt. Dit werkt alleen wanneer de component met de gebeurtenislijst die op de indexpagina wordt gebruikt, een script heeft met de naam plist.jsp. Dit manuscript wordt uitgevoerd wanneer het middel van de component met de .plist uitbreiding wordt gevraagd. Zoals gewoonlijk wordt het pad naar componenten gegeven in de eigenschap path en wordt de tekst ingesteld op content, omdat we de functie willen gebruiken [Verwerking van verkoopaanvraag](/help/sites-developing/the-basics.md#sling-request-processing).
+**events.plist** - Deze vermelding is een beetje speciaal. Zoals vermeld in de inleiding, zou de toepassing een kaartweergave van tellers van de plaatsen van de gebeurtenissen moeten verstrekken. De benodigde locatiegegevens worden als een afzonderlijk bestand in PLIST-indeling verstrekt. Dit werkt alleen wanneer de component met de gebeurtenislijst die op de indexpagina wordt gebruikt, een script heeft met de naam plist.jsp. Dit manuscript wordt in werking gesteld wanneer het middel van de component met wordt gevraagd `.plist` extensie. Zoals gebruikelijk, wordt de componentenweg gegeven in het wegbezit en het type wordt geplaatst aan inhoud, omdat u wilt gebruiken [Verwerking van verkoopaanvraag](/help/sites-developing/the-basics.md#sling-request-processing).
 
-**events.touch.html** Vervolgens worden de feitelijke pagina&#39;s weergegeven die in de app worden weergegeven. De eigenschap path wordt ingesteld op de hoofdpagina van de gebeurtenis. Alle gebeurtenispagina&#39;s onder die pagina worden ook opgenomen, omdat de eigenschap deep standaard op true wordt ingesteld. Pagina&#39;s worden gebruikt als configuratietype, zodat alle afbeeldingen of andere bestanden waarnaar kan worden verwezen vanuit een afbeelding of downloadcomponent op een pagina, worden opgenomen. Bovendien geeft het instellen van de aanraakkiezer ons een mobiele versie van de pagina&#39;s. De configuratie in het eigenschappak bevat meer ingangen van dit type, maar zij worden verlaten hier voor eenvoud.
+**events.touch.html** - Vervolgens worden de feitelijke pagina&#39;s weergegeven die in de app worden weergegeven. De eigenschap path wordt ingesteld op de hoofdpagina van de gebeurtenis. Alle gebeurtenispagina&#39;s onder die pagina worden ook opgenomen, omdat de eigenschap deep standaard op true wordt ingesteld. U gebruikt pagina&#39;s als configuratietype, zodat alle afbeeldingen of andere bestanden waarnaar kan worden verwezen vanuit een afbeelding of downloadcomponent op een pagina, worden opgenomen. Bovendien geeft het instellen van de aanraakkiezer ons een mobiele versie van de pagina&#39;s. De configuratie in het eigenschappak bevat meer ingangen van dit type, maar zij worden verlaten hier voor eenvoud.
 
-**logo** Het type van logoconfiguratie is tot dusverre niet vermeld en het is geen van de bouwstijltypes. Het raamwerk voor het synchroniseren van inhoud kan echter tot op zekere hoogte worden uitgebreid. Dit is een voorbeeld hiervan, dat in de volgende sectie zal worden behandeld.
+**logo** - Het type van logoconfiguratie is tot dusver niet vermeld en het is geen van de bouwstijltypes. Het raamwerk voor het synchroniseren van inhoud kan echter tot op zekere hoogte worden uitgebreid. Dit is een voorbeeld hiervan, dat in de volgende sectie zal worden behandeld.
 
-**manifest** Het is vaak wenselijk om metagegevens in het ZIP-bestand op te nemen, zoals bijvoorbeeld de startpagina van de inhoud. Door dergelijke gegevens te coderen voorkomt u echter dat u deze later gemakkelijk kunt wijzigen. Het kader van de Synchronisatie van de Inhoud steunt dit gebruiksgeval door een duidelijke knoop in de configuratie te zoeken, die eenvoudig door naam wordt geïdentificeerd en geen configuratietype vereist. Elke eigenschap die op dat knooppunt is gedefinieerd, wordt toegevoegd aan een bestand dat ook wel manifest wordt genoemd en dat zich in de hoofdmap van het ZIP-bestand bevindt.
+**manifest** - Het is vaak wenselijk om metagegevens in het ZIP-bestand op te nemen, zoals bijvoorbeeld de startpagina van de inhoud. Door dergelijke gegevens te coderen voorkomt u echter dat u deze later gemakkelijk kunt wijzigen. Het kader van de Synchronisatie van de Inhoud steunt dit gebruiksgeval door een duidelijke knoop in de configuratie te zoeken, die door naam wordt geïdentificeerd en geen configuratietype vereist. Elke eigenschap die op dat knooppunt is gedefinieerd, wordt toegevoegd aan een bestand dat ook wel manifest wordt genoemd en dat zich in de hoofdmap van het ZIP-bestand bevindt.
 
-In het voorbeeld moet de pagina met gebeurtenislijsten de startpagina zijn. Deze informatie wordt verstrekt in het **indexPage** en kan dus op elk moment gemakkelijk worden gewijzigd. Een tweede eigenschap definieert het pad van het *events.plist* bestand. Aangezien wij later zullen zien, kan de cliënttoepassing manifest nu lezen en volgens het handelen.
+In het voorbeeld moet de pagina met gebeurtenislijsten de eerste pagina zijn. Deze informatie wordt verstrekt in het **indexPage** en kan dus op elk moment gemakkelijk worden gewijzigd. Een tweede eigenschap definieert het pad van het *events.plist* bestand. Zoals u later ziet, kan de cliënttoepassing manifest nu lezen en handelen volgens het.
 
-Zodra de configuratie is ingesteld, kan de inhoud worden gedownload met een browser of een andere HTTP-client, of als u zich ontwikkelt voor iOS, kunt u de toegewezen WAppKitSync-clientbibliotheek gebruiken. De downloadlocatie bestaat uit het pad van de configuratie en de *.zip* extensie, bijvoorbeeld wanneer u werkt met een lokale AEM-instantie: *http://localhost:4502/content/weretail_go.zip*
+Wanneer de configuratie is ingesteld, kan de inhoud worden gedownload met een browser of een andere HTTP-client, of als u zich ontwikkelt voor iOS, kunt u de toegewezen WAppKitSync-clientbibliotheek gebruiken. De downloadlocatie bestaat uit het pad van de configuratie en de *.zip* extensie, bijvoorbeeld wanneer u werkt met een lokale AEM-instantie: *http://localhost:4502/content/weretail_go.zip*
 
 ### De console voor het synchroniseren van inhoud {#the-content-sync-console}
 
@@ -236,7 +234,7 @@ In de console Content Sync worden alle configuraties van Content Sync in de opsl
 * Download een volledig postvak.
 * Download een diff zip tussen nu en een specifieke datum en tijd.
 
-Het kan nuttig zijn voor ontwikkeling en het oplossen van problemen.
+Het kan nuttig voor ontwikkeling en het oplossen van problemen zijn.
 
 De console is toegankelijk op:
 
@@ -248,11 +246,11 @@ Het ziet er als volgt uit:
 
 ### Uitbreiding van het raamwerk voor contentsynchronisatie {#extending-the-content-sync-framework}
 
-Hoewel het aantal configuratieopties reeds vrij uitgebreid is, kan het niet alle vereisten van uw specifiek gebruiksgeval behandelen. In deze sectie worden de extensiepunten van het Content Sync-framework beschreven en hoe u aangepaste configuratietypen kunt maken.
+Hoewel het aantal configuratieopties reeds uitgebreid is, kan het niet alle vereisten van uw specifiek gebruiksgeval behandelen. In deze sectie worden de extensiepunten van het Content Sync-framework beschreven en hoe u aangepaste configuratietypen kunt maken.
 
 Voor elk configuratietype is er een *Handler voor bijwerken van inhoud*, een OSGi-componentfabriek die voor dat specifieke type is geregistreerd. Deze handlers verzamelen inhoud, verwerken deze en voegen deze toe aan een cache die door het Content Sync-framework wordt onderhouden. Implementeer de volgende interface of abstracte basisklasse:
 
-* `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface die alle updatemanagers moeten uitvoeren
+* `com.day.cq.contentsync.handler.ContentUpdateHandler` - Interface die alle updatehandlers moeten uitvoeren
 * `com.day.cq.contentsync.handler.AbstractSlingResourceUpdateHandler` - Een abstracte klasse die het teruggeven van middelen gebruikend Sling vereenvoudigt
 
 Registreer uw klasse als OSGi componentenfabriek en stel het in de container OSGi in een bundel op. Dit kan worden gedaan gebruikend [Maven SCR plug-in](https://felix.apache.org/documentation/subprojects/apache-felix-maven-scr-plugin/apache-felix-maven-scr-plugin-use.html) gebruiken met JavaDoc-tags of annotaties. In het volgende voorbeeld wordt de JavaDoc-versie getoond:
@@ -283,7 +281,7 @@ Let erop dat de *fabriek* De definitie bevat de gemeenschappelijke interface en 
 
 ### Een aangepaste updatehandler implementeren {#implementing-a-custom-update-handler}
 
-Elke pagina Web.Retail Mobile bevat een logo in de linkerbovenhoek dat we natuurlijk in het ZIP-bestand willen opnemen. Voor het optimaliseren van de cache verwijst AEM echter niet naar de werkelijke locatie van het afbeeldingsbestand in de opslagplaats, wat ons belet om de **kopiëren** configuratietype. Wat we in plaats daarvan moeten doen, is onze eigen middelen ter beschikking stellen **logo** configuratietype dat de afbeelding beschikbaar maakt op de locatie die door AEM wordt gevraagd. In het volgende codevoorbeeld wordt de volledige implementatie van de logo-updatehandler getoond:
+Elke pagina Web.Retail Mobile bevat een logo in de linkerbovenhoek dat moet worden opgenomen in het ZIP-bestand. Voor het optimaliseren van de cache verwijst AEM echter niet naar de werkelijke locatie van het afbeeldingsbestand in de opslagplaats, wat ons belet om de **kopiëren** configuratietype. Wat u moet doen, is onze eigen **logo** configuratietype dat de afbeelding beschikbaar maakt op de locatie die door AEM wordt gevraagd. In het volgende codevoorbeeld wordt de volledige implementatie van de logo-updatehandler getoond:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -349,7 +347,7 @@ public class LogoUpdateHandler implements ContentUpdateHandler {
 }
 ```
 
-De `LogoUpdateHandler` de klasse implementeert de `ContentUpdateHandler` interface `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` methode, die een aantal argumenten gebruikt:
+De `LogoUpdateHandler` de klasse implementeert de `ContentUpdateHandler` interface `updateCacheEntry(ConfigEntry, Long, String, Session, Session)` methode, die verschillende argumenten heeft:
 
 * A `ConfigEntry` instantie die toegang tot de configuratieingang verleent, waarvoor deze manager, en zijn eigenschappen wordt geroepen.
 * A `lastUpdated` tijdstempel die aangeeft wanneer de Content Sync voor het laatst de cache heeft bijgewerkt. Inhoud die na die tijdstempel niet is gewijzigd, moet niet door de handler worden bijgewerkt.
@@ -357,17 +355,17 @@ De `LogoUpdateHandler` de klasse implementeert de `ContentUpdateHandler` interfa
 * Een beheersessie die moet worden gebruikt voor alle bewerkingen in de opslagplaats die betrekking hebben op cache.
 * Een gebruikerssessie die kan worden gebruikt om inhoud bij te werken in de context van een bepaalde gebruiker en zo een soort gepersonaliseerde inhoud te verstrekken.
 
-Om de douanemanager uit te voeren, creeer eerst een geval van de klasse van het Beeld die op het middel wordt gebaseerd dat in de configuratieingang wordt gegeven. Dit is eigenlijk dezelfde procedure als de eigenlijke logocomponent op onze pagina&#39;s. Het zorgt ervoor dat het doelpad van de afbeelding hetzelfde is als het pad waarnaar op een pagina wordt verwezen.
+Om de douanemanager uit te voeren, creeer eerst een geval van de klasse van het Beeld die op het middel wordt gebaseerd dat in de configuratieingang wordt gegeven. Dit is dezelfde procedure als de eigenlijke logocomponent op onze pagina&#39;s. Het zorgt ervoor dat het doelpad van de afbeelding hetzelfde is als het pad waarnaar op een pagina wordt verwezen.
 
 Controleer vervolgens of de bron is gewijzigd sinds de laatste update. De implementaties van de douane zouden onnodige updates van het geheime voorgeheugen moeten vermijden en zouden vals terugkeren als niets verandert. Als de bron is gewijzigd, kopieert u de afbeelding naar de verwachte doellocatie ten opzichte van de cachroot. Tot slot: `true` wordt geretourneerd om aan het framework aan te geven dat de cache is bijgewerkt.
 
 ## De inhoud op de client gebruiken {#using-the-content-on-the-client}
 
-Als u inhoud wilt gebruiken in een mobiele toepassing die wordt geleverd door Content Sync, moet u inhoud aanvragen via een HTTP- of HTTPS-verbinding. Hierdoor kan opgehaalde inhoud (verpakt in een ZIP-bestand) lokaal worden uitgepakt en opgeslagen op het mobiele apparaat. De inhoud heeft niet alleen betrekking op gegevens, maar ook op logica, d.w.z. volledige webtoepassingen; en de mobiele gebruiker in staat te stellen opgehaalde webtoepassingen en de bijbehorende gegevens uit te voeren, zelfs zonder netwerkconnectiviteit.
+Als u inhoud wilt gebruiken in een mobiele toepassing die wordt geleverd door Content Sync, moet u inhoud aanvragen via een HTTP- of HTTPS-verbinding. Hierdoor kan opgehaalde inhoud (verpakt in een ZIP-bestand) lokaal worden uitgepakt en opgeslagen op het mobiele apparaat. Inhoud heeft niet alleen betrekking op gegevens, maar ook op logica, dat wil zeggen volledige webtoepassingen; daarom, toelatend de mobiele gebruiker om opgehaalde Webtoepassingen en overeenkomstige gegevens uit te voeren zelfs zonder netwerkconnectiviteit.
 
-Content Sync levert inhoud op intelligente wijze: Alleen gegevenswijzigingen sinds de laatste geslaagde gegevenssynchronisatie worden geleverd, waardoor de vereiste tijd voor gegevensoverdracht afneemt. Bij de eerste uitvoering van een toepassing worden gegevenswijzigingen aangevraagd sinds 1 januari 1970, en daarna worden alleen gegevens gevraagd die zijn gewijzigd sinds de laatste succesvolle synchronisatie. AEM gebruikt een communicatiekader voor de client voor iOS om de gegevenscommunicatie en -overdracht te vereenvoudigen, zodat een minimale hoeveelheid native code vereist is om een op iOS gebaseerde webtoepassing in te schakelen.
+Content Sync levert inhoud op intelligente wijze: Alleen gegevenswijzigingen sinds de laatste geslaagde gegevenssynchronisatie worden geleverd, waardoor er minder tijd nodig is voor gegevensoverdracht. Bij de eerste uitvoering van een toepassing worden sinds 1 januari 1970 gegevenswijzigingen aangevraagd, terwijl later alleen gegevens worden gevraagd die zijn gewijzigd sinds de laatste geslaagde synchronisatie. AEM gebruikt een communicatieframework voor iOS om de gegevenscommunicatie en -overdracht te vereenvoudigen, zodat er een minimale hoeveelheid native code vereist is om een iOS-webtoepassing in te schakelen.
 
-Alle overgedragen gegevens kunnen in dezelfde mappenstructuur worden geëxtraheerd, er zijn geen extra stappen (bijvoorbeeld afhankelijkheidscontroles) vereist voor het ophalen van gegevens. In het geval van iOS worden alle gegevens opgeslagen in een submap in de map Documents van de iOS App.
+Alle overgedragen gegevens kunnen naar dezelfde mapstructuur worden geëxtraheerd. Er zijn geen extra stappen (bijvoorbeeld afhankelijkheidscontroles) vereist voor het extraheren van gegevens. Als er iOS is, worden alle gegevens opgeslagen in een submap in de map Documents van de iOS App.
 
 Typisch uitvoeringspad van een op iOS gebaseerde AEM Mobile-app:
 
@@ -377,7 +375,7 @@ Typisch uitvoeringspad van een op iOS gebaseerde AEM Mobile-app:
 * De gegevens worden geretourneerd naar het clientapparaat waar ze worden uitgepakt in de documentenmap.
 * De component UIWebView start/vernieuwt.
 
-Als er geen verbinding kon worden gemaakt, worden eerder gedownloade gegevens weergegeven.
+Als een verbinding niet eerder kon worden tot stand gebracht, worden de gedownloade gegevens getoond.
 
 ### Aanvullende bronnen {#additional-resources}
 

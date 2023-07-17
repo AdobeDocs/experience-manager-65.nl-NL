@@ -1,16 +1,14 @@
 ---
 title: Uw gebruikers en gebruikersgroepen configureren
 description: Volg deze pagina om de gebruikersrollen te begrijpen en hoe te om uw gebruikers en groepen te vormen om het ontwerpen en het beheer van uw mobiele On-Demand de dienstenapp te steunen.
-uuid: 461e1725-41dd-4883-92b9-a7e175660401
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
-discoiquuid: c3c73e67-7f85-4308-b4cd-1b42d4f3f2d9
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '512'
 ht-degree: 0%
 
 ---
@@ -19,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
@@ -31,7 +29,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
 #### Groepsconfiguratie - toepassingsauteurs {#group-configuration-app-authors}
 
-1. Maak een nieuwe gebruikersgroep met de naam &#39;app-authors&#39;:
+1. Maak een gebruikersgroep met de naam &#39;app-authors&#39;:
 
    Navigeer naar de Admin Console Gebruiker: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
@@ -43,7 +41,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 
-1. Nu u de gebruikersgroep voor toepassingsauteurs hebt gemaakt, kunt u via de [Admin-console gebruiker](http://localhost:4502/libs/granite/security/content/useradmin.md).
+1. Nu u de gebruikersgroep voor toepassingsauteurs hebt gemaakt, kunt u via de [Admin Console gebruiker](http://localhost:4502/libs/granite/security/content/useradmin.md).
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
@@ -66,11 +64,11 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
 >
 >De toestemmingen bepalen beschikbaarheid van sommige gebruikersacties in het Centrum van het Bevel van de AEM App.
 >
->Sommige opties zijn niet beschikbaar voor toepassingsauteurs die beschikbaar zijn voor app-beheerders.
+>Sommige opties zijn niet beschikbaar voor auteurs van apps die beschikbaar zijn voor app-beheerders.
 
 ### Groepsconfiguratie - app-beheerders {#group-configuration-app-admins}
 
-1. Maak een nieuwe groep met de naam app-admins.
+1. Maak een groep met de naam app-admins.
 1. Voeg de volgende groepen toe aan uw nieuwe app-admins-groep:
 
    * content-authors
@@ -104,9 +102,9 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
 1. Voeg zo nodig leden toe aan deze groep
 1. Inhoud exporteren of uploaden
 
-   * (Lezen) Bij /etc/contentsync voor toegang tot exportsjablonen
-   * (Lezen) op /var naar voor pad traversal bij lezen
-   * (Lezen, Schrijven, Wijzigen, Verwijderen) op /var/contentSync voor het schrijven, lezen en opschonen van ContentSync in cache opgeslagen exportinhoud
+   * (Lezen) op /etc/contentSync voor toegang tot exportsjablonen
+   * (Lezen) op /var aan weg traversal op leest
+   * (Lezen, Schrijven, Wijzigen, Verwijderen) op /var/contentSync voor het schrijven, lezen en opschonen van ContentSync-exportinhoud in cache
 
 ### Aanvullende bronnen {#additional-resources}
 

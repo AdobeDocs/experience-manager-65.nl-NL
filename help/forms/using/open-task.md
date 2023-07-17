@@ -1,24 +1,20 @@
 ---
 title: Een taak openen
-seo-title: Opening a task
-description: Stappen om een taak te openen in uw AEM Forms-app.
-seo-description: Steps to open a task on your AEM Forms app.
-uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
+description: Stappen om een taak te openen in uw Adobe Experience Manager Forms-app.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 exl-id: 08e267f3-7f90-4e75-aea0-2128e8eb7b30
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '284'
 ht-degree: 0%
 
 ---
 
 # Een taak openen {#opening-a-task}
 
-Als de AEM Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd.
+Als de Adobe Experience Manager (AEM) Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd.
 
 Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [Concepten opslaan](/help/forms/using/save-as-draft.md).
 
@@ -26,7 +22,7 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [
 
 1. Tik op de taak in de takenlijst.
 
-   Wanneer u een taak selecteert, wordt de beschrijving van de taak, zoals ingesteld in Workbench, weergegeven onder de taaknaam. Na de beschrijving worden de gebruikershandeling/handelingen die aan de taak zijn gekoppeld, weergegeven.
+   Wanneer u een taak selecteert, wordt de beschrijving van de taak, zoals ingesteld in Workbench, weergegeven onder de taaknaam. Na de beschrijving worden de gebruikershandeling/handelingen weergegeven die aan de taak zijn gekoppeld.
 
    * Als aan een taak handelingen zijn gekoppeld, kunt u de handelingen weergeven door te tikken op de horizontale ellips naast de taak op het thuisscherm.
    * Als de procesontwerper geen actie aan een taak associeert, is de standaardactie verbonden aan de taak Voltooid.

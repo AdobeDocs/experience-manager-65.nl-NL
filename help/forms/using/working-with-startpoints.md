@@ -1,18 +1,14 @@
 ---
 title: Werken met beginpunten
-seo-title: Working with Startpoints
-description: Stappen om met een AEM Forms-proces te werken vanaf uw mobiele apparaat dat is gedefinieerd in Workbench.
-seo-description: Steps to work with a AEM Forms process from your Mobile device defined in Workbench.
-uuid: 1c4b4c86-cbdb-4e72-b0eb-7f8a2f5dcdde
+description: Stappen om te werken met een Adobe Experience Manager Forms-proces vanaf uw mobiele apparaat dat is gedefinieerd in Workbench.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: 1ea60fb2-cf9f-4a87-bd8e-98150e668456
 docset: aem65
 exl-id: d5970f90-2899-43a5-a3a0-61a2c844d919
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -23,9 +19,9 @@ Een startpunt roept een proces aan dat in Workbench wordt gecreeerd. Het is geko
 
 >[!NOTE]
 >
->De termen startpunten, beginproces en vorm worden door elkaar gebruikt wanneer wordt verwezen naar dit concept.
+>De termen startpunten, beginproces en vorm worden door elkaar gebruikt wanneer u naar dit concept verwijst.
 
-Als u een proces wilt starten vanuit de AEM Forms-app, hebt u een beginpunt van het type nodig **Werkruimte** in uw proces. Ook moet u de optie **[!UICONTROL Visibile in Mobile Workspace]** voor het startpunt.
+Als u een proces wilt starten vanuit de Adobe Experience Manager (AEM) Forms-app, moet u een beginpunt van het type hebben **Werkruimte** in uw proces. U moet ook de optie **[!UICONTROL Visible in Mobile Workspace]** voor het startpunt.
 
 ![mws_startpoint_select_option](assets/mws_startpoint_select_option.png)
 

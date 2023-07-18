@@ -1,18 +1,14 @@
 ---
 title: Campaign Management
-seo-title: Campaign Management
-description: Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud te leveren en zo speciale ervaringen voor bezoekers te creëren. Zo kunt u uw marketingcampagnes ordenen op het web, via e-mail en mobiele services en zo uw bezoekers erbij betrekken.
-seo-description: Campaign management provides digital marketers the opportunity to deliver personalized content and so create dedicated experiences for visitors. It allows you to orchestrate your marketing campaigns across the web, email and mobile services and so engage your visitors.
-uuid: 202d614b-a607-45de-8c24-1ee66b230315
+description: Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud te leveren en zo speciale ervaringen voor bezoekers te creëren. Zo kunt u uw marketingcampagnes ordenen op het web, via e-mail en via mobiele services en zo uw bezoekers erbij betrekken.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: e8b70971-4f23-45f8-8c23-e147413243c2
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud te leveren en zo speciale ervaringen voor bezoekers te creëren.
 
-Zo kunt u uw marketingcampagnes ordenen op het web, via e-mail en mobiele services en zo uw bezoekers erbij betrekken. U kunt inhoud maken, bezoekers segmenteren, doelgerichte inhoud voor specifieke gebruikersprofielen duwen en promoten en campagnes op meerdere kanalen beheren.
+Zo kunt u uw marketingcampagnes ordenen op het web, via e-mail en via mobiele services en zo uw bezoekers erbij betrekken. U kunt inhoud maken, bezoekers segmenteren, doelgerichte inhoud voor specifieke gebruikersprofielen duwen en promoten en campagnes op meerdere kanalen beheren.
 
 In dit document worden de verschillende elementen beschreven waaruit campagnes bestaan. Meer gedetailleerde informatie is beschikbaar in de volgende documenten:
 
@@ -37,7 +33,7 @@ In dit document worden de verschillende elementen beschreven waaruit campagnes b
 Het beheer van campagnes bestaat uit verschillende elementen:
 
 * **Merken**
-In AEM zijn merken de eenheid op het hoogste niveau en vormen ze een verzameling van **Campagnes**.
+In Adobe Experience Manager (AEM) zijn merken de eenheid op hoofdniveau en vormen ze een verzameling van **Campagnes**.
 
 * **Campagnes**
 Een campagne is een collectie individuele **Ervaringen**.
@@ -51,13 +47,13 @@ De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker worden
      Taserpagina&#39;s kunnen:
 
       * een reeks opties presenteren waaruit de bezoeker kan kiezen
-      * slechts één laseralinea tonen die op het specifieke bezoekerssegment is gebaseerd; zo kan de getoonde laseralinea afhankelijk zijn van de leeftijd van de bezoeker .
+      * toon slechts één teaser paragraaf die op het specifieke bezoekerssegment gebaseerd is. De weergegeven teasalinea kan bijvoorbeeld afhankelijk zijn van de leeftijd van de bezoeker.
 
      Een laserpagina is doorgaans een tijdelijke actie die een bepaalde periode duurt, totdat deze wordt vervangen door de volgende laserpagina.
 
    * **Nieuwsbrieven**
 
-     [E-mailcommunicatie](#emailmarketing) worden gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze worden meestal verzonden in de vorm van een nieuwsbrief naar uw **Leads** (die gewoonlijk worden gegroepeerd in **Lijsten**). **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren. Aanbeveling is [Adobe Campaign en de integratie van AEM](/help/sites-administering/campaign.md).
+     [E-mailcommunicatie](#emailmarketing) worden gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze worden meestal verzonden in de vorm van een nieuwsbrief naar uw **Leads** (die zijn gegroepeerd in **Lijsten**). **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren. Aanbeveling is [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 
@@ -73,21 +69,21 @@ De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker worden
 
   De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
 
-  Aanbeveling is [Adobe Campaign en de integratie van AEM](/help/sites-administering/campaign.md).
+  Aanbeveling is [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
 
 * **Lijsten**
 
-  Regelafstand wordt meestal gegroepeerd in lijsten, zodat u er gezamenlijk op kunt reageren. Opmerking: **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
+  Leads worden gegroepeerd in lijsten, zodat u er gezamenlijk actie op kunt ondernemen. Opmerking: **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
 
-  Aanbeveling is [Adobe Campaign en de integratie naar AEM.](/help/sites-administering/campaign.md)
+  Aanbeveling is [Adobe Campaign en de integratie in AEM gebruiken.](/help/sites-administering/campaign.md)
 
 * **Segmenten**
 
-  De bezoekers van de plaats hebben verschillende belangen en doelstellingen wanneer zij aan een plaats komen. Door dit te analyseren op basis van factoren zoals activiteit op de website, geregistreerde profielinformatie en activiteit op andere websites, kunt u segmenten definiëren. De inhoud kan vervolgens specifiek worden afgestemd op de behoeften en belangen van de bezoeker, afhankelijk van het segment of de segmenten waaraan de inhoud voldoet.
+  De bezoekers van de plaats hebben verschillende belangen en doelstellingen wanneer zij aan een plaats komen. Door dit te analyseren op basis van factoren zoals activiteit op de website, geregistreerde profielinformatie en activiteit op andere websites, kunt u segmenten definiëren. De inhoud kan vervolgens worden afgestemd op de behoeften en belangen van de bezoeker, afhankelijk van de segmenten die deze nodig hebben.
 
 * **MCM**
 
-  De manager van de Campagne van de Marketing (MCM) is een console die u toestaat om tot alle functionaliteit toegang te hebben u uw campagnes, merken, ervaringen, touchpoints, lood, lijsten, segmenten en rapporten moet tot stand brengen en controleren.
+  De manager van de Campagne van de Marketing (MCM) is een console die u tot alle functionaliteit toegang heeft u uw campagnes, merken, ervaringen, touchpoints, lood, lijsten, segmenten, en rapporten moet tot stand brengen en controleren.
 
   Het kan van diverse plaatsen worden betreden (geëtiketteerd als **Campagnes**), of met bijvoorbeeld de URL:
 

@@ -1,19 +1,15 @@
 ---
 title: Opteren in verzameling van samengevoegde verbruiksstatistieken
-seo-title: Opting Into Aggregated Usage Statistics Collection
 description: Leer hoe u kunt kiezen voor statistische gegevens over geaggregeerd gebruik.
-seo-description: Learn how to opt into aggregated usage statistics.
-uuid: 8bd0b870-4bea-42e1-8179-e900164591b6
 contentOwner: raiman
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 075f53cc-146b-4eea-bfbb-54beaed97915
 docset: aem65
 exl-id: e626bdd8-b7ae-4de5-a0a0-47fb74c080d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-U kunt Adobe Marketing Cloud helpen verbeteren door Adobe-statistieken te verzenden over hoe u met AEM werkt. Deze informatie bevat geen gegevens over de bezoekers van de site van uw bedrijf en wordt alleen gebruikt om Adobe te helpen uw gebruikerservaring te leveren, te ondersteunen en te verbeteren.
+U kunt Adobe Experience Cloud helpen verbeteren door Adobe-statistieken te verzenden over hoe u met Adobe Experience Manager werkt (AEM). Deze informatie bevat geen gegevens over de sitebezoekers van uw bedrijf en wordt alleen gebruikt om Adobe te helpen uw gebruikerservaring te leveren, te ondersteunen en te verbeteren.
 
 U kunt in de inzameling van gebruiksstatistieken door of Touch UI of de Console van het Web te gebruiken kiezen.
 
@@ -34,7 +30,7 @@ U kunt in de inzameling van gebruiksstatistieken door of Touch UI of de Console 
 
 >[!NOTE]
 >
->U kunt ook op elk gewenst moment de optie Weigeren kiezen met de optie [Webconsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) of door de optie &quot;opt-in&quot; niet te selecteren op het AEM aanmeldingsscherm.
+>U kunt op elk gewenst moment de optie Weigeren kiezen met de optie [Webconsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) of door de optie &quot;opt-in&quot; niet te selecteren op het AEM aanmeldingsscherm.
 
 ## Inschakelen via de aanraakinterface {#opt-in-by-using-the-touch-ui}
 

@@ -1,30 +1,26 @@
 ---
 title: Ontwerpmodus
-seo-title: Developer Mode
-description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina
-seo-description: Developer mode opens a side panel with several tabs that provide a developer with infomation about the current page
-uuid: 8301ab51-93d6-44f9-a813-ba7f03f54485
+description: In de modus Ontwikkelaar wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: 589e3a83-7d1a-43fd-98b7-3b947122829d
 docset: aem65
 exl-id: aef0350f-4d3d-47f4-9c7e-5675efef65d9
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
 
 # Ontwerpmodus{#developer-mode}
 
-Bij het bewerken van pagina&#39;s in AEM, diverse [modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) zijn beschikbaar, inclusief de modus Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
+Tijdens het bewerken van pagina&#39;s in Adobe Experience Manager (AEM), diverse [modi](/help/sites-authoring/author-environment-tools.md#modestouchoptimizedui) zijn beschikbaar, inclusief de modus Ontwikkelaar. Hiermee wordt een zijpaneel geopend met verschillende tabbladen die een ontwikkelaar informatie geven over de huidige pagina. De drie tabbladen zijn:
 
 * **[Componenten](#components)** voor het bekijken van structuur en prestatiesinformatie.
 * **[Tests](#tests)** voor het uitvoeren van tests en het analyseren van de resultaten.
-* **[Fouten](#errors)** om te zien welke problemen zich voordoen.
+* **[Fouten](#errors)** om eventuele problemen te zien.
 
 Deze hulp een ontwikkelaar om:
 
@@ -38,16 +34,15 @@ Deze hulp een ontwikkelaar om:
 >
 >* Deze optie is alleen beschikbaar in de interface met aanraakbediening (wanneer u pagina&#39;s bewerkt).
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
-   >
-   >   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
+>
+>   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
 >* Is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` groep.
-
 
 >[!CAUTION]
 >
 >De wijze van de ontwikkelaar is slechts beschikbaar op een standaardauteursinstantie die niet de runtime-wijze van de nosamplcontent gebruikt.
 >
->Indien vereist kan het voor gebruik worden gevormd:
+>Indien nodig, kan het voor gebruik worden gevormd:
 >
 >* op een instantie van de auteur die geen runtime van de Inhoud gebruikt
 >* een publicatie-instantie
@@ -59,9 +54,8 @@ Deze hulp een ontwikkelaar om:
 >Zie het volgende:
 >
 >* artikel in de kennisbank; [Problemen AEM TouchUI oplossen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)voor meer tips en hulpmiddelen.
->* AEM Gems-sessie over [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2014/aem-developer-mode.html?lang=en).
+>* AEM Gems-sessie over [AEM 6.0 Developer Mode](https://experienceleague.adobe.com/docs/events/experience-manager-gems-recordings/gems2014/aem-developer-mode.html?lang=en).
 >
-
 
 ## Ontwerpmodus openen {#opening-developer-mode}
 
@@ -81,14 +75,14 @@ Het deelvenster bestaat uit twee tabbladen:
 
 Dit toont een componentenboom die:
 
-* Hiermee wordt de keten van componenten en sjablonen die op de pagina worden weergegeven (SLY, JSP, enz.) weergegeven. De structuur kan worden uitgebreid om de context binnen de hiërarchie te tonen.
-* Geeft de computertijd aan de serverzijde weer die nodig is om de component te renderen.
+* Hiermee wordt de keten van componenten en sjablonen die op de pagina worden weergegeven (SLY, JSP enzovoort) omlijnd. De structuur kan worden uitgebreid om de context binnen de hiërarchie te tonen.
+* Geeft de computertijd aan de serverzijde weer om de component te renderen.
 * Hiermee kunt u de structuur uitvouwen en specifieke componenten in de structuur selecteren. De selectie biedt toegang tot componentdetails; zoals:
 
    * Pad naar opslagplaats
    * Koppelingen naar scripts (geopend in CRXDE Lite)
 
-* Geselecteerde componenten (in de inhoudsstroom, aangegeven door een blauwe rand) worden gemarkeerd in de inhoudsstructuur (en andersom).
+* Geselecteerde componenten (in de inhoudsstroom, aangegeven door een blauwe rand) worden gemarkeerd in de inhoudsstructuur (en omgekeerd).
 
 Dit kan helpen bij:
 
@@ -105,7 +99,7 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
    * alle componentscripts die worden gebruikt om de component te renderen.
    * het inhoudspad van de gegevensopslagruimte voor deze specifieke component.
 
-   ![chlimage_1-14](assets/chlimage_1-14.png)
+  ![chlimage_1-14](assets/chlimage_1-14.png)
 
 * **Script bewerken**: een koppeling die:
 
@@ -116,11 +110,11 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
    * De hiërarchie binnen de geselecteerde component.
    * Renderingtijden voor de geselecteerde component afzonderlijk, eventuele afzonderlijke componenten die erin zijn genest en het gecombineerde totaal.
 
-   ![chlimage_1-15](assets/chlimage_1-15.png)
+  ![chlimage_1-15](assets/chlimage_1-15.png)
 
 >[!CAUTION]
 >
->Sommige koppelingen wijzen naar scripts onder `/libs`. Deze zijn echter uitsluitend ter referentie, u **mogen** alles onder bewerken `/libs`, omdat eventuele wijzigingen die u aanbrengt, verloren kunnen gaan. Dit is toe te schrijven aan het feit dat deze tak aan veranderingen kan zijn wanneer u bevordert of een hotfix/eigenschappak toepast. Alle wijzigingen die u nodig hebt, moeten onder `/apps`, zie [Bedekkingen en overschrijvingen](/help/sites-developing/overlays.md).
+>Sommige koppelingen wijzen naar scripts onder `/libs`. Deze zijn echter uitsluitend ter referentie, u **mogen** alles onder bewerken `/libs`, omdat eventuele wijzigingen die u aanbrengt, verloren kunnen gaan. Dit komt doordat deze vertakking mogelijk verandert wanneer u een hotfix of functiepakket bijwerkt of toepast. Breng de wijzigingen aan die u onder `/apps`. Zie [Bedekkingen en overschrijvingen](/help/sites-developing/overlays.md).
 
 ### Fouten {#errors}
 

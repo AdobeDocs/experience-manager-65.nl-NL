@@ -1,8 +1,6 @@
 ---
-title: Upgrade uitvoeren naar AEM 6.5
-seo-title: Upgrading to AEM 6.5
-description: Leer meer over de basisbeginselen van het upgraden van een oudere AEM naar AEM 6.5.
-seo-description: Learn about the basics of upgrading an older AEM installation to AEM 6.5.
+title: Upgrade uitvoeren naar Adobe Experience Manager 6.5
+description: Leer meer over de basisbeginselen van het upgraden van een oudere Adobe Experience Manager-installatie (AEM) naar AEM 6.5.
 contentOwner: sarchiz
 topic-tags: upgrading
 content-type: reference
@@ -10,22 +8,21 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
-# Upgrade uitvoeren naar AEM 6.5 {#upgrading-to-aem}
+# Upgrade naar Adobe Experience Manager (AEM) 6.5 {#upgrading-to-aem}
 
-In deze sectie gaat het om het upgraden van een AEM naar AEM 6.5:
+In dit gedeelte wordt de upgrade van een AEM naar AEM 6.5 beschreven:
 
 * [Uw upgrade plannen](/help/sites-deploying/upgrade-planning.md)
 * [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)
 * [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)
-
-   <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+  <!--* [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 * [Upgradeprocedure](/help/sites-deploying/upgrade-procedure.md)
 * [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md)
 * [Onderhoudstaken vóór upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md)
@@ -50,17 +47,17 @@ Hieronder vindt u een aantal belangrijke wijzigingen in de laatste paar versies 
 
 AEM 6.0 introduceerde de nieuwe opslagplaats voor jakobak. Persistence Managers zijn vervangen door [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4). Vanaf versie 6.1 wordt CRX2 niet meer ondersteund. Een migratiehulpmiddel genoemd crx2oak moet worden in werking gesteld om CRX2 bewaarplaatsen van 5.6.1 instanties te migreren. Zie voor meer informatie [Het CRX2OAK-migratiehulpprogramma gebruiken](/help/sites-deploying/using-crx2oak.md).
 
-Als Assets Insights moet worden gebruikt en u een upgrade uitvoert vanaf een versie die ouder is dan AEM 6.2, moeten middelen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. In onze interne tests werden 125.000 bedrijfsmiddelen op een TarMK-omgeving over een uur gemigreerd, maar de resultaten kunnen afwijken.
+Als Assets Insights wordt gebruikt en u een upgrade uitvoert van een versie ouder dan AEM 6.2, moeten elementen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. Voor interne tests van Adobe zijn er 125K op een TarMK-omgeving gemigreerd in een uur, maar de resultaten kunnen afwijken.
 
-6.3 introduceert een nieuw formaat voor de `SegmentNodeStore`, die de basis vormt van de TarMK-implementatie. Als u een upgrade uitvoert van een versie die ouder is dan AEM 6.3, is hiervoor een migratie naar de opslagplaats vereist als onderdeel van de upgrade, waarbij systeemdowntime wordt gebruikt.
+6.3 introduceert een nieuw formaat voor de `SegmentNodeStore`, die de basis vormt van de TarMK-implementatie. Als u een upgrade uitvoert van een versie die ouder is dan AEM 6.3, is hiervoor een migratie naar de opslagplaats vereist als onderdeel van de upgrade, met inbegrip van systeemdowntime.
 
-Adobe Engineering schat dit op ongeveer 20 minuten. Het opnieuw indexeren is niet nodig. Bovendien is er een nieuwe versie van het crx2oak-programma uitgebracht om te werken met de nieuwe repository-indeling.
+Adobe Engineering schat dit op ongeveer 20 minuten. Opnieuw indexeren is niet nodig. Er is ook een nieuwe versie van het crx2oak-gereedschap uitgebracht om te werken met de nieuwe opslaglocatie-indeling.
 
 **Deze migratie is niet vereist als een upgrade van AEM 6.3 naar AEM 6.5 wordt uitgevoerd.**
 
 De onderhoudstaken vóór de upgrade zijn geoptimaliseerd ter ondersteuning van automatisering.
 
-De gebruiksopties voor de opdrachtregel van het gereedschap crx2oak zijn gewijzigd en zijn nu automatiseringsvriendelijk en ondersteunen meer upgradepaden.
+De opdrachtregelgebruiksopties voor het gereedschap crx2oak zijn gewijzigd en zijn zo automatievriendelijk en ondersteunen meer upgradepaden.
 
 De controles na de upgrade zijn ook automatiseringsvriendelijk gemaakt.
 
@@ -80,9 +77,9 @@ Het upgraden van AEM is een proces dat uit meerdere stappen bestaat en soms meer
 
 ## Upgradestroom {#upgrade-overview-1}
 
-In het onderstaande diagram wordt de algemene aanbevolen stroom gemarkeerd met de upgradeaanpak. Let op de verwijzing naar de nieuwe functies die we hebben geïntroduceerd. De upgrade moet beginnen met de patroondetector (zie [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)), waarmee u het pad kunt bepalen dat u wilt gebruiken voor compatibiliteit met AEM 6.4 op basis van de patronen in het gegenereerde rapport.
+In het onderstaande diagram wordt de algemene aanbevolen stroom gemarkeerd met de upgradeaanpak. Noteer de verwijzing naar de nieuwe functies die Adobe heeft geïntroduceerd. De upgrade moet beginnen met de patroondetector (zie [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)), waarmee u het pad kunt bepalen dat u wilt gebruiken voor compatibiliteit met AEM 6.4 op basis van de patronen in het gegenereerde rapport.
 
-In 6.5 was er veel nadruk op het behoud van alle nieuwe functies achterwaarts compatibel, maar in gevallen waarin er nog enkele problemen met achterwaartse compatibiliteit zijn, kunt u in de compatibiliteitsmodus de ontwikkeling tijdelijk uitstellen om uw aangepaste code compatibel te houden met 6.5. Deze aanpak helpt u om ontwikkelinspanningen direct na de upgrade te voorkomen (zie [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+Er was een significante nadruk in 6.5 om alle nieuwe eigenschappen achteruit compatibel te houden, maar in gevallen waar u nog enkele achterwaartse verenigbaarheidskwesties ziet, staat de verenigbaarheidswijze u toe om ontwikkeling tijdelijk uit te stellen om uw douanecode volgzaam met 6.5 te houden. Deze aanpak helpt u om ontwikkelinspanningen direct na de upgrade te voorkomen (zie [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
 Tot slot, in uw 6.5 ontwikkelingscyclus, eigenschappen geïntroduceerd onder Duurzame Verbeteringen (zie [Duurzame verbeteringen](/help/sites-deploying/sustainable-upgrades.md)) helpen u de beste praktijken te volgen om toekomstige verbeteringen nog efficiënter en naadloos te maken.
 

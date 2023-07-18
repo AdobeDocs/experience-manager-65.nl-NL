@@ -11,21 +11,27 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3082'
+source-wordcount: '3105'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot het ontwerpen van adaptieve formulieren {#introduction-to-authoring-adaptive-forms}
 
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/introduction-forms-authoring.html) |
+| AEM 6,5 | Dit artikel |
+
+
 ## Overzicht {#overview}
 
 Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken van en werken met adaptieve formulieren. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
 
 * **Een formuliergegevensmodel gebruiken**
-   [Gegevensintegratie](../../forms/using/data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen in een formuliergegevensmodel waarmee u adaptieve formulieren kunt maken. Kies een formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
+  [Gegevensintegratie](../../forms/using/data-integration.md) Hiermee kunt u entiteiten en services integreren van verschillende gegevensbronnen in een formuliergegevensmodel waarmee u adaptieve formulieren kunt maken. Kies een formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
 
 * **Een XDP-formuliersjabloon gebruiken**
 Het is een ideaal formuliermodel als u investeert in XFA-gebaseerde of XDP-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
@@ -88,17 +94,17 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
 
 * **Eigenschappenbrowser**
 
-   Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van een component. Eigenschappen van de adaptieve formuliercontainer weergeven:
+  Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van een component. Eigenschappen van de adaptieve formuliercontainer weergeven:
 
-   Selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+  Selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
 
 * **Bandenbrowser**
 
-   Hiermee kunt u verschillende typen inhoud segmenteren, zoals afbeeldingen, documenten, pagina&#39;s, films, enzovoort.
+  Hiermee kunt u verschillende typen inhoud segmenteren, zoals afbeeldingen, documenten, pagina&#39;s, films, enzovoort.
 
 * **Browser voor componenten**
 
-   Bevat componenten die u kunt gebruiken om een adaptief formulier te maken. U kunt componenten van het aangepaste formulier naar het aangepaste formulier slepen om formulierelementen toe te voegen en toegevoegde elementen configureren volgens de vereisten. In de volgende tabel worden de componenten beschreven die in de componentbrowser worden weergegeven.
+  Bevat componenten die u kunt gebruiken om een adaptief formulier te maken. U kunt componenten van het aangepaste formulier naar het aangepaste formulier slepen om formulierelementen toe te voegen en toegevoegde elementen configureren volgens de vereisten. In de volgende tabel worden de componenten beschreven die in de componentbrowser worden weergegeven.
 
 <table>
  <tbody>
@@ -188,7 +194,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>Deelvenster</td>
-   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de opdracht <span class="uicontrol">Deelvenster Onderliggend element toevoegen</code> knop. Op dezelfde manier kunt u een paneelspecifieke toolbar toevoegen gebruikend <span class="uicontrol">Werkbalk Deelvenster toevoegen</code> knop. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</code></code></p> </td>
+   <td><p>Hiermee voegt u een deelvenster of subdeelvenster toe.</p> <p>U kunt ook een deelvenstercomponent toevoegen vanaf de werkbalk van het bovenliggende deelvenster met de opdracht <span class="uicontrol">Deelvenster Onderliggend element toevoegen</code> knop. Op dezelfde manier kunt u een paneelspecifieke toolbar toevoegen gebruikend <span class="uicontrol">Werkbalk Deelvenster toevoegen</code> knop. U kunt de positie van de paneelwerkbalk configureren met behulp van het dialoogvenster Deelvenster bewerken.</p> </td>
   </tr>
   <tr>
    <td>Wachtwoordvak</td>
@@ -328,8 +334,8 @@ De pagina-werkbalk boven in het scherm bevat opties waarmee u een voorbeeld van 
 
       * Ontdek waaruit de formulieren bestaan.
       * Foutopsporing waar en wanneer gebeurt, wat weer helpt om problemen op te lossen.
-   * **Ontwerp**. Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in het zijpaneel staan, in- of uitschakelen.
 
+   * **Ontwerp**. Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in het zijpaneel staan, in- of uitschakelen.
 
 * **Voorvertoning**: Hiermee kunt u een voorbeeld bekijken van de weergave van het formulier wanneer u het publiceert.
 

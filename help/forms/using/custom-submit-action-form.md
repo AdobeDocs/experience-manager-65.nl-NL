@@ -10,14 +10,19 @@ topic-tags: customization
 discoiquuid: 2a2e1156-4a54-4b0a-981c-d527fe22a27e
 docset: aem65
 exl-id: 7c3d0dac-4e19-4eb3-a43d-909d526acd55
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1638'
 ht-degree: 0%
 
 ---
 
 # Aangepaste verzendactie schrijven voor adaptieve formulieren{#writing-custom-submit-action-for-adaptive-forms}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/custom-submit-action-form.html) |
+| AEM 6,5 | Dit artikel |
 
 Voor adaptieve formulieren moeten handelingen worden verzonden om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) omvat [OOTB Handelingen verzenden](../../forms/using/configuring-submit-actions.md) die aangepaste taken demonstreren die u kunt uitvoeren met de door de gebruiker verzonden gegevens. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
 

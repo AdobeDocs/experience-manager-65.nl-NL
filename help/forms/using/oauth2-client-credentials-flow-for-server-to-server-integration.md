@@ -3,15 +3,21 @@ title: Salesforce-integratie met AEM Forms via OAuth 2.0-clientaanmeldingsgegeve
 seo-title: Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
 description: Stappen om de integratie van Salesforce met AEM Forms te integreren gebruikend OAuth 2.0 cliëntgeloofsbrieven stroom
 seo-description: Steps to integrate Salesforce integration with AEM Forms using OAuth 2.0 client credentials flow
-source-git-commit: cc0375f5b5616f82a73bd983a9da95225c51db99
+exl-id: 31f2ccf8-1f4f-4d88-8c5f-ef1b7d1bfb4f
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '463'
-ht-degree: 0%
+source-wordcount: '485'
+ht-degree: 1%
 
 ---
 
-
 # Integratie van Salesforce met gebruik van OAuth 2.0-clientaanmeldingsgegevens  {#configure-salesforce-with-ouath-2.0-client-credential}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-msdynamics-salesforce.html) |
+| AEM 6,5 | Dit artikel |
+
 
 Om AEM Forms met de toepassing van Salesforce te integreren, wordt de OAuth 2.0 cliëntgeloofsstroom gebruikt. Het is een gestandaardiseerde en veilige methode voor directe communicatie zonder betrokkenheid van de gebruiker. In deze flow wisselt de clienttoepassing (AEM Formulier) de clientgegevens uit, die zijn gedefinieerd in de toepassing waarmee Salesforce is verbonden, om een toegangstoken te verkrijgen. De vereiste cliëntgeloofsbrieven omvatten de consumentensleutel en het geheime voorgeheugen van de consument.
 
@@ -74,5 +80,3 @@ Swagger is een open-source set regels, specificaties en hulpmiddelen voor het on
 1. Als de verbinding is gelukt, klikt u op de knop **[!UICONTROL Create]** knop.
 
 Nu kunt u [Maak het formuliergegevensmodel](https://experienceleague.adobe.com/docs/experience-manager-65/forms/form-data-model/create-form-data-models.html?lang=en) om de gevormde gegevensbron met uw Aangepaste Vorm te integreren.
-
-

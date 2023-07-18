@@ -10,14 +10,19 @@ discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
 
 # Verbeter de prestaties van grote formulieren met het laden van de formulieren{#improve-performance-of-large-forms-with-lazy-loading}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/lazy-loading-adaptive-forms.html) |
+| AEM 6,5 | Dit artikel |
 
 ## Inleiding tot wazig laden {#introduction-to-lazy-loading}
 
@@ -32,17 +37,17 @@ Voordat u het laden van fragmenten in het aangepaste formulier kunt configureren
 * **Fragmenten identificeren en maken**
 U kunt alleen adaptieve formulierfragmenten configureren voor wazig laden. Een fragment is een zelfstandig segment dat zich buiten een adaptief formulier bevindt en dat in verschillende formulieren opnieuw kan worden gebruikt. De eerste stap bij het implementeren van lui laden is het identificeren van logische secties in een formulier en het omzetten ervan in fragmenten. U kunt een geheel nieuw fragment maken of een bestaand formulierdeelvenster opslaan als fragment.
 
-   Zie voor meer informatie over het maken van fragmenten [Adaptieve formulierfragmenten](../../forms/using/adaptive-form-fragments.md).
+  Zie voor meer informatie over het maken van fragmenten [Adaptieve formulierfragmenten](../../forms/using/adaptive-form-fragments.md).
 
 * **Algemene waarden identificeren en markeren**
 Bij op Forms gebaseerde transacties worden dynamische elementen gebruikt om relevante gegevens van gebruikers vast te leggen en te verwerken om het invullen van formulieren te vereenvoudigen. Het formulier heeft bijvoorbeeld veld A in fragment X, waarvan de waarde de geldigheid van veld B in een ander fragment bepaalt. In dit geval moet, als fragment X is gemarkeerd voor lui laden, de waarde van veld A beschikbaar zijn om veld B te valideren, zelfs als fragment X niet is geladen. Hiertoe kunt u veld A markeren als globaal, zodat de waarde ervan beschikbaar is voor het valideren van veld B wanneer fragment X niet is geladen.
 
-   Voor informatie over hoe u een veldwaarde globaal kunt maken, raadpleegt u [Lazy laden configureren](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
+  Voor informatie over hoe u een veldwaarde globaal kunt maken, raadpleegt u [Lazy laden configureren](../../forms/using/lazy-loading-adaptive-forms.md#p-configuring-lazy-loading-p).
 
 * **Regels schrijven om de zichtbaarheid van velden te bepalen**
 Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebruikers en onder alle omstandigheden. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie [Regeleditor gebruiken](../../forms/using/rule-editor.md).
 
-   U kunt zichtbaarheidsregels toepassen in de laaggeladen fragmenten, zodat voorwaardelijke velden alleen worden weergegeven wanneer ze vereist zijn. Markeer ook het voorwaardelijke veld globaal om ernaar te verwijzen in de zichtbaarheidsexpressie van het langzaam geladen fragment.
+  U kunt zichtbaarheidsregels toepassen in de laaggeladen fragmenten, zodat voorwaardelijke velden alleen worden weergegeven wanneer ze vereist zijn. Markeer ook het voorwaardelijke veld globaal om ernaar te verwijzen in de zichtbaarheidsexpressie van het langzaam geladen fragment.
 
 ## Lazy laden configureren {#configuring-lazy-loading}
 
@@ -87,4 +92,4 @@ Belangrijke aandachtspunten bij het ontwikkelen van scripts voor luie laadvenste
 * Met de algemeen beschikbare eigenschap van velden maakt u de waarde van velden in een wazig venster voor laden beschikbaar voor alle andere deelvensters van een formulier.
 * Verwijs geen verwijzingswaarde van een gebied binnen een lui paneel ongeacht gebied door zich globaal over fragmenten wordt duidelijk of niet.
 * Met de functie voor het opnieuw instellen van deelvensters kunt u alle zichtbare elementen in het deelvenster opnieuw instellen met de volgende klikexpressie.\
-   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()

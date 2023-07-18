@@ -11,14 +11,20 @@ discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 85189a4c35d1409690cbb93946369244e8848340
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '3337'
+source-wordcount: '3359'
 ht-degree: 0%
 
 ---
 
 # Document met record genereren voor adaptieve formulieren{#generate-document-of-record-for-adaptive-forms}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/generate-document-of-record-for-non-xfa-based-adaptive-forms.html) |
+| AEM 6,5 | Dit artikel |
+
 
 ## Overzicht {#overview}
 
@@ -287,7 +293,8 @@ U kunt ook een formuliermodel selecteren wanneer u een formulier maakt.
    >
    >    * Het adaptieve formulier is gebaseerd op een schema
    >    * U gebruikt **Formuliersjabloon koppelen als Document of Record-sjabloon** optie voor recorddocument
-
+   >
+   >
 
 1. Klikken **Gereed.**
 

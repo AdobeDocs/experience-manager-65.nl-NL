@@ -9,14 +9,19 @@ topic-tags: publish
 discoiquuid: f0a5588d-f210-4f04-bc35-b62834f90ab1
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '7452'
+source-wordcount: '7471'
 ht-degree: 0%
 
 ---
 
 # Forms-centric workflow voor OSGi - Step Reference {#forms-centric-workflow-on-osgi-step-reference}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/create-form-centric-workflows/aem-forms-workflow-step-reference.html) |
+| AEM 6,5 | Dit artikel |
 
 U gebruikt workflowmodellen om een bedrijfslogica om te zetten in een geautomatiseerd, zich herhalend proces. Met behulp van een model kunt u een reeks stappen definiëren en uitvoeren. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt. U kunt [omvat diverse AEM stappen van het Werkschema in een model om bedrijfslogica te bereiken](/help/sites-developing/workflows-models.md#extending-aem).
 
@@ -40,7 +45,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **Omschrijving:** Uitleg van de bewerkingen die in de taak worden uitgevoerd. Deze informatie is nuttig voor andere procesontwikkelaars wanneer u in een gedeelde ontwikkelomgeving werkt.
 
 * **Pad miniatuur:** Pad van de taakminiatuur. Als er geen pad is opgegeven, wordt voor een aangepaste standaardminiatuur van het formulier weergegeven en voor Document of Record, een standaardpictogram weergegeven.
-* **Werkstroomwerkgebied:** Een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model (Selecteren > Pagina > Pagina-eigenschappen > Staven).
+* **Werkstroomwerkgebied:** Een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model (Sidekick > Pagina > Pagina-eigenschappen > Staven).
 * **Prioriteit:** De geselecteerde prioriteit wordt getoond in AEM Inbox. De beschikbare opties zijn Hoog, Normaal en Laag. De standaardwaarde is Normaal.
 * **Vervaldatum:** Geef het aantal dagen of uren op waarna de taak achterstallig is. Als u **Uit** En dan is de taak nooit achterstallig. U kunt ook een time-outhandler opgeven om specifieke taken uit te voeren nadat de taak is uitgevoerd.
 
@@ -51,7 +56,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **Markeer de handeling en de opmerking van de laatste taak in Taakdetails:** Selecteer deze optie om de laatste actie weer te geven die is uitgevoerd en de opmerking die is ontvangen in de sectie met taakdetails van een taak.
 * **Type:** Kies het type document dat moet worden ingevuld wanneer de workflow wordt gestart. U kunt een adaptief formulier, alleen-lezen adaptief formulier, een niet-interactief PDF-document, de gebruikersinterface van de interactieve communicatieagent of het interactieve communicatie webkanaaldocument kiezen.
 * **Adaptief formulier gebruiken:** Geef de methode op om het invoeradaptieve formulier te zoeken. Deze optie is beschikbaar als u Adaptief formulier of Alleen-lezen adaptief formulier selecteert in de vervolgkeuzelijst Type. U kunt het adaptieve formulier gebruiken dat naar de workflow wordt verzonden, dat beschikbaar is op een absoluut pad of dat beschikbaar is op een pad in een variabele. U kunt een variabele van het type String gebruiken om het pad op te geven.\
-   U kunt meerdere aangepaste formulieren aan een workflow koppelen. Hierdoor kunt u een adaptief formulier op de runtime opgeven met de beschikbare invoermethoden.
+  U kunt meerdere aangepaste formulieren aan een workflow koppelen. Hierdoor kunt u een adaptief formulier op de runtime opgeven met de beschikbare invoermethoden.
 
 * **Interactieve communicatie gebruiken:** Geef de methode op om de interactieve invoercommunicatie te zoeken. U kunt de interactieve communicatie gebruiken die aan het werkschema wordt voorgelegd, beschikbaar bij een absolute weg, of beschikbaar bij een weg in een variabele. U kunt een variabele van het type String gebruiken om het pad op te geven. Deze optie is beschikbaar als u Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
 
@@ -72,7 +77,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
       * **Kies een aangepaste Prefill-service:** Selecteer de prefill dienst om de gegevens terug te winnen en het Interactieve Communicatie het kanaaldocument van het Web of de Agent UI vooraf in te vullen.
       * **Gebruik de vooraf ingevulde service van de hierboven geselecteerde interactieve communicatie:** Gebruik deze optie om de prefill dienst van Interactieve Communicatie te gebruiken die in de Interactieve Communicatie van het Gebruik drop-down lijst wordt bepaald.
       * **Toewijzing verzoekkenmerk:** In het gedeelte Aanvraagkenmerktoewijzing kunt u het volgende definiëren: [naam en waarde van het aanvraagkenmerk](../../forms/using/work-with-form-data-model.md#bindargument). Haal de details van de gegevensbron op die op de attributennaam en waarde wordt gebaseerd in het verzoek wordt gespecificeerd. U kunt een waarde van het verzoekattribuut bepalen gebruikend een letterlijke waarde of een variabele van het gegevenstype van het Koord.\
-         De prefill dienst en de opties van de verzoekkenmerkafbeelding zijn beschikbaar slechts als u het Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
+        De prefill dienst en de opties van de verzoekkenmerkafbeelding zijn beschikbaar slechts als u het Interactieve Communicatie Agent UI of het Interactieve Document van het Kanaal van het Communicatie Web van de drop-down lijst van het Type selecteert.
 
 * **Verzonden informatie:** De volgende velden die hieronder worden vermeld, fungeren als uitvoerlocaties voor de taak:
 
@@ -94,7 +99,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 * **Argumenten:** Het veld is beschikbaar wanneer een ander script dan het script RandomParticipantChoose is geselecteerd in het veld Deelnemerkiezer. In het veld kunt u een lijst met door komma&#39;s gescheiden argumenten opgeven voor het script dat is geselecteerd in het veld Deelnemerkiezer.
 
 * **Gebruiker of groep:** De taak wordt toegewezen aan de geselecteerde gebruiker of groep. De optie is beschikbaar wanneer de optie **Aan een specifieke gebruiker of groepsoptie** is geselecteerd in het dialoogvenster **Opties toewijzen** veld. In het veld worden alle gebruikers en groepen van de groep met workflowgebruikers weergegeven.\
-   De **Gebruiker of groep** drop-down menu maakt een lijst van de gebruikers en de groepen die de het programma geopende gebruiker toegang heeft tot. De weergave van de gebruikersnaam is afhankelijk van het feit of u toegangsmachtigingen hebt voor de **gebruikers** knooppunt in crx-repository voor die bepaalde gebruiker.
+  De **Gebruiker of groep** drop-down menu maakt een lijst van de gebruikers en de groepen die de het programma geopende gebruiker toegang heeft tot. De weergave van de gebruikersnaam is afhankelijk van het feit of u toegangsmachtigingen hebt voor de **gebruikers** knooppunt in crx-repository voor die bepaalde gebruiker.
 
 * **[!UICONTROL Send Notification Email]**: Selecteer deze optie als u e-mailberichten wilt verzenden naar de ontvanger. Deze meldingen worden verzonden wanneer een taak wordt toegewezen aan een gebruiker of een groep. U kunt de **[!UICONTROL Recipient Email Address]** om het mechanisme voor het ophalen van het e-mailadres op te geven.
 
@@ -134,7 +139,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 ## E-mailstap verzenden {#send-email-step}
 
-Met de stap E-mail kunt u een e-mailbericht verzenden, bijvoorbeeld een e-mailbericht met een recorddocument, een koppeling van een adaptief formulier, een koppeling van een interactieve communicatie of een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mailadressen definiëren.
+Met de stap E-mail kunt u een e-mailbericht verzenden, bijvoorbeeld een e-mailbericht met een recorddocument, een koppeling van een adaptief formulier, een koppeling van een interactieve communicatie of een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
 
 In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de stap E-mail gebruikt of de knop [e-mailservice](../../forms/using/aem-forms-workflow.md) is geconfigureerd. De e-mailstap heeft de volgende eigenschappen:
 
@@ -259,7 +264,7 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
    * **Ophalen uit werkstroommetagegevens:** Gebruik de optie wanneer de te gebruiken waarde in een werkschemabezit wordt opgeslagen. Bijvoorbeeld emailAddress.
    * **[!UICONTROL Relative to Payload]**: Gebruik de optie om de bestandsbijlage op te halen die is opgeslagen op een pad dat relatief is ten opzichte van de laadbewerking. Selecteer de optie en geef de mapnaam op die de bestandsbijlage bevat of geef de naam van de bestandsbijlage op in het tekstvak.
 
-      Als de map Relatief aan Payload in de CRX-opslagplaats bijvoorbeeld een bestandsbijlage bevat in de `attachment\attachment-folder` locatie, opgeven `attachment\attachment-folder` in het tekstvak nadat u de **[!UICONTROL Relative to Payload]** optie.
+     Als de map Relatief aan Payload in de CRX-opslagplaats bijvoorbeeld een bestandsbijlage bevat in de `attachment\attachment-folder` locatie, opgeven `attachment\attachment-folder` in het tekstvak nadat u de **[!UICONTROL Relative to Payload]** optie.
    * **JSON-puntnotatie:** Gebruik deze optie als de te gebruiken waarde zich in een JSON-bestand bevindt. Bijvoorbeeld verzekering.customerDetails.emailAddress. De optie Puntnotatie JSON is alleen beschikbaar als de optie Invoervelden toewijzen van invoer-JSON is geselecteerd.
    * **Invoervelden toewijzen uit invoer-JSON:** Geef het pad van een JSON-bestand op om de invoerwaarde van bepaalde serviceargumenten op te halen uit het JSON-bestand. Het pad van het JSON-bestand kan relatief zijn ten opzichte van de payload, een absoluut pad of u kunt een invoer-JSON-document selecteren met een variabele van het type JSON- of Formuliergegevensmodel.
 
@@ -288,7 +293,7 @@ Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te o
 * **Selecteer Pad invoerbijlage met:** Pad van de bijlagen. Deze bijlagen worden opgenomen in het ondertekenende document. U kunt de bijlagen op een locatie relatief ten opzichte van de lading houden, een absoluut pad naar de bijlagen opgeven of bijlagen ophalen die zijn opgeslagen in een variabele van het gegevenstype Document.
 
 
-   Als u het pad van een map opgeeft, bijvoorbeeld bijlagen, worden alle bestanden die rechtstreeks in de map beschikbaar zijn, als bijlage bij Document ondertekenen gevoegd. Als er bestanden beschikbaar zijn in de mappen die rechtstreeks beschikbaar zijn in het opgegeven pad naar de bijlage, worden de bestanden als bijlagen opgenomen in Document ondertekenen. Als er mappen in direct beschikbare mappen staan, worden deze overgeslagen.
+  Als u het pad van een map opgeeft, bijvoorbeeld bijlagen, worden alle bestanden die rechtstreeks in de map beschikbaar zijn, als bijlage bij Document ondertekenen gevoegd. Als er bestanden beschikbaar zijn in de mappen die rechtstreeks beschikbaar zijn in het opgegeven pad naar de bijlage, worden de bestanden als bijlagen opgenomen in Document ondertekenen. Als er mappen in direct beschikbare mappen staan, worden deze overgeslagen.
 
 * **Dagen tot deadline:** Een document is gemarkeerd als opeisbaar (verstreken deadline) nadat de taak gedurende het opgegeven aantal dagen niet is geactiveerd in het dialoogvenster **Dagen tot deadline** veld. Het aantal dagen wordt geteld nadat het document is toegewezen aan een gebruiker voor ondertekening.
 * **E-mailfrequentie herinnering:** U kunt een herinnering per dag of wekelijks e-mail verzenden. De week wordt geteld vanaf de dag waarop de documentatie aan een gebruiker is toegewezen voor ondertekening.
@@ -437,7 +442,7 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
 * **[!UICONTROL Select Content Root location using]**: De inhoudsbasis is een tekenreekswaarde die de URI, absolute referentie of locatie in de gegevensopslagruimte opgeeft voor het ophalen van relatieve elementen die door het formulierontwerp worden gebruikt. Als het formulierontwerp bijvoorbeeld relatief verwijst naar een afbeelding, zoals ../myImage.gif, moet myImage.gif zich op repository:// bevinden. De standaardwaarde is repository://. Deze verwijst naar het hoofdniveau van de opslagplaats.
 
-   Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als bijvoorbeeld een formulier wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op SampleApp/1.0/forms/Test.xdp, moet de URI van de inhoudswortel worden opgegeven als repository://administrator@password/Applications/SampleApp/1.0/forms/ of gegevensopslagruimte:/Applications/SampleApp/1.0/forms/ (als de bevoegdheid null is). Wanneer de URI voor de inhoudsbasis op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier, omgezet met deze URI.
+  Wanneer u een element kiest uit uw toepassing, moet het pad van de URI van de inhoudsbasis de juiste structuur hebben. Als bijvoorbeeld een formulier wordt gekozen uit een toepassing met de naam SampleApp en wordt geplaatst op SampleApp/1.0/forms/Test.xdp, moet de URI van de inhoudswortel worden opgegeven als repository://administrator@password/Applications/SampleApp/1.0/forms/ of gegevensopslagruimte:/Applications/SampleApp/1.0/forms/ (als de bevoegdheid null is). Wanneer de URI voor de inhoudsbasis op deze manier wordt opgegeven, worden de paden van alle middelen waarnaar wordt verwezen in het formulier, omgezet met deze URI.
 
 * **[!UICONTROL Select XCI file using]**: XCI-bestanden worden gebruikt om lettertypen en andere eigenschappen te beschrijven die voor formulierontwerpelementen worden gebruikt. U kunt een XCI-bestand relatief ten opzichte van de payload, op een absoluut pad houden of een variabele van het gegevenstype Document gebruiken.
 

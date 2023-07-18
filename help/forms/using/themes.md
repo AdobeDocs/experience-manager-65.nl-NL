@@ -11,14 +11,19 @@ discoiquuid: 770e9174-b648-462a-abe9-05fefa967d86
 docset: aem65
 feature: Adaptive Forms
 exl-id: 93c360a8-a9d9-4c4b-b7e2-2c44eaf4604c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '6026'
+source-wordcount: '6049'
 ht-degree: 0%
 
 ---
 
 # Thema&#39;s maken en gebruiken {#creating-and-using-themes}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-an-adaptive-form-on-forms-cs/themes.html) |
+| AEM 6,5 | Dit artikel |
 
 ## Inleiding {#introduction}
 
@@ -207,15 +212,15 @@ De Thema-editor bestaat uit twee deelvensters:
 
    * **Kiezer:** Hiermee geeft u de component weer die u voor opmaak hebt geselecteerd en de eigenschappen die u kunt opmaken. De kiezer vertegenwoordigt alle componenten van een type. Als u een tekstvakcomponent in een thema voor het stileren selecteert, erven alle tekstvakjes in uw formulier of interactieve mededeling de stijl. Met kiezers kunt u een algemene component of een specifieke component voor opmaak selecteren. Een veldcomponent is bijvoorbeeld een algemeen onderdeel en een tekstvak is een specifiek onderdeel.
 
-      **Algemene stijlcomponent:**
+     **Algemene stijlcomponent:**
 Een veld kan een numeriek veld zijn, zoals leeftijd, of een veld in een tekstvak, zoals een adres.
 Wanneer u een veld opmaakt, worden alle velden opgemaakt, zoals pagina, naam en adres.
 
-      **Stijlspecifieke component**: Een specifieke component is van invloed op objecten van de specifieke categorie. Wanneer u de stijl van de numerieke vakcomponent in het thema toepast, overerft alleen het object van het numerieke vak de stijl.
+     **Stijlspecifieke component**: Een specifieke component is van invloed op objecten van de specifieke categorie. Wanneer u de stijl van de numerieke vakcomponent in het thema toepast, overerft alleen het object van het numerieke vak de stijl.
 
-      Een tekstveld zoals een adres is bijvoorbeeld langer en een numeriek veld van een vak zoals de leeftijd is korter. U kunt een numeriek veld selecteren, de lengte ervan verkleinen en op het formulier toepassen. De breedte van alle velden van numerieke vakken wordt verkleind in het formulier.
+     Een tekstveld zoals een adres is bijvoorbeeld langer en een numeriek veld van een vak zoals de leeftijd is korter. U kunt een numeriek veld selecteren, de lengte ervan verkleinen en op het formulier toepassen. De breedte van alle velden van numerieke vakken wordt verkleind in het formulier.
 
-      Wanneer u alle veldcomponenten met een specifieke achtergrondkleur aanpast, nemen alle velden, zoals leeftijd, naam en adres, de achtergrondkleur over. Wanneer u een numeriek vak selecteert, zoals de leeftijd, en de breedte en breedte van alle numerieke vakken zoals de leeftijd verkleint, wordt het aantal personen in een familie verminderd. De breedte van tekstvakken wordt niet gewijzigd.
+     Wanneer u alle veldcomponenten met een specifieke achtergrondkleur aanpast, nemen alle velden, zoals leeftijd, naam en adres, de achtergrondkleur over. Wanneer u een numeriek vak selecteert, zoals de leeftijd, en de breedte en breedte van alle numerieke vakken zoals de leeftijd verkleint, wordt het aantal personen in een familie verminderd. De breedte van tekstvakken wordt niet gewijzigd.
 
    * **Status:** Hiermee kunt u stijlen van een object in een specifieke status aanpassen. U kunt bijvoorbeeld opgeven hoe een object eruitziet als het zich in de standaardtoestand, de standaardfocus, de uitgeschakelde toestand, de aanwijsstatus of de foutstatus bevindt.
    * **Eigenschapcategorieën:** De stijleigenschappen worden in verschillende categorieën verdeeld. Bijvoorbeeld Dimension en positie, Tekst, Achtergrond, Rand en Effecten. Onder elke categorie geeft u opmaakgegevens op. Onder Achtergrond kunt u bijvoorbeeld Achtergrondkleur en Afbeelding en Verloop opgeven.
@@ -223,9 +228,10 @@ Wanneer u een veld opmaakt, worden alle velden opgemaakt, zoals pagina, naam en 
    * **Geavanceerd:** Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
 
    * **CSS weergeven**: Hiermee kunt u CSS van de geselecteerde component weergeven
-   In de zijbalk onder in het scherm is bovendien een pijl aanwezig. Als u op de pijl klikt, hebt u nog twee opties: **Simuleren voltooid** en **Fout simuleren.** Deze opties worden samen met de hierboven beschreven opties uitgebreid besproken [onder](../../forms/using/themes.md#using-rail).
 
-[ ![Thema-editor met Rail en Canvas gemarkeerd.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
+  In de zijbalk onder in het scherm is bovendien een pijl aanwezig. Als u op de pijl klikt, hebt u nog twee opties: **Simuleren voltooid** en **Fout simuleren.** Deze opties worden samen met de hierboven beschreven opties uitgebreid besproken [onder](../../forms/using/themes.md#using-rail).
+
+[![Thema-editor met Rail en Canvas gemarkeerd.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
 
 ### Stijlcomponenten {#styling-components}
 
@@ -627,14 +633,14 @@ De gegenereerde CSS kunt u met de volgende opties zien:
 
 * **Elementen uit een ander thema vermijden**
 
-   Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Wanneer u bijvoorbeeld **Pagina** ![bewerken, knop](assets/edit-button.png)> **Achtergrond** > **Toevoegen** > **Afbeelding** Er wordt een dialoogvenster weergegeven waarin u afbeeldingen in andere thema&#39;s kunt zoeken en toevoegen.
+  Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Wanneer u bijvoorbeeld **Pagina** ![bewerken, knop](assets/edit-button.png)> **Achtergrond** > **Toevoegen** > **Afbeelding** Er wordt een dialoogvenster weergegeven waarin u afbeeldingen in andere thema&#39;s kunt zoeken en toevoegen.
 
 * U kunt problemen met uw huidige thema oplossen als een element wordt toegevoegd uit een ander thema en het andere thema wordt verplaatst of verwijderd. U wordt aangeraden te voorkomen dat u bladeren en elementen uit andere thema&#39;s toevoegt.
-* **Het gebruiken van basis clientlib, themageditor, en gealigneerde het stileren**
+* **Basisclientlib, themageditor en inline styling gebruiken**
 
    * **Basis-clientlib**:
 
-      De basisclientbibliotheek bevat opmaakgegevens. Stijlinformatie in bibliotheken aan de clientzijde in thema&#39;s gebruiken.
+     De basisclientbibliotheek bevat opmaakgegevens. Stijlinformatie in bibliotheken aan de clientzijde in thema&#39;s gebruiken.
 
       1. Navigeren naar **Experience Manager > Forms > Thema&#39;s**.
       1. Selecteer een thema op de pagina Thema&#39;s en klik op **Eigenschappen weergeven**.
@@ -642,28 +648,27 @@ De gegenereerde CSS kunt u met de volgende opties zien:
       1. Blader op het tabblad Geavanceerd in het veld Clientlib-locatie naar de clientbibliotheek die u wilt gebruiken en selecteer deze.
       1. Klikken **Opslaan**.
 
-      De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en voor de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.
+     De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en voor de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.
 U kunt ook een thema maken, er kopieën van maken en vervolgens de opmaak wijzigen die in de gekopieerde thema&#39;s wordt geboden voor vergelijkbare gebruiksdoeleinden.
 Zie [Specifieke weergave ophalen met thema&#39;s](#specific-af-appearance)
 
    * **Thema-editor:**
 
-      Met de Thema-editor kunt u thema&#39;s maken om uw formulier of interactieve communicatie op te maken. U kunt de opmaak van componenten in een thema opgeven, zodat u de weergave in meerdere formulieren of interactieve communicatie die u ontwikkelt consistent kunt houden. Het wordt aanbevolen om opmaakgegevens op te geven in een thema en het thema vervolgens toe te passen op een formulier.
+     Met de Thema-editor kunt u thema&#39;s maken om uw formulier of interactieve communicatie op te maken. U kunt de opmaak van componenten in een thema opgeven, zodat u de weergave in meerdere formulieren of interactieve communicatie die u ontwikkelt consistent kunt houden. Het wordt aanbevolen om opmaakgegevens op te geven in een thema en het thema vervolgens toe te passen op een formulier.
 
    * **Inline styling:**
 
-      Als u met een formulier werkt, kunt u opmaakcomponenten maken in de modus Stijl in een formulier of in een interactieve multikanaaleditor voor communicatie. Als u de stijl van een formuliercomponent wijzigt, overschrijft u de stijl die in het thema is opgegeven. Als u de opmaak voor bepaalde componenten van een bepaald formulier wilt wijzigen, raadpleegt u [Inline styling van componenten](../../forms/using/inline-style-adaptive-forms.md).
-
+     Als u met een formulier werkt, kunt u opmaakcomponenten maken in de modus Stijl in een formulier of in een interactieve multikanaaleditor voor communicatie. Als u de stijl van een formuliercomponent wijzigt, overschrijft u de stijl die in het thema is opgegeven. Als u de opmaak voor bepaalde componenten van een bepaald formulier wilt wijzigen, raadpleegt u [Inline styling van componenten](../../forms/using/inline-style-adaptive-forms.md).
 
 * **Bibliotheken op de client gebruiken**
 
-   Als u clientbibliotheken wilt maken om opmaakgegevens te importeren, raadpleegt u [Clientzijbibliotheken gebruiken](/help/sites-developing/clientlibs.md). Nadat u een clientbibliotheek hebt gemaakt, kunt u deze in uw thema importeren aan de hand van de bovenstaande stappen.
+  Als u clientbibliotheken wilt maken om opmaakgegevens te importeren, raadpleegt u [Clientzijbibliotheken gebruiken](/help/sites-developing/clientlibs.md). Nadat u een clientbibliotheek hebt gemaakt, kunt u deze in uw thema importeren aan de hand van de bovenstaande stappen.
 
 * **De lay-outbreedte van het containervenster wijzigen**
 
-   Het wordt niet aanbevolen de lay-outbreedte van het containervenster te wijzigen. Wanneer u de breedte van een containerdeelvenster opgeeft, wordt het statisch en wordt het niet aangepast aan verschillende weergaven.
+  Het wordt niet aanbevolen de lay-outbreedte van het containervenster te wijzigen. Wanneer u de breedte van een containerdeelvenster opgeeft, wordt het statisch en wordt het niet aangepast aan verschillende weergaven.
 
 * **Wanneer moet u de formuliereditor of themaeditor gebruiken om met kop- en voettekst te werken?**
 
-   Gebruik de themaeditor als u koptekst en voettekst wilt opmaken met opmaakopties zoals letterstijl, achtergrond en transparantie.
+  Gebruik de themaeditor als u koptekst en voettekst wilt opmaken met opmaakopties zoals letterstijl, achtergrond en transparantie.
 Gebruik de opties voor de formuliereditor als u informatie wilt opgeven, zoals een logoafbeelding, een bedrijfsnaam in de koptekst en copyrightinformatie in de voettekst.

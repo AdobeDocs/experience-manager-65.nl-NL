@@ -10,14 +10,20 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: db4b432a95856302eb2e80b6386eee557d6afd17
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1913'
+source-wordcount: '1935'
 ht-degree: 0%
 
 ---
 
 # Gegevensbronnen configureren{#configure-data-sources}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/configure-data-sources.html) |
+| AEM 6,5 | Dit artikel |
+
 
 ![Gegevensintegratie](do-not-localize/data-integeration.png)
 
@@ -51,7 +57,6 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
    >
    > 1. Ga naar https://&#39;[server]:[poort]&quot;/systeem/console/crypto.
    > 1. In de **[!UICONTROL Plain Text]** veld, geeft u het wachtwoord of een willekeurige tekenreeks op die u wilt versleutelen en tikken **[!UICONTROL Protect]**.
-
    >
    >De gecodeerde tekst wordt weergegeven in het veld Beveiligde tekst dat u in de configuratie kunt opgeven.
 
@@ -131,7 +136,8 @@ Doe het volgende de diensten RESTful vormen:
       * Schema: De overdrachtprotocollen die door REST API worden gebruikt. Het aantal schematypen die in de drop-down lijst worden getoond hangt van de regelingen af die in de bron van de Swagger worden bepaald.
       * Host: De domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
       * Basispad: Het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
-         Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
+        Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
+
    * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, Custom Authentication, of Mutual Authentication, om toegang te krijgen tot de RESTful-service en dienovereenkomstig gegevens te verstrekken voor verificatie.
 
    Als u **[!UICONTROL API Key]** Geef als verificatietype de waarde voor de API-sleutel op. De API-sleutel kan als aanvraagheader of als queryparameter worden verzonden. Selecteer een van deze opties in het menu **[!UICONTROL Location]** vervolgkeuzelijst en geef de naam van de header of de parameter query op in de **[!UICONTROL Parameter Name]** veld dienovereenkomstig.
@@ -176,10 +182,10 @@ SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)
    * Service Endpoint. Specificeer een waarde op dit gebied om het de diensteindpunt met voeten te treden dat in WSDL wordt vermeld.
    * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basisverificatie, Aangepaste verificatie, Token X509 of Wederzijdse verificatie — voor toegang tot de SOAP-service en dienovereenkomstig de gegevens voor verificatie opgeven.
 
-      Als u **[!UICONTROL X509 Token]** Als het type van Authentificatie, vorm het X509- certificaat. Zie voor meer informatie [Certificaten instellen](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
+     Als u **[!UICONTROL X509 Token]** Als het type van Authentificatie, vorm het X509- certificaat. Zie voor meer informatie [Certificaten instellen](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service).
 Geef de alias KeyStore voor het X509-certificaat op in het dialoogvenster **[!UICONTROL Key Alias]** veld. Geef de tijd in seconden op totdat de verificatieaanvraag geldig blijft in het dialoogvenster **[!UICONTROL Time To Live]** veld. Selecteer desgewenst om de berichttekst, de tijdstempelkop of beide te ondertekenen.
 
-      Als u **[!UICONTROL Mutual Authentication]** als authentificatietype, zie [Op certificaten gebaseerde wederzijdse verificatie voor RESTful- en SOAP-webservices](#mutual-authentication).
+     Als u **[!UICONTROL Mutual Authentication]** als authentificatietype, zie [Op certificaten gebaseerde wederzijdse verificatie voor RESTful- en SOAP-webservices](#mutual-authentication).
 
 1. Tikken **[!UICONTROL Create]** om de cloudconfiguratie voor de SOAP-webservice te maken.
 

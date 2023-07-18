@@ -8,14 +8,20 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-manager
 docset: aem65
 feature: Adaptive Forms
-source-git-commit: 0ca7d76d0f5a3e440e5df9c986e3bb0efec368c1
+exl-id: 9ca4fcd6-3eb0-4fc1-a09c-e4ad532bbed0
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
 
 # Revisies maken en beheren op formulieren{#creating-and-managing-reviews-to-forms}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/create-reviews-forms.html) |
+| AEM 6,5 | Dit artikel |
 
 ## Controleren {#review}
 
@@ -39,7 +45,6 @@ Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen op formu
    >* Beheerders hebben toegang tot alle groepen die aan de formuliergebruikers zijn gekoppeld.
    >* De gebruikersgroep van de dienst is niet beschikbaar aan selectie voor overzicht.
 
-
 ### Handelingen die worden uitgevoerd wanneer een revisie wordt ingesteld {#actions-that-occur-when-a-review-is-set-up}
 
 In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt of ingesteld.
@@ -59,7 +64,6 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 >
 >* Alleen lopende revisies kunnen worden gewijzigd.
 >* Volledige revisies kunnen niet worden gewijzigd.
-
 
 1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
 
@@ -111,4 +115,5 @@ In deze sectie wordt beschreven wat er gebeurt met **Bijwerken/beëindigen contr
    1. **Revisoren**: Voor elke controleur wordt de onvolledige taak met betrekking tot de revisie beëindigd. De taak wordt niet meer weergegeven als &#39;In behandeling&#39; in de sectie Meldingen van de controleur.
    1. **Initiator**: De taak die is toegewezen aan de aanvrager van de revisie is gemarkeerd als voltooid. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
    1. **Alles**: De revisie wordt weergegeven in de sectie Vorige revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
+
    ![revisie voltooid](assets/review-complete-imgg.png)

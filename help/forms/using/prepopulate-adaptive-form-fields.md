@@ -10,14 +10,19 @@ discoiquuid: 7139a0e6-0e37-477c-9e0b-aa356991d040
 docset: aem65
 feature: Adaptive Forms
 exl-id: 29cbc330-7b3d-457e-ba4a-7ce6091f3836
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2158'
+source-wordcount: '2180'
 ht-degree: 0%
 
 ---
 
 # Aangepaste formuliervelden vooraf invullen{#prefill-adaptive-form-fields}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/prepopulate-adaptive-form-fields.html) |
+| AEM 6,5 | Dit artikel |
 
 ## Inleiding {#introduction}
 
@@ -25,7 +30,7 @@ U kunt de velden van een adaptief formulier vooraf invullen met bestaande gegeve
 
 ## Structuur van vooraf ingevulde gegevens {#the-prefill-structure}
 
-Een adaptief formulier kan bestaan uit gebonden en niet-gebonden velden. Gebonden velden zijn velden die worden gesleept vanaf het tabblad Inhoudszoeker en die niet-leeg zijn `bindRef` in het dialoogvenster voor het bewerken van velden. Niet-gebonden velden worden rechtstreeks vanuit de deelbrowser van Sidetrap gesleept en hebben een lege `bindRef` waarde.
+Een adaptief formulier kan bestaan uit gebonden en niet-gebonden velden. Gebonden velden zijn velden die worden gesleept vanaf het tabblad Inhoudszoeker en die niet-leeg zijn `bindRef` in het dialoogvenster voor het bewerken van velden. Niet-gebonden velden worden rechtstreeks vanuit de deelbrowser van de Sidekick gesleept en hebben een lege pagina `bindRef` waarde.
 
 U kunt zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf invullen. De vooraf ingevulde gegevens bevatten de secties afBoundData en afUnBoundData om zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf in te vullen. De `afBoundData` bevat de vooraf ingevulde gegevens voor gebonden velden en deelvensters. Deze gegevens moeten voldoen aan het bijbehorende formuliermodelschema:
 
@@ -132,7 +137,7 @@ Voor velden waarvan het model het XML-schema is, worden de gegevens vooraf ingev
 
 >[!NOTE]
 >
->Het wordt aanbevolen geen niet-gebonden velden in gebonden deelvensters te gebruiken (deelvensters met niet-lege deelvensters) `bindRef` die is gemaakt door componenten te slepen vanaf het tabblad Sidetrap of Gegevensbronnen). Hierdoor kunnen gegevens van deze niet-gebonden velden verloren gaan. Daarnaast wordt aanbevolen dat de namen van de velden uniek zijn in het formulier, met name voor niet-gebonden velden.
+>Het wordt aanbevolen geen niet-gebonden velden in gebonden deelvensters te gebruiken (deelvensters met niet-lege deelvensters) `bindRef` die is gemaakt door componenten te slepen van het tabblad Sidekick of Gegevensbronnen). Hierdoor kunnen gegevens van deze niet-gebonden velden verloren gaan. Daarnaast wordt aanbevolen dat de namen van de velden uniek zijn in het formulier, met name voor niet-gebonden velden.
 
 #### Een voorbeeld zonder de omslag afData en afBoundData {#an-example-without-afdata-and-afbounddata-wrapper}
 
@@ -197,7 +202,7 @@ Hieronder ziet u een voorbeeld zonder `afData/afBoundData` omslag:
 
 >[!NOTE]
 >
->Het gebruik van niet-gebonden velden in gebonden deelvensters (deelvensters met niet-lege bindRef die zijn gemaakt door componenten te slepen van het tabblad Sijp of Gegevensbronnen) is **niet** aanbevolen omdat dit gegevensverlies van de niet-gebonden velden tot gevolg kan hebben. Het wordt aanbevolen unieke veldnamen te hebben in het formulier, vooral voor niet-gebonden velden.
+>Het gebruik van niet-gebonden velden in gebonden deelvensters (deelvensters met niet-lege bindRef die zijn gemaakt door componenten te slepen van het tabblad Sidekick of Gegevensbronnen) is **niet** aanbevolen omdat dit gegevensverlies van de niet-gebonden velden tot gevolg kan hebben. Het wordt aanbevolen unieke veldnamen te hebben in het formulier, vooral voor niet-gebonden velden.
 
 ### Adaptief formulier zonder formuliermodel {#adaptive-form-with-no-form-model}
 
@@ -244,6 +249,7 @@ Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie
 
    * file:///C:/Users/public/Document/Prefill/.&#42;
    * https://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
    >Prefill wordt standaard toegestaan via crx-bestanden voor alle typen adaptieve Forms (XSD, XDP, JSON, FDM en geen op formuliermodel gebaseerd). Vooraf invullen is alleen toegestaan met JSON- en XML-bestanden.
@@ -306,7 +312,7 @@ https://localhost:4502/content/forms/af/abc.html?wcmmode=disabled&dataRef=servic
 
 ### Gegevenskenmerk instellen in slingRequest {#setting-data-attribute-in-slingrequest}
 
-U kunt ook de `data` kenmerk in `slingRequest`, waarbij `data` attribute is a string containing XML or JSON, as displayed in the sample code below (Example is for XML):
+U kunt ook de `data` kenmerk in `slingRequest`, waarbij `data` Het kenmerk is een tekenreeks die XML of JSON bevat, zoals in de voorbeeldcode hieronder wordt getoond (Voorbeeld is voor XML):
 
 ```javascript
 <%
@@ -384,8 +390,9 @@ U kunt de AEM Forms-server zo configureren dat de handeling voor het samenvoegen
    1. Schakel de optie Configuration.af.clinentside.datamerge.enabled.name in
 * U kunt als volgt vanaf de opdrachtregel in- of uitschakelen:
    * Voer de volgende opdracht cURL uit om in te schakelen:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=true \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
 
    * Voer de volgende opdracht cURL uit om het uit te schakelen:
-      `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
-   Als u optimaal gebruik wilt maken van de optie Gegevens vooraf invullen op de client, werkt u de Prefill-service bij om te retourneren [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) en [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)
+     `curl -u admin:admin -X POST -d apply=true \ -d propertylist=af.clientside.datamerge.enabled \ -d af.clientside.datamerge.enabled=false \ http://${crx.host}:${crx.port}/system/console/configMgr/Adaptive%20Form%20and%20Interactive%20Communication%20Web%20Channel%20Configuration`
+
+  Als u optimaal gebruik wilt maken van de optie Gegevens vooraf invullen op de client, werkt u de Prefill-service bij om te retourneren [FileAttachmentMap](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html) en [CustomContext](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/com/adobe/forms/common/service/PrefillData.html)

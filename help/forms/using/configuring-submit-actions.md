@@ -9,14 +9,20 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1880'
 ht-degree: 0%
 
 ---
 
 # De handeling Verzenden configureren{#configuring-the-submit-action}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/configure-submit-actions-and-metadata-submission/configuring-submit-actions.html) |
+| AEM 6,5 | Dit artikel |
+
 
 ## Inleiding om acties te verzenden {#introduction-to-submit-actions}
 
@@ -68,6 +74,7 @@ U kunt ook **Aanvraag POST inschakelen** en geef een URL op om de aanvraag te po
 Rest Endpoint-verzendhandeling configureren
 
 >[!NOTE]
+>
 Als u de velden als parameters in een REST-URL wilt doorgeven, moeten alle velden verschillende elementnamen hebben, zelfs als de velden op verschillende deelvensters zijn geplaatst.
 
 ### Gegevens naar een bron of een extern eindpunt voor de rusttijd verzenden  {#post-submitted-data-to-a-resource-or-external-rest-end-point-nbsp}
@@ -98,6 +105,7 @@ In dit voorbeeld: `data` de XML-gegevens worden opgeslagen, en `att` slaat gehec
 De **E-mail verzenden** Met een handeling verzenden wordt een e-mail naar een of meer ontvangers verzonden wanneer het formulier met succes is verzonden. Het gegenereerde e-mailbericht kan formuliergegevens in een vooraf gedefinieerde indeling bevatten.
 
 >[!NOTE]
+>
 Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als ze op verschillende deelvensters zijn geplaatst), om formuliergegevens op te nemen in een e-mailbericht.
 
 ## PDF verzenden via e-mail {#send-pdf-via-email}
@@ -105,6 +113,7 @@ Alle formuliervelden moeten verschillende elementnamen hebben, zelfs als ze op v
 De **PDF verzenden via e-mail** Met een verzendactie wordt een e-mail met een PDF met formuliergegevens verzonden naar een of meer ontvangers wanneer het formulier met succes is verzonden.
 
 >[!NOTE]
+>
 Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en op XSD gebaseerde aanpassingsformulieren die de sjabloon Document of Record hebben.
 
 ## Een Forms Workflow aanroepen {#invoke-a-forms-workflow}
@@ -138,6 +147,7 @@ Met de handeling Verzenden wordt het volgende op de laadlocatie van de workflow 
 * **Gegevensbestand**: Het bevat gegevens die naar het adaptieve formulier worden verzonden. U kunt de **[!UICONTROL Data File Path]** om de naam van het bestand en het pad van het bestand ten opzichte van de lading op te geven. De `/addresschange/data.xml` pad maakt een map met de naam `addresschange` en plaatst deze ten opzichte van de lading. U kunt ook alleen `data.xml` om alleen verzonden gegevens te verzenden zonder een maphiërarchie te maken. Gebruik de optie Variabele en selecteer de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
 >[!NOTE]
+>
 Variabelen kunnen worden gebruikt, ongeacht of het workflowmodel is gemarkeerd voor externe gegevensopslag.
 
 * **Bijlagen**: U kunt de **[!UICONTROL Attachment Path]** om de mapnaam op te geven waarin de bijlagen worden opgeslagen die naar het adaptieve formulier zijn geüpload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
@@ -169,6 +179,7 @@ Validatie op de server inschakelen
 Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt de validatie opnieuw uitgevoerd door de server. Als de validatie op het servereinde mislukt, wordt de verzendtransactie gestopt. De eindgebruiker krijgt het oorspronkelijke formulier opnieuw te zien. De vastgelegde gegevens en verzonden gegevens worden als een fout aan de gebruiker gepresenteerd.
 
 >[!NOTE]
+>
 Servervalidatie valideert het formuliermodel. Het wordt aanbevolen een aparte clientbibliotheek voor validaties te maken en deze niet te mengen met andere elementen, zoals HTML styling en DOM-bewerking in dezelfde clientbibliotheek.
 
 ### Aangepaste functies ondersteunen in validatie-expressies {#supporting-custom-functions-in-validation-expressions-br}

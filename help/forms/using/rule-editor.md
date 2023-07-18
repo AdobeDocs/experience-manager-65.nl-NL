@@ -10,14 +10,19 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 26403941129f3a80fdb3e9b964cb943a04b3bfa1
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '6836'
+source-wordcount: '6832'
 ht-degree: 0%
 
 ---
 
 # Regeleditor voor adaptieve formulieren{#adaptive-forms-rule-editor}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/rule-editor.html) |
+| AEM 6,5 | Dit artikel |
 
 ## Overzicht {#overview}
 
@@ -51,7 +56,7 @@ In de regeleditor **Wanneer** het regeltype dwingt de voorwaarde-actie construct
 
 **Handeling-voorwaarde** In deze constructie, bepaalt een regel eerst een actie die door voorwaarden voor evaluatie wordt gevolgd teweegbrengen. Een andere variatie van deze constructie is actie-voorwaarde-afwisselende actie, die ook een afwisselende actie bepaalt om te teweegbrengen als de voorwaarde Vals terugkeert.
 
-Toon, verberg, laat toe, maak onbruikbaar, plaats Waarde van, en bevestig regeltypes in regelredacteur om de actie-voorwaarde regelconstructie af te dwingen. Standaard is de alternatieve actie voor Tonen Verbergen en voor Inschakelen Uitgeschakeld en andersom. U kunt de alternatieve standaardhandeling niet wijzigen.
+Toon, verberg, laat toe, maak onbruikbaar, plaats Waarde van, en bevestig regeltypes in regelredacteur om de actie-voorwaarde regelconstructie af te dwingen. Standaard is de alternatieve actie voor Tonen Verbergen en voor Inschakelen Uitgeschakeld en omgekeerd. U kunt de alternatieve standaardhandeling niet wijzigen.
 
 >[!NOTE]
 >
@@ -65,11 +70,11 @@ Hoewel u de meeste gebruiksgevallen kunt bereiken door om het even welke regelco
 
 * Een typische regel van het duim wanneer het creëren van een regel is het denken over het in de context van het voorwerp waarop u een regel schrijft. Denk eraan dat u veld B wilt verbergen of weergeven op basis van de waarde die een gebruiker in veld A heeft opgegeven. In dit geval evalueert u een voorwaarde in veld A en activeert u een actie in veld B op basis van de waarde die de voorwaarde retourneert.
 
-   Daarom als u een regel op gebied B (het voorwerp schrijft waarop u een voorwaarde) evalueert, gebruik de voorwaarde-actie constructie of het wanneer regeltype. Op dezelfde manier gebruikt u de handeling-voorwaarde constructie of toont of verbergt regeltype op gebied A.
+  Daarom als u een regel op gebied B (het voorwerp schrijft waarop u een voorwaarde) evalueert, gebruik de voorwaarde-actie constructie of het wanneer regeltype. Op dezelfde manier gebruikt u de handeling-voorwaarde constructie of toont of verbergt regeltype op gebied A.
 
 * Soms moet u meerdere handelingen uitvoeren op basis van één voorwaarde. In dergelijke gevallen wordt aangeraden de voorwaarde-actieconstruct te gebruiken. In deze constructie, kunt u een voorwaarde eens evalueren en veelvoudige actieverklaringen specificeren.
 
-   Als u bijvoorbeeld velden B, C en D wilt verbergen op basis van de voorwaarde die controleert of de waarde is opgegeven in veld A, schrijft u één regel met een construct voor voorwaarde-actie of wanneer-regeltype op veld A en geeft u handelingen op om de zichtbaarheid van velden B, C en D te bepalen. Anders hebt u drie aparte regels nodig voor de velden B, C en D, waar elke regel de voorwaarde controleert en het desbetreffende veld weergeeft of verbergt. In dit voorbeeld is het efficiënter om het Wanneer regeltype op één object te schrijven in plaats van Regeltype tonen of verbergen op drie objecten.
+  Als u bijvoorbeeld velden B, C en D wilt verbergen op basis van de voorwaarde die controleert of de waarde is opgegeven in veld A, schrijft u één regel met een construct voor voorwaarde-actie of wanneer-regeltype op veld A en geeft u handelingen op om de zichtbaarheid van velden B, C en D te bepalen. Anders hebt u drie aparte regels nodig voor de velden B, C en D, waar elke regel de voorwaarde controleert en het desbetreffende veld weergeeft of verbergt. In dit voorbeeld is het efficiënter om het Wanneer regeltype op één object te schrijven in plaats van Regeltype tonen of verbergen op drie objecten.
 
 * Als u een actie wilt activeren op basis van meerdere voorwaarden, wordt aangeraden een handeling-voorwaardenconstructie te gebruiken. Als u bijvoorbeeld veld A wilt weergeven en verbergen door de voorwaarden in de velden B, C en D te evalueren, gebruikt u Regeltype tonen of verbergen in veld A.
 * Gebruik een voorwaarde-handeling of handeling als de regel één handeling voor één voorwaarde bevat.
@@ -372,7 +377,7 @@ Voor meer informatie over het gebruiken van visuele regelredacteur, zie [Schrijf
 
 ### E. Schakelaar voor bewerkingsprogramma&#39;s met visuele code {#e-visual-code-editors-switcher}
 
-Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-editor. Voor andere gebruikers is de code-editor niet beschikbaar. Als u de rechten hebt, kunt u van visuele redacteurswijze aan de wijze van de coderedacteur van de regel, en vice versa schakelen, gebruikend de schakelaar recht boven de regelredacteur. Wanneer u regelredacteur de eerste keer lanceert, opent het op de visuele redacteurswijze. U kunt regels op de visuele redacteurswijze schrijven of op de wijze schakelen van de coderedacteur om een regelmanuscript te schrijven. Nochtans, merk op dat als u een regel wijzigt of een regel in coderedacteur schrijft, u niet terug naar de visuele redacteur voor die regel kunt schakelen tenzij u de coderedacteur ontruimt.
+Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-editor. Voor andere gebruikers is de code-editor niet beschikbaar. Als u de rechten hebt, kunt u van visuele redacteurswijze op de wijze van de coderedacteur van de regelredacteur schakelen, en omgekeerd, gebruikend de schakelaar recht boven de regelredacteur. Wanneer u regelredacteur de eerste keer lanceert, opent het op de visuele redacteurswijze. U kunt regels op de visuele redacteurswijze schrijven of op de wijze schakelen van de coderedacteur om een regelmanuscript te schrijven. Nochtans, merk op dat als u een regel wijzigt of een regel in coderedacteur schrijft, u niet terug naar de visuele redacteur voor die regel kunt schakelen tenzij u de coderedacteur ontruimt.
 
 AEM Forms volgt de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
@@ -550,68 +555,67 @@ Zie voor meer informatie [usejsdoc.org](https://jsdoc.app/).
 Ondersteund `jsdoc` tags:
 
 * **Persoonlijk**
-Syntaxis: Een functie van het type private is niet opgenomen als een aangepaste functie.`@private`
+Syntaxis: `@private`
 Een functie van het type private is niet opgenomen als een aangepaste functie.
 
 * **Naam**
-Syntaxis: Alternatief `@name funcName <Function Name>`
+Syntaxis: `@name funcName <Function Name>`
 Alternatief `,` u kunt gebruiken: `@function funcName <Function Name>` **of** `@func` `funcName <Function Name>`.
-   `funcName` is de naam van de functie (geen spaties toegestaan).
-   `<Function Name>` is de weergavenaam van de functie.
+  `funcName` is de naam van de functie (geen spaties toegestaan).
+  `<Function Name>` is de weergavenaam van de functie.
 
 * **Lid**
-Syntaxis: Koppelt een naamruimte aan de functie.`@memberof namespace`
+Syntaxis: `@memberof namespace`
 Koppelt een naamruimte aan de functie.
 
 * **Parameter**
-Syntaxis: U kunt ook het volgende gebruiken: `@param {type} name <Parameter Description>`
+Syntaxis: `@param {type} name <Parameter Description>`
 U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Description>` **of** `@arg` `{type}` `name <Parameter Description>`.
 Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerdere parametertags hebben, één tag voor elke parameter in de volgorde waarin deze voorkomt.
-   `{type}` vertegenwoordigt parametertype. Toegestane parametertypen zijn:
+  `{type}` vertegenwoordigt parametertype. Toegestane parametertypen zijn:
 
    1. string
    1. getal
    1. boolean
    1. bereik
 
-   Bereik wordt gebruikt voor verwijzingen naar velden van een adaptief formulier. Wanneer in een formulier het laden is vertraagd, kunt u `scope` om de velden te openen. U kunt velden openen wanneer de velden worden geladen of als de velden algemeen zijn gemarkeerd.
+  Bereik wordt gebruikt voor verwijzingen naar velden van een adaptief formulier. Wanneer in een formulier het laden is vertraagd, kunt u `scope` om de velden te openen. U kunt velden openen wanneer de velden worden geladen of als de velden algemeen zijn gemarkeerd.
 
-   Alle andere parametertypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Typen zijn niet hoofdlettergevoelig. Spaties zijn niet toegestaan in de parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
+  Alle andere parametertypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Typen zijn niet hoofdlettergevoelig. Spaties zijn niet toegestaan in de parameter `name`. `<Parameter Descrption>` `<parameter>  can have multiple words. </parameter>`
 
 * **Retourtype**
-Syntaxis: U kunt ook `@return {type}`
+Syntaxis: `@return {type}`
 U kunt ook `@returns {type}`.
 Voegt informatie over de functie toe, zoals zijn doel.
-{type} staat voor het retourneringstype van de functie. Toegestane retourtypen zijn:
+{type} vertegenwoordigt het terugkeertype van de functie. Toegestane retourtypen zijn:
 
    1. string
    1. getal
    1. boolean
 
-   Alle andere retourneringstypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Retourtypen zijn niet hoofdlettergevoelig.
+  Alle andere retourneringstypen worden in een van de bovenstaande categorieën ingedeeld. Geen wordt niet ondersteund. Selecteer een van de bovenstaande typen. Retourtypen zijn niet hoofdlettergevoelig.
 
 * **Dit**
-Syntaxis: 
-`@this currentComponent`
+Syntaxis: `@this currentComponent`
 
-   Gebruik @this om te verwijzen naar de component Adaptief formulier waarop de regel is geschreven.
+  Gebruik @this om te verwijzen naar de component Adaptief formulier waarop de regel is geschreven.
 
-   Het volgende voorbeeld is gebaseerd op de veldwaarde. In het volgende voorbeeld verbergt de regel een veld in het formulier. De `this` deel van `this.value` verwijst naar de onderliggende component Adaptief formulier waarop de regel is geschreven.
+  Het volgende voorbeeld is gebaseerd op de veldwaarde. In het volgende voorbeeld verbergt de regel een veld in het formulier. De `this` deel van `this.value` verwijst naar de onderliggende component Adaptief formulier waarop de regel is geschreven.
 
-   ```
-      /**
-      * @function myTestFunction
-      * @this currentComponent
-      * @param {scope} scope in which code inside function will be executed.
-      */
-      myTestFunction = function (scope) {
-         if(this.value == "O"){
-               scope.age.visible = true;
-         } else {
-            scope.age.visible = false;
-         }
-      }
-   ```
+  ```
+     /**
+     * @function myTestFunction
+     * @this currentComponent
+     * @param {scope} scope in which code inside function will be executed.
+     */
+     myTestFunction = function (scope) {
+        if(this.value == "O"){
+              scope.age.visible = true;
+        } else {
+           scope.age.visible = false;
+        }
+     }
+  ```
 
 >[!NOTE]
 >
@@ -641,7 +645,7 @@ Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulie
 
 1. Selecteer het invoervak en tik op ![bewerkingsregels](assets/edit-rules.png) om de regeleditor te openen.
 1. Tikken **Regel maken**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
-   [ ![Aangepaste functies gebruiken om een regel te maken](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Tikken **Gereed**. Uw aangepaste functie wordt toegevoegd.
+   [![Aangepaste functies gebruiken om een regel te maken](assets/add_custom_rule_new.png)](assets/add-custom-rule.png)Tikken **Gereed**. Uw aangepaste functie wordt toegevoegd.
 
 #### Ondersteunde typen functiedeclaratie {#function-declaration-supported-types}
 

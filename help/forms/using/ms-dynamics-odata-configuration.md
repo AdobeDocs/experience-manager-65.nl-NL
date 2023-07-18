@@ -10,14 +10,19 @@ discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1215'
 ht-degree: 0%
 
 ---
 
 # Configuratie Microsoft Dynamics OData{#microsoft-dynamics-odata-configuration}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/ms-dynamics-odata-configuration.html) |
+| AEM 6,5 | Dit artikel |
 
 ![gegevensintegratie](assets/data-integeration.png)
 
@@ -100,7 +105,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    * `Client-ID` is een cliëntidentiteitskaart u het gebruiken van om het even welke generator kunt produceren GUID.
    * `redirect-uri` is de URL naar de Microsoft Dynamics OData cloud service op AEM Forms. De standaardcloudservice die wordt geïnstalleerd met het AEM Forms-pakket, wordt geïmplementeerd op de volgende URL:
-      `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
+     `https://'[server]:[port]'/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
 1. Voer de volgende opdracht uit om toegang te verlenen op de AD FS-computer:
 

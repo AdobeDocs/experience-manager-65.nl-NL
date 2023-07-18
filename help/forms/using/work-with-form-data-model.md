@@ -10,14 +10,19 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: e4aaef48ce7d6e49e9a76f78a74b7dea127f6cce
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '4051'
+source-wordcount: '4073'
 ht-degree: 0%
 
 ---
 
 # Werken met formuliergegevensmodel{#work-with-form-data-model}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/use-form-data-model/work-with-form-data-model.html) |
+| AEM 6,5 | Dit artikel |
 
 ![gegevensintegratie](do-not-localize/data-integeration.png)
 
@@ -204,10 +209,9 @@ Gebruik het verzoekattribuut om de bijbehorende eigenschappen van de gegevensbro
    >[!NOTE]
    >
    >* Als u een statische sjabloon gebruikt, bedekt u head.jsp bij:
-      >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
+   >  `/libs/fd/af/components/page2/afStaticTemplatePage/head.jsp`
    >* Als u een bewerkbare sjabloon gebruikt, bedekt u de aftemplatedpage.jsp op:
-      >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
-
+   >  `/libs/fd/af/components/page2/aftemplatedpage/aftemplatedpage.jsp`
 
 1. Set [!DNL paramMap] voor het aanvraagkenmerk. Neem bijvoorbeeld de volgende code op in het .jsp-bestand in de map apps:
 

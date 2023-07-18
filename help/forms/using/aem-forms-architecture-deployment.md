@@ -11,14 +11,19 @@ geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
 role: Admin
 exl-id: d4421d46-cfc9-424e-8a88-9d0a2994a5cf
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '2460'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
 
 # Architectuur en plaatsingstopologieën voor AEM Forms {#architecture-and-deployment-topologies-for-aem-forms}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/forms-overview/aem-forms-cloud-service-architecture.html) |
+| AEM 6,5 | Dit artikel |
 
 ## Architectuur {#architecture}
 
@@ -74,9 +79,9 @@ In de volgende afbeelding worden verschillende AEM configuraties van formulierse
 * **Verwerking van onbewerkte formuliergegevens die afkomstig zijn van een instantie Publish:** Dit wordt hoofdzakelijk bereikt op een instantie van de Verwerking via AEM werkschema&#39;s die teweegbrengen wanneer de gegevens aankomen. De workflows kunnen gebruikmaken van de stap Formuliergegevensmodel die buiten het vak wordt weergegeven om de gegevens of het document naar een geschikte gegevensopslag te archiveren.
 * **Beveiligde opslag van formuliergegevens**: Verwerking biedt een opslagplaats achter de firewall voor onbewerkte formuliergegevens die van gebruikers is geïsoleerd. Geen van de formulierontwerpers op de instantie Auteur en eindgebruikers op de instantie Publiceren hebben toegang tot deze opslagplaats.
 
-   >[!NOTE]
-   >
-   >Adobe raadt aan een gegevensopslagruimte van derden te gebruiken om de uiteindelijke verwerkte gegevens op te slaan in plaats van AEM opslagplaats te gebruiken.
+  >[!NOTE]
+  >
+  >Adobe raadt aan een gegevensopslagruimte van derden te gebruiken om de uiteindelijke verwerkte gegevens op te slaan in plaats van AEM opslagplaats te gebruiken.
 
 * **Opslag en naverwerking van correspondentiegegevens afkomstig uit een instantie Publish:** AEM workflows voeren de optionele naverwerking van de bijbehorende letterdefinities uit. Deze workflows kunnen de uiteindelijke verwerkte gegevens opslaan in een geschikte externe gegevensopslag.
 
@@ -95,7 +100,7 @@ De hieronder aanbevolen AEM Forms op JEE-topologieën zijn vooral bedoeld voor k
 
 AEM Forms-klanten die alleen documentservices of documentbeveiligingsmogelijkheden willen gebruiken, kunnen een topologie hebben die vergelijkbaar is met de hieronder weergegeven topologie. Deze topologie adviseert gebruikend één enkel geval van AEM Forms. Indien nodig kunt u ook een cluster of farm van AEM Forms-servers maken. Deze topologie wordt geadviseerd wanneer de meeste gebruikers programmatically tot mogelijkheden van de server van AEM Forms toegang hebben en de interventie door het gebruikersinterface minimum is. De topologie is nuttig in partijverwerkingsverrichtingen van de documentdiensten. Bijvoorbeeld, gebruikend de outputdienst om honderden niet-editable documenten van PDF dagelijks tot stand te brengen.
 
-Hoewel AEM Forms u in staat stelt alle functies van één server in te stellen en uit te voeren, moet u toch capaciteitsplanning, taakverdeling en specifieke servers instellen voor specifieke mogelijkheden in een productieomgeving. Als u bijvoorbeeld een omgeving wilt gebruiken waarin de PDF Generator-service duizenden pagina&#39;s per dag converteert en digitale handtekeningen toevoegt om de toegang tot documenten te beperken, stelt u aparte AEM Forms-servers in voor de service PDF Generator en de mogelijkheden voor digitale handtekeningen. Het helpt optimale prestaties te bieden en de servers onafhankelijk van elkaar te schalen.
+Hoewel AEM Forms u in staat stelt alle functies van één server in te stellen en uit te voeren, moet u toch capaciteitsplanning, taakverdeling en specifieke servers instellen voor specifieke mogelijkheden in een productieomgeving. Als u bijvoorbeeld in een omgeving met de service PDF Generator duizenden pagina&#39;s per dag wilt converteren en digitale handtekeningen wilt toevoegen om de toegang tot documenten te beperken, maakt u aparte AEM Forms-servers voor de service PDF Generator en de mogelijkheden voor digitale handtekeningen. Het helpt optimale prestaties te bieden en de servers onafhankelijk van elkaar te schalen.
 
 ![basisfuncties](assets/basic-features.png)
 
@@ -140,8 +145,8 @@ AEM Forms-klanten die gecontroleerde mappen voor batchverwerking willen gebruike
 
 ### Topologie voor het gebruiken van de mogelijkheden van de documentdiensten voor off-line API-Gebaseerde verwerking {#topology-for-using-document-services-capabilities-for-offline-api-based-processing}
 
-De klanten van AEM Forms die van plan zijn om slechts het vermogen van de documentdiensten te gebruiken kunnen een topologie hebben gelijkend op hieronder getoond. Deze topologie adviseert gebruikend een cluster van AEM Forms op servers OSGi. Deze topologie wordt geadviseerd wanneer de meeste gebruikers programmatically (Gebruikend APIs) toegangsmogelijkheden van de server van AEM Forms en interventie door het gebruikersinterface minimum zijn. De topologie is vrij nuttig in veelvoudige scenario&#39;s van de softwarecliënt. Bijvoorbeeld, veelvoudige cliënten die de dienst van de Generator van PDF gebruiken om de documenten van de PDF tot stand te brengen op bestelling.
+De klanten van AEM Forms die van plan zijn om slechts het vermogen van de documentdiensten te gebruiken kunnen een topologie hebben gelijkend op hieronder getoond. Deze topologie adviseert gebruikend een cluster van AEM Forms op servers OSGi. Deze topologie wordt geadviseerd wanneer de meeste gebruikers programmatically (Gebruikend APIs) toegangsmogelijkheden van de server van AEM Forms en interventie door het gebruikersinterface minimum zijn. De topologie is vrij nuttig in veelvoudige scenario&#39;s van de softwarecliënt. Bijvoorbeeld, veelvoudige cliënten die de dienst van de PDF Generator gebruiken om de documenten van de PDF tot stand te brengen op bestelling.
 
-Hoewel u met AEM Forms alle functies van één server kunt instellen en uitvoeren, moet u capaciteitsplanning uitvoeren, taakverdeling toepassen en specifieke servers instellen voor specifieke mogelijkheden in een productieomgeving. Als u bijvoorbeeld een omgeving wilt gebruiken waarin de service PDF Generator duizenden pagina&#39;s per dag converteert en meerdere adaptieve formulieren gebruikt om gegevens vast te leggen, stelt u afzonderlijke AEM Forms-servers in voor de service PDF Generator en de mogelijkheden voor adaptieve formulieren. Het helpt optimale prestaties te bieden en de servers onafhankelijk van elkaar te schalen.
+Hoewel u met AEM Forms alle functies van één server kunt instellen en uitvoeren, moet u capaciteitsplanning uitvoeren, taakverdeling toepassen en specifieke servers instellen voor specifieke mogelijkheden in een productieomgeving. Voor een omgeving die bijvoorbeeld gebruikmaakt van de service PDF Generator om duizenden pagina&#39;s per dag om te zetten en meerdere adaptieve formulieren om gegevens vast te leggen, stelt u afzonderlijke AEM Forms-servers in voor de service PDF Generator en de mogelijkheden voor adaptieve formulieren. Het helpt optimale prestaties te bieden en de servers onafhankelijk van elkaar te schalen.
 
 ![offline-api-verwerking](assets/offline-api-based-processing.png)

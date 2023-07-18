@@ -11,14 +11,19 @@ discoiquuid: ba571f8e-8bd3-48eb-82e1-c93b14ffe44a
 docset: aem65
 role: Admin
 exl-id: f82bbd39-b655-47a9-bca9-21d7cd30c082
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1980'
 ht-degree: 0%
 
 ---
 
 # Metagegevens van formulieren beheren{#manage-form-metadata}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/manage-metadata/manage-form-metadata.html) |
+| AEM 6,5 | Dit artikel |
 
 ## Overzicht  {#overview-nbsp}
 
@@ -203,7 +208,6 @@ Elementen hebben bestaande eigenschapswaarden, die kunnen worden weergegeven in 
    * Het linkerdeelvenster bevat een miniatuur van het formulier
    * Het rechterdeelvenster bevat eigenschappen van metagegevens in de alleen-lezen modus, verdeeld over verschillende tabbladen.
 
-
 ## Waarden van metagegevens van formulieren toevoegen/bijwerken {#add-update-form-metadata-values}
 
 U kunt de waarde van bestaande eigenschappen van metagegevens bewerken of nieuwe waarden toevoegen aan een bestaand veld voor de eigenschap van metagegevens (bijvoorbeeld wanneer een metagegevensveld leeg is).
@@ -240,7 +244,6 @@ Voor adaptieve formulieren is extra functionaliteit beschikbaar, waarmee de gebr
 >* Gebruik een vierkante afbeelding voor de miniatuur. Wanneer u een niet-vierkante afbeelding gebruikt en de miniatuur in de lijstweergave weergeeft, wordt de miniatuur afgekapt weergegeven.
 >* Nadat een nieuwe afbeelding is geüpload of gegenereerd, wordt de miniatuur vervangen door deze afbeelding en kan deze niet opnieuw worden ingesteld op de vorige afbeelding.
 >
-
 
 ## Aangepaste metagegevens toevoegen {#add-custom-metadata}
 

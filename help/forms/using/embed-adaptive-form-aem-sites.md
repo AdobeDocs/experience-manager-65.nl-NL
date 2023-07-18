@@ -10,14 +10,20 @@ topic-tags: author, interactive-communications
 discoiquuid: 43362643-69cd-4006-a613-f998c79eeddc
 feature: Adaptive Forms
 exl-id: 00ee7929-649f-4cbb-be79-ba13ac73a16d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1096'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier of interactieve communicatie insluiten in AEM sitepagina {#embed-an-adaptive-form-or-interactive-communication-in-aem-sites-page}
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/integrate/services/embed-adaptive-form-aem-sites.html) |
+| AEM 6,5 | Dit artikel |
+
 
 ## Overzicht {#overview}
 
@@ -62,10 +68,10 @@ Een adaptief formulier of interactieve communicatie insluiten met AEM Forms Cont
       * **Bericht van dank**: Schrijf een bericht met de teksteditor Rich die moet worden weergegeven bij het verzenden van formulieren. Deze optie is alleen beschikbaar als u een bedankbericht wilt weergeven.
       * **Dankbriefje**: Blader en selecteer de pagina die u wilt weergeven bij het verzenden van het formulier. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
       * **Pagina bij verzending vernieuwen**: Schakel deze optie in om de pagina met het ingesloten adaptieve formulier te vernieuwen en de pagina voor bedankt weer te geven. Anders vervangt de pagina Hartelijk dank het aangepaste formulier in de AEM Forms-container, zonder de pagina te vernieuwen. Deze optie is alleen beschikbaar wanneer u een pagina voor bedankt weergeeft.
+
    * **Thema**: Selecteer een thema waarmee u stijlen definieert voor onderdelen van uw adaptieve formulier of interactieve communicatie. Stijlen omvat vormgevingseigenschappen zoals letterstijl, achtergrondkleur, afmetingen en uitlijning.
    * **Hoogte**: Geef de hoogte van de container op. Laat deze leeg om de grootte van de container automatisch te wijzigen.
    * **CSS-clientbibliotheek**: Geef het pad naar een CSS-clientbibliotheek op.
-
 
 1. Sla de instellingen op. Het aangepaste formulier of de interactieve communicatie is nu ingesloten op de pagina.
 

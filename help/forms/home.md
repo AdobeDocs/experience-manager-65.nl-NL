@@ -4,14 +4,20 @@ seo-title: AEM 6.5 Forms Guide
 description: Met deze handleiding AEM 6.5 kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren van deze formulieren en leer meer over het ontwerpen van adaptieve formulieren.
 seo-description: Covers all AEM Forms tasks, including how to create, manage, publish, and update digital forms.
 exl-id: e66383b0-ae58-4cfe-8f1b-28b4e124fd06
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '369'
 ht-degree: 18%
 
 ---
 
 # Adobe Experience Manager 6.5 Handleiding voor formulieren
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/setup-forms-cloud-service.html) |
+| AEM 6,5 | Dit artikel |
+
 
 Met deze handleiding AEM 6.5 kunt u digitale formulieren maken, beheren, publiceren en bijwerken. Zoek hulp bij het installeren, upgraden en configureren van deze formulieren en leer meer over het ontwerpen van adaptieve formulieren.
 

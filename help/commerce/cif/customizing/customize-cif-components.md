@@ -11,9 +11,9 @@ feature: Commerce Integration Framework
 kt: 4279
 thumbnail: customize-aem-cif-core-component.jpg
 exl-id: 8933942e-be49-49d3-bf0a-7225257e2803
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 1d914b12c3279bacaf5cabb3b1953e927c04bad1
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2571'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De [CIF Venia-project](https://github.com/adobe/aem-cif-guides-venia) is een ref
 
 ## Wat u gaat maken
 
-Het merk Venia is onlangs begonnen met de productie van bepaalde producten met behulp van duurzame materialen en het bedrijf wil graag een **Eco Friendly** badge als onderdeel van de Product Teaser. In Adobe Commerce wordt een nieuw aangepast kenmerk gemaakt om aan te geven of een product het **Milieuvriendelijk** materiaal. Dit douanekenmerk zal dan als deel van de vraag van GraphQL worden toegevoegd en op de Teaser van het Product voor gespecificeerde producten getoond.
+Het merk Venia is onlangs begonnen met de productie van bepaalde producten met behulp van duurzame materialen en het bedrijf wil graag een **Eco Friendly** badge als onderdeel van de Product Teaser. In Adobe Commerce wordt een nieuw aangepast kenmerk gemaakt om aan te geven of een product het **Milieuvriendelijk** materiaal. Dit douanekenmerk wordt toegevoegd als deel van de vraag van GraphQL en getoond op de Teaser van het Product voor gespecificeerde producten.
 
 ![Eco-vriendelijke badge - definitieve implementatie](../assets/customize-cif-components/final-product-teaser-eco-badge.png)
 
@@ -69,7 +69,7 @@ U kloont de [Venia-project](https://github.com/adobe/aem-cif-guides-venia) en ov
 
 ## Auteur van de producttaser {#author-product-teaser}
 
-De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste stap voegt u een nieuw exemplaar van de Product Teaser toe aan de startpagina om de basislijnfunctionaliteit te begrijpen.
+De component Product Teaser wordt tijdens deze zelfstudie uitgebreid. Als eerste stap voegt u een exemplaar van de Product Teaser toe aan de startpagina om de basislijnfunctionaliteit te begrijpen.
 
 1. Ga naar de **Startpagina** van het gebied: [http://localhost:4502/editor.html/content/acme/us/en.html](http://localhost:4502/editor.html/content/acme/us/en.html)
 
@@ -178,11 +178,11 @@ Gebruik vervolgens een GraphQL-IDE om te controleren of de `eco_friendly` kenmer
 
    ![Voorbeeld GraphQL-reactie](../assets/customize-cif-components/sample-graphql-query.png)
 
-   De waarde van **Ja** is een geheel getal van **1**. Dit is handig wanneer u de GraphQL-query in Java™ schrijft.
+De waarde van **Ja** is een geheel getal van **1**. Dit is handig wanneer u de GraphQL-query in Java™ schrijft.
 
-   >[!TIP]
-   >
-   >Meer gedetailleerde documentatie over [Adobe Commerce GraphQL is hier te vinden](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
+>[!TIP]
+>
+>Meer gedetailleerde documentatie over [Adobe Commerce GraphQL is hier te vinden](https://devdocs.magento.com/guides/v2.4/graphql/index.html).
 
 ## Het verkoopmodel voor de producttaser bijwerken {#updating-sling-model-product-teaser}
 
@@ -213,7 +213,7 @@ Gebruiken [de IDE van uw keuze](https://experienceleague.adobe.com/docs/experien
    }
    ```
 
-   Dit is een nieuwe methode om de logica in te kapselen om erop te wijzen of het product heeft `eco_friendly` kenmerk ingesteld op **Ja** of **Nee**.
+Dit is een nieuwe methode om de logica in te kapselen om erop te wijzen of het product heeft `eco_friendly` kenmerk ingesteld op **Ja** of **Nee**.
 
 1. Controleer vervolgens de `MyProductTeaserImpl.java` om `core/src/main/java/com/venia/core/models/commerce/MyProductTeaserImpl.java`.
 

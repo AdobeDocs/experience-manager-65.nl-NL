@@ -1,14 +1,12 @@
 ---
 title: Pushmeldingen
 description: Volg deze pagina voor meer informatie over het gebruik van pushberichten in een Adobe Experience Manager Mobile-app.
-uuid: 0ed8b183-ef81-487f-8f35-934d74ec82af
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 exl-id: 375f2f40-1b98-4e21-adee-cbea274e6a2a
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
 source-wordcount: '3280'
 ht-degree: 0%
@@ -19,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Het is van cruciaal belang dat u gebruikers van de AEM Mobile-app onmiddellijk op de hoogte kunt stellen van belangrijke meldingen voor de waarde van een mobiele app en de marketingcampagnes. Hieronder wordt beschreven welke stappen moeten worden uitgevoerd om uw app pushmeldingen te laten ontvangen, en hoe u pushberichten van AEM Mobile naar de toepassing kunt configureren en verzenden die op de telefoon is geïnstalleerd. Bovendien, beschrijft deze sectie hoe te om te vormen [Diepe koppeling](#deeplinking) aan uw pushmeldingen.
 
@@ -228,7 +226,7 @@ De clientbibliotheken voor pushmeldingen moeten als volgt aan de app worden toeg
 In CRXDE Lite:
 
 1. Navigeren naar */etc/designs/phonegap/&lt;app name=&quot;&quot;>/clientlibsall.*
-1. Dubbelklik op de ingesloten sectie in het deelvenster Eigenschappen.
+1. Dubbelklik op de sectie Insluiten in het deelvenster Eigenschappen.
 1. Voeg in het dialoogvenster dat wordt weergegeven een nieuwe clientbibliotheek toe door op de knop + te klikken.
 1. Voeg in het nieuwe tekstveld &quot;cq.mobile.push&quot; toe en klik op OK.
 1. Voeg nog een cq.mobile.push.amazon toe en klik op OK.

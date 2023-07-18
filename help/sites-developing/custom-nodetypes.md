@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: bfd50aa9-579e-47d5-997d-ec764c782497
-source-git-commit: 939132e8b461b51e1c49237e481243bcc5de3bf6
+source-git-commit: d3c40d1452217983b01245ec1c81111a3c4e7295
 workflow-type: tm+mt
-source-wordcount: '1883'
+source-wordcount: '1866'
 ht-degree: 3%
 
 ---
@@ -17,10 +17,10 @@ ht-degree: 3%
 
 Omdat Adobe Experience Manager (AEM) is gebaseerd op Sling en een JCR-opslagplaats gebruikt, zijn de knooppunttypen die door beide worden aangeboden, beschikbaar voor gebruik:
 
-* [JCR-knooppunttypen](https://www.adobe.io/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
+* [JCR-knooppunttypen](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/3_Repository_Model.html#3.1.7-Node-Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
 
-Daar komt nog bij. AEM biedt een reeks aangepaste knooppunttypen.
+Naast deze knooptypes, verstrekt AEM een waaier van types van douaneknoop.
 
 ## Audit {#audit}
 
@@ -145,7 +145,7 @@ Definieert de standaard CQ-pagina.
 
 **Beschrijving**
 
-Definieert een mixinetype dat knooppunten markeert als pseudopagina&#39;s. Dit betekent dat ze kunnen worden aangepast voor ondersteuning voor pagina- en WCM-bewerkingen.
+Definieert een mixinetype dat knooppunten markeert als pseudopagina&#39;s. Met andere woorden, het betekent dat ze kunnen worden aangepast voor ondersteuning voor pagina- en WCM-bewerking.
 
 **Definitie**
 
@@ -160,9 +160,9 @@ Definieert het standaardknooppunt voor pagina-inhoud, met de minimale eigenschap
 * `@prop jcr:title` - Titel voor de pagina.
 * `@prop jcr:description` - Beschrijving van deze pagina.
 * `@prop cq:template` - Pad naar de sjabloon die is gebruikt om de pagina te maken.
-* `@prop cq:allowedTemplates` - Lijst met reguliere expressies die worden gebruikt om het pad of de paden naar de toegestane sjabloon te bepalen.
-* `@prop pageTitle` - Titel wordt meestal weergegeven in het dialoogvenster `<title>` tag.
-* `@prop navTitle` - Titel wordt meestal gebruikt in de navigatie.
+* `@prop cq:allowedTemplates` - Lijst met reguliere expressies die worden gebruikt om de paden naar de toegestane sjabloon te bepalen.
+* `@prop pageTitle` - Titel weergegeven in het dialoogvenster `<title>` tag.
+* `@prop navTitle` - Titel gebruikt in navigatie.
 * `@prop hideInNav` - Geeft aan of de pagina moet worden verborgen in de navigatie.
 * `@prop onTime` - Tijdstip waarop deze pagina geldig wordt.
 * `@prop offTime` - Tijd waarop deze pagina ongeldig wordt.
@@ -202,8 +202,8 @@ Definieert een CQ-sjabloon.
       * `+ name1`
          * `- cq:path`
             * `- cq:workflowName`
-* `@prop allowedParents` - Reguliere-expressiepatronen om te bepalen welke paden naar sjablonen zijn toegestaan als bovenliggende sjablonen.
-* `@prop allowedChildren` - Reguliere-expressiepatronen om te bepalen welke paden naar sjablonen zijn toegestaan als onderliggende sjablonen.
+* `@prop allowedParents` - Reguliere-expressiepatronen om de paden naar sjablonen te bepalen die zijn toegestaan als bovenliggende sjablonen.
+* `@prop allowedChildren` - Reguliere-expressiepatronen om de paden naar sjablonen te bepalen die zijn toegestaan als onderliggende sjablonen.
 * `@prop ranking` - Positie in de lijst met sjablonen in het dialoogvenster Pagina maken.
 
 **Definitie**
@@ -232,15 +232,15 @@ Definieert een CQ-component.
 * `@prop dialogPath` - Primair dialoogvenster (alternatief voor dialoogvenster).
 * `@node design_dialog` - Het dialoogvenster Ontwerpen.
 * `@prop cq:cellName` - Naam van de ontwerpcel.
-* `@prop cq:isContainer` - Geeft aan of dit een containercomponent is. Hierdoor worden de celnamen van onderliggende componenten in plaats van padnamen gebruikt. De `parsys` is een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
+* `@prop cq:isContainer` - Geeft aan of het een containercomponent is. Hiermee worden de celnamen van onderliggende componenten gedwongen in plaats van padnamen te worden gebruikt. De `parsys` is een containercomponent. Als deze waarde niet is gedefinieerd, wordt de controle uitgevoerd op basis van het bestaan van een `cq:childEditConfig`.
 * `@prop cq:noDecoration` - Indien waar (true), geen decoratie `div` -tags worden getekend wanneer deze component wordt opgenomen.
 * `@node cq:editConfig` - De configuratie die de parameters voor de bewerkbalk definieert.
 * `@node cq:childEditConfig` - De bewerkingsconfiguratie die wordt overgeërfd door onderliggende componenten.
 * `@node cq:htmlTag` - Definieert aanvullende tagkenmerken die aan de &quot;omringende&quot; tags worden toegevoegd `div` -tag wanneer de component wordt opgenomen.
 * `@node icon.png`- Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
-* `@prop allowedParents` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
-* `@prop allowedChildren` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als onderliggende componenten.
+* `@prop allowedParents` - Reguliere-expressiepatronen om de paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
+* `@prop allowedChildren` - Reguliere-expressiepatronen om de paden van componenten te bepalen die zijn toegestaan als onderliggende componenten.
 * `@node virtual` - Bevat subknooppunten die virtuele componenten weerspiegelen die worden gebruikt voor het slepen en neerzetten van de component.
 * `@prop componentGroup` - Naam van de componentgroep die wordt gebruikt voor slepen en neerzetten van de component.
 * `@node cq:infoProviders` - Bevat subknooppunten, die elk een bezit hebben `className` die verwijst naar een `PageInfoProvider`.
@@ -316,7 +316,7 @@ Definieert de configuratie voor de &quot;editbar&quot;.
 
 Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebruikt als een id voor slepen en neerzetten.
 
-* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijv. `["image/*"]`
+* `@prop accept` - Lijst van MIME-typen die door deze neerzetbestemming worden geaccepteerd; bijvoorbeeld: `["image/*"]`
 * `@prop groups` - Lijst met slepen- en neerzetgroepen die een bron accepteren.
 * `@prop propertyName` - Naam van de eigenschap die wordt gebruikt om de verwijzing op te slaan.
 
@@ -332,7 +332,7 @@ Vormt één dalingsdoel van een component. De naam van dit knooppunt wordt gebru
 
 **Beschrijving**
 
-Definieert een virtuele CQ-component. Deze worden momenteel alleen gebruikt voor de nieuwe wizard voor slepen en neerzetten van componenten.
+Definieert een virtuele CQ-component. Wordt momenteel alleen gebruikt voor de nieuwe wizard voor slepen en neerzetten van de component.
 
 * `@prop jcr:title` - Titel van deze component.
 * `@prop jcr:description` - Beschrijving van dit onderdeel.
@@ -340,8 +340,8 @@ Definieert een virtuele CQ-component. Deze worden momenteel alleen gebruikt voor
 * `@node cq:childEditConfig`- Configuratie bewerken die wordt overgeërfd door onderliggende componenten.
 * `@node icon.png` - Een bestand dat een kenmerkend pictogram bevat.
 * `@node thumbnail.png` - Een bestand dat een kenmerkende miniatuurafbeelding bevat.
-* `@prop allowedParents` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
-* `@prop allowedChildren` - Reguliere-expressiepatronen om het pad of de paden te bepalen van componenten die zijn toegestaan als onderliggende componenten.
+* `@prop allowedParents` - Reguliere-expressiepatronen om paden te bepalen van componenten die zijn toegestaan als bovenliggende componenten.
+* `@prop allowedChildren` - Reguliere-expressiepatronen om paden te bepalen van componenten die zijn toegestaan als onderliggende componenten.
 * `@prop componentGroup` - Naam van de componentgroep voor het slepen en neerzetten van de component.
 
 **Definitie**
@@ -361,7 +361,7 @@ Definieert een virtuele CQ-component. Deze worden momenteel alleen gebruikt voor
 
 **Beschrijving**
 
-Definieert de (client)listeners die moeten worden uitgevoerd op een bewerkingsgebeurtenis. De waarden moeten verwijzen naar een geldige clientlistenerfunctie of een vooraf gedefinieerde sneltoets bevatten:
+Definieert de (client)listeners die moeten worden uitgevoerd op een bewerkingsgebeurtenis. De waarden moeten verwijzen naar een geldige client-side listenerfunctie of een vooraf gedefinieerde sneltoets bevatten:
 
 * `REFRESH_PAGE`
 * `REFRESH_SELF`
@@ -444,7 +444,7 @@ Containerlijst.
 
 **Beschrijving**
 
-`cq:attributes` is het knooppunttype voor de ContentBus versietags. Dit knooppunt heeft alleen een reeks eigenschappen; waarvan er drie vooraf zijn gedefinieerd: &quot;created&quot;, &quot;csd&quot; en &quot;timestampe&quot;.
+Het knooppunttype `cq:attributes` is voor de ContentBus-versietags. Dit knooppunt heeft alleen een reeks eigenschappen; waarvan er drie vooraf zijn gedefinieerd: &quot;gemaakt&quot;, &quot;csd&quot; en &quot;tijdstempel&quot;.
 
 * `@prop created (long) mandatory copy` - Tijdstempel voor het maken van de versiegegevens, meestal het tijdstip van controle van de vorige versie of het tijdstip van het maken van de pagina.
 * `@prop csd (string) mandatory copy` - csd, standaardkenmerk, kopie van de eigenschap cq:csd van het paginaknooppunt
@@ -485,9 +485,9 @@ De items in een `cq:Cq4ContentPage` zijn:
 
 Opiniepeilingconfiguratie.
 
-* `@prop source (String) mandatory` - Data source URI, this is required and must not empty
-* `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Dit is optioneel en wordt standaard ingesteld op het knooppunt cq:PollConfig.
-* `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gezocht. Dit is optioneel en wordt standaard ingesteld op 30 minuten (1800 seconden).
+* `@prop source (String) mandatory` - Data source URI. Vereist en mag niet leeg zijn.
+* `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Optioneel en standaard ingesteld op het knooppunt cq:PollConfig.
+* `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gezocht. Optioneel en standaard ingesteld op 30 minuten (1800 seconden).
 * [Aangepaste services voor het importeren van gegevens voor Adobe Experience Manager maken](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definitie**

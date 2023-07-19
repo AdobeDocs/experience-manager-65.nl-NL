@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
+source-git-commit: a5d38ef6b3281992fd9ac3121cdb6c998631b205
 workflow-type: tm+mt
-source-wordcount: '1962'
+source-wordcount: '1955'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ ht-degree: 0%
 
 In AEM Forms 6.5 is een thema een AEM clientbibliotheek waarmee u de stijlen (look and feel) voor een adaptief formulier kunt definiëren. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Een thema wordt onafhankelijk beheerd zonder verwijzing naar een adaptief formulier en kan opnieuw worden gebruikt in meerdere Adaptieve Forms.
 
-## Beschikbare thema&#39;s {#available-standard-theme}
+## Beschikbare thema&#39;s {#available-theme}
 
 AEM 6.5-omgeving biedt de onderstaande thema&#39;s voor op Core Components gebaseerde Adaptive Forms:
 
@@ -51,13 +51,13 @@ Een thema is een pakket dat het CSS-bestand, JavaScript-bestanden en bronnen (zo
 
 ## Een thema maken
 
-AEM Forms 6.5 biedt de hieronder vermelde standaardthema&#39;s voor Core Components based Adaptive Forms.
+AEM Forms 6.5 biedt de onderstaande thema&#39;s voor Core Components based Adaptive Forms.
 
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-thema](https://github.com/adobe/aem-forms-theme-easel)
 
-U kunt [Pas een van deze standaardthema&#39;s aan om een thema te maken](#customize-a-theme-core-components).
+U kunt [al deze thema&#39;s aanpassen om een thema te maken](#customize-a-theme-core-components).
 
 ## Een thema aanpassen {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -92,7 +92,7 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 
 Het maken of aanpassen van een thema is een proces dat uit meerdere stappen bestaat. Voer de stappen in de lijst uit om het thema te maken/aan te passen:
 
-1. [Een standaardthema klonen](#clone-git-repo-of-theme)
+1. [Een thema klonen](#clone-git-repo-of-theme)
 1. [De weergave van het thema aanpassen](#customize-the-theme)
 1. [Bereid het thema voor lokale plaatsing](#generate-the-clientlib)
 1. [Het thema implementeren in een lokale omgeving](#deploy-the-theme-on-a-local-environment)
@@ -102,17 +102,17 @@ Het maken of aanpassen van een thema is een proces dat uit meerdere stappen best
  ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
 -->
 
-De voorbeelden in het document zijn gebaseerd op de **Canvas** , maar u kunt elk standaardthema klonen en dit aanpassen aan de hand van dezelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
+De voorbeelden in het document zijn gebaseerd op de **Canvas** thema, maar u kunt elk thema klonen en dit aanpassen aan de hand van dezelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
 
 #### 1. De Git-opslagplaats van thema klonen {#clone-git-repo-of-theme}
 
-Kies een van de volgende standaardthema&#39;s als u een standaardthema wilt klonen voor Core Components based Adaptive Forms:
+Kies een van de volgende thema&#39;s om een thema voor op Core Components gebaseerde Adaptieve Forms te klonen:
 
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-thema](https://github.com/adobe/aem-forms-theme-easel)
 
-Voer de volgende instructies uit om een standaardthema te klonen:
+Voer de volgende instructies uit om een thema te klonen:
 
 1. Open de opdrachtprompt of het terminalvenster in uw lokale ontwikkelomgeving.
 

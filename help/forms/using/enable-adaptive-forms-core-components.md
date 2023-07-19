@@ -8,15 +8,24 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '911'
 ht-degree: 0%
 
 ---
 
 
 # Adaptieve Forms Core-componenten inschakelen op AEM 6.5 Forms {#enable-adaptive-forms-core-components}
+
+<span class="preview"> Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
+| Versie | Artikelkoppeling |
+| -------- | ---------------------------- |
+| AEM 6,5 | Dit artikel |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
+
+**Van toepassing op:** ✅ Adaptive Form Core Components ❎ Adaptive Form Foundation Components.
 
 Door Adaptieve Forms Core-componenten in te schakelen kunt u beginnen met het maken, publiceren en leveren van [Adaptieve Forms met basis van kerncomponenten](create-an-adaptive-form-core-components.md) en [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) uit uw AEM 6.5 Forms-omgeving.
 

@@ -8,26 +8,30 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '2066'
+source-wordcount: '1982'
 ht-degree: 0%
 
 ---
 
 
-# Inleiding tot thema {#introduction-to-theme}
+# Een adaptief formulierthema maken of aanpassen {#introduction-to-theme}
+
+<span class="preview"> Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | Dit artikel |
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
+**Van toepassing op:** ✅ Adaptieve vorm Core-componenten ❎ [Aangepaste componenten van de Stichting van de Vorm](/help/forms/using/themes.md).
+
 In AEM Forms 6.5 is een thema een AEM clientbibliotheek waarmee u de stijlen (look and feel) voor een adaptief formulier kunt definiëren. Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten. Een thema wordt onafhankelijk beheerd zonder verwijzing naar een adaptief formulier en kan opnieuw worden gebruikt in meerdere Adaptieve Forms.
 
-## Beschikbare referentiethema&#39;s {#available-reference-theme}
+## Beschikbare thema&#39;s {#available-standard-theme}
 
-AEM 6.5-omgeving biedt de onderstaande referentiethema&#39;s voor op Core Components gebaseerde Adaptive Forms:
+AEM 6.5-omgeving biedt de onderstaande thema&#39;s voor op Core Components gebaseerde Adaptive Forms:
 
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
@@ -49,13 +53,13 @@ Een thema is een pakket dat het CSS-bestand, JavaScript-bestanden en bronnen (zo
 
 ## Een thema maken
 
-AEM Forms 6.5 biedt de onderstaande referentiethema&#39;s voor Core Components based Adaptive Forms.
+AEM Forms 6.5 biedt de hieronder vermelde standaardthema&#39;s voor Core Components based Adaptive Forms.
 
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-thema](https://github.com/adobe/aem-forms-theme-easel)
 
-U kunt [al deze referentiethema&#39;s aanpassen om een thema te maken](#customize-a-theme-core-components).
+U kunt [Pas een van deze standaardthema&#39;s aan om een thema te maken](#customize-a-theme-core-components).
 
 ## Een thema aanpassen {#customize-a-theme-core-components-based-adaptive-forms}
 
@@ -90,26 +94,27 @@ Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpass
 
 Het maken of aanpassen van een thema is een proces dat uit meerdere stappen bestaat. Voer de stappen in de lijst uit om het thema te maken/aan te passen:
 
-1. [Een referentiethema klonen](#clone-git-repo-of-theme)
+1. [Een standaardthema klonen](#clone-git-repo-of-theme)
 1. [De weergave van het thema aanpassen](#customize-the-theme)
 1. [Bereid het thema voor lokale plaatsing](#generate-the-clientlib)
-1. [Het thema implementeren in een lokale testomgeving](#deploy-the-theme-on-a-local-testing-environment)
-1. [Het thema testen met een lokaal adaptief formulier](#test-the-theme-with-a-local-adaptive-form)
-1. Het thema inzetten in de productieomgeving
+1. [Het thema implementeren in een lokale omgeving](#deploy-the-theme-on-a-local-environment)
+1. [Het thema inzetten in de productieomgeving](#5-deploy-a-theme-on-your-production-environment)
 
-![Workflow voor aanpassen van thema&#39;s](/help/forms/using/assets/custom-theme-steps.png)
+<!--
+ ![Theme Customization workflow](/help/forms/using/assets/custom-theme-steps.png)
+-->
 
-De voorbeelden in het document zijn gebaseerd op de **Canvas** thema, maar u kunt elk verwijzingsthema klonen en dit aanpassen aan de hand van dezelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
+De voorbeelden in het document zijn gebaseerd op de **Canvas** , maar u kunt elk standaardthema klonen en dit aanpassen aan de hand van dezelfde instructies. Deze instructies zijn van toepassing op elk thema, zodat u thema&#39;s kunt aanpassen aan uw specifieke behoeften.
 
 #### 1. De Git-opslagplaats van thema klonen {#clone-git-repo-of-theme}
 
-Kies een van de volgende referentiethema&#39;s om een referentiethema voor op Core Components gebaseerde Adaptieve Forms te klonen:
+Kies een van de volgende standaardthema&#39;s als u een standaardthema wilt klonen voor Core Components based Adaptive Forms:
 
 * [Canvasthema](https://github.com/adobe/aem-forms-theme-canvas)
 * [WKND-thema](https://github.com/adobe/aem-forms-theme-wknd)
 * [EASEL-thema](https://github.com/adobe/aem-forms-theme-easel)
 
-Voer de volgende instructies uit om een verwijzingsthema te klonen:
+Voer de volgende instructies uit om een standaardthema te klonen:
 
 1. Open de opdrachtprompt of het terminalvenster in uw lokale ontwikkelomgeving.
 
@@ -206,7 +211,7 @@ Om een thema in een AEM instantie op te stellen, moet het in een Bibliotheek van
 
    ![Locatie van clientbibliotheek](/help/forms/using/assets/adaptiveform.theme.easel.png)
 
-#### 4. Het thema implementeren in een lokale testomgeving {#deploy-the-theme-on-a-local-testing-environment}
+#### 4. Het thema implementeren in een lokale omgeving {#deploy-the-theme-on-a-local-environment}
 
 Voer de volgende stappen uit om het thema in te zetten in uw lokale ontwikkelings- of testomgeving:
 
@@ -222,38 +227,40 @@ Voer de volgende stappen uit om het thema in te zetten in uw lokale ontwikkeling
 
    ![Client Library Build](/help/forms/using/assets/mvndeploy.png)
 
-#### 5. Het thema testen met een lokaal adaptief formulier {#test-the-theme-with-a-local-adaptive-form}
+<!--
 
-Het aangepaste thema toepassen en testen met een adaptief formulier:
+#### 5. Test the theme with a local Adaptive Form {#test-the-theme-with-a-local-adaptive-form}
 
-**Thema toepassen tijdens het maken van een adaptief formulier**
+To apply and test the customized theme with an Adaptive Form:
 
-1. Meld u aan bij de AEM Forms-auteur.
+**Apply theme while creating an Adaptive Form**
 
-1. Tikken **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+1. Log in to your AEM Forms author instance. 
 
-1. Klikken **Maken** > **Adaptieve Forms**. De wizard voor het maken van adaptief formulier wordt geopend.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Selecteer de sjabloon voor de kerncomponent in het dialoogvenster **Bron** tab.
-1. Selecteer het thema in het dialoogvenster **Stijl** tab.
-1. Klikken **Maken**.
+1. Click **Create** > **Adaptive Forms**. The wizard for creating Adaptive Form opens.
 
-Er wordt een adaptief formulier met het geselecteerde thema gemaakt.
+1. Select the core component template in the **Source** tab.
+1. Select the theme in the **Style** tab.
+1. Click **Create**.
 
-**Thema toepassen op een bestaand adaptief formulier**
+An Adaptive Form with the selected theme is created. 
 
-1. Meld u aan bij de AEM Forms-auteur.
+**Apply theme to an existing Adaptive Form**
 
-1. Tikken **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+1. Log in to your AEM Forms author instance. 
 
-1. Selecteer een adaptief formulier en klik op Eigenschappen.
+1. Tap **Adobe Experience Manager** > **Forms** > **Forms & Documents**.
 
-1. Voor de **Thema-clientbibliotheek** selecteert u het thema.
+1. Select an Adaptive Form and click Properties. 
 
-1. Klikken **Opslaan en sluiten**.
+1. For the **Theme Client Library** option, select the theme. 
 
-Het geselecteerde thema wordt toegepast op het adaptieve formulier.
+1. Click **Save & Close**.
 
+The selected theme is applied to the Adaptive Form. 
+-->
 
 #### 5. Een thema implementeren in uw productieomgeving {#deploy-theme}
 
@@ -278,14 +285,17 @@ Nadat het pakket is geïnstalleerd, is het thema beschikbaar voor selectie.
 
 De stappen voor het toepassen van een thema op een adaptief formulier zijn:
 
-1. Meld u aan bij de AEM Forms-auteur.
+1. Meld u aan bij de lokale AEM auteur.
+1. Ga uw geloofsbrieven op de Experience Manager login pagina in. Tikken **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+1. Klikken **Maken** > **Adaptieve Forms**.
+1. Selecteer een adaptieve Forms Core Components-sjabloon en klik op **Volgende**. De **Eigenschappen toevoegen** lijkt
+1. Geef de **Naam** voor uw adaptieve formulier.
 
-1. Tikken **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
+   >[!NOTE]
+   >
+   > * Standaard worden de `adaptiveform.theme.canvas3` thema is geselecteerd.
+   > * U kunt een ander thema kiezen in het menu **Thema-clientbibliotheek** vervolgkeuzemenu.
 
-1. Klikken **Maken** > **Adaptieve Forms**. De wizard voor het maken van adaptief formulier wordt geopend.
-
-1. Selecteer de sjabloon voor de kerncomponent in het dialoogvenster **Bron** tab.
-1. Selecteer het thema in het dialoogvenster **Stijl** tab.
 1. Klikken **Maken**.
 
 De thema&#39;s Adaptief formulier worden gebruikt als onderdeel van een adaptieve formuliersjabloon om opmaak te definiëren terwijl u een adaptief formulier maakt.

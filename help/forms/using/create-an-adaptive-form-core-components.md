@@ -9,9 +9,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
 workflow-type: tm+mt
-source-wordcount: '1799'
+source-wordcount: '1660'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,16 @@ ht-degree: 0%
 
 # Op Adaptieve Forms gebaseerde Core Components maken {#creating-an-adaptive-form-core-components}
 
+
+<span class="preview"> Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
+
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
 | AEM 6,5 | Dit artikel |
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/creating-adaptive-form-core-components.html) |
+
+**Van toepassing op:** ✅ Adaptieve vorm Core-componenten ❎ [Aangepaste componenten van de Stichting van de Vorm](/help/forms/using/create-adaptive-form.md).
+
 
 Met Adaptieve Forms kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een gebruiksvriendelijke gebruikersvriendelijke gebruikersinterface om snel een Adaptive Forms te maken. De gebruikersinterface biedt snelle tabnavigatie waarmee u eenvoudig vooraf geconfigureerde sjablonen, stijlen, velden en verzendopties kunt selecteren om een adaptief formulier te maken.
 
@@ -38,17 +44,13 @@ U hebt het volgende nodig om een adaptief formulier te maken:
 
 * **Adaptieve Forms Core-componenten inschakelen voor uw omgeving**: AEM Archetype-project versie 41 of hoger is vereist voor [Core Components voor uw omgeving inschakelen](/help/forms/using/enable-adaptive-forms-core-components.md). Als u de Core Components voor uw omgeving inschakelt, **Adaptieve Forms (Core Component)** sjabloon en Canvasthema worden toegevoegd aan uw omgeving.
 
-* **Een adaptieve formuliersjabloon**: Een sjabloon biedt een basisstructuur en definieert de vormgeving (lay-outs en stijlen) van een adaptief formulier. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier. Bijvoorbeeld, verzendend de verzamelde gegevens naar een gegevensbron. De benoemde sjabloon `blank` wordt ondersteund voor OOTB:
-
-   * De `blank` Deze sjabloon wordt meegeleverd bij elke nieuwe AEM Forms on-premise- en AMS-omgeving.
-   * U kunt het referentiepakket installeren via Package Manager om het `blank` sjabloon naar uw AEM Forms on-premise en AMS-omgeving.
-   * U kunt ook [een nieuwe adaptieve Forms-sjabloon maken (Core Components)](template-editor.md) helemaal niet.
+* **Een adaptieve formuliersjabloon**: Een sjabloon biedt een basisstructuur en definieert de vormgeving (lay-outs en stijlen) van een adaptief formulier. Het heeft vooraf opgemaakte componenten die bepaalde eigenschappen en inhoudsstructuur bevatten. Het biedt ook de opties om een thema en een verzendactie te definiëren. In het thema wordt de actie look and feel and submit gedefinieerd voor de actie die moet worden ondernomen bij het verzenden van een adaptief formulier.
 
   >[!NOTE]
   >
   > Als u dat niet doet, **Adaptieve Forms (Core Component)** sjabloon op uw omgeving, [Adaptieve Forms Core-componenten inschakelen voor uw omgeving](/help/forms/using/enable-adaptive-forms-core-components.md). Als u de Core Components voor uw omgeving inschakelt, **Adaptieve Forms (Core Component)** sjabloon wordt toegevoegd aan uw omgeving.
 
-* **Een adaptief formulierthema**: Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten.  De `Canvas` thema wordt standaard toegevoegd wanneer u kerncomponenten voor uw omgeving inschakelt. U kunt ook [de referentiethema&#39;s downloaden en aanpassen](create-or-customize-themes-for-adaptive-forms-core-components.md).
+* **Een adaptief formulierthema**: Een thema bevat opmaakgegevens voor de componenten en deelvensters. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u een thema toepast, weerspiegelt de opgegeven stijl de corresponderende componenten.  De `Canvas` thema wordt standaard toegevoegd wanneer u kerncomponenten voor uw omgeving inschakelt. U kunt ook [de standaardthema&#39;s downloaden en aanpassen](create-or-customize-themes-for-adaptive-forms-core-components.md).
 
 * **Machtigingen**: Gebruikers toevoegen aan [!DNL forms-users] groep. De leden van de [!DNL forms-users] groep heeft machtigingen om een adaptief formulier te maken. Voor een gedetailleerde lijst met formulierspecifieke gebruikersgroepen gaat u naar [Groepen en machtigingen](forms-groups-privileges-tasks.md).
 
@@ -137,6 +139,10 @@ Een JSON-schema of formuliergegevensmodel configureren voor uw formulier:
 
 1. Klik op **[!UICONTROL Done]**.
 
+>[!NOTE]
+>
+> U kunt het JSON-schema of het formuliergegevensmodel voor een adaptief formulier bewerken met de eigenschappen van de Guide Container.
+
 ## Een prefill-service configureren  {#configure-prefill-service-for-form}
 
 U kunt de Prefill-service gebruiken om automatisch velden van een adaptief formulier in te vullen met bestaande gegevens. Wanneer een gebruiker een formulier opent, worden de waarden voor die velden vooraf ingevuld. U kunt:
@@ -155,13 +161,15 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 1. Selecteer een formuliergegevensmodel. Open de **[!UICONTROL Basic]** tab. Selecteer in de service Prefill de optie **[!UICONTROL Form Data Model Prefill Service]**.
 1. Klik op **[!UICONTROL Done]**. Uw adaptieve formulier is nu geconfigureerd voor het vooraf invullen van het formuliergegevensmodel. U kunt nu de [regeleditor](rule-editor.md) om regels te maken voor het vooraf invullen van velden van het formulier.
 
-## Eigenschappen van een formuliermodel bewerken in een adaptief formulier {#edit-form-model}
+<!--
+## Edit Form Model properties of an Adaptive Form {#edit-form-model}
 
-1. Selecteer het adaptieve formulier en tik op ![Pagina-informatie](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. De pagina Formuliereigenschappen wordt geopend.
+1. Select the Adaptive Form and tap ![Page information](/help/forms/using/assets/configure-icon.svg) > **[!UICONTROL Open Properties]**. The Form Properties page opens. 
 
-1. Ga naar de **[!UICONTROL Form Model]** en kiest u een formuliermodel. Als het adaptieve formulier geen formuliermodel heeft, hebt u de vrijheid om een JSON-schema of een formuliergegevensmodel te kiezen. Als het adaptieve formulier echter al is gebaseerd op een formuliermodel, kunt u overschakelen op een ander formuliermodel van hetzelfde type. Als het formulier bijvoorbeeld een JSON-schema gebruikt, kunt u eenvoudig overschakelen naar een ander JSON-schema. Op dezelfde manier kunt u overschakelen naar een ander formuliergegevensmodel als het formulier een formuliergegevensmodel gebruikt.
+1. Go to the **[!UICONTROL Form Model]** tab and choose a form model. If the Adaptive Form is without a form model, you have the freedom to choose either a JSON schema or a form data model. On the other hand, if the Adaptive Form is already based on a form model, you have the option to switch to another form model of the same type. For instance, if the form is using a JSON schema, you can easily switch to another JSON schema, and similarly if the form is using a Form Data Model, you can switch to another Form Data Model. 
 
-1. Tikken **[!UICONTROL Save]** om de eigenschappen op te slaan.
+1. Tap **[!UICONTROL Save]** to save the properties.
+-->
 
 ## Volgende functies
 

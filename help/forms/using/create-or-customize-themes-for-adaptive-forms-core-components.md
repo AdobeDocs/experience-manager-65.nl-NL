@@ -8,7 +8,7 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 90731516671ee0681ff91f2ac47888b1febee199
 workflow-type: tm+mt
 source-wordcount: '1962'
 ht-degree: 0%
@@ -179,10 +179,9 @@ U kunt ook het lettertype, de kleur, de grootte en andere CSS-eigenschappen aanp
 
 -->
 
->
+>[!NOTE]
 >
 > Wanneer een stijl zowel op thema als componentenniveau wordt bepaald, krijgt de stijl die op het componentenniveau wordt bepaald prioriteit.
-
 
 #### 3. Maak het thema klaar voor implementatie {#generate-the-clientlib}
 
@@ -275,9 +274,10 @@ Nadat het pakket is geïnstalleerd, is het thema beschikbaar voor selectie.
 
 ![Thema-clientbibliotheek](/help/forms/using/assets/themeclientlibrary.png)
 
+>[!NOTE]
 >
 >
->Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar om het pakket te installeren via Package Manager, kunt u zich aanmelden via de volgende URL: `http://[Publish Server URL]:[PORT]/system/console`. Dit verleent toegang tot login aan Publish instantie, toestaand u om met het installatieproces te werk te gaan.
+> Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar om het pakket te installeren via Package Manager, kunt u zich aanmelden via de volgende URL: `http://[Publish Server URL]:[PORT]/system/console`. Dit verleent toegang tot login aan Publish instantie, toestaand u om met het installatieproces te werk te gaan.
 
 ## Een thema toepassen op een adaptief formulier {#using-theme-in-adaptive-form}
 

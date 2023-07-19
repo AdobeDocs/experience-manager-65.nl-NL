@@ -8,17 +8,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
 workflow-type: tm+mt
-source-wordcount: '1982'
+source-wordcount: '1962'
 ht-degree: 0%
 
 ---
 
 
 # Een adaptief formulierthema maken of aanpassen {#introduction-to-theme}
-
-<span class="preview"> Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -290,6 +288,7 @@ De stappen voor het toepassen van een thema op een adaptief formulier zijn:
 1. Klikken **Maken** > **Adaptieve Forms**.
 1. Selecteer een adaptieve Forms Core Components-sjabloon en klik op **Volgende**. De **Eigenschappen toevoegen** lijkt
 1. Geef de **Naam** voor uw adaptieve formulier.
+
 
    >[!NOTE]
    >

@@ -8,17 +8,15 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 1b97dc536550da8904bc7da09e983e0722c42a3d
+source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
 workflow-type: tm+mt
-source-wordcount: '911'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
 
 
 # Adaptieve Forms Core-componenten inschakelen op AEM 6.5 Forms {#enable-adaptive-forms-core-components}
-
-<span class="preview"> Adobe raadt u aan Core Components te gebruiken voor [Adaptieve Forms toevoegen aan een AEM Sites-pagina](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md) of aan [standalone adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md). </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |

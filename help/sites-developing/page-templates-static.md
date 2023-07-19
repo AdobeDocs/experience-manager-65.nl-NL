@@ -1,19 +1,15 @@
 ---
 title: Paginasjablonen - statisch
-seo-title: Page Templates - Static
 description: Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welke componenten binnen het geselecteerde werkingsgebied kunnen worden gebruikt
-seo-description: A Template is used to create a Page and defines which components can be used within the selected scope
-uuid: 7a473c19-9565-476e-9e54-ab179da04d71
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
-discoiquuid: cfd90e8f-9b9b-4d0b-be31-828469b961de
 docset: aem65
 exl-id: b934ac41-78b9-497f-ba95-b05ef1e5660e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '1626'
+source-wordcount: '1602'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welke componenten binnen het geselecteerde werkingsgebied kunnen worden gebruikt. Een sjabloon is een hiërarchie van knooppunten die dezelfde structuur heeft als de pagina die moet worden gemaakt, maar zonder daadwerkelijke inhoud.
 
-Elke sjabloon bevat een selectie van componenten die beschikbaar zijn voor gebruik.
+Elke Malplaatje stelt u met een selectie van componenten beschikbaar voor gebruik voor.
 
 * Sjablonen zijn samengesteld uit [Componenten](/help/sites-developing/components.md);
 * Componenten gebruiken widgets en staan toegang tot deze widgets toe. Deze worden gebruikt om de inhoud te renderen.
@@ -124,7 +120,7 @@ Er kunnen verschillende eigenschappen worden ingesteld, met name:
 * **jcr:titel** - titel van de template; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
 * **jcr:beschrijving** - beschrijving van het model; wordt weergegeven in het dialoogvenster wanneer u een pagina maakt.
 
-Dit knooppunt bevat een knooppunt jcr:content (cq:PageContent) dat wordt gebruikt als basis voor het inhoudsknooppunt van de resulterende pagina&#39;s; deze verwijzingen, gebruikend sling:resourceType, de component die voor het teruggeven van de daadwerkelijke inhoud van een nieuwe pagina moet worden gebruikt.
+Dit knooppunt bevat een knooppunt jcr:content (cq:PageContent) dat wordt gebruikt als basis voor het inhoudsknooppunt van de resulterende pagina&#39;s. deze verwijzingen, gebruikend sling:resourceType, de component die voor het teruggeven van de daadwerkelijke inhoud van een nieuwe pagina moet worden gebruikt.
 
 ![screen_shot_2012-02-13at64010pm](assets/screen_shot_2012-02-13at64010pm.png)
 
@@ -142,7 +138,7 @@ Sjablonen worden gebruikt om pagina&#39;s van het type te maken `cq:Page` (zoals
 
 ### Standaardsjablonen {#default-templates}
 
-AEM wordt geleverd met een aantal standaardsjablonen die in het vak beschikbaar zijn. In sommige gevallen wilt u de sjablonen wellicht ongewijzigd gebruiken. In dat geval moet u ervoor zorgen dat de sjabloon beschikbaar is voor uw website.
+AEM wordt geleverd met verschillende standaardsjablonen die beschikbaar zijn in het vak. Soms wilt u de sjablonen ongewijzigd gebruiken. In dat geval moet u ervoor zorgen dat de sjabloon beschikbaar is voor uw website.
 
 AEM wordt bijvoorbeeld geleverd met verschillende sjablonen, waaronder een inhoudspagina en een homepage.
 
@@ -164,7 +160,7 @@ Ga als volgt te werk om een lijst met alle sjablonen in de repository weer te ge
 
 1. Klikken **Uitvoeren**. De lijst wordt weergegeven in het vak Resultaat.
 
-In de meeste gevallen neemt u een bestaande sjabloon en ontwikkelt u een nieuwe sjabloon voor eigen gebruik. Zie [Paginasjablonen ontwikkelen](#developing-page-templates) voor meer informatie .
+Gewoonlijk gebruikt u een bestaande sjabloon en ontwikkelt u een nieuwe sjabloon voor eigen gebruik. Zie [Paginasjablonen ontwikkelen](#developing-page-templates) voor meer informatie .
 
 Als u een bestaande sjabloon wilt inschakelen voor uw website, moet deze worden weergegeven in het dialoogvenster **Pagina maken** een pagina maken onder **Websites** van de **Websites** console, plaats het allowedPaths bezit van de malplaatjeknoop aan: **/content(/.&#42;)?**
 
@@ -176,13 +172,13 @@ Wanneer stijlen in de gebruikersinterface worden gedefinieerd met [Ontwerpmodus]
 >
 >Adobe raadt u alleen aan ontwerpen toe te passen via [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md).
 >
->Het aanpassen van ontwerpen in bijvoorbeeld CRX DE is geen goede praktijk en de toepassing van dergelijke ontwerpen kan van verwacht gedrag variëren.
+>Het wijzigen van ontwerpen in CRXDE Lite is bijvoorbeeld geen goede praktijk en de toepassing van dergelijke ontwerpen kan afwijken van het verwachte gedrag.
 
 Als ontwerpen alleen worden toegepast in de ontwerpmodus, gelden de volgende secties: [Resolutie ontwerppad](/help/sites-developing/page-templates-static.md#design-path-resolution), [Beslissingsboom](/help/sites-developing/page-templates-static.md#decision-tree)en de [Voorbeeld](/help/sites-developing/page-templates-static.md#example) niet van toepassing zijn.
 
 ### Resolutie ontwerppad {#design-path-resolution}
 
-Wanneer het teruggeven van inhoud die op een statisch malplaatje wordt gebaseerd, AEM zal proberen om het meest relevante ontwerp en de stijlen op de inhoud toe te passen die op een traversal van de inhoudshiërarchie wordt gebaseerd.
+Wanneer het teruggeven van inhoud die op een statisch malplaatje wordt gebaseerd, AEM probeert om het meest relevante ontwerp en de stijlen op de inhoud toe te passen die op een traversal van de inhoudshiërarchie wordt gebaseerd.
 
 AEM bepaalt de meest relevante stijl voor een inhoudsknoop in de volgende orde:
 
@@ -265,17 +261,17 @@ In de volgende tabel wordt beschreven hoe AEM een ontwerp kiest.
 
 ## Paginasjablonen ontwikkelen {#developing-page-templates}
 
-AEM paginasjablonen zijn gewoon modellen waarmee nieuwe pagina&#39;s worden gemaakt. Zij kunnen zo weinig, of zo veel, aanvankelijke inhoud bevatten zoals nodig, hun rol om de correcte aanvankelijke knoopstructuren tot stand te brengen, met de vereiste eigenschappen (hoofdzakelijk sling:resourceType) die worden geplaatst om het uitgeven en het teruggeven toe te staan.
+AEM paginasjablonen zijn gewoon modellen die worden gebruikt om pagina&#39;s te maken. Zij kunnen zo weinig, of zo veel, aanvankelijke inhoud bevatten zoals nodig, hun rol om de correcte aanvankelijke knoopstructuren tot stand te brengen, met de vereiste eigenschappen (hoofdzakelijk sling:resourceType) die worden geplaatst om het uitgeven en het teruggeven toe te staan.
 
-### Een nieuwe sjabloon maken (op basis van een bestaande sjabloon) {#creating-a-new-template-based-on-an-existing-template}
+### Een sjabloon maken (op basis van een bestaande sjabloon) {#creating-a-new-template-based-on-an-existing-template}
 
-Een nieuwe sjabloon kan natuurlijk helemaal vanaf het begin worden gemaakt, maar vaak wordt een bestaande sjabloon gekopieerd en bijgewerkt om tijd en moeite te besparen. U kunt bijvoorbeeld de sjablonen in Geometrixx gebruiken om aan de slag te gaan.
+Een nieuwe sjabloon kan volledig vanaf het begin worden gemaakt, maar vaak wordt een bestaande sjabloon gekopieerd en bijgewerkt om tijd en moeite te besparen. U kunt bijvoorbeeld de sjablonen in Geometrixx gebruiken om aan de slag te gaan.
 
-Een nieuwe sjabloon maken op basis van een bestaande sjabloon:
+Een sjabloon maken op basis van een bestaande sjabloon:
 
 1. Kopieer een bestaande sjabloon (bij voorkeur met een definitie die zo dicht mogelijk bij wat u wilt bereiken) naar een nieuw knooppunt.
 
-   Sjablonen worden meestal opgeslagen in **/apps/&lt;website-name>/templates/&lt;template-name>**.
+   Sjablonen worden opgeslagen in **/apps/&lt;website-name>/templates/&lt;template-name>**.
 
    >[!NOTE]
    >
@@ -289,32 +285,37 @@ Een nieuwe sjabloon maken op basis van een bestaande sjabloon:
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Kopieer de component waarop de sjabloon is gebaseerd (dit wordt aangegeven door de **sling:resourceType** eigendom van de **jcr:inhoud** in de sjabloon) om een nieuwe instantie te maken.
+1. Kopieer de component waarop de sjabloon is gebaseerd (dit wordt aangegeven door de **sling:resourceType** eigendom van de **jcr:inhoud** -knooppunt in de sjabloon) om een instantie te maken.
 
-   Componenten worden meestal opgeslagen in **/apps/&lt;website-name>/components/&lt;component-name>**.
+   Componenten worden opgeslagen in **/apps/&lt;website-name>/components/&lt;component-name>**.
 
 1. Werk de **jcr:titel** en **jcr:beschrijving** van de nieuwe component.
 1. Vervang de miniatuur.png als u een nieuwe miniatuurafbeelding wilt weergeven in de lijst met sjabloonselecties (grootte 128 x 98 px).
 1. Werk de **sling:resourceType** van de template **jcr:inhoud** knooppunt om naar de nieuwe component te verwijzen.
-1. Breng verdere wijzigingen aan in de functionaliteit of het ontwerp van de sjabloon en/of de onderliggende component.
+1. Breng aanvullende wijzigingen aan in de functionaliteit of het ontwerp van de sjabloon of de onderliggende component ervan, of in beide.
 
    >[!NOTE]
    >
-   >Wijzigingen aangebracht in de **/apps/&lt;website>/templates/&lt;template-name>** knoop zal het malplaatjegeval beïnvloeden (zoals in de selectielijst).
-   Wijzigingen aangebracht in de **/apps/&lt;website>/components/&lt;component-name>** de knoop zal de inhoudspagina beïnvloeden die wordt gecreeerd wanneer het malplaatje wordt gebruikt.
+   >Wijzigingen aangebracht in de **/apps/&lt;website>/templates/&lt;template-name>** knoop beïnvloedt de malplaatjeinstantie (zoals in de selectielijst).
+   >
+   >
+   Wijzigingen aangebracht in de **/apps/&lt;website>/components/&lt;component-name>** het knooppunt heeft invloed op de inhoudspagina die wordt gemaakt wanneer de sjabloon wordt gebruikt.
 
    U kunt nu een pagina binnen uw website maken met de nieuwe sjabloon.
 
 >[!NOTE]
-In de clientbibliotheek van de editor wordt ervan uitgegaan dat de editor `cq.shared` naamruimte in inhoudspagina&#39;s en als deze ontbreekt, de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined` resulteert.
+>
+In de clientbibliotheek van de editor wordt ervan uitgegaan dat de editor `cq.shared` naamruimte in inhoudspagina&#39;s, en als deze ontbreekt, de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined` resultaten.
+>
 Alle pagina&#39;s met voorbeeldinhoud bevatten `cq.shared`, dus alle inhoud die erop is gebaseerd, omvat automatisch `cq.shared`. Als u echter besluit zelf inhoudspagina&#39;s te maken zonder deze op voorbeeldinhoud te baseren, moet u ervoor zorgen dat u de `cq.shared` naamruimte.
+>
 Zie [Client-Side bibliotheken gebruiken](/help/sites-developing/clientlibs.md) voor nadere informatie.
 
 ## Een bestaande sjabloon beschikbaar maken {#making-an-existing-template-available}
 
-In dit voorbeeld wordt getoond hoe u een sjabloon kunt gebruiken voor bepaalde inhoudspaden. De sjablonen die beschikbaar zijn voor de auteur van de pagina wanneer u nieuwe pagina&#39;s maakt, worden bepaald door de logica die is gedefinieerd in [Beschikbaarheid sjabloon](/help/sites-developing/templates.md#template-availability).
+In dit voorbeeld wordt getoond hoe u een sjabloon kunt gebruiken voor bepaalde inhoudspaden. De sjablonen die beschikbaar zijn voor de auteur van de pagina wanneer u pagina&#39;s maakt, worden bepaald door de logica die is gedefinieerd in [Beschikbaarheid sjabloon](/help/sites-developing/templates.md#template-availability).
 
 1. Navigeer in CRXDE Lite naar de sjabloon die u voor de pagina wilt gebruiken, bijvoorbeeld de sjabloon Nieuwsbrief.
-1. Wijzig de `allowedPaths` eigenschap en andere eigenschappen gebruikt voor [beschikbaarheid van sjabloon](/help/sites-developing/templates.md#template-availability). Bijvoorbeeld: `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` betekent dat deze sjabloon is toegestaan in een pad onder `/content/geometrixx-outdoors`.
+1. Wijzig de `allowedPaths` eigenschap en andere eigenschappen gebruikt voor [sjabloonbeschikbaarheid](/help/sites-developing/templates.md#template-availability). Bijvoorbeeld: `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` betekent dat deze sjabloon is toegestaan in een pad onder `/content/geometrixx-outdoors`.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)

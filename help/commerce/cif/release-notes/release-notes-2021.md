@@ -1,10 +1,10 @@
 ---
-title: Opmerkingen bij de release AEM2021
-description: Opmerkingen bij de release AEM2021
+title: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2021
+description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2021
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '1314'
+source-wordcount: '1318'
 ht-degree: 6%
 
 ---
@@ -17,7 +17,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Systeemvereisten |
 |:-------|:-----:|
-| CIF-invoegtoepassing | Minimaal: AEM 6.5.7, Adobe Commerce 2.3.5 GraphQL-schema&#39;s |
+| CIF-invoegtoepassing | Minimaal: Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL-schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -39,7 +39,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Ondersteuning voor cadeaukaarten in AEM Storefront
 
-## Releasedatum: oktober 2021
+## Releasedatum: Oktober 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
@@ -71,11 +71,11 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Het nieuwe lusje &quot;bijbehorende commerciële inhoud&quot;in de redacteur van Plaatsen verhoogt auteur efficiency door snel toegang tot relevante AEM productinhoud voor de huidige context te krijgen
 
-   ![Gekoppelde commerciële inhoud](/help/assets/CIF/associated-commerce-content.png)
+  ![Gekoppelde commerciële inhoud](/help/assets/CIF/associated-commerce-content.png)
 
-* Verbeterde gebruikersinterface van productkiezer voor een betere gebruikerservaring, verbeterde efficiëntie en ondersteuning voor complexe productcatalogus
+* Verbeterde gebruikersinterface van de productkiezer voor een betere gebruikerservaring, verbeterde efficiëntie en ondersteuning voor complexe productcatalogus
 
-   ![Nieuwe productkiezer](/help/assets/CIF/product-picker.png)
+  ![Nieuwe productkiezer](/help/assets/CIF/product-picker.png)
 
 * Eigenschap &quot;include_in_menu&quot; in navigatiecomponent respecteren
 
@@ -83,7 +83,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Het leegmaken van de menucache werkt niet zoals verwacht
 
-* JS-fouten tijdens AEM CS-implementatiestap en wanneer geen clientside-componenten worden gebruikt
+* JS-fouten tijdens AEM CS-implementatiestap en wanneer geen clientcomponenten worden gebruikt
 
 * Kan CIF-wolkenconfiguratie niet maken in mappen met een sling:confignode
 
@@ -97,9 +97,9 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 ### Wat is er nieuw? {#what-is-new-august}
 
-* De nieuwe interface van de Categoriekiezer voor betere gebruikerservaring, verhoogde efficiency en betere steun voor complexe productcatalogus
+* De nieuwe interface van de Plukker van de Categorie voor betere gebruikerservaring, verhoogde efficiency en betere steun voor complexe productcatalogus
 
-   ![Nieuwe rubriekkiezer](/help/assets/CIF/category-picker.png)
+  ![Nieuwe rubriekkiezer](/help/assets/CIF/category-picker.png)
 
 * Betere A11Y-ondersteuning voor CIF Core-componenten
 
@@ -130,7 +130,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Ondersteuning voor [Adobe Commerce Sensei Product Recommendation, aangedreven door Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront met behulp van vooraf gedefinieerde of tijdens de vlucht gemaakte aanbevelingen
 
-## Releasedatum: juni 2021
+## Releasedatum: Juni 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
@@ -147,7 +147,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 * Verbeterde SEO-vriendelijke URL&#39;s voor categoriepagina&#39;s
 * Ondersteuning voor aangepaste HTTP-headers per site/config
 
-## Releasedatum: Mei 2021
+## Releasedatum: mei 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
@@ -165,7 +165,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Breadcrumb herstelt voorvertoningsgegevens in productconsole
 
-## Releasedatum: april 2021
+## Releasedatum: April 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
@@ -225,7 +225,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Meerdere opgeloste problemen.
 
-## Releasedatum: januari 2021
+## Releasedatum: Januari 2021
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|

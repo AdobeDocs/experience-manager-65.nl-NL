@@ -1,23 +1,23 @@
 ---
 title: Inhoudsfragmenten - Configuratiebrowser
-description: Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten om AEM krachtige koploze leveringseigenschappen te gebruiken.
+description: Leer hoe u bepaalde functionaliteit voor inhoudsfragmenten in de configuratiegrowser kunt inschakelen voor het gebruik van Adobe Experience Manager-functies voor krachtige koploze levering.
 feature: Content Fragments
 role: User
 exl-id: a9990b0c-56c7-4e61-bae9-98e19a7f364e
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
 workflow-type: tm+mt
-source-wordcount: '271'
-ht-degree: 19%
+source-wordcount: '272'
+ht-degree: 12%
 
 ---
 
 # Inhoudsfragmenten - Configuratiebrowser{#content-fragments-configuration-browser}
 
-Leer hoe te om bepaalde functionaliteit van het Fragment van de Inhoud in Browser van de Configuratie toe te laten om AEM krachtige koploze leveringseigenschappen te gebruiken.
+Leer hoe u bepaalde functionaliteit voor inhoudsfragmenten in de configuratiegrowser kunt inschakelen voor het gebruik van de krachtige functies voor koploze weergave van Adobe Experience Manager (AEM).
 
 ## Functionaliteit van inhoudsfragment inschakelen voor uw instantie {#enable-content-fragment-functionality-instance}
 
-Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebrowser** inschakelen:
+Gebruik voordat u Inhoudsfragmenten gebruikt de opdracht **Configuratiebrowser** om het volgende in te schakelen:
 
 * **Modellen van inhoudsfragmenten** - verplicht
 * **Blijvende GraphQL-query&#39;s** - facultatief
@@ -26,22 +26,21 @@ Voordat u Inhoudsfragmenten kunt gebruiken, moet u de opdracht **Configuratiebro
 >
 >Als u deze optie niet inschakelt **Modellen van inhoudsfragmenten**:
 >
->* de **Maken** Deze optie is niet beschikbaar voor het maken van nieuwe modellen.
->* u kunt niet [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
+>* de **Maken** Deze optie is niet beschikbaar voor het maken van modellen.
+>* u kunt [Selecteer de configuratie van Plaatsen om het verwante eindpunt tot stand te brengen](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint).
 
+U moet het volgende doen om de functionaliteit van inhoudsfragmenten in te schakelen:
 
-Voor het inschakelen van de functionaliteit voor inhoudsfragmenten moet u:
-
-* Het gebruik van de functionaliteit voor inhoudsfragmenten inschakelen via de configuratiesbrowser
+* Het gebruik van de functionaliteit voor inhoudsfragmenten inschakelen via de configuratiebrowser
 * De configuratie toepassen op de map Middelen
 
 ### Functionaliteit van inhoudsfragment inschakelen in configuratievenster {#enable-content-fragment-functionality-in-configuration-browser}
 
-Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-content-fragment-model) u **moet** ze eerst via de **Configuratiebrowser**:
+Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-content-fragment-model), u **moet** eerst de **Configuratiebrowser**:
 
 >[!NOTE]
 >
->Zie ook voor meer informatie [Configuratiebrowser:](/help/sites-administering/configurations.md#using-configuration-browser).
+>Zie voor meer informatie [Configuratiebrowser:](/help/sites-administering/configurations.md#using-configuration-browser).
 
 1. Ga naar **Tools**, **Algemeen** en open vervolgens de **Browserconfiguratie**.
 
@@ -54,7 +53,6 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 
       ![Configuratie definiëren](assets/cfm-conf-01.png)
 
-
 1. Selecteren **Maken** om de definitie op te slaan.
 
 <!-- 1. Select the location appropriate to your website. -->
@@ -63,6 +61,6 @@ Naar [bepaalde functionaliteit van inhoudsfragmenten gebruiken](#creating-a-cont
 
 Wanneer de configuratie **globaal** is ingeschakeld voor de functionaliteit van inhoudsfragmenten en wordt vervolgens toegepast op elke map Middelen.
 
-Als u andere configuraties (dat wil zeggen exclusief globaal) wilt gebruiken met een vergelijkbare map met assets, moet u de verbinding definiëren. U doet dit door de juiste **Configuratie** te selecteren op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
+Als u andere configuraties (dus niet globaal) wilt gebruiken in een vergelijkbare map Elementen, moet u de verbinding definiëren. U doet dit door de juiste **Configuratie** te selecteren op het tabblad **Cloud Services** van de **Mapeigenschappen** van de juiste map.
 
 ![Configuratie toepassen](assets/cfm-conf-02.png)

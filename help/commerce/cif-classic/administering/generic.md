@@ -8,7 +8,7 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 6ebcc7bd5c72c01672244fdfba353a8949f6e331
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '2979'
 ht-degree: 0%
@@ -196,7 +196,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    ![productconsole met open verwijzingen](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Klik/tik op het referentietype (bijvoorbeeld productpagina&#39;s) om de lijst uit te vouwen.
+1. Klik/tik op het referentietype (bijvoorbeeld Productpagina&#39;s) om de lijst uit te vouwen.
 1. Selecteer een specifieke verwijzing om de opties weer te geven:
 
    * Naar productpagina navigeren

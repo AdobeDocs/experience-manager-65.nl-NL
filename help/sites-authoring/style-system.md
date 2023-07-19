@@ -9,7 +9,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1312'
 ht-degree: 1%
@@ -53,7 +53,7 @@ Het gebruik van het Stijlsysteem heeft doorgaans de volgende vorm.
 
 1. De auteur van de AEM pagina kan vervolgens de ontworpen stijlen in de pagina-editor kiezen via het stijlmenu van de werkbalk van de component.
 
-Merk op dat slechts de laatste drie stappen daadwerkelijk in AEM worden uitgevoerd. Dit betekent dat alle ontwikkeling van de vereiste CSS en Javascript zonder AEM kan worden uitgevoerd.
+Merk op dat slechts de laatste drie stappen daadwerkelijk in AEM worden uitgevoerd. Dit betekent dat alle ontwikkeling van de vereiste CSS en JavaScript zonder AEM kan worden uitgevoerd.
 
 Voor een feitelijke implementatie van de stijlen is alleen implementatie op AEM en selectie binnen de componenten van de gewenste sjablonen vereist.
 
@@ -111,7 +111,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 >[!CAUTION]
 >
->De CSS klassen (evenals om het even welk noodzakelijk Javascript) die als stijleigenschappen van het beleid van een component worden gevormd moeten worden opgesteld zoals [Clientbibliotheken](/help/sites-developing/clientlibs.md) om te werken.
+>De CSS-klassen (en eventueel noodzakelijke JavaScript) die zijn geconfigureerd als stijleigenschappen van het beleid van een component, moeten worden geïmplementeerd zoals [Clientbibliotheken](/help/sites-developing/clientlibs.md) om te werken.
 
 ## Instellen {#setup}
 
@@ -156,9 +156,7 @@ Deze eigenschap is ingesteld op het tabblad `cq:Component` knooppunt. Bijvoorbee
 >1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.
 >1. Tot slot de componenten `cq:htmlTag`/ `cq:tagName` wordt beschouwd als een terugvalwaarde.
-
 >
-
 
 Deze mogelijkheid om stijlnamen te definiëren is handig voor zeer algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
 

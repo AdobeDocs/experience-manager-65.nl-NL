@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1743'
+source-wordcount: '1747'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Gebruik de volgende procedure om een framework voor het bijhouden van video&#39;
    * De voorbeelden in de volgende secties gebruiken de naam **my-sc-configuration** voor de configuratie en **video** voor het kader.
 
 1. Voor de kaderpagina, selecteer RSID en plaats het gebruik aan allen. ([https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html](https://localhost:4502/cf#/etc/cloudservices/sitecatalyst/videoconf/videofw.html))
-1. Sleep de component Video van de categorie Algemeen in Sidetrap naar het framework.
+1. Sleep de component Video van de categorie Algemeen in Sidekick naar het framework.
 1. Selecteer een methode voor bijhouden:
 
    * [Mijlpalen](/help/sites-administering/adobeanalytics.md)
@@ -97,7 +97,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
   </tr>
   <tr>
    <td>eventdata.events.a.media.timePlayed</td>
-   <td>Verzonden telkens als een mijlpaal wordt teweeggebracht, wordt het aantal seconden de gebruiker besteedde het letten op het bepaalde segment ook verzonden samen met deze gebeurtenis. Bijvoorbeeld eventX=21<br /> </td>
+   <td>Verzonden telkens als een mijlpaal wordt teweeggebracht, wordt het aantal seconden de gebruiker besteedde het letten op het bepaalde segment ook verzonden samen met deze gebeurtenis. eventX=21<br /> </td>
   </tr>
   <tr>
    <td>eventdata.events.a.media.view </td>
@@ -121,7 +121,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
   </tr>
   <tr>
    <td>eventdata.a.media.segment </td>
-   <td>Bevat informatie over het segment dat is weergegeven, bijvoorbeeld 2:O:4-8 </td>
+   <td>Bevat informatie over het segment dat bijvoorbeeld, 2 is bekeken:O:4-8 </td>
   </tr>
  </tbody>
 </table>
@@ -290,7 +290,7 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, met het verschil dat de 
 
 1. Stel de verschuiving track in.
 
-   * e.g.10,50,75,100
+   * bijvoorbeeld 10,50,75,100
 
    Bovendien is de informatie die naar Adobe Analytics wordt verzonden minder aanpasbaar; er zijn slechts drie variabelen beschikbaar om in kaart te brengen :
 
@@ -343,7 +343,8 @@ Wanneer het gebruiken van de** erfenisseconden** methode, worden de vraag van Ad
 
 1. Stel de verschuiving van track in op een willekeurig aantal seconden,
 
-   * bijv. 6
+   * bijvoorbeeld 6
+
    >[!NOTE]
    >
    >Het veld Tracking-verschuiving accepteert alleen hele getallen die hoger zijn dan 0

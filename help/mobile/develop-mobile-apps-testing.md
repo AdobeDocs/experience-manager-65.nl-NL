@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 5a98e1bd-f5c1-4f2f-ac02-dbd005dc1de7
 exl-id: e10e1904-7016-4eb0-9408-36297285f378
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1024'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Gezien het grote aantal apparaten op de markt en de apparaten die worden vrijgegeven, is het testen van uw Apps uiterst belangrijk geworden. Dit is een gebied waarop functionaliteit en bruikbaarheid lage revisies kunnen opleveren op een App Store, maar één fout kan ertoe leiden dat uw app wordt verwijderd. In uw testplannen en kwaliteitsborging moet zorgvuldig aandacht worden besteed. De volgende koppeling heeft betrekking op veel van de onderwerpen die in het algemeen moeten worden behandeld, zoals het identificeren van uw omgeving, het definiëren van testgevallen, typen tests, veronderstellingen, betrokkenheid van klanten, enz. Ook worden de hulpmiddelen besproken om in de testende inspanning te helpen. Interne gereedschappen, zoals [Hobbes](/help/sites-developing/hobbes.md), kan u helpen bij het testen van de gebruikersinterface op internet. [Dag](/help/sites-developing/tough-day.md) kan uw instanties met een gesimuleerde lading stress geven. Als uw testomgeving al ervaring heeft met hulpmiddelen van derden, zoals Selenium, kunnen deze ook worden gebruikt.
 

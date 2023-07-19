@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -57,19 +57,19 @@ Bepaal welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
    * `From page and child pages`
    * `All tags`
 
-   De standaardwaarde is `From page and child pages`, waarbij &quot;pagina&quot; verwijst naar de **Pagina** hieronder instellen.
+  De standaardwaarde is `From page and child pages`, waarbij &quot;pagina&quot; verwijst naar de **Pagina** hieronder instellen.
 
 * **[!UICONTROL Page]**
 
-   (Vereist indien niet `All tags)` Het pad naar de UGC voor een pagina. Standaard is de huidige pagina als deze leeg blijft.
+  (Vereist indien niet `All tags)` Het pad naar de UGC voor een pagina. Standaard is de huidige pagina als deze leeg blijft.
 
 * **[!UICONTROL No links on tags]**
 
-   Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en vereist de opdracht **[!UICONTROL Search Result Path]** in te stellen.
+  Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en vereist de opdracht **[!UICONTROL Search Result Path]** in te stellen.
 
 * **[!UICONTROL Search Result Path]**
 
-   Het pad naar een pagina waarop een `Search Result` -component is geplaatst, geconfigureerd om te verwijzen naar UGC, dat het UGC-pad bevat dat is opgegeven door het **Pagina** instellen.
+  Het pad naar een pagina waarop een `Search Result` -component is geplaatst, geconfigureerd om te verwijzen naar UGC, dat het UGC-pad bevat dat is opgegeven door het **Pagina** instellen.
 
 ## Weergave van sociale-tagcloud wijzigen {#change-display-of-social-tag-cloud}
 
@@ -81,43 +81,43 @@ Met de **[!UICONTROL Social Tag Cloud (Design)]** , geeft u op hoe tags worden w
 
 * **[!UICONTROL Show full title paths]**
 
-   Als deze optie is ingeschakeld, worden de titels voor de bovenliggende tags en naamruimte voor elke toegepaste tag weergegeven.
+  Als deze optie is ingeschakeld, worden de titels voor de bovenliggende tags en naamruimte voor elke toegepaste tag weergegeven.
 
-   Bijvoorbeeld:
+  Bijvoorbeeld:
 
    * Ingeschakeld: `Geometrixx Media: Gadgets / Cars`
    * Niet ingeschakeld: `Cars`
 
-   Er is geen verschil voor een eenvoudige tag.
+  Er is geen verschil voor een eenvoudige tag.
 
-   De optie Standaard is uitgeschakeld.
+  De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Show only leaf tags]**
 
-   Als deze optie is ingeschakeld, worden alleen toegepaste tags weergegeven die geen andere tags bevatten.
+  Als deze optie is ingeschakeld, worden alleen toegepaste tags weergegeven die geen andere tags bevatten.
 
-   Voorbeeld van de tagID van:
+  Voorbeeld van de tagID van:
 
-   `Geometrixx Media: Gadgets / Cars`
+  `Geometrixx Media: Gadgets / Cars`
 
-   Er zijn drie tags die kunnen worden toegepast:
+  Er zijn drie tags die kunnen worden toegepast:
 
-   `Geometrixx Media (the namespace)`, `Gadgets`, en `Cars`
+  `Geometrixx Media (the namespace)`, `Gadgets`, en `Cars`
 
    * Ingeschakeld: Alleen `Cars` wordt weergegeven, indien toegepast.
    * Niet ingeschakeld: `Geometrixx Media` en `Gadgets`alsmede `Cars` wordt weergegeven, indien toegepast.
 
-   Een eenvoudige tag is een bladtag.
+  Een eenvoudige tag is een bladtag.
 
-   De optie Standaard is uitgeschakeld.
+  De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Link Template]**
 
-   Een andere sjabloon dan een standaard die wordt gebruikt om de koppelingen in een tagcloud weer te geven wanneer koppelingen zijn ingeschakeld via het dialoogvenster voor bewerken van componenten.
+  Een andere sjabloon dan een standaard die wordt gebruikt om de koppelingen in een tagcloud weer te geven wanneer koppelingen zijn ingeschakeld via het dialoogvenster voor bewerken van componenten.
 
 * **[!UICONTROL Same size for all tags]**
 
-   Als deze optie is ingeschakeld, worden alle woorden in de tagcloud dezelfde stijl toegewezen. Als deze optie is uitgeschakeld, worden woorden anders opgemaakt op basis van hun gebruik. De optie Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, worden alle woorden in de tagcloud dezelfde stijl toegewezen. Als deze optie is uitgeschakeld, worden woorden anders opgemaakt op basis van hun gebruik. De optie Standaard is uitgeschakeld.
 
 ## Aanvullende informatie {#additional-information}
 

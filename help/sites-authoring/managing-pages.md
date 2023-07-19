@@ -2,9 +2,9 @@
 title: Pagina's maken en ordenen met AEM
 description: Pagina's maken en beheren met AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2526'
 ht-degree: 3%
 
 ---
@@ -37,10 +37,10 @@ De structuur van een website kan worden beschouwd als een boomstructuur die uw i
 Het volgende toont een voorbeeld van de plaats Web.Retail, waar een het hakken pagina ( `desert-sky-shorts`) is geopend:
 
 * Auteursomgeving
-   `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4502/editor.html/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 * Publicatie-omgeving
-   `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
+  `https://localhost:4503/content/we-retail/us/en/products/equipment/hiking/desert-sky-shorts.html`
 
 Afhankelijk van de configuratie van uw instantie, gebruik van `/content` kan optioneel zijn in de publicatieomgeving.
 
@@ -209,12 +209,14 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * **Titel**:
 
       * Dit wordt aan de gebruiker getoond en is verplicht.
+
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
       * Als u een pagina opgeeft **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
 
       * U **kan geen ongeldige tekens verzenden** in de **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
+
    >[!NOTE]
    >
    >Zie [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions).
@@ -341,6 +343,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
       * Selecteer de bestemming door de duimnagel van de bestemming te klikken.
       * Klikken **Volgende** om door te gaan.
+
    * Gebruiken **Vorige** om terug te keren naar de specificatie van de paginanaam.
 
    >[!NOTE]
@@ -386,7 +389,7 @@ Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een ge
       * **Nu** Hiermee wordt direct begonnen met de uitvoering van de asynchrone taak.
       * **Later** Hiermee kan de gebruiker definiëren wanneer de asynchrone taak wordt gestart.
 
-         ![Asynchrone verplaatsing van pagina](assets/asynchronous-page-move.png)
+        ![Asynchrone verplaatsing van pagina](assets/asynchronous-page-move.png)
 
 De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Taken**
 
@@ -441,7 +444,6 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 >* Met de standaardhandelingen kunt u eigenschappen verplaatsen, kopiëren, plakken, verwijderen, publiceren, verwijderen en weergeven/bewerken uitvoeren op een map.
 >* Mappen zijn niet beschikbaar voor selectie in een live kopie.
 >
-
 
 1. Open de **Sites** en navigeer naar de gewenste locatie.
 1. Selecteer **Maken** van de werkbalk

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 exl-id: 3891150e-9972-4bbc-ad61-7f46a1f9bbb4
-source-git-commit: 071bc0e36ed2d8eb4ce7bd0ba46823adc0e43095
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5238'
+source-wordcount: '5241'
 ht-degree: 0%
 
 ---
@@ -50,12 +50,12 @@ Voor de standaardrapporten die bij AEM worden geleverd:
 >In de volgende voorbeelden en definities wordt de volgende notatie gebruikt:
 >
 >* Elke regel definieert een knooppunt of een eigenschap waarbij:
-   >  `N:<name> [<nodeType>]` : Beschrijft een knoop met de naam van `<*name*>` en knooppunttype van `<*nodeType*>`*.*
-   >  `P:<name> [<propertyType]` : Beschrijft een eigenschap met de naam van `<*name*>` en een type eigenschap van `<*propertyType*>`.
-   >  `P:<name> = <value>` : Beschrijft een eigenschap `<name>` die moet worden ingesteld op de waarde van `<value>`.
+>  `N:<name> [<nodeType>]` : Beschrijft een knoop met de naam van `<*name*>` en knooppunttype van `<*nodeType*>`*.*
+>  `P:<name> [<propertyType]` : Beschrijft een eigenschap met de naam van `<*name*>` en een type eigenschap van `<*propertyType*>`.
+>  `P:<name> = <value>` : Beschrijft een eigenschap `<name>` die moet worden ingesteld op de waarde van `<value>`.
 >
 >* De inspringing toont de hiërarchische gebiedsdelen tussen de knopen.
->* Items gescheiden door | een lijst van mogelijke artikelen; bijvoorbeeld typen of namen; bijv. `String|String[]` betekent dat de eigenschap String of String kan zijn[].
+>* Items gescheiden door | een lijst van mogelijke artikelen; bijvoorbeeld typen of namen; bijvoorbeeld: `String|String[]` betekent dat de eigenschap String of String kan zijn[].
 >
 >* `[]` een array weergeeft; zoals String[] of een array van knooppunten zoals in de [Query-definitie](#query-definition).
 >
@@ -63,7 +63,6 @@ Voor de standaardrapporten die bij AEM worden geleverd:
 >
 >* Nodes - `nt:unstructured`
 >* Eigenschappen - `String`
-
 
 ## Rapportagekader {#reporting-framework}
 
@@ -89,7 +88,7 @@ De rapportpagina:
 
 ### Rapportbasis {#report-base}
 
-De [ `reportbase` component](#report-base-component) vormt de basis voor elk verslag zoals het:
+De [`reportbase` component](#report-base-component) vormt de basis voor elk verslag zoals het:
 
 * Bevat de definitie van de [query](#the-query-and-data-retrieval) dat de onderliggende resultaatset van gegevens levert.
 
@@ -99,7 +98,7 @@ De [ `reportbase` component](#report-base-component) vormt de basis voor elk ver
 
 ### Kolombasis {#column-base}
 
-Elke kolom is een instantie van de [ `columnbase` component](#column-base-component) dat:
+Elke kolom is een instantie van de [`columnbase` component](#column-base-component) dat:
 
 * Is een paragraaf die door parsys wordt gebruikt ( `reportbase`) van het desbetreffende verslag.
 * Hiermee wordt de koppeling naar de [onderliggende resultatenset](#the-query-and-data-retrieval); Hiermee worden de specifieke gegevens gedefinieerd waarnaar in deze resultaatset wordt verwezen, en hoe deze worden verwerkt.
@@ -109,7 +108,7 @@ Elke kolom is een instantie van de [ `columnbase` component](#column-base-compon
 
 De query:
 
-* Is gedefinieerd als onderdeel van het [ `reportbase`](#report-base) component.
+* Is gedefinieerd als onderdeel van het [`reportbase`](#report-base) component.
 * Is gebaseerd op [CQ QueryBuilder](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html).
 * Haalt de gegevens op die als basis voor het rapport worden gebruikt. Elke rij van de resultaatreeks (lijst) is gebonden aan een knoop zoals teruggekeerd door de vraag. Specifieke informatie voor [afzonderlijke kolommen](#column-base-component) wordt vervolgens uit deze gegevensset geëxtraheerd.
 
@@ -117,13 +116,13 @@ De query:
 
    * Een hoofdpad.
 
-      Hiermee wordt de substructuur van de gegevensopslagruimte aangegeven die moet worden doorzocht.
+     Hiermee wordt de substructuur van de gegevensopslagruimte aangegeven die moet worden doorzocht.
 
-      Om de invloed op de prestaties tot een minimum te beperken, is het raadzaam om de query te (proberen) beperken tot een specifieke subboomstructuur van de repository. Het hoofdpad kan vooraf worden gedefinieerd in het dialoogvenster [rapportsjabloon](#report-template) of ingesteld door de gebruiker in de [Dialoogvenster Configuratie (Bewerken)](#configuration-dialog).
+     Om de invloed op de prestaties tot een minimum te beperken, is het raadzaam om de query te (proberen) beperken tot een specifieke subboomstructuur van de repository. Het hoofdpad kan vooraf worden gedefinieerd in het dialoogvenster [rapportsjabloon](#report-template) of ingesteld door de gebruiker in de [Dialoogvenster Configuratie (Bewerken)](#configuration-dialog).
 
    * [Een of meer criteria](#query-definition).
 
-      Deze worden opgelegd om de (oorspronkelijke) resultaatreeks te produceren; ze omvatten bijvoorbeeld beperkingen op het knooppunttype of eigenschapbeperkingen.
+     Deze worden opgelegd om de (oorspronkelijke) resultaatreeks te produceren; ze omvatten bijvoorbeeld beperkingen op het knooppunttype of eigenschapbeperkingen.
 
 **Het belangrijkste punt hier is dat elke enige knoop die in de resultaatreeks van de vraag wordt teruggekeerd wordt gebruikt om één enkele rij op het rapport (zo een 1:1 verhouding) te produceren.**
 
@@ -137,16 +136,16 @@ Hierdoor is het mogelijk:
 
 * Waarden extraheren en afleiden van de onderliggende resultatenset.
 
-   U kunt bijvoorbeeld twee eigenschapswaarden als één waarde verwerken door het verschil tussen de twee waarden te berekenen.
+  U kunt bijvoorbeeld twee eigenschapswaarden als één waarde verwerken door het verschil tussen de twee waarden te berekenen.
 
 * Oplossen van geëxtraheerde waarden; dit kan op verschillende manieren gebeuren .
 
-   Paden kunnen bijvoorbeeld worden toegewezen aan een titel (zoals in de meer leesbare inhoud van de respectievelijke *jcr:titel* eigenschap).
+  Paden kunnen bijvoorbeeld worden toegewezen aan een titel (zoals in de meer leesbare inhoud van de respectievelijke *jcr:titel* eigenschap).
 
 * Filters toepassen op verschillende punten.
 * Indien nodig samengestelde waarden maken.
 
-   Bijvoorbeeld bestaande uit een tekst die aan de gebruiker wordt getoond, een waarde die voor het sorteren en een extra URL moet worden gebruikt die (op de cliëntkant) voor het creëren van een verbinding wordt gebruikt.
+  Bijvoorbeeld bestaande uit een tekst die aan de gebruiker wordt getoond, een waarde die voor het sorteren en een extra URL moet worden gebruikt die (op de cliëntkant) voor het creëren van een verbinding wordt gebruikt.
 
 #### Workflow van de verwerkingswachtrij {#workflow-of-the-processing-queue}
 
@@ -192,8 +191,8 @@ Waar de gedetailleerde stappen en elementen zijn:
 Het volgende is nodig om een rapport te construeren en te vormen:
 
 * a [plaats voor de definitie van uw rapportcomponenten](#location-of-report-components)
-* a [ `reportbase` component](#report-base-component)
-* één of meer [ `columnbase` component(en)](#column-base-component)
+* a [`reportbase` component](#report-base-component)
+* één of meer [`columnbase` component(en)](#column-base-component)
 * a [pagina-component](#page-component)
 * a [rapportontwerp](#report-design)
 * a [rapportsjabloon](#report-template)
@@ -266,31 +265,31 @@ N:queryBuilder
 
 * `propertyConstraints`
 
-   Kan worden gebruikt om het resultaat te beperken dat is ingesteld op knooppunten met specifieke eigenschappen met specifieke waarden. Als de veelvoudige beperkingen worden gespecificeerd, moet de knoop aan elk van hen (EN verrichting) voldoen.
+  Kan worden gebruikt om het resultaat te beperken dat is ingesteld op knooppunten met specifieke eigenschappen met specifieke waarden. Als de veelvoudige beperkingen worden gespecificeerd, moet de knoop aan elk van hen (EN verrichting) voldoen.
 
-   Bijvoorbeeld:
+  Bijvoorbeeld:
 
-   ```
-   N:propertyConstraints
-    [
-    N:0
-    P:sling:resourceType
-    P:foundation/components/textimage
-    N:1
-    P:jcr:modifiedBy
-    P:admin
-    ]
-   ```
+  ```
+  N:propertyConstraints
+   [
+   N:0
+   P:sling:resourceType
+   P:foundation/components/textimage
+   N:1
+   P:jcr:modifiedBy
+   P:admin
+   ]
+  ```
 
-   Alles retourneren `textimage` componenten die het laatst zijn gewijzigd door de `admin` gebruiker.
+  Alles retourneren `textimage` componenten die het laatst zijn gewijzigd door de `admin` gebruiker.
 
 * `nodeTypes`
 
-   Wordt gebruikt om het resultaat te beperken tot de opgegeven knooppunttypen. U kunt meerdere knooppunttypen opgeven.
+  Wordt gebruikt om het resultaat te beperken tot de opgegeven knooppunttypen. U kunt meerdere knooppunttypen opgeven.
 
 * `mandatoryProperties`
 
-   Kan worden gebruikt om het resultaat te beperken dat is ingesteld op knooppunten die *alles* van de opgegeven eigenschappen. Er wordt geen rekening gehouden met de waarde van de eigenschappen.
+  Kan worden gebruikt om het resultaat te beperken dat is ingesteld op knooppunten die *alles* van de opgegeven eigenschappen. Er wordt geen rekening gehouden met de waarde van de eigenschappen.
 
 Alles is optioneel en kan zo nodig worden gecombineerd, maar u moet ten minste één element definiëren.
 
@@ -315,69 +314,69 @@ N:charting
 
 * `settings`
 
-   Bevat definities voor de actieve grafieken.
+  Bevat definities voor de actieve grafieken.
 
    * `active`
 
-      Aangezien er meerdere instellingen kunnen worden gedefinieerd, kunt u dit gebruiken om te definiëren welke momenteel actief zijn. Deze worden gedefinieerd door een array van knooppunten (er is geen verplichte naamgevingsconventie voor deze knooppunten, maar de standaardrapporten gebruiken vaak `0`, `1`.. `x`), elk met de volgende eigenschap:
+     Aangezien er meerdere instellingen kunnen worden gedefinieerd, kunt u dit gebruiken om te definiëren welke momenteel actief zijn. Deze worden gedefinieerd door een array van knooppunten (er is geen verplichte naamgevingsconventie voor deze knooppunten, maar de standaardrapporten gebruiken vaak `0`, `1`.. `x`), elk met de volgende eigenschap:
 
       * `id`
 
-         Identificatie voor de actieve diagrammen. Dit moet identiteitskaart van één van de grafiek aanpassen `definitions`.
+        Identificatie voor de actieve diagrammen. Dit moet identiteitskaart van één van de grafiek aanpassen `definitions`.
 
 * `definitions`
 
-   Bepaalt de grafiektypes die potentieel voor het rapport beschikbaar zijn. De `definitions` de `active` instellingen.
+  Bepaalt de grafiektypes die potentieel voor het rapport beschikbaar zijn. De `definitions` de `active` instellingen.
 
-   De definities worden opgegeven met behulp van een array van knooppunten (vaak ook wel `0`, `1`.. `x`), elk met de volgende eigenschappen:
+  De definities worden opgegeven met behulp van een array van knooppunten (vaak ook wel `0`, `1`.. `x`), elk met de volgende eigenschappen:
 
    * `id`
 
-      De kaart-identificatie.
+     De kaart-identificatie.
 
    * `type`
 
-      Het type grafiek dat beschikbaar is. Selecteer  vanuit:
+     Het type grafiek dat beschikbaar is. Selecteer  vanuit:
 
       * `pie`
 Cirkeldiagram. Alleen gegenereerd op basis van huidige gegevens.
 
       * `lineseries`
 Reeks lijnen (verbindende punten die de daadwerkelijke momentopnamen vertegenwoordigen). Alleen gegenereerd op basis van historische gegevens.
+
    * Er zijn aanvullende eigenschappen beschikbaar, afhankelijk van het diagramtype:
 
       * voor het diagramtype `pie`:
 
          * `maxRadius` ( `Double/Long`)
 
-            De maximale straal die voor het cirkeldiagram is toegestaan; daarom de maximumgrootte die voor de grafiek (zonder legenda) wordt toegestaan. Genegeerd als `fixedRadius` is gedefinieerd.
+           De maximale straal die voor het cirkeldiagram is toegestaan; daarom de maximumgrootte die voor de grafiek (zonder legenda) wordt toegestaan. Genegeerd als `fixedRadius` is gedefinieerd.
 
          * `minRadius` ( `Double/Long`)
 
-            De minimale straal die is toegestaan voor het cirkeldiagram. Genegeerd als `fixedRadius` is gedefinieerd.
+           De minimale straal die is toegestaan voor het cirkeldiagram. Genegeerd als `fixedRadius` is gedefinieerd.
 
          * `fixedRadius` ( `Double/Long`) Hiermee definieert u een vaste straal voor het cirkeldiagram.
+
       * voor het diagramtype [`lineseries`](/help/sites-administering/reporting.md#display-limits):
 
          * `totals` ( `Boolean`)
 
-            Waar (true) als een extra regel de **Totaal** worden weergegeven.
+           Waar (true) als een extra regel de **Totaal** worden weergegeven.
 standaard: `false`
 
          * `series` ( `Long`)
 
-            Aantal weer te geven lijnen/reeksen.
+           Aantal weer te geven lijnen/reeksen.
 standaard: `9` (dit is ook het toegestane maximum)
 
          * `hoverLimit` ( `Long`)
 
-            Maximum aantal samengevoegde momentopnamen (punten die op elke horizontale lijn worden getoond, die verschillende waarden vertegenwoordigen) waarvoor popups moeten worden getoond, d.w.z. wanneer de gebruiker muis-over op een specifieke waarde of een overeenkomstig etiket in de grafieklegende doet.
+           Maximum aantal samengevoegde momentopnamen (punten die op elke horizontale lijn worden getoond, die verschillende waarden vertegenwoordigen) waarvoor popups moeten worden getoond, d.w.z. wanneer de gebruiker muis-over op een specifieke waarde of een overeenkomstig etiket in de grafieklegende doet.
 
-            standaard: `35` (Er worden dus helemaal geen popups weergegeven als er meer dan 35 verschillende waarden van toepassing zijn voor de huidige diagraminstellingen).
+           standaard: `35` (Er worden dus helemaal geen popups weergegeven als er meer dan 35 verschillende waarden van toepassing zijn voor de huidige diagraminstellingen).
 
-            Er geldt een extra limiet van 10 pop-ups die parallel kunnen worden weergegeven (meerdere pop-ups kunnen worden weergegeven wanneer de muisaanwijzer op de legenda wordt geplaatst).
-
-
+           Er geldt een extra limiet van 10 pop-ups die parallel kunnen worden weergegeven (meerdere pop-ups kunnen worden weergegeven wanneer de muisaanwijzer op de legenda wordt geplaatst).
 
 ### Configuratiedialoogvenster {#configuration-dialog}
 
@@ -428,27 +427,27 @@ Verschillende vooraf geconfigureerde componenten worden geleverd; U kunt hier in
 
 * **`title`**
 
-   `/libs/cq/reporting/components/commons/title`
+  `/libs/cq/reporting/components/commons/title`
 
-   TextField om de rapporttitel te bepalen.
+  TextField om de rapporttitel te bepalen.
 
 * **`description`**
 
-   `/libs/cq/reporting/components/commons/description`
+  `/libs/cq/reporting/components/commons/description`
 
-   Textarea om de rapportbeschrijving te bepalen.
+  Textarea om de rapportbeschrijving te bepalen.
 
 * **`processing`**
 
-   `/libs/cq/reporting/components/commons/processing`
+  `/libs/cq/reporting/components/commons/processing`
 
-   Selector voor de verwerkingsmodus van het rapport (gegevens handmatig/automatisch laden).
+  Selector voor de verwerkingsmodus van het rapport (gegevens handmatig/automatisch laden).
 
 * **`scheduling`**
 
-   `/libs/cq/reporting/components/commons/scheduling`
+  `/libs/cq/reporting/components/commons/scheduling`
 
-   Kiezer voor het plannen van momentopnamen voor de historische grafiek.
+  Kiezer voor het plannen van momentopnamen voor de historische grafiek.
 
 >[!NOTE]
 >
@@ -460,9 +459,9 @@ Bovendien kan een wortelweg voor het rapport worden bepaald:
 
 * **`rootPath`**
 
-   Dit beperkt het rapport tot een bepaalde sectie (boom of subboom) van de bewaarplaats, die voor prestatiesoptimalisering wordt geadviseerd. Het hoofdpad wordt opgegeven door de `rootPath` eigendom van de `report` knoop van elke rapportpagina (die van het malplaatje bij paginaverwezenlijking wordt genomen).
+  Dit beperkt het rapport tot een bepaalde sectie (boom of subboom) van de bewaarplaats, die voor prestatiesoptimalisering wordt geadviseerd. Het hoofdpad wordt opgegeven door de `rootPath` eigendom van de `report` knoop van elke rapportpagina (die van het malplaatje bij paginaverwezenlijking wordt genomen).
 
-   Deze kan worden gespecificeerd door:
+  Deze kan worden gespecificeerd door:
 
    * de [rapportsjabloon](#report-template) (Als een vaste waarde of als standaardwaarde voor het configuratiedialoogvenster).
    * de gebruiker (met deze parameter)
@@ -522,32 +521,32 @@ N:definitions
 
 * `property`
 
-   Definieert de eigenschap die moet worden gebruikt voor het berekenen van de werkelijke celwaarde.
+  Definieert de eigenschap die moet worden gebruikt voor het berekenen van de werkelijke celwaarde.
 
-   If property is defined as String[] er worden meerdere eigenschappen gescand (achter elkaar) om de werkelijke waarde te vinden.
+  If property is defined as String[] er worden meerdere eigenschappen gescand (achter elkaar) om de werkelijke waarde te vinden.
 
-   Bijvoorbeeld in het geval van:
+  Bijvoorbeeld in het geval van:
 
-   `property = [ "jcr:lastModified", "jcr:created" ]`
+  `property = [ "jcr:lastModified", "jcr:created" ]`
 
-   De overeenkomstige waarde-extractor (die hier in controle is) zal:
+  De overeenkomstige waarde-extractor (die hier in controle is) zal:
 
    * Controleer of er een eigenschap jcr:lastModified beschikbaar is en gebruik deze als dat zo is.
    * Als er geen eigenschap jcr:lastModified beschikbaar is, wordt in plaats daarvan de inhoud van jcr:created gebruikt.
 
 * `subPath`
 
-   Als het resultaat niet op de knoop wordt gevestigd die door de vraag is teruggekeerd, `subPath` definieert waar de eigenschap zich bevindt.
+  Als het resultaat niet op de knoop wordt gevestigd die door de vraag is teruggekeerd, `subPath` definieert waar de eigenschap zich bevindt.
 
 * `secondaryProperty`
 
-   Definieert een tweede eigenschap die ook moet worden gebruikt voor het berekenen van de werkelijke celwaarde; dit wordt alleen gebruikt voor bepaalde kolomtypen ( diff en sortable ) .
+  Definieert een tweede eigenschap die ook moet worden gebruikt voor het berekenen van de werkelijke celwaarde; dit wordt alleen gebruikt voor bepaalde kolomtypen ( diff en sortable ) .
 
-   Bijvoorbeeld, in het geval van het Rapport van de Instanties van het Werkschema, wordt het gespecificeerde bezit gebruikt om de daadwerkelijke waarde van het tijdverschil (in milliseconden) tussen begin en eindtijden op te slaan.
+  Bijvoorbeeld, in het geval van het Rapport van de Instanties van het Werkschema, wordt het gespecificeerde bezit gebruikt om de daadwerkelijke waarde van het tijdverschil (in milliseconden) tussen begin en eindtijden op te slaan.
 
 * `secondarySubPath`
 
-   Vergelijkbaar met subpad, wanneer `secondaryProperty` wordt gebruikt.
+  Vergelijkbaar met subpad, wanneer `secondaryProperty` wordt gebruikt.
 
 In de meeste gevallen alleen `property` wordt gebruikt.
 
@@ -598,83 +597,83 @@ N:definitions
 
 * `resolver`
 
-   Definieert de oplosser die moet worden gebruikt. De volgende oplosmiddelen zijn beschikbaar:
+  Definieert de oplosser die moet worden gebruikt. De volgende oplosmiddelen zijn beschikbaar:
 
    * `const`
 
-      Wijst waarden toe aan andere waarden; Dit wordt bijvoorbeeld gebruikt om constanten op te lossen, zoals `en` aan de equivalente waarde `English`.
+     Wijst waarden toe aan andere waarden; Dit wordt bijvoorbeeld gebruikt om constanten op te lossen, zoals `en` aan de equivalente waarde `English`.
 
    * `default`
 
-      De standaardoplosser. Dit is een nepoplosser die eigenlijk niets oplost.
+     De standaardoplosser. Dit is een nepoplosser die eigenlijk niets oplost.
 
    * `page`
 
-      Hiermee wordt een padwaarde omgezet in het pad van de desbetreffende pagina. nauwkeuriger, op de overeenkomstige `jcr:content` knooppunt. Bijvoorbeeld: `/content/.../page/jcr:content/par/xyz` is opgelost voor `/content/.../page/jcr:content`.
+     Hiermee wordt een padwaarde omgezet in het pad van de desbetreffende pagina. nauwkeuriger, op de overeenkomstige `jcr:content` knooppunt. Bijvoorbeeld: `/content/.../page/jcr:content/par/xyz` is opgelost voor `/content/.../page/jcr:content`.
 
    * `path`
 
-      Hiermee wordt een padwaarde omgezet door optioneel een subpad toe te voegen en de werkelijke waarde van een eigenschap van het knooppunt te nemen (zoals gedefinieerd door `resolverConfig`) op het opgeloste pad. Bijvoorbeeld een `path` van `/content/.../page/jcr:content` kan worden opgelost tot de inhoud van de `jcr:title` eigenschap, betekent dit dat een paginapad wordt omgezet naar de paginatitel.
+     Hiermee wordt een padwaarde omgezet door optioneel een subpad toe te voegen en de werkelijke waarde van een eigenschap van het knooppunt te nemen (zoals gedefinieerd door `resolverConfig`) op het opgeloste pad. Bijvoorbeeld een `path` van `/content/.../page/jcr:content` kan worden opgelost tot de inhoud van de `jcr:title` eigenschap, betekent dit dat een paginapad wordt omgezet naar de paginatitel.
 
    * `pathextension`
 
-      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde van een eigenschap van het knooppunt op het opgeloste pad te nemen. Een waarde `de` kan worden voorafgegaan door een pad zoals `/libs/wcm/core/resources/languages`, waarbij de waarde wordt overgenomen van de eigenschap `language`om de landcode op te lossen `de` aan de taalbeschrijving `German`.
+     Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde van een eigenschap van het knooppunt op het opgeloste pad te nemen. Een waarde `de` kan worden voorafgegaan door een pad zoals `/libs/wcm/core/resources/languages`, waarbij de waarde wordt overgenomen van de eigenschap `language`om de landcode op te lossen `de` aan de taalbeschrijving `German`.
 
 * `resolverConfig`
 
-   Verstrekt definities voor resolver; de beschikbare opties zijn afhankelijk van `resolver` geselecteerd:
+  Verstrekt definities voor resolver; de beschikbare opties zijn afhankelijk van `resolver` geselecteerd:
 
    * `const`
 
-      Gebruik eigenschappen om de constanten voor het omzetten op te geven. De naam van de eigenschap definieert de constante die moet worden opgelost. De waarde van de eigenschap definieert de omgezette waarde.
+     Gebruik eigenschappen om de constanten voor het omzetten op te geven. De naam van de eigenschap definieert de constante die moet worden opgelost. De waarde van de eigenschap definieert de omgezette waarde.
 
-      Bijvoorbeeld een eigenschap met **Naam**= `1` en **Waarde** `=One` zal 1 op 1 oplossen.
+     Bijvoorbeeld een eigenschap met **Naam**= `1` en **Waarde** `=One` zal 1 op 1 oplossen.
 
    * `default`
 
-      Geen configuratie beschikbaar.
+     Geen configuratie beschikbaar.
 
    * `page`
 
       * `propertyName` (optioneel)
 
-         Definieert de naam van de eigenschap die moet worden gebruikt voor het omzetten van de waarde. Indien niet opgegeven, wordt de standaardwaarde van *jcr:titel* (de paginatitel) wordt gebruikt; voor de `page` resolver, dit betekent dat eerst het pad wordt omgezet naar het paginapad en vervolgens verder wordt omgezet naar de paginatitel.
+        Definieert de naam van de eigenschap die moet worden gebruikt voor het omzetten van de waarde. Indien niet opgegeven, wordt de standaardwaarde van *jcr:titel* (de paginatitel) wordt gebruikt; voor de `page` resolver, dit betekent dat eerst het pad wordt omgezet naar het paginapad en vervolgens verder wordt omgezet naar de paginatitel.
+
    * `path`
 
       * `propertyName` (optioneel)
 
-         Specifies the name of the property that should be used for resolving the value. Indien niet opgegeven, wordt de standaardwaarde van `jcr:title` wordt gebruikt.
+        Specifies the name of the property that should be used for resolving the value. Indien niet opgegeven, wordt de standaardwaarde van `jcr:title` wordt gebruikt.
 
       * `subPath` (optioneel)
 
-         Deze eigenschap kan worden gebruikt om een achtervoegsel op te geven dat aan het pad moet worden toegevoegd voordat de waarde wordt omgezet.
+        Deze eigenschap kan worden gebruikt om een achtervoegsel op te geven dat aan het pad moet worden toegevoegd voordat de waarde wordt omgezet.
+
    * `pathextension`
 
       * `path` (verplicht)
 
-         Definieert het pad dat moet worden voorafgegaan.
+        Definieert het pad dat moet worden voorafgegaan.
 
       * `propertyName` (verplicht)
 
-         Definieert de eigenschap op het omgezette pad waar de werkelijke waarde zich bevindt.
+        Definieert de eigenschap op het omgezette pad waar de werkelijke waarde zich bevindt.
 
       * `i18n` (facultatief; type Boolean)
 
-         Hiermee wordt bepaald of de waarde moet worden omgezet *geïnternationaliseerd* (d.w.z. gebruik [Internationale services van CQ5](/help/sites-administering/tc-manage.md)).
-
-
+        Hiermee wordt bepaald of de waarde moet worden omgezet *geïnternationaliseerd* (d.w.z. gebruik [Internationale services van CQ5](/help/sites-administering/tc-manage.md)).
 
 * `preprocessing`
 
-   Voorbewerking is optioneel en kan (afzonderlijk) aan de verwerkingsfasen worden gebonden *toepassen* of *applyAfter*:
+  Voorbewerking is optioneel en kan (afzonderlijk) aan de verwerkingsfasen worden gebonden *toepassen* of *applyAfter*:
 
    * `apply`
 
-      De eerste voorbewerkingsfase ([stap 3 in de weergave van de verwerkingswachtrij](#processing-queue)).
+     De eerste voorbewerkingsfase ([stap 3 in de weergave van de verwerkingswachtrij](#processing-queue)).
 
    * `applyAfter`
 
-      Toepassen na voorbewerken ([stap 9 in de weergave van de verwerkingswachtrij](#processing-queue)).
+     Toepassen na voorbewerken ([stap 9 in de weergave van de verwerkingswachtrij](#processing-queue)).
 
 #### Resolvers {#resolvers}
 
@@ -740,13 +739,13 @@ De `preprocessing` een definitie kan worden toegepast op:
 
 * oorspronkelijke waarde:
 
-   De voorbewerkingsdefinitie voor de oorspronkelijke waarde wordt opgegeven op `apply` en/of `applyAfter` rechtstreeks.
+  De voorbewerkingsdefinitie voor de oorspronkelijke waarde wordt opgegeven op `apply` en/of `applyAfter` rechtstreeks.
 
 * waarde in geaggregeerde toestand:
 
-   Indien nodig kan voor elke aggregatie een aparte definitie worden gegeven.
+  Indien nodig kan voor elke aggregatie een aparte definitie worden gegeven.
 
-   Om expliciete voorbewerking voor geaggregeerde waarden te specificeren, moeten de definities van voorbewerking op een respectieve `aggregated` onderliggende node ( `apply/aggregated`, `applyAfter/aggregated`). Als expliciete voorbewerking voor verschillende aggregaten wordt vereist, wordt de preverwerkingsdefinitie gevestigd op een kindknoop met de naam van het respectieve aggregaat (bijvoorbeeld `apply/aggregated/min/max` of andere aggregaten).
+  Om expliciete voorbewerking voor geaggregeerde waarden te specificeren, moeten de definities van voorbewerking op een respectieve `aggregated` onderliggende node ( `apply/aggregated`, `applyAfter/aggregated`). Als expliciete voorbewerking voor verschillende aggregaten wordt vereist, wordt de preverwerkingsdefinitie gevestigd op een kindknoop met de naam van het respectieve aggregaat (bijvoorbeeld `apply/aggregated/min/max` of andere aggregaten).
 
 U kunt een van de volgende twee opties opgeven om tijdens de voorbehandeling te gebruiken:
 
@@ -755,7 +754,7 @@ Indien gevonden, wordt het opgegeven patroon (dat wordt gedefinieerd als een reg
 
 * [gegevenstypeopmaakprogramma&#39;s](#preprocessing-data-type-formatters)
 
-   Zet een numerieke waarde om in een relatieve tekenreeks; de waarde &quot;die een tijdsverschil van 1 uur vertegenwoordigt, wordt bijvoorbeeld omgezet in een tekenreeks, zoals `1:24PM (1 hour ago)`.
+  Zet een numerieke waarde om in een relatieve tekenreeks; de waarde &quot;die een tijdsverschil van 1 uur vertegenwoordigt, wordt bijvoorbeeld omgezet in een tekenreeks, zoals `1:24PM (1 hour ago)`.
 
 Bijvoorbeeld:
 
@@ -776,11 +775,11 @@ Voor voorbewerken kunt u een `pattern` (gedefinieerd als een [reguliere expressi
 
 * `pattern`
 
-   De reguliere expressie die wordt gebruikt om een subtekenreeks te zoeken.
+  De reguliere expressie die wordt gebruikt om een subtekenreeks te zoeken.
 
 * `replace`
 
-   De tekenreeks, of representatie van de tekenreeks, die wordt gebruikt als vervanging voor de oorspronkelijke tekenreeks. Dit vertegenwoordigt vaak een subtekenreeks van de tekenreeks die zich bevindt door de reguliere expressie `pattern`.
+  De tekenreeks, of representatie van de tekenreeks, die wordt gebruikt als vervanging voor de oorspronkelijke tekenreeks. Dit vertegenwoordigt vaak een subtekenreeks van de tekenreeks die zich bevindt door de reguliere expressie `pattern`.
 
 Een voorbeeldvervanging kan als worden verdeeld:
 
@@ -814,19 +813,19 @@ Momenteel zijn de beschikbare gegevenstypeformatters:
 
 * `format`
 
-   Formatter voor gegevenstypen:
+  Formatter voor gegevenstypen:
 
    * `duration`
 
-      De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, vanaf 13/13/11 11:23u en eindigend één uur later om 13/11 12:23u.
+     De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, vanaf 13/13/11 11:23u en eindigend één uur later om 13/11 12:23u.
 
-      Het zet een numerieke waarde (die als milliseconden wordt geïnterpreteerd) in een duurkoord om; bijvoorbeeld: `30000` is opgemaakt als * `30s`.*
+     Het zet een numerieke waarde (die als milliseconden wordt geïnterpreteerd) in een duurkoord om; bijvoorbeeld: `30000` is opgemaakt als * `30s`.*
 
    * `datedelta`
 
-      Datadelta is de tijdspanwijdte tussen een datum in het verleden tot &quot;nu&quot;(zodat zal het een verschillend resultaat hebben als het rapport op een later punt in tijd wordt bekeken).
+     Datadelta is de tijdspanwijdte tussen een datum in het verleden tot &quot;nu&quot;(zodat zal het een verschillend resultaat hebben als het rapport op een later punt in tijd wordt bekeken).
 
-      De numerieke waarde (geïnterpreteerd als een tijdverschil in dagen) wordt omgezet in een relatieve datumtekenreeks. 1 is bijvoorbeeld opgemaakt als 1 dag geleden.
+     De numerieke waarde (geïnterpreteerd als een tijdverschil in dagen) wordt omgezet in een relatieve datumtekenreeks. 1 is bijvoorbeeld opgemaakt als 1 dag geleden.
 
 In het volgende voorbeeld wordt `datedelta` opmaak voor `min` en `max` aggregaten:
 
@@ -867,7 +866,7 @@ N:definitions
 
 * `type`
 
-   De volgende opties zijn beschikbaar als standaardopties:
+  De volgende opties zijn beschikbaar als standaardopties:
 
    * `string`
    * `number`
@@ -876,16 +875,17 @@ N:definitions
    * `diff`
    * `timeslot`
 
-      Wordt gebruikt voor het extraheren van delen van een datum die nodig is voor aggregatie (bijvoorbeeld groep per jaar om gegevens voor elk jaar te verzamelen).
+     Wordt gebruikt voor het extraheren van delen van een datum die nodig is voor aggregatie (bijvoorbeeld groep per jaar om gegevens voor elk jaar te verzamelen).
 
    * `sortable`
 
-      Wordt gebruikt voor waarden die verschillende waarden gebruiken (zoals overgenomen uit verschillende eigenschappen) voor het sorteren en weergeven.
-   Daarnaast. een van de bovenstaande punten kan worden gedefinieerd als meerwaarden; bijvoorbeeld: `string[]` definieert een array van tekenreeksen.
+     Wordt gebruikt voor waarden die verschillende waarden gebruiken (zoals overgenomen uit verschillende eigenschappen) voor het sorteren en weergeven.
 
-   De waarde-extractor wordt gekozen door het kolomtype. Als een waarde-extractor beschikbaar is voor een kolomtype, wordt deze extractor gebruikt. Anders wordt de standaardwaarde voor de extractor gebruikt.
+  Daarnaast. een van de bovenstaande punten kan worden gedefinieerd als meerwaarden; bijvoorbeeld: `string[]` definieert een array van tekenreeksen.
 
-   Een type kan (optioneel) een parameter nemen. Bijvoorbeeld: `timeslot:year` extraheert het jaar uit een datumveld. Typen met de bijbehorende parameters:
+  De waarde-extractor wordt gekozen door het kolomtype. Als een waarde-extractor beschikbaar is voor een kolomtype, wordt deze extractor gebruikt. Anders wordt de standaardwaarde voor de extractor gebruikt.
+
+  Een type kan (optioneel) een parameter nemen. Bijvoorbeeld: `timeslot:year` extraheert het jaar uit een datumveld. Typen met de bijbehorende parameters:
 
    * `timeslot` - De waarden zijn vergelijkbaar met de corresponderende constanten van `java.utils.Calendar`.
 
@@ -898,86 +898,85 @@ N:definitions
       * `timeslot:hour-of-day` - `Calendar.HOUR_OF_DAY`
       * `timeslot:minute-of-hour` - `Calendar.MINUTE`
 
-
 * `groupable`
 
-   Bepaalt of het rapport door deze kolom kan worden gegroepeerd.
+  Bepaalt of het rapport door deze kolom kan worden gegroepeerd.
 
 * `filters`
 
-   Filterdefinities.
+  Filterdefinities.
 
    * `filterType`
 
-      Beschikbare filters zijn:
+     Beschikbare filters zijn:
 
       * `string`
 
-         Een op tekenreeks gebaseerd filter.
+        Een op tekenreeks gebaseerd filter.
+
    * `id`
 
-      Filter-id.
+     Filter-id.
 
    * `phase`
 
-      Beschikbare fasen:
+     Beschikbare fasen:
 
       * `raw`
 
-         Filter wordt toegepast op onbewerkte gegevens.
+        Filter wordt toegepast op onbewerkte gegevens.
 
       * `preprocessed`
 
-         Filter wordt toegepast op vooraf verwerkte gegevens.
+        Filter wordt toegepast op vooraf verwerkte gegevens.
 
       * `resolved`
 
-         Filter wordt toegepast op omgezette gegevens.
-
+        Filter wordt toegepast op omgezette gegevens.
 
 * `aggregates`
 
-   Samengevoegde definities.
+  Samengevoegde definities.
 
    * `text`
 
-      De tekstnaam van het aggregaat. Indien `text` niet wordt gespecificeerd, dan zal het de standaardbeschrijving van het aggregaat nemen; bijvoorbeeld: `minimum` wordt gebruikt voor de `min` aggregaat.
+     De tekstnaam van het aggregaat. Indien `text` niet wordt gespecificeerd, dan zal het de standaardbeschrijving van het aggregaat nemen; bijvoorbeeld: `minimum` wordt gebruikt voor de `min` aggregaat.
 
    * `type`
 
-      Samengevoegde tekst. Beschikbare aggregaten zijn:
+     Samengevoegde tekst. Beschikbare aggregaten zijn:
 
       * `count`
 
-         Telt het aantal rijen.
+        Telt het aantal rijen.
 
       * `count-nonempty`
 
-         Telt het aantal niet-lege rijen.
+        Telt het aantal niet-lege rijen.
 
       * `min`
 
-         Geeft de minimumwaarde op.
+        Geeft de minimumwaarde op.
 
       * `max`
 
-         Geeft de maximumwaarde op.
+        Geeft de maximumwaarde op.
 
       * `average`
 
-         Verstrekt de gemiddelde waarde.
+        Verstrekt de gemiddelde waarde.
 
       * `sum`
 
-         Verschaft de som van alle waarden.
+        Verschaft de som van alle waarden.
 
       * `median`
 
-         Geeft de mediaanwaarde.
+        Geeft de mediaanwaarde.
 
       * `percentile95`
 
-         Neemt het 95e percentiel van alle waarden.
+        Neemt het 95e percentiel van alle waarden.
 
 ### Standaardwaarden kolom {#column-default-values}
 
@@ -990,7 +989,7 @@ N:defaults
 
 * `aggregate`
 
-   Geldig `aggregate` waarden zijn gelijk aan die voor `type` krachtens `aggregates` (zie [Kolomspecifieke definities (definities - filters / aggregaten)](#column-specific-definitions) ).
+  Geldig `aggregate` waarden zijn gelijk aan die voor `type` krachtens `aggregates` (zie [Kolomspecifieke definities (definities - filters / aggregaten)](#column-specific-definitions) ).
 
 ### Gebeurtenissen en handelingen {#events-and-actions}
 
@@ -1024,27 +1023,27 @@ Een kolom algemeen maken:
 
 * Stel de `type` eigenschap van de kolom `definition` knooppunt naar `generic`.
 
-   Zie `/libs/cq/reporting/components/userreport/genericcol/definitions`
+  Zie `/libs/cq/reporting/components/userreport/genericcol/definitions`
 
 * Een definitie van het dialoogvenster (standaard) opgeven onder de kolominstellingen `definition` knooppunt.
 
-   Zie `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
+  Zie `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
    * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de bijbehorende componenteigenschap (inclusief het pad).
 
-      Als u bijvoorbeeld het type algemene kolom configureerbaar wilt maken via het dialoogvenster, gebruikt u een veld met de naam van `./definitions/type`.
+     Als u bijvoorbeeld het type algemene kolom configureerbaar wilt maken via het dialoogvenster, gebruikt u een veld met de naam van `./definitions/type`.
 
    * Eigenschappen die zijn gedefinieerd met de interface/het dialoogvenster hebben voorrang op eigenschappen die zijn gedefinieerd in het dialoogvenster `columnbase` component.
 
 * Bepaal de Edit Configuratie.
 
-   Zie `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
+  Zie `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
 * Gebruik standaard AEM methoden om (aanvullende) kolomeigenschappen te definiëren.
 
-   Merk op dat voor eigenschappen die op zowel de component als de kolominstanties worden bepaald, de waarde op de kolominstantie belangrijkheid neemt.
+  Merk op dat voor eigenschappen die op zowel de component als de kolominstanties worden bepaald, de waarde op de kolominstantie belangrijkheid neemt.
 
-   De eigenschappen die beschikbaar zijn voor een algemene kolom zijn:
+  De eigenschappen die beschikbaar zijn voor een algemene kolom zijn:
 
    * `jcr:title` - kolomnaam
    * `definitions/aggregates` - aggregaten
@@ -1054,9 +1053,9 @@ Een kolom algemeen maken:
    * `definitions/queryBuilder` - de configuratie van de vraagbouwer
    * `defaults/aggregate` - het standaardaggregaat
 
-   In het geval van een nieuw exemplaar van de generieke kolom op de **Gebruikersrapport** de eigenschappen die in het dialoogvenster zijn gedefinieerd, blijven beschikbaar onder:
+  In het geval van een nieuw exemplaar van de generieke kolom op de **Gebruikersrapport** de eigenschappen die in het dialoogvenster zijn gedefinieerd, blijven beschikbaar onder:
 
-   `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
+  `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
 
 ## Rapportontwerp {#report-design}
 
@@ -1076,11 +1075,11 @@ Vereiste ontwerpeigenschappen zijn geregistreerd op `jcr:content/reportpage/repo
 
 * `components`
 
-   Om het even welke componenten en/of componentengroepen die op het rapport worden toegestaan.
+  Om het even welke componenten en/of componentengroepen die op het rapport worden toegestaan.
 
 * `sling:resourceType`
 
-   Eigenschap met waarde `cq/reporting/components/repparsys`.
+  Eigenschap met waarde `cq/reporting/components/repparsys`.
 
 Een voorbeeldontwerpfragment (dat is ontleend aan het ontwerp van het componentenrapport) is:
 
@@ -1304,8 +1303,7 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
    >
    >Dit is hetzelfde als de definities:
    >
-   >
-   ```
+   >```
    >N:data [nt:unstructured]
    >   P:clientFilter [String] = "function(v) { return v; }"
    >```
@@ -1376,13 +1374,13 @@ Een geval van uw nieuw rapport kan nu worden gecreeerd:
    >
    >Aangezien dit voorbeeld geen groeperbare kolommen heeft, zijn de grafieken niet beschikbaar. Tekenreeksen weergeven `groupable` tot `true`:
    >
-   >
-   ```
+   >```
    >N:osgireport [sling:Folder]
    > N:bundlecol [cq:Component]
    > N:definitions [nt:unstructured]
    > P:groupable [Boolean] = true
    >```
+   >
 
 ## Het vormen van de Diensten van het Kader van het Rapport {#configuring-the-report-framework-services}
 
@@ -1402,15 +1400,15 @@ Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webcon
 * **Rijen (max.)** Hiermee definieert u het maximum aantal rijen dat voor elke opname wordt opgeslagen. Deze waarde moet redelijkerwijs worden gekozen; als het te hoog is, zal dit de grootte van de gegevensopslagruimte beïnvloeden, als het te laag is, kunnen gegevens niet accuraat zijn vanwege de manier waarop historische gegevens worden verwerkt.
 * **Gegevens uitfaden**, indien ingeschakeld, kunnen met behulp van de `fakedata` kiezer; indien uitgeschakeld, gebruik dan van de `fakedata` een uitzondering genereren.
 
-   Aangezien de gegevens onecht zijn, moet het *alleen* worden gebruikt voor test- en foutopsporingsdoeleinden.
+  Aangezien de gegevens onecht zijn, moet het *alleen* worden gebruikt voor test- en foutopsporingsdoeleinden.
 
-   Met de `fakedata` de kiezer zal het rapport impliciet voltooien, zodat zullen alle bestaande gegevens verloren gaan; gegevens kunnen handmatig worden hersteld, maar dit kan een tijdrovend proces zijn.
+  Met de `fakedata` de kiezer zal het rapport impliciet voltooien, zodat zullen alle bestaande gegevens verloren gaan; gegevens kunnen handmatig worden hersteld, maar dit kan een tijdrovend proces zijn.
 
 * **Opname-gebruiker** definieert een optionele gebruiker die kan worden gebruikt voor het maken van momentopnamen.
 
-   In feite worden momentopnamen gemaakt voor de gebruiker die het rapport heeft voltooid. Er kunnen situaties zijn (bijvoorbeeld op een publicatiesysteem, waar deze gebruiker niet bestaat omdat zijn account niet is gerepliceerd) waarin u een fallback-gebruiker wilt opgeven die in plaats daarvan wordt gebruikt.
+  In feite worden momentopnamen gemaakt voor de gebruiker die het rapport heeft voltooid. Er kunnen situaties zijn (bijvoorbeeld op een publicatiesysteem, waar deze gebruiker niet bestaat omdat zijn account niet is gerepliceerd) waarin u een fallback-gebruiker wilt opgeven die in plaats daarvan wordt gebruikt.
 
-   Bovendien kan het opgeven van een gebruiker een beveiligingsrisico inhouden.
+  Bovendien kan het opgeven van een gebruiker een beveiligingsrisico inhouden.
 
 * **Gebruiker van momentopnamen afdwingen** Indien ingeschakeld, worden alle momentopnamen gemaakt met de gebruiker die onder *Opname-gebruiker*. Dit kan ernstige gevolgen hebben voor de veiligheid als het niet correct wordt behandeld.
 
@@ -1427,4 +1425,3 @@ Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webcon
 >* één rapport voor twee gebruikers met verschillende taalmontages
 >* één gebruiker en twee rapporten
 >
-

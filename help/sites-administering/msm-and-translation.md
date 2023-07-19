@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '348'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites
 * Gebruiken [Beheer van meerdere sites](/help/sites-administering/msm.md) tot:
 
    * Gebruik inhoud van de master site en de vertalingen opnieuw om sites te maken voor andere landen en culturen.
-   * Zorg ervoor dat u het gebruik van Multi-Site Manager beperkt tot inhoud binnen één taal, bijvoorbeeld master Engels -> vertakkingen van Engelse talen in landsites, master Frans -> vertakkingen van Franse talen in landsites.
+   * Zorg ervoor dat u het gebruik van Multi-Site Manager beperkt tot inhoud binnen één taal, bijvoorbeeld Engels master -> Engelse taalbijkantoren in landsites, Frans master -> Franse taalbijkantoren in landsites.
    * Koppel zo nodig elementen van de live kopieën los om lokalisatiegegevens toe te voegen.
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
@@ -51,7 +51,7 @@ In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet a
 >
 >In dit, en vergelijkbaar, scenario&#39;s MSM beheert niet de verschillende taalversies als dusdanig.
 >
->* [MSM](/help/sites-administering/msm.md) beheert de implementatie van vertaalde inhoud van een blauwdruk (bijvoorbeeld een wereldwijd master) tot de live kopieën (bijvoorbeeld de lokale sites), binnen de grenzen van een taal.
+>* [MSM](/help/sites-administering/msm.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (bijvoorbeeld, een globale master) aan de levende exemplaren (bijvoorbeeld, de lokale plaatsen), binnen de grenzen van een taal.
 >* De [vertalen](/help/sites-administering/translation.md) de integratiemogelijkheden van AEM, in combinatie met de vertaaldiensten van derden, beheren de talen en vertalen van inhoud in deze verschillende talen.
 >
 >Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden gebruikt.

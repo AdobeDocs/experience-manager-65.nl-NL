@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 78ec31362f3aceb5cfc9cc0735bccb88082b8e2d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1787'
 ht-degree: 0%
@@ -48,7 +48,6 @@ or
 >* `/libs/settings/cloudsettings`
 >* `/conf/global/settings/cloudsettings`
 >* `/conf/<tenant>/settings/cloudsettings`
-
 
 ## Het tonen van en het Verbergen van ContextHub UI {#showing-and-hiding-the-contexthub-ui}
 
@@ -189,7 +188,7 @@ Een contexthub.generic-jsonp-opslag is geconfigureerd zodat deze gegevens opslaa
 
 De contextthub.generic-jsonp-voorbeeldopslagkandidaat stelt u in staat gegevens op te halen uit een JSONP-service of een webservice die JSON-gegevens retourneert. Voor deze opslagkandidaat, gebruik de opslagconfiguratie om details over de dienst te verstrekken JSONP aan gebruik.
 
-De [init](/help/sites-developing/contexthub-api.md#init-name-config) de functie van de `ContextHub.Store.JSONPStore` De klasse JavaScript definieert een `config` object dat deze winkelkandidaat initialiseert. De `config` object bevat een `service` object dat details over de JSONP-service bevat. Om de opslag te vormen, verstrekt u `service` object in JSON-indeling als de waarde voor de eigenschap Detail Configuration.
+De [init](/help/sites-developing/contexthub-api.md#init-name-config) de functie van de `ContextHub.Store.JSONPStore` JavaScript-klasse definieert een `config` object dat deze winkelkandidaat initialiseert. De `config` object bevat een `service` object dat details over de JSONP-service bevat. Om de opslag te vormen, verstrekt u `service` object in JSON-indeling als de waarde voor de eigenschap Detail Configuration.
 
 Als u gegevens wilt opslaan van de MD5-service van de site jsontest.com, gebruikt u de procedure in [Een ContextHub-winkel maken](/help/sites-developing/ch-configuring.md#creating-a-contexthub-store) de volgende eigenschappen gebruiken:
 
@@ -199,21 +198,21 @@ Als u gegevens wilt opslaan van de MD5-service van de site jsontest.com, gebruik
 * **Ingeschakeld:** Selecteren
 * **Detailconfiguratie (JSON):**
 
-   ```xml
-   {
-    "service": {
-    "jsonp": false,
-    "timeout": 1000,
-    "ttl": 1800000,
-    "secure": false,
-    "host": "md5.jsontest.com",
-    "port": 80,
-    "params":{
-    "text":"text to md5"
-        }
-      }
-    }
-   ```
+  ```xml
+  {
+   "service": {
+   "jsonp": false,
+   "timeout": 1000,
+   "ttl": 1800000,
+   "secure": false,
+   "host": "md5.jsontest.com",
+   "port": 80,
+   "params":{
+   "text":"text to md5"
+       }
+     }
+   }
+  ```
 
 ### Een UI-module toevoegen voor de md5-gegevens {#adding-a-ui-module-for-the-md-data}
 
@@ -227,15 +226,15 @@ Gebruik de procedure in [UI-modules toevoegen](#adding-a-ui-module) om de module
 * **Moduletype:** contexthub.base
 * **Detailconfiguratie (JSON):**
 
-   ```xml
-   {
-    "icon": "coral-Icon--data",
-    "title": "MD5 Converstion",
-    "storeMapping": { "md5": "md5" },
-    "template": "<p> {{md5.original}}</p>;
-                 <p>{{md5.md5}}</p>"
-   }
-   ```
+  ```xml
+  {
+   "icon": "coral-Icon--data",
+   "title": "MD5 Converstion",
+   "storeMapping": { "md5": "md5" },
+   "template": "<p> {{md5.original}}</p>;
+                <p>{{md5.md5}}</p>"
+  }
+  ```
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 

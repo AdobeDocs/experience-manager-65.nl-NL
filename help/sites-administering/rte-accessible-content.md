@@ -3,9 +3,9 @@ title: Configureer Rich Text Editor om toegankelijke webpagina's en sites te mak
 description: Configureer Rich Text Editor om toegankelijke webpagina's en sites te maken.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Met de structuurelementen beschikbaar in RTE via de opties van het paragraafform
 
 ## De functie voor bronbewerking gebruiken {#use-of-the-source-edit-feature}
 
-In sommige gevallen, zullen de inhoudsauteurs het noodzakelijk vinden om de HTML broncode te onderzoeken en aan te passen die gebruikend RTE wordt gecreeerd. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd extra prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan worden gedaan met de [bronbewerking](/help/sites-administering/rich-text-editor.md#aboutplugins) optie van de RTE. U kunt de [ `sourceedit` op de `misctools` insteekmodule](/help/sites-administering/rich-text-editor.md#aboutplugins).
+In sommige gevallen, zullen de inhoudsauteurs het noodzakelijk vinden om de HTML broncode te onderzoeken en aan te passen die gebruikend RTE wordt gecreeerd. Bijvoorbeeld, kan een stuk van inhoud die binnen RTE wordt gecreeerd extra prijsverhoging vereisen om naleving WCAG 2.0 te verzekeren. Dit kan worden gedaan met de [bronbewerking](/help/sites-administering/rich-text-editor.md#aboutplugins) optie van de RTE. U kunt de [`sourceedit` op de `misctools` insteekmodule](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
 >[!CAUTION]
 >
@@ -193,9 +193,7 @@ RTE kan `strong` en `em` -tags in plaats van `b` en `i`. Voeg de volgende knoop 
 >* De `itemId` eigenschap voor elk overeenkomend veld wordt ingesteld op de naam van het desbetreffende DOM-kenmerk (`TablePropertiesDialog`).
 >* Het kenmerk wordt expliciet ingesteld en/of verwijderd op het DOM-element (`Table`).
 
-
 >[!MORELIKETHIS]
 >
 >* [Snelle gids aan WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Toegankelijke inhoud maken (WCAG 2.0-conformiteit)](/help/sites-authoring/creating-accessible-content.md)
-

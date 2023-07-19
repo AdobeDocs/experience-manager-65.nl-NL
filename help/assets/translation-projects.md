@@ -5,10 +5,10 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1737'
-ht-degree: 10%
+source-wordcount: '1733'
+ht-degree: 9%
 
 ---
 
@@ -24,7 +24,6 @@ Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor h
 >
 >* Gebruikers die vertaalprojecten maken, zijn lid van de groep `projects-administrators`.
 >* De vertaaldienstverlener steunt de vertaling van binaire getallen.
-
 
 ## Workflow maken en vertalen {#create-and-translate-workflow}
 
@@ -67,7 +66,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
 1. Klikken **[!UICONTROL Create & Translate]** onderaan.
 
-1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
+1. Van de **[!UICONTROL Target Languages]** Selecteer de talen waarvoor u een mappenstructuur wilt maken.
 
 1. Van de **[!UICONTROL Project]** list, selecteer **[!UICONTROL Create a new translation project]**.
 
@@ -118,7 +117,7 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 1. Klikken **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]**. Er wordt een lijst met beschikbare vertaalkopieën weergegeven.
 1. Klikken **[!UICONTROL Create & Translate]** onderaan.
 
-1. Selecteer in de lijst **[!UICONTROL Target Languages]** de taal of talen waarvoor u een mappenstructuur wilt maken.
+1. Van de **[!UICONTROL Target Languages]** Selecteer de talen waarvoor u een mappenstructuur wilt maken.
 
 1. Selecteer in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Add to existing translation project]** om de vertaalworkflow in de map uit te voeren.
 
@@ -235,7 +234,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 ## Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Adobe Experience Manager Assets] Hiermee slaat u de nieuw vertaalde middelen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de middelen expliciet hebt goedgekeurd. Als u de middelen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Adobe Experience Manager Assets] Hiermee slaat u de nieuw vertaalde elementen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de elementen expliciet hebt goedgekeurd. Als u de elementen afwijst, blijft de taalkopie ongewijzigd.
 
 1. Klik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt en vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in [!DNL Experience Manager Assets].
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
    </Location>
    ```
 
-   Hierdoor kunnen in de cache (bijvoorbeeld de browsercache) maximaal één maand CSS-, Javascript-, PNG- en GIF-bestanden worden opgeslagen, totdat ze verlopen. Dit betekent dat ze niet hoeven te worden aangevraagd bij AEM of de webserver, maar wel in de cache van de browser kunnen blijven staan.
+   Hierdoor kan de cache van een tussenliggend item (bijvoorbeeld de browsercache) maximaal een maand CSS-, JavaScript-, PNG- en GIF-bestanden opslaan, totdat ze verlopen. Dit betekent dat ze niet hoeven te worden aangevraagd bij AEM of de webserver, maar wel in de cache van de browser kunnen blijven staan.
 
    Andere gedeelten van de site moeten niet in de cache worden geplaatst op een instantie van de auteur, omdat deze op elk moment kunnen worden gewijzigd.
 
@@ -75,7 +75,7 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
    </Location>
    ```
 
-   Hierdoor kan de cache (bijvoorbeeld de cache van de browser) gedurende maximaal één dag CSS-, Javascript-, PNG- en GIF-bestanden opslaan in clientcaches. Hoewel dit voorbeeld algemene instellingen voor alles hieronder illustreert `/content` en `/etc/designs`, moet u het korter maken.
+   Hierdoor kan de tussenliggende cache (bijvoorbeeld de browsercache) maximaal één dag CSS-, JavaScript-, PNG- en GIF-bestanden opslaan in clientcaches. Hoewel dit voorbeeld algemene instellingen voor alles hieronder illustreert `/content` en `/etc/designs`, moet u het korter maken.
 
    Afhankelijk van hoe vaak uw site wordt bijgewerkt, kunt u ook overwegen HTML-pagina&#39;s in cache te plaatsen. Een redelijke termijn zou 1 uur zijn:
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2134'
+source-wordcount: '2139'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ CRXDE Lite biedt de volgende functionaliteit:
   </tr>
   <tr>
    <td>Knooppuntwidget</td>
-   <td><p>Geeft het pad naar het momenteel geselecteerde knooppunt weer.</p> <p>U kunt het ook gebruiken om aan een knoop te springen, door de weg door hand in te gaan, of het te kleven van ergens anders, en het drukken gaat binnen.</p> <p>Het biedt ook ondersteuning voor het zoeken naar knooppunten met een specifieke knooppuntnaam. Voer de naam in van het knooppunt dat u wilt zoeken en wacht (of druk op het zoeksymbool aan de rechterkant). U kunt proberen de tekenreeks in te voeren <em>eik</em> in de widget om te zien hoe deze werkt. Als een bepaald knooppunt of bepaalde knooppunten in het verkennervenster wordt geladen, wordt de lijst weergegeven en kunt u het pad selecteren en op Enter drukken om naar het knooppunt te navigeren. Het werkt alleen voor de knooppunten die momenteel in de CRXDE-clienttoepassing in de browser zijn geladen. Als u de hele repository wilt doorzoeken, gebruikt u Extra en vervolgens Query.</p> </td>
+   <td><p>Geeft het pad naar het momenteel geselecteerde knooppunt weer.</p> <p>U kunt het ook gebruiken om aan een knoop te springen, door de weg door hand in te gaan, of het te kleven van ergens anders, en het drukken gaat binnen.</p> <p>Het biedt ook ondersteuning voor het zoeken naar knooppunten met een specifieke knooppuntnaam. Voer de naam in van het knooppunt dat u wilt zoeken en wacht (of druk op het zoeksymbool aan de rechterkant). U kunt bijvoorbeeld proberen de tekenreeks in te voeren <em>eik</em> in de widget om te zien hoe deze werkt. Als een bepaald knooppunt of bepaalde knooppunten in het verkennervenster wordt geladen, wordt de lijst weergegeven en kunt u het pad selecteren en op Enter drukken om naar het knooppunt te navigeren. Het werkt alleen voor de knooppunten die momenteel in de CRXDE-clienttoepassing in de browser zijn geladen. Als u de hele repository wilt doorzoeken, gebruikt u Extra en vervolgens Query.</p> </td>
   </tr>
   <tr>
    <td>Explorer-venster</td>
@@ -137,7 +137,7 @@ CRXDE Lite biedt de volgende functionaliteit:
   </tr>
   <tr>
    <td>Aanmeldingswidget<br /> </td>
-   <td><p>Geeft de momenteel aangemelde gebruikers weer en de werkruimte waarin zij zijn aangemeld, bijvoorbeeld admin@crx.default.</p> <p>Klik op deze knop om u aan te melden of opnieuw aan te melden als specifieke gebruiker. Als u geen werkruimte specificeert om aan login aan te melden, zult u in de standaardwerkruimte, crx.default worden geregistreerd.</p> <p>Als u de repository wilt doorbladeren als anonieme gebruiker, gebruikt u <strong>anoniem</strong> als de aanmeldingsnaam en een wachtwoord (bijvoorbeeld een spatie of een punt).<br /> </p> <p>Als uw autorisatie niet langer geldig is (de autorisatie is bijvoorbeeld verlopen), wordt de aanmeldingswidget weergegeven als "<strong>Onbevoegd - Aanmelden..</strong>". Klik hierop om u opnieuw aan te melden.</p> </td>
+   <td><p>Toont momenteel het programma geopende gebruikers en de werkruimte zij, bijvoorbeeld, admin@crx.default worden geregistreerd.</p> <p>Klik op deze knop om u aan te melden of opnieuw aan te melden als specifieke gebruiker. Als u geen werkruimte specificeert om aan login aan te melden, zult u in de standaardwerkruimte, crx.default worden geregistreerd.</p> <p>Als u de repository wilt doorbladeren als anonieme gebruiker, gebruikt u <strong>anoniem</strong> als de aanmeldingsnaam en een wachtwoord (bijvoorbeeld een spatie of een punt).<br /> </p> <p>Als uw vergunning niet meer geldig is (bijvoorbeeld, is het verlopen), toont login widget "<strong>Onbevoegd - Aanmelden..</strong>". Klik hierop om u opnieuw aan te melden.</p> </td>
   </tr>
  </tbody>
 </table>

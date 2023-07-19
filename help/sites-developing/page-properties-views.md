@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -33,12 +33,12 @@ De standaardstatus voor elke pagina-eigenschap is:
 
 De gebieden moeten specifiek worden gevormd als om het even welke verandering wordt vereist. Dit wordt gedaan gebruikend de aangewezen knoopeigenschappen:
 
-* Pagina-eigenschap die beschikbaar moet zijn in de weergave Maken (bijvoorbeeld **Pagina maken** wizard):
+* De eigenschap Pagina die beschikbaar moet zijn in de weergave Maken (bijvoorbeeld **Pagina maken** wizard):
 
    * Naam: `cq:showOnCreate`
    * Type: `Boolean`
 
-* Pagina-eigenschap die beschikbaar moet zijn in de bewerkingsweergave (bijvoorbeeld **Weergave**/**Bewerken**) **Eigenschappen** optie):
+* De eigenschap Pagina die beschikbaar moet zijn in de bewerkingsweergave (bijvoorbeeld **Weergave**/**Bewerken**) **Eigenschappen** optie):
 
    * Naam: `cq:hideOnEdit`
    * Type: `Boolean`
@@ -71,12 +71,15 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
    >Zie ter referentie:
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
+   >
    U ***moet*** niets wijzigen in de `/libs` pad.
+   >
    Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >
    De aanbevolen methode voor configuratie en andere wijzigingen is:
+   >
    1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
    1. Breng wijzigingen aan in `/apps`
-
 
 1. Stel de `path` eigenschap op `basic` om naar de opheffing van het basislusje te wijzen (zie ook de volgende stap). Bijvoorbeeld:
 
@@ -99,6 +102,7 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
    De **Meer titels en beschrijving** wordt niet meer weergegeven in het dialoogvenster **Pagina maken** wizard.
 
 >[!NOTE]
+>
 Zie wanneer u pagina-eigenschappen configureert voor gebruik met live kopieën [MSM-vergrendelingen configureren in pagina-eigenschappen](/help/sites-developing/extending-msm.md#configuring-msm-locks-on-page-properties-touch-enabled-ui) voor meer informatie .
 
 ## Voorbeeldconfiguratie van pagina-eigenschappen {#sample-configuration-of-page-properties}

@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2325'
+source-wordcount: '2327'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Maak een woordenboek voor het beheer van uw gelokaliseerde UI-tekenreeksen. Nada
    >
    >Dit is de structuur van de [Sling i18n-module](https://sling.apache.org/site/internationalization-support.html).
 
-1. Laad de vertaler en het woordenboekpad opnieuw (bijv. `/apps/myProject/i18n`) is beschikbaar in de vervolgkeuzelijst op de werkbalk. Selecteer deze optie om tekenreeksen en de bijbehorende vertalingen toe te voegen.
+1. Laad de vertaler en het woordenboekpad opnieuw (bijvoorbeeld `/apps/myProject/i18n`) is beschikbaar in de vervolgkeuzelijst op de werkbalk. Selecteer deze optie om tekenreeksen en de bijbehorende vertalingen toe te voegen.
 
    >[!NOTE]
    >
@@ -337,7 +337,7 @@ Nadat u een woordenboek hebt gedefinieerd voor een taal die nieuw is voor uw AEM
 
 Verschillende landen gebruiken dezelfde taal, bijvoorbeeld de Verenigde Staten, het Verenigd Koninkrijk en Australië, allemaal Engels. Dit wordt aangegeven met een code die zowel de taal als het land aangeeft, zoals `en_US`, `en_GB` en `en_AU`.
 
-De standaardlanden worden gebruikt bij het weergeven van vlaggen (bijvoorbeeld in het dialoogvenster voor het kopiëren van talen) en worden gebruikt om het land voor een taalcode op te lossen.
+De standaardlanden worden gebruikt wanneer het tonen van vlaggen (bijvoorbeeld, in de dialoog van het taalexemplaar), zij worden gebruikt om het land voor een taalcode op te lossen.
 
 >[!NOTE]
 >
@@ -359,11 +359,12 @@ De standaarddefinities wijzigen:
 
    * **Taallijst**:
 
-      Het pad naar de taallijst in de opslagplaats. Stel deze in op de locatie die wordt gebruikt voor bedekking:
+     Het pad naar de taallijst in de opslagplaats. Stel deze in op de locatie die wordt gebruikt voor bedekking:
 
-      ```
-             /apps/wcm/core/resources/languages
-      ```
+     ```
+            /apps/wcm/core/resources/languages
+     ```
+
    U kunt dit doen gebruikend de Console van het Web OSGi:
 
    ```shell

@@ -1,8 +1,8 @@
 ---
 title: Internationalisatie van UI-tekenreeksen
 seo-title: Internationalizing UI Strings
-description: Met Java- en Javascript-API's kunt u tekenreeksen internationaliseren
-seo-description: Java and Javascript APIs enable you to internationalize strings
+description: Met Java- en JavaScript-API's kunt u tekenreeksen internationaliseren
+seo-description: Java and JavaScript APIs enable you to internationalize strings
 uuid: 1cfa409f-9b1e-466f-8b03-5628db42bc57
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 exl-id: bc5b1cb7-a011-42fe-8759-3c7ee3068aad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1100'
 ht-degree: 0%
@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Internationalisatie van UI-tekenreeksen {#internationalizing-ui-strings}
 
-Met Java- en Javascript-API&#39;s kunt u tekenreeksen internationaliseren in de volgende typen bronnen:
+Met Java- en JavaScript-API&#39;s kunt u tekenreeksen internationaliseren in de volgende typen bronnen:
 
 * Java-bronbestanden.
 * JSP-scripts.
-* Javascript in client-side bibliotheken of in paginabron.
+* JavaScript in clientbibliotheken of in paginabron.
 * Waarden van eigenschappen van JCR-knooppunten worden gebruikt in dialoogvensters en componentconfiguratie-eigenschappen.
 
 Voor een overzicht van het internationalisatie- en lokalisatieproces gaat u naar [Internationaliserende componenten](/help/sites-developing/i18n.md).
@@ -110,16 +110,16 @@ De `I18N` klasse definieert een statische klasse `get` Deze methode is handig wa
 
 * Gebruik de taalvoorkeur van de gebruiker: Verstrek SlingHttpRequest als eerste parameter.
 
-   `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(slingHttpRequest, "Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 * De paginataal gebruiken: Verstrek ResourceBundle als eerste parameter.
 
-   `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
+  `I18n.get(resourceBundle,"Welcome back {}. You have {} messages.", "user name, number of messages", user.getDisplayName(), numItems);`
 
 ### Tekenreeksen internationaliseren in JavaScript-code {#internationalizing-strings-in-javascript-code}
 
-Met de Javascript-API kunt u tekenreeksen lokaliseren op de client. Zoals met [Java en JSP](#internationalizing-strings-in-java-and-jsp-code) Met de Javascript-API kunt u tekenreeksen identificeren die u wilt lokaliseren, lokalisatietips opgeven en variabelen opnemen in de gelokaliseerde tekenreeksen.
+Met de JavaScript-API kunt u tekenreeksen lokaliseren op de client. Zoals met [Java en JSP](#internationalizing-strings-in-java-and-jsp-code) Met de JavaScript-API kunt u tekenreeksen identificeren die u wilt lokaliseren, lokalisatietips opgeven en variabelen opnemen in de gelokaliseerde tekenreeksen.
 
-De `granite.utils` [clientbibliotheekmap](/help/sites-developing/clientlibs.md) bevat de Javascript API. Als u de API wilt gebruiken, neemt u deze clientbibliotheekmap op de pagina op. De lokalisatiefuncties gebruiken de `Granite.I18n` naamruimte.
+De `granite.utils` [clientbibliotheekmap](/help/sites-developing/clientlibs.md) bevat de JavaScript-API. Als u de API wilt gebruiken, neemt u deze clientbibliotheekmap op de pagina op. De lokalisatiefuncties gebruiken de `Granite.I18n` naamruimte.
 
 Voordat u gelokaliseerde tekenreeksen presenteert, moet u de landinstelling instellen met de `Granite.I18n.setLocale` functie. De functie vereist de taalcode van de landinstelling als argument:
 
@@ -146,7 +146,7 @@ De functieparameters verschillen van de Java I18n.get-methode:
 * De tweede parameter is een array van waarden die in de letterlijke tekenreeks moeten worden geïnjecteerd.
 * De derde parameter is de lokalisatiehint.
 
-In het volgende voorbeeld wordt Javascript gebruikt om de welkomstbeheerder te lokaliseren. U hebt 2 berichten in uw Postvak IN.&quot; zin:
+In het volgende voorbeeld wordt JavaScript gebruikt om de &quot;Welkom back Administrator&quot; te lokaliseren. U hebt 2 berichten in uw Postvak IN.&quot; zin:
 
 ```
 Granite.I18n.setLocale("fr");

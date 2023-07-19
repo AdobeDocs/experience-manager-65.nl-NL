@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1357'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrij
 
 * Clientlibs
 
-   Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clientlib moet:
+  Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clientlib moet:
 
    * afhankelijk van de creatie clientlib `cq.authoring.editor.sites.page`
    * deel uitmaken van de `cq.authoring.editor.sites.page.hook` categorie
 
 * Bedekkingen
 
-   Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid de standaardfunctionaliteit te bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat de optie [fusie van bronnen](/help/sites-developing/sling-resource-merger.md) staat overerving toe.
+  Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid de standaardfunctionaliteit te bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat de optie [fusie van bronnen](/help/sites-developing/sling-resource-merger.md) staat overerving toe.
 
 >[!NOTE]
 >
@@ -53,7 +53,6 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 >
 
 
-
 >[!CAUTION]
 >
 >U ***moet*** niets wijzigen in de `/libs` pad.
@@ -64,7 +63,6 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 >
 >1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
 >1. Breng wijzigingen aan in `/apps`
-
 
 ## Nieuwe laag toevoegen (modus) {#add-new-layer-mode}
 
@@ -108,7 +106,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 ## Bronnen filteren {#filtering-resources}
 
-Bij het ontwerpen van pagina&#39;s moet de gebruiker vaak bronnen selecteren (zoals pagina&#39;s, componenten, elementen, enz.). Dit kan de vorm hebben van een lijst, bijvoorbeeld van waaruit de auteur een punt moet kiezen.
+Bij het ontwerpen van pagina&#39;s moet de gebruiker vaak bronnen selecteren (bijvoorbeeld pagina&#39;s, componenten, elementen, enz.). Dit kan de vorm hebben van een lijst, bijvoorbeeld van waaruit de auteur een punt moet kiezen.
 
 Om de lijst tot een redelijke grootte te houden en ook relevant voor het gebruiksgeval, kan een filter in de vorm van een douane predikaat worden uitgevoerd. Als de [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Graniet](/help/sites-developing/touch-ui-concepts.md#granite-ui) wordt gebruikt om de gebruiker toe te staan om de weg aan een bepaalde middel te selecteren, kunnen de voorgestelde wegen op de volgende manier worden gefilterd:
 
@@ -152,14 +150,14 @@ In een standaard AEM-installatie:
 
    * `cq:inplaceEditing`
 
-      bijvoorbeeld:
+     bijvoorbeeld:
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
 
          * eigenschap: `editorType`
 
-            Bepaalt het type van gealigneerde redacteur die zal worden gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijv. `text`, `textimage`, `image`, `title`.
+           Bepaalt het type van gealigneerde redacteur die zal worden gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijvoorbeeld: `text`, `textimage`, `image`, `title`.
 
 1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knooppunten met configuraties en een `plugin` -knooppunt voor de benodigde configuratiegegevens van de plug-in.
 
@@ -260,4 +258,4 @@ Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoe
    >`/libs/cq/gui/content/common/managepublicationwizard`
 
 1. Werk de [workflowmodel](/help/sites-developing/workflows-models.md) en gerelateerde configuraties/scripts, indien vereist.
-1. Rechts van de [ `replicate` action](/help/sites-administering/security.md#actions) van alle relevante gebruikers voor alle relevante pagina&#39;s; om deze workflow als een standaardactie te laten activeren wanneer een van de gebruikers een pagina probeert te publiceren (of te repliceren).
+1. Rechts van de [`replicate` action](/help/sites-administering/security.md#actions) van alle relevante gebruikers voor alle relevante pagina&#39;s; om deze workflow als een standaardactie te laten activeren wanneer een van de gebruikers een pagina probeert te publiceren (of te repliceren).

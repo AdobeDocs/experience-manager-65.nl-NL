@@ -1,8 +1,8 @@
 ---
-title: ContextHub JavaScript API-naslaggids
-seo-title: ContextHub Javascript API Reference
+title: JavaScript API-naslaggids voor ContextHub
+seo-title: ContextHub JavaScript API Reference
 description: De JavaScript API van ContextHub is beschikbaar aan uw manuscripten wanneer de component ContextHub aan de pagina is toegevoegd
-seo-description: The ContextHub Javascript API is available to your scripts when the ContextHub component has been added to the page
+seo-description: The ContextHub JavaScript API is available to your scripts when the ContextHub component has been added to the page
 uuid: 296d6c8e-517f-4837-9e86-ae571ea8aa17
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5006'
+source-wordcount: '5007'
 ht-degree: 0%
 
 ---
 
-# ContextHub JavaScript API-naslaggids{#contexthub-javascript-api-reference}
+# JavaScript API-naslaggids voor ContextHub{#contexthub-javascript-api-reference}
 
-De JavaScript-API van ContextHub is beschikbaar voor uw scripts wanneer de [De component ContextHub is toegevoegd aan de pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
+De JavaScript-API van de ContextHub is beschikbaar voor uw scripts wanneer de [De component ContextHub is toegevoegd aan de pagina](/help/sites-developing/ch-adding.md#adding-contexthub-to-a-page-component).
 
 ## ContextHub-constanten {#contexthub-constants}
 
@@ -67,11 +67,11 @@ De volgende lijst maakt een lijst van de namen van gebeurtenissen die voor Conte
 | ContextHub.Constants.EVENT_UI_CONTAINER_OPENED | Wordt geactiveerd wanneer de ContextHub UI wordt geopend | met ui-container geopend |
 | ContextHub.Constants.EVENT_UI_CONTAINER_CLOSED | Wordt geactiveerd wanneer de ContextHub-gebruikersinterface is samengevouwen | ui-container-gesloten |
 | ContextHub.Constants.EVENT_UI_PROPERTY_MODIFIED | Wordt geactiveerd wanneer een eigenschap wordt gewijzigd | ui-eigenschap-modified |
-| ContextHub.Constants.EVENT_UI_RENDERED | Wordt geactiveerd telkens wanneer de ContextHub UI wordt gerenderd (bijvoorbeeld na een bezitsverandering) | ui-rendering |
+| ContextHub.Constants.EVENT_UI_RENDERED | Wordt geactiveerd telkens wanneer de ContextHub UI wordt gerenderd (bijvoorbeeld, na een bezitsverandering) | ui-rendering |
 | ContextHub.Constants.EVENT_UI_INITIALIZED | Wordt geactiveerd wanneer de UI-container wordt geïnitialiseerd | ui-geïnitialiseerd |
 | ContextHub.Constants.ACTIVE_UI_MODE | Geeft de actieve UI-modus aan | /_/active-ui-mode |
 
-## ContextHub JavaScript API-naslaggids {#contexthub-javascript-api-reference-2}
+## JavaScript API-naslaggids voor ContextHub {#contexthub-javascript-api-reference-2}
 
 Het voorwerp ContextHub verleent toegang tot alle opslag.
 
@@ -391,9 +391,9 @@ A `boolean` waarde:
 
 ## ContextHub.Store.JSONPStore {#contexthub-store-jsonpstore}
 
-Een opslag die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP, of naar keuze van de dienst die JSON- gegevens terugkeert. Geef de servicedetails op met de [ `init`](/help/sites-developing/contexthub-api.md#init-name-config) wanneer u een instantie van deze klasse maakt.
+Een opslag die JSON-gegevens bevat. De gegevens worden teruggewonnen van de externe dienst JSONP, of naar keuze van de dienst die JSON- gegevens terugkeert. Geef de servicedetails op met de [`init`](/help/sites-developing/contexthub-api.md#init-name-config) wanneer u een instantie van deze klasse maakt.
 
-De opslag gebruikt in-geheugenpersistentie (variabele Javascript). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
+De opslag gebruikt persistentie in het geheugen (variabele JavaScript). De gegevens van de opslag zijn beschikbaar slechts tijdens het leven van de pagina.
 
 ContextHub.Store.JSONPStore extends [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) en neemt de functies van die klasse over.
 
@@ -471,7 +471,7 @@ initialiseert het object ContextHub.Store.JSONPStore.
 
    * eventDeferring: 32.
    * gebeurtenis: Het object ContextHub.Utils.Event voor deze winkel. De standaardwaarde is `ContextHub.eventing` object.
-   * persistentie: Het object ContextHub.Utils.Persistence voor deze winkel. Standaard wordt geheugenpersistentie gebruikt (Javascript-object).
+   * persistentie: Het object ContextHub.Utils.Persistence voor deze winkel. Standaard wordt geheugenpersistentie gebruikt (JavaScript-object).
    * service: (Object)
 
       * host: (Tekenreeks) De servernaam of het IP-adres.
@@ -484,9 +484,9 @@ initialiseert het object ContextHub.Store.JSONPStore.
          * auto: //
          * true: https://
          * false: https://
+
       * timeout: (Aantal) de hoeveelheid tijd op de dienst JSONP te wachten om vóór timing uit, in milliseconden te antwoorden.
       * ttl: De minimumhoeveelheid tijd in milliseconden die tussen vraag tot de dienst JSONP overgaat. (Zie de [queryService](/help/sites-developing/contexthub-api.md#queryservice-reload) functie).
-
 
 #### queryService(reload) {#queryservice-reload}
 
@@ -522,7 +522,7 @@ ContextHub.Store.PersistedStore extends [ContextHub.Store.Core](/help/sites-deve
 
 ## ContextHub.Store.SessionStore {#contexthub-store-sessionstore}
 
-ContextHub.Store.SessionStore is uitgebreid [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) dus neemt het alle functies van die klasse over. De gegevens in deze opslag blijven behouden met in-memory persistance (Javascript-object).
+ContextHub.Store.SessionStore is uitgebreid [ContextHub.Store.Core](/help/sites-developing/contexthub-api.md#contexthub-store-core) dus neemt het alle functies van die klasse over. De gegevens in deze opslag blijven behouden met in-memory persistance (JavaScript-object).
 
 ## ContextHub.UI {#contexthub-ui}
 
@@ -832,7 +832,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializes Javascript-waarden en -objecten in tekenreekswaarden in de JSON-indeling.
+Hiermee worden JavaScript-waarden en -objecten geserialiseerd naar tekenreekswaarden in de JSON-indeling.
 
 **Parameters**
 
@@ -1074,7 +1074,7 @@ Een kopie van de `tree` object dat het `key`/ `value` paar.
 
 **Voorbeeld**
 
-Overweeg de volgende Javascript-code:
+Overweeg de volgende JavaScript-code:
 
 ```
 var myObject = {
@@ -1109,7 +1109,7 @@ Retourneert de winkeltypen die zijn geregistreerd als opslagkandidaten. Of wint 
 
 **Parameters**
 
-* **storeType:** (String) De naam van het winkeltype. Zie de `storeType` parameter van de [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) functie.
+* **storeType:** (String) De naam van het winkeltype. Zie de `storeType` parameter van de [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) functie.
 
 **Retourneert**
 
@@ -1121,7 +1121,7 @@ Retourneert een winkeltype van de geregistreerde kandidaten. Als meer dan één 
 
 **Parameters**
 
-* storeType: (String) De naam van de opslagkandidaat. Zie de `storeType` parameter van de [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) functie.
+* storeType: (String) De naam van de opslagkandidaat. Zie de `storeType` parameter van de [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) functie.
 
 **Retourneert**
 
@@ -1133,7 +1133,7 @@ Retourneert de namen van de winkeltypen die als opslagkandidaten zijn geregistre
 
 **Retourneert**
 
-Een array van tekenreekswaarden, waarbij elke tekenreeks het opslagtype is waarmee een opslagkandidaat is geregistreerd. Zie de `storeType` parameter van de [ `ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) functie.
+Een array van tekenreekswaarden, waarbij elke tekenreeks het opslagtype is waarmee een opslagkandidaat is geregistreerd. Zie de `storeType` parameter van de [`ContextHub.Utils.storeCandidates.registerStoreCandidate`](/help/sites-developing/contexthub-api.md#contexthub-utils-storecandidates) functie.
 
 #### registerStoreCandidate(store, storeType, priority, apply) {#registerstorecandidate-store-storetype-priority-applies}
 

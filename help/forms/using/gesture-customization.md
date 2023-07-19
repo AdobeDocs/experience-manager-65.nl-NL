@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -53,21 +53,21 @@ In de AEM Forms-app wordt met de veegbeweging links een nieuwe taak of beginpunt
 
    * &quot;tap.taskContentArea&quot;: &quot;onTaskClick&quot;,
 
-      &quot;tap.taskOpenArea&quot;: &quot;onTaskClick&quot;,
+     &quot;tap.taskOpenArea&quot;: &quot;onTaskClick&quot;,
 
-      &quot;tik.task-content&quot;: &quot;onTaskClick&quot;,
+     &quot;tik.task-content&quot;: &quot;onTaskClick&quot;,
 
-      &quot;tap.last_empty_div&quot;: &quot;onTaskClick&quot;,
+     &quot;tap.last_empty_div&quot;: &quot;onTaskClick&quot;,
+
    en vervangen door
 
    * &quot;swipe.taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;swipe.taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;swipe.taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-      &quot;veeggebaar.task-content&quot;: &quot;onTaskClick&quot;,
+     &quot;veeggebaar.task-content&quot;: &quot;onTaskClick&quot;,
 
-      &quot;veeggebaar.last_empty_div&quot;: &quot;onTaskClick&quot;,
-
+     &quot;veeggebaar.last_empty_div&quot;: &quot;onTaskClick&quot;,
 
 1. Sla het bestand op en sluit het `task.js` bestand.
 1. De AEM Forms-app ontwikkelen en uitvoeren. Nu kunt u een toepassing openen met een veegbeweging naar links en een veegbeweging naar rechts.

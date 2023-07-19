@@ -10,9 +10,9 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '774'
 ht-degree: 1%
 
 ---
@@ -56,7 +56,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
 
       1. Open de [referentie-rail](/help/sites-authoring/author-environment-tools.md#showingpagereferences) en selecteert u de gewenste bronpagina met [selectiemodus](/help/sites-authoring/basic-handling.md) (of selecteer en open de referentie-rail, de volgorde is niet belangrijk). Alle verwijzingen worden weergegeven.
 
-      1. Selecteren **Starten** (bv. Startpagina&#39;s (1)) om een lijst weer te geven met de specifieke lanceringen.
+      1. Selecteren **Starten** (bijvoorbeeld Launches (1)) om een lijst weer te geven met de specifieke startacties.
       1. Selecteer de specifieke lancering om de beschikbare acties te tonen.
       1. Selecteren **Starten bevorderen** om de wizard te openen.
 

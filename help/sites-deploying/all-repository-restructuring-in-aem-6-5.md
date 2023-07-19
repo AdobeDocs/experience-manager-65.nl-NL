@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 3f64bd7f5b4eb43aeefb9277a94e10ef1f0df59c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2690'
+source-wordcount: '2691'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Vanaf AEM 6.4, is er geen standaardconfiguratie ContextHub. Daarom op het wortel
 
 Bovendien op de configuratie ContextHub, `sling:resourceType` moet worden bijgewerkt om relatief en niet absoluut te zijn.
 
-1. Open de eigenschappen van de ContextHub configuratieknooppunt in CRX DE Lite, bijvoorbeeld `/apps/settings/cloudsettings/legacy/contexthub`
+1. Open de eigenschappen van ContextHub configuratieknoop in CRX DE Lite, bijvoorbeeld, `/apps/settings/cloudsettings/legacy/contexthub`
 1. Wijzigen `sling:resourceType` van `/libs/granite/contexthub/cloudsettings/components/baseconfiguration` tot `granite/contexthub/cloudsettings/components/baseconfiguration`
 
 De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan absoluut zijn.
@@ -99,7 +99,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
       <ol>
        <li>Bijvoorbeeld exporteren:
         <ul>
-         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code> en </li>
+         <li><code>/conf/global/settings/workflow/models/dam/my_workflow_model</code><br /> en </li>
          <li><code>/var/workflow/models/dam/my_workflow_model</code></li>
         </ul> </li>
       </ol> </li>

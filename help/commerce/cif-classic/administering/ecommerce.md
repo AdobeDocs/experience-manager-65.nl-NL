@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 745ca1aa7bc96d0938ec550a357d9edcbea341db
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '753'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
   </tr>
   <tr>
    <td>Wanneer gebruiken</td>
-   <td>Beperkte gebruiksgevallen: Bijvoorbeeld scenario's waarin kleine, statische catalogi mogelijk moeten worden geïmporteerd</td>
+   <td>Beperkte gebruiksgevallen: Bijvoorbeeld, scenario's waar de kleine, statische catalogi kunnen moeten worden ingevoerd</td>
    <td>Voorkeursoplossing in de meeste gebruikscategorieën</td>
   </tr>
  </tbody>
@@ -163,7 +163,7 @@ AEM eCommerce biedt:
 * De mogelijkheid om **ervaringsgestuurde handel op basis van verkoopgegevens en activiteiten**. Dit staat u toe om vele scenario&#39;s te realiseren:
 
    * Een voorbeeld hiervan kan zijn het verlagen van de verzendkosten wanneer de totale bestelling een bepaald bedrag overschrijdt.
-   * Een andere mogelijkheid is mogelijk om seizoensgebonden aanbiedingen te doen die profielgegevens gebruiken (bijvoorbeeld locatie). Deze kunnen vervolgens worden gemarkeerd, ook als dat nodig is, afhankelijk van andere factoren.
+   * U kunt ook seizoensgebonden aanbiedingen aanbieden die profielgegevens gebruiken (bijvoorbeeld locatie). Deze kunnen vervolgens worden gemarkeerd, ook als dat nodig is, afhankelijk van andere factoren.
 
   In het onderstaande voorbeeld ziet u een gummetje omdat de inhoud van het karretje minder dan $75 bedraagt:
 

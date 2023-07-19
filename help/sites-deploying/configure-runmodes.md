@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 7d91fbdaae7ade27e9d6bf42bbcd5b16d3f6e358
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ U kunt:
 
 * [Definieer verzamelingen van configuratieparameters voor elke uitvoeringsmodus](#defining-configuration-properties-for-a-run-mode).
 
-   Een basisreeks configuratieparameters wordt toegepast voor alle looppaswijzen, kunt u extra reeksen aan het doel van uw specifiek milieu dan stemmen. Deze worden naar wens toegepast.
+  Een basisreeks configuratieparameters wordt toegepast voor alle looppaswijzen, kunt u extra reeksen aan het doel van uw specifiek milieu dan stemmen. Deze worden naar wens toegepast.
 
 * [Aanvullende bundels definiëren die voor een bepaalde modus moeten worden geïnstalleerd](#defining-additional-bundles-to-be-installed-for-a-run-mode).
 
@@ -89,25 +89,25 @@ De uitvoeringsmodus wordt aangegeven met een achtervoegsel op de mapnaam. Hierdo
 
 * `config`
 
-   Van toepassing op alle runmodi
+  Van toepassing op alle runmodi
 
 * `config.author`
 
-   Wordt gebruikt voor de uitvoeringsmodus van de auteur
+  Wordt gebruikt voor de uitvoeringsmodus van de auteur
 
 * `config.publish`
 
-   Wordt gebruikt voor de publicatiemodus
+  Wordt gebruikt voor de publicatiemodus
 
 * `config.<run-mode>`
 
-   Wordt gebruikt voor de toepasselijke uitvoeringsmodus; bijvoorbeeld config
+  Wordt gebruikt voor de toepasselijke uitvoeringsmodus; bijvoorbeeld config
 
 Zie [OSGi-configuratie in de opslagplaats](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) voor meer informatie over het bepalen van de individuele configuratieknooppunten binnen deze omslagen en voor het creëren van configuraties voor combinaties veelvoudige looppaswijzen.
 
 >[!NOTE]
 >
->Voor [Installatie-uitvoeringsmodi](#installation-run-modes) (bijvoorbeeld de auteur) de uitvoeringsmodus kan na de installatie niet worden gewijzigd. Wijzigingen in de afzonderlijke configuratie-eigenschappen worden echter van kracht na het opnieuw opstarten.
+>Voor [Installatie-uitvoeringsmodi](#installation-run-modes) (bijvoorbeeld de auteur) de uitvoeringsmodus kan na de installatie niet meer worden gewijzigd. Wijzigingen in de afzonderlijke configuratie-eigenschappen worden echter van kracht na het opnieuw opstarten.
 
 ## Aanvullende bundels definiëren die moeten worden geïnstalleerd voor een uitvoeringsmodus {#defining-additional-bundles-to-be-installed-for-a-run-mode}
 
@@ -123,8 +123,8 @@ Deze mappen zijn van het type `nt:folder` en moet de juiste bundel bevatten.
 Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepalen welke op opstarten moet worden gebruikt. Er zijn verschillende methoden om op te geven welke uitvoeringsmodus moet worden gebruikt. de volgorde van resolutie is :
 
 1. [systeemeigenschappen (](#using-a-system-property-in-the-start-script)
-1. [ ](#using-the-sling-properties-file)
-1. [ ](#using-the-r-option)
+1. [](#using-the-sling-properties-file)
+1. [](#using-the-r-option)
 1. [Bestandsnaamdetectie](#filename-detection-renaming-the-jar-file)
 
 Wanneer u een toepassingsserver gebruikt, kunt u ook [de uitvoeringsmodus in web.xml definiëren](#defining-the-run-mode-in-web-xml-with-application-server).
@@ -155,7 +155,7 @@ Een systeemeigenschap in het beginscript kan worden gebruikt om de uitvoermodus 
 
 * Gebruik bijvoorbeeld het volgende om een instantie te starten als een publicatie-instantie voor productie die zich in de VS bevindt:
 
-   `-Dsling.run.modes=publish,prod,us`
+  `-Dsling.run.modes=publish,prod,us`
 
 ### Bestandsnaamdetectie - naam van jar-bestand wijzigen {#filename-detection-renaming-the-jar-file}
 

@@ -12,9 +12,9 @@ discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2483'
+source-wordcount: '2482'
 ht-degree: 1%
 
 ---
@@ -53,11 +53,11 @@ Voor gedetailleerde, geleidelijke instructies, op hoe te om synchronisatie over 
 
 * **vlt-pakket**
 
-   Het is een ZIP-bestand met alle wijzigingen die op een uitgever zijn aangebracht en die over alle uitgevers moeten worden verspreid. Wijzigingen op een uitgever genereren gebeurtenissen die door de gebeurtenislistener voor wijzigingen worden gekozen. Hiermee maakt u een vlt-pakket dat alle wijzigingen bevat.
+  Het is een ZIP-bestand met alle wijzigingen die op een uitgever zijn aangebracht en die over alle uitgevers moeten worden verspreid. Wijzigingen op een uitgever genereren gebeurtenissen die door de gebeurtenislistener voor wijzigingen worden gekozen. Hiermee maakt u een vlt-pakket dat alle wijzigingen bevat.
 
 * **distributiepakket**
 
-   Het bevat distributiegegevens voor verkopen. Dat is informatie over waar de inhoud moet worden verspreid en wanneer deze als laatste werd verspreid.
+  Het bevat distributiegegevens voor verkopen. Dat is informatie over waar de inhoud moet worden verspreid en wanneer deze als laatste werd verspreid.
 
 ## Wat gebeurt er als ... {#what-happens-when}
 
@@ -79,7 +79,7 @@ Als onderdeel van het proces worden de nieuwe sitepagina&#39;s gekopieerd naar a
 
 ### Gebruikers of gebruikersgroepen worden gemaakt met Beveiligingsconsole {#users-or-user-groups-are-created-using-security-console}
 
-Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de auteursomgeving en andersom.
+Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de auteursomgeving en omgekeerd.
 
 Wanneer de [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md) -console wordt gebruikt om nieuwe gebruikers toe te voegen in de publicatieomgeving. Bij gebruikerssynchronisatie worden de nieuwe gebruikers en hun groepslidmaatschap indien nodig gesynchroniseerd met andere publicatieinstanties. Gebruikerssynchronisatie synchroniseert ook gebruikersgroepen die zijn gemaakt via de beveiligingsconsole.
 
@@ -124,13 +124,14 @@ Configuratie van Apache Sling Sync Agents configureren:
 
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram).
 
-      Naam verifiëren: **socialpubsync.**
+     Naam verifiëren: **socialpubsync.**
 
    * Selecteer **Ingeschakeld** selectievakje.
    * Selecteren **Meerdere wachtrijen gebruiken.**
    * Opgeven **Eindpunten van export** en **Eindpunten importeren** (U kunt meer eindpunten voor de exportfunctie en de importfunctie toevoegen.)
 
-      Deze eindpunten bepalen waar u de inhoud van wilt krijgen en waar u de inhoud wilt duwen. De auteur haalt de inhoud van het gespecificeerde exportereindpunt op en duwt de inhoud aan de uitgevers (buiten de uitgever waarvan het de inhoud haalde).
+     Deze eindpunten bepalen waar u de inhoud van wilt krijgen en waar u de inhoud wilt duwen. De auteur haalt de inhoud van het gespecificeerde exportereindpunt op en duwt de inhoud aan de uitgevers (buiten de uitgever waarvan het de inhoud haalde).
+
    ![sync-agent-fact](assets/sync-agent-fact.png)
 
 ### Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobe-granite-distribution-encrypted-password-transport-secret-provider}
@@ -216,7 +217,7 @@ Het opiniepeilingsinterval wijzigen:
 
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram).
 
-      Verifiëren **socialpubsync - scheduled-trigger**
+     Verifiëren **socialpubsync - scheduled-trigger**
 
    * Stel het interval in seconden in op het gewenste interval en sla het op.
 

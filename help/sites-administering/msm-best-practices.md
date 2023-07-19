@@ -4,9 +4,9 @@ description: Zoek naar beste praktijken die door Adobe engineering en consultanc
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 
 * zorgvuldig **planstructuur en inhoudsstromen** voordat de implementatie wordt gestart.
 * **Houd de hoeveelheid levende exemplaren tot een minimum.** Het verwerken van live kopieën is een hulpbronnenintensieve taak. Hoe meer live kopieën er in uw systeem zijn, des te groter de invloed op de prestaties: van het verwerken van interne levende exemplaarindexen, over levende exemplaarverrichtingen zoals rollouts, aan verrichtingen UI zoals het tonen van levende exemplaarverhoudingen in Sites Admin verwijzingen spoorstaaf. De beste manier is om live kopieën te maken van sites of vertakkingen van een site, waarbij de live-kopieerrelaties worden overgeërfd op pagina&#39;s in de site of vertakking. Vermijd het maken van individuele live kopieën voor pagina&#39;s in een site of vertakking wanneer de volledige structuur in een live kopie kan worden gemaakt.
-* **Pas de aanpassingen zoveel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
+* **Pas de aanpassingen zoveel als nodig is, maar zo weinig mogelijk.** Hoewel MSM een hoge mate van aanpassing (bijvoorbeeld, rollout configuraties) steunt, typisch is de beste praktijken voor de prestaties, de betrouwbaarheid en de upgradeability van uw website aanpassing minimaliseren.
 * Een **bestuur** model in een vroeg stadium, en de gebruikers dienovereenkomstig trainen, om succes te verzekeren. Een goede praktijk vanuit bestuurlijk oogpunt is: **de autoriteit die producenten van lokale inhoud hebben** inhoud toewijzen/verbinden aan andere lokale gebruikers en hun respectievelijke live kopieën. Dit komt omdat onbestuurde, geketende overerving de complexiteit van een MSM-structuur aanzienlijk kan verhogen en de prestaties en betrouwbaarheid ervan in gevaar kan brengen.
 
 * Zodra er een plan voor uw structuur, inhoudsstromen, automatisering en bestuur bestaat - **prototype maken en uw systeem grondig testen**, voordat wordt begonnen met de live implementatie.
@@ -32,7 +32,6 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 >* [Problemen met MSM en veelgestelde vragen oplossen](troubleshoot-msm.md)
 >
 
-
 >[!NOTE]
 >
 >U kunt ook de opdracht [Referentiecomponent](/help/sites-authoring/default-components-foundation.md#reference) om één pagina of alinea opnieuw te gebruiken. Houd echter rekening met:
@@ -40,7 +39,6 @@ MSM is een configureerbaar framework voor het automatiseren van de implementatie
 >* MSM is flexibeler en staat fijnkorrelige controle over toe welke inhoud wordt gesynchroniseerd en wanneer.
 >* [Basiscomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) worden nu aanbevolen voor de basiscomponenten.
 >
-
 
 ## Live Copy-bronnen en configuraties voor blauwdrukken {#live-copy-sources-and-blueprint-configurations}
 
@@ -81,11 +79,11 @@ U ziet dat AEM twee hoofdbenaderingen heeft voor het maken van live kopieën:
 
 * Wanneer [een actieve kopie maken](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page)
 
-   Dit kan als generischere benadering worden beschouwd, toestaand u om levende exemplaren van om het even welke pagina tot stand te brengen. De inhoudsstructuur van een live kopie komt exact overeen met de bron.
+  Dit kan als generischere benadering worden beschouwd, toestaand u om levende exemplaren van om het even welke pagina tot stand te brengen. De inhoudsstructuur van een live kopie komt exact overeen met de bron.
 
 * Wanneer [een site maken](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration)
 
-   Dit is een meer gespecialiseerde benadering, vooral voor het creëren van websites met een meertalige structuur.
+  Dit is een meer gespecialiseerde benadering, vooral voor het creëren van websites met een meertalige structuur.
 
 Houd rekening met het volgende wanneer u een site maakt:
 
@@ -93,7 +91,7 @@ Houd rekening met het volgende wanneer u een site maakt:
 * Als u wilt dat de taalpaden op een nieuwe site kunnen worden geselecteerd, moeten de overeenkomstige taalwortels in de blauwdruk (bron) aanwezig zijn.
 * Eenmaal [nieuwe site is gemaakt als een live kopie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (gebruiken **Maken** vervolgens **Site**), zijn de eerste twee niveaus van deze kopie *ondiep*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
 
-   Het helpt voorkomen:
+  Het helpt voorkomen:
 
    * handmatig talen toevoegen in de blauwdruk (onder het eerste niveau)
    * handmatig inhoud toevoegen direct onder de hoofdmap van de taal,
@@ -110,7 +108,7 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
       * Met MSM kunt u overerving op pagina- en/of componentniveau annuleren. Zo voorkomt u bij de volgende rollout dat vertaalde inhoud (van een live kopie met nog niet-vertaalde inhoud van een blauwdruk) wordt overschreven.
       * Sommige vertalingsconnectors van derden automatiseren dit beheer van MSM-overerving.
 
-         Neem contact op met uw vertaalserviceprovider voor meer informatie.
+        Neem contact op met uw vertaalserviceprovider voor meer informatie.
 
       * Een alternatieve benadering voor het maken en vertalen van taalmeesters is het gebruik van taalkopieën in combinatie met AEM kader voor vertaalintegratie buiten de doos.
 
@@ -142,9 +140,9 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
    * Deze nieuwe configuratie moet de actie omvatten:
 
-      `PageMoveAction`
+     `PageMoveAction`
 
-      Voeg geen andere acties aan deze configuratie toe.
+     Voeg geen andere acties aan deze configuratie toe.
 
 * Plaats de nieuwe configuratie:
 
@@ -152,13 +150,13 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
       * Plaats de nieuw gecreëerde configuratie vóór de standaardrollout configuratie.
 
-         De standaardrollout configuratie zal ervoor zorgen om de pagina&#39;s in hun oude plaats te schrappen.
+        De standaardrollout configuratie zal ervoor zorgen om de pagina&#39;s in hun oude plaats te schrappen.
+
    * Als u de pagina wilt uitrollen, verplaatst u de pagina&#39;s terwijl de respectievelijke pagina&#39;s op hun oude locatie in de live kopieën blijven staan (de inhoud wordt in feite gedupliceerd):
 
       * Plaats de nieuw gecreëerde configuratie na de standaardrollout configuratie.
 
-         Zo voorkomt u dat inhoud wordt verwijderd uit de live kopie of gedeactiveerd uit publicatie.
-
+        Zo voorkomt u dat inhoud wordt verwijderd uit de live kopie of gedeactiveerd uit publicatie.
 
 ## Rollen aanpassen {#customizing-rollouts}
 

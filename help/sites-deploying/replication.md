@@ -12,7 +12,7 @@ discoiquuid: 3cae081e-93e3-4317-b307-1316283c307a
 docset: aem65
 feature: Configuring
 exl-id: 09943de5-8d62-4354-a37f-0521a66b4c49
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '3416'
 ht-degree: 0%
@@ -100,8 +100,7 @@ Deze replicatie wordt in de auteursomgeving geactiveerd door:
 * **Standaardagent (publiceren)**
 Deze agent repliceert inhoud aan het gebrek publiceren instantie.
 De details van dit (configuratie en logboeken) kunnen van de console van Hulpmiddelen van het auteursmilieu worden betreden; of:
-
-   `https://localhost:4502/etc/replication/agents.author/publish.html`.
+  `https://localhost:4502/etc/replication/agents.author/publish.html`.
 
 #### Replication Agents - Out of the Box {#replication-agents-out-of-the-box}
 
@@ -127,17 +126,17 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
 * **Naam**
 
-   Een unieke naam voor de replicatieagent.
+  Een unieke naam voor de replicatieagent.
 
 * **Beschrijving**
 
-   Een beschrijving van het doel deze replicatieagent zal dienen.
+  Een beschrijving van het doel deze replicatieagent zal dienen.
 
 * **Ingeschakeld**
 
-   Wijst erop of de replicatieagent momenteel wordt toegelaten.
+  Wijst erop of de replicatieagent momenteel wordt toegelaten.
 
-   Wanneer de agent is **enabled** de wachtrij wordt weergegeven als:
+  Wanneer de agent is **enabled** de wachtrij wordt weergegeven als:
 
    * **Actief** wanneer objecten worden verwerkt.
    * **Niet-actief** als de wachtrij leeg is.
@@ -145,94 +144,94 @@ Wanneer het vormen van een replicatieagent van de console van Hulpmiddelen, zijn
 
 * **Type serienummering**
 
-   Het type van rangschikking:
+  Het type van rangschikking:
 
    * **Standaard**: Plaats als de agent automatisch moet worden geselecteerd.
    * **Dispatcher Flush**: Selecteer dit als de agent moet worden gebruikt voor het leegmaken van de verzendingscache.
 
 * **Vertraging opnieuw proberen**
 
-   De vertraging (wachttijd in milliseconden) tussen twee pogingen, mocht een probleem worden ontmoet.
+  De vertraging (wachttijd in milliseconden) tussen twee pogingen, mocht een probleem worden ontmoet.
 
-   Standaard: `60000`
+  Standaard: `60000`
 
 * **Gebruiker-id agent**
 
-   Afhankelijk van het milieu, zal de agent deze gebruikersrekening gebruiken om:
+  Afhankelijk van het milieu, zal de agent deze gebruikersrekening gebruiken om:
 
    * de inhoud van de ontwerpomgeving verzamelen en in een pakket plaatsen
    * de inhoud maken en schrijven in de publicatieomgeving
 
-   Laat dit veld leeg om de systeemgebruikersaccount te gebruiken (de account die in sling is gedefinieerd als de beheerdersgebruiker). standaard is dit `admin`).
+  Laat dit veld leeg om de systeemgebruikersaccount te gebruiken (de account die in sling is gedefinieerd als de beheerdersgebruiker). standaard is dit `admin`).
 
-   >[!CAUTION]
-   >
-   >Voor een agent in de auteursomgeving dit account *moet* hebben leestoegang tot alle paden die u wilt herhalen.
+  >[!CAUTION]
+  >
+  >Voor een agent in de auteursomgeving dit account *moet* hebben leestoegang tot alle paden die u wilt herhalen.
 
-   >[!CAUTION]
-   >
-   >Voor een agent in de publicatieomgeving dit account *moet* beschikken over de benodigde lees- en schrijfrechten om de inhoud te repliceren.
+  >[!CAUTION]
+  >
+  >Voor een agent in de publicatieomgeving dit account *moet* beschikken over de benodigde lees- en schrijfrechten om de inhoud te repliceren.
 
-   >[!NOTE]
-   >
-   >Dit kan als mechanisme worden gebruikt om specifieke inhoud voor replicatie te selecteren.
+  >[!NOTE]
+  >
+  >Dit kan als mechanisme worden gebruikt om specifieke inhoud voor replicatie te selecteren.
 
 * **Logboekniveau**
 
-   Hiermee bepaalt u het detailniveau dat voor logberichten moet worden gebruikt.
+  Hiermee bepaalt u het detailniveau dat voor logberichten moet worden gebruikt.
 
    * `Error`: alleen fouten worden vastgelegd
    * `Info`: fouten, waarschuwingen en andere informatieberichten worden geregistreerd
    * `Debug`: een hoog niveau van detail zal in de berichten, hoofdzakelijk voor zuiveringsdoeleinden worden gebruikt
 
-   Standaard: `Info`
+  Standaard: `Info`
 
 * **Gebruiken voor omgekeerde replicatie**
 
-   Wijst erop of deze agent voor omgekeerde replicatie zal worden gebruikt; Hiermee wordt gebruikersinvoer vanuit de publicatieomgeving geretourneerd naar de auteursomgeving.
+  Wijst erop of deze agent voor omgekeerde replicatie zal worden gebruikt; Hiermee wordt gebruikersinvoer vanuit de publicatieomgeving geretourneerd naar de auteursomgeving.
 
 * **Alias-update**
 
-   Als u deze optie selecteert, worden aanvragen voor validatie van aliassen of ijdelingspaden naar Dispatcher ingeschakeld. Zie ook [Een Dispatcher Flush Agent configureren](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
+  Als u deze optie selecteert, worden aanvragen voor validatie van aliassen of ijdelingspaden naar Dispatcher ingeschakeld. Zie ook [Een Dispatcher Flush Agent configureren](/help/sites-deploying/replication.md#configuring-a-dispatcher-flush-agent).
 
 #### Vervoer {#transport}
 
 * **URI**
 
-   Dit specificeert het ontvangende servlet bij de doelplaats. Met name kunt u hier de hostnaam (of alias) en het contextpad naar de doelinstantie opgeven.
+  Dit specificeert het ontvangende servlet bij de doelplaats. Met name kunt u hier de hostnaam (of alias) en het contextpad naar de doelinstantie opgeven.
 
-   Bijvoorbeeld:
+  Bijvoorbeeld:
 
    * Een standaardagent kan worden gerepliceerd naar `https://localhost:4503/bin/receive`
    * Een Dispatcher Flush-agent kan zich repliceren naar `https://localhost:8000/dispatcher/invalidate.cache`
 
-   Het hier opgegeven protocol (HTTP of HTTPS) bepaalt de transportmethode.
+  Het hier opgegeven protocol (HTTP of HTTPS) bepaalt de transportmethode.
 
-   Voor de agenten van de Vlek van de Verzender, wordt het bezit van URI gebruikt slechts als u op weg-gebaseerde virtuele gastheeringangen gebruikt om tussen landbouwbedrijven te onderscheiden, gebruikt u dit gebied om het landbouwbedrijf te richten om ongeldig te maken. farm #1 heeft bijvoorbeeld een virtuele host van `www.mysite.com/path1/*` en farm #2 heeft een virtuele host van `www.mysite.com/path2/*`. U kunt een URL gebruiken van `/path1/invalidate.cache` om de eerste boerderij te richten en `/path2/invalidate.cache` om de tweede boerderij te richten.
+  Voor de agenten van de Vlek van de Verzender, wordt het bezit van URI gebruikt slechts als u op weg-gebaseerde virtuele gastheeringangen gebruikt om tussen landbouwbedrijven te onderscheiden, gebruikt u dit gebied om het landbouwbedrijf te richten om ongeldig te maken. farm #1 heeft bijvoorbeeld een virtuele host van `www.mysite.com/path1/*` en farm #2 heeft een virtuele host van `www.mysite.com/path2/*`. U kunt een URL gebruiken van `/path1/invalidate.cache` om de eerste boerderij te richten en `/path2/invalidate.cache` om de tweede boerderij te richten.
 
 * **Gebruiker**
 
-   Gebruikersnaam van de account die moet worden gebruikt voor toegang tot het doel.
+  Gebruikersnaam van de account die moet worden gebruikt voor toegang tot het doel.
 
 * **Wachtwoord**
 
-   Wachtwoord voor de account die moet worden gebruikt voor toegang tot het doel.
+  Wachtwoord voor de account die moet worden gebruikt voor toegang tot het doel.
 
 * **NTLM-domein**
 
-   Domein voor NTML-verificatie.
+  Domein voor NTML-verificatie.
 
 * **NTLM-host**
 
-   Host voor NTML-verificatie.
+  Host voor NTML-verificatie.
 
 * **Versoepelde SSL inschakelen**
 
-   Schakel deze optie in als u wilt dat zelfgecertificeerde SSL-certificaten worden geaccepteerd.
+  Schakel deze optie in als u wilt dat zelfgecertificeerde SSL-certificaten worden geaccepteerd.
 
 * **Verlopen certificaten toestaan**
 
-   Schakel deze optie in als u verlopen SSL-certificaten wilt accepteren.
+  Schakel deze optie in als u verlopen SSL-certificaten wilt accepteren.
 
 #### Proxy {#proxy}
 
@@ -240,80 +239,80 @@ De volgende instellingen zijn alleen nodig als een proxy nodig is:
 
 * **Proxyhost**
 
-   Hostnaam van de proxy die wordt gebruikt voor vervoer.
+  Hostnaam van de proxy die wordt gebruikt voor vervoer.
 
 * **Proxypoort**
 
-   Poort van de proxy.
+  Poort van de proxy.
 
 * **Proxygebruiker**
 
-   Gebruikersnaam van de account die moet worden gebruikt.
+  Gebruikersnaam van de account die moet worden gebruikt.
 
 * **Proxywachtwoord**
 
-   Wachtwoord van de account die moet worden gebruikt.
+  Wachtwoord van de account die moet worden gebruikt.
 
 * **NTLM-domein proxy**
 
-   Het NTLM-proxydomein.
+  Het NTLM-proxydomein.
 
 * **NTLM-host proxy**
 
-   Het NTLM-proxydomein.
+  Het NTLM-proxydomein.
 
 #### Uitgebreid {#extended}
 
 * **Interface**
 
-   Hier kunt u de socketinterface definiëren waaraan u wilt binden.
+  Hier kunt u de socketinterface definiëren waaraan u wilt binden.
 
-   Hiermee wordt het lokale adres ingesteld dat moet worden gebruikt bij het maken van verbindingen. Als deze niet is ingesteld, wordt het standaardadres gebruikt. Dit is nuttig om de interface te specificeren om op multi-homed of gegroepeerde systemen te gebruiken.
+  Hiermee wordt het lokale adres ingesteld dat moet worden gebruikt bij het maken van verbindingen. Als deze niet is ingesteld, wordt het standaardadres gebruikt. Dit is nuttig om de interface te specificeren om op multi-homed of gegroepeerde systemen te gebruiken.
 
 * **HTTP-methode**
 
-   De HTTP-methode die moet worden gebruikt.
+  De HTTP-methode die moet worden gebruikt.
 
-   Voor een Dispatcher Flush-agent is dit bijna altijd GET en mag het niet worden gewijzigd (POST zou een andere mogelijke waarde zijn).
+  Voor een Dispatcher Flush-agent is dit bijna altijd GET en mag het niet worden gewijzigd (POST zou een andere mogelijke waarde zijn).
 
 * **HTTP-headers**
 
-   Deze worden gebruikt voor Dispatcher Flush-middelen en geven elementen op die moeten worden verwijderd.
+  Deze worden gebruikt voor Dispatcher Flush-middelen en geven elementen op die moeten worden verwijderd.
 
-   Voor een Dispatcher Flush-agent hoeven de drie standaarditems niet te worden gewijzigd:
+  Voor een Dispatcher Flush-agent hoeven de drie standaarditems niet te worden gewijzigd:
 
    * `CQ-Action:{action}`
    * `CQ-Handle:{path}`
    * `CQ-Path:{path}`
 
-   Deze worden, indien van toepassing, gebruikt om de actie aan te geven die moet worden gebruikt bij het spoelen van de handgreep of het pad. De subparameters zijn dynamisch:
+  Deze worden, indien van toepassing, gebruikt om de actie aan te geven die moet worden gebruikt bij het spoelen van de handgreep of het pad. De subparameters zijn dynamisch:
 
    * `{action}` geeft een replicatieactie aan
 
    * `{path}` Hiermee wordt een pad aangegeven
 
-   Zij worden vervangen door het pad/de actie die relevant is voor het verzoek en hoeven daarom niet &quot;hardcoded&quot; te zijn:
+  Zij worden vervangen door het pad/de actie die relevant is voor het verzoek en hoeven daarom niet &quot;hardcoded&quot; te zijn:
 
-   >[!NOTE]
-   >
-   >Als u AEM in een andere context dan de geadviseerde standaardcontext hebt geïnstalleerd, dan zult u de context in de Kopballen van HTTP moeten registreren. Bijvoorbeeld:
-   >`CQ-Handle:/<*yourContext*>{path}`
+  >[!NOTE]
+  >
+  >Als u AEM in een andere context dan de geadviseerde standaardcontext hebt geïnstalleerd, dan zult u de context in de Kopballen van HTTP moeten registreren. Bijvoorbeeld:
+  >`CQ-Handle:/<*yourContext*>{path}`
 
 * **Verbinding sluiten**
 
-   Schakel deze optie in om de verbinding na elk verzoek te sluiten.
+  Schakel deze optie in om de verbinding na elk verzoek te sluiten.
 
 * **Time-out voor verbinding**
 
-   Time-out (in milliseconden) die moet worden toegepast wanneer wordt geprobeerd een verbinding tot stand te brengen.
+  Time-out (in milliseconden) die moet worden toegepast wanneer wordt geprobeerd een verbinding tot stand te brengen.
 
 * **Time-out socket**
 
-   Time-out (in milliseconden) die moet worden toegepast wanneer wordt gewacht op verkeer nadat een verbinding tot stand is gebracht.
+  Time-out (in milliseconden) die moet worden toegepast wanneer wordt gewacht op verkeer nadat een verbinding tot stand is gebracht.
 
 * **Protocol versie**
 
-   Versie van het protocol; bijvoorbeeld `1.0` voor HTTP/1.0.
+  Versie van het protocol; bijvoorbeeld `1.0` voor HTTP/1.0.
 
 #### Triggers {#triggers}
 
@@ -321,31 +320,31 @@ Deze instellingen worden gebruikt om triggers voor geautomatiseerde replicatie t
 
 * **Standaard negeren**
 
-   Indien gecontroleerd, wordt de agent uitgesloten van standaardreplicatie; dit betekent dat de code niet wordt gebruikt als een auteur van de inhoud een replicatiehandeling uitvoert.
+  Indien gecontroleerd, wordt de agent uitgesloten van standaardreplicatie; dit betekent dat de code niet wordt gebruikt als een auteur van de inhoud een replicatiehandeling uitvoert.
 
 * **Bij wijziging**
 
-   Hier zal een replicatie door deze agent automatisch teweeggebracht worden wanneer een pagina wordt gewijzigd. Dit wordt hoofdzakelijk gebruikt voor de agenten van de Vlek van de Verzender, maar ook voor omgekeerde replicatie.
+  Hier zal een replicatie door deze agent automatisch teweeggebracht worden wanneer een pagina wordt gewijzigd. Dit wordt hoofdzakelijk gebruikt voor de agenten van de Vlek van de Verzender, maar ook voor omgekeerde replicatie.
 
 * **Bij distribueren**
 
-   Als deze optie is ingeschakeld, wordt alle inhoud die is gemarkeerd voor distributie automatisch door de agent gerepliceerd wanneer deze wordt gewijzigd.
+  Als deze optie is ingeschakeld, wordt alle inhoud die is gemarkeerd voor distributie automatisch door de agent gerepliceerd wanneer deze wordt gewijzigd.
 
 * **On-/Offtime bereikt**
 
-   Dit zal automatische replicatie (om een pagina te activeren of te deactiveren zoals aangewezen) teweegbrengen wanneer de ontijden of de tijden voor een pagina worden bepaald voorkomen. Dit wordt vooral gebruikt voor Dispatcher Flush-middelen.
+  Dit zal automatische replicatie (om een pagina te activeren of te deactiveren zoals aangewezen) teweegbrengen wanneer de ontijden of de tijden voor een pagina worden bepaald voorkomen. Dit wordt vooral gebruikt voor Dispatcher Flush-middelen.
 
 * **Bij ontvangst**
 
-   Als gecontroleerd, zal de agent herhalen wanneer het ontvangen van replicatiegebeurtenissen.
+  Als gecontroleerd, zal de agent herhalen wanneer het ontvangen van replicatiegebeurtenissen.
 
 * **Geen statusupdate**
 
-   Wanneer gecontroleerd zal de agent geen update van de replicatiestatus dwingen.
+  Wanneer gecontroleerd zal de agent geen update van de replicatiestatus dwingen.
 
 * **Geen versie**
 
-   Als deze optie is ingeschakeld, wordt het versienummer van geactiveerde pagina&#39;s niet geforceerd.
+  Als deze optie is ingeschakeld, wordt het versienummer van geactiveerde pagina&#39;s niet geforceerd.
 
 ## De replicatieagents configureren {#configuring-your-replication-agents}
 
@@ -358,6 +357,7 @@ Van het lusje van Hulpmiddelen in het auteursmilieu kunt u replicatieagenten vor
 >[!NOTE]
 >
 >Wanneer een verzender HTTP- verzoeken om auteur behandelt of instanties publiceert, moet het HTTP- verzoek van de replicatieagent de kopbal van de PAD omvatten. Naast de volgende procedure, moet u de kopbal van het PAD aan de verzender lijst van cliëntkopballen toevoegen. (Zie [/clientheaders (clientheaders)](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#specifying-the-http-headers-to-pass-through-clientheaders).
+>
 
 1. Toegang krijgen tot **Gereedschappen** in AEM.
 1. Klikken **Replicatie** (linkerdeelvenster om de map te openen).
@@ -429,14 +429,14 @@ Om replicatie van inhoud voor een extra te vormen publiceer instantie moet u, ee
       * Stel de **Vertraging opnieuw proberen** tot `60000`.
 
       * Laat de **Type serienummering** als `Default`.
+
    * In de **Vervoer** tab:
 
       * Voer de vereiste URI in voor het nieuwe publicatie-exemplaar; bijvoorbeeld:
-         `https://localhost:4504/bin/receive`.
+        `https://localhost:4504/bin/receive`.
 
       * Voer de sitespecifieke gebruikersaccount in die voor replicatie wordt gebruikt.
       * U kunt desgewenst andere parameters configureren.
-
 
 1. Klikken **OK** om de instellingen op te slaan.
 
@@ -453,9 +453,7 @@ Als u problemen ondervindt, kunt u de logboeken op de auteurinstantie controlere
 >1. Vorm een replicatieagent voor het herhalen aan dat publicatiemilieu.
 >1. Een gebruikersaccount configureren; met de toegangsrechten die zijn vereist voor het lezen van de inhoud die wordt gerepliceerd naar die specifieke publicatieomgeving.
 >1. Wijs de gebruikersaccount toe als de **Gebruiker-id agent** voor de replicatieagent.
-
 >
-
 
 ### Een Dispatcher Flush-agent configureren {#configuring-a-dispatcher-flush-agent}
 
@@ -474,10 +472,11 @@ De standaardagenten zijn inbegrepen met de installatie. Nochtans, is bepaalde co
       * Laat de **Type serienummering** als `Dispatcher Flush`, of plaats het als dusdanig als creërend een nieuwe agent.
 
       * (optioneel) Selecteer **Alias-update** om validatieverzoeken van aliassen of ijdelingspaden naar Dispatcher in te schakelen.
+
    * In de **Vervoer** tab:
 
       * Voer de vereiste URI in voor het nieuwe publicatie-exemplaar; bijvoorbeeld:
-         `https://localhost:80/dispatcher/invalidate.cache`.
+        `https://localhost:80/dispatcher/invalidate.cache`.
 
       * Voer de sitespecifieke gebruikersaccount in die voor replicatie wordt gebruikt.
       * U kunt desgewenst andere parameters configureren.

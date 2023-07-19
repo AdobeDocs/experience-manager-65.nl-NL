@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3d14837d-41a8-480a-83ba-392e32f84c65
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 7ceee6819618d785f04029b9ac1c6f763995b3ac
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2861'
+source-wordcount: '2862'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Omdat HTML de aangewezen technologie voor het ontwikkelen van AEM plaatsen is, z
 
 ### HTML gebruiken {#using-htl}
 
-In HTML worden clientbibliotheken geladen via een helpersjabloon die wordt geleverd door AEM en die toegankelijk is via [ `data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Dit bestand bevat drie sjablonen, die u kunt aanroepen via [ `data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
+In HTML worden clientbibliotheken geladen via een helpersjabloon die wordt geleverd door AEM en die toegankelijk is via [`data-sly-use`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#use). Dit bestand bevat drie sjablonen, die u kunt aanroepen via [`data-sly-call`](https://helpx.adobe.com/experience-manager/htl/using/block-statements.html#template-call):
 
 * **css** - Laadt alleen de CSS-bestanden van de clientbibliotheken waarnaar wordt verwezen.
 * **js** - Hiermee worden alleen de JavaScript-bestanden geladen van de clientbibliotheken waarnaar wordt verwezen.
@@ -102,7 +102,7 @@ Voor volledige informatie, met inbegrip van attributen voor het filtreren van JS
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, die in het verleden vaak werd gebruikt om clientbibliotheken op te nemen, is sinds AEM 5.6 afgekeurd. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) moet worden gebruikt zoals hierboven beschreven.
+>`<cq:includeClientLib>`, die in het verleden vaak werd gebruikt om clientbibliotheken op te nemen, is sinds AEM 5.6 afgekeurd. [`<ui:includeClientLib>`](/help/sites-developing/taglib.md#lt-ui-includeclientlib) moet worden gebruikt zoals hierboven beschreven.
 
 ## Clientbibliotheekmappen maken {#creating-client-library-folders}
 
@@ -115,7 +115,7 @@ Clientbibliotheekmappen bevatten de volgende items:
 * De JS- en/of CSS-bronbestanden die moeten worden samengevoegd.
 * Bronnen die CSS-stijlen ondersteunen, zoals afbeeldingsbestanden.
 
-   **Opmerking:** U kunt submappen gebruiken om bronbestanden te ordenen.
+  **Opmerking:** U kunt submappen gebruiken om bronbestanden te ordenen.
 * Eén `js.txt` bestand en/of één `css.txt` bestand dat de bronbestanden identificeert die moeten worden samengevoegd in de gegenereerde JS- en/of CSS-bestanden.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -399,7 +399,7 @@ YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit o
 1. De optie **Minieren** (als deze optie nog niet is ingeschakeld).
 1. De waarde instellen **Standaardconfiguratie JS-processor** tot `min:gcc`.
 
-   Opties kunnen worden doorgegeven als deze met een puntkomma worden gescheiden, bijvoorbeeld `min:gcc;obfuscate=true`.
+   Opties kunnen worden doorgegeven als deze bijvoorbeeld met een puntkomma worden gescheiden. `min:gcc;obfuscate=true`.
 
 1. Klikken **Opslaan** om de wijzigingen op te slaan.
 

@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 * Bepaalde velden zijn gewoonlijk uniek; bijvoorbeeld een paginatitel. U moet beslissen of het zinvol is dergelijke velden in te schakelen voor bulkbewerking, wanneer er één waarde wordt toegepast.
 * Bepaalde velden kunnen meerdere waarden hebben. Dit vereist een zinvolle weergave bij het renderen.
 
-   Bijvoorbeeld een selectievakje dat &quot;Klaar voor publicatie&quot; aangeeft. Dit kan verschillende waarden hebben voordat het document bulksgewijs wordt bewerkt (bijvoorbeeld gereed, in revisie, in uitvoering).
+  Bijvoorbeeld een selectievakje dat &quot;Klaar voor publicatie&quot; aangeeft. Dit kan verschillende waarden hebben voordat u bulkbewerkingen uitvoert (bijvoorbeeld kant-en-klare versie, bezig).
 
 >[!CAUTION]
 >
@@ -36,7 +36,6 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* Niet beschikbaar voor pagina&#39;s in een live kopie.
 >* Alleen beschikbaar voor pagina&#39;s met hetzelfde brontype.
 >
-
 
 >[!NOTE]
 >
@@ -55,7 +54,6 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
-
 
 Velden zijn ingeschakeld op de pagina-component (*niet* in de template):
 
@@ -92,6 +90,5 @@ Velden zijn ingeschakeld op de pagina-component (*niet* in de template):
    >
    >    1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
    >    1. Breng wijzigingen aan in `/apps`
-
 
 1. Selecteren **Alles opslaan** om uw updates voort te zetten.

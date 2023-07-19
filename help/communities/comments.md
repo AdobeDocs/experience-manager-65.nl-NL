@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '980'
+source-wordcount: '979'
 ht-degree: 0%
 
 ---
@@ -155,7 +155,7 @@ Onder de **Instellingen sorteren** , geeft u op hoe de geposte opmerkingen worde
 
 Door het Type van Middel van de Commentaar te veranderen, produceert het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder die is aangepast (uitgebreid) door ontwikkelaars.
 
-Zodra de types van douanemiddel gekend zijn, ga binnen [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) en dubbelklik op de geplaatste `Comments` om een dialoogvenster met een extra tabblad te openen.
+Zodra de types van douanemiddel gekend zijn, ga binnen [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) en dubbelklikt u op de geplaatste `Comments` om een dialoogvenster met een extra tabblad te openen.
 
 Onder de **Brontypen** tab, specificeer het custom resourceType voor nieuwe instanties van `Comments or Voting` componenten:
 

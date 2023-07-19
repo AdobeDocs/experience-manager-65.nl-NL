@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1562'
+source-wordcount: '1563'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,7 @@ Alle functies worden geïmplementeerd met de native SharePoint-webservices als d
 >SharePoint Connector wordt ook ondersteund met AEM 6.1 service pack 2. De connector ondersteunt geen virtuele opslagplaats meer en kan daarom niet worden gemonteerd. Als u toegang wilt krijgen tot de SharePoint-opslagplaats met Java API&#39;s, gebruikt u de JCR-opslagfunctie van de SharePoint-connector in uw project.
 >
 >Installatie-, configuratie-, beheer- en IT-bewerkingen van de SharePoint-server en de bijbehorende IT-infrastructuur vallen buiten het bereik van dit document. Zie documentatie van leveranciers op [SharePoint](https://www.microsoft.com/sharepoint) voor informatie over deze onderwerpen. De aansluiting vereist dat deze delen van de infrastructuur correct worden geïnstalleerd, geconfigureerd en gebruikt.
+>
 
 ## Aan de slag {#getting-started}
 

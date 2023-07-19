@@ -9,7 +9,7 @@ content-type: reference
 docset: aem65
 feature: Commerce Integration Framework
 exl-id: 3567bd28-73aa-401a-8aa9-a62a99d2a613
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '261'
 ht-degree: 0%
@@ -22,7 +22,7 @@ AEM algemene eCommerce is beschikbaar als onderdeel van een standaardinstallatie
 
 Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
 
-|  | CIF on prem | CIF Cloud |
+|                         | CIF on prem | CIF Cloud |
 |-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
 | Ondersteunde AEM | AEM on-prem of AMS 6.x | AEM AMS 6.4 en 6.5 |
 | Terug | - AEM, Java <br> - Monolithische integratie, pre-build-toewijzing (sjabloon)<br> - JCR-opslagplaats | - Adobe Commerce <br>- Java en JavaScript <br>- Geen gegevens over handel opgeslagen in de gegevensopslagruimte van het GCO |

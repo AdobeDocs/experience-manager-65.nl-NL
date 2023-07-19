@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1165'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Indien opgesteld, gebeurt het volgende door gebrek:
 * de uitvoeringsmodus is `author`
 * de instantie (Repository, Felix OSGI-omgeving, bundels enzovoort) is geïnstalleerd in `${user.dir}/crx-quickstart`waar `${user.dir}` Dit pad naar crx-quickstart wordt de huidige werkmap genoemd `sling.home`
 
-* de hoofdmap van de context is de naam van het oorlogsbestand, bijvoorbeeld : `aem-6`
+* De hoofdmap van de context is bijvoorbeeld de naam van het oorlogsbestand: `aem-6`
 
 #### Configuratie {#configuration}
 
@@ -131,7 +131,7 @@ Geheugenargumenten instellen in het conf-bestand (bijvoorbeeld `standalone.conf`
 
 * JAVA_OPTS=&quot;-Xms64m -Xmx2048m&quot;
 
-Als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, is het mogelijk verstandig om de `deployment-timeout,` voor die set `deployment-timeout` kenmerk in het xml-bestand van uw instantie (bijvoorbeeld `configuration/standalone.xml)`:
+Als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, is het mogelijk verstandig om de `deployment-timeout,` voor die set `deployment-timeout` in het xml-bestand van uw instantie (bijvoorbeeld `configuration/standalone.xml)`:
 
 ```xml
 <subsystem xmlns="urn:jboss:domain:deployment-scanner:1.1">
@@ -241,7 +241,7 @@ Voor een implementatie leest u de [Algemene beschrijving](#general-description) 
       * uncomment sling.home aanvankelijke parameter en reeks dit pad aangezien u nodig hebt
       * Het bestand web.xml herstellen
 
-   * Wijzig de naam van AEM oorlogsbestand in ROOT.war als u het wilt gebruiken als hoofdwebapp, en wijzig de naam van het bestand in bijvoorbeeld aemauthor.war als u de hoofdmap van de context als hoofdmap wilt gebruiken.
+   * Wijzig de naam van AEM oorlogsbestand in ROOT.war als u het wilt gebruiken als hoofdwebapp, wijzig de naam van het bestand in bijvoorbeeld aemauthor.war als u een hoofdmap van de context wilt hebben
    * kopiëren naar de map met tomcat-webapps
    * wachten tot AEM is geïnstalleerd
 

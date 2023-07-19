@@ -8,9 +8,9 @@ content-type: reference
 feature: 3D Assets,Asset Management
 role: User, Admin
 exl-id: 01c96f1e-c0e6-497d-bd7a-c0fd547a34da
-source-git-commit: 787c0c25da2258f234d3c821038d62bf8ef68932
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2287'
+source-wordcount: '2277'
 ht-degree: 2%
 
 ---
@@ -70,16 +70,16 @@ Zie [ConfigurE Dynamic Media-Cloud Services](/help/assets/config-dms7.md#configu
       * [Digitale elementen ordenen](/help/assets/organize-assets.md#organize-digital-assets).
       * [3D-middelen zoeken](/help/assets/search-assets.md).
       * [Aangepaste voorspelling gebruiken om zoekresultaten te filteren](/help/assets/search-assets.md#custompredicates).
+
    * 3D-elementen weergeven
 
       * [3D-elementen weergeven en communiceren](#viewing-three-d-assets).
       * [De voorinstelling voor de dimensionale viewer beheren](/help/assets/managing-viewer-presets.md).
+
    * Werken met metagegevens van 3D-elementen
 
       * [Metagegevens voor digitale elementen beheren](/help/assets/metadata.md).
       * [Metagegevensschema&#39;s](/help/assets/metadata-schemas.md).
-
-
 
 1. **3D-elementen publiceren**
 
@@ -128,8 +128,8 @@ Zie ook [Elementen voorvertonen met de software-interface](/help/assets/previewi
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
    | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
-   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
-   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |  |  |
+   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |   |   |
 
 1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Close]** om terug te keren naar de middelenpagina.
 
@@ -150,7 +150,7 @@ Zie ook [Elementen voorvertonen met de software-interface](/help/assets/previewi
    * Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Preview]** om binnen te gaan **[!UICONTROL Preview]** in.
    * Verwijderen `/editor.html` van de pagina-URL in de browser.
 
-Een volledig interactief 3D-element zoals weergegeven in    ![3D-element weergeven binnen de 3D-mediacomponent](/help/assets/assets-dm/3d-asset-in-3d-media.png)
+   ![3D-element weergeven binnen de 3D-mediacomponent](/help/assets/assets-dm/3d-asset-in-3d-media.png)
 Een volledig interactief 3D-element zoals weergegeven in **[!UICONTROL Preview]** in.
 
 1. Tijdens het aanmelden **[!UICONTROL Preview]** Voer een van de volgende handelingen uit in de modus:
@@ -161,8 +161,8 @@ Een volledig interactief 3D-element zoals weergegeven in **[!UICONTROL Preview]*
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
    | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
-   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
-   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |  |  |
+   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |   |   |
 
 ## Informatie over het werken met de 3D-mediacomponent {#working-with-three-d-media-component}
 
@@ -287,8 +287,8 @@ Gebruik de volgende twee methoden voor het publiceren van Dynamic Media 3D-eleme
 
 * **[!UICONTROL URL]** - Gebruik **[!UICONTROL URL]** als u een extern systeem voor webcontentbeheer gebruikt en u Dynamic Media 3D-middelen wilt koppelen aan uw webpagina&#39;s met de DIMM-viewer.
 
-   Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
+  Zie [URL&#39;s koppelen aan uw webtoepassing](/help/assets/linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset).
 
 * **[!UICONTROL Embed]** - Gebruik **[!UICONTROL Embed]** als u een Dynamic Media 3D-element wilt weergeven dat is ingesloten op een webpagina met de DIMM-viewer. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed]**.
 
-   Zie [De Dynamic Media Video-, Image Viewer- of Dimensional-viewer insluiten op een webpagina](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).
+  Zie [De Dynamic Media Video-, Image Viewer- of Dimensional-viewer insluiten op een webpagina](/help/assets/embed-code.md#embedding-the-video-or-image-viewer-on-a-web-page).

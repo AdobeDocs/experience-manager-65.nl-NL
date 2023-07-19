@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 exl-id: 1c761aa7-a72f-46f0-8717-0b6e0d1cff55
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,6 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 >* Windows: Houd Ctrl ingedrukt en klik op de gewenste componenten.
 >* Mac: Houd Cmd ingedrukt en klik op de vereiste componenten.
 >
-
 
 ## Sneltoetsen bewerken {#editing-keyboard-shortcuts}
 
@@ -64,17 +63,17 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-C</code></strong></td>
-   <td>Geselecteerde alinea('s) kopiëren.</td>
+   <td>Geselecteerde alinea's kopiëren.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-X</code></strong></td>
-   <td>Geselecteerde alinea('s) knippen.<strong><br /> Opmerking:</strong> De geknipte alinea verdwijnt pas als deze op de nieuwe locatie is geplakt.</td>
+   <td>Geselecteerde alinea's knippen.<strong><br /> Opmerking:</strong> De geknipte alinea verdwijnt pas als deze op de nieuwe locatie is geplakt.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Ctrl-V</code></strong></td>
-   <td>Alinea('s) plakken vanaf het Klembord.</td>
+   <td>Alinea's van het Klembord plakken.</td>
   </tr>
   <tr>
    <td> </td>
@@ -84,12 +83,12 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
   <tr>
    <td> </td>
    <td><strong><code>Super-Del (fn-delete)</code></strong></td>
-   <td>Geselecteerde alinea('s) verwijderen.</td>
+   <td>Geselecteerde alinea's verwijderen.</td>
   </tr>
   <tr>
    <td> </td>
    <td><strong><code>Cmd-Backspace</code></strong></td>
-   <td>Geselecteerde alinea('s) verwijderen.</td>
+   <td>Geselecteerde alinea's verwijderen.</td>
   </tr>
   <tr>
    <td> </td>

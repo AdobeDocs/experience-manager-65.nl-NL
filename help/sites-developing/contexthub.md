@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 exl-id: 3fd50655-7461-4900-a3b8-c01b04c7ba7a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # ContextHub{#contexthub}
 
-ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Met de JavaScript-API aan de clientzijde hebt u toegang tot de gegevens voor het aanpassen van de inhoud.
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Met de client-side JavaScript API hebt u toegang tot de gegevens voor het aanpassen van inhoud.
 
 >[!NOTE]
 >
@@ -33,14 +33,14 @@ ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorst
 
 ## Persistentie {#persistence}
 
-De opslag ContextHub handhaaft contextgegevens over de cliënt. De JavaScript API van ContextHub laat u toe om tot opslag toegang te hebben om, gegevens tot stand te brengen bij te werken en te schrappen zonodig. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s.
+De opslag ContextHub handhaaft contextgegevens over de cliënt. Met de JavaScript-API van ContextHub hebt u toegang tot opslagruimten om gegevens te maken, bij te werken en te verwijderen. Als dusdanig, vertegenwoordigt ContextHub een gegevenslaag op uw pagina&#39;s.
 
 Elke opslag ContextHub is een geval van een vooraf bepaald opslagtype:
 
 * ContextHub biedt verschillende [voorbeeldwinkeltypen](/help/sites-developing/ch-samplestores.md).
 * Consoles AEM gebruiken voor [winkels maken](ch-configuring.md#creating-a-contexthub-store).
 * Ontwikkelaars kunnen [aangepaste winkeltypen maken](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
-* Ontwikkelaars kunnen [toegang opslaggegevens](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via Javascript.
+* Ontwikkelaars kunnen [toegang opslaggegevens](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via JavaScript.
 
 ## Segmentering {#segmentation}
 

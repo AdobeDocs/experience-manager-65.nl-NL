@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: afc72fb6b324cf2e0ad8168f783d9c1a6f96c614
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -54,7 +54,6 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
    >* Afhankelijk van de locatie waar Assets Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* In het geval van door Experience Managers gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
 
-
 1. Ga naar `https://dtm.adobe.com`. Klikken **[!UICONTROL Overview]** in de webeigenschap en klik op **[!UICONTROL Add Tool]** of open een bestaande Adobe Analytics Tool. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** tot **[!UICONTROL Automatic]**.
 
    ![Gereedschap Adobe Analytics toevoegen](assets/Add-Adobe-Analytics-Tool.png)
@@ -91,10 +90,10 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
              "",  /** RSID to send tracking-call to */
              "",  /** Tracking Server to send tracking-call to */
              "",  /** Visitor Namespace to send tracking-call to */
-             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, e.g. 'listVar1' */
-             "",  /** eVar to put Asset ID for Asset Click Events in, e.g. 'eVar3' */
-             "",  /** event to include in tracking-calls for Asset Impression Events, e.g. 'event8' */
-             "",  /** event to include in tracking-calls for Asset Click Events, e.g. 'event7' */
+             "",  /** listVar to put comma-separated-list of Asset IDs for Asset Impression Events in tracking-call, for example, 'listVar1' */
+             "",  /** eVar to put Asset ID for Asset Click Events in, for example, 'eVar3' */
+             "",  /** event to include in tracking-calls for Asset Impression Events, for example, 'event8' */
+             "",  /** event to include in tracking-calls for Asset Click Events, for example, 'event7' */
              sObj  /** [OPTIONAL] if the webpage already has an AppMeasurement object, include the object here. If unspecified, Pagetracker Core shall create its own AppMeasurement object */
              );
        sObj.usePlugins = true;
@@ -110,8 +109,8 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
    * De regel voor het laden van pagina&#39;s in DTM bevat alleen de `pagetracker.js` code. Alle `assetAnalytics` velden worden beschouwd als overschrijvingen voor standaardwaarden. Deze zijn niet standaard vereist.
    * De codeaanroepen `assetAnalytics.dispatcher.init()` na te gaan of `_satellite.getToolsByType('sc')[0].getS()` is geïnitialiseerd en `assetAnalytics,dispatcher.init` is beschikbaar. Daarom kunt u overslaan toevoegend het in stap 11.
    * Zoals aangegeven in opmerkingen binnen de code voor Inzichten van paginanummers (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), wanneer Paginanummer geen `AppMeasurement` -object, zijn de eerste drie argumenten (RSID, Tracking Server en Visitor Namespace) irrelevant. Lege tekenreeksen worden doorgegeven om dit te markeren.\
-      De resterende argumenten komen overeen met wat is geconfigureerd in de pagina voor Inzichten configureren (**[!UICONTROL Tools > Assets > Insights Configuration]**).
-   * Het object AppMeasurement wordt opgehaald door een query uit te voeren `satelliteLib` voor alle beschikbare SiteCatalyst-motoren. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.
+     De resterende argumenten komen overeen met wat is geconfigureerd in de pagina voor Inzichten configureren (**[!UICONTROL Tools > Assets > Insights Configuration]**).
+   * Het object AppMeasurement wordt opgehaald door te zoeken `satelliteLib` voor alle beschikbare SiteCatalyst-motoren. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.
 
 1. Sla het venster Code-editor op, sluit dit en sla de wijzigingen vervolgens op in de configuratie van het gereedschap.
 1. In de **[!UICONTROL Approvals]** , keurt beide goedkeuringen goed die in behandeling zijn. De tag DTM kan worden ingevoegd in uw webpagina.

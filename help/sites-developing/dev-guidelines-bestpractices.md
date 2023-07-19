@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Bijvoorbeeld:
 
 * [Een component aanpassen](/help/sites-developing/components.md)
 
-   Hiervoor moest een componentdefinitie worden bedekt:
+  Hiervoor moest een componentdefinitie worden bedekt:
 
    * Een nieuwe componentmap maken in `/apps/<website-name>/components/<MyComponent>` door een bestaande component te kopiëren:
 
@@ -73,7 +73,7 @@ Bijvoorbeeld:
 
 * [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
-   In dit geval wordt een servlet bedekt:
+  In dit geval wordt een servlet bedekt:
 
    * Kopieer het standaardscript of de standaardscripts in de gegevensopslagruimte:
 
@@ -91,7 +91,6 @@ Bijvoorbeeld:
 >1. het item kopiëren in `/libs` tot `/apps`
 >1. wijzigingen aanbrengen in `/apps`
 
-
 ## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt? {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 JCR-query&#39;s zijn een krachtig hulpmiddel als ze correct worden uitgevoerd. Zij zijn geschikt voor:
@@ -99,7 +98,7 @@ JCR-query&#39;s zijn een krachtig hulpmiddel als ze correct worden uitgevoerd. Z
 * echte eindgebruikervragen, zoals fullText onderzoeken op inhoud.
 * gevallen waarin gestructureerde inhoud moet worden gevonden in de gehele gegevensopslagruimte.
 
-   In dergelijke gevallen moet u ervoor zorgen dat query&#39;s alleen worden uitgevoerd wanneer dit absoluut vereist is, bijvoorbeeld bij componentactivering of cachevalidatie (in tegenstelling tot bijvoorbeeld Workflows Stappen, Gebeurtenishandlers die worden geactiveerd bij inhoudswijzigingen, Filters, enz.).
+  In dergelijke gevallen, zorg ervoor dat de vragen slechts wanneer absoluut vereist, bijvoorbeeld, op componentenactivering of geheim voorgeheugenongeldigverklaring (in tegenstelling tot bijvoorbeeld, de Stappen van de Werkschema&#39;s, de Handlers van de Gebeurtenis die op inhoudwijzigingen, Filters, enz.) teweegbrengen.
 
 JCR-query&#39;s mogen nooit worden gebruikt voor pure renderingaanvragen. JCR-query&#39;s zijn bijvoorbeeld niet geschikt voor
 
@@ -112,6 +111,7 @@ Gebruik voor het renderen van inhoud navigatie-toegang tot de inhoudsstructuur i
 >[!NOTE]
 >
 >Als u het [Query Builder](/help/sites-developing/querybuilder-api.md)U kunt ook JCR-query&#39;s gebruiken terwijl de Query Builder JCR-query&#39;s onder de kap genereert.
+>
 
 ## Beveiligingsoverwegingen {#security-considerations}
 

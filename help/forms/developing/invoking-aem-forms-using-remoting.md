@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: c47b4dcfd2fbdcb0b98ad815f5b04d8f593e4f64
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4599'
+source-wordcount: '4597'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Als u AEM Forms-processen programmatisch wilt aanroepen met Remoting, voegt u he
 
 * *&lt;install_directory>\Adobe_Experience_Manager_forms\sdk\misc\DataServices\Client-Libraries*
 
-   waarbij &lt;*install_directory*> is de map waarin AEM Forms is geïnstalleerd.
+  waarbij &lt;*install_directory*> is de map waarin AEM Forms is geïnstalleerd.
 
 **Zie ook**
 
@@ -133,6 +133,7 @@ docRef.text = "Text for my document";  // Optionally, you can override the ser
 * Als het document zich niet op de server bevindt, gebruikt u het verwijderbare uploadserver om een document te uploaden naar AEM Forms. Nieuw in AEM Forms is de mogelijkheid om beveiligde documenten te uploaden. Wanneer u een beveiligd document uploadt, moet u een gebruiker gebruiken die de *Gebruiker van toepassing voor uploaden van document* rol. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U wordt aangeraden een beveiligd document met één aanmeldingsnaam te uploaden. (Zie [Beveiligde documenten doorgeven om processen aan te roepen met Verwijderen](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).)
 
 >[!NOTE]
+>
 als AEM Forms zo is geconfigureerd dat onbeveiligde documenten kunnen worden geüpload, kunt u een gebruiker die niet over de gebruikersrol Toepassing voor uploaden van document beschikt, gebruiken om een document te uploaden. Een gebruiker kan ook beschikken over de machtiging Document uploaden. Als AEM Forms echter is geconfigureerd om alleen beveiligde documenten toe te staan, moet u ervoor zorgen dat de gebruiker beschikt over de rol Gebruiker van Document uploaden of de machtiging Uploaden document. (Zie [AEM Forms configureren voor het accepteren van beveiligde en onbeveiligde documenten](invoking-aem-forms-using-remoting.md#configuring-aem-forms-to-accept-secure-and-unsecure-documents).
 
 U gebruikt de standaarduploadmogelijkheden voor Flash voor de opgegeven upload-URL: `https://SERVER:PORT/remoting/lcfileupload`. U kunt dan de `DocumentReference` object wanneer een invoerparameter van het type `Document` wordt verwacht
@@ -197,6 +198,7 @@ Als u een AEM Forms-proces wilt aanroepen vanuit een toepassing die is gebouwd m
 1. Retourwaarden verwerken.
 
 >[!NOTE]
+>
 In deze sectie wordt besproken hoe u een AEM Forms-proces kunt aanroepen en een document kunt uploaden wanneer AEM Forms is geconfigureerd voor het uploaden van onbeveiligde documenten. Voor informatie over het aanroepen van AEM Forms-processen en het uploaden van beveiligde documenten, en over hoe u AEM Forms kunt configureren voor het accepteren van beveiligde en onbeveiligde documenten, raadpleegt u [Beveiligde documenten doorgeven om processen aan te roepen met Verwijderen](invoking-aem-forms-using-remoting.md#passing-secure-documents-to-invoke-processes-using-remoting).
 
 **Een mx:RemoteObject-instantie maken**
@@ -302,6 +304,7 @@ De basisauthentificatie baseert zich op standaardJ2EE basisauthentificatie van d
 Voor douaneauthentificatie, verzendt de server een fout naar de cliënt om erop te wijzen dat de authentificatie wordt vereist.
 
 >[!NOTE]
+>
 Voor informatie over het uitvoeren van authentificatie die de tokens van HTTP gebruikt, zie [Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren](/help/forms/developing/creating-flash-builder-applications-perform.md#creating-flash-builder-applications-that-perform-sso-authentication-using-http-tokens).
 
 ### Aangepaste verificatie gebruiken {#using-custom-authentication}
@@ -309,6 +312,7 @@ Voor informatie over het uitvoeren van authentificatie die de tokens van HTTP ge
 U laat douaneauthentificatie in beleidsconsole toe door de authentificatiemethode van Basis in Douane op het remoting eindpunt te veranderen. Als u aangepaste verificatie gebruikt, roept uw clienttoepassing de `ChannelSet.login` methode voor aanmelden en de `ChannelSet.logout` methode om af te melden.
 
 >[!NOTE]
+>
 In de vorige versie van AEM Forms hebt u referenties naar een doel verzonden door de `RemoteObject.setCredentials` methode. De `setCredentials` De methode heeft de gegevens pas daadwerkelijk doorgegeven aan de server als de component voor het eerst probeert verbinding te maken met de server. Daarom als de component een foutengebeurtenis uitbracht, kon u niet zeker zijn als de fout wegens een authentificatiefout, of om een andere reden gebeurde. De `ChannelSet.login` De methode verbindt met de server wanneer u het roept zodat u een authentificatiekwestie kunt onmiddellijk behandelen. Hoewel u het `setCredentials` wordt aangeraden de `ChannelSet.login` methode.
 
 Omdat de veelvoudige bestemmingen de zelfde kanalen, en het overeenkomstige voorwerp kunnen gebruiken ChannelSet, het programma openen aan één bestemming registreert de gebruiker aan een andere bestemming die het zelfde kanaal of de kanalen gebruikt. Als twee componenten verschillende geloofsbrieven op het zelfde voorwerp toepassen ChannelSet, worden de laatste toegepaste geloofsbrieven gebruikt. Als meerdere componenten hetzelfde geverifieerde ChannelSet-object gebruiken, wordt het `logout` de methode registreert alle componenten uit de bestemmingen.
@@ -454,6 +458,7 @@ AEM Forms-ontwikkelaars schrijven clienttoepassingen om de functionaliteit van f
 Wanneer een AEM Forms-service wordt aangeroepen met (Vervangen voor AEM formulieren) AEM Forms Remoting, geeft de clienttoepassing het verificatiecookie als onderdeel van de aanvraag door. Aangezien de gebruiker al is geverifieerd, is geen aanvullende aanmelding vereist om verbinding te maken van de clienttoepassing met de AEM Forms-service.
 
 >[!NOTE]
+>
 Als een cookie ongeldig is of ontbreekt, wordt niet impliciet omgeleid naar een aanmeldingspagina. Daarom kunt u nog een anonieme dienst roepen.
 
 U kunt het AEM Forms-mechanisme voor eenmalige aanmelding omzeilen door een clienttoepassing te schrijven die zich zelfstandig aanmeldt en zich afmeldt. Als u het Single Sign-On mechanisme omzeilt, kunt u of basis of douaneauthentificatie met uw toepassing gebruiken.
@@ -548,6 +553,7 @@ U kunt beveiligde documenten doorgeven aan AEM Forms wanneer u een proces aanroe
 Wanneer u een beveiligd document doorgeeft, gebruikt u Single Sign-On en geeft u een AEM gebruiker op die de *Gebruiker van toepassing voor uploaden van document* rol. Zonder deze rol kan de gebruiker geen beveiligd document uploaden. U kunt een rol programmatically toewijzen aan een gebruiker. (Zie [Rollen en machtigingen beheren](/help/forms/developing/users.md#managing-roles-and-permissions).)
 
 >[!NOTE]
+>
 Wanneer u een nieuwe rol maakt en u wilt dat leden van die rol beveiligde documenten uploaden, controleert u of u de machtiging Document uploaden hebt opgegeven.
 
 AEM Forms ondersteunt een bewerking met de naam `getFileUploadToken` die een token retourneert dat wordt doorgegeven aan de uploadserver. De `DocumentReference.constructRequestForUpload` voor deze methode is een URL naar AEM Forms vereist, samen met het token dat door de `LC.FileUploadAuthenticator.getFileUploadToken` methode. Deze methode retourneert een `URLRequest` object dat wordt gebruikt bij het aanroepen van de uploadserver. De volgende code demonstreert deze toepassingslogica.
@@ -616,6 +622,7 @@ U kunt beheerconsole gebruiken om op te geven of documenten veilig zijn wanneer 
 1. Zorg ervoor dat de optie Niet-beveiligde documenten mogen worden geüpload vanuit Flex-toepassingen is uitgeschakeld.
 
 >[!NOTE]
+>
 Als u AEM Forms wilt configureren voor het accepteren van onbeveiligde documenten, selecteert u de optie Niet-beveiligde documenten mogen worden geüpload vanuit Flex-toepassingen. Start vervolgens een toepassing of service opnieuw om ervoor te zorgen dat de instelling van kracht wordt.
 
 ### Snel starten: Een kortstondig proces aanroepen door een beveiligd document door te geven met Verwijderen {#quick-start-invoking-a-short-lived-process-by-passing-a-secure-document-using-remoting}
@@ -969,6 +976,7 @@ Het volledig gekwalificeerde gegevenstype van het complex type AEM Forms wordt t
 De velden van de klasse ActionScript komen overeen met de velden die bij het complexe type AEM Forms horen. De zes gebieden in de klasse van de ActionScript van de Klant worden gevestigd passen de gebieden aan die tot `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
+>
 Een goede manier om de gebiedsnamen te bepalen die tot een complex type van Forms behoren is WSDL van de dienst in Webbrowser te bekijken. Een WSDL specificeert de complexe types van de dienst en de overeenkomstige gegevensleden. De volgende WSDL wordt gebruikt voor de klantenservice: `https://[yourServer]:[yourPort]/soap/services/CustomerService?wsdl.`
 
 De klasse ActionScript van de Klant behoort tot een pakket genoemd klant. U wordt aangeraden alle ActionScript-klassen die zijn toegewezen aan complexe AEM Forms-gegevenstypen in hun eigen pakket te plaatsen. Maak een map in de bronmap van het Flex-project en plaats het ActionScript-bestand in de map, zoals in de volgende afbeelding wordt getoond.
@@ -980,6 +988,7 @@ De klasse ActionScript van de Klant behoort tot een pakket genoemd klant. U word
 Het volgende codevoorbeeld roept de dienst van de Klant aan en leidt tot een klant. Wanneer u dit codevoorbeeld in werking stelt, zorg ervoor dat u alle tekstvakjes invult. Zorg er ook voor dat u het bestand Customer.as maakt dat aan `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
+>
 Voordat u deze snelle start kunt uitvoeren, moet u de aangepaste component Bank maken en implementeren.
 
 ```java

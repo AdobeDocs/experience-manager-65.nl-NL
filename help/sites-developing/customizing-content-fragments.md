@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 9ad531738ac5e3c9d888f685b47c8b322712a89e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2782'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,9 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Modellen zijn samengesteld uit gegevenstypen.
    * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
 
-   >[!CAUTION]
-   >
-   >Wijzigingen in een bestaand inhoudsfragmentmodel kunnen van invloed zijn op afhankelijke fragmenten. dit kan leiden tot weeseigenschappen in die fragmenten .
+  >[!CAUTION]
+  >
+  >Wijzigingen in een bestaand inhoudsfragmentmodel kunnen van invloed zijn op afhankelijke fragmenten. dit kan leiden tot weeseigenschappen in die fragmenten .
 
 * Sjablonen voor inhoudsfragmenten:
 
@@ -63,7 +63,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Sjablonen definiëren de (basis-, alleen-tekst) structuur van een inhoudsfragment wanneer dit wordt gemaakt.
    * De sjabloon wordt naar het fragment gekopieerd wanneer het wordt gemaakt. verdere wijzigingen van de sjabloon worden dus niet weerspiegeld in bestaande fragmenten.
    * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
-   * [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md) op een andere manier te werken dan andere sjabloonmechanismen binnen het AEM ecosysteem (bv. paginasjablonen, enz.). Daarom moeten zij afzonderlijk worden beschouwd.
+   * [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md) op een andere manier te werken dan andere sjablonen in het AEM (bijvoorbeeld paginasjablonen, enz.). Daarom moeten zij afzonderlijk worden beschouwd.
    * Indien gebaseerd op een sjabloon wordt het MIME-type van de inhoud beheerd op de feitelijke inhoud; dit betekent dat elk element en elke variatie een ander MIME-type kunnen hebben.
 
 ### Integratie met middelen {#integration-with-assets}
@@ -83,15 +83,14 @@ Inhoudsfragmenten met gestructureerde inhoud (d.w.z. gebaseerd op een inhoudsfra
 * Alle inhoud wordt opgeslagen onder de `jcr:content/data` knooppunt van het element:
 
    * De elementgegevens worden opgeslagen onder het master subknooppunt:
-      `jcr:content/data/master`
+     `jcr:content/data/master`
 
-   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijv. `jcr:content/data/myvariation`
+   * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijvoorbeeld: `jcr:content/data/myvariation`
 
-   * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam: bv. de inhoud van het element `text` is opgeslagen als eigenschap `text` op `jcr:content/data/master`
+   * De gegevens van elk element worden in het desbetreffende subknooppunt opgeslagen als een eigenschap met de elementnaam: bijvoorbeeld de inhoud van het element `text` is opgeslagen als eigenschap `text` op `jcr:content/data/master`
 
 * Metagegevens en bijbehorende inhoud worden hieronder opgeslagen `jcr:content/metadata`
-Met uitzondering van de titel en de beschrijving, die niet als traditionele metagegevens worden beschouwd en op 
-`jcr:content`
+Met uitzondering van de titel en de beschrijving, die niet als traditionele metagegevens worden beschouwd en op `jcr:content`
 
 #### Eenvoudige inhoudsfragmenten toewijzen aan elementen {#mapping-simple-content-fragments-to-assets}
 
@@ -162,8 +161,7 @@ De back-endimplementatie van inhoudsfragmenten is bijvoorbeeld verantwoordelijk 
 De parameters voor dit kunnen in worden gevormd [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console), voor de OSGi-bundel **Configuratie van inhoudsfragmentcomponent**.
 
 * **Brontypen**
-Een lijst van 
-`sling:resourceTypes` kan worden opgegeven om componenten te definiëren die worden gebruikt voor het renderen van inhoudsfragmenten en waar de achtergrondverwerking moet worden toegepast.
+Een lijst van `sling:resourceTypes` kan worden opgegeven om componenten te definiëren die worden gebruikt voor het renderen van inhoudsfragmenten en waar de achtergrondverwerking moet worden toegepast.
 
 * **Referentie-eigenschappen**
 Een lijst met eigenschappen kan worden geconfigureerd om op te geven waar de verwijzing naar het fragment wordt opgeslagen voor de desbetreffende component.
@@ -199,43 +197,44 @@ Inhoudsfragmenten kunnen worden geïntegreerd met:
 
 * **Vertalingen**
 
-   Inhoudsfragmenten zijn volledig geïntegreerd met de [AEM vertaalworkflow](/help/sites-administering/tc-manage.md). Op architectonisch niveau betekent dit:
+  Inhoudsfragmenten zijn volledig geïntegreerd met de [AEM vertaalworkflow](/help/sites-administering/tc-manage.md). Op architectonisch niveau betekent dit:
 
    * De afzonderlijke vertalingen van een inhoudsfragment zijn eigenlijk afzonderlijke fragmenten. bijvoorbeeld:
 
       * zij bevinden zich in verschillende taalgebieden :
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         vs
+        vs
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
 
       * maar ze delen exact hetzelfde relatieve pad onder de hoofdmap van de taal :
 
-         `/content/dam/<path>/en/<to>/<fragment>`
+        `/content/dam/<path>/en/<to>/<fragment>`
 
-         vs
+        vs
 
-         `/content/dam/<path>/de/<to>/<fragment>`
+        `/content/dam/<path>/de/<to>/<fragment>`
+
    * Naast de op regel gebaseerde paden bestaat er geen verdere verbinding tussen de verschillende taalversies van een inhoudsfragment. ze worden behandeld als twee afzonderlijke fragmenten, hoewel de interface de mogelijkheid biedt om tussen de taalvarianten te navigeren.
-   >[!NOTE]
-   >
-   >De AEM vertaalworkflow werkt met `/content`:
-   >
-   >* Terwijl de modellen van het inhoudsfragment zich bevinden in `/conf`, worden deze niet in dergelijke vertalingen opgenomen. U kunt [UI-tekenreeksen internationaliseren](/help/sites-developing/i18n-dev.md).
-   >
-   >* Sjablonen worden gekopieerd om het fragment te maken, zodat dit impliciet is.
 
+  >[!NOTE]
+  >
+  >De AEM vertaalworkflow werkt met `/content`:
+  >
+  >* Terwijl de modellen van het inhoudsfragment zich bevinden in `/conf`, worden deze niet in dergelijke vertalingen opgenomen. U kunt [UI-tekenreeksen internationaliseren](/help/sites-developing/i18n-dev.md).
+  >
+  >* Sjablonen worden gekopieerd om het fragment te maken, zodat dit impliciet is.
 
 * **Metagegevensschema&#39;s**
 
    * Inhoudsfragmenten (opnieuw) gebruiken de [metagegevensschema&#39;s](/help/assets/metadata-schemas.md), die met standaardelementen kunnen worden gedefinieerd.
    * CFM biedt een eigen, specifiek schema:
 
-      `/libs/dam/content/schemaeditors/forms/contentfragment`
+     `/libs/dam/content/schemaeditors/forms/contentfragment`
 
-      dit kan zo nodig worden verlengd .
+     dit kan zo nodig worden verlengd .
 
    * Het respectievelijke schema-formulier is geïntegreerd met de fragmenteditor.
 
@@ -255,20 +254,20 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
 * **Fragmentsjabloon** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-   Gebruiken `FragmentTemplate.createFragment()` voor het maken van een nieuw fragment.
+  Gebruiken `FragmentTemplate.createFragment()` voor het maken van een nieuw fragment.
 
-   ```
-   Resource templateOrModelRsc = resourceResolver.getResource("...");
-   FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
-   ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
-   ```
+  ```
+  Resource templateOrModelRsc = resourceResolver.getResource("...");
+  FragmentTemplate tpl = templateOrModelRsc.adaptTo(FragmentTemplate.class);
+  ContentFragment newFragment = tpl.createFragment(parentRsc, "A fragment name", "A fragment description.");
+  ```
 
-   Deze interface vertegenwoordigt:
+  Deze interface vertegenwoordigt:
 
    * een inhoudsfragmentmodel of een inhoudsfragmentsjabloon op basis waarvan een inhoudsfragment moet worden gemaakt,
    * en (na het maken) de structuurgegevens van dat fragment
 
-   Deze informatie kan omvatten:
+  Deze informatie kan omvatten:
 
    * Toegang tot basisgegevens (titel, beschrijving)
    * Sjablonen/modellen openen voor de elementen van het fragment:
@@ -276,39 +275,37 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Elementsjablonen weergeven
       * Structuurgegevens voor een bepaald element ophalen
       * Toegang tot de elementsjabloon (zie `ElementTemplate`)
+
    * Sjablonen openen voor de variaties van het fragment:
 
       * Wijzigingssjablonen weergeven
       * Structuurgegevens voor een bepaalde wijziging ophalen
       * Toegang tot de variatiesjabloon (zie `VariationTemplate`)
+
    * Aanvankelijke gekoppelde inhoud ophalen
 
-   Interfaces die belangrijke informatie vertegenwoordigen:
+  Interfaces die belangrijke informatie vertegenwoordigen:
 
    * `ElementTemplate`
 
       * Basisgegevens ophalen (naam, titel)
       * Eerste elementinhoud ophalen
+
    * `VariationTemplate`
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
 
-
-
-
-
-
 * **Inhoudsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-   Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
+  Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
 
-   >[!CAUTION]
-   >
-   >Het wordt sterk geadviseerd om tot een fragment door deze interface toegang te hebben. Het rechtstreeks wijzigen van de inhoudsstructuur moet worden vermeden.
+  >[!CAUTION]
+  >
+  >Het wordt sterk geadviseerd om tot een fragment door deze interface toegang te hebben. Het rechtstreeks wijzigen van de inhoudsstructuur moet worden vermeden.
 
-   De interface voorziet u van de middelen:
+  De interface voorziet u van de middelen:
 
-   * Basisgegevens beheren (bijvoorbeeld naam ophalen; get/set titel/beschrijving)
+   * Standaardgegevens beheren (bijvoorbeeld naam ophalen; get/set titel/beschrijving)
    * Toegang tot metagegevens
    * Toegangselementen:
 
@@ -317,6 +314,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Nieuwe elementen maken (zie [Caveats](#caveats))
 
       * Gegevens over toegangselementen (zie `ContentElement`)
+
    * Variaties weergeven die zijn gedefinieerd voor het fragment
    * Nieuwe variaties wereldwijd maken
    * Gekoppelde inhoud beheren:
@@ -324,9 +322,10 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
       * Lijstverzamelingen
       * Verzamelingen toevoegen
       * Verzamelingen verwijderen
+
    * Open het model of de sjabloon van het fragment
 
-   De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
+  De interfaces die de belangrijkste elementen van een fragment vertegenwoordigen zijn:
 
    * **Inhoud-element** ([ContentElement](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentElement.html))
 
@@ -339,24 +338,20 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
          * Nieuwe variaties maken (zie [Caveats](#caveats))
          * Variaties verwijderen (zie [Caveats](#caveats))
          * Gegevens betreffende variatie van de toegang (zie `ContentVariation`)
+
       * Sneltoets voor het oplossen van variaties (door een aanvullende, implementatiespecifieke fallback-logica toe te passen als de opgegeven variatie niet beschikbaar is voor een element)
+
    * **Inhoudsvariatie** ([ContentVariation](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentVariation.html))
 
       * Basisgegevens ophalen (naam, titel, beschrijving)
       * Inhoud ophalen/instellen
       * Eenvoudige synchronisatie, gebaseerd op laatst gewijzigde informatie
 
-   Alle drie de interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) de `Versionable` interface, die versiemogelijkheden toevoegt, vereist voor inhoudsfragmenten:
+  Alle drie de interfaces ( `ContentFragment`, `ContentElement`, `ContentVariation`) de `Versionable` interface, die versiemogelijkheden toevoegt, vereist voor inhoudsfragmenten:
 
    * Nieuwe versie van het element maken
    * Versies van het element weergeven
    * Hiermee wordt de inhoud opgehaald van een specifieke versie van het element met versiebeheer
-
-
-
-
-
-
 
 ### Aanpassen - Using adjustTo() {#adapting-using-adaptto}
 
@@ -408,7 +403,7 @@ Zie het volgende:
 
 * `filter.xml`
 
-   De `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat dit niet overlapt met het elementeninhoudspakket.
+  De `filter.xml` voor inhoudsfragmentbeheer is zo geconfigureerd dat dit niet overlapt met het elementeninhoudspakket.
 
 ## Sessies bewerken {#edit-sessions}
 
@@ -441,11 +436,11 @@ Het gaat om de volgende processen:
 
       * De laatste gewijzigde informatie wordt bijgewerkt.
       * Cookies worden verwijderd.
+
    * Bij terugdraaien:
 
       * De versie van het inhoudsfragment dat is gemaakt toen de bewerkingssessie werd gestart, wordt hersteld.
       * Cookies worden verwijderd.
-
 
 * Bewerken
 
@@ -464,10 +459,10 @@ De mogelijke acties zijn:
 
          * Als het huidige fragment, herstelt u de sessie.
          * Als dat niet het geval is, probeert u het bewerken voor het eerder bewerkte inhoudsfragment te annuleren en cookies te verwijderen (er is geen bewerkingssessie daarna aanwezig).
+
       * Als er geen bewerkingssessie bestaat, wacht u op de eerste wijziging die de gebruiker heeft aangebracht (zie hieronder).
+
    * Controleer of er al naar het inhoudsfragment wordt verwezen op een pagina en geef zo ja de juiste informatie weer.
-
-
 
 * Inhoud wijzigen
 

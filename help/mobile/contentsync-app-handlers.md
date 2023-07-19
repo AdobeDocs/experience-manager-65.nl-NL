@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Zie de volgende richtlijnen voor het ontwikkelen van Content Sync Handlers:
 
@@ -52,7 +52,7 @@ De volgende lijst bevat een lijst met apps die niet in de verpakking staan:
 
 * ***includeModifiedPagesOnly - Boolean*** - Als de waarde false of weggelaten is, worden alle pagina&#39;s gerenderd en worden updates voor de rendering gecontroleerd. Indien waar (true), is het basisverschil afhankelijk van wijzigingen in een pagina die als laatste is gewijzigd.
 * ***+ rewrite (knooppunt)***
-   ***- relativeParentPath - String*** - het pad waarnaar alle andere paden moeten worden geschreven.
+  ***- relativeParentPath - String*** - het pad waarnaar alle andere paden moeten worden geschreven.
 
 >[!NOTE]
 >

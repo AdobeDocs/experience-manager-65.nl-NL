@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 **client_pollingInterval:** Hiermee stelt u het opiniepeilingsinterval (in seconden) in dat wordt gebruikt op de Flex Workspace (Vervangen voor AEM formulieren op JEE) voor het detecteren van nieuwe en gewijzigde taken. De standaardwaarde is 3 seconden. Dit werkt niet voor AEM Forms Workspace.
 
-**client_systemContext_name:** Geef een aangepaste naam (bijvoorbeeld Burger) op die u wilt weergeven in het veld Toegevoegd op (op het tabblad Bijlagen) voor de bijlagen van een taak in AEM Forms Workspace.
+**client_systemContext_name:** Geef een aangepaste naam op (bijvoorbeeld Burger) die moet worden weergegeven in het veld Toegevoegd op (op het tabblad Bijlagen) voor de bijlagen van een taak in AEM Forms Workspace.
 
 De aangepaste naam definiëren:
 

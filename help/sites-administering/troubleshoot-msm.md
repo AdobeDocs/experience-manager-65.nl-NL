@@ -4,9 +4,9 @@ description: Kom te weten hoe te om de gemeenschappelijkste MSM-verwante kwestie
 feature: Multi Site Manager
 role: Admin
 exl-id: 23f3391b-5ce3-48e1-ab27-a37737778089
-source-git-commit: a323e6c30bf2c226f6613d1b9b037a0beedbfc0d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '762'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,13 @@ MSM registreert verscheidene servers die met selecteurs op middel URLs kunnen wo
 1. `http://<host>:<port>/content/path/to/bluprint/page.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
    * Gebruik deze optie op een blauwdrukpagina om de lijst op te halen met alle Live-kopieën die eraan zijn gekoppeld, met extra statusinformatie voor Live Copy.
    * bijvoorbeeld:
-      `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
+     `http://localhost:4502/content/wknd/language-masters/en.blueprint.json?&maxSize=500&advancedStatus=true&returnRelationships=true&msm%3Atrigger=ROLLOUT`
 
 
 1. `http://<host>:<port>/content/path/to/livecopy/page.msm.json`
    * Gebruik deze optie op Live Copy-pagina&#39;s om geavanceerde informatie op te halen over de verbinding met de bijbehorende pagina&#39;s. Als de pagina geen live kopie is, wordt er niets geretourneerd.
    * bijvoorbeeld:
-      `http://localhost:4502/content/wknd/ca/en.msm.json`
+     `http://localhost:4502/content/wknd/ca/en.msm.json`
 
 Deze servers genereren FOUTOPSPORING-logberichten via de `com.day.cq.wcm.msm` registreerapparaat dat ook nuttig kan zijn.
 
@@ -81,7 +81,7 @@ Als alternatief kunt u:
 
 ### Waarom zie ik Live Copy-pagina&#39;s met het achtervoegsel &quot;_msm_moving&quot;? {#moved-pages}
 
-Als een blauwdrukpagina wordt uitgevouwen, wordt de pagina Live kopie bijgewerkt of wordt er een nieuwe pagina Live kopie gemaakt als deze nog niet bestond (bijvoorbeeld wanneer de pagina voor de eerste keer wordt uitgevouwen of wanneer de pagina Live kopie handmatig is verwijderd).
+Als een blauwdrukpagina wordt uitgevouwen, wordt de Live Copy-pagina bijgewerkt of wordt er een nieuwe Live Copy-pagina gemaakt als deze nog niet bestond (bijvoorbeeld wanneer de pagina voor de eerste keer wordt uitgevouwen of wanneer de Live Copy-pagina handmatig is verwijderd).
 
 In dit laatste geval echter, indien een pagina zonder `cq:LiveRelationship` Er bestaat al een eigenschap met dezelfde naam. De naam van deze pagina wordt overeenkomstig gewijzigd voordat de pagina Live Copy wordt gemaakt.
 

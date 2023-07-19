@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: afd2afe182d65e64c0ad851b86021886078a9dd5
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2080'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Om de auteur toe te laten om de AEM SPARedacteur te gebruiken om de inhoud van e
 
 >[!NOTE]
 >
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
@@ -61,7 +61,7 @@ Elk onderdeel in het model bevat een `:type` veld dat een AEM-brontype weergeeft
 
 #### Dynamisch model naar componenttoewijzing {#dynamic-model-to-component-mapping}
 
-Zie het artikel voor meer informatie over hoe het dynamische model aan componenttoewijzing in de Javascript SPA SDK voor AEM plaatsvindt [Dynamisch model naar componenttoewijzing voor SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
+Zie het artikel voor meer informatie over de manier waarop het dynamische model wordt toegewezen aan componenttoewijzing in de JavaScript SPA SDK voor AEM [Dynamisch model naar componenttoewijzing voor SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
 ### Framework-specifieke laag {#framework-specific-layer}
 
@@ -185,7 +185,6 @@ Bijvoorbeeld:
 >* `"aem-Grid-newComponent"`: Hiermee wordt de component genormaliseerd voor het ontwerpen van de lay-out
 >
 
-
 #### Componenttoewijzing {#component-mapping}
 
 De onderliggende waarde [`Component Mapping`](/help/sites-developing/spa-blueprint.md#componentmapping) bibliotheek en `MapTo` Deze functie kan worden ingekapseld en uitgebreid om de functionaliteit met betrekking tot te verstrekken uitgeeft configuratie die naast de huidige componentenklasse wordt verstrekt.
@@ -237,7 +236,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 De projectcomponenten moeten minstens de volgende gegevensattributen produceren om de redacteur toe te staan om met hen in wisselwerking te staan.
 
-* `data-cq-data-path`: Relatief pad van de component, zoals opgegeven door de `PageModel` (bv. `"root/responsivegrid/image"`). Dit kenmerk mag niet aan pagina&#39;s worden toegevoegd.
+* `data-cq-data-path`: Relatief pad van de component, zoals opgegeven door de `PageModel` (bijvoorbeeld: `"root/responsivegrid/image"`). Dit kenmerk mag niet aan pagina&#39;s worden toegevoegd.
 
 Samengevat, om door de paginaredacteur als editable te worden geïnterpreteerd, moet een projectcomponent het volgende contract in acht nemen:
 
@@ -272,7 +271,7 @@ Het volgende fragment illustreert de typische HTML-representatie van een pagina-
 
 App bezit het verpletteren. De front-end ontwikkelaar moet eerst een component van de Navigatie (in kaart gebracht aan een AEM navigatiecomponent) uitvoeren. Deze component zou URL-koppelingen renderen die moeten worden gebruikt in combinatie met een reeks routes die fragmenten van inhoud weergeven of verbergen.
 
-De onderliggende waarde [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliotheek en ` [ModelRouter](/help/sites-developing/spa-routing.md)` de module (die door gebrek wordt toegelaten) is de oorzaak van het pre-halen en het verlenen van toegang tot het model verbonden aan een bepaalde middelweg.
+De onderliggende waarde [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliotheek en ` [ModelRouter](/help/sites-developing/spa-routing.md)` de module (die door gebrek wordt toegelaten) is de oorzaak van het pre-halen en het verlenen van toegang tot het model verbonden aan een bepaalde middelweg.
 
 De twee entiteiten hebben betrekking op het begrip &quot;routering&quot;, maar op ` [ModelRouter](/help/sites-developing/spa-routing.md)` alleen verantwoordelijk is voor het ` [PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager)` geladen met een gegevensmodel dat is gestructureerd volgens de huidige status van de toepassing.
 

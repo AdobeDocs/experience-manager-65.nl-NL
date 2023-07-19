@@ -7,9 +7,9 @@ feature: 3D Assets
 role: User
 exl-id: fdebbc2b-c04d-4cdd-b7c2-8e9a2a854e79
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
@@ -33,10 +33,10 @@ Interactieve 3D-voorvertoning ondersteunt de volgende bestandsindelingen:
 
 | 3D-bestandsextensie | Bestandsindeling | MIME-type | Notities |
 |---|---|---|---|
-| GLB | Binaire GL-transmissie | model/gltf-binair |  |
+| GLB | Binaire GL-transmissie | model/gltf-binair | |
 | GLTF | GL-indeling voor verzending | model/gltf+json | Zie **Opmerking** hieronder. |
-| OBJ | WaveFront 3D-objectbestand | application/x-tgif |  |
-| STL | Stereolithografie | application/vnd.ms-pki.stl |  |
+| OBJ | WaveFront 3D-objectbestand | application/x-tgif | |
+| STL | Stereolithografie | application/vnd.ms-pki.stl | |
 | DN | Adobe Dimension | model/x-adobe-dn | Alleen ondersteuning voor inname; voorvertoning niet beschikbaar. |
 | USDZ | Universal Scene Description Zip-archief | model/vnd.usdz+zip | Alleen ondersteuning voor inname; voorvertoning niet beschikbaar. |
 
@@ -82,7 +82,7 @@ Zie [Ondersteunde indelingen voor 3D-voorvertoning](#supported-3d-previewing-ass
    | **Uw camera pannen** | U kunt de weergave naar links, rechts, omhoog of omlaag pannen. | Klik met de rechtermuisknop en sleep. | Druk met twee vingers en sleep. |
    | **Uw camera zoomen** | In- en uitzoomen op gebieden in de 3D-scène. | Schuifwiel. | Kneep met twee vingers. |
    | **De camera opnieuw opnemen** | Voer de camera opnieuw in op een punt op een object in de 3D-scène. | Dubbelklik. | Dubbeltik. |
-   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |  |  |
-   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |  |  |
+   | **Herstellen** | Selecteer in de rechterbenedenhoek van de pagina het pictogram Herstellen om het doelpunt van de weergave te herstellen naar het midden van het 3D-element. Met Herstellen wordt de camera ook dichter bij of verder weg geplaatst om het middel volledig en bij een redelijke weergavegrootte weer te geven. |   |   |
+   | **Modus Volledig scherm** | Als u de modus Volledig scherm wilt inschakelen, selecteert u het pictogram Volledig scherm in de rechterbenedenhoek van de pagina. |   |   |
 
 1. Als u klaar bent, selecteert u in de rechterbovenhoek van de pagina de optie **[!UICONTROL Close]**.

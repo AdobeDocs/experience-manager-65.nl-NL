@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ef253905-87da-4fa2-9f6c-778f1b12bd58
 docset: aem65
 exl-id: 72cbe589-14a1-40f5-a7cb-8960f02e0ebb
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '776'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 Een predikaat beoordelaar behandelt de evaluatie van bepaalde predikaten, die de bepalende beperkingen van een vraag zijn.
 
-Hiermee wordt een zoekrestrictie op een hoger niveau (zoals &quot;breedte > 200&quot;) toegewezen aan een specifieke JCR-query die past bij het werkelijke inhoudsmodel (bijvoorbeeld metagegevens/@breedte > 200). Of het kan knopen manueel filtreren en hun beperkingen controleren.
+Er wordt een zoekbeperking op een hoger niveau (zoals &quot;width > 200&quot;) toegewezen aan een specifieke JCR-query die past bij het daadwerkelijke inhoudsmodel (bijvoorbeeld metagegevens/@width > 200). Of het kan knopen manueel filtreren en hun beperkingen controleren.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Als voorbeeld beschrijft deze sectie hoe te om een douane te creëren predikaat 
 
 * `cq:lastReplicatedBy` die identiteitskaart van de gebruiker opslaat die de laatste replicatieactie teweegbracht
 
-* `cq:lastReplicationAction` die de laatste replicatiehandeling opslaat (bijvoorbeeld activering, deactivering)
+* `cq:lastReplicationAction` die de laatste replicatieactie (bijvoorbeeld, Activering, Deactivering) opslaat
 
 #### Replicatiemetagegevens met standaardvoorspellende evaluatoren opvragen {#querying-replication-metadata-with-default-predicate-evaluators}
 

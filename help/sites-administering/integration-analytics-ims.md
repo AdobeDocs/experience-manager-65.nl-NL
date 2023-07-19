@@ -2,9 +2,9 @@
 title: Integratie met Adobe Analytics met IMS
 description: Meer informatie over het integreren van AEM met Adobe Analytics met IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 5789954afea2d42444b6f6f9f185d7926624e7f0
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1057'
 ht-degree: 0%
 
 ---

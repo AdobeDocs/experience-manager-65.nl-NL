@@ -11,9 +11,9 @@ topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '9905'
+source-wordcount: '9902'
 ht-degree: 0%
 
 ---
@@ -231,7 +231,7 @@ Het transmissieprotocol voor teruggekeerde `BLOB` objecten zijn afhankelijk van 
 
    * De het eindpuntparameterStandaardprotocol van de ZEEP van de dienst voor de Voorwerpen van de Klodder van de Output wordt geplaatst aan Slim.
 
-      Voor elke dienst met een eindpunt van de ZEEP, staat de beleidsconsole u toe om het transmissieprotocol voor om het even welke teruggekeerde blobs te specificeren. (Zie [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+     Voor elke dienst met een eindpunt van de ZEEP, staat de beleidsconsole u toe om het transmissieprotocol voor om het even welke teruggekeerde blobs te specificeren. (Zie [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
    * AEM Forms-service neemt een of meer documenten op als invoer.
 
@@ -685,7 +685,7 @@ U kunt de dienst van AEM Forms aanhalen gebruikend de volmachtsklassen van Java 
 
    * Wijs het eindpunt WSDL en het coderingstype aan WSDL toe `javax.xml.ws.BindingProvider` object `ENDPOINT_ADDRESS_PROPERTY` veld. Om het `MyApplication/EncryptDocument` Geef de volgende URL-waarde op met behulp van Base64-codering:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=base64`
 
    * Wijs de gebruiker van AEM formulieren toe aan de `javax.xml.ws.BindingProvider` object `USERNAME_PROPERTY` veld.
    * Wijs de overeenkomstige wachtwoordwaarde aan toe `javax.xml.ws.BindingProvider` object `PASSWORD_PROPERTY` veld.
@@ -880,7 +880,7 @@ Om het `MyApplication/EncryptDocument` Voer de volgende stappen uit door Java-pr
 
    * Wijs het eindpunt WSDL en het coderingstype aan WSDL toe `javax.xml.ws.BindingProvider` object `ENDPOINT_ADDRESS_PROPERTY` veld. Om het `MyApplication/EncryptDocument` Geef de volgende URL-waarde op met SwaRef-codering:
 
-      ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
+     ` https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=swaref`
 
    * Wijs de gebruiker van AEM formulieren toe aan de `javax.xml.ws.BindingProvider` object `USERNAME_PROPERTY` veld.
    * Wijs de overeenkomstige wachtwoordwaarde aan toe `javax.xml.ws.BindingProvider` object `PASSWORD_PROPERTY` veld.
@@ -1003,7 +1003,7 @@ U kunt een AEM Forms-service aanroepen met Java-proxyklassen en BLOB-gegevens vi
 
    * Wijs het eindpunt WSDL en het coderingstype aan WSDL toe `javax.xml.ws.BindingProvider` object `ENDPOINT_ADDRESS_PROPERTY` veld. Om het `MyApplication/EncryptDocument` Geef de volgende URL-waarde op met BLOB via HTTP-codering:
 
-      `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
+     `https://hiro-xp:8080/soap/services/MyApplication/EncryptDocument?blob=http`
 
    * Wijs de gebruiker van AEM formulieren toe aan de `javax.xml.ws.BindingProvider` object `USERNAME_PROPERTY` veld.
    * Wijs de overeenkomstige wachtwoordwaarde aan toe `javax.xml.ws.BindingProvider` object `PASSWORD_PROPERTY` veld.

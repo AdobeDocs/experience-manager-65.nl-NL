@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 17d13e9b201629d9d1519fde4740cf651fe89d2c
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2393'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
 
    * `cq:dialog` - dialoogvenster voor de interface met aanraakbediening
    * `dialog` - dialoog voor de klassieke gebruikersinterface
-   * `cq:editConfig` - hoe componenten zich gedragen in de bewerkingsomgeving (bijv. slepen en neerzetten)
+   * `cq:editConfig` - hoe componenten zich gedragen in de bewerkingsomgeving (bijvoorbeeld slepen en neerzetten)
    * `design_dialog` - dialoogvenster voor ontwerpmodus (alleen klassieke gebruikersinterface)
 
 1. Activeer de nieuwe component in uw alineasysteem door:
@@ -217,7 +217,7 @@ Nadat de component is ontwikkeld, voegt u deze toe aan het alineasysteem, waarme
 
      `<contextPath>/ Test.html?wcmmode=design`
 
-   * klikken op Ontwerp in Sidekick
+   * klikken op Ontwerpen in Sidetrap
 
    U bevindt zich nu in de ontwerpmodus en kunt het alineasysteem bewerken.
 

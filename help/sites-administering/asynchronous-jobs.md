@@ -2,10 +2,10 @@
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '800'
-ht-degree: 98%
+source-wordcount: '804'
+ht-degree: 96%
 
 ---
 
@@ -101,7 +101,7 @@ Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wo
 
    ![Drempel voor verwijdering van assets](assets/async-delete-threshold.png)
 
-1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. succes bijvoorbeeld, mislukt.
 1. Sla de wijzigingen op.
 
 ### Asynchrone verplaatsingsbewerkingen van assets configureren {#configuring-asynchronous-move-operations}
@@ -114,7 +114,7 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 
    ![Drempel voor verplaatsing van assets](assets/async-move-threshold.png)
 
-1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. succes bijvoorbeeld, mislukt.
 1. Sla de wijzigingen op.
 
 ### Asynchrone verplaatsingsbewerkingen van pagina’s configureren {#configuring-asynchronous-page-move-operations}
@@ -127,14 +127,14 @@ Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de
 
    ![Drempel voor verplaatsing van pagina’s](assets/async-page-move.png)
 
-1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. succes bijvoorbeeld, mislukt.
 1. Sla de wijzigingen op.
 
 ### Asynchrone MSM-bewerkingen configureren {#configuring-asynchronous-msm-operations}
 
 1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
 1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. Bijvoorbeeld geslaagd, mislukt.
+1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. succes bijvoorbeeld, mislukt.
 
    ![MSM-configuratie](assets/async-msm.png)
 
@@ -148,4 +148,3 @@ Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de
 >* [Metagegevens van elementen importeren](/help/assets/metadata.md#import-metadata).
 >* [Metagegevens van elementen exporteren](/help/assets/metadata.md#export-metadata).
 >* [Connected Assets gebruiken om DAM-assets te delen vanuit externe implementaties](/help/assets/use-assets-across-connected-assets-instances.md).
-

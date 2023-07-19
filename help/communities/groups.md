@@ -13,9 +13,9 @@ docset: aem65
 pagetitle: Community Groups Console
 role: Admin
 exl-id: ef371ff8-6b4f-4e5a-98fb-d7c274927c46
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1676'
+source-wordcount: '1675'
 ht-degree: 0%
 
 ---
@@ -60,15 +60,15 @@ De console Groepen openen:
    * De structuur van de site van de community moet een groepfunctie bevatten.
    * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag na [groepen maken voor publicatie](/help/communities/published-site.md).
 
-   ![createGroup](assets/create-group.png)
+  ![createGroup](assets/create-group.png)
 
 * Selecteer **Map Groepen** om het te openen.
 
-   Als deze groep wordt geopend, worden alle bestaande groepen weergegeven, ongeacht of deze groepen bij de auteur of bij de publicatie zijn gemaakt.
+  Als deze groep wordt geopend, worden alle bestaande groepen weergegeven, ongeacht of deze groepen bij de auteur of bij de publicatie zijn gemaakt.
 
-   Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
+  Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
-   ![create-new-group](assets/create-new-group.png)
+  ![create-new-group](assets/create-new-group.png)
 
 * Selecteer **Groep maken** knop.
 
@@ -78,34 +78,34 @@ De console Groepen openen:
 
 * **Titel van communautaire groep**
 
-   Een weergavetitel voor de groep.
+  Een weergavetitel voor de groep.
 De titel wordt op de gepubliceerde site voor de groep weergegeven.
 
 * **Omschrijving van de communautaire groep**
 
-   Een beschrijving van de groep.
+  Een beschrijving van de groep.
 
 * **Hoofdmap van communautaire groep**
 
-   Het hoofdpad naar de groep.
+  Het hoofdpad naar de groep.
 De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar elke locatie binnen de website worden verplaatst. Het wordt afgeraden dit te wijzigen.
 
 * **Aanvullende beschikbare talen van de communautaire groep** menu
 
-   Gebruik de vervolgkeuzelijst om de beschikbare taal of talen van groepen in de gebruikersgemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
+  Gebruik de vervolgkeuzelijst om de beschikbare taal of talen van groepen in de gebruikersgemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
 
 * **Naam van communautaire groep**
 
-   De naam van de basispagina van de groep die in URL verschijnt. Gebruik geen onderstrepingstekens (_) en trefwoorden zoals bronnen en configuratie in groepsnaam.
+  De naam van de basispagina van de groep die in URL verschijnt. Gebruik geen onderstrepingstekens (_) en trefwoorden zoals bronnen en configuratie in groepsnaam.
 
    * Controleer de naam nogmaals omdat deze niet gemakkelijk kan worden gewijzigd nadat de groep is gemaakt.
    * De basis-URL wordt onder de `Community Group Name`.
    * Voor een geldige URL voegt u &quot;.html&quot; toe
-      *bijvoorbeeld*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
+     *bijvoorbeeld*, `https://localhost:4502/content/sites/mysight/en/mygroup.html`.
 
 * **Template voor communautaire groep** menu
 
-   Kies in het keuzemenu een beschikbare [communitygroepsjabloon](/help/communities/tools.md).
+  Kies in het keuzemenu een beschikbare [communitygroepsjabloon](/help/communities/tools.md).
 
 ### Stap 2: Ontwerp {#step-design}
 
@@ -166,15 +166,15 @@ Met de instelling voor lidmaatschap kunt u een van de drie manieren selecteren o
 
 * **Optioneel lidmaatschap**
 
-   Indien geselecteerd, is de communautaire groep een openbare groep. Siteleden kunnen deelnemen aan de groep en posten zonder expliciet deel te nemen aan de groep. Standaard is geselecteerd.
+  Indien geselecteerd, is de communautaire groep een openbare groep. Siteleden kunnen deelnemen aan de groep en posten zonder expliciet deel te nemen aan de groep. Standaard is geselecteerd.
 
 * **Vereist lidmaatschap**
 
-   Indien geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten zich bij de groep voegen om inhoud te posten. De leden voegen zich bij door te selecteren `Join` in de publicatieomgeving. Standaard is niet geselecteerd.
+  Indien geselecteerd, is de communautaire groep een open groep. Leden van een Community-site kunnen de inhoud van de groep bekijken, maar moeten zich bij de groep voegen om inhoud te posten. De leden voegen zich bij door te selecteren `Join` in de publicatieomgeving. Standaard is niet geselecteerd.
 
 * **Beperkt lidmaatschap**
 
-   Indien geselecteerd, is de communautaire groep een geheime groep. De leden van de Gemeenschap moeten uitdrukkelijk worden uitgenodigd. Uitgenodigde leden worden ingevoerd in het zoekvak. Leden kunnen later worden toegevoegd met de [Samenstellingen van leden en groepen](/help/communities/members.md) de auteursomgeving. Standaard is niet geselecteerd.
+  Indien geselecteerd, is de communautaire groep een geheime groep. De leden van de Gemeenschap moeten uitdrukkelijk worden uitgenodigd. Uitgenodigde leden worden ingevoerd in het zoekvak. Leden kunnen later worden toegevoegd met de [Samenstellingen van leden en groepen](/help/communities/members.md) de auteursomgeving. Standaard is niet geselecteerd.
 
 **THUMBNAIL**
 

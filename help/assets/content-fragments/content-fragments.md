@@ -4,9 +4,9 @@ description: Leer hoe u met Content Fragments in Adobe Experience Manager (AEM) 
 feature: Content Fragments
 role: User
 exl-id: 0ee883c5-0cea-46b7-a759-600b8ea3bc3e
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1989'
+source-wordcount: '1991'
 ht-degree: 3%
 
 ---
@@ -55,11 +55,10 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren,
 >* [Ondersteuning voor contentfragmenten in HTTP-API van AEM Assets](/help/assets/assets-api-content-fragments.md)
 >* [GraphQL API AEM voor gebruik met inhoudsfragmenten](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
 
-
 Het aantal communicatiekanalen neemt jaarlijks toe. Doorgaans verwijzen kanalen naar het leveringsmechanisme, als:
 
 * fysiek kanaal; bijvoorbeeld desktop, mobiel.
-* Vorm van levering in een fysiek kanaal; Bijvoorbeeld de pagina met productdetails, de pagina met productcategorieën voor desktops of mobiele websites, de pagina met mobiele apps voor mobiele apparaten.
+* Vorm van levering in een fysiek kanaal; bijvoorbeeld de pagina &#39;&#39;productdetails&#39;&#39;, &#39;&#39;productcategoriepagina&#39;&#39; voor desktop&#39; of &#39;&#39;mobiel web&#39;&#39; en &#39;&#39;mobiele app&#39; voor mobiele apparaten.
 
 U (waarschijnlijk) wilt echter niet exact dezelfde inhoud gebruiken voor alle kanalen. U moet de inhoud optimaliseren op basis van het specifieke kanaal.
 
@@ -156,9 +155,9 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * De positie van het element definiëren.
    * Zie [Elementen invoegen in uw fragment](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
 
-   >[!NOTE]
-   >
-   >Visuele elementen die in het inhoudsfragment zelf zijn ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
+  >[!NOTE]
+  >
+  >Visuele elementen die in het inhoudsfragment zelf zijn ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
 
 * **Gekoppelde inhoud**
 
@@ -204,13 +203,13 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Kan alleen worden toegevoegd aan tekstelementen met meerdere regels (elk fragmenttype).
    * Aan de voorgaande tekst (alinea) worden toegevoegd.
 
-      >[!CAUTION]
-      >
-      >Elementen kunnen (onbedoeld) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
+     >[!CAUTION]
+     >
+     >Elementen kunnen (onbedoeld) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
 
-      >[!NOTE]
-      >
-      >Elementen kunnen ook worden toegevoegd als [extra inhoud (tussen)](/help/sites-authoring/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina; het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
+     >[!NOTE]
+     >
+     >Elementen kunnen ook worden toegevoegd als [extra inhoud (tussen)](/help/sites-authoring/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina; het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
 
 * **Gekoppelde inhoud**
 
@@ -233,9 +232,9 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
          * Door het fragment weer te geven/te bewerken **Eigenschappen** vanaf de console
          * Door de **Metagegevens** wanneer in de fragmenteditor
 
-   >[!CAUTION]
-   >
-   >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
+  >[!CAUTION]
+  >
+  >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
 
 * **Master**
 
@@ -243,9 +242,9 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
       * Elk inhoudsfragment heeft één instantie van Master.
       * Master kan niet worden verwijderd.
+
    * Master is toegankelijk in de fragmenteditor onder **[Variaties](/help/assets/content-fragments/content-fragments-variations.md)**.
    * Master is geen variatie als zodanig, maar is de basis van alle variaties.
-
 
 * **Variaties**
 

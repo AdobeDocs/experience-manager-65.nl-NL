@@ -10,16 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 698990a2-dd3f-480f-9d15-d87563860297
 exl-id: 4f824d80-f3f8-4010-9583-5a9ab1151a7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
 
 # Single Sign On en timeout handlers {#single-sign-on-and-timeout-handlers}
 
-AEM Forms-werkruimte is SSO ingeschakeld. Als een gebruiker zich heeft aangemeld bij een AEM Forms-toepassing, zoals de gebruikersinterface van Forms Manager of PDF Generator, en in dezelfde browsersessie toegang heeft tot de AEM Forms-werkruimte, wordt de gebruiker aangemeld bij de werkruimte van AEM Forms en andersom.
+AEM Forms-werkruimte is SSO ingeschakeld. Als een gebruiker zich heeft aangemeld bij een AEM Forms-toepassing, zoals Forms Manager of de gebruikersinterface van PDF Generatoren, en toegang heeft tot de AEM Forms-werkruimte in dezelfde browsersessie, wordt de gebruiker aangemeld bij de AEM Forms-werkruimte en omgekeerd.
 
 ## Time-out van server afhandelen in AEM Forms-werkruimte {#handling-server-timeout-in-nbsp-aem-forms-workspace}
 

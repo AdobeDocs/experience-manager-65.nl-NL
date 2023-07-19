@@ -4,9 +4,9 @@ description: Dit artikel introduceert de concepten SPA en loopt door het gebruik
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 0e8ad326e883f73e795929ce7d5d36f1bcdc5347
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 
 >[!NOTE]
 >
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
@@ -50,7 +50,7 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SP
 
 ### Wat is een SPA? {#what-is-a-spa}
 
-Een toepassing van één pagina (SPA) verschilt van een conventionele pagina in zoverre dat het cliënt-kant wordt teruggegeven en hoofdzakelijk JavaScript-gedreven is, die op Ajax vraag baseert om gegevens te laden en dynamisch de pagina bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
+Een toepassing van één pagina (SPA) verschilt van een conventionele pagina in die zin dat deze wordt weergegeven op de client en voornamelijk door JavaScript wordt aangedreven. Hierbij wordt uitgegaan van Ajax-aanroepen om gegevens te laden en de pagina dynamisch bij te werken. De meeste of alle inhoud wordt één keer opgehaald in één pagina die wordt geladen met extra bronnen die asynchroon worden geladen, afhankelijk van gebruikersinteractie met de pagina.
 
 Hierdoor is het minder nodig pagina&#39;s te vernieuwen en wordt de gebruiker een ervaring geboden die naadloos, snel is en meer lijkt op een native app-ervaring.
 
@@ -183,7 +183,7 @@ de volgende afdeling, [Een SPA toepassing laden,](#loading-an-spa-application) g
 
 1. Naar de **Netwerk** van de ontwikkelaarsgereedschappen en laad de pagina opnieuw.
 
-   Afbeeldingsverzoeken negeren. De primaire bronnen die voor de pagina worden geladen, zijn de pagina zelf, CSS, het React JavaScript, de afhankelijkheden en JSON-gegevens voor de pagina.
+   Afbeeldingsverzoeken negeren. De primaire bronnen die voor de pagina worden geladen, zijn de pagina zelf, CSS, de React JavaScript, de afhankelijkheden en JSON-gegevens voor de pagina.
 
    ![Stap 5](assets/spa-walkthrough-step-1-5.png)
 

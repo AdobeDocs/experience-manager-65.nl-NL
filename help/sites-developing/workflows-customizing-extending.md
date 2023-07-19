@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 13f15bee38b6b4af4cd59376849810a788f0c467
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3583'
+source-wordcount: '3584'
 ht-degree: 0%
 
 ---
@@ -52,27 +52,26 @@ Zoals met [alle componenten](/help/sites-developing/components.md), workflowstap
 >1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs` krachtens `/apps`
 >2. Breng wijzigingen aan in `/apps`
 
-
 De `/libs/cq/workflow/components/model/step` component is de dichtstbijzijnde gangbare voorouder van de **Processtap**, **Stap deelnemer**, en **Stap dynamische deelnemer**, die alle de volgende items overerven:
 
 * `step.jsp`
 
-   De `step.jsp` wordt de titel van de step-component weergegeven wanneer deze aan een model wordt toegevoegd.
+  De `step.jsp` wordt de titel van de step-component weergegeven wanneer deze aan een model wordt toegevoegd.
 
-   ![wf-22-1](assets/wf-22-1.png)
+  ![wf-22-1](assets/wf-22-1.png)
 
 * [cq:dialoogvenster](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog)
 
-   Een dialoogvenster met de volgende tabbladen:
+  Een dialoogvenster met de volgende tabbladen:
 
    * **Vaak**: voor het bewerken van de titel en beschrijving.
    * **Geavanceerd**: voor het bewerken van eigenschappen voor e-mailmeldingen.
 
-   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
+  ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
-   >[!NOTE]
-   >
-   >Wanneer de tabbladen van het dialoogvenster Bewerken van een stapcomponent niet overeenkomen met deze standaardweergave, heeft de stapcomponent scripts, knoopeigenschappen of dialoogtabbladen gedefinieerd die deze overgeërfde tabbladen overschrijven.
+  >[!NOTE]
+  >
+  >Wanneer de tabbladen van het dialoogvenster Bewerken van een stapcomponent niet overeenkomen met deze standaardweergave, heeft de stapcomponent scripts, knoopeigenschappen of dialoogtabbladen gedefinieerd die deze overgeërfde tabbladen overschrijven.
 
 ### ECMA-scripts {#ecma-scripts}
 
@@ -92,7 +91,7 @@ U kunt metagegevens over workflows gebruiken om de informatie die tijdens de lev
 
 Er zijn drie typen objecten MetaDataMap - voor `Workflow`, `WorkflowData` en `WorkItem` objecten. Ze hebben allemaal hetzelfde doel: metagegevens opslaan.
 
-Een WorkItem heeft zijn eigen MetaDataMap die slechts kan worden gebruikt terwijl dat werkpunt (b.v. stap) loopt.
+Een WorkItem heeft zijn eigen MetaDataMap die slechts kan worden gebruikt terwijl dat werkpunt (bijvoorbeeld, stap) loopt.
 
 Beide `Workflow` en `WorkflowData` metadatamaps worden over de gehele werkstroom gedeeld. In deze gevallen wordt het aanbevolen alleen de `WorkflowData` metagegevensoverzicht.
 
@@ -125,7 +124,6 @@ Gebruik de volgende procedure om standaardwaarden op te geven voor de **Titel** 
 >  Aan deze vereiste wordt voldaan wanneer in het dialoogvenster Bewerken het tabblad Algemeen wordt gebruikt dat `/libs/cq/flow/components/step/step` component implementeert.
 >
 >* De step-component of een voorouder van de component overschrijft de component niet `step.jsp` die de `/libs/cq/flow/components/step/step` component implementeert.
-
 
 1. Onder de `cq:Component` knooppunt, voeg het volgende knooppunt toe:
 
@@ -669,7 +667,6 @@ function getParticipant() {
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
-
 U kunt workflowstappen ontwikkelen om de pakketbronnen te verkrijgen en deze te verwerken. De volgende leden van de `com.day.cq.workflow.collection` bieden toegang tot workflowpakketten:
 
 * `ResourceCollection`: Workflowpakketklasse.
@@ -826,21 +823,21 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
    * `sling:resourceSuperType`
 
-      Moet overerven van een bestaande stap.
+     Moet overerven van een bestaande stap.
 
-      In dit voorbeeld overerven we van de basisstap bij `cq/workflow/components/model/step`, maar u kunt andere supertypen gebruiken zoals `participant`, `process`, enz.
+     In dit voorbeeld overerven we van de basisstap bij `cq/workflow/components/model/step`, maar u kunt andere supertypen gebruiken zoals `participant`, `process`, enz.
 
    * `jcr:title`
 
-      Wordt de titel weergegeven wanneer de component in de stapbrowser wordt weergegeven (linkerdeelvenster van de werkstroommodeleditor).
+     Wordt de titel weergegeven wanneer de component in de stapbrowser wordt weergegeven (linkerdeelvenster van de werkstroommodeleditor).
 
    * `cq:icon`
 
-      Wordt gebruikt om een [Koraal, pictogram](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) voor de stap.
+     Wordt gebruikt om een [Koraal, pictogram](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) voor de stap.
 
    * `componentGroup`
 
-      Moet een van de volgende items zijn:
+     Moet een van de volgende items zijn:
 
       * Workflow voor samenwerking
       * DAM-workflow
@@ -873,11 +870,12 @@ Na [De basisstap maken](#creating-the-basic-step), definieert u de stap **Config
 
    * `cq:inherit`
 
-      Wanneer ingesteld op `true`overerft uw component step eigenschappen van de stap die u hebt opgegeven in `sling:resourceSuperType`.
+     Wanneer ingesteld op `true`overerft uw component step eigenschappen van de stap die u hebt opgegeven in `sling:resourceSuperType`.
 
    * `cq:disableTargeting`
 
-      Stel dit naar wens in.
+     Stel dit naar wens in.
+
    ![wf-39](assets/wf-39.png)
 
 1. De eigenschappen op het knooppunt configureren `cq:formsParameter` als volgt:
@@ -886,7 +884,7 @@ Na [De basisstap maken](#creating-the-basic-step), definieert u de stap **Config
 
    * `jcr:title`
 
-      Hiermee stelt u de standaardtitel in voor de stapkaart in het modeloverzicht en in het dialoogvenster **Titel** van het **Mijn aangepaste - stapeigenschappen** configuratiedialoogvenster.
+     Hiermee stelt u de standaardtitel in voor de stapkaart in het modeloverzicht en in het dialoogvenster **Titel** van het **Mijn aangepaste - stapeigenschappen** configuratiedialoogvenster.
 
    * U kunt ook uw eigen aangepaste eigenschappen definiëren.
 

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1862'
+source-wordcount: '1863'
 ht-degree: 0%
 
 ---
@@ -49,8 +49,8 @@ Het eCommerce-kader kan met elke eCommerce-oplossing worden gebruikt, waarbij de
 
       * Indien gevonden, wordt de waarde gebruikt om de raadpleging van de handelsdienst te filtreren.
       * Indien niet gevonden, wordt de hoogste commerciële dienst gebruikt.
-   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk-getypte middelen worden toegevoegd.
 
+   * A `cq:Commerce` vermenging wordt gebruikt zodat de `cq:commerceProvider` kan aan sterk-getypte middelen worden toegevoegd.
 
 * De `cq:commerceProvider` eigenschap wordt ook gebruikt om te verwijzen naar de juiste definitie van de handelsfabriek .
 
@@ -97,11 +97,11 @@ De **CommerceSession**:
    * toevoegen/verwijderen/enz. uitvoeren
    * de verschillende berekeningen op het karretje uitvoert;
 
-      `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
+     `commerceSession.getProductPriceInfo(Product product, Predicate filter)`
 
 * persistentie van de **bestellen** gegevens:
 
-   `CommerceSession.getUserContext()`
+  `CommerceSession.getUserContext()`
 
 * Kan leveringsdetails ophalen/bijwerken met behulp van `updateOrder(Map<String, Object> delta)`
 * Eigenaar van **betaling** verwerkingsverbinding
@@ -129,7 +129,6 @@ Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste a
 >
 >1. `size`
 >1. plus één of meer
-
 >
 >   Deze extra variant wordt geselecteerd via `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Outdoors).
 
@@ -197,7 +196,7 @@ public interface Product extends Adaptable {
  * Interface for filtering variants and AxisFilter provided as common implementation
  *
  * The <code>VariantFilter</code> is used to filter variants,
- * e.g. when using {@link Product#getVariants(VariantFilter filter)}.
+ * for example, when using {@link Product#getVariants(VariantFilter filter)}.
  */
 public interface VariantFilter {
     public boolean includes(Product product);
@@ -249,11 +248,11 @@ public class AxisFilter implements VariantFilter {
          * Productverwijzingen bevatten een `productData` eigenschap, die verwijst naar de productgegevens (doorgaans onder `/etc/commerce/products`).
          * De productgegevens zijn hiërarchisch; productkenmerken worden overgenomen van de voorouders van een productgegevensknooppunt.
          * De verwijzingen van het product kunnen lokale eigenschappen ook bevatten, die die in hun productgegevens worden gespecificeerd met voeten treden.
+
       * Een product zelf:
 
          * Zonder `productData` eigenschap.
          * Een productknooppunt dat alle eigenschappen lokaal bevat (en geen eigenschap productData bevat), neemt productkenmerken rechtstreeks van zijn eigen voorouders over.
-
 
 * **AEM-generieke productstructuur**
 
@@ -321,11 +320,11 @@ public class AxisFilter implements VariantFilter {
       * Kwantiseringen.
       * Verschillende valuta&#39;s.
       * BTW-plichtig en btw-vrij.
+
    * De modifiers zijn volledig open-eind met de volgende interface:
 
       * `int CommerceSession.getQuantityBreakpoints(Product product)`
       * `String CommerceSession.getProductPrice(Product product)`
-
 
 **Opslag**
 
@@ -432,36 +431,37 @@ Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `
 
    * Een Voucher is een op pagina&#39;s gebaseerde component die met de console van Websites wordt gecreeerd/uitgegeven en onder wordt opgeslagen:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Levering aan vouchers:
 
       * Een vouchercode (die door de verkoper in de winkelwagen moet worden getypt).
       * Een voucherlabel (dat moet worden weergegeven nadat de gebruiker het in de winkelwagen heeft ingevoerd).
       * Een promotiepad (dat de actie definieert die de voucher toepast).
+
    * Vouchers hebben geen eigen datum/tijd, maar gebruiken die van hun bovenliggende campagnes.
    * ook motoren voor externe handel kunnen vouchers leveren; deze vereisen een minimum van :
 
       * Een vouwcode
       * An `isValid()` methode
+
    * De **Voucher** component ( `/libs/commerce/components/voucher`) biedt:
 
       * Een renderer voor voucherbeheer; hieruit blijkt welke vouchers zich momenteel in de kar bevinden .
       * De bewerkingsdialoogvensters (formulier) voor het beheren (toevoegen/verwijderen) van de vouchers.
       * De handelingen die vereist zijn voor het toevoegen/verwijderen van vouchers aan/uit de kar.
 
-
-
 * Promoties:
 
    * Een bevordering is een op pagina-gebaseerde component die met de console van Websites wordt gecreeerd/wordt uitgegeven en onder wordt opgeslagen:
 
-      `/content/campaigns`
+     `/content/campaigns`
 
    * Aanbod voor promoties:
 
       * Een prioriteit
       * Een pad voor promotiemandschappen
+
    * U kunt promoties verbinden met een campagne om de aan/uit-datum of -tijden te definiëren.
    * U kunt promoties aan een ervaring verbinden om hun segmenten te bepalen.
    * Promoties die geen verband houden met een ervaring, worden niet op zichzelf afgegaan, maar kunnen nog steeds door een Voucher worden geactiveerd.
@@ -469,17 +469,16 @@ Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `
 
       * renderers en dialoogvensters voor bevorderingsbeheer
       * subcomponenten voor het teruggeven en het uitgeven configuratieparameters specifiek voor de bevorderingsmanagers
+
    * Er worden twee promotiehandlers uit de verpakking geleverd:
 
       * `DiscountPromotionHandler`, waarbij een absolute of percentagekorting voor het hele winkelwagentje wordt toegepast
       * `PerfectPartnerPromotionHandler`, die een absolute productkorting of een percentagekorting toepast als het partnerproduct ook in de kar is
+
    * De ClientContext `SegmentMgr` Hiermee worden segmenten en de ClientContext omgezet `CartMgr` lost bevorderingen op. Elke bevordering die aan minstens één opgelost segment onderworpen is zal worden in werking gesteld.
 
       * Geactiveerde promoties worden teruggestuurd naar de server via een AJAX oproep om het winkelwagentje opnieuw te berekenen.
       * Afgelopen promoties (en toegevoegde vouchers) worden ook weergegeven in het deelvenster ClientContext.
-
-
-
 
 Het toevoegen/verwijderen van een voucher uit een winkelwagentje gebeurt via de `CommerceSession` API:
 
@@ -522,7 +521,7 @@ De `AbstractJcrCommerceSession` op voorwaarde dat zij vouchers kunnen toepassen.
 
 * `jcr:title` (String) - voor de beschrijving van de voucher
 * `code` (String) - de code die de gebruiker moet invoeren om deze voucher toe te passen
-* `promotion` (String) - de promotie die moet worden toegepast; bijv. `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) - de promotie die moet worden toegepast; bijvoorbeeld: `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
 Promotiehandlers zijn OSGi-services die het winkelwagentje wijzigen. Het winkelwagentje ondersteunt meerdere haken die worden gedefinieerd in het dialoogvenster `PromotionHandler` interface.
 

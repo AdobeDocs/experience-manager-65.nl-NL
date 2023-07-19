@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: b833c28b-76c6-42a2-b690-3e81ddf91bc2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '474'
 ht-degree: 0%
@@ -63,8 +63,8 @@ De sectie URLs bevat verbindingen aan eigenschappen ContextHub:
 
 * **Configuratie-editor:** Hiermee opent u de [ContextHub Configuration-pagina](ch-configuring.md) waar u opslag, wijzen UI, en modules UI kunt vormen.
 
-* **Configuratie van ContextHub-modules:** Opent het bestand /etc/cloudsettings/default/contexthub.config.kernel.js, dat de Javascript-objectrepresentatie van de ContextHub-opslagconfiguraties bevat.
-* **Configuratie van ContextHub UI:** Opent het /etc/cloudsettings/default/contexthub.config.ui.js- dossier, dat de Javascript objecten vertegenwoordiging van de ContextHub UI wijzeconfiguraties bevat.
+* **Configuratie van ContextHub-modules:** Opent het bestand /etc/cloudsettings/default/contexthub.config.kernel.js, dat de JavaScript-objectrepresentatie van de ContextHub-opslagconfiguraties bevat.
+* **Configuratie van ContextHub UI:** Opent het bestand /etc/cloudsettings/default/contexthub.config.ui.js, dat de JavaScript-objectrepresentatie van de ContextHub UI-modusconfiguraties bevat.
 * **kernel.js:** Opent het /etc/cloudsettings/default/contexthub.kernel.js- dossier, dat de broncode van de cliëntbibliotheken bevat die het kader ContextHub, de segmentmotor, en opslagtypes uitvoeren.
 * **ui.js:** Opent het /etc/cloudsettings/default/contexthub.ui.js- dossier, dat de broncode van de cliëntbibliotheken bevat die de ContextHub UI en UI moduletypes uitvoeren.
 * **style.css:** Opent het bestand /etc/cloudsettings/default/contexthub.styles.css, dat de CSS-stijlen voor de modules ContextHub UI en UI bevat.

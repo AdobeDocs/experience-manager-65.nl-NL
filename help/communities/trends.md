@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '345'
 ht-degree: 1%
 
 ---
@@ -62,39 +62,39 @@ Onder de **Opmerkingen** , geeft u op of en hoe opmerkingen voor geüploade best
 
 * **Type**
 
-   Geef op of gegevens met betrekking tot leden van de gebruikersgemeenschap of door de gebruiker gegenereerde inhoud (UGC) moeten worden weergegeven.
+  Geef op of gegevens met betrekking tot leden van de gebruikersgemeenschap of door de gebruiker gegenereerde inhoud (UGC) moeten worden weergegeven.
 
-   Selecteer  vanuit:
+  Selecteer  vanuit:
 
    * `Members`
    * `Content`
 
-   Standaard is `Members`.
+  Standaard is `Members`.
 
 * **Weergavetitel**
 
-   Een beschrijvende titel die boven de gegevens wordt weergegeven, zoals `Trending Content`.
+  Een beschrijvende titel die boven de gegevens wordt weergegeven, zoals `Trending Content`.
 Standaard is geen titel.
 
 * **Aantal weergeven**
 
-   Het aantal aan te bieden items.
+  Het aantal aan te bieden items.
 De standaardwaarde is 10.
 
 * **Type activiteit**
 
-   Selecteer een van de volgende opties:
+  Selecteer een van de volgende opties:
 
    * `Views`(paginabezoeken)
    * `Posts`(maken van UGC)
    * `Follows`
    * `Likes`
 
-   Standaard zijn weergaven.
+  Standaard zijn weergaven.
 
 * **Tijdsperiode**
 
-   Selecteer een van de volgende opties:
+  Selecteer een van de volgende opties:
 
    * `Last 24 hours`
    * `Last 7 days`
@@ -103,16 +103,16 @@ De standaardwaarde is 10.
    * `This year (since Jan 1st)`
    * `Total`
 
-   Standaard is `Total`.
+  Standaard is `Total`.
 
 * **Contextpad**
 
-   Verstrekt de capaciteit om de activiteit tot een ondergroep van de plaats, zoals een specifieke Blog uit te breiden.
+  Verstrekt de capaciteit om de activiteit tot een ondergroep van de plaats, zoals een specifieke Blog uit te breiden.
 Standaard is dit de hele community-site.
 
 * **Samenvoeging aantal leden**
 
-   Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type` van `Posts` geen activiteit tonen omdat inhoud niet op de hoofdpagina kan worden geplaatst. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
+  Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type` van `Posts` geen activiteit tonen omdat inhoud niet op de hoofdpagina kan worden geplaatst. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
 Standaard is ingeschakeld.
 
 ### Voorbeeldpagina met 4 componenten {#example-page-with-components}

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '670'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,6 @@ Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. 
 >
 
 
-
 >[!CAUTION]
 >
 >U ***moet*** niets wijzigen in de `/libs` pad.
@@ -54,9 +53,7 @@ Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. 
 >1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
 >
 >1. Breng wijzigingen aan in `/apps`
-
 >
-
 
 De volgende locatie in het dialoogvenster `/libs` de structuur kan worden bedekt door :
 
@@ -142,17 +139,18 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
    * Op het knooppunt:
 
-      ```
-             /apps/wcm/core/content/common/availablecolumns
-      ```
+     ```
+            /apps/wcm/core/content/common/availablecolumns
+     ```
 
    * Voeg uw nieuwe kolommen toe - of verwijder bestaande kolommen.
+
    Zie [Bedekkingen gebruiken (en de samenvoeging van bronnen voor verschuiven)](/help/sites-developing/overlays.md) voor meer informatie .
 
 1. Optioneel:
 
    * Als u aanvullende gegevens wilt aansluiten, moet u een [PageInforProvider](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html) met een
-      `pageInfoProviderType` eigenschap.
+     `pageInfoProviderType` eigenschap.
 
    Bijvoorbeeld, zie hieronder de klasse/de bundel in bijlage (van GitHub).
 
@@ -160,6 +158,6 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 ### Bronnen filteren {#filtering-resources}
 
-Wanneer u een console gebruikt, wordt vaak gebruikgemaakt van een array die de gebruiker moet selecteren (pagina&#39;s, componenten, elementen, enzovoort). Dit kan de vorm hebben van een lijst, bijvoorbeeld van waaruit de auteur een punt moet kiezen.
+Wanneer u een console gebruikt, wordt vaak gebruikgemaakt van een array wanneer de gebruiker bronnen moet selecteren (bijvoorbeeld pagina&#39;s, componenten, elementen, enzovoort). Dit kan de vorm hebben van een lijst, bijvoorbeeld van waaruit de auteur een punt moet kiezen.
 
 Om de lijst tot een redelijke grootte te houden en ook relevant voor het gebruiksgeval, kan een filter in de vorm van een douane predikaat worden uitgevoerd. Zie [dit artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor meer informatie.

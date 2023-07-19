@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: cd3b979f-53d4-4274-b4eb-a9533329192a
 docset: aem65
 exl-id: 70a39462-8584-4c76-a097-05ee436247b7
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '6408'
 ht-degree: 0%
@@ -165,7 +165,7 @@ mongodburi=mongodb://aem:aempassword@mongodbserver1.customer.com:27000,mongodbse
 #Name of MongoDB database to use
 db=aem
 
-#Store binaries in custom BlobStore e.g. FileDataStore
+#Store binaries in custom BlobStore for example, FileDataStore
 customBlobStore=true
 
 cache=2048
@@ -178,16 +178,13 @@ Waar:
 De MongoDB-AEM moet verbinding maken. Verbindingen worden gemaakt met alle bekende leden van de standaardreplicaset. Als MongoDB Cloud Manager wordt gebruikt, is de serverbeveiliging ingeschakeld. Daarom moet de verbindingstekenreeks een geschikte gebruikersnaam en wachtwoord bevatten. Niet-zakelijke versies van MongoDB ondersteunen alleen gebruikersnaam- en wachtwoordverificatie. Voor meer informatie over de syntaxis van de verbindingstekenreeks raadpleegt u de [documentatie](https://docs.mongodb.org/manual/reference/connection-string/).
 
 * `db`
-De naam van de database. De standaardwaarde voor AEM is 
-`aem-author`.
+De naam van de database. De standaardwaarde voor AEM is `aem-author`.
 
 * `customBlobStore`
-Als de plaatsing binaire getallen in het gegevensbestand opslaat, maken zij deel uit van de het werk reeks. Daarom wordt aangeraden binaire bestanden niet in MongoDB op te slaan, bij voorkeur een alternatieve datastore als een 
-`FileSystem` datastore op een NAS.
+Als de plaatsing binaire getallen in het gegevensbestand opslaat, maken zij deel uit van de het werk reeks. Daarom wordt aangeraden binaire bestanden niet in MongoDB op te slaan, bij voorkeur een alternatieve datastore als een `FileSystem` datastore op een NAS.
 
 * `cache`
-De cachegrootte in megabytes. Deze ruimte wordt verdeeld over verschillende caches die worden gebruikt in de 
-`DocumentNodeStore`. De standaardwaarde is 256 MB. Eak-leesprestaties profiteren echter van een grotere cache.
+De cachegrootte in megabytes. Deze ruimte wordt verdeeld over verschillende caches die worden gebruikt in de `DocumentNodeStore`. De standaardwaarde is 256 MB. Eak-leesprestaties profiteren echter van een grotere cache.
 
 * `blobCacheSize`
 Veelgebruikte blobs kunnen door AEM in de cache worden geplaatst om te voorkomen dat ze opnieuw uit de gegevensopslag worden opgehaald. Dit heeft meer invloed op de prestaties, met name wanneer u lobs opslaat in de MongoDB-database. Alle gegevensopslagsystemen op bestandssysteem profiteren van de schijfcache op besturingssysteemniveau.
@@ -210,16 +207,13 @@ cacheSizeInMB=128
 Waar:
 
 * `minRecordLength`
-Grootte in bytes. Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze grootte, worden opgeslagen in het Document Node Store. In plaats van de id van de blob op te slaan, wordt de inhoud van het binaire bestand opgeslagen. Met binaire getallen die groter zijn dan deze grootte, wordt identiteitskaart van binair getal opgeslagen als bezit van het Document in de knooppuntinzameling. En het lichaam van het binaire getal wordt opgeslagen in het 
-`FileDataStore` op schijf. 4096 bytes is een typische blokgrootte van het dossiersysteem.
+Grootte in bytes. Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze grootte, worden opgeslagen in het Document Node Store. In plaats van de id van de blob op te slaan, wordt de inhoud van het binaire bestand opgeslagen. Met binaire getallen die groter zijn dan deze grootte, wordt identiteitskaart van binair getal opgeslagen als bezit van het Document in de knooppuntinzameling. En het lichaam van het binaire getal wordt opgeslagen in het `FileDataStore` op schijf. 4096 bytes is een typische blokgrootte van het dossiersysteem.
 
 * `path`
-Het pad naar de hoofdmap van de gegevensopslag. Voor een MongoMK-implementatie moet dit pad een gedeeld bestandssysteem zijn dat beschikbaar is voor alle AEM. Gewoonlijk wordt een NAS-server (Network Attached Storage) gebruikt. Voor cloudimplementaties zoals Amazon Web Services: 
-`S3DataFileStore` is ook beschikbaar.
+Het pad naar de hoofdmap van de gegevensopslag. Voor een MongoMK-implementatie moet dit pad een gedeeld bestandssysteem zijn dat beschikbaar is voor alle AEM. Gewoonlijk wordt een NAS-server (Network Attached Storage) gebruikt. Voor cloudimplementaties zoals Amazon Web Services: `S3DataFileStore` is ook beschikbaar.
 
 * `cacheSizeInMB`
-De totale grootte van de binaire cache in Megabytes. Het wordt gebruikt om binaire bestanden in het cachegeheugen op te slaan die kleiner zijn dan de 
-`maxCacheBinarySize` instellen.
+De totale grootte van de binaire cache in Megabytes. Het wordt gebruikt om binaire bestanden in het cachegeheugen op te slaan die kleiner zijn dan de `maxCacheBinarySize` instellen.
 
 * `maxCachedBinarySize`
 De maximumgrootte in bytes van een binaire caching in het binaire geheime voorgeheugen. Als een op een bestandssysteem gebaseerde gegevensopslag wordt gebruikt, wordt het niet aanbevolen hoge waarden te gebruiken voor de cache van de gegevensopslag, aangezien de binaire bestanden al in de cache zijn opgeslagen door het besturingssysteem.
@@ -250,7 +244,7 @@ MongoDB wordt uitgevoerd op verschillende besturingssystemen, waaronder een groo
 * [De voorinstellingen aanpassen](https://docs.mongodb.com/manual/administration/production-notes/#readahead) op de apparaten die uw gegevensbestanddossiers opslaan zodat u uw gebruiksgeval past.
 
    * Als de werkset van de MMAPv1-opslagengine groter is dan het beschikbare RAM en het toegangspatroon van het document willekeurig is, kunt u het aflezen naar 32 of 16 verkleinen. U kunt verschillende instellingen evalueren, zodat u een optimale waarde kunt vinden voor een zo groot mogelijk geheugen en een lager aantal paginafouten.
-   * Voor de opslag WiredTiger motor, reeks opnieuw gelezen aan 0 ongeacht opslagmedia type (het draaien, SSD, etc.). Over het algemeen gebruikt u de aanbevolen instelling voor het aflezen van voorkeuren, tenzij tests een meetbaar, herhaalbaar en betrouwbaar voordeel opleveren bij een hogere aflezing. [Ondersteuning voor MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kan advies en begeleiding op configuraties zonder het nulbereik bieden.
+   * Voor de opslag WiredTiger motor, reeks opnieuw gelezen aan 0 ongeacht opslagmedia type (het draaien, SSD, etc.). Over het algemeen gebruikt u de aanbevolen instelling voor het aflezen van voorkeuren, tenzij tests een meetbaar, herhaalbaar en betrouwbaar voordeel opleveren bij een hogere aflezing. [Ondersteuning voor MongoDB Professional](https://docs.mongodb.com/manual/administration/production-notes/#readahead) kan advies en begeleiding over niet-nul readahead configuraties verstrekken.
 
 * Schakel het afgestelde gereedschap uit als u RHEL 7 / CentOS 7 in een virtuele omgeving uitvoert.
 * Wanneer RHEL 7/CentOS 7 in een virtuele milieu in werking wordt gesteld, roept het afgestemde hulpmiddel automatisch een prestatiesprofiel aan dat uit prestatiesproductie wordt afgeleid, die automatisch de lezingsmontages aan 4 MB plaatst. Deze instelling kan negatieve gevolgen hebben voor de prestaties.
@@ -550,6 +544,7 @@ echo "{nThreads:32,fileSizeMB:1000,r:true,mmf:true}" | mongoperf
 De uitvoer van de tweede test moet aanzienlijk hoger zijn dan die van de eerste, wat de prestaties van de geheugenoverdracht aangeeft.
 
 >[!NOTE]
+>
 Controleer bij het uitvoeren van de tests de I/O-gebruiksstatistieken voor de virtuele machines in kwestie in uw besturingssysteem. Als ze waarden aangeven die lager zijn dan 100 procent voor I/O lezen, kan er een probleem zijn met uw virtuele machine.
 
 **De schrijfprestaties van de primaire MongoDB-instantie testen**
@@ -660,6 +655,7 @@ Het is wenselijk te beperken waar de middelen van kunnen worden geladen om te ve
 CSP staat voor het verfijnen van beleid toe. In een complexe toepassing, echter, moeten de kopballen CSP met zorg worden ontwikkeld aangezien het beleid dat te restrictief is delen van het gebruikersinterface kan breken.
 
 >[!NOTE]
+>
 Zie voor meer informatie over hoe dit werkt de [OWASP-pagina over beveiligingsbeleid voor inhoud](https://owasp.deteact.com/cheat/cheatsheets/Content_Security_Policy_Cheat_Sheet.html).
 
 ### Grootte {#sizing}
@@ -683,4 +679,5 @@ Om dit probleem te verhelpen, dient u de installatie eerst uit te voeren met Ã©Ã
 Als AEM wordt uitgevoerd op een implementatie van de persistentiebeheersoftware van MongoMK, [paginanamen mogen maximaal 150 tekens bevatten.](/help/sites-authoring/managing-pages.md)
 
 >[!NOTE]
+>
 Zie de [MongoDB-documentatie](https://docs.mongodb.com/manual/reference/limits/) zodat u zich met de bekende beperkingen en drempels van MongoDB kunt vertrouwd maken.

@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
 feature: Configuring
 exl-id: e53c4c81-f62e-4b6d-929a-6649c8ced23c
-source-git-commit: 24a64e603d460c659467c7679934bbdfd381aaa8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '5903'
+source-wordcount: '5902'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
   </tr>
   <tr>
    <td><strong>Wat gebeurt er als ik per ongeluk tegen de verkeerde gegevensopslagindeling looppas?</strong></td>
-   <td>Als u probeert om de eiken-segmentmodule tegen een eiken-segment-teer bewaarplaats (of vice versa) in werking te stellen, zal het opstarten met een mislukking ontbreken <em>IllegalStateException</em> met het bericht "Invalid segment format". Er treedt geen gegevensbeschadiging op.</td>
+   <td>Als u probeert om de eiken-segmentmodule tegen een eak-segment-teer bewaarplaats (of omgekeerd) in werking te stellen, zal het opstarten met een mislukking ontbreken <em>IllegalStateException</em> met het bericht "Invalid segment format". Er treedt geen gegevensbeschadiging op.</td>
    <td> </td>
   </tr>
   <tr>
@@ -400,7 +400,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
       </ul> </li>
      <li>Schijfruimte die wordt opgeschoond door de revisie
       <ul>
-       <li>De ruimte wordt slechts teruggewonnen wanneer de schoonmaakfase voltooit. De voltooiing van de opschoningsfase wordt duidelijk door het logboekbericht "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". De grootte van de opschoonbewerking na de opschoonbewerking is {} ({} bytes) en de ruimte die is teruggezet {} ({} bytes). Dikte/diepte van compactiemap is {}/{} ({} bytes/{}).".</li>
+       <li>De ruimte wordt slechts teruggewonnen wanneer de schoonmaakfase voltooit. De voltooiing van de opschoningsfase wordt duidelijk door het logboekbericht "T<code>arMK GC #{}: cleanup completed in {} ({} ms</code>". Formaat na opruimen is {} ({} bytes) en opnieuw geclaimde ruimte {} ({} bytes). Dikte/diepte van compactiemap is {}/{} ({} bytes/{}).".</li>
       </ul> </li>
      <li>Er is een probleem opgetreden tijdens het opschonen van de revisie
       <ul>
@@ -410,7 +410,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
    <td> </td>
   </tr>
   <tr>
-   <td><strong>Hoe te om te controleren hoeveel ruimte werd teruggewonnen nadat de Online Opschoning van de Revisie heeft voltooid?</strong></td>
+   <td><strong>Hoe te om te controleren hoeveel ruimte werd teruggewonnen nadat de Online Opruiming van de Revisie heeft voltooid?</strong></td>
    <td>Er staat een bericht in het logbestand aan het einde van de opschooncyclus: "<code>TarMK GC #3: cleanup completed</code>" die de grootte van de opslagplaats en de hoeveelheid geregenereerd afval omvat.</td>
    <td> </td>
   </tr>

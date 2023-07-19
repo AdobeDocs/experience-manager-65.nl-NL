@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '789'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 Met de [Geometrixx inschakelen](http://localhost:4503/content/sites/engage/en.html) site gemaakt bij [Aan de slag met AEM Communities](getting-started.md), is het mogelijk om snel een draad in een forum op te zetten waarop om diverse matigingsactiviteiten in het publicatiemilieu te ervaren, zoals hieronder wordt gezien.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de community-engact-moderators groep bij het maken van de site.
+Aaron McDonald (aaron.mcdonald@mailinator.com) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de groep van community-engact-moderators bij het maken van de site.
 
 Rebekah Larsen (rebekah.larsen@trashymail.com) kan worden toegevoegd als lid van een groep van leden die zich met de gemeenschap bezighouden, via de [Ledenconsole](members.md).
 
@@ -56,11 +56,11 @@ Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar
    * Nieuwe advertentie selecteren
    * Voer het onderwerp in
 
-      Wanneer wijzigt u de nectar in Humming Bird Feeder
+     Wanneer wijzigt u de nectar in Humming Bird Feeder
 
    * De hoofdtekst invoeren
 
-      Ik heb niet veel succes gehad als ik elk jaar een kolietvoeders ophang. Ze lijken een dag of twee te komen, dan is dat het. Ik verander het eenmaal per week, is dat te lang? Moet ik het eerder veranderen?
+     Ik heb niet veel succes gehad als ik elk jaar een kolietvoeders ophang. Ze lijken een dag of twee te komen, dan is dat het. Ik verander het eenmaal per week, is dat te lang? Moet ik het eerder veranderen?
 
    * Post selecteren
    * Afmelden selecteren
@@ -71,7 +71,7 @@ Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar
    * Selecteer Meer lezen voor het onderwerp Hummingird
    * Opmerking invoeren voor reactie op bericht
 
-      Ik verander de mijne eenmaal per week en ik krijg ze van mei tot oktober.
+     Ik verander de mijne eenmaal per week en ik krijg ze van mei tot oktober.
 
    * Reageren selecteren
    * Afmelden selecteren
@@ -82,7 +82,7 @@ Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar
    * Selecteer Meer lezen voor het onderwerp Hummingird
    * Opmerking invoeren voor reactie op bericht
 
-      Ik verkoop nectar en feeders - bezoek https://my.viral.url/
+     Ik verkoop nectar en feeders - bezoek https://my.viral.url/
 
    * Reageren selecteren
    * Afmelden selecteren

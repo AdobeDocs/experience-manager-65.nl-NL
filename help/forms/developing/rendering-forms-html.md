@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '4150'
 ht-degree: 0%
@@ -94,6 +94,7 @@ Wanneer u HTML-formulieren weergeeft die zowel paginanavigatiefuncties als formu
 Formulierscripts die zich in de gebeurtenis form:ready bevinden, worden slechts eenmaal uitgevoerd tijdens de eerste weergave van het formulier en worden niet uitgevoerd voor volgende opvragingen van pagina&#39;s. De gebeurtenis form:calculate wordt daarentegen uitgevoerd voor elke paginanavigatie waarin het formulier wordt gegenereerd.
 
 >[!NOTE]
+>
 Op een formulier met meerdere pagina&#39;s blijven wijzigingen die door JavaScript in een pagina zijn aangebracht, niet behouden als u naar een andere pagina gaat.
 
 U kunt aangepaste scripts aanroepen voordat u een formulier verzendt. Deze functie werkt op alle beschikbare browsers. Deze kan echter alleen worden gebruikt wanneer gebruikers het HTML-formulier met de bijbehorende `Output Type` eigenschap ingesteld op `Form Body`. Het werkt niet als de `Output Type` is `Full HTML`. Zie Formulieren configureren in de Help voor het beheer voor stappen om deze functie te configureren.
@@ -167,6 +168,7 @@ In het volgende script wordt het `fillColor` van een veld op basis van de waarde
 ```
 
 >[!NOTE]
+>
 Statische objecten worden niet weergegeven in een gerenderde HTML-vorm wanneer ze in een tabelcel zijn genest. Een cirkel en rechthoek die in een tabelcel zijn genest, worden bijvoorbeeld niet weergegeven in een HTML-formulier voor renderen. Dezelfde statische objecten worden echter correct weergegeven wanneer deze zich buiten de tabel bevinden.
 
 ## HTML-formulieren digitaal ondertekenen {#digitally-signing-html-forms}
@@ -189,6 +191,7 @@ U kunt een volledig HTML formulier weergeven dat voldoet aan toegankelijkheidsri
 Het wordt aanbevolen om het gebruik van validatieregels voor formuliervelden te beperken bij het weergeven van het formulier als een HTML-formulier. Sommige validatieregels worden mogelijk niet ondersteund voor HTML-formulieren. Wanneer bijvoorbeeld een validatiepatroon van DD-MM-JJJJ wordt toegepast op een `Date/Time` Het veld dat zich bevindt in een formulierontwerp dat wordt weergegeven als een HTML-formulier, werkt niet correct, zelfs niet als de datum op de juiste wijze is ingevoerd. Dit validatiepatroon werkt echter goed voor formulieren die worden weergegeven als PDF.
 
 >[!NOTE]
+>
 Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
@@ -224,9 +227,11 @@ Bij het weergeven van een formulier als HTML kunt u een gebruikersagent-waarde o
 HTTP-URL&#39;s waarnaar formuliergegevens worden verzonden, kunnen worden opgegeven door de doel-URL in te stellen met de Forms Service Client API of kunnen worden opgegeven in de knop Verzenden in het XDP-formulierontwerp. Als het doel-URL is opgegeven in het formulierontwerp, moet u geen waarde instellen met de Forms Service Client API.
 
 >[!NOTE]
+>
 Het weergeven van een HTML-formulier met een werkbalk is optioneel.
 
 >[!NOTE]
+>
 Als u een AHTML-formulier genereert, wordt u aangeraden geen werkbalk aan het formulier toe te voegen.
 
 **Een HTML-formulier renderen**
@@ -278,6 +283,7 @@ Een HTML-formulier renderen met de Forms API (Java):
    * Als u het HTML-formulier wilt weergeven binnen volledige HTML-tags, roept u de opdracht `HTMLRenderSpec` object `setOutputType` methode en doorgeven `OutputType.FullHTMLTags`. (Dit is een optionele instelling.)
 
    >[!NOTE]
+   >
    Forms wordt niet gerenderd in HTML als de `StandAlone` optie is `true` en de `ApplicationWebRoot` verwijst naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` waarde wordt opgegeven met behulp van de `URLSpec` object dat wordt doorgegeven aan het `FormsServiceClient` object `(Deprecated) renderHTMLForm` methode). Wanneer de `ApplicationWebRoot` is een andere server van de server die als host fungeert voor AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. U doet dit door u aan te melden bij de beheerconsole, op Services > Forms te klikken en de Web Root URI in te stellen als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
 
 1. Een HTML-formulier renderen
@@ -335,6 +341,7 @@ Een HTML-formulier renderen met de Forms API (webservice):
    * Als u het HTML-formulier wilt weergeven binnen volledige HTML-tags, roept u de opdracht `HTMLRenderSpec` object `setOutputType` methode en doorgeven `OutputType.FullHTMLTags`.
 
    >[!NOTE]
+   >
    Forms wordt niet gerenderd in HTML als de `StandAlone` optie is `true` en de `ApplicationWebRoot` verwijst naar een andere server dan de J2EE-toepassingsserver die als host fungeert voor AEM Forms (de `ApplicationWebRoot` waarde wordt opgegeven met behulp van de `URLSpec` object dat wordt doorgegeven aan het `FormsServiceClient` object `(Deprecated) renderHTMLForm` methode). Wanneer de `ApplicationWebRoot` is een andere server van de server die als host fungeert voor AEM Forms, moet de waarde van de URI van de webhoofdmap in de beheerconsole worden ingesteld als de URI-waarde van de webtoepassing van het formulier. U doet dit door u aan te melden bij de beheerconsole, op Services > Forms te klikken en de Web Root URI in te stellen als https://server-name:port/FormServer. Sla vervolgens uw instellingen op.
 
 1. Een HTML-formulier renderen

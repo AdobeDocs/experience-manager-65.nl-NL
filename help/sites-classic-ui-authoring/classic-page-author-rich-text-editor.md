@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1829'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -168,7 +168,7 @@ U kunt:
 
 * Een URI rechtstreeks typen
 * Gebruik het site-overzicht om een pagina binnen uw website te selecteren
-* Voer de URI in en voeg vervolgens het doelanker toe; bijv. `www.TargetUri.org#AnchorName`
+* Voer de URI in en voeg vervolgens het doelanker toe; bijvoorbeeld: `www.TargetUri.org#AnchorName`
 * Voer alleen een anker in (als u naar &quot;de huidige pagina&quot; wilt verwijzen); Bijvoorbeeld: `#anchor`
 * Zoeken naar een pagina in de zoeker naar inhoud en vervolgens het paginapictogram naar het dialoogvenster Hyperlink slepen
 
@@ -331,7 +331,7 @@ De huidige kolom kan ook worden verwijderd.
 
 ![chlimage_1-106](assets/chlimage_1-106.png)
 
-Hiermee selecteert u de gehele huidige rij of kolom. Vervolgens zijn specifieke acties (bijvoorbeeld samenvoegen) beschikbaar.
+Hiermee selecteert u de gehele huidige rij of kolom. Specifieke acties (bijvoorbeeld samenvoegen) zijn dan beschikbaar.
 
 #### Cellen samenvoegen {#merge-cells}
 

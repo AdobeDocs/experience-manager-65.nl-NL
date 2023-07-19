@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 79d8b5896f5f8eb7a22dccea81acf0656d435f2b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1353'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Voer een van de volgende handelingen uit om de subelementen te genereren:
    * Selecteer een element en klik op [!UICONTROL Timeline] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klikken [!UICONTROL Start Workflow], selecteert u [!UICONTROL DAM Update Asset], klikt u op [!UICONTROL Start]en klik op [!UICONTROL Proceed].
    * Selecteer een element en klik op [!UICONTROL Create] > [!UICONTROL Workflow] op de werkbalk. Selecteer in het pop-updialoogvenster de optie [!UICONTROL DAM Update Asset] workflow, klik op [!UICONTROL Start]en klik op [!UICONTROL Proceed].
 
-Met name voor Microsoft Word-documenten voert u de opdracht **[!UICONTROL DAM Parse Word Documents]** workflow. Het genereert een `cq:Page` uit de inhoud van het Microsoft Word-document. Er wordt verwezen naar de afbeeldingen die uit het document zijn geëxtraheerd. `cq:Page` component. Deze afbeeldingen worden uitgepakt, zelfs als het genereren van subelementen is uitgeschakeld.
+Met name voor Microsoft Word-documenten voert u de opdracht **[!UICONTROL DAM Parse Word Documents]** workflow. Het genereert een `cq:Page` uit de inhoud van het Microsoft Word-document. Er wordt verwezen naar de afbeeldingen die uit het document zijn geëxtraheerd. `cq:Page` component. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
 
 >[!NOTE]
 >
@@ -144,4 +144,3 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 >* [Bureaubladhandelingen configureren in Adobe Experience Manager](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#desktopactions-v2)
 >* [Gekoppelde slimme objecten maken in Adobe Photoshop](https://helpx.adobe.com/photoshop/using/create-smart-objects.html#create-linked-smart-objects)
 >* [Afbeeldingen plaatsen in Adobe InDesign](https://helpx.adobe.com/indesign/using/placing-graphics.html)
-

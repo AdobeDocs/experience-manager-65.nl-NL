@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '6086'
+source-wordcount: '6088'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ De portlet kan met de volgende voorkeur worden gevormd:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dit is het beginpad van de portlet: het bepaalt de inhoud die aanvankelijk wordt getoond.</p> <p><strong>Belangrijk</strong>: Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan lopen<strong> /</strong>, moet u de kracht inschakelen <strong>CQUrlInfo</strong> in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) werkt het bewerken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.</p> </td>
+   <td><p>Dit is het beginpad van de portlet: het bepaalt de inhoud die aanvankelijk wordt getoond.</p> <p><strong>Belangrijk</strong>: Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan lopen<strong> /</strong>, moet u de kracht inschakelen <strong>CQUrlInfo</strong> in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -509,7 +509,7 @@ In de HTML kunt u de volgende plaatsaanduidingen gebruiken, die door de portlet 
 | {id} | CSS-id van de knop. |
 | {url} | URL voor het doel van de knop. |
 | {text} | Label van de knop. |
-| {onclick} | Javascript **onclick** functie (bevat {url}). |
+| {onclick} | JavaScript **onclick** function (contains {url}). |
 
 Voorbeeld van een bestand button.html:
 
@@ -590,7 +590,7 @@ De facultatieve diensten OSGi kunnen worden uitgevoerd om diverse delen van port
   </tr>
   <tr>
    <td>TextMapper</td>
-   <td>Hiermee kunt u procesbestanden HTML, CSS en JavaScript posten.</td>
+   <td>Hiermee kunt u procesbestanden van het type HTML, CSS en JavaScript posten.</td>
   </tr>
   <tr>
    <td>ToolbarButton</td>
@@ -638,7 +638,7 @@ Gebruik de component Portlet om portletvensters aan AEM pagina&#39;s toe te voeg
 Als u AEM als portal wilt gebruiken, voert u de volgende taken uit:
 
 1. Installeer de component Portlet en de gedeelde bibliotheken.
-1. Voeg de Portlet-component toe aan Sidetrap.
+1. Voeg de Portlet-component toe aan de Sidekick.
 1. Vorm en stel de Webtoepassing op die portlets bevat die u in de Poortcomponent wilt verschijnen.
 1. Voeg de Portlet-component aan een pagina toe en selecteer de portlet die u wilt weergeven.
 
@@ -664,11 +664,11 @@ Het AEM QuickStart JAR-bestand bevat de portlet-componentbestanden. Als u de bes
 1. Kopieer cq-portlet-director-sharedlibs-x.x.x.jar naar uw vaste schijf. U kunt het bestand op alle mogelijke manieren ophalen, bijvoorbeeld met FileVault of een WebDAV-client.
 1. Verplaats het bestand cq-portlet-director-sharedlibs.x.x.x.jar naar de gedeelde bibliotheekmap van uw toepassingsserver, zodat de klassen beschikbaar zijn voor de implementatie van portlet-toepassingen.
 
-### De Portlet-component toevoegen aan Sidetrap {#adding-the-portlet-component-to-sidekick}
+### De Portlet-component toevoegen aan de Sidekick {#adding-the-portlet-component-to-sidekick}
 
 Voeg de portletcomponent aan het paragraafsysteem toe zodat het aan auteurs beschikbaar is.
 
-1. Klik in Sidetrap op het liniaalpictogram om de ontwerpmodus te activeren.
+1. Klik in Sidekick op het liniaalpictogram om de ontwerpmodus te activeren.
 1. Naast de `Design of par` kop boven de eerste alinea, klikt u op **Bewerken**.
 
 1. In de **Algemeen** Selecteer de componentcategorie, schakel het selectievakje naast de Portlet-component in en klik op OK.
@@ -708,7 +708,7 @@ Implementeer de portlets naar de webcontainer van de toepassingsserver, zodat de
 
 Met de component Portal kunt u een portletvenster toevoegen aan uw webpagina. Gebruik de componenteigenschappen om portlet aan vertoning te specificeren.
 
-1. Sleep op de webpagina de **Portlet** van de groep Algemeen in Sidetrap naar de pagina.
+1. Sleep op de webpagina de **Portlet** van de groep Algemeen in Sidekick naar de pagina.
 
    >[!NOTE]
    >
@@ -766,7 +766,7 @@ Om portlet te vormen:
 
    >[!NOTE]
    >
-   >Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan** /** lopen, moet u de macht toelaten **CQUrlInfo** in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) werkt het bewerken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.
+   >Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan** /** lopen, moet u de macht toelaten **CQUrlInfo** in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.
 
 1. Sla de configuratiewijzigingen op in de toepassingsserver.
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 role: Admin
 exl-id: 799d5ae1-caac-4c92-8835-696ad25de553
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1155'
 ht-degree: 0%
 
 ---
@@ -64,41 +64,39 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
    * **[!UICONTROL mongoDB URI]**
 
-      *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
+     *default*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
    * **[!UICONTROL mongoDB Database]**
 
-      *default*: gemeenschappen
+     *default*: gemeenschappen
 
    * **[!UICONTROL mongoDB UGC Collection]**
 
-      *default*: content
+     *default*: content
 
    * **[!UICONTROL mongoDB Attachment Collection]**
 
-      *default*: bijlagen
+     *default*: bijlagen
 
 * **[!UICONTROL SolrConfiguration]**
 
    * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
 
-      Wanneer u binnen [SolrCloud-modus](solr.md#solrcloud-mode) met een externe ZooKeeper, plaats deze waarde aan `HOST:PORT` voor de ZooKeeper, zoals *my.server.com:2181*
+     Wanneer u binnen [SolrCloud-modus](solr.md#solrcloud-mode) met een externe ZooKeeper, plaats deze waarde aan `HOST:PORT` voor de ZooKeeper, zoals *my.server.com:2181*
 
-      Voer voor een ZooKeeper Ensemble door komma&#39;s gescheiden `HOST:PORT` waarden, zoals *host1:2181,host2:2181*
+     Voer voor een ZooKeeper Ensemble door komma&#39;s gescheiden `HOST:PORT` waarden, zoals *host1:2181,host2:2181*
 
-      Laat leeg als Solr in zelfstandige modus wordt uitgevoerd met de interne ZooKeeper.
-      *Standaard*: *&lt;blank>*
+     Laat leeg als Solr in zelfstandige modus wordt uitgevoerd met de interne ZooKeeper.
+     *Standaard*: *&lt;blank>*
 
       * **[!UICONTROL Solr URL]**
 De URL die wordt gebruikt om te communiceren met Solr in zelfstandige modus.
 Leeg laten als deze wordt uitgevoerd in de SolrCloud-modus.
-
-         *Standaard*: https://127.0.0.1:8983/solr/
+        *Standaard*: https://127.0.0.1:8983/solr/
 
       * **[!UICONTROL Solr Collection]**
 De naam van de Solr-verzameling.
-
-         *Standaard*: verzameling1
+        *Standaard*: verzameling1
 
 * Selecteer **[!UICONTROL Submit]**
 
@@ -177,7 +175,7 @@ Wanneer het opnieuw indexeren, is er een compensatie tussen geheugen en prestati
 
 Een redelijke standaardwaarde is 5000:
 
-* Als het geheugen een probleem is, geeft u een kleiner getal op
+* Geef een kleiner getal op als het geheugen een probleem is
 * Als snelheid een probleem is, geeft u een groter getal op om de snelheid te verhogen
 
 ### Gereedschap MSRP opnieuw indexeren uitvoeren met cURL-opdracht {#running-msrp-reindex-tool-using-curl-command}
@@ -198,7 +196,7 @@ cURL -u *handtekening* -d *data* *herdex-url*
 *pad* = de hoofdlocatie van de boomstructuur van UGC naar herdex
 
 * Als u alle UGC opnieuw wilt indexeren, geeft u de waarde van de optie `asipath`eigenschap van
-   `/etc/socialconfig/srpc/defaultconfiguration`
+  `/etc/socialconfig/srpc/defaultconfiguration`
 * Als u de index wilt beperken tot UGC, geeft u een substructuur op van `asipath`
 
 *herdex-url* = het eindpunt voor herindexering van SRP

@@ -11,9 +11,9 @@ topic-tags: spa
 discoiquuid: 6c320633-ce0b-4eb1-bb54-05e1a514d139
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '192'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Adobe Experience Platform Launch is de aanbevolen manier om Analytics, Target en
 
 >[!NOTE]
 >
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
 ## Zelfstudie {#tutorial}
 
@@ -34,4 +34,4 @@ Als u wilt weten hoe u uw SPA kunt integreren met Adobe Experience Platform Laun
 >
 >De KB waarnaar wordt verwezen, is gemaakt om Adobe Experience Platform Launch-integratie mogelijk te maken met SPA die geen gebruikmaken van de AEM SPA Editor. Deze methodes zouden de integratie van Adobe Experience Platform Launch ook moeten toestaan om met SPA te coëxisteren die worden gebouwd om de Redacteur van de SPA te gebruiken.
 >
->Het gebruik van Redux naast de Javascript SPA libraries is niet volledig onderzocht. De ondersteuning van Redux is gepland in een toekomstige versie van de SPA Editor.
+>Het gebruik van Redux naast de JavaScript-SPA is niet volledig onderzocht. De ondersteuning van Redux is gepland in een toekomstige versie van de SPA Editor.

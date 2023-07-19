@@ -2,9 +2,9 @@
 title: Inhoud vertalen
 description: Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2174'
+source-wordcount: '2173'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhou
 
    ![Tabblad Projectbasis](assets/project-basic-tab.png)
 
-1. Op de **Geavanceerd** gebruiken **Doeltaal** vervolgkeuzelijst om de taal of talen te selecteren waarin de inhoud moet worden vertaald. Tik of klik op **Maken**.
+1. Op de **Geavanceerd** gebruiken **Doeltaal** vervolgkeuzelijst om de talen te selecteren waarin de inhoud moet worden vertaald. Tik of klik op **Maken**.
 
    ![Tabblad Project geavanceerd](assets/project-advanced-tab.png)
 

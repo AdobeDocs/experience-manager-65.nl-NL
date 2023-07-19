@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1036'
+source-wordcount: '1037'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,14 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >Bepaalde termen met betrekking tot publicatie kunnen worden verward:
 >
 >* **Publiceren/Publiceren ongedaan maken**
-   >  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
+>  Dit zijn de belangrijkste termen voor de acties die uw inhoud openbaar maken in uw publicatieomgeving (of niet).
 >
 >* **Activeren/deactiveren**
-   >  Deze termen zijn synoniem met publiceren/verwijderen.
+>  Deze termen zijn synoniem met publiceren/verwijderen.
 >
 >* **Replicatie/replicatie**
-   >  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
+>  Dit zijn de technische termen die de beweging van gegevens (bijvoorbeeld pagina-inhoud, bestanden, code, gebruikerscommentaren) van de ene omgeving naar de andere beschrijven, zoals bij het publiceren of omgekeerd repliceren van gebruikerscommentaren.
 >
-
 
 >[!NOTE]
 >
@@ -46,7 +45,6 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
 >* Er wordt een bericht weergegeven (voor een korte periode) om u hiervan op de hoogte te stellen.
 >
-
 
 ## Pagina&#39;s publiceren {#publishing-a-page}
 
@@ -73,6 +71,8 @@ U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt ge
    >[!NOTE]
    >
    >Indien nodig, AEM u verzoeken om elementen die aan de pagina zijn gekoppeld, te activeren of opnieuw te activeren. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
+   >
+   >
 
 1. Indien nodig, AEM u verzoeken om elementen die aan de pagina zijn gekoppeld, te activeren of opnieuw te activeren. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
 
@@ -82,13 +82,13 @@ U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt ge
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
-### Een pagina activeren vanaf Sidetrap {#activating-a-page-from-sidekick}
+### Een pagina vanuit Sidekick activeren {#activating-a-page-from-sidekick}
 
 U kunt een pagina ook activeren wanneer u deze hebt geopend voor bewerking.
 
 Nadat u de pagina hebt geopend en de inhoud ervan hebt gewijzigd, kunt u:
 
-1. Selecteer **Pagina** in de Sidetrap.
+1. Selecteer **Pagina** in de Sidekick.
 1. Klikken **Pagina activeren**.
 Rechtsboven in het venster wordt een bericht weergegeven waarin wordt bevestigd dat de pagina is geactiveerd.
 

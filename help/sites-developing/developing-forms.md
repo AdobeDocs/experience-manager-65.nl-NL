@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -129,12 +129,12 @@ Je kunt je eigen actie toevoegen onder `/apps` als volgt:
 
    1. Een postscript.
 De naam van het script is `post.POST.<extension>`, bijvoorbeeld `post.POST.jsp`
-Het postscript wordt geactiveerd wanneer een formulier wordt verzonden om het formulier te verwerken, bevat het de code waarmee de gegevens uit het formulier worden verwerkt 
-`POST`.
+Het postscript wordt geactiveerd wanneer een formulier wordt verzonden om het formulier te verwerken, bevat het de code waarmee de gegevens uit het formulier worden verwerkt `POST`.
 
    1. Voeg een voorwaarts script toe dat wordt aangeroepen wanneer het formulier wordt verzonden.
 De naam van het script is `forward.<extension`>, bijvoorbeeld `forward.jsp`
 Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aan de gespecificeerde weg.
+
    De noodzakelijke vraag is `FormsHelper#setForwardPath` (2 varianten). Doorgaans wordt een validatie, oftewel logica, uitgevoerd om het doelpad te vinden en vervolgens door te sturen naar dat pad, zodat de standaard Sling POST-servlet de werkelijke opslag in JCR kan uitvoeren.
 
    Er kan ook een ander servlet zijn dat de daadwerkelijke verwerking uitvoert, in een dergelijk geval de formulieractie en de `forward.jsp` zou alleen als &quot;lijm&quot;-code fungeren. Een voorbeeld hiervan is de postactie bij `/libs/foundation/components/form/actions/mail`, die de gegevens doorgeeft aan `<currentpath>.mail.html`waar een mailserver zich bevindt.
@@ -153,6 +153,7 @@ Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aa
       1. validatieRT van formulier: `clientvalidation.jsp`
       1. formulier wordt geladen via bron laden als dit is ingesteld
       1. `addfields.jsp` tijdens renderen `<form></form>`
+
    * bij het verwerken van een formulier `POST`:
 
       1. `init.jsp`
@@ -163,15 +164,11 @@ Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aa
 
       1. Als er geen voorwaarts pad is ingesteld, roept u `post.POST.jsp` (eindigt hier, nee `cleanup.jsp` opgeroepen)
 
-
-
-
 1. Voeg desgewenst opnieuw toe aan de map:
 
    1. Een script voor het toevoegen van velden.
 De naam van het script is `addfields.<extension>`, bijvoorbeeld `addfields.jsp`
-An 
-`addfields` wordt onmiddellijk aangeroepen nadat de HTML voor het begin van het formulier is geschreven. Hierdoor kan de actie aangepaste invoervelden of een andere HTML toevoegen in het formulier.
+An `addfields` wordt onmiddellijk aangeroepen nadat de HTML voor het begin van het formulier is geschreven. Hierdoor kan de actie aangepaste invoervelden of een andere HTML toevoegen in het formulier.
 
    1. Een initialisatiescript.
 De naam van het script is `init.<extension>`, bijvoorbeeld `init.jsp`
@@ -268,7 +265,7 @@ Bijvoorbeeld een component Groep keuzerondjes met de titel `Receive email notifi
 
 ![showhidCondition](assets/showhidecondition.png)
 
-In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om naar velden te verwijzen. In het vorige voorbeeld is de eigenschap Element Name van de component Radio Group `contact`. De volgende code is de equivalente Javascript-code voor dat voorbeeld:
+In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om naar velden te verwijzen. In het vorige voorbeeld is de eigenschap Element Name van de component Radio Group `contact`. De volgende code is de equivalente JavaScript-code voor dat voorbeeld:
 
 `((contact == "Yes"))`
 
@@ -284,6 +281,7 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
 
       * **alles** - als alle voorwaarden waar moeten zijn om de component weer te geven of te verbergen
       * **alle** - als slechts één of meerdere voorwaarden waar moeten zijn om de component te tonen of te verbergen
+
    * Selecteer in de voorwaardelijn (een wordt standaard weergegeven) een component, operator en geef een waarde op.
    * Voeg desgewenst meer voorwaarden toe door op **Voorwaarde toevoegen**.
 
@@ -306,7 +304,6 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
    >* in **Voorvertoning** modus op de auteursomgeving (moet de pagina opnieuw worden geladen wanneer eerst naar de voorvertoning wordt overgeschakeld)
    >
    >* over de publicatieomgeving
-
 
 #### Verwijzingen naar verbroken componenten afhandelen {#handling-broken-component-references}
 

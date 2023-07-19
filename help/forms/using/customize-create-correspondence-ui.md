@@ -11,9 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1088'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -82,11 +82,12 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
       >    * Upgrade op uw exemplaar
       >    * Een hotfix toepassen
       >    * Een functiepakket installeren
-
+      >    
+      >
 
    1. Klikken **OK**. De css-map wordt gemaakt in het opgegeven pad.
 
-1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die vergelijkbaar is met de map imgs (in de map ccrui).
+1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die lijkt op de map imgs (in de map ccrui).
 
    1. Klik met de rechtermuisknop op de knop **imgs** map op het volgende pad en selecteer **Overlayknooppunt**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7669'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ U moet AEM Forms niet installeren of configureren op JEE met behulp van een hoof
 
 **Installatie en configuratie in Windows**
 
-U moet de installatie in Windows als beheerder uitvoeren als u AEM Forms op JEE op JBoss installeert met de methode key of als u PDF Generator installeert. Wanneer u PDF Generator in Windows installeert met native toepassingsondersteuning, moet u de installatie uitvoeren als dezelfde Windows-gebruiker die Microsoft Office heeft geïnstalleerd. Zie het document* AEM Forms installeren en implementeren op JEE* voor meer informatie over installatiemacht.
+U moet de installatie in Windows als beheerder uitvoeren als u AEM Forms op JEE op JBoss installeert met de methode key of als u PDF Generator installeert. Wanneer u PDF Generator installeert op Windows met native toepassingsondersteuning, moet u de installatie uitvoeren als dezelfde Windows-gebruiker die Microsoft Office heeft geïnstalleerd. Zie het document* AEM Forms installeren en implementeren op JEE* voor meer informatie over installatiemacht.
 
 ### Netwerklaagbeveiliging {#network-layer-security}
 
@@ -176,7 +176,7 @@ Volg de onderstaande instructies om de toepassingsserver uit te voeren waarop AE
 
    >[!NOTE]
    >
-   >U kunt deze instelling niet wijzigen voor PDF Generator.
+   >U kunt deze instelling voor PDF Generator niet wijzigen.
 
 1. Selecteren **Start** > **Instellingen** > **Administratieve gereedschappen** > **Services**.
 1. Dubbelklik op JBoss voor AEM Forms op JEE en stop de service.
@@ -208,7 +208,6 @@ Volg de onderstaande instructies om de toepassingsserver uit te voeren waarop AE
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jreliëf/
-
 
 1. Start de toepassingsserver.
 
@@ -460,9 +459,9 @@ In deze tabel worden de controle- en registratietechnieken beschreven die u kunt
  </tbody> 
 </table>
 
-### Een gebruiker zonder beheerder inschakelen om PDF Generator uit te voeren
+### Niet-beheerdersgebruikers toestaan PDF Generator uit te voeren
 
-U kunt een niet-beheerdergebruiker toelaten om de Generator van PDF te gebruiken. Normaal gesproken kunnen alleen gebruikers met beheerdersrechten gebruikmaken van PDF Generator. Voer de volgende stappen uit om een niet-beheerder gebruiker toe te laten om PDF Generator in werking te stellen:
+U kunt een niet-beheerdergebruiker toelaten om PDF Generator te gebruiken. Normaal gesproken kunnen alleen gebruikers met beheerdersrechten PDF Generator gebruiken. Voer de volgende stappen uit om een niet-beheerdergebruiker toe te laten om PDF Generator in werking te stellen:
 
 1. Maak een omgevingsvariabele met de naam PDFG_NON_ADMIN_ENABLED.
 
@@ -705,7 +704,7 @@ Het filterproces Referrer kan als volgt worden beschreven:
 
 ### Filteren van referenties beheren {#managing-referer-filtering}
 
-AEM Forms on JEE biedt een Referrer Filter om Referrer op te geven die toegang krijgen tot uw serverbronnen. Standaard filtert het filter Referrer geen aanvragen die een veilige HTTP-methode gebruiken, bijvoorbeeld GET, tenzij *CSRF_CHECK_GETS* is ingesteld op true. Als het havenaantal voor een Toegestane ingang van de Verwijzing aan 0 wordt geplaatst, zal AEM Forms op JEE alle verzoeken met Referrer van die gastheer ongeacht het havenaantal toestaan. Als er geen poortnummer is opgegeven, zijn alleen aanvragen van standaardpoort 80 (HTTP) of poort 443 (HTTPS) toegestaan. Filteren met verwijzing is uitgeschakeld als alle items in de lijst Toegestane verwijzing worden verwijderd.
+AEM Forms on JEE biedt een Referrer Filter om Referrer op te geven die toegang krijgen tot uw serverbronnen. Standaard filtert het filter Referenter geen aanvragen die een veilige HTTP-methode gebruiken, bijvoorbeeld GET, tenzij *CSRF_CHECK_GETS* is ingesteld op true. Als het havenaantal voor een Toegestane ingang van de Verwijzing aan 0 wordt geplaatst, zal AEM Forms op JEE alle verzoeken met Referrer van die gastheer ongeacht het havenaantal toestaan. Als er geen poortnummer is opgegeven, zijn alleen aanvragen van standaardpoort 80 (HTTP) of poort 443 (HTTPS) toegestaan. Filteren met verwijzing is uitgeschakeld als alle items in de lijst Toegestane verwijzing worden verwijderd.
 
 Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane lijst van de Verwijzing bijgewerkt met het adres van de server waarop de Diensten van het Document geïnstalleerd is. De ingangen voor de server omvatten de servernaam, het IPv4 adres, het IPv6 adres als IPv6 wordt toegelaten, het loopbackadres, en een localhost ingang. De namen die aan de lijst Toegestane verwijzing worden toegevoegd, worden geretourneerd door het hostbesturingssysteem. Een server met een IP-adres van 10.40.54.187 bevat bijvoorbeeld de volgende vermeldingen: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Voor om het even welke niet gekwalificeerde naam die door het werkende systeem van de Gastheer (namen wordt teruggegeven die geen IPv4 adres, IPv6 adres of gekwalificeerde domeinnaam) hebben wordt de lijst van gewenste personen niet bijgewerkt. Wijzig de Toegestane lijst van Referiteers om uw bedrijfsomgeving aan te passen. Implementeer de formulierserver niet in de productieomgeving met de standaardlijst Toegestane verwijzing. Nadat u een van de toegestane referentie-, referentie-uitzonderingen of URI&#39;s hebt gewijzigd, zorgt u ervoor dat de server opnieuw wordt gestart zodat de wijzigingen van kracht worden.
 
@@ -728,7 +727,7 @@ AEM Forms on JEE biedt API&#39;s voor het beheer van de lijst Uitzondering toege
 
 Raadpleeg de* AEM Forms on JEE API Reference* voor meer informatie over de API&#39;s.
 
-Gebruik de ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lijst voor toegestane uitzonderingen van de Referent op globaal niveau d.w.z. om uitzonderingen te bepalen die op alle toepassingen van toepassing zijn. Deze lijst bevat alleen URI&#39;s met een absoluut pad (bijvoorbeeld `/index.html`) of een relatief pad (bijvoorbeeld `/sample/`). U kunt ook een reguliere expressie toevoegen aan het einde van een relatieve URI, bijvoorbeeld `/sample/(.)*`.
+Gebruik de ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lijst voor toegestane uitzonderingen van de Referent op globaal niveau d.w.z. om uitzonderingen te bepalen die op alle toepassingen van toepassing zijn. Deze lijst bevat alleen URI&#39;s met een absoluut pad (bijvoorbeeld `/index.html`) of een relatief pad (bijvoorbeeld `/sample/`). U kunt bijvoorbeeld ook een reguliere expressie aan het einde van een relatieve URI toevoegen. `/sample/(.)*`.
 
 De ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lijst-id is gedefinieerd als een constante in het dialoogvenster `UMConstants` klasse van de `com.adobe.idp.um.api` naamruimte, gevonden in `adobe-usermanager-client.jar`. U kunt de AEM Forms API&#39;s gebruiken om deze lijst te maken, te wijzigen of te bewerken. Als u bijvoorbeeld de lijst Uitzonderingen globale toegestane verwijzingsverwijzing wilt maken, gebruikt u:
 
@@ -1030,7 +1029,6 @@ Bij de turnkey-installatie van AEM Forms op JEE wordt standaard een serviceaccou
    >
    >* Windows: C:\Adobe\Adobe_Experience_Manager_Forms\jboss
    >* Linux: /opt/jreliëf/.
-
 
 1. Start de service van de toepassingsserver.
 

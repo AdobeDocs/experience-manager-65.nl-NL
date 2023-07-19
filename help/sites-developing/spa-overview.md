@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: a547b2e24205c63284a0e77f2e7f5678ae24968b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1657'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 
 >[!NOTE]
 >
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
@@ -101,7 +101,6 @@ Met inachtneming van de belangrijkste elementen van de SPA Editor, ziet de auteu
 >* De SPA Editor staat los van de SPA zelf.
 >* In productie (publiceren), wordt de SPA redacteur nooit geladen.
 >
-
 
 ### Workflow voor paginabewerking op client-server {#client-server-page-editing-workflow}
 
@@ -183,7 +182,7 @@ Aanvullende aangepaste kiezers kunnen worden gedefinieerd en gebruikt als onderd
 Als u de op plaats-editor wilt gebruiken van een tekstcomponent die in SPA is gemaakt, is er aanvullende configuratie vereist.
 
 1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. Voor de WKND Journal-voorbeeldinhoud is het een `<div>` element en de kiezer die is gebruikt, is `data-rte-editelement`.
-1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` die naar die kiezer wijst, bijvoorbeeld `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
+1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` dat bijvoorbeeld naar die kiezer wijst, `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
 
 Voor een voorbeeld van hoe dit wordt gedaan, zie [WKND Journal-voorbeeldinhoud.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
 

@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -50,6 +50,7 @@ In dit document worden gedetailleerde instructies beschreven.
 >[!NOTE]
 >
 >Vergeet niet om e-mailsjablonen toe te voegen onder **/content/campagnes** ter beschikking te stellen.
+>
 
 1. Selecteer in AEM de **Websites** Blader vervolgens naar de verkenner om te zoeken waar uw e-mailcampagnes worden beheerd. In het volgende voorbeeld is het betrokken knooppunt **Websites** > **Campagnes** > **Geometrixx Outdoors** > **E-mailcampagnes**.
 
@@ -124,7 +125,6 @@ Zie [Adobe Campaign-componenten](/help/sites-classic-ui-authoring/classic-person
 >* Alleen de velden van de Adobe Campaign **Profielen** er wordt rekening gehouden met de doelgerichte dimensie .
 >* Wanneer u eigenschappen weergeeft vanuit **Sites** hebt u geen toegang tot de Adobe Campaign-contextvelden. U kunt deze rechtstreeks vanuit de e-mail openen tijdens het bewerken.
 >
-
 
 1. Een nieuwe invoegtoepassing **Nieuwsbrief** > **Tekst en persoonlijke voorkeur (campagne)** component.
 1. Open de component door erop te dubbelklikken. De **Bewerken** venster heeft een functionaliteit waarmee u de personalisatie-elementen kunt invoegen.

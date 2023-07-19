@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4872'
+source-wordcount: '4871'
 ht-degree: 8%
 
 ---
@@ -80,14 +80,14 @@ Om een nieuwe sjabloon te maken met behulp van de **sjabloonconsole** en de **sj
    * Dit is een specifieke auteur die lid is van de groep `template-authors`
 
       * Hiermee worden de vereiste rechten en machtigingen toegewezen.
+
    * Kan het gebruik van componenten en andere details op hoog niveau configureren die het volgende vereisen:
 
       * Enkele technische kennis
 
          * Gebruik bijvoorbeeld patronen bij het definiëren van paden.
+
       * Technische informatie van de ontwikkelaar.
-
-
 
 Vanwege de aard van sommige taken, zoals het maken van een map, is een ontwikkelomgeving nodig. Hiervoor is kennis en ervaring vereist.
 
@@ -265,7 +265,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 
 1. Open de **Geavanceerd** tab.
 
-1. Gebruik onder **Sjablooninstellingen** de optie **Veld toevoegen** om het pad of de paden naar de sjabloon of sjablonen op te geven.
+1. Onder **Sjablooninstellingen** gebruiken **Veld toevoegen** om de paden naar uw sjabloon of sjablonen op te geven.
 
    Het pad kan expliciet zijn of patronen gebruiken. Bijvoorbeeld:
 
@@ -304,35 +304,35 @@ De volgende aspecten van een sjabloon kunnen worden bewerkt:
 
 * [Structuur](#editingatemplatestructure)
 
-   Componenten die hier zijn toegevoegd, kunnen niet door de auteurs van de pagina worden verplaatst of verwijderd van de resulterende pagina&#39;s. Als u wilt dat auteurs van pagina&#39;s componenten aan resulterende pagina&#39;s kunnen toevoegen en verwijderen, dan moet u een paragraafsysteem aan het malplaatje toevoegen.
+  Componenten die hier zijn toegevoegd, kunnen niet door de auteurs van de pagina worden verplaatst of verwijderd van de resulterende pagina&#39;s. Als u wilt dat auteurs van pagina&#39;s componenten aan resulterende pagina&#39;s kunnen toevoegen en verwijderen, dan moet u een paragraafsysteem aan het malplaatje toevoegen.
 
-   Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen zodat u kunt definiëren [Oorspronkelijke inhoud](#editingatemplateinitialcontent).
+  Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen zodat u kunt definiëren [Oorspronkelijke inhoud](#editingatemplateinitialcontent).
 
-   >[!NOTE]
-   >
-   >In de structuurmodus kunnen componenten die het bovenliggende element van een niet-vergrendelde component zijn, niet worden verplaatst, geknipt of verwijderd.
+  >[!NOTE]
+  >
+  >In de structuurmodus kunnen componenten die het bovenliggende element van een niet-vergrendelde component zijn, niet worden verplaatst, geknipt of verwijderd.
 
 * [Oorspronkelijke inhoud](#editingatemplateinitialcontent)
 
-   Wanneer een component ontgrendeld is, kunt u de eerste inhoud definiëren die naar de resulterende pagina(&#39;s), gemaakt op basis van de sjabloon, wordt gekopieerd. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
+  Wanneer een component ontgrendeld is, kunt u de eerste inhoud definiëren die naar de resulterende pagina(&#39;s), gemaakt op basis van de sjabloon, wordt gekopieerd. Deze niet-vergrendelde componenten kunnen op de resulterende pagina(&#39;s) worden bewerkt.
 
-   >[!NOTE]
-   >
-   >In **Oorspronkelijke inhoud** zowel in de modus als op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen die een toegankelijk bovenliggend element hebben (d.w.z. onderdelen in een lay-outcontainer) worden verwijderd.
+  >[!NOTE]
+  >
+  >In **Oorspronkelijke inhoud** zowel in de modus als op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen die een toegankelijk bovenliggend element hebben (d.w.z. onderdelen in een lay-outcontainer) worden verwijderd.
 
 * [Layout](#editingatemplatelayout)
 
-   Hier kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf definiëren. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out** voor het ontwerpen van pagina&#39;s](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
+  Hier kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf definiëren. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus [**Lay-out** voor het ontwerpen van pagina&#39;s](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode).
 
 * [Paginabeleid](#editingatemplatepagepolicies)
 
-   Onder paginabeleid kunt u vooraf gedefinieerd paginabeleid verbinden met de pagina. Met dit paginabeleid worden de verschillende ontwerpconfiguraties gedefinieerd.
+  Onder paginabeleid kunt u vooraf gedefinieerd paginabeleid verbinden met de pagina. Met dit paginabeleid worden de verschillende ontwerpconfiguraties gedefinieerd.
 
 * [Stijlen](/help/sites-authoring/style-system.md)
 
-   Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
+  Met het Stijlsysteem kan een sjabloonauteur stijlklassen definiëren in het inhoudsbeleid van een component, zodat de auteur van de inhoud deze kan selecteren wanneer hij de component op een pagina bewerkt. Deze stijlen kunnen alternatieve visuele variaties van een component zijn, waardoor het flexibeler wordt.
 
-   Zie de [documentatie over stijlsystemen](/help/sites-authoring/style-system.md) voor meer informatie .
+  Zie de [documentatie over stijlsystemen](/help/sites-authoring/style-system.md) voor meer informatie .
 
 De **Modus** in de werkbalk kunt u het juiste aspect van de sjabloon selecteren en bewerken:
 
@@ -366,160 +366,160 @@ In **Structuur** modus van de sjablooneditor:
 
 * **Componenten toevoegen**
 
-   Er zijn verschillende manieren om componenten aan de sjabloon toe te voegen:
+  Er zijn verschillende manieren om componenten aan de sjabloon toe te voegen:
 
    * Van de **Componenten** in het zijpaneel.
    * Met de **Component invoegen** option (**+** (pictogram) beschikbaar op de toolbar van componenten reeds op het malplaatje of **Componenten hierheen slepen** doos.
 
    * Door een element te slepen (vanuit de **Activa** in het zijpaneel) rechtstreeks op de sjabloon om de juiste component in situ te genereren.
 
-   Na toevoeging wordt elke component gemarkeerd met:
+  Na toevoeging wordt elke component gemarkeerd met:
 
    * Een rand
    * Een markering waarmee het componenttype wordt weergegeven
    * Een markering die moet worden weergegeven wanneer de component is ontgrendeld
 
-   >[!NOTE]
-   >
-   >Wanneer u een standaardcomponent voor de **Titel** aan de sjabloon toevoegt, zal het de **standaardtekststructuur** bevatten.
-   >
-   >
-   >Als u dit wijzigt en uw eigen tekst toevoegt, wordt deze bijgewerkte tekst gebruikt wanneer een pagina wordt gemaakt op basis van de sjabloon.
-   >
-   >
-   >Als u de standaardtekst (structuur) verlaat, wordt de titel standaard ingesteld op de naam van de volgende pagina.
+  >[!NOTE]
+  >
+  >Wanneer u een standaardcomponent voor de **Titel** aan de sjabloon toevoegt, zal het de **standaardtekststructuur** bevatten.
+  >
+  >
+  >Als u dit wijzigt en uw eigen tekst toevoegt, wordt deze bijgewerkte tekst gebruikt wanneer een pagina wordt gemaakt op basis van de sjabloon.
+  >
+  >
+  >Als u de standaardtekst (structuur) verlaat, wordt de titel standaard ingesteld op de naam van de volgende pagina.
 
-   >[!NOTE]
-   >
-   >Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen met gelijkaardige acties wanneer [pagina&#39;s ontwerpen](/help/sites-authoring/editing-content.md).
+  >[!NOTE]
+  >
+  >Hoewel niet identiek, heeft het toevoegen van componenten en activa aan een malplaatje vele gelijkenissen met gelijkaardige acties wanneer [pagina&#39;s ontwerpen](/help/sites-authoring/editing-content.md).
 
 * **Componenthandelingen**
 
-   Voer acties uit op de componenten nadat deze aan de sjabloon zijn toegevoegd. Elk afzonderlijk exemplaar heeft een toolbar die u toestaat om tot de beschikbare acties toegang te hebben, is de toolbar afhankelijk van het componenttype.
+  Voer acties uit op de componenten nadat deze aan de sjabloon zijn toegevoegd. Elk afzonderlijk exemplaar heeft een toolbar die u toestaat om tot de beschikbare acties toegang te hebben, is de toolbar afhankelijk van het componenttype.
 
-   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
+  ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
-   Het kan ook afhankelijk zijn van acties zoals wanneer een beleid met de component is geassocieerd, dan wordt het pictogram van de ontwerpconfiguratie beschikbaar.
+  Het kan ook afhankelijk zijn van acties zoals wanneer een beleid met de component is geassocieerd, dan wordt het pictogram van de ontwerpconfiguratie beschikbaar.
 
 * **Bewerken en configureren**
 
-   Met deze twee acties kunt u inhoud toevoegen aan uw componenten.
+  Met deze twee acties kunt u inhoud toevoegen aan uw componenten.
 
 * **Rand om structuur aan te geven**
 
-   Wanneer u werkt in **Structuur** een oranje rand geeft aan welke component momenteel is geselecteerd. Een stippellijn geeft ook de bovenliggende component aan.
+  Wanneer u werkt in **Structuur** een oranje rand geeft aan welke component momenteel is geselecteerd. Een stippellijn geeft ook de bovenliggende component aan.
 
-   Bijvoorbeeld in de schermafbeelding onder de **Tekst** wordt geselecteerd, binnen een **Layout Container** (responsivegrid).
+  Bijvoorbeeld in de schermafbeelding onder de **Tekst** wordt geselecteerd, binnen een **Layout Container** (responsivegrid).
 
-   ![chlimage_1-134](assets/chlimage_1-134.png)
+  ![chlimage_1-134](assets/chlimage_1-134.png)
 
 * **Beleid en eigenschappen (algemeen)**
 
-   Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
+  Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-   Maak een inhoudsbeleid of selecteer een bestaand beleid voor een component. Zo kunt u de ontwerpdetails definiëren.
+  Maak een inhoudsbeleid of selecteer een bestaand beleid voor een component. Zo kunt u de ontwerpdetails definiëren.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
+  ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
-   Het configuratievenster is verdeeld in twee.
+  Het configuratievenster is verdeeld in twee.
 
    * Links in het dialoogvenster onder **Beleid** kunt u een bestaand beleid selecteren of een bestaand beleid selecteren.
    * Rechts van het dialoogvenster onder **Eigenschappen** kunt u de eigenschappen instellen die specifiek zijn voor het componenttype.
 
-   De beschikbare eigenschappen zijn afhankelijk van de geselecteerde component. Voor een tekstcomponent definiëren de eigenschappen bijvoorbeeld de kopieer- en plakopties, opmaakopties en alineastijl.
+  De beschikbare eigenschappen zijn afhankelijk van de geselecteerde component. Voor een tekstcomponent definiëren de eigenschappen bijvoorbeeld de kopieer- en plakopties, opmaakopties en alineastijl.
 
-   ***Beleid***
+  ***Beleid***
 
-   Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
+  Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-   Onder **Beleid** u kunt een bestaand beleid selecteren om op de component via drop-down toe te passen.
+  Onder **Beleid** u kunt een bestaand beleid selecteren om op de component via drop-down toe te passen.
 
-   ![chlimage_1-137](assets/chlimage_1-137.png)
+  ![chlimage_1-137](assets/chlimage_1-137.png)
 
-   Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
+  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
 
-   ![chlimage_1-138](assets/chlimage_1-138.png)
+  ![chlimage_1-138](assets/chlimage_1-138.png)
 
-   Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
-   ![chlimage_1-139](assets/chlimage_1-139.png)
+  ![chlimage_1-139](assets/chlimage_1-139.png)
 
-   Een beschrijving van het beleid is optioneel in het gedeelte **Beleidsomschrijving** veld.
+  Een beschrijving van het beleid is optioneel in het gedeelte **Beleidsomschrijving** veld.
 
-   In de **Andere sjablonen gebruiken ook het geselecteerde beleid** kunt u gemakkelijk zien welke andere sjablonen het beleid gebruiken dat is geselecteerd in het dialoogvenster **Beleid selecteren** vervolgkeuzelijst.
+  In de **Andere sjablonen gebruiken ook het geselecteerde beleid** kunt u gemakkelijk zien welke andere sjablonen het beleid gebruiken dat is geselecteerd in het dialoogvenster **Beleid selecteren** vervolgkeuzelijst.
 
-   ![chlimage_1-140](assets/chlimage_1-140.png)
+  ![chlimage_1-140](assets/chlimage_1-140.png)
 
-   >[!NOTE]
-   >
-   >Als meerdere componenten van hetzelfde type als initiële inhoud worden toegevoegd, geldt hetzelfde beleid voor alle componenten. Dit weerspiegelt dezelfde beperking in [**Ontwerpmodus** voor statische sjablonen](/help/sites-authoring/default-components-designmode.md).
+  >[!NOTE]
+  >
+  >Als meerdere componenten van hetzelfde type als initiële inhoud worden toegevoegd, geldt hetzelfde beleid voor alle componenten. Dit weerspiegelt dezelfde beperking in [**Ontwerpmodus** voor statische sjablonen](/help/sites-authoring/default-components-designmode.md).
 
-   ***Eigenschappen***
+  ***Eigenschappen***
 
-   Onder de **Eigenschappen** kunt u de instellingen van de component definiëren. De kop heeft twee tabbladen:
+  Onder de **Eigenschappen** kunt u de instellingen van de component definiëren. De kop heeft twee tabbladen:
 
    * Hoofd
    * Functies
 
-   *Hoofd*
+  *Hoofd*
 
-   Op de **Hoofd** worden de belangrijkste instellingen van de component gedefinieerd.
+  Op de **Hoofd** worden de belangrijkste instellingen van de component gedefinieerd.
 
-   Voor een afbeeldingscomponent kunnen bijvoorbeeld de toegestane breedten worden gedefinieerd en kan het laden worden ingeschakeld.
+  Voor een afbeeldingscomponent kunnen bijvoorbeeld de toegestane breedten worden gedefinieerd en kan het laden worden ingeschakeld.
 
-   Als een instelling meerdere configuraties toestaat, klikt of tikt u op de knop **Toevoegen** om een andere configuratie toe te voegen.
+  Als een instelling meerdere configuraties toestaat, klikt of tikt u op de knop **Toevoegen** om een andere configuratie toe te voegen.
 
-   ![chlimage_1-141](assets/chlimage_1-141.png)
+  ![chlimage_1-141](assets/chlimage_1-141.png)
 
-   Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knoop die rechts van de configuratie wordt gevestigd.
+  Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knoop die rechts van de configuratie wordt gevestigd.
 
-   Als u een configuratie wilt verwijderen, klikt of tikt u op de knop** Verwijderen**.
+  Als u een configuratie wilt verwijderen, klikt of tikt u op de knop** Verwijderen**.
 
-   ![chlimage_1-142](assets/chlimage_1-142.png)
+  ![chlimage_1-142](assets/chlimage_1-142.png)
 
-   *Functies*
+  *Functies*
 
-   De **Functies** kunt u extra functies van de component in- of uitschakelen.
+  De **Functies** kunt u extra functies van de component in- of uitschakelen.
 
-   Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de toegestane afbeeldingsoriëntaties en de vraag of uploads zijn toegestaan, definiëren.
+  Voor een afbeeldingscomponent kunt u bijvoorbeeld de uitsnijdverhoudingen, de toegestane afbeeldingsoriëntaties en de vraag of uploads zijn toegestaan, definiëren.
 
-   ![chlimage_1-143](assets/chlimage_1-143.png)
+  ![chlimage_1-143](assets/chlimage_1-143.png)
 
-   >[!CAUTION]
-   >
-   >Let op: in AEM snijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die de pagina schrijven, zijn zich niet bewust van enig verschil, op voorwaarde dat u de **Naam** duidelijk aangezien dit is wat in UI wordt getoond.
+  >[!CAUTION]
+  >
+  >Let op: in AEM snijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die de pagina schrijven, zijn zich niet bewust van enig verschil, op voorwaarde dat u de **Naam** duidelijk aangezien dit is wat in UI wordt getoond.
 
-   >[!NOTE]
-   >
-   >[Beleid voor inhoud voor componenten die de RTF-editor implementeren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) kan slechts voor opties worden bepaald die door RTE door zijn montages UI ter beschikking worden gesteld. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
+  >[!NOTE]
+  >
+  >[Beleid voor inhoud voor componenten die de RTF-editor implementeren](/help/sites-administering/rich-text-editor.md#main-pars-header-206036638) kan slechts voor opties worden bepaald die door RTE door zijn montages UI ter beschikking worden gesteld. [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638) [](/help/sites-administering/rich-text-editor.md#main-pars_header_206036638)
 
 * **Beleid en eigenschappen (container met layout)**
 
-   Het beleid en de eigenschappen van een lay-outcontainer zijn gelijkaardig aan het algemene gebruik, maar met sommige verschillen.
+  Het beleid en de eigenschappen van een lay-outcontainer zijn gelijkaardig aan het algemene gebruik, maar met sommige verschillen.
 
-   >[!NOTE]
-   >
-   >Het vormen van een beleid is verplicht voor containercomponenten aangezien het u toelaat om componenten te bepalen die in de container beschikbaar zullen zijn.
+  >[!NOTE]
+  >
+  >Het vormen van een beleid is verplicht voor containercomponenten aangezien het u toelaat om componenten te bepalen die in de container beschikbaar zullen zijn.
 
-   Het configuratievenster wordt verdeeld in twee delen, enkel zoals in het algemene gebruik van het venster.
+  Het configuratievenster wordt verdeeld in twee delen, enkel zoals in het algemene gebruik van het venster.
 
-   ***Beleid***
+  ***Beleid***
 
-   Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
+  Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-   Onder **Beleid** u kunt een bestaand beleid selecteren om op de component via drop-down toe te passen. Deze functie werkt net als bij het algemene gebruik van het venster.
+  Onder **Beleid** u kunt een bestaand beleid selecteren om op de component via drop-down toe te passen. Deze functie werkt net als bij het algemene gebruik van het venster.
 
-   ***Eigenschappen***
+  ***Eigenschappen***
 
-   Onder de **Eigenschappen** kunt u kiezen welke componenten beschikbaar zijn voor de lay-outcontainer en de instellingen definiëren. De kop heeft drie tabbladen:
+  Onder de **Eigenschappen** kunt u kiezen welke componenten beschikbaar zijn voor de lay-outcontainer en de instellingen definiëren. De kop heeft drie tabbladen:
 
    * Toegestane componenten
    * Standaardcomponenten
    * Instellingen voor responsie
 
-   *Toegestane componenten*
+  *Toegestane componenten*
 
-   Op de **Toegestane componenten** -tab, definieert u welke componenten beschikbaar zijn voor de lay-outcontainer.
+  Op de **Toegestane componenten** -tab, definieert u welke componenten beschikbaar zijn voor de lay-outcontainer.
 
    * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
    * U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
@@ -527,52 +527,53 @@ In **Structuur** modus van de sjablooneditor:
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
 
-   ![chlimage_1-144](assets/chlimage_1-144.png)
+  ![chlimage_1-144](assets/chlimage_1-144.png)
 
-   *Standaardcomponenten*
+  *Standaardcomponenten*
 
-   Op de **Standaardcomponenten** , bepaalt u welke componenten automatisch aan bepaalde media types worden geassocieerd zodat wanneer een auteur activa van elementenbrowser sleept, AEM weet met welke component om het te associëren. Merk op dat slechts de componenten met dalingsstreken voor dergelijke configuratie beschikbaar zijn.
+  Op de **Standaardcomponenten** , bepaalt u welke componenten automatisch aan bepaalde media types worden geassocieerd zodat wanneer een auteur activa van elementenbrowser sleept, AEM weet met welke component om het te associëren. Merk op dat slechts de componenten met dalingsstreken voor dergelijke configuratie beschikbaar zijn.
 
-   Klikken of tikken **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
+  Klikken of tikken **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
 
-   Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
+  Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
-   ![chlimage_1-145](assets/chlimage_1-145.png)
+  ![chlimage_1-145](assets/chlimage_1-145.png)
 
-   *Instellingen voor responsie*
+  *Instellingen voor responsie*
 
-   Op de **Instellingen voor responsie** kunt u het aantal kolommen in het resulterende raster van de layoutcontainer configureren.
+  Op de **Instellingen voor responsie** kunt u het aantal kolommen in het resulterende raster van de layoutcontainer configureren.
 
 * **Componenten ontgrendelen/vergrendelen**
 
-   U ontgrendelt/vergrendelt componenten om te bepalen of de inhoud beschikbaar is voor wijzigingen in **Oorspronkelijke inhoud** in.
+  U ontgrendelt/vergrendelt componenten om te bepalen of de inhoud beschikbaar is voor wijzigingen in **Oorspronkelijke inhoud** in.
 
-   Wanneer een component is ontgrendeld:
+  Wanneer een component is ontgrendeld:
 
    * Een open hangslotindicator wordt getoond in de grens.
    * De componentwerkbalk wordt dienovereenkomstig aangepast.
    * Alle inhoud die al is ingevoerd, wordt niet meer weergegeven in **Structuur** in.
 
       * Al ingevoerde inhoud wordt beschouwd als initiële inhoud en is alleen zichtbaar in **Oorspronkelijke inhoud** in.
+
    * De bovenliggende elementen van de ontgrendelde component kunnen niet worden verplaatst, geknipt of verwijderd.
 
-   ![chlimage_1-146](assets/chlimage_1-146.png)
+  ![chlimage_1-146](assets/chlimage_1-146.png)
 
-   Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/content aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven in de modus **Structuur**, maar in de modus **Initiële content**. In de **modus Structuur** wordt alleen de containercomponent zelf weergegeven met de lijst **Toegestane componenten**.
+  Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/content aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven in de modus **Structuur**, maar in de modus **Initiële content**. In de **modus Structuur** wordt alleen de containercomponent zelf weergegeven met de lijst **Toegestane componenten**.
 
-   ![chlimage_1-147](assets/chlimage_1-147.png)
+  ![chlimage_1-147](assets/chlimage_1-147.png)
 
-   Om ruimte te besparen, groeit de lay-outcontainer niet om de lijst van toegestane componenten aan te passen. In plaats daarvan wordt de container een schuifbare lijst.
+  Om ruimte te besparen, groeit de lay-outcontainer niet om de lijst van toegestane componenten aan te passen. In plaats daarvan wordt de container een schuifbare lijst.
 
-   De componenten die configureerbaar zijn, worden weergegeven met een pictogram **Beleid**, waarop kan worden getikt of geklikt om het beleid en de eigenschappen van die component te bewerken.
+  De componenten die configureerbaar zijn, worden weergegeven met een pictogram **Beleid**, waarop kan worden getikt of geklikt om het beleid en de eigenschappen van die component te bewerken.
 
-   ![chlimage_1-148](assets/chlimage_1-148.png)
+  ![chlimage_1-148](assets/chlimage_1-148.png)
 
 * **Verhouding tot bestaande pagina&#39;s**
 
-   Als de structuur na het maken van op de sjabloon gebaseerde pagina&#39;s wordt bijgewerkt, worden de wijzigingen in de sjabloon doorgevoerd in deze pagina&#39;s. Er wordt een waarschuwing weergegeven op de werkbalk om u hieraan te herinneren, samen met bevestigingsdialoogvensters.
+  Als de structuur na het maken van op de sjabloon gebaseerde pagina&#39;s wordt bijgewerkt, worden de wijzigingen in de sjabloon doorgevoerd in deze pagina&#39;s. Er wordt een waarschuwing weergegeven op de werkbalk om u hieraan te herinneren, samen met bevestigingsdialoogvensters.
 
-   ![chlimage_1-149](assets/chlimage_1-149.png)
+  ![chlimage_1-149](assets/chlimage_1-149.png)
 
 ### Een sjabloon bewerken - Eerste inhoud - Auteur {#editing-a-template-initial-content-author}
 
@@ -586,17 +587,17 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
-   ![chlimage_1-150](assets/chlimage_1-150.png)
+  ![chlimage_1-150](assets/chlimage_1-150.png)
 
 * Ontgrendelde componenten beschikken over een werkbalk waarmee u de inhoud kunt bewerken en configureren:
 
-   ![chlimage_1-151](assets/chlimage_1-151.png)
+  ![chlimage_1-151](assets/chlimage_1-151.png)
 
 * Als een containercomponent is ontgrendeld (in de modus **Structuur**), kunt u nieuwe componenten aan de container toevoegen (in de modus **Initiële content**). Componenten die in de modus **Initiële content** zijn toegevoegd, kunnen worden verplaatst naar of verwijderd uit de resulterende pagina&#39;s.
 
-   U kunt een component toevoegen met behulp van het gebied **Componenten hierheen slepen** of de optie **Nieuwe component invoegen** op de werkbalk van de betreffende container.
+  U kunt een component toevoegen met behulp van het gebied **Componenten hierheen slepen** of de optie **Nieuwe component invoegen** op de werkbalk van de betreffende container.
 
-   ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
+  ![chlimage_1-152](assets/chlimage_1-152.png) ![chlimage_1-153](assets/chlimage_1-153.png)
 
 * Als de initiële inhoud van de sjabloon wordt bijgewerkt nadat pagina&#39;s zijn gemaakt op basis van de sjabloon, worden deze pagina&#39;s niet beïnvloed door wijzigingen in de oorspronkelijke inhoud van de sjabloon.
 
@@ -638,24 +639,24 @@ U kunt een inhoudsbeleid toepassen op de sjabloon of de resulterende pagina&#39;
 
 * U kunt een bestaand beleid voor de pagina selecteren in het menu **Beleid selecteren** vervolgkeuzelijst.
 
-   ![chlimage_1-157](assets/chlimage_1-157.png)
+  ![chlimage_1-157](assets/chlimage_1-157.png)
 
-   Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
+  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
 
-   ![chlimage_1-158](assets/chlimage_1-158.png)
+  ![chlimage_1-158](assets/chlimage_1-158.png)
 
-   Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
-   ![chlimage_1-159](assets/chlimage_1-159.png)
+  ![chlimage_1-159](assets/chlimage_1-159.png)
 
 * Definieer een titel voor het beleid in het dialoogvenster **Beleidstitel** veld. Een beleid moet een titel hebben zodat het gemakkelijk kan worden geselecteerd in het **Beleid selecteren** vervolgkeuzelijst.
 
-   ![chlimage_1-160](assets/chlimage_1-160.png)
+  ![chlimage_1-160](assets/chlimage_1-160.png)
 
 * Een beschrijving van het beleid is optioneel in het gedeelte **Beleidsomschrijving** veld.
 * In de **Andere sjablonen gebruiken ook het geselecteerde beleid** kunt u gemakkelijk zien welke andere sjablonen het beleid gebruiken dat is geselecteerd in het dialoogvenster **Beleid selecteren** vervolgkeuzelijst.
 
-   ![chlimage_1-161](assets/chlimage_1-161.png)
+  ![chlimage_1-161](assets/chlimage_1-161.png)
 
 #### Pagina-eigenschappen {#page-properties}
 
@@ -665,19 +666,19 @@ Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren met d
 
 * Geef de clientbibliotheken op die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt. De naam van een bibliotheek invoeren in het tekstveld in het dialoogvenster **Client Side Libraries** sectie.
 
-   ![chlimage_1-163](assets/chlimage_1-163.png)
+  ![chlimage_1-163](assets/chlimage_1-163.png)
 
 * Als er meerdere bibliotheken nodig zijn, klikt u op de knop Toevoegen om een extra tekstveld voor de naam van de bibliotheek toe te voegen.
 
-   ![chlimage_1-164](assets/chlimage_1-164.png)
+  ![chlimage_1-164](assets/chlimage_1-164.png)
 
-   Voeg zoveel tekstvelden toe als nodig zijn voor uw clientbibliotheken.
+  Voeg zoveel tekstvelden toe als nodig zijn voor uw clientbibliotheken.
 
-   ![chlimage_1-165](assets/chlimage_1-165.png)
+  ![chlimage_1-165](assets/chlimage_1-165.png)
 
 * Definieer zo nodig de relatieve positie van de bibliotheken door de velden te slepen met de sleepgreep.
 
-   ![chlimage_1-166](assets/chlimage_1-166.png)
+  ![chlimage_1-166](assets/chlimage_1-166.png)
 
 >[!NOTE]
 >
@@ -707,13 +708,16 @@ Houd bij het maken van sjablonen rekening met:
 
       * Deze worden direct toegepast op de resulterende pagina&#39;s.
       * Bezoekers moeten de wijzigingen nog steeds kunnen zien door de gewijzigde sjabloon te publiceren.
+
    * Wijzigingen in inhoudsbeleid en ontwerpconfiguraties:
 
       * Deze zijn direct van toepassing op de resulterende pagina&#39;s.
       * De wijzigingen moeten worden gepubliceerd zodat bezoekers de wijzigingen kunnen zien.
+
    * Wijzigingen in de oorspronkelijke inhoud:
 
       * Deze zijn alleen van toepassing op pagina&#39;s die na de wijzigingen in de sjabloon worden gemaakt.
+
    * Wijzigingen in de layout zijn afhankelijk van of de gewijzigde component deel uitmaakt van:
 
       * Alleen structuur - onmiddellijk toegepast

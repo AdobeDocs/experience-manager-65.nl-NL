@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '460'
 ht-degree: 5%
 
 ---
@@ -76,22 +76,22 @@ De configuratie OSGi is:
   <tr>
    <td><strong>Het type Resource</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Het type bron dat moet worden geregistreerd; bijv. <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Het type bron dat moet worden geregistreerd; bijvoorbeeld: <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Verwijzing, eigenschap</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>De naam van de eigenschap die de verwijzing naar het fragment bevat; bijv. <code>fragmentPath</code> of <code>fileReference</code></td>
+   <td>De naam van de eigenschap die de verwijzing naar het fragment bevat; bijvoorbeeld: <code>fragmentPath</code> of <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Element(en), eigenschap</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>De naam van de eigenschap die de naam of namen bevat van het element of de elementen die moeten worden gerenderd; bijv.<code>elementName</code></td>
+   <td>De naam van de eigenschap die de naam of namen bevat van het element of de elementen die moeten worden gerenderd; bijvoorbeeld:<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Variatie, eigenschap</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>De naam van de eigenschap die de naam bevat van de wijziging die moet worden gerenderd; bijv.<code>variationName</code></td>
+   <td>De naam van de eigenschap die de naam bevat van de wijziging die moet worden gerenderd; bijvoorbeeld:<code>variationName</code></td>
   </tr>
  </tbody>
 </table>

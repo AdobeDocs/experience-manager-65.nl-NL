@@ -12,9 +12,9 @@ discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
 docset: aem65
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,7 @@ De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot
 
       * De ondersteunde taalcode is tweeletterige code in kleine letters, zoals gedefinieerd door ISO-639-1
       * De ondersteunde landcode is tweeletterige, kleine letters of hoofdletters volgens ISO 3166
+
    1. Selecteer de sjabloon en klik op Maken.
 
    ![newpagefr](assets/newpagefr.png)

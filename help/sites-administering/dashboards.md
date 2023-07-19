@@ -10,16 +10,16 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '839'
 ht-degree: 0%
 
 ---
 
 # Dashboards{#dashboards}
 
-Wanneer u AEM gebruikt, kunt u veel verschillende inhoudstypen beheren (zoals pagina&#39;s, elementen). AEM dashboards verstrekken een makkelijk te gebruiken en aanpasbare manier om pagina&#39;s te bepalen die geconsolideerde gegevens tonen.
+Wanneer u AEM gebruikt, kunt u veel inhoud van verschillende typen beheren (bijvoorbeeld pagina&#39;s, elementen). AEM dashboards verstrekken een makkelijk te gebruiken en aanpasbare manier om pagina&#39;s te bepalen die geconsolideerde gegevens tonen.
 
 >[!NOTE]
 >
@@ -73,7 +73,7 @@ Onderdelen van het dashboard zijn niet meer dan normaal [AEM componenten](/help/
 
 ### Webanalytische rapportagecomponenten {#web-analytics-reporting-components}
 
-AEM schepen met een reeks componenten die veelvoudige metriek van uw teruggeven [SiteCatalyst](/help/sites-administering/adobeanalytics.md) gegevens. Deze componenten worden vermeld in de Sidetrap onder de **Dashboard** sectie.
+AEM schepen met een reeks componenten die veelvoudige metriek van uw teruggeven [SiteCatalyst](/help/sites-administering/adobeanalytics.md) gegevens. Deze onderdelen worden vermeld in de Sidekick onder de **Dashboard** sectie.
 
 Elke rapportcomponent bevat ten minste drie tabbladen:
 

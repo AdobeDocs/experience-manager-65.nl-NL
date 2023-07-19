@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '858'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Adobe Analytics gebruikt de `s.pageName` om pagina&#39;s op unieke wijze te iden
 
 * Ontwerp de paginacomponent zodanig dat deze de CQ-variabele bevat die u toewijst aan de `s.pageName` eigenschap. (Zie [Adobe Analytics-tracking voor aangepaste componenten implementeren](/help/sites-developing/extending-analytics-components.md).)
 
-Om analysegegevens in de console van Plaatsen en in Inzicht van de Inhoud bloot te stellen, vereist AEM de waarde van `s.pageName` eigenschap voor elke pagina. De Java API voor AEM Analytics definieert de `AnalyticsPageNameProvider` interface die u implementeert om de Sites-console en Content Insights te voorzien van de waarde van de `s.pageName` eigenschap. Uw `AnaltyicsPageNameProvider` de dienst verhelpt het pageName bezit op de server voor rapporteringsdoeleinden, aangezien het dynamisch kan worden geplaatst gebruikend Javascript op de cliënt voor het volgen doeleinden.
+Om analysegegevens in de console van Plaatsen en in Inzicht van de Inhoud bloot te stellen, vereist AEM de waarde van `s.pageName` eigenschap voor elke pagina. De Java API voor AEM Analytics definieert de `AnalyticsPageNameProvider` interface die u implementeert om de Sites-console en Content Insights te voorzien van de waarde van de `s.pageName` eigenschap. Uw `AnaltyicsPageNameProvider` De service verhelpt de eigenschap pageName op de server voor rapportagedoeleinden, aangezien deze dynamisch kan worden ingesteld met JavaScript op de client voor traceringsdoeleinden.
 
 ## De service Default Analytics Page Name Provider {#the-default-analytics-page-name-provider-service}
 
@@ -43,7 +43,7 @@ De `DefaultPageNameProvider` de dienst bepaalt welke van deze variabelen CQ aan 
 
 * `pagedata.navTitle`: De service gebruikt `page.getNavigationTitle()`
 
-De `page` het object is [ `com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java-object voor de pagina.
+De `page` het object is [`com.day.cq.wcm.api.Page`](https://helpx.adobe.com/experience-manager/6-3/sites-developing/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) Java-object voor de pagina.
 
 Als u geen CQ-variabele toewijst aan de `s.pageName` eigenschap in het framework, de waarde voor `s.pageName` wordt gegenereerd op basis van het paginapad. De pagina met het pad `/content/geometrixx/en` gebruikt de waarde `content:geometrixx:en` for `s.pageName`.
 

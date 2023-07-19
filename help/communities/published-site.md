@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1194'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Bladeren naar nieuwe site bij publicatie {#browse-to-new-site-on-publish}
 
-Nu de nieuwe site voor gemeenschappen is gepubliceerd, bladert u naar de URL die wordt weergegeven bij het maken van de site, maar naar de publicatieserver, bijvoorbeeld:
+Nu de nieuwe site voor gemeenschappen is gepubliceerd, bladert u naar de URL die wordt weergegeven bij het maken van de site, maar bijvoorbeeld op de publicatieserver:
 
 * Auteur-URL = https://localhost:4502/content/sites/engage/en.html
 * URL publiceren = https://localhost:4503/content/sites/engage/en.html
@@ -106,7 +106,6 @@ U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referen
 >
 >* [Community-componenten](/help/communities/author-communities.md) (voor auteurs)
 >* [Component, Function en Feature Essentials](/help/communities/essentials.md) (voor ontwikkelaars)
-
 
 ### Forum-koppeling {#forum-link}
 

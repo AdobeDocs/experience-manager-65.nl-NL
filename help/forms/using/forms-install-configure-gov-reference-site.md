@@ -4,9 +4,9 @@ description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4607'
+source-wordcount: '4611'
 ht-degree: 0%
 
 ---
@@ -155,8 +155,8 @@ Deze sectie bevat details en instructies over de configuratie na implementatie v
 
 1. Vorm de dienst om met de server SMTP van uw keus te verbinden:
 
-   1. **hostnaam SMTP-server**: bijv. (smtp.gmail.com)
-   1. **Serverpoort**: bijv. (465) voor gmail met SSL
+   1. **hostnaam SMTP-server**: bijvoorbeeld (smtp.gmail.com)
+   1. **Serverpoort**: bijvoorbeeld (465) voor gmail met SSL
    1. **SMTP-gebruiker:** demo@ &lt;companyname> .com
    1. **Adres &quot;Van&quot;**: aemformsdemo@adobe.com
 
@@ -240,7 +240,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
 1. Navigeer naar het tabblad &#39;Verificatie-instellingen&#39;.
 1. Voer de volgende gegevens in:
 
-   1. **Hoofdmap service:** bijv. `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
+   1. **Hoofdmap service:** bijvoorbeeld: `https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
    1. **Type verificatie:** OAuth 2.0
    1. **Verificatie-instellingen** (zie [Configuratie-instellingen voor de cloud MS® Dynamics](../../forms/using/forms-install-configure-gov-reference-site.md#dynamicsconfig) om deze informatie te verzamelen):
 
@@ -251,7 +251,7 @@ Deze sectie bevat details en instructies over de Configuratie van de Dynamica Cl
       1. Toegang krijgen tot token-URL, bijvoorbeeld [https://login.windows.net/common/oauth2/token](https://login.windows.net/common/oauth2/token)
       1. Autorisatiebereik - **openhartig**
       1. Verificatieheader - **Vergunninghouder**
-      1. Bron - bijv. `https://msdynamicsserver.api.crm3.dynamics.com`
+      1. Bron - bijvoorbeeld `https://msdynamicsserver.api.crm3.dynamics.com`
 
    1. Klik op &quot;Verbinding maken met OAuth&quot;.
 
@@ -277,7 +277,7 @@ De stappen die in dit gedeelte worden beschreven, zijn inbegrepen om u te helpen
 1. Navigeer naar het dashboard voor de instantie MS® Dynamics om de URL van de hoofdmap van de bron/service te zoeken.
 1. Klik in de bovenste navigatiebalk op &quot;Verkoop&quot; of op uw eigen instantietype en &quot;Instellingen selecteren&quot;.
 1. Klik &quot;Aanpassingen&quot;en &quot;de Middelen van de Ontwikkelaar&quot;dichtbij het bodemrecht.
-1. Hier vindt u de Hoofdmap van de Dienst URL: bijv.
+1. Hier vindt u de Hoofdmap van de Dienst URL: bijvoorbeeld:
 
    *`https://msdynamicsserver.api.crm3.dynamics.com/api/data/v9.1/`
 

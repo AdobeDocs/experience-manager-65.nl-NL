@@ -8,9 +8,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1143'
+source-wordcount: '1144'
 ht-degree: 7%
 
 ---
@@ -29,8 +29,8 @@ U kunt meldingen ontvangen van verschillende AEM, waaronder workflows en project
    * tijdelijke items die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren;
 
       * dit is het product van workflow **Deelnemer** stappen
-   * items zijn mislukt, zodat beheerders de mislukte stap opnieuw kunnen proberen.
 
+   * items zijn mislukt, zodat beheerders de mislukte stap opnieuw kunnen proberen.
 
 U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en actie kunt ondernemen.
 
@@ -47,7 +47,6 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 >* [Workflows](/help/sites-authoring/workflows.md)
 >* [Forms](/help/forms/home.md)
 >
-
 
 ## Postvak IN van koptekst {#inbox-in-the-header}
 
@@ -114,22 +113,22 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 * **Kalenderweergave**
 
-   Voor **Kalenderweergave** u kunt configureren:
+  Voor **Kalenderweergave** u kunt configureren:
 
    * **Groeperen op**
    * **Planning** of **Geen**
    * **Kaartgrootte**
 
-   ![wf-92](assets/wf-92.png)
+  ![wf-92](assets/wf-92.png)
 
 * **Lijstweergave**
 
-   Voor **Lijstweergave** u kunt het sorteermechanisme configureren:
+  Voor **Lijstweergave** u kunt het sorteermechanisme configureren:
 
    * **Veld sorteren**
    * **Sorteervolgorde**
 
-   ![wf-83](assets/inbox-settings.png)
+  ![wf-83](assets/inbox-settings.png)
 
 ### Inbox - Admin Control {#inbox-admin-control}
 
@@ -149,7 +148,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
    * **Kolom verwijderen**: Tik op de knop ![delete](assets/delete_updated.svg) pictogram om de kolom uit AEM Inbox te verwijderen.
    * **Kolom verplaatsen**: Sleep de ![move](assets/move_updated.svg) pictogram om een kolom naar een nieuwe positie in AEM Inbox te verplaatsen.
 
-   ![beheer](assets/admin-control-column-customize.png)
+  ![beheer](assets/admin-control-column-customize.png)
 
 * **Aanpassing branding**
 
@@ -181,6 +180,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
       * itemeigenschappen weergeven
       * een geschikt dashboard of een geschikte wizard voor verdere actie openen
       * open gerelateerde documentatie
+
    * **Stap terug** naar een vorige stap.
    * Bekijk de lading voor een werkschema.
    * Maak een project van het item.
@@ -190,7 +190,6 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
    >Zie voor meer informatie:
    >
    >* Workflowitems - [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
-
 
 1. Afhankelijk van het geselecteerde item wordt een actie gestart. bijvoorbeeld:
 
@@ -204,10 +203,9 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
 
    Afhankelijk van of een dialoogvenster, wizard, documentatiepagina is geopend, kunt u:
 
-   * Bevestig de passende actie; bv. Opnieuw toewijzen.
+   * Bevestig de passende actie; bijvoorbeeld Opnieuw toewijzen.
    * Annuleer de handeling.
    * Pijl-achter; Als bijvoorbeeld een wizard Handelingen of een documentatiepagina is geopend, kunt u terugkeren naar het Postvak IN.
-
 
 ## Een taak maken {#creating-a-task}
 
@@ -260,9 +258,11 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) op b
       * **Begindatum**
       * **Vervaldatum**
       * **Gebruiker** en rol
+
    * **Geavanceerd**
 
       * **Naam**
+
    >[!NOTE]
    >
    >Zie [Een project maken](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) voor volledige informatie.

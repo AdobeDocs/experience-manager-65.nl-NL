@@ -11,7 +11,7 @@ topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
 exl-id: acb33000-25b3-4471-9df9-b6e039ab2bda
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1549'
 ht-degree: 0%
@@ -1974,7 +1974,7 @@ In het volgende codevoorbeeld wordt een formulier vooraf gevuld met een dynamisc
 * `convertDataSource`: Hiermee converteert u een `org.w3c.dom.Document` object naar een `com.adobe.idp.Document` object. Deze methode accepteert een `org.w3c.dom.Document` object als invoerparameter en retourneert een `com.adobe.idp.Document` object.
 * `renderPOForm`: Gebruikt de Forms Service Java API om een dynamisch inkooporderformulier te genereren. De `com.adobe.idp.Document` object dat is geretourneerd door de `convertDataSource` wordt gebruikt om het formulier vooraf in te vullen.
 
-   Al deze methoden worden aangeroepen vanuit de Java-servlet `doPost` methode. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
+  Al deze methoden worden aangeroepen vanuit de Java-servlet `doPost` methode. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/rendering-forms.md#prepopulating-forms-with-flowable-layouts).)
 
 ```java
 /*
@@ -2346,7 +2346,7 @@ In het volgende codevoorbeeld wordt een formulier verwerkt dat een berekeningssc
              if (processState == 1)
              {
  
-                 //Write the data back to to the client web browser
+                 //Write the data back to the client web browser
                  ServletOutputStream oOutput = resp.getOutputStream();
                  Document calData = formOut.getOutputContent();
  

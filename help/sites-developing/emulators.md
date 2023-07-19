@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '631'
+source-wordcount: '634'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Met Adobe Experience Manager (AEM) kunnen auteurs een pagina weergeven in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken, bijvoorbeeld op een mobiel apparaat of in een e-mailclient.
 
 Het AEM emulatorframework:
 
-* Verstrekt inhoud creatie binnen een gesimuleerde Gebruikersinterface (UI), bijvoorbeeld een mobiel apparaat of een e-mailcliënt (die aan auteur nieuwsbrieven wordt gebruikt).
+* Verstrekt inhoud creatie binnen een gesimuleerde Gebruikersinterface (UI), bijvoorbeeld, een mobiel apparaat of een e-mailcliënt (die aan auteur nieuwsbrieven wordt gebruikt).
 * Hiermee past u de pagina-inhoud aan op basis van de gesimuleerde interface.
 * Hiermee kunt u aangepaste emulators maken.
 
@@ -43,7 +43,7 @@ Een emulator:
 * Is gebaseerd op ExtJS.
 * Werkt op de pagina DOM.
 * De weergave ervan wordt geregeld via CSS.
-* Biedt ondersteuning voor plug-ins (bijvoorbeeld de rotatieplug-in van het mobiele apparaat).
+* Ondersteuning voor plug-ins (bijvoorbeeld de rotatie-insteekmodule voor mobiele apparaten).
 * Is alleen actief op auteur.
 * De basiscomponent bevindt zich op `/libs/wcm/emulator/components/base`.
 
@@ -110,26 +110,26 @@ De bestaande mobiele emulators:
 * Onder /libs/wcm/mobile/components/emulators.
 * U kunt de JSON-server gebruiken op:
 
-   http://localhost:4502/bin/wcm/mobile/emulators.json
+  http://localhost:4502/bin/wcm/mobile/emulators.json
 
 Wanneer de paginacomponent op de mobiele paginacomponent ( `/libs/wcm/mobile/components/page`), wordt de emulatorfunctionaliteit automatisch in de pagina geïntegreerd via het volgende mechanisme:
 
 * De component mobiele pagina `head.jsp` bevat de daaraan gekoppelde emulator van de apparaatgroep in de it-component (alleen in de auteursmodus) en de CSS-weergave van de apparaatgroep via:
 
-   `deviceGroup.drawHead(pageContext);`
+  `deviceGroup.drawHead(pageContext);`
 
 * De methode `DeviceGroup.drawHead(pageContext)` bevat de init-component van de emulator, dat wil zeggen roept de `init.html.jsp` van de emulatorcomponent. Als de emulatorcomponent geen eigen component heeft `init.html.jsp` en baseert zich op de mobiele basis emulator ( `wcm/mobile/components/emulators/base)`, wordt het initescript van de mobiele basisemulator aangeroepen ( `/libs/wcm/mobile/components/emulators/base/init.html.jsp`).
 
-* Het initescript van de mobiele basismededinger bepaalt door Javascript:
+* Het init-script van de Mobile Base-emulator definieert via JavaScript:
 
    * De configuratie voor alle emulators die voor de pagina zijn gedefinieerd (emulatorConfigs)
    * De emulatormanager die de functionaliteit van de emulator op de pagina integreert via:
 
-      `emulatorMgr.launch(config)`;
+     `emulatorMgr.launch(config)`;
 
-      De emulatormanager wordt gedefinieerd door:
+     De emulatormanager wordt gedefinieerd door:
 
-      `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
+     `/libs/wcm/emulator/widgets/source/EmulatorManager.js`
 
 #### Aangepaste mobiele emulator maken {#creating-a-custom-mobile-emulator}
 
@@ -152,4 +152,5 @@ Een aangepaste mobiele emulator maken:
    * Naam = `canRotate`, Type = `Boolean`, Waarde = `true`: om de rotatiefunctie op te nemen.
 
    * Naam = `touchScrolling`, Type = `Boolean`, Waarde = `true`: om de functionaliteit voor aanraakschuiven op te nemen.
+
    U kunt meer functies toevoegen door uw eigen plug-ins te definiëren.

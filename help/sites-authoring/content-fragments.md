@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1141'
 ht-degree: 5%
 
 ---
@@ -74,6 +74,7 @@ Met de inhoudsfragmenten kunt u:
    * Open de **Activa** browser en filter voor **Inhoudsfragmenten** (de standaardwaarde is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
 
    * Selecteer vervolgens de inhoudfragment-component **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selectie openen waarin u de vereiste **Inhoudsfragment**.
+
    >[!NOTE]
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
@@ -90,7 +91,8 @@ Met de inhoudsfragmenten kunt u:
    >
    >    * [Responsieve lay-out](/help/sites-authoring/responsive-layout.md)
    >    * [Paginacontent bewerken](/help/sites-authoring/editing-content.md)
-
+   >
+   >
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
@@ -100,7 +102,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
 * **Inhoudsfragment**
 
-   Geef op welk fragment moet worden gebruikt.
+  Geef op welk fragment moet worden gebruikt.
 
 * **Weergavemodus**:
 
@@ -113,16 +115,16 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
    * De standaardwaarde **Hoofd** is altijd beschikbaar.
    * Er is een selectie beschikbaar als het fragment met een geschikte sjabloon is gemaakt.
 
-   >[!NOTE]
-   >
-   >De beschikbare elementen zijn afhankelijk van de gebruikte sjabloon.
+  >[!NOTE]
+  >
+  >De beschikbare elementen zijn afhankelijk van de gebruikte sjabloon.
 
 * **Variatie**
 
    * De standaard **master** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
 
-* **Alinea&#39;s**: het bereik van de alinea(&#39;s) specificeren dat moet worden opgenomen:
+* **Alinea&#39;s**: Geef het bereik op van de alinea&#39;s die u wilt opnemen:
 
    * **Alles**
    * **Bereik**: bijvoorbeeld: `1`, `3-5`, `9-*`
@@ -175,14 +177,13 @@ Voor tussenliggende inhoud kunt u:
 >* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
 >
 
-
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 
 Als u [content hebt gekoppeld](/help/assets/content-fragments/content-fragments-assoc-content.md) aan het [contentfragment](/help/assets/content-fragments/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](#adding-in-between-content).
 
 >[!NOTE]
 >
->Er zijn verschillende methoden om toe te voegen [visuele elementen (bv. afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
+>Er zijn verschillende methoden om toe te voegen [visuele elementen (bijvoorbeeld afbeeldingen)](/help/assets/content-fragments/content-fragments.md#fragments-with-visual-assets) op het fragment en/of de pagina.
 
 >[!NOTE]
 >

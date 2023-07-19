@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
@@ -112,7 +112,6 @@ De **E-mailgereedschappen** voor ExactTarget kan meer e-mailfunctionaliteit toev
 >* Twee van de e-mailprogramma&#39;s zijn vereist: **Fysiek mailadres (vereist)** en **Profielmidden (vereist)**. Wanneer e-mail aan ExactTarget wordt gepubliceerd, worden deze twee e-mail-hulpmiddelen toegevoegd aan de bodem van elke post door gebrek.
 >
 
-
 ### Tekst en personalisatie toevoegen aan uw e-mail {#adding-text-and-personalization-tool-to-your-e-mail}
 
 U kunt gepersonaliseerde gebieden in een e-mail toevoegen door toe te voegen **Tekst en personalisatie** aan de pagina:
@@ -160,6 +159,7 @@ E-mails/nieuwsbrieven kunnen aan uw E-maildienst worden gepubliceerd door deze s
 >Als een e-mail/nieuwsbrief met dezelfde naam wordt gepubliceerd als een e-mail/nieuwsbrief die reeds is gepubliceerd, wordt de eerdere e-mail/nieuwsbrief niet vervangen. In plaats daarvan wordt een nieuwe e-mail/nieuwsbrief met dezelfde naam gemaakt (de id&#39;s van twee nieuwsbrieven zijn echter anders).
 >
 >Als u de e-mail/nieuwsbrief naar de e-mailserviceprovider publiceert, wordt ook de e-mail/nieuwsbrief naar de AEM-publicatie-instantie gepubliceerd.
+>
 
 ### Een gepubliceerde e-mail bijwerken {#updating-a-published-e-mail}
 

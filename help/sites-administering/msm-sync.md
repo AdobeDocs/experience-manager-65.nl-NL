@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2702'
+source-wordcount: '2701'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
   </tr>
   <tr>
    <td>Ingedrukt op wijzigen (ondiep)</td>
-   <td><p>Hiermee wordt inhoud naar de live kopie gespoeld wanneer de blauwdrukpagina wordt gewijzigd, zonder verwijzingen bij te werken (bijvoorbeeld voor oppervlakkige kopieën).</p> <p>Gebruik spaarzaam deze rollout configuratie aangezien het bij de trekker van de Wijziging gebruikt.</p> </td>
+   <td><p>Hiermee wordt inhoud naar de live kopie gespoeld wanneer de pagina met de blauwdruk wordt gewijzigd, zonder referenties bij te werken (bijvoorbeeld voor oppervlakkige kopieën).</p> <p>Gebruik spaarzaam deze rollout configuratie aangezien het bij de trekker van de Wijziging gebruikt.</p> </td>
    <td>Bij wijziging</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> orderChildren</td>
   </tr>
@@ -245,7 +245,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   </tr>
   <tr>
    <td>catalogRolloutHooks</td>
-   <td>Voert catalogus-generatie-specifieke rollout haken uit. Roept de methode executePageRolloutHooks en executeProductRolloutHooks van de methode van de CatalogGenerator aan.<br /> Zie com.adobe.cq.commerce.pim.api.CatalogGenerator in AEM JavaDocs.</td>
+   <td>Voert catalogus-generatie-specifieke rollout haken uit. Roept de methoden executePageRolloutHooks en executeProductRolloutHooks van de CatalogGenerator aan.<br /> Zie com.adobe.cq.commerce.pim.api.CatalogGenerator in AEM JavaDocs.</td>
    <td> </td>
   </tr>
   <tr>

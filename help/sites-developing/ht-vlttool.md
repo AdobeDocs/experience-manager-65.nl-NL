@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2718'
+source-wordcount: '2716'
 ht-degree: 0%
 
 ---
@@ -781,7 +781,7 @@ De statuscodes die door VLT worden gebruikt zijn:
 
 ## FileVault-synchronisatie instellen {#setting-up-filevault-sync}
 
-De vault sync-service wordt gebruikt om inhoud in de opslagplaats te synchroniseren met een lokale bestandssysteemweergave en andersom. Dit wordt bereikt door een OSGi-service te installeren die luistert naar wijzigingen in de opslagplaats en de inhoud van het bestandssysteem periodiek zal scannen. Het gebruikt het zelfde rangschikkingsformaat zoals vault voor het in kaart brengen van de inhoud van de bewaarplaats aan schijf.
+De vault sync-service wordt gebruikt om inhoud in de opslagplaats te synchroniseren met een lokale bestandssysteemweergave en omgekeerd. Dit wordt bereikt door een OSGi-service te installeren die luistert naar wijzigingen in de opslagplaats en de inhoud van het bestandssysteem periodiek zal scannen. Het gebruikt het zelfde rangschikkingsformaat zoals vault voor het in kaart brengen van de inhoud van de bewaarplaats aan schijf.
 
 >[!NOTE]
 >
@@ -944,7 +944,7 @@ Ga als volgt te werk als u een ontwikkelomgeving wilt instellen op basis van een
    ***
    ```
 
-Uw lokale map is nu gesynchroniseerd met de opslagplaats. De synchronisatie is bidirectioneel, zodat de wijziging van de opslagplaats wordt toegepast op uw lokale synchronisatiemap en andersom.
+Uw lokale map is nu gesynchroniseerd met de opslagplaats. De synchronisatie is bidirectioneel, zodat de wijziging van de opslagplaats wordt toegepast op uw lokale synchronisatiemap en omgekeerd.
 
 >[!NOTE]
 >

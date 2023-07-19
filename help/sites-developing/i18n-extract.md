@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 exl-id: 4acc5f7f-0bcb-4b5a-8531-52e146cffeae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 Gebruik de xgettext-maven-plug-in om tekenreeksen uit uw broncode te extraheren die moeten worden vertaald. Met de plug-in Maven worden tekenreeksen geëxtraheerd naar een XLIFF-bestand dat u verzendt voor vertaling. Tekenreeksen worden geëxtraheerd van de volgende locaties:
 
 * Java-bronbestanden
-* Javascript-bronbestanden
+* JavaScript-bronbestanden
 * XML-representaties van SVN-bronnen (JCR-knooppunten)
 
 ## Tekenreeksovername configureren {#configuring-string-extraction}
@@ -138,7 +138,7 @@ mvn xgettext:extract
 * `raw.xliff`: geëxtraheerde tekenreeksen
 * `warn.log`: eventuele waarschuwingen, indien `CQ.I18n.getMessage()` API wordt onjuist gebruikt. Deze moeten altijd worden opgelost en vervolgens opnieuw worden uitgevoerd.
 
-* `parserwarn.log`: parserwaarschuwingen (indien aanwezig), bv. JS-parserproblemen
+* `parserwarn.log`: parser waarschuwingen (indien aanwezig), bijvoorbeeld problemen met js-parser
 * `potentials.xliff`: &quot;potentiële&quot; kandidaten die niet worden geëxtraheerd, maar leesbare tekenreeksen kunnen zijn die vertaald moeten worden (kan worden genegeerd, levert nog steeds een enorme hoeveelheid valse positieven op)
 * `strings.xliff`: afgevlakt xliff-bestand, te importeren in ALF
 * `backrefs.txt`: staat voor snelle raadpleging van broncodeplaatsen voor een bepaalde koord toe

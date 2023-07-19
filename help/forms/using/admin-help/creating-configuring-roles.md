@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2525'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 
 **Uitvoerbeheerder:** Kan instellingen weergeven en wijzigen via de uitvoerpagina in de beheerconsole
 
-**PDFG-beheerder:** Kan instellingen van de pagina PDF Generator in de beheerconsole weergeven en wijzigen
+**PDFG-beheerder:** Kan instellingen van de pagina PDF Generator weergeven en wijzigen in de beheerconsole
 
 **PDFG-gebruiker:** Kan toegang krijgen tot alle niet-beheerfuncties voor PDF Generator
 
@@ -291,7 +291,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **Beleidsset Rights Management coördinator toevoegen:** Machtigingen voor beleidssetcoördinatoren toevoegen, verwijderen en wijzigen
 
-**Beleid instellen voor maken van Rights Management:** Een nieuw beleid voor een beleidsset maken
+**Beleid instellen voor maken van Rights Management:** Nieuw beleid maken voor een beleidsset
 
 **Beleid voor Rights Managementen instellen Verwijderbeleid:** Een beleid verwijderen uit een beleidsset
 

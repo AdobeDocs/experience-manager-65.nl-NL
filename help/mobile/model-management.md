@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: c8281f98-9811-42f7-9a31-f82dd0f09319
 exl-id: 50785534-5784-4354-b123-5e640b7c0242
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '784'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Modelbeheer omvat het maken en beheren van modellen om deze aan eventuele gegevensobjecten te koppelen. Elk model bevat alle eigenschappen en velddefinities die nodig zijn om het maken en renderen van objecten te vergemakkelijken.
 
@@ -49,6 +49,7 @@ Modellen worden gebruikt om te bepalen hoe entiteiten worden gemaakt. Zij bepale
 >[!NOTE]
 >
 >Een model bestaat buiten een app omdat meerdere apps het kunnen gebruiken.
+>
 
 Zie **[Modellen](/help/mobile/administer-mobile-apps.md)** om modellen in het dashboard en de gegevensopslagplaats tot stand te brengen en te beheren.
 
@@ -65,6 +66,7 @@ Zie **[Werken met entiteiten](/help/mobile/spaces-and-entities.md)** om aangepas
 >[!NOTE]
 >
 >Als het model niet aan bestaande AEM inhoud beantwoordt, zoals de klant creeerde een nieuw model, dan zal er een UI zijn zodat kan een klant een nieuwe entiteit tot stand brengen.
+>
 
 ### Spaties in inhoudsmodel {#spaces-in-content-model}
 

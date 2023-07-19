@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-Demand biedt een volledig geconfigureerde toepassingssjabloon, een artikelsjabloon en artikelcomponenten.
 
@@ -62,6 +62,7 @@ Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en ver
 >De ***redirectTarget*** wordt berekend als onderdeel van het maken van de app en probeert een pad op te lossen als er een eigenschap redirectTarget beschikbaar is als onderdeel van de toepassingssjabloon en de waarde van redirectTarget wordt gedefinieerd als relatief. Wanneer tijdens het maken van de app een relatieve waarde voor redirectTarget wordt gevonden in de toepassingssjabloon, wordt de waarde toegevoegd aan de opgeloste locatie waar de app is gemaakt.
 >
 >Als een toepassingssjabloon bijvoorbeeld een ***redirectTarget*** met de waarde &quot;*lantaarnstramienen/nl*&quot;, en de app is gemaakt in &quot;*/content/mobileapps/fooApp*&quot;, is de uiteindelijke waarde voor redirectTarget nadat de app is gemaakt &quot;*/content/mobileapps/fooApp/language-masters/nl*&quot;.
+>
 
 ## Inhoudssjablonen maken {#creating-content-templates}
 
@@ -124,6 +125,7 @@ Een eenvoudige component is inbegrepen in de codebewaarplaats, waarvan de bron i
 >[!NOTE]
 >
 >Er zijn momenteel geen out-of-the-box-componenten beschikbaar voor AEM Mobile.
+>
 
 U kunt componenten aan uw pagina toevoegen. Elke component kan in een AEM Mobile-toepassing worden gebruikt, maar bij toepassing wordt de rendering mogelijk niet correct uitgevoerd.
 

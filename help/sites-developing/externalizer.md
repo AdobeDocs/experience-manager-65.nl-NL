@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 938469ad-f466-42f4-8b6f-bfc060ae2785
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
 
 # URL&#39;s extern maken{#externalizing-urls}
 
-In AEM **ExternalAlizer** is een dienst OSGI die u toestaat om een middelweg programmatically om te zetten (b.v. `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
+In AEM **ExternalAlizer** is de dienst OSGI die u toestaat om een middelweg programmatically om te zetten (bijvoorbeeld `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
 
 Omdat een instantie zijn uiterlijk zichtbare URL niet kan kennen als het achter een Weblaag loopt, en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
@@ -54,6 +54,7 @@ Een domeintoewijzing definiëren voor de **ExternalAlizer** service:
 
       * Gebruik https om https-koppelingen desgewenst te forceren
       * wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
+
    * **server** is de gastheernaam (kan een domeinnaam of ip adres zijn).
    * **poort** (optioneel) is het poortnummer.
    * **contextpad** (optioneel) wordt alleen ingesteld als AEM is geïnstalleerd als een webapp onder een ander contextpad.
@@ -100,7 +101,6 @@ In deze sectie worden enkele voorbeelden getoond van de manier waarop **External
 
    * `https://www.website.com/contextpath/my/page.html`
 
-
 1. **Een pad extern maken met het domein &#39;auteur&#39;:**
 
    ```java
@@ -115,7 +115,6 @@ In deze sectie worden enkele voorbeelden getoond van de manier waarop **External
 
    * `https://author.website.com/contextpath/my/page.html`
 
-
 1. **Een pad extern maken met het &#39;lokale&#39; domein:**
 
    ```java
@@ -129,6 +128,5 @@ In deze sectie worden enkele voorbeelden getoond van de manier waarop **External
    `myExternalizedUrl` eindigt omhoog met de waarde:
 
    * `https://publish-3.internal/contextpath/my/page.html`
-
 
 1. Meer voorbeelden vindt u in het gedeelte [Javadocs](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/Externalizer.html).

@@ -10,9 +10,9 @@ discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '403'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ AEM desktop App gebruikt WebDAV-protocol op Microsoft Windows en SMB1 op Mac OS 
 1. Start de AEM Forms-server opnieuw. Nadat u de computer opnieuw hebt opgestart, kan de AEM Forms-server inhoud accepteren en delen met AEM bureaubladtoepassing.
 1. Open de toepassing en maak verbinding met de AEM Forms-server.
 
-   Wanneer de verbinding is gelukt, vult de toepassing de `content/dam` en `content/dam/formsanddocuments` mappen. U kunt de app gebruiken om bestanden van de bovenliggende mappen naar lokale mappen te verplaatsen en omgekeerd, en om inhoud tussen automatisch gevulde mappen te verplaatsen.
+   Wanneer de verbinding is gelukt, vult de toepassing de `content/dam` en `content/dam/formsanddocuments` mappen. Samen met het verplaatsen van bestanden van boven naar lokale mappen en omgekeerd kunt u de app gebruiken om inhoud te verplaatsen tussen automatisch gevulde mappen.

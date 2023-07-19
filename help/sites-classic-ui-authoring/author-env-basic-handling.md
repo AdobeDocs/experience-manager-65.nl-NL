@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
 source-wordcount: '1194'
 ht-degree: 0%
@@ -24,7 +24,6 @@ ht-degree: 0%
 >* Bepaalde functionaliteit is niet in alle consoles beschikbaar en/of in sommige consoles is aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
 >* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles gebruiken](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
-
 
 ## Het welkomstscherm {#the-welcome-screen}
 
@@ -87,13 +86,13 @@ De **Websites** De console verstrekt twee ruiten voor u om uw pagina&#39;s te na
 
 * Linkerdeelvenster
 
-   Dit toont de boomstructuur van uw websites en de pagina&#39;s binnen die websites.
+  Dit toont de boomstructuur van uw websites en de pagina&#39;s binnen die websites.
 
-   Het toont ook informatie over andere aspecten of AEM, met inbegrip van projecten, blauwdrukken en activa.
+  Het toont ook informatie over andere aspecten of AEM, met inbegrip van projecten, blauwdrukken en activa.
 
 * Rechtervenster
 
-   Hiermee worden de pagina&#39;s weergegeven (op de locatie die in het linkervenster is geselecteerd) en kunnen handelingen worden uitgevoerd.
+  Hiermee worden de pagina&#39;s weergegeven (op de locatie die in het linkervenster is geselecteerd) en kunnen handelingen worden uitgevoerd.
 
 Vanaf hier kunt u [uw pagina&#39;s beheren](/help/sites-authoring/managing-pages.md) met de werkbalk, een contextmenu of door een pagina voor verdere handelingen te openen.
 
@@ -105,7 +104,7 @@ Vanaf hier kunt u [uw pagina&#39;s beheren](/help/sites-authoring/managing-pages
 
 ## Toegang tot Help {#accessing-help}
 
-Op verschillende consoles (bv. websites) is er ook **Help** -knop beschikbaar is, wordt Pakket delen of de documentatiesite geopend.
+Op verschillende consoles (bijvoorbeeld Websites) is er ook **Help** -knop beschikbaar is, wordt Pakket delen of de documentatiesite geopend.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
@@ -120,7 +119,7 @@ De **Websites** De console maakt een lijst van uw pagina&#39;s van inhoud in een
    * De onderliggende pagina&#39;s weergeven in het rechterdeelvenster
    * Vouw ook de structuur in het linkerdeelvenster uit.
 
-      Om redenen van prestaties is deze actie afhankelijk van het aantal kindknopen. Met een standaardinstallatie werkt deze methode van uitbreiding wanneer er zijn `30` of minder onderliggende knooppunten.
+     Om redenen van prestaties is deze actie afhankelijk van het aantal kindknopen. Met een standaardinstallatie werkt deze methode van uitbreiding wanneer er zijn `30` of minder onderliggende knooppunten.
 
 * Als u dubbelklikt op de naam van de pagina (linkerdeelvenster), wordt de structuur ook uitgebreid, hoewel dit effect niet zo duidelijk is wanneer de pagina tegelijkertijd wordt geopend.
 

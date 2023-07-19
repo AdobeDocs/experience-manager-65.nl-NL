@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '3324'
+source-wordcount: '3327'
 ht-degree: 0%
 
 ---
@@ -137,8 +137,8 @@ Met Verschuiven geeft u op welk script een bepaalde entiteit wordt gerenderd (do
 
 Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repository wordt gezocht naar de gevraagde resource (content node):
 
-* first Sling controleert of een knooppunt bestaat op de locatie die in de aanvraag is opgegeven; bijv. `../content/corporate/jobs/developer.html`
-* als er geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald; bijv. `../content/corporate/jobs/developer`
+* first Sling controleert of een knooppunt bestaat op de locatie die in de aanvraag is opgegeven; bijvoorbeeld: `../content/corporate/jobs/developer.html`
+* als er geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald; bijvoorbeeld: `../content/corporate/jobs/developer`
 * Als er geen knooppunt wordt gevonden, retourneert Sling de http-code 404 (Not Found).
 
 Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar dit is een geavanceerde functie.
@@ -152,7 +152,7 @@ Het pad dat door de `sling:resourceType` kunnen:
 * absoluut
 * relatief, ten opzichte van een configuratieparameter
 
-   Relatieve paden worden aanbevolen door Adobe omdat ze de draagbaarheid verhogen.
+  Relatieve paden worden aanbevolen door Adobe omdat ze de draagbaarheid verhogen.
 
 Alle verkoopscripts worden opgeslagen in submappen van `/apps` of `/libs`, die in deze volgorde wordt doorzocht (zie [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -175,39 +175,39 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs`
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen op .html (standaardaanvraagtypen, standaardindeling)
 
-   Het script is /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
+  Het script is /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
 * Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
 
-   POST wordt gebruikt in de manuscriptnaam.
+  POST wordt gebruikt in de manuscriptnaam.
 
-   Het script is `/apps/hr/jobs/jobs.POST.esp`.
+  Het script is `/apps/hr/jobs/jobs.POST.esp`.
 
 * URL&#39;s in andere indelingen, niet eindigend met .html
 
-   Bijvoorbeeld, `../content/corporate/jobs/developer.pdf`
+  Bijvoorbeeld, `../content/corporate/jobs/developer.pdf`
 
-   Het script wordt `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de manuscriptnaam.
+  Het script wordt `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de manuscriptnaam.
 
 * URL&#39;s met kiezers
 
-   Kiezers kunnen worden gebruikt om dezelfde inhoud in een andere indeling weer te geven. Bijvoorbeeld een printervriendelijke versie, een rss-feed of een overzicht.
+  Kiezers kunnen worden gebruikt om dezelfde inhoud in een andere indeling weer te geven. Bijvoorbeeld een printervriendelijke versie, een rss-feed of een overzicht.
 
-   Als we naar een printervriendelijke versie kijken waarin de kiezer mogelijk *afdrukken*; zoals in `../content/corporate/jobs/developer.print.html`
+  Als we naar een printervriendelijke versie kijken waarin de kiezer mogelijk *afdrukken*; zoals in `../content/corporate/jobs/developer.print.html`
 
-   Het script wordt `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt toegevoegd aan de scriptnaam.
+  Het script wordt `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt toegevoegd aan de scriptnaam.
 
 * Als er geen sling:resourceType is gedefinieerd, dan:
 
    * het inhoudspad wordt gebruikt om naar een geschikt script te zoeken (als het op pad gebaseerde ResourceTypeProvider actief is).
 
-      Het script voor `../content/corporate/jobs/developer.html` zou een zoekopdracht genereren in `/apps/content/corporate/jobs/`.
+     Het script voor `../content/corporate/jobs/developer.html` zou een zoekopdracht genereren in `/apps/content/corporate/jobs/`.
 
    * het primaire knooppunttype zal worden gebruikt.
 
 * Als er helemaal geen script wordt gevonden, wordt het standaardscript gebruikt.
 
-   De standaardvertoning wordt momenteel ondersteund als tekst zonder opmaak (.txt), HTML (.html) en JSON (.json), die allemaal de eigenschappen van het knooppunt vermelden (correct opgemaakt). De standaardvertoning voor de extensie .res, of aanvragen zonder een aanvraagextensie, is de bron te spool (waar mogelijk).
+  De standaardvertoning wordt momenteel ondersteund als tekst zonder opmaak (.txt), HTML (.html) en JSON (.json), die allemaal de eigenschappen van het knooppunt vermelden (correct opgemaakt). De standaardvertoning voor de extensie .res, of aanvragen zonder een aanvraagextensie, is de bron te spool (waar mogelijk).
 * Voor http-foutafhandeling (codes 403 of 404) wordt met Sling gezocht naar een script op:
 
    * de locatie /apps/sling/servlet/errorhandler voor [aangepaste scripts](/help/sites-developing/customizing-errorhandler-pages.md)
@@ -248,19 +248,19 @@ Bijvoorbeeld:
    * b
 
       * sling:resourceSuperType = a
+
    * c
 
       * sling:resourceSuperType = b
+
    * x
 
       * sling:resourceType = c
+
    * y
 
       * sling:resourceType = c
       * sling:resourceSuperType = a
-
-
-
 
 De typehiërarchie van:
 
@@ -327,7 +327,7 @@ Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw 
 * update
 * verwijderen
 * zie de huidige status
-* toegang tot meer gedetailleerde informatie (bv. symbolische naam, versie, locatie, enz.) over de specifieke bundels
+* toegang tot meer gedetailleerde informatie (bijvoorbeeld symbolische naam, versie, locatie, enz.) over de specifieke bundels
 
 Zie [de webconsole](/help/sites-deploying/web-console.md), [OSGI-configuratie](/help/sites-deploying/configuring-osgi.md) en [OSGi-configuratie-instellingen](/help/sites-deploying/osgi-configuration-settings.md) voor meer informatie .
 
@@ -418,29 +418,29 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zi
 
 * `/apps`
 
-   Toepassingsgerelateerd; bevat componentdefinities die specifiek zijn voor uw website. De componenten die u ontwikkelt kunnen op uit de vakcomponenten worden gebaseerd beschikbaar bij `/libs/foundation/components`.
+  Toepassingsgerelateerd; bevat componentdefinities die specifiek zijn voor uw website. De componenten die u ontwikkelt kunnen op uit de vakcomponenten worden gebaseerd beschikbaar bij `/libs/foundation/components`.
 
 * `/content`
 
-   Inhoud die voor uw website is gemaakt.
+  Inhoud die voor uw website is gemaakt.
 
 * `/etc`
 
 * `/home`
 
-   Informatie over gebruiker en groep.
+  Informatie over gebruiker en groep.
 
 * `/libs`
 
-   Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de uit-van-de-doos AEM eigenschappen zoals onderzoek of replicatie. De inhoud in `/libs` mogen niet worden gewijzigd omdat dit van invloed is op de manier waarop AEM werkt. Functies die specifiek zijn voor uw website, moeten worden ontwikkeld onder `/apps` (zie [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+  Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de uit-van-de-doos AEM eigenschappen zoals onderzoek of replicatie. De inhoud in `/libs` mogen niet worden gewijzigd omdat dit van invloed is op de manier waarop AEM werkt. Functies die specifiek zijn voor uw website, moeten worden ontwikkeld onder `/apps` (zie [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
-   Tijdelijke werkruimte.
+  Tijdelijke werkruimte.
 
 * `/var`
 
-   bestanden die door het systeem worden gewijzigd en bijgewerkt; zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
+  bestanden die door het systeem worden gewijzigd en bijgewerkt; zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
 
 ## Omgevingen {#environments}
 

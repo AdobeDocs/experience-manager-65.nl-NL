@@ -3,9 +3,9 @@ title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
 workflow-type: tm+mt
-source-wordcount: '4230'
+source-wordcount: '4229'
 ht-degree: 0%
 
 ---
@@ -154,7 +154,7 @@ Een live kopie van een site maken op basis van een blauwdrukconfiguratie:
 
    ![Selecteer blauwdrukconfiguratie als bron van live kopie](assets/blueprint-configuration-select.png)
 
-1. Gebruik de **Oorspronkelijke talen** om de taal of talen van de blauwdruksite op te geven die voor de live kopie moet worden gebruikt.
+1. Gebruik de **Oorspronkelijke talen** om de talen van de blauwdruksite op te geven die voor de live kopie moeten worden gebruikt.
 
    Standaard zijn alle beschikbare talen geselecteerd. Als u een taal wilt verwijderen, klikt of tikt u op de knop **X** die naast de taal wordt weergegeven.
 

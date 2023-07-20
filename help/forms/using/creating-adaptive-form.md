@@ -5,16 +5,18 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner
 exl-id: 2c25a8b7-73f7-40fb-a303-9446a708c8eb
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 6ab2538dd8095304a55433c15c8c3d095499d92c
 workflow-type: tm+mt
-source-wordcount: '1761'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier maken {#creating-an-adaptive-form}
 
-## <strong>Een adaptief formulier maken</strong> {#strong-create-an-adaptive-form-strong}
+<span class="preview"> In dit artikel wordt een oudere aanpak van Adaptive Forms beschreven. Adobe raadt u aan [Adaptieve Forms Core-componenten](/help/forms/using/create-an-adaptive-form-core-components.md) om nieuwe formulieren te maken. Deze componenten vertegenwoordigen een [aanzienlijke vooruitgang bij de totstandbrenging van adaptieve Forms](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html), zorgen voor indrukwekkende gebruikerservaring.</span>
+
+## Een adaptief formulier maken {#strong-create-an-adaptive-form-strong}
 
 Ga als volgt te werk om een adaptief formulier te maken.
 

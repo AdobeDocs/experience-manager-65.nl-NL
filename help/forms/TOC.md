@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.5 Handleiding voor formulieren
 breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
-source-git-commit: daf97f3d5c5f3c92ff5caeccff583e54f3f57364
+source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
 workflow-type: tm+mt
-source-wordcount: '3881'
+source-wordcount: '3889'
 ht-degree: 0%
 
 ---
@@ -127,6 +127,7 @@ ht-degree: 0%
    + [Inleiding tot AEM Forms Data Integration](using/data-integration.md)
    + [Gegevensbronnen configureren](using/configure-data-sources.md)
    + [Configuratie Microsoft Dynamics Odata](using/ms-dynamics-odata-configuration.md)
+   + [Salesforce-integratie met OAuth 2.0-clientverificatiegegevens](/help/forms/using/oauth2-client-credentials-flow-for-server-to-server-integration.md)
    + [Formuliergegevensmodel maken](using/create-form-data-models.md)
    + [Werken met formuliergegevensmodel](using/work-with-form-data-model.md)
    + [Formuliergegevensmodel gebruiken](using/using-form-data-model.md)
@@ -478,7 +479,7 @@ ht-degree: 0%
       + [Adobe PDF-instellingen configureren](/help/forms/using/admin-help/configuring-pdf-settings.md)
       + [Beveiligingsinstellingen configureren](/help/forms/using/admin-help/configuring-security-settings.md)
       + [Instellingen voor bestandstypen configureren](/help/forms/using/admin-help/configuring-file-type-settings.md)
-      + [Configuratiebestanden van PDF Generatoren importeren en exporteren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
+      + [PDF Generator-configuratiebestanden importeren en exporteren](/help/forms/using/admin-help/importing-exporting-pdf-generator-configuration.md)
       + [Ondersteuning voor PDF/A inschakelen](/help/forms/using/admin-help/enable-pdf-a-support.md)
       + [Een PDFG-netwerkprinter instellen (alleen Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Terugvallettertypen configureren](/help/forms/using/admin-help/configuring-fallback-fonts.md)
@@ -567,7 +568,7 @@ ht-degree: 0%
       + [Back-ups maken van de AEM formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md)
       + [Back-up- en herstelstrategie voor AEM formulieren](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [Beperkingen voor back-up van PDF Generatoren](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [PDF Generator-back-upbeperkingen](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Back-upstrategieën voor gecontroleerde mappen](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [De AEM formuliergegevens herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Back-upstrategie voor Connector voor EMC Documentum gebruikers](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)

@@ -1,39 +1,35 @@
 ---
 title: Verlopen van statische objecten
-seo-title: Expiration of Static Objects
-description: Leer hoe u AEM zodanig configureert dat statische objecten niet verlopen (gedurende een redelijke periode).
-seo-description: Learn how to configure AEM so that static objects do not expire (for a reasonable period of time).
-uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
+description: Leer hoe u Adobe Experience Manager zo configureert dat statische objecten niet verlopen (gedurende een redelijke periode).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '416'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
 # Verlopen van statische objecten{#expiration-of-static-objects}
 
-Statische objecten (bijvoorbeeld pictogrammen) veranderen niet. Daarom moet het systeem zo worden geconfigureerd dat zij niet (gedurende een redelijke periode) verlopen en zo onnodig verkeer verminderen.
+Statische objecten (bijvoorbeeld pictogrammen) veranderen niet. Daarom moet het systeem zo worden geconfigureerd dat zij niet verlopen (voor een redelijke periode) en zo onnodig verkeer verminderen.
 
 Dit heeft het volgende effect:
 
 * Offloadt aanvragen van de serverinfrastructuur.
 * Hiermee verbetert u de prestaties van het laden van pagina&#39;s, aangezien de browser objecten in het cachegeheugen van de browser opslaat.
 
-Verlopen worden gespecificeerd door de HTTP-standaard met betrekking tot &quot;vervaldatum&quot; van bestanden (zie bijvoorbeeld hoofdstuk 14.21 van [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd. dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole op de oorspronkelijke server wordt uitgevoerd.
+De vervaldatums worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldatum&quot;van dossiers (bijvoorbeeld, zie hoofdstuk 14.21 van [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd. dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole op de oorspronkelijke server wordt uitgevoerd.
 
 >[!NOTE]
 >
->Deze configuratie staat volledig los van (en werkt niet voor) de Dispatcher.
+>Deze configuratie staat los van (en werkt niet voor) de Dispatcher.
 >
->Het doel van de Dispatcher is om gegevens vóór AEM in cache te plaatsen.
+>Het doel van de Dispatcher is om gegevens voor Adobe Experience Manager (AEM) in het cachegeheugen op te slaan.
 
 Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, kunnen en moeten in cache worden geplaatst. De configuratie voor de Apache HTTPD-server kan er als volgt uitzien - afhankelijk van de omgeving:
 
@@ -77,7 +73,7 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
 
    Hierdoor kan de tussenliggende cache (bijvoorbeeld de browsercache) maximaal één dag CSS-, JavaScript-, PNG- en GIF-bestanden opslaan in clientcaches. Hoewel dit voorbeeld algemene instellingen voor alles hieronder illustreert `/content` en `/etc/designs`, moet u het korter maken.
 
-   Afhankelijk van hoe vaak uw site wordt bijgewerkt, kunt u ook overwegen HTML-pagina&#39;s in cache te plaatsen. Een redelijke termijn zou 1 uur zijn:
+   Afhankelijk van hoe vaak uw site wordt bijgewerkt, kunt u ook overwegen HTML-pagina&#39;s in cache te plaatsen. Een redelijke termijn is één uur:
 
    ```xml
    <Location /content>

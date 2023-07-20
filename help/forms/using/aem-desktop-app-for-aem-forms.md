@@ -1,27 +1,24 @@
 ---
-title: Desktop-app AEM voor AEM Forms
-seo-title: AEM desktop app for AEM Forms
-description: Desktop-app AEM voor AEM Forms
-uuid: 99e0f2fb-8623-45bb-8e2e-5c5d6f482366
+title: Adobe Experience Manager (AEM) desktop app voor AEM Forms
+description: Adobe Experience Manager (AEM) desktop app voor AEM Forms
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: manage
-discoiquuid: c30332b6-e012-442d-8e84-28832c116c7b
 noindex: true
 role: Admin
 exl-id: b87e07b1-4a19-4888-bad0-c0f5327b9ad3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# Desktop-app AEM voor AEM Forms {#aem-desktop-app-for-aem-forms}
+# Adobe Experience Manager (AEM) desktop app voor AEM Forms {#aem-desktop-app-for-aem-forms}
 
 Met AEM bureaubladtoepassing kunt u de gegevensopslagruimte van Adobe Experience Manager (AEM) en de binaire bestanden van AEM Forms toewijzen aan een netwerkmap op uw systeem. U kunt de gesynchroniseerde elementen en binaire bestanden weergeven in een bestandsverkenner en verschillende apps gebruiken om de bestanden naar wens te bewerken. Behalve het bekijken van de bestanden kunt u ook binaire bestanden maken, uploaden en verwijderen. U kunt bestanden ook rechtstreeks vanuit de software openen, bewerken en opslaan. U kunt bijvoorbeeld een XDP-bestand rechtstreeks vanuit Designer openen en bewerken. De wijzigingen die u lokaal aanbrengt in de elementen worden weerspiegeld in de AEM Assets-opslagplaats en de gebruikersinterface van AEM Forms.
 
-U kunt de app downloaden van een AEM. Ga voor gedetailleerde informatie over het downloaden van de app naar [Opmerkingen bij de release AEM bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/release-notes.html).
+U kunt de app downloaden van een AEM. Ga voor gedetailleerde informatie over het downloaden van de app naar [Opmerkingen bij de release AEM bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/release-notes.html?lang=en).
 
 ## AEM Forms-middelen die worden ondersteund in AEM bureaubladtoepassing {#aem-forms-assets-supported-in-aem-desktop-app}
 

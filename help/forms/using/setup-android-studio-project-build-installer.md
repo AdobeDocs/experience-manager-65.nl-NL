@@ -1,26 +1,22 @@
 ---
-title: Het Android-studioproject instellen en de Android-app ontwikkelen
-seo-title: Set up the Android studio project and build the Android app
-description: Stappen om het Android Studio-project in te stellen en het installatieprogramma voor de AEM Forms-app te maken
-seo-description: Steps to set up the Android Studio project and build the installer for the AEM Forms app
-uuid: 4c966cdc-d0f5-4b5b-b21f-f11e8a35ec8a
+title: Android&trade instellen; studioproject en bouw de Android&handel; app
+description: Stappen voor het instellen van de Android&trade. Studio-project en bouw het installatieprogramma voor de Adobe Experience Manager (AEM) Forms-app
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: forms-app
-discoiquuid: fabc981e-0c9e-4157-b0a1-0c13717fb6cd
 exl-id: 47d6af00-34d8-4e5d-8117-86fc1b6f58cb
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '566'
+source-wordcount: '573'
 ht-degree: 0%
 
 ---
 
-# Het Android-studioproject instellen en de Android-app ontwikkelen {#set-up-the-android-studio-project-and-build-the-android-app}
+# Het Android™-studioproject instellen en de Android™-app ontwikkelen {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Dit artikel is bedoeld voor het maken van de AEM Forms App 6.3.1.1 en latere versies. Ga voor het maken van een app met broncode van de AEM Forms App 6.3 naar [Het Eclipse-project instellen en de Android™-app ontwikkelen](/help/forms/using/setup-eclipse-project-build-installer.md).
+Dit artikel is bedoeld voor het maken van de AEM Forms App 6.3.1.1 en latere versies. Voor het maken van een app op basis van de broncode van de AEM Forms App 6.3 raadpleegt u [Het Eclipse-project instellen en de Android™-app ontwikkelen](/help/forms/using/setup-eclipse-project-build-installer.md).
 
-AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over softwaredistributie.
+AEM Forms geeft de volledige broncode van de AEM Forms-app op. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` maakt deel uit van de `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket over softwaredistributie.
 
 Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
@@ -49,27 +45,27 @@ In de volgende afbeelding wordt de mapstructuur van de `android`in de `src`map.
 
 1. Het gedownloade bestand kopiëren `adobe-lc-mobileworkspace-src-<version>.zip` archiveren tot:
 
-   **Voor MAC-gebruikers**: `[User_Home]/Projects`
+   **Voor Mac-gebruikers**: `[User_Home]/Projects`
 
    **Voor Windows®-gebruikers**: `%HOMEPATH%\Projects`
 
    >[!NOTE]
    >
-   >Voor Windows® is het raadzaam het android-project op de systeemschijf te houden.
+   >Voor Windows® is het raadzaam het Android™-project op de systeemschijf te houden.
 
 1. Extraheer het archief in de volgende map:
 
-   **Voor MAC-gebruikers**: `[User_Home]/Projects/[your-project]`
+   **Voor Mac-gebruikers**: `[User_Home]/Projects/[your-project]`
 
    **Voor Windows®-gebruikers**: `%HOMEPATH%\Projects\[your-project]`
 
    >[!NOTE]
    >
-   >Het wordt aanbevolen dat u het geëxtraheerde android-project in de systeemschijf bewaart voordat u het project importeert in Android Studio.
+   U wordt aangeraden het geëxtraheerde Android-project op de systeemschijf te houden voordat u het project importeert in Android™ Studio.
 
 1. Start Android™ Studio.
 
-   **Voor MAC-gebruikers**: Werk de `local.properties` bestand aanwezig in `[User_Home]/Projects/[your-project]/android` map en wijs de `sdk.dir` variabele tot `SDK` locatie op uw bureaublad.
+   **Voor Mac-gebruikers**: Werk de `local.properties` bestand aanwezig in `[User_Home]/Projects/[your-project]/android` map en wijs de `sdk.dir` variabele tot `SDK` locatie op uw bureaublad.
 
    **Voor Windows®-gebruikers**: Werk de `local.properties` bestand aanwezig in `%HOMEPATH%\Projects\[your-project]\android` map en wijs de `sdk.dir` variabele tot `SDK` locatie op uw bureaublad.
 
@@ -102,8 +98,8 @@ Nadat u het project hebt gemaakt, kunt u de toepassing installeren met Android�
 
 ### Android™ Debug Bridge gebruiken {#andriod-debug-bridge}
 
-U kunt de toepassing installeren op een Android™-apparaat via het dialoogvenster [Android™ Debug Bridge](https://developer.android.com/tools/help/adb.html) met de volgende opdracht:
+U kunt de toepassing via de [Android™ Debug Bridge](https://developer.android.com/tools/adb) met de volgende opdracht:
 
-**Voor MAC-gebruikers**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**Voor Mac-gebruikers**: `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
 
 **Voor Windows®-gebruikers**: `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`

@@ -1,16 +1,14 @@
 ---
 title: Basisverwerking
-description: Een overzicht van basisbehandeling wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de console van Plaatsen als basis.
-uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
+description: Een overzicht van de basisafhandeling bij gebruik van de Adobe Experience Manager-auteuromgeving. Het gebruikt de console van Plaatsen als basis.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -19,17 +17,17 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->* Deze pagina is ontworpen om een overzicht van basisbehandeling te geven wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de **Sites** console als basis.
+>* Deze pagina is ontworpen om een overzicht te geven van de basisafhandeling bij gebruik van de Adobe Experience Manager (AEM)-auteursomgeving. Het gebruikt de **Sites** console als basis.
 >
->* Bepaalde functionaliteit is niet in alle consoles beschikbaar en/of in sommige consoles is aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
+>* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit wordt meer in detail besproken op andere pagina&#39;s.
 >* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles gebruiken](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md).
 >
 
 ## Het welkomstscherm {#the-welcome-screen}
 
-De klassieke UI verstrekt een selectie van consoles, die bekende mechanismen gebruiken om te navigeren en acties in werking te stellen, met inbegrip van klik, tweemaal klikken en [contextmenu&#39;s](#context-menus).
+De klassieke UI verstrekt een selectie van consoles, gebruikend bekende mechanismen voor het navigeren en het in werking stellen van acties, met inbegrip van klik, tweemaal klikken, en [contextmenu&#39;s](#context-menus).
 
-Bij aanmelding wordt het welkomstscherm weergegeven, met een lijst koppelingen naar consoles en services:
+Na aanmelding wordt het welkomstscherm weergegeven. Het verstrekt een lijst van verbindingen aan consoles en de diensten:
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -53,11 +51,11 @@ De belangrijkste consoles zijn:
   </tr>
   <tr>
    <td><strong>Lanceringen</strong></td>
-   <td>Hierdoor kunt u uw <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanceringen</a>; Hiermee kunt u de inhoud ontwikkelen voor een toekomstige release van een of meer geactiveerde webpagina's.<br /> <i>Opmerking: In de interface met aanraakbediening is veel van dezelfde functionaliteit beschikbaar in de Sites-console, samen met de References-rail.</i> <i>Indien vereist, is deze console beschikbaar bij de console van Hulpmiddelen; Selecteer Bewerkingen en vervolgens Starten.</i></td>
+   <td>Hierdoor kunt u uw <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanceringen</a>; Hiermee kunt u de inhoud ontwikkelen voor een toekomstige release van een of meer geactiveerde webpagina's.<br /> <i>Opmerking: In de interface met aanraakbediening is veel van dezelfde functionaliteit beschikbaar in de Sites-console, samen met de References-rail.</i> <i>Indien nodig, is deze console beschikbaar bij de console van Hulpmiddelen; Selecteer Bewerkingen en vervolgens Starten.</i></td>
   </tr>
   <tr>
    <td><strong>Inbox </strong></td>
-   <td>In veel gevallen is een aantal mensen betrokken bij de subtaken van een werkstroom en moet elke persoon zijn stap voltooien voordat het werk aan de volgende persoon wordt uitgeleverd. Met het Postvak IN kunt u meldingen met betrekking tot dergelijke taken weergeven. Zie <a href="/help/sites-administering/workflows.md">Werken met workflows</a>. <br /> </td>
+   <td>Vaak zijn verschillende personen betrokken bij de subtaken van een werkstroom en moet elke persoon zijn stap voltooien voordat het werk aan de volgende persoon wordt overgedragen. Met het Postvak IN kunt u meldingen met betrekking tot dergelijke taken weergeven. Zie <a href="/help/sites-administering/workflows.md">Werken met workflows</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Tags</strong></td>
@@ -65,7 +63,7 @@ De belangrijkste consoles zijn:
   </tr>
   <tr>
    <td><strong>Gereedschappen</strong></td>
-   <td>De <a href="/help/sites-administering/tools-consoles.md">Gereedschapsconsoles</a> toegang bieden tot een aantal gespecialiseerde tools en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.</td>
+   <td>De <a href="/help/sites-administering/tools-consoles.md">Gereedschapsconsoles</a> biedt toegang tot verschillende gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.</td>
   </tr>
   <tr>
    <td><strong>Gebruikers</strong></td>
@@ -77,7 +75,7 @@ De belangrijkste consoles zijn:
   </tr>
   <tr>
    <td><strong>Workflows</strong></td>
-   <td>Een workflow is een gedefinieerde reeks stappen die het voltooien van een taak beschrijft. In veel gevallen is een aantal mensen betrokken bij een taak en moet elke persoon zijn stap voltooien voordat hij het werk aan de volgende persoon overdraagt. Met de workflowconsole kunt u workflowmodellen maken en actieve workflowinstanties beheren. Zie <a href="/help/sites-administering/workflows.md">Werken met workflows</a>.<br /> </td>
+   <td>Een workflow is een gedefinieerde reeks stappen die het voltooien van een taak beschrijft. Vaak zijn meerdere personen betrokken bij een taak en moet elke persoon zijn stap voltooien voordat hij het werk aan de volgende persoon overdraagt. Met de workflowconsole kunt u workflowmodellen maken en actieve workflowinstanties beheren. Zie <a href="/help/sites-administering/workflows.md">Werken met workflows</a>.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -88,11 +86,11 @@ De **Websites** De console verstrekt twee ruiten voor u om uw pagina&#39;s te na
 
   Dit toont de boomstructuur van uw websites en de pagina&#39;s binnen die websites.
 
-  Het toont ook informatie over andere aspecten of AEM, met inbegrip van projecten, blauwdrukken en activa.
+  Het toont ook informatie over andere aspecten of AEM, met inbegrip van projecten, blauwdrukken, en activa.
 
 * Rechtervenster
 
-  Hiermee worden de pagina&#39;s weergegeven (op de locatie die in het linkervenster is geselecteerd) en kunnen handelingen worden uitgevoerd.
+  Hier worden de pagina&#39;s weergegeven (op de locatie die in het linkervenster is geselecteerd) en u kunt deze gebruiken om actie te ondernemen.
 
 Vanaf hier kunt u [uw pagina&#39;s beheren](/help/sites-authoring/managing-pages.md) met de werkbalk, een contextmenu of door een pagina voor verdere handelingen te openen.
 
@@ -104,28 +102,28 @@ Vanaf hier kunt u [uw pagina&#39;s beheren](/help/sites-authoring/managing-pages
 
 ## Toegang tot Help {#accessing-help}
 
-Op verschillende consoles (bijvoorbeeld Websites) is er ook **Help** -knop beschikbaar is, wordt Pakket delen of de documentatiesite geopend.
+Op verschillende consoles (bijvoorbeeld Websites) wordt een **Help** is beschikbaar. Klikken **Help** Hiermee opent u Package Share of de documentatiesite.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png)
 
-Wanneer u een pagina bewerkt, [sidekick heeft ook een knop om hulp te zoeken](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
+Wanneer u een pagina bewerkt, wordt [sidekick heeft ook een knop om hulp te zoeken](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#accessing-help).
 
 ## Navigeren met de websiteconsole {#navigating-with-the-websites-console}
 
 De **Websites** De console maakt een lijst van uw pagina&#39;s van inhoud in een boomstructuur (linkerruit). Voor het gemak van navigatie, kunnen de secties van de boomstructuur worden uitgebreid (+) of worden doen ineenstorten (-) zoals vereist:
 
-* Een enkele klik op de paginanaam (in het linkerdeelvenster):
+* Als u in het linkerdeelvenster op de paginanaam klikt, gebeurt het volgende:
 
-   * De onderliggende pagina&#39;s weergeven in het rechterdeelvenster
-   * Vouw ook de structuur in het linkerdeelvenster uit.
+   * Hiermee geeft u de onderliggende pagina&#39;s in het rechterdeelvenster weer
+   * Breidt de structuur in de linkerruit uit.
 
-     Om redenen van prestaties is deze actie afhankelijk van het aantal kindknopen. Met een standaardinstallatie werkt deze methode van uitbreiding wanneer er zijn `30` of minder onderliggende knooppunten.
+     Om redenen van prestaties, hangt deze actie van het aantal kindknopen af. Met een standaardinstallatie, werkt deze methode van uitbreiding wanneer er zijn `30` of minder onderliggende knooppunten.
 
-* Als u dubbelklikt op de naam van de pagina (linkerdeelvenster), wordt de structuur ook uitgebreid, hoewel dit effect niet zo duidelijk is wanneer de pagina tegelijkertijd wordt geopend.
+* Als u dubbelklikt op de paginanaam (linkerdeelvenster), wordt de structuur uitgebreid, hoewel dit effect niet zo duidelijk is wanneer de pagina tegelijkertijd wordt geopend.
 
 >[!NOTE]
 >
->Deze standaardwaarde ( `30`) kan per console worden gewijzigd in de specifieke configuraties van de sitebeheerwidget:
+>Deze standaardwaarde ( `30`) kan per console worden gewijzigd in uw toepassingsspecifieke configuraties van de sitebeheerwidget:
 >
 >Op het knooppunt voor sitebeheer:
 >
@@ -140,7 +138,7 @@ De **Websites** De console maakt een lijst van uw pagina&#39;s van inhoud in een
 >in:
 >`/apps/cq/ui/widgets/themes/default/widgets/wcm/SiteAdmin.js`
 >
->Zie [SiteAdmin in de CQ-widget-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.SiteAdmin) voor meer informatie .
+>Zie [SiteAdmin in de CQ-widget-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html?class=CQ.wcm.SiteAdmin) voor meer informatie .
 
 ## Pagina-informatie op de websiteconsole {#page-information-on-the-websites-console}
 
@@ -182,7 +180,7 @@ Het volgende is beschikbaar: een subset van deze velden wordt standaard weergege
   </tr>
   <tr>
    <td>Status</td>
-   <td>Geeft de huidige status van de pagina aan, bijvoorbeeld of de pagina deel uitmaakt van een workflow of een live kopie, of dat een pagina momenteel is vergrendeld.</td>
+   <td>Hiermee wordt de status van de pagina aangegeven, bijvoorbeeld of de pagina deel uitmaakt van een workflow of een live kopie, of dat een pagina is vergrendeld.</td>
   </tr>
   <tr>
    <td>Impressies</td>
@@ -209,7 +207,7 @@ Het volgende is beschikbaar: een subset van deze velden wordt standaard weergege
 
 >[!NOTE]
 >
->Als u de zichtbare kolommen wilt selecteren, plaatst u de muis boven een kolomtitel. Er wordt een vervolgkeuzemenu weergegeven. Hiervanaf kunt u de opdracht **Kolommen** optie.
+>Als u de kolommen zichtbaar wilt selecteren, plaatst u de muis boven een kolomtitel. Er wordt een vervolgkeuzemenu weergegeven. Vanaf dit punt kunt u de opdracht **Kolommen** optie.
 
 De kleuren naast de pagina&#39;s in het dialoogvenster **Gepubliceerd** en **Gewijzigd** kolommen geven de publicatiestatus aan:
 
@@ -224,6 +222,6 @@ De kleuren naast de pagina&#39;s in het dialoogvenster **Gepubliceerd** en **Gew
 
 ## Contextmenu&#39;s {#context-menus}
 
-In de klassieke gebruikersinterface worden bekende mechanismen gebruikt voor het navigeren en starten van handelingen, waaronder klikken en dubbelklikken. Afhankelijk van de huidige situatie, zijn een waaier van contextmenu&#39;s (gewoonlijk geopend met de juiste-muis-knoop) ook beschikbaar:
+In de klassieke gebruikersinterface worden bekende mechanismen gebruikt voor het navigeren en starten van handelingen, waaronder klikken en dubbelklikken. Afhankelijk van de huidige situatie is er ook een reeks contextmenu&#39;s beschikbaar (geopend met de rechtermuisknop):
 
 ![chlimage_1-11](assets/chlimage_1-11a.png)

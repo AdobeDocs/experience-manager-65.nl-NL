@@ -8,7 +8,8 @@ user-guide-title: Adobe Experience Manager 6.5 Handleiding voor formulieren
 breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
-source-git-commit: 91683330024fbf1059715447073f35cecde45b0a
+feature: Forms Service
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '3889'
 ht-degree: 0%
@@ -484,7 +485,7 @@ ht-degree: 0%
       + [Een PDFG-netwerkprinter instellen (alleen Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)
       + [Terugvallettertypen configureren](/help/forms/using/admin-help/configuring-fallback-fonts.md)
       + [De conversie-instellingen voor PDF exporteren wijzigen](/help/forms/using/admin-help/modifying-pdf-export-conversion-settings.md)
-      + [Bestanden converteren met PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
+      + [Bestanden omzetten met PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md)
    + SSL configureren {#configure-ssl}
       + [Overzicht van het configureren van SSL](/help/forms/using/admin-help/overview-6.md)
       + [SSL configureren voor JBoss Application Server](/help/forms/using/admin-help/configuring-ssl-jboss-application-server.md)
@@ -568,7 +569,7 @@ ht-degree: 0%
       + [Back-ups maken van de AEM formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md)
       + [Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld](/help/forms/using/admin-help/files-back-recover.md)
       + [Back-up- en herstelstrategie voor AEM formulieren](/help/forms/using/admin-help/backup-recovery-strategy-aem-forms.md)
-      + [PDF Generator-back-upbeperkingen](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
+      + [Beperkingen voor back-up van PDF Generatoren](/help/forms/using/admin-help/pdf-generator-backup-limitations.md)
       + [Back-upstrategieën voor gecontroleerde mappen](/help/forms/using/admin-help/backup-strategies-watched-folders.md)
       + [De AEM formuliergegevens herstellen](/help/forms/using/admin-help/recovering-aem-forms-data.md)
       + [Back-upstrategie voor Connector voor EMC Documentum gebruikers](/help/forms/using/admin-help/backup-strategy-connector-emc-documentum.md)

@@ -6,7 +6,9 @@ audience: end-user
 user-guide-title: Handleiding voor assets
 breadcrumb-title: Handleiding voor assets
 user-guide-description: Maak, beheer, verwerk en distribueer digitale middelen.
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+role: User
+feature: Asset Management
+source-git-commit: fc148a5f5e0fcaac2980dc73004fa92ac3b91fb3
 workflow-type: tm+mt
 source-wordcount: '723'
 ht-degree: 15%

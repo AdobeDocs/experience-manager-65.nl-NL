@@ -1,18 +1,14 @@
 ---
 title: ContextHub uitbreiden
-seo-title: Extending ContextHub
 description: Bepaal nieuwe types van opslag ContextHub en modules wanneer de verstrekte niet aan uw oplossingsvereisten voldoen
-seo-description: Define new types of ContextHub stores and modules when the ones provided do not meet your solution requirements
-uuid: 1d80c01d-ec5d-4e76-849d-bec0e1c3941a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 exl-id: 41898fa7-a369-4c63-8ccb-69eb3fa146a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '650'
+source-wordcount: '637'
 ht-degree: 0%
 
 ---
@@ -23,9 +19,9 @@ Bepaal nieuwe types van opslag ContextHub en modules wanneer de verstrekte niet 
 
 ## Aangepaste winkelkandidaten maken {#creating-custom-store-candidates}
 
-ContextHub-winkels worden gemaakt van geregistreerde winkelkandidaten. Als u een aangepast archief wilt maken, moet u een winkelkandidaat maken en registreren.
+ContextHub-winkels worden gemaakt van geregistreerde winkelkandidaten. Als u een aangepaste winkel wilt maken, maakt en registreert u een winkelkandidaat.
 
-Het javascript-bestand dat de code bevat die de winkelkandidaat maakt en registreert, moet in een [clientbibliotheekmap](/help/sites-developing/clientlibs.md#creating-client-library-folders). De categorie van de map moet overeenkomen met het volgende patroon:
+Het JavaScript-bestand dat de code bevat waarmee de winkelkandidaat wordt gemaakt en geregistreerd, moet worden opgenomen in een [clientbibliotheekmap](/help/sites-developing/clientlibs.md#creating-client-library-folders). De categorie van de map moet overeenkomen met het volgende patroon:
 
 ```xml
 contexthub.store.[storeType]
@@ -42,7 +38,7 @@ Als u een winkelkandidaat wilt maken, gebruikt u de opdracht [`ContextHub.Utils.
 * [` ContextHub.Store.JSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-jsonpstore)
 * [` ContextHub.Store.PersistedJSONPStore`](/help/sites-developing/contexthub-api.md#contexthub-store-persistedjsonpstore)
 
-Merk op dat elke basisopslag de [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) opslaan.
+Elke basisopslag breidt het [`ContextHub.Store.Core`](/help/sites-developing/contexthub-api.md#contexthub-store-core) opslaan.
 
 In het volgende voorbeeld wordt de eenvoudigste extensie van de `ContextHub.Store.PersistedStore` opslagkandidaat:
 
@@ -51,7 +47,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-Realistisch, zullen uw kandidaten van de douaneopslag extra functies bepalen of zullen de aanvankelijke configuratie van de opslag met voeten treden. Meerdere [voorbeeldopslagkandidaten](/help/sites-developing/ch-samplestores.md) zijn hieronder geïnstalleerd in de opslagplaats `/libs/granite/contexthub/components/stores`. Als u van deze voorbeelden wilt leren, gebruikt u CRXDE Lite om de JavaScript-bestanden te openen.
+Realistisch, bepalen uw kandidaten van de douaneopslag extra functies of treden de aanvankelijke configuratie van de opslag met voeten. Meerdere [voorbeeldopslagkandidaten](/help/sites-developing/ch-samplestores.md) zijn hieronder geïnstalleerd in de opslagplaats `/libs/granite/contexthub/components/stores`. Als u van deze voorbeelden wilt leren, gebruikt u CRXDE Lite om de JavaScript-bestanden te openen.
 
 ### Registreren van een ContextHub Store-kandidaat {#registering-a-contexthub-store-candidate}
 
@@ -66,19 +62,19 @@ ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
                                 'contexthub.mystorecandidate', 0);
 ```
 
-In de meeste gevallen is slechts één kandidaat nodig en kan de prioriteit worden ingesteld op `0`, maar als je geïnteresseerd bent, kun je meer weten over [meer geavanceerde registraties,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) dat één van weinig opslagimplementaties toestaat om op javascript voorwaarde worden gekozen (`applies`) en kandidaat-prioriteit.
+Gewoonlijk is slechts één kandidaat nodig en kan de prioriteit worden ingesteld op `0`. Maar als je geïnteresseerd bent, kun je meer weten over [meer geavanceerde registraties,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) waarbij een van de weinige opslagimplementaties kan worden gekozen op basis van de JavaScript-voorwaarde (`applies`) en kandidaat-prioriteit.
 
 ## ContextHub UI-moduletypen maken {#creating-contexthub-ui-module-types}
 
-Creeer de types van de module van douane UI wanneer degenen die zijn [geïnstalleerd met ContextHub](/help/sites-developing/ch-samplemodules.md) voldoet niet aan uw vereisten. Als u een type UI-module wilt maken, maakt u een nieuwe UI-modulerenderer door het dialoogvenster `ContextHub.UI.BaseModuleRenderer` en registreert deze vervolgens met `ContextHub.UI`.
+Creeer de types van de module van douane UI wanneer degenen die zijn [geïnstalleerd met ContextHub](/help/sites-developing/ch-samplemodules.md) voldoet niet aan uw vereisten. Als u een type UI-module wilt maken, maakt u een renderer voor een UI-module door het dialoogvenster `ContextHub.UI.BaseModuleRenderer` en registreert deze vervolgens met `ContextHub.UI`.
 
-Als u een UI-modulerrenderer wilt maken, maakt u een `Class` object dat de logica bevat die de UI-module rendert. De klasse moet minimaal de volgende handelingen uitvoeren:
+Als u een renderer voor een UI-module wilt maken, maakt u een `Class` object dat de logica bevat die de UI-module rendert. De klasse moet minimaal de volgende handelingen uitvoeren:
 
 * Breid uit `ContextHub.UI.BaseModuleRenderer` klasse. Deze klasse is de basisimplementatie voor alle UI modulerenderers. De `Class` object definieert een eigenschap met de naam `extend` die u gebruikt om deze klasse te benoemen als de klasse die wordt uitgebreid.
 
 * Geef een standaardconfiguratie op. Een `defaultConfig` eigenschap. Deze eigenschap is een object dat de eigenschappen bevat die zijn gedefinieerd voor de [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) UI-module en andere eigenschappen die u nodig hebt.
 
-De bron voor `ContextHub.UI.BaseModuleRenderer` bevindt zich in /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.  Als u de renderer wilt registreren, gebruikt u de [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) methode `ContextHub.UI` klasse. U moet een naam voor het moduletype verstrekken. Wanneer beheerders een UI-module maken op basis van deze renderer, geven ze deze naam op.
+De bron voor `ContextHub.UI.BaseModuleRenderer` bevindt zich in /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js. Als u de renderer wilt registreren, gebruikt u de [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) methode `ContextHub.UI` klasse. Geef een naam op voor het moduletype. Wanneer beheerders een UI-module maken op basis van deze renderer, geven ze deze naam op.
 
 Maak en registreer de rendererklasse in een automatisch uitgevoerde anonieme functie. Het volgende voorbeeld is gebaseerd op de broncode voor de module van contexthub.browserinfo UI. Deze UI-module is een eenvoudige uitbreiding van de `ContextHub.UI.BaseModuleRenderer` klasse.
 
@@ -107,7 +103,7 @@ Maak en registreer de rendererklasse in een automatisch uitgevoerde anonieme fun
 }());
 ```
 
-Het javascript-bestand dat de code bevat waarmee de renderer wordt gemaakt en geregistreerd, moet in een [clientbibliotheekmap](/help/sites-developing/clientlibs.md#creating-client-library-folders). De categorie van de map moet overeenkomen met het volgende patroon:
+Het JavaScript-bestand dat de code bevat waarmee de renderer wordt gemaakt en geregistreerd, moet worden opgenomen in een [clientbibliotheekmap](/help/sites-developing/clientlibs.md#creating-client-library-folders). De categorie van de map moet overeenkomen met het volgende patroon:
 
 ```xml
 contexthub.module.[moduleType]

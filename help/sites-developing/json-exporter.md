@@ -1,16 +1,12 @@
 ---
 title: JSON-exportfunctie voor services voor inhoud
-seo-title: JSON Exporter for Content Services
 description: AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina's wordt gevestigd. Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina's zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt.
-seo-description: AEM Content Services are designed to generalize the description and delivery of content in/from AEM beyond a focus on web pages. They provide the delivery of content to channels that are not traditional AEM web pages, using standardized methods that can be consumed by any client.
-uuid: be6457b1-fa9c-4f3b-b219-01a4afc239e7
 contentOwner: User
 content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.5/SITES
-discoiquuid: 4c7e33ea-f2d3-4d69-b676-aeb50c610d70
 exl-id: 647395c0-f392-427d-a998-e9ddf722b9f9
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
 source-wordcount: '431'
 ht-degree: 2%
@@ -61,21 +57,21 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
 * Bijvoorbeeld een URL zoals:
 
-   ```shell
-   http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
-   ```
+  ```shell
+  http://localhost:4502/content/we-retail/language-masters/en/manchester-airport/jcr:content/root/responsivegrid/contentfragment.model.json
+  ```
 
 * Levert inhoud zoals:
 
-   ![chlimage_1-193](assets/chlimage_1-193.png)
+  ![chlimage_1-193](assets/chlimage_1-193.png)
 
-   >[!NOTE]
-   >
-   >U kunt [uw eigen componenten aanpassen](/help/sites-developing/json-exporter-components.md) om deze gegevens te openen en te gebruiken.
+  >[!NOTE]
+  >
+  >U kunt [uw eigen componenten aanpassen](/help/sites-developing/json-exporter-components.md) om deze gegevens te openen en te gebruiken.
 
-   >[!NOTE]
-   >
-   >Hoewel het geen standaardimplementatie is, [meerdere kiezers worden ondersteund,](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
+  >[!NOTE]
+  >
+  >Hoewel het geen standaardimplementatie is, [meerdere kiezers worden ondersteund,](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
 
 ### Aanvullende informatie {#further-information}
 

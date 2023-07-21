@@ -1,18 +1,14 @@
 ---
 title: Paginaontwerp aanpassen
-seo-title: Customizing Page Authoring
-description: AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina's kunt aanpassen
-seo-description: AEM provides various mechanisms to enable you to customize page authoring functionality
-uuid: 9dc72d98-c5ff-4a00-b367-688ccf896526
+description: Adobe Experience Manager (AEM) biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina's kunt aanpassen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '1357'
+source-wordcount: '1340'
 ht-degree: 0%
 
 ---
@@ -23,11 +19,11 @@ ht-degree: 0%
 >
 >In dit document wordt beschreven hoe u het ontwerpen van pagina&#39;s kunt aanpassen in de moderne interface met aanraakbediening. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina&#39;s kunt aanpassen (en de [consoles](/help/sites-developing/customizing-consoles-touch.md)) van de ontwerpinstantie.
+Adobe Experience Manager (AEM) biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina&#39;s (en de [consoles](/help/sites-developing/customizing-consoles-touch.md)) van de ontwerpinstantie.
 
 * Clientlibs
 
-  Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clientlib moet:
+  Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clientlib moet:
 
    * afhankelijk van de creatie clientlib `cq.authoring.editor.sites.page`
    * deel uitmaken van de `cq.authoring.editor.sites.page.hook` categorie
@@ -38,30 +34,30 @@ AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrij
 
 >[!NOTE]
 >
->Zie voor meer informatie [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html).
+>Zie voor meer informatie [JS-documentatieset](https://developer.adobe.com/experience-manager/reference-materials/6-5/jsdoc/ui-touch/editor-core/index.html).
 
 Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor het schrijven van pagina&#39;s in uw AEM uit te breiden. Een selectie wordt hieronder behandeld (op een hoog niveau).
 
 >[!NOTE]
 >
->Zie voor meer informatie:
+>Zie het volgende voor meer informatie:
 >
 >* Gebruiken en maken [clientlibs](/help/sites-developing/clientlibs.md).
 >* Gebruiken en maken [bedekkingen](/help/sites-developing/overlays.md).
->* [Graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
+>* [Graniet](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html)
 >* [Structuur van de interface voor AEM aanraakbediening](/help/sites-developing/touch-ui-structure.md) voor meer informatie over de structuurgebieden die worden gebruikt voor het ontwerpen van pagina&#39;s.
 >
 
 
 >[!CAUTION]
 >
->U ***moet*** niets wijzigen in de `/libs` pad.
+>***Niet gebruiken*** om het even wat in `/libs` pad.
 >
->Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden is dat de inhoud van `/libs` wordt overschreven, de volgende keer u uw exemplaar (en kan goed worden beschreven wanneer u of hotfix of eigenschapspak toepast) bevordert.
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
+>1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
 >1. Breng wijzigingen aan in `/apps`
 
 ## Nieuwe laag toevoegen (modus) {#add-new-layer-mode}
@@ -70,9 +66,9 @@ Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring
 
 ### Voorbeeld van laag: Status van live kopiëren {#layer-example-live-copy-status}
 
-Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens die betrekking hebben op [beheer van meerdere sites](/help/sites-administering/msm.md) en markeert deze in de laag.
+Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens die betrekking hebben op [multisite beheer](/help/sites-administering/msm.md) en markeert deze in de laag.
 
-Als u deze in actie wilt zien, kunt u [We.Kopie in de detailhandel](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (of een andere live kopiëren pagina) en selecteer de **Status van live kopiëren** in.
+Als u het wilt zien in actie, kunt u [We.Kopie in de detailhandel](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (of een andere live kopiëren pagina) en selecteer de **Status van live kopiëren** in.
 
 U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
@@ -80,7 +76,7 @@ U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
 ### Codevoorbeeld {#code-sample}
 
-Dit is een steekproefpakket dat toont hoe te om een nieuwe laag (wijze) tot stand te brengen, die een nieuwe laag voor mening MSM is.
+Dit is een steekproefpakket dat toont hoe te om een laag (wijze) tot stand te brengen, die een nieuwe laag voor mening MSM is.
 
 CODE VOOR GITHUB
 
@@ -91,11 +87,11 @@ U kunt de code van deze pagina op GitHub vinden
 
 ## Nieuwe selectiecategorie toevoegen aan de middelenbrowser {#add-new-selection-category-to-asset-browser}
 
-In de middelenbrowser worden elementen van verschillende typen/categorieën weergegeven (bijvoorbeeld afbeeldingen, documenten, enz.). De activa kunnen ook door deze activacategorieën worden gefiltreerd.
+In de middelenbrowser worden elementen van verschillende typen/categorieën weergegeven (bijvoorbeeld afbeeldingen en documenten). De activa kunnen ook door deze activacategorieën worden gefiltreerd.
 
 ### Codevoorbeeld {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` Dit is een voorbeeldpakket dat aangeeft hoe u een nieuwe groep aan de zoeker van elementen kunt toevoegen. In dit voorbeeld wordt verbinding gemaakt met [Flickr](https://www.flickr.com)De openbare stroom en toont ze in het sidepanel.
+`aem-authoring-extension-assetfinder-flickr` Dit is een voorbeeldpakket dat aangeeft hoe u een groep aan de zoeker van middelen kunt toevoegen. In dit voorbeeld wordt verbinding gemaakt met [Flickr](https://www.flickr.com)s public stream en toont deze in het zijpaneel.
 
 CODE VOOR GITHUB
 
@@ -106,11 +102,11 @@ U kunt de code van deze pagina op GitHub vinden
 
 ## Bronnen filteren {#filtering-resources}
 
-Bij het ontwerpen van pagina&#39;s moet de gebruiker vaak bronnen selecteren (bijvoorbeeld pagina&#39;s, componenten, elementen, enz.). Dit kan de vorm hebben van een lijst, bijvoorbeeld van waaruit de auteur een punt moet kiezen.
+Bij het ontwerpen van pagina&#39;s moet de gebruiker vaak bronnen selecteren (bijvoorbeeld pagina&#39;s, componenten en elementen). Dit kan bijvoorbeeld de vorm aannemen van een lijst waaruit de auteur een item moet kiezen.
 
-Om de lijst tot een redelijke grootte te houden en ook relevant voor het gebruiksgeval, kan een filter in de vorm van een douane predikaat worden uitgevoerd. Als de [`pathbrowser`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/index.html) [Graniet](/help/sites-developing/touch-ui-concepts.md#granite-ui) wordt gebruikt om de gebruiker toe te staan om de weg aan een bepaalde middel te selecteren, kunnen de voorgestelde wegen op de volgende manier worden gefilterd:
+Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Als de [`pathbrowser`](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) [Graniet](/help/sites-developing/touch-ui-concepts.md#granite-ui) wordt gebruikt om de gebruiker toe te staan om de weg aan een bepaalde middel te selecteren, kunnen de voorgestelde wegen op de volgende manier worden gefilterd:
 
-* Implementeer de aangepaste voorspelling door deze te implementeren [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
+* Implementeer de aangepaste voorspelling door deze te implementeren [`com.day.cq.commons.predicate.AbstractNodePredicate`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/predicate/package-summary.html) interface.
 * Geef een naam voor de voorspelling op en verwijs deze naam naar het tabblad `pathbrowser`.
 
 Zie voor meer informatie over het maken van een aangepaste predikaat [dit artikel](/help/sites-developing/implementing-custom-predicate-evaluator.md).
@@ -157,11 +153,11 @@ In een standaard AEM-installatie:
 
          * eigenschap: `editorType`
 
-           Bepaalt het type van gealigneerde redacteur die zal worden gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijvoorbeeld: `text`, `textimage`, `image`, `title`.
+           Bepaalt het type van gealigneerde redacteur die wordt gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijvoorbeeld: `text`, `textimage`, `image`, `title`.
 
-1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knooppunten met configuraties en een `plugin` -knooppunt voor de benodigde configuratiegegevens van de plug-in.
+1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knooppunt met configuraties en een `plugin` -knooppunt voor de benodigde configuratiegegevens van de plug-in.
 
-   Hieronder ziet u een voorbeeld van het definiëren van hoogte-breedteverhoudingen voor de uitsnijdplug-in van de afbeeldingscomponent. De hoogte-breedteverhouding van het uitsnijdvak is vanwege de mogelijkheid van een zeer beperkte schermgrootte verplaatst naar de volledige schermeditor en kan daar alleen worden weergegeven.
+   Hieronder ziet u een voorbeeld van het definiëren van hoogte-breedteverhoudingen voor de uitsnijdplug-in van de afbeeldingscomponent. Vanwege de beperkte schermgrootte zijn de hoogte-breedteverhoudingen voor uitsnijden verplaatst naar de volledige schermeditor en kunnen deze alleen daar worden weergegeven.
 
    ```xml
    <cq:inplaceEditing
@@ -185,7 +181,7 @@ In een standaard AEM-installatie:
 
    >[!CAUTION]
    >
-   >Let op: in AEM uitsnijdverhoudingen, zoals ingesteld door de `ratio` eigenschap, worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De gebruikers van de auteur zullen zich niet van enig verschil bewust zijn op voorwaarde dat u bepaalt `name` duidelijk bezit aangezien dit is wat in UI wordt getoond.
+   >Uitsnijdverhoudingen AEM, zoals ingesteld door de `ratio` eigenschap, worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De gebruikers van de auteur zullen zich niet van enig verschil bewust zijn op voorwaarde dat u bepaalt `name` duidelijk bezit aangezien dit is wat in UI wordt getoond.
 
 #### Een nieuwe plaatseditor maken {#creating-a-new-in-place-editor}
 
@@ -209,7 +205,7 @@ Om een nieuwe op zijn plaats redacteur (binnen uw clientlib) uit te voeren:
 
 #### Codevoorbeeld voor het maken van een nieuwe plaatseditor {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` Dit is een voorbeeldpakket waarin wordt getoond hoe u een nieuwe interne editor in AEM kunt maken.
+`aem-authoring-extension-inplace-editor` Dit is een voorbeeldpakket waarin wordt getoond hoe u een lokale editor in AEM kunt maken.
 
 CODE VOOR GITHUB
 
@@ -245,7 +241,7 @@ De out-of-the-box workflow **Verzoek om activering**:
 
 * Anders wordt er niets weergegeven, omdat de replicatierechten zijn verwijderd.
 
-Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoek om activering** workflow:
+Voor een aangepast gedrag bij een dergelijke activering kunt u de **Verzoek om activering** workflow:
 
 1. In `/apps` bedekken de **Sites** wizard:
 

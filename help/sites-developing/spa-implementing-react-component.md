@@ -1,26 +1,22 @@
 ---
 title: Een component React implementeren voor SPA
-seo-title: Implementing a React Component for SPA
-description: Dit artikel biedt een voorbeeld van hoe u een eenvoudige, bestaande React-component kunt aanpassen aan het werk met de AEM SPA Editor.
-seo-description: This article presents an example of how to adapt a simple, existing React component to work with the AEM SPA Editor.
-uuid: ae6a0a6f-0c3c-4820-9b58-c2a85a9f5291
+description: In dit artikel wordt een voorbeeld gegeven van hoe u een eenvoudige, bestaande React-component kunt aanpassen aan de Adobe Experience Manager (AEM) SPA Editor.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6ed15763-02cc-45d1-adf6-cf9e5e8ebdb0
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
 
 # Een component React implementeren voor SPA{#implementing-a-react-component-for-spa}
 
-Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen AEM voor een site die is gebouwd met behulp van SPA frameworks.
+Toepassingen op één pagina (SPA) kunnen aantrekkelijke ervaringen bieden voor websitegebruikers. Ontwikkelaars willen sites kunnen maken met behulp van SPA frameworks en auteurs willen inhoud naadloos bewerken binnen Adobe Experience Manager (AEM) voor een site die is gebouwd met behulp van SPA frameworks.
 
 De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van SPA binnen AEM. Dit artikel biedt een voorbeeld van hoe u een eenvoudige, bestaande React-component kunt aanpassen aan het werk met de AEM SPA Editor.
 
@@ -37,9 +33,9 @@ Dit artikel illustreert het voorbeeld van de weercomponent op de Wij.Retail stee
 U moet bekend zijn met de [structuur van een SPA aanvraag voor AEM](/help/sites-developing/spa-getting-started-react.md) voordat u dit artikel leest.
 
 >[!CAUTION]
->In dit document worden de [We.Retail Journal-app](https://github.com/adobe/aem-sample-we-retail-journal) uitsluitend voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
+>In dit document worden de [We.Retail Journal-app](https://github.com/adobe/aem-sample-we-retail-journal) uitsluitend voor demonstratiedoeleinden. Gebruik het niet voor enig projectwerk.
 >
->Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
+>Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten steunt die React of Angular gebruiken en SPA SDK gebruikt.
 
 ## De component Weer {#the-weather-component}
 
@@ -63,7 +59,7 @@ De wijziging blijft bestaan en de component wordt automatisch bijgewerkt met nie
 
 ### Implementatie van weercomponent {#weather-component-implementation}
 
-De weercomponent is eigenlijk gebaseerd op een openbaar beschikbare component van de Reactie, genoemd [Geopend weefsel reageren](https://www.npmjs.com/package/react-open-weather), die is aangepast om als component binnen de Wij.Retail SPA toepassing van de steekproef van het Dagboek te werken.
+De weercomponent is gebaseerd op een openbaar beschikbare component van de Reactie, genoemd [Geopend weefsel reageren](https://www.npmjs.com/package/react-open-weather). Het is aangepast om als component binnen de Wij.Retail SPA toepassing van de steekproef van het Dagboek te werken.
 
 Hieronder vindt u fragmenten uit de NPM-documentatie van het gebruik van de component React Open Weather.
 
@@ -127,7 +123,7 @@ class Weather extends Component {
 MapTo('we-retail-journal/global/components/weather')(Weather, WeatherEditConfig);
 ```
 
-Hoewel een back-end component reeds moet bestaan, kan de front-end ontwikkelaar hefboomwerking de React Open component van het Weer in de SPA van het Dagboek van de Handel met zeer weinig codering.
+Hoewel een achterste-eindcomponent reeds moet bestaan, kan de voorste-eindontwikkelaar de React Open component van het Weer in het SPA van het Dagboek gebruiken Wij.Retail met weinig codering.
 
 ## Volgende stap {#next-step}
 

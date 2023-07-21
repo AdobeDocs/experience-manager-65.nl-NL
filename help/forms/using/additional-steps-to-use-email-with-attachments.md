@@ -2,9 +2,9 @@
 title: Extra stappen voor het ophalen van e-mail met bijlage
 description: Extra stappen voor het ophalen van e-mail met bijlage
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 2e9b9c40f54aa54a946e4320341ed4a760c56fd1
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '224'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ De gebruiker kan geen handelingen uitvoeren zoals PDF verzenden via e-mail of Bi
 
 1. Kar downloaden als [java.mail-1.0.jar](/help/forms/using/java.mail-1.0.jar) en decomprimeer het gedownloade jar-bestand om het manifestbestand te verkrijgen.
 
-1. Het manifestbestand gebruiken van `java.mail-1.0.jar` opgehaald uit Stap 1 om een nieuw douaneJar dossier tot stand te brengen zeg zoals `java.mail-1.5.jar`.
+1. Het manifestbestand gebruiken van `java.mail-1.0.jar` opgehaald uit Stap 1 om een aangepast jar-bestand te maken, bijvoorbeeld `java.mail-1.5.jar`.
 
 1. Open het manifestbestand en vervang alle exemplaren van `1.5.0` with `1.5.6` en `Bundle-Version: 1.0` with `Bundle-Version:1.5`
 
-1. Een nieuw aangepast jar maken (`java.mail-1.5.jar`) bestand met de volgende opdracht in `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` map als:
+1. Een aangepaste jar maken (`java.mail-1.5.jar`) bestand met de volgende opdracht in `C:\Adobe\Adobe_Experience_Manager_Forms\java\jdk\bin` map als:
    `jar -cfm java.mail-1.5.jar manifest.mf`
 
    In het bovenstaande bevel, *manifest.mf* de naam is van het manifestbestand en *java.mail-1.5.jar* Dit is de naam van het bestand dat wordt gemaakt nadat de bovenstaande opdracht is uitgevoerd.
@@ -35,15 +35,15 @@ De gebruiker kan geen handelingen uitvoeren zoals PDF verzenden via e-mail of Bi
 
 1. Navigeren naar `http://<server name>:<port>/lc/system/console/bundles`en verwijder de bundel met een naam als `JavaMail API (com.sun.mail.javax.mail) version 1.6.2`.
 
-1. Installeren `java.mail-1.5.jar` verkregen uit stap 3.  Met deze stap worden de verkoopeigenschappen van de JEE-implementatie opnieuw gestart. Wacht op de geïnstalleerde bundels bij `http://<server name>:<port>/lc/system/console/bundles` Status weergeven als **Actief**.
+1. Installeren `java.mail-1.5.jar` verkregen uit stap 3. Met deze stap worden de verkoopeigenschappen van de JEE-implementatie opnieuw gestart. Wacht op de geïnstalleerde bundels bij `http://<server name>:<port>/lc/system/console/bundles` Status weergeven als **Actief**.
 
-   >Opmerking: In het geval dat de status nog steeds **InActive**, opnieuw starten   **JBoss** van de **Services Console**.
+   >Opmerking: In het geval dat de status nog steeds **InActive**, opnieuw starten   **JBoss®** van de **Services Console**.
 
 
 1. Installeren `javax.mail-1.5.6.redhat-1.jar`bestand dat is gedownload met gebruik van stap 5.
 
-1. Stoppen **JBoss** van de **Services Console** en voeg de volgende eigenschappen toe **Sling.properties** bestand:
+1. Stoppen **JBoss®** van de **Services Console** en voeg de volgende eigenschappen toe **Sling.properties** bestand:
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`
    * `sling.bootdelegation.activation=javax.activation.*`
 
-1. Opnieuw starten **JBoss**.
+1. Opnieuw starten **JBoss®**.

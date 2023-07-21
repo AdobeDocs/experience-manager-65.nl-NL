@@ -1,31 +1,27 @@
 ---
 title: Twee AEM Forms-werkruimteinstanties op één server hosten
-seo-title: Hosting two AEM Forms workspace instances on one server
 description: Hoe LC-beheerders HTML WS kunnen aanpassen om twee instanties op één server te hosten die via verschillende URL's toegankelijk zijn.
-seo-description: How LC administrators can customize HTML WS to host two instances on a single server accessible via different URLs.
-uuid: 0584f512-6b92-4418-b71c-93605cfa1927
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 1254a7c2-2c67-4661-803e-afd53e817916
 exl-id: 32a546fc-e33f-46f9-ac3b-45eca0e12239
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '293'
+source-wordcount: '296'
 ht-degree: 1%
 
 ---
 
 # Twee AEM Forms-werkruimteinstanties op één server hosten {#hosting-two-aem-forms-workspace-instances-on-one-server}
 
-Bij de standaardinstallatie en -instellingen van AEM Forms kan slechts één AEM Forms-werkruimte beschikbaar zijn op de server. Het is echter mogelijk dat u twee verschillende exemplaren van de AEM Forms-werkruimte op één AEM Forms-server moet hosten. De twee instanties zijn toegankelijk door verschillende URL&#39;s.
+Bij de standaardinstallatie en -instellingen van AEM Forms kan slechts één AEM Forms-werkruimte beschikbaar zijn op de server. Het is echter mogelijk dat u twee verschillende versies van de AEM Forms-werkruimte op één AEM Forms-server moet hosten. De twee instanties zijn toegankelijk door verschillende URL&#39;s.
 
-AEM Forms-beheerders passen de werkruimte aan om twee verschillende URL&#39;s te maken en twee werkruimten beschikbaar te maken op dezelfde server. In dit aanpassingsartikel gaan we ervan uit dat de twee werkruimten toegankelijk zijn op `https://'[server]:[port]'/lc/ws` en `https://'[server]:[port]':/lc/ws2`.
+AEM Forms-beheerders passen de werkruimte aan om twee verschillende URL&#39;s te maken en twee werkruimten beschikbaar te maken op dezelfde server. In dit aanpassingsartikel, kunt u veronderstellen dat de twee werkruimten bij toegankelijk zijn `https://'[server]:[port]'/lc/ws` en `https://'[server]:[port]':/lc/ws2`.
 
 Voer de volgende stappen uit om de AEM Forms-werkruimte te configureren.
 
 1. Installeer het ontwikkelingspakket van de AEM Forms-werkruimte op uw server. Zie [dev-pakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)voor instructies om deze te maken.
-1. Aanmelden bij CRXDE Lite als beheerder, door toegang te krijgen tot `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Meld u als beheerder aan bij CRXDE Lite door toegang te krijgen tot `https://'[server]:[port]'/lc/crx/de/index.jsp`.
 1. De knooprijen van het exemplaar bij /content en deeg bij /content. Naam knooppunt wijzigen in ws2. Klik op **[!UICONTROL Save all]**. In eigenschappen van dit knooppunt wijzigt u de waarde van `sling:resourceType` tot en met ws2. Klik op **[!UICONTROL Save all]**.
 
 1. Kopieer de mappenvensters van /libs en plak deze op /apps. Wijzig de naam van de map in ws2. Klik op **[!UICONTROL Save all]**.

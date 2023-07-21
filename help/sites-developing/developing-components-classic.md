@@ -1,24 +1,20 @@
 ---
-title: Ontwikkeling AEM componenten (klassieke gebruikersinterface)
-seo-title: Developing AEM Components (Classic UI)
-description: De klassieke UI gebruikt ExtJS om widgets tot stand te brengen die het blik-en-gevoel van de componenten verstrekken. HTML is niet de aanbevolen scripttaal voor AEM.
-seo-description: The classic UI uses ExtJS to create widgets that provide the look-and-feel of the components. HTL is not the recommended scripting language for AEM.
-uuid: ed53d7c6-5996-4892-81a4-4ac30df85f04
+title: Adobe Experience Manager-componenten ontwikkelen (klassieke gebruikersinterface)
+description: De klassieke UI gebruikt ExtJS om widgets tot stand te brengen die het blik-en-gevoel van de componenten verstrekken. HTML is niet de aanbevolen scripttaal voor Adobe Experience Manager (AEM).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: components
 content-type: reference
-discoiquuid: c68f724f-f9b3-4018-8d3a-1680c53d73f8
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '2393'
+source-wordcount: '2386'
 ht-degree: 0%
 
 ---
 
-# Ontwikkeling AEM componenten (klassieke gebruikersinterface){#developing-aem-components-classic-ui}
+# Adobe Experience Manager-componenten (AEM) ontwikkelen (klassieke gebruikersinterface){#developing-aem-components-classic-ui}
 
 De klassieke UI gebruikt ExtJS om widgets tot stand te brengen die het blik-en-gevoel van de componenten verstrekken. Vanwege de aard van deze widgets zijn er enkele verschillen tussen de manier waarop componenten communiceren met de klassieke gebruikersinterface en de [interface met aanraakbediening](/help/sites-developing/developing-components.md).
 
@@ -34,17 +30,17 @@ De klassieke UI gebruikt ExtJS om widgets tot stand te brengen die het blik-en-g
 
 ## Structuur {#structure}
 
-De basisstructuur van een component wordt op de pagina bedekt [Componenten AEM - De basisbeginselen](/help/sites-developing/components-basics.md#structure), die zowel de aanraakinterface als de klassieke interface toepast. Zelfs als u de instellingen voor de interface met aanraakbediening in uw nieuwe component niet hoeft te gebruiken, kunt u er beter op letten dat u deze instellingen ook in acht neemt wanneer u overerft van bestaande componenten.
+De basisstructuur van een component wordt op de pagina bedekt [Componenten AEM - De basisbeginselen](/help/sites-developing/components-basics.md#structure), die zowel de aanraakinterface als de klassieke interface toepast. Zelfs als u de instellingen voor de interface met aanraakbediening in uw nieuwe component niet hoeft te gebruiken, is het handig om deze instellingen te kennen wanneer u overerft van bestaande componenten.
 
 ## JSP-scripts {#jsp-scripts}
 
-JSP de Manuscripten of de Server kunnen worden gebruikt om componenten terug te geven. Volgens de regels van de verzoekverwerking van het Verdelen is de naam voor het standaardmanuscript:
+JSP de Manuscripten of de Server kunnen worden gebruikt om componenten terug te geven. Volgens de regels van de verzoekverwerking van Sling, is de naam voor het standaardmanuscript:
 
 `<*componentname*>.jsp`
 
 ## global.jsp {#global-jsp}
 
-Het JSP-scriptbestand `global.jsp` wordt gebruikt om snel toegang tot specifieke voorwerpen (d.w.z. tot inhoud) aan om het even welk JSP manuscriptdossier te verlenen dat wordt gebruikt om een component terug te geven.
+Het JSP-scriptbestand `global.jsp` wordt gebruikt om snel toegang tot specifieke voorwerpen (namelijk tot inhoud) aan om het even welk JSP manuscriptdossier te verlenen dat wordt gebruikt om een component terug te geven.
 
 Daarom `global.jsp` moet worden opgenomen in elk component die JSP-script rendert, waarbij een of meer van de objecten die worden geleverd in `global.jsp` worden gebruikt.
 
@@ -75,7 +71,7 @@ Overzicht:
    * `pageProperties` - De eigenschappen van de pagina van de geadresseerde bron.
    * `pageManager` - Het paginabeheer voor toegang tot AEM inhoudspagina&#39;s ( `resourceResolver.adaptTo(PageManager.class);`).
    * `component` - Het componentobject van de huidige AEM.
-   * `designer` - Het ontwerperobject voor het ophalen van ontwerpinformatie ( `resourceResolver.adaptTo(Designer.class);`).
+   * `designer` - Het Designer-object voor het ophalen van ontwerpgegevens ( `resourceResolver.adaptTo(Designer.class);`).
    * `currentDesign` - Het ontwerp van de geadresseerde bron.
    * `currentStyle` - De stijl van de geadresseerde bron.
 
@@ -113,7 +109,7 @@ Zie het document voor meer informatie [Tagbibliotheken](/help/sites-developing/t
 
 Moderne websites zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn.
 
-Om dit probleem te helpen oplossen, AEM **Client-side bibliotheekmappen**, waarmee u uw code aan de clientzijde in de gegevensopslagruimte kunt opslaan, kunt u deze in categorieën ordenen en bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
+Om dit probleem te helpen oplossen, AEM **Client-side bibliotheekmappen**, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
 
 Zie het document [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md) voor meer informatie .
 
@@ -147,9 +143,9 @@ Een voorbeeld van hoe u een component kunt ontwikkelen wordt in detail beschreve
 
 ### Een nieuwe component ontwikkelen (bestaande component aanpassen) {#develop-a-new-component-adapt-existing-component}
 
-Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande component, kunt u de component kopiëren, een JavaScript-bestand voor de nieuwe component maken en dit opslaan op een locatie die toegankelijk is voor AEM (zie ook [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
+Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande component, kunt u de component kopiëren, een JavaScript-bestand voor de nieuwe component maken en opslaan op een locatie die toegankelijk is voor AEM (zie ook [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)):
 
-1. Maak met CRXDE Lite een nieuwe componentmap in:
+1. Maak met CRXDE Lite een componentmap in:
 
    / `apps/<myProject>/components/<myComponent>`
 
@@ -163,7 +159,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
 
    U kunt wijzigingen aanbrengen zoals:
 
-   * een nieuw veld toevoegen in het dialoogvenster
+   * een veld toevoegen in het dialoogvenster
 
       * `cq:dialog` - dialoogvenster voor de interface met aanraakbediening
       * `dialog` - dialoog voor de klassieke gebruikersinterface
@@ -177,8 +173,8 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
    >
    >Een component voor de:
    >
-   >* Interface met aanraakbediening [Graniet](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html) componenten
-   >* Klassieke UI gebruikt [ExtJS-widgets](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html)
+   >* Interface met aanraakbediening [Graniet](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) componenten
+   >* Klassieke UI gebruikt [ExtJS-widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
    >[!NOTE]
    >
@@ -186,7 +182,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
    >
    >Een dialoogvenster dat is gedefinieerd voor de interface met aanraakbediening werkt niet binnen de klassieke interface.
    >
-   >Afhankelijk van uw instantie en auteursomgeving kunt u beide soorten dialoog voor uw component willen bepalen.
+   >Afhankelijk van uw instantie en auteursomgeving, zou u beide soorten dialoog voor uw component kunnen willen bepalen.
 
 1. Een van de volgende knooppunten moet aanwezig zijn en moet correct zijn geïnitialiseerd om de nieuwe component weer te geven:
 
@@ -200,7 +196,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
    * CRXDE Lite gebruiken om de waarde toe te voegen `<path-to-component>` (bijvoorbeeld `/apps/geometrixx/components/myComponent`) aan de eigenschapcomponenten van het knooppunt `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * Volg de instructies in [Nieuwe componenten toevoegen aan alineasystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. Open in AEM WCM een pagina op uw website en voeg een nieuwe alinea in van het type dat u net hebt gemaakt om ervoor te zorgen dat de component goed werkt.
+1. Open in AEM WCM een pagina op uw website en voeg een alinea in van het type dat u net hebt gemaakt om ervoor te zorgen dat de component goed werkt.
 
 >[!NOTE]
 >
@@ -217,7 +213,7 @@ Nadat de component is ontwikkeld, voegt u deze toe aan het alineasysteem, waarme
 
      `<contextPath>/ Test.html?wcmmode=design`
 
-   * klikken op Ontwerpen in Sidetrap
+   * klikken op Ontwerp in Sidekick
 
    U bevindt zich nu in de ontwerpmodus en kunt het alineasysteem bewerken.
 
@@ -231,12 +227,12 @@ Nadat de component is ontwikkeld, voegt u deze toe aan het alineasysteem, waarme
 
 ### De component Tekst en Afbeelding uitbreiden - Een voorbeeld {#extending-the-text-and-image-component-an-example}
 
-In deze sectie wordt een voorbeeld gegeven van de manier waarop u de veelgebruikte standaardcomponent voor tekst en afbeeldingen kunt uitbreiden met een configureerbare functie voor het plaatsen van afbeeldingen.
+In deze sectie ziet u hoe u de veelgebruikte standaardcomponent voor tekst en afbeeldingen kunt uitbreiden met een configureerbare functie voor het plaatsen van afbeeldingen.
 
 Met de extensie voor tekst en afbeeldingscomponenten kunnen editors alle bestaande functionaliteit van de component gebruiken en beschikken ze over een extra optie om de plaatsing van de afbeelding op te geven:
 
 * Aan de linkerkant van de tekst (huidig gedrag en de nieuwe standaard)
-* en aan de rechterkant
+* En aan de rechterkant
 
 Nadat u deze component hebt uitgebreid, kunt u de plaatsing van de afbeelding configureren via het dialoogvenster van de component.
 
@@ -256,7 +252,7 @@ In deze exercitie worden de volgende technieken beschreven:
 
 #### De bestaande textielcomponent uitbreiden {#extending-the-existing-textimage-component}
 
-Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbeeldcomponent als basis en wijzigen het. Wij slaan de nieuwe component in de Geometrixx AEM WCM voorbeeldtoepassing op.
+Om de component tot stand te brengen, gebruikt u de standaardcomponent van de textielafbeelding als basis en wijzigt het. U slaat de nieuwe component in de Geometrixx AEM WCM voorbeeldtoepassing op.
 
 1. De standaardtextielcomponent kopiëren uit `/libs/foundation/components/textimage` in de map Geometrixx, `/apps/geometrixx/components`, met gebruik van textiel als de naam van het doelknooppunt. (Kopieer de component door naar de component te navigeren, met de rechtermuisknop te klikken en Kopiëren te selecteren en naar de doelmap te bladeren.)
 
@@ -298,7 +294,7 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
 
    Op deze manier geldt dat wanneer een afbeelding naar de component op de pagina wordt neergezet, de `sling:resourceType` eigenschap van de uitgebreide textielcomponent wordt ingesteld op: `geometrixx/components/textimage.`
 
-1. Wijzig de de dialoogdoos van de component om de nieuwe optie te omvatten. De nieuwe component neemt de delen van het dialoogvenster over die hetzelfde zijn als in het origineel. De enige toevoeging die wij maken, is de uitbreiding van de **Geavanceerd** tabblad, toevoegen **Positie afbeelding** vervolgkeuzelijst, met opties **Links** en **Rechts**:
+1. Wijzig de de dialoogdoos van de component om de nieuwe optie te omvatten. De nieuwe component neemt de delen van het dialoogvenster over die hetzelfde zijn als in het origineel. De enige toevoeging die u maakt, is het uitbreiden van de **Geavanceerd** tabblad, toevoegen **Positie afbeelding** vervolgkeuzelijst, met opties **Links** en **Rechts**:
 
    * Laat de `textimage/dialog`eigenschappen ongewijzigd.
 
@@ -313,7 +309,7 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
    * Voor tab3:
 
       * Eigenschappen en subknooppunten ongewijzigd laten
-      * Een nieuwe velddefinitie toevoegen aan `tab3/items`, knooppuntpositie van type `cq:Widget`
+      * Een velddefinitie toevoegen aan `tab3/items`, knooppuntpositie van type `cq:Widget`
       * Stel de volgende eigenschappen (van het type String) in voor de nieuwe `tab3/items/position`knooppunt:
 
          * `name`: `./imagePosition`
@@ -340,7 +336,7 @@ Om de nieuwe component tot stand te brengen, gebruiken wij de standaardtextielbe
         image.loadStyleData(currentStyle);
    ```
 
-   Het gemarkeerde codefragment wordt vervangen *%>&lt;div class=&quot;image&quot;>&lt;%* met nieuwe code die een aangepaste stijl voor deze tag genereert.
+   U gaat het gemarkeerde codefragment vervangen *%>&lt;div class=&quot;image&quot;>&lt;%* met nieuwe code die een aangepaste stijl voor deze tag genereert.
 
    ```xml
    // todo: add new CSS class for the 'right image' instead of using
@@ -371,7 +367,7 @@ De component slaat zijn inhoud in een paragraaf op de pagina van het Bedrijf op.
 
 ### Uploadmogelijkheden van de afbeeldingscomponent uitschakelen {#disable-upload-capability-of-the-image-component}
 
-Om deze mogelijkheid uit te schakelen, gebruiken wij de standaardbeeldcomponent als basis en wijzigen het. De nieuwe component wordt opgeslagen in de voorbeeldtoepassing van Geometrixx.
+Als u deze mogelijkheid wilt uitschakelen, gebruikt u de standaardafbeeldingscomponent als basis en wijzigt u deze. U slaat de nieuwe component op in de voorbeeldtoepassing Geometrixx.
 
 1. De standaardafbeeldingscomponent kopiëren uit `/libs/foundation/components/image` in de map Geometrixx, `/apps/geometrixx/components`, waarbij afbeelding wordt gebruikt als de naam van het doelknooppunt.
 
@@ -382,7 +378,7 @@ Om deze mogelijkheid uit te schakelen, gebruiken wij de standaardbeeldcomponent 
    * Set **jcr:titel** tot `Image (Extended)`
 
 1. Ga naar `/apps/geometrixx/components/image/dialog/items/image`.
-1. Nieuwe eigenschap toevoegen:
+1. Een eigenschap toevoegen:
 
    * **Naam**: `allowUpload`
    * **Type**: `String`
@@ -393,7 +389,7 @@ Om deze mogelijkheid uit te schakelen, gebruiken wij de standaardbeeldcomponent 
 1. Klikken **Alles opslaan**. De component kan worden getest.
 1. Open een pagina in Geometrixx zoals Engels / Bedrijf.
 1. Schakel over naar de ontwerpmodus en activeer Afbeelding (Extended).
-1. Ga terug naar de bewerkingsmodus en voeg deze toe aan het alineasysteem. Op de volgende afbeeldingen ziet u de verschillen tussen de originele afbeeldingscomponent en de afbeelding die u zojuist hebt gemaakt.
+1. Ga terug naar de bewerkingsmodus en voeg deze toe aan het alineasysteem. Op de volgende afbeeldingen ziet u de verschillen tussen de originele afbeeldingscomponent en de afbeelding die u hebt gemaakt.
 
    Originele afbeeldingscomponent:
 

@@ -1,17 +1,15 @@
 ---
 title: Een volledig functionele website (JSP) maken
-description: Met deze zelfstudie kunt u een volledig uitgeruste website maken met AEM
-uuid: ec76ad5e-af6c-43ad-ae57-a4ae4ac7029f
+description: Deze zelfstudie leert u hoe u een volledig functionerende website met Adobe Experience Manager (AEM) kunt maken.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 90bc05c9-e971-4e75-bc07-5e137c6c913e
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
 workflow-type: tm+mt
-source-wordcount: '4935'
+source-wordcount: '4941'
 ht-degree: 1%
 
 ---
@@ -20,9 +18,9 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals in detail wordt beschreven in het artikel [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste Adobe Experience Manager (AEM)-technologieën voor uw websites te gebruiken, zoals in het artikel gedetailleerd wordt beschreven. [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
 
-Met deze zelfstudie kunt u een volledig uitgeruste website maken met Adobe Experience Manager (AEM). De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkelingen vinden plaats in een auteursomgeving.
+Met deze zelfstudie kunt u een volledig uitgeruste website met AEM maken. De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkelingen vinden plaats in een auteursomgeving.
 
 In deze zelfstudie wordt beschreven hoe u:
 
@@ -42,7 +40,7 @@ In deze zelfstudie wordt beschreven hoe u:
 
 1. Verschillende basiscomponenten opnemen.
 
-Nadat u alle stappen hebt uitgevoerd, zien de pagina&#39;s er als volgt uit:
+Nadat u alle stappen hebt uitgevoerd, moeten de pagina&#39;s er als volgt uitzien:
 
 ![chlimage_1-24](assets/chlimage_1-24.png)
 
@@ -50,7 +48,7 @@ Nadat u alle stappen hebt uitgevoerd, zien de pagina&#39;s er als volgt uit:
 
 Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM inhoudspakket dat de resultaten van deze zelfstudie bevat. Gebruiken [Pakketbeheer](/help/sites-administering/package-manager.md) om het pakket te installeren naar de auteur.
 
-**OPMERKING:** Als u dit pakket installeert, worden alle bronnen op de ontwerpinstantie die u met deze zelfstudie hebt gemaakt, overschreven.
+**OPMERKING:** Wanneer u dit pakket installeert, worden alle bronnen in de ontwerpinstantie die u met deze zelfstudie hebt gemaakt, overschreven.
 
 Inhoud van website
 
@@ -110,9 +108,9 @@ Voorbeeld van bestand static.css en afbeeldingen
 
 In deze sectie maakt u het volgende:
 
-* De sjabloon voor de inhoudspagina die wordt gebruikt om inhoudspagina&#39;s te maken in de voorbeeldwebsite
-* De component contentPage die wordt gebruikt om pagina&#39;s met inhoud te renderen
-* Het script contentPage
+* De sjabloon voor de inhoudspagina die wordt gebruikt om inhoudspagina&#39;s te maken in de voorbeeldwebsite.
+* De component contentPage die wordt gebruikt om pagina&#39;s met inhoud te renderen.
+* The contentPage script.
 
 #### De sjabloon voor de inhoudspagina maken {#creating-the-contentpage-template}
 
@@ -273,7 +271,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
 In deze sectie wordt beschreven hoe u het script voor de inhoudspagina kunt verbeteren met behulp van de scripts van de AEM basis en door uw eigen scripts te schrijven.
 
-De **Producten** De pagina ziet er als volgt uit:
+Wanneer u klaar bent, **Producten** De pagina moet er als volgt uitzien:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -311,7 +309,7 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
 
    ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
-   Open de paginabron om de elementen javascript en HTML te zien die de scripts head.jsp en body.jsp genereerden. Het volgende scriptfragment opent Sidekick wanneer u de pagina opent:
+   Open de paginabron om de JavaScript- en HTML-elementen te zien die door de scripts head.jsp en body.jsp zijn gegenereerd. Het volgende scriptfragment opent Sidekick wanneer u de pagina opent:
 
    ```java
    CQ.WCM.launchSidekick("/content/mywebsite/en/products",
@@ -409,7 +407,7 @@ In deze sectie maakt u een component die koppelingen naar alle pagina&#39;s op h
 
 In de eerste versie van de bovenste navigatiecomponent (boven) zijn de navigatie-items alleen tekstkoppelingen. In de tweede versie implementeert u bovenaan met koppelingen voor afbeeldingsnavigatie.
 
-Uw topnavigatie ziet er als volgt uit:
+Wanneer u klaar bent, zou uw hoogste navigatie als volgt moeten kijken:
 
 ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -518,7 +516,7 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
 1. Klik met de rechtermuisknop op de knop `/apps/mywebsite/components/contentpage` knoop en klik **Maken** > **Bestand maken**.
 1. In de **Bestand maken** venster, als **Naam**, type `navimage.png.java`.
 
-   De .java-bestandsnaamextensie geeft aan Sling aan dat de Apache Sling Scripting Java Support moet worden gebruikt om het script te compileren en een servlet te maken.
+   De .java-bestandsnaamextensie geeft aan Sling aan dat de Apache Sling Scripting Java™-ondersteuning moet worden gebruikt om het script te compileren en een servlet te maken.
 
 1. De volgende code kopiëren naar `navimage.png.java.`De code breidt de klasse AbstractImageServlet uit:
 
@@ -844,9 +842,9 @@ Maak een component die het bedrijfslogo weergeeft en een koppeling naar de start
 * De eigenschapswaarden zijn van toepassing op alle instanties van de component die worden toegevoegd aan pagina&#39;s die het ontwerp gebruiken.
 * De eigenschappen kunnen worden gevormd gebruikend om het even welke instantie van de component die op een pagina is die het ontwerp gebruikt.
 
-Het dialoogvenster voor de ontwerpmodus bevat eigenschappen voor het instellen van de afbeelding en het koppelingspad. De logocomponent wordt linksboven op alle pagina&#39;s op de website geplaatst.
+Het dialoogvenster voor de ontwerpmodus bevat eigenschappen voor het instellen van de afbeelding en het koppelingspad. De logocomponent wordt linksboven op alle pagina&#39;s in de website geplaatst.
 
-Het ziet er als volgt uit:
+Als u klaar bent, ziet het er als volgt uit:
 
 ![chlimage_1-46](assets/chlimage_1-46.png)
 
@@ -921,7 +919,7 @@ Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerp
       * **Titel:** `Logo (Design)`
 
 1. Klik met de rechtermuisknop op het knooppunt tab1 in de vertakking design_dialog en klik op Verwijderen. Klik op Alles opslaan.
-1. Onder de `design_dialog/items/items`knooppunt, nieuw knooppunt maken met de naam `img` van het type `cq:Widget`. Voeg de volgende eigenschappen toe en klik vervolgens op Alles opslaan:
+1. Onder de `design_dialog/items/items`knooppunt, een knooppunt maken met de naam `img` van het type `cq:Widget`. Voeg de volgende eigenschappen toe en klik vervolgens op Alles opslaan:
 
    | Naam | Type | Waarde |
    |---|---|---|
@@ -1050,7 +1048,7 @@ In deze sectie wordt beschreven hoe u een afbeelding instelt als uw logo in het 
 
 In deze sectie neemt u de component breadcrumb (trail) op. Dit is een van de basiscomponenten.
 
-1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp` en vervangen:
+1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp`en vervangen:
 
    ```java
    <div>trail</div>
@@ -1071,7 +1069,7 @@ In deze sectie neemt u de component breadcrumb (trail) op. Dit is een van de bas
 
 In deze sectie neemt u de component title op. Dit is een van de basiscomponenten.
 
-1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp` en vervangen:
+1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp`en vervangen:
 
    ```xml
    <div>title</div>
@@ -1096,7 +1094,7 @@ Het alineasysteem (parsys) is een belangrijk onderdeel van een website omdat het
 
 Voeg de component parsys (één van de stichtingscomponenten) aan uw component van de inhoudspagina toe.
 
-1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp` en zoek de volgende coderegel:
+1. Blader in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `center.jsp`en zoek de volgende coderegel:
 
    ```xml
    <div>parsys</div>
@@ -1177,17 +1175,17 @@ De `cq:editConfig` het knooptype laat u toe om bepaald gedrag van componenten te
 
 In deze sectie gebruikt u het knooppunt cq:editConfig om u in staat te stellen elementen van de Inhoudszoeker naar de afbeeldingscomponent te slepen.
 
-1. Maak in CRXDE Lite onder het knooppunt /apps/mywebsite/components/image als volgt een nieuw knooppunt:
+1. Maak in CRXDE Lite onder het knooppunt /apps/mywebsite/components/image als volgt een knooppunt:
 
    * Naam: cq:editConfig.
    * Type: cq:EditConfig.
 
-1. Maak onder het knooppunt cq:editConfig als volgt een nieuw knooppunt:
+1. Onder de knoop cq:editConfig, creeer als volgt een knoop:
 
    * Naam: cq:dropTargets.
    * Type: cq:DropTargetConfig.
 
-1. Onder het knooppunt cq:dropTargets maakt u als volgt een nieuw knooppunt:
+1. Onder het knooppunt cq:dropTargets maakt u als volgt een knooppunt:
 
    * Naam: afbeelding.
    * Type: nt:ongestructureerd.
@@ -1211,7 +1209,7 @@ In deze sectie voegt u het pictogram toe dat naast de afbeeldingscomponent wordt
 
 #### De afbeeldingscomponent gebruiken {#using-the-image-component}
 
-In deze sectie ziet u de **Producten** en voeg de afbeeldingscomponent toe aan het alineasysteem.
+In deze sectie bekijkt u de **Producten** en voeg de afbeeldingscomponent toe aan het alineasysteem.
 
 1. Laad in uw browser de **Producten** pagina.
 1. Klik in de Sidekick op de knop **ontwerpmodus** pictogram.
@@ -1226,7 +1224,7 @@ In deze sectie ziet u de **Producten** en voeg de afbeeldingscomponent toe aan h
 
 In deze sectie neemt u de werkbalkcomponent op. Dit is een van de basiscomponenten.
 
-U hebt verschillende opties, zowel in de bewerkingsmodus als in de ontwerpmodus.
+U hebt verschillende opties in de bewerkingsmodus en de ontwerpmodus.
 
 1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u de `body.jsp` en zoek de volgende code:
 
@@ -1264,7 +1262,7 @@ U hebt verschillende opties, zowel in de bewerkingsmodus als in de ontwerpmodus.
 
 In deze sectie maakt u de component om te zoeken naar inhoud op de website. Deze zoekcomponent kan in het alineasysteem van elke pagina worden geplaatst (bijvoorbeeld op een gespecialiseerde pagina met zoekresultaten).
 
-Het invoervak voor de zoekopdracht ziet er als volgt uit **Engels** pagina:
+Wanneer u klaar bent, ziet uw zoekinvoervak er als volgt uit op het tabblad **Engels** pagina:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -1516,7 +1514,7 @@ In deze sectie, omvat u de component van het Systeem van de Paragraaf van de Ove
 
 Voor deze component kunt u verschillende parameters instellen in zowel de bewerkingsmodus als de ontwerpmodus.
 
-1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `right.jsp` en vervangen:
+1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `right.jsp`en vervangen:
 
    ```java
    <div>iparsys</div>

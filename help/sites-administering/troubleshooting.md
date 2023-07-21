@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '252'
 ht-degree: 2%
 
 ---
@@ -21,6 +21,13 @@ ht-degree: 2%
 # Werken met logbestanden{#working-with-logs}
 
 Deze sectie omvat gedetailleerde informatie over logboeken beschikbaar om u te helpen problemen oplossen.
+
+>[!NOTE]
+>
+>Zie voor meer informatie over logboeken:
+>
+>* [Onderhoud controlelogbestand in AEM](/help/sites-administering/operations-audit-log.md)
+>* [Werken met auditrecords en logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)
 
 CRX registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken en gestart, kunt u logbestanden op de volgende locaties vinden:
 

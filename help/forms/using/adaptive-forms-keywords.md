@@ -9,14 +9,16 @@ topic-tags: author
 discoiquuid: 678e9dfc-2c46-430a-8da9-0329dda80090
 feature: Adaptive Forms
 exl-id: 6ef5bd8c-7e7b-4501-a1be-d34fc0dbde84
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
 
 # Trefwoorden voor adaptieve formulieren {#adaptive-forms-keywords}
+
+<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde id&#39;s die speciale betekenis hebben voor adaptieve formulieren. U kunt deze trefwoorden niet als id&#39;s gebruiken in adaptieve formulieren. In de volgende tabel worden alle trefwoorden weergegeven die zijn gereserveerd voor id&#39;s voor adaptieve formulieren.
 

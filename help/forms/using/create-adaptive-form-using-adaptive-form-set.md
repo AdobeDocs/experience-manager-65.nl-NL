@@ -10,14 +10,16 @@ discoiquuid: 264aa8c0-ba64-4768-b3d1-1b9baa6b4d72
 docset: aem65
 feature: Adaptive Forms
 exl-id: 4254c2cb-66cc-4a46-b447-bc5e32def7a0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '626'
 ht-degree: 0%
 
 ---
 
 # Een adaptief formulier maken met behulp van een set adaptieve formulieren{#create-an-adaptive-form-using-a-set-of-adaptive-forms}
+
+<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -141,7 +143,7 @@ Voer de volgende stappen uit om een adaptief formulier toe te voegen als een ond
 
 1. Open het bovenliggende formulier in de bewerkingsmodus.
 1. Klik in de zijbalk op **Activa** ![assets-browser](assets/assets-browser.png). Selecteer onder Elementen de optie **Adaptief formulier** in de vervolgkeuzelijst.
-   [ ![Aangepast formulier selecteren onder Activa](assets/asset.png)](assets/asset-1.png)
+   [![Aangepast formulier selecteren onder Activa](assets/asset.png)](assets/asset-1.png)
 
 1. Sleep het adaptieve formulier dat u wilt toevoegen als een onderliggend formulier.
-   [ ![Sleep het adaptieve formulier naar uw site](assets/drag-drop.png)](assets/drag-drop-1.png)Het aangepaste formulier dat u neerzet, wordt toegevoegd als een onderliggend formulier.
+   [![Sleep het adaptieve formulier naar uw site](assets/drag-drop.png)](assets/drag-drop-1.png)Het aangepaste formulier dat u neerzet, wordt toegevoegd als een onderliggend formulier.

@@ -10,7 +10,7 @@ discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: f114456d5571620772341cba9bd8203d91d0b053
 workflow-type: tm+mt
 source-wordcount: '1027'
 ht-degree: 0%
@@ -56,8 +56,8 @@ Het adaptieve formulier insluiten:
     var loadAdaptiveForm = function(options){
     //alert(options.path);
        if(options.path) {
-           // options.path refers to the publish URL of the adaptive form
-           // For Example: https:myserver:4503/content/forms/af/ABC, where ABC is the adaptive form
+           // options.path refers to the path of the adaptive form
+           // For Example: /content/forms/af/ABC, where ABC is the adaptive form
            // Note: If AEM server is running on a context path, the adaptive form URL must contain the context path
            var path = options.path;
            path += "/jcr:content/guideContainer.html";
@@ -101,7 +101,7 @@ Het adaptieve formulier insluiten:
 1. In de ingesloten code:
 
    * Waarde wijzigen van *options.path* variabele met het pad van de publicatie-URL van het adaptieve formulier. Als de AEM server op een contextweg loopt, zorg ervoor dat URL het contextweg omvat. Vermeld altijd de volledige naam van het adaptieve formulier, inclusief de extensie.   De bovenstaande code en het aanpassen van de locatie op dezelfde AEM formulierserver, zodat het voorbeeld het contextpad van het adaptieve formulier /content/forms/af/locbasic.html gebruikt.
-   * Vervangen *options.dataRef* met kenmerken die worden doorgegeven met de URL. U kunt de variabele dataref gebruiken aan [Een adaptief formulier vooraf invullen](/help/forms/using/prepopulate-adaptive-form-fields.md).
+   * Vervangen *options.dataRef* met kenmerken die worden doorgegeven met de URL. U kunt de variabele data gebruiken aan [Een adaptief formulier vooraf invullen](/help/forms/using/prepopulate-adaptive-form-fields.md).
    * Vervangen *options.themePath* met het pad naar een ander thema dan het thema dat in het adaptieve formulier is geconfigureerd. U kunt ook het themapad opgeven met het aanvraagkenmerk.
    * CSS_Selector is de CSS-kiezer van de formuliercontainer waarin het adaptieve formulier is ingesloten. De CSS-kiezer in het bovenstaande voorbeeld is bijvoorbeeld de CSS-klasse .customafsection css.
 
@@ -159,7 +159,7 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 Houd bij het insluiten van een adaptief formulier in een webpagina rekening met de volgende aanbevolen procedures:
 
-* Zorg ervoor dat de opmaakregels die zijn gedefinieerd in de CSS van de webpagina geen conflict veroorzaken met de CSS van het formulierobject. Om conflicten te voorkomen, kunt u de CSS van de webpagina in het adaptieve formulierthema opnieuw gebruiken met AEM clientbibliotheek. Voor informatie over het gebruik van de clientbibliotheek in adaptieve formulierthema&#39;s raadpleegt u [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
+* Zorg ervoor dat de opmaakregels die zijn gedefinieerd in de CSS van de webpagina geen conflict veroorzaken met de CSS van het formulierobject. Om conflicten te voorkomen, kunt u de CSS van de webpagina in het adaptieve formulierthema opnieuw gebruiken met AEM clientbibliotheek. Zie voor informatie over het gebruik van de clientbibliotheek in adaptieve formulierthema&#39;s [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
 * Zorg dat de formuliercontainer op de webpagina de volledige vensterbreedte gebruikt. Hiermee zorgt u ervoor dat de CSS-regels die voor mobiele apparaten zijn geconfigureerd, zonder wijzigingen werken. Als de formuliercontainer niet de volledige vensterbreedte heeft, moet u aangepaste CSS schrijven om het formulier aan te passen aan verschillende mobiele apparaten.
 * Gebruiken `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API om de XML- of JSON-weergave van formuliergegevens op te halen in de client.
 * Gebruiken `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API om het adaptieve formulier te verwijderen uit HTML DOM.

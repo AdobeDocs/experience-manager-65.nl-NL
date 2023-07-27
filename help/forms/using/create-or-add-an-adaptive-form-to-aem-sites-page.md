@@ -4,7 +4,7 @@ description: Ontdek hoe u moeiteloos een adaptief formulier kunt maken of toevoe
 Keywords: AEM Forms in sites, AF in Sites editor, af in aem sites, aem sites af, add af to a sites page, af aem sites, af sites, create af in a sites page, adaptive form in aem sites, forms aem sites, add form to a sites page, adaptive forms aem sites, add adaptive forms to aem page, create forms in an aem sites page
 feature: Adaptive Forms
 exl-id: 1813ccfc-87ce-46fa-a1d5-5edffd91efb0
-source-git-commit: 4992416c0deec7eab51920fd9c7e1e2b10887ea5
+source-git-commit: 600dcc52829ff2c5e54176bda7631845ef24f986
 workflow-type: tm+mt
 source-wordcount: '2918'
 ht-degree: 0%
@@ -45,17 +45,17 @@ Met de adaptieve formuliercontainer in AEM paginaeditor kunt u naadloze ervaring
 
 U kunt deze functie optimaal benutten door de volgende opties te gebruiken:
 
-* **Een aangepast adaptief formulier toevoegen aan een AEM Sites-pagina:** Een geheel nieuw formulier maken, dat speciaal aan uw vereisten en ontwerpvoorkeuren is aangepast.
+* **[Een aangepast adaptief formulier toevoegen aan een AEM Sites-pagina:](#create-an-adaptive-form-in-sites-editor)** Een geheel nieuw formulier maken, dat speciaal aan uw vereisten en ontwerpvoorkeuren is aangepast.
 
-* **Voeg een aangepast adaptief formulier toe aan een Experience Fragments:** Vergroot het bereik van uw formulieren door deze toe te voegen aan AEM Experience Fragments, zodat u ze naadloos kunt hergebruiken op meerdere pagina&#39;s of sites.
+* **[Voeg een aangepast adaptief formulier toe aan een Experience Fragments:](#create-an-adaptive-form-in-experience-fragment)** Vergroot het bereik van uw formulieren door deze toe te voegen aan AEM Experience Fragments, zodat u ze naadloos kunt hergebruiken op meerdere pagina&#39;s of sites.
 
-* **Meerdere formulieren toevoegen aan een AEM Sites-pagina of Ervaar fragment:**  Voeg meerdere formulieren aan een pagina toe om gebruikers meerdere keuzes te bieden op basis van hun voorkeuren en vereisten. Dit kan een combinatie van geheel nieuwe formulieren en bestaande formulieren zijn.
-
-* **Een adaptief formulier converteren naar fragment:** Converteer een adaptief formulier dat aan een AEM Sites-pagina is toegevoegd naar een Experience-fragment en gebruik het formulier opnieuw op meerdere AEM Sites-pagina&#39;s.
+* **[Een adaptief formulier converteren naar fragment:](#convert-an-adaptive-form-in-sites-page-to-an-experience-fragment)** Converteer een adaptief formulier dat aan een AEM Sites-pagina is toegevoegd naar een Experience-fragment en gebruik het formulier opnieuw op meerdere AEM Sites-pagina&#39;s.
 
 * **Formulieren op basis van goedgekeurde sjablonen maken en toevoegen aan een AEM Sites-pagina:** Gebruik vooraf goedgekeurde sjablonen om snel formulieren te maken die zijn afgestemd op de brandingrichtlijnen en ontwerpstandaarden van uw organisatie. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
 
 * **Bestaande formulieren toevoegen aan een AEM Sites-pagina:** U kunt formulieren die u al hebt gemaakt, eenvoudig integreren in uw websites, zodat bezoekers direct met ze kunnen communiceren. Deze optie is alleen beschikbaar voor Adaptive Forms die is gemaakt met de Adaptive Forms Editor of de Adaptive Forms - Embed-component.
+
+* **Meerdere formulieren toevoegen aan een AEM Sites-pagina of Ervaar fragment:**  Voeg meerdere formulieren aan een pagina toe om gebruikers meerdere keuzes te bieden op basis van hun voorkeuren en vereisten. Dit kan een combinatie van geheel nieuwe formulieren en bestaande formulieren zijn.
 
 ## Overwegingen {#consideration}
 

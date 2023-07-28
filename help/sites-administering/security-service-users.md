@@ -7,12 +7,13 @@ topic-tags: Security
 content-type: reference
 exl-id: ccd8577b-3bbf-40ba-9696-474545f07b84
 feature: Security
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: f317783f3320e3987c7468aa0b2471e525b0387a
 workflow-type: tm+mt
-source-wordcount: '1766'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
+
 
 # Gebruikers van services in Adobe Experience Manager (AEM) {#service-users-in-aem}
 
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 De belangrijkste manier om een administratieve zitting of middeloplosser in AEM te krijgen was het gebruiken van `SlingRepository.loginAdministrative()` en `ResourceResolverFactory.getAdministrativeResourceResolver()` door Sling verschafte methoden.
 
-Geen van deze methoden was echter ontworpen rond de [beginsel van de minste voorrechten](https://en.wikipedia.org/wiki/Principle_of_least_privilege) en maken het voor een ontwikkelaar te gemakkelijk om niet voor een juiste structuur en overeenkomstige Niveaus van het Toegangsbeheer (ACLs) voor hun inhoud vroegtijdig te plannen. Als een kwetsbaarheid in zo&#39;n dienst aanwezig is, leidt het vaak tot voorrechtescalaties aan `admin` gebruiker, zelfs als de code zelf geen administratieve voorrechten zou vereisen om te werken.
+Geen van deze methoden was echter ontworpen rond de [beginsel van het minst bevoorrecht](https://en.wikipedia.org/wiki/Principle_of_least_privilege) en maken het voor een ontwikkelaar te gemakkelijk om niet voor een juiste structuur en overeenkomstige Niveaus van het Toegangsbeheer (ACLs) voor hun inhoud vroegtijdig te plannen. Als een kwetsbaarheid in zo&#39;n dienst aanwezig is, leidt het vaak tot voorrechtescalaties aan `admin` gebruiker, zelfs als de code zelf geen administratieve voorrechten zou vereisen om te werken.
 
 ## Admin-sessies uitfaseren {#how-to-phase-out-admin-sessions}
 
@@ -75,11 +76,16 @@ Of u toegangsbeheer terwijl het herstructureren van inhoud toepast of wanneer u 
 * ACLs voor knooptypes toepassen
 * Machtigingen beperken
 
-   * Als u bijvoorbeeld alleen eigenschappen wilt schrijven, moet u de opdracht `jcr:write` toestemming; gebruiken `jcr:modifyProperties` in
+   * Als u bijvoorbeeld alleen eigenschappen wilt schrijven, moet u de opdracht `jcr:write` toestemming; gebruik `jcr:modifyProperties` in
 
 ## Gebruikers en toewijzingen van services {#service-users-and-mappings}
 
-Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de Gebruiker van de Dienst aan, die toestaat om een bundel-aan-gebruiker afbeelding en twee overeenkomstige API methodes te vormen: ` [SlingRepository.loginService()](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)` en ` [ResourceResolverFactory.getServiceResourceResolver()](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)` die een zitting/middeloplosser met de voorrechten van een gevormde slechts gebruiker terugkeren. Deze methoden hebben de volgende kenmerken:
+Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de Gebruiker van de Dienst aan, die toestaat om een bundel-aan-gebruiker afbeelding en twee overeenkomstige API methodes te vormen:
+
+* [`SlingRepository.loginService()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/jcr/api/SlingRepository.html#loginService-java.lang.String-java.lang.String-)
+* [`ResourceResolverFactory.getServiceResourceResolver()`](https://sling.apache.org/apidocs/sling7/org/apache/sling/api/resource/ResourceResolverFactory.html#getServiceResourceResolver-java.util.Map-)
+
+De methodes keren een zitting/middeloplosser met de voorrechten van een gevormde slechts gebruiker terug. Deze methoden hebben de volgende kenmerken:
 
 * Zij staan kaartdiensten aan gebruikers toe
 * Zij maken het mogelijk om de gebruikers van de subdienst te bepalen
@@ -100,11 +106,11 @@ Een manier om een administratieve zitting te verwerpen is het door de zittingen 
 Als u de beheersessie wilt vervangen door een servicegebruiker, moet u de volgende stappen uitvoeren:
 
 1. Identificeer de noodzakelijke toestemmingen voor uw dienst, die het beginsel van minste toestemming in mening houden.
-1. Controleer of er al een gebruiker beschikbaar is met exact de juiste instellingen voor machtigingen. Maak een gebruiker van de systeemservice als geen bestaande gebruiker aan uw behoeften voldoet. RTC is nodig om een servicegebruiker te maken. Soms, is het zinvol om veelvoudige subservice gebruikers (bijvoorbeeld, voor schrijven en voor lezing) tot stand te brengen om toegang nog meer te compartimentaliseren.
+1. Controleer of er al een gebruiker beschikbaar is met exact de juiste instellingen voor machtigingen. Maak een gebruiker van de systeemservice als geen bestaande gebruiker aan uw behoeften voldoet. RTC is nodig om een servicegebruiker te maken. Soms is het handig om meerdere gebruikers van subservices te maken (bijvoorbeeld voor schrijven en voor lezen) om de toegang nog verder te compartimenteren.
 1. Opstelling en test ACEs voor uw gebruiker.
 1. Voeg een `service-user` toewijzing voor uw dienst en voor `user/sub-users`
 
-1. Maak de verkoopfunctie van de de dienstgebruiker beschikbaar aan uw bundel: bijwerken naar de meest recente versie van `org.apache.sling.api`.
+1. Maak de verkoopfunctie van de servicegebruiker beschikbaar voor uw bundel: werk de laatste versie van `org.apache.sling.api`.
 
 1. Vervang de `admin-session` in uw code met de `loginService` of `getServiceResourceResolver` API&#39;s.
 
@@ -145,7 +151,7 @@ Wanneer u het corresponderende .content.xml toevoegt aan de inhoud van uw bundel
 
 ## Het toevoegen van een configuratieamendement aan de configuratie ServiceUserMapper {#adding-a-configuration-amendment-to-the-serviceusermapper-configuration}
 
-Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systeem toe te voegen, creeer een fabrieksconfiguratie voor ` [ServiceUserMapper](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html)` service. Om dit modulaire te houden, kan dergelijke configuratie worden verstrekt gebruikend [Sling-wijzigingsmechanisme](https://issues.apache.org/jira/browse/SLING-3578). U wordt aangeraden dergelijke configuraties met uw bundel te installeren door [Eerste inhoud bij verkoop laden](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
+Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systeem toe te voegen, creeer een fabrieksconfiguratie voor [`ServiceUserMapper`](https://sling.apache.org/apidocs/sling7/org/apache/sling/serviceusermapping/ServiceUserMapper.html) service. Om dit modulaire te houden, kan dergelijke configuratie worden verstrekt gebruikend [Sling-wijzigingsmechanisme](https://issues.apache.org/jira/browse/SLING-3578). U wordt aangeraden dergelijke configuraties met uw bundel te installeren door [Eerste inhoud bij verkoop laden](https://sling.apache.org/documentation/bundles/content-loading-jcr-contentloader.html):
 
 1. Een submap SLING-INF/content maken onder de map src/main/resources van uw bundel
 1. Maak in deze map een bestand met de naam org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl.modified-&lt;some unique=&quot;&quot; name=&quot;&quot; for=&quot;&quot; your=&quot;&quot; factory=&quot;&quot; configuration=&quot;&quot;>.xml met de inhoud van uw fabrieksconfiguratie (met inbegrip van alle afbeeldingen van de subservicestgebruiker). Voorbeeld:
@@ -188,9 +194,9 @@ Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systee
 
 ## Werken met gedeelde sessies in services {#dealing-with-shared-sessions-in-services}
 
-verzoekt `loginAdministrative()` worden vaak samen met gedeelde sessies weergegeven. Deze zittingen worden verworven bij de dienstactivering en slechts het programma geopend nadat de dienst wordt tegengehouden. Hoewel dit gebruikelijk is, leidt het tot twee problemen:
+roept aan `loginAdministrative()` worden vaak samen met gedeelde sessies weergegeven. Deze zittingen worden verworven bij de dienstactivering en slechts het programma geopend nadat de dienst wordt tegengehouden. Hoewel dit gebruikelijk is, leidt het tot twee problemen:
 
-* **Beveiliging:** Dergelijke beheersessies worden gebruikt om bronnen of andere objecten die aan de gedeelde sessie zijn gebonden, in cache te plaatsen en terug te sturen. Later in de vraagstapel konden deze voorwerpen aan zittingen of middeloplossers met opgeheven voorrechten worden aangepast, en het is vaak niet duidelijk aan de bezoeker dat het een adminzitting is zij met werken.
+* **Veiligheid:** Dergelijke beheersessies worden gebruikt om bronnen of andere objecten die aan de gedeelde sessie zijn gebonden, in cache te plaatsen en terug te sturen. Later in de vraagstapel konden deze voorwerpen aan zittingen of middeloplossers met opgeheven voorrechten worden aangepast, en het is vaak niet duidelijk aan de bezoeker dat het een adminzitting is zij met werken.
 * **Prestaties:** In eiken kunnen gedeelde sessies prestatieproblemen veroorzaken en het wordt afgeraden deze te gebruiken.
 
 De meest voor de hand liggende oplossing voor het veiligheidsrisico is eenvoudigweg de vervanging van de `loginAdministrative()` bellen met een `loginService()` een voor een gebruiker met beperkte rechten. Dit heeft echter geen invloed op een mogelijke verslechtering van de prestaties. Een mogelijkheid om dat te beperken is alle gevraagde informatie te verpakken in een object dat geen koppeling heeft met de sessie. Maak vervolgens de sessie op verzoek (of vernietigt deze).
@@ -224,7 +230,7 @@ Bij het verwerken van gebeurtenissen of taken, en soms ook van workflows, gaat d
 
    **Nadelen:** Vereist krachtige de dienstgebruikers om flexibel te zijn, wat tot voorrechtescalaties kan gemakkelijk leiden. Hiermee wordt het beveiligingsmodel omzeild.
 
-1. Geef een serialisatie van de `Subject` in de gebeurtenislading, en creeer `ResourceResolver` op basis van dat onderwerp. Een voorbeeld hiervan is het gebruik van de JAAS `doAsPrivileged` in de `ResourceResolverFactory`.
+1. Geef een serialisatie van de `Subject` in de gebeurtenislading, en creeer `ResourceResolver` op basis van dat onderwerp. Een voorbeeld hiervan zou de JAAS gebruiken `doAsPrivileged` in de `ResourceResolverFactory`.
 
    **Voordelen:** Schone implementatie vanuit veiligheidsoogpunt. Het vermijdt opnieuw authentificatie en het werkt met de originele voorrechten. Beveiligingsrelevante code is transparant voor de consument van het evenement.
 
@@ -240,4 +246,4 @@ Om deze problemen op te lossen, wordt aanbevolen om dezelfde aanpak te kiezen al
 
 ## Verkoopprocessors en verwijderde POSTEN {#sling-post-processors-and-deleted-pages}
 
-Er zijn een paar administratieve zittingen die in de implementatie van de bewerker van de POST worden gebruikt. Meestal worden beheersessies gebruikt om toegang te krijgen tot knooppunten die in afwachting zijn van verwijdering binnen de POST die wordt verwerkt. Daarom zijn ze niet meer beschikbaar via de aanvraagsessie. Een knoop in afwachting van schrapping kan worden betreden om metada vrij te geven die anders niet toegankelijk zou moeten zijn.
+Er zijn een paar administratieve zittingen die in de implementatie van de bewerker van de POST worden gebruikt. Meestal worden beheersessies gebruikt om toegang te krijgen tot knooppunten die in afwachting zijn van verwijdering binnen de POST die wordt verwerkt. Daarom zijn ze niet meer beschikbaar via de aanvraagsessie. Een knooppunt dat moet worden verwijderd, kan worden benaderd om metagegevens bekend te maken die anders niet toegankelijk zouden moeten zijn.

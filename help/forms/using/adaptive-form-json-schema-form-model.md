@@ -5,7 +5,7 @@ feature: Adaptive Forms
 role: User, Developer
 level: Beginner, Intermediate
 exl-id: 1b402aef-a319-4d32-8ada-cadc86f5c872
-source-git-commit: f11bb43d914a43431cab408ca77690b6ba528a06
+source-git-commit: d0768679182567cc7cd618adaa78b6518f902f7c
 workflow-type: tm+mt
 source-wordcount: '1849'
 ht-degree: 0%
@@ -732,7 +732,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
 
 ## Schema-compatibele gegevens inschakelen {#enablig-schema-compliant-data}
 
-Voer de volgende stappen uit om het adaptieve formulier in staat te stellen de schema-compatibele gegevens te genereren voor het verzenden van formulieren:
+Voer de volgende stappen uit om alle op JSON-schema&#39;s gebaseerde Adaptieve Forms in staat te stellen schema-compatibele gegevens te genereren bij het verzenden van formulieren:
 
 1. Ga naar Experience Manager webconsole op `https://server:host/system/console/configMgr`.
 1. Zoeken **[!UICONTROL Adaptive Form and Interactice Communication Web Channel Configuration]**.

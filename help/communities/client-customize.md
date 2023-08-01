@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 exl-id: bf34f564-ac93-4c8c-95f7-8690d99d85cb
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1233'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Aanpassing aan clientzijde  {#client-side-customization}
 
-| **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
 |   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
 
@@ -35,7 +35,7 @@ Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
 Het bedekken van een component is een methode om wijzigingen aan een standaardcomponent aan te brengen en alle instanties te beïnvloeden die het gebrek gebruiken.
 
-De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in te wijzigen /**apps** map, in plaats van de oorspronkelijke component in de map / te wijzigen **libben** directory. De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
+De bedekking wordt verwezenlijkt door een exemplaar van de standaardcomponent in te wijzigen /**apps** in plaats van de oorspronkelijke component in de map / te wijzigen **libben** directory. De component is geconstrueerd met een identiek relatief pad, behalve dat &#39;libs&#39; wordt vervangen door &#39;apps&#39;.
 
 De map /apps is de eerste plaats die wordt gezocht om aanvragen op te lossen. Als deze niet wordt gevonden, wordt de standaardversie in de map /libs gebruikt.
 
@@ -57,11 +57,11 @@ Voor een kort voorbeeld van het uitbreiden van de commentaarcomponent, probeer [
 
 Het HBS-script voor de component moet zijn gebonden aan de JavaScript-objecten, -modellen en -weergaven, die deze functie implementeren.
 
-De waarde van de `data-scf-component` kenmerk kan de standaardwaarde zijn, zoals **`social/tally/components/hbs/rating`** of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/componenten/hbs/rating**.
+De waarde van `data-scf-component` kenmerk kan de standaardwaarde zijn, zoals **`social/tally/components/hbs/rating`** of een uitgebreide (aangepaste) component voor aangepaste functionaliteit, zoals **weretail/componenten/hbs/rating**.
 
 Om een component te binden, moet het volledige componentenmanuscript binnen een worden ingesloten &lt;div> element met de volgende kenmerken:
 
-* `data-component-id`=&quot;{{id}}&quot;
+* `data-component-id`=&quot;`{{id}}`&quot;
 
   wordt vanuit de context omgezet in de eigenschap id
 
@@ -70,7 +70,7 @@ Om een component te binden, moet het volledige componentenmanuscript binnen een 
 Bijvoorbeeld van `/apps/weretail/components/hbs/rating/rating.hbs`:
 
 ```xml
-<div class="we-Rating" data-component-id="{{id}}" data-scf-component="weretail/components/hbs/rating">
+<div class="we-Rating" data-component-id="`{{id}}`" data-scf-component="weretail/components/hbs/rating">
 
      <!-- HTML with HBS accessing the rating component -->
 
@@ -91,7 +91,7 @@ Componenten aanpassen aan het algemene thema van de website kan worden bereikt d
 
 Skin maken kan worden bereikt door de framestijlen selectief te overschrijven of door geheel nieuwe stijlpagina&#39;s te schrijven. De componenten SCF bepalen namespaced, modulaire, en semantische CSS klassen die de diverse elementen beïnvloeden die omhoog een component maken.
 
-Een skin toewijzen aan een component:
+Een component skin geven:
 
 1. Identificeer de elementen die u wilt veranderen (voorbeeld - composer gebied, toolbarknopen, berichtdoopvont, etc.).
 1. Identificeer de CSS klasse/de regels die deze elementen beïnvloeden.
@@ -100,7 +100,7 @@ Een skin toewijzen aan een component:
 
 1. Definieer de CSS-klassen en -regels die u hebt geïdentificeerd (#2) in uw stijlpagina opnieuw en voeg stijlen toe.
 
-De aangepaste stijlen overschrijven nu de standaardframestijlen en de component wordt weergegeven met de nieuwe skin.
+De aangepaste stijlen overschrijven nu de standaardframestijlen en de component wordt met de nieuwe skin gerenderd.
 
 >[!CAUTION]
 >
@@ -118,7 +118,7 @@ Als u een JavaScript-implementatie voor componenten wilt uitbreiden, moet u:
 1. Breid de methode uit.
 1. Gebruik SCF.registerComponent() om alle methoden te registreren met de standaardinstellingen of de aangepaste objecten en weergaven.
 
-### forum.js: Voorbeeld van uitbreiding van forum - GB  {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Sample Extension of Forum - HBS  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -171,7 +171,7 @@ Deze versies zijn te vinden in:
 Bijvoorbeeld:
 
 * Clientmapknooppunt: `/etc/clientlibs/social/hbs/forum`
-* Eigenschap Categorieën: `cq.social.hbs.forum`
+* Categorie-eigenschap: `cq.social.hbs.forum`
 
 De [Community Components Guide](components-guide.md) maakt een lijst van de volledige clientlibs die voor elke component SCF wordt vereist.
 
@@ -190,9 +190,9 @@ Deze versies staan in de map SCF libs:
 Bijvoorbeeld:
 
 * Clientmapknooppunt: `/libs/social/forum/hbs/forum/clientlibs`
-* Eigenschap Categorieën: `cq.social.author.hbs.forum`
+* Categorie-eigenschap: `cq.social.author.hbs.forum`
 
-Opmerking: hoewel auteur clientlibs geen andere bibliotheken inbedden , maken ze een lijst van hun afhankelijkheden . Wanneer de afhankelijkheden zijn ingesloten in andere bibliotheken, worden deze niet automatisch ingesloten en moeten ze ook worden ingesloten.
+Opmerking: hoewel auteur clientlibs geen andere bibliotheken heeft ingesloten, worden hun afhankelijkheden wel vermeld. Wanneer de afhankelijkheden zijn ingesloten in andere bibliotheken, worden deze niet automatisch ingesloten en moeten ze ook worden ingesloten.
 
 De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&quot;in de clientlibs op te nemen die voor elke component SCF in SCF worden vermeld [Community Components Guide](components-guide.md).
 
@@ -200,10 +200,10 @@ De vereiste auteur clientlibs kunnen worden geïdentificeerd door &quot;auteur&q
 
 Elke site is anders in de manier waarop ze clientbibliotheken beheren. Enkele factoren zijn:
 
-* Totale snelheid: Misschien is het de wens dat de site reageert, maar het is acceptabel dat de eerste pagina een beetje traag wordt geladen. Als veel pagina&#39;s dezelfde JavaScript gebruiken, kunnen de verschillende JavaScript-code in één client worden ingesloten en kan er vanaf de eerste pagina die moet worden geladen naar worden verwezen. Het JavaScript in deze enkele download blijft in het cachegeheugen opgeslagen, waardoor de hoeveelheid gegevens die voor volgende pagina&#39;s moet worden gedownload, tot een minimum wordt beperkt.
-* Korte tijd tot eerste pagina: Misschien is het de bedoeling dat de eerste pagina snel wordt geladen. In dit geval bestaat de JavaScript-code uit meerdere kleine bestanden waarnaar alleen kan worden verwezen als dat nodig is.
+* Algemene snelheid: misschien is het de bedoeling dat de site reageert, maar het is acceptabel dat de eerste pagina iets traag wordt geladen. Als veel pagina&#39;s dezelfde JavaScript gebruiken, kunnen de verschillende JavaScript-code in één client worden ingesloten en kan er vanaf de eerste pagina die moet worden geladen naar worden verwezen. Het JavaScript in deze enkele download blijft in het cachegeheugen opgeslagen, waardoor de hoeveelheid gegevens die voor volgende pagina&#39;s moet worden gedownload, tot een minimum wordt beperkt.
+* Kort naar eerste pagina: misschien is het de bedoeling dat de eerste pagina snel wordt geladen. In dit geval bestaat de JavaScript-code uit meerdere kleine bestanden waarnaar alleen kan worden verwezen als dat nodig is.
 * Een balans tussen het laden van de eerste pagina en volgende downloads.
 
-| **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
 |   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |

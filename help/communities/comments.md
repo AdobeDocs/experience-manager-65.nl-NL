@@ -7,7 +7,7 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 30baebd9-13c5-4fde-a494-85601abc32a5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -27,7 +27,7 @@ In het document wordt beschreven:
 
 >[!NOTE]
 >
->Anonieme berichten over opmerkingen worden niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen.
+>Anoniem plaatsen van een opmerking wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen.
 
 ### Opmerkingen toevoegen aan een pagina {#adding-comments-to-a-page}
 
@@ -49,7 +49,7 @@ Wanneer de [vereiste clientbibliotheken](/help/communities/essentials-comments.m
 
 ### Opmerkingen configureren {#configuring-comments}
 
-Selecteer de geplaatste `Comments` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Comments` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![Configuratiepictogram](assets/configure.png)
 
@@ -61,7 +61,7 @@ Onder de **Opmerkingen** , geeft u op hoe bezoekers opmerkingen invoeren.
 
 * **Antwoorden toestaan**
 
-  Als deze optie is ingeschakeld, kunnen leden reageren op bestaande opmerkingen. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden reageren op bestaande opmerkingen. De optie Standaard is uitgeschakeld.
 
 * **Opmerkingen per pagina**
 
@@ -69,7 +69,7 @@ Onder de **Opmerkingen** , geeft u op hoe bezoekers opmerkingen invoeren.
 
 * **Uploaden van bestanden toestaan**
 
-  Als deze optie is ingeschakeld, wordt de optie voor het uploaden van een bestand weergegeven in het tekstinvoervak. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, wordt de optie voor het uploaden van een bestand weergegeven in het tekstinvoervak. De optie Standaard is uitgeschakeld.
 
 * **Max. bestandsgrootte**
 
@@ -85,19 +85,19 @@ Onder de **Opmerkingen** , geeft u op hoe bezoekers opmerkingen invoeren.
 
 * **RTF-editor**
 
-  Als deze optie is ingeschakeld, worden opmerkingen ingevoerd met een markering. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, worden opmerkingen ingevoerd met een markering. De optie Standaard is uitgeschakeld.
 
 * **Stemmen toestaan**
 
-  Als deze optie is ingeschakeld, wordt de optie om omhoog of omlaag te stemmen weergegeven met het tekstinvoervak. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, wordt de optie om omhoog of omlaag te stemmen weergegeven met het tekstinvoervak. De optie Standaard is uitgeschakeld.
 
 * **Volgen toestaan**
 
-  Als deze optie is ingeschakeld, kunnen leden opmerkingen volgen. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden opmerkingen volgen. De optie Standaard is uitgeschakeld.
 
 * **Badges weergeven**
 
-  Als deze optie is ingeschakeld, kunnen verdiende en toegekende badges worden weergegeven. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen verdiende en toegekende badges worden weergegeven. De optie Standaard is uitgeschakeld.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
@@ -105,31 +105,31 @@ Onder de **Moderatie gebruiker** , geeft u op hoe de geposte opmerkingen worden 
 
 * **Pre-moderatie**
 
-  Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
 * **Opmerkingen verwijderen**
 
-  Als deze optie is ingeschakeld, kan het lid dat de opmerking heeft geplaatst deze verwijderen. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kan het lid dat de opmerking heeft geplaatst deze verwijderen. De optie Standaard is uitgeschakeld.
 
 * **Opmerkingen weigeren**
 
-  Indien gecontroleerd, sta moderators toe om commentaren te ontkennen. Standaard is uitgeschakeld.
+  Indien gecontroleerd, sta moderators toe om commentaren te ontkennen. De optie Standaard is uitgeschakeld.
 
 * **Opmerkingen sluiten/opnieuw openen**
 
-  Als deze optie ingeschakeld is, kan de moderator opmerkingen sluiten en opnieuw openen. Standaard is uitgeschakeld.
+  Als deze optie ingeschakeld is, kan de moderator opmerkingen sluiten en opnieuw openen. De optie Standaard is uitgeschakeld.
 
 * **Opmerkingen markeren**
 
-  Als deze optie is ingeschakeld, kunnen leden opmerkingen als onjuist markeren. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden opmerkingen als onjuist markeren. De optie Standaard is uitgeschakeld.
 
 * **Lijst met redenen voor vlag**
 
-  Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst de reden kiezen waarom een opmerking als onjuist wordt gemarkeerd. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst de reden kiezen waarom een opmerking als onjuist wordt gemarkeerd. De optie Standaard is uitgeschakeld.
 
 * **Reden voor aangepaste vlag**
 
-  Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een opmerking als ongeschikt te markeren. Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een opmerking als ongeschikt te markeren. De optie Standaard is uitgeschakeld.
 
 * **Moderniseringsdrempel**
 
@@ -145,11 +145,11 @@ Onder de **Instellingen sorteren** , geeft u op hoe de geposte opmerkingen worde
 
 * **Veld sorteren**
 
-  Omlaag trekken om een van de volgende opties te selecteren `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`.
+  Omlaag trekken om een van de `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`.
 
 * **Sorteervolgorde**
 
-  Omlaag trekken om een van de volgende opties te selecteren `Ascending` of `Descending`.
+  Omlaag trekken om een van de `Ascending` of `Descending`.
 
 ### Wijzigen in type aangepaste opmerking {#changing-to-a-custom-comment-type}
 
@@ -175,7 +175,7 @@ Onder de **Brontypen** tab, specificeer het custom resourceType voor nieuwe inst
 
 * **Brontype voor opmerkingensysteem**
 
-  Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](/help/communities/scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [{{include}} helper](/help/communities/handlebars-helpers.md#include).
+  Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](/help/communities/scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper](/help/communities/handlebars-helpers.md#include).
 
 ### Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -202,4 +202,4 @@ Meer informatie is te vinden op de [Essentiële opmerkingen](/help/communities/e
 
 Zie voor een moderatie van gepubliceerde opmerkingen [Door gebruiker gegenereerde inhoud modereren](/help/communities/moderate-ugc.md).
 
-Zie voor een vertaling van geposte opmerkingen [Door gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md).
+Zie voor een vertaling van geposte opmerkingen [Door de gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md).

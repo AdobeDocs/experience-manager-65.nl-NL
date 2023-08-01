@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
 workflow-type: tm+mt
 source-wordcount: '1213'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De `Reviews Summary (Display)` component verstrekt een samenvatting van een acti
 
 >[!NOTE]
 >
->Anonieme publicatie van een revisie wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen. De ondertekende bezoeker kan zijn of haar revisie op elk gewenst moment bijwerken.
+>Anonieme terbeschikkingstelling van een revisie wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen. De ondertekende bezoeker kan zijn of haar revisie op elk gewenst moment bijwerken.
 
 ## Een revisie toevoegen aan een pagina {#adding-a-review-to-a-page}
 
@@ -39,13 +39,13 @@ Wanneer de [vereiste clientbibliotheken](reviews-basics.md#essentials-for-client
 
 ## Revisies configureren {#configuring-reviews}
 
-Selecteer de geplaatste `Reviews` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Reviews` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![configure-new](assets/configure-new.png)
 
 Onder de **[!UICONTROL Allowed Ratings]** geeft u de volledige lijst met classificaties op die aan de leden moeten worden weergegeven. De eerste rating moet een algemene/algemene rating zijn, aangezien de rating de gemiddelde rating voor de `Review Summary (Display)` component. De volgende twee classificaties in de standaardconfiguratie moeten een andere titel krijgen dan &quot;Subrating 1&quot; of &quot;Subrating 2&quot;.
 
-![toegestaan](assets/configure-review1.png)
+![toegestane rating](assets/configure-review1.png)
 
 * **[!UICONTROL Allowed Ratings]**
 
@@ -53,7 +53,7 @@ Onder de **[!UICONTROL Allowed Ratings]** geeft u de volledige lijst met classif
 
   Gebruik de toetsen Pijl-omhoog, Pijl-omlaag en Pijl-verwijderen om de zichtbare selecties te wijzigen.
 
-  Klikken **[!UICONTROL Add Item]** om een andere beoordelingskeuze toe te voegen.
+  Klikken **[!UICONTROL Add Item]** een andere beoordelingskeuze toevoegen.
 
 Onder de **[!UICONTROL Required Ratings]** tabblad, opnieuw items in de lijst met **[!UICONTROL Allowed Ratings]** die moeten worden beoordeeld. Als een item alleen wordt opgegeven op het tabblad Toegestane waarderingen, kan het item niet worden gemarkeerd wanneer het door het lid wordt verzonden.
 
@@ -103,7 +103,7 @@ Onder de **[!UICONTROL Reviews]** , geeft u op hoe revisies worden verwerkt.
 
 * **[!UICONTROL Rich Text Editor]**
 
-  Als deze optie ingeschakeld is, kunnen er berichten met markeringen worden ingevoerd. De optie Standaard is uitgeschakeld.
+  Als deze optie ingeschakeld is, kunnen er berichten met opmaakcodes worden ingevoerd. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Voting]**
 
@@ -169,7 +169,7 @@ Wanneer de [vereiste clientbibliotheken](reviews-basics.md#essentials-for-client
 
 ### Overzicht van revisies configureren (weergave) {#configuring-reviews-summary-display}
 
-Selecteer de geplaatste `Reviews Summary (Display)` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Reviews Summary (Display)` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![vormen](assets/configure-new.png)
 
@@ -213,7 +213,7 @@ Onder de **[!UICONTROL Resource Types]** tab, specificeer het custom resourceTyp
 
 * **[!UICONTROL Comment System Resource Type]**
 
-  Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [{{include}} helper](handlebars-helpers.md#include).
+  Navigeer naar het resourceType van uitgebreid `comments`component (Opmerkingssysteem) in /apps. Leeg laten, tenzij de paginasjabloon [dynamisch omvat](scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop). Lees meer over de [`{{include}}` helper](handlebars-helpers.md#include).
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
@@ -242,4 +242,4 @@ Meer informatie is te vinden op de [Essentiële elementen controleren](reviews-b
 
 Zie voor een moderatie van gepubliceerde opmerkingen [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Zie voor een vertaling van geposte opmerkingen [Door gebruiker gegenereerde inhoud vertalen](translate-ugc.md).
+Zie voor een vertaling van geposte opmerkingen [Door de gebruiker gegenereerde inhoud vertalen](translate-ugc.md).

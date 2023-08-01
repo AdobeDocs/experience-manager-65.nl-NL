@@ -1,6 +1,6 @@
 ---
 title: Dynamic Media-publicatie-instellingen voor afbeeldingsserver configureren
-description: Leer hoe u Publiceren instelt in Dynamic Media.
+description: Leer hoe u Dynamic Media Publish Setup for Image Server configureert, zodat u elementen kunt publiceren. U kunt uw elementen ook testen voordat u ze openbaar maakt.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: administering
@@ -9,9 +9,9 @@ feature: Image Profiles
 role: User, Admin
 mini-toc-levels: 4
 exl-id: c86e79c4-e887-4ee3-bb54-eeffb34a33c2
-source-git-commit: 25fe5e240fd7404cb07375325e1f7b6a32923bfd
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3268'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,8 @@ Zie ook [Optioneel - Instellingen voor Dynamic Media- en Scene7-modus instellen 
 
 **Dynamic Media Publish Setup Image Server configureren:**
 
-1. In de wijze van de Auteur van de Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben.
-1. Selecteer in de linkertrack het pictogram Gereedschappen en ga naar **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
+1. Selecteer in de modus Auteur Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole.
+1. Selecteer in de linkertrack het pictogram Gereedschappen en ga vervolgens naar **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
 1. In de pagina van de Server van het Beeld, plaats uw Server van het Beeld - publiceer context, en gebruik dan de vijf lusjes om gebrek te vormen publiceer montages.
 
    * [Afbeeldingsserver](#image-server)
@@ -86,11 +86,11 @@ Deze instellingen hebben betrekking op de standaardweergave van afbeeldingen.
 | **[!UICONTROL Reply image size limit]** | Vereist.<br>Alleen voor nieuwe Dynamic Media-accounts wordt de standaardformaatlimiet automatisch ingesteld op Breedte: `3000` en Hoogte: `3000` voor beide **[!UICONTROL Image Serving]** en **[!UICONTROL Test Image Serving]**.<br>Geeft de maximale breedte en hoogte van de antwoordafbeelding aan die aan de client worden geretourneerd. De server retourneert een fout als een aanvraag een antwoordafbeelding veroorzaakt waarvan de breedte, of hoogte, of beide, groter is dan deze instelling.<br>Zie ook [MaxPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-maxpix.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Request obfuscation mode]** | Schakel deze optie in als u base64-codering wilt toepassen op geldige aanvragen.<br>Zie ook [RequestObfuscation](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestobfuscation.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Request locking mode]** | Schakel deze optie in als u een eenvoudige hash-vergrendeling wilt opnemen in aanvragen.<br>Zie ook [RequestLock](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-requestlock.html) in de Dynamic Media Viewers Reference Guide. |
-| **[!UICONTROL Default Request Attributes]** |  |
+| **[!UICONTROL Default Request Attributes]** | |
 | **[!UICONTROL Default image file suffix]** | Vereist.<br>Standaardbestandsextensie die wordt toegevoegd aan de waarden van het veld Pad en MaskPath voor de catalogus als het pad geen achtervoegsel voor het bestand bevat.<br>Zie ook [DefaultExt](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultext.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default font face name]** | Hiermee geeft u op welk lettertype wordt gebruikt als er geen lettertype is opgegeven door een aanvraag voor een tekstlaag. Indien opgegeven, moet dit een geldige naam voor het lettertype zijn in de lettertypetoewijzing van deze afbeeldingscatalogus of in de lettertypetoewijzing van de standaardcatalogus.<br>Zie ook [DefaultFont](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultfont.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default image]** | Biedt een standaardafbeelding die moet worden geretourneerd als reactie op een verzoek waarbij de gevraagde afbeelding niet wordt gevonden.<br>Zie ook [DefaultImage](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-is-cat-defaultimage.html) in de Dynamic Media Viewers Reference Guide.<br>**OPMERKING**: Als uw Dynamic Media Classic-account al een **[!UICONTROL Default image]** geselecteerd (zoals ingesteld onder **[!UICONTROL Setup]** > **[!UICONTROL Application]** > **[!UICONTROL Publish setup]**, onder **[!UICONTROL Default Request Attributes]** -groep), haalt uw Dynamic Media-account op Experience Manager het bestand op van Dynamic Media Classic. Het bestand wordt vervolgens opgeslagen en beschikbaar gesteld in dit veld wanneer u het dialoogvenster **[!UICONTROL Dynamic Media Publish Setup]** pagina voor het eerst. |
-| **[!UICONTROL Default image mode]** | Wanneer het schuifregelaarvak is ingeschakeld (schuifregelaar aan de rechterkant), wordt de schuifregelaar **[!UICONTROL Default image]** Hiermee vervangt u elke ontbrekende laag in de bronafbeelding door de standaardafbeelding en retourneert u de samenstelling zoals gewoonlijk. Wanneer het schuifregelaarvak is uitgeschakeld (schuifregelaar aan de linkerkant), wordt de volledige samengestelde afbeelding vervangen door de standaardafbeelding, zelfs als de ontbrekende afbeelding slechts een van de verschillende lagen is.<br>Zie ook [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) in de Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default image mode]** | Wanneer het schuifregelaarvak is ingeschakeld (schuifregelaar aan de rechterkant), wordt de knop **[!UICONTROL Default image]** Hiermee vervangt u elke ontbrekende laag in de bronafbeelding door de standaardafbeelding en retourneert u de samenstelling zoals gewoonlijk. Wanneer het schuifregelaarvak is uitgeschakeld (schuifregelaar aan de linkerkant), wordt de volledige samengestelde afbeelding vervangen door de standaardafbeelding, zelfs als de ontbrekende afbeelding slechts een van de verschillende lagen is.<br>Zie ook [DefaultImageMode](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultimagemode.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default view size]** | Vereist.<br>Alleen voor nieuwe Dynamic Media-accounts wordt de standaardweergavegrootte automatisch ingesteld op Breedte: `1280` en Hoogte: `1280` voor beide **[!UICONTROL Image Serving]** en **[!UICONTROL Test Image Serving]**.<br>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als in de aanvraag niet expliciet de weergavegrootte wordt opgegeven met `wid=`, `hei=`, of `scl=`.<br>Zie ook [DefaultPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultpix.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default thumbnail size]** | Vereist.<br>Wordt gebruikt in plaats van kenmerk **[!UICONTROL Default view size]** voor aanvragen van miniaturen (`req=tmb`). De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (`req=tmb`) geeft de grootte niet expliciet aan met `wid=`, `hei=`, of `scl=`.<br>Zie ook [DefaultThumbPix](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default background color]** | Hiermee geeft u de RGB-waarde op die wordt gebruikt om een willekeurig gebied van een antwoordafbeelding dat geen werkelijke afbeeldingsgegevens bevat, in te vullen.<br>Zie ook [BkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-bkgcolor.html) in de Dynamic Media Viewers Reference Guide. |
@@ -105,7 +105,7 @@ Deze instellingen hebben betrekking op de standaardweergave en -uitlijning van m
 
 | Instelling | Beschrijving |
 | --- | --- |
-| **[!UICONTROL Default background color for thumbnail]** | Hiermee geeft u de RGB-waarde op die wordt gebruikt om het gebied van een miniatuurafbeelding in de uitvoer te vullen dat geen werkelijke afbeeldingsgegevens bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]** of **[!UICONTROL Texture]**.<br>Zie ook [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) in de Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL Default background color for thumbnail]** | Hiermee geeft u de RGB-waarde op die wordt gebruikt om het gebied te vullen van een miniatuurafbeelding die geen werkelijke afbeeldingsgegevens bevat. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]** of **[!UICONTROL Texture]**.<br>Zie ook [ThumbBkgColor](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbbkgcolor.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Horizontal alignment]** | Geeft de horizontale uitlijning aan van de miniatuurafbeelding in de rechthoek van de antwoordafbeelding die wordt opgegeven door `wid=` en `hei=` waarden.<br>Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]**.<br>U kunt kiezen uit drie horizontale uitlijningen: **[!UICONTROL Center alignment]**, **[!UICONTROL Left alignment]**, en **[!UICONTROL Right alignment]**.<br>Zie ook [ThumbHorizAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbhorizalign.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Vertical alignment]** | Geeft de verticale uitlijning aan van de miniatuurafbeelding in de rechthoek van de antwoordafbeelding die wordt opgegeven door `wid=` en `hei=` waarden. Wordt alleen gebruikt voor miniatuuraanvragen (`req=tmb`) en wanneer **[!UICONTROL Default Thumbnail Type]** instellen op **[!UICONTROL Fit]**.<br>U kunt kiezen uit drie verticale uitlijningen: **[!UICONTROL Top alignment]**, **[!UICONTROL Center alignment]**, en **[!UICONTROL Bottom alignment]**.<br>Zie ook [ThumbVertAlign](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-thumbvertalign.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Default cache time to live]** | Verstrekt een standaardvervalinterval in uren voor het geval dat een bepaalde catalogusverslag geen geldige waarde van de Vervaldatum van de catalogus bevat. Instellen op `-1` om te markeren als nooit verlopen. <br>Zie ook [Verlopen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-expiration.html) in de Dynamic Media Viewers Reference Guide. |
@@ -133,7 +133,7 @@ Zie ook [IccRenderIntent](https://experienceleague.adobe.com/docs/dynamic-media-
 
 | Instelling | Kenmerken |
 | --- | --- |
-| **[!UICONTROL CMYK default color space]** | Hiermee geeft u de naam op van het ICC-kleurprofiel dat u wilt gebruiken als werkprofiel voor CMYK-gegevens. Indien **[!UICONTROL None Specified]** wordt gekozen, wordt kleurbeheer uitgeschakeld voor deze afbeeldingscatalogus als er CMYK-bronafbeeldingen bij betrokken zijn. Alle CMYK-werkruimten zijn apparaatafhankelijk, wat betekent dat ze zijn gebaseerd op werkelijke inkt- en papiercombinaties. De Adobe-benodigdheden van de CMYK-werkruimten zijn gebaseerd op standaarddrukwerkvoorwaarden.<br> Zie ook [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) in de Dynamic Media Viewers Reference Guide. |
+| **[!UICONTROL CMYK default color space]** | Hiermee geeft u de naam op van het ICC-kleurprofiel dat u wilt gebruiken als werkprofiel voor CMYK-gegevens. Indien **[!UICONTROL None Specified]** wordt gekozen, wordt kleurbeheer uitgeschakeld voor deze afbeeldingscatalogus als er CMYK-bronafbeeldingen bij betrokken zijn. Alle CMYK-werkruimten zijn apparaatafhankelijk, wat betekent dat ze zijn gebaseerd op werkelijke inkt- en papiercombinaties. De Adobe-benodigdheden van de CMYK-werkruimten zijn gebaseerd op standaarddrukcondities voor commerciële drukwerk.<br> Zie ook [IccProfileCMYK](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilecmyk.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Gray-Scale default color space]** | Hiermee geeft u de naam op van het ICC-kleurprofiel dat u wilt gebruiken als werkprofiel voor grijswaardengegevens. Indien **[!UICONTROL None Specified]** wordt gekozen, wordt kleurbeheer uitgeschakeld voor deze afbeeldingscatalogus wanneer er bronafbeeldingen met grijswaarden bij betrokken zijn.<br>Zie ook [IccProfileGray](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilegray.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL RGB default color space]** | Hiermee geeft u de naam op van het ICC-kleurprofiel dat u wilt gebruiken als werkprofiel voor RGB-gegevens. Indien **[!UICONTROL None Specified]** wordt gekozen, wordt kleurbeheer uitgeschakeld voor deze afbeeldingscatalogus wanneer er afbeeldingen met RGB-bronnen bij betrokken zijn. In het algemeen is het beter om **[!UICONTROL Adobe RGB]** of **[!UICONTROL sRGB]** in plaats van het profiel voor een specifiek apparaat (zoals een monitorprofiel). **[!UICONTROL sRGB]** wordt aanbevolen voor het voorbereiden van afbeeldingen voor het web of mobiele apparaten, omdat hiermee de kleurruimte wordt gedefinieerd van de standaardmonitor die wordt gebruikt om afbeeldingen op het web weer te geven. **[!UICONTROL sRGB]** is ook geschikt wanneer u werkt met afbeeldingen van digitale camera&#39;s op consumentenniveau, omdat bij het merendeel van deze camera&#39;s s sRGB als de standaardkleurruimte worden gebruikt.<br>Zie ook [IccProfileRBG](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-iccprofilergb.html) in de Dynamic Media Viewers Reference Guide. |
 | **[!UICONTROL Color conversion rendering intent]** | **[!UICONTROL Perceptual]** - Beoogd wordt de visuele relatie tussen kleuren te behouden, zodat deze voor het menselijk oog natuurlijk worden ervaren, ook al kunnen de kleurwaarden zelf veranderen. Deze intent is geschikt voor fotografische afbeeldingen met veel kleuren die buiten de kleuromvang vallen. Deze instelling is de standaard rendering intent voor de Japanse afdrukindustrie. |
@@ -149,7 +149,7 @@ Met Beveiligd testen kunt u een voorvertoning van de testversie van de website w
 
 Maak indien gewenst een testomgeving in plaats van elementen openbaar te maken, en wel om de volgende redenen:
 
-* Geef een voorvertoning weer van websites voordat u deze openbaar maakt (website die wordt gefaseerd).
+* Geef een voorvertoning weer van websites voordat u deze openbaar maakt (website voor opvoeren).
 * Serve activa die beperkte toegang, zoals eCatalogi vereisen die prijzen in een B2B Webtoepassing tonen.
 * Gebruik middelen achter een firewall als onderdeel van het systeem voor productinformatiebeheer, de toepassing van de klantenservice, de trainingssite enzovoort.
 
@@ -181,7 +181,7 @@ De Secure Testing-services bieden momenteel ondersteuning voor de volgende typen
 * Sets, inclusief afbeeldingssets, eCatalog, rendersets en mediasets.
 * Standaard Adobe Dynamic Media-viewers met rijke media.
 * Adobe Dynamic Media OnDemand JSP-pagina&#39;s.
-* Statische inhoud, zoals PDF-bestanden en progressief bediende video&#39;s.
+* Statische inhoud, zoals PDF-bestanden en progressieve video&#39;s.
 * HTTP-videostreaming.
 * Progressieve videostreaming.
 
@@ -192,13 +192,13 @@ De volgende elementtypen en -functies worden momenteel niet ondersteund:
 * Web-to-print
 * UGC-services (door de gebruiker gegenereerde inhoud)
 
-   >[!IMPORTANT]
-   >
-   >Vanaf 1 mei 2023 zijn UGC-middelen in Dynamic Media beschikbaar voor gebruik tot 60 dagen na de uploaddatum. Na 60 dagen worden de middelen verwijderd.
+  >[!IMPORTANT]
+  >
+  >Vanaf 1 mei 2023 zijn UGC-middelen in Dynamic Media beschikbaar voor gebruik tot 60 dagen na de uploaddatum. Na 60 dagen worden de middelen verwijderd.
 
-   >[!NOTE]
-   >
-   >De ondersteuning voor nieuwe of bestaande UGC-vectorafbeeldingselementen in Adobe Dynamic Media is afgelopen op 30 september 2021.
+  >[!NOTE]
+  >
+  >De ondersteuning voor nieuwe of bestaande UGC-vectorafbeeldingselementen in Adobe Dynamic Media is afgelopen op 30 september 2021.
 
 ### De service Beveiligde tests testen {#test-secure-testing-service}
 
@@ -209,7 +209,7 @@ Ga als volgt te werk om ervoor te zorgen dat de service Beveiligd testen naar be
 1. Neem contact op met de klantenservice van Adobe en verzoek hen om Beveiligingstests op uw account in te schakelen.
 1. Selecteer in Adobe Experience Manager **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media Publish Setup]**.
 1. Op de pagina van de Server van het Beeld, in **[!UICONTROL Publish Context]** vervolgkeuzelijst, selecteert u **[!UICONTROL Test Image Serving]**.
-1. Selecteer **[!UICONTROL Security]** tab.
+1. Selecteer de **[!UICONTROL Security]** tab.
 1. Voor de **[!UICONTROL Client address]** filter, selecteren **[!UICONTROL Add]**.
 1. In de **[!UICONTROL IP Address]** veld, typt u een IP-adres.
 1. In de **[!UICONTROL Mask]** veld, typt u een netmasker.
@@ -235,7 +235,7 @@ Ga als volgt te werk om ervoor te zorgen dat de service Beveiligd testen naar be
 1. Bepaal de naam van uw Veilige het Testen dienst door te gaan **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Dynamic Media General Setting]**.
 1. Op de **[!UICONTROL Server]** pagina, zoek de servernaam rechts van **[!UICONTROL Published Server Name]**.
 
-Neem contact op met de Adobe als de servernaam ontbreekt of als de URL naar de server niet werkt.
+Neem contact op met de Adobe-service als de servernaam ontbreekt of als de URL naar de server niet werkt.
 
 #### Websitevariaties voorbereiden
 

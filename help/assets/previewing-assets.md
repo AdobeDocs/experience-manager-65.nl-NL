@@ -1,6 +1,6 @@
 ---
 title: Elementen voorvertonen
-description: Leer hoe u een voorvertoning van elementen in Dynamic Media kunt bekijken.
+description: Leer hoe u in Dynamic Media voorvertoningen van elementen, zoals video's en afbeeldingen, kunt weergeven door voorinstellingen voor afbeeldingen en viewers toe te passen.
 uuid: 09e97245-373b-4d50-8ba3-5d1034a29988
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -11,9 +11,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 84f0c406-4ab6-48c7-8223-61a8c3ade363
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1356'
+source-wordcount: '1368'
 ht-degree: 0%
 
 ---
@@ -31,13 +31,13 @@ Naast het gebruik van de specifieke functie Voorvertoning voor video, centrifuge
 
 >[!NOTE]
 >
->Wanneer u op een webpagina (sites) in Adobe Experience Manager werkt, kunt u geen voorvertoning van elementen weergeven in **Bewerken** in. Ga naar de modus Voorbeeld door te klikken op **[!UICONTROL Preview]** in de rechterbovenhoek van de pagina.
+>Wanneer u op een webpagina (sites) in Adobe Experience Manager werkt, kunt u geen voorvertoning van elementen weergeven in **Bewerken** -modus. Ga naar de modus Voorbeeld door op **[!UICONTROL Preview]** rechtsboven op de pagina.
 
 Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen, raadpleegt u [Viewer-voorinstellingen beheren](/help/assets/managing-viewer-presets.md).
 
 **Een voorvertoning van elementen weergeven via de software-interface:**
 
-1. Van **[!UICONTROL Adobe Experience Manager]** over de **[!UICONTROL Navigation]** pagina, selecteert u **[!UICONTROL Assets]** vervolgens **[!UICONTROL Files]** om toegang te krijgen tot elementen.
+1. Van **[!UICONTROL Adobe Experience Manager]**, over de **[!UICONTROL Navigation]** pagina, selecteert u **[!UICONTROL Assets]** vervolgens **[!UICONTROL Files]** om toegang te krijgen tot elementen.
 1. In de rechterbovenhoek van de pagina, vanaf de **[!UICONTROL View]** vervolgkeuzelijst, selecteert u **[!UICONTROL List View]**.
 1. (Optioneel) Gebruik de opdracht **[!UICONTROL Type]** om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
 1. Onder de **[!UICONTROL Title]** klikt u op de titelnaam (niet op de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
@@ -64,10 +64,10 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
       </ul>
       <p><strong>Navigeren door de 3D-scène</strong></p>
       <ul>
-      <li><p><strong>De 3D-camera draaien</strong> - Draai de weergave rond de 3D-scène en -objecten.</p> Muis: Klikken met linkermuisknop en slepen </p> Aanraakscherm: Druk op + sleep</p></li>
-      <li><p><strong>Uw camera pannen</strong> - Verschuif uw weergave naar links, rechts, omhoog en omlaag.</p> Muis: Klikken met rechtermuisknop + slepen </p> Aanraakscherm: Dubbelvingers drukken + slepen</p></li>
-      <li><p><strong>Uw camera zoomen</strong> - Zoom de camera in en uit zodat u in- en uitzoomgebieden in de 3D-scène kunt verplaatsen.</p> Muis: Schuifwiel </p> Aanraakscherm: Vingerknijpbeweging</p></li>
-      <li><p><strong>De camera opnieuw opnemen</strong> - Draai de weergave rond de 3D-scène en -objecten.</p> Muis: Dubbelklikken </p> Aanraakscherm: Dubbeltikken</li></ul></td>
+      <li><p><strong>De 3D-camera draaien</strong> - Draai de weergave rond de 3D-scène en -objecten.</p> Muis: Linkerklik + Slepen </p> Aanraakscherm: Pers + slepen</p></li>
+      <li><p><strong>Uw camera pannen</strong> - Verschuif uw weergave naar links, rechts, omhoog en omlaag.</p> Muis: rechtsklikken + slepen </p> Aanraakscherm: druk met twee vingers + sleep</p></li>
+      <li><p><strong>Uw camera zoomen</strong> - Zoom de camera in en uit zodat u in- en uitzoomgebieden in de 3D-scène kunt verplaatsen.</p> Muis: schuifwiel </p> Aanraakscherm: vingerknijp</p></li>
+      <li><p><strong>De camera opnieuw opnemen</strong> - Draai de weergave rond de 3D-scène en -objecten.</p> Muis: dubbelklikken </p> Aanraakscherm: dubbeltikken</li></ul></td>
       </tr>
       <tr>
       <td><p>Afbeelding</p> </td>
@@ -148,7 +148,7 @@ Als u viewervoorinstellingen in de gebruikersinterface wilt in- of uitschakelen,
 
 1. Navigeer in de gebruikersinterface Middelen naar een map met een element dat u wilt voorvertonen.
 
-1. Druk in de map op de knop `<Tab>` of pijltoetsen op uw toetsenbord om het element te selecteren.
+1. Druk in de map op `<Tab>` of pijltoetsen op uw toetsenbord om het element te selecteren.
 
 1. Druk `<Enter>` zodat u het geselecteerde element kunt openen in de modus Voorbeeld.
 

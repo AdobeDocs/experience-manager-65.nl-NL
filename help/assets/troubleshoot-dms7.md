@@ -1,6 +1,6 @@
 ---
 title: Problemen met Dynamic Media oplossen - Scene7-modus
-description: Los Dynamic Media problemen op wanneer het op Scene7 wijze loopt.
+description: Leer hoe u installatie-, configuratie- en algemene problemen in Dynamic Media kunt oplossen en oplossen wanneer deze in de Scene7-modus worden uitgevoerd.
 uuid: 77e04ccf-33dc-4d2f-8950-318d4b008f74
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -12,9 +12,9 @@ role: User, Admin
 exl-id: d4507059-a54d-4dc9-a263-e55dfa27eeb1
 feature: Troubleshooting
 mini-toc-levels: 3
-source-git-commit: 9c3df2491f99fe31e4b64b47442dd583af06974e
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '1378'
+source-wordcount: '1389'
 ht-degree: 0%
 
 ---
@@ -27,16 +27,16 @@ In het volgende document worden de problemen beschreven die optreden bij Dynamic
 
 Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende te doen:
 
-* Opstarten bevat de opdracht `-r dynamicmedia_scene7` run mode argument.
+* Opstarten bevat de opdracht `-r dynamicmedia_scene7` argument voor uitvoermodus.
 * Alle Adobe Experience Manager 6.4-pakketten met cumulatieve oplossingen (GFP&#39;s) zijn eerst geïnstalleerd *voor* alle beschikbare Dynamic Media Feature Packs.
 * Optioneel Feature Pack 18912 is geïnstalleerd.
 
-   Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen van Dynamic Media Classic naar Dynamic Media migreert.
+  Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen van Dynamic Media Classic naar Dynamic Media migreert.
 
 * Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder verschijnt **[!UICONTROL Available Configurations]**.
 * Zorg ervoor dat de `Dynamic Media Asset Activation (scene7)` replicatieagent is ingeschakeld.
 
-   Deze replicatieagent wordt gevonden onder Medewerkers op Auteur.
+  Deze replicatieagent wordt gevonden onder Medewerkers op Auteur.
 
 ## Algemeen (alle activa) {#general-all-assets}
 
@@ -67,7 +67,7 @@ Voer de volgende handelingen uit voordat u een bewerking Verplaatsen, Kopiëren 
 
 ### Versiebeheer {#version-control}
 
-Bij het vervangen van een bestaand Dynamic Media-element (dezelfde naam en locatie) kunt u beide elementen behouden of een versie vervangen/maken:
+Wanneer u een bestaand Dynamic Media-element vervangt (dezelfde naam en locatie), kunt u beide elementen behouden of een versie vervangen/maken:
 
 * Als u beide instellingen behoudt, wordt een element gemaakt met een unieke naam voor de URL van het gepubliceerde element. Bijvoorbeeld: `image.jpg` het oorspronkelijke middel is en `image1.jpg` is het nieuw geüploade element.
 
@@ -94,7 +94,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
        <li>Controleer of het element in de JCR <code>dam:scene7FileStatus</code><strong> </strong>onder Metagegevens wordt weergegeven als <code>PublishComplete</code>.</li>
       </ul> </li>
     </ol> </td>
-   <td><p>Pagina vernieuwen/naar een andere pagina navigeren en terugkeren (JSP voor side rail moet opnieuw worden gecompileerd)</p> <p>Als dat niet werkt:</p>
+   <td><p>Pagina vernieuwen/naar een andere pagina navigeren en terugkeren (JSP voor side rail moet opnieuw worden samengesteld)</p> <p>Als dat niet werkt:</p>
     <ul>
      <li>Middelen publiceren.</li>
      <li>Elementen opnieuw laden en publiceren.</li>
@@ -117,7 +117,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr>
   <tr>
    <td>De afbeelding wordt niet voorvertoond met de Dynamic Media-viewer</td>
-   <td><p>Controleren of het element het element bevat <code>dam:scene7File</code> in de eigenschappen van metagegevens (CRXDE Lite)</p> </td>
+   <td><p>Controleren of het element bevat <code>dam:scene7File</code> in de eigenschappen van metagegevens (CRXDE Lite)</p> </td>
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td>
   </tr>
   <tr>
@@ -154,7 +154,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td>
     <ul>
      <li>Controleer of aan de map een videoprofiel is toegewezen (als de bestandsindeling niet wordt ondersteund). Als deze optie niet wordt ondersteund, wordt alleen een afbeelding weergegeven.</li>
-     <li>Het videoprofiel moet meer dan één coderingsvoorinstelling bevatten om een AVS-set te genereren (enkele coderingen worden behandeld als video-inhoud voor MP4-bestanden). voor niet-ondersteunde bestanden, op dezelfde manier behandeld als niet-verwerkte bestanden).</li>
+     <li>Videoprofiel moet meer dan één coderingsvoorinstelling bevatten om een AVS-set te genereren (afzonderlijke coderingen worden behandeld als video-inhoud voor MP4-bestanden; voor niet-ondersteunde bestanden wordt deze voorinstelling op dezelfde manier behandeld als niet-verwerkte bestanden).</li>
      <li>Controleer of de video is verwerkt door te bevestigen <code>dam:scene7FileAvs</code> van <code>dam:scene7File</code> in metagegevens.</li>
     </ul> </td>
    <td>
@@ -210,12 +210,12 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
 
 Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u problemen hebt met viewers.
 
-### Probleem: Viewer-voorinstellingen worden niet gepubliceerd {#viewers-not-published}
+### Probleem: viewervoorinstellingen worden niet gepubliceerd {#viewers-not-published}
 
 **Foutopsporing**
 
 1. Ga door naar de diagnostische pagina van de voorbeeldmanager: `https://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html`.
-1. Berekende waarden observeren. Wanneer correct werkend, ziet u het volgende: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
+1. Bekijk berekende waarden. Wanneer correct werkend, ziet u het volgende: `_DMSAMPLE status: 0 unsyced assets - activation not necessary _OOTB status: 0 unsyced assets - 0 unactivated assets`.
 
    >[!NOTE]
    >
@@ -229,7 +229,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
 1. Selecteer alle voorinstellingen van de viewer en selecteer **Publiceren**.
 1. Navigeer terug naar voorbeeldbeheer en controleer of het aantal niet-geactiveerde elementen nu nul is.
 
-### Probleem: Vooraf ingestelde illustraties van de viewer retourneren 404 vanuit Voorvertoning in elementdetails of URL kopiëren/code insluiten {#viewer-preset-404}
+### Probleem: met vooraf ingestelde illustraties van de viewer wordt 404 geretourneerd vanuit Voorvertoning in gegevens over elementen of via URL kopiëren/code insluiten {#viewer-preset-404}
 
 **Foutopsporing**
 
@@ -244,8 +244,7 @@ Ga als volgt te werk bij CRXDE Lite:
    * `"is/content"`
    * `dam:scene7Folder`
    * `<asset-name>`
-Voorbeeld: 
-`https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
+Voorbeeld: `https://<server>/is/content/myfolder/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png`
 
 **Oplossing**
 
@@ -253,18 +252,18 @@ Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet
 
 1. Navigeer naar CRXDE Lite.
 1. Verwijderen `<sync-folder>/_CSS/_OOTB`.
-1. Ga naar CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
-1. Zoeken naar viewerpakket in de lijst; begint met `cq-dam-scene7-viewers-content`.
+1. Navigeer naar de CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
+1. Zoeken naar een viewerpakket in de lijst; het begint met `cq-dam-scene7-viewers-content`.
 1. Selecteren **Opnieuw installeren**.
 1. Onder Cloud Services, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
 1. Geen wijzigingen aanbrengen, selecteer **Opslaan**.
 Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en de illustraties te maken en te synchroniseren.
 
-### Probleem: Afbeeldingsvoorvertoning wordt niet geladen in het ontwerpen van viewervoorinstellingen {#image-preview-not-loading}
+### Probleem: Voorvertoning van afbeelding wordt niet geladen in ontwerpvoorinstellingen van viewer {#image-preview-not-loading}
 
 **Oplossing**
 
-1. In Experience Manager, selecteer het embleem van de Experience Manager om tot de globale navigatieconsole toegang te hebben, dan navigeer aan **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
+1. Selecteer in Experience Manager het logo van de Experience Manager voor toegang tot de algemene navigatieconsole en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL CRXDE Lite]**.
 1. Navigeer in de linkertrack naar de map met voorbeeldinhoud op de volgende locatie:
 
    `/content/dam/_DMSAMPLE`

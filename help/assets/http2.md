@@ -1,6 +1,6 @@
 ---
 title: HTTP2-levering van content
-description: HTTP/2 verbetert de manier waarop browsers en servers communiceren, waardoor informatie sneller kan worden overgedragen en de hoeveelheid benodigde verwerkingskracht wordt verminderd.
+description: Leer hoe HTTP/2 de manier verbetert browsers en servers communiceren, die voor snellere overdracht van informatie terwijl het verminderen van de hoeveelheid nodig verwerkingscapaciteit toestaan.
 uuid: d9deb945-bdf5-4d6b-95c8-8bae4442e618
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,9 +10,9 @@ discoiquuid: c8e145ad-f021-4043-8190-62151775e296
 role: User, Admin
 exl-id: 9eb9f309-33e5-4694-84d2-fb2cd3de50a6
 feature: Publishing,Configuration
-source-git-commit: a78de999992d4ab2fc63b5f7e796aa0d5527cb26
+source-git-commit: 7f8cfe155af3b8831e746ced89c11c971e429f69
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Prestatieverbetering kan sterk variëren. Het is gebaseerd op vele factoren zoal
 
 Resultaten:
 
-* Voor afbeeldingen verbeterde de responstijd 7%-28%, afhankelijk van het apparaat en de browser. De meest opmerkelijke prestatiewinst was op iOS-apparaten.
+* Voor afbeeldingen verbeterde de responstijd 7%-28%, afhankelijk van apparaat en browser. De meest opmerkelijke prestatiewinst was op iOS-apparaten.
 * Voor viewers verbeterde de laadtijd tot 15%.
 
 De volgende demonstratie illustreert het verschil tussen het laden van HTTP/1 en HTTP/2:
@@ -54,13 +54,13 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 * Gebruik de Adobe-gebundelde CDN (content delivery network) als onderdeel van uw Dynamic Media-licentie.
 * Gebruik een specifiek (niet-bedrijf-h.assetsadobe#.com) domein.
 
-   Als u al een toegewezen domein hebt, kunt u zich aanmelden via Adobe Klantenondersteuning.
+  Als u al een toegewezen domein hebt, kunt u zich aanmelden via Adobe Klantenondersteuning.
 
-   Als u geen specifiek domein hebt, is Adobe van plan om uw overgang naar HTTP/2 in 2018 te plannen.
+  Als u geen specifiek domein hebt, is Adobe van plan om uw overgang naar HTTP/2 in 2018 te plannen.
 
 ## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
-U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
+U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet automatisch gedaan voor u.
 
 1. Als u wilt overschakelen op HTTP/2, start u een verzoek voor klantenondersteuning van Adobe. Zie [Een ondersteuningsticket openen](https://experienceleague.adobe.com/?support-solution=General&amp;lang=en&amp;support-tab=home#support).
 
@@ -71,6 +71,7 @@ U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet au
       1. Verifieer u veilige HTTPS voor rijke media verzoeken gebruikt.
       1. Verifieer u CDN door Adobe gebruikt en niet met een directe verhouding beheerd.
       1. Controleer of u een specifiek domein gebruikt. Als u Dynamic Media gebruikt, gebruikt u een speciaal domein.
+
    1. De Steun van de klant voegt u aan de HTTP/2 klantenwachtlijst toe die in de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
    1. Wanneer Adobe bereid is om uw verzoek te behandelen, contacteert de Steun van de Klant u om de overgang te coördineren en een doeldatum te plaatsen.
    1. U wordt op de hoogte gesteld na voltooiing en kunt een geslaagde overgang naar HTTP2 controleren.
@@ -78,7 +79,6 @@ U stelt het verzoek in werking om op HTTP/2 over te schakelen; het wordt niet au
       Omdat in de browser dit feit niet wordt vermeld, is het nodig een extensie te downloaden.
 
       Voor Firefox en Chrome is er een extensie met de naam &quot;HTTP/2 en SPDY Indicator&quot;. Browsers ondersteunen alleen veilig http/2, dus is het nodig een URL met https aan te roepen om te verifiëren. Als http/2 wordt ondersteund, wordt dit aangegeven door de extensie in de vorm van een blauw Flash-symbool en een header &quot;X-Firefox-Spdy&quot;: &quot;h2&quot;.
-
 
 ## Wanneer kan ik verwachten over te gaan naar HTTP/2? {#when-can-i-expect-to-be-transitioned-over-to-http}
 

@@ -2,9 +2,9 @@
 title: Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC
 description: Leer hoe u bestanden comprimeert en decomprimeert met een AEM Forms op een aangepaste JEE DSC
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '483'
 ht-degree: 0%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 ## Vereiste kennis {#prerequisites}
 
-Ervaring met AEM Forms op het gebied van JEE Process Management, basisprogrammering van Java en het maken van aangepaste componenten.
+Ervaar met AEM Forms op JEE Process Management, basisprogrammering van Java™ en het maken van aangepaste componenten.
 
 **Aanvullende vereiste andere producten**
 
-Java-editor zoals [Eclipse](https://www.eclipse.org/) of [Netbeans IDE](https://netbeans.apache.org/)
+Java™-editor zoals [Eclipse](https://www.eclipse.org/) of [Netbeans IDE](https://netbeans.apache.org/)
 
 ## Gebruikersniveau {#user-level}
 
@@ -187,7 +187,7 @@ Het bestand component.xml wordt hier weergegeven:
 
 ## Het verpakken en het opstellen van de component {#packaging-deploying-component}
 
-1. Compileer het Java-project en maak een JAR-bestand.
+1. Compileer het Java™-project en maak een JAR-bestand.
 1. Implementeer de component (.JAR-bestand) in JEE-runtime naar de AEM Forms via Workbench.
 1. Start de service vanuit Workbench (zie onderstaande afbeelding).
 
@@ -213,7 +213,7 @@ U kunt deze ZIP-service voor de volgende gebruiksgevallen gebruiken:
 
 * Alle bestanden in een bepaalde map zoeken en de bestanden terugsturen als gecomprimeerd document.
 
-* Geef een ZIP-bestand op dat een aantal PDF-documenten bevat die door de lezer kunnen worden uitgebreid nadat deze zijn gedecomprimeerd. Hiervoor is AEM Forms op de JEE Reader Extensions-module vereist.
+* Geef een ZIP-bestand op dat meerdere PDF-documenten bevat die door de lezer kunnen worden uitgebreid nadat deze zijn gedecomprimeerd. Hiervoor is AEM Forms op de JEE Reader Extensions-module vereist.
 
 * Geef een ZIP-bestand op met een heterogeen type document dat kan worden gedecomprimeerd en geconverteerd als PDF-document met de service PDF genereren.
 

@@ -1,16 +1,15 @@
 ---
 title: Hoe te om hakjes in dynamische PDF forms te produceren en te werken?
-description: Hashes genereren en werken met dynamische PDF forms
+description: Het produceren van en het werken met Hashes in dynamische PDF forms.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '1249'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
 
 # Hashes genereren en werken met dynamische PDF forms {#generate-work-with-hashes-dynamic-pdf-forms}
-
 
 ## Vereiste kennis {#prerequisite-knowledge}
 
@@ -20,9 +19,9 @@ Er is enige ervaring met AEM Forms in JEE Designer vereist, evenals de mogelijkh
 
 Begin
 
-Wanneer u een wachtwoord in uw PDF-formulier wilt verbergen en u wilt het wachtwoord niet in duidelijke tekst in de broncode of elders in het PDF-document opnemen, is het van wezenlijk belang dat u weet hoe u hashes voor MD4, MD5, SHA-1 en SHA-256 kunt genereren en gebruiken.
+Wanneer u een wachtwoord in uw PDF vorm wilt verbergen en u wilt het niet in duidelijke teksten binnen de broncode of elders in het document van de PDF hebben, wetend hoe te om MD4, MD5, SHA-1, en SHA-256 knoeiboel te produceren en te werken is zeer belangrijk.
 
-Het idee is om het wachtwoord te verduisteren door een unieke knoeiboel te produceren en deze knoeiboel in het document van de PDF op te slaan. Deze unieke hash kan door verschillende hashfuncties worden gegenereerd. In dit artikel laat ik u zien hoe u deze in het PDF-formulier kunt genereren en hoe u ermee kunt werken.
+Het idee is om het wachtwoord te verduisteren door een unieke knoeiboel te produceren en deze knoeiboel in het document van de PDF op te slaan. Deze unieke hash kan door verschillende hashfuncties worden gegenereerd. In dit artikel ziet u hoe u deze in het PDF-formulier kunt genereren en hoe u ermee kunt werken.
 
 Een hashfunctie heeft een lange tekenreeks (of bericht) van elke lengte als invoer en produceert een tekenreeks met een vaste lengte als uitvoer, ook wel een berichtenoverzicht of een digitale vingerafdruk genoemd.
 
@@ -32,11 +31,11 @@ Met AEM Forms on JEE Designer kunt u de verschillende hashfuncties in scriptobje
 
 * SHA-1 en SHA-256 - zoals gedefinieerd door NIST
 
-Het grootste voordeel van het gebruik van hashes is dat u wachtwoorden niet rechtstreeks hoeft te vergelijken door duidelijke tekstreeksen te vergelijken. in plaats daarvan, kunt u de twee knoeiboel van de twee wachtwoorden vergelijken. Omdat het zeer onwaarschijnlijk is dat twee verschillende koorden de zelfde knoeiboel zullen hebben, als beide knoeiboel identiek zijn, dan kunt u veronderstellen dat de vergeleken koorden (in dit geval, de wachtwoorden) ook identiek zijn.
+Het grootste voordeel van het gebruiken van knoeiboel is dat u geen wachtwoorden moet direct vergelijken door duidelijke tekstkoorden te vergelijken; in plaats daarvan, kunt u de twee haken van de twee wachtwoorden vergelijken. Omdat het onwaarschijnlijk is dat twee verschillende koorden de zelfde knoeiboel hebben, als beide knoeiboel identiek zijn, dan kunt u veronderstellen dat de vergeleken koorden (in dit geval, de wachtwoorden) ook identiek zijn.
 
 >[!NOTE]
 >
->Er zijn een aantal bekende veiligheidskwesties (de zogenaamde knoeiboelbotsingen) met MD4 of MD5. Vanwege die hash-botsingen en andere SHA-1-hacks (inclusief regenboogtafels) besloot ik me te concentreren op de SHA-256 hash-functie in het tweede voorbeeld.  Zie voor meer informatie de [Botsing](https://en.wikipedia.org/wiki/Hash_collision) en [Regenboogtabel](https://en.wikipedia.org/wiki/Rainbow_table) pagina&#39;s van Wikipedia.
+>Er zijn enkele bekende beveiligingsproblemen (zogenaamde hash-botsingen) met MD4 of MD5. Vanwege die hash-botsingen en andere SHA-1-hacks (inclusief regenboogtafels) besloot ik me te concentreren op de SHA-256 hash-functie in het tweede voorbeeld. Zie de klasse [Botsing](https://en.wikipedia.org/wiki/Hash_collision) en [Regenboogtabel](https://en.wikipedia.org/wiki/Rainbow_table) pagina&#39;s van Wikipedia.
 
 ## Scriptobjecten onderzoeken {#examining-script-objects}
 
@@ -44,7 +43,7 @@ Wanneer u een van de twee beschikbare voorbeelden opent in AEM Forms in JEE Desi
 
 ![Variabelen](assets/variables.jpg)
 
-Als u de JavaScript-implementatie van de hash-functies in deze scriptobjecten wilt bekijken, selecteert u het scriptobject en verkent u de code in de Scripteditor.  U kunt zien hoe elk van de volgende knoeiboelfuncties is uitgevoerd:
+Als u de JavaScript-implementatie van de hash-functies in deze scriptobjecten wilt bekijken, selecteert u het scriptobject en verkent u de code in de Scripteditor. U kunt zien hoe elk van de volgende knoeiboelfuncties is uitgevoerd:
 
 * soHASHING_MD4.hex_md4()
 * soHASHING_MD4.b64_md4()
@@ -70,7 +69,7 @@ Afhankelijk van de gekozen hashfunctie varieert de lengte van de hash:
 
 ## De PDF forms van het monster proberen {#try-sample-pdf-forms}
 
-De voorbeeldbestanden voor dit artikel bevatten twee PDF forms. In het eerste voorbeeld kunt u een tekenreeks typen en vervolgens de hashwaarden MD4, MD5, SHA-1 en SHA-256 voor de tekenreeks genereren.  Het tweede voorbeeld is een eenvoudig formulier waarmee tekstvelden worden ontgrendeld als een juist wachtwoord wordt ingevoerd.
+De voorbeeldbestanden voor dit artikel bevatten twee PDF forms. In het eerste voorbeeld kunt u een tekenreeks typen en vervolgens de hashwaarden MD4, MD5, SHA-1 en SHA-256 voor de tekenreeks genereren. Het tweede voorbeeld is een eenvoudig formulier waarmee tekstvelden worden ontgrendeld als een juist wachtwoord wordt ingevoerd.
 
 ### Voorbeeld 1: hashes genereren {#generating-dashes}
 
@@ -110,7 +109,7 @@ if (soHASHING_SHA256.hex_sha256(this.rawValue) == passwd_man_hashed.rawValue){
 
 ## Hoe verder? {#next-steps}
 
-Waar heb je zoiets nodig? Neem bijvoorbeeld een PDF-formulier met velden die alleen door geautoriseerde personen moeten worden ingevuld. Door deze velden te beveiligen met een wachtwoord, dat nergens in het document in duidelijke tekst kan worden weergegeven, zoals in Sample_2.pdf, kunt u ervoor zorgen dat deze velden alleen toegankelijk zijn voor gebruikers die het wachtwoord weten.
+Waar heb je zoiets nodig? Neem bijvoorbeeld een PDF-formulier met velden die alleen door geautoriseerde personen moeten worden ingevuld. Door die gebieden met een wachtwoord te beveiligen, dat niet in duidelijke teksten overal in het document zoals in Sample_2.pdf kan worden gezien, kunt u ervoor zorgen dat die gebieden slechts voor gebruikers toegankelijk zijn die het wachtwoord kennen.
 
 Ik moedig u aan om de twee dossiers van de steekproefPDF verder te onderzoeken.  U kunt nieuwe knoeiboelwaarden met Sample_1.pdf produceren, en de geproduceerde waarden gebruiken om of het wachtwoord of de knoeiboelfunctie te veranderen die in Sample_2.pdf wordt gebruikt.  De bronnen in de sectie Kenmerken bieden ook aanvullende informatie over hashing en de specifieke JavaScript-implementaties die in dit artikel worden gebruikt.
 

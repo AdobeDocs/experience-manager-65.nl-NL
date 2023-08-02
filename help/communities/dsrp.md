@@ -1,19 +1,15 @@
 ---
 title: DSRP - Relational Database Storage Resource Provider
-seo-title: DSRP - Relational Database Storage Resource Provider
 description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
-seo-description: Set up AEM Communities to use a relational database as its common store
-uuid: f364e7da-ee54-4ab2-a630-7ec9239005ac
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
 role: Admin
 exl-id: 15b3a594-efde-4702-9233-232ba1c7e5b0
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 ## Over DSRP {#about-dsrp}
 
-Wanneer AEM Communities wordt gevormd om een relationele gegevensbestand als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
+Wanneer AEM Communities wordt gevormd om een relationele gegevensbestand als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker-geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
 Zie ook [Kenmerken van SRP-opties](working-with-srp.md#characteristics-of-srp-options) en [Aanbevolen topologieën](topologies.md).
 
@@ -33,7 +29,7 @@ Zie ook [Kenmerken van SRP-opties](working-with-srp.md#characteristics-of-srp-op
 
 >[!NOTE]
 >
->De standaardopslagconfiguratie wordt nu opgeslagen in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van pad enz (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) om de standaardprocedures naar behoren te laten werken.
+>De standaardopslagconfiguratie wordt nu opgeslagen in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van `etc` pad (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) om de standaardprocedures naar behoren te laten werken.
 
 ## Configuratie van relationele database {#relational-database-configuration}
 
@@ -67,53 +63,55 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
    * Selecteer **[!UICONTROL Storage Configuration]**
 
       * De resulterende locatie is bijvoorbeeld: [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp)
-      >[!NOTE]
-      >
-      >De standaardopslagconfiguratie wordt nu opgeslagen in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van pad enz (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) om de standaardprocedures naar behoren te laten werken.
-   ![dsrp-config](assets/dsrp-config.png)
+
+     >[!NOTE]
+     >
+     >De standaardopslagconfiguratie wordt nu opgeslagen in conf path(`/conf/global/settings/community/srpc/defaultconfiguration`) in plaats van `etc` pad (`/etc/socialconfig/srpc/defaultconfiguration`). U wordt aangeraden de [migratiestappen](#zerodt-migration-steps) om de standaardprocedures naar behoren te laten werken.
+
+  ![dsrp-config](assets/dsrp-config.png)
 
 * Selecteer **[!UICONTROL Database Storage Resource Provider (DSRP)]**
 * **Databaseconfiguratie**
 
    * **[!UICONTROL JDBC datasource name]**
 
-      De naam die aan MySQL verbinding wordt gegeven moet het zelfde zijn ingegaan in [JDBC OSGi-configuratie](dsrp-mysql.md#configurejdbcconnections)
+     De naam die aan MySQL verbinding wordt gegeven moet het zelfde zijn ingegaan in [JDBC OSGi-configuratie](dsrp-mysql.md#configurejdbcconnections)
 
-      *default*: gemeenschappen
+     *default*: gemeenschappen
 
    * **[!UICONTROL Database name]**
 
-      Naam die aan schema in wordt gegeven [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
+     Naam die aan schema in wordt gegeven [init_schema.sql](dsrp-mysql.md#obtain-the-sql-script) script
 
-      *default*: gemeenschappen
+     *default*: gemeenschappen
 
 * **SolrConfiguration**
 
-   * **[Zookeeper](https://cwiki.apache.org/confluence/display/solr/Using+ZooKeeper+to+Manage+Configuration+Files) Host**
+   * **[Zookeeper](https://solr.apache.org/guide/6_6/using-zookeeper-to-manage-configuration-files.html) Host**
 
-      Laat deze waarde leeg als Solr wordt uitgevoerd met de interne ZooKeeper. Anders, bij uitvoering in [SolrCloud-modus](solr.md#solrcloud-mode) met een externe ZooKeeper, plaats deze waarde aan URI voor ZooKeeper, zoals *my.server.com:80*
+     Laat deze waarde leeg als Solr wordt uitgevoerd met de interne ZooKeeper. Anders, bij uitvoering in [SolrCloud-modus](solr.md#solrcloud-mode) met een externe ZooKeeper, plaats deze waarde aan URI voor ZooKeeper, zoals *my.server.com:80*
 
-      *default*: *&lt;blank>*
+     *default*: *&lt;blank>*
 
    * **[!UICONTROL Solr URL]**
 
-      *default*: https://127.0.0.1:8983/solr/
+     *default*: https://127.0.0.1:8983/solr/
 
    * **[!UICONTROL Solr Collection]**
 
-      *default*: verzameling1
+     *default*: collection1
 
 * Selecteer **[!UICONTROL Submit]**.
 
 ### Nul stappen voor downtime migratie voor standaardconfiguratie {#zerodt-migration-steps}
 
-Voer de volgende stappen uit om ervoor te zorgen dat de standaardpagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) werkt zoals verwacht:
+Om ervoor te zorgen dat de standaardpagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp) Voer de volgende stappen uit voor de werken zoals u had verwacht:
 
 1. Naam van pad wijzigen bij `/etc/socialconfig` tot `/etc/socialconfig_old`, zodat de systeemconfiguratie terugvalt naar jsrp (gebrek).
 1. Ga naar standaardpagina [http://localhost:4502/communities/admin/defaultsrp](http://localhost:4502/communities/admin/defaultsrp), waarin jsrp is geconfigureerd. Klik op de knop **[!UICONTROL submit]** knoop zodat de nieuwe standaardconfiguratieknoop bij wordt gecreeerd `/conf/global/settings/community/srpc`.
 1. De gemaakte standaardconfiguratie verwijderen `/conf/global/settings/community/srpc/defaultconfiguration`.
 1. De oude configuratie kopiëren `/etc/socialconfig_old/srpc/defaultconfiguration` in plaats van het verwijderde knooppunt (`/conf/global/settings/community/srpc/defaultconfiguration`) in de vorige stap.
-1. Het oude knooppunt verwijderen `/etc/socialconfig_old`.
+1. De oude verwijderen `etc` node `/etc/socialconfig_old`.
 
 ## De configuratie publiceren {#publishing-the-configuration}
 
@@ -128,9 +126,9 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
    * **Startpad**:
 
       * Bladeren naar `/etc/socialconfig/srpc/`
+
    * Zorgen `Only Modified` is niet geselecteerd.
    * Selecteer **[!UICONTROL Activate]**.
-
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
@@ -141,7 +139,7 @@ Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*,
 
 ## Solr opnieuw indexeren voor DSRP {#reindexing-solr-for-dsrp}
 
-Om DSRP Solr opnieuw te indexeren, volg de documentatie voor [opnieuw indexeren MSRP](msrp.md#msrp-reindex-tool)Gebruik in plaats daarvan deze URL wanneer u opnieuw indexeert voor DSRP: **/services/social/datastore/rdb/rendex**
+Om DSRP Solr opnieuw te indexeren, volg de documentatie voor [opnieuw indexeren van MSRP](msrp.md#msrp-reindex-tool)Gebruik in plaats daarvan deze URL wanneer u opnieuw indexeert voor DSRP: **/services/social/datastore/rdb/rendex**
 
 Bijvoorbeeld, zou een krullbevel om DSRP opnieuw te indexeren als dit kijken:
 

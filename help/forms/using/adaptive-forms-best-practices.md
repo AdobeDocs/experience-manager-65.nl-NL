@@ -9,9 +9,9 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
 workflow-type: tm+mt
-source-wordcount: '4586'
+source-wordcount: '4738'
 ht-degree: 0%
 
 ---
@@ -28,18 +28,18 @@ Dit document bevat richtlijnen en aanbevelingen die beheerders, auteurs en ontwi
 
 Daarnaast zijn er enkele aanbevelingen voor algemene AEM aanbevolen procedures:
 
-* [Tips en trucs: Implementeren en onderhouden van AEM](/help/sites-deploying/best-practices.md)
-* [Tips en trucs: Inhoud ontwerpen](/help/sites-authoring/best-practices.md)
+* [Tips en trucs: implementeren en onderhouden van AEM](/help/sites-deploying/best-practices.md)
+* [Tips en trucs: inhoud ontwerpen](/help/sites-authoring/best-practices.md)
 * [Tips en trucs: AEM beheren](/help/sites-administering/administer-best-practices.md)
-* [Tips en trucs: Oplossingen ontwikkelen](/help/sites-developing/best-practices.md)
+* [Tips en trucs: oplossingen ontwikkelen](/help/sites-developing/best-practices.md)
 
 ## AEM Forms instellen en configureren {#set-up-and-configure-aem-forms}
 
 ### Project voor de ontwikkeling van formulieren opzetten {#setting-up-forms-development-project}
 
-Een vereenvoudigde en gestandaardiseerde projectstructuur kan de ontwikkeling en het onderhoud aanzienlijk verminderen. Apache Maven is een opensource tool die wordt aanbevolen voor het bouwen van AEM projecten.
+Een vereenvoudigde en gestandaardiseerde projectstructuur kan de ontwikkelings- en onderhoudsinspanningen aanzienlijk verminderen. Apache Maven is een opensource tool die wordt aanbevolen voor het bouwen van AEM projecten.
 
-* Apache Maven gebruiken `aem-project-archetype` om structuur voor AEM project te creëren en te beheren. Het leidt tot geadviseerde structuur en malplaatjes voor uw AEM project. Ook, verstrekt het bouwstijlautomatisering en veranderingscontrolesystemen om het project te helpen beheren.
+* Apache Maven gebruiken `aem-project-archetype` om structuur voor AEM project tot stand te brengen en te beheren. Er worden aanbevolen structuren en sjablonen voor uw AEM project gemaakt. Ook, verstrekt het bouwstijlautomatisering en veranderingscontrolesystemen om het project te helpen beheren.
 
    * De afbeelding gebruiken `archetype:generate` gebruiken om de initiële structuur te genereren.
    * Gemaakt gebruiken `eclipse:eclipse` bevel om de eclipse projectdossiers te produceren en het project in eclipse in te voeren.
@@ -67,8 +67,8 @@ Wanneer u uw AEM project hebt ingesteld, definieert u een strategie voor het ont
 * Een adaptieve formuliersjabloon is een gespecialiseerde AEM die structuur en de informatie over de kop- en voettekst van een adaptief formulier definieert. Een sjabloon heeft vooraf geconfigureerde indelingen, stijlen en basisstructuur voor een adaptief formulier. AEM Forms beschikt over out-of-the-box sjablonen en componenten waarmee u adaptieve formulieren kunt maken. U kunt echter naar wens aangepaste sjablonen en componenten maken. Het wordt aanbevolen vereisten te verzamelen voor aanvullende sjablonen en componenten die u nodig hebt in uw aangepaste formulieren. Zie voor meer informatie [Aangepaste formulieren en componenten aanpassen](/help/forms/using/adaptive-forms-best-practices.md#customize-components).
 * Met AEM Forms kunt u adaptieve formulieren maken op basis van de volgende formuliermodellen. De formuliermodellen fungeren als interface voor gegevensuitwisseling tussen een formulier en AEM en bieden een op XML gebaseerde structuur voor gegevensstroom binnen en buiten een adaptief formulier. Bovendien leggen de formuliermodellen regels en beperkingen op aan adaptieve formulieren in de vorm van schema- en XFA-beperkingen.
 
-   * **Geen**: Voor adaptieve formulieren die met deze optie worden gemaakt, wordt geen formuliermodel gebruikt. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
-   * **XML- of JSON-schema**: De schema&#39;s van XML en JSON vertegenwoordigen de structuur waarin de gegevens door het achterste deelsysteem in uw organisatie worden geproduceerd of worden verbruikt. U kunt een schema aan een adaptief formulier koppelen en de elementen ervan gebruiken om dynamische inhoud aan het aangepaste formulier toe te voegen. De elementen van het schema zijn beschikbaar op het tabblad Gegevensmodel van de inhoudbrowser voor het ontwerpen van adaptieve formulieren. U kunt de schema-elementen slepen en neerzetten om het formulier samen te stellen.
+   * **Geen**: Aangepaste formulieren die met deze optie zijn gemaakt, gebruiken geen formuliermodel. De XML-gegevens die op basis van dergelijke formulieren worden gegenereerd, hebben een vlakke structuur met velden en bijbehorende waarden.
+   * **XML- of JSON-schema**: XML- en JSON-schema&#39;s vertegenwoordigen de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. U kunt een schema aan een adaptief formulier koppelen en de elementen ervan gebruiken om dynamische inhoud aan het aangepaste formulier toe te voegen. De elementen van het schema zijn beschikbaar op het tabblad Gegevensmodel van de inhoudbrowser voor het ontwerpen van adaptieve formulieren. U kunt de schema-elementen slepen en neerzetten om het formulier samen te stellen.
    * **XFA-formuliersjabloon**: Het is een ideaal formuliermodel als u investeert in op XFA gebaseerde HTML5-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
    * **Formuliergegevensmodel**: Het is een voorkeursformuliermodel als u uw back-endsystemen, zoals databases, webservices en AEM gebruikersprofiel, wilt integreren om adaptieve formulieren vooraf in te vullen en verzonden formuliergegevens terug te schrijven naar de back-endsystemen. Met een formuliergegevensmodeleditor kunt u entiteiten en services definiëren en configureren in een formuliergegevensmodel waarmee u adaptieve formulieren kunt maken. Zie voor meer informatie [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
@@ -83,7 +83,7 @@ Zie voor meer informatie [Een adaptief formulier maken](/help/forms/using/creati
 * AEM Forms biedt adaptieve formuliersjablonen die u kunt gebruiken om adaptieve formulieren te maken. U kunt ook uw eigen sjablonen maken. AEM biedt statische en bewerkbare sjablonen.
 
    * Statische sjablonen worden gedefinieerd en geconfigureerd door ontwikkelaars.
-   * Bewerkbare sjablonen worden gemaakt door auteurs die de sjablooneditor gebruiken. Met de sjablooneditor kunt u een basisstructuur en initiële inhoud in een sjabloon definiëren. Wijzigingen in de structuurlaag worden in alle formulieren met die sjabloon doorgevoerd. De eerste inhoud kan een vooraf geconfigureerd thema, vooraf ingevulde service, verzendactie enzovoort bevatten. Deze instellingen kunnen echter wel worden gewijzigd voor een formulier in de formuliereditor. Zie voor meer informatie [Aangepaste formuliersjablonen](/help/forms/using/template-editor.md).
+   * Bewerkbare sjablonen worden gemaakt door auteurs die de sjablooneditor gebruiken. Met de sjablooneditor kunt u een basisstructuur en initiële inhoud in een sjabloon definiëren. Alle wijzigingen in de structuurlaag worden weerspiegeld in alle formulieren die gebruikmaken van die sjabloon. De eerste inhoud kan een vooraf geconfigureerd thema, een vooraf ingevulde service, een verzendactie enzovoort bevatten. Deze instellingen kunnen echter wel worden gewijzigd voor een formulier in de formuliereditor. Zie voor meer informatie [Aangepaste formuliersjablonen](/help/forms/using/template-editor.md).
 
 * Gebruik voor het opmaken van een specifiek veld of een specifieke instantie in het deelvenster [inline styling](/help/forms/using/inline-style-adaptive-forms.md). U kunt ook een klasse definiëren in een CSS-bestand en de klassenaam opgeven in de CSS-klasseneigenschap van de component.
 * Neem een clientbibliotheek in een component op om stijlen consistent toe te passen op adaptieve formulieren of fragmenten die die component gebruiken. Zie voor meer informatie [Een adaptief onderdeel van een formulierpagina maken](/help/forms/using/custom-adaptive-forms-templates.md).
@@ -103,10 +103,11 @@ Zie voor meer informatie [Een adaptief formulier maken](/help/forms/using/creati
 U kunt een adaptief formulier maken met behulp van de formuliersjablonen die zijn ingeschakeld in **Configuratiebrowser**. Als u de formuliersjablonen wilt inschakelen, raadpleegt u [Aangepaste formuliersjabloon maken](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/creating-your-first-adaptive-form/create-adaptive-form-template.html?lang=en).
 
 De formuliersjablonen kunnen ook worden geüpload vanuit Adaptief formulierpakketten die zijn gemaakt op een andere auteur. Formuliersjablonen worden beschikbaar gesteld door te installeren [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en). Enkele aanbevolen best practices zijn:
+
 * De **nosamplcontent** De runtime-modus wordt alleen aanbevolen voor de auteur en niet voor de publicatieknooppunten.
 * Elementen zoals adaptieve formulieren, thema&#39;s, sjablonen of cloudconfiguraties worden alleen via auteurknooppunten gemaakt. Deze kunnen worden gepubliceerd op de geconfigureerde publicatieknooppunten.
 Zie voor meer informatie [Formulieren en documenten publiceren en de publicatie ervan opheffen](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en)
-* Forms addon package is vereist voor Authoring en voor Publishing ter ondersteuning van de bewerkingen van de documentservice. daarom kan het als een afhankelijkheid worden beschouwd .
+* Forms addon package is vereist voor Authoring en voor Publishing ter ondersteuning van de bewerkingen van de documentservice; daarom kan het worden beschouwd als een afhankelijkheid.
 Als u alleen voorbeeldsjablonen, thema&#39;s en DOR-pakketten voor Forms wilt gebruiken, kunt u deze downloaden van [aemforms-references-* packages](https://experienceleague.adobe.com/docs/experience-manager-65/forms/publish-process-aem-forms/publishing-unpublishing-forms.html?lang=en).
 
 Zie voor meer informatie de beste praktijken in [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md).
@@ -116,7 +117,7 @@ Zie voor meer informatie de beste praktijken in [Inleiding tot het ontwerpen van
 ### Gebruikend touch-geoptimaliseerde UI voor creatie {#using-touch-optimized-ui-for-authoring}
 
 * Gebruik de browser Objecten in het zijpaneel om snel velden te openen die diep onder in de formulierhiërarchie liggen. Met het zoekvak kunt u zoeken naar objecten in het formulier of in de objectstructuur en van het ene object naar het andere navigeren.
-* Selecteer de component en klik op ![cmppr-1](assets/cmppr-1.png). U kunt ook dubbelklikken op een component om de eigenschappen ervan weer te geven in de eigenschappenbrowser.
+* Als u de eigenschappen van een component wilt weergeven en bewerken in de componentbrowser op de zijbalk, selecteert u de component en klikt u op ![cmppr-1](assets/cmppr-1.png). U kunt ook dubbelklikken op een component om de eigenschappen ervan weer te geven in de eigenschappenbrowser.
 * Gebruik sneltoetsen om snel actie te ondernemen op uw formulieren. Zie [AEM Forms-sneltoetsen](/help/forms/using/keyboard-shortcuts.md).
 
 * Aangepaste formuliercomponenten worden alleen aanbevolen voor gebruik op adaptieve formulierpagina&#39;s. De componenten zijn afhankelijk van hun bovenliggende hiërarchie. Gebruik deze daarom niet op een AEM pagina.
@@ -140,20 +141,53 @@ De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur v
 * Adaptieve formulieren bieden een set API&#39;s waarmee u kunt communiceren en waarmee u handelingen kunt uitvoeren op adaptieve formulieren. Enkele belangrijke API&#39;s zijn als volgt. Zie voor meer informatie [JavaScript Library API-referentie voor Adaptive Forms](https://adobe.com/go/learn_aemforms_documentation_63).
 
    * `guideBridge.reset()`: Hiermee herstelt u een formulier.
-   * `guideBridge.submit()`: Hiermee verzendt u een formulier.
+   * `guideBridge.submit()`: verzendt een formulier.
    * `guideBridge.setFocus(somExp, focusOption, runCompletionExp)`: Hiermee wordt de focus op een veld ingesteld.
-   * `guideBridge.validate(errorList, somExpression, focus)`: Valideert een formulier.
+   * `guideBridge.validate(errorList, somExpression, focus)`: Hiermee valideert u een formulier.
    * `guideBridge.getDataXML(options)`: Hiermee worden formuliergegevens opgehaald als XML.
    * `guideBridge.resolveNode(somExpression)`: Hiermee wordt een formulierobject opgehaald.
-   * `guideBridge.setProperty(somList, propertyName, valueList)`: Hiermee wordt de eigenschap van een formulierobject ingesteld.
+   * `guideBridge.setProperty(somList, propertyName, valueList)`: Hiermee wordt de eigenschap ingesteld van een formulierobject.
    * Daarnaast kunt u de volgende veldeigenschappen gebruiken:
 
       * `field.value` om de waarde van een veld te wijzigen.
       * `field.enabled` om een veld in of uit te schakelen.
-      * `field.visible` om de zichtbaarheid van een veld te wijzigen.
+      * `field.visible` de zichtbaarheid van een veld wijzigen.
 
 * Auteurs van adaptieve formulieren moeten mogelijk JavaScript-code schrijven om bedrijfslogica in een formulier te maken. JavaScript is weliswaar krachtig en effectief, maar het is waarschijnlijk dat hierdoor de beveiligingsverwachtingen in het gedrang komen. Daarom moet u ervoor zorgen dat de auteur van het formulier een vertrouwd persoon is en dat er processen zijn om de JavaScript-code te controleren en goed te keuren voordat een formulier in productie wordt genomen. De beheerder kan de toegang tot de toegang van de regelredacteur tot gebruikersgroepen beperken die op hun rol of functie wordt gebaseerd. Zie [De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen](/help/forms/using/rule-editor-access-user-groups.md).
 * U kunt expressies in regels gebruiken om adaptieve formulieren dynamisch te maken. Alle expressies zijn geldige JavaScript-expressies en gebruiken API&#39;s van het scriptmodel voor aangepaste formulieren. Deze expressies retourneren waarden van bepaalde typen. Voor meer informatie over expressies en tips en trucs om deze heen raadpleegt u [Adaptieve formulierexpressies](/help/forms/using/adaptive-form-expressions.md).
+
+* Adobe raadt aan synchrone JavaScript-bewerkingen over asynchrone bewerkingen te gebruiken wanneer u regels maakt met de regeleditor. Het gebruik van asynchrone bewerkingen wordt sterk afgeraden. Als u zich echter in een situatie bevindt waarin asynchrone bewerkingen onvermijdelijk zijn, is het van essentieel belang dat u JavaScript-afsluitfuncties implementeert. Door dit te doen, kunt u effectief tegen om het even welke potentiële rassenvoorwaarden beschermen, ervoor zorgen uw regelimplementaties optimale prestaties leveren en stabiliteit handhaven door heel.
+
+  Bijvoorbeeld, veronderstellen wij gegevens van externe API moeten halen en dan sommige regels toepassen die op die gegevens worden gebaseerd. Wij gebruiken een sluiting om de asynchrone API vraag te behandelen en ervoor te zorgen dat de regels worden toegepast nadat de gegevens worden gehaald. Hier volgt de voorbeeldcode:
+
+  ```JavaScript
+       function fetchDataFromAPI(apiEndpoint, callback) {
+        // Simulate asynchronous API call with setTimeout
+        setTimeout(() => {
+          // Assuming the API call is successful, we receive some data
+          const data = {
+            someValue: 42,
+          };
+          // Invoke the callback with the fetched data
+          callback(data);
+        }, 2000); // Simulate a 2-second delay for the API call
+      }
+      // Rule implementation using Closure
+      function ruleImplementation(apiEndpoint) {
+        // Using a closure to handle the asynchronous API call and rule application
+        // say you have set this value in street field inside address panel
+        var streetField = address.street;
+        fetchDataFromAPI(apiEndpoint, (data) => {
+          streetField.value = data.someValue;
+        });
+      }
+      // Example usage of the rule implementation
+      const apiEndpoint = "https://example-api.com/data";
+      ruleImplementation(apiEndpoint);
+  ```
+
+  In dit voorbeeld: `fetchDataFromAPI` simuleert een asynchrone API vraag gebruikend `setTimeout`. Zodra de gegevens worden gehaald, roept het de verstrekte callback functie aan, die de sluiting is om de verdere regeltoepassing te behandelen. De `ruleImplementation` Deze functie bevat de regellogica.
+
 
 ### Werken met thema&#39;s {#working-with-themes}
 
@@ -225,7 +259,7 @@ Een recorddocument (DoR) is een afgevlakte PDF-versie van een adaptief formulier
 
    * **XFA-formuliersjabloon**: Gebruik het bijbehorende XDP-bestand als de DoR-sjabloon.
    * **XSD-schema**: Gebruik de bijbehorende XFA-sjabloon die hetzelfde XML-schema gebruikt als het adaptieve formulier.
-   * **Geen**: Gebruik automatisch gegenereerde doR.
+   * **Geen**: Automatisch gegenereerde doR gebruiken.
 
 * Configureer kop-, voettekst-, afbeeldingen, kleur-, lettertype- en dergelijke rechts op het tabblad Document of Record van de adaptieve formuliereditor.
 * Gebruiken `DoRService` om DoR programmatically te produceren.
@@ -272,7 +306,7 @@ U kunt het beste adaptieve formulieren als volgt lokaliseren:
 U kunt een extra instantie van de server van AEM Forms vormen die achter de firewall in een beveiligde streek verblijft. U kunt deze instantie gebruiken voor:
 
 * **Batchverwerking**: taken die terugkerend of gepland zijn in batches met een zware belasting. U kunt bijvoorbeeld instructies afdrukken, correspondentie genereren en documentservices gebruiken, zoals PDF Generator, Uitvoer en Assembler.
-* **PII-gegevens opslaan**: PII-gegevens opslaan op de verwerkingsserver. Dit is niet verplicht als u al een aangepaste opslagprovider gebruikt voor het opslaan van PII-gegevens.
+* **PII-gegevens opslaan**: Sla PII-gegevens op de verwerkingsserver op. Dit is niet verplicht als u al een aangepaste opslagprovider gebruikt voor het opslaan van PII-gegevens.
 
 ### Project verplaatsen naar een andere omgeving {#moving-project-to-another-environment}
 
@@ -280,7 +314,7 @@ U moet vaak uw AEM projecten van één milieu naar een andere verplaatsen. Enkel
 
 * Maak een back-up van uw bestaande clientbibliotheken, aangepaste code en configuraties.
 * Implementeer productpakketten en patches handmatig en in de opgegeven volgorde in de nieuwe omgeving.
-* Implementeer projectspecifieke codepakketten en -bundels handmatig en als een afzonderlijk pakket of bundel op de nieuwe AEM.
+* Implementeer projectspecifieke codepakketten en -bundels handmatig en als een afzonderlijk pakket of een aparte bundel op de nieuwe AEM.
 * (*Alleen AEM Forms op JEE*) Stel LCAs en DSCs manueel op de server van de Forms Workflow op.
 * Gebruiken [Exporteren en importeren](/help/forms/using/import-export-forms-templates.md) functionaliteit om elementen naar de nieuwe omgeving te verplaatsen. U kunt de replicatieagent ook vormen en de activa publiceren.
 * Wanneer u een upgrade uitvoert, vervangt u alle verouderde API&#39;s en functies door nieuwe API&#39;s en functies.
@@ -294,14 +328,14 @@ Sommige beste praktijken om AEM te vormen om de algemene prestaties te verbetere
 
 * Niet in cache plaatsen `/content/forms/af/` en `/content/dam/formsanddocuments/*` paden. voor gedetailleerde informatie over het configureren van adaptieve formulieren in cache, raadpleegt u [Aangepaste formulieren in cache plaatsen](/help/forms/using/configure-adaptive-forms-cache.md).
 
-* HTML inschakelen via de compressiemodule van de webserver. Zie voor meer informatie [Prestaties afstemmen van AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md).
+* HTML inschakelen via compressiemodule van webserver. Zie voor meer informatie [Prestaties afstemmen van AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md).
 * Verhoog de aanroepen per aanvraagconfiguratie voor grote formulieren. Zie [Prestaties van grote en complexe formulieren optimaliseren](/help/forms/using/adaptive-forms-best-practices.md#optimizing-performance-of-large-and-complex-forms).
 * Maken [aangepaste foutpagina&#39;s weergegeven door fouthandler](https://experienceleague.adobe.com/docs/experience-manager-65/developing/platform/customizing-errorhandler-pages.html).
 * Beveiligde AEM Forms-server.
 
    * Gebruiken `nosamplecontent` Voer wijze in om ervoor te zorgen dat er geen steekproefinhoud en steekproefgebruikers op de productieserver worden opgesteld. Zie [AEM uitvoeren in productielocatie](/help/sites-administering/production-ready.md).
 
-* Houd de heapgrootte tot minimaal 8 GB. Voor andere instellingen raadpleegt u [Prestaties afstemmen van AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md).
+* Houd de heapgrootte tot minimaal 8 GB. Zie voor andere instellingen [Prestaties afstemmen van AEM Forms-server](/help/forms/using/performance-tuning-aem-forms.md).
 * Gebruik gebruikerssessies voor services in plaats van beheersessies voor het uitvoeren van taken op serviceniveau. Zie voor meer informatie [Serviceverificatie](https://sling.apache.org/documentation/the-sling-engine/service-authentication.html).
 
 >[!VIDEO](https://vimeo.com/)
@@ -323,6 +357,6 @@ In een productieomgeving wordt aanbevolen de ingediende formuliergegevens niet i
 Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk identificeerbare (PII) gegevens te behandelen. Hier volgt een aantal aanbevolen procedures voor het verwerken van dergelijke gegevens:
 
 * Gebruik een beveiligde externe opslagruimte, zoals een database, om gegevens op te slaan uit concepten en verzonden formulieren. Zie [Externe opslag voor concepten en verzonden formuliergegevens configureren](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
-* Met de component Voorwaarden en Voorwaarden van het gebruik kunt u expliciete toestemming van de gebruiker nemen voordat u het automatisch opslaan inschakelt. In dit geval schakelt u automatisch opslaan alleen in als de gebruiker akkoord gaat met de voorwaarden in de component Voorwaarden.
+* Met de component Voorwaarden en Voorwaarden van het gebruik kunt u expliciete toestemming van de gebruiker nemen voordat u automatisch opslaat. In dit geval schakelt u automatisch opslaan alleen in als de gebruiker akkoord gaat met de voorwaarden in de component Voorwaarden.
 
 

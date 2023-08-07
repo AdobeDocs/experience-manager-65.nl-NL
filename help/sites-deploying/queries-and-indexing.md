@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
 workflow-type: tm+mt
-source-wordcount: '2619'
+source-wordcount: '3033'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ De oak-query-engine ondersteunt de volgende talen:
 
 * XPath (aanbevolen)
 * SQL-2
-* SQL (afgekeurd)
+* SQL (vervangen)
 * JQOM
 
 ## Indexeertypen en kostenberekening {#indexer-types-and-cost-calculation}
@@ -48,7 +48,7 @@ Eén index is de **Eigenschappenindex**, waarvoor de indexdefinitie is opgeslage
 
 Implementaties voor **Apache Lucene** en **Solr** zijn ook beschikbaar door gebrek, die allebei fulltext indexeren steunen.
 
-De **Traversal Index** wordt gebruikt als er geen andere indexeerfunctie beschikbaar is. Dit betekent dat de inhoud niet wordt geïndexeerd en de inhoudsknopen worden getransformeerd om gelijken aan de vraag te vinden.
+De **Traversal Index** wordt gebruikt als er geen andere index beschikbaar is. Dit betekent dat de inhoud niet wordt geïndexeerd en de inhoudsknopen worden getransformeerd om gelijken aan de vraag te vinden.
 
 Als de veelvoudige indexeerders voor een vraag beschikbaar zijn, schat elke beschikbare indexeerder de kosten om de vraag uit te voeren. Eak kiest vervolgens de indexeerder met de laagste geschatte kosten.
 
@@ -58,7 +58,7 @@ Het bovenstaande diagram is een vertegenwoordiging op hoog niveau van het mechan
 
 Eerst, wordt de vraag ontleed in een Abstracte Boom van de Syntaxis. Dan, wordt de vraag gecontroleerd en in SQL-2 getransformeerd die de inheemse taal voor de vragen van het Eak is.
 
-Daarna, wordt elke index geraadpleegd om de kosten voor de vraag te schatten. Zodra dat wordt voltooid, worden de resultaten van de goedkoopste index teruggewonnen. Tot slot worden de resultaten gefilterd, zowel om ervoor te zorgen dat de huidige gebruiker leestoegang tot het resultaat heeft en dat het resultaat de volledige vraag aanpast.
+Daarna, wordt elke index geraadpleegd om de kosten voor de vraag te schatten. Zodra dat wordt voltooid, worden de resultaten van de goedkoopste index teruggewonnen. Tot slot worden de resultaten gefilterd, zowel om ervoor te zorgen dat de huidige gebruiker toegang tot het resultaat heeft gelezen en dat het resultaat de volledige vraag aanpast.
 
 ## De indexen configureren {#configuring-the-indexes}
 
@@ -74,7 +74,7 @@ Het type van de indexknoop moet zijn **eikel:QueryIndexDefinition.** Verschillen
 
 ### De eigenschappenindex {#the-property-index}
 
-De index van het Bezit is nuttig voor vragen die bezitsbeperkingen maar niet full-text hebben. Het kan worden gevormd door de hieronder procedure te volgen:
+De index van het Bezit is nuttig voor vragen die bezitsbeperkingen hebben maar niet full-text zijn. Het kan worden gevormd door de hieronder procedure te volgen:
 
 1. CRXDE openen door naar `http://localhost:4502/crx/de/index.jsp`
 1. Een knooppunt maken onder **eiken:index**
@@ -101,7 +101,7 @@ De index van het Bezit heeft de volgende configuratieopties:
 
 ### De geordende index {#the-ordered-index}
 
-De geordende index is een uitbreiding van de index van het Bezit. Het is echter afgekeurd. Indexen van dit type moeten worden vervangen door de [Eigenschappenindex van Lucene](#the-lucene-property-index).
+De geordende index is een uitbreiding van de index van het Bezit. Het is echter afgekeurd. Indexen van dit type moeten worden vervangen door [Eigenschappenindex van Lucene](#the-lucene-property-index).
 
 ### De index van volledige tekst met Lucene {#the-lucene-full-text-index}
 
@@ -131,6 +131,84 @@ De index van Lucene heeft de volgende configuratieopties:
 * De **includePropertyTypes** eigenschap, die definieert welke subset van eigenschapstypen in de index worden opgenomen.
 * De **excludePropertyNames** eigenschap die een lijst met namen van eigenschappen definieert - eigenschappen die moeten worden uitgesloten van de index.
 * De **hergroeperen** markering die is ingesteld op **true**, wordt een volledige inhoudsherdex geactiveerd.
+
+### Volledige tekst zoeken {#understanding-fulltext-search}
+
+De documentatie in deze sectie is op Apache Lucene, Elasticsearch, evenals fullText indexen van, bijvoorbeeld, PostSQL, SQLite, MySQL van toepassing. Het volgende voorbeeld is voor AEM / Eak / Lucene.
+
+<b>Te indexeren gegevens</b>
+
+Het uitgangspunt is de gegevens die moeten worden geïndexeerd. Neem bijvoorbeeld de volgende documenten:
+
+| <b>Document-id</b> | <b>Pad</b> | <b>Fulltext</b> |
+| --- | --- | --- |
+| 100 | /content/rubik | &quot;Rubik is een Fins merk.&quot; |
+| 200 | /content/rubiksCube | &quot;De Rubiks kubus werd uitgevonden in 1974.&quot; |
+| 300 | /content/cube | &quot;Een kubus is een driedimensionaal object.&quot; |
+
+
+<b>Omgekeerde index</b>
+
+Het indexeringsmechanisme verdeelt de volledige tekst in woorden genoemd &quot;tokens&quot;, en bouwt een index genoemd &quot;omgekeerde index&quot;. Deze index bevat de lijst met documenten waarin deze voor elk woord wordt weergegeven.
+
+Heel korte, veelvoorkomende woorden (ook wel &quot;stopwords&quot; genoemd) worden niet geïndexeerd. Alle tokens worden omgezet in kleine letters en stammen wordt toegepast.
+
+Speciale tekens zoals *&quot;-&quot;* niet geïndexeerd.
+
+| <b>Token</b> | <b>Document-id&#39;s</b> |
+| --- | --- |
+| 194 | ..., 200,... |
+| merk | ..., 100,... |
+| kubus | ..., 200, 300,... |
+| dimensie | 300 |
+| fineren | ..., 100,... |
+| uitvinden | 200 |
+| object | ..., 300,... |
+| rubik | .., 100, 200,... |
+
+De lijst met documenten wordt gesorteerd. Dit zal handig worden als je vraagt.
+
+<b>Zoeken</b>
+
+Hieronder ziet u een voorbeeld van een query. Alle speciale tekens (zoals *&#39;*) vervangen door een spatie:
+
+```
+/jcr:root/content//element(\*; cq:Page)`[` jcr:contains('Rubik s Cube')`]`
+```
+
+De woorden worden op dezelfde manier verdeeld en gefilterd als bij het indexeren (woorden van één teken worden bijvoorbeeld verwijderd). In dit geval wordt gezocht naar:
+
+```
++:fulltext:rubik +:fulltext:cube
+```
+
+De index zal dan de lijst van documenten voor die woorden raadplegen. Als er veel documenten zijn, kunnen de lijsten zeer groot zijn. Laten we bijvoorbeeld aannemen dat ze het volgende bevatten:
+
+
+| <b>Token</b> | <b>Document-id&#39;s</b> |
+| --- | --- |
+| rubik | 10, 100, 200, 1000 |
+| kubus | 30, 200, 300, 2000 |
+
+
+Lucene draait heen en weer tussen de twee lijsten (of ronde lijnen) `n` lijsten, bij het zoeken naar `n` woorden):
+
+* Lees in de &quot;rubik&quot; krijgt de eerste vermelding: er zijn er 10.
+* Lees in de &quot;kubus&quot; krijgt het eerste item `>` = 10. 10 is niet gevonden, de volgende is 30.
+* Lees in het &quot;rubik&quot; krijgt de eerste vermelding `>` = 30: 100.
+* Lees in de &quot;kubus&quot; krijgt het eerste item `>` = 100 : 200 .
+* Lees in het &quot;rubik&quot; krijgt de eerste vermelding `>` = 200. 200 is gevonden. Document 200 is dus een overeenkomst voor beide termen. Dit wordt onthouden.
+* Lees in het &quot;rubik&quot; krijgt de volgende vermelding: 1000.
+* Lees in de &quot;kubus&quot; krijgt het eerste item `>` = 1000 : 2000 .
+* Lees in het &quot;rubik&quot; krijgt de eerste vermelding `>` = 2000: einde van de lijst.
+* Tot slot kunnen we ophouden met zoeken.
+
+Het enige gevonden document dat beide termen bevat, is 200, zoals in het onderstaande voorbeeld:
+
+| 200 | /content/rubiksCube | &quot;De Rubiks kubus werd uitgevonden in 1974.&quot; |
+| --- | --- | --- |
+
+Wanneer meerdere items worden gevonden, worden deze op score gesorteerd.
 
 ### De index van de eigenschap Lucene {#the-lucene-property-index}
 
@@ -185,7 +263,7 @@ Sinds versie 1.2.0 ondersteunt eik Lucene-analysatoren.
 
 Analyzers worden zowel gebruikt wanneer een document, als bij vraagtijd wordt geïndexeerd. Een analysator controleert de tekst van gebieden en produceert een symbolische stroom. Luceenanalysatoren bestaan uit een reeks tokenizer- en filterklassen.
 
-De analyseapparatuur kan worden geconfigureerd via de `analyzers` node (type) `nt:unstructured`) in de `oak:index` definitie.
+De analysatoren kunnen worden geconfigureerd via de `analyzers` node (type) `nt:unstructured`) in de `oak:index` definitie.
 
 De standaardanalysator voor een index wordt gevormd in `default` onderliggend element van het knooppunt analyzers.
 
@@ -276,7 +354,7 @@ De naam van de filters, charFilters en tokenizers wordt gevormd door de fabrieks
 
 Elke configuratieparameter die voor de fabriek vereist is, wordt opgegeven als eigenschap van de desbetreffende code.
 
-Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggend knooppunt te maken van `nt:file` type voor het desbetreffende bestand.
+Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggend knooppunt van `nt:file` type voor het desbetreffende bestand.
 
 ### De zonne-index {#the-solr-index}
 
@@ -320,7 +398,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
    >
    >Voor meer informatie over de configuratie Solr en ZooKeeper, raadpleeg [Solr Configuration-documentatie](https://wiki.apache.org/solr/ConfiguringSolr) en de [Aan de slag met ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
-1. Begin eerste shard met steun ZooKeeper door naar `aemsolr1\node1` en het uitvoeren van de volgende opdracht:
+1. Begin de eerste shard met steun ZooKeeper door naar `aemsolr1\node1` en het uitvoeren van de volgende opdracht:
 
    ```xml
    java -Xmx2g -Dbootstrap_confdir=./cfg/oak/conf -Dcollection.configName=myconf -DzkRun -DnumShards=2 -jar start.jar
@@ -340,7 +418,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
 
 1. Kies **Externe zonne-energie** in de vervolgkeuzelijst onder **Eak Solr** serverprovider.
 
-1. Ga naar CRXDE en meld u aan als Admin.
+1. Ga naar CRXDE en login als Admin.
 1. Een knooppunt maken met de naam **solrIndex** krachtens **eiken:index** en stel de volgende eigenschappen in:
 
    * **type:** solr (van het type String)
@@ -364,7 +442,7 @@ Aanbevolen Solr-configuratiebestanden
 AEM 6.1 integreert ook twee indexerende hulpmiddelen in AEM 6.0 als deel van de Adobe Consulting Toolset van de Diensten van de Gemeenschappelijke Onderneming:
 
 1. **Query uitvoeren**, een hulpmiddel dat wordt ontworpen om beheerders te helpen begrijpen hoe de vragen worden uitgevoerd;
-1. **Indexbeheer voor onak**, een gebruikersinterface van het Web voor het handhaven van bestaande indexen.
+1. **Indexbeheer voor onak**, een gebruikersinterface voor het onderhouden van bestaande indexen.
 
 Je kunt ze nu bereiken door naar **Gereedschappen - Bewerkingen - Dashboard - Diagnose** in het welkomstscherm AEM.
 
@@ -407,7 +485,7 @@ De **com.day.cq.search** de categorie is slechts van toepassing als u het AEM ve
 U kunt registreren toelaten door deze procedure te volgen:
 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/slinglog`
-1. Klik op de knop **Nieuwe aanmelding toevoegen** in het onderste gedeelte van de console.
+1. Klik op de knop **Nieuwe logboekregistratie toevoegen** in het onderste gedeelte van de console.
 1. Voeg de bovenstaande categorieën toe aan de zojuist gemaakte rij. U kunt de **+** teken om meer dan één categorie aan één registreerapparaat toe te voegen.
 1. Kies **DEBUG** van de **Logboekniveau** vervolgkeuzelijst.
 1. Het uitvoerbestand instellen op `logs/queryDebug.log`. Hiermee worden alle DEBUG-gebeurtenissen samengevoegd in één logbestand.
@@ -447,7 +525,7 @@ U kunt de variant JSON van deze statistieken bij volgende URLs ook krijgen:
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 * `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak/%2522LuceneIndex%2522.tidy.-1.json`
 
-U kunt ook geconsolideerde JMX-uitvoer opgeven via `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Dit zou alle aan eik gerelateerde MBean-gegevens in JSON-indeling bevatten.
+U kunt ook geconsolideerde JMX-uitvoer leveren via `https://serveraddress:port/system/sling/monitoring/mbeans/org/apache/jackrabbit/oak.tidy.3.json`. Dit zou alle aan eik gerelateerde MBean-gegevens in JSON-indeling bevatten.
 
 #### Overige details {#other-details}
 

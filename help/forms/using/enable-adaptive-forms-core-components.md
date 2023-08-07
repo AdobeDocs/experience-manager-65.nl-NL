@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 00f8b2c72aab37a57ab76e684f432250d2de3470
+source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '889'
 ht-degree: 0%
 
 ---
@@ -20,8 +20,8 @@ ht-degree: 0%
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
+| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/enable-adaptive-forms-core-components.html) |
 | AEM 6,5 | Dit artikel |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-core-components/create-an-adaptive-form-on-forms-cs/using-themes-in-core-components.html) |
 
 **Van toepassing op:** ✅ Adaptive Form Core Components ❎ Adaptive Form Foundation Components.
 
@@ -133,7 +133,7 @@ Een AEM Archetype 41 of [later](https://github.com/adobe/aem-project-archetype) 
 >
 >
 >
-> * Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar, kunt u het pakket installeren via Pakketbeheer. Probeer dan de URL: `http://[Publish Server URL]:[PORT]/system/console` om u aan te melden. Hierdoor hebt u toegang tot de aanmeldingspagina op een instantie Publish, zodat u kunt doorgaan met het installatieproces.
+> * Als u problemen ondervindt bij het openen van het aanmeldingsvenster op een publicatieexemplaar, kunt u het pakket installeren via Pakketbeheer. Probeer dan de URL: `http://[Publish Server URL]:[PORT]/system/console` aan login. Hierdoor hebt u toegang tot de aanmeldingspagina op een instantie Publish, zodat u kunt doorgaan met het installatieproces.
 > * Verwijder of verwijder het project Archetype niet, nadat u het in uw omgeving hebt geïmplementeerd. Het Archetype-project is vereist om aangepaste en nieuwe Adaptive Forms Core Components-thema&#39;s aan uw omgeving toe te voegen.
 
 De Core Components zijn ingeschakeld voor uw omgeving. Een lege, op componenten gebaseerde adaptieve formuliersjabloon en Canvas 3.0-thema worden geïmplementeerd in uw omgeving, zodat u [op Adaptieve Forms gebaseerde Core Components maken](create-an-adaptive-form-core-components.md).

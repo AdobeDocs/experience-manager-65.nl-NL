@@ -9,9 +9,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1665'
 ht-degree: 0%
 
 ---
@@ -174,10 +174,10 @@ U kunt de service Vooraf invullen van formuliergegevensmodel gebruiken om velden
 
 * [Regeleditor gebruiken om dynamisch gedrag aan formulier toe te voegen](rule-editor.md)
 * [Thema&#39;s maken of aanpassen voor adaptieve Forms op basis van Core Components](create-or-customize-themes-for-adaptive-forms-core-components.md)
-* Een sjabloon maken voor Adaptief Forms op basis van Core Components
+
 
 ## Zie ook
 
 * [Een adaptief formulier op basis van kerncomponenten maken](create-an-adaptive-form-core-components.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
-
+* [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)

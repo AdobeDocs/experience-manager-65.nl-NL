@@ -1,17 +1,13 @@
 ---
 title: De AEM Forms Android-app ontwikkelen
-seo-title: Build the AEM Forms Android app
 description: Stappen om het Android Studio-project in te stellen en het .apk-bestand voor de AEM Forms-app voor Android te maken
-seo-description: Steps to set up the Android Studio project and build the .apk file for the AEM Forms app for Android
-uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
-discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
 workflow-type: tm+mt
-source-wordcount: '706'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -51,11 +47,11 @@ Stel de volgende omgevingsvariabelen in voordat u het constructieproces voor de 
 
 * Stel de omgevingsvariabele JAVA_HOME in op de locatie van de JDK-software op het lokale bestandssysteem. Bijvoorbeeld C:\Program Files\Java\jdk1.8.0_181
 * Stel de `ANDROID_SDK_ROOT` systeemomgevingsvariabele naar de SDK-locatie voor Android. Bijvoorbeeld C:\Users\&amp;lt;gebruikersnaam>\AppData\Local\Android\Sdk
-* Stel de `Path` systeemomgevingsvariabele om de locatie van de platformhulpprogramma&#39;s en tools-map voor Android op te nemen. Bijvoorbeeld C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools and C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
+* Stel de `Path` systeemomgevingsvariabele om de locatie van de platformhulpprogramma&#39;s en tools-map voor Android op te nemen. Bijvoorbeeld C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools en C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
 
 ## Standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
 
-Nadat u de adobe-lc-mobileworkspace-src-src hebt opgeslagen&lt;version>.zip-bestand op het lokale bestandssysteem en stel de omgevingsvariabelen in, maak een standaard AEM Forms Android-app met een van de volgende opties:
+Nadat u de adobe-lc-mobileworkspace-src hebt opgeslagen&lt;version>.zip-bestand op het lokale bestandssysteem en stel de omgevingsvariabelen in, maak een standaard AEM Forms Android-app met een van de volgende opties:
 
 * [AEM Forms-app ontwikkelen met Android Studio](#using-android-studio)
 * [.apk-bestand genereren met Android Studio](#generate-apk-android-studio)
@@ -99,8 +95,8 @@ Voer de volgende stappen uit om het .apk-bestand te genereren met Android Studio
 
 ## Android Debug Bridge gebruiken {#build-android-debug-bridge}
 
-Nadat het .apk-bestand is gegenereerd, voert u de volgende opdracht uit om de toepassing op een Android-apparaat te installeren met de opdracht [Android Debug Bridge](https://developer.android.com/tools/help/adb.html).
+Nadat het .apk-bestand is gegenereerd, voert u de volgende opdracht uit om de toepassing op een Android-apparaat te installeren met de opdracht [Android Debug Bridge](https://developer.android.com/tools/adb).
 
 **Windows-gebruikers:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**Mac-gebruikers:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**MAC-gebruikers:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`

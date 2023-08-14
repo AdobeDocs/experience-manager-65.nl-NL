@@ -6,9 +6,9 @@ topic-tags: deploying
 docset: aem65
 feature: Configuring
 exl-id: c1c90d6a-ee5a-487d-9a8a-741b407c8c06
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 2ed19ac8c60dbf49422b8f1f665be4004689e00e
 workflow-type: tm+mt
-source-wordcount: '3521'
+source-wordcount: '3550'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Zowel kunnen de gegevensopslag als de knoopopslag worden gevormd gebruikend conf
 
 Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
-1. Kopieer het JAR-bestand voor AEM QuickStart naar de installatiemap.
+1. Kopieer het JAR-bestand met de AEM QuickStart naar de installatiemap.
 1. Een map maken `crx-quickstart/install` in de installatiemap.
 1. Eerst, vorm de knoopopslag door een configuratiedossier met de naam van de optie van de knoopopslag te creëren u in wilt gebruiken `crx-quickstart/install` directory.
 
@@ -44,26 +44,26 @@ Om zowel de knoopopslag als de gegevensopslag te vormen, voer deze stappen uit:
 
 >[!CAUTION]
 >
->De nieuwere versies van Oak gebruiken een nieuwe noemende regeling en formaat voor OSGi configuratiedossiers. Het nieuwe naamgevingsschema vereist dat het configuratiebestand een naam krijgt **.config** en de nieuwe indeling vereist dat waarden worden getypt en [hier gedocumenteerd](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
+>De nieuwere versies van Oak gebruiken een nieuwe noemende regeling en formaat voor OSGi configuratiedossiers. Het nieuwe naamgevingsschema vereist dat het configuratiebestand een naam krijgt **.config** en de nieuwe indeling vereist dat waarden worden ingevoerd en [hier gedocumenteerd](https://sling.apache.org/documentation/development/slingstart.html#default-configuration-format).
 >
->Als u een upgrade uitvoert van een oudere versie van Eak, dient u een back-up te maken van de `crx-quickstart/install`map eerst. Na de upgrade herstelt u de inhoud van de map naar de geüpgrade installatie en wijzigt u de extensie van de configuratiebestanden vanuit **.cfg** tot **.config**.
+>Als u een upgrade uitvoert van een oudere versie van Eak, dient u een back-up te maken van de `crx-quickstart/install`map eerst. Na de upgrade herstelt u de inhoud van de map naar de bijgewerkte installatie en wijzigt u de extensie van de configuratiebestanden vanuit **.cfg** tot **.config**.
 >
->Als u dit artikel leest ter voorbereiding op een upgrade van een **AEM 5,x** , dient u [upgrade](https://experienceleague.adobe.com/docs/) documentatie eerst.
+>Als u dit artikel leest ter voorbereiding op een upgrade van een **AEM 5,x** , dient u de [upgrade](https://experienceleague.adobe.com/docs/) documentatie eerst.
 
 ### Segmentknooppuntarchief {#segment-node-store}
 
-De opslag van de segmentknoop is de basis van implementatie TarMK in Adobe AEM6. Het gebruikt de `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID voor configuratie.
+De opslag van de segmentknoop is de basis van de implementatie TarMK van de Adobe in AEM6. Het gebruikt de `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` PID voor configuratie.
 
 >[!CAUTION]
 >
->De PID voor het archief met segmentknooppunten is gewijzigd van `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` van AEM 6 tot `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3. Zorg ervoor u de noodzakelijke configuratieaanpassingen aanbrengt om deze verandering te weerspiegelen.
+>De PID voor het archief met segmentknooppunten is gewijzigd van `org.apache.jackrabbit.oak.plugins.segment.SegmentNodeStoreService in previous versions` van AEM 6 `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService` in AEM 6.3. Zorg ervoor u de noodzakelijke configuratieaanpassingen aanbrengt om deze verandering te weerspiegelen.
 
 U kunt de volgende opties configureren:
 
-* `repository.home`: Pad naar huis van de opslagplaats waaronder gegevens met betrekking tot de opslagplaats worden opgeslagen. Standaard worden segmentbestanden opgeslagen onder de `crx-quickstart/segmentstore` directory.
+* `repository.home`: Pad naar de thuislocatie van de gegevensopslagruimte waaronder aan de gegevensopslagruimte gerelateerde gegevens worden opgeslagen. Standaard worden segmentbestanden opgeslagen onder de `crx-quickstart/segmentstore` directory.
 
 * `tarmk.size`: Maximale grootte van een segment in MB. Het standaardmaximum is 256 MB.
-* `customBlobStore`: Een Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is waar voor AEM 6.3 en latere versies. Vóór AEM 6.3 was de standaardwaarde false.
+* `customBlobStore`: Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is waar voor AEM 6.3 en latere versies. Vóór AEM 6.3 was de standaardwaarde false.
 
 Hier volgt een voorbeeld `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` bestand:
 
@@ -82,15 +82,15 @@ customBlobStore=B"true"
 
 De opslag van de documentknoop is de basis van AEM implementatie MongoMK. Het gebruikt de `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService`* *PID. De volgende configuratieopties zijn beschikbaar:
 
-* `mongouri`: De [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) vereist om verbinding te maken met de Mongo-database. De standaardwaarde is `mongodb://localhost:27017`
+* `mongouri`: De [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) vereist om verbinding te maken met Mongo Database. De standaardwaarde is `mongodb://localhost:27017`
 
 * `db`: Naam van de Mongo-database. De standaardwaarde is **Eik** ``. However, new AEM 6 installations use **aem-author** ``als de standaarddatabasenaam.
 
 * `cache`: De cachegrootte in MB. Dit wordt verdeeld over diverse geheime voorgeheugens die in DocumentNodeStore worden gebruikt. De standaardwaarde is `256`
 
-* `changesSize`: Grootte in MB van afgekapte inzameling die in Mongo wordt gebruikt voor caching van de diff output. De standaardwaarde is `256`
+* `changesSize`: Grootte in MB van de afgetopte inzameling die in Mongo voor caching van de afdiff output wordt gebruikt. De standaardwaarde is `256`
 
-* `customBlobStore`: Een Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is `false`.
+* `customBlobStore`: Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is `false`.
 
 Hier volgt een voorbeeld `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config` bestand:
 
@@ -117,15 +117,15 @@ De details over de verschillende gegevensopslag en configuraties worden hieronde
 
 >[!NOTE]
 >
->Als u aangepaste gegevensopslag wilt inschakelen, moet u ervoor zorgen dat `customBlobStore` is ingesteld op `true` in het desbetreffende Node Store-configuratiebestand ([segment node store](/help/sites-deploying/data-store-config.md#segment-node-store) of [archief van documentknooppunten](/help/sites-deploying/data-store-config.md#document-node-store)).
+>Als u aangepaste gegevensopslag wilt inschakelen, moet u ervoor zorgen dat `customBlobStore` is ingesteld op `true` in het desbetreffende Node Store-configuratiebestand ([segmentknooppuntopslag](/help/sites-deploying/data-store-config.md#segment-node-store) of [archief van documentknooppunten](/help/sites-deploying/data-store-config.md#document-node-store)).
 
 ### Bestandsgegevensopslag {#file-data-store}
 
-Dit is de uitvoering van [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) aanwezig in Jackrabbit 2. Hiermee kunt u de binaire gegevens opslaan als normale bestanden in het bestandssysteem. Het gebruikt de `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
+Dit is de uitvoering van [FileDataStore](https://jackrabbit.apache.org/api/trunk/org/apache/jackrabbit/core/data/FileDataStore.html) aanwezig in Jasje 2. Hiermee kunt u de binaire gegevens opslaan als normale bestanden in het bestandssysteem. Het gebruikt de `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore` PID.
 
 Deze configuratieopties zijn beschikbaar:
 
-* `repository.home`: Pad naar de thuislocatie van de gegevensopslagruimte waarin verschillende gegevens met betrekking tot de gegevensopslagruimte worden opgeslagen. Standaard worden binaire bestanden opgeslagen onder `crx-quickstart/repository/datastore` directory
+* `repository.home`: Pad naar de thuislocatie van de gegevensopslagruimte waarin verschillende gegevensbestanden met betrekking tot de gegevensopslagruimte zijn opgeslagen. Standaard worden binaire bestanden opgeslagen onder `crx-quickstart/repository/datastore` directory
 
 * `path`: Pad naar de map waarin de bestanden worden opgeslagen. Indien opgegeven, heeft deze voorrang op `repository.home` value
 
@@ -139,7 +139,11 @@ Deze configuratieopties zijn beschikbaar:
 
 AEM kunnen worden geconfigureerd om gegevens op te slaan in Amazon Simple Storage Service (S3). Het gebruikt de `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.config` PID voor configuratie.
 
-Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de nieuwste versie van de 1.10.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.s3connector-1.10.0.zip). U moet ook het nieuwste AEM servicepakket downloaden en installeren, zoals vermeld op het tabblad [AEM 6.5 Opmerkingen bij de release](/help/release-notes/release-notes.md) pagina.
+>[!NOTE]
+>
+>AEM 6.5 ondersteunt het opslaan van gegevens in Amazon S3, maar de ondersteuning wordt niet uitgebreid tot het opslaan van gegevens in andere platforms, waarvan de leveranciers mogelijk hun eigen implementaties van Amazon S3 API&#39;s hebben.
+
+Om de functionaliteit van de S3 gegevensopslag toe te laten, moet een eigenschappak dat de S3 Datastore Schakelaar bevat worden gedownload en worden geïnstalleerd. Ga naar de [Opslagplaats Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/) en download de nieuwste versie van de 1.10.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.s3connector-1.10.0.zip). U moet ook het nieuwste AEM servicepakket downloaden en installeren, zoals vermeld op het tabblad [AEM 6.5 Opmerkingen bij de release](/help/release-notes/release-notes.md) pagina.
 
 >[!NOTE]
 >
@@ -178,7 +182,7 @@ Na het downloaden kunt u de S3-connector als volgt installeren en configureren:
 
    >[!NOTE]
    >
-   >Voer in een clusterinstelling bovenstaande stappen uit op alle knooppunten van de cluster een voor een. Zorg er ook voor dat u dezelfde S3-instellingen gebruikt voor alle knooppunten.
+   >Voer in een clusterinstelling bovenstaande stappen uit op alle knooppunten van de cluster een voor een. Zorg ook dat u dezelfde S3-instellingen gebruikt voor alle knooppunten.
 
 1. Bewerk het bestand en voeg de configuratieopties toe die nodig zijn voor de installatie.
 1. Start AEM.
@@ -199,7 +203,7 @@ Ga als volgt te werk om te upgraden naar een nieuwe versie van de 1.10.x S3-conn
    >
    >De hierboven vermelde bestandsnamen worden alleen ter illustratie gebruikt.
 
-1. Download de nieuwste versie van het 1.10.x-functiepakket via de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
+1. Download de nieuwste versie van het 1.10.x-functiepakket via de [Opslagplaats Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.s3connector/).
 1. Pak de inhoud uit en ga vervolgens naar een aparte map `jcr_root/libs/system/install/15`.
 1. De jar-bestanden kopiëren naar **&lt;aem-install>**/crx-quickstart/install/15 in de AEM installatiemap.
 1. Start AEM en controleer de verbindingsfunctionaliteit.
@@ -230,19 +234,19 @@ U kunt het configuratiebestand gebruiken met de opties die hieronder worden besc
 
 | Sleutel | Beschrijving | Standaard | Vereist |
 | --- | --- | --- | --- |
-| accessKey | Toegang tot sleutel-id voor de IAM-gebruiker met toegang tot het emmertje. |  | Ja, wanneer u geen IAM-rollen gebruikt. |
-| geheimeKey | Geheime toegangstoets voor de IAM-gebruiker met toegang tot het emmertje. |  | Ja, wanneer u geen IAM-rollen gebruikt. |
+| accessKey | Toegang tot sleutel-id voor de IAM-gebruiker met toegang tot het emmertje. | | Ja, wanneer u geen IAM-rollen gebruikt. |
+| geheimeKey | Geheime toegangstoets voor de IAM-gebruiker met toegang tot het emmertje. | | Ja, wanneer u geen IAM-rollen gebruikt. |
 | cacheSize | De grootte (in bytes) van de lokale cache. | 64GB | Nee. |
 | connectionTimeout | Stel de hoeveelheid tijd in die moet worden gewacht (in milliseconden) voordat u de time-out verlaat wanneer u een verbinding maakt. | 10000 | Nee. |
 | maxCachedBinarySize | Binaire bestanden met een grootte die kleiner is dan of gelijk is aan deze waarde (in bytes) worden opgeslagen in de geheugencache. | 17408 (17 kB) | Nee. |
 | maxConnections | Stel het maximum aantal toegestane open HTTP-verbindingen in. | 50 | Nee. |
 | maxErrorRetry | Stel het maximumaantal pogingen voor mislukte (opvraagbare) aanvragen in. | 3 | Nee. |
-| minRecordLength | De minimale grootte van een object (in bytes) die moet worden opgeslagen in de gegevensopslag. | 16384 | Nee. |
+| minRecordlength | De minimale grootte van een object (in bytes) die moet worden opgeslagen in de gegevensopslag. | 16384 | Nee. |
 | pad | Het lokale pad van de AEM datastore. | `crx-quickstart/repository/datastore` | Nee. |
-| proxyHost | Stel de optionele proxyhost in waarmee de client verbinding maakt. |  | Nee. |
-| proxyPort | Stel de optionele proxypoort in waarmee de client verbinding maakt. |  | Nee. |
-| s3Bucket | Naam van het S3 emmertje. |  | Ja |
-| s3EndPoint | S3 REST API-eindpunt. |  | Nee. |
+| proxyHost | Stel de optionele proxyhost in waarmee de client verbinding maakt. | | Nee. |
+| proxyPort | Stel de optionele proxypoort in waarmee de client verbinding maakt. | | Nee. |
+| s3Bucket | Naam van het S3 emmertje. | | Ja |
+| s3EndPoint | S3 REST API-eindpunt. | | Nee. |
 | s3Region | Regio waar de emmer zich bevindt. Zie dit [page](https://docs.aws.amazon.com/general/latest/gr/s3.html) voor meer informatie . | Regio waar AWS-instantie wordt uitgevoerd. | Nee. |
 | socketTimeout | Stel in hoeveel tijd (in milliseconden) moet worden gewacht voordat gegevens via een gevestigde, open verbinding worden overgebracht en deze verbinding wordt gesloten. | 50000 | Nee. |
 | stagingPurgeInterval | Het interval (in seconden) voor het leegmaken van voltooide uploads vanaf de testcache. | 300 | Nee. |
@@ -310,7 +314,7 @@ Het lokale geheime voorgeheugen wordt gecontroleerd op het verslag van het gevra
 
 #### Asynchroon uploaden {#async-upload}
 
-De cache ondersteunt asynchrone uploads naar de DataStore. De bestanden worden lokaal in het cachegeheugen (op het bestandssysteem) opgeslagen en het bestand wordt met een asynchrone taak geüpload. Het aantal asynchrone uploads wordt beperkt door de grootte van het opvoeringsgeheime voorgeheugen. De grootte van het het opvoeren geheime voorgeheugen wordt gevormd door te gebruiken `stagingSplitPercentage` parameter. Deze parameter bepaalt het percentage van geheim voorgeheugengrootte dat voor het opvoeren geheim voorgeheugen moet worden gebruikt. Bovendien wordt het percentage cache dat beschikbaar is voor downloads berekend als **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
+De cache ondersteunt asynchrone uploads naar de DataStore. De bestanden worden lokaal in het cachegeheugen (op het bestandssysteem) opgeslagen en het bestand wordt met een asynchrone taak geüpload. Het aantal asynchrone uploads wordt beperkt door de grootte van de opvoercache. De grootte van het het opvoeren geheime voorgeheugen wordt gevormd door te gebruiken `stagingSplitPercentage` parameter. Deze parameter bepaalt het percentage van geheim voorgeheugengrootte dat voor het opvoeren geheim voorgeheugen moet worden gebruikt. Bovendien wordt het percentage cachegeheugen dat beschikbaar is voor downloads berekend als **(100 - `stagingSplitPercentage`) &#42;`cacheSize`**.
 
 De asynchrone uploads zijn multi-threaded en het aantal draden wordt gevormd door te gebruiken `uploadThreads` parameter.
 
@@ -325,7 +329,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 1. Installeer de auteur en publiceer instanties en zorg ervoor zij behoorlijk begonnen zijn.
 1. Ga naar de montages van de replicatieagent, door een pagina te openen aan *https://localhost:4502/etc/replication/agents.author/publish.html*.
 1. Druk op **Bewerken** in de **Instellingen** sectie.
-1. Wijzig de **Serienummering** tekstoptie **Binair minder**.
+1. Wijzig de **Serienummering** tekstoptie naar **Binair minder**.
 
 1. De parameter &quot; `binaryless`= `true`&quot; in de vervoeruri. Na de wijziging moet de uri er ongeveer als volgt uitzien:
 
@@ -391,7 +395,8 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
    >
    >    * Voor eiken-versies **1.2.x** de eik gebruiken **1.2.12 of hoger**
    >    * Voor eiken-versies **nieuwer dan bovenstaande**, gebruikt u de versie van de eik-run die overeenkomt met de eik-kern van de AEM-installatie.
-
+   >
+   >
 
 1. Ten slotte valideert u de configuratie. Om te valideren, zoekt u naar een uniek bestand dat aan de gegevensopslag is toegevoegd door elke opslagplaats die het deelt. De bestandsindeling is `repository-[UUID]`, waarbij de UUID een unieke id is van elke afzonderlijke opslagplaats.
 
@@ -406,7 +411,7 @@ Om binaryless replicatie met S3 te vormen, worden de volgende stappen vereist:
 
 AEM kunnen worden geconfigureerd om gegevens op te slaan in de Azure-opslagservice van Microsoft®. Het gebruikt de `org.apache.jackrabbit.oak.plugins.blob.datastore.AzureDataStore.config` PID voor configuratie.
 
-Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [Adobe-opslagplaats](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de nieuwste versie van de 1.6.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
+Om de functionaliteit van de Azure-gegevensopslag mogelijk te maken, moet een functiepakket met de Azure-connector worden gedownload en geïnstalleerd. Ga naar de [Opslagplaats Adobe](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.oak.azureblobconnector/) en download de nieuwste versie van de 1.6.x-versies van het functiepakket (bijvoorbeeld com.adobe.granite.oak.azureblobconnector-1.6.3.zip).
 
 >[!NOTE]
 >
@@ -420,7 +425,7 @@ Na het downloaden kunt u de Azure-connector als volgt installeren en configurere
 
 1. Pak de inhoud van het ZIP-bestand van het functiepakket uit naar een tijdelijke map.
 
-1. Ga naar de tijdelijke map en kopieer de inhoud van `jcr_root/libs/system/install` aan de `<aem-install>crx-quickstart/install` map.
+1. Naar de tijdelijke map gaan en de inhoud van `jcr_root/libs/system/install` aan de `<aem-install>crx-quickstart/install` map.
 1. Als AEM al is geconfigureerd voor de Tar- of MongoDB-opslag, verwijdert u bestaande configuratiebestanden uit de `/crx-quickstart/install` map voordat u verdergaat. De bestanden die moeten worden verwijderd, zijn:
 
    VoorMongoMK:
@@ -437,28 +442,28 @@ Na het downloaden kunt u de Azure-connector als volgt installeren en configurere
 
 U kunt het configuratiebestand gebruiken met de volgende opties:
 
-* azureSas=&quot;&quot;: In versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **Als het configuratiebestand zowel SAS- als opslagreferenties bevat, heeft SAS prioriteit.** Voor meer informatie over SAS raadpleegt u de [officiële documentatie](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
+* azureSas=&quot;&quot;: in versie 1.6.3 van de connector werd ondersteuning voor Azure Shared Access Signature (SAS) toegevoegd. **Als het configuratiebestand zowel SAS- als opslagreferenties bevat, heeft SAS prioriteit.** Voor meer informatie over SAS raadpleegt u de [officiële documentatie](https://learn.microsoft.com/en-us/azure/storage/common/storage-sas-overview). Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
 
 * azureBlobEndpoint=&quot;&quot;: Het Azure Blob Endpoint. Bijvoorbeeld https://&lt;storage-account>.blob.core.windows.net.
-* accessKey=&quot;&quot;: De naam van de opslagaccount. Voor meer informatie over de Microsoft® Azure verificatiereferenties raadpleegt u de [officiële documentatie](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
+* accessKey=&quot;&quot;: de naam van de opslagaccount. Voor meer informatie over de Microsoft® Azure verificatiereferenties raadpleegt u de [officiële documentatie](https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account).
 
-* geheimakey=&quot;&quot;: De toegangstoets voor opslag. Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
-* container=&quot;&quot;: De naam van de Microsoft® Azure-opslagcontainer. De container is een groepering van een set bollen. Lees voor meer informatie de [officiële documentatie](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
-* maxConnections=&quot;&quot;: Het gelijktijdige aantal gelijktijdige aanvragen per bewerking. De standaardwaarde is 1.
-* maxErrorRetry=&quot;&quot;: Aantal pogingen per verzoek. De standaardwaarde is 3.
-* socketTimeout=&quot;&quot;: Het time-outinterval, in milliseconden, dat voor de aanvraag wordt gebruikt. De standaardwaarde is 5 minuten.
+* SECTKey=&quot;&quot;: de toegangstoets voor opslag. Zorg ervoor dat het teken &#39;=&#39; wordt genummerd als &#39;\=&#39;.
+* container=&quot;&quot;: De naam van de Microsoft® Azure blob opslagcontainer. De container is een groepering van een set bollen. Lees voor meer informatie de [officiële documentatie](https://learn.microsoft.com/en-us/rest/api/storageservices/Naming-and-Referencing-Containers--Blobs--and-Metadata?redirectedfrom=MSDN).
+* maxConnections=&quot;&quot;: het gelijktijdige aantal gelijktijdige aanvragen per bewerking. De standaardwaarde is 1.
+* maxErrorRetry=&quot;&quot;: aantal pogingen per aanvraag. De standaardwaarde is 3.
+* socketTimeout=&quot;&quot;: het time-outinterval, in milliseconden, dat wordt gebruikt voor de aanvraag. De standaardwaarde is 5 minuten.
 
 Naast de bovenstaande instellingen kunnen ook de volgende instellingen worden geconfigureerd:
 
-* pad: Het pad van de gegevensopslag. De standaardwaarde is `<aem-install>/repository/datastore.`
-* RecordLength: De minimale grootte van een object dat in de gegevensopslag moet worden opgeslagen. De standaardwaarde is 16 kB.
-* maxCachedBinarySize: Binaire bestanden met een grootte kleiner dan of gelijk aan deze grootte worden opgeslagen in de geheugencache. De grootte is in bytes. De standaardwaarde is 17408 (17 kB).
+* pad: het pad van de gegevensopslag. De standaardwaarde is `<aem-install>/repository/datastore.`
+* RecordLength: de minimale grootte van een object dat in de gegevensopslag moet worden opgeslagen. De standaardwaarde is 16 kB.
+* maxCachedBinarySize: binaire bestanden met een grootte kleiner dan of gelijk aan deze grootte worden opgeslagen in de geheugencache. De grootte is in bytes. De standaardwaarde is 17408 (17 kB).
 * cacheSize: De grootte van de cache. De waarde wordt opgegeven in bytes. De standaardwaarde is 64 GB.
-* geheim: Slechts te gebruiken als het gebruiken van binaryless replicatie voor gedeelde datastore opstelling.
-* stagingSplitPercentage: Het percentage van geheim voorgeheugengrootte die wordt gevormd om voor het opvoeren van asynchrone uploads te worden gebruikt. De standaardwaarde is 10.
+* geheim: slechts te gebruiken als het gebruiken van binaryless replicatie voor gedeelde datastore opstelling.
+* stagingSplitPercentage: Het percentage cachegrootte dat wordt geconfigureerd voor het stapelen van asynchrone uploads. De standaardwaarde is 10.
 * uploadThreads: Het aantal uploadthreads dat wordt gebruikt voor asynchrone uploads. De standaardwaarde is 10.
-* stagingPurgeInterval: Het interval in seconden voor het leegmaken van voltooide uploads uit het opvoeren geheime voorgeheugen. De standaardwaarde is 300 seconden (5 minuten).
-* stagingRetryInterval: Het interval voor opnieuw proberen in seconden voor mislukte uploads. De standaardwaarde is 600 seconden (10 minuten).
+* stagingPurgeInterval: het interval in seconden voor het leegmaken van voltooide uploads vanuit de testcache. De standaardwaarde is 300 seconden (5 minuten).
+* stagingRetryInterval: het interval voor opnieuw proberen in seconden voor mislukte uploads. De standaardwaarde is 600 seconden (10 minuten).
 
 >[!NOTE]
 >
@@ -476,9 +481,9 @@ Het proces van de huisvuilinzameling van de gegevensopslag wordt gebruikt om het
 U kunt de inzameling van het huisvuilopslag in werking stellen door:
 
 1. Ga naar de JMX-console op *https://&lt;serveraddress:port>/system/console/jmx*
-1. Zoeken naar **RepositoryManagement** Als u de gegevensopslagbeheerder MBean hebt gevonden, klikt u erop om de beschikbare opties weer te geven.
+1. Zoeken naar **RepositoryManagement.** Als u de gegevensopslagbeheerder MBean hebt gevonden, klikt u erop om de beschikbare opties weer te geven.
 1. Ga naar het einde van de pagina en klik op de knop **startDataStoreGC(booleaanse markeringOnly)** koppeling.
-1. In het volgende dialoogvenster voert u `false` voor de `markOnly` parameter, dan klik **Invoeden**:
+1. In het volgende dialoogvenster voert u `false` voor de `markOnly` parameter, klik vervolgens op **Invoeden**:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -500,7 +505,6 @@ U kunt de inzameling van het huisvuilopslag in werking stellen door:
 >2. Voeg de `blobTrackSnapshotIntervalInSecs=L"0"` in de `crx-quickstart/install/org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.config` bestand. Deze parameter vereist eik 1.12.0, 1.10.2 of later.
 >3. Start de AEM opnieuw.
 
-
 Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopslag ook op gegevensopslag worden in werking gesteld die door meer dan één bewaarplaats wordt gedeeld. Voer de volgende stappen uit om de opschoonfunctie van gegevensopslaggegevens uit te voeren in een gedeelde gegevensopslag:
 
 1. Zorg ervoor dat om het even welke onderhoudstaken die voor de inzameling van huisvuil van de gegevensopslag worden gevormd op alle bewaarplaats instanties onbruikbaar worden gemaakt die de gegevensopslag delen.
@@ -513,4 +517,5 @@ Met nieuwere versies van AEM, kan de inzameling van huisvuil van de gegevensopsl
    1. Ga naar de JMX-console en selecteer de Repository Manager Mbean.
    1. Klik op de knop **Klik op startDataStoreGC (booleaanse markeringOnly)** koppeling.
    1. In het volgende dialoogvenster voert u `false` voor de `markOnly` opnieuw.
+
    Alle gevonden bestanden worden gesorteerd met behulp van de markeringsfase die voor is gebruikt en de overige bestanden die niet in de gegevensopslag worden gebruikt, worden verwijderd.

@@ -2,9 +2,9 @@
 title: Vertaalregels configureren
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '871'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ De vertaalregels bevatten de volgende informatie:
 * De namen van de eigenschappen die de te vertalen inhoud bevatten
    * Het bezit kan voor een specifiek middeltype of voor alle middeltypes specifiek zijn
 
-Omdat de Modellen van het Fragment van de Inhoud, die de structuur van uw Inhoudsfragmenten bepalen, aan uw eigen project uniek zijn, is het essentieel aan opstellingsvertaalregels zodat AEM weet welke elementen van uw inhoudsmodellen om moeten vertalen.
+Omdat de Modellen van het Fragment van de Inhoud, die de structuur van uw Inhoudsfragmenten bepalen, aan uw eigen project uniek zijn, is het essentieel aan opstellingsvertaalregels zodat AEM weet welke elementen van uw inhoudsmodellen moeten vertalen.
 
 >[!TIP]
 >
@@ -54,12 +54,12 @@ Er kunnen meerdere regels worden gemaakt ter ondersteuning van complexe vertaalv
 
 De vertaalregels worden ontworpen om dergelijke scenario&#39;s te behandelen. Nochtans in dit voorbeeld illustreren wij hoe te om regels tot stand te brengen door zich op een eenvoudige, enige configuratie te concentreren.
 
-Er is een **Configuratie vertaling** console beschikbaar voor het vormen van vertaalregels. Toegang tot dit bestand:
+Er is een **Omzetconfiguratie** console beschikbaar voor het vormen van vertaalregels. Toegang tot dit bestand:
 
 1. Navigeren naar **Gereedschappen** -> **Algemeen**.
-1. Tik of klik op **Configuratie vertaling**.
+1. Tik of klik op **Omzetconfiguratie**.
 
-In de **Configuratie vertaling** UI, zijn er een aantal opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
+In de **Omzetconfiguratie** UI, zijn er een aantal opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
 
 1. Tik of klik op **Context toevoegen**, waarmee u een pad kunt toevoegen. Dit is het pad van de inhoud waarop de regel van toepassing is.
    ![Context toevoegen](assets/add-translation-context.png)
@@ -68,8 +68,8 @@ In de **Configuratie vertaling** UI, zijn er een aantal opties beschikbaar voor 
 1. AEM slaat de configuratie op.
 1. Selecteer de context die u zojuist hebt gemaakt en tik of klik op **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
    ![Editor voor vertaalregels](assets/translation-rules-editor.png)
-1. Standaard worden alle configuraties overgeërfd van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** om extra gebieden aan de configuratie toe te voegen.
-1. Als deze optie is uitgeschakeld, onder de knop **Algemeen** in de lijst, voegt u de eigenschapnamen toe van de Content Fragment Model(s) die u [eerder geïdentificeerd als velden voor vertaling.](getting-started.md#content-models)
+1. Standaard worden alle configuraties overgenomen van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** om extra gebieden aan de configuratie toe te voegen.
+1. Als deze optie is uitgeschakeld, onder de knop **Algemeen** in de lijst, voegt u de eigenschapnamen toe van de inhoudsfragmentmodellen die u gebruikt [eerder geïdentificeerd als velden voor vertaling.](getting-started.md#content-models)
    1. Voer de naam van de eigenschap in het dialoogvenster **Nieuwe eigenschap** veld.
    1. De opties **Vertalen** en **Overnemen** worden automatisch ingeschakeld.
    1. Tik of klik op **Toevoegen**.
@@ -92,7 +92,7 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp wat de vertaalregels doen.
 * U kunt uw eigen vertaalregels definiëren.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Inhoud vertalen](translate-content.md) waar u zult leren hoe uw schakelaar en regels samenwerken om hoofdloze inhoud te vertalen.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Inhoud vertalen](translate-content.md) waar u zult leren hoe uw schakelaar en regels samenwerken om hoofdloze inhoud te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 

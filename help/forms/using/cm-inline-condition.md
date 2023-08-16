@@ -11,9 +11,9 @@ discoiquuid: bbaba39b-e15a-4143-b6fc-7789fa2917b4
 docset: aem65
 feature: Correspondence Management
 exl-id: bc5d6c5b-c833-4849-aace-e07f8a522b32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1659'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Inline-voorwaarden {#inline-conditions}
 
-Met AEM Forms kunt u inline-voorwaarden in tekstmodules gebruiken om de weergave van tekst te automatiseren die afhankelijk is van de context of de gegevens die aan het formuliergegevensmodel (in interactieve communicatie) of het gegevenswoordenboek (in letters) zijn gekoppeld. De gealigneerde voorwaarde toont specifieke inhoud die op voorwaardevaluatie wordt gebaseerd waar of vals is.
+Met AEM Forms kunt u inline voorwaarden in tekstmodules gebruiken om de rendering te automatiseren van tekst die afhankelijk is van de context of gegevens die aan het formuliergegevensmodel (in interactieve communicatie) of het gegevenswoordenboek (in letters) zijn gekoppeld. De gealigneerde voorwaarde toont specifieke inhoud die op voorwaardevaluatie wordt gebaseerd waar of vals is.
 
 De voorwaarden voeren berekeningen uit op gegevenswaarden die door het model/gegevenswoordenboek van de vormgegevens of door eind - gebruikers worden verstrekt. Met inline voorwaarden kunt u tijd besparen en menselijke fouten verminderen, terwijl u tegelijkertijd zeer contextuele en gepersonaliseerde interactieve communicatie/letters maakt.
 
@@ -32,7 +32,7 @@ Zie voor meer informatie:
 * [Overzicht van Correspondentenbeheer](/help/forms/using/cm-overview.md)
 * [Tekst in interactieve communicatie](../../forms/using/texts-interactive-communications.md)
 
-### Voorbeeld: Regels gebruiken om inline tekst in interactieve communicatie te conditioneren {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
+### Voorbeeld: regels gebruiken om inline tekst in interactieve communicatie te conditionaliseren {#example-using-rules-to-conditionalize-inline-text-in-interactive-communication}
 
 Als u een zin, alinea of tekenreeks in een interactieve communicatie wilt conditionaliseren, kunt u een regel maken in het desbetreffende tekstdocumentfragment. In het volgende voorbeeld wordt een regel gebruikt om alleen aan de Amerikaanse ontvangers van de interactieve communicatie een gratis nummer weer te geven.
 
@@ -40,7 +40,7 @@ Zie Regel maken in tekst voor meer informatie in [Teksten in interactieve commun
 
 Zodra u het tekstfragment in een Interactieve Communicatie omvat en de Agent gebruikt de Agent UI om een Interactieve Mededeling voor te bereiden, worden de (model van vormgegevens) gegevens voor de ontvangers geëvalueerd en de tekst wordt getoond slechts aan de ontvangers in de V.S.
 
-### Voorbeeld: Het gebruiken van gealigneerde voorwaarde in een brief om het aangewezen adres terug te geven  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
+### Voorbeeld: Inline voorwaarde gebruiken in een brief om het juiste adres te renderen  {#example-using-inline-condition-in-a-letter-to-render-the-appropriate-address}
 
 U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in de aangewezen tekstmodule op te nemen. Het volgende voorbeeld gebruikt twee voorwaarden om het aangewezen adres, Sir of Ma&#39;am, in een brief te evalueren en te tonen die op het DD element Gender wordt gebaseerd. Met vergelijkbare stappen kunt u andere voorwaarden maken.
 
@@ -70,7 +70,7 @@ U kunt inline voorwaarde in een brief opnemen door de gealigneerde voorwaarde in
 
    Zie voor meer informatie over het maken van de expressie **Expressies en externe functies maken met expressiebuilder** in [Expressiebouwer](../../forms/using/expression-builder.md). De waarde die in de expressie wordt opgegeven, moet worden ondersteund voor het element in het gegevenswoordenboek. Zie voor meer informatie [Gegevenswoordenboek](../../forms/using/data-dictionary.md).
 
-   Nadat de voorwaarde is ingevoegd, kunt u de muisaanwijzer boven de greep aan de linkerkant van de voorwaarde houden om de voorwaarde weer te geven. Tik op de handgreep om het pop-upmenu van de voorwaarde weer te geven. U kunt de voorwaarde dan bewerken of verwijderen.
+   Nadat de voorwaarde is ingevoegd, kunt u de muisaanwijzer boven de greep aan de linkerkant van de voorwaarde houden om de voorwaarde weer te geven. Tik op de handgreep om het pop-upmenu van de voorwaarde weer te geven. Hiermee kunt u de voorwaarde bewerken of verwijderen.
 
    ![3_hoverhandle](assets/3_hoverhandle.png) ![4_editconditionremoveconditionpopup](assets/4_editconditionremoveconditionpopup.png)
 
@@ -97,7 +97,7 @@ Verder, kunt u regel/voorwaarde binnen de herhalingsconstructie specificeren om 
 
 ### Voorbeeld: Herhaling gebruiken in een Interactieve Mededeling aan formaat, structuur, en vertoning een lijst van creditcardtransacties {#example-using-repeat-in-an-interactive-communication-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
-Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling aan structuur en geef de creditcardtransacties in een Interactieve Mededeling terug.
+Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling om de creditcardtransacties in een Interactieve Mededeling te structureren en terug te geven.
 
 1. Voeg in een tekstdocumentfragment dat is gebaseerd op een formuliergegevensmodel de relevante formuliergegevensmodelobjecten in (en ingesloten tekst die is vereist voor de labels, zoals in dit voorbeeld):
 
@@ -139,7 +139,7 @@ Het volgende voorbeeld geeft u de stappen voor het gebruiken van herhaling aan s
 
    ![screen_shot_2018-03-09at155516copy](assets/screen_shot_2018-03-09at155516copy.png)
 
-### Voorbeeld: Herhaling gebruiken in een brief om een lijst met creditcardtransacties op te maken, te structureren en weer te geven {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
+### Voorbeeld: Herhaling in een letter gebruiken om een lijst met creditcardtransacties op te maken, te structureren en weer te geven {#example-using-repeat-in-a-letter-to-format-structure-and-display-a-list-of-credit-card-transactions}
 
 In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herhalen om de creditcardtransacties in een letter te structureren en weer te geven. Met vergelijkbare stappen kunt u herhalen in een ander scenario gebruiken.
 
@@ -162,7 +162,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
    Date: {^DD_creditcard_TransactionDate^} Amount (USD): {^DD_creditcard_TransactionAmount^} Transaction Type: {^DD_creditcard_TransactionType^}
    ```
 
-   Het renderen van een instructie met een goede indeling is echter nog niet voltooid. Als u een brief teruggeeft die op het tot dusver verrichte werk wordt gebaseerd, verschijnt het als volgt:
+   De taak om een instructie met een goede indeling weer te geven, is echter nog niet voltooid. Als u een brief teruggeeft die op het tot dusver verrichte werk wordt gebaseerd, verschijnt het als volgt:
 
    ![1_1renderwithoutrepeat](assets/1_1renderwithoutrepeat.png)
 
@@ -182,18 +182,18 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
    ${DD_creditcard_TransactionAmount > 0.5}
    ```
 
-   Als u de informatie niet selectief hoeft te renderen (hier transacties), laat u de voorwaarde leeg door het volgende te verwijderen uit het dialoogvenster: `${}`. Het opslaan van een herhalingsexpressie wordt ingeschakeld wanneer het venster met de herhalingsexpressie leeg is (zonder ${} wanneer geen herhaling nodig is) of wanneer het een geldige voorwaarde voor herhaling bevat.
+   Als u de informatie niet selectief hoeft te renderen (hier transacties), laat u de voorwaarde leeg door het volgende te verwijderen uit het dialoogvenster: `${}`. Het opslaan van een herhalingsexpressie wordt ingeschakeld wanneer het venster met de herhalingsexpressie leeg is (zonder ${} (wanneer geen herhaling nodig is) of wanneer het een geldige voorwaarde voor herhaling bevat.
 
 1. Selecteer een scheidingsteken voor de opmaak van de dynamische tekst en tik op het vinkje dat u wilt opslaan:
 
    * **Regeleinde**: Voegt een regeleinde in na elk transactieitem in de uitvoerletter.
-   * **Tekst**: Hiermee wordt het opgegeven tekstteken ingevoegd na elk transactiemateriaal in de uitvoerletter.
+   * **Tekst**: Voegt het opgegeven tekstteken in na elk transactie-item in de uitvoerletter.
 
    Nadat de voorwaarde is ingevoegd, wordt de tekst met de herhaling rood gemarkeerd en wordt er een greep aan de linkerkant weergegeven. U kunt de aanwijzer boven de greep links van de herhaling plaatsen om de herhalingsconstructie weer te geven.
 
    ![4_repeat_hoverdetail](assets/4_repeat_hoverdetail.png)
 
-   Tik op de handgreep om het pop-upmenu van de herhaling weer te geven. U kunt de herhalingsconstructie dan bewerken of verwijderen.
+   Tik op de handgreep om het pop-upmenu van de herhaling weer te geven. Hiermee kunt u de herhalingsconstructie bewerken of verwijderen.
 
    ![5_herhaaleditremove](assets/5_repeateditremove.png)
 
@@ -206,7 +206,7 @@ In het volgende voorbeeld worden de stappen beschreven voor het gebruik van herh
 
    ![6_repeatOutputPreview](assets/6_repeatoutputpreview.png)
 
-   De statische tekst wordt herhaald met de transactiedetails. Herhalende statische tekst wordt vergemakkelijkt door de herhaling die op de tekst in deze procedure wordt toegepast. De voorwaarde, ${DD_creditcard_TransactionAmount > 0.5}, zorgt ervoor dat de transacties onder USD.5 niet in de brief worden teruggegeven.
+   De statische tekst wordt herhaald met de transactiedetails. Herhalende statische tekst wordt vergemakkelijkt door de herhaling die op de tekst in deze procedure wordt toegepast. De voorwaarde, ${DD_creditcard_TransactionAmount > 0.5}, zorgt ervoor dat de transacties onder USD 0,5 niet in de letter worden weergegeven.
 
    >[!NOTE]
    >
@@ -220,15 +220,15 @@ Het kan nodig zijn om herhaling te gebruiken binnen een bepaalde conditie. Met C
 
 Hierna volgt bijvoorbeeld een herhaling (in rood opgemaakt) binnen een voorwaarde (in groen opgemaakt).
 
-Terwijl de herhaling de creditcardtransacties teruggeeft, verzekert de voorwaarde ${DD_creditcard_nooftransactions > 0} dat de herhalingsconstructie slechts wordt teruggegeven als er minstens één transactie is.
+Terwijl de herhaling de creditcardtransacties teruggeeft, de voorwaarde ${DD_creditcard_nooftransactions > 0} zorgt ervoor dat de herhalingsconstructie slechts wordt teruggegeven als er minstens één transactie is.
 
 ![herhaaldelijke toestand](assets/repeatwitincondition.png)
 
-Op dezelfde manier kunt u volgens uw vereiste het volgende maken:
+Op dezelfde manier kunt u, afhankelijk van uw vereiste, tot stand brengen:
 
 * Een of meer voorwaarden binnen een voorwaarde
 * Een of meer voorwaarden binnen een herhaling
-* Een combinatie van voorwaarden en herhaling binnen een toestand of herhaling
+* Een combinatie van voorwaarden en herhaling binnen een voorwaarde of herhaling
 
 ### Lege inline-voorwaarde {#empty-inline-condition}
 

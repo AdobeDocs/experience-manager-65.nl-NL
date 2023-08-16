@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 exl-id: 407fc164-291d-42f6-8c46-c1df9ba3d454
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '797'
 ht-degree: 1%
 
 ---
@@ -22,16 +22,16 @@ ht-degree: 1%
 
 De projectworkflows die beschikbaar zijn uit het vak zijn onder andere:
 
-* **Workflow voor projectgoedkeuring** - Met deze workflow kunt u inhoud toewijzen aan een gebruiker, deze controleren en vervolgens goedkeuren.
+* **Workflow voor projectgoedkeuring** - Met deze workflow kunt u inhoud toewijzen aan een gebruiker, controleren en vervolgens goedkeuren.
 * **Verzoek starten** - Een workflow waarvoor de toepassing wordt gestart.
 * **Openingspagina aanvragen** - Voor deze workflow is een bestemmingspagina vereist.
 * **E-mail aanvragen** - Workflow voor het aanvragen van een e-mail.
-* **Fotofoto en foto van product (handel)** - Elementen toewijzen aan producten
+* **Fotofoto&#39;s en foto&#39;s van producten maken (handel)** - Elementen toewijzen aan producten
 * **DAM maken en vertalen kopie en DAM maken taalkopie** - Hiermee maakt u vertaalde binaire bestanden, metagegevens en tags voor elementen en mappen.
 
 Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows beschikbaar:
 
-|  | **Eenvoudig project** | **Mediaproject** | **Fotoproject van product** | **Omzettingsproject** |
+|   | **Eenvoudig project** | **Mediaproject** | **Fotoproject van product** | **Omzettingsproject** |
 |---|:-:|:-:|:-:|:-:|
 | Verzoek om kopie |  | x |  |  |
 | Fotofoto van product |  | x | x |  |
@@ -45,7 +45,7 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 
 >[!NOTE]
 >
->&amp;asteren; Deze workflows worden niet gestart vanuit de **Workflow** tegel in projecten. Zie [Taalkopieën voor middelen maken.](/help/sites-administering/tc-manage.md)
+>&amp;Laatste; deze workflows worden niet gestart vanuit de **Workflow** tegel in projecten. Zie [Taalkopieën voor middelen maken.](/help/sites-administering/tc-manage.md)
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -97,7 +97,7 @@ Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
 1. Tik of klik in een eenvoudig project op het neerwaartse chevron rechtsboven in het dialoogvenster **Workflows** tegel en selecteer **Workflow starten**.
 1. Selecteer in de wizard Workflow de optie **Workflow voor starten aanvragen** en klik op **Volgende**.
-1. Voer een titel in voor de opstart en geef het bronpad voor de opstart op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
+1. Voer een titel in voor de opstart en geef het bronpad op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
 
    ![Starthandwerkstroom aanvragen](assets/project-request-launch-workflow.png)
 

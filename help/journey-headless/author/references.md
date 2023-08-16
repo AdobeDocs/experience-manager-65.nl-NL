@@ -2,9 +2,9 @@
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
 description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '726'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ Dit artikel bouwt op deze voort zodat begrijpt u hoe te om verwijzingen te gebru
 ## Doelstelling {#objective}
 
 * **Publiek**: Geavanceerd
-* **Doelstelling**: Introduceer het gebruik van verwijzingen voor het Creëren van CMS zonder hoofd. Welke soorten verwijzingen beschikbaar zijn, en wat zijn hun doeleinden:
+* **Doelstelling**: Introduceer het gebruik van verwijzingen voor CMS-ontwerpen zonder koptekst. Welke soorten verwijzingen beschikbaar zijn, en wat zijn hun doeleinden:
 
    * Content References
    * Verwijzingen naar element/media
@@ -39,26 +39,26 @@ Sommige verwijzingen hebben specifieke gegevenstypen (bijvoorbeeld Content Refer
 
 ## Content References {#content-references}
 
-Content Reference do just that - they allow you to reference any other content. Hiermee wordt een browser geopend waarin u het inhoudsitem kunt selecteren.
+Content Reference do just that - they lets you reference any other content. Hiermee wordt een browser geopend waarin u het inhoudsitem kunt selecteren.
 
 ## Verwijzingen naar element/media {#assets-media-references}
 
-In een tekstblok kan naar elementen (bijvoorbeeld afbeeldingen of media) worden verwezen met de opdracht **Element invoegen** optie. Hiermee wordt een browser geopend waarin u het element kunt selecteren.
+In een tekstblok kan naar elementen (bijvoorbeeld afbeeldingen of media) worden verwezen met de opdracht **Element invoegen** -optie. Hiermee wordt een browser geopend waarin u het element kunt selecteren.
 
 ![Inhoudsfragmenten - Element invoegen](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
 ## Fragmentverwijzingen {#fragment-references}
 
-Ook hier geldt dat fragmentverwijzingen alleen maar kunnen verwijzen naar een ander fragment. Waarom dit belangrijk is, moet er wat meer uitleg komen.
+Ook hier geldt dat fragmentverwijzingen alleen dat doen - ze laten u naar een ander fragment verwijzen. Waarom dit belangrijk is, moet er wat meer uitleg komen.
 
 U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
 
 * Plaats
 * Bedrijf
 * Persoon
-* Awards
+* Uitreiking
 
-Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
+Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers...en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
 
 En een persoon kan een Prijs (of misschien twee) hebben.
 
@@ -75,14 +75,14 @@ Als auteur bent u niet verantwoordelijk voor het definiëren van deze relaties (
 
 ### Geneste fragmenten ontwerpen {#author-nested-fragment}
 
-Verwijzingen naar fragmenten ontwerpen is vrij eenvoudig (hoewel het veld gewoonlijk niet wordt gelabeld als **Fragmentverwijzing**). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
+Verwijzingen naar fragmenten ontwerpen is vrij eenvoudig (hoewel het veld doorgaans niet wordt aangeduid als **Fragmentverwijzing**). U kunt de verwijzing rechtstreeks invoeren of (waarschijnlijker) het mappictogram selecteren om een browser te openen waarin u door het gewenste fragment kunt navigeren en het gewenste fragment kunt selecteren.
 
 ![Inhoudsfragmenten - verwijzingen](/help/journey-headless/author/assets/headless-journey-author-references-03.png)
 
 De definitie van de besturingselementen van het inhoudsfragmentmodel:
 
 * of u meerdere referenties kunt selecteren om toe te voegen
-* de modeltypen inhoudsfragmenten die u kunt selecteren; In het Content Fragment Model worden de fragmentmodellen gedefinieerd die zijn toegestaan voor de referentie, zodat AEM alleen fragmenten presenteert die op die modellen zijn gebaseerd.
+* de modeltypen van inhoudsfragmenten die u kunt selecteren; het model van het Fragment van de Inhoud bepaalt de fragmentmodellen die voor de verwijzing worden toegestaan, zodat AEM slechts fragmenten presenteert die op die modellen worden gebaseerd.
 
 ### Door geneste fragmenten navigeren {#navigate-nested-fragment}
 
@@ -113,18 +113,18 @@ Nu u over verwijzingen en structuur in Inhoudsfragmenten hebt geleerd, is de vol
       * [De configuratie toepassen op de middelenmap](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Een inhoudsfragment maken](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variaties - Inhoudsfragmenten ontwerpen](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modellen van inhoudsfragmenten - gegevenstypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
       * [Modellen van inhoudsfragmenten - eigenschappen](/help/assets/content-fragments/content-fragments-models.md#properties)
-
 
 * Aan de slag - hulplijnen
    * [Snelstartgids voor mappen zonder middelenkoppen maken](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Reis van architect zonder hoofdinhoud AEM](/help/journey-headless/architect/overview.md)
 
-* [AEM doorlopende vertaalreis](/help/journey-headless/translation/overview.md)
+* [AEM doorsnedenloze vertaalreis](/help/journey-headless/translation/overview.md)

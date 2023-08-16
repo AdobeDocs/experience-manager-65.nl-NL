@@ -10,9 +10,9 @@ discoiquuid: 9d78a6dc-fc9c-415b-b817-164fe6648b30
 docset: aem65
 feature: Form Data Model
 exl-id: 7a1d9d57-66f4-4f20-91c2-ace5a71a52f2
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1934'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Met AEM Forms Data Integration kunt u verschillende gegevensbronnen configureren
 * SOAP-webservices
 * OData-diensten
 
-Gegevensintegratie ondersteunt OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, en API Key authentication types out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op ZEEP-Gebaseerde, en de diensten OData in de Diensten van de Wolk van AEM worden gevormd, JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel worden gevormd in AEM Webconsole.
+Gegevensintegratie ondersteunt OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, en API Key authentication types out-of-the-box, en staat het uitvoeren van douaneauthentificatie voor de toegang tot van de Webdiensten toe. Terwijl RESTful, op SOAP-Gebaseerde, en de diensten OData in AEM Cloud Servicen worden gevormd, wordt JDBC voor relationele gegevensbestanden en schakelaar voor AEM gebruikersprofiel gevormd in AEM Webconsole.
 
 ## Relationele database configureren {#configure-relational-database}
 
@@ -49,7 +49,7 @@ U kunt relationele gegevensbestanden vormen gebruikend AEM de Configuratie van d
    * Het bezit van de gegevensbrondienst dat de naam van de gegevensbron opslaat
    * Java-klassenaam voor het JDBC-stuurprogramma
    * URI voor JDBC-verbinding
-   * Gebruikersnaam en wachtwoord om verbinding te maken met het JDBC-stuurprogramma
+   * Gebruikersnaam en wachtwoord voor verbinding met het JDBC-stuurprogramma
 
    >[!NOTE]
    >
@@ -89,7 +89,7 @@ U kunt AEM gebruikersprofiel vormen gebruikend de Configuratie van de Verbinding
 
    >[!NOTE]
    >
-   >De **&#42;** in het bovenstaande voorbeeld worden alle knooppunten onder de `profile/empLocation/` knooppunt in AEM gebruikersprofiel in CRXDE-structuur. Dit betekent dat het formuliergegevensmodel toegang heeft tot het `city` eigenschap of type `string` aanwezig in een knooppunt onder `profile/empLocation/` knooppunt. Nochtans, moeten de knopen die het gespecificeerde bezit bevatten een verenigbare structuur volgen.
+   >De **&#42;** in het bovenstaande voorbeeld worden alle knooppunten onder de `profile/empLocation/` knooppunt in AEM gebruikersprofiel in CRXDE-structuur. Dit betekent dat het formuliergegevensmodel toegang heeft tot het dialoogvenster `city` eigenschap of type `string` aanwezig in een knooppunt onder `profile/empLocation/` knooppunt. Nochtans, moeten de knopen die het gespecificeerde bezit bevatten een verenigbare structuur volgen.
 
 1. Tikken **[!UICONTROL Save]** om de configuratie op te slaan.
 
@@ -99,7 +99,7 @@ U kunt AEM gebruikersprofiel vormen gebruikend de Configuratie van de Verbinding
 >
 >Configuratie voor map met cloudservices is vereist voor het configureren van cloudservices voor RESTful-, SOAP- en OData-services.
 
-Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf` in AEM opslagplaats. Standaard worden de `conf` map bevat de `global` map waar u configuraties voor cloudservices kunt maken. U moet deze echter handmatig inschakelen voor cloudconfiguraties. U kunt ook extra mappen maken in `conf` om cloudserviceconfiguraties te maken en te organiseren.
+Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf` in AEM opslagplaats. Standaard worden de `conf` map bevat de `global` map waar u configuraties voor cloudservices kunt maken. U moet deze optie echter handmatig inschakelen voor cloudconfiguraties. U kunt ook extra mappen maken in `conf` om cloudserviceconfiguraties te maken en te organiseren.
 
 De map configureren voor configuraties van cloudservices:
 
@@ -119,7 +119,7 @@ De map configureren voor configuraties van cloudservices:
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
-RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/) in JSON- of YAML-indeling in een Swagger-definitiebestand. Als u de RESTful-webservice in AEM-cloudservices wilt configureren, dient u ervoor te zorgen dat het Swagger-bestand zich op uw bestandssysteem bevindt of de URL waar het bestand wordt gehost.
+RESTful-webservice kan worden beschreven met [Specificaties van de wagon](https://swagger.io/specification/) in JSON- of YAML-indeling in een Swagger-definitiebestand. Als u de RESTful-webservice in AEM cloudservices wilt configureren, dient u ervoor te zorgen dat het Swagger-bestand zich op uw bestandssysteem bevindt of de URL waar het bestand wordt gehost.
 
 Doe het volgende de diensten RESTful vormen:
 
@@ -133,9 +133,9 @@ Doe het volgende de diensten RESTful vormen:
    * Selecteer URL of Dossier van de Bron van de Wagger drop-down, en specificeer dienovereenkomstig Swagger URL aan het de definitiedossier van de Swagger of upload het dossier van de Swagger van uw lokaal dossiersysteem.
    * Op basis van de invoer van de bron van de wagen worden de volgende velden vooraf gevuld met waarden:
 
-      * Schema: De overdrachtprotocollen die door REST API worden gebruikt. Het aantal schematypen die in de drop-down lijst worden getoond hangt van de regelingen af die in de bron van de Swagger worden bepaald.
-      * Host: De domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
-      * Basispad: Het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
+      * Schema: de overdrachtprotocollen die door de REST API worden gebruikt. Het aantal schematypen die in de drop-down lijst worden getoond hangt van de regelingen af die in de bron van de Swagger worden bepaald.
+      * Host: de domeinnaam of het IP-adres van de host die de REST API aanbiedt. Het is een verplicht veld.
+      * Basispad: het URL-voorvoegsel voor alle API-paden. Het is een optioneel veld.\
         Bewerk indien nodig de vooraf ingevulde waarden voor deze velden.
 
    * Selecteer het verificatietype: None, OAuth2.0([Autorisatiecode](https://oauth.net/2/grant-types/authorization-code/), [Client Credentials](https://oauth.net/2/grant-types/client-credentials/)), Basic Authentication, API Key, Custom Authentication, of Mutual Authentication, om toegang te krijgen tot de RESTful-service en dienovereenkomstig gegevens te verstrekken voor verificatie.
@@ -144,7 +144,7 @@ Doe het volgende de diensten RESTful vormen:
 
    Als u **[!UICONTROL Mutual Authentication]** als authentificatietype, zie [Op certificaten gebaseerde wederzijdse verificatie voor RESTful- en SOAP-webservices](#mutual-authentication).
 
-1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst tot stand te brengen.
+1. Tikken **[!UICONTROL Create]** om de wolkenconfiguratie voor de RESTful dienst te creëren.
 
 ### Het model van de gegevens van de vormHTTP cliëntconfiguratie om prestaties te optimaliseren {#fdm-http-client-configuration}
 
@@ -163,13 +163,13 @@ Voer de volgende stappen uit om de HTTP-client van het formuliergegevensmodel te
 
    * Geef de duur op, gedurende welke een blijvende HTTP-verbinding in leven blijft in het dialoogvenster **[!UICONTROL Keep alive]** veld. De standaardwaarde is 15 seconden.
 
-   * Geef de duur op waarvoor de [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht, in het dialoogvenster **[!UICONTROL Connection timeout]** veld. De standaardwaarde is 10 seconden.
+   * Geef de duur op waarvoor de [!DNL Experience Manager Forms] server wacht tot een verbinding tot stand is gebracht, in de **[!UICONTROL Connection timeout]** veld. De standaardwaarde is 10 seconden.
 
    * Geef de maximale periode voor inactiviteit op tussen twee gegevenspakketten in het dialoogvenster **[!UICONTROL Socket timeout]** veld. De standaardwaarde is 30 seconden.
 
 ## SOAP-webservices configureren {#configure-soap-web-services}
 
-SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)-specificaties](https://www.w3.org/TR/wsdl). Als u op SOAP gebaseerde webservice wilt configureren in AEM-cloudservices, moet u de WSDL-URL voor de webservice hebben en het volgende doen:
+SOAP-webservices worden beschreven met [Web Services Description Language (WSDL)-specificaties](https://www.w3.org/TR/wsdl). Als u op SOAP gebaseerde webservice wilt configureren in AEM cloudservices, moet u ervoor zorgen dat u over de WSDL-URL voor de webservice beschikt en het volgende doen:
 
 1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
@@ -191,7 +191,7 @@ Geef de alias KeyStore voor het X509-certificaat op in het dialoogvenster **[!UI
 
 ## OData-services configureren {#config-odata}
 
-De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een OData-service in AEM-cloudservices wilt configureren, moet u ervoor zorgen dat u over de URL van de servicehoofdmap voor de service beschikt en moet u het volgende doen:
+De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Als u een OData-service in AEM cloudservices wilt configureren, moet u ervoor zorgen dat u over de URL van de servicehoofdmap voor de service beschikt en moet u het volgende doen:
 
 >[!NOTE]
 >
@@ -220,8 +220,8 @@ Wanneer u wederzijdse verificatie inschakelt voor het gegevensmodel van het form
 
 1. De persoonlijke sleutel (certificaat) uploaden naar [!DNL AEM Forms] server. De persoonlijke sleutel uploaden:
    1. Aanmelden bij uw [!DNL AEM Forms] als beheerder.
-   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Selecteer `fd-cloudservice` gebruiker en tik **[!UICONTROL Properties]**.
-   1. Open de **[!UICONTROL Keystore]** tabblad, vouwt u de **[!UICONTROL Add Private Key from KeyStore file]** , uploadt u het KeyStore-bestand, geeft u de aliassen, wachtwoorden en tikken op **[!UICONTROL Submit]**. Het certificaat wordt geüpload.  De alias van de persoonlijke sleutel wordt vermeld in het certificaat en ingesteld tijdens het maken van het certificaat.
+   1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**. Selecteer de `fd-cloudservice` gebruiker en tik **[!UICONTROL Properties]**.
+   1. Open de **[!UICONTROL Keystore]** tabblad, vouwt u de **[!UICONTROL Add Private Key from KeyStore file]** , uploadt u het KeyStore-bestand, geeft u de aliassen, wachtwoorden en tikt **[!UICONTROL Submit]**. Het certificaat wordt geüpload.  De alias van de persoonlijke sleutel wordt vermeld in het certificaat en ingesteld tijdens het maken van het certificaat.
 1. Upload vertrouwenscertificaat naar Global Trust Store. Het certificaat uploaden:
    1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
    1. Breid uit **[!UICONTROL Add Certificate from CER file]** optie, tikken **[!UICONTROL Select Certificate File]**, uploadt u het certificaat en tikt u op **[!UICONTROL Submit]**.

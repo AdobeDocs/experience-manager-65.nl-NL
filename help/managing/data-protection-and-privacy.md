@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 discoiquuid: 0bcd7ac4-3071-466d-bd11-701f35ccf5bd
 docset: aem65
 exl-id: 46c1ca14-78f6-4b33-9fdf-1b90a9875f66
-source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -26,21 +26,21 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Voor meer informatie over Adobe aan privacykwesties, en het betekent voor u als klant van de Adobe, zie [Adobe](https://www.adobe.com/privacy.html).
+>Voor meer informatie over de reactie van de Adobe op privacykwesties, en wat het voor u als Adobe klant betekent, zie [Privacy Center van Adobe](https://www.adobe.com/privacy.html).
 
-Adobe verschaft documentatie en procedures (met API&#39;s, indien beschikbaar), zodat de privacybeheerder van de klant of AEM beheerder gegevensbeveiliging en privacyverzoeken kan verwerken. Het kan u helpen aan deze verordeningen voldoen. De gedocumenteerde procedures laten klanten de regelgevende verzoeken manueel in werking stellen of door in APIs, waar beschikbaar, van een extern portaal of de dienst te roepen.
+De Adobe verstrekt documentatie en procedures (met APIs wanneer beschikbaar), voor de beheerder van de klantenprivacy of AEM beheerder om de verzoeken van de gegevensbescherming en van de gegevensprivacy te behandelen. Het kan u helpen om aan deze verordeningen te voldoen. De gedocumenteerde procedures laten klanten de regelgevende verzoeken manueel in werking stellen of door in APIs, waar beschikbaar, van een extern portaal of de dienst te roepen.
 
 >[!CAUTION]
 >
 >De hier gedocumenteerde details zijn beperkt tot Adobe Experience Manager.
 >
->Gegevens van een andere Adobe On-demand-dienst, samen met eventuele gerelateerde privacyverzoeken, vereisen dat er actie wordt ondernomen met betrekking tot die dienst.
+>Gegevens van een andere Adobe On-demand-dienst, samen met eventuele gerelateerde privacyverzoeken, vereisen dat op die dienst maatregelen worden genomen.
 >
->Zie voor meer informatie [Adobe](https://www.adobe.com/privacy.html).
+>Zie voor meer informatie [Privacy Center van Adobe](https://www.adobe.com/privacy.html).
 
 ## Inleiding {#introduction}
 
-Exemplaren van Adobe Experience Manager, en de toepassingen die op hen lopen, zijn eigendom van en werken door klanten van Adobe.
+Instanties van Adobe Experience Manager en de toepassingen die erop worden uitgevoerd, zijn eigendom van en worden geëxploiteerd door Adobe klanten.
 
 Bijgevolg vallen gegevensbeschermingsvoorschriften, zoals GDPR, CCPA en andere, grotendeels onder de verantwoordelijkheid van de klanten.
 
@@ -52,11 +52,11 @@ In een korte inleiding bevatten de verordeningen betreffende de privacy en besch
 
 De belangrijkste bepalingen van deze verordeningen zijn:
 
-1. Uitgebreide definitie van persoonsgegevens zodat deze alle unieke id&#39;s omvat; zoals in direct en indirect identificeerbare gegevens.
+1. Uitgebreide definitie van persoonsgegevens zodat deze alle unieke id&#39;s omvat, zoals direct en indirect identificeerbare gegevens.
 
-2. Versterkte toestemmingsvereisten.
+2. Versterking van de toestemmingseisen.
 
-3. Meer aandacht voor verwijderingsrechten (gegevensgummetje).
+3. Meer aandacht voor verwijderingsrechten (gegevenswissing).
 
 4. Uitschakelen van verkoop van gegevens.
 
@@ -68,7 +68,7 @@ Voor Adobe Experience Manager:
 
    * De Adobe Experience Platform Privacy Service maakt geen deel uit van de workflow voor AEM, zoals in het onderstaande diagram wordt geïllustreerd.
 
-* AEM bevat documentatie en procedures voor de privacybeheerder en/of AEM beheerder van de klant om de verzoeken om privacyregelgeving uit te voeren; handmatig of via API&#39;s, indien beschikbaar.
+* AEM omvat documentatie en procedures voor de privacybeheerder en/of AEM beheerder van de klant om de verzoeken van de privacyverordening uit te voeren; of manueel of door APIs, indien beschikbaar.
 
 * Er is geen nieuwe service of interface toegevoegd.
 
@@ -76,7 +76,7 @@ Voor Adobe Experience Manager:
 
 * AEM bevat geen out-of-the-box gereedschappen ter ondersteuning van de workflow voor privacyverzoeken.
 
-   * Adobe verstrekt documentatie en procedures voor de de privacybeheerder van de klant en AEM beheerder, latend hen manueel verzoeken met betrekking tot de privacyverordeningen in werking stellen.
+   * Adobe verstrekt documentatie en procedures voor de de privacybeheerder van de klant en AEM beheerder, die hen manueel verzoeken met betrekking tot de privacyverordeningen laat in werking stellen.
 
 Adobe biedt procedures voor het verwerken van privacyverzoeken met betrekking tot Access, Delete en Opt-Out voor Adobe Experience Manager. Soms zijn er API&#39;s beschikbaar die kunnen worden aangeroepen via een door de klant ontwikkeld portaal of scripts om te helpen met automatisering.
 
@@ -100,7 +100,7 @@ Zie [Samengevoegde verzameling verbruiksstatistieken](/help/sites-deploying/opt-
 
 Zie [AEM Sites - Gereedheid voor gegevensbescherming en privacy.](/help/sites-administering/gdpr-compliance-sites.md)
 
-## AEM Commerce {#aem-commerce}
+## AEM {#aem-commerce}
 
 Zie [AEM handel - Gegevensbescherming en privacy gereedheid](/help/sites-administering/gdpr-compliance-commerce.md).
 
@@ -120,7 +120,7 @@ Raadpleeg de volgende secties voor meer informatie:
 
 ## AEM Communities {#aem-communities}
 
-AEM Communities geeft de betrokkenen recht op hun gegevensportabiliteit, recht op toegang en recht om vergeten te worden door [out-of-the-box API&#39;s](/help/communities/user-ugc-management-service.md). Deze APIs laat bulkschrapping en bulkuitvoer van gebruiker-geproduceerde inhoud toe, en het onbruikbaar maken van gebruikersrekeningen die door hun erkende IDs worden geïdentificeerd. Nochtans, is de permanente schrapping van gebruikersrekening realiseerbaar door gebruikersknoop in CRXDE Lite te schrappen, die de behoefte van gemakkelijke Opt-out van het systeem richt.
+AEM Communities geeft de betrokkenen recht op hun gegevensportabiliteit, recht op toegang en recht om vergeten te worden [out-of-the-box API&#39;s](/help/communities/user-ugc-management-service.md). Deze APIs laat bulkschrapping en bulkuitvoer van gebruiker-geproduceerde inhoud toe, en het onbruikbaar maken van gebruikersrekeningen die door hun erkende IDs worden geïdentificeerd. Nochtans, is de permanente schrapping van gebruikersrekening realiseerbaar door gebruikersknoop in CRXDE Lite te schrappen, die de behoefte van gemakkelijke Opt-out van het systeem richt.
 
 Bovendien biedt AEM Communities privacy door ontwerp toe te schrijven aan zijn BulkModeration console, die bevoorrechte leden toestaat om de bijdragen en de details van de gebruikers te vinden en te schrappen. De beheerconsole van Leden laat het beperken tot het punt van het verbieden van een medewerker toe. Bovendien worden de betrokkenen gemachtigd de door hen geautoriseerde bijdragen te schrappen.
 

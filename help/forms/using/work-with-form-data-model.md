@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4073'
+source-wordcount: '4070'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 ![gegevensintegratie](do-not-localize/data-integeration.png)
 
-De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om ervoor te zorgen het behoorlijk met gegevensbronnen wordt geïntegreerd.
+De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om het behoorlijk met gegevensbronnen te verzekeren.
 
 Zie de volgende onderwerpen als u nog niet bekend bent met de Forms-gegevensintegratie en geen gegevensbron hebt geconfigureerd of een formuliergegevensmodel hebt gemaakt:
 
@@ -38,7 +38,7 @@ Lees verder voor meer informatie over verschillende taken en configuraties die u
 
 >[!NOTE]
 >
->U moet lid zijn van beide **fdm-auteur** en **formuliergebruiker** groepen die u wilt maken en werken met het formuliergegevensmodel. Neem contact op met de AEM beheerder om lid te worden van de groepen.
+>U moet lid zijn van beide **fdm-auteur** en **formuliergebruiker** groepen die in staat zijn om een formuliergegevensmodel te maken en ermee te werken. Neem contact op met de AEM beheerder om lid te worden van de groepen.
 
 ## Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
@@ -80,7 +80,7 @@ Objecten en services voor gegevensmodellen toevoegen:
    >
    >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Zie voor meer informatie [Werken met navigatie-eigenschappen van OData-diensten](#work-with-navigation-properties-of-odata-services).
 
-1. Tikken **[!UICONTROL Save]** om het formuliermodelobject op te slaan.
+1. Tikken **[!UICONTROL Save]** het formuliermodelobject opslaan.
 
    >[!NOTE]
    >
@@ -113,7 +113,7 @@ Een onderliggende eigenschap maken:
 1. Schakel Berekend in als de eigenschap een berekende eigenschap is. De waarde van een berekende eigenschap wordt berekend op basis van een regel of expressie. Zie voor meer informatie [Eigenschappen bewerken](#edit-properties).
 1. Als het gegevensmodelobject aan een gegevensbron is gebonden, wordt de toegevoegde onderliggende eigenschap automatisch gebonden aan de eigenschap van het bovenliggende gegevensmodelobject met dezelfde naam en hetzelfde gegevenstype.
 
-   Als u een onderliggende eigenschap handmatig wilt binden met een objecteigenschap van het gegevensmodel, tikt u op het bladerpictogram naast de knop **[!UICONTROL Bind Reference]** veld. De **[!UICONTROL Select Object]** bevat alle eigenschappen van het bovenliggende gegevensmodelobject. Selecteer een eigenschap die u wilt binden en tik op het verdeelstreeppictogram. Merk op dat u slechts een bezit van het zelfde gegevenstype zoals het kindbezit kunt selecteren.
+   Als u een onderliggende eigenschap handmatig wilt binden met een objecteigenschap van het gegevensmodel, tikt u op het bladerpictogram naast de knop **[!UICONTROL Bind Reference]** veld. De **[!UICONTROL Select Object]** worden alle eigenschappen van het bovenliggende gegevensmodelobject weergegeven. Selecteer een eigenschap die u wilt binden en tik op het verdeelstreeppictogram. Merk op dat u slechts een bezit van het zelfde gegevenstype zoals het kindbezit kunt selecteren.
 
 1. Tikken **[!UICONTROL Done]** om de eigenschap child op te slaan en te tikken **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.. De eigenschap child wordt nu toegevoegd aan het gegevensmodelobject.
 
@@ -170,7 +170,7 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
 1. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) voor het read-service argument aan [bindt het argument aan een Attribuut van het Profiel van de Gebruiker, een Attribuut van het Verzoek, of Letterlijke waarde](#bindargument) en geeft u de bindingswaarde op.
 1. Tikken **[!UICONTROL Done]** om het argument op te slaan, **[!UICONTROL Done]** om de eigenschappen op te slaan, en vervolgens **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 
-### Serviceargumenten voor lezen binden {#bindargument}
+### Bind Read de dienstargumenten {#bindargument}
 
 Bind Gelezen de dienstargument aan een Attribuut van het Profiel van de Gebruiker, een Attribuut van het Verzoek, of Letterlijke waarde die op een bindende waarde wordt gebaseerd. De waarde wordt overgegaan tot de dienst als argument om details te halen verbonden aan de gespecificeerde waarde uit de gegevensbron.
 
@@ -196,7 +196,7 @@ In dit voorbeeld geeft u `profile.empid` in de **[!UICONTROL Binding Value]** ve
 
 ![Argument bewerken](assets/edit_argument_user_profile_new.png)
 
-De `id` argument neemt de waarde van `empid` kenmerk van het gebruikersprofiel en geef dit als een argument door aan de leesservice. Het leest en keert waarden van bijbehorende eigenschappen van het voorwerp van het werknemersgegevensmodel voor terug `empid` gekoppeld aan de aangemelde gebruiker.
+De `id` argument neemt de waarde van `empid` -kenmerk van het gebruikersprofiel en geef dit als een argument door aan de Leesservice. Het leest en keert waarden van bijbehorende eigenschappen van het voorwerp van het werknemersgegevensmodel voor terug `empid` gekoppeld aan de aangemelde gebruiker.
 
 #### Aanvraagkenmerk {#request-attribute}
 
@@ -279,7 +279,7 @@ Een koppeling toevoegen:
 
    Bijgewerkt argument en binding
 
-   Tikken **[!UICONTROL Done]** om het argument op te slaan.
+   Tikken **[!UICONTROL Done]** het argument opslaan.
 
 1. Tikken **[!UICONTROL Done]** om de vereniging te bewaren en dan **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 1. Herhaal de stappen om desgewenst meer koppelingen te maken.
@@ -299,10 +299,10 @@ U kunt eigenschappen van gegevensmodelobjecten bewerken, de eigenschappen ervan 
 Eigenschappen bewerken:
 
 1. Schakel het selectievakje in naast een gegevensmodelobject, een eigenschap of een service in het formuliergegevensmodel.
-1. Tik op **[!UICONTROL Edit Properties]**. De **[!UICONTROL Edit Properties]** wordt voor het geselecteerde modelobject, de geselecteerde eigenschap of de geselecteerde service geopend.
+1. Tik op **[!UICONTROL Edit Properties]**. De **[!UICONTROL Edit Properties]** wordt het deelvenster voor het geselecteerde modelobject, de geselecteerde eigenschap of de geselecteerde service geopend.
 
    * **Object gegevensmodel**: Geef de lees- en schrijfservices op en bewerk argumenten.
-   * **Eigenschap**: Geef het type, subtype en de indeling voor de eigenschap op. U kunt ook opgeven of de geselecteerde eigenschap de primaire sleutel voor het gegevensmodelobject is.
+   * **Eigenschap**: Geef het type, het subtype en de indeling voor de eigenschap op. U kunt ook opgeven of de geselecteerde eigenschap de primaire sleutel voor het gegevensmodelobject is.
    * **Service**: Geef het invoermodelobject, het uitvoertype en de argumenten voor de service op. Voor de Get dienst, kunt u specificeren als het wordt verwacht om een serie terug te keren.
 
    ![edit-properties-service](assets/edit-properties-service.png)
@@ -324,7 +324,7 @@ U kunt bijvoorbeeld een berekende eigenschap maken **FullName** waarvan de waard
 
    De berekende eigenschap FullName wordt gemaakt. Let op het pictogram naast de eigenschap om een berekende eigenschap weer te geven.
 
-   ![berekend](assets/computed-prop.png)
+   ![berekend-pro](assets/computed-prop.png)
 
 1. Selecteer de eigenschap FullName en tik op **[!UICONTROL Edit Rule]**. Er wordt een regeleditorvenster geopend.
 1. Tik in het venster van de regeleditor op **[!UICONTROL Create]**. A **[!UICONTROL Set Value]** regelvenster wordt geopend.
@@ -333,7 +333,7 @@ U kunt bijvoorbeeld een berekende eigenschap maken **FullName** waarvan de waard
 
 1. Selecteer in de wiskundige expressie de optie **[!UICONTROL FirstName]** en **[!UICONTROL LastName]** in respectievelijk eerste en tweede object. Selecteren **[!UICONTROL plus]** als de operator.
 
-   Tikken **[!UICONTROL Done]** en tik vervolgens op **[!UICONTROL Close]** om het venster van de regelredacteur te sluiten. De regel ziet er ongeveer als volgt uit.
+   Tikken **[!UICONTROL Done]** en tikt u vervolgens op **[!UICONTROL Close]** om het venster van de regelredacteur te sluiten. De regel ziet er ongeveer als volgt uit.
 
    ![regel](assets/rule.png)
 
@@ -389,7 +389,7 @@ In dit voorbeeld kunt u het uitvoermodelobject ook kiezen als argument voor pers
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Op dezelfde manier kunt u een `GET LINK` de dienst en vormt zijn navigatie-eigenschappen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt selecteren, moet u ervoor zorgen dat de **[!UICONTROL Binding To field]** is ingesteld op **Letterlijk**.
+Op dezelfde manier kunt u een `GET LINK` de dienst en vormt zijn navigatieeigenschappen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt selecteren, moet u ervoor zorgen dat de **[!UICONTROL Binding To field]** is ingesteld op **Letterlijk**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -411,7 +411,7 @@ Vervolgens kunt u de voorbeeldgegevens gebruiken om interactieve communicatie vo
 
 Uw formuliergegevensmodel is geconfigureerd, maar voordat u het in gebruik neemt, wilt u wellicht testen of de geconfigureerde gegevensmodelobjecten en -services naar behoren werken. Objecten en services van gegevensmodellen testen:
 
-1. Selecteer een gegevensmodelobject of een service in het formuliergegevensmodel en tik op **[!UICONTROL Test Model Object]** of **[!UICONTROL Test Service]**, respectievelijk.
+1. Selecteer een gegevensmodelobject of een service in het formuliergegevensmodel en tik **[!UICONTROL Test Model Object]** of **[!UICONTROL Test Service]**, respectievelijk.
 
    Het venster Formuliergegevensmodel testen wordt geopend.
 
@@ -437,7 +437,7 @@ De markering kan op om het even welke volgende waarden worden geplaatst:
 
 Als er geen waarde is ingesteld voor de `ValidationOptions`vlag, **BASIC** De validatie wordt uitgevoerd op de invoergegevens.
 
-Hieronder ziet u een voorbeeld van het instellen van de validatiemarkering op **VOLLEDIG**:
+Hier volgt een voorbeeld van het instellen van de validatiemarkering op **VOLLEDIG**:
 
 ```java
 operationOptions.setValidationOptions(ValidationOptions.FULL);
@@ -472,27 +472,27 @@ In de volgende tabel worden de beperkingen voor invoergegevens weergegeven die z
   <tr> 
    <td>maximum</td> 
    <td>Geeft de bovengrens voor numerieke waarden aan. De maximumwaarde die als bovengrens wordt opgegeven, kan ook worden toegewezen aan de parameter in de invoergegevens.</td> 
-   <td>WSDL</td> 
+   <td>Tagger en WSDL</td> 
   </tr> 
   <tr> 
    <td>minimum</td> 
    <td>Hiermee geeft u de ondergrens voor numerieke waarden op. De minimumwaarde die als ondergrens wordt opgegeven, kan ook worden toegewezen aan de parameter in de invoergegevens.</td> 
-   <td>WSDL</td> 
+   <td>Tagger en WSDL</td> 
   </tr> 
   <tr> 
    <td>ExclusiveMaximum</td> 
    <td>Geeft de bovengrens voor numerieke waarden aan. De maximumwaarde die als bovengrens wordt opgegeven, mag niet worden toegewezen aan de parameter in de invoergegevens.</td> 
-   <td>WSDL</td> 
+   <td>Tagger en WSDL</td> 
   </tr> 
   <tr> 
    <td>alleenstaandeMinimum</td> 
    <td>Hiermee geeft u de ondergrens voor numerieke waarden op. De minimumwaarde die als ondergrens wordt opgegeven, mag niet worden toegewezen aan de parameter in de invoergegevens.</td> 
-   <td>WSDL</td> 
+   <td>Tagger en WSDL</td> 
   </tr> 
   <tr> 
    <td>minLength</td> 
    <td>Geeft de ondergrens op voor het aantal tekens dat in een tekenreeks wordt opgenomen. De minimumwaarde die als ondergrens wordt opgegeven, kan ook worden toegewezen aan de parameter in de invoergegevens.</td> 
-   <td>WSDL</td> 
+   <td>Tagger en WSDL</td> 
   </tr> 
   <tr> 
    <td>maxLength</td> 
@@ -507,12 +507,12 @@ In de volgende tabel worden de beperkingen voor invoergegevens weergegeven die z
   <tr> 
    <td>minItems</td> 
    <td>Geeft het minimale aantal items in een array op. De minimumwaarde die als ondergrens wordt opgegeven, kan ook worden toegewezen aan de parameter in de invoergegevens.</td> 
-   <td>WSDL</td> 
+   <td>Tagger en WSDL</td> 
   </tr> 
   <tr> 
    <td>maxItems</td> 
    <td>Geeft het maximale aantal items in een array op. De maximumwaarde die als bovengrens wordt opgegeven, kan ook worden toegewezen aan de parameter in de invoergegevens.</td> 
-   <td>WSDL</td> 
+   <td>Tagger en WSDL</td> 
   </tr> 
   <tr> 
    <td>uniqueItems</td> 
@@ -549,7 +549,7 @@ In dit voorbeeld worden de invoergegevens gevalideerd op basis van maximum-, min
    ]
 ```
 
-Er wordt een uitzondering weergegeven als de invoergegevens niet voldoen aan de validatiecriteria. Als het logniveau is ingesteld op **Foutopsporing**, wordt een fout bij de **error.log** bestand. Bijvoorbeeld,
+Er wordt een uitzondering weergegeven als de invoergegevens niet voldoen aan de validatiecriteria. Als het logniveau is ingesteld op **Foutopsporing**, wordt een fout aangemeld bij de **error.log** bestand. Bijvoorbeeld,
 
 ```verilog
 21.01.2019 17:26:37.411 *ERROR* com.adobe.aem.dermis.core.validation.JsonSchemaValidator {"errorCode":"AEM-FDM-001-044","errorMessage":"Input validations failed during operation execution.","violations":{"/orderId":["numeric instance is greater than the required maximum (maximum: 10, found: 16)"]}}

@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '916'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
->De aanbeveling is om het hefboomeffect te vergroten [Adobe Campaign en zijn AEM](/help/sites-administering/campaign.md).
+>De Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
+>De aanbeveling is om het hefboomeffect te vergroten [Adobe Campaign en zijn AEM integratie](/help/sites-administering/campaign.md).
 
 Gebruikers kunnen worden gevraagd zich in te schrijven op **E-mailserviceproviders** mailinglijsten met behulp van de **Formulier** op een AEM webpagina wordt gebruikt. Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
 
@@ -33,7 +33,7 @@ Een AEM pagina configureren:
 1. Ga naar de **Websites** tab.
 1. Selecteer de pagina die voor de dienst moet worden gevormd. Klik met de rechtermuisknop op de pagina en selecteer **Eigenschappen**.
 
-1. Selecteren **Cloud Services** dan **Service toevoegen**. Selecteer een configuratie in de lijst met beschikbare configuraties.
+1. Selecteren **Cloud Servicen** dan **Service toevoegen**. Selecteer een configuratie in de lijst met beschikbare configuraties.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
@@ -47,9 +47,9 @@ Een aanmeldingsformulier maken en dit configureren voor abonnementen op de maili
 1. Pas de configuratie van de E-mailserviceprovider toe op de pagina.
 
 1. Voeg een **Formulier** naar de pagina door de component van het hulpstuk te slepen. Als de component niet beschikbaar is, schakelt u over naar de ontwerpmodus en schakelt u **Formulier** groep.
-1. Klikken **Bewerken** in de **Begin van formulier** en navigeer naar de **Geavanceerd** tab.
-1. In de **Formulier** vervolgkeuzelijst, selecteert u **E-mailservice: Abonnement maken** en toevoegen aan lijst.
-1. Open onder aan het dialoogvenster het dialoogvenster **Configuratie van handelingen** vervolgkeuzelijst, waarmee u een of meer abonnementenlijsten kunt selecteren.
+1. Klikken **Bewerken** in de **Begin van formulier** en naar de **Geavanceerd** tab.
+1. In de **Formulier** vervolgkeuzelijst, selecteert u **E-mailservice: abonnee maken** en toevoegen aan lijst.
+1. Open onder aan het dialoogvenster het dialoogvenster **Configuratie van handelingen** vervolgkeuzelijst waarin u een of meer abonnementlijsten kunt selecteren.
 1. In de **Lijst selecteren** selecteert u de lijst waarop gebruikers zich moeten abonneren. U kunt meerdere lijsten toevoegen met de plusknop (**Item toevoegen**).
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
@@ -58,7 +58,7 @@ Een aanmeldingsformulier maken en dit configureren voor abonnementen op de maili
    >
    >Het dialoogvenster kan afwijken, afhankelijk van het e-mailservicebureau.
 
-1. In de **Formulier** selecteert u de pagina Bedankt waarnaar gebruikers moeten gaan nadat ze het formulier hebben verzonden (Als dit leeg blijft, wordt het formulier na verzending opnieuw weergegeven.) Klikken **OK**. An **E-mailid** wordt weergegeven in het formulier. Hiermee kunt u een formulier maken waarin gebruikers hun e-mailadressen kunnen verzenden om zich te abonneren op een mailinglijst of het abonnement op te zeggen.
+1. In de **Formulier** selecteert u de pagina Bedankt waarnaar gebruikers moeten gaan nadat ze het formulier hebben verzonden (Als dit leeg blijft, wordt het formulier na verzending opnieuw weergegeven.) Klikken **OK**. An **E-mailid** wordt weergegeven in het formulier. Hiermee kunt u een formulier maken waarin gebruikers hun e-mailadressen kunnen verzenden om zich te abonneren op een mailinglijst.
 1. Voeg de **Verzenden** knopcomponent vanuit de **Formulier** in sidekick.
 
    Het formulier is klaar. Publiceer de pagina die in de bovenstaande stappen is geconfigureerd samen met de **dank u** pagina naar het publicatieexemplaar. Eventuele abonnees die de pagina bezoeken, kunnen het formulier invullen en zich abonneren op de lijst in de configuratie.
@@ -69,7 +69,7 @@ Een aanmeldingsformulier maken en dit configureren voor abonnementen op de maili
 
 ## Toetsen van auteur exporteren en importeren bij publicatie {#exporting-keys-from-author-and-importing-on-publish}
 
-Als u wilt dat e-mailservices zich abonneren en zich niet meer abonneren op het publicatieexemplaar, moet u de volgende stappen uitvoeren:
+Als u wilt dat e-mailservices zich abonneren op of zich niet meer abonneren op het publicatieexemplaar, moet u de volgende stappen uitvoeren:
 
 1. Navigeer in de auteurinstantie naar Package Manager.
 1. Maak een nieuw pakket. Het filter instellen als `/etc/key`.
@@ -77,7 +77,7 @@ Als u wilt dat e-mailservices zich abonneren en zich niet meer abonneren op het 
 1. Navigeer naar Package Manager op de publicatie-instantie en upload dit pakket.
 1. Navigeer naar de publicatieconsole en start de bundel met de naam **Adobe Granite Crypto-ondersteuning**.
 
-## Gebruikers zich niet meer abonneren op lijsten {#unsubscribing-users-from-lists}
+## Gebruikers afmelden voor lijsten {#unsubscribing-users-from-lists}
 
 Gebruikers afmelden bij lijsten:
 
@@ -99,12 +99,12 @@ Om een auto-antwoordapparaat e-mail voor een abonnee te vormen:
 1. Pas de configuratie ExactTarget op de pagina toe.
 
 1. Voeg een **Formulier** naar de pagina door de component van het hulpstuk te slepen. Als de component niet beschikbaar is, schakelt u over naar de ontwerpmodus en schakelt u de **Formulier** groep.
-1. Klikken **Bewerken** in de **Begin van formulier** en navigeer naar de **Geavanceerd** tab.
-1. In de **Formulier** vervolgkeuzelijst, selecteert u **E-mailservice: E-mail met automatische beantwoorder verzenden.**
+1. Klikken **Bewerken** in de **Begin van formulier** en naar de **Geavanceerd** tab.
+1. In de **Formulier** vervolgkeuzelijst, selecteert u **E-mailservice: stuur de e-mail met de automatische beantwoorder.**
 1. **Een e-mail selecteren** (Dit is de e-mail die als auto-antwoordapparaat wordt verzonden).
 
 1. **Classificatie selecteren** (deze indeling wordt gebruikt om het e-mailbericht te verzenden).
-1. Selecteer **Bedankt** pagina (de pagina waarnaar gebruikers worden geleid wanneer ze het formulier verzenden).
+1. Selecteer de **Bedankt** pagina (de pagina waarnaar gebruikers worden geleid wanneer ze het formulier verzenden).
 
    In de **Formulier** selecteert u de pagina Bedankt waarnaar gebruikers moeten gaan nadat ze het formulier hebben verzonden. (Als het formulier leeg blijft, wordt het opnieuw weergegeven bij verzending.) Klikken **OK**.
 

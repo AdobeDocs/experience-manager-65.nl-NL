@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 exl-id: ce8f7257-bb9a-428d-b816-27b1d1632ee1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ Het lusje van de Manager van het Werk toont statistieken die op de punten van de
 
 **Taakbeheer:** Alle taken die bij Taakbeheer horen. Taakbeheer beheert zijn eigen taken en heeft een eigen taakstatus. Zie de specifieke taakstatussen die hieronder worden beschreven.
 
-**Workflow:** Alle het werkpunten die tot de uitvoering van het Werkschema behoren. De workflow beheert niet zijn eigen werkitems, maar is afhankelijk van de Werkmanager; daarom behoren de statussen tot de Manager van het Werk.
+**Workflow:** Alle het werkpunten die tot de uitvoering van het Werkschema behoren. De workflow beheert geen eigen werkitems, maar is afhankelijk van de Werkmanager. Daarom behoren de status toe aan de werkmanager.
 
-**Gebeurtenissen:** Alle het werkpunten die tot het Beheer van de Gebeurtenis behoren. Gebeurtenisbeheer beheert niet zijn eigen werkitems, maar is afhankelijk van Werkmanager; daarom behoren de statussen tot de Manager van het Werk.
+**Gebeurtenissen:** Alle het werkpunten die tot het Beheer van de Gebeurtenis behoren. Gebeurtenisbeheer beheert geen eigen werkitems, maar is afhankelijk van Werkmanager. Daarom behoren de status toe aan Werkbeheer.
 
 ### Status (alleen voor de categorieën Standaard, Workflow of Gebeurtenissen) {#status-for-default-workflow-or-events-categories-only}
 
@@ -48,7 +48,7 @@ Het lusje van de Manager van het Werk toont statistieken die op de punten van de
 
 **Voltooid:** Hiermee geeft u alle werkitems weer die met succes zijn uitgevoerd. De blijvende het werkpunten blijven in deze staat en de niet-blijvende punten worden geschrapt na voltooiing van callbacks aan de callback managers. U kunt deze items verwijderen met de bewerking Items verwijderen. (Zie De werkitems of taken beheren.)
 
-**Mislukt:** Hiermee worden alle werkitems weergegeven die niet zijn voltooid vanwege een fout. Deze werkitems kunnen een paar keer opnieuw worden geprobeerd met de bewerking Items opnieuw proberen. (Zie De werkitems of taken beheren.) Een verbinding van de Mislukking in de kolom van de Status staat u toe om tot details over de mislukking toegang te hebben.
+**Mislukt:** Hiermee worden alle werkitems weergegeven die niet zijn voltooid vanwege een fout. Deze werkitems kunnen een paar keer opnieuw worden geprobeerd met de bewerking Items opnieuw proberen. (Zie De werkitems of taken beheren.) Met een koppeling Mislukt in de kolom Status hebt u toegang tot details over de fout.
 
 **Onbekend:** Hiermee worden alle werkitems weergegeven waarvan de status onbekend is.
 
@@ -60,7 +60,7 @@ Het lusje van de Manager van het Werk toont statistieken die op de punten van de
 
 **Mislukt aangevraagd:** Hiermee geeft u taken weer waarvoor een mislukkingsverzoek is ingediend.
 
-**Mislukt:** Hiermee geeft u taken weer die niet zijn voltooid vanwege een fout. Een verbinding van de Mislukking in de kolom van de Status staat u toe om tot details over de mislukking toegang te hebben.
+**Mislukt:** Hiermee geeft u taken weer die niet zijn voltooid vanwege een fout. Met een koppeling Mislukt in de kolom Status hebt u toegang tot details over de fout.
 
 **Verzoeken beëindigen:** Hiermee geeft u taken weer waarvoor een eindverzoek is ingediend.
 
@@ -70,7 +70,7 @@ Het lusje van de Manager van het Werk toont statistieken die op de punten van de
 
 **Opgeschort:** Hiermee geeft u taken weer die zijn opgeschort.
 
-**Hervat aangevraagd:** Hiermee geeft u taken weer waarvoor een hervattingsverzoek is ingediend.
+**Hervatten aangevraagd:** Hiermee geeft u taken weer waarvoor een hervattingsverzoek is ingediend.
 
 **In wachtrij:** Hiermee geeft u taken weer die zich in de wachtrij bevinden.
 

@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
 docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 85e993000c016240c0fbf398ec8192990e60eee6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1366'
+source-wordcount: '1365'
 ht-degree: 5%
 
 ---
@@ -25,7 +25,7 @@ Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelij
 Als gebruiker kunt u:
 
 * Projecten maken en verwijderen
-* Inhoud en elementmappen aan een project koppelen
+* Inhoud- en middelenmappen koppelen aan een project
 * Inhoudskoppelingen uit project verwijderen
 
 ## Toegangsvereisten {#access-requirements}
@@ -80,7 +80,7 @@ U kunt de details van een project weergeven door erop te klikken en naar de deta
 
 ### Nieuwe projecten maken {#creating}
 
-Klikken **Maken** om een nieuw project toe te voegen.
+Klikken **Maken** een nieuw project toevoegen.
 
 ## Projectblokken {#project-tiles}
 
@@ -206,7 +206,7 @@ Sjablonen dienen als basis voor het starten van uw project. AEM verstrekt deze s
 * **Mediaproject** - Dit is een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen en omvat ook werkschema&#39;s met betrekking tot media inhoud.
 * **[Fotoproject van product](/help/sites-authoring/managing-product-information.md)** - Dit is een referentiemonster voor het beheer van productfotografie met betrekking tot eCommerce.
 * **[Vertaalproject](/help/sites-administering/translation.md)** - Dit is een referentiemonster voor het beheer van activiteiten in verband met vertaling. Het omvat basisrollen en omvat werkschema&#39;s voor het beheren van vertaling.
-* **Eenvoudig project** - Dit is een referentiemonster voor alle projecten die niet in andere categorieën passen. Het omvat drie basisrollen en vier algemene AEM werkschema&#39;s.
+* **Eenvoudig project** - Dit is een referentiemonster voor alle projecten die niet in andere categorieën passen. Het omvat drie basisrollen en vier algemene AEM workflows.
 
 Gebaseerd op het malplaatje u selecteert, hebt u verschillende opties beschikbaar aan u binnen het project zoals de gebruikersrollen en de geleverde werkschema&#39;s.
 
@@ -214,16 +214,16 @@ Gebaseerd op het malplaatje u selecteert, hebt u verschillende opties beschikbaa
 
 De verschillende gebruikersrollen worden bepaald in het projectmalplaatje en om twee primaire redenen gebruikt:
 
-1. Machtigingen: De gebruikersrollen vallen in één van de drie vermelde categorieën: waarnemer, redacteur, eigenaar. Een fotograaf of copywriter heeft bijvoorbeeld dezelfde rechten als een editor. De toestemmingen bepalen wat een gebruiker met inhoud in een project kan doen.
-1. Workflows: De werkschema&#39;s bepalen wie taken in een project wordt toegewezen. De taken kunnen met een projectrol worden geassocieerd. U kunt bijvoorbeeld een taak toewijzen aan fotografen, zodat alle teamleden die de rol van fotograaf hebben deze taak krijgen.
+1. Machtigingen: de gebruikersrollen behoren tot een van de drie vermelde categorieën: waarnemer, editor, eigenaar. Een fotograaf of copywriter heeft bijvoorbeeld dezelfde rechten als een editor. De toestemmingen bepalen wat een gebruiker met inhoud in een project kan doen.
+1. Workflows: de workflows bepalen wie taken in een project krijgt toegewezen. De taken kunnen met een projectrol worden geassocieerd. U kunt bijvoorbeeld een taak toewijzen aan fotografen, zodat alle teamleden die de rol van fotograaf hebben deze taak krijgen.
 
 Alle projecten steunen de volgende standaardrollen om u veiligheid en controletoestemmingen te laten beheren.
 
 | Rol | Beschrijving | Machtigingen | Groepslidmaatschap |
 |---|---|---|---|
 | Waarnemer | Een gebruiker in deze rol kan projectdetails, met inbegrip van de projectstatus bekijken. | Alleen-lezen machtigingen voor een project | `workflow-users` groep |
-| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa<br>Rechten voor het uploaden van een fotolijst, fotoopname en het controleren en goedkeuren van elementen<br>Schrijfmachtiging ingeschakeld `/etc/commerce`<br>Machtigingen wijzigen voor een bepaald project | `workflow-users` groep |
-| Eigenaar | Een gebruiker met deze rol kan een project tot stand brengen, het werk in een project in werking stellen, en goedgekeurde activa naar de productiemap verplaatsen. Alle andere taken in het project kunnen ook door de eigenaar worden bekeken en worden uitgevoerd. | Schrijfmachtiging ingeschakeld `/etc/commerce` | `dam-users` groep die een project moet kunnen maken<br>`project-administrators` groeperen om een project te kunnen maken en elementen te kunnen verplaatsen |
+| Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa<br>Rechten voor het uploaden van een fotolijst, fotoopname en het controleren en goedkeuren van elementen<br>Machtiging schrijven op `/etc/commerce`<br>Machtigingen wijzigen voor een bepaald project | `workflow-users` groep |
+| Eigenaar | Een gebruiker met deze rol kan een project tot stand brengen, het werk in een project in werking stellen, en goedgekeurde activa naar de productiemap verplaatsen. Alle andere taken in het project kunnen ook door de eigenaar worden bekeken en worden uitgevoerd. | Machtiging schrijven op `/etc/commerce` | `dam-users` groep die een project moet kunnen maken<br>`project-administrators` groeperen om een project te kunnen maken en elementen te kunnen verplaatsen |
 
 Voor creatieve projecten worden ook extra rollen zoals fotografen verstrekt. U kunt deze rollen gebruiken om douanerollen voor een specifiek project af te leiden.
 

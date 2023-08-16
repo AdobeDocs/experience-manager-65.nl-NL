@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1889'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Een WCM-toepassing heeft meestal de neiging om informatie te verzamelen, maar ni
 AEM gebruikt de opslagplaats als opslagplaats voor een aantal interne en huishoudelijke activiteiten:
 
 * Gebouwde en gedownloade pakketten
-* Tijdelijke bestanden die zijn gemaakt voor publicatie-replicatie
+* Tijdelijke bestanden gemaakt voor publicatie-replicatie
 * Workflowpayloads
 * Elementen die tijdelijk zijn gemaakt tijdens DAM-rendering
 
@@ -103,7 +103,7 @@ De onderstaande lijst toont het type van de huisvuilinzameling van de gegevensop
 
 ### De lopende Inzameling van het huisvuil van de Opslag van Gegevens via het Dashboard van Verrichtingen {#running-data-store-garbage-collection-via-the-operations-dashboard}
 
-Het ingebouwde wekelijkse onderhoudvenster, beschikbaar via de [Operations-dashboard](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van de Winkel van Gegevens toe te laten om 1 uur op Zondag.
+Het ingebouwde wekelijkse onderhoudvenster, beschikbaar via de [Operations-dashboard](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van de Winkel van Gegevens toe te laten om 1.00 uur op Zondag.
 
 Als u de inzameling van de opslagvuilnisophaling van gegevens buiten deze tijd moet in werking stellen, kan het manueel via het Dashboard van Verrichtingen worden teweeggebracht.
 
@@ -114,7 +114,7 @@ Voordat u de opschoonfunctie voor gegevensopslag uitvoert, moet u controleren of
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Selecteer **Opruimverzameling gegevensopslag** en klik of tik op de knop **Uitvoeren** pictogram.
+1. Selecteer de **Opruimverzameling gegevensopslag** en klik of tik op de knop **Uitvoeren** pictogram.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -128,7 +128,7 @@ Voordat u de opschoonfunctie voor gegevensopslag uitvoert, moet u controleren of
 
 ### Afvalverzameling van gegevensopslag uitvoeren via de JMX-console {#running-data-store-garbage-collection-via-the-jmx-console}
 
-Deze sectie gaat over het handmatig uitvoeren van opschoning van gegevensopslagruimten via de JMX-console. Als uw installatie zonder een externe gegevensopslag wordt opgezet, dan is dit niet op uw installatie van toepassing. Zie in plaats daarvan de instructies voor het uitvoeren van de revisie onder [Behoud van de opslagplaats](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
+Deze sectie gaat over het handmatig uitvoeren van opschoning van gegevensopslagruimten via de JMX-console. Als uw installatie zonder een externe gegevensopslag is ingesteld, geldt dit niet voor uw installatie. Zie in plaats daarvan de instructies voor het uitvoeren van de revisie onder [Behoud van de opslagplaats](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository).
 
 >[!NOTE]
 >
@@ -159,19 +159,19 @@ Opschoonfunctie uitvoeren:
 
 Indien mogelijk, zou de inzameling van het huisvuil van de gegevensopslag moeten in werking worden gesteld wanneer er weinig lading op het systeem, bijvoorbeeld in de ochtend is.
 
-Het ingebouwde wekelijkse onderhoudvenster, beschikbaar via de [Operations-dashboard](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van de Winkel van Gegevens toe te laten om 1 uur op Zondag. U zou ook moeten controleren dat geen steunen op dit ogenblik lopen. Het begin van het onderhoudsvenster kan zo nodig via het dashboard worden aangepast.
+Het ingebouwde wekelijkse onderhoudvenster, beschikbaar via de [Operations-dashboard](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van de Winkel van Gegevens toe te laten om 1.00 uur op Zondag. U zou ook moeten controleren dat geen steunen op dit ogenblik lopen. Het begin van het onderhoudsvenster kan zo nodig via het dashboard worden aangepast.
 
 >[!NOTE]
 >
 >De reden om het niet gelijktijdig in werking te stellen is zodat de oude (en ongebruikte) dossiers van de gegevensopslag ook worden gesteund, zodat als het moet terugdraaien aan een oude revisie, de binaire getallen nog in de steun zijn.
 
-Als u niet wenst om de inzameling van de gegevensopslag met het Wekelijkse Venster van het Onderhoud in het Dashboard van Verrichtingen in werking te stellen, kan het ook worden geautomatiseerd gebruikend de wget of de krullende cliënten van HTTP. Hieronder ziet u hoe u back-ups kunt automatiseren met curl:
+Als u niet wenst om de inzameling van de gegevensopslag met het Wekelijkse Venster van het Onderhoud in het Dashboard van Verrichtingen in werking te stellen, kan het ook worden geautomatiseerd gebruikend de wget of de krullende cliënten van HTTP. Hieronder ziet u hoe u back-ups kunt automatiseren met behulp van curl:
 
 >[!CAUTION]
 >
->In het volgende voorbeeld `curl` bevelen diverse parameters zouden voor uw instantie kunnen moeten worden gevormd; bijvoorbeeld de hostnaam ( `localhost`), poort ( `4502`), beheerderswachtwoord ( `xyz`) en diverse parameters voor de daadwerkelijke inzameling van huisvuil van de gegevensopslag.
+>In het volgende voorbeeld `curl` bevelen diverse parameters zouden voor uw instantie kunnen moeten worden gevormd; bijvoorbeeld hostname ( `localhost`), poort ( `4502`), beheerderswachtwoord ( `xyz`) en diverse parameters voor de daadwerkelijke inzameling van huisvuil van de gegevensopslag.
 
-Hier is een bevel van de voorbeeldkrulling om de inzameling van het huisvuil van de gegevensopslag via de bevellijn aan te halen:
+Hier is een bevel van de voorbeeldkrulling om de inzameling van de gegevensopslag via de bevellijn aan te halen:
 
 ```shell
 curl -u admin:admin -X POST --data markOnly=true  https://localhost:4503/system/console/jmx/org.apache.jackrabbit.oak"%"3Aname"%"3Drepository+manager"%"2Ctype"%"3DRepositoryManagement/op/startDataStoreGC/boolean

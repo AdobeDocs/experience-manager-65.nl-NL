@@ -11,9 +11,9 @@ discoiquuid: e397c6ce-d73f-4183-8445-1897a8906960
 docset: aem65
 feature: Form Data Model
 exl-id: dd1146e4-952d-4dfa-8084-46c6096c4177
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '520'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Terwijl een verdeeld, modulair systeem zijn eigen voordelen heeft, ligt de uitda
 
 [!DNL AEM Forms] Dankzij gegevensintegratie kunt u verschillende gegevensbronnen configureren en verbinden met [!DNL AEM Forms]. Het verstrekt een intuïtieve gebruikersinterface om een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten over verbonden gegevensbronnen tot stand te brengen. De verenigde vertegenwoordiging is genoemd geworden vormgegevensmodel, een uitbreiding van het schema JSON. De entiteiten in een formuliergegevensmodel worden gegevensmodelobjecten genoemd. Met een formuliergegevensmodel kunt u:
 
-* Toegang tot gegevensmodelvoorwerpen, eigenschappen, en de diensten van verbonden gegevensbronnen.
+* Toegang tot gegevensmodelobjecten, eigenschappen en services van verbonden gegevensbronnen.
 * Objecten en eigenschappen van een aangepast gegevensmodel maken
 * Bouw verenigingen tussen de voorwerpen van het gegevensmodel binnen en over gegevensbronnen.
 * Roep gegevensmodelobjectservices aan om gegevens van en naar gegevensbronnen te zoeken of te schrijven.
@@ -50,7 +50,7 @@ Nadat u een formuliergegevensmodel hebt gemaakt, kunt u het gebruiken in verschi
 
 De eerste stap voor het implementeren van gegevensintegratie is het identificeren en configureren van gegevensbronnen die informatie opslaan die u wilt gebruiken in adaptieve formulieren en interactieve-communicatietoepassingen. Vervolgens maakt u een formuliergegevensmodel dat gebruikmaakt van gegevensmodelobjecten, eigenschappen en services van een of meer gegevensbronnen. U kunt adaptieve formulieren en interactieve communicatie maken op basis van een formuliergegevensmodel waarin adaptieve formuliervelden of plaatsaanduidingen in interactieve communicatie zijn gebonden aan de desbetreffende gegevensbroneigenschappen.
 
-[!DNL AEM Forms] Hiermee kunt u ook een formuliergegevensmodel maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en eigenschappen in het formuliergegevensmodel koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel.
+[!DNL AEM Forms] Hiermee kunt u ook een formuliergegevensmodel maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en -eigenschappen in het formuliergegevensmodel koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel.
 
 Herzie het volgende om, gegevensintegratie te beginnen te begrijpen en uit te voeren.
 

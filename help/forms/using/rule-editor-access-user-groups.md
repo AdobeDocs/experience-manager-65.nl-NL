@@ -11,27 +11,27 @@ discoiquuid: ab694a93-00d2-44d7-8ded-68ab2ad50693
 docset: aem65
 feature: Adaptive Forms
 exl-id: a1a2b277-3133-404b-a7fc-337cedddb12c
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
 
 # De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen{#grant-rule-editor-access-to-select-user-groups}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
 U kunt verschillende typen gebruikers hebben met verschillende vaardigheden die werken met Adaptive Forms. Hoewel ervaren gebruikers de juiste kennis hebben om met scripts en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die alleen met de indeling en basiseigenschappen van adaptieve formulieren moeten werken.
 
-AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te beperken die op hun rol of functie wordt gebaseerd. In de instellingen van de Adaptive Forms Configuration Service kunt u de [gebruikersgroepen](/help/sites-administering/security.md) die tot regelredacteur kunnen bekijken en toegang hebben.
+Met AEM Forms kunt u op basis van hun rol of functie de toegang tot regeleditors beperken. In de instellingen van de Adaptive Forms Configuration Service kunt u de [gebruikersgroepen](/help/sites-administering/security.md) die tot regelredacteur kunnen bekijken en toegang hebben.
 
 ## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Meld u als beheerder aan bij AEM Forms.
-1. Klik in de auteurinstantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Gereedschappen ![hamer](assets/hammer.png) > Bewerkingen > Webconsole. De webconsole wordt in een nieuw venster geopend.
+1. Klik in de auteur-instantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png)Adobe Experience Manager > Gereedschappen ![hamer](assets/hammer.png) > Bewerkingen > Webconsole. De webconsole wordt in een nieuw venster geopend.
 
    ![1-2](assets/1-2.png)
 
@@ -60,4 +60,4 @@ AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te bepe
 
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
-   Voor instructies over het toevoegen van gebruikers aan groepen raadpleegt u [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md).
+   Zie voor instructies over het toevoegen van gebruikers aan groepen [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md).

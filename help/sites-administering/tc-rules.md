@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1150'
+source-wordcount: '1149'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle 
 
 Er is een [console](#translation-rules-ui) dat is toegevoegd voor het vormen van vertaalregels. De definities in UI zullen het dossier voor u bevolken.
 
-Voor een overzicht van de vertaalfuncties voor inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
+Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
 
 >[!NOTE]
 >
@@ -119,7 +119,7 @@ In het volgende voorbeeld worden afbeeldingen geëxtraheerd uit de basiscomponen
 
 ## Regels overschrijven {#overriding-rules}
 
-Het bestand translate_rules.xml bestaat uit een `nodelist` element met meerdere onderliggende elementen `node` elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` eigenschappen die moeten worden vertaald, met uitzondering van de `/content/mysite/en` vertakking van pagina&#39;s:
+Het bestand translate_rules.xml bestaat uit een `nodelist` element met meerdere onderliggende elementen `node` elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` eigenschappen die moeten worden vertaald, met uitzondering van `/content/mysite/en` vertakking van pagina&#39;s:
 
 ```xml
 <nodelist>
@@ -149,7 +149,7 @@ De volgende regels veroorzaken bijvoorbeeld alle inhoud in `text` te vertalen ei
 <nodelist>
 ```
 
-## Interface voor vertaalregels {#translation-rules-ui}
+## UI voor omzettingsregels {#translation-rules-ui}
 
 Een console is ook beschikbaar voor het vormen van vertaalregels.
 
@@ -159,19 +159,19 @@ Toegang tot dit bestand:
 
    ![chlimage_1-55](assets/chlimage_1-55.jpeg)
 
-1. Selecteren **Configuratie vertaling**.
+1. Selecteren **Omzetconfiguratie**.
 
    ![chlimage_1-56](assets/chlimage_1-56.jpeg)
 
-Vanaf hier kunt u **Context toevoegen**. Zo kunt u een pad toevoegen.
+Vanaf hier kunt u **Context toevoegen**. Hiermee kunt u een pad toevoegen.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Selecteer vervolgens de context en klik op **Bewerken**. Hiermee opent u de Editor voor de vertaalregels.
+Vervolgens moet u de context selecteren en vervolgens op **Bewerken**. Hiermee opent u de Editor voor de vertaalregels.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 
-Er zijn vier kenmerken die u kunt wijzigen via de gebruikersinterface: `isDeep`, `inherit`, `translate` en `updateDestinationLanguage`.
+U kunt vier kenmerken wijzigen via de gebruikersinterface: `isDeep`, `inherit`, `translate` en `updateDestinationLanguage`.
 
 **isDeep** Dit kenmerk is van toepassing op knooppuntfilters en is standaard true. Het controleert of de knoop (of zijn voorouders) die bezit met de gespecificeerde bezitswaarde in de filter bevat. Indien false, wordt alleen het huidige knooppunt gecontroleerd.
 
@@ -203,7 +203,7 @@ In de UI kunt u controleren/uncheck **Vertalen** in de **Eigenschappen** tab.
 
 In de UI kunt u controleren/uncheck **Vertalen** in de **Eigenschappen** , maar voor de specifieke eigenschappen die taalcodes als waarde hebben.
 
-Ter verduidelijking van het verschil tussen `updateDestinationLanguage` en `translate`Hier is een eenvoudig voorbeeld van een context met slechts twee regels:
+Om het verschil tussen `updateDestinationLanguage` en `translate`Hier is een eenvoudig voorbeeld van een context met slechts twee regels:
 
 ![chlimage_1-61](assets/chlimage_1-61.jpeg)
 

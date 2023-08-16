@@ -7,9 +7,9 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1352'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Een nieuwe versie van een pagina maken:
 
 1. Voer een **Opmerking** (optioneel).
 1. Als u een label wilt instellen op de versie (optioneel), klikt u op de knop **Meer >>** en stelt de **Label** om de versie een naam te geven. Als het label niet is ingesteld, wordt de versie automatisch verhoogd.
-1. Klikken **Versie maken**. Er wordt een grijs bericht weergegeven op de pagina. bijvoorbeeld: Versie 1.2 gemaakt voor: Hemden.
+1. Klikken **Versie maken**. Er wordt een grijs bericht weergegeven op de pagina, bijvoorbeeld versie 1.2 die is gemaakt voor: Hemden.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ De huidige versie van de pagina vergelijken met een vorige versie:
 
 Timewarp is een eigenschap die wordt ontworpen om het ***gepubliceerd*** staat van een pagina op specifieke tijden in het verleden.
 
-Het doel is om u toe te staan om de gepubliceerde website op het geselecteerde punt in tijd te volgen. Hiermee wordt de status van de publicatieomgeving bepaald door de paginabactivering.
+Het doel is om de gepubliceerde website op het geselecteerde tijdstip bij te houden. Hiermee wordt de status van de publicatieomgeving bepaald aan de hand van de paginabactivering.
 
 Dit doet u als volgt:
 
@@ -140,7 +140,7 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
    >
    >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, doet u dat handmatig met [terugzetten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
-1. Klik wanneer u de pagina hebt bekeken:
+1. Klik op de volgende pagina als u de pagina hebt bekeken:
 
    * **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
    * [Tijdlijn tonen](#using-the-timewarp-timeline) om de tijdlijn weer te geven.
@@ -159,7 +159,7 @@ Als u de tijdlijn van het document wilt weergeven:
 
    1. Het dialoogvenster sidekick gebruiken dat wordt weergegeven na [gebruiken van de Kalender Timewarp](#using-the-timewarp-calendar).
 
-1. Klikken **Tijdlijn tonen** - de tijdlijn van het document wordt weergegeven; bijvoorbeeld:
+1. Klikken **Tijdlijn tonen** - de tijdlijn van het document wordt weergegeven, bijvoorbeeld:
 
    ![chlimage_1-78](assets/chlimage_1-78.png)
 
@@ -176,7 +176,7 @@ In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt ti
    1. **Ga** om de inhoud van de gepubliceerde pagina op het geselecteerde tijdstip weer te geven.
    1. Wanneer u die inhoud weergeeft, gebruikt u **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
 
-### Beperkingen voor tijdverdraaiing {#timewarp-limitations}
+### Beperkingen voor tijdwijziging {#timewarp-limitations}
 
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 

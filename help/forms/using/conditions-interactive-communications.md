@@ -10,7 +10,7 @@ discoiquuid: fe59d260-d392-4d6f-bb7e-2f2a1d701f51
 docset: aem65
 feature: Interactive Communication
 exl-id: 0c0dc6a2-b889-4516-8e08-1e9d31be2cce
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1455'
 ht-degree: 0%
@@ -65,7 +65,7 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
 
    >[!NOTE]
    >
-   >Alleen op basis van geen gemaakte, nieuw gemaakte elementen en op FDM gebaseerde elementen (die zijn gemaakt met dezelfde FDM als de voorwaarde die wordt gemaakt) worden weergegeven op de pagina Elementen selecteren.
+   >Alleen op basis van geen gemaakte, nieuw gemaakte elementen en op FDM gebaseerde elementen (gemaakt met dezelfde FDM als de voorwaarde die wordt gemaakt) worden weergegeven op de pagina Elementen selecteren.
 
 1. Tik op de juiste middelen om deze te selecteren en vervolgens op te nemen in de voorwaarde **[!UICONTROL Done]**.
 
@@ -85,7 +85,7 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
 
    U kunt de volgende opties selecteren om op te geven hoe de voorwaarde zich gedraagt bij uitvoering:
 
-   * **Meerdere resultaten evaluatie uitgeschakeld\Meerdere resultaten evaluatie ingeschakeld**: Wanneer deze optie wordt toegelaten (verschijnt als &quot;Meerdere Resultaten Toegelaten Evaluatie), worden alle regels geëvalueerd en het resultaat is de som van alle ware regels. Als deze optie is uitgeschakeld (wordt &#39;&#39;Multiple Results Evaluation Disabled&#39; weergegeven), wordt alleen de eerste regel die waar wordt gevonden, geëvalueerd en wordt deze de uitvoer van de voorwaarde.
+   * **Meerdere resultaten evaluatie uitgeschakeld\Meerdere resultaten evaluatie ingeschakeld**: Wanneer deze optie is ingeschakeld (wordt weergegeven als &quot;Meerdere resultaten met evaluatie ingeschakeld&quot;), worden alle regels geëvalueerd en is het resultaat de som van alle werkelijke regels. Als deze optie is uitgeschakeld (wordt &#39;&#39;Multiple Results Evaluation Disabled&#39; weergegeven), wordt alleen de eerste regel die waar wordt gevonden, geëvalueerd en wordt deze de uitvoer van de voorwaarde.
 
    * **Pagina-einde**: Selecteer deze optie ( ![break](assets/break.png)) om een pagina-einde toe te voegen tussen de elementen van de voorwaarden. Wanneer deze optie niet is geselecteerd ( ![noord](assets/nobreak.png)), als een voorwaarde overloopt naar de volgende pagina in de afdrukuitvoer, wordt de hele voorwaarde verplaatst naar de volgende pagina in plaats van de pagina tussen de elementen in de voorwaarde te verbreken.
 
@@ -101,7 +101,7 @@ De elementen in de voorwaarden die worden gerenderd op basis van de toegepaste r
 
 1. Tik op **[!UICONTROL Save]**.
 
-   De voorwaarde wordt gemaakt. Nu kunt u aan het gebruiken van de voorwaarde als bouwsteen verdergaan terwijl het creëren van een Interactieve Communicatie.
+   De voorwaarde wordt gemaakt. Nu kunt u aan het gebruiken van de voorwaarde als bouwsteen te werk gaan terwijl het creëren van een Interactieve Communicatie.
 
    >[!NOTE]
    >
@@ -115,11 +115,11 @@ U kunt een voorwaarde bewerken door de volgende stappen uit te voeren. U kunt ee
 1. Navigeer naar de voorwaarde en selecteer deze.
 1. Tik op **[!UICONTROL Edit]**.
 1. Breng de gewenste wijzigingen aan in de voorwaarde. Voor meer informatie over de informatie kunt u in een voorwaarde veranderen, zie [Voorwaarde maken](#createcondition).
-1. Tikken **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]**.
+1. Tikken **[!UICONTROL Save]** en tikt u vervolgens op **[!UICONTROL Close]**.
 
 ## Voorwaardelijke regels maken {#ruleeditor}
 
-Gebruikend regelredacteur in een voorwaarde, kunt u regels tot stand brengen om activa te tonen of te verbergen die op worden gebaseerd **vooraf ingestelde voorwaarden**. Deze voorwaarden kunnen worden geconstrueerd op basis van:
+Met regeleditor in een voorwaarde kunt u regels maken om elementen weer te geven of te verbergen op basis van **vooraf ingestelde voorwaarden**. Deze voorwaarden kunnen worden geconstrueerd op basis van:
 
 * Tekenreeksen
 * Getallen
@@ -130,7 +130,7 @@ Gebruikend regelredacteur in een voorwaarde, kunt u regels tot stand brengen om 
 
 ### Regel maken in voorwaarde {#create-rule-in-condition}
 
-1. Tik tijdens het maken of bewerken van een voorwaarde op ![ruleeditoricon](assets/ruleeditoricon.png) (Redacteur van de Regel) pictogram voor de relevante activa.
+1. Tik tijdens het maken of bewerken van een voorwaarde ![ruleeditoricon](assets/ruleeditoricon.png) (Redacteur van de Regel) pictogram voor de relevante activa.
 
    Het dialoogvenster Regel maken wordt weergegeven. Naast tekenreeks, nummer, wiskundige expressie en datum zijn in de Regeleditor ook de volgende opties beschikbaar voor het maken van instructies van de regels:
 
@@ -152,7 +152,7 @@ Gebruikend regelredacteur in een voorwaarde, kunt u regels tot stand brengen om 
 
    Regel om een element te tonen wanneer het beleidstype standaard is
 
-   * Tijdens het maken of bewerken van een regel kunt u ook tikken op ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken/regel bewerken uit te vouwen. Met het uitgebreide dialoogvenster voor een volledig venster kunt u [variabelen](#variables) om regels samen te stellen. Tik nogmaals op Vergroten/verkleinen om terug te keren naar het normale dialoogvenster Regel maken.
+   * Tijdens het maken of bewerken van een regel kunt u ook tikken ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken/regel bewerken uit te vouwen. Met het uitgebreide dialoogvenster voor een volledig venster kunt u [variabelen](#variables) om regels samen te stellen. Tik nogmaals op Vergroten/verkleinen om terug te keren naar het normale dialoogvenster Regel maken.
 
    * U kunt ook meerdere voorwaarden in een regel maken.
 
@@ -162,7 +162,7 @@ Gebruikend regelredacteur in een voorwaarde, kunt u regels tot stand brengen om 
 
 ## Variabelen in een voorwaarde maken en gebruiken {#variables}
 
-Tijdens het maken of bewerken van een regel in een voorwaarde kunt u tikken op ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken uit te vouwen.\n Met het uitgebreide dialoogvenster voor een volledig venster kunt u:
+Tijdens het maken of bewerken van een regel in een voorwaarde kunt u tikken op ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken uit te vouwen.\n Met het uitgebreide dialoogvenster van een volledig venster kunt u het volgende doen:
 
 * Variabelen in de regel maken en gebruiken
 * De eigenschappen en variabelen van het formuliergegevensmodel slepen en neerzetten in de regel
@@ -190,8 +190,8 @@ Tik nogmaals op Vergroten/verkleinen om terug te keren naar het dialoogvenster R
 1. Voer de volgende gegevens in en tik op **[!UICONTROL Create]**:
 
    * **[!UICONTROL Name]**: Naam van de variabele.
-   * **[!UICONTROL Description]**: Voer desgewenst een beschrijving van de variabele in.
-   * **[!UICONTROL Type]**: Selecteer een type variabele: Tekenreeks, Aantal, Boolean of Datum.
+   * **[!UICONTROL Description]**: Voer optioneel een beschrijving van de variabele in.
+   * **[!UICONTROL Type]**: Selecteer een type variabele: String, Number, Boolean of Date.
    * **[!UICONTROL Allow Specific Values Only]**: Voor de variabelen van het Koord en van het Aantal, kunt u ervoor zorgen dat de agent van een specifieke reeks waarden voor placeholder in de Agent UI kiest. Als u de reeks waarden wilt opgeven, selecteert u deze optie en geeft u door komma&#39;s gescheiden waarden op die zijn toegestaan in het dialoogvenster **[!UICONTROL Values]** veld.
 
 1. Tik op **[!UICONTROL Create]**.

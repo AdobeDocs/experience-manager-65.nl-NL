@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3335'
+source-wordcount: '3333'
 ht-degree: 0%
 
 ---
 
 # Openingspagina&#39;s{#landing-pages}
 
-Met de functie voor het plaatsen van pagina&#39;s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of slechts een deel van een pagina kunnen worden geïmporteerd. De functionaliteit is nuttig om bestemmingspagina&#39;s tot stand te brengen die slechts voor een beperkte tijd actief zijn en snel moeten worden gecreeerd.
+Met de functie voor het plaatsen van pagina&#39;s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of slechts een deel van een pagina kunnen worden geïmporteerd. De functionaliteit is handig om bestemmingspagina&#39;s voor marketingdoeleinden te maken die slechts gedurende een beperkte tijd actief zijn en snel moeten worden gemaakt.
 
 Deze pagina beschrijft het volgende:
 
@@ -29,7 +29,7 @@ Deze pagina beschrijft het volgende:
 * hoe te met het landen van pagina&#39;s in AEM werken
 * mobiele bestemmingspagina&#39;s instellen
 
-De voorbereiding van het ontwerppakket voor het importeren wordt behandeld in [De importmodule voor ontwerpen uitbreiden en configureren](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Integratie met Adobe Analytics valt onder [Landingpagina&#39;s integreren met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+De voorbereiding van het ontwerppakket voor het importeren wordt behandeld in [Het uitbreiden van en het Vormen van de Importeur van het Ontwerp](/help/sites-administering/extending-the-design-importer-for-landingpages.md). Integratie met Adobe Analytics valt onder [Landingpagina&#39;s integreren met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 >[!CAUTION]
 >
@@ -128,7 +128,7 @@ Een landingspagina-ontwerp kan verscheidene verbindingen hebben - sommige kunnen
 De oproep tot actie (CTA) wordt gebruikt om de bezoeker te krijgen onmiddellijk actie op de landende pagina zoals &quot;Abonneren nu,&quot;Bekijk deze video,&quot;Beperkte Tijd slechts&quot;etc.
 
 * Klik via koppeling - Hiermee kunt u een tekstkoppeling toevoegen waarmee de bezoeker naar een doel-URL gaat wanneer erop wordt geklikt.
-* Grafische koppeling - Hiermee kunt u een afbeelding toevoegen die de bezoeker naar een doel-URL stuurt wanneer erop wordt geklikt.
+* Grafische koppeling - Hiermee kunt u een afbeelding toevoegen die de bezoeker na het klikken naar een doel-URL stuurt.
 
 Beide componenten CTA hebben gelijkaardige opties. De optie Doorklikken via koppeling heeft extra tekstopties. De componenten worden in de volgende alinea&#39;s uitgebreid beschreven.
 
@@ -184,7 +184,7 @@ Hier volgt een voorbeeld van een grafische koppeling:
 
 ### Oproep tot actie (CTA) Lead Form {#call-to-action-cta-lead-form}
 
-Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegevens van een bezoeker/lead te verzamelen. Deze informatie kan later worden opgeslagen en gebruikt om een efficiënte marketing te doen die op de informatie wordt gebaseerd. Deze informatie omvat gewoonlijk titel, naam, e-mail, geboortedatum, adres, rente, enzovoort. Het maakt deel uit van de **CTA-Leadformulier** groep.
+Een formulier voor leads is een formulier dat wordt gebruikt om de profielgegevens van een bezoeker/lead te verzamelen. Deze informatie kan later worden opgeslagen en gebruikt om een efficiënte marketing te doen die op de informatie wordt gebaseerd. Deze informatie omvat gewoonlijk titel, naam, e-mail, geboortedatum, adres, rente, enzovoort. Het maakt deel uit van de **Formulier voor CTA-lead** groep.
 
 Een voorbeeld van een CTA-loodformulier ziet er als volgt uit:
 
@@ -201,7 +201,7 @@ Formuliervelden en -elementen kunnen tekstvakken, keuzerondjes, afbeeldingen enz
 * **Profielcomponenten**
 Profielcomponenten hebben betrekking op bezoekersprofielen die worden gebruikt voor sociale samenwerking en andere gebieden waar personalisatie van bezoekers vereist is.
 
-In het voorgaande voorbeeld wordt een voorbeeldformulier weergegeven; het bestaat uit **Voorloopformulier** component (begin en einde), met **Voornaam** en **E-mailadres** velden die worden gebruikt voor invoer en een **Verzenden** field
+In het voorgaande voorbeeld wordt een voorbeeldformulier weergegeven dat bestaat uit de **Voorloopformulier** component (begin en einde), met **Voornaam** en **E-mailadres** velden die worden gebruikt voor invoer en **Verzenden** field
 
 Van sidekick, zijn de volgende componenten beschikbaar voor de CTA Lood Vorm:
 
@@ -214,10 +214,10 @@ Hoewel elk van de componenten van het hoofdformulier een ander doel heeft, besta
 Wanneer u een van de formuliercomponenten configureert, zijn de volgende tabbladen beschikbaar in het dialoogvenster:
 
 * **Titel en tekst**
-Hier moet u de basisinformatie opgeven, zoals de titel van de component en eventuele bijbehorende tekst. In voorkomend geval kunt u ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
+Hier moet u de basisinformatie opgeven, zoals de titel van de component en eventuele bijbehorende tekst. U kunt zo nodig ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
 
 * **Beginwaarden**
-Hiermee kunt u een standaardwaarde opgeven.
+Hier geeft u een standaardwaarde op.
 
 * **Restricties**
 Hier kunt u opgeven of een veld verplicht is en plaatsbeperkingen in dat veld gelden (moet bijvoorbeeld numeriek zijn, enzovoort).
@@ -286,12 +286,12 @@ Er zijn twee tabbladen beschikbaar voor de configuratie **Formulier** en **Geava
 **Post-opties** De volgende postopties zijn beschikbaar:
 
 * Lead maken
-* E-mailservice: Abonnee maken en toevoegen aan lijst - Gebruik deze optie als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
-* E-mailservice: E-mail met automatische reactie verzenden - Gebruik deze functie als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
-* E-mailservice: Abonnement voor gebruiker opzeggen uit lijst - Gebruik deze optie als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
+* E-mailservice: Maak een abonnee en voeg deze toe aan de lijst - Gebruik deze functie als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
+* E-mailservice: verzend e-mail met automatische beantwoording - Gebruik deze als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
+* E-mailservice: gebruikers afmelden bij lijst - Gebruik deze optie als u een e-mailserviceprovider gebruikt, zoals ExactTarget.
 * Abonnement op gebruiker opzeggen
 
-**Formulierid** De formulier-id vormt een unieke identificatie van het hoofdformulier. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt; zorg ervoor zij verschillende herkenningstekens hebben.
+**Formulierid** De formulier-id vormt een unieke identificatie van het hoofdformulier. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt. Zorg ervoor dat deze verschillende id&#39;s hebben.
 
 **Pad laden** Is het pad naar knoopeigenschappen die worden gebruikt om vooraf gedefinieerde waarden te laden in de hoofdformuliervelden.
 
@@ -345,7 +345,7 @@ Omdat bij het importeren van pagina&#39;s de HTML, verificatie en het testen van
 
 >[!NOTE]
 >
->Omdat de ontwerpimportmodule bedoeld is als een beheerprogramma waarvoor lees-, schrijf-, maak- en verwijdermachtigingen vereist zijn op `/apps`Adobe beveelt niet aan de importeur van het ontwerp in productie te nemen.
+>Omdat de ontwerpimportmodule bedoeld is als een beheerprogramma waarvoor lees-, schrijf-, maak- en verwijdermachtigingen vereist zijn op `/apps`, beveelt de Adobe het gebruik van de importeur van het model in productie niet aan.
 
 Adobe raadt aan de importer van het ontwerp op een testinstantie te gebruiken. Op een testinstantie kan de import worden getest en gevalideerd door een ontwikkelaar die vervolgens verantwoordelijk is voor het implementeren van de code in de productieinstantie.
 
@@ -362,7 +362,7 @@ Een nieuwe openingspagina maken:
 1. Ga naar de **Websites** console.
 1. Selecteer de campagne in het linkerdeelvenster.
 1. Klikken **Nieuw** om de **Pagina maken** venster.
-1. Selecteer **Pagina importeren** sjabloon en voeg desgewenst een titel en een naam toe en klik op **Maken**.
+1. Selecteer de **Pagina importeren** sjabloon en voeg desgewenst een titel en een naam toe en klik op **Maken**.
 
    ![chlimage_1-1-1](assets/chlimage_1-1-1.png)
 
@@ -419,7 +419,7 @@ Wanneer u het ontwerppakket importeert, **Ontwerp wissen** en **Geïmporteerde p
 
 Door het ZIP-bestand te downloaden, kunt u opnemen welk ZIP-bestand met een bepaalde bestemmingspagina is geïmporteerd. Wijzigingen die op een pagina zijn aangebracht, worden niet toegevoegd aan het postvak.
 
-Als u het geïmporteerde ontwerppakket wilt downloaden, klikt u op **Postcode downloaden** op de werkbalk Landingspagina.
+Klik op **Postcode downloaden** op de werkbalk Landingspagina.
 
 ### Informatie over importeren weergeven {#viewing-import-information}
 
@@ -459,7 +459,7 @@ De enige uitzondering is dat wanneer u een bestemmingspagina verwijdert, deze oo
 
 ### Een openingspagina publiceren {#publishing-a-landing-page}
 
-U kunt de openingspagina en alle bijbehorende afhankelijkheden publiceren op dezelfde manier als een normale pagina publiceren.
+U kunt de openingspagina en alle bijbehorende afhankelijkheden publiceren, net als een normale pagina.
 
 >[!NOTE]
 >

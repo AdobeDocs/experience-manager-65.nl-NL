@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 840ea373537799af995c3b8ce0c8bf575752775b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2427'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -26,9 +26,9 @@ ht-degree: 0%
 
 U maakt een [workflowmodel](/help/sites-developing/workflows.md#model) om de reeks stappen te definiëren die worden uitgevoerd wanneer een gebruiker de workflow start. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
 
-Wanneer een gebruiker een workflow start, wordt een instantie gestart; dit is het corresponderende runtimemodel dat is gemaakt toen u [Synchroniseren](#sync-your-workflow-generate-a-runtime-model) uw wijzigingen.
+Wanneer een gebruiker een workflow start, wordt een instantie gestart. Dit is het corresponderende runtimemodel dat u hebt gemaakt wanneer u [Sync](#sync-your-workflow-generate-a-runtime-model) uw wijzigingen.
 
-## Nieuwe workflow maken {#creating-a-new-workflow}
+## Een nieuwe workflow maken {#creating-a-new-workflow}
 
 Wanneer u voor het eerst een nieuw workflowmodel maakt, bevat dit model:
 
@@ -61,21 +61,21 @@ Een nieuwe workflow maken met de editor:
 U kunt elk bestaand workflowmodel bewerken in:
 
 * [stappen definiëren](#addingasteptoamodel-) en hun [parameters](#configuring-a-workflow-step)
-* workfloweigenschappen configureren, waaronder [stadia](#configuring-workflow-stages-that-show-workflow-progress), [of de workflow van voorbijgaande aard is](#creatingatransientworkflow-) en/of [gebruikt meerdere bronnen](#configuring-a-workflow-for-multi-resource-support)
+* workfloweigenschappen configureren, waaronder [fases](#configuring-workflow-stages-that-show-workflow-progress), [of de workflow van voorbijgaande aard is](#creatingatransientworkflow-) en/of [gebruikt meerdere bronnen](#configuring-a-workflow-for-multi-resource-support)
 
 Een [**Standaard en/of Verouderd** (out-of-the-box) workflow](#editing-a-default-or-legacy-workflow-for-the-first-time) een extra stap heeft om ervoor te zorgen dat een [veilige kopie](/help/sites-developing/workflows-best-practices.md#locations-workflow-models) wordt gebruikt voordat de wijzigingen worden aangebracht.
 
-Wanneer updates van uw workflow zijn voltooid, moet u **Synchroniseren** tot **Een runtimemodel genereren**. Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
+Wanneer updates van uw workflow zijn voltooid, moet u **Sync** tot **Een runtimemodel genereren**. Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
 ### Uw workflow synchroniseren - Een runtimemodel genereren {#sync-your-workflow-generate-a-runtime-model}
 
-**Synchroniseren** (rechts op de editor-werkbalk) genereert een [runtimemodel](/help/sites-developing/workflows.md#runtime-model). Het runtimemodel is het model dat daadwerkelijk wordt gebruikt wanneer een gebruiker een workflow start. Als u dat niet doet **Synchroniseren** uw wijzigingen, dan zijn de wijzigingen niet beschikbaar bij uitvoering.
+**Sync** (rechts op de editor-werkbalk) genereert een [runtimemodel](/help/sites-developing/workflows.md#runtime-model). Het runtimemodel is het model dat daadwerkelijk wordt gebruikt wanneer een gebruiker een workflow start. Als u dat niet doet **Sync** uw wijzigingen, dan zijn de wijzigingen niet beschikbaar bij uitvoering.
 
-Wanneer u (of een andere gebruiker) wijzigingen aanbrengt in de workflow, moet u **Synchroniseren** om een runtimemodel te genereren - zelfs als afzonderlijke dialoogvensters (bijvoorbeeld voor stappen) hun eigen opslagopties hebben.
+Wanneer u (of een andere gebruiker) wijzigingen aanbrengt in de workflow, moet u **Sync** om een runtimemodel te genereren - zelfs als afzonderlijke dialoogvensters (bijvoorbeeld voor stappen) hun eigen opslagopties hebben.
 
 Wanneer de wijzigingen worden gesynchroniseerd met het (opgeslagen) runtimemodel, **Gesynchroniseerd** wordt weergegeven.
 
-Sommige stappen hebben verplichte velden en/of ingebouwde validatie. Wanneer niet aan deze voorwaarden wordt voldaan, wordt een fout weergegeven wanneer u probeert **Synchroniseren** het model. Wanneer bijvoorbeeld geen deelnemer is gedefinieerd voor een **Deelnemer** stap:
+Sommige stappen hebben verplichte velden en/of ingebouwde validatie. Wanneer niet aan deze voorwaarden wordt voldaan, wordt een fout weergegeven wanneer u probeert **Sync** het model. Wanneer bijvoorbeeld geen deelnemer is gedefinieerd voor een **Deelnemer** stap:
 
 ![wf-21](assets/wf-21.png)
 
@@ -88,11 +88,10 @@ Wanneer u een [Standaard en/of verouderd model](/help/sites-developing/workflows
 * In eerste instantie worden het model en de eigenschappen ervan in de modus Alleen-lezen weergegeven als:
    * Standaardworkflows bevinden zich in `/libs`
    * Oudere workflows bevinden zich in `/etc`
-Selecteren 
-**Bewerken** zal:
+Selecteren **Bewerken** zal:
 * neem een kopie van de workflow naar `/conf`
 * stelt browser Stappen ter beschikking
-* laten u toe om veranderingen aan te brengen
+* laten u veranderingen aanbrengen
 
 >[!NOTE]
 >
@@ -115,7 +114,7 @@ Wanneer u een model bewerkt, worden de beschikbare stappen weergegeven in de ver
 Stappen toevoegen aan uw workflowmodel:
 
 1. Open een bestaand workflowmodel voor bewerking. Van de **Workflowmodel** -console, selecteert u het vereiste model en **Bewerken**.
-1. Open de browser Stappen; gebruiken **Zijpaneel in-/uitschakelen** helemaal links van de bovenste werkbalk. Hier kunt u:
+1. De browser Stappen openen; gebruiken **Zijpaneel in-/uitschakelen** helemaal links van de bovenste werkbalk. Hier kunt u:
 
    * **Filter** voor specifieke stappen.
    * Gebruik de keuzelijst om de selectie te beperken tot een specifieke groep stappen.
@@ -135,11 +134,11 @@ Stappen toevoegen aan uw workflowmodel:
 
    Tijdens de uitvoering worden de stappen uitgevoerd in de volgorde waarin ze in het model worden weergegeven. Nadat u de onderdelen met stappen hebt toegevoegd, kunt u deze naar een andere locatie in het model slepen.
 
-   U kunt ook bestaande stappen kopiëren, knippen, plakken, groeperen of verwijderen. zoals bij de [pagina-editor.](/help/sites-authoring/editing-content.md)
+   U kunt ook bestaande stappen kopiëren, knippen, plakken, groeperen of verwijderen, net als met de [pagina-editor.](/help/sites-authoring/editing-content.md)
 
    Gesplitste stappen kunnen ook worden samengevouwen/uitgevouwen met de werkbalkoptie: ![wf-collapse-toolbar-icon](assets/wf-collapseexpand-toolbar-icon.png)
 
-1. Wijzigingen bevestigen met **Synchroniseren** (editor-werkbalk) om het runtimemodel te genereren.
+1. Wijzigingen bevestigen met **Sync** (editor-werkbalk) om het runtimemodel te genereren.
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
@@ -152,16 +151,17 @@ U kunt **Configureren** en pas het gedrag van een werkschemastap aan gebruikend 
    * Klik/tik de *stap in het workflowmodel en selecteer **Configureren** op de werkbalk van de component.
 
    * Dubbelklik op de stap.
+
    >[!NOTE]
    >
    >Voor informatie over de primaire stapcomponenten die met AEM worden geïnstalleerd, zie [Referentie workflowstappen](/help/sites-developing/workflows-step-ref.md).
 
-1. Configureer de **Step Properties** indien nodig; Welke eigenschappen beschikbaar zijn, is afhankelijk van het type stap. Er kunnen ook verschillende tabbladen beschikbaar zijn. De standaardinstelling **Stap deelnemer**, in een nieuwe workflow presenteren als `Step 1`:
+1. Vorm **Step Properties** zoals vereist; de beschikbare eigenschappen zijn afhankelijk van het type stap en er kunnen ook verschillende tabbladen beschikbaar zijn. De standaardinstelling **Stap deelnemer**, in een nieuwe workflow presenteren als `Step 1`:
 
    ![wf-11](assets/wf-11.png)
 
 1. Bevestig uw updates met de tik.
-1. Wijzigingen bevestigen met **Synchroniseren** (editor-werkbalk) om het runtimemodel te genereren.
+1. Wijzigingen bevestigen met **Sync** (editor-werkbalk) om het runtimemodel te genereren.
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
@@ -175,7 +175,7 @@ U kunt een [Voorzichtig](/help/sites-developing/workflows.md#transient-workflows
 
    ![wf-07](assets/wf-07.png)
 
-1. De wijziging bevestigen met **Opslaan en sluiten**; gevolgd door **Synchroniseren** (editor-werkbalk) om het runtimemodel te genereren.
+1. De wijziging bevestigen met **Opslaan en sluiten**; gevolgd door **Sync** (editor-werkbalk) om het runtimemodel te genereren.
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
@@ -216,7 +216,7 @@ U kunt een workflowmodel configureren voor [Ondersteuning voor meerdere bronnen]
 
    ![wf-08](assets/wf-08.png)
 
-1. De wijziging bevestigen met **Opslaan en sluiten**; gevolgd door **Synchroniseren** (editor-werkbalk) om het runtimemodel te genereren.
+1. De wijziging bevestigen met **Opslaan en sluiten**; gevolgd door **Sync** (editor-werkbalk) om het runtimemodel te genereren.
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
@@ -241,7 +241,7 @@ Om te bepalen **Staven** voor uw workflow:
    ![wf-08-1](assets/wf-08-1.png)
 
 1. Klikken **Opslaan en sluiten** om de eigenschappen op te slaan.
-1. Wijs een werkgebied aan elk van de stappen in het werkschemamodel toe. Bijvoorbeeld:
+1. Wijs een werkgebied toe aan elk van de stappen in het workflowmodel. Bijvoorbeeld:
 
    ![wf-09](assets/wf-09.png)
 
@@ -256,7 +256,7 @@ Om te bepalen **Staven** voor uw workflow:
    | Stap 5 | Goedkeuren |
    | Stap 6 | Voltooid |
 
-1. Wijzigingen bevestigen met **Synchroniseren** (editor-werkbalk) om het runtimemodel te genereren.
+1. Wijzigingen bevestigen met **Sync** (editor-werkbalk) om het runtimemodel te genereren.
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
@@ -310,21 +310,21 @@ U configureert als volgt de workflow die met het formulier moet worden gebruikt:
 
 ## Testworkflows {#testing-workflows}
 
-Het is een goede praktijk wanneer het testen van een werkschema om een verscheidenheid van ladingstypes te gebruiken; met inbegrip van typen die verschillen van de soorten waarvoor zij is ontwikkeld. Als u bijvoorbeeld van plan bent om in uw workflow te werken met Elementen, test u deze door een Pagina in te stellen als een payload en controleer of er geen fouten optreden.
+Het is een goede praktijk wanneer het testen van een werkschema om een verscheidenheid van ladingstypes te gebruiken; met inbegrip van types die verschillend zijn aan die waarvoor het is ontwikkeld. Als u bijvoorbeeld van plan bent om in uw workflow te werken met Elementen, test u deze door een Pagina in te stellen als een payload en controleer of er geen fouten optreden.
 
 Test bijvoorbeeld de nieuwe workflow als volgt:
 
 1. [Uw workflowmodel starten](/help/sites-administering/workflows-starting.md) vanuit de console.
 1. Definieer de **Payload** en bevestigen.
 
-1. Voer de vereiste handelingen uit zodat de workflow doorgaat.
+1. Voer de vereiste handelingen uit om de workflow te laten doorgaan.
 1. Controleer de logbestanden terwijl de workflow wordt uitgevoerd.
 
 U kunt ook AEM configureren voor weergave **DEBUG** in de logbestanden. Zie [Logboekregistratie](/help/sites-deploying/configure-logging.md) voor nadere informatie en wanneer de ontwikkeling is voltooid, stelt u de **Logboekniveau** terug naar **Info**.
 
 ## Voorbeelden {#examples}
 
-### Voorbeeld: Een (eenvoudige) workflow maken om een publicatieaanvraag te accepteren of af te wijzen {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
+### Voorbeeld: een (eenvoudige) workflow maken om een aanvraag voor publicatie te accepteren of af te wijzen {#example-creating-a-simple-workflow-to-accept-or-reject-a-request-for-publication}
 
 Om enkele mogelijkheden voor het maken van een workflow te illustreren, maakt u in het volgende voorbeeld een variatie van de optie `Publish Example` workflow.
 
@@ -364,17 +364,17 @@ Om enkele mogelijkheden voor het maken van een workflow te illustreren, maakt u 
 1. Open de **Of splitsen** voor configuratie.
 1. Configureren:
 
-   * **Vaak**: Geef de naam van de splitsing op.
-   * **Tak 1**: selecteren **Standaardroute**.
+   * **Vaak**: geef de naam van de splitsing op.
+   * **Tak 1**: select **Standaardroute**.
 
-   * **Tak 2**: waarborgen **Standaardroute** is niet geselecteerd.
+   * **Tak 2**: zorgen **Standaardroute** is niet geselecteerd.
 
 1. Bevestig uw updates aan **OF Splitsen**.
 1. Sleep een **Stap deelnemer** Open de eigenschappen in de linkervertakking, geef de volgende waarden op en bevestig de wijzigingen:
 
    * **Titel**: `Reject Publish Request`
 
-   * **Gebruiker/groep**: bijvoorbeeld: `projects-administrators`
+   * **Gebruiker/groep**: bijvoorbeeld `projects-administrators`
 
    * **Gebruikers via e-mail op de hoogte stellen**: Activeer deze functie om de gebruiker per e-mail op de hoogte te stellen.
 
@@ -382,9 +382,9 @@ Om enkele mogelijkheden voor het maken van een workflow te illustreren, maakt u 
 
    * **Titel**: `Publish Page as Requested`
 
-   * **Proces**: selecteren `Activate Page`. Dit proces publiceert de geselecteerde pagina naar de uitgeversinstanties.
+   * **Proces**: select `Activate Page`. Dit proces publiceert de geselecteerde pagina naar de uitgeversinstanties.
 
-1. Klikken **Synchroniseren** (editor-werkbalk) om het runtimemodel te genereren.
+1. Klikken **Sync** (editor-werkbalk) om het runtimemodel te genereren.
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
@@ -396,9 +396,9 @@ Om enkele mogelijkheden voor het maken van een workflow te illustreren, maakt u 
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-### Voorbeeld: Een regel definiëren voor een OR-splitsing met behulp van een ECMA-script {#defineruleecmascript}
+### Voorbeeld: Een regel definiëren voor een OR-splitsing met behulp van ECMA-script {#defineruleecmascript}
 
-**OF Splitsen** Met de stappen kunt u voorwaardelijke verwerkingspaden in uw workflow opnemen.
+**OF Splitsen** Met stappen kunt u voorwaardelijke verwerkingspaden in uw workflow opnemen.
 
 Ga als volgt te werk om een OR-regel te definiëren:
 
@@ -416,18 +416,19 @@ Ga als volgt te werk om een OR-regel te definiëren:
    * Hiermee definieert u dit als de **Standaardroute** door de **Waarde** tot `true`.
 
    * Als **Regel**, stelt u het pad naar het script in. Bijvoorbeeld:
-      `/apps/myapp/workflow/scripts/myscript1.ecma`
+     `/apps/myapp/workflow/scripts/myscript1.ecma`
+
    >[!NOTE]
    >
-   >U kunt de vertakkingsvolgorde desgewenst wijzigen.
+   >U kunt desgewenst van de vertakkingsvolgorde wisselen.
 
 1. De eigenschappen van het gereedschap **Tak 2** van de **OF Splitsen**.
 
    * Als **Regel**, stelt u het pad in op het andere script. Bijvoorbeeld:
-      `/apps/myapp/workflow/scripts/myscript2.ecma`
+     `/apps/myapp/workflow/scripts/myscript2.ecma`
 
 1. Stel de eigenschappen van de afzonderlijke stappen in elke vertakking in. Zorg ervoor dat de **Gebruiker/groep** is ingesteld.
-1. Klikken **Synchroniseren** (editor-werkbalk) om uw wijzigingen in het runtimemodel voort te zetten.
+1. Klikken **Sync** (editor-werkbalk) om uw wijzigingen in het runtimemodel voort te zetten.
 
    Zie [Uw workflow synchroniseren](#sync-your-workflow-generate-a-runtime-model) voor meer informatie.
 
@@ -458,6 +459,6 @@ function check() {
 
 ### Voorbeeld: Aangepast verzoek om activering {#example-customized-request-for-activation}
 
-U kunt om het even welke uit-van-de-doos workflows aanpassen. Voor aangepast gedrag bedekt u de details van de juiste workflow.
+U kunt om het even welke uit-van-de-doos workflows aanpassen. Voor een aangepast gedrag bedekt u de details van de juiste workflow.
 
 Bijvoorbeeld: **Verzoek om activering**. Deze workflow wordt gebruikt voor het publiceren van pagina&#39;s binnen **Sites** en wordt automatisch geactiveerd wanneer een auteur van de inhoud niet de juiste replicatierechten heeft. Zie [Paginaontwerp aanpassen - De activeringsworkflow aanpassen](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) voor nadere bijzonderheden.

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1828'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Het WYSIWYG-bewerkingsdialoogvenster biedt een groot aantal functies:
 
 ## Plaatselijk bewerken {#in-place-editing}
 
-Naast de op een dialoogvenster gebaseerde modus RTF-bewerking biedt AEM ook de modus Op plaats bewerken, waarmee de tekst direct kan worden bewerkt terwijl deze wordt weergegeven in de lay-out van de pagina.
+Naast de op een dialoogvenster gebaseerde modus RTF-bewerking biedt AEM ook de modus Op plaats bewerken, waarmee de tekst direct kan worden bewerkt terwijl deze wordt weergegeven in de layout van de pagina.
 
 Dubbelklik op een alinea (langzaam dubbelklikken) om de modus Op plaats bewerken te activeren (de rand van de component is nu oranje).
 
@@ -56,13 +56,13 @@ Op dit moment is de modus Plaatsen bewerken ingeschakeld voor pagina-elementen d
 
 ## Functies van de Rich Text Editor {#features-of-the-rich-text-editor}
 
-De rijke Redacteur van de Tekst verstrekt een waaier van eigenschappen, deze [afhankelijk van de configuratie](/help/sites-administering/rich-text-editor.md) van het afzonderlijke bestanddeel. De functies zijn beschikbaar voor zowel de geoptimaliseerde interface voor aanrakingen als de klassieke interface.
+De Rich Text Editor biedt een aantal functies, zoals [afhankelijk van de configuratie](/help/sites-administering/rich-text-editor.md) van het afzonderlijke bestanddeel. De functies zijn beschikbaar voor zowel de geoptimaliseerde interface voor aanrakingen als de klassieke interface.
 
 ### Standaardtekenopmaak {#basic-character-formats}
 
 ![Werkbalk Tekenindeling](do-not-localize/cq55_rte_basicchars.png)
 
-Hier kunt u opmaak toepassen op geselecteerde tekens (gemarkeerd); Sommige opties hebben ook sneltoetsen:
+Hier kunt u opmaak toepassen op tekens die u hebt geselecteerd (gemarkeerd). Sommige opties hebben ook sneltoetsen:
 
 * Vet (Ctrl-B)
 * Cursief (Ctrl-I)
@@ -78,7 +78,7 @@ Alles wordt als een schakeloptie gebruikt, dus bij herselectie wordt de indeling
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Uw installatie kan vooraf gedefinieerde stijlen en indelingen bevatten. Deze zijn beschikbaar bij de **[!UICONTROL Style]** en **[!UICONTROL Format]** vervolgkeuzelijsten en kan worden toegepast op tekst die u hebt geselecteerd.
+Uw installatie kan vooraf gedefinieerde stijlen en indelingen bevatten. Deze zijn beschikbaar bij de **[!UICONTROL Style]** en **[!UICONTROL Format]** vervolgkeuzelijsten en kan worden toegepast op geselecteerde tekst.
 
 Een stijl kan worden toegepast op een specifieke tekenreeks (een stijl heeft een CSS-correlatie):
 
@@ -104,11 +104,11 @@ De standaardfuncties van **[!UICONTROL Cut]** en **[!UICONTROL Copy]** zijn besc
 
 * Knippen (Ctrl+X)
 * Kopiëren (Ctrl-C)
-* Plakken dit is het standaardplakmechanisme (Ctrl-V) voor de component; wanneer geïnstalleerd buiten-van-de-doos dit wordt gevormd om [!UICONTROL Paste from Word].
+* Plakken Dit is het standaardplakmechanisme (Ctrl-V) voor de component; als deze optie buiten het vak wordt geïnstalleerd, is dit geconfigureerd om te worden [!UICONTROL Paste from Word].
 
-* Plakken als tekst: Hiermee worden alle stijlen en opmaak verwijderd, zodat alleen de onbewerkte tekst wordt geplakt.
+* Plakken als tekst: hiermee worden alle stijlen en opmaak verwijderd, zodat alleen de onbewerkte tekst wordt geplakt.
 
-* Plakken vanuit Word: Hiermee plakt u de inhoud als HTML (met de vereiste aanpassingen).
+* Plakken vanuit Word: hiermee wordt de inhoud als HTML geplakt (met de vereiste aanpassingen).
 
 ### Ongedaan maken, Opnieuw {#undo-redo}
 
@@ -136,7 +136,7 @@ De tekst kan links, gecentreerd of rechts worden uitgelijnd.
 
 ![Werkbalk Inspringing](do-not-localize/cq55_rte_indent.png)
 
-De inspringing van een alinea kan worden vergroot of verkleind. De geselecteerde alinea wordt ingesprongen, alle nieuwe tekst die wordt ingevoerd, behoudt het huidige inspringingsniveau.
+De inspringing van een alinea kan worden verhoogd of verlaagd. De geselecteerde alinea wordt ingesprongen, alle nieuwe tekst die wordt ingevoerd, behoudt het huidige inspringingsniveau.
 
 ![cq55_rte_indent_use](assets/cq55_rte_indent_use.png)
 
@@ -160,7 +160,7 @@ Een koppeling naar een URL (binnen uw website of een externe locatie) wordt gege
 
 ![Pictogram Hyperlink](do-not-localize/chlimage_1-9.png)
 
-In een dialoogvenster kunt u de doel-URL opgeven. ook of het in een nieuw venster moet worden geopend.
+In een dialoogvenster kunt u de doel-URL opgeven en ook of deze in een nieuw venster moet worden geopend.
 
 ![cq55_rte_link_use](assets/cq55_rte_link_use.png)
 
@@ -168,8 +168,8 @@ U kunt:
 
 * Een URI rechtstreeks typen
 * Gebruik het site-overzicht om een pagina binnen uw website te selecteren
-* Voer de URI in en voeg vervolgens het doelanker toe; bijvoorbeeld: `www.TargetUri.org#AnchorName`
-* Voer alleen een anker in (als u naar &quot;de huidige pagina&quot; wilt verwijzen); Bijvoorbeeld: `#anchor`
+* Voer de URI in en voeg vervolgens het doelanker toe, bijvoorbeeld `www.TargetUri.org#AnchorName`
+* Voer alleen een anker in (als u naar &quot;de huidige pagina&quot; wilt verwijzen), bijvoorbeeld `#anchor`
 * Zoeken naar een pagina in de zoeker naar inhoud en vervolgens het paginapictogram naar het dialoogvenster Hyperlink slepen
 
 >[!NOTE]
@@ -186,7 +186,7 @@ Als u de koppelingspositie wilt verbreken, plaatst u de cursor ergens in de kopp
 
 U kunt overal in de tekst een anker maken door de cursor te plaatsen of tekst te selecteren. Klik vervolgens op de knop **Anker** om het dialoogvenster te openen.
 
-Voer de naam van het anker in en klik op **OK** om op te slaan.
+Voer de naam van het anker in en klik op **OK** opslaan.
 
 ![cq55_rte_anchor_use](assets/cq55_rte_anchor_use.png)
 
@@ -206,7 +206,7 @@ De zoekopdracht begint altijd op de huidige cursorpositie in de tekst. Wanneer h
 
 ![cq55_rte_find_use](assets/cq55_rte_find_use.png)
 
-De **Vervangen** kunt u **Zoeken** vervolgens **Vervangen** een afzonderlijke instantie met de opgegeven tekst, of **Alles vervangen** instanties in de huidige component.
+De **Vervangen** optie laat u **Zoeken** vervolgens **Vervangen** een afzonderlijke instantie met de opgegeven tekst, of **Alles vervangen** instanties in de huidige component.
 
 ![cq55_rte_findreplace_use](assets/cq55_rte_findreplace_use.png)
 
@@ -218,7 +218,7 @@ Afbeeldingen kunnen worden gesleept vanuit de zoekfunctie voor inhoud om ze aan 
 
 >[!NOTE]
 >
->AEM biedt ook gespecialiseerde componenten voor meer gedetailleerde beeldconfiguratie. Bijvoorbeeld de **Afbeelding** en **Tekstafbeelding** zijn beschikbaar.
+>AEM biedt ook gespecialiseerde componenten voor meer gedetailleerde beeldconfiguratie aan. Bijvoorbeeld de **Afbeelding** en **Tekstafbeelding** zijn beschikbaar.
 
 ### Spellingcontrole {#spelling-checker}
 
@@ -232,7 +232,7 @@ Eventuele onjuiste spelling wordt gemarkeerd:
 
 >[!NOTE]
 >
->De spellingcontrole wordt uitgevoerd in de taal van de website door de eigenschap language van de substructuur te gebruiken of de taal uit de URL te halen. Bijvoorbeeld de `en` de tak zal voor Engels en de `de` vertakking voor Duits.
+>De spellingcontrole wordt uitgevoerd in de taal van de website door ofwel de eigenschap language van de substructuur te nemen ofwel de taal uit de URL te halen. Bijvoorbeeld de `en` de tak zal voor Engels en de `de` vertakking voor Duits.
 
 ### Tabellen {#tables}
 
@@ -250,7 +250,7 @@ Tabellen zijn beschikbaar:
   >
   >Hoewel de lijsten in RTE beschikbaar zijn, wordt het geadviseerd om te gebruiken **Tabel** gebruiken bij het maken van tabellen.
 
-In beide **Tekst** en **Tabel** de functionaliteit van de componentenlijst is beschikbaar via het contextmenu (gewoonlijk de juist-muis-knoop) binnen de lijst wordt geklikt; bijvoorbeeld:
+In beide **Tekst** en **Tabel** De functionaliteit van de componentenlijst is beschikbaar via het contextmenu (gewoonlijk de juist-muis-knoop) binnen de lijst klikt; bijvoorbeeld:
 
 ![cq55_rte_tablemenu](assets/cq55_rte_tablemenu.png)
 
@@ -359,8 +359,8 @@ Als u een geneste tabel maakt, wordt er een nieuwe, op zichzelf staande tabel in
 >
 >Bepaalde extra functies zijn afhankelijk van de browser:
 >
->* Windows IE: Gebruik Ctrl+klikken terwijl u de muis ingedrukt houdt (meestal links) om meerdere cellen te selecteren.
->* Firefox: Sleep de aanwijzer om een celbereik te selecteren.
+>* Windows IE: gebruik Ctrl+klikken terwijl u de muis ingedrukt houdt (meestal links) om meerdere cellen te selecteren.
+>* Firefox: sleep de aanwijzer om een celbereik te selecteren.
 
 #### Tabel verwijderen {#remove-table}
 
@@ -372,7 +372,7 @@ Gebruik de optie om de tabel uit de **[!UICONTROL Text]** component.
 
 ![Werkbalk Speciale tekens](do-not-localize/cq55_rte_specialchars.png)
 
-Speciale tekens kunnen beschikbaar worden gemaakt in de RTF-editor. deze kunnen variëren afhankelijk van uw installatie.
+Speciale tekens kunnen beschikbaar worden gemaakt in de teksteditor met tekstopmaak. Dit kan per installatie verschillen.
 
 ![cq55_rte_specialchars_use](assets/cq55_rte_specialchars_use.png)
 

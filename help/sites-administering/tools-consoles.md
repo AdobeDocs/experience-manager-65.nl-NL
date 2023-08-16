@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '604'
 ht-degree: 25%
 
 ---
@@ -47,7 +47,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE Lite</td>
+   <td>CRXDE LITE</td>
   </tr>
   <tr>
    <td> </td>
@@ -311,7 +311,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td> </td>
-   <td>Configuratie sociale aanmelding voor twitter<br /> </td>
+   <td>Configuratie van sociale aanmelding voor twitter<br /> </td>
   </tr>
   <tr>
    <td> </td>
@@ -377,7 +377,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden gehouden hier.<br /> </td>
   </tr>
   <tr>
-   <td>Configuraties van Cloud Services<br /> </td>
+   <td>Configuraties van Cloud Servicen<br /> </td>
    <td>Bevat configuraties met betrekking tot Integratie met de Adobe Marketing Cloud.</td>
   </tr>
   <tr>
@@ -394,7 +394,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Dashboards</td>
-   <td>Hiermee kunt u rapportdashboards maken; Deze vormen een aanpasbare manier om pagina's te definiëren waarop geconsolideerde gegevens worden weergegeven.</td>
+   <td>Hiermee kunt u rapportdashboards maken. Deze bieden een aanpasbare manier om pagina's te definiëren die geconsolideerde gegevens weergeven.</td>
   </tr>
   <tr>
    <td>Aangepaste documentatie</td>
@@ -406,7 +406,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Formulierverzendingen</td>
-   <td>Bevat de lijst met ontvangen formulierverzendingen.</td>
+   <td>Bevat de lijst met ingediende formulieren.</td>
   </tr>
   <tr>
    <td>Importeurs </td>
@@ -422,7 +422,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Pakketten</td>
-   <td>Een alternatieve verbinding aan de Manager van het Pakket die de pakketten toont die voor AEM WCM zijn geladen. Gelijkaardig aan de informatie die in de Manager van het Pakket van CRX wordt getoond.</td>
+   <td>Een alternatieve verbinding aan de Manager van het Pakket die de pakketten toont die voor AEM WCM zijn geladen. Vergelijkbaar met de informatie die wordt weergegeven in Package Manager van CRX.</td>
   </tr>
   <tr>
    <td>Replicatie - replicatieagents</td>
@@ -430,7 +430,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Rapporten</td>
-   <td>AEM verstrekt een waaier van aangepaste rapporten, staat u toe om aangepaste rapporten tot stand te brengen en/of uw te ontwikkelen.</td>
+   <td>AEM biedt een reeks aangepaste rapporten, waarmee u aangepaste rapporten kunt maken en/of uw eigen rapporten kunt ontwikkelen.</td>
   </tr>
   <tr>
    <td>Standaardpaginascheiding</td>

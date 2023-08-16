@@ -6,9 +6,9 @@ role: User
 feature: Asset Management,Search
 exl-id: d6f815b5-e4fc-4f8c-a6c1-9e50035ab9f2
 hide: true
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 0%
 
 ---
@@ -28,27 +28,27 @@ Alle digitale elementen, metagegevens en inhoud van Microsoft® Office- en PDF-d
 
 De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. Dit is hetzelfde als het ordenen van bestanden in mappen in uw lokale bestandssysteem. Voor meer informatie over het maken en beheren van mappen raadpleegt u [Elementen beheren](manage-assets.md). Hoe u bestanden en mappen benoemt, hoe u submappen ordent en hoe u de bestanden in deze mappen verwerkt, kan een grote invloed hebben op de manier waarop deze elementen worden verwerkt. Door consistente en geschikte naamgevingsstrategieën voor bestanden en mappen te gebruiken, samen met goede praktijken voor metagegevens, kunt u optimaal gebruikmaken van de opslagplaats voor digitale elementen.
 
-* Gewoonlijk groeit de opslagplaats voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de ontwerpcyclus van de inhoud.
+* Gewoonlijk groeit de opslagplaats voor digitale middelen altijd. Daarom is het belangrijk om het gebruik van metagegevens, de mapstructuur en de naamgeving van bestanden vroegtijdig te formaliseren in de cyclus waarin de inhoud wordt gemaakt.
 * Gebruik mappen alleen om een consistente opslagstructuur voor uw digitale elementen op te leggen. Deze consistentie helpt uw proces en beheert uw activa beter. Elementen die bijvoorbeeld in de volgende typen mappen worden geplaatst, kunnen u helpen het juiste gebruik te maken [profielen voor verwerking van bedrijfsmiddelen](processing-profiles.md):
 
    * **Ontwikkelingsmappen**: bevat digitale elementen waaraan u momenteel werkt.
    * **Clientmappen**: bevat digitale elementen die zijn gebaseerd op clients of projectnamen.
    * **Primaire mappen**: bevat originele, brondigitale elementen.
    * **Uitvoermappen**: bevat vertoningen en kopieën van de originele, brondigitale elementen.
-   * **Bestandsgroottemappen**: bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
+   * **Bestandsgrootten, mappen**: bevat digitale elementen die zijn gebaseerd op kleine, middelgrote of grote bestanden.
    * **Mappen stapelen**: bevat digitale elementen die klaar zijn om live op uw website te publiceren.
    * **MIME-tekstmappen**: bevat digitale elementen die specifiek zijn voor MIME-typen, zoals afbeeldingen, documenten en multimedia.
    * **Mappen archiveren**: bevat gepensioneerde digitale elementen.
    * **Op datum gebaseerde mappen**: bevat digitale elementen die zijn gebaseerd op een aanmaakdatum of een datum die als laatste is gewijzigd.
 
 * Maak een map met mappen die waarschijnlijk niet worden gewijzigd, zodat aanpassingen of automatisering gewoon kunnen doorgaan. De toegewezen verwerkingsprofielen werken bijvoorbeeld nog steeds.
-* Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het middel naar een andere omslag te verplaatsen, en van zijn nieuwe plaats opnieuw te publiceren, is de originele gepubliceerde activaplaats nog beschikbaar, samen met het onlangs opnieuw gepubliceerde middel. Het oorspronkelijke gepubliceerde middel is echter *verloren* tot [!DNL Experience Manager] en kan niet worden gepubliceerd. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
+* Als een element al is gepubliceerd, gebruikt u [!DNL Experience Manager] om het middel naar een andere omslag te verplaatsen, en van zijn nieuwe plaats opnieuw te publiceren, is de originele gepubliceerde activaplaats nog beschikbaar, samen met het onlangs opnieuw gepubliceerde middel. Het oorspronkelijke gepubliceerde middel is echter *verloren* tot [!DNL Experience Manager] en kan niet ongepubliceerd zijn. Daarom, als beste praktijken, eerst unpublish een middel en dan verplaats het naar een verschillende omslag.
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
 Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met behulp van zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en kunstmatige intelligentiealgoritmen van Adobe Sensei gebruiken voor het detecteren van elementen.
 
-[!DNL Adobe Experience Manager Assets] maakt gebruik van een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met een paar klikken kunt vinden. Voor slimme tags wordt gebruikgemaakt van Adobe Sensei, een raamwerk voor kunstmatige intelligentie en het leren van machines, dat kan worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
+[!DNL Adobe Experience Manager Assets] maakt gebruik van een zelfstudie-algoritme om zeer beschrijvende tags te maken waarmee u het juiste element met slechts een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, het kunstmatige intelligentie- en computerleerframework van de Adobe, dat getraind kan worden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
@@ -58,7 +58,7 @@ Raadpleeg de volgende artikelen voor meer informatie:
 
 ## Indelen als verzamelingen {#organize-as-collections}
 
-Met verzamelingen van middelen in [!DNL Experience Manager Assets]kunt u de mogelijkheid om elementen te maken, te bewerken en te delen tussen gebruikers stroomlijnen. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt ook verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
+Met verzamelingen van middelen in [!DNL Experience Manager Assets], kunt u de mogelijkheid om elementen te maken, te bewerken en te delen tussen gebruikers stroomlijnen. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen die een statische referentielijst met elementen, mappen en verzamelingen bevatten, en verzamelingen die op basis van zoekcriteria elementen in elementen trekken. U kunt ook verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
 
 Zie voor meer informatie [verzamelingen beheren](manage-collections.md).
 

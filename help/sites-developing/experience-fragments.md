@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1777'
+source-wordcount: '1776'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 An [Ervaar fragment](/help/sites-authoring/experience-fragments.md) is een groep van één of meerdere componenten met inbegrip van inhoud en lay-out die binnen pagina&#39;s kunnen worden van verwijzingen voorzien.
 
-Een ervaringsfragment dat Master en/of variant wordt gebruikt:
+Een Master- en/of varianttoepassing van het fragment van de ervaring:
 
 * `sling:resourceType` : `/libs/cq/experience-fragments/components/xfpage`
 
@@ -50,7 +50,7 @@ Bijvoorbeeld:
 
 ![xf-14](assets/xf-14.png)
 
-De selector voor normale uitvoering gebruikt een transformator in plaats van aanvullende scripts. de [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Dit wordt gevormd bij
+De selector voor normale uitvoering gebruikt een transformator in plaats van aanvullende scripts; de [Sling Rewriter](https://sling.apache.org/documentation/bundles/output-rewriting-pipelines-org-apache-sling-rewriter.html) wordt gebruikt als transformator. Dit wordt gevormd bij
 
 * `/libs/experience-fragments/config/rewriter/experiencefragments`
 
@@ -63,13 +63,13 @@ De uitvoering van de HTML wordt gegenereerd met behulp van de Sling Rewriter Pip
    * Dit is handig als de klant bepaalde CSS-klassen wil verwijderen
 * `allowedTags`
    * Een lijst met HTML-tags die zijn toegestaan in de uiteindelijke uitvoering.
-   * Standaard zijn de volgende tags toegestaan (geen configuratie vereist): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link and script
+   * Standaard zijn de volgende tags toegestaan (geen configuratie vereist): html, head, title, body, img, p, span, ul, li, a, b, i, em, strong, h1, h2, h3, h4, h5, h6, br, noscript, div, link en script
 
 Het wordt geadviseerd om rewriter te vormen gebruikend een bekleding. Zie [Bedekkingen](/help/sites-developing/overlays.md)
 
 ## Sociale variaties {#social-variations}
 
-Sociale varianten kunnen op sociale media (tekst en afbeelding) worden geplaatst. In Adobe Experience Manager (AEM) kunnen deze sociale varianten componenten bevatten; bijvoorbeeld tekstcomponenten, afbeeldingscomponenten.
+Sociale varianten kunnen op sociale media (tekst en afbeelding) worden geplaatst. In Adobe Experience Manager (AEM) kunnen deze sociale varianten componenten bevatten, bijvoorbeeld tekstcomponenten en afbeeldingscomponenten.
 
 De afbeelding en de tekst voor de sociale post kunnen van elk type afbeeldingsbron of tekstresource op elk diepteniveau (in de bouwsteen of de lay-outcontainer) worden genomen.
 
@@ -144,7 +144,7 @@ Met de [Exporteren naar doel](/help/sites-administering/experience-fragments-tar
 
 Deze functie kan [ingeschakeld op een auteurinstantie van AEM](/help/sites-administering/experience-fragments-target.md#Prerequisites). Het vereist een geldige Configuratie van Adobe Target, en configuraties voor de Verbinding Externalzer.
 
-De Verbinding ExternalAlizer wordt gebruikt om correcte URLs te bepalen nodig wanneer het creëren van de versie van de HTML van het Voorstel van het Doel, dat dan naar Adobe Target wordt verzonden. Dit is noodzakelijk aangezien Adobe Target vereist dat alle verbindingen binnen de Aanbieding van de HTML van het Doel openbaar kunnen worden betreden; dit betekent dat alle bronnen waarnaar de koppelingen verwijzen, en het ervaringsfragment zelf, moeten worden gepubliceerd voordat ze kunnen worden gebruikt.
+De Verbinding ExternalAlizer wordt gebruikt om correcte URLs te bepalen nodig wanneer het creëren van de versie van de HTML van het Voorstel van het Doel, dat dan naar Adobe Target wordt verzonden. Dit is noodzakelijk aangezien Adobe Target vereist dat alle verbindingen binnen de Aanbieding van de HTML van het Doel openbaar kunnen worden betreden; dit betekent dat om het even welke middelen de verbindingen, en het Fragment van de Ervaring zelf, moeten worden gepubliceerd alvorens zij kunnen worden gebruikt.
 
 Wanneer u een Target HTML-aanbieding samenstelt, wordt standaard een aanvraag verzonden naar een aangepaste Sling-kiezer in AEM. Deze kiezer wordt `.nocloudconfigs.html`. Zoals de naam al aangeeft, wordt een GPU-rendering van een Experience-fragment gemaakt, maar worden cloudconfiguraties niet opgenomen (wat overbodige informatie zou zijn).
 
@@ -156,7 +156,7 @@ Nadat u de pagina van de HTML produceert, maakt de Sling Rewriter pijpleiding wi
 
 1. AEM wijzigt om het even welke interne verbindingen aanwezig in de HTML, zodat zij aan een gepubliceerde middel richten.
 
-   Om te bepalen welke koppelingen moeten worden gewijzigd, AEM dit patroon voor kenmerken van HTML-elementen volgen:
+   Als u wilt bepalen welke koppelingen moeten worden gewijzigd, AEM u dit patroon voor kenmerken van HTML-elementen volgt:
 
    1. `src` attributes
    1. `href` attributes
@@ -167,11 +167,11 @@ Nadat u de pagina van de HTML produceert, maakt de Sling Rewriter pijpleiding wi
    >
    >Doorgaans zijn de interne koppelingen in de HTML relatieve koppelingen, maar er kunnen zich gevallen voordoen waarin aangepaste componenten volledige URL&#39;s in de HTML bevatten. Standaard worden deze volledige URL&#39;s genegeerd en worden geen wijzigingen aangebracht.
 
-   De verbindingen in deze attributen worden in werking gesteld door de Verbinding Externalzer van de AEM `publishLink()` om de URL opnieuw te maken alsof deze zich op een gepubliceerd exemplaar bevindt, en als zodanig openbaar te maken.
+   De verbindingen in deze attributen worden in werking gesteld door de AEM Verbinding Externalzer `publishLink()` om de URL opnieuw te maken alsof deze zich op een gepubliceerd exemplaar bevindt, en als zodanig openbaar te maken.
 
-Als u een implementatie buiten de doos gebruikt, moet het hierboven beschreven proces voldoende zijn om het doelaanbod te genereren op basis van het ervaringsfragment en het vervolgens te exporteren naar Adobe Target. Er zijn echter enkele gebruiksgevallen die in dit proces niet in aanmerking worden genomen; deze omvatten :
+Als u een implementatie buiten de doos gebruikt, moet het hierboven beschreven proces voldoende zijn om het doelaanbod te genereren op basis van het ervaringsfragment en het vervolgens te exporteren naar Adobe Target. Er zijn echter enkele gebruiksgevallen die in dit proces niet in aanmerking worden genomen, zoals:
 
-* Sling Mapping beschikbaar op de publicatie-instantie
+* Sling Mapping beschikbaar op alleen de publicatie-instantie
 * Omleiding van Dispatcher
 
 Voor deze gebruiksgevallen AEM verstrekt de Interface van de Leverancier van de Verbinding Rewriter.
@@ -355,4 +355,4 @@ Het is niet ongebruikelijk om verscheidene diensten te nodig om voor verschillen
 
 Deze methode maakt het gebruik van verschillende diensten mogelijk wanneer de `shouldRewrite()` Deze methode retourneert true voor hetzelfde ervaringsfragment. De dienst die het hoogste aantal van zijn terugkeert `getPriority()`De methode is de dienst die de Variatie van het Fragment van de Ervaring behandelt.
 
-U kunt bijvoorbeeld een `GenericLinkRewriterProvider` dat de basisafbeelding voor alle fragmenten van de Ervaring behandelt en wanneer `shouldRewrite()` methode retourneert `true` voor alle Experience Fragment Variations. Voor verscheidene specifieke Fragments van de Ervaring, kunt u speciale behandeling willen, zodat kunt u in dit geval verstrekken `SpecificLinkRewriterProvider` waarvoor `shouldRewrite()` Deze methode retourneert alleen true voor bepaalde Experience Fragment-variaties. Om ervoor te zorgen dat `SpecificLinkRewriterProvider` wordt gekozen om die Variaties van het Fragment van de Ervaring te behandelen, moet het in zijn terugkeren `getPriority()` methode een hoger getal dan `GenericLinkRewriterProvider.`
+U kunt bijvoorbeeld een `GenericLinkRewriterProvider` dat de basisafbeelding voor alle fragmenten van de Ervaring behandelt en wanneer `shouldRewrite()` methode retourneert `true` voor alle Experience Fragment Variations. Voor verscheidene specifieke Fragments van de Ervaring, kunt u speciale behandeling willen, zodat kunt u in dit geval verstrekken `SpecificLinkRewriterProvider` waarvoor de `shouldRewrite()` Deze methode retourneert alleen true voor bepaalde Experience Fragment-variaties. Controleer of `SpecificLinkRewriterProvider` wordt gekozen om die Variaties van het Fragment van de Ervaring te behandelen, moet het in zijn terugkeren `getPriority()` methode een hoger getal dan `GenericLinkRewriterProvider.`

@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 48131c5accfe73b83197bd581ed5a22bc4890a56
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1956'
 ht-degree: 1%
 
 ---
@@ -35,7 +35,7 @@ Leer over steun voor de Fragments van de Inhoud in de API van Activa HTTP, een b
 
 De [REST-API voor middelen](/help/assets/mac-api-assets.md) Hiermee kunnen ontwikkelaars voor Adobe Experience Manager inhoud (opgeslagen in AEM) direct via de HTTP-API benaderen via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen).
 
-Met de API kunt u Adobe Experience Manager als een headless CMS (Content Management System) gebruiken door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
+Met de API kunt u Adobe Experience Manager gebruiken als een CMS zonder kop (Content Management System) door Content Services aan te bieden voor een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken.
 
 Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via de HTTP-API wordt aangeboden, vaak in de JSON-indeling.
 
@@ -87,7 +87,7 @@ De HTTP-methode bepaalt de uit te voeren bewerking:
 
 >[!NOTE]
 >
->De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; moet u bijvoorbeeld definiëren dat een map of element moet worden gemaakt met een **POST** verzoek.
+>De parameters request body en/of URL kunnen worden gebruikt om sommige van deze bewerkingen te configureren; definieer bijvoorbeeld dat een map of een element moet worden gemaakt door een **POST** verzoek.
 
 De exacte indeling van ondersteunde aanvragen wordt gedefinieerd in het dialoogvenster [API-naslag](/help/assets/assets-api-content-fragments.md#api-reference) documentatie.
 
@@ -121,9 +121,9 @@ Dit betekent dat`write`) verzoeken kunnen niet worden gecombineerd tot één enk
   <tr>
    <td>Toegang</td>
    <td><p>Kan rechtstreeks worden benaderd.</p> <p>Gebruikt de <code>/api/assets </code>eindpunt, toegewezen aan <code>/content/dam</code> (in de repository).</p> 
-   <p>Een voorbeeldpad ziet er als volgt uit: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
+   <p>Een voorbeeldpad zou er als volgt uitzien: <code>/api/assets/wknd/en/adventures/cycling-tuscany.json</code></p>
    </td>
-    <td><p>Moet door een AEM component op een AEM pagina worden van verwijzingen voorzien.</p> <p>Gebruikt de <code>.model</code> om de JSON-representatie te maken.</p> <p>Een voorbeeldpad ziet er als volgt uit:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
+    <td><p>Moet door een AEM component op een AEM pagina worden van verwijzingen voorzien.</p> <p>Gebruikt de <code>.model</code> om de JSON-representatie te maken.</p> <p>Een voorbeeldpad zou er als volgt uitzien:<br/> <code>/content/wknd/language-masters/en/adventures/cycling-tuscany.model.json</code></p> 
    </td>
   </tr>
   <tr>
@@ -138,8 +138,8 @@ Dit betekent dat`write`) verzoeken kunnen niet worden gecombineerd tot één enk
   </tr>
   <tr>
    <td>Uitvoer</td>
-   <td>Op JSON gebaseerde SIREN-uitvoer: uitgebreid, maar krachtig. Hiermee kunt u navigeren binnen de inhoud.</td>
-   <td>op JSON gebaseerde eigen output; configureerbaar via Sling Models. Navigeren door de inhoudsstructuur is moeilijk te implementeren (maar niet noodzakelijkerwijs onmogelijk).</td>
+   <td>SIREN-uitvoer gebaseerd op JSON: uitgebreid, maar krachtig. Hiermee kunt u navigeren binnen de inhoud.</td>
+   <td>Op JSON gebaseerde eigen uitvoer; configureerbaar via Sling Models. Navigeren door de inhoudsstructuur is moeilijk te implementeren (maar niet noodzakelijkerwijs onmogelijk).</td>
   </tr>
  </tbody>
 </table>
@@ -165,7 +165,7 @@ Inhoudsfragmenten zijn een specifiek type element, zie [Werken met inhoudsfragme
 Zie voor meer informatie over functies die beschikbaar zijn via de API:
 
 * De [REST-API voor middelen](/help/assets/mac-api-assets.md)
-* [Typen entiteiten](/help/assets/assets-api-content-fragments.md#entity-types), waarbij de kenmerken die specifiek zijn voor elk ondersteund type (voor zover relevant voor inhoudsfragmenten) worden toegelicht
+* [Typen entiteiten](/help/assets/assets-api-content-fragments.md#entity-types), waarbij de specifieke kenmerken van elk ondersteund type (voor zover relevant voor inhoudsfragmenten) worden toegelicht
 
 ### Paginering {#paging}
 
@@ -180,7 +180,7 @@ De reactie zal het pagineren informatie als deel van bevatten `properties` van d
 >
 >Paginering wordt doorgaans toegepast op containerentiteiten (d.w.z. mappen of elementen met uitvoeringen), aangezien deze betrekking hebben op de onderliggende elementen van de aangezochte entiteit.
 
-#### Voorbeeld: Paginering {#example-paging}
+#### Voorbeeld: Pagelen {#example-paging}
 
 `GET /api/assets.json?offset=2&limit=3`
 
@@ -204,7 +204,7 @@ De reactie zal het pagineren informatie als deel van bevatten `properties` van d
 
 Mappen fungeren als containers voor elementen en andere mappen. Ze weerspiegelen de structuur van de AEM-inhoudsopslagplaats.
 
-De REST API van Middelen stelt toegang tot de eigenschappen van een omslag bloot; bijvoorbeeld naam, titel, enz. Elementen worden weergegeven als onderliggende entiteiten van mappen en submappen.
+De REST API voor middelen stelt toegang tot de eigenschappen van een map beschikbaar, bijvoorbeeld de naam, titel, enz. Elementen worden weergegeven als onderliggende entiteiten van mappen en submappen.
 
 >[!NOTE]
 >
@@ -212,7 +212,7 @@ De REST API van Middelen stelt toegang tot de eigenschappen van een omslag bloot
 
 ### Assets {#assets}
 
-Als een element wordt gevraagd, zal de reactie zijn meta-gegevens terugkeren; zoals titel, naam en andere informatie zoals gedefinieerd in het desbetreffende elementschema.
+Als een element wordt aangevraagd, retourneert het antwoord de metagegevens van het element, zoals de titel, de naam en andere informatie, zoals gedefinieerd in het desbetreffende elementschema.
 
 De binaire gegevens van een element worden blootgesteld als een verbinding SIREN van type `content`.
 
@@ -233,9 +233,9 @@ Inhoudsfragmenten:
 
 * Wordt ook als atomisch beschouwd, d.w.z. de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment ten opzichte van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
 
-#### Inhoudsmodellen en Inhoudsfragmenten {#content-models-and-content-fragments}
+#### Inhoudsmodellen en inhoudsfragmenten {#content-models-and-content-fragments}
 
-De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom *consument* moet op de hoogte zijn van het model van een fragment (ten minste minimaal), hoewel de meeste informatie kan worden afgeleid uit de lading; als gegevenstypen, enz. maken deel uit van de definitie.
+De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom *consument* moet op de hoogte zijn van het model van een fragment (minimaal), hoewel de meeste informatie kan worden afgeleid van de lading; als gegevenstypen, enz. maken deel uit van de definitie.
 
 Als u een nieuw inhoudsfragment wilt maken, moet u het pad (interne gegevensopslagruimte) van het model opgeven.
 
@@ -256,7 +256,7 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 >[!CAUTION]
 >
->De configuratie van de verzender op AEM instanties zou toegang tot kunnen blokkeren `/api`.
+>De dispatcherconfiguratie op AEM instanties zou toegang tot kunnen blokkeren `/api`.
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ De reactie is geserialiseerd met JSON met de inhoud gestructureerd zoals in het 
 Er zijn twee typen leesbewerkingen mogelijk:
 
 * Als u een specifiek inhoudsfragment leest per pad, wordt hiermee de JSON-representatie van het inhoudsfragment geretourneerd.
-* Een map met inhoudsfragmenten lezen op pad: Hiermee worden de JSON-representaties van alle inhoudsfragmenten in de map geretourneerd.
+* Een map met inhoudsfragmenten lezen op pad: hiermee worden de JSON-representaties van alle inhoudsfragmenten in de map geretourneerd.
 
 ### Maken {#create}
 
@@ -305,7 +305,7 @@ Gebruik gebeurt via:
 
 ## Beperkingen {#limitations}
 
-Er zijn enkele beperkingen:
+Er zijn een paar beperkingen:
 
 * **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een nieuw inhoudsfragment te kunnen maken of een bestaand inhoudsfragment bij te werken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
 * **Verwijzingen worden genegeerd**. Er wordt momenteel niet gecontroleerd of naar een bestaand inhoudsfragment wordt verwezen. Daarom kan het verwijderen van een inhoudsfragment bijvoorbeeld resulteren in problemen op een pagina die een verwijzing naar het verwijderde inhoudsfragment bevat.

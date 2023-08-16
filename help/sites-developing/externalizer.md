@@ -1,22 +1,22 @@
 ---
 title: URL's extern maken
-description: De Externalzer is de dienst OSGI die u toestaat om een middelweg in een externe en absolute URL programmatically om te zetten
+description: De Externalzer is een dienst OSGI die u programmatically een middelweg in een externe en absolute URL laat omzetten
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
 
 # URL&#39;s extern maken{#externalizing-urls}
 
-In Adobe Experience Manager (AEM) **ExternalAlizer** is de dienst OSGI die u toestaat om een middelweg programmatically om te zetten (bijvoorbeeld `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
+In Adobe Experience Manager (AEM) **ExternalAlizer** is de dienst OSGI die u programmatically een middelweg laat omzetten (bijvoorbeeld `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te bevestigen met een vooraf geconfigureerde DNS.
 
 Omdat een instantie zijn uiterlijk zichtbare URL niet kan kennen als het achter een Weblaag loopt, en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
@@ -24,11 +24,11 @@ Deze pagina verklaart hoe te om te vormen **ExternalAlizer** en hoe deze te gebr
 
 ## De service ExternalAlizer configureren {#configuring-the-externalizer-service}
 
-De **ExternalAlizer** De dienst staat u toe om veelvoudige domeinen centraal te bepalen die aan programmatically prefixmiddelwegen kunnen worden gebruikt. Elk domein wordt geïdentificeerd door een unieke naam die wordt gebruikt om programmatically naar het domein te verwijzen.
+De **ExternalAlizer** De dienst laat u veelvoudige domeinen centraal bepalen die aan programmatically prefixmiddelwegen kunnen worden gebruikt. Elk domein wordt geïdentificeerd door een unieke naam die wordt gebruikt om programmatically naar het domein te verwijzen.
 
 Een domeintoewijzing definiëren voor de **ExternalAlizer** service:
 
-1. Navigeer naar de configuratiemanager via **Gereedschappen** vervolgens **Webconsole** of voer in:
+1. Navigeer naar configuratiebeheer via **Gereedschappen** vervolgens **Webconsole** of voer in:
 
    `https://<host>:<port>/system/console/configMgr`
 
@@ -44,7 +44,7 @@ Een domeintoewijzing definiëren voor de **ExternalAlizer** service:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`
 
-   Waar:
+   Waarbij:
 
    * **regeling** is http of https, maar kan ook ftp zijn, enzovoort.
 
@@ -71,7 +71,7 @@ Een domeintoewijzing definiëren voor de **ExternalAlizer** service:
 
 >[!NOTE]
 >
->Adobe raadt u aan [de configuratie toevoegen aan de repository](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
+>Adobe beveelt aan [de configuratie toevoegen aan de repository](/help/sites-deploying/configuring.md#addinganewconfigurationtotherepository).
 
 ### De service ExternalAlizer gebruiken {#using-the-externalizer-service}
 

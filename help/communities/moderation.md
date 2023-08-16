@@ -12,9 +12,9 @@ discoiquuid: 404582ab-bb4c-4775-9ae3-17356d376dca
 docset: aem65
 role: Admin
 exl-id: 829da16a-4083-43c1-857d-f2666b363bfc
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2040'
+source-wordcount: '2039'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 In AEM Communities, bulkgoederen [modernisering van de communautaire inhoud](/help/communities/moderate-ugc.md) is mogelijk van zowel auteur als publiceer milieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen).
 
-Beheerders en moderatoren van de gemeenschap kunnen ook [contextmatiging](/help/communities/in-context.md) in de publicatieomgeving.
+Beheerders en gemeenschapsmoderatoren kunnen ook [contextmatiging](/help/communities/in-context.md) in de publicatieomgeving.
 
 Een kenmerk van alles [communitysites](/help/communities/sites-console.md) is een `Administration` menu-item beschikbaar voor gebruikers die zich aanmelden met beheerdersrechten. De `Administration` de verbinding verleent toegang tot de console van de Moderatie.
 
@@ -50,7 +50,7 @@ Door de verbinding van het Beleid te selecteren, verschijnt de console van de Mo
 
 ![moderatie-console-publish](assets/moderation-console-publish.png)
 
-## Toegang tot ontwerpomgeving {#author-environment-access}
+## Toegang tot auteursomgeving {#author-environment-access}
 
 In het auteursmilieu, om de console van de Moderatie te bereiken
 
@@ -70,7 +70,7 @@ Afgezien van de linkse navigatiespoor (die bij auteur, maar niet bij publicatie 
 
 * **[Bovenste navigatiebalk](#top-navigation-bar)**
 * **[Werkbalk](#toolbar)**
-* **[Inhoudsgebied](#content-area)**
+* **[Inhoud](#content-area)**
 
 ### Bovenste navigatiebalk {#top-navigation-bar}
 
@@ -118,7 +118,7 @@ Met het pictogram van het zijpaneel wordt de filterrail geopend. De filterrail, 
 
 De filters binnen elke categorie zijn **OF**&#39;d bij elkaar en de filters in verschillende categorieën zijn **EN**&#39;Samen.
 
-Als u bijvoorbeeld beide incheckt **Vraag** en **Antwoord**, ziet u inhoud die een van de **Vraag** *of* een **Antwoord**.
+Als u bijvoorbeeld beide controleert **Vraag** en **Antwoord**, ziet u inhoud die een van de **Vraag** *of* een **Antwoord**.
 
 Als u echter **Vraag** en **In behandeling**, ziet u alleen inhoud die een **Vraag** en is **In behandeling**.
 
@@ -162,7 +162,7 @@ Het Type van inhoud beperkt referenced UGC getoond aan posten van het geselectee
 * **Forum-onderwerp**
 * **Forum Reageren**
 * **Vraag QnA**
-* **Antwoord vragen**
+* **Antwoord kwaliteitscontrole**
 * **Blogartikel**
 * **Blogopmerking**
 * **Kalendergebeurtenis**
@@ -186,8 +186,9 @@ Aanvullende bronnen toevoegen waarop moet worden gefilterd:
 
    * Als u bijvoorbeeld wilt filteren op opgenomen stemcomponenten, voert u het volgende in:
 
-      `Voting=social/tally/components/hbs/voting`
-   ![extra-contenttype](assets/additional-contenttype.png)
+     `Voting=social/tally/components/hbs/voting`
+
+  ![extra-contenttype](assets/additional-contenttype.png)
 
 * Selecteer Opslaan.
 * Vernieuw de Gemeenschappen - de console van de Moderatie.
@@ -242,11 +243,11 @@ De [voorbeeldproject](https://github.com/Adobe-Marketing-Cloud/aem-communities-e
 
 Het voorbeeld voor het filter Codes installeren:
 
-1. Pakketbeheer openen op AEM-auteur (`https://[aem-author]:4502/crx/packmgr/index.jsp`) en AEM-publicatie (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
+1. Pakketbeheer openen op AEM auteur (`https://[aem-author]:4502/crx/packmgr/index.jsp`) en AEM publiceren (`https://[aem-publish]:4503/crx/packmgr/index.jsp`).
 1. Het pakket maken `com.adobe.social.sample.moderation.filter.ui.apps-1.0-SNAPSHOT.zip` uit Github-code, en installeer en schakel dezelfde optie in.
-1. De bundelconsole openen op AEM Author ( `https://[aem-author]:4502/system/console/bundles`) en AEM-publicatie ( `https://[aem-publish]:4503/system/console/bundles`).
-1. Het pakket maken (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) van Github, installeren en inschakelen.
-1. Ga naar **/apps/social/moderation/facets** knooppunt op AEM-auteur (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) en AEM-publicatie (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
+1. De bundelconsole openen op AEM auteur ( `https://[aem-author]:4502/system/console/bundles`) en AEM publiceren ( `https://[aem-publish]:4503/system/console/bundles`).
+1. Het pakket samenstellen (`[com](https://sample-moderation-filter.com/).adobe.social.sample.moderation.filter.core-1.0-SNAPSHOT.jar`) van Github, installeren en inschakelen.
+1. Ga naar **/apps/social/moderation/facets** knooppunt op AEM auteur (`https://[aem-author]:4502/crx/de/index.jsp#/apps/social/moderation/facets`) en AEM (`https://[aem-publish]:4502/crx/de/index.jsp#/apps/social/moderation/facets`).
 1. Een technische gebruiker toevoegen **gemeenschappen-nutsbedrijven-lezer** with `jcr:read` machtigingen.
 
 Aangepaste filters beschikbaar maken op bestaande communautaire sites:
@@ -265,7 +266,7 @@ Aangepaste filters beschikbaar maken op bestaande communautaire sites:
 
 ## Moderatiehandelingen {#moderation-actions}
 
-[Moderniseringsacties](/help/communities/moderate-ugc.md#moderation-actions) kan worden uitgevoerd op een of meer selecties die in het inhoudsgebied zijn gemaakt of wanneer u de details van de inhoud weergeeft.
+[Moderniseringsacties](/help/communities/moderate-ugc.md#moderation-actions) kan worden uitgevoerd op een of meer selecties die in het inhoudsgebied zijn gemaakt of wanneer u de inhoudsdetails weergeeft.
 
 Klik in het inhoudsgebied op Selecteren (![selecticon](assets/selecticon.png)) op een post, die verschijnt als u de muisaanwijzer (bureaublad) op het desbetreffende artikel plaatst of met een vinger op het betreffende artikel (mobiel) drukt. Op deze manier opent u de multiselectiemodus en kunt u nu de volgende posts selecteren die bulksgewijs moeten worden gemodereerd door er gewoon op te klikken. Gebruik de knoppen op de werkbalk om moderatiehandelingen uit te voeren op de geselecteerde posten. Alle acties worden ter bevestiging voorgelegd.
 
@@ -287,7 +288,7 @@ De moderniseringsacties die op meerdere posten kunnen worden uitgevoerd zijn:
 
 De pictogrammen voor deze handelingen worden alleen op de werkbalk weergegeven als er meerdere posts zijn geselecteerd.
 
-![paars](assets/bulkmoderate.png)
+![kokmatig](assets/bulkmoderate.png)
 
 ### Eén artikel moderniseren {#moderating-a-single-post}
 
@@ -295,7 +296,7 @@ In de enkelvoudige selectiemodus is het mogelijk:
 
 * Geef gebruikersgegevens weer door de gebruikersnaam te selecteren.
 * Klik op de link naar het bericht in de context om het bericht te bekijken.
-* [Reageren](#reply)
+* [Antwoord](#reply)
 * [Toestaan](#allow)
 * [Weigeren](#deny)
 * [Verwijderen](#delete)
@@ -308,13 +309,13 @@ De tekst van de post op de kaartweergave boven de mageractiepictogrammen is de t
 * Indien de Commissie antwoord heeft, en zo ja, voorafgegaan door het aantal antwoorden.
 * Als het is gemarkeerd.
 * Indien goedgekeurd.
-* Toen de UGC werd geplaatst.
+* Toen de UGC werd gepost.
 
 ![singleElectmode](assets/singleselectmode.png)
 
-#### Reageren {#reply}
+#### Antwoord {#reply}
 
-![antwoord](assets/reply.png)
+![repliek](assets/reply.png)
 
 Wanneer het werken met één enkele post, zal een pictogram van het Antwoord verschijnen als het type UGC antwoorden steunt en wordt gevormd om antwoorden toe te staan.
 
@@ -366,7 +367,7 @@ Bijvoorbeeld:
 
 Als u met één artikel werkt, kunt u meer details bekijken door de UGC in de detailmodus te openen.
 
-Houd hiertoe de muisaanwijzer boven de post om de `View Detail` en selecteert u deze om een deelvenster weer te geven met meer details over de advertentie.
+Als u dit wilt doen, plaatst u de muisaanwijzer op de post om de `View Detail` en selecteert u deze om een deelvenster weer te geven met meer details over de advertentie.
 
 Als u wilt terugkeren naar de weergave van het inhoudsgebied van meerdere UGC-posten, selecteert u de X in de rechterbovenhoek van het deelvenster met weergavedetails.
 

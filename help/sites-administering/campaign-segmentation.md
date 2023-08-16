@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1140'
+source-wordcount: '1136'
 ht-degree: 0%
 
 ---
@@ -31,24 +31,24 @@ Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstel
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud blijft behouden in het dialoogvenster [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) van de website. De hier gedefinieerde taserpagina&#39;s kunnen als taseralinea&#39;s op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
-AEM kunt u eenvoudig segmenten, trasters en campagnes maken en bijwerken. Het staat u ook toe om de resultaten van uw definities te verifiëren.
+Met AEM kunt u eenvoudig segmenten, theers en campagnes maken en bijwerken. Ook kunt u de resultaten van uw definities controleren.
 
-De **Segmenteditor** Hiermee kunt u eenvoudig een segment definiëren:
+De **Segment-editor** Hiermee kunt u eenvoudig een segment definiëren:
 
 ![Het venster Segmenteditor](assets/segmenteditor.png)
 
-U kunt **Bewerken** elk segment dat een **Titel**, **Beschrijving** en **Verhogen** factor. Met de hulpwerkbalk kunt u toevoegen **EN** en **OF** containers voor het definiëren van de **Segmentlogica** Voeg vervolgens de vereiste **Segmentsporen** om de selectiecriteria te definiëren.
+U kunt **Bewerken** elk segment dat een **Titel**, **Beschrijving** en **Verhogen** factor. Met de hulpwerkbalk kunt u toevoegen **EN** en **OF** containers om de **Segmentlogica** Voeg vervolgens de vereiste **Segmentsporen** om de selectiecriteria te definiëren.
 
-## Verhoging factor {#boost-factor}
+## Verhoging van factor {#boost-factor}
 
-Elk segment heeft een **Verhogen** parameter die als wegingsfactor wordt gebruikt; een hoger getal geeft aan dat het segment wordt geselecteerd in de voorkeur boven een segment met een lager getal.
+Elk segment heeft een **Verhogen** parameter die als wegingsfactor wordt gebruikt; een hoger getal geeft aan dat het segment bij voorkeur wordt geselecteerd in plaats van een segment met een lager getal.
 
 * Minimumwaarde: `0`
 * Maximumwaarde: `1000000`
 
 ## Segmentlogica {#segment-logic}
 
-De volgende logische containers zijn beschikbaar uit-van-de-doos en staan u toe om de logica van uw segmentselectie te construeren. Ze kunnen van het hulpwerktuig naar de editor worden gesleept:
+De volgende logische containers zijn beschikbaar uit-van-de-doos en laten u de logica van uw segmentselectie construeren. Ze kunnen van het hulpwerktuig naar de editor worden gesleept:
 
 <table>
  <tbody>
@@ -65,7 +65,7 @@ De volgende logische containers zijn beschikbaar uit-van-de-doos en staan u toe 
 
 ## Segmentsporen {#segment-traits}
 
-De volgende segmentkenmerken zijn beschikbaar buiten de box; ze kunnen van de hulpwerkbalk naar de editor worden gesleept :
+De volgende segmentkenmerken zijn beschikbaar buiten het vak; ze kunnen van het hulpstuk naar de editor worden gesleept:
 
 <table>
  <tbody>
@@ -114,7 +114,7 @@ Wanneer de volledige verklaring aan waar evalueert dan heeft dit segment opgelos
 
 >[!CAUTION]
 >
->De segmentredacteur controleert geen cirkelverwijzingen. Zo verwijst segment A bijvoorbeeld naar een ander segment B, dat op zijn beurt weer naar segment A verwijst. U moet ervoor zorgen dat de segmenten geen cirkelverwijzingen bevatten.
+>De segmentredacteur controleert geen cirkelverwijzingen. Zo verwijst segment A bijvoorbeeld naar een ander segment B, dat weer naar segment A verwijst. U moet ervoor zorgen dat de segmenten geen cirkelverwijzingen bevatten.
 
 >[!NOTE]
 >
@@ -133,8 +133,8 @@ Het nieuwe segment definiëren:
 
    ![De eerste stap van het creëren van een nieuw segment in de Redacteur van het Segment](assets/screen_shot_2012-02-02at101726am.png)
 
-1. Gebruik de zijbalk of het contextmenu (klik met de rechtermuisknop en selecteer vervolgens **Nieuw...** om het venster van de Component van het Tussenvoegsel Nieuwe te openen) om het segmentspoor te vinden u wenst. Sleep het vervolgens naar de **Segmenteditor** wordt standaard weergegeven **EN** container.
-1. Dubbelklik op de nieuwe eigenschap om de specifieke parameters te bewerken; bijvoorbeeld de muispositie:
+1. Gebruik de zijbalk of het contextmenu (klik met de rechtermuisknop en selecteer vervolgens **Nieuw...** om het venster van de Component van het Tussenvoegsel Nieuwe te openen) om het segmentspoor te vinden u wenst. Sleep het vervolgens naar de **Segment-editor** wordt standaard weergegeven **EN** container.
+1. Dubbelklik op de nieuwe eigenschap om de specifieke parameters te bewerken, bijvoorbeeld de muispositie:
 
    ![Een component bewerken in de Segmenteditor](assets/screen_shot_2012-02-02at103135am.png)
 
@@ -166,7 +166,7 @@ Aangezien de belangrijkste exploitant OF is moet u met beginnen **OF Container**
 
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 
-Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van worden getest **[Clientcontext](/help/sites-administering/client-context.md)**:
+Zodra het segment is bepaald, kunnen de potentiële resultaten met behulp van worden getest **[Clientcontext](/help/sites-administering/client-context.md)**:
 
 1. Selecteer het segment dat u wilt testen.
 1. Druk **[Ctrl-Alt-C](/help/sites-authoring/page-authoring.md#keyboardshortcuts)** om de **[Clientcontext](/help/sites-administering/client-context.md)**, waarin de verzamelde gegevens worden weergegeven. Voor testdoeleinden kunt u **Bewerken** bepaalde waarden, of **Laden** een ander profiel om de impact daar te zien.

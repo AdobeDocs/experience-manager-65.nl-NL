@@ -11,16 +11,16 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
 
 # FormulierBridge integreren met aangepaste portal voor HTML5-formulieren{#integrating-form-bridge-with-custom-portal-for-html-forms}
 
-FormBridge is een HTML5-API voor formulierbridge waarmee u kunt werken met een formulier. Zie voor de naslaggids voor de FormBridge-API [Referentie voor FormBridge-API](/help/forms/using/form-bridge-apis.md).
+FormBridge is een HTML5-API voor formulierbridge waarmee u met een formulier kunt communiceren. Zie voor de naslaggids voor de FormBridge-API [Referentie voor FormBridge-API](/help/forms/using/form-bridge-apis.md).
 
 U kunt de FormBridge-API gebruiken om de waarden van formuliervelden op de pagina HTML op te halen of in te stellen en het formulier te verzenden. U kunt bijvoorbeeld de API gebruiken om een wizards-achtige ervaring op te bouwen.
 
@@ -80,7 +80,11 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    >
    >
    >De &lt;div id=&quot;rightdiv&quot;> tag op **lijn 18** Bevat het HTML-fragment van het XFA-formulier.
+   >
+   >
    De pagina wordt opgemaakt in twee containers: **left** en **right**. De juiste container heeft het formulier. De linkercontainer heeft twee invoervelden en een deel van de externe HTML-pagina.
+   >
+   >
    De volgende schermafbeelding laat zien hoe het formulier in een browser wordt weergegeven.
 
    ![portaal](assets/portal.jpg)
@@ -93,7 +97,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
 
    Als u bijvoorbeeld de opdracht **EmployeeName** de waarden in de velden gebruiken **Voornaam** en **Achternaam**, de **window.formBridge.setFieldValue** functie.
 
-   Op dezelfde manier kunt u de waarde lezen door te roepen **window.formBridge.getFieldValue** API.
+   Op dezelfde manier kunt u de waarde lezen door **window.formBridge.getFieldValue** API.
 
    ```javascript
    $(function() {

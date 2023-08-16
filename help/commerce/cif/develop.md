@@ -7,14 +7,14 @@ doc-type: tutorial
 kt: 5826
 thumbnail: 39476.jpg
 exl-id: 48479725-8b52-4ff2-a599-d20958b26ee6
-source-git-commit: 78359fb8ecbcc0227ab5a3910175aed73d823902
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
 
 ---
 
-# Ontwikkeling AEM Handel {#develop}
+# Ontwikkeling van AEM handel {#develop}
 
 Voor de ontwikkeling van AEM handelsprojecten op basis van het kader voor de integratie van de handel (CIF) voor AEM gelden dezelfde regels en beste praktijken als voor andere AEM projecten. Controleer eerst deze:
 
@@ -57,7 +57,7 @@ De CIF-invoegtoepassing kan worden gedownload van de [Software Distribution Port
 
 Voor de lokale ontwikkeling van CIF-projecten met behulp van de AEM en de CIF-invoegtoepassing:
 
-1. Krijg AEM 6.5 versie en installeer AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 wordt vereist, nochtans adviseren wij installerend het laatste beschikbare de dienstpak.
+1. Krijg AEM 6.5 versie en installeer AEM 6.5 Service Pack. AEM 6.5 Service Pack 7 is vereist, nochtans adviseert de Adobe installerend het laatste beschikbare de dienstpak.
 
 1. Pak de AEM .jar uit om de `crx-quickstart` map, uitvoeren:
 
@@ -89,7 +89,7 @@ De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) is het
 >
 >Gebruiken [Projectarchetype 25 of hoger AEM](https://github.com/adobe/aem-project-archetype/releases) om het project te genereren.
 
-Zie AEM projectarchetype [gebruiksaanwijzingen](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een AEM project te produceren. Als u CIF wilt opnemen in het project, gebruikt u de `includeCommerce` optie.
+Zie AEM projectarchetype [gebruiksaanwijzingen](https://github.com/adobe/aem-project-archetype#usage) op hoe te om een AEM project te produceren. Als u CIF wilt opnemen in het project, gebruikt u de `includeCommerce` -optie.
 
 Bijvoorbeeld:
 

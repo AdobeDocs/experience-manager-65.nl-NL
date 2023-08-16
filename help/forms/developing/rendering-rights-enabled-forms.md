@@ -1,5 +1,5 @@
 ---
-title: Forms met renderrechten
+title: Forms met rechten voor renderen
 seo-title: Rendering Rights-Enabled Forms
 description: Gebruik de Forms-service om formulieren te genereren waarop gebruiksrechten zijn toegepast. U kunt formulieren met ingeschakelde rechten weergeven met de API van Java API en de webservice.
 seo-description: Use the Forms service to render forms that have usage rights applied to them. You can render rights-enabled forms using the Java API and Web Service API.
@@ -12,14 +12,14 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1459'
 ht-degree: 0%
 
 ---
 
-# Forms met renderrechten {#rendering-rights-enabled-forms}
+# Forms met rechten voor renderen {#rendering-rights-enabled-forms}
 
 De Forms-service kan formulieren weergeven waarop gebruiksrechten zijn toegepast. Gebruiksrechten hebben betrekking op functionaliteit die standaard beschikbaar is in Acrobat, maar niet in Adobe Reader, zoals de mogelijkheid om opmerkingen toe te voegen aan een formulier of formuliervelden in te vullen en het formulier op te slaan. Forms waarop gebruiksrechten zijn toegepast, worden formulieren genoemd die geschikt zijn voor rechten. Een gebruiker die een formulier met ingeschakelde rechten opent in Adobe Reader, kan bewerkingen uitvoeren die zijn ingeschakeld voor dat formulier.
 
@@ -27,7 +27,7 @@ Als u gebruiksrechten wilt toepassen op een formulier, moet de Acrobat Reader DC
 
 >[!NOTE]
 >
->Als u een formulier wilt genereren dat gebruiksrechten bevat, moet u een XDP-bestand als invoer gebruiken, niet als een PDF-bestand. Als u een PDF-bestand als invoer gebruikt, wordt het formulier nog steeds gegenereerd; het is echter geen formulier waarvoor rechten gelden.
+>Als u een formulier wilt genereren dat gebruiksrechten bevat, moet u een XDP-bestand als invoer gebruiken, niet als een PDF-bestand. Als u een PDF-bestand als invoer gebruikt, wordt het formulier nog steeds gegenereerd. Het is echter geen formulier waarvoor rechten zijn ingeschakeld.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Als u gebruiksrechten wilt toepassen op een formulier, moet de Acrobat Reader DC
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -98,17 +98,17 @@ Een formulier met ingeschakelde rechten weergeven met de Forms API (Java):
 1. Een Forms Client API-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Opties voor het uitvoeren van gebruiksrechten instellen
 
    * Een `ReaderExtensionSpec` object met behulp van de constructor.
    * Geef de alias van de referentie op door de `ReaderExtensionSpec` object `setReCredentialAlias` en geeft u een tekenreekswaarde op die de aliaswaarde vertegenwoordigt.
-   * Plaats elk gebruiksrecht door de overeenkomstige methode aan te halen die tot het behoort `ReaderExtensionSpec` object. U kunt echter alleen een gebruiksrecht instellen als de referentie die u gebruikt dit toestaat. U kunt dus geen gebruiksrecht instellen als de referentie het instellen niet toestaat. Bijvoorbeeld. om het gebruiksrecht in te stellen waarmee een gebruiker formuliervelden kan invullen en het formulier kan opslaan, roept u de `ReaderExtensionSpec` object `setReFillIn` methode en doorgeven `true`.
+   * Plaats elk gebruiksrecht door de overeenkomstige methode aan te halen die tot het behoort `ReaderExtensionSpec` object. U kunt echter alleen een gebruiksrecht instellen als de referentie die u gebruikt dat toestaat. U kunt dus geen gebruiksrecht instellen als de referentie dit niet toestaat. Bijvoorbeeld. om het gebruiksrecht in te stellen waarmee een gebruiker formuliervelden kan invullen en het formulier kan opslaan, roept u de `ReaderExtensionSpec` object `setReFillIn` methode en doorgeven `true`.
 
    >[!NOTE]
    >
-   >Het is niet nodig een beroep te doen op `ReaderExtensionSpec` object `setReCredentialPassword` methode. Deze methode wordt niet gebruikt door de Forms-service.
+   >Het is niet nodig om de `ReaderExtensionSpec` object `setReCredentialPassword` methode. Deze methode wordt niet gebruikt door de Forms-service.
 
 1. Een formulier met ingeschakelde rechten weergeven
 
@@ -126,7 +126,7 @@ Een formulier met ingeschakelde rechten weergeven met de Forms API (Java):
 
    * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
    * Maak een bytearray die deze met de formuliergegevensstroom vult door de `InputStream` object `read` en de bytearray doorgeven als een argument.
@@ -134,7 +134,7 @@ Een formulier met ingeschakelde rechten weergeven met de Forms API (Java):
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een formulier waarvoor rechten zijn ingeschakeld weergeven met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
+[Snel starten (SOAP-modus): Een formulier waarvoor rechten zijn ingeschakeld, weergeven met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-rights-enabled-form-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -157,7 +157,7 @@ Een formulier met ingeschakelde rechten weergeven met de Forms API (webservice):
 
    * Een `ReaderExtensionSpec` object met behulp van de constructor.
    * Geef de alias van de referentie op door de `ReaderExtensionSpec` object `setReCredentialAlias` en geeft u een tekenreekswaarde op die de aliaswaarde vertegenwoordigt.
-   * Plaats elk gebruiksrecht door de overeenkomstige methode aan te halen die tot het behoort `ReaderExtensionSpec` object. U kunt echter alleen een gebruiksrecht instellen als de referentie die u gebruikt dit toestaat. U kunt dus geen gebruiksrecht instellen als de referentie het instellen niet toestaat. Als u het gebruiksrecht wilt instellen waarmee een gebruiker formuliervelden kan invullen en het formulier kan opslaan, roept u het `ReaderExtensionSpec` object `setReFillIn` methode en doorgeven `true`.
+   * Plaats elk gebruiksrecht door de overeenkomstige methode aan te halen die tot het behoort `ReaderExtensionSpec` object. U kunt echter alleen een gebruiksrecht instellen als de referentie die u gebruikt dat toestaat. U kunt dus geen gebruiksrecht instellen als de referentie dit niet toestaat. Als u het gebruiksrecht wilt instellen waarmee een gebruiker formuliervelden kan invullen en het formulier kan opslaan, roept u het `ReaderExtensionSpec` object `setReFillIn` methode en doorgeven `true`.
 
 1. Een formulier met ingeschakelde rechten weergeven
 
@@ -175,13 +175,13 @@ Een formulier met ingeschakelde rechten weergeven met de Forms API (webservice):
 
    * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `BLOB` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
    * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
 **Zie ook**
 
-[Forms met renderrechten](#rendering-rights-enabled-forms)
+[Forms met rechten voor renderen](#rendering-rights-enabled-forms)
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)

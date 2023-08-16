@@ -13,9 +13,9 @@ docset: aem65
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: cae9890cd61d6d894f34c7299e2e15ee70e14ac9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '7210'
+source-wordcount: '7198'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >De meeste Componenten van de Stichting zijn nu verouderd met AEM 6.5. Zie de [releaseopmerkingen](/help/release-notes/deprecated-removed-features.md) voor nadere informatie.
 >
->Adobe raadt aan de modernere en uitbreidbare [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in AEM projecten. Deze componenten maken deel uit van de [Wij.Handelsversie van voorbeeldinhoud](/help/sites-developing/we-retail.md) en kan ook [afzonderlijk geïnstalleerd en gebruikt voor ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) door uw beheerder.
+>Adobe beveelt aan de modernere en uitbreidbare [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in AEM projecten. Deze componenten maken deel uit van de [Wij.Handelsversie van voorbeeldinhoud](/help/sites-developing/we-retail.md) en kan ook [afzonderlijk geïnstalleerd en gebruikt voor ontwikkeling](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/using.html) door uw beheerder.
 >
 >U kunt de [AEM Tools Suite moderniseren](https://opensource.adobe.com/aem-modernize-tools/) om uw op componenten-Gebaseerde plaats van de Stichting aan te passen om de Componenten van de Kern te gebruiken.
 
@@ -53,7 +53,7 @@ U kunt een component selecteren en naar de gewenste locatie op de pagina slepen.
 
 Componenten worden gesorteerd op basis van verschillende categorieën, componentgroepen genaamd, waaronder:
 
-* [Algemeen](#general): Omvat basiscomponenten, met inbegrip van tekst, beelden, lijsten, en grafieken.
+* [Algemeen](#general): Bevat basiscomponenten, zoals tekst, afbeeldingen, tabellen en grafieken.
 * [Kolommen](#columns): Bevat componenten die nodig zijn voor het ordenen van de lay-out van de inhoud.
 * [Formulier](#formgroup): Bevat alle componenten die nodig zijn om een formulier te maken.
 
@@ -65,7 +65,7 @@ De algemene componenten zijn de basiscomponenten die u gebruikt om inhoud te mak
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 U kunt een koppeling definiëren met een titel en beschrijving.
 
@@ -75,14 +75,14 @@ U kunt een koppeling definiëren met een titel en beschrijving.
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Image Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Image Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) in plaats daarvan.
 
 De stichtingscomponent Adaptive Image genereert afbeeldingen die zo zijn geschaald dat ze passen in het venster waarin de webpagina wordt geopend. Om de component te gebruiken, verstrekt u een beeldmiddel of van het dossiersysteem of DAM. Wanneer de webpagina wordt geopend, downloadt de webbrowser een kopie van de afbeelding waarvan het formaat is gewijzigd, zodat deze geschikt is voor het huidige venster.
 
 De volgende kenmerken kunnen de grootte van het venster bepalen:
 
-* Apparaatscherm: Op mobiele apparaten worden meestal webpagina&#39;s weergegeven, zodat deze zich over het hele scherm uitstrekken.
-* Venstergrootte van webbrowser: Gebruikers van laptop- en desktopcomputers kunnen het formaat van vensters in webbrowsers wijzigen.
+* Apparaatscherm: mobiele apparaten geven meestal webpagina&#39;s weer, zodat deze zich over het hele scherm uitstrekken.
+* Venstergrootte van de webbrowser: gebruikers van laptop- en desktopcomputers kunnen het formaat van vensters van webbrowsers wijzigen.
 
 De component genereert bijvoorbeeld een kleine afbeelding wanneer de webpagina op een mobiele telefoon wordt geopend en een afbeelding van middelgrote grootte wanneer deze op een tablet wordt geopend. Op een laptop maakt en levert de component een grote afbeelding wanneer de pagina wordt geopend in een gemaximaliseerde webbrowser. Wanneer de grootte van de webbrowser wordt aangepast aan een gedeelte van het scherm, past de component zich aan door een kleinere afbeelding te leveren en wordt de weergave vernieuwd.
 
@@ -120,7 +120,7 @@ Wanneer de afbeelding een JPEG-afbeelding is, kan de grootte van de viewport ook
 
 #### Eigenschappen {#properties}
 
-In het dialoogvenster kunt u eigenschappen bewerken voor uw instantie van de component Adaptief beeld, die veel gemeen hebben met de component Image waarop deze is gebaseerd. De eigenschappen zijn beschikbaar op twee tabbladen:
+In het dialoogvenster kunt u eigenschappen bewerken voor uw instantie van de component Adaptieve afbeelding, die vaak worden gebruikt voor de component Image waarop deze is gebaseerd. De eigenschappen zijn beschikbaar op twee tabbladen:
 
 * **Afbeelding**
 
@@ -152,18 +152,18 @@ De component Adaptive Image gebruikt deze eigenschap niet.
 
 #### De component Adaptieve afbeelding uitbreiden {#extending-the-adaptive-image-component}
 
-Voor informatie over het aanpassen van de component Adaptief beeld raadpleegt u [De adaptieve afbeeldingscomponent begrijpen](/help/sites-developing/responsive.md#using-adaptive-images).
+Voor informatie over het aanpassen van de component Adaptief beeld raadpleegt u [De component Adaptieve afbeelding](/help/sites-developing/responsive.md#using-adaptive-images).
 
 ### Carousel {#carousel}
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Carousel Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Carousel Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) in plaats daarvan.
 
 Met de Carousel-component kunt u afbeeldingen weergeven die aan afzonderlijke pagina&#39;s zijn gekoppeld:
 
 * één voor één
-* voor korte tijd
+* voor een korte tijd
 * in een volgorde die u opgeeft
 * met een door u opgegeven tijdvertraging
 
@@ -178,7 +178,7 @@ Hier geeft u op hoe de carrousel werkt:
 
    * Afspeelsnelheid De tijd in milliseconden voordat de volgende dia wordt weergegeven.
    * Overgangstijd De tijd in milliseconden voor de overgang tussen twee dia&#39;s.
-   * Besturingsstijl Er zijn verschillende opties beschikbaar in een keuzemenu. Bijvoorbeeld, Vorige/Volgende Knopen, Hoogste - juiste Schakelaars.
+   * Hiermee regelt u de stijl Diverse opties in een keuzemenu, bijvoorbeeld Vorige/Volgende knoppen, Linksboven geschakeld.
 
 * **Lijst**
 
@@ -186,7 +186,7 @@ Hier geeft u op hoe de carrousel werkt:
 
    * **Lijst samenstellen met**
 Er zijn verschillende manieren om een paginalijst samen te stellen: Onderliggende pagina&#39;s, Vaste lijst, Zoeken of Geavanceerd zoeken (allemaal hieronder beschreven).
-Welke methode u ook kiest, aan de pagina&#39;s die u in de lijst opneemt, moet al een afbeelding zijn gekoppeld. Deze afbeelding wordt weergegeven in de carrousel. Als er geen afbeelding is voor een bepaalde pagina onder de Pagina-eigenschappen van die pagina, moet u een afbeelding aan de pagina koppelen voordat u begint. Als u dat niet doet, wordt in de carrousel een veelvuldig lege pagina weergegeven. Zie [Pagina-eigenschappen bewerken](/help/sites-authoring/editing-page-properties.md).
+Welke methode u ook kiest, aan de pagina&#39;s die u in de lijst opneemt, moet al een afbeelding zijn gekoppeld. Deze afbeelding wordt weergegeven in de carrousel. Als er geen afbeelding is voor een bepaalde pagina onder de Pagina-eigenschappen van die pagina, moet u een afbeelding aan de pagina koppelen voordat u begint. Als u dat niet doet, geeft de carrousel een veelvuldig lege pagina weer. Zie [Pagina-eigenschappen bewerken](/help/sites-authoring/editing-page-properties.md).
 Afhankelijk van het item dat u kiest, wordt een nieuw deelvenster weergegeven:
 
       * **Opties voor onderliggende pagina&#39;s**
@@ -205,13 +205,13 @@ Selecteer een lijst met pagina&#39;s. Gebruiken `+` om meer items toe te voegen 
 Voer handmatig of met de kiezer een beginpad in.
 
          * **Zoekquery**
-U kunt een zoekquery voor normale tekst invoeren.
+U kunt een zoekquery voor onbewerkte tekst invoeren.
 
       * **Opties voor Geavanceerd zoeken**
 
          * **Querybuilder prediknotatie**
 U kunt een onderzoeksvraag ingaan gebruikend Querybuilder prediknotatie. U kunt bijvoorbeeld &quot;fulltext=Marketing&quot; invoeren om alle pagina&#39;s met &quot;Marketing&quot; in de inhoud weer te geven in de carrousel.
-Zie [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) voor volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
+Zie [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) voor een volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
 
    * **Volgorde van**
 Selecteren `jcr:title`, `jcr:created`, `cq:lastModified`, of `cq:template` in het vervolgkeuzemenu.
@@ -227,14 +227,14 @@ Optioneel. Het maximumaantal items dat u in de carrousel wilt gebruiken.
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
-Met de component Diagram kunt u een balk, lijn of cirkeldiagram toevoegen. AEM maakt een grafiek op basis van de gegevens die u opgeeft. U geeft gegevens op door rechtstreeks in het tabblad Gegevens te typen of door een spreadsheet te kopiëren en te plakken.
+Met de component Diagram kunt u een balk, lijn of cirkeldiagram toevoegen. AEM maakt een grafiek op basis van de gegevens die u opgeeft. U verstrekt gegevens door direct in het lusje van Gegevens te typen of door een spreadsheet te kopiëren en te kleven.
 
 * **Gegevens**
 
    * **Grafiekgegevens**
-Voer uw diagramgegevens in met de CSV-indeling. In de indeling Door komma&#39;s gescheiden waarden worden komma&#39;s (&quot;,&quot;) gebruikt als veldscheidingsteken.
+Voer uw grafiekgegevens in met de CSV-indeling; in de indeling Door komma&#39;s gescheiden waarden worden komma&#39;s (&quot;,&quot;) gebruikt als veldscheidingsteken.
 
 * **Geavanceerd**
 
@@ -262,15 +262,15 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) in plaats daarvan.
 
-[Inhoudsfragmenten](/help/sites-authoring/content-fragments.md) worden gemaakt en beheerd als paginaonafhankelijke elementen. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
+[Inhoudsfragmenten](/help/sites-authoring/content-fragments.md) worden gemaakt en beheerd als pagina-onafhankelijke elementen. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
 ### Design Importer {#design-importer}
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Met deze component kunt u een ZIP-bestand met een ontwerppakket uploaden.
 
@@ -278,7 +278,7 @@ Met deze component kunt u een ZIP-bestand met een ontwerppakket uploaden.
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 De component Download maakt een koppeling op de geselecteerde webpagina om een specifiek bestand te downloaden. U kunt middelen van de Vinder van de Inhoud slepen of een dossier uploaden.
 
@@ -298,14 +298,14 @@ In het volgende voorbeeld wordt de component Download getoond in Geometrixx:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
-De integratiecomponent van de externe toepassing (**Extern**) kunt u externe toepassingen met een iframe insluiten in uw AEM.
+De externe component voor toepassingsintegratie (**Extern**) kunt u externe toepassingen met een iframe insluiten in uw AEM.
 
 * **Extern**
 
    * **Doeltoepassing**
-Geef de URL op van de webtoepassing die moet worden geïntegreerd; bijvoorbeeld:
+Geef de URL op van de webtoepassing die moet worden geïntegreerd, bijvoorbeeld:
 
      ```
      https://en.wikipedia.org/wiki/Main_Page
@@ -316,7 +316,7 @@ Schakel het selectievakje in als de parameters naar de toepassing moeten worden 
 
    * **Breedte en Hoogte **De grootte van het iframe definiëren
 
-De externe toepassing is geïntegreerd in het alineasysteem van de AEM. bijvoorbeeld wanneer u een doeltoepassing gebruikt van `https://en.wikipedia.org/wiki/Main_Page`:
+De externe toepassing is geïntegreerd in het alineasysteem van de AEM pagina, bijvoorbeeld wanneer u een doeltoepassing gebruikt van `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
@@ -328,23 +328,23 @@ De externe toepassing is geïntegreerd in het alineasysteem van de AEM. bijvoorb
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 >[!CAUTION]
 >
 >Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
 
-Met de component Flash kunt u een Flash-film laden. U kunt een Flash-element van de zoeker naar de component slepen of u kunt het dialoogvenster gebruiken:
+Met de component Flash kunt u een Flash film laden. U kunt een Flash-element van de zoeker naar de component slepen of u kunt het dialoogvenster gebruiken:
 
 * **Flash**
 
-   * **Flash-film**
+   * **Flash film**
 
-     Het Flash-filmbestand. Sleep een element van de zoekfunctie voor inhoud of klik om een bladervenster te openen.
+     Het Flash-filmbestand. Sleep een element van de zoeker naar de inhoud of klik om een bladervenster te openen.
 
    * **Grootte**
 
-     Dimension in pixels van het weergavegebied dat de film bevat.
+     Dimensionen in pixels van het weergavegebied dat de film bevat.
 
 * **Alternatieve afbeelding**
 
@@ -376,13 +376,13 @@ Met de component Flash kunt u een Flash-film laden. U kunt een Flash-element van
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Image Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Image Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) in plaats daarvan.
 
-De component image geeft een afbeelding weer en de bijbehorende tekst volgens de opgegeven parameters.
+In de afbeeldingscomponent wordt een afbeelding en de bijbehorende tekst weergegeven volgens de opgegeven parameters.
 
 U kunt een afbeelding uploaden, deze vervolgens bewerken en bewerken (bijvoorbeeld uitsnijden, roteren, koppeling/titel/tekst toevoegen).
 
-U kunt een afbeelding slepen en neerzetten vanuit de [Browser voor middelen](/help/sites-authoring/author-environment-tools.md#assets-browser) rechtstreeks op de component of de component [Dialoogvenster configureren](/help/sites-authoring/editing-content.md#component-edit-dialog). U kunt een beeld van de Configure dialoog ook uploaden; dit dialoogvenster bevat ook alle definities en bewerkingen van de afbeelding :
+U kunt een afbeelding slepen en neerzetten vanuit de [Browser voor middelen](/help/sites-authoring/author-environment-tools.md#assets-browser) rechtstreeks op de component of de component [Dialoogvenster configureren](/help/sites-authoring/editing-content.md#component-edit-dialog). U kunt een beeld van de Configure dialoog ook uploaden; dit dialoog controleert alle definities en manipulatie van het beeld:
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -396,7 +396,7 @@ Nadat de afbeelding is geüpload (en niet eerder), kunt u [plaatsen, bewerken](/
 >
 >Afhankelijk van uw geval, kunnen de minimum en maximumbeperkingen ook door [ontwerp van de pagina](/help/sites-developing/designer.md). Deze beperkingen worden ontwikkeld tijdens de uitvoering van het project.
 
-In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. bijvoorbeeld toewijzen en zoomen:
+Er zijn verschillende aanvullende opties beschikbaar in de modus Volledig scherm, bijvoorbeeld voor toewijzen en zoomen:
 
 ![Modus voor Volledig scherm bewerken - toewijzen en zoomen](do-not-localize/chlimage_1-16.png)
 
@@ -406,7 +406,7 @@ In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. b
 >
 >Gebruikers van Internet Explorer moeten de afbeelding uploaden en op **OK** Open vervolgens de afbeelding opnieuw om het geüploade bestand in de voorvertoning weer te geven en wijzigingen uit te voeren (bijsnijden).
 >
->Zie de [Gecertificeerde Platforms](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5 functies die door AEM worden gebruikt.
+>Zie de [Gecertificeerde platforms](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5 functies die door AEM worden gebruikt.
 
 Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
@@ -416,7 +416,7 @@ Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
 * **Uitsnijden**
 
-  Selecteer Uitsnijden als u een gedeelte van een afbeelding wilt uitsnijden. Gebruik de muis om de afbeelding uit te snijden.
+  Als u een deel van een afbeelding wilt uitknippen, selecteert u Uitsnijden. Gebruik de muis om de afbeelding uit te snijden.
 
 * **Roteren**
 
@@ -468,7 +468,7 @@ Deze component verstrekt een net-paragraaf systeem om u toe te voegen en compone
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Core-component weergeven](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Core-component List](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html) in plaats daarvan.
 
 Met de component List kunt u zoekcriteria configureren voor het weergeven van een lijst:
 
@@ -500,7 +500,7 @@ Met de component List kunt u zoekcriteria configureren voor het weergeven van ee
 
          * Zoekquery
 
-           U kunt een zoekquery voor normale tekst invoeren.
+           U kunt een zoekquery voor onbewerkte tekst invoeren.
 
       * **Opties voor Geavanceerd zoeken**
 
@@ -508,15 +508,15 @@ Met de component List kunt u zoekcriteria configureren voor het weergeven van ee
 
            U kunt een onderzoeksvraag ingaan gebruikend Querybuilder prediknotatie. U kunt bijvoorbeeld &quot;fulltext=Marketing&quot; invoeren om alle pagina&#39;s met &quot;Marketing&quot; in de inhoud weer te geven in de carrousel.
 
-           Zie [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) voor volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
+           Zie [QueryBuilder-API](/help/sites-developing/querybuilder-api.md) voor een volledige bespreking van vraaguitdrukkingen en verdere voorbeelden.
 
       * **Tags**
 
-        Geef de **Bovenliggende pagina**, **Tags/trefwoorden** en de vereiste overeenkomende criteria.
+        Geef de **Bovenliggende pagina**, **Tags/trefwoorden** en de vereiste criteria.
 
    * **Weergeven als**
 
-     Hoe je de objecten wilt aanbieden; Dit zijn onder andere koppelingen, lesgevers en nieuws.
+     Hoe u de punten wilt worden vermeld; omvat Verbindingen, Teasers en Nieuws.
 
    * **Volgorde van**
 
@@ -532,7 +532,7 @@ Met de component List kunt u zoekcriteria configureren voor het weergeven van ee
 
    * **Pagineren na**
 
-     Hier kunt u het aantal lijstitems opgeven dat tegelijkertijd moet worden weergegeven. Een lijst met meer items dan opgegeven gebruikt paginering om de lijst in verschillende delen weer te geven.
+     Hier kunt u het aantal lijstitems opgeven dat in één keer moet worden weergegeven. Een lijst met meer items dan opgegeven gebruikt paginering om de lijst in verschillende delen weer te geven.
 
 In het volgende voorbeeld wordt een **Lijst** de manier waarop een lijst met onderliggende pagina&#39;s wordt weergegeven (het ontwerp wordt bepaald door de aangepaste CSS-definities van een siteontwerp).
 
@@ -542,7 +542,7 @@ In het volgende voorbeeld wordt een **Lijst** de manier waarop een lijst met ond
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -608,7 +608,7 @@ U kunt configureren:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Content Fragment Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/content-fragment-component.html) in plaats daarvan.
 
 De **Referentie** kunt u tekst van een andere pagina van uw AEM website (in de huidige instantie) gebruiken. De inhoud van de alinea waarnaar wordt verwezen, wordt weergegeven alsof deze zich op de huidige pagina bevindt. De inhoud wordt bijgewerkt wanneer de bronalinea verandert (mogelijk moet de pagina worden vernieuwd).
 
@@ -642,7 +642,7 @@ Na de configuratie wordt de inhoud precies zo weergegeven als op de bronpagina. 
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Core-component Snel zoeken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Core-component Snel zoeken](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/quick-search.html) in plaats daarvan.
 
 De component van het Onderzoek voegt onderzoeksmogelijkheden aan uw pagina toe.
 
@@ -652,7 +652,7 @@ U kunt configureren:
 
    * **Knooppunttypen**
 
-     Als de zoekopdracht moet worden beperkt tot een specifieke lijst van knooppunttypen, moeten deze hier worden vermeld; bijvoorbeeld: `cq:Page`.
+     Als de zoekopdracht moet worden beperkt tot een bepaald knooppunttype, geeft u hier een lijst van knooppunten op, bijvoorbeeld `cq:Page`.
 
    * **Pad om in te zoeken**
 
@@ -711,7 +711,7 @@ In het volgende voorbeeld wordt een zoekterm getoond die verkeerd is gespeld en 
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Navigatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html), [Taalnavigatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html), en [Breadcrumb Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Navigatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/navigation.html), [Taalnavigatie](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/language-navigation.html), en [Breadcrumb Core-componenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/breadcrumb.html) in plaats daarvan.
 
 Een automatische sitemapvermelding die (met de standaardinstellingen) alle pagina&#39;s (als actieve koppelingen) op de huidige website weergeeft. Een extract toont bijvoorbeeld:
 
@@ -729,7 +729,7 @@ Indien nodig, kunt u het volgende vormen:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Carousel Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Carousel Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/carousel.html) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -763,7 +763,7 @@ In de diapresentatie-component worden vervolgens herhaaldelijk alle elementen in
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) in plaats daarvan.
 
 >[!NOTE]
 >
@@ -771,7 +771,7 @@ In de diapresentatie-component worden vervolgens herhaaldelijk alle elementen in
 
 De **Tabel** wordt vooraf gevormd om u te laten een lijst construeren, vullen en formatteren. Met behulp van het dialoogvenster kunt u uw tabel configureren en de inhoud maken door:
 
-* helemaal opnieuw
+* krassen
 * het kopiëren van en het kleven van een spreadsheet of een lijst van een externe redacteur (zoals Excel, OpenOffice, en Blocnote).
 
 Met de inline editor kunt u basiswijzigingen in de inhoud aanbrengen:
@@ -782,7 +782,7 @@ In de modus Volledig scherm kunt u de tabellay-out configureren:
 
 ![chlimage_1-97](assets/chlimage_1-97.png)
 
-In de volgende schermafbeelding ziet u een voorbeeld van de tabelcomponent. het ontwerp wordt bepaald door de locatiespecifieke CSS:
+In de volgende schermafbeelding ziet u een voorbeeld van de tabelcomponent. Het ontwerp wordt bepaald door de sitespecifieke CSS:
 
 ![dc_table_use](assets/dc_table_use.png)
 
@@ -812,13 +812,13 @@ Ga voor meer informatie over het toepassen van tags naar [Tags gebruiken](/help/
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) in plaats daarvan.
 
 >[!NOTE]
 >
 >De **Tekst** De component van de stichting is gebaseerd op [Rich Text Editor](/help/sites-authoring/rich-text-editor.md), evenals de **Tabel** Foundation-component.
 
-De component van de Tekst laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door wordt verstrekt [Rich Text Editor](/help/sites-authoring/rich-text-editor.md). Met een selectie pictogrammen kunt u tekst opmaken, zoals lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing.
+De component van de Tekst laat u een tekstblok ingaan gebruikend een redacteur WYSIWYG, met functionaliteit die door wordt verstrekt [Rich Text Editor](/help/sites-authoring/rich-text-editor.md). Met een selectie pictogrammen kunt u de tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing.
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -835,13 +835,13 @@ Voor meer gedetailleerde informatie over de component van de Tekst en de functio
 
 #### Op plaats bewerken {#inplace-editing}
 
-Naast de op een dialoogvenster gebaseerde Rich Text-bewerkingsmodus biedt AEM ook [Op plaats bewerken](/help/sites-authoring/editing-content.md), zodat de tekst direct kan worden bewerkt zoals deze wordt weergegeven in de lay-out van de pagina.
+Naast de op een dialoogvenster gebaseerde Rich Text-bewerkingsmodus biedt AEM ook [Op plaats bewerken](/help/sites-authoring/editing-content.md), zodat de tekst direct kan worden bewerkt zoals deze wordt weergegeven in de layout van de pagina.
 
 ### Tekst en afbeelding {#text-image}
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Afbeelding](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) en [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Afbeelding](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/image.html) en [Tekstkerncomponent](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/text.html) in plaats daarvan.
 
 De component Tekst en afbeelding voegt een tekstblok en een afbeelding toe. U kunt ook afzonderlijk tekst en afbeeldingen toevoegen en bewerken. Zie de [Tekst](#text) en [Afbeelding](#image) voor meer informatie.
 
@@ -889,7 +889,7 @@ In het volgende voorbeeld ziet u een component Tekstafbeelding waarmee de afbeel
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Title Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Title Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/list.html?lang=en) in plaats daarvan.
 
 De component title kan:
 
@@ -910,7 +910,7 @@ U kunt configureren:
 
   Selecteer Klein of Groot in de vervolgkeuzelijst. Klein wordt gegenereerd als een afbeelding. Groot wordt gegenereerd als tekst.
 
-In het volgende voorbeeld wordt een **Titel** component die wordt weergegeven; het ontwerp wordt bepaald door de sitespecifieke CSS.
+In het volgende voorbeeld wordt een **Titel** -component die wordt weergegeven; het ontwerp wordt bepaald door de sitespecifieke CSS.
 
 ![dc_title_use](assets/dc_title_use.png)
 
@@ -918,7 +918,7 @@ In het volgende voorbeeld wordt een **Titel** component die wordt weergegeven; h
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Core Components Embed Component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/embed.html) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -958,11 +958,11 @@ In het volgende voorbeeld ziet u de twee gebruikte componenten Kolommen. U kunt 
 
 ### 2 kolommen {#columns-1}
 
-Een component van de Controle van de Kolom die aan twee gelijke kolommen in gebreke blijft.
+Een component van de Controle van de Kolom die aan twee gelijke kolommen standaard.
 
 ### 3 kolommen {#columns-2}
 
-Een component van de Controle van de Kolom die aan drie gelijke kolommen in gebreke blijft.
+Een component van de Controle van de Kolom die aan drie gelijke kolommen standaard.
 
 ### Kolombesturingselement {#column-control}
 
@@ -1000,7 +1000,7 @@ Forms is opgebouwd uit verschillende onderdelen:
 
   Profielcomponenten hebben betrekking op bezoekersprofielen die worden gebruikt voor sociale samenwerking en andere gebieden waar personalisatie van bezoekers vereist is.
 
-Hieronder ziet u een voorbeeldformulier. Het bestaat uit **Formulier** component (begin en eind), met twee **Formulier** **Tekst** velden die worden gebruikt voor invoer, a **Algemeen** **Tekst** voor de tekst van de lead-in en een **Verzenden** knop.
+Hieronder ziet u een voorbeeldformulier. Het bestaat uit de **Formulier** component (begin en eind), met twee **Formulier** **Tekst** velden die worden gebruikt voor invoer, a **Algemeen** **Tekst** voor de tekst van de lead-in en een **Verzenden** knop.
 
 ![dc_form](assets/dc_form.png)
 
@@ -1016,11 +1016,11 @@ Wanneer u een van de formuliercomponenten configureert, zijn de volgende tabblad
 
 * **Titel en tekst**
 
-  Hier moet u de basisinformatie opgeven, zoals de titel van het formulier en eventuele begeleidende tekst. In voorkomend geval kunt u ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
+  Hier moet u de basisinformatie opgeven, zoals de titel van het formulier en eventuele begeleidende tekst. U kunt zo nodig ook andere belangrijke informatie definiëren, zoals of het veld meerdere selecties kan bevatten en of items kunnen worden geselecteerd.
 
 * **Beginwaarden**
 
-  Hiermee kunt u een standaardwaarde opgeven.
+  Hier geeft u een standaardwaarde op.
 
 * **Restricties**
 
@@ -1098,7 +1098,7 @@ Dit veld is verplicht en mag alleen de volgende tekens bevatten:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Core-component van formuliercontainer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Core-component van formuliercontainer](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-container.html) in plaats daarvan.
 
 De component Form definieert zowel het begin als het einde van een formulier met behulp van de **Begin formulier** en **Einde formulier** elementen. Het begin en einde worden altijd aan elkaar gekoppeld om ervoor te zorgen dat het formulier correct is gedefinieerd.
 
@@ -1108,7 +1108,7 @@ Tussen het begin en het einde van een formulier kunt u formuliercomponenten toev
 
 >[!NOTE]
 >
->De basiscomponenten van een component ondersteunen alleen het gebruik van andere basiscomponenten van componenten (knop, tekst, verborgen enzovoort). Gebruiken [kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) formuliercomponenten in een formulier met funderingscomponenten (en omgekeerd) worden niet ondersteund.
+>De stichtingscomponenten vormen component slechts steunt het gebruik van andere stichtingscomponenten vormcomponenten (knoop, tekst, verborgen, etc.). Gebruiken [kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) formuliercomponenten in een formulier met funderingscomponenten (en omgekeerd) worden niet ondersteund.
 
 #### Begin van formulier {#start-of-form}
 
@@ -1135,9 +1135,9 @@ Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
       * **Inhoud maken**
       * **Lead maken**
       * **Account maken en bijwerken**
-      * **E-mailservice: Abonnee maken en toevoegen aan lijst**
-      * **E-mailservice: E-mail met automatische beantwoorder verzenden**
-      * **E-mailservice: Gebruiker uit lijst opzeggen**
+      * **E-mailservice: abonnee maken en toevoegen aan lijst**
+      * **E-mailservice: e-mail met automatische beantwoorder verzenden**
+      * **E-mailservice: abonnement van gebruiker opzeggen**
       * **Community bewerken**
       * **Bronnen bewerken**
       * **Workflowgestuurde bronnen bewerken**
@@ -1157,7 +1157,7 @@ Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
    * **Formulierid**
 
-     De formulier-id vormt een unieke identificatie van het formulier. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt; zorg ervoor zij verschillende herkenningstekens hebben.
+     De formulier-id vormt een unieke identificatie van het formulier. Gebruik de formulier-id als u meerdere formulieren op één pagina hebt. Zorg ervoor dat deze verschillende id&#39;s hebben.
 
    * **Pad laden**
 
@@ -1197,7 +1197,7 @@ Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
          * Inhoudspad
 
-           Het inhoudspad voor alle inhoud die door het formulier wordt neergezet. Een pad invoeren dat eindigt met een schuine streep `/`. De slash betekent dat voor elke formulierpoort een nieuw knooppunt wordt gemaakt op de opgegeven locatie. bijvoorbeeld:
+           Het inhoudspad voor alle inhoud die door het formulier wordt neergezet. Een pad invoeren dat eindigt met een schuine streep `/`. De slash betekent dat voor elke formulierpoort een nieuw knooppunt wordt gemaakt op de opgegeven locatie, bijvoorbeeld:
 
            `/forms/feedback/`
 
@@ -1213,7 +1213,7 @@ Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
            Selecteer de gewenste optie in de lijst.
 
-         * **Type bron**
+         * **Resourcetype**
 
            Indien ingesteld, wordt deze aan elke opmerking toegevoegd als `sling:resourceType`
 
@@ -1241,13 +1241,13 @@ Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
          * **Gegevens weergeven...**
 
-           Als u deze knop selecteert, wordt de informatie over formulierresultaten weergegeven in de Bulk-editor. Van hieruit kunt u de gegevens exporteren naar een `.tsv` (tabgescheiden) bestand (bijvoorbeeld in een Excel-spreadsheet).
+           Als u deze knop selecteert, wordt de informatie over de formulierresultaten weergegeven in de Bulk-editor. Van hieruit kunt u de gegevens exporteren naar een `.tsv` (tabgescheiden) bestand (bijvoorbeeld in een Excel-spreadsheet).
 
       * **Mail**
 
          * **Van**
 
-           Voer het e-mailadres in waaruit de e-mail moet komen.
+           Voer het e-mailadres in waaruit het e-mailadres moet komen.
 
          * **Mailto**
 
@@ -1275,7 +1275,7 @@ Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
          * **Inhoudspad**
 
-           Het inhoudspad voor alle inhoud die door het formulier wordt neergezet. Een pad invoeren dat eindigt met een schuine streep `/`. De slash betekent dat voor elke formulierpoort een nieuw knooppunt wordt gemaakt op de opgegeven locatie. bijvoorbeeld:
+           Het inhoudspad voor alle inhoud die door het formulier wordt neergezet. Een pad invoeren dat eindigt met een schuine streep `/`. De slash betekent dat voor elke formulierpoort een nieuw knooppunt wordt gemaakt op de opgegeven locatie, bijvoorbeeld:
            `/forms/feedback/`
 
          * **Gegevens weergeven...**
@@ -1326,7 +1326,7 @@ Hiermee markeert u het einde van het formulier. U kunt het volgende configureren
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) in plaats daarvan.
 
 Hiermee kan de gebruiker een accountnaam invoeren:
 
@@ -1336,7 +1336,7 @@ Hiermee kan de gebruiker een accountnaam invoeren:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) in plaats daarvan.
 
 Hiermee kunt u een internationaal adresveld met de volgende notatie toevoegen:
 
@@ -1348,7 +1348,7 @@ De component wordt gevormd voor onmiddellijk gebruik, maar u kunt de configurati
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 >[!CAUTION]
 >
@@ -1364,7 +1364,7 @@ U kunt diverse parameters voor deze component vormen, met inbegrip van een beric
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) in plaats daarvan.
 
 Met een selectievakje kunt u een lijst maken van een of meer selectievakjes, waarvan er meerdere tegelijk kunnen worden geselecteerd.
 
@@ -1382,7 +1382,7 @@ U kunt verschillende parameters opgeven, zoals een titel, beschrijving en elemen
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Hier geeft u de velden op die nodig zijn voor het invoeren van creditcardgegevens. U kunt het vormen om de types van toegelaten kaart en de vereiste informatie (bijvoorbeeld, veiligheidscode) te specificeren.
 
@@ -1392,7 +1392,7 @@ Hier geeft u de velden op die nodig zijn voor het invoeren van creditcardgegeven
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) in plaats daarvan.
 
 Een vervolgkeuzelijst kan worden geconfigureerd om een reeks waarden voor selectie aan uw gebruik te bieden:
 
@@ -1410,7 +1410,7 @@ U kunt een titel en items opgeven die in de lijst moeten worden weergegeven. Met
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 De component voor het uploaden van bestanden biedt de gebruiker een mechanisme voor het selecteren en uploaden van een bestand.
 
@@ -1424,7 +1424,7 @@ De component voor het uploaden van bestanden biedt de gebruiker een mechanisme v
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Verborgen kerncomponent van formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Verborgen kerncomponent van formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-hidden.html) in plaats daarvan.
 
 Hiermee kunt u een verborgen veld maken. Deze verborgen velden kunnen voor verschillende doeleinden worden gebruikt. Bijvoorbeeld wanneer u een actie moet uitvoeren nadat u het formulier hebt verzonden of wanneer verborgen gegevens vereist zijn tijdens de naverwerking.
 
@@ -1440,7 +1440,7 @@ Hiermee kunt u een verborgen veld maken. Deze verborgen velden kunnen voor versc
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) in plaats daarvan.
 
 Met een afbeeldingsknop kunt u een knop maken met uw eigen afbeelding en tekst:
 
@@ -1450,7 +1450,7 @@ Met een afbeeldingsknop kunt u een knop maken met uw eigen afbeelding en tekst:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 De component voor het uploaden van afbeeldingen biedt de gebruiker een mechanisme voor het selecteren en uploaden van een afbeeldingsbestand.
 
@@ -1460,7 +1460,7 @@ De component voor het uploaden van afbeeldingen biedt de gebruiker een mechanism
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 In het koppelingsveld kan de gebruiker een URL opgeven:
 
@@ -1472,7 +1472,7 @@ Wordt meestal gebruikt voor het agendagebeurtenis, waar dit wordt gebruikt voor 
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Hiermee kan de gebruiker zijn wachtwoord invoeren:
 
@@ -1482,7 +1482,7 @@ Hiermee kan de gebruiker zijn wachtwoord invoeren:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 Deze component voorziet uw gebruiker van twee gebieden voor:
 
@@ -1497,7 +1497,7 @@ Bij de standaardinstellingen wordt de component als volgt weergegeven:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Formulieropties Core-component](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-options.html) in plaats daarvan.
 
 Een groep keuzerondjes bevat een lijst met een of meer keuzerondjes, waarvan er slechts één op een bepaald moment kan worden geselecteerd.
 
@@ -1515,7 +1515,7 @@ U kunt de elementnaam samen met een titel en een beschrijving opgeven. Gebruik d
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) in plaats daarvan.
 
 Met deze component kunt u een verzendknop maken met de standaardtekst:
 
@@ -1529,7 +1529,7 @@ Of met uw eigen tekst:
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) in plaats daarvan.
 
 In dit veld kunt u tags selecteren:
 
@@ -1556,7 +1556,7 @@ U kunt verschillende parameters opgeven, waaronder de naamruimten die kunnen wor
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Component Form Text Core](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-text.html) in plaats daarvan.
 
 Het standaardtekstveld kan worden geconfigureerd op de gewenste grootte en met uw eigen lead in een bericht:
 
@@ -1566,7 +1566,7 @@ Het standaardtekstveld kan worden geconfigureerd op de gewenste grootte en met u
 
 >[!CAUTION]
 >
->Deze Foundation-component is afgekeurd. Adobe raadt u aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) in plaats daarvan.
+>Deze Foundation-component is vervangen. Adobe raadt u aan de [Kern van knop Formulier](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/wcm-components/forms/form-button.html) in plaats daarvan.
 
 Hiermee kunt u een knop Verzenden maken voor gebruik in een workflow.
 

@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1693'
+source-wordcount: '1692'
 ht-degree: 1%
 
 ---
@@ -20,13 +20,13 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw eigen inhoud voor uw A
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: Introduceer de basisbeginselen van CMS-authoring zonder koppen:
+* **Doelstelling**: Introduceer de basisbeginselen van CMS-ontwerpen zonder koptekst:
    * Inleiding tot ontwerpen met AEMaaCS
    * Inleiding tot inhoudsfragmenten
 
 ## Basisbewerkingen {#basic-handling}
 
-Voordat u de inhoud van fragmenten gaat beheren, volgt een (zeer) korte inleiding op het gebruik van AEM....maar niets vervangt echt de ervaring van het aanmelden en het proberen om het systeem te gebruiken.
+Voordat u de stappen met inhoudsfragmenten gaat beheren, volgt een (zeer) korte inleiding op het gebruik van AEM...maar niets vervangt echt de ervaring van het aanmelden en het proberen om het systeem te gebruiken.
 
 ### Auteur en publicatie {#author-preview-publish}
 
@@ -47,7 +47,7 @@ Net als bij de meeste systemen moet u zich aanmelden. Als auteur krijgt u de vol
 * Wachtwoord
 * Koppeling voor toegang tot het aanmeldingsscherm
 
-Uw account is geconfigureerd met alle rechten die u nodig hebt. Als u om het even welke kwesties hebt, adviseren wij dat u uw intern team van de projectsteun contacteert.
+Uw account is geconfigureerd met alle rechten die u nodig hebt. Als u problemen hebt, raadt de Adobe u aan contact op te nemen met uw interne team voor projectondersteuning.
 
 ### Navigatie {#navigation}
 
@@ -55,14 +55,14 @@ De eerste keer dat u zich aanmeldt bij een kleine online zelfstudie, worden enke
 
 Vervolgens kunt u het navigatievenster gebruiken om toegang te krijgen tot belangrijke gebieden van AEM. Voor inhoudsfragmenten gebruikt u de opdracht **Elementenconsole**.
 
-U kunt het navigatievenster openen door het Adobe-pictogram linksboven te selecteren, gevolgd door het kleine kompaspictogram:
+U kunt het navigatievenster openen door het pictogram Adobe linksboven te selecteren, gevolgd door het kleine kompaspictogram:
 
 ![Navigatievenster](/help/journey-headless/author/assets/headless-journey-author-navigation-01.png)
 
 >[!NOTE]
 >Hoewel Inhoudsfragmenten een kenmerk van AEM zijn **Sites**, vindt u deze in de **Activa** console. Dit is een technisch detail dat u niet zou moeten beïnvloeden, maar zou nuttig kunnen zijn om te weten.
 
-Binnen de console kunt u mappen selecteren om naar het inhoudsfragment te navigeren of de broodkruimels (in de koptekst) om een back-up van de structuur te maken.
+Binnen de console kunt u mappen selecteren om naar het inhoudsfragment te navigeren, of de broodkruimels (in de koptekst) om een back-up van de structuur te maken.
 
 ![Broodkruimels](/help/journey-headless/author/assets/headless-journey-author-navigation-02.png)
 
@@ -74,7 +74,7 @@ De snelle Acties zijn beschikbaar voor één enkel middel, zie **Bazel** in het 
 
 ![Snelle handelingen](/help/journey-headless/author/assets/headless-journey-author-navigation-05.png)
 
-De werkbalk Handelingen biedt toegang tot het volledige scala aan handelingen die voor het huidige scenario gelden. De beschikbare acties kunnen veranderen; bijvoorbeeld, afhankelijk van uw plaats, of of u veelvoudige middelen hebt geselecteerd:
+De werkbalk Handelingen biedt toegang tot het volledige scala aan handelingen die voor het huidige scenario gelden. De beschikbare acties kunnen veranderen, bijvoorbeeld afhankelijk van uw locatie of van het feit of u meerdere bronnen hebt geselecteerd:
 
 ![Werkbalk Handelingen](/help/journey-headless/author/assets/headless-journey-author-navigation-06.png)
 
@@ -98,7 +98,7 @@ Tenzij u zeer weinig Inhoudsfragmenten hebt, wilt u deze ordenen - zodat u (en a
 
 #### Een map maken {#creating-folder}
 
-U kunt dit doen door een reeks mappen te maken binnen **Bestanden** van de middelenconsole. Selecteer **Maken** optie (rechtsboven), gevolgd door **Map**:
+U kunt dit doen door een reeks mappen te maken binnen **Bestanden** van de middelenconsole. Selecteer de **Maken** optie (rechtsboven), gevolgd door **Map**:
 
 ![Map maken, optie](/help/journey-headless/author/assets/headless-journey-author-folder-01.png)
 
@@ -122,17 +122,17 @@ Nadat u de map hebt gemaakt, kunt u de map openen **Eigenschappen**. Hier zijn d
 
 Vervolgens navigeert u door deze mappen om inhoudsfragmenten te maken en te bewerken.
 
-#### Net voor het geval - Configuratie van Cloud Services van mappen {#cloud-services-folder}
+#### Net voor het geval - Configuratie van Cloud Servicen van mappen {#cloud-services-folder}
 
 Alleen voor het geval...
 
-U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit interesseert u waarschijnlijk niet, maar als nodig kunt u controleren **Configuratie** in de **Cloud Services** van de map **Eigenschappen**:
+U krijgt waarschijnlijk een eerste map waarin u uw mappen kunt maken. Dit is aangezien sommige configuratiedetails (gewoonlijk door een Ontwikkelaar of Beheerder van het Systeem) op de wortelomslag moeten worden toegepast. Dit interesseert u waarschijnlijk niet, maar als nodig kunt u controleren **Configuratie** in de **Cloud Servicen** van de map **Eigenschappen**:
 
 ![Mapeigenschappen maken - configuratie](/help/journey-headless/author/assets/headless-journey-author-folder-03.png)
 
 >[!NOTE]
 >
->U kunt meer lezen onder De configuratie toepassen op uw middelenmap.
+>U kunt meer lezen onder Toepassen de Configuratie op uw Omslag van Activa.
 
 ### Een inhoudsfragment maken {#creating-fragment}
 
@@ -156,7 +156,7 @@ U kunt een fragment direct openen nadat u het hebt gemaakt of door het te select
 
 Wanneer de redacteur eerst opent zult u zien:
 
-* Een lijst met pictogrammen aan de linkerkant - hiermee hebt u toegang tot verschillende functies. De editor wordt geopend in het dialoogvenster **Variaties** -tabblad, vindt u hier de meeste bewerkingen plaats. U bent wellicht ook geïnteresseerd in de **Annotaties** en **Metagegevens** tabs.
+* Een lijst met pictogrammen aan de linkerkant - hiermee hebt u toegang tot verschillende functies. De editor wordt geopend in het dialoogvenster **Variaties** , is dit de plaats waar de meeste bewerkingen worden uitgevoerd. U bent wellicht ook geïnteresseerd in de **Annotaties** en **Metagegevens** tabs.
 
 * Een koptekst met informatie over het fragment en toegang tot verschillende handelingen.
 
@@ -166,11 +166,11 @@ Als voorbeelden:
 
 * Een fragment dat alleen meerdere gegevens vereist, waarvan sommige een specifiek type hebben. Voor inhoud zonder kop zijn verwijzingen van essentieel belang. U leert hierover later tijdens uw reis.
 
-   ![Inhoudsfragmenteditor - Mijn fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
+  ![Inhoudsfragmenteditor - Mijn fragment](/help/journey-headless/author/assets/headless-journey-author-content-fragment-04.png)
 
-* Een fragment waarmee u een lange sectie tekst kunt schrijven. Hier zijn aanvullende opties voor het beheren en opmaken van de tekst. U kunt zelfs de afzonderlijke tekstvelden openen in een volledige-schermeditor (met het kleine schermachtige pictogram rechts)
+* Een fragment waarmee u een lang tekstgedeelte kunt schrijven. Hier zijn aanvullende opties voor het beheren en opmaken van de tekst. U kunt zelfs de afzonderlijke tekstvelden openen in een volledige-schermeditor (met het kleine schermachtige pictogram rechts)
 
-   ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
+  ![Content Fragment Editor - Alaska Spirits](/help/journey-headless/author/assets/headless-journey-author-content-fragment-05.png)
 
 >[!NOTE]
 >
@@ -178,7 +178,7 @@ Als voorbeelden:
 >
 >Zie Modellen van de Fragmenten van de Inhoud - de Types van Gegevens en Eigenschappen voor generische details.
 
-Bevestig uw updates met of **Opslaan** of **Opslaan en sluiten**.
+Bevestig uw updates met één van beiden **Opslaan** of **Opslaan en sluiten**.
 
 >[!NOTE]
 >
@@ -190,26 +190,26 @@ Dit lijkt misschien een iets vreemde sectie, maar als u de Content Fragment Edit
 
 * **Modellen van contentfragmenten**
 
-   De naam van het inhoudsfragmentmodel wordt boven in de editor weergegeven, direct onder de fragmentnaam. Dit is ook een verbinding die u aan de modelredacteur neemt.
+  De naam van het inhoudsfragmentmodel wordt boven in de editor weergegeven, direct onder de fragmentnaam. Dit is ook een verbinding die u aan de modelredacteur neemt.
 Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragmenten als ze de structuur definiëren die u gebruikt. Het maken en bewerken van deze bestanden valt (gewoonlijk) echter onder de verantwoordelijkheid van een andere persoon, de Content Architect.
 
-   >[!NOTE]
-   >
-   >Als u meer wilt weten, kunt u de AEM Headless Content Architect Journey lezen.
+  >[!NOTE]
+  >
+  >Als u meer wilt weten, kunt u de AEM Headless Content Architect Journey lezen.
 
 * **Gekoppelde inhoud**
 
-   Dit is duidelijk aangezien het een lusje in de redacteur is.
+  Dit is duidelijk aangezien het een lusje in de redacteur is.
 
-   Inhoudsfragmenten zijn in AEM al een aantal versies beschikbaar. Oorspronkelijk zijn ze beschikbaar gesteld voor &quot;traditioneel&quot; gebruik bij het ontwerpen van pagina&#39;s....en zij worden in dit verband nog steeds gebruikt . Hierbij kan het gaan om het koppelen van elementen (bijvoorbeeld afbeeldingen) die weliswaar niet in het fragment zijn ingesloten, maar die wel beschikbaar moeten zijn voor de auteur wanneer deze een pagina ontwerpt.
+  Inhoudsfragmenten zijn in AEM al een aantal versies beschikbaar. Oorspronkelijk zijn ze beschikbaar gesteld voor &quot;traditioneel&quot; gebruik bij het ontwerpen van pagina&#39;s...en zij worden in dit verband nog steeds gebruikt . Hierbij kan het gaan om het koppelen van elementen (bijvoorbeeld afbeeldingen) die weliswaar niet in het fragment zijn ingesloten, maar die wel beschikbaar moeten zijn voor de auteur wanneer deze een pagina ontwerpt.
 
 * **Voorvertoning**
 
-   Dit is een ander tabblad in de editor en biedt een technische weergave, voornamelijk bedoeld voor ontwikkelaars.
+  Dit is een ander tabblad in de editor en biedt een technische weergave, voornamelijk bedoeld voor ontwikkelaars.
 
 * **Paginaverwijzingen bijwerken**
 
-   Deze handeling is beschikbaar via de **...** (ellipsen). Het is niet interessant voor headless auteurs aangezien het op paginascreatie betrekking heeft.
+  Deze handeling is beschikbaar via de **...** (ellipsen). Het is niet interessant voor headless auteurs aangezien het op paginascreatie betrekking heeft.
 
 ### Publiceren {#publishing}
 
@@ -250,20 +250,20 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
       * [De configuratie toepassen op de middelenmap](/help/assets/content-fragments/content-fragments-configuration-browser.md#apply-the-configuration-to-your-assets-folder)
 
       * [Een inhoudsfragment maken](/help/assets/content-fragments/content-fragments-managing.md#creating-a-content-fragment)
+
    * [Variaties - Inhoudsfragmenten ontwerpen](/help/assets/content-fragments/content-fragments-variations.md)
 
    * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
-      * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+      * [Modellen van inhoudsfragmenten - gegevenstypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
       * [Modellen van inhoudsfragmenten - eigenschappen](/help/assets/content-fragments/content-fragments-models.md#properties)
 
       * [Modellen van inhoudsfragmenten - Modellen van inhoudsfragmenten toestaan in uw middelenmap](/help/assets/content-fragments/content-fragments-models.md#allowing-content-fragment-models-assets-folder)
-
 
 * Aan de slag - hulplijnen
    * [Snelstartgids voor mappen zonder middelenkoppen maken](/help/sites-developing/headless/getting-started/create-assets-folder.md)
 
 * [Reis van architect zonder hoofdinhoud AEM](/help/journey-headless/architect/overview.md)
 
-* [AEM doorlopende vertaalreis](/help/journey-headless/translation/overview.md)
+* [AEM doorsnedenloze vertaalreis](/help/journey-headless/translation/overview.md)

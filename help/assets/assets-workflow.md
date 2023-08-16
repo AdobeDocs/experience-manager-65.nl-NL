@@ -5,16 +5,16 @@ contentOwner: AG
 feature: Workflow, Renditions
 role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '923'
 ht-degree: 3%
 
 ---
 
 # Digitale middelen verwerken {#process-assets}
 
-[!DNL Adobe Experience Manager Assets] kunt u op verschillende manieren werken aan uw digitale elementen, zodat u robuuste elementen kunt verwerken. U kunt de standaard of aangepaste verwerkingsmethodes gebruiken om bedrijfsprocesvoltooiing, controles en naleving, ontdekking en distributie, en basishygiëne van uw digitale activa te verzekeren. U kunt de taken voor middelenbeheer uitvoeren en tegelijkertijd de vereiste schaal en aanpassing realiseren.
+[!DNL Adobe Experience Manager Assets] kunt u op verschillende manieren aan uw digitale middelen werken, zodat u krachtige middelen kunt verwerken. U kunt de standaard of aangepaste verwerkingsmethodes gebruiken om bedrijfsprocesvoltooiing, controles en naleving, ontdekking en distributie, en basishygiëne van uw digitale activa te verzekeren. U kunt de taken voor middelenbeheer uitvoeren en tegelijkertijd de vereiste schaal en aanpassing realiseren.
 
 ## Workflows begrijpen {#understand-workflows}
 
@@ -94,7 +94,7 @@ Beheerders kunnen de workflow zodanig configureren dat elementen automatisch wor
 Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat deze uitvoert. Een werkstroomopstarter bewaakt wijzigingen in de inhoudsopslagplaats en voert de werkstroom uit wanneer aan de vooraf gedefinieerde voorwaarden is voldaan. Beheerders kunnen toegang verlenen tot marketers om de workflows te maken en de starcher te configureren. Gebruikers kunnen de standaardinstelling wijzigen [!UICONTROL DAM Update Asset] om de extra stappen toe te voegen die nodig zijn om specifieke elementen te verwerken. De workflow wordt uitgevoerd op alle nieuw geüploade elementen. Gebruik een van de volgende methoden om de uitvoering van de extra stappen voor specifieke elementen te beperken:
 
 * Maak een kopie van het dialoogvenster [!UICONTROL DAM Update Asset] en deze wijzigen om uit te voeren in een specifieke maphiërarchie. Deze aanpak is handig voor een aantal mappen.
-* De extra verwerkingsstappen kunnen worden toegevoegd met behulp van een [OF splitsen](/help/sites-developing/workflows-step-ref.md#or-split) indien voorwaardelijk van toepassing op zoveel mappen als vereist.
+* De extra verwerkingsstappen kunnen worden toegevoegd met een [OF splitsen](/help/sites-developing/workflows-step-ref.md#or-split) indien voorwaardelijk van toepassing op zoveel mappen als vereist.
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
@@ -107,4 +107,3 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 >* [Workflowmodellen maken en workflowfunctionaliteit uitbreiden](/help/sites-developing/workflows.md)
 >* [Methoden voor het uitvoeren van workflows](/help/sites-administering/workflows-starting.md)
 >* [Best practices voor workflows](/help/sites-developing/workflows-best-practices.md)
-

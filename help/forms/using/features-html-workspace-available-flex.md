@@ -1,7 +1,7 @@
 ---
 title: Functies van de AEM Forms-werkruimte zijn niet beschikbaar in de Flex-werkruimte
 seo-title: Features of AEM Forms workspace not available in Flex workspace
-description: De AEM Forms-werkruimte is verder dan de op Flex gebaseerde werkruimte. Lees meer over de verschillen in functies en mogelijkheden.
+description: De AEM Forms-werkruimte vernieuwt verder dan de op Flex gebaseerde werkruimte. Lees meer over de verschillen in functies en mogelijkheden.
 seo-description: AEM Forms workspace innovates beyond Flex-based Workspace. Read about differences in features and capabilities.
 uuid: 2c22ce35-8383-4258-b6e3-3d823a453b27
 contentOwner: robhagat
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 exl-id: 4235e0ce-f1c4-432e-b486-2d72c390f320
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Hieronder volgt een kort overzicht van deze mogelijkheden. Zie de verwante artik
 
 ## Ondersteuning voor een overzichtsvenster voor taken {#support-for-a-summary-pane-for-tasks}
 
-Wanneer u een taak opent, voordat het formulier wordt geopend, wordt in een venster informatie over de taak weergegeven met behulp van een externe URL. Als u het venster Taakoverzicht gebruikt, kunt u aanvullende en relevante informatie voor een taak weergeven om meer waarde toe te voegen aan de werkruimte van de eindgebruiker van AEM Forms. Zie [Overzichtspagina weergeven](/help/forms/using/displaying-information-task-summary-pane.md) voor de uitvoeringsdetails.
+Wanneer u een taak opent, voordat het formulier wordt geopend, wordt in een venster informatie over de taak weergegeven met een externe URL. Als u het venster Taakoverzicht gebruikt, kunt u aanvullende en relevante informatie voor een taak weergeven om meer waarde toe te voegen aan de werkruimte van de eindgebruiker van AEM Forms. Zie [Overzichtspagina weergeven](/help/forms/using/displaying-information-task-summary-pane.md) voor de uitvoeringsdetails.
 
 ## Ondersteuning voor beheerweergave {#support-for-manager-view}
 

@@ -1,25 +1,25 @@
 ---
 title: Een aangepaste Cloud Service maken
-description: De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen
+description: De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Servicen
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '406'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
 
 # Een aangepaste Cloud Service maken{#creating-a-custom-cloud-service}
 
-De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen. Hierdoor kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is vooral handig voor externe analyseproviders, zoals Google Analytics, Chartbeat, enzovoort. Cloud Services worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
+De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Servicen. Hiermee kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is vooral handig voor externe analyseproviders, zoals Googles Analytics, Chartbeat, enzovoort. Cloud Servicen worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
 
 >[!NOTE]
 >
->Deze stapsgewijze handleiding voor het maken van een Cloud Service is een voorbeeld van het gebruik van Google Analytics. Alles is mogelijk niet van toepassing op het gebruik.
+>Deze stapsgewijze handleiding voor het maken van een Cloud Service is een voorbeeld van het gebruik van Googles Analytics. Alles is mogelijk niet van toepassing op het gebruik.
 
 1. In CRXDE Lite maakt u een knooppunt onder `/apps`:
 
@@ -48,7 +48,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    * **Supertype**: `cq/cloudserviceconfigs/components/configpage`
    * **Groep**: `.hidden`
 
-1. Klikken **Volgende** tweemaal en vermeld:
+1. Klikken **Volgende** twee keer en geef aan:
 
    * **Toegestane bovenliggende elementen:** `acs/analytics/templates/googleanalytics`
 
@@ -139,12 +139,12 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
 1. Kopiëren `/libs/cq/cloudserviceconfigs/components/configpage/body.jsp` tot `/apps/acs/analytics/components/googleanalyticspage/body.jsp` en wijzigen `libs` tot `apps` op regel 34 en maak van de scriptverwijzing op regel 79 een volledig gekwalificeerd pad.
 1. Een sjabloon maken onder `/apps/acs/analytics/templates/`:
 
-   * with **Type bron** = `acs/analytics/components/googleanalyticspage`
+   * with **Resourcetype** = `acs/analytics/components/googleanalyticspage`
    * with **Label** = `googleanalytics`
    * with **Titel**= `Google Analytics Configuration`
    * with **allowedPath** = `/etc/cloudservices/googleanalytics(/.*)?`
    * with **allowedChildren** = `/apps/acs/analytics/templates/googleanalytics`
-   * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (op sjabloonknooppunt, niet het knooppunt jcr:content)
+   * with **sling:resourceSuperType** = `cq/cloudserviceconfigs/templates/configpage` (op sjabloonknooppunt, niet op het knooppunt jcr:content)
    * with **cq:designPath** = `/etc/designs/cloudservices/googleanalytics` (op jcr:content)
 
 1. Een component maken: `/apps/acs/analytics/components/googleanalytics`.
@@ -206,8 +206,8 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    * **Bovenliggende configuratie**: `/etc/cloudservices/googleanalytics`
    * **Titel:**  `My First GA Config`
 
-   Kies **Configuratie Google Analytics** en klik op **Maken**.
+   Kies **Configuratie Googles Analytics** en klik op **Maken**.
 
 1. Voer een **Account-id** bijvoorbeeld `AA-11111111-1`. Klikken **OK**.
-1. Navigeer naar een pagina en voeg de nieuw gemaakte configuratie toe in de pagina-eigenschappen, onder de **Cloud Services** tab.
+1. Navigeer naar een pagina en voeg de nieuw gemaakte configuratie toe in de pagina-eigenschappen, onder de **Cloud Servicen** tab.
 1. Aan de pagina wordt de aangepaste markering toegevoegd.

@@ -10,9 +10,9 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 1d334c42088342954feb34f6179dc5b134f81bb8
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '552'
+source-wordcount: '554'
 ht-degree: 1%
 
 ---
@@ -66,9 +66,9 @@ CRXDE Lite gebruiken:
    %>
    ```
 
-1. Als u weet dat er scripttags voor openen/sluiten zijn, vervangt u &quot; // TODO ...&quot; met inbegrip van scripts voor de kop en de hoofdtekst van &lt;html>.
+1. Als u weet dat er scripttags voor openen/sluiten zijn, vervangt u &quot; // TODO ...&quot; door scripts voor de kop en de hoofdtekst van &lt;html>.
 
-   Met een supertype van `foundation/components/page`, worden scripts die niet in dezelfde map zijn gedefinieerd, omgezet naar een script in `/apps/foundation/components/page` map (als deze bestaat), anders naar een script in `/libs/foundation/components/page` map.
+   Met een supertype van `foundation/components/page`, worden alle scripts die niet in dezelfde map zijn gedefinieerd, omgezet naar een script in `/apps/foundation/components/page` map (als deze bestaat), anders naar een script in `/libs/foundation/components/page` map.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -88,15 +88,16 @@ CRXDE Lite gebruiken:
    </html>
    ```
 
-1. Het basatiescript `head.jsp` hoeven niet te worden bedekt, maar het stichtingsscript `body.jsp` is leeg.
+1. Het basatiescript `head.jsp` hoeft niet te worden bedekt, maar het stichtingsscript `body.jsp` is leeg.
 
    Omzetten in ontwerpomgeving, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
 
    1. Ga naar `/apps/an-scf-sandbox/components`.
-   1. Selecteer `playpage` knooppunt.
+   1. Selecteer de `playpage` knooppunt.
    1. Klik met de rechtermuisknop en selecteer `Create > Create File...`
 
       * Naam: **body.jsp**
+
    1. Klik op **[!UICONTROL Save All]**.
 
    Openen `/apps/an-scf-sandbox/components/playpage/body.jsp` en plak in de volgende tekst:
@@ -182,4 +183,4 @@ Wijzig de URL van de browser in de hoofdpagina: `http://localhost:4502/editor.ht
 
 Als de site eenmaal is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 
-De laatste stap vóór het spelen met de gemeenschappenSCF componenten moet een Omslag van de Bibliotheek van de Cliënt (clientlibs) toevoegen.... [Clienlibs toevoegen](add-clientlibs.md)
+De laatste stap vóór het spelen met de gemeenschappenSCF componenten moet een Omslag van de Bibliotheek van de Cliënt toevoegen (clientlibs)... [Clienlibs toevoegen](add-clientlibs.md)

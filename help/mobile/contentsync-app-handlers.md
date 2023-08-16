@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1409'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Zie de volgende richtlijnen voor het ontwikkelen van Content Sync Handlers:
 
@@ -40,7 +40,7 @@ De volgende lijst bevat een lijst met apps die niet in de verpakking staan:
 * ***path - String*** - pad naar een pagina
 * ***extension - String*** - Uitbreiding die in het verzoek moet worden gebruikt. Voor pagina&#39;s is dit bijna altijd *html*, maar andere zijn nog mogelijk.
 
-* ***selector - String*** - Optionele kiezers, gescheiden door punt. Algemene voorbeelden *tikken* voor het weergeven van mobiele versies van een pagina.
+* ***selector - String*** - Optionele kiezers, gescheiden door punt. Algemene voorbeelden zijn *tikken* voor het weergeven van mobiele versies van een pagina.
 
 * ***deep - Boolean*** - Optionele booleaanse eigenschap die bepaalt of onderliggende pagina&#39;s ook moeten worden opgenomen. De standaardwaarde is *true.*
 
@@ -64,7 +64,7 @@ De volgende lijst bevat een lijst met apps die niet in de verpakking staan:
 
 Deze handler moet worden toegevoegd aan elke AEM ContentSync Config voor Apps.
 
-* ***type - String - mobileContentListing***
+* ***type - String - mobileContentList***
 * ***pad*** - Tekenreeks - leeg houden, moet aanwezig zijn om te worden beschouwd als een geldige handler, maar het pad wordt geïnterpreteerd als de huidige cache van ContentSync. Deze waarde wordt genegeerd.
 * ***targetRootDirectory* -**Tekenreeks - het voorvoegsel dat aan paden moet worden toegevoegd als doelbasis voor de update van de inhoud voor deze handler.
 * ***bestelling - lang* -**Order for ContentSync om deze handler uit te voeren. Dit aantal zou hoger dan alle andere managers zoals 100 moeten worden geplaatst. Deze moet worden uitgevoerd na traditionele inhoudshandlers.
@@ -162,7 +162,7 @@ AEM eigenschappen zijn de eigenschappen met naamruimte &quot;cq&quot;, &quot;sli
 * ***autoCreateFirstUpdateBeforeImport - Boolean*** - indien waar (true), een eerste **update** in het doel config alvorens in te voeren als eens niet reeds bestaat
 
 * ***autoFillBeforeImport - Boolean*** - Indien waar (true), werkt u de doelconfiguratie bij of vult u deze voordat u gaat importeren
-* ***configSuffix - String*** - een tekenreeks die moet worden toegevoegd aan het pad dat wordt aangegeven met de eigenschap &quot;phonegap-exportTemplate&quot; van app-content. Hiermee kunt u verschillende exportsjablonen onderscheiden. Deze eigenschap kan bijvoorbeeld worden ingesteld op **&quot;-dev&quot;** om aan te geven dat *&quot;/../../../appconfig-dev&quot;* dient te worden gebruikt (in tegenstelling tot *&quot;/../../../appconfig&quot;*).
+* ***configSuffix - String*** - een tekenreeks die moet worden toegevoegd aan het pad dat wordt aangegeven met de eigenschap &quot;phonegap-exportTemplate&quot; van app-content. Hiermee kunt u verschillende exportsjablonen onderscheiden. Deze eigenschap kan bijvoorbeeld worden ingesteld op **&quot;-dev&quot;** aangeven dat *&quot;/../../../appconfig-dev&quot;* dient te worden gebruikt (in tegenstelling tot *&quot;/../../../appconfig&quot;*).
 
 **app-assets** Bevat alle elementen die aan een app-instantie zijn gekoppeld. Deze handler bevat alle elementen die zijn gevonden onder het opgegeven pad, samen met alle elementen waarnaar wordt verwezen door de eigenschap appAssetPath van een app-instantie.
 
@@ -179,7 +179,7 @@ De handler mobileappsoffers breidt de handler mobileappspages uit en voegt de vo
 * ***selector - String*** - moet worden ingesteld op tandaard
 * ***path - String***- de weg naar het merk van de campagne
 
-**mobileappconfig** De handler voor het synchroniseren van inhoud met mobileappconfig biedt een manier om JSON-gegevens te injecteren in de MobileAppsConfig.json. Als ontwikkelaars van een providerklasse een provider-klasse willen registreren, voegen zij hun MobileAppsInfoProvider-klasse toe aan de lijst met providers. De handler doorloopt de lijst met MobileAppsInfoProviders en stelt de provider in staat gegevens te injecteren in het resulterende JSON-bestand. De lijst met eigenschappen die deze handler ondersteunt, is:
+**mobileappconfig** De handler voor het synchroniseren van inhoud met mobileappconfig biedt een manier om JSON-gegevens te injecteren in de MobileAppsConfig.json. Als ontwikkelaars van een providerklasse een provider-klasse willen registreren, voegen zij hun MobileAppsInfoProvider-klasse toe aan de lijst met providers. De handler doorloopt de lijst met MobileAppsInfoProviders en stelt de provider in staat gegevens te injecteren in het resulterende JSON-bestand. De lijst met eigenschappen die door deze handler worden ondersteund, is:
 
 * ***pad **-**String*** - het pad naar een appinstantie-knooppunt met pge-type=app-instance of een RT die /libs/mobileapps/core/components/instance uitbreidt
 * ***providers - String*** `[]` - de lijst met volledig gekwalificeerde MobileAppsInfoProviders
@@ -202,7 +202,7 @@ Het is mogelijk om veelvoudige mobileappconfig managers te hebben die elk met ee
 * Uw configuratie of revisie exporteren op apparaat
 * Als rendering mislukt, controleert u op ontbrekende items *stijlen/middelen/bibliotheken* of controleer op ongeldige paden naar *stijlen/middelen/bibliotheken*
 
-**Logboekregistratie** Enable ContentSync Debug Logboekregistratie via OSGI logger configuraties on package `com.day.cq.contentsync` Hierdoor kunt u bijhouden welke handlers werden uitgevoerd en of ze de cache hebben bijgewerkt en het cache hebben bijgewerkt.
+**Logboekregistratie** Enable ContentSync Debug Logboekregistratie via OSGI logger configuraties on package `com.day.cq.contentsync` Dit zal u laten volgen welke managers in werking stelden en of zij het geheime voorgeheugen bijwerkten en het bijwerken van het geheime voorgeheugen rapporteerden.
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -213,4 +213,4 @@ Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ont
 
 >[!NOTE]
 >
->Als u aan de slag wilt gaan met de ontwikkeling van een AEM Mobile-app, klikt u op [hier](/help/mobile/getting-started-aem-mobile.md).
+>Om aan de slag te gaan met de ontwikkeling van AEM Mobile-apps klikt u op [hier](/help/mobile/getting-started-aem-mobile.md).

@@ -10,9 +10,9 @@ discoiquuid: 87f5f9f5-2d03-4565-830e-eacc3757e542
 docset: aem65
 feature: Form Data Model
 exl-id: 9a73a643-7ad4-49aa-a971-08d52679158d
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1214'
+source-wordcount: '1212'
 ht-degree: 0%
 
 ---
@@ -93,11 +93,11 @@ Zie voor meer informatie:
 
 ## Voorvertonen met voorbeeldgegevens {#preview-ic}
 
-Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten genereren en bewerken in het formuliergegevensmodel. U kunt deze gegevens gebruiken om interactieve communicatie en adaptieve formulieren voor te vertonen en te testen. U moet de voorbeeldgegevens genereren voordat u een voorvertoning weergeeft zoals beschreven in [Werken met formuliergegevensmodel](../../forms/using/work-with-form-data-model.md#sample).
+Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelobjecten in het formuliergegevensmodel genereren en bewerken. U kunt deze gegevens gebruiken om interactieve communicatie en adaptieve formulieren voor te vertonen en te testen. U moet de voorbeeldgegevens genereren voordat u een voorvertoning weergeeft zoals beschreven in [Werken met formuliergegevensmodel](../../forms/using/work-with-form-data-model.md#sample).
 
 Een voorvertoning weergeven van een interactieve communicatie met voorbeeldgegevens van het formuliergegevensmodel:
 
-1. Navigeer bij AEM instantie van de auteur naar **[!UICONTROL Forms > Forms & Documents]**.
+1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms > Forms & Documents]**.
 1. Selecteer een interactieve communicatie en tik op **[!UICONTROL Preview]** in de werkbalk om **[!UICONTROL Web Channel]**, **[!UICONTROL Print Channel]**, of **[!UICONTROL Both Channels]** om een voorvertoning van de interactieve communicatie te bekijken.
 1. In de voorvertoning [*kanaal*] ervoor te zorgen dat **[!UICONTROL Test Data of Form Data Model]** is geselecteerd en tikt **[!UICONTROL Preview]**.
 
@@ -129,16 +129,16 @@ Als u de verzendactie van het formuliergegevensmodel wilt configureren, opent u 
 
 Bij het verzenden van formulieren worden gegevens voor het geconfigureerde gegevensmodelobject naar de desbetreffende gegevensbron geschreven.
 
-![gegevensverzending](assets/data-submission.png)
+![indiening van gegevens](assets/data-submission.png)
 
 U kunt ook formulierbijlagen verzenden naar een gegevensbron met binaire objecteigenschappen van gegevensmodellen. Ga als volgt te werk om bijlagen naar een JDBC-gegevensbron te verzenden:
 
 1. Voeg een gegevensmodelobject dat een binaire eigenschap bevat toe aan het formuliergegevensmodel.
-1. Sleep in het adaptieve formulier de **[!UICONTROL File Attachment]** van de browser Components op het adaptieve formulier.
+1. Sleep de **[!UICONTROL File Attachment]** van de Componentbrowser naar het adaptieve formulier.
 1. Tik om de toegevoegde component te selecteren en tik ![settings_icon](assets/settings_icon.png) om de browser van Eigenschappen voor de component te openen.
 1. Tik in het veld Bindverwijzing op ![mapSearch_18](assets/foldersearch_18.png) en navigeer om de binaire eigenschap te selecteren die u in het formuliergegevensmodel hebt toegevoegd. Configureer desgewenst andere eigenschappen.
 
-   Tikken ![check-button](assets/check-button.png) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
+   Tikken ![knop controleren](assets/check-button.png) om de eigenschappen op te slaan. Het bijslagveld is nu gebonden aan de binaire eigenschap van het formuliergegevensmodel.
 
 1. Schakel in het gedeelte Verzending van de eigenschappen van de container van adaptieve formulieren de optie **[!UICONTROL Submit Form Attachments]**. De bijlage in het binaire-eigenschapveld wordt naar de gegevensbron verzonden bij het verzenden van het formulier.
 
@@ -150,4 +150,4 @@ Bijvoorbeeld, haalt de volgende regel de dienst aan die Werknemeridentiteitskaar
 
 ![oproepdienst](assets/invoke-service.png)
 
-Daarnaast kunt u de opdracht `guidelib.dataIntegrationUtils.executeOperation` API om een JavaScript in de coderedacteur voor de regelredacteur te schrijven. Voor API-details raadpleegt u [API om formuliergegevensmodelservice aan te roepen](/help/forms/using/invoke-form-data-model-services.md).
+Daarnaast kunt u de opdracht `guidelib.dataIntegrationUtils.executeOperation` API om een JavaScript in de coderedacteur voor de regelredacteur te schrijven. Zie voor API-details [API om formuliergegevensmodelservice aan te roepen](/help/forms/using/invoke-form-data-model-services.md).

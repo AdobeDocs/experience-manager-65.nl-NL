@@ -4,9 +4,9 @@ description: Een proxy is een [!DNL Experience Manager] instantie die proxyworke
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '844'
+source-wordcount: '843'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] gebruikt een volmacht om verwerking voor bepaalde taken te verdelen.
 
-Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processors die een taak afhandelen en een resultaat maken. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een [!DNL Assets] Deze proxy kan worden gebruikt voor het laden van elementen voor rendering binnen elementen. De [IDS-proxyworker](indesign.md) gebruikt een [!DNL Adobe InDesign] Server om bestanden te verwerken voor gebruik in middelen.
+Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processoren die een taak afhandelen en een resultaat maken. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een [!DNL Assets] Deze proxy kan worden gebruikt voor het laden van elementen voor rendering binnen elementen. Bijvoorbeeld de [IDS-proxyworker](indesign.md) gebruikt een [!DNL Adobe InDesign] Server om bestanden te verwerken voor gebruik in middelen.
 
 Wanneer de proxy een aparte [!DNL Experience Manager] -instantie wordt de belasting op de [!DNL Experience Manager] ontwerpinstantie(s). Standaard, [!DNL Assets] voert de taken voor middelenverwerking uit in dezelfde JVM (extern via Proxy) om de belasting op de [!DNL Experience Manager] ontwerpinstantie.
 
@@ -27,9 +27,9 @@ Een volmacht is beschikbaar via de Server van HTTP wanneer het wordt gevormd om 
 
 * `job`
 
-   **Vereisten**: de parameter `jobevent` moet als geserialiseerde waardekaart worden geplaatst. Hiermee maakt u een `Event` voor een taakprocessor.
+  **Vereisten**: de parameter `jobevent` moet als geserialiseerde waardekaart worden geplaatst. Hiermee maakt u een `Event` voor een taakprocessor.
 
-   **Resultaat**: Hiermee wordt een nieuwe taak toegevoegd. Als dit lukt, wordt een unieke taak-id geretourneerd.
+  **Resultaat**: Voegt een nieuwe taak toe. Als dit lukt, wordt een unieke taak-id geretourneerd.
 
 ```shell
 curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
@@ -38,9 +38,9 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Vereisten**: de parameter `jobid` moet worden ingesteld.
+  **Vereisten**: de parameter `jobid` moet worden ingesteld.
 
-   **Resultaat**: Retourneert een JSON-representatie van het resultaatknooppunt zoals gemaakt door de taakprocessor.
+  **Resultaat**: Geeft een JSON-representatie van het resultaatknooppunt zoals gemaakt door de taakprocessor.
 
 ```shell
 curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
@@ -49,9 +49,9 @@ curl -u admin:admin -F":operation=result" -F"jobid=xxxxxxxxxxxx"
 
 * `resource`
 
-   **Vereisten**: de parameter jobid moet worden ingesteld.
+  **Vereisten**: de parameter jobid moet worden ingesteld.
 
-   **Resultaat**: Retourneert een resource die aan de opgegeven taak is gekoppeld.
+  **Resultaat**: Geeft een resource terug die aan de opgegeven taak is gekoppeld.
 
 ```shell
 curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
@@ -60,9 +60,9 @@ curl -u admin:admin -F":operation=resource" -F"jobid=xxxxxxxxxxxx"
 
 * `remove`
 
-   **Vereisten**: de parameter jobid moet worden ingesteld.
+  **Vereisten**: de parameter jobid moet worden ingesteld.
 
-   **Resultaten**: Hiermee wordt een taak verwijderd als deze wordt gevonden.
+  **Resultaten**: verwijdert een taak indien gevonden.
 
 ```shell
 curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
@@ -115,7 +115,7 @@ Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via cl
 
 >[!NOTE]
 >
->Zie [Configuratie van InDesign Server Proxy Worker](indesign.md#configuring-the-proxy-worker-for-indesign-server) en [Configuratie Cloud Services](../sites-developing/extending-cloud-config.md) voor meer informatie .
+>Zie [Configuratie van proxyworker voor InDesign Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) en [Configuratie Cloud Servicen](../sites-developing/extending-cloud-config.md) voor meer informatie .
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -136,7 +136,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 De [IDS-proxyworker](indesign.md) is een voorbeeld van een [!DNL Assets] een proxyworker die al buiten de box is geleverd om de verwerking van InDesign-elementen uit te besteden.
 
-U kunt ook uw eigen [!DNL Assets] proxy-worker om een gespecialiseerde worker te maken die uw [!DNL Assets] verwerkingstaken.
+U kunt uw ook ontwikkelen en configureren [!DNL Assets] proxy-worker om een gespecialiseerde worker te maken die uw [!DNL Assets] verwerkingstaken.
 
 Als u uw eigen aangepaste proxyworker wilt instellen, moet u:
 
@@ -158,13 +158,13 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 
 >[!NOTE]
 >
->In de volgende stappen worden equivalenten van InDesign aangegeven als referentievoorbeelden.
+>In de volgende stappen worden equivalenten van InDesigns aangegeven als referentievoorbeelden.
 
 1. A [Verkooptaak](https://sling.apache.org/site/eventing-and-jobs.html) wordt gebruikt, zodat moet u een baanonderwerp voor uw gebruiksgeval bepalen.
 
    Zie als voorbeeld `IDSJob.IDS_EXTENDSCRIPT_JOB` voor de IDS-proxyworker.
 
-1. De externe stap wordt gebruikt om de gebeurtenis te activeren en dan te wachten tot dat wordt gebeëindigd; dit wordt gedaan door opiniepeilingen over de id . U moet uw eigen stap ontwikkelen om nieuwe functionaliteit uit te voeren.
+1. De externe stap wordt gebruikt om de gebeurtenis te activeren en dan te wachten tot dat wordt gebeëindigd; dit wordt gedaan door op identiteitskaart te pollen. U moet uw eigen stap ontwikkelen om nieuwe functionaliteit uit te voeren.
 
    Een `WorkflowExternalProcess`, dan gebruik de API JobService en uw baanonderwerp om een baangebeurtenis voor te bereiden en het te verzenden naar JobService (een dienst OSGi).
 
@@ -174,7 +174,7 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 
    Zie als voorbeeld `IDSJobProcessor.java` voor de IDS-proxyworker.
 
-1. Gebruik van `ProxyUtil.java` in dam-commons. Hierdoor kunt u taken naar werknemers verzenden met de proxy voor moederdieren.
+1. Gebruik van `ProxyUtil.java` in dam-commons. Hiermee kunt u taken naar werknemers verzenden met de proxy voor moederdieren.
 
 >[!NOTE]
 >

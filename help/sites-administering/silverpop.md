@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 01029a80-f80e-450c-9c73-16d0662af26d
 docset: aem65
 exl-id: 6c4b8aaa-bda0-4066-a3fc-d91a5ab1621c
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '589'
+source-wordcount: '588'
 ht-degree: 1%
 
 ---
@@ -36,13 +36,13 @@ Nadat Silverpop Engage is geconfigureerd, kunt u nieuwsbrieven of e-mails public
 
 ## Een Silverpop-configuratie maken {#creating-a-silverpop-configuration}
 
-Silverpop-configuraties kunnen worden toegevoegd door **Cloud Services**, **Gereedschappen**, of **API-eindpunten**. Alle methoden worden beschreven in deze sectie.
+Silverpop-configuraties kunnen worden toegevoegd door **Cloud Servicen**, **Gereedschappen**, of **API-eindpunten**. Alle methoden worden beschreven in deze sectie.
 
-### Silverpop configureren met Cloud Services {#configuring-silverpop-via-cloudservices}
+### Silverpop configureren met Cloud Servicen {#configuring-silverpop-via-cloudservices}
 
-Een Silverpop-configuratie in Cloud Services maken:
+Een Silverpop-configuratie in Cloud Servicen maken:
 
-1. Tik in AEM of klik op **Gereedschappen** > **Implementatie** > **Cloud Services**. (Of rechtstreeks toegang tot `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Tik in AEM of klik op **Gereedschappen** > **Implementatie** > **Cloud Servicen**. (Of rechtstreeks toegang tot `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Klik onder services van derden op **Silverop Engage** en vervolgens **Configureren**. Het Silverpop-configuratievenster wordt geopend.
 
    >[!NOTE]
@@ -61,21 +61,21 @@ Een Silverpop-configuratie in Cloud Services maken:
 
 Een Silverpop-configuratie maken in de gereedschappen:
 
-1. Tik in AEM of klik op **Gereedschappen** > **Implementatie** > **Cloud Services**. Of navigeer daar rechtstreeks door naar `https://<hostname>:<port>/misadmin#/etc`.
-1. Selecteren **Gereedschappen** vervolgens **Cloud Services-configuraties,** dan **Silverpop-engine**.
+1. Tik in AEM of klik op **Gereedschappen** > **Implementatie** > **Cloud Servicen**. Of navigeer daar rechtstreeks door naar `https://<hostname>:<port>/misadmin#/etc`.
+1. Selecteren **Gereedschappen** vervolgens **configuraties van Cloud Servicen,** dan **Silverpop-engine**.
 1. Klikken **Nieuw**.
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
 1. In de **Pagina maken** venster, voert u de **Titel** en eventueel de **Naam** en klik op **Maken**.
-1. Ga de configuratieinformatie in zoals die in stap 4 in de vorige procedure wordt geschetst. Volg die procedure zodat kunt u voltooien vormend Silverpop.
+1. Voer de configuratiegegevens in zoals beschreven in stap 4 van de vorige procedure. Volg die procedure zodat kunt u voltooien vormend Silverpop.
 
 ### Meerdere configuraties toevoegen {#adding-multiple-configurations}
 
 Meerdere configuraties toevoegen:
 
-1. Klik op de welkomstpagina op **Cloud Services** en klik op **Silverpop-engine**. Klikken **Configuraties tonen** die wordt weergegeven als een of meer Silverpop-configuraties beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
-1. Klik op de knop **+** ondertekenen naast Beschikbare configuraties. Het opent de **Configuraties maken** venster. Volg de vorige configuratieprocedure zodat kunt u een configuratie tot stand brengen.
+1. Klik op de welkomstpagina op **Cloud Servicen** en klik op **Silverpop-engine**. Klikken **Configuraties tonen** die wordt weergegeven als een of meer Silverpop-configuraties beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
+1. Klik op de knop **+** ondertekenen naast Beschikbare configuraties. Het opent de **Configuraties maken** venster. Volg de vorige configuratieprocedure zodat kunt u een configuratie creëren.
 
 ### API-eindpunten configureren voor verbinding met Silverpop {#configuring-api-end-points-for-connecting-to-silverpop}
 

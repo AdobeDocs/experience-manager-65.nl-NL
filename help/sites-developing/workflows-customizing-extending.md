@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3584'
+source-wordcount: '3582'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Het maken van een aangepaste workflowstap omvat de volgende activiteiten:
 * Ontwikkel de component van de werkschemastap.
 * Voer de step functionaliteit als dienst OSGi of een manuscript ECMA uit.
 
-U kunt ook [communiceren met uw workflows vanuit uw programma&#39;s en scripts](/help/sites-developing/workflows-program-interaction.md).
+U kunt [communiceren met uw workflows vanuit uw programma&#39;s en scripts](/help/sites-developing/workflows-program-interaction.md).
 
 ## Workflowstapcomponenten - De basisbeginselen {#workflow-step-components-the-basics}
 
@@ -37,13 +37,13 @@ Een workflowcomponent definieert de vormgeving en het gedrag van de stap bij het
 * Het dialoogvenster Bewerken voor het configureren van componenteigenschappen.
 * De service of het script dat wordt uitgevoerd bij uitvoering.
 
-Zoals met [alle componenten](/help/sites-developing/components.md), workflowstapcomponenten overerven van de component die is opgegeven voor de component `sling:resourceSuperType` eigenschap. Het volgende diagram toont de hiërarchie van `cq:component` knooppunten die de basis vormen van alle workflowstapcomponenten. Het diagram bevat ook de **Processtap**, **Stap deelnemer**, en **Stap dynamische deelnemer** componenten, aangezien dit de gemeenschappelijkste (en fundamentele) uitgangspunt voor het ontwikkelen van de componenten van de douanestappen zijn.
+Zoals met [alle componenten](/help/sites-developing/components.md), workflowstapcomponenten overerven van de component die voor de component `sling:resourceSuperType` eigenschap. Het volgende diagram toont de hiërarchie van `cq:component` knooppunten die de basis vormen van alle workflowstapcomponenten. Het diagram bevat ook de **Processtap**, **Stap deelnemer**, en **Dynamische deelnemersstap** componenten, aangezien dit de gemeenschappelijkste (en fundamentele) uitgangspunt voor het ontwikkelen van de componenten van de douanestappen zijn.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 
 >[!CAUTION]
 >
->U ***moet*** niets wijzigen in de `/libs` pad.
+>U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
 >
 >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
@@ -52,7 +52,7 @@ Zoals met [alle componenten](/help/sites-developing/components.md), workflowstap
 >1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs` krachtens `/apps`
 >2. Breng wijzigingen aan in `/apps`
 
-De `/libs/cq/workflow/components/model/step` component is de dichtstbijzijnde gangbare voorouder van de **Processtap**, **Stap deelnemer**, en **Stap dynamische deelnemer**, die alle de volgende items overerven:
+De `/libs/cq/workflow/components/model/step` component is de dichtstbijzijnde gangbare voorouder van de **Processtap**, **Stap deelnemer**, en **Dynamische deelnemersstap**, die alle de volgende items overerven:
 
 * `step.jsp`
 
@@ -65,7 +65,7 @@ De `/libs/cq/workflow/components/model/step` component is de dichtstbijzijnde ga
   Een dialoogvenster met de volgende tabbladen:
 
    * **Vaak**: voor het bewerken van de titel en beschrijving.
-   * **Geavanceerd**: voor het bewerken van eigenschappen voor e-mailmeldingen.
+   * **Geavanceerd**: voor het bewerken van eigenschappen van e-mailmeldingen.
 
   ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
@@ -82,7 +82,7 @@ De volgende objecten zijn beschikbaar (afhankelijk van het type stap) in ECMA-sc
 * [WorkflowData](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowData.html) workflowData
 * `args`: array met de procesargumenten.
 
-* `sling`: toegang tot andere osgi - diensten.
+* `sling`: toegang tot andere osgi-diensten.
 * `jcrSession`
 
 ### MetaDataMaps {#metadatamaps}
@@ -97,13 +97,13 @@ Beide `Workflow` en `WorkflowData` metadatamaps worden over de gehele werkstroom
 
 ## Aangepaste workflowonderdelen maken {#creating-custom-workflow-step-components}
 
-Workflowstapcomponenten kunnen [gemaakt op dezelfde manier als een andere component](/help/sites-developing/components.md).
+Componenten voor workflowstappen kunnen [gemaakt op dezelfde manier als een andere component](/help/sites-developing/components.md).
 
 Om van één van de (bestaande) componenten van de basisstap over te erven, voeg het volgende bezit aan toe `cq:Component` knooppunt:
 
 * Naam: `sling:resourceSuperType`
 * Type: `String`
-* Waarde: Een van de volgende paden die wordt omgezet in een basiscomponent:
+* Waarde: een van de volgende paden die wordt omgezet in een basiscomponent:
 
    * `cq/workflow/components/model/process`
    * `cq/workflow/components/model/participant`
@@ -117,7 +117,7 @@ Gebruik de volgende procedure om standaardwaarden op te geven voor de **Titel** 
 >
 >De veldwaarden worden weergegeven op de stapinstantie wanneer aan beide volgende voorwaarden wordt voldaan:
 >
->* In het dialoogvenster Bewerken van de stap worden de titel en beschrijving opgeslagen op de volgende locaties: >
+>* In het dialoogvenster Bewerken van de stap worden de titel en de beschrijving opgeslagen op de volgende locaties: >
 >* `./jcr:title`
 >* `./jcr:description` locaties
 >
@@ -170,9 +170,9 @@ De waarde die in dit tekstveld wordt opgegeven, wordt toegevoegd aan de instanti
 
 Elke component van de basisstap laat de ontwikkelaars van het werkschemamodel toe om de volgende zeer belangrijke eigenschappen in ontwerptijd te vormen:
 
-* Processtap: De service of het ECMA-script dat bij uitvoering moet worden uitgevoerd.
-* Stap deelnemer: De id van de gebruiker aan wie het gegenereerde werkitem is toegewezen.
-* Stap dynamische deelnemer: De dienst of het manuscript ECMA dat identiteitskaart van de gebruiker selecteert die het het werkpunt wordt toegewezen.
+* Processtap: de service of het ECMA-script dat bij uitvoering moet worden uitgevoerd.
+* Stap van de deelnemer: identiteitskaart van de gebruiker die het geproduceerde het werkpunt wordt toegewezen.
+* De dynamische Stap van de Deelnemer: De dienst of het manuscript ECMA dat identiteitskaart van de gebruiker selecteert die het het werkpunt wordt toegewezen.
 
 Om de component voor gebruik in een specifiek werkschemascenario te concentreren, vorm de belangrijkste eigenschap in het ontwerp en verwijder de capaciteit voor modelontwikkelaars om het te veranderen.
 
@@ -188,17 +188,17 @@ Om de component voor gebruik in een specifiek werkschemascenario te concentreren
    * Naam: `cq:formParameters`
    * Type: `nt:unstructured`
 
-1. Voeg een `String` aan de `cq:formParameters` knooppunt. Het supertype van de component bepaalt de naam van het bezit:
+1. Voeg een `String` eigenschap aan de `cq:formParameters` knooppunt. Het supertype van de component bepaalt de naam van het bezit:
 
-   * Processtap: `PROCESS`
+   * Processtap `PROCESS`
    * Stap deelnemer: `PARTICIPANT`
    * Stap dynamische deelnemer: `DYNAMIC_PARTICIPANT`
 
 1. Geef de waarde van de eigenschap op:
 
-   * `PROCESS`: Het pad naar het ECMA-script of de PID van de service die het stapgedrag implementeert.
+   * `PROCESS`: De weg aan het manuscript ECMA of PID van de dienst die het stapgedrag uitvoert.
    * `PARTICIPANT`: De id van de gebruiker aan wie het werkitem is toegewezen.
-   * `DYNAMIC_PARTICIPANT`: Het pad naar het ECMA-script of de PID van de service die de gebruiker selecteert om het werkitem toe te wijzen.
+   * `DYNAMIC_PARTICIPANT`: De weg aan het manuscript ECMA of PID van de dienst die de gebruiker selecteert om het het werkpunt toe te wijzen.
 
 1. Om de capaciteit van modelontwikkelaars te verwijderen om uw bezitswaarden te veranderen, vervang de dialoog van het componentensupertype.
 
@@ -227,17 +227,17 @@ Voer de volgende procedure op uw nieuwe component uit (zie [Aangepaste workflowo
 
    * Naam: `FORM_PATH`
    * Type: `String`
-   * Waarde: Het pad dat wordt omgezet in het formulier
+   * Waarde: het pad dat wordt omgezet in het formulier
 
 1. Als u een aangepast dialoogvenster wilt weergeven wanneer de gebruiker het werkitem heeft voltooid, voegt u de volgende eigenschap toe aan de `cq:formParameters` node
 
    * Naam: `DIALOG_PATH`
    * Type: `String`
-   * Waarde: Het pad dat wordt omgezet in het dialoogvenster
+   * Waarde: het pad dat wordt omgezet in het dialoogvenster
 
 ### Werking voor Workflowstap configureren {#configuring-the-workflow-step-runtime-behavior}
 
-Onder de `cq:Component` knooppunt, toevoegen `cq:EditConfig` knooppunt. Hieronder wordt een `nt:unstructured` node (moet een naam hebben `cq:formParameters`) en aan dat knooppunt de volgende eigenschappen toevoegen:
+Onder de `cq:Component` knooppunt, toevoegen `cq:EditConfig` knooppunt. Hieronder ziet u een `nt:unstructured` node (moet een naam hebben `cq:formParameters`) en aan dat knooppunt de volgende eigenschappen toevoegen:
 
 * Naam: `PROCESS_AUTO_ADVANCE`
 
@@ -245,12 +245,12 @@ Onder de `cq:Component` knooppunt, toevoegen `cq:EditConfig` knooppunt. Hieronde
    * Waarde:
 
       * wanneer ingesteld op `true` de workflow wordt in die stap uitgevoerd en vervolg - dit is standaard en ook aanbevolen
-      * wanneer `false`, de workflow zal worden uitgevoerd en stopgezet; hiervoor is extra verwerking nodig, dus `true` wordt aanbevolen
+      * wanneer `false`, de workflow wordt uitgevoerd en gestopt; hiervoor is extra verwerking nodig, dus `true` wordt aanbevolen
 
 * Naam: `DO_NOTIFY`
 
    * Type: `Boolean`
-   * Waarde: Hiermee wordt aangegeven of e-mailmeldingen moeten worden verzonden voor stappen voor gebruikersdeelname (en wordt ervan uitgegaan dat de mailserver correct is geconfigureerd)
+   * Waarde: geeft aan of e-mailmeldingen moeten worden verzonden voor stappen voor gebruikersdeelname (en gaat ervan uit dat de mailserver correct is geconfigureerd)
 
 ## Gegevens behouden en openen {#persisting-and-accessing-data}
 
@@ -262,7 +262,7 @@ De metagegevens van de workflow worden opgeslagen in een [`MetaDataMap`](#metada
 
 #### Java {#java}
 
-De methode voor het uitvoeren van de opdracht `WorkflowProcess` de uitvoering wordt goedgekeurd `WorkItem` object. Gebruik dit object om de `WorkflowData` object voor de huidige werkstroominstantie. In het volgende voorbeeld wordt een item aan de workflow toegevoegd `MetaDataMap` object en logt elk item vervolgens in. Het item (&quot;mijnsleutel&quot;, &quot;Mijn stapwaarde&quot;) is beschikbaar voor volgende stappen in de workflow.
+De methode voor het uitvoeren van het `WorkflowProcess` de uitvoering wordt goedgekeurd `WorkItem` object. Gebruik dit object om de `WorkflowData` object voor de huidige werkstroominstantie. In het volgende voorbeeld wordt een item aan de workflow toegevoegd `MetaDataMap` object en logt elk item vervolgens in. Het item (&quot;mijnsleutel&quot;, &quot;Mijn stapwaarde&quot;) is beschikbaar voor volgende stappen in de workflow.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -316,9 +316,9 @@ De workflow `MetaDataMap` is beschikbaar voor Java- en ECMA-scriptprocesimplemen
 
 * In ECMA manuscriptimplementaties, is de waarde beschikbaar gebruikend `args` en `metadata` variabelen.
 
-### Voorbeeld: De argumenten van de processtapcomponent ophalen {#example-retrieving-the-arguments-of-the-process-step-component}
+### Voorbeeld: de argumenten van de processtapcomponent ophalen {#example-retrieving-the-arguments-of-the-process-step-component}
 
-Het dialoogvenster Bewerken van het dialoogvenster **Processtap** bevat de **Argumenten** eigenschap. De waarde van de **Argumenten** eigenschap wordt opgeslagen in de metagegevens van de workflow en is gekoppeld aan de eigenschap `PROCESS_ARGS` toets.
+Het dialoogvenster Bewerken van het dialoogvenster **Processtap** bevat de **Argumenten** eigenschap. De waarde van **Argumenten** eigenschap wordt opgeslagen in de metagegevens van de workflow en is gekoppeld aan de eigenschap `PROCESS_ARGS` toets.
 
 In het volgende diagram wordt de waarde van de **Argumenten** eigenschap is `argument1, argument2`:
 
@@ -326,7 +326,7 @@ In het volgende diagram wordt de waarde van de **Argumenten** eigenschap is `arg
 
 #### Java {#java-1}
 
-De volgende Java-code is de `execute` methode voor een `WorkflowProcess` uitvoering. De methode registreert de waarde in de `args` `MetaDataMap` die verband houdt met de `PROCESS_ARGS` toets.
+De volgende Java-code is `execute` methode voor `WorkflowProcess` uitvoering. De methode registreert de waarde in de `args` `MetaDataMap` die verband houdt met de `PROCESS_ARGS` toets.
 
 ```java
 public void execute(WorkItem item, WorkflowSession session, MetaDataMap args) throws WorkflowException {
@@ -361,7 +361,7 @@ log.info("currentDateInMillisKey "+ graniteWorkItem.getWorkflowData().getMetaDat
 >In deze sectie wordt beschreven hoe u met argumenten voor processtappen werkt. De informatie is ook van toepassing op dynamische deelnemerselecties.
 
 >[!NOTE]
->Zie Voorbeeld voor een ander voorbeeld van het opslaan van componenteigenschappen in workflowmetagegevens: Creeer een Stap van het Werkschema van de Logger. In dit voorbeeld wordt een dialoogvenster weergegeven waarin de metagegevenswaarde wordt gekoppeld aan een andere sleutel dan PROCESS_ARGS.
+>Voor een ander voorbeeld van het opslaan van componenteneigenschappen in werkschemagegevens, zie Voorbeeld: Creeer een Stap van de Werkstroom van het Registratieprogramma. In dit voorbeeld wordt een dialoogvenster weergegeven waarin de metagegevenswaarde wordt gekoppeld aan een andere sleutel dan PROCESS_ARGS.
 
 ### Scripts en procesargumenten {#scripts-and-process-arguments}
 
@@ -389,7 +389,7 @@ Een processtap definiëren als een OSGI-servicecomponent (Java-bundel):
 
    >[!NOTE]
    >
-   >De pakketnaam moet aan de `<*Private-Package*>` van de `maven-bundle-plugin` configuratie.
+   >De pakketnaam moet worden toegevoegd aan de `<*Private-Package*>` van de `maven-bundle-plugin` configuratie.
 
 1. Voeg het SCR bezit toe `process.label`  en stelt de waarde in die u nodig hebt. Dit zal de naam zijn die uw processtap zoals wanneer het gebruiken van generische wordt vermeld **Processtap** component. Zie het onderstaande voorbeeld.
 1. In de **Modellen** de redacteur, voegt de processtap aan het werkschema toe gebruikend generisch **Processtap** component.
@@ -529,7 +529,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 Het script gebruiken:
 
 1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het op in de onderstaande opslagplaats `//apps/workflow/scripts/`
-1. Een titel opgeven die het script identificeert in het dialoogvenster **Processtap** bewerken, voegt u de volgende eigenschappen toe aan het dialoogvenster `jcr:content` knooppunt van uw script:
+1. Om een titel te specificeren die het manuscript in **Processtap** bewerken, voegt u de volgende eigenschappen toe aan het dialoogvenster `jcr:content` knooppunt van uw script:
 
    | Naam | Type | Waarde |
    |---|---|---|
@@ -540,9 +540,9 @@ Het script gebruiken:
 
 ## Deelnemerkiezers ontwikkelen {#developing-participant-choosers}
 
-U kunt deelnemerskiezers ontwikkelen voor **Stap dynamische deelnemer** componenten.
+U kunt deelnemerskiezers ontwikkelen voor **Dynamische deelnemersstap** componenten.
 
-Wanneer een **Stap dynamische deelnemer** is gestart tijdens een werkstroom, moet de stap bepalen aan welke deelnemer het gegenereerde werkitem kan worden toegewezen. Hiervoor moet u een van de volgende stappen uitvoeren:
+Wanneer een **Dynamische deelnemersstap** is gestart tijdens een werkstroom, moet de stap bepalen aan welke deelnemer het gegenereerde werkitem kan worden toegewezen. Hiervoor moet u een van de volgende stappen uitvoeren:
 
 * verzendt een verzoek naar een dienst OSGi
 * voert een manuscript ECMA uit om de deelnemer te selecteren
@@ -551,7 +551,7 @@ U kunt de dienst of een manuscript ontwikkelen ECMA dat de deelnemer volgens de 
 
 >[!NOTE]
 >
->Voor informatie over het koppelen van uw **Stap dynamische deelnemer** component met de dienst of het manuscript, zie [Stap dynamische deelnemer](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) of [De stapimplementatie overschrijven](#persisting-and-accessing-data).
+>Voor informatie over het koppelen van uw **Dynamische deelnemersstap** component met de dienst of het manuscript, zie [Dynamische deelnemersstap](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) of [De stapimplementatie overschrijven](#persisting-and-accessing-data).
 
 ### Een kiezer voor deelnemers ontwikkelen met een Java-klasse {#developing-a-participant-chooser-using-a-java-class}
 
@@ -561,7 +561,7 @@ Een deelnemersstap definiëren als een OSGI-servicecomponent (Java-klasse):
 
    Maak de bundel en plaats deze in de OSGI-container.
 
-1. Voeg het SCR bezit toe `chooser.label` en stelt de waarde naar wens in. Dit is de naam die uw deelnemerkiezer in de lijst krijgt met **Stap dynamische deelnemer** component. Zie het voorbeeld:
+1. Voeg het SCR bezit toe `chooser.label` en stelt de waarde naar wens in. Dit is de naam die uw deelnemerkiezer in de lijst krijgt met **Dynamische deelnemersstap** component. Zie het voorbeeld:
 
    ```java
    package com.adobe.example.workflow.impl.process;
@@ -610,7 +610,7 @@ Een deelnemersstap definiëren als een OSGI-servicecomponent (Java-klasse):
    }
    ```
 
-1. In de **Modellen** de redacteur, voegt de dynamische deelnemersstap aan het werkschema toe gebruikend generisch **Stap dynamische deelnemer** component.
+1. In de **Modellen** de redacteur, voegt de dynamische deelnemersstap aan het werkschema toe gebruikend generisch **Dynamische deelnemersstap** component.
 1. Selecteer in het dialoogvenster Bewerken de optie **Deelnemerkiezer** en selecteert u de gewenste implementatie.
 1. Als u argumenten in uw code gebruikt, stelt u **Procesargumenten**. In dit voorbeeld: `/content/we-retail/de`.
 1. Sla de wijzigingen op voor zowel de stap als het workflowmodel.
@@ -646,14 +646,14 @@ function getParticipant() {
 ```
 
 1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het op in de onderstaande opslagplaats `//apps/workflow/scripts`
-1. Een titel opgeven die het script identificeert in het dialoogvenster **Processtap** bewerken, voegt u de volgende eigenschappen toe aan het dialoogvenster `jcr:content` knooppunt van uw script:
+1. Om een titel te specificeren die het manuscript in **Processtap** bewerken, voegt u de volgende eigenschappen toe aan het dialoogvenster `jcr:content` knooppunt van uw script:
 
    | Naam | Type | Waarde |
    |---|---|---|
    | `jcr:mixinTypes` | `Name[]` | `mix:title` |
    | `jcr:title` | `String` | De naam die moet worden weergegeven in het dialoogvenster Bewerken. |
 
-1. Bewerk de [Stap dynamische deelnemer](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) en geeft u het script op dat moet worden gebruikt.
+1. Bewerk de [Dynamische deelnemersstap](/help/sites-developing/workflows-step-ref.md#dynamic-participant-step) en geeft u het script op dat moet worden gebruikt.
 
 ## Workflowpakketten verwerken {#handling-workflow-packages}
 
@@ -667,11 +667,11 @@ function getParticipant() {
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
 >
 
-U kunt workflowstappen ontwikkelen om de pakketbronnen te verkrijgen en deze te verwerken. De volgende leden van de `com.day.cq.workflow.collection` bieden toegang tot workflowpakketten:
+U kunt workflowstappen ontwikkelen om de pakketbronnen te verkrijgen en deze te verwerken. De volgende leden van `com.day.cq.workflow.collection` bieden toegang tot workflowpakketten:
 
 * `ResourceCollection`: Workflowpakketklasse.
-* `ResourceCollectionUtil`: Gebruik om voorwerpen terug te winnen ResourceCollection.
-* `ResourceCollectionManager`: Hiermee maakt en haalt u verzamelingen op. Een implementatie wordt opgesteld als dienst OSGi.
+* `ResourceCollectionUtil`: Gebruik deze operator om ResourceCollection-objecten op te halen.
+* `ResourceCollectionManager`: Maakt en haalt verzamelingen op. Een implementatie wordt opgesteld als dienst OSGi.
 
 In het volgende voorbeeld van de Java-klasse ziet u hoe u pakketbronnen kunt verkrijgen:
 
@@ -777,7 +777,7 @@ private List<String> getPaths(String path, ResourceCollection rcCollection) {
 }
 ```
 
-## Voorbeeld: Een aangepaste stap maken {#example-creating-a-custom-step}
+## Voorbeeld: een aangepaste stap maken {#example-creating-a-custom-step}
 
 Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een bestaande stap van te kopiëren:
 
@@ -803,7 +803,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
    >
    >Deze stap is niet van toepassing op de klassieke UI Model redacteur.
 
-1. Plaats de gekopieerde stap vervolgens in de map /apps; zoals:
+1. Plaats de gekopieerde stap vervolgens in de map /apps, bijvoorbeeld als:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -813,7 +813,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
    >[!CAUTION]
    >
-   >Omdat in standaard UI, slechts de titel en niet de details niet op de kaart worden getoond, `details.jsp` is niet nodig zoals het voor de klassieke redacteur UI was.
+   >Omdat in standaard UI, slechts de titel en niet de details niet op de kaart worden getoond, `details.jsp` is niet nodig zoals voor de klassieke redacteur UI.
 
 1. Pas de volgende eigenschappen toe op het knooppunt:
 
@@ -862,7 +862,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
 #### Het bepalen van Stap vormt Dialoogvenster {#defining-the-step-configure-dialog}
 
-Na [De basisstap maken](#creating-the-basic-step), definieert u de stap **Configureren** als volgt:
+Na [De basisstap maken](#creating-the-basic-step), definieert u de stap **Configureren** dialoog als volgt:
 
 1. De eigenschappen op het knooppunt configureren `cq:editConfig` als volgt:
 
@@ -892,7 +892,7 @@ Na [De basisstap maken](#creating-the-basic-step), definieert u de stap **Config
 
 1. De eigenschappen op het knooppunt configureren `cq:listeners`.
 
-   De `cq:listener` de knoop en zijn eigenschappen staan u toe om gebeurtenismanagers te plaatsen die op gebeurtenissen in de aanraking-toegelaten UI modelredacteur reageren; zoals het slepen van een stap naar een modelpagina of het bewerken van stapeigenschappen.
+   De `cq:listener` Met de knooppunten en de bijbehorende eigenschappen kunt u gebeurtenishandlers instellen die reageren op gebeurtenissen in de UI-modeleditor voor aanraakbediening, zoals het slepen van een stap naar een modelpagina of het bewerken van stapeigenschappen.
 
    **Belangeneigenschappen:**
 
@@ -903,7 +903,7 @@ Na [De basisstap maken](#creating-the-basic-step), definieert u de stap **Config
 
    Deze configuratie is essentieel voor het goed functioneren van de redacteur. In de meeste gevallen mag deze configuratie niet worden gewijzigd.
 
-   Instellen `cq:inherit` naar waar (op `cq:editConfig` knoop, zie hierboven) staat u toe om deze configuratie te erven, zonder het in uw stapdefinitie uitdrukkelijk te hoeven omvatten. Als er geen overerving is, moet u dit knooppunt met de volgende eigenschappen en waarden toevoegen.
+   Instellen `cq:inherit` naar waar (op `cq:editConfig` knoop, zie hierboven) laat u deze configuratie erven, zonder het moeten het in uw stapdefinitie uitdrukkelijk omvatten. Als er geen overerving is, moet u dit knooppunt met de volgende eigenschappen en waarden toevoegen.
 
    In dit voorbeeld is de overerving geactiveerd, zodat we de `cq:listeners` en de stap functioneren nog steeds correct.
 
@@ -915,7 +915,7 @@ Na [De basisstap maken](#creating-the-basic-step), definieert u de stap **Config
 
 #### Sampleopmaak die in dit voorbeeld wordt gebruikt {#sample-markup-used-in-this-example}
 
-Opmaak voor een aangepaste stap wordt weergegeven in het dialoogvenster `.content.xml` van het basisknooppunt van de component. Het voorbeeld `.content.xml` gebruikt voor dit voorbeeld:
+Opmaak voor een aangepaste stap wordt weergegeven in het dialoogvenster `.content.xml` van het basisknooppunt van de component. Het voorbeeld `.content.xml` wordt gebruikt voor dit voorbeeld:
 
 `/apps/cq/workflow/components/model/myCustomStep/.content.xml`
 
@@ -1034,7 +1034,7 @@ De `_cq_dialog/.content.xml` in dit voorbeeld gebruikt voorbeeld:
 >
 >Hoewel AEM [moderniseringsinstrumenten](/help/sites-developing/modernization-tools.md) als u de dialoogvensters met klassieke UI-stappen wilt bijwerken naar de standaarddialoogvensters voor gebruikersinterface. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
 >
->* Als een bijgewerkt dialoogvenster leeg is, kunt u dialoogvensters bekijken in `/libs` die gelijkaardige functionaliteit als voorbeelden van hoe te om een oplossing te verstrekken hebben. Bijvoorbeeld:
+>* Als een bijgewerkt dialoogvenster leeg is, kunt u dialoogvensters bekijken in `/libs` die vergelijkbare functionaliteit hebben als voorbeelden van hoe u een oplossing kunt bieden. Bijvoorbeeld:
 >
 >* `/libs/cq/workflow/components/model`
 >* `/libs/cq/workflow/components/workflow`

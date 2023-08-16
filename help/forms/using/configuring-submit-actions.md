@@ -9,16 +9,16 @@ discoiquuid: 9d8d7044-ffce-4ab4-9543-a2d2f9da31e3
 docset: aem65
 feature: Adaptive Forms
 exl-id: 04efb4ad-cff6-4e05-bcd2-98102f052452
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1937'
+source-wordcount: '1936'
 ht-degree: 0%
 
 ---
 
 # De handeling Verzenden configureren{#configuring-the-submit-action}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -26,9 +26,9 @@ ht-degree: 0%
 | AEM 6,5 | Dit artikel |
 
 
-## Inleiding om acties te verzenden {#introduction-to-submit-actions}
+## Inleiding om acties in te dienen {#introduction-to-submit-actions}
 
-Een verzendactie wordt geactiveerd wanneer een gebruiker op de knop Verzenden klikt op een adaptief formulier. U kunt de verzendactie configureren op het aangepaste formulier. Adaptieve formulieren bevatten een paar elementen uit het vak Acties verzenden. U kunt de standaardverzendacties kopiëren en uitbreiden om uw eigen verzendactie te maken. Op basis van uw vereisten kunt u echter uw eigen verzendactie schrijven en registreren om gegevens in het verzonden formulier te verwerken. De verzendactie kan worden gebruikt [synchrone of asynchrone verzending](../../forms/using/asynchronous-submissions-adaptive-forms.md).
+Een verzendactie wordt geactiveerd wanneer een gebruiker op de knop Verzenden klikt op een adaptief formulier. U kunt de verzendactie configureren voor een adaptief formulier. Adaptieve formulieren bevatten een paar elementen uit het vak Acties verzenden. U kunt de standaardverzendacties kopiëren en uitbreiden om uw eigen verzendactie te maken. Op basis van uw vereisten kunt u echter uw eigen verzendactie schrijven en registreren om gegevens in het verzonden formulier te verwerken. De verzendactie kan worden gebruikt [synchrone of asynchrone verzending](../../forms/using/asynchronous-submissions-adaptive-forms.md).
 
 U kunt een verzendactie configureren in het dialoogvenster **Indiening** in de zijbalk van de eigenschappen van de container voor adaptieve formulieren.
 
@@ -52,12 +52,12 @@ De standaardverzendacties die beschikbaar zijn in aangepaste formulieren zijn:
 
 >[!NOTE]
 >
->Zorg ervoor dat de [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM folder
+>Zorg ervoor dat de [AEM_Installation_Directory]\crx-quickstart\temp\datamanager\ASM
 >bestaat. De map is vereist om bijlagen tijdelijk op te slaan. Als de map niet bestaat, maakt u deze.
 
 >[!CAUTION]
 >
->Als u [prefill](../../forms/using/prepopulate-adaptive-form-fields.md) een formuliersjabloon, formuliergegevensmodel of op schema gebaseerd adaptief formulier met XML- of JSON-gegevensklacht voor een schema (XML-schema, JSON-schema, formuliersjabloon of formuliergegevensmodel) dat geen gegevens bevat &lt;afdata>, &lt;afbounddata>, en &lt;/afunbounddata> -tags, dan worden de gegevens van niet-omsloten velden (Niet-omlijnde velden zijn adaptieve formuliervelden zonder [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) eigenschap) van het adaptieve formulier verloren gaat.
+>Als u [voorvoegsel](../../forms/using/prepopulate-adaptive-form-fields.md) een formuliersjabloon, formuliergegevensmodel of op schema gebaseerd adaptief formulier met XML- of JSON-gegevensklacht voor een schema (XML-schema, JSON-schema, formuliersjabloon of formuliergegevensmodel) dat geen gegevens bevat &lt;afdata>, &lt;afbounddata>, en &lt;/afunbounddata> -tags, dan worden de gegevens van niet-omsloten velden (Niet-omlijnde velden zijn adaptieve formuliervelden zonder [bindref](../../forms/using/prepopulate-adaptive-form-fields.md) eigenschap) van het adaptieve formulier verloren gaat.
 
 U kunt een aangepaste verzendactie schrijven voor aangepaste formulieren om aan uw gebruiksscenario te voldoen. Zie voor meer informatie [Aangepaste verzendactie schrijven voor adaptieve formulieren](../../forms/using/custom-submit-action-form.md).
 
@@ -69,7 +69,7 @@ De **Verzenden naar REST-eindpunt** Met deze optie worden de gegevens die in het
 
 Zoals in de onderstaande afbeelding wordt getoond: `param1` en `param2` worden doorgegeven als parameters met waarden die zijn gekopieerd uit de **textbox** en **numeriek vak** velden voor de volgende actie.
 
-U kunt ook **Aanvraag POST inschakelen** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de server van de Experience Manager die als host fungeert voor het formulier, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de server van de Experience Manager. Bijvoorbeeld /content/forms/af/SampleForm.html. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
+U kunt **Aanvraag POST inschakelen** en geef een URL op om de aanvraag te posten. Als u gegevens wilt verzenden naar de server van de Experience Manager die als host fungeert voor het formulier, gebruikt u een relatief pad dat overeenkomt met het hoofdpad van de server van de Experience Manager. Bijvoorbeeld /content/forms/af/SampleForm.html. Gebruik absoluut pad om gegevens naar een andere server te verzenden.
 
 ![Rest Endpoint-verzendhandeling configureren](assets/action-config.png)
 
@@ -120,7 +120,7 @@ Deze verzendactie is beschikbaar voor op XFA gebaseerde adaptieve formulieren en
 
 ## Een Forms Workflow aanroepen {#invoke-a-forms-workflow}
 
-De **Verzenden naar Forms Workflow** Met de optie Verzenden worden een gegevens-xml en bestandsbijlagen (indien aanwezig) naar een bestaande Adobe LiveCycle of AEM Forms verzonden bij JEE-proces.
+De **Verzenden naar Forms Workflow** Met de optie Verzenden worden een gegevens-xml en bestandsbijlagen (indien aanwezig) naar een bestaand Adobe-LiveCycle of AEM Forms verzonden tijdens JEE-proces.
 
 Voor informatie over hoe te om Submit aan Forms Workflow te vormen verzend actie, zie [Uw formuliergegevens verzenden en verwerken met behulp van formulierworkflows](../../forms/using/submit-form-data-livecycle-process.md).
 
@@ -130,7 +130,7 @@ De **Verzenden met gebruik van formuliergegevensmodel** Met deze handeling worde
 
 Daarnaast kunt u een formulierbijlage verzenden met behulp van een formuliergegevensmodel en een Document of Record (DoR) naar de gegevensbron.
 
-Voor informatie over het formuliergegevensmodel raadpleegt u [AEM Forms-gegevensintegratie](../../forms/using/data-integration.md).
+Zie voor informatie over het formuliergegevensmodel [AEM Forms-gegevensintegratie](../../forms/using/data-integration.md).
 
 ## Forms Portal-verzendactie {#forms-portal-submit-action}
 
@@ -140,21 +140,21 @@ Ga voor meer informatie over de Forms Portal en verzend actie naar [Concepten en
 
 ## Een AEM-workflow aanroepen {#invoke-an-aem-workflow}
 
-De **[!UICONTROL Invoke an AEM Workflow]** Bij Actie verzenden wordt een adaptief formulier gekoppeld aan een [AEM](/help/sites-developing/workflows-models.md). Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt het gegevensbestand, de gehechtheid, en het Document van Verslag aan de omslag met betrekking tot of onder de lading van het werkschema of aan een variabele opslaan. Als de workflow is gemarkeerd voor externe gegevensopslag, is de optie Variabele beschikbaar en niet de optie voor laden. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
+De **[!UICONTROL Invoke an AEM Workflow]** Een adaptief formulier wordt gekoppeld aan een [AEM](/help/sites-developing/workflows-models.md). Wanneer een formulier wordt verzonden, wordt de bijbehorende workflow automatisch gestart bij de instantie Auteur. U kunt het gegevensbestand, de gehechtheid, en het Document van Verslag aan de omslag met betrekking tot of onder de lading van het werkschema of aan een variabele opslaan. Als de workflow is gemarkeerd voor externe gegevensopslag, is de optie Variabele beschikbaar en niet de optie voor laden. U kunt uit de lijst van variabelen selecteren beschikbaar voor het werkschemamodel. Als de workflow later wordt gemarkeerd voor externe gegevensopslag en niet op het moment dat de workflow wordt gemaakt, moet u ervoor zorgen dat de vereiste variabele configuraties aanwezig zijn.
 
-Voordat u de **Een AEM-workflow aanroepen** actie indienen; [vorm de Experience Manager DS montages](../../forms/using/configuring-the-processing-server-url-.md). Voor informatie over het creëren van een AEM- Werkstroom, zie [Formuliergerichte workflows op OSGi](../../forms/using/aem-forms-workflow.md).
+Voordat u de **Een AEM-workflow aanroepen** actie indienen; [configureren van de Experience Manager DS-instellingen](../../forms/using/configuring-the-processing-server-url-.md). Voor informatie over het creëren van een AEM- Werkstroom, zie [Formuliergerichte workflows op OSGi](../../forms/using/aem-forms-workflow.md).
 
 Met de handeling Verzenden wordt het volgende op de laadlocatie van de workflow geplaatst. Houd er echter rekening mee dat alleen de optie Variabele wordt weergegeven als het workflowmodel is gemarkeerd voor externe gegevensopslag, en niet de optie voor laden.
 
-* **Gegevensbestand**: Het bevat gegevens die naar het adaptieve formulier worden verzonden. U kunt de **[!UICONTROL Data File Path]** om de naam van het bestand en het pad van het bestand ten opzichte van de lading op te geven. De `/addresschange/data.xml` pad maakt een map met de naam `addresschange` en plaatst deze ten opzichte van de lading. U kunt ook alleen `data.xml` om alleen verzonden gegevens te verzenden zonder een maphiërarchie te maken. Gebruik de optie Variabele en selecteer de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+* **Gegevensbestand**: Het bevat gegevens die naar het adaptieve formulier worden verzonden. U kunt de **[!UICONTROL Data File Path]** om de naam van het bestand en het pad van het bestand ten opzichte van de laadbewerking op te geven. Bijvoorbeeld de `/addresschange/data.xml` pad maakt een map met de naam `addresschange` en plaatst deze ten opzichte van de lading. U kunt ook alleen `data.xml` om alleen verzonden gegevens te verzenden zonder een maphiërarchie te maken. Gebruik de optie Variabele en selecteer de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
 >[!NOTE]
 >
 Variabelen kunnen worden gebruikt, ongeacht of het workflowmodel is gemarkeerd voor externe gegevensopslag.
 
-* **Bijlagen**: U kunt de **[!UICONTROL Attachment Path]** om de mapnaam op te geven waarin de bijlagen worden opgeslagen die naar het adaptieve formulier zijn geüpload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+* **Bijlagen**: U kunt de opdracht **[!UICONTROL Attachment Path]** om de mapnaam op te geven waarin de bijlagen worden opgeslagen die naar het adaptieve formulier zijn geüpload. De map wordt gemaakt ten opzichte van de lading. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
-* **Document van record**: Het bevat het Document van Verslag dat voor het Aangepaste Vorm wordt geproduceerd. U kunt de **[!UICONTROL Document of Record Path]** Hiermee geeft u de naam op van het bestand Document of Record en het pad van het bestand ten opzichte van de laadbewerking. De `/addresschange/DoR.pdf` pad maakt een map met de naam `addresschange` ten opzichte van de lading en plaatst het `DoR.pdf` ten opzichte van de lading. U kunt ook alleen `DoR.pdf` alleen Document of Record opslaan zonder een mappenhiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
+* **Document van record**: Het bevat het Document of Record dat is gegenereerd voor het adaptieve formulier. U kunt de **[!UICONTROL Document of Record Path]** Hiermee geeft u de naam op van het bestand Document of Record en het pad van het bestand ten opzichte van de laadbewerking. Bijvoorbeeld de `/addresschange/DoR.pdf` pad maakt een map met de naam `addresschange` ten opzichte van de lading en plaatst het `DoR.pdf` ten opzichte van de lading. U kunt ook alleen `DoR.pdf` alleen Document of Record opslaan zonder een mappenhiërarchie te maken. Als de workflow is gemarkeerd voor externe gegevensopslag, gebruikt u de optie Variabele en selecteert u de variabele in de lijst met variabelen die beschikbaar zijn voor het workflowmodel.
 
 ## Revalidatie op de server in adaptieve vorm {#server-side-revalidation-in-adaptive-form}
 
@@ -178,7 +178,7 @@ Gebruik de **Revalidate op server** onder Adaptieve formuliercontainer in de zij
 
 Validatie op de server inschakelen
 
-Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt de validatie opnieuw uitgevoerd door de server. Als de validatie op het servereinde mislukt, wordt de verzendtransactie gestopt. De eindgebruiker krijgt het oorspronkelijke formulier opnieuw te zien. De vastgelegde gegevens en verzonden gegevens worden als een fout aan de gebruiker gepresenteerd.
+Als de eindgebruiker deze validaties overslaat en de formulieren verzendt, wordt de validatie opnieuw uitgevoerd door de server. Als de validatie aan het einde van de server mislukt, wordt de verzendtransactie gestopt. De eindgebruiker krijgt het oorspronkelijke formulier opnieuw te zien. De vastgelegde gegevens en verzonden gegevens worden als een fout aan de gebruiker gepresenteerd.
 
 >[!NOTE]
 >
@@ -196,6 +196,6 @@ Auteurs kunnen de aangepaste JavaScript-bibliotheek per adaptief formulier confi
 
 ## Foutafhandeling bij verzendactie {#error-handling-on-submit-action}
 
-Als deel van de veiligheid van de Experience Manager en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer een formulier 404- of 500-fouten worden verzonden. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht.
+Als deel van de veiligheid van de Experience Manager en het verharden richtlijnen, vorm de pagina&#39;s van de douanefout zoals 404.jsp en 500.jsp. Deze handlers worden aangeroepen wanneer bij het verzenden van een formulier 404 of 500 fouten worden weergegeven. De handlers worden ook geroepen wanneer deze foutencodes op de Publish knoop worden teweeggebracht.
 
 Zie voor meer informatie [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md).

@@ -1,5 +1,5 @@
 ---
-title: AEM ontwikkelen
+title: Ontwikkelen AEM componenten
 seo-title: Developing AEM Components
 description: AEM componenten worden gebruikt om de inhoud die op uw webpagina's beschikbaar is, vast te houden, op te maken en weer te geven.
 seo-description: AEM components are used to hold, format, and render the content made available on your webpages.
@@ -12,20 +12,20 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3456'
+source-wordcount: '3454'
 ht-degree: 0%
 
 ---
 
-# AEM ontwikkelen{#developing-aem-components}
+# Ontwikkelen AEM componenten{#developing-aem-components}
 
 AEM componenten worden gebruikt om de inhoud die op uw webpagina&#39;s beschikbaar is, vast te houden, op te maken en weer te geven.
 
 * Wanneer [ontwerpen, pagina&#39;s](/help/sites-authoring/default-components.md)Met deze componenten kunnen de auteurs de inhoud bewerken en configureren.
 
-   * Wanneer u een [Handel](/help/commerce/cif-classic/administering/ecommerce.md) de componenten kunnen bijvoorbeeld informatie uit de catalogus verzamelen en weergeven.
+   * Wanneer u een [Handel](/help/commerce/cif-classic/administering/ecommerce.md) de componenten kunnen bijvoorbeeld informatie uit de catalogus verzamelen en renderen.
 Zie [Ontwikkeling van eCommerce](/help/commerce/cif-classic/developing/ecommerce.md) voor meer informatie .
 
    * Wanneer u een [Gemeenschappen](/help/communities/author-communities.md) de componenten kunnen informatie aan uw bezoekers verstrekken en informatie van uw bezoekers verzamelen.
@@ -47,7 +47,7 @@ Deze pagina bevat de referentiedocumentatie (of koppelingen naar referentiedocum
 
 ## Structuur {#structure}
 
-De basisstructuur van een component wordt op de pagina bedekt [Componenten AEM - De basisbeginselen](/help/sites-developing/components-basics.md#structure). Dat document behandelt zowel de aanraakinterface als de klassieke gebruikersinterface. Zelfs als u niet de klassieke montages in uw nieuwe component te hoeven gebruiken kan het helpen om zich van hen bewust te zijn wanneer het erven van bestaande componenten.
+De basisstructuur van een component wordt op de pagina bedekt [Componenten AEM - De basisbeginselen](/help/sites-developing/components-basics.md#structure). In dat document worden zowel de aanraakinterface als de klassieke gebruikersinterface behandeld. Zelfs als u niet de klassieke montages in uw nieuwe component te hoeven gebruiken kan het helpen om zich van hen bewust te zijn wanneer het erven van bestaande componenten.
 
 ## Bestaande componenten en dialoogvensters uitbreiden {#extending-existing-components-and-dialogs}
 
@@ -61,7 +61,7 @@ Een bestaande component uitbreiden kan worden bereikt met [Hiërarchie van bront
 
 >[!NOTE]
 >
->Componenten kunnen ook opnieuw worden gedefinieerd met een bedekking op basis van de logica van het zoekpad. In dat geval echter [Samenvoegen van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) niet geactiveerd is en `/apps` moet de volledige overlay definiëren.
+>Componenten kunnen ook opnieuw worden gedefinieerd met een bedekking op basis van de logica van het zoekpad. In dat geval echter [Samenvoeging van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) niet geactiveerd is en `/apps` moet de volledige overlay definiëren.
 
 >[!NOTE]
 >
@@ -69,11 +69,11 @@ Een bestaande component uitbreiden kan worden bereikt met [Hiërarchie van bront
 
 ### Dialoogvenster Bestaande componenten aanpassen {#customizing-a-existing-component-dialog}
 
-Het is ook mogelijk een *dialoogvenster component* met de [Samenvoegen van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) en de eigenschap definiëren `sling:resourceSuperType`.
+Het is ook mogelijk een *dialoogvenster voor componenten* met de [Samenvoeging van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) en de eigenschap definiëren `sling:resourceSuperType`.
 
 Dit betekent dat u alleen de vereiste verschillen opnieuw hoeft te definiëren in plaats van het volledige dialoogvenster opnieuw te definiëren (met `sling:resourceSuperType`). Deze methode wordt nu aanbevolen voor het uitbreiden van een componentdialoogvenster
 
-Zie de [Samenvoegen van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) voor meer informatie .
+Zie de [Samenvoeging van verkoopbronnen](/help/sites-developing/sling-resource-merger.md) voor meer informatie .
 
 ## Opmaak definiëren {#defining-the-markup}
 
@@ -99,13 +99,13 @@ Het mechanisme om logica en verschijning te scheiden helpt verduidelijken wat vo
 
 ### JavaScript gebruiken {#using-javascript}
 
-[Met de HTML JavaScript Use-API kan een HTML-bestand toegang krijgen tot hulplijncode die in JavaScript is geschreven](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Hierdoor kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
+[Met de HTML JavaScript Use-API kan een HTML-bestand toegang krijgen tot hulplijncode die in JavaScript is geschreven](https://experienceleague.adobe.com/docs/experience-manager-htl/content/java-use-api.html?lang=en). Hiermee kunt u JavaScript-code gebruiken om de logica voor het selecteren en configureren van de componentinhoud te implementeren.
 
 ### Client-Side HTML-bibliotheken gebruiken {#using-client-side-html-libraries}
 
 Moderne websites zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn.
 
-Om dit probleem te helpen oplossen, AEM **Client-side bibliotheekmappen**, waarmee u uw code aan de clientzijde in de gegevensopslagruimte kunt opslaan, kunt u deze in categorieën ordenen en bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
+Om dit probleem te helpen aanpakken, AEM biedt **Client-side bibliotheekmappen**, waarmee u uw code aan de clientzijde in de gegevensopslagruimte kunt opslaan, kunt u deze in categorieën ordenen en bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
 
 Lezen [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md) voor meer informatie .
 
@@ -141,7 +141,7 @@ Zie voor meer informatie:
 
    * Biedt een consistente gebruikersinterface voor alle cloudoplossingen
    * [Concepten van de AEM interface met aanraakfuncties - koraalinterface](/help/sites-developing/touch-ui-concepts.md#coral-ui)
-   * [Handleiding voor koraal](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
+   * [Handleiding voor koraalinterface](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html)
 
 * Graniet-interface
 
@@ -202,7 +202,6 @@ Zie voor voorbeelden:
 >* de desbetreffende steekproefcode die onder [Codevoorbeeld - Hoe te om de Gebieden van de Dialoog aan te passen](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields).
 >
 
-
 #### Een nieuw veld maken {#creating-a-new-field}
 
 Widgets voor de interface met aanraakbediening worden geïmplementeerd als graniet-UI-componenten.
@@ -213,7 +212,7 @@ Als u een nieuwe widget wilt maken voor gebruik in een componentdialoogvenster v
 >
 >Voor volledige informatie over de graniet-gebruikersinterface raadpleegt u de [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken; dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
+Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken. Dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -231,7 +230,7 @@ Als u stijlen en gedrag voor uw component wilt definiëren, kunt u een speciale 
 
 Als u de clientbibliotheek alleen voor het dialoogvenster van de component wilt laden (de bibliotheek wordt dus niet voor een andere component geladen), moet u de eigenschap instellen `extraClientlibs`** ** van het dialoogvenster naar de categorienaam van de clientbibliotheek die u zojuist hebt gemaakt. Dit is aan te raden als uw clientbibliotheek erg groot is en/of als uw veld specifiek is voor dat dialoogvenster en niet nodig is in andere dialoogvensters.
 
-Als u de clientbibliotheek voor alle dialoogvensters wilt laden, stelt u de categorie-eigenschap van de clientbibliotheek in op `cq.authoring.dialog`. Dit is de categorienaam van de clientbibliotheek die standaard wordt opgenomen bij het renderen van alle dialoogvensters. U wilt dat doen als uw clientbibliotheek klein is en/of uw veld algemeen is en opnieuw kan worden gebruikt in andere dialoogvensters.
+Als u de clientbibliotheek voor alle dialoogvensters wilt laden, stelt u de categorie-eigenschap van de clientbibliotheek in op `cq.authoring.dialog`. Dit is de categorienaam van de clientbibliotheek die standaard wordt opgenomen wanneer alle dialoogvensters worden weergegeven. U wilt dat doen als uw clientbibliotheek klein is en/of uw veld algemeen is en opnieuw kan worden gebruikt in andere dialoogvensters.
 
 Zie voor een voorbeeld:
 
@@ -248,7 +247,7 @@ Afhankelijk van uw vereisten kunt u:
 
 #### Toegang tot dialoogvelden {#access-to-dialog-fields}
 
-U kunt ook rendervoorwaarden gebruiken ( `rendercondition`) om te bepalen wie toegang heeft tot specifieke tabbladen/velden in uw dialoogvenster; bijvoorbeeld:
+U kunt ook rendervoorwaarden gebruiken ( `rendercondition`) om te bepalen wie toegang heeft tot specifieke tabbladen/velden in uw dialoogvenster, bijvoorbeeld:
 
 ```xml
 + mybutton
@@ -269,7 +268,7 @@ Om logica in uw gebied te injecteren, zou u moeten:
 1. Laat uw veld gemarkeerd zijn met een bepaalde CSS-klasse (de *haak*).
 1. Definieer in uw clientbibliotheek een JS-listener die is gekoppeld aan de naam van die CSS-klasse (dit zorgt ervoor dat uw aangepaste logica alleen binnen het bereik van uw veld valt en niet van invloed is op andere velden van hetzelfde type).
 
-Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. Zie de [Coral UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) om aan te geven op welke gebeurtenis u wilt reageren. Dit lijkt erg op het proces dat u in het verleden met ExtJS moest uitvoeren: Zoek de documentatiepagina van een bepaalde widget en controleer vervolgens de details van de bijbehorende API voor gebeurtenissen.
+Hiervoor moet u weten welke onderliggende widgetbibliotheek u wilt gebruiken. Zie de [Coral UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/coral-ui/coralui3/index.html) om aan te geven op welke gebeurtenis u wilt reageren. Dit lijkt op het proces dat u in het verleden met ExtJS moest uitvoeren: zoek de documentatiepagina van een bepaalde widget en controleer vervolgens de details van de gebeurtenis-API.
 
 Zie voor een voorbeeld:
 
@@ -281,7 +280,7 @@ Zie voor een voorbeeld:
 
 In de klassieke UI met ExtJS, was het gebruikelijk om luisteraars voor een bepaalde widget in de inhoudsstructuur te hebben. Hetzelfde bereiken in de interface met aanraakbediening is anders dan het bereiken van JS-listenercode (of enige andere code) wordt niet meer gedefinieerd in de inhoud.
 
-De inhoudstructuur beschrijft de semantische structuur; het mag (moet) niet de aard van de onderliggende widget impliceren. Als u geen JS-code hebt in de inhoudsstructuur, kunt u de implementatiedetails wijzigen zonder de inhoudsstructuur te wijzigen. Met andere woorden, u kunt de widgetbibliotheek wijzigen zonder de inhoudsstructuur aan te raken.
+De inhoudstructuur beschrijft de semantische structuur; het zou (moeten) niet de aard van de onderliggende widget moeten impliceren. Als u geen JS-code hebt in de inhoudsstructuur, kunt u de implementatiedetails wijzigen zonder de inhoudsstructuur te wijzigen. Met andere woorden, u kunt de widgetbibliotheek wijzigen zonder de inhoudsstructuur aan te raken.
 
 #### Beschikbaarheid van dialoogvenster vaststellen {#dialog-ready}
 
@@ -366,7 +365,7 @@ Dit kan gebeuren door:
 
 ## Een alineasysteem configureren, zodat een componentinstantie wordt gemaakt wanneer u een element sleept {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM biedt de mogelijkheid een alineasysteem op uw pagina te configureren zodat [er wordt automatisch een instantie van de nieuwe component gemaakt wanneer een gebruiker een (geschikt) element naar een instantie van die pagina sleept](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (in plaats van altijd een lege component naar de pagina te slepen).
+AEM biedt de mogelijkheid om een alineasysteem op uw pagina te configureren zodat [er wordt automatisch een instantie van de nieuwe component gemaakt wanneer een gebruiker een (geschikt) element naar een instantie van die pagina sleept](/help/sites-authoring/editing-content.md#insertingacomponenttouchoptimizedui) (in plaats van altijd een lege component naar de pagina te slepen).
 
 Dit gedrag, en de vereiste activa-aan-component verhouding kan worden gevormd:
 
@@ -379,7 +378,6 @@ Dit gedrag, en de vereiste activa-aan-component verhouding kan worden gevormd:
    * Naam: `cq:authoring`
    * Type: `nt:unstructured`
 
-
 1. Onder dit creeer een nieuwe knoop om al activa-aan-component afbeeldingen te houden:
 
    * Naam: `assetToComponentMapping`
@@ -387,7 +385,7 @@ Dit gedrag, en de vereiste activa-aan-component verhouding kan worden gevormd:
 
 1. Voor elke element-aan-component afbeelding creeer een knoop:
 
-   * Naam: tekst; het verdient aanbeveling dat de naam het element en het type van het verwante onderdeel aanduidt; bijvoorbeeld
+   * Naam: tekst. Het wordt aanbevolen dat de naam het element en het type verwante component aanduidt, bijvoorbeeld de afbeelding
    * Type: `nt:unstructured`
 
    Elke eigenschap heeft de volgende eigenschappen:
@@ -395,28 +393,27 @@ Dit gedrag, en de vereiste activa-aan-component verhouding kan worden gevormd:
    * `assetGroup`:
 
       * Type: `String`
-      * Waarde: de groep waartoe het gerelateerde actief behoort; bijvoorbeeld: `media`
+      * Waarde: de groep waartoe het gerelateerde actief behoort; bijvoorbeeld `media`
+
    * `assetMimetype`:
 
       * Type: `String`
-      * Waarde: het mime-type van het gerelateerde actief; bijvoorbeeld `image/*`
+      * Waarde: het mime-type van het gerelateerde element, bijvoorbeeld `image/*`
+
    * `droptarget`:
 
       * Type: `String`
-      * Waarde: de neerzetbestemming; bijvoorbeeld: `image`
+      * Waarde: het doel voor neerzetten, bijvoorbeeld `image`
+
    * `resourceType`:
 
       * Type: `String`
-      * Waarde: de daarmee verband houdende component-bron; bijvoorbeeld: `foundation/components/image`
+      * Waarde: de gerelateerde componentbron, bijvoorbeeld `foundation/components/image`
+
    * `type`:
 
       * Type: `String`
       * Waarde: het type, bijvoorbeeld `Images`
-
-
-
-
-
 
 Zie voor voorbeelden:
 
@@ -454,11 +451,11 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
 
 * HTL
 
-   * Gebruik van [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) is niet verplicht, maar als uw component moet worden bijgewerkt, is het een ideaal moment om te overwegen [migreren van JSP naar HTML](/help/sites-developing/components-basics.md#htl-vs-jsp).
+   * Gebruik van [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) is niet verplicht, maar als uw component moet worden bijgewerkt, is het een ideaal moment om na te denken [migreren van JSP naar HTML](/help/sites-developing/components-basics.md#htl-vs-jsp).
 
 * Onderdelen
 
-   * Migreren [ `cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) code die klassieke UI-specifieke functies gebruikt
+   * Migreren [`cq:listener`](/help/sites-developing/developing-components.md#migrating-cq-listener-code) code die klassieke UI-specifieke functies gebruikt
    * RTE-plug-in voor meer informatie, zie [De Rich Text Editor configureren](/help/sites-administering/rich-text-editor.md).
    * [Migreren `cq:listener` code](#migrating-cq-listener-code) die functies gebruikt die specifiek zijn voor de klassieke gebruikersinterface
 
@@ -497,7 +494,7 @@ Als ontwikkelaar wilt u gemakkelijk toegang tot componentendocumentatie zodat u 
 * Beoogd gebruik
 * Inhoudsstructuur en eigenschappen
 * Toegankelijke API&#39;s en uitbreidingspunten
-* enzovoort
+* En zo verder
 
 Daarom is het eenvoudig om bestaande documentatiemarkering die u binnen de component zelf beschikbaar hebt, te maken.
 

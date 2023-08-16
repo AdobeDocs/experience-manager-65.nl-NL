@@ -2,9 +2,9 @@
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: ad0f0bd8b0c230e002c734adca87da22bfa3a7cd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1826'
+source-wordcount: '1821'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Dit artikel bouwt op die grondbeginselen voort zodat begrijpt u hoe te om uw eig
    * Introduceer concepten en terminologie met betrekking tot gegevens/inhoud modellering.
    * Ontdek waarom contentmodellering nodig is voor levering van inhoud zonder koptekst.
    * Leer hoe u deze structuur kunt realiseren met AEM Content Fragment Models (en inhoud met Content Fragments schrijven).
-   * Leer hoe u uw inhoud modelleert; beginselen met basismonsters.
+   * Leer hoe u uw inhoud modelleert; principes met basisvoorbeelden.
 
 >[!NOTE]
 >
@@ -66,7 +66,7 @@ Er zijn veel scholen, maar ze hebben allemaal verschillende dingen gemeen:
 * Veel (veel) boeken
 * Veel (veel) apparaten
 * Veel activiteiten buiten het studieprogramma
-* enzovoort....
+* enzovoort...
 
 Zelfs in zo&#39;n klein voorbeeld kan de lijst eindeloos lijken. Maar als u gewoon wilt dat uw toepassing een eenvoudige taak uitvoert, moet u de informatie tot de essentie beperken.
 
@@ -101,7 +101,7 @@ Als dit stabiel is, kunt u de modellen omzetten in een **Logisch schema** die de
 
 Hebt u bijvoorbeeld aparte entiteiten nodig voor `Head Teacher` en `Teacher`of gewoon een extra kenmerk op de knop `Teacher` model?
 
-### Waarborging van gegevensintegriteit {#data-integrity}
+### Gegevensintegriteit waarborgen {#data-integrity}
 
 Gegevensintegriteit is nodig om de nauwkeurigheid en consistentie van uw inhoud gedurende de gehele levenscyclus te garanderen. Dit betekent dat auteurs van inhoud gemakkelijk kunnen begrijpen wat ze moeten opslaan - dus het volgende is van essentieel belang:
 
@@ -112,7 +112,7 @@ Gegevensintegriteit is nodig om de nauwkeurigheid en consistentie van uw inhoud 
 
 ### Gegevensredundantie elimineren {#data-redundancy}
 
-Gegevensredundantie treedt op wanneer dezelfde informatie tweemaal wordt opgeslagen binnen de inhoudsstructuur. Dit moet worden vermeden, omdat dit tot verwarring kan leiden bij het creëren van de inhoud en fouten bij het opvragen; om nog maar te zwijgen van het misbruik van opslagruimte .
+Gegevensredundantie treedt op wanneer dezelfde informatie tweemaal wordt opgeslagen binnen de inhoudsstructuur. Dit moet worden vermeden omdat dit tot verwarring kan leiden bij het creëren van de inhoud en tot fouten bij het opvragen, om nog maar te zwijgen van het misbruik van de opslagruimte.
 
 ### Optimalisatie en prestaties {#optimization-and-performance}
 
@@ -126,7 +126,7 @@ Alles is een evenwichtsactie, maar het creëren van een structuur die te complex
 
 ## Content Modeling for AEM Headless {#content-modeling-for-aem-headless}
 
-Gegevensmodellering is een reeks gevestigde technieken, die vaak worden gebruikt wanneer ontwikkelde relatiedatabanken, zodat wat de Modellering van de Inhoud voor AEM Zwaartepunt betekent?
+Gegevensmodellering is een reeks gevestigde technieken, die vaak worden gebruikt wanneer ontwikkelde relatiedatabases, zodat wat betekent de Modellering van de Inhoud voor AEM Zwaartepunt?
 
 ### Waarom? {#why}
 
@@ -166,9 +166,9 @@ Een inhoudsfragmentmodel beschrijft een entiteit.
 
 Binnen een model:
 
-1. **Gegevenstypen** kunt u de afzonderlijke kenmerken definiëren.
+1. **Gegevenstypen** Hiermee kunt u de afzonderlijke kenmerken definiëren.
 U kunt bijvoorbeeld het veld met de naam van een docent definiëren als **Tekst** en hun dienstjaren als **Getal**.
-1. De gegevenstypen **Content Reference** en **Fragmentverwijzing** kunt u relaties maken met andere inhoud binnen AEM.
+1. De gegevenstypen **Content Reference** en **Fragmentverwijzing** Hiermee kunt u relaties maken met andere inhoud binnen AEM.
 1. De **Fragmentverwijzing** Met het gegevenstype kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
 
 Bijvoorbeeld:
@@ -206,7 +206,7 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 ### Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-Bij het allereerste begin moet u de Modellen van het Fragment van de Inhoud voor uw plaats toelaten, wordt dit gedaan in Browser van de Configuratie; onder Extra -> Algemeen -> Configuratiebrowser. U kunt of selecteren om de globale ingang te vormen, of een nieuwe configuratie tot stand te brengen. Bijvoorbeeld:
+Bij het allereerste begin moet u de Modellen van het Fragment van de Inhoud voor uw plaats toelaten, wordt dit gedaan in Browser van de Configuratie; onder Hulpmiddelen -> Algemeen -> Browser van de Configuratie. U kunt of selecteren om de globale ingang te vormen, of een nieuwe configuratie tot stand te brengen. Bijvoorbeeld:
 
 ![Configuratie definiëren](assets/cfm-configuration.png)
 
@@ -271,9 +271,9 @@ Nu u hebt geleerd hoe u uw structuur kunt modelleren en inhoud kunt maken die hi
 ## Aanvullende bronnen {#additional-resources}
 
 * [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) - de introductiepagina voor inhoudsfragmenten
-   * [Inhoudsfragmenten in de configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - functionaliteit voor inhoudsfragmenten inschakelen in de configuratiegrowser
+   * [Inhoudsfragmenten in de configuratiebrowser](/help/assets/content-fragments/content-fragments-configuration-browser.md) - functionaliteit voor inhoudsfragmenten inschakelen in de configuratiegids
    * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) - modellen voor inhoudsfragmenten maken en bewerken
-   * [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - het maken en ontwerpen van contentfragmenten; deze pagina leidt u tot andere gedetailleerde secties
+   * [Inhoudsfragmenten beheren](/help/assets/content-fragments/content-fragments-managing.md) - Inhoudsfragmenten maken en ontwerpen; deze pagina leidt u naar andere gedetailleerde secties
 * [AEM GraphQL Schemas](access-your-content.md) - hoe GraphQL modellen realiseert
 * [De structuur van het voorbeeldinhoudsfragment](/help/sites-developing/headless/graphql-api/content-fragments-graphql-samples.md#content-fragment-structure-graphql)
 * [Aan de slag met AEM headless](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/overview.html) - Een korte videozelfstudie waarin een overzicht wordt gegeven van het gebruik van functies zonder kop, zoals het modelleren van inhoud en GraphQL

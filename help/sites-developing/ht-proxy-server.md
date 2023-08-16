@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '937'
+source-wordcount: '936'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 * SMTP voor e-mailberichten
 * LDAP voor gebruikersbeheer
 
-U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een CQ-pagina aanvraagt.
+U kunt bijvoorbeeld de proxyserver tussen twee toepassingen plaatsen die via een TCP/IP-netwerk communiceren, bijvoorbeeld een webbrowser en AEM. Hiermee kunt u precies controleren wat er gebeurt wanneer u een CQ-pagina aanvraagt.
 
 ## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
 

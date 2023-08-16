@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1108'
+source-wordcount: '1107'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ De **E-mailgereedschappen** voor ExactTarget kan meer e-mailfunctionaliteit toev
    <td>Hiermee krijgt de gebruiker de mogelijkheid om zich af te melden bij uw mailinglijst.</td>
   </tr>
   <tr>
-   <td>Subscription Center</td>
+   <td>Abonnementencentrum</td>
    <td>Een abonnementscentrum is een webpagina waarop een abonnee de berichten kan beheren die hij of zij van uw organisatie ontvangt.</td>
   </tr>
   <tr>
@@ -117,13 +117,13 @@ De **E-mailgereedschappen** voor ExactTarget kan meer e-mailfunctionaliteit toev
 U kunt gepersonaliseerde gebieden in een e-mail toevoegen door toe te voegen **Tekst en personalisatie** aan de pagina:
 
 1. Open de e-mail die u naar uw e-mailservice wilt publiceren.
-1. Om verpersoonlijkingsgebied van uw e-maildienst toe te laten, voeg de kaderconfiguratie toe terwijl het vormen van de e-maildienst. Zie [Silverpop-engine configureren](/help/sites-administering/silverpop.md) en [precies doel configureren](/help/sites-administering/exacttarget.md) voor meer informatie .
+1. Om verpersoonlijkingsgebied van uw e-maildienst toe te laten, voeg de kaderconfiguratie toe terwijl het vormen van de e-maildienst. Zie [Silverpop-engine configureren](/help/sites-administering/silverpop.md) en [Exact doel configureren](/help/sites-administering/exacttarget.md) voor meer informatie .
 1. De component toevoegen **Tekst en personalisatie** van het hulpje. Deze component is het deel van nieuwsbrief groep. Open deze component in de bewerkingsmodus.
 
    ![chlimage_1-110](assets/chlimage_1-110a.png)
 
 1. Voeg het vereiste gepersonaliseerde gebied aan de tekst toe door het gebied van het drop-down menu te selecteren en te klikken **Invoegen**.
-1. Klikken **OK** om af te ronden.
+1. Klikken **OK** om te voltooien.
 
 ## Configuratie van e-mailservice toepassen op e-mailinstellingen {#applying-e-mail-service-configuration-to-e-mail-settings}
 
@@ -132,7 +132,7 @@ Om uw E-maildienstconfiguratie op een nieuwsbrief toe te passen:
 1. Creeer een configuratie van de E-mailDienst.
 1. Open uw e-mail/nieuwsbrief.
 1. Open de instellingen voor e-mail/nieuwsbrief door op **Instellingen** of door te klikken **Pagina-eigenschappen in** het hulpje.
-1. Klikken **Service toevoegen** in **Cloud Services** tab. U ziet de lijst met services. Selecteer uw vereiste configuratie - of **ExactTarget** of **Silverpop** - in de lijst in de vervolgkeuzelijst.
+1. Klikken **Service toevoegen** in **Cloud Servicen** tab. U ziet de lijst met services. Selecteer uw vereiste configuratie - of **ExactTarget** of **Silverpop** - in de lijst in de vervolgkeuzelijst.
 
    ![chlimage_1-5](assets/chlimage_1-5a.jpeg)
 

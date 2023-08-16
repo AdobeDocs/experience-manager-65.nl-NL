@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Met het AEM Mobile-dashboard kunt u uw mobiele toepassing maken, bouwen en implementeren, toepassingsmetagegevens maken, verwijderen en bewerken. Zodra uw toepassing live is, kunt u toepassingsanalyses analyseren, waaronder levenscyclus en gebruiksmetriek om klantconversie en merkloyaliteit te verbeteren.
 
@@ -45,7 +45,7 @@ Ga als volgt te werk om naar de bestemmingspagina van de catalogus apps te gaan:
 
 Als u een AEM Mobile-toepassing in de catalogus selecteert, wordt het bijbehorende dashboard weergegeven. Hier kunt u uw toepassing beheren, statistieken bekijken, uw inhoud voor mobiele apps maken, implementeren en beheren.
 
-U kunt elke tegel in het AEM Mobile-dashboard uitvouwen om details weer te geven of te bewerken door op de knop &#39;..&#39; te klikken. in de rechterbenedenhoek.
+U kunt elke tegel in het AEM Mobile-dashboard uitvouwen om details weer te geven of te bewerken door op de knop &#39;...&#39; in de rechterbenedenhoek te klikken.
 
 ![AEM Mobile Applications Command Center](assets/chlimage_1-136.png)
 
@@ -75,7 +75,7 @@ De tegels van het inhoudspakket beheren **Type** de kolomvertoningen of &quot;Ap
 
 Inhoud kan worden weergegeven als een taal of als een bepaald deel van de app waarin meerdere pakketten voor inhoudsrelease worden gebruikt door de app. De manier waarop u uw inhoud bundelt, is flexibel en volledig geschikt voor het beheren van inhoud voor uw toepassing.
 
-De **Gewijzigd** de kolom geeft aan wanneer de pagina&#39;s voor het laatst zijn gewijzigd.
+De **gewijzigd** de kolom geeft aan wanneer de pagina&#39;s voor het laatst zijn gewijzigd.
 
 De **Staand** wordt weergegeven wanneer de laatste inhoudsupdate is gemaakt. Als u een inhoudsupdate wilt maken en uw wijzigingen wilt uitvoeren, opent u alle records in de tegel en maakt u een update.
 
@@ -85,17 +85,17 @@ De **Gepubliceerd** de kolom toont wanneer de laatste inhoudsupdate werd gepubli
 
 Dit pictogram vertegenwoordigt een pakket met de inhoudsversie voor de app-shell
 
-![Het pictogram van het pakket met de inhoudsvrijgave wordt aangegeven door twee vierkante, overlappende pakketsymbolen.](do-not-localize/chlimage_1-6.png)
+![Het pictogram van het pakket bij de release van de inhoud wordt aangegeven met twee vierkante, overlappende pakketsymbolen.](do-not-localize/chlimage_1-6.png)
 
 Deze pictogrammen vertegenwoordigen een pakket met de inhoudsversie voor app-inhoud
 
 ### De PhoneGap Build-tegel {#the-phonegap-build-tile}
 
-De **PhoneGap Build-tegel** verbindt met `https://build.phonegap.com` om verre bouwstijlen te bouwen en te ontvangen. Nadat de build is gemaakt, wordt de build beschikbaar gesteld als een download of rechtstreeks aan uw apparaat via een QR-code.
+De **PhoneGap Build tegel** verbindt met `https://build.phonegap.com` om verre bouwstijlen te bouwen en te ontvangen. Nadat de build is gemaakt, wordt de build beschikbaar gesteld als een download of rechtstreeks aan uw apparaat via een QR-code.
 
 U kunt ook de apparaatbron downloaden om lokaal te bouwen via de PhoneGap CLI (`https://docs.phonegap.com/en/3.5.0/guide_cli_index.md.html`).
 
-![PhoneGap Build-tegel](assets/chlimage_1-140.png)
+![PhoneGap Build tegel](assets/chlimage_1-140.png)
 
 ### De metrische tegel {#the-metrics-tile}
 
@@ -103,11 +103,11 @@ U kunt ook de apparaatbron downloaden om lokaal te bouwen via de PhoneGap CLI (`
 >
 >De tegel Metrics wordt alleen weergegeven nadat u de cloudservice hebt geconfigureerd.
 >
->Zie [Uw Adobe Mobile Services-Cloud Service configureren](/help/mobile/configure-adobe-mobile-cloud-service.md) voor meer informatie.
+>Zie [Vorm uw Cloud Service van de Diensten van de Adobe Mobiele](/help/mobile/configure-adobe-mobile-cloud-service.md) voor meer informatie.
 
-AEM Mobile integreert met Adobe Analytics via [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS).
+AEM Mobile integreert met Adobe Analytics via [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile.html?lang=en) (AMS)
 
-Het controlecentrum **Metrische tegel** geeft een overzichtsanalyse weer die door AMS voor uw toepassing is gemaakt. U kunt naar het dashboard Analytics gaan door op &#39;...&#39; te klikken. rechtsonder.
+Het controlecentrum **Metrische tegel** geeft een overzichtsanalyse weer die door AMS voor uw toepassing is gemaakt. U kunt naar het dashboard Analytics gaan door op &#39;...&#39; in de rechterbenedenhoek te klikken.
 
 ![Metrische tegel](assets/chlimage_1-141.png)
 
@@ -117,7 +117,7 @@ Met de Content Tile van Entiteit beheren kunt u toepassingsdefinities toevoegen 
 
 Klikken [hier](/help/mobile/phonegap-app-definitions.md) om uw toepassingsdefinities te maken en te beheren.
 
-U kunt naar het beheerdersinhouddashboard gaan door op &#39;..&#39; te klikken. rechtsonder.
+U kunt naar het beheerdersinhouddashboard gaan door op &#39;..&#39; in de rechterbenedenhoek te klikken.
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 

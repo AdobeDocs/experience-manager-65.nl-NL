@@ -8,16 +8,16 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '641'
 ht-degree: 0%
 
 ---
 
 # Annotaties bij het bewerken van een pagina{#annotations-when-editing-a-page}
 
-Het toevoegen van inhoud aan de pagina&#39;s van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant (in tegenstelling, bijvoorbeeld, aan lay-out) u toe om een aantekening toe te voegen.
+Het toevoegen van inhoud aan de pagina&#39;s van uw website is vaak onderwerp van besprekingen alvorens het eigenlijk wordt gepubliceerd. Om dit te helpen, laat vele componenten direct met inhoud verwant (in tegenstelling, bijvoorbeeld, aan lay-out) u een aantekening toevoegen.
 
 Een annotatie plaatst een gekleurde markering/notitie op de pagina. Met de annotatie kunt u (of andere gebruikers) opmerkingen en/of vragen laten voor andere auteurs/revisoren.
 
@@ -55,7 +55,7 @@ Een speciale [mode](/help/sites-authoring/author-environment-tools.md#page-modes
 
 ### Een component annoteren {#annotating-a-component}
 
-In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
+In de modus Annotatie kunt u annotaties voor uw inhoud maken, bewerken, verplaatsen of verwijderen:
 
 1. U kunt de modus Annotatie activeren met het pictogram op de werkbalk (rechtsboven) wanneer u een pagina bewerkt:
 
@@ -90,7 +90,7 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
      ![Kleur kiezen/wijzigen](do-not-localize/chlimage_1-19.png)
 
-   * Verwijder de annotatie.
+   * Verwijder de aantekening.
 
      ![Annotatie verwijderen](do-not-localize/screen_shot_2018-03-22at110647.png)
 

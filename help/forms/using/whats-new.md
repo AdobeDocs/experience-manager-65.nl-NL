@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 0e949429-cd5f-4301-aa72-14803cdfab00
 docset: aem65
 exl-id: 47b9de1f-b16a-424c-b8b4-e9d7b3dcca86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1245'
+source-wordcount: '1243'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ ht-degree: 0%
 Met transactierapporten kunt u het aantal verzonden formulieren, verwerkte documenten en gerenderde documenten vastleggen en bijhouden. Het doel van het volgen van deze transacties is een geïnformeerde beslissing te nemen over het gebruik van producten en het opnieuw in evenwicht brengen van investeringen in hardware en software. Voorbeelden van transacties zijn:
 
 * Verzending van een adaptief formulier, een HTML5-formulier of een formulierset
-* Vertoning van een gedrukte versie of webversie van een interactieve communicatie
+* Afdruk of webversie van interactieve communicatie
 * Een document omzetten van de ene bestandsindeling naar de andere
 
 Voor informatie over het vormen van en het gebruiken van transactierapporten, zie [Overzicht van transactierapporten](../../forms/using/transaction-reports-overview.md).
@@ -40,7 +40,7 @@ Voor informatie over het vormen van en het gebruiken van transactierapporten, zi
 
 **Patronen voor gegevensweergave definiëren**
 
-Interactieve auteurs van communicatie kunnen nu definiëren [weergavepatronen voor gegevens](create-interactive-communication.md#datadisplaypatterns) voor velden, variabelen en formuliergegevensmodelelementen. Bijvoorbeeld datum-, valuta- of telefoonnotaties.
+De interactieve auteurs van de Communicatie kunnen nu bepalen [weergavepatronen voor gegevens](create-interactive-communication.md#datadisplaypatterns) voor velden, variabelen en formuliergegevensmodelelementen. Bijvoorbeeld datum-, valuta- of telefoonnotaties.
 
 **Nieuwe typen grafieken gebruiken**
 
@@ -66,7 +66,7 @@ De interactieve auteurs van de Communicatie kunnen nu diverse makkelijk te gebru
 * [Variabelen in een documentfragment toevoegen met @-symbool](../../forms/using/texts-interactive-communications.md#searchvariables)
 * [Gegevensmodelelementen toevoegen aan een documentfragment met @-symbool](../../forms/using/texts-interactive-communications.md#searchdatamodelproperties)
 * [Een webkanaal verwijderen of toevoegen aan een bestaande interactieve communicatie](../../forms/using/create-interactive-communication.md#edit-interactive-communication-properties)
-* [Gegevensbronelementen binden met velden en variabelen met behulp van handelingen voor slepen en neerzetten](../../forms/using/create-interactive-communication.md#binddatasourceelements)
+* [Gegevensbronelementen binden met velden en variabelen door middel van slepen en neerzetten](../../forms/using/create-interactive-communication.md#binddatasourceelements)
 * [Niet-gebonden velden en variabelen markeren tijdens het ontwerpen van interactieve communicatie](../../forms/using/create-interactive-communication.md#distinguishunboundfields)
 * [Extra handelingen zoals kopiëren, groeperen of meer uitvoeren op overgeërfde componenten in een webkanaal](../../forms/using/create-interactive-communication.md#componenttoolbar)
 
@@ -80,13 +80,13 @@ De webkanaallay-out die automatisch wordt gegenereerd met het kanaal Afdrukken i
 
 ### Digitale handtekeningen op basis van Adobe Sign-cloud gebruiken in Adaptive Forms {#use-adobe-sign-s-cloud-based-digital-signatures-in-adaptive-forms}
 
-[Digitale handtekeningen op basis van cloud](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) of externe handtekeningen zijn een nieuwe generatie digitale handtekeningen die werken op het web op het bureaublad, mobiel en die voldoen aan de hoogste standaarden en waarborgen voor ondertekeningsverificatie. U kunt nu [Een adaptief formulier ondertekenen](../../forms/using/working-with-adobe-sign.md) met digitale handtekeningen op basis van cloud.
+[Digitale handtekeningen op basis van cloud](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) of externe handtekeningen zijn een nieuwe generatie digitale handtekeningen die werken op het web op het bureaublad, mobiel en die voldoen aan de hoogste standaarden voor verificatie van ondertekenaars. U kunt nu [Een adaptief formulier ondertekenen](../../forms/using/working-with-adobe-sign.md) met digitale handtekeningen op basis van cloud.
 
 #### Een adaptief formulier of interactieve communicatie insluiten in AEM Sites-toepassingen voor één pagina {#embed-an-adaptive-form-or-interactive-communcation-in-aem-sites-single-page-applications}
 
-Met AEM Forms kunt u [Een adaptief formulier naadloos insluiten](../../forms/using/embed-adaptive-form-aem-sites-spa.md) of Interactieve communicatie in een AEM Sites-toepassing van één pagina (SPA). Het ingesloten adaptieve formulier en interactieve communicatie zijn volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd communiceren met het adaptieve formulier of de interactieve communicatie.
+AEM Forms laat je [Een adaptief formulier naadloos insluiten](../../forms/using/embed-adaptive-form-aem-sites-spa.md) of Interactieve communicatie in een AEM Sites-toepassing van één pagina (SPA). Het ingesloten adaptieve formulier en de interactieve communicatie zijn volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hiermee kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd communiceren met het adaptieve formulier of de interactieve communicatie.
 
-#### Kolommen van Adaptief formulier sorteren {#sort-columns-of-adaptive-form-tables}
+#### Kolommen met Adaptief formulier-tabellen sorteren {#sort-columns-of-adaptive-form-tables}
 
 U kunt [elke kolom in een tabel met adaptieve formulieren sorteren](../../forms/using/adaptive-forms-tables.md#sortcolumnstable) in oplopende of aflopende volgorde. U kunt sorteren toepassen op tabelkolommen met statische tekst, eigenschappen van gegevensmodelobjecten of een combinatie van eigenschappen van statische tekst en gegevensmodelobjecten.
 
@@ -126,7 +126,7 @@ Logboekmogelijkheden van op formulieren gerichte workflowstappen zijn gestandaar
 
 U kunt nu het volgende doen:
 
-* [Invoergegevens valideren](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) gebaseerd op een lijst met beperkingen. Hiermee zorgt u ervoor dat alleen geldige gegevens naar de gegevensbron worden verzonden.
+* [Invoergegevens valideren](../../forms/using/work-with-form-data-model.md#automated-validation-of-input-data) op basis van een lijst met beperkingen. Hiermee zorgt u ervoor dat alleen geldige gegevens naar de gegevensbron worden verzonden.
 * [Standaardeindpunt overschrijven](../../forms/using/configure-data-sources.md#configure-soap-web-services) gedefinieerd in een WSDL-bestand (Web Services Description Language).
 
 * [Standaard overschrijven](../../forms/using/configure-data-sources.md#configure-restful-web-services) [schema, host en basispad](../../forms/using/configure-data-sources.md#configure-restful-web-services) gedefinieerd in Swagger-definitiebestand.
@@ -165,7 +165,7 @@ AEM Forms kan worden ingesteld met elke combinatie van ondersteunde besturingssy
    <td>
     <ul>
      <li>IBM DB2 <br /> </li>
-     <li>Oracle RAC</li>
+     <li>ORACLE RAC</li>
     </ul> </td>
   </tr>
   <tr>
@@ -209,11 +209,11 @@ AEM Forms kan worden ingesteld met elke combinatie van ondersteunde besturingssy
  </tbody>
 </table>
 
-&#42; Neem contact op met de Adobe-ondersteuning voor informatie over het migreren naar een ander platform
+&#42; Contact opnemen met de Adobe Ondersteuning voor informatie over migreren naar een ander platform
 
 #### Nieuwe gebruikersinterface op basis van HTML5 {#new-html-based-uis}
 
-In overeenstemming met de geplande EOL van Adobe Flash Player en de algemene richting van het migreren van op Flash-Gebaseerde inhoud aan open normen, heeft AEM 6.5 Forms op Flash-Gebaseerde UI van de Monitor van de Gezondheid, het Beheer van het Proces, de Uitbreiding van de Reader, en van het Beheer van de Categorie UI van HTML op de Console van het Beleid JEE met op 5 gebaseerde UI vervangen.
+In overeenstemming met de geplande EOL van de Flash Player van de Adobe en algemene richting van het migreren van op Flash-gebaseerde inhoud aan open normen, heeft AEM 6.5 Forms op Flash-gebaseerde UI van de Monitor van de Gezondheid, Process Management, de Uitbreiding van de Reader, en van het Beheer van de Categorie UI van HTML op de Console van het Beleid JEE met op 5-Gebaseerde UI vervangen.
 
 #### Beveiligingsverbeteringen {#security-improvements}
 

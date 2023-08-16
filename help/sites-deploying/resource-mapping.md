@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Configuring
 exl-id: 3eebdd38-da5b-4c38-868a-22c3c7a97b66
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ Als de toewijzing automatisch het voorvoegsel toevoegt `/content` tot `/we-retai
 
 De toewijzingen uit twee lijsten die de Resolver van het Middel JCR (top-down) evalueert om een gelijke te vinden.
 
-Deze lijsten kunnen (samen met configuratiegegevens) onder de **JCR ResourceResolver** optie van de Felix-console; bijvoorbeeld: `https://<*host*>:<*port*>/system/console/jcrresolver`:
+Deze lijsten kunnen (samen met configuratiegegevens) onder de **JCR ResourceResolver** optie van de Felix-console, bijvoorbeeld `https://<*host*>:<*port*>/system/console/jcrresolver`:
 
 * De configuratie toont de huidige configuratie (zoals die voor [Resolver Apache Sling-resource](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver)).
 
-* De Test van de configuratie dit staat u toe om een URL of middelweg in te gaan. Klikken **Oplossen** of **Kaart** om te bevestigen hoe het systeem de ingang zal omzetten.
+* De Test van de configuratie dit laat u een URL of middelweg ingaan. Klikken **Oplossen** of **Kaart** om te bevestigen hoe het systeem de ingang zal omzetten.
 
 * **Resolver Map-items**
 De lijst van ingangen die door de methodes ResourceResolver.resolve worden gebruikt om URLs aan Middelen in kaart te brengen.
@@ -92,7 +92,7 @@ In een standaardinstallatie van AEM kunt u de map vinden:
 
 Dit is de structuur die wordt gebruikt bij het definiëren van toewijzingen voor het HTTP-protocol. Overige mappen ( `sling:Folder`) kan worden gemaakt onder `/etc/map` voor andere protocollen die u in kaart wilt brengen.
 
-#### Het vormen van Interne Redirect aan /content {#configuring-an-internal-redirect-to-content}
+#### Het vormen van Intern Redirect aan /content {#configuring-an-internal-redirect-to-content}
 
 Om de afbeelding tot stand te brengen die om het even welk verzoek aan https://localhost:4503/ met prefixen `/content`:
 

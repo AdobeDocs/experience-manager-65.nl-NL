@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '6905'
+source-wordcount: '6910'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Documentfragmenten zijn herbruikbare onderdelen/onderdelen van een correspondent
 
 * **Tekst**: Een tekstelement is een stuk inhoud dat bestaat uit een of meer tekstalinea&#39;s. Een alinea kan statisch of dynamisch zijn.
 * **Lijst**: List is een groep documentfragmenten, waaronder tekst, lijsten, voorwaarden en afbeeldingen. De volgorde van de lijstelementen kan vast of bewerkbaar zijn. Tijdens het maken van een letter kunt u enkele of alle lijstelementen gebruiken om een herbruikbaar patroon van elementen te repliceren.
-* **Voorwaarde**: De voorwaarden laten u toe om te bepalen welke inhoud inbegrepen bij de tijd van de brievenverwezenlijking wordt, die op de geleverde gegevens wordt gebaseerd. De voorwaarde wordt beschreven in termen van controlevariabelen. Een besturingsvariabele kan een gegevenswoordenboekelement of een plaatsaanduiding zijn.
-* **Lay-outfragment**: Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDP&#39;s) worden gemaakt in Designer en worden vervolgens geüpload naar AEM Forms.
+* **Voorwaarde**: Met voorwaarden kunt u definiëren welke inhoud wordt opgenomen tijdens het maken van correspondentie, op basis van de verschafte gegevens. De voorwaarde wordt beschreven in termen van controlevariabelen. Een besturingsvariabele kan een gegevenswoordenboekelement of een plaatsaanduiding zijn.
+* **Lay-outfragment**: Een lay-outfragment is een lay-out die binnen een of meer letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDP&#39;s) worden gemaakt in Designer en worden vervolgens geüpload naar AEM Forms.
 
 ## Tekst {#text}
 
@@ -45,10 +45,10 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 1. Tikken **Maken** > **Tekst** Of selecteer een tekstelement en tik op **Bewerken**.
 1. Geef de volgende informatie op voor de tekst:
 
-   * **Titel: (Optioneel)** Voer de titel in voor het tekstelement. Titels hoeven niet uniek te zijn en kunnen speciale tekens en niet-Engelse tekens bevatten. De teksten worden bedoeld door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
+   * **Titel: (optioneel)** Voer de titel in voor het tekstelement. Titels hoeven niet uniek te zijn en kunnen speciale tekens en niet-Engelse tekens bevatten. De teksten worden bedoeld door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
    * **Naam:** De unieke naam voor het tekstelement. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Beschrijving**: Typ een beschrijving van het element.
-   * **Gegevenswoordenboek**: Selecteer desgewenst het gegevenswoordenboek waarin u wilt toewijzen. Met dit kenmerk kunt u verwijzingen naar gegevenswoordenboekelementen in het tekstelement toevoegen.
+   * **Gegevenswoordenboek**: Selecteer optioneel het gegevenswoordenboek waarin u wilt toewijzen. Met dit kenmerk kunt u verwijzingen naar gegevenswoordenboekelementen in het tekstelement toevoegen.
    * **Tags**: Als u een aangepaste tag wilt maken, typt u een waarde in het tekstveld en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
 
 1. Tikken **Volgende**. Met Correspondentiebeheer wordt de Editor-pagina weergegeven waar u tekstalinea&#39;s en gegevenselementen aan de tekst kunt toevoegen.
@@ -64,19 +64,19 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    * **Koppeling**: Invoegen [hypertext](#insert-hyperlink) in de tekst.
    * **Herhalen**: Met Herhalen wordt het verzamelingselement in het gegevenswoordenboek afgedrukt met een scheidingsteken.
    * **Voorwaarde**: Tik om een voorwaarde in te voegen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
-   * **Beschrijving toevoegen**: Voeg een aantekening aan een stuk van tekst toe. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
+   * **Beschrijving toevoegen**: Voeg annotatie toe aan een stuk tekst. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
    * **Pagina-einde**: Als u het kenmerk Pagina-einden van een tekstmodule instelt op false, wordt de tekstmodule niet over pagina&#39;s verdeeld.
 
    Er wordt een teksteditor geopend. Voer de tekst in. De werkbalk verandert afhankelijk van het type bewerkingen dat u wilt uitvoeren: Alinea, Uitlijning of Lijst:
 
    ![Type werkbalk selecteren](assets/toolbarselection.png)
 
-   Selecteer een type werkbalk: Alinea, Uitlijning of Lijst
+   Selecteer het type werkbalk: Alinea, Uitlijning of Lijst
 
    ![Alinea, werkbalk](assets/fonteditingtoolbar.png)
 
    Alinea, werkbalk
-   [ ![Uitlijning, werkbalk](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Uitlijning, werkbalk
+   [![Uitlijning, werkbalk](assets/paragrapheditingtoolbar.png)](assets/paragrapheditingtoolbar-1.png)Uitlijning, werkbalk
 
    ![Aanbiedingswerkbalk](assets/bulleteditingtoolbar.png)
 
@@ -133,7 +133,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    Met het @-symbool kunt u ook gegevenswoordenboek en plaatsaanduidingselementen zoeken en toevoegen aan de teksteditor. Plaats de cursor op de plaats waar u het element wilt invoegen. Typ @ gevolgd door de zoekreeks. De teksteditor voert de zoekbewerking uit op alle gegevenswoordenboeken en plaatsaanduidingselementen die beschikbaar zijn in het tekstdocumentfragment. De zoekbewerking haalt de elementen met de zoekreeks op en geeft deze weer als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het element dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
-1. U kunt inline voorwaarden en herhalingen gebruiken om uw brief in hoge mate contextueel en goed gestructureerd te maken. Zie voor meer informatie over inline condition en repeat [Inline voorwaarden en herhalen in letters](/help/forms/using/cm-inline-condition.md).
+1. U kunt inline voorwaarden en herhaling gebruiken om uw brief te maken in hoge context en goed gestructureerd. Zie voor meer informatie over inline condition en repeat [Inline voorwaarden en herhalen in letters](/help/forms/using/cm-inline-condition.md).
 1. Tikken **Opslaan**.
 
 #### Hyperlink invoegen in tekst {#insert-hyperlink}
@@ -186,7 +186,7 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 
 1. Open de tekstmodule in de teksteditor.
 1. Tik op Zoeken en vervangen.
-1. Typ de tekst die u wilt zoeken in het tekstvak Zoeken en de tekst die u wilt gebruiken om de zoektekst te vervangen door en druk op Vervangen.
+1. Typ de tekst die u wilt zoeken in het tekstvak Zoeken en de tekst waarmee u de zoektekst wilt vervangen en druk op Vervangen.
 1. Als de zoektekst wordt gevonden, wordt de tekst vervangen door de tekst Vervangen.
 
    * Als er een ander exemplaar van de zoektekst wordt gevonden, wordt dat exemplaar gemarkeerd in de tekstmodule. Als u nogmaals op Vervangen drukt, wordt het gemarkeerde exemplaar vervangen en gaat de cursor verder als een derde exemplaar wordt gevonden.
@@ -226,10 +226,10 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
 * **Bibliotheektoegang**: Gebruikers kunnen modules aan de lijst toevoegen. Deze markering geeft aan of bibliotheektoegang is ingeschakeld. Indien ingeschakeld (open), kan de gebruiker modules aan de lijst toevoegen terwijl de letter wordt voorvertoond.
 * Wanneer u een lijst maakt, kunt u een type opgeven, zoals:
 * **Normaal**: Er wordt geen extra stijlopmaak toegepast op de lijst.
-* **Opsommingsteken**: Een lijst die is opgemaakt met een eenvoudig opsommingsteken.
+* **Opsommingsteken**: Een lijst met een eenvoudig opsommingsteken.
 * **Genummerd**: Een numerieke lijst met de standaardcijfers (1,2,...), hoger Romeins (I, II, ...) en lager Romeins (i, ii,...).
 * **Letterlijk**: Een alfabetische lijst met kleine letters (a,b,...) en hoofdletters (A,B,...).
-* **Aangepast**: U kunt naar keuze een willekeurig genummerd/met briefhoofd en voor- en achtervoegselwaarden maken.
+* **Aangepast**: U kunt naar keuze een willekeurig genummerd/met briefing type en voor- en achtervoegselwaarden maken.
 
 1. Selecteren **Forms** > **Documentfragmenten**.
 
@@ -237,10 +237,10 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
 
 1. Geef de volgende informatie voor de lijst op:
 
-   * **Titel (optioneel): Enter** de titel van de lijst. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Lijsten worden aangeduid door hun titels (indien beschikbaar), zoals in miniaturen en de eigenschappen van elementen.
+   * **Titel (optioneel): Enter** de titel van de lijst. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten. Lijsten worden aangeduid door hun titels (indien beschikbaar), zoals in miniaturen en de eigenschappen van elementen.
    * **Naam:** De unieke naam voor de lijst. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch gevuld met de waarde in het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Beschrijving (optioneel)**: Typ een beschrijving van het element.
-   * **Gegevenswoordenboek (optioneel)**: Selecteer eventueel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de lijst, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste lijst vinden.
+   * **Gegevenswoordenboek (optioneel)**: Selecteer optioneel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de lijst, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste lijst vinden.
    * **Tags (optioneel)**: Selecteer de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u tikt **Opslaan**.)
 
 1. Tikken **Volgende**.
@@ -256,20 +256,20 @@ Tik op het pijlpictogram en houd de muisknop ingedrukt ( ![dragndrop](assets/dra
 
 1. U kunt de volgende opties selecteren om te specificeren hoe de lijst zich in het CCR gebruikersinterface gedraagt:
 
-   * **Bibliotheektoegang**: Tik op Library Access om bibliotheektoegang voor het toevoegen van elementen in te schakelen. Wanneer de Toegang van de Bibliotheek wordt toegelaten, beweert aanpast of kan meer inhoud aan de lijst toevoegen. Anders is de functie Aanpassing claims beperkt tot de inhoud die u voor de lijst hebt gedefinieerd.
+   * **Bibliotheektoegang**: Tik op Bibliotheektoegang om bibliotheektoegang voor het toevoegen van elementen in te schakelen. Wanneer de Toegang van de Bibliotheek wordt toegelaten, beweert aanpast of kan meer inhoud aan de lijst toevoegen. Anders is de functie Aanpassing claims beperkt tot de inhoud die u voor de lijst hebt gedefinieerd.
    * **Vergrendelingsvolgorde**: Tik op Volgorde vergrendelen om de volgorde van de elementen in de lijst te vergrendelen zodat de Aanpasser voor claims de volgorde niet kan wijzigen. Als u deze optie niet selecteert, kan de Aanpassing van claims de volgorde van de lijstitems wijzigen.
 
    * **Opsommingstekens toevoegen**: Gebruik deze optie om een opsommingsteken of nummeringsstijl toe te passen op de module. U kunt een vooraf ontworpen lijststijl of een aangepaste stijl gebruiken. U kunt ook de tekst opgeven die voor en na elk van de lijstitems moet worden weergegeven.
    * **Pagina-einde**: Selecteer deze optie ( ![break](assets/break.png)) om een pagina-einde toe te voegen tussen de inhoud van de lijst. Wanneer deze optie niet is geselecteerd ( ![noord](assets/nobreak.png)), als de inhoud van de lijst overloopt naar de volgende pagina, wordt de hele lijst verschoven naar de volgende pagina in plaats van de pagina tussen de lijst te breken.
 
-   * **Toewijzingsconfiguratie**: Met deze optie geeft u het minimale en maximale aantal elementen op dat aan de lijst kan worden toegevoegd.
+   * **Toewijzingsconfiguratie**: Gebruik deze optie om het minimum- en maximumaantal elementen op te geven dat aan de lijst kan worden toegevoegd.
 
 1. U kunt de volgende opties selecteren om op te geven hoe elk element in de lijst zich gedraagt bij uitvoering:
 
    * **Bewerkbaar:** Als deze optie is geselecteerd, kan de inhoud worden bewerkt in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor de modules Lijst en Afbeelding.)
    * **Verplicht:** Als deze optie is geselecteerd, is de inhoud vereist in de gebruikersinterface Correspondentie maken.
    * **Geselecteerd:** Als deze optie is geselecteerd, wordt de inhoud vooraf geselecteerd in de gebruikersinterface Correspondentie maken.
-   * **Stijl overslaan:** Als deze optie is geselecteerd, slaat de inhoud opsommingstekens en nummering over in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor afbeeldingsmodules. Tussen Stijl, Samenstelling en Lijststijl negeren kan bovendien slechts een van de opties worden toegepast op een module. Een van deze opties kan voor een module worden gebruikt wanneer u Opsommingstekens toevoegen voor een module selecteert.)
+   * **Stijl overslaan:** Als deze optie is geselecteerd, slaat de inhoud opsommingstekens en nummering over in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor afbeeldingsmodules. Tussen Stijl overslaan, Samengesteld en Lijststijl negeren kan slechts een van de opties worden toegepast op een module. Een van deze opties kan voor een module worden gebruikt wanneer u Opsommingstekens toevoegen voor een module selecteert.)
    * **Inspringing:** U kunt het inspringingsniveau wijzigen van elke module of inhoud die als onderdeel van de lijst is geselecteerd. De inspringing wordt opgegeven in termen van niveaus (te beginnen met nul), zodat elk inspringingsniveau overeenkomt met een opvulling van 36 punten.
    * **Samengesteld:** Als deze optie is geselecteerd, wordt de samengestelde nummering toegepast als een combinatie van de stijl van de buitenste (bovenliggende) lijst en is het een eigen stijl. De samengestelde nummering in deze geneste lijst is gebaseerd op de volgorde waarin deze geneste lijst wordt weergegeven in de buitenste lijst.
    * **Lijststijl negeren:** Als de optie Samengestelde nummering is uitgeschakeld, is de optie Lijststijl negeren ingeschakeld. Bij deze selectie wordt de eigen stijl van de geneste lijst genegeerd. De nummering gaat verder vanaf de buitenste lijst. Daarom worden de modules van de genestelde lijst behandeld als deel van de buitenlijst zelf, die om het even welke stijlen veronachtzamen die op de genestelde Lijst worden gespecificeerd. Als de optie Lijststijl negeren is uitgeschakeld voor een geneste lijst, hebben de modules die deel uitmaken van die geneste lijst een eigen nummeringsstijl.
@@ -283,7 +283,7 @@ Tik op het pijlpictogram en houd de muisknop ingedrukt ( ![dragndrop](assets/dra
 * Gebruik de juiste gegevenswoordenboekbinding
 * De volgende regels zijn van toepassing wanneer u de List Editor gebruikt om een lijst te wijzigen:
 
-   * Bijwerken van eigenschappen: Toegestaan
+   * Bijwerken van eigenschappen: toegestaan
    * **Wijziging van gegevenswoordenboek:** Toegestaan totdat er geen item is gekoppeld dat het gegevenswoordenboek gebruikt. U kunt het gegevenswoordenboek niet wijzigen tijdens het bijwerken.
 
 ## Voorwaarden {#conditions}
@@ -294,7 +294,7 @@ Op basis van de opties die u kiest, wordt alleen de eerste expressie die op basi
 
 ### Uitvoeringsvoorwaarden {#implementing-conditions}
 
-De Condition Editor wordt geleverd met een [Expressiebouwer](/help/forms/using/expression-builder.md) gebruikersinterface die het creëren van uitdrukkingen gebruikend zowel veelvoudige placeholders als elementen van het Woordenboek van Gegevens steunt. In dergelijke expressies kunt u algemene operanden en lokale/algemene functies gebruiken. Elke expressie kan aan bepaalde inhoud worden gekoppeld en optioneel kan er een standaardsectie zijn als geen van de expressies true oplevert. Alle expressies worden geëvalueerd in de volgorde waarin ze zijn gedefinieerd en de eerste expressies die true retourneren worden geselecteerd en de bijbehorende inhoud wordt geretourneerd door die voorwaardelijke module.
+De Condition Editor bevat een [Expressiebouwer](/help/forms/using/expression-builder.md) gebruikersinterface die het creëren van uitdrukkingen gebruikend zowel veelvoudige placeholders als elementen van het Woordenboek van Gegevens steunt. In dergelijke expressies kunt u algemene operanden en lokale/algemene functies gebruiken. Elke expressie kan aan bepaalde inhoud worden gekoppeld en optioneel kan er een standaardsectie zijn als geen van de expressies true oplevert. Alle expressies worden geëvalueerd in de volgorde waarin ze zijn gedefinieerd en de eerste expressies die true retourneren worden geselecteerd en de bijbehorende inhoud wordt geretourneerd door die voorwaardelijke module.
 
 Als de tekst van de voorwaarden in een brief bijvoorbeeld verschilt, afhankelijk van de status waarin de klant zich bevindt en het gegevenswoordenboek een element bevat met de naam &quot;state&quot;, kunt u de voorwaarde als volgt toevoegen:
 * state = NY, selecteer T&amp;C_NY tekstparagraaf
@@ -309,11 +309,11 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 1. Selecteren **Maken > Voorwaarde**.
 1. Geef de volgende informatie voor de lijst op:
 
-   * **Titel (optioneel):** Voer de titel voor de voorwaarde in. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. De voorwaarden worden verwezen door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
+   * **Titel (optioneel):** Voer de titel voor de voorwaarde in. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten. De voorwaarden worden verwezen door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
    * **Naam:** De unieke naam voor de voorwaarde. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Beschrijving (optioneel)** Typ een beschrijving van de voorwaarde.
-   * **Gegevenswoordenboek (optioneel)**: Selecteer eventueel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de voorwaarde, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste voorwaarde vinden.
-   * **Tags (optioneel)**: Selecteer eventueel de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u tikt **Opslaan**.)
+   * **Gegevenswoordenboek (optioneel)**: Selecteer optioneel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de voorwaarde, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste voorwaarde vinden.
+   * **Tags (optioneel)**: Selecteer optioneel de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u tikt **Opslaan**.)
 
 1. Tikken **Volgende**.
 1. Tikken **Element toevoegen**.
@@ -345,7 +345,7 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
    * **Bijwerken van eigenschappen:** Toegestaan
    * **Wijziging van gegevenswoordenboek:** Toegestaan totdat het gegevenswoordenboekelement niet wordt gebruikt.
 
-## Lay-outfragmenten {#layoutfragments}
+## Layoutfragmenten {#layoutfragments}
 
 Een lay-outfragment is gebaseerd op XDPs die in Ontwerper worden gecreeerd. Voor het maken van lay-outfragmenten moet u de XDP&#39;s maken en [uploaden naar AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
@@ -370,7 +370,7 @@ Houd rekening met de volgende punten bij het ontwerpen van tabellen:
 1. Tabellen kunnen worden aangepast op het moment dat u het fragment maakt. De optie Aanpassen is echter alleen ingeschakeld wanneer het bovenliggende subformulier van de tabel wordt weergegeven.
 1. Voor dynamische tabellen gebruiken alle velden, herhaalbare rijen en tabellen &#39;use name binding&#39; voor gegevens die correct worden samengevoegd.
 1. Voor dynamische tabellen maken alle herhalende DDE&#39;s die aan de tabelvelden zijn gebonden, deel uit van dezelfde hiërarchie. Voor niet-herhalende DDE&#39;s bestaat een dergelijke beperking niet.
-1. Op het moment van het samenvoegen van lay-outfragment in bovenliggende doeltabellen wordt de grootte aangepast aan de beschikbare ruimte, maar de grootte wordt alleen aangepast wanneer het layoutfragment geen doelgebied of veld bevat dat zich direct binnen het bovenste subformulier bevindt. Doelgebied en velden binnen tabel zijn toegestaan.
+1. Op het moment dat het lay-outfragment wordt samengevoegd in bovenliggende doeltabellen, wordt de grootte aangepast aan de beschikbare ruimte. De grootte wordt echter alleen aangepast als het lay-outfragment geen doelgebied of veld bevat dat zich direct binnen het bovenste subformulier bevindt. Doelgebied en velden binnen tabel zijn toegestaan.
 1. U kunt plaatsaanduidingstabellen maken. Tabellen voor plaatsaanduidingen hebben slechts één lege cel.
 
 * Voor plaatsaanduidingstabellen kunt u de volgende eigenschappen aanpassen op het moment dat het fragment wordt gemaakt.
@@ -396,25 +396,25 @@ Zie voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische
 
 1. Selecteren **Maken** > **Lay-outfragment**.
 1. Correspondence Management geeft de beschikbare XDP&#39;s weer. Selecteer de XDP waarop u het lay-outfragment wilt baseren en tik **Volgende**.
-1. Geef de volgende informatie op voor de indeling:
+1. Geef de volgende informatie op voor de lay-out:
 
-   * **Titel (optioneel):** Voer de titel in voor het layoutfragment. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Indelingsfragmenten worden aangeduid met hun titels (indien beschikbaar), zoals miniaturen en elementeigenschappen.
+   * **Titel (optioneel):** Voer de titel in voor het layoutfragment. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten. Indelingsfragmenten worden aangeduid met hun titels (indien beschikbaar), zoals miniaturen en elementeigenschappen.
    * **Naam:** De unieke naam voor het lay-outfragment. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken. Deze naam wordt weergegeven in de lijst in de gebruikersinterface Middelen beheren.
    * **Beschrijving (optioneel)**: Beschrijving die wordt weergegeven in de lijst in de gebruikersinterface Middelen beheren.
-   * **Tags (optioneel)**: Selecteer eventueel de tags die u op de voorwaarde wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken.
+   * **Tags (optioneel)**: Selecteer optioneel de tags die op de voorwaarde moeten worden toegepast. U kunt ook de naam van een nieuwe tag typen en deze maken.
 
 1. Tik op de knop **Tabel** en geeft u de volgende informatie op voor de indeling:
 
-   * **Configuratie voor**: Selecteer de lijst die wordt gevormd.Als achtervoegsel aan de lijstnaam in dropdown is (Statisch) als de lijst statisch is of (Dynamisch) als de lijst een dynamische lijst is. Statische tabellen bevatten een vast aantal rijen. Statische tabellen kunnen doelgebieden en -velden bevatten. Deze doelgebieden en velden kunnen niet worden gebonden aan herhalende DDE&#39;s. De gegevens die aan tabelcellen zijn gebonden, bepalen het aantal rijen voor dynamische tabellen.
+   * **Configuratie voor**: Selecteer de tabel die wordt geconfigureerd.Als achtervoegsel voor de tabelnaam in het vervolgkeuzemenu is (statisch) als de tabel een statische tabel is of (dynamisch) als de tabel een dynamische tabel is. Statische tabellen bevatten een vast aantal rijen. Statische tabellen kunnen doelgebieden en -velden bevatten. Deze doelgebieden en velden kunnen niet worden gebonden aan herhalende DDE&#39;s. De gegevens die aan tabelcellen zijn gebonden, bepalen het aantal rijen voor dynamische tabellen.
 
    * **Rijen**: Selecteer het aantal rijen voor de indeling. De gevormde rijtelling moet groter dan of gelijk aan de originele rijtelling zijn.
-   * **Kolommen**: Selecteer het aantal kolommen voor de lay-out. De gevormde kolomtelling moet groter dan of gelijk aan de originele kolomtelling zijn.
+   * **Kolommen**: selecteer het aantal kolommen voor de layout. De gevormde kolomtelling moet groter dan of gelijk aan de originele kolomtelling zijn.
 
    Voor elke kolom zijn de volgende gegevens vereist:
 
    * **Koptekst**: tekst die moet worden weergegeven voor de koptekst
-   * **Voettekst**: tekst die moet worden weergegeven voor de voettekst
-   * **Type**: type van extra kolom. Veld of doelgebied. Type is ingeschakeld voor statische plaatsaanduidingstabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dat geval is het type van de extra cellen in de uitgebreide kolom gelijk aan het type van de laatste kolom in die rij; en het type cel in een extra rij is hetzelfde als het type van de laatste cel in die kolom.
+   * **Voettekst**: tekst die voor de voettekst moet worden weergegeven
+   * **Type**: type extra kolom. Veld of doelgebied. Type is ingeschakeld voor statische plaatshaartabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dit geval is het type van extra cellen in uitgebreide kolom hetzelfde als het type van de laatste kolom in die rij en is het type van de cel in extra rij hetzelfde als het type van de laatste cel in die kolom.
    * **Breedteverhouding:** verhouding van de tabelkolombreedten.
 
    Zie voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten [Voorbeeld met voorbeeldbestanden: statische en dynamische tabellen in een letter gebruiken](#examplewithsamplefiles).
@@ -427,13 +427,13 @@ Voor instructies over het uploaden/importeren van een XDP naar Correspondentenbe
 
 ### Tips en trucs {#best-practices-tips-and-tricks-2}
 
-#### De standaardbinding voor subformulieren instellen {#set-the-default-subform-binding}
+#### De standaardbinding van het subformulier instellen {#set-the-default-subform-binding}
 
 Wanneer u doelgebieden maakt in Designer, kunt u de standaardbinding voor alle nieuwe subformulieren instellen op Geen.
 
 De standaardbinding instellen:
 
-1. Tik in Designer op **Gereedschappen** > **Opties** > **Gegevensbindingen** > **Binding subformulier**.
+1. Tik in Designer **Gereedschappen** > **Opties** > **Gegevensbindingen** > **Binding subformulier**.
 
 1. Selecteer in de lijst Standaardbinding voor nieuwe subformulieren de optie **Geen gegevensbinding**.
 
@@ -441,7 +441,7 @@ Zo zorgt u ervoor dat subformulieren die worden ingevoegd met de opdracht Invoeg
 
 #### Sectie 508 — Naleving {#section-compliance}
 
-Als de voltooide brief die in de Create Correspondence gebruikersinterface wordt gecreeerd voor het invullen van een recentere werkschema wordt gebruikt. Volg deze aanbevelingen met betrekking tot Sectie 508 wanneer het creëren van de lay-out. Anders is de letter PDF bestemd voor weergave en kunt u deze aanbevelingen negeren:
+Als de voltooide brief die in Create Correspondence wordt gecreeerd voor het invullen van een recentere werkschema wordt gebruikt. Volg deze aanbevelingen met betrekking tot Sectie 508 wanneer het creëren van de lay-out. Anders is de letter PDF bestemd voor weergave en kunt u deze aanbevelingen negeren:
 
 * Alle subformulieren van het doelgebied en alle velden in een indeling hebben een tabvolgorde.
 * Velden met bijschriften zijn standaard 508-compatibel. Het kenmerk /field/assist/speak@priority van het veld is standaard ingesteld op &quot;custom&quot;. Dit betekent dat de schermlezer het bijschrift van het veld leest, tenzij aangepaste schermlezertekst wordt opgegeven.
@@ -461,20 +461,20 @@ Wanneer u werkt met een combinatie van datums, zoals startDate - endDate, gebrui
 
 Wanneer een indeling veel velden en doelgebieden bevat die zijn toegewezen aan één XML-element, gebruikt u binding op formulierniveau en maakt u een afzonderlijk knooppunt voor elk element. Velden die op formulierniveau zijn gebonden, worden genegeerd bij het toewijzen van gegevens in Correspondentiebeheer.
 
-#### Doelgebieden van subformulieren op een master pagina niet gebruiken {#do-not-use-subform-target-areas-in-a-master-page}
+#### Doelgebieden van subformulieren in een basispagina niet gebruiken {#do-not-use-subform-target-areas-in-a-master-page}
 
-Subformulieren zijn bedoeld voor gebieden op een master pagina en zijn niet zichtbaar in de gebruikersinterface Middelen beheren en er kunnen geen gegevens aan worden toegewezen.
+Subformulieren zijn bedoeld voor gebieden in een basispagina en zijn niet zichtbaar in de gebruikersinterface Middelen beheren en er kunnen geen gegevens aan worden toegewezen.
 
 #### De juiste posities en typen kiezen voor de doelgebieden {#choosing-appropriate-positions-and-types-for-target-areas}
 
 Let bij het ontwerpen van de indeling op het kiezen van subformulieren. Als de indeling één subformulier bevat, kan het een stroomtype zijn. Nadat u de velden in het subformulier hebt geplaatst, kunt u het subformulier onderbrengen in een ander subformulier, zodat het subformulier met terugloop ook wordt weergegeven en de indeling niet wordt verstoord.
 
-#### Velden op master pagina&#39;s plaatsen {#placing-fields-on-master-pages}
+#### Velden op stramienpagina&#39;s plaatsen {#placing-fields-on-master-pages}
 
-Let op het volgende wanneer u een veld op een master pagina plaatst:
+Let op het volgende wanneer u een veld op een stramienpagina plaatst:
 
-* De binding van master paginavelden instellen op Globale gegevens gebruiken
-* Plaats het veld niet rechtstreeks onder het basisgebied PageArea van de master pagina.
+* De binding van stramienpaginavelden instellen op Globale gegevens gebruiken
+* Plaats het veld niet rechtstreeks onder het basisgebied PageArea van de basispagina.
 * Plaats het veld in een benoemd subformulier en zorg ervoor dat de binding van het benoemde subformulier is ingesteld op Naam gebruiken.
 
 ## Tabellen maken met behulp van lay-outfragmenten {#creating-tables-using-layout-fragments}
@@ -484,7 +484,7 @@ Veel lettertypesjablonen bevatten tabellen. Tabellen kunnen statisch zijn, zoals
 * **Statische tabellen**: Tabellen worden soms gemaakt met rijen met een verschillend aantal kolommen, zoals voor een lijst met voorwaarden. Waar elke rij één voorwaarde vertegenwoordigt en elke voorwaarde kan verschillende subdelen hebben. Elk onderdeel wordt in een aparte kolom weergegeven.
 * **Dynamische tabellen**: Indelingsfragmenten bieden de mogelijkheid om de velden van een dynamische tabel te binden aan DDE&#39;s voor verzamelingen. Op het tijdstip van de de lijstrijen van de lettergeneratie worden geproduceerd volgens de grootte van inzameling DDEs.
 
-DD heeft een inzamelingselement Nominee_details dat een samengesteld element met drie primitieve elementen heeft: Nominee_name, Nominee_address en Nominee_gender.
+DD heeft een inzamelingselement Nominee_details die een samengesteld element met drie primitieve elementen heeft: Nominee_name, Nominee_address, en Nominee_gender.
 De dynamische XDP heeft ook de zelfde kopballen. Zo kunt u de dynamische XDP gebieden met de bovengenoemde gebieden van DD in kaart brengen.
 
 ### Voorbeeld met voorbeeldbestanden: Statische en dynamische tabellen in een letter gebruiken {#examplewithsamplefiles}
@@ -493,7 +493,7 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 
 1. Maak een gegevenswoordenboek (DD) dat u in het voorbeeld wilt gebruiken, zoals wordt weergegeven in de afbeelding.
 
-   Selecteer vervolgens DD en exporteer voorbeeldgegevens. Het XML-bestand dat u krijgt, bevat werknemersgegevens en drie instanties voor Nomine_details (standaard worden 3 instanties gedownload. U kunt toevoegen of verwijderen naar wens). Werk de waarden bij en importeer vervolgens de testgegevens in DD. Het CMP-bestand is het pakket en bevat de DD. Zo, voer DD in Correspondence Management in.
+   Selecteer vervolgens DD en exporteer voorbeeldgegevens. Het XML-bestand dat u krijgt, bevat werknemersgegevens en drie instanties voor Nomine_details (standaard worden 3 instanties gedownload. U kunt toevoegen of verwijderen (afhankelijk van uw vereiste). Werk de waarden bij en importeer vervolgens de testgegevens in DD. Het CMP-bestand is het pakket en bevat de DD. Zo, voer DD in Correspondence Management in.
 
    Voor meer informatie over het werken met het Woordenboek van Gegevens en testgegevens, zie [Gegevenswoordenboek](/help/forms/using/data-dictionary.md#p-working-with-test-data-p).
 
@@ -508,7 +508,7 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 
    U kunt ook de statische en dynamische XDP&#39;s gebruiken die bij deze stap zijn gevoegd.
 
-   Ga voor meer informatie over het werken met layoutfragmenten naar [Lay-outfragmenten](#layoutfragments).
+   Ga voor meer informatie over het werken met layoutfragmenten naar [Layoutfragmenten](#layoutfragments).
 Voor meer informatie over het ontwerpen van lay-outs raadpleegt u [Help bij Designer](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/).
 
 [Bestand ophalen](assets/static.xdp.zip)
@@ -527,11 +527,11 @@ Voor meer informatie over het ontwerpen van lay-outs raadpleegt u [Help bij Desi
 1. Maak een lay-outfragment op basis van de statische XDP. Het lusje van de Lijst van de eigenschappen toont dat de lijst statisch is (Configuratie voor gebied). Het aantal rijen (1) en kolommen (3) worden afgeleid van het XDP/Layout-fragment.
 
    U kunt het aantal kolommen en rijen hier wijzigen. Afhankelijk van wat u in dit scherm kiest, blijft het aantal rijen en kolommen van een statische tabel vast in de letter die met deze indeling wordt gemaakt.
-   [ ![Een layoutfragmentscherm maken](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [![Een layoutfragmentscherm maken](assets/statictableproperties.png)](assets/statictableproperties-1.png)
 
 1. Maak een letter met beide lay-outfragmenten erin. Wanneer u dynamische XDP in de brief opneemt, plaats de band van zijn gebieden aan de de inzamelingselementen van het Woordenboek van Gegevens.
 
-   Voor meer informatie over het maken van Letters en Letter-sjablonen raadpleegt u [Letter maken](/help/forms/using/create-letter.md).
+   Zie voor meer informatie over het maken van Letters en Letter-sjablonen [Letter maken](/help/forms/using/create-letter.md).
 
 1. Sla de brief op en geef een voorvertoning weer. Wanneer u een voorvertoning van de letter weergeeft, worden de waarden uit het gegevenswoordenboek in de letter weergegeven. Voor de dynamische tabel zijn er drie rijen. Dit komt doordat de testgegevens drie records voor deze rijen hebben.
 
@@ -548,7 +548,7 @@ Voor meer informatie over het ontwerpen van lay-outs raadpleegt u [Help bij Desi
 Als u snel een documentfragment wilt maken met eigenschappen en inhoud die vergelijkbaar zijn met een bestaand documentfragment, kunt u dit kopiëren en plakken.
 
 1. Selecteer een of meer documentfragmenten in de lijst met documentfragmenten. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over mappen raadpleegt u [Mappen en elementen ordenen](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
+1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te gaan voordat u plakt. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Zie voor meer informatie over mappen [Mappen en elementen ordenen](/help/forms/using/import-export-forms-templates.md#folders-and-organizing-assets).
 1. Tik op Plakken. Het dialoogvenster Plakken wordt geopend. Als u de documentfragmenten op dezelfde plaats kopieert en plakt, wijst het systeem automatisch namen en titels toe aan de nieuwe exemplaren van letters, maar u kunt de titels en namen van de letters bewerken.
 1. Bewerk indien nodig de titel en de naam waarmee u de kopie van het documentfragment wilt opslaan.
 1. Tik op Plakken. De kopie van het documentfragment wordt gemaakt.

@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1783'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,8 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze sectie beschrijft het vormen segmentatie wanneer het gebruiken van ContextHub. Raadpleeg de relevante documentatie voor [segmentatie configureren voor clientcontext](/help/sites-administering/campaign-segmentation.md).
+>Deze sectie beschrijft het vormen segmentatie wanneer het gebruiken van ContextHub. Als u de functionaliteit van de Context van de Cliënt gebruikt, gelieve de relevante documentatie voor [segmentatie configureren voor clientcontext](/help/sites-administering/campaign-segmentation.md).
+>
 
 Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [Soorten publiek beheren](/help/sites-authoring/managing-audiences.md) voor informatie over hoe de segmentatie werkt en zeer belangrijke termijnen.
 
@@ -29,7 +30,7 @@ Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstel
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud blijft behouden in het dialoogvenster [Personalisatie](/help/sites-authoring/personalization.md) van de website. [Activiteiten](/help/sites-authoring/activitylib.md) Hier gedefinieerd kan op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
-AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het staat u ook toe om de resultaten van uw segmentdefinities te verifiëren.
+Met AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het laat u ook de resultaten van uw segmentdefinities verifiëren.
 
 ## Segmenten openen {#accessing-segments}
 
@@ -41,11 +42,11 @@ Om tot uw segmenten toegang te hebben moet u uw configuratie selecteren. Selecte
 
 Selecteer uw configuratie om de segmenten, bijvoorbeeld de Plaats van WKND te zien:
 
-![Soorten publiek - Segmenten](assets/segmentation-access-segments.png)
+![Soorten publiek - segmenten](assets/segmentation-access-segments.png)
 
-## Segmenteditor {#segment-editor}
+## Segment-editor {#segment-editor}
 
-De **Segmenteditor** kunt u een segment gemakkelijk wijzigen. Als u een segment wilt bewerken, selecteert u een segment in het dialoogvenster [lijst van segmenten](/help/sites-administering/segmentation.md#accessing-segments) en klik op de knop **Bewerken** knop.
+De **Segment-editor** Hiermee kunt u een segment gemakkelijk wijzigen. Om een segment uit te geven, selecteer een segment in [lijst van segmenten](/help/sites-administering/segmentation.md#accessing-segments) en klik op de knop **Bewerken** knop.
 
 ![segmenteditor](assets/segmenteditor.png)
 
@@ -55,17 +56,17 @@ Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelos
 
 >[!CAUTION]
 >
->De segmentredacteur controleert geen cirkelverwijzingen. Zo verwijst segment A bijvoorbeeld naar een ander segment B, dat op zijn beurt weer naar segment A verwijst. U moet ervoor zorgen dat de segmenten geen cirkelverwijzingen bevatten.
+>De segmentredacteur controleert geen cirkelverwijzingen. Zo verwijst segment A bijvoorbeeld naar een ander segment B, dat weer naar segment A verwijst. U moet ervoor zorgen dat de segmenten geen cirkelverwijzingen bevatten.
 
 ### Containers {#containers}
 
-De volgende containers zijn beschikbaar uit-van-de-doos en staan u toe om vergelijkingen en verwijzingen samen te groeperen voor booleaanse evaluatie. U kunt deze vanuit de componentbrowser naar de editor slepen. Zie de volgende sectie [AND en OR-containers gebruiken](/help/sites-administering/segmentation.md#using-and-and-or-containers) voor meer informatie .
+De volgende containers zijn beschikbaar uit-van-de-doos en laten u vergelijkingen en verwijzingen samen groeperen voor booleaanse evaluatie. U kunt deze vanuit de componentbrowser naar de editor slepen. Zie de volgende sectie [AND en OR-containers gebruiken](/help/sites-administering/segmentation.md#using-and-and-or-containers) voor meer informatie .
 
 <table>
  <tbody>
   <tr>
    <td>Container en<br /> </td>
-   <td>De operator Boolean AND<br /> </td>
+   <td>De Booleaanse operator AND<br /> </td>
   </tr>
   <tr>
    <td>Container OF<br /> </td>
@@ -85,7 +86,7 @@ De volgende segmentvergelijkingen zijn beschikbaar uit-van-de-doos om segmenteig
    <td>Vergelijkt een bezit van een opslag met een bepaalde waarde<br /> </td>
   </tr>
   <tr>
-   <td>Eigenschap-eigenschap</td>
+   <td>Eigenschap</td>
    <td>Vergelijkt één bezit van een opslag aan een ander bezit<br /> </td>
   </tr>
   <tr>
@@ -161,12 +162,12 @@ Het nieuwe segment definiëren:
 
 ### AND en OR-containers gebruiken {#using-and-and-or-containers}
 
-Gebruikend EN en OF containercomponenten, kunt u complexe segmenten in AEM construeren. Hierbij is het nuttig om op een aantal basispunten te letten:
+Gebruikend EN en OF containercomponenten, kunt u complexe segmenten in AEM construeren. Hierbij is het nuttig om u bewust te maken van een aantal basispunten:
 
 * Het hoogste niveau van de definitie is altijd de EN container die aanvankelijk wordt gecreeerd. Dit kan niet worden veranderd, maar heeft geen effect op de rest van uw segmentdefinitie.
 * Zorg ervoor dat het nesten van de container zinvol is. De containers kunnen als steunen van uw booleaanse uitdrukking worden bekeken.
 
-In het volgende voorbeeld worden bezoekers geselecteerd die in onze primaire leeftijdsgroep worden beschouwd:
+Het volgende voorbeeld wordt gebruikt om bezoekers te selecteren die in onze primaire leeftijdsgroep worden overwogen:
 
 Mannelijk en tussen 30 en 59 jaar
 
@@ -182,7 +183,7 @@ U begint door een OF containercomponent binnen het gebrek EN container te plaats
 
 Door de component van de Verwijzing van het Manuscript te gebruiken, kan de evaluatie van een segmentbezit aan een extern manuscript worden afgevaardigd. Zodra het manuscript behoorlijk wordt gevormd, kan het als een andere component van een segmentvoorwaarde worden gebruikt.
 
-#### Een script definiëren als naslaggids {#defining-a-script-to-reference}
+#### Een script definiëren naar verwijzing {#defining-a-script-to-reference}
 
 1. Bestand toevoegen aan `contexthub.segment-engine.scripts` clientlib.
 1. Voer een functie uit die een waarde terugkeert. Bijvoorbeeld:
@@ -218,7 +219,7 @@ Door de component van de Verwijzing van het Manuscript te gebruiken, kan de eval
 
 1. Script registreren met `ContextHub.SegmentEngine.ScriptManager.register`.
 
-Als het script afhankelijk is van aanvullende eigenschappen, moet het script `this.dependOn()`. Als het script bijvoorbeeld afhankelijk is van `profile/age`:
+Als het script afhankelijk is van aanvullende eigenschappen, moet het script worden aangeroepen `this.dependOn()`. Als het script bijvoorbeeld afhankelijk is van `profile/age`:
 
 ```
 this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
@@ -226,7 +227,7 @@ this.dependOn(ContextHub.SegmentEngine.Property('profile/age'));
 
 #### Naar een script verwijzen {#referencing-a-script}
 
-1. Maak een ContextHub-segment.
+1. Creeer segment ContextHub.
 1. Toevoegen **Scriptreferentie** op de gewenste plaats van het segment.
 1. Het dialoogvenster Bewerken van het dialoogvenster **Scriptreferentie** component. Indien [correct geconfigureerd](/help/sites-administering/segmentation.md#defining-a-script-to-reference), moet het script beschikbaar zijn in het dialoogvenster **Scriptnaam** vervolgkeuzelijst.
 
@@ -240,7 +241,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
    ![Map toevoegen](assets/contexthub-create-segment.png)
 
-1. Een **Titel** en **Naam** voor uw map.
+1. Geef een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de repository.
       * Het wordt automatisch gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/sites-developing/naming-conventions.md)
@@ -253,9 +254,9 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
    ![Map bevestigen](assets/contexthub-confirm-folder.png)
 
 1. De map wordt weergegeven in de lijst met segmenten.
-   * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map wordt weergegeven.
+   * Hoe u de kolommen sorteert, is van invloed op de plaats in de lijst waar de nieuwe map verschijnt.
    * Tik of klik op de kolomkoppen om de sortering aan te passen.
-      ![De nieuwe map](assets/contexthub-folder.png)
+     ![De nieuwe map](assets/contexthub-folder.png)
 
 ### Bestaande mappen wijzigen {#modify-folders}
 
@@ -279,7 +280,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
    ![Map selecteren](assets/contexthub-select-folder.png)
 
-1. Tik of klik op **Verwijderen** in de werkbalk om de map te verwijderen.
+1. Tik of klik op **Verwijderen** om de map te verwijderen.
 
 1. Een dialoogvenster bevat een lijst met mappen die zijn geselecteerd om te worden verwijderd.
 
@@ -301,7 +302,7 @@ Als u veel segmenten hebt, kunnen deze moeilijk te beheren worden als een platte
 
 ## De toepassing van een segment testen {#testing-the-application-of-a-segment}
 
-Zodra het segment is bepaald, kunnen de potentiële resultaten met de hulp van worden getest **[ContextHub](/help/sites-authoring/ch-previewing.md).**
+Zodra het segment is bepaald, kunnen de potentiële resultaten met behulp van worden getest **[ContextHub](/help/sites-authoring/ch-previewing.md).**
 
 1. Een voorvertoning van een pagina weergeven
 1. Klik het pictogram ContextHub om de toolbar te openbaren ContextHub

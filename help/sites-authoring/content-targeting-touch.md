@@ -1,7 +1,7 @@
 ---
 title: Authoring van getargete content met targetingmodus
 seo-title: Authoring Targeted Content Using Targeting Mode
-description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen
+description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen te creëren
 seo-description: Targeting mode and the Target component provide tools for creating content for experiences
 uuid: cea85c1b-1bc3-4498-9eaa-4ad10dc58ea4
 contentOwner: Chris Bohnert
@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 9d940744-3b00-4721-829a-96d17bb738e8
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '5390'
+source-wordcount: '5388'
 ht-degree: 5%
 
 ---
@@ -27,7 +27,7 @@ Door de auteur opgegeven inhoud met de doelmodus van AEM. De gerichte wijze en d
 * Ervaringen toevoegen aan een activiteit of ervaringen verwijderen.
 * A/B-tests uitvoeren en winnaars converteren (alleen Adobe Target).
 * Voeg aanbiedingen toe aan een ervaring door aanbiedingen te maken of aanbiedingen uit een bibliotheek te gebruiken.
-* Configureer doelen en controleer de prestaties.
+* Vorm doelstellingen en controleer prestaties.
 * Simuleer de gebruikerservaring.
 * Voor meer aanpassing, vorm de component van het Doel.
 
@@ -42,7 +42,7 @@ De activiteiten en ervaringen die u in de modus Doel ziet, weerspiegelen de [Act
 
 >[!NOTE]
 >
->Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId`naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, wordt de thirdPartyId niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Geef elke campagne een unieke naam om dit probleem te voorkomen. campagnemenamen kunnen daarom niet opnieuw worden gebruikt in verschillende soorten campagnes.
+>Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId`naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, wordt de thirdPartyId niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. De naam van de campagne kan daarom niet opnieuw worden gebruikt in verschillende typen campagnes.
 >
 >Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
 >
@@ -63,7 +63,7 @@ Ga naar de modus Doel:
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
-1. Klikken of tikken **Doelstelling**. De doelopties worden boven aan de pagina weergegeven.
+1. Klikken of tikken **Targeting**. De doelopties worden boven aan de pagina weergegeven.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -88,14 +88,14 @@ Een activiteit toevoegen:
    >
    >Als u op een andere manier een merk maakt, moet u ervoor zorgen dat het knooppunt `/campaigns/<brand>/master` bestaat of er een fout optreedt wanneer u een activiteit probeert te maken.
 
-1. Klik of tik + naast **Activiteit** vervolgkeuzemenu.
+1. Klik of tik + naast **Activiteit** vervolgkeuzelijst.
 1. Typ een naam voor de activiteit.
 
    >[!NOTE]
    >
    >Wanneer u een nieuwe activiteit creeert en een de wolkenconfiguratie van Adobe Target verbonden aan de pagina of één van zijn ouder hebt, AEM automatisch Adobe Target als motor veronderstelt.
 
-1. In de **Doelstelling** vervolgkeuzemenu voor de engine, selecteert u de doelengine.
+1. In de **Targeting** vervolgkeuzemenu voor de engine, selecteert u de doelengine.
 
    * Als u **ContextHub-AEM**, worden de overige velden grijs weergegeven en niet beschikbaar. Klikken of tikken **Maken**.
 
@@ -134,7 +134,7 @@ Een activiteit toevoegen:
    >
    >Als u de activiteit wilt wijzigen waarmee u werkt, klikt of tikt u op **Vorige**.
 
-## Maken: Ervaringen ontwerpen {#create-authoring-the-experiences}
+## Maken: de ervaringen ontwerpen {#create-authoring-the-experiences}
 
 Bij het maken van inhoud als doel gaat het om het maken van ervaringen. Tijdens deze stap kunt u de ervaringen van de activiteit creëren of schrappen, en aanbiedingen toevoegen aan elke ervaring.
 
@@ -178,7 +178,7 @@ U kunt aangepaste voorstellen opslaan in een aanbiedingsbibliotheek als u beslui
 
 ### Ervaringen toevoegen en verwijderen met de doelmodus {#adding-and-removing-experiences-using-targeting-mode}
 
-De stap Maken van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en deze ook een andere naam geven.
+De stap Maken van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings), kunt u ervaringen toevoegen en verwijderen. Bovendien kunt u een ervaring dupliceren en ook de naam ervan wijzigen.
 
 #### Ervaringen toevoegen met de doelmodus {#adding-experiences-using-targeting-mode}
 
@@ -191,7 +191,7 @@ Een ervaring toevoegen:
 
 Een ervaring verwijderen:
 
-1. Klik of tik op de pijl naast de ervaringsnaam.
+1. Klik of tik op de pijl naast de naam van de ervaring.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
@@ -201,15 +201,15 @@ Een ervaring verwijderen:
 
 Ervaringen een andere naam geven in de doelmodus:
 
-1. Klik of tik op de pijl naast de ervaringsnaam.
-1. Klikken **Naam van ervaring wijzigen** en typ de nieuwe naam.
+1. Klik of tik op de pijl naast de naam van de ervaring.
+1. Klikken **Ervaring hernoemen** en typ de nieuwe naam.
 1. Klik of tik ergens anders op het scherm om de wijzigingen op te slaan.
 
 #### Soorten publiek bewerken met doelmodus {#editing-audiences-using-targeting-mode}
 
-Het publiek bewerken in de modus Doel:
+U kunt als volgt het publiek bewerken in de doelmodus:
 
-1. Klik of tik op de pijl naast de ervaringsnaam.
+1. Klik of tik op de pijl naast de naam van de ervaring.
 1. Klikken **Publiek bewerken** en selecteer een nieuw publiek.
 1. Klikken **OK**.
 
@@ -217,7 +217,7 @@ Het publiek bewerken in de modus Doel:
 
 Ervaringen kopiëren met de doelmodus:
 
-1. Klik of tik op de pijl naast de ervaringsnaam.
+1. Klik of tik op de pijl naast de naam van de ervaring.
 1. Klikken **Dupliceren** en kiest u het publiek.
 1. Wijzig desgewenst de naam van de ervaring en klik op **OK**.
 
@@ -247,7 +247,7 @@ Wanneer u een component als doel instelt, kan alleen die component in de aanbied
 
 Voer de volgende procedure uit na [starten van het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings).
 
-1. Klik op de component of tik op de component om deze als doel in te stellen. De werkbalk voor de component wordt weergegeven, net als in het volgende voorbeeld.
+1. Klik of tik op de component om het doel in te stellen. De werkbalk voor de component wordt weergegeven, net als in het volgende voorbeeld.
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
@@ -259,7 +259,7 @@ Voer de volgende procedure uit na [starten van het doelproces](/help/sites-autho
 
 #### Een aanbieding maken door een doelcomponent toe te voegen {#creating-an-offer-by-adding-a-target-component}
 
-Voeg een component van het Doel toe om de aanbieding voor de Standaardervaring tot stand te brengen. De doelcomponent is een container voor andere componenten en componenten die erin worden geplaatst, worden als doel ingesteld. Wanneer u de component van het Doel gebruikt, kunt u verscheidene componenten toevoegen om een aanbieding tot stand te brengen. Bovendien kunt u verschillende componenten in elke ervaring gebruiken om verschillende aanbiedingen te maken.
+Voeg een component van het Doel toe om de aanbieding voor de Standaardervaring tot stand te brengen. De doelcomponent is een container voor andere componenten en componenten die erin worden geplaatst, worden als doel ingesteld. Als u de doelcomponent gebruikt, kunt u verschillende componenten toevoegen om een aanbieding te maken. Bovendien kunt u verschillende componenten in elke ervaring gebruiken om verschillende aanbiedingen te maken.
 
 Zie [Opties voor doelcomponenten configureren](/help/sites-authoring/content-targeting-touch.md#configuring-target-component-options) voor informatie over het aanpassen van deze component.
 
@@ -285,7 +285,7 @@ Wanneer u een component aan de component van het Doel toevoegt, verstrekt het in
 
 U kunt een doelcomponent aan de pagina toevoegen in de modus Bewerken of in de modus Doel. U kunt componenten alleen in de modus Doel aan de component Doel toevoegen. De component van het Doel behoort tot de de componentengroep van de Personalisatie.
 
-Als u de doelinhoud wilt bewerken, moet u klikken of tikken **Doelstelling starten** voordat u dit kunt doen.
+Als u doelinhoud bewerkt, moet u klikken of tikken **Doelstelling starten** voordat u dit kunt doen.
 
 1. Sleep de component Target naar de pagina waar u het aanbod wilt weergeven.
 1. Standaard is er geen locatie-id ingesteld. Klik of tik de Configure cog wiel om de plaats te plaatsen.
@@ -321,7 +321,7 @@ Als u besluit dat de aanbieding voor andere ervaringen kan worden gebruikt, kunt
 
    De inhoud van de standaardaanbieding wordt gebruikt als de aanbieding voor de huidige ervaring.
 
-1. Klik of tik op de aanbieding om het aanbiedingsmenu weer te geven en klik op het bewerkingspictogram.
+1. Klik of tik op de aanbieding om het aanbiedingsmenu weer te geven en klik of tik op het bewerkingspictogram.
 
    ![Het menu Aanbieding](do-not-localize/chlimage_1-2.png)
 
@@ -384,7 +384,7 @@ Een bibliotheekaanbieding omzetten in een aangepaste aanbieding om de aanbieding
 1. Selecteer de ervaring om het bibliotheekaanbod weer te geven.
 1. Klik of tik op de bibliotheekaanbieding om het aanbiedingsmenu weer te geven en klik vervolgens op het pictogram Omzetten in inline-aanbieding of tik op dit pictogram.
 
-   ![Omzetten in inline aanbieding](do-not-localize/chlimage_1-5.png)
+   ![Omzetten in inline-aanbieding](do-not-localize/chlimage_1-5.png)
 
 #### Een bibliotheekaanbod bewerken {#editing-a-library-offer}
 
@@ -398,7 +398,7 @@ Open een bibliotheekaanbieding vanuit een ervaring in de modus Gericht om de aan
 
 ## Doel: Het publiek configureren {#target-configuring-the-audiences}
 
-De stap Doel van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Hierbij worden doelgroepen toegewezen aan de ervaringen waarmee u hebt gewerkt in de stap Maken. De pagina Doel toont het publiek dat elke ervaring richt. U kunt het publiek voor elke ervaring opgeven of wijzigen. Als u Adobe Target gebruikt, kunt u A/B tests ook tot stand brengen die u toestaan om percentage van verkeer voor een publiek aan een bepaalde ervaring te richten.
+De stap Doel van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) Hierbij worden doelgroepen toegewezen aan de ervaringen waarmee u hebt gewerkt in de stap Maken. De pagina Doel toont het publiek dat elke ervaring richt. U kunt het publiek voor elke ervaring opgeven of wijzigen. Als u Adobe Target gebruikt, kunt u A/B tests ook tot stand brengen die u percentage van verkeer voor een publiek aan een bepaalde ervaring laten richten.
 
 ### Als u AEM of Adobe Target gebruikt (Experience targeting)... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
@@ -406,7 +406,7 @@ Het publiek verschijnt aan de linkerkant van het kaartdiagram, en de ervaringen 
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-Definieer een publiek met een segment. De wolkenconfiguratie voor de pagina bepaalt de segmenten die aan u beschikbaar zijn. Wanneer de pagina niet is gekoppeld aan een Adobe Target-cloudconfiguratie, zijn AEM segmenten beschikbaar voor het definiëren van soorten publiek. Wanneer de pagina aan een de wolkenconfiguratie van Adobe Target wordt geassocieerd, gebruikt u de segmenten van het Doel.
+Bepaal een publiek gebruikend een segment. De wolkenconfiguratie voor de pagina bepaalt de segmenten die aan u beschikbaar zijn. Wanneer de pagina niet is gekoppeld aan een Adobe Target-cloudconfiguratie, zijn AEM segmenten beschikbaar voor het definiëren van soorten publiek. Wanneer de pagina aan een de wolkenconfiguratie van Adobe Target wordt geassocieerd, gebruikt u de segmenten van het Doel.
 
 Voor informatie over motoren, zie [Richtingsmotor](/help/sites-authoring/personalization.md#targeting-engine).
 
@@ -432,13 +432,13 @@ U kunt de percentages wijzigen zolang ze maar optellen tot 100 procent. Een publ
 
 ### Soorten publiek en verkeerspercentages koppelen aan A/B-tests {#associating-audiences-and-traffic-percentages-with-a-b-testing}
 
-1. Klik of tik de drop-down doos naast het publiek dat aan de ervaring in kaart wordt gebracht.
+1. Klik of tik de drop-down doos naast het publiek dat aan de ervaring wordt toegewezen.
 1. (Optioneel) Klik op **Bewerken** Typ vervolgens een trefwoord om naar het gewenste segment te zoeken.
 1. Klikken of tikken **OK.**
 1. Ga in percentages in om te vormen hoe het publieksverkeer aan elke ervaringen wordt verpletterd. Het totale getal moet 100 zijn.
 1. (Optioneel) Bewerk de ervaringsnaam door te klikken op het keuzemenu naast de naam van de ervaring.
 
-## Doelstellingen en instellingen: Het vormen van de Activiteit en het Plaatsen Doelstellingen {#goals-settings-configuring-the-activity-and-setting-goals}
+## Doelstellingen en instellingen: de activiteiten configureren en doelen instellen {#goals-settings-configuring-the-activity-and-setting-goals}
 
 De stap Doelstellingen en instellingen van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) omvat het configureren van het gedrag van de merkactiviteit. Geef op wanneer de activiteit begint en eindigt en geef ook de prioriteit van de activiteit op. Bovendien volgt u ook doelstellingen. Specifiek kunt u beslissen wat u met uw activiteiten wilt meten.
 
@@ -464,7 +464,7 @@ De volgende succeswaarden zijn beschikbaar (alleen gebruikt voor publiceren):
  <tbody>
   <tr>
    <td><strong>Conversie</strong></td>
-   <td><p>Het percentage bezoekers dat heeft geklikt op een onderdeel van de ervaring die wordt getest. Een conversie kan één keer per bezoeker worden geteld of telkens wanneer een bezoeker een conversie voltooit. De omzettingsmetrische waarde wordt geplaatst aan één van het volgende:</p>
+   <td><p>Het percentage bezoekers dat heeft geklikt op een onderdeel van de ervaring die wordt getest. Een conversie kan één keer per bezoeker worden meegeteld of telkens wanneer een bezoeker een conversie voltooit. De omzettingsmetrische waarde wordt geplaatst aan één van het volgende:</p>
     <ul>
      <li><strong>Pagina's weergeven</strong> - U kunt bepalen welke pagina de kijker door te selecteren of <strong>URL is</strong> en definieert u vervolgens de URL of meerdere URL's of door <strong>URL bevat</strong> en voegt u vervolgens een pad of trefwoord toe.</li>
      <li><strong>Een box weergegeven</strong> - U kunt opgeven welke box uw publiek heeft weergegeven door de naam van de mbox in te voeren. U kunt meerdere vakken invoeren door op <strong>Een box toevoegen</strong>.</li>
@@ -539,7 +539,7 @@ Om montages te vormen wanneer het gebruiken van AEM richten:
 
 1. Als u wilt opgeven wanneer de activiteit begint, gebruikt u de opdracht **Start** vervolgkeuzelijst om een van de volgende waarden te selecteren:
 
-   * **Indien geactiveerd**: De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
+   * **Indien geactiveerd**: De activiteit wordt gestart wanneer de pagina met de doelinhoud wordt geactiveerd.
    * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u de opdracht **Einde** vervolgkeuzelijst om een van de volgende waarden te selecteren:
@@ -547,7 +547,7 @@ Om montages te vormen wanneer het gebruiken van AEM richten:
    * **Wanneer gedeactiveerd**: De activiteit eindigt wanneer de pagina die de beoogde inhoud bevat, wordt gedeactiveerd.
    * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 
-1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om een van de **Laag**, **Normaal**, of **Hoog**.
+1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal**, of **Hoog**.
 
 ### Doelstellingen en instellingen configureren (Adobe Target) {#configuring-goals-settings-adobe-target}
 
@@ -555,7 +555,7 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 
 1. Als u wilt opgeven wanneer de activiteit begint, gebruikt u de opdracht **Start** vervolgkeuzelijst om een van de volgende waarden te selecteren:
 
-   * **Indien geactiveerd**: De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
+   * **Indien geactiveerd**: De activiteit wordt gestart wanneer de pagina met de doelinhoud wordt geactiveerd.
    * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u de opdracht **Einde** vervolgkeuzelijst om een van de volgende waarden te selecteren:
@@ -563,8 +563,8 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
    * **Wanneer gedeactiveerd**: De activiteit eindigt wanneer de pagina die de beoogde inhoud bevat, wordt gedeactiveerd.
    * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 
-1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om een van de **Laag**, **Normaal**, of **Hoog**.
-1. Als u Adobe Anaytics hebt geconfigureerd voor uw Adobe Target-account, ziet u de **Rapportagebron** vervolgkeuzemenu. Selecteer **Adobe Target** of **Adobe Analytics** als bron.
+1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal**, of **Hoog**.
+1. Als u de Adobe Analytics hebt geconfigureerd met uw Adobe Target-account, ziet u de **Rapportagebron** vervolgkeuzelijst. Selecteer **Adobe Target** of **Adobe Analytics** als bron.
 
    Als u **Adobe Analytics**, selecteert u het bedrijf en de rapportsuite. Als u **Adobe Target**, is geen actie vereist.
 
@@ -594,7 +594,7 @@ Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configurere
 
    >[!NOTE]
    >
-   U kunt aanvullende doelen verwijderen door op de drie punten te klikken of erop te tikken en te klikken of te tikken **Verwijderen**. AEM vereist dat u minstens één doel hebt gedefinieerd.
+   U kunt aanvullende doelen verwijderen door op de drie punten te klikken of erop te tikken en te klikken of te tikken **Verwijderen**. AEM vereist dat u ten minste één doel hebt gedefinieerd.
 
 1. Als u meer controle wilt hebben over de manier waarop succesmetriek worden geteld, klikt u of tikt u op **Geavanceerde instellingen** toegang tot deze gegevens.
 1. Klikken **Opslaan**.
@@ -610,7 +610,7 @@ De volgende criteria bepalen de inhoud die wordt weergegeven wanneer bezoekerser
 * De gegevens in de zittingsopslag van de gebruiker (via de Hub van de Context).
 * De [Activiteiten die zijn ingeschakeld](/help/sites-authoring/activitylib.md).
 * De [regels die de segmenten definiëren](/help/sites-administering/campaign-segmentation.md).
-* De inhoud van de ervaringen in de componenten van het Doel.
+* De inhoud van de ervaringen in de doelcomponenten.
 * De [configuratie van de doelmotor](/help/sites-authoring/activitylib.md).
 
 Als er onverwachte inhoud op de pagina wordt weergegeven wanneer u een profiel laadt, controleert u de configuratie van elk item in deze lijst.
@@ -622,7 +622,7 @@ Als u A/B het testen gebruikt, wanneer het simuleren van ervaringen wordt getoon
 Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
 
 * De simulatieactiviteit op het richten wijze: De pagina toont de aanbiedingen voor de gebruiker die momenteel in de Hub van de Context wordt geselecteerd. U kunt de aanbiedingen bewerken die op de gebruiker zijn gericht.
-* Modus Voorvertoning: De Hub van de Context van het gebruik om de gebruikers en de plaatsen te selecteren die aan de criteria van de segmenten voldoen dat uw ervaringen op gebaseerd zijn. Wanneer uw selecties van de Hub van de Context veranderen, verandert de gerichte inhoud dienovereenkomstig.
+* De wijze van de voorproef: De Hub van de Context van het gebruik om de gebruikers en de plaatsen te selecteren die aan de criteria van de segmenten voldoen die uw ervaringen op gebaseerd zijn. Wanneer uw selecties van de Hub van de Context veranderen, verandert de gerichte inhoud dienovereenkomstig.
 
 1. Klik of tik op de werkbalk om te schakelen naar de modus Voorbeeld **Voorvertoning**.
 1. Voor de hulpmiddelbar, klik of tik het pictogram van de Hub van de Context.
@@ -653,7 +653,7 @@ U kunt de component van het Doel aanpassen door tot de opties van de component o
 
    ![Venster Opties doelcomponent](do-not-localize/chlimage_1-9.png)
 
-   AEM geeft het venster met opties voor de doelcomponent voor volledig scherm weer.
+   AEM het venster met opties voor de doelcomponent voor volledig scherm.
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
@@ -671,7 +671,7 @@ U kunt de component van het Doel aanpassen door tot de opties van de component o
   </tr>
   <tr>
    <td><strong>Engine</strong></td>
-   <td>Selecteren tussen <strong>Regels aan de clientzijde (zonder reeksspatiëring), Adobe Target, ContextHub </strong>en<strong> Adobe Campaign </strong>afhankelijk van de engine die u wilt gebruiken.</td>
+   <td>Selecteren tussen <strong>Client side Rules (zonder tracking), Adobe Target, ContextHub, </strong>en<strong> Adobe Campaign </strong>afhankelijk van de engine die u wilt gebruiken.</td>
   </tr>
  </tbody>
 </table>
@@ -692,7 +692,7 @@ Als u Adobe Target als engine selecteert:
   </tr>
   <tr>
    <td><strong>Omgezette segmenten opnemen</strong></td>
-   <td><p>Het selecteren van deze controledoos omvat alle opgeloste segmenten in de mbox vraag en om het even welke parameters die in de pagina en in het kader worden gevormd.</p> <p>Dit werkt alleen in situaties met XML API waarin u AEM segmenten synchroniseert. Als u segmenten in AEM hebt die niet door Adobe Target (als manuscriptsegmenten) worden behandeld, dan staat deze optie u toe om het segment in AEM op te lossen en informatie naar Adobe Target te verzenden dat het segment actief is.</p> </td>
+   <td><p>Het selecteren van deze controledoos omvat alle opgeloste segmenten in de mbox vraag en om het even welke parameters die in de pagina en in het kader worden gevormd.</p> <p>Dit werkt alleen in situaties met XML API waarin u AEM segmenten synchroniseert. Als u segmenten in AEM hebt die niet door Adobe Target (als manuscriptsegmenten) worden behandeld, dan laat deze optie u het segment in AEM oplossen en informatie verzenden naar Adobe Target dat het segment actief is.</p> </td>
   </tr>
   <tr>
    <td><strong>Overgenomen contextparameters</strong></td>
@@ -727,7 +727,7 @@ Als u Client Context (clientzijde) selecteert als de engine:
    <td><strong>Opties aan clientzijde - Strategie</strong></td>
    <td><p>Selecteer een van de volgende opties:</p>
     <ul>
-     <li><strong>Eerste</strong>: De meest recente ervaring in de lijst zoals die in de campagne wordt bevolen.</li>
+     <li><strong>Eerste</strong>: De meest recente ervaring in de lijst zoals deze in de campagne is geordend.</li>
      <li><strong>Willekeurig</strong>: Elke ervaring wordt gebruikt.</li>
      <li><strong>Clikstream score</strong>: De tags en verwante tagtreffers die in de clientcontext worden bijgehouden, worden gebruikt. De snelheden voor tags die op de teaspagina zijn gedefinieerd, worden vergeleken.</li>
     </ul> </td>

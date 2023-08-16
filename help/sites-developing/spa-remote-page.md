@@ -2,9 +2,9 @@
 title: De RemotePage-component
 description: De component RemotePage is een aangepaste pagina-component voor het bewerken van SPA op afstand in AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 41aac3b4ea3b100e9d927bef161929477d667a95
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ Zie het artikel [Een externe SPA bewerken in AEM](spa-edit-external.md) voor mee
    * https://github.com/webdeveric/webpack-assets-manifest
    * https://github.com/mugi-uno/parcel-plugin-bundle-manifest
 
-   ![EnterPoint](assets/asset-manifest-entrypoints.png)
+  ![EnterPoint](assets/asset-manifest-entrypoints.png)
 
-* De toepassing moet in een `<div id="root"></div>` onder het tekstelement. Als er een andere opmaak wordt verwacht voor de toepassing die moet worden geïnstantieerd, moet deze overeenkomstig worden aangepast in de HTML-scripts van de proxycomponent die een `sling:resourceSuperType="spa-project-core/components/remotepage`.
+* De toepassing moet in een `<div id="root"></div>` onder het tekstelement. Als er een andere opmaak wordt verwacht voor de app om te instantiëren, moet deze dienovereenkomstig worden aangepast in de HTML-scripts van de proxycomponent die een `sling:resourceSuperType="spa-project-core/components/remotepage`.
 
 ## Beperkingen {#limitations}
 

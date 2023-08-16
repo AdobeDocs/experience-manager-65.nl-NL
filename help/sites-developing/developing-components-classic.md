@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2386'
+source-wordcount: '2385'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De klassieke UI gebruikt ExtJS om widgets tot stand te brengen die het blik-en-g
 >
 >Hoewel zowel de Taal van het Malplaatje van de HTML (HTML) als JSP voor het ontwikkelen van componenten voor klassieke UI kan worden gebruikt, illustreert deze pagina ontwikkeling met JSP. Dit is uitsluitend het gevolg van de geschiedenis van het gebruik van JSP in de klassieke UI.
 >
->HTML is nu de aanbevolen scripttaal voor AEM. Zie [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) en [AEM ontwikkelen](/help/sites-developing/developing-components.md) om methoden te vergelijken.
+>HTML is nu de aanbevolen scripttaal voor AEM. Zie [HTL](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html) en [Ontwikkelen AEM componenten](/help/sites-developing/developing-components.md) om methoden te vergelijken.
 
 ## Structuur {#structure}
 
@@ -56,7 +56,7 @@ De locatie van de standaardinstelling `global.jsp` is:
 
 De volgende lijst maakt een lijst van de belangrijkste voorwerpen die van het gebrek worden verstrekt `global.jsp`:
 
-Overzicht:
+Samenvatting:
 
 * `<cq:defineObjects />`
 
@@ -95,7 +95,7 @@ Er zijn drie methodes om tot inhoud in AEM WCM toegang te hebben:
 
 * Via `currentNode` object geïntroduceerd in `global.jsp`:
 
-  De `currentNode` object is een instantie van een knooppunt (zie [JCR-API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). De eigenschappen van een knooppunt kunnen worden benaderd door de `getProperty()` methode.
+  De `currentNode` object is een instantie van een knooppunt (zie [JCR-API](https://jackrabbit.apache.org/api/2.16/org/apache/jackrabbit/standalone/cli/core/CurrentNode.html)). De eigenschappen van een knooppunt kunnen worden benaderd door `getProperty()` methode.
 
   Voorbeeld: `String pageTitle = currentNode.getProperty("jcr:title");`
 
@@ -109,7 +109,7 @@ Zie het document voor meer informatie [Tagbibliotheken](/help/sites-developing/t
 
 Moderne websites zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn.
 
-Om dit probleem te helpen oplossen, AEM **Client-side bibliotheekmappen**, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
+Om dit probleem te helpen aanpakken, AEM biedt **Client-side bibliotheekmappen**, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
 
 Zie het document [Client-Side HTML-bibliotheken gebruiken](/help/sites-developing/clientlibs.md) voor meer informatie .
 
@@ -154,7 +154,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
    * Van `/libs/foundation/components/text`
    * tot `/apps/myProject/components/text`
 
-1. De `jcr:title` om de nieuwe naam weer te geven.
+1. Wijzig de `jcr:title` om de nieuwe naam weer te geven.
 1. Open de nieuwe componentenomslag en breng de veranderingen aan u vereist. Verwijder ook alle andere gegevens in de map.
 
    U kunt wijzigingen aanbrengen zoals:
@@ -164,7 +164,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
       * `cq:dialog` - dialoogvenster voor de interface met aanraakbediening
       * `dialog` - dialoog voor de klassieke gebruikersinterface
 
-   * ter vervanging van `.jsp` bestand (naam na nieuwe component)
+   * vervangen `.jsp` bestand (naam na nieuwe component)
    * of de volledige component volledig opnieuw te bewerken als u wilt
 
    Als u bijvoorbeeld een kopie van de standaardtekstcomponent maakt, kunt u een extra veld aan het dialoogvenster toevoegen en vervolgens de `.jsp` om de input te verwerken die daar is gemaakt.
@@ -173,7 +173,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
    >
    >Een component voor de:
    >
-   >* Interface met aanraakbediening [Graniet](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) componenten
+   >* Interface met aanraakbediening gebruikt [Graniet](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html) componenten
    >* Klassieke UI gebruikt [ExtJS-widgets](https://developer.adobe.com/experience-manager/reference-materials/6-5/widgets-api/index.html)
 
    >[!NOTE]
@@ -193,7 +193,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
 
 1. Activeer de nieuwe component in uw alineasysteem door:
 
-   * CRXDE Lite gebruiken om de waarde toe te voegen `<path-to-component>` (bijvoorbeeld `/apps/geometrixx/components/myComponent`) aan de eigenschapcomponenten van het knooppunt `/etc/designs/geometrixx/jcr:content/contentpage/par`
+   * met CRXDE Lite de waarde toevoegen `<path-to-component>` (bijvoorbeeld `/apps/geometrixx/components/myComponent`) aan de eigenschapcomponenten van het knooppunt `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * Volg de instructies in [Nieuwe componenten toevoegen aan alineasystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
 1. Open in AEM WCM een pagina op uw website en voeg een alinea in van het type dat u net hebt gemaakt om ervoor te zorgen dat de component goed werkt.
@@ -213,7 +213,7 @@ Nadat de component is ontwikkeld, voegt u deze toe aan het alineasysteem, waarme
 
      `<contextPath>/ Test.html?wcmmode=design`
 
-   * klikken op Ontwerp in Sidekick
+   * klikken op Ontwerpen in Sidekick
 
    U bevindt zich nu in de ontwerpmodus en kunt het alineasysteem bewerken.
 
@@ -269,7 +269,7 @@ Om de component tot stand te brengen, gebruikt u de standaardcomponent van de te
    >De definitie van het dialoogvenster is afhankelijk van de gebruikersinterface:
    >
    >* Interface met aanraakbediening: `textimage/cq:dialog`
-   >* Klassieke interface: `textimage/dialog`
+   >* Klassieke gebruikersinterface: `textimage/dialog`
 
 1. Bewerk de metagegevens van de component:
 
@@ -355,7 +355,7 @@ Om de component tot stand te brengen, gebruikt u de standaardcomponent van de te
 Nadat de component is ontwikkeld, kunt u deze aan het alineasysteem toevoegen. Hiermee kunnen auteurs de component selecteren en gebruiken tijdens het bewerken van een pagina. Met deze stappen kunt u de component testen.
 
 1. Open een pagina in Geometrixx zoals Engels / Bedrijf.
-1. Schakel over naar de ontwerpmodus door in Sidekick op Ontwerpen te klikken.
+1. Schakel over naar de ontwerpmodus door in de Sidekick op Ontwerpen te klikken.
 1. Bewerk het ontwerp van het alineasysteem door op Bewerken te klikken op het alineasysteem in het midden van de pagina. Er wordt een lijst weergegeven met componenten die in het alineasysteem kunnen worden geplaatst. De nieuwe component, Text Image (Extended), moet hierin worden opgenomen. Activeer het voor het alineasysteem door het te selecteren en op OK te klikken.
 1. Ga terug naar de bewerkingsmodus.
 1. Voeg de alinea Tekstafbeelding (Extended) toe aan het alineasysteem en initialiseer tekst en afbeelding met voorbeeldinhoud. Sla de wijzigingen op.

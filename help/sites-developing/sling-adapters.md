@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 6465e2c4-28e5-4fc8-8cca-7b632f10ba5a
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2151'
+source-wordcount: '2150'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Het is belangrijk dat u de null-case netjes afhandelt. Voor jsp-renderingen kan 
 
 Om de prestaties te verbeteren, kunnen implementaties het object dat door een `obj.adaptTo()` vraag. Als de `obj` gelijk is, is het geretourneerde object hetzelfde.
 
-Deze caching wordt uitgevoerd voor alle `AdapterFactory` gegronde gevallen.
+Dit in cache plaatsen wordt uitgevoerd voor alles `AdapterFactory` gegronde gevallen.
 
 Er is echter geen algemene regel: het object kan een nieuw of een bestaand object zijn. Dit betekent dat u niet op één van beide gedrag kunt vertrouwen. Daarom is het belangrijk, vooral binnen `AdapterFactory`, dat de objecten in dit scenario opnieuw kunnen worden gebruikt.
 
@@ -64,7 +64,7 @@ Er is echter geen algemene regel: het object kan een nieuw of een bestaand objec
 
 Er zijn verschillende manieren om `Adaptable.adaptTo()` kan worden uitgevoerd:
 
-* door het object zelf; het implementeren van de methode zelf en het toewijzen aan bepaalde objecten.
+* Door het object zelf; de methode zelf implementeren en aan bepaalde objecten toewijzen.
 * Met een [`AdapterFactory`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/AdapterFactory.html), die willekeurige objecten kunnen toewijzen.
 
   De objecten moeten de `Adaptable` interface en moet worden uitgebreid [`SlingAdaptable`](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/adapter/SlingAdaptable.html) (die de `adaptTo` aanroep aan een centrale adaptermanager).
@@ -79,7 +79,7 @@ In het eerste geval kunnen de Java™-documenten aangeven wat `adaptTo-targets` 
 
 ### Sling {#sling}
 
-[**Resource**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) aanpassen aan:
+[**Bron**](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) aanpassen aan:
 
 <table>
  <tbody>
@@ -101,7 +101,7 @@ In het eerste geval kunnen de Java™-documenten aangeven wat `adaptTo-targets` 
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td>
-   <td>Retourneert een handig te gebruiken kaart van de eigenschappen, als dit een JCR-node-based resource (of andere resource die waardekaarten ondersteunt) is. Kan ook (eenvoudiger) worden bereikt door<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (handelt null-hoofdletters, enzovoort)</td>
+   <td>Retourneert een handig te gebruiken kaart van de eigenschappen, als dit een JCR-node-based resource (of andere resource die waardekaarten ondersteunt) is. Kan ook (eenvoudiger) worden bereikt door<br /> <code><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/ResourceUtil.html">ResourceUtil.getValueMap(Resource)</a></code> (handelt null-hoofdletters af, enzovoort)</td>
   </tr>
   <tr>
    <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td>
@@ -117,7 +117,7 @@ In het eerste geval kunnen de Java™-documenten aangeven wat `adaptTo-targets` 
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/net/URL.html">URL</a></td>
-   <td>Retourneert een URL naar de bron (de URL van de gegevensopslagruimte van dit knooppunt als dit een op JCR-knooppunten gebaseerde bron is; jar bundle URL if this is a bundle resource; bestand-URL als dit een bestandssysteembron is)</td>
+   <td>Hiermee wordt een URL naar de bron geretourneerd (repository URL van dit knooppunt als dit een JCR-node-gebaseerde resource is; jar bundle URL als dit een bundelbron is; file URL als dit een bestandssysteembron is)</td>
   </tr>
   <tr>
    <td><a href="https://docs.oracle.com/javase/1.5.0/docs/api/java/io/File.html">Bestand</a></td>
@@ -284,7 +284,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><br /> </td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html">Bron</a><br /> </td>
    <td>Bron van de pagina</td>
   </tr>
   <tr>
@@ -304,7 +304,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 **[Component](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/components/Component.html)** aanpassen aan:
 
-| [Resource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de component. |
+| [Bron](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de component. |
 |---|---|
 | [LabeledResource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/LabeledResource.html) | Gelabelde bron (== dit). |
 | [Knooppunt](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knooppunt van de component. |
@@ -315,7 +315,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 <table>
  <tbody>
   <tr>
-   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
+   <td><a href="https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html">Bron</a><a href="https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td>
    <td>Bron van de sjabloon</td>
   </tr>
   <tr>
@@ -345,7 +345,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 **Element** aanpassen aan:
 
-| [Resource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | Middelen van het actief. |
+| [Bron](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | Middelen van het actief. |
 |---|---|
 | [Knooppunt](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Node of the asset. |
 | ... | Alles waaraan de middelen van het actief kunnen worden aangepast. |
@@ -354,7 +354,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 **Tag** aanpassen aan:
 
-| [Resource](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de tag. |
+| [Bron](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de tag. |
 |---|---|
 | [Knooppunt](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knooppunt van de tag. |
 | ... | Alles waaraan de bron van de tag kan worden aangepast. |

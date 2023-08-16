@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '912'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwer
 >
 >De ontwerpmodus is alleen beschikbaar voor ontwerpconfiguraties die zijn opgeslagen als inhoud onder ( `/etc`).
 >
->Beginnend in AEM 6.4, wordt het geadviseerd om ontwerpen als configuratiegegevens onder op te slaan `/apps` om ononderbroken plaatsingsscenario&#39;s te steunen. Onder `/apps` kunnen niet worden bewerkt tijdens runtime en de ontwerpmodus is niet beschikbaar voor gebruikers zonder beheerdersrechten voor dergelijke sjablonen.
+>Beginnend in AEM 6.4, wordt het geadviseerd om ontwerpen als configuratiegegevens onder op te slaan `/apps` om ononderbroken plaatsingsscenario&#39;s te steunen. Onder opgeslagen ontwerpen `/apps` kunnen niet worden bewerkt tijdens runtime en de ontwerpmodus is niet beschikbaar voor gebruikers zonder beheerdersrechten voor dergelijke sjablonen.
 
 Dit betekent dat u de onderdelen die zijn toegestaan in het alineasysteem voor de pagina, toevoegt of verwijdert. Het alineasysteem ( `parsys`) is een samengestelde component die alle andere alineacomponenten bevat. Met het alineasysteem kunnen auteurs componenten van verschillende typen aan een pagina toevoegen omdat deze alle andere alineacomponenten bevat. Elk alineatype wordt vertegenwoordigd als een component.
 
@@ -58,7 +58,7 @@ De inhoud van een productpagina kan bijvoorbeeld een alineasysteem bevatten dat 
 
 Een component in- of uitschakelen:
 
-1. Selecteer **Ontwerp** in.
+1. Selecteer de **Ontwerp** -modus.
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
@@ -111,7 +111,7 @@ Een component in- of uitschakelen:
 
 ## Het ontwerp van een component configureren {#configuring-the-design-of-a-component}
 
-1. Selecteer **Ontwerp** in.
+1. Selecteer de **Ontwerp** -modus.
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
@@ -135,7 +135,7 @@ Een component in- of uitschakelen:
 
    **Eigenschappen**
 
-   De **Eigenschappen** kunt u de belangrijke ontwerpparameters van de component configureren. Voor een afbeeldingscomponent kunt u bijvoorbeeld de maximale en minimale grootte van de toegestane afbeelding definiëren.
+   De **Eigenschappen** kunt u de belangrijke ontwerpparameters van de component vormen. Voor een afbeeldingscomponent kunt u bijvoorbeeld de maximale en minimale grootte van de toegestane afbeelding definiëren.
 
    **Functies**
 

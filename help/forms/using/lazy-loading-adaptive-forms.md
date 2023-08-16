@@ -10,16 +10,16 @@ discoiquuid: a20736b7-f7b4-4da1-aa32-2408049b1209
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1080'
 ht-degree: 0%
 
 ---
 
 # Verbeter de prestaties van grote formulieren met het laden van de formulieren{#improve-performance-of-large-forms-with-lazy-loading}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -28,13 +28,13 @@ ht-degree: 0%
 
 ## Inleiding tot wazig laden {#introduction-to-lazy-loading}
 
-Wanneer het formulier groot en complex wordt met honderden en duizenden velden, ervaren eindgebruikers een lange responstijd bij het weergeven van formulieren tijdens runtime. Om de reactietijd te minimaliseren, staat de adaptieve vormen u toe om vormen in logische fragmenten te breken en te vormen om initialisering of lading van fragmenten uit te stellen tot het fragment zichtbaar moet zijn. Het wordt genoemd lazy ladend. Bovendien worden de fragmenten die zijn geconfigureerd voor wazig laden verwijderd als de gebruiker naar andere secties in het formulier navigeert en de fragmenten niet meer zichtbaar zijn.
+Wanneer het formulier groot en complex wordt met honderden en duizenden velden, ervaren eindgebruikers een lange responstijd bij het weergeven van formulieren tijdens runtime. Om de reactietijd te minimaliseren, laat de adaptieve vormen u vormen in logische fragmenten breken en vormen om initialisering of lading van fragmenten uit te stellen tot het fragment zichtbaar moet zijn. Het wordt genoemd lazy ladend. Bovendien worden de fragmenten die zijn geconfigureerd voor wazig laden verwijderd wanneer de gebruiker naar andere secties in het formulier navigeert en de fragmenten niet meer zichtbaar zijn.
 
 Laten we eerst de vereisten en voorbereidende stappen begrijpen voordat u lazy laden configureert.
 
 ## Voorbereiden op het configureren van wazig laden {#preparing-to-configure-lazy-loading}
 
-Voordat u het laden van fragmenten in het aangepaste formulier kunt configureren, is het belangrijk dat u strategieën definieert om fragmenten te maken, waarden kunt identificeren die in scripts worden gebruikt of die in andere fragmenten worden doorverwezen, en regels definieert om de zichtbaarheid van velden in geladen fragmenten te beheren.
+Voordat u het laden van fragmenten in het aangepaste formulier kunt configureren, is het belangrijk dat u strategieën definieert voor het maken van fragmenten, waarden identificeert die in scripts worden gebruikt of die in andere fragmenten worden doorverwezen, en regels definieert voor het beheren van de zichtbaarheid van velden in laaggeladen fragmenten.
 
 * **Fragmenten identificeren en maken**
 U kunt alleen adaptieve formulierfragmenten configureren voor wazig laden. Een fragment is een zelfstandig segment dat zich buiten een adaptief formulier bevindt en dat in verschillende formulieren opnieuw kan worden gebruikt. De eerste stap bij het implementeren van lui laden is het identificeren van logische secties in een formulier en het omzetten ervan in fragmenten. U kunt een geheel nieuw fragment maken of een bestaand formulierdeelvenster opslaan als fragment.
@@ -79,7 +79,7 @@ Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet 
 
 * Aanbevolen wordt om adaptieve formulieren op basis van XSD-schema&#39;s via op XFA gebaseerde adaptieve formulieren te gebruiken voor het configureren van lazy loading op grote formulieren. De prestatiewinst als gevolg van de lazy loading-implementatie in op XFA gebaseerde adaptieve formulieren is relatief minder dan de toename in op XSD gebaseerde adaptieve formulieren.
 * Het laden van fragmenten in een adaptieve vorm die gebruikmaken van **[!UICONTROL Responsive -everything on one page without navigation]** layout voor het hoofddeelvenster. Als gevolg van de responsieve layoutconfiguratie worden alle fragmenten tegelijkertijd in een adaptieve vorm geladen. Het kan ook leiden tot verminderde prestaties.
-* Het wordt aanbevolen het laden van het eerste fragment niet in een adaptieve vorm te configureren.
+* Het wordt aanbevolen om het laden van het eerste fragment niet in een adaptieve vorm te configureren.
 * Het wordt aanbevolen het laden van fragmenten in het eerste deelvenster dat wordt weergegeven bij het laden van het adaptieve formulier, niet te configureren.
 * Lazy loading wordt ondersteund tot twee niveaus in de fragmenthiërarchie.
 * Zorg ervoor dat velden die zijn gemarkeerd als globaal, uniek zijn in een adaptief formulier.
@@ -94,4 +94,4 @@ Belangrijke aandachtspunten bij het ontwikkelen van scripts voor luie laadvenste
 * Met de algemeen beschikbare eigenschap van velden maakt u de waarde van velden in een wazig venster voor laden beschikbaar voor alle andere deelvensters van een formulier.
 * Verwijs geen verwijzingswaarde van een gebied binnen een lui paneel ongeacht gebied door zich globaal over fragmenten wordt duidelijk of niet.
 * Met de functie voor het opnieuw instellen van deelvensters kunt u alle zichtbare elementen in het deelvenster opnieuw instellen met de volgende klikexpressie.\
-  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;}).resetData()
+  guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

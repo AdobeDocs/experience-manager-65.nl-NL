@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 exl-id: 8f11f5de-f5af-4ce7-a448-2b4299de2930
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '351'
+source-wordcount: '350'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ De volgende beheergereedschappen zijn beschikbaar voor het beheer van websites e
 
 * Met MSM (Multi Site Manager) kunt u dezelfde site-inhoud op meerdere locaties gebruiken, terwijl variaties mogelijk zijn:
 
-   * [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](/help/sites-administering/msm.md)
+   * [Inhoud opnieuw gebruiken: Sitebeheer en Live kopiëren](/help/sites-administering/msm.md)
 
 * Met vertaling kunt u de vertaling van pagina-inhoud, elementen en door de gebruiker gegenereerde inhoud automatiseren om meertalige websites te maken en te onderhouden:
 
@@ -33,14 +33,14 @@ De volgende beheergereedschappen zijn beschikbaar voor het beheer van websites e
 
 ## Meertalige en meertalige sites {#multinational-and-multilingual-sites}
 
-U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites door het gecombineerde gebruik van de Multi-Site Manager en de vertaalworkflow. Maak een master site in één taal, voor een specifiek land, en gebruik die inhoud als basis voor de andere sites, waar nodig met vertaling:
+U kunt op efficiënte wijze inhoud maken voor multinationale en meertalige sites door het gecombineerde gebruik van de Multi-Site Manager en de vertaalworkflow. Maak een stramiensite in één taal, voor een specifiek land, en gebruik die inhoud als basis voor de andere sites, waar nodig met vertaling:
 
-* [Vertalen](/help/sites-administering/translation.md) de master site in verschillende talen.
+* [Vertalen](/help/sites-administering/translation.md) de hoofdsite in verschillende talen.
 
 * Gebruiken [Beheer van meerdere sites](/help/sites-administering/msm.md) tot:
 
-   * Gebruik inhoud van de master site en de vertalingen opnieuw om sites te maken voor andere landen en culturen.
-   * Zorg ervoor dat u het gebruik van Multi-Site Manager beperkt tot inhoud binnen één taal, bijvoorbeeld Engels master -> Engelse taalbijkantoren in landsites, Frans master -> Franse taalbijkantoren in landsites.
+   * Gebruik inhoud van de hoofdsite en de vertalingen opnieuw om sites te maken voor andere landen en culturen.
+   * Zorg ervoor dat u het gebruik van Multi-Site Manager beperkt tot inhoud binnen één taal, bijvoorbeeld Engelse master -> Engelse taalbijkantoren in landsites, Franse master -> Franse taalbijkantoren in landsites.
    * Koppel zo nodig elementen van de live kopieën los om lokalisatiegegevens toe te voegen.
 
 In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet alle niveaus/elementen in kwestie weergeven):
@@ -51,7 +51,7 @@ In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet a
 >
 >In dit, en vergelijkbaar, scenario&#39;s MSM beheert niet de verschillende taalversies als dusdanig.
 >
->* [MSM](/help/sites-administering/msm.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (bijvoorbeeld, een globale master) aan de levende exemplaren (bijvoorbeeld, de lokale plaatsen), binnen de grenzen van een taal.
+>* [MSM](/help/sites-administering/msm.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (bijvoorbeeld, een globale meester) aan de levende exemplaren (bijvoorbeeld, de lokale plaatsen), binnen de grenzen van een taal.
 >* De [vertalen](/help/sites-administering/translation.md) de integratiemogelijkheden van AEM, in combinatie met de vertaaldiensten van derden, beheren de talen en vertalen van inhoud in deze verschillende talen.
 >
 >Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden gebruikt.

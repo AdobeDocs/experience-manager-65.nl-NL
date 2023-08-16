@@ -11,9 +11,9 @@ discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1087'
+source-wordcount: '1086'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Met Correspondence Management kunt u het servicesjabloon van de oplossing vernieuwen voor een betere merkwaarde en de brandstandaarden van uw organisatie naleven. Als u de gebruikersinterface opnieuw brandt, wijzigt u het bedrijfslogo, dat in de linkerbovenhoek van de interface Correspondentie maken wordt weergegeven.
+Met Correspondence Management kunt u het servicesjabloon van de oplossing herdefiniëren voor een betere merkwaarde en kunt u voldoen aan de brandstandaarden van uw organisatie. Als u de gebruikersinterface opnieuw brandt, wijzigt u het bedrijfslogo, dat in de linkerbovenhoek van de interface Correspondentie maken wordt weergegeven.
 
 U kunt het logo in de interface Correspondentie maken wijzigen met het logo van uw organisatie.
 
@@ -87,7 +87,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
    1. Klikken **OK**. De css-map wordt gemaakt in het opgegeven pad.
 
-1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die lijkt op de map imgs (in de map ccrui).
+1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die vergelijkbaar is met de map imgs (in de map ccrui).
 
    1. Klik met de rechtermuisknop op de knop **imgs** map op het volgende pad en selecteer **Overlayknooppunt**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
@@ -110,7 +110,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
 Upload uw aangepaste logobestand naar CRX. De standaard HTML-regels bepalen de rendering van het logo. De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt voor toegang tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
 
-* De standaardafmetingen van de logoafbeelding zijn 48 px &#42; 48 px. Zorg ervoor dat de afbeelding even groot of groter is dan 48 px &#42; 48 px.
+* De standaardafmetingen van de logoafbeelding zijn 48 px &#42; 48 px. Zorg ervoor dat de afbeelding even groot of groter is als deze &#42; 48 px.
 * Als de hoogte van de logoafbeelding groter is dan 50 px, wordt de afbeelding in de gebruikersinterface Correspondentie maken verkleind tot een maximale hoogte van 50 px, aangezien dit de hoogte van de koptekst is. Wanneer u de afbeelding verkleint, blijft de hoogte-breedteverhouding van de afbeelding behouden in de gebruikersinterface Correspondentie maken.
 * Als de afbeelding klein is, wordt de schaal van de gebruikersinterface Correspondentie maken niet vergroot. Zorg er dus voor dat u een logoafbeelding van minimaal 48 pixels hoog en voldoende breed gebruikt voor meer duidelijkheid.
 
@@ -139,7 +139,7 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
 1. Dubbelklik op de knop **jcr:gegevens** eigenschap.
 
-   Het dialoogvenster JCR:gegevens bewerken wordt geopend.
+   Het dialoogvenster jcr:gegevens bewerken wordt geopend.
 
    Klik nu op de map newlogo.png, dubbelklik op jcr:content (grijze optie) en stel type nt:resource in. Maak indien niet aanwezig een eigenschap met de naam jcr:content.
 
@@ -149,7 +149,7 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    ![Voorbeeld van aangepast logobestand](assets/geometrixx-outdoors.png)
 
-   Voorbeeld: CustomLogo.png voor gebruik als aangepast logo
+   Voorbeeld: CustomLogo.png te gebruiken als het aangepaste logo
 
 1. Klikken **Alles opslaan**.
 

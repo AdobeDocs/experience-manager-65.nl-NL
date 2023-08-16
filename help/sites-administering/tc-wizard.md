@@ -12,9 +12,9 @@ discoiquuid: 5d68a101-67e1-4dbc-9943-24fb754d4f77
 docset: aem65
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '213'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ U kunt als volgt deze wizard openen:
 
    ![chlimage_1-10](assets/chlimage_1-10.jpeg)
 
-1. De **Bron selecteren** kunt u pagina&#39;s toevoegen of verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten.
+1. De **Bron selecteren** Met de stap van de wizard kunt u pagina&#39;s toevoegen of verwijderen. U kunt ook subpagina&#39;s opnemen of uitsluiten.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
 
@@ -47,7 +47,7 @@ U kunt als volgt deze wizard openen:
 
    >[!NOTE]
    >
-   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het framework voor vertaalintegratie configureren](/help/sites-administering/tc-tic.md).
+   >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het Kader voor de Integratie van de Vertaling vormen](/help/sites-administering/tc-tic.md).
 
 1. De **Volgende** de knoop brengt u aan **Vertalen** stap van de wizard. Hier kunt u kiezen tussen het maken van alleen de structuur, het maken van een nieuw vertaalproject of het toevoegen aan een bestaand vertaalproject.
 

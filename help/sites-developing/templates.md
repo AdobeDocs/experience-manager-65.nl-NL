@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 exl-id: 59f01bb1-4ff1-42b6-afc9-56d448b1f803
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '931'
+source-wordcount: '930'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ De voordelen van bewerkbare sjablonen:
 
 * Kan [gemaakt](/help/sites-authoring/templates.md#creating-a-new-template-template-author) en [bewerkt](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) door uw auteurs.
 
-* Zijn geïntroduceerd zodat u het volgende kunt definiëren voor pagina&#39;s die met de sjabloon zijn gemaakt:
+* Er zijn nu regels waarmee u het volgende kunt definiëren voor pagina&#39;s die met de sjabloon zijn gemaakt:
 
    * de structuur
    * de initiële inhoud
    * inhoudsbeleid
 
-* Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. Deze verbinding houdt in dat wijzigingen in de sjabloonstructuur worden weerspiegeld op alle pagina&#39;s die met die sjabloon worden gemaakt; wijzigingen in de oorspronkelijke inhoud worden niet doorgevoerd.
+* Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. Deze verbinding houdt in dat wijzigingen in de sjabloonstructuur worden weerspiegeld op alle pagina&#39;s die met die sjabloon worden gemaakt. Wijzigingen in de oorspronkelijke inhoud worden niet doorgevoerd.
 * Gebruikt het inhoudsbeleid (dat van de malplaatjeredacteur wordt uitgegeven) om de ontwerpeigenschappen (gebruikt niet de wijze van het Ontwerp binnen de paginaredacteur) voort te zetten.
 * worden opgeslagen onder `/conf`
 * Zie [Bewerkbare sjablonen](/help/sites-developing/page-templates-editable.md) voor nadere informatie.
@@ -78,17 +78,17 @@ Statische sjablonen:
 >
 >Vanaf AEM 6.5 wordt het gebruik van statische sjablonen niet als een goede praktijk beschouwd. Gebruik in plaats hiervan Bewerkbare sjablonen.
 >
->[AEM Modernisering](modernization-tools.md) met gereedschappen kunt u migreren van statische naar bewerkbare sjablonen.
+>[AEM modernisering](modernization-tools.md) met gereedschappen kunt u migreren van statische naar bewerkbare sjablonen.
 
 ### Beschikbaarheid sjabloon {#template-availability}
 
 >[!CAUTION]
 >
->AEM biedt meerdere eigenschappen om de sjablonen te beheren die zijn toegestaan onder **Sites**. Het combineren ervan kan echter leiden tot complexe regels die moeilijk te volgen en te beheren zijn.
+>AEM biedt meerdere eigenschappen om de sjablonen te beheren die zijn toegestaan onder **Sites**. Het combineren van deze regels kan echter leiden tot complexe regels die moeilijk te volgen en te beheren zijn.
 >
->Daarom adviseert Adobe dat u eenvoudig begint, door te bepalen:
+>Daarom adviseert de Adobe dat u eenvoudig begint, door te bepalen:
 >
->* alleen `cq:allowedTemplates` eigenschap
+>* alleen de `cq:allowedTemplates` eigenschap
 >
 >* alleen in de hoofdmap van de site
 >
@@ -96,7 +96,7 @@ Statische sjablonen:
 >
 >De eigenschappen `allowedPaths`, `allowedParents`, en `allowedChildren` kan ook op de malplaatjes worden geplaatst om verfijndere regels te bepalen. Waar mogelijk is het echter *veel* eenvoudiger te definiëren `cq:allowedTemplates` eigenschappen op subsecties van de site als de toegestane sjablonen verder moeten worden beperkt.
 >
->Een extra voordeel is dat de `cq:allowedTemplates` eigenschappen kunnen door een auteur worden bijgewerkt in het dialoogvenster **Geavanceerd** tabblad van het dialoogvenster **Pagina-eigenschappen**. De andere malplaatjeeigenschappen kunnen niet worden bijgewerkt gebruikend (standaard) UI, zodat zou een ontwikkelaar nodig hebben om de regels en een codeplaatsing voor elke verandering te handhaven.
+>Een extra voordeel is dat de `cq:allowedTemplates` eigenschappen kunnen door een auteur worden bijgewerkt in het dialoogvenster **Geavanceerd** tabblad van het **Pagina-eigenschappen**. De andere malplaatjeeigenschappen kunnen niet worden bijgewerkt gebruikend (standaard) UI, zodat zou een ontwikkelaar nodig hebben om de regels en een codeplaatsing voor elke verandering te handhaven.
 
 Wanneer u een pagina maakt in de interface voor sitebeheer, is de lijst met beschikbare sjablonen afhankelijk van de locatie van de nieuwe pagina en de plaatsingsbeperkingen die in elke sjabloon zijn opgegeven.
 

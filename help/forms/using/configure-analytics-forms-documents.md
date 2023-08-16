@@ -10,16 +10,16 @@ topic-tags: integrations
 discoiquuid: 96a77980-4213-4779-a540-00905ea8f7e3
 docset: aem65
 exl-id: 72f0f8e3-e70b-4f78-aa0e-b31768b536f7
-source-git-commit: fef4f47794942b1fca4b30ce518b2faa8951f482
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1532'
 ht-degree: 0%
 
 ---
 
 # Analyse met gebruik van Cloud Service Framework {#analyticsusingcloudframework}
 
-AEM Forms is geïntegreerd met Analytics waarmee u prestatiegegevens voor uw gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
+AEM Forms integreert met Analytics waarmee u prestatiegegevens voor uw gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
 
 >[!NOTE]
 >
@@ -27,23 +27,23 @@ AEM Forms is geïntegreerd met Analytics waarmee u prestatiegegevens voor uw gep
 >
 >Naast het invoegpakket hebt u een Adobe Analytics-account en beheerdersrechten voor de AEM nodig. Voor informatie over de oplossing raadpleegt u [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html).
 
-U kunt ook analyses uitvoeren met Adobe Launch. Ga voor meer informatie over hoe u AEM Forms kunt integreren met Adobe Launch naar [Analyse met Adobe Launch](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
+U kunt ook analyses uitvoeren met de Adobe Launch. Ga voor meer informatie over hoe u AEM Forms kunt integreren met het starten van de Adobe naar [Analyse met Adobe starten](/help/forms/using/integrate-aem-forms-with-adobe-analytics.md).
 
 ## Overzicht {#overview}
 
-U kunt Adobe Analytics gebruiken om interactiepatronen en problemen te detecteren waarmee gebruikers worden geconfronteerd bij het gebruik van adaptieve formulieren, HTML5-formulieren en interactieve communicatie. Uit de doos, volgt de analysemogelijkheden van Adobe en slaat informatie over de volgende parameters op:
+U kunt Adobe Analytics gebruiken om interactiepatronen en problemen te detecteren waarmee gebruikers worden geconfronteerd bij het gebruik van adaptieve formulieren, HTML5-formulieren en interactieve communicatie. Uit de doos, volgt de analytische sporen van de Adobe en slaat informatie over de volgende parameters op:
 
 * **Gemiddelde vultijd**: Gemiddelde tijd die u hebt doorgebracht om het formulier in te vullen.
-* **Uitvoeringen**: Aantal keren dat een formulier wordt geopend.
-* **Concepten**: Het aantal keren dat een formulier in de conceptstatus wordt opgeslagen.
+* **Uitvoeringen**: Het aantal keren dat een formulier wordt geopend.
+* **Concepten**: Het aantal keren dat een formulier in het concept wordt opgeslagen.
 * **Indieningen**: Aantal keer dat een formulier wordt verzonden.
-* **Afbreken**: Aantal keren dat de gebruikers het formulier verlaten zonder het in te vullen.
+* **Afbreken**: Het aantal keren dat de gebruikers het formulier verlaten zonder het in te vullen.
 
 U kunt Adobe Analytics aanpassen om meer parameters toe te voegen of te verwijderen. Het verslag bevat naast de bovenstaande informatie de volgende informatie over elk panel van de HTML5 en het adaptieve formulier:
 
-* **Tijd**: De tijd die u aan het deelvenster en de velden van het deelvenster hebt doorgebracht.
+* **Tijd**: Tijd die u in het deelvenster en in de velden van het deelvenster hebt doorgebracht.
 * **Fout**: Aantal fouten aangetroffen in het deelvenster en in de velden van het deelvenster.
-* **Help**: Het aantal keren dat een gebruiker de Help van een deelvenster en de velden van het deelvenster opent.
+* **Help**: Het aantal keren dat een gebruiker Help van een deelvenster en de velden van het deelvenster opent.
 
 ## Rapportsuite maken {#creating-report-suite}
 
@@ -52,7 +52,7 @@ De analysegegevens worden opgeslagen in klant-specifieke bewaarplaatsen genoemd 
 Voer de volgende stappen uit om een rapportsuite te maken.
 
 1. Aanmelden bij [https://sc.omniture.com/login/](https://sc.omniture.com/login/)
-1. Selecteer in de Marketing Cloud de optie **Beheer** > **Admin Console** > **Rapportageopties**.
+1. Selecteer in de Marketing Cloud **Beheerder** > **Admin Console** > **Rapportageopties**.
 1. Selecteren **Nieuw maken** > **Rapportsuite** in Report Suite Manager.
 
    ![Nieuwe rapportsuite maken](assets/newreportsuite_new.png)
@@ -60,13 +60,13 @@ Voer de volgende stappen uit om een rapportsuite te maken.
    Nieuwe rapportsuite maken
 
 1. Controleer of de eerste vervolgkeuzelijst is ingesteld op **Maken van een sjabloon** en selecteer vervolgens **Handel**.
-1. Zoek de **ID van rapportsuite** en voeg nieuwe rapportsuite-id toe. Bijvoorbeeld JJEsquire. Een rapportsuite-id wordt weergegeven onder het veld ID van rapportsuite. Het omvat een automatisch voorvoegsel, dat vaak de bedrijfsnaam is.
+1. Zoek de **ID van rapportsuite** en voeg nieuwe rapportsuite-id toe. JJEsquire. Een rapportsuite-id wordt weergegeven onder het veld Report Suite-id. Het omvat een automatisch voorvoegsel, dat vaak de bedrijfsnaam is.
 1. Nieuw toevoegen **Titel site**. JJEsquire Getting Started Suite. Deze titel wordt gebruikt binnen Analytics UI. Gebruik de rapportsuite-id in de code.
 1. Selecteer een **Tijdzone** in de vervolgkeuzelijst. Alle gegevens die in deze rapportreeks komen worden geregistreerd gebaseerd op bepaalde tijdzone.
 1. Laat de **Basis-URL** en **Standaardpagina** velden zijn leeg. Deze twee waarden worden alleen via de Adobe Marketing Cloud-interface gebruikt om een koppeling naar uw website te maken.
 1. Laat de **Live-datum** vandaag. De Go Live Date bepaalt de dag waarop de rapportsuite wordt geactiveerd.
-1. In de **Geschat aantal paginaweergaven per dag** veld, type 100. Met dit veld kunt u het aantal pagina&#39;s schatten dat u per dag voor uw website verwacht. Deze schatting stelt Adobe in staat de juiste hoeveelheid hardware in te stellen om de gegevens te verwerken die u wilt verzamelen.
-1. Selecteer een **Basisvaluta** in de vervolgkeuzelijst. Alle valutagegevens die in deze rapportsuite worden ingevoerd, worden geconverteerd en opgeslagen in deze valutaopmaak.
+1. In de **Geschat aantal paginaweergaven per dag** veld, type 100. Met dit veld kunt u het aantal pagina&#39;s schatten dat u per dag voor uw website verwacht. Met deze schatting kan de Adobe de juiste hoeveelheid hardware instellen voor de verwerking van de gegevens die u wilt verzamelen.
+1. Selecteer een **Basisvaluta** in de vervolgkeuzelijst. Alle valutagegevens die in deze rapportsuite worden ingevoerd, worden geconverteerd en opgeslagen in deze valutanotatie.
 1. Klikken **Rapport maken** Suite. De pagina wordt vernieuwd met een bericht dat de rapportsuite is gemaakt.
 1. Selecteer de nieuwe rapportsuite. Navigeren naar **Instellingen bewerken** > **Algemeen** > **Algemene accountinstellingen**.
 
@@ -75,11 +75,11 @@ Voer de volgende stappen uit om een rapportsuite te maken.
    Algemene accountinstellingen
 
 1. Schakel in het scherm Algemene accountinstellingen de optie **Geografische rapportage** en klik op **Opslaan.**
-1. Navigeren naar **Instellingen bewerken** > **Verkeer** > **Verkeersvariabelen**.
+1. Navigeren naar **Instellingen bewerken** > **Verkeer** > **verkeersvariabelen**.
 1. In de rapportreeks, vorm en laat volgende verkeersvariabelen toe.
 
-   * **formName**: Identificatiecode voor een adaptief formulier.
-   * **formInstance**: Identifier van een adaptief formulierexemplaar. Padrapporten inschakelen voor deze variabele.
+   * **formName**: Identifier voor een adaptief formulier.
+   * **formInstance**: Identifier van een adaptieve formulierinstantie. Padrapporten inschakelen voor deze variabele.
    * **fieldName**: Identifier van een adaptief formulierveld. Padrapporten inschakelen voor deze variabele.
    * **panelName**: Identifier van een adaptief formulierpaneel. Padrapporten inschakelen voor deze variabele.
    * **formTitle**: Titel van het formulier.
@@ -112,17 +112,17 @@ Voer de volgende stappen uit om een rapportsuite te maken.
 Configuratie van Cloud Servicen is informatie over uw Adobe Analytics-account. Met de configuratie kan Adobe Experience Manager (AEM) verbinding maken met Adobe Analytics. Maak een aparte configuratie voor elke analytische account die u gebruikt.
 
 1. Meld u als beheerder aan bij de AEM auteur-instantie.
-1. Klik in de linkerbovenhoek op **Adobe Experience Manager** > **Gereedschappen** ![hamerpictogram](/help/forms/using/assets/tools.png) > **Cloud Services** > **Oudere Cloud Services**.
+1. Klik in de linkerbovenhoek op **Adobe Experience Manager** > **Gereedschappen** ![hamerpictogram](/help/forms/using/assets/tools.png) > **Cloud Servicen** > **Oudere Cloud Servicen**.
 1. Zoeken **Adobe Analytics** pictogram. Klikken **Configuraties tonen** en ga vervolgens door met klikken **[+]** om nieuwe configuratie toe te voegen.
 
-   Als u voor het eerst een gebruiker bent, klikt u op **Nu configureren**.
+   Als u een nieuwe gebruiker bent, klikt u op **Nu configureren**.
 
 1. Voeg een Titel toe aan uw nieuwe configuratie (het invullen van het gebied van de Naam is facultatief). Bijvoorbeeld, Mijn analytische configuratie. Klikken **Maken**.
 
 1. Wanneer het deelvenster Bewerken wordt geopend op de configuratiepagina, vult u de velden in:
 
    * **Bedrijf**: De naam van je bedrijf zoals vermeld op Adobe Analytics.
-   * **Gebruikersnaam**: De naam die wordt gebruikt om u aan te melden bij Adobe Analytics.
+   * **Gebruikersnaam**: De naam die wordt gebruikt voor aanmelding bij Adobe Analytics.
    * **Wachtwoord**: Het Adobe Analytics-wachtwoord voor de bovenstaande account.
    * **Datacenter**: Het datacenter van uw Adobe Analytics-account.
 
@@ -132,7 +132,7 @@ Configuratie van Cloud Servicen is informatie over uw Adobe Analytics-account. M
 
 Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-variabelen en AEM. Gebruik een framework om te configureren hoe uw formulieren gegevens invullen in Adobe Analytics-rapporten. Frameworks zijn gekoppeld aan een Adobe Analytics-configuratie. U kunt veelvoudige kaders voor elke configuratie tot stand brengen.
 
-1. Klik op de AEM-console voor cloudservices op **Configuraties tonen**, onder Adobe Analytics.
+1. Klik op de AEM cloudserviceconsole op **Configuraties tonen**, onder Adobe Analytics.
 1. Klik op de knop **[+]** naast de configuratie Analytics.
 
    ![Adobe Analytics-configuratie](assets/adobe-analytics-cloud-services.png)
@@ -163,10 +163,10 @@ Een Adobe Analytics-framework is een set toewijzingen tussen Adobe Analytics-var
 
 1. Geef de juiste waarden op voor de volgende velden en klik op **Opslaan**.
 
-   * **SiteCatalyst Framework**: Selecteer het framework/de configuratie die u in de sectie Set up a framework for tracking hebt gedefinieerd.
+   * **Framework SiteCatalyst**: Selecteer het framework/de configuratie die u in de sectie Set up a framework for tracking hebt gedefinieerd.
    * **Beginwaarde van tekstspatiëring**: Geef de duur in seconden op waarna het veldbezoek moet worden bijgehouden. De standaardwaarde is 0. Wanneer de waarde groter is dan 0 (nul), worden twee afzonderlijke volggebeurtenissen verzonden naar de Adobe Analytics-server. De eerste gebeurtenis geeft de analyseserver de opdracht het verlaten veld niet meer te volgen. De tweede gebeurtenis wordt verzonden nadat de opgegeven tijdsduur is verstreken. De tweede gebeurtenis geeft de analyseserver de opdracht het bezochte veld te volgen. Het gebruik van twee afzonderlijke gebeurtenissen helpt de tijd die aan een veld wordt doorgebracht nauwkeurig te meten. Wanneer de waarde 0 (nul) is, wordt een enkele volggebeurtenis verzonden naar de Adobe Analytics-server.
 
-   * **Overzicht van synchronisatie van analyserapporten**: Uitsnijdexpressie opgeven voor het ophalen van rapporten uit Adobe Analytics. De standaardwaarde is 0 0 2? &#42; &#42;.
+   * **Overzicht van synchronisatie van analyserapporten**: Geef de expressie voor uitsnijden op voor het ophalen van rapporten uit Adobe Analytics. De standaardwaarde is 0 0 2? &#42; &#42;.
 
    * **Time-out testrapport:** Geef de tijdsduur in seconden op, waarna de server moet reageren op het analyserapport. De standaardtijd is 120 seconden.
 
@@ -180,7 +180,7 @@ Nu kunt u analyses inschakelen voor formulieren en een analyserapport genereren.
 
 ## Analyses inschakelen voor een formulier of document {#enabling-analytics-for-a-form-or-document}
 
-1. Meld u aan bij AEM portal op `https://[hostname]:'port'`.
+1. Aanmelden bij AEM portal `https://[hostname]:'port'`.
 1. Klikken **Forms > Forms &amp; Documents** selecteert u een formulier of document en klikt u op **Analyse inschakelen**. De analysemogelijkheden zijn ingeschakeld.
 
    ![Analyses inschakelen voor een formulier of document](assets/enable-analytics-1.png)

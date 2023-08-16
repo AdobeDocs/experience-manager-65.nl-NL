@@ -2,9 +2,9 @@
 title: Toegang tot en levering van contentfragmenten zonder kop Handleiding voor snel starten
 description: Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmenten en de GraphQL API voor het zonder kop leveren van inhoud met fragmenten.
 exl-id: 4664b3a4-4873-4f42-b59d-aadbfaa6072f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,9 @@ Leer hoe u AEM Assets REST API kunt gebruiken voor het beheer van inhoudsfragmen
 
 ## Wat zijn GraphQL en Assets REST API&#39;s? {#what-are-the-apis}
 
-[Nu u enkele inhoudsfragmenten hebt gemaakt,](create-content-fragment.md) u kunt AEM API&#39;s gebruiken om ze zonder kop te leveren.
+[Nu u enkele inhoudsfragmenten hebt gemaakt,](create-content-fragment.md) u kunt AEM API&#39;s gebruiken om ze zonder koppen te leveren.
 
-* [De GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) staat u toe om verzoeken tot toegang te creëren en inhoudsfragmenten te leveren.
+* [De GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) Hiermee kunt u aanvragen maken voor toegang tot en levering van inhoudsfragmenten.
    * Om dit te gebruiken, [eindpunten moeten worden gedefinieerd en ingeschakeld in AEM](/help/sites-developing/headless/graphql-api/graphql-endpoint.md#enabling-graphql-endpoint)en, indien nodig, de [GraphiQL-interface geïnstalleerd](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#installing-graphiql-interface).
 * [De REST-API voor middelen](/help/assets/assets-api-content-fragments.md) Hiermee kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
@@ -75,8 +75,8 @@ GraphQL kan herhalende API-aanvragen en overlevering voorkomen. In plaats daarva
 Dat is het! U hebt nu een basiskennis van beheer van inhoud zonder kop in AEM. Er zijn veel meer bronnen waar u dieper kunt duiken voor een volledig begrip van de beschikbare functies.
 
 * **[Configuratiebrowser](create-configuration.md)** - Voor meer informatie over de AEM Configuration Browser
-* **[Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)** - Meer informatie over het maken en beheren van inhoudsfragmenten
+* **[Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md)** - Voor meer informatie over het maken en beheren van inhoudsfragmenten
 * **[GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md)** voor meer details over het gebruik van de GraphiQL IDE
 * **[Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md)** voor meer details over Persisted Queries
 * **[Ondersteuning voor inhoudsfragmenten in AEM Assets HTTP API](/help/assets/assets-api-content-fragments.md)** - Voor meer informatie over het rechtstreeks benaderen van AEM inhoud via de HTTP-API, via CRUD-bewerkingen (Maken, Lezen, Bijwerken, Verwijderen)
-* **[GraphQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)** - Voor meer informatie over hoe u inhoudsfragmenten zonder problemen kunt leveren
+* **[GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)** - Voor meer informatie over hoe u inhoudsfragmenten zonder problemen kunt leveren

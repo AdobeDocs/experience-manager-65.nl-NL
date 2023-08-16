@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3502'
+source-wordcount: '3501'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ De indeling is gebaseerd op de schermindeling met aanbevolen werkwijzen van HTML
 
 >[!NOTE]
 >
->Het ontwerppakket **moet** bevatten een **index.html** bestand op hoofdniveau. Als de te importeren landingspagina ook een mobiele versie heeft, moet de ritssluiting een **mobile.index.html** samen met **index.html** op het hoofdniveau.
+>Het ontwerppakket **moet** bevatten een **index.html** bestand op het hoofdniveau. Als de te importeren landingspagina ook een mobiele versie heeft, moet de ritssluiting een **mobile.index.html** samen met **index.html** op het hoofdniveau.
 
 ### De HTML van de bestemmingspagina voorbereiden {#preparing-the-landing-page-html}
 
@@ -93,13 +93,13 @@ Een voorbeeldfragment van de landingspagina HTML na toevoeging van de canvasdiv 
 </html>
 ```
 
-### De HTML voorbereiden om bewerkbare AEM componenten op te nemen {#preparing-the-html-to-include-editable-aem-components}
+### De HTML voorbereiden om bewerkbare AEM te bevatten {#preparing-the-html-to-include-editable-aem-components}
 
 Wanneer u een openingspagina importeert, kunt u de pagina ongewijzigd importeren. Dit betekent dat u, nadat de openingspagina is geïmporteerd, geen van de geïmporteerde items in AEM kunt bewerken (u kunt nog steeds extra AEM op de pagina toevoegen).
 
-Voordat u de openingspagina importeert, wilt u wellicht bepaalde delen van de openingspagina converteren, zodat deze bewerkbare AEM onderdelen zijn. Hierdoor kunt u delen van de bestemmingspagina snel bewerken, zelfs nadat het ontwerp van de bestemmingspagina is geïmporteerd.
+Voordat u de openingspagina importeert, wilt u wellicht bepaalde delen van de openingspagina converteren, zodat deze bewerkbare AEM onderdelen zijn. Zo kunt u delen van de bestemmingspagina snel bewerken, zelfs nadat het ontwerp van de bestemmingspagina is geïmporteerd.
 
-U doet dit door het toevoegen van `data-cq-component` naar de juiste component in het HTML-bestand dat u importeert.
+U doet dit door de `data-cq-component` naar de juiste component in het HTML-bestand dat u importeert.
 
 In de volgende sectie wordt beschreven hoe u het HTML-bestand kunt bewerken, zodat u bepaalde delen van de bestemmingspagina&#39;s omzet in verschillende bewerkbare AEM. Componenten worden uitgebreid beschreven op [Onderdelen van bestemmingspagina&#39;s](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
@@ -113,7 +113,7 @@ Houd rekening met de volgende beperkingen voordat u gaat importeren:
 
 ### Kenmerken zoals klasse of id die op de tag &amp;lt;body> zijn toegepast, blijven niet behouden {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Als bijvoorbeeld een kenmerk zoals id of klasse op de tag body wordt toegepast `<body id="container">` dan wordt het niet bewaard na de invoer. Het geïmporteerde ontwerp mag dus niet afhankelijk zijn van de kenmerken die op de `<body>` tag.
+Als bijvoorbeeld een kenmerk zoals id of klasse op de tag body wordt toegepast `<body id="container">` dan wordt het niet bewaard na de invoer. Het geïmporteerde ontwerp mag dus niet afhankelijk zijn van de kenmerken die op de `<body>` -tag.
 
 ### ZIP slepen en neerzetten {#drag-and-drop-zip}
 
@@ -143,7 +143,7 @@ Markeringen HTML om een tekstcomponent in te voegen ( `foundation/components/tex
 
 Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 
-* Hiermee wordt een bewerkbare AEM tekstcomponent gemaakt ( `sling:resourceType=foundation/components/text`) op de landingspagina die na het importeren van het ontwerppakket is gemaakt.
+* Maakt een bewerkbare AEM tekstcomponent ( `sling:resourceType=foundation/components/text`) op de landingspagina die na het importeren van het ontwerppakket is gemaakt.
 * Hiermee stelt u de `text` eigenschap van de gemaakte tekstcomponent naar de HTML die binnen de `div`.
 
 **Declaratie van tag voor korte component**:
@@ -214,7 +214,7 @@ Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 * Hiermee stelt u de `width` aan de waarde van het breedtekenmerk in de tag img.
 * Hiermee stelt u de `height` aan de waarde van het hoogtekenmerk in de tag img.
 
-**Declaratie van stenorcomponent:**
+**Declaratie van de tag Shorthand:**
 
 ```xml
 <img data-cq-component="image" src="test.png" alt="Image component shorthand"/>
@@ -237,7 +237,7 @@ Maar anders worden absolute URL-afbeeldingen ondersteund voor img-tags die geen 
 U kunt een deel van het landen pagina voor het invoeren als &quot;editable Vraag aan actiecomponent&quot;merken - dergelijke ingevoerde vraag-aan-actie componenten kunnen na het invoeren van de het landen pagina worden uitgegeven. AEM omvat de volgende componenten CTA:
 
 * Klik via koppeling - Hiermee kunt u een tekstkoppeling toevoegen waarmee de bezoeker naar een doel-URL gaat wanneer erop wordt geklikt.
-* Grafische koppeling - Hiermee kunt u een afbeelding toevoegen die de bezoeker naar een doel-URL stuurt wanneer erop wordt geklikt.
+* Grafische koppeling - Hiermee kunt u een afbeelding toevoegen die de bezoeker na het klikken naar een doel-URL stuurt.
 
 #### Klikken door koppeling {#click-through-link}
 
@@ -388,7 +388,7 @@ Als u de bovenstaande markering opneemt in de HTML, gebeurt het volgende:
 
 De doelcomponent toont de inhoud van een ervaring op de pagina. U kunt veel ervaring hebben die in een campagne is gemaakt en de doelcomponent kan inhoud van verschillende ervaringen dynamisch weergeven aan verschillende gebruikers die de pagina bezoeken.
 
-De html prijsverhoging om een doelcomponent op te nemen en ook verschillende ervaringen in een campagne te creëren:
+De html prijsverhoging om een doelcomponent op te nemen en verschillende ervaringen in een campagne ook tot stand te brengen:
 
 ```xml
 <div data-cq-component="target">
@@ -412,7 +412,7 @@ Naast het specificeren of de ingevoerde componenten editable AEM componenten zij
 
 * Pagina-eigenschappen instellen door de metagegevens uit te nemen die zijn gedefinieerd in de geïmporteerde HTML.
 * De charsetcodering in de HTML opgeven.
-* Bedekken van de sjabloon voor de pagina Importeur.
+* Bedekken van de sjabloon voor de pagina Importer.
 
 ### Pagina-eigenschappen instellen door metagegevens uit te nemen die zijn gedefinieerd in geïmporteerde HTML {#setting-page-properties-by-extracting-metadata-defined-in-imported-html}
 
@@ -454,7 +454,7 @@ Het pad in de data-cq-component moet het resourceType van de component zijn.
 
 Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor componentconversie tijdens het importeren.
 
-| E > F | een onderliggend element van het F-element van een E-element | [Onderliggende combinator](https://www.w3.org/TR/css3-selectors/#child-combinators) |
+| E > F | een onderliggend F-element van een E-element | [Onderliggende combinator](https://www.w3.org/TR/css3-selectors/#child-combinators) |
 |---|---|---|
 | E + F | een F-element, onmiddellijk voorafgegaan door een E-element | [Aangrenzende combinator](https://www.w3.org/TR/css3-selectors/#adjacent-sibling-combinators) |
 | E ~ F | een F-element voorafgegaan door een E-element | [Algemene verwant combinator](https://www.w3.org/TR/css3-selectors/#general-sibling-combinators) |
@@ -542,9 +542,9 @@ Bij het importeren van het ontwerppakket kunnen er verschillende fouten optreden
 
 Als het ontwerppakket een parsys componentenprijsverhoging bevat, dan na het invoeren, begint het hulpdekick landend-page relevante componenten te tonen. U kunt nieuwe componenten slepen en neerzetten op de component parsys binnen uw landende pagina. U kunt ook naar de ontwerpmodus gaan en nieuwe componenten aan het hulpstuk toevoegen.
 
-### Foutberichten die tijdens het importeren worden weergegeven {#error-messages-displayed-during-import}
+### Foutberichten tijdens importeren worden weergegeven {#error-messages-displayed-during-import}
 
-Als er fouten zijn opgetreden (het geïmporteerde pakket is bijvoorbeeld geen geldige postcode), wordt het pakket niet geïmporteerd tijdens het importeren van het ontwerp. In plaats daarvan wordt boven op de pagina net boven het vak Slepen en neerzetten een foutbericht weergegeven. Hier worden voorbeelden van foutscenario&#39;s gegeven. Nadat u de fout hebt gecorrigeerd, kunt u de bijgewerkte zip opnieuw importeren op dezelfde lege landingspagina. Er zijn verschillende scenario&#39;s waarin fouten worden gegenereerd:
+Als er fouten zijn opgetreden (het geïmporteerde pakket is bijvoorbeeld geen geldige postcode), importeert het ontwerppakket niet. In plaats daarvan wordt boven op de pagina net boven het vak Slepen en neerzetten een foutbericht weergegeven. Hier worden voorbeelden van foutscenario&#39;s gegeven. Nadat u de fout hebt gecorrigeerd, kunt u de bijgewerkte zip opnieuw importeren op dezelfde lege landingspagina. Er zijn verschillende scenario&#39;s waarin fouten worden gegenereerd:
 
 * Geïmporteerd ontwerppakket is geen geldig zip-archief.
 * Het geïmporteerde ontwerppakket bevat geen index.html op het hoofdniveau.
@@ -567,7 +567,7 @@ Stel dat de landingspagina is gemaakt in het kader van de campagne We.Retail en 
 
 `/etc/designs/default/canvas/content/campaigns/geometrixx/myBlankLandingPage`
 
-### Opmaak niet behouden {#formatting-not-preserved}
+### Opmaak is niet behouden {#formatting-not-preserved}
 
 Houd rekening met de volgende beperkingen wanneer u uw CSS maakt:
 

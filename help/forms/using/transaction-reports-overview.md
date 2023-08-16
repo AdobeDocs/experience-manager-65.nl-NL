@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b2c09e6b-a1d8-4b30-af2c-988442a3a986
 docset: aem65
 exl-id: bb812614-f4d8-4f57-bea2-8f7d31457039
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle transacties die sinds een opgegeven datum op uw AEM Forms-implementatie zijn uitgevoerd. Het doel is informatie te verstrekken over productgebruik en belanghebbenden in het bedrijfsleven te helpen hun digitale verwerkingsvolumes te begrijpen. Voorbeelden van een transactie zijn:
 
 * Indiening van een adaptief formulier, een HTML5-formulier of een formulierset
-* Vertoning van een gedrukte versie of webversie van een interactieve communicatie
+* Afdruk of webversie van interactieve communicatie
 * Een document omzetten van de ene bestandsindeling naar de andere
 
 Voor meer informatie over wat als een transactie wordt beschouwd, zie [Aanpasbare API&#39;s](../../forms/using/transaction-reports-billable-apis.md).

@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2558'
 ht-degree: 0%
@@ -43,9 +43,9 @@ Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt
  </DDX>
 ```
 
-Binnen dit DDX-document wordt de waarde toegewezen aan het bronkenmerk `Loan.pdf`. Dit DDX-document geeft aan dat één PDF-document wordt doorgegeven aan de Assembler-service. Wanneer u een PDF-document samenstelt met bladwijzers, moet u een XML-bladwijzerdocument opgeven dat de bladwijzers in het resulterende document beschrijft. Als u een XML-bladwijzerdocument wilt opgeven, moet u ervoor zorgen dat de `Bookmarks` -element wordt opgegeven in uw DDX-document.
+Binnen dit DDX-document wordt de waarde toegewezen aan het bronkenmerk `Loan.pdf`. Dit DDX-document geeft aan dat één PDF-document wordt doorgegeven aan de Assembler-service. Wanneer u een PDF-document samenstelt met bladwijzers, moet u een XML-bladwijzerdocument opgeven dat de bladwijzers in het resulterende document beschrijft. Als u een XML-bladwijzerdocument wilt opgeven, moet u ervoor zorgen dat `Bookmarks` -element wordt opgegeven in uw DDX-document.
 
-In dit voorbeeld-DDX-document worden `Bookmarks` element specifies `doc2` als de waarde. Deze waarde wijst erop dat de inputkaart die tot de dienst van de Assembler wordt overgegaan een sleutel genoemd bevat `doc2`. De waarde van de `doc2` key is a `com.adobe.idp.Document` waarde die staat voor het XML-bladwijzerdocument. (Zie &quot;Taal van bladwijzers&quot; in het dialoogvenster [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).)
+In dit voorbeeld-DDX-document worden `Bookmarks` element specifies `doc2` als de waarde. Deze waarde wijst erop dat de inputkaart die tot de dienst van de Assembler wordt overgegaan een sleutel genoemd bevat `doc2`. De waarde van `doc2` key is a `com.adobe.idp.Document` waarde die staat voor het XML-bladwijzerdocument. (Zie &quot;Taal van bladwijzers&quot; in het dialoogvenster [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).)
 
 In dit onderwerp wordt de volgende XML-bladwijzertaal gebruikt om een PDF-document met bladwijzers samen te stellen.
 
@@ -75,17 +75,17 @@ In dit XML-bladwijzerdocument ziet u het element Handeling dat de handeling defi
 
 >[!NOTE]
 >
->Voor volledige informatie over ondersteunde acties raadpleegt u &quot; `Action` element&quot; in de [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor volledige informatie over ondersteunde acties raadpleegt u &quot; `Action` element&quot; in de [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 Op basis van het DDX-document dat in deze sectie is opgegeven en het XML-bladwijzerbestand als invoer, stelt de Assembler-service een PDF-document samen dat de volgende bladwijzers bevat.
 
 ![aw_aw_bmark](assets/aw_aw_bmark.png)
 
-Wanneer een gebruiker op de knop *De leningsdetails openen* bladwijzer, LoanDetails.pdf wordt geopend. Op dezelfde manier wanneer de gebruiker op de knop *NotePad starten* bladwijzer, NotePad is gestart.
+Wanneer een gebruiker op de knop *De leningsdetails openen* bladwijzer, LoanDetails.pdf wordt geopend. En wanneer de gebruiker op het *NotePad starten* bladwijzer, NotePad is gestart.
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, is het raadzaam bekend te zijn met het samenstellen van PDF-documenten met de Assembler-service. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
+>Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
@@ -93,7 +93,7 @@ Wanneer een gebruiker op de knop *De leningsdetails openen* bladwijzer, LoanDeta
 
 >[!NOTE]
 >
->Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -106,7 +106,7 @@ U kunt als volgt een PDF-document met bladwijzers samenstellen:
 1. Verwijs naar het XML-document van de bladwijzer.
 1. Voeg het document van de PDF en het referentieXML- document aan een inzameling van de Kaart toe.
 1. Stel runtime-opties in.
-1. Zet het PDF-document samen.
+1. Samenstellen van het PDF-document.
 1. Sla het PDF-document op dat bladwijzers bevat.
 
 **Projectbestanden opnemen**
@@ -148,11 +148,11 @@ Als u een PDF wilt samenstellen die nieuwe bladwijzers bevat, moet u naar een XM
 
 >[!NOTE]
 >
->Zie &quot;Taal van bladwijzers&quot; in het dialoogvenster [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Zie &quot;Taal van bladwijzers&quot; in het dialoogvenster [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 **Het PDF-document en het XML-bladwijzerdocument toevoegen aan een Map-verzameling**
 
-U moet zowel het PDF-document toevoegen waaraan bladwijzers worden toegevoegd als het XML-bladwijzerdocument aan de Kaartenverzameling. Daarom bevat het verzamelingsobject Map twee elementen: een PDF-document en het XML-bladwijzerdocument.
+U moet zowel het PDF-document toevoegen waaraan bladwijzers worden toegevoegd als het XML-bladwijzerdocument aan de Kaartenverzameling. Het verzamelingsobject Map bevat daarom twee elementen: een PDF-document en het XML-bladwijzerdocument.
 
 **Uitvoeringsopties instellen**
 
@@ -160,11 +160,11 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Het PDF-document samenstellen**
 
-Als u een PDF-document wilt samenstellen dat nieuwe bladwijzers bevat, gebruikt u de Assembler-service `invokeDDX` bewerking. De reden waarom u de `invokeDDX` verrichting in tegenstelling tot andere de dienstverrichtingen van de Assembler zoals `invokeOneDocument` is omdat de Assembler dienst een document van referentieXML vereist dat binnen het de inzamelingsvoorwerp van de Kaart wordt overgegaan. Dit object is een parameter van de `invokeDDX` bewerking.
+Als u een PDF-document wilt samenstellen dat nieuwe bladwijzers bevat, gebruikt u de Assembler-service `invokeDDX` -bewerking. De reden waarom u de `invokeDDX` verrichting in tegenstelling tot andere de dienstverrichtingen van de Assembler zoals `invokeOneDocument` is omdat de Assembler dienst een document van referentieXML vereist dat binnen het de inzamelingsvoorwerp van de Kaart wordt overgegaan. Dit object is een parameter van de `invokeDDX` -bewerking.
 
 **PDF-document met bladwijzers opslaan**
 
-U moet de resultaten extraheren uit het geretourneerde kaartobject en het bijbehorende PDF-document opslaan. (Zie &quot;De resultaten extraheren&quot; in [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+U moet de resultaten extraheren uit het geretourneerde kaartobject en het bijbehorende PDF-document opslaan. (Zie De resultaten extraheren in [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Zie ook**
 
@@ -185,12 +185,12 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
 1. Maak een PDF Assembler-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Verwijs naar een PDF-document waaraan bladwijzers worden toegevoegd.
 
@@ -209,18 +209,18 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
 
       * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het PDF-bronelement dat is opgegeven in het DDX-document.
       * A `com.adobe.idp.Document` -object dat het invoerdocument PDF bevat.
+
    * Voeg het bladwijzerdocument van XML toe door aan te halen `java.util.Map` object `put` en het doorgeven van de volgende argumenten:
 
       * Een tekenreekswaarde die de sleutelnaam vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het bronelement Bladwijzers dat is opgegeven in het DDX-document.
       * A `com.adobe.idp.Document` object dat het XML-bladwijzerdocument bevat.
-
 
 1. Stel runtime-opties in.
 
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
    * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt het `AssemblerOptionSpec` object `setFailOnError` methode en doorgeven `false`.
 
-1. Zet het PDF-document samen.
+1. Samenstellen van het PDF-document.
 
    De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende vereiste waarden door:
 
@@ -235,7 +235,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
    * De `AssemblerResult` object `getDocuments` methode. Dit retourneert een `java.util.Map` object.
-   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object. (U kunt het PDF-resultaatelement dat in het DDX-document is opgegeven, gebruiken om het document op te halen.)
+   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object. (U kunt het PDF-resultaatelement gebruiken dat in het DDX-document is opgegeven.)
    * De `com.adobe.idp.Document` object `copyToFile` methode om het PDF-document te extraheren.
 
 **Zie ook**
@@ -261,7 +261,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (webs
 1. Maak een PDF Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -308,7 +308,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (webs
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
    * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs toe `false` aan de `AssemblerOptionSpec` object `failOnError` lid.
 
-1. Zet het PDF-document samen.
+1. Samenstellen van het PDF-document.
 
    De `AssemblerServiceClient` object `invokeDDX` en geeft de volgende waarden door:
 
@@ -322,7 +322,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (webs
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de PDF-documenten van het resultaat bevat.
+   * Toegang krijgen tot de `AssemblerResult` object `documents` veld, dat een `Map` -object dat de PDF-documenten van het resultaat bevat.
    * Doorlopen `Map` -object totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet dat serielid `value` een `BLOB`.
    * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` veld. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 

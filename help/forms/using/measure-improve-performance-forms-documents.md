@@ -2,7 +2,7 @@
 title: De doeltreffendheid en de conversie van formulieren meten en verbeteren
 seo-title: Measure and improve effectiveness and conversion of forms
 description: AEM Forms is geïntegreerd met Adobe Target- en Adobe Analytics-oplossingen waarmee u de prestaties en conversiesnelheid van uw formulieren kunt meten en verbeteren.
-seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that allows you to measure and improve the performance and conversion rate of your forms.
+seo-description: AEM Forms integrates with Adobe Target and Adobe Analytics solutions that lets you measure and improve the performance and conversion rate of your forms.
 uuid: fd2f087c-39f5-457d-8b44-c3ec4400b3fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1278'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Organisaties geven hun klanten steeds meer de mogelijkheid om via digitale zelfdiensten op meerdere kanalen te communiceren. Als er echter geen één-op-één terugkoppelingsmechanisme is, wordt het lastig om succes te meten en te experimenteren met digitale formulieren om de gebruikerservaring te verbeteren en conversies te vergroten.
 
-Om ROI te maximaliseren, moeten de organisaties controleren hoe hun klanten met de diensten interactie aangaan, en met hun digitale artefacten (vormen) experimenteren om klantenervaringen te verbeteren. Organisaties hebben antwoorden nodig op vragen als:
+Om ROI te maximaliseren, moeten de organisaties controleren hoe hun klanten met de diensten interactie aangaan, en met hun digitale artefacten (vormen) experimenteren om klantenervaringen te verbeteren. Om succes te meten en een strategie voor verbetering te bepalen, hebben de organisaties antwoorden op vragen zoals nodig:
 
 * Hoeveel klanten hebben geprobeerd toegang te krijgen tot of te communiceren met mijn formulieren?
 * Hoeveel van hen hebben de transactie met succes voltooid?
@@ -50,7 +50,7 @@ We gaan verder met de details over hoe u de prestaties kunt meten en de conversi
 * Integratie met Adobe Analytics voor het verzamelen, organiseren en rapporteren van klantinteracties met uw aangepaste formulieren
 * Integratie met Adobe Target om A/B-tests uit te voeren voor adaptieve formulieren
 
-### Aannames {#assumptions}
+### Veronderstellingen {#assumptions}
 
 * U hebt al een Adobe Marketing Cloud-account en bent geregistreerd voor Analytics en Target-oplossingen.
 * U hebt een gepubliceerd adaptief formulier waartoe klanten toegang hebben.
@@ -69,17 +69,17 @@ Om diepgaande inzichten in uw klanteninteractie met uw vormen te verkrijgen, moe
 1. Configuratieservice voor AEM Forms Analytics configureren in AEM
 1. Analyses inschakelen op het formulier in AEM
 
-Voor gedetailleerde stappen raadpleegt u [Analyses en rapporten voor adaptieve formulieren configureren](../../forms/using/configure-analytics-forms-documents.md).
+Zie voor meer informatie [Analyses en rapporten voor adaptieve formulieren configureren](../../forms/using/configure-analytics-forms-documents.md).
 
 **Doel configureren**
 
 Als u A/B-tests voor uw adaptieve formulieren wilt maken en uitvoeren, configureert u Target in AEM Forms zoals beschreven in [Doel instellen en integreren in AEM Forms](../../forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
-#### Stap 2: Analyserapport weergeven {#step-view-analytics-report-br}
+#### Stap 2: analyserapport weergeven {#step-view-analytics-report-br}
 
 Aangezien uw klanten tot en met vormen toegang hebben waarop u Analytics hebt toegelaten, worden hun interactie gevangen in hoogst beveiligde gegevensbestanden van Analytics. De databases worden gesegmenteerd door clients en zijn toegankelijk via beveiligde verbindingen.
 
-U kunt een rapport vanuit AEM weergeven voor formulieren die analyses ondersteunen en gegevens analyseren. Het rapport weergeven:
+U kunt een rapport vanuit AEM weergeven voor formulieren die analyses ondersteunen en gegevens analyseren. U kunt als volgt het rapport weergeven:
 
 1. Navigeer op AEM server naar **Forms > Forms &amp; Documents**.
 1. Selecteer het formulier waarvoor u het analyserapport wilt gebruiken.
@@ -92,22 +92,22 @@ Laten we eens kijken naar de gegevenspunten die Analytics verzamelt en rapportee
 In het analyserapport voor adaptieve formulieren worden de volgende prestatiekernindicatoren (KPI&#39;s) op formulierniveau vastgelegd:
 
 * **Gemiddelde vultijd**: Gemiddelde tijd die is besteed aan het invullen van het formulier
-* **Impressies**: Aantal keren dat het formulier in de zoekresultaten is weergegeven
+* **Impressies**: Het aantal keren dat het formulier in de zoekresultaten is weergegeven
 
 * **Uitvoeringen**: Aantal keer dat het formulier is gegenereerd of geopend
 * **Concepten**: Aantal keer dat het formulier is opgeslagen als concept
 
 * **Indieningen**: Aantal keer dat het formulier is ingediend
-* **Afbreken**: Aantal resterende gebruikers zonder formulier in te vullen
-* **Bezoeken/verzenden**: Verhouding van de bezoeken per indiening
+* **Afbreken**: Aantal malen dat gebruikers het formulier hebben ingevuld
+* **Bezoeken/verzenden** Betreft: Verhouding van de bezoeken per indiening
 
 Bovendien krijgt u de volgende details over elk paneel in de vorm:
 
-* **Tijd**: Gemiddelde tijd (seconden) die aan het paneel en zijn gebieden wordt doorgebracht
+* **Tijd**: Gemiddelde tijd (seconden) die wordt doorgebracht aan het deelvenster en de bijbehorende velden
 
-* **Fout**: Aantal fouten aangetroffen in het deelvenster en de bijbehorende velden per 1000 formulieruitvoeringen
+* **Fout**: Het aantal fouten in het deelvenster en de bijbehorende velden per 1000 formulieruitvoeringen
 
-* **Help**: Aantal keren dat gebruikers de Help in de context voor het deelvenster en de bijbehorende velden hebben geopend per 1000 formulieruitvoeringen
+* **Help**: Het aantal keren dat gebruikers de Help in de context voor het deelvenster en de bijbehorende velden hebben geopend per 1000 formulieruitvoeringen
 
 ![Een analyserapport voor een adaptief formulier](assets/summary-report.png)
 
@@ -123,11 +123,11 @@ In deze stap analyseert u de gegevenspunten in het analyserapport en geeft u aan
 
 * Als de gemiddelde vultijd voor het formulier hoger is dan u verwacht, is het mogelijk dat uw formulier complex is voor klanten om te begrijpen, het formulier geen standaardterminologie gebruikt, het formulier te lang is, enzovoort. In dit geval kunt u de formulierstructuur en velden vereenvoudigen, het formulierontwerp opnieuw bewerken, de lengte van het formulier verkorten of Help-beschrijvingen en voorbeelden toevoegen voor niet-standaardformuliervelden.
 * Als uit de gegevens blijkt dat de meeste klanten de Help voor een formuliervenster openen, is het duidelijk dat klanten zich afvragen welke informatie moet worden ingevuld. U kunt alternatieve terminologie gebruiken of wat voorbeeldinput en hulpbeschrijving voor dat paneel toevoegen.
-* Als het afbreken of verlaten van de plaats voor een vorm hoger is dan verwacht, zou het wegens het formulier kunnen zijn die lange tijd te geven duurt, landen de klanten onbedoeld op het formulier, of het is te ingewikkeld. In dit geval wilt u wellicht de formulierbeschrijving in de zoekresultaten optimaliseren, het formulier vereenvoudigen, het formulier optimaliseren zodat het sneller kan worden geladen, enzovoort.
+* Als het afbreken of verlaten van de plaats voor een vorm hoger is dan verwacht, zou het wegens het formulier kunnen zijn die lange tijd te geven duurt, landen de klanten onbedoeld op het formulier, of het is te ingewikkeld. In dit geval kunt u de formulierbeschrijving die wordt weergegeven in de zoekresultaten optimaliseren, het formulier vereenvoudigen, het formulier optimaliseren zodat het sneller kan worden geladen, enzovoort.
 
 Als u deze gegevenspunten hebt geanalyseerd en tot een hypothese bent gekomen, brengt u de vereiste wijzigingen aan in het formulier.
 
-#### Stap 4: Analyse en correcties valideren {#step-validate-your-analysis-and-fixes}
+#### Stap 4: uw analyse en correcties valideren {#step-validate-your-analysis-and-fixes}
 
 In deze stap valideert u de wijzigingen die u in het formulier hebt aangebracht en controleert u of deze van invloed zijn op de conversiesnelheid.
 

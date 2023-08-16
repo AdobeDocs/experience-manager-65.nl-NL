@@ -12,9 +12,9 @@ discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '727'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats 
 Dit kan worden gevormd om oude versies te zuiveren wanneer de nieuwe versies worden gecreeerd.
 
 * de [Purperen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) tool Dit wordt gebruikt als onderdeel van het bewaken en onderhouden van uw opslagplaats.
-Het staat u toe om oude versies van een knoop, of een hiërarchie van knopen, volgens deze parameters in te grijpen:
+Het laat u tussenbeide komen om oude versies van een knoop, of een hiërarchie van knopen, volgens deze parameters te verwijderen:
 
    * Het maximumaantal versies dat in de gegevensopslagruimte moet worden bewaard.
 Wanneer dit aantal wordt overschreden, wordt de oudste versie verwijderd.
@@ -69,9 +69,9 @@ Er wordt alleen een versie gemaakt als de activering plaatsvindt op een pad dat 
 
 * `versionmanager.purgingEnabled` (Boolean, standaard: false) Hiermee wordt gedefinieerd of leegmaken wordt ingeschakeld wanneer nieuwe versies worden gemaakt.
 
-* `versionmanager.purgePaths` (String[], standaard: {&quot;/content&quot;}) Hiermee geeft u op op welke paden naar purge versies worden verplaatst wanneer nieuwe versies worden gemaakt.
+* `versionmanager.purgePaths` (String[], standaard: {&quot;/content&quot;}) Hiermee geeft u op op welke paden naar purge versies moeten worden gebruikt wanneer nieuwe versies worden gemaakt.
 
-* `versionmanager.maxAgeDays` (int, standaard: 30) Bij het opschonen van de versie worden alle versies ouder dan de geconfigureerde waarde verwijderd. Als de waarde kleiner is dan 1, wordt het leegmaken niet uitgevoerd op basis van de leeftijd van de versie.
+* `versionmanager.maxAgeDays` (int, gebrek: 30) Bij versie zuivering, zal om het even welke versie ouder dan de gevormde waarde worden verwijderd. Als de waarde kleiner is dan 1, wordt het leegmaken niet uitgevoerd op basis van de leeftijd van de versie.
 
 * `versionmanager.maxNumberVersions` (int, standaard 5) Bij het opschonen van versies wordt elke versie die ouder is dan de n-de nieuwste versie verwijderd. Als de waarde kleiner is dan 1, wordt het leegmaken niet uitgevoerd op basis van het aantal versies.
 
@@ -79,7 +79,7 @@ Er wordt alleen een versie gemaakt als de activering plaatsvindt op een pad dat 
 
 >[!NOTE]
 >
->Het wordt niet aanbevolen een groot aantal versies in de opslagplaats te bewaren. Bij het configureren van de verwijderbewerking van de versie dient u dus niet te veel versies uit te sluiten van de opschoning, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Als u een groot aantal versies bewaart vanwege zakelijke vereisten, neemt u contact op met de ondersteuning van Adobe om te zoeken naar andere manieren om de grootte van de opslagplaats te optimaliseren.
+>Het wordt niet aanbevolen een groot aantal versies in de opslagplaats te bewaren. Bij het configureren van de verwijderbewerking van de versie dient u dus niet te veel versies uit te sluiten van de opschoning, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Als u een groot aantal versies bewaart vanwege zakelijke vereisten, neemt u contact op met de ondersteuning van de Adobe om te zoeken naar andere manieren om de grootte van de opslagplaats te optimaliseren.
 
 ### Bewaaropties combineren {#combining-retention-options}
 

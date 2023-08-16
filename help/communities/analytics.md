@@ -12,9 +12,9 @@ discoiquuid: e6fdaf56-402f-418d-96d8-e46bd3ad1e8c
 docset: aem65
 role: Admin
 exl-id: 7d54928b-6512-4da9-a209-eb4488bf2b64
-source-git-commit: 9f9f80eb4cb74b687c7fadd41d0f8ea4ee967865
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2680'
+source-wordcount: '2679'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ In deze sectie van de documentatie wordt beschreven hoe u een serie Analytics-ra
 
 1. [De cryptotoets dupliceren](#replicate-the-crypto-key) om ervoor te zorgen dat codering/decodering op de juiste wijze plaatsvindt op alle AEM
 1. Een Adobe Analytics voorbereiden [rapportsuite](#adobe-analytics-report-suite-for-video-reporting)
-1. Een AEM analyse maken [cloudservice](#aem-analytics-cloud-service-configuration) en [kader](#aem-analytics-framework-configuration)
+1. Een AEM-analyse maken [cloudservice](#aem-analytics-cloud-service-configuration) en [kader](#aem-analytics-framework-configuration)
 
 1. [Analyse inschakelen](#enable-analytics-for-a-community-site) voor een community-site
 1. [**Verifiëren**](#verify-analytics-to-aem-variable-mapping) Analyse naar AEM variabele toewijzing
@@ -68,29 +68,29 @@ Als u Analytics voor Community-functies wilt configureren, moet u samenwerken me
 
 * **Bedrijfsnaam**
 
-   Het bedrijf dat is gekoppeld aan de Adobe Analytics-account.
+  Het bedrijf dat is gekoppeld aan de Adobe Analytics-account.
 
 * **Gebruikersnaam**
 
-   De login gebruikersnaam voor de gebruiker die wordt gemachtigd om de rekening van Analytics te beheren (zou de voorrechten van de Toegang van de Dienst van het Web moeten omvatten).
+  De login gebruikersnaam voor de gebruiker die wordt gemachtigd om de rekening van Analytics te beheren (zou de voorrechten van de Toegang van de Dienst van het Web moeten omvatten).
 
 * **Wachtwoord**
 
-   Het aanmeldingswachtwoord voor de geautoriseerde gebruiker.
+  Het aanmeldingswachtwoord voor de geautoriseerde gebruiker.
 
 * **Analysecentrum**
 
-   De URL van het datacenter Analytics voor de account.
+  De URL van het datacenter Analytics voor de account.
 
 * **Rapportsuite**
 
-   De naam van de te gebruiken analytische rapportsuite.
+  De naam van de te gebruiken analytische rapportsuite.
 
 ## Adobe Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
-De Adobe Marketing Cloud gebruiken [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)kunnen analytische rapportreeksen zodanig worden geconfigureerd dat een communitysite rapporten kan leveren voor de functies van Gemeenschappen.
+De Adobe Marketing Cloud&#39;s gebruiken [Report Suite Manager](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)kunnen analytische rapportreeksen zodanig worden geconfigureerd dat een communitysite rapporten kan leveren voor de functies van Gemeenschappen.
 
-Door u aan te melden bij [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) with [Bedrijfsnaam en gebruikersnaam](/help/communities/analytics.md#prerequisites), is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
+Door u aan te melden [Adobe Experience Cloud](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/home.html) with [Bedrijfsnaam en gebruikersnaam](/help/communities/analytics.md#prerequisites), is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
 
 * [11 Conversievariabelen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (eVars)
 
@@ -98,15 +98,15 @@ Door u aan te melden bij [Adobe Experience Cloud](https://experienceleague.adobe
 
    * Kan bestaande eVars opnieuw gebruiken (naam wijzigen) of nieuwe sites maken voor gebruik door communautaire functies
 
-* [7 succesgebeurtenissen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) (gebeurtenissen)
+* [7 Succesgebeurtenissen](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/success-events/success-event.html) (gebeurtenissen)
 
    * **`event1`** doorheen **`event7`** enabled
 
    * type **`Counter`**
 
       * niet **`Counter (no subrelations)`**
-   * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
+   * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
 * [Videobeheer](https://experienceleague.adobe.com/docs/media-analytics/using/media-overview.html)
 
@@ -114,11 +114,11 @@ Door u aan te melden bij [Adobe Experience Cloud](https://experienceleague.adobe
 
       * Inschakelen `Video Core`
       * Selecteer Opslaan
+
    * Video Core-meetconsole
 
       * Selecteer `Use Solution Variables`
       * Selecteer Opslaan
-
 
 Als u een **nieuwe rapportsuite** Houd er rekening mee dat een nieuwe rapportsuite slechts 4 gebeurtenissen en 6 gebeurtenisvariabelen kan bevatten, terwijl voor Gemeenschappen 11 gebeurtenissen en 7 gebeurtenisvars vereist zijn.
 
@@ -142,7 +142,7 @@ Neem contact op met uw accountvertegenwoordiger voor eventuele problemen met bet
 
 ### Video-hartslaganalyse {#video-heartbeat-analytics}
 
-Als er een licentie is voor Video Heartbone Analytics, wordt een `Marketing Cloud Org Id` is toegewezen.
+Als er een licentie is voor Video Heartbone Analytics, kunt u een `Marketing Cloud Org Id` is toegewezen.
 
 Video-hartslagrapportage inschakelen na [het vormen van de het rapportreeks van Analytics voor videorapportering](#adobe-analytics-report-suite-for-video-reporting):
 
@@ -178,17 +178,17 @@ In het dialoogvenster Configuratie maken identificeren de waarden die moeten wor
 
 * **Titel**
 
-   (Vereist) Een weergavetitel voor de configuratie.
+  (Vereist) Een weergavetitel voor de configuratie.
 Voer bijvoorbeeld *Community Analytics*
 
 * **Naam**
 
-   (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
+  (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
 Voer bijvoorbeeld *gemeenschappen*
 
 * **Sjabloon**
 
-   Selecteer `Adobe Analytics Configuration`
+  Selecteer `Adobe Analytics Configuration`
 
 * Selecteer **Maken**
 
@@ -202,35 +202,35 @@ Het eerste ontwerp van een nieuwe analytische configuratie resulteert in de weer
 
 * **Bedrijf**
 
-   Het bedrijf dat is gekoppeld aan de Adobe Analytics-account.
+  Het bedrijf dat is gekoppeld aan de Adobe Analytics-account.
 
 * **Gebruikersnaam**
 
-   De aanmeldingsgebruikersnaam voor de gebruiker die is geautoriseerd voor het beheer van de account Analytics.
+  De aanmeldingsgebruikersnaam voor de gebruiker die is geautoriseerd voor het beheer van de account Analytics.
 
 * **Wachtwoord**
 
-   Het aanmeldingswachtwoord voor de geautoriseerde gebruiker.
+  Het aanmeldingswachtwoord voor de geautoriseerde gebruiker.
 
 * **Datacenter**
 
-   Selecteer het datacenter Analytics dat als host fungeert voor de rapportsuite.
+  Selecteer het datacenter Analytics dat als host fungeert voor de rapportsuite.
 
 * **Trackingtag niet toevoegen aan pagina**
 
-   Standaard laten (uitgeschakeld).
+  Standaard laten (uitgeschakeld).
 
 * **AppMeasurement gebruiken**
 
-   Standaard laten (uitgeschakeld).
+  Standaard laten (uitgeschakeld).
 
 * **Pagina-afbeeldingen niet elke avond importeren (auteur)**
 
-   Standaard laten (uitgeschakeld).
+  Standaard laten (uitgeschakeld).
 
 * **Paginaafbeeldingen niet elke avond importeren (publiceren)**
 
-   Standaard laten (uitgeschakeld).
+  Standaard laten (uitgeschakeld).
 
 De instellingen opslaan:
 
@@ -243,7 +243,7 @@ De instellingen opslaan:
 
 * Selecteren **OK**.
 
-   ![analytische instellingen](assets/analytics-settings1.png)
+  ![analytische instellingen](assets/analytics-settings1.png)
 
 ### Framework maken {#create-framework}
 
@@ -251,20 +251,20 @@ Nadat de basisverbinding met Adobe Analytics met succes is geconfigureerd, moet 
 
 * Selecteren `[+]` pictogram naast **[!UICONTROL  Available Frameworks]** om een nieuw kader te creëren
 
-   ![analytisch kader](assets/analytics-framework.png)
+  ![analytisch kader](assets/analytics-framework.png)
 
 * **Titel**
 
-   (Vereist) Typ bijvoorbeeld een titel voor de weergave van het framework. *Communautair kader*.
+  (Vereist) Typ bijvoorbeeld een titel voor de weergave van het framework. *Communautair kader*.
 
 * **Naam**
 
-   (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
+  (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
 Voer bijvoorbeeld *gemeenschappen*.
 
 * *Sjabloon*
 
-   Selecteer `Adobe Analytics Framework`.
+  Selecteer `Adobe Analytics Framework`.
 
 * Selecteer **Maken**.
 
@@ -283,7 +283,7 @@ Selecteer de rapportsuite die is ingesteld voor videoverslag.
 Zie de vorige sectie als er nog geen rapportsuite is gemaakt of niet juist is ingesteld:
 [Adobe Analytics Report Suite for Video Reporting](#adobe-analytics-report-suite-for-video-reporting)
 
-De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot de montages van de Suites van het Rapport niet belemmert.
+De Sidekick is niet nodig en kan worden geminimaliseerd zodat het de toegang tot de montages van de Suites van het Rapport niet belemmert.
 
 #### Dialoogvenster Suitten rapporteren vóór en na het selecteren van Item toevoegen {#report-suites-dialog-before-and-after-selecting-add-item}
 
@@ -319,10 +319,10 @@ De analytische cloudservice en het framework zijn nu voltooid. De toewijzingen w
 De cloudservice Analytics toevoegen terwijl [het creëren van een nieuwe communautaire plaats](/help/communities/sites-console.md):
 
 * In stap 3, onder de [TABBLAD ANALYTICA](/help/communities/sites-console.md#analytics):
-   * Selecteer **Analyse inschakelen** selectievakje.
+   * Selecteer de **Analyse inschakelen** selectievakje.
    * Selecteer het framework in de keuzelijst.
 
-* U kunt desgewenst terugkeren naar de configuratie van het analyseframework om de variabele toewijzingen aan te passen.
+* U kunt desgewenst terugkeren naar de configuratie van het analyseframework om de variabeletoewijzingen aan te passen.
 
 ### Inschakelen voor bestaande communautaire site {#enable-for-existing-community-site}
 
@@ -330,12 +330,12 @@ De cloudservice Analytics toevoegen aan een [bestaande community-site](/help/com
 
 * Ga naar de **Gemeenschappen > Sites** console.
 * Selecteer het pictogram Site bewerken van de communitysite.
-* Selecteer de INSTELLINGEN.
+* Selecteer de instellingen.
 * In de sectie Analytics:
-   * Selecteer **Analyse inschakelen** selectievakje.
+   * Selecteer de **Analyse inschakelen** selectievakje.
    * Kies het framework in de keuzelijst.
 
-* U kunt desgewenst terugkeren naar de configuratie van het analyseframework om de variabele toewijzingen aan te passen.
+* U kunt desgewenst terugkeren naar de configuratie van het analyseframework om de variabeletoewijzingen aan te passen.
 
 ### Inschakelen voor aangepaste sites {#enable-for-customized-sites}
 
@@ -390,7 +390,7 @@ Als het gebruiken van een bestaande rapportreeks die om het even welke variabele
 
 Hier volgt een voorbeeld van standaardtoewijzingen:
 
-![map-analytics](assets/map-analytics1.png)
+![kaartanalyse](assets/map-analytics1.png)
 
 #### Kaart met eVars die met elke gebeurtenis worden verzonden {#map-of-evars-sent-with-each-event}
 
@@ -398,7 +398,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
  <tbody>
   <tr>
    <td><strong> </strong></td>
-   <td><strong>Enablement<br /> Resource<br /> Type</strong></td>
+   <td><strong>Enablement<br /> Bron<br /> Type</strong></td>
    <td><strong>Site<br /> Titel</strong></td>
    <td><strong>Functie<br /> Type</strong></td>
    <td><strong>Groep<br /> Titel</strong></td>
@@ -446,7 +446,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
    <td><em>g)</em></td>
    <td><em>h)</em></td>
    <td><em>i)</em></td>
-   <td><em>j)</em></td>
+   <td><em>(j)</em></td>
   </tr>
   <tr>
    <td><strong>event3<br /> SCFCreate (Post)</strong></td>
@@ -459,7 +459,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
    <td><em>g)</em></td>
    <td><em>h)</em></td>
    <td><em>i)</em></td>
-   <td><em>j)</em></td>
+   <td><em>(j)</em></td>
   </tr>
   <tr>
    <td><strong>event4<br /> SCFFollow</strong></td>
@@ -472,7 +472,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
    <td><em>g)</em></td>
    <td><em>h)</em></td>
    <td><em>i)</em></td>
-   <td><em>j)</em></td>
+   <td><em>(j)</em></td>
   </tr>
   <tr>
    <td><strong>event5<br /> SCFVoteUp</strong></td>
@@ -485,7 +485,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
    <td><em>g)</em></td>
    <td><em>h)</em></td>
    <td><em>i)</em></td>
-   <td><em>j)</em></td>
+   <td><em>(j)</em></td>
   </tr>
   <tr>
    <td><strong>event6<br /> SCFVoteDown</strong></td>
@@ -498,7 +498,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
    <td><em>g)</em></td>
    <td><em>h)</em></td>
    <td><em>i)</em></td>
-   <td><em>j)</em></td>
+   <td><em>(j)</em></td>
   </tr>
   <tr>
    <td><strong>event7<br /> SCFRate</strong></td>
@@ -511,7 +511,7 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
    <td><em>g)</em></td>
    <td><em>h)</em></td>
    <td><em>i)</em></td>
-   <td><em>j)</em></td>
+   <td><em>(j)</em></td>
   </tr>
  </tbody>
 </table>
@@ -519,16 +519,15 @@ Hier volgt een voorbeeld van standaardtoewijzingen:
 **Voorbeelden van waarden voor eVar:**
 
 * *[MIME-type](https://www.iana.org/assignments/media-types)*: video/mp4
-* *[community site title](/help/communities/sites-console.md#step13asitetemplate)*: Geometrixx
+* *[community site title](/help/communities/sites-console.md#step13asitetemplate)* Geometrixx
 * *[communautaire functienaam](/help/communities/functions.md)*: Forum
 * *[groepsnaam van de gemeenschap](/help/communities/creating-groups.md#creating-a-new-group)*: Hiking
 * *pad naar inhoud van groep met gemeenschappen*: `/content/sites/<site name>/en/groups/hiking`
 * *[Resourcetype van UGC-component](/help/communities/essentials.md)*: `social/forum/components/hbs/topic`
-* *Titel van UGC-component*: Wikingonderwerpen
+* *Titel van UGC-component*: wandelende onderwerpen
 * *login (authorizableId)*: `aaron.mcdonald@mailinator.com`
 * *SRP-pad naar UGC*: `/content/usergenerated/asi/.../forum/jmtz-topic3`
-of 
-*pad van te volgen component*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
+of *pad van te volgen component*: `/content/sites/<site name>/en/jcr:content/content/primary/forum`
 
 * *pad naar community-site-inhoud*: `/content/sites/<site name>/en`
 
@@ -546,11 +545,11 @@ Als Communities Vars en events toewijzingen overschrijven die al in de rapportsu
 >
 >Het is belangrijk om opnieuw toe te wijzen voordat de site van de community [gepubliceerd](#publishing-the-community-site) Als Analytics is ingeschakeld, is er anders een risico op gegevensverlies.
 
-#### Voorbeeld, stap 1: Analytics evar14 naar toewijzingstabel slepen {#example-step-dragging-analytics-evar-into-mapping-table}
+#### Voorbeeldstap 1: Analytics evar14 naar toewijzingstabel slepen {#example-step-dragging-analytics-evar-into-mapping-table}
 
 ![analytische-mapping-evar](assets/analytics-mapping-evar.png)
 
-#### Voorbeeld stap 2: Vervangen evar11 verwijderen door &#39;x&#39; te selecteren {#example-step-selecting-x-to-remove-replaced-evar}
+#### Voorbeeld van stap 2: het selecteren van &#39;x&#39; om vervangen evar11 te verwijderen {#example-step-selecting-x-to-remove-replaced-evar}
 
 ![analytics-mapping-evar1](assets/analytics-mapping-evar1.png)
 
@@ -601,7 +600,7 @@ De Adobe Analytics-referenties worden versleuteld. Om het repliceren of verzende
 
 Volg hiervoor de instructies op [De cryptosleutel dupliceren](/help/communities/deploy-communities.md#replicate-the-crypto-key).
 
-### Community Site en Analytics Cloud Service publiceren {#publish-community-site-and-analytics-cloud-service}
+### Communitysite en Analytics Cloud-service publiceren {#publish-community-site-and-analytics-cloud-service}
 
 Zodra de Analytics-cloudservice is ingeschakeld voor een communitysite en, indien nodig, de [de toewijzing van analyses aan AEM variabelen is aangepast](#mapped-analytics-to-aem-variables), moet de configuratie worden gerepliceerd naar de publicatieomgeving door [(re)publiceren van de communitysite](/help/communities/sites-console.md#publishing-the-site).
 

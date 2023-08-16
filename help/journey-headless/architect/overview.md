@@ -2,7 +2,7 @@
 title: Reis van architect zonder hoofdinhoud AEM
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 exl-id: 44c58ece-225e-4361-929c-faa110fe2842
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 1%
@@ -22,16 +22,16 @@ Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals geb
 Deze gids leidt u door de belangrijkste onderwerpen zodat na voltooiing u:
 
 * Begrijp wat de inhoud zonder kop levert en zijn voordelen.
-* Begrijp hoe u uw inhoud modelleert voor AEM functies zonder kop.
+* Begrijp hoe u uw inhoud kunt modelleren voor AEM functies zonder kop.
 * Heb de capaciteit om de eerste stappen te nemen die uw inhoud voor uw eerste AEM zonder hoofd modelleren project.
 
 ## AEM Documentenreizen {#documentation-journeys}
 
 [Een documentatiereis](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert hoe te om hoofdloze zaken met AEM op te lossen, [Reizen zonder kop AEM](/help/journey-headless/home.md) zijn waar te beginnen.
+Als u wilt weten hoe de Adobe adviseert om zaken zonder kop met AEM op te lossen, [AEM zonder kop reizen](/help/journey-headless/home.md) zijn waar te beginnen.
 
 ## Publiek {#audience}
 
@@ -45,7 +45,7 @@ Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar so
 
 U zult vele onderwerpen in deze reis onderzoeken. In de volgende artikelen wordt u op basis van uw kennis van de kop in AEM en een link naar gedetailleerde technische documentatie weergegeven.
 
-Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u in AEM nieuw bent om zonder kop te beginnen, dat u aan het begin begint en opeenvolgend vordert.
+Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom als u in AEM nieuw bent zonder kop, adviseert de Adobe dat u bij het begin begint en opeenvolgend vordert.
 
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
@@ -56,7 +56,7 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan op uw Adobe Headless reis. We raden u aan door te gaan naar het volgende deel van de reis en het artikel te lezen [Content Modeling for Headless with AEM - Een introductie](introduction.md).
+U bent nu klaar om aan de slag te gaan met uw Adobe Headless reis. We raden u aan door te gaan naar het volgende deel van de reis en het artikel te lezen [Content Modeling for Headless with AEM - Een introductie](introduction.md).
 
 ## Aanvullende bronnen {#additional-resources}
 
@@ -64,7 +64,7 @@ Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal 
 
 Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan kan echter met elkaar verwant zijn. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
-* [AEM doorlopende vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
+* [AEM doorsnedenloze vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
 * [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 * [AEM technische documentatie](https://experienceleague.adobe.com/docs/experience-manager-65.html) - Als u al een duidelijk inzicht hebt in AEM en technologieën zonder kop, kunt u onze diepgaande technische documenten direct raadplegen.

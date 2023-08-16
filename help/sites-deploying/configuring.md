@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2111'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Adobe Experience Manager (AEM) wordt geïnstalleerd met standaardinstellingen vo
 Er zijn vele aspecten van AEM die kunnen worden gevormd:
 
 * Sommige zijn [algemeen gevormd voor elke projectinstallatie](#primary-configuration-considerations) en moet worden herzien om te bevestigen of zij op uw project van toepassing zijn.
-* [Andere configuraties](#further-configuration-considerations) kunnen algemeen zijn, maar niet noodzakelijk; gerelateerd aan functies, of systeemprestaties en stabiliteit.
+* [Andere configuraties](#further-configuration-considerations) kan vaak voorkomen, maar niet noodzakelijk; gerelateerd aan functies, of systeemprestaties en stabiliteit.
 * Andere functies zijn alleen vereist voor bepaalde optionele functies van AEM (deze worden samen met de desbetreffende functie beschreven).
 
 Afhankelijk van de specifieke configuratie, kunnen deze veranderingen worden aangebracht door of te gebruiken:
@@ -30,7 +30,7 @@ Afhankelijk van de specifieke configuratie, kunnen deze veranderingen worden aan
 
   Dit is een standaardplaats voor het vormen van bundels OSGi en de diensten.
 
-  Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en aanbevolen praktijken.
+  Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en aanbevolen werkwijzen.
 
 * **Bewaarplaats**
 
@@ -56,7 +56,7 @@ Afhankelijk van de specifieke configuratie, kunnen deze veranderingen worden aan
 >
 >Het configureren van AEM is eenvoudig. Houd er echter rekening mee dat bepaalde wijzigingen grote gevolgen kunnen hebben voor de toepassingen. Om deze reden, verzeker u de noodzakelijke ervaring en de kennis alvorens u begint AEM te vormen, en slechts de veranderingen aan te brengen die u weet worden vereist. Alle wijzigingen die via de OSGi-console zijn aangebracht, zijn **onmiddellijk** toegepast op het actieve systeem (opnieuw opstarten is niet vereist).
 
-## Belangrijkste overwegingen voor configuratie {#primary-configuration-considerations}
+## Primaire overwegingen met betrekking tot configuratie {#primary-configuration-considerations}
 
 Deze lijst detailleert de primaire gebieden die algemeen voor elk nieuw project worden gevormd. Niet alles is nodig, maar de lijst moet gelezen en herzien worden om te zien wat op uw project van toepassing is.
 
@@ -66,7 +66,7 @@ De lijst geeft een kort overzicht van elk configuratieaspect, samen met verbindi
 
 Verschillende belangrijke configuratieproblemen worden vermeld in het dialoogvenster [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md). Zorg ervoor dat u dit leest en neem de benodigde actie voor de installatie.
 
-### De standaardinterface configureren - geoptimaliseerd voor aanraking of Klassiek {#configuring-the-default-ui-touch-optimized-or-classic}
+### De standaardinterface configureren - geoptimaliseerd voor aanraakgebruik of Klassiek {#configuring-the-default-ui-touch-optimized-or-classic}
 
 Er zijn twee UIs beschikbaar voor gebruik in AEM:
 
@@ -116,8 +116,8 @@ Zie [Versie leegmaken](/help/sites-deploying/version-purging.md) voor volledige 
 AEM biedt u de mogelijkheid om te vormen:
 
 * globale parameters voor de centrale houtkapdienst
-* verzoeken om registratie van gegevens; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
-* specifieke instellingen voor de afzonderlijke diensten; bijvoorbeeld een afzonderlijk logbestand en een indeling voor de logberichten
+* verzoek gegevensregistreren; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
+* specifieke instellingen voor de afzonderlijke services, bijvoorbeeld een afzonderlijk logbestand en een indeling voor de logberichten
 
 Zie [Logboekregistratie](/help/sites-deploying/configure-logging.md) voor volledige informatie.
 
@@ -162,7 +162,7 @@ Zie voor meer informatie [Replicatie](/help/sites-deploying/replication.md).
 
 [OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van AEM. Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
 
-Zie [OSGi-configuratie-instellingen](/help/sites-deploying/osgi-configuration-settings.md) voor een lijst van de verschillende bundels die relevant zijn voor de uitvoering van het project (vermeld volgens bundel). Niet alle instellingen in de lijst hoeven te worden aangepast. Sommige instellingen worden vermeld om u te helpen begrijpen hoe AEM werkt.
+Zie [OSGi-configuratie-instellingen](/help/sites-deploying/osgi-configuration-settings.md) voor een lijst van de verschillende bundels die relevant zijn voor de projectuitvoering (vermeld volgens bundel). Niet alle instellingen in de lijst hoeven te worden aangepast. Sommige instellingen worden vermeld om u te helpen begrijpen hoe AEM werkt.
 
 Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
@@ -180,9 +180,9 @@ Dispatcher is een Adobe Experience Manager-programma voor caching, taakverdeling
 
 Zie [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) voor volledige informatie, met name [De Dispatcher configureren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en) voor meer configuratiedetails.
 
-### AEM LiveCycle Connector configureren {#configuring-aem-livecycle-connector}
+### Configuratie van AEM LiveCycle-connector {#configuring-aem-livecycle-connector}
 
-Met de versie van de AEMDiensten van Doc en AEM de Veiligheid van Doc, AEM heeft nu de capaciteit om de LiveCycle documentdiensten aan te halen om een XFA vorm terug te geven, een document in PDF om te zetten en beleid te beschermen een document. Zie [AEM LiveCycle Connector](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) voor meer informatie .
+Met de versie van de AEM Doc Services en AEM Doc Security kan AEM nu de documentservices van het LiveCycle aanroepen om een XFA-formulier te genereren, een document om te zetten in PDF en een document te beschermen door beleid. Zie [AEM LiveCycle-aansluiting](https://helpx.adobe.com/livecycle/help/aem/aem-livecycle-connector.html) voor meer informatie .
 
 ### Het Verschuiven van de baan en het Beleid van de Topologie {#job-offloading-and-topology-administration}
 
@@ -259,11 +259,11 @@ Ga als volgt te werk om dergelijke uitzonderingen te voorkomen:
 
    De nieuwe waarde moet rekening houden met zowel de huidige als de toekomstige behoeften, zodat het raadzaam is de huidige behoeften te verdubbelen.
 
-   Standaard, `serverctl` vormen `CQ_MAX_OPEN_FILES` tot `8192`; dit zou voor de meeste scenario &#39; s voldoende moeten zijn .
+   Standaard, `serverctl` vormen `CQ_MAX_OPEN_FILES` tot `8192`; dit moet voor de meeste scenario&#39;s voldoende zijn.
 
 ### De Rich Text Editor configureren {#configuring-the-rich-text-editor}
 
-De **RTF-editor** (**RTE**) biedt auteurs een groot aantal [functionaliteit](/help/sites-authoring/rich-text-editor.md) voor het bewerken van hun tekstinhoud; hen voorzien van pictogrammen, selectiekaders, en menu&#39;s voor een ervaring WYSIWYG.
+De **RTF-editor** (**RTE**) biedt auteurs een groot aantal [functionaliteit](/help/sites-authoring/rich-text-editor.md) voor het bewerken van de tekstinhoud; het voorzien van pictogrammen, selectiekaders en menu&#39;s voor een WYSIWYG-ervaring.
 
 Zie [De Rich Text Editor configureren](/help/sites-administering/rich-text-editor.md) voor nadere bijzonderheden.
 
@@ -273,7 +273,7 @@ Er zijn diverse eigenschappen die het gedrag bepalen van de opdrachten Ongedaan 
 
 ### De videocomponent configureren {#configuring-the-video-component}
 
-De [Video-component](/help/sites-authoring/default-components-foundation.md#video) kunt u een vooraf gedefinieerd, out-of-the-box video-element op uw pagina plaatsen.
+De [Video-component](/help/sites-authoring/default-components-foundation.md#video) Hiermee kunt u een vooraf gedefinieerd, out-of-the-box video-element op uw pagina plaatsen.
 
 Voor juiste transcodering moet uw beheerder [Mpeg installeren](/help/sites-administering/config-video.md#install-ffmpeg) afzonderlijk. Zij kunnen ook [Uw videoprofielen configureren](/help/sites-administering/config-video.md#configure-video-profiles) voor gebruik met html5-elementen.
 
@@ -295,16 +295,16 @@ Zie [E-mailmelding configureren](/help/sites-administering/notification.md) voor
 
 ### Paginaafdrukken inschakelen {#enabling-page-impressions}
 
-Paginaafbeeldingen worden weergegeven in het dialoogvenster **Impressies** kolom van de klassieke UI-sitadmin-console. U kunt als volgt het vastleggen van pagina-afdrukken inschakelen:
+Paginaafbeeldingen worden weergegeven in het dialoogvenster **Impressies** kolom van de klassieke interfacebeheerconsole. U kunt als volgt het vastleggen van pagina-afdrukken inschakelen:
 
 * Op de publicatie-instantie:
 
    * [Dag CQ WCM Pagina Statistieken](/help/sites-deploying/osgi-configuration-settings.md)
 
-* In de instantie van de auteur:
+* In de auteurinstantie:
 
-   * [Adobe-paginamonpressiebeheer](/help/sites-deploying/osgi-configuration-settings.md)
+   * [Adobe van pagina-importbeheer](/help/sites-deploying/osgi-configuration-settings.md)
 
 >[!CAUTION]
 >
->De configuratie van de Traceur van de Afbeeldingen van de Pagina van de Adobe op het auteursmilieu staat anonieme verzoeken aan de volgende dienst toe.
+>De configuratie van de Traceur van de Indruk van de Pagina van de Adobe op het auteursmilieu staat anonieme verzoeken aan de volgende dienst toe.

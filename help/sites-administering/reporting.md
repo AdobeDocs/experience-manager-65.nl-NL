@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7e2b30a3-75ff-4735-8038-5c5391ac36f3
 docset: aem65
 exl-id: 2a0bf59d-8829-4142-9cb4-dcef90f53ae9
-source-git-commit: 429f3ee859477fb38938fd6b9706c8006623eb03
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2806'
+source-wordcount: '2804'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ De gegevensselectie wijzigen:
    * een rood niet-go symbool geeft aan wanneer de positie ongeldig is
 
 * om een kolom te verplaatsen, klikt u op de koptekst, houdt u de muisknop ingedrukt en sleept u naar de nieuwe positie
-* om een kolom te verwijderen, klik op de kolomtitel, houd en sleep omhoog in het gebied van de rapportkopbal (rood minus symbool zal erop wijzen dat de positie ongeldig is); Laat de muisknop los en in het dialoogvenster Component(s) verwijderen wordt bevestigd dat u de kolom echt wilt verwijderen.
+* Als u een kolom wilt verwijderen, klikt u op de kolomtitel, houdt u de kolom ingedrukt en sleept u de kolom naar het kopgebied van het rapport (een rood min-symbool geeft aan dat de positie ongeldig is). Laat de muisknop los en het dialoogvenster Component(s) verwijderen om te bevestigen dat u de kolom echt wilt verwijderen.
 
 ### Vervolgkeuzemenu Kolom {#column-drop-down-menu}
 
@@ -95,17 +95,17 @@ Welke opties beschikbaar zijn in het menu, is afhankelijk van de configuratie va
 De gegevens kunnen volgens een specifieke kolom worden gesorteerd door:
 
 * klikken op de juiste kolomkop; bij het sorteren wordt geschakeld tussen oplopend en aflopend, hetgeen wordt aangegeven door een pijlkop direct naast de titeltekst
-* gebruiken [vervolgkeuzemenu van kolom](#column-drop-down-menu) om specifiek te selecteren of **Sorteren op oplopend** of **Sorteren op aflopend**; nogmaals, dit wordt aangegeven met een pijlkop direct naast de titeltekst
+* gebruiken [vervolgkeuzemenu van kolom](#column-drop-down-menu) om specifiek te selecteren of **Sorteren op oplopend** of **Sorteren op aflopend** Dit wordt ook hier aangegeven met een pijlkop direct naast de titeltekst
 
 ### Groepen en het huidige gegevensdiagram {#groups-and-the-current-data-chart}
 
-In de juiste kolommen kunt u **Groeperen op deze kolom** van de [vervolgkeuzemenu van kolom](#column-drop-down-menu). Hiermee worden de gegevens gegroepeerd op basis van elke afzonderlijke waarde in die kolom. U kunt meerdere kolommen selecteren die u wilt groeperen. De optie wordt grijs weergegeven wanneer de gegevens in de kolom niet geschikt zijn. Dit betekent dat elke vermelding afzonderlijk en uniek is, zodat er geen groepen kunnen worden gevormd, bijvoorbeeld de kolom Gebruikersnaam van het gebruikersrapport.
+In de juiste kolommen kunt u **Groeperen op deze kolom** van de [vervolgkeuzemenu van kolom](#column-drop-down-menu). Hiermee worden de gegevens gegroepeerd op basis van elke afzonderlijke waarde in die kolom. U kunt meerdere kolommen selecteren die u wilt groeperen. De optie wordt grijs weergegeven wanneer de gegevens in de kolom niet geschikt zijn. Elke vermelding is dus verschillend en uniek, zodat er geen groepen kunnen worden gevormd, bijvoorbeeld de kolom Gebruikersnaam van het gebruikersrapport.
 
 Nadat minstens één kolom is gegroepeerd een cirkeldiagram van **Huidige gegevens** wordt gegenereerd op basis van deze groepering. Als er meerdere kolommen zijn gegroepeerd, wordt dit ook aangegeven in het diagram.
 
 ![verslaggever](assets/reportuser.png)
 
-Als u de cursor op het cirkeldiagram plaatst, wordt de samengevoegde waarde voor het desbetreffende segment weergegeven. Hierbij wordt het aggregaat gebruikt dat momenteel voor de kolom is gedefinieerd; bijvoorbeeld aantal , minimum , gemiddelde , enz .
+Als u de cursor op het cirkeldiagram plaatst, wordt de samengevoegde waarde voor het desbetreffende segment weergegeven. Hierbij wordt het aggregaat gebruikt dat momenteel voor de kolom is gedefinieerd, bijvoorbeeld aantal, minimum, gemiddelde.
 
 ### Filters en aggregaten {#filters-and-aggregates}
 
@@ -135,7 +135,7 @@ Het filter deactiveren:
 
 U kunt ook een aggregatiemethode selecteren (deze kan afhankelijk van de geselecteerde kolom variëren):
 
-![verslaglegging](assets/reportaggregate.png)
+![rapporteert](assets/reportaggregate.png)
 
 ### Kolomeigenschappen {#column-properties}
 
@@ -166,13 +166,13 @@ Nadat de gegevensverzameling is gestart, kunt u selecteren:
 
 * **Periode**
 
-   U kunt van en tot data voor de rapportgegevens selecteren om te tonen.
+  U kunt van en tot data voor de rapportgegevens selecteren om te tonen.
 
 * **Interval**
 
-   Maand, Week, Dag, Uur kan worden geselecteerd voor de schaal en de samenvoeging van het rapport.
+  Maand, Week, Dag, Uur kan worden geselecteerd voor de schaal en de samenvoeging van het rapport.
 
-   Als bijvoorbeeld dagelijkse momentopnamen beschikbaar zijn voor februari 2011:
+  Bijvoorbeeld, als dagmomentopnamen voor Februari 2011 beschikbaar zijn:
 
    * Als het interval is ingesteld op `Day`Elke momentopname wordt weergegeven als één waarde in het diagram.
    * Als het interval is ingesteld op `Month`Alle momentopnamen voor februari worden samengevoegd tot één waarde (weergegeven als één punt in het diagram).
@@ -185,11 +185,11 @@ Wanneer momentopnamen worden verzameld, kunt u:
 
 * Gebruiken **Voltooien...** opnieuw om de verzameling opnieuw te initialiseren.
 
-   **Voltooien** &quot;bevriest&quot; de structuur van het rapport (d.w.z. de kolommen die aan het rapport zijn toegewezen en die zijn gegroepeerd, gesorteerd, gefilterd, enz.) en maakt momentopnamen.
+  **Voltooien** &quot;bevriest&quot; de structuur van het rapport (d.w.z. de kolommen die aan het rapport zijn toegewezen en die zijn gegroepeerd, gesorteerd, gefilterd, enz.) en maakt momentopnamen.
 
 * Open de **Bewerken** dialoogvenster selecteren **Geen gegevensmomentopnamen** om de inzameling te beëindigen tot vereist.
 
-   **Bewerken** schakelt alleen het maken van momentopnamen in of uit. Als het nemen van momentopnamen opnieuw wordt aangezet, gebruikt het de staat van het rapport toen het voor het laatst voor het nemen van verdere momentopnamen werd gebeëindigd.
+  **Bewerken** schakelt alleen het maken van momentopnamen in of uit. Als het nemen van momentopnamen opnieuw wordt aangezet, gebruikt het de staat van het rapport toen het voor het laatst voor het nemen van verdere momentopnamen werd gebeëindigd.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Wanneer momentopnamen worden verzameld, kunt u:
 
 >[!NOTE]
 >
->De vooraf geconfigureerde rapporten zijn niet prestatieintensief, maar het wordt nog steeds aanbevolen dagelijkse momentopnamen te gebruiken in een productieomgeving. Voer indien mogelijk deze dagelijkse momentopnamen uit op een tijdstip waarop er niet veel activiteit op uw website staat. dit kan worden gedefinieerd met de `Daily snapshots (repconf.hourofday)` parameter for **CQ-rapportconfiguratie op dag**; zie [OSGI-configuratie](/help/sites-deploying/configuring-osgi.md) voor meer details over hoe te om dit te vormen.
+>De vooraf geconfigureerde rapporten zijn niet prestatieintensief, maar het wordt nog steeds aanbevolen dagelijkse momentopnamen te gebruiken in een productieomgeving. Voer indien mogelijk deze dagelijkse momentopnamen uit op een tijdstip waarop er niet veel activiteit op uw website staat. Dit kan worden gedefinieerd met de `Daily snapshots (repconf.hourofday)` parameter for **CQ-rapportconfiguratie op dag**; zie [OSGI-configuratie](/help/sites-deploying/configuring-osgi.md) voor meer details over hoe te om dit te vormen.
 
 #### Limieten weergeven {#display-limits}
 
@@ -231,7 +231,7 @@ De aangepaste rapporten kunnen ook tonen **Totaal** waarde voor alle reeksen. Di
 
 ### Bewerken (rapport) {#edit-report}
 
-De **Bewerken** de knop opent de knop **Rapport bewerken** Dialoogvenster.
+De **Bewerken** de knop opent **Rapport bewerken** Dialoogvenster.
 
 Dit is één locatie waar de periode voor het verzamelen van momentopnamen voor [Historische gegevens](#historic-data) is gedefinieerd, maar er kunnen ook diverse andere instellingen worden gedefinieerd:
 
@@ -239,32 +239,32 @@ Dit is één locatie waar de periode voor het verzamelen van momentopnamen voor 
 
 * **Titel**
 
-   U kunt uw eigen titel definiëren.
+  U kunt uw eigen titel definiëren.
 
 * **Beschrijving**
 
-   U kunt uw eigen beschrijving definiëren.
+  U kunt uw eigen beschrijving definiëren.
 
 * **Basispad** (*alleen actief voor bepaalde rapporten*)
 
-   Gebruik dit om het rapport te beperken tot een (sub-) sectie van de repository.
+  Gebruik dit om het rapport te beperken tot een (sub-) sectie van de repository.
 
 * **Rapportverwerking**
 
    * **gegevens automatisch vernieuwen**
 
-      De rapportgegevens zullen worden vernieuwd telkens als u de rapportdefinitie bijwerkt.
+     De rapportgegevens zullen worden vernieuwd telkens als u de rapportdefinitie bijwerkt.
 
    * **gegevens handmatig vernieuwen**
 
-      Deze optie kan worden gebruikt om vertragingen te verhinderen die door automatisch worden veroorzaakt verfrist verrichtingen wanneer er een groot volume van gegevens is.
+     Deze optie kan worden gebruikt om vertragingen te verhinderen die door automatisch worden veroorzaakt verfrist verrichtingen wanneer er een groot volume van gegevens is.
 
-      Het selecteren van dit wijst erop dat de rapportgegevens manueel moeten worden verfrist wanneer om het even welk aspect van de rapportconfiguratie is veranderd. Het betekent ook dat zodra u om het even welk aspect van de configuratie verandert de rapportlijst zal worden gewist.
+     Het selecteren van dit wijst erop dat de rapportgegevens manueel moeten worden verfrist wanneer om het even welk aspect van de rapportconfiguratie is veranderd. Het betekent ook dat zodra u om het even welk aspect van de configuratie verandert de rapportlijst zal worden gewist.
 
-      Wanneer deze optie is geselecteerd, wordt **[Gegevens laden](#load-data)** wordt weergegeven (naast **Bewerken** over het verslag). **Gegevens laden** zal de gegevens laden en de getoonde rapportgegevens vernieuwen.
+     Wanneer deze optie is geselecteerd, wordt **[Gegevens laden](#load-data)** wordt weergegeven (naast **Bewerken** over het verslag). **Gegevens laden** zal de gegevens laden en de getoonde rapportgegevens vernieuwen.
 
 * **Momentopnamen**
-U kunt bepalen hoe vaak momentopnamen moeten worden gemaakt; dagelijks, al dan niet per uur.
+U kunt bepalen hoe vaak momentopnamen moeten worden gemaakt; dagelijks, uur of helemaal niet.
 
 ### Gegevens laden {#load-data}
 
@@ -312,16 +312,16 @@ Het gemiddelde dat u kunt zien, bijvoorbeeld:
 
 * Welke componenten worden gebruikt waar.
 
-   Nuttig, bijvoorbeeld bij het testen.
+  Nuttig, bijvoorbeeld bij het testen.
 
 * Hoe de instanties van een specifieke component worden verdeeld.
 
-   Dit kan interessant zijn als specifieke pagina&#39;s (d.w.z. &quot;zware pagina&#39;s&quot;) ondervindt prestatieproblemen.
+  Dit kan interessant zijn als specifieke pagina&#39;s (d.w.z. &quot;zware pagina&#39;s&quot;) prestatieproblemen ondervinden.
 
 * Delen van de site identificeren met frequente/minder frequente wijzigingen.
 * Zie hoe pagina-inhoud zich ontwikkelt in de loop van de tijd.
 
-Alle componenten zijn inbegrepen, product-norm en project-specifiek. Met de **Bewerken** kan de gebruiker ook een **Basispad** dat het uitgangspunt van het rapport bepaalt - alle componenten onder die wortel worden overwogen voor het rapport.
+Alle componenten zijn inbegrepen, product-norm en project-specifiek. Met de **Bewerken** kan ook een **Basispad** dat het uitgangspunt van het rapport bepaalt - alle componenten onder die wortel worden overwogen voor het rapport.
 
 ![rapportcomponent](assets/reportcomponent.png) ![verslagleggend](assets/reportcompentall.png)
 
@@ -329,7 +329,7 @@ Alle componenten zijn inbegrepen, product-norm en project-specifiek. Met de **Be
 
 Het rapport van het schijfgebruik bevat informatie over de gegevens die in uw opslagplaats zijn opgeslagen.
 
-Het rapport begint in de basis ( / ) van de gegevensopslagruimte; door op een bepaalde vertakking te klikken kunt u naar beneden boren in de repository (het huidige pad wordt weerspiegeld in de rapporttitel).
+Het rapport begint in de wortel (/) van de bewaarplaats; door op een bepaalde tak te klikken kunt u neer binnen de bewaarplaats (de huidige weg zal in de rapporttitel worden weerspiegeld) boor.
 
 ![verslaglegging](assets/reportdiskusage.png)
 
@@ -344,33 +344,33 @@ Om het rapport te produceren kunt u specificeren:
 
 * **Periode (uren)**
 
-   Het aantal uren (in het verleden) dat moet worden geanalyseerd.
+  Het aantal uren (in het verleden) dat moet worden geanalyseerd.
 
-   Standaard: `24`
+  Standaard: `24`
 
 * **max. Resultaten**
 
-   Maximumaantal uitvoerlijnen.
+  Maximumaantal uitvoerlijnen.
 
-   Standaard: `50`
+  Standaard: `50`
 
 * **max. Verzoeken**
 
-   Maximumaantal te analyseren verzoeken.
+  Maximumaantal te analyseren verzoeken.
 
-   Standaard: `-1` (alle)
+  Standaard: `-1` (alle)
 
 * **E-mailadres**
 
-   Resultaten naar een e-mailadres verzenden.
+  Resultaten naar een e-mailadres verzenden.
 
-   Optioneel; Standaard: blank
+  Optioneel; standaard: leeg
 
 * **Dagelijks uitvoeren om (uu:mm)**
 
-   Specificeer een tijd voor het rapport automatisch op een dagelijkse basis moet worden in werking gesteld.
+  Specificeer een tijd voor het rapport automatisch op een dagelijkse basis moet worden in werking gesteld.
 
-   Optioneel; Standaard: blank
+  Optioneel; standaard: leeg
 
 ![verslaggeving](assets/reporthealth.png)
 
@@ -399,7 +399,7 @@ Het pagina activiteitenrapport neemt al zijn informatie van het controlelogboek.
 
 ### Rapport Door gebruiker gegenereerde inhoud {#user-generated-content-report}
 
-Dit rapport bevat informatie over door gebruikers gegenereerde inhoud. Dit zijn opmerkingen, beoordelingen of forums.
+Dit rapport bevat informatie over door gebruikers gegenereerde inhoud, zoals opmerkingen, beoordelingen of forums.
 
 [Kolommen met informatie](#selecting-and-positioning-the-data-columns) op:
 
@@ -410,9 +410,9 @@ Dit rapport bevat informatie over door gebruikers gegenereerde inhoud. Dit zijn 
 * Type
 * Gebruiker-id
 
-Toestaan dat:
+Hiermee kunt u:
 
-* Zie welke pagina&#39;s de meeste opmerkingen ontvangen.
+* Zie welke pagina&#39;s de meeste commentaren ontvangen.
 * Bekijk een overzicht van alle opmerkingen die specifieke bezoekers van de site achterlaten. Mogelijk zijn de problemen gerelateerd.
 * Realiseer of de nieuwe inhoud commentaren door te controleren veroorzaakt wanneer de commentaren op een pagina worden gemaakt.
 
@@ -420,7 +420,7 @@ Toestaan dat:
 
 ### Gebruikersrapport {#user-report}
 
-Dit rapport bevat informatie over alle gebruikers die een account en/of profiel hebben geregistreerd. dit kan zowel auteurs binnen uw organisatie als externe bezoekers omvatten.
+Dit rapport bevat informatie over alle gebruikers die een account en/of profiel hebben geregistreerd. Dit kan zowel auteurs binnen uw organisatie als externe bezoekers bevatten.
 
 [Kolommen met informatie](#selecting-and-positioning-the-data-columns) (indien beschikbaar) informatie over:
 
@@ -438,7 +438,7 @@ Dit rapport bevat informatie over alle gebruikers die een account en/of profiel 
 * NTLM-hashcode
 * Gebruikersnaam
 
-Toestaan dat:
+Hiermee kunt u:
 
 * Bekijk de demografische spreiding van je gebruikers.
 * Rapport over aangepaste velden die u aan de profielen hebt toegevoegd.
@@ -447,7 +447,7 @@ Toestaan dat:
 
 #### Algemene kolom {#generic-column}
 
-De **Algemeen** de kolom is beschikbaar in het Rapport van de Gebruiker zodat u tot aangepaste informatie, gewoonlijk bij [gebruikersprofielen](/help/sites-administering/identity-management.md#profiles-and-user-accounts); bijvoorbeeld: [Favoriete kleur, zoals wordt beschreven onder Velden toevoegen aan de profieldefinitie](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
+De **Algemeen** de kolom is beschikbaar in het Rapport van de Gebruiker zodat u tot aangepaste informatie, gewoonlijk bij [gebruikersprofielen](/help/sites-administering/identity-management.md#profiles-and-user-accounts); bijvoorbeeld [Favoriete kleur, zoals wordt beschreven onder Velden toevoegen aan de profieldefinitie](/help/sites-administering/identity-management.md#adding-fields-to-the-profile-definition).
 
 Het dialoogvenster Algemene kolom wordt geopend wanneer u:
 
@@ -460,25 +460,25 @@ Van de **Definities** tabblad dat u kunt definiëren:
 
 * **Titel**
 
-   Uw eigen titel voor de algemene kolom.
+  Uw eigen titel voor de algemene kolom.
 
 * **Eigenschap**
 
-   De eigenschapsnaam zoals deze in de opslagplaats is opgeslagen, meestal binnen het profiel van de gebruiker.
+  De eigenschapsnaam zoals deze in de opslagplaats is opgeslagen, meestal binnen het profiel van de gebruiker.
 
 * **Pad**
 
-   Gewoonlijk wordt de eigenschap opgehaald uit de `profile`.
+  Gewoonlijk wordt de eigenschap opgehaald uit de `profile`.
 
 * **Type**
 
-   Selecteer het veldtype van `String`, `Number`, `Integer`, `Date`.
+  Selecteer het veldtype van `String`, `Number`, `Integer`, `Date`.
 
 * **Standaard aggregaat**
 
-   Dit bepaalt het aggregaat dat door gebrek wordt gebruikt als de kolom in een rapport met minstens één gegroepeerde kolom wordt ungrouped. Selecteer het vereiste aggregaat van `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
+  Dit bepaalt het aggregaat dat door gebrek wordt gebruikt als de kolom in een rapport met minstens één gegroepeerde kolom wordt ungrouped. Selecteer het vereiste aggregaat van `Count`, `Minimum`, `Average`, `Maximum`, `Sum`.
 
-   Bijvoorbeeld: *Aantal* voor een `String` veld betekent dat het aantal afzonderlijke `String` De waarden worden weergegeven voor de kolom in de geaggregeerde status.
+  Bijvoorbeeld: *Aantal* voor een `String` veld betekent dat het aantal afzonderlijke `String` De waarden worden weergegeven voor de kolom in de geaggregeerde status.
 
 In de **Uitgebreid** kunt u ook de beschikbare aggregaten en filters definiëren:
 
@@ -500,7 +500,7 @@ Dit geeft u een beknopt overzicht, verstrekkend informatie over de individuele i
 
 Meet u kunt:
 
-* De gemiddelde duur van de workflows bewaken; als dit regelmatig gebeurt , kan het problemen met de workflow aan het licht brengen .
+* De gemiddelde duur van workflows controleren; als dit regelmatig gebeurt, kan dit problemen met de workflow aan het licht brengen.
 
 ![rapportworkflowintentie](assets/reportworkflowintance.png)
 
@@ -516,7 +516,7 @@ Zodra u de rapporten aan uw specifieke vereisten hebt gevormd kunt u het activer
 
 >[!CAUTION]
 >
->Als u **Historische gegevens** voor de publicatieomgeving, dan **Voltooien** het rapport over de auteursomgeving alvorens de pagina te activeren.
+>Als u **Historische gegevens** voor de publicatieomgeving **Voltooien** het rapport over de auteursomgeving alvorens de pagina te activeren.
 
 Het desbetreffende verslag is dan toegankelijk via
 
@@ -534,11 +534,11 @@ Aangezien geen rapportconfiguratie in het publicatiemilieu wordt toegestaan, **B
 
 >[!CAUTION]
 >
->De toegang tot deze verslagen kan een veiligheidskwestie zijn; daarom adviseren wij u de Dispatcher vormen zodat `/etc/reports` is niet beschikbaar voor externe bezoekers. Zie de [Beveiligingscontrolelijst](security-checklist.md) voor meer informatie .
+>De toegang tot deze rapporten kan een veiligheidskwestie zijn; daarom adviseert de Adobe dat u de Dispatcher vormt zodat `/etc/reports` is niet beschikbaar voor externe bezoekers. Zie de [Beveiligingscontrolelijst](security-checklist.md) voor meer informatie .
 
 ## Machtigingen vereist voor het uitvoeren van rapporten {#permissions-needed-for-running-reports}
 
-De benodigde machtigingen zijn afhankelijk van de handeling:
+Welke machtigingen nodig zijn, is afhankelijk van de handeling:
 
 * De gegevens van het rapport worden hoofdzakelijk verzameld gebruikend de voorrechten van de huidige gebruiker.
 * De historische gegevens worden verzameld gebruikend de voorrechten van de gebruiker die het rapport beëindigde.
@@ -547,22 +547,22 @@ In een standaard AEM installatie zijn de volgende toestemmingen vooraf ingesteld
 
 * **Gebruikersrapport**
 
-   `user administrators` - lezen en schrijven
+  `user administrators` - lezen en schrijven
 
 * **Rapport Paginaactiviteit**
 
-   `contributors` - lezen en schrijven
+  `contributors` - lezen en schrijven
 
 * **Componentrapport**
 
-   `contributors` - lezen en schrijven
+  `contributors` - lezen en schrijven
 
 * **Rapport Door gebruiker gegenereerde inhoud**
 
-   `contributors` - lezen en schrijven
+  `contributors` - lezen en schrijven
 
 * **Rapport voor werkstroominstantie**
 
-   `workflow-users` - lezen en schrijven
+  `workflow-users` - lezen en schrijven
 
 Alle leden van de `administrators` de groep heeft de nodige rechten om nieuwe rapporten op te stellen .

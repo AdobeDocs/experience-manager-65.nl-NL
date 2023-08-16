@@ -2,9 +2,9 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden geïmplementeerd in een krachtig en zonder kop, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1014'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaa
 
 In een headless model, wordt de inhoud beheerd in de AEM bewaarplaats, maar geleverd via APIs zoals REST en GraphQL aan een ander systeem om de inhoud voor de gebruikerservaring terug te geven. In dit model wordt inhoud gemaakt in AEM, maar wordt de inhoud vormgegeven, gepresenteerd en geleverd op een ander platform.
 
-Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonder kop door AEM wordt geleverd. Deze SPA hoeven echter niet geheel buiten de AEM te liggen. AEM kunt u bepalen in welke mate uw SPA in AEM is geïntegreerd. Laten we een voorbeeld nemen.
+Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonder kop door AEM wordt geleverd. Deze SPA hoeven echter niet geheel buiten de AEM te liggen. AEM kunt u bepalen in welke mate uw SPA in AEM wordt geïntegreerd. Laten we een voorbeeld nemen.
 
 ## Voorbeeld van webwinkel {#web-shop-example}
 
-Stel dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
+Laten we zeggen dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten zoals promotiesites, blogs en inhoud van campagnes te ondersteunen. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
 
 * **De systemen onafhankelijk laten werken.**
 * **Bied de webshop met beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.
@@ -49,15 +49,15 @@ In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 SPA integratie ligt op een spectrum van vier niveaus in AEM.
 
-* **Niveau 0: Geen integratie**
+* **Niveau 0: geen integratie**
    * De SPA en AEM bestaan afzonderlijk en wisselen geen informatie uit.
    * Inhoud wordt in twee aparte systemen gemaakt, beheerd en afzonderlijk geleverd.
-* **Niveau 1: Integratie van inhoudsfragmenten**
+* **Niveau 1: integratie van inhoudsfragmenten**
    * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om beperkte inhoud voor de SPA te maken en te beheren.
    * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.
    * Inhoud kan alleen in de SPA worden weergegeven.
-* **Niveau 2: De SPA insluiten in AEM**
+* **Niveau 2: sluit de SPA in AEM in**
    * [Inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) worden gebruikt in AEM om inhoud voor de SPA te maken en te beheren.
    * De SPA haalt deze inhoud op via AEM [GraphQL API.](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md)
    * Sommige inhoud wordt beheerd in AEM en sommige in een extern systeem.

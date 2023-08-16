@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '577'
 ht-degree: 1%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina naast elkaar kunnen vergelijken met een andere versie.
+Inhoud maken is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina naast elkaar kunnen vergelijken met een andere versie.
 
 Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijken met de gemarkeerde verschillen.
 
@@ -61,7 +61,7 @@ Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd
 * Lichtgroen - component toegevoegd
 * Roze - component verwijderd
 
-**HTML wijzigen**
+**Wijzigingen in HTML**
 
 * Donkergroen - HTML toegevoegd
 * Rood - HTML verwijderd
@@ -72,7 +72,7 @@ Met de Diff worden wijzigingen op componentniveau en op HTML-niveau gedetecteerd
 
 ### Volledig scherm en afsluiten {#fullscreen-and-exiting}
 
-Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om het venster te vergroten naar het volledige browservenster.
+Als u de focus op bepaalde inhoud wilt plaatsen, klikt u op het pictogram voor een volledig scherm voor een van de twee zijden van het deelvenstervak om het pictogram te vergroten naar het volledige browservenster.
 
 ![Pictogram modus Volledig scherm](do-not-localize/chlimage_1-18.png)
 
@@ -94,7 +94,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Voor versies, maakt diff niet het toegangsbeheerbeleid en levende exemplaarverhoudingen opnieuw.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
-   * Als u problemen ondervindt met een diff, controleert u [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
+   * Als u problemen ondervindt met een diff, controleert u de [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) om te zien of de pagina is verplaatst.
 
 >[!NOTE]
 >

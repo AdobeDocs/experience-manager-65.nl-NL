@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 feature: Configuring
 exl-id: b32001a1-0078-43f6-89d6-781d6d2e9c94
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '664'
+source-wordcount: '662'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ ht-degree: 0%
 AEM biedt u de mogelijkheid om te vormen:
 
 * globale parameters voor de centrale houtkapdienst
-* verzoeken om registratie van gegevens; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
-* specifieke instellingen voor de afzonderlijke diensten; bijvoorbeeld een afzonderlijk logbestand en een indeling voor de logberichten
+* verzoek gegevensregistreren; een gespecialiseerde registrerenconfiguratie voor verzoekinformatie
+* specifieke instellingen voor de afzonderlijke services, bijvoorbeeld een afzonderlijk logbestand en een indeling voor de logberichten
 
 Dit zijn allemaal [OSGi-configuraties](/help/sites-deploying/configuring-osgi.md).
 
@@ -39,7 +39,7 @@ Dit zijn allemaal [OSGi-configuraties](/help/sites-deploying/configuring-osgi.md
 * het registratieniveau
 * de locatie van het centrale logbestand
 * het aantal versies dat moet worden bewaard
-* versierotatie; of maximumgrootte of een tijdinterval
+* versieomwenteling; of maximumgrootte of een tijdinterval
 * de indeling die moet worden gebruikt bij het schrijven van de logberichten
 
 >[!NOTE]
@@ -48,16 +48,16 @@ Dit zijn allemaal [OSGi-configuraties](/help/sites-deploying/configuring-osgi.md
 
 ## Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
 
-Naast de globale registrerenmontages, staat AEM u toe om specifieke montages voor de individuele dienst te vormen:
+Naast de globale registrerenmontages, AEM kunt u specifieke montages voor de individuele dienst vormen:
 
 * het specifieke registratieniveau
 * de locatie van het individuele logbestand
 * het aantal versies dat moet worden bewaard
-* versierotatie; of maximumgrootte of tijdinterval
+* versieomwenteling; of maximumgrootte of het tijdinterval
 * de indeling die moet worden gebruikt bij het schrijven van de logberichten
 * de registreermachine (de dienst OSGi die de logboekberichten levert)
 
-Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk dossier te kanaliseren. Dit kan met name nuttig zijn tijdens de ontwikkeling of het testen; bijvoorbeeld, wanneer u een verhoogd logboekniveau voor de specifieke dienst nodig hebt.
+Dit laat u logboekberichten voor één enkele dienst in een afzonderlijk dossier kanaliseren. Dit kan bijzonder nuttig tijdens ontwikkeling of het testen zijn; bijvoorbeeld, wanneer u een verhoogd logboekniveau voor de specifieke dienst nodig hebt.
 
 AEM gebruikt het volgende om logberichten naar bestand te schrijven:
 
@@ -69,19 +69,19 @@ Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende 
 
 * **Logger (Logging Logger)**
 
-   Definieer de service(s) die de berichten genereren.
+  Definieer de service(s) die de berichten genereren.
 
 * **Logbestand (Logging Logger)**
 
-   Bepaal het fysieke dossier voor het opslaan van de logboekberichten.
+  Bepaal het fysieke dossier voor het opslaan van de logboekberichten.
 
-   Dit wordt gebruikt om een Logging Logger met een het Registreren Schrijver te verbinden. De waarde moet aan de zelfde parameter in de Logging configuratie van de Schrijver identiek zijn om de verbinding te maken.
+  Dit wordt gebruikt om een Logging Logger met een het Registreren Schrijver te verbinden. De waarde moet aan de zelfde parameter in de Logging configuratie van de Schrijver identiek zijn om de verbinding te maken.
 
 * **Logbestand (logboekschrijver)**
 
-   Definieer het fysieke bestand waarnaar de logberichten worden geschreven.
+  Definieer het fysieke bestand waarnaar de logberichten worden geschreven.
 
-   Dit moet gelijk zijn aan dezelfde parameter in de configuratie van Logging Writer, anders wordt de overeenkomst niet gemaakt. Als er geen gelijke is dan zal een impliciete Schrijver met standaardconfiguratie (dagelijkse logboekomwenteling) worden gecreeerd.
+  Dit moet gelijk zijn aan dezelfde parameter in de configuratie van Logging Writer, anders wordt de overeenkomst niet gemaakt. Als er geen gelijke is dan zal een impliciete Schrijver met standaardconfiguratie (dagelijkse logboekomwenteling) worden gecreeerd.
 
 ### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
 
@@ -93,7 +93,7 @@ Het eerste is een speciaal geval omdat het zowel de `request.log` en `access.log
 
    * Apache Sling Aanpasbaar Data Logger Aanvraag
 
-      (org.apache.sling.engine.impl.log.RequestLoggerService)
+     (org.apache.sling.engine.impl.log.RequestLoggerService)
 
    * Berichten schrijven over aanvraaginhoud aan `request.log`.
 
@@ -101,7 +101,7 @@ Het eerste is een speciaal geval omdat het zowel de `request.log` en `access.log
 
    * Apache Sling Request Logger
 
-      (org.apache.sling.engine.impl.log.RequestLogger)
+     (org.apache.sling.engine.impl.log.RequestLogger)
 
    * Schrijft de berichten naar of `request.log` of `access.log`.
 
@@ -113,7 +113,7 @@ De andere paren volgen de standaardconfiguratie:
 
    * Logboekconfiguratie Apache Sling Logging
 
-      (org.apache.sling.commons.log.LogManager.factory.config)
+     (org.apache.sling.commons.log.LogManager.factory.config)
 
    * Schrijven `Information` berichten aan `logs/error.log`.
 
@@ -121,7 +121,7 @@ De andere paren volgen de standaardconfiguratie:
 
    * Configuratie van auteur van Apache Sling Logging
 
-      (org.apache.sling.commons.log.LogManager.factory.writer)
+     (org.apache.sling.commons.log.LogManager.factory.writer)
 
 * De logboekregistratie:
 

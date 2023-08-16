@@ -8,29 +8,29 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1806'
+source-wordcount: '1796'
 ht-degree: 6%
 
 ---
 
 # Responsieve lay-out{#responsive-layout}
 
-AEM kunt u een responsieve indeling voor uw pagina&#39;s gebruiken met behulp van de **Layout Container** component.
+Met AEM kunt u een responsieve indeling voor uw pagina&#39;s gebruiken met behulp van de **Layout Container** component.
 
 Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de [**Layout** mode](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode), waarmee u uw responsieve lay-out afhankelijk van het apparaat kunt maken en bewerken.
 
 De container layout:
 
 * Biedt een horizontale uitlijning op het raster, samen met de mogelijkheid om componenten naast elkaar in het raster te plaatsen en te bepalen wanneer ze moeten samenvouwen/opnieuw plaatsen.
-* Gebruikt vooraf gedefinieerde onderbrekingspunten (bijvoorbeeld voor telefoon, tablet, enz.) waarmee u het vereiste gedrag van inhoud voor verwante apparaten/oriëntatie kunt definiëren.
+* Gebruikt vooraf gedefinieerde onderbrekingspunten (bijvoorbeeld voor telefoon, tablet, enz.) Hiermee kunt u het vereiste gedrag van inhoud voor verwante apparaten/oriëntatie definiëren.
 
    * U kunt bijvoorbeeld de grootte van de component aanpassen of de component zichtbaar is op bepaalde apparaten.
 
 * Kan worden genest om kolombesturing toe te staan.
 
-De gebruiker kan dan zien hoe de inhoud wordt gerenderd voor specifieke apparaten met behulp van de emulator.
+De gebruiker kan dan zien hoe de inhoud wordt gerenderd voor specifieke apparaten met de emulator.
 
 >[!CAUTION]
 >
@@ -44,7 +44,7 @@ AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinati
 
 * [**Lay-outmodus**](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)
 
-  Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om inhoud binnen het responsieve raster te plaatsen.
+  Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om de inhoud binnen het responsieve raster te plaatsen.
 
 * [**Emulator**](#selecting-a-device-to-emulate)
 Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
@@ -71,12 +71,12 @@ Afhankelijk van uw project, zou de Container van de Lay-out als standaardparagra
 
 Wanneer u uw website-inhoud maakt, moet u ervoor zorgen dat uw inhoud correct wordt weergegeven voor het apparaat dat wordt gebruikt om de inhoud weer te geven.
 
-AEM kunt u lay-outs definiëren die afhankelijk zijn van de breedte van het apparaat:
+Met AEM kunt u lay-outs definiëren die afhankelijk zijn van de breedte van het apparaat:
 
-* Met de emulator kunt u deze lay-outs emuleren op een reeks apparaten. Naast het apparaattype is de stand geselecteerd door de **Apparaat roteren** kan dit invloed hebben op het geselecteerde onderbrekingspunt wanneer de breedte verandert.
+* Met de emulator kunt u deze lay-outs emuleren op een reeks apparaten. Naast het apparaattype is de stand geselecteerd door de **Apparaat draaien** kan dit invloed hebben op het geselecteerde onderbrekingspunt wanneer de breedte verandert.
 * Onderbrekingspunten zijn de punten die de layoutdefinities scheiden.
 
-   * Ze definiëren in feite de maximale breedte (in pixels) van elk apparaat met een specifieke lay-out.
+   * Ze definiëren in feite de maximale breedte (in pixels) van elk apparaat met een specifieke layout.
    * De onderbrekingspunten zijn gewoonlijk geldig voor een selectie van apparaten, afhankelijk van de breedte van hun vertoningen.
    * Het bereik van een onderbrekingspunt loopt door tot het volgende onderbrekingspunt.
    * U kunt het onderbrekingspunt niet specifiek selecteren, zal selecteren een apparaat en de richtlijn automatisch het aangewezen breekpunt selecteren.
@@ -89,7 +89,7 @@ Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op
 
 Wanneer u de emulator gebruikt, selecteert u een specifiek apparaat voor de definitie van emulatie en layout en wordt het desbetreffende onderbrekingspunt ook gemarkeerd. Alle layoutwijzigingen die u aanbrengt, zijn van toepassing op andere apparaten waarop het onderbrekingspunt van toepassing is, dat wil zeggen apparaten die links van de actieve onderbrekingspuntmarkering zijn geplaatst, maar vóór de volgende onderbrekingspuntmarkering.
 
-Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd met een breedte van 540 pixels) voor emulatie en lay-out, het onderbrekingspunt **Telefoon** (gedefinieerd als 768 pixels) wordt ook geactiveerd. Alle indelingswijzigingen die u aanbrengt voor de **iPhone 6** van toepassing zijn op andere voorzieningen in het kader van de **Telefoons** onderbrekingspunten, zoals **iPhone 5** (gedefinieerd als 320 pixels).
+Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd met een breedte van 540 pixels) voor emulatie en lay-out, het onderbrekingspunt **Telefoon** (gedefinieerd als 768 pixels) wordt ook geactiveerd. Alle indelingswijzigingen die u aanbrengt voor de **IPHONE 6** van toepassing zijn op andere voorzieningen in het kader van de **Telefoons** onderbrekingspunten, zoals **IPHONE 5** (gedefinieerd als 320 pixels).
 
 ![screen_shot_2018-03-23at084058](assets/screen_shot_2018-03-23at084058.png)
 
@@ -99,7 +99,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 
    `http://localhost:4502/editor.html/content/we-retail/us/en/experience.html`
 
-1. Selecteer **Emulator** pictogram van de bovenste werkbalk:
+1. Selecteer de **Emulator** pictogram van de bovenste werkbalk:
 
    ![Emulator](do-not-localize/screen_shot_2018-03-23at084256.png)
 
@@ -109,9 +109,9 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 
    Op de emulatorwerkbalk worden extra layoutopties weergegeven:
 
-   * **Apparaat roteren** - Hiermee kunt u een apparaat roteren van verticale (staande) richting naar horizontale (liggende) richting en andersom.
+   * **Apparaat draaien** - Hiermee kunt u een apparaat roteren van verticale (staande) richting naar horizontale (liggende) richting en andersom.
 
-     ![Apparaat roteren](do-not-localize/screen_shot_2018-03-23at084612.png) ![Apparaat roteren](do-not-localize/screen_shot_2018-03-23at084637.png)
+     ![Apparaat draaien](do-not-localize/screen_shot_2018-03-23at084612.png) ![Apparaat draaien](do-not-localize/screen_shot_2018-03-23at084637.png)
 
    * **Apparaat selecteren** - Definieer een specifiek apparaat dat u wilt emuleren vanuit een lijst (zie de volgende stap voor meer informatie)
 
@@ -131,7 +131,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 
    ![screen_shot_2018-03-23at084932](assets/screen_shot_2018-03-23at084932.png)
 
-   * De blauwe stippellijn geeft de *vouwen* voor het geselecteerde apparaat (hier **iPhone 6**).
+   * De blauwe stippellijn geeft de *vouwen* voor het geselecteerde apparaat (hier **IPHONE 6**).
 
    ![screen_shot_2018-03-23at084947](assets/screen_shot_2018-03-23at084947.png)
 
@@ -144,7 +144,7 @@ Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd m
 A **Layout Container** is een alineasysteem dat:
 
 * Bevat andere componenten.
-* Definieert de lay-out.
+* Definieert de layout.
 * Hiermee reageert u op wijzigingen.
 
 >[!NOTE]
@@ -168,7 +168,7 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 
    ![screen_shot_2018-03-23at085357](assets/screen_shot_2018-03-23at085357.png)
 
-   U moet de **Bovenliggend** optie.
+   U moet de **Bovenliggend** -optie.
 
    ![Bovenliggend, optie](do-not-localize/screen_shot_2018-03-23at085417.png)
 
@@ -192,7 +192,7 @@ Net als bij andere componenten kunt u een Layout Container selecteren en vervolg
 >
 >U kunt een afzonderlijke lay-out definiëren voor elk [breekpunt](#layout-definitions-device-emulation-and-breakpoints) (bepaald aan de hand van het geëmuleerde type en de stand van de voorziening).
 
-Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay-out wordt uitgevoerd moet u gebruiken **Layout** in.
+Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay-out wordt uitgevoerd moet u gebruiken **Layout** -modus.
 
 **Layout** Deze modus kan op twee manieren worden gestart.
 
@@ -203,7 +203,7 @@ Om de lay-out van een ontvankelijk net te vormen dat met de Container van de Lay
 
 * Wanneer [bewerken van een afzonderlijke component.](/help/sites-authoring/editing-content.md#edit-component-layout)
 
-   * Met de **Layout** in het snelmenu van de component kunt u schakelen naar **Layout** in.
+   * Met de opdracht **Layout** in het snelmenu van de component kunt u schakelen naar **Layout** -modus.
    * **Layout** modus blijft bestaan tijdens het bewerken van de component en keert terug naar **Bewerken** modus als focus verandert in een andere component.
 
 In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
@@ -216,11 +216,11 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
   >
   >Verhoudingen en verhoudingen blijven behouden wanneer componenten zoals **Afbeeldingen** worden vergroot of verkleind.
 
-* Klik/tik op een inhoudscomponent, op de werkbalk kunt u:
+* Klik/tik op een inhoudscomponent, de toolbar laat u:
 
    * **Bovenliggend**
 
-     Hiermee kunt u de volledige containercomponent voor de lay-out selecteren om actie te ondernemen voor het geheel.
+     Hiermee kunt u de volledige containercomponent voor de layout selecteren om actie te ondernemen voor het geheel.
 
    * **Zweven naar nieuwe regel**
 
@@ -240,11 +240,11 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
 
      ![Bovenliggend](do-not-localize/screen_shot_2018-03-23at090823.png)
 
-   * **Verborgen componenten tonen** - Alle of afzonderlijke componenten tonen. Het getal geeft aan hoeveel verborgen componenten er momenteel zijn. De teller toont hoeveel componenten verborgen zijn.
+   * **Verborgen componenten tonen** - Alle of afzonderlijke componenten zichtbaar maken. Het getal geeft aan hoeveel verborgen componenten er momenteel zijn. De teller toont hoeveel componenten verborgen zijn.
 
      ![Verborgen componenten tonen](do-not-localize/screen_shot_2018-03-23at091007.png)
 
-   * **De indeling van het onderbrekingspunt herstellen** - De standaardlay-out herstellen. Dit betekent dat er geen aangepaste indeling wordt opgelegd.
+   * **De indeling van het onderbrekingspunt herstellen** - De standaardlayout herstellen. Dit betekent dat er geen aangepaste indeling wordt opgelegd.
 
      ![Schermindeling onderbrekingspunt herstellen](do-not-localize/screen_shot_2018-03-23at091013.png)
 
@@ -261,7 +261,7 @@ In de lay-outmodus kunt u verschillende handelingen op een raster uitvoeren:
      >In het bovenstaande voorbeeld zijn de acties voor zweven en verbergen beschikbaar omdat deze container van de layout is genest in een bovenliggende container van de layout.
 
    * **Componenten zichtbaar maken**
-Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht **Verborgen componenten tonen** optie. In dit voorbeeld zijn twee componenten verborgen.
+Selecteer de bovenliggende componenten om de actiewerkbalk weer te geven met de opdracht **Verborgen componenten tonen** -optie. In dit voorbeeld zijn twee componenten verborgen.
 
      ![screen_shot_2018-03-23at091200](assets/screen_shot_2018-03-23at091200.png)
 

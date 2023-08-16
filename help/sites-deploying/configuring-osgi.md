@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: bf55fcb855cbdad72c669058662ca70fe57e6632
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Beide methoden kunnen worden gebruikt, hoewel er subtiele verschillen zijn, voor
 
    * De console van het Web is de standaardinterface voor configuratie OSGi. Deze interface biedt een interface voor het bewerken van de verschillende eigenschappen, waarbij mogelijke waarden uit vooraf gedefinieerde lijsten kunnen worden geselecteerd.
 
-     Als zodanig is het de eenvoudigste methode.
+     Als zodanig is het de eenvoudigste methode om te gebruiken.
 
    * Om het even welke configuraties die met de Console van het Web worden aangebracht worden onmiddellijk toegepast en van toepassing op de huidige instantie, ongeacht de huidige looppaswijze, of om het even welke verdere veranderingen in de looppaswijze.
 
@@ -56,13 +56,13 @@ Beide methoden kunnen worden gebruikt, hoewel er subtiele verschillen zijn, voor
 Welke methode u ook gebruikt, al deze configuratiemethoden:
 
 * Zorg ervoor dat bij het kopiëren of repliceren van de inhoud van de opslagplaats identieke configuraties worden hersteld.
-* Hiermee kunt u configuraties uitchecken naar FileVault of Subversion. voor beveiliging of verdere updates.
+* Hiermee kunt u configuraties uitchecken naar FileVault of Subversion; voor beveiliging of verdere updates.
 * Kan in pakketten worden opgeslagen voor gebruik bij het instellen van andere instanties.
-* Sta u toe om configuratierolouts uit te voeren gebruikend manuscripten om de configuratiedetails te verspreiden.
+* Laat u configuratierolouts uitvoeren gebruikend manuscripten om de configuratiedetails te verspreiden.
 
 >[!NOTE]
 >
->Details van bepaalde belangrijke instellingen worden weergegeven onder [OSGi-configuratie-instellingen.](/help/sites-deploying/osgi-configuration-settings.md)
+>Details van bepaalde belangrijke instellingen worden weergegeven onder [OSGi Configuration Settings.](/help/sites-deploying/osgi-configuration-settings.md)
 
 ## OSGi Configuratie met de Console van het Web {#osgi-configuration-with-the-web-console}
 
@@ -80,15 +80,15 @@ Eventuele aangebrachte wijzigingen worden onmiddellijk toegepast op de relevante
 >
 >Adobe Experience Manager heeft zijn eigen gebreken en zo zouden de gebreken die worden geplaatst van de gebreken kunnen verschillen die op de console worden gedocumenteerd.
 
-Een configuratie bijwerken met de webconsole:
+Om een configuratie met de Webconsole bij te werken:
 
-1. Toegang krijgen tot **Configuratie** tabblad van de webconsole door:
+1. Toegang krijgen tot de **Configuratie** tabblad van de webconsole door:
 
    * De webconsole openen via de koppeling op het tabblad **Gereedschap -> Bewerkingen** -menu. Na het registreren in de console, kunt u het drop-down menu gebruiken van:
 
      **OSGi >**
 
-   * De directe URL; bijvoorbeeld:
+   * De directe URL, bijvoorbeeld:
 
      `http://localhost:4502/system/console/configMgr`
 
@@ -172,7 +172,7 @@ Aangezien de zelfde configuratieparameter op verscheidene plaatsen is, is het sy
 
 * zoekopdrachten naar alle knooppunten van het type `sling:OsgiConfig`
 * filters volgens de dienstnaam
-* filters volgens de uitvoermodus
+* filters op basis van de uitvoermodus
 
 >[!NOTE]
 >
@@ -228,7 +228,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
    * `config` - van toepassing op alle uitvoeringsmodi
    * `config.<run-mode>` - specifiek voor een bepaalde uitvoeringsmodus
 
-1. Maak in deze map een knooppunt:
+1. Onder deze map maakt u een knooppunt:
 
    * Type: `sling:OsgiConfig`
    * Naam: de persistente identiteit (PID);
@@ -241,17 +241,17 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
    >
    >Zoals in: `org.apache.sling.commons.log.LogManager.factory.config-<identifier>`
    >
-   >Wanneer `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten); bijvoorbeeld:
+   >Wanneer `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten), bijvoorbeeld:
    >
    >`org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
 1. Voor elke parameter die u wilt vormen, creeer een bezit op deze knoop:
 
-   * Naam: de parameternaam zoals aangetoond in de console van het Web; de naam wordt tussen haakjes weergegeven aan het einde van de veldbeschrijving. Bijvoorbeeld: `Create Version on Activation` gebruiken `versionmanager.createVersionOnActivation`
-   * Type: in voorkomend geval.
-   * Waarde: zoals vereist.
+   * Naam: de parameternaam zoals die in de console van het Web wordt getoond; de naam wordt getoond tussen haakjes aan het eind van de gebiedsbeschrijving. Bijvoorbeeld: `Create Version on Activation` gebruiken `versionmanager.createVersionOnActivation`
+   * Type: naargelang het geval.
+   * Waarde: naar wens.
 
-   U moet alleen eigenschappen maken voor de parameters die u wilt configureren, anderen gebruiken nog steeds de standaardwaarden die door AEM zijn ingesteld.
+   U moet slechts eigenschappen voor de parameters tot stand brengen die u wilt vormen, anderen nemen nog de standaardwaarden zoals die door AEM worden geplaatst.
 
 1. Sla alle wijzigingen op.
 
@@ -259,7 +259,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
 >[!CAUTION]
 >
->Wijzig niets in het dialoogvenster `/libs` pad.
+>Wijzig niets in de `/libs` pad.
 
 >[!CAUTION]
 >
@@ -310,7 +310,7 @@ De configuratie met het hoogste aantal passende looppaswijzen is effectief voor 
 
 ### Standaardconfiguraties {#standard-configurations}
 
-In de volgende lijst ziet u een kleine selectie van de configuraties die beschikbaar zijn (in een standaardinstallatie) in de opslagplaats:
+De volgende lijst toont een kleine selectie van de configuraties beschikbaar (in een standaardinstallatie) in de bewaarplaats:
 
 * Auteur - AEM WCM-filter:
 
@@ -342,7 +342,7 @@ Om van alle configuratieknooppunten in uw instantie een lijst te maken, gebruik 
 
      `/apps/system/config`
 
-   * Als u echter een configuratie bewerkt die oorspronkelijk van elders in de opslagplaats afkomstig was: bijvoorbeeld:
+   * Als u echter een configuratie bewerkt die oorspronkelijk van elders in de opslagplaats afkomstig was, bijvoorbeeld:
 
      /libs/foo/config/someconfig
 

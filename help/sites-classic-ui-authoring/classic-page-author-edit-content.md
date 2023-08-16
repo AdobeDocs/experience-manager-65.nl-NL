@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1832'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Inhoud wordt toegevoegd met [componenten](/help/sites-classic-ui-authoring/class
 
 >[!NOTE]
 >
->Uw account heeft [passende toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) pagina&#39;s bewerken; bijvoorbeeld het toevoegen, bewerken of verwijderen van componenten, het annoteren en ontgrendelen.
+>Uw account heeft de [passende toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) om pagina&#39;s te bewerken, bijvoorbeeld om componenten toe te voegen, te bewerken of te verwijderen, notities toe te voegen, te ontgrendelen.
 >
 >Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
 
@@ -46,7 +46,7 @@ Er zijn verschillende tabbladen en pictogrammen beschikbaar, waaronder:
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
-Deze bieden toegang tot een brede selectie van functies; met inbegrip van:
+Deze bieden toegang tot een breed scala aan functies, waaronder:
 
 * [selecteren, componenten](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekick)
 * [verwijzingen tonen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#showing-references)
@@ -79,7 +79,7 @@ Een nieuwe component invoegen:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. In zowel de sidekick als de **Nieuwe component invoegen** op de werkbalk ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.) die naar behoefte kunnen worden uitgebreid.
+1. In zowel de sidekick als de **Nieuwe component invoegen** op de werkbalk ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.), die naar behoefte kunnen worden uitgebreid.
 
    Afhankelijk van uw productieomgeving kunnen deze opties afwijken. Voor volledige informatie over componenten raadpleegt u [Standaardcomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,7 +87,7 @@ Een nieuwe component invoegen:
 
 ### Een component invoegen met de Inhoudszoeker {#inserting-a-component-using-the-content-finder}
 
-U kunt ook een nieuwe component aan de pagina toevoegen door een element van de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt die het element bevat.
+U kunt ook een nieuwe component aan de pagina toevoegen door een element van de [Inhoudzoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt die het element bevat.
 
 Dit is geldig voor de volgende elementtypen (sommige zijn afhankelijk van het pagina-/alineasysteem):
 
@@ -105,7 +105,7 @@ Dit is geldig voor de volgende elementtypen (sommige zijn afhankelijk van het pa
 Een component maken door een van de bovenstaande elementtypen te slepen:
 
 1. Zorg ervoor dat de pagina zich bevindt in [**Bewerken** mode](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#page-modes).
-1. Open de [Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
+1. Open de [Inhoudzoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder).
 1. Sleep het vereiste element naar de gewenste positie. De [tijdelijke aanduiding voor onderdeel](#componentplaceholder) Hiermee kunt u zien waar de component wordt geplaatst.
 
    Een component die geschikt is voor het type element, wordt op de vereiste locatie gemaakt. De component bevat het geselecteerde element.
@@ -128,7 +128,7 @@ Een alinea verplaatsen:
 
 >[!NOTE]
 >
->U kunt ook [Knippen en plakken](#cut-copy-paste-a-component) om een component te verplaatsen.
+>U kunt ook [Knippen en plakken](#cut-copy-paste-a-component) een component verplaatsen.
 
 1. Selecteer de alinea die u wilt verplaatsen:
 
@@ -174,10 +174,10 @@ Als wanneer [Een component verwijderen](#deleting-a-component) u kunt het contex
 
 Overerfde componenten kunnen het product van diverse scenario&#39;s zijn, die omvatten:
 
-* [Beheer van meerdere sites](/help/sites-administering/msm.md); ook in combinatie met [steigers](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
+* [Beheer van meerdere sites](/help/sites-administering/msm.md), ook in combinatie met [steigers](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md#scaffolding-with-msm-inheritance).
 
 * [Starten](/help/sites-classic-ui-authoring/classic-launches.md) (op basis van livecopy).
-* specifieke onderdelen; bijvoorbeeld het Overgenomen alineasysteem in Geometrixx.
+* Specifieke componenten, bijvoorbeeld het Overgenomen alineasysteem in Geometrixx.
 
 U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de component, kan dit beschikbaar zijn bij:
 
@@ -185,11 +185,11 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
    Als een component deel uitmaakt van een livecopy of lancering, wordt het aangegeven met een hangslotpictogram. U kunt op de hangslot klikken om de overerving te annuleren.
 
-   * Het hangslotpictogram wordt getoond wanneer de component wordt geselecteerd; bijvoorbeeld:
+   * Het hangslotpictogram wordt weergegeven wanneer de component is geselecteerd, bijvoorbeeld:
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-   * Het hangslot wordt ook weergegeven in het dialoogvenster van componenten; bijvoorbeeld:
+   * Het hangslot wordt ook weergegeven in het dialoogvenster met componenten, bijvoorbeeld:
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
@@ -213,7 +213,7 @@ Er zijn twee pictogrammen in de onderrand van het hulpstuk die belangrijk zijn v
 
   ![Het pictogram Bewerken dat wordt aangegeven door een potloodsymbool.](do-not-localize/chlimage_1-6.png)
 
-* Met het vergrootglaspictogram kunt u de voorvertoningsmodus selecteren waarin de pagina wordt weergegeven zoals deze wordt weergegeven in de publicatieomgeving (pagina&#39;s moeten soms ook worden vernieuwd):
+* Met het vergrootglaspictogram kunt u de voorbeeldmodus selecteren waarin de pagina wordt weergegeven zoals deze wordt weergegeven in de publicatieomgeving (pagina&#39;s moeten soms ook worden vernieuwd):
 
   ![Voorvertoningsmoduspictogram dat wordt aangeduid door een vergrootglassymbool.](do-not-localize/chlimage_1-7.png)
 
@@ -223,11 +223,11 @@ Er zijn twee pictogrammen in de onderrand van het hulpstuk die belangrijk zijn v
 
 ## Zoeken en vervangen {#find-replace}
 
-Voor grootschaliger bewerkingen van dezelfde zin als a **[Zoeken en vervangen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** kunt u in een sectie van de website naar meerdere instanties van een tekenreeks zoeken en deze vervangen.
+Voor grootschaliger bewerkingen van dezelfde zin als a **[Zoeken en vervangen](/help/sites-classic-ui-authoring/author-env-search.md#find-and-replace)** met de menuoptie kunt u zoeken naar meerdere instanties van een tekenreeks in een sectie van de website en deze vervangen.
 
 ## Een pagina vergrendelen {#locking-a-page}
 
-AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
+AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina een korte tijd wilt stilzetten.
 
 >[!CAUTION]
 >
@@ -241,7 +241,7 @@ Een pagina vergrendelen:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien in de juiste ruit van **Websites** -console, AEM WCM de pagina als vergrendeld weergeeft en aangeeft welke gebruiker de pagina heeft vergrendeld.
+   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien in de juiste ruit van **Websites** , AEM WCM de pagina als vergrendeld weergeeft en aangeeft welke gebruiker de pagina heeft vergrendeld.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -282,7 +282,7 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >
 >U kunt:
 >
->* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u de bewerking ongedaan hebt gemaakt.
+>* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u de handeling Ongedaan maken hebt gebruikt.
 >* U kunt maximaal 20 bewerkhandelingen ongedaan maken (standaardinstelling).
 >* ook gebruiken [Sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
 >

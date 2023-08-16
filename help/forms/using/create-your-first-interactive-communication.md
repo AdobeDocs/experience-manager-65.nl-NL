@@ -10,20 +10,20 @@ topic-tags: interactive-communications, introduction
 discoiquuid: 954da8da-a30b-477d-bde7-3edd86a5be11
 feature: Interactive Communication
 exl-id: b20bb719-5686-466e-8dde-279b8471bfe3
-source-git-commit: 471d7f48dc4653000b4852dbbeb886b05e28e644
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '980'
 ht-degree: 0%
 
 ---
 
-# Zelfstudie: Maak uw eerste interactieve communicatie {#tutorial-create-your-first-interactive-communication}
+# Lesbestand: uw eerste interactieve communicatie maken {#tutorial-create-your-first-interactive-communication}
 
 Leer om uw eerste Interactieve Communicatie tot stand te brengen.
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
-De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, marketing post, rekeningen, en welkomstkits. Interactieve communicatie kan via twee kanalen worden aangeboden: Afdrukken en web. Het kanaal van de Druk wordt gebruikt om PDF en papiermededelingen tot stand te brengen, terwijl het kanaal van het Web wordt gebruikt om online ervaringen te leveren.
+De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, marketing post, rekeningen, en welkomstkits. De interactieve Mededelingen kunnen worden geleverd gebruikend twee kanalen: Druk en Web. Het kanaal van de Druk wordt gebruikt om PDF en papiermededelingen tot stand te brengen, terwijl het kanaal van het Web wordt gebruikt om online ervaringen te leveren.
 
 Deze zelfstudie biedt een end-to-end framework voor het maken van interactieve communicatie. De zelfstudie is ingedeeld in een gebruikscase en meerdere hulplijnen. Elke gids helpt u om eigenschappen tot stand te brengen die als bouwstenen worden gebruikt om een Interactieve Communicatie tot stand te brengen.
 
@@ -50,11 +50,11 @@ Een telecomoperator stuurt maandelijkse facturen naar de klanten via e-mail. De 
 ## Vereisten {#prerequisites}
 
 * Stel een AEM auteur-instantie in.
-* Installeren [AEM Forms-invoegtoepassing](/help/forms/using/installing-configuring-aem-forms-osgi.md) op auteurinstantie
+* Installeren [AEM Forms-invoegtoepassing](/help/forms/using/installing-configuring-aem-forms-osgi.md) op instantie van auteur
 * De MYSQL-database instellen
 * Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op gegevensbestand MySQL en gebruiken Oracle [MySQL JDBC-databasestuurprogramma](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
-## Stap 1: De interactieve communicatie plannen {#step-plan-the-interactive-communication}
+## Stap 1: Plan de interactieve communicatie {#step-plan-the-interactive-communication}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -62,7 +62,7 @@ De eerste stap in het plannen van een Interactieve Mededeling is de inhoud van d
 
 **Doelstellingen:**
 
-Om een anatomie voor Interactieve Communicatie met de volgende wijzen van gegevensinput tot stand te brengen:
+Een anatomie maken voor de interactieve communicatie met de volgende gegevensinvoermodi:
 
 * Statische tekst
 * Formuliergegevensmodel
@@ -70,13 +70,13 @@ Om een anatomie voor Interactieve Communicatie met de volgende wijzen van gegeve
 * Voorwaardelijke gegevens
 * Afbeeldingen
 
-[ ](/help/forms/using/planning-interactive-communications.md)
+[](/help/forms/using/planning-interactive-communications.md)
 
-## Stap 2: Formuliergegevensmodel maken {#step-create-form-data-model}
+## Stap 2: Een formuliergegevensmodel maken {#step-create-form-data-model}
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Met een formuliergegevensmodel kunt u een interactieve communicatie met verschillende gegevensbronnen verbinden. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Zie voor meer informatie over het formuliergegevensmodel [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
+Met een formuliergegevensmodel kunt u een interactieve communicatie verbinden met verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Zie voor meer informatie over het formuliergegevensmodel [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
 **Doelstellingen:**
 
@@ -89,13 +89,13 @@ Met een formuliergegevensmodel kunt u een interactieve communicatie met verschil
 * Voorbeeldgegevens bewerken
 * Formuliergegevensmodel testen en geconfigureerde services met testgegevens
 
-[ ](/help/forms/using/create-form-data-model0.md)
+[](/help/forms/using/create-form-data-model0.md)
 
-## Stap 3: Documentfragmenten maken {#step-create-document-fragments}
+## Stap 3: documentfragmenten maken {#step-create-document-fragments}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Documentfragmenten zijn herbruikbare componenten van een correspondentie die worden gebruikt om een interactieve communicatie samen te stellen. De documentfragmenten zijn van het type: Tekst, Lijst en Voorwaarde.
+Documentfragmenten zijn herbruikbare componenten van een correspondentie die worden gebruikt om een interactieve communicatie samen te stellen. De documentfragmenten zijn van het type Tekst, Lijst en Voorwaarde.
 
 **Doelstellingen:**
 
@@ -103,7 +103,7 @@ Documentfragmenten zijn herbruikbare componenten van een correspondentie die wor
 * Variabelen maken
 * Regels maken en toepassen
 
-[ ](/help/forms/using/create-document-fragments.md)
+[](/help/forms/using/create-document-fragments.md)
 
 ## Stap 4: Sjablonen maken {#step-create-templates}
 
@@ -121,28 +121,28 @@ De malplaatjes voor het kanaal van het Web worden gecreeerd in AEM. Sjabloonaute
 * De XDP-sjablonen uploaden naar de AEM Forms-server
 * Sjablonen voor het webkanaal maken en inschakelen
 
-[ ](/help/forms/using/create-templates-print-web.md)
+[](/help/forms/using/create-templates-print-web.md)
 
-## Stap 5: Een interactieve communicatie maken {#step-create-an-interactive-communication}
+## Stap 5: Maak een interactieve communicatie {#step-create-an-interactive-communication}
 
 ![09-stijl-uw-adaptief-vorm-klein](assets/09-style-your-adaptive-form-small.png)
 
 Zodra u alle bouwstenen zoals het model van vormgegevens, documentfragmenten, en malplaatjes voor de Webversie creeert, kunt u beginnen tot een Interactieve Mededeling te leiden.
 
-De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Afdrukken en web. U kunt ook een interactieve communicatie maken met Afdrukkanaal als master kanaal. De optie Afdrukken als master optie voor het webkanaal zorgt ervoor dat de inhoud, overerving en gegevensbinding van het webkanaal worden afgeleid van het kanaal Afdrukken.
+De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Druk en Web. U kunt ook een interactieve communicatie maken met Afdrukkanaal als stramien. Met de optie Afdrukken als hoofdoptie voor het webkanaal wordt gegarandeerd dat de inhoud, overerving en gegevensbinding van het webkanaal worden afgeleid van het kanaal Afdrukken.
 
 **Doelstellingen:**
 
 * Interactieve communicatie maken voor het afdrukkanaal
 * Interactieve communicatie voor het webkanaal maken
-* Creeer Druk en Web Interactieve Mededelingen met Druk als Master
+* Interactieve communicatie voor afdrukken en web maken met Afdrukken als origineel
 * Een dynamische tabel maken in de webversie van Interactieve communicatie
 * Creeer een grafiek in de versie van het Web van Interactieve Communicatie
 * Hyperlinks maken in de webversie van Interactieve communicatie
 
-[ ](/help/forms/using/create-interactive-communication0.md)
+[](/help/forms/using/create-interactive-communication0.md)
 
-## Stap 6: Uw interactieve communicatie publiceren {#step-publish-your-interactive-communication}
+## Stap 6: Publiceer uw Interactieve Communicatie {#step-publish-your-interactive-communication}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 

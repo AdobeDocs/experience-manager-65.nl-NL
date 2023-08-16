@@ -6,9 +6,9 @@ role: User, Admin
 feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '287'
+source-wordcount: '286'
 ht-degree: 1%
 
 ---
@@ -20,18 +20,18 @@ ht-degree: 1%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/watermark-assets.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
-[!DNL Adobe Experience Manager Assets] Hiermee kunt u een digitaal watermerk toevoegen aan elementen waarmee gebruikers de authenticiteit en het auteursrecht van de elementen kunnen controleren. [!DNL Experience Manager Assets] ondersteunt tekst die als watermerk moet worden gebruikt op PNG- en JPEG-bestanden.
+[!DNL Adobe Experience Manager Assets] Hiermee kunt u een digitaal watermerk toevoegen aan elementen waarmee gebruikers de authenticiteit en de copyrighteigendom van de elementen kunnen verifiëren. [!DNL Experience Manager Assets] ondersteunt tekst die als watermerk moet worden gebruikt op PNG- en JPEG-bestanden.
 
 Als u een watermerk wilt toepassen op elementen, voegt u de stap Watermerken toe in het dialoogvenster [!UICONTROL DAM Update Asset] workflow.
 
-1. Toegang krijgen tot [!DNL Experience Manager] gebruikersinterface en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
+1. Toegang krijgen tot de [!DNL Experience Manager] gebruikersinterface en ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Van de **[!UICONTROL Workflow Models]** pagina, selecteert u de **[!UICONTROL DAM Update Asset]** workflow en klik op **[!UICONTROL Edit]**.
 
 1. Sleep vanuit het zijpaneel de **[!UICONTROL Add Watermark]** stap naar de [!UICONTROL DAM Update Asset] workflow.
 
    ![Sleep de [!UICONTROL Add Watermark] en toevoegen aan de [!UICONTROL DAM Update Asset] werkstroom](assets/add_watermark_step_aem_assets.png)
 
-   *Afbeelding: Sleep de [!UICONTROL Add Watermark] en toevoegen aan de [!UICONTROL DAM Update Asset] workflow.*
+   *Figuur: Sleep de [!UICONTROL Add Watermark] en toevoegen aan de [!UICONTROL DAM Update Asset] workflow.*
 
    >[!NOTE]
    >
@@ -42,7 +42,7 @@ Als u een watermerk wilt toepassen op elementen, voegt u de stap Watermerken toe
 
    ![Geef de argumenten op in de stap Watermerk toevoegen in [!DNL Assets]](assets/arguments_add_watermark_aem_assets.png)
 
-   *Afbeelding: Geef de argumenten op in de stap Watermerk toevoegen in [!DNL Assets].*
+   *Afbeelding: geef de argumenten op in de stap Watermerk toevoegen in [!DNL Assets].*
 
 1. Sla de **[!UICONTROL DAM Update Asset]** workflow met het watermerk.
 1. Van de [!DNL Assets] -gebruikersinterface, uploadt u een voorbeeldelement. Het watermerk wordt weergegeven met de tekengrootte, de kleur enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.

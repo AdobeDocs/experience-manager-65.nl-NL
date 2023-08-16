@@ -10,20 +10,20 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 exl-id: 6df5fb10-a7f1-4d5d-ac00-b4be3d5d3d18
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
 
 # Responsieve lay-out uitproberen in We.Detailhandel{#trying-out-responsive-layout-in-we-retail}
 
-Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de **Layout** in de pagina-editor. Hiermee kunt u afhankelijk van het apparaat een responsieve indeling maken en bewerken.
+Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de **Layout** in de pagina-editor. Hiermee kunt u de responsieve indeling afhankelijk van het apparaat maken en bewerken.
 
 ## Uitproberen {#trying-it-out}
 
-1. Bewerk de pagina Arctic Surfing in de sectie Experience van de master taalvertakking.
+1. Bewerk de pagina Arctic Surfing in de sectie Experience van de taalstramienvertakking.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
@@ -37,7 +37,7 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
 1. Schakel over naar de modus Lay-out. De emulatorwerkbalk wordt automatisch weergegeven, zodat u de lay-out per doelapparaat kunt plannen.
 
-   Als u een component selecteert, worden zwevende en verborgen opties weergegeven in het bewerkingsmenu, samen met formaatgrepen voor de component.
+   Als u een component selecteert, worden zwevende en verborgen opties in het bewerkingsmenu weergegeven, samen met formaatgrepen voor de component.
 
    ![chlimage_1-180](assets/chlimage_1-180.png)
 
@@ -47,4 +47,4 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
 ## Aanvullende informatie {#further-information}
 
-Raadpleeg het ontwerpdocument voor meer informatie [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) of het beheerdersdocument [Container en lay-outmodus voor lay-out configureren](/help/sites-administering/configuring-responsive-layout.md) voor volledige technische details.
+Raadpleeg het ontwerpdocument voor meer informatie [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) of het beheerdersdocument [Container en lay-outmodus configureren](/help/sites-administering/configuring-responsive-layout.md) voor volledige technische details.

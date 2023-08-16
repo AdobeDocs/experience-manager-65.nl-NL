@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1908'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Een taakherinnering is bijvoorbeeld geconfigureerd voor drie werkdagen nadat de 
 
 ## De standaardagenda voor het bedrijf gebruiken {#using-the-default-business-calendar}
 
-AEM formulieren bevatten een standaardagenda (met de naam *Ingebouwde kalender*) die zaterdagen en zondag aanwijst als niet-werkdagen. Als alle gebruikers in uw organisatie dezelfde niet-werkdagen hebben, kunt u de standaard bedrijfsagenda bijwerken zodat deze bij uw organisatie past. Wanneer het gebruiken van slechts de standaard bedrijfskalender, te hoeven u niet bedrijfscalendars in het Beheer van de Gebruiker toe te laten of om het even welke afbeeldingen te verstrekken. Als er geen andere bedrijfsplannen zijn gedefinieerd, gebruiken AEM formulieren de standaardagenda voor het bedrijf.
+AEM formulieren bevatten een standaardagenda voor het bedrijf (genaamd *Ingebouwde kalender*) die zaterdagen en zondag aanwijst als niet-werkdagen. Als alle gebruikers in uw organisatie dezelfde niet-werkdagen hebben, kunt u de standaard bedrijfsagenda bijwerken zodat deze bij uw organisatie past. Wanneer het gebruiken van slechts de standaard bedrijfskalender, te hoeven u niet bedrijfscalendars in het Beheer van de Gebruiker toe te laten of om het even welke afbeeldingen te verstrekken. Als er geen andere bedrijfsplannen zijn gedefinieerd, wordt voor AEM formulieren de standaardagenda voor het bedrijf gebruikt.
 
 ## Meerdere zakelijke kalenders instellen {#setting-up-multiple-business-calendars}
 
@@ -49,7 +49,7 @@ Als sommige gebruikers in uw organisatie verschillende niet-bedrijfsdagen hebben
 
    Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Als u de agenda-toets voor deze gebruikers wilt instellen, voert u in het veld Business Calendar Key een tekenreeks in bij het toevoegen of bewerken van een gebruiker in Gebruikersbeheer. (Zie [Gebruikers toevoegen en configureren](/help/forms/using/admin-help/adding-configuring-users.md#adding-and-configuring-users).) Vervolgens wijst u de zakelijke kalendersleutels (de tekenreeksen) toe aan zakelijke kalenders in de formulierwerkstroom. (Zie [Gebruikers en groepen toewijzen aan een zakelijke kalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
-   Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP, die het Beheer van de Gebruiker met het gegevensbestand van het Beheer van de Gebruiker synchroniseert. Op deze manier kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Als bijvoorbeeld elk gebruikersrecord in uw map een veld &quot;Land&quot; bevat en u bedrijfscalenders wilt toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de veldnaam &quot;Land&quot; op in het veld Bedrijfscalenderoets wanneer u de gebruikersinstellingen voor de map opgeeft. (Zie [Mappen configureren](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Vervolgens kunt u de agenda-sleutels voor het bedrijf (de waarden die zijn gedefinieerd voor het veld &quot;Land&quot; in de LDAP-lijst) toewijzen aan de agenda&#39;s voor het bedrijf in de formulierworkflow. (Zie [Gebruikers en groepen toewijzen aan een zakelijke kalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
+   Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP, die het Beheer van de Gebruiker met het gegevensbestand van het Beheer van de Gebruiker synchroniseert. Hiermee kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Als bijvoorbeeld elk gebruikersrecord in uw map een veld &quot;Land&quot; bevat en u bedrijfscalenders wilt toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de veldnaam &quot;Land&quot; op in het veld Bedrijfscalenderoets wanneer u de gebruikersinstellingen voor de map opgeeft. (Zie [Mappen configureren](/help/forms/using/admin-help/configuring-directories.md#configuring-directories).) Vervolgens kunt u de agenda-sleutels voor het bedrijf (de waarden die zijn gedefinieerd voor het veld &quot;Land&quot; in de LDAP-lijst) toewijzen aan de agenda&#39;s voor het bedrijf in de formulierworkflow. (Zie [Gebruikers en groepen toewijzen aan een zakelijke kalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
 
 1. Definieer in de formulierwerkstroom een kalender voor elke set gebruikers die dezelfde niet-werkdagen delen. (Zie [Een zakelijke kalender maken of bijwerken](configuring-business-calendars.md#create-or-update-a-business-calendar).)
 1. Wijs in de formulierwerkstroom de agenda- of groepslidmaatschappen voor elke kalender toe. (Zie [Gebruikers en groepen toewijzen aan een zakelijke kalender](configuring-business-calendars.md#mapping-users-and-groups-to-a-business-calendar).)
@@ -68,7 +68,7 @@ Als uw organisatie verschillende reeksen gebruikers bevat die verschillende niet
 >Als u geen nieuwe bedrijfskalender creeert, dan zal de standaardkalender worden gebruikt.
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Business Calendars.
-1. Klik op ![bus_cal_plus](assets/bus_cal_plus.png). De tekst *Nieuwe kalender* wordt weergegeven in de vervolgkeuzelijst. Selecteer de tekst en typ een andere naam voor de kalender.
+1. Als u een nieuwe agenda wilt toevoegen, klikt u op ![bus_cal_plus](assets/bus_cal_plus.png). De tekst *Nieuwe kalender* in de vervolgkeuzelijst. Selecteer de tekst en typ een andere naam voor de kalender.
 
    Als u een bestaande agenda wilt bewerken, selecteert u deze in de vervolgkeuzelijst.
 
@@ -77,7 +77,7 @@ Als uw organisatie verschillende reeksen gebruikers bevat die verschillende niet
 
    Als u deze optie selecteert, wordt een gebeurtenis die vóór de gespecificeerde tijdwaaier voorkomt verplaatst naar het begin van de tijdwaaier, en een gebeurtenis die voorkomt nadat de tijdwaaier wordt verplaatst naar de begintijd van de volgende werkdag.
 
-   Neem bijvoorbeeld een situatie waarin een gebruiker een taak krijgt toegewezen om 2:00 uur &#39;s middags op een dinsdag en de herinnering voor die taak is ingesteld op twee werkdagen. Zonder kantooruren zou de herinnering om 2:00 uur op donderdag plaatsvinden. Als de kantooruren op 8:00 tot 17:00 uur worden geplaatst, zou de herinnering op donderdag worden verschoven naar 8:00 uur. Zonder kantooruren, als een herinneringsgebeurtenis om 18.00 uur op Dinsdag werd gecreeerd, zou de herinnering na kantooruren op Donderdag voorkomen. Als de kantooruren op 8:00 tot 17:00 worden geplaatst, zou de herinnering om 8:00 uur op vrijdag plaatsvinden.
+   Neem bijvoorbeeld een situatie waarin een gebruiker een taak krijgt toegewezen om 2:00 uur &#39;s middags op een dinsdag en de herinnering voor die taak is ingesteld op twee werkdagen. Zonder kantooruren zou de herinnering om 2:00 uur op donderdag plaatsvinden. Als de kantooruren op 8:00 tot 17:00 uur worden geplaatst, zou de herinnering op donderdag worden verschoven naar 8:00 uur. Zonder kantooruren, als een herinneringsgebeurtenis om 18.00 uur op Dinsdag werd gecreeerd, zou de herinnering na kantooruren op Donderdag voorkomen. Als de kantooruren op 8:00 tot 17:00 worden geplaatst, zou de herinnering om 8:00 uur op Vrijdag plaatsvinden.
 
 1. Dubbelklik in de kalender aan de linkerkant op andere niet-werkdagen, zoals feestdagen. Je kunt geen dagen in het verleden selecteren. De niet-werkdagen die u selecteert, worden weergegeven in een lijst aan de rechterkant, waarbij de datum twee keer op één regel wordt weergegeven. Selecteer links de datum waarop u een naam of beschrijving voor de niet-werkdag wilt typen.
 
@@ -106,7 +106,7 @@ Er zijn twee methodes die u kunt gebruiken om een bedrijfskalender met een gebru
 
    Als de beheerder van het Beheer van de Gebruiker geen bedrijfskalendersleutels heeft bepaald, zal de lijst leeg zijn.
 
-1. Selecteer een kalender voor elk item in de hoofdlijst UM Business Calendar.
+1. Selecteer een kalender voor elk item in de hoofdlijst van de UM Business Calendar.
 1. Klik op Opslaan.
 
 ### Zakelijke kalenders koppelen aan gebruikers en groepen op basis van directoryservicegroepen {#associate-business-calendars-with-users-and-groups-based-on-directory-service-groups}
@@ -138,12 +138,12 @@ Met AEM formulieren kunt u uw bedrijfsplannen exporteren en importeren als XML-b
 ### Zakelijke kalenders importeren {#import-business-calendars}
 
 1. Klik in de beheerconsole op Services > Formulierworkflow > Business Calendars.
-1. Klik op Importeren.
+1. Klik op Import.
 1. Selecteer het XML-bestand met de geëxporteerde zakelijke kalenders en klik op Openen.
 
 ## Een agenda voor een bedrijf verwijderen {#delete-a-business-calendar}
 
-U kunt bedrijfsplannen verwijderen die uw organisatie niet meer nodig heeft. Als u een bedrijfskalender schrapt die nog aan gebruikers en groepen in kaart wordt gebracht, zal de standaardkalender worden gebruikt.
+U kunt bedrijfsplannen verwijderen die uw organisatie niet meer nodig heeft. Als u een bedrijfsagenda verwijdert die nog steeds is toegewezen aan gebruikers en groepen, wordt de standaardkalender gebruikt.
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Business Calendars.
 1. Selecteer de kalender.

@@ -1,7 +1,7 @@
 ---
 title: Proxyserver (proxy.jar)
 seo-title: Proxy Server Tool (proxy.jar)
-description: Leer over het Hulpmiddel van de Server van de Volmacht in AEM.
+description: Meer informatie over het gereedschap Proxy-server in AEM.
 seo-description: Learn about the Proxy Server Tool in AEM.
 uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1160'
 ht-degree: 0%
 
 ---
 
 # Proxyserver (proxy.jar){#proxy-server-tool-proxy-jar}
 
-De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver houdt spoor van alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit staat u toe om precies te controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
+De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver houdt spoor van alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit laat u precies controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
 
 U vindt de proxyserver in de juiste installatiemap:
 
@@ -34,7 +34,7 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 * SMTP voor e-mailberichten
 * LDAP voor gebruikersbeheer
 
-U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een AEM pagina aanvraagt.
+U kunt bijvoorbeeld de proxyserver tussen twee toepassingen plaatsen die via een TCP/IP-netwerk communiceren, bijvoorbeeld een webbrowser en AEM. Hiermee kunt u precies controleren wat er gebeurt wanneer u een AEM pagina aanvraagt.
 
 ## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
 
@@ -86,7 +86,7 @@ Controleren of in leven houden werkt:
 
 **Verzoeken om verlies zoeken**
 
-Als u aanvragen kwijtraakt in een complexe serverinstelling, bijvoorbeeld met een firewall en een verzender, kunt u de proxyserver gebruiken om te bepalen waar de aanvraag verloren is gegaan. In het geval van een firewall:
+Als u aanvragen kwijtraakt in een complexe serverinstelling, bijvoorbeeld met een firewall en een verzender, kunt u de proxyserver gebruiken om te bepalen waar de aanvraag verloren is gegaan. Bij een firewall:
 
 1. Een proxy starten voor een firewall
 1. Een andere proxy starten na een firewall
@@ -185,7 +185,7 @@ De proxyserver is een goed hulpmiddel om te controleren of cookies correct zijn 
 
 * cq3session, cookie gegenereerd door AEM
 * het schakelaar koekje van de showwijze dat door CFC wordt geproduceerd
-* een cookie met de naam JSESSIONID; dit wordt automatisch gemaakt door JSP als dit niet expliciet wordt uitgeschakeld met &lt;%@ page session=&quot;false&quot; %>:
+* een cookie met de naam JSESSIONID; dit wordt automatisch gemaakt door JSP als deze niet expliciet wordt uitgeschakeld met &lt;%@ page session=&quot;false&quot; %>:
 
 ```xml
 C-0-#000393 -> [Cookie: Show=ShowMode; cq3session=3bce15cf-1575-1b4e-8ea6-0d1a0c64738e; JSESSIONID=4161a56b-f193-d748-88a5-e09c5ff7ef2a ]
@@ -281,4 +281,4 @@ Het bovenstaande voorbeeld is relatief eenvoudig, omdat de twee verbindingen ope
 * eerst retourneert de server de HTML-code
 * vervolgens vraagt de browser de afbeelding op en wordt een nieuwe verbinding geopend
 
-In de praktijk kan een pagina veel parallelle aanvragen genereren voor afbeeldingen, stijlpagina&#39;s, JavaScript-bestanden enzovoort. Dit betekent dat de logboeken overlappende vermeldingen van parallelle open verbindingen hebben. In dat geval raden we aan om optie -i te gebruiken om de leesbaarheid te verbeteren.
+In de praktijk kan een pagina veel parallelle aanvragen genereren voor afbeeldingen, stijlpagina&#39;s, JavaScript-bestanden enzovoort. Dit betekent dat de logboeken overlappende vermeldingen van parallelle open verbindingen hebben. In dat geval raden we u aan om optie -i te gebruiken om de leesbaarheid te verbeteren.

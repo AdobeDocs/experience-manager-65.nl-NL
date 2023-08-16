@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2167'
+source-wordcount: '2166'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ U combineert een record met een interactieve communicatiesjabloon om een interac
 AEM Forms biedt een service voor gecontroleerde mappen die is geconfigureerd om de batch-API te gebruiken, zodat u deze API gemakkelijk kunt gebruiken. U kunt tot de dienst via AEM Forms UI toegang hebben om veelvoudige interactieve mededelingen te produceren. U kunt ook naar wens aangepaste services maken. U kunt de hieronder vermelde methoden gebruiken om Batch API met gecontroleerde map te gebruiken:
 
 * Invoergegevens (records) opgeven in JSON-bestandsindeling voor een interactieve communicatie
-* Gebruik invoergegevens (records) die zijn opgeslagen in een externe gegevensbron en die via een formuliergegevensmodel zijn benaderd voor een interactieve communicatie
+* Gebruik invoergegevens (records) die zijn opgeslagen in een externe gegevensbron en die via een formuliergegevensmodel zijn benaderd om een interactieve communicatie te produceren
 
 #### Invoergegevensrecords opgeven in JSON-bestandsindeling voor een interactieve communicatie {#specify-input-data-in-JSON-file-format}
 
@@ -83,8 +83,8 @@ Interactieve communicatie maken op basis van records die zijn opgeslagen in een 
    1. Meld u aan bij de auteur van AEM Forms.
    1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
-   1. Selecteer **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
-   1. Selecteer **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
+   1. Selecteer de **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
+   1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
    1. Geef een **[!UICONTROL Output File Pattern]**. Bijvoorbeeld de %F/ [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) Hiermee geeft u aan dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap\n van de gecontroleerde map.
 1. Geavanceerde parameters configureren:
    1. Open de **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
@@ -145,8 +145,8 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
    1. Meld u aan bij de auteur van AEM Forms.
    1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Forms]** > **[!UICONTROL Configure Watched Folder]**. Tik op **[!UICONTROL New]**.
    1. Geef de **[!UICONTROL Name]** en fysieke **[!UICONTROL Path]** van de map. Bijvoorbeeld, `c:\batchprocessing`.
-   1. Selecteer **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
-   1. Selecteer **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
+   1. Selecteer de **[!UICONTROL Service]** in de **[!UICONTROL Process File Using]** veld.
+   1. Selecteer de **[!UICONTROL com.adobe.fd.ccm.multichannel.batch.impl.service.InteractiveCommunicationBatchServiceImpl]** in de **[!UICONTROL Service Name]** veld.
    1. Geef een **[!UICONTROL Output File Pattern]**. Bijvoorbeeld de %F/ [patroon](https://helpx.adobe.com/experience-manager/6-5/forms/using/admin-help/configuring-watched-folder-endpoints.html#about_file_patterns) Hiermee geeft u aan dat de gecontroleerde map invoerbestanden kan vinden in een submap van de invoermap\n van de gecontroleerde map.
 1. Geavanceerde parameters configureren:
    1. Open de **[!UICONTROL Advanced]** en voeg de volgende aangepaste eigenschappen toe:
@@ -171,7 +171,7 @@ U combineert gegevens (verslagen) die in een externe gegevensbron met een intera
 
 ## De batch-API aanroepen met REST-aanvragen
 
-U kunt [de Batch-API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) via verzoeken tot overdracht van vertegenwoordigingsstaten (REST). Het staat u toe om een REST eindpunt aan andere gebruikers te verstrekken om tot API toegang te hebben en uw eigen methodes voor verwerking, het opslaan, en het aanpassen van interactieve mededeling te vormen. U kunt uw eigen aangepaste Java-servlet ontwikkelen om de API op uw AEM te implementeren.
+U kunt [de Batch-API](https://helpx.adobe.com/experience-manager/6-5/forms/javadocs/index.html) via verzoeken tot overdracht van vertegenwoordigingsstaten (REST). Het laat u een REST eindpunt aan andere gebruikers verstrekken om tot API toegang te hebben en uw eigen methodes voor verwerking te vormen, het opslaan, en het aanpassen van interactieve mededeling te vormen. U kunt uw eigen aangepaste Java-servlet ontwikkelen om de API op uw AEM te implementeren.
 
 Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interactieve communicatie hebt en dat de bijbehorende gegevensbestanden gereed zijn. Voer de volgende stappen uit om het Java-servlet te maken en te implementeren:
 
@@ -346,24 +346,20 @@ Dan toont volgende URL op de publicatieknoop het Kanaal van het Web van de inter
 U slaat de gegevens niet alleen op het bestandssysteem op, maar u slaat JSON-bestanden ook op in CRX-opslagruimte, bestandssysteem, webserver of u hebt toegang tot gegevens via de OSGI-prefill-service. De syntaxis om gegevens samen te voegen die diverse protocollen gebruiken is:
 
 * **CRX-protocol**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=crx:///tmp/fd/af/mergedJsonData.json`
 
 * **Bestandsprotocol**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=file:///C:/Users/af/mergedJsonData.json`
 
 * **Prefill-serviceprotocol**
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
 
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=service://[SERVICE_NAME]/[IDENTIFIER]`
+  SERVICE_NAME verwijst naar de naam van de prefill dienst OSGI. Zie Een vooraf ingevulde service maken en uitvoeren.
 
-   SERVICE_NAME verwijst naar de naam van de prefill dienst OSGI. Zie Een vooraf ingevulde service maken en uitvoeren.
-
-   IDENTIFIER verwijst naar om het even welke meta-gegevens die door de Prefill dienst worden vereist OSGI om de Prefill gegevens te halen. Een id voor de aangemelde gebruiker is een voorbeeld van metagegevens die kunnen worden gebruikt.
+  IDENTIFIER verwijst naar om het even welke meta-gegevens die door de Prefill dienst worden vereist OSGI om de Prefill gegevens te halen. Een id voor de aangemelde gebruiker is een voorbeeld van metagegevens die kunnen worden gebruikt.
 
 * **HTTP-protocol**
-
-   `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
+  `http://host:port/<path-to-ic>/jcr:content?channel=web&mode=preview&guideMergedJsonPath=http://localhost:8000/somesamplexmlfile.xml`
 
 >[!NOTE]
 >

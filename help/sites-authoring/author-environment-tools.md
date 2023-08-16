@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2245'
+source-wordcount: '2240'
 ht-degree: 7%
 
 ---
@@ -22,7 +22,7 @@ De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren 
 
 ## Uw site beheren {#managing-your-site}
 
-De **Sites** Met de console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde bron), broodkruimels en, indien geselecteerd, secundaire rails (bijvoorbeeld tijdlijn en verwijzingen).
+De **Sites** Met de console kunt u door uw website navigeren en deze beheren met behulp van de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde bron), broodkruimels en, indien geselecteerd, secundaire rails (bijvoorbeeld tijdlijn en verwijzingen).
 
 Bijvoorbeeld, kolommening:
 
@@ -46,8 +46,8 @@ U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
 Bij het bewerken van een pagina **Help** kan worden benaderd via:
 
-* de [**Pagina-informatie**](/help/sites-authoring/editing-page-properties.md#page-properties) kiezer; dit zal de inleidende dia&#39;s (zoals getoond de eerste keer u tot de redacteur toegang hebt) tonen.
-* de [configuratie](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) dialoog voor specifieke componenten (gebruiken ? pictogram in de dialoogwerkbalk); dit zal contextgevoelige hulp tonen .
+* de [**Pagina-informatie**](/help/sites-authoring/editing-page-properties.md#page-properties) selecteur; dit zal de inleidende dia&#39;s (zoals getoond de eerste keer u tot de redacteur toegang hebt) tonen.
+* de [configuratie](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) dialoog voor specifieke componenten (gebruiken ? in de dialoogwerkbalk); in deze weergave wordt de contextgevoelige Help weergegeven.
 
 Verdere [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -111,11 +111,11 @@ De middelenbrowser is een tab in het zijpaneel samen met de [browse componenten]
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
-Wanneer u het zijpaneel opent, schuift het van de linkerkant open. Selecteer **Activa** indien nodig.
+Wanneer u het zijpaneel opent, schuift het van de linkerkant open. Selecteer de **Activa** indien nodig.
 
 ![ateat-07](assets/ateat-07.png)
 
-Wanneer de middelenbrowser is geopend, kunt u door alle elementen bladeren die beschikbaar zijn voor uw pagina. Met oneindig schuiven wordt de lijst indien nodig uitgevouwen.
+Wanneer de middelenbrowser is geopend, kunt u door alle elementen bladeren die beschikbaar zijn voor uw pagina. Met oneindig schuiven wordt de lijst indien nodig uitgebreid.
 
 ![ateat-08](assets/ateat-08.png)
 
@@ -146,13 +146,13 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 >[!NOTE]
 >
->Een mobiel apparaat wordt ontdekt wanneer de breedte minder dan 1024px is; dat wil zeggen ook in een klein bureaubladvenster.
+>Een mobiel apparaat wordt gedetecteerd wanneer de breedte minder dan 1024 px is, dus ook in een klein bureaubladvenster.
 
 * **Mobiel apparaat zoals iPad**
 
   De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
 
-  Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
+  Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de gewenste component kunt toevoegen.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -176,7 +176,7 @@ De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met co
 
 ![Inhoudsstructuur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Bovendien wordt het op een complexe pagina gemakkelijker om tussen componenten van de pagina te springen.
+Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer de **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Bovendien wordt het op een complexe pagina gemakkelijker om tussen componenten van de pagina te springen.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -204,7 +204,7 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
   ![Spelpictogram - Bewerken](do-not-localize/screen_shot_2018-03-22at142725.png)
 
-* Of een pagina die deel uitmaakt van een [livecopy](/help/sites-administering/msm.md), waarbij componenten van een andere pagina worden overgeërfd; bijvoorbeeld:
+* Of een pagina die deel uitmaakt van een [livecopy](/help/sites-administering/msm.md), waarbij componenten van een andere pagina worden overgeërfd, bijvoorbeeld:
 
   `https://localhost:4502/editor.html/content/we-retail/us/en/equipment.html`
 
@@ -223,7 +223,7 @@ Als uw pagina inhoudsfragmenten bevat, hebt u ook toegang tot de [browser voor g
 * Live kopieën
 * Taalkopieën
 * Binnenkomende koppelingen
-* Gebruik van de referentiecomponent: geleend en geleend materiaal
+* Gebruik van de referentiecomponent: geleend en geleend inhoud
 * Verwijzingen naar productpagina&#39;s (vanaf de console Handel - Producten)
 
 Open de vereiste console, navigeer dan aan het vereiste middel en open **Verwijzingen** gebruiken:
@@ -252,7 +252,7 @@ U kunt bijvoorbeeld een verbroken verwijzing herstellen in een component Referen
 
 ## Gebeurtenissen - tijdlijn {#events-timeline}
 
-Voor de juiste bronnen (bijvoorbeeld pagina&#39;s van de **Sites** console, of middelen van de **Activa** console) de [tijdlijn kan worden gebruikt om de recente activiteit op om het even welke geselecteerde punten te tonen](/help/sites-authoring/basic-handling.md#timeline).
+Voor de juiste bronnen (bijvoorbeeld pagina&#39;s van de **Sites** console, of middelen van de **Activa** console) de [tijdlijn kan worden gebruikt om de recente activiteit op geselecteerde punten te tonen](/help/sites-authoring/basic-handling.md#timeline).
 
 Open de vereiste console, navigeer dan aan het vereiste middel en open **Tijdlijn**, met:
 
@@ -277,7 +277,7 @@ Met de knop Pagina-informatie (egalisatiepictogram) opent u een menu dat ook inf
 * [Sjabloon bewerken](/help/sites-authoring/templates.md); wanneer de pagina is gebaseerd op een [bewerkbare sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)
 
 * [Weergeven als gepubliceerd](/help/sites-authoring/editing-content.md#view-as-published)
-* Weergeven in Admin; Hiermee opent u de pagina in het dialoogvenster [siteconsole](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* Weergeven in Beheer; opent de pagina in het dialoogvenster [siteconsole](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 * [Help](/help/sites-authoring/basic-handling.md#accessing-help)
 
 Zo, indien van toepassing, **Pagina-informatie** heeft ook de volgende opties:
@@ -292,19 +292,19 @@ Daarnaast **Pagina-informatie** waar nodig toegang kunnen verlenen tot analyses 
 Er zijn verschillende modi voor het bewerken van een pagina die verschillende handelingen mogelijk maken:
 
 * [Bewerken](/help/sites-authoring/editing-content.md) - de modus die moet worden gebruikt bij het bewerken van de pagina-inhoud.
-* [Layout](/help/sites-authoring/responsive-layout.md) - kunt u de responsieve lay-out afhankelijk van het apparaat maken en bewerken (als de pagina is gebaseerd op een lay-outcontainer)
+* [Layout](/help/sites-authoring/responsive-layout.md) - Hiermee kunt u de responsieve indeling afhankelijk van het apparaat maken en bewerken (als de pagina is gebaseerd op een lay-outcontainer)
 
 * [Basisstructuur](/help/sites-authoring/scaffolding.md) - Help u een grote set pagina&#39;s te maken die dezelfde structuur hebben maar verschillende inhoud hebben.
-* [Ontwikkelaar](/help/sites-developing/developer-mode.md) - kunt u verschillende handelingen uitvoeren (hiervoor zijn privileges vereist). Deze omvatten het inspecteren van de technische details van een pagina en de onderdelen ervan.
+* [Ontwikkelaar](/help/sites-developing/developer-mode.md) - Hiermee kunt u verschillende handelingen uitvoeren (hiervoor zijn privileges vereist). Deze omvatten het inspecteren van de technische details van een pagina en de onderdelen ervan.
 
-* [Ontwerp](/help/sites-authoring/default-components-designmode.md) - kunt u componenten voor gebruik op een pagina in- en uitschakelen en het ontwerp van de component configureren (als de pagina is gebaseerd op een [statische sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)).
+* [Ontwerp](/help/sites-authoring/default-components-designmode.md) - Hiermee kunt u componenten voor gebruik op een pagina in- en uitschakelen en het ontwerp van de component configureren (als de pagina is gebaseerd op een [statisch sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)).
 
-* [Doelstelling](/help/sites-authoring/content-targeting-touch.md) - de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten.
+* [Targeting](/help/sites-authoring/content-targeting-touch.md) - de relevantie van inhoud vergroten door de inhoud op alle kanalen te richten en te meten.
 * [Activity Map](/help/sites-authoring/page-analytics-using.md#analyticsvisiblefromthepageeditor) - toont Analytische gegevens voor de pagina.
 
-* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - kunt u een paginastaat op een bepaald tijdstip bekijken.
+* [Timewarp](/help/sites-authoring/working-with-page-versions.md#timewarp) - Hiermee kunt u de status van een pagina op een bepaald tijdstip weergeven.
 * [Status van live kopiëren](/help/sites-authoring/editing-content.md#live-copy-status) - maakt een snel overzicht mogelijk van de status van de live kopie en van de componenten die worden/worden overgeërfd.
-* [Voorvertoning](/help/sites-authoring/editing-content.md#previewing-pages) - wordt gebruikt om de pagina weer te geven zoals deze wordt weergegeven in de publicatieomgeving; of om te navigeren met koppelingen in de inhoud.
+* [Voorvertoning](/help/sites-authoring/editing-content.md#previewing-pages) - wordt gebruikt om de pagina weer te geven zoals deze wordt weergegeven in de publicatieomgeving, of om te navigeren met koppelingen in de inhoud.
 
 * [Annoteren](/help/sites-authoring/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
 
@@ -322,7 +322,7 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 
 ## Padselectie {#path-selection}
 
-Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. Om een pad gemakkelijk te selecteren, [padvelden](/help/sites-authoring/author-environment-tools.md#path-fields) aanbieden en [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) maakt een robuustere selectie mogelijk.
+Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbeeld wanneer u een koppeling naar een andere pagina of bron definieert of een afbeelding selecteert. Om een pad gemakkelijk te selecteren, [padvelden](/help/sites-authoring/author-environment-tools.md#path-fields) aanbieden en de [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) maakt een robuustere selectie mogelijk.
 
 ### Padvelden {#path-fields}
 

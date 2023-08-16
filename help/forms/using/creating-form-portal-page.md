@@ -11,9 +11,9 @@ discoiquuid: 8fff78cb-9ef9-426e-8b30-d70b4f26887f
 docset: aem65
 feature: Forms Portal
 exl-id: 22d7c24e-7a77-4324-afdf-74c1fbf15773
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1650'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ De **Bewerken** bevat verschillende tabbladen met configuratieopties die in de o
   <tr>
    <td> </td>
    <td>Lay-outsjabloon</td>
-   <td>Lay-out van de elementen. </td>
+   <td>Layout van de elementen. </td>
   </tr>
   <tr>
    <td> </td>
@@ -110,13 +110,13 @@ De **Bewerken** bevat verschillende tabbladen met configuratieopties die in de o
   </tr>
   <tr>
    <td> </td>
-   <td>Paginatekst</td>
+   <td>Paginatype</td>
    <td><p>Vormt de paginatekst (bijvoorbeeld <strong>Pagina </strong>1 van 51). De standaardwaarde is <strong>Pagina</strong>.</p> <p>Als u bijvoorbeeld <strong>Toepassingsformulier </strong>in dit veld en er zijn 51 pagina's, verandert de paginatekst in <strong>Toepassingsformulier </strong>1 van 51.</p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Van tekst</td>
-   <td><p>Hiermee vervangt u het woord <strong>van</strong> met de opgegeven tekst (pagina 1 <strong>van </strong>51). De standaardwaarde is <strong>van</strong>.</p> <p>Als u bijvoorbeeld <strong>van </strong>in dit veld verandert de tekst in Pagina 1 <strong>van </strong>51</p> </td>
+   <td><p>Hiermee vervangt u het woord <strong>van</strong> met de opgegeven tekst (pagina 1 <strong>van </strong>51). De standaardwaarde is <strong>van</strong>.</p> <p>Als u bijvoorbeeld <strong>van </strong>in dit veld wordt de tekst gewijzigd in Pagina 1 <strong>van </strong>51.</p> </td>
   </tr>
   <tr>
    <td><span class="uicontrol"><strong>Formulierkoppeling</strong></code></td>
@@ -134,7 +134,7 @@ De **Bewerken** bevat verschillende tabbladen met configuratieopties die in de o
    <td><p>Vormt een servlet waar de vormgegevens worden voorgelegd.</p> <p><strong>Opmerking:</strong> <em>De verzendURL voor een formulier kan op verschillende plaatsen worden opgegeven en de prioriteitsvolgorde is als volgt:</em></p>
     <ol>
      <li><em>VerzendURL die is ingesloten in het formulier (in de knop Verzenden) heeft de hoogste prioriteit.</em></li>
-     <li><em>Verzenden van URL die wordt vermeld in de gebruikersinterface van AEM Forms heeft de tweede hoogste prioriteit.</em></li>
+     <li><em>VerzendURL die wordt vermeld in de gebruikersinterface van AEM Forms heeft de op een na hoogste prioriteit.</em></li>
      <li><em>De laagste prioriteit voor het verzenden van een URL die in het formulierportaal wordt vermeld.</em></li>
     </ol> </td>
   </tr>
@@ -151,7 +151,7 @@ De **Bewerken** bevat verschillende tabbladen met configuratieopties die in de o
   <tr>
    <td><span class="uicontrol"><strong>Stijl</strong></code></td>
    <td>Stijltype</td>
-   <td>Hiermee kunt u opgeven <strong>Geen stijl, standaardstijl</strong>, of <strong>Aangepaste stijl </strong>voor het weergeven van de formulieren.</td>
+   <td>Hier kunt u opgeven <strong>Geen stijl, standaardstijl</strong>, of <strong>Aangepaste stijl </strong>voor het weergeven van de formulieren.</td>
   </tr>
   <tr>
    <td> </td>
@@ -239,7 +239,7 @@ Als u de formulieren in een ontwerpstatus en de reeds ingediende formulieren wil
 
 ## Geschikt voor mobiele apparaten {#mobile-device-friendliness}
 
-De component Forms Portal Search &amp; Lister is gebruiksvriendelijk voor mobiele apparaten en past deze dienovereenkomstig aan. Alle drie standaardweergaven: Net-, Kaart- en deelvensteropnieuw indelingen op basis van het apparaat waarin de site wordt geopend, worden geleverd met het feit dat de webpagina ook wordt aangepast. Het eenvoudige feit is dat Zoeken &amp; register alleen een onderdeel is en geen stijl op paginaniveau reguleert.
+De component Forms Portal Search &amp; Lister is gebruiksvriendelijk voor mobiele apparaten en past deze dienovereenkomstig aan. Alle drie de standaardweergaven: raster, kaart, deelvensterlay-outs op basis van het apparaat waarin de site wordt geopend, worden meegeleverd met het feit dat de webpagina ook wordt aangepast. Het eenvoudige feit is dat Zoeken &amp; register alleen een onderdeel is en geen stijl op paginaniveau reguleert.
 
 In de volgende afbeelding ziet u de component Search &amp; Lister wanneer deze wordt geopend op een mobiel apparaat:
 
@@ -253,7 +253,7 @@ U kunt een pagina voor een portal Formulieren aanpassen om de pagina een andere 
 
 Met de gebruikersinterface van AEM Forms kunt u aangepaste metagegevens toevoegen aan formulieren. Aangepaste metagegevens zijn handig voor het weergeven van lijsten en het zoeken in formulieren voor eindgebruikers. Zie voor meer informatie over aangepaste metagegevens [Sjablonen aanpassen voor Forms Portal-componenten](../../forms/using/customizing-templates-forms-portal-components.md).
 
-Het portal Formulieren biedt renderacties. U kunt de portal Formulieren aanpassen om meer acties toe te voegen. Zie voor meer informatie [Aangepaste actie toevoegen aan formulierbibliotheekitems.](../../forms/using/add-custom-action-form-lister.md)
+Het portal Formulieren biedt renderacties. U kunt de portal Formulieren aanpassen om meer acties toe te voegen. Zie voor meer informatie [Aangepaste actie toevoegen aan formulieritems.](../../forms/using/add-custom-action-form-lister.md)
 
 ## Verwante artikelen
 

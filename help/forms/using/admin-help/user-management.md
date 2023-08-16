@@ -2,7 +2,7 @@
 title: Gebruikersbeheer
 seo-title: User Management
 description: Met Gebruikersbeheer kunt u SSO inschakelen tussen AEM formuliermodules en met Netegrity SiteMinder beveiligde toepassingen door SAML te gebruiken. Dit document bevat meer informatie over Gebruikersbeheer.
-seo-description: User Management allows you to enable SSO between AEM forms modules and Netegrity SiteMinder-protected applications by using SAML. This document provides more information about User Management.
+seo-description: User Management lets you enable SSO between AEM forms modules and Netegrity SiteMinder-protected applications by using SAML. This document provides more information about User Management.
 uuid: f0c8331a-d995-483d-97b7-259df53b1a1a
 contentOwner: admin
 content-type: reference
@@ -10,18 +10,18 @@ geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 exl-id: 1da1f6de-ac0d-4e0d-b8bb-956420e42699
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '472'
 ht-degree: 0%
 
 ---
 
 # Gebruikersbeheer {#user-management}
 
-Met Gebruikersbeheer kunt u SSO (Single Sign-On) inschakelen tussen AEM formuliermodules en toepassingen die met Netegrity SiteMinder zijn beveiligd door SAML (Security Assertion Markup Language) te gebruiken. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
+Met Gebruikersbeheer kunt u SSO (Single Sign-On) inschakelen tussen AEM formuliermodules en toepassingen die door Netegrity SiteMinder zijn beveiligd door SAML (Security Assertion Markup Language) te gebruiken. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
-Voor informatie over het verbeteren van de prestaties van de gegevensbestand en foldersynchronisatie voor DB2, zie [IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Voor informatie over het verbeteren van de prestaties van de gegevensbestand en foldersynchronisatie voor DB2, zie [IBM DB2-database: opdrachten voor regelmatig onderhoud uitvoeren](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## Gebruikersbeheer configureren voor een LDAP-server met SSL-functionaliteit {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
@@ -51,7 +51,7 @@ Nadat u de AEM formulieromgeving hebt geïnstalleerd en geconfigureerd met Docum
 
 ## Gebruikersbeperkingen voor beheerders {#administrator-user-restrictions}
 
-Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen geen toegang tot de webpagina&#39;s van eindgebruikers in Workspace. Omdat deze webpagina&#39;s buiten een firewall kunnen bestaan, kan het toestaan van taken op beheerniveau een beveiligingsrisico opleveren. Alleen gebruikers met de bevoegdheden van Workspace Administrator of Workspace User hebben toegang tot de webpagina&#39;s van de eindgebruiker.
+Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen geen toegang tot de webpagina&#39;s van eindgebruikers in Workspace. Omdat deze webpagina&#39;s buiten een firewall kunnen bestaan, kan het toestaan van taken op beheerniveau een beveiligingsrisico opleveren. Alleen gebruikers met de bevoegdheden van Workspace Administrator of Workspace User hebben toegang tot de webpagina&#39;s van eindgebruikers.
 
 >[!NOTE]
 >

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: aaeef8fcc0ed5f205aeb7ab40cc61f60912c9869
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1973'
+source-wordcount: '1969'
 ht-degree: 0%
 
 ---
@@ -23,18 +23,18 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De Context van de cliënt is vervangen door ContextHub. Zie de verwante pagina&#39;s voor meer informatie [configuratie](/help/sites-developing/ch-configuring.md) en [ontwikkelaar](/help/sites-developing/contexthub.md) documentatie.
+>De Context van de cliënt is vervangen door ContextHub. Zie de verwante documentatie voor meer informatie [configuratie](/help/sites-developing/ch-configuring.md) en [ontwikkelaar](/help/sites-developing/contexthub.md) documentatie.
 
-De context van de Cliënt is een mechanisme dat u van bepaalde informatie over de huidige pagina en de bezoeker voorziet. Het kan worden geopend met **Ctrl-Alt-c** (vensters) of **control-option-c** (Mac):
+De context van de Cliënt is een mechanisme dat u van bepaalde informatie over de huidige pagina en de bezoeker voorziet. Het kan worden geopend met **Ctrl-Alt-c** (ramen) of **control-option-c** (Mac)
 
 ![Een voorbeeld van het venster Client Context](assets/clientcontext_alisonparker.png)
 
 In zowel de publicatie- als de auteursomgeving wordt informatie weergegeven over:
 
-* de bezoeker; afhankelijk van uw instantie wordt bepaalde informatie gevraagd, of afgeleid.
+* De bezoeker; afhankelijk van uw instantie wordt bepaalde informatie gevraagd, of afgeleid.
 * Paginalabels en het aantal keren dat deze labels door de huidige bezoeker zijn geopend (dit wordt weergegeven wanneer u de muis over een specifieke tag beweegt).
 * Pagina-informatie.
-* informatie over de technische omgeving; zoals het IP-adres, de browser en de schermresolutie.
+* Informatie over het technische milieu; zoals het IP adres, browser en het schermresolutie.
 * Om het even welke segmenten die momenteel worden opgelost.
 
 Met de pictogrammen (alleen beschikbaar in de auteursomgeving) kunt u de details van de clientcontext configureren:
@@ -64,11 +64,11 @@ De context van de Cliënt kan de volgende eigenschappen tonen ([afhankelijk van 
 * de **muis X** positie
 * de **mouse Y** positie
 
-**Activiteitenstroom** Dit biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms; bijvoorbeeld de AEM forums , blogs , beoordelingen , enz .
+**Activiteitenstroom** Dit biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms, bijvoorbeeld de AEM forums, blogs, beoordelingen, enz.
 
 **Campagne** Hiermee kunnen auteurs een specifieke ervaring voor een campagne simuleren. Deze component overschrijft de normale campagneresolutie en ervaringsselectie om het testen van verschillende permutaties mogelijk te maken.
 
-De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt normaal geselecteerd gebaseerd op segmentatie.
+De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt gewoonlijk geselecteerd gebaseerd op segmentatie.
 
 **Kar** Geeft winkelwagengegevens weer, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enz.), opgeloste aanbiedingen (titel, bericht, enz.) en vouchers (code, beschrijving, enz.).
 
@@ -88,7 +88,7 @@ Wanneer de component in de Context Cloud wordt weergegeven, gebruikt de componen
 
 >[!NOTE]
 >
->In AEM 6.1 biedt het Geolocation Store niet langer de functie voor omgekeerde geocoding. Daarom wint de opslag Geolocation geen details meer over de huidige plaats, zoals de plaatsnaam of landcode terug. Segmenten die deze opslaggegevens gebruiken, werken niet correct. Het Geolocation-archief bevat alleen de breedte en lengte van een locatie.
+>In AEM 6.1 biedt het Geolocation Store niet langer de functie voor omgekeerde geocoding. Daarom wint de opslag Geolocation geen details meer over de huidige plaats, zoals de plaatsnaam of landcode terug. Segmenten die deze opslaggegevens gebruiken, werken niet correct. De Geolocation Store bevat alleen de breedte en lengte van een locatie.
 
 **JSONP Store** Een component die inhoud weergeeft die afhankelijk is van uw installatie.
 
@@ -164,7 +164,7 @@ Wanneer u klaar bent, kunt u [het profiel opnieuw instellen](#resetting-the-prof
 
 U kunt ook een profiel selecteren met de selectieregelaar:
 
-1. Dubbelklik op het pictogram dat de huidige gebruiker vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare profielen te bekijken:
+1. Dubbelklik op het pictogram dat de huidige gebruiker vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare profielen weer te geven:
 
    ![De gebruikerskiezer](assets/clientcontext_profileselector.png)
 
@@ -176,7 +176,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
    ![Het pictogram Opnieuw instellen](do-not-localize/clientcontext_resetprofile.png)
 
-### Het Platform Browser wijzigen {#changing-the-browser-platform}
+### Het browserplatform wijzigen {#changing-the-browser-platform}
 
 1. Dubbelklik op het pictogram dat het browserplatform vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare platforms/browsers te bekijken:
 
@@ -204,25 +204,25 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaalde eigenschappen in te stellen (of opnieuw in te stellen), een nieuwe eigenschap toe te voegen of een eigenschap te verwijderen die niet langer nodig is.
 
-### Bewerkingsdetails {#editing-property-details}
+### Eigenschappendetails bewerken {#editing-property-details}
 
-Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaalde eigenschappen in te stellen (of opnieuw in te stellen). Dit staat u toe om specifieke scenario&#39;s (met name nuttig te testen voor [segmentatie](/help/sites-administering/campaign-segmentation.md) en [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
+Als u een clientcontext bewerkt, kunt u de waarden van bepaalde eigenschappen instellen (of opnieuw instellen). Hiermee kunt u specifieke scenario&#39;s testen (vooral handig voor [segmentatie](/help/sites-administering/campaign-segmentation.md) en [campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)).
 
 ![De clientcontext bewerken](assets/clientcontext_alisonparker_edit.png)
 
 ### Een component Property toevoegen {#adding-a-property-component}
 
-Nadat u de **ClientContext-ontwerppagina** kunt u ook **Toevoegen** een volledig nieuwe eigenschap met behulp van de beschikbare componenten (de componenten worden vermeld op zowel de hulpwerkplaats als op de **Nieuwe component invoegen** wordt geopend nadat u dubbelklikt op de knop **Componenten of elementen hierheen slepen** vak):
+Nadat u de **Ontwerppagina van ClientContext** kunt u ook **Toevoegen** een volledig nieuwe eigenschap met behulp van de beschikbare componenten (de componenten worden vermeld op zowel het zijpaneel als van het **Nieuwe component invoegen** wordt geopend nadat u dubbelklikt op de knop **Componenten of elementen hierheen slepen** vak):
 
 ![Een eigenschap toevoegen aan het venster Client Context](assets/clientcontext_alisonparker_new.png)
 
 ### Een component Property verwijderen {#removing-a-property-component}
 
-Nadat u de **ClientContext-ontwerppagina** kunt u ook **Verwijderen** een eigenschap als deze niet meer vereist is. Dit omvat eigenschappen die buiten de box worden geleverd; **Herstellen** deze weer in te voeren als ze zijn verwijderd.
+Nadat u de **Ontwerppagina van ClientContext** kunt u ook **Verwijderen** een eigenschap als deze niet meer vereist is. Dit omvat eigenschappen die buiten de box worden geleverd; **Herstellen** deze weer in te voeren als ze zijn verwijderd.
 
 ## Gegevens opslaan in clientcontext via JSONP {#storing-data-in-client-context-via-jsonp}
 
-Volg dit voorbeeld om de JSONP component van de de contextopslag van de Opslag te gebruiken om externe gegevens aan de Context van de Cliënt toe te voegen. Maak vervolgens een segment op basis van de informatie uit die gegevens. Het voorbeeld gebruikt de dienst JSONP die WIPmania.com verleent. De service retourneert informatie over de geolocatie op basis van het IP-adres van de webclient.
+Volg dit voorbeeld om de JSONP component van de de contextopslag van de Opslag te gebruiken om externe gegevens aan de Context van de Cliënt toe te voegen. Maak vervolgens een segment op basis van de informatie uit die gegevens. Het voorbeeld gebruikt de dienst JSONP die WIPmania.com verstrekt. De service retourneert informatie over de geolocatie op basis van het IP-adres van de webclient.
 
 In dit voorbeeld wordt de voorbeeldwebsite van Geometrixx Outdoors gebruikt om toegang te krijgen tot Client Context en het gemaakte segment te testen. U kunt een andere website gebruiken zolang de pagina Clientcontext heeft ingeschakeld. (Zie [Clientcontext aan een pagina toevoegen](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
@@ -261,7 +261,7 @@ Gebruik de gegevens van de zittingsopslag die u gebruikend de JSONP opslagcompon
 1. De console Tools openen in uw webbrowser (`https://localhost:4502/miscadmin#/etc`).
 1. Klik in de mappenstructuur op de map Tools/Segmentation en klik vervolgens op Nieuw > Nieuwe map. Geef de volgende eigenschapswaarden op en klik op Maken:
 
-   * Naam: mysegments
+   * Naam: mijnsegmenten
    * Titel: Mijn segmenten
 
 1. Selecteer de map Mijn segmenten en klik op Nieuw > Nieuwe pagina:
@@ -277,8 +277,8 @@ Gebruik de gegevens van de zittingsopslag die u gebruikend de JSONP opslagcompon
 
 1. Dubbelklik op de component om het dialoogvenster Bewerken te openen, geef de volgende eigenschapswaarden op en klik op OK:
 
-   * Winkel: wipmanie
-   * Naam eigenschap: breedtegraad
+   * Bewaren: wipmanie
+   * Eigenschapnaam: breedtegraad
    * Operator: is groter dan
    * Waarde eigenschap: 30
 

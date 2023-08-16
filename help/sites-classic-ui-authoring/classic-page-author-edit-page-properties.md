@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 exl-id: 1a77e4cd-bbf8-4d05-bb35-fd43c02eaf30
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '761'
 ht-degree: 1%
 
 ---
@@ -27,153 +27,152 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
 * **Titel**
 
-   De titel van de pagina wordt op verschillende locaties weergegeven. De **Websites** en de **Sites** kaart-/lijstweergaven.
+  De titel van de pagina wordt op verschillende locaties weergegeven. Bijvoorbeeld de **Websites** en de **Sites** kaart-/lijstweergaven.
 
-   Dit is een verplicht veld.
+  Dit is een verplicht veld.
 
 * **Tags**
 
-   Hier kunt u codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken:
+  Hier kunt u codes toevoegen aan of verwijderen uit de pagina door de lijst in het selectievak bij te werken:
 
    * Nadat u een tag hebt geselecteerd, wordt deze weergegeven onder het selectievak. U kunt een tag uit deze lijst verwijderen met de x.
    * U kunt een volledig nieuwe tag invoeren door de naam in een leeg selectievak te typen.
 
-      De nieuwe tag wordt gemaakt wanneer u op Enter drukt. De nieuwe tag wordt dan weergegeven in een vak, met rechts een kleine ster die aangeeft dat het een nieuwe tag is.
+     De nieuwe tag wordt gemaakt wanneer u op Enter drukt. De nieuwe tag wordt dan weergegeven in een vak, met rechts een kleine ster die aangeeft dat het een nieuwe tag is.
 
    * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
-   * Een x wordt weergegeven wanneer u de muis boven een tagitem in het selectievak houdt. U kunt deze optie gebruiken om die tag voor deze pagina te verwijderen.
+   * Er verschijnt een x wanneer u de muis boven een tag-item in het selectievak houdt. U kunt dit gebruiken om die tag voor deze pagina te verwijderen.
 
 * **Verbergen in navigatie**
 
-   Een schakeloptie om aan te geven of de pagina wordt weergegeven of verborgen in de paginanavigatie.
+  Een schakeloptie om aan te geven of de pagina wordt weergegeven of verborgen in de paginanavigatie.
 
 * **Paginatitel**
 
-   Een titel die op de pagina moet worden gebruikt.
+  Een titel die op de pagina moet worden gebruikt.
 
 * **Navigatietitel**
 
-   U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Indien leeg, **Titel** wordt gebruikt.
+  U kunt een aparte titel opgeven voor gebruik in de navigatie (bijvoorbeeld als u iets beknopter wilt). Indien leeg, **Titel** wordt gebruikt.
 
 * **Ondertitel**
 
-   Een ondertitel voor gebruik op de pagina.
+  Een ondertitel voor gebruik op de pagina.
 
 * **Beschrijving**
 
-   Uw beschrijving van de pagina, het doel ervan of andere details die u wilt toevoegen.
+  Uw beschrijving van de pagina, het doel ervan of andere details die u wilt toevoegen.
 
 * **Op tijd**
 
-   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
+  De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
 
-   Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
+  Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
 * **Uit-tijd**
 
-   De tijd waarop de gepubliceerde pagina wordt gedeactiveerd.
+  De tijd waarop de gepubliceerde pagina wordt gedeactiveerd.
 
-   Laat deze velden weer leeg voor pagina&#39;s die u direct wilt publiceren.
+  Laat deze velden weer leeg voor pagina&#39;s die u direct wilt publiceren.
 
 * **Vanity URL**
 
-   Hiermee kunt u een vanity-URL voor deze pagina invoeren. Hierdoor hebt u een kortere en expressievere URL.
+  Hiermee kunt u een vanity-URL voor deze pagina invoeren. Hierdoor hebt u een kortere en expressievere URL.
 
-   Als de URL voor Vanity bijvoorbeeld is ingesteld op w `elcome`naar de pagina die wordt aangegeven door het pad / `v1.0/startpage`voor de website h `ttp://example.com,` vervolgens h `ttp://example.com/welcome`zou de vanity URL van h zijn `ttp://example.com/content/v1.0/startpage`
+  Als de URL voor Vanity bijvoorbeeld is ingesteld op w `elcome`naar de pagina die wordt aangegeven door het pad / `v1.0/startpage`voor de website h `ttp://example.com,` vervolgens h `ttp://example.com/welcome`zou de vanity URL van h zijn `ttp://example.com/content/v1.0/startpage`
 
-   >[!CAUTION]
-   >
-   >Vanity-URL&#39;s:
-   >
-   >* moet uniek zijn, dus zorg ervoor dat de waarde niet reeds door een andere pagina wordt gebruikt.
-   >* bieden geen ondersteuning voor regex-patronen.
-
+  >[!CAUTION]
+  >
+  >Vanity-URL&#39;s:
+  >
+  >* moet uniek zijn, dus zorg ervoor dat de waarde niet reeds door een andere pagina wordt gebruikt.
+  >* regex-patronen niet ondersteunen.
 
 * **Redirect Vanity URL**
 
-   Hiermee geeft u aan of u wilt dat de pagina de vanity-URL gebruikt.
+  Hiermee geeft u aan of u wilt dat de pagina de vanity-URL gebruikt.
 
 ### Geavanceerd {#advanced}
 
 * **Taal**
 
-   De paginataal.
+  De paginataal.
 
 * **Omleiden**
 
-   Geef de pagina op waarnaar deze pagina automatisch moet worden omgeleid.
+  Geef de pagina op waarnaar deze pagina automatisch moet worden omgeleid.
 
 * **Ontwerp**
 
-   Geef de [ontwerp](/help/sites-developing/designer.md) die voor deze pagina moet worden gebruikt.
+  Geef de [ontwerp](/help/sites-developing/designer.md) voor deze pagina te gebruiken.
 
 * **Alias**
 
-   Geef een alias op die voor deze pagina moet worden gebruikt.
+  Geef een alias op die voor deze pagina moet worden gebruikt.
 
 * **Gesloten gebruikersgroep inschakelen**
 
-   Hiermee wordt het gebruik van [gesloten gebruikersgroepen](/help/sites-administering/cug.md) (CUG&#39;s).
+  Hiermee wordt het gebruik van [gesloten gebruikersgroepen](/help/sites-administering/cug.md) (CUG&#39;s).
 
 * **Aanmeldingspagina**
 
-   De pagina die voor login moet worden gebruikt.
+  De pagina die voor login moet worden gebruikt.
 
 * **Toegestane groepen**
 
-   Groepen die in aanmerking komen voor aanmelding bij de CUG.
+  Groepen die in aanmerking komen voor aanmelding bij de CUG.
 
 * **Realm**
 
-   Realm name for the CUG.
+  Realm name for the CUG.
 
 * **Configuratie exporteren**
 
-   Geef een exportconfiguratie op.
+  Geef een exportconfiguratie op.
 
 ### Miniatuur {#thumbnail}
 
 * **Paginaminiatuur**
 
-   Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
+  Hiermee geeft u de miniatuurafbeelding van de pagina weer. U kunt:
 
    * **Voorvertoning genereren**
 
-      Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken.
+     Genereer een voorvertoning van de pagina die u als miniatuur wilt gebruiken.
 
    * **Afbeelding uploaden**
 
-      Upload een afbeelding die u als miniatuur wilt gebruiken.
+     Upload een afbeelding die u als miniatuur wilt gebruiken.
 
 ### Cloud Services {#cloud-services}
 
 * **Cloud Services**
 
-   Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
+  Eigenschappen definiëren voor [cloudservices](/help/sites-developing/extending-cloud-config.md).
 
 ### Personalisatie {#personalization}
 
 * **Personalisatie**
 
-   Selecteer een [Merk om een werkingsgebied voor het richten te specificeren](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
+  Selecteer een [Merk om een werkingsgebied voor het richten te specificeren](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md).
 
 ### Machtigingen {#permissions}
 
 * **Machtigingen** (interface met aanraakoptimalisatie)
 
-   De weergave van [effectieve machtigingen en nieuwe machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md).
+  De weergave [effectieve machtigingen en nieuwe machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md).
 
 ### Blauwdruk {#blueprint}
 
 * **Blauwdruk**
 
-   Eigenschappen definiëren voor een pagina Vervagen in [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
+  Eigenschappen definiëren voor een pagina Vervagen in [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven aan Live kopie.
 
 ### Live kopie {#live-copy}
 
 * **Livecopy**
 
-   Eigenschappen definiëren voor een pagina van Live kopie binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
+  Eigenschappen definiëren voor een pagina van Live kopie binnen [beheer op meerdere locaties](/help/sites-administering/msm.md). Hiermee bepaalt u de omstandigheden waaronder wijzigingen worden doorgegeven via het blauwdruk.
 
 ### Sitestructuur {#site-structure}
 
@@ -191,4 +190,4 @@ Pagina-eigenschappen definiëren de verschillende eigenschappen van de pagina, z
 
    Hiermee wordt een dialoogvenster met meerdere tabbladen geopend.
 
-1. Breng de gewenste wijzigingen aan en klik op **OK** om op te slaan.
+1. Breng de gewenste wijzigingen aan en klik op **OK** opslaan.

@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1622'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -19,19 +19,19 @@ In deze sectie worden de opties beschreven die beschikbaar zijn wanneer u een ze
 
 ## Het veranderen van het Aantal van de Haven door het Dossier anders te noemen {#changing-the-port-number-by-renaming-the-file}
 
-De standaardpoort voor AEM is 4502. Als die haven niet beschikbaar of reeds in gebruik is, vormt QuickStart automatisch om het eerste beschikbare havenaantal als volgt te gebruiken: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 8888, 9362, `<*random*>`.
+De standaardpoort voor AEM is 4502. Als die haven niet beschikbaar of reeds in gebruik is, vormt QuickStart automatisch om het eerste beschikbare havenaantal als volgt te gebruiken: 4502, 8080, 8081, 8082, 8083, 8084, 8085, 888, 9362, `<*random*>`.
 
-U kunt het poortnummer ook instellen door de naam van het snelstartbestand te wijzigen, zodat de bestandsnaam het poortnummer bevat. bijvoorbeeld: `cq5-publish-p4503.jar` of `cq5-author-p6754.jar`.
+U kunt het poortnummer ook instellen door de naam van het JAR-bestand met de naam QuickStart te wijzigen, zodat de bestandsnaam het poortnummer bevat, bijvoorbeeld `cq5-publish-p4503.jar` of `cq5-author-p6754.jar`.
 
 Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de naam van het snelstartjar-bestand:
 
 * Wanneer u de naam van het bestand wijzigt, moet u beginnen met `cq;` zoals in `cq5-publish-p4503.jar`.
 
-* U wordt aangeraden *altijd* het poortnummer voorvoegsel met -p; zoals in cq5-publish-p4503.jar of cq5-auteurp6754.jar.
+* U wordt aangeraden *altijd* voegt u het poortnummer toe met -p; zoals in cq5-publish-p4503.jar of cq5-signer-p6754.jar.
 
 >[!NOTE]
 >
->Dit moet ervoor zorgen dat u zich geen zorgen hoeft te maken over het naleven van de regels die worden gebruikt voor het uitpakken van het poortnummer:
+>Dit moet ervoor zorgen dat u zich geen zorgen hoeft te maken over het voldoen aan de regels die worden gebruikt voor het uitpakken van het poortnummer:
 >
 >* het havenaantal moet 4 of 5 cijfers zijn
 >* deze cijfers moeten na een streepje komen
@@ -45,7 +45,7 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 
 ### Overwegingen bij Java 11 {#java-considerations}
 
-Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen AEM.
+Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen van AEM.
 
 * Het volgende - `-add-opens` de schakelaars moeten worden toegevoegd om verwante bezinningstoegang te verhinderen WARNING berichten in `stdout.log`
 
@@ -67,13 +67,13 @@ Tot slot als u een instantie in werking stelt die van AEM 6.3 wordt bevorderd, z
 
 ## Modi uitvoeren {#run-modes}
 
-**Modus Uitvoeren** u toestaan om uw AEM instantie voor een specifiek doel te stemmen; bijvoorbeeld auteur of publicatie, test, ontwikkeling, intranet enz. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud is gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
+**Modus Uitvoeren** Hiermee kunt u uw AEM instellen voor een bepaald doel, bijvoorbeeld voor auteur of publicatie, test, ontwikkeling, intranet enzovoort. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud is gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
 
 * [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md)
 
 ## Een leverancier voor het installeren van bestanden toevoegen {#adding-a-file-install-provider}
 
-Standaard de map `crx-quickstart/install` wordt gecontroleerd op bestanden.
+Standaard is de map `crx-quickstart/install` wordt gecontroleerd op bestanden.
 Deze map bestaat niet, maar kan eenvoudig bij uitvoering worden gemaakt.
 
 Als een bundel, configuratie of inhoudspakket in deze folder wordt gezet, wordt het automatisch opgenomen en geïnstalleerd. Als het wordt verwijderd, wordt het verwijderd.
@@ -107,7 +107,7 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
    Dit bevel haalt het aangewezen manuscript aan dat de de dienstdaemon van Vensters in Java met 64 bits in plaats van Java met 32 bits begint.
 
-1. Verhoog de PermGen JVM-parameter om te voorkomen dat het proces in meer dan één proces wordt vervormd. Zoek de `set jvm_options` en stel de waarde als volgt in:
+1. Verhoog de PermGen JVM-parameter om te voorkomen dat het proces in meerdere processen wordt vervormd. Zoek de `set jvm_options` en stel de waarde als volgt in:
 
    `set jvm_options=-Xmx1792m`
 
@@ -115,7 +115,7 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
    `instsrv.bat cq5`
 
-   Om te verifiëren dat de dienst wordt gecreeerd, open de Diensten in het Administratieve Controlebord of type van Hulpmiddelen `start services.msc` in opdrachtprompt. De cq5-service wordt in de lijst weergegeven.
+   Om te verifiëren dat de dienst wordt gecreeerd, open de Diensten in het Administratieve Controlebord of type van Hulpmiddelen `start services.msc` in Opdrachtprompt. De cq5-service wordt in de lijst weergegeven.
 
 1. Start de service op een van de volgende manieren:
 
@@ -137,9 +137,9 @@ Om AEM als dienst van Vensters te installeren en te beginnen:
 
 >[!NOTE]
 >
->Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` van de Manager van de Configuratie.
+>Wanneer u AEM als service installeert, moet u het absolute pad voor de logboekmap opgeven in `com.adobe.xmp.worker.files.ncomm.XMPFilesNComm` in Configuratiebeheer.
 
-Als u de service wilt verwijderen, klikt u op **Stoppen** in de **Services** navigeer naar de map en typ `instsrv.bat -uninstall cq5`. De service wordt verwijderd uit de lijst in het dialoogvenster **Services** regelpaneel of in de lijst op de opdrachtregel wanneer u typt `net start`.
+Klik op **Stoppen** in de **Services** navigeer naar de map en typ `instsrv.bat -uninstall cq5`. De service wordt verwijderd uit de lijst in het dialoogvenster **Services** regelpaneel of in de lijst op de opdrachtregel wanneer u typt `net start`.
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
@@ -273,7 +273,7 @@ Log files
 
 ## AEM installeren in de Amazon EC2-omgeving {#installing-aem-in-the-amazon-ec-environment}
 
-Wanneer u AEM installeert op een Amazon Elastic Compute Cloud (EC2)-instantie, als u zowel auteur als publicatie op het EC2-exemplaar installeert, wordt de Author-instantie correct geïnstalleerd door de procedure op [Instanties van AEM Manager installeren](#installinginstancesofaemmanager); de instantie Publish wordt echter Auteur.
+Wanneer u AEM installeert op een Amazon Elastic Compute Cloud (EC2)-instantie, als u zowel auteur als publicatie op het EC2-exemplaar installeert, wordt de Author-instantie correct geïnstalleerd door de procedure op [Instanties van AEM Manager installeren](#installinginstancesofaemmanager)De instantie Publiceren wordt echter Auteur.
 
 Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installeert:
 
@@ -297,7 +297,7 @@ Ga als volgt te werk voordat u de instantie Publish op uw EC2-omgeving installee
    >
    >Zorg ervoor dat u de instantie eerst uitvoert nadat u deze hebt uitgepakt door de bovenstaande opdracht uit te voeren. Anders wordt de vulling quickstart.properties niet gegenereerd. Zonder dit bestand zullen toekomstige AEM upgrades mislukken.
 
-1. In de **bin** map, opent u de **start** en controleer de volgende sectie:
+1. In de **bin** de map openen **start** en controleer de volgende sectie:
 
    ```xml
    # runmode(s)
@@ -339,7 +339,7 @@ Hoewel er vele mogelijkheden zijn om AEM WCM te vormen, zouden bepaalde acties m
 Nadat AEM WCM is gestart, hebt u ook toegang tot:
 
 * [CRXDE Lite](#accessing-crxde-lite) - wordt gebruikt voor toegang tot en beheer van de gegevensopslagplaats
-* [Webconsole](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (die ook als Console OSGi wordt bekend)
+* [Webconsole](#accessing-the-web-console) - wordt gebruikt om de bundels te beheren of te vormen OSGi (ook genoemd als Console OSGi)
 
 ### Toegang tot CRXDE Lite {#accessing-crxde-lite}
 
@@ -356,7 +356,7 @@ Bijvoorbeeld:
 
 #### Toegang tot de webconsole {#accessing-the-web-console}
 
-Als u de Adobe CQ-webconsole wilt openen, selecteert u **OSGi Console** vanuit het welkomstscherm of gebruik uw browser om naar
+Als u toegang wilt tot de Adobe CQ-webconsole, kunt u **OSGi Console** vanuit het welkomstscherm of gebruik uw browser om naar
 
 ```
  https://<host>:<port>/system/console

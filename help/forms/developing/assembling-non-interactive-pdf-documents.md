@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 role: Developer
 exl-id: 4677b9e5-3811-4de3-b4f4-9574b5898486
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1775'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Voor deze bespreking, veronderstel dat het volgende DDX- document wordt gebruikt
 
 Binnen dit DDX-document wordt de waarde toegewezen aan het bronkenmerk `inDoc`. In situaties waarin slechts één invoerdocument van de PDF wordt overgegaan tot de dienst van de Assembler en één document van de PDF wordt teruggekeerd, en u roept `invokeOneDocument` bewerking, wijs de waarde toe `inDoc` naar het PDF-bronkenmerk. Wanneer het aanhalen van `invokeOneDocument` de `inDoc` waarde is een vooraf gedefinieerde sleutel die in het DDX-document moet worden opgegeven.
 
-Wanneer u daarentegen twee of meer invoerdocumenten van de PDF naar de Assembler-service doorgeeft, kunt u de `invokeDDX` bewerking. In dit geval wijst u de bestandsnaam van het invoerdocument PDF toe aan het `source` kenmerk.
+Wanneer u daarentegen twee of meer invoerdocumenten van de PDF naar de Assembler-service doorgeeft, kunt u de `invokeDDX` -bewerking. In dit geval wijst u de bestandsnaam van het invoerdocument PDF toe aan het `source` kenmerk.
 
 Dit DDX-document bevat de `NoXFA` element, dat de dienst van de Assembler opdraagt om een niet-interactief document van de PDF terug te keren.
 
@@ -45,7 +45,7 @@ De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder da
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, is het raadzaam bekend te zijn met het samenstellen van PDF-documenten met de Assembler-service. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+>Alvorens deze sectie te lezen, adviseert men dat u vertrouwd bent met het assembleren van de documenten van PDF gebruikend de dienst van de Assembler. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder da
 
 >[!NOTE]
 >
->Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -64,7 +64,7 @@ U kunt als volgt een niet-interactief PDF-document samenstellen:
 1. Verwijs naar een bestaand DDX-document.
 1. Verwijs naar een interactief PDF-document.
 1. Stel runtime-opties in.
-1. Zet het PDF-document samen.
+1. Samenstellen van het PDF-document.
 1. Sla het niet-interactieve PDF-document op.
 
 **Projectbestanden opnemen**
@@ -89,7 +89,7 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, moe
 
 Er moet naar een DDX-document worden verwezen om een PDF-document samen te stellen. Dit DDX-document moet de `NoXFA` element, dat de dienst van de Assembler opdraagt om een niet-interactief document van de PDF terug te keren.
 
-**Verwijzen naar een interactief PDF-document**
+**Een interactief PDF-document raadplegen**
 
 Er moet naar een interactief PDF-document worden verwezen en dat document moet worden doorgegeven aan de Assembler-service om een niet-interactief PDF-document te kunnen terugkrijgen.
 
@@ -99,7 +99,7 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Het PDF-document samenstellen**
 
-Nadat u de de dienstcliënt van de Assembler creeert, van verwijzingen het DX- document, van verwijzingen een interactief document van de PDF, en vastgestelde runtime opties, kunt u aanhalen `invokeOneDocument` bewerking. Omdat slechts één invoerdocument van de PDF aan de dienst van de Assembler wordt overgegaan en één enkel document is teruggekeerd, kunt u gebruiken `invokeOneDocument` in tegenstelling tot de `invokeDDX` bewerking.
+Nadat u de de dienstcliënt van de Assembler creeert, van verwijzingen het DX- document, van verwijzingen een interactief document van de PDF, en vastgestelde runtime opties, kunt u aanhalen `invokeOneDocument` -bewerking. Omdat slechts één invoerdocument van de PDF aan de dienst van de Assembler wordt overgegaan en één enkel document is teruggekeerd, kunt u gebruiken `invokeOneDocument` in tegenstelling tot de `invokeDDX` -bewerking.
 
 **Niet-interactief PDF-document opslaan**
 
@@ -124,12 +124,12 @@ U kunt een niet-interactief PDF-document samenstellen met de API (Java) voor ver
 1. Maak een Assembler-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Verwijs naar een interactief PDF-document.
 
@@ -141,7 +141,7 @@ U kunt een niet-interactief PDF-document samenstellen met de API (Java) voor ver
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
    * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een methode aan te roepen die tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, haalt het `AssemblerOptionSpec` object `setFailOnError` methode en doorgeven `false`.
 
-1. Zet het PDF-document samen.
+1. Samenstellen van het PDF-document.
 
    De `AssemblerServiceClient` object `invokeOneDocument` en geeft de volgende waarden door:
 
@@ -154,9 +154,9 @@ U kunt een niet-interactief PDF-document samenstellen met de API (Java) voor ver
 1. Sla het niet-interactieve PDF-document op.
 
    * Een `java.io.File` en zorg ervoor dat de bestandsnaamextensie .pdf is.
-   * De `Document` object `copyToFile` methode om de inhoud van de `Document` naar het bestand. Zorg ervoor dat u de `Document` object dat `invokeOneDocument` geretourneerde methode.
+   * De `Document` object `copyToFile` methode om de inhoud van de `Document` naar het bestand. Zorg ervoor dat u de `Document` het object dat `invokeOneDocument` geretourneerde methode.
 
-* &quot;Snel starten (SOAP-modus): Een niet-interactief PDF-document samenstellen met de Java API&quot;
+* &quot;Snel starten (SOAP-modus): een niet-interactief PDF-document samenstellen met de Java API&quot;
 
 ## Een niet-interactief PDF-document samenstellen met de webservice-API {#assemble-a-non-interactive-pdf-document-using-the-web-service-api}
 
@@ -173,7 +173,7 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
 1. Maak een Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -186,7 +186,7 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het DDX-document op te slaan.
-   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het DDX-document en de modus voor het openen van het bestand in vertegenwoordigt.
    * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` methode. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
    * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
@@ -204,7 +204,7 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opslaat met de constructor ervan.
    * Stel runtime-opties in om aan uw bedrijfsvereisten te voldoen door een waarde toe te wijzen aan een gegevenslid dat tot de `AssemblerOptionSpec` object. Bijvoorbeeld, om de dienst van de Assembler op te dragen om een baan te blijven verwerken wanneer een fout voorkomt, wijs toe `false` aan de `AssemblerOptionSpec` object `failOnError` lid.
 
-1. Zet het PDF-document samen.
+1. Samenstellen van het PDF-document.
 
    De `AssemblerServiceClient` object `invokeOneDocument` en geeft de volgende waarden door:
 
@@ -217,11 +217,11 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
 1. Sla het niet-interactieve PDF-document op.
 
    * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het niet-interactieve PDF-document en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van de `BLOB` object dat `invokeOneDocument` geretourneerde methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` veld.
+   * Maak een bytearray waarin de inhoud van de `BLOB` het object dat `invokeOneDocument` geretourneerde methode. Vul de bytearray met de waarde van de `BLOB` object `MTOM` veld.
    * Een `System.IO.BinaryWriter` object door de constructor aan te roepen en de `System.IO.FileStream` object.
    * Schrijf de inhoud van de bytearray naar een PDF-bestand door het `System.IO.BinaryWriter` object `Write` en geeft u de bytearray door.
 
-* &quot;Snel starten (MTOM): Een niet-interactief PDF-document samenstellen met de webservice-API&quot;.
+* &quot;Quick Start (MTOM): een niet-interactief PDF-document samenstellen met de webservice-API&quot;.
 
 **Zie ook**
 

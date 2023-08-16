@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 240ed4d8-b21b-46eb-80a9-9e8093b77235
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1050'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ht-degree: 0%
 
 ## Overzicht van AEM Forms Portal-componenten {#aem-forms-portal-components-overview}
 
-In een typisch vorm-centric portaalplaatsingsscenario, vormen ontwikkeling en poortontwikkeling zijn twee gescheiden activiteiten. Terwijl formulierontwerpers formulieren ontwerpen en opslaan in een gegevensopslagruimte, maken webontwikkelaars een webtoepassing om formulieren weer te geven en de verzending van formulieren af te handelen. Forms wordt naar de weblaag gekopieerd omdat er geen communicatie is tussen de formulieropslagplaats en de webtoepassing.
+In een typisch vorm-centric portaalplaatsingsscenario, vormen ontwikkeling en portaalontwikkeling zijn twee gescheiden activiteiten. Terwijl formulierontwerpers formulieren ontwerpen en opslaan in een gegevensopslagruimte, maken webontwikkelaars een webtoepassing om formulieren weer te geven en de verzending van formulieren af te handelen. Forms wordt naar de weblaag gekopieerd omdat er geen communicatie is tussen de formulieropslagplaats en de webtoepassing.
 
-Dergelijke scenario&#39;s leiden vaak tot beheerproblemen en productievertragingen. Als er bijvoorbeeld een nieuwere versie van een formulier beschikbaar is in de gegevensopslagruimte, moet u het formulier op de weblaag vervangen, de webtoepassing wijzigen en het formulier opnieuw distribueren op de openbare site. Als u de webtoepassing opnieuw implementeert, kan dit leiden tot serverdowntime. De serverdowntime is doorgaans een geplande activiteit en daarom kunnen de wijzigingen niet onmiddellijk naar de openbare site worden doorgevoerd.
+Dergelijke scenario&#39;s leiden vaak tot beheerproblemen en productievertragingen. Als er bijvoorbeeld een nieuwere versie van een formulier beschikbaar is in de gegevensopslagruimte, moet u het formulier op de weblaag vervangen, de webtoepassing wijzigen en het formulier opnieuw distribueren op de openbare site. Als u de webtoepassing opnieuw implementeert, kan dit leiden tot serverdowntime. Doorgaans is de serverdowntime een geplande activiteit en daarom kunnen de wijzigingen niet onmiddellijk naar de openbare site worden doorgevoerd.
 
 AEM Forms biedt portalcomponenten die de beheerkosten en productievertragingen verminderen. Met deze componenten kunnen webontwikkelaars een Forms Portal maken en aanpassen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
 
@@ -50,11 +50,11 @@ AEM Forms biedt de volgende poortcomponenten uit het vak, gegroepeerd onder **Do
 
 ### Zoeken en registreren {#search-amp-lister}
 
-Met de component Zoeken en registreren kunt u formulieren vanuit de formulieropslagplaats op uw portalpagina weergeven en configuratieopties voor het weergeven van formulieren op basis van opgegeven criteria. U kunt hiermee ook zoekcriteria opgeven waarmee gebruikers van uw portal kunnen zoeken in de lijst met formulieren.
+Met de component Zoeken en register kunt u formulieren vanuit de formulieropslagplaats op de portalpagina weergeven en configuratieopties voor het weergeven van formulieren op basis van opgegeven criteria. U kunt hiermee ook zoekcriteria opgeven waarmee gebruikers van uw portal kunnen zoeken in de lijst met formulieren.
 
 ### Concepten en verzendingen {#drafts-amp-submissions}
 
-In het onderdeel Zoeken en opslaan worden formulieren weergegeven die door de auteur van Forms openbaar zijn gemaakt, maar in het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke het programma geopende gebruiker.
+In het onderdeel Zoeken en opslaan worden formulieren weergegeven die door de auteur van Forms openbaar zijn gemaakt, maar in het onderdeel Concepten en verzendingen worden formulieren weergegeven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. Deze component verstrekt gepersonaliseerde ervaring aan om het even welke aangemelde gebruiker.
 
 ### Koppeling {#link}
 
@@ -64,14 +64,14 @@ Met de component Koppeling kunt u overal op de pagina een koppeling naar een for
 
 Met Forms Portal kunt u formulieren vanuit de formulieropslagplaats op uw portalpagina weergeven. U kunt hiermee ook zoekcriteria opgeven waarmee gebruikers van uw portal kunnen zoeken in de lijst met formulieren. U kunt ook de component Concepten en verzendingen gebruiken om formulieren weer te geven die zijn opgeslagen als concept voor het later invullen van formulieren en die zijn verzonden. U voert een bepaalde reeks bewerkingen uit voordat deze functies beschikbaar komen op een sitepagina. Voer de stappen in de vermelde opeenvolging uit om de componenten en respectieve functionaliteit op een plaatspagina beschikbaar te maken:
 
-1. **Forms Portal-componenten inschakelen**: Forms Portal-componenten zijn niet beschikbaar voor gebruik in de verpakking. [De componenten van AEM sidekick inschakelen](/help/forms/using/enabling-forms-portal-components.md) voor een AEM Sites-pagina.
+1. **Forms Portal-componenten inschakelen**: Forms Portal-componenten zijn niet beschikbaar voor gebruik in het vak Buiten het vak. [De componenten van AEM sidekick inschakelen](/help/forms/using/enabling-forms-portal-components.md) voor een AEM Sites-pagina.
 1. **Formulieren weergeven op een pagina (Forms Portal-pagina maken):** U kunt formulieren weergeven op zowel AEM Sites- als niet-AEM sitepagina&#39;s. De lijst bevat formulieren die beschikbaar zijn in de publicatie-instantie. Een gebruiker kan formulieren openen en invullen. Wanneer een gebruiker een formulier opent, wordt er een nieuw exemplaar van het formulier gemaakt:
 
-   1. **Formulieren weergeven op een AEM Sites-pagina**: Voeg de **[Zoeken en registreren](../../forms/using/creating-form-portal-page.md)** component aan de pagina en vorm de **[Lijstvenster](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** hiermee kunt u formulieren op een pagina weergeven. Voeg en vorm toe **Zoekvenster** aan de **Zoeken en registreren** om ook zoekfunctionaliteit aan de pagina toe te voegen. De pagina met de Forms Portal-component wordt ook wel [Forms Portal-pagina](../../forms/using/creating-form-portal-page.md).
+   1. **Formulieren weergeven op een AEM Sites-pagina**: Voeg de **[Zoeken en registreren](../../forms/using/creating-form-portal-page.md)** component aan de pagina en vorm de **[Lijstvenster](../../forms/using/creating-form-portal-page.md#p-list-pane-p)** hiermee kunt u formulieren op een pagina weergeven. Voeg en vorm toe **Zoekvenster** aan de component **Zoeken en registreren** om ook zoekfunctionaliteit aan de pagina toe te voegen. De pagina met de Forms Portal-component wordt ook wel [Forms Portal-pagina](../../forms/using/creating-form-portal-page.md).
 
    1. **Formulieren weergeven op een niet-AEM Sites-pagina:** Gebruik de [Zoeken in Forms Portal-API&#39;s](/help/forms/using/listing-forms-webpage-using-apis.md) om formulieren op niet-AEM Sites-pagina&#39;s te zoeken, op te halen en weer te geven.
 
-1. **Concepten en verzonden formulieren weergeven op een pagina van Forms Portal**: Voeg de component Concepten en verzendingen toe aan en configureer deze op de pagina Forms Portal. De component bevat een lijst met alle formulieren in het concept en de formulieren die al zijn verzonden.
+1. **Concepten en verzonden formulieren weergeven op een pagina van Forms Portal**: Voeg de component Concepten en verzendingen toe aan de pagina Forms Portal en configureer deze. De component bevat een lijst met alle formulieren in het concept en de formulieren die al zijn verzonden.
 
    Als u een ingediend adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de optie **Handeling verzenden** tot **[Forms Portal-verzendactie](configuring-submit-actions.md).** U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
 

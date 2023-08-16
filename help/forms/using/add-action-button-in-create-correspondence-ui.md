@@ -1,17 +1,13 @@
 ---
 title: Aangepaste actie/knop toevoegen in interface voor correspondentie maken
-seo-title: Add custom action/button in Create Correspondence UI
 description: Leer hoe u een aangepaste handeling/knop toevoegt in de gebruikersinterface voor correspondentie maken
-seo-description: Learn how to add custom action/button in Create Correspondence UI
-uuid: 1b2b00bb-93ef-4bfe-9fc5-25c45e4cb4b1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 046e3314-b436-47ed-98be-43d85f576789
 docset: aem65
 feature: Correspondence Management
 exl-id: a582ba41-83cb-46f2-9de9-3752f6a7820a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1880'
 ht-degree: 0%
@@ -31,15 +27,15 @@ Het scenario in dit document legt uit hoe u een knop in de gebruikersinterface v
 Om dit scenario te voltooien, vereist u het volgende:
 
 * Kennis van CRX en JavaScript
-* LiveCycle-server
+* LiveCycle Server
 
-## Scenario: Maak de knop in de gebruikersinterface Correspondentie maken om een brief ter controle te verzenden {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
+## Scenario: maak de knop in de gebruikersinterface Correspondentie maken om een brief ter controle te verzenden {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
 Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan Create Correspondence Gebruikersinterface omvat:
 
 1. De knop toevoegen aan de gebruikersinterface Correspondentie maken
 1. Handeling-afhandeling aan de knop toevoegen
-1. Het LiveCycle-proces toevoegen om handelingen te kunnen afhandelen
+1. Het LiveCycle toevoegen om handelingen te kunnen afhandelen
 
 ### De knop toevoegen aan de gebruikersinterface Correspondentie maken {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -67,7 +63,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
 1. Maak een kopie van het bestand acmExtensionsConfig.xml (bestaat onder de tak /libs) onder de tak /apps.
 
-   1. Ga naar &quot;/libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml&quot;
+   1. Ga naar /libs/fd/cm/config/defaultApp/acmExtensionsConfig.xml
 
    1. Klik met de rechtermuisknop op het bestand acmExtensionsConfig.xml en selecteer **Kopiëren**.
 
@@ -93,7 +89,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
    </extensionsConfig>
    ```
 
-1. U kunt LiveCycle Forms Workflow gebruiken om een e-mailbrief te verzenden. Voeg als volgt een customAction-tag toe onder de modelExtension-tag in acmExtensionsConfig.xml:
+1. U kunt Forms Workflow LiveCycle gebruiken om een e-mailbrief te verzenden. Voeg als volgt een customAction-tag toe onder de modelExtension-tag in acmExtensionsConfig.xml:
 
    ```xml
     <customAction name="Letter Review" label="Letter Review" tooltip="Letter Review" styleName="" permissionName="forms-users" actionHandler="CM.domain.CCRCustomActionHandler">
@@ -162,17 +158,17 @@ Het bestand ACMExtensionsMessages.properties bevat labels en knopinfo-berichten 
 
 1. Klikken **Alles opslaan**.
 
-#### De bundel Adobe Asset Composer Building Block opnieuw starten {#restart-the-adobe-asset-composer-building-block-bundle}
+#### Start de bundel Adobe Asset Composer Building Block opnieuw {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Adobe Asset Composer Building Block opnieuw. In dit scenario worden de bestanden acmExtensionsConfig.xml en ACMExtensionsMessages.properties op de server bewerkt. Daarom moet de bundel Adobe Asset Composer Building Block opnieuw worden gestart.
 
 >[!NOTE]
 >
->Mogelijk moet u de cache van de browser wissen.
+>Mogelijk moet u de browsercache wissen.
 
 1. Ga naar `https://[host]:'port'/system/console/bundles`. Meld u indien nodig aan als beheerder.
 
-1. Zoek de bundel Adobe Asset Composer Building Block. Start de bundel opnieuw: Klik op Stoppen en vervolgens op Start.
+1. Zoek de bundel Adobe Asset Composer Building Block. Start de bundel opnieuw: klik op Stoppen en klik vervolgens op Start.
 
    ![Adobe Asset Composer Building Block](assets/6_assetcomposerbuildingblockbundle.png)
 
@@ -188,9 +184,9 @@ Voor aangepaste handelingen-afhandeling maakt u een bedekking van het bestand cm
 
 De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor:
 
-* De nieuw toegevoegde actie zichtbaar/onzichtbaar maken: gedaan door de actionVisible() functie te negeren.
-* Nieuwe toegevoegde actie in-/uitschakelen: doet dit door de actionEnabled() functie te negeren.
-* Werkelijke afhandeling van actie wanneer de gebruiker op de knop klikt: gedaan door de implementatie van de handleAction() functie te negeren.
+* De nieuw toegevoegde actie zichtbaar/onzichtbaar maken: gedaan door de actionVisible() functie met voeten te treden.
+* Nieuwe toegevoegde actie in- en uitschakelen: gedaan door de functie actionEnabled() te negeren.
+* Werkelijke afhandeling van actie wanneer de gebruiker op de knop klikt: gedaan door de implementatie van de functie handleAction() te negeren.
 
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
 
@@ -323,7 +319,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
       '</div>';
       ```
 
-### Voeg het proces van de LiveCycle toe om actie toe te laten <span class="acrolinxCursorMarker"></code>afhandeling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Voeg het proces van het LiveCycle toe om actie toe te laten <span class="acrolinxCursorMarker"></code>afhandeling {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In dit scenario schakelt u de volgende componenten in, die deel uitmaken van het bestand components.zip in de bijlage:
 
@@ -333,28 +329,28 @@ In dit scenario schakelt u de volgende componenten in, die deel uitmaken van het
 Download en decomprimeer het bestand components.zip om de bestanden DSCSample.jar en SendLetterForReview.lca op te halen. Gebruik deze bestanden volgens de onderstaande procedures.
 [Bestand ophalen](assets/components.zip)
 
-#### Vorm de Server van LiveCycle om het proces LCA in werking te stellen {#configure-the-livecycle-server-to-run-the-lca-process}
+#### Vorm de Server van het LiveCycle om het proces LCA in werking te stellen {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
 >Deze stap wordt vereist slechts als u op een opstelling OSGI bent en LC integratie wordt vereist voor het type van aanpassing u implementeert.
 
-Het LCA-proces wordt uitgevoerd op de LiveCycle-server en vereist het serveradres en de aanmeldingsgegevens.
+Het proces LCA loopt op de server van het LiveCycle en vereist het serveradres en de login geloofsbrieven.
 
 1. Ga naar `https://'[server]:[port]'/system/console/configMgr` en aanmelden als beheerder.
-1. Zoek de Configuratie van de SDK van Adobe LiveCycle Client en klik op **Bewerken** (pictogram Bewerken). Het deelvenster Configuraties wordt geopend.
+1. Zoek Adobe LiveCycle Client SDK Configuration en klik op **Bewerken** (pictogram Bewerken). Het deelvenster Configuraties wordt geopend.
 
 1. Voer de volgende gegevens in en klik op **Opslaan**:
 
    * **Server-URL**: URL van de server LC waarvan verzendt voor de dienst van het Overzicht de code van de actiemanager gebruikt.
-   * **Gebruikersnaam**: Gebruikersnaam beheerder van de LC-server
-   * **Wachtwoord**: Wachtwoord voor de gebruikersnaam van de beheerder
+   * **Gebruikersnaam**: Admin-gebruikersnaam van de LC-server
+   * **Wachtwoord**: Wachtwoord voor de gebruikersnaam Admin
 
-   ![Adobe LiveCycle client SDK-configuratie](assets/3_clientsdkconfiguration.png)
+   ![Adobe LiveCycle client SDK Configuration](assets/3_clientsdkconfiguration.png)
 
-#### LiveCycle-archief (LCA) installeren {#install-livecycle-archive-lca}
+#### LiveCycle archiveren (LCA) installeren {#install-livecycle-archive-lca}
 
-Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
+Het vereiste LiveCycle-proces dat het e-mailserviceproces inschakelt.
 
 >[!NOTE]
 >
@@ -382,18 +378,18 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 #### Het toevoegen van ServiceName aan de lijst van de Dienst van de Lijst van gewenste personen {#adding-servicename-to-the-allowlist-service-list}
 
-Vermelding in de server van de Experience Manager de diensten van de LiveCycle u tot de server van de Experience Manager wilt toegang hebben.
+Vermelding in de server van de Experience Manager de diensten van het LiveCycle u tot de server van de Experience Manager wilt toegang hebben.
 
 1. Aanmelden als beheerder `https:/[host]:'port'/system/console/configMgr`.
 
-1. Zoeken en klikken **Adobe LiveCycle client SDK-configuratie**. Het deelvenster Configuratie SDK van Adobe LiveCycle Client wordt weergegeven.
+1. Zoeken en klikken **Adobe LiveCycle client SDK Configuration**. Het deelvenster Configuratie SDK-client van Adobe LiveCycle wordt weergegeven.
 1. In de lijst van de Naam van de Dienst, klik + pictogram en voeg een serviceName toe **SendLetterForReview/SendLetterForReviewProcess**.
 
 1. Klikken **Opslaan**.
 
 #### De e-mailservice configureren {#configure-the-email-service}
 
-In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen verzenden, vorm de e-maildienst in de server van de LiveCycle.
+In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen verzenden, vorm de e-maildienst in de server van het LiveCycle.
 
 1. Meld u aan met beheerdersreferenties naar de beheerder van de LiveCycle-server op `https:/[lc server]:[lc port]/adminui`.
 
@@ -407,7 +403,7 @@ In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen 
 
 #### De DSC-service configureren {#configure-the-dsc-service}
 
-Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de LiveCycle-server. Nadat het DSCSample.jar- dossier aan de server van de LiveCycle wordt geupload, gebruikt de server van de Experience Manager het DSCSample.jar- dossier om tot renderLetter API toegang te hebben.
+Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de server van het LiveCycle. Nadat het DSCSample.jar- dossier aan de server van het LiveCycle wordt geupload, gebruikt de server van de Experience Manager het DSCSample.jar- dossier om tot renderLetter API toegang te hebben.
 
 Zie voor meer informatie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md).
 
@@ -424,7 +420,7 @@ Zie voor meer informatie [AEM Forms verbinden met Adobe LiveCycle](/help/forms/u
 
    >[!NOTE]
    >
-   >Elke keer dat u wijzigingen aanbrengt aan de serverzijde, start u de LiveCycle Server opnieuw.
+   >Telkens als u om het even welke veranderingen bij de serverzijde aanbrengt, begin de Server van het LiveCycle opnieuw.
 
    Het bestand DSCSample.jar gebruikt de renderLetter-API. Zie voor meer informatie over de renderLetter-API [Interface LetterRenderService](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/index.html?com/adobe/icc/ddg/api/LetterRenderService.html).
 
@@ -437,7 +433,7 @@ Het bestand DSCSample.jar gebruikt de renderLetter-API om een letter te renderen
 
 1. Klikken met rechtermuisknop **Componenten** en selecteert u **Component installeren**.
 
-1. Selecteer **DSCSample.jar** file door dossierbrowser en klik **Openen**.
+1. Selecteer de **DSCSample.jar** bestand via de bestandsbrowser en klik op **Openen**.
 1. Klikken met rechtermuisknop **RenderWrapper** en selecteert u **Component starten**. Als de component start, verschijnt er een groene pijl naast de naam van de component.
 
 ## Ter controle verzenden {#send-letter-for-review}

@@ -1,6 +1,6 @@
 ---
 title: Werken met workflows
-description: Met AEM workflows kunt u een reeks stappen automatiseren die worden uitgevoerd op een pagina of element. Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren.
+description: Met AEM workflows kunt u een reeks stappen automatiseren die op een pagina of element worden uitgevoerd. Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren.
 uuid: 3eb6e790-6589-414a-8e51-33c358f47a73
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,16 +8,16 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
 exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '212'
+source-wordcount: '210'
 ht-degree: 6%
 
 ---
 
 # Werken met workflows{#working-with-workflows}
 
-Met AEM workflows kunt u een reeks stappen automatiseren die worden uitgevoerd op een pagina of element. Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
+Met AEM workflows kunt u een reeks stappen automatiseren die op een pagina of element worden uitgevoerd. Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
 
 1. De auteur past de workflow toe op de pagina.
 1. De redacteur ontvangt een het werkpunt dat erop wijst dat zij worden vereist om de paginainhoud te herzien. Als ze klaar zijn, geven ze aan dat hun werkitem voltooid is.

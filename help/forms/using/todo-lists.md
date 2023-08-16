@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: e961ce67e5b1a71e3af6dded304d99cd9e6896bc
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4033'
+source-wordcount: '4032'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ De extra hulpmiddelen die met om het even welke bovengenoemde taken beschikbaar 
 * Doorsturen
 * Delen
 * Consult
-* Return
+* Retourneren
 * Notities
 * Bijlagen
 
@@ -106,17 +106,17 @@ Wanneer u een taak opent en claimt vanuit een groep of gedeelde lijst, wordt de 
 
 Nadat u een taak hebt geopend, zijn de tabbladen die in het hoofdvenster worden weergegeven en de gereedschappen die beschikbaar zijn, afhankelijk van de taak. De tabbladen die u kunt zien, worden hieronder beschreven:
 
-* **Taakoverzicht**: Wanneer een taak opent, staat de ruit van het Overzicht van de Taak u toe om informatie over de taak te tonen, als het bestaat, gebruikend een URL die in het proces bij de stap van de Taak van de Toewijzing wordt gespecificeerd. Als u het venster Taakoverzicht gebruikt, kan aanvullende en relevante informatie voor een taak worden weergegeven om meer waarde toe te voegen aan de werkruimte van de eindgebruiker van AEM Forms. Dit tabblad is niet beschikbaar als de URL voor het taakoverzicht niet bestaat.
+* **Taakoverzicht**: Wanneer een taak wordt geopend, laat de ruit van het Overzicht van de Taak u informatie over de taak tonen, als het bestaat, gebruikend een URL die in het proces bij de stap van de Taak van de Toewijzing wordt gespecificeerd. Als u het venster Taakoverzicht gebruikt, kan aanvullende en relevante informatie voor een taak worden weergegeven om meer waarde toe te voegen aan de werkruimte van de eindgebruiker van AEM Forms. Dit tabblad is niet beschikbaar als de URL voor het taakoverzicht niet bestaat.
 
 * **Details**: Verstrekt wat informatie over de huidige taak en het proces dat het tot behoort.
 
 * **Formulier**: Hiermee geeft u het formulier weer dat aan de taak is gekoppeld. Het formulier kan vele bestandstypen bevatten, zoals PDF, HTML, Guide en SWF-bestand. Het formulier kan er uitzien als een standaardformulier voor afdrukken of voor het web, of kan u door een reeks wizardstijldeelvensters leiden om informatie te verzamelen.
 
-* **Historie**: Hier worden de taken weergegeven die deel uitmaken van de procesinstantie en de bijbehorende vorm, taaktoewijzingen en bijlagen voor elke taak.
+* **Historie**: Hiermee geeft u een lijst weer van de taken die deel uitmaken van de procesinstantie en de bijbehorende vorm, taaktoewijzingen en bijlagen voor elke taak.
 
-* **Bijlagen**: Toont bestaande gehechtheid die met de taak wordt geassocieerd en voegt gehechtheid, indien nodig toe.
+* **Bijlagen**: Hiermee geeft u bestaande bijlagen weer die aan de taak zijn gekoppeld en voegt u, indien nodig, bijlagen toe.
 
-* **Notities**: Toont de bestaande nota&#39;s verbonden aan de taak en voeg nota&#39;s toe, indien nodig.
+* **Notities**: Hiermee geeft u de bestaande notities weer die aan de taak zijn gekoppeld en voegt u indien nodig notities toe.
 
 Wanneer u aan een taak werkt, worden de gereedschappen die u ziet en de handelingen die u kunt uitvoeren hieronder beschreven.
 
@@ -144,11 +144,11 @@ U kunt een taak samen met om het even welke nota&#39;s of gehechtheid aan een an
 
 ### Een taak retourneren {#return-a-task}
 
-1. Klik op een willekeurig tabblad **Return**. De taak is teruggekeerd aan de te doen lijst van de gebruiker die eerder de taak aan u, of deelde of raadpleegde de taak met u door:sturen.
+1. Klik op een willekeurig tabblad **Retourneren**. De taak is teruggekeerd aan de te doen lijst van de gebruiker die eerder de taak aan u, of deelde of raadpleegde de taak met u door:sturen.
 
 ### Een taak offline uitvoeren {#take-a-task-offline}
 
-U mag mogelijk offline aan een taak werken en het formulier later verzenden vanuit Adobe® Reader® of Adobe® Acrobat® Professional of Adobe® Acrobat® Standard. Wanneer het formulier wordt verzonden, wordt de e-mailclient gestart met het juiste e-mailadres van de server. U kunt het ingevulde formulier vervolgens via e-mail naar de server verzenden.
+U mag mogelijk offline aan een taak werken en later het formulier van Adobe® Reader® of Adobe® Acrobat® Professional of Adobe® Acrobat® Standard verzenden. Wanneer het formulier wordt verzonden, wordt de e-mailclient gestart met het juiste e-mailadres van de server. U kunt het ingevulde formulier vervolgens via e-mail naar de server verzenden.
 
 1. Klik op een willekeurig tabblad **Off line**.
 1. Geef een bestandsnaam op om het formulier onder op te slaan en klik op **Opslaan**. Het formulier dat aan de taak is gekoppeld, wordt lokaal opgeslagen en de taak blijft in de lijst Aan/uit totdat het formulier wordt verzonden.
@@ -160,7 +160,7 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 **Een bijlage toevoegen**
 
 1. In de **Bijlagen** tab, klik op **Bladeren** om het bestand te selecteren dat u wilt bijvoegen.
-1. Selecteer **Machtigingen** niveau voor de bijlage voor andere gebruikers die aan het proces deelnemen. Als u **Lezen**, kunnen andere gebruikers het bestand lokaal opslaan. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
+1. Selecteer de **Machtigingen** niveau voor de bijlage voor andere gebruikers die aan het proces deelnemen. Als u **Lezen**, kunnen andere gebruikers het bestand lokaal opslaan. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
 
    >[!NOTE]
    >
@@ -194,7 +194,7 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
    >[!NOTE]
    >
-   >U kunt werkruimte zodanig configureren dat de gegevens die een gebruiker heeft ingevoerd periodiek automatisch worden opgeslagen als concept. Als automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen. In het geval van automatisch opslaan wordt de standaardnaam van de taak automatisch gebruikt.
+   >U kunt werkruimte zodanig configureren dat de gegevens die een gebruiker heeft ingevoerd, periodiek automatisch worden opgeslagen als concept. Als automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen. In het geval van automatisch opslaan wordt de standaardnaam van de taak automatisch gebruikt.
    >
    >
    >Zie Concept periodiek opslaan voor meer informatie in [Voorkeuren beheren](/help/forms/using/getting-started-livecycle-html-workspace.md).
@@ -285,7 +285,6 @@ De e-mailberichten kunnen een koppeling bevatten waarmee de taak in de AEM Forms
 >
 >* Als concepten worden doorgestuurd nadat de taak in de AEM Forms-werkruimte is verzonden, worden e-mailmeldingen verzonden. Als concepten vanuit het startpunt van de AEM Forms-werkruimte worden doorgestuurd, worden geen e-mailmeldingen verzonden.
 
-
 Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit de lijst Aan-taak in de AEM Forms-werkruimte.
 
 >[!NOTE]
@@ -375,7 +374,7 @@ Als u toegang krijgt tot de lijst Aan-doe van een andere gebruiker, kunt u geen 
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan taken gebeurt die aan u voor die periode worden toegewezen.
 
-U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als uw instellingen buiten het kantoor zijn. Als u in een verschillende tijdzone van de server wordt gevestigd, is de gebruikte tijdzone die van de server.
+U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als de instellingen buiten het kantoor van toepassing zijn. Als u in een verschillende tijdzone van de server wordt gevestigd, is de gebruikte tijdzone die van de server.
 
 U kunt een standaardpersoon instellen waarnaar al uw taken worden verzonden. U kunt ook uitzonderingen voor taken van specifieke processen specificeren die naar een verschillende gebruiker moeten worden verzonden of in uw te doen lijst blijven tot u terugkeert. Als de aangewezen persoon ook uit het bureau is, gaat de taak naar de gebruiker die zij hebben aangewezen. Als de taak niet aan een gebruiker kan worden toegewezen die niet uit het bureau is, blijft de taak in uw te doen lijst.
 
@@ -391,7 +390,7 @@ U kunt een standaardpersoon instellen waarnaar al uw taken worden verzonden. U k
    * Om aan te geven dat u nu voor onbepaalde tijd buiten het kantoor bent, kunt u **Ik ben momenteel** list, selecteer **Buiten het Bureau** maar voeg geen datumbereik toe.
    * Als u een begindatum en -tijd wilt opgeven die buiten het kantoor vallen, klikt u op &#39;+&#39; voor **Buiten kantoorplanning**. Gebruik de kalender en de tijdlijst om de begindatum en de tijd te specificeren. Als u geen einddatum en -tijd opgeeft, wordt u geacht eindeloos uit het kantoor te zijn vanaf de begindatum en -tijd totdat u uw voorkeuren wijzigt.
 
-1. Om te specificeren hoe uw taken door gebrek moeten worden behandeld, selecteer één van deze opties van **Wanneer uit het Bureau: Standaardgebruiker voor taken buiten Office** lijst:
+1. Als u wilt opgeven hoe uw taken standaard moeten worden uitgevoerd, selecteert u een van deze opties in het menu **Wanneer uit het Bureau: StandaardGebruiker voor uit de taken van het Bureau** lijst:
 
    * Selecteren **Niet toewijzen** om taken in uw lijst te houden Aan-doet tot u terugkeert.
    * Selecteren **Gebruiker zoeken** om te zoeken naar een gebruiker waaraan uw taken moeten worden toegewezen. Wanneer u een gebruiker selecteert, kunt u hun uit-van-bureauprogramma ook bekijken.

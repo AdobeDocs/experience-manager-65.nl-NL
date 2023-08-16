@@ -2,7 +2,7 @@
 title: Caching en prestaties
 description: Leer over de verschillende beschikbare configuraties om GraphQL en inhoud het in cache plaatsen toe te laten om de prestaties van uw handelsimplementatie te optimaliseren.
 exl-id: ecce64bf-5960-4ddb-b6e3-dad401038c11
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '849'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Voordat de client een GraphQL-aanvraag verzendt, wordt gecontroleerd of **exact*
 
 ### Voorbeelden
 
-Wij adviseren dat om wat caching voor de onderzoeksdienst te vormen die alle beschikbare samenvoegingen/facetwaarden haalt die op het productonderzoek en categoriepagina&#39;s worden getoond. Deze waarden veranderen gewoonlijk slechts wanneer een nieuw attribuut bijvoorbeeld aan producten wordt toegevoegd, zodat kan de duur voor deze geheim voorgeheugeningang &quot;groot&quot;zijn als de reeks productattributen niet vaak verandert. Terwijl dit project-specifiek is, adviseren wij waarden van een paar minuten in projectontwikkelingsfasen en een paar uren op stabiele productiesystemen.
+Wij adviseren dat om wat caching voor de onderzoeksdienst te vormen die alle beschikbare samenvoegingen/facetwaarden haalt die op het productonderzoek en categoriepagina&#39;s worden getoond. Deze waarden veranderen gewoonlijk slechts wanneer een nieuw attribuut bijvoorbeeld aan producten wordt toegevoegd, zodat kan de duur voor deze geheim voorgeheugeningang &quot;groot&quot;zijn als de reeks productattributen niet vaak verandert. Hoewel dit projectspecifiek is, beveelt de Adobe waarden aan van een paar minuten in projectontwikkelingsfasen en een paar uur in stabiele productiesystemen.
 
 Dit wordt typisch gevormd met de volgende geheim voorgeheugeningang:
 
@@ -51,7 +51,7 @@ Pagina&#39;s of fragmenten in cache AEM in het deelvenster [AEM Dispatcher](http
 
 Naast zuivere AEM beheerde inhoud CIF kan een pagina typisch handelsgegevens tonen die dynamisch van Adobe Commerce via GraphQL wordt opgehaald. Hoewel de paginastructuur zelf misschien nooit verandert, kan de commerciële inhoud veranderen, bijvoorbeeld, als sommige productgegevens (zoals naam of prijs) in Adobe Commerce veranderen.
 
-Om ervoor te zorgen dat CIF-pagina&#39;s gedurende een beperkte periode in de AEM Dispatcher in cache kunnen worden opgeslagen, raden we u daarom aan om het volgende te doen: [Op tijd gebaseerde invalidatie van cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) (ook wel op TTL gebaseerd in cache plaatsen genoemd) wanneer het in cache plaatsen van CIF-pagina&#39;s in de AEM Dispatcher. Deze eigenschap kan in AEM met het gebruiken van extra worden gevormd [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket.
+Om ervoor te zorgen dat CIF-pagina&#39;s gedurende een beperkte periode in de AEM Dispatcher in cache kunnen worden opgeslagen, raden we u daarom aan om het volgende te doen: [Op tijd gebaseerde invalidatie van cache](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/configuring/dispatcher-configuration.html?lang=en#configuring-time-based-cache-invalidation-enablettl) (ook wel op TTL gebaseerd in cache plaatsen genoemd) wanneer het in cache plaatsen van CIF-pagina&#39;s in de AEM Dispatcher. Deze functie kan worden geconfigureerd in AEM met de extra [ACS AEM Commons](https://adobe-consulting-services.github.io/acs-aem-commons/) pakket.
 
 Met op TTL gebaseerde caching, bepaalt een ontwikkelaar typisch één of veelvoudige caching duur voor geselecteerde AEM pagina&#39;s. Dit zorgt ervoor dat de pagina&#39;s CIF slechts in het voorgeheugen ondergebracht in de AEM Dispatcher tot de gevormde duur zijn en dat de inhoud vaak zal worden bijgewerkt.
 

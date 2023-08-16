@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1312'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De gebruikersinterface voor ontwerpen [Interactieve communicatie](/help/forms/us
 * WYSIWYG-documenteditor voor slepen en neerzetten
 * Geïntegreerde opslagplaats voor middelen - de activa die aan worden geupload en op de server worden gecreeerd zijn beschikbaar in de browser van Activa van Interactive Communication auteursinterface
 
-Wanneer u [een nieuwe interactieve communicatie maken of een bestaande interactieve communicatie bewerken](../../forms/using/create-interactive-communication.md)gebruikt u de volgende gebruikersinterface-elementen:
+Wanneer u [een nieuwe of een bestaande interactieve communicatie maken](../../forms/using/create-interactive-communication.md)gebruikt u de volgende gebruikersinterface-elementen:
 
 * [Zijbalk](#sidebar)
 * [Pagina, werkbalk](#page-toolbar)
@@ -34,13 +34,13 @@ Wanneer u [een nieuwe interactieve communicatie maken of een bestaande interacti
 
 ![gebruikersinterface voor interactieve communicatie ontwerpen](assets/form-editor.png)
 
-**A.** Zijbalk **B.** Pagina, werkbalk **C.** Inhoudsgebied
+**A.** Zijbalk **B.** Pagina, werkbalk **C.** Inhoud
 
 ## Zijbalk {#sidebar}
 
 ![Zijbalk](assets/sidebar-comps-2.png)
 
-**A.** Kanaalbrowser **B.** Inhoudsbrowser **C.** Eigenschappenbrowser **D.** Middelenbrowser **E.** Browser voor componenten **F.** Browser van Gegevensbronnen - het Model van Gegevens **G.** Browser voor gegevensbronnen - Master inhoud
+**A.** Kanaalbrowser **B.** Inhoudsbrowser **C.** Eigenschappenbrowser **D.** Middelenbrowser **E.** Browser voor componenten **F.** Browser van Gegevensbronnen - het Model van Gegevens **G.** Browser voor gegevensbronnen - stramieninhoud
 
 <!-- Click to enlarge
 
@@ -57,18 +57,18 @@ In de inhoudbrowser, kunt u objecten hiërarchie van het document voor het gesel
 
 * **Eigenschappenbrowser**
 
-   Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van de component. Als u bijvoorbeeld de eigenschappen van de documentcontainer wilt zien: Selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **Documentcontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
+  Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van de component. Als u bijvoorbeeld de eigenschappen van de documentcontainer wilt zien: selecteer een component en tik vervolgens op ![op veldniveau](assets/field-level.png) > **Documentcontainer** en tikt u vervolgens op ![cmppr](assets/cmppr.png).
 
 * **Bandenbrowser**
 Hiermee kunt u verschillende typen inhoud segmenteren, zoals lay-outfragmenten, afbeeldingen, documenten, pagina&#39;s, video&#39;s. Auteurs kunnen elementen naar de interactieve communicatie slepen.
 
 * **Browser voor componenten**
-Bevat componenten die u kunt gebruiken om de afdruk- en webkanalen van een document te maken. U kunt componenten aan de Interactieve Mededeling slepen om elementen toe te voegen, en toegevoegde element te vormen zoals aan de vereisten. In de volgende tabel worden de componenten beschreven die in de browser Components worden weergegeven voor afdrukken en webkanalen:
+Bevat componenten die u kunt gebruiken om de afdruk- en webkanalen van een document samen te stellen. U kunt componenten aan de Interactieve Mededeling slepen om elementen toe te voegen, en toegevoegde element te vormen zoals aan de vereisten. In de volgende tabel worden de componenten beschreven die in de browser Components worden weergegeven voor afdrukken en webkanalen:
 
 | **Component** | **Afdrukkanaal** | **Webkanaal** | **Functionaliteit** |
 |---|---|---|---|
 | Diagram | ✓ | ✓ | Hiermee voegt u een grafiek toe die u in een interactieve communicatie kunt gebruiken voor de visuele weergave van tweedimensionale gegevens die zijn opgehaald uit een verzamelitem van een formuliergegevensmodel. |
-| Documentfragment | ✓ | ✓ | Staat u toe om een herbruikbare component, een tekst, een lijst, of een voorwaarde, aan een Interactieve Communicatie toe te voegen. De herbruikbare component die u toevoegt aan een interactieve communicatie kan gebaseerd zijn op een formuliergegevensmodel of geen formuliergegevensmodel. |
+| Documentfragment | ✓ | ✓ | Hiermee kunt u een herbruikbare component, tekst, lijst of voorwaarde toevoegen aan een interactieve communicatie. De herbruikbare component die u toevoegt aan een interactieve communicatie kan gebaseerd zijn op een formuliergegevensmodel of geen formuliergegevensmodel. |
 | Afbeelding | ✓ | ✓ | Hiermee kunt u een afbeelding invoegen. |
 | Deelvenster | - | ✓ | De component van het Comité is placeholder voor het groeperen van andere componenten samen en controleert hoe een groep componenten in een Interactieve Mededeling worden uiteengezet. Met een deelvenstercomponent kunt u ook een groep componenten herhaalbaar maken voor de eindgebruiker, bijvoorbeeld in meerdere items die nodig zijn om de gegevens van het onderwijs in te vullen. Het is ook een goede praktijk om een paneel elk voor een lusje van een Interactieve Communicatie met veelvoudige lusjes te gebruiken. |
 | Tabel | &#42; | ✓ | Hiermee voegt u een tabel toe waarin u gegevens in rijen en kolommen kunt ordenen. |
@@ -93,7 +93,7 @@ De belangrijkste punten wanneer het werken met interactieve communicatie compone
    1. Tik om een component te selecteren die een eigenschap Titel heeft en waarvan de eigenschap Titel verbergen is uitgeschakeld.
    1. Tikken ![aem_6_3_edit](assets/aem_6_3_edit.png) om de titel bewerkbaar te maken.
 
-   1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op Esc om de wijzigingen te verwijderen.
+   1. Wijzig de titel en tik op de Return-toets of tik ergens buiten de component om de wijzigingen op te slaan. Tik op de toets Esc om de wijzigingen te verwijderen.
 
 ## Component, werkbalk {#component-toolbar}
 
@@ -105,9 +105,9 @@ A.**Configureren**: Wanneer u tikt **Configureren**, zijn componenteigenschappen
 
 B.**Regels bewerken**: Wanneer u op Regels bewerken tikt, wordt de Regeleditor weergegeven waarin u regels voor de geselecteerde component kunt bewerken en maken. In de Regeleditor kunt u ook andere formulierobjecten (componenten) selecteren en regels voor die formulierobjecten bewerken/maken.
 
-C.**Kopiëren**: Met de kopieeroptie kunt u een component kopiëren en op andere plaatsen in de interactieve communicatie plakken.
+C.**Kopiëren**: U kunt de kopieeroptie gebruiken om een component te kopiëren en het in andere plaatsen in de Interactieve Mededeling te kleven.
 
-D.**Knippen**: U kunt de besnoeiingsoptie gebruiken om een component van één plaats aan een andere in de Interactieve Communicatie te bewegen.
+D.**Knippen**: U kunt de knipoptie gebruiken om een component van één plaats aan een andere in de Interactieve Mededeling te bewegen.
 
 E. **Verwijderen**: Hiermee kunt u de component uit de interactieve communicatie verwijderen.
 
@@ -123,7 +123,7 @@ J. **SOM-expressie weergeven:** Hiermee kunt u de [SOM-expressie](../../forms/us
 
 K: **Objecten groeperen in deelvenster:** Hiermee kunt u de componenten in een deelvenster groeperen en tegelijkertijd bewerkingen op die componenten uitvoeren. Zie voor meer informatie [Objecten groeperen in deelvenster](create-interactive-communication.md#groupobjectspanel).
 
-L. **Deelvenster Onderliggend element toevoegen** (alleen voor deelvensters): Hiermee kunt u een onderliggend deelvenster aan het deelvenster toevoegen.
+L. **Deelvenster Onderliggend element toevoegen** (alleen voor deelvensters): hiermee kunt u een onderliggend deelvenster aan het deelvenster toevoegen.
 
 M: **Werkbalk Deelvenster toevoegen** (alleen voor deelvensters):Hiermee kunt u de werkbalk voor de component Panel toevoegen. U kunt vervolgens verdere handelingen uitvoeren op de werkbalk.
 
@@ -136,15 +136,15 @@ De werkbalk Pagina bovenaan biedt opties waarmee u een voorvertoning van de inte
 * Zijpaneel in-/uitschakelen ![schakelen tussen zijpaneel](assets/toggle-side-panel.png): Hiermee kunt u Zijbalk tonen of verbergen.
 * Pagina-informatie ![pageinformationad](assets/pageinformationad.png): Hiermee kunt u pagina-eigenschappen weergeven.
 * Emulator ![liniaal](assets/ruler.png): Hiermee kunt u het uiterlijk van uw interactieve communicatie emuleren voor verschillende weergavegrootten, zoals tablets en telefoons.
-* Bewerken: Hiermee kunt u andere modi selecteren, zoals: Bewerken, Stijl, Ontwikkelaar en Ontwerp.
+* Bewerken: hiermee kunt u andere modi selecteren, zoals Bewerken, Stijl, Ontwikkelaar en Ontwerp.
 
-   * Bewerken: Hiermee kunt u de eigenschappen van de interactieve communicatie en de bijbehorende componenten bewerken. U kunt bijvoorbeeld een component toevoegen, een afbeelding neerzetten en verplichte velden opgeven.
-   * Stijl: Hiermee kunt u de vormgeving van componenten van uw interactieve communicatie opmaken. In de stijlmodus kunt u bijvoorbeeld een deelvenster selecteren en de achtergrondkleur ervan opgeven.
-   * Ontwikkelaar: Hiermee kan een ontwikkelaar:
+   * Bewerken: hiermee kunt u de eigenschappen van de interactieve communicatie en de bijbehorende componenten bewerken. U kunt bijvoorbeeld een component toevoegen, een afbeelding neerzetten en verplichte velden opgeven.
+   * Stijl: laat u de verschijning van componenten van uw Interactieve Communicatie opmaken. In de stijlmodus kunt u bijvoorbeeld een deelvenster selecteren en de achtergrondkleur ervan opgeven.
+   * Ontwikkelaar: laat een ontwikkelaar het volgende doen:
 
       * Ontdek waar Interactieve communicatie uit bestaat.
       * Foutopsporing waar en wanneer gebeurt, wat weer helpt om problemen op te lossen.
-   * Doel: Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in het zijpaneel staan, in- of uitschakelen.
 
+   * Doel: Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in de zijbalk worden vermeld, in- of uitschakelen.
 
-* Voorvertoning: Hiermee kunt u een voorvertoning weergeven van de Interactieve communicatie wanneer u deze publiceert.
+* Voorbeeld: hiermee kunt u een voorvertoning weergeven van de Interactieve communicatie wanneer u deze publiceert.

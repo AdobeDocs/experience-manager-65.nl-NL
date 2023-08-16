@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 444c522e-2f33-4f41-846c-8d317e799659
 docset: aem65
 exl-id: 0a87ece4-57ed-4022-a78a-264c1edf4b4e
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '313'
 ht-degree: 20%
 
 ---
@@ -26,12 +26,12 @@ ht-degree: 20%
 | AEM 6,5 | Dit artikel |
 
 
-Door Adobe Analytics en AEM te integreren, kunt u uw webpaginageactiviteit volgen:
+Door Adobe Analytics en AEM te integreren, kunt u de activiteiten van uw webpagina volgen:
 
 * Met een Adobe Analytics-configuratie kunnen AEM verifiëren met Adobe Analytics.
 * Een framework geeft de gegevens aan die naar uw Adobe Analytics-rapportenpakket worden verzonden.
 
-De gegevens omvatten pagina- en gebruikersgegevens; bijvoorbeeld:
+De gegevens bevatten pagina- en gebruikersgegevens, bijvoorbeeld:
 
 * gegevens die AEM componenten verzamelen
 * koppelingsklikken

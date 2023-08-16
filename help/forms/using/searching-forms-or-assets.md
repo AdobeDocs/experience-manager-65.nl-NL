@@ -1,8 +1,8 @@
 ---
 title: Zoeken naar formulieren en middelen
 seo-title: Searching for forms and assets
-description: U kunt formulieren en elementen in uw AEM zoeken met AEM zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw middelen vinden.
-seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search allows you to quickly locate your assets.
+description: U kunt formulieren en elementen in uw AEM zoeken met AEM zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw elementen vinden.
+seo-description: You can search forms and assets in your AEM instance using AEM search. Basic and advanced search lets you quickly locate your assets.
 uuid: 0928a453-3dc4-448b-9320-dcbf20606dd9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: e65925ff-1fbf-4da6-bf09-0cf056c86e5a
 docset: aem65
 role: Admin
 exl-id: 1f4f49b7-5f32-47dd-9dc7-a6974faf2bdf
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '692'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ Als u een standaardzoekopdracht wilt uitvoeren, voert u de zoekquery in het teks
 
 Adobe Experience Manager zoekt naar de ingevoerde tekst in eigenschappen van metagegevens en retourneert de corresponderende resultaten. Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
 
-Neem nota van de volgende punten over het basisonderzoek:
+Neem van de volgende punten over het basisonderzoek nota:
 
-* De zoekopdracht wordt uitgevoerd met de metagegevenseigenschappen van het formulier en het element.
+* De zoekopdracht wordt uitgevoerd met de eigenschappen van de metagegevens van het formulier en de elementen.
 * Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
 * Zoeken is niet hoofdlettergevoelig. Wanneer u bijvoorbeeld `geometrixx`, elementen met titels `Geometrixx`, `GEOMETRIXX`, en `GeoMetRixx` worden weergegeven in de zoekresultaten.
 
@@ -72,11 +72,11 @@ Selecteer een van de volgende opties om te zoeken in alle elementen die binnen e
 
 U kunt naar elementen zoeken met een van de volgende statussen:
 
-* **Gepubliceerd**: Zoeken in alle elementen die na publicatie zijn gepubliceerd en niet zijn gewijzigd.
+* **Gepubliceerd**: doorzoek alle elementen die na de publicatie zijn gepubliceerd en niet zijn gewijzigd.
 
-* **Ongepubliceerd**: Zoeken in alle elementen die nooit zijn gepubliceerd.
+* **Ongepubliceerd**: Zoek alle elementen die nooit zijn gepubliceerd.
 
-* **Gewijzigd**: Zoeken in alle elementen die na publicatie zijn gewijzigd of niet zijn gepubliceerd.
+* **gewijzigd**: Zoek alle elementen die na het publiceren zijn gewijzigd of niet gepubliceerd.
 
 ### Elementtype {#asset-type}
 
@@ -105,7 +105,7 @@ U kunt een willekeurig aantal elementtypen selecteren. De zoekopdracht retournee
    <td>Zoeken in alle adaptieve formulieren.</td> 
   </tr>
   <tr>
-   <td>Resource</td> 
+   <td>Bron</td> 
    <td>Zoeken in alle bronnen.<br /> </td> 
   </tr>
  </tbody>

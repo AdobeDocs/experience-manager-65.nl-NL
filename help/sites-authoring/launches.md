@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: e145afd8-7391-47aa-b389-16fb303749d0
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '843'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 Met behulp van opstartprogramma&#39;s kunt u op efficiënte wijze inhoud ontwikkelen voor een toekomstige release.
 
-Er wordt een lancering gecreeerd zodat u veranderingen klaar voor toekomstige publicatie kunt maken (terwijl het handhaven van uw huidige pagina&#39;s). Nadat u de startpagina&#39;s hebt bewerkt en bijgewerkt, publiceert u deze weer naar de bron en activeert u vervolgens de bronpagina&#39;s (hoofdniveau). Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
+Er wordt een lancering gecreeerd zodat u veranderingen klaar voor toekomstige publicatie (terwijl het handhaven van uw huidige pagina&#39;s) kunt maken. Nadat u de startpagina&#39;s hebt bewerkt en bijgewerkt, publiceert u deze weer naar de bron en activeert u vervolgens de bronpagina&#39;s (hoofdniveau). Als u de opstartinhoud verhoogt, wordt deze teruggezet naar de bronpagina&#39;s en kan dit handmatig of automatisch gebeuren (afhankelijk van de velden die zijn ingesteld bij het maken en bewerken van de opstart).
 
 De seizoensgebonden productpagina&#39;s van uw online winkel worden bijvoorbeeld elk kwartaal bijgewerkt, zodat de aanbevolen producten op één lijn komen met het huidige seizoen. Als u de volgende driemaandelijkse update wilt voorbereiden, kunt u de juiste webpagina&#39;s starten. In het hele kwartaal worden de volgende wijzigingen in de opstartafbeelding opgebouwd:
 
@@ -34,7 +34,7 @@ Launches kunnen ook:
 * Gemaakt voor meerdere hoofdvertakkingen. Hoewel u de lancering voor de volledige plaats (en de veranderingen daar) kon tot stand brengen kan dit onpraktisch zijn aangezien de volledige plaats moet worden gekopieerd. Wanneer er honderden of zelfs duizenden pagina&#39;s bij betrokken zijn, worden de systeemvereisten en de prestaties beïnvloed door zowel de kopieeractie als later de vergelijkingen die vereist zijn voor de promotietaken.
 * Genest (een lancering binnen een lancering) om u de capaciteit te geven om een lancering van een bestaande lancering tot stand te brengen zodat de auteurs van reeds aangebrachte veranderingen kunnen voordeel halen, eerder dan het moeten de zelfde veranderingen veelvoudige tijden voor elke lancering aanbrengen.
 
-In deze sectie wordt beschreven hoe u (en indien nodig) [delete](/help/sites-authoring/launches-creating.md#deleting-a-launch)) pagina&#39;s starten vanuit de Sites-console of [de Launches-console](#the-launches-console):
+In deze sectie wordt beschreven hoe u (en indien nodig) [delete](/help/sites-authoring/launches-creating.md#deleting-a-launch)) pagina&#39;s starten vanuit de Sites-console of [de Startconsole](#the-launches-console):
 
 * [Lanceringen maken](/help/sites-authoring/launches-creating.md)
 * [Lanceringen bewerken](/help/sites-authoring/launches-editing.md)
@@ -57,7 +57,7 @@ Met Launches kunt u:
 
 * De startconfiguratie bewerken:
 
-   * Voeg pagina&#39;s en/of vertakkingen toe aan/van de lancering of verwijder deze.
+   * Pagina&#39;s en/of vertakkingen toevoegen aan of verwijderen uit het opstarten.
    * Bewerk starteigenschappen, zoals markeringen voor **Titel**, **Startdatum**, **Geschikt voor productie**.
 
 * U kunt de inhoud handmatig of automatisch publiceren:
@@ -70,15 +70,15 @@ Met Launches kunt u:
 
    * Automatisch - dit omvat het volgende:
 
-      * De **Starten**(**Live**) **date** veld: dit kan worden ingesteld wanneer u een opstart maakt of bewerkt.
+      * De **Starten**(**Live**) **date** veld: deze kan worden ingesteld wanneer u een opstart maakt of bewerkt.
 
-      * De **Gereed voor productie** markering: dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
+      * De **Gereed voor productie** markering: deze kan alleen worden ingesteld tijdens het bewerken van een opstart.
       * Als de **Gereed voor productie** markering is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
         Als er geen datum is ingesteld, heeft de markering geen effect.
 
 * Werk de bron- en startpagina&#39;s parallel bij:
 
-   * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
+   * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze worden ingesteld op basis van overerving, dus als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
 
   ![Overzicht van updates](assets/chlimage_1-112.png)
@@ -86,7 +86,7 @@ Met Launches kunt u:
 * [Een geneste start maken](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) - een lancering binnen een lancering:
 
    * De bron is een bestaande opstart.
-   * U kunt [een geneste introductie promoten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) aan alle doelgroepen; Dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
+   * U kunt [een geneste introductie promoten](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) naar elk doel; dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
 
   ![Overzicht van geneste lancering](assets/chlimage_1-113.png)
 
@@ -109,7 +109,7 @@ Met Launches kunt u:
 
 ### De opstartconsole {#the-launches-console}
 
-De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u toe om acties op die vermelde te voeren. De console is toegankelijk via:
+De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u acties op die vermelde ondernemen. De console is toegankelijk via:
 
 * De **Gereedschappen** Console: **Gereedschappen**, **Sites**, **Starten**.
 
@@ -117,7 +117,7 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u
 
 ## Starten in verwijzingen (siteconsole) {#launches-in-references-sites-console}
 
-1. In de **Sites** navigeer naar de bron van de opstart(en).
+1. In de **Sites** naar de bron van de opstart(en).
 1. Open de **Verwijzingen** rails en selecteer de bronpagina.
 1. Selecteren **Starten** worden de bestaande lanceringen vermeld:
 

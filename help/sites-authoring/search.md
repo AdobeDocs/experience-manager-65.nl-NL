@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '506'
 ht-degree: 6%
 
 ---
@@ -24,7 +24,7 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 >
 >Buiten de auteursomgeving zijn andere mechanismen ook beschikbaar voor het zoeken, zoals [Query Builder](/help/sites-developing/querybuilder-api.md) en [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Grondbeginselen van zoekopdrachten {#search-basics}
+## Basisinformatie zoeken {#search-basics}
 
 Zoeken is beschikbaar op de bovenste werkbalk:
 
@@ -34,7 +34,7 @@ Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag.
 * Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte, enzovoort.
-* Definieer en gebruik een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria.
+* Definieer een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
 1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
 1. De resultaten zullen worden getoond, gegroepeerd volgens console en verwant middeltype.
 
-   U kunt of een specifieke middel selecteren (voor verdere actie), of boren neer door het vereiste middeltype te selecteren; bijvoorbeeld **Alle sites weergeven**:
+   U kunt een specifieke bron selecteren (voor verdere actie) of naar beneden boren door het vereiste middeltype te selecteren, bijvoorbeeld **Alle sites weergeven**:
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 
@@ -65,12 +65,12 @@ U kunt als volgt uw bronnen zoeken en filteren:
 
    Volgens het middeltypeOnderzoek zal een vooraf bepaalde selectie van onderzoek/filtercriteria tonen.
 
-   In het zijpaneel kunt u het volgende selecteren:
+   In het zijpaneel kunt u selecteren:
 
    * Opgeslagen zoekopdrachten
    * Zoekdirectory
    * Tags
-   * Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publish Status, LiveCopy Status.
+   * Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publicatiestatus en LiveCopy-status.
 
    >[!NOTE]
    >
@@ -78,7 +78,7 @@ U kunt als volgt uw bronnen zoeken en filteren:
    >
    >
    >
-   >    * Afhankelijk van het type resource dat u hebt geselecteerd; Zo zijn bijvoorbeeld de activa- en Gemeenschapscriteria begrijpelijkerwijs gespecialiseerd.
+   >    * Afhankelijk van het type bron dat u hebt geselecteerd, zijn bijvoorbeeld de criteria Middelen en Gemeenschappen begrijpelijkerwijs gespecialiseerd.
    >    * Uw instantie als de [Zoeken in Forms](/help/sites-administering/search-forms.md) kan worden aangepast (aangepast aan de locatie in AEM).
    >
    >

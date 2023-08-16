@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 3763e985-7dd8-47fd-bfdf-2368b424c270
 feature: Multi Site Manager
 exl-id: 0c3488bd-5f32-4956-882c-93326a45b379
-source-git-commit: 785d4897263bfeae6a0cd235abca3c96f2231392
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De **Overzicht van live kopiëren** biedt de volgende mogelijkheden:
 * Overerving op een site weergeven/beheren:
 
    * De boomstructuur en de bijbehorende structuur van de live kopie samen met de overervingsstatus weergeven
-   * de overervingsstatus wijzigen; onderbreek, hervat bijvoorbeeld
+   * Wijzig de overervingsstatus, bijvoorbeeld de status Opschorten, Hervatten
    * Vervagen en eigenschappen van actieve kopieën weergeven
 
 * Uitrollen uitvoeren, acties
@@ -101,7 +101,7 @@ Wanneer u een pagina voor live kopiëren selecteert, zijn de volgende acties bes
 
    * Open de pagina voor live kopiëren voor bewerken.
 
-* [Relationistatiestatus](#relationship-status)
+* [Relatie status](#relationship-status)
 
    * Informatie weergeven over de status en overerving.
 
@@ -125,9 +125,9 @@ Wanneer u een pagina voor live kopiëren selecteert, zijn de volgende acties bes
 
    * Hiermee verwijdert u permanent de live relatie tussen een live kopie en de bijbehorende blauwdrukpagina.
 
-## Relationistatiestatus {#relationship-status}
+## Relatie status {#relationship-status}
 
-De **Relationistatiestatus** console heeft twee tabbladen die een reeks functies bieden:
+De **Relatie status** console heeft twee tabbladen die een reeks functies bieden:
 
 * [Relatie statusinformatie](#relationship-status-information)
 * [Informatie over live kopiëren](#live-copy-information)

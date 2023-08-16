@@ -11,10 +11,10 @@ content-type: reference
 discoiquuid: 7be506fb-f5c4-48dd-bec2-a3ea3ea19397
 docset: aem65
 exl-id: 18910143-f2f2-4cfe-88b9-651df90d9cb9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '191'
-ht-degree: 21%
+source-wordcount: '190'
+ht-degree: 16%
 
 ---
 
@@ -22,7 +22,7 @@ ht-degree: 21%
 
 **CSV-rapport maken** kunt u informatie over uw pagina&#39;s naar een CSV-bestand op uw lokale systeem exporteren.
 
-* Het gedownloade bestand wordt aangeroepen `export.csv`
+* Het gedownloade bestand wordt `export.csv`
 * De inhoud is afhankelijk van de eigenschappen die u selecteert.
 * U kunt het pad samen met de diepte van het exporteren definiëren.
 
@@ -30,12 +30,12 @@ ht-degree: 21%
 >
 >De downloadfunctie en de standaardbestemming van uw browser worden gebruikt.
 
-Met de wizard **CSV-export maken** kunt u het volgende selecteren:
+De **CSV-export maken** de tovenaar laat u selecteren:
 
 * Te exporteren eigenschappen
    * Metagegevens
       * Naam
-      * Gewijzigd
+      * gewijzigd
       * Gepubliceerd
       * Sjabloon
       * Workflow
@@ -55,7 +55,7 @@ Het resultaat `export.csv` kan worden geopend in Excel of een andere compatibele
 
 ![etc-01](assets/etc-01.png)
 
-Maak **CSV-rapport** Deze optie is beschikbaar wanneer u in het dialoogvenster **Sites** console (in lijstweergave): het is een optie van **Maken** vervolgkeuzemenu:
+Het maken **CSV-rapport** Deze optie is beschikbaar wanneer u in het dialoogvenster **Sites** console (in lijstweergave): dit is een optie van de **Maken** vervolgkeuzelijst:
 
 ![etc-02](assets/etc-02.png)
 

@@ -2,9 +2,9 @@
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1037'
 ht-degree: 1%
 
 ---
@@ -15,7 +15,7 @@ In dit deel van het [AEM Headless Developer Journey,](overview.md) Leer hoe u de
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop: [Hoe te om tot Uw Inhoud via AEM levering APIs toegang te hebben](access-your-content.md) U hebt geleerd hoe u toegang krijgt tot inhoud zonder kop in AEM via de AEM GraphQL API. Nu moet u:
+In het vorige document van de AEM zonder kop: [Toegang tot uw inhoud via AEM levering-API&#39;s](access-your-content.md) U hebt geleerd hoe u toegang krijgt tot inhoud zonder kop in AEM via de AEM GraphQL API. Nu moet u:
 
 * Een goed begrip van GraphQL.
 * Begrijp hoe de AEM GraphQL API werkt.
@@ -41,9 +41,9 @@ In de vorige fase van de Headless Journey hebt u geleerd hoe u de AEM GraphQL AP
 
 Waarom is er dus nog een API nodig?
 
-Met de HTTP-API voor middelen kunt u **Lezen** uw inhoud, maar u kunt ook **Maken**, **Bijwerken** en **Verwijderen** content - acties die niet mogelijk zijn met de GraphQL API.
+Met de HTTP-API voor middelen kunt u **Lezen** uw inhoud, maar het laat u ook **Maken**, **Bijwerken** en **Verwijderen** content - acties die niet mogelijk zijn met de GraphQL API.
 
-De REST API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager-versie die buiten de box valt.
+De REST-API voor middelen is beschikbaar voor elke installatie van een recente Adobe Experience Manager-versie die buiten de box valt.
 
 ## HTTP-API voor assets {#assets-http-api}
 
@@ -52,7 +52,7 @@ De HTTP-API voor Middelen omvat:
 * REST-API voor middelen
 * inclusief ondersteuning voor inhoudsfragmenten
 
-De huidige implementatie van de HTTP-API voor middelen is gebaseerd op de **REST** architecturale stijl en biedt toegang tot inhoud (opgeslagen in AEM) via **CRUD** bewerkingen (Maken, Lezen, Bijwerken, Verwijderen).
+De huidige implementatie van de HTTP-API voor middelen is gebaseerd op de **REST** architecturale stijl en biedt toegang tot inhoud (opgeslagen in AEM) via **CRUD** bewerkingen (Maken, lezen, bijwerken, verwijderen).
 
 Met deze bewerking kunt u met de API Adobe Experience Manager gebruiken als een headless CMS (Content Management System) door Content Services aan te bieden aan een JavaScript front-end toepassing. Of elke andere toepassing die HTTP-aanvragen kan uitvoeren en JSON-reacties kan verwerken. Toepassingen voor één pagina (SPA), die zijn gebaseerd op een framework of die zijn aangepast, vereisen bijvoorbeeld inhoud die via een API wordt aangeboden, vaak in JSON-indeling.
 
@@ -224,7 +224,6 @@ Bijvoorbeeld om `/content/dam/wknd/en/adventures/cycling-tuscany`, verzoek `/api
 >* `/api/assets` **niet** het gebruik van de `.model` kiezer.
 >* `/content/path/to/page` **doet** het gebruik van de `.model` kiezer.
 
-
 ### Bewerking {#operation}
 
 De HTTP-methode bepaalt de uit te voeren bewerking:
@@ -236,7 +235,7 @@ De HTTP-methode bepaalt de uit te voeren bewerking:
 
 >[!NOTE]
 >
->De verzoeklichaam en/of parameters URL kunnen worden gebruikt om sommige van deze verrichtingen te vormen; moet u bijvoorbeeld definiëren dat een map of element moet worden gemaakt met een **POST** verzoek.
+>De parameters request body en/of URL kunnen worden gebruikt om sommige van deze bewerkingen te configureren; definieer bijvoorbeeld dat een map of een element moet worden gemaakt door een **POST** verzoek.
 
 De exacte indeling van ondersteunde aanvragen wordt gedefinieerd in de API-naslagdocumentatie.
 
@@ -251,7 +250,7 @@ Het gebruik kan verschillen afhankelijk van of u een AEM auteur of publicatieomg
 
 >[!CAUTION]
 >
->De configuratie van de verzender op AEM instanties zou toegang tot kunnen blokkeren `/api`.
+>De dispatcherconfiguratie op AEM instanties zou toegang tot kunnen blokkeren `/api`.
 
 >[!NOTE]
 >
@@ -272,7 +271,7 @@ De reactie is geserialiseerd met JSON met de inhoud gestructureerd zoals in het 
 Er zijn twee typen leesbewerkingen mogelijk:
 
 * Als u een specifiek inhoudsfragment leest per pad, wordt hiermee de JSON-representatie van het inhoudsfragment geretourneerd.
-* Een map met inhoudsfragmenten lezen op pad: Hiermee worden de JSON-representaties van alle inhoudsfragmenten in de map geretourneerd.
+* Een map met inhoudsfragmenten lezen op pad: hiermee worden de JSON-representaties van alle inhoudsfragmenten in de map geretourneerd.
 
 ### Maken {#create}
 

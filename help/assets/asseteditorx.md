@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Developer Tools
 exl-id: de1c63c1-a0e5-470b-8d83-b594513a5dbd
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '687'
 ht-degree: 13%
 
 ---
@@ -32,7 +32,7 @@ De volgende voorbeeldpagina&#39;s worden opgenomen in Geometrixx:
 
 [!DNL Assets] componenten gebruiken een uitbreiding van WCM uitgeeft clientlib. De clientlibs worden meestal geladen in `init.jsp`.
 
-Vergeleken met de standaard clientlib-belasting (in core `init.jsp`), en [!DNL Assets] sjabloon moet het volgende hebben:
+Vergeleken met de standaard clientlib-belasting (in core `init.jsp`), [!DNL Assets] sjabloon moet het volgende hebben:
 
 * De sjabloon moet de `cq.dam.edit` clientlib (in plaats van `cq.wcm.edit`).
 
@@ -60,11 +60,11 @@ Sommige van de [!DNL Assets] gebruiken de widgetbibliotheek. Om correct in de in
 
 ### Stijlblad Geometrixx {#geometrixx-style-sheet}
 
-Voor de voorbeeldpaginacomponenten is vereist dat alle kiezers beginnen met `.asseteditor` van `static.css` (`/etc/designs/geometrixx/static.css`). Beste praktijken: Alles kopiëren `.asseteditor` selecteert u de gewenste stijlpagina en past u de regels aan.
+Voor de voorbeeldpaginacomponenten is vereist dat alle kiezers beginnen met `.asseteditor` van `static.css` (`/etc/designs/geometrixx/static.css`). Tips en trucs: alles kopiëren `.asseteditor` selecteert u de gewenste stijlpagina en past u de regels aan.
 
 ### FormChooser: Aanpassingen voor uiteindelijk geladen bronnen {#formchooser-adjustments-for-eventually-loaded-resources}
 
-De Asset Editor gebruikt de Formulierkiezer, waarmee u bronnen (in dit geval elementen) op dezelfde formulierpagina kunt bewerken door gewoon een formulierkiezer en het pad van het formulier toe te voegen aan de URL van het element.
+De Asset Editor gebruikt de Formulierkiezer, waarmee u bronnen - in dit geval elementen - op dezelfde formulierpagina kunt bewerken door gewoon een formulierkiezer en het pad van het formulier toe te voegen aan de URL van het element.
 
 Bijvoorbeeld:
 

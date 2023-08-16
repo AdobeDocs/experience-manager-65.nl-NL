@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ U kunt verwijzen naar bestaande digitale elementen vanuit een [!DNL Adobe Illust
 
 Verwijzen naar digitale elementen vanuit een [!DNL InDesign] bestand, sleept u elementen naar het [!DNL InDesign] bestand of exporteer de [!DNL InDesign] bestand als ZIP-archief.
 
-Er bestaan al elementen waarnaar wordt verwezen in [!DNL Experience Manager Assets]. U kunt subelementen extraheren via [InDesign Server configureren](indesign.md). Ingesloten elementen in een [!DNL InDesign] bestand wordt geëxtraheerd als subelementen.
+Er bestaan al elementen waarnaar wordt verwezen in [!DNL Experience Manager Assets]. U kunt subelementen extraheren via [configureren, InDesign Server](indesign.md). Ingesloten elementen in een [!DNL InDesign] bestand wordt geëxtraheerd als subelementen.
 
 >[!NOTE]
 >
@@ -67,16 +67,16 @@ Deze procedure lijkt op [digitale elementen toevoegen als verwijzingen in Adobe 
 1. Gebruik de [Pakketfunctie](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) van [!DNL Adobe InDesign] om het document te exporteren. [!DNL Adobe InDesign] U kunt een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een `Links` map met subelementen in het dialoogvenster [!DNL InDesign] bestand. De `Links` is aanwezig in dezelfde map als het INDD-bestand.
 1. Een ZIP-bestand maken en uploaden naar het [!DNL Experience Manager] opslagplaats.
 1. Start de `Unarchiver` workflow.
-1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Als u een lijst met de desbetreffende elementen wilt weergeven, navigeert u naar de pagina met elementdetails op het tabblad [!DNL InDesign] en sluit het [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
+1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Navigeer naar de pagina met elementdetails op de pagina met [!DNL InDesign] en sluit het [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
 ## [!DNL Adobe Photoshop]: Digitale elementen toevoegen als verwijzingen {#refps}
 
-1. Gebruiken [!DNL Experience Manager] bureaubladtoepassing voor toegang tot [!DNL Experience Manager Assets]. Download en open de middelen op het lokale bestandssysteem. Gebruik de [!UICONTROL Place Linked] functionaliteit in [!DNL Adobe Photoshop]. Zie [middelen plaatsen in bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
+1. Gebruiken [!DNL Experience Manager] bureaubladtoepassing voor toegang tot [!DNL Experience Manager Assets]. Download de bestanden en open ze op het lokale bestandssysteem. Gebruik de [!UICONTROL Place Linked] functionaliteit in [!DNL Adobe Photoshop]. Zie [middelen plaatsen in bureaubladtoepassing](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html#place-assets-in-native-documents).
 
-1. Opslaan in [!DNL Photoshop] bestand naar het gekoppelde station of [uploaden](/help/assets/manage-assets.md#uploading-assets) aan de [!DNL Experience Manager] opslagplaats.
+1. In opslaan [!DNL Photoshop] bestand naar het gekoppelde station of [uploaden](/help/assets/manage-assets.md#uploading-assets) aan de [!DNL Experience Manager] opslagplaats.
 1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande [!DNL Experience Manager] elementen worden weergegeven op de pagina met elementdetails.
 
-   Als u de middelen waarnaar wordt verwezen wilt weergeven, sluit u het dialoogvenster [Rail](/help/sites-authoring/basic-handling.md#rail-selector) op de pagina met elementdetails.
+   Als u de middelen waarnaar wordt verwezen wilt weergeven, sluit u de [Rail](/help/sites-authoring/basic-handling.md#rail-selector) op de pagina met elementdetails.
 
 1. De middelen waarnaar wordt verwezen, bevatten ook de lijst met elementen waarnaar wordt verwezen. Als u een lijst met middelen waarnaar wordt verwezen wilt weergeven, navigeert u naar de pagina met elementdetails en sluit u de [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
@@ -88,7 +88,7 @@ Deze procedure lijkt op [digitale elementen toevoegen als verwijzingen in Adobe 
 
 Voor de ondersteunde elementen met indelingen van meerdere pagina&#39;s: PDF-bestanden, AI-bestanden, [!DNL Microsoft PowerPoint] en [!DNL Apple Keynote] bestanden, en [!DNL Adobe InDesign] bestanden — [!DNL Experience Manager] U kunt subelementen genereren die overeenkomen met elke afzonderlijke pagina van het oorspronkelijke element. Deze subassets zijn gekoppeld aan de *parent* elementen toevoegen en de weergave van meerdere pagina&#39;s vergemakkelijken. Voor alle andere doeleinden worden de subactiva behandeld als normale activa in [!DNL Experience Manager].
 
-Genereren van subelementen is standaard uitgeschakeld. Voer de volgende stappen uit om het genereren van subelementen in te schakelen:
+Genereren van subelementen wordt standaard uitgeschakeld. Voer de volgende stappen uit om het genereren van subelementen in te schakelen:
 
 1. Aanmelden [!DNL Experience Manager] als beheerder. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]**.
 1. Selecteren **[!UICONTROL DAM Update Asset]** workflow en klik op **[!UICONTROL Edit]**.
@@ -96,8 +96,8 @@ Genereren van subelementen is standaard uitgeschakeld. Voer de volgende stappen 
 
 Voer een van de volgende handelingen uit om de subelementen te genereren:
 
-* Nieuwe elementen: De [!UICONTROL DAM Update Assets] workflow wordt uitgevoerd voor elk nieuw element waarnaar wordt geüpload [!DNL Experience Manager]. Subelementen worden automatisch gegenereerd voor nieuwe elementen die uit meerdere pagina&#39;s bestaan.
-* Bestaande elementen met meerdere pagina&#39;s: Handmatig het dialoogvenster [!UICONTROL DAM Update Assets] workflow volgens een van de volgende stappen:
+* Nieuwe activa: De [!UICONTROL DAM Update Assets] workflow wordt uitgevoerd voor elk nieuw element waarnaar wordt geüpload [!DNL Experience Manager]. Subelementen worden automatisch gegenereerd voor nieuwe elementen van meerdere pagina&#39;s.
+* Bestaande elementen van meerdere pagina&#39;s: voer handmatig het [!UICONTROL DAM Update Assets] workflow volgens een van de volgende stappen:
 
    * Selecteer een element en klik op [!UICONTROL Timeline] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klikken [!UICONTROL Start Workflow], selecteert u [!UICONTROL DAM Update Asset], klikt u op [!UICONTROL Start]en klik op [!UICONTROL Proceed].
    * Selecteer een element en klik op [!UICONTROL Create] > [!UICONTROL Workflow] op de werkbalk. Selecteer in het pop-updialoogvenster de optie [!UICONTROL DAM Update Asset] workflow, klik op [!UICONTROL Start]en klik op [!UICONTROL Proceed].
@@ -106,7 +106,7 @@ Met name voor Microsoft Word-documenten voert u de opdracht **[!UICONTROL DAM Pa
 
 >[!NOTE]
 >
->In de [!UICONTROL Create Sub Asset Process - Step Properties] in [!UICONTROL Process Arguments]kunt u opgeven hoeveel subelementen [!DNL Experience Manager] wordt gegenereerd. De standaardwaarde is 5. Laat het veld leeg als u alle subelementen wilt genereren. Als het veld een negatief veld heeft, worden geen subactiva gegenereerd.
+>In de [!UICONTROL Create Sub Asset Process - Step Properties] in [!UICONTROL Process Arguments], kunt u het aantal subelementen opgeven dat [!DNL Experience Manager] wordt gegenereerd. De standaardwaarde is 5. Laat het veld leeg als u alle subelementen wilt genereren. Als het veld een negatief veld heeft, worden geen subactiva gegenereerd.
 
 ## Subelementen weergeven {#viewing-subassets}
 
@@ -116,7 +116,7 @@ De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd e
 
 ## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
 
-U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van [!DNL Experience Manager Assets]. Een element met meerdere pagina&#39;s openen en klikken **[!UICONTROL View Pages]** in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
+U kunt een bestand met meerdere pagina&#39;s, zoals PDF, INDD, PPT, PPTX en AI, weergeven met de functie Paginaviewer van [!DNL Experience Manager Assets]. Een element met meerdere pagina&#39;s openen en klikken **[!UICONTROL View Pages]** linksboven op de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 
 ![Pagina&#39;s van elementen met meerdere pagina&#39;s weergeven en bekijken](assets/view_multipage_asset_fmr.gif)
 
@@ -128,7 +128,7 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 * **[!UICONTROL Properties]** wordt geopend [!UICONTROL Properties] pagina van het specifieke subelement.
 
-* **[!UICONTROL Annotate]** kunt u het specifieke subelement van een annotatie voorzien. De annotaties die u op afzonderlijke subelementen gebruikt, worden samen verzameld en weergegeven wanneer het bovenliggende element wordt geopend voor weergave.
+* **[!UICONTROL Annotate]** kunt u het specifieke subelement annoteren. De annotaties die u op afzonderlijke subelementen gebruikt, worden samen verzameld en weergegeven wanneer het bovenliggende element wordt geopend voor weergave.
 
 * **[!UICONTROL Page Overview]** worden alle subelementen tegelijkertijd weergegeven.
 
@@ -136,7 +136,7 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 ## Beste werkwijzen en beperking {#best-practice-limitation-tips}
 
-* Het genereren van subelementen kan op elke [!DNL Experience Manager] implementatie. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. Als u op verzoek subassets genereert, maakt u een aparte workflow om subassets te genereren. Met een speciale workflow kunt u de andere stappen in de workflow voor DAM-update-elementen overslaan en computerbronnen opslaan.
+* Het genereren van subelementen kan op elke [!DNL Experience Manager] implementatie. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. Als u op verzoek subassets genereert, maakt u een aparte workflow om subassets te genereren. Met een specifieke workflow kunt u de andere stappen in de DAM-workflow voor het bijwerken van middelen overslaan en computerbronnen opslaan.
 
 >[!MORELIKETHIS]
 >

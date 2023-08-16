@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 2981dc20-b2ba-4ea2-a53b-8b5fe526aa9c
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -51,11 +51,11 @@ De belangrijkste consoles zijn:
   </tr>
   <tr>
    <td><strong>Lanceringen</strong></td>
-   <td>Hierdoor kunt u uw <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanceringen</a>; Hiermee kunt u de inhoud ontwikkelen voor een toekomstige release van een of meer geactiveerde webpagina's.<br /> <i>Opmerking: In de interface met aanraakbediening is veel van dezelfde functionaliteit beschikbaar in de Sites-console, samen met de References-rail.</i> <i>Indien nodig, is deze console beschikbaar bij de console van Hulpmiddelen; Selecteer Bewerkingen en vervolgens Starten.</i></td>
+   <td>Hierdoor kunt u uw <a href="/help/sites-classic-ui-authoring/classic-launches.md">lanceringen</a>; hiermee kunt u de inhoud ontwikkelen voor een toekomstige release van een of meer geactiveerde webpagina's.<br /> <i>Opmerking: In de interface met aanraakbediening is veel van dezelfde functionaliteit beschikbaar in de Sites-console, samen met de References-rail.</i> <i>Indien nodig, is deze console beschikbaar bij de console van Hulpmiddelen; uitgezochte Verrichtingen, dan Lanceert.</i></td>
   </tr>
   <tr>
    <td><strong>Inbox </strong></td>
-   <td>Vaak zijn verschillende personen betrokken bij de subtaken van een werkstroom en moet elke persoon zijn stap voltooien voordat het werk aan de volgende persoon wordt overgedragen. Met het Postvak IN kunt u meldingen met betrekking tot dergelijke taken weergeven. Zie <a href="/help/sites-administering/workflows.md">Werken met workflows</a>. <br /> </td>
+   <td>Vaak zijn verschillende personen betrokken bij de subtaken van een werkstroom en moet elke persoon zijn stap voltooien voordat het werk aan de volgende persoon wordt overgedragen. Met het Postvak IN kunt u meldingen weergeven die betrekking hebben op dergelijke taken. Zie <a href="/help/sites-administering/workflows.md">Werken met workflows</a>. <br /> </td>
   </tr>
   <tr>
    <td><strong>Tags</strong></td>
@@ -117,7 +117,7 @@ De **Websites** De console maakt een lijst van uw pagina&#39;s van inhoud in een
    * Hiermee geeft u de onderliggende pagina&#39;s in het rechterdeelvenster weer
    * Breidt de structuur in de linkerruit uit.
 
-     Om redenen van prestaties, hangt deze actie van het aantal kindknopen af. Met een standaardinstallatie, werkt deze methode van uitbreiding wanneer er zijn `30` of minder onderliggende knooppunten.
+     Om redenen van prestaties, hangt deze actie van het aantal kindknopen af. Met een standaardinstallatie werkt deze uitbreidingsmethode wanneer er `30` of minder onderliggende knooppunten.
 
 * Als u dubbelklikt op de paginanaam (linkerdeelvenster), wordt de structuur uitgebreid, hoewel dit effect niet zo duidelijk is wanneer de pagina tegelijkertijd wordt geopend.
 
@@ -146,7 +146,7 @@ Het rechterdeelvenster van het deelvenster **Websites** console biedt een lijstw
 
 ![page-info](assets/page-info.png)
 
-Het volgende is beschikbaar: een subset van deze velden wordt standaard weergegeven:
+De volgende velden zijn beschikbaar; een subset van deze velden wordt standaard weergegeven:
 
 <table>
  <tbody>
@@ -171,7 +171,7 @@ Het volgende is beschikbaar: een subset van deze velden wordt standaard weergege
    <td>Geeft aan of de pagina is gepubliceerd en de publicatiedatum en -tijd bevat.</td>
   </tr>
   <tr>
-   <td>Gewijzigd</td>
+   <td>gewijzigd</td>
    <td>Geeft aan of de pagina is gewijzigd en geeft de wijzigingsdatum en -tijd weer. Als u wijzigingen wilt opslaan, moet u de pagina activeren.</td>
   </tr>
   <tr>
@@ -207,9 +207,9 @@ Het volgende is beschikbaar: een subset van deze velden wordt standaard weergege
 
 >[!NOTE]
 >
->Als u de kolommen zichtbaar wilt selecteren, plaatst u de muis boven een kolomtitel. Er wordt een vervolgkeuzemenu weergegeven. Vanaf dit punt kunt u de opdracht **Kolommen** optie.
+>Als u de kolommen zichtbaar wilt selecteren, plaatst u de muis boven een kolomtitel. Er wordt een vervolgkeuzemenu weergegeven. Vanaf dit punt kunt u de opdracht **Kolommen** -optie.
 
-De kleuren naast de pagina&#39;s in het dialoogvenster **Gepubliceerd** en **Gewijzigd** kolommen geven de publicatiestatus aan:
+De kleuren naast de pagina&#39;s in het dialoogvenster **Gepubliceerd** en **gewijzigd** kolommen geven de publicatiestatus aan:
 
 | **Kolom** | **Kleur** | **Beschrijving** |
 |---|---|---|
@@ -217,8 +217,8 @@ De kleuren naast de pagina&#39;s in het dialoogvenster **Gepubliceerd** en **Gew
 | Gepubliceerd | Geel | Publicatie is in behandeling. Het systeem heeft nog geen bevestiging van publicatie ontvangen. |
 | Gepubliceerd | Rood | Publicatie mislukt. Er is geen verbinding met het publicatieexemplaar. Dit kan ook betekenen dat de inhoud is gedeactiveerd. |
 | Gepubliceerd | *blank* | Deze pagina is nog nooit gepubliceerd. |
-| Gewijzigd | Blauw | De pagina is gewijzigd sinds de laatste publicatie. |
-| Gewijzigd | *blank* | Deze pagina is nooit gewijzigd of is niet gewijzigd sinds de laatste publicatie. |
+| gewijzigd | Blauw | De pagina is gewijzigd sinds de laatste publicatie. |
+| gewijzigd | *blank* | Deze pagina is nooit gewijzigd of is niet gewijzigd sinds de laatste publicatie. |
 
 ## Contextmenu&#39;s {#context-menus}
 

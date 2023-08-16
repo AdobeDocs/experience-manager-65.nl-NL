@@ -10,9 +10,9 @@ topic-tags: customization
 discoiquuid: 0d817a7e-2758-4308-abda-6194716c2d97
 docset: aem65
 exl-id: 44516956-00aa-41d5-a7e9-746c7618e5db
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '523'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Wanneer u een adaptief formulier maakt, kunt u een werkbalklay-out voor het formulier opgeven. De werkbalkindeling definieert de opdrachten en de indeling van de werkbalk op het formulier.
 
-De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om dit probleem te verhelpen, biedt AEM Client-side bibliotheekmappen, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Zie voor meer informatie [Hoe bibliotheken aan de clientzijde werken in AEM.](/help/sites-developing/clientlibs.md)
+De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om dit probleem te verhelpen, biedt AEM Client-side bibliotheekmappen waarmee u uw clientcode in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Zie voor meer informatie [Hoe bibliotheken aan de clientzijde werken in AEM.](/help/sites-developing/clientlibs.md)
 
 ![Voorbeeldindeling van de werkbalk](assets/default_toolbar_layout.png)
 
@@ -56,7 +56,7 @@ Aangepaste werkbalkindeling demo
 
    `/libs/fd/af/layouts/toolbar`
 
-   Kopieer bijvoorbeeld de `mobileFixedToolbarLayout` knooppunt van `/libs/fd/af/layouts/toolbar` aan de `/apps/customlayout/toolbar` map.
+   Kopieer bijvoorbeeld de `mobileFixedToolbarLayout` knooppunt van de `/libs/fd/af/layouts/toolbar` aan de `/apps/customlayout/toolbar` map.
 
    Kopieer ook de toolbarCommon.jsp naar de `/apps/customlayout/toolbar` map.
 
@@ -68,7 +68,7 @@ Aangepaste werkbalkindeling demo
 
    Geef ook een relevante beschrijving voor het knooppunt op. Wijzig bijvoorbeeld jcr:description of the node in **Aangepaste indeling voor werkbalk**.
 
-   De `guideComponentType` eigenschap van het knooppunt bepaalt het lay-outtype. In dit geval is het indelingstype een werkbalk en wordt het daarom weergegeven in het keuzemenu voor de werkbalkindeling.
+   De `guideComponentType` Het lay-outtype wordt bepaald door de eigenschap van het knooppunt. In dit geval is het indelingstype een werkbalk en wordt het daarom weergegeven in het keuzemenu voor de werkbalkindeling.
 
    ![Een knooppunt met relevante beschrijving](assets/toolbar3.png)
 

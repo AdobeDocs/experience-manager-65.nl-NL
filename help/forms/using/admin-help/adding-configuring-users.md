@@ -1,16 +1,12 @@
 ---
 title: Gebruikers toevoegen en configureren
-seo-title: Adding and configuring users
 description: Met de instellingen voor gebruikersbeheer in de beheerconsole kunt u gebruikers maken of verwijderen en andere gebruikersinstellingen configureren.
-seo-description: The User Management settings in the administration console allow you to create or delete users  and configure other user settings.
-uuid: fe650cdb-7d0d-4f38-9899-e5349559ed32
 contentOwner: admin
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
-discoiquuid: 20ca99e3-4843-4254-b3e9-0255cc752363
 exl-id: 50eea35d-d844-4f4b-9cbe-7d84bd6b1e3b
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1647'
+source-wordcount: '1645'
 ht-degree: 0%
 
 ---
@@ -72,9 +68,9 @@ Gebruik geen onderstrepingstekens (_) in canonieke namen, bijvoorbeeld `sample_u
 
 **Sleutel zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM formulieren kunnen zakelijke kalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [Domeinen toevoegen](/help/forms/using/admin-help/adding-domains.md#adding-domains).)
 
-Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Stel voor deze gebruikers de Business Calendar Key in op een tekenreeks. Wijs vervolgens de agenda-key van het bedrijf (de tekenreeks) toe aan een zakelijke kalender in de formulierworkflow.
+Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Stel voor deze gebruikers de Business Calendar Key in op een tekenreeks. Wijs vervolgens de agenda-key van het bedrijf (de tekenreeks) toe aan een agenda voor het bedrijf in de formulierwerkstroom.
 
-Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP. Het Beheer van de gebruiker synchroniseert gebruikersinformatie van de folder met het gegevensbestand van het Beheer van de Gebruiker. Met deze functie kunt u een agenda-toets toewijzen aan een veld in de LDAP-directory. Neem bijvoorbeeld een scenario waarin elk gebruikersrecord in uw map een landveld bevat en u bedrijfsplannen wilt toewijzen op basis van het land waar de gebruiker zich bevindt. In dit geval geeft u de naam van het landveld op als de waarde voor de instelling Key Business Calendar. Vervolgens kunt u de agenda-sleutels voor het bedrijf (de waarden die zijn gedefinieerd voor het landveld in de LDAP-lijst) toewijzen aan de agenda&#39;s voor het bedrijf in de formulierworkflow.
+Als u een ondernemingsdomein gebruikt, verblijft de informatie over gebruikers in een derdesopslagsysteem, zoals een folder LDAP. Gebruikersbeheer synchroniseert gebruikersgegevens uit de map met de gebruikersbeheerdatabase. Met deze functie kunt u een zakelijke kalendersleutel toewijzen aan een veld in de LDAP-directory. Neem bijvoorbeeld een scenario waarin elk gebruikersrecord in uw map een landveld bevat en u bedrijfsplannen wilt toewijzen op basis van het land waar de gebruiker zich bevindt. In dit geval geeft u de naam van het landveld op als de waarde voor de instelling Key Business Calendar. Vervolgens kunt u de agenda-sleutels voor het bedrijf (de waarden die zijn gedefinieerd voor het landveld in de LDAP-lijst) toewijzen aan de agenda&#39;s voor het bedrijf in de formulierworkflow.
 
 Voor extra informatie over bedrijfscalendars, met inbegrip van hoe te om bedrijfskalenderoetsen aan bedrijfscalendars in kaart te brengen, zie [Bedrijfskalenders configureren](/help/forms/using/admin-help/configuring-business-calendars.md#configuring-business-calendars).
 
@@ -136,10 +132,9 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 
    * Als u de gebruiker uit een groep wilt verwijderen, schakelt u het selectievakje voor de groep in en klikt u op **[!UICONTROL Delete]** en klik vervolgens op **[!UICONTROL Save]**.
 
-
 1. Als u de rollen van de gebruiker wilt bewerken, klikt u op de knop **[!UICONTROL Role Assignments]** en voer de volgende taken uit:
 
-   * Als u een lijst met rollen wilt weergeven, klikt u op **[!UICONTROL Find Roles]**.
+   * Als u een lijst met rollen wilt weergeven, klikt u **[!UICONTROL Find Roles]**.
    * Als u een rol wilt toevoegen, schakelt u het selectievakje voor de rol in en klikt u op **[!UICONTROL OK]** en klik vervolgens op **[!UICONTROL Save]**.
    * Als u een rol wilt verwijderen, schakelt u het selectievakje voor de rol in en klikt u op **[!UICONTROL Unassign]** en klik vervolgens op **[!UICONTROL Save]**.
 
@@ -164,9 +159,9 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 Als een gebruiker zonder de vereiste AEM en CQ-machtigingen zich probeert aan te melden bij de volgende toepassingen die zijn ingesloten in CQ, wordt de gebruiker omgeleid naar de standaard CQ 404-pagina met de fouttrace:
 
 * Correspondentenbeheeroplossing
-* Werkruimte AEM formulieren
+* Werkruimte voor AEM formulieren
 
-   ***notitie **: De Flex-werkruimte is verouderd voor AEM formulierrelease.*
+  ***notitie **: De Flex-werkruimte is vervangen voor AEM formulierrelease.*
 
 * formulierbeheer
 * Procesrapportage

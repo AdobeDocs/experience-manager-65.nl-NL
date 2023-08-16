@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3224'
+source-wordcount: '3221'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    >[!NOTE]
    >
-   >Een selectie van sjabloontypen is beschikbaar buiten het vak. U kunt ook [uw eigen sitespecifieke sjabloontypen maken](/help/sites-developing/page-templates-editable.md#creating-template-types), indien nodig.
+   >Een selectie van sjabloontypen is beschikbaar buiten het vak. U kunt [uw eigen sitespecifieke sjabloontypen maken](/help/sites-developing/page-templates-editable.md#creating-template-types), indien nodig.
 
 1. Vorm de structuur, inhoudsbeleid, aanvankelijke inhoud, en lay-out van het nieuwe malplaatje.
 
@@ -73,6 +73,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
    * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 
       * Als u een sjabloon maakt in een aangepaste map buiten de map `We.Retail` voorbeeldinhoud, kunt u de Componenten van de Stichting kiezen of gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/overview.html?lang=en).
+
    * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
    * Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u de initiële inhoud kunt definiëren.
 
@@ -85,9 +86,10 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
    * Het inhoudsbeleid definieert de ontwerpeigenschappen van een component.
 
       * Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen.
+
    * Dit beleid is van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-   Zie voor meer informatie over de manier waarop een sjabloonauteur beleid definieert [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
+   Zie voor meer informatie over hoe een sjabloonauteur beleid definieert [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author).
 
    Voor technische details van het beleid raadpleegt u [Inhoudsbeleid](/help/sites-developing/page-templates-editable.md#content-policies) in dit document.
 
@@ -116,7 +118,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Voor details over hoe een malplaatjeauteur een malplaatje toelaat, zie [Paginasjablonen maken](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author).
 
-   Voor technische details over het inschakelen van een sjabloon raadpleegt u [Een sjabloon voor ons inschakelen en toestaan](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in dit document
+   Zie voor technische details over het inschakelen van een sjabloon [Een sjabloon voor ons inschakelen en toestaan](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in dit document
 
 1. Gebruik dit besturingselement om inhoudspagina&#39;s te maken.
 
@@ -129,13 +131,13 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
 >[!TIP]
 >
->Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden wordt de [lokalisatiefunctie van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
+>Voer nooit informatie in die geïnternationaliseerd moet worden in een sjabloon. Voor internaliseringsdoeleinden wordt de [lokalisatiefunctie van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) wordt aanbevolen.
 
 >[!NOTE]
 >
 >Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
 >
->Adobe adviseert niet om meer dan 1000 malplaatjes wegens potentiële prestatiesgevolgen te hebben.
+>Adobe raadt niet aan meer dan 1000 sjablonen te hebben vanwege mogelijke gevolgen voor de prestaties.
 
 >[!NOTE]
 >
@@ -204,9 +206,9 @@ Ga als volgt te werk om een map te maken:
 
    * Type: `String`
 
-   * Waarde: De titel (voor de map) die u wilt weergeven in het dialoogvenster **Sjablonen** console.
+   * Waarde: de titel (voor de map) die u wilt weergeven in het dialoogvenster **Sjablonen** console.
 
-1. In *optellen* aan de standaardauteursrechten en -rechten (bijvoorbeeld `content-authors`), wijst groepen toe en bepaalt de vereiste toegangsrechten (ACLs) voor uw auteurs om malplaatjes in de nieuwe omslag te kunnen tot stand brengen.
+1. In *toevoeging* de standaardmachtigingen en -bevoegdheden (bijvoorbeeld `content-authors`), wijst groepen toe en bepaalt de vereiste toegangsrechten (ACLs) voor uw auteurs om malplaatjes in de nieuwe omslag te kunnen tot stand brengen.
 
    De `template-authors` groep is de standaardgroep die moet worden toegewezen. Zie de volgende sectie [ACLs en Groepen](/help/sites-developing/page-templates-editable.md#acls-and-groups) voor meer informatie.
 
@@ -222,7 +224,7 @@ Ga als volgt te werk om een map te maken:
 1. In de **Configuratie maken** moeten de volgende velden worden geconfigureerd:
 
    * **Titel**: Geef een titel op voor de configuratiemap
-   * **Bewerkbare sjablonen**: Selecteren om bewerkbare sjablonen in deze map toe te staan
+   * **Bewerkbare sjablonen**: Selecteer deze optie om bewerkbare sjablonen toe te staan in deze map
 
 1. Klikken **Maken**
 
@@ -262,7 +264,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/templates</code></td>
    <td>Sjabloonauteurs<br /> </td>
    <td>lezen, schrijven, repliceren</td>
-   <td>Sjabloonauteurs die sjablonen maken, lezen, bijwerken, verwijderen en repliceren in sitespecifieke sjablonen <code>/conf</code> spatie</td>
+   <td>Sjabloonauteurs die sjablonen maken, lezen, bijwerken, verwijderen en repliceren voor specifieke sites <code>/conf</code> spatie</td>
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
@@ -278,7 +280,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
    <td rowspan="3"><code>/conf/&lt;<i>your-folder</i>&gt;/settings/wcm/policies</code></td>
    <td><code>Template Author</code></td>
    <td>lezen, schrijven, repliceren</td>
-   <td>Sjabloonauteurs die sjablonen maken, lezen, bijwerken, verwijderen en repliceren in sitespecifieke sjablonen <code>/conf</code> spatie</td>
+   <td>Sjabloonauteurs die sjablonen maken, lezen, bijwerken, verwijderen en repliceren voor specifieke sites <code>/conf</code> spatie</td>
   </tr>
   <tr>
    <td>Anonieme webgebruiker</td>
@@ -304,7 +306,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
  </tbody>
 </table>
 
-Deze standaard `template-authors` groep omvat alleen de projectinstellingen, waarbij alle `template-authors` leden hebben toegang tot alle sjablonen en mogen deze ontwerpen . Voor complexere montages, waar er een behoefte aan veelvoudige groepen van malplaatjeauteurs is om toegang tot malplaatjes te scheiden, moeten meer de auteursgroepen van het douanemalplaatje worden gecreeerd. De machtigingen voor de groepen sjabloonauteurs zijn echter nog steeds hetzelfde.
+Deze standaard `template-authors` groep omvat alleen de projectinstellingen, waarbij alle `template-authors` leden hebben toegang tot alle sjablonen en mogen deze samenstellen. Voor complexere montages, waar er een behoefte aan veelvoudige groepen van malplaatjeauteurs is om toegang tot malplaatjes te scheiden, moeten meer de auteursgroepen van het douanemalplaatje worden gecreeerd. De machtigingen voor de groepen sjabloonauteurs zijn echter nog steeds hetzelfde.
 
 #### Oudere sjablonen onder /conf/global {#legacy-templates-under-conf-global}
 
@@ -373,7 +375,7 @@ Geef een sjabloontype op wanneer u een sjabloon maakt:
    * Het sjabloontype wordt gekopieerd om de sjabloon te maken.
    * Zodra het exemplaar is voorgekomen, is de enige verbinding tussen het malplaatje en het malplaatjetype een statische verwijzing voor informatiedoeleinden.
 
-* Met sjabloontypen kunt u het volgende definiëren:
+* Met sjabloontypen kunt u definiëren:
 
    * Het middeltype van de paginacomponent.
    * Het beleid van de wortelknoop, die de componenten bepaalt die in de malplaatjeredacteur worden toegestaan.
@@ -391,7 +393,7 @@ De sjabloontypen voor de out-of-the-box worden opgeslagen onder:
 
 >[!CAUTION]
 >
->Wijzig niets in het dialoogvenster `/libs` pad. De reden is dat de inhoud van `/libs` wordt de volgende keer overschreven dat u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Wijzig niets in de `/libs` pad. De reden is dat de inhoud van `/libs` wordt de volgende keer overschreven dat u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 Uw sitespecifieke sjabloontypen moeten worden opgeslagen op de vergelijkbare locatie:
 
@@ -446,7 +448,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 ## Sjabloondefinities {#template-definitions}
 
-Definities voor bewerkbare sjablonen worden opgeslagen [door de gebruiker gedefinieerde mappen](/help/sites-developing/page-templates-editable.md#template-folders) (aanbevolen) of als alternatief `global`. Bijvoorbeeld:
+Definities voor bewerkbare sjablonen worden opgeslagen [door de gebruiker gedefinieerde mappen](/help/sites-developing/page-templates-editable.md#template-folders) (aanbevolen) of als alternatief in `global`. Bijvoorbeeld:
 
 * `/conf/<my-folder>/settings/wcm/templates`
 * `/conf/<my-folder-01>/<my-folder-02>/settings/wcm/templates`
@@ -528,7 +530,7 @@ Definieert de eerste inhoud van een nieuwe pagina bij het maken:
 * Bevat een `jcr:content` knooppunt dat naar nieuwe pagina&#39;s wordt gekopieerd.
 * Is samengevoegd met de structuur ( `/structure`) bij het maken van een pagina.
 * Bestaande pagina&#39;s worden bijgewerkt als de oorspronkelijke inhoud na het maken wordt gewijzigd.
-* De `root` node bevat een lijst met componenten om te definiëren wat beschikbaar is in de resulterende pagina.
+* De `root` het knooppunt bevat een lijst met componenten om te definiëren wat beschikbaar is in de resulterende pagina.
 * Als er inhoud wordt toegevoegd aan een component in de structuurmodus en die component later wordt ontgrendeld (of omgekeerd), wordt deze inhoud gebruikt als initiële inhoud.
 
 ### Layout {#layout}
@@ -539,14 +541,14 @@ Wanneer [bewerken, kunt u de lay-out definiëren](/help/sites-authoring/template
 
 Het inhoudsbeleid (of het ontwerpbeleid) definieert de ontwerpeigenschappen van een component, zoals de beschikbaarheid van de component of de minimum-/maximumafmetingen. Dit beleid is van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt). Het inhoudsbeleid kan worden gemaakt en geselecteerd in de sjablooneditor.
 
-* De eigenschap `cq:policy`over de `root` node
-   `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
+* De eigenschap `cq:policy`, over de `root` node
+  `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 Verstrekt een relatieve verwijzing naar het inhoudsbeleid voor het de paragraafsysteem van de pagina.
 
 * De eigenschap `cq:policy`, op de componentexpliciete knooppunten onder `root`koppelingen naar het beleid voor de afzonderlijke componenten te verschaffen.
 
 * De feitelijke beleidsdefinities worden opgeslagen onder:
-   `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
+  `/conf/<your-folder>/settings/wcm/policies/wcm/foundation/components`
 
 >[!NOTE]
 >
@@ -577,7 +579,7 @@ Met paginabeleid kunt u de [inhoudsbeleid](#content-policies) voor de pagina (be
    * De statuseigenschap instellen op de knop `jcr:content` knooppunt.
 
       * Bijvoorbeeld op:
-         `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
+        `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
 
       * Definieer de eigenschap:
 
@@ -587,25 +589,25 @@ Met paginabeleid kunt u de [inhoudsbeleid](#content-policies) voor de pagina (be
 
 1. **Toegestane sjablonen**
 
-   * [Definieer de toegestane sjabloonpaden op het tabblad **Pagina-eigenschappen**](/help/sites-authoring/templates.md#allowing-a-template-author) van de desbetreffende pagina of basispagina van een subvertakking.
+   * [Definieer de toegestane sjabloonpaden op de **Pagina-eigenschappen**](/help/sites-authoring/templates.md#allowing-a-template-author) van de desbetreffende pagina of basispagina van een subvertakking.
    * Stel de eigenschap in:
-      `cq:allowedTemplates`
-Op de 
-`jcr:content` knooppunt van de vereiste vertakking.
+     `cq:allowedTemplates`
+Op de `jcr:content` knooppunt van de vereiste vertakking.
+
    Bijvoorbeeld met een waarde van:
 
    `/conf/<your-folder>/settings/wcm/templates/.*`
 
 ## Resulterende inhoudspagina&#39;s {#resultant-content-pages}
 
-Pagina&#39;s die zijn gemaakt op basis van bewerkbare sjablonen:
+Pagina&#39;s gemaakt op basis van bewerkbare sjablonen:
 
 * Wordt gemaakt met een substructuur waaruit wordt samengevoegd `structure` en `initial` in de sjabloon
 
 * Verwijzingen hebben naar in de template opgeslagen informatie en naar het sjabloontype. U kunt deze functionaliteit bereiken met een `jcr:content` knooppunt met de eigenschappen:
 
    * `cq:template`
-Verstrekt de dynamische verwijzing naar het daadwerkelijke malplaatje; Hiermee kunnen wijzigingen in de sjabloon op de werkelijke pagina&#39;s worden weergegeven.
+Verstrekt de dynamische verwijzing naar het daadwerkelijke malplaatje; laat toe dat veranderingen in het malplaatje worden weerspiegeld op de daadwerkelijke pagina&#39;s.
 
    * `cq:templateType`
 Verstrekt een verwijzing naar het malplaatjetype.

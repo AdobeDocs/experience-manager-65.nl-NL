@@ -1,10 +1,10 @@
 ---
-title: Hoe te om hakjes in dynamische PDF forms te produceren en te werken?
+title: Hoe te om hakken in dynamische PDF forms te produceren en te werken?
 description: Het produceren van en het werken met Hashes in dynamische PDF forms.
 exl-id: 026f5686-39ea-4798-9d1f-031f15941060
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1240'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Afhankelijk van de gekozen hashfunctie varieert de lengte van de hash:
 
 ## De PDF forms van het monster proberen {#try-sample-pdf-forms}
 
-De voorbeeldbestanden voor dit artikel bevatten twee PDF forms. In het eerste voorbeeld kunt u een tekenreeks typen en vervolgens de hashwaarden MD4, MD5, SHA-1 en SHA-256 voor de tekenreeks genereren. Het tweede voorbeeld is een eenvoudig formulier waarmee tekstvelden worden ontgrendeld als een juist wachtwoord wordt ingevoerd.
+De voorbeeldbestanden voor dit artikel bevatten twee PDF forms. In het eerste voorbeeld kunt u een tekenreeks typen en vervolgens waarden voor de hashes van de tekenreeks genereren voor MD4, MD5, SHA-1 en SHA-256. Het tweede voorbeeld is een eenvoudig formulier waarmee tekstvelden worden ontgrendeld als een juist wachtwoord wordt ingevoerd.
 
 ### Voorbeeld 1: hashes genereren {#generating-dashes}
 

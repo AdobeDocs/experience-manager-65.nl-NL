@@ -2,7 +2,7 @@
 title: Gebeurtenistracking uitbreiden
 seo-title: Extending Event Tracking
 description: Met AEM Analytics kunt u gebruikersinteractie op uw website volgen
-seo-description: AEM Analytics allows you to track user interaction on your website
+seo-description: AEM Analytics lets you track user interaction on your website
 uuid: 722798ac-4043-4918-a6df-9eda2c85020b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 exl-id: a71d20e6-0321-4afb-95fe-6de8b7b37245
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '485'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Met AEM Analytics kunt u gebruikersinteractie op uw website volgen. Als ontwikkelaar moet u mogelijk:
 
-* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan gebeuren met [Aangepaste gebeurtenissen.](#custom-events)
+* Houd bij hoe bezoekers uw componenten gebruiken. Dit kan worden gedaan met [Aangepaste gebeurtenissen.](#custom-events)
 * [De waarden van de toegang in ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 * [Recordcallbacks toevoegen](#adding-record-callbacks).
 
@@ -29,7 +29,7 @@ Met AEM Analytics kunt u gebruikersinteractie op uw website volgen. Als ontwikke
 >
 >Deze informatie is eigenlijk algemeen, maar het gebruikt [Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
 >
->Voor algemene informatie over het ontwikkelen van componenten en dialoogvensters raadpleegt u [Componenten ontwikkelen](/help/sites-developing/components.md).
+>Zie voor algemene informatie over het ontwikkelen van componenten en dialoogvensters [Componenten ontwikkelen](/help/sites-developing/components.md).
 
 ## Aangepaste gebeurtenissen {#custom-events}
 
@@ -78,7 +78,7 @@ Wanneer
 
 * `componentPath` is een noodzakelijk attribuut en het wordt geadviseerd om het te plaatsen aan `<%=resource.getResourceType()%>`
 
-Met de volgende definitie klikt een gebruiker bijvoorbeeld op de knop **Springen naar boven** de koppeling zal beide gebeurtenissen veroorzaken, `jumptop` en `headlineclick`, te branden:
+Met de volgende definitie klikt een gebruiker bijvoorbeeld op de knop **Springen naar boven** de koppeling zal de twee gebeurtenissen veroorzaken, `jumptop` en `headlineclick`, te branden:
 
 ```xml
 <h1 data-tracking="{event: 'headline', values: {level:'1'}, componentPath: '<%=resource.getResourceType()%>'}">

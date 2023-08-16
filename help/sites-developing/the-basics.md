@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 6e913190-be92-4862-a8b9-517f8bde0044
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3325'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Alvorens in de kernconcepten van AEM te duiken, beveelt Adobe aan de WKND-zelfstudie in te vullen in de [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md) een document voor een overzicht van het AEM ontwikkelingsproces en de introductie van kernconcepten.
+>Voordat u de kernconcepten van AEM gaat bekijken, raadt Adobe u aan de WKND-zelfstudie in het dialoogvenster [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md) een document voor een overzicht van het AEM ontwikkelingsproces en de introductie van kernconcepten.
 
 ## Vereisten voor ontwikkeling op AEM {#prerequisites-for-developing-on-aem}
 
@@ -43,9 +43,9 @@ U wordt ook aangeraden de [Richtlijnen en beste praktijken](/help/sites-developi
 
 De JCR-standaard (Java™ Content Repository), [JSR 283](https://developer.adobe.com/experience-manager/reference-materials/spec/jcr/2.0/index.html), geeft een leveranciersonafhankelijke en implementatieonafhankelijke manier aan om inhoud bidirectioneel te benaderen op granulair niveau in een inhoudsopslagplaats.
 
-Specificatie lead wordt gehouden door Adobe Research (Zwitserland) AG.
+Specificatie lead is in handen van Adobe Research (Zwitserland) AG.
 
-De [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, javax.jcr.&amp;asteren; wordt gebruikt voor directe toegang tot en manipulatie van inhoud in de repository.
+De [JCR API 2.0](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/index.html) pakket, javax.jcr.&amp;ast; wordt gebruikt voor directe toegang tot en bewerking van inhoud in de opslagplaats.
 
 ## Experience Server (CRX) en Jackrabbit {#experience-server-crx-and-jackrabbit}
 
@@ -65,7 +65,7 @@ De voordelen van deze flexibiliteit worden duidelijk in toepassingen met een gro
 
 Zie [Ontdek de verkoop binnen 15 minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met Sling.
 
-In het volgende diagram wordt de resolutie van het script Sling uitgelegd: het toont hoe te om van HTTP- verzoek aan inhoudsknoop, van inhoudsknoop aan middeltype, van middeltype aan manuscript te krijgen en welke scripting variabelen beschikbaar zijn.
+In het volgende diagram wordt de resolutie van het script Sling uitgelegd: het toont hoe u van HTTP-aanvraag naar inhoudsknooppunt, van inhoudsknooppunt naar middeltype, van middeltype naar script kunt gaan en welke scriptvariabelen beschikbaar zijn.
 
 ![Scriptresolutie voor Apache Sling](assets/sling-cheatsheet-01.png)
 
@@ -84,15 +84,15 @@ Verkopen is *inhoudgericht*. Dit betekent dat de verwerking wordt geconcentreerd
 
 Vanwege de inhoudgerichte filosofie implementeert Sling een REST-georiënteerde server en biedt Sling dus een nieuw concept in een webtoepassingsframework. De voordelen zijn:
 
-* zeer RESTful, niet alleen op het oppervlak; bronnen en representaties zijn op de juiste wijze gemodelleerd binnen de server
+* zeer RESTful, niet alleen op de oppervlakte; de middelen en de vertegenwoordiging worden correct gemodelleerd binnen de server
 * verwijdert een of meer gegevensmodellen
 
-   * voorheen waren de volgende maatregelen nodig : URL-structuur, zakelijke objecten, DB-schema;
-   * dit is nu beperkt tot : URL = resource = JCR-structuur
+   * voorheen was het volgende nodig: URL-structuur, zakelijke objecten, DB-schema;
+   * dit is nu beperkt tot: URL = resource = JCR-structuur
 
 ### URL-decompositie {#url-decomposition}
 
-Bij Sling wordt de verwerking gestuurd door de URL van de gebruikersaanvraag. Dit bepaalt de inhoud die door de aangewezen manuscripten moet worden getoond. Hiervoor wordt informatie opgehaald uit de URL.
+Bij Sling wordt de verwerking aangedreven door de URL van het gebruikersverzoek. Dit bepaalt de inhoud die door de aangewezen manuscripten moet worden getoond. Hiervoor wordt informatie opgehaald uit de URL.
 
 Als we de volgende URL analyseren:
 
@@ -110,11 +110,11 @@ We kunnen het opsplitsen in samengestelde delen:
 
 **host** Naam van de website.
 
-**inhoudspad** Pad waarin de inhoud wordt opgegeven die moet worden gerenderd. wordt gebruikt in combinatie met de extensie; in dit voorbeeld vertalen ze naar tools/spy.html.
+**inhoudspad** Pad waarin de inhoud wordt opgegeven die moet worden weergegeven. Wordt gebruikt in combinatie met de extensie; in dit voorbeeld wordt het vertaald naar tools/spy.html.
 
 **kiezer(s)** Wordt gebruikt voor alternatieve methoden om de inhoud weer te geven; in dit voorbeeld een printervriendelijke versie in A4-indeling.
 
-**extension** Inhoudsindeling; geeft ook het script op dat moet worden gebruikt voor rendering.
+**extension** Indeling van inhoud; geeft ook het script op dat moet worden gebruikt voor rendering.
 
 **achtervoegsel** Kan worden gebruikt om aanvullende informatie op te geven.
 
@@ -125,20 +125,20 @@ We kunnen het opsplitsen in samengestelde delen:
 Op basis van deze beginselen:
 
 * de afbeelding gebruikt het inhoudspad dat uit de aanvraag is geëxtraheerd om de bron te zoeken
-* wanneer het aangewezen middel wordt gevestigd, wordt het sling middeltype gehaald, en gebruikt om van het manuscript de plaats te bepalen dat voor het teruggeven van de inhoud moet worden gebruikt
+* wanneer het aangewezen middel wordt gevestigd, wordt het sling middeltype gehaald, en gebruikt om van het manuscript te bepalen dat voor het teruggeven van de inhoud moet worden gebruikt
 
 De onderstaande afbeelding illustreert het gebruikte mechanisme, dat in de volgende secties nader zal worden besproken.
 
 ![chlimage_1-86](assets/chlimage_1-86a.png)
 
-Met Verschuiven geeft u op welk script een bepaalde entiteit wordt gerenderd (door het `sling:resourceType` eigenschap in het knooppunt JCR). Dit mechanisme biedt meer vrijheid dan één waarin het script de gegevensentiteiten benadert (zoals een SQL-instructie in een PHP-script zou doen) omdat een resource meerdere uitvoeringen kan hebben.
+Met Verschuiven geeft u op welk script een bepaalde entiteit wordt gerenderd (door het dialoogvenster `sling:resourceType` eigenschap in het knooppunt JCR). Dit mechanisme biedt meer vrijheid dan één waarin het script de gegevensentiteiten benadert (zoals een SQL-instructie in een PHP-script zou doen) omdat een resource meerdere uitvoeringen kan hebben.
 
 #### Verzoeken om toewijzing aan bronnen {#mapping-requests-to-resources}
 
 Het verzoek wordt uitgesplitst en de nodige informatie wordt ingewonnen. De repository wordt gezocht naar de gevraagde resource (content node):
 
-* first Sling controleert of een knooppunt bestaat op de locatie die in de aanvraag is opgegeven; bijvoorbeeld: `../content/corporate/jobs/developer.html`
-* als er geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald; bijvoorbeeld: `../content/corporate/jobs/developer`
+* First Sling controleert of een knooppunt bestaat op de locatie die in de aanvraag is opgegeven, bijvoorbeeld `../content/corporate/jobs/developer.html`
+* als er geen knooppunt wordt gevonden, wordt de extensie verwijderd en wordt de zoekopdracht herhaald, bijvoorbeeld `../content/corporate/jobs/developer`
 * Als er geen knooppunt wordt gevonden, retourneert Sling de http-code 404 (Not Found).
 
 Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar dit is een geavanceerde functie.
@@ -147,12 +147,12 @@ Met Sling kunnen andere zaken dan JCR-knooppunten ook bronnen zijn, maar dit is 
 
 Wanneer de juiste resource (content node) is gevonden, wordt de **slingermiddeltype** wordt geëxtraheerd. Dit is een pad dat zoekt naar het script dat moet worden gebruikt voor het renderen van de inhoud.
 
-Het pad dat door de `sling:resourceType` kunnen:
+Het pad dat wordt opgegeven door de `sling:resourceType` kunnen:
 
 * absoluut
 * relatief, ten opzichte van een configuratieparameter
 
-  Relatieve paden worden aanbevolen door Adobe omdat ze de draagbaarheid verhogen.
+  Relatieve paden worden door de Adobe aanbevolen omdat ze de draagbaarheid verhogen.
 
 Alle verkoopscripts worden opgeslagen in submappen van `/apps` of `/libs`, die in deze volgorde wordt doorzocht (zie [Componenten en andere elementen aanpassen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
@@ -162,7 +162,7 @@ Een paar andere punten die u kunt opmerken zijn:
 * verschillende scriptengines worden ondersteund :
 
    * HTL (Sjabloontaal HTML - Adobe Experience Manager heeft het voorkeur en aanbevolen Sjabloonsysteem aan serverzijde voor HTML): `.html`
-   * ECMAScript (JavaScript) Pages (uitvoering op de server): `.esp, .ecma`
+   * ECMAScript (JavaScript) Pages (serveruitvoering): `.esp, .ecma`
    * Java™ Server Pages (serveruitvoering): `.jsp`
    * Java™ Servlet Compiler (serveruitvoering): `.java`
    * JavaScript-sjablonen (uitvoering op de client): `.jst`
@@ -171,11 +171,11 @@ De lijst met scriptengines die door de opgegeven AEM worden ondersteund, wordt w
 
 Apache Sling ondersteunt ook integratie met andere populaire scriptengines (bijvoorbeeld Groovy, JRuby, Freemarker) en biedt een manier om nieuwe scriptengines te integreren.
 
-Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs` vervolgens voor:
+Met het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs` vervolgens voor:
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen op .html (standaardaanvraagtypen, standaardindeling)
 
-  Het script is /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
+  Het script is /apps/hr/jobs/jobs.esp. Het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
 * Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
 
@@ -187,7 +187,7 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs`
 
   Bijvoorbeeld, `../content/corporate/jobs/developer.pdf`
 
-  Het script wordt `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de manuscriptnaam.
+  Het script wordt `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de scriptnaam.
 
 * URL&#39;s met kiezers
 
@@ -195,13 +195,13 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs`
 
   Als we naar een printervriendelijke versie kijken waarin de kiezer mogelijk *afdrukken*; zoals in `../content/corporate/jobs/developer.print.html`
 
-  Het script wordt `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt toegevoegd aan de scriptnaam.
+  Het script wordt `/apps/hr/jobs/jobs.print.esp`; de kiezer wordt aan de scriptnaam toegevoegd.
 
 * Als er geen sling:resourceType is gedefinieerd, dan:
 
    * het inhoudspad wordt gebruikt om naar een geschikt script te zoeken (als het op pad gebaseerde ResourceTypeProvider actief is).
 
-     Het script voor `../content/corporate/jobs/developer.html` zou een zoekopdracht genereren in `/apps/content/corporate/jobs/`.
+     Het script voor bijvoorbeeld `../content/corporate/jobs/developer.html` zou een zoekopdracht genereren in `/apps/content/corporate/jobs/`.
 
    * het primaire knooppunttype zal worden gebruikt.
 
@@ -213,7 +213,7 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs`
    * de locatie /apps/sling/servlet/errorhandler voor [aangepaste scripts](/help/sites-developing/customizing-errorhandler-pages.md)
    * of de locatie van de standaardscripts /libs/sling/servlet/errorhandler/403.esp of 404.esp.
 
-Als er meerdere scripts van toepassing zijn voor een bepaalde aanvraag, wordt het script met de beste overeenkomst geselecteerd. Hoe specifieker een match is, hoe beter dat is; met andere woorden, de meer selecteur past beter aan, ongeacht om het even welke verzoekuitbreiding of methodenamen.
+Als er meerdere scripts van toepassing zijn voor een bepaalde aanvraag, wordt het script met de beste overeenkomst geselecteerd. Hoe specifieker een overeenkomst is, des te beter deze is. Met andere woorden, hoe meer kiezer het beste aanpast, ongeacht of de aanvraagextensie of methodenamen overeenkomen.
 
 Neem bijvoorbeeld een verzoek om toegang tot de bron
 `/content/corporate/jobs/developer.print.a4.html`
@@ -269,11 +269,11 @@ De typehiërarchie van:
 * while for `/y`
    * de hiërarchie `[ c, a, <default>]`
 
-Dit komt omdat `/y` de `sling:resourceSuperType` onroerend goed `/x` niet en daarom wordt zijn supertype genomen van zijn middeltype.
+Dit komt omdat `/y` heeft de `sling:resourceSuperType` onroerend goed `/x` niet en daarom wordt zijn supertype genomen van zijn middeltype.
 
 #### Sling-scripts kunnen niet rechtstreeks worden aangeroepen {#sling-scripts-cannot-be-called-directly}
 
-Binnen Verschuiving, kunnen de manuscripten niet direct worden geroepen aangezien dit het strikte concept van een REST server zou breken; u zou middelen en vertegenwoordiging mengen.
+Binnen Verschuiven, kunnen de manuscripten niet direct worden geroepen aangezien dit het strikte concept van een server van het SPEL zou breken; u zou middelen en vertegenwoordiging mengen.
 
 Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw manuscript verbergt, zodat weet het kader (het Schrapen) niet meer over het. Zo verliest u bepaalde eigenschappen:
 
@@ -282,7 +282,7 @@ Als u de vertegenwoordiging (het manuscript) direct roept u het middel binnen uw
    * POST, PUT, DELETE die met een sling standaardimplementatie worden behandeld
    * de `POST.jsp` script in uw tekenreeks:resourceType-locatie
 
-* uw codearchitectuur niet meer zo schoon en zo duidelijk gestructureerd is als zou moeten zijn; van primordiaal belang voor grootschalige ontwikkeling
+* uw codearchitectuur is niet meer zo schoon en zo duidelijk gestructureerd als het zou moeten zijn; van primordiaal belang voor grootschalige ontwikkeling
 
 ### Verkopen-API {#sling-api}
 
@@ -302,7 +302,7 @@ Hiervoor kunt u de sling gebruiken:include(&quot;/&lt;path>/&lt;resource>&quot;)
 
 ## OSGI {#osgi}
 
-OSGi bepaalt een architectuur voor het ontwikkelen en het opstellen van modulaire toepassingen en bibliotheken (het is ook genoemd geworden het Dynamische Systeem van de Module voor Java). De containers OSGi staan u toe om uw toepassing in individuele modules (zijn jar dossiers met extra meta-informatie en geroepen bundels in terminologie OSGi) te breken en de onderlinge afhankelijkheden te beheren met:
+OSGi bepaalt een architectuur voor het ontwikkelen en het opstellen van modulaire toepassingen en bibliotheken (het is ook genoemd geworden het Dynamische Systeem van de Module voor Java). De containers OSGi laten u uw toepassing in individuele modules (zijn jar dossiers met extra meta-informatie en geroepen bundels in terminologie OSGi) breken en de onderlinge afhankelijkheden beheren met:
 
 * diensten die binnen de container worden uitgevoerd
 * een contract tussen de container en uw toepassing
@@ -317,7 +317,7 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules uit te breiden. Bij Sling, en dus bij CQ5, wordt de optie [Apache Felix](https://felix.apache.org/documentation/index.html) implementatie van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het Platform OSGi Service. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur laat u het Verkopen met toepassing specifieke modules uitbreiden. Bij Sling, en dus bij CQ5, wordt de optie [Apache Felix](https://felix.apache.org/documentation/index.html) implementatie van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het OSGi Service Platform Release 4. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 
@@ -353,13 +353,13 @@ Als u bijvoorbeeld de eigenschappen van het huidige knooppunt wilt ophalen, kunt
 
 Met currentNode als het huidige knoopvoorwerp.
 
-Voor meer informatie over het manipuleren van voorwerpen van de Knoop, verwijs naar [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Raadpleeg voor meer informatie over het manipuleren van Node-objecten de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM wordt alle gebruikersinvoer beheerd door widgets. Deze worden vaak gebruikt om het bewerken van een stuk inhoud te besturen.
 
 Dialoogvensters worden samengesteld door Widgets te combineren.
 
-AEM is ontwikkeld met behulp van de ExtJS-bibliotheek met widgets.
+AEM is ontwikkeld met de ExtJS-bibliotheek met widgets.
 
 **Dialoog** Een dialoogvenster is een speciaal type widget.
 
@@ -369,7 +369,7 @@ Dialoogvensters worden ook gebruikt voor het bewerken van metagegevens en door v
 
 **Component** Een softwarecomponent is een systeemelement dat een vooraf bepaalde dienst of een gebeurtenis aanbiedt, en met andere componenten kan communiceren.
 
-Binnen AEM wordt een component vaak gebruikt om de inhoud van een middel terug te geven. Wanneer de bron een pagina is, wordt de component die de bron rendert, een component op hoofdniveau of een component Pagecomponent genoemd. Een component hoeft echter geen inhoud te renderen en hoeft niet te zijn gekoppeld aan een specifieke bron. een navigatiecomponent geeft bijvoorbeeld informatie over meerdere bronnen weer.
+Binnen AEM wordt een component vaak gebruikt om de inhoud van een middel terug te geven. Wanneer de bron een pagina is, wordt de component die de bron rendert, een component op hoofdniveau of een component Pagecomponent genoemd. Een component hoeft echter geen inhoud te renderen en hoeft niet te zijn gekoppeld aan een specifieke bron. Een navigatiecomponent geeft bijvoorbeeld informatie over meerdere bronnen weer.
 
 De definitie van een component omvat:,
 
@@ -392,7 +392,7 @@ Als u bijvoorbeeld de naam van de huidige pagina wilt ophalen, kunt u de volgend
 
 S`tring pageName = currentPage.getName();`
 
-Met currentPage wordt het huidige paginaobject. Raadpleeg voor meer informatie over het manipuleren van paginaobjecten de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+Met currentPage wordt het huidige paginaobject. Raadpleeg voor meer informatie over het bewerken van paginaobjecten de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Paginabeheer** Het paginabeheer is een interface die methoden biedt voor bewerkingen op paginaniveau.
 
@@ -440,21 +440,21 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zi
 
 * `/var`
 
-  bestanden die door het systeem worden gewijzigd en bijgewerkt; zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
+  Bestanden die door het systeem worden gewijzigd en bijgewerkt, zoals auditlogboeken, statistieken, gebeurtenisafhandeling.
 
 ## Omgevingen {#environments}
 
-Met AEM bestaat een productieomgeving vaak uit twee verschillende typen instanties: een [Auteur- en publicatie-instanties](/help/sites-deploying/deploy.md#author-and-publish-installs).
+Bij AEM bestaat een productieomgeving vaak uit twee verschillende soorten instanties: en [Auteur- en publicatie-instanties](/help/sites-deploying/deploy.md#author-and-publish-installs).
 
 ## De verzender {#the-dispatcher}
 
-De Dispatcher is een Adobe voor zowel caching als/of taakverdeling. Nadere informatie is te vinden onder [de verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
+De Dispatcher is het gereedschap van de Adobe voor zowel caching als/of taakverdeling. Nadere informatie is te vinden onder [de verzender](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en).
 
 ## FileVault (systeem voor bronrevisie) {#filevault-source-revision-system}
 
 FileVault biedt uw JCR-opslagplaats van bestandssysteemtoewijzing en versiebeheer. Het kan worden gebruikt om AEM ontwikkelingsprojecten met volledige steun voor het opslaan van en het versioning van projectcode, inhoud, configuraties, etc., in standaardversiecontrolesystemen (bijvoorbeeld, Subversion) te beheren.
 
-Zie de [Gereedschap FileVault](/help/sites-developing/ht-vlttool.md) documentatie voor gedetailleerde informatie.
+Zie de [FileVault](/help/sites-developing/ht-vlttool.md) documentatie voor gedetailleerde informatie.
 
 ## Workflows {#workflows}
 
@@ -468,7 +468,7 @@ Met MSM (Multi Site Manager) kunt u eenvoudig meerdere websites beheren die geme
 
 Websites worden bijvoorbeeld vaak in meerdere talen aangeboden voor internationaal publiek. Wanneer het aantal sites in dezelfde taal laag is (drie tot vijf), is een handmatig proces voor het synchroniseren van inhoud over sites mogelijk. Nochtans, wanneer het aantal plaatsen groeit of wanneer de veelvoudige talen betrokken zijn, wordt het efficiënter om het proces te automatiseren.
 
-* U kunt op efficiënte wijze verschillende taalversies van een website beheren.
+* Beheer efficiënt verschillende taalversies van een website.
 * Een of meer sites automatisch bijwerken op basis van een bronsite:
 
    * Een algemene basisstructuur afdwingen en gemeenschappelijke inhoud op meerdere sites gebruiken.

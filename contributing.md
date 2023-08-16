@@ -1,19 +1,19 @@
 ---
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 2%
 
 ---
 # Bijdragen aan Adobe Experience Manager-documentatie
 
-Bedankt dat u hebt gekozen om een bijdrage te leveren aan de documentatie van Adobe Experience Manager! Adobe is ingenomen met de bijdragen van de gehele lezergemeenschap en van collega Adobe-medewerkers.
+Bedankt dat u hebt gekozen om een bijdrage te leveren aan de documentatie van Adobe Experience Manager! de Adobe is ingenomen met de bijdragen van de gehele lezergemeenschap en van collega - Adoben .
 
 In dit bestand wordt beschreven hoe u een bijdrage kunt leveren en worden de richtlijnen beschreven die u moet volgen bij het maken van uw bijdragen.
 
-## Adobe Open-Source-gedragscode
+## Adobe Open Source Code of Conduct
 
-Dit project heeft het [Adobe Open-Source-gedragscode](code-of-conduct.md). Door bij te dragen aan AEM documentatie gaat u akkoord met het naleven van deze gedragscode. Onacceptabel gedrag rapporteren aan [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
+Dit project heeft het [Adobe Open Source Code of Conduct](code-of-conduct.md). Door bij te dragen aan AEM documentatie gaat u akkoord met het naleven van deze gedragscode. Onacceptabel gedrag rapporteren aan [Grp-opensourceoffice@adobe.com](mailto:Grp-opensourceoffice@adobe.com).
 
 ## Richtsnoeren voor de bijdrage
 
@@ -30,19 +30,19 @@ Welke methode u kiest hangt van af hoe comfortabel u de documentatie in GitHub z
 
 >[!NOTE]
 >
->Bijdragen die u indient, worden gedekt door de [Adobe gebruiksvoorwaarden](https://www.adobe.com/legal/terms.html).
+>Bijdragen die u indient, worden gedekt door de [Gebruiksvoorwaarden Adobe](https://www.adobe.com/legal/terms.html).
 
 ### Een probleem maken {#create-an-issue}
 
 Heeft u een suggestie, een observatie over de huidige documenten of vraagt u zich af hoe iets wordt beschreven? Maak vervolgens een uitgave. De kwesties zijn ook uitstekend als u iets hebt om bij te dragen, maar voel niet comfortabel het uitgeven van de docs of het maken van een trekpleidooi zelf.
 
-De kwesties staan u toe om uw idee voor verbetering aan de documenten gemakkelijk te beschrijven en een lid van het Team van AEM Docs kan het herzien. Klik gewoon op de knop **Een probleem aanmelden** Klik boven aan het rechternavigatievenster op een pagina om een uitgave te maken.
+De kwesties laten u uw idee voor verbetering aan de documenten gemakkelijk beschrijven en een lid van het Team van AEM Docs kan het herzien. Klik gewoon op de knop **Een probleem aanmelden** Klik boven aan het rechternavigatievenster op een pagina om een uitgave te maken.
 
 ### Een volledige aanvraag maken {#create-a-pull-request}
 
-Als u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u een pull-verzoek maken. De verzoeken van de Trek staan u toe om uw eigen uit te geven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik op de knop **Deze pagina bewerken** Klik boven aan het rechternavigatievenster op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
+Als u een probleem ziet en precies weet hoe u dit kunt verhelpen, kunt u een pull-verzoek maken. De verzoeken van de Trek laten u uw eigen uitgeven aan de documentatie, die dan voor opneming door een lid van het Team van AEM Docs wordt herzien. Klik op de knop **Deze pagina bewerken** Klik boven aan het rechternavigatievenster op een pagina om de voorgestelde wijzigingen aan te brengen en de pull-aanvraag te maken.
 
-Alle intrekkingsverzoeken moeten vergezeld gaan van een ondertekend [licentieovereenkomst voor contribuanten of CLA](https://opensource.adobe.com/cla.html). Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. U hoeft slechts één keer een Adobe CLA in te dienen, dus als u eerder een CLA hebt verzonden, kunt u het beste gaan!
+Alle intrekkingsverzoeken moeten vergezeld gaan van een ondertekend [licentieovereenkomst voor contribuanten of CLA](https://opensource.adobe.com/cla.html). Dit geeft Adobe de toestemming om uw bijdragen als deel van het project opnieuw te verdelen. U hoeft slechts één keer een Adobe CLA in te dienen, dus als u al een eerder hebt verzonden, kunt u het beste gaan!
 
 ### Snelle video-introductie
 
@@ -52,10 +52,10 @@ Bekijk de volgende video voor een snel overzicht van hoe u problemen kunt maken 
 
 ### Bijdragen van Adobe werknemers
 
-Als u medewerker van de Adobe bent en een bijdrage hebt, gebruikt u `AdobeDocs` org in het bedrijfsgat.
+Als u een medewerker van de Adobe bent en een bijdrage hebt, gebruikt u `AdobeDocs` org in het bedrijfsgat.
 
-Uiteraard zijn wij blij met elke bijdrage en zullen wij uw bijdrage herzien als deze via de openbare gegevensopslagruimte wordt geleverd. Het is echter gemakkelijker om verzoeken van Adobe-werknemers te verwerken en sneller in de bedrijfsrapportages te kunnen worden goedgekeurd. Zorg ervoor dat de bedrijfseigen informatie alleen wordt besproken in het bedrijfsantwoord.
+Uiteraard zijn wij blij met elke bijdrage en zullen wij uw bijdrage herzien als deze via de openbare gegevensbank wordt geleverd, maar het is gemakkelijker om verzoeken van Adobe werknemers te verwerken en sneller in de bedrijfsrapportages te worden goedgekeurd. Zorg ervoor dat de bedrijfseigen informatie alleen wordt besproken in het bedrijfsantwoord.
 
 ## Aanvullende informatie
 
-Zie de [Adobe Docs Contributor Guide](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor verdere details op hoe te om het GitHub auteursplatform te gebruiken.
+Zie de [Handleiding Adobe Docs Contributor](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) voor verdere details op hoe te om het GitHub auteursplatform te gebruiken.

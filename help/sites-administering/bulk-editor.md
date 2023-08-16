@@ -7,9 +7,9 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1159'
+source-wordcount: '1158'
 ht-degree: 0%
 
 ---
@@ -19,20 +19,20 @@ ht-degree: 0%
 
 Met de Bulkeditor kunt u op efficiënte wijze pagina&#39;s bewerken wanneer de context van de visuele pagina niet nodig is, omdat u hiermee de volgende mogelijkheden hebt:
 
-* zoeken naar (en weergeven) inhoud van meerdere pagina&#39;s; dit wordt gedaan gebruikend GQL (de Taal van de Vraag van Google)
+* zoeken naar (en weergeven) inhoud van meerdere pagina&#39;s; dit gebeurt met GQL (Google Query Language)
 * deze inhoud rechtstreeks in de Bulkeditor bewerken
 * de wijzigingen opslaan (op de pagina&#39;s die beginnen)
 * deze inhoud exporteren naar een spreadsheetbestand met tabs als scheidingsteken (.tsv)
 
 >[!NOTE]
 >
->U kunt ook inhoud importeren in de gegevensopslagruimte, maar dit is standaard uitgeschakeld voor de Bulk-editor, zoals beschikbaar in de **Gereedschappen** console.
+>U kunt ook inhoud importeren in de opslagplaats, maar dit is standaard uitgeschakeld voor de Bulk-editor, zoals beschikbaar in de **Gereedschappen** console.
 
 In deze sectie wordt beschreven hoe u met de Bulk-editor in de **Gereedschappen** console. Gewoonlijk gebruiken beheerders de Bulk-editor om meerdere items te zoeken en bewerken. Dit wordt gedaan door de lijst te bevolken gebruikend een vraag GQL en dan door de inhoudspunten te selecteren om aan te werken. Auteurs gebruiken doorgaans de Bulk-editor als onderdeel van een aangepaste Bulk Editor-toepassing die toegankelijk is via de [productaanbieding](/help/sites-authoring/default-components.md#productlist) component.
 
 >[!CAUTION]
 >
->Met de [afgekeurd van de klassieke gebruikersinterface](/help/release-notes/deprecated-removed-features.md) in AEM 6.4 is de Bulk Editor eveneens afgekeurd en daarom is Adobe niet van plan de Bulk Editor verder te verbeteren.
+>Met de [afgekeurd van de klassieke gebruikersinterface](/help/release-notes/deprecated-removed-features.md) in AEM 6.4 is de Bulk Editor eveneens afgekeurd en is Adobe dus niet van plan de Bulk Editor verder te verbeteren.
 
 ## Voorbeeld van hoofdletters/kleine letters voor de Bulkeditor {#example-use-case-for-the-bulk-editor}
 
@@ -54,7 +54,7 @@ Een voorbeeld om een dergelijk gebruiksgeval te illustreren is opgenomen in de w
 Met de Bulkeditor kunt u:
 
 * [zoeken naar inhoud die op vraagparameters wordt gebaseerd, om gespecificeerde eigenschappen van de resultaten in kolommen te tonen, deze inhoud uit te geven en de veranderingen te bewaren](#searching-and-editing-content)
-* [om deze inhoud te exporteren naar een spreadsheet met tabs als scheidingsteken](#exporting-content)
+* [om deze inhoud naar een door tabs gescheiden spreadsheet te exporteren](#exporting-content)
 
 * [inhoud importeren uit een spreadsheet met tabs als scheidingsteken](#importing-content)
 
@@ -78,7 +78,7 @@ De Bulkeditor gebruiken om meerdere items tegelijk te bewerken:
   </tr>
   <tr>
    <td>Zoekparameters</td>
-   <td>Gebruikend parameters GQL, ga het onderzoekskoord in u de BulkRedacteur wilt zoeken in de bewaarplaats; bijvoorbeeld: <code>type:Page</code> zoekt naar alle pagina's in het hoofdpad; <code>text:professional</code> zoekt naar alle pagina's waarop het woord "professioneel" staat, en <code>"jcr:title":English</code> zoekt naar alle pagina's die "Engels"als titel hebben. U kunt alleen naar tekenreeksen zoeken.</td>
+   <td>Voer met behulp van GQL-parameters de zoektekenreeks in waarnaar de Bulk-editor moet zoeken in de gegevensopslagruimte, bijvoorbeeld <code>type:Page</code> zoekt naar alle pagina's in het hoofdpad; <code>text:professional</code> zoekt naar alle pagina's waarop het woord "professioneel" staat, en <code>"jcr:title":English</code> zoekt naar alle pagina's die "Engels"als titel hebben. U kunt alleen naar tekenreeksen zoeken.</td>
   </tr>
   <tr>
    <td>Inhoudsmodus, selectievakje</td>
@@ -112,14 +112,14 @@ In het bovenstaande voorbeeld worden alle pagina&#39;s die voldoen aan uw zoekcr
 
    >[!CAUTION]
    >
-   >De wijzigingen die u hier aanbrengt, worden geschreven naar de inhoud van de opslagplaats. bijvoorbeeld de pagina waarnaar wordt verwezen in **Pad**.
+   >De wijzigingen die u hier aanbrengt, worden geschreven naar de inhoud van de opslagplaats, bijvoorbeeld de pagina waarnaar wordt verwezen in **Pad**.
 
 #### Aanvullende GQL-zoekparameters {#additional-gql-query-parameters}
 
 * **pad:** alleen zoekknooppunten onder dit pad. Als u meer dan één termijn met een wegprefix specificeert, slechts wordt het laatste overwogen.
 * **type:** alleen retourknooppunten van de opgegeven knooppunttypen. Dit omvat primaire en mixintypes. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
 * **bestelling:** het resultaat van de opgegeven eigenschappen te bepalen. U kunt meerdere door komma&#39;s gescheiden eigenschapsnamen opgeven. Als u het resultaat in aflopende volgorde wilt rangschikken, plaatst u gewoon een minteken voor de naam van de eigenschap. Bijvoorbeeld de volgorde:-name. Als u een plusteken gebruikt, wordt het resultaat in oplopende volgorde geretourneerd. Dit is ook de standaardinstelling.
-* **limiet:** Hiermee beperkt u het aantal resultaten met een interval. Limiet:10..20 Het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. limit:10 (retourneert de eerste tien resultaten).
+* **limiet:** beperkt het aantal resultaten met een interval. Limiet:10..20 Het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. limit:10 (retourneert de eerste tien resultaten).
 
 ### Inhoud exporteren {#exporting-content}
 
@@ -143,7 +143,7 @@ Inhoud exporteren:
 
 ### Inhoud importeren {#importing-content}
 
-Standaard is de importfunctionaliteit verborgen wanneer u de Bulk-editor opent. Eenvoudig de parameter toevoegen `hib=false` op de URL wordt de **Importeren** op de pagina Bulk Editor. U kunt inhoud importeren vanuit elke tab ( `.tsv`). Importeren werkt alleen correct als de kolomkoppen (eerste rij cellen) overeenkomen met de kolomkoppen van de tabel waarnaar u importeert.
+Standaard is de importfunctionaliteit verborgen wanneer u de Bulk-editor opent. Eenvoudig de parameter toevoegen `hib=false` op de URL wordt het dialoogvenster **Importeren** op de pagina Bulk Editor. U kunt inhoud importeren vanuit elke tab ( `.tsv`). Importeren werkt alleen correct als de kolomkoppen (eerste rij cellen) overeenkomen met de kolomkoppen van de tabel waarnaar u importeert.
 
 >[!NOTE]
 >
@@ -155,4 +155,4 @@ Inhoud importeren:
 1. Toevoegen `?hib=false` naar de URL, bijvoorbeeld:
    `https://localhost:4502/etc/importers/bulkeditor.html?hib=false`
 1. Klikken **Importeren**.
-1. Selecteer `.tsv` bestand. De gegevens worden geïmporteerd in de opslagplaats.
+1. Selecteer de `.tsv` bestand. De gegevens worden geïmporteerd in de opslagplaats.

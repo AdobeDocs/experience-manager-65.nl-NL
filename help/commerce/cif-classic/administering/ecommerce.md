@@ -5,9 +5,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: d995f0d6-9e48-4228-ac82-f33a0b25b9d3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '753'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 * [Concepten](/help/commerce/cif-classic/administering/concepts.md)
 * [Beheer (algemeen)](/help/commerce/cif-classic/administering/generic.md)
 
-Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
+De Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
 
 <table>
  <tbody>
@@ -85,12 +85,12 @@ Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
   </tr>
   <tr>
    <td>Beschikbaarheid</td>
-   <td><p>Ja. SAP Commerce Cloud (Extensie bijgewerkt ter ondersteuning van AEM 6.4 en Hybris 5 (standaard) en handhaaft compatibiliteit met Hybris 4</p> <p>Salesforce Commerce Cloud (connector open-sourced voor ondersteuning van AEM 6.4)</p> </td>
+   <td><p>Ja. SAP-Commerce Cloud (extensie die wordt bijgewerkt ter ondersteuning van AEM 6.4 en Hybris 5 (standaard) en de compatibiliteit met Hybris 4 behoudt</p> <p>Salesforce-Commerce Cloud (connector open-sourced voor ondersteuning van AEM 6.4)</p> </td>
    <td>Ja via open bron via GitHub. Adobe Commerce (ondersteunt 2.3.2 (standaard) en compatibel met 2.3.1).</td>
   </tr>
   <tr>
    <td>Wanneer gebruiken</td>
-   <td>Beperkte gebruiksgevallen: Bijvoorbeeld, scenario's waar de kleine, statische catalogi kunnen moeten worden ingevoerd</td>
+   <td>Beperkte gebruiksgevallen: bijvoorbeeld scenario's waarin kleine, statische catalogi mogelijk moeten worden geïmporteerd</td>
    <td>Voorkeursoplossing in de meeste gebruikscategorieën</td>
   </tr>
  </tbody>
@@ -105,7 +105,7 @@ eCommerce handelt samen met Product Information Management (PIM) de activiteiten
 * Live en gecentraliseerde opslagrecords
 * Webinterfaces
 
-AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. In de AEM ontwerpomgeving kunt u pagina&#39;s en componenten aanpassen op basis van de context en de handelsstrategieën van de doelbezoeker. bijvoorbeeld:
+AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op internet, mobiel en sociaal gebied te leveren. In de AEM ontwerpomgeving kunt u pagina&#39;s en componenten aanpassen op basis van de context van de doelbezoeker en de marketingstrategieën, bijvoorbeeld:
 
 * Productpagina&#39;s
 * Winkelwagentjes
@@ -114,7 +114,7 @@ AEM eCommerce helpt marketers merkboodschap, persoonlijke boodschappen op intern
 De implementatie maakt realtime toegang tot productinformatie mogelijk. Dit kan worden gebruikt om af te dwingen:
 
 * Integriteit van productinformatie
-* Prijzen
+* Prijsstelling
 * Voorraadinventaris
 * Variaties in de toestand van een winkelwagentje
 
@@ -160,10 +160,10 @@ AEM eCommerce biedt:
 
   De twee momenteel beschikbare implementaties zijn beide op dezelfde basis gebaseerd - bovenop de algemene API (het framework). Het implementeren van een nieuwe integratie houdt alleen in dat u de functies implementeert die uw integratie nodig heeft. De front-end componenten kunnen door om het even welke nieuwe implementatie worden gebruikt aangezien zij interfaces (zo onafhankelijk van de implementatie zijn) gebruiken.
 
-* De mogelijkheid om **ervaringsgestuurde handel op basis van verkoopgegevens en activiteiten**. Dit staat u toe om vele scenario&#39;s te realiseren:
+* De mogelijkheid om **ervaringsgestuurde handel op basis van verkoopgegevens en activiteiten**. Dit laat u vele scenario&#39;s realiseren:
 
    * Een voorbeeld hiervan kan zijn het verlagen van de verzendkosten wanneer de totale bestelling een bepaald bedrag overschrijdt.
-   * U kunt ook seizoensgebonden aanbiedingen aanbieden die profielgegevens gebruiken (bijvoorbeeld locatie). Deze kunnen vervolgens worden gemarkeerd, ook als dat nodig is, afhankelijk van andere factoren.
+   * U kunt ook seizoensgebonden aanbiedingen doen die profielgegevens gebruiken (bijvoorbeeld locatie). Deze kunnen vervolgens worden gemarkeerd, ook als dat nodig is, afhankelijk van andere factoren.
 
   In het onderstaande voorbeeld ziet u een gummetje omdat de inhoud van het karretje minder dan $75 bedraagt:
 
@@ -181,7 +181,7 @@ AEM eCommerce biedt:
 
 ## Het kader {#the-framework}
 
-De [Concepten](/help/commerce/cif-classic/administering/concepts.md) In dit hoofdstuk wordt het kader nader beschreven, maar wordt het kader op hoog niveau en snel bekeken:
+De [Concepten](/help/commerce/cif-classic/administering/concepts.md) In dit hoofdstuk wordt het kader nader beschreven, maar wordt het kader op hoog niveau en met hoge snelheid bekeken:
 
 ### Wat? {#what}
 

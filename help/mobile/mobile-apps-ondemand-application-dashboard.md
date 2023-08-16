@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
 exl-id: daafc8b8-3c01-4c97-a14b-f1b706600249
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '595'
 ht-degree: 1%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 U kunt uw toepassing en inhoud van mobiele apps beheren vanuit het AEM Mobile-toepassingsdashboard of het Control Center.
 
-U kunt in elke tegel in het Controlecentrum boren om details te bekijken of uit te geven door &#39;..&#39; te klikken in de rechterbenedenhoek.
+U kunt in elke tegel in het Centrum van de Controle boren om details te bekijken of uit te geven door &quot;...&quot;in de bodem juiste hoek te klikken.
 
 ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -77,7 +77,7 @@ Elke tegel kan worden uitgebreid om een gedetailleerdere lijstmening te verstrek
 
 ### De tegel Banners beheren {#the-manage-banners-tile}
 
-De **Banners beheren** Met de tegel kunt u de inhoud voor een banner beheren. De volgende informatie wordt weergegeven voor een banner:
+De **Banners beheren** Met de tegel kunt u de inhoud van een banner beheren. De volgende informatie wordt weergegeven voor een banner:
 
 * afbeelding
 * **TITEL**: naam van de banner
@@ -115,7 +115,7 @@ In de volgende afbeelding wordt de **Artikelen beheren** tegel in AEM Mobile-toe
 
 ### De tegel Verzamelingen beheren {#the-manage-collections-tile}
 
-De **Verzamelingen beheren** De tegel staat u toe om de inhoud voor een inzameling te beheren. De volgende informatie wordt getoond voor een inzameling:
+De **Verzamelingen beheren** Met de tegel kunt u de inhoud voor een verzameling beheren. De volgende informatie wordt getoond voor een inzameling:
 
 * afbeelding
 * **TITEL**: naam van de verzameling

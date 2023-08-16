@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 8f776f30-ff93-4d19-94c6-c4bfe6f1fae2
 docset: aem65
 exl-id: be2444df-c772-4a8e-83f9-0f565c15a44e
-source-git-commit: 294d12e7d1b5293f165a164ff1fcc624f7b2b648
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1566'
+source-wordcount: '1565'
 ht-degree: 0%
 
 ---
@@ -47,10 +47,10 @@ Voer de volgende stappen uit om een actieve doelserver te integreren met AEM For
 
 1. Ga op AEM server naar https://&lt;*hostnaam*>:&lt;*poort*>/libs/cq/core/content/tools/cloudservices.html.
 
-1. In de **Adobe Target** sectie, klikt u op **Configuraties tonen** en vervolgens de **+** pictogram om een nieuwe configuratie toe te voegen.
-Als u het doel voor het eerst configureert, klikt u op **Nu configureren.**
+1. In de **Adobe Target** sectie, klikken **Configuraties tonen** en vervolgens de **+** pictogram om een nieuwe configuratie toe te voegen.
+Als u doel voor het eerst vormt, klikt u op **Nu configureren.**
 
-1. Geef een **Titel** en eventueel een **Naam** voor de configuratie.
+1. Geef in het dialoogvenster Configuratie maken een **Titel** en eventueel een **Naam** voor de configuratie.
 
 1. Klikken **Maken**. Het dialoogvenster Component bewerken wordt geopend.
 1. Geef de gegevens van uw doelaccount op, zoals clientcode, e-mail en wachtwoord.
@@ -64,8 +64,8 @@ Als u het doel voor het eerst configureert, klikt u op **Nu configureren.**
 
 1. Klikken **AEM Forms Target Configuration**.
 1. Selecteer een **Doelframework**.
-1. In de **Doel-URL&#39;s** geeft u alle URL&#39;s op waar A/B-tests worden uitgevoerd. Bijvoorbeeld https://&lt;*hostnaam*>:&lt;*poort*>/ voor AEM Forms-server op OSGi of https://&lt;*hostnaam*>:&lt;*poort*>/lc/ voor AEM Forms-server op JEE.
-Bedenk dat u een Doel URL voor publiceer instantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres, zult u zowel als Doel URLs moeten vormen - gebruikend hostname evenals het IP adres. Als u slechts één van URLs vormt, zal uw test A/B niet lopen voor klanten die van andere URL komen. Klikken **+** om meerdere URL&#39;s op te geven.
+1. In de **Doel-URL&#39;s** geeft u alle URL&#39;s op waar A/B-tests worden uitgevoerd. Bijvoorbeeld https://&lt;*hostnaam*>:&lt;*poort*>/ voor AEM Forms-server op OSGi of https://&lt;*hostnaam*>:&lt;*poort*>/lc/ voor AEM Forms-server op Java.
+Bedenk dat u een Doel URL voor een publicatieinstantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres, zult u zowel als Doel URLs moeten vormen - gebruikend hostname evenals het IP adres. Als u slechts één van URLs vormt, zal uw test A/B niet lopen voor klanten die van andere URL komen. Klikken **+** meerdere URL&#39;s opgeven.
 
 1. Klikken **Opslaan**.
 
@@ -83,7 +83,8 @@ Naast de jreliëfserver kunt u ook het jvm-argument Dabtesting.enabled=true toev
 
 >[!NOTE]
 >
->Als u gevormde Doel URLs later bijwerkt, zorg ervoor dat u om het even welke lopende tests A/B bijwerkt zodat zij aan huidige URLs richten. Voor informatie over het bijwerken van A/B-tests raadpleegt u [A/B-test bijwerken](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>Als u gevormde Doel URLs later bijwerkt, zorg ervoor dat u om het even welke lopende tests A/B bijwerkt zodat zij aan huidige URLs richten. Zie voor informatie over het bijwerken van A/B-tests [A/B-test bijwerken](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
+>
 
 ## Soorten publiek maken binnen AEM {#create-audiences-within-aem}
 
@@ -93,9 +94,9 @@ Met AEM kunt u een publiek maken en dit gebruiken voor een A/B-test. Het publiek
 
 1. Tik op de pagina Soorten publiek op **Publiek maken > Doelpubliek maken**.
 1. Selecteer een doelconfiguratie in het dialoogvenster Adobe Target-configuratie en klik op **OK**.
-1. Maak regels op de pagina Nieuw publiek maken. Met regels kunt u het publiek indelen. U wilt bijvoorbeeld soorten publiek indelen op basis van het besturingssysteem. Uw publiek A komt van Vensters, en publiek B komt van Linux.
+1. Maak regels op de pagina Nieuw publiek maken. Met regels kunt u het publiek indelen. U wilt bijvoorbeeld soorten publiek categoriseren op basis van het besturingssysteem. Uw publiek A komt van Vensters, en publiek B komt van Linux.
 
-   1. Als u een publiek wilt indelen op basis van Windows, selecteert u in Regel 1 **OS** kenmerktype. Selecteer in het vervolgkeuzemenu Wanneer de optie **Windows.**
+   1. Als u een publiek wilt indelen op basis van Windows, selecteert u in Regel 1 de optie **OS** kenmerktype. Selecteer in het vervolgkeuzemenu Wanneer de optie **Windows.**
 
    1. Als u een publiek wilt indelen op basis van Linux, selecteert u in Regel 2 **OS** kenmerktype. Van de **Wanneer** vervolgkeuzelijst, selecteert u **Linux** en klik op **Volgende**.
 
@@ -111,9 +112,9 @@ Voer de volgende stappen uit om een A/B-test voor een adaptief formulier te make
 
 1. Navigeer naar de map met het adaptieve formulier.
 1. Klik op de knop **Selecteren** in de werkbalk en selecteert u het aangepaste formulier.
-1. Klikken **Meer** in werkbalk en selecteer **A/B-tests configureren**. De Configure A/B testende pagina opent.
+1. Klikken **Meer** op de werkbalk en selecteer **A/B-tests configureren**. De Configure A/B testende pagina opent.
 
-[ ](assets/ab-test-configure-1.png)
+[](assets/ab-test-configure-1.png)
 
 1. Geef een **Naam activiteit** voor de A/B-test.
 
@@ -130,11 +131,11 @@ Voer de volgende stappen uit om een A/B-test voor een adaptief formulier te make
    * Beschrijving, label en Help-tekst voor een veld
    * Scripts die geen invloed hebben op of een einde maken aan de verzendstroom
    * Validaties (zowel client als server)
-   * Thema voor ervaring B. (U kunt een ander thema selecteren voor ervaring B)
+   * Thema voor ervaring B. (U kunt een ander thema voor ervaring B selecteren)
 
 1. Ga naar de gebruikersinterface van Forms en Documenten, selecteer het aangepaste formulier en klik op **Meer** en selecteert u **A/B-tests starten**.
 
-De A/B-test wordt nu uitgevoerd en het opgegeven publiek wordt op willekeurige wijze aangeboden op basis van de opgegeven distributie.
+Uw A/B-test wordt nu uitgevoerd en het opgegeven publiek wordt willekeurig op de ervaringen gebaseerd op de opgegeven distributie weergegeven.
 
 ## A/B-test bijwerken {#update-a-b-test}
 
@@ -153,7 +154,7 @@ Zodra u de A/B test hebt toegestaan om voor de gewenste periode te lopen, kunt u
 
 1. Selecteer het aangepaste formulier en klik op **Meer** en klik vervolgens op **Testrapport A/B**. Het rapport wordt weergegeven.
 
-[ ](assets/ab-test-report-3.png)
+[](assets/ab-test-report-3.png)
 
 1. Analyseer het rapport en controleer of u genoeg gegevenspunten hebt om één van de beter presterende ervaringen als winnaar te verklaren. U kunt ervoor kiezen om dezelfde A/B-test langer te blijven uitvoeren of een winnaar te declareren en de A/B-test te beëindigen.
 1. Als u een winnaar wilt declareren en de A/B-test wilt beëindigen, klikt u op **Einde A/B-test** op het rapportdashboard. In een dialoogvenster wordt u gevraagd een van de twee ervaringen als winnaar op te geven. Kies een winnaar en bevestig om de A/B-test te beëindigen.

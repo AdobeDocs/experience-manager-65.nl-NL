@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4614'
+source-wordcount: '4613'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Samen met de overgang aan Eak in AEM 6, werden sommige belangrijke veranderingen
 
 Dit artikel schetst wanneer om indexen tot stand te brengen en wanneer zij niet nodig zijn, trucs om het gebruiken van vragen te vermijden wanneer zij niet noodzakelijk zijn, en uiteinden voor het optimaliseren van uw indexen en vragen om zo optimaal mogelijk te presteren.
 
-Lees ook de [Documentatie bij het schrijven van query&#39;s en indexen is niet goed](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in vragen van het Eak die in overweging moeten worden genomen wanneer het migreren van code van een vorige AEM installatie.
+Lees ook de [Documentatie bij het schrijven van query&#39;s en indexen is onduidelijk](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in vragen van het Eak die in overweging moeten worden genomen wanneer het migreren van code van een vorige AEM installatie.
 
 ## Wanneer moet u query&#39;s gebruiken? {#when-to-use-queries}
 
@@ -63,7 +63,7 @@ Als de gegevens of de inhoud regelmatig zullen veranderen, kan de vraag op een p
 
 ## Zoekopdrachtoptimalisatie {#query-optimization}
 
-Wanneer het runnen van een vraag die geen index gebruikt, worden de waarschuwingen geregistreerd betreffende knoop traversal. Als dit een vraag is die vaak zal lopen, creeer een index. Om te bepalen welke index een bepaalde vraag gebruikt, [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query) aanbevolen. Voor extra informatie, kan het registreren van de FOUTOPSPORING voor de relevante onderzoek APIs worden toegelaten.
+Wanneer het runnen van een vraag die geen index gebruikt, worden de waarschuwingen geregistreerd betreffende knoop traversal. Als dit een vraag is die vaak zal lopen, creeer een index. Om te bepalen welke index een bepaalde vraag gebruikt, [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query) wordt aanbevolen. Voor extra informatie, kan het registreren van de FOUTOPSPORING voor de relevante onderzoek APIs worden toegelaten.
 
 >[!NOTE]
 >
@@ -81,11 +81,11 @@ Terwijl alle vragen in SQL2 alvorens worden in werking gesteld worden omgezet, i
 
 >[!NOTE]
 >
->Wanneer het gebruiken van QueryBuilder, bepaalt het de resultaattelling door gebrek, die in Oak langzamer in vergelijking met vorige versies van Jackrabbit is. Om dit te compenseren, kunt u gebruiken [gulTotal, parameter](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results).
+>Wanneer het gebruiken van QueryBuilder, bepaalt het de resultaattelling door gebrek, die in Oak langzamer in vergelijking met vorige versies van Jasjes is. Om dit te compenseren, kunt u [gulTotal, parameter](/help/sites-developing/querybuilder-api.md#using-p-guesstotal-to-return-the-results).
 
 ### Het gereedschap Uitleg query {#the-explain-query-tool}
 
-Zoals met om het even welke vraagtaal, moet de eerste stap aan het optimaliseren van een vraag begrijpen hoe het zal lopen. Als u deze activiteit wilt inschakelen, kunt u de opdracht [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query) die deel uitmaakt van het vluchthandboek. Met dit hulpmiddel, kan een vraag binnen worden gestopt en worden verklaard. Een waarschuwing wordt getoond als de vraag kwesties met een grote bewaarplaats en runtime en de indexen zal veroorzaken die zullen worden gebruikt. Het gereedschap kan ook een lijst met trage en populaire query&#39;s laden die vervolgens kunnen worden uitgelegd en geoptimaliseerd.
+Zoals met om het even welke vraagtaal, moet de eerste stap aan het optimaliseren van een vraag begrijpen hoe het zal lopen. Als u deze activiteit wilt inschakelen, kunt u de [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query) die deel uitmaakt van het vluchthandboek. Met dit hulpmiddel, kan een vraag binnen worden gestopt en worden verklaard. Een waarschuwing wordt getoond als de vraag kwesties met een grote bewaarplaats en runtime en de indexen zal veroorzaken die zullen worden gebruikt. Het gereedschap kan ook een lijst met trage en populaire query&#39;s laden die vervolgens kunnen worden uitgelegd en geoptimaliseerd.
 
 ### FOUTOPSPORING VOOR VRAGEN {#debug-logging-for-queries}
 
@@ -105,11 +105,11 @@ Lucene registreert een boon JMX die details over geïndexeerde inhoud met inbegr
 
 U kunt dit bereiken door toegang te krijgen tot de JMX Console op `https://server:port/system/console/jmx`
 
-Nadat u zich hebt aangemeld bij de JMX-console, voert u een zoekopdracht uit naar **Lucene Index Statistieken** om het te vinden. Andere indexstatistieken zijn te vinden in het **IndexStats** MBean.
+Nadat u zich hebt aangemeld bij de JMX-console, kunt u zoeken naar **Lucene Index Statistieken** om het te vinden. Andere indexstatistieken zijn te vinden in het **IndexStats** MBean.
 
 Voor vraagstatistieken, bekijk genoemde MBean **Query-statistieken voor onak**.
 
-Als u met een gereedschap als [Luke](https://code.google.com/archive/p/luke/), moet u de console van het Eak gebruiken om de index van te dumpen `NodeStore` naar een bestandssysteemmap. Lees voor instructies over hoe u dit kunt doen de [Lucene-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Als u met een gereedschap als [Luke](https://code.google.com/archive/p/luke/), moet u de console van het Eak gebruiken om de index van `NodeStore` naar een bestandssysteemmap. Lees voor instructies over hoe u dit kunt doen de [Lucene-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 U kunt de indexen in uw systeem ook in JSON-indeling extraheren. Hiervoor hebt u toegang tot `https://server:port/oak:index.tidy.-1.json`
 
@@ -123,7 +123,7 @@ Dit helpt middelintensieve vragen (d.w.z. niet gesteund door om het even welke i
 
 #### **Na de implementatie** {#post-deployment}
 
-* Controleer de logboeken voor vragen die de grote knoop traversal of grote het geheugenconsumptie van de heap veroorzaken: &quot;
+* Controleer de logboeken voor vragen die de grote knoop traversal of grote het geheugenconsumptie van de heap teweegbrengen: &quot;
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * De query optimaliseren om het aantal doorgelopen knooppunten te verminderen
@@ -152,7 +152,7 @@ De eerste vraag die u moet stellen bij het maken of optimaliseren van indexen is
 
 Nadat u een index hebt gemaakt, moet de index ook worden bijgewerkt telkens wanneer de geïndexeerde gegevens worden bijgewerkt. Aangezien dit prestatiesimplicaties voor het systeem draagt, zouden indexen slechts moeten worden gecreeerd wanneer zij worden vereist.
 
-Bovendien zijn indexen alleen nuttig als de gegevens in de index uniek genoeg zijn om ze te rechtvaardigen. Overweeg een index in een boek en de onderwerpen die het behandelt. Wanneer het indexeren van een reeks onderwerpen in een tekst, gewoonlijk zullen er honderden of duizenden ingangen zijn, die u toestaan om aan een ondergroep van pagina&#39;s snel te springen om de informatie snel te vinden die u zoekt. Als die index slechts twee of drie items bevat die u elk naar honderden pagina&#39;s verwijzen, is de index niet nuttig. Hetzelfde concept geldt voor database-indexen. Als er slechts een paar unieke waarden zijn, is de index niet nuttig. Een index kan echter ook te groot worden om nuttig te zijn. Om indexstatistieken te bekijken, zie [Indexstatistieken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) hierboven.
+Bovendien zijn indexen alleen nuttig als de gegevens in de index uniek genoeg zijn om ze te rechtvaardigen. Overweeg een index in een boek en de onderwerpen die het behandelt. Wanneer het indexeren van een reeks onderwerpen in een tekst, gewoonlijk zullen er honderden of duizenden ingangen zijn, die u aan een ondergroep van pagina&#39;s laat snel springen om de informatie snel te vinden die u zoekt. Als die index slechts twee of drie items bevat, die u elk op honderden pagina&#39;s aanwijzen, is de index niet nuttig. Hetzelfde concept geldt voor database-indexen. Als er slechts een paar unieke waarden zijn, is de index niet nuttig. Een index kan echter ook te groot worden om nuttig te zijn. Om indexstatistieken te bekijken, zie [Indexstatistieken](/help/sites-deploying/best-practices-for-queries-and-indexing.md#index-statistics) hierboven.
 
 ### Luidens- of eigenschapsindexen? {#lucene-or-property-indexes}
 
@@ -193,9 +193,9 @@ De documentatie van het Eak voor indexen van de Luik maakt een lijst van versche
 
 ### CopyOnRead {#copyonread}
 
-Wanneer `NodeStore` wordt opgeslagen ver, een geroepen optie `CopyOnRead` kan worden ingeschakeld. De optie zorgt ervoor dat de externe index naar het lokale bestandssysteem wordt geschreven wanneer deze wordt gelezen. Dit kan helpen prestaties voor vragen verbeteren die vaak tegen deze verre indexen in werking worden gesteld.
+Wanneer de `NodeStore` wordt opgeslagen ver, een geroepen optie `CopyOnRead` kan worden ingeschakeld. De optie zorgt ervoor dat de externe index naar het lokale bestandssysteem wordt geschreven wanneer deze wordt gelezen. Dit kan helpen prestaties voor vragen verbeteren die vaak tegen deze verre indexen in werking worden gesteld.
 
-Dit kan in de console OSGi onder OSGi worden gevormd **LuceneIndexProvider** service en is standaard ingeschakeld vanaf Eak 1.0.13.
+Dit kan in de console OSGi onder de console worden gevormd **LuceneIndexProvider** service en is standaard ingeschakeld vanaf Eak 1.0.13.
 
 ### Indexen verwijderen {#removing-indexes}
 
@@ -207,9 +207,9 @@ Wanneer u een index op een MongoDB-instantie verwijdert, zijn de verwijderingsko
 
 >[!NOTE]
 >
->Voor meer informatie over eikenmongo.js raadpleegt u de [Sectie Opdrachtregelgereedschappen](https://jackrabbit.apache.org/oak/docs/command_line.html) van de eiken-documentatie.
+>Zie voor meer informatie over eikenmongo.js de [Sectie Opdrachtregelgereedschappen](https://jackrabbit.apache.org/oak/docs/command_line.html) van de eiken-documentatie.
 
-### Het JCR-querycontroleblad {#jcrquerycheatsheet}
+### Het JCR-query-controleblad {#jcrquerycheatsheet}
 
 Ter ondersteuning van de creatie van efficiënte JCR-query&#39;s en indexdefinities [JCR-query - Cheat Sheet](assets/JCR_query_cheatsheet-v1.1.pdf) kan tijdens de ontwikkeling worden gedownload en gebruikt als referentie. Het bevat steekproefvragen voor QueryBuilder, XPath, en SQL-2, die veelvoudige scenario&#39;s behandelen die zich verschillend in termen van vraagprestaties gedragen. Het verstrekt ook aanbevelingen voor om indexen van het Eak te bouwen of aan te passen. De inhoud van dit Cheat Sheet is van toepassing op AEM 6.5 en AEM as a Cloud Service.
 
@@ -297,7 +297,7 @@ De volgende details en resoluties zijn mogelijk:
 
       * Anders, [hergroeperen](#how-to-re-index) de lucene-index
 
-         * Opmerking: De indexstatus van de laatste goede herindexering (of eerste indexering) wordt gebruikt totdat een nieuwe herindexering wordt geactiveerd
+         * Opmerking: de indexstaat van de laatste goede herindexering (of eerste indexering) wordt gebruikt totdat een nieuwe herindexering wordt geactiveerd.
 
 ### Erkende en uitzonderlijke situaties {#erring-and-exceptional-situations}
 
@@ -327,7 +327,7 @@ De volgende details en resoluties zijn mogelijk:
 
 * Hoe oplossen:
 
-   * een doorlopende controle van de gegevensopslagplaats uitvoeren; bijvoorbeeld:
+   * Een doorlopende controle in de repository uitvoeren, bijvoorbeeld:
 
      [http://localhost:4502/system/console/repositorycheck](http://localhost:4502/system/console/repositorycheck)
 
@@ -369,7 +369,7 @@ De volgende details en resoluties zijn mogelijk:
    * Als dit het probleem niet oplost, en `AsyncIndexUpdate` er blijven dan nog uitzonderingen bestaan :
 
       1. [Opnieuw indexeren](#how-to-re-index) de foutindex
-      1. Ook een bestand [Adobe-ondersteuning](https://helpx.adobe.com/support.html) kaartje
+      1. Ook een bestand [Ondersteuning voor Adobe](https://helpx.adobe.com/support.html) kaartje
 
 ### Opnieuw indexeren {#how-to-re-index}
 
@@ -399,13 +399,13 @@ De volgende details en resoluties zijn mogelijk:
 
 >[!NOTE]
 >
->In de voorgaande sectie worden de aanwijzingen voor het opnieuw indexeren van de eik in een overzicht en in een kader weergegeven van de [Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) in de context van AEM.
+>In de voorgaande sectie worden de aanwijzingen voor het opnieuw indexeren van de eik in een overzicht gegeven en in een kader geplaatst van de [Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) in de context van AEM.
 
 ### Tekstvoorextractie van binaire tekens {#text-pre-extraction-of-binaries}
 
 De preextractie van de tekst is het proces om tekst uit binaire getallen, direct uit de Opslag van Gegevens via een geïsoleerd proces, te halen en te verwerken, en direct blootstellend de gehaalde tekst aan verdere re/indexeringen van Eak indexen.
 
-* Het vooraf uitpakken van eikentekst wordt aanbevolen voor het opnieuw/indexeren van Lucene-indexen in opslagruimten met grote volumes bestanden (binaire bestanden) die extraheerbare tekst bevatten (bijvoorbeeld PDF, Word Docs, PPT&#39;s, TXT, enzovoort) die in aanmerking komen voor full-text zoeken via geïmplementeerde Oak-indexen. bijvoorbeeld: `/oak:index/damAssetLucene`.
+* Het vooraf uitpakken van eikentekst wordt aanbevolen voor het opnieuw/indexeren van Lucene-indexen in opslagruimten met grote volumes bestanden (binaire bestanden) die extraheerbare tekst bevatten (bijvoorbeeld PDF, Word Docs, PPT&#39;s, TXT, enzovoort) die in aanmerking komen voor full-text zoeken via geïmplementeerde Oak-indexen, bijvoorbeeld `/oak:index/damAssetLucene`.
 * De pre-extractie van de tekst komt slechts het re/indexeren van indexen van Lucene, en NIET de bezitsindexen van het Eik ten goede, aangezien de bezitsindexen geen tekst uit binaire getallen halen.
 * De preextractie van tekst heeft een groot positief effect wanneer de full-text herindexering van tekst-zware binaire getallen (PDF, Doc, TXT, etc.), terwijl een bewaarplaats van beelden niet de zelfde efficiency zal genieten aangezien de beelden geen extractable tekst bevatten.
 * Bij het vooraf extraheren van tekst wordt tekst die betrekking heeft op volledige tekst, op een extra efficiënte manier geëxtraheerd en wordt deze op een extra efficiënte manier aan het opnieuw indexeren/opnieuw indexeren van de eik blootgesteld.
@@ -414,7 +414,7 @@ De preextractie van de tekst is het proces om tekst uit binaire getallen, direct
 
 Een **bestaand** lucene-index met binaire extractie ingeschakeld
 
-* Verwerking opnieuw indexeren **alles** kandidaatinhoud in de gegevensopslagruimte; wanneer de binaire getallen waaruit volledige tekst kan worden geëxtraheerd talrijk of complex zijn, wordt een grotere rekenlast voor het extraheren van volledige tekst op AEM geplaatst. De pre-extractie van de tekst beweegt het &quot;computer dure werk&quot;van tekst-extractie in een geïsoleerd proces dat tot AEM Opslag van Gegevens direct toegang heeft, vermijdend overheadkosten en middelgeschil in AEM.
+* Verwerking opnieuw indexeren **alles** kandidaatinhoud in de opslagplaats; wanneer de binaire getallen waaruit volledige tekst wordt geëxtraheerd talrijk of complex zijn, wordt een grotere rekenlast voor het uitvoeren van extractie met volledige tekst op AEM geplaatst. De pre-extractie van de tekst beweegt het &quot;computer dure werk&quot;van tekst-extractie in een geïsoleerd proces dat tot AEM Opslag van Gegevens direct toegang heeft, vermijdend overheadkosten en middelgeschil in AEM.
 
 Ondersteuning van de invoering van een **new** lucene index aan AEM met binaire extractie ingeschakeld
 
@@ -424,7 +424,7 @@ Ondersteuning van de invoering van een **new** lucene index aan AEM met binaire 
 
 Tekstomloop kan niet worden gebruikt voor nieuwe inhoud die aan de opslagplaats wordt toegevoegd, en is ook niet nodig.
 
-Nieuwe inhoud wordt toegevoegd aan de dataopslag zal natuurlijk en incrementeel door het async full-text indexeren proces (door gebrek, om de 5 seconden) worden geïndexeerd.
+Nieuwe inhoud wordt toegevoegd aan de repository zal automatisch en incrementeel geïndexeerd worden door het async full-text indexeringsproces (standaard elke 5 seconden).
 
 Onder normale verrichting van AEM, bijvoorbeeld het uploaden van Activa via het Web UI of programmatic ingest van Activa, zal AEM automatisch en incrementeel full-text index de nieuwe binaire inhoud. Aangezien de hoeveelheid gegevens incrementeel en relatief klein is (ongeveer de hoeveelheid gegevens die in 5 seconden aan de opslagplaats kan worden gepresteerd), kan AEM de full-text extractie uit de binaire getallen uitvoeren tijdens het indexeren zonder de algemene systeemprestaties te beïnvloeden.
 
@@ -433,7 +433,7 @@ Onder normale verrichting van AEM, bijvoorbeeld het uploaden van Activa via het 
 * U zult opnieuw indexeren een lucene index die full-text binaire extractie uitvoert of een nieuwe index opstelt die full-text indexbinaire getallen van bestaande inhoud zal uitvoeren
 * De inhoud (binaire bestanden) waaruit tekst vooraf kan worden geëxtraheerd, moet zich in de opslagplaats bevinden
 * Een onderhoudsvenster voor het genereren van het CSV-bestand EN voor het uitvoeren van de laatste nieuwe configuratie
-* Oak-versie: 1.0.18+, 1.2.3+
+* Eak-versie: 1.0.18+, 1.2.3+
 * [eak-run.jar](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)versie 1.7.4+
 * Een bestandssysteemmap/-share voor het opslaan van geëxtraheerde tekst die toegankelijk is via de indexering AEM instanties
 
@@ -469,13 +469,13 @@ De hele Node Store wordt elke keer doorlopen (zoals opgegeven door de paden in d
 
 2 quater. Geëxtraheerde tekst wordt in het bestandssysteem opgeslagen in een indeling die instelbaar is door het omschakelingsproces van de eik (3a)
 
-De vooraf geëxtraheerde tekst wordt in de CSV geïdentificeerd door de binaire vingerafdruk. Als het binaire bestand hetzelfde is, kan dezelfde vooraf geëxtraheerde tekst worden gebruikt in AEM instanties. Aangezien AEM-publicatie doorgaans een subset van AEM-auteur is, kan de vooraf geëxtraheerde tekst van AEM-auteur vaak ook worden gebruikt om AEM-publicatie opnieuw te indexeren (ervan uitgaande dat de AEM-publicatie bestandssysteemtoegang heeft tot de geëxtraheerde tekstbestanden).
+De vooraf geëxtraheerde tekst wordt in de CSV geïdentificeerd door de binaire vingerafdruk. Als het binaire bestand hetzelfde is, kan dezelfde vooraf geëxtraheerde tekst worden gebruikt in AEM instanties. Aangezien AEM Publiceren doorgaans een subset van AEM Auteur is, kan de vooraf geëxtraheerde tekst van AEM Auteur vaak ook worden gebruikt om de publicatie opnieuw te AEM (ervan uitgaande dat de AEM Publiceren bestandssysteemtoegang heeft tot de geëxtraheerde tekstbestanden).
 
 Aan vooraf geëxtraheerde tekst kan stapsgewijs worden toegevoegd. De voorextractie van tekst slaat de extractie van eerder geëxtraheerde binaire bestanden over. Het is daarom aan te raden om vooraf geëxtraheerde tekst te behouden voor het geval dat in de toekomst opnieuw tekst moet worden geëxtraheerd (ervan uitgaande dat de geëxtraheerde inhoud niet prohibitief groot is). Als dit het geval is, evalueert het Zijden van de inhoud in het tussentijdse stadium, aangezien de tekst goed samenperst).
 
 **Indexen van eikenhout opnieuw indexeren, volledige tekst betrekken uit geëxtraheerde tekstbestanden**
 
-*Herindexering uitvoeren (stappen 3a-b) tijdens een onderhouds-/gebruiksduur wanneer de Node Store tijdens deze operatie wordt doorgespoeld, wat aanzienlijke belasting kan veroorzaken op het systeem.*
+*Herindexering uitvoeren (stappen 3a-b) tijdens een onderhouds-/gebruiksduur wanneer de Node Store tijdens deze operatie wordt doorgespoeld, wat een aanzienlijke belasting voor het systeem kan veroorzaken.*
 
 3 bis. [Opnieuw indexeren](#how-to-re-index) van Lucene-indexen wordt in AEM aangeroepen.
 

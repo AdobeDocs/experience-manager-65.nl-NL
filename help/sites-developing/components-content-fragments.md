@@ -12,9 +12,9 @@ discoiquuid: b7777dc5-a867-4799-9e2c-a1f4bb5dd96a
 docset: aem65
 pagetitle: Components for Content Fragments
 exl-id: f2edd9b2-f231-42f3-a25e-428cd1d96c2a
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '962'
+source-wordcount: '960'
 ht-degree: 1%
 
 ---
@@ -45,7 +45,7 @@ Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd 
 
 >[!NOTE]
 >
->Deze component Content Fragment is in AEM 6.2 geïntroduceerd als een verbeterde versie van de component Article, die is vervangen.
+>Deze component van het Fragment van de Inhoud werd geïntroduceerd in AEM 6.2 als verbeterde versie van de component van het Artikel, die is afgekeurd.
 
 >[!NOTE]
 >
@@ -69,7 +69,7 @@ Deze bibliotheek voegt eigenschappen, specifiek voor inhoudsfragmenten, aan de r
 
 ### Tussen inhoud {#in-between-content}
 
-De **Inhoudskader** t component staat u toe om extra componenten tussen de verschillende getoonde paragrafen te laten vallen [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
+De **Inhoudskader** Hiermee kunt u extra componenten tussen de verschillende alinea&#39;s van het weergegeven [element](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment). In feite bestaat het weergegeven element uit verschillende alinea&#39;s (elke alinea wordt gemarkeerd door een regelterugloop). Tussen deze alinea&#39;s kunt u inhoud invoegen met behulp van andere componenten.
 
 Vanuit technisch gezichtspunt, zal elke paragraaf van het getoonde element* *life in zijn eigen parsys, en elke component die u binnen-tussen de paragrafen toevoegt (onder de kap) in parsys worden opgenomen.
 
@@ -109,7 +109,7 @@ Als u de uit-van-de-doos component van het inhoudsfragment als blauwdruk voor ui
    * De `cq:dropTargets` zijn geconfigureerd voor het slepen van inhoud van fragmentelementen.
    * `cq:inplaceEditing` is geconfigureerd ter ondersteuning van het ontwerpen van een inhoudsfragment in de pagina-editor. De fragmentbewerker ter plekke wordt gedefinieerd in het dialoogvenster `cq.authoring.editor.plugin.cfm` clientbibliotheek en maakt een snelle koppeling mogelijk om de huidige [element/variatie](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) in de [fragmenteditor](/help/assets/content-fragments/content-fragments-variations.md).
 
-### Element herschrijven vóór renderen {#asset-rewriting-before-rendering}
+### Herschrijven van element vóór renderen {#asset-rewriting-before-rendering}
 
 Bij Inhoudsfragmentbeheer wordt een intern renderingsproces gebruikt om de uiteindelijke HTML-uitvoer voor een pagina te genereren. Dit wordt intern gebruikt door de component van het Fragment van de Inhoud, maar ook door het achtergrondproces dat referenced fragmenten op het van verwijzingen voorzien pagina&#39;s bijwerkt.
 
@@ -124,7 +124,6 @@ Intern wordt de Sling Rewriter gebruikt voor die rendering. De respectievelijke 
 >dan de `serializerType` **moet** worden bijgewerkt naar:
 >
 >* `serializerType="html5-serializer"`
-
 
 De uit-van-de-doos configuratie gebruikt de volgende transformatoren:
 

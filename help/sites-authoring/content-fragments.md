@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1141'
+source-wordcount: '1138'
 ht-degree: 5%
 
 ---
@@ -26,10 +26,10 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** Er zijn verschillende functies binnen AEM:
 >
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
->* **Ervaar fragmenten** volledig zijn ingedeeld; een fragment van een webpagina.
+>* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 
@@ -67,13 +67,13 @@ Met de inhoudsfragmenten kunt u:
 
 1. Open de pagina om deze te bewerken.
 
-1. Voeg de **Inhoudsfragment** onderdeel; van **Componenten** browser of **Nieuwe component invoegen**.
+1. Voeg de **Inhoudsfragment** component; van of **Componenten** browser of **Nieuwe component invoegen**.
 
 1. U kunt:
 
    * Open de **Activa** browser en filter voor **Inhoudsfragmenten** (de standaardwaarde is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
 
-   * Selecteer vervolgens de inhoudfragment-component **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selectie openen waarin u de vereiste **Inhoudsfragment**.
+   * Selecteer vervolgens de component voor het inhoudsfragment **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selectie openen waarin u de vereiste **Inhoudsfragment**.
 
    >[!NOTE]
    >
@@ -124,10 +124,10 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
    * De standaard **master** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
 
-* **Alinea&#39;s**: Geef het bereik op van de alinea&#39;s die u wilt opnemen:
+* **Alinea&#39;s**: geef het bereik op van de alinea&#39;s die u wilt opnemen:
 
    * **Alles**
-   * **Bereik**: bijvoorbeeld: `1`, `3-5`, `9-*`
+   * **Bereik**: bijvoorbeeld `1`, `3-5`, `9-*`
 
       * **Koppen als eigen alinea&#39;s verwerken**
 
@@ -135,7 +135,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
 ### Snelle verbinding met de fragmenteditor {#quick-connection-to-fragment-editor}
 
-U kunt de fragmentbron openen voor bewerking (het element) met de opdracht **Bewerken** op de werkbalk van de component. Hierdoor kunt u [het inhoudsfragment bewerken en beheren](/help/assets/content-fragments/content-fragments.md).
+U kunt de fragmentbron openen voor bewerking (het element) met de opdracht **Bewerken** op de werkbalk van de component. Hiermee kunt u [het inhoudsfragment bewerken en beheren](/help/assets/content-fragments/content-fragments.md).
 
 >[!CAUTION]
 >
@@ -145,7 +145,7 @@ U kunt de fragmentbron openen voor bewerking (het element) met de opdracht **Bew
 
 Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er een **Componenten hierheen slepen** tijdelijke aanduiding tussen elke HTML-alinea (en boven/onder) van het fragment.
 
-Zo kunt u extra inhoud toevoegen [tussenliggend (d.w.z. tussen inhoud)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) de fragmentinhoud (op een van de beschikbare punten), zonder dat u het basisfragment hoeft te wijzigen.
+Hiermee kunt u extra inhoud toevoegen [tussenliggend (d.w.z. tussen inhoud)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) de fragmentinhoud (op een van de beschikbare punten), zonder dat u het basisfragment hoeft te wijzigen.
 
 Voor tussenliggende inhoud kunt u:
 
@@ -161,7 +161,7 @@ Voor tussenliggende inhoud kunt u:
 
 >[!NOTE]
 >
->U kunt ook [visuele elementen (afbeeldingen) invoegen in het fragment zelf](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
+>U kunt [visuele elementen (afbeeldingen) invoegen in het fragment zelf](/help/assets/content-fragments/content-fragments-variations.md#inserting-assets-into-your-fragment).
 >
 >Visuele elementen die in het fragment zelf worden ingevoegd, worden aan de voorafgaande alinea in het fragment gekoppeld. Dit betekent dat u geen tussenliggende inhoud tussen een visueel element en de voorgaande alinea kunt plaatsen.
 
@@ -174,7 +174,7 @@ Voor tussenliggende inhoud kunt u:
 >* Tussen componenten heeft een absolute positie binnen de reeks componenten in de fragmentstroom. Deze positie verandert niet, zelfs niet wanneer de inhoud van alinea&#39;s in het fragment verandert.
 >
 >  Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
->* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
+>* Tenzij de twee alinea&#39;s met elkaar in strijd zijn, wordt in dat geval de tussenliggende inhoud niet weergegeven (hoewel deze intern nog steeds aanwezig is).
 >
 
 ### Gekoppelde inhoud gebruiken {#using-associated-content}

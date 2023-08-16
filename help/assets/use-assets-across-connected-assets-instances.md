@@ -7,9 +7,9 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 578e9eb45ab996df841cb22e89d45fadfe90592b
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3833'
+source-wordcount: '3832'
 ht-degree: 16%
 
 ---
@@ -73,7 +73,7 @@ Hieronder worden de diverse rollen beschreven voor de configuratie en toepassing
 
 Met Experience Manager kunt u een externe DAM-implementatie als bron verbinden met meerdere Experience Managers [!DNL Sites] implementaties. U kunt echter wel verbinding maken met een [!DNL Sites] implementatie met slechts één externe DAM-implementatie.
 
-Evalueer het optimale aantal instanties van Plaatsen om met een verre plaatsing te verbinden DAM. Adobe adviseert om instanties van Plaatsen aan de plaatsing en test incrementeel aan te sluiten dat er geen prestatieseffect bij verre DAM is, aangezien elke verbonden instantie van Plaatsen aan het gegevensverkeer op verre DAM bijdraagt.
+Evalueer het optimale aantal instanties van Plaatsen om met een verre plaatsing te verbinden DAM. De Adobe adviseert om instanties van Plaatsen aan de plaatsing en test incrementeel aan te sluiten dat er geen prestatieseffect bij verre DAM is, aangezien elke verbonden instantie van Plaatsen aan het gegevensverkeer op verre DAM bijdraagt.
 
 De volgende diagrammen illustreren de gesteunde scenario&#39;s:
 
@@ -356,7 +356,7 @@ Ga als volgt te werk om algemene fouten op te lossen:
 
   ![Cookie-fout in Chrome-browser in Incognito-modus](assets/chrome-cookies-incognito-dialog.png)
 
-* Als u geen toegang hebt tot de externe DAM-implementatie van Adobe Managed Services vanaf de implementatie van Experience Manager Sites as a Cloud Service sites, werkt u de `aem_author.vhost` bestand, beschikbaar op `"/etc/httpd/conf.d/available_vhosts`, voor verre DAM om de volgende kopballen in de configuratie van de Verzender op te nemen:
+* Als u geen toegang hebt tot de externe DAM-implementatie van de Adobe Managed Services vanaf de Experience Manager Sites-implementatie van as a Cloud Service sites, werkt u de `aem_author.vhost` bestand, beschikbaar op `"/etc/httpd/conf.d/available_vhosts`, voor verre DAM om de volgende kopballen in de configuratie van de Verzender op te nemen:
 
   ```xml
   Header Set Access-Control-Allow-Origin <Local Sites instance host>

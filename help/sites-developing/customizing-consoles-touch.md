@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '671'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -24,13 +24,13 @@ ht-degree: 0%
 >
 >In dit document wordt beschreven hoe consoles in de moderne interface met aanraakbediening kunnen worden aangepast. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM biedt verschillende mechanismen om u in staat te stellen de consoles (en de [functionaliteit voor het ontwerpen van pagina&#39;s](/help/sites-developing/customizing-page-authoring-touch.md)) van de ontwerpinstantie.
+AEM biedt verschillende mechanismen om u in staat te stellen de consoles (en de [functionaliteit voor paginaontwerp](/help/sites-developing/customizing-page-authoring-touch.md)) van de ontwerpinstantie.
 
-* Clientlibs Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` Het kan bijvoorbeeld de code bevatten die voor uw aangepaste component wordt vereist.
+* Clientlibs Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` Het kan bijvoorbeeld de code bevatten die voor uw aangepaste component wordt vereist.
 
-* Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid de standaardfunctionaliteit te bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
+* Bedekkingen zijn gebaseerd op knooppuntdefinities en laten u de standaardfunctionaliteit bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
 
-Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
+Deze kunnen op vele manieren worden gebruikt om uw AEM te uitbreiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. 
 
 >[!CAUTION]
 >
->U ***moet*** niets wijzigen in de `/libs` pad.
+>U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
 >
 >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
@@ -57,7 +57,7 @@ Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. 
 
 De volgende locatie in het dialoogvenster `/libs` de structuur kan worden bedekt door :
 
-* consoles (consoles op basis van gebruikersinterface-pagina&#39;s van graniet); bijvoorbeeld:
+* consoles (consoles op basis van gebruikersinterface-pagina&#39;s van graniet), bijvoorbeeld:
 
    * `/libs/wcm/core/content`
 
@@ -93,7 +93,7 @@ U kunt de standaardweergave (kolom, kaart, lijst) voor een console aanpassen:
 
 ### Nieuwe handeling toevoegen aan de werkbalk {#add-new-action-to-the-toolbar}
 
-1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld een **Opwaarderen naar Twitter** actie bij:
+1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld een **Bevorderen tot Twitter** actie bij:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -125,13 +125,13 @@ U kunt de standaardweergave (kolom, kaart, lijst) voor een console aanpassen:
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Met de eigenschappen van dit knooppunt kunt u de `groups` toestemming heeft gekregen om de specifieke handeling uit te voeren; bijvoorbeeld: `administrators`
+   Met de eigenschappen van dit knooppunt kunt u de `groups` is toegestaan de specifieke handeling uit te voeren, bijvoorbeeld `administrators`
 
 ### Kolommen aanpassen in de lijstweergave {#customizing-columns-in-the-list-view}
 
 >[!NOTE]
 >
->Deze functie is geoptimaliseerd voor kolommen met tekstvelden. voor andere gegevenstypen is het mogelijk om te bedekken `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Deze functie is geoptimaliseerd voor kolommen met tekstvelden; voor andere gegevenstypen is het mogelijk om te bedekken `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
 
 U kunt als volgt de kolommen in de lijstweergave aanpassen:
 

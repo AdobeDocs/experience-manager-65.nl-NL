@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 1e5d8184-7164-4984-b43e-421015e8bf52
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '454'
 ht-degree: 3%
 
 ---
 
 # Inhoudsfragmenten in We.Retail uitproberen{#trying-out-content-fragments-in-we-retail}
 
-Met inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. **Wij.Detailhandel** (zoals beschikbaar in een out-of-the-box-instantie van Adobe Experience Manager) biedt het fragment **Arctic Surfing in Lofoten** als basissteekproef. Hieruit blijkt dat:
+Met Inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. **Wij.Detailhandel** (zoals beschikbaar in een out-of-the-box-instantie van Adobe Experience Manager) biedt het fragment **Arctic Surfing in Lofoten** als basissteekproef. Hieruit blijkt dat:
 
 * Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties.
 
@@ -23,7 +23,7 @@ Met inhoudsfragmenten kunt u kanaalneutrale inhoud maken, samen met (mogelijk ka
 
 * U kunt vervolgens [gebruiken deze fragmenten en de variaties ervan tijdens het ontwerpen](/help/sites-authoring/content-fragments.md) uw inhoudspagina&#39;s.
 
-   * Zie [Waar de Fragmenten van de Inhoud in Wij.Detailhandel worden gebruikt](#where-content-fragments-are-used-in-we-retail)
+   * Zie [Waar de Fragmenten van de Inhoud in Wij.Retail worden gebruikt](#where-content-fragments-are-used-in-we-retail)
 
 Voor de volledige documentatie over het maken, beheren, gebruiken en ontwikkelen van inhoudsfragmenten:
 
@@ -31,16 +31,16 @@ Voor de volledige documentatie over het maken, beheren, gebruiken en ontwikkelen
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** Er zijn verschillende functies binnen AEM:
 >
 >* **Inhoudsfragmenten** Dit zijn redactionele inhoud, voornamelijk tekst, en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
->* **Ervaar fragmenten** volledig zijn ingedeeld; een fragment van een webpagina.
+>* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 
 ## Waar kan ik inhoudsfragmenten vinden in We.Retail {#where-to-find-content-fragments-in-we-retail}
 
-Er zijn verscheidene fragmenten van de steekproefinhoud in Wij.Retail; navigeren via **Activa**, **Bestanden**, **Wij.Detailhandel**, **Engels**, **Ervaringen**.
+Er zijn verscheidene fragmenten van de steekproefinhoud in Wij.Retail; navigeer via **Activa**, **Bestanden**, **Wij.Detailhandel**, **Engels**, **Ervaringen**.
 
 Hieronder vallen **Arctic Surfing in Lofoten**, een fragment samen met gerelateerde visuele elementen:
 
@@ -64,13 +64,13 @@ Hier kunt u [bewerken en beheren](/help/assets/content-fragments/content-fragmen
 
 ![cf-46](assets/cf-46.png)
 
-## Waar de Fragmenten van de Inhoud in Wij.Detailhandel worden gebruikt {#where-content-fragments-are-used-in-we-retail}
+## Waar de Fragmenten van de Inhoud in Wij.Retail worden gebruikt {#where-content-fragments-are-used-in-we-retail}
 
 Ter illustratie [pagina&#39;s ontwerpen met een inhoudsfragment](/help/sites-authoring/content-fragments.md) er zijn verschillende voorbeeldpagina &#39; s onder andere :
 
 * [http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience](http://localhost:4502/sites.html/content/we-retail/language-masters/en/experience)
 
-De **Arctic Surfing in Lofoten** naar het inhoudsfragment wordt verwezen in de pagina Sites:
+Bijvoorbeeld de **Arctic Surfing in Lofoten** naar het inhoudsfragment wordt verwezen in de pagina Sites:
 
 * Navigeren via **Sites**, **Wij.Detailhandel**, **Taalmeesters**, **Engels**, **Ervaring**. Vervolgens openen **Arctic Surfing in Lofoten** voor bewerking:
 
@@ -92,7 +92,7 @@ Zie voor meer informatie:
 
 * [AEM ontwikkelen - Componenten voor inhoudsfragmenten](/help/sites-developing/components-content-fragments.md)
 
-   * Een overzicht van de componenten voor Inhoudsfragmenten.
+   * Een overzicht van de componenten voor Content Fragments.
 
 * [Inhoudsfragmenten ontwikkelen en uitbreiden](/help/sites-developing/customizing-content-fragments.md)
 

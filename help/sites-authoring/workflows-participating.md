@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1526'
+source-wordcount: '1525'
 ht-degree: 1%
 
 ---
@@ -41,8 +41,8 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
 * Wanneer u de pagina-editor gebruikt, wordt de statusbalk weergegeven:
 
-   * de naam van de workflow(en) die op de pagina wordt toegepast; bijvoorbeeld Verzoek om activering.
-   * Alle handelingen die beschikbaar zijn voor de huidige gebruiker voor de huidige stap van de workflow. bijvoorbeeld Voltooid, Delegeren, Details weergeven.
+   * De naam van de workflow(en) die op de pagina wordt toegepast, bijvoorbeeld Verzoek om activering.
+   * Alle handelingen die beschikbaar zijn voor de huidige gebruiker voor de huidige stap van de workflow, bijvoorbeeld Voltooid, Delegeren, Details weergeven.
    * Het aantal werkstromen dat op de pagina van toepassing is. U kunt:
 
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
@@ -52,7 +52,7 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
   >[!NOTE]
   >
-  >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden. bijvoorbeeld leden van de `workflow-users` groep.
+  >De statusbalk is alleen zichtbaar voor gebruikers met workflowbevoegdheden, bijvoorbeeld leden van de klasse `workflow-users` groep.
   >
   >
   >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
@@ -67,7 +67,7 @@ U kunt een item voltooien zodat de workflow naar de volgende stap kan gaan.
 
 Op deze actie kunt u aangeven:
 
-* **Volgende stap**: de volgende te nemen stap; u kunt uit een lijst selecteren die wordt verstrekt
+* **Volgende stap**: de volgende stap die moet worden uitgevoerd; u kunt een keuze maken in een opgegeven lijst
 * **Opmerking**: indien vereist
 
 U kunt een deelnemersstap uitvoeren vanuit:
@@ -81,10 +81,10 @@ U kunt een deelnemersstap uitvoeren vanuit:
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open de **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteren **Voltooid** op de werkbalk.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
+1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
 #### Een stap voor een deelnemer voltooien - Pagina-editor {#completing-a-participant-step-page-editor}
@@ -92,11 +92,11 @@ Voer de volgende procedure uit om het werkitem te voltooien:
 Voer de volgende procedure uit om het werkitem te voltooien:
 
 1. Open de [pagina voor bewerken](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Selecteren **Voltooid** in de statusbalk bovenaan.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
+1. Selecteren **Voltooid** in de statusbalk boven in het scherm.
+1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
-#### Een deelnemersstap voltooien - tijdlijn {#completing-a-participant-step-timeline}
+#### Een stap voor een deelnemer voltooien - tijdlijn {#completing-a-participant-step-timeline}
 
 U kunt ook de tijdlijn gebruiken om een stap te voltooien en uit te voeren:
 
@@ -126,7 +126,7 @@ De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werk
 
 Op deze actie kunt u aangeven:
 
-* **Gebruiker**: de gebruiker u aan wilt delegeren; u kunt uit een lijst selecteren die wordt verstrekt
+* **Gebruiker**: de gebruiker u aan wilt delegeren; u kunt uit een verstrekte lijst selecteren
 * **Opmerking**: indien vereist
 
 U kunt een deelnemersstap delegeren vanuit:
@@ -140,7 +140,7 @@ U kunt een deelnemersstap delegeren vanuit:
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open de **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteren **Delegeren** op de werkbalk.
 1. Het dialoogvenster wordt geopend. Geef de **Gebruiker** in de keuzelijst (dit kan ook een groep zijn) en voeg een **Opmerking** indien nodig.
@@ -151,7 +151,7 @@ Gebruik de volgende procedure om een het werkpunt te delegeren:
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
 1. Open de [pagina voor bewerken](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Selecteren **Delegeren** in de statusbalk bovenaan.
+1. Selecteren **Delegeren** in de statusbalk boven in het scherm.
 1. Het dialoogvenster wordt geopend. Geef de **Gebruiker** in de keuzelijst (dit kan ook een groep zijn) en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
@@ -172,11 +172,11 @@ U kunt de tijdlijn ook gebruiken om een stap te delegeren en/of toe te wijzen:
 
 ### Stap terug op een Stap van de Deelnemer uitvoeren {#performing-step-back-on-a-participant-step}
 
-Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u achteruit stappen. Op deze manier kunt u een stap selecteren die eerder in de workflow is opgetreden voor opwerking. De werkstroom keert aan de stap terug u specificeert, dan gaat van daar te werk.
+Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u achteruit stappen. Hiermee kunt u een stap selecteren die eerder in de workflow is opgetreden voor opwerking. De werkstroom keert aan de stap terug u specificeert, dan gaat van daar te werk.
 
 Op deze actie kunt u aangeven:
 
-* **Vorige stap**: de stap waarop moet worden teruggezet; u kunt uit een lijst selecteren die wordt verstrekt
+* **Vorige stap**: de stap waarnaar u wilt terugkeren; u kunt een keuze maken in een opgegeven lijst
 * **Opmerking**: indien vereist
 
 U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
@@ -190,9 +190,9 @@ U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open de **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
-1. Selecteren **Stap terug** om het dialoogvenster te openen.
+1. Selecteren **Stap terug** het dialoogvenster openen.
 
 1. Geef de **Vorige stap** en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
@@ -202,7 +202,7 @@ Gebruik de volgende procedure om terug te gaan:
 Gebruik de volgende procedure om terug te gaan:
 
 1. Open de [pagina voor bewerken](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
-1. Selecteren **Stap terug** in de statusbalk bovenaan.
+1. Selecteren **Stap terug** in de statusbalk boven in het scherm.
 1. Geef de **Vorige stap** en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
@@ -252,7 +252,7 @@ U kunt de details van het werkitem openen vanuit:
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open de **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteren **Openen** om de informatietabbladen te openen.
 
@@ -275,7 +275,7 @@ U kunt details van de lading bekijken verbonden aan de werkschemainstantie. In e
 
 Om de lading, en middelen, van de werkschemainstantie te bekijken:
 
-1. Open de **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
+1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteren **Payload weergeven** op de werkbalk om het dialoogvenster te openen.
 

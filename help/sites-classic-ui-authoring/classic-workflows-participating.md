@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 exl-id: 2f1a3a73-7a20-48c7-8f3e-54252f5fb71c
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '542'
 ht-degree: 4%
 
 ---
@@ -25,13 +25,13 @@ U kunt de volgende handelingen uitvoeren om een werkitem te verwerken:
 
 * **Voltooid**
 
-   U kunt een item voltooien zodat de workflow naar de volgende stap kan gaan.
+  U kunt een item voltooien zodat de workflow naar de volgende stap kan gaan.
 
 * **Delegeren**
 
-   Als een stap aan u is toegewezen, maar om het even welke reden u geen actie kunt ondernemen, kunt u de stap aan een andere gebruiker of een groep delegeren.
+  Als een stap aan u is toegewezen, maar om het even welke reden u geen actie kunt ondernemen, kunt u de stap aan een andere gebruiker of een groep delegeren.
 
-   De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werkpunt werd toegewezen:
+  De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werkpunt werd toegewezen:
 
    * Als het het werkpunt aan een groep werd toegewezen, zijn de groepsleden beschikbaar.
    * Als het het werkpunt aan een groep werd toegewezen en dan aan een gebruiker werd afgevaardigd, zijn de groepsleden en de groep beschikbaar.
@@ -39,7 +39,7 @@ U kunt de volgende handelingen uitvoeren om een werkitem te verwerken:
 
 * **Stap terug**
 
-   Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u achteruit stappen. Op deze manier kunt u een stap selecteren die eerder in de workflow is opgetreden voor opwerking. De werkstroom keert aan de stap terug u specificeert, dan gaat van daar te werk.
+  Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u achteruit stappen. Hiermee kunt u een stap selecteren die eerder in de workflow is opgetreden voor opwerking. De werkstroom keert aan de stap terug u specificeert, dan gaat van daar te werk.
 
 ## Deelnemen aan een workflow {#participating-in-a-workflow}
 
@@ -49,18 +49,18 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
 
 * De **Status** De kolom van de console Websites wijst erop wanneer een pagina in een werkschema is:
 
-   ![workflowstatus-1](assets/workflowstatus-1.png)
+  ![workflowstatus-1](assets/workflowstatus-1.png)
 
 * Wanneer u, of een groep die u tot behoort, een het werkpunt als deel van een werkschema wordt toegewezen, verschijnt het het werkpunt in uw Inbox van het Werkschema van de AEM.
 
-   ![workflowinbox](assets/workflowinbox.png)
+  ![workflowinbox](assets/workflowinbox.png)
 
 ### Een deelnemersstap voltooien {#completing-a-participant-step}
 
 Nadat u de aangegeven actie hebt uitgevoerd, kunt u het werkitem voltooien, zodat de workflow kan worden voortgezet. Voer de volgende procedure uit om het werkitem te voltooien.
 
 1. Selecteer de workflowstap en klik op de knop **Voltooid** in de bovenste navigatiebalk.
-1. Selecteer in het dialoogvenster dat wordt weergegeven de optie **Volgende stap**; dat wil zeggen, de volgende stap die moet worden uitgevoerd. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven. A **Opmerking** kan ook worden ingevoerd.
+1. Selecteer in het dialoogvenster dat wordt weergegeven de optie **Volgende stap** De volgende stap moet worden uitgevoerd. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven. A **Opmerking** kan ook worden ingevoerd.
 
    ![workflowvoltooid](assets/workflowcomplete.png)
 
@@ -73,7 +73,7 @@ Nadat u de aangegeven actie hebt uitgevoerd, kunt u het werkitem voltooien, zoda
 Gebruik de volgende procedure om een het werkpunt te delegeren.
 
 1. Klik op de knop **Delegeren** in de bovenste navigatiebalk.
-1. Selecteer in het dialoogvenster de vervolgkeuzelijst **Gebruiker** om het het werkpunt aan te delegeren. U kunt ook een **Opmerking**.
+1. In het dialoogvenster gebruikt u de vervolgkeuzelijst om het dialoogvenster **Gebruiker** om het het werkpunt aan te delegeren. U kunt ook een **Opmerking**.
 
    ![workflowgedelegeerde](assets/workflowdelegate.png)
 
@@ -84,7 +84,7 @@ Gebruik de volgende procedure om een het werkpunt te delegeren.
 Gebruik de volgende procedure om terug te gaan.
 
 1. Klik op de knop Stap terug in de bovenste navigatiebalk.
-1. Selecteer in het dialoogvenster dat wordt weergegeven de optie Vorige stap; dat wil zeggen, de volgende stap uitvoeren - ook al is het een stap die eerder in de workflow plaatsvindt. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven.
+1. Selecteer in het resulterende dialoogvenster de vorige stap, dat wil zeggen de volgende stap, ook al is het een stap die eerder in de workflow plaatsvindt. In een vervolgkeuzelijst worden alle geschikte doelen weergegeven.
 
    ![screen_shot_2018-08-10at155325](assets/screen_shot_2018-08-10at155325.jpg)
 

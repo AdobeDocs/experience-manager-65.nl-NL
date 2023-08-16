@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c04c488b-73f3-49ba-9e89-f97497965757
 docset: aem65
 exl-id: 3c7cbe1f-ac81-4df9-96b2-662cbc5f2075
-source-git-commit: 75e1697c301dca3a649833a45caa1753fdc81514
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '858'
 ht-degree: 0%
 
 ---
@@ -36,10 +36,9 @@ De functie Transactierapporten is beschikbaar als onderdeel van het add-on pakke
 >* Transactiegegevens worden omgekeerd gerepliceerd van een publicatie-instantie naar alleen de overeenkomstige auteur of verwerkingsinstantie. De auteur of verwerkingsinstantie kan gegevens niet verder repliceren naar een andere instantie.
 >
 
-
 ### Omgekeerde replicatie inschakelen voor alle publicatievarianten {#enable-reverse-replication-on-all-the-publish-instances}
 
-Transactierapporten gebruiken omgekeerde replicatie om het aantal transacties van publicatie-instanties tot auteur-instanties te consolideren. Stel de omgekeerde replicatie in voor alle publicatieexemplaren. Voor gedetailleerde instructies aan opstellings omgekeerde replicatie, zie [replicatie](/help/sites-deploying/replication.md).
+Transactierapporten gebruiken omgekeerde replicatie om het aantal transacties van publicatieinstanties tot auteur te consolideren. Stel de omgekeerde replicatie in voor alle publicatieexemplaren. Voor gedetailleerde instructies aan opstellings omgekeerde replicatie, zie [replicatie](/help/sites-deploying/replication.md).
 
 ### Transactierapporten inschakelen {#enable-transaction-reports}
 
@@ -73,7 +72,7 @@ De omgekeerde replicatie kopieert transactiegegevens aan standaardoutbox van de 
 
 U kunt transactierapporten weergeven over auteur- of publicatieinstanties. Het transactierapport over de auteurinstantie verstrekt een bijeengevoegde som van alle transacties die op de gevormde auteur en publiceer instanties plaatsvinden. Het transactierapport over de publicatie-instantie bevat een telling van transacties die alleen op de onderliggende publicatie-instantie plaatsvinden. Voer de volgende stappen uit om het rapport te bekijken:
 
-1. Meld u aan bij de AEM Forms-server op `https://[hostname]:'port'`.
+1. Aanmelden bij de AEM Forms-server op `https://[hostname]:'port'`.
 1. Navigeren naar **Gereedschappen** > **Forms**>**Transactierapport weergeven**.
 
 ## Het rapport begrijpen {#understanding-the-report}
@@ -88,7 +87,7 @@ AEM Forms geeft transactierapporten weer sinds de geconfigureerde datum, zoals i
 
 ## Logboeken voor transactierapporten weergeven {#view-transaction-reporting-logs}
 
-Transactierapportering plaatst alle informatie die in het rapport wordt weergegeven en enkele aanvullende informatie in de logboeken. De informatie in de logboeken is nuttig voor de gevorderde gebruikers. Bijvoorbeeld, verdelen de logboeken transacties in veelvoudige granulaire categorieën in vergelijking met drie geconsolideerde categorieën die in het rapport worden getoond. De logbestanden zijn beschikbaar in het dialoogvenster `error.log` bestand op `/crx-repository/logs/` directory. De logboeken zijn beschikbaar zelfs als u de transactierapporten van AEM Console van het Web niet toelaat.
+Transactierapportering plaatst alle informatie die in het rapport wordt weergegeven en enkele aanvullende informatie in de logboeken. De informatie in de logboeken is nuttig voor de gevorderde gebruikers. Bijvoorbeeld, verdelen de logboeken transacties in veelvoudige granulaire categorieën in vergelijking met drie geconsolideerde categorieën die in het rapport worden getoond. De logbestanden zijn beschikbaar in het dialoogvenster `error.log` bestand op het `/crx-repository/logs/` directory. De logboeken zijn beschikbaar zelfs als u de transactierapporten van AEM Console van het Web niet toelaat.
 
 ## Verwante artikelen {#related-articles}
 

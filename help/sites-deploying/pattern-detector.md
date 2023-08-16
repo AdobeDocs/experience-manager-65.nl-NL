@@ -12,9 +12,9 @@ discoiquuid: b5607343-a13b-4520-a771-f1a555bfcc7b
 docset: aem65
 feature: Upgrading
 exl-id: c42373e9-712e-4c11-adbb-4e3626e0b217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '521'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-Met deze functie kunt u bestaande AEM controleren op hun upgradbaarheid door patronen in gebruik te detecteren die:
+Met deze functie kunt u bestaande AEM controleren op upgradbaarheid door patronen in gebruik te detecteren die:
 
 1. Overtreed bepaalde regels en wordt uitgevoerd op gebieden die door de upgrade worden beïnvloed of overschreven
 1. Gebruik een AEM 6.x-functie of een API die niet achterwaarts compatibel is met AEM 6.5 en die na de upgrade mogelijk kan worden onderbroken.
@@ -72,7 +72,7 @@ De uitvoer is momenteel beschikbaar onder twee URL&#39;s:
 
 De informatie in de uitvoer wordt opgemaakt als een reeks gebeurtenisitems. Er zijn twee kanalen - één voor het publiceren van schendingen en de tweede voor het publiceren van de huidige vooruitgang.
 
-U kunt ze verkrijgen met de volgende opdrachten:
+U kunt deze opdrachten verkrijgen met de volgende opdrachten:
 
 ```shell
 curl -Nsu 'admin:admin' https://localhost:4502/system/console/status-pattern-detector.txt | tee patterns-report.log | grep SUSPICION
@@ -210,7 +210,7 @@ Met de uitvoer:
 
 >[!NOTE]
 >
->U wordt aangeraden de gehele uitvoer van krullen in het bestand op te slaan en deze vervolgens via `jq` of `grep` naar het type filterinformatie.
+>U wordt aangeraden de gehele uitvoer van krullen in het bestand op te slaan en deze vervolgens via `jq` of `grep` om het informatietype te filteren.
 
 ## Detectiebereik {#scope}
 

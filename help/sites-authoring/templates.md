@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4871'
+source-wordcount: '4864'
 ht-degree: 8%
 
 ---
@@ -24,12 +24,12 @@ Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt al
 
 Met de **Sjablooneditor** is het creëren en onderhouden van sjablonen niet meer alleen een taak voor ontwikkelaars. Een hoofdgebruiker die ook **maker van sjablonen** wordt genoemd, kan ook worden betrokken. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de **maker van sjablonen** sjablonen maken en configureren zonder een ontwikkelingsproject.
 
-De **Sjabloonconsole** stelt sjabloonauteurs in staat om:
+De **Sjabloonconsole** stelt sjabloonauteurs in staat:
 
 * Maak een nieuwe sjabloon of kopieer een bestaande sjabloon.
 * De levenscyclus van de sjabloon beheren.
 
-De **Sjablooneditor** stelt sjabloonauteurs in staat om:
+De **Sjablooneditor** stelt sjabloonauteurs in staat:
 
 * Voeg componenten aan het malplaatje toe en plaats hen op een ontvankelijk net.
 * Configureer de componenten vooraf.
@@ -45,7 +45,7 @@ Raadpleeg het document voor ontwikkelaars voor gedetailleerde informatie over ho
 
 >[!CAUTION]
 >
->Pagina&#39;s en sjablonen die zijn gemaakt met de **Sjabloonconsole** zijn niet bedoeld voor gebruik met de klassieke interface en dergelijk gebruik wordt niet ondersteund.
+>Met de **Sjabloonconsole** zijn niet bedoeld voor gebruik met de klassieke interface en dergelijk gebruik wordt niet ondersteund.
 
 ## Voordat u begint {#before-you-start}
 
@@ -57,13 +57,13 @@ De volgende punten zijn belangrijk om te overwegen alvorens u begint:
 
 * Voor het maken van een nieuwe sjabloon is samenwerking vereist. Daarom [Rol](#roles) wordt aangegeven voor elke taak.
 
-* Afhankelijk van hoe uw instantie wordt gevormd, zou het nuttig kunnen zijn om zich ervan bewust te zijn dat AEM nu verstrekt [twee basistypen sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates). Dit heeft geen invloed op hoe je eigenlijk [een sjabloon gebruiken om een pagina te maken](#using-a-template-to-create-a-page), maar dit is van invloed op het type sjabloon dat u kunt maken en de manier waarop een pagina betrekking heeft op de sjabloon.
+* Afhankelijk van hoe uw instantie wordt gevormd, zou het nuttig kunnen zijn om zich ervan bewust te zijn dat AEM nu verstrekt [twee basistypen sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates). Dit heeft geen invloed op hoe je eigenlijk [een sjabloon gebruiken om een pagina te maken](#using-a-template-to-create-a-page), maar dit is van invloed op het type sjabloon dat u kunt maken en op de manier waarop een pagina betrekking heeft op de sjabloon.
 
 ### Rollen {#roles}
 
 Om een nieuwe sjabloon te maken met behulp van de **sjabloonconsole** en de **sjablooneditor** is samenwerking tussen de volgende rollen vereist:
 
-* **Beheer**:
+* **Beheerder**:
 
    * Hiermee maakt u een nieuwe map voor sjablonen die u nodig hebt `admin` rechten.
 
@@ -191,7 +191,7 @@ Een sjabloon kan de volgende eigenschappen hebben:
 
    * Afbeelding die moet worden gebruikt als een [miniatuur van de sjabloon](/help/sites-authoring/templates.md#template-thumbnail-image) als hulpmiddel bij het selecteren, bijvoorbeeld in de wizard Pagina maken.
 
-      * Kan worden geüpload
+      * Kan uploaden
       * Kan worden gegenereerd op basis van de sjablooninhoud
 
 * Titel
@@ -212,7 +212,7 @@ De eigenschappen weergeven en/of bewerken:
 >
 >Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
 >
->Adobe adviseert niet om meer dan 1000 malplaatjes wegens potentiële prestatiesgevolgen te hebben.
+>Adobe raadt niet aan meer dan 1000 sjablonen te hebben vanwege mogelijke gevolgen voor de prestaties.
 
 >[!NOTE]
 >
@@ -292,7 +292,7 @@ Aangezien het malplaatje van verwijzingen wordt voorzien wanneer een pagina word
 
 1. In de **Sjabloonconsole** selecteert u de sjabloon.
 1. Selecteren **Publiceren** op de werkbalk om de wizard te openen.
-1. Selecteer **Inhoudsbeleid** samen te publiceren.
+1. Selecteer de **Inhoudsbeleid** samen te publiceren.
 
 1. Selecteren **Publiceren** van de werkbalk om de handeling te voltooien.
 
@@ -306,7 +306,7 @@ De volgende aspecten van een sjabloon kunnen worden bewerkt:
 
   Componenten die hier zijn toegevoegd, kunnen niet door de auteurs van de pagina worden verplaatst of verwijderd van de resulterende pagina&#39;s. Als u wilt dat auteurs van pagina&#39;s componenten aan resulterende pagina&#39;s kunnen toevoegen en verwijderen, dan moet u een paragraafsysteem aan het malplaatje toevoegen.
 
-  Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen zodat u kunt definiëren [Oorspronkelijke inhoud](#editingatemplateinitialcontent).
+  Wanneer componenten zijn vergrendeld, kunt u inhoud toevoegen die niet kan worden bewerkt door auteurs van pagina&#39;s. U kunt componenten ontgrendelen zodat u ze kunt definiëren [Oorspronkelijke inhoud](#editingatemplateinitialcontent).
 
   >[!NOTE]
   >
@@ -342,7 +342,7 @@ De **Modus** in de werkbalk kunt u het juiste aspect van de sjabloon selecteren 
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-Terwijl de **Paginabeleid** de optie **Pagina-informatie** kunt u [Selecteer het vereiste paginabeleid](#editingatemplatepagepolicies):
+Terwijl de **Paginabeleid** de optie **Pagina-informatie** menu laat u [Selecteer het vereiste paginabeleid](#editingatemplatepagepolicies):
 
 ![screen_shot_2018-03-23at120604](assets/screen_shot_2018-03-23at120604.png)
 
@@ -356,7 +356,7 @@ In **Structuur** in deze modus definieert u componenten en inhoud voor de sjablo
 
 * Componenten die in de sjabloonstructuur zijn gedefinieerd, kunnen niet op een resulterende pagina worden verplaatst of uit resulterende pagina&#39;s worden verwijderd.
 * Als u wilt dat auteurs van pagina&#39;s componenten kunnen toevoegen en verwijderen, voegt u een alineasysteem toe aan de sjabloon.
-* Componenten kunnen opnieuw worden ontgrendeld en vergrendeld, zodat u [initiële inhoud](#editingatemplateinitialcontent).
+* Componenten kunnen worden ontgrendeld en opnieuw worden vergrendeld, zodat u ze kunt definiëren [initiële inhoud](#editingatemplateinitialcontent).
 
 * Het ontwerpbeleid voor de componenten en pagina wordt gedefinieerd.
 
@@ -369,7 +369,7 @@ In **Structuur** modus van de sjablooneditor:
   Er zijn verschillende manieren om componenten aan de sjabloon toe te voegen:
 
    * Van de **Componenten** in het zijpaneel.
-   * Met de **Component invoegen** option (**+** (pictogram) beschikbaar op de toolbar van componenten reeds op het malplaatje of **Componenten hierheen slepen** doos.
+   * Met de opdracht **Component invoegen** option (**+** (pictogram) beschikbaar op de toolbar van componenten reeds op het malplaatje of **Componenten hierheen slepen** doos.
 
    * Door een element te slepen (vanuit de **Activa** in het zijpaneel) rechtstreeks op de sjabloon om de juiste component in situ te genereren.
 
@@ -395,7 +395,7 @@ In **Structuur** modus van de sjablooneditor:
 
 * **Componenthandelingen**
 
-  Voer acties uit op de componenten nadat deze aan de sjabloon zijn toegevoegd. Elk afzonderlijk exemplaar heeft een toolbar die u toestaat om tot de beschikbare acties toegang te hebben, is de toolbar afhankelijk van het componenttype.
+  Voer acties uit op de componenten nadat deze aan de sjabloon zijn toegevoegd. Elk afzonderlijk exemplaar heeft een toolbar die u tot de beschikbare acties toegang heeft, is de toolbar afhankelijk van het componenttype.
 
   ![screen_shot_2018-03-23at120909](assets/screen_shot_2018-03-23at120909.png)
 
@@ -417,7 +417,7 @@ In **Structuur** modus van de sjablooneditor:
 
   Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van een component gedefinieerd. Bijvoorbeeld de beschikbare componenten of de minimum-/maximumafmetingen. Deze zijn van toepassing op de sjabloon (en op pagina&#39;s die met de sjabloon zijn gemaakt).
 
-  Maak een inhoudsbeleid of selecteer een bestaand beleid voor een component. Zo kunt u de ontwerpdetails definiëren.
+  Maak een inhoudsbeleid of selecteer een bestaand beleid voor een component. Hiermee kunt u de ontwerpdetails definiëren.
 
   ![chlimage_1-135](assets/chlimage_1-135.png) ![chlimage_1-136](assets/chlimage_1-136.png)
 
@@ -436,11 +436,11 @@ In **Structuur** modus van de sjablooneditor:
 
   ![chlimage_1-137](assets/chlimage_1-137.png)
 
-  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
+  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld.
 
   ![chlimage_1-138](assets/chlimage_1-138.png)
 
-  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
   ![chlimage_1-139](assets/chlimage_1-139.png)
 
@@ -471,7 +471,7 @@ In **Structuur** modus van de sjablooneditor:
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knoop die rechts van de configuratie wordt gevestigd.
+  Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knoop die aan het recht van de configuratie wordt gevestigd.
 
   Als u een configuratie wilt verwijderen, klikt of tikt u op de knop** Verwijderen**.
 
@@ -545,15 +545,15 @@ In **Structuur** modus van de sjablooneditor:
 
 * **Componenten ontgrendelen/vergrendelen**
 
-  U ontgrendelt/vergrendelt componenten om te bepalen of de inhoud beschikbaar is voor wijzigingen in **Oorspronkelijke inhoud** in.
+  U ontgrendelt/vergrendelt componenten om te bepalen of de inhoud beschikbaar is voor wijziging in **Oorspronkelijke inhoud** -modus.
 
   Wanneer een component is ontgrendeld:
 
    * Een open hangslotindicator wordt getoond in de grens.
    * De componentwerkbalk wordt dienovereenkomstig aangepast.
-   * Alle inhoud die al is ingevoerd, wordt niet meer weergegeven in **Structuur** in.
+   * Alle inhoud die al is ingevoerd, wordt niet meer weergegeven in **Structuur** -modus.
 
-      * Al ingevoerde inhoud wordt beschouwd als initiële inhoud en is alleen zichtbaar in **Oorspronkelijke inhoud** in.
+      * Al ingevoerde inhoud wordt beschouwd als initiële inhoud en is alleen zichtbaar in **Oorspronkelijke inhoud** -modus.
 
    * De bovenliggende elementen van de ontgrendelde component kunnen niet worden verplaatst, geknipt of verwijderd.
 
@@ -613,7 +613,7 @@ U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [Responsieve ind
 
 >[!NOTE]
 >
->Wijzigingen in de lay-out worden weergegeven in **Oorspronkelijke inhoud** , maar er zijn geen wijzigingen in **Structuur** in.
+>Wijzigingen in de lay-out worden weergegeven in **Oorspronkelijke inhoud** , maar er zijn geen wijzigingen in **Structuur** -modus.
 
 ![chlimage_1-154](assets/chlimage_1-154.png)
 
@@ -621,9 +621,9 @@ U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [Responsieve ind
 
 Het paginaontwerp, inclusief de vereiste clientbibliotheken en de paginabeleidsregels, blijft behouden onder de optie **Paginaontwerp** van het menu **Pagina-informatie**.
 
-Om toegang te krijgen tot **Paginaontwerp** dialoogvenster:
+Als u toegang wilt krijgen tot **Paginaontwerp** dialoogvenster:
 
-1. Van de **Sjablooneditor**, selecteert u **Pagina-informatie** vanaf de werkbalk, dan **Paginaontwerp** om het dialoogvenster te openen.
+1. Van de **Sjablooneditor**, selecteert u **Pagina-informatie** vanaf de werkbalk, dan **Paginaontwerp** het dialoogvenster openen.
 1. De **Paginaontwerp** wordt geopend en is verdeeld in twee gedeelten:
 
    * De linkerhelft definieert de [paginabeleid](/help/sites-authoring/templates.md#page-policies)
@@ -641,11 +641,11 @@ U kunt een inhoudsbeleid toepassen op de sjabloon of de resulterende pagina&#39;
 
   ![chlimage_1-157](assets/chlimage_1-157.png)
 
-  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld.
+  Een nieuw beleid kan worden toegevoegd door de Add knoop naast te selecteren **Beleid selecteren** vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld.
 
   ![chlimage_1-158](assets/chlimage_1-158.png)
 
-  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel worden opgenomen in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
+  Het geselecteerde bestaande beleid in de **Beleid selecteren** vervolgkeuzelijst kan als een nieuw beleid worden gekopieerd met de knop Kopiëren naast de vervolgkeuzelijst. Vervolgens moet een nieuwe titel in het **Beleidstitel** veld. Standaard krijgt het gekopieerde beleid de naam **Kopie van X**, waarbij X de titel van het gekopieerde beleid is.
 
   ![chlimage_1-159](assets/chlimage_1-159.png)
 
@@ -660,7 +660,7 @@ U kunt een inhoudsbeleid toepassen op de sjabloon of de resulterende pagina&#39;
 
 #### Pagina-eigenschappen {#page-properties}
 
-Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren met de **Paginaontwerp** . Deze client-side bibliotheken bevatten stijlpagina&#39;s en javascript die met de sjabloon moeten worden geladen en pagina&#39;s die met die sjabloon zijn gemaakt.
+Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren met de **Paginaontwerp** in. Deze client-side bibliotheken bevatten stijlpagina&#39;s en javascript die met de sjabloon moeten worden geladen en pagina&#39;s die met die sjabloon zijn gemaakt.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
@@ -688,7 +688,7 @@ Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren met d
 
 Met de **Oorspronkelijke pagina-eigenschappen** kunt u het eerste [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) te gebruiken bij het maken van resulterende pagina&#39;s.
 
-1. Selecteer in de sjablooneditor de optie **Pagina-informatie** vanaf de werkbalk, dan **Oorspronkelijke pagina-eigenschappen** om het dialoogvenster te openen.
+1. Selecteer in de sjablooneditor de optie **Pagina-informatie** vanaf de werkbalk, dan **Oorspronkelijke pagina-eigenschappen** het dialoogvenster openen.
 
 1. In het dialoogvenster kunt u de eigenschappen definiëren die u wilt toepassen op pagina&#39;s die met deze sjabloon zijn gemaakt.
 

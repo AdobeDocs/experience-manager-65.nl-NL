@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 exl-id: 375cfa95-ac6f-44c4-a736-f5dd55d24195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,10 @@ Met MDM (Mobile Device Management) kunnen toepassingen op grote schaal worden ge
 
 * Inschrijving van apparaten inschakelen in uw bedrijfsomgeving
 * Het configureren en bijwerken van apparaatinstellingen toestaan
-* Naleving van beveiliging afdwingen.
+* Beveiligingsnaleving afdwingen.
 * Veilige mobiele toegang tot bedrijfsmiddelen
 
-Met een MDM-oplossing en het beheer van mobiele toepassingen kunt u interne apps, openbare apps en aangeschafte toepassingen beheren voor alle mobiele apparaten in uw bedrijf.
+Met een MDM-oplossing kunt u in combinatie met Mobile Application Management interne apps, openbare apps en aangeschafte apps beheren voor alle mobiele apparaten in uw bedrijf.
 
 De beheerder MDM kan zowel ipa als apk dossiers aan de server uploaden MDM en de gebruikers controleren die tot ipa of apk- dossiers kunnen toegang hebben. De beheerder kan ook de profielinstelling bepalen die overeenkomt met elke toepassing.
 

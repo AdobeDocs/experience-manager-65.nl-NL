@@ -7,9 +7,9 @@ topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3252'
+source-wordcount: '3251'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip om u bewust te zijn van de kwesties en (verwante) besluiten die u, vóór en terwijl het uitvoeren van uw project moet maken.
 
-Om u te helpen, bestaan de beste praktijken uit:
+De beste werkwijzen zijn:
 
-* An [interactieve checklist](/help/managing/best-practices-checklist.md) Hiermee kunt u de voortgang volgen en volgen met deze aanbevolen procedures.
+* An [interactieve checklist](/help/managing/best-practices-checklist.md) waarmee u de voortgang kunt volgen en volgen met deze aanbevolen procedures.
 
    * Definieert inputs en te leveren items op basis van fase, mijlpaal en persona.
    * Verstrekt geautomatiseerde overzichten (kwaliteit, gezondheid, en volledigheid) om vooruitgang en project-gezondheid te wijzen.
@@ -45,7 +45,7 @@ De **Projecthartslag** het aantekenvel verstrekt een grafisch overzicht van krit
 
 * **Fasegezondheid**
 
-   * Een statusindicator op hoog niveau voor uw project; Dit is handig als u gebieden wilt markeren die mogelijk risico lopen.
+   * Een statusindicator op hoog niveau voor uw project; handig om gebieden te markeren die een verhoogd risico kunnen lopen.
 
 * **Volledige fase**
 
@@ -75,7 +75,7 @@ De voorbereiding van uw project vormt de basis van het hele project. Belangrijks
 
 * **Toepassingsgebied en schema**
 
-   * Er moet een basisbereik en een ruw tijdschema beschikbaar worden gesteld om te bepalen wat vereist is en binnen welk tijdsbestek. als het de situatie helpt te verduidelijken , kunt u ook bepalen wat buiten het toepassingsgebied ligt .
+   * Er moet een basisbereik en een ruw schema beschikbaar worden gesteld om te bepalen wat er nodig is en binnen welk tijdsbestek. Als dit de situatie verheldert, kunt u ook definiëren wat buiten het bereik ligt.
 
 De manier waarop u uw project voorbereidt, plant en uitvoert en uw oplossing implementeert, wordt beïnvloed door de beperkingen waarop u werkt. Bijvoorbeeld: vast budget, vast tijdschema, hoeveelheid inhoud, vereiste kwaliteit.
 
@@ -153,7 +153,7 @@ De planning van uw project consolideert de voorbereiding. Hier moet u beginnen d
 
       * Door de hoofdrolspelers (inclusief potentiële auteurs) bij het begin van het project te betrekken, verhoogt u de kans dat ze zich voor het project engageren.
 
-### Voorbereiding ontwikkeling {#development-preparation}
+### Voorbereiding van ontwikkeling {#development-preparation}
 
 De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw project op een stevig ontwerp door een team wordt voortgebouwd dat de vereiste kennis heeft.
 
@@ -163,30 +163,30 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   Alvorens op om het even welk project te beginnen, zou u ervoor moeten zorgen dat uw ontwikkelingsteam geschikt wordt bemand en dat alle teamleden voor de taak in kwestie worden opgeleid.
 
-* **Inhoudsarchitectuur**
+* **Inhoud architectuur**
 
-  De inhoudsarchitectuur definieert en beschrijft de toekomstige architectuur van de inhoud. met inbegrip van:
+  De inhoudarchitectuur definieert en beschrijft de toekomstige architectuur van de inhoud, waaronder:
 
-   * De inhoudsstructuur; inclusief activa
-   * basisstructuren; inclusief campagnes, enzovoort.
+   * De inhoudsstructuur, inclusief elementen
+   * Basisstructuren, waaronder campagnes, enzovoort.
    * Multisite en meertalige structuren (MSM, Vertaling, enzovoort)
    * Ondersteunende inhoud (inclusief tags en coderingsconcepten)
    * Strategieën voor hergebruik van inhoud in cache plaatsen
 
 * **Systeemarchitectuur**
 
-  De systeemarchitectuur bepaalt de conceptuele mening van uw systeem; inclusief (onder meer):
+  De systeemarchitectuur bepaalt de conceptuele mening van uw systeem; het omvatten van (onder andere):
 
    * [Systeemstructuur](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) voor alle vereiste omgevingen
    * Subsystemen
    * Systemen van derden
-   * interfaces; hardware, software en menselijke interactie
-   * Servers voor elke omgeving; zie [Technische vereisten](/help/sites-deploying/technical-requirements.md) en [Richtlijnen voor hardwareaanpassing](/help/managing/hardware-sizing-guidelines.md)
+   * Interfaces; hardware, software en menselijke interactie
+   * Servers voor elke omgeving; zie de [Technische vereisten](/help/sites-deploying/technical-requirements.md) en [Richtlijnen voor hardwareaanpassing](/help/managing/hardware-sizing-guidelines.md)
 
-   * processen voor elke omgeving; bijvoorbeeld vereisten inzake implementatie en onderhoud
+   * Processen voor elke omgeving, bijvoorbeeld vereisten voor implementatie en onderhoud
    * Onderhoudsactiviteiten (GC voor datastore, TarPM-optimalisatie, enzovoort)
    * [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) caching
-   * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publiceren/delen van auteur
+   * [Clustering](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Publiceren/delen
    * Prestaties voor de client-side (JS minify, concat, css sprites, totaal aantal http-aanvragen, enzovoort)
 
 * **Toepassingsarchitectuur**
@@ -201,7 +201,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
   De definities moeten betrekking hebben op:
 
    * Basiscodestructuur voor het project
-   * Codeartefacten (bundels, pakketten, enzovoort)
+   * Codeartefacten (pakketten, enzovoort)
    * Uitsplitsingen van de templates/componenten en hun relaties
    * Details op hoog niveau van vereiste aanpassingen (specifieke overlays volgen later)
    * Ontwerp van workflows die voor de oplossing vereist zijn (bijvoorbeeld het maken, goedkeuren, publiceren, transformeren, importeren en exporteren van inhoud)
@@ -212,7 +212,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
   De integratie van het systeem vereist u om te plannen (dan uit te voeren):
 
    * Hoe alle subsystemen en [integratie van oplossingen](/help/sites-administering/integration.md) worden samengebracht om als één samenhangend systeem te functioneren
-   * de wijze waarop systemen van derden worden geïntegreerd; samen met eventuele speciale overwegingen, zoals offline/online, client-side/browser-side of fallover-afhandeling wanneer een systeem van een derde is uitgeschakeld
+   * Hoe systemen van derden worden geïntegreerd; samen met eventuele speciale overwegingen, zoals offline/online, client-side/browser-side of fallover-verwerking wanneer een systeem van derden uitvalt
 
 * **Concept testen**
 
@@ -223,8 +223,8 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
    * Bijzonderheden van alle uit te voeren tests
    * Bereiding van alle voor die tests vereiste inhoud
    * Informatie over eventueel te gebruiken testinstrumenten
-   * vermelding op hoog niveau van wie bij het testen betrokken zal zijn; vooral groepen buiten het team QA
-   * details van de testautomatisering; bijvoorbeeld met de modus Selenium of AEM Developer
+   * Een indicatie op hoog niveau van wie bij het testen betrokken zal zijn; met name groepen buiten het QA-team
+   * Details van de testautomatisering, bijvoorbeeld met de modus Selenium of AEM Developer
 
 * **Ervaar ontwerp**
 
@@ -236,9 +236,9 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   Voor ontwikkeling, zouden alle steunprocessen die worden vereist om, versie, test, en rapportkwesties op te stellen, op zijn plaats moeten worden geplaatst.
 
-  Zie ook de [Adobe-ondersteuningsportaal](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support).
+  Zie ook de [Ondersteuningsportaal voor Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support).
 
-### Planning en activiteiten {#operations-planning-and-operations}
+### Operationele planning en operaties {#operations-planning-and-operations}
 
 Op een vergelijkbare basis moeten de bewerkingen op de juiste wijze worden gepland om ervoor te zorgen dat u beschikt over de omgevingen die u nodig hebt - voor alle fasen van de levenscyclus van het project. U hebt ook de aangewezen processen nodig om hen te handhaven.
 
@@ -252,7 +252,7 @@ Op een vergelijkbare basis moeten de bewerkingen op de juiste wijze worden gepla
 
    * Een lijst met rollen (dat wil zeggen groepen) met `read`/ `write` toegangsdefinities voor elk
 
-   * Definitie van het gebruik van bevoegdheden die van invloed zijn op de publicatieomgeving; bijvoorbeeld: `replicate`
+   * Definitie van het gebruik van bevoegdheden die van invloed zijn op de publicatieomgeving, bijvoorbeeld `replicate`
    * Voor gebruikers met minimale bevoegdheden moeten workflows worden gedefinieerd
    * Gebruikers in de `editor` groep mag niet `admin` rechten en maken geen deel uit van de `administrators` groep
 
@@ -263,7 +263,7 @@ Op een vergelijkbare basis moeten de bewerkingen op de juiste wijze worden gepla
   Bewaking en onderhoud zijn belangrijke aspecten om ervoor te zorgen dat uw oplossing probleemloos werkt zodra deze actief is. Hiervoor moet u definiëren:
 
    * Wat moet er worden gecontroleerd?
-   * onderhoudstaken; zowel regelmatig als in bijzondere gevallen
+   * Onderhoudstaken, zowel regelmatig als in bijzondere gevallen
 
   Zie ook [Toezicht en onderhoud](/help/sites-deploying/monitoring-and-maintaining.md) voor meer informatie .
 
@@ -290,12 +290,12 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
 
       * Een typische omgeving bestaat uit:
 
-         * een systeem voor het volgen van de problemen; zoals Jira
-         * een IDE; zoals Eclipse
-         * een instrument voor het beheer van bouwwerken; zoals Maven
-         * een instrument voor continue integratie; zoals Jenkins
-         * een instrument voor versiebeheer; zoals GIT/SVN
-         * een beheerder van een constructiegegevensopslagplaats; zoals Archiva/Nexus
+         * een systeem voor het bijhouden van problemen, zoals Jira;
+         * een IDE, zoals Eclipse
+         * een bouwstijlbeheersinstrument, zoals Maven
+         * een instrument voor voortdurende integratie, zoals Jenkins
+         * een gereedschap voor versiebeheer, zoals GIT/SVN
+         * een manager voor een constructiegegevensopslagplaats, zoals Archiva/Nexus
 
    * Integratie/afhankelijkheden van software van derden
    * [Integratie/afhankelijkheid van oplossingen](/help/sites-administering/integration.md)
@@ -306,7 +306,7 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
   Plan en documenteer uw testomgeving, met inbegrip van:
 
    * Architectuur
-   * afhankelijkheden van ontwikkelingsgebouwen; inclusief nachtelijke builds
+   * Afhankelijkheden van ontwikkelingsgebouwen; inclusief nachtelijke gebouwen
    * De mogelijkheden voor of beperkingen van het testen van softwareintegratie/afhankelijkheden van derden
    * Testgereedschappen
    * Geautomatiseerde teststrategie
@@ -320,11 +320,11 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
    * Integratie/afhankelijkheden van software van derden
    * Beveiligingsinstelling
    * De prestaties van de basislijn worden geverifieerd door het [Testen op de dag](/help/sites-developing/tough-day.md) over de installatie van de productie
-   * Voorschriften voor prestatietests zie [Beste praktijken voor kwaliteitsborging](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
+   * Voorschriften voor prestatietests; zie [Beste praktijken voor kwaliteitsborging](/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance)
 
 * **Integratie**
 
-  Plan, documenteer, en test alle aspecten van het systeem en [oplossingsintegratie](/help/sites-administering/integration.md), met inbegrip van:
+  Plan, documenteer, en test alle aspecten van het systeem en [oplossingsintegratie](/help/sites-administering/integration.md), inclusief:
 
    * Een geautomatiseerde teststrategie
    * Geautomatiseerde processen naar [verplaats toepassingen van ontwikkeling naar test, dan productie](/help/managing/enterprise-devops.md#code-movement)
@@ -332,7 +332,7 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
 
 * **Migratie**
 
-  Plan, documenteer, en test alle aspecten van de inhoudsmigratie; met inbegrip van:
+  Alle aspecten van de migratie van inhoud plannen, documenteren en testen, inclusief:
 
    * Inhoudsarchitectuur
    * Migratiestrategie
@@ -343,7 +343,7 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
 
 * **Documentatie**
 
-  De oplossing volledig documenteren; met inbegrip van:
+  De oplossing volledig documenteren, inclusief:
 
    * Handboek
    * Alle aanpassingen die invloed kunnen hebben op upgrades
@@ -368,7 +368,7 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze aan strenge tests worden on
    * De oplossing voldoet aan de vereisten van de gebruiker/klant
    * De klant/gebruikers accepteren de oplossing (functie, ontwerp en prestaties)
 
-  Er zou een geformaliseerde controlelijst voor klantenoverdracht moeten zijn; ideaal geautomatiseerd en elke avond tegen een momentopname. De resultaten moeten naar de projectmanager en het ontwikkelingsteam worden verzonden
+  Er zou een geformaliseerde controlelijst voor klantenoverdracht moeten zijn; idealiter geautomatiseerd en op een niblebasis tegen een momentopname lopen. De resultaten moeten naar de projectmanager en het ontwikkelingsteam worden verzonden
 
 * **Prestatietests en belastingtests**
 
@@ -377,7 +377,7 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze aan strenge tests worden on
   Zie voor meer informatie over het testen van prestaties:
 
    * [Prestatietesten](/help/sites-deploying/configuring-performance.md)
-   * [Hoe te plannen en het testen in werking te stellen](/help/sites-developing/planning.md)
+   * [Hoe kan ik testen plannen en uitvoeren?](/help/sites-developing/planning.md)
 
    * [Basisrichtsnoeren voor prestaties](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
 
@@ -405,17 +405,17 @@ De introductie van uw nieuwe toepassing moet zorgvuldig worden gepland om ervoor
 
   Zorg ervoor dat uw oplossingsbeheerders:
 
-   * Opgeleid
+   * Geoefend
    * Het juiste trainingsmateriaal ontvangen
    * De juiste documentatie ontvangen
 
 * **Training voor gebruikers**
 
-  Zorg ervoor dat de auteurs beschikken over:
+  Zorg ervoor dat de auteurs:
 
-   * Opgeleid
+   * Geoefend
    * Het juiste trainingsmateriaal ontvangen
-   * de passende documentatie heeft ontvangen; bijvoorbeeld de Handboek
+   * De juiste documentatie ontvangen, bijvoorbeeld de gebruikershandleiding
 
 * **Penetingtests**
 
@@ -461,14 +461,14 @@ Je wilt dat je Go Live zo vloeiend mogelijk wordt. Nogmaals, de definitieve stap
 
 De checklists zijn ontworpen door personen. Dit zijn de rollen met significant betrokken bij de cyclus van het projectleven.
 
-Er zijn ook enkele [andere persona](#other-persona) die bij specifieke taken betrokken zijn.
+Er zijn ook enkele [overig persona](#other-persona) die bij specifieke taken betrokken zijn.
 
 ### Projectsponsor {#project-sponsor}
 
 De projectsponsor is:
 
 * Verantwoordelijk voor het verstrekken/presenteren van de bedrijfscase voor het project.
-* Sleutel tot de vormgeving en omschrijving van het toepassingsgebied van het project; met inbegrip van:
+* Sleutel voor de vormgeving en de afbakening van het toepassingsgebied van het project, met inbegrip van:
 
    * de definitie van en criteria voor succes
    * de belangrijkste KPI&#39;s
@@ -519,11 +519,11 @@ De ontwikkelingsleiding:
 
 * Werkt nauw samen met de architect (met name bij het opstellen van de ontwikkelingsstrategie voor AEM) om aspecten zoals de verhouding tussen malplaatjes en componenten, de integratiestrategie voor derdetoepassingen en om het even welke gespecialiseerde functionaliteit te bepalen.
 
-### Kwaliteitslead {#quality-lead}
+### Kwaliteit van lead {#quality-lead}
 
 De uitsprong van de kwaliteit:
 
-* is verantwoordelijk voor de kwaliteit van de levering; ervoor te zorgen dat het voldoet aan de criteria voor succes en eventuele door de cliënt gedefinieerde KPI&#39;s.
+* is verantwoordelijk voor de kwaliteit van de levering; zorgt ervoor dat deze voldoet aan de criteria voor succes en eventuele door de klant gedefinieerde KPI&#39;s.
 * Hiermee definieert u de kwaliteitsmaatstaven, lijnt u deze af op alle betrokkenen, stelt u de testplannen op en zorgt u ervoor dat deze worden uitgevoerd.
 * Creeert en levert rapporten aan projectbelanghebbenden.
 
@@ -544,13 +544,13 @@ De systeemtechnicus:
 De beveiligingsleiding:
 
 * Is verantwoordelijk voor het algemene veiligheidsconcept van de oplossing, die ervoor zorgt dat het met om het even welke vereisten en beleid van de cliënt wordt gericht.
-* levert een veiligheidsconcept, veiligheidsverrichtingen en aanbevelingen voor om het even welke hardware-based veiligheidsconcepten; zoals zones en firewalls.
+* Levert een veiligheidsconcept, veiligheidsverrichtingen en aanbevelingen voor om het even welke hardware-based veiligheidsconcepten; zoals streken en firewalls.
 
 ### Andere Persona {#other-persona}
 
 * Belanghebbenden
 
-   * Personen (vaak uit het bedrijf) die belang (belang) hebben bij het welslagen van het project. Zij dragen vaak bij aan de begroting.
+   * Personen (vaak afkomstig uit het bedrijf) die belang (belang) hebben bij het welslagen van het project. Zij dragen vaak bij aan de begroting.
 
 * Juridisch
 
@@ -576,7 +576,7 @@ De beveiligingsleiding:
 
 De controlelijsten bestrijken de **Vereiste documenten** en **Te leveren items** voor elke mijlpaal.
 
-* Er is geen 1:1-relatie tussen deze twee; een groep van vereiste documenten kan bijvoorbeeld tot één leverbaar leiden.
+* Er is geen 1:1-relatie tussen deze twee; een groep van vereiste documenten kan bijvoorbeeld resulteren in één leverbaar.
 * Een leverbaar van één persoon kan een vereist document zijn voor een ander persoon tijdens dezelfde mijlpaal.
 
 ### Vereiste documenten {#required-documents}
@@ -585,7 +585,7 @@ De **Vereiste documenten** nodig zijn voor de geschikte persoon bij de productie
 
 Voor elke **Vereist document** dient de betrokkene te vermelden:
 
-* **Y/N**: of zij is ontvangen.
+* **Y/N**: of het is ontvangen.
 * **1-3**: een aanduiding van de kwaliteit van het ontvangen document.
 
 ### Te leveren items {#deliverables}
@@ -594,7 +594,7 @@ Voor elke mijlpaal zijn de juiste personen verantwoordelijk voor het afleveren v
 
 Voor elke **Te leveren** dient de betrokkene te vermelden:
 
-* **Y/N**: of zij is voltooid.
+* **Y/N**: of deze is voltooid.
 
 Te leveren items worden vaak gebruikt zoals **Vereiste documenten** voor de huidige of een latere mijlpaal.
 
@@ -628,4 +628,4 @@ Voor beste praktijken bij het opstellen, het beheren, het ontwikkelen, of het on
 
 * Verwante documentatie
 
-   * Adobe Experience Cloud - [Planning voor de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)
+   * ADOBE EXPERIENCE CLOUD - [Planning voor de Adobe Experience Cloud](https://experienceleague.adobe.com/docs/core-services/interface/services/core-services.html)

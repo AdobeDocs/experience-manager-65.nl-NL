@@ -1,8 +1,8 @@
 ---
 title: Compatibiliteitspakket
 seo-title: Compatibility Package
-description: Als u het compatibiliteitspakket op AEM Forms 6.5 installeert, kunt u de Correspondence Management-middelen van AEM Forms 6.4 en eerdere versies en afgekeurde adaptieve formuliersjablonen en pagina's gebruiken
-seo-description: Installing the Compatibility package on AEM Forms 6.4 allows you to use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
+description: Als u het compatibiliteitspakket op AEM Forms 6.5 installeert, kunt u de Correspondentenbeheermiddelen van AEM Forms 6.4 en eerdere versies en afgekeurde adaptieve formuliersjablonen en pagina's gebruiken
+seo-description: Installing the Compatibility package on AEM Forms 6.4 lets you use the Correspondence Management assets from AEM Forms 6.4 and deprecated adaptive forms templates and pages
 uuid: b49633d6-2cb3-422c-a314-25f3b8a37b7f
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -12,9 +12,9 @@ discoiquuid: 73e8ccc6-f857-493e-b6e3-878f93e2a356
 docset: aem65
 role: Admin
 exl-id: bb16017c-a1bf-40d8-a78d-827c05b7ee2e
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Nadat u een upgrade hebt uitgevoerd, voert u de volgende handelingen uit om het 
 
 Zorg ervoor dat u [Compatibiliteitspakket AEM](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) vooraf geïnstalleerd.
 
-1. De nieuwste 6.5 installeren [Compatibiliteitspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
+1. De nieuwste versie 6.5 installeren [Verenigbaarheidspakket](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html).
 
    Voor meer informatie over het uploaden en installeren van het pakket raadpleegt u [Werken met pakketten](/help/sites-administering/package-manager.md).
 

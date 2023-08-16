@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: ba518290-dd82-44dc-ae7c-c8152df89179
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '846'
+source-wordcount: '845'
 ht-degree: 0%
 
 ---
@@ -21,8 +21,8 @@ Met Adobe Experience Manager (AEM) kunt u naadloos integreren met de volgende pr
 
 * Adobe Analytics biedt marketers praktische, realtime informatie over online strategieën en marketinginitiatieven.
 * Adobe Target biedt marketers de mogelijkheid om hun online inhoud voortdurend voor hun klanten relevanter te maken, waardoor ze een grotere conversie krijgen.
-* Adobe Dynamic Media Classic automatiseert mediabeheer, stroomlijnt webpublicatie en verbetert de webervaringen, allemaal in een gehoste omgeving.
-* Adobe Dynamic Tag Management biedt marketers intuïtieve tools om snel en eenvoudig een onbeperkt aantal Adobe- en andere tags te beheren.
+* Adobe Dynamic Media Classic automatiseert mediabeheer, stroomlijnt webpublicaties en verbetert de webervaringen, allemaal in een gehoste omgeving.
+* Adobe Dynamic Tag Management biedt marketers intuïtieve tools om snel en eenvoudig een onbeperkt aantal Adoben en tags van derden te beheren.
 <!-- Search&Promote is end of life as of September 1, 2022 * Adobe Search&Promote gives marketers the ability to control and optimize the search results on their sites. -->
 * Met Adobe Campaign kunt u inhoud voor e-maillevering rechtstreeks in Adobe Experience Manager beheren.
 
@@ -79,7 +79,7 @@ Raadpleeg voor meer informatie over hoe Adobe Experience Manager kan integreren 
 
 ## Integreren met Adobe Dynamic Tag Management {#integrating-with-adobe-dynamic-tag-management}
 
-[Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) biedt marketers intuïtieve tools voor het snel en eenvoudig beheren van een onbeperkt aantal Adobe- en andere tags. U hebt meer controle en flexibiliteit om vrijwel alles online te optimaliseren, en tegelijkertijd de afhankelijkheid van IT-bronnen te verminderen.
+[Adobe Dynamic Tag Management](https://business.adobe.com/products/experience-platform/adobe-experience-platform.html) biedt marketers intuïtieve tools om snel en eenvoudig een onbeperkt aantal Adoben en tags van derden te beheren. U hebt meer controle en flexibiliteit om vrijwel alles online te optimaliseren, en tegelijkertijd de afhankelijkheid van IT-bronnen te verminderen.
 
 [Adobe Dynamic Tag Management integreren](/help/sites-administering/dtm.md) met AEM, zodat u uw Dynamic Tag Management-wegeigenschappen kunt gebruiken om AEM sites bij te houden.
 

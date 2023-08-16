@@ -2,9 +2,9 @@
 title: Vertaalprojecten beheren
 description: Leer hoe u vertaalprojecten in AEM kunt beheren.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 106fc0e1ef6d65f13bd3875783102da44694581e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3587'
+source-wordcount: '3586'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Nadat u de inhoud hebt voorbereid voor vertaling, moet u de taalstructuur voltooien door ontbrekende taalkopieën te maken en vertaalprojecten te maken.
 
-Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproject is een soort AEM [project](/help/sites-authoring/projects.md) die bronnen bevat die in andere talen moeten worden vertaald. Deze bronnen zijn de pagina&#39;s en elementen van de [taalkopieën](/help/sites-administering/tc-prep.md) die zijn gemaakt op basis van de master taal.
+Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproject is een soort AEM [project](/help/sites-authoring/projects.md) die bronnen bevat die in andere talen moeten worden vertaald. Deze bronnen zijn de pagina&#39;s en elementen van de [taalkopieën](/help/sites-administering/tc-prep.md) die zijn gemaakt op basis van de taalmaster.
 
 Wanneer middelen aan een vertaalproject worden toegevoegd, wordt een vertaalbaan gecreeerd voor hen. Taken bieden opdrachten en statusinformatie die u gebruikt om de workflows voor het vertalen van mensen en computers die op de bronnen worden uitgevoerd, te beheren.
 
@@ -31,7 +31,7 @@ Vertaalprojecten en -taken worden gecreëerd met workflows voor het voorbereiden
 
 >[!NOTE]
 >
->Optie 3 houdt geen verband met vertaalwerk/project. Hiermee kunt u inhoud en structurele wijzigingen in de taal die is master voor (onvertaalde) taalkopieën kopiëren. U kunt dit gebruiken om uw taalmeesters synchroon te houden, zelfs zonder vertaling.
+>Optie 3 houdt geen verband met vertaalwerk/project. Hiermee kunt u inhoud en structurele wijzigingen in de hoofdtaal kopiëren naar (onvertaalde) taalkopieën. U kunt dit gebruiken om uw taalmeesters synchroon te houden, zelfs zonder vertaling.
 
 ## Eerste vertalingen uitvoeren en bestaande vertalingen bijwerken {#performing-initial-translations-and-updating-existing-translations}
 
@@ -43,14 +43,14 @@ AEM ontdekt of een vertaalproject voor de aanvankelijke vertaling van inhoud wor
    * Wanneer de vertaalde pagina in AEM wordt geïmporteerd, wordt de pagina tijdens het opstarten overschreven.
    * De vertaalde pagina overschrijft de taalkopie alleen wanneer de introductie wordt bevorderd.
 
-Bijvoorbeeld, wordt de /content/geometrixx/fr taalwortel gecreeerd voor de Franse vertaling van de /content/geometrixx/en master taal. Er zijn geen andere pagina&#39;s in de Franse taalkopie.
+Bijvoorbeeld, wordt de /content/geometrixx/fr taalwortel gecreeerd voor de Franse vertaling van de /content/geometrixx/en hoofdtaal. Er zijn geen andere pagina&#39;s in de Franse taalkopie.
 
 * Er wordt een vertaalproject gemaakt voor de pagina /content/geometrixx/nl/products en alle onderliggende pagina&#39;s, met als doelversie de Franse taalkopie. Omdat de taalkopie niet de pagina /content/geometrixx/fr/products bevat, kopieert AEM onmiddellijk de pagina /content/geometrixx/en/products en alle onderliggende pagina&#39;s naar de Franse taalkopie. De kopieën worden ook in het vertaalproject opgenomen.
 * Er wordt een vertaalproject gemaakt voor de pagina /content/geometrixx/nl en alle onderliggende pagina&#39;s die zich richten op de Franse taalkopie. Omdat de taalkopie de pagina bevat die overeenkomt met de pagina /content/geometrixx/nl (de hoofdtaal), AEM de pagina /content/geometrixx/nl en alle onderliggende pagina&#39;s gekopieerd en toegevoegd aan een opstart. De kopieën worden ook in het vertaalproject opgenomen.
 
 ## Vertaalprojecten maken met het deelvenster Verwijzingen {#creating-translation-projects-using-the-references-panel}
 
-Maak vertaalprojecten zodat u de workflow voor het vertalen van de master bronnen kunt uitvoeren en beheren. Wanneer u projecten maakt, geeft u de pagina op in de master taal die u vertaalt en de taalkopieën waarvoor u de vertaling uitvoert:
+Maak vertaalprojecten zodat u de workflow voor het vertalen van de bronnen van uw taalmaster kunt uitvoeren en beheren. Wanneer u projecten maakt, geeft u de pagina op in het taalstramien dat u vertaalt en de taalkopieën waarvoor u de vertaling uitvoert:
 
 * De wolkenconfiguratie van het kader van de vertaalintegratie dat met de geselecteerde pagina wordt geassocieerd bepaalt vele eigenschappen van de vertaalprojecten, zoals het vertaalwerkschema aan gebruik.
 * Er wordt een project gemaakt voor elke geselecteerde taalkopie.
@@ -58,13 +58,13 @@ Maak vertaalprojecten zodat u de workflow voor het vertalen van de master bronne
 
 U kunt opgeven dat de onderliggende pagina&#39;s van de geselecteerde pagina ook worden geselecteerd. In dit geval worden ook kopieën van de onderliggende pagina&#39;s aan elk project toegevoegd, zodat deze worden vertaald. Wanneer om het even welke kindpagina&#39;s met verschillende configuraties van het kader van de vertaalintegratie worden geassocieerd, AEM leidt tot extra projecten.
 
-U kunt ook [handmatig vertaalprojecten maken](#creating-a-translation-project-using-the-projects-console).
+U kunt [handmatig vertaalprojecten maken](#creating-a-translation-project-using-the-projects-console).
 
 >[!NOTE]
 >
 >Als u een project wilt maken, moet uw account lid zijn van de `project-administrators` groep.
 
-**Eerste vertalingen en Bijwerken van vertalingen**
+**Eerste vertalingen en vertalingen bijwerken**
 
 In het deelvenster Referenties wordt aangegeven of de bestaande taalkopieën worden bijgewerkt of dat de eerste versie van de taalkopieën wordt gemaakt. Wanneer een taalexemplaar voor de geselecteerde pagina bestaat, lijkt het lusje van de Exemplaren van de Taal van de Update toegang tot project-verwante bevelen te verlenen.
 
@@ -121,7 +121,7 @@ Na het vertalen kunt u [de vertaling bekijken](#reviewing-and-promoting-updated-
 
 Nadat u een vertaalproject hebt gecreeerd, kunt u de ruit van Middelen gebruiken om pagina&#39;s aan het project toe te voegen. Het toevoegen van pagina&#39;s is handig wanneer u pagina&#39;s van verschillende vertakkingen in hetzelfde project opneemt.
 
-Wanneer u pagina&#39;s toevoegt aan een vertaalproject, worden de pagina&#39;s opgenomen in een nieuwe vertaaltaak. U kunt ook [pagina&#39;s toevoegen aan een bestaande taak](#adding-pages-assets-to-a-translation-job).
+Wanneer u pagina&#39;s toevoegt aan een vertaalproject, worden de pagina&#39;s opgenomen in een nieuwe vertaaltaak. U kunt [pagina&#39;s toevoegen aan een bestaande taak](#adding-pages-assets-to-a-translation-job).
 
 Net zoals bij het maken van een nieuw project, worden bij het toevoegen van pagina&#39;s kopieën van de pagina&#39;s zo nodig toegevoegd aan een opstart om te voorkomen dat bestaande taalkopieën worden overschreven. (Zie [Vertaalprojecten maken voor bestaande taalkopieën](#performing-initial-translations-and-updating-existing-translations).)
 
@@ -185,7 +185,7 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Selecteer het woordenboek dat u wilt toevoegen en klik op Toevoegen of tik op de knop Toevoegen.
+1. Selecteer het woordenboek dat u wilt toevoegen en klik op de knop Toevoegen of tik op Toevoegen.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -221,18 +221,18 @@ Uw labels worden nu toegevoegd aan uw vertaaltaak.
 
 De tegel Vertaaloverzicht bevat de eigenschappen die voor een vertaalproject worden gevormd. Naast de generieke [projectinformatie](/help/sites-authoring/projects.md#project-info)bevat het tabblad Vertaling vertaalspecifieke eigenschappen:
 
-* Brontaal: De taal van de pagina&#39;s die worden vertaald.
-* Doeltaal: De taal waarin de pagina&#39;s worden vertaald.
-* Vertaalmethode: De vertaalworkflow. Menselijke vertaling of Machine Translation wordt ondersteund.
-* Vertaalbureau: De vertaalserviceprovider die de vertaling uitvoert.
-* Inhoudscategorie: (Machine Translation) De inhoudscategorie die wordt gebruikt voor het vertalen.
-* Cloudconfiguratie: De wolkenconfiguratie voor de schakelaar van de vertaaldienst die voor het project wordt gebruikt.
+* Brontaal: de taal van de pagina&#39;s die worden vertaald.
+* Doeltaal: de taal waarin de pagina&#39;s worden vertaald.
+* Vertaalmethode: de vertaalworkflow. Menselijke vertaling of Machine Translation wordt ondersteund.
+* Vertaalprovider: de vertaalserviceprovider die de vertaling uitvoert.
+* Inhoudscategorie: (Machine Translation) de inhoudscategorie die wordt gebruikt voor het vertalen.
+* Cloud Config: De wolkenconfiguratie voor de schakelaar van de vertaaldienst die voor het project wordt gebruikt.
 
 Wanneer een project gebruikend de ruit van Middelen van een pagina wordt gecreeerd, worden deze eigenschappen automatisch gevormd gebaseerd op de eigenschappen van de bronpagina.
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
-## De status van een vertaaltaak controleren {#monitoring-the-status-of-a-translation-job}
+## De status van een vertalingstaak controleren {#monitoring-the-status-of-a-translation-job}
 
 De tegel Vertaal baan van een Vertaalproject verstrekt de status van een vertaalbaan, evenals het aantal pagina&#39;s en activa in de baan.
 
@@ -300,7 +300,7 @@ Neem contact op met uw vertaalleverancier voor meer informatie over bereikresult
 
 Wanneer u een vertaaltaak instelt, is de status van de taak `Scope Requested`. Wanneer de vertaalverkoper het werkingsgebied terugkeert, wordt de status veranderd in `Scope Completed`. Wanneer het werkingsgebied wordt voltooid, kunt u het tonen bevel van het Toepassingsgebied gebruiken om het scoping resultaten te herzien.
 
-De bereikfuncties werken alleen correct wanneer de leverancier van de vertaling die u gebruikt deze functie ondersteunt.
+De functie Scoping werkt alleen correct wanneer de leverancier van de vertaling die u gebruikt deze functie ondersteunt.
 
 1. In de console van Projecten, open uw vertaalproject.
 1. Klik of tik op het menu Opdrachten in het onderdeel Vertaaltaak en klik of tik op Toepassingsgebied aanvragen.
@@ -329,7 +329,7 @@ Nadat u de vertaaltaak hebt gestart, wordt in de tegel Vertaal-taak de status Ve
 Een vertaaltaak annuleren om het vertaalproces te stoppen en te voorkomen dat de leverancier van de vertaling verdere vertalingen uitvoert. U kunt een taak annuleren als de taak de `Committed For Translation` of `Translation In Progress` status.
 
 1. In de console van Projecten, open het vertaalproject.
-1. Klik of tik op het menu Opdrachten in het onderdeel Vertaal taak op Annuleren.
+1. Klik of tik op het menu Opdrachten in het onderdeel Vertaaltaak en klik op Annuleren.
 1. Klik of tik op OK in het dialoogvenster Handeling dat de annulering van de vertaling bevestigt.
 
 ## Workflow accepteren/afwijzen {#accept-reject-workflow}
@@ -350,7 +350,7 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Selecteer de pagina in de master taal, klik of tik op Verwijzingen en klik op Taalkopieën of tik op Taalkopieën.
+1. Selecteer de pagina in het taalstramien, klik op Referenties of tik op Referenties en klik of tik op Taalkopieën.
 1. Klik of tik op de taalkopie om te reviseren.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
@@ -365,18 +365,18 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 
 ## Taalkopieën vergelijken {#comparing-language-copies}
 
-Taalkopieën vergelijken met de Master taal:
+Taalkopieën vergelijken met de taalmaster:
 
 1. In de **Sites** navigeer naar de taalkopie die u wilt vergelijken.
 1. Open de **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)** deelvenster.
-1. Onder de **Kopieën** kop selecteren **Taalkopieën.**
-1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met Master **of **Vergelijken met vorige **indien van toepassing.
+1. Onder de **Exemplaren** kop selecteren **Taalkopieën.**
+1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met stramien **of op **Vergelijken met vorige **indien van toepassing.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
 1. De twee pagina&#39;s (opstart en bron) worden naast elkaar geopend.
 
-   Voor volledige informatie over het gebruik van deze functie raadpleegt u [Pagina grijs](/help/sites-authoring/page-diff.md).
+   Zie voor meer informatie over het gebruik van deze functie [Pagina grijs](/help/sites-authoring/page-diff.md).
 
 ## Vertaaltaken voltooien en archiveren {#completing-and-archiving-translation-jobs}
 
@@ -390,14 +390,14 @@ Archiveer een vertaaltaak nadat deze is voltooid en u hoeft de gegevens over de 
 
 ## De structuur van een taalkopie maken {#creating-the-structure-of-a-language-copy}
 
-Vul de taalkopie zodanig dat deze inhoud bevat uit de master taal die u vertaalt. Voordat u uw taalkopie kunt vullen, moet u beschikken over [heeft de hoofdmap van de taal gemaakt](/help/sites-administering/tc-prep.md#creating-a-language-root) van de taalkopie.
+Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. Voordat u uw taalkopie kunt vullen, moet u beschikken over [heeft de hoofdmap van de taal gemaakt](/help/sites-administering/tc-prep.md#creating-a-language-root) van de taalkopie.
 
-1. Gebruik de console van Plaatsen om de taalwortel van de master taal te selecteren die u als bron gebruikt. Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Inhoud > Geometrixx demo-site > Engels.
+1. Gebruik de console van Plaatsen om de taalwortel van de hoofdtaal te selecteren die u als bron gebruikt. Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Inhoud > Geometrixx demo-site > Engels.
 1. Klik of tik op Verwijzingen op de werkbalk.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
-1. Selecteer Exemplaren van de Taal, en selecteer dan de taalexemplaren die u wilt bevolken.
+1. Selecteer Taalkopieën en selecteer vervolgens de taalkopieën die u wilt vullen.
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
@@ -435,12 +435,12 @@ U kunt een vertaalproject manueel tot stand brengen als u verkiest de console va
 >
 >Als u een project wilt maken, moet uw account lid zijn van de `project-administrators` groep.
 
-Wanneer u handmatig een vertaalproject maakt, moet u naast de eigenschappen voor vertaling ook waarden opgeven voor de volgende translatie-gerelateerde eigenschappen [basiseigenschappen](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
+Wanneer u handmatig een vertaalproject maakt, moet u naast de eigenschappen voor vertaling ook waarden opgeven voor de volgende eigenschappen [basiseigenschappen](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 
 * **Naam:** Projectnaam.
 * **Brontaal:** De taal van de broninhoud.
 * **Doeltaal:** De taal waarin de inhoud wordt vertaald.
-* **Vertaalmethode:** Selecteer Menselijke vertaling om erop te wijzen dat de vertaling manueel moet worden uitgevoerd.
+* **Omzettingsmethode:** Selecteer Menselijke vertaling om erop te wijzen dat de vertaling manueel moet worden uitgevoerd.
 
 1. Klik of tik op Maken op de werkbalk van de projectenconsole.
 1. Selecteer de sjabloon Vertaalproject en klik of tik op Volgende.

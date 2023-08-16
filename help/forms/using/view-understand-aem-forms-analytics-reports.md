@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: 3690fa80-6332-4df8-afea-77b5490fe0d1
 docset: aem65
 exl-id: c5a4e6f6-f331-41e9-a0a9-51a30df6e2cd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1050'
+source-wordcount: '1049'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Wanneer een gebruiker met het formulier werkt, worden de interacties opgenomen e
 * 2 voor opslaan
 * 1 voor hulp
 * 1 voor elke validatiefout
-* 1 voor Formulieruitvoering + 1 voor standaardvenster: ga naar + 1 voor standaard 1e veld.
+* 1 voor Formulieruitvoering + 1 voor standaardvenster: ga naar + 1 voor standaard eerste veld
 * 2 voor Formulier verlaten
 
 >[!NOTE]
@@ -66,7 +66,7 @@ AEM Forms geeft analyserapporten voor het formulier en voor elk deelvenster in h
 
 **A.** Conversies **B.** Overzicht op formulierniveau **C.** Overzicht op paneelniveau **D.** Browsers van bezoekers - filter **E.** Besturingssysteem van bezoekers - filter **F.** Taal van bezoekers - filter
 
-Standaard wordt het analyserapport voor de laatste zeven dagen weergegeven. U kunt rapporten weergeven voor de laatste 15 dagen, de laatste één maand enzovoort, of een datumbereik opgeven.
+Standaard wordt het analyserapport voor de laatste zeven dagen weergegeven. U kunt rapporten weergeven voor de laatste 15 dagen, de laatste één maand enzovoort, of u kunt een datumbereik opgeven.
 
 >[!NOTE]
 >
@@ -92,14 +92,14 @@ In de overzichtssectie op formulierniveau kunt u zien hoe het formulier de volge
 * **Uitvoeringen**: Aantal keer dat het formulier is gegenereerd of geopend
 * **Concepten**: Aantal keer dat het formulier is opgeslagen als concept
 * **Indieningen**: Aantal keer dat het formulier is ingediend
-* **Afbreken**: Aantal keren dat gebruikers het formulier hebben ingevuld en vervolgens het formulier hebben verlaten zonder het formulier in te vullen
-* **Unieke bezoekers**: Aantal keren dat het formulier wordt weergegeven door unieke bezoekers. Voor meer informatie over unieke bezoekers raadpleegt u [Unieke bezoekers, bezoeken en klantengedrag](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Afbreken**: Het aantal keren dat gebruikers het formulier hebben ingevuld en vervolgens het formulier hebben verlaten zonder het formulier in te vullen
+* **Unieke bezoekers**: Het aantal keren dat het formulier wordt weergegeven door unieke bezoekers. Voor meer informatie over unieke bezoekers raadpleegt u [Unieke bezoekers, bezoeken en klantengedrag](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
 
-![Uitgebreid rapport voor samenvattingsanalyse op formulierniveau](assets/analytics-report.png)
+![Samenvattingsanalyserapport op formulierniveau](assets/analytics-report.png)
 
 ### Deelvensterrapport {#bottom-summary-report}
 
-De overzichtssectie op paneelniveau bevat de volgende informatie over elk deelvenster in het formulier:
+In het overzichtsgedeelte op paneelniveau vindt u de volgende informatie over elk deelvenster in het formulier:
 
 * **Gemiddelde vultijd**: Gemiddelde tijd die het panel heeft doorgebracht, ongeacht of het formulier is ingediend
 * **Fouten aangetroffen**: Gemiddeld aantal fouten dat de gebruikers hebben aangetroffen in de velden in een deelvenster. Fouten die worden aangetroffen, worden gevonden door het totale aantal fouten in een veld te delen door het aantal uitvoeringen van het formulier.
@@ -115,13 +115,13 @@ Het gedetailleerde rapport bevat waarden voor alle velden in het deelvenster.
 
 Het paneelrapport heeft drie lusjes:
 
-* **Tijdrapport**(Standaard): Geeft de tijd in aantal seconden weer die is besteed aan het invullen van elk veld in het deelvenster
+* **Tijdrapport**(Standaard): geeft de tijd in aantal seconden weer die is besteed aan het invullen van elk veld in het deelvenster
 * **Foutrapport**: Hiermee geeft u het aantal fouten weer dat gebruikers hebben aangetroffen bij het invullen van de velden
 * **Help-rapport**: Aantal keren dat de Help voor een bepaald veld is geopend
 
 U kunt tussen de deelvensters navigeren als er meerdere deelvensters beschikbaar zijn.
 
-### Filters: Browser, besturingssysteem en taal {#filters-browser-os-and-language}
+### Filters: browser, besturingssysteem en taal {#filters-browser-os-and-language}
 
 In de tabellen Browserdistributie, OS Distribution en Taaldistributie worden de uitvoeringen, bezoekers en verzendingen weergegeven volgens browsers, OS en Taal van formuliergebruikers. In deze tabellen worden standaard maximaal vijf items weergegeven. U kunt op Meer tonen klikken om meer items weer te geven en op Minder tonen klikken om terug te keren naar de normale vijf of minder items.
 

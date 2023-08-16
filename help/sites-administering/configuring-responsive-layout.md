@@ -1,5 +1,5 @@
 ---
-title: Container en lay-outmodus voor lay-out configureren
+title: Container en lay-outmodus configureren
 seo-title: Configuring Layout Container and Layout Mode
 description: Leer hoe u de container van de lay-out en de lay-outmodus configureert.
 seo-description: Learn how to configure Layout Container and Layout Mode.
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 exl-id: 61152b2d-4c0b-4cfd-9669-cf03d32cb7c7
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1285'
 ht-degree: 0%
 
 ---
 
-# Container en lay-outmodus voor lay-out configureren{#configuring-layout-container-and-layout-mode}
+# Container en lay-outmodus configureren{#configuring-layout-container-and-layout-mode}
 
 [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) is een mechanisme om te realiseren [responsief webontwerp](https://en.wikipedia.org/wiki/Responsive_web_design). Hierdoor kan de gebruiker webpagina&#39;s maken met een indeling en afmetingen die afhankelijk zijn van de apparaten die de gebruikers gebruiken.
 
@@ -30,11 +30,11 @@ AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinati
 
 * [**Layout Container**](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode) component
 
-   Deze component biedt een rasteralineasysteem waarmee u componenten kunt toevoegen en positioneren binnen een responsief raster. Het kan als standaardparsys voor uw pagina worden gebruikt en/of ter beschikking gesteld aan auteurs in componentenbrowser.
+  Deze component verstrekt een net-paragraaf systeem om u toe te voegen en componenten binnen een ontvankelijk net te plaatsen. Het kan als standaardparsys voor uw pagina worden gebruikt en/of ter beschikking gesteld aan auteurs in componentenbrowser.
 
    * De standaardwaarde **Layout Container** component wordt gedefinieerd onder:
 
-      /libs/wcm/foundation/components/responsivegrid
+     /libs/wcm/foundation/components/responsivegrid
 
    * U kunt lay-outcontainers definiëren:
 
@@ -42,11 +42,10 @@ AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinati
       * Als standaardparsys voor de pagina.
       * Beide.
 
-         U kunt de lay-outcontainer als standaard voor de pagina hebben, terwijl het toestaan van de gebruiker om verdere lay-outcontainers binnen dit toe te voegen; bijvoorbeeld om kolombesturing te bereiken.
+        U kunt de lay-outcontainer als standaard voor de pagina hebben, terwijl het toestaan van de gebruiker om verdere lay-outcontainers binnen dit toe te voegen; bijvoorbeeld, om kolomcontrole te bereiken.
 
 * **[Lay-outmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**
-Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht 
-**Layout** om inhoud binnen het responsieve raster te plaatsen.
+Als de lay-outcontainer eenmaal op de pagina is geplaatst, kunt u de opdracht **Layout** om de inhoud binnen het responsieve raster te plaatsen.
 
 * [**Emulator**](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)
 Zo kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat of venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
@@ -68,7 +67,7 @@ Met deze responsieve rastermechanismen kunt u:
 
 ## De responsieve emulator configureren {#configuring-the-responsive-emulator}
 
-Hierdoor kunt u de responsieve **Emulator** op uw site.
+Met deze taak kunt u de responsieve **Emulator** op uw site.
 
 ### Uw pagina-componenten registreren voor emulatie {#register-your-page-components-for-emulation}
 
@@ -98,7 +97,7 @@ Deze procedures worden gebruikt om de **Layout** op uw site.
 
 * Een titel en breedte definiëren:
 
-   * De titel beschrijft de generieke apparaatgroep, zo nodig met oriëntatie; bijvoorbeeld telefoon, tablet, tabletlandscape.
+   * De titel beschrijft de generieke apparatengroepering, met richtlijn indien nodig; bijvoorbeeld, telefoon, tablet, tabletlandscape.
    * De breedte bepaalt de maximumbreedte in pixel voor die generische apparatengroepering. Bijvoorbeeld, als de breekpunttelefoon een breedte van 768 heeft dan dat het de maximumbreedte van de lay-out heeft die voor een telefoonapparaat wordt gebruikt.
 
 * U kunt de emulator gebruiken als markeringen boven aan de pagina-editor.
@@ -171,7 +170,7 @@ Kopieer het volgende `cq:infoProviders` knooppuntstructuur in uw bovenliggende p
 
 ## Component resizing voor de pagina inschakelen {#enable-component-resizing-for-the-page}
 
-Deze procedures zijn vereist zodat u de grootte van componenten in de **Layout** in.
+Deze procedures zijn vereist zodat u de grootte van componenten in de **Layout** -modus.
 
 ### De container van de Lay-out instellen als HoofdParsys {#set-layout-container-as-main-parsys}
 
@@ -186,17 +185,17 @@ In één van beide:
 
 De volgende twee voorbeelden illustreren de definitie:
 
-* **HTML:**
+* **HTL:**
 
-   ```xml
-   <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
-   ```
+  ```xml
+  <sly data-sly-resource="${'par' @ resourceType='wcm/foundation/components/responsivegrid'}/>
+  ```
 
 * **JSP:**
 
-   ```
-   <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
-   ```
+  ```
+  <cq:include path="par" resourceType="wcm/foundation/components/responsivegrid" />
+  ```
 
 ### Inclusief de responsieve CSS {#include-the-responsive-css}
 
@@ -232,7 +231,7 @@ U moet ook een [clientbibliotheek](https://experienceleague.adobe.com/docs/) om 
 }
 ```
 
-De basisrasterdefinitie is te vinden onder:
+De definitie van het basisraster is te vinden onder:
 
 `/libs/wcm/foundation/clientlibs/grid/grid_base.less`
 
@@ -260,7 +259,7 @@ Als u de grootte van een component in het raster wijzigt, worden de volgende lis
 
 * `afterchildedit`
 
-Als u de inhoud van een adaptieve afbeelding in een responsief raster op de juiste wijze wilt vergroten of verkleinen en bijwerken, moet u een `afterEdit` instellen op `REFRESH_PAGE` listener in de `EditConfig` bestand van elke opgenomen component.
+Als u de inhoud van een adaptieve afbeelding in een responsief raster op de juiste wijze wilt vergroten of verkleinen en bijwerken, moet u een `afterEdit` instellen op `REFRESH_PAGE` listener in de `EditConfig` bestand van elke component in het bestand.
 
 Bijvoorbeeld:
 
@@ -282,11 +281,11 @@ Auteurs kunnen meer responsieve rasters toevoegen aan de inhoudspagina&#39;s als
 
 * **Auteursomgeving**
 
-   Gebruiken [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) om de **Laagcontainer** voor een pagina.
+  Gebruiken [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) om de **Laagcontainer** voor een pagina.
 
 * **Componentdefinitie**
 
-   Gebruiken `allowedComponent` of een statische include-opdracht wanneer de component wordt gedefinieerd.
+  Gebruiken `allowedComponent` of een statische include-opdracht wanneer de component wordt gedefinieerd.
 
 ### Het raster van de container van de layout configureren {#configure-the-grid-of-the-layout-container}
 
@@ -309,6 +308,7 @@ U kunt het aantal beschikbare kolommen voor elke specifieke instantie van lay-ou
    * Aantal beschikbare kolommen:
 
       * `columns="{String}8"`
+
    * Componenten die aan de huidige component kunnen worden toegevoegd:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`

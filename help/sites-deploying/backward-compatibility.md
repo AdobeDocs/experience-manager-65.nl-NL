@@ -12,9 +12,9 @@ discoiquuid: f3b4ec1d-9054-47d4-afcb-0a0121b94190
 docset: aem65
 feature: Upgrading
 exl-id: c432a014-2dab-4c49-a25b-e4f461d13f9b
-source-git-commit: 50a11e30ccd720065962e8dd03cbcc71ec9f715a
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '499'
 ht-degree: 1%
 
 ---
@@ -33,11 +33,11 @@ In de meeste gevallen, zouden de klanten die AEM 6.3 in werking stellen niet de 
 
 Voor uitzonderingen waar de eigenschappen niet achteruit compatibel konden worden gehouden, kunnen de achterwaartse onverenigbaarheidskwesties voor bundels en inhoud worden verlicht door een Pakket van de Verenigbaarheid voor 6.4 te installeren (te zien hoe te opstelling hieronder voor details over waar te om te downloaden). Dit compatpakket helpt in de meeste gevallen de compatibiliteit te herstellen voor toepassingen die voldoen aan AEM 6.4.
 
-Met het compatibiliteitspakket kunt u AEM uitvoeren in de compatibiliteitsmodus en de aangepaste ontwikkeling uitstellen tegen nieuwe AEM:
+Met het compatibiliteitspakket kunt u AEM uitvoeren in de compatibiliteitsmodus en aangepaste ontwikkeling uitstellen voor nieuwe AEM:
 
 >[!NOTE]
 >
->Houd er rekening mee dat het compatibiliteitspakket slechts een tijdelijke oplossing is om de ontwikkeling uit te stellen die nodig is om AEM 6.5-compatibel te zijn. De oplossing wordt alleen aanbevolen als laatste optie als u compatibiliteitsproblemen niet direct na de upgrade kunt oplossen via ontwikkeling. Het wordt ten zeerste aanbevolen over te schakelen op de native modus en het compatibiliteitspakket te verwijderen wanneer u besluit verder te gaan met aangepaste ontwikkeling op basis van 6.5 en gebruik te maken van de volledige 6.5-functionaliteit.
+>Houd er rekening mee dat het compatibiliteitspakket slechts een tijdelijke oplossing is om de ontwikkeling uit te stellen die nodig is om AEM 6.5-compatibel te zijn. De oplossing wordt alleen aanbevolen als laatste optie als u compatibiliteitsproblemen niet direct na de upgrade kunt oplossen via ontwikkeling. Het wordt ten zeerste aanbevolen om over te schakelen op de native modus en het compatibiliteitspakket te verwijderen wanneer u besluit verder te gaan met aangepaste ontwikkeling op basis van 6.5 en gebruik te maken van de volledige 6.5-functionaliteit.
 
 ![verkorten](assets/sase.png)
 
@@ -51,11 +51,11 @@ De modus Native is bedoeld voor klanten die alle nieuwe functies van AEM 6.5 wil
 
 Dit betekent dat u mogelijk aanpassingen in uw toepassing moet aanbrengen direct na de upgrade.
 
-**Compatibiliteitsmodus: Het Pakket van de verenigbaarheid dat met Toegelaten Verpletteren wordt geïnstalleerd**
+**De Wijze van de verenigbaarheid: Het Pakket van de verenigbaarheid die met Toegelaten Verpletteren wordt geïnstalleerd**
 
 De Wijze van de verenigbaarheid is voor klanten die aanpassingen van interfaces hebben die niet achterwaarts compatibel zijn. Dit staat AEM toe om op verenigbaarheidswijze te lopen en douaneontwikkeling uit te stellen die tegen nieuwe AEMEigenschappen wordt vereist die niet met sommige van uw douanecode compatibel zijn.
 
-**Oudere modus: Compatiblity Package Geïnstalleerd met het Verpletteren van Gehandicapten**
+**Oudere modus: compatibiliteitspakket geïnstalleerd met routering uitgeschakeld**
 
 De verouderde wijze is voor klanten die douaneinterfaces hebben die op erfenis of verouderde code van AEM worden gebaseerd die uit in het verenigingspakket is bewogen.
 

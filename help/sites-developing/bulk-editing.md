@@ -1,8 +1,8 @@
 ---
 title: Pagina configureren voor Bulk bewerken van pagina-eigenschappen
 seo-title: Configuring your Page for Bulk Editing of Page Properties
-description: Dankzij het Bulksgewijs bewerken van pagina-eigenschappen kunt u de eigenschappen van meerdere pagina's tegelijk bewerken
-seo-description: Bulk editing of page properties allows you to edit the properties of multiple pages at once
+description: Met de functie Pagina-eigenschappen bewerken kunt u de eigenschappen van meerdere pagina's tegelijk bewerken
+seo-description: Bulk editing of page properties lets you edit the properties of multiple pages at once
 uuid: 1ad403d2-4b93-4943-ae45-74bf20705b81
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
 exl-id: 1787e643-fc8e-40e0-8e14-97b222a7c320
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '415'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ ht-degree: 0%
 
 Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet standaard ingeschakeld voor bulkbewerking. Ze moeten expliciet worden toegestaan (ingeschakeld). Wanneer u de pagina-eigenschappen definieert die beschikbaar moeten zijn voor bulkbewerking, moet u rekening houden met bepaalde implicaties, zoals:
 
-* Bepaalde velden zijn gewoonlijk uniek; bijvoorbeeld een paginatitel. U moet beslissen of het zinvol is dergelijke velden in te schakelen voor bulkbewerking, wanneer er één waarde wordt toegepast.
+* Bepaalde velden zijn gewoonlijk uniek, bijvoorbeeld een paginatitel. U moet beslissen of het zinvol is dergelijke velden in te schakelen voor bulkbewerking, wanneer er één waarde wordt toegepast.
 * Bepaalde velden kunnen meerdere waarden hebben. Dit vereist een zinvolle weergave bij het renderen.
 
-  Bijvoorbeeld een selectievakje dat &quot;Klaar voor publicatie&quot; aangeeft. Dit kan verschillende waarden hebben voordat u bulkbewerkingen uitvoert (bijvoorbeeld kant-en-klare versie, bezig).
+  Bijvoorbeeld een selectievakje dat &quot;Klaar voor publicatie&quot; aangeeft. Dit kan verschillende waarden hebben voordat u bulkbewerkingen uitvoert (bijvoorbeeld gereed, in-revisie, bezig).
 
 >[!CAUTION]
 >
@@ -39,7 +39,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 
 >[!NOTE]
 >
->Bulkbewerking is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [Eigenschappen van meerdere elementen bewerken](/help/assets/metadata.md) voor volledige informatie. Met de opdracht [Schema-editor](/help/assets/metadata-schemas.md).
+>Bulkbewerking is ook beschikbaar voor Elementen. Het is erg vergelijkbaar, maar op een paar punten verschilt het. Zie [Eigenschappen van meerdere elementen bewerken](/help/assets/metadata.md) voor volledige informatie. U kunt de velden in de Bulk Metadata Editor voor Assets aanpassen met de opdracht [Schema-editor](/help/assets/metadata-schemas.md).
 
 ## Veld inschakelen {#enabling-a-field}
 
@@ -55,7 +55,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* `/libs/granite/ui/components/foundation/form/checkbox`
 >
 
-Velden zijn ingeschakeld op de pagina-component (*niet* in de template):
+Velden zijn ingeschakeld op de paginacomponent (*niet* in de template):
 
 1. Met CRXDE Lite (of een gelijkwaardige methode) opent u de pagina-component.
 
@@ -82,7 +82,7 @@ Velden zijn ingeschakeld op de pagina-component (*niet* in de template):
 
    >[!CAUTION]
    >
-   >U ***moet*** niets wijzigen in de `/libs` pad.
+   >U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
    >
    >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >

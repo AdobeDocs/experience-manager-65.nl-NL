@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 27b8302c-250b-4ce6-b3cf-c938738f2d92
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1196'
+source-wordcount: '1195'
 ht-degree: 4%
 
 ---
@@ -20,15 +20,15 @@ Campagnes gebruiken vaak theaters als een mechanisme om een specifiek segment va
 
 >[!NOTE]
 >
->De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
+>De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de opdracht [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
 
 * **Merk pagina&#39;s** worden opgeslagen in de sectie Campagnes van de website. Een merk bevat de afzonderlijke campagnes.
 * **Campagnepagina&#39;s** worden opgeslagen in de sectie Campagnes van de website. Elke campagne heeft een afzonderlijke pagina waarop de teasdefinities staan. De container, of overzichtspagina, bevat ook bepaalde informatie en statistieken over de afzonderlijke laserpagina&#39;s.
 
 Teasers binnen AEM bestaan uit verschillende onderdelen:
 
-* **Teaserpagina&#39;s** worden opgeslagen onder de juiste campagnepagina en houden de definities van de teasalinea&#39;s beschikbaar voor elke specifieke campagne. Deze definities worden gebruikt bij de weergave van de laseralinea&#39;s; inclusief variaties in de inhoud, het segment dat moet worden gebruikt voor het selecteren van een variatie- en versterkingsfactor.
-* De **Teaglascomponent** is beschikbaar buiten het vak en kunt u een exemplaar van uw specifieke tasalinea op een inhoudspagina maken. U kunt de lasercomponent van het hulpapparaat slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **Opmerking:** De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
+* **Teaserpagina&#39;s** worden opgeslagen onder de juiste campagnepagina en houden de definities van de teasalinea&#39;s beschikbaar voor elke specifieke campagne. Deze definities worden gebruikt bij de weergave van de teasalinea&#39;s; inclusief variaties in de inhoud, het segment dat moet worden gebruikt voor het selecteren van een variatie- en versterkingsfactor.
+* De **Teaglascomponent** is beschikbaar buiten het vak en kunt u een exemplaar van de specifieke tasalinea op een inhoudspagina maken. U kunt de lasercomponent van het hulpapparaat slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **Opmerking:** De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de opdracht [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
 * **Twiteralinea&#39;s** Dit zijn de werkelijke instanties van het gummetje in een inhoudspagina. Deze maken een deel van de bezoekers bekend met inhoud die op hun belangen is toegespitst.
 * Pagina&#39;s die de inhoud van de campagne bevatten, hebben de focus op een specifiek bezoekerssegment. Doorgaans leiden de laseralinea&#39;s de bezoeker naar dergelijke pagina&#39;s.
 
@@ -39,16 +39,16 @@ Wanneer u een laseralinea aan een pagina toevoegt, moet u de **Strategie**.
 Dit is voor het geval dat verscheidene tellers voor selectie beschikbaar zijn aangezien hun toegewezen segmenten allen met succes oplossen. De **Strategie** geeft vervolgens een extra criterium op dat wordt gebruikt voor het selecteren van de getoonde taser:
 
 * **Clikstream score**, is gebaseerd op de tags en verwante tagtreffers die in de clientcontext van de bezoeker worden gehouden (laat zien hoe vaak een bezoeker heeft geklikt op pagina&#39;s die de desbetreffende tag bevatten). De snelheden voor tags die op de teaspagina zijn gedefinieerd, worden vergeleken.
-* **Willekeurig**, voor &quot;willekeurige&quot; selectie; gebruikt de willekeurige factor die voor een pagina is gegenereerd. Dit is te zien bij de [clientcontext](/help/sites-administering/client-context.md).
+* **Willekeurig**, voor &quot;willekeurige&quot; selectie; gebruikt de willekeurige factor die voor een pagina is gegenereerd, dit kan worden gezien met de [clientcontext](/help/sites-administering/client-context.md).
 * **Eerste** in de lijst van opgeloste segmenten. De volgorde is die van de trapsgewijze elementen op de pagina met de campagneccontainer.
 
-De [Verhoging factor](/help/sites-administering/campaign-segmentation.md#boost-factor) van het segment heeft ook gevolgen voor de selectie. Dit is een wegingsfactor die aan een segmentdefinitie wordt toegevoegd om de relatieve waarschijnlijkheid van selectie te vergroten/verkleinen.
+De [Verhoging van factor](/help/sites-administering/campaign-segmentation.md#boost-factor) van het segment heeft ook gevolgen voor de selectie. Dit is een wegingsfactor die aan een segmentdefinitie wordt toegevoegd om de relatieve waarschijnlijkheid van selectie te vergroten/verkleinen.
 
 Het proces en de onderlinge relaties van de verschillende selectiecriteria kunnen het best worden geïllustreerd met een voorbeeld (een methode die ook kan worden gebruikt om ervoor te zorgen dat uw theers het vereiste publiek zullen bereiken).
 
 Als de volgende segmenten reeds zijn gecreeerd en hun respectieve Factor van de Verhoging toegewezen:
 
-| Segment | Verhoging factor |
+| Segment | Verhoging van factor |
 |---|---|
 | S1 | 0 |
 | S2 | 0 |
@@ -201,7 +201,7 @@ Deze waarden worden gebruikt om te bepalen in welke perioden de bezoeker het sch
   <tr>
    <td>Eerste</td>
    <td>T5</td>
-   <td>Alleen T5 en T6 worden beschouwd als hun segmenten worden alle opgelost <i>en</i> zij hebben de hoogste stimulerende factor . De geretourneerde lijst staat in de volgorde T5, T6. zodat T5 wordt geselecteerd en getoond.</td>
+   <td>Alleen T5 en T6 worden beschouwd als hun segmenten worden alle opgelost <i>en</i> zij hebben de hoogste stimulerende factor . De geretourneerde lijst staat in de volgorde T5 en T6, zodat T5 wordt geselecteerd en weergegeven.</td>
   </tr>
   <tr>
    <td>Willekeurig</td>
@@ -232,7 +232,7 @@ Nadat u uw merk en campagne hebt gemaakt, kunt u uw taservaring maken en instell
 
 >[!NOTE]
 >
->De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
+>De component Teaser is nu afgekeurd in AEM 6.2. Gebruik in plaats daarvan de opdracht [Doelcomponent](/help/sites-authoring/content-targeting-touch.md).
 
 1. Navigeer naar de inhoudspagina waar u de tasalinea wilt plaatsen die tot uw campagnepagina zal leiden.
 1. Voeg een **Teaser** component (beschikbaar in de **Personalisatie** in de gewenste positie. Wanneer eerst gecreeerd, zal het tonen dat de campagneweg nog niet wordt gevormd:
@@ -242,14 +242,14 @@ Nadat u uw merk en campagne hebt gemaakt, kunt u uw taservaring maken en instell
 1. Bewerk de lasercomponent om het volgende toe te voegen:
 
    * **Campagnepad**
-Pad naar de campagnepagina die de afzonderlijke teaspagina bevat; De segmenten bepalen precies welke teaser wordt getoond.
+Het pad naar de campagnepagina die de afzonderlijke teaspagina bevat. De segmenten bepalen exact welk teaser wordt weergegeven.
 
    * **[Strategie](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#strategies)**
 Methode die wordt gebruikt voor selectie wanneer de veelvoudige segmenten met succes oplossen.
 
    ![chlimage_1-1](assets/chlimage_1-1.png)
 
-1. Klikken **OK** om op te slaan. Afhankelijk van de segmenten die u hebt ingesteld op het taser en het profiel van de gebruiker die u momenteel als gebruiker bent aangemeld, wordt de juiste inhoud weergegeven:
+1. Klikken **OK** opslaan. Afhankelijk van de segmenten die u hebt ingesteld op het taser en het profiel van de gebruiker die u momenteel als gebruiker bent aangemeld, wordt de juiste inhoud weergegeven:
 
    ![chlimage_1-2](assets/chlimage_1-2.png)
 
@@ -261,7 +261,7 @@ Methode die wordt gebruikt voor selectie wanneer de veelvoudige segmenten met su
 
 Naast de campagneweergave in de MCM bevat de campagnepagina ook informatie over de bijbehorende traders:
 
-1. Van de **Websites** console, de campagnepagina openen; bijvoorbeeld:
+1. Van de **Websites** console, open de campagnepagina; bijvoorbeeld:
 
    `https://localhost:4502/content/campaigns/geometrixx-outdoors/storefront/summer.html`
 

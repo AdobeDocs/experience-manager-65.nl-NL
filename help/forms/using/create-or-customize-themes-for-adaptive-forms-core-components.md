@@ -8,9 +8,9 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: d958f616803f92190493cc3f1ef474d0987991bd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1969'
+source-wordcount: '1967'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ U kunt [al deze thema&#39;s aanpassen om een thema te maken](#customize-a-theme-
 
 ## Een thema aanpassen {#customize-a-theme-core-components-based-adaptive-forms}
 
-Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpassen van de weergave van een thema. Wanneer u een thema aanpast, brengt u wijzigingen aan in de ontwerpelementen, lay-out, kleuren, typografie en soms in de onderliggende code. Op deze manier kunt u een unieke en op maat gemaakte look voor uw website of toepassing maken met behoud van de basisstructuur en -functionaliteit die door het thema worden geboden.
+Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpassen van de weergave van een thema. Wanneer u een thema aanpast, brengt u wijzigingen aan in de ontwerpelementen, lay-out, kleuren, typografie en soms in de onderliggende code. Zo kunt u een unieke en op maat gemaakte vormgeving voor uw website of toepassing maken met behoud van de basisstructuur en -functionaliteit die door het thema worden geboden.
 
 >[!NOTE]
 >
@@ -155,7 +155,7 @@ De `variable.scss` bevat de algemene variabelen van het thema. Door deze variabe
 1. Sla het bestand op en sluit het.
 
 
-U kunt ook de opdracht `variable.scss` bestand voor het instellen van lettertypefamilie en -type, thema- en lettertypekleuren, lettergrootte, themaspatiëring, foutpictogram, themarand en meer variabele die van invloed zijn op meerdere componenten van Adaptief formulier.
+U kunt ook de opdracht `variable.scss` bestand voor het instellen van lettertypefamilie en -type, thema- en lettertypekleuren, lettergrootte, themaspatiëring, foutpictogram, themarand en meer variabele die van invloed zijn op meerdere componenten van het adaptieve formulier.
 
 ##### Stijlen op componentniveau instellen {#component-based-customization}
 

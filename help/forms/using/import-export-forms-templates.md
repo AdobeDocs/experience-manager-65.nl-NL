@@ -1,7 +1,7 @@
 ---
 title: Elementen importeren en exporteren naar AEM Forms
 seo-title: Importing and exporting assets to AEM Forms
-description: U kunt adaptieve formulieren en sjablonen importeren en exporteren van en naar AEM instanties. Zo kunt u formulieren migreren of verplaatsen naar andere systemen.
+description: U kunt adaptieve formulieren en sjablonen importeren en exporteren vanuit en in naar AEM instanties. Zo kunt u formulieren migreren of verplaatsen naar andere systemen.
 seo-description: You can import and export adaptive forms and templates from and in to AEM instances. This helps in migrating forms or moving them across systems.
 uuid: 937daedd-56f3-4e02-b695-b194b494d9bf
 content-type: reference
@@ -11,9 +11,9 @@ discoiquuid: 69210727-dde3-495a-87b7-2e8173e6b664
 docset: aem65
 role: Admin
 exl-id: b5f6a54e-92d1-4631-a1d1-184f37d174b6
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2495'
 ht-degree: 0%
 
 ---
@@ -27,29 +27,28 @@ U kunt formulieren en gerelateerde elementen, thema&#39;s, gegevenswoordenboeken
 >* In AEM 6.4 Forms zijn de structuur en paden van de crx-repository veranderd. Als u elementen uit een vorige versie importeert naar AEM 6.4 Forms en het formulier afhankelijk is van de oudere structuur, moet u de afhankelijkheden handmatig exporteren. Zie voor meer informatie over wijzigingen in de structuur en paden van de gegevensopslagruimte [Herstructurering van AEM](/help/sites-deploying/repository-restructuring.md).
 >
 
-
 ## Forms- en documentmiddelen downloaden of uploaden {#download-or-upload-forms-amp-documents-assets}
 
-Met de AEM Forms-gebruikersinterface kunt u elementen exporteren van een AEM instantie door deze te downloaden als een AEM CRX-pakket of binaire bestanden. U kunt het gedownloade AEM CRX-pakket of het binaire bestand vervolgens importeren in een andere AEM.
+Met de AEM Forms-gebruikersinterface kunt u elementen van een AEM-instantie exporteren door deze te downloaden als een AEM CRX-pakket of binaire bestanden. U kunt het gedownloade AEM CRX-pakket of het binaire bestand vervolgens importeren in een andere AEM.
 
 Exporteren en importeren via de gebruikersinterface van AEM Forms wordt ondersteund voor alle elementen, behalve voor adaptieve formuliersjablonen en beleid voor adaptieve formulierinhoud. Bij het exporteren van een adaptief formulier uit de gebruikersinterface van AEM Forms worden de gerelateerde aangepaste formuliersjabloon en het inhoudsbeleid daarom niet automatisch geëxporteerd als andere gerelateerde elementen.
 
-Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Voor informatie over het maken en installeren van pakketten raadpleegt u [Werken met pakketten](/help/sites-administering/package-manager.md).
+Voor deze elementtypen moet u AEM Package Manager gebruiken om een CRX-pakket te maken op de bron- AEM server en het pakket op de doelserver te installeren. Zie voor informatie over het maken en installeren van pakketten [Werken met pakketten](/help/sites-administering/package-manager.md).
 
 ### Forms- en Documenten downloaden {#download-forms-amp-documents-assets}
 
 Forms en Documenten downloaden:
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Experience Manager tikken ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms > Forms &amp; Documents.
+1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms > Forms &amp; Documents.
 1. Selecteer de formulierelementen en tik op de **Downloaden** pictogram.
 1. Kies in het (de) downloadmiddel(en) een van de volgende opties en tik **Downloaden**.
 
    * **Downloaden als CRX-pakket:** Gebruik de optie om alle geselecteerde elementen en gerelateerde afhankelijkheden te downloaden van een AEM Forms-instantie en naar een andere instantie te verplaatsen. Alle elementen en mappen worden als crx-pakket gedownload. Alle formulierelementen, inclusief de formulieren die zijn geschreven in AEM (adaptieve formulieren, interactieve communicatie en adaptieve formulierfragmenten), formuliersets, formuliersjablonen, PDF-documenten en bronnen (XSD&#39;s, XFS, afbeeldingen) kunnen als pakket worden gedownload via de gebruikersinterface van AEM Forms.
 Het voordeel van het downloaden van elementen als pakket is dat ook elementen worden gedownload die door het geselecteerde element zijn gebruikt om te downloaden. Als u bijvoorbeeld een adaptief formulier hebt waarin een formuliersjabloon, XSD en een afbeelding worden gebruikt. Wanneer u dit adaptieve formulier selecteert en het als pakket downloadt, bevat het gedownloade pakket ook de formuliersjabloon, XSD en de afbeelding. Alle metagegevenseigenschappen (inclusief aangepaste eigenschappen) die aan het element zijn gekoppeld, worden ook gedownload.
 
-   * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), document (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF en XDP&#39;s, worden gedownload als ZIP-bestand.
-U kunt geen adaptieve formulieren, interactieve communicatie, adaptieve formulierfragmenten, thema&#39;s en formuliersets downloaden met **Elementen downloaden als binaire bestanden** optie. Gebruik **Downloaden als CRX-pakket** optie.
+   * **Elementen downloaden als binaire bestanden:** Gebruik de optie om alleen formuliersjablonen (XDP), PDF forms (PDF), documenten (PDF) en bronnen (afbeeldingen, schema&#39;s, opmaakmodellen) te downloaden. U kunt deze elementen bewerken met externe toepassingen. De formulierbestanden met binaire bestanden, zoals XSD&#39;s, XDP&#39;s, afbeeldingen, PDF en XDP&#39;s, worden gedownload als ZIP-bestand.
+U kunt geen adaptieve formulieren, interactieve communicatie, adaptieve formulierfragmenten, thema&#39;s en formuliersets downloaden met **Elementen downloaden als binaire bestanden** -optie. Als u deze middelen wilt downloaden, kunt u het beste **Downloaden als CRX-pakket** -optie.
 
    De geselecteerde elementen worden gedownload als een archief (.zip-bestand).
 
@@ -64,11 +63,11 @@ Forms en Documenten uploaden:
 >[!VIDEO](https://vimeo.com/)
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Experience Manager tikken ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Forms &amp; Documents.
+1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Forms &amp; Documents.
 1. Tikken **Maken** >**Bestand uploaden**. Er wordt een dialoogvenster voor het uploaden of verpakken weergegeven.
-1. Blader in het dialoogvenster naar het te importeren pakket of archief en selecteer dit. U kunt ook PDF-documenten, XSD&#39;s, afbeeldingen, stijlpagina&#39;s en XDP-formulieren selecteren. Tikken **Openen**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
+1. Blader in het dialoogvenster naar het pakket of het archief dat u wilt importeren en selecteer dit. U kunt ook PDF-documenten, XSD&#39;s, afbeeldingen, stijlpagina&#39;s en XDP-formulieren selecteren. Tikken **Openen**. De map of de bestandsnaam die u selecteert, mag geen speciale tekens bevatten.
 
-   Controleer in het dialoogvenster de details van de elementen die worden geüpload en tik op **Uploaden**.
+   Controleer in het dialoogvenster de details van de te uploaden middelen en tik op **Uploaden**.
 
    Als u een bestaand formulierelement uploadt, wordt het element bijgewerkt.
 
@@ -87,7 +86,7 @@ U kunt thema&#39;s in AEM Forms exporteren die u kunt gebruiken in andere projec
 Een thema downloaden:
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Experience Manager tikken ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Thema&#39;s.
+1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Thema&#39;s.
 1. Selecteer het thema en tik op **Downloaden**. Het thema wordt gedownload als een archief (.zip-bestand).
 
 ### Een thema uploaden {#uploading-a-theme}
@@ -102,7 +101,7 @@ Een thema uploaden:
 Het geüploade thema is beschikbaar op de themapagina.
 
 1. Meld u aan bij de AEM Forms-instantie.
-1. Experience Manager tikken ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Thema&#39;s.
+1. Tikken, Experience Manager ![adobeexperienceManager](assets/adobeexperiencemanager.png) pictogram > navigatie ![kompas](assets/compass.png) pictogram> Forms> Thema&#39;s.
 1. klikken **Maken** > **Bestand uploaden**. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **Uploaden**. Het thema wordt geüpload.
 
 ## Importeren en exporteren van activa in Correspondentenbeheer {#import-and-export-assets-in-correspondence-management}
@@ -145,7 +144,7 @@ Voer de volgende stappen uit om alle Correspondence Management-elementen en gere
 
 1. Tikken **Exporteren** en tik in het bevestigingsbericht op **OK**.
 
-   Nadat een batchproces is voltooid, worden de laatste uitvoergegevens en de koppeling om het pakket te downloaden bijgewerkt. Dit omvat informatie zoals de login van de Beheerder en als de partij met succes of ontbrak. De elementen worden geëxporteerd naar een pakket en de koppeling Geëxporteerd pakket downloaden wordt weergegeven.
+   Nadat een batchproces is voltooid, worden de laatste uitvoergegevens en de koppeling om het pakket te downloaden bijgewerkt. Dit omvat informatie zoals de login van de Beheerder en als de partij met succes of ontbrak. De elementen worden geëxporteerd naar een pakket en de koppeling Exported Package downloaden wordt weergegeven.
 
    >[!NOTE]
    >
@@ -161,14 +160,14 @@ U kunt elementen importeren die naar een .cmp-bestand worden geëxporteerd. Een 
 
 >[!NOTE]
 >
->Meld u aan met een beheerdersaccount bij het importeren van oude Correspondentiebeheermiddelen voor migratie. Voor meer informatie over het migreren van oude Correspondentenbeheermiddelen, zie [Correspondentenbeheermiddelen migreren naar AEM 6.1-formulieren](/help/forms/using/migration-utility.md).
+>Meld u aan met een beheerdersaccount wanneer u oude Correspondence Management-middelen importeert voor migratie. Voor meer informatie over het migreren van oude Correspondentenbeheermiddelen, zie [Correspondentenbeheermiddelen migreren naar AEM 6.1-formulieren](/help/forms/using/migration-utility.md).
 
 1. Tik op de pagina Gegevenswoordenboek, letters of documentfragmenten op **Maken > Bestand uploaden** en selecteer het .cmp- dossier.
 1. In het dialoogvenster Elementen importeren wordt het dialoogvenster Correspondentiebeheer weergegeven met de lijst met geïmporteerde elementen. Tikken **Importeren**.
 
    Na het importeren van de elementen worden de volgende eigenschappen van de elementen bijgewerkt, terwijl de andere eigenschappen ongewijzigd blijven:
 
-   * Auteur: Hiermee geeft u de id weer van de gebruiker die het element naar de server heeft geïmporteerd
+   * Auteur: geeft de id weer van de gebruiker die het element naar de server heeft geïmporteerd
    * Gewijzigd: De tijd waarop het element naar de server is geïmporteerd
 
    >[!NOTE]
@@ -184,7 +183,7 @@ U kunt AEM pakketbeheer gebruiken om workflowtoepassingen te exporteren. De proc
 1. Geef een naam, versie en groep voor het pakket op. Klik op **[!UICONTROL OK]**.
 1. Klikken **[!UICONTROL Edit]** en opent u de **[!UICONTROL Filters]** tab. Klik op **[!UICONTROL Add Filter]**. Geef het pad van de workflowtoepassing op. Bijvoorbeeld /etc/fd/dashboard/startpoints/homemortgauge. Klik op **[!UICONTROL Add rule]**.
 
-1. Open de **[!UICONTROL Advanced]** tab. Selecteren **[!UICONTROL Merge]** of **[!UICONTROL Overwrite]** in ACL het Behandelen gebied. Klik op **[!UICONTROL Save]**.
+1. Open de **[!UICONTROL Advanced]** tab. Selecteren **[!UICONTROL Merge]** of **[!UICONTROL Overwrite]** in ACL Behandelend gebied. Klik op **[!UICONTROL Save]**.
 1. Klikken **[!UICONTROL Build]** om het pakket te maken.
 
    Nadat het pakket is gemaakt, kunt u het pakket downloaden en naar de andere server importeren. De workflowtoepassing wordt weergegeven op de server waarop het pakket is geüpload.
@@ -228,7 +227,7 @@ Met bestaande elementen en letters kunt u snel elementen en letters maken met ve
 Voer de volgende stappen uit om kopieën van elementen en letters te maken:
 
 1. Selecteer een of meer elementen/letters op de relevante pagina Elementen of Letters. In de gebruikersinterface wordt het pictogram Kopiëren weergegeven.
-1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te navigeren voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Voor meer informatie over mappen raadpleegt u [Mappen en elementen ordenen](#folders-and-organizing-assets).
+1. Tik op Kopiëren. In de gebruikersinterface wordt het pictogram Plakken weergegeven. U kunt er ook voor kiezen om in een map te navigeren voordat u gaat plakken. Verschillende mappen kunnen elementen met dezelfde naam bevatten. Zie voor meer informatie over mappen [Mappen en elementen ordenen](#folders-and-organizing-assets).
 1. Tik op Plakken. Het dialoogvenster Plakken wordt geopend. Het systeem genereert automatisch namen en titels voor de nieuwe kopieën van elementen/letters, maar u kunt de titels en namen van de elementen/letters bewerken.
 
    Als u de elementen/letters op dezelfde plaats kopieert en plakt, wordt het achtervoegsel &quot;-CopyXX&quot; toegevoegd aan de bestaande naam van het element/de letter. Als er geen titel voor het gekopieerde element/de gekopieerde letter bestond, blijft het automatisch gegenereerde titelveld leeg.
@@ -254,8 +253,8 @@ In het zijpaneel kunt u de volgende opties gebruiken om de zoekresultaten te bep
 
 * Zoekdirectory
 * Tags
-* Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publish Status, LiveCopy Status.
+* Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publicatiestatus en LiveCopy-status.
 
-In het zijpaneel kunt u ook uw zoekinstellingen opslaan met de namen van uw keuze.
+In het zijpaneel kunt u ook uw zoekinstellingen opslaan met namen van uw keuze.
 
 Ga voor meer informatie en instructies over het gebruik van zoekopdrachten, filters, opgeslagen zoekopdrachten en het zijpaneel naar [Zoeken](/help/sites-authoring/search.md).

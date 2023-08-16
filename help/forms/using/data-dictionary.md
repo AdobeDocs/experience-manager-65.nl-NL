@@ -10,9 +10,9 @@ discoiquuid: a1a0ad6b-023a-4822-9cce-0618657c3f9d
 docset: aem65
 feature: Correspondence Management
 exl-id: aaed75e6-8849-46a8-b986-896ad729adda
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '3838'
+source-wordcount: '3840'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Een gegevenswoordenboek laat bedrijfsgebruikers toe om informatie van achterste-
 
 Een gegevenswoordenboek is een onafhankelijke weergave van metagegevens waarin de onderliggende gegevensstructuren en de bijbehorende kenmerken worden beschreven. Een gegevenswoordenboek wordt gecreeerd gebruikend bedrijfswoordenlijst. Deze kan aan een of meer onderliggende gegevensmodellen worden toegewezen.
 
-Het gegevenswoordenboek bestaat uit elementen van drie typen: Eenvoudige, samengestelde en verzamelingselementen. Eenvoudige DDE&#39;s zijn primitieve elementen, zoals tekenreeksen, getallen, datums en Booleaanse waarden die informatie bevatten zoals een plaatsnaam. Een samengestelde DDE bevat andere DDE&#39;s, die van het type primitief, samengesteld of verzameling kunnen zijn. Een adres bestaat bijvoorbeeld uit een adres, plaats, provincie, land en postcode. Een verzameling is een lijst met vergelijkbare eenvoudige of samengestelde DDE&#39;s. Een klant met bijvoorbeeld meerdere locaties of een ander factuuradres en verzendadres.
+Het gegevenswoordenboek bestaat uit elementen van drie typen: Eenvoudig, Samengesteld en Verzameling. Eenvoudige DDE&#39;s zijn primitieve elementen, zoals tekenreeksen, getallen, datums en Booleaanse waarden die informatie bevatten zoals een plaatsnaam. Een samengestelde DDE bevat andere DDE&#39;s, die van het type primitief, samengesteld of verzameling kunnen zijn. Een adres bestaat bijvoorbeeld uit een adres, plaats, provincie, land en postcode. Een verzameling is een lijst met vergelijkbare eenvoudige of samengestelde DDE&#39;s. Een klant met bijvoorbeeld meerdere locaties of een ander factuuradres en verzendadres.
 
 Het Beheer van de correspondentie gebruikt het achtereind, de klant, of de ontvanger-specifieke gegevens die volgens de structuur van het gegevenswoordenboek worden opgeslagen om correspondentie tot stand te brengen die voor verschillende klanten wordt bedoeld. U kunt bijvoorbeeld een document maken met een vriendelijke naam, zoals &quot;Beste {voornaam}&quot; of &quot;Mr. {Achternaam}&quot;.
 
@@ -54,7 +54,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 1. Tikken **Gegevenswoordenboek maken**.
 1. Voeg het volgende toe in het scherm Eigenschappen:
 
-   * **Titel:** (Optioneel) Voer de titel in voor het gegevenswoordenboek. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Letters en andere documentfragmenten worden met hun titel bedoeld (indien beschikbaar), zoals in miniaturen en elementeigenschappen. Er wordt naar gegevenswoordenboeken verwezen met hun naam en niet met titels.
+   * **Titel:** (Optioneel) Voer de titel in voor het gegevenswoordenboek. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten. Letters en andere documentfragmenten worden met hun titel bedoeld (indien beschikbaar), zoals in miniaturen en elementeigenschappen. Er wordt naar gegevenswoordenboeken verwezen met hun naam en niet met titels.
    * **Naam:** De unieke naam voor het gegevenswoordenboek. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel en de speciale tekens, spaties, cijfers en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
 
    * **Beschrijving**: (Optioneel) Beschrijving van het gegevenswoordenboek.
@@ -98,7 +98,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 
    ![2_addddpropertiesbasic](assets/2_addddpropertiesbasic.png)
 
-1. (Optioneel) Nadat u een element hebt geselecteerd, kunt u op het tabblad Geavanceerd eigenschappen (kenmerken) toevoegen. U kunt ook tikken **Veld toevoegen** en breidt de eigenschappen van een DD-element uit.
+1. (Optioneel) Nadat u een element hebt geselecteerd, kunt u op het tabblad Geavanceerd eigenschappen (kenmerken) toevoegen. U kunt ook tikken **Veld toevoegen** en de eigenschappen van een DD-element uitbreiden.
 
    ![3_addPropertyAdvanced](assets/3_addddpropertiesadvanced.png)
 
@@ -141,7 +141,7 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
 
 1. Tik op Inhoud lent.
 
-   Het tabblad Inhoud van Inhoud wordt als volgt weergegeven: Teksten, voorwaarden, letters en interactieve communicatie. In elk van deze koppen wordt ook het aantal verwijzingen naar het geselecteerde element weergegeven.
+   Het tabblad Inhoud van de regel wordt weergegeven met de volgende tekst: Teksten, Voorwaarden, Letters en Interactieve communicatie. In elk van deze koppen wordt ook het aantal verwijzingen naar het geselecteerde element weergegeven.
 
 1. Tik op een kop om de naam weer te geven van de elementen die naar het element verwijzen.
 
@@ -334,7 +334,7 @@ In de volgende tabel worden de algemene kenmerken beschreven die aan een DDE zij
   <tr>
    <td>Binding</td>
    <td>BindingElement</td>
-   <td>De XML- of Java-binding van het element.</td>
+   <td>The XML or Java binding of the element.</td>
   </tr>
  </tbody>
 </table>
@@ -343,7 +343,7 @@ In de volgende tabel worden de algemene kenmerken beschreven die aan een DDE zij
 
 Een gegevenswoordenboek kan ook berekende elementen bevatten. Een gegevenswoordenboekelement wordt altijd gekoppeld aan een expressie. Deze expressie wordt geëvalueerd om de waarde van een gegevenswoordenboekelement bij uitvoering op te halen. Een berekende DDE-waarde is een functie van andere DDE-waarden of -literalen. Standaard JSP Expression Language (EL)-expressies worden ondersteund. De EL-expressies gebruiken de ${ }-tekens en geldige expressies kunnen letterlijke tekens, operatoren, variabelen (gegevenswoordenboekelementverwijzingen) en functieaanroepen bevatten. Bij het verwijzen naar een gegevenswoordenboekelement in de expressie wordt de referentienaam van de DDE gebruikt. De referentienaam is uniek voor elk gegevenswoordenboekelement binnen een gegevenswoordenboek.
 
-Een berekende DDE PersonFullName kan met een EL aaneenschakelingsuitdrukking zoals $ worden geassocieerd {PersonFirstName} ${PersonLastName}.
+Een berekende DDE PersonFullName kan met een EL aaneenschakeling uitdrukking zoals $ worden geassocieerd{PersonFirstName} ${PersonLastName}.
 
 ## Gegevenstype toewijzen tussen XSD en gegevenswoordenboek {#data-type-mapping-between-xsd-and-data-dictionary-br}
 
@@ -419,7 +419,7 @@ Nadat u een gegevenswoordenboek hebt gemaakt, kunt u dit downloaden als een XML-
 
    Correspondence Management maakt een XML-bestand op basis van de structuur van het geselecteerde gegevenswoordenboek en downloadt het bestand met de naam naar de computer &lt;data-dictionary-name>-SampleData. Nu kunt u dit bestand in een XML- of teksteditor bewerken om gegevensinvoer te maken terwijl [een letter maken](../../forms/using/create-letter.md).
 
-## Internationalisatie van meta-gegevens {#internationalization-of-meta-data}
+## Internationalisatie van metagegevens {#internationalization-of-meta-data}
 
 Wanneer u dezelfde letter in verschillende talen naar uw klanten wilt verzenden, kunt u de sets met weergavenamen, beschrijvingen en opsommingswaarden van het gegevenswoordenboek en gegevenswoordenboekelementen lokaliseren.
 
@@ -509,7 +509,7 @@ De volgende detailmodellen en codesteekproeven die implementatiedetails voor het
 
 ## Eenvoudige (primitieve) elementen toewijzen {#mapping-simple-primitive-elements}
 
-Een primitieve DDE vertegenwoordigt een veld of kenmerk dat atomisch van aard is. Primitieve DDEs die buiten het werkingsgebied van een complex type (samengestelde DDE) of een herhalend element (inzameling DDE) wordt bepaald kan in om het even welke plaats binnen het Schema van XML worden opgeslagen. De locatie van de gegevens die overeenkomen met een primitieve DDE is niet afhankelijk van de toewijzing van de bovenliggende DDE. Primitieve DDE gebruikt de toewijzingsinformatie van het Bindende gebied van XML om zijn waarde te bepalen en de afbeeldingen vertalen in één van het volgende:
+Een primitieve DDE vertegenwoordigt een veld of kenmerk dat atomisch van aard is. Primitieve DDEs die buiten het werkingsgebied van een complex type (samengestelde DDE) of een herhalend element (inzameling DDE) wordt bepaald kan in om het even welke plaats binnen het Schema van XML worden opgeslagen. De locatie van de gegevens die overeenkomen met een primitieve DDE is niet afhankelijk van de toewijzing van de bovenliggende DDE. Primitieve DDE gebruikt de afbeeldingsinformatie van het Bindende gebied van XML om zijn waarde te bepalen en de afbeeldingen vertalen in één van het volgende:
 
 * een attribuut
 * een element
@@ -528,7 +528,7 @@ In het volgende voorbeeld wordt een eenvoudig schema getoond.
 
 | **Element gegevenswoordenboek** | **Standaardbinding XML** |
 |---|---|
-| leeftijd | /age |
+| ouderdom | /age |
 | prijs | /prijs |
 
 ### Samengestelde elementen toewijzen {#mapping-composite-elements}
@@ -570,7 +570,7 @@ In het volgende voorbeeld ziet u het schema voor een notitie.
   </tr>
   <tr>
    <td>kop</td>
-   <td>/notitie/kop</td>
+   <td>/notitie/koptekst</td>
   </tr>
   <tr>
    <td>lichaam</td>

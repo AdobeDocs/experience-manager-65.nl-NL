@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2758'
+source-wordcount: '2755'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Wanneer u Adobe Campaign-inhoud maakt in AEM, moet u een koppeling maken naar ee
 
 Er zijn twee mogelijke gevallen:
 
-* Inhoud kan worden gesynchroniseerd met een levering vanuit Adobe Campaign. Zo kunt u AEM inhoud in een levering gebruiken.
+* Inhoud kan worden gesynchroniseerd met een levering vanuit Adobe Campaign. Hiermee kunt u AEM inhoud in een levering gebruiken.
 * (Alleen Adobe Campaign Classic) De inhoud kan rechtstreeks naar Adobe Campaign worden verzonden, waardoor automatisch een nieuwe e-maillevering wordt gegenereerd. Deze modus heeft beperkingen.
 
 In dit document worden gedetailleerde instructies beschreven.
@@ -66,8 +66,8 @@ In dit document worden gedetailleerde instructies beschreven.
 1. Selecteren **Maken** dan **Pagina maken**.
 1. Selecteer een van de beschikbare sjablonen waarmee je verbinding maakt met Adobe Campaign en klik vervolgens op **Volgende**. Er zijn standaard drie sjablonen beschikbaar:
 
-   * **Adobe Campaign Classic-e-mail**: Hiermee kunt u inhoud toevoegen aan een vooraf gedefinieerde sjabloon (twee kolommen) voordat u deze naar Adobe Campaign Classic verzendt voor levering.
-   * **Adobe Campaign Standard-e-mail**: Hiermee kunt u inhoud toevoegen aan een vooraf gedefinieerde sjabloon (twee kolommen) voordat u deze naar Adobe Campaign Standard verzendt voor levering.
+   * **Adobe Campaign Classic-e-mail**: hiermee kunt u inhoud toevoegen aan een vooraf gedefinieerde sjabloon (twee kolommen) voordat u deze naar Adobe Campaign Classic verzendt voor levering.
+   * **Adobe Campaign Standard-e-mail**: hiermee kunt u inhoud toevoegen aan een vooraf gedefinieerde sjabloon (twee kolommen) voordat u deze naar Adobe Campaign Standard verzendt voor levering.
 
 1. Vul de **Titel** en eventueel de **Beschrijving** en klik op **Maken**. De titel wordt gebruikt als het onderwerp van de nieuwsbrief/e-mail, tenzij u deze overschrijft tijdens het bewerken van de e-mail.
 
@@ -87,7 +87,7 @@ Van de **Sites** pagina:
 
    ![chlimage_1-16](assets/chlimage_1-16a.png)
 
-1. Selecteren **Bewerken** en vervolgens de **Cloudservices** en schuif omlaag naar de onderkant en klik op + om een configuratie toe te voegen en selecteer vervolgens **Adobe Campaign**.
+1. Selecteren **Bewerken** en vervolgens de **Cloud-services** en schuif omlaag naar beneden en klik op + om een configuratie toe te voegen en selecteer vervolgens **Adobe Campaign**.
 
    ![chlimage_1-17](assets/chlimage_1-17a.png)
 
@@ -106,7 +106,7 @@ Vanuit de nieuwsbrief/e-mail in de ontwerpfase kunt u de Adobe Campaign-cloudser
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Selecteren **Cloudservices** en klik op **+** om een configuratie toe te voegen. Selecteer om het even welke zichtbare configuratie (maakt niet uit welke). Klik of tik op **+** ondertekenen om een andere configuratie toe te voegen en dan selecteren **Adobe Campaign**.
+1. Selecteren **Cloud-services** en klik op **+** een configuratie toevoegen. Selecteer om het even welke zichtbare configuratie (maakt niet uit welke). Klik of tik op **+** ondertekenen om een andere configuratie toe te voegen en dan selecteren **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -123,7 +123,7 @@ E-mailinhoud bewerken:
 
    ![chlimage_1-20](assets/chlimage_1-20a.png)
 
-1. Selecteer **E-mail** en voeg een onderwerp en tekst toe. Selecteer het paginapictogram om automatisch een versie van normale tekst te genereren op basis van HTML. Klik op het vinkje als u klaar bent.
+1. Als u het onderwerp van het e-mailbericht wilt wijzigen of onbewerkte tekst wilt toevoegen voor gebruikers die het e-mailbericht niet in HTML zullen weergeven, selecteert u **E-mail** en voeg een onderwerp en tekst toe. Selecteer het paginapictogram om automatisch een versie van normale tekst te genereren op basis van HTML. Klik op het vinkje als u klaar bent.
 
    U kunt de nieuwsbrief personaliseren door de gebieden van de verpersoonlijking van Adobe Campaign te gebruiken. Als u een verpersoonlijkingsveld wilt toevoegen, opent u de kiezer van het verpersoonlijkingsveld door te klikken op de knop met het Adobe Campaign-logo. Vervolgens kunt u kiezen uit alle velden die beschikbaar zijn voor deze nieuwsbrief.
 
@@ -149,7 +149,7 @@ E-mailinhoud bewerken:
 
 Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 
-* Adobe Campaign-contextvelden. Dit zijn velden die u in de tekst kunt invoegen en die worden aangepast aan de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam of gegevens van de doeldimensie).
+* Adobe Campaign-context. Dit zijn velden die u in de tekst kunt invoegen en die worden aangepast aan de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam of gegevens van de doeldimensie).
 * Adobe Campaign-verpersoonlijkingsblokken. Dit zijn blokken vooraf gedefinieerde inhoud die niet gerelateerd zijn aan de gegevens van de ontvanger, zoals een merklogo of een koppeling naar een spiegel.
 
 Zie [Adobe Campaign-componenten](/help/sites-authoring/adobe-campaign-components.md) voor een volledige beschrijving van de onderdelen van de campagne.
@@ -158,7 +158,6 @@ Zie [Adobe Campaign-componenten](/help/sites-authoring/adobe-campaign-components
 >
 >* Alleen de velden van de Adobe Campaign **Profielen** er wordt rekening gehouden met de doelgerichte dimensie .
 >* Wanneer u eigenschappen weergeeft vanuit **Sites** hebt u geen toegang tot de Adobe Campaign-contextvelden. U kunt deze rechtstreeks vanuit de e-mail openen tijdens het bewerken.
-
 
 Personalisatie invoegen:
 
@@ -176,15 +175,13 @@ Personalisatie invoegen:
    >
    >* Beschikbare contextvelden komen overeen met de **Profielen** doelgericht in Adobe Campaign.
    >* Zie [Een AEM pagina koppelen aan een Adobe Campaign-e-mail](#linking-an-aem-page-to-an-adobe-campaign-email-adobe-campaign-standard).
-
    >
    >**Voor Adobe Campaign Classic:**
    >
    >* Beschikbare contextvelden worden dynamisch hersteld van de Adobe Campaign **nms:zaadMember** schema. De gegevens van de doelextensie worden dynamisch hersteld vanuit de workflow die de levering bevat die met de inhoud is gesynchroniseerd. (Zie de [In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign](#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic) ).
    >
-   >* Als u personalisatie-elementen wilt toevoegen of verbergen, raadpleegt u [Verpersoonlijkingsvelden en -blokken beheren](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
-   >* **Belangrijk**: Alle velden voor zaadtabellen moeten ook in de ontvangende tabel (of de overeenkomstige contacttabel) staan.
-
+   >* Als u personalisatie-elementen wilt toevoegen of verbergen, raadpleegt u [Beheren van verpersoonlijkingsgebieden en blokken](/help/sites-administering/campaignonpremise.md#managing-personalization-fields-and-blocks).
+   >* **Belangrijk**: Alle velden voor zaadtabellen moeten zich ook in de ontvangende tabel (of de bijbehorende tabel met contactpersonen) bevinden.
 
 1. Voeg tekst in door te typen. Voeg contextgebieden of verpersoonlijkingsblokken in door de componenten van Adobe Campaign te klikken en hen te selecteren. Selecteer het vinkje als u klaar bent.
 
@@ -194,7 +191,7 @@ Personalisatie invoegen:
 
 ### Een voorvertoning van een nieuwsbrief weergeven {#previewing-a-newsletter}
 
-U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie.
+U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie bekijken.
 
 1. Open de nieuwsbrief en klik op **Voorvertoning** in de rechterbovenhoek van AEM. AEM toont hoe de nieuwsbrief kijkt wanneer de gebruikers het ontvangen.
 
@@ -216,7 +213,7 @@ U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voo
 
 Nadat de inhoud is voltooid, kunt u het goedkeuringsproces starten. Ga naar de **Workflow** en selecteert u de **Goedkeuren voor Adobe Campaign** workflow.
 
-Deze out-of-the-box workflow bestaat uit twee stappen: herziening dan goedkeuring, of herziening dan verwerping. Deze workflow kan echter worden uitgebreid en aangepast aan een complexer proces.
+Deze out-of-the-box werkstroom heeft twee stappen: revisie dan goedkeuring, of revisie dan verwerping. Deze workflow kan echter worden uitgebreid en aangepast aan een complexer proces.
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
@@ -235,6 +232,7 @@ In Adobe Campaign Classic:
 ![chlimage_1-34](assets/chlimage_1-34a.png)
 
 >[!NOTE]
+>
 Niet-goedgekeurde inhoud kan worden gesynchroniseerd met een levering in Adobe Campaign, maar de levering kan niet worden uitgevoerd. Alleen goedgekeurde inhoud kan via campagneleveringen worden verzonden.
 
 ## AEM met Adobe Campaign Standard en Adobe Campaign Classic {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign-classic}
@@ -258,6 +256,7 @@ Zo kunt u de inhoud leveren. U ziet of een nieuwsbrief met één enkele levering
 ![chlimage_1-35](assets/chlimage_1-35a.png)
 
 >[!NOTE]
+>
 Als een nieuwsbrief aan verscheidene leveringen wordt verbonden, het aantal verbonden leveringen (maar niet elke identiteitskaart wordt getoond).
 
 Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campaign:
@@ -273,6 +272,7 @@ Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campai
 1. Selecteren **Koppelen met Adobe Experience Manager-inhoud** in de werkbalk voor toegang tot de inhoudslijst in AEM.
 
    >[!NOTE]
+   >
    Als de **Koppelen met een Adobe Experience Manager** verschijnt niet op de actiebalk. Controleer of de optie **Inhoudsbewerkingsmodus** is correct gevormd reeks aan **Adobe Experience Manager** in de e-maileigenschappen.
 
    ![chlimage_1-38](assets/chlimage_1-38a.png)
@@ -287,6 +287,7 @@ Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campai
    * Alle inhoud die al aan een levering is gekoppeld.
 
    >[!NOTE]
+   >
    Standaard is de inhoud die al met een levering is gesynchroniseerd, verborgen. U kunt deze echter wel weergeven en gebruiken. Als u bijvoorbeeld inhoud wilt gebruiken als een sjabloon voor meerdere leveringen.
 
    Als het e-mailbericht is gekoppeld aan AEM inhoud, kan de inhoud niet worden bewerkt in Adobe Campaign.
@@ -295,13 +296,16 @@ Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campai
 1. Voer de e-maillevering uit. Tijdens de leveringsanalyse, wordt de meest bijgewerkte versie van de AEM inhoud teruggewonnen.
 
    >[!NOTE]
+   >
    Als de inhoud in AEM wordt bijgewerkt terwijl deze aan een e-mailbericht is gekoppeld, wordt deze tijdens de analyse automatisch bijgewerkt in Adobe Campaign. De synchronisatie kan ook handmatig worden uitgevoerd **Adobe Experience Manager-inhoud vernieuwen** in de actiebalk voor inhoud.
+   >
    U kunt de koppeling tussen een e-mail en AEM inhoud annuleren met **De koppeling met de Adobe Experience Manager-inhoud verwijderen** in de actiebalk voor inhoud. Deze knop is alleen beschikbaar als de inhoud al is gekoppeld aan de levering. Als u een andere inhoud aan een levering wilt koppelen, moet u de huidige inhoudskoppeling verwijderen voordat u een nieuwe koppeling kunt maken.
+   >
    Wanneer de koppeling wordt verwijderd, wordt de lokale inhoud bewaard en bewerkbaar in Adobe Campaign. Als u de inhoud opnieuw koppelt nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.
 
 ### In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign Classic {#synchronizing-content-created-in-aem-with-a-delivery-from-adobe-campaign-classic}
 
-Met Adobe Campaign kunt u inhoud die is gemaakt in AEM herstellen en synchroniseren met:
+Met Adobe Campaign kunt u inhoud die is gemaakt AEM met:
 
 * Een campagnelevering
 * Een leveringsactiviteit in een campagnewerkstroom
@@ -315,11 +319,14 @@ Als een nieuwsbrief AEM is gekoppeld aan één levering, wordt de leveringscode 
 ![chlimage_1-39](assets/chlimage_1-39a.png)
 
 >[!NOTE]
+>
 Als de nieuwsbrief aan verscheidene leveringen wordt gekoppeld, het aantal verbonden leveringen (maar niet elke identiteitskaart wordt getoond).
+>
 [!NOTE]
+>
 De workflowstap **Publiceren naar Adobe Campaign** is afgekeurd in AEM 6.1. Deze stap maakte deel uit van de integratie van AEM 6.0 met Adobe Campaign en is niet langer nodig.
 
-Inhoud die is gemaakt in AEM met een levering vanuit Adobe Campaign synchroniseren:
+In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
 
 1. Maak een levering of voeg een leveringsactiviteit toe aan een campagnewerkstroom door de optie **E-maillevering met AEM inhoud (mailAEMContent)** leveringssjabloon.
 
@@ -328,7 +335,8 @@ Inhoud die is gemaakt in AEM met een levering vanuit Adobe Campaign synchroniser
 1. Selecteren **Synchroniseren** in de werkbalk voor toegang tot de inhoudslijst in AEM.
 
    >[!NOTE]
-   Als de **Synchroniseren** niet wordt weergegeven op de werkbalk van de levering. Controleer of de optie **Inhoudsbewerkingsmodus** veld is correct geconfigureerd in **AEM** door **Eigenschappen** > **Geavanceerd**.
+   >
+   Als de **Synchroniseren** Deze optie wordt niet weergegeven op de werkbalk van de levering. Controleer of de optie **Inhoudsbewerkingsmodus** veld is correct geconfigureerd in **AEM** door **Eigenschappen** > **Geavanceerd**.
 
    ![chlimage_1-41](assets/chlimage_1-41a.png)
 
@@ -342,6 +350,7 @@ Inhoud die is gemaakt in AEM met een levering vanuit Adobe Campaign synchroniser
    * Alle inhoud die al aan een levering is gekoppeld.
 
    >[!NOTE]
+   >
    Standaard is de inhoud die al met een levering is gesynchroniseerd, verborgen. U kunt deze echter wel weergeven en gebruiken. Als u bijvoorbeeld inhoud wilt gebruiken als een sjabloon voor meerdere leveringen.
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
@@ -351,9 +360,9 @@ Inhoud die is gemaakt in AEM met een levering vanuit Adobe Campaign synchroniser
 1. Voer de levering uit. Tijdens de leveringsanalyse, wordt de meest bijgewerkte versie van de AEM inhoud teruggewonnen.
 
    >[!NOTE]
+   >
    * Nadat de levering en de inhoud zijn gesynchroniseerd, wordt de leveringsinhoud in Adobe Campaign alleen-lezen. Het onderwerp van de e-mail en de inhoud ervan kunnen niet meer worden gewijzigd.
    * Als de inhoud in AEM wordt bijgewerkt terwijl deze aan een levering in Adobe Campaign is gekoppeld, wordt deze tijdens de leveringsanalyse automatisch bijgewerkt in de levering. De synchronisatie kan ook handmatig worden uitgevoerd met de **Inhoud nu vernieuwen** knop.
    * U kunt synchronisatie tussen een levering en AEM inhoud annuleren met de **Desynchroniseren** knop. Dit is alleen beschikbaar als de inhoud al is gesynchroniseerd met de levering. Als u andere inhoud wilt synchroniseren met een levering, moet u de huidige inhoudssynchronisatie annuleren voordat u een nieuwe koppeling kunt maken.
-   * Als de synchronisatie van de lokale inhoud is opgeheven, wordt deze bewaard en kan deze worden bewerkt in Adobe Campaign. Als u de inhoud opnieuw synchroniseert nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.
+   * Als de synchronisatie van de lokale inhoud is opgeheven, wordt de lokale inhoud bewaard en wordt deze bewerkbaar in Adobe Campaign. Als u de inhoud opnieuw synchroniseert nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.
    * Voor terugkomende en ononderbroken leveringen wordt synchronisatie met AEM inhoud gestopt telkens wanneer de levering wordt uitgevoerd.
-

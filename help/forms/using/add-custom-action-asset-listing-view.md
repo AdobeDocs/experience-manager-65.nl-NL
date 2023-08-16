@@ -1,17 +1,13 @@
 ---
 title: Aangepaste actie toevoegen aan de weergave Lijst met activa
-seo-title: Add custom action to the Asset Listing view
 description: In dit artikel wordt uitgelegd hoe u aangepaste handelingen kunt toevoegen aan de weergave Lijst met activa
-seo-description: This article teaches how to add custom action to the Asset Listing view
-uuid: 45f25cfb-f08f-42c6-99c5-01900dd8cdee
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 6378ae30-a351-49f7-8e9a-f0bd4287b9d3
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '1354'
 ht-degree: 0%
@@ -39,7 +35,7 @@ Om het volgende scenario of gelijkaardige te voltooien, vereist u kennis van:
 * JavaScript
 * Java™
 
-## Scenario: Voeg een bevel aan het de lijstgebruikersinterface van Letters toe om vlakke versie van PDF van een brief te downloaden {#addcommandtoletters}
+## Scenario: voeg een bevel aan het de lijstgebruikersinterface van Letters toe om vlakke versie van PDF van een brief te downloaden {#addcommandtoletters}
 
 In de onderstaande stappen voegt u de opdracht Vlakke PDF downloaden toe aan de weergave Lijst met activa voor letters en kunt u gebruikers de platte PDF van de geselecteerde letter downloaden. Als u deze stappen gebruikt met de juiste code en parameters, kunt u een andere functionaliteit toevoegen voor een ander element, zoals gegevenswoordenboeken of teksten.
 
@@ -76,7 +72,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       Klikken **Alles opslaan**.
 
-1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: downloadFlatPDF) gebruikend de volgende stappen:
+1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: downloadFlatPDF) door de volgende stappen uit te voeren:
 
    1. Klik met de rechtermuisknop op de knop **items** map en selecteer **Maken** > **Knooppunt maken**.
 
@@ -105,7 +101,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
         <tr>
         <td>stichting-collectie-actie</td>
         <td>String</td>
-        <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kan enkelvoudig of meervoudig zijn om selecties toe te staan van enkelvoudige of meervoudige elementen waarop de aangepaste handeling wordt uitgevoerd.</p> <p><strong>type</strong> kan een of meer (komma's scheiden meerdere vermeldingen) van het volgende zijn: LETTER,TEKST,LIJST,VOORWAARDE,GEGEVENSWOORDENBOEK</p> </td>
+        <td><p>{"target": ".cq-manageasset-admin-children pages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kan enkelvoudig of meervoudig zijn om selecties toe te staan van enkelvoudige of meervoudige elementen waarop de aangepaste handeling wordt uitgevoerd.</p> <p><strong>type</strong> kan één of meerdere (komma's scheiden veelvoudige ingangen) van het volgende zijn: BRIEF, TEKST, LIJST, VOORWAARDE, DATADICTIONARY</p> </td>
         </tr>
         <tr>
         <td>pictogram</td>
@@ -248,9 +244,9 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Klikken **Alles opslaan**.
 
-1. Voeg onder het nieuwe knooppunt Items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: letterpdfdownloader) met behulp van de volgende stappen:
+1. Voeg onder het nieuwe knooppunt Items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: letterpdfdownloader) door de volgende stappen uit te voeren:
 
-   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken > knooppunt maken**.
+   1. Klik met de rechtermuisknop op de map met items en selecteer **Maken > Knooppunt maken**.
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
 
@@ -270,7 +266,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Klik met de rechtermuisknop op de knop **beheerder** map op het volgende pad en selecteer **Maken > Bestand maken**:
+   1. Klik met de rechtermuisknop op de knop **admin** map op het volgende pad en selecteer **Maken > Bestand maken**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
@@ -279,7 +275,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
    1. Dubbelklik op de knop **POST.jsp** bestand openen in CRX.
    1. Voeg de volgende code aan POST.jsp- dossier toe en klik **Alles opslaan**:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg de Java™-bibliotheken van dat element aan deze code toe voor andere elementen. Zie voor meer informatie over AEM Forms API&#39;s [AEM Forms API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg de Java™-bibliotheken van dat element aan deze code toe voor andere elementen. Zie voor meer informatie over AEM Forms API&#39;s [AEM FORMS API](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).
 
       Zie AEM voor meer informatie over AEM bibliotheken [Componenten](/help/sites-developing/components.md).
 
@@ -350,7 +346,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 ## Vlakke PDF van een letter downloaden met de aangepaste functionaliteit {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
-Nadat u aangepaste functionaliteit hebt toegevoegd om de vlakke PDF van uw brieven te downloaden, kunt u de volgende stappen gebruiken om de vlakke versie van de PDF van de brief te downloaden u selecteert:
+Nadat u aangepaste functionaliteit hebt toegevoegd om de vlakke PDF van uw brieven te downloaden, kunt u de volgende stappen gebruiken om de vlakke versie van de PDF van de brief te downloaden u uitgezocht:
 
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/projects.html` en aanmelden.
 
@@ -358,15 +354,15 @@ Nadat u aangepaste functionaliteit hebt toegevoegd om de vlakke PDF van uw briev
 1. Klikken **Selecteren** en klik vervolgens op een letter om deze te selecteren.
 1. Selecteren **Meer** > **&lt;download flat=&quot;&quot; pdf=&quot;&quot;>** (De aangepaste functionaliteit die is gemaakt met behulp van de instructies in dit artikel.) Het dialoogvenster Letter downloaden als PDF wordt weergegeven.
 
-   De naam, functionaliteit en alt-text van het menu-item zijn gebaseerd op de aanpassing die is gemaakt in [Scenario: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte versie van een PDF van een letter te downloaden.](#addcommandtoletters)
+   De naam, functionaliteit en alt-text van het menu-item zijn gebaseerd op de aanpassing die in [Scenario: voeg een bevel aan het de lijstgebruikersinterface van Letters toe om vlakke versie van PDF van een brief te downloaden.](#addcommandtoletters)
 
-   ![Aangepaste functionaliteit: Vlakke PDF downloaden](assets/5_downloadflatpdf.png)
+   ![Aangepaste functionaliteit: Platte PDF downloaden](assets/5_downloadflatpdf.png)
 
 1. Selecteer in het dialoogvenster Letter downloaden als PDF de XML waaruit u de gegevens in de PDF wilt vullen.
 
    >[!NOTE]
    >
-   >Voordat u de letter downloadt als platte PDF, kunt u het XML-bestand met de gegevens in de letter maken met de **Rapport maken** optie.
+   >Voordat u de letter downloadt als platte PDF, kunt u het XML-bestand met de gegevens in de letter maken met de **Rapport maken** -optie.
 
    ![Letter downloaden als PDF](assets/6_downloadflatpdf.png)
 

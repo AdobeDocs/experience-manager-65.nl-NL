@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 2d4cda3d-3270-4294-a146-e5712746aebb
 docset: aem65
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Hieronder vindt u twee typen overzicht voor het ontwerpen met AEM:
 
 Om u te helpen bij het ontwerpen van pagina&#39;s, biedt de auteursomgeving functies zoals:
 
-* **Slepen en neerzetten**
+* **Slepen en slepen**
 Componenten (zoals Tekst, Afbeelding) en digitale elementen (zoals afbeeldingen) kunnen eenvoudig op de pagina worden geplaatst door ze naar de gewenste locatie te slepen.
 
 * **Bewerken**
@@ -42,10 +42,10 @@ Zodra gepositioneerd op de pagina, kan een componentspecifieke dialoog worden ge
 Componenten Tekst en Afbeelding kunnen rechtstreeks op de webpagina worden bewerkt zonder een dialoogvenster of een expliciete opslaghandeling te openen.
 
 * **[Componentbrowser](/help/sites-authoring/author-environment-tools.md#componentsbrowsertouchoptimizedui)**
-Aan de linkerkant van een bewerkbare pagina kan een schuivende browser worden geopend; van hieruit kunnen componenten naar de pagina worden gesleept en vervolgens worden bewerkt.
+Aan de linkerkant van een bewerkbare pagina kan een schuivende browser worden geopend. Vanaf dit punt kunnen componenten naar de pagina worden gesleept en vervolgens worden bewerkt.
 
 * **[Middelenbrowser](/help/sites-authoring/author-environment-tools.md#assetsbrowsertouchoptimizedui)**
-Aan de linkerkant van een bewerkbare pagina kan een schuivende browser worden geopend; van hieruit kunnen elementen naar de pagina worden gesleept; bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
+Aan de linkerkant van een bewerkbare pagina kan een schuivende browser worden geopend. Vanaf dat punt kunnen elementen naar de pagina worden gesleept, bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
 
 * **Werkbalk Component**
 Bij een enkele of bij een trage dubbelklik/tik wordt de juiste werkbalk weergegeven (enkele voor de werkbalk voor het bewerken van de plaats en vervolgens twee voor de volledige werkbalk).

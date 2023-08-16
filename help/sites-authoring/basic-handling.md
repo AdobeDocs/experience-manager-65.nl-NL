@@ -1,6 +1,6 @@
 ---
 title: Basisafhandeling bij gebruik van de AEM-ontwerpomgeving
-description: Geniet van gemak bij het navigeren AEM en het basisgebruik ervan
+description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
 uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3025'
+source-wordcount: '3017'
 ht-degree: 3%
 
 ---
@@ -42,9 +42,9 @@ Onmiddellijk nadat u zich hebt aangemeld, arriveert u op de [Navigatievenster](#
 
 >[!NOTE]
 >
->Om een goed inzicht te krijgen in het basisgebruik van AEM, is dit document gebaseerd op de **Sites** console.
+>Voor een goed inzicht in het basisgebruik van AEM is dit document gebaseerd op de **Sites** console.
 >
->Klik of tik op **Sites** om aan de slag te gaan.
+>Klik of tik op **Sites** aan de slag.
 
 ### Productnavigatie {#product-navigation}
 
@@ -101,7 +101,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Handel</td>
-   <td>Hierdoor kunt u producten, productcatalogi en bestellingen beheren die gerelateerd zijn aan uw <a href="/help/commerce/cif-classic/administering/ecommerce.md">Handel</a> sites.</td>
+   <td>Hiermee kunt u producten, productcatalogi en bestellingen beheren die gerelateerd zijn aan uw <a href="/help/commerce/cif-classic/administering/ecommerce.md">Handel</a> sites.</td>
   </tr>
   <tr>
    <td>Ervaringsfragmenten</td>
@@ -144,7 +144,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * [Algemene navigatie](#navigatingconsolesandtools)
 
-  Selecteer **Adobe Experience Manager** koppeling om tussen consoles te navigeren.
+  Selecteer de **Adobe Experience Manager** koppeling om tussen consoles te navigeren.
 
   ![de Adobe Experience Manager-koppeling](assets/screen_shot_2018-03-23at103615.png)
 
@@ -188,7 +188,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   ![Broodkruimels](assets/bh-05.png)
 
-  In het midden van de spoorstaaf, en altijd tonend de beschrijving van het momenteel geselecteerde punt, staan de broodkruimels u toe om binnen een specifieke console te navigeren. In de console van Plaatsen, kunt u door de niveaus van uw website navigeren.
+  In het midden van de spoorstaaf, en altijd tonend de beschrijving van het momenteel geselecteerde punt, laten de broodkruimels u binnen een specifieke console navigeren. In de console van Plaatsen, kunt u door de niveaus van uw website navigeren.
 
   Klik gewoon op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het momenteel geselecteerde item. Klik op een bericht om naar die locatie te gaan.
 
@@ -212,13 +212,13 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   ![Kolomweergave](assets/bh-07.png)
 
-  U kunt schakelen tussen de kolomweergave, de kaartweergave en de lijstweergave. in de lijstweergave worden ook de weergave-instellingen weergegeven.
+  U kunt schakelen tussen de kolomweergave, de kaartweergave en de lijstweergave. In de lijstweergave worden ook de weergave-instellingen weergegeven.
 
   ![Weergaven omwisselen](assets/bh-09.png)
 
 * Toetsenbordnavigatie
 
-  U kunt alleen met het toetsenbord door een website navigeren. Hierbij wordt de standaardbrowserfunctionaliteit van het **TAB** toets (of **OPT+TAB**) om u te verplaatsen tussen elementen op de pagina die *scherp*.
+  U kunt alleen met het toetsenbord door een website navigeren. Hierbij wordt de standaardbrowserfunctionaliteit van het **TAB** toets (of **OPT+TAB**) om u te verplaatsen tussen elementen op de pagina die *scherpgesteld*.
 
   In de **Sites** console daar is de toegevoegde optie aan  **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar als u *tab* door de kopbalopties, en versnelt uw navigatie door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
 
@@ -269,7 +269,7 @@ Bronnen en downloads voor ontwikkelaars
 
 ## Werkbalk Handelingen {#actions-toolbar}
 
-Wanneer een bron wordt geselecteerd (bijvoorbeeld een pagina of een element), worden verschillende handelingen aangegeven met pictogrammen met een verklarende tekst op de werkbalk. Deze acties zijn afhankelijk van:
+Wanneer een bron wordt geselecteerd (bijvoorbeeld een pagina of een element), worden verschillende handelingen aangegeven met pictogrammen met een uitleg op de werkbalk. Deze acties zijn afhankelijk van:
 
 * De huidige console.
 * De huidige context.
@@ -289,7 +289,7 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 ## Snelle handelingen {#quick-actions}
 
-In [Kaartweergave](#cardviewquickactions) bepaalde acties zijn beschikbaar als snelactiepictogrammen en op de werkbalk. Er zijn snelactiepictogrammen beschikbaar voor één item tegelijk, zodat u geen voorselectie hoeft te maken.
+In [Kaartweergave](#cardviewquickactions) bepaalde acties zijn beschikbaar als snelactiepictogrammen en bevinden zich op de werkbalk. Er zijn snelactiepictogrammen beschikbaar voor één item tegelijk, zodat u geen voorselectie hoeft te maken.
 
 De snelle acties zijn zichtbaar wanneer u de muis boven een resourcepard (bureaubladapparaat) houdt. De snelle beschikbare acties kunnen van de console en de context afhangen. Hier ziet u bijvoorbeeld de snelle acties voor een pagina in het dialoogvenster **Sites** console:
 
@@ -338,7 +338,7 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
    <td>Kaartweergave<br /> </td>
    <td>
     <ul>
-     <li>Desktop:<br /> Beweging, dan gebruik de controlemarkering snelle actie</li>
+     <li>Desktop:<br /> Beweging, dan gebruik de controletekens snelle actie</li>
      <li>Mobiel apparaat:<br /> Tik en houd de kaart ingedrukt</li>
     </ul> </td>
    <td>
@@ -395,13 +395,13 @@ In alle weergaven kan de selectie van alle items worden opgeheven door op escape
 
 1. Zodra u een middel hebt geselecteerd, wordt de hoogste kopbal behandeld door [werkbalk Handelingen](#actionstoolbar) die toegang biedt tot acties die momenteel van toepassing zijn op de geselecteerde bron.
 
-   Als u de selectiemodus wilt afsluiten, selecteert u de optie **X** naar de rechterbovenhoek, of gebruik **ontsnappen**.
+   Als u de selectiemodus wilt afsluiten, selecteert u de **X** rechtsboven, of gebruik **ontsnappen**.
 
 ### Kolomweergave {#column-view}
 
 ![Kolomweergave](assets/bh-16.png)
 
-In de kolomweergave kunt u een visuele navigatie van een inhoudsstructuur uitvoeren door een reeks trapsgewijze kolommen. In deze weergave kunt u de boomstructuur van uw website visualiseren en doorlopen.
+In de kolomweergave kunt u een visuele navigatie van een inhoudsstructuur uitvoeren door een reeks trapsgewijze kolommen. Met deze weergave kunt u de boomstructuur van uw website visualiseren en doorlopen.
 
 Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bronnen in een kolom rechts weergegeven. Als u een bron in de rechterkolom selecteert, worden de onderliggende bronnen in een andere kolom rechts weergegeven, enzovoort.
 
@@ -474,7 +474,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 * Selecteer de kolommen die u wilt weergeven **Instellingen weergeven** onder de knop Weergaven. De volgende kolommen zijn beschikbaar voor weergave:
 
    * **Naam** - Paginanaam, die nuttig kan zijn in een meertalige ontwerpomgeving omdat deze deel uitmaakt van de URL van de pagina en niet wordt gewijzigd, ongeacht de taal
-   * **Gewijzigd** - Datum van laatste wijziging en laatst gewijzigd door gebruiker
+   * **gewijzigd** - Datum van laatste wijziging en laatst gewijzigd door gebruiker
    * **Gepubliceerd** - Status van publicatie
    * **Sjabloon** - Sjabloon waarop de pagina is gebaseerd
    * **Workflow** - Werkstroom die momenteel op de pagina wordt toegepast. Er is meer informatie beschikbaar wanneer u de muis boven de tijdlijn houdt of deze opent.
@@ -499,7 +499,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
   ![Volgorde wijzigen - Slepen](assets/bh-23.png)
 
-* U kunt de Gegevens van de Analyse tonen door de aangewezen kolommen te tonen gebruikend **Instellingen weergeven** .
+* U kunt analysegegevens tonen door de aangewezen kolommen te tonen gebruikend **Instellingen weergeven** in.
 
   Met de filteropties aan de rechterkant van de koptekst kunt u de analysegegevens voor de afgelopen 30, 90 of 365 dagen filteren.
 
@@ -535,7 +535,7 @@ Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijst
 
 ### Tijdlijn {#timeline}
 
-De tijdlijn kan worden gebruikt om gebeurtenissen weer te geven en/of te initiëren die zich op de geselecteerde bron hebben voorgedaan. U opent de tijdlijnkolom met de railkiezer:
+De tijdlijn kan worden gebruikt om gebeurtenissen weer te geven en/of te initiëren die op de geselecteerde bron zijn opgetreden. U opent de tijdlijnkolom met de railkiezer:
 
 In de tijdlijnkolom kunt u:
 
@@ -567,7 +567,7 @@ Deze opties zijn toegankelijk via de chevron naast de **Opmerking** veld.
 
 ### Verwijzingen {#references}
 
-**Verwijzingen** toont om het even welke verbindingen aan het geselecteerde middel. In het dialoogvenster **Sites** console [verwijzingen](/help/sites-authoring/author-environment-tools.md#showingpagereferences) voor presentaties op pagina&#39;s:
+**Verwijzingen** toont om het even welke verbindingen aan het geselecteerde middel. In het dialoogvenster **Sites** console [verwijzingen](/help/sites-authoring/author-environment-tools.md#showingpagereferences) voor pagina&#39;s toont:
 
 * [Lanceringen](/help/sites-authoring/launches.md#launches-in-references-sites-console)
 * [Live kopieën](/help/sites-administering/msm-livecopy-overview.md#openingthelivecopyoverviewfromreferences)

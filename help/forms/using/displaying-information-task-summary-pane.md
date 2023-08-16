@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 exl-id: 0b3087fe-a3fb-4eac-ad4b-c123526e8195
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '276'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Als u een taak opent in de AEM Forms-werkruimte, wordt in het deelvenster Taakov
 
 In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
 
-1. Maak een taakproces toewijzen in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [Workbench Help](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
+1. Creeer een Assign proces van de Taak in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [Workbench Help](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
    >[!NOTE]
    >
@@ -50,5 +50,5 @@ In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in he
    </html>
    ```
 
-   * Stel de waarde van de taaksummiere URL in op `/lc/content/SampleSummary.html` in de stap Taak toewijzen.
+   * Stel de waarde van de taaksummiere URL in op `/lc/content/SampleSummary.html` in Taak toewijzen.
    * Wanneer de taak die bij deze stap Taak toewijzen hoort, wordt geopend in de AEM Forms-werkruimte, wordt `html.esp` om `/apps/SampleSummary` wordt weergegeven in het taakoverzichtsvenster.

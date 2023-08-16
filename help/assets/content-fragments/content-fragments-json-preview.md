@@ -4,7 +4,7 @@ description: Leer hoe u een JSON-weergave van uw inhoudsfragmenten eenvoudig kun
 feature: Content Fragments
 role: User
 exl-id: c58a3cfd-6348-4a2e-996a-5fdb96415adb
-source-git-commit: bb5d39277db10fd8d3b436c8d1f40d9d2010adee
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 1%
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 # Voorvertoning - JSON-representatie {#preview-json-representation}
 
-Wanneer het ontwikkelen van de modellen voor de Fragmenten van de Inhoud als deel van uw AEM hoofdloze implementatie, zou u steekproefJSON output voor een inhoudsfragment kunnen willen bekijken, zoals die op een model wordt gebaseerd. Bijvoorbeeld om een idee te krijgen van hoe de definitieve output eruit zal zien. Dit kan handig zijn voor het valideren van de JSON-modelstructuur, bijvoorbeeld met standaardvoorbeeldinhoud per gegevenstype.
+Wanneer het ontwikkelen van de modellen voor de Fragmenten van de Inhoud als deel van uw AEM hoofdloze implementatie, zou u steekproefJSON output voor een inhoudsfragment kunnen willen bekijken, zoals die op een model wordt gebaseerd. Als u bijvoorbeeld wilt weten hoe de uiteindelijke uitvoer eruit zal zien. Dit kan handig zijn voor het valideren van de JSON-modelstructuur, bijvoorbeeld met standaardvoorbeeldinhoud per gegevenstype.
 
 Met de **Voorvertoning** pictogram:
 
@@ -24,5 +24,5 @@ U kunt de JSON-weergave van het huidige fragment weergeven. Bijvoorbeeld:
 ![Content Fragment Editor - Voorvertoning van een fragment](assets/cfm-preview-02.png)
 
 <!--
-**Copy URL** allows you to copy to clipboard the URL for either author or publish.
+**Copy URL** lets you copy to clipboard the URL for either author or publish.
 -->

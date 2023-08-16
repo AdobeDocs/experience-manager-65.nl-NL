@@ -1,5 +1,5 @@
 ---
-title: "Zelfstudie: Formuliergegevensmodel maken in AEM Forms"
+title: "Lesbestand: formuliergegevensmodel maken in AEM Forms"
 description: Formuliergegevensmodel maken voor interactieve communicatie
 uuid: b56d3dac-be54-4812-b958-38a085686218
 contentOwner: anujkapo
@@ -8,14 +8,14 @@ discoiquuid: e5413fb3-9d50-4f4f-9db8-7e53cd5145d5
 docset: aem65
 feature: Interactive Communication
 exl-id: c8a6037c-46bd-4058-8314-61cb925ba5a8
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2739'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
 
-# Zelfstudie: Formuliergegevensmodel maken in AEM Forms{#tutorial-create-form-data-model}
+# Zelfstudie: Een formuliergegevensmodel maken in AEM Forms{#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
@@ -23,9 +23,9 @@ Deze zelfstudie is een stap in de [Maak uw eerste interactieve communicatie](/he
 
 ## Over de zelfstudie {#about-the-tutorial}
 
-Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het aangepaste formulier vooraf invullen en ingediende formuliergegevens terugschrijven naar het gegevensmodelobject.
+Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
-Voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel raadpleegt u [AEM Forms-gegevensintegratie](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
+Zie voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel [AEM Forms-gegevensintegratie](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
 Deze zelfstudie begeleidt u door de stappen om een formuliergegevensmodel voor te bereiden, te maken, te configureren en aan een interactieve communicatie te koppelen. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -70,7 +70,7 @@ CREATE TABLE `customer` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-Gebruik de volgende verklaring DDL om tot de **rekeningen** tabel in de database.
+Gebruik de volgende verklaring DDL om tot de **biljet** tabel in de database.
 
 ```sql
 CREATE TABLE `bills` (
@@ -107,11 +107,11 @@ CREATE TABLE `calls` (
  ) ENGINE=InnoDB DEFAULT CHARSET=utf8
 ```
 
-De **oproepen** de lijst omvat de vraagdetails zoals vraagdatum, vraagtijd, vraagaantal, vraagduur, en vraaglasten. De **klant** de lijst is verbonden met de vraaglijst gebruikend het Mobiele gebied van het Aantal (mobilenum). Voor elk mobiel nummer dat wordt vermeld in het dialoogvenster **klant** de tabel bevat meerdere records in de **oproepen** tabel. Bijvoorbeeld, kunt u de vraagdetails voor terugwinnen **1457892541** mobiel nummer door te verwijzen naar de **oproepen** tabel.
+De **oproepen** de lijst omvat de vraagdetails zoals vraagdatum, vraagtijd, vraagaantal, vraagduur, en vraaglasten. De **klant** de lijst is verbonden met de vraaglijst gebruikend het Mobiele gebied van het Aantal (mobilenum). Voor elk mobiel nummer dat wordt vermeld in het dialoogvenster **klant** de tabel bevat meerdere records in de **oproepen** tabel. U kunt bijvoorbeeld de vraagdetails voor de **1457892541** mobiel nummer door te verwijzen naar de **oproepen** tabel.
 
-De **rekeningen** de tabel bevat de gegevens van de rekening, zoals de datum van de rekening, de factuurperiode, de maandelijkse kosten en de kosten van de oproep. De **klant** tabel is gekoppeld aan **rekeningen** tabel met het veld Bill Plan. Er is een plan verbonden aan elke klant in **klant** tabel. De **rekeningen** de tabel bevat de prijsgegevens voor alle bestaande plannen . U kunt bijvoorbeeld de abonnementsdetails ophalen voor **Sarah** van de **klant** tabel en gebruik deze gegevens om prijsgegevens op te halen uit de **rekeningen** tabel.
+De **biljet** de tabel bevat de gegevens van de rekening, zoals de datum van de rekening, de factuurperiode, de maandelijkse kosten en de kosten van de oproep. De **klant** tabel is gekoppeld aan de **biljet** tabel met het veld Bill Plan. Er is een plan verbonden aan elke klant in **klant** tabel. De **biljet** de tabel bevat de prijsgegevens voor alle bestaande plannen . U kunt bijvoorbeeld de abonnementsdetails ophalen voor **Sarah** van de **klant** tabel en gebruik deze gegevens om prijsgegevens op te halen uit de **biljet** tabel.
 
-## Stap 2: MySQL-database configureren als gegevensbron {#step-configure-mysql-database-as-data-source}
+## Stap 2: Vorm MySQL gegevensbestand als gegevensbron {#step-configure-mysql-database-as-data-source}
 
 U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zult u het gegevensbestand vormen MySQL dat met steekproefgegevens wordt gevormd en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [AEM Forms-gegevensintegratie](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html).
 
@@ -132,27 +132,28 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
       * **Naam gegevensbron:** U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **MySQL**.
 
-      * **Eigenschapnaam van DataSource-service**: Specificeer naam van het de dienstbezit die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld: **datasource.name**.
+      * **Eigenschapnaam van DataSource-service**: Geef een naam op van de eigenschap service die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld: **datasource.name**.
 
       * **JDBC-stuurprogrammaklasse**: Geef de Java-klassenaam van het JDBC-stuurprogramma op. Voor MySQL-database geeft u **com.mysql.jdbc.Driver**.
 
       * **URI voor JDBC-verbinding**: Geef de verbindings-URL van de database op. Voor MySQL-database die wordt uitgevoerd op poort 3306 en schema-teleca, is de URL: `jdbc:mysql://'server':3306/teleca?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Gebruikersnaam:** Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
       * **Wachtwoord:** Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
-      * **Testen op lenen:** De optie **Testen op lenen** optie.
+      * **Testen op lenen:** De optie **Testen op lenen** -optie.
 
-      * **Testen op rendement:** De optie **Testen op rendement** optie.
+      * **Testen op rendement:** De optie **Testen op rendement** -optie.
 
       * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld: **selecteren &#42; van klant**.
 
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
+
    Andere eigenschappen standaard laten staan [waarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en tikken **Opslaan**.
 
    Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
 
    ![Apache-configuratie](assets/apache_configuration_new.png)
 
-## Stap 3: Formuliergegevensmodel maken {#step-create-form-data-model}
+## Stap 3: Een formuliergegevensmodel maken {#step-create-form-data-model}
 
 AEM Forms biedt een intuïtieve gebruikersinterface voor [Een modus voor formuliergegevens maken](https://helpx.adobe.com/experience-manager/6-3/forms/using/data-integration.html#main-pars_header_1524967585)l van gevormde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
 
@@ -179,7 +180,7 @@ Het formuliergegevensmodel configureren omvat:
 
 ### Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
-1. Navigeer bij AEM instantie van de auteur naar **Forms** > **Gegevensintegratie**. De standaard-URL is [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Navigeer in AEM auteurinstantie naar **Forms** > **Gegevensintegratie**. De standaard-URL is [https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](https://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. De **FDM_Create_First_IC** Hier wordt het formuliergegevensmodel weergegeven dat u eerder hebt gemaakt. Selecteer het en tik **Bewerken**.
 
    De geselecteerde gegevensbron **MySQL** wordt weergegeven in het dialoogvenster **Gegevensbronnen** venster.
@@ -190,9 +191,10 @@ Het formuliergegevensmodel configureren omvat:
 
    * **Gegevensmodelobjecten**:
 
-      * rekeningen
+      * biljet
       * oproepen
       * klant
+
    * **Services:**
 
       * get
@@ -210,20 +212,20 @@ Het formuliergegevensmodel configureren omvat:
 
 Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op basis van een regel of expressie. Met behulp van een regel kunt u de waarde van een berekende eigenschap instellen op een letterlijke tekenreeks, een getal, het resultaat van een wiskundige expressie of de waarde van een andere eigenschap in het formuliergegevensmodel.
 
-Maak op basis van het gebruiksgeval de **gebruikskosten** onderliggende berekende eigenschap in de **rekeningen** gegevensmodelobject met de volgende wiskundige expressie:
+Maak op basis van het gebruiksgeval de **gebruikskosten** onderliggende berekende eigenschap in de **biljet** gegevensmodelobject met de volgende wiskundige expressie:
 
 * gebruikskosten = gesprekstarieven + conferentiegesprekstarieven + sms-tarieven + mobiele internettarieven + roaming nationaal + roaming internationaal + VAS (al deze eigenschappen bestaan in het object van het factureringsgegevensmodel) Voor meer informatie over **gebruikskosten** onderliggende berekende eigenschap, zie [De interactieve communicatie plannen](/help/forms/using/planning-interactive-communications.md).
 
 Voer de volgende stappen uit om berekende onderliggende eigenschappen voor het modelobject van rekeningen te maken:
 
-1. Schakel het selectievakje boven aan het dialoogvenster **rekeningen** gegevensmodelobject selecteren en tikken **Onderliggende eigenschap maken**.
-1. In de **Onderliggende eigenschap maken** deelvenster:
+1. Schakel het selectievakje boven aan het dialoogvenster **biljet** gegevensmodelobject selecteren en tikken **Eigenschap voor onderliggende elementen maken**.
+1. In de **Eigenschap voor onderliggende elementen maken** deelvenster:
 
    1. Enter **gebruikskosten** als de naam van de onderliggende eigenschap.
    1. Inschakelen **Berekend**.
-   1. Selecteren **Float** als type en tik **Gereed** om de eigenschap child toe te voegen aan de **rekeningen** gegevensmodelobject.
+   1. Selecteren **Float** als type en tik **Gereed** om de eigenschap child toe te voegen aan de **biljet** gegevensmodelobject.
 
-   ![Eigenschap child maken](assets/create_child_property_new.png)
+   ![Eigenschap voor onderliggende elementen maken](assets/create_child_property_new.png)
 
 1. Tikken **Regel bewerken** om de Regeleditor te openen.
 1. Tikken **Maken**. De **Waarde instellen** regelvenster wordt geopend.
@@ -271,7 +273,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
 
 1. In de **Argument toevoegen** dialoogvenster:
 
-   * Selecteren **mobilenum** van de **Naam** vervolgkeuzelijst. De eigenschap mobile number is een algemene eigenschap die beschikbaar is in de klant en die gegevensmodelobjecten aanroept. Dientengevolge, wordt het gebruikt om een verband tussen klant tot stand te brengen en de voorwerpen van het gegevensmodel te roepen.
+   * Selecteren **mobilenum** van de **Naam** vervolgkeuzelijst. De eigenschap mobile number is een algemene eigenschap die beschikbaar is in de klant en die gegevensmodelobjecten aanroept. Dientengevolge, wordt het gebruikt om een verband tussen klant en vraag tot stand te brengen modelvoorwerpen van gegevens.
 Voor elk mobiel aantal beschikbaar in het modelvoorwerp van klantengegevens, zijn er veelvoudige vraagverslagen beschikbaar in de vraaglijst.
 
    * Geef een optionele titel en beschrijving voor het argument op.
@@ -287,7 +289,7 @@ Voor elk mobiel aantal beschikbaar in het modelvoorwerp van klantengegevens, zij
 
    ![Woordkoppeling toevoegen](assets/add_argument_association_new.png)
 
-1. Tikken **Gereed** om een verbinding 1:n tussen klant en vraag de modelvoorwerpen van gegevens tot stand te brengen.
+1. Tikken **Gereed** om een verbinding 1:n tussen klant en roept gegevensmodelvoorwerpen tot stand te brengen.
 
    Zodra u een vereniging tussen klant en vraag de modelvoorwerpen van gegevens hebt gecreeerd, creeer een 1:1 vereniging tussen de klant en de modelvoorwerpen van rekeningen.
 
@@ -297,7 +299,7 @@ Voor elk mobiel aantal beschikbaar in het modelvoorwerp van klantengegevens, zij
    * Geef een titel op voor de koppeling. Het is een optioneel veld.
    * Selecteren **Eén op één** van de **Type** vervolgkeuzelijst.
 
-   * Selecteren **rekeningen** van de **Modelobject** vervolgkeuzelijst.
+   * Selecteren **biljet** van de **Modelobject** vervolgkeuzelijst.
 
    * Selecteren **get** van de **Service** vervolgkeuzelijst. De **bladerplan** eigenschap, de primaire sleutel voor de tabel met rekeningen, is al beschikbaar in de **Argumenten** sectie.
 De rekeningen en de objecten van het klantengegevensmodel zijn verbonden gebruikend billplan (rekeningen) en klant (klant) eigenschappen. Creeer een band tussen deze eigenschappen om de plandetails voor om het even welke klant terug te winnen beschikbaar in het gegevensbestand MySQL.
@@ -306,7 +308,7 @@ De rekeningen en de objecten van het klantengegevensmodel zijn verbonden gebruik
 
    * Selecteren **klantplan** van de **Bindingswaarde** vervolgkeuzelijst.
 
-   * Tikken **Gereed** om een band tussen het billplan en de eigenschappen van het klantplan tot stand te brengen.
+   * Tikken **Gereed** om een band tussen het billplan en de eigenschappen van het klantplan te creëren.
 
    ![Koppeling toevoegen aan klantrekening](assets/add_association_customer_bills_new.png)
 
@@ -339,15 +341,15 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
    ![Services configureren](assets/configure_services_customer_new.png)
 
 1. Schakel het selectievakje boven aan het dialoogvenster **oproepen** gegevensmodelobject selecteren en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
-1. De opdracht **Model op hoofdniveau, object** for **oproepen** gegevensmodelobject.
+1. Schakel het dialoogvenster **Model op hoofdniveau, object** for **oproepen** gegevensmodelobject.
 1. Tikken **Gereed**.
 
-   Herhaal stap 8 - 10 om de eigenschappen voor te configureren **rekeningen** gegevensmodelobject.
+   Herhaal stap 8 - 10 om de eigenschappen voor te configureren **biljet** gegevensmodelobject.
 
 ### Services configureren {#configure-services}
 
 1. Ga naar de **Services** tab.
-1. Selecteer **get** service en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
+1. Selecteer de **get** service en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
 1. In de **Eigenschappen bewerken** deelvenster:
 
    * Voer een optionele titel en beschrijving in.
@@ -357,7 +359,7 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
 
    ![Eigenschappen bewerken](assets/edit_properties_get_details_new.png)
 
-1. Selecteer **update** service en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
+1. Selecteer de **update** service en tikken **Eigenschappen bewerken**. De **Eigenschappen bewerken** wordt geopend.
 1. In de **Eigenschappen bewerken** deelvenster:
 
    * Voer een optionele titel en beschrijving in.
@@ -368,7 +370,7 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
 
    ![Service-eigenschappen bijwerken](assets/update_service_properties_new.png)
 
-## Stap 5: Formuliergegevensmodel en services testen {#step-test-form-data-model-and-services}
+## Stap 5: Model en services voor het testen van formuliergegevens {#step-test-form-data-model-and-services}
 
 U kunt het gegevensmodelobject en de services testen om te controleren of het formuliergegevensmodel correct is geconfigureerd.
 
@@ -383,7 +385,7 @@ Voer de volgende handelingen uit om de test uit te voeren:
    ![Testgegevensmodel](assets/test_data_model_new.png)
 
 1. Ga naar de **Services** tab.
-1. Selecteer **get** service en tikken **Testservice.**
+1. Selecteer de **get** service en tikken **Testservice.**
 1. In de **Invoer** -sectie, geeft u een waarde op voor de **mobilenum** bezit dat in het gevormde gegevensbestand MySQL bestaat en tikt **Testen**.
 
    De klantgegevens die aan de opgegeven eigenschap mobileEnum zijn gekoppeld, worden opgehaald en weergegeven in de sectie Uitvoer, zoals hieronder wordt weergegeven. Sluit het dialoogvenster.

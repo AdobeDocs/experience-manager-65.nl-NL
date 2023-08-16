@@ -7,16 +7,16 @@ topic-tags: process
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 exl-id: 72cd0594-8b5e-4d14-bc6f-bca26bae50f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 1%
 
 ---
 
 # Deel en verzoek toegang tot Inbox punten van een gebruiker {#share-and-request-access}
 
-Een wachtrij is een lijst met items in AEM Postvak IN van een gebruiker. Dit kunnen punten zijn die aan een gebruiker of punten worden toegewezen aan de groep wordt gedeeld een gebruiker is een lid van. U kunt uw Postvak IN openen om het Postvak IN-item weer te geven en actie te ondernemen. Deel bijvoorbeeld een item met een andere gebruiker.
+Een wachtrij is een lijst met items in AEM Postvak IN van een gebruiker. Dit kunnen punten zijn die aan een gebruiker of punten worden toegewezen aan de groep wordt gedeeld een gebruiker is een lid van. U hebt toegang tot uw Postvak IN om het Postvak IN-item weer te geven en actie te ondernemen. Deel bijvoorbeeld een item met een andere gebruiker.
 
 U kunt uw Postvak IN-items ook met een andere gebruiker delen. Zodra een andere gebruiker toegang heeft tot uw Inbox-items, kan de gebruiker een claim indienen en de juiste actie ondernemen voor gedeelde items. Op dezelfde manier kunt u andere gebruikers om toegang tot Inbox-items verzoeken.
 
@@ -26,7 +26,7 @@ De het programma geopende gebruiker moet een lid van zijn `workflow-users` groep
 
 ## Eén of alle items van uw Postvak IN delen met een andere gebruiker
 
-AEM Met Inbox kunt u een enkele of alle items in uw Postvak IN delen met een andere gebruiker.
+Met AEM Postvak IN kunt u een enkele of alle items in uw postvak IN delen met een andere gebruiker.
 
 ### Alle postvakitems delen
 
@@ -40,7 +40,7 @@ Voer de volgende stappen uit om alle items in een Postvak IN te delen met een an
 
 >[!NOTE]
 >
->(Alleen voor workflowitems die op Forms zijn gericht) Schakel de optie **[Toestaan dat de ontvanger deelt via Postvak IN](aem-forms-workflow-step-reference.md)** de **Taak toewijzen** in de workflow. Alleen items waarvoor de bovenstaande optie is ingeschakeld, worden weergegeven aan andere gebruikers.
+>(Alleen voor workflowitems die op Forms zijn gericht) Schakel de optie **[Toestaan dat de ontvanger deelt via Postvak IN](aem-forms-workflow-step-reference.md)** van de **Taak toewijzen** in de workflow. Alleen items waarvoor de bovenstaande optie is ingeschakeld, worden weergegeven aan andere gebruikers.
 
 ### Afzonderlijke items delen
 
@@ -54,7 +54,7 @@ Voer de volgende stappen uit om een Inbox-item met een andere gebruiker te delen
 
 >[!NOTE]
 >
->(Alleen voor workflowitems die op Forms zijn gericht) Schakel de optie **[Toestaan dat de ontvanger expliciet in Postvak IN deelt](aem-forms-workflow-step-reference.md)** de **Taak toewijzen** in de workflow. Alleen items waarvoor de bovenstaande optie is ingeschakeld, worden weergegeven aan andere gebruikers.
+>(Alleen voor workflowitems die op Forms zijn gericht) Schakel de optie **[Toestaan dat de ontvanger expliciet in Postvak IN deelt](aem-forms-workflow-step-reference.md)** van de **Taak toewijzen** in de workflow. Alleen items waarvoor de bovenstaande optie is ingeschakeld, worden weergegeven aan andere gebruikers.
 
 ## Toegang aanvragen tot postvakken {#request-access}
 
@@ -68,7 +68,7 @@ U kunt toegang tot de items in het Postvak IN van een andere gebruiker aanvragen
 
 ## Items claimen die door andere gebruikers worden gedeeld {#claim-items}
 
-U kunt pas aan een gedeeld item gaan werken nadat u dit hebt opgeëist. Hiermee voorkomt u dat meerdere gebruikers aan één item werken. Voer de volgende stappen uit om een object te claimen:
+U kunt pas aan een gedeeld item beginnen te werken nadat u dit hebt opgeëist. Hiermee voorkomt u dat meerdere gebruikers aan één item werken. Voer de volgende stappen uit om een object te claimen:
 
 1. Meld u aan bij uw AEM. Tik op het Postvak IN ![Inbox](assets/bell.svg) pictogram en tik **[!UICONTROL View All]**.
 1. Tik op de knop ![Alleen inhoud](assets/railleft.svg) om de filterkiezer te openen.
@@ -82,7 +82,7 @@ U kunt alleen aan een gedeeld item werken nadat u dit hebt opgeëist. Andere geb
 Voer de volgende stappen uit om een item vrij te geven:
 
 1. Meld u aan bij uw AEM. Tik op het Postvak IN ![Inbox](assets/bell.svg) pictogram en tik **[!UICONTROL View All]**. Er wordt een lijst met je postvak-items weergegeven.
-1. Selecteer het item dat u wilt loslaten en tikken **[!UICONTROL UnClaim]**. Het item wordt weer aan de pool toegevoegd. Anderen kunnen nu het object aanvragen.
+1. Selecteer het item dat u wilt loslaten en tikken **[!UICONTROL UnClaim]**. Het item wordt weer aan de pool toegevoegd. Anderen kunnen nu een claim indienen op het object.
 
 ## Beperkingen {#limitations}
 

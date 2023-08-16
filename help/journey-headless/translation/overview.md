@@ -1,27 +1,27 @@
 ---
-title: AEM doorlopende vertaalreis
+title: AEM doorsnedenloze vertaalreis
 description: Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
 exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1037'
 ht-degree: 1%
 
 ---
 
-# AEM doorlopende vertaalreis {#aem-headless-translation-journey}
+# AEM doorsnedenloze vertaalreis {#aem-headless-translation-journey}
 
 Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
 
 ## Inleiding {#introduction}
 
-Implementatie zonder hoofd wordt steeds belangrijker om uw publiek ervaringen te bieden, waar ze zich ook bevinden en ongeacht het kanaal, de regio of de landinstelling.
+Implementatie zonder hoofd wordt steeds belangrijker om uw publiek ervaringen te bieden, waar ze zich ook bevinden en ongeacht kanaal, regio of landinstelling.
 
 Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals gebruikelijk is in oplossingen voor volledige stapels. De implementatie is gericht op het maken van kanaalneutrale, herbruikbare fragmenten van inhoud en de levering ervan via meerdere kanalen. Met AEM krachtige vertaalgereedschappen kunnen deze herbruikbare fragmenten eenvoudig worden vertaald en aan uw publiek worden geleverd, waar ze zich ook bevinden.
 
 Deze gids leidt u door de belangrijkste hoofdloze vertaalonderwerpen zodat u na voltooiing:
 
-* Heb een overzicht van wat de levering van inhoud zonder kop is.
+* Heb een overzicht van wat koploze inhoudlevering is.
 * U hebt een basiskennis AEM functies zonder kop.
 * Begrijp AEM vertaalfuncties en hoe deze verwant zijn aan inhoud zonder kop.
 * De mogelijkheid hebben om uw eigen inhoud zonder kop te vertalen.
@@ -34,9 +34,9 @@ Als u al vertrouwd bent met AEM, zonder kop en vertaling, hebt u wellicht al de 
 
 [Een documentatiereis](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert hoe te om hoofdloze zaken met AEM op te lossen, [Reizen zonder kop AEM](/help/journey-headless/home.md) zijn waar te beginnen.
+Als u wilt weten hoe de Adobe adviseert om zaken zonder kop met AEM op te lossen, [AEM zonder kop reizen](/help/journey-headless/home.md) zijn waar te beginnen.
 
 ## Publiek {#audience}
 
@@ -59,11 +59,11 @@ Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige i
 
 U zult vele onderwerpen in deze reis onderzoeken. De volgende artikelen geven u grondkennis van het vertalen van inhoud zonder kop in AEM en koppelen naar gedetailleerde technische documentatie.
 
-Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom adviseren wij als u nieuw bent aan hoofdloze vertaling in AEM, dat u bij het begin begint en opeenvolgend vordert.
+Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen vele concepten op degenen in vorige artikelen. Daarom als u in AEM niet gewend bent aan krantenloze vertaling, adviseert de Adobe dat u bij het begin begint en opeenvolgend vordert.
 
 | Aantal | Artikel | Beschrijving |
 |---|---|---|
-| 0 | AEM doorlopende vertaalreis | Dit document |
+| 0 | AEM doorsnedenloze vertaalreis | Dit document |
 | 1 | [Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM](learn-about.md) | Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling. |
 | 2 | [Ga aan de slag met AEM headless vertaling](getting-started.md) | Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken. |
 | 3 | [De vertaalaansluiting configureren](configure-connector.md) | Leer hoe u verbinding AEM maken met een vertaalservice. |
@@ -73,7 +73,7 @@ Hoewel u rechtstreeks naar een bepaald gedeelte van de reis kunt gaan, bouwen ve
 
 ## Volgende functies {#what-is-next}
 
-U bent nu klaar om aan de slag te gaan met uw Adobe-vertaalreis zonder kop. We raden u aan door te gaan naar het volgende deel van de reis en het artikel te lezen [Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM](learn-about.md)
+U bent nu klaar om aan de slag te gaan met uw Adobe zonder hoofd-vertaalreis. We raden u aan door te gaan naar het volgende deel van de reis en het artikel te lezen [Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM](learn-about.md)
 
 ## Aanvullende bronnen {#additional-resources}
 

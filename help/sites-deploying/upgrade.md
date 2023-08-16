@@ -8,9 +8,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 722d544c-c342-4c1c-80e5-d0a1244f4d36
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Hieronder vindt u een aantal belangrijke wijzigingen in de laatste paar versies 
 
 AEM 6.0 introduceerde de nieuwe opslagplaats voor jakobak. Persistence Managers zijn vervangen door [Micro Kernels](/help/sites-deploying/platform.md#contentbody_title_4). Vanaf versie 6.1 wordt CRX2 niet meer ondersteund. Een migratiehulpmiddel genoemd crx2oak moet worden in werking gesteld om CRX2 bewaarplaatsen van 5.6.1 instanties te migreren. Zie voor meer informatie [Het CRX2OAK-migratiehulpprogramma gebruiken](/help/sites-deploying/using-crx2oak.md).
 
-Als Assets Insights wordt gebruikt en u een upgrade uitvoert van een versie ouder dan AEM 6.2, moeten elementen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. Voor interne tests van Adobe zijn er 125K op een TarMK-omgeving gemigreerd in een uur, maar de resultaten kunnen afwijken.
+Als Assets Insights wordt gebruikt en u een upgrade uitvoert van een versie ouder dan AEM 6.2, moeten elementen worden gemigreerd en id&#39;s worden gegenereerd via een JMX-boon. Voor de interne tests van de Adobe, werden 125K activa op een milieu TarMK gemigreerd in een uur, maar uw resultaten kunnen variëren.
 
 6.3 introduceert een nieuw formaat voor de `SegmentNodeStore`, die de basis vormt van de TarMK-implementatie. Als u een upgrade uitvoert van een versie die ouder is dan AEM 6.3, is hiervoor een migratie naar de opslagplaats vereist als onderdeel van de upgrade, met inbegrip van systeemdowntime.
 
@@ -61,9 +61,9 @@ De opdrachtregelgebruiksopties voor het gereedschap crx2oak zijn gewijzigd en zi
 
 De controles na de upgrade zijn ook automatiseringsvriendelijk gemaakt.
 
-De periodieke vuilinzameling van revisies en de inzameling van de gegevensopslag zijn nu routinematige onderhoudstaken die periodiek moeten worden uitgevoerd. Met de introductie van AEM 6.3 ondersteunt en raadt Adobe u aan om de revisie online op te schonen. Zie [Revisie opschonen](/help/sites-deploying/revision-cleanup.md) voor informatie over hoe te om deze taken te vormen.
+De periodieke vuilinzameling van revisies en de inzameling van het huisvuil van de gegevensopslag zijn nu routinematige onderhoudstaken die periodiek moeten worden uitgevoerd. Met de introductie van AEM 6.3 biedt Adobe ondersteuning voor en raadt u aan om de revisie online op te schonen. Zie [Revisie opschonen](/help/sites-deploying/revision-cleanup.md) voor informatie over hoe te om deze taken te vormen.
 
-AEM onlangs de [Patroondetector](/help/sites-deploying/pattern-detector.md) voor beoordeling van de complexiteit van de upgrade wanneer u de upgrade plant. 6.5 Ook wordt er sterk op gefocust [achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md) van functies. Tot slot, beste praktijken voor [duurzame upgrades](/help/sites-deploying/sustainable-upgrades.md) worden ook toegevoegd.
+AEM heeft onlangs de [Patroondetector](/help/sites-deploying/pattern-detector.md) voor beoordeling van de complexiteit van de upgrade wanneer u de upgrade plant. 6.5 Ook wordt er sterk op aangedrongen [achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md) van functies. Tot slot, beste praktijken voor [duurzame upgrades](/help/sites-deploying/sustainable-upgrades.md) worden ook toegevoegd.
 
 Zie de volledige releaseopmerkingen voor meer informatie over wat er in recente AEM is gewijzigd:
 
@@ -77,9 +77,9 @@ Het upgraden van AEM is een proces dat uit meerdere stappen bestaat en soms meer
 
 ## Upgradestroom {#upgrade-overview-1}
 
-In het onderstaande diagram wordt de algemene aanbevolen stroom gemarkeerd met de upgradeaanpak. Noteer de verwijzing naar de nieuwe functies die Adobe heeft geïntroduceerd. De upgrade moet beginnen met de patroondetector (zie [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)), waarmee u het pad kunt bepalen dat u wilt gebruiken voor compatibiliteit met AEM 6.4 op basis van de patronen in het gegenereerde rapport.
+In het onderstaande diagram wordt de algemene aanbevolen stroom gemarkeerd met de upgradeaanpak. Let op de nieuwe functies die de Adobe heeft geïntroduceerd. De upgrade moet beginnen met de patroondetector (zie [De complexiteit van upgrades beoordelen met patroondetector](/help/sites-deploying/pattern-detector.md)), waarmee u het pad kunt bepalen dat u wilt gebruiken voor compatibiliteit met AEM 6.4 op basis van de patronen in het gegenereerde rapport.
 
-Er was een significante nadruk in 6.5 om alle nieuwe eigenschappen achteruit compatibel te houden, maar in gevallen waar u nog enkele achterwaartse verenigbaarheidskwesties ziet, staat de verenigbaarheidswijze u toe om ontwikkeling tijdelijk uit te stellen om uw douanecode volgzaam met 6.5 te houden. Deze aanpak helpt u om ontwikkelinspanningen direct na de upgrade te voorkomen (zie [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
+Er was een significante nadruk in 6.5 om alle nieuwe eigenschappen achteruit compatibel te houden, maar in gevallen waar u nog enkele achterwaartse verenigbaarheidskwesties ziet, laat de verenigbaarheidswijze u ontwikkeling tijdelijk uitstellen om uw douanecode volgzaam met 6.5 te houden. Deze aanpak helpt u om ontwikkelinspanningen direct na de upgrade te voorkomen (zie [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md)).
 
 Tot slot, in uw 6.5 ontwikkelingscyclus, eigenschappen geïntroduceerd onder Duurzame Verbeteringen (zie [Duurzame verbeteringen](/help/sites-deploying/sustainable-upgrades.md)) helpen u de beste praktijken te volgen om toekomstige verbeteringen nog efficiënter en naadloos te maken.
 

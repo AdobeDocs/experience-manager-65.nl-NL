@@ -1,19 +1,19 @@
 ---
-title: Inhoudsarchitectuur
+title: Inhoud architectuur
 description: 'Tips voor het ontwerpen van uw inhoud (tip: alles is inhoud)'
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: bcebbdb4-20b9-4c2d-8a87-013549d686c1
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
-# Inhoudsarchitectuur{#content-architecture}
+# Inhoud architectuur{#content-architecture}
 
 ## Volg David&#39;s model {#follow-david-s-model}
 
@@ -35,19 +35,19 @@ Alles moet in de gegevensopslagruimte worden opgeslagen in plaats van te vertrou
 
 ### Het ontwerpbeginsel &quot;inhoudsmodel eerst&quot; gebruiken {#use-the-content-model-first-design-principle}
 
-Wanneer u een nieuwe functie maakt, begint u altijd eerst met het ontwerpen van de JCR-inhoudsstructuur. Daarna leest u de inhoud en schrijft u deze in de standaardservlets. Dit laat u ervoor zorgen dat uw implementatie goed met uit de doos controlemechanismen van de toegangscontrole werkt en staat u toe om het produceren van onnodige CRUD-Stijl servlets te vermijden.
+Wanneer u een nieuwe functie maakt, begint u altijd eerst met het ontwerpen van de JCR-inhoudsstructuur. Daarna leest u eerst de inhoud en schrijft u deze met de standaard Sling-servlets. Dit laat u ervoor zorgen dat uw implementatie goed met uit de doos controlemechanismen van de toegangscontrole werkt en laat u vermijden producerend onnodige CRUD-Stijl servlets.
 
 ### Wees RESTful {#be-restful}
 
 De servers zouden op resourceTypes in plaats van wegen moeten worden bepaald. Dit maakt het mogelijk om de toegangscontroles van het JCR te gebruiken, aan de principes van het REST te houden, en de middel en middeloplosser te gebruiken die aan ons in het verzoek worden verstrekt. Hierdoor kunnen we ook de scripts wijzigen die URL&#39;s renderen aan de serverzijde zonder dat we URL&#39;s hoeven te wijzigen aan de clientzijde, terwijl implementatiedetails aan de serverzijde voor extra beveiliging worden verborgen.
 
-### Nieuwe knooppunttypen niet definiëren {#avoid-defining-new-node-types}
+### Vermijd het definiëren van nieuwe knooppunttypen {#avoid-defining-new-node-types}
 
 De types van knoop werken op een laag niveau in de infrastructuurlaag en de meeste vereisten kunnen worden voldaan door een sling te gebruiken:resourceType dat aan een nt:unStructured, eik:UnStructured, sling:Omslag of cq:het knooppunttype van de Pagina wordt toegewezen. De types van knoop komen aan schema in de bewaarplaats overeen en het veranderen van knooptypes kan in de weg duur zijn.
 
 ### Naleving van naamgevingsconventies in het JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Het naleven van noemende overeenkomsten voegt consistentie aan uw codebasis toe, verlaagt het veelvoud van onvolkomenheden en verhoogt de snelheid van ontwikkelaars die in het systeem werken. Adobe gebruikt de volgende conventies bij het ontwikkelen van AEM:
+Het naleven van noemende overeenkomsten voegt consistentie aan uw codebasis toe, verlaagt het veelvoud van onvolkomenheden en verhoogt de snelheid van ontwikkelaars die in het systeem werken. De volgende conventies worden door de Adobe gebruikt bij het ontwikkelen van AEM:
 
 * Node-namen
 

@@ -2,7 +2,7 @@
 title: Forms-toepassingen en -taken beheren in AEM Postvak In
 seo-title: Manage Forms applications and tasks in AEM Inbox
 description: Met AEM Inbox kunt u op Forms gerichte workflows starten door toepassingen in te dienen en taken te beheren.
-seo-description: AEM Inbox allows you to launch Forms-centric workflows through submitting applications and manage tasks.
+seo-description: AEM Inbox lets you launch Forms-centric workflows through submitting applications and manage tasks.
 uuid: c6c0d8ea-743f-4852-99d1-69fd50a0994e
 contentOwner: vishgupt
 topic-tags: document_services, publish
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1080'
+source-wordcount: '1078'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Een van de vele manieren om een Forms-centric workflow te starten of activeren i
 
 Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM, waaronder Forms-workflows. Wanneer een formulierwerkstroom met een taakstap Toewijzen wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger. Als de toegewezen persoon een groep is, wordt de taak in het Postvak In van alle groepsleden weergegeven totdat een persoon de taak aanvraagt of delegeert.
 
-De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Voor meer informatie over weergave en filters raadpleegt u [Uw Postvak IN](/help/sites-authoring/inbox.md).
+De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Zie voor meer informatie over weergave en filters [Uw Postvak IN](/help/sites-authoring/inbox.md).
 
 Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken beheren.
 
@@ -34,7 +34,7 @@ Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken be
 ## Toepassing maken {#create-application}
 
 1. Ga naar AEM Postvak IN op https://&#39;[server]:[poort]&#39;/aem/inbox.
-1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Create > Application]**. De pagina Select Application (Toepassing selecteren) wordt weergegeven.
+1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Create > Application]**. De pagina Selecteer toepassing wordt weergegeven.
 1. Selecteer een toepassing en klik op **[!UICONTROL Create]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de gegevens in het adaptieve formulier in en tik op **[!UICONTROL Submit]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
 
 ## Taken beheren {#manage-tasks}
@@ -132,16 +132,16 @@ Een eigenaar van een workflowmodel kan geen items met betrekking tot AEM workflo
 
    * De volgende knooppunten maken in CRX DE op `/oak:index/workflowDataLucene/indexRules/granite:InboxItem/properties` met de respectieve eigenschappen zoals gespecificeerd in de volgende tabel:
 
-      | Knooppunt | Eigenschap | Type |
-      |---|---|---|
-      | sharedWith | sharedWith | TEKENREEKS |
-      | vergrendeld | vergrendeld | BOOLEAN |
-      | geretourneerd | geretourneerd | BOOLEAN |
-      | allowInboxSharing | allowInboxSharing | BOOLEAN |
-      | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
+     | Knooppunt | Eigenschap | Type |
+     |---|---|---|
+     | sharedWith | sharedWith | TEKENREEKS |
+     | vergrendeld | vergrendeld | BOOLEAN |
+     | geretourneerd | geretourneerd | BOOLEAN |
+     | allowInboxSharing | allowInboxSharing | BOOLEAN |
+     | allowExplicitSharing | allowExplicitSharing | BOOLEAN |
 
 
-   * Implementeer de indices via een AEM. U kunt een [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project om een implementeerbaar AEM pakket te maken. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen.
+   * Implementeer de indices via een AEM. U kunt een [AEM Archetype](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/using.html?lang=en) project om een implementeerbaar AEM pakket te maken. Gebruik de volgende steekproefcode om indexen aan een project van het type van AEM toe te voegen Archetype:
 
    ```Java
       .property("sharedWith", "sharedWith").type(TYPENAME_STRING).propertyIndex()

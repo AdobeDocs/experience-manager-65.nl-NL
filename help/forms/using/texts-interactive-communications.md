@@ -1,7 +1,7 @@
 ---
 title: Teksten in interactieve communicatie
 seo-title: Text in Interactive Communications
-description: Het creëren en het uitgeven van tekstdocumentfragmenten die in Interactieve Mededelingen moeten worden gebruikt - de tekst is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn voorwaarden, lijsten, en lay-outfragmenten.
+description: Het creëren en het uitgeven van tekstdocumentfragmenten die in Interactieve Mededelingen moeten worden gebruikt - de tekst is één van de vier soorten documentfragmenten die worden gebruikt om Interactieve Mededelingen te bouwen. De andere drie zijn voorwaarden, lijsten en layoutfragmenten.
 seo-description: Creating and editing text document fragments to be used in Interactive Communications
 uuid: fdac3dd8-c6d0-418e-b969-fc791b7bd509
 topic-tags: interactive-communications
@@ -10,7 +10,7 @@ discoiquuid: f04050f8-42de-4ef0-b6ed-145d59bbffce
 docset: aem65
 feature: Interactive Communication
 exl-id: b8e84c5d-2ec8-4575-9eed-6b37b04e5d66
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2423'
 ht-degree: 0%
@@ -25,10 +25,10 @@ Een tekstdocumentfragment bestaat uit een of meer tekstalinea&#39;s. Een alinea 
 
 Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende type dynamische gegevens:
 
-* **Gegevensmodelobjecten**: De gegevenseigenschappen gebruiken een achtereind gegevensbron.
+* **Gegevensmodelobjecten**: De gegevenseigenschappen gebruiken een back-end gegevensbron.
 * **Op regels gebaseerde inhoud**: Delen van inhoud in een tekst die worden weergegeven of verborgen op basis van een regel. Een regel kan ook worden gebaseerd op eigenschappen en variabelen van het formuliergegevensmodel.
-* **Variabelen**: In tekstdocumentfragment zijn variabelen niet gebonden aan een achterwaartse gegevensbron. De agent vult in/selecteert waarden in variabelen of bindt de variabelen aan gegevensbronnen terwijl het voorbereiden van de Interactieve Mededeling voor het voorleggen van het aan een postproces.
-* **Herhalen**: U kunt dynamische informatie in uw Interactieve Communicatie, zoals transacties in een creditcardverklaring hebben, waarvan het aantal voorkomen met elke geproduceerde Interactieve Communicatie kan blijven veranderen. Met Herhaling kunt u dergelijke dynamische informatie opmaken en structureren. Zie voor meer informatie [Inline voorwaarde en herhalen](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
+* **Variabelen**: In tekstdocumentfragment zijn variabelen niet gebonden aan een gegevensbron met een back-end. De agent vult in/selecteert waarden in variabelen of bindt de variabelen aan gegevensbronnen terwijl het voorbereiden van de Interactieve Mededeling voor het voorleggen van het aan een postproces.
+* **Herhalen**: U kunt dynamische informatie in uw Interactieve Communicatie, zoals transacties in een creditcardverklaring hebben, waarvan het aantal voorkomen met elke geproduceerde Interactieve Mededeling kan blijven veranderen. Met Herhaling kunt u dergelijke dynamische informatie opmaken en structureren. Zie voor meer informatie [Inline voorwaarde en herhalen](https://helpx.adobe.com/experience-manager/6-3/forms/using/cm-inline-condition.html).
 
 ## Tekst maken {#createtext}
 
@@ -58,6 +58,7 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
       * [Opgemaakte tekst uit andere toepassingen kopiëren](#paste)
 
       * [Tekstgedeelten markeren](#highlight)
+
    * [Herhalen](/help/forms/using/cm-inline-condition.md)
    * [Speciale tekens](#special)
    * [Tekst zoeken en vervangen](#searching)
@@ -65,7 +66,7 @@ Het tekstdocumentfragment in Interactive Communication ondersteunt het volgende 
 
    >[!NOTE]
    >
-   >U kunt formuliergegevensmodelelementen, gegevenswoordenboekelementen en variabelen toevoegen met het @-symbool in de teksteditor. Wanneer u een tekenreeks opgeeft die wordt voorafgegaan door @ in de teksteditor, worden alle elementen van het gegevensmodel, elementen van het gegevenswoordenboek en variabelen doorzocht en worden elementen of variabelen met de doorzochte tekenreeks weergegeven. U kunt door de onderzoeksresultaten navigeren en een element of een variabele selecteren. Als er geen overeenkomend resultaat is, wordt *Geen overeenkomende resultaten gevonden* bericht wordt weergegeven.
+   >U kunt formuliergegevensmodelelementen, gegevenswoordenboekelementen en variabelen toevoegen met het @-symbool in de teksteditor. Wanneer u een tekenreeks opgeeft die wordt voorafgegaan door @ in de teksteditor, worden alle elementen van het gegevensmodel, gegevenswoordenboek en variabelen doorzocht en worden elementen of variabelen met de doorzochte tekenreeks weergegeven. U kunt door de onderzoeksresultaten navigeren en een element of een variabele selecteren. Als er geen overeenkomend resultaat is, wordt *Geen overeenkomende resultaten gevonden* bericht wordt weergegeven.
 
 1. Tik op **[!UICONTROL Save]**.
 
@@ -78,8 +79,8 @@ U kunt een bestaand tekstdocumentfragment bewerken met de volgende stappen. U ku
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Navigeer naar een tekstdocumentfragment en selecteer het.
 1. Tik op **[!UICONTROL Edit]**.
-1. Breng de gewenste wijzigingen aan. Voor meer informatie over opties in tekst raadpleegt u [Tekst maken](#createtext).
-1. Tikken **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]**.
+1. Breng de gewenste wijzigingen aan. Zie voor meer informatie over opties in tekst [Tekst maken](#createtext).
+1. Tikken **[!UICONTROL Save]** en tikt u vervolgens op **[!UICONTROL Close]**.
 
 ## Een tekstdocumentfragment aanpassen met eigenschappen van het formuliergegevensmodel {#formdatamodel}
 
@@ -91,7 +92,7 @@ Als u een formuliergegevensmodel hebt opgegeven tijdens het maken van een tekst,
 
 * Als u een eigenschap van een formuliergegevensmodel in tekst wilt invoegen, plaatst u de cursor op de plaats waar u de eigenschap wilt invoegen en selecteert u vervolgens de eigenschap **[A]** eigenschap in het linkerdeelvenster door erop te tikken en te tikken **[!UICONTROL [B] Add Selected]**. U kunt ook dubbeltikken op de eigenschap om deze in te voegen in het dialoogvenster **[C]** cursorpositie. Eigenschappen van het formuliergegevensmodel worden gemarkeerd in een bruine achtergrondkleur.
 
-U kunt ook de eigenschap van het formuliergegevensmodel zoeken en toevoegen met het symbool @ in de teksteditor. Plaats de cursor op de plaats waar u de eigenschap wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel die beschikbaar zijn in het documentfragment. De eigenschappen of variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het bezit dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
+U kunt ook de eigenschap van het formuliergegevensmodel zoeken en toevoegen met het symbool @ in de teksteditor. Plaats de cursor op de plaats waar u de eigenschap wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel in het documentfragment. De eigenschappen of variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik het bezit dat u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
 * Om de agenten toe te staan om de waarde van een modelbezit van vormgegevens in de agent UI uit te geven terwijl [Interactieve communicatie voorbereiden en verzenden](/help/forms/using/prepare-send-interactive-communication.md) Tik met de gebruikersinterface van de agent op de **[D]** vergrendelingspictogram voor die eigenschap en controleer of deze zich in een ontgrendelde toestand bevindt. De standaardstaat van het bezit is gesloten en een agent kan niet het bezit in de Agent UI uitgeven.
 
@@ -124,8 +125,8 @@ Tijdens het maken of bewerken van een tekstdocumentfragment kunt u variabelen ma
 1. Voer de volgende gegevens in en tik op **[!UICONTROL Create]**:
 
    * **[!UICONTROL Name]** : Naam van de variabele.
-   * **[!UICONTROL Description]** : Voer desgewenst een beschrijving van de variabele in.
-   * **[!UICONTROL Type]** : Selecteer een type variabele: Tekenreeks, Aantal, Boolean of Datum.
+   * **[!UICONTROL Description]** : Voer optioneel een beschrijving van de variabele in.
+   * **[!UICONTROL Type]** : Selecteer een type variabele: String, Number, Boolean of Date.
    * **[!UICONTROL Allow Specific Values Only]** : Voor de variabelen van het Koord en van het Aantal, kunt u ervoor zorgen dat de agent van een specifieke reeks waarden voor placeholder in de Agent UI kiest. Als u de reeks waarden wilt opgeven, selecteert u deze optie en geeft u door komma&#39;s gescheiden waarden op die zijn toegestaan in het dialoogvenster **[!UICONTROL Values]** veld.
 
 1. Tik op **[!UICONTROL Create]**.
@@ -138,7 +139,7 @@ Tijdens het maken of bewerken van een tekstdocumentfragment kunt u variabelen ma
 
    Variabelen worden gemarkeerd in lichtblauwe achtergrondkleur, terwijl eigenschappen van het formuliergegevensmodel worden gemarkeerd in een bruine kleur.
 
-   U kunt ook variabelen zoeken en toevoegen met het @-symbool in de teksteditor. Plaats de cursor op de plaats waar u de variabele wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel die beschikbaar zijn in het documentfragment. De eigenschappen en variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik de variabele die u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
+   U kunt ook variabelen zoeken en toevoegen met het @-symbool in de teksteditor. Plaats de cursor op de plaats waar u de variabele wilt invoegen. Typ @ gevolgd door de zoekreeks. De zoekbewerking wordt uitgevoerd op alle eigenschappen en variabelen van het formuliergegevensmodel in het documentfragment. De eigenschappen en variabelen die de zoekreeks bevatten, worden opgehaald en weergegeven als een vervolgkeuzelijst. Navigeer door de onderzoeksresultaten en klik de variabele die u bij de cursorplaats wilt opnemen. Druk op Esc om de zoekresultaten te verbergen.
 
 1. Tik op **[!UICONTROL Save]**.
 
@@ -184,7 +185,7 @@ Met de regeleditor in een tekst kunt u regels maken voor het weergeven of verber
 
    Regel om de geselecteerde tekst te tonen als de plaats van de ontvanger volgens de brongegevens van FDM US is
 
-   * Tijdens het maken of bewerken van een regel kunt u ook tikken op ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken/regel bewerken uit te vouwen. Met het uitgebreide dialoogvenster van een volledig venster kunt u eigenschappen en variabelen van het formuliergegevensmodel slepen en neerzetten om regels samen te stellen. Tik nogmaals op Grootte wijzigen om terug te gaan naar het dialoogvenster Regel maken.
+   * Tijdens het maken of bewerken van een regel kunt u ook tikken ![icon_resize](assets/icon_resize.png) (Formaat wijzigen) om het dialoogvenster Regel maken/regel bewerken uit te vouwen. Met het dialoogvenster Uitgebreide en volledig venster kunt u eigenschappen en variabelen van het formuliergegevensmodel slepen en neerzetten om regels samen te stellen. Tik nogmaals op Grootte wijzigen om terug te gaan naar het dialoogvenster Regel maken.
    * U kunt ook meerdere voorwaarden in een regel maken.
    * U kunt ook overlappende regels maken, waarin een regel wordt toegepast op een deel van een inhoud waarop al een regel is toegepast.
 
@@ -202,7 +203,7 @@ Tijdens het maken of bewerken van tekst verandert de werkbalk afhankelijk van he
 
 ![Type werkbalk selecteren](do-not-localize/toolbarselection.png)
 
-Selecteer een type werkbalk: Alinea, Uitlijning of Lijst
+Selecteer het type werkbalk: Alinea, Uitlijning of Lijst
 
 ![Werkbalk voor bewerken van lettertypen](do-not-localize/paragraphtoolbar.png)
 
@@ -260,18 +261,18 @@ Teksteditor heeft ingebouwde ondersteuning voor 210 speciale tekens. De beheerde
 
 Wanneer u werkt met tekstdocumentfragmenten die een grote hoeveelheid tekst bevatten, moet u zoeken naar een specifieke tekstreeks. U moet mogelijk ook een specifieke tekenreeks vervangen door een alternatieve tekenreeks.
 
-Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstdocumentfragment zoeken (en vervangen). De functie bevat ook een krachtige zoekopdracht met een reguliere expressie.
+Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstdocumentfragment zoeken en vervangen. De functie bevat ook een krachtige zoekopdracht met een reguliere expressie.
 
 1. Een tekstdocumentfragment openen voor [bewerken](#edittext).
 1. Tik op **[!UICONTROL Find & Replace]**.
 
-1. Voer de tekst in die u wilt zoeken in het dialoogvenster **[!UICONTROL Find]** tekstvak en de nieuwe tekst (vervangende tekst) in het tekstvak **[!UICONTROL Replace]** tekstvak en tikken **[!UICONTROL Replace]**.
+1. Voer de tekst in die u wilt zoeken in het dialoogvenster **[!UICONTROL Find]** en de nieuwe tekst (vervangende tekst) in het tekstvak **[!UICONTROL Replace]** tekstvak en tikken **[!UICONTROL Replace]**.
 
 1. Als de gezochte tekst wordt gevonden, wordt de tekst vervangen door de vervangingstekst.
 
    * Als er een ander exemplaar van de zoektekst wordt gevonden, wordt dat exemplaar gemarkeerd in het tekstdocumentfragment. Als u tikt op **[!UICONTROL Replace]** ook hier wordt de gemarkeerde instantie vervangen en de cursor gaat verder als er een derde instantie wordt gevonden.
-   * Als er geen ander exemplaar wordt gevonden, wordt in het dialoogvenster Zoeken en vervangen een bericht weergegeven: Einde van module bereikt.
+   * Als er geen andere instantie wordt gevonden, wordt in het dialoogvenster Zoeken en vervangen een bericht weergegeven: Einde van module bereikt.
 
    U kunt ook op Alles vervangen tikken om alle overeenkomsten in één keer te vervangen.
 
-   Zoeken en vervangen bevat ook een krachtige zoekopdracht voor reguliere expressies. Als u regex wilt gebruiken in uw zoekopdracht, selecteert u **[!UICONTROL Reg ex]** en tik vervolgens op **[!UICONTROL Find]** of **[!UICONTROL Replace]**.
+   Zoeken en vervangen bevat ook een krachtige zoekopdracht voor reguliere expressies. Als u regex wilt gebruiken in uw zoekopdracht, selecteert u **[!UICONTROL Reg ex]** en tikt u vervolgens op **[!UICONTROL Find]** of **[!UICONTROL Replace]**.

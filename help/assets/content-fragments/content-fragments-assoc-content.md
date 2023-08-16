@@ -4,7 +4,7 @@ description: Begrijp hoe AEM bijbehorende inhoudseigenschap de verbinding verstr
 feature: Content Fragments
 role: User
 exl-id: 8b93fd6e-47d1-46fd-901b-621caa25be7b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 4%
@@ -27,14 +27,14 @@ Als u de koppeling wilt maken, moet u eerst [media-elementen toevoegen aan een v
 
    ![Gekoppelde inhoud](assets/cfm-assoc-content-01.png)
 
-1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u een van de volgende opties:
+1. Afhankelijk van het feit of er al verzamelingen zijn gekoppeld of niet, selecteert u:
 
    * **Inhoud koppelen** - dit wordt de eerste bijbehorende verzameling
-   * **Verzameling koppelen** - bijbehorende verzamelingen zijn al geconfigureerd
+   * **Verzameling koppelen** - bijbehorende verzamelingen die al zijn geconfigureerd
 
 1. Selecteer de gewenste verzameling.
 
-   U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
+   U kunt desgewenst het fragment zelf toevoegen aan de geselecteerde verzameling. Dit is nuttig bij het bijhouden van gegevens.
 
    ![Verzameling selecteren](assets/cfm-assoc-content-02.png)
 

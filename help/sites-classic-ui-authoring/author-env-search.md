@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 8d32960c-47c3-4e92-b02e-ad4d8fea7b2d
 docset: aem65
 exl-id: 1f46a57f-4966-4dd1-8c99-c0740718ae76
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 >
 >Buiten de auteursomgeving zijn andere mechanismen ook beschikbaar voor het zoeken, zoals [Query Builder](/help/sites-developing/querybuilder-api.md) en [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Grondbeginselen van zoekopdrachten {#search-basics}
+## Basisinformatie zoeken {#search-basics}
 
 Als u het deelvenster Zoeken wilt openen, klikt u op de knop **Zoeken** aan de bovenkant van de linkerruit van de aangewezen console.
 
@@ -35,7 +35,7 @@ Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het beva
 * **Fulltext**: Zoeken naar de opgegeven tekst
 * **Gewijzigd na/vóór**: Alleen de pagina&#39;s zoeken die zijn gewijzigd tussen de specifieke datums
 * **Sjabloon**: Alleen die pagina&#39;s zoeken op basis van de opgegeven sjabloon
-* **Tags**: Alleen de pagina&#39;s met de opgegeven tags doorzoeken
+* **Tags**: Alleen de pagina&#39;s met de opgegeven tags zoeken
 
 >[!NOTE]
 >
@@ -49,7 +49,6 @@ Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het beva
 >* [Verhogen](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
 >
 
-
 De zoekopdracht uitvoeren door op **Zoeken** onder aan het deelvenster. Klikken **Herstellen** de zoekcriteria te wissen.
 
 ## Filter {#filter}
@@ -60,7 +59,7 @@ Op verschillende locaties kan een filter worden ingesteld (en gewist) om de weer
 
 ## Zoeken en vervangen {#find-and-replace}
 
-In de **Websites** console a **Zoeken en vervangen** kunt u in een sectie van de website naar meerdere instanties van een tekenreeks zoeken en deze vervangen.
+In de **Websites** console a **Zoeken en vervangen** met de menuoptie kunt u zoeken naar meerdere instanties van een tekenreeks in een sectie van de website en deze vervangen.
 
 1. Selecteer de hoofdpagina, of map, waar de zoek- en vervangactie moet plaatsvinden.
 1. Selecteren **Gereedschappen** dan **Zoeken en vervangen**:

@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: ada61b87753f3f3e70acdca0e946428511bd7b00
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2788'
+source-wordcount: '2784'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ Inhoudsfragmenten met gestructureerde inhoud (d.w.z. gebaseerd op een inhoudsfra
 
 * Alle inhoud wordt opgeslagen onder de `jcr:content/data` knooppunt van het element:
 
-   * De elementgegevens worden opgeslagen onder het master subknooppunt:
+   * De elementgegevens worden opgeslagen onder het hoofdsubknooppunt:
      `jcr:content/data/master`
 
    * Variaties worden opgeslagen onder een subknooppunt met de naam van de variatie: bijvoorbeeld `jcr:content/data/myvariation`
@@ -297,7 +297,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
 * **Inhoudsfragment** ([ContentFragment](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/ContentFragment.html))
 
-  Met deze interface kunt u op abstracte wijze werken met een inhoudsfragment.
+  Met deze interface kunt u op abstracte wijze met een inhoudsfragment werken.
 
   >[!CAUTION]
   >

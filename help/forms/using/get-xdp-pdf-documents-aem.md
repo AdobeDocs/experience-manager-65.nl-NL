@@ -2,7 +2,7 @@
 title: XDP- en PDF-documenten ophalen in AEM Forms
 seo-title: Getting XDP and PDF documents in AEM Forms
 description: Met AEM Forms kunt u formulieren en ondersteunde elementen uploaden en gebruiken met adaptieve formulieren. U kunt uploadformulieren en verwante bronnen ook als een ZIP-bestand bulksgewijs verzenden.
-seo-description: AEM Forms allows you to upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
+seo-description: AEM Forms lets you upload forms and supported assets to use with adaptive forms. You can also bulk upload forms and related resources as a ZIP.
 uuid: cd49b4a8-c282-4059-95a0-c98f6c92ab14
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +11,9 @@ discoiquuid: 28b9f1d6-6a52-458f-a8ed-a206502eda0d
 docset: aem65
 role: Admin
 exl-id: 9ecdc50a-31e3-46ae-948a-d1f6e6085734
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '673'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U 
 
 >[!NOTE]
 >
->Zorg ervoor dat u lid bent van de `form-power-users` groep die XDP-bestanden kan uploaden. Neem contact op met de beheerder om lid te worden van de groep.
+>Zorg ervoor dat u lid bent van de `form-power-users` te uploaden XDP-bestanden. Neem contact op met de beheerder om lid te worden van de groep.
 
-## Formulieren uploaden {#uploading-forms}
+## Formulieren downloaden {#uploading-forms}
 
 1. Meld u aan bij de gebruikersinterface van AEM Forms via `https://'[server]:[port]'/aem/forms.html`.
 1. Navigeer naar de map waarin u het formulier of de map met formulieren wilt uploaden.
@@ -81,7 +81,7 @@ Voor een adaptief formulier dat verwijst naar een XFA, zijn de velden gebonden a
 Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formulier of de afhankelijke formuliersjabloon beschadigd. Een dergelijk adaptief formulier wordt soms informeel een vuile vorm genoemd. In de gebruikersinterface van AEM Forms kunt u op de volgende twee manieren de vuile formulieren vinden.
 
 * Er wordt een waarschuwingspictogram weergegeven op de miniatuur van het aangepaste formulier in de lijst met elementen. Het volgende bericht wordt weergegeven wanneer u de aanwijzer boven het waarschuwingspictogram houdt.\
-   `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
+  `Schema/Form Template for this adaptive form has been updated so please go to Authoring mode and rebase it with new version.`
 
 ![Waarschuwing voor een adaptief formulier dat niet gesynchroniseerd is na het bijwerken van de bijbehorende XFA](assets/dirtyaf.png)
 

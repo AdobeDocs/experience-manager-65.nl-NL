@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 3e6eba85dbd9e98ac29fed55c1787e5633bafc04
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '10683'
+source-wordcount: '10678'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ De Central Migration Bridge-service ( `CentralMigrationBridge`) roept een subset
 
 De volgende instelling is beschikbaar voor de Central Migration Bridge-service.
 
-**Centrale installatiemap:** De map waarin Adobe Central 5.7 is geïnstalleerd.
+**Centrale installatiemap:** De directory waarin Adobe Central 5.7 is geïnstalleerd.
 
 ## Content Repository Connector voor EMC Documentum service settings {#content-repository-connector-for-emc-documentum-service-settings}
 
@@ -115,9 +115,9 @@ De service Convert PDF ( `ConvertPdfService`) converteert PDF-documenten naar Po
 
 De volgende instellingen zijn beschikbaar voor de service PDF converteren.
 
-**Transactietype:** Specificeert hoe een transactiecontext aan een verrichting zou moeten worden verspreid.
+**Type transactie:** Specificeert hoe een transactiecontext aan een verrichting zou moeten worden verspreid.
 
-**Vereist:** steunt een transactiecontext als één bestaat; anders wordt een nieuwe transactiecontext gecreëerd. Dit is de standaardwaarde.
+**Vereist:** Steunt een transactiecontext als één bestaat; anders, wordt een nieuwe transactiecontext gecreeerd. Dit is de standaardwaarde.
 
 **Nieuwe vereisten:** Creeert altijd een nieuwe transactiecontext. Als er een actieve transactiecontext bestaat, wordt deze opgeschort.
 
@@ -149,9 +149,9 @@ De volgende instellingen zijn beschikbaar voor de Distiller-service.
 * Kleinste bestandsgrootte
 * Standaard
 
-U kunt nieuwe instellingen maken via de gebruikersinterface van PDF Generator.
+U kunt nieuwe instellingen maken via de gebruikersinterface van de PDF Generator.
 
-**Beveiligingsinstellingen:** Vooraf geconfigureerde beveiligingsinstellingen die worden toegepast op gegenereerde PDF-documenten. De standaardwaarde is Geen beveiliging. U moet beveiligingsinstellingen maken met de PDF Generator en de instelling hier invoeren.
+**Beveiligingsinstellingen:** Vooraf geconfigureerde beveiligingsinstellingen die worden toegepast op gegenereerde PDF-documenten. De standaardwaarde is Geen beveiliging. U moet beveiligingsinstellingen maken met PDF Generator en vervolgens hier de instelling invoeren.
 
 **Poolgrootte:** De aanvankelijke grootte van de pool. Wanneer de dienst van Distiller wordt opgesteld, wordt dit aantal gebruikt om het aantal instanties van de de dienstimplementatie te bepalen die worden gecreeerd en aan de vrije pool toegewezen wachtend op aanroepingsverzoeken. De de dienstcontainer kan dan onmiddellijk aan aanroepingsverzoeken antwoorden zonder het moeten een de dienstinstantie eerst initialiseren.
 
@@ -159,7 +159,7 @@ U kunt nieuwe instellingen maken via de gebruikersinterface van PDF Generator.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Levenscyclusdocument van product Adoben](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 De service Documentbeheer ( `DocumentManagementService`) laat processen toe om de functionaliteit van het inhoudbeheer te gebruiken die door de Diensten van de Inhoud (Vervangen) wordt verstrekt. De verrichtingen van het Beheer van het document verstrekken basistaken die worden vereist om ruimten en inhoud in het systeem van het inhoudsbeheer te handhaven. Voorbeelden van dergelijke taken zijn kopiëren, verwijderen, verplaatsen, ophalen en opslaan, spaties en koppelingen maken en inhoudskenmerken ophalen en instellen.
 
@@ -183,7 +183,7 @@ De volgende instellingen zijn beschikbaar voor de e-mailservice.
 
 **SMTP-verificatie:** Selecteer als gebruikersauthentificatie wordt vereist om met de server te verbinden SMTP.
 
-**SMTP-gebruiker:** De gebruikersnaam van de gebruikersaccount die moet worden gebruikt om zich aan te melden bij de SMTP-server.
+**SMTP-gebruiker:** De gebruikersnaam van de gebruikersrekening aan login aan de server SMTP te gebruiken.
 
 **SMTP-wachtwoord:** Het wachtwoord dat aan de SMTP gebruikersrekening wordt geassocieerd.
 
@@ -195,9 +195,9 @@ De volgende instellingen zijn beschikbaar voor de e-mailservice.
 
 **POP3/IMAP-host:** Het IP-adres of de URL van de POP3- of IMAP-server die moet worden gebruikt voor het verzenden van e-mail.
 
-**POP3/IMAP-gebruikersnaam:** De gebruikersnaam van de gebruikersaccount die moet worden gebruikt om u aan te melden bij de POP3- of IMAP-server.
+**POP3/IMAP-gebruikersnaam:** De gebruikersnaam van de gebruikersaccount die moet worden gebruikt voor aanmelding bij de POP3- of IMAP-server.
 
-**POP3/IMAP-wachtwoord:** Het wachtwoord dat is gekoppeld aan de POP3- of IMAP-gebruikersaccount.
+**POP3/IMAP-wachtwoord:** Het wachtwoord dat aan POP3 of IMAP gebruikersrekening wordt geassocieerd.
 
 **POP3/IMAP-poortnummer:** De poort die wordt gebruikt om verbinding te maken met de POP3- of IMAP-server.
 
@@ -239,7 +239,7 @@ De volgende instellingen zijn beschikbaar voor de FTP-service.
 
 **Standaardpoort:** De poort die wordt gebruikt om verbinding te maken met de FTP-server. De standaardwaarde is 21.
 
-**Standaardgebruikersnaam:** De naam van de gebruikersaccount die u kunt gebruiken om toegang te krijgen tot de FTP-server. De gebruikersaccount moet voldoende rechten hebben om de FTP-bewerkingen uit te voeren die deze service vereist.
+**Standaardgebruikersnaam:** De naam van de gebruikersaccount die u kunt gebruiken voor toegang tot de FTP-server. De gebruikersaccount moet voldoende rechten hebben om de FTP-bewerkingen uit te voeren die deze service vereist.
 
 **Standaardwachtwoord:** Het wachtwoord dat met de opgegeven gebruikersnaam moet worden gebruikt voor verificatie met de FTP-server.
 
@@ -253,7 +253,7 @@ De volgende montages zijn beschikbaar voor de Generate dienst van PDF.
 
 **Beveiligingsinstellingen:** De naam van de vooraf geconfigureerde beveiligingsinstellingen die op een conversietaak moeten worden toegepast, als deze instellingen niet zijn opgegeven als onderdeel van de API-oproepparameters. De beveiligingsinstellingen worden geconfigureerd in de beheerconsole door te klikken op Services > PDF Generator > Beveiligingsinstellingen.
 
-**Instellingen voor bestandstypen:** De naam van de vooraf geconfigureerde instelling voor het bestandstype die op een conversietaak moet worden toegepast, als deze instellingen niet zijn opgegeven als onderdeel van de API-oproepparameters. De instellingen voor bestandstypen worden geconfigureerd in de beheerconsole door te klikken op Services > PDF Generator > Instellingen voor bestandstypen.
+**Instellingen bestandstype:** De naam van de vooraf geconfigureerde instelling voor het bestandstype die op een conversietaak moet worden toegepast, als deze instellingen niet zijn opgegeven als onderdeel van de API-oproepparameters. De instellingen voor bestandstypen worden geconfigureerd in de beheerconsole door te klikken op Services > PDF Generator > Instellingen voor bestandstypen.
 
 **Acrobat WebCapture gebruiken (alleen Windows):** Als deze instelling waar is, gebruikt de service PDF genereren Acrobat X Pro voor alle HTML- naar PDF-omzettingen. Dit kan de kwaliteit van de PDF dossiers verbeteren die van HTML worden geproduceerd, hoewel de prestaties lichtjes kunnen lager zijn. De standaardwaarde is false.
 
@@ -267,7 +267,7 @@ De volgende montages zijn beschikbaar voor de Generate dienst van PDF.
 
 **Grootte HTML tot PDF-pool:** De groepsgrootte van converter HTML aan-PDF in de Generate dienst van PDF. Deze instelling bepaalt de maximale gelijktijdige HTML-naar-PDF-omzettingen die de dienst PDF genereren kan uitvoeren. De standaardwaarde van deze instelling (aanbevolen voor systemen met één processor) is 3, die u kunt verhogen voor systemen met meerdere processors.
 
-**Grootte OCR-pool:** De poolgrootte van de PaperCaptureService die PDF Generator voor OCR gebruikt. De standaardwaarde van deze instelling (aanbevolen voor systemen met één processor) is 3, die u kunt verhogen voor systemen met meerdere processors. Deze instelling is alleen geldig op Windows-systemen.
+**Grootte OCR-pool:** De poolgrootte van de PaperCaptureService die de PDF Generator voor OCR gebruikt. De standaardwaarde van deze instelling (aanbevolen voor systemen met één processor) is 3, die u kunt verhogen voor systemen met meerdere processors. Deze instelling is alleen geldig op Windows-systemen.
 
 **Fontfamilie voor conversie van HTML naar PDF:** De naam van de lettertypefamilie die in PDF-documenten wordt gebruikt wanneer het lettertype dat in de oorspronkelijke HTML wordt gebruikt, niet beschikbaar is op de AEM formulierserver. Geef een lettertypefamilie op als u HTML-pagina&#39;s wilt converteren waarin niet-beschikbare lettertypen worden gebruikt. Pagina&#39;s die zijn geschreven in regionale talen kunnen bijvoorbeeld niet-beschikbare lettertypen gebruiken.
 
@@ -283,7 +283,7 @@ Voer de PDF-conversie opnieuw uit, ongeacht of de time-outdrempel is bereikt. De
 
 **Opnieuw proberen indien tijd dit toelaat**
 
-Voer de PDF-conversie opnieuw uit als de tijd die voor de eerste omzetpoging is verbruikt, korter was dan de opgegeven time-outduur. Als de time-outduur bijvoorbeeld 270 seconden is en de eerste poging 200 seconden heeft geduurd, zal de PDF Generator de conversie hervatten. Als de eerste poging zelf 270 seconden verbruikte, zal de omzetting niet opnieuw worden geprobeerd.
+Voer de PDF-conversie opnieuw uit als de tijd die voor de eerste omzetpoging is verbruikt, korter was dan de opgegeven time-outduur. Als de time-outduur bijvoorbeeld 270 seconden is en de eerste poging 200 seconden heeft geduurd, zal de PDF Generator de conversie hervatten. Als de eerste poging zelf 270 seconden heeft geduurd, wordt de conversie niet opnieuw uitgevoerd.
 
 ## Instellingen voor hulplijnen ES4-hulpprogramma&#39;s {#guides-es4-utilities-service-settings}
 
@@ -291,12 +291,12 @@ Wanneer u een Guide maakt, worden sommige bronnen, zoals de definitie van de Gui
 
 In de meeste gevallen zijn de standaardservices voor het weergeven van hulplijnen voldoende om een hulplijn voor te bereiden voor gebruik in Workspace of andere externe omgevingen. (In de mening van de Diensten, in Workbench, is de standaarddienst Gidsen (systeem)/Processes/Gids van de Rendering - 1.0.) De Guide Utilities-service ( `GuidesUtility`) kunt u, indien nodig, een aangepast proces maken voor het renderen van een Guide.
 
-Met behulp van de Guide-hulpprogramma&#39;s kunt u de volgende rendering van hulplijnen aan een proces toevoegen:
+Met de bewerkingen Hulplijnhulpprogramma kunt u de volgende renderingstaken voor hulplijnen aan een proces toevoegen:
 
 * Bepaal of er gegevens beschikbaar zijn om de Guide te vullen
 * De gegevens van de Guide insluiten of converteren naar een koppeling
 * Inhoud waarnaar wordt verwezen, converteren naar URL&#39;s die extern toegankelijk zijn
-* Vervangende waarden in een HTML-document of andere omslag, of converteer deze naar URL&#39;s die extern toegankelijk zijn
+* Vervangende waarden in een HTML-document of andere omslag, of zet ze om in extern toegankelijke URL&#39;s
 * Verzendlocatie instellen
 * Invoerwaarden opgeven
 * Een parameter maken om inhoud waarnaar wordt verwezen te vertegenwoordigen
@@ -324,7 +324,7 @@ De standaardwaarden voor de Guide Utilities-service ondersteunen de meeste geval
 
 **macOverlapIntervalInMinutes:** Tijdsduur dat de vorige sleutel geldig blijft nadat een nieuwe wordt gegenereerd. De standaardwaarde is 1440 minuten (1 dag).
 
-**macKeySeed:** Een zaadwaarde voor het produceren van veilige URL. Wanneer deze optie is, wordt de sleutel nooit verfrist. Als u hetzelfde zaad op verschillende servers instelt, genereren die servers veilige URL&#39;s die compatibel zijn. Dit kan handig zijn als er meerdere formulierservers worden gebruikt achter een taakverdelingsmechanisme. Voer een willekeurige reeks tekens en cijfers in als het zaad.
+**macKeySeed:** Een zaadwaarde voor het produceren van veilige URL. Wanneer deze optie is, wordt de sleutel nooit verfrist. Als u hetzelfde zaad op verschillende servers instelt, genereren die servers veilige URL&#39;s die compatibel zijn. Dit kan handig zijn als er meerdere formulierservers worden gebruikt achter een taakverdelingsmechanisme. Voer een willekeurige reeks tekens en getallen in als het zaad.
 
 ### Hulplijnen gebruiken in een servercluster {#using-guides-in-a-server-cluster}
 
@@ -334,7 +334,7 @@ Als u Gidsen in een servercluster gebruikt die geen kleverige zittingen gebruikt
 
 De macKeySeed-waarde is het zaad voor de random number generator die wordt gebruikt om de veilige URL&#39;s te genereren. Het plaatsen van deze waarde veroorzaakt elke clusterknoop om de willekeurige aantalgenerator op de zelfde manier te initialiseren, en toegang tot zelfde veilige URLs te hebben. U kunt elke willekeurige tekenreeks voor deze zaadwaarde gebruiken.
 
-Wijzig de macKeySeed-waarde wanneer u de beveiligde URL&#39;s moet vernieuwen. Het vernieuwen van veilige URLs hangt van uw veiligheidsbeleid af, en is gelijkaardig aan verfrist beleid voor het veranderen van het master wortelwachtwoord van de server. De macSeedValue is analoog aan het master wachtwoord voor veilige URLs, omdat het wordt gebruikt om een nieuw uniek willekeurig aantal voor gebruik in veilige het produceren van URL en herwinning te produceren.
+Wijzig de macKeySeed-waarde wanneer u de beveiligde URL&#39;s moet vernieuwen. Het vernieuwen van veilige URLs hangt van uw veiligheidsbeleid af, en is gelijkaardig aan verfrist beleid voor het veranderen van het hoofdwortelwachtwoord van de server. De macSeedValue is analoog aan het hoofdwachtwoord voor veilige URLs, omdat het wordt gebruikt om een nieuw uniek willekeurig aantal voor gebruik in veilige het produceren van URL en herwinning te produceren.
 
 U moet de cluster opnieuw starten omdat macSeedValue alleen-lezen is bij het opstarten van het systeem. Alle knopen moeten opnieuw beginnen om de waarde te lezen, omdat zij het onafhankelijk gebruiken om hun interne willekeurige aantallen met de zaadwaarde te initialiseren.
 
@@ -360,7 +360,7 @@ De volgende instellingen zijn beschikbaar voor de JMS-service.
 
 **WebLogic:** `<server name>:7001`
 
-**WebSphere:** `<server name>:2809`
+**WebSphere** `<server name>:2809`
 
 **JNDI-gebruikersnaam:** De gebruikersnaam van de account die moet worden gebruikt voor verificatie bij de JNDI-serviceprovider die wordt gebruikt voor het opzoeken van wachtrijen en onderwerpnamen. De standaardwaarde is gast.
 
@@ -372,7 +372,7 @@ De volgende instellingen zijn beschikbaar voor de JMS-service.
 
 **WebLogic:** weblogic.jndi.WLInitialContextFactory
 
-**WebSphere:** com.ibm.websphere.naming.WsnInitialContextFactory
+**WebSphere** com.ibm.websphere.naming.WsnInitialContextFactory
 
 **Gebruikersnaam verbinding:** Het wachtwoord dat aan de gebruikersnaam wordt geassocieerd voor de Gebruikersnaam van de Verbinding wordt gespecificeerd. De standaardwaarde is gast.
 
@@ -380,7 +380,7 @@ De volgende instellingen zijn beschikbaar voor de JMS-service.
 
 **Andere eigenschappen:** De naam van het bezit en waardeparen die u aan de JNDI dienstverlener kunt overgaan. Deze eigenschappen hangen van de implementatie en de configuratie van de leverancier af die u gebruikt.
 
-De eigenschapsnaam en waardeparen worden gescheiden door puntkomma&#39;s **;**. De volgende tekst toont bijvoorbeeld de waarde die zou worden opgegeven voor twee eigenschappen met de naam name1 en name2, met respectievelijk waarde1 en waarde2:
+De eigenschapsnaam en waardeparen worden gescheiden door puntkomma&#39;s **;**. De volgende tekst toont bijvoorbeeld de waarde die zou worden opgegeven voor twee eigenschappen met de naam name1 en name2, met respectievelijk de waarden value1 en value2:
 
 `name1=value1;name2=value2`
 
@@ -394,11 +394,11 @@ De volgende instellingen zijn beschikbaar voor de LDAP-service.
 
 **URL provider:** De URL die moet worden gebruikt om verbinding te maken met de LDAP-service. De notatie van de waarde is `ldap://server name:port`
 
-*servernaam* is de naam van de computer die als host fungeert voor de LDAP-server
+*servernaam* is de naam van de computer waarop de LDAP-server wordt gehost
 
 *poort* is de communicatiepoort die de LDAP-service gebruikt. De standaardwaarde is 389. Dit is de standaardpoort die wordt gebruikt voor LDAP-verbindingen.
 
-**Gebruikersnaam:** De gebruikersnaam van de gebruikersaccount die moet worden gebruikt om zich aan te melden bij de LDAP-server. De gebruikersaccount moet toestemming hebben om verbinding te maken met de server en de gegevens in de LDAP-directory te lezen.
+**Gebruikersnaam:** De gebruikersnaam van de gebruikersaccount die moet worden gebruikt voor aanmelding bij de LDAP-server. De gebruikersaccount moet toestemming hebben om verbinding te maken met de server en de gegevens in de LDAP-directory te lezen.
 
 Afhankelijk van de LDAP-server kan de gebruikersnaam een eenvoudige gebruikersnaam zijn, zoals `myname` of een DN, zoals `cn=myname,cn=users,dc=myorg`.
 
@@ -410,7 +410,7 @@ Afhankelijk van de LDAP-server kan de gebruikersnaam een eenvoudige gebruikersna
 
 ## Microsoft SharePoint-configuratieservice {#microsoft-sharepoint-configuration-service-settings}
 
-De Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)`Hiermee kunt u referenties opgeven voor de gebruiker van AEM formulier die imitatierechten heeft. Voor informatie over imitatierechten raadpleegt u [De connector voor Microsoft SharePoint configureren](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+De Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)`Hiermee kunt u referenties opgeven voor de gebruiker van AEM formulier die imitatierechten heeft. Zie voor informatie over imitatierechten [De connector voor Microsoft SharePoint configureren](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 De volgende instellingen zijn beschikbaar voor de Microsoft SharePoint-configuratieservice:
 
@@ -425,7 +425,7 @@ De volgende instellingen zijn beschikbaar voor de Microsoft SharePoint-configura
 
 **Forms-toepassing:** Hiermee schakelt u de Forms-functie in de mobiele clienttoepassingen in. Als deze optie is geselecteerd, kunnen gebruikers formulieren openen en processen starten vanaf hun mobiele apparaten.
 
-**Taken:** Hiermee schakelt u de functie Taken in de mobiele clienttoepassingen in. Als deze optie is geselecteerd, kunnen gebruikers hun taaklijsten openen en taken uitvoeren vanaf hun mobiele apparaten.
+**Taken Toepassing:** Hiermee schakelt u de functie Taken in de mobiele clienttoepassingen in. Als deze optie is geselecteerd, kunnen gebruikers hun taaklijsten openen en taken uitvoeren vanaf hun mobiele apparaten.
 
 **Toepassing van Content Services:** Hiermee schakelt u de functie Content Services in de mobiele clienttoepassing in. Deze functie is alleen beschikbaar voor iOS. Als deze optie is geselecteerd, hebben iPhone- en iPad-gebruikers toegang tot bestanden die zijn opgeslagen op de WebDAV-server van uw organisatie.
 
@@ -464,9 +464,9 @@ De uitvoerstream kan naar een netwerkprinter, een lokale printer of een schijfbe
 
 De volgende instellingen zijn beschikbaar voor de service Uitvoer.
 
-**Transactietype:** Geeft aan hoe een transactiecontext aan een bewerking moet worden doorgegeven:
+**Type transactie:** Geeft aan hoe een transactiecontext aan een bewerking moet worden doorgegeven:
 
-**Vereist:** steunt een transactiecontext als die reeds bestaat; anders wordt een nieuwe transactiecontext gecreëerd. Dit is de standaardwaarde.
+**Vereist:** steunt een transactiecontext als reeds bestaat; anders, wordt een nieuwe transactiecontext gecreeerd. Dit is de standaardwaarde.
 
 **Nieuwe vereisten:** Creeert altijd een nieuwe transactiecontext. Als er een actieve transactiecontext bestaat, wordt deze opgeschort.
 
@@ -484,13 +484,13 @@ De volgende instellingen zijn beschikbaar voor de service PDFG Config ( `PDFGCon
 
 **PS Opstartbestand:** De naam van het opstartbestand dat Adobe Acrobat Distiller nodig heeft. De standaardwaarde is example.ps.
 
-**Time-out serverconversie:** De maximale time-out voor taakconversie (in seconden) voor de service PDF genereren en de Distiller-service. Dit het plaatsen beperkt de maximumomzetonderbreking die in het config.xml- dossier en in de pagina&#39;s van de beleidsconsole voor de Generator van PDF kan worden gespecificeerd. De standaardwaarde is 270.
+**Time-out serverconversie:** De maximale time-out voor taakconversie (in seconden) voor de service PDF genereren en de Distiller-service. Dit het plaatsen beperkt de maximumomzettingstijd die in het config.xml- dossier en in de pagina&#39;s van de beleidsconsole voor PDF Generator kan worden gespecificeerd. De standaardwaarde is 270.
 
-**Globale time-out server:** Tijdens het uitvoeren van PDF-conversies houdt een formulierserver rekening met de time-outlimiet. Configureer de time-outwaarde om het probleem op te lossen.
+**Globale time-out server:** Tijdens het uitvoeren van PDF-conversies houdt een formulierserver rekening met de time-outlimiet. Vorm de onderbrekingswaarde om de kwestie op te lossen.
 
 **Voorvoegsel taakopties:** Een voorvoegsel dat wordt gebruikt door de service PDF genereren om een korte tekenreeks voor te bereiden voor de bestanden met taakopties die tijdelijk worden gemaakt voor gebruik door Acrobat Distiller. De standaardwaarde is pdfg.
 
-**Niet-Unicode-toepassingen:** Een door komma&#39;s gescheiden lijst met toepassingsnamen waarvan bekend is dat ze Unicode-niet kunnen bevatten. Deze lijst is vooraf bevolkt met de namen van verscheidene toepassingen, steun waarvoor in de Generator van PDF vooraf wordt gevormd. Als u ervoor kiest ondersteuning voor PDF-conversies toe te voegen via andere toepassingen van derden die Unicode-niet kunnen gebruiken, moet u deze toevoegen aan deze lijst. De standaardwaarde is Autocad, Excel, PowerPoint, Project, Publisher, Visio, Word, WordPerfect.
+**Niet-Unicode-toepassingen:** Een door komma&#39;s gescheiden lijst met toepassingsnamen waarvan bekend is dat ze Unicode-niet kunnen bevatten. Deze lijst is vooraf bevolkt met de namen van verscheidene toepassingen, steun waarvoor vooraf in PDF Generator wordt gevormd. Als u ervoor kiest ondersteuning voor PDF-conversies toe te voegen via andere toepassingen van derden die Unicode-niet kunnen gebruiken, moet u deze toevoegen aan deze lijst. De standaardwaarde is Autocad, Excel, PowerPoint, Project, Publisher, Visio, Word, WordPerfect.
 
 **Aantal serverthreadpool:** Controls the size of the thread pool that the Generate PDF service uses internal to service HTML-to-PDF conversion request that include spidering (converting linked pages accessible from the main page). De standaardwaarde is 20.
 
@@ -516,11 +516,11 @@ De volgende diensten breiden de Diensten van Gegevens uit en stellen assembleurs
 
 ## Service-instellingen verwijderen {#remoting-service-settings}
 
-De meeste services zijn zo geconfigureerd dat u ze kunt openen via het verwijderen van formulieren (Verouderd voor AEM formulieren) AEM formulieren. Voor informatie over (Vervangen voor AEM formulieren) AEM formulieren Verwijderen, raadpleegt u [Programmeren met AEM formulieren](https://adobe.com/go/learn_aemforms_programming_63).
+De meeste services zijn zo geconfigureerd dat u ze kunt openen via het verwijderen van formulieren (Verouderd voor AEM formulieren) AEM formulieren. Zie voor informatie over (Vervangen voor AEM formulieren) AEM formulieren Verwijderen, [Programmeren met AEM formulieren](https://adobe.com/go/learn_aemforms_programming_63).
 
 De volgende instellingen zijn beschikbaar voor de service Remoting.
 
-**Flex-clientverificatiemethode:** Bepaalt het type van reactie dat de server terug naar de cliënt verzendt wanneer de aangehaalde dienst veiligheid toegelaten is, steunt de aangehaalde verrichting geen anonieme aanroepen, en de cliënt gaat of in geen of ongeldige geloofsbrieven over. Kies Aangepast of Standaard. De standaardwaarde is Standaard.
+**Flex Client Authentication Method:** Bepaalt het type van reactie dat de server terug naar de cliënt verzendt wanneer de aangehaalde dienst toegelaten veiligheid is, steunt de aangehaalde verrichting geen anonieme aanroepen, en de cliënt gaat of in geen of ongeldige geloofsbrieven over. Kies een optie in Aangepast of Standaard. De standaardwaarde is Standaard.
 
 **Serienummering van klassen zonder serienummering toestaan:** De meeste AEM vormen eindpunten staan slechts Serializable klassen toe om voor aanroeping worden gebruikt. In oudere versies, stond het Remoting eindpunt niet-Serializable klassen toe om voor aanroeping van op Flex-Gebaseerde cliënten worden gebruikt. Om een beveiligingskwetsbaarheid te voorkomen die in APS11-15 wordt beschreven, is deze kwetsbaarheid gewijzigd. Als u niet-Serializable klassen met het Flex Remoting eindpunt wilt blijven gebruiken, selecteer dit checkbox.
 
@@ -528,7 +528,7 @@ De volgende instellingen zijn beschikbaar voor de service Remoting.
 
 De dienst Bewaarplaats ( `RepositoryService`) biedt services voor opslag en beheer van bronnen aan AEM formulieren. Wanneer ontwikkelaars een toepassing maken, kunnen ze de elementen in de opslagplaats implementeren in plaats van in een bestandssysteem. De elementen kunnen elk type onderpand bevatten, zoals XML-formulieren, PDF forms (inclusief Acrobat-formulieren), formulierfragmenten, afbeeldingen, profielen, beleid, SWF-bestanden, DDX-bestanden, XML-schema&#39;s, WSDL-bestanden en testgegevens.
 
-U kunt de standaardopslagplaats gebruiken die bij AEM formulieren wordt geleverd, of een gegevensopslagruimte van derden gebruiken (EMC Documentum Content Server, IBM FileNet Content Manager of IBM Content Manager).
+U kunt de standaardopslagplaats gebruiken die bij AEM formulieren wordt geleverd, of een externe opslagplaats gebruiken (EMC Documentum Content Server, IBM FileNet Content Manager of IBM Content Manager).
 
 De dienst van de Leverancier van de opslagplaats is een de dienstafgevaardigde die als interface aan een leveranciersdienst dienst dienst dienst dienst doet. Hierdoor kunt u verbinding maken met een gemeenschappelijke API en hoeft u zich niet te realiseren welke provider de opslagmogelijkheden implementeert. De dienst van de Leverancier van de Bewaarplaats verstrekt gegevensbestandopslag voor de de dienstmiddelen van de Bewaarplaats.
 
@@ -538,7 +538,7 @@ De volgende instelling is beschikbaar voor de Repository-service.
 
 ## Instellingen voor handtekeningenservice {#signature-service-settings}
 
-De handtekeningenservice ( `SignatureService`) biedt uw organisatie de mogelijkheid om de beveiliging en privacy te beschermen van Adobe PDF-documenten die deze verspreidt en ontvangt. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat documenten niet worden gewijzigd. Als u een document wijzigt, wordt de handtekening verbroken. Aangezien beveiligingsfuncties op het document zelf worden toegepast, blijft het document gedurende de gehele levenscyclus beveiligd en beheerd. buiten de firewall, wanneer het offline wordt gedownload, en wanneer het terug naar uw organisatie wordt voorgelegd.
+De Handtekeningenservice ( `SignatureService`) biedt uw organisatie de mogelijkheid om de beveiliging en privacy te beschermen van Adobe PDF-documenten die deze verspreidt en ontvangt. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat documenten niet worden gewijzigd. Als u een document wijzigt, wordt de handtekening verbroken. Omdat de veiligheidseigenschappen op het document zelf worden toegepast, blijft het document veilig en gecontroleerd voor zijn volledige levenscyclus; voorbij de firewall, wanneer het off-line wordt gedownload, en wanneer het terug naar uw organisatie wordt voorgelegd.
 
 De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
@@ -562,7 +562,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Maximale grootte archiveringsgegevens voor intrekking:** De maximale grootte van de archiefgegevens voor intrekking in kilobytes. AEM formulieren proberen zoveel mogelijk intrekkingsgegevens op te slaan zonder de limiet te overschrijden. De standaardwaarde is 10 kB.
 
-**Ondertekeningen ondersteunen die zijn gemaakt op basis van prerelease-build van Adobe-producten:** Als u deze optie selecteert, wordt een handtekening die is gemaakt met pre-releaseversie van Adobe-producten correct gevalideerd. De standaardwaarde is false.
+**Ondertekeningen ondersteunen die zijn gemaakt op basis van prerelease-build van Adobe producten:** Als deze optie is ingeschakeld, wordt een handtekening die is gemaakt met een pre-releaseversie van producten van de Adobe correct gevalideerd. De standaardwaarde is false.
 
 **Optie voor controletijd:** Hiermee geeft u de tijd op waarop het certificaat van een ondertekenaar wordt geverifieerd. De standaardwaarde is Beveiligde tijd anders dan huidige tijd.
 
@@ -598,7 +598,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Elk beleid blokkeren:** Geeft aan of de OID (beleidsobject-id) moet worden verwerkt als deze in een certificaat is opgenomen. De standaardwaarde is false.
 
-**Beleidstoewijzing onderdrukken:** Geeft aan of beleidstoewijzing is toegestaan in het certificeringspad. De standaardwaarde is false.
+**Beleidstoewijzing onderdrukken:** Geeft aan of beleidstoewijzing is toegestaan in het certificatiepad. De standaardwaarde is false.
 
 **Alle paden controleren:** Hiermee geeft u aan of alle paden moeten worden gevalideerd of dat validatie moet worden gestopt nadat het eerste geldige pad is gevonden. Selecteer waar of onwaar. De standaardwaarde is false.
 
@@ -608,7 +608,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Basic Restrictions Extension required in CA Certificates:** Bepaalt of de certificaatextensie voor basisbeperkingen van de certificeringsinstantie (CA) aanwezig moet zijn voor CA-certificaten. Sommige vroege Duitse gecertificeerde basiscertificaten (7 en eerder) zijn niet compatibel met RFC 3280 en bevatten niet de basisbeperkingsextensie. Schakel dit selectievakje uit als u weet dat het EE-certificaat van een gebruiker is gekoppeld aan een dergelijk Duits basiscertificaat. De standaardwaarde is true.
 
-**Geldige certificaatondertekening vereisen tijdens het opbouwen van de keten:** Geeft aan of de ketenontwikkelaar geldige handtekeningen vereist op certificaten die worden gebruikt om ketens te bouwen. Wanneer deze controledoos wordt geselecteerd, zal de ketenbouwer geen ketens met ongeldige RSA handtekeningen op certificaten bouwen. Overweeg keten CA > ICA > EE waar de handtekening van CA op een ICA niet geldig is. Als dit het plaatsen waar is, zal het ketengebouw bij ICA ophouden, en CA zal niet in de ketting worden omvat. Als deze instelling onwaar is, wordt de volledige certificaatketen van drie pixels geproduceerd. Deze instelling heeft geen invloed op DSA-handtekeningen. De standaardwaarde is false.
+**Geldige certificaatondertekening vereisen tijdens het opbouwen van de keten:** Geeft aan of de ketenontwikkelaar geldige handtekeningen vereist op certificaten die worden gebruikt om ketens te bouwen. Wanneer deze controledoos wordt geselecteerd, zal de kettingaannemer geen ketens met ongeldige handtekeningen van RSA op certificaten bouwen. Overweeg keten CA > ICA > EE waar de handtekening van CA op een ICA niet geldig is. Als dit het plaatsen waar is, zal het ketengebouw bij ICA ophouden, en CA zal niet in de ketting worden omvat. Als deze instelling onwaar is, wordt de volledige certificaatketen van drie pixels geproduceerd. Deze instelling heeft geen invloed op DSA-handtekeningen. De standaardwaarde is false.
 
 ### Opties tijdstempelprovider {#timestamp-provider-options}
 
@@ -628,7 +628,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Grootte TSP-respons:** Geschatte grootte, in bytes, van de TSP-respons. Deze waarde moet de maximale grootte vertegenwoordigen van de tijdstempelreactie die de geconfigureerde tijdstempelprovider kan retourneren. Wijzig dit alleen als u er absoluut zeker van bent. De minimumwaarde is 60B en de maximumwaarde is 10240B. De standaardwaarde is 4096B.
 
-**Tijdstempelserverextensie negeren**: Selecteer **Tijdstempelserverextensie negeren** als u wilt voorkomen dat de AEM Forms-server verbinding maakt met de opgegeven tijdstempelserver. Als u deze optie selecteert, voorkomt u procesfouten die optreden als gevolg van een time-out van de verbinding tussen AEM Forms en tijdstempelservers.
+**Tijdstempelserverextensie negeren**: Selecteer de **Tijdstempelserverextensie negeren** als u wilt voorkomen dat de AEM Forms-server verbinding maakt met de opgegeven tijdstempelserver. Als u deze optie selecteert, voorkomt u procesfouten die optreden als gevolg van een time-out van de verbinding tussen AEM Forms en tijdstempelservers.
 
 ### Opties voor certificaatintrekkingslijst {#certificate-revocation-list-options}
 
@@ -636,7 +636,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Lokale URI voor CRL Opzoeken:** URL van de lokale CRL-provider. Deze waarde wordt alleen geraadpleegd als de instelling Eerst lokale URI raadplegen is ingesteld op true. Geen standaardwaarde.
 
-**Stijl intrekkingscontrole:** Hiermee geeft u de stijl voor intrekkingscontrole op die wordt gebruikt om de vertrouwensstatus van het certificaat van de CRL-provider te bepalen op basis van de waargenomen intrekkingsstatus. De standaardwaarde is BestEfficient.
+**Stijl intrekkingscontrole:** Geeft de stijl voor intrekkingscontrole aan die wordt gebruikt om de vertrouwensstatus van het certificaat van de CRL-provider te bepalen op basis van de waargenomen intrekkingsstatus. De standaardwaarde is BestEfficient.
 
 **LDAP-server voor opzoeken van CRL:** De LDAP-server die wordt gebruikt om de CRL&#39;s op te halen (als www.ldap.com). Alle op DN gebaseerde vragen voor CRLs zullen aan deze server worden geleid. Geen standaardwaarde.
 
@@ -658,13 +658,13 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Maximale scheeftrektijd klok:** Maximaal toegestane scheeftrekking, in minuten, tussen responstijd en lokale tijd. De minimumwaarde is 0 en de maximumwaarde is 2147483647m. De standaardwaarde is 5 m.
 
-**Vrachttijd reactie:** Maximale tijd, in minuten, waarvoor een vooraf geconstrueerde OCSP-respons als geldig wordt beschouwd. De minimumwaarde is 1 m en de maximaal toegestane waarde is 2147483647. De standaardwaarde is 525600 (één jaar).
+**Vrachttijd reactie:** Maximale tijd, in minuten, waarvoor een vooraf gebouwde OCSP-respons als geldig wordt beschouwd. De minimumwaarde is 1 m en de maximaal toegestane waarde is 2147483647. De standaardwaarde is 525600 (één jaar).
 
 **OCSP-aanvraag ondertekenen:** Geeft aan of het OCSP-verzoek moet worden ondertekend. De standaardwaarde is false.
 
 **Referentiealias ondertekenaar aanvragen:** Specificeert de referentie alias voor het ondertekenen van het OCSP verzoek als het ondertekenen wordt toegelaten. Wordt alleen gebruikt als de ondertekening van een OCSP-aanvraag is ingeschakeld. Geen standaardwaarde.
 
-**Online gaan:** Hiermee geeft u aan of u online wilt gaan om intrekkingscontroles uit te voeren. De standaardwaarde is true.
+**Online gaan:** Geeft aan of online moet worden gegaan om intrekkingscontroles uit te voeren. De standaardwaarde is true.
 
 **Negeer de reactietijden thisUpdate en nextUpdate:** Geeft aan of de tijden thisUpdate en nextUpdate van de reactie moeten worden genegeerd, waardoor wordt voorkomen dat deze tijden een negatief effect hebben op de geldigheid van de reactie. De standaardwaarde is false.
 
@@ -726,7 +726,7 @@ In een clusterconfiguratie, schrapt de partijgrootte voor een gecontroleerd omsl
 * %m = minuut
 * %s = seconde
 * %l = millisecond
-* %R = willekeurig getal (van 0 tot en met 9)
+* %R = willekeurig getal (tussen 0 en 9)
 * %P = proces- of taak-id
 
 Als het op 17 juli 2009 bijvoorbeeld 20:00 uur is en u `C:/Test/WF0/failure/%Y/%M/%D/%H/`, de resultaatmap is `C:/Test/WF0/failure/2009/07/17/20`.
@@ -755,7 +755,7 @@ De dienst van de Dienst van het Web wisselt met Webdiensten door de berichten va
 
 De volgende montages zijn beschikbaar voor de dienst van de Dienst van het Web.
 
-**Topwinkel:** Het volledige pad van het sleutelarchiefbestand dat de persoonlijke sleutel bevat die voor verificatie moet worden gebruikt. De formulierserver moet toegang hebben tot het bestand.
+**Topwinkel:** Het volledige pad van het sleutelarchiefbestand dat de persoonlijke sleutel voor verificatie bevat. De formulierserver moet toegang hebben tot het bestand.
 
 **Wachtwoord sleutelarchief:** Het wachtwoord voor het sleutelarchiefbestand.
 
@@ -787,7 +787,7 @@ De volgende instelling is beschikbaar voor de service XSLT-transformatie.
 
 ## Beveiligingsinstellingen voor een service wijzigen {#modifying-security-settings-for-a-service}
 
-De server van vormen laat u toe om veiligheidsmontages voor elke dienst te vormen, die u toestaat om fijnkorrelig toegangsbeheer op een dienst-door-dienst niveau te vormen.
+De server van vormen laat u toe om veiligheidsmontages voor elke dienst te vormen, die u verfijnd toegangsbeheer op een dienst-door-dienst niveau laat vormen.
 
 Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen worden geconfigureerd om aan uw systeembehoeften te voldoen. Elk beveiligingsprofiel heeft een gekoppeld domein en wordt op gebruikersniveau of groepsniveau gemaakt.
 
@@ -798,7 +798,7 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
 1. Klik op het tabblad Beveiliging.
 1. In de Vereisen Vraag om lijst voor authentiek te verklaren, selecteer of ja of Nr om te specificeren of de dienst met of zonder geloofsbrieven kan worden aangehaald.
 
-   Als u ja selecteert, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders wordt de oproeping geweigerd .
+   Als u ja selecteert, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders, zal de aanroepende poging worden geweigerd.
 
    Als u Nr selecteert, kan de bezoeker van de dienst al dan niet voor authentiek worden verklaard. De aanroeping van de dienst zal altijd slagen omdat er geen vergunningscontrole is.
 
@@ -811,7 +811,7 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
 
    **Systeem:** Gebruikt de gebruiker van het Systeem om de dienst met volledige voorrechten in werking te stellen.
 
-   **Benoemde gebruiker:** Laat u toe om de dienst als specifieke gebruiker in werking te stellen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven, waar u naar de gebruiker kunt zoeken en deze kunt selecteren.
+   **Benoemde gebruiker:** Hiermee kunt u de service als een specifieke gebruiker uitvoeren. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven. Hier kunt u de gebruiker zoeken en selecteren.
 
    Als u Uitvoeren als opgeven niet selecteert, wordt het standaardgedrag gebruikt.
 
@@ -836,12 +836,12 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
    * **SERVICE_MANAGER_PERM:** Voor gebruik in een toekomstige versie van AEM formulieren. Gebruik deze machtiging niet.
    * **SERVICE_AGENT_PERM:** Voor gebruik in een toekomstige versie van AEM formulieren. Gebruik deze machtiging niet.
 
-1. Klik op Toevoegen.
+1. Klik toevoegen.
 
 ### De principal verwijderen uit een beveiligingsprofiel {#remove-the-principal-from-a-security-profile}
 
 1. Voor de pagina van het Beheer van de Dienst, selecteer de dienst om te vormen.
-1. Klik op de knop **Beveiliging** selecteert u het beveiligingsprofiel dat u wilt verwijderen en klikt u op **Verwijderen**.
+1. Klik op de knop **Beveiliging** selecteert u het te verwijderen beveiligingsprofiel en klikt u op **Verwijderen**.
 
 ## Het vormen het groeperen voor de dienst {#configuring-pooling-for-a-service}
 

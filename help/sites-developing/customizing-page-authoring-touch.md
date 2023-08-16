@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 90594588-db8e-4d4c-a208-22c1c6ea2a2d
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1340'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -23,14 +23,14 @@ Adobe Experience Manager (AEM) biedt verschillende mechanismen waarmee u de func
 
 * Clientlibs
 
-  Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe clientlib moet:
+  Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` De nieuwe client moet:
 
    * afhankelijk van de creatie clientlib `cq.authoring.editor.sites.page`
-   * deel uitmaken van de `cq.authoring.editor.sites.page.hook` categorie
+   * deel uitmaken van de passende `cq.authoring.editor.sites.page.hook` categorie
 
 * Bedekkingen
 
-  Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid de standaardfunctionaliteit te bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat de optie [fusie van bronnen](/help/sites-developing/sling-resource-merger.md) staat overerving toe.
+  Bedekkingen zijn gebaseerd op knooppuntdefinities en laten u de standaardfunctionaliteit bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een bedekking is een 1:1-kopie van het origineel niet vereist, omdat de optie [fusie van bronnen](/help/sites-developing/sling-resource-merger.md) staat overerving toe.
 
 >[!NOTE]
 >
@@ -62,13 +62,13 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 
 ## Nieuwe laag toevoegen (modus) {#add-new-layer-mode}
 
-Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met [lagen](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelen en aanwijzen.
+Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met [lagen](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelaars en doelwitten.
 
-### Voorbeeld van laag: Status van live kopiëren {#layer-example-live-copy-status}
+### Voorbeeld van laag: status van actieve kopie {#layer-example-live-copy-status}
 
 Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens die betrekking hebben op [multisite beheer](/help/sites-administering/msm.md) en markeert deze in de laag.
 
-Als u het wilt zien in actie, kunt u [We.Kopie in de detailhandel](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (of een andere live kopiëren pagina) en selecteer de **Status van live kopiëren** in.
+Als u het wilt zien in actie, kunt u [We.Kopie in de detailhandel](/help/sites-developing/we-retail-globalized-site-structure.md) pagina (of een andere live kopiëren pagina) en selecteer de **Status van live kopiëren** -modus.
 
 U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
@@ -91,7 +91,7 @@ In de middelenbrowser worden elementen van verschillende typen/categorieën weer
 
 ### Codevoorbeeld {#code-sample-1}
 
-`aem-authoring-extension-assetfinder-flickr` Dit is een voorbeeldpakket dat aangeeft hoe u een groep aan de zoeker van middelen kunt toevoegen. In dit voorbeeld wordt verbinding gemaakt met [Flickr](https://www.flickr.com)s public stream en toont deze in het zijpaneel.
+`aem-authoring-extension-assetfinder-flickr` Dit is een voorbeeldpakket dat aangeeft hoe u een groep aan de zoeker van middelen kunt toevoegen. Dit voorbeeld maakt verbinding met [Flickr](https://www.flickr.com)s public stream en toont deze in het zijpaneel.
 
 CODE VOOR GITHUB
 
@@ -132,7 +132,7 @@ U kunt de code van deze pagina op GitHub vinden
 * [Open aem-authoring-extension-toolbar-screenshot project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot)
 * Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-extension-toolbar-screenshot/archive/master.zip)
 
-## Nieuwe op-plaats-editor toevoegen {#add-new-in-place-editor}
+## Nieuwe plaatseditor toevoegen {#add-new-in-place-editor}
 
 ### Standaardeditor {#standard-in-place-editor}
 
@@ -153,7 +153,7 @@ In een standaard AEM-installatie:
 
          * eigenschap: `editorType`
 
-           Bepaalt het type van gealigneerde redacteur die wordt gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijvoorbeeld: `text`, `textimage`, `image`, `title`.
+           Bepaalt het type van gealigneerde redacteur die wordt gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijvoorbeeld `text`, `textimage`, `image`, `title`.
 
 1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knooppunt met configuraties en een `plugin` -knooppunt voor de benodigde configuratiegegevens van de plug-in.
 
@@ -235,7 +235,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 ## De workflow voor het aanvragen van activering aanpassen {#customizing-the-request-for-activation-workflow}
 
-De out-of-the-box workflow **Verzoek om activering**:
+De workflow buiten de box, **Verzoek om activering**:
 
 * Wordt automatisch weergegeven in het juiste menu wanneer een inhoudsauteur **heeft geen** de juiste replicatierechten, maar **heeft** lidmaatschap van DAM-gebruikers en auteurs.
 

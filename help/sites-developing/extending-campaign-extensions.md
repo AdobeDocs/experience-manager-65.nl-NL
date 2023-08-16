@@ -8,9 +8,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f536bcc1-7744-4f05-ac6a-4cec94a1ffb6
 exl-id: 0702858e-5e46-451f-9ac3-40a4fec68ca0
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '525'
+source-wordcount: '524'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Zie [AEM integreren met Adobe Campaign 6.1](/help/sites-administering/campaignon
 
 ## Voorbeeld 1: AEM naar Adobe Campaign {#example-aem-to-adobe-campaign}
 
-De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP-bestanden vindt u in de Campagne-console en beginnen allemaal met **aec** (Adobe Experience Cloud).
+De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP-bestanden vindt u in de Campagne-console en beginnen allemaal met **aec** (Adobe Experience Cloud)
 
 ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -160,7 +160,7 @@ public class CustomServlet extends SlingSafeMethodsServlet {
 }
 ```
 
-## Voorbeeld 2: Adobe Campaign naar AEM {#example-adobe-campaign-to-aem}
+## Voorbeeld 2: Adobe Campaign AEM {#example-adobe-campaign-to-aem}
 
 AEM biedt API&#39;s van de box uit om de objecten op te halen die overal beschikbaar zijn in de browser-weergave van sitebeheer.
 

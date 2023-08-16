@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 4537c1fb-f99c-42e2-a222-b037794bdb52
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2137'
 ht-degree: 0%
 
 ---
@@ -61,7 +61,7 @@ CRXDE Lite biedt de volgende functionaliteit:
  <tbody>
   <tr>
    <td>Bovenste schakelbalk</td>
-   <td>Staat u toe om tussen CRXDE Lite, de Manager van het Pakket, en het Aandeel van het Pakket snel te schakelen.</td>
+   <td>Hiermee kunt u snel schakelen tussen CRXDE Lite, Package Manager en Package Share.</td>
   </tr>
   <tr>
    <td>Knooppuntwidget</td>
@@ -69,11 +69,11 @@ CRXDE Lite biedt de volgende functionaliteit:
   </tr>
   <tr>
    <td>Explorer-venster</td>
-   <td><p>Toont een boom van alle knopen in de bewaarplaats.</p> <p>Klik op een knooppunt om de eigenschappen ervan weer te geven in het dialoogvenster <strong>Eigenschappen</strong> tab. Nadat u op een knooppunt hebt geklikt, kunt u een handeling op de werkbalk selecteren. Klik nogmaals op het knooppunt om de naam ervan te wijzigen.</p> <p>Navigatiefilter (binoculair pictogram): Hiermee kunt u de knooppunten in de opslagplaats filteren waarvoor de naam de invoertekst bevat. Het is alleen van toepassing op knooppunten die lokaal zijn geladen.<br /> </p> </td>
+   <td><p>Toont een boom van alle knopen in de bewaarplaats.</p> <p>Klik op een knooppunt om de eigenschappen ervan weer te geven in het dialoogvenster <strong>Eigenschappen</strong> tab. Nadat u op een knooppunt hebt geklikt, kunt u een handeling op de werkbalk selecteren. Klik nogmaals op het knooppunt om de naam ervan te wijzigen.</p> <p>Structuurnavigatiefilter (binoculair pictogram): hiermee kunt u de knooppunten in de opslagplaats filteren waarvoor de naam de invoertekst bevat. Het is alleen van toepassing op knooppunten die lokaal zijn geladen.<br /> </p> </td>
   </tr>
   <tr>
    <td>Venster Bewerken</td>
-   <td><p><strong>Home</strong> tab: kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot bronnen voor ontwikkelaars (documentatie, blog voor ontwikkelaars, kennisbasis) en ondersteuning (Adobe homepage en ondersteuningscentrum).<br /> </p> <p>Dubbelklik op een bestand in het dialoogvenster <strong>Verkenner</strong> de inhoud ervan weergeven; zoals bijvoorbeeld een .jsp- of een .java-bestand. U kunt het dan wijzigen en de veranderingen bewaren.</p> <p>Als een bestand eenmaal is bewerkt in het dialoogvenster <strong>Bewerken</strong> zijn de volgende gereedschappen beschikbaar op de werkbalk:<br /> </p> - <strong>Tonen in boomstructuur: </strong>geeft het bestand weer in de gegevensopslagstructuur.<br /> - <strong>Zoeken/vervangen...</strong>: zoeken of vervangen.<br /> <br /> Dubbelklik op de statusregel van het dialoogvenster <strong>Bewerken</strong> opent het deelvenster <strong>Ga naar regel</strong> zodat u een specifiek regelnummer kunt invoeren om naar te gaan.<br /> </td>
+   <td><p><strong>Home</strong> tab: hiermee kunt u zoeken naar inhoud en/of documentatie en toegang krijgen tot bronnen voor ontwikkelaars (documentatie, blog voor ontwikkelaars, kennisbasis) en ondersteuning (homepage en ondersteuningscentrum voor Adoben).<br /> </p> <p>Dubbelklik op een bestand in het dialoogvenster <strong>Verkenner</strong> om de inhoud weer te geven, bijvoorbeeld een .jsp- of een .java-bestand. U kunt het dan wijzigen en de veranderingen bewaren.</p> <p>Als een bestand eenmaal is bewerkt in de <strong>Bewerken</strong> zijn de volgende gereedschappen beschikbaar op de werkbalk:<br /> </p> - <strong>Tonen in boomstructuur: </strong>geeft het bestand weer in de gegevensopslagstructuur.<br /> - <strong>Zoeken/vervangen...</strong>: zoek of vervang de bewerking.<br /> <br /> Dubbelklik op de statusregel van het dialoogvenster <strong>Bewerken</strong> opent het deelvenster <strong>Ga naar regel</strong> zodat u een specifiek regelnummer kunt invoeren om naar te gaan.<br /> </td>
   </tr>
   <tr>
    <td>Eigenschappen, tabblad<br /> </td>
@@ -81,7 +81,7 @@ CRXDE Lite biedt de volgende functionaliteit:
   </tr>
   <tr>
    <td>Het tabblad Toegangsbeheer</td>
-   <td><p>Toon toestemmingen die op huidige weg, bewaarplaats-niveau of hoofd worden gebaseerd.</p> <p>De rechten worden opgesplitst in</p> <p>- <strong>Toepasselijk toegangsbeheerbeleid</strong>: Het beleid dat op de huidige selectie kan worden toegepast.</p> <p>- <strong>Beleid voor lokaal toegangsbeheer</strong>: Het huidige beleid dat lokaal op de huidige selectie wordt toegepast.</p> <p>- <strong>Effectief beleid voor toegangscontrole</strong>: Het huidige beleid dat voor de huidige selectie wordt toegepast, kan lokaal worden ingesteld of van bovenliggende knooppunten worden overgeërfd.</p> <p>Opmerking. Om de informatie van het Toegangsbeheer bij allen te kunnen zien, moet de gebruiker die aan CRXDE Lite wordt aangemeld rechten hebben om ACL ingangen te lezen. De anonieme gebruiker kan deze informatie standaard niet zien. Meld u aan als bijvoorbeeld beheerder om de informatie te bekijken.</p> </td>
+   <td><p>Toon toestemmingen die op huidige weg, bewaarplaats-niveau of hoofd worden gebaseerd.</p> <p>De rechten worden opgesplitst in</p> <p>- <strong>Toepasselijk toegangsbeheerbeleid</strong>: Het beleid dat op de huidige selectie kan worden toegepast.</p> <p>- <strong>Lokaal beleid voor toegangsbeheer</strong>: Het huidige beleid dat lokaal op de huidige selectie is toegepast.</p> <p>- <strong>Effectief beleid voor toegangscontrole</strong>: Het huidige beleid dat wordt toegepast voor de huidige selectie, kan lokaal worden ingesteld of worden overgeërfd van bovenliggende knooppunten.</p> <p>Opmerking. Om de informatie van het Toegangsbeheer bij allen te kunnen zien, moet de gebruiker die aan CRXDE Lite wordt aangemeld rechten hebben om ACL ingangen te lezen. De anonieme gebruiker kan deze informatie standaard niet zien. Meld u aan als bijvoorbeeld beheerder om de informatie te bekijken.</p> </td>
   </tr>
   <tr>
    <td>Tabblad Replicatie</td>
@@ -101,11 +101,11 @@ CRXDE Lite biedt de volgende functionaliteit:
   </tr>
   <tr>
    <td>Alles opslaan</td>
-   <td><p><strong>Alles opslaan</strong>:<br /> </p> <p>Hiermee slaat u alle aangebrachte wijzigingen op. Totdat u op Opslaan klikt, zijn de wijzigingen tijdelijk en gaan deze verloren wanneer u de console afsluit.</p> <p><strong>Vorige versie</strong>:</p> <p>Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in het geselecteerde knooppunt sinds de laatste opslaghandeling en wordt vervolgens de huidige status van de opslagruimte voor het geselecteerde knooppunt opnieuw geladen.</p> <p><strong>Alles herstellen</strong>:</p> <p>Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in de gehele opslagplaats sinds de laatste opslaghandeling, en wordt vervolgens de huidige status van de opslagplaats opnieuw geladen.</p> </td>
+   <td><p><strong>Alles opslaan</strong>:<br /> </p> <p>Hiermee slaat u alle aangebrachte wijzigingen op. Totdat u op Opslaan klikt, zijn de wijzigingen tijdelijk en gaan deze verloren wanneer u de console afsluit.</p> <p><strong>Vorige versie</strong>:</p> <p>Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in het geselecteerde knooppunt sinds de laatste opslaghandeling en wordt vervolgens de huidige status van de opslagruimte voor het geselecteerde knooppunt opnieuw geladen.</p> <p><strong>Alles terugkeren</strong>:</p> <p>Hiermee worden alle wijzigingen genegeerd die u hebt aangebracht in de gehele opslagplaats sinds de laatste opslaghandeling, en wordt vervolgens de huidige status van de opslagplaats opnieuw geladen.</p> </td>
   </tr>
   <tr>
    <td>Maken...<br /> </td>
-   <td><p>Vervolgkeuzemenu voor het maken van het volgende onder het geselecteerde knooppunt:<br /> </p> <p>- <strong>Knooppunt</strong>: een knooppunt met een willekeurig knooppunttype<br /> </p> <p>- <strong>Bestand</strong>: nt:bestandnode en het bijbehorende nt:resource subnode</p> <p>- <strong>Map</strong>: nt:mapknooppunt</p> <p>- <strong>Sjabloon</strong>: AEM sjabloon</p> <p>- <strong>Component</strong>: AEM</p> <p>- <strong>Dialoog</strong>: Dialoogvenster AEM</p> </td>
+   <td><p>Vervolgkeuzemenu voor het maken van het volgende onder het geselecteerde knooppunt:<br /> </p> <p>- <strong>Knooppunt</strong>: een knooppunt met een willekeurig knooppunttype<br /> </p> <p>- <strong>Bestand</strong>: nt:bestandnode en het nt:resource subnode</p> <p>- <strong>Map</strong>: nt:mapknooppunt</p> <p>- <strong>Sjabloon</strong>: AEM sjabloon</p> <p>- <strong>Component</strong>: AEM component</p> <p>- <strong>Dialoog</strong>: Dialoog AEM</p> </td>
   </tr>
   <tr>
    <td>Verwijderen<br /> </td>
@@ -117,7 +117,7 @@ CRXDE Lite biedt de volgende functionaliteit:
   </tr>
   <tr>
    <td>Plakken<br /> </td>
-   <td>Hiermee wordt het gekopieerde knooppunt onder het geselecteerde knooppunt geplakt.<br /> </td>
+   <td>Plakt het gekopieerde knooppunt onder het geselecteerde knooppunt.<br /> </td>
   </tr>
   <tr>
    <td>Verplaatsen...<br /> </td>
@@ -129,11 +129,11 @@ CRXDE Lite biedt de volgende functionaliteit:
   </tr>
   <tr>
    <td>Mengsels ...<br /> </td>
-   <td>Hiermee kunt u mixingtypen toevoegen aan het knooppunttype. De mixintypes worden meestal gebruikt om geavanceerde eigenschappen zoals versioning, toegangsbeheer toe te voegen, van verwijzingen voorzien, en het sluiten aan de knoop.</td>
+   <td>Hiermee kunt u gemengde typen toevoegen aan het knooppunttype. De mixintypes worden meestal gebruikt om geavanceerde eigenschappen zoals versioning, toegangsbeheer toe te voegen, van verwijzingen voorzien, en het sluiten aan de knoop.</td>
   </tr>
   <tr>
    <td>Gereedschappen<br /> </td>
-   <td><p>Vervolgkeuzemenu met de volgende gereedschappen:</p> <p>- <strong>Serverconfiguratie...</strong>: om toegang te krijgen tot de Felix-console.</p> <p>- <strong>Query uitvoeren...</strong>: om een query uit te voeren op de repository.</p> <p>- <strong>Bevoegdheden ...</strong>: om het beheer van bevoegdheden te openen, waar u bevoegdheden kunt weergeven en toevoegen.</p> <p>- <strong>Toegangsbeheer testen...</strong>: een plaats waar u de toestemming voor bepaalde weg en/of hoofd kunt testen.</p> <p>- <strong>Notitietype exporteren</strong>: om knooppunttypes in het systeem als knoopaantekening uit te voeren.</p> <p>- <strong>Nodetype importeren...</strong>: om knooppunttypen te importeren met gebruik van codenotatie.</p> <p>- <strong>Foutopsporing SiteCatalyst installeren...</strong>: instructies voor het installeren van Analytics Debugger.</p> </td>
+   <td><p>Vervolgkeuzemenu met de volgende gereedschappen:</p> <p>- <strong>Serverconfiguratie...</strong>: voor toegang tot de Felix-console.</p> <p>- <strong>Query uitvoeren...</strong>: om een query uit te voeren op de repository.</p> <p>- <strong>Bevoegdheden ...</strong>: om het beheer van bevoegdheden te openen, waar u bevoegdheden kunt weergeven en toevoegen.</p> <p>- <strong>Toegangsbeheer testen...</strong>: een plaats waar u de toestemming voor bepaalde weg en/of hoofd kunt testen.</p> <p>- <strong>Notitietype exporteren</strong>: om knooppunttypen in het systeem als cnd notatie te exporteren.</p> <p>- <strong>Nodetype importeren...</strong>: als u knooppunttypen wilt importeren met gebruik van codenotatie.</p> <p>- <strong>Foutopsporing SiteCatalyst installeren...</strong>: instructies voor het installeren van Analytics Debugger.</p> </td>
   </tr>
   <tr>
    <td>Aanmeldingswidget<br /> </td>
@@ -160,13 +160,13 @@ Een sjabloon maken met CRXDE Lite:
 1. Open CRXDE Lite in uw browser.
 1. Klik in het navigatievenster met de rechtermuisknop op de map waar u de sjabloon wilt maken en selecteer **Maken...** vervolgens **Sjabloon maken...**.
 
-1. Voer de **Label**, **Titel**, **Beschrijving**, **Type bron** en **Rangorde** van de template. Klik op **Next**.
+1. Voer de **Label**, **Titel**, **Beschrijving**, **Resourcetype** en **Rangschikking** van de template. Klik op **Next**.
 
-1. Deze stap is optioneel: instellen **Toegestane paden**. Klik op **Next**
+1. Deze stap is optioneel: stel de **Toegestane paden**. Klik op **Next**
 
-1. Deze stap is optioneel: instellen **Toegestane bovenliggende elementen**. Klik op **Next**.
+1. Deze stap is optioneel: stel de **Toegestane bovenliggende elementen**. Klik op **Next**.
 
-1. Deze stap is optioneel: instellen **Toegestane kinderen**. Klikken **OK**.
+1. Deze stap is optioneel: stel de **Toegestane kinderen**. Klikken **OK**.
 
 1. Klikken **Alles opslaan** om de wijzigingen op de server op te slaan.
 
@@ -176,7 +176,7 @@ Het leidt tot:
 
 * Een onderliggende node van het type `cq:PageContent` met eigenschappen voor Pagina-inhoud
 
-U kunt eigenschappen aan uw sjabloon toevoegen: verwijzen naar de [Een eigenschap maken](#creating-a-property) sectie.
+U kunt eigenschappen toevoegen aan uw sjabloon: raadpleeg de [Een eigenschap maken](#creating-a-property) sectie.
 
 ## Een component maken {#creating-a-component}
 
@@ -189,11 +189,11 @@ Een component maken met CRXDE Lite:
 
 1. Voer de **Label**, **Titel**, **Beschrijving**, **Type superbron** en **Groep** van de component. Klik op **Next**.
 
-1. Deze stap is optioneel: componenteigenschappen instellen **is container,** **Geen decoratie**, **Celnaam** en **Dialoogpad**. Klik op **Next**.
+1. Deze stap is optioneel: stel de componenteigenschappen in **is container,** **Geen decoratie**, **Celnaam** en **Dialoogpad**. Klik op **Next**.
 
-1. Deze stap is optioneel: de componenteigenschap instellen **Toegestane bovenliggende elementen**. Klik op **Next**.
+1. Deze stap is optioneel: stel de eigenschap component in **Toegestane bovenliggende elementen**. Klik op **Next**.
 
-1. Deze stap is optioneel: de componenteigenschap instellen **Toegestane kinderen**. Klikken **OK**.
+1. Deze stap is optioneel: stel de eigenschap component in **Toegestane kinderen**. Klikken **OK**.
 
 1. Klikken **Alles opslaan** om de wijzigingen op de server op te slaan.
 
@@ -212,7 +212,7 @@ Een dialoogvenster maken met CRXDE Lite:
 
 1. Voer de **Label** en de **Titel**. Klikken **OK**.
 
-1. Klikken **Alles opslaan** Om de wijzigingen op de server op te slaan.
+1. Klikken **Alles opslaan** De wijzigingen opslaan op de server.
 
 Er wordt een dialoogvenster gemaakt met de volgende structuur:
 
@@ -260,7 +260,7 @@ Een nieuw script maken:
 
 1. Het nieuwe bestand wordt geopend als een tabblad in het deelvenster Bewerken.
 1. Bewerk het bestand.
-1. Klikken **Alles opslaan** om de wijzigingen op te slaan.
+1. Klikken **Alles opslaan** om de wijzigingen op te slaan
 
 ## Nodetypen exporteren en importeren {#exporting-and-importing-node-types}
 

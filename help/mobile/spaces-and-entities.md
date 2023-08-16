@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1193'
+source-wordcount: '1191'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Een spatie is een handige locatie voor het opslaan van entiteiten die via de REST-API van Content Services worden weergegeven. Dit is vooral handig omdat een app (of elk kanaal) aan veel entiteiten kan worden gekoppeld. Als u entiteiten dwingt zich in een ruimte te bevinden, kunt u de best practices voor het groeperen van de vereisten van een app bundelen. U kunt desgewenst een toepassing in AEM koppelen aan een klein aantal spaties.
 
@@ -83,7 +83,7 @@ U kunt de eigenschappen van de ruimte weergeven, de ruimte verwijderen of de rui
 
 ## Werken met mappen in een spatie {#working-with-folders-in-a-space}
 
-Spaties kunnen mappen bevatten voor een betere organisatie van de inhoud en elementen van de ruimte. Gebruikers kunnen hun eigen hiërarchie onder een spatie maken.
+De ruimten kunnen omslagen omvatten om ruimteinhoud en activa verder te organiseren. Gebruikers kunnen hun eigen hiërarchie onder een spatie maken.
 
 ### Een map maken {#creating-a-folder}
 
@@ -103,7 +103,7 @@ Spaties kunnen mappen bevatten voor een betere organisatie van de inhoud en elem
 >
 >Taalkopie is niet volledig functioneel voor deze release. De structuur wordt alleen ingesteld.
 
-De **Taalkopie** kunnen auteurs hun master taalkopie kopiëren en vervolgens een project en workflow maken om de inhoud automatisch te vertalen. Met Taalkopie maakt u de juiste structuur. Nadat u een map in een ruimte hebt toegevoegd, kunt u het taalexemplaar aan de ruimte toevoegen.
+De **Taalkopie** kunnen auteurs hun hoofdtaalkopie kopiëren en vervolgens een project en workflow maken om de inhoud automatisch te vertalen. Met Taalkopie maakt u de juiste structuur. Nadat u een map in een ruimte hebt toegevoegd, kunt u het taalexemplaar aan de ruimte toevoegen.
 
 >[!NOTE]
 >
@@ -121,7 +121,7 @@ De **Taalkopie** kunnen auteurs hun master taalkopie kopiëren en vervolgens een
    >
    >De knopen van het Exemplaar van de Taal kunnen slechts als direct kind van de Ruimte bestaan.
 
-1. Kies **Taal&amp;ast inhoudspakket;** en voert u de **Titel&amp;ast;** in **Taalkopie maken** .
+1. Kies **Taal&amp;ast inhoudspakket;** en voert u de **Titel&amp;ast;** in **Taalkopie maken** in.
 
    Klikken **Maken**.
 
@@ -170,7 +170,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    >[!NOTE]
    >
-   >U kunt kiezen uit de **Elementmodel**, **Paginamodel** of een model van een eenheidstype dat u eerder hebt gemaakt.
+   >U kunt kiezen uit de **Elementenmodel**, **Paginamodel** of een model van een eenheidstype dat u eerder hebt gemaakt.
    >
    >Zie [Een model maken](/help/mobile/administer-mobile-apps.md), om uw aangepaste entiteit te maken.
 
@@ -180,13 +180,13 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    Zodra u wordt gedaan, verschijnt de entiteit in de nakomelingen van uw ruimte.
 
-### Een entiteit bewerken {#editing-an-entity}
+### Entiteiten bewerken {#editing-an-entity}
 
 1. Nadat u een entiteit hebt gemaakt, gaat u naar de map of ruimte en kiest u uw entiteit in de ruimteconsole die u wilt bewerken.
 
    ![chlimage_1-95](assets/chlimage_1-95.png)
 
-1. Selecteer een entiteit die u wilt bewerken en klik op **Bewerken**.
+1. Entiteiten selecteren voor bewerken en klikken **Bewerken**.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
@@ -194,7 +194,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
    >
    >Afhankelijk van de sjabloon die u kiest om uw entiteit te maken, zal de interface voor beide variëren, voor het bewerken en weergeven van eigenschappen van uw entiteit. Zie de onderstaande stappen voor meer informatie.
 
-   ***Als u de sjabloon voor het maken van de entiteit kiest als middelenmodellen***, klikken op **Bewerken** kunt u elementen toevoegen zoals in de onderstaande afbeelding wordt getoond:
+   ***Als u de sjabloon voor het maken van de entiteit kiest als middelenmodellen***, klikken op **Bewerken** Hiermee kunt u elementen toevoegen, zoals in de onderstaande afbeelding wordt getoond:
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -202,7 +202,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Als u de sjabloon voor het maken van de entiteit kiest als paginamodellen***, klikken op **Bewerken** kunt u elementen toevoegen zoals in de onderstaande afbeelding wordt getoond:
+   ***Als u de sjabloon voor het maken van de entiteit kiest als paginamodellen***, klikken op **Bewerken** Hiermee kunt u elementen toevoegen, zoals in de onderstaande afbeelding wordt getoond:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
@@ -212,7 +212,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    >[!NOTE]
    >
-   >Als u een entiteit hebt toegevoegd, moet deze worden opgeslagen voordat de koppeling Voorvertoning werkt. Klik op **Opslaan**. Klik op de knop **Voorvertoning** toont de json van de toegevoegde activa, zoals aangetoond in het hieronder figuur:
+   >Als u een entiteit hebt toegevoegd, moet deze worden opgeslagen om de koppeling Voorvertoning te kunnen gebruiken. Klik op **Opslaan**. Klik op de knop **Voorvertoning** toont de json van de toegevoegde activa, zoals aangetoond in het hieronder figuur:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
@@ -236,7 +236,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
 1. Klikken **Verwijderen** van de werkbalk om de specifieke entiteit uit de ruimte te verwijderen
 
-### Een entiteit publiceren {#publishing-an-entity}
+### Entiteiten publiceren {#publishing-an-entity}
 
 U kunt kiezen **Boomstructuur publiceren** of **Snel publiceren** om uw entiteit te publiceren.
 

@@ -1,8 +1,8 @@
 ---
 title: Aan de slag met SPA in AEM - Angular
 seo-title: Getting Started with SPAs in AEM - Angular
-description: Dit artikel presenteert een voorbeeld SPA toepassing, legt uit hoe het wordt samengesteld, en staat u toe om met uw eigen SPA snel het kader van de Angular in gebruik te nemen.
-seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the Angular framework.
+description: Dit artikel presenteert een voorbeeld SPA toepassing, legt uit hoe het wordt samengesteld, en laat u met uw eigen SPA snel het kader van de Angular in werking stellen.
+seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the Angular framework.
 uuid: d3d2fa63-68c8-4a48-8c8d-045f4f8db937
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1016'
+source-wordcount: '1015'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Naast de verwachte afhankelijkheid van Angulars, kan de steekproef SPA extra bib
 
 ### Afhankelijkheden {#dependencies}
 
-De `package.json` het dossier bepaalt de vereisten van het algemene SPA pakket. De minimum vereiste AEM gebiedsdelen zijn hier vermeld.
+De `package.json` bevat de vereisten van het algemene SPA. De minimum vereiste AEM gebiedsdelen zijn hier vermeld.
 
 ```
 "dependencies": {
@@ -106,7 +106,7 @@ module.exports = {
 
 ### Gebouw {#building}
 
-Eigenlijk de app-functies ontwikkelen [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
+Eigenlijk de app-hefboomwerkingen maken [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -114,11 +114,11 @@ Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
 ### Projectarchetype AEM {#aem-project-archetype}
 
-Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
+Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
-Als u de afhankelijkheden opneemt en uw app samenstelt zoals eerder beschreven, blijft er een werkende SPA over die u kunt uploaden naar uw AEM.
+Als u de afhankelijkheden opneemt en uw app samenstelt zoals eerder beschreven, blijft er een werkende SPA over die u kunt uploaden naar uw AEM-exemplaar.
 
 In het volgende gedeelte van dit document wordt uitgelegd hoe een SPA in AEM is gestructureerd, welke belangrijke bestanden de toepassing sturen en hoe deze samenwerken.
 
@@ -222,11 +222,11 @@ export class MainContentComponent {
 }
 ```
 
-De `MainComponent` Voert de JSON-representatie van het paginamodel in en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Meer informatie over de `Page` te vinden in het document [SPA](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
+De `MainComponent` Voert de JSON-representatie van het paginamodel in en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Nadere bijzonderheden over de `Page` kan in het document worden gevonden [SPA](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
 
 ### image.component.ts {#image-component-ts}
 
-De `Page` bestaat uit componenten. Met de JSON ingepakt, `Page` kan componenten zoals `image.component.ts` zoals u hier ziet.
+De `Page` bestaat uit componenten. Als de JSON wordt ingeslikt, kan de `Page` kan componenten zoals `image.component.ts` zoals u hier ziet.
 
 ```
 /// image.component.ts

@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: 813fda6a-e877-452b-82c3-e758720e7dd0
 docset: aem65
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: b3889b1897f0ec0c5bbf60c346b77b2906175904
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Als u nogmaals tikt of erop klikt of de component aanvankelijk selecteert met ee
 
 Deze werkbalk bevat de volgende opties:
 
-* **Indeling**: Op deze manier kunt u de opties Vet, Cursief en Onderstrepen instellen.
+* **Indeling**: Hiermee kunt u Vet, Cursief en Onderstrepen instellen.
 * **Lijsten**: Hiermee kunt u lijsten met opsommingstekens of genummerde lijsten maken of de inspringing instellen.
 * **Hyperlink**
 * **Ontkoppelen**

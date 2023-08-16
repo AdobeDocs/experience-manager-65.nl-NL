@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
 
 # Modi uitvoeren{#run-modes}
 
-Met de uitvoermodi kunt u uw AEM instellen voor een bepaald doel. bijvoorbeeld auteur of publicatie, test, ontwikkeling, intranet of andere.
+De wijzen van de looppas laten u uw AEM instantie voor een specifiek doel stemmen; bijvoorbeeld auteur of publiceren, test, ontwikkeling, Intranet of anderen.
 
 U kunt:
 
@@ -43,11 +43,11 @@ De uitvoermodi voor de installatie zijn beschikbaar buiten de box:
 * `samplecontent`
 * `nosamplecontent`
 
-Dit zijn twee paren van elkaar uitsluitende loopwijzen; u kunt bijvoorbeeld :
+Dit zijn twee paren van elkaar uitsluitende looppaswijzen; bijvoorbeeld, kunt u:
 
-* hetzij `author` of `publish`, niet tegelijkertijd
+* definiëren: `author` of `publish`, niet beide tegelijk
 
-* combineren `author` met `samplecontent` of `nosamplecontent` (maar niet beide)
+* combineren `author` met ofwel `samplecontent` of `nosamplecontent` (maar niet beide)
 
 >[!CAUTION]
 >
@@ -85,7 +85,7 @@ De run-modus voor noSampling-inhoud is ontworpen voor productie-installaties.
 
 Een inzameling van waarden voor configuratieeigenschappen, die voor een bepaalde looppaswijze wordt gebruikt, kan in de bewaarplaats worden bewaard.
 
-De uitvoeringsmodus wordt aangegeven met een achtervoegsel op de mapnaam. Hierdoor kunt u alle configuraties als één opslagplaats opslaan. Bijvoorbeeld:
+De uitvoeringsmodus wordt aangegeven met een achtervoegsel op de mapnaam. Hiermee kunt u alle configuraties als één opslagplaats opslaan. Bijvoorbeeld:
 
 * `config`
 
@@ -101,7 +101,7 @@ De uitvoeringsmodus wordt aangegeven met een achtervoegsel op de mapnaam. Hierdo
 
 * `config.<run-mode>`
 
-  Wordt gebruikt voor de toepasselijke uitvoeringsmodus; bijvoorbeeld config
+  Gebruikt voor de toepasselijke looppaswijze; bijvoorbeeld config
 
 Zie [OSGi-configuratie in de opslagplaats](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) voor meer informatie over het bepalen van de individuele configuratieknooppunten binnen deze omslagen en voor het creëren van configuraties voor combinaties veelvoudige looppaswijzen.
 
@@ -120,7 +120,7 @@ Deze mappen zijn van het type `nt:folder` en moet de juiste bundel bevatten.
 
 ## CQ starten met een specifieke uitvoeringsmodus {#starting-cq-with-a-specific-run-mode}
 
-Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepalen welke op opstarten moet worden gebruikt. Er zijn verschillende methoden om op te geven welke uitvoeringsmodus moet worden gebruikt. de volgorde van resolutie is :
+Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepalen welke op opstarten moet worden gebruikt. Er zijn verschillende methoden om op te geven welke uitvoeringsmodus moet worden gebruikt. De volgorde van resolutie is:
 
 1. [systeemeigenschappen (](#using-a-system-property-in-the-start-script)
 1. [](#using-the-sling-properties-file)
@@ -137,7 +137,7 @@ De `sling.properties` bestand kan worden gebruikt om de vereiste uitvoermodus te
 
    `<cq-installation-dir>/crx-quickstart/conf/sling.properties`
 
-1. Voeg de volgende eigenschappen toe: het volgende voorbeeld is voor auteur:
+1. Voeg de volgende eigenschappen toe; het volgende voorbeeld is voor auteur:
 
    `sling.run.modes=author`
 

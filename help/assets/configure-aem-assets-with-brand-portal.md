@@ -13,9 +13,9 @@ feature: Brand Portal
 role: Admin
 exl-id: ae33181c-9eec-421c-be55-4bd019de40b8
 hide: true
-source-git-commit: 14988b55c21131391fdcb033373774ee170f5305
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2007'
+source-wordcount: '2006'
 ht-degree: 10%
 
 ---
@@ -28,7 +28,7 @@ ht-degree: 10%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/brand-portal/configure-aem-assets-with-brand-portal.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
-Met Adobe Experience Manager Assets Brand Portal kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets naar Brand Portal publiceren en deze aan Brand Portal-gebruikers distribueren.
+Met Adobe Experience Manager Assets Brand Portal kunt u goedgekeurde merkmiddelen van Adobe Experience Manager Assets naar Brand Portal publiceren en deze aan de Brand Portal-gebruikers distribueren.
 
 AEM Assets is geconfigureerd met Brand Portal via Adobe Developer Console, die een Adobe Identity Management Services (IMS)-accounttoken aanschaft voor toestemming van de Brand Portal-huurder.
 
@@ -44,11 +44,11 @@ AEM Assets is geconfigureerd met Brand Portal via Adobe Developer Console, die e
 >
 >***Alleen voor bestaande klanten***
 >
->Het wordt geadviseerd om de bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In het geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via de Console van Adobe Developer.
+>Het wordt geadviseerd om de bestaande configuratie van de Gateway van erfenisOAuth te blijven gebruiken. In het geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via de Console van Adobe Developer.
 
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
 
-* [Nieuwe configuratie](#configure-new-integration-65): Als u een nieuwe Brand Portal-gebruiker bent en uw AEM Assets-auteurinstantie met Brand Portal wilt configureren, kunt u configuratie maken via Adobe Developer Console.
+* [Nieuwe configuratie](#configure-new-integration-65): Als u een nieuwe Brand Portal-gebruiker bent en de AEM Assets-auteur wilt configureren met Brand Portal, kunt u configuratie maken via Adobe Developer Console.
 * [Upgradeconfiguratie](#upgrade-integration-65): Als u een bestaande Brand Portal-gebruiker bent die configuratie heeft op een verouderde OAuth Gateway, verwijdert u de bestaande configuratie en maakt u een nieuwe configuratie via Adobe Developer Console.
 
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
@@ -61,7 +61,7 @@ De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die de
 
 U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
-* Een AEM Assets-auteur-exemplaar met de nieuwste Service Pack
+* Een AEM Assets-auteur-exemplaar met de nieuwste Service Pack-versie
 * URL Brand Portal-gebruiker
 * Een gebruiker met systeembeheerdersbevoegdheden op de IMS-organisatie van de Brand Portal-tenant
 
@@ -73,9 +73,9 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 Het wordt aanbevolen om AEM 6.5 te hebben om een AEM instantie van de auteur in te stellen. Als u niet AEM, download het van de volgende plaatsen:
 
-* Als u een bestaande AEM klant bent, downloadt u AEM 6.5 van [Adobe-website voor licentieverlening](https://licensing.adobe.com).
+* Als u een bestaande AEM klant bent, downloadt u AEM 6.5 van [Licentiewebsite voor Adobe](https://licensing.adobe.com).
 
-* Als u een partner van de Adobe bent, gebruik [Adobe Partner Training-programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) AEM 6.5.
+* Als u een Adobe partner bent, gebruik [Adobe Partner Training Program](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) AEM 6.5.
 
 Nadat u AEM hebt gedownload, vindt u instructies voor het instellen van een AEM instantie van de auteur [implementeren en onderhouden](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html#default-local-install).
 
@@ -91,7 +91,7 @@ Zie voor gedetailleerde instructies
 
 Voor het configureren van AEM Assets met Brand Portal zijn configuraties vereist in zowel de AEM Assets-auteurinstantie als de Adobe Developer Console.
 
-1. In AEM Assets maakt u een IMS-account en genereert u een openbaar certificaat (openbare sleutel).
+1. Maak in AEM Assets een IMS-account en genereer een openbaar certificaat (openbare sleutel).
 1. Maak in Adobe Developer Console een project voor uw Brand Portal-huurder (organisatie).
 1. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening (JWT) tot stand te brengen.
 1. Krijg de geloofsbrieven van de de dienstrekening en JWT payload informatie.
@@ -132,7 +132,7 @@ Met de openbare sleutel (certificaat) wordt uw profiel geverifieerd op Adobe Dev
 
 1. Selecteren **[!UICONTROL Adobe Brand Portal]** in de **[!UICONTROL Cloud Solution]** vervolgkeuzelijst.
 
-1. Selecteer **[!UICONTROL Create new certificate]** selectievakje en geef een **alias** voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
+1. Selecteer de **[!UICONTROL Create new certificate]** selectievakje en geef een **alias** voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
 
 1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens op **[!UICONTROL OK]** om de openbare sleutel te produceren.
 
@@ -189,15 +189,15 @@ Voer de volgende stappen uit om de geloofsbrieven van de de dienstrekening en la
 
    ![Productprofiel selecteren](assets/service-account4.png)
 
-1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Vanaf de linkernavigatie onder **[!UICONTROL Credentials]**, klikt u op de knop **[!UICONTROL Service Account (JWT)]** optie.
+1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Vanaf de linkernavigatie onder **[!UICONTROL Credentials]**, klikt u op de knop **[!UICONTROL Service Account (JWT)]** -optie.
 
    >[!NOTE]
    >
    >U kunt de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, terugwinnen cliëntgeheim, etc.
 
-1. Van de **[!UICONTROL Client Credentials]** kopiëren **[!UICONTROL client ID]**.
+1. Van de **[!UICONTROL Client Credentials]** -tabblad, kopieert u de **[!UICONTROL client ID]**.
 
-   Klikken **[!UICONTROL Retrieve Client Secret]** en kopieert u de **[!UICONTROL client secret]**.
+   Klikken **[!UICONTROL Retrieve Client Secret]** en kopieer de **[!UICONTROL client secret]**.
 
    ![Servicerekeningen](assets/service-account5.png)
 
@@ -334,7 +334,7 @@ Voer de volgende stappen uit om de configuratie te valideren:
 
    ![Replicatie-instellingen voor elementen controleren](assets/test-integration4.png)
 
-   Er verschijnt een bericht dat uw *testpakket is afgeleverd*.
+   Er verschijnt een bericht dat uw *testpakket is geleverd*.
 
    ![Uitvoer van bevestiging testen](assets/test-integration5.png)
 
@@ -392,7 +392,7 @@ Zorg ervoor dat er geen publicatietaak wordt uitgevoerd op de AEM Assets-ontwerp
 U moet de volgende controlelijst in werking stellen terwijl het schrappen van de bestaande configuraties:
 * Alle vier replicatieagents verwijderen
 * Brand Portal-cloudservice verwijderen
-* MAC-gebruiker verwijderen
+* Mac-gebruiker verwijderen
 
 1. Meld u aan bij de AEM Assets-auteur en open CRX Lite als beheerder. De standaard-URL is `http://localhost:4502/crx/de/index.jsp`.
 
@@ -404,7 +404,7 @@ U moet de volgende controlelijst in werking stellen terwijl het schrappen van de
 
    ![Detail van replicatieagent in CRXDE](assets/delete-cloud-service.png)
 
-1. Navigeren naar `/home/users/mac` en de **Mac-gebruiker** van je Brand Portal-huurder.
+1. Navigeren naar `/home/users/mac` en de **MAC-gebruiker** van je Brand Portal-huurder.
 
    ![Meer detail van replicatieagent in CRXDE](assets/delete-mac-user.png)
 

@@ -8,16 +8,16 @@ content-type: reference
 topic-tags: platform
 docset: aem65
 exl-id: da63c576-34cd-40ce-81de-d7391a331364
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '145'
+source-wordcount: '144'
 ht-degree: 0%
 
 ---
 
 # eCommerce{#ecommerce}
 
-Het integratieframework bevat een integratielaag met een API. Zo kunt u:
+Het integratieframework bevat een integratielaag met een API. Hiermee kunt u:
 
 * plug-in een eCommerce-systeem en haal productgegevens naar AEM
 * bouwen AEM componenten voor handelsmogelijkheden onafhankelijk van de specifieke eCommerce-motor
@@ -25,7 +25,7 @@ Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 Zie voor meer informatie:
 
 * [Ontwikkelen (algemeen)](/help/commerce/cif-classic/developing/generic.md)
-* [Ontwikkelen met SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+* [Ontwikkeling met SAP-Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
 
 >[!NOTE]
 >

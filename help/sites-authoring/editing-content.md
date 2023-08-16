@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: f92ed674-5865-4a53-8c3a-369536861f14
 docset: aem65
 exl-id: d5cf4478-51e4-4ca8-b3f8-6d7caed7d515
-source-git-commit: f6d6fcd1f174cc32a172f70ee3da8eff15156c15
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '3080'
+source-wordcount: '3067'
 ht-degree: 5%
 
 ---
@@ -24,7 +24,7 @@ Inhoud wordt toegevoegd met [componenten](/help/sites-authoring/default-componen
 
 >[!NOTE]
 >
->Uw account heeft [passende toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) om pagina&#39;s te bewerken.
+>Uw account heeft de [passende toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) pagina&#39;s bewerken.
 >
 >Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
 
@@ -76,7 +76,7 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 * **Modus selecteren**
 
-  Geeft de huidige [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
+  Hiermee wordt de huidige [mode](/help/sites-authoring/author-environment-tools.md#page-modes) en kunt u een andere modus selecteren, zoals bewerken, lay-out, tijdverdraaiing of doelversie.
 
   ![Modus selecteren](assets/chlimage_1-120.png)
 
@@ -88,7 +88,7 @@ De werkbalk biedt toegang tot een groot aantal opties. Afhankelijk van uw huidig
 
 * **Annoteren**
 
-  Hiermee kunt u [annotaties](/help/sites-authoring/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
+  Hiermee kunt u toevoegen [annotaties](/help/sites-authoring/annotations.md) naar de pagina wanneer een pagina wordt gecontroleerd. Na de eerste annotatie schakelt het pictogram over naar een getal dat het aantal annotaties op de pagina aangeeft.
 
   ![Annoteren](do-not-localize/screen_shot_2018-03-22at111638.png)
 
@@ -112,7 +112,7 @@ In het bericht wordt de workflow weergegeven die op de pagina wordt uitgevoerd. 
 
 Workflowstappen uitvoeren en delegeren via de berichtenbalk werkt op dezelfde manier als wanneer [deelnemen aan workflows](/help/sites-authoring/workflows-participating.md) in het vak Melding.
 
-Als de pagina aan veelvoudige werkschema&#39;s onderworpen is, wordt het aantal werkschema&#39;s getoond aan het rechtereind van het bericht samen met pijlknopen om u toe te staan om door de werkschema&#39;s te scrollen.
+Als de pagina aan veelvoudige werkschema&#39;s onderworpen is, wordt het aantal werkschema&#39;s getoond bij het rechtereind van het bericht samen met pijlknopen om u door de werkschema&#39;s te laten scrollen.
 
 ![Melding van het aantal werkstromen](assets/chlimage_1-122.png)
 
@@ -151,7 +151,7 @@ U kunt een nieuwe component toevoegen door de **Componenten hierheen slepen** va
 1. Zorg ervoor dat de pagina zich bevindt in [**Bewerken** mode](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Er zijn twee manieren om een nieuwe component in het alineasysteem te selecteren en toe te voegen:
 
-   * Selecteer **Component invoegen** van de werkbalk van een bestaande component of van de **Componenten hierheen slepen** doos.
+   * Selecteer de **Component invoegen** van de werkbalk van een bestaande component of van de **Componenten hierheen slepen** doos.
 
    ![Componentselectie invoegen](assets/screen_shot_2018-03-22at112536.png)
 
@@ -230,7 +230,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
 * **Bewerken**
 
-  [Afhankelijk van het componenttype](/help/sites-authoring/default-components.md) op die manier kunt u [de inhoud van de component bewerken](#edit-content). Er wordt vaak een werkbalk weergegeven.
+  [Afhankelijk van het componenttype](/help/sites-authoring/default-components.md) hiermee kunt u [de inhoud van de component bewerken](#edit-content). Er wordt vaak een werkbalk weergegeven.
 
   ![Bewerken](do-not-localize/screen_shot_2018-03-22at112936.png)
 
@@ -270,7 +270,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
    * U kunt op dezelfde pagina of op een andere pagina plakken.
    * Het geplakte item wordt boven het item geplakt waar u de plakactie selecteert.
-   * De handeling Plakken wordt alleen weergegeven als het Klembord inhoud bevat.
+   * De handeling Plakken wordt alleen weergegeven als er inhoud op het klembord staat.
 
   ![Plakken](assets/screen_shot_2018-03-22at113553.png)
 
@@ -280,7 +280,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
 * **Groep**
 
-  Hierdoor kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
+  Hiermee kunt u meerdere componenten tegelijk selecteren. Hetzelfde kan worden bereikt op een desktopapparaat met een **Ctrl+klikken** of **Command+klikken**.
 
   ![Groep](do-not-localize/screen_shot_2018-03-22at113240.png)
 
@@ -292,13 +292,13 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
 
 * **Layout**
 
-  Hierdoor kunt u de [layout](/help/sites-authoring/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-authoring/author-environment-tools.md#page-modes) voor de gehele pagina.
+  Hiermee kunt u de [layout](/help/sites-authoring/editing-content.md#edit-component-layout) van de geselecteerde component. Dit geldt alleen voor de geselecteerde component en activeert de component [Lay-outmodus](/help/sites-authoring/author-environment-tools.md#page-modes) voor de gehele pagina.
 
   ![Layout](do-not-localize/screen_shot_2018-03-22at113044.png)
 
 * **Omzetten in een ervaringsfragmentvariatie**
 
-  Zo kunt u een nieuwe [ervaren, fragment](/help/sites-authoring/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
+  Hiermee kunt u een nieuwe [ervaren, fragment](/help/sites-authoring/experience-fragments.md) van de geselecteerde component of voeg het aan een bestaand ervaringsfragment toe.
 
   ![Omzetten in ervaringsfragmentvariatie](do-not-localize/screen_shot_2018-03-22at113033.png)
 
@@ -358,7 +358,7 @@ Voor alle componenten kunt u de modus Volledig scherm openen (en afsluiten):
 
 ![Modus Volledig scherm bewerken](do-not-localize/chlimage_1-20.png)
 
-De **Tekst** component:
+Bijvoorbeeld de **Tekst** component:
 
 ![Teksteditor](assets/screen_shot_2018-03-22at121616.png)
 
@@ -368,10 +368,10 @@ De **Tekst** component:
 
 ## Een component verplaatsen {#moving-a-component}
 
-Een alineacomponent verplaatsen:
+Een alinea-component verplaatsen:
 
-1. Selecteer de alinea die u wilt verplaatsen met Tik en houd de muisknop ingedrukt of klik en houd de muisknop ingedrukt.
-1. Sleep de alinea naar de nieuwe locatie. AEM geeft aan waar de alinea kan worden gedeponeerd. Zet het neer op de gewenste plaats.
+1. Selecteer de alinea die u wilt verplaatsen met Tikken en vasthouden of klikken en vasthouden.
+1. Sleep de alinea naar de nieuwe locatie. AEM geeft aan waar de alinea kan worden geplaatst. Zet het neer op de gewenste plaats.
 
    ![alinea-component verplaatsen](assets/screen_shot_2018-03-22at121821.png)
 
@@ -379,9 +379,9 @@ Een alineacomponent verplaatsen:
 
 >[!NOTE]
 >
->U kunt ook [Knippen en plakken](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) om een component te verplaatsen.
+>U kunt ook [Knippen en plakken](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component verplaatsen.
 
-## Componentindeling bewerken {#edit-component-layout}
+## Componentlay-out bewerken {#edit-component-layout}
 
 In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de lay-outmodus](/help/sites-authoring/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
 
@@ -437,7 +437,7 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
   ![Herhaalbare overerving](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-  De actie Uitvoer is ook beschikbaar in de blauwdruk of Live Copy-bron:
+  De actie Uitvoeren is ook beschikbaar in de blauwdruk of Live kopie bron:
 
   ![Uitrol](do-not-localize/screen_shot_2018-03-22at134516.png)
 
@@ -451,7 +451,7 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
 Als de pagina is gebaseerd op een [bewerkbare sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)kunt u eenvoudig overschakelen op [sjablooneditor](/help/sites-authoring/templates.md#editing-templates-template-authors) door **Sjabloon bewerken** in de [Menu Paginagegevens](/help/sites-authoring/author-environment-tools.md#page-information).
 
-Als de pagina is gebaseerd op een [statische sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)kunt u overschakelen op [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) met de [paginamodus selecteren](/help/sites-authoring/author-environment-tools.md#page-modes) op de werkbalk om componenten voor gebruik op de pagina in of uit te schakelen.
+Als de pagina is gebaseerd op een [statisch sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)kunt u overschakelen op [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) met de [paginamodus selecteren](/help/sites-authoring/author-environment-tools.md#page-modes) op de werkbalk om componenten voor gebruik op de pagina in of uit te schakelen.
 
 U kunt gemakkelijk zien op welke sjabloon de pagina is gebaseerd wanneer u de pagina selecteert in de [kolomweergave](/help/sites-authoring/basic-handling.md#column-view) of de [lijstweergave](/help/sites-authoring/basic-handling.md#list-view).
 
@@ -460,7 +460,7 @@ U kunt gemakkelijk zien op welke sjabloon de pagina is gebaseerd wanneer u de pa
 De [De paginamodus Actieve kopie](/help/sites-authoring/author-environment-tools.md#page-modes) Hiermee kunt u snel een overzicht geven van de status van de live kopie en van de onderdelen die u wel of niet wilt overnemen:
 
 * Groene rand: Overgenomen
-* Roze rand: Overerving is geannuleerd
+* Roze rand: overerving is geannuleerd
 
 Bijvoorbeeld:
 
@@ -507,21 +507,21 @@ De **Weergeven als gepubliceerd** Deze optie is beschikbaar via de [Pagina-infor
 
 ## Een pagina vergrendelen {#locking-a-page}
 
-AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
+AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina een korte tijd wilt stilzetten.
 
 Een pagina kan worden vergrendeld vanuit:
 
 * **Sites** console
 
    1. Selecteer de pagina met [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-   1. Selecteer het vergrendelingspictogram.
+   1. Selecteer het slotpictogram.
 
   ![Vergrendelingspictogram](assets/screen_shot_2018-03-22at134928.png)
 
 * **Pagina-editor**
 
-   1. Selecteer **Pagina-informatie** om het menu te openen.
-   1. Selecteer **Pagina vergrendelen** optie.
+   1. Selecteer de **Pagina-informatie** om het menu te openen.
+   1. Selecteer de **Pagina vergrendelen** -optie.
 
 Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt en wanneer u een vergrendelingssymbool bewerkt, wordt deze weergegeven op de werkbalk.
 

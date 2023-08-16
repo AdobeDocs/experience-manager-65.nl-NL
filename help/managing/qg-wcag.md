@@ -2,16 +2,16 @@
 title: Snelgids voor WCAG 2.1
 description: Snelgids voor WCAG 2.1
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1772'
-ht-degree: 97%
+source-wordcount: '1774'
+ht-degree: 96%
 
 ---
 
 # Snelgids voor WCAG 2.1{#quick-guide-to-wcag}
 
-Adobe Experience Manager (AEM) is ontwikkeld om maximale overeenstemming met de Web Content Accessibility Guidelines te bereiken.
+Adobe Experience Manager (AEM) is ontwikkeld om de naleving van de Web Content Accessibility Guidelines te maximaliseren.
 
 De [Web Content Accessibility Guidelines (WCAG) versie 2.1](https://www.w3.org/TR/WCAG/) zijn een reeks internationaal erkende richtlijnen die door het [World Wide Web Consortium (W3C)](https://www.w3.org/) in het kader van hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) zijn ontwikkeld.
 
@@ -68,7 +68,7 @@ Iets meer uitgewerkt:
 * De richtlijnen zijn genummerd van 1.1 tot en met 4.1, waarbij het eerste nummer overeenkomt met het hoofdbeginsel.
 * Elke richtlijn bestaat uit een of meer **succescriteria**.
 * Succescriteria worden geschreven als instructies, die ofwel `True` of `False` zijn voor een bepaalde webpagina.
-* Succescriteria kunnen ofwel/of-keuzes omvatten, of uitzonderingen. Dit zijn situaties waarin niet aan de succescriteria moet worden voldaan.
+* Succescriteria kunnen ofwel keuzes bevatten, ofwel uitzonderingen; situaties waarin niet aan de succescriteria hoeft te worden voldaan.
 * Succescriteria worden genummerd volgens de hoofdrichtlijn en het hoofdbeginsel, van 1.1.1 tot en met 4.1.1. Ze hebben ook een korte naam die de bedoeling van het criterium samenvat en die ervoor zorgt dat de richtlijn en het beginsel gemakkelijker geraadpleegd kunnen worden. Het succescriterium [1.1.1 is bijvoorbeeld Niet-tekstuele content](https://www.w3.org/TR/WCAG/#non-text-content).
 * De succescriteria omvatten een lijst met verwante **technieken** (hieronder nader beschreven).
 

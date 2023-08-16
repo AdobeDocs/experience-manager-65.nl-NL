@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2695'
+source-wordcount: '2692'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In het AEM ontwikkelingsproces voor mobiele toepassingen wordt erkend dat gebruikers met verschillende expertise bijdragen aan de ontwikkeling van mobiele toepassingen. De volgende procesafbeelding illustreert de algemene volgorde waarin inhoudsauteurs en toepassingsontwikkelaars taken uitvoeren.
 
@@ -73,30 +73,30 @@ Mobiele toepassingen zijn gebaseerd op een blauwdruk die een paginastructuur en 
 * **Omschrijving:** Een beschrijving van de aanvraag.
 * **Server-URL:** De URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
 
-U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing wilt gebruiken, de configuratie van de PhoneGap Build selecteren en de analytische configuratie voor de mobiele app selecteren die u wilt gebruiken. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
+U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing wilt gebruiken, de configuratie PhoneGap Build selecteren die u wilt gebruiken en de analytische configuratie voor de mobiele app selecteren. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
 
-Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de Adobe Mobile Services SDK-plug-in in uw app.
+Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de plug-in Adobe Mobile Services SDK in uw app.
 
-* Opbouwen: Klik hier op Configuraties beheren en stel de build.phonegap.com-service in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analyse: Klik op Configuraties beheren en stel uw [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) cloudservice. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Samenstellen: klik hier op Configuraties beheren en stel de service voor het samenstellen van build.phonegap.com in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
+* Analyse: klik op Configuraties beheren en stel uw [Adobe Mobile Services SDK](https://experienceleague.adobe.com/docs/mobile-services/using/home.html) cloudservice. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 >[!NOTE]
 >
 >Ontwikkelaars kunnen de AEM PhoneGap Starter Kit gebruiken om apps te maken en deze toe te voegen aan de console.
 
-In de volgende procedure wordt de Touch UI gebruikt om een mobiele toepassing te maken.
+In de volgende procedure wordt de Touch-gebruikersinterface gebruikt om een mobiele toepassing te maken.
 
 1. Klik op Apps op de rail.
-1. Klik op het pictogram Maken.
+1. Klik het Create pictogram.
 
    ![Het pictogram Maken dat wordt aangegeven door een plusteken binnen een vierkant.](do-not-localize/chlimage_1-7.png)
 
 1. (Optioneel) Geef op het tabblad Geavanceerd een beschrijving voor de toepassing op en wijzig de URL van de server indien nodig.
-1. (Optioneel) Als u de toepassing compileert met PhoneGap Build, selecteert u op het tabblad Build de configuratie die u wilt gebruiken.
+1. (Optioneel) Als u PhoneGap Build gebruikt om de toepassing te compileren, selecteert u op het tabblad Build de configuratie die u wilt gebruiken.
 
    Klik op Configuraties beheren om een PhoneGap-build-configuratie te maken.
 
-1. (Optioneel) Als u SiteCatalyst gebruikt om de toepassingsactiviteit bij te houden, selecteert u op het tabblad Analyse de configuratie die u wilt gebruiken.
+1. (Optioneel) Als u SiteCatalyst gebruikt om de toepassingsactiviteit te volgen, selecteert u op het tabblad Analyse de configuratie die u wilt gebruiken.
 
    Klik op Configuraties beheren als u een mobiele toepassingsconfiguratie wilt maken.
 
@@ -122,7 +122,7 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 
    ![Het pictogram Done dat wordt aangeduid door een vinkje.](do-not-localize/chlimage_1-10.png)
 
-#### Vorm een Variatie van de Taal van de Toepassing {#configure-a-language-variation-of-the-application}
+#### Een taalvariatie van de toepassing configureren {#configure-a-language-variation-of-the-application}
 
 1. Klik op Apps op de rail.
 1. Klik om de mobiele toepassing die u wilt bewerken, in te roepen in de Admin Console apps. Selecteer de taalversie van de toepassing die u wilt configureren en klik op het pictogram Toepassingseigenschappen weergeven.
@@ -186,7 +186,7 @@ Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 ![chlimage_1-1](assets/chlimage_1-1.jpeg)
 
 1. Klik op de knop + Maken bovenaan en selecteer App maken.
-1. Als u de lijst met App Templates hebt ontvangen, selecteert u een sjabloon:
+1. Als u de lijst met App Templates hebt ontvangen, selecteert u een van deze sjablonen:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
@@ -207,9 +207,9 @@ Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 
 >[!NOTE]
 >
->Als u de Geometrixx Outdoors-referentie-app verwijdert van AEM en een app hebt gemaakt op basis van de sjabloon, werkt die app niet meer. De app Geometrixx Outdoors kan worden verwijderd, maar de toepassingssjabloon moet blijven staan als deze wordt gebruikt door andere mobiele toepassingen.
+>Als u het Geometrixx Outdoors referentie-app-pakket van AEM verwijdert en een app hebt gemaakt op basis van de sjabloon, werkt die app niet meer. De app Geometrixx Outdoors kan worden verwijderd, maar de toepassingssjabloon moet blijven staan als deze wordt gebruikt door andere mobiele toepassingen.
 
-## De voorbeeldtoepassing Geometrixx Outdoors verkennen {#exploring-the-sample-geometrixx-outdoors-app}
+## De Sample Geometrixx Outdoors App verkennen {#exploring-the-sample-geometrixx-outdoors-app}
 
 Geometrixx Outdoors App is een voorbeeld van een PhoneGap-toepassing die de functies van de standaardblauwdruk van de PhoneGap-toepassing en de mobiele voorbeeldcomponenten demonstreert.
 
@@ -223,8 +223,8 @@ Elke pagina van de mobiele app bevat de volgende functies:
 * Een uitbreidbare rail met een menu van opdrachten en koppelingen:
 
    * Open de pagina Locaties.
-   * Open het winkelwagentje.
-   * Meld u aan.
+   * Open de winkelwagen.
+   * Log in.
    * Werk de toepassing bij.
 
 * Het alineasysteem voor het toevoegen van componenten en het maken van inhoud.
@@ -265,9 +265,9 @@ Bevat een knop Terug. Met het alineasysteem kunt u componenten toevoegen.
 
 Wanneer u de toepassing gebruikt, is de pagina News beschikbaar via de carrousel op de Engelse pagina.
 
-### De pagina Over ons - Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
+### De pagina Over ons - Geometrixx Mobile-toepassing {#the-about-us-page-geometrixx-mobile-app}
 
-De pagina Info over ons bevat verschillende componenten Twee kolomrijen. Elke kolom bevat een component Image of Text. De componenten zijn bewerkbaar en in het alineasysteem kunt u componenten toevoegen.
+De pagina Info over ons bevat verschillende componenten Twee kolomrijen. Elke kolom bevat een component Image of Text. De componenten zijn bewerkbaar en het alineasysteem biedt u de mogelijkheid componenten toe te voegen.
 
 Wanneer u de toepassing gebruikt, is de pagina Over gebruikers beschikbaar via de carrousel op de Engelse pagina.
 
@@ -289,21 +289,21 @@ Afbeeldingen worden in de carrousel weergegeven voor pagina&#39;s die op een spe
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-**Tabblad Carousel-eigenschappen**
+**Tabblad Eigenschappen van carrousel**
 
 Configureer het gedrag van de carrousel:
 
-* Afspeelsnelheid: De tijd in milliseconden dat elke afbeelding wordt weergegeven voordat de volgende afbeelding wordt weergegeven.
-* Overgangstijd: De duur in milliseconden van de animatie voor afbeeldingsovergangen.
-* Besturingselementstijl: Het type besturingselementen waarmee u tussen afbeeldingen kunt schakelen.
+* Afspeelsnelheid: de tijd in milliseconden dat elke afbeelding wordt weergegeven voordat de volgende afbeelding wordt weergegeven.
+* Overgangstijd: de duur in milliseconden van de animatie voor afbeeldingsovergangen.
+* Besturingsstijl: het type besturingselement dat wordt gebruikt voor het verplaatsen tussen afbeeldingen.
 
 **Tabblad Eigenschappen van lijst**
 
 Geef op hoe de paginalijst wordt gegenereerd:
 
-* Lijst samenstellen met: De methode die moet worden gebruikt voor het opgeven van de pagina&#39;s die in de carrousel moeten worden opgenomen. Zie De paginalijst samenstellen.
-* Volgorde van: Selecteer een pagina-eigenschap die u wilt gebruiken voor het sorteren van de paginalijst. Selecteer bijvoorbeeld jcr:title om pagina&#39;s alfabetisch op titel te sorteren.
-* Limiet: Het maximumaantal pagina&#39;s dat moet worden opgenomen. Deze eigenschap is geschikt voor op zoeken gebaseerde methoden om de paginalijst samen te stellen.
+* Lijst samenstellen met: de methode die moet worden gebruikt voor het opgeven van de pagina&#39;s die moeten worden opgenomen in de carrousel. Zie De paginalijst samenstellen.
+* Volgorde door: selecteer een pagina-eigenschap die u wilt gebruiken voor het sorteren van de paginalijst. Selecteer bijvoorbeeld jcr:title om pagina&#39;s alfabetisch op titel te sorteren.
+* Limiet: het maximumaantal pagina&#39;s dat moet worden opgenomen. Deze eigenschap is geschikt voor op zoeken gebaseerde methoden om de paginalijst samen te stellen.
 
 #### De paginalijst samenstellen {#building-the-page-list}
 

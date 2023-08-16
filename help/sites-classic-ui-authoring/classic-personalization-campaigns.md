@@ -1,14 +1,14 @@
 ---
 title: Campaign Management
-description: Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud te leveren en zo speciale ervaringen voor bezoekers te creëren. Zo kunt u uw marketingcampagnes ordenen op het web, via e-mail en via mobiele services en zo uw bezoekers erbij betrekken.
+description: Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud te leveren en zo speciale ervaringen voor bezoekers te creëren. Hiermee kunt u uw marketingcampagnes ordenen op het web, via e-mail en via mobiele services en zo uw bezoekers erbij betrekken.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d1741525-a475-4a76-bd16-55318023495e
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud te leveren en zo speciale ervaringen voor bezoekers te creëren.
 
-Zo kunt u uw marketingcampagnes ordenen op het web, via e-mail en via mobiele services en zo uw bezoekers erbij betrekken. U kunt inhoud maken, bezoekers segmenteren, doelgerichte inhoud voor specifieke gebruikersprofielen duwen en promoten en campagnes op meerdere kanalen beheren.
+Hiermee kunt u uw marketingcampagnes ordenen op het web, via e-mail en via mobiele services en zo uw bezoekers erbij betrekken. U kunt inhoud maken, bezoekers segmenteren, doelgerichte inhoud voor specifieke gebruikersprofielen duwen en promoten en campagnes op meerdere kanalen beheren.
 
 In dit document worden de verschillende elementen beschreven waaruit campagnes bestaan. Meer gedetailleerde informatie is beschikbaar in de volgende documenten:
 
@@ -53,7 +53,7 @@ De inhoud met focus vormt de verschillende ervaringen die aan de bezoeker worden
 
    * **Nieuwsbrieven**
 
-     [E-mailcommunicatie](#emailmarketing) worden gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze worden meestal verzonden in de vorm van een nieuwsbrief naar uw **Leads** (die zijn gegroepeerd in **Lijsten**). **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren. Aanbeveling is [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
+     [E-mailcommunicatie](#emailmarketing) worden gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze worden meestal verzonden in de vorm van een nieuwsbrief naar uw **Leads** (gegroepeerd in **Lijsten**). **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren. Aanbeveling is [Adobe Campaign gebruiken en de integratie AEM](/help/sites-administering/campaign.md).
 
    * **Adobe Target**
 

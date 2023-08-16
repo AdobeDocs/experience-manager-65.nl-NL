@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: e24316cb9495a552960ae0620e4198f10a08b691
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1614'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Wanneer u de omgeving instelt op een [!DNL Adobe Experience Manager Assets] impl
 
 ### DataStore {#datastore}
 
-Een algemene fout die is gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een [!DNL Assets] bij de implementatie moeten de berekeningen worden gebaseerd op de grootte van de onbewerkte afbeeldingen die in het systeem worden opgenomen . Standaard, [!DNL Experience Manager] maakt drie uitvoeringen naast de originele afbeelding voor het renderen van de [!DNL Experience Manager] gebruikersinterface-elementen. In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
+Een algemene fout die is gemaakt bij het instellen van de grootte van de vereiste schijfruimte voor een [!DNL Assets] bij de implementatie moeten de berekeningen worden gebaseerd op de grootte van de onbewerkte afbeeldingen die in het systeem worden opgenomen . Standaard, [!DNL Experience Manager] maakt drie uitvoeringen naast de oorspronkelijke afbeelding voor gebruik bij het renderen van de [!DNL Experience Manager] gebruikersinterface-elementen. In vorige implementaties, zijn deze vertoningen waargenomen tweemaal de grootte van de activa veronderstellen die worden opgenomen.
 
-De meeste gebruikers definiëren aangepaste uitvoeringen naast de uitvoeringen buiten de box. Naast de vertoningen [!DNL Assets] Hiermee kunt u subelementen extraheren uit gangbare bestandstypen, zoals [!DNL Adobe InDesign] en [!DNL Adobe Illustrator].
+De meeste gebruikers definiëren aangepaste uitvoeringen naast de uitvoeringen buiten de box. Naast de vertoningen, [!DNL Assets] Hiermee kunt u subelementen extraheren uit gangbare bestandstypen, zoals [!DNL Adobe InDesign] en [!DNL Adobe Illustrator].
 
-Tot slot, versieringsmogelijkheden van [!DNL Experience Manager] Hiermee slaat u duplicaten van de elementen in de versiegeschiedenis op. U kunt de versies vormen om vaak worden gezuiverd. Veel gebruikers kiezen er echter voor om de versies in het systeem lange tijd te behouden, wat extra opslagruimte verbruikt.
+Tot slot, versieringsmogelijkheden van [!DNL Experience Manager] Hiermee slaat u duplicaten van de elementen in de versiegeschiedenis op. U kunt de versies configureren die vaak moeten worden gewist. Veel gebruikers kiezen er echter voor om de versies in het systeem lange tijd te behouden, wat extra opslagruimte verbruikt.
 
 Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige opslagruimte te berekenen om gebruikersactiva op te slaan.
 
@@ -56,7 +56,7 @@ De voorbeeldgegevens die in het gereedschap zijn ingevuld, tonen aan hoe belangr
 
 ### Gedeelde datastores {#shared-datastores}
 
-Voor grote datastores, kunt u een gedeelde datastore of door een gedeelde dossierdatastore op een netwerk in bijlage aandrijving of door een datastore van Amazon S3 uitvoeren. In dit geval hoeft in afzonderlijke gevallen geen kopie van de binaire bestanden te worden bewaard. Bovendien vergemakkelijkt een gedeelde datastore binair-geen replicatie en helpt de bandbreedte verminderen die wordt gebruikt om activa aan publicatiemilieu&#39;s te herhalen.
+Voor grote datastores, kunt u een gedeelde datastore of door een gedeelde dossierdatastore op een netwerk in bijlage aandrijving of door een datastore van Amazon S3 uitvoeren. In dit geval hoeft in afzonderlijke gevallen geen kopie van de binaire bestanden te worden bijgehouden. Bovendien vergemakkelijkt een gedeelde datastore binair-geen replicatie en helpt de bandbreedte verminderen die wordt gebruikt om activa aan publicatiemilieu&#39;s te herhalen.
 
 #### Gebruik hoofdletters {#use-cases}
 
@@ -68,7 +68,7 @@ Door sommige valkuilen wordt het delen van een datastore niet in alle gevallen a
 
 #### Eén foutpunt {#single-point-of-failure}
 
-Met een gedeelde datastore introduceert u één foutpunt in een infrastructuur. Overweeg een scenario waarin uw systeem één auteur en twee publiceer instanties heeft, elk met hun eigen datastore. Als één van hen crasht, kunnen de andere twee nog lopen. Nochtans, als datastore wordt gedeeld, kan één enkele schijfmislukking de volledige infrastructuur onderdrukken. Zorg daarom dat u een back-up van de gedeelde datastore bijhoudt vanaf waar u de datastore snel kunt herstellen.
+Met een gedeelde datastore introduceert u één foutpunt in een infrastructuur. Overweeg een scenario waarin uw systeem één auteur en twee publiceer instanties heeft, elk met hun eigen datastore. Als één van hen crasht, kunnen de andere twee nog lopen. Nochtans, als datastore wordt gedeeld, kan één enkele schijfmislukking de volledige infrastructuur onderdrukken. Zorg er daarom voor dat u een back-up van de gedeelde datastore bijhoudt vanaf waar u de datastore snel kunt herstellen.
 
 De voorkeur wordt gegeven aan de AWS S3-service voor gedeelde datastores, omdat hierdoor de kans op mislukking aanzienlijk afneemt in vergelijking met normale schijfarchitecturen.
 
@@ -115,7 +115,7 @@ Bovendien kunt u de eigenschap voor drempelgrootte van het dialoogvenster `com.d
 
 ## Maximumaantal activa {#maximum-number-of-assets}
 
-De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de opslagplaats problemen door groot aantal knopen lang alvorens de datastore grens te bereiken ontmoet.
+De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de gegevensopslagruimte problemen tegenkomt vanwege een groot aantal knooppunten lang voordat de datastore-limiet wordt bereikt.
 
 Gebruik de Camera Raw bibliotheek als de uitvoeringen onjuist zijn gegenereerd. In dit geval mag de langste zijde van de afbeelding echter niet groter zijn dan 65000 pixels. Bovendien mag de afbeelding niet meer dan 512 MP (512 x 1024 x 1024 pixels) bevatten. De grootte van het actief is niet van belang.
 
@@ -123,4 +123,4 @@ Het is moeilijk nauwkeurig de grootte van het TIFF dossier te schatten dat uit-v
 
 ## Omvang van elementen {#size-of-assets}
 
-Standaard, [!DNL Experience Manager] kunt u bestanden van maximaal 2 GB uploaden. Zeer grote middelen uploaden in [!DNL Experience Manager], zie [Configuratie om zeer grote elementen te uploaden](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).
+Standaard, [!DNL Experience Manager] Hiermee kunt u elementen uploaden van maximaal 2 GB. Zeer grote middelen uploaden in [!DNL Experience Manager], zie [Configuratie om zeer grote elementen te uploaden](managing-video-assets.md#configuration-to-upload-assets-that-are-larger-than-gb).

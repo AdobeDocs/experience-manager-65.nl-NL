@@ -2,9 +2,9 @@
 title: Ontwikkeling zonder hoofd voor AEM 6.5 sites
 description: Leer hoe AEM 6.5 krachtige mogelijkheden zonder kop, zoals Content Models, Content Fragments, en de GraphQL API samenwerken om u in staat te stellen uw ervaringen centraal te beheren en hen te dienen over kanalen.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: ac70fb534a95c9eee6f8340d9b8720a607b9f79f
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
-source-wordcount: '493'
+source-wordcount: '495'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ Bij implementatie zonder kop gaan pagina- en componentbeheer verloren, zoals geb
 
 ## Bezig met vergelijken van hoofdletters en hoofdletters {#headful-headless}
 
-Dit document richt zich op het volledige implementatiemodel zonder kop van AEM. Nochtans moet de macht tegenover de zonder kop geen binaire keus in AEM zijn. U kunt de functies zonder koppen gebruiken om uw inhoud te beheren en aan verschillende eindpunten te leveren, terwijl u de auteurs van de inhoud ook in staat stelt toepassingen op één pagina te bewerken. Alles in AEM.
+Dit document richt zich op het volledige implementatiemodel zonder kop van AEM. Nochtans, hoeft de kop versus de kop geen binaire keuze in AEM te zijn. U kunt de functies zonder koppen gebruiken om uw inhoud te beheren en aan verschillende eindpunten te leveren, terwijl u de auteurs van de inhoud ook in staat stelt toepassingen op één pagina te bewerken. Alles in AEM.
 
 >[!TIP]
 >
@@ -50,8 +50,8 @@ AEM 6.5 is een flexibel instrument voor het model van de implementatie zonder ko
 
 Er zijn een aantal bronnen beschikbaar waarmee u aan de slag kunt met AEM functies zonder kop. Ze zijn bedoeld voor verschillende gebruiksgevallen, maar bieden allemaal een stevig overzicht van AEM hoofdloze kenmerken.
 
-| Resource | Beschrijving | Type | Publiek | Oost. Tijd |
+| Bron | Beschrijving | Type | Publiek | Oost. Tijd |
 |---|---|---|---|---|
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | **Voor gebruikers die nog niet zijn AEM en zonder kop** technologieën, begin hier voor een uitvoerige inleiding aan AEM en zijn headless eigenschappen van de theorie van headless door met uw eerste hoofdloze project te leven. | Handleiding | Ontwikkelaars **nieuw tot AEM en zonder kop** | 1 uur |
-| [Aan de slag met koppen](/help/sites-developing/headless/getting-started/introduction.md) | **Voor ervaren AEM** Voor een kort overzicht van de belangrijkste functies voor het AEM zonder kop, bekijkt u dit snelstartoverzicht. | Snel starten | Ontwikkelaars, beheerders **met AEM ervaring** | 20 minuten |
-| [Aan de slag met AEM praktische zelfstudie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Als u een hands-on benadering verkiest en met AEM vertrouwd bent** Deze zelfstudie duikt rechtstreeks in het maken van een eenvoudig project zonder kop. | Zelfstudie | Ontwikkelaars | 2 uur |
+| [Aan de slag met koploze gids](/help/sites-developing/headless/getting-started/introduction.md) | **Voor ervaren AEM** Voor een kort overzicht van de belangrijkste functies voor het AEM zonder kop, bekijkt u dit snelstartoverzicht. | Snel starten | Ontwikkelaars, beheerders **met AEM ervaring** | 20 minuten |
+| [Aan de slag met AEM praktische zelfstudie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Als u liever een praktische aanpak kiest en vertrouwd bent met AEM** Deze zelfstudie duikt rechtstreeks in het maken van een eenvoudig project zonder kop. | Zelfstudie | Ontwikkelaars | 2 uur |

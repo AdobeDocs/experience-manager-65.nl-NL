@@ -1,15 +1,15 @@
 ---
 title: Annotaties bij het bewerken van een pagina
-description: Over het toevoegen van inhoud aan de pagina's van uw website wordt vaak gediscussieerd voordat deze daadwerkelijk wordt gepubliceerd. Om dit te helpen, staan vele componenten direct met inhoud verwant u toe om een aantekening toe te voegen.
+description: Over het toevoegen van inhoud aan de pagina's van uw website wordt vaak gediscussieerd voordat deze daadwerkelijk wordt gepubliceerd. Om dit te helpen, laten vele componenten direct met inhoud verwant u een aantekening toevoegen.
 page-status-flag: de-activated
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '767'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Een annotatie plaatst een gekleurde markering/notitie op de pagina. Met de annot
 
 >[!CAUTION]
 >
->Als u een bron verwijdert (bijvoorbeeld alinea), worden alle annotaties en schetsen verwijderd die aan die bron zijn gekoppeld. ongeacht hun positie op de pagina als geheel.
+>Als u een bron verwijdert (bijvoorbeeld alinea), worden alle annotaties en schetsen verwijderd die aan die bron zijn gekoppeld, ongeacht de positie op de pagina als geheel.
 
 >[!NOTE]
 >
@@ -85,16 +85,16 @@ Schetsen zijn een functie van annotaties waarmee u overal in het browservenster 
 
    * vrij
 
-     de standaardmodus; klaar met de muisknop.
+     de standaardmodus; sluit de bewerking af door de muisknop los te laten.
 
    * recht:
 
-     onderdrukken `ALT` en klik op de begin- en eindpunten; voltooien met een dubbelklik.
+     onderdrukken `ALT` en klik op het begin- en eindpunt. Voltooi de bewerking met een dubbelklik.
 
 * Nadat u de modus Schets hebt verlaten, kunt u op een schetslijn klikken om die schets te selecteren.
 * Verplaats een schets door de schets te selecteren en vervolgens naar de gewenste positie te slepen.
 * Een schets bedekt de inhoud. Dit betekent dat u binnen de vier hoeken van de schets niet op de onderliggende alinea kunt klikken. Als u bijvoorbeeld een koppeling moet bewerken of openen. Als dit een probleem wordt (bijvoorbeeld als u een schets hebt die een groot gebied van de pagina bedekt), minimaliseert u de juiste annotatie, aangezien hierdoor ook alle verwante schetsen worden geminimaliseerd, zodat u toegang hebt tot het onderliggende gebied.
 * Als u een afzonderlijke schets wilt verwijderen, selecteert u de gewenste schets en drukt u vervolgens op de knop **Verwijderen** key (**fn**-**backspace** op een Mac).
 
-* Als u een alinea verplaatst of kopieert, worden eventuele verwante annotaties en de bijbehorende schetsen ook verplaatst of gekopieerd. hun standpunt ten aanzien van de alinea blijft ongewijzigd .
-* Als u een annotatie verwijdert, worden ook alle aan die annotatie gekoppelde schetsen verwijderd.
+* Als u een alinea verplaatst of kopieert, worden eventuele verwante annotaties en de bijbehorende schetsen ook verplaatst of gekopieerd. De positie ten opzichte van de alinea blijft ongewijzigd.
+* Als u een annotatie verwijdert, worden ook alle schetsen verwijderd die aan die annotatie zijn gekoppeld.

@@ -1,12 +1,12 @@
 ---
 title: Markering
-description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u toe te staan om tot koploze inhoud gemakkelijk te leiden.
+description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringssyntaxis gebruikt om u gemakkelijk koploze inhoud te laten tot stand brengen.
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '520'
 ht-degree: 3%
 
 ---
@@ -27,7 +27,7 @@ U kunt het volgende definiëren:
 * [Lijsten](/help/assets/content-fragments/content-fragments-markdown.md#lists)
 * [Nadruk](/help/assets/content-fragments/content-fragments-markdown.md#emphasis)
 * [Codeblokken](/help/assets/content-fragments/content-fragments-markdown.md#code-blocks)
-* [Backslash-escape](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
+* [Backslash-escapen](/help/assets/content-fragments/content-fragments-markdown.md#backslash-escapes)
 
 ## Kop {#heading-notation}
 
@@ -129,7 +129,7 @@ U kunt geneste blokaanhalingstekens hebben. Bijvoorbeeld:
 
 U kunt zowel geordende als ongeordende lijsten maken.
 
-&amp;Als u een ongeordende lijst wilt maken, gebruikt u de voorste lijst; vóór de items in de lijst. Bijvoorbeeld:
+Als u een niet-geordende lijst wilt maken, gebruikt u het symbool &amp;ast; vóór de items in de lijst. Bijvoorbeeld:
 
     `* item in list`
 
@@ -179,7 +179,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
         `This is a code block.`
 
-## Backslash-escape {#backslash-escapes}
+## Backslash-escapen {#backslash-escapes}
 
 Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 

@@ -2,9 +2,9 @@
 title: Basisbeginselen van Content Modeling
 description: Leer de basis van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Fragments van de Inhoud.
 exl-id: a53fef09-6495-4bb7-8df1-ba3c113d88f6
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '905'
+source-wordcount: '899'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Dit artikel bouwt hierop voort, zodat u begrijpt hoe u uw inhoud voor uw project
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: Introduceer de concepten Inhoud modelleren voor Hoofdloze CMS.
+* **Doelstelling**: Introduceer de concepten van Content Modeling voor CMS zonder hoofd.
 
 ## Inhoud modelleren met modellen van inhoudsfragmenten {#architect-content-fragment-models}
 
@@ -64,9 +64,9 @@ Een inhoudsfragmentmodel beschrijft een entiteit.
 
 Binnen een model:
 
-1. **Gegevenstypen** kunt u de afzonderlijke kenmerken definiëren.
+1. **Gegevenstypen** Hiermee kunt u de afzonderlijke kenmerken definiëren.
 U kunt bijvoorbeeld het veld met de naam van een docent definiëren als **Tekst** en hun dienstjaren als **Getal**.
-1. De gegevenstypen **Content Reference** en **Fragmentverwijzing** kunt u relaties maken met andere inhoud binnen AEM.
+1. De gegevenstypen **Content Reference** en **Fragmentverwijzing** Hiermee kunt u relaties maken met andere inhoud binnen AEM.
 1. De **Fragmentverwijzing** Met het gegevenstype kunt u meerdere structuurniveaus realiseren door de Content Fragments (op basis van het modeltype) te nesten. Dit is van essentieel belang voor het modelleren van inhoud.
 
 Bijvoorbeeld:
@@ -121,16 +121,16 @@ Met deze referentie kunt u *verbinden* Diverse Content Fragment Models om interr
 >
 >Dit moet met voorzichtigheid worden gebruikt en de beste praktijken kunnen worden gedefinieerd als *nest zo veel als nodig is, maar zo weinig mogelijk*.
 
-Fragmentverwijzingen doen alleen dat - ze stellen u in staat naar een ander fragment te verwijzen.
+Fragmentverwijzingen doen alleen dat - ze laten u naar een ander fragment verwijzen.
 
 U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
 
 * Plaats
 * Bedrijf
 * Persoon
-* Awards
+* Uitreiking
 
-Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers....en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
+Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers...en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
 
 En een persoon kan een Prijs (of misschien twee) hebben.
 
@@ -151,7 +151,7 @@ Nu u de grondbeginselen hebt geleerd, is de volgende stap: [Meer informatie over
 
 * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 
-   * [Content Fragment Models - Data Types](/help/assets/content-fragments/content-fragments-models.md#data-types)
+   * [Modellen van inhoudsfragmenten - gegevenstypen](/help/assets/content-fragments/content-fragments-models.md#data-types)
 
 * [Authoring van concepten](/help/sites-authoring/author.md)
 

@@ -4,7 +4,7 @@ description: Leer hoe u een upgrade op locatie kunt uitvoeren.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: c0574b50f3504a4792405d6fcd8aa3a2e8e6c686
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
 source-wordcount: '1244'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 ## Migratie van opslagplaats voor inhoud {#content-repository-migration}
 
-Deze migratie is niet vereist als u een upgrade uitvoert vanaf AEM 6.3. Voor versies ouder dan 6.3, verstrekt Adobe een hulpmiddel dat kan worden gebruikt om de bewaarplaats aan de nieuwe versie van de Tar van het Segment van het Eak in AEM 6.3 te migreren. Deze wordt geleverd als onderdeel van het pakket quickstart en is verplicht voor alle upgrades die TarMK zullen gebruiken. Voor upgrades voor omgevingen die gebruikmaken van MongoMK is geen migratie naar opslagplaats vereist. Voor meer informatie over wat de voordelen van het nieuwe formaat van de Tar van het Segment zijn, zie [Veelgestelde vragen over migreren naar eikensegment](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
+Deze migratie is niet vereist als u een upgrade uitvoert vanaf AEM 6.3. Voor versies ouder dan 6.3, verstrekt de Adobe een hulpmiddel dat kan worden gebruikt om de bewaarplaats aan de nieuwe versie van de Tar van het Segment van het Eak in AEM 6.3 te migreren. Deze wordt geleverd als onderdeel van het pakket quickstart en is verplicht voor alle upgrades die TarMK zullen gebruiken. Voor upgrades voor omgevingen die gebruikmaken van MongoMK is geen migratie naar opslagplaats vereist. Zie voor meer informatie over de voordelen van de nieuwe indeling Segment Tar de [Veelgestelde vragen over migreren naar eikensegment](/help/sites-deploying/revision-cleanup.md#online-revision-cleanup-frequently-asked-questions).
 
 De werkelijke migratie wordt uitgevoerd met het standaard AEM quickstart jar-bestand, uitgevoerd met een nieuw `-x crx2oak` die het crx2oak-gereedschap uitvoert om de upgrade te vereenvoudigen en robuuster te maken.
 
@@ -53,7 +53,6 @@ De werkelijke migratie wordt uitgevoerd met het standaard AEM quickstart jar-bes
 >
 >* `--promote-runmode nosamplecontent`
 >
-
 
 Gebruik de volgende opdracht om te bepalen welke opdracht u moet uitvoeren:
 
@@ -104,27 +103,27 @@ Wanneer `<<YOUR_PROFILE>>` en `<<ADDITIONAL_FLAGS>>` worden vervangen door het p
  </tbody>
 </table>
 
-**Waar:**
+**Waarbij:**
 
 * `mongo-host` is de IP van de MongoDB-server (bijvoorbeeld 127.0.0.1)
 
-* `mongo-port` is de MongoDB-serverpoort (bijvoorbeeld: (27017)
+* `mongo-port` is de MongoDB-serverpoort (bijvoorbeeld: 27017)
 
-* `mongo-database-name` vertegenwoordigt de naam van de database (bijvoorbeeld: auteur)
+* `mongo-database-name` staat voor de naam van de database (bijvoorbeeld: aem-auteur)
 
 **U kunt extra schakelaars voor de volgende scenario&#39;s ook vereisen:**
 
 * Als u de upgrade uitvoert op een Windows-systeem waar Java-geheugentoewijzing niet correct wordt verwerkt, voegt u de opdracht `--disable-mmap` aan het bevel.
 
-Voor meer instructies over het gebruik van het crx2oak-gereedschap raadpleegt u het dialoogvenster [CRX2Oak-migratiehulpmiddel](/help/sites-deploying/using-crx2oak.md). U kunt indien nodig handmatig een upgrade uitvoeren van de crx2oak-hulplijn door deze handmatig te vervangen door nieuwere versies nadat u de snelstart hebt uitgenomen. De installatiemap van AEM bevindt zich op de volgende locatie: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. De nieuwste versie van het CRX2Oak-migratiehulpprogramma kan worden gedownload van de Adobe Repository op: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
+Voor meer instructies over het gebruik van het crx2oak-gereedschap raadpleegt u het dialoogvenster [CRX2Oak-migratiehulpmiddel](/help/sites-deploying/using-crx2oak.md). U kunt indien nodig handmatig een upgrade uitvoeren van de crx2oak-hulplijn door deze handmatig te vervangen door nieuwere versies nadat u de snelstart hebt uitgenomen. De installatiemap van AEM bevindt zich op de volgende locatie: `<aem-install>/crx-quickstart/opt/extensions/crx2oak.jar`. De nieuwste versie van het CRX2Oak-migratiehulpprogramma kan worden gedownload van de opslagplaats voor Adoben op: [https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/](https://repo1.maven.org/maven2/com/adobe/granite/crx2oak/)
 
 Als de migratie is voltooid, wordt het gereedschap afgesloten met de afsluitcode nul. Controleer bovendien op WAARSCHUWING- en FOUTberichten in het dialoogvenster `upgrade.log` bestand, zich onder `crx-quickstart/logs` in de AEM installatiemap, aangezien deze kunnen wijzen op niet-fatale fouten die zich tijdens de migratie hebben voorgedaan.
 
-Controleer de onderstaande configuratiebestanden `crx-quickstart/install` map. Als er een migratie nodig was, worden deze aangepast aan de doelopslagplaats.
+Controleer de onderstaande configuratiebestanden `crx-quickstart/install` map. Als er een migratie nodig was, worden deze bijgewerkt om de doelopslagplaats te weerspiegelen.
 
 **Een opmerking over datastores:**
 
-while `FileDataStore` is het nieuwe gebrek voor AEM 6.3 installaties, wordt het gebruiken van een externe datastore niet vereist. Terwijl het gebruiken van een externe datastore als beste praktijken voor productielokaties wordt geadviseerd, is het geen eerste vereiste om te bevorderen. Vanwege de complexiteit die al aanwezig is bij de upgrade van AEM, raden we u aan de upgrade uit te voeren zonder een datastore-migratie uit te voeren. Indien gewenst, kan een datastore migratie achteraf als afzonderlijke inspanning worden uitgevoerd.
+while `FileDataStore` is het nieuwe gebrek voor AEM 6.3 installaties, wordt het gebruiken van een externe datastore niet vereist. Terwijl het gebruiken van een externe datastore als beste praktijken voor productielokaties wordt geadviseerd, is het geen eerste vereiste om te bevorderen. Vanwege de complexiteit die al aanwezig is bij de upgrade van AEM, raadt Adobe aan de upgrade uit te voeren zonder een datastore-migratie uit te voeren. Indien gewenst, kan een datastore migratie achteraf als afzonderlijke inspanning worden uitgevoerd.
 
 ## Problemen met migratie oplossen {#troubleshooting-migration-issues}
 
@@ -166,9 +165,9 @@ Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaa
 
 >[!IMPORTANT]
 >
->Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen AEM. Zie voor meer informatie [Overwegingen bij Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen van AEM. Zie voor meer informatie [Overwegingen bij Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, enz. te omvatten. Om deze reden, adviseren wij na deze procedure om het juiste verbeteringsbevel te bepalen:
+Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, enz. te omvatten. Om deze reden, adviseert de Adobe na deze procedure om het juiste verbeteringsbevel te bepalen:
 
 1. Voer bij een actieve AEM de volgende handelingen uit vanaf de opdrachtregel:
 
@@ -176,7 +175,7 @@ Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal
    ps -ef | grep java
    ```
 
-1. Zoek het AEM. Het zal er ongeveer als volgt uitzien:
+1. Zoek naar het AEM. Het zal er ongeveer als volgt uitzien:
 
    ```shell
    /usr/bin/java -server -Xmx1024m -Djava.awt.headless=true -Dsling.run.modes=author,crx3,crx3tar -jar crx-quickstart/app/cq-quickstart-6.5.0-standalone-quickstart.jar start -c crx-quickstart -i launchpad -p 4502 -Dsling.properties=conf/sling.properties

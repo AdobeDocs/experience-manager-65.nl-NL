@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 67625e62-7035-4eb5-8dd5-6840d775a547
 docset: aem65
 exl-id: 5d7b6b2e-d1d8-4efe-b9ff-c9542b4e67d7
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '902'
+source-wordcount: '897'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren 
 
 ## Sitebeheer {#site-administration}
 
-De **Websites** Met de console kunt u uw website beheren en navigeren. Met behulp van de twee deelvensters kan de structuur van uw website worden uitgebreid en kunt u handelingen uitvoeren op het vereiste element:
+De **Websites** Met console kunt u uw website beheren en navigeren. Met behulp van de twee deelvensters kan de structuur van uw website worden uitgebreid en kunt u handelingen uitvoeren op het vereiste element:
 
 ![chlimage_1-108](assets/chlimage_1-108.png)
 
@@ -42,9 +42,9 @@ en toegang tot [Help van de werkbalken van de console](/help/sites-classic-ui-au
 
 ![Sidekick samengevouwen](do-not-localize/sidekick-collapsed-2.png)
 
-Of door **Help** in het dialoogvenster voor bewerken van specifieke componenten; dit zal contextgevoelige hulp tonen .
+Of door het **Help** in het dialoogvenster Bewerken van specifieke componenten. Hierin wordt de contextgevoelige Help weergegeven.
 
-## Sidetrap {#sidekick}
+## Sidekick {#sidekick}
 
 De **Componenten** kunt u door de beschikbare componenten bladeren die aan de huidige pagina moeten worden toegevoegd. De vereiste groep kan worden uitgevouwen, waarna een component naar de gewenste locatie op de pagina wordt gesleept.
 
@@ -54,7 +54,7 @@ De **Componenten** kunt u door de beschikbare componenten bladeren die aan de hu
 
 De zoekfunctie voor inhoud is een snelle en eenvoudige manier om tijdens het bewerken van een pagina elementen en/of inhoud te zoeken in de opslagplaats.
 
-Met de zoekfunctie voor inhoud kunt u een reeks bronnen zoeken. U kunt desgewenst een item naar een alinea op de pagina slepen:
+U kunt de zoekfunctie voor inhoud gebruiken om een reeks bronnen te zoeken. U kunt desgewenst een item naar een alinea op de pagina slepen:
 
 * [Afbeeldingen](#finding-images)
 * [Documenten](#finding-documents)
@@ -86,7 +86,7 @@ Nadat u een alinea Downloaden op de pagina hebt gemaakt, kunt u een item naar de
 
 ### Films zoeken {#finding-movies}
 
-Op dit tabblad worden films (bijvoorbeeld Flash-items) in de opslagplaats weergegeven.
+Dit tabblad bevat een lijst met films (bijvoorbeeld Flash-items) in de opslagplaats.
 
 Nadat u een geschikte alinea (bijvoorbeeld Flash) op de pagina hebt gemaakt, kunt u een item naar de alinea slepen.
 
@@ -94,7 +94,7 @@ Nadat u een geschikte alinea (bijvoorbeeld Flash) op de pagina hebt gemaakt, kun
 
 ### Producten {#products}
 
-Op dit tabblad worden alle producten weergegeven. Nadat u een geschikte alinea (bijvoorbeeld Product) op de pagina hebt gemaakt, kunt u een item naar de alinea slepen.
+Dit tabblad bevat een overzicht van alle producten. Nadat u een geschikte alinea (bijvoorbeeld Product) op de pagina hebt gemaakt, kunt u een item naar de alinea slepen.
 
 ![chlimage_1-114](assets/chlimage_1-114.png)
 
@@ -106,11 +106,11 @@ Op dit tabblad worden alle pagina&#39;s weergegeven. Dubbelklik op een pagina om
 
 ### Verwijzen naar alinea&#39;s van andere pagina&#39;s {#referencing-paragraphs-from-other-pages}
 
-Op dit tabblad kunt u naar een andere pagina zoeken. Alle alinea&#39;s van die pagina worden weergegeven. Vervolgens kunt u een alinea naar de huidige pagina slepen, waarna een verwijzing naar de oorspronkelijke alinea ontstaat.
+Op dit tabblad kunt u zoeken naar een andere pagina. Alle alinea&#39;s van die pagina worden weergegeven. Vervolgens kunt u een alinea naar de huidige pagina slepen, waarna een verwijzing naar de oorspronkelijke alinea ontstaat.
 
 ![chlimage_1-116](assets/chlimage_1-116.png)
 
-### De weergave Volledige opslagplaats gebruiken {#using-the-full-repository-view}
+### De weergave Volledig opslagplaats gebruiken {#using-the-full-repository-view}
 
 Op dit tabblad worden alle bronnen in de opslagplaats weergegeven.
 
@@ -153,7 +153,7 @@ u kunt om het even welk aantal vervangingen in een vraag gebruiken.
 
 ## Referenties weergeven {#showing-references}
 
-AEM kunt u bekijken welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
+Met AEM kunt u zien welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
 
 Verwijzingen naar directe pagina&#39;s weergeven:
 
@@ -176,7 +176,7 @@ Overige [inter-page verhoudingen kunnen in de console van Websites worden gezien
 
 ## Controlelogboek {#audit-log}
 
-De **Controlelogboek** kan worden benaderd vanuit de **Informatie** tabblad van het hulpwerkje. In het verslag worden de recente acties vermeld die op de huidige pagina zijn ondernomen; bijvoorbeeld:
+De **Controlelogboek** kan worden benaderd vanuit de **Informatie** tabblad van het hulpwerkje. De lijst bevat een overzicht van de recente acties die op de huidige pagina zijn uitgevoerd, bijvoorbeeld:
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -193,10 +193,10 @@ Wanneer u een pagina bewerkt met de klassieke UI, zijn er verschillende modi die
 De rij met pictogrammen onder aan de Sidekick wordt gebruikt voor het schakelen tussen modi voor het werken met de pagina&#39;s:
 
 * [Bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
-Dit is de standaardmodus, waarmee u de pagina kunt bewerken, componenten kunt toevoegen of verwijderen en andere wijzigingen kunt aanbrengen.
+Dit is de standaardmodus en u kunt de pagina bewerken, componenten toevoegen of verwijderen en andere wijzigingen aanbrengen.
 
 * [Voorvertoning](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#previewing-pages)
-In deze modus kunt u een voorvertoning van de pagina weergeven alsof deze in de uiteindelijke vorm op uw website wordt weergegeven.
+In deze modus kunt u een voorbeeld van de pagina bekijken alsof deze in de uiteindelijke vorm op uw website wordt weergegeven.
 
 * [Ontwerp](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#main-pars-procedure-0)
 In deze modus kunt u het ontwerp van de pagina bewerken door de toegankelijke componenten te configureren.

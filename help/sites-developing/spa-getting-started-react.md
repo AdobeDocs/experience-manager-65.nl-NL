@@ -1,8 +1,8 @@
 ---
 title: Aan de slag met SPA in AEM - Reageren
 seo-title: Getting Started with SPAs in AEM - React
-description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag gaan met het React-framework.
-seo-description: This article presents a sample SPA application, explains how it is put together, and allows you to get up-and-running with your own SPA quickly using the React framework.
+description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag met het React-framework.
+seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
 uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1166'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van 
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het React-kader. Voor het overeenkomstige document voor het kader van de Angular raadpleegt u [Aan de slag met SPA in AEM - Angular](/help/sites-developing/spa-getting-started-angular.md).
+>Dit artikel is gebaseerd op het React-kader. Voor het overeenkomstige document voor het kader van de Angular zie [Aan de slag met SPA in AEM - Angular](/help/sites-developing/spa-getting-started-angular.md).
 
 >[!NOTE]
 >
@@ -56,7 +56,7 @@ Naast de verwachte afhankelijkheid van React, kan de steekproef SPA extra biblio
 
 ### Afhankelijkheden {#dependencies}
 
-De `package.json` het dossier bepaalt de vereisten van het algemene SPA pakket. De minimum AEM gebiedsdelen voor een werkende SPA zijn hier vermeld.
+De `package.json` bevat de vereisten van het algemene SPA. De minimum AEM gebiedsdelen voor een werkende SPA zijn hier vermeld.
 
 ```
   "dependencies": {
@@ -114,7 +114,7 @@ module.exports = {
 
 ### Gebouw {#building}
 
-Eigenlijk de app-functies ontwikkelen [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
+Eigenlijk de app-hefboomwerkingen maken [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -122,11 +122,11 @@ Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
 ### Projectarchetype AEM {#aem-project-archetype}
 
-Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK.
+Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
-Als u de afhankelijkheden opneemt en uw app samenstelt zoals eerder beschreven, blijft er een werkende SPA over die u kunt uploaden naar uw AEM.
+Als u de afhankelijkheden opneemt en uw app samenstelt zoals eerder beschreven, blijft er een werkende SPA over die u kunt uploaden naar uw AEM-exemplaar.
 
 In het volgende gedeelte van dit document wordt uitgelegd hoe een SPA in AEM is gestructureerd, welke belangrijke bestanden de toepassing sturen en hoe deze samenwerken.
 
@@ -195,7 +195,7 @@ MapTo('my-react-app/components/structure/page')(withComponentMappingContext(AppP
 
 In dit voorbeeld wordt `AppPage` class extends `Page`, die de methoden voor binneninhoud bevat die vervolgens kunnen worden gebruikt.
 
-De `Page` Voert de JSON-representatie van het paginamodel in en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Meer informatie over de `Page` te vinden in het document [SPA](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
+De `Page` Voert de JSON-representatie van het paginamodel in en verwerkt de inhoud om elk element van de pagina om te buigen of te versieren. Nadere bijzonderheden over de `Page` kan in het document worden gevonden [SPA](/help/sites-developing/spa-blueprint.md#main-pars-header-1694932501).
 
 ### Image.js {#image-js}
 
@@ -261,13 +261,13 @@ export default MapTo('my-react-app/react/components/structure/page')(PageClass, 
 
 De `MapTo` functie retourneert een `Component` die het resultaat is van een samenstelling die de verstrekte `PageClass` met de klassennamen en -kenmerken die het ontwerpen mogelijk maken. Deze component kan naar later worden uitgevoerd om in de prijsverhoging van uw toepassing worden geconcretiseerd.
 
-Als u het dialoogvenster `MapTo` of `withModel` functies, de `Page` component, is verpakt met een `ModelProvider` die standaardcomponenten toegang biedt tot de nieuwste versie van het paginamodel of een exacte locatie in dat paginamodel.
+Als u het dialoogvenster `MapTo` of `withModel` functies, `Page` component, is verpakt met een `ModelProvider` die standaardcomponenten toegang biedt tot de nieuwste versie van het paginamodel of een exacte locatie in dat paginamodel.
 
 Zie voor meer informatie de [Blauwdrukdocument SPA](/help/sites-developing/spa-blueprint.md#main-pars-header-329251743).
 
 >[!NOTE]
 >
->Standaard ontvangt u het volledige model van de component wanneer u de `withModel` functie.
+>Standaard ontvangt u het volledige model van de component wanneer u de opdracht `withModel` functie.
 
 ## Informatie delen tussen SPA componenten {#sharing-information-between-spa-components}
 

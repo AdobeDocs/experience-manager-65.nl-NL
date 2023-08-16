@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 1138a548-d112-4446-b0e1-b7a9ea7c7604
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1863'
+source-wordcount: '1860'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >[API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
-Het integratieframework bevat een integratielaag met een API. Hierdoor kunt u AEM componenten voor eCommerce-mogelijkheden maken (onafhankelijk van uw specifieke eCommerce-engine). Het staat u ook toe om het interne gegevensbestand van CRX te gebruiken of in een systeem van de eCommerce te stoppen en productgegevens in AEM te trekken.
+Het integratieframework bevat een integratielaag met een API. Hiermee kunt u AEM componenten voor eCommerce-mogelijkheden maken (onafhankelijk van uw specifieke eCommerce-engine). Het laat u ook het interne gegevensbestand van CRX gebruiken of in een systeem van de eCommerce stoppen en productgegevens in AEM trekken.
 
 Een aantal uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
 
@@ -33,7 +33,7 @@ Een aantal uit-van-de-doos AEM componenten worden verstrekt om de integratielaag
 * Uitchecken
 * Zoeken
 
-Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, een derderdesonderzoek of een combinatie daarvan te gebruiken.
+Voor onderzoek wordt een integratiehaak verstrekt die u het AEM onderzoek, een derderdesonderzoek of een combinatie daarvan laat gebruiken.
 
 ## Selectie van eCommerce-engine {#ecommerce-engine-selection}
 
@@ -41,7 +41,7 @@ Het eCommerce-kader kan met elke eCommerce-oplossing worden gebruikt, waarbij de
 
 * eCommerce Engines zijn OSGi-diensten die de `CommerceService` interface
 
-   * Motoren kunnen worden onderscheiden door een `commerceProvider` service, eigenschap
+   * Motoren kunnen worden onderscheiden door `commerceProvider` service, eigenschap
 
 * AEM `Resource.adaptTo()` for `CommerceService` en `Product`
 
@@ -61,7 +61,7 @@ In een standaard AEM installatie is een specifieke implementatie vereist, bijvoo
 
 |  |  |
 |---|---|
-| `cq:commerceProvider = geometrixx` | geometrixx-voorbeeld; dit omvat minimale uitbreidingen van de algemene API |
+| `cq:commerceProvider = geometrixx` | geometrixx-voorbeeld; dit omvat minimale extensies voor de algemene API |
 
 ### Voorbeeld {#example}
 
@@ -111,11 +111,11 @@ De **CommerceSession**:
 
 #### Architectuur van product en varianten {#architecture-of-product-and-variants}
 
-Eén product kan meerdere variaties hebben; kan bijvoorbeeld variëren per kleur en/of grootte. Een product moet bepalen welke eigenschappen de variatie aansturen; wij noemen deze *Alternatieve assen*.
+Eén product kan meerdere variaties hebben, bijvoorbeeld van kleur en/of grootte. Een product moet bepalen welke eigenschappen variatie drijven; wij noemen dit *Alternatieve assen*.
 
-Niet alle eigenschappen zijn echter variantassen. Variaties kunnen ook andere eigenschappen beïnvloeden; de prijs kan bijvoorbeeld afhankelijk zijn van de omvang . Deze eigenschappen kunnen niet door de verkoopster worden geselecteerd en worden daarom niet beschouwd als variantassen.
+Niet alle eigenschappen zijn echter variantassen. Variaties kunnen ook van invloed zijn op andere eigenschappen, bijvoorbeeld omdat de prijs afhankelijk kan zijn van de grootte. Deze eigenschappen kunnen niet door de verkoopster worden geselecteerd en worden daarom niet als variantassen beschouwd.
 
-Elk product en/of elke variant wordt vertegenwoordigd door een middel, en daarom kaarten 1:1 aan een gegevensopslagknoop. Het gevolg is dat een specifiek product en/of specifieke variant op unieke wijze kan worden geïdentificeerd door het pad ervan.
+Elk product en/of elke variant wordt vertegenwoordigd door een middel, en daarom kaarten 1:1 aan een opslaggegevensopslagknoop. Het gevolg is dat een specifiek product en/of specifieke variant op unieke wijze kan worden geïdentificeerd door het pad ervan.
 
 Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden van een voorouder kunnen overerven), maar er zijn ook aanroepen die de set variaties weergeven ( `getVariantAxes()`, `getVariants()`, enz.).
 
@@ -163,7 +163,7 @@ content
       shirt-l
 ```
 
-Tot slot is er geen verplichting om productgegevens te gebruiken. U kunt alle productgegevens onder de verwijzingen in de catalogus plaatsen; maar dan kunt u niet echt meerdere catalogi hebben zonder alle productgegevens te dupliceren.
+Tot slot is er geen verplichting om productgegevens te gebruiken. U kunt alle productgegevens onder de verwijzingen in de catalogus plaatsen; maar u kunt niet echt veelvoudige catalogi hebben zonder alle productgegevens te dupliceren.
 
 **API**
 
@@ -241,12 +241,12 @@ public class AxisFilter implements VariantFilter {
 * **Algemeen opslagmechanisme**
 
    * Productknooppunten zijn niet:ongestructureerd.
-   * Een productknooppunt kan:
+   * Een productknooppunt kan zijn:
 
       * Een verwijzing, met de elders opgeslagen productgegevens:
 
          * Productverwijzingen bevatten een `productData` eigenschap, die verwijst naar de productgegevens (doorgaans onder `/etc/commerce/products`).
-         * De productgegevens zijn hiërarchisch; productkenmerken worden overgenomen van de voorouders van een productgegevensknooppunt.
+         * De productgegevens zijn hiërarchisch; de productkenmerken worden overgeërfd van de voorouders van een productgegevensknooppunt.
          * De verwijzingen van het product kunnen lokale eigenschappen ook bevatten, die die in hun productgegevens worden gespecificeerd met voeten treden.
 
       * Een product zelf:
@@ -313,12 +313,12 @@ public class AxisFilter implements VariantFilter {
    * De `CommerceSession` voert ook de verschillende berekeningen op het karretje uit.
    * De `CommerceSession` past ook vouchers en promoties toe die op de winkelwagen zijn geactiveerd.
 
-* Hoewel niet rechtstreeks verband houdt met het kart, `CommerceSession` moet ook prijsinformatie voor catalogi verstrekken (aangezien deze eigenaar is van prijzen)
+* Hoewel niet rechtstreeks verband houdt met het karretje, `CommerceSession` moet ook prijsinformatie voor catalogi verstrekken (aangezien deze eigenaar is van prijzen)
 
    * Prijzen kunnen verschillende opties hebben:
 
       * Kwantiseringen.
-      * Verschillende valuta&#39;s.
+      * Andere valuta&#39;s.
       * BTW-plichtig en btw-vrij.
 
    * De modifiers zijn volledig open-eind met de volgende interface:
@@ -335,11 +335,11 @@ public class AxisFilter implements VariantFilter {
 **Personalisatie**
 
 * Personalisatie moet altijd door de [ClientContext](/help/sites-administering/client-context.md).
-* A ClientContext `/version/` van het karretje wordt in alle gevallen gecreëerd:
+* Een ClientContext `/version/` van het karretje wordt in alle gevallen gecreëerd:
 
    * De producten moeten worden toegevoegd door `CommerceSession.addCartEntry()` methode.
 
-* In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext wagen:
+* In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext:
 
 ![chlimage_1-33](/help/sites-developing/assets/chlimage_1-33a.png)
 
@@ -359,7 +359,7 @@ De `CommerceSession` eigenaar van de drie elementen:
        public void deleteCartEntry(int entryNumber);
    ```
 
-1. **Prijzen**
+1. **Prijsstelling**
 
    Het prijsschema wordt ook bepaald door de API:
 
@@ -397,13 +397,13 @@ Na het standaard dienstAPI model, verstrekt het eCommerce-project een reeks op o
 
 >[!NOTE]
 >
->Momenteel implementeert alleen de hybris-engine de API voor zoeken buiten de box.
+>Momenteel implementeert alleen de hybris-engine de zoek-API uit-van-de-box.
 >
 >Nochtans, is het onderzoek API generisch en kan door elke CommerceService individueel worden uitgevoerd.
 >
 >Hoewel de algemene implementatie die u hebt opgegeven deze API niet implementeert, kunt u deze wel uitbreiden en de zoekfunctionaliteit toevoegen.
 
-Het eCommerce-project bevat een standaardzoekcomponent, die zich bevindt in:
+Het eCommerce-project bevat een standaardzoekcomponent in:
 
 `/libs/commerce/components/search`
 
@@ -440,14 +440,14 @@ Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `
       * Een promotiepad (dat de actie definieert die de voucher toepast).
 
    * Vouchers hebben geen eigen datum/tijd, maar gebruiken die van hun bovenliggende campagnes.
-   * ook motoren voor externe handel kunnen vouchers leveren; deze vereisen een minimum van :
+   * De motoren van de buitenlandse handel kunnen bonnen ook leveren; deze vereisen een minimum van:
 
       * Een vouwcode
       * An `isValid()` methode
 
    * De **Voucher** component ( `/libs/commerce/components/voucher`) biedt:
 
-      * Een renderer voor voucherbeheer; hieruit blijkt welke vouchers zich momenteel in de kar bevinden .
+      * Een renderer voor voucherbeheer. Hier worden de vouchers weergegeven die zich momenteel in de kar bevinden.
       * De bewerkingsdialoogvensters (formulier) voor het beheren (toevoegen/verwijderen) van de vouchers.
       * De handelingen die vereist zijn voor het toevoegen/verwijderen van vouchers aan/uit de kar.
 
@@ -507,7 +507,7 @@ public void removeVoucher(String code) throws CommerceException;
 public List<Voucher> getVouchers() throws CommerceException;
 ```
 
-Op deze manier `CommerceSession` is verantwoordelijk voor het controleren of een voucher bestaat en of deze kan worden toegepast. Dit kan het geval zijn voor vouchers die alleen kunnen worden toegepast als aan een bepaalde voorwaarde is voldaan; bijvoorbeeld wanneer de totale winkelwagenprijs hoger is dan $100). Als een voucher om welke reden dan ook niet kan worden toegepast, `addVoucher` methode zal een uitzondering werpen. Ook de `CommerceSession` is verantwoordelijk voor het bijwerken van de prijs van het winkelwagentje nadat een voucher is toegevoegd/verwijderd.
+Op deze manier `CommerceSession` is verantwoordelijk voor het controleren of een voucher bestaat en of deze kan worden toegepast. Dit kan het geval zijn voor vouchers die alleen kunnen worden toegepast als aan een bepaalde voorwaarde is voldaan, bijvoorbeeld wanneer de totale winkelwagenprijs hoger is dan € 100). Als een voucher om welke reden dan ook niet kan worden toegepast, `addVoucher` methode zal een uitzondering werpen. Ook de `CommerceSession` is verantwoordelijk voor het bijwerken van de prijs van het winkelwagentje nadat een voucher is toegevoegd/verwijderd.
 
 De `Voucher` is een boonachtige klasse die velden bevat voor:
 
@@ -521,9 +521,9 @@ De `AbstractJcrCommerceSession` op voorwaarde dat zij vouchers kunnen toepassen.
 
 * `jcr:title` (String) - voor de beschrijving van de voucher
 * `code` (String) - de code die de gebruiker moet invoeren om deze voucher toe te passen
-* `promotion` (String) - de promotie die moet worden toegepast; bijvoorbeeld: `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
+* `promotion` (String) - de promotie die moet worden toegepast, bijvoorbeeld `/content/campaigns/geometrixx-outdoors/article/10-bucks-off`
 
-Promotiehandlers zijn OSGi-services die het winkelwagentje wijzigen. Het winkelwagentje ondersteunt meerdere haken die worden gedefinieerd in het dialoogvenster `PromotionHandler` interface.
+Promotiehandlers zijn OSGi-services die het winkelwagentje wijzigen. Het winkelwagentje ondersteunt meerdere haken die in het dialoogvenster `PromotionHandler` interface.
 
 ```java
 /**

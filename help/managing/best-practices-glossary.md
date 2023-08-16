@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: f21b0b5cb4246ffb22c9d9a219a622f36741d9b8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '6949'
+source-wordcount: '6948'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In deze woordenlijst worden (alfabetisch) details weergegeven van alle te levere
 
 ## Aanvaarding door belanghebbenden uit het bedrijfsleven {#acceptance-from-business-stakeholders}
 
-De aanvaarding door belanghebbenden uit het bedrijfsleven bevestigt dat zij als belangrijke belanghebbenden op de oplossing zijn afgestemd en hun goedkeuring hebben gegeven over de manier waarop de zakelijke vereisten aan de bedrijfscase voldoen.
+De acceptatie door belanghebbenden uit het bedrijfsleven bevestigt dat zij, als belangrijke belanghebbenden, op de oplossing zijn afgestemd en hun goedkeuring hebben gegeven over de manier waarop de bedrijfsvereisten aan de bedrijfscase voldoen.
 
 ### Acceptatietests {#acceptance-tests}
 
@@ -39,7 +39,7 @@ Hoewel u niet alle details bij het begin van het project kunt bepalen, zouden de
 
 ### Toegang tot een gecoördineerd testsysteem {#access-to-test-system-coordinated}
 
-Zorg ervoor dat de vereiste niveaus van systeemtoegang aan alle rollen zijn verleend.
+Ervoor zorgen dat de vereiste niveaus van systeemtoegang aan alle rollen zijn verleend.
 
 ### Beveiligingschecklist Adobe {#adobe-security-checklist}
 
@@ -47,15 +47,15 @@ De [Beveiligingschecklist Adobe](/help/sites-administering/security-checklist.md
 
 ### Adobe Support Portal Project instellen {#adobe-support-portal-project-set-up}
 
-Het portaal van de Steun van Adobe laat implementatiepartners en klanten toe om de AEM implementatie als project in het Portaal van de Steun te vestigen.
+Het portaal van de Steun van de Adobe laat implementatiepartners en klanten toe om de AEM implementatie in te stellen als project in het Portaal van de Steun.
 
-Gegevens kunnen worden geregistreerd; bijvoorbeeld over de geïmplementeerde technologieën en versies. Deze bieden transparantie tussen de klant en Adobe.
+Er kunnen details worden geregistreerd, bijvoorbeeld over de geïmplementeerde technologieën en versies. Deze bieden transparantie tussen de klant en de Adobe.
 
 ### Beheerderstraining AEM {#aem-administrator-training}
 
 Opleiding voor administratief personeel van de oplossing. Zie de [Adobe Training](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie .
 
-### AEM-auteurstraining {#aem-author-training}
+### AEM auteur-training {#aem-author-training}
 
 Opleiding voor personeel dat (creatie) inhoud voor de oplossing zal produceren. Zie de [Adobe Training](https://training.adobe.com/training/courses.html#solution=adobeExperienceManager) voor meer informatie .
 
@@ -67,9 +67,9 @@ Ervoor zorgen dat de juiste personen geregistreerd zijn om de relevante [certifi
 
 Ervoor zorgen dat de juiste persoon met goed gevolg de relevante [certificeringsexamens](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
-### Technische AEM {#aem-technical-training}
+### Technische training AEM {#aem-technical-training}
 
-het verstrekken van een technische opleiding voor het desbetreffende personeel; bijvoorbeeld ontwikkelaars, architecten, ingenieurs en praktijkmensen.
+Zorg voor technische training voor de juiste persoon, bijvoorbeeld ontwikkelaars, architecten, ingenieurs en praktijkmensen.
 
 ### Overeenkomst inzake KPI&#39;s die als doelstellingen voor het project zijn gedefinieerd {#agreement-on-kpis-defined-as-goals-for-the-project}
 
@@ -106,7 +106,7 @@ Zorg ervoor dat uw team bestaat uit personeel met de juiste training. Voor proje
 
 * minstens één AEM gecertificeerde lead Developer
 * ten minste één AEM gecertificeerde architect
-* minstens 75% van uw ontwikkelaars AEM gecertificeerd; dit maakt het de gecertificeerde ontwikkelaars mogelijk om ondergeschikte ontwikkelaars te begeleiden en zorgt voor kennisuitwisseling en transparantie
+* minstens 75% van uw ontwikkelaars AEM gecertificeerd; hierdoor kunnen gecertificeerde ontwikkelaars mentor junior ontwikkelaars volgen en wordt kennis gedeeld en transparantie gegarandeerd
 
 ### Architectuurdiagram {#architecture-diagram}
 
@@ -134,13 +134,13 @@ De toetsingsraad moet representatief zijn voor alle belangrijke belanghebbenden 
 Automatiescripts en standaard geautomatiseerde gebruiksgevallen:
 
 * aangepast voor de productie
-* gecontroleerd aan de KPI&#39;s
+* getoetst aan de KPI’s
 
 ### Geautomatiseerde teststrategie {#automated-testing-strategy}
 
 Deze strategie bepaalt een kader voor herbruikbare geautomatiseerde manuscripten, samen met de benadering die door het team van de Verzekering van de Kwaliteit (QA) wordt gepland. Het schetst het algemene plan voor automatiseringstests helpen verzekeren:
 
-* een hoger rendement van investeringen
+* een hoger rendement van investeringen (ROI)
 * meer testdekking
 * verhoogde betrouwbaarheid van de test met kwaliteitsherhaling
 
@@ -150,7 +150,7 @@ De strategie voor geautomatiseerde tests moet worden gevalideerd en aangepast aa
 
 ### Automatiseringsstrategie {#automation-strategy}
 
-De automatisering van implementaties zorgt voor snellere en consistente implementaties. De automatiseringsstrategie schetst de configuratie van dergelijke automatiseringsmechanismen; met inbegrip van:
+De automatisering van implementaties zorgt voor snellere en consistente implementaties. De automatiseringsstrategie schetst de configuratie van dergelijke automatiseringsmechanismen, met inbegrip van:
 
 * frequentie
 * te gebruiken gereedschap
@@ -203,7 +203,7 @@ Bedrijfs KPIs bepaalt meetbare waarden die aantonen hoe effectief een bedrijf be
 
 Een document van bedrijfsvereisten (BRD) detailleert de bedrijfsoplossing voor een project, die een duidelijke specificatie van de bedrijfsbehoeften en de verwachtingen van de klant verstrekken. In de BRD wordt ook onderscheid gemaakt tussen de bedrijfsoplossing en de technische oplossing.
 
-Bij het onderzoeken van de bedrijfsoplossing moet de BHP de vraag beantwoorden: &quot;Wat wil het bedrijf doen?&quot;
+Wanneer het onderzoeken van de bedrijfsoplossing zou de BRD de vraag moeten beantwoorden: &quot;Wat wil de zaken doen?&quot;
 
 ### Zakelijke aanmelding voor alle vereiste aanpassingen van de oplossing of architectuur die zijn geïdentificeerd en zijn uitgelijnd op de verwachtingen van ROI en KPI {#business-sign-off-on-any-required-adjustments-to-the-solution-or-architecture-identified-and-aligned-against-roi-and-kpi-expectations}
 
@@ -276,7 +276,7 @@ Plan/implementeer mock-ups van deze interfaces om ervoor te zorgen dat het teste
 Documentatie van de voorgestelde architectuur van de inhoud. De details moeten onder meer omvatten:
 
 * inhoudsstructuur
-* tagconcepten
+* coderingsconcepten
 * strategieën voor het hergebruik van inhoud
 
 ### Inhoud gevalideerd voor migratie {#content-validated-for-migration}
@@ -312,7 +312,7 @@ Dit zijn vaak tijdlijnen, plannings- en aftekenvereisten.
 
 ### Beleid of vereisten voor klantencontrole {#customer-monitoring-policies-or-requirements}
 
-Beleid en vereisten van de klant met betrekking tot wat moet worden gecontroleerd. Deze zijn een aanvulling op de aanbevelingen die in het toezichtconcept worden gespecificeerd.
+Beleid en vereisten van de klant met betrekking tot wat moet worden bewaakt. Deze zijn een aanvulling op de aanbevelingen die in het toezichtconcept worden gespecificeerd.
 
 ### Release-schema voor klantproductie {#customer-production-release-schedule}
 
@@ -336,22 +336,22 @@ De klant (zaken en IT) zal beleid hebben dat de vereiste veiligheidsniveaus voor
 
 * Voorschriften voor het slagen van een risicobeoordeling.
 * Voorschriften voor de penetratietests voor het passeren.
-* specifieke beveiligingsvereisten; zoals escapen van alle invoervelden, coderingsgebruik (SSL), certificaten en verificatie en sessies.
+* Eventuele specifieke beveiligingsvereisten, zoals escapen van alle invoervelden, coderingsgebruik (SSL), certificaten en verificatie en sessies.
 
 ### Richtlijnen voor klantspecificaties {#customer-specification-guidelines}
 
 Om het even welke richtlijnen de klant heeft die op het formaat, levering, en teken-off van specificaties betrekking hebben.
 
-### Testrapporten klant {#customer-test-reports}
+### Testrapporten van klant {#customer-test-reports}
 
-Rapporten van de klant aan de Lood van de Kwaliteit tijdens de periode van de Aanvaarding van de Gebruiker van de Test (UAT).
+Rapporten van de klant aan de Lood van de Kwaliteit tijdens de periode van de Aanvaarding van de Gebruiker (UAT).
 
-### Aanpassingen en hotfixes die verbeteringen in documentatie beïnvloeden {#customizations-and-hotfixes-that-affect-upgrades-documented}
+### Aanpassingen en hotfixes die gevolgen hebben voor gedocumenteerde upgrades {#customizations-and-hotfixes-that-affect-upgrades-documented}
 
 Aanpassingen en/of toegepaste hotfixes moeten worden gedocumenteerd, aangezien zij toekomstige verbeteringen kunnen beïnvloeden:
 
 * AEM kunnen zwaar worden aangepast aan bedrijfsbehoeften. Aanpassingen die gevolgen kunnen hebben voor de upgrade moeten volledig worden gedocumenteerd. Bijvoorbeeld, om het even welke belangrijke veranderingen in het gebruikersinterface (UI) van AEM.
-* Alle updates die vereist zijn voor de huidige oplossing moeten volledig worden gedocumenteerd; het kan hierbij gaan om :
+* Alle updates die vereist zijn voor de huidige oplossing moeten volledig worden gedocumenteerd; deze kunnen het volgende omvatten:
 
    * cumulatieve fixatiepakketten (GFP)
    * de dienstpakken (SP)
@@ -380,7 +380,7 @@ Het formele beleid dat zowel de plaatsing als de versies van uw project behandel
 
 ### Implementatiecadence ingesteld {#deployment-cadence-established}
 
-Definieer de vereiste frequentie van implementaties in verschillende omgevingen.
+De vereiste frequentie van implementaties in verschillende omgevingen definiëren.
 
 ### Ontwikkelingsmethode {#development-methodology}
 
@@ -462,7 +462,7 @@ De projectsponsor verzamelt de zakelijke verwachtingen met betrekking tot het su
 
 De verwachtingen kunnen zijn:
 
-* specifieke KPI&#39;s, zoals de procentuele toename van het aantal pagina&#39;s dat wordt bediend
+* specifieke KPI&#39;s, zoals de procentuele toename van het aantal pagina&#39;s dat wordt aangeboden
 * kortere tijd voor het publiceren van inhoud
 * hoger-vlakke doelstellingen, zoals een makkelijk te gebruiken interface
 
@@ -510,7 +510,7 @@ Bevestiging dat de belanghebbenden het volgende volledig aanvaarden:
 
 ### Live-planning {#go-live-schedule}
 
-Tijdschema en tijdschema voor de activiteiten die vereist zijn voor:
+Tijdschema en tijdschema voor de vereiste activiteiten voor:
 
 * voorbereiding voor live gaan
 * de echte go live
@@ -571,7 +571,7 @@ Opstelling van het hulpmiddel en de processen die worden vereist om geautomatise
 
 De gereedschapsset en de processen die vereist zijn voor de ondersteuning van automatisering instellen.
 
-### Implementatie - Inhoudsarchitectuur {#implementation-content-architecture}
+### Implementatie - Inhoud architectuur {#implementation-content-architecture}
 
 Implementatie van de inhoudarchitectuur, concepten voor het aanbrengen van labels en hergebruik van inhoud.
 
@@ -589,7 +589,7 @@ Implementatie van integratie met alle vereiste externe systemen.
 
 ### Implementatie - migratiestrategie {#implementation-migration-strategy}
 
-Migratie samen met de validatie van inhoud en andere artefacten voor de nieuwe oplossing.
+Migratie en validatie van inhoud en andere artefacten voor de nieuwe oplossing.
 
 ### Implementatie - rollen en rechten {#implementation-roles-and-rights}
 
@@ -628,9 +628,9 @@ Het implementatieconcept bevat de leidende beginselen voor de volledige uitvoeri
 
 Dit concept schetst ook het kader, de bibliotheken, en andere artefacten die in de oplossing worden gebruikt.
 
-### Adobe-ondersteuning op de hoogte stellen van het schema Go Live {#inform-adobe-support-about-the-go-live-schedule}
+### Ondersteuning van Adoben informeren over de Go Live-planning {#inform-adobe-support-about-the-go-live-schedule}
 
-Neem contact op met de Adobe-ondersteuning om ervoor te zorgen dat alle ondersteuning die nodig is, tijdens de liveprocedure kan worden ingeschakeld.
+Neem contact op met de ondersteuning van de Adobe om ervoor te zorgen dat alle ondersteuning die nodig is, tijdens de live verbinding kan worden ingeschakeld.
 
 ### Aanvankelijke ervaringsontwerpen {#initial-experience-designs}
 
@@ -666,16 +666,16 @@ Details van het oudere systeem moeten worden verzameld, zodat u weet wat u met p
 
 ### Lijst met te gebruiken ontwikkelingsinstrumenten {#list-of-development-tools-to-be-used}
 
-een overzicht van de instrumenten die bij de uitvoering zullen worden gebruikt; de instrumenten moeten onder meer zijn :
+Een overzicht van de instrumenten die bij de uitvoering zullen worden gebruikt; de instrumenten moeten omvatten:
 
-* documentatie
+* documentatiehulpmiddelen
 * tools voor het bijhouden van problemen
 * implementatiehulpmiddelen
 * build-gereedschappen
 
-### Lijst van Gebruikers die Toegang tot het Portaal van de Steun van Adobe vereisen {#list-of-users-that-require-access-to-adobe-support-portal}
+### Lijst van Gebruikers die Toegang tot het Portaal van de Steun van de Adobe vereisen {#list-of-users-that-require-access-to-adobe-support-portal}
 
-Een lijst van alle gebruikers en rollen die toegang tot het Portaal van de Steun van Adobe nodig hebben.
+Een lijst van alle gebruikers en rollen die toegang tot het Portaal van de Steun van de Adobe vereisen.
 
 De lijst bestaat gewoonlijk uit de Architect van de Oplossing en/of het personeel van IT van de klant.
 
@@ -709,7 +709,7 @@ Een volledige beschrijving van de bestaande inhoud, inhoudsarchitectuur en indel
 * technische details van geautomatiseerde migratie, indien mogelijk
 * rooktests die na migratie moeten worden uitgevoerd, om de gemigreerde inhoud te valideren
 
-Ook moet worden aanbevolen hoe de inhoud up-to-date (of zo up-to-date mogelijk) moet blijven gedurende de periode tussen migratie en het daadwerkelijke leven van het nieuwe systeem. Dit kan betekenen dat inhoud wordt vastgezet, dat er twee keer wordt gepubliceerd of dat er een alfakanaal wordt onderhouden.
+Ook moet worden aanbevolen hoe de inhoud up-to-date (of zo up-to-date mogelijk) moet blijven gedurende de periode tussen migratie en het daadwerkelijke leven van het nieuwe systeem. Dit kan betekenen dat de inhoud wordt vastgezet, dat er twee keer wordt gepubliceerd of dat er een alfakanaal wordt onderhouden.
 
 ### Bewaking - CPU {#monitoring-cpu}
 
@@ -727,14 +727,14 @@ Bewaking van de schijfinvoer en uitvoersnelheden van de oplossing:
 
 ### Bewaking - Schijfruimte {#monitoring-disk-space}
 
-Bewaking van het gebruik van schijfruimte door de oplossing:
+Het gebruik van schijfruimte door de oplossing controleren:
 
 * gemiddelde
 * groei in de tijd
 
 U dient het gebruik te controleren door:
 
-* de opslagplaats
+* de gegevensopslagplaats
 * logbestanden
 
 ### Monitoring - externe systemen {#monitoring-external-system-s}
@@ -753,7 +753,7 @@ Controleer het gebruik van de oplossing van de netwerkbandbreedte:
 * pieken
 * stabiliteit
 
-### Toezicht - Verzoeken {#monitoring-requests}
+### Controle - verzoeken {#monitoring-requests}
 
 Controleer de verzoeken aan de oplossing worden gemaakt die.
 
@@ -763,7 +763,7 @@ Bewaking bij de gedefinieerde beveiligingspunten.
 
 ### Toezicht - Systeem {#monitoring-system}
 
-het gehele systeem bewaken; bijvoorbeeld:
+Het gehele systeem controleren, bijvoorbeeld:
 
 * beschikbaarheid
 * gemiddelde prestaties
@@ -776,7 +776,7 @@ Bewaking van de vastgestelde drempelwaarde van de oplossing, samen met de uitvoe
 
 ### Toezichtsconcept {#monitoring-concept}
 
-De controleconcepten die op uw oplossing moeten worden toegepast; waarin:
+De controleconcepten die op uw oplossing moeten worden toegepast; het omvatten:
 
 * AEM standaardbewaking
 * systeembewaking
@@ -784,7 +784,7 @@ De controleconcepten die op uw oplossing moeten worden toegepast; waarin:
 
 ### Potentiële zwakke punten bewaken {#monitoring-potential-weak-points}
 
-Specifieke punten die vatbaar kunnen zijn voor storingen, moeten worden geïdentificeerd en gedefinieerd. Ook moeten eventuele controletaken met betrekking tot deze taken worden omschreven.
+Specifieke punten die vatbaar kunnen zijn voor mislukking, moeten worden geïdentificeerd en gedefinieerd. Ook moeten eventuele controletaken met betrekking tot deze taken worden omschreven.
 
 Voorbeelden zijn onder andere:
 
@@ -872,7 +872,7 @@ De concepttest (POC) wordt afgezet tegen de vereisten om ervoor te zorgen dat be
 
 Een controlelijst om de reeks controles en taken te bepalen na elke plaatsing uit te voeren.
 
-### Checklist vóór implementatie {#pre-deployment-checklist}
+### Checklist voor pre-implementatie {#pre-deployment-checklist}
 
 Een controlelijst om de reeks controles en taken te bepalen vóór elke plaatsing uit te voeren.
 
@@ -946,7 +946,7 @@ AEM onderhoudt meerdere versies van elementen en inhoud. De zuiveringsregels wor
 
 Geef de vereiste inhoud en opmaak van het kwaliteitsrapport op en geef aan hoe vaak het moet worden geleverd.
 
-### Geen gecoördineerd {#release-coordinated}
+### Release Coordinated {#release-coordinated}
 
 De projectmanager coördineert alle rollen die voor de versie aan productie worden vereist.
 
@@ -971,7 +971,7 @@ Laatste release actief en actief in productie.
 
 ### Relevante contractvoorwaarden {#relevant-contract-terms}
 
-de specifieke contractvoorwaarden te vermelden die relevant zijn voor de uitvoering van het project; zoals contractuele mijlpalen, factuurperioden of personeelsvereisten.
+Benadruk specifieke contracttermijnen die voor de uitvoering van het project relevant zijn; zoals contractuele mijlpalen, factuurperiodes, of personeelsvereisten.
 
 ### RapportageCadence {#reporting-cadence}
 
@@ -983,9 +983,9 @@ Gegevens worden nooit in een teerbestand overschreven, het schijfgebruik neemt t
 
 Om de steeds groter wordende omvang van de opslagplaats tegen te gaan, wordt een optimalisatiestrategie opgezet om verouderde gegevens te verwijderen.
 
-### Verzoek om het Sectie van het Project van de Opstelling in het Portaal van de Steun van Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
+### Verzoek om het Sectie van het Project van de Opstelling in het Portaal van de Steun van de Adobe {#request-for-setting-up-project-section-in-adobe-support-portal}
 
-Het officiële verzoek om opstelling uw project in het Portaal van de Steun van Adobe.
+Het officiële verzoek om opstelling uw project in het Portaal van de Steun van de Adobe.
 
 ### Documentatie over vereisten {#requirements-documentation}
 
@@ -993,11 +993,11 @@ Deze documentatiereeks heeft betrekking op de functionele en niet-functionele ve
 
 ### Beschikbare bronnen voor ondersteuning Ga Live {#resources-available-to-support-go-live}
 
-Ervoor zorgen dat alle rollen die nodig zijn voor live gaan, bemand en beschikbaar zijn.
+Ervoor zorgen dat alle rollen die nodig zijn voor live gaan met het personeel beschikbaar zijn.
 
 ### Risicobeoordeling {#risk-assessment}
 
-De risicobeoordeling wordt uitgevoerd door de IT-afdeling van de klant of de beveiligingsafdeling, of beide.
+De risicobeoordeling wordt uitgevoerd door de IT-afdeling van de klant, of de beveiligingsafdeling, of beide.
 
 Zij beoordeelt de technische en zakelijke risico&#39;s van het project. De evaluatie is vereist voor de oplossing om naleving van veiligheidsbeleid te verzekeren.
 
@@ -1014,7 +1014,7 @@ Bepaal de Rendement van Investering (ROI) verwachtingen die aan de oplossing wor
 
 Zij zijn erop gericht de economische efficiëntie van de oplossing aan te geven door de verwachte baten/baten ten opzichte van de geraamde investering vast te stellen.
 
-### Begrip rollen en rechten {#roles-and-rights-concept}
+### Het Concept van rollen en van Rechten {#roles-and-rights-concept}
 
 Gedetailleerde specificatie van de concepten met betrekking tot rollen en toegangsrechten die vereist zijn voor de nieuwe toepassing, met inbegrip van een overzicht op hoog niveau van:
 
@@ -1022,7 +1022,7 @@ Gedetailleerde specificatie van de concepten met betrekking tot rollen en toegan
 * groepen
 * gebruikers
 * machtigingen
-* en gebruikersbeheer en -provisioning
+* en gebruikersbeheer en levering
 
 ### Het concept Rollen en Rechten voldoet aan beveiligingsrichtlijnen {#roles-and-rights-concept-meets-security-guidelines}
 
@@ -1034,7 +1034,7 @@ Een gedetailleerde specificatie die op het Concept van Roles en van Rechten word
 
 ### Beveiligingsarchitectuur Recommendations {#security-architecture-recommendations}
 
-Recommendations had betrekking op beveiliging voor de software- en hardwarearchitectuur.
+Recommendations had betrekking op de beveiliging van de software- en hardwarearchitectuur.
 
 ### Richtlijnen voor codering op basis van beveiliging {#security-based-coding-guidelines}
 
@@ -1065,7 +1065,7 @@ Een overzicht op hoog niveau met de beveiligingsinstellingen van de:
 
 ### Beveiligingsproblemen vermeld en beoordeeld {#security-issues-listed-and-assessed}
 
-alle veiligheidskwesties van de oplossing die wordt vermeld en beoordeeld; met inbegrip van ramingen van de inspanning.
+Alle veiligheidskwesties van de oplossing vermeld en beoordeeld; met inbegrip van inspanningsramingen.
 
 ### Beveiligingsaftekening van zakelijke belanghebbenden {#security-sign-off-from-business-stakeholders}
 
@@ -1091,7 +1091,7 @@ Rooktests moeten op alle systemen worden uitgevoerd om ervoor te zorgen dat de b
 
 ### Software Architecture-strategie {#software-architecture-strategy}
 
-de strategie op hoog niveau voor de softwarearchitectuur; met inbegrip van diensten, diensten, kaders, en andere uitvoeringsbesluiten.
+De strategie op hoog niveau voor de softwarearchitectuur; met inbegrip van diensten, diensten, kaders, en andere implementatiebesluiten.
 
 ### Oplossingsbeoordelingsraad ingesteld en vergaderingenset {#solution-review-board-established-and-meeting-cadence-set}
 
@@ -1170,9 +1170,9 @@ Deze worden gebruikt om ervoor te zorgen dat aan de criteria voor succes wordt v
 
 Een deel van de verantwoordelijkheid van de Quality Lead is ervoor te zorgen dat er bronnen beschikbaar zijn om gebruikers tijdens het testen te ondersteunen. Bijvoorbeeld om de gebruiker te helpen bij het testen, bij het melden van problemen en bij het valideren van de problemen in de testomgeving.
 
-### Ondersteuningsprocessen en toegang tot Adobe Support Portal {#support-processes-and-access-to-adobe-support-portal}
+### Ondersteuningsprocessen en toegang tot ondersteuningsportaal voor Adobe {#support-processes-and-access-to-adobe-support-portal}
 
-Toegang tot het Adobe Support Portal is van cruciaal belang voor het indienen van tickets over eventuele productgerelateerde problemen die zich tijdens de implementatie kunnen voordoen.
+Toegang tot het ondersteuningsportaal voor Adoben is van cruciaal belang voor het indienen van tickets over eventuele productgerelateerde problemen die zich tijdens de implementatie kunnen voordoen.
 
 De toegang zou aan zeer belangrijke leden van het team moeten worden toegewezen.
 
@@ -1182,7 +1182,7 @@ Een eerste voorstel en definitie van de architectuur voor alle milieu&#39;s van 
 
 ### Documentatie systeemarchitectuur {#system-architecture-documentation}
 
-een document met gedetailleerde informatie over de systeemarchitectuur; met inbegrip van interfaces, netwerkplaats, en integratie voor alle milieu&#39;s, onder andere informatie.
+Een document waarin de systeemarchitectuur wordt beschreven; met inbegrip van interfaces, netwerklocatie, en integratie voor alle milieu&#39;s, onder andere.
 
 ### Beveiligingsconcept systeemarchitectuur {#system-architecture-security-concept}
 
@@ -1257,7 +1257,7 @@ Zorg ervoor dat de testomgeving gereed is, met automatische implementaties om er
 
 ### Testrapporten {#test-reports}
 
-verslagen waarin de testresultaten worden vermeld; met inbegrip van:
+Rapporten waarin de resultaten van de tests worden vermeld, met inbegrip van:
 
 * aangetoonde gebreken
 * status van uitgevoerde testgevallen
@@ -1278,7 +1278,7 @@ Automatiseringssuite en gereedschap geselecteerd voor automatisering van hoofdle
 
 ### Testconcept {#testing-concept}
 
-Het testconcept is het overzicht op hoog niveau van het testen voor het project; inclusief QA, UAT, prestaties, beveiliging en integratietests.
+Het het Testen Concept is het overzicht op hoog niveau van het testen voor het project; met inbegrip van, QA, UAT, prestaties, veiligheid, en integratietests.
 
 ### Testplannen {#testing-plans}
 
@@ -1314,7 +1314,7 @@ Vereiste toegangsrechten verleend aan de respectieve rollen die met systemen van
 
 ### Testconcept van derden {#third-party-testing-concept}
 
-Definieert:
+Definities:
 
 * gebruiksgevallen voor het testen van de integratie
 * functionaliteit met betrekking tot toepassingen van derden
@@ -1337,7 +1337,7 @@ Hierin moeten de projecttijdschema&#39;s en contractuele mijlpalen worden vastge
 
 ### Totale projectinspanningen {#total-project-efforts}
 
-Alle ramingen van de inspanningen van elk van de initiatiefnemers van het project moeten worden geconsolideerd. inclusief, overhead, ontwikkeling, systeemengineering, architecturale en testwerkzaamheden.
+Alle inspanningsschattingen, van elk van de initiatiefnemers van het project, moeten worden geconsolideerd, inclusief, overhead, ontwikkeling, systeemengineering, architectuur en testinspanningen.
 
 Als er in de overeenkomst een steunniveau is opgenomen, moeten ook inspanningen op het gebied van ondersteuning en operaties worden opgenomen.
 
@@ -1345,7 +1345,7 @@ Als er in de overeenkomst een steunniveau is opgenomen, moeten ook inspanningen 
 
 Materialen voor trainingssessies. De materialen zouden specifiek voor de oplossing moeten worden gecreeerd en worden ontworpen om met de Gidsen van de Gebruiker worden gebruikt.
 
-### Begrijpt de reikwijdte van het project en de verwachtingen {#understands-scope-of-project-and-expectations}
+### Begrijpt de reikwijdte van project en verwachtingen {#understands-scope-of-project-and-expectations}
 
 De bevoegde persoon dient te bevestigen dat hij/zij volledig begrijpt:
 
@@ -1357,7 +1357,7 @@ De bevoegde persoon dient te bevestigen dat hij/zij volledig begrijpt:
 
 Uw concept voor URL-afhandeling moet betrekking hebben op AEM specifieke URL-functies, zoals:
 
-* vanity URLs
+* vanity-URL&#39;s
 * koppeling extern maken
 * foutpagina&#39;s
 * toewijzing
@@ -1391,7 +1391,7 @@ Het begrotingsplan moet door alle belanghebbenden worden herzien en gevalideerd.
 
 ### Testresultaten witte doos {#white-box-test-results}
 
-Het testen van een witte doos is een methode die de interne structuren of de werking van een toepassing in tegenstelling tot zijn functionaliteit test. Het testen van de witte doos kan op de eenheid, de integratie, en systeemniveaus van het softwaretestproces worden toegepast.
+Het testen van een witte doos is een methode die de interne structuren of de werking van een toepassing in tegenstelling tot zijn functionaliteit test. Het testen van de witte doos kan op de eenheid, de integratie, en de systeemniveaus van het softwaretestproces worden toegepast.
 
 ### Workflowspecificaties {#workflow-specifications}
 

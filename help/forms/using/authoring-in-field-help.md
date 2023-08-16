@@ -1,8 +1,8 @@
 ---
 title: Contextassistentie voor het ontwerpen van formuliervelden
 seo-title: Authoring in-context help for form fields
-description: Met AEM Forms kunt u in de context Help toevoegen om formuliervelden en deelvensters als tekst of rich media, waaronder video's, aan te passen.
-seo-description: AEM Forms allows you to add in-context help to adaptive form fields and panels, as text or rich media, including videos.
+description: Met AEM Forms kunt u in de context Help toevoegen om formuliervelden en deelvensters als tekst of rich media, inclusief video's, aan te passen.
+seo-description: AEM Forms lets you add in-context help to adaptive form fields and panels, as text or rich media, including videos.
 uuid: 1865bf7b-66fc-4f89-bd98-904daa409320
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
@@ -10,16 +10,16 @@ discoiquuid: 78000342-a6a7-4c2e-acab-a88851b82c2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: 6569bfba-9af5-4060-8640-e51d7af46614
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
 
 # Contextassistentie voor het ontwerpen van formuliervelden{#authoring-in-context-help-for-form-fields}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Inleiding {#introduction}
 
@@ -42,7 +42,7 @@ U kunt in-context hulp specificeren gebruikend de volgende opties in de sectie v
 
 ### Korte beschrijving {#short-description}
 
-Het veld Korte beschrijving bevat snelle en korte aanwijzingen over het invullen van een formulierveld. De tekst die in het veld Korte beschrijving is opgegeven, wordt als knopinfo weergegeven wanneer u de muis boven het veld houdt.
+In het veld Korte beschrijving kunt u snelle en korte aanwijzingen geven over het invullen van een formulierveld. De tekst die in het veld Korte beschrijving is opgegeven, wordt als knopinfo weergegeven wanneer u de muis boven het veld houdt.
 
 ![Korte beschrijving voor het toevoegen van hulp in context voor formuliervelden](assets/tooltip.png)
 
@@ -58,7 +58,7 @@ U kunt het lange beschrijvingsgebied gebruiken om lange teksten te specificeren 
 
 ![Veelzijdige media toevoegen als in-context Help voor formuliervelden](assets/long-descriptions.png)
 
-Als u een lange beschrijving toevoegt, wordt een **?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
+Een lange beschrijving wordt weergegeven als **?** naast het veld. Als u op het pictogram klikt, wordt de inhoud weergegeven die is toegevoegd in de lange beschrijving.
 
 ![Voorbeeld van uitgebreide media in-context-Help](assets/photoshop.png)
 

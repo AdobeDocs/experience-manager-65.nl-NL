@@ -2,7 +2,7 @@
 title: Een bevestiging van het verzenden van een formulier verzenden via e-mail
 seo-title: Sending a form submission acknowledgement via email
 description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren. Hiermee wordt een bevestiging verzonden naar een gebruiker bij het verzenden van het formulier.
-seo-description: AEM Forms allows you to configure the email submit action that sends an acknowledgement to a user on submitting the form.
+seo-description: AEM Forms lets you configure the email submit action that sends an acknowledgement to a user on submitting the form.
 uuid: c80b1ef4-8fe3-48e0-8fc6-3032dc022a38
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: 574de3d5-69ba-4e2f-a8ab-c59f357e4386
 docset: aem65
 exl-id: bca4044a-18a9-4b97-92de-eff1e9a840f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 ## Aangepaste verzending van formuliergegevens {#adaptive-form-data-submission}
 
-Adaptieve formulieren bieden verschillende kant-en-klare versies [acties verzenden](../../forms/using/configuring-submit-actions.md) workflows voor het verzenden van de formuliergegevens naar verschillende eindpunten.
+Adaptieve formulieren bieden verschillende mogelijkheden [acties verzenden](../../forms/using/configuring-submit-actions.md) workflows voor het verzenden van de formuliergegevens naar verschillende eindpunten.
 
-De **[!UICONTROL Send email]** Met een handeling verzenden wordt een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
+Bijvoorbeeld de **[!UICONTROL Send email]** Met een handeling verzenden wordt een e-mail verzonden wanneer een adaptief formulier met succes is verzonden. Het kan ook worden geconfigureerd om de formuliergegevens en de PDF in de e-mail te verzenden.
 
 In dit artikel worden de stappen beschreven die nodig zijn om de e-mailactie in te schakelen voor een adaptief formulier en voor verschillende configuraties.
 
 >[!NOTE]
 >
->U kunt ook de opdracht **[!UICONTROL Send PDF via email]** om het ingevulde formulier per e-mail te verzenden als PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie zijn gelijk aan de opties die beschikbaar zijn voor de **[!UICONTROL Send email]** handeling. De actie Email PDF is alleen beschikbaar voor op XFA gebaseerde adaptieve formulieren
+>U kunt ook de opdracht **[!UICONTROL Send PDF via email]** om het ingevulde formulier per e-mail te verzenden als een PDF-bijlage. De configuratieopties die beschikbaar zijn voor deze actie zijn gelijk aan de opties die beschikbaar zijn voor de **[!UICONTROL Send email]** handeling. De actie Email PDF is alleen beschikbaar voor op XFA gebaseerde adaptieve formulieren
 
 ## E-mailactie verzenden {#email-action}
 
@@ -41,7 +41,7 @@ Met de handeling E-mail verzenden kan een auteur automatisch e-mail verzenden na
 
 ### E-mailactie verzenden inschakelen op een adaptief formulier {#enabling-email-action-on-an-adaptive-form}
 
-1. Een adaptief formulier openen in **[!UICONTROL edit]** in.
+1. Een adaptief formulier openen in **[!UICONTROL edit]** -modus.
 
 1. In de **[!UICONTROL Content]** tab, tikken **[!UICONTROL Form Container]** en tikken ![vormen](assets/configure-icon.svg) om de adaptieve formuliereigenschappen weer te geven.
 
@@ -61,7 +61,7 @@ Met de handeling E-mail verzenden kan een auteur automatisch e-mail verzenden na
    >
    >Als u **[!UICONTROL Send PDF via Email]** selecteert u de optie Bijlagen opnemen.
 
-1. Klikken ![opslaan](assets/save_icon.svg) om de wijzigingen op te slaan.
+1. Klikken ![opslaan](assets/save_icon.svg) om de wijzigingen op te slaan
 
 ### Aangepaste formulierveldnamen gebruiken om e-mailinhoud dynamisch te maken {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
@@ -69,13 +69,13 @@ De veldnamen in een adaptief formulier worden plaatsaanduidingen genoemd die wor
 
 In de **[!UICONTROL Send email]** gebruiken, kunt u plaatsaanduidingen gebruiken die worden verwerkt wanneer de handeling wordt uitgevoerd. Dit betekent dat de kopteksten van de e-mail (zoals **[!UICONTROL To]**, **[!UICONTROL CC]**, **[!UICONTROL BCC]**, **[!UICONTROL Subject]**) worden gegenereerd wanneer de gebruiker het formulier verzendt.
 
-Als u een tijdelijke aanduiding wilt definiëren, geeft u `${<field name>}` in een veld na het selecteren **[!UICONTROL Send email]** als de handeling Verzenden.
+Als u een tijdelijke aanduiding wilt definiëren, geeft u `${<field name>}` in een veld na het selecteren **[!UICONTROL Send email]** als handeling verzenden.
 
 Als het formulier bijvoorbeeld het **[!UICONTROL Email address]** veld, naam `email_addr`Voor het vastleggen van de e-mailadres van een gebruiker kunt u het volgende opgeven in het dialoogvenster **[!UICONTROL To]**, **[!UICONTROL CC]**, of **[!UICONTROL BCC]** velden.
 
 `${email_addr}`
 
-Wanneer een gebruiker het formulier verzendt, wordt een e-mail verzonden naar de e-mailid die is ingevoerd in het dialoogvenster `email_addr` van het formulier.
+Wanneer een gebruiker het formulier verzendt, wordt een e-mailbericht verzonden naar de e-mailid die is ingevoerd in het dialoogvenster `email_addr` veld van het formulier.
 
 >[!NOTE]
 >

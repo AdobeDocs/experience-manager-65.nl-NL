@@ -9,16 +9,16 @@ topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 000ab7bc9a686b62fcfc122f9cf09129101ec9a8
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '4738'
+source-wordcount: '4734'
 ht-degree: 0%
 
 ---
 
 # Aanbevolen werkwijzen voor het werken met adaptieve formulieren {#best-practices-for-working-with-adaptive-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Overzicht {#overview}
 
@@ -209,7 +209,7 @@ Overweeg de volgende aanbevolen procedures om prestatieproblemen met grote formu
 
 * Aanbevolen wordt om adaptieve formulieren te maken met behulp van XSD-formuliergegevensmodel, zelfs als een XFA wordt geconverteerd naar een adaptief formulier, indien mogelijk.
 * Neem alleen de velden en deelvensters op in adaptieve formulieren die informatie van de gebruiker vastleggen. Houd statische inhoud minimaal of gebruik URL&#39;s om deze in een apart venster te openen.
-* Hoewel elk formulier is ontworpen voor een bepaald doel, zijn er in de meeste formulieren enkele gangbare segmenten. Bijvoorbeeld persoonlijke gegevens, adres, arbeidsgegevens enzovoort. Maken [adaptieve formulierfragmenten](/help/forms/using/adaptive-form-fragments.md) voor algemene formulierelementen en secties en deze in alle formulieren gebruiken. U kunt een deelvenster in een bestaand formulier ook opslaan als een fragment. Elke wijziging in een fragment wordt weerspiegeld in alle bijbehorende adaptieve formulieren. Het bevordert samenwerkingscreatie aangezien de veelvoudige auteurs aan verschillende fragmenten gelijktijdig kunnen werken die omhoog een vorm maken.
+* Hoewel elk formulier is ontworpen voor een bepaald doel, zijn er in de meeste formulieren enkele gangbare segmenten. Bijvoorbeeld persoonlijke gegevens, adres, werkgelegenheidsgegevens enzovoort. Maken [adaptieve formulierfragmenten](/help/forms/using/adaptive-form-fragments.md) voor algemene formulierelementen en secties en deze in alle formulieren gebruiken. U kunt een deelvenster in een bestaand formulier ook opslaan als een fragment. Elke wijziging in een fragment wordt weerspiegeld in alle bijbehorende adaptieve formulieren. Het bevordert samenwerkingscreatie aangezien de veelvoudige auteurs aan verschillende fragmenten gelijktijdig kunnen werken die omhoog een vorm maken.
 
    * Net als adaptieve formulieren wordt aangeraden dat alle fragmentspecifieke opmaak en aangepaste scripts in de clientbibliotheek worden gedefinieerd met behulp van het dialoogvenster Fragmentcontainer. Probeer ook zelf-voldoende fragmenten te maken die niet afhankelijk zijn van objecten buiten de fragmenten.
    * Gebruik geen cross-fragments-scripts. Als er een object is buiten het fragment waarnaar u moet verwijzen, probeert u dat object te maken tot onderdeel van het bovenliggende formulier. Als het object zich nog steeds in een ander fragment moet bevinden, kunt u het met de naam ervan in het script raadplegen.

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1432'
+source-wordcount: '1431'
 ht-degree: 0%
 
 ---
@@ -42,8 +42,8 @@ De basispagina-eigenschappen zijn:
 
 * **Titeltekst**: Dit is de naam van deze basispagina zelf. In dit voorbeeld heet het &#39;Nieuws&#39;.
 * **Beschrijving**: Dit wordt onder de titel op de basispagina weergegeven.
-* **Doelsjabloon**: Dit is de sjabloon die dit subbestand gebruikt wanneer het een pagina maakt. In dit voorbeeld is het een *Pagina met inhoud Geometrixx* sjabloon.
-* **Doelpad**: Dit is het pad van de bovenliggende pagina waaronder dit subbestand pagina&#39;s maakt. In dit voorbeeld is het pad */content/geometrixx/nl/news*.
+* **Doelsjabloon**: Dit is de sjabloon die in dit subbestand wordt gebruikt wanneer een pagina wordt gemaakt. In dit voorbeeld is het een *Pagina met inhoud Geometrixx* sjabloon.
+* **Doelpad**: Dit is het pad van de bovenliggende pagina waaronder met dit subbestand pagina&#39;s worden gemaakt. In dit voorbeeld is het pad */content/geometrixx/nl/news*.
 
 Het lichaam van het substraat is de vorm. Wanneer een gebruiker een pagina wil maken met het subformulier, vult hij het formulier in en klikt u op *Maken*, onderaan. In de **Nieuws** Het voorbeeld boven het formulier heeft de volgende velden:
 
@@ -70,13 +70,13 @@ Met de dialoogeditor geeft u de eigenschappen op die worden gemaakt wanneer een 
 
 De dialoogdefinitie van een subformulier werkt op dezelfde manier als een component (zie [Componenten](/help/sites-developing/components.md)). Er zijn echter enkele belangrijke verschillen van toepassing:
 
-* Componentdialoogdefinities worden weergegeven als normale dialoogvensters (zoals bijvoorbeeld in het middelste venster van de dialoogvenster-editor), terwijl definities van de subdialoogvensters, hoewel deze als normale dialoogvensters in de dialoogeditor worden weergegeven, op de basispagina worden weergegeven als een subformulier (zoals in het dialoogvenster **Nieuws** hierboven).
+* Componentdialoogdefinities worden weergegeven als normale dialoogvensters (zoals bijvoorbeeld in het middelste venster van de dialoogvenster-editor), terwijl definities van de subdialoogvensters, hoewel deze als normale dialoogvensters in de dialoogeditor worden weergegeven, op de basispagina worden weergegeven als een subformulier (zoals in het dialoogvenster **Nieuws** steiger).
 * De dialoogvensters van de component verstrekken gebieden voor slechts die waarden nodig om de inhoud van één enkele specifieke component te bepalen. Een basisdialoogvenster moet velden bevatten voor elke eigenschap in elke alinea van de pagina die moet worden gemaakt.
 * In het geval van componentdialoogvensters is de component die wordt gebruikt om de opgegeven inhoud te renderen impliciet en daarom is de component `sling:resourceType` wordt automatisch ingevuld wanneer de alinea wordt gemaakt. Met een subformulier moet alle informatie die zowel de inhoud als het toegewezen onderdeel voor een bepaalde alinea definieert, door het dialoogvenster zelf worden verstrekt. In basisdialoogvensters moet deze informatie worden verstrekt door *Verborgen* velden om deze informatie te verzenden bij het maken van pagina&#39;s.
 
 Een blik bij het voorbeeld **Nieuws** het subold-dialoogvenster in de dialoogeditor helpt u uit te leggen hoe dit werkt. Ga naar de ontwerpmodus op de basispagina en klik op de koppeling voor de dialoogeditor.
 
-Klik nu op het veld Dialoogvenster **Dialog > Tab Panel > Text > Text**, als volgt:
+Klik nu op het dialoogvenster **Dialog > Tab Panel > Text > Text**, als volgt:
 
 ![textedit](assets/textedit.png)
 
@@ -92,7 +92,7 @@ Dit is de naam van de eigenschap waarnaar de inhoud van dit veld wordt geschreve
 
 Hiermee bepaalt u de locatie van de opslag van de inhoud voor de tekst die in dit veld wordt ingevoerd. Voor deze inhoud moeten echter nog twee kenmerken worden vastgesteld:
 
-* Het feit dat de tekenreeks die hier wordt opgeslagen, moet worden geïnterpreteerd als *rijke tekst*, en
+* Het feit dat de hier opgeslagen tekenreeks moet worden geïnterpreteerd als *rijke tekst*, en
 * welke component moet worden gebruikt om deze inhoud weer te geven op de resulterende pagina.
 
 In een normaal componentendialoog zou u deze informatie niet moeten specificeren omdat het impliciet in het feit is dat de dialoog reeds aan een specifieke component gebonden is.
@@ -133,16 +133,16 @@ De vaste waarde die voor deze eigenschap is opgegeven, is
 
 `foundation/components/textimage`
 
-Geeft aan dat de component die moet worden gebruikt om de tekstinhoud van deze alinea weer te geven, de component *Tekstafbeelding* component. Met de `isRichText` Booleaanse waarde die in het andere verborgen veld is opgegeven, kan de component de werkelijke tekstreeks renderen die is opgeslagen op `./jcr:content/par/text/text` op de gewenste manier.
+Geeft aan dat de component die moet worden gebruikt om de tekstinhoud van deze alinea weer te geven, de component *Tekstafbeelding* component. Met de opdracht `isRichText` Booleaanse waarde die in het andere verborgen veld is opgegeven, kan de component de werkelijke tekstreeks renderen die is opgeslagen op `./jcr:content/par/text/text` op de gewenste manier.
 
 ### Basisstructuur met MSM-overerving {#scaffolding-with-msm-inheritance}
 
 In de klassieke UI, is het steigeren volledig geïntegreerd met overerving MSM (indien van toepassing).
 
-Wanneer u een pagina opent in **Basisstructuur** in de modus (met het pictogram onder aan sidekick) worden componenten die overerving ondergaan, aangeduid met:
+Wanneer u een pagina opent in **Basisstructuur** in de modus (met het pictogram onder aan sidekick) worden alle componenten die overerving ondergaan, aangeduid met:
 
-* een slotsymbool (voor de meeste onderdelen); bijvoorbeeld Tekst en Titel)
-* een masker met de tekst **Klik om overerving te annuleren** (voor afbeeldingscomponenten)
+* een vergrendelingssymbool (voor de meeste componenten, bijvoorbeeld Tekst en Titel)
+* een masker met de tekst **Klik om overname te annuleren** (voor afbeeldingscomponenten)
 
 Hierin ziet u dat de component niet kan worden bewerkt, totdat de overerving wordt geannuleerd.
 

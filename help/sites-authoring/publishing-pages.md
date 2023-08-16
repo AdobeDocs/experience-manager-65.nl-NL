@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1f5eb646-acc7-49d5-b839-e451e68ada9e
 docset: aem65
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1663'
+source-wordcount: '1662'
 ht-degree: 5%
 
 ---
@@ -58,7 +58,7 @@ Afhankelijk van uw locatie kunt u publiceren:
 
 Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 
-1. Selecteer **Pagina-informatie** het pictogram om het menu te openen en dan **Pagina publiceren** optie.
+1. Selecteer de **Pagina-informatie** het pictogram om het menu te openen en dan **Pagina publiceren** -optie.
 
    ![screen_shot_2018-03-21at152734](assets/screen_shot_2018-03-21at152734.png)
 
@@ -114,7 +114,7 @@ Een pagina publiceren met Snel publiceren:
 
 >[!NOTE]
 >
->Snel publiceren is een oppervlakkige publicatie, d.w.z. alleen de geselecteerde pagina of pagina&#39;s worden gepubliceerd en onderliggende pagina&#39;s niet.
+>Snel publiceren is een oppervlakkige publicatie, dat wil zeggen dat alleen de geselecteerde pagina(&#39;s) wordt/worden gepubliceerd en onderliggende pagina&#39;s niet.
 
 #### Publicatie beheren {#manage-publication}
 
@@ -126,7 +126,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![pp-02-1](assets/pp-02-1.png)
 
-1. De wizard **Publicatie beheren** wordt gestart. De eerste stap, **Opties**, kunt u:
+1. De wizard **Publicatie beheren** wordt gestart. De eerste stap, **Opties**, laat u:
 
    * Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
    * Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
@@ -139,20 +139,20 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    Klikken **Volgende** om door te gaan.
 
-1. In de volgende stap van de wizard Publicatie beheren: **Toepassingsgebied**, kunt u het bereik van de publicatie/publicatie definiëren, bijvoorbeeld om onderliggende pagina&#39;s op te nemen en/of verwijzingen op te nemen.
+1. In de volgende stap van de wizard Publicatie beheren: **Toepassingsgebied**, kunt u het bereik van de publicatie/publicatie definiëren, bijvoorbeeld om onderliggende pagina&#39;s en/of verwijzingen op te nemen.
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
    U kunt de knop **Inhoud toevoegen** gebruiken om extra pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die moeten worden gepubliceerd voor het geval u deze niet hebt geselecteerd voordat u de wizard Publicatie beheren start.
 
-   Klik op de knop Inhoud toevoegen om het dialoogvenster [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) om het selecteren van inhoud toe te staan.
+   Klik op de knop Inhoud toevoegen om het dialoogvenster [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) om inhoudselectie toe te staan.
 
    Selecteer de vereiste pagina&#39;s en klik vervolgens op **Selecteren** om de inhoud aan de tovenaar toe te voegen of **Cancel **om de selectie te annuleren en aan de tovenaar terug te keren.
 
    Terug in de tovenaar, kunt u een punt in de lijst selecteren om zijn verdere opties zoals te vormen:
 
    * Inclusief de onderliggende elementen.
-   * Verwijder het uit de selectie.
+   * Verwijder de selectie.
    * De gepubliceerde referenties beheren.
 
    ![pp-03](assets/pp-03.png)
@@ -181,7 +181,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![pp-05](assets/pp-05.png)
 
-1. Klikken **Publiceren** om te voltooien.
+1. Klikken **Publiceren** in.
 
    Terug in de plaatsenconsole zal een berichtbericht de publicatie bevestigen.
 
@@ -258,7 +258,7 @@ U kunt de [Publicatie beheren](/help/sites-authoring/publishing-pages.md#manage-
 
    ![screen_shot_2018-03-21at154237](assets/screen_shot_2018-03-21at154237.png)
 
-   U kunt ook de referenties controleren die via het dialoogvenster **Gepubliceerde verwijzingen** optie.
+   U kunt ook de referenties controleren die via het dialoogvenster **Gepubliceerde verwijzingen** -optie.
 
 1. [Doorgaan met de normale wizard Publicatie beheren](#manage-publication) om de publicatie of publicatie van de boom te voltooien.
 
@@ -266,7 +266,7 @@ U kunt de [Publicatie beheren](/help/sites-authoring/publishing-pages.md#manage-
 
 U kunt de publicatiestatus van een pagina bepalen:
 
-* In de [resource overview information on the sites console](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+* In de [bron overzichtsinformatie over de plaatsenconsole](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
 
   ![screen-shot_2019-03-05at112019](assets/screen-shot_2019-03-05at112019.png)
 

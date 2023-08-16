@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '294'
+source-wordcount: '293'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 De Rapportering van het proces is een browser-gebaseerd hulpmiddel dat u gebruikt om rapporten over de processen en de taken van AEM Forms tot stand te brengen en te bekijken.
 
-De Rapportering van het proces verstrekt een reeks out-of-the-box rapporten die u toestaan om te filtreren, informatie over lange lopende processen, procesduur, en werkschemavolume te bekijken.
+De Rapportering van het proces verstrekt een reeks out-of-the-box rapporten die u, informatie over lange lopende processen, procesduur, en werkschemavolume laten filtreren, bekijken.
 
 Bovendien verstrekt de Rapportering van het Proces een interface om ad hoc vragen in werking te stellen en de meningen van het douanerapport in het Proces te integreren Meldend gebruikersinterface.
 
-Voor de lijst met ondersteunde browsers raadpleegt u [Door AEM Forms ondersteunde Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Zie voor de lijst met ondersteunde browsers [Door AEM Forms ondersteunde platforms](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Procesrapportage is gebaseerd op modules die:
 

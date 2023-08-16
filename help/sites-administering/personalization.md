@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1687'
+source-wordcount: '1685'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 Er is een steeds groter volume aan inhoud beschikbaar vandaag, of het nu op Internet, Extranet, of Intranetwebsites is.
 
-Personalisatie richt zich op het bieden van een op maat gemaakte omgeving waarin dynamische inhoud wordt weergegeven die op basis van hun specifieke behoeften is geselecteerd; Dit is op basis van vooraf gedefinieerde profielen, gebruikersselectie of interactief gebruikersgedrag.
+Bij personalisatie wordt de gebruiker voorzien van een op maat gemaakte omgeving waarin dynamische inhoud wordt weergegeven die op basis van de specifieke behoeften is geselecteerd. Hierbij wordt uitgegaan van vooraf gedefinieerde profielen, gebruikersselectie of interactief gebruikersgedrag.
 
 Er zijn drie hoofdelementen betrokken bij personalisatie:
 
@@ -44,15 +44,15 @@ Met andere woorden, de inhoud moet in zekere zin afhankelijk zijn van de gebruik
 
 * Bepaal hoe verpersoonlijking eigenlijk gebeurt - welke inhoud de gebruiker kan zien, en wanneer.
 
-Personalisatie kan:
+Personalisatie kan een van de volgende zijn:
 
 #### Expliciet {#explicit}
 
-* Aanpassing: waarbij de gebruiker selecties maakt van een keuze uit inhoudsbronnen.
+* Aanpassing: waarbij de gebruiker selecties maakt op basis van verschillende inhoudsbronnen.
 
 #### Impliciet {#implicit}
 
-* Gebaseerde regels: bedrijfsmanagers definiëren specifieke regels voor acties op basis van specifieke profielen en/of gedrag.
+* Gebaseerde regels: bedrijfsmanagers bepalen specifieke regels voor acties die op specifieke profielen en/of gedrag worden gebaseerd.
 * Eenvoudig filteren: selecties worden gemaakt op basis van vooraf gedefinieerde profielen op gebruikers- en/of groepsniveau.
 * Filteren op samenwerking/aanbevelingen: gebruikersgedrag wordt geregistreerd volgens vooraf gedefinieerde regels. Deze regels zijn gebaseerd op gedrag dat wordt waargenomen met gelijkgestemde individuen. De verzamelde informatie wordt gebruikt om de informatie aan de gebruiker te maken, met name in de vorm van aanbevelingen.
 
@@ -67,10 +67,10 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 ### Specifieke, beperkte, doelgebruikersgroepen - Extra&#39;s {#extranets}
 
-* De gebruikers vereisen login voor vergunning; dit wordt gekoppeld aan een profiel met informatie die nodig is voor personalisatie; eventueel nadere gegevens zoals de locatie, de relatie met het product, de gebruiksgeschiedenis, de budgettaire verantwoordelijkheden, enz.
+* Gebruikers dienen zich aan te melden voor een vergunning. Dit wordt gekoppeld aan een profiel met informatie die nodig is voor personalisatie. Eventuele gegevens zoals de locatie, de relatie met het product, de gebruiksgeschiedenis, budgettaire verantwoordelijkheden, enz.
 * Dergelijke instanties kunnen zich uitstrekken over sites zoals:
 * Bedrijven die websites aanbieden aan een zeer gespecialiseerde afdeling van hun markt, bijvoorbeeld een farmaceutische onderneming die een gespecialiseerde website voor artsen aanbiedt.
-* Bedrijven die websites aanbieden waarmee hun klanten actuele account- en factureringsgegevens kunnen bekijken; bijvoorbeeld telefoonaanbieders.
+* Bedrijven die websites aanbieden waarmee hun klanten actuele account- en factureringsgegevens kunnen bekijken, bijvoorbeeld telefoonproviders.
 
 ### Website voor verkoop en distributie {#sales-site}
 
@@ -78,9 +78,9 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 ### Websites zoeken {#search-site}
 
-* Veel van de belangrijkste websites van zoekprogramma&#39;s beschikken over zeer krachtige analytische instrumenten waarmee het gedrag van gebruikers, de zoektermen die ze gebruiken en de websites die ze bezoeken, worden vastgelegd. Dit wordt vervolgens gebruikt om de aangeboden inhoud aan te passen, met name wat betreft het weergeven van advertenties.
+* Veel van de belangrijkste websites van zoekprogramma&#39;s beschikken over zeer krachtige analytische instrumenten waarmee het gedrag van gebruikers, de zoektermen die ze gebruiken en de websites die ze bezoeken, worden vastgelegd. Dit wordt vervolgens gebruikt om de aangeboden inhoud aan te passen, met name met betrekking tot het weergeven van advertenties.
 
-### Sterkte van personalisatie en aandachtspunten {#strengths-of-personalization-and-points-to-consider}
+### Sterke punten van personalisatie en aandachtspunten {#strengths-of-personalization-and-points-to-consider}
 
 De volgende redenen waarom personalisatie moet worden gebruikt:
 
@@ -115,7 +115,7 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 * Personalisatie die wordt gerealiseerd door het gedrag van de gebruiker te volgen, of regels te plaatsen die op het profiel van de gebruiker worden gebaseerd, moet nauwkeurig en logisch zijn.
 * Er is niets frustrerender voor de gebruiker dan het hebben van inhoud gedwongen op, of ontkend aan, hen wegens de onnauwkeurige logica van een regel.
-* Daarom moeten de regels goed doordacht zijn - met de eisen van de gebruiker op de voorgrond. Dit kan veel moeite kosten en mag niet onderschat worden. het bepalen van de bedrijfsregels weegt vaak tegen de technische inspanning wanneer het uitvoeren van verpersoonlijking.
+* Daarom moeten de regels goed doordacht zijn - met de eisen van de gebruiker op de voorgrond. Dit kan veel moeite kosten, en moet niet onderschat worden; het bepalen van de bedrijfsregels weegt vaak zwaarder dan de technische inspanning wanneer het uitvoeren van verpersoonlijking.
 
 #### Wanneer gebruiken {#when-to-use}
 
@@ -130,7 +130,7 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 Personalisatie moet los van toegangscontrole worden beschouwd, maar heeft wel een onderlinge relatie.
 
-Personalisatie zelf leidt tot geen vorm van toegangscontrole. Het is gewoon een manier om te sturen wat de gebruiker ziet. het beperkt de gebruiker niet om tot andere inhoud toegang te hebben en zoals met om het even welke inhoud, moeten zij de correcte reeds toegewezen toegangscontroles hebben.
+Personalisatie zelf leidt tot geen vorm van toegangscontrole. Het is eenvoudig een manier om te sturen wat de gebruiker ziet; het beperkt de gebruiker niet om tot andere inhoud toegang te hebben en zoals met om het even welke inhoud, moeten zij de correcte toegangscontroles reeds toegewezen hebben.
 
 Nochtans, kan de toegangscontrole worden gebruikt om een vorm van verpersoonlijking tot stand te brengen. Als u een gebruiker toegang tot inhoud toestaat of ontkent, beïnvloedt dit onvermijdelijk de keus van inhoud die zij beschikbaar hebben - zo personaliserend hun Web-ervaring.
 
@@ -142,7 +142,7 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 |---|---|
 | Veld voor gecontroleerd wachtwoord | Verzoekt om wachtwoord en bevestiging van wachtwoord. |
 | Gecombineerde aanmelding | Hiermee kan de gebruiker zich aanmelden bij een bestaande account of zich aanmelden voor een nieuwe account. |
-| Forms-adresveld | Een complex veld dat de invoer van een internationaal adres mogelijk maakt. |
+| Forms-adresveld | Een complex veld waarmee een internationaal adres kan worden ingevoerd. |
 | Forms beginnen | Hiermee wordt een formulierdefinitie gestart |
 | Forms Captcha | Een veld dat bestaat uit een alfanumeriek woord dat automatisch wordt vernieuwd. De component captcha beschermt websites tegen bots. |
 | Forms Checkbox-groep | Meerdere items die zijn ingedeeld in een lijst en worden voorafgegaan door selectievakjes. Gebruikers kunnen meerdere selectievakjes selecteren. |
@@ -152,7 +152,7 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 | Verborgen Forms-veld | Dit veld wordt niet weergegeven aan de gebruiker. Het kan worden gebruikt om een waarde aan de cliënt en terug naar de server te vervoeren. Dit veld mag geen beperkingen hebben. |
 | Forms-afbeeldingsknop | Een extra verzendknop voor het formulier dat als afbeelding wordt weergegeven. |
 | Forms-wachtwoordveld | Hetzelfde als tekstveld, maar er is slechts één regel toegestaan en de tekstinvoer van de gebruiker is niet zichtbaar in het veld. |
-| Forms-keuzerondje | Meerdere items die zijn ingedeeld in een lijst die wordt voorafgegaan door een keuzerondje. Gebruikers mogen slechts één keuzerondje selecteren. |
+| Forms-keuzerondje | Meerdere items die zijn ingedeeld in een lijst voorafgegaan door een keuzerondje. Gebruikers mogen slechts één keuzerondje selecteren. |
 | Knop Forms verzenden | Een extra verzendknop voor het formulier waarvan de titel als tekst op de knop wordt weergegeven. |
 | Forms-tekstveld | Tekstveld waarin gebruikers gegevens kunnen invoeren. |
 | Mijn gadgets | Hiermee kunt u een van de beschikbare gadgets opnemen. |
@@ -166,7 +166,7 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 | Profiel algemene tekst, eigenschap | Profieleigenschappen. |
 | Aanmelden | Hiermee kunt u een gebruikersnaam en wachtwoord opgeven wanneer u zich aanmeldt. |
 | Afmelden | Hiermee wordt aangegeven welke gebruiker momenteel is aangemeld en krijgt u een koppeling naar het afmelden. |
-| Cloud labelen | Een labelwolk om een grafisch weergegeven selectie van tags op uw website weer te geven |
+| Cloud labelen | Een labelcloud waarmee een grafisch weergegeven selectie van tags op uw website wordt getoond |
 | Teaser | Een stuk inhoud (gewoonlijk een beeld) die op een hoofdpagina wordt getoond om gebruikers tot de onderliggende inhoud &quot;te &quot;teweegbrengen&quot;. |
 
 ## Personalisatie en community-inhoud {#personalization-and-community-content}
@@ -178,6 +178,6 @@ Met [AEM Communities 6.1](/help/communities/overview.md) dit probleem is opgelos
 Zonder de uitbreiding van de Gemeenschappen zijn verschillende methodes om de kwestie van de consistentie van UGC te onderzoeken:
 
 * Meerdere publicatie-instanties indien nodig synchroniseren
-* De UGC vanuit de publicatie-instantie naar de auteursomgeving verzenden, vanwaar deze kan worden gepubliceerd op een manier die vergelijkbaar is met het publiceren van pagina-inhoud
+* De UGC vanuit de publicatie-instantie naar de auteursomgeving verzenden, vanwaar deze op vergelijkbare wijze kan worden gepubliceerd als pagina-inhoud
 
 De methode die wordt gebruikt om UGC-consistentie te bereiken in een publicatieomgeving die uit meerdere publicatie-instanties bestaat, moet zorgvuldig worden ontworpen en getest op prestaties en consistentie.

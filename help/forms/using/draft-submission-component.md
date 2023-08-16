@@ -10,9 +10,9 @@ topic-tags: publish
 discoiquuid: ad71b423-02e1-4476-9c7c-f832cea6b0a6
 docset: aem65
 exl-id: f3f013a7-a399-4178-a901-d4a8c65ddbd3
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '747'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ In de component Concepten en verzendingen worden alle formulieren weergegeven di
 
 De component Concepten en verzendingen heeft twee tabbladen: Concepten en verzendingen.
 
-Als u het verzenden van een adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de optie **Handeling verzenden** tot **[Forms Portal-verzendactie](../../forms/using/configuring-submit-actions.md). Alternatief,** Schakel de optie Forms Portal verzenden in. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
+Als u het verzenden van een adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de optie **Handeling verzenden** tot **[Forms Portal-verzendactie](../../forms/using/configuring-submit-actions.md). Alternatief,** Schakel de optie Forms Portal verzenden in. Telkens wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
 
 De conceptfunctionaliteit is uit het vak ingeschakeld. Wanneer een gebruiker klikt **Opslaan** op een adaptief formulier wordt het formulier toegevoegd aan het tabblad Concepten.
 
@@ -97,7 +97,7 @@ Voer de volgende stappen uit om een component Concepten en verzendingen toe te v
 
 Wanneer u de verzendactie Forms Portal gebruikt of de optie voor het opslaan van gegevens in het formulierportaal in een adaptieve vorm inschakelt, worden de formuliergegevens opgeslagen in AEM opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. In plaats daarvan moet u de concepten en verzendingscomponent integreren met een beveiligde opslag, zoals een bedrijfsdatabase, om concepten en verzonden formuliergegevens op te slaan.
 
-Met Forms Portal kunt u gegevens opslaan in een lokale AEM, externe AEM opslagplaats of in een database. Met AEM Forms kunt u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen aanpassen. U kunt standaardmethoden negeren om op te geven hoe concepten en verzendgegevens worden opgeslagen bij een door u gekozen opslaglocatie. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
+Met Forms Portal kunt u gegevens opslaan in een lokale AEM opslagplaats, een externe AEM opslagplaats of een database. Met AEM Forms kunt u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen aanpassen. U kunt standaardmethoden negeren om op te geven hoe concepten en verzendgegevens worden opgeslagen bij een door u gekozen opslaglocatie. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
 
 Forms Portal biedt vanuit de boxservices (API&#39;s) voor het opslaan van gegevens in de crx-opslagruimte van lokale en externe AEM Forms-publicatie-instanties. U kunt de standaardimplementaties vervangen, die worden beschreven in [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md) artikel, met aangepaste implementaties ter vervanging van de standaardfunctionaliteit. Voor gedetailleerde informatie over de methodes die in een douaneimplementatie worden vereist om inhoud op een beveiligde plaats op te slaan, zie [Services voor ontwerp- en verzendgegevens aanpassen](/help/forms/using/custom-draft-submission-data-services.md) en [Aangepaste opslag voor concepten en verzendingscomponenten.](/help/forms/using/adding-custom-storage-provider-forms.md)
 

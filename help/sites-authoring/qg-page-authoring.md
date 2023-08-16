@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d35a2a4-0c8c-4b16-99a6-c6e6d66446dc
 docset: aem65
 exl-id: a7e16555-9bbe-4da2-817c-4495a0193f3f
-source-git-commit: d045fc1ac408f992d594a4cb68d1c4eeae2b0de1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1558'
+source-wordcount: '1557'
 ht-degree: 4%
 
 ---
@@ -50,12 +50,12 @@ Voordat u het overzicht van de details geeft, is er een kleine verzameling algem
 
 * Navigeren door koppelingen
 
-   * ***Koppelingen zijn niet beschikbaar voor navigatie*** wanneer u binnen bent **Bewerken** in. Als u met koppelingen wilt navigeren, moet u [voorvertoning van de pagina](/help/sites-authoring/editing-content.md#previewing-pages) door gebruik te maken van:
+   * ***Koppelingen zijn niet beschikbaar voor navigatie*** wanneer u binnen bent **Bewerken** -modus. Als u met koppelingen wilt navigeren, moet u [voorvertoning van de pagina](/help/sites-authoring/editing-content.md#previewing-pages) door:
 
       * [Voorvertoningsmodus](/help/sites-authoring/editing-content.md#preview-mode)
       * [Weergeven als gepubliceerd](/help/sites-authoring/editing-content.md#view-as-published)
 
-* Versies worden niet gestart of gemaakt in de paginaeditor. dit gebeurt nu vanuit de Sites-console (via **Maken** of [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) voor een geselecteerde bron).
+* De versies zijn niet begonnen/gecreeerd van de paginaredacteur; dit wordt nu gedaan van de console van Plaatsen (via of **Maken** of [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline) voor een geselecteerde bron).
 
 >[!NOTE]
 >
@@ -67,7 +67,7 @@ Voordat u het overzicht van de details geeft, is er een kleine verzameling algem
 
 ### Uw pagina zoeken {#finding-your-page}
 
-Het zoeken naar een pagina kent verschillende aspecten. u kunt navigeren en/of zoeken:
+Er zijn verschillende aspecten om een pagina te zoeken. U kunt navigeren en/of zoeken:
 
 1. Open de **Sites** console (met de **Sites** in de [Algemene navigatie](/help/sites-authoring/basic-handling.md#global-navigation)) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de Adobe Experience Manager-koppeling selecteert (linksboven).
 
@@ -79,7 +79,7 @@ Het zoeken naar een pagina kent verschillende aspecten. u kunt navigeren en/of z
 
    ![qgtap-01](assets/qgtap-01.png)
 
-1. U kunt ook [Zoeken](/help/sites-authoring/search.md) voor een pagina. U kunt de pagina selecteren in de weergegeven resultaten.
+1. U kunt [Zoeken](/help/sites-authoring/search.md) voor een pagina. U kunt de pagina selecteren in de weergegeven resultaten.
 
    ![qgtap-03](assets/qgtap-03.png)
 
@@ -121,14 +121,14 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
    >[!NOTE]
    >
-   >Eenmaal in de selectiemodus **Selecteren** wordt gewijzigd in **Deselecteren** pictogram (een kruis).
+   >Eenmaal in de selectiemodus **Selecteren** pictogram (een tik) wordt gewijzigd in **Deselecteren** pictogram (een kruis).
 
 ### Snelle handelingen (alleen kaartweergave/bureaublad) {#quick-actions-card-view-desktop-only}
 
 [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions) zijn beschikbaar:
 
 1. [Naar de pagina navigeren](#finding-your-page) Je wilt actie ondernemen.
-1. Houd de muisaanwijzer boven de kaart die uw vereiste bron vertegenwoordigt; de snelle acties worden weergegeven :
+1. Plaats de muisaanwijzer op de kaart die uw vereiste bron vertegenwoordigt. De snelle acties worden getoond:
 
    ![screen_shot_2018-03-21at160503-1](assets/screen_shot_2018-03-21at160503-1.png)
 
@@ -160,7 +160,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
       * Open de werkbalk van de component met Tik of klik. Gebruik de **Bewerken** (potlood) pictogram om het dialoogvenster te openen.
       * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
-      * U kunt als volgt alle beschikbare acties weergeven:
+      * Als u alle beschikbare acties wilt weergeven, opent u de modus Volledig scherm met:
 
      ![Modus Volledig scherm](do-not-localize/screen_shot_2018-03-21at160706.png)
 
@@ -171,7 +171,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
    * [Een component verplaatsen](/help/sites-authoring/editing-content.md#moving-a-component) ofwel:
 
       * Sleep de vereiste component naar de nieuwe locatie.
-      * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen indien nodig.
+      * Open de werkbalk van de component met Tik of klik. Gebruik de **Knippen** dan **Plakken** pictogrammen, indien nodig.
 
    * [Kopiëren (en Plakken)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component:
 
@@ -187,7 +187,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
    * [Annotaties toevoegen](/help/sites-authoring/annotations.md#annotations) op de pagina:
 
-      * Selecteer **Annoteren** (pictogram spraakballon). Annotaties toevoegen met de opdracht **Annotatie toevoegen** (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
+      * Selecteer de **Annoteren** (pictogram spraakballon). Annotaties toevoegen met de opdracht **Annotatie toevoegen** (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
 
      ![Annoteren](do-not-localize/screen_shot_2018-03-21at160813.png)
 
@@ -208,7 +208,7 @@ Er zijn twee (belangrijkste) methoden [bewerken, pagina-eigenschappen](/help/sit
 * Van de **Sites** console:
 
    1. [Naar de pagina navigeren](#finding-your-page) wilt publiceren.
-   1. Selecteer **Eigenschappen** pictogram uit:
+   1. Selecteer de **Eigenschappen** pictogram uit:
 
       * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de passende bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selectiingyourpageforfurtheraction).
@@ -231,7 +231,7 @@ Er zijn twee hoofdmethoden [publiceren, uw pagina](/help/sites-authoring/publish
 * Van de **Sites** console:
 
    1. [Naar de pagina navigeren](#finding-your-page) wilt publiceren.
-   1. Selecteer **Snel publiceren** pictogram uit:
+   1. Selecteer de **Snel publiceren** pictogram uit:
 
       * [Snelle handelingen (alleen kaartweergave/bureaublad)](#quick-actions-card-view-desktop-only) voor de passende bron.
       * De werkbalk wanneer uw [pagina is geselecteerd](#selectiingyourpageforfurtheraction) (biedt ook toegang tot [Later publiceren](/help/sites-authoring/publishing-pages.md#main-pars-title-12)).
@@ -286,10 +286,10 @@ Deze acties kunnen allemaal worden geactiveerd door:
 [Door een pagina te vergrendelen](/help/sites-authoring/editing-content.md#locking-a-page) voorkomt u dat andere auteurs op hetzelfde moment als u op de pagina kunnen werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u hier:
 
 * De werkbalk wanneer uw [pagina is geselecteerd](#selecting-your-page-for-further-action).
-* De [Vervolgkeuzelijst Pagina-informatie](#editing-the-page-properties) wanneer u een pagina bewerkt.
+* De [Vervolgkeuzemenu Pagina-informatie](#editing-the-page-properties) wanneer u een pagina bewerkt.
 * De pagina-werkbalk tijdens het bewerken van een pagina (wanneer de pagina is vergrendeld)
 
-Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:
+Het slotpictogram ziet er bijvoorbeeld als volgt uit:
 
 ![screen_shot_2018-03-21at161124](assets/screen_shot_2018-03-21at161124.png)
 
@@ -309,7 +309,7 @@ Het vergrendelingspictogram ziet er bijvoorbeeld als volgt uit:
 
 ### Een versie van uw pagina maken {#creating-a-version-of-your-page}
 
-Als u een [versie](/help/sites-authoring/working-with-page-versions.md) van uw pagina:
+Een [versie](/help/sites-authoring/working-with-page-versions.md) van uw pagina:
 
 1. Selecteer **[Tijdlijn](/help/sites-authoring/basic-handling.md#timeline)** met het pictogram van de werkbalk (voor of na [pagina selecteren](#selecting-your-page-for-further-action)):
 

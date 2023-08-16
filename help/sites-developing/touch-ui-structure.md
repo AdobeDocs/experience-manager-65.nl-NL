@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: e562b289-5d8b-4fa8-ad1c-fff5f807a45e
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De UI met aanraakbediening voor Adobe Experience Manager (AEM) heeft verschillen
 
 ### Basislay-out en -formaat {#basic-layout-and-resizing}
 
-De interface kan zowel voor mobiele apparaten als voor desktopapparaten worden gebruikt, maar in plaats van twee stijlen te maken, heeft Adobe besloten één stijl te gebruiken die voor alle schermen en apparaten werkt.
+De UI-caters voor zowel mobiele als desktopapparaten, maar in plaats van twee stijlen te maken, heeft de Adobe besloten één stijl te gebruiken die voor alle schermen en apparaten werkt.
 
 Alle modules gebruiken de zelfde basislay-out, in AEM dit kan worden gezien als:
 
@@ -39,7 +39,7 @@ Als de resolutie bijvoorbeeld lager is dan 1024 px (zoals op een mobiel apparaat
 
 De kopbalbar toont globale elementen met inbegrip van:
 
-* het logo en het specifieke product/de specifieke oplossing die u momenteel gebruikt; voor AEM vormt dit ook een link naar de globale navigatie
+* het logo en het specifieke product/de specifieke oplossing die u momenteel gebruikt; voor AEM vormt dit ook een koppeling naar de globale navigatie
 * Zoeken
 * pictogram voor het openen van de Help-bronnen
 * pictogram voor toegang tot andere oplossingen
@@ -66,7 +66,7 @@ De linkerspoorstaaf kan worden geopend/verborgen zoals vereist om te tonen:
 * **Verwijzingen**
 * **Filter**
 
-De standaardwaarde is **Alleen inhoud** (spoorstaaf verborgen).
+De standaardwaarde is **Alleen inhoud** (spoor verborgen).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -82,7 +82,7 @@ Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werk
 
 ![chlimage_1-148](assets/chlimage_1-148.png)
 
-### Editor-frame {#editor-frame}
+### Editor frame {#editor-frame}
 
 In het bewerkingsframe worden de bewerkingsfuncties gerealiseerd.
 
@@ -91,7 +91,7 @@ Het editorkader is een container (abstract) voor alle *pagina-ontwerpelementen*.
 * de bovenste werkbalk
 * zijpaneel
 * alle overlays
-* elk ander pagina-ontwerpelement; bijvoorbeeld de werkbalk van de component
+* een ander pagina-ontwerpelement, bijvoorbeeld de componentwerkbalk
 
 ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -99,7 +99,7 @@ Het editorkader is een container (abstract) voor alle *pagina-ontwerpelementen*.
 
 Dit bevat twee standaardtabbladen waarmee u elementen en componenten kunt selecteren. U kunt ze hier naartoe slepen en op de pagina neerzetten.
 
-Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of wordt deze over het gehele venster geschoven (als het vensterformaat kleiner is dan een breedte van 1024 px); zoals bijvoorbeeld op een mobiel apparaat).
+Het zijpaneel is standaard verborgen. Als deze optie is geselecteerd, wordt deze links weergegeven of schuift deze over om het hele venster te bedekken (als het vensterformaat kleiner is dan een breedte van 1024 px, bijvoorbeeld op een mobiel apparaat).
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
 
@@ -134,11 +134,11 @@ De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelem
 Een laag is een onafhankelijke bundel van functionaliteit die kan worden geactiveerd aan:
 
 * Een andere weergave van de pagina opgeven
-* toestaan dat u met een pagina werkt en/of ermee werkt
+* waarmee u een pagina kunt bewerken en/of bewerken
 
 De lagen bieden geavanceerde functionaliteit voor de gehele pagina, in tegenstelling tot specifieke handelingen voor een afzonderlijke component.
 
-AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het ontwerpen van pagina&#39;s; zoals bewerken, voorvertonen en notities aanbrengen.
+AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het ontwerpen van pagina&#39;s, zoals bewerken, voorvertonen en notities aanbrengen.
 
 >[!NOTE]
 >

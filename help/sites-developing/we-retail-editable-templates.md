@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 8%
 
 ---
@@ -25,7 +25,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
 ## Uitproberen {#trying-it-out}
 
-1. Bewerk de pagina Apparatuur van de master taalvertakking.
+1. Bewerk de pagina Apparatuur van de taalstramienvertakking.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
@@ -53,14 +53,14 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
 1. In de sjablooneditor kunt u het beleid van de tekstcomponent in de lay-outcontainer bewerken.
 
-   Zo kunt u:
+   Hiermee kunt u:
 
    * Een bestaand beleid selecteren of een nieuw beleid voor de container maken
    * Definieer de functies die beschikbaar zijn voor de auteur van de pagina wanneer u deze component gebruikt, zoals
 
       * Toegestane bronnen voor plakken
       * Opmaakopties
-      * Toegestane alineastijlen
+      * Alineastijlen toegestaan
       * Speciale tekens toegestaan
 
    Vele componenten die op de kerncomponenten worden gebaseerd staan de configuratie van opties op componentenniveau door de editable malplaatjes toe, die de behoefte aan aanpassing door ontwikkelaars verwijderen.

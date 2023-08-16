@@ -1,10 +1,10 @@
 ---
-title: Het gebruiken van GrahiQL winde in AEM
+title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '788'
 ht-degree: 0%
 
 ---
@@ -17,12 +17,12 @@ Tenuitvoerlegging van de norm [GraphiQL](https://graphql.org/learn/serving-over-
 >
 >GraphiQL is inbegrepen in alle milieu&#39;s van AEM (maar zal slechts toegankelijk/zichtbaar zijn wanneer u uw eindpunten vormt).
 >
->In vorige versies was een pakket nodig om GraphiQL IDE te installeren. Als u deze installatie hebt, kunt u deze nu verwijderen.
+>In vorige versies was een pakket nodig om de GraphiQL IDE te installeren. Als u deze installatie hebt, kunt u deze nu verwijderen.
 
 >[!NOTE]
 >U moet [Uw eindpunten geconfigureerd](/help/sites-developing/headless/graphql-api/graphql-endpoint.md) in de [configuratievenster](/help/assets/content-fragments/content-fragments-configuration-browser.md) voordat u GraphiQL IDE gebruikt.
 
-De **GraphiQL** kunt u uw GraphQL-query&#39;s testen en er fouten in opsporen door het volgende in te stellen:
+De **GraphiQL** kunt u testen en fouten opsporen in uw GraphQL-query&#39;s door het volgende in te schakelen:
 
 * Selecteer de **Endpoint** aangewezen aan de configuratie van Plaatsen die u voor uw vragen wilt gebruiken
 * direct nieuwe query&#39;s invoeren
@@ -32,12 +32,12 @@ De **GraphiQL** kunt u uw GraphQL-query&#39;s testen en er fouten in opsporen do
 * opslaan en beheren **Blijvende query&#39;s**
 * publiceren of publiceren ongedaan maken, **Blijvende query&#39;s** (bijvoorbeeld van/naar `dev-publish`)
 * zie **Historie** van uw vorige vragen
-* gebruiken **Documentatieverkenner** toegang tot de documentatie; helpen u te leren en te begrijpen welke methoden beschikbaar zijn.
+* gebruiken **Documentatieverkenner** om toegang te krijgen tot de documentatie, zodat u kunt leren welke methoden beschikbaar zijn en begrijpen.
 
 U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
 * **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
-* rechtstreeks; bijvoorbeeld: `http://localhost:4502/aem/graphiql.html`
+* rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
 
@@ -76,13 +76,13 @@ Selecteer de query die u wilt bijwerken in de lijst in het dialoogvenster **[Bli
 
 De query wordt weergegeven in het deelvenster Editor. Breng de gewenste wijzigingen aan en gebruik vervolgens **Opslaan** om uw updates aan de persisted query vast te leggen.
 
-## Bezig met uitvoeren van query&#39;s {#running-queries}
+## Query&#39;s uitvoeren {#running-queries}
 
 U kunt een nieuwe vraag in werking stellen onmiddellijk, of u kunt een voortgezette vraag laden en in werking stellen. Als u een blijvende query wilt laden, selecteert u deze in de lijst. De query wordt dan weergegeven in het editorpaneel.
 
 In beide gevallen is de query die wordt weergegeven in het editorpaneel de query die wordt uitgevoerd wanneer u een van de volgende twee doet:
 
-* klikken/tikken op de **Query uitvoeren** pictogram
+* klikken/tikken op de knop **Query uitvoeren** pictogram
 * de toetsenbordcombinatie gebruiken `Control-Enter`
 
 ## Query-variabelen {#query-variables}
@@ -140,7 +140,7 @@ Als u eenmaal uw [voortgezette query](/help/sites-developing/headless/graphql-ap
 
 ## URL kopiëren om rechtstreeks toegang te krijgen tot de query {#copy-url}
 
-De **URL kopiëren** Met deze optie kunt u een query simuleren door de URL te kopiëren die wordt gebruikt voor directe toegang tot de voortgezette query en de resultaten te bekijken. Dit kan vervolgens voor tests worden gebruikt; bijvoorbeeld door toegang te krijgen tot een browser:
+De **URL kopiëren** Met deze optie kunt u een query simuleren door de URL te kopiëren die wordt gebruikt om rechtstreeks toegang te krijgen tot de voortgezette query en de resultaten te bekijken. Dit kan vervolgens voor testdoeleinden worden gebruikt, bijvoorbeeld door toegang te krijgen tot een browser:
 
 <!--
   >[!NOTE]

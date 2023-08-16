@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2465'
+source-wordcount: '2462'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ De `<ui:includeClientLib>` tag kan als volgt worden gebruikt in een jsp :
 
 ## CQ-tagbibliotheek {#cq-tag-library}
 
-De tagbibliotheek CQ bevat nuttige functies.
+De CQ-tagbibliotheek bevat nuttige functies.
 
 Als u de CQ-tagbibliotheek in uw script wilt gebruiken, moet het script beginnen met de volgende code:
 
@@ -93,7 +93,7 @@ Wanneer u het Jsp manuscript van een AEM component ontwikkelt, wordt het geadvis
 <%@include file="/libs/foundation/global.jsp"%>
 ```
 
-De tags sling, CQ en jstl worden gedeclareerd en de regelmatig gebruikte scriptobjecten die door de [`<cq:defineObjects />`](#amp-lt-cq-defineobjects) tag. Hierdoor wordt de jsp-code van uw component verkort en vereenvoudigd.
+De tags sling, CQ en jstl worden gedeclareerd en de regelmatig gebruikte scriptobjecten die door de [`<cq:defineObjects />`](#amp-lt-cq-defineobjects) -tag. Hierdoor wordt de jsp-code van uw component verkort en vereenvoudigd.
 
 ### &lt;cq:text> {#cq-text}
 
@@ -101,7 +101,7 @@ De `<cq:text>` -tag is een gebruikstag die de tekst van een component in een JSP
 
 Het heeft de volgende optionele kenmerken:
 
-**eigenschap** - Naam van de eigenschap die moet worden gebruikt. De naam is relatief ten opzichte van de huidige bron.
+**eigenschap** - Naam van de te gebruiken eigenschap. De naam is relatief ten opzichte van de huidige bron.
 
 **value** - Waarde die voor uitvoer moet worden gebruikt. Als dit kenmerk aanwezig is, wordt het gebruik van het eigenschapkenmerk overschreven.
 
@@ -180,7 +180,7 @@ Als de `source` attribute is not set:
 De &quot;inhoudsbundel&quot; kan worden gebruikt door standaard-JSTL `<fmt:message>` -tags. De zoekopdracht van berichten via sleutels is tweeledig:
 
 1. Ten eerste worden de JCR-eigenschappen van de onderliggende resource die wordt gerenderd, doorzocht op vertalingen. Hiermee kunt u een dialoogvenster met eenvoudige componenten definiëren waarin u deze waarden kunt bewerken.
-1. Als het knooppunt geen eigenschap bevat die exact dezelfde naam heeft als de sleutel, moet de fallback een resourcepakket laden vanuit de sling request ( `SlingHttpServletRequest.getResourceBundle(Locale)`). De taal of landinstelling voor deze bundel wordt gedefinieerd door de taal- en bronkenmerken van de `<cq:setContentBundle>` tag.
+1. Als het knooppunt geen eigenschap bevat die exact dezelfde naam heeft als de sleutel, moet de fallback een resourcepakket laden vanuit de sling request ( `SlingHttpServletRequest.getResourceBundle(Locale)`). De taal of landinstelling voor deze bundel wordt gedefinieerd door de taal- en bronkenmerken van de `<cq:setContentBundle>` -tag.
 
 De `<cq:setContentBundle>` tag kan als volgt worden gebruikt in een jsp.
 
@@ -216,7 +216,7 @@ Deze heeft de volgende kenmerken:
 
 **resourceType**
 
-* The resource type of the resource to be included. Als het middeltype wordt geplaatst, moet de weg de nauwkeurige weg aan een middelvoorwerp zijn: in dit geval wordt het toevoegen van parameters, kiezers en extensies aan het pad niet ondersteund.
+* The resource type of the resource to be included. Als het middeltype wordt geplaatst, moet de weg de nauwkeurige weg aan een middelvoorwerp zijn: in dit geval, wordt het toevoegen van parameters, selecteurs, en uitbreidingen aan de weg niet gesteund.
 * Als de bron die moet worden opgenomen, wordt opgegeven met het padkenmerk dat niet kan worden omgezet naar een bron, maakt de tag mogelijk een synthetisch bronobject uit het pad en dit resourcetype.
 * Of weg en resourceType, of manuscript moet worden gespecificeerd.
 
@@ -247,8 +247,8 @@ Gebruik `<%@ include file="myScript.jsp" %>` of `<cq:include script="myScript.js
 
 Gebruik `<cq:include>` of `<sling:include>`?
 
-* Bij het ontwikkelen van AEM componenten raadt Adobe u aan `<cq:include>`.
-* `<cq:include>` kunt u scriptbestanden direct op naam opnemen wanneer u het scriptkenmerk gebruikt. Dit neemt component en middeltypeovererving in overweging, en is vaak eenvoudiger dan strikte naleving van het manuscriptresolutie van het Sling gebruikend selecteurs en uitbreidingen.
+* Wanneer het ontwikkelen van AEM componenten, adviseert de Adobe dat u gebruikt `<cq:include>`.
+* `<cq:include>` Hiermee kunt u scriptbestanden direct op naam opnemen wanneer u het scriptkenmerk gebruikt. Dit neemt component en middeltypeovererving in overweging, en is vaak eenvoudiger dan strikte naleving van het manuscriptresolutie van het Sling gebruikend selecteurs en uitbreidingen.
 
 ### &lt;cq:includeClientLib> {#cq-includeclientlib}
 
@@ -296,7 +296,7 @@ De `<cq:includeClientLib>` tag kan als volgt worden gebruikt in een jsp :
 
 ### &lt;cq:defineObjects> {#cq-defineobjects}
 
-De `<cq:defineObjects>` tag stelt de volgende, regelmatig gebruikte scriptobjecten beschikbaar waarnaar de ontwikkelaar kan verwijzen. Ook worden de objecten weergegeven die door de [`<sling:defineObjects>`](#amp-lt-sling-defineobjects) tag.
+De `<cq:defineObjects>` tag stelt de volgende, regelmatig gebruikte scriptobjecten beschikbaar waarnaar de ontwikkelaar kan verwijzen. Ook worden de objecten weergegeven die door de [`<sling:defineObjects>`](#amp-lt-sling-defineobjects) -tag.
 
 **componentContext**
 
@@ -440,7 +440,7 @@ De `<cq:defineObjects>` tag stelt de volgende, regelmatig gebruikte scriptobject
 
 De `<cq:requestURL>` -tag schrijft de huidige aanvraag-URL naar de JspWriter. De twee tags [`<cq:addParam>`](#amp-lt-cq-addparam) en [`<cq:removeParam>`](#amp-lt-cq-removeparam) en kan binnen de tekst van deze tag worden gebruikt om de huidige aanvraag-URL te wijzigen voordat deze wordt geschreven.
 
-Hiermee kunt u koppelingen maken naar de huidige pagina met verschillende parameters. Zo kunt u bijvoorbeeld de aanvraag transformeren:
+Hiermee kunt u koppelingen met verschillende parameters maken naar de huidige pagina. Zo kunt u bijvoorbeeld de aanvraag transformeren:
 
 `mypage.html?mode=view&query=something` in `mypage.html?query=something`.
 
@@ -460,7 +460,7 @@ Voorbeelden:
 
 ### &lt;cq:addParam> {#cq-addparam}
 
-De `<cq:addParam>` tag voegt een aanvraagparameter met de opgegeven naam en waarde toe aan de omsluitende tag [`<cq:requestURL>`](#amp-lt-cq-requesturl) tag.
+De `<cq:addParam>` tag voegt een aanvraagparameter met de opgegeven naam en waarde toe aan de omsluitende tag [`<cq:requestURL>`](#amp-lt-cq-requesturl) -tag.
 
 Deze heeft de volgende kenmerken:
 
@@ -480,7 +480,7 @@ Deze heeft de volgende kenmerken:
 
 ### &lt;cq:removeParam> {#cq-removeparam}
 
-De `<cq:removeParam>` tag verwijdert een aanvraagparameter met de opgegeven naam en waarde uit de insluitende tag [`<cq:requestURL>`](#amp-lt-cq-requesturl) tag. Wanneer geen waarde is opgegeven, worden alle parameters met de opgegeven naam verwijderd.
+De `<cq:removeParam>` tag verwijdert een aanvraagparameter met de opgegeven naam en waarde uit de insluitende tag [`<cq:requestURL>`](#amp-lt-cq-requesturl) -tag. Wanneer geen waarde is opgegeven, worden alle parameters met de opgegeven naam verwijderd.
 
 Deze heeft de volgende kenmerken:
 
@@ -528,7 +528,7 @@ Deze heeft de volgende kenmerken:
 
 **resourceType**
 
-* The resource type of the resource to be included. Als het middeltype wordt geplaatst, moet de weg de nauwkeurige weg aan een middelvoorwerp zijn: in dit geval wordt het toevoegen van parameters, kiezers en extensies aan het pad niet ondersteund.
+* The resource type of the resource to be included. Als het middeltype wordt geplaatst, moet de weg de nauwkeurige weg aan een middelvoorwerp zijn: in dit geval, wordt het toevoegen van parameters, selecteurs, en uitbreidingen aan de weg niet gesteund.
 * Als de bron die moet worden opgenomen, wordt opgegeven met het padkenmerk dat niet kan worden omgezet naar een bron, maakt de tag mogelijk een synthetisch bronobject uit het pad en dit resourcetype.
 
 **replaceSelectors**
@@ -545,7 +545,7 @@ Deze heeft de volgende kenmerken:
 
 >[!NOTE]
 >
->De resolutie van de resource en het script dat is opgenomen in de `<sling:include>` -tag is hetzelfde als bij een normale sling-URL-resolutie. Standaard worden de kiezers, de extensie enzovoort uit de huidige aanvraag ook gebruikt voor het opgenomen script. Ze kunnen worden gewijzigd met de tagkenmerken: bijvoorbeeld `replaceSelectors="foo.bar"` Hiermee kunt u de kiezers overschrijven.
+>De resolutie van de resource en het script dat is opgenomen in de `<sling:include>` -tag is hetzelfde als bij een normale sling-URL-resolutie. Standaard worden de kiezers, de extensie enzovoort uit de huidige aanvraag ook gebruikt voor het opgenomen script. Ze kunnen worden gewijzigd via de tagkenmerken: bijvoorbeeld `replaceSelectors="foo.bar"` Hiermee kunt u de kiezers overschrijven.
 
 Voorbeelden:
 

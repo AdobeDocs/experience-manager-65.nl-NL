@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 role: Developer
 exl-id: b3c19c82-e26f-4dc8-b846-6aec705cee08
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 0%
@@ -25,7 +25,7 @@ ht-degree: 0%
 
 U kunt dynamisch een DDX-document maken dat kan worden gebruikt om een Assembler-bewerking uit te voeren. Door een DDX-document dynamisch te maken, kunt u waarden in het DDX-document gebruiken die tijdens runtime worden verkregen. Om een DX- document dynamisch tot stand te brengen, gebruik klassen die tot de programmeertaal behoren die u gebruikt. Als u bijvoorbeeld uw clienttoepassing ontwikkelt met Java, gebruikt u klassen die bij het `org.w3c.dom.*`pakket. Eveneens, als u Microsoft .NET gebruikt, gebruiksklassen die tot het behoren `System.Xml` naamruimte.
 
-Voordat u het DDX-document kunt doorgeven aan de Assembler-service, moet u de XML vanuit een `org.w3c.dom.Document` instantie aan een `com.adobe.idp.Document` -instantie. Als u webservices gebruikt, converteert u de XML vanuit het gegevenstype dat wordt gebruikt om de XML te maken (bijvoorbeeld `XmlDocument`) `BLOB` -instantie.
+Voordat u het DDX-document kunt doorgeven aan de Assembler-service, moet u de XML vanuit een `org.w3c.dom.Document` instantie aan een `com.adobe.idp.Document` -instantie. Als u webservices gebruikt, converteert u de XML vanuit het gegevenstype dat wordt gebruikt om de XML te maken (bijvoorbeeld `XmlDocument`) aan een `BLOB` -instantie.
 
 Voor deze bespreking, veronderstel dat het volgende Dx- document dynamisch wordt gecreeerd.
 
@@ -38,7 +38,7 @@ Voor deze bespreking, veronderstel dat het volgende Dx- document dynamisch wordt
  </DDX>
 ```
 
-Dit DDX-document demonteert een PDF-document. U wordt aangeraden vertrouwd te zijn met het demonteren van PDF-documenten.
+Dit DDX-document demonteert een PDF-document. U wordt aangeraden bekend te zijn met het demonteren van PDF-documenten.
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ Dit DDX-document demonteert een PDF-document. U wordt aangeraden vertrouwd te zi
 
 >[!NOTE]
 >
->Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -78,7 +78,7 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, cre
 
 **Het DDX-document maken**
 
-Maak een DDX-document met de programmeertaal die u gebruikt. Als u een DDX-document wilt maken dat een PDF-document demonteert, moet u ervoor zorgen dat het het volgende bevat: `PDFsFromBookmarks` element. Zet het gegevenstype om dat wordt gebruikt om het DDX-document te maken `com.adobe.idp.Document` -instantie als u de Java API gebruikt. Als u webservices gebruikt, zet u het gegevenstype om in een `BLOB` -instantie.
+Maak een DDX-document met de programmeertaal die u gebruikt. Als u een DDX-document wilt maken dat een PDF-document demonteert, controleert u of het het volgende bevat: `PDFsFromBookmarks` element. Zet het gegevenstype om dat wordt gebruikt om het DDX-document te maken `com.adobe.idp.Document` als u de Java API gebruikt. Als u webservices gebruikt, zet u het gegevenstype om in een `BLOB` -instantie.
 
 **Het DDX-document converteren**
 
@@ -94,7 +94,7 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Het PDF-document demonteren**
 
-U kunt het PDF-document deassembleren door het `invokeDDX` bewerking. Geef het DDX-document door dat dynamisch is gemaakt. De dienst van de Assembler keert gedemonteerde documenten van PDF binnen een inzamelingsvoorwerp terug.
+U kunt het PDF-document deassembleren door het `invokeDDX` -bewerking. Geef het DDX-document door dat dynamisch is gemaakt. De dienst van de Assembler keert gedemonteerde documenten van PDF binnen een inzamelingsvoorwerp terug.
 
 **De gedemonteerde PDF-documenten opslaan**
 
@@ -123,23 +123,23 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (Java
 1. Maak een PDF Assembler-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Maak het DDX-document.
 
-   * Een Java maken `DocumentBuilderFactory` object aanroepen `DocumentBuilderFactory` klasse&quot; `newInstance` methode.
+   * Een Java maken `DocumentBuilderFactory` object aanroepen `DocumentBuilderFactory` class&#39; `newInstance` methode.
    * Een Java maken `DocumentBuilder` object aanroepen `DocumentBuilderFactory` object `newDocumentBuilder` methode.
    * Roep de `DocumentBuilder` object `newDocument` methode om een instantie te maken `org.w3c.dom.Document` object.
-   * Maak het basiselement van het DDX-document door het `org.w3c.dom.Document` object `createElement` methode. Met deze methode maakt u een `Element` object dat het basiselement vertegenwoordigt. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `setAttribute` methode. Voeg ten slotte het element aan het koptekstelement toe door het koptekstelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als een argument. De volgende coderegels tonen deze toepassingslogica:
-      ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
+   * Maak het basiselement van het DDX-document door het `org.w3c.dom.Document` object `createElement` methode. Deze methode maakt een `Element` object dat het basiselement vertegenwoordigt. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `setAttribute` methode. Voeg ten slotte het element aan het koptekstelement toe door het koptekstelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als argument. De volgende coderegels tonen deze toepassingslogica:
+     ` Element root = (Element)document.createElement("DDX");  root.setAttribute("xmlns","https://ns.adobe.com/DDX/1.0/");  document.appendChild(root);`
 
    * Maak de `PDFsFromBookmarks` element door het `Document` object `createElement` methode. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Stel een waarde in voor de `PDFsFromBookmarks` element door zijn `setAttribute` methode. Voeg de `PDFsFromBookmarks` aan de `DDX` element door het element DDX te roepen `appendChild` methode. Geef de `PDFsFromBookmarks` elementobject als een argument. De volgende coderegels tonen deze toepassingslogica:
 
-      ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
+     ` Element PDFsFromBookmarks = (Element)document.createElement("PDFsFromBookmarks");  PDFsFromBookmarks.setAttribute("prefix","stmt");  root.appendChild(PDFsFromBookmarks);`
 
    * Een `PDF` element door het `Document` object `createElement` methode. Geef een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel een waarde in voor de `PDF` element door zijn `setAttribute` methode. Voeg de `PDF` aan de `PDFsFromBookmarks` element door het `PDFsFromBookmarks` element `appendChild` methode. Geef de `PDF` elementobject als een argument. Deze toepassingslogica wordt in de volgende coderegels getoond:
 
-      ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
+     ` Element PDF = (Element)document.createElement("PDF");  PDF.setAttribute("source","AssemblerResultPDF.pdf");  PDFsFromBookmarks.appendChild(PDF);`
 
 1. Zet het DDX-document om.
 
@@ -147,7 +147,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (Java
    * Een `Transformer` door het object aan te roepen `TransformerFactory` object `newTransformer` methode.
    * Een `ByteArrayOutputStream` object met behulp van de constructor.
    * Een `javax.xml.transform.dom.DOMSource` object met behulp van de constructor. Geef de `org.w3c.dom.Document` object dat het DDX-document vertegenwoordigt.
-   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en door te geven `ByteArrayOutputStream` object.
+   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en de `ByteArrayOutputStream` object.
    * Java vullen `ByteArrayOutputStream` door het object aan te roepen `javax.xml.transform.Transformer` object `transform` methode. Geef de `javax.xml.transform.dom.DOMSource` en de `javax.xml.transform.stream.StreamResult` objecten.
    * Maak een bytearray en wijs de grootte van de array toe `ByteArrayOutputStream` object naar de bytearray.
    * De bytearray vullen door de `ByteArrayOutputStream` object `toByteArray` methode.
@@ -188,7 +188,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (Java
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een DDX-document dynamisch maken met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[Snel starten (SOAP-modus): dynamisch een DDX-document maken met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -196,7 +196,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met de API (Java
 
 ## Een DDX-document dynamisch maken met de webservice-API {#dynamically-create-a-ddx-document-using-the-web-service-api}
 
-Maak dynamisch een DDX-document en demonstreer een PDF-document met behulp van de API (webservice) van de Assembler-service:
+Maak dynamisch een DDX-document en demonstreer een PDF-document met behulp van de API (webservice) voor vergaderingsservice:
 
 1. Inclusief projectbestanden.
 
@@ -209,7 +209,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met behulp van d
 1. Maak een PDF Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -222,17 +222,17 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met behulp van d
 1. Maak het DDX-document.
 
    * Een `System.Xml.XmlElement` object met behulp van de constructor.
-   * Maak het basiselement van het DDX-document door het `XmlElement` object `CreateElement` methode. Met deze methode maakt u een `Element` object dat het basiselement vertegenwoordigt. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `CreateElement` methode. Plaats een waarde voor het element DDX door zijn te roepen `SetAttribute` methode. Tot slot voeg het element aan het DX- document toe door te roepen `XmlElement` object `AppendChild` methode. Geef het DDX-object door als een argument. De volgende coderegels tonen deze toepassingslogica:
+   * Maak het basiselement van het DDX-document door het `XmlElement` object `CreateElement` methode. Deze methode maakt een `Element` object dat het basiselement vertegenwoordigt. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `CreateElement` methode. Plaats een waarde voor het element DDX door zijn te roepen `SetAttribute` methode. Tot slot voeg het element aan het DX- document toe door te roepen `XmlElement` object `AppendChild` methode. Geef het DDX-object door als een argument. De volgende coderegels tonen deze toepassingslogica:
 
-      ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
+     ` System.Xml.XmlElement root = ddx.CreateElement("DDX");  root.SetAttribute("xmlns", "https://ns.adobe.com/DDX/1.0/");  ddx.AppendChild(root);`
 
    * De DDX-documenten maken `PDFsFromBookmarks` element door het `XmlElement` object `CreateElement` methode. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `CreateElement` methode. Stel vervolgens een waarde voor het element in door het element aan te roepen `SetAttribute` methode. Voeg de `PDFsFromBookmarks` element aan het wortelelement door te roepen `DDX` element `AppendChild` methode. Geef de `PDFsFromBookmarks` elementobject als een argument. De volgende coderegels tonen deze toepassingslogica:
 
-      ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
+     ` XmlElement PDFsFromBookmarks = ddx.CreateElement("PDFsFromBookmarks");  PDFsFromBookmarks.SetAttribute("prefix", "stmt");  root.AppendChild(PDFsFromBookmarks);`
 
    * De DDX-documenten maken `PDF` element door het `XmlElement` object `CreateElement` methode. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `CreateElement` methode. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `SetAttribute` methode. Voeg de `PDF` aan de `PDFsFromBookmarks` element door het `PDFsFromBookmarks` element `AppendChild` methode. Geef de `PDF` elementobject als een argument. Deze toepassingslogica wordt in de volgende coderegels getoond:
 
-      ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
+     ` XmlElement PDF = ddx.CreateElement("PDF");  PDF.SetAttribute("source", "AssemblerResultPDF.pdf");  PDFsFromBookmarks.AppendChild(PDF);`
 
 1. Zet het DDX-document om.
 
@@ -240,7 +240,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met behulp van d
    * Vul de `MemoryStream` met het DDX-document `XmlElement` object dat het DDX-document vertegenwoordigt. De `XmlElement` object `Save` en geeft de `MemoryStream` object.
    * Maak een bytearray en vul deze met de gegevens in het dialoogvenster `MemoryStream` object. De volgende code toont deze toepassingslogica:
 
-      ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
+     ` int bufLen = Convert.ToInt32(stream.Length);  byte[] byteArray = new byte[bufLen];  stream.Position = 0;  int count = stream.Read(byteArray, 0, bufLen);`
 
    * Een `BLOB` object. Wijs de bytearray toe aan de `BLOB` object `MTOM` veld.
 
@@ -271,7 +271,7 @@ Maak dynamisch een DDX-document en demonstreer een PDF-document met behulp van d
 
    Voer de volgende handelingen uit om de nieuwe PDF-documenten te verkrijgen:
 
-   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de gedemonteerde PDF-documenten bevat.
+   * Toegang krijgen tot de `AssemblerResult` object `documents` veld, dat een `Map` -object dat de gedemonteerde PDF-documenten bevat.
    * Doorlopen `Map` om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` een `BLOB`.
    * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 

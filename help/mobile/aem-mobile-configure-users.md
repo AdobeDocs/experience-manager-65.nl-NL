@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: administering-on-demand-services-app
 exl-id: 58b7d1b9-a851-442a-9d02-212cad8abbed
-source-git-commit: 60924e7ee204e43a2ff833fbc394beca8db9c9d9
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
@@ -45,7 +45,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. In het volgende voorbeeld kunt u toevoegen aan AEM Content Authors Group:
+1. U kunt het volgende toevoegen aan AEM groep Inhoud auteurs:
 
    (Lezen) op
 
@@ -54,7 +54,7 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
    * /etc/designs
    * /etc/cloudservices/dps2015
 
-### AEM Mobile Application Administrators Group (app-admins-groep) {#aem-mobile-application-administrators-group-app-admins-group}
+### AEM Mobile Application Administrators Group (groep toepassingsbeheerders) {#aem-mobile-application-administrators-group-app-admins-group}
 
 Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen maken die bij de auteur van de app worden geleverd **EN** voorts zijn ook verantwoordelijk voor :
 
@@ -69,7 +69,7 @@ Leden van de groep app-admins kunnen toepassingsinhoud met dezelfde machtigingen
 ### Groepsconfiguratie - app-beheerders {#group-configuration-app-admins}
 
 1. Maak een groep met de naam app-admins.
-1. Voeg de volgende groepen toe aan uw nieuwe app-admins-groep:
+1. Voeg de volgende groepen toe aan uw nieuwe groep voor toepassingsbeheer:
 
    * content-authors
    * workflowgebruikers

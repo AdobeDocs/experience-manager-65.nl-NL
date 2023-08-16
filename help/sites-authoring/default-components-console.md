@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: b657f95d-7be3-4409-a31b-d47fb2bfa550
 docset: aem65
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '262'
 ht-degree: 22%
 
 ---
 
 # Onderdelenconsole{#components-console}
 
-Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd en sleutelinformatie voor elke component bekijken.
+De console van Componenten laat u door alle componenten doorbladeren die voor uw instantie worden bepaald en zeer belangrijke informatie voor elke component bekijken.
 
 U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. In de console zijn de kaart- en de lijstweergave beschikbaar. Omdat er geen boomstructuur voor componenten is, is de kolomweergave niet beschikbaar.
 
@@ -51,7 +51,7 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
 
       * Als u op de bron van het pictogram klikt, gaat u naar die component.
 
-   * De weergave van **Type bron** en **Super Type resource** (indien gedefinieerd) voor de component.
+   * De weergave **Resourcetype** en **Super Type resource** (indien gedefinieerd) voor de component.
 
       * Als u op het Super Type van Middel klikt, gaat u naar die component.
 
@@ -73,6 +73,6 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
 
 * **Documentatie**
 
-  Als de ontwikkelaar [documentatie voor de component](/help/sites-developing/developing-components.md#documenting-your-component), verschijnt het op de **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven.
+  Als de ontwikkelaar [documentatie voor de component](/help/sites-developing/developing-components.md#documenting-your-component), wordt het weergegeven op de **Documentatie** tab. Als er geen documentatie beschikbaar is, **Documentatie** wordt niet weergegeven.
 
   ![Documentatie](assets/chlimage_1-171.png)

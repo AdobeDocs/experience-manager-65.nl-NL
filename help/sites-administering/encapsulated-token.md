@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 2c263c0d-2521-49df-88ba-f304a25af8ab
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: ed2cb35593780cd627c15f493e58d3b68c55519b
+source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
 workflow-type: tm+mt
 source-wordcount: '801'
 ht-degree: 0%
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Door gebrek, gebruikt AEM de Symbolische Handler van de Authentificatie om elk verzoek voor authentiek te verklaren. Om verificatieverzoeken te kunnen uitvoeren, vereist de Token Authentication Handler echter toegang tot de opslagplaats voor elk verzoek. Dit gebeurt omdat de koekjes worden gebruikt om de authentificatiestatus te handhaven. Logischerwijze moet de status in de opslagplaats worden voortgezet om volgende aanvragen te valideren. In feite, betekent dit dat het authentificatiemechanisme stateful is.
+Door gebrek, gebruikt AEM de Symbolische Handler van de Authentificatie om elk verzoek voor authentiek te verklaren. Om verificatieverzoeken te kunnen uitvoeren, vereist de Token Authentication Handler echter toegang tot de opslagplaats voor elk verzoek. Dit gebeurt omdat de koekjes worden gebruikt om de authentificatiestatus te handhaven. Logischerwijze moet de status in de opslagplaats worden voortgezet om volgende aanvragen te valideren. In feite betekent dit dat het verificatiemechanisme stateful is.
 
 Dit is van bijzonder belang voor horizontale schaalbaarheid. In een opstelling van meerdere instanties zoals het hieronder afgebeeld publicatielandbouwbedrijf, kan lading het in evenwicht brengen niet op een optimale manier worden bereikt. Met stateful authentificatie, zal de persisted authentificatiestatus slechts op de instantie beschikbaar zijn waar de gebruiker eerst voor authentiek wordt verklaard.
 
@@ -29,7 +29,7 @@ Dit is van bijzonder belang voor horizontale schaalbaarheid. In een opstelling v
 
 Neem het volgende scenario als voorbeeld:
 
-Een gebruiker kan bij publicatieinstantie één voor authentiek worden verklaard, maar als een verder verzoek instantie twee gaat publiceren, heeft die instantie niet die persisted authentificatiestatus, omdat die staat in de bewaarplaats van publiceert werd voortgeduurd en twee zijn eigen bewaarplaats publiceert.
+Een gebruiker kan bij publicatie-instantie één worden geverifieerd, maar als een volgende aanvraag naar publicatie-instantie twee gaat, heeft die instantie niet de status persisted authentication, omdat die status in de opslagplaats van publicatie één werd aangehouden en twee een eigen opslagplaats heeft.
 
 De oplossing voor dit is kleverige verbindingen op het niveau van het taakverdelingsmechanisme te vormen. Met kleverige verbindingen zou een gebruiker altijd naar hetzelfde publicatie-exemplaar worden geleid. Als gevolg hiervan is een werkelijk optimale taakverdeling niet mogelijk.
 
@@ -39,7 +39,7 @@ Als een publicatie-instantie niet beschikbaar wordt, verliezen alle gebruikers d
 
 De oplossing voor horizontale scalability is stateless authentificatie met het gebruik van de nieuwe Encapsulated Token steun in AEM.
 
-Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze verificatiegegevens offline kunt maken en valideren, zonder toegang tot de opslagplaats. Op deze manier kan een verificatieverzoek worden uitgevoerd op alle publicatieexemplaren zonder dat er kleverige verbindingen nodig zijn. Het heeft ook het voordeel om authentificatieprestaties te verbeteren aangezien de bewaarplaats niet voor elk authentificatieverzoek te hoeven worden betreden.
+Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze verificatiegegevens offline kunt maken en valideren, zonder toegang tot de opslagplaats. Op deze manier kan een verificatieverzoek worden uitgevoerd op alle publicatieexemplaren zonder dat er kleverige verbindingen nodig zijn. Het heeft ook het voordeel om authentificatieprestaties te verbeteren omdat de bewaarplaats niet voor elk authentificatieverzoek te hoeven worden betreden.
 
 U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met MongoMK-auteurs en TarMK-publicatie-instanties hieronder:
 
@@ -50,6 +50,7 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >Houd er rekening mee dat het ingekapselde token over verificatie gaat. Het zorgt ervoor dat het cookie kan worden gevalideerd zonder toegang te hebben tot de gegevensopslagruimte. Nochtans, wordt het nog vereist dat de gebruiker op alle instanties bestaat en dat de informatie die onder die gebruiker wordt opgeslagen door elke instantie kan worden betreden.
 >
 >Als er bijvoorbeeld een nieuwe gebruiker wordt gemaakt op het nummer één van de publicatie-instantie, wordt deze vanwege de manier waarop de ingekapselde token werkt, geverifieerd bij het publiceren van nummer twee. Als de gebruiker niet bestaat op de tweede publicatie-instantie, is de aanvraag nog steeds niet geslaagd.
+>
 
 ## Het vormen van Encapsulated Token {#configuring-the-encapsulated-token}
 
@@ -60,10 +61,9 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 >
 >* Gebruikers worden al in AEM gemaakt wanneer de synchronisatie start. Dit betekent dat ingekapselde tokens niet in situaties zullen worden gesteund waar de managers **maken** gebruikers tijdens het synchronisatieproces.
 
-
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
 
-1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet langer opgeslagen in de gegevensopslagruimte, maar in het eigenlijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
+1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet langer opgeslagen in de gegevensopslagruimte, maar in het eigenlijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren, om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
 1. Het ingekapselde token moet worden ingeschakeld. Dit kan door de Console van het Web worden gedaan.
 
 ### Replicatie van de HMAC-sleutel {#replicating-the-hmac-key}
@@ -81,12 +81,12 @@ Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
-1. Kopieer de HMAC- en master bestanden.
+1. Kopieer de HMAC- en hoofdbestanden.
 1. Dan, ga naar de doelinstantie u de sleutel HMAC aan wilt dupliceren, en aan de gegevensomslag navigeren. Bijvoorbeeld:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle25/data`
 
-1. Plak de twee bestanden die u eerder hebt gekopieerd.
+1. Plak de twee eerder gekopieerde bestanden.
 1. [De Cryptobundel vernieuwen](/help/communities/deploy-communities.md#refresh-the-granite-crypto-bundle) als de doelinstantie al actief is.
 
 1. Herhaal de bovenstaande stappen voor alle gevallen waarin u de toets wilt repliceren.
@@ -97,4 +97,4 @@ Zodra de sleutel HMAC is herhaald, kunt u Encapsulated Token via de Console van 
 
 1. Wijs uw browser aan `https://serveraddress:port/system/console/configMgr`
 1. Zoek een vermelding die **Adobe Granite Token Authentication Handler** en klik erop.
-1. Tik in het volgende venster op de knop **Ondersteuning voor ingekapselde token inschakelen** doos en druk op **Opslaan**.
+1. Vink in het volgende venster de **Ondersteuning voor ingekapselde token inschakelen** doos en druk **Opslaan**.

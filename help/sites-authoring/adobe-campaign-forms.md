@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '1289'
+source-wordcount: '1288'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Het formulier wordt automatisch bijgewerkt op basis van de gebruiker. Zie [Formu
 
 Voordat u formulieren kunt maken die specifiek zijn voor Adobe Campaign, moet u de verschillende sjablonen beschikbaar stellen in de AEM toepassing.
 
-Zie de [Documentatie voor sjablonen](/help/sites-developing/templates.md#template-availability).
+Zie voor meer informatie de [Documentatie voor sjablonen](/help/sites-developing/templates.md#template-availability).
 
 ## Een formulier maken {#creating-a-form}
 
@@ -52,6 +52,7 @@ Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanti
 >[!NOTE]
 >
 >Zorg ervoor dat de **acMapping** eigenschap op de pagina **jcr:inhoud** node is ingesteld op **mapRecipient** of **profiel** bij gebruik van respectievelijk Adobe Campaign Classic of Adobe Campaign Standard
+>
 
 1. Navigeer in Sites AEM naar de plaats waar u een nieuwe pagina wilt maken.
 1. Een pagina maken en selecteren **Adobe Campaign Classic-profiel** of **Adobe Campaign Standard-profiel** en klik op **Volgende**.
@@ -64,7 +65,7 @@ Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanti
 
 1. In de **Naam** , voegt u de naam van de pagina toe. Dit moet een geldige JCR-naam zijn.
 1. In de **Titel** veld, voer een titel in en klik op **Maken**.
-1. Open de pagina en selecteer **Eigenschappen openen** en in Cloud Services de configuratie van Adobe Campaign toevoegen en het vinkje selecteren om uw wijzigingen op te slaan.
+1. Open de pagina en selecteer **Eigenschappen openen** en in Cloud Servicen de configuratie van Adobe Campaign toevoegen en het vinkje selecteren om uw veranderingen te bewaren.
 
    ![chlimage_1-44](assets/chlimage_1-44a.png)
 
@@ -80,29 +81,29 @@ Forms gewijd aan Adobe Campaign heeft specifieke componenten. Deze componenten h
 
 In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschreven. Ga voor meer informatie over een meer algemeen overzicht van het gebruik van formulieren in Adobe Experience Manager naar [Editmode-componenten](/help/sites-authoring/default-components-foundation.md).
 
-1. Selecteren **Eigenschappen openen** en in Cloud Services de configuratie van Adobe Campaign toevoegen en het vinkje selecteren om uw wijzigingen op te slaan.
+1. Selecteren **Eigenschappen openen** en in Cloud Servicen de configuratie van Adobe Campaign toevoegen en het vinkje selecteren om uw veranderingen te bewaren.
 
    ![chlimage_1-45](assets/chlimage_1-45a.png)
 
-1. Op de pagina, in **Begin formulier** klikt u op het configuratiepictogram.
+1. Op de pagina, in **Begin formulier** op het configuratiepictogram.
 
    ![chlimage_1-46](assets/chlimage_1-46a.png)
 
 1. Klik op de knop **Geavanceerd** en selecteert u het type formulier dat het is - **Abonneren, Abonnement opzeggen,** of **Profiel opslaan** en klik op **OK.** U kunt slechts één type per formulier hebben.
 
-   * **Adobe Campaign: Profiel opslaan**: Hiermee kunt u een ontvanger maken of bijwerken in Adobe Campaign (standaardwaarde).
-   * **Adobe Campaign: Abonneren op services**: Hiermee kunt u de abonnementen van een ontvanger in Adobe Campaign beheren.
+   * **Adobe Campaign: profiel opslaan**: hiermee kunt u een ontvanger maken of bijwerken in Adobe Campaign (standaardwaarde).
+   * **Adobe Campaign: abonneren op services**: Hiermee kunt u de abonnementen van een ontvanger in Adobe Campaign beheren.
    * **Adobe Campaign: Abonnement op services opzeggen**: Hiermee kunt u de abonnementen van een ontvanger in Adobe Campaign annuleren.
 
-1. U moet beschikken over een **Gecodeerde primaire sleutel** op elk formulier. Deze component bepaalt welke URL-parameter wordt gebruikt om de gecodeerde primaire sleutel van een Adobe Campaign-profiel te accepteren. Selecteer in Componenten de optie Adobe Campaign, zodat alleen de componenten zichtbaar zijn.
-1. Sleep de component **Gecodeerde primaire sleutel** naar het formulier (overal) en klik of tik op het **Configuratie** pictogram. In de **Adobe Campaign** op, geeft u een naam voor de URL-parameter op. Klik of tik het vinkje om uw veranderingen te bewaren.
+1. U moet een **Gecodeerde primaire sleutel** op elk formulier. Deze component bepaalt welke URL-parameter wordt gebruikt om de gecodeerde primaire sleutel van een Adobe Campaign-profiel te accepteren. Selecteer in Componenten de optie Adobe Campaign, zodat alleen de componenten zichtbaar zijn.
+1. Sleep de component **Gecodeerde primaire sleutel** naar het formulier (waar dan ook) en klik of tik op het **Configuratie** pictogram. In de **Adobe Campaign** op, geeft u een naam voor de URL-parameter op. Klik of tik het vinkje om uw veranderingen te bewaren.
 
    Gegenereerde koppelingen naar dit formulier moeten deze URL-parameter gebruiken en er de gecodeerde primaire sleutel van een Adobe Campaign-profiel aan toewijzen. De gecodeerde primaire sleutel moet correct (percent) gecodeerd zijn URL.
 
    ![chlimage_1-47](assets/chlimage_1-47a.png)
 
 1. Voeg zo nodig componenten aan het formulier toe, zoals een tekstveld, een datumveld, een veld Selectievakje, een veld Optie enzovoort. Zie [Adobe Campaign-formuliercomponenten](/help/sites-authoring/adobe-campaign-components.md) voor meer informatie over elke component.
-1. Klik op het configuratiepictogram om de component te openen. Bijvoorbeeld in **Tekstveld (campagne)** , wijzigt u de titel en de tekst.
+1. Klik het pictogram van de Configuratie om de component te openen. Bijvoorbeeld in **Tekstveld (campagne)** , wijzigt u de titel en de tekst.
 
    Klikken **Adobe Campaign** om het formulierveld toe te wijzen aan een Adobe Campaign-metagegevensvariabele. Wanneer u het formulier verzendt, wordt het toegewezen veld bijgewerkt in Adobe Campaign. Alleen velden met overeenkomende typen zijn beschikbaar in de variabele kiezer (bijvoorbeeld tekenreeksvariabelen voor tekstvelden).
 
@@ -112,11 +113,11 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
    >
    >U kunt velden die in de tabel met ontvangers worden weergegeven, toevoegen of verwijderen door hier de instructies op te volgen: [https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/](https://blogs.adobe.com/experiencedelivers/experience-management/aem-campaign-integration/)
 
-1. Klikken **Pagina publiceren**. De pagina wordt geactiveerd op uw site. U kunt het bekijken door naar uw AEM publicatieexemplaar te gaan. U kunt ook [Een formulier testen](#testing-a-form).
+1. Klikken **Pagina publiceren**. De pagina wordt geactiveerd op uw site. U kunt het bekijken door naar uw AEM publicatieexemplaar te gaan. U kunt [Een formulier testen](#testing-a-form).
 
    >[!CAUTION]
    >
-   >U moet de anonieme gebruiker leesmachtigingen bieden op de cloudservice om formulieren te kunnen gebruiken tijdens het publiceren. Houd er echter rekening mee dat er beveiligingsproblemen kunnen optreden als u leesmachtigingen verschaft aan de anonieme gebruiker en zorg dat u dit beperkt door bijvoorbeeld de dispatcher te configureren.
+   >U moet de anonieme gebruiker leesmachtigingen bieden op de cloudservice om formulieren te kunnen gebruiken tijdens het publiceren. Houd er echter rekening mee dat er beveiligingsproblemen kunnen optreden als u leesmachtigingen verschaft aan de anonieme gebruiker en zorg ervoor dat u dit beperkt door bijvoorbeeld de dispatcher te configureren.
 
 ## Een formulier testen {#testing-a-form}
 
@@ -124,11 +125,11 @@ Nadat u een formulier hebt gemaakt en formulierinhoud hebt bewerkt, wilt u mogel
 
 >[!NOTE]
 >
->U moet beschikken over een **Primaire sleutel in afbeelding** op elk formulier. Selecteer in Componenten de optie Adobe Campaign, zodat alleen de componenten zichtbaar zijn.
+>U moet een **Primaire sleutel in afbeelding** op elk formulier. Selecteer in Componenten de optie Adobe Campaign, zodat alleen de componenten zichtbaar zijn.
 >
 >Hoewel u in deze procedure het epknummer handmatig invoert, krijgen gebruikers in de praktijk een koppeling naar deze pagina (om uw abonnement op te zeggen, in te schrijven of uw profiel bij te werken) binnen een nieuwsbrief. De epk wordt op basis van de gebruiker automatisch bijgewerkt.
 >
->Als u die koppeling wilt maken, gebruikt u de variabele **Hoofdresource-id**(Adobe Campaign Standard) of **Gecodeerde id** (Adobe Campaign Classic) (bijvoorbeeld in een **Tekst en persoonlijke voorkeur (campagne)** ), die een koppeling vormt naar het epk in Adobe Campaign.
+>Als u die koppeling wilt maken, gebruikt u de variabele **Hoofdresource-id**(Adobe Campaign Standard) of **Gecodeerde id** (Adobe Campaign Classic) (bijvoorbeeld in **Tekst en persoonlijke voorkeur (campagne)** ), die een koppeling vormt naar het epk in Adobe Campaign.
 
 Hiervoor moet u handmatig de EPK van een Adobe Campaign-profiel ophalen en dit vervolgens toevoegen aan de URL:
 
@@ -137,7 +138,7 @@ Hiervoor moet u handmatig de EPK van een Adobe Campaign-profiel ophalen en dit v
    * In Adobe Campaign Standard - navigeer naar **Profielen en publiek** > **Profielen**, waarin de bestaande profielen worden vermeld. Zorg ervoor dat de tabel de **Hoofd Resource Identifier** veld in een kolom (dit kan worden geconfigureerd door te klikken/tikken **Lijst configureren**). Kopieer de belangrijkste resource-id van het gewenste profiel.
    * Ga in Adobe Campaign Classic naar **Profielen en doelen** >  **Ontvangers**, waarin de bestaande profielen worden vermeld. Zorg ervoor dat de tabel de **Gecodeerde id** veld in een kolom (dit kan worden geconfigureerd door met de rechtermuisknop op een item te klikken en **Lijst configureren...**). Kopieer de gecodeerde id van het gewenste profiel.
 
-1. Open AEM de formulierpagina in het publicatieexemplaar en voeg de EPK van stap 1 toe als URL-parameter: dezelfde naam gebruiken die u eerder in de EPK-component hebt gedefinieerd bij het ontwerpen van het formulier (bijvoorbeeld: `?epk=...`)
+1. Open AEM de formulierpagina op het publicatieexemplaar en voeg de EPK vanuit stap 1 toe als een URL-parameter: gebruik dezelfde naam die u eerder in de EPK-component hebt gedefinieerd bij het ontwerpen van het formulier (bijvoorbeeld: `?epk=...`)
 1. Het formulier kan nu worden gebruikt om de gegevens en abonnementen voor het gekoppelde Adobe Campaign-profiel te wijzigen. Nadat u een aantal velden hebt gewijzigd en het formulier hebt verzonden, kunt u in Adobe Campaign controleren of de desbetreffende gegevens zijn bijgewerkt.
 
 De gegevens in de Adobe Campaign-database worden bijgewerkt nadat een formulier is gevalideerd.

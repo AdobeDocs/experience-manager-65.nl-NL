@@ -1,7 +1,7 @@
 ---
 title: Het gereedschap VLT gebruiken
 seo-title: How to use the VLT Tool
-description: Het Jackrabbit FileVault-hulpprogramma (VLT) is ontwikkeld door de Apache Foundation die de inhoud van een Jackrabbit/AEM-instantie toewijst aan uw bestandssysteem
+description: Het Jackrabbit FileVault (VLT) is ontwikkeld door de Apache Foundation die de inhoud van een Jackrabbit/AEM-instantie toewijst aan uw bestandssysteem
 seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
 uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
 workflow-type: tm+mt
-source-wordcount: '2716'
+source-wordcount: '2715'
 ht-degree: 0%
 
 ---
@@ -227,7 +227,7 @@ vlt co http://localhost:4502/crx/-/jcr:root/apps/geometrixx geo
 
 Hiermee maakt u een nieuwe exportbasis `geo` met een `META-INF` en `jcr_root` en plaatst alle bestanden hieronder `/apps/geometrixx` in `geo/jcr_root`.
 
-### Een gefilterde controle uitvoeren {#performing-a-filtered-checkout}
+### Een gefilterde uitchecking uitvoeren {#performing-a-filtered-checkout}
 
 Als u een bestaand werkruimtefilter hebt en u het voor controle wilt gebruiken, kunt u of eerst creëren `META-INF/vault` en plaats het filter daar, of specificeer het op de bevellijn als volgt:
 
@@ -301,7 +301,7 @@ Hieronder volgt een lijst met VLT-opties, die beschikbaar zijn voor alle opdrach
 | `-Xjcrlog <arg>` | Uitgebreide JcrLog-opties |
 | `-Xdavex <arg>` | Uitgebreide opties voor JCR-verwijdering |
 | `--credentials <arg>` | De standaardreferenties die moeten worden gebruikt |
-| `--config <arg>` | De JcrFs-configuratie die moet worden gebruikt |
+| `--config <arg>` | De te gebruiken JcrFs-configuratie |
 | `-v (--verbose)` | uitgebreide uitvoer |
 | `-q (--quiet)` | zo weinig mogelijk afdrukken |
 | `--version` | Drukt de versieinformatie en uitgang VLT af |
@@ -317,7 +317,7 @@ In de volgende tabel worden alle beschikbare VLT-opdrachten beschreven. Zie de a
 | Opdracht | Afkorting van opdracht | Beschrijving |
 | `export` |  | Exporteert van een JCR-opslagplaats (vault file system) naar het lokale bestandssysteem zonder controlebestanden. |
 | `import` |  | Hiermee wordt een lokaal bestandssysteem geïmporteerd naar een JCR-opslagplaats (vault file system). |
-| `checkout` | `co` | Hiermee wordt een Vault-bestandssysteem uitgecheckt. Gebruik dit voor een eerste JCR-opslagplaats naar het lokale bestandssysteem. (Opmerking: U moet de repository eerst uitchecken in subversion.) |
+| `checkout` | `co` | Hiermee wordt een Vault-bestandssysteem uitgecheckt. Gebruik dit voor een eerste JCR-opslagplaats naar het lokale bestandssysteem. (Opmerking: u moet de repository eerst uitchecken in subversion.) |
 | `analyze` |  | Hiermee analyseert u pakketten. |
 | `status` | `st` | Hiermee wordt de status van bestanden en mappen met werkkopieën afgedrukt. |
 | `update` | `up` | Hiermee importeert u wijzigingen uit de opslagplaats in de werkkopie. |
@@ -453,7 +453,7 @@ analyze -l <format>|-v|-q <localPaths1> [<localPaths2> ...]
 
 Hiermee wordt de status van bestanden en mappen met werkkopieën afgedrukt.
 
-Indien `--show-update` wordt opgegeven, wordt elk bestand gecontroleerd op basis van de externe versie. De tweede letter geeft vervolgens aan welke actie door een updatebewerking wordt uitgevoerd.
+Indien `--show-update` wordt opgegeven, wordt elk bestand gecontroleerd op de externe versie. De tweede letter geeft vervolgens aan welke actie door een updatebewerking wordt uitgevoerd.
 
 #### Syntaxis {#syntax-4}
 
@@ -467,7 +467,7 @@ status -v|-q|-u|-N <file1> [<file2> ...]
 |--- |--- |
 | `-v (--verbose)` | uitgebreide uitvoer |
 | `-q (--quiet)` | zo weinig mogelijk afdrukken |
-| `-u (--show-update)` | updategegevens weergeven |
+| `-u (--show-update)` | geeft updategegevens weer |
 | `-N (--non-recursive)` | werkt op één directory |
 | `<file> [<file> ...]` | bestand of map om de status weer te geven |
 
@@ -554,7 +554,7 @@ Verwijderen **tegenstrijdig** status van het werken van kopieerbestanden of -map
 
 >[!NOTE]
 >
->Met deze opdracht worden conflicten niet semantisch opgelost of worden conflictiemarkeringen verwijderd. het verwijdert alleen de conflicterende artefactbestanden en staat toe dat PATH opnieuw wordt toegewezen.
+>Met deze opdracht worden conflicten niet semantisch opgelost of worden conflictiemarkeringen verwijderd. De opdracht verwijdert alleen de aan conflicten gerelateerde artefactbestanden en staat toe dat PATH opnieuw wordt toegewezen.
 
 #### Syntaxis {#syntax-9}
 
@@ -588,7 +588,7 @@ propget -q|-R <propname> <file1> [<file2> ...]
 | `-q (--quiet)` | zo weinig mogelijk afdrukken |
 | `-R (--recursive)` | recursief afneemt |
 | `<propname>` | de eigenschapsnaam |
-| `<file> [<file> ...]` | bestand of map om de eigenschap op te halen |
+| `<file> [<file> ...]` | bestand of map om de eigenschap op te halen uit |
 
 ### Proplist {#proplist}
 
@@ -654,7 +654,7 @@ add -v|-q|-N|--force <file1> [<file2> ...]
 | `-q (--quiet)` | zo weinig mogelijk afdrukken |
 | `-N (--non-recursive)` | werkt op één directory |
 | `--force` | de operatie moet worden uitgevoerd |
-| `<file> [<file> ...]` | lokaal bestand of lokale map dat moet worden toegevoegd |
+| `<file> [<file> ...]` | lokaal bestand dat of lokale map die moet worden toegevoegd |
 
 ### Verwijderen {#delete}
 
@@ -722,13 +722,13 @@ rcp -q|-r|-b <size>|-t <seconds>|-u|-n|-e <arg1> [<arg2> ...] <src> <dst>
 
 |  |  |
 |--- |--- |
-| `-q (--quiet)` | Drukt zo weinig mogelijk af. |
+| `-q (--quiet)` | Hiermee wordt zo weinig mogelijk afgedrukt. |
 | `-r (--recursive)` | Vervalt recursief. |
 | `-b (--batchSize) <size>` | Aantal knooppunten dat moet worden verwerkt vóór een tussentijdse opslag. |
 | `-t (--throttle) <seconds>` | Aantal seconden dat moet worden gewacht na een tussentijdse opslag. |
 | `-u (--update)` | Bestaande knooppunten overschrijven/verwijderen. |
 | `-n (--newer)` | De eigenschappen lastModified voor update respecteren. |
-| `-e (--exclude) <arg> [<arg> ...]` | Regexp van uitgesloten bronpaden. |
+| `-e (--exclude) <arg> [<arg> ...]` | Samenstelling van uitgesloten bronpaden. |
 | `<src>` | Het opslagplaats adres van de bronboom. |
 | `<dst>` | Het opslagplaats adres van de bestemmingsknoop. |
 
@@ -744,7 +744,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 >
 >`vlt rcp -e ".*\.txt" -r`
 
-### Synchroniseren {#sync}
+### Sync {#sync}
 
 Hiermee kunt u de vault sync-service besturen. Zonder argumenten probeert deze opdracht de huidige werkmap onder synchronisatiecontrole te zetten. Indien uitgevoerd binnen een vlt controle, gebruikt het de respectieve filter en gastheer om de synchronisatie te vormen. Als deze buiten een vlt-uitchecking wordt uitgevoerd, wordt de huidige map alleen geregistreerd voor synchronisatie als de map leeg is.
 
@@ -762,16 +762,16 @@ sync -v|--force|-u <uri> <command> <localPath>
 | `--force` | bepaalde opdrachten uitvoeren. |
 | `-u (--uri) <uri>` | geeft de URI van de synchronisatiehost aan. |
 | `<command>` | uit te voeren synchronisatieopdracht. |
-| `<localPath>` | lokale map die moet worden gesynchroniseerd. |
+| `<localPath>` | lokale map voor synchronisatie. |
 
 ### Statuscodes {#status-codes}
 
 De statuscodes die door VLT worden gebruikt zijn:
 
-* &#39; Geen wijzigingen
+* &#39; &#39; geen wijzigingen
 * &#39;A&#39; toegevoegd
 * C-conflict
-* &#39;D&#39; Verwijderd
+* &quot;D&quot; geschrapt
 * &#39;I&#39; genegeerd
 * &#39;M&#39; gewijzigd
 * &quot;R&quot; vervangen
@@ -869,14 +869,14 @@ In elke synchronisatiemap worden configuratie en status in drie bestanden opgesl
 * `.vlt-sync.log`: logbestand dat informatie bevat over de bewerkingen die tijdens het synchroniseren zijn uitgevoerd.
 * `.vlt-sync-filter.xml`: filters die definiëren welke delen van de opslagplaats worden gesynchroniseerd. De indeling van dit bestand wordt beschreven door de [Een gefilterde uitchecking uitvoeren](#performing-a-filtered-checkout) sectie.
 
-De `.vlt-sync-config.properties` kunt u de volgende eigenschappen configureren:
+De `.vlt-sync-config.properties` Met dit bestand kunt u de volgende eigenschappen configureren:
 
 **uitgeschakeld** Hiermee schakelt u de synchronisatie in of uit. Deze parameter is standaard ingesteld op false om synchronisatie toe te staan.
 
-**sync-once** Als de volgende scan niet leeg is, wordt de map in de opgegeven richting gesynchroniseerd, wordt de parameter gewist. Twee waarden worden ondersteund:
+**sync-once** Als de volgende scan niet leeg is, wordt de map in de opgegeven richting gesynchroniseerd, wordt de parameter gewist. Er worden twee waarden ondersteund:
 
 * `JCR2FS`: exporteert alle inhoud in de JCR-opslagplaats en schrijft naar de lokale schijf.
-* `FS2JCR`: Hiermee importeert u alle inhoud van de schijf naar de JCR-opslagplaats.
+* `FS2JCR`: importeert alle inhoud van de schijf naar de JCR-opslagplaats.
 
 **sync-log** Definieert de bestandsnaam van het logbestand. De standaardwaarde is .vlt-sync.log
 

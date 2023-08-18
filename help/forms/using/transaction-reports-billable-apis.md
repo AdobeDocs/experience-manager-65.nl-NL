@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 929a298d-7f22-487f-bf7d-8ab2556d0d81
 docset: aem65
 exl-id: 1bc99f3b-3f28-4e74-b259-6ebddc11ffc5
-source-git-commit: 4eb4a15961e7b6e83d9e8a38f34ad92d829cb9b6
+source-git-commit: d636d987f5d62c9169bc4015d7ac50090e362faa
 workflow-type: tm+mt
-source-wordcount: '2084'
+source-wordcount: '2089'
 ht-degree: 0%
 
 ---
@@ -325,11 +325,10 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
  </tbody>
 </table>
 
-Invoke wordt beschouwd als een transactie die afhankelijk is van de bewerking die wordt uitgevoerd. Het wordt beschouwd als een transactie wanneer u een of meer van de volgende bewerkingen uitvoert:
-1. Niet-PDF-indeling naar PDF-indeling converteren. Bijvoorbeeld XDP-indeling naar PDF-indeling converteren (voor interactieve en niet-interactieve communicatie), Word naar PDF conversie.
-1. PDF-indeling naar PDF/A-indeling converteren.
-1. PDF-indeling naar niet-PDF-conversie. Bijvoorbeeld: PDF-indeling naar afbeeldingsindeling converteren, PDF-indeling naar tekstopmaak converteren.
-
+Het gebruik van de API voor aanroepen wordt als een transactie geteld wanneer u een of meer van de volgende bewerkingen uitvoert:
+1. Conversie van niet-PDF-indelingen naar PDF-indelingen. Bijvoorbeeld de conversie van XDP-indeling naar PDF-indeling, catering naar zowel interactieve als niet-interactieve communicatievormen en de conversie van Word naar PDF.
+1. Omzetten van PDF-indeling naar PDF/A-indeling.
+1. Conversie van PDF-indeling naar niet-PDF-indeling. Voorbeelden hiervan zijn de transformatie van de indeling PDF naar Afbeelding of de conversie van de indeling PDF naar tekst.
 
 >[!NOTE]
 >

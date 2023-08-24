@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 6ef87e4f86181f83b7c340e4954e9e85e6bb9ab1
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
 source-wordcount: '11097'
 ht-degree: 1%
@@ -449,7 +449,7 @@ Tegelijkertijd maakt u een Adobe Support-case zodat DASH kan worden ingeschakeld
 
 >[!IMPORTANT]
 >
->Alle video&#39;s die u hebt geüpload *voorafgaand* om ondersteuning voor multi-subtitle en multi-audiotracks op uw Dynamic Media-account in te schakelen, [moet worden opgewerkt](/help/assets/processing-profiles.md##reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+>Alle video&#39;s die u hebt geüpload *voorafgaand* om ondersteuning voor multi-subtitle en multi-audiotracks op uw Dynamic Media-account in te schakelen, [moet worden opgewerkt](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
 **U kunt als volgt ondersteuning voor DASH-, multi-subtitle- en multi-audiotracks inschakelen op uw Dynamic Media-account:**
 
@@ -625,7 +625,7 @@ Toegevoegde ondertitels en bijschriften worden ondersteund met de indelingen Web
 
 >[!IMPORTANT]
 >
->Alle video&#39;s die u hebt geüpload *voorafgaand* om ondersteuning voor multi-subtitle en multi-audiotracks op uw Dynamic Media-account in te schakelen, [moet worden opgewerkt](/help/assets/processing-profiles.md##reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
+>Alle video&#39;s die u hebt geüpload *voorafgaand* om ondersteuning voor multi-subtitle en multi-audiotracks op uw Dynamic Media-account in te schakelen, [moet worden opgewerkt](/help/assets/processing-profiles.md#reprocessing-assets). Deze videoopwerkingsstap is nodig om ervoor te zorgen dat meerdere ondertitels en meerdere audiotracks voor hen beschikbaar zijn. De video-URL&#39;s blijven werken en worden na de opwerking op de gebruikelijke wijze afgespeeld.
 
 **U kunt als volgt meerdere ondertitels en audiotracks toevoegen aan uw video:**
 
@@ -693,7 +693,7 @@ In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publicere
 
 >[!CAUTION]
 >
->Wanneer u ondertitelingsbestanden of audiobestanden uploadt naar een video die al is gepubliceerd, worden deze bestanden verwijderd als u [*herverwerken*](/help/assets/processing-profiles.md##reprocessing-assets) de video. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de ondertitelingsbestanden en audiotrackbestanden opnieuw uploaden naar de video.
+>Wanneer u ondertitelingsbestanden of audiobestanden uploadt naar een video die al is gepubliceerd, worden deze bestanden verwijderd als u [*herverwerken*](/help/assets/processing-profiles.md#reprocessing-assets) de video. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de ondertitelingsbestanden en audiotrackbestanden opnieuw uploaden naar de video.
 
 #### Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie
 

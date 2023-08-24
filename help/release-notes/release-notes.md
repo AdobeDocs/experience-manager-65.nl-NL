@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 8edc6a97e2fc002d6dbbc4ce8b1828616b6c1cc6
+source-git-commit: 2209ab8498072744091f5af22887c8f13dbb3ac6
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3439'
 ht-degree: 0%
 
 ---
@@ -54,6 +54,10 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 * Om snel een project in de mening van de Lijst te vinden waar u vele projecten in uw systeem kunt hebben, verleent de Adobe nu steun voor server-zijsorteren. Projectknooppunten worden op de achtergrond gesorteerd op basis van de kolom die door de gebruiker is geselecteerd voordat ze in de gebruikersinterface worden weergegeven. (NPR-41027)
 
 * AEM 6.5.18.0 ondersteunt MongoDB 5.0 tot 6.0.
+
+**Verouderde functie**
+
+* ActiveMQ in AEM is vervangen. ActiveMQ is gebruikt voor communicatie tussen twee AEM Publish-instanties. Adobe raadt klanten aan om nu een taakverdelingsmechanisme te gebruiken.
 
 **Forms**
 

@@ -7,25 +7,25 @@ content-type: reference
 feature: Accessibility
 role: User, Admin
 exl-id: bbdb800c-b6f8-4506-b8ac-daf64edcd6c0
-source-git-commit: 01de1d5064f5ebf00acd2fe9f138d852f41f7273
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 0%
 
 ---
 
-# Toegankelijkheid in [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
+# Toegankelijkheid [!DNL Dynamic Media] {#working-with-three-d-assets-dm}
 
 [!DNL Dynamic Media] ondersteunt toetsenbordbesturing en ondersteunende hulpmiddelen, zoals JAWS en NVDA-schermlezers, in de hele gebruikersinterface.
 
 ## Ondersteuning voor toetsenbordtoegankelijkheid in [!DNL Dynamic Media]
 
-Omdat [!DNL Dynamic Media] is een insteekmodule voor [!DNL Adobe Experience Manager Assets], is het meeste toetsenbordbesturingsgedrag hetzelfde als in [!DNL Experience Manager Assets]. De `Cancel` knop in [!DNL Dynamic Media] heeft dezelfde focusmarkering als in [!DNL Experience Manager Assets]en reageert op de `Spacebar` key as in [!DNL Experience Manager Assets]. Zie [Sneltoetsen in elementen](/help/assets/accessibility.md#keyboard-shortcuts).
+Omdat [!DNL Dynamic Media] is een insteekmodule voor [!DNL Adobe Experience Manager Assets], is het meeste toetsenbordbesturingsgedrag hetzelfde als in [!DNL Experience Manager Assets]. Bijvoorbeeld de `Cancel` knop in [!DNL Dynamic Media] heeft dezelfde focusmarkering als in [!DNL Experience Manager Assets]en reageert op de `Spacebar` key as in [!DNL Experience Manager Assets]. Zie [Sneltoetsen in elementen](/help/assets/accessibility.md#keyboard-shortcuts).
 
 Toetsen die door afzonderlijke gebruikersinterface-elementen worden ondersteund in [!DNL Dynamic Media] duidelijk en gemakkelijk te ontdekken zijn. Toetsenbordbesturing in [!DNL Dynamic Media] gaat over het volgende:
 
 * Gebruiksmogelijkheden `Tab` en `Shift+Tab` toetsaanslagen om te navigeren tussen interactieve elementen op de pagina.
-Gebruiken `Tab` gaat de invoerfocus naar het volgende interface-element in de tabvolgorde; gebruiken `Shift+Tab` Hiermee wordt invoerfocus teruggezet naar het vorige gebruikersinterface-element.
+Gebruiken `Tab` gaat inputnadruk naar het volgende gebruikersinterface element in de lusjeorde vooruit; het gebruiken `Shift+Tab` Hiermee wordt invoerfocus teruggezet naar het vorige gebruikersinterface-element.
 Het focustraversal volgt de natuurlijke locatie van het interface-element op het scherm en beweegt van links naar rechts en vervolgens van boven naar beneden. Als een veld een fout bevat, kunt u bovendien op `Tab` om de focus naar de afbeelding te verplaatsen.
 * De mogelijkheid om de `Spacebar` en `Enter` toets voor het activeren van standaardelementen van de gebruikersinterface, zoals knoppen en vervolgkeuzelijsten.
 * Mogelijkheid om de toetsenbordfocus te zien op het actieve element. Het element van de gebruikersinterface dat inputnadruk heeft ontvangt een visuele nadrukaanwijzing als grens die rond het gebruikersinterface element wordt teruggegeven.
@@ -39,7 +39,7 @@ Zie [Het slimme uitsnijdstaal of het slimme staal van één afbeelding bewerken]
 
 <!-- Keyboarding is the same because Dynamic Media is using the same UI library (Coral 3 (AEM 6.5) or Coral Spectrum (in Skyline)) as entire AEM Assets.  -->
 
-<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md##adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
+<!-- In the Hotspot editor, Dynamic Media lets you use arrow keys to control the position of a hot spot. See [Carousel Banners](/help/assets/dynamic-media/carousel-banners.md#adding-hotspots-or-image-maps-to-an-image-banner) or [Interactive Images](/help/assets/dynamic-media/interactive-images.md#adding-hotspots-to-an-image-banner)  -->
 
 <!-- I think we should definitely mention this in the DM-specific area of documentation for keyboard support. -->
 
@@ -69,5 +69,4 @@ Zie [Video in Dynamic Media - Gesloten bijschriften of ondertitels toevoegen aan
 >[!MORELIKETHIS]
 >
 >* [Toegankelijkheid voor Adobe-oplossingen](https://www.adobe.com/accessibility.html)
->* [Toegankelijkheid in [!DNL Experience Manager Assets]](/help/assets/accessibility.md)
-
+>* [Toegankelijkheid [!DNL Experience Manager Assets]](/help/assets/accessibility.md)

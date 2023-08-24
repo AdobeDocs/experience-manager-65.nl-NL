@@ -2,9 +2,9 @@
 title: Inhoud vertalen
 description: Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
 workflow-type: tm+mt
-source-wordcount: '2173'
+source-wordcount: '2163'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,10 @@ Nu uw schakelaar en vertaalregels opstelling zijn, neemt dit artikel u door de v
 
 ## Doelstelling {#objective}
 
-Dit document helpt u begrijpen hoe te om AEM vertaalprojecten samen met de schakelaar en uw vertaalregels te gebruiken om inhoud te vertalen. Nadat u dit document hebt gelezen, moet u:
+Dit document helpt u begrijpen hoe te om AEM vertaalprojecten samen met de schakelaar en uw vertaalregels te gebruiken om inhoud te vertalen. Nadat u dit document hebt gelezen, moet u het volgende doen:
 
 * Begrijp wat een vertaalproject is.
-* Nieuwe vertaalprojecten kunnen maken.
+* Vertaalprojecten maken.
 * Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
 
 ## Een vertaalproject maken {#creating-translation-project}
@@ -41,7 +41,7 @@ Vertaalprojecten kunnen op twee manieren worden gemaakt:
 1. Selecteer de taalwortel van de inhoud en hebben AEM automatisch tot het vertaalproject leiden dat op de inhoudspad wordt gebaseerd.
 1. Maak een leeg project en selecteer handmatig de inhoud die u aan het vertaalproject wilt toevoegen
 
-Beide zijn geldige benaderingen die doorgaans alleen verschillen op basis van de persoon die de vertaling uitvoert:
+Beide zijn geldige benaderingen die alleen verschillen op basis van de persoon die de vertaling uitvoert:
 
 * De TPM (vertaalprojectmanager) heeft vaak de flexibiliteit nodig om de inhoud handmatig te selecteren voor het vertaalproject.
 * Als de eigenaar van de inhoud ook verantwoordelijk is voor de vertaling, is het vaak gemakkelijker AEM het project automatisch te maken op basis van het geselecteerde inhoudspad.
@@ -53,11 +53,11 @@ Beide benaderingen worden in de volgende secties verkend.
 Voor eigenaars van inhoud die ook verantwoordelijk zijn voor vertaling, is het vaak gemakkelijker om het vertaalproject automatisch AEM maken. AEM automatisch een vertaalproject maken op basis van het inhoudspad:
 
 1. Navigeren naar **Navigatie** -> **Activa** -> **Bestanden**. Onthoud dat inhoud zonder kop in AEM wordt opgeslagen als elementen die Content Fragments worden genoemd.
-1. Selecteer de taalwortel van uw project. In dit geval hebben we `/content/dam/wknd/en`.
+1. Selecteer de taalwortel van uw project. In dit geval: `/content/dam/wknd/en` is geselecteerd.
 1. Tik of klik op de railkiezer en toon de **Verwijzingen** deelvenster.
 1. Tik of klik op **Taalkopieën**.
 1. Controleer de **Taalkopieën** selectievakje.
-1. De sectie uitvouwen **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
+1. De sectie uitbreiden **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
 1. In de **Project** vervolgkeuzelijst, selecteren **Vertaalproject(en) maken**.
 1. Geef een geschikte titel op voor uw vertaalproject.
 1. Tik of klik op **Start**.
@@ -117,7 +117,7 @@ Het vertaalproject weergeven:
 Het project is verdeeld in meerdere kaarten.
 
 * **Samenvatting** - Deze kaart bevat de basiskoptekstinformatie van het project, waaronder de eigenaar, de taal en de vertaalprovider.
-* **Vertaaltaak** - Op deze kaart of op deze kaarten is (zijn) een overzicht te zien van de werkelijke vertaalbaan, met inbegrip van de status, het aantal activa, enz. Over het algemeen is er één taak per taal waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
+* **Vertaaltaak** - Deze kaart of kaarten geven een overzicht van de werkelijke vertaalbaan, met inbegrip van de status, het aantal activa, enzovoort. Over het algemeen is er één taak per taal, waarbij de ISO-2-taalcode aan de taaknaam wordt toegevoegd.
 * **Team** - Deze kaart toont de gebruikers die aan dit vertaalproject samenwerken. Deze reis gaat niet over dit onderwerp.
 * **Taken** - Aanvullende taken die samenhangen met het vertalen van de inhoud, zoals het uitvoeren van items of workflowitems. Deze reis gaat niet over dit onderwerp.
 
@@ -129,14 +129,14 @@ Wanneer het automatisch tot stand brengen van het vertaalproject, evalueert AEM 
 
 U kunt als volgt de details van de inhoud zonder kop in dit project bekijken:
 
-1. Tik of klik op de knop voor de ovaal onder aan het dialoogvenster **Vertaaltaak** kaart.
+1. Tik of klik op de ovaalknop onder aan het dialoogvenster **Vertaaltaak** kaart.
 1. De **Vertaaltaak** worden alle items in de taak weergegeven.
    ![Taakdetails voor vertaling](assets/translation-job-detail.png)
 1. Tik of klik op een regel om de details van die regel weer te geven. Houd er rekening mee dat één regel meerdere inhoudsitems kan vertegenwoordigen die moeten worden vertaald.
 1. Tik of klik op het selectiekader voor een regelitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles Inhoudsfragmenten of Elementen weer te geven.
    ![Opties voor vertaaltaken](assets/translation-job-options.png)
 
-De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door de **Staat** in de **Vertaaltaak** venster.
+De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door **Staat** in de **Vertaaltaak** venster.
 
 Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
@@ -150,7 +150,7 @@ De vertalingen van de machine keren automatisch met een staat van terug **Goedge
 
 ### Een handmatig gemaakt vertaalproject gebruiken {#using-manual-project}
 
-Als u handmatig een vertaalproject maakt, AEM de benodigde taken, maar selecteert u niet automatisch de inhoud die u wilt opnemen. Hierdoor kan de projectbeheerder van de vertaling kiezen welke inhoud moet worden vertaald.
+Als u handmatig een vertaalproject maakt, AEM de benodigde taken, maar selecteert u niet automatisch de inhoud die u wilt opnemen. Hierdoor kan de projectbeheerder van de vertaling de flexibiliteit kiezen om te kiezen welke inhoud moet worden vertaald.
 
 Inhoud toevoegen aan een vertaaltaak:
 
@@ -185,7 +185,7 @@ Inhoud toevoegen aan een vertaaltaak:
 
 U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle talen (banen) voor het project toe te voegen. Nadat u alle inhoud hebt geselecteerd, kunt u de vertaling starten.
 
-De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door de **Staat** in de **Vertaaltaak** venster.
+De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door **Staat** in de **Vertaaltaak** venster.
 
 Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
@@ -199,7 +199,7 @@ De vertalingen van de machine keren automatisch met een staat van terug **Goedge
 
 ## Vertaalde inhoud controleren {#reviewing}
 
-[Zoals eerder waargenomen,](#using-translation-project) door de computer vertaalde inhoud gaat terug naar AEM met de status **Goedgekeurd** aangezien ervan wordt uitgegaan dat er geen menselijk ingrijpen vereist is omdat er machinevertaling wordt gebruikt . Het is natuurlijk nog steeds mogelijk om de vertaalde inhoud te beoordelen.
+[Zoals eerder waargenomen,](#using-translation-project) machinaal vertaalde inhoud stroomt terug naar AEM met de status van **Goedgekeurd** aangezien ervan wordt uitgegaan dat er geen menselijk ingrijpen vereist is omdat er machinevertaling wordt gebruikt . Het is echter nog steeds mogelijk om de vertaalde inhoud te beoordelen.
 
 Ga eenvoudig naar de voltooide vertaalbaan en selecteer een lijnpunt door te tikken of checkbox te klikken. Het pictogram **Tonen in inhoudsfragment** wordt weergegeven in de werkbalk.
 
@@ -211,7 +211,7 @@ Tik of klik op dat pictogram om het vertaalde inhoudsfragment in de editorconsol
 
 U kunt het inhoudsfragment desgewenst verder wijzigen, op voorwaarde dat u de juiste machtigingen hebt, maar dat het bewerken van inhoudsfragmenten buiten het bereik van deze rit valt. Zie de [Aanvullende bronnen](#additional-resources) voor meer informatie over dit onderwerp.
 
-Het doel van het project is om alle middelen in verband met een vertaling op één plaats te verzamelen, zodat u gemakkelijk toegang hebt en een duidelijk overzicht krijgt. Zoals u echter kunt zien door de details van een vertaald item weer te geven, vloeien de vertalingen zelf terug naar de map met middelen van de vertaaltaal. In dit voorbeeld is de map
+Het doel van het project is om alle middelen in verband met een vertaling op één plaats te verzamelen, zodat u gemakkelijk toegang hebt en een duidelijk overzicht krijgt. Zoals u echter kunt zien door de details van een vertaald item weer te geven, vloeien de vertalingen zelf terug naar de map met middelen van de vertaaltaal. In dit voorbeeld is de map:
 
 ```text
 /content/dam/wknd/es
@@ -223,7 +223,7 @@ Als u via **Navigatie** -> **Activa** -> **Bestanden**, ziet u de vertaalde inho
 
 AEM vertaalkader ontvangt de vertalingen van de vertaalschakelaar en leidt dan automatisch tot de inhoudsstructuur die op de taalwortel wordt gebaseerd en gebruikend de vertalingen die door de schakelaar worden verstrekt.
 
-Het is belangrijk om te begrijpen dat deze inhoud niet wordt gepubliceerd en daarom niet beschikbaar voor uw headless diensten. We zullen meer leren over deze publicatiestructuur van auteurs en zien hoe we onze vertaalde inhoud in de volgende stap van de vertaalreis kunnen publiceren.
+Het is belangrijk om te begrijpen dat deze inhoud niet wordt gepubliceerd en daarom niet beschikbaar voor uw headless diensten. U leert over deze auteur-publicatiestructuur en ziet hoe u de vertaalde inhoud kunt publiceren in de volgende stap van de vertaalreis.
 
 ## Menselijke vertaling {#human-translation}
 
@@ -233,17 +233,17 @@ Menselijke vertaling valt buiten het bereik van deze lokalisatietraject. Zie de 
 
 ## Volgende functies {#what-is-next}
 
-Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
+Nu u dit deel van de reis zonder kop hebt voltooid, zou u het volgende moeten kunnen doen:
 
 * Begrijp wat een vertaalproject is.
-* Nieuwe vertaalprojecten kunnen maken.
+* Vertaalprojecten maken.
 * Gebruik vertaalprojecten om uw inhoud zonder kop te vertalen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Vertaalde inhoud publiceren](publish-content.md) waar u leert hoe u uw vertaalde inhoud publiceert en hoe u deze vertalingen bijwerkt wanneer de inhoud van de hoofdtaal verandert.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Vertaalde inhoud publiceren](publish-content.md) waar u leert hoe u uw vertaalde inhoud publiceert en hoe te om die vertalingen bij te werken aangezien uw inhoud van de taalwortel verandert.
 
 ## Aanvullende bronnen {#additional-resources}
 
 U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [Vertaalde inhoud publiceren,](publish-content.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
 * [Vertaalprojecten beheren](/help/sites-administering/tc-manage.md) - Leer de details van vertaalprojecten en aanvullende functies zoals workflows voor menselijke vertaling en meertalige projecten.
-* [Ontwerpomgeving en -gereedschappen](/help/sites-authoring/author-environment-tools.md##path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.
+* [Ontwerpomgeving en -gereedschappen](/help/sites-authoring/author-environment-tools.md#path-selection) - AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud, waaronder een robuuste padbrowser.

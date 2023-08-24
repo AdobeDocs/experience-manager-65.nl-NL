@@ -10,7 +10,7 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: d11914d0902075bd36cf1e8f7405b8ac90157f15
+source-git-commit: 6ef87e4f86181f83b7c340e4954e9e85e6bb9ab1
 workflow-type: tm+mt
 source-wordcount: '11097'
 ht-degree: 1%
@@ -852,7 +852,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 >[!IMPORTANT]
 >
-Dit onderwerp wordt niet meer actief gehandhaafd. Het wordt geleverd zoals-is voor verouderde gebruikers van Dynamic Media. Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](##enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
+Dit onderwerp wordt niet meer actief gehandhaafd. Het wordt geleverd zoals-is voor verouderde gebruikers van Dynamic Media. Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 

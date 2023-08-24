@@ -2,9 +2,9 @@
 title: Integratie met Adobe Target met IMS
 description: Meer informatie over het integreren van AEM met Adobe Target met IMS
 exl-id: 8ddd86d5-a5a9-4907-b07b-b6552d7afdc8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
 workflow-type: tm+mt
-source-wordcount: '1549'
+source-wordcount: '1577'
 ht-degree: 0%
 
 ---
@@ -27,14 +27,14 @@ Voor de integratie van AEM met Adobe Target via de Target Standard API is de con
 
 Voordat u met deze procedure begint:
 
-* [Adobe-ondersteuning](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) moet je account opgeven voor:
+* [Ondersteuning voor Adobe](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) moet je account opgeven voor:
 
-   * Adobe-console
+   * Adobe Console
    * Adobe Developer Console
    * Adobe Target en
    * Adobe IMS (Identity Management-systeem)
 
-* De systeembeheerder van het Systeem van uw organisatie zou de Admin Console moeten gebruiken om de vereiste ontwikkelaars in uw organisatie aan de relevante productprofielen toe te voegen.
+* Systeembeheerder van uw organisatie moet de Admin Console gebruiken om de vereiste ontwikkelaars in uw organisatie toe te voegen aan de relevante productprofielen.
 
    * Hierdoor beschikken de specifieke ontwikkelaars over machtigingen om integratie in de Adobe Developer-console mogelijk te maken.
    * Zie voor meer informatie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
@@ -42,7 +42,7 @@ Voordat u met deze procedure begint:
 
 ## Een IMS-configuratie configureren - Een openbare sleutel genereren {#configuring-an-ims-configuration-generating-a-public-key}
 
-De eerste fase van de configuratie is het creëren van een Configuratie IMS in AEM en het produceren van de Openbare Sleutel.
+De eerste fase van de configuratie is een Configuratie IMS in AEM te creëren en de Openbare Sleutel te produceren.
 
 1. In AEM opent u de **Gereedschappen** -menu.
 1. In de **Beveiliging** sectie selecteren **Adobe IMS-configuraties**.
@@ -68,6 +68,12 @@ Met de Adobe Developer-console moet u een project (integratie) maken met Adobe T
 ### Het project maken {#creating-the-project}
 
 Open de Adobe Developer-console om een project te maken met Adobe Target dat AEM gebruiken:
+
+>[!CAUTION]
+>
+>Momenteel ondersteunen we alleen de **Serviceaccount (JWT)** referentietype.
+>
+>Gebruik de **OAuth Server-to-Server** type referentie, dat in de toekomst zal worden gesteund.
 
 1. Open de Adobe Developer-console voor projecten:
 
@@ -128,7 +134,7 @@ U moet nu de vereiste rechten toewijzen aan de integratie:
 
    * [https://adminconsole.adobe.com](https://adminconsole.adobe.com/)
 
-1. Navigeren naar **Producten** (bovenste werkbalk) selecteert u vervolgens **Adobe Target - &lt;*uw huurder*>** (in het linkerdeelvenster).
+1. Navigeren naar **Producten** (bovenste werkbalk) selecteert u vervolgens **ADOBE TARGET - &lt;*uw huurder*>** (in het linkerdeelvenster).
 1. Selecteren **Productprofielen**, dan uw vereiste werkruimte uit de gepresenteerde lijst. Bijvoorbeeld de standaardwerkruimte.
 1. Selecteren **API-referenties**, dan de vereiste integratieconfiguratie.
 1. Selecteren **Editor** als de **Productrol**; in plaats van **Waarnemer**.
@@ -164,7 +170,7 @@ Als u terugkeert naar AEM kunt u de IMS-configuratie voltooien door de vereiste 
    * **Titel**: Uw tekst.
    * **Autorisatieserver**: Kopieer/plak deze vanuit de `aud` lijn van de **Payload** hieronder, bijvoorbeeld `https://ims-na1.adobelogin.com` in het onderstaande voorbeeld
    * **API-sleutel**: Kopieer deze van de [Overzicht](#details-stored-for-the-ims-integration-project) sectie
-   * **Clientgeheim**: Dit genereren in het dialoogvenster [Overzicht](#details-stored-for-the-ims-integration-project) en kopiëren
+   * **Clientgeheim**: Genereer dit in het dialoogvenster [Overzicht](#details-stored-for-the-ims-integration-project) en kopiëren
    * **Payload**: Kopieer deze van de [JWT genereren](#details-stored-for-the-ims-integration-project) sectie
 
    ![Configuratie van technische account](assets/integrate-target-io-10.png)
@@ -200,7 +206,7 @@ Om te bevestigen dat de configuratie zoals verwacht werkt:
 
 Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de standaard-API van het doel kan gebruiken:
 
-1. Open de **Gereedschappen** -menu. Dan, binnen **Cloud Services** sectie, selecteert u **Oudere Cloud Services**.
+1. Open de **Gereedschappen** -menu. Dan, binnen **Cloud Servicen** sectie, selecteert u **Oudere Cloud Servicen**.
 1. Omlaag schuiven naar **Adobe Target** en selecteert u **Nu configureren**.
 
    De **Configuratie maken** wordt geopend.
@@ -231,17 +237,17 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
 
    * **Clientcode**: Zie de [Aanbestedings-id en clientcode](#tenant-client) sectie.
 
-   * **IMS-configuratie**: Selecteer de naam van de IMS-configuratie
+   * **IMS-configuratie**: selecteer de naam van de IMS-configuratie
 
    * **API-type**: REST
 
-   * **A4T Analytics Cloud-configuratie**: Selecteer de de wolkenconfiguratie van de Analyse die voor de doelstellingen en metriek van de doelactiviteit wordt gebruikt. Dit is nodig als u Adobe Analytics als rapportagebron gebruikt wanneer u inhoud als doel instelt. Als u de cloudconfiguratie niet ziet, raadpleegt u de opmerking in [A4T Analytics Cloud-configuratie configureren](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
+   * **A4T Analytics Cloud-configuratie**: Selecteer de cloudconfiguratie Analytics die wordt gebruikt voor doelen en maateenheden voor doelactiviteit. Dit is nodig als u Adobe Analytics als rapportagebron gebruikt wanneer u inhoud als doel instelt. Als u de cloudconfiguratie niet ziet, raadpleegt u de opmerking in [A4T Analytics Cloud-configuratie configureren](/help/sites-administering/target-configuring.md#configuring-a-t-analytics-cloud-configuration).
 
-   * **Nauwkeurige doelgerichtheid gebruiken**: Dit selectievakje is standaard ingeschakeld. Als deze optie is geselecteerd, wacht de configuratie van de cloudservice tot de context is geladen voordat inhoud wordt geladen. Zie het volgende.
+   * **Nauwkeurige doelgerichtheid gebruiken**: Standaard is dit selectievakje ingeschakeld. Als deze optie is geselecteerd, wacht de configuratie van de cloudservice tot de context is geladen voordat inhoud wordt geladen. Zie het volgende.
 
    * **Segmenten synchroniseren vanuit Adobe Target**: Selecteer deze optie om segmenten te downloaden die in Doel zijn gedefinieerd om deze in AEM te gebruiken. U moet deze optie selecteren wanneer het bezit van het Type API REST is, omdat de gealigneerde segmenten niet worden gesteund en u altijd segmenten van Doel moet gebruiken. (De AEM term &#39;segment&#39; komt overeen met de doelterm &#39;publiek&#39;.)
 
-   * **Clientbibliotheek**: Selecteer of u de AT.js cliëntbibliotheek, of mbox.js (afgekeurd) wilt.
+   * **Clientbibliotheek**: Selecteer of u de AT.js-clientbibliotheek of mbox.js (afgekeurd) wilt.
 
    * **Tag Management System gebruiken om clientbibliotheek te leveren**: Gebruik DTM (afgekeurd), Adobe Launch of een ander systeem voor tagbeheer.
 
@@ -251,13 +257,13 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
    >
    >[Configuratie van een Cloud Service om de Klassieke API van het Doel te gebruiken](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target) is vervangen (gebruikt het tabblad Adobe Recommendations-instellingen).
 
-1. Klikken **Verbinden met doel** om de verbinding met Adobe Target te initialiseren.
+1. Klikken **Verbinden met doel** de verbinding met Adobe Target initialiseren.
 
    Als de verbinding tot stand is gebracht, wordt het bericht **Verbinding gelukt** wordt weergegeven.
 
 1. Selecteren **OK** op het bericht, gevolgd door **OK** in het dialoogvenster om de configuratie te bevestigen.
 
-1. U kunt nu doorgaan naar [Een doelframework toevoegen](/help/sites-administering/target-configuring.md#adding-a-target-framework) om parameters te vormen ContextHub of ClientContext die naar Doel zullen worden verzonden. Dit is mogelijk niet vereist voor het exporteren AEM Experience Fragments naar Target.
+1. U kunt nu doorgaan naar [Een doelframework toevoegen](/help/sites-administering/target-configuring.md#adding-a-target-framework) om parameters te vormen ContextHub of van de ClientContext die naar Doel zullen worden verzonden. Dit is mogelijk niet vereist voor het exporteren AEM Experience Fragments naar Target.
 
 ### Aanbestedings-id en clientcode {#tenant-client}
 

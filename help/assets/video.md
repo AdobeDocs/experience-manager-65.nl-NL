@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: ee1a0866aafd56fa53f5d3b936beab8f500d335c
+source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
 workflow-type: tm+mt
-source-wordcount: '11191'
+source-wordcount: '11141'
 ht-degree: 1%
 
 ---
@@ -702,11 +702,7 @@ In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publicere
 
 #### Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie
 
-Dynamic Media ondersteunt het toevoegen van één bijschrift met video via een URL-modifier (zie [bijschrift](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html?lang=en)).
-
-<!-- IS THE CORRECT LINK THE ONE ABOVE OR IS IT THE LINK BELOW???? -->
-
-Zie [Statische (niet-grafische) inhoud serveren](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in de *Help bij Dynamic Media Image Serving and Rendering API* voor meer informatie over het gebruik van de functie JSON in een URL.
+Dynamic Media ondersteunt het toevoegen van één bijschrift met video via een URL-modifier. Zie [Bijschriften toevoegen aan video](#adding-captions-to-video).
 
 Meerdere bijschriftwijzigingen hebben voorrang op een bijschrift dat is toegevoegd via een URL-modifier voor gepubliceerde video&#39;s.
 
@@ -731,7 +727,7 @@ U kunt de levenscyclusstatus van elke ondertitel of audiotrackbestand dat naar u
 | Status van ondertitel of audiotrack | Beschrijving |
 | --- | --- |
 | Verwerking | Wanneer een nieuwe ondertitel of audiospoordossier wordt toegevoegd en opgeslagen, gaat het in een &quot;Verwerkingsstaat&quot;. Dynamic Media verwerkt het bestand door het streamingmanifest aan de primaire video te koppelen. |
-| Verwerkt | Nadat de verwerking is voltooid, wordt de ondertitel of het audiotrackbestand weergegeven in de status &quot;Verwerkt&quot;. U kunt een voorvertoning weergeven van ondertitels en audiotrackbestanden die als &quot;Verwerkt&quot; worden weergegeven *voor* u publiceert de video live. |
+| Verwerkt | Nadat de verwerking is voltooid, wordt de ondertitel of het audiotrackbestand, of de oorspronkelijke audiotrack die is gekoppeld aan de primaire video, weergegeven in de status &quot;Verwerkt&quot;. U kunt een voorvertoning weergeven van ondertitels en audiotrackbestanden die als &quot;Verwerkt&quot; worden weergegeven *voor* u publiceert de video live. |
 | Gepubliceerd | De status &quot;Gepubliceerd&quot; vertegenwoordigt een vergelijkbare status als &quot;Gepubliceerd&quot; voor een primaire video. Elementen worden gepubliceerd wanneer de primaire video wordt gepubliceerd en zijn beschikbaar via de openbare URL van Dynamic Media. |
 | Mislukt | De status &quot;Mislukt&quot; betekent dat de verwerking van een ondertitel of audiotrackbestand niet is voltooid. Verwijder de ondertitel of het audiotrackbestand en upload het opnieuw. |
 | Ongepubliceerd | Wanneer een gepubliceerde primaire video niet expliciet wordt gepubliceerd, worden de bestanden in de subtitel of audiotrack die u aan de video hebt toegevoegd, ook niet gepubliceerd. |
@@ -857,7 +853,7 @@ De oorspronkelijke audiotrack die uit een primair bestand is gehaald, kan niet w
 
 >[!IMPORTANT]
 >
-Dit onderwerp wordt niet meer actief gehandhaafd. Het wordt geleverd zoals-is voor verouderde gebruikers van Dynamic Media. Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
+Adobe beveelt aan [multi-subtitle en multi-audiospoorcapaciteit toelaten](#enable-dash) op je Dynamic Media-account. Zo kunt u profiteren van de nieuwste Dynamic Media-backendarchitectuur en een vereenvoudigde workflow voor het toevoegen van bijschriften, ondertitels en audiotracks aan uw video&#39;s.
 
 U kunt het bereik van uw video&#39;s uitbreiden naar wereldwijde markten door ondertiteling toe te voegen aan enkele video&#39;s of aan Adaptive Video Sets. Door ondertiteling toe te voegen, vermijdt u de behoefte om de audio te duwen, of de behoefte om inheemse sprekers te gebruiken om de audio voor elke verschillende taal opnieuw op te nemen. De video wordt afgespeeld in de taal waarin deze is opgenomen. Er verschijnen ondertitels in vreemde talen, zodat mensen in verschillende talen het audiogedeelte nog steeds kunnen begrijpen.
 

@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
 workflow-type: tm+mt
-source-wordcount: '7466'
+source-wordcount: '7565'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ U gebruikt workflowmodellen om een bedrijfslogica om te zetten in een geautomati
 
 ## Stappen Forms Workflow {#forms-workflow-steps}
 
-Forms-workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel adaptieve formulieren maken op basis van een Forms-gerichte workflow op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Forms Workflow gebruiken om documentservices te starten, te integreren met de Adobe Sign-handtekeningworkflow en andere AEM Forms-bewerkingen uit te voeren. U hebt [AEM Forms-invoegtoepassing](https://www.adobe.com/go/learn_aemforms_documentation_63) om deze stappen in een werkstroom te gebruiken.
+Forms Workflows voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel adaptieve formulieren maken op basis van een Forms-gerichte workflow op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne en interne bedrijfsprocessen binnen de firewall. U kunt ook de stappen van de Forms Workflow gebruiken om documentservices te starten, te integreren met de Adobe Sign-handtekeningworkflow en andere AEM Forms-bewerkingen uit te voeren. U hebt [AEM Forms-invoegtoepassing](https://www.adobe.com/go/learn_aemforms_documentation_63) om deze stappen in een werkstroom te gebruiken.
 
 Forms-centric workflowstappen voeren AEM Forms-specifieke bewerkingen uit in een AEM workflow. Met deze stappen kunt u snel een op Adaptive Forms gebaseerde Forms-gerichte workflow bouwen op OSGi. Deze workflows kunnen worden gebruikt voor het ontwikkelen van basis revisie- en goedkeurings-workflows, interne processen en bedrijfsprocessen binnen de firewall.
 
 >[!NOTE]
 >
->Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle Forms-workflowstappen alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
+>Als het workflowmodel is gemarkeerd voor externe opslag, kunt u voor alle stappen in de Forms Workflow alleen de optie voor het opslaan of ophalen van gegevensbestanden en bijlagen selecteren.
 
 ## Taakstap toewijzen {#assign-task-step}
 
@@ -58,7 +58,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 >[!NOTE]
 >
->U moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot Interactieve Communicatie Agent UI in AEM inbox toegang te hebben.
+>U moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot Interactieve Communicatie Agent UI in AEM Inbox toegang te hebben.
 
 * **Aangepast formulier of interactief communicatiepad**: Geef het pad op van het adaptieve formulier of de interactieve communicatie. U kunt het aangepaste formulier of de interactieve communicatie gebruiken die naar de workflow wordt verzonden, beschikbaar via een absoluut pad, of het aangepaste formulier ophalen via een pad dat is opgeslagen in een variabele van het type tekenreeksgegevens.
 * **PDF selecteren met:** Geef het pad op van een niet-interactief PDF-document. Het veld is beschikbaar wanneer u een niet-interactief PDF-document kiest in het veld Type. U kunt de invoer-PDF selecteren met behulp van het pad dat relatief is ten opzichte van de payload, opgeslagen op een absoluut pad of met behulp van een variabele van het gegevenstype Document. Bijvoorbeeld: [Payload_Directory]/Workflow/PDF/credit-card.pdf. Het pad bestaat niet in crx-repository. Een beheerder maakt het pad voordat het wordt gebruikt. U hebt een optie Document of Record ingeschakeld of op een formuliersjabloon gebaseerde adaptieve formulieren nodig om de optie PDF Path te kunnen gebruiken.
@@ -268,7 +268,7 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
 * **Invoerdocument JSON selecteren met**: Het JSON-bestand met waarden voor alle serviceargumenten. Het pad van het JSON-bestand kan **ten opzichte van de lading** of een **absoluut pad.** U kunt het invoer-JSON-document ook ophalen met behulp van een variabele van het gegevenstype JSON of Form Data Model.
 
 * **JSON-puntnotatie:** Laat het veld leeg als u alle objecten van het opgegeven JSON-bestand als invoer voor serviceargumenten wilt gebruiken. Als u een specifiek JSON-object uit het opgegeven JSON-bestand wilt lezen als invoer voor serviceargumenten, geeft u puntnotatie voor het JSON-object op. Als u bijvoorbeeld een JSON-object hebt dat vergelijkbaar is met de JSON-object dat aan het begin van de sectie wordt vermeld, geeft u Insurance.customerDetails op om alle details van een klant als invoer voor de service op te geven.
-* **Uitvoer van service > Uitvoerwaarden toewijzen en schrijven naar variabele of metagegevens:** Selecteer de optie om de uitvoerwaarden op te slaan als eigenschappen van het metagegevensknooppunt voor workflowinstanties in de crx-repository. Specificeer de naam van het meta-gegevensbezit en selecteer het overeenkomstige attribuut van de de dienstoutput dat met meta-gegevensbezit moet worden in kaart gebracht, bijvoorbeeld, phone_number dat door de outputdienst met het phone_number bezit van werkschemameta-gegevens is teruggekeerd. Op dezelfde manier kunt u de uitvoer opslaan in een variabele van het gegevenstype Long. Wanneer u een eigenschap selecteert voor de component **[!UICONTROL Service output attribute to be mapped]** optie, alleen variabelen die gegevens van de geselecteerde eigenschap kunnen opslaan, worden gevuld voor de **[!UICONTROL Save the output to]** -optie.
+* **Uitvoer van service > Uitvoerwaarden toewijzen en schrijven naar variabele of metagegevens:** Selecteer de optie om de uitvoerwaarden op te slaan als eigenschappen van het metagegevensknooppunt voor workflowinstanties in de crx-repository. Specificeer de naam van het meta-gegevensbezit en selecteer het overeenkomstige attribuut van de de dienstoutput dat met meta-gegevensbezit moet worden in kaart gebracht, bijvoorbeeld, phone_number dat door de outputdienst met het phone_number bezit van werkschemameta-gegevens is teruggekeerd. Op dezelfde manier kunt u de uitvoer opslaan in een variabele van het gegevenstype Long. Wanneer u een eigenschap voor de **[!UICONTROL Service output attribute to be mapped]** optie, alleen variabelen die gegevens van de geselecteerde eigenschap kunnen opslaan, worden gevuld voor de **[!UICONTROL Save the output to]** -optie.
 
 * **Uitvoer van service > Uitvoer opslaan naar variabele of een JSON-bestand:** Selecteer de optie om de uitvoerwaarden in een JSON-bestand op te slaan met een absoluut pad, een pad dat relatief is ten opzichte van de laadtijd of een variabele.
 * **JSON-uitvoerdocument opslaan met de onderstaande opties:** Sla het JSON-uitvoerbestand op. Het pad van het JSON-uitvoerbestand kan relatief zijn ten opzichte van de payload of een absoluut pad. U kunt het JSON-uitvoerbestand ook opslaan met een variabele van het gegevenstype JSON of Form Data Model.
@@ -277,7 +277,7 @@ Voor de stap Service van het formuliergegevensmodel aanroepen worden de ondersta
 
 Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te ondertekenen. De stap Document ondertekenen heeft de volgende eigenschappen:
 
-* **Naam overeenkomst:** Geef de titel van de overeenkomst op. De naam van de overeenkomst wordt onderdeel van het onderwerp en de hoofdtekst van de e-mail die naar de ondertekenaars wordt verzonden. U kunt de naam opslaan in een variabele van het gegevenstype String of **Letterlijk** om de naam handmatig toe te voegen.
+* **Naam overeenkomst:** Geef de titel van de overeenkomst op. De naam van de overeenkomst wordt onderdeel van het onderwerp en de hoofdtekst van de e-mail die naar de ontvangers wordt verzonden. U kunt de naam opslaan in een variabele van het gegevenstype String of **Letterlijk** om de naam handmatig toe te voegen.
 
 * **Landinstelling:** Geef de taal op voor de opties voor e-mail en verificatie. U kunt de landinstelling opslaan in een variabele van het gegevenstype String of **Letterlijk** om de landinstelling te kiezen in de lijst met beschikbare opties. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
 
@@ -292,21 +292,33 @@ Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te o
   Als u het pad van een map opgeeft, bijvoorbeeld bijlagen, worden alle bestanden die rechtstreeks in de map beschikbaar zijn, als bijlage bij Document ondertekenen gevoegd. Als er bestanden beschikbaar zijn in de mappen die rechtstreeks beschikbaar zijn in het opgegeven pad naar de bijlage, worden de bestanden als bijlagen opgenomen in Document ondertekenen. Als er mappen in direct beschikbare mappen staan, worden deze overgeslagen.
 
 * **Dagen tot deadline:** Een document is gemarkeerd als opeisbaar (verstreken deadline) nadat de taak gedurende het opgegeven aantal dagen niet is geactiveerd in het dialoogvenster **Dagen tot deadline** veld. Het aantal dagen wordt geteld nadat het document is toegewezen aan een gebruiker voor ondertekening.
-* **E-mailfrequentie herinnering:** U kunt een herinnering per dag of wekelijks e-mail verzenden. De week wordt geteld vanaf de dag waarop de documentatie aan een gebruiker is toegewezen voor ondertekening.
-* **Handtekeningproces:** U kunt ervoor kiezen om een document in een opeenvolgende of parallelle volgorde te ondertekenen. Eén ondertekenaar ontvangt het document op volgorde voor ondertekening. Nadat de eerste ondertekenaar het ondertekenen van het document heeft voltooid, wordt het document verzonden naar de tweede ondertekenaar, enzovoort. Parallel hieraan kunnen meerdere ondertekenaars een document tegelijk ondertekenen.
+* **E-mailfrequentie herinnering:** U kunt een herinnering per dag of wekelijks e-mail verzenden. De week wordt geteld vanaf de dag waarop het document aan een gebruiker is toegewezen voor ondertekening.
+* **Handtekeningproces:** U kunt ervoor kiezen om een document in een opeenvolgende of parallelle volgorde te ondertekenen. Eén ontvanger ontvangt het document in opeenvolgende volgorde voor ondertekening. Nadat de eerste ontvanger het ondertekenen van het document heeft voltooid, wordt het document verzonden naar de tweede ontvanger, enzovoort. Parallel hieraan kunnen meerdere ontvangers een document tegelijk ondertekenen.
 * **URL omleiden:** Geef een omleidings-URL op. Nadat het document is ondertekend, kunt u de ontvanger omleiden naar een URL. Gewoonlijk bevat deze URL een bedankbericht of verdere instructies.
 * **Werkstroomwerkgebied:** Een werkstroom kan uit meerdere fasen bestaan. Deze stadia worden getoond in AEM Inbox. U kunt deze fasen definiëren in de eigenschappen van het model (Sidekick > Pagina > Pagina-eigenschappen > Staven).
-* **Ondertekenaars selecteren:** Geef de methode op waarmee u ondertekenaars voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ondertekenaar handmatig toevoegen.
-* **Script of service om ondertekenaars te selecteren:** De optie is alleen beschikbaar als de optie Dynamisch is geselecteerd in het veld Ondertekenaars selecteren. U kunt een ECMAScript of een dienst specificeren om ondertekenaars en verificatieopties voor een document te kiezen.
-* **Details ondertekenaar:** De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ondertekenaars selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u controleren of de bijbehorende verificatieoptie is ingeschakeld voor de geconfigureerde Adobe Sign-account. U kunt een variabele van het gegevenstype String gebruiken om waarden te definiëren voor **[!UICONTROL Email]**, **[!UICONTROL Country Code]**, en **[!UICONTROL Phone Number]** velden. De **[!UICONTROL Country Code]** en **[!UICONTROL Phone Number]** velden worden alleen weergegeven als u **[!UICONTROL Phone Verification]** van de **[!UICONTROL 2-step verification]** vervolgkeuzelijst.
+* **Ontvangers selecteren:** Geef de methode op waarmee u de ontvanger voor het document wilt kiezen. U kunt de workflow dynamisch toewijzen aan een gebruiker of groep of gegevens van een ontvanger handmatig toevoegen. Wanneer u Handmatig selecteert in het vervolgkeuzemenu, voegt u gegevens over ontvangers toe, zoals E-mail, Rol en Verificatie.
+
+  >[!NOTE]
+  >
+  >* In de sectie Rol kunt u de rol van ontvanger opgeven als ondertekenaar, fiatteur, accepteerder, gecertificeerde ontvanger, invuller van formulier en gedelegeerde.
+  >* Als u Delegator in de optie van de Rol selecteert, kan de Delegator de ondertekeningstaak aan andere ontvangers toewijzen.
+  >* Als u een authentificatiemethode voor hebt gevormd [!DNL Adobe Sign], gebaseerd op uw configuratie, selecteert u een verificatiemethode zoals verificatie via telefoon, verificatie op basis van sociale identiteit, verificatie op basis van kennis, verificatie op basis van identiteit van de overheid.
+* **Script of service om ontvangers te selecteren:** De optie is alleen beschikbaar als u in het veld Ontvangers selecteren de optie Dynamisch selecteert. U kunt een ECMAScript of een dienst specificeren om ontvangers en verificatieopties voor een document te kiezen.
+* **Gegevens van ontvanger:** De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ontvangers selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u controleren of de bijbehorende verificatieoptie is ingeschakeld voor de geconfigureerde Adobe Sign-account. U kunt een variabele van het gegevenstype String gebruiken om waarden te definiëren voor **[!UICONTROL Email]**, **[!UICONTROL Country Code]**, en **[!UICONTROL Phone Number]** velden. De **[!UICONTROL Country Code]** en **[!UICONTROL Phone Number]** velden worden alleen weergegeven als u **[!UICONTROL Phone Verification]** van de **[!UICONTROL 2-step verification]** vervolgkeuzelijst.
 * **Statusvariabele:** In een Adobe Sign-document wordt de ondertekeningsstatus van het document opgeslagen in een variabele van het gegevenstype String. Geef de naam van de statusvariabele op (adobeSignStatus). Een statusvariabele van een instantie is beschikbaar in CRXDE op /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData bevat status van een variabele.
-* **Ondertekend document opslaan met onderstaande opties:** Geef de locatie op waar de ondertekende documenten moeten worden bewaard. U kunt ervoor kiezen het ladingsdossier te overschrijven, het ondertekende document bij een plaats binnen de ladingsfolder te plaatsen, of het ondertekende document op te slaan in een variabele van het type van Document.
+* **[!UICONTROL Signed Document]**: U kunt de status van het ondertekende document opslaan als een variabele. Als u een elektronisch audittrail voor handtekeningen wilt toevoegen voor meer beveiliging en wettigheid aan uw ondertekende document, kunt u Auditrapport opnemen. U kunt het ondertekende document opslaan met de map Variabele of Payload.
+  >[!NOTE]
+  >
+  > Het auditrapport wordt toegevoegd aan de laatste pagina van het ondertekende document.
+<!--
+* **Save signed document using below options:** Specify the location to keep signed documents. You can choose to overwrite the payload file, place the signed document at a location within the payload directory, or store the signed document in a variable of Document type.
+-->
 
 ## Stappen voor Document Services {#document-services-steps}
 
 AEM Document Services is een set services voor het maken, samenstellen en beveiligen van PDF-documenten. AEM Forms biedt een aparte AEM Workflowstap voor elke documentservice.
 
-Net als bij andere AEM Forms-workflowstappen, zoals Taak toewijzen, E-mail verzenden en Document ondertekenen, kunt u variabelen gebruiken in alle stappen van AEM Document Services. Zie voor meer informatie over het maken en beheren van variabelen [Variabelen in AEM werkstromen](../../forms/using/variable-in-aem-workflows.md).
+Net als bij andere AEM Forms Workflowstappen, zoals Taak toewijzen, E-mail verzenden en Document ondertekenen, kunt u variabelen gebruiken in alle stappen AEM Document Services. Zie voor meer informatie over het maken en beheren van variabelen [Variabelen in AEM werkstromen](../../forms/using/variable-in-aem-workflows.md).
 
 ### Tijdstempel document toepassen {#apply-document-time-stamp-step}
 
@@ -337,7 +349,7 @@ Hiermee genereert u een PDF-document op basis van de opgegeven URL-, HTML- en ZI
 
 ### Gegevensstap exporteren {#export-data-step}
 
-Hiermee exporteert u gegevens uit een PDF forms- of XDP-bestand. Hiervoor moet u het bestandspad van Invoerdocument en de indeling Gegevens exporteren invoeren. De opties voor de Indeling van de Gegevens van de Uitvoer zijn Auto, XDP en XmlData.
+Hiermee exporteert u gegevens uit een PDF forms- of XDP-bestand. Hiervoor moet u het bestandspad van Invoerdocument en de indeling Gegevens exporteren invoeren. De opties voor de Indeling van Gegevens van de Uitvoer zijn Auto, XDP, en XmlData.
 
 ### Export PDF naar opgegeven tekststap {#export-pdf-to-specified-type-step}
 
@@ -414,7 +426,7 @@ De stap Afgedrukte uitvoer genereren heeft de volgende eigenschappen:
 
    * **[!UICONTROL Custom PCL]**: Gebruik de optie om een aangepast XDC-bestand voor PCL op te geven.
    * **[!UICONTROL Custom PostScript]**: Gebruik de optie om een aangepast XDC-bestand voor PostScript op te geven.
-   * **[!UICONTROL Custom ZPL]**: Gebruik de optie om een aangepast XDC-bestand op te geven voor ZPL.
+   * **[!UICONTROL Custom ZPL]**: Gebruik de optie om een aangepast XDC-bestand voor ZPL op te geven.
    * **[!UICONTROL Generic Color PCL (5c)]**: Gebruik een algemene kleur PCL (5c).
    * **[!UICONTROL Generic PostScript Level3]**: Gebruik algemeen PostScript Level 3.
    * **[!UICONTROL ZPL 300 DPI]**: Gebruik ZPL 300 DPI. Zpl300.xdc wordt gebruikt.

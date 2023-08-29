@@ -1,31 +1,21 @@
 ---
-title: Standaardvalidatiefoutenberichten voor adaptieve formulieren
-seo-title: Standard validation error messages for adaptive forms
-description: Transformeer de foutberichten voor validatie van adaptieve formulieren naar de standaardnotatie met behulp van aangepaste fouthandlers
-seo-description: Transform the validation error messages for adaptive forms into standard format using custom error handlers
-uuid: 0d1f9835-3e28-41d3-a3b1-e36d95384328
-contentOwner: anujkapo
+title: Voeg een aangepaste fouthandler toe in Adaptive Forms op basis van Core Components for AEM Adaptive Forms
+seo-title: Error Handlers in Adaptive Forms for AEM Adaptive Forms core components
+description: AEM Forms verstrekt out-of-the-box succes en foutenmanagers voor een vorm gebruikend het REST eindpunt dat wordt gevormd om de externe dienst aan te halen. U kunt een standaardfouthandler en een aangepaste fouthandler toevoegen aan een AEM adaptief formulier.
+seo-description: Error handler function and Rule Editor in Adaptive Forms core components helps you to effectively manage and customize error handling. You can add a default error handler as well as custom error handler in an AEM Adaptive Form.
+keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanager toe, voeg een foutenmanager in vorm toe, gebruik de toepassing roept dienst van de redacteur om een douanefoutenmanager toe te voegen, regel redacteur te vormen om een manager van de douanefout toe te voegen, douanefoutafhandeling toe gebruikend regelredacteur
+contentOwner: Ruchita Srivastav
 content-type: reference
-geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
-discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 feature: Adaptive Forms
-exl-id: 54a76d5c-d19b-4026-b71c-7b9e862874bc
-source-git-commit: 5a475d73ce88035c3f5db47c03b652f3d491420c
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '2315'
+source-wordcount: '2257'
 ht-degree: 0%
 
 ---
 
-# Fouthandlers in Adaptive Forms {#error-handlers-in-adaptive-form}
 
-<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
-
-| Versie | Artikelkoppeling |
-| -------- | ---------------------------- |
-| AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/adaptive-forms-authoring/authoring-adaptive-forms-foundation-components/add-rules-and-use-expressions-in-an-adaptive-form/add-custom-error-handler-adaptive-forms.html) |
-| AEM 6,5 | Dit artikel |
-
+# Fouthandlers in Adaptive Forms (Core Components) {#error-handlers-in-adaptive-form}
 
 AEM Forms biedt offline succeshandlers en foutafhandelaars voor het verzenden van formulieren. Het biedt ook functie om functies van fouthandlers aan te passen. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant informeren dat de dienst neer is. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een externe dienst gebruikend APIs wordt aangehaald, worden de gegevens overgebracht naar de server voor bevestiging, die een antwoord op de cliënt met informatie over het succes of de foutengebeurtenis voor de voorlegging terugkeert. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren. Met een fouthandler kunt u fouten of validatieproblemen die zijn opgetreden, beheren en weergeven.
 
@@ -39,6 +29,7 @@ Als de invoerwaarden aan de validatiecriteria voldoen, worden de waarden naar de
 ## Gebruikt fouthandlers {#uses-of-error-handler}
 
 Fouthandlers worden voor verschillende doeleinden gebruikt. Enkele toepassingen van de functies van de foutenmanager zijn hieronder vermeld:
+
 * **Validatie uitvoeren**: De foutafhandeling begint met het valideren van gebruikersinvoer op basis van vooraf gedefinieerde regels of criteria. Wanneer gebruikers een adaptief formulier invullen, valideert de fouthandler de invoer om ervoor te zorgen dat deze voldoet aan de vereiste indeling, lengte of andere beperkingen.
 
 * **Feedback in real time geven**: Wanneer een fout wordt gedetecteerd, geeft de fouthandler direct feedback aan de gebruiker, zoals inline foutberichten onder de bijbehorende formuliervelden. Met deze feedback kunnen gebruikers fouten opsporen en corrigeren zonder het formulier te hoeven verzenden en op een reactie te moeten wachten.
@@ -59,7 +50,6 @@ De onderstaande code illustreert de bestaande structuur van de mislukkingsreacti
     errorCausedBy : "SERVER_SIDE_VALIDATION/SERVICE_INVOCATION_FAILURE"
     errors : [
         {
-             somExpression  : <somexpr>
              errorMessage / errorMessages : <validationMsg> / [<validationMsg>, <validationMsg>]
         }
     ]
@@ -72,7 +62,7 @@ De onderstaande code illustreert de bestaande structuur van de mislukkingsreacti
 Waarbij:
 
 * `errorCausedBy` beschrijft de reden voor mislukking.
-* `errors` vermeld de SOM-expressie van de velden waarvoor de validatiecriteria niet zijn nageleefd, samen met het foutbericht voor de validatie.
+* `errors` vermelden de gekwalificeerde veldnaam van de velden waarvoor de validatiecriteria niet zijn nageleefd, samen met het foutbericht voor de validatie.
 * `originCode` veld toegevoegd door AEM en bevat de http-statuscode geretourneerd door de externe service.
 * `originMessage` veld toegevoegd door AEM en bevat de onbewerkte foutgegevens die door de externe service worden geretourneerd.
 
@@ -86,7 +76,7 @@ Met de verbeteringen in eigenschappen en verdere updates in de versies van AEM F
         "instance": "", (optional)
         "validationErrors" : [ (required)
             {
-                "fieldName":"<SOM expression of the field whose data sent is invalid>",
+                "fieldName":"<qualified fieldname of the field whose data sent is invalid>",
                 "dataRef":<JSONPath (or XPath) of the data element which is invalid>
                 "details": ["Error Message(s) for the field"] (required)
     
@@ -115,7 +105,7 @@ Waarbij:
 * `detail (optional)` indien nodig aanvullende details over de fout geven.
 * `instance (optional)` vertegenwoordigt een instantie of een herkenningsteken verbonden aan de mislukking en helpt in het volgen van of het identificeren van het specifieke voorkomen van de mislukking.
 * `validationErrors (required)` bevat informatie over validatiefouten. Het bevat de volgende velden:
-   * `fieldname` Hiermee wordt de SOM-expressie vermeld van de velden waarvoor de validatiecriteria zijn mislukt.
+   * `fieldname` Hiermee wordt de gekwalificeerde veldnaam vermeld van de velden waarvoor de validatiecriteria zijn mislukt.
    * `dataRef` vertegenwoordigt het JSON-pad of XPath van de velden waarvoor de validatie is mislukt.
    * `details` bevat het foutbericht met het onjuiste veld.
 * `originCode (optional)` veld toegevoegd door AEM en bevat de http-statuscode geretourneerd door de externe service
@@ -136,7 +126,7 @@ Enkele opties om de foutreacties weer te geven zijn:
               "type": "VALIDATION_ERROR",
               "validationErrors": [
               {
-              "fieldName": "guide[0].guide1[0].guideRootPanel[0].textbox1686647736683[0]",
+              "fieldName": "$form.PetId",
               "dataRef": "",
               "details": [
               "Invalid ID supplied. Provided value is not correct!"
@@ -145,9 +135,6 @@ Enkele opties om de foutreacties weer te geven zijn:
           ]}
   ```
 
-  U kunt de SOM-expressie van elk veld in een adaptief formulier weergeven door op het veld te tikken en de **[!UICONTROL View SOM Expression]**.
-
-  ![Som-expressie van een adaptief formulierveld voor weergave van foutreacties in aangepaste fouthandler](/help/forms/using/assets/custom-error-handler-somexpression.png)
 
 +++
 
@@ -163,7 +150,7 @@ Enkele opties om de foutreacties weer te geven zijn:
           "validationErrors": [
           {
               "fieldName": "",
-              "dataRef": "/Pet/id",
+              "dataRef": "$.Pet.id",
               "details": [
               "Invalid ID supplied. Provided value is not correct!"
               ]
@@ -171,19 +158,15 @@ Enkele opties om de foutreacties weer te geven zijn:
       ]}
   ```
 
-  ![Gegevensverwijzing van een adaptief formulierveld voor weergave van foutreacties in aangepaste fouthandler](/help/forms/using/assets/custom-errorhandler-dataref.png)
-
-U kunt de waarde van dataRef bekijken in **[!UICONTROL Properties]** venster van een formuliercomponent.
-
 +++
 
 ## Vereisten {#prerequisites}
 
-Voordat u de aangepaste fouthandler gebruikt in een Adaptive Forms:
+Voordat u de fouthandler in een Adaptive Forms gebruikt:
 
+* [Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving](enable-adaptive-forms-core-components.md).
 * Basiskennis voor [een aangepaste functie maken](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Installeer de nieuwste versie van [Apache Maven](https://maven.apache.org/download.cgi).
-
 
 ## Fouthandler toevoegen met gebruik van de Regel-editor {#add-error-handler-using-rule-editor}
 
@@ -228,7 +211,7 @@ U kunt een aangepaste fouthandlerfunctie toevoegen om een aantal van de volgende
 * verzendt analytische gebeurtenissen naar alle analytische platforms. Bijvoorbeeld Adobe Analytics.
 * modaal dialoogvenster weergeven met foutberichten.
 
-Naast de vermelde acties, kunnen de managers van de douanefout worden gebruikt om aangepaste functies uit te voeren die aan specifieke gebruikersvereisten voldoen.
+Naast de genoemde acties, kunnen de managers van de douanefout worden gebruikt om aangepaste functies uit te voeren die aan specifieke gebruikersvereisten voldoen.
 
 De manager van de douanefout is een functie (de Bibliotheek van de Cliënt) die wordt ontworpen om aan fouten te antwoorden die door de externe dienst zijn teruggekeerd en een aangepaste reactie aan eind te leveren - gebruikers. Elke clientbibliotheek met annotatie `@errorHandler` wordt beschouwd als een aangepaste fouthandlerfunctie. Deze aantekening helpt de functie van de foutenmanager te identificeren die in `.js` bestand.
 
@@ -268,24 +251,24 @@ De gemaakte mapstructuur ziet er als volgt uit:
 Voeg de volgende code aan het dossier JavaScript toe om de reactie en kopballen te tonen, die van het de diensteindpunt van REST, in de browser console worden ontvangen.
 
    ```javascript
-       /**
-       * Custom Error handler
+       /** 
+       Custom Error handler
        * @name customErrorHandler Custom Error Handler Function
        * @errorHandler
        */
-       function customErrorHandler(response, headers)
+       function customErrorHandler(response, headers, globals)
        {
            console.log("Custom Error Handler processing start...");
            console.log("response:"+JSON.stringify(response));
            console.log("headers:"+JSON.stringify(headers));
-           guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers);
+           alert("CustomErrorHandler - Please enter valid PetId.")
+           globals.invoke('defaultErrorHandler',response, headers)
            console.log("Custom Error Handler processing end...");
        }
    ```
 
    Om de standaardfoutenmanager van uw manager van de douanefout te roepen, wordt de volgende lijn van de steekproefcode gebruikt:
-   `guidelib.dataIntegrationUtils.defaultErrorHandler(response, headers) `
-
+   `globals.invoke('defaultErrorHandler',response, headers) `
 
 1. Opslaan `function.js`.
 1. Navigeren naar `js.txt` en voeg de volgende code toe:
@@ -303,7 +286,7 @@ Nu, begrijpen hoe te om een manager van de douanefout te vormen en te gebruiken 
 
 Voordat u de aangepaste fouthandler implementeert in een adaptief formulier, moet u ervoor zorgen dat de naam van de clientbibliotheek in het dialoogvenster **[!UICONTROL Client Library Category]** wordt uitgelijnd met de naam die is opgegeven in de optie Categorieën van het dialoogvenster `.content.xml` bestand.
 
-![De naam van de clientbibliotheek toevoegen in de configuratie van de adaptieve formuliercontainer](/help/forms/using/assets/client-library-category-name.png)
+![De naam van de clientbibliotheek toevoegen in de configuratie van de adaptieve formuliercontainer](/help/forms/using/assets/client-library-category-name-core-component.png)
 
 In dit geval wordt de naam van de clientbibliotheek opgegeven zoals `customfunctionsdemo` in de `.content.xml` bestand.
 
@@ -322,87 +305,8 @@ Als u een aangepaste fouthandler wilt gebruiken met de **[!UICONTROL Rule Editor
 
 Als resultaat van deze regel worden de waarden waarvoor u invoert **Huisdier-id** controleert validatie voor **Naam huisdier** het gebruiken van externe dienst die door het eindpunt van REST wordt aangehaald. Als de validatiecriteria op basis van de gegevensbron mislukken, worden de foutberichten weergegeven op veldniveau.
 
-![Voeg een aangepaste fouthandler toe aan een formulier voor het verwerken van reacties op fouten](/help/forms/using/assets/custom-error-handler-message.png)
+![Voeg een aangepaste fouthandler toe aan een formulier voor het verwerken van reacties op fouten](/help/forms/using/assets/custom-error-handler-message-core-component.png)
 
 Open de browser console en controleer de reactie en de kopbal, die van het de diensteindpunt van REST, voor het bericht van de bevestigingsfout worden ontvangen.
 
 De aangepaste fouthandlerfunctie is verantwoordelijk voor het uitvoeren van aanvullende acties, zoals het weergeven van een modaal dialoogvenster of het verzenden van een analysegebeurtenis, op basis van de foutreactie. Een aangepaste fouthandlerfunctie biedt de flexibiliteit om foutafhandeling af te stemmen op de specifieke gebruikersvereisten.
-
-<!-- 
-
-## Configure Adaptive Form submission to add custom handlers {#configure-adaptive-form-submission}
-
-If the server validation error message does not display in the standard format, you can enable asynchronous submission and add a custom error handler on Adaptive Form submission to convert the message into a standard format.
-
-### Configure asynchronous Adaptive Form submission {#configure-asynchronous-adaptive-form-submission}
-
-Before adding custom handler, you must configure the adaptive form for asynchronous submission. Execute the following steps:
-
-1. In adaptive form authoring mode, select the Form Container object and tap ![adaptive form properties](assets/configure_icon.png) to open its properties.
-1. In the **[!UICONTROL Submission]** properties section, enable **[!UICONTROL Use asynchronous submission]**.
-1. Select **[!UICONTROL Revalidate on server]** to validate the input field values on server before submission.
-1. Select the Submit Action:
-
-    * Select **[!UICONTROL Submit using Form Data Model]** and select the appropriate data model, if you are using RESTful web service based [form data model](work-with-form-data-model.md) as the data source.
-    * Select **[!UICONTROL Submit to REST Service endpoint]** and specify the **[!UICONTROL Redirect URL/Path]**, if you are using RESTful web services as the data source.
-
-    ![adaptive form submission properties](assets/af_submission_properties.png)
-
-1. Tap ![Save](assets/save_icon.png) to save the properties.
-
-### Add custom error handler on Adaptive Form submission {#add-custom-error-handler-af-submission}
-
-AEM Forms provides out-of-the-box success and error handlers for form submissions. Handlers are client-side functions that execute based on the server response. When an Adaptive Form is submitted, the data is transmitted to the server for validation, which returns a response to the client with information about the success or error event for the submission. The information is passed as parameters to the relevant handler to execute the function.
-
-Execute the following steps to add custom error handler on Adaptive Form submission:
-
-1. Open an Adaptive Form in authoring mode, select any form object, and tap  to open the rule editor.
-1. Select **[!UICONTROL Form]** in the Form Objects tree and tap **[!UICONTROL Create]**.
-1. Select **[!UICONTROL Error in Submission]** from the Event drop-down list.
-1. Write a rule to convert custom error structure to the standard error structure and tap **[!UICONTROL Done]** to save the rule.
-
-The following is a sample code to convert a custom error structure to the standard error structure:
-
-```javascript
-var data = $event.data;
-var som_map = {
-    "id": "guide[0].guide1[0].guideRootPanel[0].Pet[0].id_1[0]",
-    "name": "guide[0].guide1[0].guideRootPanel[0].Pet[0].name_2[0]",
-    "status": "guide[0].guide1[0].guideRootPanel[0].Pet[0].status[0]"
-};
-
-var errorJson = {};
-errorJson.errors = [];
-
-if (data) {
-    if (data.originMessage) {
-        var errorData;
-        try {
-            errorData = JSON.parse(data.originMessage);
-        } catch (err) {
-            // not in json format
-        }
-
-        if (errorData) {
-            Object.keys(errorData).forEach(function(key) {
-                var som_key = som_map[key];
-                if (som_key) {
-                    var error = {};
-                    error.somExpression = som_key;
-                    error.errorMessage = errorData[key];
-                    errorJson.errors.push(error);
-                }
-            });
-        }
-        window.guideBridge.handleServerValidationError(errorJson);
-    } else {
-        window.guideBridge.handleServerValidationError(data);
-    }
-}
-```
-
-The `var som_map` lists the SOM expression of the Adaptive Form fields that you want to transform into the standard format. You can view the SOM expression of any field in an adaptive form by tapping the field and selecting **[!UICONTROL View SOM Expression]**.
-
-Using this custom error handler, the adaptive form converts the fields listed in `var som_map` to standard error message format. As a result, the validation error messages display at field-level in the adaptive form.
-
- -->

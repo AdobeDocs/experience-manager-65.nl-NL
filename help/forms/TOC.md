@@ -9,9 +9,9 @@ breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
 feature: Forms Service
-source-git-commit: e19a7e617bdabb678bd804cab3fea228ce19acfa
+source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
 workflow-type: tm+mt
-source-wordcount: '3897'
+source-wordcount: '3912'
 ht-degree: 0%
 
 ---
@@ -136,6 +136,7 @@ ht-degree: 0%
    + [Core Components voor uw omgeving inschakelen](/help/forms/using/enable-adaptive-forms-core-components.md)
    + [Een adaptief formulier op basis van kerncomponenten maken](/help/forms/using/create-an-adaptive-form-core-components.md)
    + [Thema&#39;s maken voor adaptieve Forms op basis van Core Components](/help/forms/using/create-or-customize-themes-for-adaptive-forms-core-components.md)
+   + [Aangepaste fouthandler maken en gebruiken voor Adaptieve Forms op basis van Core Components](/help/forms/using/add-custom-error-handler-adaptive-forms-core-components.md)
 + Adaptieve Forms - Basisontwerp {#adaptive-forms-basic-authoring}
    + [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](using/adaptive-forms-best-practices.md)
    + [Een adaptief formulier maken](using/creating-adaptive-form.md)
@@ -188,7 +189,7 @@ ht-degree: 0%
    + [Adobe Sign integreren met AEM Forms](using/adobe-sign-integration-adaptive-forms.md)
    + [Revisies voor elementen in formulieren maken en beheren](using/create-reviews-forms.md)
    + [Een adaptief formulier of interactieve communicatie insluiten in AEM Sites-toepassing voor één pagina](/help/forms/using/embed-adaptive-form-aem-sites-spa.md)
-   + [Standaard-validatiefoutenberichten Adaptieve Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
+   + [Aangepaste fouthandler maken en gebruiken voor Adaptive Forms](/help/forms/using/standard-validation-error-messages-adaptive-forms.md)
 + Interactieve communicatie {#interactive-communications}
    + [Inleiding tot Interactive Communication authoring UI](using/introduction-interactive-communication-authoring.md)
    + [Een interactieve communicatie maken](using/create-interactive-communication.md)

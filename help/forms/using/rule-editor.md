@@ -10,16 +10,16 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 0985e591df83c7f1604bac37af771e8a7a21e691
 workflow-type: tm+mt
-source-wordcount: '6877'
+source-wordcount: '6929'
 ht-degree: 0%
 
 ---
 
-# Aanpasbare formulierregeleditor{#adaptive-forms-rule-editor}
+# Regeleditor voor adaptieve formulieren{#adaptive-forms-rule-editor}
 
-<span class="preview">Adobe raadt aan de moderne en uitbreidbare kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) voor het vastleggen [van gegevens te gebruiken voor [het maken van nieuwe Adaptieve formulieren](/help/forms/using/create-an-adaptive-form-core-components.md) of [het toevoegen van Adaptieve formulieren aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten vertegenwoordigen een aanzienlijke vooruitgang in het maken van adaptieve formulieren voor een indrukwekkende gebruikerservaring. In dit artikel wordt een oudere benadering beschreven van het ontwerpen van Adaptieve formulieren met behulp van basiscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -38,11 +38,11 @@ De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterfac
 * De waarde van een object valideren
 * Functies uitvoeren om de waarde van een object te berekenen
 * Een service van een formuliergegevensmodel aanroepen en een bewerking uitvoeren
-* Eigenschap van een object instellen
+* De eigenschap Instellen van een object
 
-De redacteur van de regel vervangt de scriptmogelijkheden in AEM 6.1 Forms en vroegere versies. Nochtans, worden uw bestaande manuscripten bewaard in de nieuwe regelredacteur. Zie voor meer informatie over het werken met bestaande scripts in de regeleditor [Effect van regeleditor op bestaande scripts](#impact-of-rule-editor-on-existing-scripts).
+De Regeleditor vervangt de scriptfuncties in AEM 6.1-formulieren en eerdere versies. Uw bestaande scripts blijven echter behouden in de nieuwe regeleditor. Zie [Impact van de regeleditor op bestaande scripts](#impact-of-rule-editor-on-existing-scripts) voor meer informatie over het werken met bestaande scripts in de regeleditor.
 
-Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de groep met gebruikers van formulieren kunnen de scripts gebruiken, maar kunnen geen scripts maken of bewerken.
+Gebruikers die aan de groep &quot;forms-power-users&quot; zijn toegevoegd, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de formuliergebruikersgroep kunnen de scripts gebruiken, maar geen scripts maken of bewerken.
 
 ## Een regel begrijpen {#understanding-a-rule}
 
@@ -94,7 +94,7 @@ De regeleditor biedt de volgende logische operatoren en gebeurtenissen waarmee u
 * **Eindigt met**
 * **Bevat**
 * **Is leeg**
-* **Niet leeg is**
+* **Is niet leeg**
 * **Heeft geselecteerd:** Retourneert true wanneer de gebruiker een bepaalde optie voor een selectievakje, vervolgkeuzelijst of keuzerondje selecteert.
 * **Is geïnitialiseerd (gebeurtenis):** Retourneert true wanneer een formulierobject in de browser wordt weergegeven.
 * **Is gewijzigd (gebeurtenis):** Retourneert true wanneer de gebruiker de ingevoerde waarde of de geselecteerde optie voor een formulierobject wijzigt.
@@ -117,7 +117,9 @@ In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
 
 `Then, do the following:`
 
-Actie 2 betreffende object B; EN actie 3 betreffende object C;
+Handeling 2 op object B;
+EN
+Handeling 3 voor Object C;
 
 _
 
@@ -127,13 +129,13 @@ Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens he
 
 ![multivaluefcdisplaysopties](assets/multivaluefcdisplaysoptions.png)
 
-Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Met Waarde wissen wordt de waarde van het opgegeven object gewist. Met de instructie &#39;Wissen&#39; als optie kunt u complexe voorwaarden maken met meerdere velden.
+Tijdens het schrijven van een Wanneer-regel kunt u de waarde van handeling wissen activeren. Waarde wissen van handeling wist de waarde van het opgegeven object. Als u Waarde wissen als optie hebt in de instructie Wanneer, kunt u complexe voorwaarden met meerdere velden maken.
 
-![vrijmaking](assets/clearvalueof.png)
+![clearvalue van](assets/clearvalueof.png)
 
-**Verbergen** Verbergt het opgegeven object.
+**Met Verbergen** verbergt u het opgegeven object.
 
-**Tonen** Hiermee wordt het opgegeven object weergegeven.
+**Tonen** Toont het opgegeven object.
 
 **Inschakelen** Hiermee wordt het opgegeven object ingeschakeld.
 
@@ -149,7 +151,19 @@ Voor meer informatie over het vormen van de diensten in het model van vormgegeve
 
 Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
-De **Eigenschap instellen** Met regeltype kunt u de waarde van een eigenschap van het opgegeven object instellen op basis van een voorwaardenactie.
+De **[!UICONTROL Set Property]** Met regeltype kunt u de waarde van een eigenschap van het opgegeven object instellen op basis van een voorwaardenactie. U kunt eigenschap instellen op een van de volgende opties:
+* visible (Boolean)
+* dorExclusion (Boolean)
+* chartType (String)
+* title (String)
+* enabled (Boolean)
+* mandatory (Boolean)
+* validationsDisabled (Boolean)
+* validateExpMessage (String)
+* value (Number, String, Date)
+* items (lijst)
+* valid (Boolean)
+* errorMessage (String)
 
 Hiermee kunt u regels definiëren om selectievakjes dynamisch toe te voegen aan het aangepaste formulier. U kunt een regel definiëren met behulp van een aangepaste functie, een formulierobject of een objecteigenschap.
 
@@ -187,25 +201,21 @@ In de volgende afbeelding ziet u een voorbeeld van het dynamisch toevoegen van s
 
 De **[!UICONTROL Set Value of]** met regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een formuliergegevensmodelservice. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
 
-Waarde instellen van regeltype is niet beschikbaar voor alle formulierobjecten, zoals deelvensters en werkbalkknoppen. Een standaardsetwaarde van regel heeft de volgende structuur:
+Merk op dat de Vastgestelde Waarde van regeltype niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen is. Een standaardsetwaarde van regel heeft de volgende structuur:
 
 
 
-Waarde van Object A instellen op:
+Stel de waarde van Object A in op:
 
-(tekenreeks ABC) OF
-(objecteigenschap X van Object C) OF
-(waarde van een functie) OF
-(waarde van een wiskundige uitdrukking) OF
-(uitvoerwaarde van een datamodelservice of webservice);
+(tekenreeks ABC) OR (objecteigenschap X van Object C) OR (waarde van een functie) OR (waarde van een wiskundige expressie) OR (uitvoerwaarde van een gegevensmodelservice of webservice);
 
-Wanneer (optioneel):
+Indien (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is TRUE;
 
 
 
-In het volgende voorbeeld wordt de waarde in `dependentid` veld als invoer en stelt de waarde van de `Relation` aan de output van `Relation` argument van de `getDependent` service formuliergegevensmodel.
+In het volgende voorbeeld wordt de waarde in `dependentid` het veld als invoer gebruikt en wordt de waarde van het `Relation` veld ingesteld op de uitvoer van het `Relation` argument van de `getDependent` formuliergegevensmodelservice.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -215,7 +225,7 @@ Voorbeeld van waardeceregel instellen met de service van het formuliergegevensmo
 >
 >Daarnaast kunt u Waarde van regel instellen gebruiken om alle waarden in een vervolgkeuzelijstcomponent te vullen vanaf de uitvoer van een service van een formuliergegevensmodel of een webservice. Zorg er echter voor dat het uitvoerargument dat u kiest van een arraytype is. Alle waarden die in een array worden geretourneerd, worden beschikbaar in de opgegeven vervolgkeuzelijst.
 
-### Tonen {#show}
+### Toon {#show}
 
 Met de **Tonen** regeltype, kunt u een regel schrijven om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Tonen activeert ook de handeling Verbergen als de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
 
@@ -237,7 +247,7 @@ Een typische Show regel is gestructureerd als volgt:
 
 ### Verbergen {#hide}
 
-Net als het regeltype Tonen kunt u de opdracht **Verbergen** regeltype om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Verbergen activeert ook de handeling Tonen als de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
+Net als het regeltype Tonen kunt u de opdracht **Verbergen** regeltype om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het type Regel verbergen activeert ook de handeling Tonen wanneer niet aan de voorwaarde wordt voldaan of wordt geretourneerd `False`.
 
 Een typische regel van de Huid is gestructureerd als volgt:
 
@@ -357,11 +367,11 @@ Hiermee geeft u de titel weer van het adaptieve formulierobject waarmee u de reg
 
 De ruit op de linkerzijde in het gebruikersinterface van de regelredacteur omvat twee lusjes — **[!UICONTROL Forms Objects]** en **[!UICONTROL Functions]**.
 
-Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Wanneer u een regel schrijft, kunt u formulierobjecten naar de regeleditor slepen en neerzetten. Wanneer u een regel maakt of bewerkt en een object of functie naar een tijdelijke aanduiding sleept, neemt de tijdelijke aanduiding automatisch het juiste waardetype.
+Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Bij het schrijven van een regel kunt u formulierobjecten naar de regeleditor slepen. Wanneer u een regel maakt of bewerkt en een object of functie naar een tijdelijke aanduiding sleept, neemt de tijdelijke aanduiding automatisch het juiste waardetype.
 
-De formulierobjecten waarop een of meer geldige regels zijn toegepast, zijn gemarkeerd met een groene stip. Als een van de regels die op een formulierobject worden toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
+De formulierobjecten waarop een of meer geldige regels zijn toegepast, worden gemarkeerd met een groene stip. Als een van de regels die op een formulierobject zijn toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
 
-Het tabblad Functies bevat een set met ingebouwde functies, zoals de Som van, Min of, Max of, Gemiddelde van, Aantal en Formulier valideren. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en te gebruiken voor actie- en voorwaardeinstructies bij het schrijven van regels. U kunt echter ook aangepaste functies](#custom-functions) maken[.
+Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of meer, max van, gemiddelde van, aantal en validerende vorm. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en deze tijdens het schrijven van regels te gebruiken in instructies voor handelingen en voorwaarden. U kunt echter wel [aangepaste functies](#custom-functions) ook.
 
 ![Het tabblad Functies](assets/functions.png)
 
@@ -434,7 +444,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    In het keuzerondje Burgerlijke staat **Gehuwd** en **Enkel** opties worden toegewezen **0** en **1** respectievelijk. U kunt toegewezen waarden verifiëren op het tabblad Titel van het dialoogvenster Keuzerondje bewerken, zoals hieronder wordt weergegeven.
 
-   ![Waarden voor keuzerondjes uit de regeleditor](assets/radio-button-values.png)
+   ![Waarden voor keuzerondjes in regeleditor](assets/radio-button-values.png)
 
 1. In de **Een tekenreeks invoeren** veld in de regel, geef **0**.
 
@@ -446,7 +456,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![write-rules-visual-editor-5](assets/write-rules-visual-editor-5.png)
 
-1. Sleep het **veld Salaris** voor echtgenoten van het tabblad Formulierobjecten naar het **object neerzetten of selecteer hier** het veld. U kunt ook op het **veld Object neerzetten tikken of hier** selecteren en vervolgens het **veld Salaris** voor echtgenoten selecteren in het pop-upmenu waarin alle formulierobjecten in het formulier worden weergegeven.
+1. Sleep de **Echtsalaris** veld op het tabblad Formulierobjecten in het dialoogvenster **Object neerzetten of hier selecteren** veld. Of tik op de knop **Object neerzetten of hier selecteren** en selecteer de **Echtsalaris** in het pop-upmenu waarin alle formulierobjecten in het formulier worden vermeld.
 
    ![write-rules-visual-editor-6](assets/write-rules-visual-editor-6.png)
 
@@ -580,7 +590,7 @@ U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Descripti
 Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerdere parametertags hebben, één tag voor elke parameter in de volgorde waarin deze voorkomt.
   `{type}` vertegenwoordigt parametertype. Toegestane parametertypen zijn:
 
-   1. string
+   1. Tekenreeks
    1. getal
    1. boolean
    1. bereik
@@ -726,7 +736,7 @@ U kunt de volgende handelingen op regels uitvoeren:
 
 * **Uitvouwen/samenvouwen**: De kolom Inhoud in de lijst met regels geeft de inhoud van de regel weer. Tik op ![expandRule-content](assets/expand-rule-content.png) om het uit te breiden.
 
-* **Opnieuw**: Nieuwe regels die u maakt, worden onder aan de lijst met regels gestapeld. De regels worden van boven naar beneden uitgevoerd. De regel bij de bovenkant voert eerst gevolgd door andere regels van het zelfde type uit. Bijvoorbeeld, als u hebt wanneer, tonen, toelaten, en wanneer de regels bij eerste, tweede, derde, en vierde posities van bovenkant, respectievelijk, wanneer de regel bij de bovenkant eerst wordt uitgevoerd gevolgd door wanneer de regel bij de vierde positie. Vervolgens worden de regels Tonen en Inschakelen uitgevoerd.
+* **Opnieuw**: Nieuwe regels die u maakt, worden onder aan de lijst met regels gestapeld. De regels worden van boven naar beneden uitgevoerd. De regel bovenaan wordt eerst uitgevoerd, gevolgd door andere regels van hetzelfde type. Bijvoorbeeld, als u hebt wanneer, tonen, toelaten, en wanneer de regels bij eerste, tweede, derde, en vierde posities van bovenkant, respectievelijk, wanneer de regel bij de bovenkant eerst wordt uitgevoerd gevolgd door wanneer de regel bij de vierde positie. Vervolgens worden de regels Tonen en Inschakelen uitgevoerd.
 U kunt de volgorde van een regel wijzigen door te tikken ![sorteerregels](assets/sort-rules.png) of sleep het naar de gewenste volgorde in de lijst.
 
 * **Bewerken**: Als u een regel wilt bewerken, schakelt u het selectievakje naast de regeltitel in. Er verschijnen extra opties voor het bewerken en verwijderen van de regel. Tikken **Bewerken** om de geselecteerde regel op de regelredacteur op visuele of wijze van de coderedacteur afhankelijk van de wijze te openen die wordt gebruikt om de regel tot stand te brengen.
@@ -816,6 +826,10 @@ De volgende regel toont hoe u de Invoke de dienstactie zult vormen om het voorbe
 ![example-invoke-services](assets/example-invoke-services.png)
 
 Service van formuliergegevensmodel aanroepen met adaptieve formulierregel
+
+>[!NOTE]
+>
+>Als de invoer van een arraytype is, zijn de velden die arrays ondersteunen zichtbaar onder de vervolgkeuzelijst Uitvoer.
 
 ### Meerdere handelingen triggeren met de regel Wanneer {#triggering-multiple-actions-using-the-when-rule}
 

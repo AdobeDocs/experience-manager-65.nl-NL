@@ -11,14 +11,14 @@ discoiquuid: f89921ef-c638-4a07-88d5-3dd8614c5166
 docset: aem65
 role: Admin
 exl-id: 2fc8abec-8ba6-40b7-bbb1-4288eeea7c86
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 077208ed8fea6a644487dbb46efb54ea44f303b4
 workflow-type: tm+mt
-source-wordcount: '356'
+source-wordcount: '341'
 ht-degree: 1%
 
 ---
 
-# Upgrade naar AEM 6,5 Forms{#upgrade-to-aem-forms}
+# Upgrade naar AEM 6,5 Forms {#upgrade-to-aem-forms}
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -28,7 +28,7 @@ ht-degree: 1%
 
 AEM 6.5 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Ga voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.5 Forms naar [Overzicht van nieuwe functies](../../forms/using/whats-new.md).
 
-U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
+U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.5 Forms, terwijl de bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
 Het volgende diagram toont de beschikbare verbeteringspaden voor AEM Forms op OSGi:
 
@@ -49,6 +49,7 @@ In het volgende diagram worden de beschikbare upgradepaden voor AEM Forms op JEE
 
 ![JEE upgrade 6.5](do-not-localize/jee-upgrade-6-5.png)
 
+
 U kunt een directe upgrade uitvoeren vanaf:
 
 * AEM 6.3 Forms in juni
@@ -57,18 +58,16 @@ U kunt een directe upgrade uitvoeren vanaf:
 
 U kunt een multi-hopverbetering van ook uitvoeren
 
-* LiveCycle ES2
-* LiveCycle ES3
 * LiveCycle ES4 SP1
 * AEM 6,0 Forms in juni
 * AEM 6.1 Forms in juni
 * AEM 6.2 Forms in juni
 
-AEM 6.5.12.0 biedt Forms op JEE twee typen installatieprogramma&#39;s: [Volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) en [Patchinstallatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
+AEM 6.5.18.0 biedt Forms op JEE twee typen installatieprogramma&#39;s: [Volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) en [Patchinstallatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html).
 
-**Volledig installatieprogramma**: U kunt het volledige installatieprogramma gebruiken om nieuwe AEM Forms-exemplaren in te stellen of upgrades uit te voeren van AEM 6.3 Forms op JEE, AEM 6.4 op JEE en een upgrade van AEM 6.5.x.x Forms op JEE naar AEM 6.5.12.0 Forms op JEE.
+**Volledig installatieprogramma**: Met het volledige installatieprogramma kunt u nieuwe AEM Forms-exemplaren instellen of upgrades uitvoeren van AEM 6.5.x.x Forms op JEE naar AEM 6.5.18.0 Forms op JEE.
 
-**Patchinstallatieprogramma**: Patchinstallatieprogramma is bedoeld voor klanten die al AEM 6.5.x.x-versies gebruiken. Met het installatieprogramma van de patch kunt u een upgrade uitvoeren naar de nieuwste versie van AEM Forms.
+**Patchinstallatieprogramma**: Patchinstallatieprogramma is bedoeld voor klanten die al AEM 6.5.x.x-versies gebruiken. U kunt het installatieprogramma van de patch gebruiken om een upgrade uit te voeren naar de nieuwste versie van AEM Forms.
 
 In de volgende afbeelding ziet u scenario&#39;s voor het gebruik van het volledige installatieprogramma en het patchinstallatieprogramma.
 

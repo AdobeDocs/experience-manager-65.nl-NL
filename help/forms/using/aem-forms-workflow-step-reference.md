@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 2bba1d5209fe64679c6ba6db0028562ff1415a10
+source-git-commit: 3c7b46c20b2f34bd83941649cbff2ac16c3aade2
 workflow-type: tm+mt
 source-wordcount: '7565'
 ht-degree: 0%
@@ -303,6 +303,7 @@ Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te o
   >* In de sectie Rol kunt u de rol van ontvanger opgeven als ondertekenaar, fiatteur, accepteerder, gecertificeerde ontvanger, invuller van formulier en gedelegeerde.
   >* Als u Delegator in de optie van de Rol selecteert, kan de Delegator de ondertekeningstaak aan andere ontvangers toewijzen.
   >* Als u een authentificatiemethode voor hebt gevormd [!DNL Adobe Sign], gebaseerd op uw configuratie, selecteert u een verificatiemethode zoals verificatie via telefoon, verificatie op basis van sociale identiteit, verificatie op basis van kennis, verificatie op basis van identiteit van de overheid.
+
 * **Script of service om ontvangers te selecteren:** De optie is alleen beschikbaar als u in het veld Ontvangers selecteren de optie Dynamisch selecteert. U kunt een ECMAScript of een dienst specificeren om ontvangers en verificatieopties voor een document te kiezen.
 * **Gegevens van ontvanger:** De optie is alleen beschikbaar als de optie Handmatig is geselecteerd in het veld Ontvangers selecteren. Geef een e-mailadres op en kies een optioneel verificatiemechanisme. Voordat u een verificatiemechanisme met twee stappen selecteert, moet u controleren of de bijbehorende verificatieoptie is ingeschakeld voor de geconfigureerde Adobe Sign-account. U kunt een variabele van het gegevenstype String gebruiken om waarden te definiëren voor **[!UICONTROL Email]**, **[!UICONTROL Country Code]**, en **[!UICONTROL Phone Number]** velden. De **[!UICONTROL Country Code]** en **[!UICONTROL Phone Number]** velden worden alleen weergegeven als u **[!UICONTROL Phone Verification]** van de **[!UICONTROL 2-step verification]** vervolgkeuzelijst.
 * **Statusvariabele:** In een Adobe Sign-document wordt de ondertekeningsstatus van het document opgeslagen in een variabele van het gegevenstype String. Geef de naam van de statusvariabele op (adobeSignStatus). Een statusvariabele van een instantie is beschikbaar in CRXDE op /etc/workflow/instances/&lt;server>/&lt;date-time>/&lt;instance of=&quot;&quot; workflow=&quot;&quot; model=&quot;&quot;>/workItems/&lt;node>/metaData bevat status van een variabele.

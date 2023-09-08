@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
+source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4527'
 ht-degree: 0%
 
 ---
@@ -450,6 +450,8 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 #### Installatie
 
 * Op het JBoss® 7.1.4-platform, wanneer de gebruiker Experience Manager 6.5.16.0 of hoger servicepack installeert, `adobe-livecycle-jboss.ear` implementatie mislukt. (CQ-4351522, CQDOC-20159)
+* Na installatie AEM Service Pack 6.5.18.0 volledig installatieprogramma, ontbreekt de plaatsing van het EAR op JEE gebruikend JBoss Turnkey (CQDOC-20803).
+Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` bestand en update `Adobe_Adobe_JAVA_HOME` tot `Adobe_JAVA_HOME` voor alle instanties alvorens de configuratiemanager in werking te stellen.
 
 #### Adaptieve Forms
 
@@ -459,7 +461,12 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 
 #### Interactieve communicatie
 
-* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om interactieve communicatie brieven uit te geven. (FORMS-10578)
+* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om interactieve communicatie brieven uit te geven. (FORMS-10578) Voer de volgende stappen uit om het probleem op te lossen:
+
+   1. Downloaden [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) via SD-koppeling.
+   1. Extraheer het Hotfix-archiefbestand voor een Experience Manager-pakket (.zip) en -bundelbestanden (.jar).
+   1. Upload en installeer het pakket (.zip) via Package Manager.
+   1. De configuratiemanager-bundels openen `https://server:host/system/console/bundles`, uploadt en installeert de bundel (.jar).
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

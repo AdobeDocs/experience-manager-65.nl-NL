@@ -1,18 +1,13 @@
 ---
 title: Met HSM documenten digitaal ondertekenen of certificeren
-seo-title: Use HSM to certify eSigned documents
-description: Gebruik HSM- of token-apparaten om elektronisch ondertekende documenten te certificeren
-seo-description: Use HSM or etoken devices to certify eSigned documents
-uuid: bbe057c1-6150-41f9-9c82-4979d31d305d
+description: Gebruik HSM-server of eToken-apparaat om PDF-documenten te ondertekenen/certificeren.
 contentOwner: vishgupt
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: 536bcba4-b754-4799-b0d2-88960cc4c44a
-exl-id: 4d423881-18e0-430a-849d-e1762366a849
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 4a4a75018e960733908f40c631a24203290be55c
 workflow-type: tm+mt
-source-wordcount: '995'
+source-wordcount: '655'
 ht-degree: 0%
 
 ---
@@ -23,21 +18,14 @@ Hardwarebeveiligingsmodules (HSM) en -netwerken zijn speciale, geharde en tamper
 
 Adobe Experience Manager Forms kan referenties gebruiken die zijn opgeslagen op een HSM of token om serverzijdige digitale handtekeningen elektronisch te ondertekenen of toe te passen op een document. Een HSM- of token-apparaat gebruiken met AEM Forms:
 
-1. Schakel de DocAssurance-service in.
-1. Certificaten instellen voor extensie Reader.
-1. Maak een alias voor het HSM- of token-apparaat in AEM webconsole.
-1. Gebruik de DocAssurance Service-API&#39;s om de documenten te ondertekenen of certificeren met digitale sleutels die op het apparaat zijn opgeslagen.
+1. [De DocAssurance-service inschakelen](#configuredocassurance).
+1. [Een alias maken voor het HSM- of token-apparaat in de AEM webconsole](#configuredeviceinaemconsole).
+1. [Gebruik de DocAssurance Service-API&#39;s om de documenten te ondertekenen of certificeren met digitale sleutels die op het apparaat zijn opgeslagen](#programatically).
 
 ## Voordat u HSM configureert of de apparaten instelt met AEM Forms {#configurehsmetoken}
 
-* Installeren [AEM Forms-invoegtoepassing](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pakket.
-* HSM installeren en configureren of clientsoftware installeren op dezelfde computer als AEM server. De cliëntsoftware wordt vereist om met HSM en apparaten te communiceren.
-* (Alleen Microsoft Windows) Stel de omgevingsvariabele JAVA_HOME_32 zo in dat deze naar de map verwijst waar de 32-bits versie van Java 8 Development Kit (JDK 8) is geïnstalleerd. Het standaardpad van de map is C:\Program Files(x86)\Java\jdk&lt;version>
-* (Alleen AEM Forms op OSGi) Installeer het basiscertificaat in de vertrouwde opslag. Het is vereist om de ondertekende PDF te verifiëren
-
->[!NOTE]
->
->In Microsoft Windows worden alleen 32-bits LunaSA- of EToken-clients ondersteund.
+* Installeer de [AEM Forms-invoegtoepassing](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) pakket.
+* Installeer en configureer HSM of installeer de clientsoftware op dezelfde computer als de AEM. De cliëntsoftware wordt vereist om met HSM en apparaten te communiceren.
 
 ## De DocAssurance-service inschakelen {#configuredocassurance}
 
@@ -62,56 +50,61 @@ De dienst DocAssurance is standaard niet ingeschakeld. Voer de volgende stappen 
 1. Sla het bestand sling.properties op en sluit het.
 1. Start de AEM opnieuw.
 
-## Certificaten instellen voor extensies van Readers {#set-up-certificates-for-reader-extensions}
+<!--
 
-Voer de volgende stappen uit om certificaten in te stellen:
+## Set up certificates for Reader extensions {#set-up-certificates-for-reader-extensions}
 
-1. Meld u als beheerder aan bij de AEM-auteur-instantie.
+Perform the following steps to setup certificates:
 
-1. Klikken **Adobe Experience Manager** op globale navigatiebalk. Ga naar **Gereedschappen** >  **Beveiliging** >  **Gebruikers**.
-1. Klik op de knop **name** van de gebruikersaccount. De **Gebruikersinstellingen bewerken** pagina wordt geopend.
-1. Voor de instantie van de Auteur AEM, verblijven de certificaten in een KeyStore. Als u nog geen KeyStore hebt gemaakt, klikt u op **KeyStore maken** en stel een nieuw wachtwoord in voor de KeyStore. Als de server al een KeyStore bevat, slaat u deze stap over.
+1. Log in to AEM Author instance as an administrator.
 
-1. Op de **Gebruikersinstellingen bewerken** pagina, klikt u op **KeyStore beheren**.
+1. Click **Adobe Experience Manager** on Global Navigation Bar. Go to **Tools** &gt;  **Security** &gt;  **Users**.
+1. Click the **name** field of the user account. The **Edit User Settings** page opens.
+1. On the AEM Author instance, certificates reside in a KeyStore. If you have not created a KeyStore earlier, click **Create KeyStore** and set a new password for the KeyStore. If the server already contains a KeyStore, skip this step.
 
-1. Vouw in het dialoogvenster KeyStore Management de opties **Persoonlijke sleutel toevoegen uit sleutelarchiefbestand** en geef een alias op. De alias wordt gebruikt om de bewerking Reader Extensions uit te voeren.
-1. Als u het certificaatbestand wilt uploaden, klikt u op **sleutelarchiefbestand selecteren** en uploadt u een `.pfx` bestand.
-1. Voeg de **Wachtwoord sleutelarchief**,**Wachtwoord persoonlijke sleutel**, en **Alias persoonlijke sleutel** die is gekoppeld aan het certificaat aan de desbetreffende velden. Klikken **Verzenden**.
+1. On the **Edit User Settings** page, click **Manage KeyStore**.
 
-   >[!NOTE]
-   >
-   >Om P te bepalen **Alias met rivate Key** van een certificaat gebruikt u de Java-opdracht Keytool: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+1. On KeyStore Management dialog, expand the **Add Private Key from Key Store file** option and provide an alias. The alias is used to perform the Reader Extensions operation.
+1. To upload the certificate file, click **Select Key Store File** and upload a `.pfx` file.
+1. Add the **Key Store Password**,**Private Key Password**, and **Private Key Alias** that is associated with the certificate to the respective fields. Click **Submit**.
 
    >[!NOTE]
    >
-   >In de **Wachtwoord sleutelarchief** en **Wachtwoord persoonlijke sleutel** in het certificaatbestand.
+   >To determine the **Private Key Alias** of a certificate, you can use the Java keytool command: `keytool -list -v -keystore [keystore-file] -storetype pkcs12`
+
+   >[!NOTE]
+   >
+   >In the **Key Store Password** and **Private Key Password** fields, specify the password provided with the certificate file.
 
 >[!NOTE]
 >
->Voor AEM Forms op OSGi, om de ondertekende PDF te verifiëren, het wortelcertificaat dat in de Opslag van het Vertrouwen wordt geïnstalleerd.
+>For AEM Forms on OSGi, to verify the signed PDF, the root certificate installed in the Trust Store.
 
 >[!NOTE]
 >
->Vervang bij de overgang naar de productieomgeving uw evaluatiegegevens door productiegegevens. Zorg ervoor dat u uw oude geloofsbrieven van de Uitbreidingen van de Reader schrapt, alvorens een verlopen of evaluatiereferentie bij te werken.
+>On moving to production environment, replace your evaluation credentials with production credentials. Ensure that you delete your old Reader Extensions credentials, before updating an expired or evaluations credential.
+
+-->
+
 
 ## Een alias voor het apparaat maken {#configuredeviceinaemconsole}
 
 De alias bevat alle parameters die een HSM of token vereist. Voer de onderstaande instructies uit om een alias te maken voor elke HSM of voor de token-referentie die door eSign of Digital Signatures wordt gebruikt:
 
-1. Open AEM console. De standaard-URL van AEM console is https://&lt;host>:&lt;port>/system/console/configMgr
+1. Open de AEM console. De standaard-URL van de AEM console is https://&lt;host>:&lt;port>/system/console/configMgr
 1. Open de **Configuratieservice HSM Credentials** en geef waarden op voor de volgende velden:
 
    * **Credentiële alias**: Geef een tekenreeks op die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-   * **DLL-pad**: Geef het volledig gekwalificeerde pad van uw HSM- of toepassingsclientbibliotheek op de server op. Bijvoorbeeld C:\Program Files\LunaSA\cryptoki.dll. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+   * **DLL-pad**: Geef het pad op van uw HSM- of toepassingsbibliotheek op de server. Bijvoorbeeld, `C:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet u ervoor zorgen dat alle servers in de cluster een identiek pad gebruiken.
    * **HSM-punt**: Geef het wachtwoord op dat nodig is voor toegang tot de apparaattoets.
-   * **HSM-sleuf-id**: Geef een sleuf-id op van het type geheel getal. De sleuf-id wordt per client ingesteld. Als u een tweede machine aan een verschillende verdeling (bijvoorbeeld, HSMPART2 op het zelfde apparaat HSM) registreert, dan wordt groef 1 geassocieerd met de verdeling HSMPART2 voor de cliënt.
+   * **HSM-sleuf-id**: Geef een slot-id op van het type geheel getal. De groef ID wordt geplaatst op een cliënt-door-cliënt basis. Het wordt gebruikt om de groef op HSM te identificeren die de privé sleutel voor teken/certificatie bevat.
 
    >[!NOTE]
    >
    >Geef tijdens het configureren van Etoken een numerieke waarde op voor het veld Id van HSM-sleuf. Er is een numerieke waarde vereist om de handtekeningbewerkingen te laten werken.
 
-   * **Certificaat SHA1**: Geef SHA1-waarde (miniafdruk) van het bestand met de openbare sleutel (.cer) op voor de referentie die u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde. Als u een fysiek certificaat gebruikt, is dit niet verplicht.
-   * **Type HSM-apparaat**: Selecteer de fabrikant van de HSM (Luna of andere) of het Symbolische apparaat.
+   * **Certificaat SHA1**: Geef de SHA1-waarde (miniafdruk) van het bestand public key (.cer) op voor de referentie die u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde.
+   * **Type HSM-apparaat**: Selecteer de fabrikant van de HSM (Luna of other) of het Symbolische apparaat.
 
    Klikken **Opslaan**. De beveiligingsmodule voor hardware is geconfigureerd voor AEM Forms. U kunt nu de beveiligingsmodule voor hardware in AEM Forms gebruiken om documenten te ondertekenen of te certificeren.
 
@@ -400,7 +393,7 @@ public class Sign{
 
 Als u van AEM 6.0 Vorm of AEM 6.1 Forms hebt bevorderd, en u de dienst DocAssurance in de vorige versie gebruikte, dan:
 
-* Om de dienst DocAssurance zonder een HSM te gebruiken of apparaat te sluiten, gebruik het bestaande code.
+* Om de dienst DocAssurance zonder een HSM te gebruiken of apparaat te sluiten, gebruik blijven gebruikend de bestaande code.
 * Als u de DocAssurance-service wilt gebruiken met een HSM- of token-apparaat, vervangt u de bestaande CredentialContext-objectcode door de API hieronder.
 
 ```java

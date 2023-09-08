@@ -2,10 +2,10 @@
 title: Reis van architect zonder hoofdinhoud AEM
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 exl-id: 44c58ece-225e-4361-929c-faa110fe2842
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '786'
-ht-degree: 1%
+source-wordcount: '802'
+ht-degree: 0%
 
 ---
 
@@ -68,4 +68,6 @@ Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan 
 * [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 * [AEM technische documentatie](https://experienceleague.adobe.com/docs/experience-manager-65.html) - Als u al een duidelijk inzicht hebt in AEM en technologieën zonder kop, kunt u onze diepgaande technische documenten direct raadplegen.
+   * [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
 * [Zelfstudies zonder koppen AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Als u liever wilt leren door te doen en technisch georiënteerd bent, neemt u onze praktische zelfstudies die zijn georganiseerd door API en framework, die het maken en gebruiken van toepassingen die zijn gebaseerd op AEM Headless onderzoeken.
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

@@ -10,9 +10,9 @@ discoiquuid: 1b905e66-dc05-4f14-8025-62a78feef12a
 docset: aem65
 feature: Adaptive Forms
 exl-id: c611a1f8-9d94-47f3-bed3-59eef722bf98
-source-git-commit: 0985e591df83c7f1604bac37af771e8a7a21e691
+source-git-commit: 517fe7fb8917164ee05b006214055592510d15da
 workflow-type: tm+mt
-source-wordcount: '6929'
+source-wordcount: '6867'
 ht-degree: 0%
 
 ---
@@ -30,19 +30,20 @@ ht-degree: 0%
 
 Met de functie voor regeleditors in Adobe Experience Manager Forms kunnen zakelijke gebruikers en ontwikkelaars regels schrijven voor adaptieve formulierobjecten. Met deze regels worden acties gedefinieerd die op formulierobjecten worden geactiveerd op basis van vooraf ingestelde voorwaarden, gebruikersinvoer en gebruikersacties op het formulier. Hierdoor wordt de ervaring met het invullen van formulieren verder gestroomlijnd, zodat u nauwkeurige en snelle informatie krijgt.
 
-De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan. Bovendien verstrekt de regeleditor alleen voor gebruikers van formulierbevoegdheden een code-editor om regels en scripts te schrijven. Enkele belangrijke handelingen die u op adaptieve formulierobjecten met behulp van regels kunt uitvoeren, zijn:
+De regelredacteur verstrekt een intuïtieve en vereenvoudigde gebruikersinterface om regels te schrijven. De redacteur van de regel biedt een visuele redacteur voor alle gebruikers aan. Bovendien verstrekt de regeleditor alleen voor gebruikers van formulierbevoegdheden een code-editor om regels en scripts te schrijven.
+<!-- Some of the key actions that you can perform on adaptive form objects using rules are:
 
-* Een object tonen of verbergen
-* Een object in- of uitschakelen
-* Een waarde instellen voor een object
-* De waarde van een object valideren
-* Functies uitvoeren om de waarde van een object te berekenen
-* Een service van een formuliergegevensmodel aanroepen en een bewerking uitvoeren
-* De eigenschap Instellen van een object
+* Show or hide an object
+* Enable or disable an object
+* Set a value for an object
+* Validate the value of an object
+* Execute functions to compute the value of an object
+* Invoke a form data model service and perform an operation
+* Set property of an object -->
 
-De Regeleditor vervangt de scriptfuncties in AEM 6.1-formulieren en eerdere versies. Uw bestaande scripts blijven echter behouden in de nieuwe regeleditor. Zie [Impact van de regeleditor op bestaande scripts](#impact-of-rule-editor-on-existing-scripts) voor meer informatie over het werken met bestaande scripts in de regeleditor.
+De Regeleditor vervangt de scriptfuncties in AEM 6.1-formulieren en eerdere versies. Uw bestaande scripts blijven echter behouden in de nieuwe regeleditor. Zie voor meer informatie over het werken met bestaande scripts in de regeleditor [Effect van regeleditor op bestaande scripts](#impact-of-rule-editor-on-existing-scripts).
 
-Gebruikers die aan de groep &quot;forms-power-users&quot; zijn toegevoegd, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de formuliergebruikersgroep kunnen de scripts gebruiken, maar geen scripts maken of bewerken.
+Gebruikers die zijn toegevoegd aan de gebruikersgroep voor formulieren, kunnen nieuwe scripts maken en bestaande scripts bewerken. Gebruikers in de groep met gebruikers van formulieren kunnen de scripts gebruiken, maar kunnen geen scripts maken of bewerken.
 
 ## Een regel begrijpen {#understanding-a-rule}
 
@@ -105,11 +106,11 @@ De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes die u kunt gebr
 
 ### Wanneer {#whenruletype}
 
-De **Wanneer** regeltype volgt **condition-action-alternate action** regelconstructie, of soms alleen de **voorwaarde-actie** construct. In dit regeltype geeft u eerst een voorwaarde op voor evaluatie gevolgd door een handeling die wordt geactiveerd als aan de voorwaarde is voldaan ( `True`). Wanneer u het regeltype When gebruikt, kunt u meerdere AND- en OR-operatoren gebruiken om [geneste expressies](#nestedexpressions).
+De **Wanneer** regeltype volgt **condition-action-alternate action** regelconstructie, of soms alleen de **voorwaarde-actie** construct. In dit regeltype geeft u eerst een evaluatievoorwaarde op, gevolgd door een actie die moet worden geactiveerd als aan de voorwaarde wordt voldaan ( `True`). Tijdens het gebruik van het type Wanneer-regel kunt u meerdere OPERATORen en/of operatoren gebruiken om geneste expressies](#nestedexpressions) te maken[.
 
-Met het regeltype &#39;Wanneer&#39; kunt u een voorwaarde op een formulierobject evalueren en acties op een of meer objecten uitvoeren.
+Met het type Wanneer-regel kunt u een voorwaarde voor een formulierobject evalueren en handelingen uitvoeren op een of meer objecten.
 
-In duidelijke woorden, typisch wanneer de regel als volgt gestructureerd is:
+In eenvoudige woorden, een typische When-regel is als volgt gestructureerd:
 
 `When on Object A:`
 
@@ -129,13 +130,13 @@ Een lijst heeft bijvoorbeeld vier opties: Rood, Blauw, Groen en Geel. Tijdens he
 
 ![multivaluefcdisplaysopties](assets/multivaluefcdisplaysoptions.png)
 
-Tijdens het schrijven van een Wanneer-regel kunt u de waarde van handeling wissen activeren. Waarde wissen van handeling wist de waarde van het opgegeven object. Als u Waarde wissen als optie hebt in de instructie Wanneer, kunt u complexe voorwaarden met meerdere velden maken.
+Tijdens het schrijven van een When-regel kunt u de Clear Value of action activeren. Waarde wissen van handeling wist de waarde van het opgegeven object. Als u Waarde wissen als optie hebt in de instructie Wanneer, kunt u complexe voorwaarden met meerdere velden maken.
 
-![clearvalue van](assets/clearvalueof.png)
+![vrijmaking](assets/clearvalueof.png)
 
-**Met Verbergen** verbergt u het opgegeven object.
+**Verbergen** Verbergt het opgegeven object.
 
-**Tonen** Toont het opgegeven object.
+**Tonen** Hiermee wordt het opgegeven object weergegeven.
 
 **Inschakelen** Hiermee wordt het opgegeven object ingeschakeld.
 
@@ -152,6 +153,7 @@ Voor meer informatie over het vormen van de diensten in het model van vormgegeve
 Voor meer informatie over het vormen van de diensten in het model van vormgegevens, zie [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
 De **[!UICONTROL Set Property]** Met regeltype kunt u de waarde van een eigenschap van het opgegeven object instellen op basis van een voorwaardenactie. U kunt eigenschap instellen op een van de volgende opties:
+
 * visible (Boolean)
 * dorExclusion (Boolean)
 * chartType (String)
@@ -201,21 +203,25 @@ In de volgende afbeelding ziet u een voorbeeld van het dynamisch toevoegen van s
 
 De **[!UICONTROL Set Value of]** met regeltype kunt u de waarde van een formulierobject instellen, afhankelijk van het feit of aan de opgegeven voorwaarde wordt voldaan of niet. De waarde kan worden ingesteld op een waarde van een ander object, een letterlijke tekenreeks, een waarde die is afgeleid van een wiskundige expressie of een functie, een waarde van een eigenschap van een ander object of de uitvoer van een formuliergegevensmodelservice. Op dezelfde manier kunt u controleren op een voorwaarde voor een component, een tekenreeks, een eigenschap of waarden die zijn afgeleid van een functie of wiskundige expressie.
 
-Merk op dat de Vastgestelde Waarde van regeltype niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen is. Een standaardsetwaarde van regel heeft de volgende structuur:
+Merk op dat de Vastgestelde Waarde van regeltype niet beschikbaar voor alle vormvoorwerpen, zoals panelen en toolbarknopen is. Een standaardwaarde van regel set heeft de volgende structuur:
 
 
 
-Stel de waarde van Object A in op:
+Waarde van Object A instellen op:
 
-(tekenreeks ABC) OR (objecteigenschap X van Object C) OR (waarde van een functie) OR (waarde van een wiskundige expressie) OR (uitvoerwaarde van een gegevensmodelservice of webservice);
+(tekenreeks ABC) OF
+(objecteigenschap X van Object C) OF
+(waarde van een functie) OF
+(waarde van een wiskundige uitdrukking) OF
+(uitvoerwaarde van een datamodelservice of webservice);
 
-Indien (optioneel):
+Wanneer (optioneel):
 
 (Voorwaarde 1 EN Voorwaarde 2 EN Voorwaarde 3) is TRUE;
 
 
 
-In het volgende voorbeeld wordt de waarde in `dependentid` het veld als invoer gebruikt en wordt de waarde van het `Relation` veld ingesteld op de uitvoer van het `Relation` argument van de `getDependent` formuliergegevensmodelservice.
+In het volgende voorbeeld wordt de waarde in `dependentid` veld als invoer en stelt de waarde van de `Relation` aan de output van `Relation` argument van de `getDependent` service formuliergegevensmodel.
 
 ![set-value-web-service](assets/set-value-web-service.png)
 
@@ -247,7 +253,7 @@ Een typische Show regel is gestructureerd als volgt:
 
 ### Verbergen {#hide}
 
-Net als het regeltype Tonen kunt u de opdracht **Verbergen** regeltype om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het type Regel verbergen activeert ook de handeling Tonen wanneer niet aan de voorwaarde wordt voldaan of wordt geretourneerd `False`.
+Net als het regeltype Tonen kunt u de opdracht **Verbergen** regeltype om een formulierobject weer te geven of te verbergen op basis van het feit of aan een voorwaarde is voldaan of niet. Het regeltype Verbergen activeert ook de handeling Tonen als de voorwaarde niet wordt vervuld of wordt geretourneerd `False`.
 
 Een typische regel van de Huid is gestructureerd als volgt:
 
@@ -367,11 +373,11 @@ Hiermee geeft u de titel weer van het adaptieve formulierobject waarmee u de reg
 
 De ruit op de linkerzijde in het gebruikersinterface van de regelredacteur omvat twee lusjes — **[!UICONTROL Forms Objects]** en **[!UICONTROL Functions]**.
 
-Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Bij het schrijven van een regel kunt u formulierobjecten naar de regeleditor slepen. Wanneer u een regel maakt of bewerkt en een object of functie naar een tijdelijke aanduiding sleept, neemt de tijdelijke aanduiding automatisch het juiste waardetype.
+Op het tabblad Formulierobjecten ziet u een hiërarchische weergave van alle objecten in het aangepaste formulier. De titel en het type van de objecten worden weergegeven. Bij het schrijven van een regel kunt u formulierobjecten naar de regeleditor slepen. Tijdens het maken of bewerken van een regel wanneer u een object of functie naar een tijdelijke aanduiding sleept, neemt de plaatsaanduiding automatisch het juiste waardetype aan.
 
-De formulierobjecten waarop een of meer geldige regels zijn toegepast, worden gemarkeerd met een groene stip. Als een van de regels die op een formulierobject zijn toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
+De formulierobjecten waarop een of meer geldige regels zijn toegepast, zijn gemarkeerd met een groene stip. Als een van de regels die op een formulierobject worden toegepast ongeldig is, wordt het formulierobject gemarkeerd met een gele stip.
 
-Het tabblad Functies bevat een set ingebouwde functies, zoals som van, min of meer, max van, gemiddelde van, aantal en validerende vorm. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en deze tijdens het schrijven van regels te gebruiken in instructies voor handelingen en voorwaarden. U kunt echter wel [aangepaste functies](#custom-functions) ook.
+Het tabblad Functies bevat een set met ingebouwde functies, zoals de Som van, Min of, Max of, Gemiddelde van, Aantal en Formulier valideren. U kunt deze functies gebruiken om waarden in herhaalbare deelvensters en tabelrijen te berekenen en te gebruiken voor actie- en voorwaardeinstructies bij het schrijven van regels. U kunt echter ook aangepaste functies](#custom-functions) maken[.
 
 ![Het tabblad Functies](assets/functions.png)
 
@@ -590,7 +596,7 @@ U kunt ook het volgende gebruiken: `@argument` `{type} name <Parameter Descripti
 Geeft parameters weer die door de functie worden gebruikt. Een functie kan meerdere parametertags hebben, één tag voor elke parameter in de volgorde waarin deze voorkomt.
   `{type}` vertegenwoordigt parametertype. Toegestane parametertypen zijn:
 
-   1. Tekenreeks
+   1. string
    1. getal
    1. boolean
    1. bereik
@@ -736,7 +742,7 @@ U kunt de volgende handelingen op regels uitvoeren:
 
 * **Uitvouwen/samenvouwen**: De kolom Inhoud in de lijst met regels geeft de inhoud van de regel weer. Tik op ![expandRule-content](assets/expand-rule-content.png) om het uit te breiden.
 
-* **Opnieuw**: Nieuwe regels die u maakt, worden onder aan de lijst met regels gestapeld. De regels worden van boven naar beneden uitgevoerd. De regel bovenaan wordt eerst uitgevoerd, gevolgd door andere regels van hetzelfde type. Bijvoorbeeld, als u hebt wanneer, tonen, toelaten, en wanneer de regels bij eerste, tweede, derde, en vierde posities van bovenkant, respectievelijk, wanneer de regel bij de bovenkant eerst wordt uitgevoerd gevolgd door wanneer de regel bij de vierde positie. Vervolgens worden de regels Tonen en Inschakelen uitgevoerd.
+* **Opnieuw**: Nieuwe regels die u maakt, worden onder aan de lijst met regels gestapeld. De regels worden van boven naar beneden uitgevoerd. De regel bij de bovenkant voert eerst gevolgd door andere regels van het zelfde type uit. Bijvoorbeeld, als u hebt wanneer, tonen, toelaten, en wanneer de regels bij eerste, tweede, derde, en vierde posities van bovenkant, respectievelijk, wanneer de regel bij de bovenkant eerst wordt uitgevoerd gevolgd door wanneer de regel bij de vierde positie. Vervolgens worden de regels Tonen en Inschakelen uitgevoerd.
 U kunt de volgorde van een regel wijzigen door te tikken ![sorteerregels](assets/sort-rules.png) of sleep het naar de gewenste volgorde in de lijst.
 
 * **Bewerken**: Als u een regel wilt bewerken, schakelt u het selectievakje naast de regeltitel in. Er verschijnen extra opties voor het bewerken en verwijderen van de regel. Tikken **Bewerken** om de geselecteerde regel op de regelredacteur op visuele of wijze van de coderedacteur afhankelijk van de wijze te openen die wordt gebruikt om de regel tot stand te brengen.

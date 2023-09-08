@@ -2,9 +2,9 @@
 title: Ontwerpen voor headless met Adobe Experience Manager
 description: Een inleiding tot de krachtige, flexibele, eindeloze eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te ontwerpen.
 exl-id: 39d2218a-4f11-459d-8514-cfd312246be5
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '659'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Dit betekent dat uw inhoud op elk apparaat in een groot aantal indelingen kan wo
 
 ## Adobe Experience Manager {#aem-cms}
 
-Wat is AEM?
+Dus wat is AEM?
 
 In de eerste plaats is AEM een contentbeheersysteem met een groot aantal functies die ook aan uw vereisten kunnen worden aangepast.
 
@@ -81,3 +81,9 @@ Nu u de concepten en de terminologie hebt geleerd, is de volgende stap: [Leer de
 * [Reis van architect zonder hoofdinhoud AEM](/help/journey-headless/architect/overview.md)
 
 * [Reis voor omzetting van inhoud zonder kop AEM](/help/journey-headless/translation/overview.md)
+
+* [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
+
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+
+* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

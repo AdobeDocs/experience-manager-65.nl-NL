@@ -2,9 +2,9 @@
 title: AEM Headless Developer Journey
 description: AEM CMS-documentatie zonder kop. Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.
 exl-id: f24fb308-daa7-426f-ba45-37a236b5a500
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1212'
+source-wordcount: '1230'
 ht-degree: 1%
 
 ---
@@ -91,3 +91,7 @@ Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan 
 * [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 * [Architect zonder hoofd](/help/journey-headless/architect/overview.md) - Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager en hoe u inhoud voor uw project kunt modelleren.
 * [AEM technische documentatie](https://experienceleague.adobe.com/docs/experience-manager-65.html) - Als u al een duidelijk inzicht hebt in AEM en technologieën zonder kop, kunt u onze diepgaande technische documenten direct raadplegen.
+
+   * An [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
+
+* De [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)

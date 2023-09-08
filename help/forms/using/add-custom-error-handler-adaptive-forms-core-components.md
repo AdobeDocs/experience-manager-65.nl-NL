@@ -7,9 +7,9 @@ keywords: Voeg een manager van de douanefout toe, voeg een standaardfoutenmanage
 contentOwner: Ruchita Srivastav
 content-type: reference
 feature: Adaptive Forms
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: f8e0ac45d98d6485ccb60e754657caf9d190c3ea
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2254'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Enkele opties om de foutreacties weer te geven zijn:
 
 Voordat u de fouthandler in een Adaptive Forms gebruikt:
 
-* [Adaptieve Forms Core-componenten inschakelen voor uw AEM Cloud Service-omgeving](enable-adaptive-forms-core-components.md).
+* [Adaptieve Forms Core-componenten inschakelen voor uw omgeving](enable-adaptive-forms-core-components.md).
 * Basiskennis voor [een aangepaste functie maken](https://experienceleague.adobe.com/docs/experience-manager-learn/forms/adaptive-forms/custom-functions-aem-forms.html?lang=en#:~:text=AEM%20Forms%206.5%20introduced%20the,use%20them%20across%20multiple%20forms.).
 * Installeer de nieuwste versie van [Apache Maven](https://maven.apache.org/download.cgi).
 

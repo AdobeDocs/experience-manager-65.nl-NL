@@ -2,10 +2,10 @@
 title: Ontwikkeling zonder hoofd voor AEM 6.5 sites
 description: Leer hoe AEM 6.5 krachtige mogelijkheden zonder kop, zoals Content Models, Content Fragments, en de GraphQL API samenwerken om u in staat te stellen uw ervaringen centraal te beheren en hen te dienen over kanalen.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '495'
-ht-degree: 1%
+source-wordcount: '520'
+ht-degree: 0%
 
 ---
 
@@ -55,3 +55,4 @@ Er zijn een aantal bronnen beschikbaar waarmee u aan de slag kunt met AEM functi
 | [Headless Developer Journey](/help/journey-headless/developer/overview.md) | **Voor gebruikers die nog niet zijn AEM en zonder kop** technologieën, begin hier voor een uitvoerige inleiding aan AEM en zijn headless eigenschappen van de theorie van headless door met uw eerste hoofdloze project te leven. | Handleiding | Ontwikkelaars **nieuw tot AEM en zonder kop** | 1 uur |
 | [Aan de slag met koploze gids](/help/sites-developing/headless/getting-started/introduction.md) | **Voor ervaren AEM** Voor een kort overzicht van de belangrijkste functies voor het AEM zonder kop, bekijkt u dit snelstartoverzicht. | Snel starten | Ontwikkelaars, beheerders **met AEM ervaring** | 20 minuten |
 | [Aan de slag met AEM praktische zelfstudie zonder hoofd](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) | **Als u liever een praktische aanpak kiest en vertrouwd bent met AEM** Deze zelfstudie duikt rechtstreeks in het maken van een eenvoudig project zonder kop. | Zelfstudie | Ontwikkelaars | 2 uur |
+| [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html) | Deze inning van middelen wordt zowel voor **new** en **ervaren** ontwikkelaars. | Inzameling van middelen | Ontwikkelaars | |

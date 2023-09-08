@@ -2,9 +2,9 @@
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1594'
+source-wordcount: '1612'
 ht-degree: 0%
 
 ---
@@ -126,4 +126,6 @@ Gebaseerd op deze kennis en doorgaan met uw AEM zonder hoofd door het document o
 
 Terwijl u wordt aangeraden naar het volgende gedeelte van de ontwikkeling zonder kop te gaan door het document te bekijken [Aan de slag met AEM headless](getting-started.md)Hieronder volgt een aantal aanvullende, optionele bronnen die een diepgaander inzicht geven in bepaalde concepten die in dit document worden genoemd, maar die niet nodig zijn om verder te gaan op de weg zonder kop.
 
+* An [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
+* De [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
 * [Tutorials zonder kop AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html) - Gebruik deze praktische zelfstudies om te verkennen hoe u de verschillende opties kunt gebruiken om inhoud aan eindpunten zonder kop met AEM te leveren en te kiezen wat bij u past.

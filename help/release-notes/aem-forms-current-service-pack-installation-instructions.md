@@ -2,7 +2,7 @@
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatieinstructies voor OSGi- en JEE-omgeving
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: d179c45044bbc987d60e180debefb243a5ee7cc6
+source-git-commit: 692193326e0623036ee3834985cfa9dc8d7076d9
 workflow-type: tm+mt
 source-wordcount: '1709'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 |---|---|
 | Versie | 6.5.18.0 |
 | Type | Service Pack-release |
-| Datum | 29 augustus 2023 |
+| Datum | 31 augustus 2023 |
 | URL downloaden | [Nieuwste AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) |
 
 >[!NOTE]
@@ -33,7 +33,7 @@ Adobe Experience Manager (AEM) Forms Service Pack bevat nieuwe en verbeterde fun
 
 >[!NOTE]
 >
-> Adobe geeft een volledig installatieprogramma elke zesde service pack uit. AEM 6.5 Forms Service Pack 18 (6.5.18.0) is het nieuwste volledige installatieprogramma voor JEE. Het volledige installatieprogramma biedt ondersteuning voor nieuwe platforms, terwijl het installatieprogramma voor het gewone servicepack nieuwe functies bevat, oplossingen voor problemen en algemene verbeteringen. Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software voor uw AEM 6.5 Forms te gebruiken in JEE-omgeving, raadt de Adobe aan AEM 6.5.18.0 Forms te gebruiken op het volledige installatieprogramma van JEE dat op 29 augustus 2023 wordt uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 wordt uitgebracht of AEM 6.5.12 Installer die op 3 maart 2022. Installeer na gebruik van het volledige installatieprogramma het nieuwste servicepakket.
+> Adobe geeft een volledig installatieprogramma elke zesde service pack uit. AEM 6.5 Forms Service Pack 18 (6.5.18.0) is het nieuwste volledige installatieprogramma voor JEE. Het volledige installatieprogramma biedt ondersteuning voor nieuwe platforms, terwijl het installatieprogramma voor het gewone servicepack nieuwe functies bevat, oplossingen voor problemen en algemene verbeteringen. Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software voor uw AEM 6.5 Forms te gebruiken in JEE-omgeving, raadt de Adobe aan AEM 6.5.18.0 Forms te gebruiken op het volledige installatieprogramma van JEE, dat op 31 augustus 2023 wordt uitgebracht in plaats van AEM 6.5 Forms-installatieprogramma dat op 8 april 2019 wordt uitgebracht of AEM 6.5.122 Inter installateur die op 3 wordt uitgebracht maart 2022. Installeer na gebruik van het volledige installatieprogramma het nieuwste servicepakket.
 
 ## Download en installeer Service Pack op een AEM FormOn JEE-omgeving {#download-and-install-for-jee-service-pack}
 

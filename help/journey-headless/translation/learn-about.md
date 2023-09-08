@@ -2,9 +2,9 @@
 title: Meer informatie over inhoud zonder kop en hoe u deze vertaalt in AEM
 description: Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theorie van AEM vertaling.
 exl-id: cb2e2d89-e2d2-462f-8fff-b201847d0641
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '756'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Ontdek headless-concepten, hoe ze in kaart worden gebracht aan AEM, en de theori
 
 ## Doelstelling {#objective}
 
-Met dit document krijgt u een beter inzicht in de levering van inhoud zonder kop, hoe AEM koploze inhoud ondersteunt en hoe dergelijke inhoud kan worden vertaald. Na het lezen moet u:
+Met dit document krijgt u inzicht in de inhoud zonder kop, hoe AEM koploze inhoud ondersteunt en hoe dergelijke inhoud kan worden vertaald. Na het lezen moet u:
 
 * Begrijp de basisconcepten van inhoud zonder kop levering.
 * Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
@@ -49,13 +49,13 @@ Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft h
 
 De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaringen, progressieve webapps (PWA), enz., nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
-Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud echt nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
+Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
 
 ## Koploze inhoud omzetten in AEM {#translating-in-aem}
 
 Naast robuuste tools voor het maken, beheren en leveren van traditionele webpagina&#39;s op een volledig stapelbare manier, biedt AEM ook de mogelijkheid om op zichzelf staande selecties van inhoud te maken en deze zonder problemen te bedienen.
 
-Dankzij de kracht van AEM kan de inhoud zonder kop, volledig of in beide modellen tegelijk worden geleverd. Voor de vertaalspecialist, kan de zelfde reeks vertaalhulpmiddelen op beide soorten inhoud worden toegepast, die u een verenigde benadering geven voor het vertalen van uw inhoud.
+Dankzij de kracht van AEM kan de inhoud zonder kop, volledig of in beide modellen tegelijk worden geleverd. Voor de vertaalspecialist, kan de zelfde reeks vertaalhulpmiddelen op beide types van inhoud worden toegepast, die u een verenigde benadering geven voor het vertalen van uw inhoud.
 
 Op reis leert u hoe AEM inhoud vertaalt, maar op een hoog niveau is het concept eenvoudig:
 
@@ -71,10 +71,13 @@ Bedankt dat u aan de slag bent gegaan met uw AEM reis zonder hoofd! Nu u dit doc
 * Begrijp de basisconcepten van inhoud zonder kop levering.
 * Wees vertrouwd met de manier waarop AEM ondersteuning biedt voor headless en translatie.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Ga aan de slag met AEM headless vertaling](getting-started.md) waar u een overzicht krijgt van hoe AEM inhoud zonder kop beheert en de vertaalhulpmiddelen van kent.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Ga aan de slag met AEM headless vertaling](getting-started.md) waar u een overzicht krijgt van hoe AEM inhoud zonder kop beheert en de vertaalhulpmiddelen van kent.
 
 ## Aanvullende bronnen {#additional-resources}
 
 U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [Ga aan de slag met AEM koploze vertaling,](getting-started.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
 * [MSM en vertaling](/help/sites-administering/msm-and-translation.md) - De details van AEM beheer van meerdere sites en hoe deze werkt met de vertaalhulpmiddelen
+* An [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
+* De [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

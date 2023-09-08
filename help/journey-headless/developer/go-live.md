@@ -2,9 +2,9 @@
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 71842228dd3cb1ce3b79728912e8333d25fccefc
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1846'
+source-wordcount: '1873'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Een volledige AEM omgeving bestaat uit een Auteur, Publish en Dispatcher. Deze c
 
 * **De service Auteur** In dit deelvenster kunnen interne gebruikers inhoud maken, beheren en voorvertonen.
 
-* **De service Publiceren** wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen eindgebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd (gerepliceerd) naar de service Publiceren. Het meest gebruikelijke implementatiepatroon met toepassingen zonder kop is dat de productieversie van de toepassing verbinding maakt met een AEM-publicatieservice.
+* **De service Publiceren** wordt beschouwd als de &quot;live&quot;-omgeving en is doorgaans de interactie tussen eindgebruikers. Inhoud wordt na bewerking en goedkeuring in de service Auteur gedistribueerd (gerepliceerd) naar de service Publiceren. Het gemeenschappelijkste plaatsingspatroon met AEM hoofdloze toepassingen moet de productieversie van de toepassing hebben met de AEM publicatieservice verbinden.
 
 * **De verzender** is een statische webserver die is uitgebreid met de module AEM Dispatcher. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
 
@@ -84,7 +84,7 @@ In een productiesysteem zullen een Dispatcher en een http Apache-server altijd v
 
 Om uw AEM project zonder kop voor te bereiden op de lancering, zorg ervoor dat alle samenstellende delen van uw project goed functioneren.
 
-Om dat te doen, moet je alles samenvoegen: code, inhoud, en configuratie, en test het in een lokale ontwikkelomgeving voor ga levende gereedheid.
+Om dat te doen, moet u alles samenvoegen: code, inhoud, en configuratie, en het testen in een lokale ontwikkelomgeving voor ga levende bereidheid.
 
 De lokale ontwikkelomgeving bestaat uit drie hoofdgebieden:
 
@@ -137,7 +137,7 @@ Nu is het tijd om uw AEM toepassing zonder kop klaar te maken voor de introducti
 
 ## Distribueren naar productie {#deploy-to-production}
 
-Het opstellen aan Productie kan afhangen van of u hebt *traditioneel* AEM instantie die gebruikmaakt van Maven of die zich op Adobe Managed Services (AMS) bevindt en daarom Cloud Manager gebruikt.
+Het opstellen aan Productie kan afhangen van of u hebt *traditioneel* AEM instantie die gebruikmaakt van Maven of op Adobe Managed Services (AMS) en daarom Cloud Manager gebruikt.
 
 ## Distribueren naar productie met Maven {#deploy-to-production-maven}
 
@@ -145,7 +145,7 @@ Voor een *traditioneel* implementatie (niet-AMS) met behulp van Maven, raadpleeg
 
 ## Distribueren naar productie met gebruik van Cloud Manager {#deploy-to-production-cloud-manager}
 
-Als u een AMS-klant bent en Cloud Manager gebruikt, kunt u de code bijwerken naar een [gecentraliseerde Git-opslagplaats in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
+Als u een AMS-klant bent en Cloud Manager gebruikt, kunt u, nadat u hebt gecontroleerd of alles goed werkt, de code bijwerken naar een [gecentraliseerde Git-opslagplaats in Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/managing-code/git-integration.html).
 
 Nadat de updates naar Cloud Manager zijn geüpload, kunt u ze implementeren om te AEM [De CI/CD-pijplijn van Cloud Manager](https://experienceleague.adobe.com/docs/experience-manager-cloud-manager/content/using/code-deployment.html).
 
@@ -168,7 +168,7 @@ Voor gebruikers die de beste ervaring hebben wanneer ze de toepassing zonder AEM
 * Toepassings- en ruimtespecifieke prestatierapporten openen
    * Als de server is geactiveerd, controleert u of de algemene meetwaarden groen/oranje/rood zijn en identificeert u vervolgens specifieke toepassingsproblemen
    * Open dezelfde rapporten die hierboven zijn gefilterd naar app of space (bijvoorbeeld Photoshop-bureaublad, paywall)
-   * Logbestand-API&#39;s van Splunk gebruiken om toegang te krijgen tot service- en toepassingsprestaties
+   * Logbestand-API&#39;s van Splunk gebruiken voor toegang tot service- en toepassingsprestaties
    * Neem contact op met de Klantenondersteuning als er andere problemen zijn.
 
 ## Problemen oplossen {#troubleshooting}
@@ -181,13 +181,13 @@ Volg deze beste praktijken als algemene benadering van het zuiveren:
 * Functionaliteit en prestaties valideren met de productieversie van de toepassing
 * Valideren met de JSON-voorvertoning van de Content Fragment Editor
 * Als u wilt controleren of er problemen optreden met de clienttoepassing of levering, controleert u de JSON in de clienttoepassing
-* Als u wilt controleren of er problemen zijn met inhoud of AEM in cache, inspecteert u de JSON met behulp van GraphQL
+* Als u wilt controleren of er problemen zijn met inhoud of AEM in cache, inspecteert u de JSON met GraphQL
 
 ### Een probleem aanmelden met ondersteuning {#logging-a-bug-with-support}
 
 Voer de volgende stappen uit als u een bug efficiënt wilt aanmelden bij Support voor het geval u meer hulp nodig hebt:
 
-* Maak, indien nodig, screenshots van het probleem
+* Indien nodig screenshots van het probleem nemen
 * Een manier documenteren om het probleem te reproduceren
 * Documenteer de inhoud waarmee de uitgave wordt gereproduceerd
 * Logboek een kwestie door het portaal van de Steun van de AEM met de aangewezen prioriteit
@@ -199,7 +199,7 @@ Gefeliciteerd! U hebt de AEM Headless Developer Journey voltooid! U zou nu een i
 * Het verschil tussen koploze en koprijke levering van inhoud.
 * AEM functies zonder kop.
 * Hoe te om Hoofdloze project te organiseren en te AEM.
-* Hoe te om koploze inhoud in AEM tot stand te brengen.
+* Hoe te om koploze inhoud in AEM te creëren.
 * Hoe te om koploze inhoud in AEM terug te winnen en bij te werken.
 * Hoe te om met een AEM Zwaardeloos project te leven.
 * Wat moet u doen nadat de go-live is voltooid.
@@ -214,7 +214,7 @@ Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga aan het facult
 
 ## Aanvullende bronnen {#additional-resources}
 
-* [Handleiding voor het ontwikkelen van AEM](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
+* [Handleiding voor AEM ontwikkelen](https://experienceleague.adobe.com/docs/experience-manager-65/developing/introduction/the-basics.html?lang=en)
 
 * [WKND-zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html?lang=en)
 
@@ -225,3 +225,7 @@ Als dit soort flexibiliteit iets u voor uw project nodig hebt, ga aan het facult
    * [CDN-cache beheren](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html#controlling-a-cdn-cache)
 
    * Het vormen van [CDN Rewriter](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/osgi-configuration-settings.html) (*zoeken naar CDN Rewriter*)
+
+* [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
+* [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

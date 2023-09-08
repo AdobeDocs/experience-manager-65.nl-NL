@@ -2,9 +2,9 @@
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1066'
 ht-degree: 1%
 
 ---
@@ -329,3 +329,6 @@ U moet uw AEM zonder kop voortzetten door het document opnieuw te bekijken [Hoe 
 * [AEM-kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [CORS/AEM toegelicht](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-article-understand.html)
 * [Video - Ontwikkelen voor CORS met AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/cors-security-technical-video-develop.html)
+* An [Inleiding tot AEM als een headless CMS](/help/sites-developing/headless/introduction.md)
+* De [AEM Developer Portal](https://experienceleague.adobe.com/landing/experience-manager/headless/developer.html)
+* [Tutorials voor headless in AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/overview.html)

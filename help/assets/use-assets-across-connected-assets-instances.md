@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
 workflow-type: tm+mt
 source-wordcount: '3832'
 ht-degree: 16%
@@ -92,7 +92,7 @@ Aangesloten elementen en lokale elementen configureren [!DNL Sites] connectivite
 1. Toegang tot bestaande [!DNL Sites] plaatsing of creeer een plaatsing gebruikend het volgende bevel:
 
    1. Voer in de map van het JAR-bestand de volgende opdracht uit op een terminal om elk bestand te maken [!DNL Experience Manager] server.
-      `java -XX:MaxPermSize=768m -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
+      `java -Xmx4096m -jar <quickstart jar filepath> -r samplecontent -p 4502 -nofork -gui -nointeractive &`
 
    1. Na een paar minuten [!DNL Experience Manager] server wordt gestart. Overweeg dit [!DNL Sites] implementatie als de lokale computer voor het ontwerpen van webpagina&#39;s, bijvoorbeeld op `https://[local_sites]:4502`.
 

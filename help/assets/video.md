@@ -10,9 +10,9 @@ docset: aem65
 feature: Asset Management
 role: User, Admin
 exl-id: 28cf9e39-cab4-4278-b6c9-e84cc31964db
-source-git-commit: 051e6838bea0be9f826183db935d33725c18386d
+source-git-commit: 0738f53564cb2e2607d739d97bdd1bb2fc64ac6e
 workflow-type: tm+mt
-source-wordcount: '11141'
+source-wordcount: '11138'
 ht-degree: 1%
 
 ---
@@ -605,7 +605,6 @@ U kunt onder andere de volgende gebruiksscenario&#39;s gebruiken voor het toevoe
 | **Ondertitels** | Ondersteuning voor meerdere talen |
 |  | Beschrijvende tekst voor toegankelijkheid |
 | **Audiotracks** | Ondersteuning voor meerdere talen |
-|  | Stereo en meerdere kanalen (surround sound) |
 |  | Commentaartracks |
 |  | Beschrijvende audio |
 
@@ -698,7 +697,7 @@ In het scenario waarin u Dynamic Media hebt geconfigureerd voor direct publicere
 
 >[!CAUTION]
 >
->Wanneer u ondertitelingsbestanden of audiobestanden uploadt naar een video die al is gepubliceerd, worden deze bestanden verwijderd als u [*herverwerken*](/help/assets/processing-profiles.md#reprocessing-assets) de video. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de ondertitelingsbestanden en audiotrackbestanden opnieuw uploaden naar de video.
+>Wanneer u ondertitelingsbestanden of audiobestanden uploadt naar een video die gepubliceerd of niet gepubliceerd is, worden de bestanden verwijderd als u [*herverwerken*](/help/assets/processing-profiles.md#reprocessing-assets) de video. Alleen de oorspronkelijke audio van de video blijft intact. In dergelijke gevallen moet u de ondertitelingsbestanden en audiotrackbestanden opnieuw uploaden naar de video.
 
 #### Meerdere bijschriften toevoegen aan een video met een bestaande URL met bijschriftoptie
 

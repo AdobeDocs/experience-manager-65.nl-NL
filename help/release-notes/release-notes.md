@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: d63355e1042f6ad63a848b97c26dc2f29bab47b1
+source-git-commit: 26cea35dcbdbafe622f975bac7920ea5fd5fbd6c
 workflow-type: tm+mt
-source-wordcount: '4434'
+source-wordcount: '4435'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * **[Verbeterde fout behandeling met de managers van de douanefout in de regelredacteur](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** U kunt nu een aangepaste functie (met behulp van de clientbibliotheek) activeren als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant meedelen dat de dienst neer is
 
-* **[Verbeterde Adobe Sign Workflow-stap](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/adobe-sign-integration-adaptive-forms.html):** Adobe Sign-workflowstap in AEM Workflows is beschikbaar met de volgende verbeteringen.
+* **[Verbeterde Adobe Sign Workflow-stap](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** Adobe Sign-workflowstap in AEM Workflows is beschikbaar met de volgende verbeteringen.
 
    * **Uitgebreide beveiliging met verificatie op basis van overheidsidentiteitskaart voor Adobe Sign:** Verificatie op basis van Adobe Acrobat Sign-overheidsidentiteitskaart biedt een extra verificatielaag door gebruikers in staat te stellen hun identiteit te verifiëren met behulp van door de overheid uitgegeven id&#39;s (rijbewijs, nationale id, paspoort). Door vertrouwde identificatiedocumenten te gebruiken, voegt deze verbetering een extra niveau van vertrouwen aan het ondertekeningsproces toe, die het ideaal maakt voor scenario&#39;s die verhoogde veiligheid, naleving, en gebruikersbevestiging vereisen.
 
@@ -160,9 +160,7 @@ Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software v
 
 ### [!DNL Forms]{#forms-6518}
 
-<!--
-Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release.
--->
+<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release. -->
 
 * **Document Services**
    * Wanneer een gebruiker een transformPDF-service gebruikt, mislukt deze met een uitzondering: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
@@ -175,7 +173,7 @@ Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on
    * Wanneer een gebruiker upgradet naar AEM Forms en de sendToPrinter-service gebruikt, neemt het heapgebruik voortdurend toe. (FORMS-10148)
    * Op JBoss 7.4 EAP-server mislukt de e-mailfunctionaliteit met `java.io.IOException`. (FORMS-10138)
    * Wanneer een gebruiker de dienst transformPDF gebruikt, ontbreekt het met een fout: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
-   * Na bevordering aan AEM Service Pack 6.5.14.0, komt de kwestie in de assembleerdienst voor terwijl het gebruiken van een specifiek malplaatje voor. (FORMS-9445, FORMS-9408)
+   * Na bevordering aan AEM Service Pack 6.5.14.0, komt de kwestie in de assembleerdienst voor wanneer het gebruiken van een specifiek malplaatje voor. (FORMS-9445, FORMS-9408)
   <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
 * **Adaptieve Forms**
    * Wanneer een gebruiker een aangepaste functie probeert aan te roepen zonder een veld te wijzigen, zoals het instellen van de waarde van een ander veld, mislukt dit. (FORMS-9921)

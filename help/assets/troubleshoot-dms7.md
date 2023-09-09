@@ -33,7 +33,7 @@ Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende 
 
   Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen van Dynamic Media Classic naar Dynamic Media migreert.
 
-* Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder verschijnt **[!UICONTROL Available Configurations]**.
+* Navigeer naar de gebruikersinterface van Cloud Servicen en bevestig dat de provisioned account onder verschijnt **[!UICONTROL Available Configurations]**.
 * Zorg ervoor dat de `Dynamic Media Asset Activation (scene7)` replicatieagent is ingeschakeld.
 
   Deze replicatieagent wordt gevonden onder Medewerkers op Auteur.
@@ -177,7 +177,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
    <td>
     <ol>
      <li>Controleer de Experience Manager-instantie met <code>-r dynamicmedia_scene7</code></li>
-     <li>Controleer of de Dynamic Media-configuratie onder Cloud Services juist is ingesteld.</li>
+     <li>Controleer of de Dynamic Media Configuration onder Cloud Servicen correct is ingesteld.</li>
      <li>Controleer of de map een videoprofiel heeft. Controleer ook het videoprofiel.</li>
     </ol> </td>
   </tr>
@@ -255,7 +255,7 @@ Als de voorbeeldbestanden of de vooraf ingestelde illustratie van de viewer niet
 1. Navigeer naar de CRX Package Manager: `https://localhost:4502/crx/packmgr/`.
 1. Zoeken naar een viewerpakket in de lijst; het begint met `cq-dam-scene7-viewers-content`.
 1. Selecteren **Opnieuw installeren**.
-1. Onder Cloud Services, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
+1. Onder Cloud Servicen, navigeer aan de pagina van de Configuratie van Dynamic Media, dan open de doos van de configuratiedialoog voor uw configuratie Dynamic Media - S7.
 1. Geen wijzigingen aanbrengen, selecteer **Opslaan**.
 Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en de illustraties te maken en te synchroniseren.
 
@@ -276,4 +276,4 @@ Deze opslaghandeling activeert de logica opnieuw om de voorbeeldelementen, de CS
 1. Verwijder de `viewer` map.
 1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **[!UICONTROL Save All]**.
 1. Selecteer in de linkerbovenhoek van de pagina CRXDE Lite de optie **Terug naar startpunt** pictogram.
-1. Maak opnieuw een [Dynamic Media-configuratie in Cloud Services](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).
+1. Maak opnieuw een [Dynamic Media-configuratie in Cloud Servicen](/help/assets/config-dms7.md#configuring-dynamic-media-cloud-services).

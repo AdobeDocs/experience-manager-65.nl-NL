@@ -439,7 +439,7 @@ Aanbevolen Solr-configuratiebestanden
 
 ### Gereedschappen voor AEM indexeren {#aem-indexing-tools}
 
-AEM 6.1 integreert ook twee indexerende hulpmiddelen in AEM 6.0 als deel van de Adobe Consulting Toolset van de Diensten van de Gemeenschappelijke Onderneming:
+AEM 6.1 integreert ook twee indexerende hulpmiddelen in AEM 6.0 als deel van de Adobe Consulting Services Commons toolset:
 
 1. **Query uitvoeren**, een hulpmiddel dat wordt ontworpen om beheerders te helpen begrijpen hoe de vragen worden uitgevoerd;
 1. **Indexbeheer voor onak**, een gebruikersinterface voor het onderhouden van bestaande indexen.

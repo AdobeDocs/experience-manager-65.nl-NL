@@ -12,7 +12,7 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
 workflow-type: tm+mt
 source-wordcount: '3454'
 ht-degree: 0%
@@ -228,7 +228,7 @@ Zodra u uw middeltype hebt gecreeerd, kunt u uw gebied concretiseren door een ni
 
 Als u stijlen en gedrag voor uw component wilt definiëren, kunt u een speciale [clientbibliotheek](/help/sites-developing/clientlibs.md) die uw aangepaste CSS/LESS en JS definieert.
 
-Als u de clientbibliotheek alleen voor het dialoogvenster van de component wilt laden (de bibliotheek wordt dus niet voor een andere component geladen), moet u de eigenschap instellen `extraClientlibs`** ** van het dialoogvenster naar de categorienaam van de clientbibliotheek die u zojuist hebt gemaakt. Dit is aan te raden als uw clientbibliotheek erg groot is en/of als uw veld specifiek is voor dat dialoogvenster en niet nodig is in andere dialoogvensters.
+Als u de clientbibliotheek alleen voor het dialoogvenster van de component wilt laden (de bibliotheek wordt dus niet voor een andere component geladen), moet u de eigenschap instellen `extraClientlibs` van uw dialoogvenster naar de categorienaam van de clientbibliotheek die u zojuist hebt gemaakt. Dit is aan te raden als uw clientbibliotheek erg groot is en/of als uw veld specifiek is voor dat dialoogvenster en niet nodig is in andere dialoogvensters.
 
 Als u de clientbibliotheek voor alle dialoogvensters wilt laden, stelt u de categorie-eigenschap van de clientbibliotheek in op `cq.authoring.dialog`. Dit is de categorienaam van de clientbibliotheek die standaard wordt opgenomen wanneer alle dialoogvensters worden weergegeven. U wilt dat doen als uw clientbibliotheek klein is en/of uw veld algemeen is en opnieuw kan worden gebruikt in andere dialoogvensters.
 

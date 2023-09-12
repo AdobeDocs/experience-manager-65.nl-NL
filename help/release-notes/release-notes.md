@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: e330d69b7644e8f99498d0ed60afab009c649b40
+source-git-commit: aec2eb3303ad9747f6f56ae2eb31c3c7ed7b0c24
 workflow-type: tm+mt
-source-wordcount: '4527'
+source-wordcount: '4397'
 ht-degree: 0%
 
 ---
@@ -355,16 +355,9 @@ Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/hel
 >
 >UberJar en de andere verwante artefacten zijn beschikbaar op Maven Central Repository in plaats van Adobe Public Maven repository (`repo.adobe.com`). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Er is dus geen `classifier`, met `apis` als de waarde voor de `dependency` -tag.
 
-## Verouderde functies{#removed-deprecated-features}
+## Verouderde en verwijderde functies{#removed-deprecated-features}
 
-Hieronder vindt u een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd met [!DNL Experience Manager] 6.5.7.0. Functies zijn aanvankelijk en later verwijderd uit een toekomstige release. Er is een alternatieve optie opgegeven.
-
-Herzie als u een eigenschap of een vermogen in een plaatsing gebruikt. Ook, ben van plan om de implementatie te veranderen om een afwisselende optie te gebruiken.
-
-| Gebied | Functie | Vervanging |
-|---|---|---|
-| Integrations | Het scherm **[!UICONTROL Experience Manager Cloud Services Opt-In]** is afgekeurd sinds de [!DNL Experience Manager] en [!DNL Adobe Target] integratie wordt bijgewerkt in [!DNL Experience Manager] 6.5. De integratie ondersteunt de Adobe Target Standard API. De API gebruikt verificatie via Adobe IMS en [!DNL Adobe I/O Runtime]. Het steunt de groeiende rol van het instrument Adobe lanceren [!DNL Experience Manager] De optiewizard is functioneel niet relevant op pagina&#39;s voor analyse en personalisatie. | Systeemverbindingen, Adobe IMS-verificatie en [!DNL Adobe I/O Runtime] integratie via de respectieve [!DNL Experience Manager] cloudservices. |
-| Connectors | De Adobe JCR Connector voor Microsoft® SharePoint 2010 en Microsoft® SharePoint 2013 is vervangen voor [!DNL Experience Manager] 6.5 | NVT |
+Zie [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-features.md/).
 
 ## Bekende problemen{#known-issues}
 

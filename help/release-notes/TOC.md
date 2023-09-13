@@ -3,23 +3,22 @@ cloud: Experience Cloud
 product: experience manager
 audience: end-user
 user-guide-title: Opmerkingen bij de release Adobe Experience Manager 6.5
-breadcrumb-title: Release-opmerkingen
+breadcrumb-title: Opmerkingen bij de release
 user-guide-description: Meer informatie over de nieuwste functies in AEM 6.5 in de opmerkingen bij de release.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: 8a7ca99d896fd1ce2ace5b17a91987c6b8535615
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
 source-wordcount: '70'
-ht-degree: 28%
+ht-degree: 25%
 
 ---
 
 
 # Opmerkingen bij de release Adobe Experience Manager 6.5 {#release-notes}
 
-+ [AEM 6.5 Opmerkingen bij de release](home.md)
++ [Opmerkingen bij de release AEM 6.5](home.md)
 + [Opmerkingen bij de huidige release](release-notes.md)
-+ [Installatie-instructies voor AEM Forms Service Pack](aem-forms-current-service-pack-installation-instructions.md)
 + [Opmerkingen bij vorige release]{#service-pack}
    + [6.5.17](previous/6.5.17.md)
    + [6.5.16](previous/6.5.16.md)
@@ -39,6 +38,7 @@ ht-degree: 28%
    + [6.5.2](previous/6.5.2.md)
    + [6.5.1](previous/6.5.1.md)
    + [6.5.0](previous/ga.md)
-+ [AEM Forms JEE Patch Installer](jee-patch-installer-65.md)
++ [Installatie-instructies voor AEM Forms-servicepack](aem-forms-current-service-pack-installation-instructions.md)
++ [AEM Forms JEE-patch installeren](jee-patch-installer-65.md)
 + [Verouderde en verwijderde functies](deprecated-removed-features.md)
-+ [Status van TouchUI-functie](touch-ui-features-status.md)
++ [Status van Touch UI-functie](touch-ui-features-status.md)

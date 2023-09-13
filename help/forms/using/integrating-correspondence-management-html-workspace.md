@@ -1,17 +1,13 @@
 ---
 title: Toepassingen van derden integreren in de AEM Forms-werkruimte
-seo-title: Integrating third-party applications in AEM Forms workspace
 description: Integreer toepassingen van derden, zoals Correspondence Management, in de AEM Forms-werkruimte.
-seo-description: How-to integrate third-party apps like Correspondence Management in AEM Forms workspace.
-uuid: 7654cf86-b896-4db2-8f5d-6c1b2e6c229f
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: f70f21e3-3bec-490d-889e-faf496fb738b
 docset: aem65
 exl-id: 39a3f7db-549f-47f3-8d4f-42d583a4532d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '632'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 De werkruimte van AEM Forms ondersteunt het beheer van taken en voltooiingsactiviteiten voor formulieren en documenten. Deze formulieren en documenten kunnen XDP Forms, Flex®-formulieren of (afgekeurde) hulplijnen zijn die zijn gerenderd in de indelingen XDP, PDF, HTML of Flex.
 
-Deze mogelijkheden worden verder versterkt. AEM Forms ondersteunt nu samenwerking met toepassingen van derden die functionaliteit ondersteunen die vergelijkbaar is met de AEM Forms-werkruimte. Een veelvoorkomend onderdeel van deze functionaliteit is de workflow van de toewijzing en de daaropvolgende goedkeuring van een taak. AEM Forms biedt een enkele uniforme ervaring voor AEM Forms-zakelijke gebruikers, zodat al dergelijke taaktoewijzingen of goedkeuringen voor de ondersteunde toepassingen kunnen worden verwerkt via de AEM Forms-werkruimte.
+Deze mogelijkheden worden verder versterkt. AEM Forms biedt nu ondersteuning voor samenwerking met toepassingen van derden die functionaliteit ondersteunen die vergelijkbaar is met de AEM Forms-werkruimte. Een veelvoorkomend onderdeel van deze functionaliteit is de workflow van de toewijzing en de daaropvolgende goedkeuring van een taak. AEM Forms biedt een enkele uniforme ervaring voor AEM Forms-zakelijke gebruikers, zodat al dergelijke taaktoewijzingen of goedkeuringen voor de ondersteunde toepassingen kunnen worden verwerkt via de AEM Forms-werkruimte.
 
 Laten we Correspondence Management bijvoorbeeld beschouwen als de voorbeeldkandidaat voor integratie met de AEM Forms-werkruimte. Correspondentiebeheer heeft het concept van een &#39;brief&#39;, die kan worden weergegeven en acties mogelijk maakt.
 
@@ -30,11 +26,11 @@ Begin door een malplaatje van het Beheer van de Correspondentie te creëren dat 
 
 Heb toegang tot het malplaatje van het Beheer van de Correspondentie bij zijn URL om te verifiëren of het malplaatje van het Beheer van de Correspondentie met succes kan worden teruggegeven. De URL heeft een patroon dat lijkt op `https://'[server]:[port]'/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-waar `encodedLetterId` is de URL-gecodeerde letter-ID. Geef dezelfde letter-id op wanneer u het renderproces voor werkruimtetaak in Workbench definieert.
+Wanneer `encodedLetterId` Dit is de URL-gecodeerde letter-ID. Geef dezelfde letter-id op wanneer u het renderproces voor werkruimtetaak in Workbench definieert.
 
 ## Een taak maken om een letter te renderen en te verzenden in AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
-Controleer voordat u deze stappen uitvoert of u lid bent van de volgende groepen:
+Voordat u deze stappen uitvoert, moet u ervoor zorgen dat u lid bent van de volgende groepen:
 
 * cm-agent-gebruikers
 * WerkruimtGebruikers
@@ -102,13 +98,13 @@ Gebruik de volgende stappen om een taak tot stand te brengen om een brief in AEM
    ```
 
    [Bestand ophalen](assets/dscsample.zip)
-DSC downloaden: Een voorbeeld-DSC is beschikbaar in het bestand DSCSample.zip hierboven. Download en decomprimeer het bestand DSCSample.zip. Alvorens u de dienst van DSC gebruikt, moet u het vormen. Zie voor meer informatie [De DSC-service configureren](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
+DSC downloaden: een voorbeeld-DSC is beschikbaar in het bestand DSCSample.zip dat hierboven is gekoppeld. Download en decomprimeer het bestand DSCSample.zip. Alvorens u de dienst van DSC gebruikt, moet u het vormen. Zie [De DSC-service configureren](../../forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Selecteer in het dialoogvenster Activiteit definiëren de juiste activiteit, zoals getLetterInstanceInfo, en klik op **OK**.
 
 1. Implementeer de toepassing. Als u hierom wordt gevraagd, checkt u de middelen in en slaat u deze op.
-1. Meld u aan bij de werkruimte AEM formulieren op https://&#39;[server]:[poort]&quot;/lc/content/ws.
-1. Open de taak die u hebt toegevoegd, CMRenderer. De letter Correspondence Management wordt weergegeven.
+1. Meld u aan bij de werkruimte AEM formulieren op https://&#39;[server]:[poort]...
+1. Open de taak die u had toegevoegd, CMRenderer. De letter Correspondence Management wordt weergegeven.
 
    ![werkruimte](assets/cminworkspace.png)
 

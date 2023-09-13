@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 exl-id: 3fb069cf-d3ed-47b0-b6bf-82e110b3b059
-source-git-commit: f8643f6118e0bc6bfb2ee0e093155cf0907eb5d3
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '708'
 ht-degree: 0%
 
 ---
@@ -18,13 +18,13 @@ Voer de volgende stappen uit in de aanbevolen volgorde om de Android-app voor AE
 
 1. [Het AEM Forms App Source Code-pakket downloaden](#download-android-zip)
 1. [Omgevingsvariabelen instellen](#set-environment-variable-android)
-1. [Standaard AEM Forms-app ontwikkelen](#set-up-the-xcode-project)
+1. [Een standaard AEM Forms-app ontwikkelen](#set-up-the-xcode-project)
 
 ## Het AEM Forms App Source Code-pakket downloaden {#download-android-zip}
 
 AEM Forms App Source Code Package verwijst naar de `adobe-lc-mobileworkspace-src-<version>.zip` archief. Dit archief bevat de broncode die is vereist voor het maken van een aangepaste AEM Forms-app. Het archief wordt opgenomen in het `adobe-aemfd-forms-app-src-pkg-<version>.zip`op de Software Distribution beschikbaar.
 
-Voer de volgende stappen uit om de `adobe-aemfd-forms-app-src-pkg-<version>.zip` bestand:
+Als u het dialoogvenster `adobe-aemfd-forms-app-src-pkg-<version>.zip` voert u de volgende stappen uit:
 
 1. Openen [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Tikken **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
@@ -49,9 +49,9 @@ Stel de volgende omgevingsvariabelen in voordat u het constructieproces voor de 
 * Stel de `ANDROID_SDK_ROOT` systeemomgevingsvariabele naar de SDK-locatie voor Android. Bijvoorbeeld C:\Users\&amp;lt;gebruikersnaam>\AppData\Local\Android\Sdk
 * Stel de `Path` systeemomgevingsvariabele om de locatie van de platformhulpprogramma&#39;s en tools-map voor Android op te nemen. Bijvoorbeeld C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\platform-tools en C:\Users\&amp;lt;username>\AppData\Local\Android\Sdk\tools.
 
-## Standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
+## Een standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
 
-Nadat u de adobe-lc-mobileworkspace-src hebt opgeslagen&lt;version>.zip-bestand op het lokale bestandssysteem en stel de omgevingsvariabelen in, maak een standaard AEM Forms Android-app met een van de volgende opties:
+Nadat u de adobe-lc-mobileworkspace-src-&lt;version>.zip-bestand op het lokale bestandssysteem en stel de omgevingsvariabelen in, maak een standaard AEM Forms Android-app met een van de volgende opties:
 
 * [AEM Forms-app ontwikkelen met Android Studio](#using-android-studio)
 * [.apk-bestand genereren met Android Studio](#generate-apk-android-studio)
@@ -81,7 +81,7 @@ Voer de volgende stappen uit om een AEM Forms-app te maken met Android Studio:
 
 ### .apk-bestand genereren met Android Studio {#generate-apk-android-studio}
 
-Voer de volgende stappen uit om het .apk-bestand te genereren met Android Studio:
+Ga als volgt te werk om het .apk-bestand te genereren met Android Studio:
 
 1. Start de Android Studio-toepassing op uw computer.
 1. Selecteren **Een bestaand Android Studio-project openen**. Als het dialoogvenster voor het openen van een bestaand project niet automatisch wordt weergegeven, selecteert u **Bestand** > **Openen**.
@@ -89,7 +89,7 @@ Voer de volgende stappen uit om het .apk-bestand te genereren met Android Studio
 
    De optie Android wordt weergegeven in het linkerdeelvenster.
 
-1. Selecteren **Opbouwen** > **APK samenstellen** om het .apk-bestand te genereren.
+1. Selecteer **Opbouwen** > **APK samenstellen**.
 
    Selecteer optioneel **Opbouwen** > **Ondertekende APK genereren** om een [ondertekende versie](https://developer.android.com/studio/publish/app-signing) van het .apk-bestand.
 
@@ -99,4 +99,4 @@ Nadat het .apk-bestand is gegenereerd, voert u de volgende opdracht uit om de to
 
 **Windows-gebruikers:** `adb install %HOMEPATH%\Projects\[your-project]\adobe-lc-mobileworkspace-src-[version]\android\build\outputs\apk\android-debug.apk`
 
-**MAC-gebruikers:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`
+**Mac-gebruikers:** `adb install [User_Home]/Projects/[your-project]/adobe-lc-mobileworkspace-src-[version]/android/build/outputs/apk/android-debug.apk`

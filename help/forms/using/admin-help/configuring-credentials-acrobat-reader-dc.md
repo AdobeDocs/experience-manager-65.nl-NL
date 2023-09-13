@@ -1,47 +1,43 @@
 ---
-title: Referenties configureren voor gebruik met Acrobat Reader DC-extensies
-seo-title: Configuring credentials for use with Acrobat Reader DC extensions
-description: Leer hoe u referenties configureert voor gebruik met Acrobat Reader DC-extensies.
-seo-description: Learn how to configure credentials for use with Acrobat Reader DC extensions.
-uuid: 9210e6c9-6f5c-402d-b355-b104cdffd5eb
+title: Referenties configureren voor gebruik met Acrobat Reader DC Extensions
+description: Leer hoe u referenties configureert voor gebruik met Acrobat Reader DC Extensions.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
 exl-id: e8015d59-7587-46dc-a672-e0f1108102ad
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '555'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
 
-# Referenties configureren voor gebruik met Acrobat Reader DC-extensies{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
+# Referenties configureren voor gebruik met Acrobat Reader DC Extensions{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
-Als u gebruiksrechten wilt toepassen op PDF-documenten, configureert u AEM formulieren met een geldige referentie voor Acrobat Reader DC-extensies. Tijdens de installatie van AEM formulieren kan een referentie zijn geconfigureerd. Als u uw Acrobat Reader DC-extensieverantwoording niet hebt geconfigureerd tijdens het uitvoeren van Configuration Manager of als u een nieuwe of vervangende referentie moet importeren, kunt u dit doen met de pagina&#39;s van het Betrouwbaarheidsbeleid voor winkelbeheer.
+Als u gebruiksrechten wilt toepassen op PDF-documenten, configureert u AEM formulieren met een geldige referentie voor Acrobat Reader DC Extensions. Tijdens de installatie van AEM formulieren kan een referentie zijn geconfigureerd. Als u de Acrobat Reader DC Extensions-referentie niet hebt geconfigureerd tijdens het uitvoeren van Configuration Manager of als u een nieuwe of vervangende referentie moet importeren, kunt u dit doen met de pagina&#39;s van het Betrouwbaarheidsbeleid.
 
-Als u een evaluatiereferentie gebruikt, vervang het met een productieleferentie wanneer het bewegen aan uw productiemilieu. Als u een verlopen referentie of evaluatiereferentie wilt bijwerken, verwijdert u eerst de oude Acrobat Reader DC-extensieverwijzing.
+Als u een evaluatiereferentie gebruikt, vervang het met een productieleferentie wanneer het bewegen aan uw productiemilieu. Als u een verlopen of evaluatiereferentie wilt bijwerken, verwijdert u eerst de oude Acrobat Reader DC Extensions-referentie.
 
-Voor informatie over het verkrijgen van een referentie raadpleegt u [Installatie van AEM formulieren voorbereiden (één server)](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+Voor informatie over het verkrijgen van een referentie raadpleegt u [Installatie van AEM formulieren voorbereiden (één server)](https://helpx.adobe.com/pdf/aem-forms/6-3/prepare-install-single-server.pdf).
 
-De Trust Store kan meer dan één referentie voor Acrobat Reader DC-extensies bevatten. U moet één van die geloofsbrieven als referentie van de Uitbreidingen van de standaardReader aanwijzen. De standaardreferentie wordt gebruikt wanneer een Workbench-gebruiker niet kan bepalen welke referentie moet worden gebruikt tijdens het maken van processen. Deze regels zijn van toepassing op standaardreferenties:
+De Trust Store kan meer dan één Acrobat Reader DC Extensions-referentie bevatten. Wijs één van die geloofsbrieven als referentie van de Uitbreidingen van de standaardReader aan. De standaardreferentie wordt gebruikt wanneer een Workbench-gebruiker niet kan bepalen welke referentie moet worden gebruikt tijdens het maken van processen. Deze regels zijn van toepassing op standaardreferenties:
 
-* Als u een Acrobat Reader DC-extensiereferentie importeert en de Trust Store geen andere Acrobat Reader DC-extensiegegevens bevat, wordt deze als de standaardinstelling ingesteld.
-* Als u een Acrobat Reader DC-extensiereferentie importeert terwijl de optie Standaard is geselecteerd, wordt het standaardtype verwijderd uit een bestaande standaardreferentie. De geïmporteerde referentie wordt de standaardinstelling.
-* U kunt een standaard Acrobat Reader DC-extensieverwijzing niet verwijderen. Als u de standaardreferentie wilt verwijderen, stelt u eerst een andere referentie in als de standaardreferentie. Een uitzondering op deze regel is dat als er slechts één referentie is, u het kunt schrappen alhoewel het het gebrek is.
-* U kunt een standaard Acrobat Reader DC-extensiereferentie niet bijwerken.
+* Als u een Acrobat Reader DC Extensions-referentie importeert en de Trust Store bevat geen andere Acrobat Reader DC Extensions-referenties, wordt deze ingesteld als de standaardinstelling.
+* Als u een Acrobat Reader DC Extensions-referentie importeert terwijl de optie Standaard is geselecteerd, wordt het standaardtype verwijderd uit een bestaande standaardreferentie. De geïmporteerde referentie wordt de standaardinstelling.
+* U kunt geen standaard Acrobat Reader DC Extensions-referentie verwijderen. Om de standaardreferentie te schrappen, plaats eerst een andere referentie als gebrek. Een uitzondering op deze regel is dat als er slechts één referentie is, u het kunt schrappen alhoewel het het gebrek is.
+* U kunt een standaard Acrobat Reader DC Extensions-referentie niet bijwerken.
 
 >[!NOTE]
 >
->U kunt geloofsbrieven ook invoeren en schrappen programmatically. (Zie [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_63).)
+>U kunt geloofsbrieven ook invoeren en schrappen programmatically. (Zie [Programmeren met AEM formulieren](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html).)
 
-## Een Acrobat Reader DC-extensiereferentie importeren {#import-a-acrobat-reader-dc-extensions-credential}
+## Een Acrobat Reader DC Extensions-referentie importeren {#import-a-acrobat-reader-dc-extensions-credential}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
-1. Klik op Importeren en selecteer Acrobat Reader DC Extension Credential onder Type vertrouwde winkel.
-1. (Optioneel) Selecteer Standaard om aan te geven dat deze referentie de standaardreferentie is voor gebruik met Acrobat Reader DC-extensies.
-1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC-extensies. Deze alias wordt ook gebruikt om de referentie via programmacode te benaderen met de SDK voor AEM formulieren.
+1. Klik op Importeren en selecteer Acrobat Reader DC Extensions Credential onder Type vertrouwde winkel.
+1. (Optioneel) Selecteer Standaard om aan te geven dat deze referentie de standaardreferentie is voor gebruik met Acrobat Reader DC Extensions.
+1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC Extensions. Deze alias wordt ook gebruikt om de referentie via programmacode te benaderen met de SDK voor AEM formulieren.
 
    >[!NOTE]
    >
@@ -51,12 +47,12 @@ De Trust Store kan meer dan één referentie voor Acrobat Reader DC-extensies be
 
    Als het foutbericht &quot;Kan referentie niet importeren vanwege een onjuiste bestandsindeling of een onjuist wachtwoord&quot; wordt weergegeven, controleert u of het wachtwoord geldig is.
 
-## Een Acrobat Reader DC-extensiereferentie verwijderen {#remove-a-acrobat-reader-dc-extensions-credential}
+## Een Acrobat Reader DC Extensions-referentie verwijderen {#remove-a-acrobat-reader-dc-extensions-credential}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Selecteer de referentie en klik op Verwijderen.
 
-## Referentie voor Acrobat Reader DC-extensies vervangen {#replace-a-acrobat-reader-dc-extensions-credential}
+## Een Acrobat Reader DC Extensions-referentie vervangen {#replace-a-acrobat-reader-dc-extensions-credential}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Noteer de alias van de bestaande referentie, selecteer deze en klik op Verwijderen.

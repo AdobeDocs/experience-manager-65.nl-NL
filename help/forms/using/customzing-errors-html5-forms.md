@@ -1,30 +1,26 @@
 ---
 title: Foutberichten voor HTML5-formulieren aanpassen
-seo-title: Customizing error messages for HTML5 forms
 description: Leer hoe u de weergave van foutberichten voor HTML5-formulieren kunt aanpassen, inclusief hoe u de positie en weergave van deze formulieren kunt wijzigen.
-seo-description: Learn how to customize the display of error messages for HTML5 forms including how to change their position and appearance.
-uuid: 6f48b64e-858f-4323-ad50-88e25f3c2e3d
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
 exl-id: c4ae53a3-8de1-4985-a73e-829749de9814
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
 
 # Foutberichten voor HTML5-formulieren aanpassen {#customizing-error-messages-for-html-forms}
 
-In HTML5-formulieren hebben foutberichten en -waarschuwingen een vaste positie en weergave (font en color), maar wordt de fout alleen voor een geselecteerd veld weergegeven. Er wordt slechts één fout weergegeven.
+In HTML5-formulieren wordt de fout alleen voor een geselecteerd veld weergegeven. Er wordt slechts één fout weergegeven. Dit is niet het geval in het vak, de foutberichten en waarschuwingen hebben een vaste positie en een vaste weergave (lettertype en kleur).
 
-Het artikel bevat de stappen waarmee u foutberichten voor HTML5-formulieren kunt aanpassen aan
+Het artikel bevat de stappen voor het aanpassen van foutberichten voor HTML5-formulieren, zodat u het volgende kunt doen:
 
 * de weergave en positie van foutberichten wijzigen. U kunt een fout maken die boven, onder en rechts van een veld wordt weergegeven.
 * foutberichten weergeven voor meerdere velden op een bepaald moment.
-* geeft de fout weer ongeacht of een veld is geselecteerd of niet.
+* geeft de fout weer, ongeacht of een veld is geselecteerd of niet.
 
 ## Foutberichten aanpassen  {#customizing-error-messages-nbsp}
 
@@ -36,14 +32,14 @@ Nadat u het pakket hebt uitgepakt, opent u de map CustomErrorManager-1.0-SNAPSHO
 
 ### De positie van foutberichten aanpassen  {#customizing-the-position-of-error-messages-nbsp}
 
-Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div> -tag voor elk fout- en waarschuwingsveld plaatsen op &lt;div> links of rechts labelen en CSS-stijlen toepassen op de &lt;div> tag. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
+Als u de positie van het foutbericht wilt aanpassen, voegt u een &lt;div> -tag voor elk fout- en waarschuwingsveld, plaats de &lt;div> links of rechts labelen en CSS-stijlen toepassen op de &lt;div> -tag. Voor gedetailleerde stappen, zie de hieronder vermelde procedure:
 
 1. Ga naar de `CustomErrorManager-1.0-SNAPSHOT`en opent u de `etc\clientlibs\mf-custom-error-manager\CustomErrorManager\javascript` map.
 1. Open de `customErrorManager.js` bestand voor bewerking. De `markError` -functie in het bestand accepteert de volgende parameters:
 
-   |  |  |
+   |   |  |
    |---|---|
-   | jqWidget | jqWidget is de greep voor widget. |
+   | jqWidget | jqWidget is de greep voor een widget. |
    | msg | bevat het foutbericht |
    | type | geeft aan of het een fout of een waarschuwing betreft |
 
@@ -78,17 +74,17 @@ Als u de positie van het foutbericht wilt aanpassen, voegt u &lt;div> -tag voor 
 
 1. Sla het bestand op en sluit het.
 1. Ga naar de `CustomErrorManager-1.0-SNAPSHOT` en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
-1. Gebruik pakketbeheer om het pakket te uploaden en te installeren.
+1. Gebruik Pakketbeheer om het pakket te uploaden en te installeren.
 
 ## Foutberichten weergeven voor meerdere velden  {#display-error-messages-for-multiple-fields-nbsp}
 
-Gebruik het bijgevoegde pakket om foutberichten voor alle velden tegelijk weer te geven. Gebruik het standaardprofiel als u één foutbericht wilt weergeven.
+Gebruik het bijgevoegde pakket om foutberichten voor alle velden tegelijk weer te geven. Gebruik het standaardprofiel om één foutbericht weer te geven.
 
 ### De weergave van foutberichten aanpassen.  {#customizing-the-appearance-of-error-messages-nbsp}
 
-1. Ga naar etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css folder.
+1. Ga naar de map etc\clientlibs\mf-custom-error-manager\CustomErrorManager\css.
 
-1. Open het bestand sample.css voor bewerking.Het CSS-bestand bevat 2 id&#39;s- #customError, #customWarning. U kunt deze id&#39;s gebruiken om verschillende eigenschappen te wijzigen, zoals kleur, tekengrootte, enz.
+1. Open het bestand sample.css voor bewerking. Het CSS-bestand bevat 2 id&#39;s - #customError, #customWarning. U kunt deze id&#39;s gebruiken om verschillende eigenschappen, zoals kleur en tekengrootte, te wijzigen.
 
    Gebruik de volgende code om de tekengrootte en kleur van fout-/waarschuwingsberichten te wijzigen.
 
@@ -116,13 +112,13 @@ Gebruik het bijgevoegde pakket om foutberichten voor alle velden tegelijk weer t
 
 1. Sla het bestand op en sluit het.
 1. Navigeer naar de map CustomErrorManager-1.0-SNAPSHOT en maak een archief van de mappen jcr_root en META-INF. Wijzig de naam van het archief in CustomErrorManager-1.0-SNAPSHOT.zip.
-1. Gebruik pakketbeheer om het pakket te uploaden en te installeren.
+1. Gebruik Pakketbeheer om het pakket te uploaden en te installeren.
 
 ## Het formulier weergeven met het nieuwe profiel.  {#render-the-form-with-the-new-profile-nbsp}
 
-HTML5-formulieren gebruiken een standaardprofiel uit het vak: https://&lt;server>/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+HTML5-formulieren gebruiken een standaardprofiel uit het vak: `https://&lt;server&gt;/content/xfaforms/profiles/default.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
-Als u een formulier wilt weergeven met de aangepaste foutberichten, geeft u het formulier weer met het foutprofiel: https://&lt;server>/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; the=&quot;&quot; xdp=&quot;&quot;>
+Als u een formulier wilt weergeven met de aangepaste foutberichten, geeft u het formulier weer met het foutprofiel: `https://&lt;server&gt;/content/xfaforms/profiles/error.html?contentRoot=&lt;xdp location&gt;&template=&lt;name of the xdp&gt;`
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM Inhoud en Handel 2020
 description: Opmerkingen bij de release AEM Inhoud en Handel 2020
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '1328'
+source-wordcount: '1352'
 ht-degree: 8%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 8%
 
 ### Wat is er nieuw? {#what-is-new-november}
 
-* Sjabloonovererving toegevoegd aan specifieke categoriepagina. Deze functie verbetert de efficiëntie van zakelijke gebruikers omdat alle subcategorieën de sjabloon kunnen overnemen die voor een specifieke topcategorie is gemaakt.
+* Sjabloonovererving toegevoegd aan een specifieke categoriepagina. Deze functie verbetert de efficiëntie van zakelijke gebruikers omdat alle subcategorieën de sjabloon kunnen overnemen die voor een specifieke topcategorie is gemaakt.
 
 * Venia-referentiearchief bijgewerkt om Experience Fragment te gebruiken voor de voettekst. Zakelijke gebruikers kunnen de voettekst van de pagina bewerken met AEM ontwerpgereedschappen.
 
@@ -29,7 +29,7 @@ ht-degree: 8%
 
 * De afhandelingscomponent is verbeterd en biedt kopers de mogelijkheid om het land van bestemming te betreden, zodat ze facturerings- en verzendadressen buiten de Verenigde Staten kunnen invoeren.
 
-* De component van de navigatie die wordt uitgebreid om de Laag van Gegevens van de Cliënt van Adobe te hydreren.
+* De component van de navigatie die wordt uitgebreid om de Laag van de Gegevens van de Cliënt van de Adobe te hydrateren.
 
 * Meerdere opgeloste problemen.
 
@@ -43,9 +43,9 @@ ht-degree: 8%
 
 ### Wat is er nieuw? {#what-is-new-october}
 
-* De nieuwe die component van de carrousel van de Categorie wordt toegevoegd om bedrijfsgebruikers toe te laten om deze component op AEM inhoudspagina&#39;s te slepen en te laten vallen om inhoudspagina&#39;s met handelsgegevens te verrijken.
+* Een nieuwe component van de carrousel van de Categorie werd toegevoegd om bedrijfsgebruikers toe te laten om deze component op AEM inhoudspagina&#39;s te slepen en te laten vallen om inhoudspagina&#39;s met handelsgegevens te verrijken.
 
-* De de kerncomponenten van CIF die worden uitgebreid om de Laag van Gegevens van de Cliënt van Adobe te bevrijden door handelsgegevens te verzenden. De Adobe Client Data Layer is een gestandaardiseerde methode voor het verzamelen van gegevens en het doorgeven van de gegevens aan digitale analyses en rapportservers. Raadpleeg voor meer informatie [Gegevenslaag Adobe-client](https://github.com/adobe/adobe-client-data-layer/wiki).
+* De de kerncomponenten van CIF die worden uitgebreid om de Laag van Gegevens van de Cliënt van de Adobe te bevrijden door handelsgegevens te verzenden. De gegevenslaag van de Cliënt van de Adobe is een gestandaardiseerde methode om gegevens te verzamelen en de gegevens aan Digitale Analytics en het melden van servers mee te delen. Raadpleeg voor meer informatie [Gegevenslaag client-Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pagina&#39;s met productdetails en productlijsten die zijn uitgebreid om automatisch SEO-metagegevens (zoals titel, meta-beschrijving, metatrefwoorden) te vullen die zijn geconfigureerd vanuit de Adobe Commerce-beheerinterface
 
@@ -65,11 +65,11 @@ ht-degree: 8%
 
 * Accountinformatiefuncties toegevoegd om kopers in staat te stellen persoonlijke gegevens bij te werken.
 
-* Het laden pagineringsstijl die voor de lijst van het Product en de resultatenpagina&#39;s van het Onderzoek wordt uitgevoerd om ontwikkelaars toe te staan om deze componenten te vormen om &quot;Lading meer&quot;knoop als pagineringsstijl te tonen.
+* Een luie ladende pagineringsstijl wordt uitgevoerd voor de lijst van het Product en de resultatenpagina&#39;s van het Onderzoek om ontwikkelaars toe te staan om deze componenten te vormen om de &quot;Lading meer&quot;knoop als pagineringsstijl te tonen.
 
-* Pagina voor het opnieuw instellen van wachtwoorden is geïmplementeerd zodat kopers hun accountwachtwoord kunnen bijwerken/opnieuw kunnen instellen.
+* De pagina voor het opnieuw instellen van wachtwoorden is geïmplementeerd zodat kopers hun accountwachtwoord kunnen bijwerken/opnieuw kunnen instellen.
 
-* Ondersteuning voor beschikbare producttypen in pakketten.
+* Er is ondersteuning beschikbaar voor de producttypen van de Bundled.
 
 * Ontwikkelaars kunnen de HTML-tags voor productcarrousel, verwante producten en de lijst met aanbevolen categorieën configureren om de best practices voor SEO te volgen.
 
@@ -91,13 +91,13 @@ ht-degree: 8%
 
 * Het tabblad Handel dat op Pagina-eigenschappen wordt toegevoegd om CIF-eigenschappen voor Landing Page en Experience Fragments beschikbaar te maken.
 
-* De component Doorzoekbalk is verbeterd en biedt nu ondersteuning voor de optie voor het weergeven van plaatsaanduidingstekst
+* De component Searchbar wordt verbeterd om de optie te steunen om placeholder tekst te tonen
 
 * Extra flexibiliteit voor de onderdelen Product en Product Teaser om eenvoudige aanpassingen te ondersteunen.
 
-* Toegevoegde flexibiliteit om standaardCTA knoopetiket voor de component van de Teaser van het Product met voeten te treden en te vormen.
+* Toegevoegde flexibiliteit om het standaardCTA knoopetiket voor de component van de Teaser van het Product met voeten te treden en te vormen.
 
-* De component Adresboek is verbeterd zodat geregistreerde winkels verzendings- en factureringsadressen kunnen kiezen die tijdens het afrekenen in het adresboek zijn opgeslagen.
+* De component Adresboek is verbeterd zodat geregistreerde kopers verzendings- en factureringsadressen kunnen kiezen die tijdens het afrekenen in het adresboek zijn opgeslagen.
 
 * Meerdere opgeloste problemen.
 
@@ -113,9 +113,9 @@ ht-degree: 8%
 
 * CIF Venia Reference Site werd geëxtraheerd uit de CIF Archetype repo en is nu een standalone GitHub-opslagplaats.
 
-* CIF Archetype samengevoegd met AEM Project Archetype. Voor nieuwe projecten, gebruik [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) als uitgangspunt.
+* CIF Archetype samengevoegd met AEM Project Archetype. Voor nieuwe projecten, gebruik [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) als het beginpunt.
 
-* Adresboekbeheer toegevoegd om gebruikers met een aanmelding in staat te stellen hun adressen te beheren.
+* Adresboekbeheer is toegevoegd om gebruikers met een aanmelding in staat te stellen hun adressen te beheren.
 
 * De gebruikersinterface van de CIF Cloud-configuratie ondersteunt publicatie-/unpublish-handelingen.
 
@@ -139,7 +139,7 @@ ht-degree: 8%
 
 Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager wordt ondersteund.
 
-* Toegevoegde productsortering op de pagina Productlijst en de pagina Zoekresultaten zodat kopers kunnen sorteren op relevantie, prijs en productnaam.
+* Er is productsortering toegevoegd op de pagina Productlijst en de pagina Zoekresultaten, zodat kopers kunnen sorteren op relevantie, prijs en productnaam.
 
 * Categoriefiltering toegevoegd als facet, zodat kopers op basis van categorie kunnen filteren.
 
@@ -147,15 +147,15 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 ### Verbeterde functies {#what-is-improved-june}
 
-* De pagina Productlijst en de pagina Zoekresultaat geven het totale aantal objecten weer. Het aantal items wordt bijgewerkt wanneer de gebruiker filters toepast.
+* Op de pagina Productlijst en de pagina Zoekresultaat wordt het totale aantal objecten weergegeven. Het aantal items wordt bijgewerkt wanneer de gebruiker filters toepast.
 
-* Gefactureerde zoekopdracht geoptimaliseerd door categoriequery te combineren met productzoekopdracht.
+* Gefactureerd onderzoek wordt geoptimaliseerd door een categoriequery met een vraag van het productonderzoek te combineren.
 
 * De categorie-/productkiezers voor de voorvertoning van de pagina verwijzen naar cq:catalogPath.
 
 * Meerdere opgeloste problemen.
 
-## Releasedatum: Mei 2020
+## Releasedatum: mei 2020
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
@@ -169,13 +169,13 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Ondersteuning voor gefactureerd zoeken toegevoegd aan de pagina Zoekpagina en de productlijst zodat kopers zoekresultaten kunnen filteren op basis van productfacetten.
 
-* Nieuwe OSGi-service toegevoegd om PDP/PLP-URL&#39;s aan te passen aan de beoogde SEO. Raadpleeg deze voor meer informatie [documentatie](https://github.com/adobe/aem-core-cif-components/wiki/configuration).
+* Nieuwe OSGi-service toegevoegd om PDP/PLP-URL&#39;s voor SEO-doeleinden aan te passen. Zie voor meer informatie de [documentatie](https://github.com/adobe/aem-core-cif-components).
 
-* Productbinding wordt automatisch gemaakt wanneer een cloudconfiguratie wordt gemaakt.
+* Productbinding wordt automatisch gemaakt wanneer een Cloud Configuration wordt gemaakt.
 
 ### Verbeterde functies
 
-* Cloud Configuration extended to display &quot;Create Folder&quot; action.
+* Cloud Configuration extended to display the &quot;Create Folder&quot; action.
 
 * Meerdere correcties toegepast.
 
@@ -189,7 +189,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 ### Wat is er nieuw? {#what-is-new-april}
 
-* De montages van de configuratie voor CIF Schakelaar verenigd en vereenvoudigd. Voor meer details kun je uitchecken [Aan de slag](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html) of [Nieuwe AEM CIF Project instellen](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/getting-started.html#!AdobeDocs/commerce-cif-documentation/master/getting-started/02-new-cif-project.md)
+* De montages van de configuratie voor Schakelaar CIF zijn verenigd en vereenvoudigd. Voor meer details kun je uitchecken [Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) of [Nieuwe AEM CIF Project instellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 ### Verbeterde functies {#what-is-improved-april}
 
@@ -197,7 +197,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Uitgebreide internationalisatie-ondersteuning voor alle componenten.
 
-* Ondersteuning voor gegroepeerde producten en beschikbare virtuele producten.
+* Er is ondersteuning beschikbaar voor Gegroepeerde producten en Virtuele producten.
 
 * Verwante producten, productcarrousel en onderdelen van aanbevolen categorieën zijn verbeterd en bieden nu ondersteuning voor optionele titels.
 
@@ -241,11 +241,11 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * De component van het Fragment van de ervaring (XF) die wordt toegevoegd om klanten toe te laten om XF in hun handelsproject tot stand te brengen.
 
-* Wijzig de wachtwoordfunctionaliteit in mijn account.
+* Wijzig de wachtwoordfunctionaliteit die beschikbaar is in mijn account.
 
 * i18n steun voor AEM server-side van CIF kerncomponenten.
 
-* Algemene verwante productcomponent beschikbaar.
+* Algemeen verwante productcomponent is beschikbaar.
 
 ### Verbeterde functies {#what-is-improved-january}
 
@@ -255,6 +255,6 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Optie voor het verbergen/weergeven van de titel/banner in de component Productlijst.
 
-* Functie Slepen en neerzetten toegepast op de component Productcarrousel.
+* De functie Slepen en neerzetten is toegepast op de component Productcarrousel.
 
 * Meerdere correcties toegepast.

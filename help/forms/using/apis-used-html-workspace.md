@@ -1,17 +1,13 @@
 ---
 title: API's die worden gebruikt in de AEM Forms-werkruimte
-seo-title: APIs used in AEM Forms workspace
-description: Openbare Java- en JavaScript-API's en methoden van de LiveCycle AEM Forms-werkruimte, beschikbaar voor aanpassing en automatisering.
-seo-description: Public Java and JavaScript APIs and methods of LiveCycle AEM Forms workspace, exposed for customization and automation.
-uuid: 9602990e-8ac7-42eb-b507-50b3594055ba
+description: Publieke Java&trade en JavaScript API's en methoden van de werkruimte van AEM Forms van het LiveCycle, beschikbaar voor aanpassing en automatisering.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
 exl-id: 9034f73a-83f3-498e-b6a6-ad6577aa1a3a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '998'
+source-wordcount: '1059'
 ht-degree: 0%
 
 ---
@@ -44,7 +40,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>prepareForSubmit</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>prepareForSubmit</td>
-   <td>Deze wordt aangeroepen voordat het formulier wordt verzonden via DocumentSubmitServlet. De taak-id wordt ingesteld in een sessievariabele (samen met een verlooptijd) die wordt opgehaald tijdens het daadwerkelijk verzenden.</td>
+   <td>Deze wordt aangeroepen voordat een formulier wordt verzonden via DocumentSubmitServlet. De taak-id wordt ingesteld in een sessievariabele (samen met een verlooptijd) die tijdens de eigenlijke verzending wordt opgehaald.</td>
   </tr>
   <tr>
    <td>submitTask</td>
@@ -74,13 +70,13 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>invokeStartpoint</td>
    <td>ProcessManagementStartService</td>
    <td>invokeStartpoint</td>
-   <td>Dit roept een Startpunt aan en leidt tot een nieuwe taak die aan een startpunt beantwoordt</td>
+   <td>Dit roept een Startpunt aan en leidt tot een taak die aan een startpunt beantwoordt</td>
   </tr>
   <tr>
    <td>getAllTasks</td>
    <td>ProcessManagementTaskService</td>
    <td>getAllActionableTasks</td>
-   <td>Het haalt alle taken die worden gecreeerd en door:sturen of geraadpleegd, opgeslagen, toegewezen, toegewezen en bewaard voor het programma geopende gebruiker.</td>
+   <td>Het haalt alle taken die worden gecreeerd en door:sturen of geraadpleegd, opgeslagen, toegewezen, toegewezen, en bewaard voor de het programma geopende gebruiker.</td>
   </tr>
   <tr>
    <td>getTask</td>
@@ -92,37 +88,37 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>renderTask</td>
    <td>ProcessManagementTaskService</td>
    <td>renderen</td>
-   <td>Er wordt een taak gegenereerd en er wordt informatie geretourneerd die nodig is om het formulier te genereren, zoals formulier-URL, formuliertype, URL van gegevens, indien nodig, enz.</td>
+   <td>Er wordt een taak gegenereerd en er wordt informatie geretourneerd die nodig is om het formulier weer te geven, zoals formulier-URL, formuliertype, gegevens-URL, indien nodig.</td>
   </tr>
   <tr>
    <td>submitWithBeforeData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithBeforeData</td>
-   <td>Het resultaat van de verzendAPI van TaskManager wordt geretourneerd met behulp van de resultaattoets.</td>
+   <td>Het keert het resultaat van TaskManager toe:zenden API gebruikend de resultaatsleutel.</td>
   </tr>
   <tr>
    <td>submitWithData</td>
    <td>ProcessManagementTaskService</td>
    <td>submitWithData</td>
-   <td>De formuliergegevens (doorgegeven als tekenreeks) die aan een taak zijn gekoppeld, worden met de verzendAPI van TaskManager verzonden. Deze wordt gebruikt voor flex-formulieren die de verzend-API van de callTaskManager niet oproepen.</td>
+   <td>De formuliergegevens (doorgegeven als tekenreeks) die aan de taak zijn gekoppeld, worden met de verzendAPI van TaskManager verzonden. Deze wordt gebruikt voor Flex-formulieren die de verzend-API van TaskManager niet aanroepen.</td>
   </tr>
   <tr>
    <td>opslaan</td>
    <td>ProcessManagementTaskService</td>
    <td>opslaan</td>
-   <td>Er wordt een taak op de server opgeslagen.</td>
+   <td>Er wordt een taak opgeslagen op de server.</td>
   </tr>
   <tr>
    <td>complete</td>
    <td>ProcessManagementTaskService</td>
    <td>complete</td>
-   <td>Het voltooit een taak en de taak wordt overgegaan tot volgende stap volgens procesontwerp.</td>
+   <td>Het voltooit een taak en de taak wordt overgegaan tot de volgende stap volgens procesontwerp.</td>
   </tr>
   <tr>
    <td>getAttachment</td>
    <td>ProcessManagementTaskService</td>
    <td>getAttachment</td>
-   <td>Het keert URL van een gehechtheid terug waar gehechtheid beschikbaar is.</td>
+   <td>Er wordt een URL van een bijlage geretourneerd waar de bijlage beschikbaar is.</td>
   </tr>
   <tr>
    <td>getAllAttachments</td>
@@ -152,7 +148,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>vordering</td>
    <td>ProcessManagementTaskService</td>
    <td>vordering</td>
-   <td>Er wordt een taak opgehaald die beschikbaar is in de gedeelde wachtrij.</td>
+   <td>Het beweert een taak die in een gedeelde rij beschikbaar is.</td>
   </tr>
   <tr>
    <td>ontgrendelen</td>
@@ -164,13 +160,13 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>vergrendelen</td>
    <td>ProcessManagementTaskService</td>
    <td>vergrendelen</td>
-   <td>Het vergrendelt een taak en een taak kan niet worden opgeëist door een andere gebruiker als deze wordt gedeeld.</td>
+   <td>Het vergrendelt een taak en de taak kan niet worden opgeëist door een andere gebruiker als deze wordt gedeeld.</td>
   </tr>
   <tr>
    <td>afwijzen</td>
    <td>ProcessManagementTaskService</td>
    <td>afwijzen</td>
-   <td>Het keert taak aan vorige eigenaar van taak terug.</td>
+   <td>Het keert een taak aan de vorige eigenaar van de taak terug.</td>
   </tr>
   <tr>
    <td>opgeven</td>
@@ -188,7 +184,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>getUsers</td>
    <td>ProcessManagementUserProxyService</td>
    <td>getUsers</td>
-   <td>Het wordt gebruikt voor het zoeken van gebruikers. Hiermee worden alle gebruikers geretourneerd als er geen naam is opgegeven. Anders worden gebruikers met de opgegeven naam geretourneerd.</td>
+   <td>Het wordt gebruikt voor het zoeken van gebruikers. Hiermee worden alle gebruikers geretourneerd als er geen naam is opgegeven of als gebruikers met een opgegeven naam worden geretourneerd.</td>
   </tr>
   <tr>
    <td>getUsersInGroup</td>
@@ -200,19 +196,19 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>GrantQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>GrantQueueAccess</td>
-   <td>Het verleent toegang van het programma geopende gebruikersrij aan gespecificeerde gebruiker. Het deelt eigenlijk eigen rij met een andere gebruiker.</td>
+   <td>Het verleent toegang van de het programma geopende rij van de gebruiker aan een gespecificeerde gebruiker. Het is eigenlijk het delen van je eigen wachtrij met een andere gebruiker.</td>
   </tr>
   <tr>
    <td>requestQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>requestQueueAccess</td>
-   <td>Het maakt toegangsverzoek van rij van gespecificeerde gebruiker voor het programma geopende gebruiker. Als de gebruiker het verzoek goedkeurt, wordt de rij van de gebruiker gedeeld met het programma geopende gebruiker.</td>
+   <td>Het maakt het toegangsverzoek van een rij van een gespecificeerde gebruiker voor de het programma geopende gebruiker. Als de gebruiker het verzoek goedkeurt, wordt de rij van de gebruiker gedeeld met het programma geopende gebruiker.</td>
   </tr>
   <tr>
    <td>getGrantedUsers</td>
    <td>ProcessManagementQueueService</td>
    <td>getGrantedUsers</td>
-   <td>Het keert alle gebruikers terug die toegang tot rij van het programma geopende gebruiker hebben.</td>
+   <td>Het keert alle gebruikers terug die toegang tot de rij van de het programma geopende gebruiker hebben.</td>
   </tr>
   <tr>
    <td>getUsersForAccessibleQueues</td>
@@ -224,31 +220,31 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>revokeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>revokeQueueAccess</td>
-   <td>Het verwijdert een gebruiker uit de lijst van gebruikers die toegang tot rij van het programma geopende gebruiker hebben.</td>
+   <td>Het verwijdert een gebruiker uit de lijst van gebruikers die toegang tot de rij van de het programma geopende gebruiker hebben.</td>
   </tr>
   <tr>
    <td>removeQueueAccess</td>
    <td>ProcessManagementQueueService</td>
    <td>removeQueueAccess</td>
-   <td>Het verwijdert een gebruiker uit de lijst van gebruikers de waarvan rij voor het programma geopende gebruiker toegankelijk is.</td>
+   <td>Het verwijdert een gebruiker uit de lijst van gebruikers de waarvan rij voor de het programma geopende gebruiker toegankelijk is.</td>
   </tr>
   <tr>
    <td>getAllQueues<br /> </td>
    <td>ProcessManagementQueueService<br /> </td>
    <td>getAllQueues<br /> </td>
-   <td>Het krijgt alle rijen (eigen, gedeelde en groepsrijen) toegankelijk voor het programma geopende gebruiker.<br /> </td>
+   <td>Het krijgt alle rijen (eigen, gedeelde, en groepsrijen) toegankelijk voor de het programma geopende gebruiker.<br /> </td>
   </tr>
   <tr>
    <td>getOutOfOfficeSettings</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>getOutOfOfficeSettings</td>
-   <td>De gebruiker heeft geen kantoorinstellingen meer.</td>
+   <td>Het krijgt de montages van buiten-van-bureau van een gebruiker.</td>
   </tr>
   <tr>
    <td>saveOutOfOfficeSettingsJson</td>
    <td>ProcessManagementOutOfOfficeService</td>
    <td>saveOutOfOfficeSettingsJson</td>
-   <td>Het bewaart uit bureaumontages van een gebruiker.</td>
+   <td>Het bewaart de uit-van-bureaumontages van een gebruiker.</td>
   </tr>
   <tr>
    <td>getAllProcesses</td>
@@ -260,7 +256,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>getParticipatedProcesses</td>
    <td>ProcessManagementProcessService</td>
    <td>getParticipatedProcesses</td>
-   <td>Het keert een lijst van alle procesnamen terug die door het programma geopende gebruiker worden deelgenomen.</td>
+   <td>Het keert een lijst van alle procesnamen terug die door de het programma geopende gebruiker worden deelgenomen.</td>
   </tr>
   <tr>
    <td>getProcessInstance<br /> </td>
@@ -302,13 +298,13 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>findTasksJson<br /> </td>
    <td>ProcessManagementQueryService</td>
    <td>findTasksJson</td>
-   <td>Alle taken die aan alle voorwaarden van een zoeksjabloon voldoen, worden doorzocht en geretourneerd.</td>
+   <td>Het zoekt en keert alle taken terug die aan alle voorwaarden van een onderzoeksmalplaatje voldoen.</td>
   </tr>
   <tr>
    <td>getAssignmentForTask</td>
    <td>ProcessManagementTaskService</td>
    <td>getAssignmentForTask</td>
-   <td>Het krijgt alle taken voor een taak. Bijvoorbeeld:- Als een gebruiker een taak doorstuurt of raadpleegt met een andere gebruiker, is dit een toewijzing voor een taak.</td>
+   <td>Het krijgt alle taken voor een taak. Als een gebruiker bijvoorbeeld een taak doorstuurt of consulteert met een andere gebruiker, is dit een toewijzing voor een taak.</td>
   </tr>
   <tr>
    <td>deleteAttachment </td>
@@ -320,19 +316,19 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>initialiseren</td>
    <td>ProcessManagementClientSessionService</td>
    <td>initialiseren</td>
-   <td>Zo nodig wordt dit opnieuw bevestigd. Hiermee wordt de gebruiker geverifieerd. Stelt sessieparameters in voor server-/clientinformatie. Retourneert gebruikersinformatie en opiniepeilingsinterval.</td>
+   <td>Zo nodig wordt de bewering verlengd. Hiermee wordt de gebruiker geverifieerd. Stelt sessieparameters in voor server-/clientinformatie. Retourneert gebruikersinformatie en opiniepeilingsinterval.</td>
   </tr>
   <tr>
    <td>getTasksForDirectReports</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getTasksForDirectReports</td>
-   <td>Het keert alle taken van directe rapporten van het programma geopende manager terug.</td>
+   <td>Het keert alle taken van directe rapporten van de het programma geopende manager terug.</td>
   </tr>
   <tr>
    <td>getTaskOfDirectReport<br /> </td>
    <td>ProcessManagementTeamTasksService</td>
    <td>getDirectReportTask</td>
-   <td>Het keert taak van gespecificeerd direct rapport van het programma geopende manager terug.</td>
+   <td>Het keert een taak van een gespecificeerd direct rapport van de het programma geopende manager terug.</td>
   </tr>
   <tr>
    <td>forwardTaskOfDirectReport</td>
@@ -344,7 +340,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>ignoreTaskOfDirectReport</td>
    <td>ProcessManagementTeamTasksService</td>
    <td>ignoreTaskOfDirectReport</td>
-   <td>Het keert een taak van een direct rapport aan vorige gebruiker terug.</td>
+   <td>Het keert een taak van een direct rapport aan de vorige gebruiker terug.</td>
   </tr>
   <tr>
    <td>getProperty</td>
@@ -395,10 +391,10 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>Er wordt een bijlage geüpload naar de server voor een taak.</td>
   </tr>
   <tr>
-   <td>getImageURL (wordt ook rechtstreeks vanuit de HTML-sjabloon aangeroepen)</td>
+   <td>getImageURL (ook rechtstreeks aangeroepen vanuit de HTML-sjabloon)</td>
    <td>ProcessManagementDocumentHandlingService</td>
    <td>getImage</td>
-   <td>Het krijgt beeld voor een proces.</td>
+   <td>Het krijgt het beeld voor een proces.</td>
   </tr>
  </tbody>
 </table>

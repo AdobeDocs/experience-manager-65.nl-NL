@@ -1,19 +1,15 @@
 ---
 title: Uw accountomgeving configureren
-seo-title: Configuring Your Account Environment
 description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment
-uuid: ef31be29-5c18-4dc9-ad51-fb001588b31e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b610e19c-f8d9-4ae2-b056-9fd5cf541261
 docset: aem65
 exl-id: 6079431d-7d08-4973-8bb4-a8d10626a795
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '514'
 ht-degree: 4%
 
 ---
@@ -24,7 +20,7 @@ AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomg
 
 Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [koptekst](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#userpreferences) kunt u uw gebruikersopties wijzigen, zoals
 
-Begin door tot de [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de koptekst.
+Beginnen met toegang tot de [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de koptekst.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -64,7 +60,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    * **Meerdere vensters** (Standaard)
 
-      * Pagina&#39;s worden in een nieuw venster geopend.
+      * Pagina&#39;s worden geopend in een nieuw venster.
 
    * **Eén venster**
 
@@ -72,18 +68,18 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bureaubladhandelingen voor elementen weergeven**
 
-  Voor deze optie moet AEM bureaubladtoepassing worden gebruikt.
+  Voor deze optie is een AEM bureaubladtoepassing vereist.
 
 * **Annotatiekleur**
 
   Hiermee definieert u de standaardkleur die wordt gebruikt bij het maken van annotaties.
 
-   * Klik op het kleurblok om de staalkiezer te openen en een kleur te selecteren.
+   * Klik op het kleurblok, zodat u de staalkiezer kunt openen en een kleur kunt selecteren.
    * U kunt ook de hexadecimale code voor de gewenste kleur in het veld invoeren.
 
 * **Relatieve datumpresentatie**
 
-  Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
+  Om de leesbaarheid te verbeteren, worden AEM datums binnen de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en als oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
   Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
@@ -100,7 +96,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Sneltoetsen inschakelen**
 
-  AEM ondersteunt een aantal sneltoetsen die het ontwerpen efficiënter maken.
+  AEM ondersteunt verschillende sneltoetsen die het ontwerpen efficiënter maken.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -113,7 +109,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Introductiepagina van middelen inschakelen**
 
-  Deze optie is alleen beschikbaar als uw systeembeheerder de functie voor het introductiepagina van middelen heeft ingeschakeld voor de hele organisatie.
+  Deze optie is alleen beschikbaar als uw systeembeheerder de functie Introductiepagina van middelen voor de hele organisatie heeft ingeschakeld.
 
 * **Bestandsconfiguratie**
 

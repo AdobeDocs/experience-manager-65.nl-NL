@@ -1,92 +1,88 @@
 ---
 title: AEM Forms-sneltoetsen
-seo-title: AEM Forms Keyboard Shortcuts
-description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
-seo-description: This article lists the keyboard shortcuts that can be used with Adaptive Form Editor, Theme Editor, Content Browser, and Correspondence Management.
-uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
+description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met de besturingssystemen Adaptive Form Editor, Theme Editor, Content Browser en Correspondence Management voor Windows en Macintosh.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
 topic-tags: author, correspondence-management
-discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 feature: Adaptive Forms
 exl-id: 01f4fdd3-fd2a-4e90-9c91-c1b05bbc2c6a
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
 workflow-type: tm+mt
-source-wordcount: '1204'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
 
 # AEM Forms-sneltoetsen {#aem-forms-keyboard-shortcuts}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
 
-In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
+In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met de besturingssystemen Adaptive Form Editor, Theme Editor, Content Browser en Correspondence Management voor Windows en Macintosh.
 
 ## Adaptieve formuliereditor {#adaptiveformeditor}
 
-| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets op macOS** |
 |---|---|---|
-| Eigenschappen-browser openen voor de geselecteerde adaptieve formuliercomponent | Alt+Enter | Alt+Return |
-| De browser Eigenschappen sluiten voor de geselecteerde adaptieve formuliercomponent | Ctrl+Alt+W | Command+Alt+W |
+| De browser Eigenschappen openen voor de geselecteerde adaptieve formuliercomponent | Alt+Enter | Alt+Return |
+| Sluit de eigenschappenbrowser voor de geselecteerde adaptieve formuliercomponent | Ctrl+Alt+W | Command+Alt+W |
 | Wijzigingen opslaan in de eigenschappenbrowser voor de geselecteerde adaptieve formuliercomponent | Ctrl+S | Command+S |
 | Regel bewerken voor de geselecteerde adaptieve formuliercomponent | Ctrl+Alt+Enter | Command+Alt+Return |
-| Schakelen tussen Voorvertoning en de momenteel geselecteerde modus (bijvoorbeeld Bewerken, Basisstructuur, enz.) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
+| Schakelen tussen Voorvertoning en de momenteel geselecteerde modus (bijvoorbeeld Bewerken en Basisstructuur) | Ctrl+Shift+M | Ctrl+Shift+M&amp;ast; |
 | Laatste wijziging ongedaan maken | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Laatste wijziging opnieuw | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Meerdere componenten selecteren | Shift+klikken | Shift+klikken |
 | Geselecteerde component kopiëren | Ctrl-C | Ctrl-C&amp;ast; |
-| Geselecteerde component(en) knippen. De component cut verdwijnt pas als deze op de nieuwe locatie wordt geplakt. | Ctrl-X | Ctrl-X&amp;ast; |
-| Component(en) plakken | Ctrl+V | Ctrl+V |
-| Geselecteerde component(en) verwijderen | Ctrl+Del | Ctrl+Del&amp;ast; |
-| Geselecteerde component(en) verwijderen | Ctrl+Backspace | Ctrl+Backspace&amp;ast; |
-| Tekst vet maken terwijl u de Rich Text Editor-component in de modus Voorbeeld gebruikt | Ctrl+B | Ctrl+B&amp;ast; |
+| Geselecteerde componenten knippen. De component cut verdwijnt pas als deze op de nieuwe locatie wordt geplakt. | Ctrl-X | Ctrl-X&amp;ast; |
+| Componenten plakken | Ctrl+V | Ctrl+V |
+| Geselecteerde componenten verwijderen | Ctrl+Del | Ctrl+Del&amp;ast; |
+| Geselecteerde componenten verwijderen | Ctrl+Backspace | Ctrl+Backspace&amp;ast; |
+| Tekst vet maken terwijl u de component Rich Text Editor in de modus Voorbeeld gebruikt | Ctrl+B | Ctrl+B&amp;ast; |
 | Tekst cursief maken terwijl de component Rich Text Editor in de modus Voorbeeld wordt gebruikt | Ctrl+I | Ctrl+I&amp;ast; |
-| Tekst vet maken terwijl u de Rich Text Editor-component in de modus Voorbeeld gebruikt | Ctrl+U | Ctrl+U&amp;ast; |
+| Tekst vet maken terwijl u de component Rich Text Editor in de modus Voorbeeld gebruikt | Ctrl+U | Ctrl+U&amp;ast; |
 
 >[!NOTE]
 >
->Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets in Mac OS.
+>Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets op macOS.
 
 >[!NOTE]
 >
 >Multi-select op een desktopapparaat:
 >
->* Windows: Houd Ctrl ingedrukt en klik op de gewenste componenten.
->* Mac OS: Command en klikken op de vereiste componenten.
+>* Windows: Ctrl + klikken op de vereiste componenten.
+>* macOS: Command + klikken op de vereiste componenten.
 >
 
 ## Thema-editor  {#themeeditor}
 
-| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets op macOS** |
 |---|---|---|
-| Eigenschappen voor de geselecteerde component in een thema openen | Alt+Enter | Alt+Return |
-| Eigenschappen van browser sluiten voor de geselecteerde component in een thema | Ctrl+Alt+W | Command+Alt+W |
+| De eigenschappenbrowser openen voor de geselecteerde component in een thema | Alt+Enter | Alt+Return |
+| De eigenschappenbrowser sluiten voor de geselecteerde component in een thema | Ctrl+Alt+W | Command+Alt+W |
 | Laatste wijziging ongedaan maken | Ctrl+Z | Ctrl+Z&amp;ast; |
 | Laatste wijziging opnieuw | Ctrl+Y | Ctrl+Y&amp;ast; |
 | Wijzigingen opslaan in de eigenschappenbrowser voor de geselecteerde component in een thema | Ctrl+S | Ctrl+S&amp;ast; |
 
 >[!NOTE]
 >
->Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets in Mac OS.
+>Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets op macOS.
 
-## Inhoudsbrowser  {#contentbrowser}
+## Content Browser  {#contentbrowser}
 
-| **Handeling** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
+| **Handeling** | **Sneltoets in Windows** | **Sneltoets op macOS** |
 |---|---|---|
 | Alle accordeons in de structuur Formulierobjecten van de Inhoudsbrowser uitvouwen wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-rechts, om uit te vouwen | Command+A om alle accordeons te selecteren gevolgd door Pijl-rechts om uit te vouwen |
-| Alle accordeons samenvouwen in de structuur Formulierobjecten van de inhoudbrowser wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen | Command+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen |
+| Alle accordeons samenvouwen in de structuur Formulierobjecten van de inhoudbrowser wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-links om samen te vouwen | Command+A om alle accordeons te selecteren, gevolgd door Pijl-links om samen te vouwen |
 | De geselecteerde accordeon uitbreiden in de formulierobjectstructuur | Pijl-rechts | Pijl-rechts |
 | Geselecteerde accordeon samenvouwen in de formulierobjectstructuur | Pijl-links | Pijl-links |
 | Volgend item selecteren in de Forms Objects tree | Pijl-omlaag | Pijl-omlaag |
 | Vorig item selecteren in de Forms-objectenstructuur | Pijl-omhoog | Pijl-omhoog |
 
-[1] Vervangt Ctrl + Pijl-rechts voor Windows en Command + Pijl-rechts voor Mac OS.\
-[2] Vervangt Ctrl + Pijl-links voor Windows en Command + Pijl-links voor Mac OS.
+[1] Vervangt Ctrl + Pijl-rechts voor Windows en Command + Pijl-rechts voor macOS.\
+[2] Vervangt Ctrl + Pijl-links voor Windows en Command + Pijl-links voor macOS.
 
 ## Correspondentenbeheer {#correspondence-management}
 
-Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor van Correspondence Management. U kunt deze sneltoetsen gebruiken als u:
+Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor voor Correspondentiebeheer. U kunt deze sneltoetsen gebruiken als u:
 
 * Een [Tekst](texts-interactive-communications.md) element
 * Een tekstmodule bewerken nadat u op het desbetreffende pictogram Bewerken hebt getikt ( ![edittextmodule](assets/edittextmodule.png)) wanneer [correspondentie maken](/help/forms/using/create-correspondence.md).
@@ -98,10 +94,10 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   <tr>
    <th><strong>Bewerking</strong></th> 
    <th><strong>Sneltoets in Windows</strong></th> 
-   <th><strong>Sneltoets voor Mac OS</strong><br /> </th> 
+   <th><strong>Sneltoets op macOS</strong><br /> </th> 
   </tr>
   <tr>
-   <td><p>Huidig woord selecteren</p> </td> 
+   <td><p>Huidige woord selecteren</p> </td> 
    <td><p>Ctrl+Shift+Pijl-rechts</p> </td> 
    <td>Command+Shift+Pijl-rechts</td> 
   </tr>
@@ -151,37 +147,37 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
    <td>Shift+Pijl-links</td> 
   </tr>
   <tr>
-   <td><p>Tekst één voor één teken in voorwaartse richting selecteren</p> </td> 
+   <td><p>Selecteer tekst een voor een teken in voorwaartse richting</p> </td> 
    <td><p>Shift+Pijl-rechts</p> </td> 
    <td>Shift+Pijl-rechts</td> 
   </tr>
   <tr>
-   <td><p>Eén voor één alinea tekst in achterwaartse richting selecteren</p> </td> 
+   <td><p>Tekst een voor een alinea selecteren in de achterwaartse richting</p> </td> 
    <td><p>Shift+Up-toets</p> </td> 
    <td>Shift+Up-toets</td> 
   </tr>
   <tr>
-   <td><p>Eén voor één alinea selecteren in voorwaartse richting</p> </td> 
+   <td><p>Selecteer tekst een voor een alinea voorwaarts</p> </td> 
    <td><p>Shift+Down</p> </td> 
    <td>Shift+toets ingedrukt</td> 
   </tr>
   <tr>
-   <td><p>Tekst selecteren tot de huidige positie van de pagina wordt gestart</p> </td> 
+   <td><p>Selecteer tekst tot de huidige positie van de pagina wordt gestart</p> </td> 
    <td><p>Shift+Page Up</p> </td> 
    <td>Fn+Shift+Pijl-omhoog</td> 
   </tr>
   <tr>
-   <td><p>Tekst selecteren tot einde van eindpositie van pagina</p> </td> 
+   <td><p>Tekst selecteren tot einde vanaf de eindpositie van de pagina</p> </td> 
    <td><p>Shift+Page Down</p> </td> 
    <td>Fn+Shift+Pijl-omlaag</td> 
   </tr>
   <tr>
-   <td><p>Cursor naar einde van pagina verplaatsen</p> </td> 
+   <td><p>De cursor naar het einde van de pagina verplaatsen</p> </td> 
    <td><p>Page Down</p> </td> 
    <td>Fn+Pijl-omlaag</td> 
   </tr>
   <tr>
-   <td><p>Cursor naar begin van pagina verplaatsen</p> </td> 
+   <td><p>De cursor naar het begin van de pagina verplaatsen</p> </td> 
    <td><p>Page Up</p> </td> 
    <td>Fn+Pijl-omhoog</td> 
   </tr>
@@ -196,12 +192,12 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
    <td>Command+Shift+Pijl-omhoog</td> 
   </tr>
   <tr>
-   <td><p>Cursor naar de beginpositie verplaatsen</p> </td> 
+   <td><p>De cursor naar de beginpositie verplaatsen</p> </td> 
    <td><p>Ctrl+Home</p> </td> 
    <td>Command+Pijl-omhoog</td> 
   </tr>
   <tr>
-   <td><p>Cursor naar de eindpositie verplaatsen</p> </td> 
+   <td><p>De cursor naar de eindpositie verplaatsen</p> </td> 
    <td><p>Ctrl+End</p> </td> 
    <td>Command+Pijl-omlaag</td> 
   </tr>
@@ -216,20 +212,20 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   <tr>
    <th><p><strong>Bewerking</strong></p> </th> 
    <th><p><strong>Sneltoets in Windows<br /> </strong></p> </th> 
-   <th><strong>Sneltoets voor Mac OS</strong></th> 
+   <th><strong>Sneltoets op macOS</strong></th> 
   </tr>
   <tr>
-   <td><p>Alinea centreren uitlijnen</p> </td> 
+   <td><p>Alinea centreren</p> </td> 
    <td><p>Ctrl+E</p> </td> 
    <td>Ctrl+Command+E</td> 
   </tr>
   <tr>
-   <td><p>Alinea links uitlijnen</p> </td> 
+   <td><p>Een alinea links uitlijnen</p> </td> 
    <td><p>Ctrl+L</p> </td> 
    <td>Ctrl+Command+L</td> 
   </tr>
   <tr>
-   <td><p>Alinea rechts uitlijnen</p> </td> 
+   <td><p>Een alinea rechts uitlijnen</p> </td> 
    <td><p>Ctrl+R</p> </td> 
    <td>Ctrl+Command+R</td> 
   </tr>
@@ -248,7 +244,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   <tr>
    <th><strong>Bewerking</strong></th> 
    <th><strong>Sneltoets in Windows </strong></th> 
-   <th><strong>Sneltoets voor Mac OS</strong><br /> </th> 
+   <th><strong>Sneltoets op macOS</strong><br /> </th> 
   </tr>
   <tr>
    <td><p>Ongedaan maken </p> </td> 
@@ -270,7 +266,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   <tr>
    <th><p><strong>Bewerking</strong></p> </th> 
    <th><p><strong>Sneltoets in Windows</strong></p> </th> 
-   <th><strong>Sneltoets voor Mac OS</strong></th> 
+   <th><strong>Sneltoets op macOS</strong></th> 
   </tr>
   <tr>
    <td><p>De tekengrootte vergroten </p> </td> 
@@ -292,7 +288,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   <tr>
    <th><strong>Bewerking</strong></th> 
    <th><strong>Sneltoets in Windows</strong></th> 
-   <th><strong>Sneltoets voor Mac OS</strong></th> 
+   <th><strong>Sneltoets op macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Woord links van cursor verwijderen</p> </td> 
@@ -314,7 +310,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   <tr>
    <th><strong>Bewerking</strong></th> 
    <th><strong>Sneltoets in Windows<br /> </strong></th> 
-   <th><strong>Sneltoets voor Mac OS</strong></th> 
+   <th><strong>Sneltoets op macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Tekst plakken </p> </td> 
@@ -341,7 +337,7 @@ Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheids
   <tr>
    <th><strong>Bewerking</strong></th> 
    <th><strong>Sneltoets in Windows</strong></th> 
-   <th><strong>Sneltoets voor Mac OS</strong></th> 
+   <th><strong>Sneltoets op macOS</strong></th> 
   </tr>
   <tr>
    <td><p>Letter vet maken</p> </td> 

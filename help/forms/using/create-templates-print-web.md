@@ -1,23 +1,19 @@
 ---
-title: "Zelfstudie: Sjablonen maken"
-seo-title: Create Print and Web templates for Interactive Communication
+title: "Zelfstudie: sjablonen maken"
 description: Afdruk- en websjablonen maken voor interactieve communicatie
-seo-description: Create Print and Web templates for Interactive Communication
-uuid: 22256a61-bcf6-4b02-9ee6-0ffb1cc20a6e
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 879ff6ca-e5f3-451d-acc2-f75142101ddd
 docset: aem65
 feature: Interactive Communication
 exl-id: bef1f05e-aea2-433e-b3d5-0b7ad8163fa7
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1816'
 ht-degree: 0%
 
 ---
 
-# Zelfstudie: Sjablonen maken{#tutorial-create-templates}
+# Zelfstudie: sjablonen maken{#tutorial-create-templates}
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
@@ -35,39 +31,39 @@ Dit leerprogramma begeleidt u door de stappen om malplaatjes voor de kanalen van
 * De XDP-sjablonen uploaden naar de AEM Forms-server
 * Sjablonen voor het webkanaal maken en inschakelen
 
-## Sjabloon maken voor afdrukkanaal {#create-template-for-print-channel}
+## Sjabloon maken voor het afdrukkanaal {#create-template-for-print-channel}
 
-Creeer en beheer malplaatje voor het kanaal van de Druk van Interactieve Communicatie gebruikend de volgende taken:
+Creeer en beheer een malplaatje voor het kanaal van de Druk van Interactieve Communicatie gebruikend de volgende taken:
 
-* [XDP-sjabloon maken met Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
-* [XDP-sjabloon uploaden naar de AEM Forms-server](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
-* [XDP-sjabloon maken voor layoutfragmenten](../../forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
+* [Een XDP-sjabloon maken met Forms Designer](../../forms/using/create-templates-print-web.md#create-xdp-template-using-forms-designer)
+* [Een XDP-sjabloon uploaden naar de AEM Forms Server](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server)
+* [Een XDP-sjabloon maken voor lay-outfragmenten](../../forms/using/create-templates-print-web.md#create-xdp-template-for-layout-fragments)
 
-### XDP-sjabloon maken met Forms Designer {#create-xdp-template-using-forms-designer}
+### Een XDP-sjabloon maken met Forms Designer {#create-xdp-template-using-forms-designer}
 
 Op basis van de [use case](/help/forms/using/create-your-first-interactive-communication.md) en [anatomie](/help/forms/using/planning-interactive-communications.md), maakt u de volgende subformulieren in de XDP-sjabloon:
 
-* Bill Details: Bevat een documentfragment
-* Klantgegevens: Bevat een documentfragment
-* Bill Summary: Bevat een documentfragment
-* Overzicht: Bevat een documentfragment (subformulier Laden) en een diagram (subformulier Teksten)
-* Gespecialiseerde Vraag: Bevat een tabel (layoutfragment)
-* Nu betalen: Bevat een afbeelding
-* Services voor toegevoegde waarde: Bevat een afbeelding
+* Bill Details: bevat een documentfragment
+* Klantgegevens: bevat een documentfragment
+* Bill Summary: bevat een documentfragment
+* Samenvatting: bevat een documentfragment (subformulier Laden) en een diagram (subformulier Teksten)
+* Gespecialiseerde Vraag: Omvat een lijst (lay-outfragment)
+* Nu betalen: neemt een afbeelding op
+* Services voor toegevoegde waarde: bevat een afbeelding
 
 ![create_print_template](assets/create_print_template.gif)
 
 Deze subformulieren worden weergegeven als doelgebieden in de afdruksjabloon nadat het XDP-bestand naar de Forms-server is geüpload. Alle entiteiten zoals documentfragmenten, grafieken, lay-outfragmenten en afbeeldingen worden aan doelgebieden toegevoegd tijdens het maken van de interactieve communicatie.
 
-Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk tot stand te brengen:
+Ga als volgt te werk om een XDP-sjabloon voor het afdrukkanaal te maken:
 
 1. Open Forms Designer en selecteer **Bestand** > **Nieuw** > **Een leeg formulier gebruiken** tikken **Volgende** en tikt u vervolgens op **Voltooien** om het formulier te openen voor het maken van een sjabloon.
 
    Zorg ervoor dat de **Objectbibliotheek** en **Object** opties worden geselecteerd in het menu **Venster** -menu.
 
 1. Sleep de **Subformulier** uit de **Objectbibliotheek** op het formulier.
-1. Selecteer het subformulier om de opties voor het subformulier weer te geven in het dialoogvenster **Object** in het rechterdeelvenster.
-1. Selecteer **Subformulier** en selecteert u **Overlopen** van de **Inhoud** vervolgkeuzelijst. Sleep het linkereindpunt van het subformulier om de lengte aan te passen.
+1. Selecteer het subformulier, zodat u de opties voor het subformulier kunt bekijken in het dialoogvenster **Object** in het rechterdeelvenster.
+1. Selecteer de **Subformulier** en selecteert u **Overlopen** van de **Inhoud** vervolgkeuzelijst. Als u de lengte wilt aanpassen, sleept u het linkereindpunt van het subformulier.
 1. In de **Bindingen** tab:
 
    1. Opgeven **BillDetails** in de **Naam** veld.
@@ -89,7 +85,7 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
    * BillDetails
    * CustomerDetails
    * BillSummary
-   * Samenvatting - selecteer **Subformulier** en selecteert u **Geplaatst** van de **Inhoud** vervolgkeuzelijst voor dit subformulier. De volgende subformulieren invoegen in het dialoogvenster **Samenvatting** subformulier.
+   * Samenvatting - selecteer de **Subformulier** en selecteert u **Geplaatst** van de **Inhoud** vervolgkeuzelijst voor dit subformulier. De volgende subformulieren invoegen in het dialoogvenster **Samenvatting** subformulier.
 
       * Heffingen
       * Grafieken
@@ -98,9 +94,9 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
    * Nu betalen
    * ValueAddedServices
 
-   Als u tijd wilt besparen, kunt u ook bestaande subformulieren kopiëren en plakken om nieuwe subformulieren te maken.
+   Als u tijd wilt besparen, kunt u ook bestaande subformulieren kopiëren en plakken om aanvullende subformulieren te maken.
 
-   Als u de opdracht **Grafieken** subformulier rechts van het subformulier Heffingen, selecteert u het subformulier **Grafieken** subformulier in het linkerdeelvenster selecteert u de optie **Layout** en geeft een waarde op voor **AnkerX** veld. De waarde moet groter zijn dan de waarde voor de **Breedte** veld voor de **Heffingen** subformulier. Selecteer **Heffingen** subformulier en selecteer de **Layout** om de waarde van de optie **Breedte** veld.
+   Als u de opdracht **Grafieken** subformulier rechts van het subformulier Heffingen, selecteert u de optie **Grafieken** subformulier in het linkerdeelvenster selecteert u de optie **Layout** en geeft u een waarde op voor de **AnkerX** veld. De waarde moet groter zijn dan de waarde voor de **Breedte** veld voor de **Heffingen** subformulier. Selecteer de **Heffingen** subformulier en selecteer de **Layout** zodat u de waarde van de optie **Breedte** veld.
 
 1. Sleep de **Tekst** van het object **Objectbibliotheek** op het formulier en voer de **Bel XXXX voor abonnement** tekst in het vak.
 1. Klik met de rechtermuisknop op het tekstobject in het linkerdeelvenster en selecteer **Naam object wijzigen** en voert u de naam van het tekstobject in als **Abonneren**.
@@ -109,21 +105,21 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
 
 1. Selecteren **Bestand** > **Opslaan als** om het bestand op te slaan op het lokale bestandssysteem:
 
-   1. Navigeer naar de locatie waar u het bestand wilt opslaan en geef de naam op als **create_first_ic_print_template**.
+   1. Navigeer naar de locatie waar u het bestand kunt opslaan en geef de naam op als **create_first_ic_print_template**.
    1. Selecteren **.xdp** van de **Opslaan als type** vervolgkeuzelijst.
 
    1. Tikken **Opslaan**.
 
-### XDP-sjabloon uploaden naar de AEM Forms-server {#upload-xdp-template-to-the-aem-forms-server}
+### Een XDP-sjabloon uploaden naar de AEM Forms Server {#upload-xdp-template-to-the-aem-forms-server}
 
-Nadat u een XDP-sjabloon hebt gemaakt met de Forms Designer, moet u de sjabloon uploaden naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van de interactieve communicatie.
+Zodra u een malplaatje XDP gebruikend de Ontwerper van Forms hebt gecreeerd, moet u het aan de Server van AEM Forms uploaden zodat het malplaatje voor gebruik terwijl het creëren van de Interactieve Communicatie beschikbaar is.
 
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
 1. Tikken **Maken** > **Bestand uploaden**.
 
-   Navigeer en selecteer de **create_first_ic_print_template** sjabloon (XDP) en tik **Openen** om de XDP-sjabloon te importeren naar de AEM Forms-server.
+   Navigeer en selecteer de **create_first_ic_print_template** sjabloon (XDP) en tik **Openen** om de XDP-sjabloon naar de AEM Forms-server te importeren.
 
-### XDP-sjabloon maken voor layoutfragmenten {#create-xdp-template-for-layout-fragments}
+### Een XDP-sjabloon maken voor lay-outfragmenten {#create-xdp-template-for-layout-fragments}
 
 Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve communicatie, maakt u een XDP met Forms Designer en uploadt u deze naar de AEM Forms-server.
 
@@ -136,7 +132,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
    1. Geef het aantal kolommen op als **5**.
    1. Het aantal tekstrijen opgeven als **1**.
-   1. Selecteer **Koptekstrij in tabel opnemen** selectievakje.
+   1. Selecteer de **Koptekstrij in tabel opnemen** selectievakje.
    1. Tab **OK**.
 
 1. Tikken **+** in het linkerdeelvenster naast **Tabel** 1 en klik met de rechtermuisknop **Cel1** en selecteert u **Naam object wijzigen** tot **Datum**.
@@ -155,31 +151,31 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
    ![Tekstveld voor layoutfragment](assets/layout_fragment_print_text_field_new.png)
 
-   Op dezelfde manier slepen en neerzetten **Tekstveld** aan de **Tijd**, **Getal**, **Duur**, en **Heffingen** rijen.
+   Op dezelfde manier sleept u de **Tekstveld** aan de component **Tijd**, **Getal**, **Duur**, en **Heffingen** rijen.
 
 1. Selecteren **Bestand** > **Opslaan als** om het bestand op te slaan op het lokale bestandssysteem:
 
-   1. Navigeer naar de locatie waar u het bestand wilt opslaan en geef de naam op als **table_lf**.
+   1. Navigeer naar de locatie waar u het bestand kunt opslaan en geef de naam op als **table_lf**.
    1. Selecteren **.xdp** van de **Opslaan als type** vervolgkeuzelijst.
 
    1. Tikken **Opslaan**.
 
-   Nadat u een XDP-sjabloon voor een lay-outfragment hebt gemaakt met de Forms Designer, moet u [uploaden](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) wordt naar de AEM Forms-server gestuurd, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van lay-outfragmenten.
+   Nadat u een XDP-sjabloon voor een lay-outfragment hebt gemaakt met de Forms Designer, moet u [uploaden](../../forms/using/create-templates-print-web.md#upload-xdp-template-to-the-aem-forms-server) wordt naar de AEM Forms-server verzonden, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van lay-outfragmenten.
 
-## Sjabloon maken voor webkanaal {#create-template-for-web-channel}
+## Een sjabloon maken voor het webkanaal {#create-template-for-web-channel}
 
-Creeer en beheer malplaatje voor het kanaal van het Web van Interactieve Communicatie gebruikend de volgende taken:
+Creeer en beheer een malplaatje voor het kanaal van het Web van Interactieve Mededeling gebruikend de volgende taken:
 
 * [Map maken voor sjablonen](../../forms/using/create-templates-print-web.md#create-folder-for-templates)
 * [De sjabloon maken](../../forms/using/create-templates-print-web.md#create-the-template)
 * [De sjabloon inschakelen](../../forms/using/create-templates-print-web.md#enable-the-template)
 * [Knoppen inschakelen in Interactieve communicatie](../../forms/using/create-templates-print-web.md#enabling-buttons-in-interactive-communications)
 
-### Map maken voor sjablonen {#create-folder-for-templates}
+### Een map voor sjablonen maken {#create-folder-for-templates}
 
-Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakte sjablonen kunt opslaan. Zodra u een malplaatje binnen die omslag creeert, laat het malplaatje toe om de vormengebruikers toe te staan om het kanaal van het Web van een Interactieve Communicatie tot stand te brengen die op het malplaatje wordt gebaseerd.
+Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakte sjablonen kunt opslaan. Zodra u een malplaatje binnen die omslag creeert, laat het malplaatje toe om de vormengebruikers toe te staan om een kanaal van het Web van een Interactieve Communicatie tot stand te brengen die op het malplaatje wordt gebaseerd.
 
-Voer de volgende stappen uit om een map voor de bewerkbare sjablonen te maken:
+Ga als volgt te werk om een map voor de bewerkbare sjablonen te maken:
 
 1. Tikken **Gereedschappen** ![hamerpictogram](assets/hammer-icon.svg) > **Configuratiebrowser**.
    * Zie de [Configuratiebrowser](/help/sites-administering/configurations.md) documentatie voor meer informatie.
@@ -194,35 +190,35 @@ Voer de volgende stappen uit om een map voor de bewerkbare sjablonen te maken:
 
 Op basis van de [use case](/help/forms/using/create-your-first-interactive-communication.md) en [anatomie](/help/forms/using/planning-interactive-communications.md)maakt u de volgende deelvensters in de websjabloon:
 
-* Bill Details: Bevat een documentfragment
-* Klantgegevens: Bevat een documentfragment
-* Bill Summary: Bevat een documentfragment
-* Overzicht van kosten: Bevat een documentfragment en een diagram (lay-out met twee kolommen)
-* Gespecialiseerde Vraag: Bevat een tabel
-* Nu betalen: Bevat een **Nu betalen** en een afbeelding
-* Services voor toegevoegde waarde: Bevat een afbeelding en een **Abonneren** knop.
+* Bill Details: bevat een documentfragment
+* Klantgegevens: bevat een documentfragment
+* Bill Summary: bevat een documentfragment
+* Overzicht van kosten: bevat een documentfragment en een diagram (lay-out met twee kolommen)
+* Gespecialiseerde Vraag: Omvat een lijst
+* Nu betalen: inclusief een **Nu betalen** en een afbeelding
+* Services voor toegevoegde waarde: bevat een afbeelding en een **Abonneren** knop.
 
 ![create_web_template](assets/create_web_template.gif)
 
 Alle entiteiten zoals documentfragmenten, grafieken, tabellen, afbeeldingen en knoppen worden toegevoegd tijdens het maken van de interactieve communicatie.
 
-Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in te creëren **Create_First_IC_templates** map:
+Om een malplaatje voor het kanaal van het Web in te creëren **Create_First_IC_templates** Voer de volgende stappen uit in de map:
 
-1. Navigeer naar de juiste sjabloonmap door **Gereedschappen** > **Sjablonen** > **Create_First_IC_templates** map.
+1. Navigeer naar de juiste sjabloonmap door de optie **Gereedschappen** > **Sjablonen** > **Create_First_IC_templates** map.
 1. Tikken **Maken**.
-1. Op de **Sjabloontype kiezen** configuratiewizard, selecteren **Interactieve communicatie - Webkanaal** en tikken **Volgende**.
-1. Op de **Sjabloondetails** configuratietovenaar, specificeer **Create_First_IC_Web_Template** als de sjabloontitel. Geef een optionele beschrijving op en tik op **Maken**.
+1. Op de **Sjabloontype kiezen** configuratietovenaar, selecteer **Interactieve communicatie - Webkanaal** en tikken **Volgende**.
+1. Op de **Sjabloondetails** configuratiewizard, opgeven **Create_First_IC_Web_Template** als de sjabloontitel. Geef een optionele beschrijving op en tik op **Maken**.
 
    Een bevestigingsbericht dat **Create_First_IC_Web_Template** wordt weergegeven.
 
 1. Tikken **Openen** om de sjabloon te openen in de sjablooneditor.
-1. Selecteren **Oorspronkelijke inhoud** in de vervolgkeuzelijst naast de **Voorvertoning** optie.
+1. Selecteren **Oorspronkelijke inhoud** in de vervolgkeuzelijst naast de **Voorvertoning** -optie.
 
    ![Sjablooneditor](assets/template_editor_initial_content_new.png)
 
-1. Tikken **Hoofddeelvenster** en tik vervolgens op **+** om de lijst met componenten weer te geven die u aan de sjabloon kunt toevoegen.
-1. Selecteren **Deelvenster** in de lijst om een deelvenster toe te voegen boven de **Hoofddeelvenster**.
-1. Selecteer **Inhoud** in het linkerdeelvenster. Het nieuwe deelvenster dat u in stap 8 hebt toegevoegd, wordt weergegeven onder de **Hoofddeelvenster** in de inhoudsstructuur.
+1. Tikken **Hoofddeelvenster** en tikt u vervolgens op **+** om de lijst met componenten weer te geven die u aan de sjabloon kunt toevoegen.
+1. Een deelvenster toevoegen boven de knop **Hoofddeelvenster**, selecteert u **Deelvenster** in de lijst.
+1. Selecteer de **Inhoud** in het linkerdeelvenster. Het nieuwe deelvenster dat u in stap 8 hebt toegevoegd, wordt weergegeven onder de **Hoofddeelvenster** in de inhoudsstructuur.
 
    ![Inhoudsstructuur](assets/content_tree_root_panel_new.png)
 
@@ -233,7 +229,7 @@ Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in te
    1. Opgeven **Bill Details** in het veld Titel.
    1. Selecteren **1** van de **Aantal kolommen** vervolgkeuzelijst.
 
-   1. Tikken ![Opslaan](/help/forms/using/assets/done_icon.png) om de eigenschappen op te slaan.
+   1. Tik op ![Opslaan](/help/forms/using/assets/done_icon.png).
 
    De naam van het deelvenster wordt bijgewerkt naar **Bill Details** in de inhoudsstructuur.
 
@@ -256,25 +252,25 @@ Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in te
 
 Zodra u het malplaatje van het Web hebt gecreeerd, moet u het toelaten om het malplaatje te gebruiken terwijl het creëren van de Interactieve Communicatie.
 
-Voer de volgende stappen uit om het malplaatje van het Web toe te laten:
+Ga als volgt te werk om de websjabloon in te schakelen:
 
 1. Tikken **Gereedschappen** ![hamerpictogram](assets/hammer-icon.svg) > **Sjablonen**.
-1. Ga naar de **Create_First_IC_Web_Template** sjabloon, selecteert u deze en tikt u op **Inschakelen**.
-1. Tab **Inschakelen** nogmaals ter bevestiging.
+1. Ga naar de **Create_First_IC_Web_Template** sjabloon, selecteer het en tik **Inschakelen**.
+1. Tikken **Inschakelen** nogmaals ter bevestiging.
 
    Het malplaatje wordt toegelaten en zijn status wordt getoond zoals Toegelaten. U kunt dit malplaatje gebruiken terwijl het creëren van Interactieve Communicatie voor het kanaal van het Web.
 
 ### Knoppen inschakelen in Interactieve communicatie {#enabling-buttons-in-interactive-communications}
 
-Op basis van het gebruiksgeval moet u de optie **Nu betalen** en **Abonneren** knoppen (adaptieve formuliercomponenten) in Interactieve communicatie. Voer de volgende stappen uit om het gebruik van deze knoppen in de interactieve communicatie mogelijk te maken:
+Op basis van het gebruiksgeval moet u de optie **Nu betalen** en **Abonneren** knoppen (adaptieve formuliercomponenten) in Interactieve communicatie. Ga als volgt te werk om het gebruik van deze knoppen in de interactieve communicatie in te schakelen:
 
-1. Selecteren **Structuur** in de vervolgkeuzelijst naast de **Voorvertoning** optie.
-1. Selecteer **Documentcontainer** hoofddeelvenster gebruiken met de inhoudsstructuur en tikken **Beleid** om de componenten te selecteren die voor gebruik in Interactieve Mededeling worden toegestaan.
+1. Selecteren **Structuur** in de vervolgkeuzelijst naast de **Voorvertoning** -optie.
+1. Selecteer de **Documentcontainer** hoofddeelvenster gebruiken met de inhoudsstructuur en tikken **Beleid** om de componenten te selecteren die voor gebruik in Interactieve Mededeling worden toegestaan.
 
    ![Beleid configureren](assets/structure_configure_policy_new.png)
 
-1. In de **Toegestane componenten** tabblad van **Eigenschappen** sectie, selecteert u **Knop** van de **Adaptief formulier** componenten.
+1. In de **Toegestane componenten** tabblad van het **Eigenschappen** sectie, selecteert u **Knop** van de **Adaptief formulier** componenten.
 
    ![Toegestane componenten](assets/allowed_components_af_new.png)
 
-1. Tikken ![opslaan](assets/done_icon.png) om de eigenschappen op te slaan.
+1. Tik op ![opslaan](assets/done_icon.png).

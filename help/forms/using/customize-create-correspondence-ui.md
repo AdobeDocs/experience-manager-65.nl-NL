@@ -1,19 +1,15 @@
 ---
 title: Gebruikersinterface voor maken van correspondentie aanpassen
-seo-title: Customize create correspondence UI
-description: Leer hoe u het maken van correspondentie-UI kunt aanpassen.
-seo-description: Learn how to customize create correspondence UI.
-uuid: 9dee9b6f-4129-4560-9bf8-db48110b76f7
+description: Leer hoe u de gebruikersinterface voor correspondentie kunt aanpassen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 13a93111-c08c-4457-b69a-a6f6eb6da330
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1086'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -46,13 +42,13 @@ Maak de mapstructuur, zoals hieronder wordt uitgelegd, voor het hosten van de aa
 
 Voor elke aanpassing maakt u een parallelle mapstructuur, zoals hieronder wordt uitgelegd, in de tak /apps.
 
-De tak /apps (omslagstructuur):
+De `/apps` vertakking (mapstructuur):
 
-* Zorgt ervoor dat uw bestanden veilig zijn in het geval van een update van het systeem. In het geval van verbetering, eigenschappak, of een hete moeilijke situatie, wordt de /libs tak bijgewerkt en als u uw veranderingen in de /libs tak ontvangt, worden zij beschreven.
-* Hiermee kunt u het huidige systeem/de huidige vertakking niet verstoren. U kunt dit probleem per ongeluk oplossen als u de standaardlocaties gebruikt voor het opslaan van de aangepaste bestanden.
-* Helpt uw middelen hogere prioriteit te krijgen wanneer AEM naar middelen zoekt. AEM wordt gevormd om de /apps tak eerst en dan de /libs tak te zoeken om een middel te vinden. Dit mechanisme houdt in dat het systeem uw bedekking gebruikt (en de aanpassingen die daar zijn gedefinieerd).
+* Zorgt ervoor dat uw bestanden veilig zijn als het systeem wordt bijgewerkt. Als er een verbetering, eigenschapspak, of een hete moeilijke situatie is, `/libs` vertakking wordt bijgewerkt en als u uw wijzigingen in het dialoogvenster `/libs` vertakt, worden ze overschreven.
+* Het huidige systeem of de huidige vertakking mag niet worden verstoord. U kunt dit probleem per ongeluk oplossen als u de standaardlocaties gebruikt voor het opslaan van de aangepaste bestanden.
+* Helpt uw middelen een hogere prioriteit krijgen wanneer AEM naar middelen zoekt. AEM wordt gevormd om te zoeken `/apps` eerst de vertakking en vervolgens de `/libs` vertakking om een bron te zoeken. Dit mechanisme houdt in dat het systeem uw bedekking gebruikt (en de aanpassingen die daar zijn gedefinieerd).
 
-Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken:
+Gebruik de volgende stappen om de vereiste mapstructuur te maken in het dialoogvenster `/apps` vertakking:
 
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
 1. Maak in de map Apps een map met de naam `css` met een pad/structuur die vergelijkbaar is met de css-map (in de map ccrui).
@@ -65,9 +61,9 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Pad:** `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css`
 
-      **Locatie bedekking:** /apps/
+      **Locatie bedekking:** `/apps/`
 
       **Identieke knooppunttypen:** Ingeschakeld
 
@@ -75,7 +71,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
       >[!NOTE]
       >
-      >Breng geen veranderingen in de /libs tak aan. Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
+      >Wijzig de instelling `/libs` vertakking. Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
       >
       >    
       >    
@@ -87,7 +83,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
    1. Klikken **OK**. De css-map wordt gemaakt in het opgegeven pad.
 
-1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die vergelijkbaar is met de map imgs (in de map ccrui).
+1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die lijkt op de map imgs (in de map ccrui).
 
    1. Klik met de rechtermuisknop op de knop **imgs** map op het volgende pad en selecteer **Overlayknooppunt**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
@@ -108,10 +104,10 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
 ## Het nieuwe logo uploaden naar CRX {#uploadlogo}
 
-Upload uw aangepaste logobestand naar CRX. De standaard HTML-regels bepalen de rendering van het logo. De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt voor toegang tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
+Upload uw aangepaste logobestand naar CRX. De standaard HTML-regels bepalen de rendering van het logo. De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt om toegang te krijgen tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
 
 * De standaardafmetingen van de logoafbeelding zijn 48 px &#42; 48 px. Zorg ervoor dat de afbeelding even groot of groter is als deze &#42; 48 px.
-* Als de hoogte van de logoafbeelding groter is dan 50 px, wordt de afbeelding in de gebruikersinterface Correspondentie maken verkleind tot een maximale hoogte van 50 px, aangezien dit de hoogte van de koptekst is. Wanneer u de afbeelding verkleint, blijft de hoogte-breedteverhouding van de afbeelding behouden in de gebruikersinterface Correspondentie maken.
+* Als de hoogte van de logoafbeelding groter is dan 50 px, wordt de afbeelding in de gebruikersinterface Correspondentie maken verkleind tot een maximale hoogte van 50 px, aangezien dit de hoogte van de koptekst is. Tijdens het verkleinen van de afbeelding behoudt de gebruikersinterface Correspondentie maken de hoogte-breedteverhouding van de afbeelding.
 * Als de afbeelding klein is, wordt de schaal van de gebruikersinterface Correspondentie maken niet vergroot. Zorg er dus voor dat u een logoafbeelding van minimaal 48 pixels hoog en voldoende breed gebruikt voor meer duidelijkheid.
 
 Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
@@ -141,11 +137,11 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
    Het dialoogvenster jcr:gegevens bewerken wordt geopend.
 
-   Klik nu op de map newlogo.png, dubbelklik op jcr:content (grijze optie) en stel type nt:resource in. Maak indien niet aanwezig een eigenschap met de naam jcr:content.
+   Klik nu op de map newlogo.png, dubbelklik vervolgens op jcr:content (grijze optie) en stel het type nt:resource in. Als deze niet aanwezig is, maakt u een eigenschap met de naam jcr:content.
 
 1. Klik in het dialoogvenster jcr:gegevens bewerken op **Bladeren** en selecteert u het afbeeldingsbestand dat u als logo wilt gebruiken (hier CustomLogo.png).
 
-   De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt voor toegang tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
+   De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt om toegang te krijgen tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
 
    ![Voorbeeld van aangepast logobestand](assets/geometrixx-outdoors.png)
 
@@ -153,11 +149,11 @@ Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
 1. Klikken **Alles opslaan**.
 
-## CSS maken om het logo te integreren met de gebruikersinterface {#createcss}
+## CSS maken voor het renderen van het logo met de gebruikersinterface {#createcss}
 
 Voor de aangepaste logoafbeelding moet een extra stijlpagina worden geladen in de context van de inhoud.
 
-Gebruik de volgende stappen om de stijlpagina in te stellen voor het renderen van het logo:
+Gebruik de volgende stappen om de stijlpagina te maken voor het renderen van het logo met de gebruikersinterface:
 
 1. Ga naar `https://'[server]:[port]'/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
 1. Maak een bestand met de naam customcss.css (u kunt geen andere bestandsnaam gebruiken) op de volgende locatie:
@@ -178,9 +174,9 @@ Gebruik de volgende stappen om de stijlpagina in te stellen voor het renderen va
 
    1. Klikken **Alles opslaan**.
 
-## De gebruikersinterface Correspondentie maken vernieuwen om het aangepaste logo weer te geven {#refreshccrui}
+## De interface Correspondentie maken vernieuwen zodat u het aangepaste logo kunt zien {#refreshccrui}
 
-Wis de browsercache en open vervolgens de instantie Correspondentie-UI maken in uw browser. Je moet het aangepaste logo zien.
+Wis het browsercache en open vervolgens de instantie Correspondentie-UI maken in uw browser, zodat u het aangepaste logo kunt zien.
 
 ![Gebruikersinterface voor correspondentie maken met aangepast logo](assets/0_1_introscreenshot-1.png)
 

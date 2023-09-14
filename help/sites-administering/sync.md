@@ -1,20 +1,16 @@
 ---
 title: Gebruikerssynchronisatie
-seo-title: User Synchronization
 description: Meer informatie over gebruikerssynchronisatie in AEM.
-seo-description: Learn about user synchronization in AEM.
-uuid: 0a519daf-21b7-4adc-b419-eeb8c404c54f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: c061b358-8c0d-40d3-8090-dc9800309ab3
 docset: aem65
 exl-id: 89f55598-e749-42b8-8f2a-496f45face66
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2498'
 ht-degree: 1%
 
 ---
@@ -24,37 +20,37 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-Wanneer de implementatie een [publicatiebedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm)leden moeten zich kunnen aanmelden en hun gegevens kunnen bekijken op elk publicatieknooppunt.
+Wanneer de implementatie een [publicatiebedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm)leden moeten zich kunnen aanmelden en hun gegevens op elk publicatieknooppunt kunnen bekijken.
 
 Gebruikers en gebruikersgroepen (gebruikersgegevens) die in de publicatieomgeving zijn gemaakt, zijn niet nodig in de ontwerpomgeving.
 
-De meeste gebruikersgegevens die in de auteursomgeving zijn gemaakt, blijven in de auteursomgeving en worden niet gekopieerd naar publicatieinstanties.
+De meeste gebruikersgegevens die in de auteursomgeving worden gemaakt, blijven in de auteursomgeving en worden niet gekopieerd naar de instanties Publish.
 
-Registratie en wijzigingen die zijn aangebracht op één publicatie-instantie moeten worden gesynchroniseerd met andere publicatie-instanties, zodat deze toegang hebben tot dezelfde gebruikersgegevens.
+Registratie en wijzigingen die worden aangebracht op een instantie Publish moeten worden gesynchroniseerd met andere instanties Publish om toegang te hebben tot dezelfde gebruikersgegevens.
 
-Vanaf AEM 6.1, wanneer gebruikerssynchronisatie wordt toegelaten, worden de gebruikersgegevens automatisch gesynchroniseerd over de publiceer instanties in het landbouwbedrijf en niet gecreeerd op auteur.
+Vanaf AEM 6.1, wanneer gebruikerssynchronisatie wordt toegelaten, worden de gebruikersgegevens automatisch gesynchroniseerd over de Publish instanties in het landbouwbedrijf en niet gecreeerd op auteur.
 
 ## Verspreiding {#sling-distribution}
 
-De gebruikersgegevens, samen met hun [ACLs](/help/sites-administering/security.md), worden opgeslagen in de [Eak Core](/help/sites-deploying/platform.md), de laag onder Oak JCR en worden benaderd met de [Eak-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Met niet vaak uitgevoerde updates is het redelijk dat gebruikersgegevens worden gesynchroniseerd met andere publicatieinstanties die [Distributie van inhoud verkopen](https://github.com/apache/sling/blob/trunk/contrib/extensions/distribution/README.md) (verkoopverdeling).
+De gebruikersgegevens, samen met hun [ACLs](/help/sites-administering/security.md), worden opgeslagen in de [Eak Core](/help/sites-deploying/platform.md), de laag onder de Oak JCR en worden benaderd met de [Eak-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/org/apache/jackrabbit/oak/api/package-tree.html). Met niet vaak uitgevoerde updates is het redelijk dat gebruikersgegevens worden gesynchroniseerd met andere instanties van Publiceren die [Distributie van inhoud verkopen](https://github.com/apache/sling-old-svn-mirror/blob/trunk/contrib/extensions/distribution/README.md) (verkoopverdeling).
 
 De voordelen van gebruikerssynchronisatie met de verkoopverdeling in vergelijking met traditionele replicatie zijn:
 
-* *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen* die zijn gemaakt bij publicatie, worden niet gemaakt bij de auteur
+* *gebruikers*, *gebruikersprofielen*, en *gebruikersgroepen* die zijn gemaakt bij Publiceren, worden niet gemaakt bij Auteur
 
 * Bij het splitsen van distributiesets worden eigenschappen in jcr-gebeurtenissen ingesteld, zodat u kunt werken binnen gebeurtenislisteners aan de serverzijde zonder dat u zich zorgen hoeft te maken over oneindige replicatielijnen
-* De het verdelen van de distributie verzendt slechts gebruikersgegevens naar niet voortkomende publicatieinstanties, die onnodig verkeer elimineren
+* Bij de verkoopdistributie worden alleen gebruikersgegevens naar niet-gegenereerde publicatie-instanties verzonden, waardoor onnodig verkeer wordt voorkomen
 * [ACLs](/help/sites-administering/security.md) ingesteld in het gebruikersknooppunt wordt opgenomen in de synchronisatie
 
 >[!NOTE]
 >
->Als de zittingen worden vereist, wordt het geadviseerd om of een oplossing te gebruiken SSO of kleverige zitting te gebruiken en klanten te hebben login als zij aan een andere publicatieinstantie worden geschakeld.
+>Als de zittingen worden vereist, wordt het geadviseerd om of een oplossing te gebruiken SSO of een kleverige zitting te gebruiken en klanten te hebben login als zij aan een andere Publish instantie worden geschakeld.
 
 >[!CAUTION]
 >
->Synchronisatie van de **beheerders** wordt niet ondersteund, zelfs niet als gebruikerssynchronisatie is ingeschakeld. In plaats daarvan wordt een fout bij &#39;het importeren van de diff&#39; in het foutenlogboek geregistreerd.
+>Synchronisatie van de **beheerders** wordt niet ondersteund, zelfs niet als gebruikerssynchronisatie is ingeschakeld. In plaats daarvan wordt een fout bij het importeren van de diff in het foutenlogboek geregistreerd.
 >
->Daarom wanneer de plaatsing een publiceer landbouwbedrijf is, als een gebruiker aan wordt toegevoegd of uit wordt verwijderd **beheerders** , moet de wijziging handmatig worden aangebracht op elk publicatieexemplaar.
+>Daarom wanneer de plaatsing een publiceer landbouwbedrijf is, als een gebruiker aan wordt toegevoegd of uit wordt verwijderd **beheerders** groep, moet de wijziging handmatig worden aangebracht op elke instantie Publiceren.
 
 ## Gebruikerssynchronisatie inschakelen {#enable-user-sync}
 
@@ -66,19 +62,19 @@ De voordelen van gebruikerssynchronisatie met de verkoopverdeling in vergelijkin
 >
 >Er mogen geen nieuwe configuraties worden toegevoegd als gevolg van het inschakelen van gebruikerssynchronisatie.
 
-De gebruikerssynchronisatie is afhankelijk van de auteursomgeving voor het beheer van de gegevensdistributies van de gebruiker, ook al worden de gebruikersgegevens niet op auteur gecreeerd. Veel, maar niet alle, van de configuratie vindt plaats in de auteursomgeving en elke stap identificeert duidelijk of het op auteur of publicatie moet worden uitgevoerd.
+Gebruikerssynchronisatie is afhankelijk van de auteursomgeving voor het beheer van de gegevensdistributies van de gebruiker, ook al worden de gebruikersgegevens niet op de auteur gemaakt. Veel, maar niet alle, van de configuratie vindt plaats in de auteursomgeving en elke stap identificeert duidelijk of het op Auteur of Publish moet worden uitgevoerd.
 
-Hieronder vindt u de stappen die nodig zijn om gebruikerssynchronisatie in te schakelen, gevolgd door een [Problemen oplossen](#troubleshooting) sectie:
+De volgende stappen zijn nodig om gebruikerssynchronisatie in te schakelen, gevolgd door een [Problemen oplossen](#troubleshooting) sectie:
 
 ### Vereisten {#prerequisites}
 
-1. Als gebruikers en gebruikersgroepen al op één publicatieexemplaar zijn gemaakt, wordt het aanbevolen [handmatig synchroniseren](#manually-syncing-users-and-user-groups) de gebruikersgegevens voor alle publicatieexemplaren voordat gebruikerssynchronisatie wordt geconfigureerd en ingeschakeld.
+1. Als gebruikers en gebruikersgroepen al op één instantie Publish zijn gecreeerd, wordt het geadviseerd om [handmatig synchroniseren](#manually-syncing-users-and-user-groups) de gebruikersgegevens naar alle publicatieinstanties voordat gebruikerssynchronisatie wordt geconfigureerd en ingeschakeld.
 
 Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers en groepen gesynchroniseerd.
 
 1. Controleer of de laatste code is geïnstalleerd:
 
-* [AEM platformupdates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM platformupdates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en)
 * [AEM Communities-updates](/help/communities/deploy-communities.md#latestfeaturepack)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
@@ -94,26 +90,27 @@ Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers 
 
    * lokaliseren `Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `name`: **`socialpubsync`**
+      * Selecteer de bestaande configuratie zodat u deze kunt openen voor bewerking (potloodpictogram) Verifiëren `name`: **`socialpubsync`**
 
       * Selecteer de `Enabled` selectievakje
       * selecteren `Save`
 
 ![Apache Sling Distribution Agent](assets/chlimage_1-20.png)
 
-### 2. Geautoriseerde gebruiker maken {#createauthuser}
+### 2. Gemachtigde gebruiker maken {#createauthuser}
 
 **Machtigingen configureren**
-Deze gemachtigde gebruiker zal in stap 3 worden gebruikt om de distributie van het Verkopen op auteur te vormen.
 
-* **op elke publicatie-instantie**
+De geautoriseerde gebruiker wordt gebruikt in stap 3 om de verkoopdistributie op Auteur te configureren.
+
+* **op elke instantie Publish**
 
    * aanmelden met beheerdersrechten
    * toegang tot [Beveiligingsconsole](/help/sites-administering/security.md)
 
       * bijvoorbeeld: [https://localhost:4503/useradmin](https://localhost:4503/useradmin)
 
-   * een nieuwe gebruiker maken
+   * een gebruiker maken
 
       * bijvoorbeeld: `usersync-admin`
 
@@ -138,11 +135,11 @@ Deze gemachtigde gebruiker zal in stap 3 worden gebruikt om de distributie van h
 
 * selecteren `/home` node
 * Selecteer in het rechterdeelvenster de optie `Access Control` tab
-* Selecteer de `+` knoop om een ACL ingang toe te voegen
+* om een ACL ingang toe te voegen, selecteer `+` knop
 
    * **Opdrachtgever**: *zoeken naar gebruiker gemaakt voor gebruikerssynchronisatie*
    * **Type**: `Allow`
-   * **Bevoegdheden**: `jcr:all`
+   * **Rechten**: `jcr:all`
    * **Beperkingen** rep:glob: `*/activities/*`
    * selecteren **OK**
 
@@ -155,11 +152,11 @@ Zie ook
 * [Toegangsbeheer](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * Sectie Problemen oplossen [Uitzondering bewerking wijzigen tijdens reactieverwerking](#modify-operation-exception-during-response-processing).
 
-### 3. Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
+### 3. De Distributie van Granite van de Adobe - de Versleutelde Leverancier van het Vervoer van het Wachtwoord {#adobegraniteencpasswrd}
 
 **Machtigingen configureren**
 
-Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgroep, is gemaakt op alle publicatie-instanties en moet worden aangegeven dat de geautoriseerde gebruiker bij de auteur gemachtigd is om gebruikersgegevens van de auteur te synchroniseren voor publicatie.
+Als een geautoriseerde gebruiker lid is van de **`administrators`** gebruikersgroep-wordt gecreeerd op alle Publish instanties, moet de erkende gebruiker op Auteur worden geïdentificeerd als hebbend toestemming om gebruikersgegevens van Auteur te synchroniseren om te publiceren.
 
 * **op auteur**
 
@@ -169,9 +166,9 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
       * bijvoorbeeld: [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr)
 
    * lokaliseren `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name`
-   * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `property name`: **`socialpubsync-publishUser`**
+   * om te openen voor bewerken, selecteert u de bestaande configuratie (potloodpictogram) verifiëren `property name`: **`socialpubsync-publishUser`**
 
-   * stel de gebruikersnaam en het wachtwoord in op de [geautoriseerde gebruiker](#createauthuser) gemaakt bij publicatie in stap 2
+   * stel de gebruikersnaam en het wachtwoord in op de [geautoriseerde gebruiker](#createauthuser) gemaakt bij Publiceren in stap 2
 
       * bijvoorbeeld: `usersync-admin`
 
@@ -181,7 +178,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
 
 **Gebruikerssynchronisatie inschakelen**
 
-* **op elke publicatie-instantie**:
+* **op elke instantie Publish**:
 
    * aanmelden met beheerdersrechten
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
@@ -190,12 +187,12 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
 
    * lokaliseren `Apache Sling Distribution Agent - Queue Agents Factory`
 
-      * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `Name`: `socialpubsync-reverse`
+      * om te openen voor bewerken, selecteert u de bestaande configuratie (potloodpictogram) verifiëren `Name`: `socialpubsync-reverse`
 
       * Selecteer de `Enabled` selectievakje
       * selecteren `Save`
 
-   * **herhalen** voor elke publicatie-instantie
+   * **herhalen** voor elke instantie Publish
 
 ![Queue Agents Factory](assets/chlimage_1-23.png)
 
@@ -203,7 +200,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
 
 **Groepssynchronisatie inschakelen**
 
-* **op elke publicatie-instantie**:
+* **op elke instantie Publish**:
 
    * aanmelden met beheerdersrechten
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
@@ -212,7 +209,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
 
    * lokaliseren **`Adobe Social Sync - Diff Observer Factory`**
 
-      * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram)
+      * om te openen voor bewerken, selecteert u de bestaande configuratie (potloodpictogram)
 
         Verifiëren `agent name`: `socialpubsync-reverse`
 
@@ -225,7 +222,7 @@ Zodra een geautoriseerde gebruiker, lid van de **`administrators`** gebruikersgr
 
 **(Optioneel) Wijzig het pollinginterval**
 
-Standaard wordt elke 30 seconden een opiniepeiling uitgevoerd. U wijzigt dit interval als volgt:
+Standaard wordt elke 30 seconden een opiniepeiling gehouden bij Auteur. Dit interval wijzigen:
 
 * **op auteur**
 
@@ -236,7 +233,7 @@ Standaard wordt elke 30 seconden een opiniepeiling uitgevoerd. U wijzigt dit int
 
    * lokaliseren `Apache Sling Distribution Trigger - Scheduled Triggers Factory`
 
-      * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram)
+      * om te openen voor bewerken, selecteert u de bestaande configuratie (potloodpictogram)
 
          * Verifiëren `Name`: `socialpubsync-scheduled-trigger`
 
@@ -247,11 +244,11 @@ Standaard wordt elke 30 seconden een opiniepeiling uitgevoerd. U wijzigt dit int
 
 ## Configureren voor meerdere publicatie-instanties {#configure-for-multiple-publish-instances}
 
-De standaardconfiguratie is voor één enkele publicatieinstantie. Aangezien de reden om gebruikerssynchronisatie toe te laten veelvoudige publicatieinstanties moet synchroniseren, zoals voor een publicatielandbouwbedrijf, zullen de extra publicatieinstanties aan de Fabriek van de Agenten van de Synchronisatie moeten worden toegevoegd.
+De standaardconfiguratie is voor één enkel Publish instantie. Aangezien de reden voor het toelaten van gebruikerssynchronisatie veelvoudige Publish instanties moet synchroniseren, zoals voor een publicatielandbouwbedrijf, moeten de extra Publish instanties aan de Factory van de Agenten van de Synchronisatie worden toegevoegd.
 
 ### 7. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory-1}
 
-**Publicatie-instanties toevoegen:**
+**Publicatieinstanties toevoegen:**
 
 * **op auteur**
 
@@ -262,31 +259,31 @@ De standaardconfiguratie is voor één enkele publicatieinstantie. Aangezien de 
 
    * lokaliseren `Apache Sling Distribution Agent - Sync Agents Factory`
 
-      * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `Name`: `socialpubsync`
+      * om te openen voor bewerken, selecteert u de bestaande configuratie (potloodpictogram) verifiëren `Name`: `socialpubsync`
 
 ![Fabrikant van agents synchroniseren](assets/chlimage_1-25.png)
 
 * **Eindpunten van export**
-Voor elke publicatie-instantie moet een eindpunt voor de exportfunctie aanwezig zijn. Als er bijvoorbeeld 2 publicatie-instanties zijn, localhost:4503 en 4504, moeten er 2 vermeldingen zijn:
+Er zou een exportereindpunt voor elke Publish instantie moeten zijn. Als er bijvoorbeeld 2 instanties Publish zijn, localhost:4503 en 4504, moeten er twee vermeldingen zijn:
 
    * `https://localhost:4503/libs/sling/distribution/services/exporters/socialpubsync-reverse`
    * `https://localhost:4504/libs/sling/distribution/services/exporters/socialpubsync-reverse`
 
 * **Eindpunten importeren**
-Voor elke publicatieinstantie moet een eindpunt voor de importer zijn ingesteld. Als er bijvoorbeeld 2 publicatie-instanties zijn, localhost:4503 en 4504, moeten er 2 vermeldingen zijn:
+Er zou een importereindpunt voor elke Publish instantie moeten zijn. Als er bijvoorbeeld 2 instanties Publish zijn, localhost:4503 en 4504, moeten er twee vermeldingen zijn:
 
    * `https://localhost:4503/libs/sling/distribution/services/importers/socialpubsync`
    * `https://localhost:4504/libs/sling/distribution/services/importers/socialpubsync`
 
 * selecteren `Save`
 
-### 8. AEM Communities User Sync Listener {#aem-communities-user-sync-listener}
+### 8. AEM Communities-gebruikerssynchronisatielistener {#aem-communities-user-sync-listener}
 
 **(Optioneel) Aanvullende JCR-knooppunten synchroniseren**
 
-Als er aangepaste gegevens zijn die moeten worden gesynchroniseerd in meerdere publicatievarianten, dan:
+Als er aangepaste gegevens zijn die over meerdere publicatieinstanties moeten worden gesynchroniseerd, geldt het volgende:
 
-* **op elke publicatie-instantie**:
+* **op elke instantie Publish**:
 
    * aanmelden met beheerdersrechten
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
@@ -294,12 +291,12 @@ Als er aangepaste gegevens zijn die moeten worden gesynchroniseerd in meerdere p
       * bijvoorbeeld: `https://localhost:4503/system/console/configMgr`
 
    * lokaliseren `AEM Communities User Sync Listener`
-   * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram) Verifiëren `Name`: `socialpubsync-scheduled-trigger`
+   * om te openen voor bewerken, selecteert u de bestaande configuratie (potloodpictogram) verifiëren `Name`: `socialpubsync-scheduled-trigger`
 
 ![AEM Communities User Sync Listener](assets/chlimage_1-26.png)
 
 * **Knooppunttypen**
-Dit is de lijst met knooptypen die worden gesynchroniseerd. Elk knooppunttype anders dan sling:Folder moet hier worden vermeld (sling:folder wordt afzonderlijk behandeld).
+Dit is de lijst van knooptypes die worden gesynchroniseerd. Elk knooppunttype anders dan sling:Folder moet hier worden vermeld (sling:folder wordt afzonderlijk behandeld).
 Standaardlijst met knooppunttypen die moeten worden gesynchroniseerd:
 
    * rep:gebruiker
@@ -307,21 +304,21 @@ Standaardlijst met knooppunttypen die moeten worden gesynchroniseerd:
    * nt:resource
 
 * **Genegeerde eigenschappen**
-Dit is de lijst met eigenschappen die worden genegeerd als er wijzigingen worden gedetecteerd. Wijzigingen in deze eigenschappen worden mogelijk gesynchroniseerd als neveneffect van andere wijzigingen (aangezien synchronisatie altijd op het knooppuntniveau plaatsvindt), maar wijzigingen in deze eigenschappen zullen op zich niet tot synchronisatie leiden.
+Dit is de lijst met eigenschappen die worden genegeerd als er wijzigingen worden gedetecteerd. Wijzigingen in deze eigenschappen worden mogelijk gesynchroniseerd als neveneffect van andere wijzigingen (aangezien synchronisatie altijd op knooppuntniveau plaatsvindt), maar wijzigingen in deze eigenschappen activeren op zichzelf geen synchronisatie.
 Standaardeigenschap die moet worden genegeerd:
 
    * cq:lastModified
 
 * **Genegeerde knooppunten**
-Subpaden die tijdens de synchronisatie volledig worden genegeerd. Niets onder deze subpaden zal op elk ogenblik worden gesynchroniseerd.
-Standaardknooppunten die moeten worden genegeerd:
+Subpaden die tijdens synchronisatie worden genegeerd. Niets onder deze subpaden wordt op elk moment gesynchroniseerd.
+Te negeren standaardknooppunten:
 
    * .tokens
    * systeem
 
 * **Verdeelde mappen**
 De meeste stappen:Mappen worden genegeerd omdat synchronisatie niet nodig is. De weinige uitzonderingen staan hier vermeld.
-Standaardmappen voor synchronisatie
+Te synchroniseren standaardmappen
 
    * segmenten/scoring
    * sociale/relaties
@@ -331,43 +328,43 @@ Standaardmappen voor synchronisatie
 
 >[!CAUTION]
 >
->Als de selectie-id overeenkomt met twee of meer publicatie-instanties, mislukt het synchroniseren van de gebruikersgroep.
+>Als de verkoop-id overeenkomt met twee of meer publicatie-instanties, mislukt de synchronisatie van de gebruikersgroep.
 
-Als het Verdelen identiteitskaart het zelfde voor veelvoudige publiceer instanties in publiceer landbouwbedrijf is, dan zullen de gebruikersgroepen niet worden gesynchroniseerd.
+Als het Verdelen identiteitskaart het zelfde voor veelvoudige Publish instanties in publiceer landbouwbedrijf is, dan worden de gebruikersgroepen niet gesynchroniseerd.
 
-Om te controleren of alle waarden voor de Verschuivende id verschillen, publiceert u voor elke publicatie-instantie:
+Om te controleren of alle waarden voor de Verschuivende id verschillen, moet u voor elke instantie Publiceren controleren:
 
 1. bladeren naar `http://<host>:<port>/system/console/status-slingsettings`
 1. controleer de waarde van **Verkoop-id**
 
 ![De waarde van de verkocht-id controleren](assets/chlimage_1-27.png)
 
-Als de Verschuivende-id van een publicatie-instantie overeenkomt met de Verschuivende-id van een andere publicatie-instantie, geldt het volgende:
+Als de verkoop-id van een instantie Publish overeenkomt met de id Sling van een andere instantie Publish, dan:
 
-1. Stop een van de publicatieinstanties die een overeenkomende sloon-id heeft
+1. Stop één van de Publish instanties die een passende Verzamelings identiteitskaart heeft
 1. in de map crx-quickstart/launch/felix
 
    * zoeken naar en het bestand met de naam *sling.id.file*
 
-      * bijvoorbeeld op een Linux-systeem:
+      * bijvoorbeeld op een Linux®-systeem:
         `rm -i $(find . -type f -name sling.id.file)`
 
       * bijvoorbeeld op een Windows-systeem:
         `use windows explorer and search for *sling.id.file*`
 
-1. De publicatie-instantie starten
+1. De instantie Publiceren starten
 
    * bij het opstarten wordt er een nieuwe verkoop-id toegewezen
 
 1. valideren dat de **Verkoop-id** is nu uniek
 
-Herhaal deze stappen totdat alle publicatie-instanties een unieke id voor verkopers hebben.
+Herhaal deze stappen totdat alle instanties Publiceren een unieke id voor verkopers hebben.
 
 ## Vault Package Builder-fabriek {#vault-package-builder-factory}
 
-Voor een correcte synchronisatie van updates is het nodig om de builder van het vault-pakket te wijzigen voor gebruikerssynchronisatie:
+Voor updates die correct worden gesynchroniseerd, is het nodig om de builder van het vault-pakket te wijzigen voor gebruikerssynchronisatie:
 
-* op elke AEM publicatie-instantie
+* op elke AEM instantie Publish
 * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
    * bijvoorbeeld: [https://localhost:4503/system/console/configMgr](https://localhost:4503/system/console/configMgr)
@@ -376,7 +373,7 @@ Voor een correcte synchronisatie van updates is het nodig om de builder van het 
 
    * `Builder name: socialpubsync-vlt`
 
-* Selecteer het bewerkingspictogram
+* het pictogram voor bewerken selecteren
 * twee toevoegen `Package Node Filters`:
 
    * `/home/users|-.*/.tokens`
@@ -406,13 +403,13 @@ Wanneer de topologie een [publicatiebedrijf](/help/sites-deploying/recommended-d
 
 Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de auteursomgeving en omgekeerd.
 
-Wanneer de [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md) -console wordt gebruikt om nieuwe gebruikers toe te voegen in de publicatieomgeving. Bij gebruikerssynchronisatie worden de nieuwe gebruikers en hun groepslidmaatschap indien nodig gesynchroniseerd met andere publicatieinstanties. Gebruikerssynchronisatie synchroniseert ook gebruikersgroepen die zijn gemaakt via de beveiligingsconsole.
+Wanneer de [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md) -console wordt gebruikt om nieuwe gebruikers toe te voegen in de publicatieomgeving, synchroniseert de gebruiker de nieuwe gebruikers en hun groepslidmaatschap indien nodig met andere publicatie-instanties. Gebruikerssynchronisatie synchroniseert ook gebruikersgroepen die zijn gemaakt via de beveiligingsconsole.
 
 ## Problemen oplossen {#troubleshooting}
 
 ### Gebruikerssynchronisatie offline uitvoeren {#how-to-take-user-sync-offline}
 
-Gebruikerssynchronisatie offline zetten om [een publicatie-instantie verwijderen](#how-to-remove-a-publish-instance) of [gegevens handmatig synchroniseren](#manually-syncing-users-and-user-groups), moet de distributierij leeg en stil zijn.
+Gebruikerssynchronisatie offline uitvoeren op [een instantie Publish verwijderen](#how-to-remove-a-publish-instance) of [gegevens handmatig synchroniseren](#manually-syncing-users-and-user-groups), moet de distributierij leeg en stil zijn.
 
 Om de staat van de distributierij te controleren:
 
@@ -437,7 +434,7 @@ Schakel gebruikerssynchronisatie uit wanneer de distributiestrijd leeg is:
 
    * *uncheck *the `Enabled` selectievakje voor [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory)
 
-Nadat de taken zijn voltooid, kunt u de gebruikerssynchronisatie opnieuw inschakelen:
+Wanneer de taken worden voltooid, om gebruikerssynchronisatie opnieuw toe te laten:
 
 * op auteur
 
@@ -445,9 +442,9 @@ Nadat de taken zijn voltooid, kunt u de gebruikerssynchronisatie opnieuw inschak
 
 ### Diagnostiek gebruikerssynchronisatie {#user-sync-diagnostics}
 
-Diagnostiek voor gebruikerssynchronisatie is een hulpmiddel dat de configuratie controleert en probeert eventuele problemen op te sporen.
+Diagnostiek voor gebruikerssynchronisatie is een programma dat de configuratie controleert en probeert eventuele problemen op te sporen.
 
-Bij de auteur navigeert u eenvoudig van de hoofdconsole door **Gereedschappen, Bewerkingen, Diagnose, Diagnose van gebruikerssynchronisatie.**
+Bij Auteur, eenvoudig navigeer van de belangrijkste console door **Gereedschappen, Bewerkingen, Diagnose, Diagnose van gebruikerssynchronisatie.**
 
 Als u gewoon de diagnostische console voor gebruikerssynchronisatie invoert, worden de resultaten weergegeven.
 
@@ -457,11 +454,11 @@ Dit is wat wordt getoond wanneer de Synchronisatie van de Gebruiker niet is toeg
 
 #### Diagnostiek voor publicatie-instanties uitvoeren {#how-to-run-diagnostics-for-publish-instances}
 
-Wanneer de diagnose wordt uitgevoerd vanuit de auteursomgeving, bevatten de resultaten voor slagen/zakken een [INFO] sectie waarin de lijst met geconfigureerde publicatieinstanties ter bevestiging wordt weergegeven.
+Wanneer de diagnose wordt uitgevoerd vanuit de auteursomgeving, bevatten de resultaten voor slagen/zakken een [INFO] sectie met de lijst met geconfigureerde publicatieinstanties ter bevestiging.
 
-In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnostiek voor die instantie uitvoert. De url-parameter `syncUser` wordt toegevoegd aan de diagnoseURL met de waarde ingesteld op *geautoriseerde synchronisatiegebruiker* gemaakt in [Stap 2](#createauthuser).
+Opgenomen in de lijst is een URL voor elke instantie Publish die de diagnostiek voor die instantie in werking stelt. De url-parameter `syncUser` wordt toegevoegd aan de diagnoseURL met de waarde ingesteld op *geautoriseerde synchronisatiegebruiker* gemaakt in [Stap 2](#createauthuser).
 
-**Opmerking**: voordat u de URL start, *geautoriseerde synchronisatiegebruiker* moet al zijn aangemeld bij dat publicatieexemplaar.
+**Opmerking**: voordat u de URL start, moet u *geautoriseerde synchronisatiegebruiker* moet al zijn aangemeld bij die instantie Publiceren.
 
 ![Diagnostiek voor publicatie-instanties](assets/chlimage_1-29.png)
 
@@ -471,23 +468,23 @@ Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende problee
 
 Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van het Web zouden moeten verschijnen. Als er meerdere exemplaren worden weergegeven, moet de toegevoegde configuratie worden verwijderd.
 
-#### (auteur) Eén Apache Sling Distribution Agent - Sync Agents Factory {#author-one-apache-sling-distribution-agent-sync-agents-factory}
+#### (Auteur) Eén Apache Sling Distribution Agent - fabriek van Sync Agents {#author-one-apache-sling-distribution-agent-sync-agents-factory}
 
 ![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-30.png)
 
-#### (auteur) Eén Apache Sling Distribution Transport Credentials - Gebruikersreferenties gebaseerd DistributionTransportSecretProvider {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
+#### (Auteur) Eén Apache Sling Distribution Transport Credentials - Gebruikersreferenties gebaseerd DistributionTransportSecretProvider {#author-one-apache-sling-distribution-transport-credentials-user-credentials-based-distributiontransportsecretprovider}
 
 ![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-31.png)
 
-#### (publiceren) Eén Apache Sling Distribution Agent - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
+#### (Publiceren) Eén Apache Sling Distribution Agent - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
 ![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-32.png)
 
-#### (publiceren) Eén Adobe Social Sync - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
+#### (Publiceren) Eén Adobe Social Sync - Diff Observer Factory {#publish-one-adobe-social-sync-diff-observer-factory}
 
 ![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-33.png)
 
-#### (auteur) One Apache Sling Distribution Trigger - Scheduled Triggers Factory {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
+#### (Auteur) Eén Apache Sling Distribution Trigger - Geplande Triggers Factory {#author-one-apache-sling-distribution-trigger-scheduled-triggers-factory}
 
 ![Bewerkt, standaardconfiguratieweergave in webconsole](assets/chlimage_1-34.png)
 
@@ -501,11 +498,11 @@ Als het volgende zichtbaar is in het logboek:
 
 Controleer vervolgens of de sectie [2. Geautoriseerde gebruiker maken](#createauthuser) correct is opgevolgd.
 
-Deze sectie beschrijft het creëren van een erkende gebruiker, die op alle publiceer instanties bestaat, en het identificeren van hen in de &quot;Secret Provider&quot;OSGi config op auteur. Standaard is de gebruiker `admin`.
+Deze sectie beschrijft het creëren van een erkende gebruiker, die op alle Publish instanties bestaat, en het identificeren van hen in de &quot;Secret Provider&quot;OSGi config op auteur. Standaard is de gebruiker `admin`.
 
 De geautoriseerde gebruiker moet lid worden van de **`administrators`** gebruikersgroep en machtigingen voor die groep mogen niet worden gewijzigd.
 
-De geautoriseerde gebruiker moet expliciet de volgende rechten en beperkingen hebben voor alle publicatieinstanties:
+De geautoriseerde gebruiker moet expliciet de volgende rechten en beperkingen hebben voor alle publicatie-instanties:
 
 | **pad** | **jcr:alles** | **rep:glob** |
 |---|---|---|
@@ -513,7 +510,7 @@ De geautoriseerde gebruiker moet expliciet de volgende rechten en beperkingen he
 | /home/users | X | &#42;/activities/&#42; |
 | /home/groups | X | &#42;/activities/&#42; |
 
-Als lid van de `administrators` de geautoriseerde gebruiker de volgende rechten verlenen bij alle publicatieexemplaren:
+Als lid van de `administrators` groep, moet de geautoriseerde gebruiker de volgende rechten hebben op alle instanties Publish:
 
 | **pad** | **jcr:alles** | **jcr:lezen** | **rep:write** |
 |---|---|---|---|
@@ -525,21 +522,21 @@ Als lid van de `administrators` de geautoriseerde gebruiker de volgende rechten 
 
 ### Synchronisatie van gebruikersgroep is mislukt {#user-group-sync-failed}
 
-Als de selectie-id overeenkomt met twee of meer publicatie-instanties, mislukt het synchroniseren van de gebruikersgroep.
+Als de selectie-id overeenkomt met twee of meer publicatie-instanties, mislukt de synchronisatie van de gebruikersgroep.
 
 Zie sectie [9. Unieke verkoper-id](#unique-sling-id)
 
 ### Gebruikers en gebruikersgroepen handmatig synchroniseren {#manually-syncing-users-and-user-groups}
 
-* bij publicatie-instanties waarop gebruikers en gebruikersgroepen aanwezig zijn:
+* op Publicatie-instanties waarop gebruikers en gebruikersgroepen aanwezig zijn:
 
    * [indien ingeschakeld, gebruikerssynchronisatie uitschakelen](#how-to-take-user-sync-offline)
    * [een pakket maken](/help/sites-administering/package-manager.md#creating-a-new-package) van `/home`
 
       * bij het bewerken van het pakket
 
-         * Tabblad Filters: Filter toevoegen: Hoofdpad: `/home`
-         * Het tabblad Geavanceerd: Wisselstroomverwerking: `Overwrite`
+         * Tabblad Filters: Filter toevoegen: basispad `/home`
+         * Geavanceerd tabblad: AC-verwerking: `Overwrite`
 
    * [het pakket exporteren](/help/sites-administering/package-manager.md#downloading-packages-to-your-file-system)
 
@@ -551,11 +548,11 @@ Ga naar stap 1 als u gebruikerssynchronisatie wilt configureren of inschakelen: 
 
 ### Wanneer een publicatie-instantie niet meer beschikbaar is {#when-a-publish-instance-becomes-unavailable}
 
-Wanneer een publicatieexemplaar niet beschikbaar wordt, zou het niet moeten worden verwijderd als het in de toekomst weer online zal zijn. De wijzigingen worden in de wachtrij voor de publicatie-instantie geplaatst en als deze weer online is, worden de wijzigingen verwerkt.
+Wanneer een instantie Publish niet beschikbaar wordt, zou het niet moeten worden verwijderd als het in de toekomst online terugkomt. Wijzigingen worden in een wachtrij geplaatst voor de instantie Publiceren en wanneer deze weer online is, worden de wijzigingen verwerkt.
 
-Als de publicatie-instantie nooit weer online zal zijn, als deze permanent offline is, moet deze worden verwijderd omdat de build van de wachtrij zal resulteren in een merkbaar gebruik van schijfruimte in de auteursomgeving.
+Als de instantie Publish nooit online terugkomt, als het permanent off-line is, dan moet het worden verwijderd omdat de rijbouwstijl in merkbaar schijfruimtegebruik in het milieu van de Auteur resulteert.
 
-Wanneer een publicatieexemplaar neer is, zal het auteurslogboek uitzonderingen gelijkend op hebben:
+Wanneer een instantie Publish neer is, heeft het logboek van de Auteur uitzonderingen gelijkend op het volgende:
 
 ```
 28.01.2016 15:57:48.475 ERROR
@@ -567,12 +564,12 @@ Wanneer een publicatieexemplaar neer is, zal het auteurslogboek uitzonderingen g
 
 ### Een publicatie-instantie verwijderen {#how-to-remove-a-publish-instance}
 
-Een publicatie-instantie verwijderen uit het dialoogvenster [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory), moet de distributierij leeg en stil zijn.
+Een instantie Publiceren verwijderen uit het dialoogvenster [Apache Sling Distribution Agent - Sync Agents Factory](#apache-sling-distribution-agent-sync-agents-factory), moet de distributierij leeg en stil zijn.
 
 * op auteur:
 
    * [Gebruikerssynchronisatie offline uitvoeren](#how-to-take-user-sync-offline)
-   * volgen [stap 7](#apache-sling-distribution-agent-sync-agents-factory) om het publicatieexemplaar uit beide serverlijsten te verwijderen:
+   * volgen [stap 7](#apache-sling-distribution-agent-sync-agents-factory) om de instantie Publish uit beide serverlijsten te verwijderen:
 
       * `Exporter Endpoints`
       * `Importer Endpoints`

@@ -2,9 +2,9 @@
 title: Integratie met Adobe Analytics met IMS
 description: Meer informatie over het integreren van AEM met Adobe Analytics met IMS
 exl-id: 2833a6df-ef32-48ab-8395-0f26816f8443
-source-git-commit: 06ed2329840e151083bd238ee3a4d33663463c9c
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -28,17 +28,17 @@ Voor de integratie van AEM met Adobe Analytics via de API Analytics Standard is 
 
 Voordat u met deze procedure begint:
 
-* [Ondersteuning voor Adobe](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) moet je account opgeven voor:
+* [Ondersteuning voor Adobe](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) moet je account opgeven voor:
 
    * Adobe Console
    * Adobe Developer Console
    * Adobe Analytics en
    * Adobe IMS (Identity Management-systeem)
 
-* Systeembeheerder van uw organisatie moet de Admin Console gebruiken om de vereiste ontwikkelaars in uw organisatie toe te voegen aan de relevante productprofielen.
+* De systeembeheerder van het Systeem van uw organisatie zou de Admin Console moeten gebruiken om de vereiste ontwikkelaars in uw organisatie aan de relevante productprofielen toe te voegen.
 
    * Hierdoor beschikken de specifieke ontwikkelaars over machtigingen om integratie in de Adobe Developer-console mogelijk te maken.
-   * Zie voor meer informatie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/manage-developers.ug.html).
+   * Zie [Ontwikkelaars beheren](https://helpx.adobe.com/enterprise/using/manage-developers.html).
 
 
 ## Een IMS-configuratie configureren - Een openbare sleutel genereren {#configuring-an-ims-configuration-generating-a-public-key}
@@ -46,7 +46,7 @@ Voordat u met deze procedure begint:
 De eerste fase van de configuratie is een Configuratie IMS in AEM te creëren en de Openbare Sleutel te produceren.
 
 1. In AEM opent u de **Gereedschappen** -menu.
-1. In de **Beveiliging** sectie selecteren **Adobe IMS-configuraties**.
+1. In de **Beveiliging** sectie, selecteert u **Adobe IMS-configuraties**.
 1. Selecteren **Maken** om de **Configuratie technische account van Adobe IMS**.
 1. De vervolgkeuzelijst onder gebruiken **Cloud Configuration**, selecteert u **Adobe Analytics**.
 1. Activeren **Nieuw certificaat maken** en voert u een nieuwe alias in.
@@ -58,21 +58,21 @@ De eerste fase van de configuratie is een Configuratie IMS in AEM te creëren en
 
    >[!CAUTION]
    >
-   >Zorg dat deze configuratie geopend blijft, dat deze opnieuw nodig is wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
+   >Houd deze configuratie open; deze is opnieuw nodig wanneer [De IMS-configuratie voltooien in AEM](#completing-the-ims-configuration-in-aem).
 
    ![Dialoogvenster Info om de toets aan de Adobe I/O toe te voegen](assets/integrate-analytics-io-02.png)
 
 ## IMS configureren voor Adobe Analytics-integratie met AEM {#configuring-ims-for-adobe-analytics-integration-with-aem}
 
-U moet met de Adobe Developer-console een project (integratie) maken met Adobe Analytics (voor AEM gebruik) en vervolgens de vereiste rechten toewijzen.
+Maak met de Adobe Developer-console een project (integratie) met Adobe Analytics (voor AEM gebruik) en wijs vervolgens de vereiste rechten toe.
 
 ### Het project maken {#creating-the-project}
 
-Open de Adobe Developer-console om een project te maken met Adobe Analytics dat AEM gebruiken:
+Open de Adobe Developer-console om een project te maken met Adobe Analytics dat AEM kan gebruiken:
 
 >[!CAUTION]
 >
->Momenteel ondersteunen we alleen de **Serviceaccount (JWT)** referentietype.
+>Adobe biedt momenteel alleen ondersteuning voor de Adobe Developer Console **Serviceaccount (JWT)** referentietype.
 >
 >Gebruik de **OAuth Server-to-Server** type referentie, dat in de toekomst zal worden gesteund.
 
@@ -80,11 +80,11 @@ Open de Adobe Developer-console om een project te maken met Adobe Analytics dat 
 
    [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van:
+1. Alle projecten die u hebt, worden weergegeven. Selecteren **Nieuw project maken** - de locatie en het gebruik zijn afhankelijk van het volgende:
 
-   * Als u nog geen project hebt, **Nieuw project maken** wordt midden onderaan weergegeven.
+   * Als u nog geen project hebt, **Nieuw project maken** is gecentreerd, onder.
      ![Nieuw project maken - eerste project](assets/integration-analytics-io-02.png)
-   * Als u al bestaande projecten hebt, worden deze weergegeven en **Nieuw project maken** is helemaal rechts.
+   * Als u reeds bestaande projecten hebt, zijn deze vermeld en **Nieuw project maken** bevindt zich rechtsboven.
      ![Nieuw project maken - Meerdere projecten](assets/integration-analytics-io-03.png)
 
 
@@ -100,7 +100,7 @@ Open de Adobe Developer-console om een project te maken met Adobe Analytics dat 
 
    ![Een API toevoegen](assets/integration-analytics-io-12.png)
 
-1. Selecteren **Serviceaccount (JWT)** als type van authentificatie, dan ga met **Volgende**:
+1. Selecteren **Serviceaccount (JWT)** als het type van authentificatie, dan ga met **Volgende**:
 
    ![Type verificatie selecteren](assets/integration-analytics-io-12a.png)
 
@@ -120,7 +120,7 @@ Open de Adobe Developer-console om een project te maken met Adobe Analytics dat 
 
 ### Rechten toewijzen aan de integratie {#assigning-privileges-to-the-integration}
 
-U moet nu de vereiste rechten toewijzen aan de integratie:
+Wijs nu de vereiste rechten toe aan de integratie:
 
 1. De Adobe openen **Admin Console**:
 
@@ -137,7 +137,7 @@ Van de console van de Projecten van Adobe Developer kunt u een lijst van al uw i
 
 * [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects)
 
-Selecteer een specifieke projectingang om verdere details over de configuratie te tonen. Deze omvatten:
+Om verdere details over de configuratie te tonen, selecteer een specifieke projectingang. Deze omvatten:
 
 * Overzicht van project
 * Inzichten
@@ -148,11 +148,11 @@ Selecteer een specifieke projectingang om verdere details over de configuratie t
 * APIS
    * Bijvoorbeeld Adobe Analytics
 
-Een aantal van deze programma&#39;s moet u voltooien om de integratie voor Adobe Analytics in AEM te voltooien.
+Sommige daarvan moet je de integratie voor Adobe Analytics in AEM voltooien.
 
 ## De IMS-configuratie voltooien in AEM {#completing-the-ims-configuration-in-aem}
 
-Terugkeren naar AEM kunt u de configuratie voltooien IMS door vereiste waarden van het integratieproject voor Analytics toe te voegen:
+Terugkomend op AEM, kunt u de configuratie voltooien IMS door de vereiste waarden van het integratieproject voor Analytics toe te voegen:
 
 1. Terugkeren naar de [IMS-configuratie geopend in AEM](#configuring-an-ims-configuration-generating-a-public-key).
 1. Selecteren **Volgende**.
@@ -201,7 +201,7 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
 
    De **Configuratie maken** wordt geopend.
 
-1. Voer een **Titel** en, indien gewenst, een **Naam** (als deze optie leeg blijft, wordt deze gegenereerd op basis van de titel).
+1. Voer een **Titel** en, indien gewenst, een **Naam** (als deze parameter leeg wordt gelaten, wordt deze gegenereerd op basis van de titel.)
 
    U kunt ook de vereiste sjabloon selecteren (als er meerdere sjablonen beschikbaar zijn).
 
@@ -215,12 +215,12 @@ Er kan nu naar de configuratie worden verwezen, zodat een Cloud Service de stand
 
    * **IMS-configuratie**: selecteer de naam van de IMS-configuratie
 
-1. Klikken **Verbinding maken met Analytics** de verbinding met Adobe Analytics initialiseren.
+1. Als u de verbinding met Adobe Analytics wilt initialiseren, klikt u **Verbinding maken met Analytics**.
 
    Als de verbinding tot stand is gebracht, wordt het bericht **Verbinding gelukt** wordt weergegeven.
 
 1. Selecteren **OK** op het bericht.
 
-1. Vul indien nodig andere parameters in, gevolgd door **OK** in het dialoogvenster om de configuratie te bevestigen.
+1. Vul indien nodig andere parameters in, gevolgd door **OK** op de dialoogdoos zodat kunt u de configuratie bevestigen.
 
 1. U kunt nu doorgaan naar [Een analyseframework toevoegen](/help/sites-administering/adobeanalytics-connect.md) om parameters te configureren die naar Adobe Analytics worden verzonden.

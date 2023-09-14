@@ -1,18 +1,16 @@
 ---
 title: Inhoud pagina's ontwerpen met inhoudsfragmenten
 description: Met AEM inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken.
-uuid: 987de428-8354-4b23-a552-3ea415122184
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 4049a7a5-4b33-4462-a25f-3c0daeb6a8a9
 docset: aem65
 exl-id: d5dad844-80ca-4ace-a082-38d892d9ffe2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1138'
-ht-degree: 5%
+source-wordcount: '1132'
+ht-degree: 2%
 
 ---
 
@@ -28,14 +26,14 @@ Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragme
 >
 >**Inhoudsfragmenten** en **[Ervaar fragmenten](/help/sites-authoring/experience-fragments.md)** Er zijn verschillende functies binnen AEM:
 >
->* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
+>* **Inhoudsfragmenten** Dit zijn redactionele inhoud, voornamelijk tekst, en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **Ervaar fragmenten** volledig opgemaakt zijn, een fragment van een webpagina.
 >
 >De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 
 >[!CAUTION]
 >
->Deze pagina moet worden gelezen in combinatie met [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) (en verwante pagina&#39;s), aangezien deze basisterminologie en -concepten introduceert en fragmenten maakt en beheert.
+>Deze pagina moet worden gelezen met [Werken met inhoudsfragmenten](/help/assets/content-fragments/content-fragments.md) (en verwante pagina&#39;s) omdat hierin basisterminologie en -concepten worden geïntroduceerd en fragmenten worden gemaakt en beheerd.
 
 Met de inhoudsfragmenten kunt u:
 
@@ -73,19 +71,19 @@ Met de inhoudsfragmenten kunt u:
 
    * Open de **Activa** browser en filter voor **Inhoudsfragmenten** (de standaardwaarde is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
 
-   * Selecteer vervolgens de component voor het inhoudsfragment **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selectie openen waarin u de vereiste **Inhoudsfragment**.
+   * Selecteer vervolgens de component voor het inhoudsfragment **Configureren** op de werkbalk. In het dialoogvenster kunt u het dialoogvenster Selecteren openen waarin u de vereiste opties kunt selecteren **Inhoudsfragment**.
 
    >[!NOTE]
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
 
-1. De inhoud van de **Hoofd** Element en **Master** (variatie) wordt weergegeven. U kunt [andere elementen en/of variaties selecteren](#selecting-the-element-or-variation) zoals vereist.
+1. De inhoud van de **Hoofd** Element en **Master** (variatie) wordt getoond. U kunt [andere elementen en/of variaties selecteren](#selecting-the-element-or-variation) zoals vereist.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
    >[!NOTE]
    >
-   >Zie ook voor meer informatie over de verdere bewerkingsfunctionaliteit:
+   >Raadpleeg de volgende secties voor meer informatie over de verdere bewerkingsfunctionaliteit:
    >
    >
    >
@@ -96,9 +94,9 @@ Met de inhoudsfragmenten kunt u:
 
 ### Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
-De fragmentinstellingen openen **Configuratie** om het fragment te configureren voor gebruik op de huidige pagina. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
+De fragmentinstellingen openen **Configuratie** zodat u het fragment kunt configureren voor gebruik op de huidige pagina. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
 
-In het juiste configuratiedialoogvenster kunt u de beschikbare parameters selecteren, waaronder:
+In het aangewezen de dialoogvakje van de Configuratie, kunt u de beschikbare parameters selecteren, die omvatten:
 
 * **Inhoudsfragment**
 
@@ -121,7 +119,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
 * **Variatie**
 
-   * De standaard **master** is altijd beschikbaar.
+   * De standaardwaarde **Master** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
 
 * **Alinea&#39;s**: geef het bereik op van de alinea&#39;s die u wilt opnemen:
@@ -139,13 +137,13 @@ U kunt de fragmentbron openen voor bewerking (het element) met de opdracht **Bew
 
 >[!CAUTION]
 >
->Zoals altijd heeft het bewerken van de fragmentbron invloed op alle pagina&#39;s die naar dat inhoudsfragment verwijzen.
+>Zoals altijd kan het bewerken van de fragmentbron gevolgen hebben voor alle pagina&#39;s die naar dat inhoudsfragment verwijzen.
 
 ### Tussenliggende inhoud toevoegen {#adding-in-between-content}
 
 Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er een **Componenten hierheen slepen** tijdelijke aanduiding tussen elke HTML-alinea (en boven/onder) van het fragment.
 
-Hiermee kunt u extra inhoud toevoegen [tussenliggend (d.w.z. tussen inhoud)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) de fragmentinhoud (op een van de beschikbare punten), zonder dat u het basisfragment hoeft te wijzigen.
+Hiermee kunt u extra inhoud toevoegen [tussenliggend (dat wil zeggen, tussen inhoud)](/help/assets/content-fragments/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) de fragmentinhoud (op een van de beschikbare punten), zonder dat u het basisfragment hoeft te wijzigen.
 
 Voor tussenliggende inhoud kunt u:
 
@@ -167,9 +165,9 @@ Voor tussenliggende inhoud kunt u:
 
 >[!CAUTION]
 >
->Nadat u tussenliggende inhoud hebt toegevoegd aan een inhoudsfragment op uw pagina, kan het wijzigen van de structuur van het onderliggende inhoudsfragment (in de editor voor het inhoudsfragment) leiden tot onjuiste/onverwachte resultaten.
+>Nadat u tussenliggende inhoud aan een inhoudsfragment op uw pagina hebt toegevoegd, kan het wijzigen van de structuur van het onderliggende inhoudsfragment (dat wil zeggen in de inhoudfragmenteditor) leiden tot onjuiste/onverwachte resultaten.
 >
->Als dit gebeurt, wordt de tussenliggende inhoud als volgt bewaard:
+>Wanneer dit gebeurt, wordt de tussenliggende inhoud als volgt bewaard:
 >
 >* Tussen componenten heeft een absolute positie binnen de reeks componenten in de fragmentstroom. Deze positie verandert niet, zelfs niet wanneer de inhoud van alinea&#39;s in het fragment verandert.
 >
@@ -179,7 +177,7 @@ Voor tussenliggende inhoud kunt u:
 
 ### Gekoppelde inhoud gebruiken {#using-associated-content}
 
-Als u [content hebt gekoppeld](/help/assets/content-fragments/content-fragments-assoc-content.md) aan het [contentfragment](/help/assets/content-fragments/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](#adding-in-between-content).
+Als u [gekoppelde inhoud](/help/assets/content-fragments/content-fragments-assoc-content.md) met de [inhoudsfragment](/help/assets/content-fragments/content-fragments.md)Deze elementen zijn beschikbaar in het zijpaneel (nadat u het fragment op de inhoudspagina hebt geplaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](#adding-in-between-content).
 
 >[!NOTE]
 >
@@ -187,11 +185,11 @@ Als u [content hebt gekoppeld](/help/assets/content-fragments/content-fragments-
 
 >[!NOTE]
 >
->Als u meerdere inhoudsfragmenten op één pagina hebt, kunt u **Gekoppelde inhoud** worden de elementen weergegeven die geschikt zijn voor alle fragmenten.
+>Als u meerdere inhoudsfragmenten op één pagina hebt, kunt u **Gekoppelde inhoud** bevat de elementen die geschikt zijn voor alle fragmenten.
 
 Nadat u een fragment met de bijbehorende inhoud aan de pagina hebt toegevoegd, wordt een nieuw tabblad toegevoegd (**Gekoppelde inhoud**) wordt geopend in het zijpaneel.
 
-Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaande component of naar de gewenste positie waar de juiste component wordt gemaakt):
+Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaande component of naar de gewenste positie waar de desbetreffende component is gemaakt):
 
 ![cfm-6420-03](assets/cfm-6420-03.png)
 
@@ -213,4 +211,4 @@ Andere wijzigingen, zoals verplaatsen, kopiëren en verwijderen, moeten worden a
 Fragmenten moeten worden gepubliceerd zodat ze op gepubliceerde webpagina&#39;s kunnen worden gebruikt:
 
 * Een fragment kan na [het fragment maken in de middelenconsole](/help/assets/content-fragments/content-fragments.md#publishingandreferencingafragment).
-* Als een *niet-gepubliceerd fragment* wordt gebruikt op een pagina die wordt gepubliceerd, kan het fragment ook op dit moment worden gepubliceerd.
+* Als een *niet-gepubliceerd fragment* wordt gebruikt op een pagina die wordt gepubliceerd, kan het fragment ook nu worden gepubliceerd.

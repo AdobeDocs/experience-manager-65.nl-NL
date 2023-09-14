@@ -1,19 +1,15 @@
 ---
 title: Hoofdweergave voor beheer van machtigingen
-seo-title: Principal View for Permissions Management
 description: Leer over de nieuwe interface van de Aanraking UI die toestemmingenbeheer vergemakkelijkt.
-seo-description: Learn about the new Touch UI interface that facilitates permissions management.
-uuid: 16c5889a-60dd-4b66-bbc4-74fbdb5fc32f
 contentOwner: sarchiz
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
-discoiquuid: db8665fa-353f-45c2-8e37-169d5c1df873
 docset: aem65
 exl-id: 4ce19c95-32cb-4bb8-9d6f-a5bc08a3688d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '773'
+source-wordcount: '764'
 ht-degree: 0%
 
 ---
@@ -29,7 +25,7 @@ AEM 6.5 introduceert het Beheer van Toestemmingen voor Gebruikers en Groepen. De
 
 ### De interface openen {#accessing-the-ui}
 
-Het nieuwe op UI gebaseerde toestemmingenbeheer wordt betreden door de kaart van Toestemmingen onder Veiligheid zoals hieronder getoond:
+Het nieuwe op UI-Gebaseerde toestemmingenbeheer wordt betreden door de kaart van Toestemmingen onder Veiligheid zoals hieronder getoond:
 
 ![Gebruikersinterface voor machtigingenbeheer](assets/screen_shot_2019-03-17at63333pm.png)
 
@@ -49,13 +45,13 @@ In het linkerframe kunnen gebruikers omlaag schuiven om een hoofd te zoeken of n
 
 ![Machtigingen weergeven voor een principal](assets/doi-1.png)
 
-Als u op de naam klikt, worden de toegewezen machtigingen aan de rechterkant weergegeven. Het toestemmingenvenster toont de lijst van de Ingangen van het Toegangsbeheer op specifieke wegen samen met gevormde beperkingen.
+Als u op de naam klikt, worden aan de rechterkant de toegewezen machtigingen weergegeven. Het toestemmingenvenster toont de lijst van de Ingangen van het Toegangsbeheer op specifieke wegen samen met gevormde beperkingen.
 
 ![ACL-lijst weergeven](assets/trei-1.png)
 
 ### Het toevoegen van nieuw Ingang van het Toegangsbeheer voor Principal {#adding-new-access-control-entry-for-a-principal}
 
-De nieuwe toestemmingen kunnen worden toegevoegd door een nieuwe Toegang toe te voegen die Ingang controleert door de Add knoop van ACE te klikken.
+De nieuwe toestemmingen kunnen worden toegevoegd door een Toegang toe te voegen die ingaat. Klik eenvoudig toevoegen ACE knoop.
 
 ![Voeg nieuwe ACL voor Principal toe](assets/patru.png)
 
@@ -63,7 +59,7 @@ Dit brengt het hieronder getoonde venster omhoog, is de volgende stap een weg te
 
 ![Machtigingspad configureren](assets/cinci-1.png)
 
-Hier selecteren wij een weg waar wij een toestemming voor willen vormen **stuwdammen**:
+Hier wordt een pad geselecteerd waar u een machtiging kunt configureren voor **stuwdammen**:
 
 ![Voorbeeldconfiguratie voor damgebruikers](assets/sase-1.png)
 
@@ -77,19 +73,19 @@ U kunt rechten toevoegen door te zoeken in het tekstveld en vervolgens te select
 
 ![Zoekopdracht voor een bepaald pad.](assets/image2019-3-21_0-5-47.png) ![Voeg nieuw item voor &#39;dam-users&#39; toe, zoals wordt weergegeven door een pad dat is geselecteerd in verticale kolommen.](assets/image2019-3-21_0-6-53.png)
 
-Nadat de lijst met bevoegdheden is geselecteerd, kan de gebruiker het machtigingstype kiezen: Weigeren of Toestaan, zoals hieronder wordt weergegeven.
+Nadat de lijst met bevoegdheden is geselecteerd, kan de gebruiker het machtigingstype Weigeren of Toestaan kiezen, zoals hieronder wordt weergegeven.
 
 ![Toestemming selecteren](assets/screen_shot_2019-03-17at63938pm.png) ![Toestemming selecteren](assets/screen_shot_2019-03-17at63947pm.png)
 
 ### Beperkingen gebruiken {#using-restrictions}
 
-Naast een lijst met bevoegdheden en het machtigingstype op een bepaald pad, kunt u in dit scherm ook beperkingen toevoegen voor fijnkorrelig toegangsbeheer, zoals hieronder wordt getoond:
+Naast de lijst met bevoegdheden en het machtigingstype op een bepaald pad, kunt u met dit scherm ook beperkingen voor fijnkorrelig toegangsbeheer toevoegen, zoals hieronder wordt getoond:
 
 ![Beperkingen toevoegen](assets/image2019-3-21_1-4-14.png)
 
 >[!NOTE]
 >
->Voor meer informatie over wat elke beperking betekent, raadpleegt u [de Jackrabbit Oak-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
+>Voor meer informatie over wat elke beperking betekent, zie [de Jackrabbit Oak-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/restriction.html).
 
 U kunt beperkingen toevoegen zoals hieronder wordt weergegeven door het type beperking te kiezen, de waarde in te voeren en de **+** pictogram.
 
@@ -101,7 +97,7 @@ Het nieuwe ACE wordt weerspiegeld in de Lijst van het Toegangsbeheer zoals hiero
 
 De Ingangen van het Toegangsbeheer kunnen worden uitgegeven door een hoofd te selecteren en ACE te kiezen die u wilt uitgeven.
 
-Hier kunnen we bijvoorbeeld de onderstaande gegevens bewerken voor **stuwdammen** door op het potloodpictogram aan de rechterkant te klikken:
+Hier kunt u bijvoorbeeld de onderstaande vermelding bewerken voor **stuwdammen** door op het potloodpictogram aan de rechterkant te klikken:
 
 ![Beperking toevoegen](assets/image2019-3-21_0-35-39.png)
 
@@ -109,7 +105,7 @@ Het bewerkingsscherm wordt weergegeven met de geconfigureerde ACE&#39;s die voor
 
 ![Item bewerken](assets/noua-1.png)
 
-Hier voegen we de `addChildNodes` bevoegdheid voor **stuwdammen** op het opgegeven pad.
+Hier `addChildNodes` bevoegdheid is toegevoegd voor **stuwdammen** op het opgegeven pad.
 
 ![Voorrecht toevoegen](assets/image2019-3-21_0-45-35.png)
 
@@ -125,7 +121,7 @@ De Ingangen van het Toegangsbeheer kunnen worden geschrapt om alle toestemmingen
 
 ### Klassieke UI Privilege-combinaties {#classic-ui-privilege-combinations}
 
-Merk op dat de nieuwe toestemmingenUI uitdrukkelijk de basisreeks voorrechten in plaats van vooraf bepaalde combinaties gebruikt die niet echt de nauwkeurige onderliggende voorrechten weerspiegelden die werden verleend.
+De nieuwe toestemmingenUI gebruikt uitdrukkelijk de basisreeks voorrechten in plaats van vooraf bepaalde combinaties die niet echt de nauwkeurige onderliggende voorrechten weerspiegelen die werden verleend.
 
 Het veroorzaakte verwarring over wat precies wordt gevormd. De volgende lijst maakt een lijst van de afbeelding tussen de voorrechtcombinaties van Klassieke UI aan de daadwerkelijke voorrechten die hen vormen:
 

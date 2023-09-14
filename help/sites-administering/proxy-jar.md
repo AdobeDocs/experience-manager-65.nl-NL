@@ -1,26 +1,22 @@
 ---
 title: Proxyserver (proxy.jar)
-seo-title: Proxy Server Tool (proxy.jar)
 description: Meer informatie over het gereedschap Proxy-server in AEM.
-seo-description: Learn about the Proxy Server Tool in AEM.
-uuid: 2fc1df24-8d5a-4be7-83fa-238ae65591b0
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: ca98dc3c-7056-4cdc-b4d3-23e471da5730
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
 
 # Proxyserver (proxy.jar){#proxy-server-tool-proxy-jar}
 
-De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver houdt spoor van alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit laat u precies controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
+De proxyserver fungeert als een tussenliggende server die verzoeken tussen een client en een server afspeelt. De volmachtsserver volgt alle cliënt-server interactie en output een logboek van de volledige mededeling van TCP. Dit laat u precies controleren wat aan de hand is, zonder het moeten tot de belangrijkste server toegang hebben.
 
 U vindt de proxyserver in de juiste installatiemap:
 
@@ -47,7 +43,7 @@ java -jar proxy.jar <host> <remoteport> <localport> [options]
 ### Opties {#options}
 
 * **q (stille modus)** Schrijft niet de verzoeken aan het consolevenster. Gebruik deze optie als u de verbinding niet wilt vertragen of als u de uitvoer naar een bestand wilt vastleggen (zie de optie -logfile).
-* **b (binaire modus)** Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat vervolgens de hexadecimale uitvoer en de tekenuitvoer.
+* **b (binaire modus)** Als u specifieke bytecombinaties in het verkeer zoekt, laat binaire wijze toe. De uitvoer bevat de hexadecimale uitvoer en de tekenuitvoer.
 * **t (logbestandvermeldingen voor tijdstempel)** Hiermee voegt u een tijdstempel toe aan elk logbestand. Het tijdstempel is in seconden, zodat het mogelijk niet geschikt is voor het controleren van afzonderlijke aanvragen. Gebruik het om van gebeurtenissen de plaats te bepalen die in een specifiek ogenblik voorkwamen als u de volmachtsserver over een langere tijdspanne gebruikt.
 * **logbestand &lt;filename> (schrijven naar logbestand)** Schrijft het cliënt-server gesprek aan een logboekdossier. Deze parameter werkt ook in de stille modus.
 * **i &lt;numindentions> (inspringing toevoegen)** Elke actieve verbinding springt in voor betere leesbaarheid. De standaardwaarde is 16 niveaus. (Nieuw in proxy.jar versie 1.16).
@@ -74,7 +70,7 @@ S-7-#000107 -> [Content-Length: 124 ]
 
 **Controleren of Keep-Alive werkt**
 
-**Keep-Alive** betekent dat een client de verbinding met de server opnieuw gebruikt om meerdere bestanden (paginacode, afbeeldingen, stijlpagina&#39;s enzovoort) te vervoeren. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
+**Keep-Alive** betekent dat een client de verbinding met de server opnieuw gebruikt om meerdere bestanden te vervoeren (paginacode, afbeeldingen, stijlpagina&#39;s enzovoort). Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
 Controleren of in leven houden werkt:
 
@@ -86,7 +82,7 @@ Controleren of in leven houden werkt:
 
 **Verzoeken om verlies zoeken**
 
-Als u aanvragen kwijtraakt in een complexe serverinstelling, bijvoorbeeld met een firewall en een verzender, kunt u de proxyserver gebruiken om te bepalen waar de aanvraag verloren is gegaan. Bij een firewall:
+Als u verzoeken in een complexe serverinstelling verliest, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
 
 1. Een proxy starten voor een firewall
 1. Een andere proxy starten na een firewall
@@ -98,7 +94,7 @@ Als u van tijd tot tijd hangende verzoeken ervaart:
 
 1. Start een proxy.jar.
 1. Wacht of schrijf het toegangslogboek in een dossier - met elke ingang een timestamp heeft.
-1. Wanneer het verzoek begint hangend kunt u zien hoeveel verbindingen open waren en welk verzoek problemen veroorzaakt.
+1. Wanneer het verzoek begint te hangen, kunt u zien hoeveel verbindingen open waren en welk verzoek problemen veroorzaakt.
 
 ## De indeling van logberichten {#the-format-of-log-messages}
 
@@ -126,11 +122,11 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Dit toont het aantal bytes die tussen cliënt en server op de 6de verbinding en bij de gemiddelde snelheid overgegaan.
+Dit toont het aantal bytes die tussen cliënt en server op de zesde verbinding en bij de gemiddelde snelheid overgingen.
 
 ## Een voorbeeld van een logbestandsuitvoer {#an-example-of-log-output}
 
-We zullen een eenvoudige sjabloon bekijken die op verzoek de volgende code produceert:
+Bekijk een eenvoudige sjabloon die de volgende code produceert wanneer u hierom wordt gevraagd:
 
 ```xml
 <html>
@@ -150,7 +146,7 @@ Als AEM wordt uitgevoerd op localhost:4303, start u de proxyserver als volgt:
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-U hebt toegang tot de server (`localhost:4303`) zonder de proxyserver, maar als u er toegang toe hebt via `localhost:4444`, zal de volmachtsserver de mededeling registreren. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk vervolgens naar het logbestand.
+U hebt toegang tot de server (`localhost:4303`) zonder de proxyserver, maar als u er toegang toe hebt via `localhost:4444`, de proxyserver de communicatie registreert. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk vervolgens naar het logbestand.
 
 >[!NOTE]
 >
@@ -181,7 +177,7 @@ De client vraagt om een verbinding met behoud-levend, zodat de server meerdere b
 C-0-#000369 -> [Connection: Keep-Alive ]
 ```
 
-De proxyserver is een goed hulpmiddel om te controleren of cookies correct zijn ingesteld of niet. Hier zien we het volgende:
+De proxyserver is een goed hulpmiddel om te controleren of cookies correct zijn ingesteld of niet. Hier ziet u het volgende:
 
 * cq3session, cookie gegenereerd door AEM
 * het schakelaar koekje van de showwijze dat door CFC wordt geproduceerd
@@ -281,4 +277,4 @@ Het bovenstaande voorbeeld is relatief eenvoudig, omdat de twee verbindingen ope
 * eerst retourneert de server de HTML-code
 * vervolgens vraagt de browser de afbeelding op en wordt een nieuwe verbinding geopend
 
-In de praktijk kan een pagina veel parallelle aanvragen genereren voor afbeeldingen, stijlpagina&#39;s, JavaScript-bestanden enzovoort. Dit betekent dat de logboeken overlappende vermeldingen van parallelle open verbindingen hebben. In dat geval raden we u aan om optie -i te gebruiken om de leesbaarheid te verbeteren.
+In de praktijk kan een pagina vele parallelle verzoeken voor beelden, stijlbladen, dossiers JavaScript, etc. produceren. Dit betekent dat de logboeken overlappende vermeldingen van parallelle open verbindingen hebben. In dat geval beveelt de Adobe aan om optie -i te gebruiken om de leesbaarheid te verbeteren.

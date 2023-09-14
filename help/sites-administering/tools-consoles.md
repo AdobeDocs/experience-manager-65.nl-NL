@@ -1,26 +1,22 @@
 ---
 title: Gereedschapsconsoles
-seo-title: Tools Consoles
 description: Leer meer over de verschillende gereedschapsconsoles in AEM.
-seo-description: Learn about the different tools consoles throughout AEM.
-uuid: 44439f8e-7c47-4ea9-afe1-a9a23489a20e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6732ef1f-0bfd-44e6-b24d-e22fe427d8b4
 docset: aem65
 exl-id: c9f55ec9-83ea-4115-97c2-59b5c179e90f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '604'
-ht-degree: 25%
+source-wordcount: '594'
+ht-degree: 21%
 
 ---
 
 # Gereedschapsconsoles{#tools-consoles}
 
-Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flauwvallen van de **Gereedschappen** console afhankelijk van UI u gebruikt:
+De **Gereedschappen** consoles bieden toegang tot verschillende gespecialiseerde hulpmiddelen die u helpen uw websites, digitale middelen en andere aspecten van uw inhoudsplaats te beheren. Er zijn momenteel twee flauwvallen van de **Gereedschappen** console afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)
@@ -47,7 +43,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td> </td>
-   <td>CRXDE LITE</td>
+   <td>CRXDE Lite</td>
   </tr>
   <tr>
    <td> </td>
@@ -159,7 +155,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td> </td>
-   <td>Controle van externe koppelingen<br /> </td>
+   <td>Externe koppelingencontrole<br /> </td>
   </tr>
   <tr>
    <td>Assets</td>
@@ -374,11 +370,11 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Contextconfiguraties voor clients<br /> </td>
-   <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden gehouden hier.<br /> </td>
+   <td>De context van de Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. De standaardconfiguraties en de configuraties van het Experience Cloud worden hier gehouden.<br /> </td>
   </tr>
   <tr>
    <td>Configuraties van Cloud Servicen<br /> </td>
-   <td>Bevat configuraties met betrekking tot Integratie met de Adobe Marketing Cloud.</td>
+   <td>Bevat configuraties met betrekking tot Integratie met de Adobe Experience Cloud.</td>
   </tr>
   <tr>
    <td>Cloud-instellingen<br /> </td>
@@ -390,11 +386,11 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>DAM </td>
-   <td>Biedt toegang tot verschillende opties.</td>
+   <td>Toegang tot verschillende opties.</td>
   </tr>
   <tr>
    <td>Dashboards</td>
-   <td>Hiermee kunt u rapportdashboards maken. Deze bieden een aanpasbare manier om pagina's te definiëren die geconsolideerde gegevens weergeven.</td>
+   <td>Maak rapportdashboards; deze bieden een aanpasbare manier om pagina's te definiëren waarop geconsolideerde gegevens worden weergegeven.</td>
   </tr>
   <tr>
    <td>Aangepaste documentatie</td>
@@ -406,11 +402,11 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Formulierverzendingen</td>
-   <td>Bevat de lijst met ingediende formulieren.</td>
+   <td>De lijst met verzonden formulieren.</td>
   </tr>
   <tr>
    <td>Importeurs </td>
-   <td>Biedt toegang tot verschillende opties.</td>
+   <td>Toegang tot verschillende opties.</td>
   </tr>
   <tr>
    <td>Externe koppelingencontrole</td>
@@ -426,19 +422,19 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Replicatie - replicatieagents</td>
-   <td>Wordt gebruikt om gegevens van auteur te repliceren voor publicatie bij het publiceren van pagina's of met omgekeerde replicatie om gebruikersopmerkingen van de publicatieomgeving te retourneren aan auteur.</td>
+   <td>Wordt gebruikt om gegevens van de instantie Auteur te repliceren voor publicatie bij het publiceren van pagina's of met omgekeerde replicatie om gebruikersopmerkingen van de publicatieomgeving te retourneren aan de auteur.</td>
   </tr>
   <tr>
    <td>Rapporten</td>
-   <td>AEM biedt een reeks aangepaste rapporten, waarmee u aangepaste rapporten kunt maken en/of uw eigen rapporten kunt ontwikkelen.</td>
+   <td>AEM verstrekt een waaier van aangepaste rapporten, laat u aangepaste rapporten tot stand brengen of uw ontwikkelen.</td>
   </tr>
   <tr>
    <td>Standaardpaginascheiding</td>
-   <td>Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig pagina's maken op basis van deze structuur.</td>
+   <td>Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig op deze structuur gebaseerde pagina's maken.</td>
   </tr>
   <tr>
    <td>Veiligheid - Zelfbediening Configuratie </td>
-   <td>Hiermee kunt u de e-mails configureren die gebruikers automatisch ontvangen wanneer ze een account maken of een wachtwoord opnieuw instellen, en een opnieuw ingesteld wachtwoord bevestigen.</td>
+   <td>Configureer de e-mails die gebruikers automatisch ontvangen wanneer ze een account maken of een wachtwoord opnieuw instellen, en bevestig een wachtwoord dat opnieuw is ingesteld.</td>
   </tr>
   <tr>
    <td>Segmentering</td>
@@ -454,7 +450,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr>
   <tr>
    <td>Versioning - paarse versies</td>
-   <td>Hiermee kunt u de paginaversies naar wens wissen.</td>
+   <td>Pagina-versies indien nodig wissen.</td>
   </tr>
   <tr>
    <td>Workflow</td>

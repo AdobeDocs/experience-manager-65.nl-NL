@@ -1,18 +1,16 @@
 ---
 title: Ontwerpen - het milieu en de hulpmiddelen in AEM
 description: De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren en bewerken van uw inhoud.
-uuid: 23a8aa93-b3d2-423b-b402-9e5f3f273d9a
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: f488ba79-5bda-46e9-9c15-9a8c3dbfa2ce
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
 workflow-type: tm+mt
-source-wordcount: '2240'
-ht-degree: 7%
+source-wordcount: '2210'
+ht-degree: 5%
 
 ---
 
@@ -46,8 +44,8 @@ U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
 Bij het bewerken van een pagina **Help** kan worden benaderd via:
 
-* de [**Pagina-informatie**](/help/sites-authoring/editing-page-properties.md#page-properties) selecteur; dit zal de inleidende dia&#39;s (zoals getoond de eerste keer u tot de redacteur toegang hebt) tonen.
-* de [configuratie](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) dialoog voor specifieke componenten (gebruiken ? in de dialoogwerkbalk); in deze weergave wordt de contextgevoelige Help weergegeven.
+* de [**Pagina-informatie**](/help/sites-authoring/editing-page-properties.md#page-properties) selecteur; dit toont de inleidende dia&#39;s (zoals getoond de eerste keer dat u tot de redacteur toegang hebt).
+* de [configuratie](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) dialoogvenster voor specifieke componenten (met het vraagteken (?) (in de werkbalk van het dialoogvenster); dit toont contextgevoelige Help.
 
 Verdere [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-authoring/basic-handling.md#accessing-help).
 
@@ -59,9 +57,9 @@ De componentenbrowser is een tabblad in het zijpaneel (samen met de [assetbrowse
 
 ![ateat-03](assets/ateat-03.png)
 
-Als u het zijpaneel opent, wordt het van de linkerkant geopend (selecteer **Componenten** indien nodig). Wanneer u deze optie opent, kunt u door alle componenten bladeren die beschikbaar zijn voor de pagina.
+Wanneer u het zijpaneel opent, schuift het van de linkerkant open (selecteer **Componenten** indien nodig). Wanneer u deze optie opent, kunt u door alle componenten bladeren die beschikbaar zijn voor de pagina.
 
-De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparatentype u gebruikt:
+De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat u gebruikt:
 
 >[!NOTE]
 >
@@ -71,7 +69,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
   De componentbrowser beslaat volledig de pagina die wordt bewerkt.
 
-  Als u een component aan de pagina wilt toevoegen, houdt u de vereiste component ingedrukt en verplaatst u deze naar rechts (de componentbrowser wordt dan gesloten om de pagina weer weer te geven), waar u de component kunt plaatsen.
+  Als u een component aan de pagina wilt toevoegen, houdt u de vereiste component ingedrukt en verplaatst u deze naar rechts (de browser van de component wordt gesloten om de pagina weer te geven), waar u de component kunt plaatsen.
 
   ![ateat-04](assets/ateat-04.png)
 
@@ -92,16 +90,16 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
       * De standaardcomponentpictogrammen zijn monochroom.
       * Afkortingen zijn altijd de eerste twee tekens van de componentnaam.
 
-  Vanaf de bovenste werkbalk in het dialoogvenster **Componenten** browser die u kunt:
+  Vanaf de bovenste werkbalk in het dialoogvenster **Componenten** kunt u de volgende handelingen uitvoeren in de browser:
 
    * Componenten filteren op naam.
-   * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
+   * Beperk de weergave tot een specifieke groep met behulp van de vervolgkeuzelijst.
 
   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor de **Lay-outcontainer**:
 
   ![ateat-06](assets/ateat-06.png)
 
-  Voor nog meer informatie over de componenten waarover u beschikt, ziet u de [Component Console](/help/sites-authoring/default-components-console.md).
+  Voor nog meer informatie over de componenten beschikbaar aan u, zie [Component Console](/help/sites-authoring/default-components-console.md).
 
 ## Browser voor middelen {#assets-browser}
 
@@ -111,7 +109,7 @@ De middelenbrowser is een tab in het zijpaneel samen met de [browse componenten]
 
 ![ateat-03-1](assets/ateat-03-1.png)
 
-Wanneer u het zijpaneel opent, schuift het van de linkerkant open. Selecteer de **Activa** indien nodig.
+Wanneer u het zijpaneel opent, schuift het vanaf de linkerkant open. Selecteer de **Activa** indien nodig.
 
 ![ateat-07](assets/ateat-07.png)
 
@@ -125,7 +123,7 @@ Als u een element aan de pagina wilt toevoegen, selecteert u het element en slee
 
    * U kunt bijvoorbeeld een element van het type afbeelding naar een afbeeldingscomponent slepen.
 
-* A [plaatsaanduiding](/help/sites-authoring/editing-content.md#component-placeholder) in het alineasysteem om een nieuw onderdeel van het juiste type te maken.
+* A [plaatsaanduiding](/help/sites-authoring/editing-content.md#component-placeholder) in het alineasysteem om een onderdeel van het juiste type te maken.
 
    * U kunt bijvoorbeeld een element van het type afbeelding naar het alineasysteem slepen om een component Image te maken.
 
@@ -137,22 +135,22 @@ Vanuit de bovenste werkbalk van de middelenbrowser kunt u de elementen filteren 
 
 * Naam
 * Pad
-* Elementtype zoals afbeeldingen, manuscripten, documenten, video&#39;s, pagina&#39;s, alinea&#39;s en producten
+* Type element, zoals afbeeldingen, manuscripten, documenten, video&#39;s, pagina&#39;s, alinea&#39;s en producten
 * Kenmerken van middelen, zoals oriëntatie (staand, liggend, vierkant) en stijl (kleur, monochroom, grijswaarden)
 
    * Alleen beschikbaar voor bepaalde typen elementen
 
-De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparatentype u gebruikt:
+De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat u gebruikt:
 
 >[!NOTE]
 >
->Een mobiel apparaat wordt gedetecteerd wanneer de breedte minder dan 1024 px is, dus ook in een klein bureaubladvenster.
+>Een mobiel apparaat wordt gedetecteerd wanneer de breedte minder dan 1024 px is, dat wil zeggen ook in een klein bureaubladvenster.
 
 * **Mobiel apparaat zoals iPad**
 
   De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
 
-  Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de gewenste component kunt toevoegen.
+  Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt gesloten om de pagina weer te tonen, waar u het element aan de vereiste component kunt toevoegen.
 
   ![ateat-09](assets/ateat-09.png)
 
@@ -160,11 +158,11 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
   De middelenbrowser wordt links in het venster geopend.
 
-  Als u een element aan de pagina wilt toevoegen, klikt u op het gewenste element en sleept u het naar de gewenste component of locatie.
+  Als u een element aan uw pagina wilt toevoegen, klikt u op het element en sleept u het naar de gewenste component of locatie.
 
   ![ateat-10](assets/ateat-10.png)
 
-Als u snel een wijziging in een element moet aanbrengen, kunt u de opdracht [middeleneditor](/help/assets/manage-assets.md) rechtstreeks vanuit de elementenbrowser door op het bewerkingspictogram naast de naam van het element te klikken.
+Als u een element snel moet wijzigen, kunt u de opdracht [Asset Editor](/help/assets/manage-assets.md) rechtstreeks vanuit de elementenbrowser door op het bewerkingspictogram naast de naam van het element te klikken.
 
 ![Assets Browser Desktop-apparaat](do-not-localize/screen_shot_2018-03-22at142448.png)
 
@@ -172,11 +170,11 @@ Als u snel een wijziging in een element moet aanbrengen, kunt u de opdracht [mid
 
 De **Inhoudsstructuur** geeft een overzicht van alle componenten op de pagina in een hiërarchie zodat u in een oogopslag kunt zien hoe de pagina is samengesteld.
 
-De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met componenten en elementen). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
+De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met componenten en elementen). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
 ![Inhoudsstructuur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Als u het zijpaneel opent, wordt het geopend (van de linkerkant). Selecteer de **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Bovendien wordt het op een complexe pagina gemakkelijker om tussen componenten van de pagina te springen.
+Wanneer u het zijpaneel opent, schuift het open (van de linkerkant). Selecteer de **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Op een complexe pagina is het bovendien gemakkelijker om tussen componenten van de pagina te schakelen.
 
 ![ateat-11](assets/ateat-11.png)
 
@@ -184,7 +182,7 @@ Een pagina kan eenvoudig uit veel van hetzelfde type componenten bestaan, zodat 
 
 Componenttypen worden weergegeven in de taal van de gebruiker, terwijl de tekst van de componentbeschrijving uit de paginataal komt.
 
-Als u klikt op het chevron naast een component, wordt dat niveau samengevouwen of uitgevouwen.
+Als u klikt op het chevron naast een component, wordt dat niveau samengevouwen of uitgebreid.
 
 ![screen_shot_2018-03-22at142559](assets/screen_shot_2018-03-22at142559.png)
 
@@ -200,7 +198,7 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
   ![ateat-12](assets/ateat-12.png)
 
-  Als de component waarop u klikt in de structuur bewerkbaar is, wordt er een moersleutelpictogram rechts van de naam weergegeven. Als u op dit pictogram klikt, wordt het dialoogvenster Bewerken voor de component direct gestart.
+  Als de component waarop u klikt bewerkbaar is, wordt er rechts van de naam een moersleutelpictogram weergegeven. Als u op dit pictogram klikt, wordt het dialoogvenster Bewerken geopend voor de component.
 
   ![Spelpictogram - Bewerken](do-not-localize/screen_shot_2018-03-22at142725.png)
 
@@ -212,11 +210,11 @@ Wanneer u op de component klikt, wordt de component in de pagina-editor gemarkee
 
 ## Fragmenten - gekoppelde inhoudsbrowser {#fragments-associated-content-browser}
 
-Als uw pagina inhoudsfragmenten bevat, hebt u ook toegang tot de [browser voor gekoppelde inhoud](/help/sites-authoring/content-fragments.md#using-associated-content).
+Als uw pagina inhoudsfragmenten bevat, hebt u toegang tot de [browser voor gekoppelde inhoud](/help/sites-authoring/content-fragments.md#using-associated-content).
 
 ## Verwijzingen {#references}
 
-**Verwijzingen** Hiermee geeft u verbindingen met de geselecteerde pagina weer:
+**Verwijzingen** verbindingen met de geselecteerde pagina tonen:
 
 * Blauwdrukken
 * Lanceringen
@@ -230,21 +228,21 @@ Open de vereiste console, navigeer dan aan het vereiste middel en open **Verwijz
 
 ![screen_shot_2018-03-22at153653](assets/screen_shot_2018-03-22at153653.png)
 
-[Selecteer uw vereiste bron](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) om een lijst van verwijzingstypes te tonen relevant voor die bron:
+[Selecteer uw vereiste bron](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) toont een lijst van verwijzingstypes relevant voor die bron:
 
 ![ateat-22](assets/ateat-22.png)
 
 Selecteer het juiste referentietype voor meer informatie. In bepaalde situaties zijn aanvullende acties beschikbaar wanneer u een specifieke verwijzing selecteert, zoals:
 
-* **Binnenkomende koppelingen**, biedt een lijst met pagina&#39;s die naar de pagina verwijzen, samen met directe toegang tot **Bewerken** een van deze pagina&#39;s wanneer u een specifieke koppeling selecteert
+* **Binnenkomende koppelingen** biedt een lijst met pagina&#39;s die naar de pagina verwijzen, samen met directe toegang tot **Bewerken** een van deze pagina&#39;s wanneer u een specifieke koppeling selecteert
 
 * Instanties van geleend en geleend materiaal die gebruikmaken van de **Referentie** component, vanaf hier kunt u naar de pagina waarnaar wordt verwezen of waarnaar wordt verwezen
 
 * [Verwijzingen naar productpagina&#39;s](/help/commerce/cif-classic/administering/generic.md#showing-product-references) (beschikbaar bij de console Handel-Producten)
-* [Starten](/help/sites-authoring/launches.md), biedt toegang tot verwante lanceringen
+* [Starten](/help/sites-authoring/launches.md) verleent toegang tot verwante lanceringen.
 * [Actieve kopieën](/help/sites-administering/msm.md) Hiermee geeft u de paden weer van alle live kopieën die op de geselecteerde bron zijn gebaseerd.
-* [Blauwdruk](/help/sites-administering/msm-best-practices.md), geeft details en diverse acties
-* [Kopieën van talen](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel), geeft details en diverse acties
+* [Blauwdruk](/help/sites-administering/msm-best-practices.md) bevat details en diverse acties.
+* [Kopieën van talen](/help/sites-administering/tc-manage.md#creating-translation-projects-using-the-references-panel) bevat details en diverse acties.
 
 U kunt bijvoorbeeld een verbroken verwijzing herstellen in een component Reference:
 
@@ -282,8 +280,8 @@ Met de knop Pagina-informatie (egalisatiepictogram) opent u een menu dat ook inf
 
 Zo, indien van toepassing, **Pagina-informatie** heeft ook de volgende opties:
 
-* [Starten bevorderen](/help/sites-authoring/launches-promoting.md) als de pagina een opstart is.
-* [Openen in klassieke gebruikersinterface](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) als deze opties [ingeschakeld door een beheerder](/help/sites-administering/enable-classic-ui-editor.md)
+* [Starten bevorderen](/help/sites-authoring/launches-promoting.md) als de pagina een introductie is
+* [Openen in klassieke gebruikersinterface](/help/sites-authoring/select-ui.md#switching-to-classic-ui-when-editing-a-page) als deze optie [ingeschakeld door een beheerder](/help/sites-administering/enable-classic-ui-editor.md)
 
 Daarnaast **Pagina-informatie** waar nodig toegang kunnen verlenen tot analyses en aanbevelingen.
 
@@ -291,10 +289,10 @@ Daarnaast **Pagina-informatie** waar nodig toegang kunnen verlenen tot analyses 
 
 Er zijn verschillende modi voor het bewerken van een pagina die verschillende handelingen mogelijk maken:
 
-* [Bewerken](/help/sites-authoring/editing-content.md) - de modus die moet worden gebruikt bij het bewerken van de pagina-inhoud.
-* [Layout](/help/sites-authoring/responsive-layout.md) - Hiermee kunt u de responsieve indeling afhankelijk van het apparaat maken en bewerken (als de pagina is gebaseerd op een lay-outcontainer)
+* [Bewerken](/help/sites-authoring/editing-content.md) - gebruik deze modus bij het bewerken van de pagina-inhoud.
+* [Layout](/help/sites-authoring/responsive-layout.md) - Hiermee kunt u de responsieve indeling maken en bewerken, afhankelijk van het apparaat (als de pagina is gebaseerd op een lay-outcontainer)
 
-* [Basisstructuur](/help/sites-authoring/scaffolding.md) - Help u een grote set pagina&#39;s te maken die dezelfde structuur hebben maar verschillende inhoud hebben.
+* [Basisstructuur](/help/sites-authoring/scaffolding.md) - Help u een grote set pagina&#39;s te maken die structuur delen maar andere inhoud hebben.
 * [Ontwikkelaar](/help/sites-developing/developer-mode.md) - Hiermee kunt u verschillende handelingen uitvoeren (hiervoor zijn privileges vereist). Deze omvatten het inspecteren van de technische details van een pagina en de onderdelen ervan.
 
 * [Ontwerp](/help/sites-authoring/default-components-designmode.md) - Hiermee kunt u componenten voor gebruik op een pagina in- en uitschakelen en het ontwerp van de component configureren (als de pagina is gebaseerd op een [statisch sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates)).
@@ -308,16 +306,16 @@ Er zijn verschillende modi voor het bewerken van een pagina die verschillende ha
 
 * [Annoteren](/help/sites-authoring/annotations.md) - wordt gebruikt om annotaties op de pagina toe te voegen of weer te geven.
 
-U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pictogram verandert in de modus die u momenteel gebruikt:
+U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het daadwerkelijke pictogram verandert om op de wijze te wijzen u momenteel gebruikt:
 
 ![ateat-18](assets/ateat-18.png)
 
 >[!NOTE]
 >
->* Afhankelijk van de kenmerken van de pagina zijn sommige modi mogelijk niet beschikbaar.
+>* Afhankelijk van de kenmerken van de pagina zijn bepaalde modi mogelijk niet beschikbaar.
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
->* Er is een [sneltoets](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Layout**, enz.).
+>* Er is een [sneltoets](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, en **Layout**).
 >
 
 ## Padselectie {#path-selection}
@@ -328,13 +326,13 @@ Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbe
 
 Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Zie voor meer informatie over het gebruik en bewerken van componenten [Componenten voor paginaontwerp](/help/sites-authoring/default-components.md).
 
-De gebieden van de weg hebben auto-volledige en blik-vooruit functionaliteit nu om het vinden van een middel gemakkelijker te maken.
+Padvelden beschikken nu over de functionaliteit voor automatisch aanvullen en vooruitkijken, zodat u een resource gemakkelijker kunt vinden.
 
 Klik op de knop **Dialoogvenster Selectie openen** in het veld Pad wordt de knop [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) voor gedetailleerdere selectieopties.
 
 ![Dialoogvenster Selectie openen](do-not-localize/screen_shot_2018-03-22at154427.png)
 
-U kunt ook beginnen te typen in het veld Pad en AEM biedt overeenkomende paden terwijl u typt.
+U kunt ook in het veld Pad typen en AEM biedt overeenkomende paden terwijl u typt.
 
 ![ateat-19](assets/ateat-19.png)
 
@@ -345,7 +343,7 @@ De padbrowser is geordend als de [kolomweergave](/help/sites-authoring/basic-han
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
 * Wanneer een bron is geselecteerd, wordt de **Selecteren** in de rechterbovenhoek van het dialoogvenster wordt geactiveerd. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
-* Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klik op de **X** naast het getal om de selectie op te heffen.
+* Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klikken **X** naast het getal dat u wilt uitschakelen.
 * Wanneer u door de boom navigeert, wordt uw plaats weerspiegeld in de broodkruimels bij de bovenkant van de dialoog. Deze broodkruimels kunnen ook worden gebruikt om snel binnen de middelhiërarchie te springen.
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de knop **X** in het zoekveld om de zoekopdracht te wissen.
 * Als u uw zoekopdracht wilt beperken, kunt u de filteropties zichtbaar maken en de resultaten filteren op basis van een bepaald pad.

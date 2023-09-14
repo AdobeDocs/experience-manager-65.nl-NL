@@ -1,14 +1,12 @@
 ---
 title: AEM Developer Tools for Eclipse
 description: AEM Developer Tools for Eclipse
-uuid: 566e49f2-6f28-4aa7-bfe0-b5f9675310bf
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 exl-id: 00473769-c447-4966-a71e-117c669e0151
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
 workflow-type: tm+mt
 source-wordcount: '788'
 ht-degree: 1%
@@ -29,20 +27,20 @@ Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
 * Synchronisatie voor inhoud en OSGI-bundels.
 * Ondersteuning voor foutopsporing met de functie voor hot-swapping van code.
 * Eenvoudige Bootstrap van AEM Projecten door middel van een specifieke Tovenaar van de Aanmaak van het Project.
-* Eenvoudig bewerken van JCR-eigenschappen.
+* Het gemakkelijk uitgeven van eigenschappen JCR.
 
 ## Vereisten {#requirements}
 
 Ga als volgt te werk voordat u de AEM Developer Tools gebruikt:
 
-* Downloaden en installeren [Eclipse-IDE voor Java™ EE-ontwikkelaars](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM Developer Tools biedt momenteel ondersteuning voor Eclipse Kepler of nieuwer
+* Downloaden en installeren [Eclipse-IDE voor Java™ EE-ontwikkelaars](https://www.eclipse.org/downloads/packages/release/luna/r/eclipse-ide-java-ee-developers). AEM Developer Tools ondersteunt momenteel Eclipse Kepler of nieuwer
 
 * Kan worden gebruikt met AEM versie 5.6.1 of hoger
 * Configureer de lipse-installatie om ervoor te zorgen dat u ten minste 1 GB heapgeheugen hebt door uw `eclipse.ini` configuratiebestand als beschreven in [Veelgestelde vragen over Eclipse](https://wiki.eclipse.org/FAQ_How_do_I_increase_the_heap_size_available_to_Eclipse%3F).
 
 >[!NOTE]
 >
->Klik in macOS met de rechtermuisknop **Eclipse.app** en selecteer vervolgens **Pakketinhoud tonen** om uw `eclipse.ini`.
+>Klik in macOS met de rechtermuisknop **Eclipse.app** en selecteer vervolgens **Toon de Inhoud van het Pakket** om uw `eclipse.ini`.
 
 ## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
@@ -50,7 +48,7 @@ Als u eenmaal aan de [vereisten](#requirements) hierboven kunt u de plug-in als 
 
 1. Bladeren in het dialoogvenster **AEM Developer Tools** website op `https://eclipse.adobe.com/aem/dev-tools/`.
 
-1. Kopieer de **Installatiekoppeling**.
+1. De **Installatiekoppeling**.
 
    U kunt ook een archief downloaden in plaats van de installatiekoppeling te gebruiken. Zo kunt u offline installeren, maar u kunt automatische updatemeldingen niet uitvoeren.
 
@@ -84,7 +82,7 @@ De &quot;AEM Hulpmiddelen van de Ontwikkelaar&quot;omvatten een steekproef, mult
 
 Voer de volgende stappen uit om het voorbeeldproject te maken:
 
-1. In de **Bestand** > **Nieuw** > **Project** , bladert u naar de **AEM** en selecteert u **AEM Monster nemen van project met meerdere modules**.
+1. In de **Bestand** > **Nieuw** > **Project** , bladert u naar de **AEM** en selecteert u **AEM Monster nemen van meermoduleproject**.
 
    ![chlimage_1-69](assets/chlimage_1-69a.png)
 
@@ -96,11 +94,11 @@ Voer de volgende stappen uit om het voorbeeldproject te maken:
 
    ![chlimage_1-70](assets/chlimage_1-70a.png)
 
-1. Kies **com.adobe.granite.archetypes : sample-project-archetype: (hoogste getal)** in het menu en klik vervolgens op **Volgende**.
+1. Kies **com.adobe.granite.archetypes : sample-project-archetype : (hoogste getal)** in het menu en klik vervolgens op **Volgende**.
 
    ![chlimage_1-71](assets/chlimage_1-71a.png)
 
-1. Een **Naam**, **Groep-id** en **Artefact-id** voor het voorbeeldproject. U kunt er ook voor kiezen om bepaalde geavanceerde eigenschappen in te stellen.
+1. Een **Naam**, **Groep-id** en **Artefact** voor het voorbeeldproject. U kunt ook bepaalde geavanceerde eigenschappen instellen.
 
    ![chlimage_1-72](assets/chlimage_1-72a.png)
 
@@ -118,7 +116,7 @@ Voer de volgende stappen uit om het voorbeeldproject te maken:
 
    >[!NOTE]
    >
-   >Op een nieuwe installatie (meer bepaald: wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval volgt u de in [Ongeldige projectdefinitie oplossen](#resolving-invalid-project-definition).
+   >Op een nieuwe installatie (meer specifiek: wanneer bepaalde gebiedsdelen nooit zijn gedownload) zou u het project kunnen krijgen dat met fouten wordt gecreeerd. In dit geval volgt u de in [Ongeldige projectdefinitie oplossen](#resolving-invalid-project-definition).
 
 ## Problemen oplossen {#troubleshooting}
 

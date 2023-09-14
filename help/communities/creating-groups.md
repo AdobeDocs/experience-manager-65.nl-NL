@@ -1,19 +1,15 @@
 ---
 title: Communautaire groepen
-seo-title: Community Groups
 description: Gebruikersgroepen maken
-seo-description: Creating community groups
-uuid: c677d23d-5edb-414c-9013-130c88c2ea52
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: d94708ee-ca6b-420c-9536-6889d752f9de
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: 1074843a0105df39382b64defe66fc262986b9c9
+source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -26,11 +22,11 @@ Deze mogelijkheid is aanwezig wanneer de [group, functie](/help/communities/func
 
 A [communitygroepsjabloon](/help/communities/tools-groups.md) verstrekt het ontwerp van de communautaire groepspagina wanneer een communautaire groep dynamisch wordt gecreeerd.
 
-Een of meer groepssjablonen worden geselecteerd voor de groepsfunctie wanneer de functie wordt toegevoegd aan de structuur van een gemeenschapssite of aan een sjabloon voor een gemeenschapssite. Deze lijst van groepsmalplaatjes wordt voorgesteld aan het lid of de auteur die dynamisch tot een nieuwe groep van binnen de communautaire plaats leidt.
+Een of meer groepssjablonen worden geselecteerd voor de groepsfunctie wanneer de functie wordt toegevoegd aan de structuur van een gemeenschapssite of aan een sjabloon voor een gemeenschapssite. Deze lijst van groepsmalplaatjes wordt voorgesteld aan het lid of de auteur die dynamisch tot een groep van binnen de communautaire plaats leidt.
 
 ## Een nieuwe groep maken {#creating-a-new-group}
 
-Het vermogen om een nieuwe communautaire groep tot stand te brengen hangt van het bestaan van een communautaire plaats af die de groepenfunctie omvat, zoals die die van wordt gecreeerd [Sjabloon verwijzingssite](/help/communities/sites.md).
+Het vermogen om een communautaire groep tot stand te brengen baseert zich op het bestaan van een communautaire plaats die de groepenfunctie omvat, zoals die van [Sjabloon verwijzingssite](/help/communities/sites.md).
 
 De volgende voorbeelden gebruiken de communitysite die is gemaakt op basis van de `Reference Site Template` zoals beschreven in de [Aan de slag met AEM Communities](/help/communities/getting-started.md) zelfstudie.
 
@@ -46,43 +42,43 @@ Onder de **Instellingen** tabblad geeft u de basisfuncties van de groep op:
 
 * **Groepsnaam**
 
-   De titel van de groep die op de communitysite moet worden weergegeven. Gebruik geen onderstrepingstekens (_) en trefwoorden zoals bronnen en configuratie in groepsnaam.
+  De titel van de groep die u op de site van de community wilt weergeven. Gebruik geen onderstrepingstekens (_) en trefwoorden zoals bronnen en configuratie in de groepsnaam.
 
 * **Beschrijving**
 
-   Een beschrijving van de groep die op de communitysite moet worden weergegeven.
+  Een beschrijving van de groep die op de communitysite moet worden weergegeven.
 
 * **Uitnodigen**
 
-   Een lijst met leden die moeten worden uitgenodigd om deel te nemen aan de groep. Bij het zoeken naar vooraf bepaalde typen worden suggesties van leden van de gemeenschap geleverd die u wilt uitnodigen.
+  Een lijst met leden die moeten worden uitgenodigd voor de groep. De vooruit onderzoek verstrekt suggesties van communautaire leden om uit te nodigen.
 
 * **URL-naam groep**
 
-   De naam voor de groepspagina die deel van URL wordt.
+  De naam voor de groepspagina die deel van URL wordt.
 
 * **Groep openen**
 
-   Selecteren `Open Group` geeft aan dat een anonieme sitebezoeker de inhoud kan bekijken en de selectie van `Member Only Group`.
+  Selecteren `Open Group` geeft aan dat een anonieme sitebezoeker de inhoud kan bekijken en de selectie ervan opheft `Member Only Group`.
 
 * **Groep alleen lid**
 
-   Selecteren `Member Only Group` Hiermee geeft u aan dat alleen leden van de groep de inhoud mogen bekijken en de selectie van `Open Group`.
+  Selecteren `Member Only Group` geeft aan dat alleen leden van de groep de inhoud mogen weergeven en heft de selectie op `Open Group`.
 
-Onder de **Sjabloon** tab is de mogelijkheid om een keuze te maken uit de lijst met sjablonen voor groepen die zijn opgegeven toen de groepsfunctie was opgenomen in de structuur van de site van de community of in een sjabloon voor een community-site.
+Onder de **Sjabloon** kunt u kiezen uit de lijst met sjablonen voor groepen uit de gebruikersgemeenschap. Deze sjablonen zijn opgegeven wanneer de functie Groepen is opgenomen in de structuur van de site van de community of in een sjabloon voor een community-site.
 
 ![groepssjabloon](assets/group-template.png)
 
-Onder de **Afbeelding** is de mogelijkheid om een afbeelding te uploaden die voor de groep op de pagina Groepen van de communautaire site moet worden weergegeven. De afbeelding wordt op het standaardstijlblad vergroot tot 170 x 90 pixels.
+Onder de **Afbeelding** kunt u een afbeelding uploaden om deze voor de groep weer te geven op de pagina Groepen van de communautaire site. De standaardstijlpagina wijzigt de afbeelding in 170 x 90 pixels.
 
 ![groepsafbeelding](assets/group-image.png)
 
-Als u **Groep maken** , worden de pagina&#39;s voor de groep gemaakt op basis van de gekozen sjabloon, wordt een gebruikersgroep gemaakt voor lidmaatschap en wordt de pagina Groepen bijgewerkt om de nieuwe subcommunity weer te geven.
+Door **Groep maken**, worden de pagina&#39;s voor de groep gemaakt op basis van de gekozen sjabloon, wordt een gebruikersgroep gemaakt voor lidmaatschap en wordt de pagina Groepen bijgewerkt om de nieuwe subcommunity weer te geven.
 
-De pagina Groepen met een nieuwe subcommunity met de naam &quot;Focus Group&quot;, waarvoor een afbeeldingsminiatuur is geüpload, ziet er bijvoorbeeld als volgt uit (nog steeds aangemeld als beheerder van een communitygroep):
+De pagina Groepen met een nieuwe subcommunity met de naam &quot;Focus Group&quot;, waarvoor een afbeeldingsminiatuur is geüpload, ziet er als volgt uit (nog steeds aangemeld als beheerder van een communitygroep):
 
 ![groepspagina](assets/group-page.png)
 
-Het selecteren van `Focus Group` Met de koppeling wordt de pagina Focus Group geopend in de browser, die een eerste weergave heeft op basis van de gekozen sjabloon, en een submenu bevat onder het menu van de hoofdsite van de community:
+De `Focus Group` Met deze koppeling wordt de pagina Focus Group in de browser geopend, die een eerste weergave heeft op basis van de gekozen sjabloon, en een submenu bevat onder het menu van de hoofdsite van de community:
 
 ![open-group-page](assets/open-group-page.png)
 

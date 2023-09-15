@@ -1,35 +1,31 @@
 ---
 title: Versie leegmaken
-seo-title: Version Purging
 description: In dit artikel worden de beschikbare opties voor versiereiniging beschreven.
-seo-description: This article describes the available options for version purging.
-uuid: a9fa25c7-e60e-4665-a726-99af9aac8f70
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: fb4d7337-7b94-430b-80d2-f1754f823c2b
 docset: aem65
 feature: Configuring
 exl-id: 6f0b1951-bdda-475f-b6c0-bc18de082b7c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '717'
 ht-degree: 0%
 
 ---
 
 # Versie leegmaken{#version-purging}
 
-In een standaardinstallatie AEM maakt een nieuwe versie van een pagina of knooppunt wanneer u een pagina activeert nadat u de inhoud hebt bijgewerkt.
+In een standaardinstallatie maakt Adobe Experience Manager (AEM) een versie van een pagina of knooppunt wanneer u een pagina activeert nadat u de inhoud hebt bijgewerkt.
 
 >[!NOTE]
 >
->Als er geen inhoudwijzigingen worden aangebracht, wordt het bericht weergegeven dat de pagina is geactiveerd, maar er wordt geen nieuwe versie gemaakt
+>Als de inhoud niet wordt gewijzigd, wordt het bericht weergegeven dat de pagina is geactiveerd, maar er wordt geen nieuwe versie gemaakt.
 
-U kunt op verzoek extra versies maken met de **Versioning** tabblad van het hulpwerkje. Deze versies worden opgeslagen in de opslagplaats en kunnen indien nodig worden hersteld.
+U kunt op verzoek extra versies maken met de **Versioning** tabblad van het hulpwerkje. Deze versies worden opgeslagen in de opslagplaats en kunnen, indien nodig, worden hersteld.
 
-Deze versies worden nooit gewist, zodat de grootte van de opslagplaats na verloop van tijd zal groeien en daarom moet worden beheerd.
+Deze versies worden nooit gewist, zodat de grootte van de opslagplaats in tijd groeit en daarom moet worden beheerd.
 
 AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats te beheren:
 
@@ -49,7 +45,7 @@ Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de o
 
 >[!CAUTION]
 >
->Om de grootte van de opslagplaats te optimaliseren, moet u de versiereinigingstaak regelmatig uitvoeren. De taak zou buiten kantooruren moeten worden gepland wanneer er een beperkte hoeveelheid verkeer is.
+>Als u de grootte van de opslagplaats wilt optimaliseren, voert u de versieopruimingstaak regelmatig uit. De taak zou buiten kantooruren moeten worden gepland wanneer er een beperkte hoeveelheid verkeer is.
 
 ## Versiebeheer {#version-manager}
 
@@ -67,19 +63,19 @@ Er wordt alleen een versie gemaakt als de activering plaatsvindt op een pad dat 
 
 * `versionmanager.ivPaths`(String[], standaard: `{"/"}`) Geeft de paden aan waarop impliciet versies worden gemaakt bij activering als `versionmanager.createVersionOnActivation` is ingesteld op true.
 
-* `versionmanager.purgingEnabled` (Boolean, standaard: false) Hiermee wordt gedefinieerd of leegmaken wordt ingeschakeld wanneer nieuwe versies worden gemaakt.
+* `versionmanager.purgingEnabled` (Booleaanse waarde, standaard: false) Hiermee wordt gedefinieerd of leegmaken moet worden ingeschakeld wanneer nieuwe versies worden gemaakt.
 
 * `versionmanager.purgePaths` (String[], standaard: {&quot;/content&quot;}) Hiermee geeft u op op welke paden naar purge versies moeten worden gebruikt wanneer nieuwe versies worden gemaakt.
 
-* `versionmanager.maxAgeDays` (int, gebrek: 30) Bij versie zuivering, zal om het even welke versie ouder dan de gevormde waarde worden verwijderd. Als de waarde kleiner is dan 1, wordt het leegmaken niet uitgevoerd op basis van de leeftijd van de versie.
+* `versionmanager.maxAgeDays` (int, gebrek: 30) Bij versie zuivering, wordt om het even welke versie ouder dan de gevormde waarde verwijderd. Als de waarde kleiner is dan 1, wordt het leegmaken niet uitgevoerd op basis van de leeftijd van de versie.
 
 * `versionmanager.maxNumberVersions` (int, standaard 5) Bij het opschonen van versies wordt elke versie die ouder is dan de n-de nieuwste versie verwijderd. Als de waarde kleiner is dan 1, wordt het leegmaken niet uitgevoerd op basis van het aantal versies.
 
-* `versionmanager.minNumberVersions` (int, gebrek 0) het minimumaantal versies die ongeacht de leeftijd zullen worden gehouden. Als de waarde is ingesteld op een waarde kleiner dan 1, blijft er geen minimumaantal versies behouden.
+* `versionmanager.minNumberVersions` (int, gebrek 0) het minimumaantal versies die ongeacht de leeftijd worden gehouden. Als de waarde is ingesteld op een waarde kleiner dan 1, blijft er geen minimumaantal versies behouden.
 
 >[!NOTE]
 >
->Het wordt niet aanbevolen een groot aantal versies in de opslagplaats te bewaren. Bij het configureren van de verwijderbewerking van de versie dient u dus niet te veel versies uit te sluiten van de opschoning, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Als u een groot aantal versies bewaart vanwege zakelijke vereisten, neemt u contact op met de ondersteuning van de Adobe om te zoeken naar andere manieren om de grootte van de opslagplaats te optimaliseren.
+>Het wordt niet aanbevolen om veel versies in de opslagplaats te houden. Dus wanneer u de versiereinigingsbewerking configureert, moet u er rekening mee houden dat u niet te veel versies van de opschoning wilt uitsluiten, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Als u een groot aantal versies door bedrijfsvereisten houdt, contacteer de steun van de Adobe om alternatieve manieren te vinden om de bewaarplaatgrootte te optimaliseren.
 
 ### Bewaaropties combineren {#combining-retention-options}
 
@@ -95,10 +91,10 @@ Als u bijvoorbeeld het maximumaantal versies definieert dat u wilt behouden EN d
 
 * Met:
 
-   * 10 versies die in de afgelopen 60 dagen zijn gemaakt
-   * 3 van de versies die in de afgelopen 30 dagen zijn gemaakt
+   * In de afgelopen 60 dagen zijn tien versies gemaakt
+   * Drie van deze versies zijn in de afgelopen 30 dagen gemaakt
 
-* Betekent dat:
+* Dit betekent dat:
 
    * De laatste drie versies blijven behouden
 
@@ -112,9 +108,9 @@ Als u bijvoorbeeld het maximum EN minimum aantal versies definieert dat behouden
 
 * Met:
 
-   * 5 versies die 60 dagen geleden zijn gemaakt
+   * Vijf versies werden 60 dagen geleden gemaakt
 
-* Betekent dat:
+* Dit betekent dat:
 
    * Drie versies blijven behouden
 

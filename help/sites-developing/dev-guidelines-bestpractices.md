@@ -1,18 +1,14 @@
 ---
 title: AEM ontwikkeling - Richtsnoeren en beste praktijken
-seo-title: AEM Development - Guidelines and Best Practices
 description: Richtsnoeren en beste praktijken voor de ontwikkeling van AEM
-seo-description: Guidelines and best practices for developing on AEM
-uuid: a67de085-4441-4a1d-bec3-2f27892a67ff
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: b4cf0ffc-973a-473b-80c8-7f530d111435
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Richtlijnen voor het gebruik van sjablonen en componenten {#guidelines-for-using-templates-and-components}
 
-AEM componenten en sjablonen vormen een zeer krachtige toolkit. Ze kunnen door ontwikkelaars worden gebruikt om zakelijke gebruikers, editors en beheerders van websites de functionaliteit te bieden om hun websites aan te passen aan veranderende bedrijfsbehoeften (inhouds-behendigheid) terwijl de uniforme lay-out van de sites behouden blijft (merkbescherming).
+Adobe Experience Manager (AEM)-componenten en -sjablonen vormen een krachtige toolkit. Ze kunnen door ontwikkelaars worden gebruikt om zakelijke gebruikers, editors en beheerders van websites de functionaliteit te bieden om hun websites aan te passen aan veranderende bedrijfsbehoeften (inhouds-behendigheid). Dit alles met behoud van de uniforme lay-out van de sites (merkbescherming).
 
 Een typische uitdaging voor een persoon verantwoordelijk voor een website, of reeks websites (bijvoorbeeld in een bijkantoor van een globale onderneming), is een nieuw type van inhoudspresentatie op hun websites te introduceren.
 
@@ -29,24 +25,24 @@ Laten we ervan uitgaan dat er een nieuwsbrief moet worden toegevoegd aan de webs
 
 De aanbevolen manier om een dergelijke uitdaging aan te gaan is:
 
-* Een bestaande sjabloon opnieuw gebruiken om een nieuw type pagina te maken. De sjabloon definieert grofweg de paginastructuur (navigatie-elementen, deelvensters, enzovoort), die verder wordt verfijnd door het ontwerp (CSS, afbeeldingen).
+* U kunt een bestaande sjabloon opnieuw gebruiken, zodat u een nieuw type pagina kunt maken. De sjabloon definieert grofweg de paginastructuur (navigatie-elementen, deelvensters, enzovoort), die verder wordt verfijnd door het ontwerp (CSS, afbeeldingen).
 * Gebruik het paragraafsysteem (parsys/iparsys) op de nieuwe pagina&#39;s.
 * Bepaal toegangsrecht tot de wijze van het Ontwerp van de paragraafsystemen, zodat slechts de gemachtigde mensen (gewoonlijk de beheerder) hen kunnen veranderen.
-* Definieer de componenten die zijn toegestaan in het opgegeven alineasysteem, zodat editors de vereiste componenten op de pagina kunnen plaatsen. In ons geval kan het een lijstcomponent zijn, die een subboomstructuur van pagina&#39;s kan doorlopen en de informatie volgens vooraf bepaalde regels kan halen.
-* De redacteurs voegen en vormen de toegestane componenten, op de pagina&#39;s toe zij voor verantwoordelijk zijn, om de gevraagde functionaliteit (informatie) aan de zaken te leveren.
+* Definieer de componenten die zijn toegestaan in het opgegeven alineasysteem, zodat editors de vereiste componenten op de pagina kunnen plaatsen. In dit geval kan het een component List zijn, die een subboomstructuur van pagina&#39;s kan doorlopen en de informatie kan ophalen volgens vooraf gedefinieerde regels.
+* Editors voegen en configureren de toegestane componenten toe op de pagina&#39;s waarvoor ze verantwoordelijk zijn, om de gevraagde functionaliteit (informatie) aan het bedrijf te leveren.
 
-Dit illustreert hoe deze benadering de bijdragende gebruikers en beheerders van de website machtigt om snel aan bedrijfsbehoeften te antwoorden, zonder de betrokkenheid van ontwikkelingsteams te vereisen. Alternatieve methodes, zoals het creëren van een nieuw malplaatje, zijn gewoonlijk een dure oefening, die een veranderingsbeheersproces en betrokkenheid van het ontwikkelingsteam vereist. Dit maakt het hele proces veel langer en kostbaar.
+Dit illustreert hoe deze benadering de bijdragende gebruikers en beheerders van de website machtigt om snel aan bedrijfsbehoeften te antwoorden, zonder de betrokkenheid van ontwikkelingsteams te vereisen. Alternatieve methodes, zoals het creëren van een malplaatje, zijn gewoonlijk een dure oefening, die een veranderingsbeheersproces en betrokkenheid van het ontwikkelingsteam vereist. Dit maakt het hele proces langer en kostbaar.
 
 De ontwikkelaars van op AEM gebaseerde systemen moeten daarom gebruik maken van:
 
 * sjablonen en toegangsbeheer voor het ontwerpen van alineasystemen voor uniformiteit en merkbescherming
-* alineasysteem, inclusief configuratieopties voor flexibiliteit.
+* alineasysteem, met inbegrip van de configuratieopties voor flexibiliteit.
 
-De volgende algemene regels voor ontwikkelaars zijn in de meeste gebruikelijke projecten zinvol:
+De volgende algemene regels voor ontwikkelaars zijn zinvol voor de meest gebruikelijke projecten:
 
 * Houd het aantal sjablonen laag - zo laag als het aantal fundamenteel verschillende paginastructuren op de websites.
-* Verstrek noodzakelijke flexibiliteit en configuratiemogelijkheden aan uw douanecomponenten.
-* Maximaliseer gebruik van de macht en de flexibiliteit van AEM paragraafsysteem - parsys &amp; iparsys componenten.
+* Verstrek de noodzakelijke flexibiliteit en configuratiemogelijkheden aan uw douanecomponenten.
+* Maximaliseer gebruik van de macht en de flexibiliteit van het de paragraafsysteem van de AEM - parsys &amp; iparsys componenten.
 
 ### Componenten en andere elementen aanpassen {#customizing-components-and-other-elements}
 
@@ -64,7 +60,7 @@ Bijvoorbeeld:
 
   Hiervoor moest een componentdefinitie worden bedekt:
 
-   * Een nieuwe componentmap maken in `/apps/<website-name>/components/<MyComponent>` door een bestaande component te kopiëren:
+   * Een componentmap maken in `/apps/<website-name>/components/<MyComponent>` door een bestaande component te kopiëren:
 
       * Bijvoorbeeld om het de componentenexemplaar van de Tekst aan te passen:
 
@@ -75,16 +71,16 @@ Bijvoorbeeld:
 
   In dit geval wordt een servlet bedekt:
 
-   * Kopieer het standaardscript of de standaardscripts in de gegevensopslagruimte:
+   * Kopieer een of meer standaardscripts in de opslagplaats:
 
       * Van `/libs/sling/servlet/errorhandler/`
       * tot `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->U **mogen** om het even wat in `/libs` pad.
+>**Niet gebruiken** om het even wat in `/libs` pad.
 >
->Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden is dat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >Voor configuratie en andere wijzigingen:
 >
@@ -98,9 +94,9 @@ JCR-query&#39;s zijn een krachtig hulpmiddel als ze correct worden uitgevoerd. Z
 * echte eindgebruikervragen, zoals fullText onderzoeken op inhoud.
 * gevallen waarin gestructureerde inhoud moet worden gevonden in de gehele gegevensopslagruimte.
 
-  In dergelijke gevallen, zorg ervoor dat de vragen slechts wanneer absoluut vereist, bijvoorbeeld, op componentenactivering of geheim voorgeheugenongeldigverklaring (in tegenstelling tot bijvoorbeeld, de Stappen van de Werkschema&#39;s, de Handlers van de Gebeurtenis die op inhoudwijzigingen, Filters, enz.) teweegbrengen.
+  In dergelijke gevallen, zorg ervoor dat de vragen slechts wanneer vereist lopen. Bijvoorbeeld bij componentactivering of cachevalidatie (in tegenstelling tot bijvoorbeeld Workflows Stappen, Gebeurtenishandlers die worden geactiveerd bij inhoudswijzigingen en Filters).
 
-JCR-query&#39;s mogen nooit worden gebruikt voor pure renderingaanvragen. JCR-query&#39;s zijn bijvoorbeeld niet geschikt voor
+Gebruik nooit JCR-query&#39;s voor pure rendering-aanvragen. JCR-query&#39;s zijn bijvoorbeeld niet geschikt voor het volgende:
 
 * renderingnavigatie
 * een overzicht maken van de 10 meest recente nieuwsartikelen
@@ -133,13 +129,13 @@ Met XSS (Cross-site scripting) kunnen aanvallers code injecteren in webpagina&#3
 
 AEM past het beginsel toe van het filtreren van alle gebruiker-geleverde inhoud op output. Het voorkomen van XSS krijgt de hoogste prioriteit tijdens zowel ontwikkeling als testen.
 
-Daarnaast is er een webtoepassingsfirewall, zoals [mod_security voor Apache](https://modsecurity.org), kan betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
+Ook een webtoepassingsfirewall, zoals [mod_security voor Apache](https://modsecurity.org), kan betrouwbare, centrale controle over de veiligheid van het plaatsingsmilieu verstrekken en tegen eerder onontdekte dwars-plaats scripting aanvallen beschermen.
 
 >[!CAUTION]
 >
 >De voorbeeldcode van AEM kan niet zelf tegen dergelijke aanvallen beschermen en baseert zich over het algemeen op verzoek het filtreren door een firewall van de Webtoepassing.
 
-Het XSS API-taakblad bevat informatie die u moet weten om de XSS API te kunnen gebruiken en een AEM app veiliger te maken. U kunt het hier downloaden:
+Het XSS API-taakblad bevat informatie waarvan u moet weten dat u de XSS-API kunt gebruiken en een AEM-app veiliger kunt maken. U kunt het hier downloaden:
 
 Het XSSAPI-controleblad.
 
@@ -152,18 +148,18 @@ Bij elke internettoepassing moet u ervoor zorgen dat bij het vervoer van vertrou
 * verkeer wordt beveiligd via SSL
 * Indien van toepassing wordt HTTP-POST gebruikt
 
-Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configuratie of administratieve toegang) en voor informatie die vertrouwelijk is voor de gebruikers (zoals hun persoonlijke gegevens).
+Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configuratie of administratieve toegang) en informatie die vertrouwelijk is voor de gebruikers (zoals hun persoonlijke gegevens).
 
-## Afzonderlijke ontwikkelingstaken {#distinct-development-tasks}
+## Specifieke ontwikkelingstaken {#distinct-development-tasks}
 
 ### Foutpagina&#39;s aanpassen {#customizing-error-pages}
 
 Foutpagina&#39;s kunnen voor AEM worden aangepast. Dit is aan te raden, zodat de instantie geen bewegingssporen weergeeft bij interne serverfouten.
 
-Zie [Foutpagina&#39;s aanpassen die worden weergegeven door de foutafhandeling](/help/sites-developing/customizing-errorhandler-pages.md) voor volledige informatie.
+Zie [Foutpagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md) voor volledige informatie.
 
-### Bestanden openen in het Java-proces {#open-files-in-the-java-process}
+### Bestanden openen in het Java™-proces {#open-files-in-the-java-process}
 
-Omdat AEM toegang heeft tot een groot aantal bestanden, wordt aanbevolen het aantal [bestanden openen voor een Java-proces](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk worden gevormd voor AEM.
+Omdat AEM toegang kan krijgen tot veel bestanden, wordt aanbevolen het aantal [bestanden openen voor een Java™-proces](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk worden gevormd voor AEM.
 
-Om dit probleem tot een minimum te beperken, moet de ontwikkeling ervoor zorgen dat geopende bestanden zo snel (zinvol) mogelijk correct worden gesloten.
+Om dit probleem tot een minimum te beperken, moet bij de ontwikkeling ervoor worden gezorgd dat geopende bestanden correct worden gesloten wanneer dat (zinvol) mogelijk is.

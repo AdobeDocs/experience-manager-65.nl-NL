@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
 workflow-type: tm+mt
-source-wordcount: '2343'
+source-wordcount: '2347'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 >
 >De informatie op deze pagina is niet volledig.
 >
->Zie de lijst onder **Beschikbare voorspellingen** op de Foutopsporingsconsole van de Bouwer van de Vraag; bijvoorbeeld :
+>Zie de lijst onder **Beschikbare voorspellingen** op de Foutopsporingsconsole van de Bouwer van de Vraag; bijvoorbeeld bij:
 >* [http://localhost:4502/libs/cq/search/content/querydebug.html](http://localhost:4502/libs/cq/search/content/querydebug.html)
 >
 >Zie bijvoorbeeld:
@@ -53,7 +53,7 @@ ht-degree: 0%
 * [opgeslagen query](/help/sites-developing/querybuilder-predicate-reference.md#savedquery)
 * [gelijkaardig](/help/sites-developing/querybuilder-predicate-reference.md#similar)
 * [tag](/help/sites-developing/querybuilder-predicate-reference.md#tag)
-* [tagid](/help/sites-developing/querybuilder-predicate-reference.md#tagid)
+* [gelabeld](/help/sites-developing/querybuilder-predicate-reference.md#tagid)
 * [tagzoeken](/help/sites-developing/querybuilder-predicate-reference.md#tagsearch)
 * [type](/help/sites-developing/querybuilder-predicate-reference.md#type)
 
@@ -88,7 +88,7 @@ Deze kan met elke waarde worden gebruikt om te controleren op inhoudsfragmenten.
 
 ### dateComparison {#datecomparison}
 
-Vergelijkt twee JCR DATE-eigenschappen met elkaar. Kan testen of ze gelijk, ongelijk, groter dan of groter dan of gelijk zijn.
+Vergelijkt twee JCR DATE-eigenschappen met elkaar. U kunt testen of ze gelijk, ongelijk, groter dan of groter dan of gelijk zijn.
 
 Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
 
@@ -100,7 +100,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex
 
 * **property2**
 
-  Eigenschap pad naar tweede datum.
+  Pad naar tweede-datumeigenschap.
 
 * **bewerking**
 
@@ -120,7 +120,7 @@ Filteren wordt niet ondersteund.
 
 * **eigenschap**
 
-  Relatief pad naar een `DATE` eigenschap, bijvoorbeeld `jcr:lastModified`.
+  Relatief pad naar `DATE` eigenschap, bijvoorbeeld `jcr:lastModified`.
 
 * **lowerBound**
 
@@ -136,7 +136,7 @@ Filteren wordt niet ondersteund.
 
 * **upperOperation**
 
-  &quot; `<`&quot; (ouder) of &quot; `<=`&quot; (bij of ouder) `upperBound`. De standaardwaarde is &quot; `<`&quot;.
+  &quot; `<`&quot; (ouder) of &quot; `<=`&quot; (bij of ouder), van toepassing op `upperBound`. De standaardwaarde is &quot; `<`&quot;.
 
 * **timeZone**
 
@@ -178,7 +178,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 Hiermee kunnen geneste voorwaarden worden gemaakt. Groepen kunnen geneste groepen bevatten. Alles in een query builder-query bevindt zich impliciet in een hoofdgroep, die kan `p.or` en `p.not` ook parameters.
 
-Voorbeeld voor het afstemmen van een van beide eigenschappen op een waarde:
+Voorbeeld voor het afstemmen van een van de twee eigenschappen op een waarde:
 
 ```
 group.p.or=true
@@ -251,17 +251,17 @@ Ondersteunt facetextractie. Verstrekt emmers voor elke unieke taalcode.
 
 ### hoofdmiddel {#mainasset}
 
-Controleert of een knooppunt een DAM-hoofdmiddel is en geen subelement. Dit is eigenlijk elk knooppunt dat zich niet binnen een &#39;subassets&#39;-knooppunt bevindt. Dit controleert niet op `dam:Asset` knooppunttype. Stel &quot; `mainasset=true`&quot; of &quot; `mainasset=false`&quot; , zijn er geen eigenschappen meer.
+Controleert of een knooppunt een DAM-hoofdelement is en geen subelement. Dit is eigenlijk elk knooppunt dat zich niet binnen een &#39;subassets&#39;-knooppunt bevindt. Dit controleert niet op `dam:Asset` knooppunttype. Als u deze voorspelling wilt gebruiken, stelt u &quot; `mainasset=true`&quot; of &quot; `mainasset=false`&quot; , zijn er geen eigenschappen meer.
 
 Dit is een voorspelling die alleen kan worden gefilterd en er kan geen zoekindex worden gebruikt.
 
-Ondersteunt facetextractie. Verstrekt twee emmers voor hoofd en subassets.
+Steunt facetextractie en verstrekt twee emmers voor hoofd en subassets.
 
 #### Eigenschappen {#properties-9}
 
 * **hoofdmiddel**
 
-  Boolean, &quot; `true`&quot; voor de belangrijkste activa, &quot; `false`&quot; voor subactiva.
+  Boolean, &quot; `true`&quot; voor de belangrijkste activa, &quot; `false`&quot; voor subassets.
 
 ### lidOf {#memberof}
 
@@ -289,7 +289,7 @@ Ondersteunt facetextractie. Verstrekt emmers voor elke unieke knoopnaam (filenam
 
 ### notexpired {#notexpired}
 
-Komt overeen met items door te controleren of een JCR DATE-eigenschap groter of gelijk is aan de huidige servertijd. Hiermee kunt u een &quot; `expiresAt`&quot; Vergelijkbare datum, eigenschap en beperking tot alleen de eigenschappen die nog niet zijn verlopen ( `notexpired=true`) of die reeds zijn verlopen ( `notexpired=false`).
+Komt overeen met items door te controleren of een JCR DATE-eigenschap groter of gelijk is aan de huidige servertijd. Dit kan worden gebruikt om een &quot; `expiresAt`&quot; Vergelijkbare datum, eigenschap en beperking tot alleen de eigenschappen die nog niet zijn verlopen ( `notexpired=true`) of die reeds zijn verlopen ( `notexpired=false`).
 
 Filteren wordt niet ondersteund.
 
@@ -307,7 +307,7 @@ Ondersteunt facetextractie op dezelfde manier als de daterange predikaat.
 
 ### ordonneren {#orderby}
 
-Hiermee kunt u het resultaat sorteren. Als het opdracht geven door veelvoudige eigenschappen wordt vereist, moet dit predikaat veelvoudige tijden toevoegen gebruikend het aantalprefix, zoals `1_orderby=first`, `2_oderby=second`.
+Hiermee kunt u de resultaten sorteren. Als het opdracht geven door veelvoudige eigenschappen wordt vereist, moet dit predikaat veelvoudige tijden toevoegen gebruikend het aantalprefix, zoals `1_orderby=first`, `2_oderby=second`.
 
 #### Eigenschappen {#properties-13}
 
@@ -321,7 +321,7 @@ Hiermee kunt u het resultaat sorteren. Als het opdracht geven door veelvoudige e
 
 * **case**
 
-  Indien ingesteld op `ignore`, wordt het sorteren ongevoelig gemaakt, wat betekent dat &quot;a&quot; voor &quot;B&quot; komt; indien leeg of weggelaten, wordt onderscheid gemaakt tussen hoofdletters en kleine letters, wat betekent dat &quot;B&quot; voor &quot;a&quot; komt
+  Indien ingesteld op `ignore`, maakt het sorteren ongevoelig, wat betekent &quot;a&quot;komt vóór &quot;B&quot;; als leeg of weggelaten, is het sorteren hoofdlettergevoelig, wat betekent &quot;B&quot; komt vóór &quot;a&quot;
 
 ### pad {#path}
 
@@ -333,7 +333,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 * **pad**
 
-  Padpatroon; afhankelijk van de exacte waarde, komt de volledige subboomstructuur overeen (zoals bij toevoegen) `//*` in xpath, maar merk op dat dit niet het basispad bevat) (exact=false, standaard), of alleen een exacte padovereenkomst, die jokertekens kan bevatten ( `*`); als self is ingesteld, wordt de gehele substructuur, inclusief het basisknooppunt, doorzocht.
+  Padpatroon. Afhankelijk van het exacte aantal komt de volledige subboomstructuur overeen (zoals bij toevoegen) `//*` in xpath, maar merk op dat dit niet het basispad bevat) (exact=false, standaard), of alleen een exacte padovereenkomst, die jokertekens kan bevatten ( `*`); als zelf is ingesteld, wordt de volledige substructuur, inclusief het basisknooppunt, doorzocht.
 
 * **exact**
 
@@ -341,7 +341,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 * **plat**
 
-  Hiermee zoekt u alleen de directe onderliggende objecten (zoals bij het toevoegen van &quot; `/*`&quot; in xpath) (alleen gebruikt als &quot; `exact`&#39; is niet waar, optioneel).
+  Hiermee doorzoekt u alleen de directe onderliggende items (zoals u &quot; `/*`&quot; in xpath) (alleen gebruikt als &quot; `exact`&#39; is niet waar, optioneel).
 
 * **zelfzucht**
 
@@ -361,11 +361,11 @@ Ondersteunt facetextractie. Verstrekt emmers voor elke unieke bezitswaarde in de
 
 * **value**
 
-  Waarde waarvoor eigenschap moet worden gecontroleerd; volgt het JCR-eigenschapstype op tekenreeksomzettingen.
+  Waarde waarop de eigenschap moet worden gecontroleerd; volgt het eigenschapstype JCR op tekenreeksconversies.
 
 * **N_value**
 
-  Gebruiken `1_value`, `2_value`, ... controleren op meerdere waarden (gecombineerd met `OR` standaard, met `AND` if and=true) (sinds 5.3).
+  Gebruiken `1_value`, `2_value`, ... om te controleren op meerdere waarden (gecombineerd met `OR` standaard, met `AND` if and=true) (sinds 5.3).
 
 * **en**
 
@@ -422,7 +422,7 @@ Bijvoorbeeld:
 * `upperBound=1h` (en `lowerBound`) in de komende uren alles selecteren
 * `lowerBound=-1d` (en `upperBound`) in de afgelopen 24 uur alles selecteren
 * `lowerBound=-6M` en `upperBound=-3M` zou om het even wat 6 maanden tot 3 maanden oud selecteren
-* `lowerBound=-1500` en `upperBound=5500` zou om het even wat tussen 1500 milliseconden in het verleden en 5500 milliseconden in de toekomst selecteren
+* `lowerBound=-1500` en `upperBound=5500` selecteert u in de toekomst alles tussen 1500 milliseconden in het verleden en 5500 milliseconden
 * `lowerBound=1d` en `upperBound=2d` zou overmorgen alles selecteren
 
 Het neemt schrikkeljaren niet in overweging en alle maanden zijn 30 dagen.
@@ -451,15 +451,15 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 
 * **p.offset**
 
-  Getal dat het begin van de resultatenpagina aangeeft, dat wil zeggen hoeveel items moeten worden overgeslagen.
+  Het getal dat het begin van de resultatenpagina aangeeft, dat wil zeggen het aantal items dat moet worden overgeslagen.
 
 * **p.limit**
 
-  Getal dat het paginaformaat aangeeft.
+  Het getal dat het paginaformaat aangeeft.
 
 * **p.radenTotaal**
 
-  Aanbevolen: niet het volledige resultaattotaal berekenen dat kostbaar kan zijn; hetzij een getal dat het maximale totaal aangeeft tot (bijvoorbeeld 1000, een getal dat gebruikers voldoende feedback geeft over de ruwe grootte en exacte getallen voor kleinere resultaten), of &quot; `true`&quot; om slechts tot het noodzakelijke minimum te tellen `p.offset` + `p.limit`.
+  Aanbevolen: vermijd het berekenen van het volledige resultaattotaal, wat kostbaar kan zijn; ofwel een getal dat het maximale totaal aangeeft dat kan worden geteld (bijvoorbeeld 1000, een getal dat gebruikers voldoende feedback geeft over de ruwe grootte en exacte getallen voor kleinere resultaten), ofwel &quot; `true`&quot; om slechts tot het noodzakelijke minimum te tellen `p.offset` + `p.limit`.
 
 * **p.excerpt**
 
@@ -475,15 +475,15 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 
    * **volledig**:
 
-     Sling JSON rendering van het knooppunt, met `jcr:path` het pad van de treffer aangeven: door gebrek maakt enkel een lijst van de directe eigenschappen van de knoop, omvat een diepere boom met `p.nodedepth=N`, waarbij 0 de gehele oneindige subboom betekent; toevoegen `p.acls=true` om de JCR-machtigingen van de huidige sessie op te nemen voor het opgegeven resultaatitem (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
+     Sling JSON rendering van het knooppunt, met `jcr:path` die op de weg wijzen van de slag: door gebrek maakt enkel een lijst van de directe eigenschappen van de knoop, omvat een diepere boom met `p.nodedepth=N`, waarbij 0 staat voor de gehele, oneindige substructuur; toevoegen `p.acls=true` om de JCR-machtigingen van de huidige sessie op te nemen voor het opgegeven resultaatitem (toewijzingen: `create` = `add_node`, `modify` = `set_property`, `delete` = `remove`).
 
    * **selectief**:
 
-     Alleen eigenschappen opgegeven in `p.properties`, dat een spatie gescheiden is (gebruik &quot;+&quot; in URL&#39;s) lijst met relatieve paden; als het relatieve pad een diepte > 1 heeft, worden deze weergegeven als onderliggende objecten; de speciale eigenschap jcr:path bevat het pad van de hit
+     Alleen eigenschappen opgegeven in `p.properties`, dat een spatie gescheiden is (gebruik &quot;+&quot; in URL&#39;s), lijst met relatieve paden; als het relatieve pad een diepte > 1 heeft, worden deze weergegeven als onderliggende objecten; de speciale eigenschap jcr:path bevat het pad van de hit
 
 ### opgeslagen query {#savedquery}
 
-Omvat alle predikaten van een persisted vraag van de vraagbouwer in de huidige vraag als sub groep predikaat.
+Omvat alle predikaten van een persisted vraag van de vraagbouwer in de huidige vraag als subgroup predikaat.
 
 Hiermee wordt geen extra query uitgevoerd, maar wordt de huidige query uitgebreid.
 
@@ -521,17 +521,17 @@ Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag, waarbij het h
 
 * **tag**
 
-  Titelpad van tag naar eigenschappen van element zoeken: Oriëntatie / Liggend&quot;.
+  Titelpad van tag die moet worden gezocht, bijvoorbeeld &quot;Eigenschappen van element: oriëntatie / liggend&quot;.
 
 * **N_value**
 
-  Gebruiken `1_value`, `2_value`, ... controleren op meerdere tags (gecombineerd met `OR` standaard, met `AND` if and=true) (sinds 5.6).
+  Gebruiken `1_value`, `2_value`, ... om te controleren op meerdere tags (gecombineerd met `OR` standaard, met `AND` if and=true) (sinds 5.6).
 
 * **eigenschap**
 
   Eigenschap (of relatief pad naar eigenschap) die moet worden bekeken (standaard &quot; `cq:tags`&quot;)
 
-### tagid {#tagid}
+### gelabeld {#tagid}
 
 Hiermee zoekt u naar inhoud die is gelabeld met een of meer tags, door tag-id&#39;s op te geven.
 
@@ -539,13 +539,13 @@ Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag met behulp van
 
 #### Eigenschappen {#properties-22}
 
-* **tagid**
+* **gelabeld**
 
   Tag id zodat u kunt zoeken, bijvoorbeeld &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 
-  Gebruiken `1_value`, `2_value`, ... controleren op meerdere tags (gecombineerd met `OR` standaard, met `AND` if and=true) (sinds 5.6).
+  Gebruiken `1_value`, `2_value`, ... om te controleren op meerdere tags (gecombineerd met `OR` standaard, met `AND` if and=true) (sinds 5.6).
 
 * **eigenschap**
 
@@ -553,7 +553,7 @@ Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag met behulp van
 
 ### tagzoeken {#tagsearch}
 
-Zoekt naar inhoud gelabeld met een of meer tags door trefwoorden op te geven. Hiermee zoekt u eerst naar tags die deze trefwoorden bevatten in de titels en beperkt u het resultaat vervolgens tot alleen items die met deze trefwoorden zijn getagd.
+Zoekt naar inhoud gelabeld met een of meer tags door trefwoorden op te geven. Hiermee wordt eerst gezocht naar tags die deze trefwoorden in hun titels bevatten, en vervolgens wordt het resultaat beperkt tot alleen items die met deze trefwoorden zijn getagd.
 
 Biedt geen ondersteuning voor facetextractie.
 

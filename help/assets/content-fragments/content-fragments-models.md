@@ -4,10 +4,10 @@ description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor 
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '2328'
-ht-degree: 4%
+source-wordcount: '2305'
+ht-degree: 2%
 
 ---
 
@@ -15,11 +15,11 @@ ht-degree: 4%
 
 Content Fragment Models in AEM de structuur van de inhoud voor uw [inhoudsfragmenten,](/help/assets/content-fragments/content-fragments.md) fungeren als basis voor uw inhoud zonder kop.
 
-U kunt als volgt modellen van inhoudsfragmenten gebruiken:
+Als u modellen van inhoudsfragmenten wilt gebruiken, kunt u:
 
-1. [Functionaliteit van inhoudsfragmentmodel inschakelen voor uw instantie](/help/assets/content-fragments/content-fragments-configuration-browser.md)
-1. [Maken](#creating-a-content-fragment-model), en [vormen](#defining-your-content-fragment-model), uw modellen van inhoudsfragmenten
-1. [Modellen van inhoudsfragmenten inschakelen](#enabling-disabling-a-content-fragment-model) voor gebruik bij het maken van inhoudsfragmenten
+1. [Functionaliteit van inhoudsfragmentmodel inschakelen voor uw instantie](/help/assets/content-fragments/content-fragments-configuration-browser.md).
+1. [Maken](#creating-a-content-fragment-model), en [vormen](#defining-your-content-fragment-model), uw modellen van inhoudsfragmenten.
+1. [Modellen van inhoudsfragmenten inschakelen](#enabling-disabling-a-content-fragment-model) voor gebruik bij het maken van Content Fragments.
 1. [Modellen van inhoudsfragmenten toestaan in de vereiste mappen Middelen](#allowing-content-fragment-models-assets-folder) door te vormen **Beleid**.
 
 ## Een inhoudsfragmentmodel maken {#creating-a-content-fragment-model}
@@ -30,13 +30,13 @@ U kunt als volgt modellen van inhoudsfragmenten gebruiken:
 
    >[!CAUTION]
    >
-   >Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/assets/content-fragments/content-fragments-configuration-browser.md)de **Maken** deze optie is niet beschikbaar.
+   >Als de [gebruik van inhoudsfragmentmodellen is niet ingeschakeld](/help/assets/content-fragments/content-fragments-configuration-browser.md)de **Maken** is niet beschikbaar.
 
 1. Geef de **modeltitel** op. U kunt ook toevoegen **Tags**, **Beschrijving** en selecteert u **Model inschakelen** tot [het model inschakelen](#enabling-disabling-a-content-fragment-model) indien nodig.
 
    ![titel en beschrijving](assets/cfm-models-02.png)
 
-1. Gebruiken **Maken** het lege model opslaan. Een bericht geeft het succes van de actie aan. U kunt **Openen** het model onmiddellijk te bewerken, of **Gereed** om naar de console terug te keren.
+1. Gebruiken **Maken** het lege model opslaan. Een bericht geeft het succes van de handeling aan. U kunt **Openen** het model onmiddellijk te bewerken, of **Gereed** om naar de console terug te keren.
 
 ## Het model van het inhoudsfragment definiëren {#defining-your-content-fragment-model}
 
@@ -59,7 +59,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
    >[!NOTE]
    >
-   >Als een veld **Vereist** is, wordt het **label** in het linkerdeelvenster gemarkeerd met een sterretje (**&#42;**).
+   >Wanneer een veld als **Vereist** de **Label** aangegeven in het linkerdeelvenster is gemarkeerd met een asterix (**&#42;**).
 
    ![eigenschappen](assets/cfm-models-03.png)
 
@@ -72,13 +72,13 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
    * Nadat een veld aan het model is toegevoegd, wordt in het rechterdeelvenster het volgende weergegeven: **Eigenschappen** die voor dat bepaalde gegevenstype kunnen worden gedefinieerd. Hier kunt u definiëren wat voor dat veld is vereist.
 
       * Veel eigenschappen zijn niet-verklarend, voor meer details zie [Eigenschappen](#properties).
-      * Een **Veldlabel** zal automatisch de **Eigenschapnaam**  - indien leeg, en het kan achteraf handmatig worden bijgewerkt.
+      * Een **Veldlabel** automatisch voltooit het **Eigenschapnaam**  - indien leeg, en het kan achteraf handmatig worden bijgewerkt.
 
         >[!CAUTION]
         >
-        >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, merk op dat de namen slechts A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot;als speciaal karakter moeten bevatten.
+        >Wanneer u de eigenschap handmatig bijwerkt **Eigenschapnaam** voor een gegevenstype, moeten de namen slechts A-Z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot;als speciaal karakter bevatten.
         >
-        >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
+        >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
      Bijvoorbeeld:
 
@@ -90,7 +90,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
    ![remove](assets/cfm-models-06.png)
 
-1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, zoals vereist. Bijvoorbeeld:
+1. Voeg alle vereiste velden toe en definieer de bijbehorende eigenschappen, al naar gelang de vereisten. Bijvoorbeeld:
 
    ![opslaan](assets/cfm-models-07.png)
 
@@ -103,7 +103,7 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
 * **Tekst met één regel**
    * Voeg een of meer velden van één regel tekst toe. De maximumlengte kan worden gedefinieerd
 * **Tekst met meerdere regels**
-   * Een tekstgebied dat RTF-tekst, normale tekst of markeringen kan bevatten
+   * Een tekstgebied dat RTF-tekst, platte tekst of Markering kan zijn
 * **Getal**
    * Een of meer numerieke velden toevoegen
 * **Boolean**
@@ -121,16 +121,17 @@ Voor het definiëren van uw model zijn verschillende gegevenstypen beschikbaar:
    * Verwijzingen naar andere inhoudsfragmenten; kan worden gebruikt om [geneste inhoud maken](#using-references-to-form-nested-content)
    * Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
       * Bewerk het fragment waarnaar wordt verwezen rechtstreeks.
-      * Een nieuw inhoudsfragment maken op basis van het juiste model
+      * Een inhoudsfragment maken op basis van het juiste model
 * **JSON-object**
    * Hiermee kan de auteur van het inhoudsfragment JSON-syntaxis invoeren in de overeenkomende elementen van een fragment.
-      * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd/gekleefd.
+      * Om AEM toe te staan direct JSON op te slaan die u van een andere dienst hebt gekopieerd en gekleefd.
       * De JSON wordt doorgegeven en uitvoer als JSON in GraphQL.
       * Neemt JSON-syntaxismarkering, automatisch aanvullen en foutmarkering op in de inhoudsfragmenteditor.
 * **Tijdelijke aanduiding voor tab**
    * Hiermee kunt u tabbladen invoeren die u kunt gebruiken bij het bewerken van de inhoud van het inhoudsfragment.
-Dit zal als verdeler in de modelredacteur worden getoond, scheidend secties van de lijst van de types van inhoudsgegevens. Elke instantie vertegenwoordigt het begin van een nieuw lusje.
+Dit wordt getoond als verdeler in de modelredacteur, die secties van de lijst van inhoudstypes scheidt. Elke instantie vertegenwoordigt het begin van een nieuw lusje.
 In de fragmenteditor wordt elke instantie weergegeven als een tab.
+
      >[!NOTE]
      >
      >Dit gegevenstype wordt alleen gebruikt voor opmaak en wordt genegeerd door het schema AEM GraphQL.
@@ -142,20 +143,20 @@ Vele eigenschappen zijn voor zichzelf verklarend, voor bepaalde eigenschappen zi
 
 * **Eigenschapnaam**
 
-  Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, moet u opletten dat namen **moet** bevatten *alleen* A-Z, a-z, 0-9 en onderstrepingsteken &quot;_&quot; als speciaal teken.
+  Wanneer u deze eigenschap handmatig bijwerkt voor een gegevenstype, worden de namen **moet** bevatten *alleen* A-Z, a-z, 0-9, en het onderstrepingsteken &quot;_&quot; als speciaal karakter.
 
   >[!CAUTION]
   >
-  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u deze tekens bij.
+  >Als modellen die in eerdere versies van AEM zijn gemaakt, ongeldige tekens bevatten, verwijdert of werkt u die tekens bij.
 
 * **Renderen als**
-De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hier kunt u vaak definiëren of de auteur één exemplaar van het veld ziet of meerdere exemplaren mag maken.
+De verschillende opties voor het realiseren/renderen van het veld in een fragment. Hier kunt u vaak definiëren of de auteur één instantie van het veld ziet of meerdere instanties mag maken.
 
 * **Veldlabel**
-Een **Veldlabel** zal automatisch een **Eigenschapnaam**, die indien nodig handmatig kan worden bijgewerkt.
+Een **Veldlabel** automatisch een **Eigenschapnaam**, die indien nodig handmatig kan worden bijgewerkt.
 
 * **Validatie**
-De basisbevestiging is beschikbaar door mechanismen zoals **Vereist** eigenschap. Sommige gegevenstypen hebben extra validatievelden. Zie [Validatie](#validation) voor nadere bijzonderheden.
+De basisbevestiging is beschikbaar door mechanismen zoals **Vereist** eigenschap. Sommige gegevenstypen hebben aanvullende validatievelden. Zie [Validatie](#validation) voor nadere bijzonderheden.
 
 * Voor het datatype **Tekst met meerdere regels** is het mogelijk het **standaardtype** als volgt te definiëren:
 
@@ -165,7 +166,7 @@ De basisbevestiging is beschikbaar door mechanismen zoals **Vereist** eigenschap
 
   Indien niet opgegeven, wordt de standaardwaarde **RTF** wordt gebruikt voor dit veld.
 
-  Het wijzigen van het **standaardtype** in een contentfragmentmodel heeft alleen effect op een bestaand, gerelateerd contentfragment nadat dat fragment is geopend in de editor en opgeslagen.
+  Het wijzigen van **Standaardtype** in een inhoudsfragmentmodel heeft alleen effect op een bestaand, verwant inhoudsfragment nadat dat fragment is geopend in de editor en opgeslagen.
 
 * **Uniek**
 De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten die op basis van het huidige model zijn gemaakt.
@@ -188,10 +189,10 @@ De inhoud (voor het specifieke veld) moet uniek zijn in alle inhoudsfragmenten d
 
 <!--
 * **Translatable**
-  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor will:
+  Checking the **Translatable** checkbox on a field in the Content Fragment Model editor does the following:
 
-  * Ensure the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
-  * For GraphQL: set a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
+  * Ensures that the field's property name is added to the translation configuration, context `/content/dam/<sites-configuration>`, if not already present. 
+  * For GraphQL: sets a `<translatable>` property on the Content Fragment field to `yes`, to allow GraphQL query filter for JSON output with only translatable content.
 -->
 
 ## Validatie {#validation}
@@ -215,15 +216,16 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 
 * **[Content Reference](#content-reference)**
    * Verstrekt een eenvoudige verwijzing naar andere inhoud; van om het even welk type.
-   * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
+   * Het kan voor één verwijzing of veelvoudige verwijzingen (in het resulterende fragment) worden gevormd.
 
 * **[Fragmentverwijzing](#fragment-reference-nested-fragments)** (Geneste fragmenten)
    * Verwijzingen naar andere fragmenten, afhankelijk van de opgegeven modellen.
    * Hiermee kunt u gestructureerde gegevens opnemen/ophalen.
+
      >[!NOTE]
      >
-     >Deze methode is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
-   * Kan worden geconfigureerd voor een of meerdere verwijzingen (in het resulterende fragment).
+     >Deze methode is van bijzonder belang voor [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+   * Het kan voor één verwijzing of veelvoudige verwijzingen (in het resulterende fragment) worden gevormd.
 
 >[!NOTE]
 >
@@ -233,11 +235,11 @@ Inhoudsfragmenten kunnen geneste inhoud vormen met een van de volgende gegevenst
 >  Zo voorkomt u dat de gebruiker een verwijzing naar het huidige fragment toevoegt. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
 >* Fragmentverwijzingen in GraphQL
->  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, wordt null geretourneerd bij de eerste instantie.
+>  Wanneer u een diepe query maakt die meerdere Content Fragments retourneert waarnaar door elkaar wordt verwezen, retourneert deze functie null bij de eerste instantie.
 
 ### Content Reference {#content-reference}
 
-Met de Content Reference kunt u inhoud van een andere bron renderen, bijvoorbeeld een afbeeldings- of inhoudsfragment.
+Met de Content Reference kunt u inhoud van een andere bron renderen, bijvoorbeeld een afbeelding of een inhoudsfragment.
 
 Naast de standaardeigenschappen kunt u opgeven:
 
@@ -252,7 +254,7 @@ Naast de standaardeigenschappen kunt u opgeven:
 
 ### Fragmentverwijzing (geneste fragmenten) {#fragment-reference-nested-fragments}
 
-De fragmentverwijzing verwijst naar een of meer inhoudsfragmenten. Deze functie is vooral van belang bij het ophalen van inhoud voor gebruik in uw app, omdat u gestructureerde gegevens met meerdere lagen kunt ophalen.
+De fragmentverwijzing verwijst naar een of meer inhoudsfragmenten. Deze functie is vooral van belang wanneer u inhoud ophaalt die u in uw app wilt gebruiken, omdat u gestructureerde gegevens met meerdere lagen kunt ophalen.
 
 Bijvoorbeeld:
 
@@ -275,7 +277,7 @@ type CompanyModel {
 
 >[!NOTE]
 >
->Dit is van bijzonder belang in samenhang met [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
+>Dit is van bijzonder belang voor [Levering van inhoud zonder kop met gebruik van inhoudsfragmenten met GraphQL](/help/assets/content-fragments/content-fragments-graphql.md).
 
 Naast de standaardeigenschappen kunt u definiëren:
 
@@ -293,7 +295,7 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 
 * **Fragment maken toestaan**
 
-  Hierdoor kan de auteur van het fragment een nieuw fragment maken op basis van het juiste model.
+  Hierdoor kan de auteur van het fragment een fragment maken op basis van het juiste model.
 
    * **fragmentreferencecomponent** - stelt de auteur van het fragment in staat een samenstelling samen te stellen door meerdere fragmenten te selecteren
 
@@ -303,26 +305,26 @@ Geeft een hoofdpad aan voor alle fragmenten waarnaar wordt verwezen.
 >
 >Er is een terugkerend beschermingsmechanisme ingesteld. Hiermee wordt de gebruiker verboden het huidige inhoudsfragment in de fragmentverwijzing te selecteren. Dit kan leiden tot een leeg dialoogvenster van de kiezer voor fragmentverwijzing.
 >
->Er is ook een herhalingsbescherming voor fragmentverwijzingen in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, zal het ongeldig terugkeren.
+>Er is ook een herhalingsbescherming voor fragmentverwijzingen in GraphQL. Als u een diepe vraag over twee Fragments creeert van de Inhoud die elkaar van verwijzingen voorzien, keert het ongeldig terug.
 
 ## Een inhoudsfragmentmodel in- of uitschakelen {#enabling-disabling-a-content-fragment-model}
 
-Voor volledige controle over het gebruik van uw modellen van het Fragment van de Inhoud hebben zij een status die u kunt plaatsen.
+Voor volledige controle over het gebruik van uw modellen van het Fragment van de Inhoud, hebben zij een status die u kunt plaatsen.
 
 ### Een inhoudsfragmentmodel inschakelen {#enabling-a-content-fragment-model}
 
-Nadat een model is gemaakt, moet het worden ingeschakeld zodat het:
+Nadat een model is gemaakt, moet het zijn ingeschakeld zodat:
 
-* Deze optie is beschikbaar voor selectie wanneer u een nieuw inhoudsfragment maakt.
+* Deze kan worden geselecteerd wanneer u een inhoudsfragment maakt.
 * Er kan vanuit een inhoudsfragmentmodel naar worden verwezen.
-* Is beschikbaar aan GraphQL; zo wordt het schema geproduceerd.
+* Deze is beschikbaar voor GraphQL. Het schema wordt dus gegenereerd.
 
 Een model inschakelen dat is gemarkeerd als:
 
 * **Concept** : mew (nooit ingeschakeld).
-* **Uitgeschakeld** : is specifiek uitgeschakeld.
+* **Uitgeschakeld** : is uitgeschakeld.
 
-U gebruikt de **Inschakelen** optie van:
+U kunt de **Inschakelen** optie van:
 
 * De bovenste werkbalk als het vereiste model is geselecteerd.
 * De corresponderende snelle actie (mouse-over het vereiste model).
@@ -335,11 +337,11 @@ Een model kan ook worden uitgeschakeld, zodat:
 
 * Het model is niet meer beschikbaar als basis voor het maken van *new* Inhoudsfragmenten
 * Echter:
-   * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgevraagd (om te voorkomen dat JSON API wordt beïnvloed).
+   * Het GraphQL-schema wordt steeds gegenereerd en kan nog steeds worden opgevraagd (om geen invloed op de JSON API te hebben).
    * Om het even welke die Inhoudsfragmenten van het model worden gebaseerd kunnen nog van het eindpunt van GraphQL worden gevraagd en zijn teruggekeerd.
 * Er kan niet meer naar het model worden verwezen, maar bestaande verwijzingen blijven ongewijzigd en kunnen nog steeds worden opgevraagd en geretourneerd vanaf het GraphQL-eindpunt.
 
-Een model uitschakelen dat is gemarkeerd als **Ingeschakeld** u de **Uitschakelen** optie van:
+Een model uitschakelen dat is gemarkeerd als **Ingeschakeld**, gebruikt u de **Uitschakelen** optie van:
 
 * De bovenste werkbalk als het vereiste model is geselecteerd.
 * De corresponderende snelle actie (mouse-over het vereiste model).
@@ -348,7 +350,7 @@ Een model uitschakelen dat is gemarkeerd als **Ingeschakeld** u de **Uitschakele
 
 ## Modellen voor inhoudsfragmenten toestaan in de middelenmap {#allowing-content-fragment-models-assets-folder}
 
-Om inhoudsbeheer uit te voeren, kunt u vormen **Beleid** in de map Elementen om te bepalen welke modellen van inhoudsfragmenten mogen worden gemaakt voor fragmenten in die map.
+Om inhoudsbeheer uit te voeren, kunt u vormen **Beleid** in een map Middelen om te bepalen welke modellen van inhoudsfragmenten mogen worden gemaakt voor fragmenten in die map.
 
 >[!NOTE]
 >
@@ -362,7 +364,7 @@ Om te vormen **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 
    * **Overgenomen van`<folder>`**
 
-     Het beleid wordt automatisch geërft wanneer het creëren van nieuwe kindomslagen; het beleid kan (en de erfenis gebroken) worden opnieuw gevormd als de subomslagen modellen moeten toestaan verschillend aan de ouderomslag.
+     Het beleid wordt automatisch geërft wanneer het creëren van kindomslagen; het beleid kan (en de erfenis gebroken) worden opnieuw gevormd als de subomslagen modellen moeten toestaan verschillend aan de ouderomslag.
 
    * **Modellen van inhoudsfragmenten op pad toestaan**
 
@@ -377,6 +379,7 @@ Om te vormen **Beleid** for **Modellen voor toegestane inhoudsfragmenten**:
 1. **Opslaan** eventuele wijzigingen.
 
 De modellen van inhoudsfragmenten die zijn toegestaan voor een map, worden als volgt opgelost:
+
 * De **Beleid** for **Modellen voor toegestane inhoudsfragmenten**.
 * Als dit leeg is, kunt u het beleid bepalen met behulp van de overervingsregels.
 * Als de overervingsketen geen resultaat oplevert, kijkt u naar de **Cloud Servicen** configuratie voor die map (ook eerst rechtstreeks en vervolgens via overerving).
@@ -397,7 +400,7 @@ Een inhoudsfragmentmodel verwijderen:
 
    >[!NOTE]
    >
-   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de juiste actie uit.
+   >Als naar het model wordt verwezen, wordt een waarschuwing gegeven. Voer de nodige maatregelen uit.
 
 ## Een inhoudsfragmentmodel publiceren {#publishing-a-content-fragment-model}
 
@@ -409,11 +412,11 @@ Een fragmentmodel voor inhoud publiceren:
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, gevolgd door **Publiceren** op de werkbalk.
-De gepubliceerde status wordt aangegeven in de console.
+De gepubliceerde status wordt vermeld in de console.
 
    >[!NOTE]
    >
-   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, wordt dit in een selectielijst aangegeven en wordt het model met het fragment gepubliceerd.
+   >Als u een inhoudsfragment publiceert waarvoor het model nog niet is gepubliceerd, geeft een selectielijst dit aan en wordt het model gepubliceerd met het fragment.
 
 ## Publicatie van een inhoudsfragmentmodel ongedaan maken {#unpublishing-a-content-fragment-model}
 
@@ -425,7 +428,7 @@ Publicatie van een inhoudsfragmentmodel ongedaan maken:
 
 1. Navigeer naar de map met het fragmentmodel van de inhoud.
 1. Selecteer uw model, gevolgd door **Publiceren ongedaan maken** op de werkbalk.
-De gepubliceerde status wordt aangegeven in de console.
+De gepubliceerde status wordt vermeld in de console.
 
 ## Inhoudsfragmentmodel - eigenschappen {#content-fragment-model-properties}
 

@@ -2,9 +2,9 @@
 title: Product Cockpit
 description: Werken met productcoating
 exl-id: 05ef2604-1d52-4397-a696-0b64717cc3cc
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De gefaseerde productgegevens omvatten om het even welke mutatie in de toekomst 
 
 Productcatalogi moeten in AEM worden geconfigureerd. Zie [configureren, winkel en catalogi](/help/commerce/cif/getting-started.md#catalog) voor meer informatie .
 
-Voor het inschakelen van niet-actieve catalogusfuncties is verificatie vereist. Zie [Aan de slag](/help/commerce/cif/getting-started.md) voor meer informatie .
+Voor het inschakelen van niet-gefaseerde catalogusfuncties is verificatie vereist. Zie [Aan de slag](/help/commerce/cif/getting-started.md) voor meer informatie .
 
 >[!NOTE]
 >
@@ -35,11 +35,11 @@ Voor het inschakelen van niet-actieve catalogusfuncties is verificatie vereist. 
 
 De eenvoudigste manier om toegang te krijgen tot de Product Cockpit is via het menu &#39;Handel&#39; in AEM hoofdmenu. Het is ook mogelijk om Omnissearch (search for Commerce) of Openen te gebruiken `https://<yourAEMInstance>/commerce.html`.
 
-![AEM](/help/commerce/cif/assets/aem-menu.png)
+![Menu AEM](/help/commerce/cif/assets/aem-menu.png)
 
 ## Bladeren door productcatalogi {#browsing-product-catalogs}
 
-De productcockpit is hiërarchisch georganiseerd volgens de structuur van de productcatalogus. Het eerste niveau toont het cataloguswortelniveau van alle gevormde productcatalogi met inbegrip van meta-informatie van de handels achterkant.
+De productcockpit is hiërarchisch geordend volgens de structuur van de productcatalogus. Het eerste niveau toont het cataloguswortelniveau van alle gevormde productcatalogi met inbegrip van meta-informatie van de handels achterkant.
 
 ![Gevormde catalogi](/help/commerce/cif/assets/catalog-overview.png)
 
@@ -63,7 +63,7 @@ In het linkerfiltertabblad vindt u een zoekopdracht in volledige tekst over de v
 
 ## Bladeren door gefaseerde productcatalogus {#staged-product-catalogs}
 
-Standaard worden in de productcockpit de catalogusgegevens van het live product weergegeven. Als u de &quot;STAGED CATALOG&quot; op het linkerfiltertabblad gebruikt, wordt de productcatalogus voor elke geselecteerde datum geladen.
+Standaard worden in de productcockpit de catalogusgegevens van het live product weergegeven. Met de &quot;STAGED CATALOG&quot; in het linkerfiltertabblad wordt de productcatalogus voor een geselecteerde datum geladen.
 
 ![gefaseerde catalogus](/help/commerce/cif/assets/staged-cockpit.png)
 
@@ -73,7 +73,7 @@ Als u op het eigenschappenpictogram van een product of categorie klikt, wordt de
 
 ### Tabs Handel {#tabs}
 
-De algemene en variantlusjes tonen vooraf bepaalde handelseigenschappen die uit de handelskorend achterste komen. Deze gegevens (incl. varianten) is read-only gegevens in AEM aangezien het systeem van verslag de handelsafstand is. Het tabblad Variant wordt alleen weergegeven voor producten met varianten en bevat een lijst met alle varianten.
+De algemene en variantlusjes tonen vooraf bepaalde handelseigenschappen die uit de handelskorend achterste komen. Deze gegevens (inclusief varianten) is read-only gegevens in AEM aangezien het systeem van verslag de handelsafstand is. Het tabblad Variant wordt alleen weergegeven voor producten met varianten en bevat een lijst met alle varianten.
 
 ![cataloguseigenschappen](/help/commerce/cif/assets/catalog-properties.png)
 

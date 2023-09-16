@@ -1,24 +1,24 @@
 ---
-title: eCommerce distribueren met SAP Commerce Cloud
-description: Leer hoe te om eCommerce met SAP Commerce Cloud op te stellen.
+title: eCommerce distribueren met SAP-Commerce Cloud
+description: Leer hoe te om eCommerce met de Commerce Cloud van SAP op te stellen.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: ecbd0097-c407-4581-bab2-4729a71df4a3
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
 workflow-type: tm+mt
 source-wordcount: '714'
 ht-degree: 0%
 
 ---
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# SAP-Commerce Cloud{#sap-commerce-cloud}
 
 >[!NOTE]
 >
->Deze pagina bevat koppelingen naar de website van de hybris. Voor bepaalde pagina&#39;s hebt u een account nodig om u aan te melden.
+>Deze pagina bevat koppelingen naar de website van de hybris. Voor bepaalde pagina&#39;s hebt u een account nodig voor aanmelding.
 
-## eCommerce implementeren met SAP Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
+## eCommerce implementeren met SAP-Commerce Cloud {#deploying-ecommerce-with-sap-commerce-cloud}
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ ht-degree: 0%
 >
 >`Geometrixx Outdoors Site English (US)`
 
-De [noodzakelijke eCommerce-pakketten](#packages-needed-for-ecommerce-with-hybris) biedt de volledige functionaliteit van het eCommerce-kader, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien in een hybris-implementatie (inclusief een demonstratiecatalogus)
+Het opstellen van [noodzakelijke eCommerce-pakketten](#packages-needed-for-ecommerce-with-hybris) biedt de volledige functionaliteit van het eCommerce-kader, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien in een hybris-implementatie (inclusief een demonstratiecatalogus)
 
 Dit is beschikbaar onder de Engelse (Amerikaanse) tak ( `/content/geometrixx-outdoors/en_US`) van de site Geometrixx Outdoors:
 
@@ -35,7 +35,7 @@ Dit is beschikbaar onder de Engelse (Amerikaanse) tak ( `/content/geometrixx-out
 * [Overzichten van winkelwagentinhoud](#shoppingcartcontentoverview)
 * [Aanmelden bij klant](#customersignup) en [Aanmelden bij klant](#customersignin)
 
-* [Toegang tot de hybris Management Console](#accesstothehybrismanagementconsole)
+* [Toegang tot de hybris-beheerconsole](#accesstothehybrismanagementconsole)
 
 ### Technische vereisten - hybrusserver {#technical-requirements-hybris-server}
 
@@ -53,11 +53,11 @@ De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om H
 Voor de installatie van eCommerce-functionaliteit hebt u het volgende nodig:
 
 * Uw hybrusserver
-* AEM eCommerce-kader:
+* AEM kader e-handel:
 
    * dit maakt deel uit van een standaard AEM installatie
 
-* AEM Geometrixx-all-pakket:
+* Geometrixx-alle AEM:
 
    * `cq-geometrixx-all-pkg`
 
@@ -95,9 +95,9 @@ Voor het gebruik van de hybrisserver is een aparte licentie voor hybris vereist.
 
 >[!NOTE]
 >
-Voor ontwikkelaars [API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) kan ook worden gedownload.
+Voor ontwikkelaars: [API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) kan ook worden gedownload.
 
-### Uw hybrisserver downloaden en samenstellen {#download-and-build-your-hybris-server}
+### Uw computerserver downloaden en samenstellen {#download-and-build-your-hybris-server}
 
 De stappen in deze procedure downloaden en bouwen de hybrisserver. Het maakt ook de aanvankelijke configuraties die voor de verbindingen tussen hybris en cq worden vereist. De extensie kan vervolgens worden gebruikt met de standaardinstellingen.
 
@@ -195,10 +195,10 @@ Deze procedure uploadt en configureert de demonstratiewinkel - Geometrixx Online
    [https://localhost:9002/backoffice](https://localhost:9002/backoffice)
 
    Gebruik de volgende referenties:
-   * gebruikersnaam: beheerder
+   * gebruikersnaam: admin
    * wachtwoord: nimda
 
-1. Vouw vanuit de zijbalknavigatie uit **Systeem** en **Gereedschappen**. Selecteer vervolgens **Importeren** om de **Wizard: CSV-import** venster.
+1. Vouw vanuit de zijbalknavigatie uit **Systeem** en **Gereedschappen**. Selecteer vervolgens **Importeren** om de **Wizard: CSV importeren** venster.
 1. In de **Configuratie** tab, **Uploaden** het volgende **Bestand importeren**:
 
 [Bestand ophalen](/help/sites-deploying/assets/geometrixx-outdoors-export.csv)

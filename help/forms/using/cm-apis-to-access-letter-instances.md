@@ -1,18 +1,14 @@
 ---
 title: API's voor toegang tot lettervarianten
-seo-title: APIs to access letter instances
 description: Leer hoe u API's kunt gebruiken om toegang te krijgen tot letterinstanties.
-seo-description: Learn how to use APIs to access letter instances.
-uuid: e7fb7798-f49d-458f-87f5-22df5f3e7d10
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 
 Met behulp van de interface Correspondentie maken van Correspondentiebeheer kunt u concepten van lopende letterinstanties opslaan en er zijn verzonden letterinstanties.
 
-Het Beheer van de correspondentie verstrekt u APIs die u kunt gebruiken de lijstinterface bouwen om met voorgelegde brievenexemplaren of concepten te werken. De APIs lijst en open voorgelegde en ontwerp brieveninstanties van een agent, zodat de agent kon blijven werkend aan het ontwerp of voorgelegde brieveninstanties.
+Het Beheer van de correspondentie voorziet u van APIs gebruiken die u de lijstinterface kunt bouwen om met voorgelegde brievenexemplaren of concepten te werken. De APIs lijst en open voorgelegde en ontwerp brieveninstanties van een agent, zodat de agent kon blijven werkend aan het ontwerp of voorgelegde brieveninstanties.
 
 ## Lettervarianten ophalen {#fetching-letter-instances}
 
@@ -37,12 +33,11 @@ Het Beheer van de correspondentie stelt APIs bloot om brieveninstanties door de 
 
 >[!NOTE]
 >
->LetterInstanceService is de dienst OSGI en zijn instantie kan worden teruggewonnen door @Reference in Java te gebruiken
->Class of sling.getService(LetterInstanceService. Klasse ) in JSP.
+>LetterInstanceService is een dienst OSGI en zijn instantie kan worden teruggewonnen door @Reference in Klasse Java™ of sling.getService (LetterInstanceService) te gebruiken. Klasse ) in JSP.
 
 ### getAllLetterInstances gebruiken {#using-nbsp-getallletterinstances}
 
-De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorgelegd als Ontwerp) worden gebaseerd. Als het queryobject null is, worden alle lettervarianten geretourneerd. Deze API retourneert een lijst met [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objecten, die kunnen worden gebruikt voor het ophalen van aanvullende informatie over een letterinstantie
+De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorgelegd als Ontwerp) worden gebaseerd. Als het queryobject null is, worden alle lettervarianten geretourneerd. Deze API retourneert een lijst met [LetterInstanceVO](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/dbforms/obj/LetterInstanceVO.html) objecten, die kunnen worden gebruikt voor het ophalen van aanvullende informatie over de letter.
 
 **Syntaxis**: `List getAllLetterInstances(Query query) throws ICCException;`
 
@@ -54,12 +49,12 @@ De volgende API vindt de brieveninstanties die op het vraagvoorwerp (zowel Voorg
   </tr>
   <tr>
    <td>query</td>
-   <td>De queryparameter wordt gebruikt om een instantie Letter te zoeken/filteren. De query ondersteunt alleen attributen/eigenschappen op hoofdniveau van het object. De vraag bestaat uit verklaringen en "attributeName"die in het voorwerp van de Verklaring wordt gebruikt zou de naam van het bezit in het de instantievoorwerp van de Brief moeten zijn.<br /> </td>
+   <td>De queryparameter wordt gebruikt om een instantie Letter te zoeken/filteren. Hier ondersteunt de query alleen kenmerken/eigenschappen op hoofdniveau van het object. De vraag bestaat uit verklaringen en "attributeName"die in het voorwerp van de Verklaring wordt gebruikt zou de naam van het bezit in het de instantievoorwerp van de Brief moeten zijn.<br /> </td>
   </tr>
  </tbody>
 </table>
 
-#### Voorbeeld 1: Alle lettervarianten van het type INGEDIEND ophalen {#example-fetch-all-the-letter-instances-of-type-submitted}
+#### Voorbeeld 1: alle lettervarianten van het type SUBMITTED ophalen {#example-fetch-all-the-letter-instances-of-type-submitted}
 
 De volgende code retourneert de lijst met verzonden lettervarianten. Als u alleen concepten wilt ophalen, wijzigt u de instelling `LetterInstanceType.COMPLETE.name()` tot `LetterInstanceType.DRAFT.name().`
 
@@ -107,7 +102,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 ### getLetterInstance gebruiken {#using-nbsp-getletterinstance}
 
-Haal de letter-instantie op die wordt aangegeven door de opgegeven letter-instantie-id. &quot;null als instance-id niet overeenkomt.
+Haal de letter-instantie op die wordt aangegeven door de opgegeven letter-instantie-id. De waarde wordt null geretourneerd als de instantie-id niet overeenkomt.
 
 **Syntaxis:** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
@@ -139,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 Instantie letter kan van het type Verzonden of Concept zijn. Wanneer u beide lettertypen opent, worden verschillende gedragingen getoond:
 
-* In het geval van een verzonden letter wordt een PDF geopend die de letter vertegenwoordigt. De verzonden instantie van de Brief die op de server wordt voortgeduurd bevat ook dataXML &amp; verwerkte XDP, die kan worden gebruikt om te verwezenlijken en verder douanegebruik een geval zoals het creëren van een PDF/A te gebruiken.
-* In het geval van een Concept-letterinstantie wordt de interface voor het maken van correspondentie opnieuw geladen naar de exacte vorige status zoals tijdens het maken van het concept
+* In het geval van een Ingediende letter wordt een PDF geopend die de letter vertegenwoordigt. De ingediende instantie van de Brief die op de server wordt voortgeduurd bevat ook dataXML &amp; verwerkte XDP, die kan worden gebruikt om een geval te verwezenlijken en verder te gebruiken zoals het creëren van een PDF/A.
+* In het geval van een Conceptbrief-instantie wordt de aanmaakcorrespondentie-UI opnieuw geladen naar de exacte vorige status zoals deze was tijdens het maken van het concept
 
 ### Lettertypeinstantie concept openen  {#opening-draft-letter-instance-nbsp}
 
@@ -150,10 +145,10 @@ CCR UI steunt de parameter cmLetterInstanceId, die kan worden gebruikt om brief 
 
 >[!NOTE]
 >
->U hoeft de CMLetterId of cmLetterName/State/Version niet op te geven wanneer u een correspondentie opnieuw laadt, aangezien de verzonden gegevens al alle details bevatten over de correspondentie die opnieuw wordt geladen. RandomNo wordt gebruikt om browser geheim voorgeheugenkwesties te vermijden, kunt u timestamp als willekeurig aantal gebruiken.
+U hoeft de CMLetterId of cmLetterName/State/Version niet op te geven wanneer u een correspondentie opnieuw laadt, aangezien de verzonden gegevens al alle details bevatten over de correspondentie die opnieuw wordt geladen. RandomNo wordt gebruikt om browser geheim voorgeheugenkwesties te vermijden, kunt u een timestamp als willekeurig aantal gebruiken.
 
 ### Ingediende brief openen {#opening-submitted-letter-instance}
 
-Verzonden PDF kan rechtstreeks worden geopend met letter-ID:
+Verzonden PDF kan rechtstreeks worden geopend met de letter-instantie-id:
 
 `https://[hostName]:[portNo]/[contextPath]/[letterInstanceId]`

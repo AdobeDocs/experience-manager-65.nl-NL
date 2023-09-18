@@ -1,16 +1,12 @@
 ---
 title: Eigenschappen van Correspondentenbeheer
-seo-title: Correspondence Management Configuration Properties
 description: Dit onderwerp verklaart hoe u de Composer van Activa met oplossing-specifieke configuraties kunt wijzigen. In dit onderwerp worden de eigenschappen beschreven die u kunt bewerken, met de beschrijving, standaardwaarden en acceptabele waarden.
-seo-description: This topic explains how you can modify Asset Composer with solution-specific configurations. This topic details the properties you can edit, with their description, default values, and acceptable values.
-uuid: 6b401d51-9332-459b-b751-42a9b5a1462d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: f2955419-c680-44a7-9913-c594b4577551
 feature: Correspondence Management
 exl-id: c9c007d0-c545-4738-b11b-4c50986342ee
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
 source-wordcount: '845'
 ht-degree: 1%
@@ -62,7 +58,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Type markering doel</p> </td>
+   <td><p>Type markeerteken doel</p> </td>
    <td><p>Type hooglicht doel in de toepassing Correspondentie maken</p> </td>
    <td><p>border</p> </td>
    <td><p>border / fill / none</p> </td>
@@ -135,13 +131,13 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   </tr>
   <tr>
    <td><p>Gegevenswoordenboekinstantie optimaliseren</p> </td>
-   <td><p>Maakt geoptimaliseerde overdracht van gegevenswoordenboekinstantie via b/w-server en -client mogelijk</p> </td>
+   <td><p>Hiermee wordt geoptimaliseerde overdracht van gegevenswoordenboekinstantie via de server en client ingeschakeld</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
-   <td><p>Inconsistenties automatisch corrigeren </p> </td>
-   <td><p>Wanneer toegelaten, behandelt het automatisch de mogelijke inconsistenties in de Toewijzingen van de Brief</p> </td>
+   <td><p>Inconsistentie automatisch corrigeren </p> </td>
+   <td><p>Indien ingeschakeld, worden automatisch de mogelijke inconsistenties in Letterlijke toewijzingen verwerkt</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
@@ -238,7 +234,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   <tr>
    <td><p>Naam van parameter voor bijlagen</p> </td>
    <td><p>Parameternaam voor bijlage-documenten die naar het postproces worden verzonden</p> </td>
-   <td><p>inAttachmentDocs</p> </td>
+   <td><p>inBijlageDocs</p> </td>
    <td><p>Willekeurige naam van tekenreeksvariabele</p> </td>
   </tr>
   <tr>
@@ -261,13 +257,13 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   </tr>
   <tr>
    <td><p>Volgorde gegevenselementen</p> </td>
-   <td><p>Hiermee behoudt u gegevenselementen die in de corresponderende interface worden geordend volgens de volgorde in Letter</p> </td>
+   <td><p>Hiermee behoudt u gegevenselementen die in de corresponderende interface worden geordend volgens de volgorde in Letter.</p> </td>
    <td><p>true</p> </td>
    <td><p>true / false</p> </td>
   </tr>
   <tr>
    <td><p>Ondersteuning voor opnieuw laden</p> </td>
-   <td><p>Ondersteuning voor opnieuw laden inschakelen/uitschakelen in letters die op de server worden weergegeven.</p> <p>Als u deze optie uitschakelt, worden de prestaties voor het renderen van letters verbeterd.</p> </td>
+   <td><p>Ondersteuning voor opnieuw laden in-/uitschakelen in letters die op de server worden weergegeven.</p> <p>Als u deze optie uitschakelt, worden de prestaties voor het renderen van letters verbeterd.</p> </td>
    <td><p>false</p> </td>
    <td><p>true / false</p> <p> </p> </td>
   </tr>
@@ -279,7 +275,7 @@ Correspondentiebeheer heeft de volgende configuratie-eigenschappen:
   </tr>
   <tr>
    <td>Extern opslaan</td>
-   <td>Hiermee worden de Letter-instanties opgeslagen op de opgegeven auteur voor de verwerking.</td>
+   <td>Hiermee worden de Letter-instanties opgeslagen op de opgegeven auteur.</td>
    <td> </td>
    <td> </td>
   </tr>

@@ -1,19 +1,15 @@
 ---
 title: Activiteitendensen
-seo-title: Activity Trends
 description: Een component Community Activity List aan een pagina toevoegen
-seo-description: Adding a Community Activity List component to a page
-uuid: 316aabf7-01a5-46da-be59-70c206eb6a3d
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 4a0debdd-acb9-4646-80bb-fec66fae4088
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 1%
 
 ---
@@ -22,11 +18,11 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-De `Community Activity List` biedt de mogelijkheid om trendinformatie toe te voegen over posten en weergaven door leden, alsmede over posten en weergaven van inhoud.
+De `Community Activity List` kunt u trending information betreffende posten en meningen door leden evenals posten en meningen van inhoud toevoegen.
 
 In het document wordt beschreven:
 
-* Het toevoegen van `Community Activity List` component aan een [community-site](/help/communities/overview.md#community-sites).
+* De `Community Activity List` component aan een [community-site](/help/communities/overview.md#community-sites).
 
 * De montages van de configuratie voor de `Community Activity List` component.
 
@@ -38,11 +34,7 @@ Zie [Analytische configuratie voor functies van Gemeenschappen](/help/communitie
 
 ### Een communautaire activiteitenlijst toevoegen aan een pagina {#adding-a-community-activity-list-to-a-page}
 
-Als u een `Community Activity List` naar een pagina in de modus Schrijver, zoek de component
-
-* `Communities / Community Activity List`
-
-en sleep het naar de juiste plaats op een pagina.
+Als u een `Community Activity List` naar een pagina in de modus Schrijver, zoek de component `Communities / Community Activity List` en sleep het naar de juiste plaats op een pagina.
 
 Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
 
@@ -52,7 +44,7 @@ Wanneer de component voor het eerst op een pagina van een communitysite wordt ge
 
 ### Lijst met communautaire activiteiten configureren  {#configuring-community-activity-list}
 
-Selecteer de geplaatste `Community Activity List` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Community Activity List` en selecteert u vervolgens de `Configure` zodat u het dialoogvenster Bewerken kunt openen.
 
 ![vormen](assets/configure-new.png)
 
@@ -90,7 +82,7 @@ De standaardwaarde is 10.
    * `Follows`
    * `Likes`
 
-  Standaard zijn weergaven.
+  De standaardwaarde is Weergaven.
 
 * **Tijdsperiode**
 
@@ -107,21 +99,21 @@ De standaardwaarde is 10.
 
 * **Contextpad**
 
-  Verstrekt de capaciteit om de activiteit tot een ondergroep van de plaats, zoals een specifieke Blog uit te breiden.
+  Hiermee kunt u de activiteit uitbreiden naar een subset van de site, zoals een specifieke blog.
 Standaard is dit de hele community-site.
 
 * **Samenvoeging aantal leden**
 
-  Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type` van `Posts` geen activiteit tonen omdat inhoud niet op de hoofdpagina kan worden geplaatst. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
+  Wanneer deze optie is uitgeschakeld, worden alleen de bovenste posts geteld. Als de context bijvoorbeeld de hoofdpagina is (de standaardinstelling), `Activity Type` van `Posts` geeft nooit enige activiteit weer omdat er geen inhoud naar de hoofdpagina kan worden gepost. Wanneer deze optie is ingeschakeld, worden de tellingen op alle afstammende pagina&#39;s opgenomen.
 Standaard is ingeschakeld.
 
-### Voorbeeldpagina met 4 componenten {#example-page-with-components}
+### Voorbeeldpagina met vier componenten {#example-page-with-components}
 
-**Topbezoekers** config: Type = Leden, Type activiteit = Weergaven
+**Topbezoekers** config: Type = Leden, Type Activiteit = Weergaven
 
-**Belangrijkste bijdragers** config: Type = Leden, Type activiteit = Posten
+**Belangrijkste bijdragers** config: Type = Leden, Type Activiteit = Posten
 
-**Bovenste inhoud** config: Type = Inhoud, Type activiteit = Weergaven
+**Bovenste inhoud** config: Type = Inhoud, Type activiteit = Weergaven,
 
 **Trend Content** config: Type = Inhoud, Type activiteit = Post
 

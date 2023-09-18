@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM inhoud en handel 2019
 description: Opmerkingen bij de release AEM inhoud en handel 2019
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '978'
+source-wordcount: '990'
 ht-degree: 6%
 
 ---
@@ -27,17 +27,17 @@ ht-degree: 6%
 
 * Voeg couponondersteuning toe aan winkelwagentje of verwijder deze.
 
-* Braintree betalingsondersteuning toegevoegd aan AEM winkel van Venia.
+* Betaalsteun voor Braintree toegevoegd aan AEM kant van de winkel van Venia.
 
 ### Verbeterde functies {#what-is-improved-november}
 
-* Categorie-/productkiezers die zijn verbeterd en die de opgegeven Adobe Commerce-winkelweergave in een installatie in meerdere winkels kunnen respecteren.
+* Categorie-/productkiezers die zijn verbeterd om de opgegeven Adobe Commerce-winkelweergave te respecteren in een installatie in meerdere winkels.
 
-* React-gebaseerde componenten beschikbaar als npm pakket. Dit staat ontwikkelaars toe om het pakket van Componenten van de Reactie als gebiedsdeel voor een nieuw project van de Reactie te gebruiken om aanpassing van bestaande componenten toe te staan of nieuwe React-based componenten te ontwikkelen.
+* React-gebaseerde componenten zijn beschikbaar als npm pakket. Dit staat ontwikkelaars toe om het pakket van Componenten van de Reactie als gebiedsdeel voor een nieuw project van de Reactie te gebruiken om aanpassing van bestaande componenten toe te staan of nieuwe React-based componenten te ontwikkelen.
 
-* Aanpassing GraphQL-query vereenvoudigd. Dit staat ontwikkelaars toe om de kerncomponenten van CIF met minder code aan te passen.
+* Aanpassing van GraphQL-query is vereenvoudigd. Dit staat ontwikkelaars toe om de kerncomponenten van CIF met minder code aan te passen.
 
-## Releasedatum: Oktober 2019
+## Releasedatum: oktober 2019
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
@@ -47,9 +47,9 @@ ht-degree: 6%
 
 ### Wat is er nieuw? {#what-is-new-october}
 
-* Volledig bruikbare sjablonen voor de pagina met productdetails en de pagina met productlijsten. Auteurs kunnen nu nieuwe sjablonen maken en de productlijst en productdetailcomponenten naar deze sjablonen slepen en neerzetten. Naast het toevoegen van andere componenten, kunnen de auteurs de lay-out van deze malplaatjes nu veranderen, die hen onbeperkte vrijheid geven om verbazende ervaringen tot stand te brengen die marketing en handelsinhoud combineren.
+* Volledig bruikbare sjablonen voor de pagina met productdetails en de pagina met productlijsten. Auteurs kunnen nu sjablonen maken en de productlijst en productdetailcomponenten naar deze sjablonen slepen en neerzetten. Naast het toevoegen van andere componenten, kunnen de auteurs de lay-out van deze malplaatjes nu veranderen, die hen onbeperkte vrijheid geven om verbazende ervaringen tot stand te brengen die marketing en handelsinhoud combineren.
 
-* Alle auteurvriendelijke kern-componenten van CIF zijn verbeterd om te steunen [AEM](https://helpx.adobe.com/experience-manager/6-5/sites/authoring/using/style-system.html). Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
+* Alle auteurvriendelijke kern-componenten van CIF zijn verbeterd om te steunen [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
 
 * React-based cliënt-zijcomponenten voor rekeningsbeheer. Deze release ondersteunt de volgende functies: Aanmelden, Wachtwoord vergeten en Account maken.
 
@@ -69,13 +69,13 @@ ht-degree: 6%
 
 ### Wat is er nieuw? {#what-is-new-september}
 
-* Meerdere sjabloonfuncties waarmee auteurs specifieke productdetailpagina of productlijstpagina kunnen verrijken. Auteurs kunnen eenvoudig een aangepaste productdetailpagina of productlijstpagina maken en de product- of categoriekiezer gebruiken om de aangepaste pagina aan een of meer specifieke producten of categorieën toe te wijzen.
+* Met de functie voor meerdere sjablonen kunnen auteurs een specifieke productdetailpagina of productlijstpagina verrijken. Auteurs kunnen eenvoudig een aangepaste productdetailpagina of productlijstpagina maken en de product- of categoriekiezer gebruiken om de aangepaste pagina aan een bepaald product of een bepaalde categorie toe te wijzen.
 
 * Binding van meerdere catalogi zodat auteurs meerdere catalogi in de AEM productconsole kunnen binden. Auteurs kunnen de eigenschappen voor de catalogusbinding ook bewerken en weergeven nadat ze de binding hebben gemaakt.
 
 * React-based cliënt-zijAfhandeling en Mini Cart die GraphQL gebruiken om een volledige basis het winkelen reis te steunen.
 
-* Afhandelingscomponent bevat adresformulieren, selectie van betalingen en selectie van verzendmethoden.
+* De component Uitchecken bevat adresformulieren, selectie van betalingen en selectie van verzendmethoden.
 
 ### Verbeterde functies {#what-is-improved-september}
 
@@ -91,23 +91,23 @@ ht-degree: 6%
 
 ### Wat is er nieuw? {#what-is-new-august}
 
-* Het insluiten van de Schakelaar van CIF in Archetype CIF maakte facultatief om ontwikkelaars meer flexibiliteit te verstrekken.
+* Het insluiten van CIF-connector in CIF Archetype is optioneel gemaakt om ontwikkelaars meer flexibiliteit te bieden.
 
 * CIF-componenten losgekoppeld van &quot;Venia&quot;-specifieke CSS-stijlen, zodat ontwikkelaars naar keuze CSS-stijlen kunnen toepassen.
 
-* Multistore/site functie om gebruik van CIF Core Components op meerdere AEM sitestructuren toe te staan en de onderliggende GraphQL client-implementatie in staat te stellen verbinding te maken met verschillende Adobe Commerce store/store-weergaven.
+* Multistore/site functie om gebruik van CIF Core Componenten op veelvoudige AEM plaatsstructuren toe te staan en de onderliggende cliënt van GraphQL toe te laten om met verschillende opslag/opslagmeningen van Adobe Commerce te verbinden.
 
-* GraphQL caching ingeschakeld voor bepaalde GraphQL query&#39;s via HTTP GET om de reactietijd te verminderen.
+* GraphQL caching is ingeschakeld voor bepaalde GraphQL query&#39;s via HTTP GET om de reactietijd te verminderen.
 
-* Weergave van de productbeschrijving ingeschakeld in AEM Producten-console.
+* De mening van de productbeschrijving wordt toegelaten in de console van de Producten van de AEM.
 
-* De Teaser van de handel breidt de component van het Teaser WCM uit om auteurs toe te staan om CTA- gebieden aan een productdetailpagina of een pagina van de productlijst ook toe te voegen.
+* De Teaser van de handel breidt de Teaser component WCM uit om auteurs toe te staan om CTA- gebieden aan een productdetailpagina of een pagina van de productlijst ook toe te voegen.
 
 * Knop om auteurs toe te staan op een AEM pagina te plaatsen en een koppeling te maken naar een AEM pagina, productdetailpagina, productlijstpagina of een externe koppeling.
 
 ### Verbeterde functies {#what-is-improved-august}
 
-* Adobe Commerce store configuration bewogen van OSGi aan AEM console van het Product om de integratieopstelling te maken auteurvriendelijker.
+* Adobe Commerce store configuration bewogen van OSGi aan de console van het Product van het AEM om de integratieopstelling te maken auteur-vriendelijker.
 
 ## Releasedatum: juli 2019
 
@@ -119,7 +119,7 @@ ht-degree: 6%
 
 ### Wat is er nieuw? {#what-is-new-july}
 
-* Eerste CIF Archetype om ontwikkelaars van verscheidene plaatsingsopties te voorzien: 1.Distributie AEM Venia storefront 2. Stel steigers voor een nieuw project 3 op. CIF-elementen gebruiken in een bestaand project
+* Eerste CIF Archetype om ontwikkelaars van verscheidene plaatsingsopties te voorzien: 1.Deploy AEM Venia storefront 2. Stel steigers voor een nieuw project 3 op. CIF-elementen gebruiken in een bestaand project
 
 * Catalogusnavigatie op meerdere niveaus ter ondersteuning van navigatie door categorieën en subcategorieën.
 
@@ -133,7 +133,7 @@ ht-degree: 6%
 
 ### Verbeterde functies {#what-is-improved-july}
 
-* Ondersteuning voor Adobe Commerce 2.3.2 en foutoplossingen met betrekking tot de weergave van producteigenschappen in de productconsole.
+* Ondersteuning voor Adobe Commerce 2.3.2 en foutoplossingen voor de weergave van producteigenschappen in de productconsole.
 
 ## Releasedatum: juni 2019
 

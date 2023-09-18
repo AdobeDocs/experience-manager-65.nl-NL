@@ -1,14 +1,14 @@
 ---
 title: Ontwikkeling met SAP-Commerce Cloud
-description: Het SAP-integratieframework voor Commerce Cloud bevat een integratielaag met een API
+description: Het SAP-integratieframework voor Commerce Cloud bevat een integratielaag met een API.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '2296'
+source-wordcount: '2286'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Het integratieframework bevat een integratielaag met een API. Hiermee kunt u:
 
-* plug-in een eCommerce-systeem en haal productgegevens naar AEM
+* plug-in een eCommerce-systeem en haal productgegevens naar Adobe Experience Manager (AEM)
 
 * bouwen AEM componenten voor handelsmogelijkheden onafhankelijk van de specifieke eCommerce-motor
 
@@ -105,7 +105,7 @@ De standaardinstellingen in de code worden ingesteld voor Hybris 5.
 
 Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
-* Voeg bij het aanroepen van de methode het volgende opdrachtregelargument toe aan de opdracht
+* Wanneer het aanhalen van gemaakt, voeg het volgende bevel-lijn argument aan het bevel toe
 
   `-P hybris4`
 
@@ -115,7 +115,7 @@ Voor de ontwikkeling van Hybris 4 is het volgende vereist:
 
    * Schakel Hybris 5-ondersteuning voor de parser Standaardreactie uit.
 
-   * Zorg ervoor dat de dienst van de Handler van de Authentificatie van Hybris Basis een lagere de dienstrangschikking heeft dan de dienst van de Handler van Hybris OAuth.
+   * Zorg ervoor dat de dienst van de Handler van de Authentificatie van Hybris Basis een lagere de dienstrangschikking heeft dan de dienst van de Handler van de Handler van Hybris OAuth.
 
 ### Sessieafhandeling {#session-handling}
 
@@ -123,7 +123,7 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
 
 * Op het eerste verzoek, wordt geen koekje geplaatst op het verzoek van de verkoopster; zo wordt een verzoek verzonden naar de hybris instantie om een zitting tot stand te brengen.
 
-* De sessiecookies worden uit de reactie geëxtraheerd en gecodeerd in een nieuwe cookie (bijvoorbeeld `hybris-session-rest`) en wordt ingesteld op het antwoord op de winkels. De codering in een nieuwe cookie is vereist, omdat de oorspronkelijke cookie alleen geldig is voor een bepaald pad en anders niet vanuit de browser wordt teruggestuurd in volgende aanvragen. De padgegevens moeten ook worden toegevoegd aan de waarde van het cookie.
+* De sessiecookies worden uit de reactie geëxtraheerd en gecodeerd in een nieuwe cookie (bijvoorbeeld `hybris-session-rest`) en wordt ingesteld op het antwoord op de winkels. De codering in een nieuwe cookie is vereist, omdat de oorspronkelijke cookie alleen geldig is voor een bepaald pad en anders niet vanuit de browser wordt teruggestuurd in volgende aanvragen. De padgegevens moeten aan de waarde van het cookie worden toegevoegd.
 
 * Op volgende verzoeken worden de cookies gedecodeerd uit de `hybris-session-<*xxx*>` cookies en ingesteld op de HTTP-client die wordt gebruikt om gegevens van hybris aan te vragen.
 
@@ -145,16 +145,16 @@ hybris gebruikt een gebruikerssessie om informatie op te slaan , zoals het winke
 
   `CommerceSession.getUserContext()`
 
-* Eigenaar van **betaling** verwerkingsverbinding
+* Heeft de **betaling** verwerkingsverbinding
 
-* Eigenaar van **vervulling** verbinding
+* Heeft de **vervulling** verbinding
 
 ### Productsynchronisatie en -publicatie {#product-synchronization-and-publishing}
 
 Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. Het volgende mechanisme is geïmplementeerd:
 
 * Een eerste lading id&#39;s wordt geleverd door hybris als voer. Deze feed kan worden bijgewerkt.
-* hybris zal bijgewerkte informatie verstrekken via een feed ( die AEM opiniepeilingen ) .
+* hybris verstrekt via een diervoeder bijgewerkte informatie ( dat AEM opiniepeilingen ) .
 * Wanneer AEM productgegevens gebruikt, verzendt het verzoeken terug naar hybris voor de huidige gegevens (voorwaardelijk krijgen verzoek gebruikend laatste gewijzigde datum).
 * Bij hybriden is het mogelijk de voederinhoud op declaratieve wijze te specificeren.
 * Het toewijzen van de voederstructuur aan het AEM inhoudsmodel gebeurt in de voederadapter aan de AEM kant.
@@ -197,7 +197,7 @@ Productgegevens die in hybris worden bewaard, moeten in AEM beschikbaar zijn. He
 
 * Geactiveerde productpagina&#39;s moeten toegang hebben tot de productgegevens **Online** versie d).
 
-* De AEM publicatie-instantie vereist toegang tot hybris voor het ophalen van product- en gepersonaliseerde gegevens (d).
+* De AEM instantie Publish vereist toegang tot hybris voor de terugwinning van product en gepersonaliseerde gegevens (d).
 
 ### Architectuur {#architecture}
 
@@ -209,7 +209,7 @@ Niet alle eigenschappen zijn echter variantassen. Variaties kunnen ook van invlo
 
 Elk product en/of elke variant wordt vertegenwoordigd door een middel, en daarom kaarten 1:1 aan een opslaggegevensopslagknoop. Het gevolg is dat een specifiek product en/of specifieke variant op unieke wijze kan worden geïdentificeerd door het pad ervan.
 
-De product/variant-bron bevat niet altijd de werkelijke productgegevens. Het kan een representatie zijn van gegevens die op een ander systeem (zoals hybris) worden opgeslagen. Zo worden productbeschrijvingen, prijzen enzovoort niet opgeslagen in AEM, maar in real-time opgehaald van de eCommerce-engine.
+De product/variant-bron bevat niet altijd de werkelijke productgegevens. Het kan een representatie zijn van gegevens die op een ander systeem (zoals hybris) worden opgeslagen. Productbeschrijvingen en prijzen worden bijvoorbeeld niet opgeslagen in AEM, maar in real-time opgehaald via de eCommerce-engine.
 
 Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste aanroepen in de product-API zijn variatiespecifiek (hoewel variaties gedeelde waarden van een voorouder kunnen overerven), maar er zijn ook aanroepen die de set variaties weergeven ( `getVariantAxes()`, `getVariants()`, enzovoort).
 
@@ -426,7 +426,7 @@ public class AxisFilter implements VariantFilter {
 * Opslag
 
    * In het hybris-geval is de hybris-server eigenaar van het winkelwagentje.
-   * In het AEM-generieke geval worden carts van [ClientContext](/help/sites-administering/client-context.md).
+   * In het geval van AEM generieke geneesmiddelen worden de karretjes van [ClientContext](/help/sites-administering/client-context.md).
 
 **Personalisatie**
 
@@ -507,12 +507,12 @@ De `CommerceSession` eigenaar van de drie elementen:
 
 * De `CommerceSession` is ook eigenaar van de betalingsverwerkingsverbinding.
 
-* Implementatoren moeten specifieke oproepen (aan hun gekozen betalingsverwerkingsservice) toevoegen aan de `CommerceSession` uitvoering.
+* Implementatoren moeten specifieke oproepen (aan hun gekozen betalingsverwerkingsdienst) aan de `CommerceSession` uitvoering.
 
 **Afhandeling bestellen**
 
 * De `CommerceSession` is ook eigenaar van de uitvoeringsverbinding.
-* Implementatoren zullen specifieke oproepen (aan hun gekozen betalingsverwerkingsdienst) moeten toevoegen aan de `CommerceSession` uitvoering.
+* Implementatoren moeten specifieke oproepen (aan hun gekozen betalingsverwerkingsservice) toevoegen aan de `CommerceSession` uitvoering.
 
 ### Zoekdefinitie {#search-definition}
 
@@ -530,7 +530,7 @@ Het eCommerce-project bevat een standaardzoekcomponent in:
 
 ![chlimage_1-14](/help/sites-developing/assets/chlimage_1-14a.png)
 
-Dit maakt gebruik van de onderzoek API om de geselecteerde handelingsmotor (zie [Selectie van eCommerce-engine](#ecommerce-engine-selection)):
+Dit gebruikt onderzoek API om de geselecteerde handelingsmotor (zie [Selectie van eCommerce-engine](#ecommerce-engine-selection)):
 
 #### Zoeken in API {#search-api}
 
@@ -538,11 +538,11 @@ Het kernproject bevat verschillende algemene klassen/hulpklassen:
 
 1. `CommerceQuery`
 
-   Wordt gebruikt om een zoekquery te beschrijven (bevat informatie over de querytekst, de huidige pagina, het paginaformaat, de sortering en de geselecteerde facetten). Alle eCommerce-services die de zoek-API implementeren, ontvangen instanties van deze klasse om hun zoekopdracht uit te voeren. A `CommerceQuery` kan worden geïnstantieerd vanuit een request-object ( `HttpServletRequest`).
+   Beschrijft een zoekquery (bevat informatie over de querytekst, de huidige pagina, het paginaformaat, de sortering en de geselecteerde facetten). Alle eCommerce-services die de zoek-API implementeren, ontvangen instanties van deze klasse om hun zoekopdracht uit te voeren. A `CommerceQuery` kan worden geïnstantieerd vanuit een request-object ( `HttpServletRequest`).
 
 1. `FacetParamHelper`
 
-   Is een hulpprogrammaklasse die één statische methode verstrekt - `toParams` - die worden gebruikt voor het genereren van `GET` parametertekenreeksen van een lijst met facetten en één in-/uitschakelen waarde. Dit is nuttig aan de kant UI, waar u een hyperlink voor elke waarde van elk facet moet tonen, zodat wanneer de gebruiker de hyperlink klikt de respectieve waarde van een knevel wordt voorzien (namelijk als het werd geselecteerd wordt het verwijderd uit de vraag, anders toegevoegd). Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, het overschrijven van waarden enzovoort.
+   Is een hulpprogrammaklasse die één statische methode verstrekt - `toParams` - die worden gebruikt voor het genereren van `GET` parametertekenreeksen van een lijst met facetten en één in-/uitschakelen waarde. Dit is nuttig aan de UI kant, waar u een hyperlink voor elke waarde van elk facet moet tonen, zodat wanneer de gebruiker de hyperlink klikt de respectieve waarde van een knevel wordt voorzien. Als deze optie is geselecteerd, wordt deze uit de query verwijderd, anders toegevoegd. Hierbij wordt rekening gehouden met alle logica van het omgaan met meerdere/enkele facetten, het overschrijven van waarden enzovoort.
 
 Het ingangspunt voor de zoekAPI is de `CommerceService#search` methode die een `CommerceResult` object. Zie de [API-documentatie](/help/commerce/cif-classic/developing/ecommerce.md#api-documentation) voor meer informatie over dit onderwerp.
 
@@ -552,7 +552,7 @@ Er wordt gezorgd voor integratie tussen AEM en verschillende systemen voor e-han
 
 * Verificatie
 
-  AEM wordt geacht de *alleen* front-end voor het web en dus *alles* verificatie.
+  AEM wordt geacht de *alleen* front end en daarom presteert *alles* verificatie.
 
 * Rekeningen in hybriden
 
@@ -566,7 +566,7 @@ Een AEM front-end kan vóór een bestaande hybris-implementatie worden geplaatst
 
    * Wanneer u zich aanmeldt bij hybris, als de AEM gebruiker niet bestaat:
 
-      * een nieuwe hybrusgebruiker maken met een cryptografisch willekeurig wachtwoord
+      * een hybrusgebruiker maken met een cryptografisch willekeurig wachtwoord
       * sla de hybris-gebruikersnaam op in de gebruikersmap van de AEM gebruiker
 
    * Zie: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
@@ -575,8 +575,8 @@ Een AEM front-end kan vóór een bestaande hybris-implementatie worden geplaatst
 
    * Wanneer het programma openen aan AEM, als het systeem de gebruiker erkent:
 
-      * aanmelden bij hybris met geleverde gebruikersnaam/pwd
-      * als dit lukt, maakt u de nieuwe gebruiker AEM met hetzelfde wachtwoord (AEM-specifieke salt resulteert in AEM-specifieke hash).
+      * aanmelden bij hybris met de geleverde gebruikersnaam/pwd
+      * Als dit lukt, maakt u de gebruiker AEM met hetzelfde wachtwoord (AEM-specifieke salt resulteert in AEM-specifieke hash).
 
    * Het bovenstaande algoritme wordt geïmplementeerd in een Sling `AuthenticationInfoPostProcessor`
 

@@ -1,19 +1,15 @@
 ---
 title: Aangepaste speciale tekens in Correspondentenbeheer
-seo-title: Custom special characters in Correspondence Management
 description: Leer hoe u aangepaste speciale tekens toevoegt in Correspondentiebeheer.
-seo-description: Learn how to add custom special characters in Correspondence Management.
-uuid: a1890f6d-8e0c-471f-a9bd-861acf1f17e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 9f26565c-a7ba-4e9e-bf77-a95eb8e351f2
 docset: aem65
 feature: Correspondence Management
 exl-id: 3e978c3e-12f2-4dc6-801d-8ab4c5df6700
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '636'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -44,7 +40,7 @@ De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen do
 Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe te voegen:
 
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
-1. Maak in de map Apps een map met de naam **[!UICONTROL specialcharacters]** met een pad/structuur die vergelijkbaar is met de map Specicharacters (bevindt zich in de map textEditorConfig onder libs):
+1. Maak in de map Apps een map met de naam **[!UICONTROL specialcharacters]** met een pad/structuur die lijkt op de map Specicharacters (in de map textEditorConfig onder libs):
 
    1. Klik met de rechtermuisknop op de knop **specialiteiten** map op het volgende pad en selecteer **Overlayknooppunt**:
 
@@ -60,18 +56,19 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
 
       >[!NOTE]
       >
-      >Breng geen veranderingen in de /libs tak aan. Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
+      >Wijzig de /libs tak niet. Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
       >
       >
       >
       >    * Upgrade op uw exemplaar
       >    * Een hotfix toepassen
       >    * Een functiepakket installeren
-
+      >
+      >
 
    1. Klikken **OK** en klik vervolgens op **Alles opslaan**. De map met speciale tekens wordt gemaakt in het opgegeven pad.
 
-      Controleer na het maken van de overlay de structuurcodes van de knooppunten. Elk knooppunt dat wordt gemaakt in /apps met behulp van de overlay, moet dezelfde klasse en eigenschappen hebben als gedefinieerd in /libs voor dat knooppunt. Als een eigenschap of tag ontbreekt in de nodestructuur onder de locatie /apps, synchroniseert u de tags met het corresponderende knooppunt in /libs.
+      Controleer na het maken van de overlay de structuurcodes van het knooppunt. Elk knooppunt dat wordt gemaakt in /apps met behulp van de overlay, moet dezelfde klasse en eigenschappen hebben als gedefinieerd in /libs voor dat knooppunt. Als een eigenschap of tag ontbreekt in de nodestructuur onder de locatie /apps, synchroniseert u de tags met het corresponderende knooppunt in /libs.
 
 1. Zorg ervoor dat de **[!UICONTROL textEditorConfig]** node heeft de volgende eigenschappen en waarden:
 
@@ -86,7 +83,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
 
 1. Vernieuw de Teksteditor\Create Correspondence UI page. Het knooppunt dat u hebt toegevoegd, is het laatste in de lijst met speciale tekens in de gebruikersinterface.
 1. Klikken **Alles opslaan**.
-1. Breng de gewenste wijzigingen aan in de speciale tekens:
+1. Eventuele wijzigingen in de speciale tekens:
 
 <table>
  <tbody>
@@ -100,7 +97,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
     <ol>
      <li>Voeg een onderliggende node toe onder "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" met verplichte eigenschappen.</li>
      <li>Klik op Alles opslaan</li>
-     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI om de veranderingen te zien.</li>
+     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -110,7 +107,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
      <li>Bedek het knooppunt dat moet worden bijgewerkt zoals hierboven beschreven en controleer de tags en klassen.</li>
      <li>Wijzig alle waarden, zoals bijschrift, waarde, endValue en multipleCaption. </li>
      <li>Klik op Alles opslaan. </li>
-     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI om de veranderingen te zien.</li>
+     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -120,7 +117,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
      <li>Plaats het knooppunt dat u wilt verbergen onder "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters"</li>
      <li>Voeg de eigenschap sling:hideResource (Boolean) toe aan het knooppunt (onder apps) dat moet worden verborgen. </li>
      <li>Klik op Alles opslaan. </li>
-     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI om de veranderingen te zien.<br /> </li>
+     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -130,7 +127,7 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
      <li>Voeg de eigenschap "sling:hideChildren (String of String[])" toe aan "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters". </li>
      <li>Voeg knooppuntnamen (speciale tekens die moeten worden verborgen) toe als waarden voor de eigenschap "sling:hideChildren". </li>
      <li>Klik op Alles opslaan. </li>
-     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI om de veranderingen te zien.<br /> </li>
+     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.<br /> </li>
     </ol> </td>
   </tr>
   <tr>
@@ -138,10 +135,10 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
    <td>
     <ol>
      <li>Voeg een onderliggende node toe onder "/apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters" met verplichte eigenschappen. </li>
-     <li>Voeg "sling:orderBefore (Koord)"bezit aan de onlangs-gecreeerde kindknoop toe. </li>
-     <li>Voeg knooppuntnaam als waarde toe voordat het toegevoegde speciale teken moet worden weergegeven. </li>
+     <li>Voeg de eigenschap "sling:orderBefore (String)" toe aan het nieuwe onderliggende knooppunt. </li>
+     <li>Voeg de knooppuntnaam toe als waarde vóór het toegevoegde speciale karakter moet worden getoond. </li>
      <li>Klik op Alles opslaan. </li>
-     <li>Vernieuw de Redacteur van de Tekst \ creeer Correspondentie UI om de veranderingen te zien.<br /> </li>
+     <li>Vernieuw de Teksteditor\Create Correspondence UI zodat u de wijzigingen kunt zien.<br /> </li>
     </ol> </td>
   </tr>
  </tbody>

@@ -1,17 +1,13 @@
 ---
 title: Aangepaste aangepaste formulierthema's maken
-seo-title: Creating custom adaptive form themes
-description: Een adaptief formulierthema is een AEM clientbibliotheek waarmee u de stijlen (look and feel) voor een adaptief formulier kunt definiëren. Leer hoe u aangepaste formulierthema's kunt maken.
-seo-description: An adaptive form theme is an AEM client library that you use to define the styles (look and feel) for an adaptive form. Learn how you can create custom adaptive form themes.
-uuid: b25df10e-b07c-4e9d-a799-30f1c6fb3c44
+description: Een adaptief formulierthema is een Adobe Experience Manager-clientbibliotheek waarmee u de stijlen (look and feel) voor een adaptief formulier kunt definiëren. Leer hoe u aangepaste formulierthema's kunt maken.
 content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 437e6581-4eb1-4fbd-a6da-86b9c90cec89
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->AEM Forms levert de [Thema-editor](/help/forms/using/themes.md) mogelijkheden om adaptieve formulieren te maken en te wijzigen [thema&#39;s](/help/forms/using/themes.md). Voer de stappen uit die in dit artikel worden vermeld, slechts als u van een versie hebt bevorderd die niet heeft [Thema-editor](/help/forms/using/themes.md) en u hebt een bestaande investering in thema&#39;s die met Minder/CSS dossiers (pre-thema redacteursmethode) worden gecreeerd.
+>Adobe Experience Manager (AEM) Forms levert de [Thema-editor](/help/forms/using/themes.md) mogelijkheden om adaptieve formulieren te maken en te wijzigen [thema&#39;s](/help/forms/using/themes.md). Voer de stappen in dit artikel alleen uit als u een upgrade hebt uitgevoerd van een versie die niet [Thema-editor](/help/forms/using/themes.md) en u hebt een bestaande investering in thema&#39;s die met Minder/CSS dossiers (pre-thema redacteursmethode) worden gecreeerd.
 
 ## Vereisten {#prerequisites}
 
@@ -32,7 +28,7 @@ ht-degree: 0%
 
 An **adaptief formulierthema** Dit is een AEM clientbibliotheek die u gebruikt om de stijlen (look and feel) voor een adaptief formulier te definiëren.
 
-U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. Vervolgens gebruikt u deze aangepaste sjabloon om een **adaptieve vorm**.
+U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. U kunt deze aangepaste sjabloon vervolgens gebruiken om een **adaptieve vorm**.
 
 ![Adaptief formulier en clientbibliotheek](assets/hierarchy.png)
 
@@ -40,7 +36,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. Vervo
 
 >[!NOTE]
 >
->De volgende procedure wordt beschreven gebruikend steekproefnamen voor AEM voorwerpen zoals knoop, eigenschappen, en omslagen.
+>De volgende procedure wordt beschreven gebruikend steekproefnamen voor AEM voorwerpen zoals knopen, eigenschappen, en omslagen.
 >
 >Als u deze stappen met de namen uitvoert, zou het resulterende malplaatje aan de volgende momentopname gelijkaardig moeten lijken:
 
@@ -61,11 +57,11 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. Vervo
 
 1. Twee mappen toevoegen `less` en `css`en een bestand `css.txt` op het knooppunt dat in stap 1 is gemaakt:
 
-   * `less` map: Bevat de `less` variabele bestanden waarin u de `less` variabelen en `less mixins` die worden gebruikt om de .css stijlen te beheren.
+   * `less` map: bevat de `less` variabele bestanden waarin u de `less` variabelen en `less mixins` die worden gebruikt om de .css stijlen te beheren.
 
-      Deze map bestaat uit `less` variabele bestanden, `less` bestanden mixen, `less` bestanden die stijlen definiëren met behulp van mixins en variabelen. En al deze minder dossiers worden dan ingevoerd in styles.less.
+     Deze map bestaat uit `less` variabele bestanden, `less` bestanden mixen, `less` bestanden die stijlen definiëren met behulp van mixins en variabelen. En al deze minder dossiers worden dan ingevoerd in styles.less.
 
-   * `css`map: Bevat de CSS-bestanden waarin u de statische stijlen definieert die in het thema moeten worden gebruikt.
+   * `css`map: bevat de CSS-bestanden waarin u de statische stijlen definieert die in het thema moeten worden gebruikt.
 
    **Minder variabelen**: Dit zijn de bestanden waarin u de variabelen definieert of overschrijft die worden gebruikt bij het definiëren van CSS-stijlen.
 
@@ -109,7 +105,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. Vervo
    @button-hover-bg-color: rgb(30, 156, 67);
    ```
 
-   **Minder gemengde bestanden:** U kunt de functies definiëren die variabelen als argumenten accepteren. De uitvoer van deze functies is de resulterende stijlen. Gebruik deze combinaties in verschillende stijlen om te voorkomen dat CSS-stijlen worden herhaald.
+   **Minder gemengde bestanden:** U kunt de functies definiëren die variabelen als argumenten accepteren. De uitvoer van deze functies is de resulterende stijlen. Gebruik deze combinaties in verschillende stijlen, zodat u niet telkens CSS-stijlen hoeft te herhalen.
 
    Adaptieve formulieren bieden OTB-mixen die zijn gedefinieerd in:
 
@@ -119,7 +115,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. Vervo
 
    * `/apps/clientlibs/fd/af/third-party/less/mixins.less`
 
-   Bemonsteringsmixterdefinitie:
+   Definitie van monstermix:
 
    ```css
    .rounded-corners (@radius) {
@@ -135,7 +131,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. Vervo
    }
    ```
 
-   **Stijlen.bestand:** Gebruik dit bestand om alle bestanden op te nemen die u in de clientbibliotheek nodig hebt (variabelen, mixins, stijlen).
+   **Stijlen.bestand:** Gebruik dit bestand om alle bestanden op te nemen die u in de clientbibliotheek moet gebruiken, met alle variabelen, mixins en stijlen.
 
    In het volgende voorbeeld `styles.less` , kan de importinstructie in elke willekeurige volgorde worden geplaatst.
 
@@ -208,7 +204,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. Vervo
 
 Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen uit om dit thema in een adaptieve vorm te gebruiken:
 
-1. Het thema dat is gemaakt in [een adaptief formulierthema maken](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) sectie, een aangepaste pagina van het type maken `cq:Component`.
+1. Het thema dat is gemaakt in [een adaptief formulierthema maken](/help/forms/using/creating-custom-adaptive-form-themes.md#p-to-create-an-adaptive-form-theme-p) sectie, een aangepaste pagina van type maken `cq:Component`.
 
    Bijvoorbeeld, `/apps/myAfCustomizations/myAfPages/forestPage`
 
@@ -216,9 +212,9 @@ Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen ui
 
       ![Opname van CRX-opslagplaats](assets/1-2.png)
 
-   1. Als u een thema op de pagina wilt gebruiken, moet u een bestand library.jsp overschrijven aan het knooppunt.
+   1. Als u een thema op de pagina wilt gebruiken, moet u een bestand library.jsp dat met voeten wordt getreden, aan het knooppunt toevoegen.
 
-      Vervolgens importeert u het thema dat u hebt gemaakt in Een adaptieve sectie met formulierthema&#39;s van dit artikel maken.
+      Vervolgens kunt u het thema importeren dat is gemaakt in Een adaptieve sectie voor formulierthema maken van dit artikel.
 
       Het volgende voorbeeldcodefragment importeert het `af.theme.forest` thema.
 
@@ -227,10 +223,10 @@ Nadat u een adaptief formulierthema hebt gemaakt, voert u de volgende stappen ui
       <cq:includeClientLib categories="af.theme.forest"/>
       ```
 
-   1. **Optioneel**: Hef op de aangepaste pagina de header.jsp, footer.jsp en de body.jsp op, al naar gelang de vereisten.
+   1. **Optioneel**: Overschrijf op de aangepaste pagina de header.jsp, footer.jsp en de body.jsp, al naar gelang de vereisten.
 
 1. Een aangepaste sjabloon maken (bijvoorbeeld: `/apps/myAfCustomizations/myAfTemplates/forestTemplate`) waarvan jcr:content verwijst naar de aangepaste pagina die in de vorige stap is gemaakt (bijvoorbeeld: `myAfCustomizations/myAfPages/forestPage)`.
 
    ![Opname van CRX-opslagplaats](assets/2-1.png)
 
-1. Maak een adaptief formulier met de sjabloon die u in de vorige stap hebt gemaakt. De vormgeving van het adaptieve formulier wordt bepaald door het thema dat is gemaakt in Een adaptieve sectie voor formulierthema maken van dit artikel.
+1. Maak een adaptief formulier met de sjabloon die u in de vorige stap hebt gemaakt. De vormgeving van het adaptieve formulier wordt bepaald door het thema dat is gemaakt in de sectie Voor het maken van een adaptief formulierthema van dit artikel.

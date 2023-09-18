@@ -2,9 +2,9 @@
 title: Bestanden comprimeren en decomprimeren met een AEM Forms op een aangepaste JEE DSC
 description: Leer hoe u bestanden comprimeert en decomprimeert met een AEM Forms op een aangepaste JEE DSC
 exl-id: 1b950d8f-6b54-452a-831b-f5644370691d
-source-git-commit: f0dd1ac3ab9c17a8b331f5048d84ec97dd23924f
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,13 @@ Java™-editor zoals [Eclipse](https://www.eclipse.org/) of [Netbeans IDE](https
 
 Intermediair
 
-Met AEM Forms on JEE kunnen ontwikkelaars aangepaste DSC (Document Service Container) maken om verrijkte functies te maken. Het maken van dergelijke componenten kan op JEE runtime-omgeving naar de AEM Forms worden geplakt en dient het beoogde doel. In dit artikel wordt uitgelegd hoe u een aangepaste ZIP-service maakt waarmee u een lijst met bestanden kunt comprimeren in een ZIP-bestand en een ZIP-bestand kunt decomprimeren naar een lijst met documenten.
+Met AEM Forms on JEE kunnen ontwikkelaars een aangepaste ASC (Acrobat Services Container) maken om verrijkt te maken van de functies voor selectievakjes. Het maken van dergelijke componenten kan op JEE runtime-omgeving naar de AEM Forms worden geplakt en dient het beoogde doel. In dit artikel wordt uitgelegd hoe u een aangepaste ZIP-service maakt waarmee u een lijst met bestanden kunt comprimeren in een ZIP-bestand en een ZIP-bestand kunt decomprimeren naar een lijst met documenten.
 
-## Een aangepaste DSC-component maken {#create-custom-dsc-component}
+## Een aangepaste ASC-component maken {#create-custom-dsc-component}
 
-Creeer een component van douaneDSC met twee de dienstverrichtingen om lijst van documenten te comprimeren en te decomprimeren. Deze component gebruikt het pakket java.util.zip voor compressie en decompressie. Voer de volgende stappen uit om een aangepaste component te maken:
+Maak een aangepaste ASC-component met twee servicebewerkingen, zodat u een lijst met documenten kunt comprimeren en decomprimeren. Deze component gebruikt het pakket java.util.zip voor compressie en decompressie.
+
+Een aangepaste ASC-component maken:
 
 1. Voeg het bestand adobe-livecycle-client.jar toe aan de bibliotheek
 1. De vereiste pictogrammen toevoegen
@@ -203,7 +205,7 @@ Op dezelfde manier kan de verrichting ZipDocuments van de douanecomponent een li
 
 ![Document overslaan](assets/zip-doc.jpg)
 
-De volgende werkschemaorchestratie toont hoe te om het bepaalde dossier van het PIT te decomprimeren, hen terug naar een ander dossier van het PIT comprimeren, en output terugkeert (zie hieronder Figuur).
+De volgende werkschemaorchestratie toont hoe te om het bepaalde dossier van het PIT te decomprimeren, het terug naar een ander dossier van het PIT te comprimeren, en output terug te keren (zie hieronder Figuur).
 
 ![ZIP-workflow ongedaan maken](assets/unzip-zip-process.jpg)
 
@@ -219,4 +221,4 @@ U kunt deze ZIP-service voor de volgende gebruiksgevallen gebruiken:
 
 * Met beleid wordt een lijst met documenten beveiligd en geretourneerd als een ZIP-bestand.
 
-* Gebruikers toestaan alle bijlagen van een procesinstantie als één ZIP-bestand te downloaden.
+* Hiermee kunnen gebruikers alle bijlagen van een procesinstantie als één ZIP-bestand downloaden.

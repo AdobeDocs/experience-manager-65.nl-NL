@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 3df90511-e43e-442b-bf73-44c22c1886b7
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '109'
+source-wordcount: '115'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Er is slechts één &quot;uber&quot;artefact dat individuele artefacten vervangt
 >
 >Houd up-to-date met de meest recente versie van de Gemeenschappen.
 >
->Zie [Laatste releases](deploy-communities.md#latest-releases) om de meest recente versie te identificeren.
+>Zie de [Laatste releases](deploy-communities.md#latest-releases) waar u de meest recente versie kunt identificeren.
 
 ## Voorbeeld van Geweven afhankelijkheid {#maven-dependency-example}
 
@@ -46,7 +46,7 @@ Er is slechts één &quot;uber&quot;artefact dat individuele artefacten vervangt
 
 >[!NOTE]
 >
->Zie [AEM Uber jar-opslagplaats](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) om het nieuwste Uber jar artefact te identificeren.
+>Zie de [AEM Uber jar-opslagplaats](https://mvnrepository.com/artifact/com.adobe.aem/uber-jar) waar je het nieuwste Uber jar artefact kunt identificeren.
 
 <!--
 There are now two "uber" artifacts that replace individual artifacts:

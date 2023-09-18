@@ -1,40 +1,36 @@
 ---
 title: De indeling en positie van foutberichten van een adaptief formulier aanpassen
-seo-title: Customize layout and positioning of error messages of an adaptive form
 description: U kunt de lay-out en de positie van de foutberichten van een adaptief for aanpassen.
-seo-description: You can customize layout and positioning of the error messages of an adaptive for.
-uuid: 6d3490f6-c867-44c9-a527-55f6d7221f99
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 136ac7e3-9d1f-4d58-bd4f-9dbe09eeafee
 docset: aem65
 exl-id: 5cb3ee55-f411-4692-84f7-89bf6ade729d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
 
 # De indeling en positie van foutberichten van een adaptief formulier aanpassen{#customize-layout-and-positioning-of-error-messages-of-an-adaptive-form}
 
-U kunt de indeling en de positie van de foutberichten in een adaptief formulier aanpassen. U kunt de volgende aanpassingen uitvoeren:
+U kunt de indeling en de positie van de foutberichten van een adaptief formulier aanpassen. U kunt de volgende aanpassingen uitvoeren:
 
-* Locatie en lay-out van het bijschrift van een veld aanpassen zonder wijzigingen aan te brengen in de bijbehorende CSS-eigenschappen
-* Positie van inline foutberichten aanpassen
+* De locatie en lay-out van het bijschrift van een veld aanpassen zonder de bijbehorende CSS-eigenschappen te wijzigen
+* De positie van inline-foutberichten aanpassen
 * Inhoud van dynamische Help-indicator aanpassen
-* De positie van de veldcomponenten (bijschrift, widget, korte beschrijving, lange beschrijving en Help-indicatorcomponenten) aanpassen zonder wijzigingen aan te brengen in de bijbehorende CSS-eigenschappen
+* De positie van de veldcomponenten (bijschrift, widget, korte beschrijving, lange beschrijving en Help-indicatorcomponenten) aanpassen zonder de bijbehorende CSS-eigenschappen te wijzigen
 
 ## Lay-out van velden aanpassen {#customize-layout-of-fields}
 
-U kunt de indeling van één veld of van alle velden aanpassen om de positie van bijschrift en foutberichten te wijzigen. Voer de volgende stappen uit om een aangepaste indeling toe te passen op een veld:
+U kunt de indeling van één veld of van alle velden aanpassen om de positie van bijschrift en foutberichten te wijzigen.
+
+Ga als volgt te werk om een aangepaste indeling toe te passen op een veld:
 
 ### Lay-out van één veld aanpassen {#customize-layout-of-a-single-field}
 
-Voer de volgende stappen uit om een aangepaste indeling toe te passen op één veld:
-
-1. Open het formulier in **Stijl** in. Als u het formulier in de stijlmodus wilt openen, tikt u op de paginaboolbalk ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
+1. Open het formulier in **Stijl** -modus. Als u het formulier in de stijlmodus wilt openen, tikt u op de paginaboolbalk ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl**.
 1. In de zijbalk, onder **Formulierobjecten**, selecteert u het veld en tikt u op de knop Bewerken ![bewerken, knop](assets/edit-button.png).
 1. Selecteer de status van het veld dat u wilt aanpassen en geef de opmaak voor die status op.
 
@@ -42,7 +38,7 @@ Voer de volgende stappen uit om een aangepaste indeling toe te passen op één v
 
 ### De indeling van alle velden van een formulier aanpassen {#customize-layout-of-all-the-fields-of-a-form}
 
-Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u op één plaats opmaak van formuliercomponenten opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Voor meer informatie over thema&#39;s raadpleegt u [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
+Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u de opmaak van formuliercomponenten op één locatie opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Zie voor meer informatie over thema&#39;s [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
 
 Maak een thema met de Thema-editor om de indeling van alle velden in het formulier aan te passen. Nadat u een thema hebt gemaakt, voert u de volgende stappen uit om het op een formulier toe te passen:
 
@@ -52,15 +48,15 @@ Maak een thema met de Thema-editor om de indeling van alle velden in het formuli
 
 ## Een aangepaste veldindeling maken {#create-a-custom-field-layout}
 
-1. CRXDE-lijst openen. De standaard-URL is https://&#39;[server]:[poort]&quot;/crx/de.
-1. Kopieer een veldlay-out van het knooppunt /libs/fd/af/layouts/field (bijvoorbeeld defaultFieldLayout) naar het knooppunt /apps (bijvoorbeeld /apps/af-field-layout).
+1. Open CRXDE Lite. De standaard-URL is https://&#39;[server]:[poort]...
+1. Kopieer een veldindeling van het knooppunt /libs/fd/af/layouts/field (bijvoorbeeld defaultFieldLayout) naar het knooppunt /apps (bijvoorbeeld /apps/af-field-layout).
 1. Wijzig de naam van het gekopieerde knooppunt en het bestand defaultFieldLayout.jsp. Bijvoorbeeld errorOnRight.jsp.
 
-1. Waarde wijzigen van de eigenschappen qtip en jcr:description van het gekopieerde knooppunt. Wijzig bijvoorbeeld de waarde van de eigenschappen in Fout rechts
+1. Wijzig de waarde van de eigenschappen qtip en jcr:description van het gekopieerde knooppunt. Wijzig bijvoorbeeld de waarde van de eigenschappen in Fout rechts
 
 1. Om nieuwe stijlen en gedrag toe te voegen, creeer een cliëntbibliotheek in de /etc knoop.
 
-   Creëer bijvoorbeeld op de locatie /etc/af-field-layout-clientlib de client-library van het knooppunt. Voeg de eigenschap Categorieën toe met het bestand value.field.errorOnRight en style.less met de volgende code:
+   Maak bijvoorbeeld op de locatie /etc/af-field-layout-clientlib de client-library van het knooppunt. Voeg de eigenschap Categorieën toe met het bestand value.field.errorOnRight en style.less met de volgende code:
 
    ```css
    .widgetErrorWrapper {
@@ -82,7 +78,7 @@ Maak een thema met de Thema-editor om de indeling van alle velden in het formuli
    ```
 
 1. Als u de weergave en het gedrag wilt verbeteren, neemt u de clientbibliotheek op die in het lay-outbestand is gemaakt (errorOnRight.jsp).
-1. Open het dialoogvenster Bewerken van het veld en selecteer de optie **Stijlen** tab. In de **Veldlay-out configureren** keuzelijst, selecteert u de nieuwe lay-out en klikt u op **OK**.
+1. Open het dialoogvenster Bewerken van het veld en selecteer de optie **Stijlen** tab. In de **Veldlay-out configureren** keuzelijst, selecteert u de nieuwe layout en klikt u op **OK**.
 
 Het pakket ErrorOnRight.zip bevat code waarmee foutberichten aan de rechterkant van velden worden weergegeven.
 

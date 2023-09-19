@@ -1,14 +1,14 @@
 ---
 title: Aanbevolen procedures voor AEM Mobile On-demand Services
-description: Leer over beste praktijken en richtlijnen die ervaren AEM ontwikkelaars voor plaatsen, die mobiele toepassingsmalplaatjes en componenten willen bouwen.
+description: Meer informatie over de beste praktijken en richtlijnen die bevoegde ontwikkelaars van Adobe Experience Manager (AEM) helpen voor sites die sjablonen en componenten voor mobiele apps willen maken.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 63ceaba6-b796-4c13-a86d-f0609ec679c9
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 99808cb38c5d376ccb7fb550c5212138890cec11
 workflow-type: tm+mt
-source-wordcount: '592'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Het maken van een AEM Mobile On-demand Services-app is niet hetzelfde als het rechtstreeks maken van een app in de shell Cordova (of PhoneGap). De ontwikkelaars zouden met moeten vertrouwd zijn:
 
-* Plug-ins die worden ondersteund vanuit het vak en de specifieke AEM Mobile-plug-ins.
+* Plug-ins die worden ondersteund vanuit de verpakking en de specifieke plug-ins voor Adobe Experience Manager (AEM) Mobile.
 
 >[!NOTE]
 >
@@ -31,17 +31,17 @@ Het maken van een AEM Mobile On-demand Services-app is niet hetzelfde als het re
 >* [AEM Mobile-plug-ins gebruiken die geschikt zijn voor Cordova](https://helpx.adobe.com/digital-publishing-solution/help/app-runtime-api.html)
 >
 
-* Sjablonen die plug-infunctionaliteit gebruiken, moeten zo worden geschreven dat ze nog steeds ontwerpbaar zijn in de browser, zonder dat de plug-inbridge aanwezig is.
+* Sjablonen die plug-infunctionaliteit gebruiken, moeten zo worden geschreven dat ze nog steeds in de browser kunnen worden geschreven, zonder dat de plug-inbridge aanwezig is.
 
    * Zorg er bijvoorbeeld voor dat u wacht op de knop *deviceready* voordat u probeert toegang te krijgen tot de API van een plug-in.
 
 ## Richtlijnen voor AEM ontwikkelaars {#guidelines-for-aem-developers}
 
-De volgende richtlijnen helpen ervaren AEM ontwikkelaars voor sites, die sjablonen en componenten voor mobiele apps willen maken:
+De volgende richtlijnen helpen bevoegde AEM ontwikkelaars voor sites die sjablonen en componenten voor mobiele apps willen maken:
 
 **Sjablonen voor AEM sites structureren om hergebruik en uitbreidbaarheid aan te moedigen**
 
-* Meerdere componentscriptbestanden verkiezen boven één monolithische scriptbestand
+* Meerdere componentscriptbestanden verkiezen boven één monolithische
 
    * Er zijn verschillende lege extensiepunten beschikbaar, zoals *customheaderlibs.html* en *customfooterlibs.html*, waarmee de ontwikkelaar het paginasjabloon kan wijzigen terwijl zo weinig mogelijk kerncode wordt gedupliceerd
    * Sjablonen kunnen vervolgens worden uitgebreid en aangepast via Sling *sling:resourceSuperType* mechanisme
@@ -60,10 +60,10 @@ De volgende richtlijnen helpen ervaren AEM ontwikkelaars voor sites, die sjablon
 >
 >U kunt meer in detail leren over render-blokkerende externe manuscripten [hier](https://developers.google.com/speed/docs/insights/BlockingJS).
 
-**Voorkeur voor app-specifieke client JS- en CSS-bibliotheken boven webspecifieke bibliotheken**
+**Voorkeur voor app-specifieke client-side JS- en CSS-bibliotheken boven webspecifieke bibliotheken**
 
 * Overhead in bibliotheken zoals jQuery Mobile voorkomen om een enorme breedte aan apparaten en browsers af te handelen
-* Wanneer een sjabloon wordt uitgevoerd in de webweergave van een app, hebt u controle over de platformen en versies die de toepassing zal ondersteunen en over de kennis dat JavaScript-ondersteuning aanwezig is. Kies bijvoorbeeld Ionic (misschien alleen de CSS) boven jQuery Mobile en Onsen UI boven Bootstrap.
+* Wanneer een sjabloon wordt uitgevoerd in de webweergave van een app, hebt u controle over de platforms en versies die de app zal ondersteunen en over de kennis dat JavaScript-ondersteuning aanwezig is. Kies bijvoorbeeld Ionic (alleen de CSS) boven jQuery Mobile en Onsen UI boven Bootstrap.
 
 >[!NOTE]
 >
@@ -72,13 +72,13 @@ De volgende richtlijnen helpen ervaren AEM ontwikkelaars voor sites, die sjablon
 **De voorkeur geven aan microbibliotheken via volledige stapel**
 
 * De tijd die nodig is om de inhoud op het glas van het apparaat te krijgen, wordt vertraagd door elke bibliotheek waarvan uw artikelen afhankelijk zijn. Deze vertraging wordt vergroot wanneer een nieuwe webweergave wordt gebruikt om elk artikel te renderen. Elke bibliotheek moet dus opnieuw volledig worden geïnitialiseerd
-* Als uw artikelen niet als SPA zijn samengesteld (apps met één pagina), hoeft u waarschijnlijk geen volledige stapelbibliotheek zoals Angular op te nemen
-* Voorkeur voor kleinere bibliotheken voor één doel om de interactiviteit toe te voegen die uw pagina nodig heeft, zoals [Snelklikken](https://github.com/ftlabs/fastclick) of [Snelheid.js](https://velocityjs.org)
+* Als uw artikelen niet als SPA zijn samengesteld (apps met één pagina), hoeft u waarschijnlijk geen bibliotheek met volledige stapels zoals Angular op te nemen
+* Voorkeur voor kleinere bibliotheken voor één doel die helpen de interactiviteit toevoegen die uw pagina vereist, zoals [Snelklikken](https://github.com/ftlabs/fastclick) of [Snelheid.js](https://velocityjs.org)
 
 **Grootte van artikellading minimaliseren**
 
 * Gebruik de kleinst mogelijke middelen die effectief de grootste viewport kunnen behandelen u, bij redelijke resolutie steunt
-* Een gereedschap gebruiken als *ImageOptim* in uw afbeeldingen om eventuele overtollige metagegevens te verwijderen
+* Een gereedschap gebruiken als *ImageOptim* op uw afbeeldingen zodat u eventuele overtollige metagegevens kunt verwijderen
 
 ## Aan de slag {#getting-ahead}
 

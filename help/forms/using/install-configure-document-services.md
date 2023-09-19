@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
 workflow-type: tm+mt
-source-wordcount: '5372'
+source-wordcount: '5360'
 ht-degree: 0%
 
 ---
@@ -243,7 +243,7 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 >[!NOTE]
 >
 >* Alle omgevingsvariabelen en de respectieve paden zijn hoofdlettergevoelig.
->* JAVA_HOME, JAVA_HOME_32 en Acrobat_PATH (alleen Windows) zijn verplichte omgevingsvariabelen.
+>* JAVA_HOME en Acrobat_PATH (alleen Windows) zijn verplichte omgevingsvariabelen.
 >* De omgevingsvariabele OpenOffice_PATH wordt ingesteld op de installatiemap in plaats van op het pad naar het uitvoerbare bestand.
 >* Stel geen omgevingsvariabelen in voor Microsoft® Office-toepassingen zoals Word, PowerPoint, Excel en Project, of voor AutoCAD. Als deze toepassingen op de server worden geïnstalleerd, genereert de dienst van de PDF automatisch begint deze toepassingen.
 >* Voor op UNIX-Gebaseerde platforms, installeer OpenOffice als /root. Als OpenOffice niet als wortel wordt geïnstalleerd, kan de dienst van de PDF Generator geen documenten OpenOffice in de documenten van PDF omzetten. Als u OpenOffice als niet-wortelgebruiker moet installeren en in werking stellen, dan verstrek sudo rechten aan de niet-wortelgebruiker.
@@ -686,8 +686,6 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeem](#SR
   ```
   ldd phantomjs | grep not
   ```
-
-* Zorg ervoor dat de omgevingsvariabele JAVA_HOME_32 naar de juiste locatie verwijst.
 
 **Linux® en Solaris™ (WebKit conversieroute)**
 

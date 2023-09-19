@@ -1,25 +1,21 @@
 ---
 title: Aangepast formulier insluiten in externe webpagina
-seo-title: Embed adaptive form in external web page
 description: Leer hoe u een adaptief formulier insluit in een externe webpagina
-seo-description: Learn how to embed an adaptive form in an external HTML web page
-uuid: d81032dd-af80-4f4b-a717-ee1b89fd3d3d
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
-discoiquuid: d739c6da-3b41-4452-8728-d7cd1a3ae20b
 docset: aem65
 feature: Adaptive Forms
 exl-id: 2a237f74-fdfc-4e28-841c-f69afb7b99cf
-source-git-commit: f114456d5571620772341cba9bd8203d91d0b053
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
 workflow-type: tm+mt
-source-wordcount: '1027'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
 
 # Aangepast formulier insluiten in externe webpagina{#embed-adaptive-form-in-external-web-page}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor het ontwerpen van Adaptive Forms met behulp van stichtingscomponenten. </span>
 
 U kunt [adaptieve formulieren insluiten in een AEM Sites-pagina](/help/forms/using/embed-adaptive-form-aem-sites.md) of een webpagina die buiten AEM wordt gehost. Het ingesloten adaptieve formulier is volledig functioneel en gebruikers kunnen het formulier invullen en verzenden zonder de pagina te verlaten. Hierdoor kan de gebruiker in de context van andere elementen op de webpagina blijven en tegelijkertijd met het formulier communiceren.
 
@@ -27,9 +23,9 @@ U kunt [adaptieve formulieren insluiten in een AEM Sites-pagina](/help/forms/usi
 
 Voer de volgende stappen uit voordat u een adaptief formulier insluit op een externe website
 
-* Publiceer het adaptieve formulier dat moet worden ingesloten op de publicatieversie van de AEM Forms-server.
-* Maak of identificeer een webpagina op uw website om het adaptieve formulier te hosten. Zorg ervoor dat de webpagina [jQuery-bestanden lezen vanuit een CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) of u hebt een lokale kopie van de jQuery ingesloten. jQuery is vereist om een adaptief formulier te genereren.
-* Wanneer AEM server en de webpagina zich op verschillende domeinen bevinden, voert u de stappen uit die in sectie worden vermeld. [AEM Forms in staat stellen om adaptieve formulieren naar een interdomeinsite te sturen](#cross-site).
+* Publiceer het adaptieve formulier dat moet worden ingesloten in de instantie Publiceren van de AEM Forms Server.
+* Maak of identificeer een webpagina op uw website waarop u het adaptieve formulier kunt hosten. Zorg ervoor dat de webpagina [jQuery-bestanden lezen vanuit een CDN](https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js) of u hebt een lokale kopie van de jQuery ingesloten. jQuery is vereist om een adaptief formulier te genereren.
+* Wanneer de AEM server en de webpagina zich op verschillende domeinen bevinden, voert u de stappen uit die in de sectie worden vermeld. [AEM Forms in staat stellen om adaptieve formulieren naar een interdomeinsite te sturen](#cross-site).
 
 ## Aangepast formulier insluiten {#embed-adaptive-form}
 
@@ -100,25 +96,25 @@ Het adaptieve formulier insluiten:
 
 1. In de ingesloten code:
 
-   * Waarde wijzigen van *options.path* variabele met het pad van de publicatie-URL van het adaptieve formulier. Als de AEM server op een contextweg loopt, zorg ervoor dat URL het contextweg omvat. Vermeld altijd de volledige naam van het adaptieve formulier, inclusief de extensie.   De bovenstaande code en het aanpassen van de locatie op dezelfde AEM formulierserver, zodat het voorbeeld het contextpad van het adaptieve formulier /content/forms/af/locbasic.html gebruikt.
+   * De waarde van de optie *options.path* variabele met het pad van de publicatie-URL van het adaptieve formulier. Als de AEM server op een contextweg loopt, zorg ervoor dat URL het contextweg omvat. Vermeld altijd de volledige naam van het adaptieve formulier, inclusief de extensie. De bovenstaande code is bijvoorbeeld aangepast vanuit het verblijf op dezelfde AEM Forms Server, zodat in het voorbeeld het contextpad van het adaptieve formulier wordt gebruikt `/content/forms/af/locbasic.html`.
    * Vervangen *options.dataRef* met kenmerken die worden doorgegeven met de URL. U kunt de variabele data gebruiken aan [Een adaptief formulier vooraf invullen](/help/forms/using/prepopulate-adaptive-form-fields.md).
    * Vervangen *options.themePath* met het pad naar een ander thema dan het thema dat in het adaptieve formulier is geconfigureerd. U kunt ook het themapad opgeven met het aanvraagkenmerk.
    * CSS_Selector is de CSS-kiezer van de formuliercontainer waarin het adaptieve formulier is ingesloten. De CSS-kiezer in het bovenstaande voorbeeld is bijvoorbeeld de CSS-klasse .customafsection css.
 
 Het adaptieve formulier is ingesloten in de webpagina. Bekijk het volgende in het ingesloten adaptieve formulier:
 
-* Koptekst en voettekst in het oorspronkelijke adaptieve formulier worden niet opgenomen in het ingesloten formulier.
+* De kop- en voettekst in het oorspronkelijke adaptieve formulier worden niet opgenomen in het ingesloten formulier.
 * Concepten en verzonden formulieren zijn beschikbaar op het tabblad Concepten en verzendingen in de Forms Portal.
-* Verzendactie die is geconfigureerd op het oorspronkelijke adaptieve formulier, blijft behouden in het ingesloten formulier.
+* De handeling Verzenden die op het oorspronkelijke adaptieve formulier is geconfigureerd, blijft behouden in het ingesloten formulier.
 * Aangepaste formulierregels blijven behouden en werken volledig in het ingesloten formulier.
-* De in het oorspronkelijke adaptieve formulier geconfigureerde ervaringstips en A/B-tests werken niet in het ingesloten formulier.
-* Als Adobe Analytics op het oorspronkelijke formulier is geconfigureerd, worden de analysegegevens vastgelegd op de Adobe Analytics-server. Het is echter niet beschikbaar in het analyserapport van Forms.
+* Gericht op ervaring en A/B-tests geconfigureerd in het oorspronkelijke adaptieve formulier werken niet in het ingesloten formulier.
+* Als Adobe Analytics op het oorspronkelijke formulier is geconfigureerd, worden de analysegegevens vastgelegd door de Adobe Analytics-server. Het is echter niet beschikbaar in het analyserapport van Forms.
 
 ## Voorbeeldtopologie {#sample-topology}
 
 De externe webpagina die het adaptieve formulier insluit, verzendt aanvragen naar de AEM server, die zich doorgaans achter de firewall in een privénetwerk bevindt. Om ervoor te zorgen dat de verzoeken veilig aan de AEM server worden geleid, wordt het geadviseerd aan opstelling een omgekeerde volmachtsserver.
 
-Laten we een voorbeeld bekijken van hoe u een Apache 2.4 reverse-proxyserver zonder verzender kunt instellen. In dit voorbeeld host u de AEM server met `/forms` contextpad en -map `/forms` voor de reverse-proxy. Het zorgt ervoor dat elk verzoek om `/forms` op Apache-server naar de AEM-instantie worden geleid. Deze topologiehulp vermindert het aantal regels bij de verzender laag aangezien al verzoek vooraf bepaald met `/forms` route aan de AEM server.
+Laten we een voorbeeld bekijken van hoe u een Apache 2.4 reverse-proxyserver zonder Dispatcher kunt instellen. In dit voorbeeld host u de AEM server met `/forms` contextpad en -map `/forms` voor de reverse-proxy. Het zorgt ervoor dat elk verzoek om `/forms` op de Apache-server naar de AEM-instantie worden geleid. Deze topologie helpt om het aantal regels bij de laag van de Verzender te verminderen aangezien al verzoek vooraf bepaald met `/forms` route aan de AEM server.
 
 1. Open de `httpd.conf` en verwijder de commentaarmarkering van de volgende coderegels. U kunt deze coderegels ook toevoegen aan het bestand.
 
@@ -153,19 +149,19 @@ ProxyPassReverse /content https://<AEM_Instance>/content
 
 >[!NOTE]
 >
->Als u opstelling een andere topologie, ervoor zorgt dat u verzend toevoegt, vooraf instelt, en andere URLs aan de lijst van gewenste personen bij de verzender laag.
+>Als u opstelling een andere topologie, ervoor zorgt dat u verzend toevoegt, vooraf instelt, en andere URLs aan de lijst van gewenste personen bij de laag van de Verzender.
 
 ## Aanbevolen procedures {#best-practices}
 
 Houd bij het insluiten van een adaptief formulier in een webpagina rekening met de volgende aanbevolen procedures:
 
-* Zorg ervoor dat de opmaakregels die zijn gedefinieerd in de CSS van de webpagina geen conflict veroorzaken met de CSS van het formulierobject. Om conflicten te voorkomen, kunt u de CSS van de webpagina in het adaptieve formulierthema opnieuw gebruiken met AEM clientbibliotheek. Zie voor informatie over het gebruik van de clientbibliotheek in adaptieve formulierthema&#39;s [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
+* Zorg ervoor dat de opmaakregels die zijn gedefinieerd in de CSS van de webpagina geen conflict veroorzaken met de CSS van het formulierobject. Om conflicten te voorkomen, kunt u de CSS van de webpagina in het adaptieve formulierthema hergebruiken met de AEM clientbibliotheek. Zie voor informatie over het gebruik van de clientbibliotheek in adaptieve formulierthema&#39;s [Thema&#39;s in AEM Forms](../../forms/using/themes.md).
 * Zorg dat de formuliercontainer op de webpagina de volledige vensterbreedte gebruikt. Hiermee zorgt u ervoor dat de CSS-regels die voor mobiele apparaten zijn geconfigureerd, zonder wijzigingen werken. Als de formuliercontainer niet de volledige vensterbreedte heeft, moet u aangepaste CSS schrijven om het formulier aan te passen aan verschillende mobiele apparaten.
 * Gebruiken `[getData](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API om de XML- of JSON-weergave van formuliergegevens op te halen in de client.
 * Gebruiken `[unloadAdaptiveForm](https://helpx.adobe.com/experience-manager/6-3/forms/javascript-api/GuideBridge.html)` API om het adaptieve formulier te verwijderen uit HTML DOM.
-* Opstelling de toegang-controle-oorsprong kopbal wanneer het verzenden van reactie van AEM server.
+* Opstelling de toegang-controle-oorsprong kopbal wanneer het verzenden van een reactie van een AEM server.
 
-## AEM Forms toestaan om aangepaste formulieren te gebruiken voor een interdomeinsite {#cross-site}
+## AEM Forms toestaan om adaptieve formulieren te gebruiken voor een interdomeinsite {#cross-site}
 
 1. Ga bij AEM publicatie-instantie naar AEM Web Console Configuration Manager op `https://'[server]:[port]'/system/console/configMgr`.
 1. Zoek en open de **Filter Apache Sling Referrer** configuratie.

@@ -1,16 +1,12 @@
 ---
 title: We.Gov-referentiesite FOIA-doortocht
-seo-title: We.Gov reference site FOIA walkthrough
-description: Zie de website van de website We.Gov om te begrijpen hoe AEM Forms regeringen helpt om informatie te ontvangen en te verstrekken die door individuen wordt gevraagd op grond van de Freedom of Information Act.
-seo-description: See the We.Gov reference site walkthrough to understand how AEM Forms helps governments receive and impart information requested by individuals under the Freedom of Information Act.
-uuid: 65d4233c-8dad-4e5e-8e39-22eb4f145adc
+description: Zie de analyse van de website van We.Gov zodat u kunt begrijpen hoe AEM Forms regeringen helpt om informatie te ontvangen en uit te geven die door individuen wordt gevraagd op grond van de Freedom of Information Act.
 topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: cef8f597-7935-4d98-aacf-9981470ab620
 exl-id: 57b5ce89-6b01-4087-a485-6d9696f06378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '835'
 ht-degree: 0%
 
 ---
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 ## Referentiescenario voor de Freedom of Information Act {#reference-site-freedom-of-information-act-scenario}
 
-We.Gov is een overheidsorganisatie die adoptieve ouders de mogelijkheid biedt om zich in te schrijven voor kinderopvang als ze een kind adopteren. We.Gov staat ouders ook toe om informatie te vragen van de volgende regeringsdepartementen in het kader van de wet op de vrijheid van informatie:
+We.Gov is een door de staat beheerde organisatie die adoptieve ouders de mogelijkheid biedt zich in te schrijven voor kinderopvang als ze een kind adopteren. We.Gov staat ouders ook toe om informatie te vragen van de volgende regeringsdepartementen in het kader van de wet op de vrijheid van informatie:
 
 * Defense Logistics Agency
 * Department of Defense Office of Inspector General
@@ -27,7 +23,7 @@ We.Gov is een overheidsorganisatie die adoptieve ouders de mogelijkheid biedt om
 * Departement marine
 * Agentschap voor milieubescherming
 
-Zie voor meer informatie over de Freedom of Information Act [www.foia.gov](https://www.foia.gov).
+Zie voor meer informatie over de Freedom of Information Act [https://www.foia.gov/](https://www.foia.gov).
 
 Het scenario omvat de volgende personen:
 
@@ -37,7 +33,7 @@ Het scenario omvat de volgende personen:
 
 ## Sarah initieert verzoek om informatie onder FOIA {#sarah-initiates-request-for-information-under-foia}
 
-In het kader van de Freedom of Information Act vraagt Sarah om een kopie van de &quot;Administration for Children and Families case logs&quot; (FY) voor de jaren 2013 tot en met 2016. Sarah legt dit verzoek voor aan het Ministerie van Justitie - Office of Information Policy en geeft ook aan dat ze bereid is tot 100 dollar te betalen voor de druk- en postkosten.
+Op grond van de Freedom of Information Act vraagt Sarah om een kopie van de &quot;Administration for Children and Families case logs&quot; voor de jaren 2013 tot en met 2016. Sarah legt dit verzoek voor aan het Ministerie van Justitie - Office of Information Policy en geeft ook aan dat ze tot 100 dollar kan betalen voor de druk- en postkosten.
 
 ### Hoe werkt het {#how-it-works}
 
@@ -52,13 +48,13 @@ Sarah kliks **Toepassen** en op de pagina &quot;Freedom of Information Act Reque
 * **Bureau:** Sarah geeft aan tot welk agentschap het verzoek is gericht als Department of Justice - Office of Information Policy.
 
 * **Betalen tot**: Sarah geeft aan dat ze bereid is tot 100 dollar te betalen voor druk- en verzendkosten.
-* **Beschrijf de aanvraag in detail**: Sarah specificeert &quot;het verzoeken om exemplaar van het Beleid voor Kinderen en Gezinnen dossierlogboeken voor begrotingsjaren 2013 door 2016.&quot;
+* **Beschrijf de aanvraag in detail**: Sarah geeft aan &quot;Verzoek om kopie van de case logs Administration for Children and Families voor de begrotingsjaren 2013 tot en met 2016&quot;.
 
-![Verzoek om een kopie van het dossier &quot;Administration for Children and Families&quot; voor de begrotingsjaren 2013 tot en met 2016](assets/sarahfiosform.png)
+![Verzoek om een kopie van het dossier Administratie voor kinderen en gezinnen voor de begrotingsjaren 2013 tot en met 2016](assets/sarahfiosform.png)
 
-Verzoek om een kopie van het dossier &quot;Administration for Children and Families&quot; voor de begrotingsjaren 2013 tot en met 2016
+Verzoek om een kopie van het dossier Administratie voor kinderen en gezinnen voor de begrotingsjaren 2013 tot en met 2016
 
-Sarah kan op elk gewenst moment op Opslaan tikken om het concept van het formulier op te slaan en later terugkeren om het formulier in te vullen en te verzenden. Sarah legt het formulier voor.
+Sarah kan altijd tikken **Opslaan** om een concept van het formulier op te slaan en er later op terug te komen om het formulier in te vullen en te verzenden. Sarah legt het formulier voor.
 
 >[!NOTE]
 >
@@ -66,7 +62,7 @@ Sarah kan op elk gewenst moment op Opslaan tikken om het concept van het formuli
 
 ## John Jacobs ontvangt de aanvraag en keurt deze goed {#john-jacobs-receives-and-approves-the-application}
 
-John Jacobs ontvangt de verzoeken en leidt ze naar de juiste persoon. AEM Inbox laat haar alle ingediende aanvragen op één plaats zien.
+John Jacobs ontvangt het verzoek en leidt het naar de juiste persoon. AEM Inbox laat John alle ingediende aanvragen op één plaats zien.
 
 ### Hoe werkt het {#how-it-works-1}
 
@@ -74,7 +70,7 @@ Wanneer Sarah de FOIA-toepassing invult en verzendt, wordt een record van de toe
 
 ### Zie het zelf {#see-it-yourself-1}
 
-U kunt het AEM inbox openen op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij de AEM inbox met jjacobs/password als gebruikersnaam/wachtwoord voor John Jacobs en zie de FOIA-toepassing. Voor informatie over het gebruik van AEM Inbox voor op formulieren gerichte workflowtaken raadpleegt u [Forms-toepassingen en -taken beheren in AEM Postvak In](/help/forms/using/manage-applications-inbox.md).
+U hebt toegang tot de AEM Inbox op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij AEM Inbox met jjacobs/password als gebruikersnaam/wachtwoord voor John Jacobs en zie de FOIA-toepassing. Voor informatie over het gebruik van AEM Inbox voor op formulieren gerichte workflowtaken raadpleegt u [Forms-toepassingen en -taken beheren in AEM Postvak In](/help/forms/using/manage-applications-inbox.md).
 
 ![johnjacobs](assets/johnjacobs.png)
 
@@ -84,13 +80,13 @@ John Jacobs kan de toepassing van het toepassingsdashboard zien, goedkeuren of a
 
 ### <strong>Sarah ontvangt een bevestigingsbericht</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
-Nadat John Jacobs de aanvraag goedkeurt, ontvangt Sarah een bevestigingsmail van de website We.Gov. Sarah wordt op de hoogte gebracht van de kosten en de tijd die nodig zijn voor de behandeling van haar aanvraag. Het e-mailbericht bevat ook e-mail- en telefoongegevens die sarah kan raadplegen voor updates van haar toepassing.
+Nadat John Jacobs de toepassing goedkeurt, ontvangt Sarah een ontvangstbevestiging-e-mail van de website We.Gov. Sarah wordt op de hoogte gebracht van de kosten en de tijd die nodig zijn voor de behandeling van haar aanvraag. Het e-mailbericht bevat ook e-mail- en telefoongegevens die Sarah kan raadplegen voor updates van haar toepassing.
 
 ![sarahroseemail](assets/sarahroseemail.png)
 
 ## Gloria ontvangt het FOIA-verzoek om goedkeuring op het tweede niveau {#gloria-receives-the-foia-request-for-second-level-approval}
 
-Nadat John Jacobs de vereiste informatie heeft ingevuld en het verzoek van Sarah heeft goedgekeurd, gaan de verzoeken naar Gloria Rios voor de definitieve goedkeuring. Gloria herziet het bijgevoegde stuk met stukken en keurt het verzoek goed.
+Nadat John Jacobs de vereiste informatie heeft ingevuld en het verzoek van Sarah heeft goedgekeurd, gaat het naar Gloria Rios voor de definitieve goedkeuring. Gloria herziet het bijgevoegde stuk met stukken en keurt het verzoek goed.
 
 ![gloriariosinbox](assets/gloriariosinbox.png)
 
@@ -100,7 +96,7 @@ Wanneer John Jacobs het FOIA-verzoek goedkeurt, wordt een PDF of Document of Rec
 
 ### Zie voor uzelf {#see-for-yourself}
 
-U kunt het AEM inbox openen op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij de AEM-inbox met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios, en raadpleeg de FOIS-aanvraag.
+U hebt toegang tot de AEM Inbox op https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-finance/global/en/login.html?resource=/aem/inbox.html. Meld u aan bij de AEM Inbox met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios en raadpleeg het FOIS-verzoek.
 
 Gloria opent het verzoek en onderzoekt de bijzonderheden van het FOIA-verzoek. Na bestudering van de bijzonderheden van het verzoek en na te gaan of het haalbaar is de vereiste documenten over te leggen, keurt Gloria het verzoek goed.
 
@@ -108,6 +104,6 @@ Gloria opent het verzoek en onderzoekt de bijzonderheden van het FOIA-verzoek. N
 
 ## Sarah ontvangt een melding dat haar verzoek is goedgekeurd {#sarah-receives-notification-that-her-request-is-approved}
 
-Nadat Gloria het FOIA-verzoek heeft goedgekeurd, ontvangt Sarah een e-mail met de kennisgeving dat haar verzoek is goedgekeurd. De e-mail bevat ook de informatie over de voorlopige tijdlijn voor het verzenden van het document en contactgegevens voor de follow-up van het verzoek.
+Nadat Gloria het FOIA-verzoek heeft goedgekeurd, ontvangt Sarah een e-mail met de kennisgeving dat haar verzoek is goedgekeurd. Het e-mailbericht bevat ook de informatie over de voorlopige tijdlijn voor het verzenden van het document en contactgegevens voor de follow-up van het verzoek.
 
 ![sarahroseemaily](assets/sarahroseemailapproval.png)

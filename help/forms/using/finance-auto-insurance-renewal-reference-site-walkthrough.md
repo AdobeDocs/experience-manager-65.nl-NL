@@ -1,14 +1,14 @@
 ---
 title: We.Doorloop van de referentiewebsite voor Verzekering van financiële automatische vernieuwing
-description: We.Doorloop van de referentiewebsite voor Verzekering van financiële automatische vernieuwing
+description: Leer over de AutoVerzekering van de Verzekering van de Financiën Verlenging verwijzingsplaats door een analyse te nemen.
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 docset: aem65
 exl-id: b6ded6ac-4fb1-49f9-b272-16774c3e89a3
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '757'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 ## We.Finance Reference Site-scenario  {#we-finance-reference-site-scenario}
 
-Wij.Finance-site is een site voor financiële services die u helpt interactieve communicatiemogelijkheden van AEM Forms te leren kennen.
+Wij.Finance-site is een site voor financiële services die u helpt de interactieve communicatiemogelijkheden van AEM Forms te leren kennen.
 
-Lees de uitgebreide analyse van We.Finance Auto Insurance use case die laat zien hoe AEM formulieren en de integratie ervan met Microsoft® Dynamics de klantervaring in een bedrijf voor financiële services kunnen personaliseren. De interactieve analyse wordt ontworpen om implementatie van complexe digitale transacties en klantenmededeling in een financieel bedrijf te vergemakkelijken.
+Lees een gedetailleerde analyse van een Gebruiksscenario van de AutoVerzekering van de Financiën die toont hoe AEM vormen en zijn integratie met de Dynamica van Microsoft® klantenervaring in een financieel de dienstbedrijf verpersoonlijken. De interactieve analyse wordt ontworpen om implementatie van complexe digitale transacties en klantenmededeling in een financieel bedrijf te vergemakkelijken.
 
 **De rit begint met de gebruikscase:**
 
-Sarah Rose is een bestaande We.Finance-klant en heeft een autoverzekeringspolis gekocht. Nu is het de tijd van het jaar voor de verlenging van Sarah&#39;s verzekeringspolis. Gloria Rios, verzekeringsagent, We.Finance stuurt een herinnering aan Sarah over haar beleidsvernieuwing. Sarah volgt de instructies in de e-mail en voltooit het proces.
+Sarah Rose is een bestaande We.Finance-klant en heeft een autoverzekeringspolis gekocht. Het is die tijd van het jaar dat Sarah haar verzekeringspolis vernieuwt. Gloria Rios is haar verzekeringsagent. We. Finance stuurt een herinnering aan Sarah over haar beleidsvernieuwing. Sarah volgt de instructies in de e-mail en voltooit het proces.
 
 ## Doorloop van toepassing voor automatische verzekering {#auto-insurance-application-walkthrough}
 
@@ -34,7 +34,7 @@ Het Auto-Verzekeringstoepassingsscenario van Web.Finance is een visuele gesproke
 
 ### Gloria stuurt een mededeling over de verlenging van het verzekeringsbeleid van We.Finance {#gloria-sends-an-insurance-policy-renewal-communication-from-we-finance}
 
-Gloria logt in AEM instantie, klikt **Verlenging autoverzekering** en klikt u vervolgens **Gebruikersinterface van agent openen.** Klik vooraf vult het verzekeringsdocument met beleidsdetails van Sarah Rose. Gloria kliks **Verzenden** en er wordt een bericht weergegeven op het scherm &quot;Verzending geïnitieerd&quot; en vervolgens in enkele seconden &quot;Verzenden voltooid&quot;.
+Gloria logt in AEM instantie, klikt **Verlenging autoverzekering** en klikt u vervolgens **Gebruikersinterface van agent openen**. Klik vooraf vult het verzekeringsdocument met beleidsdetails van Sarah Rose. Gloria kliks **Verzenden** en er wordt een bericht weergegeven op het scherm &quot;Verzending geïnitieerd&quot; en vervolgens in een paar seconden &quot;Verzenden voltooid&quot;.
 
 Sarah ontvangt een e-mail met het onderwerp &quot;Uw automatische Verzekering Verlenging&quot;.
 
@@ -42,13 +42,13 @@ Sarah ontvangt een e-mail met het onderwerp &quot;Uw automatische Verzekering Ve
 
 #### Zie het zelf {#see-it-yourself}
 
-Ga naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten** > **Wij.Financiën** > **Automatische verzekering**. Verzekering automatisch vernieuwen selecteren **interactieve communicatie** en klik op **Gebruikersinterface van agent openen**. De interactieve mededeling opent omhoog in de Agent UI. Voer een geldig e-mailadres in, zodat zij het e-mailbericht met het bijgevoegde beleidsdocument kunnen ontvangen en op Verzenden kunnen klikken.
+Ga naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten** > **Wij.Financiën** > **Automatische verzekering**. Verzekering automatisch vernieuwen selecteren **interactieve communicatie** en klik op **Gebruikersinterface van agent openen**. De interactieve mededeling opent omhoog in de Agent UI. Voer een geldig e-mailadres in, zodat ze het e-mailbericht kunnen ontvangen met het bijgevoegde beleidsdocument en op Verzenden kunnen klikken.
 
 U hebt rechtstreeks vanuit `https://[authorHost]: authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal.`
 
 ### Sarah ontvangt een mededeling over de verlenging van verzekeringsovereenkomsten van We.Finance en besluit te verlengen {#sarah-receives-an-insurance-policy-renewal-communication-from-we-finance-and-decides-to-renew}
 
-Sarah ontvangt een e-mail met een bijlage van We.Finance en herinnert Sarah eraan dat haar beleid voor automatische verzekering bijna zal verlopen. De bijlage is de afdrukversie van Sarah&#39;s Auto Insurance letter.
+Sarah ontvangt een e-mail met een bijlage van We.Finance en herinnert Sarah eraan dat haar beleid voor automatische verzekeringen bijna zal verlopen. De bijlage is de afdrukversie van Sarah&#39;s Auto Insurance letter.
 
 Sarah kliks **Nu vernieuwen** en wordt verwezen naar de webversie van haar brief over automatische verzekering. Naast deze brief vindt Sarah hoeveel tijd er nog over is voor haar beleid voordat het verloopt. De pagina biedt Sarah een basisoverzicht van haar verzekeringsbeleidsdetails zoals het aantal van het Beleid, het Gelverschuldigd Bedrag, en andere informatie zoals kortingsaanbiedingen en loyaliteitsbeloningen. Sarah klikt opnieuw **Nu vernieuwen** onderaan het beleid.
 
@@ -72,7 +72,7 @@ U kunt de gedetailleerde samenvatting van de verlenging van de autoverzekering c
 
 ### Sarah bereikt de betalingspagina {#sarah-reaches-the-payment-page}
 
-We. Finance brengt Sarah naar de betalingspagina. Sarah controleert haar Aantal van het Beleid en Datum van Vervalsing met haar verslagen opnieuw. Aan de rechterkant van de pagina controleert ze het betalingsoverzicht van haar verlenging met een premiekorting van 10% op het totale bedrag.
+We. Finance brengt Sarah naar de betalingspagina. Sarah controleert haar Aantal van het Beleid en Datum van Vervalsing met haar verslagen opnieuw. Aan de rechterkant van de pagina controleert Sarah het Betalingsoverzicht van de verlenging met een premiekorting van 10% op het totale bedrag.
 
 #### Hoe werkt het {#how-it-works-1}
 

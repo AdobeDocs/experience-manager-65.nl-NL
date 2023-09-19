@@ -8,9 +8,9 @@ topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 923ec028679031c9ef9ea6ae2cf827e7a4cd00d8
+source-git-commit: f41962faa0567ed99c1e2ab189e81fb978781af3
 workflow-type: tm+mt
-source-wordcount: '5360'
+source-wordcount: '5358'
 ht-degree: 0%
 
 ---
@@ -481,7 +481,7 @@ In Microsoft® Windows gebruikt de service PDF Generator Adobe Acrobat om onders
 
 ### (Alleen Windows) Vorm primaire route voor conversie van HTML naar PDF {#configure-primary-route-for-html-to-pdf-conversion-windows-only}
 
-De dienst van de PDF Generator verstrekt veelvoudige routes om de dossiers van HTML in de documenten van PDF om te zetten: Webkit, Acrobat WebCapture (Vensters slechts), en PhantomJS. Adobe raadt u aan de PhantomJS-route te gebruiken omdat deze de mogelijkheid heeft om dynamische inhoud af te handelen en geen afhankelijkheden heeft van 32-bits bibliotheken, 32-bits JDK of geen extra lettertypen nodig heeft. Ook, vereist de route PhantomJS sudo of worteltoegang niet om de omzetting in werking te stellen.
+De dienst van de PDF Generator verstrekt veelvoudige routes om de dossiers van HTML in de documenten van PDF om te zetten: Webkit, Acrobat WebCapture (Vensters slechts), en PhantomJS. Adobe raadt u aan de PhantomJS-route te gebruiken, omdat deze de mogelijkheid heeft om dynamische inhoud af te handelen en geen afhankelijkheden heeft met 32-bits bibliotheken of geen extra lettertypen nodig heeft. Ook, vereist de route PhantomJS sudo of worteltoegang niet om de omzetting in werking te stellen.
 
 De standaard primaire route voor HTML aan PDF omzetting is Webkit. De omzettingsroute wijzigen:
 

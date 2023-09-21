@@ -1,29 +1,30 @@
 ---
 title: De pagina-exportfunctie
-description: Leer hoe u de AEM Page Exporter gebruikt.
+description: Leer hoe u de pagina-exportfunctie van Adobe Experience Manager (AEM) gebruikt.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
 workflow-type: tm+mt
-source-wordcount: '1063'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
 
 # De pagina-exportfunctie{#the-page-exporter}
 
-Met AEM kunt u een pagina exporteren als een volledige webpagina, inclusief afbeeldingen. `.js` en `.css` bestanden.
+Met Adobe Experience Manager (AEM) kunt u een pagina exporteren als een volledige webpagina, inclusief afbeeldingen, `.js`, en `.css` bestanden.
 
-Nadat u de configuratie hebt geconfigureerd, vraagt u een pagina-export van uw browser door `html` with `export.zip` in de URL. Hiermee wordt een archiefbestand (zip) gegenereerd dat de weergegeven pagina in HTML-indeling bevat, samen met de elementen waarnaar wordt verwezen. Alle paden op de pagina (bijvoorbeeld paden naar afbeeldingen) worden herschreven zodat ze verwijzen naar de bestanden die in het archief zijn opgenomen of naar de bronnen op de server. Het archiefbestand (zip) kan vervolgens vanuit uw browser worden gedownload.
+Indien geconfigureerd, vraagt u een paginaexport van uw browser door `html` with `export.zip` in de URL. Hiermee wordt een archiefbestand (zip) gegenereerd dat de weergegeven pagina in HTML-indeling bevat, samen met de elementen waarnaar wordt verwezen. Alle paden op de pagina (bijvoorbeeld paden naar afbeeldingen) worden herschreven zodat ze verwijzen naar de bestanden die in het archief zijn opgenomen of naar de bronnen op de server. Het archiefbestand (zip) kan vervolgens vanuit uw browser worden gedownload.
 
 >[!NOTE]
 >
 >Afhankelijk van uw browser en de instellingen is de download:
+>
 >* een archiefbestand (`<page-name>.export.zip`)
 >* een map (`<page-name>`); het archiefbestand is al uitgevouwen
 
 ## Pagina&#39;s exporteren {#exporting-a-page}
 
-In de volgende stappen wordt beschreven hoe u een pagina exporteert en wordt ervan uitgegaan dat er een exportsjabloon voor uw site bestaat. Een exportsjabloon definieert de manier waarop een pagina wordt geëxporteerd en is specifiek voor uw site. Als u een exportsjabloon wilt maken, raadpleegt u de [Een configuratie voor paginaexportters maken voor uw site](#creating-a-page-exporter-configuration-for-your-site) sectie.
+In de volgende stappen wordt beschreven hoe u een pagina exporteert en wordt ervan uitgegaan dat er een exportsjabloon voor uw site bestaat. Een exportsjabloon definieert de manier waarop een pagina wordt geëxporteerd en is specifiek voor uw site. Als u een exportsjabloon wilt maken, raadpleegt u [Een configuratie voor paginaexportters maken voor uw site](#creating-a-page-exporter-configuration-for-your-site).
 
 Een pagina exporteren:
 
@@ -43,26 +44,26 @@ Selecteer de vereiste sjabloon voor uw site en bevestig vervolgens met **OK**.
    Bijvoorbeeld:
    * localhost:4502/content/we-retail/language-masters/en.html
 
-   Wordt benaderd via:
+   Wordt benaderd door:
    * localhost:4502/content/we-retail/language-masters/en.export.zip
 
 1. Download het archiefbestand naar uw bestandssysteem.
 
-1. Pak het bestand desgewenst uit in uw bestandssysteem. Nadat de map is uitgevouwen, krijgt deze dezelfde naam als de geselecteerde pagina. Deze map bevat:
+1. Pak het bestand desgewenst uit in uw bestandssysteem. Als deze is uitgevouwen, ziet u een map met dezelfde naam als de geselecteerde pagina. Deze map bevat:
 
    * de submap `content`, de basis van een reeks submappen die het pad naar de pagina in de opslagplaats weerspiegelen
 
       * binnen deze structuur is er het HTML-bestand voor de geselecteerde pagina (`<page-name>.html`)
 
-   * overige middelen (`.js` bestanden, `.css` bestanden, afbeeldingen, enz.) worden geplaatst volgens de instellingen in de exportsjabloon
+   * overige middelen (`.js` bestanden, `.css` bestanden, afbeeldingen, enzovoort) bevinden zich volgens de instellingen in de exportsjabloon
 
-1. Open het HTML-bestand van de pagina (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) in uw browser om de rendering te controleren.
+1. Open het HTML-bestand van de pagina (`<unzip-dir>/<path>/<to>/<page>/<page-path>.html`) in uw browser, zodat u de rendering kunt controleren.
 
 ## Een configuratie voor paginaexportters maken voor uw site {#creating-a-page-exporter-configuration-for-your-site}
 
-De pagina-exportfunctie is gebaseerd op de [Content Sync-framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html). De configuraties die in **Pagina-eigenschappen** dialoogvensters zijn exportsjablonen die de vereiste afhankelijkheden voor een pagina definiëren.
+De pagina-exportfunctie is gebaseerd op de [Content Sync-framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). De configuraties die in **Pagina-eigenschappen** dialoogvensters zijn exportsjablonen die de vereiste afhankelijkheden voor een pagina definiëren.
 
-Wanneer een pagina-export wordt geactiveerd, wordt naar de exportsjabloon verwezen en worden zowel het paginapad als het ontwerppad dynamisch toegepast. Het ZIP-bestand wordt vervolgens gemaakt met de standaardfunctionaliteit voor het synchroniseren van inhoud.
+Wanneer het exporteren van een pagina wordt geactiveerd, wordt naar de exportsjabloon verwezen. Zowel het paginapad als het ontwerppad worden dynamisch toegepast. Het ZIP-bestand wordt vervolgens gemaakt met de standaardfunctionaliteit voor het synchroniseren van inhoud.
 
 Een uit-van-de-doos AEM installatie omvat een standaardmalplaatje onder `/etc/contentsync/templates/default`.
 
@@ -73,7 +74,7 @@ Een uit-van-de-doos AEM installatie omvat een standaardmalplaatje onder `/etc/co
 * Als u de knooppuntstructuur van de sjabloon in uw browser wilt weergeven als JSON-indeling, vraagt u de volgende URL op:
   `http://localhost:4502/etc/contentsync/templates/default.json`
 
-De eenvoudigste methode om een nieuwe sjabloon voor het exporteren van pagina&#39;s te maken is:
+De eenvoudigste methode om een sjabloon voor het exporteren van pagina&#39;s te maken is:
 
 * kopieer de `default` sjabloon,
 
@@ -93,18 +94,18 @@ Een volledig nieuwe sjabloon maken:
 
 ## Een paginamarittersjabloon activeren voor uw pagina&#39;s {#activating-a-page-exporter-configuration-for-your-pages}
 
-Zodra uw malplaatje is gevormd moet u het ter beschikking stellen:
+Wanneer uw malplaatje wordt gevormd, maak het beschikbaar:
 
-1. In CRXDE navigeer aan de vereiste pagina in `/content` vertakking. Dit kan een afzonderlijke pagina zijn, of de hoofdpagina van een substructuur.
+1. In CRXDE navigeer aan de vereiste pagina in `/content` vertakking. Dit kan een afzonderlijke pagina zijn, of de basispagina van een substructuur.
 
-1. Op de `jcr:content` knooppunt van de pagina maakt de eigenschap:
+1. Op de `jcr:content` knooppunt van de pagina, maakt u de eigenschap:
    * `Name`: `cq:exportTemplate`
    * `Type`: `String`
    * `Value`: pad naar de sjabloon, bijvoorbeeld: `/etc/contentsync/templates/mysite`
 
 ### Configuratieknooppunten van pagina-exporteur {#page-exporter-configuration-nodes}
 
-De sjabloon bestaat uit een knooppuntstructuur, omdat deze de [Content Sync-framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/package-summary.html).  Elk knooppunt heeft een `type` eigenschap die een specifieke handeling definieert in het aanmaakproces van het ZIP-bestand.
+De sjabloon bestaat uit een knooppuntstructuur, omdat deze de [Content Sync-framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Elk knooppunt heeft een `type` eigenschap die een specifieke handeling definieert in het aanmaakproces van het ZIP-bestand.
 
 <!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
 -->
@@ -114,10 +115,10 @@ De volgende knooppunten kunnen worden gebruikt om een exportsjabloon te maken:
 * `page`
 Het paginaknooppunt wordt gebruikt om pagina html aan het ZIP dossier te kopiëren. Het heeft de volgende kenmerken:
 
-   * Is een verplicht knooppunt.
-   * bevindt zich hieronder `/etc/contentsync/templates/<mysite>`.
-   * Is gedefinieerd met de eigenschap `Name`instellen op `page`.
-   * Het knooppunttype is `nt:unstructured`
+   * Een verplicht knooppunt.
+   * Vergrendeld onder `/etc/contentsync/templates/<mysite>`.
+   * Gedefinieerd met de eigenschap `Name`instellen op `page`.
+   * Node type is `nt:unstructured`
 
   De `page` node heeft de volgende eigenschappen:
 
@@ -135,10 +136,10 @@ Het knooppunt rewrite definieert hoe de koppelingen in de geëxporteerde pagina 
 * `design`
 Het ontwerpknooppunt wordt gebruikt om het ontwerp te kopiëren dat voor de geëxporteerde pagina wordt gebruikt. Het heeft de volgende kenmerken:
 
-   * Is optioneel.
-   * bevindt zich hieronder `/etc/contentsync/templates/<mysite>`.
-   * Is gedefinieerd met de eigenschap `Name` instellen op `design`.
-   * Het knooppunttype is `nt:unstructured`.
+   * Optioneel.
+   * Vergrendeld onder `/etc/contentsync/templates/<mysite>`.
+   * Gedefinieerd met de eigenschap `Name` instellen op `design`.
+   * Node type is `nt:unstructured`.
 
   De `design` node heeft de volgende eigenschappen:
 
@@ -149,10 +150,10 @@ Het ontwerpknooppunt wordt gebruikt om het ontwerp te kopiëren dat voor de geë
 * `generic`
 Een generisch knooppunt wordt gebruikt om bronnen als clientlibs te kopiëren `.js` of `.css` naar het ZIP-bestand. Het heeft de volgende kenmerken:
 
-   * Is optioneel.
-   * bevindt zich hieronder `/etc/contentsync/templates/<mysite>`.
-   * Heeft geen specifieke naam.
-   * Het knooppunttype is `nt:unstructured`.
+   * Optioneel.
+   * Vergrendeld onder `/etc/contentsync/templates/<mysite>`.
+   * Geen specifieke naam.
+   * Node type is `nt:unstructured`.
    * Heeft een `type` eigendom en `type` verwante eigenschappen. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
   De volgende configuratieknooppunten kopiëren bijvoorbeeld de `mysite.clientlibs.js` bestanden naar het ZIP-bestand:
@@ -174,14 +175,14 @@ Aangepaste configuraties zijn ook mogelijk.
 As you may have noticed in the node structure, the **Geometrixx** page export template has a `logo` node with a `type` property set to `image`. This is a special configuration type that has been created to copy the image logo to the zip file. 
 -->
 
-Om aan sommige specifieke vereisten te voldoen, kunt u moeten uitvoeren [aangepaste update-handler](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/contentsync/handler/package-summary.html).
+Om aan bepaalde specifieke vereisten te voldoen, voert u een [aangepaste update-handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
 <!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Pagina&#39;s programmatisch exporteren {#programmatically-exporting-a-page}
 
-Als u een pagina programmatisch wilt exporteren, kunt u de opdracht [PageExporter](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI-dienst. Met deze service kunt u:
+Als u een pagina programmatisch wilt exporteren, kunt u de opdracht [PageExporter](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI-dienst. Met deze service kunt u:
 
 * Exporteer een pagina en schrijf naar de HTTP-servletreactie.
 * Exporteer een pagina en sla het ZIP-bestand op een specifieke locatie op.

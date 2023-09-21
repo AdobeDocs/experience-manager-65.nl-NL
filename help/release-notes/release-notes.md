@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: a15b9dae5cc4405122ee95e036a83fdfbf34f9bd
+source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
 workflow-type: tm+mt
-source-wordcount: '4470'
+source-wordcount: '4526'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * Middelen, Dynamic Media - [Ondersteuning voor multi-subtitle en multi-audiotrack voor video&#39;s in Dynamic Media](/help/assets/video.md#about-msma)—U kunt nu eenvoudig meerdere ondertitels en meerdere audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
 
-* Middelen - Vanuit de zoekresultaten kunt u nu naar de maplocatie navigeren die een element bevat, zodat u verschillende taken voor middelenbeheer kunt uitvoeren. (ACTIVA-23182)
+* Middelen - Vanuit de zoekresultaten kunt u nu naar de maplocatie navigeren die een element bevat waarmee u verschillende taken voor middelenbeheer kunt uitvoeren. (ACTIVA-23182)
 
 **Belangrijke verbeteringen**
 
@@ -51,7 +51,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 * Gebruikers van de Pagina-editor/afbeeldingscomponent van Sites konden naar elementen van de Cloud Service voor externe middelen verwijzen. (SITES-13448, SITES-13433)
 
-* Om snel een project in de mening van de Lijst te vinden waar u vele projecten in uw systeem kunt hebben, verleent de Adobe nu steun voor server-zijsorteren. Projectknooppunten worden op de achtergrond gesorteerd op basis van de kolom die door de gebruiker is geselecteerd voordat ze in de gebruikersinterface worden weergegeven. (NPR-41027)
+* Om snel een project in de mening van de Lijst te vinden, waar u vele projecten in uw systeem kunt hebben, steunt de Adobe nu server-zijhet sorteren. Projectknooppunten worden op de achtergrond gesorteerd op basis van de kolom die door de gebruiker is geselecteerd voordat ze in de gebruikersinterface worden weergegeven. (NPR-41027)
 
 * AEM 6.5.18.0 ondersteunt MongoDB 5.0 tot 6.0.
 
@@ -61,19 +61,19 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 **Forms**
 
-* **[Verbeterde fout behandeling met de managers van de douanefout in de regelredacteur](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html):** U kunt nu een aangepaste functie (met behulp van de clientbibliotheek) activeren als reactie op een fout die door een externe service is geretourneerd, en eindgebruikers een op maat gemaakte reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant meedelen dat de dienst neer is
+* **[Verbeterde fout behandeling met de managers van de douanefout in de regelredacteur](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - U kunt nu een aangepaste functie aanroepen (met behulp van de clientbibliotheek) als reactie op een fout die door een externe service is geretourneerd. En u kunt eindgebruikers een op maat gesneden reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant meedelen dat de dienst neer is
 
-* **[Verbeterde Adobe Sign Workflow-stap](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step):** Adobe Sign-workflowstap in AEM Workflows is beschikbaar met de volgende verbeteringen.
+* **[Verbeterde Adobe Sign Workflow-stap](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - Adobe Sign-workflowstap in AEM Workflows is beschikbaar met de volgende verbeteringen.
 
-   * **Uitgebreide beveiliging met verificatie op basis van overheidsidentiteitskaart voor Adobe Sign:** Verificatie op basis van Adobe Acrobat Sign-overheidsidentificatie biedt een extra verificatielaag door gebruikers in staat te stellen hun identiteit te verifiëren met behulp van door de overheid uitgegeven id&#39;s (rijbewijs, nationale id, paspoort). Door vertrouwde identificatiedocumenten te gebruiken, voegt deze verbetering een extra niveau van vertrouwen aan het ondertekeningsproces toe, die het ideaal maakt voor scenario&#39;s die verhoogde veiligheid, naleving, en gebruikersbevestiging vereisen.
+   * **Uitgebreide beveiliging met verificatie op basis van overheidsidentiteitskaart voor Adobe Sign** - Verificatie op basis van Adobe Acrobat Sign-gebruikersnaam biedt een extra verificatielaag. Het stelt gebruikers in staat hun identiteit te verifiëren met behulp van door de overheid afgegeven id&#39;s (rijbewijs, nationale identiteitskaart, paspoort). Door vertrouwde identificatiedocumenten te gebruiken, voegt deze verbetering een extra niveau van vertrouwen aan het ondertekeningsproces toe, die het ideaal maakt voor scenario&#39;s die verhoogde veiligheid, naleving, en gebruikersbevestiging vereisen.
 
-   * **Verbeterde transparantie met audittrail voor Adobe Sign-documenten:** Gebruik de functie Audittrail voor gedetailleerde inzichten in de levenscyclus van uw Adobe Sign-documenten. Met het audittrail, kunt u een uitvoerig verslag van alle acties en interactie handhaven met betrekking tot uw documenten. Dit omvat gegevens zoals wie het document heeft bekeken, bewerkt of ondertekend, samen met tijdstempels voor elke gebeurtenis. Deze verbetering is van cruciaal belang voor het handhaven van de naleving, het oplossen van geschillen en het verzekeren van de integriteit van uw digitale overeenkomsten.
-
-
-   * **Breid de rollen voor ontvangers van de Overeenkomst voorbij enkel de Ondertekenaar uit:** Adobe Acrobat Sign heeft de optie om de rollen voor overeenkomstontvangers uit te breiden tot voorbij alleen de ondertekenaar om beter aan hun workflowvereisten te voldoen. Wanneer toegelaten, heeft elke ontvanger in een Overeenkomst zijn rol individueel configureerbaar, met Ondertekenaar die het gebrek is.
+   * **Verbeterde transparantie met audittrail voor Adobe Sign-documenten** - Gebruik de functie Audittrail voor meer informatie over de levenscyclus van uw Adobe Sign-documenten. Met het audittrail, kunt u een uitvoerig verslag van alle acties en interactie handhaven met betrekking tot uw documenten. Dit omvat gegevens zoals wie het document heeft bekeken, bewerkt of ondertekend, samen met tijdstempels voor elke gebeurtenis. Deze verbetering is van cruciaal belang voor het handhaven van de naleving, het oplossen van geschillen en het verzekeren van de integriteit van uw digitale overeenkomsten.
 
 
-* **[AEM Forms op JEE volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)**: Het servicepakket biedt een volledig installatieprogramma voor AEM Forms op JEE dat ondersteuning biedt voor meerdere nieuwe softwarecombinaties, waaronder:
+   * **De rollen voor overeenkomstontvangers uitbreiden tot buiten alleen de ondertekenaar** - Met Adobe Acrobat Sign kunt u de rollen voor overeenkomstontvangers uitbreiden naar een andere plaats dan alleen de ondertekenaar, zodat ze beter aansluiten op hun workflowvereisten. Wanneer toegelaten, heeft elke ontvanger in een Overeenkomst zijn rol individueel configureerbaar, met Ondertekenaar die het gebrek is.
+
+
+* **[AEM Forms op JEE volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - Het servicepakket biedt een volledig installatieprogramma voor AEM Forms op JEE dat ondersteuning biedt voor meerdere nieuwe softwarecombinaties, waaronder:
    * Microsoft® Windows Server 2022
    * Microsoft® Active Directory 2022
    * Oracle WebLogic 14C op Windows Server 2022
@@ -81,7 +81,7 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
    * MongoDB 4.4
    * MySQL JDBC-connector 8
 
-Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software voor uw AEM 6.5 Forms op JEE-omgeving te gebruiken, raadt de Adobe aan AEM 6.5.18.0 Forms te gebruiken op het volledige installatieprogramma van JEE. Raadpleeg de documentatie voor AEM Forms op JEE of AEM Forms op OSGi voor meer informatie over de volledige lijst met nieuw toegevoegde en vervangen software.
+Als u de nieuwste software voor uw AEM 6.5 Forms in JEE-omgeving installeert of wilt gebruiken, raadt Adobe u aan AEM 6.5.18.0 Forms in te voeren in het volledige installatieprogramma van JEE. Raadpleeg de documentatie voor AEM Forms op JEE of AEM Forms op OSGi voor meer informatie over de volledige lijst met nieuw toegevoegde en vervangen software.
 
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
@@ -179,7 +179,7 @@ Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software v
    * Wanneer een gebruiker een aangepaste functie probeert aan te roepen zonder een veld te wijzigen, zoals het instellen van de waarde van een ander veld, mislukt dit. (FORMS-9921)
    * Wanneer u werkt met de aangepaste foutfunctie voor de Rule Editor in een adaptief formulier, treden de volgende fouten op:
       * Wanneer een gebruiker @param probeert te gebruiken{boolean} met een functie staat de regeleditor niet toe dat Booleaanse waarden worden doorgegeven aan een functie.
-      * Wanneer een gebruiker @param probeert te gebruiken{string} met een functie, ontbreekt de regelredacteur om de facultatieve waarden over te gaan en een waarschuwing van onvolledige regels te geven. (FORMS-9816, FORMS-9815)
+      * Wanneer een gebruiker @param probeert te gebruiken{string} met een functie, ontbreekt de regelredacteur om de facultatieve waarden en de waarschuwingen van onvolledige regels over te gaan. (FORMS-9816, FORMS-9815)
    * De formulieren-gebruikersgroep roept de Redacteur van de Regel tweemaal in een Aangepast Vorm. (FORMS-9051)
    * Wanneer een gebruiker in een visuele editor een object Form selecteert, wordt het hele object field instance doorgegeven aan de aangepaste functie in plaats van alleen de waarde van het veld. (FORMS-10015)
    * Wanneer een gebruiker een op een basiscomponent gebaseerd adaptief formulier maakt en een tekstinvoercomponent toevoegt, `Is Empty` en `Is Not Empty` werken niet in de redacteur van de Regel. (FORMS-10098)
@@ -187,7 +187,7 @@ Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software v
    * Wanneer een gebruiker een adaptief formulier probeert te maken met een complex JSON-schema, mislukt het. De fout treedt op als:
      `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639)
    * Als een gebruiker in een adaptief formulier het selectievakje &quot;Ik ga akkoord met de voorwaarden&quot; uitschakelt, wordt dit weer ingeschakeld wanneer de gebruiker omlaag schuift. (FORMS-9458)
-   * Wanneer een gebruiker een adaptief formulier opent op een Android™-apparaat met Google Chrome/Firefox en het maximaal toegestane aantal tekens in een tekstvak invoert, kan de waarde in het tekstvak niet worden gewist. (FORMS-9354)
+   * Wanneer een gebruiker een adaptief formulier opent op een Android™-apparaat met Google Chrome/Firefox en het maximaal toegestane aantal tekens invoert in een tekstvak, wordt de waarde in het tekstvak niet gewist. (FORMS-9354)
    * Wanneer het label van het selectievakje speciale tekens bevat, zoals &#39;,&#39;, &#39;/&#39; of &#39;.&#39;, wordt het desbetreffende selectievakje niet ingeschakeld wanneer u op de tekst/het label klikt. (FORMS-9313)
    * Wanneer een gebruiker de component Voorwaarden en Voorwaarden probeert te valideren, kan de component niet worden gevalideerd als de component geen focus heeft terwijl de andere component wordt gevalideerd. (FORMS-8725, FORMS-8913)
    * Als een adaptief formulier na de upgrade naar AEM 6.5.16.0 Service Pack opnieuw wordt geladen, mislukt het ophalen van de bestandsbijlage. (FORMS-8906)
@@ -203,7 +203,7 @@ Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software v
       * Wanneer een gebruiker zich in het handtekeningdialoogvenster aanmeldt met een penseel of toetsenbord, wordt het dialoogvenster niet gesloten als u op Enter drukt.
       * Het dialoogvenster voor het bevestigen van handtekeningen kan niet worden geopend met een toetsenbord.
       * De schermlezer kan de informatie die in een dialoogvenster is ingevoerd, niet lezen.
-      * U kunt de handtekening niet wissen zonder een muis te gebruiken.  (FORMS-9317)
+      * U kunt de handtekening niet wissen zonder een muis te gebruiken. (FORMS-9317)
    * Wanneer een gebruiker een adaptief formulier verzendt, leest de schermlezer geen foutberichten voor de verplichte velden. (FORMS-9316)
    * Wanneer een schermlezer een HTML-formulier leest, doet zich het probleem voor bij het lezen van de tekst met spatiëring. (FORMS-9258)
    * In een adaptief formulier worden de verwijzingen/voetnoten die aan de tekst zijn gekoppeld, niet uitgeroepen met de schermlezer. (FORMS-8920)
@@ -235,7 +235,7 @@ Als u een nieuwe installatie uitvoert of van plan bent om de nieuwste software v
 #### Platform{#foundation-platform-6518}
 
 * Nadat Service Pack 17 is geïnstalleerd, worden er fouten weergegeven in de `stderr.log`. Er mogen geen fouten optreden bij Vanilla-installaties. (CQ-4353637)
-* De knop Maken in het scherm Tags toevoegen waarbij ACL (Access Control List) niet wordt gerespecteerd. (NPR-40973)
+* De knop Maken in het scherm Tags toevoegen respecteert geen ACL (Access Control List). (NPR-40973)
 * Onbekwaam om, of toegang, of allebei, geheim voorgeheugenknoop van ContextHub op Experience Manager tot stand te brengen. (NPR-40515)
 
 #### Replicatie{#foundation-replication-6518}
@@ -369,7 +369,24 @@ Zie [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* Verwant aan Aak van Service Pack 13 en hierboven, is het volgende foutenlogboek begonnen te verschijnen dat het persistentiegeheime voorgeheugen beïnvloedt:
+* **Page publishing not working in Page Editor after upgrade to Service Pack 18 (6.5.18.0)**
+
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nadat u een geval van AEM 6.5.0.0-6.5.17.0 aan AEM 6.5.18.0 bevordert, wanneer u klikt **[!UICONTROL Publish Page]** In de Pagina-editor wordt u omgeleid naar een URL die niet bestaat.
+
+  Voer een van de volgende handelingen uit om dit probleem te verhelpen:
+
+   * Verwijder de volgende eigenschap &quot;path&quot;.
+
+     `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/publish/granite:data`
+
+   * Plak de juiste URL rechtstreeks in de browser.
+
+     `http://localhost:4504/editor.html/libs/wcm/core/content/sites/publishpagewizard.html?item=/content/we-retail/language-masters/en/about-us.html`
+
+
+
+* **Verwant aan eikenhout**
+Van Service Pack 13 en hierboven, is het volgende foutenlogboek begonnen te verschijnen dat het persistentiegeheime voorgeheugen beïnvloedt:
 
   ```shell
   org.h2.mvstore.MVStoreException: The write format 1 is smaller than the supported format 2 [2.0.202/5]
@@ -439,7 +456,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 #### Ondersteunde platforms
 
 * JDK-versies hoger dan 1.8.0_281 worden niet ondersteund voor WebLogic JEE-server. (FORMS-8498, CQDOC-20383)
-* Als [!DNL Microsoft®® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss®® EAP 7.1], [!DNL Microsoft®® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
+* Als [!DNL Microsoft® Windows Server 2019] ondersteunt niet [!DNL MySQL 5.7] en [!DNL JBoss® EAP 7.1], [!DNL Microsoft® Windows Server 2019] ondersteunt geen kant-en-klare installaties voor [!DNL Experience Manager Forms 6.5.10.0]. (CQDOC-18312)
 * JDK 11.0.20 wordt niet ondersteund voor de installatie van AEM Forms op JEE Installer. Alleen JDK 11.0.19 of eerdere versies worden ondersteund voor de installatie van AEM Forms op JEE Installer. (FORMS-10659)
 
 #### Installatie
@@ -460,7 +477,7 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 * Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om interactieve communicatie brieven uit te geven. (FORMS-10578) Voer de volgende stappen uit om het probleem op te lossen:
 
    1. Downloaden [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) via SD-koppeling.
-   1. Extraheer het Hotfix-archiefbestand voor een Experience Manager-pakket (.zip) en -bundelbestanden (.jar).
+   1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.
    1. Upload en installeer het pakket (.zip) via Package Manager.
    1. De configuratiemanager-bundels openen `https://server:host/system/console/bundles`, uploadt en installeert de bundel (.jar).
 

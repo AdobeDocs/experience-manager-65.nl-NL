@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 4f6ef1a6cddec307af64ca888307f19c0450467d
+source-git-commit: ffda4927ddc8555564f33697fa81d1f8a0cd2cdc
 workflow-type: tm+mt
-source-wordcount: '4526'
+source-wordcount: '4528'
 ht-degree: 0%
 
 ---
@@ -371,7 +371,7 @@ To retrieve your runtime copy, Adobe recommends to synchronize the design-time c
 
 * **Page publishing not working in Page Editor after upgrade to Service Pack 18 (6.5.18.0)**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nadat u een geval van AEM 6.5.0.0-6.5.17.0 aan AEM 6.5.18.0 bevordert, wanneer u klikt **[!UICONTROL Publish Page]** In de Pagina-editor wordt u omgeleid naar een URL die niet bestaat.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nadat u een geval van AEM 6.5.0.0-6.5.17.0 aan AEM 6.5.18.0 bevordert, wanneer u klikt **Pagina publiceren** In de Pagina-editor wordt u omgeleid naar een URL die niet bestaat.
 
   Voer een van de volgende handelingen uit om dit probleem te verhelpen:
 

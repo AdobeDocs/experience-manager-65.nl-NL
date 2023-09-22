@@ -1,25 +1,21 @@
 ---
 title: Grondbeginselen van sociale grafiek
-seo-title: Social Graph Essentials
-description: component volgen en volgende componentenoverzicht volgen
-seo-description: follow component and following component overview
-uuid: 8ea33760-62b1-4de2-b07f-bc2417ade156
+description: Leer over de volgende component en de component van de Volg.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '239'
 ht-degree: 0%
 
 ---
 
 # Grondbeginselen van sociale grafiek  {#social-graph-essentials}
 
-Het vermogen van een lid van de Gemeenschap om [activiteiten](essentials-activities.md) en op deze wijze worden twee componenten vastgesteld :
+Het vermogen van een lid van de Gemeenschap om [activiteiten](essentials-activities.md) en moet worden gevolgd door twee componenten:
 
 De `following` moet worden gekoppeld aan een andere bron, en deze associatie is reeds opgericht voor bestaande leden van de Gemeenschappen en kenmerken in een [community-site](overview.md#communitiessites).
 
@@ -63,15 +59,15 @@ De `following` de component maakt een lijst van de leden die of het huidige lid 
      <li>Type: Boolean</li>
      <li>Waarde:<br />
       <ul>
-       <li><i>Waar </i>- de <code>following</code> de component zal een lijst maken van de leden die momenteel ondertekend lid <code>follows</code></li>
-       <li><i>Onwaar </i>- de <code>following</code> de component zal een lijst maken van de leden die <code>follow </code>het momenteel aangemelde lid</li>
+       <li><i>Waar </i>- de <code>following</code> de component maakt een lijst van de leden die het ondertekende in lid <code>follows</code></li>
+       <li><i>Onwaar </i>- de <code>following</code> de component maakt een lijst van de leden die <code>follow </code>het aangemeld lid</li>
       </ul> </li>
-    </ul> <p>Standaardwaarden: <i>true</i> als de eigenschap ontbreekt. Momenteel is het niet mogelijk om deze eigenschap in te stellen in het dialoogvenster Bewerken in de modus Schrijver. De eigenschap moet worden toegevoegd aan een instantie van de <code>following </code>node gebruiken <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Standaardwaarden: <i>true</i> als de eigenschap ontbreekt. Het is niet mogelijk om deze eigenschap in te stellen in het dialoogvenster Bewerken in de modus Auteur. De eigenschap moet worden toegevoegd aan een instantie van de <code>following</code> node gebruiken <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>
 
-### Volg {#follow}
+### Volgen {#follow}
 
 | **resourceType** | `social/socialgraph/components/hbs/following` |
 |---|---|
@@ -83,8 +79,8 @@ De `following` de component maakt een lijst van de leden die of het huidige lid 
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Sociale grafiek-API](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
+* [Sociale grafiek-API](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/api/package-frame.html)
 
-* [Eindpunten sociale grafiek](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
+* [Eindpunten sociale grafiek](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/graph/client/endpoint/package-frame.html)
 
 * [Aanpassingen op de server](server-customize.md)

@@ -1,15 +1,15 @@
 ---
 title: Admin Consoles
-description: Leer hoe u de Admin Consoles gebruikt die beschikbaar zijn in AEM.
+description: Leer hoe u de Admin Consoles gebruikt die beschikbaar zijn in Adobe Experience Manager.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: d4de517e-50bc-4ca5-89b1-295d259fd5bb
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,11 @@ ht-degree: 0%
 
 # Admin Consoles{#admin-consoles}
 
-De mogelijkheid om via de beheerconsoles over te schakelen op de klassieke gebruikersinterface is standaard uitgeschakeld. Daarom worden de pop-uppictogrammen die werden gezien toen de muis over bepaalde consolepictogrammen beweegt, die toegang tot klassieke UI toestaan, niet meer getoond.
+De mogelijkheid om via de beheerconsoles over te schakelen op de klassieke interface is standaard uitgeschakeld. Daarom worden de pop-uppictogrammen die werden gezien toen de muis over bepaalde consolepictogrammen beweegt, die toegang tot klassieke UI toestaan, niet meer getoond.
 
 Elke console die een Klassieke versie UI in heeft `/libs/cq/core/content/nav` kan individueel opnieuw worden toegelaten zodat **Klassieke interface** Deze optie wordt weer boven het consolepictogram weergegeven wanneer de muis erboven wordt geplaatst.
 
-In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatsen.
+In dit voorbeeld, bent u re-toelatend Klassieke UI voor de console van Plaatsen.
 
 1. Gebruikend CRXDE Lite, vind de knoop die aan de Admin Console beantwoordt waarvoor u Klassieke UI wilt re-toelaten. Deze zijn te vinden onder:
 
@@ -31,7 +31,7 @@ In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatse
 
    [`https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav`](https://localhost:4502/crx/de/index.jsp#/libs/cq/core/content/nav)
 
-1. Selecteer de knoop die aan de console beantwoordt waarvoor u Klassieke UI wilt re-toelaten. Voor ons voorbeeld, zullen wij klassieke UI voor de console van Plaatsen re-toelaten.
+1. Selecteer de knoop die aan de console beantwoordt waarvoor u Klassieke UI wilt re-toelaten. In dit voorbeeld schakelt u de klassieke UI voor de Sites-console opnieuw in.
 
    `/libs/cq/core/content/nav/sites`
 

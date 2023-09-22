@@ -1,19 +1,15 @@
 ---
 title: Algemene stappen voor aanpassing van de AEM Forms-werkruimte
-seo-title: Generic steps for AEM Forms workspace customization
-description: Aan de slag met het aanpassen van de gebruikersinterface van de AEM Forms-werkruimte.
-seo-description: How to get started customizing AEM Forms workspace user interface.
-uuid: da6310b4-1c58-468d-85c6-975fd2c141f9
+description: Aan de slag met het aanpassen van de gebruikersinterface van de Adobe Experience Manager Forms-werkruimte.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: dd3218c4-2bb2-40fc-9141-5823b0ea4224
 docset: aem65
 exl-id: 45e50b47-1b36-4937-9e1a-cc7bfb953861
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '271'
+source-wordcount: '275'
 ht-degree: 2%
 
 ---
@@ -22,18 +18,18 @@ ht-degree: 2%
 
 De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
-1. Aanmelden bij CRXDE Lite via toegang `https://'[server]:[port]'/lc/crx/de/index.jsp`.
-1. Een `sling:Folder` map met naam `ws` om `/apps`, als deze niet bestaat. Als u een `sling:Folder` map, klikt u met de rechtermuisknop op de `apps` map en selecteer **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. Geef de naam op als `ws`, selecteert u tekst als `sling:Folder` en klik op **[!UICONTROL OK]**. Klik op **[!UICONTROL Save All]**.
+1. Log in bij CRXDE Lite door toegang te krijgen `https://'[server]:[port]'/lc/crx/de/index.jsp`.
+1. Een `sling:Folder` map met een naam `ws` om `/apps`, als deze niet bestaat. Een `sling:Folder` map, klikt u met de rechtermuisknop op de `apps` map en selecteer **[!UICONTROL Create]** > **[!UICONTROL Create Node]**. Geef de naam op als `ws`, selecteert u tekst als `sling:Folder`en klik op **[!UICONTROL OK]**. Klik op **[!UICONTROL Save All]**.
 1. Bladeren naar `/apps/ws`en navigeer naar de **[!UICONTROL Access Control]** tab.
-1. Selecteer **[!UICONTROL Repository]** optie. In de **[!UICONTROL Access Control]** lijst, klikt u op **[!UICONTROL +]** om een nieuwe vermelding toe te voegen. Klikken **[!UICONTROL +]** opnieuw.
-1. Zoek en selecteer de **PERM_WORKSPACE_USER** Opdrachtgever.
+1. Selecteer de **[!UICONTROL Repository]** -optie. In de **[!UICONTROL Access Control]** lijst, klik **[!UICONTROL +]** om een item toe te voegen. Klikken **[!UICONTROL +]** opnieuw.
+1. Zoek en selecteer de **PERM_WORKSPACE_USER** Opdrachtgever
 
    ![Selecteer PERM_WORKSPACE_USER principal als onderdeel van de algemene stappen om de HTML Workspace aan te passen](assets/perm_workspace_user.png)
 
 1. Geef `jcr:read` aan de Opdrachtgever.
 1. Klik op **[!UICONTROL Save All]**.
-1. Kopieer de `GET.jsp`, `index`, en `html.jsp` bestanden van de `/libs/ws` aan de `/apps/ws` map.
-1. Kopieer de `/libs/ws/locales` in de `/apps/ws` map. Klik op **[!UICONTROL Save All]**.
+1. De `GET.jsp`, `index`, en `html.jsp` bestanden van de `/libs/ws` aan de `/apps/ws` map.
+1. De `/libs/ws/locales` in de `/apps/ws` map. Klik op **[!UICONTROL Save All]**.
 1. De verwijzingen en relatieve paden in het dialoogvenster `GET.jsp` bestand, zoals hieronder weergegeven, en klik op **[!UICONTROL Save all]**.
 
    ```javascript
@@ -42,9 +38,9 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Ga als volgt te werk voor CSS-aanpassingen:
 
-   1. Ga naar de `/apps/ws` en maak een nieuwe map met de naam `css`.
+   1. Ga naar de `/apps/ws` en maak een map met de naam `css`.
 
-   1. In de `css` map, een nieuw bestand maken met de naam `newStyle.css`.
+   1. In de `css` map, maakt u een bestand met de naam `newStyle.css`.
 
    1. Openen `/apps/ws/html`.jsp en wijzigen van
 
@@ -95,6 +91,6 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
    1. /libs/ws/js/registry.js kopiëren naar `/apps/ws/js/registry.js`.
 
-1. Klikken **[!UICONTROL Save All]**, cache verwijderen en de AEM Forms-werkruimte vernieuwen.
+1. Klikken **[!UICONTROL Save All]**, de cache wissen en de AEM Forms-werkruimte vernieuwen.
 
-   Toegang krijgen tot de URL `https://'[server]:[port]'/lc/ws` en meld u aan met de gegevens van de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://'[server]:[port]'/lc/apps/ws/index.html`.
+   De URL openen `https://'[server]:[port]'/lc/ws` en meld u aan met de gegevens van de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://'[server]:[port]'/lc/apps/ws/index.html`.

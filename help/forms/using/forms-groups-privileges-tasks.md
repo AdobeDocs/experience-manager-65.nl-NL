@@ -1,20 +1,16 @@
 ---
 title: AEM Forms over OSGi-groepen en -voorrechten
-seo-title: AEM Forms on OSGi Groups and Privileges
-description: Wijs gebruikers aan de groepen toe om AEM Forms op OSGi te beheren
-seo-description: Assign users to the groups to manage AEM Forms on OSGi
-uuid: f269a206-356d-4cee-b449-05c5da87121a
+description: Wijs gebruikers aan groepen toe om Adobe Experience Manager (AEM) Forms op OSGi te beheren
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
 topic-tags: Configuration
-discoiquuid: 1717b1b4-1c2a-450e-8e79-4156a974d5fa
 docset: aem65
 role: Admin
 exl-id: d802ac53-e3db-45ca-afcb-7e99d0bb7877
-source-git-commit: 3bc61e56d2fcd9f32c37a7ea04b0ffc6728bfc56
+source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '293'
 ht-degree: 2%
 
 ---
@@ -26,9 +22,9 @@ ht-degree: 2%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/forms/setup-configure-migrate/forms-groups-privileges-tasks.html) |
 | AEM 6,5 | Dit artikel |
 
-U kunt [groepen maken](/help/sites-administering/user-group-ac-admin.md#group-administration) en beleid en [gebruikers](/help/sites-administering/user-group-ac-admin.md#user-administration) aan de groepen in AEM. Dit beleid controleert voorrechten van de gebruikers die deel van de groep uitmaken.
+U kunt [groepen maken](/help/sites-administering/user-group-ac-admin.md#group-administration) en beleid en [gebruikers](/help/sites-administering/user-group-ac-admin.md#user-administration) aan de groepen in Adobe Experience Manager (AEM). Dit beleid controleert de voorrechten van de gebruikers die deel van de groep uitmaken.
 
-Zodra u installeert [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring-aem-forms-osgi.md), zijn de in dit artikel vermelde groepen, zoals gebruikers van formulieren en gebruikers van formulieren, automatisch beschikbaar voor toewijzing. De volgende lijst maakt een lijst van de taken een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
+Nadat u de [AEM Forms-invoegtoepassing](../../forms/using/installing-configuring-aem-forms-osgi.md), zijn de in dit artikel vermelde groepen, zoals gebruikers van formulieren en gebruikers van formulieren, automatisch beschikbaar voor toewijzing. De volgende lijst maakt een lijst van de taken die een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
 
 <table>
  <tbody>
@@ -52,7 +48,7 @@ Zodra u installeert [AEM Forms-invoegtoepassing](../../forms/using/installing-co
     <ul> 
      <li>Aangepaste formulieren maken, voorvertonen, publiceren en verzenden</li> 
      <li>Interactieve communicatie en documentfragmenten maken, voorvertonen en publiceren</li> 
-     <li>Scripts maken voor adaptieve formulieren met behulp van code-editor</li> 
+     <li>Scripts maken voor adaptieve formulieren met behulp van een code-editor</li> 
      <li>Elementen uploaden, inclusief scripts</li> 
      <li>Thema's maken</li> 
      <li>Pakketten importeren die XDP bevatten</li> 
@@ -99,7 +95,7 @@ Zodra u installeert [AEM Forms-invoegtoepassing](../../forms/using/installing-co
    <td>workflowgebruikers</td> 
    <td>
     <ul> 
-     <li>AEM inbox-toepassingen gebruiken<br /> <strong>Opmerking: </strong>U moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot Interactieve Communicatie Agent UI in AEM inbox toegang te hebben.</li> 
+     <li>AEM Postvak In-toepassingen gebruiken<br /> <strong>Opmerking: </strong>U moet cm-agent-gebruikers en werkschema-gebruikers groepstaken hebben om tot de Interactieve Communicatie Agent UI in AEM Inbox toegang te hebben.</li> 
      <li>Workflowinstanties beheren</li> 
     </ul> </td> 
   </tr>
@@ -108,7 +104,7 @@ Zodra u installeert [AEM Forms-invoegtoepassing](../../forms/using/installing-co
    <td>
     <ul> 
      <li>PDF Generator configureren</li> 
-     <li>Gecontroleerde map configureren</li> 
+     <li>De map Gecontroleerd configureren</li> 
      <li>Workflowtoepassingen beheren</li> 
     </ul> </td> 
   </tr>

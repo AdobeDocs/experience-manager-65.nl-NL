@@ -1,30 +1,26 @@
 ---
 title: Webconsole in Adobe Experience Manager
-seo-title: Web Console
-description: Leer hoe u de AEM webconsole kunt gebruiken.
-seo-description: Learn how to use the AEM web console.
-uuid: 7856b2b3-4216-421d-a315-cd9a55936362
+description: Leer hoe u de Adobe Experience Manager-webconsole kunt gebruiken.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: configuring
-discoiquuid: 4a33fddd-0399-40e4-8687-564fb6765b76
 feature: Configuring
 exl-id: 9acbf61f-73a8-4998-9421-dd933f30ac8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
 
 # Webconsole{#web-console}
 
-De webconsole in AEM is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het OSGi R4-dienstenplatform uit te voeren, dat het OSGi-framework en de standaarddiensten omvat.
+De webconsole in Adobe Experience Manager (AEM) is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het OSGi R4-dienstenplatform uit te voeren, dat het OSGi-framework en de standaarddiensten omvat.
 
 >[!NOTE]
 >
->Op de console van het Web om het even welke beschrijvingen die standaardmontages vermelden hebben op het Verschuiven gebreken.
+>Voor de console van het Web, hebben om het even welke beschrijvingen die standaardmontages vermelden met het Verschuiven gebreken.
 >
 >AEM heeft zijn eigen gebreken en zo zouden de geplaatste gebreken van die op de console kunnen verschillen worden gedocumenteerd.
 
@@ -73,7 +69,7 @@ Hiermee kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent 
 * **Fabrieksconfiguraties**
 Hiermee kunt u een instantie maken van het vereiste functieobject.
 
-  Dit krijgt een blijvende identiteit toegewezen en wordt vervolgens vermeld in de vervolgkeuzelijst Configuraties.
+  Dit wordt toegewezen aan een Blijvende Identiteit en vervolgens vermeld in de vervolgkeuzelijst Configuraties.
 
 Als u een item in de lijst selecteert, worden de parameters met betrekking tot die configuratie weergegeven:
 
@@ -85,7 +81,7 @@ Vervolgens kunt u de parameters naar wens bijwerken en:
 
   Sla de wijzigingen op.
 
-  Voor een Configuratie van de Fabriek zal dit tot een nieuwe instantie met een Blijvende Identiteit leiden. Het nieuwe exemplaar zal dan onder Configuraties worden vermeld.
+  Voor een Configuratie van de Fabriek, leidt dit tot een geval met een Blijvende Identiteit. Het nieuwe exemplaar wordt dan vermeld onder Configuraties.
 
 * **Herstellen**
 
@@ -131,7 +127,7 @@ Met dit tabblad kunt u:
 
 * **Pakketten vernieuwen**
 
-  Hiermee controleert u de referenties van alle pakketten en vernieuwt u deze waar nodig.
+  Hiermee worden de referenties van alle pakketten gecontroleerd en vernieuwt, indien nodig.
 
   Na een update kan de oude en de nieuwe versie bijvoorbeeld nog steeds actief zijn als gevolg van eerdere verwijzingen. Met deze optie worden alle verwijzingen naar de nieuwe versie gecontroleerd en verplaatst, zodat de oude versie stopt.
 
@@ -149,11 +145,11 @@ Met dit tabblad kunt u:
 
 * **zie de status**
 
-  De lijst geeft de huidige status van de bundel aan; klik op de naam van een specifieke bundel met meer informatie.
+  In de lijst wordt de status van de bundel opgegeven. Klik op de naam van een specifieke bundel met meer informatie.
 
 >[!NOTE]
 >
->Na **Bijwerken** het wordt aanbevolen een **Pakketten vernieuwen**.
+>Na **Bijwerken**, raadt de Adobe u aan een **Pakketten vernieuwen**.
 
 ## Onderdelen {#components}
 
@@ -171,12 +167,12 @@ Er wordt een lijst met componenten weergegeven. Er zijn verschillende pictogramm
 
 ![screen_shot_2012-02-15at52144pm](assets/screen_shot_2012-02-15at52144pm.png)
 
-Als u op de naam van een bepaalde component klikt, wordt meer informatie over de status weergegeven. Hier kunt u de component ook in-, uitschakelen of opnieuw laden.
+Wanneer u op de naam van een bepaalde component klikt, wordt meer informatie over de status weergegeven. Hier kunt u de component ook in-, uitschakelen of opnieuw laden.
 
 ![chlimage_1-22](assets/chlimage_1-22a.png)
 
 >[!NOTE]
 >
->Als u een component inschakelt of uitschakelt, wordt deze alleen van toepassing tot AEM/CRX opnieuw wordt gestart.
+>Als u een component inschakelt of uitschakelt, wordt deze alleen toegepast totdat AEM/CRX opnieuw wordt gestart.
 >
 >De begintoestand wordt gedefinieerd binnen de componentdescriptor, die tijdens de ontwikkeling wordt gegenereerd en in de bundel wordt opgeslagen op het moment dat de bundel wordt gemaakt.

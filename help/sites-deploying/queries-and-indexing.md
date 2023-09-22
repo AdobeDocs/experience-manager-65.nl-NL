@@ -1,6 +1,6 @@
 ---
 title: Oak-query's en indexering
-description: Leer hoe te om indexen in AEM te vormen.
+description: Leer hoe u indexen configureert in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
@@ -8,7 +8,7 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: 2adc33b5f3ecb2a88f7ed2c5ac5cc31f98506989
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
 source-wordcount: '3033'
 ht-degree: 0%
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-In tegenstelling tot Jackrabbit 2 indexeert eik inhoud niet standaard. Aangepaste indexen moeten zo nodig worden gemaakt, net als bij traditionele relationele databases. Als er geen index voor een specifieke vraag is, misschien zullen vele knopen worden gepasseerd. De query werkt mogelijk nog wel, maar is waarschijnlijk vrij langzaam.
+In tegenstelling tot Jackrabbit 2 indexeert eik inhoud niet standaard. Aangepaste indexen moeten zo nodig worden gemaakt, net als bij traditionele relationele databases. Als er geen index voor een specifieke vraag is, worden vele knopen misschien overgestoken. De query werkt mogelijk nog wel, maar het is waarschijnlijk traag.
 
 Als het Eak een vraag zonder een index ontmoet, wordt een bericht van het het niveaulogboek van WARN gedrukt:
 
@@ -42,7 +42,7 @@ De oak-query-engine ondersteunt de volgende talen:
 
 ## Indexeertypen en kostenberekening {#indexer-types-and-cost-calculation}
 
-Met de op Apache Oak gebaseerde backend kunnen verschillende indexen in de repository worden aangesloten.
+Met de Apache Oak-gebaseerde backend kunnen verschillende indexen in de repository worden aangesloten.
 
 Eén index is de **Eigenschappenindex**, waarvoor de indexdefinitie is opgeslagen in de dataopslag zelf.
 
@@ -92,7 +92,7 @@ De index van het Bezit heeft de volgende configuratieopties:
 
 * De **type** eigenschap geeft het type index aan en in dit geval moet deze worden ingesteld op **eigenschap**
 
-* De **propertyNames** Deze eigenschap geeft de lijst met eigenschappen aan die in de index worden opgeslagen. Als de naam van het knooppunt ontbreekt, wordt deze gebruikt als een verwijzingswaarde voor de eigenschapnaam. In dit voorbeeld wordt **jcr:uuid** eigenschap waarvan de taak bestaat om de unieke id (UUID) van het bijbehorende knooppunt beschikbaar te maken, wordt toegevoegd aan de index.
+* De **propertyNames** Deze eigenschap geeft de lijst aan met de eigenschappen die in de index zijn opgeslagen. Als de naam van het knooppunt ontbreekt, wordt deze gebruikt als een verwijzingswaarde voor de eigenschapnaam. In dit voorbeeld wordt **jcr:uuid** eigenschap waarvan de taak bestaat om de unieke id (UUID) van het bijbehorende knooppunt beschikbaar te maken, wordt toegevoegd aan de index.
 
 * De **uniek** markering die, indien ingesteld op **true** voegt een unieke restrictie toe aan de eigenschapindex.
 
@@ -107,13 +107,13 @@ De geordende index is een uitbreiding van de index van het Bezit. Het is echter 
 
 Een volledige tekstindexeerfunctie op basis van Apache Lucene is beschikbaar in AEM 6.
 
-Als een full-text index wordt gevormd, dan gebruiken alle vragen die een full-text voorwaarde hebben de full-text index, geen kwestie als er andere voorwaarden zijn die worden geïndexeerd, en geen kwestie als er een wegbeperking is.
+Als een full-text index wordt gevormd, gebruiken alle vragen die een full-text voorwaarde hebben de full-text index, geen kwestie als er andere voorwaarden zijn die worden geïndexeerd, en geen kwestie als er een wegbeperking is.
 
-Als geen full-text index wordt gevormd, dan zullen de vragen met full-text voorwaarden niet zoals verwacht werken.
+Als geen full-text index wordt gevormd, dan werken de vragen met full-text voorwaarden niet zoals verwacht.
 
-Omdat de index via een asynchrone achtergronddraad wordt bijgewerkt, zijn sommige full-text onderzoeken niet beschikbaar voor een klein venster van tijd tot de achtergrondprocessen worden gebeëindigd.
+Omdat de index wordt bijgewerkt door middel van een asynchrone achtergrondthread, zijn sommige full-text onderzoeken niet beschikbaar voor een klein venster van tijd tot de achtergrondprocessen worden gebeëindigd.
 
-U kunt een volledig-tekstindex van Lucene vormen, door de hieronder procedure te volgen:
+U kunt een volledig-tekstindex van Lucene vormen door de hieronder procedure te volgen:
 
 1. CRXDE openen en een knooppunt maken onder **eiken:index**.
 1. De node een naam geven **LuceneIndex** en stel het knooppunttype in op **eak:QueryIndexDefinition**
@@ -134,7 +134,7 @@ De index van Lucene heeft de volgende configuratieopties:
 
 ### Volledige tekst zoeken {#understanding-fulltext-search}
 
-De documentatie in deze sectie is op Apache Lucene, Elasticsearch, evenals fullText indexen van, bijvoorbeeld, PostSQL, SQLite, MySQL van toepassing. Het volgende voorbeeld is voor AEM / Eak / Lucene.
+De documentatie in deze sectie is op Apache Lucene, Elasticsearch, en fullText indexen van PostSQL, SQLite, en MySQL, bijvoorbeeld van toepassing. Het volgende voorbeeld is voor AEM / Eak / Lucene.
 
 <b>Te indexeren gegevens</b>
 
@@ -151,7 +151,7 @@ Het uitgangspunt is de gegevens die moeten worden geïndexeerd. Neem bijvoorbeel
 
 Het indexeringsmechanisme verdeelt de volledige tekst in woorden genoemd &quot;tokens&quot;, en bouwt een index genoemd &quot;omgekeerde index&quot;. Deze index bevat de lijst met documenten waarin deze voor elk woord wordt weergegeven.
 
-Heel korte, veelvoorkomende woorden (ook wel &quot;stopwords&quot; genoemd) worden niet geïndexeerd. Alle tokens worden omgezet in kleine letters en stammen wordt toegepast.
+Korte, algemene woorden (ook wel &quot;stopwords&quot; genoemd) worden niet geïndexeerd. Alle tokens worden omgezet in kleine letters en stammen wordt toegepast.
 
 Speciale tekens zoals *&quot;-&quot;* niet geïndexeerd.
 
@@ -161,12 +161,12 @@ Speciale tekens zoals *&quot;-&quot;* niet geïndexeerd.
 | merk | ..., 100,... |
 | kubus | ..., 200, 300,... |
 | dimensie | 300 |
-| fineren | ..., 100,... |
+| afmaken | ..., 100,... |
 | uitvinden | 200 |
 | object | ..., 300,... |
-| rubik | .., 100, 200,... |
+| rubik | ..., 100, 200,... |
 
-De lijst met documenten wordt gesorteerd. Dit zal handig worden als je vraagt.
+De lijst met documenten wordt gesorteerd. Dit is handig wanneer je vraagt.
 
 <b>Zoeken</b>
 
@@ -182,7 +182,7 @@ De woorden worden op dezelfde manier verdeeld en gefilterd als bij het indexeren
 +:fulltext:rubik +:fulltext:cube
 ```
 
-De index zal dan de lijst van documenten voor die woorden raadplegen. Als er veel documenten zijn, kunnen de lijsten zeer groot zijn. Laten we bijvoorbeeld aannemen dat ze het volgende bevatten:
+De index raadpleegt de lijst met documenten voor die woorden. Als er veel documenten zijn, kan de lijst groot zijn. Stel bijvoorbeeld dat ze het volgende bevatten:
 
 
 | <b>Token</b> | <b>Document-id&#39;s</b> |
@@ -201,7 +201,7 @@ Lucene draait heen en weer tussen de twee lijsten (of ronde lijnen) `n` lijsten,
 * Lees in het &quot;rubik&quot; krijgt de volgende vermelding: 1000.
 * Lees in de &quot;kubus&quot; krijgt het eerste item `>` = 1000 : 2000 .
 * Lees in het &quot;rubik&quot; krijgt de eerste vermelding `>` = 2000: einde van de lijst.
-* Tot slot kunnen we ophouden met zoeken.
+* Tot slot kunt u ophouden met zoeken.
 
 Het enige gevonden document dat beide termen bevat, is 200, zoals in het onderstaande voorbeeld:
 
@@ -297,14 +297,14 @@ Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens
 
    Indien `luceneMatchVersion` is niet opgegeven, gebruikt Oak de versie van Lucene waarmee het is verzonden.
 
-1. Als u een stopwoordenbestand wilt toevoegen aan de configuraties van de analysator, kunt u een knooppunt maken onder de `default` één met de volgende eigenschappen:
+1. Als u een stopwoordenbestand wilt toevoegen aan de analysatorconfiguraties, kunt u een knooppunt maken onder de `default` één met de volgende eigenschappen:
 
    * **Naam:** `stopwords`
    * **Type:** `nt:file`
 
-#### Analysatoren maken via compositie {#creating-analyzers-via-composition}
+#### Analysatoren maken door middel van compositie {#creating-analyzers-via-composition}
 
-Analysatoren kunnen ook op basis van `Tokenizers`, `TokenFilters` en `CharFilters`. U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde zullen worden toegepast. Zie ook [https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://wiki.apache.org/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
+Analysatoren kunnen ook op basis van `Tokenizers`, `TokenFilters`, en `CharFilters`. U kunt dit doen door een analysator te specificeren en kindknopen van zijn facultatieve tokenizers en filters te creëren die in vermelde orde worden toegepast. Zie ook [https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema](https://cwiki.apache.org/confluence/display/solr/AnalyzersTokenizersTokenFilters#Specifying_an_Analyzer_in_the_schema)
 
 Bekijk deze knooppuntstructuur als voorbeeld:
 
@@ -344,7 +344,7 @@ Bekijk deze knooppuntstructuur als voorbeeld:
 
                * **Type:** `nt:file`
 
-De naam van de filters, charFilters en tokenizers wordt gevormd door de fabrieksachtervoegsels te verwijderen. Aldus:
+De naam van de filters, charFilters, en tokenizers wordt gevormd door de fabrieksachtervoegsels te verwijderen. Aldus:
 
 * `org.apache.lucene.analysis.standard.StandardTokenizerFactory` wordt `standard`
 
@@ -352,9 +352,9 @@ De naam van de filters, charFilters en tokenizers wordt gevormd door de fabrieks
 
 * `org.apache.lucene.analysis.core.StopFilterFactory` wordt `Stop`
 
-Elke configuratieparameter die voor de fabriek vereist is, wordt opgegeven als eigenschap van de desbetreffende code.
+Om het even welke configuratieparameter die voor de fabriek wordt vereist wordt gespecificeerd als bezit van de knoop in kwestie.
 
-Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggend knooppunt van `nt:file` type voor het desbetreffende bestand.
+Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestanden moet worden geladen, kan de inhoud worden opgegeven door een onderliggende node te maken van `nt:file` type voor het desbetreffende bestand.
 
 ### De zonne-index {#the-solr-index}
 
@@ -368,7 +368,7 @@ Het kan worden gevormd om als verre server met de AEM instantie te werken.
 
 AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstantie:
 
-1. Download en extraheer de nieuwste versie van Solr. Voor meer informatie over hoe te om dit te doen, zie [Installatiedocumentatie van Apache Solr](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
+1. Download en extraheer de nieuwste versie van Solr. Zie voor meer informatie over hoe u dit kunt doen de [Installatiedocumentatie van Apache Solr](https://solr.apache.org/guide/6_6/installing-solr.html).
 1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elk segment in de map waarin Solr is uitgepakt:
 
    * Voor de eerste gedeelde map maakt u de map:
@@ -396,7 +396,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
 
    >[!NOTE]
    >
-   >Voor meer informatie over de configuratie Solr en ZooKeeper, raadpleeg [Solr Configuration-documentatie](https://wiki.apache.org/solr/ConfiguringSolr) en de [Aan de slag met ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
+   >Voor meer informatie over de configuratie Solr en ZooKeeper, raadpleeg [Solr Configuration-documentatie](https://cwiki.apache.org/confluence/display/solr/ConfiguringSolr) en de [Aan de slag met ZooKeeper](https://zookeeper.apache.org/doc/r3.1.2/zookeeperStarted.html).
 
 1. Begin de eerste shard met steun ZooKeeper door naar `aemsolr1\node1` en het uitvoeren van de volgende opdracht:
 
@@ -431,7 +431,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
 
 Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. Het past de specifieke bezitsindexen aan die reeds in AEM aanwezig zijn en niet met andere toepassingen zouden moeten worden gebruikt.
 
-Om het behoorlijk te gebruiken, moet u de inhoud van het archief in de Solr Folder van het Huis direct plaatsen. In het geval van multi-knoopplaatsingen, zou het direct onder de wortelomslag van elke knoop moeten gaan.
+Om het behoorlijk te gebruiken, moet u de inhoud van het archief in de Solr Folder van het Huis direct plaatsen. Als er multi-knoopplaatsingen zijn, zou het direct onder de wortelomslag van elke knoop moeten gaan.
 
 Aanbevolen Solr-configuratiebestanden
 
@@ -448,7 +448,7 @@ Je kunt ze nu bereiken door naar **Gereedschappen - Bewerkingen - Dashboard - Di
 
 Zie voor meer informatie over het gebruik ervan de [Documentatie van het operatiedashboard](/help/sites-administering/operations-dashboard.md).
 
-#### Eigenschapindexen maken via OSGi {#creating-property-indexes-via-osgi}
+#### Eigenschapindexen maken met OSGi {#creating-property-indexes-via-osgi}
 
 Het ACS-gemeenschappelijke pakket stelt ook configuraties OSGi bloot die kunnen worden gebruikt om bezitsindexen tot stand te brengen.
 
@@ -464,7 +464,7 @@ In dit deel wordt een aantal aanbevelingen gedaan over wat er moet gebeuren om d
 
 #### Foutopsporingsinfo voorbereiden voor analyse {#preparing-debugging-info-for-analysis}
 
-De eenvoudigste manier om de vereiste informatie voor de uitgevoerde query op te halen is via de [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query). Dit laat u de nauwkeurige informatie verzamelen die nodig is om een langzame vraag te zuiveren zonder de behoefte om de informatie van het logboekniveau te raadplegen. Dit is wenselijk als u de vraag kent die wordt gezuiverd.
+De gemakkelijkste manier om de vereiste informatie voor de vraag te krijgen die door als [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query). Dit laat u de nauwkeurige informatie verzamelen die nodig is om een langzame vraag te zuiveren zonder de behoefte om de informatie van het logboekniveau te raadplegen. Dit is wenselijk als u de vraag kent die wordt gezuiverd.
 
 Als dit om welke reden dan ook niet mogelijk is, kunt u de indexerende logboeken in één enkel dossier verzamelen en het gebruiken om uw bepaald probleem problemen op te lossen.
 
@@ -480,7 +480,7 @@ De **com.day.cq.search** de categorie is slechts van toepassing als u het AEM ve
 
 >[!NOTE]
 >
->Het is belangrijk dat de logboeken slechts aan DEBUG voor de duur worden geplaatst de vraag u wilt problemen oplossen in werking wordt gesteld. Anders wordt een grote hoeveelheid gebeurtenissen in de logboeken gegenereerd. Wegens dit, zodra de vereiste logboeken worden verzameld schakelaar terug naar het niveau INFO registreren voor de bovengenoemde categorieën.
+>Het is belangrijk dat de logboeken slechts aan DEBUG voor de duur worden geplaatst de vraag u wilt problemen oplossen in werking wordt gesteld. Anders worden veel gebeurtenissen in de loop van de tijd gegenereerd in de logboeken. Wegens dit, zodra de vereiste logboeken worden verzameld schakelaar terug naar het niveau INFO registreren voor de bovengenoemde categorieën.
 
 U kunt registreren toelaten door deze procedure te volgen:
 
@@ -516,7 +516,7 @@ Soms is het nuttig om de output van op index betrekking hebbende MBans voor het 
    * Query-statistieken voor onak
    * IndexStats
 
-1. Klik elk van de netten MB om de prestatiesstatistieken te krijgen. Maak een schermafbeelding of noteer deze als verzending ter ondersteuning vereist is.
+1. Klik elk van de MBans zodat kunt u prestatiesstatistieken krijgen. Maak een schermafbeelding of noteer deze voor het geval dat een supportverzending nodig is.
 
 U kunt de variant JSON van deze statistieken bij volgende URLs ook krijgen:
 

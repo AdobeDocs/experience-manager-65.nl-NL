@@ -1,19 +1,15 @@
 ---
 title: De websiteconsole aanpassen (klassieke gebruikersinterface)
-seo-title: Customizing the Websites Console (Classic UI)
 description: De console van het Beleid van Websites kan worden uitgebreid om douanekolommen te tonen
-seo-description: The Websites Administration console can be extended to display custom columns
-uuid: 9163fdff-5351-477d-b91c-8a74f8b41d34
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: aeb37103-541d-4235-8a78-980b78c8de66
 docset: aem65
 exl-id: 2b9b4857-821c-4f2f-9ed9-78a1c9f5ac67
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '779'
 ht-degree: 0%
 
 ---
@@ -26,9 +22,9 @@ De console van het Beleid van Websites kan worden uitgebreid om douanekolommen t
 
 Dit geleidelijke leerprogramma verklaart hoe te om een nieuwe kolom in de console van het Beleid van Websites te tonen door uit te voeren `ListInfoProvider` interface. Het bestaat uit de volgende stappen:
 
-1. [De dienst OSGI maken](#creating-the-osgi-service) en de bundel die het bevat op de AEM server te implementeren.
+1. [De dienst OSGI aanmaken](#creating-the-osgi-service) en de bundel die het bevat op de AEM server te implementeren.
 1. (optioneel) [De nieuwe service testen](#testing-the-new-service) door een JSON-aanroep uit te voeren om het JSON-object aan te vragen dat wordt gebruikt om de console te maken.
-1. [De nieuwe kolom weergeven](#displaying-the-new-column) door de knooppuntstructuur van de console in de opslagplaats uit te breiden.
+1. [De nieuwe kolom weergeven](#displaying-the-new-column) door de nodestructuur van de console in de bewaarplaats uit te breiden.
 
 >[!NOTE]
 >
@@ -37,7 +33,6 @@ Dit geleidelijke leerprogramma verklaart hoe te om een nieuwe kolom in de consol
 >* de Digital Assets-console
 >* de Community console
 >
-
 
 ### De OSGI-service maken {#creating-the-osgi-service}
 
@@ -52,7 +47,7 @@ De argumenten voor beide methoden zijn:
 * `info`, het JSON-object dat moet worden bijgewerkt. Dit is respectievelijk de algemene lijst of het huidige lijstitem.
 * `resource`, een Sling resource.
 
-De volgende voorbeeldimplementatie:
+De voorbeeldimplementatie is hieronder:
 
 * Hiermee voegt u een *uitgehongerd* eigenschap voor elk item, dat `true` als de paginanaam begint met een *e*, en `false` anders.
 
@@ -62,7 +57,7 @@ Om de dienst te creëren OSGI:
 
 1. In CRXDE Lite, [een bundel maken](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Voeg de voorbeeldcode hieronder toe.
-1. Maak de bundel.
+1. Bouw de bundel.
 
 De nieuwe dienst is in gebruik.
 
@@ -109,13 +104,13 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >[!CAUTION]
 >
 >* Uw implementatie moet op basis van het ingediende verzoek en/of de bron beslissen of de informatie al dan niet aan het JSON-object moet worden toegevoegd.
->* Als uw `ListInfoProvider` de implementatie definieert een eigenschap die al bestaat in het reactieobject. De waarde ervan wordt overschreven door de eigenschap die u opgeeft.
+>* Als uw `ListInfoProvider` de implementatie definieert een eigenschap die bestaat in het reactieobject, de waarde ervan wordt overschreven door de eigenschap die u opgeeft.
 >
->  U kunt [servicerangschikking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) om de uitvoeringsvolgorde van meerdere `ListInfoProvider` implementaties.
+>  U kunt [servicerangschikking](https://docs.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) om de uitvoeringsvolgorde van meerdere `ListInfoProvider` implementaties.
 
 ### De nieuwe service testen {#testing-the-new-service}
 
-Wanneer u de console van het Beleid van Websites opent en door uw plaats doorbladert, geeft browser een ajax vraag uit om het voorwerp te krijgen JSON dat wordt gebruikt om de console te bouwen. Wanneer u bijvoorbeeld naar de `/content/geometrixx` De volgende aanvraag wordt naar de AEM server verzonden om de console te maken:
+Wanneer u de console van het Beleid van Websites opent en door uw plaats doorbladert, geeft browser een vraag van Ajax uit om het voorwerp te krijgen JSON dat wordt gebruikt om de console te bouwen. Wanneer u bijvoorbeeld naar de `/content/geometrixx` De volgende aanvraag wordt naar de AEM server verzonden om de console te maken:
 
 [https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](https://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
@@ -132,7 +127,7 @@ Om ervoor te zorgen dat de nieuwe dienst na het hebben opgesteld de bundel die h
 
 De laatste stap bestaat uit het aanpassen van de knooppuntstructuur van de console van het Beleid van Websites om het nieuwe bezit voor alle pagina&#39;s van de Geometrixx te tonen door te bedekken `/libs/wcm/core/content/siteadmin`. Ga als volgt te werk:
 
-1. Maak in CRXDE Lite de knooppuntstructuur `/apps/wcm/core/content` met knooppunten van het type `sling:Folder` om de structuur weer te geven `/libs/wcm/core/content`.
+1. Maak in CRXDE Lite de knooppuntstructuur `/apps/wcm/core/content` met knooppunten van type `sling:Folder` om de structuur weer te geven `/libs/wcm/core/content`.
 
 1. Het knooppunt kopiëren `/libs/wcm/core/content/siteadmin` en plak deze hieronder `/apps/wcm/core/content`.
 
@@ -141,7 +136,7 @@ De laatste stap bestaat uit het aanpassen van de knooppuntstructuur van de conso
    * Verwijderen **pageText**
 
    * Set **pathRegex** tot `/content/geometrixx(/.*)?`
-Hierdoor wordt de rasterconfiguratie actief voor alle geometrische websites.
+Hierdoor wordt de rasterconfiguratie actief voor alle websites van Geometrixx.
 
    * Set **storeProxySuffix** tot `.pages.json`
 
@@ -150,7 +145,7 @@ Hierdoor wordt de rasterconfiguratie actief voor alle geometrische websites.
    * Als u de MSM-functionaliteit wilt activeren, voegt u de volgende MSM-parameters toe aan de eigenschap multi-String **storeReaderFields**:
 
       * **msm:isSource**
-      * **msm:isInBlueprint**
+      * **msm:isInBluprint**
       * **msm:isLiveCopy**
 
 1. Voeg een `starred` node (type) **nt:ongestructureerd**) hieronder `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns` met de volgende eigenschappen:
@@ -161,10 +156,10 @@ Hierdoor wordt de rasterconfiguratie actief voor alle geometrische websites.
 
    * **xtype**: `gridcolumn` van het type String
 
-1. (optioneel) Verplaats de kolommen waarop u niet wilt weergeven `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
+1. (optioneel) Verplaats de kolommen die u niet wilt weergeven `/apps/wcm/core/content/siteadmin/grid/geometrixx/columns`
 
 1. `/siteadmin` is een pad met ijdelheid dat standaard wijst naar `/libs/wcm/core/content/siteadmin`.
-Dit doorsturen naar uw versie van sitebeheerder op `/apps/wcm/core/content/siteadmin` de eigenschap definiëren `sling:vanityOrder` een waarde hebben die hoger is dan de waarde die op `/libs/wcm/core/content/siteadmin`. De standaardwaarde is 300, dus om het even wat hoger is is geschikt.
+Dit doorsturen naar uw versie van sitebeheerder op `/apps/wcm/core/content/siteadmin`, definieert u de eigenschap `sling:vanityOrder` een waarde hebben die hoger is dan de waarde die op `/libs/wcm/core/content/siteadmin`. De standaardwaarde is 300, dus om het even wat hoger is is geschikt.
 
 1. Ga naar de console van het Beleid van Websites en navigeer aan de plaats van de Geometrixx:
    [https://localhost:4502/siteadmin#/content/geometrixx](https://localhost:4502/siteadmin#/content/geometrixx).
@@ -175,7 +170,7 @@ Dit doorsturen naar uw versie van sitebeheerder op `/apps/wcm/core/content/sitea
 
 >[!CAUTION]
 >
->Als meerdere rasterconfiguraties overeenkomen met het gevraagde pad dat is gedefinieerd door de **pathRegex** eigenschap, de eerste wordt gebruikt, en niet de meest specifieke, wat betekent dat de volgorde van de configuraties belangrijk is.
+>Als meerdere rasterconfiguraties overeenkomen met het gevraagde pad dat is gedefinieerd door de **pathRegex** eigenschap, wordt de eerste gebruikt, en niet de meest specifieke, wat betekent dat de volgorde van de configuraties belangrijk is.
 
 ### Voorbeeldpakket {#sample-package}
 

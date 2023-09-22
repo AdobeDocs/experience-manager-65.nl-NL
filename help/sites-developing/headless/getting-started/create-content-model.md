@@ -1,54 +1,54 @@
 ---
 title: Modellen voor inhoudsfragmenten maken, headless Quick Start Guide
-description: Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
+description: Definieer de structuur van de inhoud die u maakt en gebruikt met behulp van de mogelijkheden zonder kop in Adobe Experience Manager (AEM), met behulp van Content Fragment Models.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
 
 # Modellen voor inhoudsfragmenten maken, headless Quick Start Guide {#creating-content-fragment-models}
 
-Definieer de structuur van de inhoud die u wilt maken en gebruiken met behulp van AEM mogelijkheden zonder kop door Modellen van inhoudsfragmenten te gebruiken.
+Definieer de structuur van de inhoud die u maakt en gebruikt met behulp van de mogelijkheden zonder kop in Adobe Experience Manager (AEM), met behulp van Content Fragment Models.
 
 ## Wat zijn modellen van inhoudsfragmenten? {#what-are-content-fragment-models}
 
-[Nu u een configuratie hebt gecreeerd,](create-configuration.md) U kunt het gebruiken om de Modellen van het Fragment van de Inhoud tot stand te brengen.
+[Nu u een configuratie hebt gecreeerd,](create-configuration.md) U kunt het gebruiken om de Modellen van het Fragment van de Inhoud te creëren.
 
-Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u in AEM maakt en beheert. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een model voor inhoudsfragmenten dat u definieert en dat hen bij het maken van inhoud begeleidt.
+Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een van de door u gedefinieerde modellen van inhoudsfragmenten die u als hulplijnen bij het maken van inhoud gebruikt.
 
 ## Een model voor een inhoudsfragment maken {#how-to-create-a-content-fragment-model}
 
-Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Om aan de slag te kunnen gaan, hoeven we maar één model te maken.
+Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Voor deze gids Aan de slag, creeert u slechts één model.
 
 1. Meld u aan bij AEM en selecteer in het hoofdmenu **Gereedschappen -> Middelen -> Modellen van inhoudsfragmenten**.
 1. Tik of klik op de map die u hebt gemaakt door uw configuratie te maken.
 
    ![De map Modellen](assets/models-folder.png)
 1. Tik of klik op **Maken**.
-1. Een **Modeltitel**, **Tags** en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
+1. Geef een **Modeltitel**, **Tags**, en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
 
    ![Een model maken](assets/models-create.png)
-1. Tik of klik in het bevestigingsvenster op **Openen** om uw model te configureren.
+1. Tik in het bevestigingsvenster op **Openen** om uw model te configureren.
 
    ![Bevestigingsvenster](assets/models-confirmation.png)
-1. Met de **Inhoudsfragmentmodeleditor**, maakt u het model van het inhoudsfragment door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
+1. Met de **Inhoudsfragmentmodeleditor** kunt u het inhoudsfragmentmodel samenstellen door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
 
    ![Velden slepen en neerzetten](assets/models-drag-and-drop.png)
 
-1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur zal automatisch aan **Eigenschappen** voor het toegevoegde veld waarin u de verplichte velden kunt opgeven.
+1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur schakelt automatisch aan **Eigenschappen** voor het toegevoegde veld waarin u de verplichte velden kunt opgeven.
 
    ![Eigenschappen configureren](assets/models-configure-properties.png)
 1. Tik of klik op **Opslaan**.
 
 1. De modus van het nieuwe model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
-   * geselecteerd - het nieuwe model zal reeds worden **Ingeschakeld**
+   * geselecteerd - het nieuwe model is al **Ingeschakeld**
    * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
 
 1. Als dit nog niet het geval is, moet het model **Ingeschakeld** om het te gebruiken.
-   1. Selecteer het model dat u net hebt gemaakt en tik of klik op **Inschakelen**.
+   1. Selecteer het model dat u hebt gemaakt en tik of klik op **Inschakelen**.
 
       ![Het model inschakelen](assets/models-enable.png)
    1. Bevestig het toelaten van het model door te tikken of te klikken **Inschakelen** in het bevestigingsdialoogvenster.
@@ -64,8 +64,8 @@ U kunt meerdere modellen maken. Modellen kunnen verwijzen naar andere inhoudsfra
 
 ## Volgende stappen {#next-steps}
 
-Nu u de structuren van uw Inhoudsfragmenten hebt gedefinieerd door modellen te maken, kunt u verdergaan naar het derde deel van de gids Aan de slag en [Maak mappen waarin u de fragmenten zelf opslaat.](create-assets-folder.md)
+Nu u de structuren van uw Inhoudsfragmenten hebt gedefinieerd door modellen te maken, kunt u verdergaan naar het derde deel van de gids Aan de slag en [Maak mappen waarin u de fragmenten opslaat.](create-assets-folder.md)
 
 >[!TIP]
 >
->Voor volledige informatie over modellen van inhoudsfragmenten raadpleegt u de [Documentatie bij Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)
+>Voor volledige details over de Modellen van het Fragment van de Inhoud, zie [Documentatie bij Content Fragment Models](/help/assets/content-fragments/content-fragments-models.md)

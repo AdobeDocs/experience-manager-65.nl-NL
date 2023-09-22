@@ -1,15 +1,15 @@
 ---
 title: Werken met paginaversies
-description: Met Versioning maakt u een "momentopname" van een pagina op een bepaald tijdstip.
+description: Leer meer over versioning en hoe u een "momentopname" van een pagina op een bepaald tijdstip kunt maken.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 4eb0de5e-0306-4166-9cee-1297a5cd14ce
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1348'
 ht-degree: 0%
 
 ---
@@ -19,15 +19,15 @@ ht-degree: 0%
 Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaald tijdstip. Met versioning kunt u de volgende handelingen uitvoeren:
 
 * Maak een versie van een pagina.
-* Herstel een pagina naar een vorige versie om een wijziging die u bijvoorbeeld in een pagina hebt aangebracht, ongedaan te maken.
+* Herstel een pagina naar een vorige versie zodat u een wijziging die u hebt aangebracht in een pagina ongedaan kunt maken.
 * Vergelijk de huidige versie van een pagina met een vorige versie met verschillen in de gemarkeerde tekst en afbeeldingen.
 
-## Een nieuwe versie maken {#creating-a-new-version}
+## Een versie maken {#creating-a-new-version}
 
-Een nieuwe versie van een pagina maken:
+Een versie van een pagina maken:
 
-1. Open in uw browser de pagina waarvoor u een nieuwe versie wilt maken.
-1. Selecteer in de Sidekick de optie **Versioning** en vervolgens de **Versie maken** subtabblad.
+1. Open in uw browser de pagina waarvoor u een versie wilt maken.
+1. Selecteer in de Sidekick de optie **Versioning** en vervolgens de **Versie maken** subtab.
 
    ![screen_shot_2012-02-14at40259pm](assets/screen_shot_2012-02-14at40259pm.png)
 
@@ -55,7 +55,7 @@ De pagina herstellen naar een vorige versie:
 Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook worden gebruikt om eerder verwijderde pagina&#39;s te herstellen:
 
 1. In de **Websites** navigeer naar de pagina die u wilt herstellen en selecteer deze.
-1. Selecteer in het bovenste menu **Gereedschappen** vervolgens **Herstellen**:
+1. Selecteer in het bovenste menu de optie **Gereedschappen** vervolgens **Herstellen**:
 
    ![screen_shot_2012-02-08at41326pm](assets/screen_shot_2012-02-08at41326pm.png)
 
@@ -70,7 +70,7 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook worden gebruikt om eerder verwijderde pagina&#39;s te herstellen:
 
 1. In de **Websites** navigeer naar de map die u wilt herstellen en selecteer deze.
-1. Selecteer in het bovenste menu **Gereedschappen** vervolgens **Herstellen**.
+1. Selecteer in het bovenste menu de optie **Gereedschappen** vervolgens **Herstellen**.
 1. Selecteren **Boom herstellen...** Hiermee opent u het dialoogvenster waarin u de structuur kunt selecteren die u wilt herstellen:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
@@ -82,7 +82,7 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 De huidige versie van de pagina vergelijken met een vorige versie:
 
 1. Open in uw browser de pagina die u met een vorige versie wilt vergelijken.
-1. Selecteer in de Sidekick de optie **Versioning** en vervolgens de **Versie herstellen** n subtabblad.
+1. Selecteer in de Sidekick de optie **Versioning** en vervolgens de **Versie herstellen** n subtab.
 
    ![screen_shot_2012-02-14at42949pm-1](assets/screen_shot_2012-02-14at42949pm-1.png)
 
@@ -108,7 +108,7 @@ Dit doet u als volgt:
 * Het systeem zoekt naar de paginaversie die op het geselecteerde tijdstip actief was.
 * Dit betekent dat de weergegeven versie is gemaakt/geactiveerd *voor* het punt in tijd dat in Timewarp wordt geselecteerd.
 * Wanneer u naar een pagina navigeert die is verwijderd, wordt dit ook weergegeven, zolang de oude versies van de pagina nog beschikbaar zijn in de opslagplaats.
-* Als geen gepubliceerde versie wordt gevonden, dan zal Timewarp aan de huidige staat van de pagina op het auteursmilieu terugkeren (dit moet een fout/404 pagina verhinderen, wat zou betekenen dat u niet meer kunt doorbladeren).
+* Als geen gepubliceerde versie wordt gevonden, dan keert Timewarp aan de huidige staat van de pagina op het auteursmilieu terug (dit moet een fout/404 pagina verhinderen, wat zou betekenen dat u niet meer kunt doorbladeren).
 
 >[!NOTE]
 >
@@ -126,11 +126,11 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
 1. Met de datum- en tijdkiezers geeft u de gewenste datum/tijd op en klikt u op **Ga**.
 
-   Met Timewarp wordt de pagina weergegeven zoals deze was gepubliceerd vóór/op de datum die u hebt gekozen.
+   Met Tijdlijn verdraaien wordt de pagina weergegeven zoals deze was gepubliceerd vóór/op de datum die u hebt gekozen.
 
    >[!NOTE]
    >
-   >Tijdlijnverdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
+   >Tijdlijn verdraaien werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt bij Timewarp de huidige pagina in de auteursomgeving weergegeven.
 
    >[!NOTE]
    >
@@ -138,12 +138,12 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
    >[!NOTE]
    >
-   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, doet u dat handmatig met [terugzetten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
+   >U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, kunt u dat handmatig doen met [terugzetten](/help/sites-classic-ui-authoring/classic-page-author-work-with-versions.md#restoring-a-page-version-from-sidekick).
 
 1. Klik op de volgende pagina als u de pagina hebt bekeken:
 
    * **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
-   * [Tijdlijn tonen](#using-the-timewarp-timeline) om de tijdlijn weer te geven.
+   * [Tijdlijn tonen](#using-the-timewarp-timeline) zodat u de tijdlijn kunt bekijken.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -167,26 +167,26 @@ Als u de tijdlijn van het document wilt weergeven:
 
    * Alle regels geven gepubliceerde versies aan.
 Wanneer een pagina wordt geactiveerd, wordt een nieuwe regel gestart. Telkens wanneer het document wordt bewerkt, wordt er een nieuwe kleur weergegeven.
-In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt tijdens het tijdsbestek van de eerste groene versie en de gele lijn geeft aan dat de pagina ergens in de rode versie is bewerkt, enzovoort.
+In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt tijdens het tijdsbestek van de eerste groene versie. De gele lijn geeft aan dat de pagina ergens in de rode versie is bewerkt, enzovoort.
 
    ![chlimage_1-79](assets/chlimage_1-79.png)
 
 1. Klik op:
 
    1. **Ga** om de inhoud van de gepubliceerde pagina op het geselecteerde tijdstip weer te geven.
-   1. Wanneer u die inhoud weergeeft, gebruikt u **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
+   1. Gebruik bij het weergeven van die inhoud **Tijdlijnverdraaiing afsluiten** om af te sluiten en terug te keren naar de huidige auteurspagina.
 
 ### Beperkingen voor tijdwijziging {#timewarp-limitations}
 
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 
-* **Tijdlijn verdraaien werkt op basis van gepubliceerde pagina&#39;s** - Tijdlijn-verdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
+* **Tijdlijn verdraaien werkt op basis van gepubliceerde pagina&#39;s** - Tijdlijn verdraaien werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt bij Timewarp de huidige pagina in de auteursomgeving weergegeven.
 * **Timewaring gebruikt paginaversies** - Als u navigeert naar een pagina die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies beïnvloeden Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp niet de juiste weergave tonen.
 
-* **Timewarp is read-only** - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, doet u dat handmatig met [terugzetten](#main-pars-title-1).
+* **Timewarp is read-only** - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, kunt u dat handmatig doen met [terugzetten](#main-pars-title-1).
 
-* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als elementen (zoals code, css en afbeeldingselementen) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat oorspronkelijk was, omdat deze items niet zijn geversieerd in de repository.
+* **Tijdlijn verdraaien is alleen gebaseerd op pagina-inhoud** - Als elementen zoals code, css en afbeeldingselementen voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat oorspronkelijk was. De reden hiervoor is dat deze items niet zijn geautoriseerd in de gegevensopslagruimte.
 
 >[!CAUTION]
 >

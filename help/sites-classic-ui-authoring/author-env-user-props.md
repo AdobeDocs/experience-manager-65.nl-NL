@@ -1,39 +1,34 @@
 ---
 title: Uw accountomgeving configureren
-seo-title: Configuring your account environment
-description: AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
-seo-description: AEM provides you with the capability to configure your account and certain aspects of the author environment.
-uuid: a4a408f4-e33e-4304-90ab-f564ae772b7d
+description: Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: d6f55d2c-e7a9-4421-918c-6000c6961776
 docset: aem65
 exl-id: 9abdaa6d-79ee-448e-a23f-d216433591f8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '227'
 ht-degree: 3%
 
 ---
 
 # Uw accountomgeving configureren{#configuring-your-account-environment}
 
-AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
+Adobe Experience Manager (AEM) biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
 Met de [accountinstellingen](#account-settings) en [gebruikersvoorkeuren](#user-preferences) de volgende opties en voorkeuren kunnen worden gedefinieerd :
 
 * **Werkbalk Bewerken**
-Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u 
-**Kopiëren**, **Knippen**, **Plakken**, **Verwijderen** knoppen voor gebruik met de alineacomponenten op die pagina:
+Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u **Kopiëren**, **Knippen**, **Plakken**, **Verwijderen** knoppen voor gebruik met de alineacomponenten op die pagina:
 
    * Weergeven indien nodig (standaard)
    * Altijd tonen
    * Verborgen houden
 
 * **Imiteren als**
-Met de [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) een gebruiker namens een andere gebruiker kan werken.
+De functionaliteit van [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) Hiermee kan een gebruiker namens een andere gebruiker werken.
 
 * **Taal**
 De taal die voor UI van het auteursmilieu moet worden gebruikt. Selecteer de gewenste taal in de beschikbare lijst.
@@ -46,7 +41,7 @@ Selecteer een van de volgende opties:
 
 ## Accountinstellingen {#account-settings}
 
-Het gebruikerspictogram geeft u toegang tot verschillende opties:
+Met het gebruikerspictogram hebt u toegang tot de volgende opties:
 
 * Afmelden
 * [Imiteren als](/help/sites-administering/security.md#impersonating-another-user)
@@ -57,7 +52,7 @@ Het gebruikerspictogram geeft u toegang tot verschillende opties:
 
 ### Gebruikersvoorkeuren {#user-preferences}
 
-Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen. Dit is beschikbaar via **Voorkeuren** in de rechterbovenhoek van de consoles.
+Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen. Dit is beschikbaar via de **Voorkeuren** in de rechterbovenhoek van de consoles.
 
 ![screen_shot_2012-02-08at105033am](assets/screen_shot_2012-02-08at105033am.png)
 

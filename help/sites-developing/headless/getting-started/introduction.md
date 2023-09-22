@@ -1,17 +1,17 @@
 ---
-title: Aan de slag met koppen
-description: Met deze snelstartgids leert u de basisprincipes van AEM 6.5-functies zonder koppen, zoals Content Models, Content Fragments en de GraphQL API.
+title: Aan de slag met koploze gids
+description: Met deze snelstartgids leert u de basisprincipes van de krachtige headless mogelijkheden van Adobe Experience Manager (AEM) 6.5, zoals Content Models, Content Fragments, en GraphQL API.
 exl-id: 55ebd893-b3cc-47c5-ad84-46df984197fb
-source-git-commit: a2ababa9dd9115e963b91a7271d204d287557c40
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '298'
 ht-degree: 0%
 
 ---
 
-# Aan de slag met koppen {#introduction}
+# Aan de slag met koploze gids {#introduction}
 
-De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren en leveren van ervaringen met AEM 6.5 in vijf stappen voor gebruikers die al vertrouwd zijn met AEM en technologie zonder kop. Elke gids bouwt op het vorige voort, zodat wordt het geadviseerd om hen grondig en in orde te onderzoeken.
+De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren en leveren van ervaringen met Adobe Experience Manager (AEM) 6.5 in vijf stappen voor gebruikers die al vertrouwd zijn met AEM en technologie zonder kop. Elke gids bouwt op het vorige voort, zodat wordt het geadviseerd om hen grondig en in orde te onderzoeken.
 
 1. [Een configuratie maken](create-configuration.md)
 1. [Een inhoudsfragmentmodel maken](create-content-model.md)
@@ -23,17 +23,17 @@ De gids Aan de slag zonder hoofd biedt een eenvoudig pad voor het maken, beheren
 >
 >Deze gids aan de slag veronderstelt kennis van zowel AEM als headless technologieën.
 >
->Als u niet bekend bent met AEM of zonder kop, raadpleegt u onze [Documentatiereizen zonder kop](/help/journey-headless/home.md) voor een introductie van begin tot eind, zowel in de vorm van kranten als in de manier waarop AEM dit ondersteunt.
+>Als u niet bekend bent met AEM of zonder kop, raadpleegt u de [Documentatiereizen zonder kop](/help/journey-headless/home.md) voor een introductie van begin tot eind, zowel in de vorm van kranten als in de manier waarop AEM dit ondersteunt.
 
 ## Publiek {#audience}
 
 De taken die worden beschreven in de gids Aan de slag zonder hoofd zijn nodig voor een eenvoudige end-to-end demonstratie van AEM mogelijkheden zonder kop. Iedereen met beheerdertoegang tot een test AEM instantie kan deze gidsen volgen om hoofdloze levering in AEM te begrijpen, hoewel iemand met ontwikkelaarservaring ideaal is.
 
-In een productiesituatie worden de taken echter meerdere malen door verschillende personen uitgevoerd. Bijvoorbeeld:
+In een productiesituatie worden de taken doorgaans echter door verschillende personen uitgevoerd. Bijvoorbeeld:
 
-* **Beheerders** hoeft u de initiële configuratie en mapstructuur voor de inhoud normaal slechts eenmaal of sporadisch in te stellen.
-* **Informatiearchitecten** in het algemeen zullen nieuwe modellen worden toegevoegd naarmate de behoeften van de organisatie zich ontwikkelen .
-* **Inhoudsauteurs** Hiermee wordt voortdurend nieuwe inhoud gemaakt als Inhoudsfragmenten op basis van de modellen die door de architecten zijn gedefinieerd.
+* **Beheerders** moet de initiële configuratie en mapstructuur voor de inhoud normaal slechts eenmaal of sporadisch instellen.
+* **Informatiearchitecten** nieuwe modellen toe te voegen naarmate de behoeften van de organisatie evolueren.
+* **Inhoudsauteurs** voortdurend inhoud maken als inhoudsfragmenten op basis van de modellen die door de architecten zijn gedefinieerd.
 
 Met de hulplijnen Aan de slag zonder kop wordt aangegeven wie de beschreven taken gewoonlijk uitvoert en hoe vaak.
 

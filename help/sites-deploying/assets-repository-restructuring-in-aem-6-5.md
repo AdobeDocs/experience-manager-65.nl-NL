@@ -1,38 +1,34 @@
 ---
 title: Herstructurering van activa Bewaarinstelling in AEM 6.5
-seo-title: Assets Repository Restructuring in AEM 6.5
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor Middelen.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Assets.
-uuid: 0e3d8163-6274-4d1b-91c7-32ca927fb83c
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in Adobe Experience Manager (AEM) 6.5 for Assets.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 feature: Upgrading
 exl-id: 28ddd23c-5907-4356-af56-ebc7589a2b5d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '1035'
+source-wordcount: '1041'
 ht-degree: 0%
 
 ---
 
 # Herstructurering van activa Bewaarinstelling in AEM 6.5 {#assets-repository-restructuring-in-aem}
 
-Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) op de pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.5 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM Assets-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
+Zoals beschreven op het bovenliggende element [Herstructurering van de depositaris in AEM 6.5](/help/sites-deploying/repository-restructuring.md) pagina, klanten die aan Adobe Experience Manager (AEM) 6.5 bevorderen zouden deze pagina moeten gebruiken om de het werkinspanning te beoordelen verbonden aan veranderingen in bewaarplaats die de Oplossing van AEM Assets beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.5 verbeteringsproces, terwijl anderen tot een toekomstige verbetering kunnen worden uitgesteld.
 
 **Met 6,5-upgrade**
 
 * [Dic](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc)
 
-**Voorafgaand aan toekomstige upgrade**
+**Voor toekomstige upgrade**
 
 * [E-mailmeldingssjabloon voor element-/verzamelingsgebeurtenis](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#asset-collection-event-e-mail-notification-template)
 * [Klassieke elementen delen](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#classic-asset-share-designs)
 * [E-mailmeldingssjabloon voor middelen downloaden](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#download-asset-e-mail-notification-template)
 * [Voorbeeld-DRM-licenties](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#example-drm-licenses)
 * [E-mailmeldingssjabloon voor delen van koppeling](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#link-share-e-mail-notification-template)
-* [InDesign Workflowscripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
+* [Workflowscripts voor InDesign](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#indesign-workflow-scripts)
 * [Configuraties voor videotransformatie](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#video-transcoding-configurations)
 * [Dic](/help/sites-deploying/assets-repository-restructuring-in-aem-6-5.md#misc2)
 
@@ -47,21 +43,21 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td>/etc/dam/job</td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td>/var/dam/job</td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Als een aangepaste code afhankelijk is van deze locatie (dat wil zeggen: de code baseert zich uitdrukkelijk op dit weg) dan moet de code worden bijgewerkt om de nieuwe plaats te gebruiken alvorens te bevorderen; In het ideale geval worden Java-API's gebruikt wanneer deze beschikbaar zijn om afhankelijkheden van een specifiek pad in de JCR te verminderen.</p> <p>Tijdelijke locatie om ZIP-bestand op te slaan zodat de client het kan downloaden. Er hoeft geen update te worden uitgevoerd omdat de client het element wil downloaden. Er wordt een bestand op de nieuwe locatie gegenereerd.</p> </td>
+   <td><p>Als om het even welke douanecode van deze plaats-dat afhangt, baseert de code zich uitdrukkelijk op dit weg-dan moet de code worden bijgewerkt om de nieuwe plaats te gebruiken alvorens te bevorderen. In het ideale geval worden Java™ API's gebruikt wanneer deze beschikbaar zijn om afhankelijkheden van een specifiek pad in de JCR te verminderen.</p> <p>Tijdelijke locatie voor het bewaren van een ZIP-bestand dat de client moet downloaden. Er hoeft geen update te worden uitgevoerd omdat de client het element wil downloaden. Er wordt een bestand op de nieuwe locatie gegenereerd.</p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
 
-## Voorafgaand aan toekomstige upgrade {#prior-to-upgrade}
+## Voor toekomstige upgrade {#prior-to-upgrade}
 
 ### E-mailmeldingssjabloon voor element-/verzamelingsgebeurtenis {#asset-collection-event-e-mail-notification-template}
 
@@ -72,16 +68,16 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/notification/email/default</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/dam/notification</code></p> <p><code>/apps/settings/dam/notification</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Als de e-mailsjablonen door de klant zijn gewijzigd, voert u de volgende handelingen uit om deze uit te lijnen op de nieuwe repository structuur:</p>
+   <td><p>Als de e-mailsjablonen door de klant zijn gewijzigd, voert u de volgende handelingen uit om deze uit te lijnen met de nieuwe repository-structuur:</p>
     <ol>
      <li>De <code>/libs/settings/dam/notification</code> e-mailsjabloon moet worden gekopieerd van <strong><code>/etc/notification/email/default</code></strong> tot <strong><code>/apps/settings/notification/email/default</code></strong>
       <ol>
-       <li>Omdat de bestemming binnen is<strong> <code>/apps</code></strong> deze wijziging moet in SCM worden voortgezet.</li>
+       <li>Omdat de bestemming binnen is<strong> <code>/apps</code></strong>, moet deze wijziging in SCM worden voortgezet.</li>
       </ol> </li>
      <li>De map verwijderen: <strong><code>/etc/dam/notification/email/default</code></strong> nadat de e-mailsjablonen in de sjablonen zijn verplaatst.<br />
       <ol>
@@ -91,7 +87,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -105,23 +101,23 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/designs/assetshare</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/assetshare</code></p> <p><code>/apps/settings/wcm/designs/assetshare</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime via de Dialogen van het Ontwerp worden geschreven, voer de volgende acties uit om aan het recentste model te richten:</p>
+   <td><p>Voor om het even welke Ontwerpen die in SCM worden beheerd, en niet aan in runtime als Dialogen van het Ontwerp worden geschreven, voer de volgende acties uit om aan het recentste model te richten:</p>
     <ol>
      <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie onder <code>/apps</code>.</li>
      <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">Clientbibliotheek</a> with <code>allowProxy = true</code>.</li>
-     <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster <code>cq:designPath</code> eigenschap via <strong>AEM &gt; DAM Admin &gt; Asset Share Page &gt; Page Properties &gt; Advanced Tab &gt; Design Field</strong>.</li>
-     <li>Werk pagina's bij die naar de vorige locatie verwijzen om de nieuwe categorie Clientbibliotheek te gebruiken. Hiervoor moet de code voor pagina-implementatie worden bijgewerkt.</li>
-     <li>Werk de regels van de Verzender bij om het dienen van de Bibliotheken van de Cliënt via toe te staan <code>/etc.clientlibs/</code> proxyservlet.</li>
-    </ol> <p>Voor om het even welke Ontwerpen die niet in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp worden beheerd, verplaats geen authorable ontwerpen uit <code>/etc</code>.</p> </td>
+     <li>Verwijzingen naar de vorige locatie bijwerken in het dialoogvenster <code>cq:designPath</code> eigendom via <strong>AEM &gt; DAM Admin &gt; Asset Share Page &gt; Page Properties &gt; Advanced Tab &gt; Design Field</strong>.</li>
+     <li>Als u de nieuwe categorie Clientbibliotheek wilt gebruiken, werkt u de pagina's bij die naar de vorige locatie verwijzen. Hiervoor moet de code voor pagina-implementatie worden bijgewerkt.</li>
+     <li>Werk de regels van de Verzender bij zodat u het dienen van de Bibliotheken van de Cliënt als <code>/etc.clientlibs/</code> proxyservlet.</li>
+    </ol> <p>Voor om het even welke Ontwerpen die niet in SCM, en gewijzigde runtime door middel van de Dialogen van het Ontwerp worden beheerd, beweeg geen authorable ontwerpen uit <code>/etc</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -135,7 +131,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/dam/workflow/notification/email/downloadasset</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/dam/workflownotification/email/downloadasset</code></p> <p><code>/apps/settings/dam/workflownotification/email/downloadasset</code></p> </td>
   </tr>
   <tr>
@@ -144,7 +140,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>De bijgewerkte e-mailsjabloon moet worden gekopieerd van <strong><code>/etc/dam/workflow/notification/email/downloadasset</code></strong> tot <strong><code>/apps/settings/dam/workflow/notification/email/downloadasset</code></strong>
       <ol>
-       <li>Omdat de bestemming binnen is<strong> <code>/apps</code></strong> deze wijziging moet in SCM worden voortgezet.</li>
+       <li>Omdat de bestemming binnen is<strong> <code>/apps</code></strong>, moet deze wijziging in SCM worden voortgezet.</li>
       </ol> </li>
      <li>De map verwijderen: <code>/etc/dam/workflow/notification/email/downloadasset </code>nadat de e-mailsjablonen in de sjablonen zijn verplaatst.<br />
       <ol>
@@ -154,7 +150,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>while <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> wordt technisch ondersteund voor opzoeken (heeft voorrang vóór /apps via gebruikelijke opzoekactie van Sling CAConfig, maar na <code>/etc</code>) kan de sjabloon in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Dit wordt echter niet aanbevolen omdat er geen runtime-interface is om het bewerken van de e-mailsjabloon te vergemakkelijken.</td>
+   <td>while <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code> wordt technisch ondersteund voor opzoeken (neemt voorrang voor /apps via de gebruikelijke opzoekfunctie van Sling CAConfig, maar na <code>/etc</code>) kan de sjabloon in <code>/conf/global/settings/dam/workflownotification/email/downloadasset</code>. Dit wordt echter niet aanbevolen omdat er geen runtime-interface is om het bewerken van de e-mailsjabloon te vergemakkelijken.</td>
   </tr>
  </tbody>
 </table>
@@ -163,9 +159,9 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 
 | **Vorige locatie** | `/etc/dam/drm/licenses/` |
 |---|---|
-| **Nieuwe locatie(s)** | `/libs/settings/dam/drm` |
-| **Herstructureringsrichtsnoeren** | N.v.t. |
-| **Notities** | N.v.t. |
+| **Nieuwe locatie of locaties** | `/libs/settings/dam/drm` |
+| **Herstructureringsrichtsnoeren** | NVT |
+| **Notities** | NVT |
 
 ### E-mailmeldingssjabloon voor delen van koppeling {#link-share-e-mail-notification-template}
 
@@ -176,7 +172,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/dam/adhocassetshare</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/dam/adhocassetshare</code></p> <p><code>/apps/settings/dam/adhocassetshare</code></p> </td>
   </tr>
   <tr>
@@ -185,7 +181,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>De bijgewerkte e-mailsjabloon moet worden gekopieerd van <strong><code>/etc/dam/adhocassetshare</code></strong> tot <strong><code>/apps/settings/dam/adhocassetshare</code></strong>
       <ol>
-       <li>Omdat de bestemming binnen is<strong> <code>/apps</code></strong> deze wijziging moet in SCM worden voortgezet.</li>
+       <li>Omdat de bestemming binnen is<strong><code>/apps</code></strong>, moet deze wijziging in SCM worden voortgezet.</li>
       </ol> </li>
      <li>De map verwijderen: <strong><code>/etc/dam/adhocassetshare</code></strong> nadat de e-mailsjablonen in de sjablonen zijn verplaatst.<br />
       <ol>
@@ -195,12 +191,12 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>while <code>/conf/global/settings/dam/adhocassetshare</code> wordt technisch ondersteund voor opzoeken (het heeft eerder prioriteit <code>/apps</code> via gebruikelijke Sling CAConfig lookup, maar na <code>/etc</code>), kan de sjabloon in <code>/conf/global/settings/dam/adhocassetshare</code>. Dit wordt echter niet aanbevolen omdat er geen runtime-interface is om het bewerken van de e-mailsjabloon te vergemakkelijken</td>
+   <td>while <code>/conf/global/settings/dam/adhocassetshare</code> wordt technisch ondersteund voor opzoeken (het heeft eerder prioriteit <code>/apps</code> via de gebruikelijke zoekopdracht voor Sling CAConfig, maar na <code>/etc</code>), kan de sjabloon in <code>/conf/global/settings/dam/adhocassetshare</code>. Dit wordt echter niet aanbevolen omdat er geen runtime-interface is om het bewerken van de e-mailsjabloon te vergemakkelijken</td>
   </tr>
  </tbody>
 </table>
 
-### InDesign Workflowscripts {#indesign-workflow-scripts}
+### Workflowscripts voor InDesign {#indesign-workflow-scripts}
 
 <table>
  <tbody>
@@ -209,7 +205,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/dam/indesign/scripts</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/dam/indesign</code></p> <p><code>/apps/settings/dam/indesign</code></p> </td>
   </tr>
   <tr>
@@ -218,7 +214,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>Alle aangepaste of gewijzigde scripts kopiëren van <strong><code>/etc/dam/indesign/scripts</code></strong> tot <strong><code>/apps/settings/dam/indesign/scripts</code></strong><br />
       <ol>
-       <li>Alleen nieuwe of gewijzigde scripts die door AEM worden aangeboden, zijn beschikbaar via <strong><code>/libs/settings</code></strong> AEM 6,5</li>
+       <li>Alleen nieuwe of gewijzigde scripts kopiëren als niet-gewijzigde scripts die door AEM worden aangeboden, zijn beschikbaar als <strong><code>/libs/settings</code></strong> AEM 6,5</li>
       </ol> </li>
      <li>Zoek alle workflowmodellen die gebruikmaken van de Media Extraction Process WF Step en
       <ol>
@@ -243,12 +239,12 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/dam/video</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/dam/video</code></p> <p><code>/apps/settings/dam/video</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Aanpassingen op projectniveau moeten worden geknipt en geplakt onder een gelijkwaardige <code>/apps</code> of <code>/conf</code> paden, indien van toepassing.</p> <p>Uitlijnen met de AEM 6.4-opslagruimtestructuur:</p>
+   <td><p>Aanpassingen op projectniveau moeten worden geknipt en geplakt onder een equivalent niveau <code>/apps</code> of <code>/conf</code> paden, indien van toepassing.</p> <p>Uitlijnen met de AEM 6.4-opslagruimtestructuur:</p>
     <ol>
      <li>Gewijzigde videoconfiguraties kopiëren van <code>/etc/dam/video</code> tot <code>/apps/settings/dam/video</code></li>
      <li>Verwijderen <code>/etc/dam/video</code></li>
@@ -256,7 +252,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -270,20 +266,20 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/dam/presets/viewer</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/dam/dm/presets/viewer</code></p> <p><code>/conf/global/settings/dam/dm/presets/viewer</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
    <td><p>Voor de voorinstelling van de buitenste viewer is deze alleen beschikbaar op de nieuwe locatie.</p> <p>Voor de voorinstelling Aangepaste viewer:</p>
     <ul>
-     <li>u zult een migratiescript moeten in werking stellen om de knoop van te bewegen <code>/etc</code> tot <code>/conf</code>. Het script bevindt zich op <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
+     <li>een migratiescript in werking stellen zodat kunt u de knoop van bewegen <code>/etc</code> tot <code>/conf</code>. Het script bevindt zich op <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li>
      <li>of u kunt de configuratie bewerken en deze worden automatisch opgeslagen op de nieuwe locatie.</li>
-    </ul> <p>Merk op dat u hun copyURL/embed code niet moet aanpassen om aan te wijzen <code>/conf</code>. Het bestaande verzoek aan <code>/etc</code> wordt vanuit <code>/conf</code>.</p> </td>
+    </ul> <p>U hoeft de code copyURL/embed niet aan te passen om naar <code>/conf</code>. Het bestaande verzoek aan <code>/etc</code> wordt doorgestuurd naar de juiste inhoud vanuit <code>/conf</code>.</p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -297,7 +293,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><code>/etc/clientlibs/foundation/asseteditor</code></p> <p><code>/etc/clientlibs/foundation/assetshare</code></p> <p><code>/etc/clientlibs/foundation/assetinsights</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/dam/clientlibs</code></td>
   </tr>
   <tr>
@@ -306,7 +302,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>

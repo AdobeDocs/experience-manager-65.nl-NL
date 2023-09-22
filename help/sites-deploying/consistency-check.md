@@ -1,27 +1,23 @@
 ---
 title: Consistentie- en reiscontroles
-seo-title: Consistency and Traversal Checks
 description: Leer hoe u consistentiecontroles en transversale controles uitvoert.
-seo-description: Learn how to perform consistency and traversal checks.
-uuid: 0304e378-7c60-4bf5-9052-d01149d2a6df
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
-discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
 feature: Configuring
 exl-id: 10dde29b-5dc7-4d4e-80ae-3d4fd0397f7e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '153'
 ht-degree: 0%
 
 ---
 
 # Consistentie- en reiscontroles{#consistency-and-traversal-checks}
 
-Bij de upgrade kunnen er problemen optreden als gevolg van inconsistenties in de werkruimte. U kunt of een testverbetering in werking stellen om te zien of zal dit een kwestie zijn, of de consistentiecontroles als preventieve actie in werking stellen.
+Tijdens de upgrade kunnen er problemen optreden als gevolg van inconsistenties in de werkruimte. U kunt een testupgrade uitvoeren om te zien of dit een probleem is, of de consistentiecontroles uitvoeren als een preventieve actie.
 
-Als u een testverbetering in werking stelt die wegens werkruimteinconsistenties ontbreekt zult u ingangen gelijkend op het volgende in crx-quickstart/logs/crx/error.log zien:
+Als u een testverbetering in werking stelt die wegens werkruimteinconsistenties ontbreekt, ziet u ingangen gelijkend op het volgende in crx-quickstart/logs/crx/error.log:
 
 ```xml
 *ERROR* TarPersistenceManager: No bundle found for uuid 'deadbeef-cafe-babe-cafe-babecafebabe'
@@ -33,7 +29,7 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Een consistentiecontrole uitvoeren {#perform-a-consistency-check}
 
-Als u een consistentiecontrole wilt uitvoeren, navigeert u naar de beheerpagina voor JMX Mbean** com.adobe.granite (Repository)**. Ga in het AEM hoofdscherm naar:
+Als u een consistentiecontrole wilt uitvoeren, navigeert u naar de beheerpagina voor JMX Mbean **com.adobe.granite (opslagplaats)**. Ga in het AEM hoofdscherm naar:
 
 **Gereedschappen > Webconsole > Main (op menubalk) > JMX > com.adobe.granite (opslagplaats)**
 

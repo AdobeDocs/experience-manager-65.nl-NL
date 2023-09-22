@@ -1,18 +1,16 @@
 ---
 title: Basisafhandeling bij gebruik van de AEM-ontwerpomgeving
-description: Geniet van comfortabel navigeren AEM en het basisgebruik ervan
-uuid: c78ef9da-e0bd-47be-a410-9cf2ae71749a
+description: Geniet van comfortabel navigeren door Adobe Experience Manager en het basisgebruik ervan.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 21181a6f-b434-40ed-8eb1-ebdfc98964dd
 docset: aem65
 exl-id: ef1a3997-feb4-4cb0-9396-c8335b69bb10
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
 workflow-type: tm+mt
-source-wordcount: '3017'
-ht-degree: 3%
+source-wordcount: '2987'
+ht-degree: 2%
 
 ---
 
@@ -20,9 +18,9 @@ ht-degree: 3%
 
 >[!NOTE]
 >
->* Deze pagina is ontworpen om een overzicht van basisbehandeling te geven wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de **Sites** console als basis.
+>* Deze pagina is ontworpen om een overzicht te geven van de basisverwerking bij gebruik van de Adobe Experience Manager (AEM) Author-omgeving. Het gebruikt de **Sites** console als basis.
 >
->* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
+>* Bepaalde functionaliteit is niet in alle consoles beschikbaar en in sommige consoles is mogelijk aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit wordt meer in detail besproken op andere pagina&#39;s.
 >* Sneltoetsen zijn beschikbaar in alle AEM. Met name wanneer [consoles gebruiken](/help/sites-authoring/keyboard-shortcuts.md) en [pagina&#39;s bewerken](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 >
 
@@ -44,21 +42,21 @@ Onmiddellijk nadat u zich hebt aangemeld, arriveert u op de [Navigatievenster](#
 >
 >Voor een goed inzicht in het basisgebruik van AEM is dit document gebaseerd op de **Sites** console.
 >
->Klik of tik op **Sites** aan de slag.
+>Klik of tik op **Sites**.
 
 ### Productnavigatie {#product-navigation}
 
-Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Neem een minuut om te klikken of door te tikken voor een goed overzicht van de basisbehandeling van AEM.
+Wanneer een gebruiker eerst tot een console toegang heeft, wordt een zelfstudie over productnavigatie gestart. Klik of tik door zodat u een goed overzicht krijgt van de basisbehandeling van AEM.
 
 ![Productnavigatie](assets/bh-02.png)
 
 Klikken of tikken **Volgende** om naar de volgende pagina van het overzicht te gaan. Klikken of tikken **Sluiten** of klik of tik buiten het overzichtsdialoogvenster om te sluiten.
 
-Het overzicht zal de volgende keer opnieuw beginnen u tot een console toegang hebt tenzij u of alle dia&#39;s bekijkt of de optie controleert **Dit niet meer weergeven**.
+Het overzicht begint opnieuw de volgende keer u tot een console toegang hebt tenzij u of alle dia&#39;s bekijkt of de optie controleert **Dit niet meer weergeven**.
 
 ## Algemene navigatie {#global-navigation}
 
-U kunt tussen de consoles navigeren met het algemene navigatievenster. Dit wordt geactiveerd als een vervolgkeuzelijst met volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
+U kunt tussen de consoles navigeren met het algemene navigatievenster. Deze wordt geactiveerd als een vervolgkeuzelijst op volledig scherm wanneer u op de Adobe Experience Manager-koppeling klikt of tikt linksboven in het scherm.
 
 U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluiten** om terug te keren naar uw vorige locatie.
 
@@ -66,7 +64,7 @@ U kunt het globale navigatievenster sluiten door te klikken of te tikken **Sluit
 
 >[!NOTE]
 >
->Wanneer u zich voor het eerst aanmeldt, hebt u de **Navigatie** deelvenster.
+>Wanneer u zich voor het eerst aanmeldt, wordt de **Navigatie** deelvenster
 
 Globale navigatie heeft twee deelvensters, weergegeven door pictogrammen aan de linkermarge van het scherm:
 
@@ -81,7 +79,7 @@ Het navigatievenster biedt toegang tot de AEM consoles:
 
 ![Navigatie](assets/bh-01.png)
 
-De titel van het browsertabblad wordt aangepast aan uw locatie wanneer u door de consoles en inhoud navigeert.
+De titel van het browsertabblad wordt bijgewerkt zodat deze uw locatie weerspiegelt terwijl u door de consoles en inhoud navigeert.
 
 Vanuit Navigatie zijn de beschikbare consoles:
 
@@ -105,7 +103,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Ervaringsfragmenten</td>
-   <td>An <a href="/help/sites-authoring/experience-fragments.md">ervaren, fragment</a> is een stand-alone ervaring die kan worden hergebruikt over kanalen en variaties hebben, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bespaart.</td>
+   <td>An <a href="/help/sites-authoring/experience-fragments.md">Ervaar fragment</a> is een stand-alone ervaring die tussen kanalen kan worden hergebruikt en variaties heeft, die het probleem van het herhaaldelijk kopiëren en het kleven ervaringen of delen van ervaringen bewaart.</td>
   </tr>
   <tr>
    <td>Forms</td>
@@ -117,11 +115,11 @@ Vanuit Navigatie zijn de beschikbare consoles:
   </tr>
   <tr>
    <td>Projecten</td>
-   <td>De <a href="/help/sites-authoring/touch-ui-managing-projects.md">De console van projecten geeft u directe toegang tot uw projecten</a>. Projecten zijn virtuele dashboards. Zij kunnen worden gebruikt om een team te bouwen, dan dat teamtoegang tot middelen, werkschema's en taken te geven, die mensen toestaan om aan een gemeenschappelijk doel te werken. <br /> </td>
+   <td>De <a href="/help/sites-authoring/touch-ui-managing-projects.md">De console van projecten geeft u directe toegang tot uw projecten</a>. Projecten zijn virtuele dashboards. Zij kunnen worden gebruikt om een team te bouwen, dan dat teamtoegang tot middelen, werkschema's, en taken te geven, toestaand mensen om aan een gemeenschappelijk doel te werken. <br /> </td>
   </tr>
   <tr>
    <td>Schermen</td>
-   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Schermen</a> Hiermee kunt u al uw klantgerichte schermen, van elke grootte en op elke locatie beheren.</td>
+   <td><a href="https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/authoring/setting-up-projects/creating-a-screens-project.html">Schermen</a> laat u al uw klant-onder ogen ziende schermen, van om het even welke grootte en in om het even welke plaats beheren.</td>
   </tr>
   <tr>
    <td>Sites</td>
@@ -132,7 +130,7 @@ Vanuit Navigatie zijn de beschikbare consoles:
 
 ### Deelvenster Gereedschappen {#tools-panel}
 
-In het deelvenster Gereedschappen bevat elke optie in het zijpaneel een reeks submenu&#39;s. De [Gereedschapsconsoles](/help/sites-administering/tools-consoles.md) Hier beschikbaar biedt u toegang tot een aantal gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.
+In het deelvenster Gereedschappen bevat elke optie in het zijpaneel een reeks submenu&#39;s. De [Gereedschapsconsoles](/help/sites-administering/tools-consoles.md) Hier beschikbaar biedt u toegang tot verschillende gespecialiseerde gereedschappen en consoles die u helpen uw websites, digitale middelen en andere aspecten van de opslagplaats voor inhoud te beheren.
 
 ![Deelvenster Gereedschappen](assets/bh-04.png)
 
@@ -144,7 +142,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
 * [Algemene navigatie](#navigatingconsolesandtools)
 
-  Selecteer de **Adobe Experience Manager** koppeling om tussen consoles te navigeren.
+  Selecteer de **Adobe Experience Manager** de verbinding waar u tussen consoles kunt navigeren.
 
   ![de Adobe Experience Manager-koppeling](assets/screen_shot_2018-03-23at103615.png)
 
@@ -154,7 +152,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   U kunt ook de opdracht [sneltoets](/help/sites-authoring/keyboard-shortcuts.md) `/` (forward slash) om het zoeken vanuit elke console aan te roepen.
 
-* [Oplossingen](https://www.adobe.com/experience-cloud.html)
+* [Oplossingen](https://business.adobe.com/)
 
   ![Oplossingen](do-not-localize/screen_shot_2018-03-23at103552.png)
 
@@ -166,7 +164,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   ![Meldingen](do-not-localize/screen_shot_2018-03-23at103558.png)
 
-  Dit pictogram wordt gemarkeerd met het aantal momenteel toegewezen onvolledige meldingen.
+  Dit pictogram is gemarkeerd met het aantal momenteel toegewezen onvolledige berichten.
 
   >[!NOTE]
   >
@@ -188,9 +186,9 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   ![Broodkruimels](assets/bh-05.png)
 
-  In het midden van de spoorstaaf, en altijd tonend de beschrijving van het momenteel geselecteerde punt, laten de broodkruimels u binnen een specifieke console navigeren. In de console van Plaatsen, kunt u door de niveaus van uw website navigeren.
+  Wordt in het midden van de spoorstaaf weergegeven en geeft altijd de beschrijving van het geselecteerde item weer. Met de broodkruimels kunt u navigeren binnen een specifieke console. In de console van Plaatsen, kunt u door de niveaus van uw website navigeren.
 
-  Klik gewoon op de tekst van de broodkruimel om een vervolgkeuzelijst weer te geven met de niveaus van de hiërarchie van het momenteel geselecteerde item. Klik op een bericht om naar die locatie te gaan.
+  Als u op de tekst van de broodkruimel klikt, wordt een vervolgkeuzelijst geopend met de niveaus van de hiërarchie van het geselecteerde item. Klik op een item om naar die locatie te gaan.
 
   ![Hiërarchieniveaus](assets/bh-06.png)
 
@@ -198,7 +196,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   ![Tijdsperiode voor analyse](assets/screen_shot_2018-03-23at104126.png)
 
-  Dit is alleen beschikbaar in de lijstweergave. Zie [lijstweergave](#list-view) voor meer informatie .
+  Dit is alleen beschikbaar in de lijstweergave. Zie de klasse [lijstweergave](#list-view).
 
 * **Maken** knop
 
@@ -212,7 +210,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   ![Kolomweergave](assets/bh-07.png)
 
-  U kunt schakelen tussen de kolomweergave, de kaartweergave en de lijstweergave. In de lijstweergave worden ook de weergave-instellingen weergegeven.
+  U kunt schakelen tussen de kolomweergave, de kaartweergave en de lijstweergave. In de lijstweergave worden de weergave-instellingen weergegeven.
 
   ![Weergaven omwisselen](assets/bh-09.png)
 
@@ -220,7 +218,7 @@ De koptekst staat altijd boven aan het scherm. Hoewel de meeste opties in de kop
 
   U kunt alleen met het toetsenbord door een website navigeren. Hierbij wordt de standaardbrowserfunctionaliteit van het **TAB** toets (of **OPT+TAB**) om u te verplaatsen tussen elementen op de pagina die *scherpgesteld*.
 
-  In de **Sites** console daar is de toegevoegde optie aan  **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar als u *tab* door de kopbalopties, en versnelt uw navigatie door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
+  In de **Sites** console, is er de toegevoegde optie aan  **Overslaan naar hoofdinhoud**. Dit wordt zichtbaar als u *tab* door de kopbalopties, en versnelt uw navigatie door u toe te staan om de standaardelementen in de (product) toolbar over te slaan en u rechtstreeks aan de belangrijkste inhoud te nemen.
 
   ![Overslaan naar hoofdinhoud](assets/bh-30.png)
 
@@ -230,13 +228,13 @@ Er zijn verschillende beschikbare Help-bronnen:
 
 * **Console, werkbalk**
 
-  Afhankelijk van uw locatie **Help** het pictogram zal de aangewezen middelen openen:
+  Afhankelijk van uw locatie **Help** het pictogram opent de aangewezen middelen:
 
   ![Console, werkbalk](assets/bh-10.png)
 
 * **Navigatie**
 
-  De eerste keer dat u door het systeem navigeert, [een reeks dia&#39;s introduceert AEM navigatie](/help/sites-authoring/basic-handling.md#product-navigation).
+  De eerste keer dat u door het systeem navigeert, [een reeks dia &#39; s introduceert AEM navigatie](/help/sites-authoring/basic-handling.md#product-navigation).
 
 * **Pagina-editor**
 
@@ -246,11 +244,11 @@ Er zijn verschillende beschikbare Help-bronnen:
 
   Navigeren in dit overzicht zoals u [overzicht van productnavigatie](/help/sites-authoring/basic-handling.md#product-navigation) wanneer eerst het openen van om het even welke console.
 
-  Van de [**Pagina-informatie** menu dat u kunt selecteren **Help**](/help/sites-authoring/author-environment-tools.md#accessing-help) om dit op elk moment weer te tonen.
+  Van de **Pagina-informatie** kunt u [**Help**](/help/sites-authoring/author-environment-tools.md#accessing-help) om dit op elk moment weer te tonen.
 
 * **Tools Console**
 
-  Van de **Gereedschappen** console u tot de externe **Bronnen**:
+  Van de **Gereedschappen** console, kunt u tot externe **Bronnen**:
 
    * **Documentatie**
 De documentatie van het Web Experience Management weergeven
@@ -262,7 +260,7 @@ Bronnen en downloads voor ontwikkelaars
   >
   >Met de sneltoets hebt u op elk gewenst moment toegang tot een overzicht van de beschikbare sneltoetsen `?` (vraagteken) wanneer in een console.
   >
-  >Raadpleeg de volgende documentatie voor een overzicht van alle sneltoetsen:
+  >Raadpleeg de volgende secties voor een overzicht van alle sneltoetsen:
   >
   >* [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
   >* [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
@@ -271,15 +269,15 @@ Bronnen en downloads voor ontwikkelaars
 
 Wanneer een bron wordt geselecteerd (bijvoorbeeld een pagina of een element), worden verschillende handelingen aangegeven met pictogrammen met een uitleg op de werkbalk. Deze acties zijn afhankelijk van:
 
-* De huidige console.
-* De huidige context.
-* Of u nu [selectiemodus](#navigatingandselectionmode).
+* De huidige console
+* De huidige context
+* Als u binnen [selectiemodus](#navigatingandselectionmode) of
 
-De actie die beschikbaar is op de werkbalk, wijzigt in de richting van de acties die u kunt uitvoeren op de specifieke geselecteerde items.
+De acties die beschikbaar zijn op de werkbalk, veranderen in overeenstemming met de acties die u kunt uitvoeren op de specifieke geselecteerde items.
 
 Hoe u [een bron selecteren](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) is afhankelijk van de weergave.
 
-Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden er extra opties weergegeven. Als u op het beletselteken (de drie stippen of **...**) klikt of tikt, wordt een vervolgkeuzelijst geopend met alle resterende acties. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites**-console:
+Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer worden dan de beschikbare ruimte. Als dit gebeurt, worden extra opties weergegeven. Op de ellips klikken of erop tikken (de drie stippen of **...**) opent u een vervolgkeuzelijst met alle resterende handelingen. Nadat u bijvoorbeeld een pagina hebt geselecteerd in de **Sites**-console:
 
 ![Werkbalk Handelingen](assets/bh-12.png)
 
@@ -289,9 +287,9 @@ Vanwege de ruimtebeperkingen in sommige vensters kan de werkbalk snel langer wor
 
 ## Snelle handelingen {#quick-actions}
 
-In [Kaartweergave](#cardviewquickactions) bepaalde acties zijn beschikbaar als snelactiepictogrammen en bevinden zich op de werkbalk. Er zijn snelactiepictogrammen beschikbaar voor één item tegelijk, zodat u geen voorselectie hoeft te maken.
+In [Kaartweergave](#cardviewquickactions)bepaalde handelingen zijn beschikbaar als snelactiepictogrammen en op de werkbalk. Er zijn snelactiepictogrammen beschikbaar voor één item tegelijk, zodat u geen voorselectie hoeft te maken.
 
-De snelle acties zijn zichtbaar wanneer u de muis boven een resourcepard (bureaubladapparaat) houdt. De snelle beschikbare acties kunnen van de console en de context afhangen. Hier ziet u bijvoorbeeld de snelle acties voor een pagina in het dialoogvenster **Sites** console:
+De snelle acties zijn zichtbaar wanneer u de muis boven (desktopapparaat) een bronkaart houdt. De snelle beschikbare acties kunnen van de console en de context afhangen. Hier ziet u bijvoorbeeld de snelle acties voor een pagina in het dialoogvenster **Sites** console:
 
 ![Snelle handelingen](assets/bh-13.png)
 
@@ -312,7 +310,7 @@ U kunt uw bronnen weergeven, doorbladeren en selecteren (voor verdere actie) met
 
 ### Bronnen selecteren {#selecting-resources}
 
-Het selecteren van een specifieke bron is afhankelijk van een combinatie van de weergave en het apparaat:
+Het selecteren van een specifieke bron hangt af van een combinatie van de weergave en het apparaat:
 
 <table>
  <tbody>
@@ -326,12 +324,12 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
     </ul> </td>
   </tr>
   <tr>
@@ -339,12 +337,12 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
    <td>
     <ul>
      <li>Desktop:<br /> Beweging, dan gebruik de controletekens snelle actie</li>
-     <li>Mobiel apparaat:<br /> Tik en houd de kaart ingedrukt</li>
+     <li>Mobiele apparaten:<br /> Tik en houd de kaart ingedrukt</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de kaart</li>
-     <li>Mobiel apparaat:<br /> Tik op de kaart</li>
+     <li>Mobiele apparaten:<br /> Tik op de kaart</li>
     </ul> </td>
   </tr>
   <tr>
@@ -352,12 +350,12 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
     </ul> </td>
    <td>
     <ul>
      <li>Desktop:<br /> Klik op de miniatuur</li>
-     <li>Mobiel apparaat:<br /> Tik op de miniatuur</li>
+     <li>Mobiele apparaten:<br /> Tik op de miniatuur</li>
     </ul> </td>
   </tr>
  </tbody>
@@ -367,9 +365,9 @@ Het selecteren van een specifieke bron is afhankelijk van een combinatie van de 
 
 U kunt alle items in elke weergave selecteren door op de knop **Alles selecteren** in de rechterbovenhoek van de console.
 
-* In **Kaartweergave** alle kaarten worden geselecteerd.
-* In **Lijstweergave** alle items in de lijst worden geselecteerd.
-* In **Kolomweergave** alle items in de kolom uiterst links worden geselecteerd.
+* In **Kaartweergave**, worden alle kaarten geselecteerd.
+* In **Lijstweergave**, worden alle items in de lijst geselecteerd.
+* In **Kolomweergave**, worden alle items in de kolom uiterst links geselecteerd.
 
 ![Alles selecteren](assets/screen-shot_2019-03-05at094659.png)
 
@@ -377,7 +375,7 @@ U kunt alle items in elke weergave selecteren door op de knop **Alles selecteren
 
 In alle gevallen waarin u items selecteert, wordt het aantal geselecteerde items rechtsboven op de werkbalk weergegeven.
 
-U kunt de selectie van alle items opheffen en de selectiemodus afsluiten door:
+U kunt alle items deselecteren en de selectiemodus afsluiten door:
 
 * klikken of tikken op de knop **X** naast de telling,
 
@@ -385,7 +383,7 @@ U kunt de selectie van alle items opheffen en de selectiemodus afsluiten door:
 
 ![Deselecteren](assets/bh-14.png)
 
-In alle weergaven kan de selectie van alle items worden opgeheven door op escape op het toetsenbord te tikken als u een desktopapparaat gebruikt.
+In alle weergaven kunt u de selectie van alle items opheffen door op escape op het toetsenbord te tikken als u een bureaubladapparaat gebruikt.
 
 #### Voorbeeld selecteren {#selecting-example}
 
@@ -393,9 +391,9 @@ In alle weergaven kan de selectie van alle items worden opgeheven door op escape
 
    ![Selecteren - Kaartweergave](assets/bh-15.png)
 
-1. Zodra u een middel hebt geselecteerd, wordt de hoogste kopbal behandeld door [werkbalk Handelingen](#actionstoolbar) die toegang biedt tot acties die momenteel van toepassing zijn op de geselecteerde bron.
+1. Wanneer u een bron hebt geselecteerd, wordt de bovenste koptekst bedekt door de [werkbalk Handelingen](#actionstoolbar) die toegang biedt tot acties die momenteel van toepassing zijn op de geselecteerde bron.
 
-   Als u de selectiemodus wilt afsluiten, selecteert u de **X** rechtsboven, of gebruik **ontsnappen**.
+   Als u de selectiemodus wilt afsluiten, selecteert u de optie **X** rechtsboven, of gebruik **ontsnappen**.
 
 ### Kolomweergave {#column-view}
 
@@ -403,16 +401,16 @@ In alle weergaven kan de selectie van alle items worden opgeheven door op escape
 
 In de kolomweergave kunt u een visuele navigatie van een inhoudsstructuur uitvoeren door een reeks trapsgewijze kolommen. Met deze weergave kunt u de boomstructuur van uw website visualiseren en doorlopen.
 
-Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bronnen in een kolom rechts weergegeven. Als u een bron in de rechterkolom selecteert, worden de onderliggende bronnen in een andere kolom rechts weergegeven, enzovoort.
+Als u een bron selecteert in de kolom uiterst links, worden de onderliggende bronnen weergegeven in een kolom aan de rechterkant. Als u een bron in de rechterkolom selecteert, worden de onderliggende bronnen in een andere kolom rechts weergegeven, enzovoort.
 
-* U kunt omhoog en omlaag in de boom navigeren door op de middelnaam of chevron rechts van de middelnaam te tikken of te klikken.
+* U kunt omhoog en omlaag navigeren in de boom door op de middelnaam of de chevron rechts van de middelnaam te tikken of te klikken.
 
-   * De naam en het chevron van de bron worden gemarkeerd wanneer hierop wordt getikt of erop wordt geklikt.
+   * De naam en het chevron van de bron worden gemarkeerd wanneer u hierop tikt of erop klikt.
 
      ![Kolomweergave](assets/bh-17.png)
 
    * De kinderen van het geklikte/geplakte middel worden getoond in de kolom rechts van het aangeklikte/geplakte middel.
-   * Als u op een middelnaam tikt of klikt die geen kinderen heeft, zullen zijn details in de definitieve kolom worden getoond.
+   * Als u tikt of op een middelnaam klikt die geen kinderen heeft, worden zijn details getoond in de definitieve kolom.
 
 * Als u op de miniatuur tikt of erop klikt, wordt de bron geselecteerd.
 
@@ -422,7 +420,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
      ![Kolomweergave](assets/bh-18.png)
 
-  Wanneer een pagina in kolomweergave is geselecteerd, wordt de geselecteerde pagina samen met de volgende details weergegeven in de definitieve kolom:
+  Wanneer een pagina wordt geselecteerd in kolomweergave, wordt de geselecteerde pagina samen met de volgende details weergegeven in de laatste kolom:
 
    * Paginatitel
    * Paginanaam (onderdeel van de URL van de pagina)
@@ -440,7 +438,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
    * Een visuele weergave van de pagina-inhoud.
    * De paginatitel.
    * Belangrijke datums (zoals laatst bewerkt, laatst gepubliceerd).
-   * Als de pagina is vergrendeld, verborgen of deel uitmaakt van een livecopy.
+   * De pagina is vergrendeld, verborgen of maakt deel uit van een live kopie.
    * Indien van toepassing, wanneer u actie moet ondernemen als onderdeel van een workflow.
 
       * Markeertekens die aangeven dat handelingen vereist zijn, kunnen betrekking hebben op items in uw [Inbox](/help/sites-authoring/inbox.md).
@@ -456,7 +454,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 ![Lijstweergave](assets/bh-19.png)
 
 * De lijstmening maakt een lijst van informatie voor elke middel op het huidige niveau.
-* U kunt omlaag door de boom navigeren door op de middelnaam te tikken/te klikken en file door te gebruiken [broodkruimels in de koptekst](/help/sites-authoring/basic-handling.md#the-header).
+* U kunt omlaag door de boom navigeren door op de middelnaam en steun te tikken/te klikken door te gebruiken [broodkruimels in de koptekst](/help/sites-authoring/basic-handling.md#the-header).
 
 * Als u alle items in de lijst gemakkelijk wilt selecteren, gebruikt u het selectievakje linksboven in de lijst.
 
@@ -464,14 +462,14 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
    * Wanneer alle items in de lijst zijn geselecteerd, wordt dit selectievakje ingeschakeld.
 
-      * Klik of tik checkbox om allen te schrappen.
+      * Als u alles wilt deselecteren, klikt of tikt u op het selectievakje.
 
    * Wanneer slechts enkele punten worden geselecteerd, verschijnt het met een minteken.
 
-      * Klik of tik checkbox om allen te selecteren.
-      * Klik of tik opnieuw checkbox om allen te schrappen.
+      * Als u alles wilt selecteren, klikt of tikt u op het selectievakje.
+      * Als u alle selecties wilt opheffen, klikt of tikt u nogmaals op het selectievakje.
 
-* Selecteer de kolommen die u wilt weergeven **Instellingen weergeven** onder de knop Weergaven. De volgende kolommen zijn beschikbaar voor weergave:
+* Selecteer de kolommen die u wilt weergeven met de **Instellingen weergeven** onder de knop Weergaven. De volgende kolommen zijn beschikbaar voor weergave:
 
    * **Naam** - Paginanaam, die nuttig kan zijn in een meertalige ontwerpomgeving omdat deze deel uitmaakt van de URL van de pagina en niet wordt gewijzigd, ongeacht de taal
    * **gewijzigd** - Datum van laatste wijziging en laatst gewijzigd door gebruiker
@@ -485,7 +483,7 @@ Als u een bron in de kolom uiterst links selecteert, worden de onderliggende bro
 
   ![Instellingen weergeven - Kolommen configureren](assets/bh-21.png)
 
-  Standaard worden de **Naam** wordt een kolom weergegeven die een deel van de URL voor de pagina uitmaakt. In sommige gevallen moet de auteur pagina&#39;s in een andere taal openen en kan het nuttig zijn de naam van de pagina (die gewoonlijk onveranderlijk is) te zien als de auteur de taal van de pagina niet kent.
+  Standaard worden de **Naam** wordt een kolom weergegeven die een deel van de URL voor de pagina uitmaakt. Soms moet de auteur pagina&#39;s openen die in een andere taal zijn. Het kan nuttig zijn de naam van de pagina (die gewoonlijk onveranderlijk is) te zien als de auteur de taal van de pagina niet kent.
 
 * Wijzig de volgorde van de items met de gestippelde verticale balk helemaal rechts van elk item in de lijst.
 
@@ -523,7 +521,7 @@ Als alleen inhoud wordt geselecteerd, wordt alleen het pictogram van de spoorsta
 
 Met de inhoudsstructuur kunt u snel door de sitehiërarchie in het zijpaneel navigeren en veel informatie over de pagina&#39;s in de huidige map bekijken.
 
-Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijstmening of kaartmening, kunnen de gebruikers gemakkelijk de hiërarchische structuur van het project zien en gemakkelijk over de inhoudsstructuur met de kant-paneel van de inhoudsboom navigeren, evenals gedetailleerde paginainformatie in de lijstmening.
+Met het zijpaneel van de inhoudsboomstructuur met een lijstmening of kaartmening, kunnen de gebruikers de hiërarchische structuur van het project gemakkelijk zien. Ze kunnen gemakkelijk door de inhoudsstructuur navigeren met het zijpaneel van de inhoudsstructuur en gedetailleerde pagina-informatie weergeven in de lijstweergave.
 
 ![Inhoudsstructuur](assets/bh-26.png)
 
@@ -535,7 +533,7 @@ Met behulp van het zijpaneel van de inhoudsstructuur in combinatie met een lijst
 
 ### Tijdlijn {#timeline}
 
-De tijdlijn kan worden gebruikt om gebeurtenissen weer te geven en/of te initiëren die op de geselecteerde bron zijn opgetreden. U opent de tijdlijnkolom met de railkiezer:
+De tijdlijn kan worden gebruikt om gebeurtenissen te bekijken en/of te initiëren die op de geselecteerde bron zijn voorgekomen. U opent de tijdlijnkolom met de railkiezer:
 
 In de tijdlijnkolom kunt u:
 
@@ -550,13 +548,13 @@ In de tijdlijnkolom kunt u:
       * [Versies](/help/sites-authoring/working-with-page-versions.md)
       * [Workflows](/help/sites-authoring/workflows-applying.md)
 
-         * met uitzondering van [tijdelijke workflows](/help/sites-developing/workflows.md#transient-workflows) omdat er voor deze objecten geen historische gegevens zijn opgeslagen
+         * behalve voor [tijdelijke workflows](/help/sites-developing/workflows.md#transient-workflows) omdat er voor deze methoden geen geschiedenisgegevens zijn opgeslagen
 
       * en Alles tonen
 
-* [Opmerkingen over het geselecteerde item toevoegen/weergeven. ](#timelineaddingandviewingcomments) Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Als u een opmerking typt die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
+* [Opmerkingen over het geselecteerde item toevoegen/weergeven. ](#timelineaddingandviewingcomments) Het vak **Opmerking** wordt onder aan de lijst met gebeurtenissen weergegeven. Door een opmerking te typen die wordt gevolgd door Return, wordt de opmerking geregistreerd. Deze wordt weergegeven wanneer **Opmerkingen** of **Alles weergeven** is geselecteerd.
 
-* Specifieke consoles hebben extra functionaliteit. In de Sites-console kunt u bijvoorbeeld:
+* Specifieke consoles hebben extra functionaliteit. In de Sites-console kunt u bijvoorbeeld het volgende doen:
 
    * [Een versie opslaan](/help/sites-authoring/working-with-page-versions.md#creatinganewversiontouchoptimizedui).
    * [Een workflow starten](/help/sites-authoring/workflows-applying.md#startingaworkflowfromtherail).
@@ -575,12 +573,12 @@ Deze opties zijn toegankelijk via de chevron naast de **Opmerking** veld.
 * Content references:
 
    * koppelingen van andere pagina&#39;s naar de geselecteerde pagina
-   * inhoud die is geleend van en/of geleend aan de geselecteerde pagina door de component Reference
+   * inhoud die door de component Reference van de geselecteerde pagina is geleend of geleend, of beide
 
 ![bh-28](assets/bh-28.png)
 
 ### Filter {#filter}
 
-Hiermee wordt een deelvenster geopend dat vergelijkbaar is met [zoeken](/help/sites-authoring/search.md) terwijl de juiste locatiefilters al zijn ingesteld, kunt u de inhoud die u wilt bekijken verder filteren.
+Hiermee wordt een deelvenster geopend dat lijkt op [zoeken](/help/sites-authoring/search.md)met de juiste locatiefilters ingesteld, zodat u de inhoud die u wilt bekijken verder kunt filteren.
 
 ![Filter](assets/bh-29.png)

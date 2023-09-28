@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: 54bed871375ddc9d18af564318ceac95dd1dd2f9
+source-git-commit: d76fce58973bd011b53a5da41578b57a8e10912e
 workflow-type: tm+mt
-source-wordcount: '3667'
+source-wordcount: '3694'
 ht-degree: 0%
 
 ---
@@ -707,7 +707,7 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.18.0-relea
 - Microsoft® Windows Server 2019 (64-bits)
 - Microsoft® Active Directory 2016
 
-De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.18.0-release op 2 juni 2022:
+De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.17.0 release op 2 juni 2022:
 
 - Microsoft® SharePoint 2016
 
@@ -731,15 +731,14 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 relea
 - Microsoft® Office 2016
 - OpenOffice 4.1.2
 
-<!--
+
 >[!NOTE]
 >
->The platforms marked as [deprecated on with AEM Forms 6.5.12.0 and 6.5.10.0 remain in support until AEM Forms 6.5 Service Pack 18 (6.5.18.0) release](https://helpx.adobe.com/support/programs/eol-matrix.html).
--->
+Een vervangen platform blijft ondersteuning ontvangen totdat het platform gemarkeerd is als verwijderd of de ondersteuning van een externe leverancier voor het platform het einde van de levensduur bereikt, afhankelijk van wat het eerst komt.
 
 ## Revisie-overzicht {#revision-history}
 
-- 31 aug. 2023
+- 6.5.18.0 (31 augustus 2023)
    - **Platformupdates**: [!DNL Adobe Experience Manager Forms] op JEE heeft ondersteuning toegevoegd voor de volgende platforms:
       - MongoDB Enterprise 4.4
       - Oracle WebLogic Server 14c
@@ -768,7 +767,7 @@ De volgende platforms zijn gemarkeerd als verouderd met AEM Forms 6.5.10.0 relea
       - OpenOffice 4.1.2
       - Acrobat 2017 (Classic track) versie 17.011.30078 of hoger
 
-- 01 sep. 2022
+- 6.5.10.0 (1 september 2022)
 
    - Toegevoegde ondersteuning voor Oracle Java™ SE 11 (64-bits) SDK voor toepassingsserver JBoss® EAP 7.4.
 

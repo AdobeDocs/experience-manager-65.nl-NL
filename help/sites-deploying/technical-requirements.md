@@ -3,9 +3,9 @@ title: Technische vereisten
 description: Een lijst met de ondersteunde client- en serverplatforms voor Adobe Experience Manager.
 topic-tags: platform
 exl-id: 47529b9a-c4e5-434f-ac26-b01714ff863b
-source-git-commit: 8336a7257d3c5e75cd37381b0124c227c2d55dca
+source-git-commit: 0dd6e3fc2fa9539e5c3ce4e99ab367752dfeaad6
 workflow-type: tm+mt
-source-wordcount: '3544'
+source-wordcount: '3597'
 ht-degree: 0%
 
 ---
@@ -75,15 +75,15 @@ Adobe raadt deze configuraties aan en biedt volledige ondersteuning als onderdee
 
 ## Ondersteunde platforms {#supported-platforms}
 
-### Virtuele Java-machines™ {#java-virtual-machines}
+### Java™ Virtuele machines {#java-virtual-machines}
 
-De toepassing vereist een virtuele Java-machine™ die wordt geleverd door de JDK-distributie (Java™ Development Kit).
+De toepassing vereist dat een Java™ Virtual Machine wordt uitgevoerd, die wordt geleverd door de JDK-distributie (Java™ Development Kit).
 
-Adobe Experience Manager werkt met de volgende versies van de virtuele Java-machines™:
+Adobe Experience Manager werkt met de volgende versies van Java™ Virtual Machines:
 
 >[!CAUTION]
 >
->Volg de beveiligingsbulletins van de Java™-leverancier. Hiermee wordt de veiligheid van productieomgevingen gewaarborgd. Installeer ook altijd de nieuwste Java™-updates.
+>Volg de beveiligingsbulletins van de Java™-leverancier. Dit garandeert de veiligheid en beveiliging van productieomgevingen. Installeer ook altijd de nieuwste Java™-updates.
 
 | **Platform** | **Ondersteuningsniveau** | **Koppeling** |
 |---|---|---|
@@ -117,8 +117,8 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 | Amazon S3 | Binden | A: Ondersteund |
 | Microsoft® Azure Blob Storage | Binden | A: Ondersteund |
 | MongoDB Enterprise 4.4 | Bewaarplaats | A: Ondersteund `[2, 3, 4]` |
-| MongoDB Enterprise 4.2 | Repository | A: Ondersteund `[2, 3, 4]` |
-| MongoDB Enterprise 4.0 | Repository | Z: Niet ondersteund |
+| MongoDB Enterprise 4.2 | Bewaarplaats | A: Ondersteund `[2, 3, 4]` |
+| MongoDB Enterprise 4.0 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.6 | Bewaarplaats | Z: Niet ondersteund |
 | MongoDB Enterprise 3.4 | Bewaarplaats | Z: Niet ondersteund |
 | IBM® DB2® 10.5 | Opslagplaats en Forms-database | R: Beperkte ondersteuning `[5]` |
@@ -132,6 +132,9 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 1. Delen via MongoDB wordt niet ondersteund in AEM.
 1. MongoDB Storage Engine WiredTiger wordt alleen ondersteund.
 1. Ondersteund voor AEM Forms-upgradeklanten. Niet ondersteund voor nieuwe installaties.
+1. Alleen van toepassing op AEM Forms:
+   * Verwijderd steun voor Gegevensbestand van het Oracle 12c en toegevoegde steun voor Gegevensbestand van het Oracle 19c.
+   * Verwijderde ondersteuning voor Microsoft® SQL Server 2016 en toegevoegde ondersteuning voor Microsoft® SQL Server 2019.
 
 >[!NOTE]
 >
@@ -139,15 +142,15 @@ Zie [Gemeenschappen inzetten](/help/communities/deploy-communities.md) voor aanv
 
 >[!NOTE]
 >
-MongoDB is een software-programma van derden en is niet opgenomen in het AEM licentiepakket. Zie de pagina met het [MongoDB-licentiebeleid](https://www.mongodb.com/licensing/server-side-public-license/faq) voor meer informatie.
+MongoDB is een software-programma van derden en is niet opgenomen in het AEM licentiepakket. Zie de klasse [Beleid voor MongoDB-licenties](https://www.mongodb.com/licensing/server-side-public-license/faq) pagina.
 >
-Als u optimaal wilt profiteren van uw AEM-distributie met MongoDB, raadt Adobe aan om een licentie te kopen voor de MongoDB enterprise-versie om te profiteren van professionele ondersteuning. Zie [Aanbevolen distributies](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie.
+Om optimaal gebruik te maken van uw AEM implementatie met MongoDB, raadt Adobe aan een licentie te verlenen voor de versie van MongoDB Enterprise om te profiteren van professionele ondersteuning. Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#prerequisites-and-recommendations-when-deploying-aem-with-mongomk) voor meer informatie .
 >
 De licentie bevat een standaardset met replica&#39;s die is samengesteld uit een primaire en twee secundaire instanties die kunnen worden gebruikt voor de auteur of voor de publicatie-implementaties.
 >
-Als u zowel de auteur als de publicatie op MongoDB wilt uitvoeren, moet u twee aparte licenties aanschaffen.
+Als u zowel auteur als publicatie op MongoDB wilt uitvoeren, moeten twee afzonderlijke licenties worden aangeschaft.
 >
-De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van MongoDB met AEM.
+De klantenservice van Adobe helpt in aanmerking komende problemen met betrekking tot het gebruik van MongoDB met AEM.
 >
 Zie de klasse [Pagina MongoDB voor Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
 
@@ -155,9 +158,9 @@ Zie de klasse [Pagina MongoDB voor Adobe Experience Manager](https://www.mongodb
 >
 Ondersteunde relationele databases zoals hierboven vermeld, zijn software van derden en zijn niet opgenomen in het AEM licentiepakket.
 >
-Om AEM 6.5 met een gesteunde relationele gegevensbestand in werking te stellen, wordt een afzonderlijk steuncontract met een gegevensbestandverkoper vereist. De klantenservice van Adobe helpt in aanmerking komende problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
+Om AEM 6.5 met een gesteunde relationele gegevensbestand in werking te stellen, wordt een afzonderlijk steuncontract met een gegevensbestandverkoper vereist. De Klantenservice van de Adobe helpt kwalificerende problemen met betrekking tot het gebruik van relationele databases met AEM 6.5.
 >
-**De meeste relationele databases worden momenteel ondersteund binnen Level-R op AEM 6.5, dat wordt geleverd met ondersteuningscriteria en een ondersteuningsprogramma zoals vermeld in de bovenstaande Level-R beschrijving.**
+**De meeste relationele gegevensbanken worden momenteel ondersteund in niveau-R op AEM 6.5, dat vergezeld gaat van steuncriteria en een steunprogramma zoals vermeld in de bovenstaande beschrijving van niveau-R.**
 
 ### Servlet-engines/toepassingsservers {#servlet-engines-application-servers}
 
@@ -172,12 +175,14 @@ De minimaal vereiste Servlet API-versie is Servlet 3.1
 | IBM® WebSphere® Application Server Continuous Delivery (LibertyProfile) met Web Profile 7.0 en IBM® JRE 1.8 | R: Beperkte steun voor nieuwe contracten `[2]` |
 | IBM® WebSphere® Application Server 9.0 en IBM® JRE 1.8 | R: Beperkte steun voor nieuwe contracten `[1]` `[2]` |
 | Apache Tomcat 8.5.x | R: Beperkte steun voor nieuwe contracten `[2]` |
-| JBoss® EAP 7.2.x met JBoss® Application Server | Z: wordt niet ondersteund |
-| JBoss® EAP 7.1.4 met JBoss-toepassingsserver® | R: Beperkte ondersteuning voor nieuwe contracten `[1]` `[2]` |
-| JBoss® EAP 7.0.x met JBoss-toepassingsserver® | Z: Niet ondersteund |
+| JBoss® EAP 7.2.x met JBoss® Application Server | Z: Niet ondersteund |
+| JBoss® EAP 7.1.4 met JBoss® Application Server | R: Beperkte steun voor nieuwe contracten `[1]` `[2]` |
+| JBoss® EAP 7.0.x met JBoss® Application Server | Z: Niet ondersteund |
 
 1. Aanbevolen voor implementaties met AEM Forms.
 1. De aanvang AEM 6.5 plaatsingen op toepassingsservers beweegt zich aan Beperkte Steun. Bestaande klanten kunnen upgraden naar AEM 6.5 en blijven toepassingsservers gebruiken. Voor nieuwe klanten wordt het geleverd met steuncriteria en een steunprogramma zoals die in de hierboven beschreven Niveau-R beschrijving worden vermeld.
+1. Alleen van toepassing op AEM Forms:
+   * Verwijderde ondersteuning voor JBoss® EAP 7.1.4 en extra ondersteuning voor JBoss® EAP 7.4.10.
 
 ### Serverbesturingssystemen {#server-operating-systems}
 
@@ -190,7 +195,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 | Linux®, gebaseerd op SUSE®-distributie | A: Ondersteund `[1]` |
 | Microsoft® Windows Server 2019 `[4]` | R: Beperkte steun voor nieuwe contracten `[5]` |
 | Microsoft® Windows Server 2016 `[4]` | R: Beperkte steun voor nieuwe contracten `[5]` |
-| Microsoft® Windows Server 2012 R2 | Z: Niet ondersteund |
+| Microsoft® Windows Server 2012 R2 | Z: wordt niet ondersteund |
 | Oracle Solaris™ 11 | Z: Niet ondersteund |
 | IBM® AIX® 7.2 | Z: Niet ondersteund |
 
@@ -199,12 +204,13 @@ Adobe Experience Manager werkt met de volgende serverplatforms voor productieomg
 1. Linux®-distributie ondersteund door Adobe Managed Services.
 1. Microsoft® Windows-productieimplementaties worden ondersteund voor klanten die upgraden naar versie 6.5 en voor niet-productiegebruik. Nieuwe distributies zijn op aanvraag voor AEM Sites en Assets.
 1. AEM-formulieren worden ondersteund op Microsoft® Window Server zonder beperkingen op ondersteuningsniveau R.
+1. AEM Forms heeft de ondersteuning voor Microsoft® Windows Server 2016 verwijderd.
 
 >[!NOTE]
 >
 Als u AEM Forms 6.5 installeert, controleert u of u de volgende 32-bits versie van Microsoft® Visual C++ hebt geïnstalleerd.
 >
-* Herdistribueerbare microsoft® Visual C++ 2008
+* Microsoft® Visual C++ 2008 herdistribueerbaar
 * Microsoft® Visual C++ 2010 herdistribueerbaar
 * Microsoft® Visual C++ 2012 herdistribueerbaar
 * Microsoft® Visual C++ 2013 herdistribueerbaar
@@ -214,13 +220,13 @@ Als u AEM Forms 6.5 installeert, controleert u of u de volgende 32-bits versie v
 
 ### Virtuele en cloud computeromgevingen {#virtual-cloud-computing-environments}
 
-Adobe Experience Manager wordt ondersteund voor het uitvoeren van een virtuele machine in cloud computing-omgevingen. Deze omgevingen omvatten als Microsoft® Azure en Amazon Web Services (AWS), die wordt uitgevoerd in overeenstemming met de technische vereisten op deze pagina en volgens de standaardondersteuningsvoorwaarden van Adobe.
+Adobe Experience Manager wordt ondersteund bij uitvoering in een virtuele machine in cloudcomputeromgevingen. Deze omgevingen zijn onder andere Microsoft® Azure en Amazon Web Services (AWS), die worden uitgevoerd in overeenstemming met de technische vereisten die op deze pagina worden vermeld, en volgens de standaardondersteuningsvoorwaarden van de Adobe.
 
 Voor een cloud-native omgeving bekijkt u het nieuwste aanbod van de AEM productlijn: Adobe Experience Manager as a Cloud Service. Zie [Adobe Experience Manager as a Cloud Service-documentatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service.html?lang=en) voor meer informatie.
 
 Adobe biedt Adobe Managed Services ook de mogelijkheid om AEM in Azure of AWS te implementeren. Adobe Managed Services biedt experts ervaring en vaardigheden voor het implementeren en gebruiken van AEM in deze cloud computing-omgevingen. Zie [aanvullende documentatie over Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 
-In alle andere gevallen van implementatie van AEM op Azure of AWS, of in elke andere cloudcomputeromgeving, is ondersteuning van Adobe beperkt tot de virtuele computeromgeving. Die virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM dat wordt uitgevoerd in een van deze cloudomgevingen moet reproduceerbaar zijn, onafhankelijk van elke cloudservice die specifiek is voor de cloud computing-omgeving. Dat wil zeggen, tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
+In alle andere gevallen van implementatie van AEM op Azure of AWS, of in elke andere cloudcomputeromgeving, is ondersteuning van Adobe beperkt tot de virtuele computeromgeving. Die virtuele omgeving moet worden uitgevoerd in overeenstemming met de technische specificaties die op deze pagina worden vermeld. Elk gemeld probleem met betrekking tot AEM die in een van deze cloudomgevingen worden uitgevoerd, moet onafhankelijk van eventuele cloudservices die specifiek zijn voor de cloud computing-omgeving kunnen worden gereproduceerd. Dat wil zeggen, tenzij de cloudservice wordt ondersteund als onderdeel van de technische vereisten die op deze pagina worden vermeld, bijvoorbeeld Azure Blob-opslag of AWS S3.
 
 Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan rechtstreeks met de cloud provider te werken. Of u werkt samen met Adobe partners die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur, om aan uw specifieke prestaties, lading, scalability, en veiligheidsvereisten te voldoen.
 
@@ -234,7 +240,7 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 |---|---|
 | **Apache httpd 2.4.x** `[1,2]` | A: Ondersteund |
 | Microsoft® IIS 10 (Internet Information Server) | A: Ondersteund |
-| Microsoft® IIS 8.5 (Internet Information Server) | Z: wordt niet ondersteund |
+| Microsoft® IIS 8.5 (Internet Information Server) | Z: Niet ondersteund |
 
 1. Webservers die zijn gebaseerd op de Apache httpd-broncode, worden net zo ondersteund als de httpd-versie waarop deze is gebaseerd. In geval van twijfel, vraag Adobe om bevestiging van het steunniveau met betrekking tot het respectieve serverproduct. De volgende gevallen:
 
@@ -249,7 +255,7 @@ De volgende webservers worden ondersteund voor gebruik met Dispatcher versie 4.3
 
 De Adobe Experience Manager-gebruikersinterface werkt met de volgende clientplatforms. Alle browsers worden getest met de standaardset plug-ins en invoegtoepassingen.
 
-De AEM gebruikersinterface is geoptimaliseerd voor grotere schermen (doorgaans laptops en desktopcomputers) en tabletvormfactoren (zoals Apple iPad of Microsoft® Surface). De telefoonvormfactor wordt niet ondersteund.
+De AEM-gebruikersinterface is geoptimaliseerd voor grotere schermen (meestal notebooks en desktopcomputers) en tabletvorm (zoals Apple iPad of Microsoft® Surface). De telefoonvormfactor wordt niet ondersteund.
 
 >[!NOTE]
 >
@@ -265,7 +271,7 @@ De release van Mozilla Firefox, Google Chrome en Microsoft® Edge wordt elke paa
    <td><strong>Ondersteuning voor klassieke gebruikersinterface</strong></td>
   </tr>
   <tr>
-   <td><strong>Google Chrome (Evergreen)</strong></td>
+   <td><strong>Google Chrome (Chrome) (Chrome)</strong></td>
    <td>A: Ondersteund</td>
    <td>A: Ondersteund</td>
   </tr>
@@ -302,7 +308,7 @@ De release van Mozilla Firefox, Google Chrome en Microsoft® Edge wordt elke paa
   <tr>
    <td>Apple Safari op iOS 12.x</td>
    <td>A: Ondersteund [2]</td>
-   <td>Z: wordt niet ondersteund</td>
+   <td>Z: Niet ondersteund</td>
   </tr>
   <tr>
    <td>Apple Safari op iOS 11.x</td>
@@ -331,9 +337,9 @@ Wanneer u verbinding maakt met Microsoft® Windows 7+ met een AEM die niet met S
 
 1. Voeg de BasisAuthLevel registratieingang aan deze subkey toe gebruikend een waarde van 2 of meer.
 
-## Aanvullende platformnotities {#additional-platform-notes}
+## Aanvullende platformopmerkingen {#additional-platform-notes}
 
-Deze sectie biedt speciale notities en meer gedetailleerde informatie over het uitvoeren van Adobe Experience Manager en de invoegtoepassingen ervan.
+Deze sectie bevat speciale opmerkingen en meer gedetailleerde informatie over het uitvoeren van Adobe Experience Manager en invoegtoepassingen.
 
 ### IPv4 en IPv6 {#ipv-and-ipv}
 
@@ -355,13 +361,13 @@ Wanneer u een IP-adres moet opgeven, kunt u de volgende opties selecteren (indie
 
 AEM Dynamic Media is standaard uitgeschakeld. Zie hier [Dynamic Media inschakelen](/help/assets/config-dynamic.md#enabling-dynamic-media).
 
-Als Dynamic Media ingeschakeld is, zijn de volgende aanvullende technische voorschriften van toepassing.
+Als Dynamische media is ingeschakeld, zijn de volgende aanvullende technische vereisten van toepassing.
 
 >[!NOTE]
 >
-Deze systeemvereisten **alleen** toepassen als u Dynamic Media - Hybride modus gebruikt; Dynamic Media - Hybride modus heeft een ingebouwde imageserver, die alleen op bepaalde besturingssystemen is gecertificeerd.
+Deze systeemvereisten **zijn alleen** van toepassing als u dynamische media - hybride modus gebruikt. De modus Dynamic Media - Hybrid heeft een ingesloten afbeeldingsserver die alleen is gecertificeerd voor bepaalde besturingssystemen.
 >
-Voor Dynamic Media-klanten die de Dynamic Media-Scene7-modus uitvoeren (dat wil zeggen: **dynamicmedia_scene7** (run mode), zijn er geen extra systeemvereisten; slechts de zelfde systeemvereisten zoals AEM. Dynamic Media - Scene7-modusarchitectuur maakt gebruik van de op cloud gebaseerde beeldservice en niet van de service die is ingesloten in AEM.
+Voor klanten met dynamische media, scène7( **modus** dynamicmedia_scene7 uitvoeren), gelden geen extra systeemvereisten. Er gelden alleen dezelfde systeemvereisten als voor AEM. Dynamic Media - Scene7-modusarchitectuur maakt gebruik van de op cloud gebaseerde beeldservice en niet van de service die is ingesloten in AEM.
 
 #### Hardware {#hardware}
 
@@ -374,7 +380,7 @@ De volgende hardwarevereisten zijn van toepassing voor zowel Linux® als Windows
 
 Als u Dynamic Media op Linux® gebruikt, moet aan de volgende voorwaarden worden voldaan:
 
-* Red Hat® Enterprise 7 of CentOS 7 en hoger met de nieuwste herstelpatches
+* Red Hat® Enterprise 7 of CentOS 7 en hoger met de nieuwste correcties
 * 64-bits besturingssysteem
 * Wisselen uitgeschakeld (aanbevolen)
 * SELinux uitgeschakeld (zie onderstaande opmerking)
@@ -393,7 +399,7 @@ Als de landinstelling zo is ingesteld dat LC_CTYPE niet gelijk is aan `en_US.UTF
 >
 **NUMA-architectuur:** Systemen met processors met AMD64 en Intel® EM64T worden doorgaans geconfigureerd als niet-uniforme geheugenarchitectuurplatforms (NUMA). Dat wil zeggen dat de kernel meerdere geheugenknooppunten samenstelt bij opstarttijd in plaats van één geheugenknooppunt te maken.
 >
-De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer de geheugenuitputting gebeurt kan de pit besluiten om processen (bijvoorbeeld, de Server van het Beeld of de Server van het Platform) te doden alhoewel er beschikbaar geheugen is.
+De meervoudige knoopaannemer kan in geheugenuitputting op één of meerdere knopen resulteren alvorens andere knopen worden uitgeput. Wanneer geheugenuitputing optreedt kan de kernel besluiten om processen te doden (bijvoorbeeld de Image Server of Platform Server), ook al is er geheugen beschikbaar.
 >
 Daarom raadt Adobe aan dat als u een dergelijk systeem uitvoert dat u NUMA uitschakelt met de **optie numa=off** boot om te voorkomen dat de kernel deze processen doodt.
 
@@ -414,7 +420,7 @@ Voor Windows x64:
 
 * Microsoft® Visual Studio 2010 opnieuw distribueerbaar bij [https://www.microsoft.com/en-us/download/details.aspx?id=26999](https://www.microsoft.com/en-us/download/details.aspx?id=26999)
 * Microsoft® Visual Studio 2013 opnieuw distribueerbaar bij [https://www.microsoft.com/en-us/download/details.aspx?id=40784](https://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Herdistribueerbare microsoft® Visual Studio 2015 ophalen bij [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
+* Microsoft® Visual Studio 2015 opnieuw distribueerbaar krijgen op [https://www.microsoft.com/en-us/download/details.aspx?id=48145](https://www.microsoft.com/en-us/download/details.aspx?id=48145)
 
 Voor Windows x86:
 
@@ -422,7 +428,7 @@ Voor Windows x86:
 * Microsoft® Visual Studio 2013 opnieuw distribueerbaar bij [https://www.microsoft.com/en-in/download/details.aspx?id=40769](https://www.microsoft.com/en-in/download/details.aspx?id=40769)
 * Microsoft® Visual Studio 2015 opnieuw distribueerbaar krijgen op [https://www.microsoft.com/en-us/download/details.aspx?id=52685](https://www.microsoft.com/en-us/download/details.aspx?id=52685)
 
-#### Macos {#macos}
+#### macOS {#macos}
 
 * 10.9.x en hoger
 * Alleen ondersteund voor proefversie en demo-doeleinden
@@ -442,7 +448,7 @@ Voor Windows x86:
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Acrobat 2017 klassiek spoor</a> nieuwste versie (afgekeurd)</td>
+   <td><a href="https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html">Nieuwste versie van Acrobat 2017 Classic (</a> verouderd)</td>
    <td>XPS, afbeeldingsindelingen (BMP, GIF, JPEG, JPG, TIF, TIFF, PNG, JPF, JPX, JP2, J2K, J2C, JPC), HTML, HTM, DWG, DXF en DWF</td>
   </tr>
   <tr>
@@ -450,7 +456,7 @@ Voor Windows x86:
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
-   <td>Microsoft® Office 2016 (afgekeurd)</td>
+   <td>Microsoft® Office 2016 (verouderd)</td>
    <td>DOC, DOCX, XLS, XLSX, PPT, PPTX, RTF en TXT</td>
   </tr>
   <tr>
@@ -470,7 +476,7 @@ Voor Windows x86:
    <td>PUB</td>
   </tr>
   <tr>
-   <td>Microsoft® Project 2016 (afgekeurd)<br /> </td>
+   <td>Microsoft® Project 2016 (verouderd)<br /> </td>
    <td>MPP</td>
   </tr>
   <tr>
@@ -490,7 +496,7 @@ PDF Generator ondersteunt alleen de Engelse, Franse, Duitse en Japanse versies v
 >
 Daarnaast
 >
-* PDF Generator vereist een 32-bits versie van [Acrobat 2020 klassieke trackversie 20.004.3006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
+* PDF Generator vereist een 32-bits versie van [acrobat 2020 classic update versie 20.004.30006](https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html) of Acrobat 2017 versie 17.011.30078 om de conversie uit te voeren.
 * PDF Generator-conversies voor OpenOffice worden alleen ondersteund in Windows en Linux®.
 * PDF Generator biedt alleen ondersteuning voor de 32-bits versie van Microsoft® Office Professional Plus en andere software die vereist is voor conversie naar het Windows-besturingssysteem.
 * PDF Generator ondersteunt de 32-bits en 64-bits versies van OpenOffice op het Linux®-besturingssysteem.

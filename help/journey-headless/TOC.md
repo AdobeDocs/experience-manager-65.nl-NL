@@ -38,7 +38,7 @@ ht-degree: 18%
    + [Grondbeginselen van ontwerpen voor headless met AEM](author/basics.md)
    + [Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten](author/references.md)
    + [Meer informatie over het definiëren van metagegevens en tags voor inhoudsfragmenten](author/metadata-tagging.md)
-+ AEM doorlopende vertaalreis {#translation}
++ AEM doorsnedenloze vertaalreis {#translation}
    + [Begrijp zonder hoofd vertaling in AEM](translation/overview.md)
    + [Ga aan de slag met AEM headless vertaling](translation/getting-started.md)
    + [Meer informatie over inhoud zonder kop en hoe u kunt vertalen in AEM](translation/learn-about.md)

@@ -15,7 +15,7 @@ De aanvullende opmerkingen voor AEM belangrijke informatie over de nieuwste vers
 
 * [Opmerkingen bij de huidige release](/help/release-notes/release-notes.md)
 
-## AEM
+## Belangrijke AEM
 
 * [Aan de slag met AEM](https://experienceleague.adobe.com/docs/experience-manager-65.html)
 * [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
@@ -35,7 +35,7 @@ De aanvullende opmerkingen voor AEM belangrijke informatie over de nieuwste vers
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | Deze gids toont u de grondbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-exemplaar kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM project kunt beheren. |
-| [Handboek voor handel](/help/commerce/home.md) | Meer informatie over Commerce Integration Framework op AEM. |
+| [Handboek voor handel](/help/commerce/home.md) | Meer weten over Commerce integration framework op AEM? |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
 
 ## Belangrijke AEM

@@ -38,7 +38,7 @@ ht-degree: 25%
       + [Ontwikkelen met AEM](cif/develop.md)
       + [CIF-componenten opmaken](cif/customizing/style-cif-component.md)
       + [CIF-componenten aanpassen](cif/customizing/customize-cif-components.md)
-      + [CIF-cataloguskiezers gebruiken](cif/customizing/use-cif-pickers.md)
+      + [CIF cataloguskiezers gebruiken](cif/customizing/use-cif-pickers.md)
 + [Adobe Commerce PWA Studio](cif/pwa-studio/getting-started.md)
 + [Migratie](cif/migration.md)
 + Releaseopmerkingen {#release-notes}
@@ -51,13 +51,13 @@ ht-degree: 25%
    + [Overzicht](/help/commerce/cif-classic/home.md)
    + Implementeren {#deploying}
       + [Overzicht eCommerce](/help/commerce/cif-classic/deploying/ecommerce.md)
-      + [SAP Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
+      + [SAP-Commerce Cloud](/help/commerce/cif-classic/deploying/sap-commerce-cloud.md)
    + Beheer {#administering}
       + [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
       + [Concepten](/help/commerce/cif-classic/administering/concepts.md)
       + [Algemeen eCommerce beheren](/help/commerce/cif-classic/administering/generic.md)
-      + [SAP Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
+      + [SAP-Commerce Cloud](/help/commerce/cif-classic/administering/sap-commerce-cloud.md)
    + Ontwikkeling {#developing}
       + [eCommerce](/help/commerce/cif-classic/developing/ecommerce.md)
       + [Ontwikkelen (algemeen)](/help/commerce/cif-classic/developing/generic.md)
-      + [Ontwikkelen met SAP Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)
+      + [Ontwikkeling met SAP-Commerce Cloud](/help/commerce/cif-classic/developing/sap-commerce-cloud.md)

@@ -29,7 +29,7 @@ ht-degree: 9%
    + [Aanbevolen implementaties](recommended-deploys.md)
    + [Installeren van toepassingsserver](application-server-install.md)
    + [Aangepaste standalone installatie](custom-standalone-install.md)
-   + [Start en stop opdrachtregel](command-line-start-and-stop.md)
+   + [Start en stop van opdrachtregel](command-line-start-and-stop.md)
    + [Opslaan van knooppunten en gegevensopslag configureren in AEM 6](data-store-config.md)
    + [Revisie opschonen](revision-cleanup.md)
    + [Oak-query&#39;s en indexering](queries-and-indexing.md)

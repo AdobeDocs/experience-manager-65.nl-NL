@@ -66,7 +66,7 @@ ht-degree: 5%
    + [Een nieuwe AEM Mobile-app maken met de wizard Maken](phonegap-create-new-app.md)
    + [Mobiele toepassingen ontwerpen](phonegap-authoring-apps.md)
    + [App-tegel beheren](phonegap-app-details-tile.md)
-   + [AEM Mobile-inhoud aanpassen](phonegap-aem-mobile-content-personalization.md)
+   + [Aanpassing van AEM Mobile-content](phonegap-aem-mobile-content-personalization.md)
 + Adobe PhoneGap Enterprise ontwikkelen {#developphonegap}
    + [PhoneGap](developing-in-phonegap.md)
    + [Mobiele toepassingen maken](building-app-mobile-phonegap.md)
@@ -93,5 +93,5 @@ ht-degree: 5%
    + [Inhoud voor Adobe PhoneGap Enterprise beheren met AEM](administer-phonegap.md)
    + [Adobe PhoneGap Build-Cloud Service configureren](configure-phonegap-build-cloud.md)
    + [Het filter Referrer instellen op Leeg maken](setting-referrer-filter-empty.md)
-   + [Uw Adobe Mobile Services-Cloud Service configureren](configure-adobe-mobile-cloud-service.md)
+   + [Vorm uw Cloud Service van de Diensten van de Adobe Mobiele](configure-adobe-mobile-cloud-service.md)
    + [Uw gebruikers en gebruikersgroepen configureren](configure-users-groups.md)

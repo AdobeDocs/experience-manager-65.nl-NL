@@ -1,16 +1,12 @@
 ---
 title: Starten en stoppen van services
-seo-title: Starting and stopping services
 description: Leer hoe u services die aan AEM Forms-modules en de toepassingsserver en -database zijn gekoppeld, kunt starten en stoppen.
-seo-description: Learn how to start and stop services associated with AEM Forms modules and the application server and database.
-uuid: 8c831cb2-4165-4118-8a09-764cec4e5e05
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 exl-id: 55bf5196-22c6-4286-8c92-ff44d81dde49
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
@@ -22,7 +18,7 @@ ht-degree: 0%
 Er zijn twee soorten diensten die deel van AEM vormen uitmaken:
 
 * Services die de toepassingsserver en database voor AEM formulieren besturen.
-* Diensten die AEM vormen modules controleren
+* Diensten die AEM formuliermodules controleren
 
 ## De diensten verbonden aan AEM vormmodules beginnen of tegenhouden {#start-or-stop-the-services-associated-with-aem-forms-modules}
 

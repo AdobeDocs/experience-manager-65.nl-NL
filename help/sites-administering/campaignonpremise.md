@@ -1,14 +1,12 @@
 ---
 title: AEM 6.5 integreren met Adobe Campaign Classic
 description: Leer hoe u AEM 6.5 kunt integreren met Adobe Campaign Classic
-uuid: 3c998b0e-a885-4aa9-b2a4-81b86f9327d3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: df94dd1b-1b65-478b-a28d-81807a8084b1
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 8db2cadc83b26e04f9931e18c53db3bf0be03796
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1583'
 ht-degree: 0%
@@ -44,7 +42,7 @@ Dit document leidt u door elk van deze stappen in detail.
 * Toegang tot Adobe Campaign Classic voor beheerders
    * Om de integratie uit te voeren, hebt u een werkende instantie van Adobe Campaign Classic, met inbegrip van een gevormd gegevensbestand nodig.
    * Raadpleeg voor meer informatie over het instellen en configureren van Adobe Campaign Classic de [Adobe Campaign Classic-documentatie;](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) met name de gids Installatie en Configuratie.
-* Toegang van beheerders tot AEM
+* Toegang tot AEM beheerder
 
 ## Het AEM integratiepakket in de campagne installeren {#install-package}
 
@@ -78,9 +76,9 @@ Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt 
 
 1. Selecteren **Gereedschappen** -> **Verkenner** in de menubalk.
 
-1. Navigeer in de verkenner naar de **Beheer** > **Toegangsbeheer** > **Operatoren** knooppunt.
+1. Ga in de verkenner naar de **Administratie** > **Toegangsbeheer** > **Operatoren** knooppunt.
 
-1. Selecteer `aemserver` operator.
+1. Selecteer de `aemserver` operator.
 
 1. Op de **Bewerken** selecteert u de **Toegangsrechten** subtab en klik vervolgens op de knop **Bewerk de toegangsparameters...** koppeling.
 
@@ -108,13 +106,13 @@ Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt 
 
    * Als het configuratiebestand een afzonderlijke instelling voor de beveiligingszone bevat, wijzigt u de instelling `allowUserPassword` kenmerk naar `true`.
 
-1. Als u de Adobe Campaign Classic-serverpoort wilt wijzigen, vervangt u `8080` met de gewenste poort.
+1. Als u de Adobe Campaign Classic server poort wilt wijzigen, vervangt u `8080` met de gewenste poort.
 
    >[!CAUTION]
    >
    >Door gebrek, is er geen veiligheidsstreek die voor de exploitant wordt gevormd. Als u AEM verbinding wilt maken met Adobe Campaign, moet u een zone selecteren zoals in de vorige stappen wordt beschreven.
    >
-   >Adobe beveelt ten zeerste aan een beveiligingszone in te stellen die is gewijd aan AEM om beveiligingsproblemen te voorkomen. Raadpleeg voor meer informatie over dit onderwerp de [Adobe Campaign Classic-documentatie.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe beveelt ten zeerste aan een veiligheidszone in te stellen die is gewijd aan AEM om veiligheidsproblemen te voorkomen. Raadpleeg voor meer informatie over dit onderwerp de [Adobe Campaign Classic-documentatie.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. Ga in de Campagne-client terug naar de `aemserver` en selecteert u de **Algemeen** tab.
 
@@ -130,7 +128,7 @@ AEM [de operator die u al hebt ingesteld in Campagne](#create-operator) om te co
 
 1. Meld u als beheerder aan bij de AEM ontwerpinstantie.
 
-1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Cloud Services** > **Oudere Cloud Services** > **Adobe Campaign** en klik vervolgens op **Nu configureren**.
+1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Cloud Servicen** > **Oudere Cloud Servicen** > **Adobe Campaign** en klik vervolgens op **Nu configureren**.
 
    ![Adobe Campaign configureren](assets/configure-campaign-service.png)
 
@@ -154,7 +152,7 @@ AEM kan nu communiceren met Adobe Campaign.
 >
 >Zorg ervoor dat uw Adobe Campaign-server via internet bereikbaar is. AEM heeft geen toegang tot particuliere netwerken.
 
-## Replicatie naar AEM-publicatie-instantie configureren {#replication}
+## Replicatie configureren voor AEM publicatie-instantie {#replication}
 
 Campagne-inhoud wordt gemaakt door de auteurs van de inhoud op de AEM ontwerpinstantie. Dit exemplaar is typisch slechts intern beschikbaar bij uw organisatie. Als u inhoud, zoals afbeeldingen en elementen, toegankelijk wilt maken voor de ontvangers van uw campagne, moet u die inhoud publiceren.
 
@@ -170,7 +168,7 @@ Om replicatie van uw AEM auteursinstantie aan te vormen publiceer instantie:
 
 1. Tik of klik op **Bewerken** Selecteer vervolgens de **Vervoer** tab.
 
-1. Configureer de **URI** veld door de standaardwaarde te vervangen `localhost` waarde met het IP adres van de AEM het publiceren instantie.
+1. Vorm **URI** veld door de standaardwaarde te vervangen `localhost` waarde met het IP adres van de AEM het publiceren instantie.
 
    ![Tabblad Vervoer](assets/acc-transport-tab.png)
 
@@ -210,21 +208,21 @@ Als campagne moet communiceren met AEM, moet u een wachtwoord instellen voor de 
 1. Klik op de hoofdnavigatieconsole op **Gereedschappen** in het linkerspoor.
 1. Klik vervolgens op **Beveiliging** -> **Gebruikers** om de gebruikersbeheerconsole te openen.
 1. Zoek de `campaign-remote` gebruiker.
-1. Selecteer `campaign-remote` gebruiker en klik op **Eigenschappen** om de gebruiker te bewerken.
+1. Selecteer de `campaign-remote` gebruiker en klik op **Eigenschappen** om de gebruiker te bewerken.
 1. In de **Gebruikersinstellingen bewerken** venster, klikt u op **Wachtwoord wijzigen**.
 1. Geef de gebruiker een nieuw wachtwoord op en noteer het wachtwoord op een veilige locatie voor toekomstig gebruik.
 1. Klikken **Opslaan** om de wachtwoordwijziging op te slaan.
 1. Klikken **Opslaan en sluiten** om de wijzigingen in de `campaign-remote` gebruiker.
 
-## De externe AEM-account configureren in campagne {#acc-setup}
+## De externe AEM-account configureren in de campagne {#acc-setup}
 
-Wanneer [installeren **AEM integratie** pakket in Campaign,](#install-package) er wordt een externe account voor AEM gemaakt. Door deze externe account te configureren, kan Adobe Campaign verbinding maken met AEM, waardoor tweerichtingscommunicatie tussen de oplossingen mogelijk is.
+Wanneer [installeren **AEM integratie** pakket in campagne,](#install-package) er wordt een externe account voor AEM gemaakt. Door deze externe account te configureren, kan Adobe Campaign verbinding maken met AEM, waardoor tweerichtingscommunicatie tussen de oplossingen mogelijk is.
 
 1. Meld u met de clientconsole aan bij Adobe Campaign als beheerder.
 
 1. Selecteren **Gereedschappen** -> **Verkenner** in de menubalk.
 
-1. Navigeer in de verkenner naar de **Beheer** > **Platform** > **Externe rekeningen** knooppunt.
+1. Ga in de verkenner naar de **Administratie** > **Platform** > **Externe rekeningen** knooppunt.
 
    ![Externe rekeningen](assets/external-accounts.png)
 
@@ -238,11 +236,11 @@ Wanneer [installeren **AEM integratie** pakket in Campaign,](#install-package) e
 
    * **Server** - Het AEM serveradres van de auteur
       * De AEM auteurserver moet van de de serverinstantie van Adobe Campaign Classic bereikbaar zijn.
-      * Controleer of het serveradres **niet** eindigt in een slash.
+      * Controleer of het serveradres **niet** eindigt in een schuine streep.
    * **Account** - Standaard is dit de `campaign-remote` gebruiker die u instelt in AEM in het dialoogvenster [Wachtwoord voor externe gebruiker voor campagne instellen](#set-campaign-remote-password) stap.
    * **Wachtwoord** - Dit wachtwoord is hetzelfde als het `campaign-remote` gebruiker die u instelt in AEM in het dialoogvenster [Wachtwoord voor externe gebruiker voor campagne instellen](#set-campaign-remote-password) stap.
 
-1. Selecteer **Ingeschakeld** selectievakje.
+1. Selecteer de **Ingeschakeld** selectievakje.
 
 1. Klikken **Opslaan**.
 

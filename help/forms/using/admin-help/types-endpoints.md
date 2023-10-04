@@ -1,16 +1,12 @@
 ---
 title: Typen eindpunten
-seo-title: Types of endpoints
 description: Leer meer over de verschillende typen eindpunten.
-seo-description: Learn about the different types of endpoints.
-uuid: c899245c-14cc-4035-9440-95a5b6c1e47f
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 8fe572e0-8a53-4129-940f-3fdb990073fe
 exl-id: 380cab7f-e7f7-4cb7-bd20-ea530a349fac
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
@@ -29,7 +25,7 @@ De volgende soorten eindpunten kunnen aan de diensten worden toegevoegd. Niet al
 
 **E-mail:** Hiermee kan een gebruiker een service aanroepen door een e-mailbericht met een of meer bestandsbijlagen naar een opgegeven e-mailaccount te verzenden. Alvorens u een e-maileindpunt vormt, moet u de vereiste e-mailrekeningen vormen. (Zie E-maileindpunten configureren.)
 
-**Gecontroleerde map:** Laat een gebruiker toe om de dienst aan te halen door een dossier in een omslag te plaatsen, die met een bepaald interval wordt gescand. (Zie Gecontroleerde mapeindpunten configureren.)
+**Controlemap:** Laat een gebruiker toe om de dienst aan te halen door een dossier in een omslag te plaatsen, die met een bepaald interval wordt gescand. (Zie Gecontroleerde mapeindpunten configureren.)
 
 **TaskManager:** Laat een gebruiker van de Werkruimte toe om de dienst aan te halen.
 

@@ -1,5 +1,5 @@
 ---
-title: Ervaar de gepubliceerde site
+title: De gepubliceerde site beleven
 seo-title: Experience the Published Site
 description: Naar een gepubliceerde site bladeren
 seo-description: Browse to a published site
@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: dd0cbc05-a361-46bc-b9f1-d045f8f23890
 docset: aem65
 exl-id: ebc4e1e7-34f0-4f4e-9f00-178dfda23ce4
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
 
-# Ervaar de gepubliceerde site {#experience-the-published-site}
+# De gepubliceerde site beleven {#experience-the-published-site}
 
 ## Bladeren naar nieuwe site bij publicatie {#browse-to-new-site-on-publish}
 
@@ -48,7 +48,7 @@ Een anonieme sitebezoeker ziet het volgende in de gebruikersinterface:
 * De merkbanner
 * Menukoppelingen voor de componenten die zijn opgenomen in het referentiesjabloon voor sites.
 
-Als u verschillende koppelingen selecteert, bevindt de modus Alleen-lezen zich.
+Als u verschillende koppelingen selecteert, ziet u dat deze zich in de modus Alleen-lezen bevinden.
 
 ### Anonieme toegang tot JCR voorkomen {#prevent-anonymous-access-on-jcr}
 
@@ -56,7 +56,7 @@ Een bekende beperking stelt de inhoud van de communautaire site aan anonieme bez
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
-1. Ga naar https:// hostnaam:port/editor.html/content/site/sitename.html voor een AEM-auteurinstantie.
+1. Ga bij AEM instantie Auteur naar https:// hostnaam:port/editor.html/content/site/sitename.html.
 
    >[!NOTE]
    >
@@ -72,14 +72,14 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
 
    ![plaatsverificatie](assets/site-authentication.png)
 
-1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld: **/content/......./GetStarted**.
+1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld: **/content/..../GetStarted**.
 1. Publiceer de pagina.
 
 ## Vertrouwd lid van de Gemeenschap {#trusted-community-member}
 
-Deze ervaring gaat uit van [Aaron McDonald](/help/communities/tutorials.md#demo-users) is toegewezen aan de rollen van [gemeenschapsbeheerder en moderator](/help/communities/create-site.md#roles). Zo niet, ga dan terug naar de auteursomgeving [de site-instellingen wijzigen](/help/communities/sites-console.md#modifying-site-properties) en selecteer Aaron McDonald als gemeenschapsleider en moderator.
+Deze ervaring gaat uit van [Aaron McDonald](/help/communities/tutorials.md#demo-users) is toegewezen aan de rollen van [gemeenschapsbeheerder en moderator](/help/communities/create-site.md#roles). Zo niet, ga dan terug naar de auteursomgeving naar [de site-instellingen wijzigen](/help/communities/sites-console.md#modifying-site-properties) en selecteer Aaron McDonald als gemeenschapsleider en moderator.
 
-Selecteer in de rechterbovenhoek de optie `Log in`en ondertekenen met gebruikersnaam (aaron.mcdonald@mailinator.com) en wachtwoord (wachtwoord). Meld u aan met Twitter- of Facebook-referenties.
+Selecteer in de rechterbovenhoek `Log in`en ondertekenen met gebruikersnaam (aaron.mcdonald@mailinator.com) en wachtwoord (wachtwoord). U kunt zich aanmelden met Twitter- of Facebook-referenties.
 
 ![aanmelden](assets/login.png)
 
@@ -92,7 +92,7 @@ Zodra u bent aangemeld als lid van de geregistreerde gemeenschap, ziet u de volg
    1. Stel nieuwe directe berichten samen om naar individuen en groepen te verzenden.
 
 * [Meldingen](/help/communities/notifications.md) deze optie geeft u door naar de sectie Meldingen, waarin u uw belangwekkende gebeurtenissen kunt bekijken en de berichtinstellingen kunt bewerken.
-* [Beheer](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatie voorrechten hebt.
+* [Administratie](/help/communities/published-site.md#moderationlink) leidt u aan de Pagina van de Moderatie van AEM Communities, als u moderatie voorrechten hebt.
 
 ![beheersen](assets/adminscreen.png)
 
@@ -177,7 +177,7 @@ De koppelingen van de groep worden weergegeven onder de koppelingen van de hoofd
 
 ![grouplink2](assets/grouplink2.png)
 
-Navigeer bij de auteur - met beheerdersrechten naar de [console Gemeenschappen-groepen](/help/communities/members.md) en voegt Weston McCall toe aan de `Community Engage Gymnastics <uid> Members` groep.
+Navigeer bij de auteur - met beheerdersrechten naar de [console Gemeenschappen/Groepen](/help/communities/members.md) en voegt Weston McCall toe aan de `Community Engage Gymnastics <uid> Members` groep.
 
 Als u doorgaat met publiceren, meldt u zich af als Aaron McDonald en bekijkt u de groepen in de Sports Group als anonieme bezoeker van de site:
 
@@ -202,7 +202,7 @@ Ga bijvoorbeeld naar **auteur** -instantie, opent u de `engage` in de [Community
 
 ### Moderniseringskoppeling {#moderationlink}
 
-Wanneer het lid van de gemeenschap moderatie voorrechten heeft, dan zal de verbinding van de Moderatie zichtbaar zijn en het selecteren van het zal de geposte communautaire inhoud tonen en het toestaan om te zijn [gematigd](/help/communities/moderate-ugc.md) op een wijze die vergelijkbaar is met die van [moderatieconsole](/help/communities/moderation.md) in de ontwerpomgeving.
+Wanneer het lid van de gemeenschap moderatie voorrechten heeft, dan zal de verbinding van de Moderatie zichtbaar zijn en het selecteren van het zal de geposte communautaire inhoud tonen en het toestaan om te zijn [gematigd](/help/communities/moderate-ugc.md) op vergelijkbare wijze als de [moderatieconsole](/help/communities/moderation.md) in de ontwerpomgeving.
 
 Gebruik de knop Vorige van de browser om terug te keren naar de gepubliceerde site. De meeste consoles zijn niet toegankelijk via globale navigatie in de publicatieomgeving.
 
@@ -223,7 +223,7 @@ Standaard is het e-mailadres de aanmeldings-id. Als deze optie is uitgeschakeld,
 
 Nadat u de naam, het e-mailadres en het wachtwoord van de gebruiker hebt opgegeven, selecteert u `Sign Up` wordt de gebruiker gemaakt en kan deze ondertekenen.
 
-Na aanmelding is de eerste weergegeven pagina `Profile` pagina, die ze kunnen aanpassen.
+Zodra u bent aangemeld, wordt de eerste pagina weergegeven met hun `Profile` pagina, die ze kunnen aanpassen.
 
 ![profiel](assets/profile.png)
 

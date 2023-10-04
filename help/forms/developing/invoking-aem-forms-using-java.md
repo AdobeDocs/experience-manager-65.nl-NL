@@ -1,17 +1,13 @@
 ---
 title: AEM Forms aanroepen met de JavaAPI
-seo-title: Invoking AEM Forms using the JavaAPI
 description: Gebruik de AEM Forms Java API voor het vervoerprotocol van RMI voor verre aanroeping, vervoer van VM voor lokale aanroeping, ZEEP voor verre aanroeping, verschillende authentificatie, zoals gebruikersnaam en wachtwoord, en synchrone en asynchrone aanroepingsverzoeken.
-seo-description: Use the AEM Forms Java API for RMI transport protocol for remote invocation, VM transport for local invocation, SOAP for remote invocation, different authentication, such as user name and password, and synchronous and asynchronous invocation requests.
-uuid: 5e2fef2a-05f3-4283-8fd3-2d7dca411000
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
-discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '5398'
 ht-degree: 0%
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-AEM Forms kan worden aangeroepen door de AEM Forms Java API te gebruiken. Wanneer u de AEM Forms Java API gebruikt, kunt u de Invocation API- of Java-clientbibliotheken gebruiken. Java-clientbibliotheken zijn beschikbaar voor services zoals de service Rights Management. Deze sterk getypte APIs laten u toepassingen ontwikkelen Java die AEM Forms aanhalen.
+AEM Forms kan worden aangeroepen met de AEM Forms Java API. Wanneer u de AEM Forms Java API gebruikt, kunt u de Invocation API- of Java-clientbibliotheken gebruiken. Java-clientbibliotheken zijn beschikbaar voor services zoals de service Rights Management. Met deze sterk getypeerde API&#39;s kunt u Java-toepassingen ontwikkelen die AEM Forms aanroepen.
 
 De oproepings-API zijn klassen die zich bevinden in de `com.adobe.idp.dsc` pakket. Met deze klassen kunt u een aanroepingsverzoek rechtstreeks naar een service verzenden en een geretourneerde aanroepingsreactie afhandelen. Gebruik de oproepings-API om kortstondige of langlevende processen aan te roepen die met Workbench zijn gemaakt.
 
@@ -32,8 +28,8 @@ De Java API ondersteunt de volgende functies:
 
 * Het vervoerprotocol van RMI voor verre aanroeping
 * VM-transport voor lokale aanroeping
-* SOAP voor externe aanroep
-* Verschillende verificatie, zoals gebruikersnaam en wachtwoord
+* SOAP voor externe aanroeping
+* Andere verificatie, zoals gebruikersnaam en wachtwoord
 * Synchrone en asynchrone oproepverzoeken
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](#including-aem-forms-java-library-files)
@@ -54,10 +50,10 @@ De Java API ondersteunt de volgende functies:
 
 ## Inclusief AEM Forms Java-bibliotheekbestanden {#including-aem-forms-java-library-files}
 
-Als u een AEM Forms-service programmatisch wilt aanroepen met de Java API, neemt u de vereiste bibliotheekbestanden (JAR-bestanden) op in het klassepad van uw Java-project. De JAR-bestanden die u in het klassenpad van de clienttoepassing opneemt, zijn afhankelijk van verschillende factoren:
+Als u een AEM Forms-service programmatisch wilt aanroepen met de Java API, neemt u de vereiste bibliotheekbestanden (JAR-bestanden) op in het klassepad van uw Java-project. De JAR-bestanden die u in het klassepad van uw clienttoepassing opneemt, zijn afhankelijk van verschillende factoren:
 
 * De AEM Forms-service die moet worden aangeroepen. Een cliënttoepassing kan één of meerdere diensten aanhalen.
-* De modus waarin u een AEM Forms-service wilt aanroepen. U kunt de modus EJB of SOAP gebruiken. (Zie [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
+* De modus waarin u een AEM Forms-service wilt aanroepen. U kunt de EJB- of SOAP-modus gebruiken. (Zie [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -289,7 +285,7 @@ In de volgende tabel worden de aanroepingsscenario&#39;s aangegeven en worden de
  <thead>
   <tr>
    <th><p>Services</p> </th>
-   <th><p>Inroepmodus</p> </th>
+   <th><p>Inroeping, modus</p> </th>
    <th><p>J2EE-toepassingsserver</p> </th>
    <th><p>Vereiste JAR-bestanden</p> </th>
   </tr>
@@ -425,7 +421,7 @@ Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigen
 * **DSC_DEFAULT_EJB_ENDPOINT:** Als u de EJB-verbindingsmodus gebruikt, vertegenwoordigt deze waarde de URL van de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Als u AEM Forms op afstand wilt aanroepen, geeft u de naam op van de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Als uw clienttoepassing zich op dezelfde J2EE-toepassingsserver bevindt, kunt u `localhost`. Afhankelijk van welke J2EE-toepassingsserver AEM Forms wordt geïmplementeerd, geeft u een van de volgende waarden op:
 
    * JBoss: `https://<ServerName>:8080 (default port)`
-   * WebSphere: `iiop://<ServerName>:2809 (default port)`
+   * WebSphere `iiop://<ServerName>:2809 (default port)`
    * WebLogic: `t3://<ServerName>:7001 (default port)`
 
 * **DSC_DEFAULT_SOAP_ENDPOINT**: Als u de verbindingswijze van de ZEEP gebruikt, vertegenwoordigt deze waarde het eindpunt waarnaar een aanroepingsverzoek wordt verzonden. Als u AEM Forms op afstand wilt aanroepen, geeft u de naam op van de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Als uw clienttoepassing zich op dezelfde J2EE-toepassingsserver bevindt, kunt u `localhost` (bijvoorbeeld `http://localhost:8080`.)
@@ -440,20 +436,20 @@ Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigen
    * En als u deze eigenschap voor de verbinding instelt op `JBoss`de `java.naming.factory.initial` waarde is ingesteld op `org.jnp.interfaces.NamingContextFactory`.
    * U kunt de `java.naming.factory.initial` aan een waarde die aan uw vereisten voldoet als u niet de standaardwaarden wilt gebruiken.
 
-   >[!NOTE]
-   >
-   >In plaats van een tekenreeks te gebruiken, stelt u de `DSC_SERVER_TYPE` verbinding, bezit, kunt u een statisch lid van gebruiken `ServiceClientFactoryProperties` klasse. De volgende waarden kunnen worden gebruikt: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, of `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
+  >[!NOTE]
+  >
+  >In plaats van een tekenreeks te gebruiken, stelt u de `DSC_SERVER_TYPE` verbinding, bezit, kunt u een statisch lid van gebruiken `ServiceClientFactoryProperties` klasse. De volgende waarden kunnen worden gebruikt: `ServiceClientFactoryProperties.DSC_WEBSPHERE_SERVER_TYPE`, `ServiceClientFactoryProperties.DSC_WEBLOGIC_SERVER_TYPE`, of `ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE`.
 
 * **DSC_CREDENTIAL_USERNAME:** Hier geeft u de gebruikersnaam voor AEM formulieren op. Voor een gebruiker om de dienst van AEM Forms met succes aan te halen, hebben zij de rol van de Gebruiker van de Diensten nodig. Een gebruiker kan een andere rol ook hebben die de Dienst omvat roept toestemming. Anders, wordt een uitzondering geworpen wanneer zij proberen om de dienst aan te halen. Als de de dienstveiligheid gehandicapt is, is het niet noodzakelijk om dit verbindingsbezit te specificeren.
 * **DSC_CREDENTIAL_PASSWORD:** Specifies the corresponding password value. Als de de dienstveiligheid gehandicapt is, is het niet noodzakelijk om dit verbindingsbezit te specificeren.
 * **DSC_REQUEST_TIMEOUT:** De standaardlimiet voor de time-out van het verzoek voor SOAP is 1200000 milliseconden (20 minuten). Soms kan een aanvraag langer duren om de bewerking te voltooien. Een SOAP-aanvraag die bijvoorbeeld een grote set records ophaalt, kan een langere time-outlimiet vereisen. U kunt de `ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT` om de de tijdslimiet van de verzoekvraag voor de verzoeken van de ZEEP te verhogen.
 
-   **notitie**: Alleen op SOAP gebaseerde aanroepen ondersteunen de eigenschap DSC_REQUEST_TIMEOUT.
+  **notitie**: Alleen op SOAP gebaseerde aanroepen ondersteunen de eigenschap DSC_REQUEST_TIMEOUT.
 
 Voer de volgende taken uit om verbindingseigenschappen in te stellen:
 
 1. Een `java.util.Properties` object met behulp van de constructor.
-1. Als u de `DSC_DEFAULT_EJB_ENDPOINT` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
+1. Als u het dialoogvenster `DSC_DEFAULT_EJB_ENDPOINT` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
 
    * De `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` opsommingswaarde
    * Een tekenreekswaarde die de URL van de J2EE-toepassingsserver opgeeft die als host fungeert voor AEM Forms
@@ -462,7 +458,7 @@ Voer de volgende taken uit om verbindingseigenschappen in te stellen:
    >
    >Als u de verbindingsmodus SOAP gebruikt, geeft u de `ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT` opsommingswaarde in plaats van de `ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT` opsommingswaarde.
 
-1. Als u de `DSC_TRANSPORT_PROTOCOL` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
+1. Als u het dialoogvenster `DSC_TRANSPORT_PROTOCOL` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
 
    * De `ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL` opsommingswaarde
    * De `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` opsommingswaarde
@@ -471,20 +467,20 @@ Voer de volgende taken uit om verbindingseigenschappen in te stellen:
    >
    >Als u de verbindingsmodus SOAP gebruikt, geeft u de `ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL`opsommingswaarde in plaats van de `ServiceClientFactoryProperties.DSC_EJB_PROTOCOL` opsommingswaarde.
 
-1. Als u de `DSC_SERVER_TYPE` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
+1. Als u het dialoogvenster `DSC_SERVER_TYPE` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
 
    * De `ServiceClientFactoryProperties.DSC_SERVER_TYPE`opsommingswaarde
    * Een tekenreekswaarde die de J2EE-toepassingsserver opgeeft waarop AEM Forms wordt gehost (als AEM Forms bijvoorbeeld wordt geïmplementeerd op JBoss, geeft u op `JBoss`).
 
-      1. Als u de `DSC_CREDENTIAL_USERNAME` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
+      1. Als u het dialoogvenster `DSC_CREDENTIAL_USERNAME` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
+
    * De `ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME` opsommingswaarde
    * Een tekenreekswaarde die de gebruikersnaam opgeeft die vereist is om AEM Forms aan te roepen
 
-      1. Als u de `DSC_CREDENTIAL_PASSWORD` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
+      1. Als u het dialoogvenster `DSC_CREDENTIAL_PASSWORD` eigenschap connection, activeer de `java.util.Properties` object `setProperty` en geeft de volgende waarden door:
+
    * De `ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD` opsommingswaarde
    * Een tekenreekswaarde die de bijbehorende wachtwoordwaarde opgeeft
-
-
 
 **De EJB-verbindingsmodus instellen voor JBoss**
 
@@ -570,7 +566,7 @@ In het volgende Java-codevoorbeeld worden verbindingseigenschappen ingesteld die
 ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, "1800000"); // Request timeout limit 30 Minutes
 ```
 
-**Een Context-object gebruiken om AEM Forms aan te roepen**
+**AEM Forms aanroepen met een Context-object**
 
 U kunt een `com.adobe.idp.Context` object om een AEM Forms-service aan te roepen met een geverifieerde gebruiker (de `com.adobe.idp.Context` -object staat voor een geverifieerde gebruiker). Wanneer u een `com.adobe.idp.Context` -object, hoeft u de `DSC_CREDENTIAL_USERNAME` of `DSC_CREDENTIAL_PASSWORD` eigenschappen. U kunt een `com.adobe.idp.Context` object wanneer gebruikers worden geautoriseerd met de opdracht `AuthenticationManagerServiceClient` object `authenticate` methode.
 
@@ -654,9 +650,9 @@ In het volgende voorbeeld wordt de inhoud getoond van een bestand jndi.propertie
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
-**WebLogic**
+**Weblogic**
 
-In het volgende voorbeeld wordt de inhoud getoond van een bestand jndi.properties dat wordt gebruikt om verbinding te maken met AEM Forms dat is geïmplementeerd op WebLogic.
+Het volgende voorbeeld toont de inhoud van het bestand jndi.properties dat wordt gebruikt om verbinding te maken met AEM Forms dat is gedistribueerd via WebLogic.
 
 ```ini
  java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
@@ -679,15 +675,15 @@ In het volgende voorbeeld wordt de inhoud getoond van een bestand jndi.propertie
 
 **Zie ook**
 
-[Inclusief AEM Forms Java-bibliotheekbestanden](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief Java-bibliotheekbestanden van AEM Forms](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
-[Gegevens doorgeven aan AEM Forms-services met de Java API](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
+[Gegevens doorgeven aan AEM Forms-services met gebruik van de Java-API](invoking-aem-forms-using-java.md#passing-data-to-aem-forms-services-using-the-java-api)
 
-[Een service aanroepen met een Java-clientbibliotheek](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
+[Een service aanroepen met behulp van een Java-clientbibliotheek](invoking-aem-forms-using-java.md#invoking-a-service-using-a-java-client-library)
 
-## Gegevens doorgeven aan AEM Forms-services met de Java API {#passing-data-to-aem-forms-services-using-the-java-api}
+## Gegevens doorgeven aan AEM Forms-services met gebruik van de Java-API {#passing-data-to-aem-forms-services-using-the-java-api}
 
-AEM Forms-servicetaken gebruiken of produceren doorgaans PDF-documenten. Wanneer u de dienst aanhaalt, soms is het noodzakelijk om een document van de PDF (of andere documenttypes zoals de gegevens van XML) tot de dienst over te gaan. Soms is het ook nodig om een PDF-document te verwerken dat van de service is geretourneerd. De Java-klasse waarmee u gegevens kunt doorgeven van en naar AEM Forms-services is `com.adobe.idp.Document`.
+Bij AEM Forms-servicetaken worden doorgaans PDF-documenten gebruikt of geproduceerd. Wanneer u de dienst aanhaalt, soms is het noodzakelijk om een document van de PDF (of andere documenttypes zoals de gegevens van XML) tot de dienst over te gaan. Soms is het ook nodig om een PDF-document te verwerken dat van de service is geretourneerd. De Java-klasse waarmee u gegevens kunt doorgeven van en naar AEM Forms-services is `com.adobe.idp.Document`.
 
 AEM Forms-services accepteren een PDF-document niet als andere gegevenstypen, zoals een `java.io.InputStream` object of een bytearray. A `com.adobe.idp.Document` -object kan ook worden gebruikt om andere gegevenstypen, zoals XML-gegevens, aan services door te geven.
 
@@ -697,9 +693,9 @@ Afhankelijk van de `com.adobe.idp.Document` objectgrootte, de gegevens worden bi
 
 Soms is het nodig om het inhoudstype van een `com.adobe.idp.Document` -object voordat u het aan een service kunt doorgeven. Als een bewerking bijvoorbeeld een specifiek inhoudstype vereist, zoals `application/pdf`wordt aangeraden het inhoudstype te bepalen. (Zie [Het inhoudstype van een document bepalen](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document).)
 
-De `com.adobe.idp.Document` -object probeert het inhoudstype te bepalen aan de hand van de opgegeven gegevens. Als het inhoudstype niet kan worden opgehaald uit de opgegeven gegevens (bijvoorbeeld wanneer de gegevens als een bytearray zijn opgegeven), stelt u het inhoudstype in. Als u het inhoudstype wilt instellen, roept u de opdracht `com.adobe.idp.Document` object `setContentType` methode. (Zie [Het inhoudstype van een document bepalen](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
+De `com.adobe.idp.Document` -object probeert het inhoudstype te bepalen aan de hand van de opgegeven gegevens. Als het inhoudstype niet kan worden opgehaald uit de opgegeven gegevens (bijvoorbeeld wanneer de gegevens zijn opgegeven als een bytearray), stelt u het inhoudstype in. Als u het inhoudstype wilt instellen, roept u de opdracht `com.adobe.idp.Document` object `setContentType` methode. (Zie [Het inhoudstype van een document bepalen](invoking-aem-forms-using-java.md#determining-the-content-type-of-a-document))
 
-Als secundaire bestanden zich op hetzelfde bestandssysteem bevinden, maakt u een `com.adobe.idp.Document` object sneller is. Als secundaire bestanden zich op externe bestandssystemen bevinden, moet een kopieerbewerking worden uitgevoerd die de prestaties beïnvloedt.
+Als secundaire bestanden zich op hetzelfde bestandssysteem bevinden, maakt u een `com.adobe.idp.Document` object sneller is. Als secundaire bestanden zich op externe bestandssystemen bevinden, moet er een kopieerbewerking worden uitgevoerd die de prestaties beïnvloedt.
 
 Een toepassing kan beide `com.adobe.idp.Document` en `org.w3c.dom.Document` gegevenstypen. Zorg er echter voor dat u de `org.w3c.dom.Document` gegevenstype. Voor informatie over het omzetten van een `org.w3c.dom.Document` object naar een `com.adobe.idp.Document` object, zie [Snel starten (EJB-modus): Forms vooraf vullen met stroombare indelingen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api).
 
@@ -795,7 +791,7 @@ In het volgende codevoorbeeld wordt een `com.adobe.idp.Document` object dat is g
 
 In het volgende codevoorbeeld wordt een `com.adobe.idp.Document` object dat is gebaseerd op een PDF-bestand met de naam *map.pdf*. Dit bestand bevindt zich in de hoofdmap van de C-vaste schijf. Deze constructor probeert het MIME-inhoudstype in te stellen van de `com.adobe.idp.Document` met de bestandsnaamextensie.
 
-De `com.adobe.idp.Document` constructor die een `java.io.File` -object accepteert ook een Booleaanse parameter. Door deze parameter in te stellen op `true`de `com.adobe.idp.Document` verwijdert het bestand. Dit betekent dat u het bestand niet hoeft te verwijderen nadat u het hebt doorgegeven aan de `com.adobe.idp.Document` constructor.
+De `com.adobe.idp.Document` constructor die een `java.io.File` -object accepteert ook een Booleaanse parameter. Door deze parameter in te stellen op `true`de `com.adobe.idp.Document` het bestand wordt verwijderd. Dit betekent dat u het bestand niet hoeft te verwijderen nadat u het hebt doorgegeven aan de `com.adobe.idp.Document` constructor.
 
 Deze parameter instellen op `false` betekent dat u de eigendom van dit bestand behoudt. Deze parameter instellen op `true` is efficiënter. De reden is dat de `com.adobe.idp.Document` kan het bestand rechtstreeks naar het lokale beheerde gebied verplaatsen in plaats van het te kopiëren (wat langzamer is).
 
@@ -829,7 +825,7 @@ De URL die aan de `com.adobe.idp.Document` object wordt altijd gelezen aan de zi
      Document doc = new Document(new java.net.URL("file:c:/temp/input.pdf"));
 ```
 
-Het bestand c:/temp/input.pdf moet zich op de clientcomputer bevinden (niet op de servercomputer). De clientcomputer is waar de URL wordt gelezen en waar de `com.adobe.idp.Document` object is gemaakt.
+Het bestand c:/temp/input.pdf moet zich op de clientcomputer bevinden (niet op de servercomputer). Het is de clientcomputer waar de URL wordt gelezen en waar het `com.adobe.idp.Document` object is gemaakt.
 
 **Een document maken op basis van inhoud die toegankelijk is via een URL**
 
@@ -847,12 +843,12 @@ Het bestand c:/temp/input.pdf moet zich op de clientcomputer bevinden (niet op d
 
 [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Teruggestuurde documenten verwerken {#handling-returned-documents}
+### Geretourneerde documenten afhandelen {#handling-returned-documents}
 
-De verrichtingen van de dienst die een document van de PDF (of andere gegevenstypes zoals de gegevens van XML) als outputwaarde terugkeren keren keren een `com.adobe.idp.Document` object. Nadat u een `com.adobe.idp.Document` kunt u het object omzetten in de volgende indelingen:
+Servicebewerkingen die een PDF-document (of andere gegevenstypen zoals XML-gegevens) als uitvoerwaarde retourneren, retourneren een `com.adobe.idp.Document` object. Nadat u een `com.adobe.idp.Document` object hebt ontvangen, kunt u het converteren naar de volgende indelingen:
 
-* A `java.io.File` object
-* A `java.io.InputStream` object
+* Een `java.io.File` object
+* Een `java.io.InputStream` object
 * Een bytearray
 
 Met de volgende coderegel wordt een `com.adobe.idp.Document` object naar een `java.io.InputStream` object. aannemen dat `myPDFDocument` vertegenwoordigt a `com.adobe.idp.Document` object:
@@ -861,7 +857,7 @@ Met de volgende coderegel wordt een `com.adobe.idp.Document` object naar een `ja
      java.io.InputStream resultStream = myDocument.getInputStream();
 ```
 
-U kunt ook de inhoud van een `com.adobe.idp.Document` naar een lokaal bestand door de volgende taken uit te voeren:
+Op dezelfde manier kunt u de inhoud van een `com.adobe.idp.Document` naar een lokaal bestand door de volgende taken uit te voeren:
 
 1. Een `java.io.File` object.
 1. De `com.adobe.idp.Document` object `copyToFile` en geeft de `java.io.File`object.
@@ -960,39 +956,39 @@ Wanneer u niet langer een `Document` -object wordt aangeraden het te verwijderen
 
 De de dienstverrichtingen van AEM Forms kunnen worden aangehaald door sterk getypte API van de dienst te gebruiken, die als een cliëntbibliotheek van Java wordt bekend. A *Java-clientbibliotheek* is een reeks concrete klassen die toegang tot de diensten verlenen die in de de dienstcontainer worden opgesteld. U instantieert een Java-object dat de service vertegenwoordigt die moet worden aangeroepen in plaats van een `InvocationRequest` met de API voor oproepen. De oproepings-API wordt gebruikt om processen, zoals langlevende processen, aan te roepen die in Workbench zijn gemaakt. (Zie [Het aanhalen van mens-Centric langlevende Processen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes).)
 
-Als u een servicebewerking wilt uitvoeren, roept u een methode aan die tot het Java-object behoort. Een Java-clientbibliotheek bevat methoden die doorgaans een-op-een toewijzen aan servicebewerkingen. Wanneer u een Java-clientbibliotheek gebruikt, stelt u vereiste verbindingseigenschappen in. (Zie [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
+Als u een servicebewerking wilt uitvoeren, roept u een methode aan die tot het Java-object behoort. Een Java-clientbibliotheek bevat methoden die doorgaans een-op-een toewijzen aan servicebewerkingen. Wanneer u een Java-clientbibliotheek gebruikt, stelt u de vereiste verbindingseigenschappen in. (Zie [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-Nadat u verbindingseigenschappen hebt ingesteld, maakt u een `ServiceClientFactory` object dat wordt gebruikt om een Java-object te instantiëren waarmee u een service kunt aanroepen. Elke service met een Java-clientbibliotheek heeft een overeenkomstig clientobject. Als u bijvoorbeeld de Repository-service wilt aanroepen, maakt u een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object. De `ServiceClientFactory` -object is verantwoordelijk voor het onderhoud van de verbindingsinstellingen die vereist zijn om AEM Forms-services aan te roepen.
+Nadat u verbindingseigenschappen hebt ingesteld, maakt u een `ServiceClientFactory` object dat wordt gebruikt om een Java-object te instantiëren waarmee u een service kunt aanroepen. Elke service met een Java-clientbibliotheek heeft een overeenkomstig clientobject. Als u bijvoorbeeld de Repository-service wilt aanroepen, maakt u een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object. Het `ServiceClientFactory` object is verantwoordelijk voor het behoud van de verbindingsinstellingen die vereist zijn voor het aanroepen van AEM Forms-services.
 
 Hoewel u een `ServiceClientFactory` is gewoonlijk snel, is sommige overheadkosten geïmpliceerd wanneer de fabriek voor het eerst wordt gebruikt. Dit object is geoptimaliseerd voor hergebruik en gebruik daarom, indien mogelijk, hetzelfde `ServiceClientFactory` -object wanneer u meerdere Java-client-objecten maakt. Maak dus geen aparte `ServiceClientFactory` object voor elk clientbibliotheekobject dat u maakt.
 
-Er is een Manager die van de Gebruiker plaatst die het leven van de bevestiging van SAML controleert die binnen is `com.adobe.idp.Context` object dat invloed heeft op de `ServiceClientFactory` object. Deze instelling bepaalt de levensduur van alle verificatiecontext in AEM Forms, inclusief alle aanroepen die worden uitgevoerd met de Java API. Door gebrek, de tijdspanne waarin `ServiceCleintFactory` -object kan worden gebruikt binnen twee uur.
+Er is een Manager die van de Gebruiker plaatst die het leven van de bevestiging van SAML controleert die binnen is `com.adobe.idp.Context` object dat invloed heeft op de `ServiceClientFactory` object. Deze instelling bepaalt de levensduur van alle verificatiecontext in AEM Forms, inclusief alle aanroepen die worden uitgevoerd met de Java API. Door gebrek, de periode waarin `ServiceCleintFactory` -object kan worden gebruikt binnen twee uur.
 
 >[!NOTE]
 >
->Als u wilt uitleggen hoe u een service oproept met de Java API, gaat u naar `writeResource` bewerking wordt aangeroepen. Deze verrichting plaatst een nieuwe middel in de bewaarplaats.
+>Om uit te leggen hoe u een service aanroept met de Java API, `writeResource` bewerking wordt aangeroepen. Met deze bewerking plaatst u een nieuwe bron in de opslagplaats.
 
-U kunt de Repository-service activeren door een Java-clientbibliotheek te gebruiken en de volgende stappen uit te voeren:
+U kunt de service Opslagplaats aanroepen door gebruik te maken van een Java-clientbibliotheek en de volgende stappen uit te voeren:
 
-1. Neem client-JAR-bestanden, zoals de adobe-repository-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
+1. Neem jar-bestanden van de client op, zoals adobe-repository-client.jar, in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Stel verbindingseigenschappen in die vereist zijn om een service aan te roepen.
 1. Een `ServiceClientFactory` door het object aan te roepen `ServiceClientFactory` statisch object `createInstance` en het doorgeven van de `java.util.Properties` object dat verbindingseigenschappen bevat.
-1. Een `ResourceRepositoryClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object. Gebruik de `ResourceRepositoryClient` object om bewerkingen van de Repository-service aan te roepen.
-1. Een `RepositoryInfomodelFactoryBean` object door de constructor ervan te gebruiken en door te geven `null`. Met dit object kunt u een `Resource` object dat de inhoud vertegenwoordigt die aan de gegevensopslagruimte is toegevoegd.
-1. Een `Resource` door het object aan te roepen `RepositoryInfomodelFactoryBean` object `newImage` en geeft de volgende waarden door:
+1. Maak een `ResourceRepositoryClient` object door de constructor te gebruiken en het object door te `ServiceClientFactory` geven. Gebruik het `ResourceRepositoryClient` object om bewerkingen van de opslagplaatsservice te activeren.
+1. Maak een object met behulp van de constructor en geef `null`een `RepositoryInfomodelFactoryBean` Met dit object kunt u een `Resource` object maken dat de inhoud vertegenwoordigt die aan de opslagplaats wordt toegevoegd.
+1. Maak een `Resource` object door de methode van `newImage` het `RepositoryInfomodelFactoryBean` object aan te roepen en de volgende waarden door te geven:
 
-   * Een unieke id-waarde door het opgeven van `new Id()`.
+   * Een unieke ID-waarde door `new Id()`.
    * Een unieke UUID-waarde door het opgeven van `new Lid()`.
    * De naam van de bron. U kunt de bestandsnaam van het XDP-bestand opgeven.
 
    De geretourneerde waarde omzetten in `Resource`.
 
 1. Een `ResourceContent` door het object aan te roepen `RepositoryInfomodelFactoryBean` object `newImage` en de geretourneerde waarde naar `ResourceContent`. Dit object vertegenwoordigt de inhoud die aan de gegevensopslagruimte wordt toegevoegd.
-1. Een `com.adobe.idp.Document` object door een `java.io.FileInputStream` object dat het XDP-bestand opslaat dat aan de gegevensopslagruimte moet worden toegevoegd. (Zie [Een document maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
+1. Een `com.adobe.idp.Document` door een object door te geven `java.io.FileInputStream` object dat het XDP-bestand opslaat dat aan de gegevensopslagruimte moet worden toegevoegd. (Zie [Een document maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
 1. Voeg de inhoud van de `com.adobe.idp.Document` aan `ResourceContent` door het object aan te roepen `ResourceContent` object `setDataDocument` methode. Geef de `com.adobe.idp.Document` object.
 1. Stel het MIME-type van het XDP-bestand in om aan de opslagplaats toe te voegen door het `ResourceContent` object `setMimeType` methode en doorgeven `application/vnd.adobe.xdp+xml`.
-1. Voeg de inhoud van de `ResourceContent` aan `Resource` door het object aan te roepen `Resource` object &#39;s `setContent` en het doorgeven van de `ResourceContent` object.
-1. Voeg een beschrijving van de bron toe door de `Resource` object &#39;s `setDescription` methode en het overgaan van een koordwaarde die een beschrijving van het middel vertegenwoordigt.
+1. Voeg de inhoud van de `ResourceContent` aan `Resource` door het object aan te roepen `Resource` object `setContent` en het doorgeven van de `ResourceContent` object.
+1. Voeg een beschrijving van de bron toe door de `Resource` object `setDescription` methode en het overgaan van een koordwaarde die een beschrijving van het middel vertegenwoordigt.
 1. Voeg het formulierontwerp toe aan de gegevensopslagruimte door de `ResourceRepositoryClient` object `writeResource` en geeft de volgende waarden door:
 
    * Een tekenreekswaarde die het pad naar de bronverzameling opgeeft die de nieuwe bron bevat
@@ -1000,7 +996,7 @@ U kunt de Repository-service activeren door een Java-clientbibliotheek te gebrui
 
 **Zie ook**
 
-[Snel starten (EJB-modus): Een bron schrijven met de Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Snel starten (EJB-modus): een bron schrijven met de Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
 [AEM Forms aanroepen met de Java API](invoking-aem-forms-using-java.md#invoking-aem-forms-using-the-java-api)
 
@@ -1022,8 +1018,8 @@ De discussie gaat hier over het gebruik van de oproepings-API om het volgende ko
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
-1. Verkrijgt het onbeveiligde document van de PDF dat tot het proces wordt overgegaan. Deze actie is gebaseerd op de `SetValue` bewerking. De invoerparameter voor dit proces is een `document` procesvariabele met de naam `inDoc`.
-1. Hiermee versleutelt u het PDF-document met een wachtwoord. Deze actie is gebaseerd op de `PasswordEncryptPDF` bewerking. Het met wachtwoord gecodeerde PDF-document wordt geretourneerd in een procesvariabele met de naam `outDoc`.
+1. Verkrijgt het onbeveiligde document van de PDF dat tot het proces wordt overgegaan. Deze actie is gebaseerd op de `SetValue` -bewerking. De invoerparameter voor dit proces is een `document` procesvariabele met de naam `inDoc`.
+1. Hiermee versleutelt u het PDF-document met een wachtwoord. Deze actie is gebaseerd op de `PasswordEncryptPDF` -bewerking. Het wachtwoord gecodeerde PDF document is teruggekeerd in een procesvariabele genoemd `outDoc`.
 
 ### Het kortstondige MyApplication/EncryptDocument-proces aanroepen met de Java-oproepings-API {#invoke-the-myapplication-encryptdocument-short-lived-process-using-the-java-invocation-api}
 
@@ -1031,9 +1027,9 @@ De `MyApplication/EncryptDocument` kortstondig proces met de Java-oproepings-API
 
 1. Neem client-JAR-bestanden, zoals adobe-livecycle-client.jar, op in het klassenpad van uw Java-project. (Zie [Inclusief AEM Forms Java-bibliotheekbestanden](invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 1. Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
-1. Een `ServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object. A `ServiceClient` kunt u een servicebewerking aanroepen. Het behandelt taken zoals het lokaliseren van, het verzenden van, en het verpletteren van oproepingsverzoeken.
+1. Een `ServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object. A `ServiceClient` kunt u een servicebewerking aanroepen. Het behandelt taken zoals het lokaliseren van, het verzenden van, en het verpletteren van oproepingsverzoeken.
 1. Een `java.util.HashMap` object met behulp van de constructor.
-1. De `java.util.HashMap` object `put` methode voor elke inputparameter om tot het langlevende proces over te gaan. Omdat `MyApplication/EncryptDocument` kortstondig proces vereist één invoerparameter van type `Document`, hoeft u alleen de `put` eenmaal, zoals in het volgende voorbeeld wordt getoond.
+1. De `java.util.HashMap` object `put` methode voor elke inputparameter om tot het langlevende proces over te gaan. Omdat de `MyApplication/EncryptDocument` kortstondig proces vereist één invoerparameter van type `Document`, hoeft u alleen de `put` methode één keer, zoals in het volgende voorbeeld wordt getoond.
 
    ```java
     //Create a Map object to store the parameter value for inDoc
@@ -1054,9 +1050,9 @@ De `MyApplication/EncryptDocument` kortstondig proces met de Java-oproepings-API
 
    >[!NOTE]
    >
-   >Een proces van lange duur kan worden aangeroepen door de waarde door te geven `false`als vierde parameter van de `createInvocationRequest` methode. De waarde doorgeven `false`*maakt een asynchrone aanvraag.*
+   >Een langdurig proces kan worden aangeroepen door de waarde door te geven `false`als de vierde parameter van de `createInvocationRequest` methode. De waarde doorgeven `false`*maakt een asynchrone aanvraag.*
 
-1. Haal de geretourneerde waarde van het proces op door de `InvocationReponse` object `getOutputParameter` methode en het overgaan van een koordwaarde die de naam van de outputparameter specificeert. Geef in dit geval `outDoc` ( `outDoc` is de naam van de uitvoerparameter voor de `MyApplication/EncryptDocument` proces). De geretourneerde waarde omzetten in `Document`, zoals in het volgende voorbeeld wordt getoond.
+1. Haal de geretourneerde waarde van het proces op door de `InvocationReponse` object `getOutputParameter` methode en het overgaan van een koordwaarde die de naam van de outputparameter specificeert. Geef in dit geval aan: `outDoc` ( `outDoc` is de naam van de uitvoerparameter voor de `MyApplication/EncryptDocument` proces). De geretourneerde waarde omzetten in `Document`, zoals in het volgende voorbeeld wordt getoond.
 
    ```java
     InvocationResponse response = myServiceClient.invoke(request);

@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Als u een nieuw subformulier wilt maken, gaat u naar de **Gereedschappen** conso
 
 Ga naar de **Pagina-eigenschappen** van de nieuwe pagina en stel de *Titeltekst*, *Beschrijving*, *Doelsjabloon*, en *Doelpad*, zoals hierboven beschreven.
 
-Vervolgens moet u de structuur definiëren van de pagina die dit subbestand maakt. Om dit te doen, ga **[ontwerpmodus](/help/sites-authoring/page-authoring.md#sidekick)** op de basispagina. Er wordt een koppeling weergegeven waarmee u het subformulier in het dialoogvenster **dialoogeditor**.
+Vervolgens moet u de structuur definiëren van de pagina die dit subbestand maakt. Om dit te doen, ga **[ontwerpmodus](/help/sites-authoring/page-authoring.md#sidekick)** op de basispagina. Er verschijnt een koppeling waarmee u het subformulier kunt bewerken in het dialoogvenster **dialoogeditor**.
 
 ![cq5_dialog_editor](assets/cq5_dialog_editor.png)
 

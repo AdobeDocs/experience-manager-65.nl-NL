@@ -1,15 +1,15 @@
 ---
 title: Een component React implementeren voor SPA
-description: In dit artikel wordt een voorbeeld gegeven van hoe u een eenvoudige, bestaande React-component kunt aanpassen aan de Adobe Experience Manager (AEM) SPA Editor.
+description: In dit artikel wordt een voorbeeld gegeven van hoe u een eenvoudige, bestaande React-component kunt aanpassen aan het werk met de Adobe Experience Manager (AEM) SPA Editor.
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: f4959c12-54c5-403a-9973-7a4ab5f16bed
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ De wijziging blijft bestaan en de component wordt automatisch bijgewerkt met nie
 
 ### Implementatie van weercomponent {#weather-component-implementation}
 
-De weercomponent is gebaseerd op een openbaar beschikbare component van de Reactie, genoemd [Geopend weefsel reageren](https://www.npmjs.com/package/react-open-weather). Het is aangepast om als component binnen de Wij.Retail SPA toepassing van de steekproef van het Dagboek te werken.
+De weercomponent is gebaseerd op een openbaar beschikbare component React, genaamd [Geopend weefsel reageren](https://www.npmjs.com/package/react-open-weather). Het is aangepast om als component binnen de Wij.Retail SPA toepassing van de steekproef van het Dagboek te werken.
 
 Hieronder vindt u fragmenten uit de NPM-documentatie van het gebruik van de component React Open Weather.
 
@@ -72,7 +72,7 @@ De code van de aangepaste weercomponent bekijken ( `Weather.js`) in de toepassin
 
 * **Lijnen 22-29**: De `EditConfig` wordt gedefinieerd, wordt gecontroleerd of de stad is gevuld en wordt de waarde gedefinieerd als deze leeg is.
 
-* **Lijnen 31-44**: De component Weather breidt het `Component` en bevat de vereiste gegevens zoals gedefinieerd in de NPM-gebruiksdocumentatie voor de React Open Weather-component en geeft de component weer.
+* **Lijnen 31-44**: De component Weather breidt de `Component` en bevat de vereiste gegevens zoals gedefinieerd in de NPM-gebruiksdocumentatie voor de React Open Weather-component en geeft de component weer.
 
 ```javascript
 /*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -127,4 +127,4 @@ Hoewel een achterste-eindcomponent reeds moet bestaan, kan de voorste-eindontwik
 
 ## Volgende stap {#next-step}
 
-Zie het artikel voor meer informatie over het ontwikkelen van SPA voor AEM [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architecture.md).
+Zie het artikel voor meer informatie over SPA ontwikkelen voor AEM [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architecture.md).

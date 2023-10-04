@@ -1,16 +1,13 @@
 ---
 title: Java API QuickStart (SOAP) van de Assembler-service
-seo-title: Assembler Service Java API QuickStart(SOAP)
 description: Java API QuickStart (SOAP) van de Assembler-service
-uuid: 33ad5f7a-4f4c-4e72-937d-85891498a80e
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b7b17cf8-def5-4a77-a872-c1f286814881
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1001'
 ht-degree: 0%
@@ -21,27 +18,27 @@ ht-degree: 0%
 
 Java API Quick Start (SOAP) is beschikbaar voor de Assembler-service
 
-[Snel starten (SOAP-modus): Een PDF-document samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document demonteren met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document demonteren met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een versleuteld PDF-document samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een gecodeerd PDF-document samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document samenstellen met een Bates-nummering met behulp van de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document samenstellen met Bates-nummering met behulp van de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een niet-interactief PDF-document samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een niet-interactief PDF-document samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Bepalen of een document voldoet aan de PDF/A-standaard met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
+[Snel starten (SOAP-modus): bepalen of een document PDF/A-compatibel is met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api)
 
 [Snel starten (SOAP-modus): DDX-documenten valideren met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-validating-ddx-documents-using-the-java-api)
 
 [Snel starten (SOAP-modus): PDF-documenten samenstellen met bladwijzers met behulp van de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-documents-with-bookmarks-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een DDX-document dynamisch maken met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
+[Snel starten (SOAP-modus): dynamisch een DDX-document maken met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): PDF-Portfolio samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Snel starten (SOAP-modus): PDF-Portfolio&#39;s samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
-[Snel starten (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Snel starten (SOAP-modus): meerdere XDP-fragmenten samenstellen met de Java API](assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
@@ -49,7 +46,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 >
 >De snelle Begin die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Snel starten (SOAP-modus): Een PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden twee PDF-brondocumenten met de naam *map.pdf* en *direction.pdf* in één PDF-document. De naam van het enige PDF-document is *AssemblerResultPDF.pdf*. De naam van het DDX-document is *shell.xml*. (Zie [PDF-documenten programmatisch samenstellen](/help/forms/developing/assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
@@ -170,7 +167,7 @@ In het volgende Java-codevoorbeeld worden twee PDF-brondocumenten met de naam *m
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -193,9 +190,9 @@ In het volgende Java-codevoorbeeld worden twee PDF-brondocumenten met de naam *m
  }
 ```
 
-## Snel starten (SOAP-modus): Een PDF-document demonteren met de Java API {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document demonteren met de Java API {#quick-start-soap-mode-disassembling-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *AssemblerResultPDF.pdf*. U ziet dat de naam van het DDX-document *shell_disassemble.xml*. Elk gedemonteerd PDF-document krijgt een naam `ResultPDF[Number].pdf`. Het eerste gedemonteerde PDF-document krijgt dus de naam *ResultPDF1.pdf.* Voor informatie over de *shell_disassemble.xml* DDX-document gebruikt in dit codevoorbeeld, zie [PDF-documenten programmatisch demonteren](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *AssemblerResultPDF.pdf*. De naam van het DDX-document is *shell_disassemble.xml*. Elk gedemonteerd PDF-document krijgt een naam `ResultPDF[Number].pdf`. Het eerste gedemonteerde PDF-document krijgt dus de naam *ResultPDF1.pdf.* Voor informatie over de *shell_disassemble.xml* DDX-document gebruikt in dit codevoorbeeld, zie [PDF-documenten programmatisch demonteren](/help/forms/developing/assembling-pdf-documents.md#programmatically-disassembling-pdf-documents).
 
 ```java
  /*
@@ -309,7 +306,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Assembler
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
                  Object o = e.getValue();
  
@@ -332,9 +329,9 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Assembler
  }
 ```
 
-## Snel starten (SOAP-modus): Een versleuteld PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een gecodeerd PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-an-encrypted-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een met wachtwoord gecodeerd PDF-document geassembleerd. De naam van het onbeveiligde PDF-document is *Lening.pdf*. U ziet dat de naam van het DDX-document *shell_Encrypt.xml*. Het versleutelde PDF-document krijgt de naam *AssemblerEncryptedPDF.pdf*. (Zie [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
+In het volgende Java-codevoorbeeld wordt een met wachtwoord gecodeerd PDF-document geassembleerd. De naam van het onbeveiligde PDF-document is *Lening.pdf*. De naam van het DDX-document is *shell_Encrypt.xml*. Het versleutelde PDF-document krijgt de naam *AssemblerEncryptedPDF.pdf*. (Zie [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-encrypted-pdf-documents).)
 
 ```java
  /*
@@ -455,9 +452,9 @@ In het volgende Java-codevoorbeeld wordt een met wachtwoord gecodeerd PDF-docume
  }
 ```
 
-## Snel starten (SOAP-modus): Een PDF-document samenstellen met een Bates-nummering met behulp van de Java API {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document samenstellen met Bates-nummering met behulp van de Java API {#quick-start-soap-mode-assembling-a-pdf-document-with-bates-numbering-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document samengesteld met unieke pagina-id&#39;s (Bates-nummering). U ziet dat de naam van het DDX-document *shell_Bates.xml*. Het PDF-document dat door de Assembler-service wordt geretourneerd, wordt opgeslagen als een PDF-bestand met de naam *AssemblerResultBatesPDF.pdf*. (Zie [Documenten samenstellen met gebruik van Bates-nummering](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
+In het volgende Java-codevoorbeeld wordt een PDF-document samengesteld met unieke pagina-id&#39;s (Bates-nummering). De naam van het DDX-document is *shell_Bates.xml*. Het PDF-document dat door de Assembler-service wordt geretourneerd, wordt opgeslagen als een PDF-bestand met de naam *AssemblerResultBatesPDF.pdf*. (Zie [Documenten samenstellen met Bates-nummering](/help/forms/developing/assembling-pdf-documents.md#assembling-documents-using-bates-numbering).)
 
 ```java
  /*
@@ -588,7 +585,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document samengesteld met uniek
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -613,9 +610,9 @@ In het volgende Java-codevoorbeeld wordt een PDF-document samengesteld met uniek
  }
 ```
 
-## Snel starten (SOAP-modus): Een niet-interactief PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een niet-interactief PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-a-non-interactive-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een niet-interactief PDF-document geassembleerd. Het interactieve document van de PDF dat tot de dienst van de Assembler wordt overgegaan wordt genoemd *Lening.pdf*. U ziet dat de naam van het DDX-document *shell_XFA.xml*. Het niet-interactieve PDF-document wordt opgeslagen als een PDF-bestand met de naam *AssembleNonInteractivePDF.pdf*. (Zie [Niet-interactieve PDF-documenten samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
+In het volgende Java-codevoorbeeld wordt een niet-interactief PDF-document geassembleerd. Het interactieve document van de PDF dat tot de dienst van de Assembler wordt overgegaan wordt genoemd *Lening.pdf*. De naam van het DDX-document is *shell_XFA.xml*. Het niet-interactieve PDF-document wordt opgeslagen als een PDF-bestand met de naam *AssembleNonInteractivePDF.pdf*. (Zie [Niet-interactieve PDF-documenten samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-non-interactive-pdf-documents).)
 
 ```java
  /*
@@ -737,7 +734,7 @@ In het volgende Java-codevoorbeeld wordt een niet-interactief PDF-document geass
  
 ```
 
-## Snel starten (SOAP-modus): Bepalen of een document voldoet aan de PDF/A-standaard met de Java API {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
+## Snel starten (SOAP-modus): bepalen of een document PDF/A-compatibel is met de Java API {#quick-start-soap-mode-determining-whether-a-document-is-pdf-a-compliant-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt bepaald of het invoer-PDF-document compatibel is met PDF/A. Het invoerdocument PDF dat aan de Assembler-service wordt doorgegeven, krijgt de naam *Lening.pdf*. De naam van het DDX-document is shell_PDFA.xml. Het XML-document dat wordt geretourneerd door de Assembler-service en dat aangeeft of het invoer-PDF-document compatibel is met PDF/A, wordt opgeslagen als een XML-bestand met de naam result.xml. Voor informatie over de *shell_PDFA.xml* DDX-document gebruikt in dit codevoorbeeld, zie [Bepalen of documenten PDF/A-compatibel zijn](/help/forms/developing/assembling-pdf-documents.md#determining-whether-documents-are-pdf-a-compliant).
 
@@ -855,7 +852,7 @@ In het volgende Java-codevoorbeeld wordt bepaald of het invoer-PDF-document comp
              //document that specifies if the input document is
              //PDF/A compliant
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1160,7 +1157,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document geassembleerd dat blad
  
              //Iterate through the map object to retrieve the result PDF document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1184,14 +1181,14 @@ In het volgende Java-codevoorbeeld wordt een PDF-document geassembleerd dat blad
  
 ```
 
-## Snel starten (SOAP-modus): Een DDX-document dynamisch maken met de Java API {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
+## Snel starten (SOAP-modus): dynamisch een DDX-document maken met de Java API {#quick-start-soap-mode-dynamically-creating-a-ddx-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt dynamisch een DDX-document gemaakt dat een PDF-document demonteert. Voor elke Niveau 1-bladwijzer in het invoerdocument wordt een nieuw PDF-document gemaakt. Dit codevoorbeeld bevat twee user-defined methodes:
 
-* `createDDX`: Hiermee maakt u een `org.w3c.dom.Document` object dat staat voor het DDX-document dat naar de Assembler-service wordt verzonden. Deze door de gebruiker gedefinieerde methode retourneert de `org.w3c.dom.Document` object.
-* `convertDDX`: Hiermee converteert u een `org.w3c.dom.Document` object naar een `com.adobe.idp.Document` object. Deze methode accepteert een `org.w3c.dom.Document` object als invoerparameter en retourneert een `com.adobe.idp.Document` object.
+* `createDDX`: maakt een `org.w3c.dom.Document` object dat staat voor het DDX-document dat naar de Assembler-service wordt verzonden. Deze door de gebruiker gedefinieerde methode retourneert de `org.w3c.dom.Document` object.
+* `convertDDX`: converteert een `org.w3c.dom.Document` object naar een `com.adobe.idp.Document` object. Deze methode accepteert een `org.w3c.dom.Document` object als invoerparameter en retourneert een `com.adobe.idp.Document` object.
 
-   Beide methoden worden in deze snelle start aangeroepen. (Zie [DDX-documenten dynamisch maken](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).) &quot;
+  Beide methoden worden in deze snelle start aangeroepen. (Zie [DDX-documenten dynamisch maken](/help/forms/developing/assembling-pdf-documents.md#dynamically-creating-ddx-documents).) &quot;
 
 ```java
 /*
@@ -1380,9 +1377,9 @@ public class AssemblePDFWithDynamicDDXSOAP {
 }
 ```
 
-## Snel starten (SOAP-modus): PDF-Portfolio samenstellen met de Java API {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
+## Snel starten (SOAP-modus): PDF-Portfolio&#39;s samenstellen met de Java API {#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-portfolio gemaakt. Het PDF-portfolio wordt opgeslagen als een PDF-bestand met de naam *AssemblerResultPortfolio.pdf*. (Zie [PDF-Portfolio samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
+In het volgende Java-codevoorbeeld wordt een PDF-portfolio gemaakt. Het PDF-portfolio wordt opgeslagen als een PDF-bestand met de naam *AssemblerResultPortfolio.pdf*. (Zie [PDF-Portfolio&#39;s samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-pdf-portfolios).)
 
 ```java
  /*
@@ -1531,9 +1528,9 @@ In het volgende Java-codevoorbeeld wordt een PDF-portfolio gemaakt. Het PDF-port
  
 ```
 
-## Snel starten (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java API {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
+## Snel starten (SOAP-modus): meerdere XDP-fragmenten samenstellen met de Java API {#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden XDP-fragmenten geassembleerd die zijn gebaseerd op de volgende XDP-bestanden: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp* en* tuc018_patiënt.xdp*. Het geassembleerde XDP-document dat alle fragmenten bevat, wordt opgeslagen als een XDP-bestand met de naam *AssemblerResultXDP.xdp*. (Zie [Meerdere XDP-fragmenten samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
+In het volgende Java-codevoorbeeld worden XDP-fragmenten geassembleerd die zijn gebaseerd op de volgende XDP-bestanden: *tuc018_template_flowed.xdp*, *tuc018_contact.xdp* en* tuc018_patiënt.xdp*. Het geassembleerde XDP-document met alle fragmenten wordt opgeslagen als een XDP-bestand met de naam *AssemblerResultXDP.xdp*. (Zie [Meerdere XDP-fragmenten samenstellen](/help/forms/developing/assembling-pdf-documents.md#assembling-multiple-xdp-fragments).)
 
 ```java
  /*
@@ -1661,7 +1658,7 @@ In het volgende Java-codevoorbeeld worden XDP-fragmenten geassembleerd die zijn 
  
              //Iterate through the map object to retrieve the result XDP document
              for (Iterator i = allDocs.entrySet().iterator(); i.hasNext();) {
-                 // Retrieve the Map object’s value
+                 // Retrieve the Map object's value
                  Map.Entry e = (Map.Entry)i.next();
  
                  //Get the key name as specified in the
@@ -1684,7 +1681,7 @@ In het volgende Java-codevoorbeeld worden XDP-fragmenten geassembleerd die zijn 
  }
 ```
 
-## Snel starten (SOAP-modus): Een PDF-document redigeren met de Java API {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document redigeren met de Java API {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een PDF-document geredigeerd met `PDFUtility`.
 

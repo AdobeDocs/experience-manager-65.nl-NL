@@ -1,6 +1,6 @@
 ---
 title: Tips en trucs om beheerders te helpen aan de slag te gaan
-description: Vind beste praktijken die door Adobe engineering en adviserende teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
+description: Vind beste praktijken die door de ingenieurs van de Adobe en het raadplegen teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
 uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 exl-id: 576d87c8-cc96-45a0-b3cf-defb440babbb
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '529'
 ht-degree: 2%
 
 ---
@@ -30,7 +30,7 @@ Voor beste praktijken op creatie, het opstellen en het handhaven, of het ontwikk
 * [Aanbevolen werkwijzen ontwikkelen](/help/sites-developing/best-practices.md)
 * [Tips en trucs implementeren](/help/sites-deploying/best-practices.md)
 
-Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
+In de volgende tabellen worden specifieke documenten beschreven en aan deze documenten gekoppeld.
 
 ## Assets {#assets}
 
@@ -41,12 +41,12 @@ De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Med
   <tr>
    <td>Aanbevolen werkwijzen op verschillende gebieden rond Elementen om de stabiliteit en prestaties van het systeem onder belasting te verbeteren</td>
    <td><a href="/help/assets/best-practices-for-assets.md">Aanbevolen procedures voor middelen</a></td>
-   <td>Deze groep bevat koppelingen naar gidsen voor aanbevolen procedures in verschillende gebieden rond Elementen. Na het herzien van hen, zult u de kennis en de hulpmiddelen hebben om een systeem van het ondernemingsactivabeheer te bouwen en te beheren.</td>
+   <td>Deze groep bevat koppelingen naar gidsen voor aanbevolen procedures in verschillende gebieden rond Elementen. Na het herzien van hen, zult u de kennis en de hulpmiddelen hebben om een systeem van het de activabeheer van de onderneming te bouwen en te beheren.</td>
   </tr>
   <tr>
    <td>Uw inhoud ordenen (maphiërarchie)</td>
    <td><a href="/help/assets/organize-assets.md">Aanbevolen procedures voor bestandsbeheer</a></td>
-   <td>Veel verwerkingsprofielen zijn mappen die zijn gebaseerd op video, metagegevens en afbeeldingsverwerking worden altijd toegepast op mappen. In dit document met aanbevolen procedures wordt beschreven hoe u de mappenhiërarchie definieert en instelt, aangezien de hiërarchie een grote invloed heeft op de manier waarop inhoud wordt verwerkt. </td>
+   <td>De meeste verwerkingsprofielen zijn gebaseerd op mappen, zoals video, metagegevens en afbeeldingsverwerking. In dit document met aanbevolen procedures wordt beschreven hoe u de mappenhiërarchie definieert en instelt, aangezien de hiërarchie een grote invloed heeft op de manier waarop inhoud wordt verwerkt. </td>
   </tr>
   <tr>
    <td>Scene7 en AEM integreren</td>
@@ -80,7 +80,7 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
   <tr>
    <td>Definieer de standaardinterface voor uw instantie.</td>
    <td><p><a href="/help/sites-authoring/select-ui.md#configuring-the-default-ui-for-your-instance">De standaardinterface voor uw instantie configureren</a></p> </td>
-   <td>AEM heeft twee UI's: geoptimaliseerd voor aanraking en klassiek. In deze sectie wordt beschreven hoe u de standaardinterface voor uw instantie definieert.</td>
+   <td>AEM heeft twee gebruikersinterface: geoptimaliseerd voor aanrakingen en klassiek. In deze sectie wordt beschreven hoe u de standaardinterface voor uw instantie definieert.</td>
   </tr>
   <tr>
    <td>Beheer van meerdere sites</td>

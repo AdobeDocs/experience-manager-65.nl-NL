@@ -2,9 +2,9 @@
 title: Ervaringen op het gebied van authoringhandel
 description: Werkopdrachten
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: a5f3e33a6abe7ac1bbd610a8528fd599d1ffd2aa
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '705'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De toe:voegen-on CIF breidt AEM creatie met handel-specifieke mogelijkheden uit. Dit laat auteurs toe om handel-verwante ervaringen efficiënt te bouwen en te beheren door toegang tot productgegevens en inhoud te krijgen zonder de context te verlaten.
+De CIF toe:voegen-on breidt AEM het schrijven met handel-specifieke mogelijkheden uit. Dit laat auteurs toe om handel-verwante ervaringen efficiënt te bouwen en te beheren door toegang tot productgegevens en inhoud te krijgen zonder de context te verlaten.
 
 ## Kaarten {#pickers}
 
@@ -21,7 +21,7 @@ Producten en categoriekiezers zijn modale UI-dialoogvensters die AEM auteurs een
 
 ### Productkiezer {#product-picker}
 
-Deze kiezer biedt u de mogelijkheid door de catalogusstructuur of de zoekfunctie in volledige tekst te bladeren om het product te zoeken. Producten met variatie bieden een mappictogram in de kolom &#39;Type&#39;. Als u op het mappictogram klikt, worden de variaties van het geselecteerde product geopend.
+Deze kiezer kan bladeren door de catalogusstructuur of zoeken in volledige tekst om het product te zoeken. Producten met variatie bieden een mappictogram in de kolom &#39;Type&#39;. Als u op het mappictogram klikt, worden de variaties van het geselecteerde product geopend.
 
 ![Productkiezer](/help/commerce/cif/assets/authoring/product-picker.png)
 
@@ -39,7 +39,7 @@ Het configuratiedialoogvenster van deze component vereist een product. CIF gebru
 
 ### Categoriekiezer {#category-picker}
 
-Deze kiezer kan door de catalogusstructuur bladeren om de categorie te zoeken.
+Deze kiezer kan bladeren door de catalogusstructuur om de categorie te zoeken.
 
 ![Categoriekiezer](/help/commerce/cif/assets/authoring/category-picker.png)
 
@@ -47,7 +47,7 @@ Deze kiezer kan door de catalogusstructuur bladeren om de categorie te zoeken.
 
 ![Carrouselcomponent zonder selectie](/help/commerce/cif/assets/authoring/carousel_component_without_selection.png)
 
-Het configuratiedialoogvenster van deze component vereist 1: n categorieën. CIF gebruikt UID/ID als categorie-id. Auteurs kunnen de id handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
+Het configuratiedialoogvenster van deze component vereist 1 : n-categorieën. CIF gebruikt de UID /-id als de categorie-id. Auteurs kunnen de id handmatig invoeren of op het mappictogram klikken om de categoriekiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster dat de component bevat de naam van de geselecteerde categorie weergegeven.
 
 ![Carrousel-component met selectie](/help/commerce/cif/assets/authoring/carousel_component_with_selection.png)
 
@@ -65,7 +65,7 @@ Analoog aan activa, kunnen de producten op een pagina worden toegevoegd (die tot
 
 ### Koppelingen toevoegen in tekstvelden met RTE {#rte}
 
-CCIF-productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van de Handel&quot;aan RTE (Rich Text Editor) toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
+CIF productcataloguspagina&#39;s zijn virtuele pagina&#39;s die direct worden weergegeven. Het is dus niet mogelijk hyperlinks in te sluiten, zoals bij gewone AEM pagina&#39;s. CIF voegt een nieuwe actie &quot;de Verbindingen van de Handel&quot;aan RTE (Rich Text Editor) toe. Deze actie werkt precies zoals de gewone &quot;Hyperlink&quot;actie, maar staat auteurs toe om of een product of een categorie te selecteren gebruikend de plukkers.
 
 ![RTE](/help/commerce/cif/assets/authoring/RTE.png)
 
@@ -77,7 +77,7 @@ Hierdoor wordt een koppeling voor plaatsaanduidingen gemaakt die wordt vervangen
 
 ### Gekoppelde productinhoud openen {#associated-content}
 
-Als de Universele Redacteur 1:n producten op een pagina erkent, zal het zijpaneel automatisch het lusje &quot;Bijbehorende Inhoud van de Handel tonen&quot;. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die aan het product is gekoppeld (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad kunt u vervolgkeuzelijsten gebruiken om te filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
+Als de Universele Redacteur 1:n producten op een pagina erkent, zal het zijpaneel automatisch het lusje &quot;Bijbehorende Inhoud van de Handel tonen&quot;. Op dit tabblad hebben auteurs snel toegang tot AEM inhoud die is gelabeld met het product (zie [productgegevens verrijken met de bijbehorende AEM-inhoud](./enrich-product-associated-content.md) voor meer informatie ) . Op dit tabblad kunt u vervolgkeuzelijsten gebruiken om te filteren op inhoudstype en specifieke producten als er meerdere producten op de pagina staan. Het gebruik van de inhoud werkt precies hetzelfde als het gebruik van inhoud op het tabblad &quot;Middelen&quot;.
 
 ![Tabblad Productgegevens](/help/commerce/cif/assets/authoring/associated-commerce-content-tab.png)
 

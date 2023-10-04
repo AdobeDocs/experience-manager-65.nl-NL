@@ -1,16 +1,12 @@
 ---
 title: Het gereedschap VLT gebruiken
-seo-title: How to use the VLT Tool
 description: Het Jackrabbit FileVault (VLT) is ontwikkeld door de Apache Foundation die de inhoud van een Jackrabbit/AEM-instantie toewijst aan uw bestandssysteem
-seo-description: The Jackrabbit FileVault tool (VLT) is developed by The Apache Foundation that maps the content of a Jackrabbit/AEM instance to your file system
-uuid: 579e7785-8b50-4366-b562-8e79b6451464
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2715'
 ht-degree: 0%
@@ -333,7 +329,7 @@ In de volgende tabel worden alle beschikbare VLT-opdrachten beschreven. Zie de a
 | `diff` | `di` | Hiermee geeft u de verschillen tussen twee paden weer. |
 | `console` |  | Hiermee wordt een interactieve console uitgevoerd. |
 | `rcp` |  | Kopieert een knooppuntenstructuur van de ene externe opslagplaats naar een andere. |
-| `sync` |  | Hiermee kunt u de vault sync-service besturen. |
+| `sync` |  | Hiermee kunt u de vault sync-service beheren. |
 
 ### Exporteren {#export}
 
@@ -746,7 +742,7 @@ vlt rcp http://localhost:4502/crx/-/jcr:root/content  https://admin:admin@localh
 
 ### Sync {#sync}
 
-Hiermee kunt u de vault sync-service besturen. Zonder argumenten probeert deze opdracht de huidige werkmap onder synchronisatiecontrole te zetten. Indien uitgevoerd binnen een vlt controle, gebruikt het de respectieve filter en gastheer om de synchronisatie te vormen. Als deze buiten een vlt-uitchecking wordt uitgevoerd, wordt de huidige map alleen geregistreerd voor synchronisatie als de map leeg is.
+Hiermee kunt u de vault sync-service beheren. Zonder argumenten probeert deze opdracht de huidige werkmap onder synchronisatiecontrole te zetten. Indien uitgevoerd binnen een vlt-uitchecking, worden het desbetreffende filter en de respectievelijke host gebruikt om de synchronisatie te configureren. Als deze map buiten een volledig uitchecken wordt uitgevoerd, wordt de huidige map alleen voor synchronisatie geregistreerd als de map leeg is.
 
 #### Syntaxis {#syntax-18}
 

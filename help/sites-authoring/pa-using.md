@@ -1,16 +1,14 @@
 ---
 title: Paginaanalysegegevens bekijken om de doeltreffendheid van pagina-inhoud te meten
 description: Gebruik pagina-analysegegevens om de doeltreffendheid van de pagina-inhoud te meten
-uuid: 8dda89be-13e3-4a13-9a44-0213ca66ed9c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 exl-id: 554b10c2-6157-4821-a6a7-f2fb6666cdff
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -33,12 +31,12 @@ In elke kolom wordt een waarde voor de lopende rapportageperiode weergegeven en 
 
 >[!NOTE]
 >
->Om de updateperiode te wijzigen, [het importinterval configureren](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
+>U wijzigt de updateperiode als volgt: [het importinterval configureren](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Open de **Sites** console; bijvoorbeeld [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. Rechtsboven op de werkbalk (in de rechterbovenhoek) klikt of tikt u op het pictogram om het te selecteren **Lijstweergave** (het weergegeven pictogram is afhankelijk van het [huidige weergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Nogmaals, helemaal rechts op de werkbalk (rechterbovenhoek) klikt of tikt u op het pictogram en selecteert u **Instellingen weergeven**. De **Kolommen configureren** wordt geopend. Breng vereiste wijzigingen aan en bevestig deze met **Bijwerken**.
+1. Klik of tik nogmaals in de rechterbovenhoek van de werkbalk op het pictogram en selecteer vervolgens **Instellingen weergeven**. De **Kolommen configureren** wordt geopend. Breng vereiste wijzigingen aan en bevestig deze met **Bijwerken**.
 
    ![aa-04](assets/aa-04.png)
 
@@ -90,7 +88,7 @@ Openen [Inhoudsinzicht](/help/sites-authoring/content-insights.md) van de consol
 >
 >Gegevens voor de Activity Map zijn afkomstig uit Adobe Analytics.
 
-Wanneer uw website [geconfigureerd voor Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md)kunt u de [modus Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) om relevante gegevens te bekijken. Bijvoorbeeld:
+Wanneer uw website [geconfigureerd voor Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md), kunt u de [modus Activity Map](/help/sites-authoring/author-environment-tools.md#page-modes) om relevante gegevens te bekijken. Bijvoorbeeld:
 
 ![aa-07](assets/aa-07.png)
 
@@ -100,7 +98,7 @@ Na het selecteren van [Activity Map](/help/sites-authoring/author-environment-to
 
 ![aa-03](assets/aa-03.png)
 
-De **Analyse** zwevende werkbalk wordt weergegeven; hier kunt u :
+De **Analyse** zwevende werkbalk wordt weergegeven; hier kunt u het volgende doen:
 
 * de werkbalkopmaak wijzigen met dubbele pijlen (**>>**)
 * Paginadetails in-/uitschakelen (oogpictogram)
@@ -120,13 +118,13 @@ U kunt aan de hand van de verschillende criteria bepalen welke analysegegevens m
 * gebruikersgroep
 * **Luchtbellen**/**Verloop**/**Gainers en Losers**/**Uit**
 
-* periode
+* te tonen periode
 
 ![aa-13](assets/aa-13.png)
 
 ### De Activity Map configureren {#configuring-the-activity-map}
 
-Gebruik de **Instellingen tonen** pictogram om het **Activity Map-instellingen** .
+Gebruik de **Instellingen tonen** pictogram om het **Activity Map-instellingen** in.
 
 ![aa-04-1](assets/aa-04-1.png)
 

@@ -1,17 +1,13 @@
 ---
 title: Uw campagne instellen
-seo-title: Setting up your campaign
 description: Als u een nieuwe campagne wilt opzetten, moet u een merk maken voor uw campagnes, een campagne maken voor uw ervaringen en ten slotte de eigenschappen voor uw nieuwe campagne definiëren.
-seo-description: Setting up a new campaign requires creating a brand to hold your campaigns, creating a campaign to hold experiences, and finally defining the properties for your new campaign.
-uuid: 244a150e-7b5e-4eff-bd15-e3b04be6a3e9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 19ad4751-1d5d-49de-b76b-3501b3e98e62
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: a2623df38bcd683a6a43bdaf3483e11e40ac4a68
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2257'
 ht-degree: 0%
@@ -24,7 +20,7 @@ Het opzetten van een nieuwe campagne omvat de volgende (generische) stappen:
 
 1. [Een merk maken](#creating-a-new-brand) om uw campagnes te houden.
 1. Indien nodig kunt u [de eigenschappen van uw nieuwe merk definiëren](#defining-the-properties-for-your-new-brand).
-1. [Een campagne maken](#creating-a-new-campaign) ervaringen op te doen; bijvoorbeeld laserpagina&#39;s of een nieuwsbrief.
+1. [Een campagne maken](#creating-a-new-campaign) om ervaringen op te slaan, bijvoorbeeld laserpagina&#39;s of een nieuwsbrief.
 1. Indien nodig kunt u [de eigenschappen voor uw nieuwe campagne definiëren](#defining-the-properties-for-your-new-campaign).
 
 Afhankelijk van het type ervaring dat u maakt, moet u [een ervaring creëren](#creating-a-new-experience). De details van de ervaring en de acties die volgen op de creatie zijn afhankelijk van het type ervaring dat u wilt maken:
@@ -72,7 +68,7 @@ Een nieuw merk maken:
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
-1. Klikken **OK** om op te slaan.
+1. Klikken **OK** opslaan.
 
 ### Nieuwe campagne maken {#creating-a-new-campaign}
 
@@ -82,7 +78,7 @@ Een nieuwe campagne maken:
 
    Het overzicht wordt weergegeven (leeg als het merk nieuw is).
 
-1. Klikken **Nieuw...** en de **Titel**, **Naam** en sjabloon voor uw nieuwe campagne.
+1. Klikken **Nieuw...** en geeft de **Titel**, **Naam** en sjabloon voor uw nieuwe campagne.
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
@@ -90,24 +86,24 @@ Een nieuwe campagne maken:
 
 ### Eigenschappen voor uw nieuwe campagne definiëren {#defining-the-properties-for-your-new-campaign}
 
-Campagneeigenschappen configureren die het gedrag bepalen:
+Campagneigenschappen configureren die het gedrag bepalen:
 
 * **Prioriteit:** De prioriteit van deze campagne ten opzichte van andere campagnes. Wanneer de veelvoudige campagnes gelijktijdig zijn, controleert de campagne die de hoogste prioriteit heeft de bezoekerservaring.
 * **Aan- en uittijd:** Deze eigenschappen bepalen de periode waarin de campagne de ervaring van de bezoeker bepaalt. Het bezit op Tijd controleert de tijd wanneer de campagne begint de ervaring te controleren. De eigenschap Uit-tijd bepaalt wanneer de campagnes de ervaring niet meer besturen.
 * **Afbeelding:** De afbeelding die de campagne in AEM vertegenwoordigt.
-* **Cloud Services:** De configuraties van de Cloud Service waarmee de campagne wordt geïntegreerd. (Zie [Integreren met Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Cloud Servicen:** De configuraties van de Cloud Service waarmee de campagne wordt geïntegreerd. (Zie [Integreren met Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
 * **Adobe Target:** Eigenschappen die campagnes vormen die met Adobe Target worden geïntegreerd. (Zie [Integreren met Adobe Target](/help/sites-administering/target.md).)
 
 1. Van **Campagnes**, selecteer uw merk. Selecteer uw campagne in het rechterdeelvenster en klik op **Eigenschappen**.
 
-   U kunt verschillende eigenschappen invoeren, zoals een **Titel**, **Beschrijving** en alle **Cloud Services** wilt u.
+   U kunt verschillende eigenschappen invoeren, zoals een **Titel**, **Beschrijving** en alle **Cloud Servicen** dat wil je.
 
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
-1. Klikken **OK** om op te slaan.
+1. Klikken **OK** opslaan.
 
-### Nieuwe ervaring maken {#creating-a-new-experience}
+### Een nieuwe ervaring maken {#creating-a-new-experience}
 
 De procedure voor het creëren van een nieuwe ervaring is afhankelijk van het type ervaring:
 
@@ -147,11 +143,11 @@ Als u bestaande ervaringen hebt, kunt u een aanraakpunt rechtstreeks vanuit de k
 
 1. Selecteer de kalenderweergave voor uw campagne.
 
-1. Klikken **Aanraakpunt toevoegen...** om het dialoogvenster te openen. Geef de ervaring op die u wilt toevoegen:
+1. Klikken **Aanraakpunt toevoegen...** het dialoogvenster openen. Geef de ervaring op die u wilt toevoegen:
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Klikken **OK** om op te slaan.
+1. Klikken **OK** opslaan.
 
 ## Werken met leads {#working-with-leads}
 
@@ -224,7 +220,6 @@ Om lood van een komma-gescheiden lijst te importeren:
    >* Klik in het dashboard op **Leads importeren** in de **Lijsten** ruit
    >* Klikken **Lijsten** en in de **Gereedschappen** menu, selecteert u **Leads importeren**.
 
-
 1. In de **Gereedschappen** menu, selecteert u **Importeren** **Leads**.
 
 1. Voer de informatie in zoals wordt beschreven in Voorbeeldgegevens. De volgende velden kunnen worden geïmporteerd: email,familyName,givenName,gender,aboutMe,city,country,phoneNumber,postalCode,region,streetAddress
@@ -235,10 +230,12 @@ Om lood van een komma-gescheiden lijst te importeren:
    >
    >
    >`email,givenName,familyName` - indien geschreven `givenname`Het systeem zal het bijvoorbeeld niet herkennen.
+   >
+   >
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. Klik op **Next**. Hier kunt u de leads bekijken om te controleren of deze correct zijn.
+1. Klik op **Next**. Hier kunt u de leads bekijken om te controleren of ze accuraat zijn.
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
@@ -258,7 +255,7 @@ Om lood aan reeds bestaande lijsten toe te voegen:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. In de **Gereedschappen** menu, selecteert u **Toevoegen aan lijst....** De **Toevoegen aan lijst** wordt geopend.
+1. In de **Gereedschappen** menu, selecteert u **Toevoegen aan lijst...** De **Toevoegen aan lijst** wordt geopend.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -294,7 +291,7 @@ Bestaande lead-informatie wijzigen:
 
 ### Bestaande leads verwijderen {#deleting-existing-leads}
 
-Als u bestaande leads in de MCM wilt verwijderen, schakelt u het selectievakje naast de lead in en klikt u op **Verwijderen**. De lead wordt verwijderd uit de lijst met leads en alle bijbehorende lijsten.
+Als u bestaande leads in de MCM wilt verwijderen, schakelt u het selectievakje naast de lead in en klikt u **Verwijderen**. De lead wordt verwijderd uit de lijst met leads en alle bijbehorende lijsten.
 
 >[!NOTE]
 >
@@ -345,7 +342,7 @@ Een bestaande lijst wijzigen:
 
 ### Bestaande lijsten verwijderen {#deleting-existing-lists}
 
-Als u bestaande lijsten wilt verwijderen, schakelt u in de MCM het selectievakje naast de lijst in en klikt u op **Verwijderen**. De lijst wordt verwijderd. Leads die aan de lijst zijn gekoppeld, worden niet verwijderd. Alleen de koppeling met de lijst wordt verwijderd.
+Als u bestaande lijsten wilt verwijderen, selecteert u in de MCM het selectievakje naast de lijst en klikt u op **Verwijderen**. De lijst wordt verwijderd. Leads die aan de lijst zijn gekoppeld, worden niet verwijderd. Alleen de koppeling met de lijst wordt verwijderd.
 
 >[!NOTE]
 >

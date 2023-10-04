@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ Hier volgt een weergave van het forum dat wordt weergegeven door een bezoeker va
 
 Een anonieme bezoeker van de site kan alleen het forum bekijken, maar kan geen inhoud plaatsen en geen moderatieacties uitvoeren.
 
-![bezoeker van het forum](assets/community-forum-visitor.png)
+![bezoeker van het communityforum](assets/community-forum-visitor.png)
 
 ### Nieuw lid (#4) {#new-member}
 
@@ -111,7 +111,7 @@ Laat Boyd Vlag selecteren om de inhoud te markeren die door Andrew is geplaatst.
 
 Afmelden
 
-![lid van het forum](assets/community-forum-member.png)
+![lid van het communautair forum](assets/community-forum-member.png)
 
 ### Beheerder (#3) {#administrator}
 
@@ -155,7 +155,7 @@ Merk op de communautaire moderator de zelfde opties heeft zoals de beheerder (he
 
 Afmelden.
 
-![moderator-toegang](assets/moderator-access.png)
+![moderatortoegang](assets/moderator-access.png)
 
 ### Inhoudsauteur (#1) {#content-author}
 

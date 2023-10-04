@@ -1,18 +1,14 @@
 ---
 title: Werken met Adobe Campaign Classic en Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: U kunt e-mailinhoud maken in AEM en deze verwerken in Adobe Campaign-e-mails
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails
-uuid: 23195f0b-71c0-4554-8c8b-b0e7704d71d7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 2fd0047d-d0f6-4289-98cf-454486f9cd61
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2753'
 ht-degree: 0%
 
 ---
@@ -149,7 +145,7 @@ E-mailinhoud bewerken:
 
 Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 
-* Adobe Campaign-context. Dit zijn velden die u in de tekst kunt invoegen en die worden aangepast aan de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam of gegevens van de doeldimensie).
+* Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam, of om het even welke gegevens van de doeldimensie) aanpassen.
 * Adobe Campaign-verpersoonlijkingsblokken. Dit zijn blokken vooraf gedefinieerde inhoud die niet gerelateerd zijn aan de gegevens van de ontvanger, zoals een merklogo of een koppeling naar een spiegel.
 
 Zie [Adobe Campaign-componenten](/help/sites-authoring/adobe-campaign-components.md) voor een volledige beschrijving van de onderdelen van de campagne.

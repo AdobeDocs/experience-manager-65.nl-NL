@@ -1,16 +1,12 @@
 ---
 title: Artikelen beheren
-seo-title: Managing Articles
 description: Volg deze pagina voor meer informatie over het maken en beheren van artikelen.
-seo-description: Follow this page to learn about creating and managing Articles.
-uuid: 72b86cd7-3016-41b6-a001-9dce4084e9db
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
-discoiquuid: b46058f9-4691-4fba-a656-0f8507875a79
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 0%
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om artikelen binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op artikelen in de toepassing.
 
@@ -47,7 +43,7 @@ De algemene workflow voor het maken van een artikel is als volgt:
 1. Klik op de pijl omlaag in de rechterbovenhoek van het dialoogvenster **Artikelen beheren** tegel.
 1. Kies een artikelsjabloon en klik op **Volgende**.
 1. Werk door elke stap van de wizard om door te gaan met het maken van uw nieuwe artikel.
-1. Klik, indien gereed, op **Maken**.
+1. Klik op **Maken**.
 1. Uw nieuwe artikel wordt weergegeven in het dialoogvenster **Artikelen beheren** tegel.
 
 ## Een nieuw artikel importeren {#importing-a-new-article}
@@ -77,7 +73,7 @@ Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen o
 
 >[!CAUTION]
 >
->Alleen artikelen die zijn gemaakt in AEM kunnen worden geopend in de editor.
+>Alleen artikelen die in AEM zijn gemaakt, kunnen worden geopend in de editor.
 
 De workflow voor het bewerken van een artikel:
 
@@ -137,5 +133,5 @@ Ga voor meer informatie over het beheren van artikelen naar
 * [Banners beheren](/help/mobile/mobile-on-demand-managing-banners.md)
 * [Verzamelingen beheren](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Gedeelde bronnen uploaden](/help/mobile/mobile-on-demand-shared-resources.md)
-* [De inhoud publiceren/verwijderen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [De inhoud publiceren/publiceren ongedaan maken](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 * [Voorvertonen met Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md)

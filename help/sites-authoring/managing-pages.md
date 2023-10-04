@@ -2,9 +2,9 @@
 title: Pagina's maken en ordenen met AEM
 description: Pagina's maken en beheren met AEM
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2526'
+source-wordcount: '2523'
 ht-degree: 3%
 
 ---
@@ -15,7 +15,7 @@ In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ado
 
 >[!NOTE]
 >
->Uw account heeft [passende toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) om actie te ondernemen op pagina&#39;s zoals maken, kopiëren, verplaatsen, bewerken en verwijderen.
+>Uw account heeft de [passende toegangsrechten](/help/sites-administering/security.md) en [machtigingen](/help/sites-administering/security.md#permissions) om actie te ondernemen op pagina&#39;s zoals maken, kopiëren, verplaatsen, bewerken en verwijderen.
 >
 >Als u om het even welke problemen ontmoet wij adviseren u uw systeembeheerder contacteert.
 
@@ -76,7 +76,7 @@ Vanuit elk punt kunt u de vertakking naar boven zien vanuit de broodkruimels in 
 
 ![caop-01](assets/caop-01.png)
 
-### Naamgevingsconventies voor pagina&#39;s {#page-naming-conventions}
+### Naamgevingsconventies voor pagina {#page-naming-conventions}
 
 Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
@@ -114,11 +114,11 @@ De minimaal toegestane tekens zijn:
 * `_` (onderstrepingsteken)
 * `-` (afbreekstreepje/minteken)
 
-Alle tekens die zijn toegestaan, zijn beschikbaar in [de naamgevingsconventies](/help/sites-developing/naming-conventions.md).
+Alle tekens die zijn toegestaan, zijn beschikbaar in [naamconventies](/help/sites-developing/naming-conventions.md).
 
 >[!NOTE]
 >
->Als AEM wordt uitgevoerd op een [Implementatie van MongoMK persistence Manager](/help/sites-deploying/recommended-deploys.md)paginanamen zijn beperkt tot 150 tekens.
+>Als AEM op een [Implementatie van MongoMK persistence Manager](/help/sites-deploying/recommended-deploys.md)paginanamen zijn beperkt tot 150 tekens.
 
 #### Titel {#title}
 
@@ -172,7 +172,7 @@ Componenten zijn de elementen die worden verschaft door AEM, zodat u specifieke 
 * Video
 * En nog veel meer
 
-Nadat u een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met de componenten](/help/sites-authoring/editing-content.md#insertinganewparagraph), die beschikbaar zijn op [componentbrowser](/help/sites-authoring/author-environment-tools.md#componentbrowser).
+Als u eenmaal een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met de componenten](/help/sites-authoring/editing-content.md#insertinganewparagraph), die beschikbaar zijn op [componentbrowser](/help/sites-authoring/author-environment-tools.md#componentbrowser).
 
 >[!NOTE]
 >
@@ -213,13 +213,13 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u een pagina opgeeft **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
+      * Als u een pagina **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
 
       * U **kan geen ongeldige tekens verzenden** in de **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
    >[!NOTE]
    >
-   >Zie [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions).
+   >Zie [Naamgevingsconventies voor pagina](#page-naming-conventions).
 
    De minimale informatie die nodig is om een nieuwe pagina te maken, is de **Titel**.
 
@@ -247,7 +247,7 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 
 1. Open de **Sites** console.
 1. Navigeer totdat u de pagina vindt die u wilt bewerken.
-1. Selecteer de pagina door een van de volgende twee handelingen uit te voeren:
+1. Selecteer de pagina door een van de volgende twee methoden te gebruiken:
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de werkbalk
@@ -256,7 +256,7 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
 
-1. De pagina wordt geopend en u kunt [de pagina bewerken](/help/sites-authoring/editing-content.md#touchoptimizedui) zoals vereist.
+1. De pagina wordt geopend en u [de pagina bewerken](/help/sites-authoring/editing-content.md#touchoptimizedui) zoals vereist.
 
 >[!NOTE]
 >
@@ -272,7 +272,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de werkbalk
 
-   En dan de **Kopiëren** paginapictogram:
+   En dan de **Kopiëren** pagina-pictogram:
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
 
@@ -286,8 +286,8 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    ![Plakken](assets/paste-without-children.png)
 
    U kunt:
-   * Selecteer **Plakken** paginapictogram zelf: Op deze locatie worden een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
-   * Selecteer de vervolgkeuzepijl om de knop **Plakken zonder kinderen** optie. Op deze locatie wordt een kopie van de originele pagina gemaakt. onderliggende pagina&#39;s worden niet gekopieerd.
+   * Selecteer de **Plakken** paginapictogram zelf: op deze locatie wordt een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
+   * Selecteer de vervolgkeuzepijl om de knop **Plakken zonder kinderen** -optie. Op deze locatie wordt een kopie van de originele pagina gemaakt. Onderliggende pagina&#39;s worden niet gekopieerd.
 
    >[!NOTE]
    >
@@ -297,7 +297,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
 
 >[!NOTE]
 >
->De naam van een pagina wijzigen is ook afhankelijk van de instelling [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions) wanneer u de nieuwe paginanaam opgeeft.
+>De naam van een pagina wijzigen is ook afhankelijk van de instelling [Naamgevingsconventies voor pagina](#page-naming-conventions) wanneer u de nieuwe paginanaam opgeeft.
 
 >[!NOTE]
 >
@@ -317,7 +317,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#navigatingandselectionmode) en de werkbalk
 
-   Selecteer vervolgens de **Verplaatsen** paginapictogram:
+   Selecteer vervolgens de **Verplaatsen** pagina-pictogram:
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
@@ -370,7 +370,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Standaard wordt de animatie opnieuw gepubliceerd wanneer de bewerking is voltooid, maar dit kan veranderen door de optie **Opnieuw publiceren** in het **Aanpassen/Opnieuw publiceren** stap.
+>Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Standaard wordt de animatie opnieuw gepubliceerd wanneer de bewerking is voltooid, maar dit kan veranderen door de optie **Opnieuw publiceren** in het veld **Aanpassen/Opnieuw publiceren** stap.
 
 >[!NOTE]
 >
@@ -380,7 +380,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 Normaal gesproken wordt de handeling Pagina verplaatsen of Naam wijzigen onmiddellijk uitgevoerd. Dit wordt beschouwd als synchrone verwerking en verdere actie in UI wordt geblokkeerd tot de actie volledig is.
 
-Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker in de gebruikersinterface kan blijven ontwerpen zonder dat dit wordt belemmerd door de actie Pagina verplaatsen of hernoemen.
+Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker het ontwerpen in de gebruikersinterface kan voortzetten zonder dat dit wordt belemmerd door de actie Verplaatsen of Naam wijzigen van de pagina.
 
 * Wanneer u klikt **Verplaatsen** in de laatste stap hierboven, controleert AEM de gevormde grens.
 * Als het aantal pagina&#39;s waarop de actie betrekking heeft, onder de limiet ligt, wordt een synchrone bewerking uitgevoerd.
@@ -417,7 +417,7 @@ De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [*
    * **Annuleren** om de handeling af te breken
    * **Verwijderen** ter bevestiging van de actie :
 
-      * Als de pagina geen verwijzingen heeft, wordt de pagina verwijderd.
+      * Als de pagina geen verwijzingen bevat, wordt de pagina verwijderd.
       * Als de pagina verwijzingen heeft, zal een berichtvakje u meedelen dat **Naar een of meer pagina&#39;s wordt verwezen.** U kunt **Verwijderen forceren** of **Annuleren**.
 
 >[!NOTE]
@@ -426,17 +426,17 @@ De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [*
 
 ### Een pagina vergrendelen {#locking-a-page}
 
-U kunt [Een pagina vergrendelen/ontgrendelen](/help/sites-authoring/editing-content.md#locking-a-page) vanuit een console of wanneer u een afzonderlijke pagina bewerkt. Informatie over het feit of een pagina is vergrendeld, wordt ook op beide locaties weergegeven.
+U kunt [Een pagina vergrendelen/ontgrendelen](/help/sites-authoring/editing-content.md#locking-a-page) vanuit een console of wanneer u een afzonderlijke pagina bewerkt. Informatie over vergrendelde pagina&#39;s wordt ook op beide locaties weergegeven.
 
 ![screen_shot_2018-03-22at105713](assets/screen_shot_2018-03-22at105713.png) ![screen_shot_2018-03-22at105720](assets/screen_shot_2018-03-22at105720.png)
 
-### Nieuwe map maken {#creating-a-new-folder}
+### Een nieuwe map maken {#creating-a-new-folder}
 
 U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
 >[!NOTE]
 >
->Mappen zijn ook onderworpen aan de [Naamgevingsconventies voor pagina&#39;s](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
+>Mappen zijn ook onderworpen aan de [Naamgevingsconventies voor pagina](#page-naming-conventions) wanneer u de nieuwe mapnaam opgeeft.
 
 >[!CAUTION]
 >
@@ -447,7 +447,7 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
 1. Open de **Sites** en navigeer naar de gewenste locatie.
 1. Selecteer **Maken** van de werkbalk
-1. Selecteren **Map** om het dialoogvenster te openen. Hier kunt u de **Naam** en **Titel**:
+1. Selecteren **Map** het dialoogvenster openen. Hier kunt u de **Naam** en **Titel**:
 
    ![chlimage_1-119](assets/chlimage_1-119.png)
 

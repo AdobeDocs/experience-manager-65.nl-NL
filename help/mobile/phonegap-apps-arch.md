@@ -1,17 +1,13 @@
 ---
 title: De anatomie van een app
-seo-title: The Anatomy of an App
 description: Deze pagina bevat een beschrijving van de paginacomponenten die u voor uw app maakt, zijn gebaseerd op de component /libs/mobileapps/components/angular/ng-page (CRXDE Lite op een lokale server).
-seo-description: This page provides description of the page components that you create for your app are based on the /libs/mobileapps/components/angular/ng-page component (CRXDE Lite on a local server).
-uuid: 4c1a74c1-85af-4a79-b723-e9fbfc661d35
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 exl-id: ab4f1c61-be83-420e-a339-02cf1f33efed
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '2688'
+source-wordcount: '2686'
 ht-degree: 0%
 
 ---
@@ -20,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 ## Paginasjablonen voor mobiele apps {#page-templates-for-mobile-apps}
 
@@ -60,9 +56,9 @@ De hoofdtekst van een pagina van de Angular wordt anders weergegeven afhankelijk
 
 **Auteursmodus**
 
-In de auteurmodus wordt elke afzonderlijke pagina afzonderlijk weergegeven. Angular behandelt het verpletteren tussen pagina&#39;s niet, noch is een ng-mening die wordt gebruikt om een gedeeltelijk malplaatje te laden dat de componenten van de pagina bevat. In plaats daarvan wordt de inhoud van de paginasjabloon (template.jsp) aan de serverzijde opgenomen via de `cq:include` tag.
+In de auteurmodus wordt elke afzonderlijke pagina afzonderlijk weergegeven. Angular behandelt het verpletteren tussen pagina&#39;s niet, noch is een ng-mening die wordt gebruikt om een gedeeltelijk malplaatje te laden dat de componenten van de pagina bevat. In plaats daarvan wordt de inhoud van de paginasjabloon (template.jsp) aan de serverzijde opgenomen via de `cq:include` -tag.
 
-Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, Sidetrap, ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
+Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, Sidekick, ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
 
 Merk op dat het malplaatje.jsp omvat in a verpakt is `div` element dat het `ng-controller` richtlijn. Met deze structuur kunt u de DOM-inhoud koppelen aan de controller. Daarom, hoewel de pagina&#39;s die zich op de cliëntkant teruggeven ontbreken, individuele componenten die dit doen goed werken (zie sectie over Componenten hieronder).
 
@@ -76,7 +72,7 @@ Merk op dat het malplaatje.jsp omvat in a verpakt is `div` element dat het `ng-c
 
 In de publicatiemodus (bijvoorbeeld wanneer de app wordt geëxporteerd met Content Sync) worden alle pagina&#39;s een app van één pagina (SPA). (Om over SPA te leren, gebruik het leerprogramma van de Angular, specifiek [https://docs.angularjs.org/tutorial/step_07](https://docs.angularjs.org/tutorial/step_07).)
 
-Een SPA bevat slechts één pagina HTML (een pagina die de `<html>` element). Deze pagina wordt de &#39;lay-outsjabloon&#39; genoemd. In de terminologie van de Angular is het &quot;...een sjabloon die veel wordt gebruikt voor alle weergaven in onze toepassing.&quot; Beschouw deze pagina als de &#39;toepassingspagina op het hoogste niveau&#39;. Volgens afspraak is de toepassingspagina op het hoogste niveau de `cq:Page` knooppunt van uw toepassing dat zich het dichtst bij de hoofdmap bevindt (en geen omleiding is).
+Er is slechts één pagina van HTML in een SPA (een pagina die het `<html>` element). Deze pagina wordt de &#39;lay-outsjabloon&#39; genoemd. In de terminologie van de Angular, is het &quot;...een malplaatje dat voor alle meningen in onze toepassing gemeenschappelijk is.&quot; Beschouw deze pagina als de &#39;toepassingspagina op het hoogste niveau&#39;. Volgens afspraak is de toepassingspagina op het hoogste niveau de `cq:Page` knooppunt van uw toepassing dat zich het dichtst bij de hoofdmap bevindt (en geen omleiding is).
 
 Aangezien de werkelijke URI van uw app niet verandert in de publicatiemodus, moeten verwijzingen naar externe elementen van deze pagina gebruikmaken van relatieve paden. Daarom is er een speciale afbeeldingscomponent die rekening houdt met deze pagina op het hoogste niveau wanneer u afbeeldingen rendert voor exporteren.
 
@@ -147,7 +143,7 @@ Met het controller.js.jsp-script wordt het controllerfragment voor elke pagina g
 ])
 ```
 
-De `data` variable wordt toegewezen de belofte die door de Angular is geretourneerd `$http.get` methode. Elke component die in deze pagina is opgenomen, kan desgewenst .json-inhoud (via het script angular.json.jsp) beschikbaar maken en op de inhoud van dit verzoek reageren wanneer dit wordt opgelost. Het verzoek is zeer snel op mobiele apparaten omdat het eenvoudig tot het dossiersysteem toegang heeft.
+Let erop dat de `data` variable wordt toegewezen de belofte die door de Angular is geretourneerd `$http.get` methode. Elke component die in deze pagina is opgenomen, kan desgewenst .json-inhoud (via het script angular.json.jsp) beschikbaar maken en op de inhoud van dit verzoek reageren wanneer dit wordt opgelost. Het verzoek is zeer snel op mobiele apparaten omdat het eenvoudig tot het dossiersysteem toegang heeft.
 
 Als een component op deze manier deel moet uitmaken van de controller, moet deze de component /libs/mobileapps/components/angular/ng-component uitbreiden en de component `frameworkType: angular` eigenschap.
 
@@ -232,17 +228,17 @@ Dit script geeft de inhoud van de component of een geschikte plaatsaanduiding we
 
 #### template.jsp {#template-jsp-1}
 
-Het script template.jsp rendert de opmaak van de component. Indien de component in kwestie wordt aangedreven door JSON-gegevens die uit AEM zijn geëxtraheerd (zoals &#39;ng-text&#39;: /libs/mobileapps/components/angular/ng-text/template.jsp), dan zal dit manuscript voor de bedrading van de prijsverhoging met gegevens verantwoordelijk zijn die door het de controlemechanismewerkingsgebied van de pagina worden blootgesteld.
+Het script template.jsp rendert de opmaak van de component. Als de component in kwestie door JSON gegevens wordt gedreven die uit AEM (zoals &quot;ng-text&quot;/libs/mobileapps/components/angular/ng-text/template.jsp) worden gehaald, dan zal dit manuscript voor de bedrading van omhoog de prijsverhoging met gegevens verantwoordelijk zijn die door het controlemechanismewerkingsgebied van de pagina worden blootgesteld.
 
 Nochtans, vereisen de prestatiesvereisten soms dat geen cliënt zijtrilling (ook wel gegevensband genoemd) wordt uitgevoerd. In dit geval rendert u gewoon de markering van de component aan de serverzijde en is deze opgenomen in de inhoud van de paginasjabloon.
 
 #### overhead.jsp {#overhead-jsp}
 
-In componenten die door JSON-gegevens worden aangedreven (zoals &#39;ng-text&#39;: /libs/mobileapps/components/angular/ng-text), overhead.jsp kan worden gebruikt om alle Java-code uit template.jsp te verwijderen. Het wordt dan van template.jsp van verwijzingen voorzien en om het even welke variabelen die het op het verzoek blootstelt zijn beschikbaar voor gebruik. Deze strategie stimuleert de scheiding van logica van presentatie, en beperkt de hoeveelheid code die moet worden gekopieerd en worden gekleefd wanneer een nieuwe component uit bestaande wordt afgeleid.
+In componenten die door JSON-gegevens worden aangedreven (zoals &#39;ng-text&#39;: /libs/mobileapps/components/angular/ng-text), kan overhead.jsp worden gebruikt om alle Java-code uit template.jsp te verwijderen. Het wordt dan van template.jsp van verwijzingen voorzien en om het even welke variabelen die het op het verzoek blootstelt zijn beschikbaar voor gebruik. Deze strategie stimuleert de scheiding van logica van presentatie, en beperkt de hoeveelheid code die moet worden gekopieerd en worden gekleefd wanneer een nieuwe component uit bestaande wordt afgeleid.
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
-Zoals beschreven in AEM paginasjablonen, kan elke component een JavaScript-fragment uitvoeren om de JSON-inhoud te verbruiken die door de `data` beloven. Volgens de conventies van de Angular moet een controller alleen worden gebruikt voor het toewijzen van variabelen aan het bereik.
+Zoals beschreven in AEM paginasjablonen, kan elke component een JavaScript-fragment uitvoeren om de JSON-inhoud te verbruiken die door de `data` beloven. Na de conventies van de Angular, zou een controlemechanisme slechts voor het toewijzen van variabelen aan het werkingsgebied moeten worden gebruikt.
 
 #### angular.json.jsp {#angular-json-jsp}
 
@@ -313,15 +309,15 @@ Deze map bevat de [CLI-haken](https://cordova.apache.org/docs/en/10.x/guide/appd
 
 #### .cordova/haken/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-De map after-platform_add bevat de map `copy_AMS_Conifg.js` bestand. Dit manuscript kopieert een configuratiedossier om de inzameling van Adobe Mobiele Analytics van de Diensten te steunen.
+De folder after-platform_add bevat `copy_AMS_Conifg.js` bestand. Dit manuscript kopieert een configuratiedossier om de inzameling van de Analyses van de Diensten van de Adobe Mobiele te steunen.
 
 #### .cordova/haken/after-prepare/ {#cordova-hooks-after-prepare}
 
-De map after-prepare bevat de map `copy_resource_files.js` bestand. Met dit script wordt een aantal pictogrammen en welkomstschermen gekopieerd naar platformspecifieke locaties.
+De map after-prepare bevat de map `copy_resource_files.js` bestand. Met dit script worden verschillende pictogrammen en welkomstschermen naar platformspecifieke locaties gekopieerd.
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
-De map before_platform_add bevat de map `install_plugins.js` bestand. Dit script doorloopt een lijst met Cordova-insteekmodules voor insteekmodules, waarbij de id-id&#39;s installeert die nog niet beschikbaar zijn.
+De map before_platform_add bevat de map `install_plugins.js` bestand. Dit script doorloopt een lijst met Cordova-insteekmodules voor insteekmodules, waarbij de id-id&#39;s die het detecteert, worden geïnstalleerd, is nog niet beschikbaar.
 
 Deze strategie vereist niet dat u de plug-ins bundelt en installeert om elke keer dat de Maven `content-package:install` wordt uitgevoerd. De alternatieve strategie om de bestanden in uw SCM-systeem te controleren, vereist herhaalde bundeling en installatie-activiteiten.
 
@@ -382,7 +378,7 @@ Het bestand config.xml bevat de `content` element:
 
 `<content src="content/phonegap/geometrixx/apps/ng-geometrixx-outdoors/en.html" />`
 
-In de PhoneGap-documentatie (`https://docs.phonegap.com`), wordt dit element beschreven als &quot;The optional &lt;content> Het element definieert de startpagina van de app in de map met webelementen op het hoogste niveau. De standaardwaarde is index.html, die gewoonlijk in de top-level folder van een project www.&quot;verschijnt
+In de PhoneGap-documentatie (`https://docs.phonegap.com`), wordt dit element beschreven als &quot;The optional &lt;content> Het element definieert de startpagina van de app in de map met webmiddelen op hoofdniveau. De standaardwaarde is index.html, die gewoonlijk in de top-level folder van een project www.&quot;verschijnt
 
 De PhoneGap-build mislukt als er geen bestand index.html aanwezig is. Daarom is dit bestand opgenomen.
 
@@ -392,7 +388,7 @@ De map res bevat afbeeldingen en pictogrammen voor het welkomstscherm. De `copy_
 
 #### www/etc {#www-etc}
 
-Door overeenkomst, in AEM bevat de /etc knoop statische clientlib inhoud. De map etc bevat de topunthandels, AngularJS en Geometrixx-clientlibsall-bibliotheken.
+Door overeenkomst, in AEM bevat de /etc knoop statische clientlib inhoud. De map etc bevat de toverbibliotheken Topcoat, AngularJS en Geometrixx-clientlibsall.
 
 #### www/apps {#www-apps}
 

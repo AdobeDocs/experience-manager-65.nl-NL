@@ -1,16 +1,12 @@
 ---
 title: SSL configureren voor WebSphere-toepassingsserver
-seo-title: Configuring SSL for WebSphere Application Server
-description: Leer hoe te om SSL voor de Server van de Toepassing te vormen WebSphere.
-seo-description: Learn how to configure SSL for WebSphere Application Server.
-uuid: f939a806-346e-41e0-b2c0-6d0ba83f8f6f
+description: Leer hoe u SSL voor WebSphere Application Server configureert.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7c0efcb3-5b07-4090-9119-b7318c8b7980
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1225'
 ht-degree: 0%
@@ -30,20 +26,20 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 
 ### Een Linux- of UNIX-gebruiker voor WebSphere maken {#create-a-linux-or-unix-user-for-websphere}
 
-1. Meld u aan als hoofdgebruiker.
-1. Creeer een gebruiker door het volgende bevel in een bevelherinnering in te gaan:
+1. Meld u aan als de rootgebruiker.
+1. Maak een gebruiker door de volgende opdracht in te voeren in de opdrachtprompt:
 
    * (Linux en Sun Solaris) `useradd`
    * (IBM AIX) `mkuser`
 
-1. Stel het wachtwoord van de nieuwe gebruiker in door deze in te voeren `passwd` in de bevelherinnering.
-1. (Linux en Solaris) Maak een bestand met een schaduwwachtwoord door dit in te voeren `pwconv` (zonder parameters) in de bevelherinnering.
+1. Stel het wachtwoord van de nieuwe gebruiker in door de opdrachtprompt in te voeren `passwd` .
+1. (Linux en Solaris) Maak een wachtwoordbestand voor schaduwen door (zonder parameters) in de opdrachtprompt in te voeren `pwconv` .
 
    >[!NOTE]
    >
-   >(Linux en Solaris) Om het lokale OS-beveiligingsregister van WebSphere Application Server te laten werken, moet er een bestand met een schaduwwachtwoord bestaan. Het bestand met schaduwwachtwoorden krijgt meestal de naam **/etc/shadow** en is gebaseerd op het bestand /etc/password. Als het bestand met schaduwwachtwoorden niet bestaat, treedt er een fout op nadat de algemene beveiliging is ingeschakeld en het gebruikersregister is geconfigureerd als Lokaal besturingssysteem.
+   >(Linux en Solaris) Het lokale beveiligingsregister van WebSphere Application Server (lokaal besturingssysteem) werkt alleen als er een schaduwwachtwoordbestand aanwezig is. Het wachtwoordbestand voor schaduwen krijgt meestal de naam **/etc/shadow** en is gebaseerd op het bestand /etc/passwd. Als het wachtwoordbestand voor schaduwen niet bestaat, treedt er een fout op nadat de algemene beveiliging is ingeschakeld en het gebruikersregister is geconfigureerd als Lokaal besturingssysteem.
 
-1. Open het groepsbestand uit de map /etc in een teksteditor.
+1. Open het groepsbestand vanuit de map /etc in een teksteditor.
 1. Voeg de gebruiker die u in stap 2 hebt gemaakt toe aan de `root` groep.
 1. Sla het bestand op en sluit het.
 1. (UNIX met toegelaten SSL) Start en stop WebSphere als wortelgebruiker.
@@ -57,7 +53,7 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 1. Deselecteren **Gebruiker moet wachtwoord wijzigen bij volgende aanmelding**, klikt u op **Maken** en klik vervolgens op **Sluiten**.
 1. Klikken **Gebruikers**, klikt u met de rechtermuisknop op de gebruiker die u net hebt gemaakt en selecteert u **Eigenschappen**.
 1. Klik op de knop **Lid van** en klik vervolgens op **Toevoegen**.
-1. Typ in het vak Geef de objectnamen op die u wilt selecteren `Administrators`klikt u op Namen controleren om te controleren of de groepsnaam correct is.
+1. Typ in het vak Geef de objectnamen op die u wilt selecteren `Administrators`, klikt u op Namen controleren om te controleren of de groepsnaam correct is.
 1. Klikken **OK** en klik vervolgens op **OK** opnieuw.
 1. Selecteren **Start > Configuratiescherm > Systeembeheer > Lokaal beveiligingsbeleid > Lokaal beleid**.
 1. Klik op Toewijzing gebruikersrechten en klik vervolgens met de rechtermuisknop op Handelen als onderdeel van het besturingssysteem en selecteer Eigenschappen.
@@ -89,7 +85,7 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 1. Klikken **Voltooien**.
 1. Start het WebSphere-profiel opnieuw.
 
-   WebSphere gebruikt het standaardsleutelarchief en het vertrouwde archief.
+   WebSphere begint met het standaardsleutelarchief en het standaardvertrouwensarchief.
 
 ## SSL inschakelen (aangepaste sleutel en vertrouwde opslag) {#enable-ssl-custom-key-and-truststore}
 
@@ -99,29 +95,29 @@ U kunt sleutelarchieven en sleutelarchieven maken met het hulpprogramma ikeyman 
 1. Klikken **sleutelarchieven en certificaten** onder Verwante objecten.
 1. In de **Belangrijke winkeltoepassingen** vervolgkeuzelijst, zorg ervoor dat **SSL-sleutelarchieven** is geselecteerd. Klikken **Nieuw**.
 1. Typ een logische naam en beschrijving.
-1. Geef het pad op naar het sleutelarchief. Als u al een sleutelarchief hebt gemaakt via ikeyman, geeft u het pad naar het sleutelarchiefbestand op.
+1. Geef het pad op waar u het sleutelarchief wilt maken. Als u al een keystore hebt gemaakt via ikeyman, geeft u het pad naar het keystore-bestand op.
 1. Geef het wachtwoord op en bevestig het.
 1. Kies het sleutelarchieftype en klik **Toepassen**.
-1. Sla de master configuratie op.
+1. Sla de hoofdconfiguratie op.
 1. Klikken **Persoonlijk certificaat**.
 1. Als u al een sleutelarchief hebt gemaakt met ikeyman, wordt het certificaat weergegeven. Anders moet u een nieuw zelfondertekend certificaat toevoegen door de volgende stappen uit te voeren:
 
-   1. Selecteren **Maken > Zelfondertekend certificaat**.
-   1. Geef de gewenste waarden op in het certificaatformulier. Zorg ervoor dat u Alias en gemeenschappelijke naam als volledig-gekwalificeerde domeinnaam van de machine houdt.
-   1. Klikken **Toepassen**.
+   1. Selecteer **Maken > zelfondertekend certificaat**.
+   1. Geef de gewenste waarden op het certificaatformulier op. Zorg ervoor dat u de alias en de algemene naam als volledig gekwalificeerde domeinnaam van de computer behoudt.
+   1. Klik op **Toepassen**.
 
-1. Herhaal stap 2 tot en met 10 voor het maken van een vertrouwde opslag.
+1. Herhaal stap 2 tot en met 10 voor het maken van een truststore.
 
-## Aangepast sleutelarchief en vertrouwde opslag toepassen op de server {#apply-custom-keystore-and-truststore-to-the-server}
+## Aangepaste keystore en truststore toepassen op de server {#apply-custom-keystore-and-truststore-to-the-server}
 
-1. Selecteer in de beheerconsole van WebSphere de optie **Beveiliging > SSL-certificaat en sleutelbeheer**.
-1. Klikken **De configuratie van de eindpuntbeveiliging beheren**. De lokale topologiekaart opent.
-1. Onder Binnenkomend, uitgezochte directe kind van knopen.
-1. Selecteer onder Verwante objecten de optie **SSL-configuraties**.
-1. Selecteren **NodeDeafultSSLSetting**.
+1. Selecteer in de WebSphere Administrative Console de optie **Beveiliging > SSL-certificaat en sleutelbeheer**.
+1. Klik op **Beveiligingsconfiguratie voor eindpunten beheren**. De lokale topologiekaart wordt geopend.
+1. Selecteer onder Binnenkomend de optie Direct onderliggende element van knooppunten.
+1. Selecteer **SSL-configuraties** onder Verwante items.
+1. Selecteer **NodeDeafultSSLSetting**.
 1. Selecteer in de vervolgkeuzelijsten Naam van vertrouwde opslag en Naam van sleutelarchief de aangepaste truststore en sleutelarchief die u hebt gemaakt.
 1. Klikken **Toepassen**.
-1. Sla de master configuratie op.
+1. Sla de hoofdconfiguratie op.
 1. Start het WebSphere-profiel opnieuw.
 
    Uw profiel wordt nu uitgevoerd op aangepaste SSL-instellingen en uw certificaat.

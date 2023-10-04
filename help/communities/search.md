@@ -1,18 +1,14 @@
 ---
 title: Zoekfunctie
-seo-title: Search Feature
 description: Zoeken toevoegen en configureren aan een Community-site
-seo-description: Adding and configuring Search to a Communities site
-uuid: ca633456-911f-447f-881e-653533125d5f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 exl-id: e252b0e5-a2f8-468e-ac8c-951a5b0f2e32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '440'
 ht-degree: 0%
 
 ---
@@ -43,7 +39,7 @@ Wanneer de vereiste clientbibliotheek `cq.social.hbs.search`, wordt opgenomen, i
 
 ### De toegevoegde zoekopdracht configureren {#configure-the-added-search}
 
-Selecteer de geplaatste `Search` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Search` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![samenkomen](assets/configure-new.png)
 
@@ -57,8 +53,7 @@ Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
 * **[!UICONTROL Result Page]**
-De resultaten worden weergegeven op een aparte pagina die u in de browser hebt opgegeven om een pagina met de 
-`Search Results` component.
+De resultaten worden weergegeven op een aparte pagina die u in de browser hebt opgegeven om een pagina te selecteren die de `Search Results` component.
 
 ## Zoekresultaten {#search-results}
 
@@ -70,7 +65,7 @@ Als u een `Search Results` van een component aan een pagina op auteurswijze, geb
 
 en sleep het naar de juiste plaats op een pagina. In tegenstelling tot de zoekcomponent is geen tweede pagina nodig omdat de resultaten op dezelfde pagina worden weergegeven.
 
-Als u Zoeken elders in de website gebruikt, wordt deze pagina geleverd met `Search Results` kan worden geconfigureerd als `Result Page` voor een of alle gevallen van `Search`.
+Als u Zoeken elders op de website gebruikt, wordt deze pagina geleverd met `Search Results` kan worden geconfigureerd als `Result Page` voor een of alle gevallen `Search`.
 
 Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
@@ -80,7 +75,7 @@ Wanneer de vereiste clientbibliotheek `cq.social.hbs.search`, wordt opgenomen, i
 
 ### Het toegevoegde zoekresultaat configureren {#configure-the-added-search-result}
 
-Selecteer de geplaatste `Search Results` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Search Results` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![vormen](assets/configure-new.png)
 
@@ -90,11 +85,11 @@ Onder de **[!UICONTROL Search Result Settings]** kunt u opgeven welke paden in d
 
 * **[!UICONTROL Search Results Per Page]**
 
-   Bepaal het aantal onderwerpen/posten dat per pagina wordt getoond. De standaardwaarde is 10.
+  Bepaal het aantal onderwerpen/posten dat per pagina wordt getoond. De standaardwaarde is 10.
 
 * **[!UICONTROL Search Paths]**
 
-   Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt.
+  Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt.
 
 ## Aanvullende informatie {#additional-information}
 

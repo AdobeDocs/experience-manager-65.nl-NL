@@ -1,16 +1,12 @@
 ---
 title: HSM-referenties beheren
-seo-title: Managing HSM credentials
 description: Leer hoe u HSM-referenties beheert.
-seo-description: Learn how to manage HSM credentials.
-uuid: 30ddcd4a-f771-44d5-bdef-4826adcd0c44
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e5f17ba8-8aab-4449-811a-20ad33de1c6f
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1304'
 ht-degree: 0%
@@ -32,7 +28,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 ## Een alias maken voor een HSM-referentie wanneer het HSM-apparaat online is {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
-1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias aan te duiden. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
+1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
 1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Klik op HSM-connectiviteit testen. Als AEM formulieren verbinding kunnen maken met het HSM-apparaat, wordt een bericht weergegeven met de mededeling dat de HSM beschikbaar is. Klik op Next.
 1. Gebruik of de Symbolische Naam, identiteitskaart van de Slot, of Index van de Lijst van de Slot om te identificeren waar de geloofsbrieven op HSM worden opgeslagen.
@@ -47,8 +43,8 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 ## Een alias maken voor een HSM-referentie wanneer het HSM-apparaat offline is {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-offline}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > HSM-referenties en klik vervolgens op Toevoegen.
-1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias aan te duiden. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
-1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van uw HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
+1. Typ in het vak Profielnaam een tekenreeks die wordt gebruikt om de alias te identificeren. Deze waarde wordt gebruikt als een eigenschap voor bepaalde bewerkingen met digitale handtekeningen, zoals de bewerking Handtekeningveld ondertekenen.
+1. Typ in het vak PKCS11-bibliotheek het volledig gekwalificeerde pad van de HSM-clientbibliotheek op de server. Bijvoorbeeld, `c:\Program Files\LunaSA\cryptoki.dll`. In een gegroepeerde omgeving moet dit pad identiek zijn voor alle servers in de cluster.
 1. Schakel het selectievakje Offline profiel maken in. Klik op Next.
 1. Selecteer in de lijst HSM-apparaat de fabrikant van het HSM-apparaat waar de referentie is opgeslagen.
 1. Selecteer in de lijst Slot-type de optie Groef-id, Slot-index of Token-naam en geef een waarde op in het vak Slot-info. AEM formulieren gebruiken deze instellingen om te bepalen waar de referenties op de HSM worden opgeslagen.
@@ -56,18 +52,18 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
    * **Tokennaam:** Komt overeen met een verdelingsnaam (bijvoorbeeld, HSMPART1).
    * **Groef-id:** De sleuf-id is een geheel getal dat overeenkomt met de sleuf en dat op zijn beurt weer overeenkomt met een partitie. De client (formulierserver) is bijvoorbeeld eerst geregistreerd bij de HSMPART1-partitie. Dit brengt groef 1 aan de verdeling HSMPART1, voor deze cliënt in kaart. Omdat HSMPART1 de eerste geregistreerde verdeling is, is identiteitskaart van de Slot 1 en u zou Informatie van de Slot aan 1 plaatsen.
 
-      De sleuf-id wordt per client ingesteld. Als u een tweede machine aan een verschillende verdeling (bijvoorbeeld, HSMPART2 op het zelfde apparaat HSM) registreerde, dan zou groef 1 met de verdeling HSMPART2 voor die cliënt worden geassocieerd.
+     De groef ID wordt geplaatst op een cliënt-door-cliënt basis. Als u een tweede machine aan een verschillende verdeling (bijvoorbeeld, HSMPART2 op het zelfde apparaat HSM) registreerde, dan zou groef 1 met de verdeling HSMPART2 voor die cliënt worden geassocieerd.
 
    * **Slot-index:** Als u Slot Index selecteert, plaats de Info van de Slot aan een geheel dat aan de groef beantwoordt. Dit is een op 0 gebaseerde index, zo betekent het dat als de cliënt met de verdeling HSMPART1 eerst wordt geregistreerd, groef 1 aan HSMPART1 voor deze cliënt in kaart wordt gebracht. Omdat HSMPART1 de eerste geregistreerde verdeling is, is de Index van de Slot 0.
 
 1. Selecteer een van deze opties en geef het pad op:
 
-   * **Certificaat**: (Niet vereist als het gebruiken van SHA1) klik doorbladeren en van de weg naar de openbare sleutel voor de referentie de plaats bepalen u gebruikt.
+   * **Certificaat**: (Niet vereist als het gebruiken van SHA1) Klik doorbladeren en van de weg naar de openbare sleutel voor de referentie de plaats bepalen u gebruikt.
    * **Certificaat SHA1:** (Niet vereist als u een fysiek certificaat gebruikt) Typ SHA1-waarde (miniafdruk) van het bestand met de openbare sleutel (.cer) voor de referentie die u gebruikt. Zorg ervoor dat er geen spaties worden gebruikt in de SHA1-waarde.
 
 1. Typ in het vak Wachtwoord het wachtwoord dat is vereist voor toegang tot de HSM-sleutel voor de opgegeven sleufgegevens en klik op Opslaan.
 
-## Eigenschappen van HSM-referentie voor aliassen weergeven {#view-hsm-credential-alias-properties}
+## Eigenschappen van HSM-referentie weergeven {#view-hsm-credential-alias-properties}
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidswinkelbeheer > HSM-referenties.
 1. Klik op de aliasnaam van de referentie-alias om de eigenschappen weer te geven en klik vervolgens op OK.

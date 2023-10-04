@@ -1,20 +1,16 @@
 ---
 title: Vertaalprojecten maken voor inhoudsfragmenten
-seo-title: Creating Translation Projects for Content Fragments
 description: Leer hoe u inhoudsfragmenten vertaalt.
-seo-description: Learn how to translate content fragments.
-uuid: 23176e70-4003-453c-af25-6499a5ed3f6d
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: d2decc31-a04b-4a8e-bb19-65f21cf7107e
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 53c39e4aa250b18d4fae0327b313b18901677f2c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '917'
+source-wordcount: '918'
 ht-degree: 1%
 
 ---
@@ -33,22 +29,22 @@ In deze workflow worden inhoudsfragmenten die moeten worden vertaald, gekopieerd
 
 **Taalkopieën bijwerken**
 
-Wanneer het broninhoudsfragment wordt bijgewerkt of gewijzigd, moet het bijbehorende taalspecifieke inhoudsfragment opnieuw worden vertaald. De workflow voor het kopiëren van de updatetaal zet een extra groep inhoudsfragmenten om en neemt deze op in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde inhoudsfragmenten toegevoegd aan de doelmap die al eerder vertaalde inhoudsfragmenten bevat.
+Wanneer het broninhoudsfragment wordt bijgewerkt of gewijzigd, moet het bijbehorende taalspecifieke inhoudsfragment opnieuw worden vertaald. De workflow voor het kopiëren van de updatetaal zet een extra groep inhoudsfragmenten om en neemt deze op in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde inhoudsfragmenten toegevoegd aan de doelmap die al vertaalde inhoudsfragmenten bevat.
 
 ## Workflow maken en vertalen {#create-and-translate-workflow}
 
 De workflow Maken en vertalen bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
-* Alleen structuur maken: Voor procedurestappen raadpleegt u [Structuur alleen maken voor elementen](translation-projects.md#create-structure-only).
-* Een nieuw vertaalproject maken: Voor procedurestappen raadpleegt u [Een nieuw vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project).
-* Toevoegen aan bestaand vertaalproject: Voor procedurestappen raadpleegt u [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project).
+* Alleen structuur maken: zie voor procedurestappen [Structuur alleen maken voor elementen](translation-projects.md#create-structure-only).
+* Een nieuw vertaalproject maken: zie voor procedurestappen [Een nieuw vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project).
+* Toevoegen aan bestaand vertaalproject: zie voor procedurestappen [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project).
 
 ## Workflow voor het kopiëren van talen bijwerken {#update-language-copies-workflow}
 
 De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
-* Een nieuw vertaalproject maken: Voor procedurestappen raadpleegt u [Een nieuw vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project) (updateworkflow).
-* Toevoegen aan bestaand vertaalproject: Voor procedurestappen raadpleegt u [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project) (updateworkflow).
+* Een nieuw vertaalproject maken: zie voor procedurestappen [Een nieuw vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project) (updateworkflow).
+* Toevoegen aan bestaand vertaalproject: zie voor procedurestappen [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project) (updateworkflow).
 
 U kunt ook tijdelijke-taalkopieën maken voor fragmenten, vergelijkbaar met de manier waarop u tijdelijke kopieën maakt voor elementen. Zie voor meer informatie [Tijdelijke taalkopieën maken voor elementen](translation-projects.md#creating-temporary-language-copies).
 
@@ -69,7 +65,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
-1. Klikken **[!UICONTROL Edit]** van de werkbalk om de **[!UICONTROL Translation Config]** .
+1. Klikken **[!UICONTROL Edit]** van de werkbalk om de **[!UICONTROL Translation Config]** in.
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
@@ -81,7 +77,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-448](assets/chlimage_1-448.png)
 
-1. Klik/tik op de knop **[!UICONTROL Insert Asset]** pictogram.
+1. Klik op de knop **[!UICONTROL Insert Asset]** pictogram.
 
    ![chlimage_1-449](assets/chlimage_1-449.png)
 
@@ -89,7 +85,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![element invoegen in inhoudsfragment](assets/column-view.png)
 
-1. Klik/tik op de knop **[!UICONTROL Associate Content]** pictogram.
+1. Klik op de knop **[!UICONTROL Associate Content]** pictogram.
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
@@ -110,7 +106,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Klikken/tikken **[!UICONTROL Create & Translate]** van onderaan in het deelvenster om de **[!UICONTROL Create & Translate]** .
+1. Klikken/tikken **[!UICONTROL Create & Translate]** van onderaan in het deelvenster om de **[!UICONTROL Create & Translate]** in.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -134,7 +130,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
-1. Verifieer vanuit de tegel Vertaaltaak het aantal te vertalen middelen.
+1. Verifieer vanuit de tegel Vertaaltaak het aantal elementen dat moet worden vertaald.
 1. Van de **[!UICONTROL Translation Job]** tiel, start de vertaaltaak.
 
    ![chlimage_1-462](assets/chlimage_1-462.png)

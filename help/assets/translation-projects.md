@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1733'
+source-wordcount: '1736'
 ht-degree: 9%
 
 ---
@@ -43,7 +43,7 @@ Gebruik de **[!UICONTROL Create structure only]** om een doelmaphiërarchie binn
 
    ![Taalkopieën](assets/translation-language-copies.png)
 
-1. Klik op **[!UICONTROL Create & Translate]**. Van de **[!UICONTROL Target Languages]** Selecteer de taal waarvoor u een mappenstructuur wilt maken.
+1. Klik op **[!UICONTROL Create & Translate]**. Van de **[!UICONTROL Target Languages]** selecteert u de taal waarvoor u een mappenstructuur wilt maken.
 
 1. Kies in de lijst **[!UICONTROL Project]** de optie **[!UICONTROL Create structure only]**.
 
@@ -76,7 +76,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    ![taalkopieën](assets/lang-copy2.png)
 
-1. Als u naar de map wilt navigeren, selecteert u de taalkopie en klikt u op **[!UICONTROL Reveal in Assets]**.
+1. Om aan de omslag te navigeren, selecteer het taalexemplaar, en klik **[!UICONTROL Reveal in Assets]**.
 
    ![onthullend-in-activa](assets/reveal-in-assets.png)
 
@@ -96,7 +96,7 @@ Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taal
 
    ![chlimage_1-73](assets/chlimage_1-73.png)
 
-   Voor meer informatie over taakstatussen raadpleegt u [De status van een vertaaltaak controleren](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Zie voor meer informatie over taakstatussen [De status van een vertalingstaak controleren](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Ga naar de [!DNL Assets] en opent u de [!UICONTROL Properties] pagina voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
@@ -156,9 +156,9 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-   Zie voor meer informatie [De status van een vertaaltaak controleren](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Zie voor meer informatie [De status van een vertalingstaak controleren](/help/sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
-1. Nadat de vertaling is voltooid, verandert de status in Ready to Review. Ga naar de [!DNL Assets] en opent u de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
+1. Nadat de vertaling is voltooid, verandert de status in Klaar voor revisie. Ga naar de [!DNL Assets] en opent u de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
 ## Taalkopieën bijwerken {#update-language-copies}
 
@@ -175,7 +175,7 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 1. Open de **[!UICONTROL References]** en klik op **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]** om de lijst met taalkopieën weer te geven.
 1. Schakel het selectievakje voor **[!UICONTROL Language Copies]** in en selecteer vervolgens de doelmap die overeenkomt met de juiste landinstelling.
 
-   ![taalkopie selecteren](assets/lang-copy1.png)
+   ![Taalkopie selecteren](assets/lang-copy1.png)
 
 1. Klikken **[!UICONTROL Update language copies]** onderaan.
 
@@ -206,7 +206,7 @@ Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks acti
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-   Voor meer informatie over taakstatussen raadpleegt u [De status van een vertaaltaak controleren](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
+   Zie voor meer informatie over taakstatussen [De status van een vertalingstaak controleren](../sites-administering/tc-manage.md#monitoring-the-status-of-a-translation-job).
 
 1. Ga naar de [!DNL Assets] en opent u de pagina Eigenschappen voor elk van de vertaalde elementen om de vertaalde metagegevens weer te geven.
 
@@ -221,7 +221,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 1. Schakel het selectievakje voor **[!UICONTROL Language Copies]** in om alle taalkopieën te selecteren. Hef de selectie van andere kopieën op, met uitzondering van de taalkopieën die overeenkomen met de landinstellingen waarnaar u wilt vertalen.
 
-   ![taalkopie selecteren](assets/lang-copy1.png)
+   ![Taalkopie selecteren](assets/lang-copy1.png)
 
 1. Klikken **[!UICONTROL Update language copies]** onderaan.
 
@@ -248,7 +248,7 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
 1. Schakel het selectievakje in naast **[!UICONTROL Title]**.
-1. Klik op de werkbalk op **[!UICONTROL Accept Translation]** ![vertaling accepteren](assets/do-not-localize/thumb-up.png) en klik vervolgens op **[!UICONTROL Accept]** in het dialoogvenster om het vertaalde element in de doelmap te overschrijven met de vertaalde versie van het bewerkte element.
+1. Klik op de werkbalk op **[!UICONTROL Accept Translation]** ![aanvaarden, vertaling](assets/do-not-localize/thumb-up.png) en klik vervolgens op **[!UICONTROL Accept]** in het dialoogvenster om het vertaalde element in de doelmap te overschrijven met de vertaalde versie van het bewerkte element.
 
    >[!NOTE]
    >

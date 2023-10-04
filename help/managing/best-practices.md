@@ -1,22 +1,22 @@
 ---
 title: Projecten beheren - Checklist voor aanbevolen procedures
-description: Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en bieden controle op hoog niveau van uw huidige status.
+description: Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en bieden controle op hoog niveau van uw status.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing-checklist, introduction
 content-type: reference
 docset: aem65
 exl-id: 94b91996-d2b2-4d4a-b770-334cfa2dc0b7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '3251'
+source-wordcount: '3240'
 ht-degree: 0%
 
 ---
 
 # Projecten beheren - Checklist voor aanbevolen procedures{#managing-projects-best-practices-checklist}
 
-Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip om u bewust te zijn van de kwesties en (verwante) besluiten die u, vóór en terwijl het uitvoeren van uw project moet maken.
+Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip zodat u zich bewust bent van de kwesties en (verwante) besluiten die u, vóór en terwijl het uitvoeren van uw project moet maken.
 
 De beste werkwijzen zijn:
 
@@ -25,7 +25,7 @@ De beste werkwijzen zijn:
    * Definieert inputs en te leveren items op basis van fase, mijlpaal en persona.
    * Verstrekt geautomatiseerde overzichten (kwaliteit, gezondheid, en volledigheid) om vooruitgang en project-gezondheid te wijzen.
 
-* Documentatie op basis van de [checklist](/help/managing/best-practices-checklist.md), waarin de volgende gegevens worden vermeld:
+* Documentatie op basis van de [checklist](/help/managing/best-practices-checklist.md) dat de volgende gegevens bevat:
 
    * [Projecthartslag](#projectheartbeat) analyse.
    * [Status op rol](#status-by-role) overzicht.
@@ -117,7 +117,7 @@ De vier factoren:
 
 ### Planning {#planning}
 
-De planning van uw project consolideert de voorbereiding. Hier moet u beginnen de doelstellingen en de verwachtingen om te zetten in een duidelijk omschreven routekaart die uit concrete taken bestaat, gebonden door duidelijke communicatie, met strenge evaluaties om vooruitgang te meten.
+De planning van uw project consolideert de voorbereiding. Hier moet u beginnen de doelstellingen en verwachtingen om te zetten in een duidelijk omschreven routekaart die bestaat uit concrete taken, gebonden door duidelijke communicatie, met strenge evaluaties om vooruitgang te meten.
 
 #### Mijlpalen {#milestones-1}
 
@@ -135,7 +135,7 @@ De planning van uw project consolideert de voorbereiding. Hier moet u beginnen d
 
 * **Communicatie**
 
-  Communicatie is altijd essentieel voor het succes van elk project. U moet duidelijk en efficiënt communiceren om ervoor te zorgen dat iedereen:
+  Communicatie is altijd essentieel voor het succes van elk project. duidelijk en efficiënt communiceren om ervoor te zorgen dat iedereen:
 
    * Werken aan dezelfde basisdoelstellingen
    * Uit dezelfde informatiebasis
@@ -195,7 +195,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   Het is gericht op:
 
-   * Hoe zij met elkaar en met gebruikers zullen in wisselwerking staan.
+   * Hoe zij met elkaar en met gebruikers in wisselwerking staan.
    * De gegevens die door toepassingen moeten worden verbruikt en geproduceerd, in plaats van hun interne structuur.
 
   De definities moeten betrekking hebben op:
@@ -203,7 +203,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
    * Basiscodestructuur voor het project
    * Codeartefacten (pakketten, enzovoort)
    * Uitsplitsingen van de templates/componenten en hun relaties
-   * Details op hoog niveau van vereiste aanpassingen (specifieke overlays volgen later)
+   * Details op hoog niveau van vereiste aanpassingen (specifieke overlays volgen verderop)
    * Ontwerp van workflows die voor de oplossing vereist zijn (bijvoorbeeld het maken, goedkeuren, publiceren, transformeren, importeren en exporteren van inhoud)
    * Speciale aandacht voor complexe modules, zoals MSM, Handel, integratie van derden
 
@@ -211,8 +211,8 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
   De integratie van het systeem vereist u om te plannen (dan uit te voeren):
 
-   * Hoe alle subsystemen en [integratie van oplossingen](/help/sites-administering/integration.md) worden samengebracht om als één samenhangend systeem te functioneren
-   * Hoe systemen van derden worden geïntegreerd; samen met eventuele speciale overwegingen, zoals offline/online, client-side/browser-side of fallover-verwerking wanneer een systeem van derden uitvalt
+   * Hoe alle subsystemen en [integratie van oplossingen](/help/sites-administering/integration.md) worden samengebracht als één samenhangend systeem
+   * Hoe systemen van derden zijn geïntegreerd; samen met eventuele speciale overwegingen, zoals offline/online, client-side/browser-side of fallover-verwerking wanneer een systeem van derden is uitgevallen
 
 * **Concept testen**
 
@@ -570,7 +570,7 @@ De beveiligingsleiding:
 
 * Auteurs en eindgebruikers
 
-   * De personen die het systeem zullen gebruiken om uw website-inhoud te maken en te onderhouden.
+   * De mensen die het systeem gebruiken om uw website-inhoud te maken en te onderhouden.
 
 ## Vereiste documenten en te leveren items {#required-documents-and-deliverables}
 

@@ -1,17 +1,13 @@
 ---
 title: Documentuitvoerstromen maken
-seo-title: Creating Document Output Streams
 description: Gebruik de uitvoerservice om documenten om te zetten als PDF (inclusief PDF/A-documenten), PostScript, Printer Control Language (PCL) en Zebra - ZPL, Intermec - IPL, Datamax - DPL en TecToshiba - TPCL-labelindelingen.
-seo-description: Use the Output service to convert documents as PDF (including PDF/A documents), PostScript, Printer Control Language (PCL), and Zebra - ZPL, Intermec - IPL, Datamax - DPL, and TecToshiba - TPCL label formats.
-uuid: 80c28efa-35ce-4073-9ca6-2d93bcd67fdd
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: de527d50-991b-4ca3-a8ac-44d5cab988e9
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '19016'
 ht-degree: 0%
@@ -44,16 +40,16 @@ In de volgende secties ziet u hoe u een formulierontwerp aan de Output-service d
 * [PDF-documenten maken](creating-document-output-streams.md#creating-pdf-documents)
 * [PDF/A-documenten maken](creating-document-output-streams.md#creating-pdf-a-documents)
 
-In de volgende secties ziet u hoe u een formulierontwerp kunt doorgeven in een `com.adobe.idp.Document` instantie:
+In de volgende secties ziet u hoe u een formulierontwerp kunt doorgeven in een `com.adobe.idp.Document` -instantie:
 
 * [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [PDF-documenten maken met behulp van fragmenten](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
-Als u bepaalt welke techniek u moet gebruiken, moet u eerst bepalen of u het formulierontwerp van een andere AEM Forms-service ontvangt en het vervolgens binnen een `com.adobe.idp.Document` -instantie. Beide *Documenten doorgeven aan de uitvoerservice* en *PDF-documenten maken met behulp van fragmenten* In deze secties ziet u hoe u een formulierontwerp kunt ophalen van een andere AEM Forms-service. In de eerste sectie wordt het formulierontwerp opgehaald uit Content Services (afgekeurd). In de tweede sectie wordt het formulierontwerp opgehaald uit de Assembler-service.
+Als u bepaalt welke techniek u moet gebruiken, moet u eerst bepalen of u het formulierontwerp van een andere AEM Forms-service ontvangt en het vervolgens doorgeeft binnen een `com.adobe.idp.Document` -instantie. Beide *Documenten doorgeven aan de uitvoerservice* en *PDF-documenten maken met behulp van fragmenten* In deze secties ziet u hoe u een formulierontwerp kunt ophalen van een andere AEM Forms-service. De eerste sectie haalt het formulierontwerp op van Content Services (afgekeurd). In de tweede sectie wordt het formulierontwerp opgehaald uit de Assembler-service.
 
 Als u het formulierontwerp ophaalt vanaf een vaste locatie, zoals het bestandssysteem, kunt u beide methoden gebruiken. U kunt dus de URI-waarde opgeven voor een XDP-bestand of een `com.adobe.idp.Document` -instantie.
 
-Als u een URI-waarde wilt doorgeven die de locatie van het formulierontwerp opgeeft bij het maken van een PDF-document, gebruikt u de opdracht `generatePDFOutput` methode. Ook om een `com.adobe.idp.Document` -instantie gebruiken voor de service Uitvoer wanneer u een PDF-document maakt, `generatePDFOutput2` methode.
+Als u een URI-waarde wilt doorgeven die de locatie van het formulierontwerp opgeeft bij het maken van een PDF-document, gebruikt u de opdracht `generatePDFOutput` methode. Ook als u een `com.adobe.idp.Document` -instantie gebruiken voor de service Uitvoer wanneer u een PDF-document maakt, `generatePDFOutput2` methode.
 
 Wanneer u een uitvoerstream naar een netwerkprinter verzendt, kunt u ook een van de twee technieken gebruiken. Een uitvoerstroom naar een printer verzenden door een `com.adobe.idp.Document` instantie die een formulierontwerp bevat, gebruikt u de `sendToPrinter2`methode. Als u een uitvoerstream naar een printer wilt verzenden door een URI-waarde door te geven, gebruikt u de optie `sendToPrinter`methode. De *Afdrukstromen naar printers verzenden* de sectie gebruikt de `sendToPrinter` methode.
 
@@ -75,7 +71,7 @@ U kunt deze taken uitvoeren met de service Uitvoer:
 
 ## PDF-documenten maken {#creating-pdf-documents}
 
-Met de service Uitvoer kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens die u opgeeft. Het PDF-document dat door de uitvoerservice wordt gemaakt, is geen interactief PDF-document. een gebruiker kan geen formuliergegevens invoeren of wijzigen.
+Met de service Uitvoer kunt u een PDF-document maken dat is gebaseerd op een formulierontwerp en XML-formuliergegevens die u opgeeft. Het PDF-document dat door de Output-service wordt gemaakt, is geen interactief PDF-document. Een gebruiker kan geen formuliergegevens invoeren of wijzigen.
 
 Als u een PDF-document wilt maken dat is bedoeld voor langdurige opslag, is het raadzaam een PDF/A-document te maken. (Zie [PDF/A-documenten maken](creating-document-output-streams.md#creating-pdf-a-documents).)
 
@@ -94,7 +90,7 @@ Voer de volgende stappen uit om een PDF-document te maken:
 1. Verwijzen naar een XML-gegevensbron.
 1. Stel PDF-uitvoeringsopties in.
 1. Stel renderingopties in.
-1. Genereer een PDF-document.
+1. Een PDF-document genereren.
 1. Haal de resultaten van de bewerking op.
 
 **Projectbestanden opnemen**
@@ -111,9 +107,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
-**Een uitvoerclient-object maken**
+**Een Output Client-object maken**
 
-Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de Output-webservice-API gebruikt, maakt u een `OutputServiceService` object.
+Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de uitvoerwebservice-API gebruikt, maakt u een `OutputServiceService` object.
 
 **Verwijzen naar een XML-gegevensbron**
 
@@ -168,7 +164,7 @@ Stel de bestands-URI-optie in wanneer u een PDF-document maakt. Met deze optie g
 
 U kunt bij het maken van een PDF-document renderingopties instellen. Hoewel deze opties niet vereist zijn (in tegenstelling tot PDF runtime opties die worden vereist), kunt u taken uitvoeren zoals het verbeteren van de prestaties van de Output-service. U kunt bijvoorbeeld het formulierontwerp dat de Output-service gebruikt in cache plaatsen om de prestaties te verbeteren.
 
-Als u een gecodeerd Acrobat-formulier als invoer gebruikt, kunt u de instelling voor getagde invoer niet uitschakelen met de Java- of webservice-API van de Output-service. Als u probeert programmatisch deze optie in te stellen op `false`, is het resultaat PDF document nog steeds gecodeerd.
+Als u een gecodeerd Acrobat-formulier als invoer gebruikt, kunt u de instelling voor getagde invoer niet uitschakelen met de Java- of webservice-API van de Output-service. Als u probeert programmatisch deze optie in te stellen op `false`, is het PDF-document van het resultaat nog steeds gecodeerd.
 
 >[!NOTE]
 >
@@ -184,7 +180,7 @@ Wanneer u een PDF-document genereert, geeft u de URI-waarden op die de Output-se
 
 Als u toegang wilt krijgen tot het bestand Loan.xdp dat in de vorige afbeelding wordt weergegeven, geeft u `repository:///Applications/FormsApplication/1.0/FormsFolder/` als de derde parameter die aan de `OutputClient` object `generatePDFOutput` methode. Geef de formuliernaam op (*Lening.xdp*) als de tweede parameter die aan de `OutputClient` object `generatePDFOutput` methode.
 
-Als het XDP-bestand afbeeldingen (of andere bronnen zoals fragmenten) bevat, plaatst u de bronnen in dezelfde toepassingsmap als het XDP-bestand. AEM Forms gebruikt de basis-URI van de inhoud als het basispad om verwijzingen naar afbeeldingen op te lossen. Als het bestand Loan.xdp bijvoorbeeld een afbeelding bevat, moet u ervoor zorgen dat u de afbeelding in `Applications/FormsApplication/1.0/FormsFolder/`.
+Als het XDP-bestand afbeeldingen (of andere bronnen zoals fragmenten) bevat, plaatst u de bronnen in dezelfde toepassingsmap als het XDP-bestand. AEM Forms gebruikt de basis-URI van de inhoud als het basispad om verwijzingen naar afbeeldingen op te lossen. Als het bestand Loan.xdp bijvoorbeeld een afbeelding bevat, dient u de afbeelding in `Applications/FormsApplication/1.0/FormsFolder/`.
 
 >[!NOTE]
 >
@@ -192,7 +188,7 @@ Als het XDP-bestand afbeeldingen (of andere bronnen zoals fragmenten) bevat, pla
 
 >[!NOTE]
 >
->Voor een volledige snelle start die een PDF-document maakt door te verwijzen naar een XDP die zich in een Forms-toepassing bevindt, raadpleegt u [Snel starten (EJB-modus): Een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>Voor een volledige snelle start die een PDF-document maakt door te verwijzen naar een XDP die zich in een Forms-toepassing bevindt, raadpleegt u [Snel starten (EJB-modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **De resultaten van de bewerking ophalen**
 
@@ -221,7 +217,7 @@ Een PDF-document maken met de Output API (Java):
 1. Maak een Output Client-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een XML-gegevensbron.
 
@@ -246,7 +242,7 @@ Een PDF-document maken met de Output API (Java):
    >
    >U kunt de optie Lineaire PDF niet instellen met de opdracht `RenderOptionsSpec` object `setLinearizedPDF` als het invoerdocument PDF is gecertificeerd of digitaal is ondertekend. (Zie [PDF-documenten digitaal ondertekenen ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
-1. Genereer een PDF-document.
+1. Een PDF-document genereren.
 
    Een PDF-document maken door het `OutputClient` object `generatePDFOutput` en geeft de volgende waarden door:
 
@@ -273,19 +269,19 @@ Een PDF-document maken met de Output API (Java):
 
 1. Haal de resultaten van de bewerking op.
 
-   * Een `com.adobe.idp.Document` object dat de status van het `generatePDFOutput` door de `OutputResult` object `getStatusDoc` methode. Deze methode retourneert XML-gegevens met de status die aangeven of de bewerking is geslaagd.
+   * Een `com.adobe.idp.Document` object dat de status van het `generatePDFOutput` handeling door de `OutputResult` object `getStatusDoc` methode. Deze methode retourneert XML-gegevens met de status die aangeven of de bewerking is geslaagd.
    * Een `java.io.File` object dat de resultaten van de bewerking bevat. Controleer of de bestandsnaamextensie .xml is.
    * De `com.adobe.idp.Document` object `copyToFile` methode om de inhoud van de `com.adobe.idp.Document` object naar het bestand (gebruik de `com.adobe.idp.Document` object dat is geretourneerd door de `getStatusDoc` methode).
 
-   Hoewel de dienst van de Output het document van PDF naar de plaats schrijft die door het argument wordt gespecificeerd dat tot wordt overgegaan `PDFOutputOptionsSpec` object `setFileURI` methode, kunt u het PDF/A- document programmatically terugwinnen door het aan te halen `OutputResult` object `getGeneratedDoc` methode.
+   Hoewel de dienst van de Output het document van PDF naar de plaats schrijft die door het argument wordt gespecificeerd dat tot wordt overgegaan `PDFOutputOptionsSpec` object `setFileURI` methode, kunt u het PDF/A- document programmatically terugwinnen door het `OutputResult` object `getGeneratedDoc` methode.
 
 **Zie ook**
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (EJB-modus): Een PDF-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[Snel starten (EJB-modus): een PDF-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -306,7 +302,7 @@ Maak een PDF-document met de Output API (webservice):
 1. Maak een Output Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -342,7 +338,7 @@ Maak een PDF-document met de Output API (webservice):
    >
    >U kunt de optie Lineaire PDF niet instellen met de opdracht `RenderOptionsSpec` object `linearizedPDF` lid als het invoerdocument PDF is gecertificeerd of digitaal is ondertekend. (Zie [PDF-documenten digitaal ondertekenen ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)*.)*
 
-1. Genereer een PDF-document.
+1. Een PDF-document genereren.
 
    Een PDF-document maken door het `OutputServiceService` object `generatePDFOutput`en geeft de volgende waarden door:
 
@@ -381,7 +377,7 @@ Maak een PDF-document met de Output API (webservice):
 
    >[!NOTE]
    >
-   >De `OutputServiceService` object `generateOutput` methode is afgekeurd.
+   >De `OutputServiceService` object `generateOutput` is vervangen.
 
 ## PDF/A-documenten maken {#creating-pdf-a-documents}
 
@@ -389,7 +385,7 @@ Met de service Uitvoer kunt u een PDF/A-document maken. Omdat PDF/A een archiefi
 
 De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk a en b. Het grootste verschil tussen beide is de logische structuur (toegankelijkheid) die niet vereist is voor niveau b. Ongeacht het compatibiliteitsniveau, dicteert PDF/A-1 dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document.
 
-Hoewel PDF/A de norm voor het archiveren van de documenten van de PDF is, is het niet verplicht dat PDF/A voor het archiveren wordt gebruikt als een standaarddocument van de PDF voldoet aan de behoeften van uw bedrijf. Het doel van de PDF/A-standaard is een PDF-bestand te maken dat gedurende een lange periode kan worden opgeslagen en dat voldoet aan de vereisten voor documentbewaring. Een URL kan bijvoorbeeld niet worden ingesloten in een PDF/A omdat de URL na verloop van tijd ongeldig kan worden.
+Hoewel PDF/A de norm voor het archiveren van PDF- documenten is, is het niet verplicht dat PDF/A voor het archiveren wordt gebruikt als een standaarddocument van de PDF voldoet aan de behoeften van uw bedrijf. Het doel van de PDF/A-standaard is een PDF-bestand te maken dat gedurende een lange periode kan worden opgeslagen en dat voldoet aan de vereisten voor documentbewaring. Een URL kan bijvoorbeeld niet worden ingesloten in een PDF/A omdat de URL na verloop van tijd ongeldig kan worden.
 
 Uw organisatie moet haar eigen behoeften, de tijdsduur beoordelen u van plan bent om het document te houden, dossiergrootte overwegingen, en uw eigen archiveringsstrategie te bepalen. U kunt programmatically bepalen als een document van PDF PDF/A volgzaam is door de dienst te gebruiken DocConverter. (Zie [Programmaticaal bepalen van PDF/A-compatibiliteit](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
@@ -421,7 +417,7 @@ Voer de volgende stappen uit om een PDF/A-document te maken:
 
 **Projectbestanden opnemen**
 
-Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een aangepaste toepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, moet u de proxybestanden opnemen.
+Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een aangepaste toepassing maakt met behulp van Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, moet u de proxybestanden opnemen.
 
 De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw project:
 
@@ -433,9 +429,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
-**Een uitvoerclient-object maken**
+**Een Output Client-object maken**
 
-Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de Output-webservice-API gebruikt, maakt u een `OutputServiceService` object.
+Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de uitvoerwebservice-API gebruikt, maakt u een `OutputServiceService` object.
 
 **Verwijzen naar een XML-gegevensbron**
 
@@ -486,12 +482,12 @@ Een PDF/A-document maken met de Output API (Java):
 1. Maak een Output Client-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een XML-gegevensbron.
 
    * Een `java.io.FileInputStream` object dat de XML-gegevensbron vertegenwoordigt die wordt gebruikt om het PDF/A-document te vullen met de constructor ervan en die een tekenreekswaarde doorgeeft die de locatie van het XML-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Stel PDF/A-runtime-opties in.
 
@@ -527,7 +523,7 @@ Een PDF/A-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2 methode. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Haal de resultaten van de bewerking op.
 
@@ -537,13 +533,13 @@ Een PDF/A-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >Hoewel de dienst van de Output het PDF/A- document aan de plaats schrijft die door het argument wordt gespecificeerd dat tot wordt overgegaan `PDFOutputOptionsSpec` object `setFileURI` methode, kunt u het PDF/A- document programmatically terugwinnen door het aan te halen `OutputResult` object `getGeneratedDoc` methode.
+   >Hoewel de dienst van de Output het PDF/A- document aan de plaats schrijft die door het argument wordt gespecificeerd dat tot wordt overgegaan `PDFOutputOptionsSpec` object `setFileURI` methode, kunt u het PDF/A- document programmatically terugwinnen door het `OutputResult` object `getGeneratedDoc` methode.
 
 **Zie ook**
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Een PDF/A-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF/A-document maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-a-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -564,7 +560,7 @@ Een PDF/A-document maken met de Output API (webservice):
 1. Maak een Output Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -585,7 +581,7 @@ Een PDF/A-document maken met de Output API (webservice):
 1. Stel PDF/A-runtime-opties in.
 
    * Een `PDFOutputOptionsSpec` object met behulp van de constructor.
-   * Stel de optie File URI in door een tekenreekswaarde toe te wijzen die de locatie opgeeft van het PDF-bestand dat de uitvoerservice genereert voor de `PDFOutputOptionsSpec` object `fileURI` lid. De optie File URI is relatief ten opzichte van de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet ten opzichte van de clientcomputer
+   * Stel de optie File URI in door een tekenreekswaarde toe te wijzen die de locatie opgeeft van het PDF-bestand dat de uitvoerservice genereert voor de `PDFOutputOptionsSpec` object `fileURI` lid. De optie File URI is relatief ten opzichte van de J2EE-toepassingsserver die als host fungeert voor AEM Forms, niet de clientcomputer
 
 1. Stel renderingopties in.
 
@@ -613,7 +609,7 @@ Een PDF/A-document maken met de Output API (webservice):
 
    >[!NOTE]
    >
-   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2 methode. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Haal de resultaten van de bewerking op.
 
@@ -640,7 +636,7 @@ U kunt Loan.xdp programmatically terugwinnen van de Diensten van de Inhoud (afge
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -658,11 +654,11 @@ Neem de benodigde bestanden op voor uw ontwikkelingsproject. Als u een clienttoe
 
 **Een Output en een Document Management Client API-object maken**
 
-Voordat u programmatisch een uitvoerservice-API-bewerking kunt uitvoeren, maakt u een Output Client-API-object. Omdat met deze workflow een XDP-bestand wordt opgehaald van Content Services (afgekeurd), maakt u ook een Document Management API-object.
+Voordat u programmatisch een uitvoerservice-API-bewerking kunt uitvoeren, maakt u een Output Client API-object. Omdat met deze workflow een XDP-bestand wordt opgehaald van Content Services (afgekeurd), maakt u ook een Document Management API-object.
 
 **Het formulierontwerp ophalen van Content Services (afgekeurd)**
 
-Haal het XDP-bestand op van Content Services (afgekeurd) met behulp van de Java- of webservice-API. Het XDP-bestand wordt geretourneerd binnen een `com.adobe.idp.Document` instantie (of een `BLOB` -instantie als u webservices gebruikt). U kunt dan de `com.adobe.idp.Document` naar de service Uitvoer.
+Haal het XDP-bestand op van Content Services (afgekeurd) met de Java- of webservice-API. Het XDP-bestand wordt geretourneerd binnen een `com.adobe.idp.Document` instantie (of een `BLOB` -instantie als u webservices gebruikt). U kunt dan de `com.adobe.idp.Document` naar de service Uitvoer.
 
 **Het niet-interactieve PDF formulier weergeven**
 
@@ -670,7 +666,7 @@ Als u een niet-interactief formulier wilt genereren, geeft u het `com.adobe.idp.
 
 >[!NOTE]
 >
->Twee nieuwe methoden met een naam `generatePDFOutput2`en g `eneratePrintedOutput2`accepteren `com.adobe.idp.Document` object dat een formulierontwerp bevat. U kunt ook een `com.adobe.idp.Document`die het formulierontwerp naar de uitvoerservice bevat wanneer een afdrukstroom naar een netwerkprinter wordt verzonden.
+>Twee nieuwe methoden met naam `generatePDFOutput2`en g `eneratePrintedOutput2`accepteren `com.adobe.idp.Document` object dat een formulierontwerp bevat. U kunt ook een `com.adobe.idp.Document`die het formulierontwerp naar de uitvoerservice bevat wanneer een afdrukstroom naar een netwerkprinter wordt verzonden.
 
 **Een handeling uitvoeren met de gegevensstroom van het formulier**
 
@@ -680,7 +676,7 @@ U kunt het niet-interactieve formulier opslaan als een PDF-bestand. Het formulie
 
 [Documenten doorgeven aan de uitvoerservice met de Java API](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-java-api)
 
-[Documenten doorgeven aan de uitvoerservice met behulp van de webservice-API](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-web-service-api)
+[Documenten doorgeven aan de uitvoerservice met de API voor webservices](creating-document-output-streams.md#pass-documents-to-the-output-service-using-the-web-service-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -701,8 +697,8 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 1. Maak een Output- en een Document Management Client API-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
-   * Een `DocumentManagementServiceClientImpl` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Een `DocumentManagementServiceClientImpl` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Haal het formulierontwerp op bij Inhoudsservices (afgekeurd).
 
@@ -737,15 +733,15 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (EJB-modus): Documenten doorgeven aan de uitvoerservice met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Snel starten (EJB-modus): documenten doorgeven aan de uitvoerservice met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): Documenten doorgeven aan de uitvoerservice met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
+[Snel starten (SOAP-modus): documenten doorgeven aan de uitvoerservice met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Documenten doorgeven aan de uitvoerservice met behulp van de webservice-API {#pass-documents-to-the-output-service-using-the-web-service-api}
+### Documenten doorgeven aan de uitvoerservice met de API voor webservices {#pass-documents-to-the-output-service-using-the-web-service-api}
 
 Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de Output-service en Content Services (afgekeurd) API (webservice):
 
@@ -755,7 +751,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
    Gebruik de volgende definitie WSDL voor de de dienstverwijzing verbonden aan de dienst van het Beheer van het Document: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
-   Omdat `BLOB` het gegevenstype is gemeenschappelijk voor beide de dienstverwijzingen, kwalificeer volledig `BLOB` gegevenstype wanneer het gebruiken van het. In de bijbehorende webservice kunt u snel aan de slag met `BLOB` exemplaren zijn volledig gekwalificeerd.
+   Omdat de `BLOB` het gegevenstype is gemeenschappelijk voor beide de dienstverwijzingen, kwalificeer volledig `BLOB` gegevenstype bij gebruik ervan. In de bijbehorende webservice kunt u snel aan de slag met `BLOB` exemplaren zijn volledig gekwalificeerd.
 
    >[!NOTE]
    >
@@ -764,7 +760,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 1. Maak een Output- en een Document Management Client API-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -772,6 +768,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
       * Wijs de gebruikersnaam van het AEM aan het veld toe `OutputServiceClient.ClientCredentials.UserName.UserName`.
       * De bijbehorende wachtwoordwaarde aan het veld toewijzen `OutputServiceClient.ClientCredentials.UserName.Password`.
       * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
+
    * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
    >[!NOTE]
@@ -822,7 +819,7 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
 De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De uitvoerservice geeft vervolgens het formulierontwerp weer dat zich bevindt in het dialoogvenster `com.adobe.idp.Document` object.
 
-Een voordeel van het doorgeven van een `com.adobe.idp.Document` object naar de Output-service is dat andere AEM Forms-servicebewerkingen een `com.adobe.idp.Document` -instantie. Dat wil zeggen dat je een `com.adobe.idp.Document` instantie van een andere servicebewerking en rendert u deze. Stel dat een XDP-bestand wordt opgeslagen in de AEM Forms-opslagplaats, zoals in de volgende afbeelding wordt getoond.
+Een voordeel van het doorgeven van een `com.adobe.idp.Document` object naar de Output-service is dat andere AEM Forms-servicebewerkingen een `com.adobe.idp.Document` -instantie. Dat wil zeggen dat je een `com.adobe.idp.Document` instantie van een andere servicebewerking en rendert u deze. Stel bijvoorbeeld dat een XDP-bestand wordt opgeslagen in de AEM Forms-opslagplaats, zoals in de volgende afbeelding wordt getoond.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
@@ -834,13 +831,13 @@ U kunt Loan.xdp programmatically van de bewaarplaats van AEM Forms terugwinnen e
 
 U kunt op twee manieren een PDF maken op basis van een XDP-bestand in de opslagplaats. U kunt de XDP-locatie doorgeven via verwijzing of u kunt de XDP-locatie via programmacode ophalen uit de opslagplaats en deze doorgeven aan de Output-service in een XDP-bestand.
 
-[Snel starten (EJB-modus): Een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (geeft aan hoe u de locatie van het XDP-bestand via verwijzing doorgeeft).
+[Snel starten (EJB-modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api) (geeft aan hoe u de locatie van het XDP-bestand via verwijzing doorgeeft).
 
-[Snel starten (EJB-modus): Een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (toont hoe u het XDP-bestand programmatisch kunt ophalen uit de AEM Forms Repository en dit kunt doorgeven aan de Output Service in een `com.adobe.idp.Document` -instantie). (In deze sectie wordt besproken hoe deze taak moet worden uitgevoerd)
+[Snel starten (EJB-modus): een document in de AEM Forms Repository doorgeven aan de Output-service met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (toont hoe u het XDP-bestand programmatisch kunt ophalen uit de AEM Forms Repository en dit kunt doorgeven aan de Output Service in een `com.adobe.idp.Document` -instantie). (In deze sectie wordt besproken hoe deze taak moet worden uitgevoerd)
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -858,7 +855,7 @@ Neem de benodigde bestanden op voor uw ontwikkelingsproject. Als u een clienttoe
 
 **Een Output en een Document Management Client API-object maken**
 
-Voordat u programmatisch een uitvoerservice-API-bewerking kunt uitvoeren, maakt u een Output Client-API-object. Omdat met deze workflow een XDP-bestand wordt opgehaald van Content Services (afgekeurd), maakt u ook een Document Management API-object.
+Voordat u programmatisch een uitvoerservice-API-bewerking kunt uitvoeren, maakt u een Output Client API-object. Omdat met deze workflow een XDP-bestand wordt opgehaald van Content Services (afgekeurd), maakt u ook een Document Management API-object.
 
 **Het formulierontwerp ophalen uit de AEM Forms Repository**
 
@@ -872,7 +869,7 @@ Als u een niet-interactief formulier wilt genereren, geeft u het `com.adobe.idp.
 
 >[!NOTE]
 >
->Twee nieuwe methoden met een naam `generatePDFOutput2`en `generatePrintedOutput2`accepteren `com.adobe.idp.Document`object dat een formulierontwerp bevat. U kunt ook een `com.adobe.idp.Document` die het formulierontwerp naar de uitvoerservice bevat wanneer een afdrukstroom naar een netwerkprinter wordt verzonden.
+>Twee nieuwe methoden met naam `generatePDFOutput2`en `generatePrintedOutput2`accepteren `com.adobe.idp.Document`object dat een formulierontwerp bevat. U kunt ook een `com.adobe.idp.Document` die het formulierontwerp naar de uitvoerservice bevat wanneer een afdrukstroom naar een netwerkprinter wordt verzonden.
 
 **Een handeling uitvoeren met de gegevensstroom van het formulier**
 
@@ -901,8 +898,8 @@ Geef een document dat is opgehaald uit de opslagplaats door gebruik te maken van
 1. Maak een Output- en een Document Management Client API-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
-   * Een `DocumentManagementServiceClientImpl` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Een `DocumentManagementServiceClientImpl` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Haal het formulierontwerp op uit de AEM Forms Repository.
 
@@ -931,7 +928,7 @@ Geef een document dat is opgehaald uit de opslagplaats door gebruik te maken van
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (EJB-modus): Een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Snel starten (EJB-modus): een document in de AEM Forms Repository doorgeven aan de Output-service met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -983,7 +980,7 @@ U kunt de service Uitvoer gebruiken om een PDF-document te genereren met behulp 
 
 **Het PDF-document opslaan als een PDF-bestand**
 
-Nadat de service Uitvoer een PDF-document heeft gegenereerd, kunt u het opslaan als een PDF-bestand.
+Nadat de service Uitvoer een PDF-document heeft gegenereerd, kunt u dit opslaan als een PDF-bestand.
 
 **Zie ook**
 
@@ -1012,8 +1009,8 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
 1. Maak een Output- en Assembler Client-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Gebruik de Assembler-service om het formulierontwerp te genereren.
 
@@ -1028,7 +1025,6 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
    * De `AssemblerResult` object `getDocuments` methode. Deze methode retourneert een `java.util.Map` object.
    * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object.
    * De `com.adobe.idp.Document` object `copyToFile` methode voor het extraheren van het samengevoegde XDP-document.
-
 
 1. Gebruik de service Uitvoer om het PDF-document te genereren.
 
@@ -1047,15 +1043,15 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
 
    * Een `com.adobe.idp.Document` object dat het PDF-document vertegenwoordigt door het `OutputResult` object `getGeneratedDoc` methode.
    * Een `java.io.File` object dat de resultaten van de bewerking bevat. Zorg ervoor dat de bestandsnaamextensie .pdf is.
-   * De `com.adobe.idp.Document` object `copyToFile` methode om de inhoud van de `com.adobe.idp.Document` naar het bestand. (Zorg ervoor dat u de `com.adobe.idp.Document` object dat `getGeneratedDoc` geretourneerde methode.)
+   * De `com.adobe.idp.Document` object `copyToFile` methode om de inhoud van de `com.adobe.idp.Document` naar het bestand. (Gebruik de `com.adobe.idp.Document` het object dat `getGeneratedDoc` geretourneerde methode.)
 
 **Zie ook**
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (EJB-modus): Een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[Snel starten (EJB-modus): een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1079,7 +1075,7 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
     http://localhost:8080/soap/services/AssemblerService?WSDL&lc_version=9.0.1.
    ```
 
-   Omdat `BLOB` het gegevenstype is gemeenschappelijk voor beide de dienstverwijzingen, kwalificeer volledig `BLOB` gegevenstype wanneer het gebruiken van het. In de bijbehorende webservice kunt u snel aan de slag met `BLOB` exemplaren zijn volledig gekwalificeerd.
+   Omdat de `BLOB` het gegevenstype is gemeenschappelijk voor beide de dienstverwijzingen, kwalificeer volledig `BLOB` gegevenstype bij gebruik ervan. In de bijbehorende webservice kunt u snel aan de slag met `BLOB` exemplaren zijn volledig gekwalificeerd.
 
    >[!NOTE]
    >
@@ -1088,7 +1084,7 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
 1. Maak een Output- en Assembler Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -1096,6 +1092,7 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
       * Wijs de gebruikersnaam voor AEM formulieren toe aan de `OutputServiceClient.ClientCredentials.UserName.UserName`veld.
       * Wijs de overeenkomstige wachtwoordwaarde aan toe `OutputServiceClient.ClientCredentials.UserName.Password`veld.
       * De constante waarde toewijzen `HttpClientCredentialType.Basic` aan de `BasicHttpBindingSecurity.Transport.ClientCredentialType`veld.
+
    * Wijs het `BasicHttpSecurityMode.TransportCredentialOnly` constante waarde voor de `BasicHttpBindingSecurity.Security.Mode`veld.
 
    >[!NOTE]
@@ -1112,9 +1109,8 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
 
    De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zijn opgetreden. Voer de volgende handelingen uit om het nieuwe XDP-document te verkrijgen:
 
-   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
+   * Toegang krijgen tot de `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
    * Doorlopen `Map` object om het samengevoegde formulierontwerp op te halen. Cast het lid van die array `value` een `BLOB`. Dit doorgeven `BLOB` naar de service Uitvoer.
-
 
 1. Gebruik de service Uitvoer om het PDF-document te genereren.
 
@@ -1126,7 +1122,7 @@ Maak een PDF-document op basis van fragmenten met de API voor uitvoerservice en 
    * A `PDFOutputOptionsSpec` -object dat PDF-runtime-opties bevat.
    * A `RenderOptionsSpec` -object dat renderingopties bevat.
    * De `BLOB` object dat de XML-gegevensbron bevat die gegevens bevat die met het formulierontwerp moeten worden samengevoegd.
-   * Een uitvoer `BLOB` object dat `generatePDFOutput2` wordt gevuld. De `generatePDFOutput2` Hiermee wordt dit object gevuld met gegenereerde metagegevens die het document beschrijven. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
+   * Een uitvoer `BLOB` het object dat `generatePDFOutput2` wordt gevuld. De `generatePDFOutput2` Hiermee wordt dit object gevuld met gegenereerde metagegevens die het document beschrijven. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
    * Een uitvoer `OutputResult` object dat de resultaten van de bewerking bevat. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
 
    De `generatePDFOutput2` methode retourneert een `BLOB` -object dat het niet-interactieve PDF-formulier bevat.
@@ -1157,7 +1153,7 @@ Met de service Uitvoer kunt u XML-gegevens samenvoegen met een formulierontwerp 
 
 >[!NOTE]
 >
->Voor informatie over het verzenden van afdrukstromen naar printers raadpleegt u [Afdrukstromen naar printers verzenden](creating-document-output-streams.md#sending-print-streams-to-printers).
+>Zie voor informatie over het verzenden van afdrukstromen naar printers [Afdrukstromen naar printers verzenden](creating-document-output-streams.md#sending-print-streams-to-printers).
 
 >[!NOTE]
 >
@@ -1188,9 +1184,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. (Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).)
 
-**Een uitvoerclient-object maken**
+**Een Output Client-object maken**
 
-Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de Output-webservice-API gebruikt, maakt u een `OutputServiceService` object.
+Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de uitvoerwebservice-API gebruikt, maakt u een `OutputServiceService` object.
 
 **Verwijzen naar een XML-gegevensbron**
 
@@ -1235,18 +1231,18 @@ Afdrukken naar een bestand met de Output API (Java):
 1. Maak een Output Client-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een XML-gegevensbron.
 
    * Een `java.io.FileInputStream` object dat de XML-gegevensbron vertegenwoordigt die wordt gebruikt om het document te vullen met de constructor ervan en die een tekenreekswaarde doorgeeft die de locatie van het XML-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Stel de runtime-opties voor afdrukken in die nodig zijn om af te drukken naar een bestand.
 
    * Een `PrintedOutputOptionsSpec` object met behulp van de constructor.
-   * Geef het bestand op door het object PrintedOutputOptionsSpec aan te roepen `setFileURI` en het doorgeven van een tekenreekswaarde die de naam en locatie van het bestand vertegenwoordigt. Als u bijvoorbeeld wilt dat de uitvoerservice wordt afgedrukt naar een PostScript-bestand met de naam MortgaugeForm.ps in C:\Adobe, geeft u C:\\Adobe\MortgageForm.ps op.
-   * Geef het aantal exemplaren op dat u wilt afdrukken door het `PrintedOutputOptionsSpec` object `setCopies` methode en het overgaan van een geheelwaarde die het aantal exemplaren vertegenwoordigt.
+   * Geef het bestand op door de objecten PrintedOutputOptionsSpec aan te roepen `setFileURI` en het doorgeven van een tekenreekswaarde die de naam en locatie van het bestand vertegenwoordigt. Als u bijvoorbeeld wilt dat de uitvoerservice wordt afgedrukt naar een PostScript-bestand met de naam MortgaugeForm.ps in C:\Adobe, geeft u C:\\Adobe\MortgageForm.ps op.
+   * Geef het aantal exemplaren op dat moet worden afgedrukt door het `PrintedOutputOptionsSpec` object `setCopies` methode en het overgaan van een geheelwaarde die het aantal exemplaren vertegenwoordigt.
 
 1. Druk de afdrukstroom naar een bestand af.
 
@@ -1267,7 +1263,7 @@ Afdrukken naar een bestand met de Output API (Java):
 
 1. Haal de resultaten van de bewerking op.
 
-   * Een `com.adobe.idp.Document` object dat de status van het `generatePrintedOutput` door de `OutputResult` object `getStatusDoc` methode (de `OutputResult` object is geretourneerd door de `generatePrintedOutput` methode).
+   * Een `com.adobe.idp.Document` object dat de status van het `generatePrintedOutput` door de `OutputResult` object `getStatusDoc` (de `OutputResult` object is geretourneerd door de `generatePrintedOutput` methode).
    * Een `java.io.File` -object dat de resultaten van de bewerking bevat. Zorg ervoor dat de bestandsextensie XML is.
    * De `com.adobe.idp.Document` object `copyToFile` methode om de inhoud van de `com.adobe.idp.Document` object naar het bestand (gebruik de `com.adobe.idp.Document` object dat is geretourneerd door de `getStatusDoc` methode).
 
@@ -1275,7 +1271,7 @@ Afdrukken naar een bestand met de Output API (Java):
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Afdrukken naar een bestand met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
+[Snel starten (SOAP-modus): afdrukken naar een bestand met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-printing-to-a-file-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1296,7 +1292,7 @@ Afdrukken naar een bestand met de Output API (webservice):
 1. Maak een Output Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -1362,7 +1358,7 @@ Met de Output-service kunt u XML-gegevens samenvoegen met een formulierontwerp e
 
 >[!NOTE]
 >
->Om aan te tonen hoe te om een drukstroom naar een netwerkprinter te verzenden, verzendt deze sectie een de drukstroom van PostScript naar een netwerkprinter door het SharedPrinter printerprotocol te gebruiken.
+>In deze sectie wordt een PostScript-afdrukstroom naar een netwerkprinter verzonden met behulp van het SharedPrinter-printerprotocol om te tonen hoe u een afdrukstream naar een netwerkprinter verzendt.
 
 >[!NOTE]
 >
@@ -1393,9 +1389,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
-**Een uitvoerclient-object maken**
+**Een Output Client-object maken**
 
-Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, maakt u een uitvoerservice-clientobject. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de Output-webservice-API gebruikt, maakt u een `OutputServiceClient` object.
+Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, maakt u een uitvoerservice-clientobject. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de uitvoerwebservice-API gebruikt, maakt u een `OutputServiceClient` object.
 
 **Verwijzen naar een XML-gegevensbron**
 
@@ -1405,10 +1401,10 @@ Als u een document wilt afdrukken dat gegevens bevat, moet u verwijzen naar een 
 
 U kunt de runtime-opties instellen wanneer u een afdrukstroom naar een printer verzendt, inclusief de volgende opties:
 
-* **Kopieën**: Hier geeft u het aantal exemplaren op dat u naar de printer wilt verzenden. De standaardwaarde is 1.
+* **Exemplaren**: Geeft het aantal exemplaren op dat naar de printer moet worden verzonden. De standaardwaarde is 1.
 * **Stapel**: Een optie XCI wordt geplaatst wanneer een nietmachine wordt gebruikt. Deze optie kan in het configuratiemodel door het belangrijkste element worden gespecificeerd en wordt gebruikt voor printers PS en PCL slechts.
 * **OutputJog**: Er wordt een XCI-optie ingesteld wanneer uitvoerpagina&#39;s moeten worden samengevoegd (fysiek verschoven in de uitvoerlade). Deze optie geldt alleen voor PS- en PCL-printers.
-* **OutputBin**: XCI-waarde die wordt gebruikt om het afdrukstuurprogramma in staat te stellen de juiste uitvoerbak te selecteren.
+* **Uitvoerbak**: XCI-waarde die wordt gebruikt om het afdrukstuurprogramma in staat te stellen de juiste uitvoerlade te selecteren.
 
 >[!NOTE]
 >
@@ -1418,9 +1414,9 @@ U kunt de runtime-opties instellen wanneer u een afdrukstroom naar een printer v
 
 Haal een afdrukstroom op die u naar een printer wilt verzenden. U kunt bijvoorbeeld een PostScript-bestand ophalen en naar een printer verzenden.
 
-U kunt een PDF-bestand verzenden als uw printer PDF ondersteunt. Een probleem bij het verzenden van een PDF-document naar een printer is echter dat elke printerfabrikant een andere implementatie van de PDF-interpreter heeft. Dat wil zeggen dat sommige afdrukfabrikanten Adobe PDF-interpretatie gebruiken, maar dat hangt van de printer af. Andere drukkers hebben hun eigen PDF-interpreter. Hierdoor kunnen de afdrukresultaten afwijken.
+U kunt ervoor kiezen een PDF-bestand te verzenden als uw printer PDF ondersteunt. Een probleem bij het verzenden van een PDF-document naar een printer is echter dat elke printerfabrikant een andere implementatie van de PDF-interpreter heeft. Dat wil zeggen dat sommige afdrukfabrikanten Adobe PDF-interpretatie gebruiken, maar dat hangt van de printer af. Andere drukkers hebben hun eigen PDF-interpreter. Hierdoor kunnen de afdrukresultaten afwijken.
 
-Een andere beperking bij het verzenden van een PDF-document naar een drukker is dat het alleen wordt afgedrukt. de printer heeft alleen toegang tot duplex, selectie van papierlade en nieten, via de printerinstellingen.
+Een andere beperking bij het verzenden van een PDF-document naar een printer is dat het alleen wordt afgedrukt; het heeft geen toegang tot de duplex-, papierlade- en nietfunctie, behalve via de printerinstellingen.
 
 Als u een document wilt ophalen dat u wilt afdrukken, gebruikt u de opdracht `generatePrintedOutput` methode. In de volgende tabel worden de inhoudstypen aangegeven die voor een bepaalde afdrukstroom zijn ingesteld wanneer u de `generatePrintedOutput` methode.
 
@@ -1501,11 +1497,11 @@ Als u een document wilt ophalen dat u wilt afdrukken, gebruikt u de opdracht `ge
 
 >[!NOTE]
 >
->U kunt ook een afdrukstroom naar een printer verzenden met de opdracht `generatePrintedOutput2` methode. Maar de snelle start die gepaard gaat met het verzenden van de sectie Afdrukstromen naar printers, gebruikt de `generatePrintedOutput` methode.
+>U kunt ook een afdrukstroom naar een printer verzenden met de opdracht `generatePrintedOutput2` methode. Maar de snelle start die gepaard gaat met het verzenden van de sectie Afdrukstromen naar printers, gebruikt de opdracht `generatePrintedOutput` methode.
 
 **De afdrukstroom naar een netwerkprinter verzenden**
 
-Nadat u een document hebt opgehaald om af te drukken, kunt u de service Uitvoer inschakelen, waardoor een afdrukstroom naar een netwerkprinter wordt verzonden. Als u de printer wilt vinden in de uitvoerservice, moet u zowel de afdrukserver als de printernaam opgeven. Daarnaast moet u ook het afdrukprotocol opgeven.
+Nadat u een document hebt opgehaald om af te drukken, kunt u de service Uitvoer inschakelen, waardoor er een afdrukstroom naar een netwerkprinter wordt verzonden. Als u de printer wilt vinden in de uitvoerservice, moet u zowel de afdrukserver als de printernaam opgeven. Daarnaast moet u ook het afdrukprotocol opgeven.
 
 >[!NOTE]
 >
@@ -1521,15 +1517,15 @@ Een afdrukstream naar een netwerkprinter verzenden met de Output API (Java):
 
    Neem client-JAR-bestanden, zoals adobe-output-client.jar, op in het klassenpad van uw Java-project.
 
-1. Een uitvoerclient-object maken
+1. Een Output Client-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een XML-gegevensbron
 
    * Een `java.io.FileInputStream` object dat de XML-gegevensbron vertegenwoordigt die wordt gebruikt om het document te vullen met de constructor ervan en die een tekenreekswaarde doorgeeft die de locatie van het XML-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Uitvoeropties voor afdrukken instellen
 
@@ -1537,7 +1533,7 @@ Een afdrukstream naar een netwerkprinter verzenden met de Output API (Java):
 
    >[!NOTE]
    >
-   >U kunt de pagineringswaarde niet instellen met de opdracht `PrintedOutputOptionsSpec` object `setPagination` als u een ZPL-afdrukstroom genereert. Evenzo kunt u de volgende opties niet instellen voor een ZPL-afdrukstroom: OutputJog, PageOffset en Stapel. De `setPagination` methode is niet geldig voor het genereren van PostScript. Het is alleen geldig voor PCL-generatie.
+   >U kunt de pagineringswaarde niet instellen met de opdracht `PrintedOutputOptionsSpec` object `setPagination` als u een ZPL-afdrukstroom genereert. Op dezelfde manier kunt u de volgende opties voor een ZPL-afdrukstroom niet instellen: OutputJog, PageOffset en Stapel. De `setPagination` methode is niet geldig voor het genereren van PostScript. Het is alleen geldig voor PCL-generatie.
 
 1. Een af te drukken document ophalen
 
@@ -1550,10 +1546,9 @@ Een afdrukstream naar een netwerkprinter verzenden met de Output API (Java):
       * De `PrintedOutputOptionsSpec` -object dat uitvoeringsopties bevat die vereist zijn om af te drukken naar een bestand.
       * De `com.adobe.idp.Document` object dat staat voor de XML-gegevensbron die formuliergegevens bevat die met het formulierontwerp moeten worden samengevoegd.
 
-      Deze methode retourneert een `OutputResult` object dat de resultaten van de bewerking bevat.
+     Deze methode retourneert een `OutputResult` object dat de resultaten van de bewerking bevat.
 
-   * Een `com.adobe.idp.Document` object dat naar de printer moet worden verzonden door de `OutputResult` object &#39;s `getGeneratedDoc` methode. Deze methode retourneert een `com.adobe.idp.Document` object.
-
+   * Een `com.adobe.idp.Document` object dat naar de printer moet worden verzonden door de `OutputResult` object `getGeneratedDoc` methode. Deze methode retourneert een `com.adobe.idp.Document` object.
 
 1. De afdrukstroom naar een netwerkprinter verzenden
 
@@ -1583,7 +1578,7 @@ Een afdrukstroom naar een netwerkprinter verzenden met de Output API (webservice
 1. Maak een Output Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -1601,13 +1596,13 @@ Een afdrukstroom naar een netwerkprinter verzenden met de Output API (webservice
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
    * Vul de `BLOB` object door het toe te wijzen `MTOM` veld met de inhoud van de bytearray.
 
-1. Stel opties voor het uitvoeren van de afdruk in.
+1. Stel opties voor het uitvoeren van afdrukken in.
 
    Een `PrintedOutputOptionsSpec` object met behulp van de constructor. U kunt bijvoorbeeld het aantal exemplaren opgeven dat moet worden afgedrukt door een geheel-getalwaarde toe te wijzen die het aantal exemplaren aan het `PrintedOutputOptionsSpec` object `copies` lid.
 
    >[!NOTE]
    >
-   >U kunt de pagineringswaarde niet instellen met de opdracht `PrintedOutputOptionsSpec` object `pagination` gegevenslid als u een ZPL-afdrukstroom genereert. Evenzo kunt u de volgende opties niet instellen voor een ZPL-afdrukstroom: OutputJog, PageOffset en Stapel. De `pagination` gegevenslid is niet geldig voor het genereren van PostScript. Het is alleen geldig voor PCL-generatie.
+   >U kunt de pagineringswaarde niet instellen met de opdracht `PrintedOutputOptionsSpec` object `pagination` gegevenslid als u een ZPL-afdrukstroom genereert. Op dezelfde manier kunt u de volgende opties voor een ZPL-afdrukstroom niet instellen: OutputJog, PageOffset en Stapel. De `pagination` gegevenslid is niet geldig voor het genereren van PostScript. Het is alleen geldig voor PCL-generatie.
 
 1. Een af te drukken document ophalen.
 
@@ -1622,8 +1617,8 @@ Een afdrukstroom naar een netwerkprinter verzenden met de Output API (webservice
       * A `BLOB` object dat wordt gevuld door het `generatePrintedOutput` methode. De `generatePrintedOutput` Hiermee wordt dit object gevuld met gegenereerde metagegevens die het document beschrijven. (Deze parameterwaarde is alleen vereist voor aanroepen van webservices.)
       * A `BLOB` object dat wordt gevuld door het `generatePrintedOutput` methode. De `generatePrintedOutput` Hiermee wordt dit object gevuld met resultaatgegevens. (Deze parameterwaarde is alleen vereist voor aanroepen van webservices.)
       * An `OutputResult` object dat de resultaten van de bewerking bevat. (Deze parameterwaarde is alleen vereist voor aanroepen van webservices.)
-   * Een `BLOB` object dat naar de printer moet worden verzonden door de waarde van `OutputResult` object &#39;s `generatedDoc` methode. Deze methode retourneert een `BLOB` object dat PostScript-gegevens bevat die door het `generatePrintedOutput` methode.
 
+   * Een `BLOB` object dat naar de printer moet worden verzonden door de waarde van `OutputResult` object `generatedDoc` methode. Deze methode retourneert een `BLOB` object dat PostScript-gegevens bevat die worden geretourneerd door het `generatePrintedOutput` methode.
 
 1. Verzend de afdrukstroom naar een netwerkprinter.
 
@@ -1734,9 +1729,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
-**Een uitvoerclient-object maken**
+**Een Output Client-object maken**
 
-Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de Output-webservice-API gebruikt, maakt u een `OutputServiceService` object.
+Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de uitvoerwebservice-API gebruikt, maakt u een `OutputServiceService` object.
 
 **Verwijzen naar een XML-gegevensbron**
 
@@ -1748,9 +1743,9 @@ Een XML-element moet bestaan voor elk formulierveld dat u wilt vullen met gegeve
 
 U moet de volgende runtime opties voor de dienst van de Output plaatsen om veelvoudige dossiers tot stand te brengen die op een gegevensbron van XML worden gebaseerd:
 
-* **Veel bestanden**: Hiermee wordt opgegeven of de service Uitvoer één document of meerdere documenten maakt. U kunt waar of onwaar opgeven. Geef true op als u een afzonderlijk document wilt maken voor elke gegevensrecord in de XML-gegevensbron.
-* **Bestands-URI**: Hier geeft u de locatie op van de bestanden die de uitvoerservice genereert. Stel bijvoorbeeld dat u C:\\Adobe\forms\Loan.pdf opgeeft. In dit geval maakt de service Uitvoer een bestand met de naam Loan.pdf en wordt het bestand in de map C:\\Adobe\forms folder geplaatst. Als er meerdere bestanden zijn, zijn de bestandsnamen Loan0001.pdf, Loan0002.pdf, Loan0003.pdf enzovoort. Als u een bestandslocatie opgeeft, worden de bestanden op de server geplaatst, niet op de clientcomputer.
-* **Recordnaam**: Hiermee wordt de naam van het XML-element opgegeven in de gegevensbron die de gegevensrecords scheidt. In het voorbeeld-XML-gegevensbron dat eerder in deze sectie wordt weergegeven, wordt bijvoorbeeld het XML-element dat gegevensrecords scheidt, aangeroepen `LoanRecord`. (In plaats van de runtime voor opnamen in te stellen, kunt u het niveau opnemen instellen door er een numerieke waarde aan toe te wijzen die het elementniveau aangeeft dat gegevensrecords bevat. U kunt echter alleen de recordnaam of het recordniveau instellen. U kunt niet beide waarden instellen.)
+* **Veel bestanden**: Geeft aan of de service Uitvoer een of meer documenten maakt. U kunt waar of onwaar opgeven. Geef true op als u een afzonderlijk document wilt maken voor elke gegevensrecord in de XML-gegevensbron.
+* **Bestands-URI**: Hiermee geeft u de locatie op van de bestanden die de uitvoerservice genereert. Stel bijvoorbeeld dat u C:\\Adobe\forms\Loan.pdf opgeeft. In dit geval maakt de service Uitvoer een bestand met de naam Loan.pdf en wordt het bestand in de map C:\\Adobe\forms geplaatst. Als er meerdere bestanden zijn, zijn de bestandsnamen Loan0001.pdf, Loan0002.pdf, Loan0003.pdf enzovoort. Als u een bestandslocatie opgeeft, worden de bestanden op de server geplaatst, niet op de clientcomputer.
+* **Recordnaam**: Geeft de naam van het XML-element op in de gegevensbron die de gegevensrecords scheidt. In het voorbeeld-XML-gegevensbron dat eerder in deze sectie wordt weergegeven, wordt bijvoorbeeld het XML-element dat gegevensrecords scheidt, aangeroepen `LoanRecord`. (In plaats van de runtime voor opnamen in te stellen, kunt u het niveau opnemen instellen door er een numerieke waarde aan toe te wijzen die het elementniveau aangeeft dat gegevensrecords bevat. U kunt echter alleen de recordnaam of het recordniveau instellen. U kunt niet beide waarden instellen.)
 
 **Renderopties tijdens runtime instellen**
 
@@ -1813,15 +1808,15 @@ Meerdere PDF-bestanden maken met de Output API (Java):
 
    Neem client-JAR-bestanden, zoals adobe-output-client.jar, op in het klassenpad van uw Java-project. .
 
-1. Een uitvoerclient-object maken
+1. Een Output Client-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een XML-gegevensbron
 
    * Een `java.io.FileInputStream` object dat de XML-gegevensbron vertegenwoordigt die meerdere records bevat door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het XML-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Opties voor PDF bij uitvoering instellen
 
@@ -1833,7 +1828,7 @@ Meerdere PDF-bestanden maken met de Output API (Java):
 1. Renderopties tijdens runtime instellen
 
    * Een `RenderOptionsSpec` object met behulp van de constructor.
-   * Plaats het formulierontwerp in de cache om de prestaties van de uitvoerservice te verbeteren door het aanroepen van de `RenderOptionsSpec` object `setCacheEnabled` en het passeren van een `Boolean` waarde van `true`.
+   * Plaats het formulierontwerp in de cache om de prestaties van de uitvoerservice te verbeteren door het aanroepen van de `RenderOptionsSpec` object `setCacheEnabled` en door te geven `Boolean` waarde van `true`.
 
 1. Meerdere PDF-bestanden genereren
 
@@ -1857,7 +1852,7 @@ Meerdere PDF-bestanden maken met de Output API (Java):
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (EJB-modus): Meerdere PDF-bestanden maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
+[Snel starten (EJB-modus): meerdere PDF-bestanden maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-multiple-pdf-files-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -1878,7 +1873,7 @@ Meerdere PDF-bestanden maken met de Output API (webservice):
 1. Maak een Output Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -1960,7 +1955,7 @@ Voer de volgende stappen uit om de uitvoerservice op te dragen de zoekregels te 
 1. Definieer zoekregels.
 1. Stel PDF-uitvoeringsopties in.
 1. Stel renderingopties in.
-1. Genereer een PDF-document.
+1. Een PDF-document genereren.
 1. Haal de resultaten van de bewerking op.
 
 **Projectbestanden opnemen**
@@ -1977,7 +1972,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
-**Een uitvoerclient-object maken**
+**Een Output Client-object maken**
 
 Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken.
 
@@ -1987,7 +1982,7 @@ Een XML-element moet bestaan voor elk formulierveld dat u wilt vullen met gegeve
 
 **Zoekregels definiëren**
 
-Als u zoekregels wilt definiëren, definieert u een of meer tekstpatronen waarnaar de uitvoerservices zoeken in de invoergegevens. Voor elk tekstpatroon dat u definieert, geeft u een overeenkomstig formulierontwerp op dat wordt gebruikt als het tekstpatroon zich bevindt. Als een tekstpatroon wordt gevonden, gebruikt de uitvoerservice het bijbehorende formulierontwerp om de uitvoer te genereren. Een voorbeeld van een tekstpatroon is *hypotheek*.
+Als u zoekregels wilt definiëren, definieert u een of meer tekstpatronen waarnaar de uitvoerservices zoeken in de invoergegevens. Voor elk tekstpatroon dat u definieert, geeft u een corresponderend formulierontwerp op dat wordt gebruikt als het tekstpatroon zich bevindt. Als een tekstpatroon wordt gevonden, gebruikt de uitvoerservice het bijbehorende formulierontwerp om de uitvoer te genereren. Een voorbeeld van een tekstpatroon is *hypotheek*.
 
 >[!NOTE]
 >
@@ -1997,8 +1992,8 @@ Als u zoekregels wilt definiëren, definieert u een of meer tekstpatronen waarna
 
 Stel de volgende PDF runtime-opties in zodat de Output-service een PDF-document kan maken dat is gebaseerd op meerdere formulierontwerpen:
 
-* **Bestands-URI**: Hier geeft u de naam en locatie op van het PDF-bestand dat de uitvoerservice genereert.
-* **Regels**: Hier geeft u de regels op die u hebt gedefinieerd.
+* **Bestands-URI**: Hiermee geeft u de naam en locatie op van het PDF-bestand dat door de uitvoerservice wordt gegenereerd.
+* **Regels**: Geeft de regels op die u hebt gedefinieerd.
 * **LookAHead**: Geeft het aantal bytes op dat vanaf het begin van het invoergegevensbestand moet worden gebruikt om te scannen naar de gedefinieerde tekstpatronen. De standaardwaarde is 500 bytes.
 
 **Renderopties tijdens runtime instellen**
@@ -2032,17 +2027,17 @@ Maak zoekregels met de Output API (Java):
 1. Maak een Output Client-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een XML-gegevensbron.
 
    * Een `java.io.FileInputStream` object dat de XML-gegevensbron vertegenwoordigt die wordt gebruikt om het PDF-document te vullen met de constructor ervan en die een tekenreekswaarde doorgeeft die de locatie van het XML-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Definieer zoekregels.
 
    * Een `Rule` object met behulp van de constructor.
-   * Definieer een tekstpatroon door het `Rule` object `setPattern` methode en het overgaan van een koordwaarde die een tekstpatroon specificeert.
+   * Een tekstpatroon definiëren door het `Rule` object `setPattern` methode en het overgaan van een koordwaarde die een tekstpatroon specificeert.
    * Definieer het bijbehorende formulierontwerp door het `Rule` object `setForm` methode. Geef een tekenreekswaarde door die de naam van het formulierontwerp aangeeft.
 
    >[!NOTE]
@@ -2051,7 +2046,6 @@ Maak zoekregels met de Output API (Java):
 
    * Een `java.util.List` object door een `java.util.ArrayList` constructor.
    * Voor elke `Rule` het object dat u hebt gemaakt, activeert het `java.util.List` object `add` en geeft de `Rule` object.
-
 
 1. Stel PDF-uitvoeringsopties in.
 
@@ -2065,7 +2059,7 @@ Maak zoekregels met de Output API (Java):
    * Een `RenderOptionsSpec` object met behulp van de constructor.
    * Plaats het formulierontwerp in de cache om de prestaties van de Output-service te verbeteren door het aanroepen van de `RenderOptionsSpec` object `setCacheEnabled` en passeren `true`.
 
-1. Genereer een PDF-document.
+1. Een PDF-document genereren.
 
    Een PDF-document genereren dat is gebaseerd op meerdere formulierontwerpen door het aanroepen van de `OutputClient` object `generatePDFOutput` en geeft de volgende waarden door:
 
@@ -2088,9 +2082,9 @@ Maak zoekregels met de Output API (Java):
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (EJB-modus): Zoekregels maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[Snel starten (EJB-modus): zoekregels maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
-[Snel starten (SOAP-modus): Zoekregels maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
+[Snel starten (SOAP-modus): zoekregels maken met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-search-rules-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2111,7 +2105,7 @@ Maak zoekregels met de Output API (webservice):
 1. Maak een Output Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -2123,7 +2117,7 @@ Maak zoekregels met de Output API (webservice):
 
 1. Verwijzen naar een XML-gegevensbron.
 
-   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt voor het opslaan van gegevens die worden samengevoegd met het PDF-document.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om gegevens op te slaan die met het PDF-document worden samengevoegd.
    * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het te coderen PDF-document en de modus waarin het bestand moet worden geopend.
    * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
@@ -2140,8 +2134,7 @@ Maak zoekregels met de Output API (webservice):
    >Herhaal de vorige drie substappen voor elk tekstpatroon dat u wilt definiëren.
 
    * Een `MyArrayOf_xsd_anyType` -object dat de regels opslaat.
-   * Elk toewijzen `Rule` een object naar een element van het `MyArrayOf_xsd_anyType` array. De `MyArrayOf_xsd_anyType` object `Add` methode voor elke `Rule` object.
-
+   * Elke waarde toewijzen `Rule` een object naar een element van het `MyArrayOf_xsd_anyType` array. De `MyArrayOf_xsd_anyType` object `Add` methode voor elke `Rule` object.
 
 1. Opties voor PDF bij uitvoering instellen
 
@@ -2236,9 +2229,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de locatie van alle AEM Forms JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
-**Een uitvoerclient-object maken**
+**Een Output Client-object maken**
 
-Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de Output-webservice-API gebruikt, maakt u een `OutputServiceService` object.
+Voordat u programmatisch een uitvoerservicebewerking kunt uitvoeren, moet u een uitvoerservice-clientobject maken. Als u de Java API gebruikt, maakt u een `OutputClient` object. Als u de uitvoerwebservice-API gebruikt, maakt u een `OutputServiceService` object.
 
 **Een interactief PDF-document ophalen**
 
@@ -2266,7 +2259,7 @@ U kunt het niet-interactieve PDF-document opslaan als een PDF-bestand.
 
 ### Een PDF-document samenvoegen met de Java API {#flatten-a-pdf-document-using-the-java-api}
 
-Een interactief PDF-document afvlakken naar een niet-interactief PDF-document met de Output API (Java):
+Een interactief PDF-document afvlakken naar een niet-interactief PDF-document met behulp van de Output API (Java):
 
 1. Inclusief projectbestanden.
 
@@ -2275,12 +2268,12 @@ Een interactief PDF-document afvlakken naar een niet-interactief PDF-document me
 1. Maak een Output Client-object.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `OutputClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `OutputClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Een interactief PDF-document ophalen.
 
    * Een `java.io.FileInputStream` -object dat het interactieve PDF-document vertegenwoordigt dat moet worden getransformeerd met behulp van de constructor en dat een tekenreekswaarde doorgeeft die de locatie van het interactieve PDF-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Transformeer het PDF-document.
 
@@ -2303,9 +2296,9 @@ Een interactief PDF-document afvlakken naar een niet-interactief PDF-document me
 
 [Overzicht van de stappen](creating-document-output-streams.md#summary-of-steps)
 
-[Snel starten (EJB-modus): Een PDF-document transformeren met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[Snel starten (EJB-modus): een PDF-document transformeren met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document transformeren met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document transformeren met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -2326,7 +2319,7 @@ Een interactief PDF-document afvlakken naar een niet-interactief PDF-document me
 1. Maak een Output Client-object.
 
    * Een `OutputServiceClient` object met de standaardconstructor.
-   * Een `OutputServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `OutputServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/OutputService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `OutputServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:

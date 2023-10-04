@@ -1,17 +1,13 @@
 ---
 title: Een PDFG-netwerkprinter instellen (alleen Windows)
-seo-title: Setting up a PDFG Network Printer (Windows only)
 description: Leer hoe u een PDFG-netwerkprinter instelt (alleen Windows)
-seo-description: Learn how to set up a PDFG Network Printer ( Windows only )
-uuid: 13b8481e-5ef0-4a07-9602-7bc4d9e05dd4
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7620e5e4-022e-49b2-8cfe-d5eec8ab99d7
 feature: PDF Generator
 exl-id: c3fc159e-2677-4b71-b0b2-2feaf69e1a32
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 Met PDFG-netwerkprinter kunnen gebruikers een PDF-document genereren vanuit elke toepassing die afdrukken ondersteunt. Nadat een gebruiker de PDFG-netwerkprinter heeft geïnstalleerd, wordt een nieuwe printer met de naam *PDF-generator* wordt weergegeven in het gedeelte Printers van het Configuratiescherm van Windows. Als er al een printer met dezelfde naam bestaat, wordt de gebruiker gevraagd een andere naam op te geven.
 
-Als u vanuit een toepassing op deze printer afdrukt, wordt het document (in PostScript-indeling) naar PDF Generator verzonden, die het PostScript-bestand naar PDF converteert. Afhankelijk van hoe u de Generator van de PDF vormde, stuurt het het document van de PDF naar de gebruiker als gehechtheid aan een e-mailbericht, door:sturen het document van de PDF naar een gespecificeerde AEM van de vormendienst of proces, of voert beide acties uit.
+Als u vanuit een toepassing op deze printer afdrukt, wordt het document (in PostScript-indeling) naar de PDF Generator verzonden. Hiermee wordt het PostScript-bestand naar PDF geconverteerd. Afhankelijk van de manier waarop u PDF Generator hebt geconfigureerd, verzendt het het PDF-document naar de gebruiker als een bijlage bij een e-mailbericht, stuurt het PDF-document door naar een opgegeven AEM formulierservice of -proces, of voert beide handelingen uit.
 
 U moet de volgende stappen uitvoeren om een PDFG-netwerkprinter in te stellen:
 
@@ -59,13 +55,13 @@ Als u de oorspronkelijke standaard-e-mailtekst wilt herstellen, klikt u op E-mai
 
 ## PDFG-netwerkprinter installeren op de computer van een gebruiker {#install-pdfg-network-printer-on-a-user-s-computer}
 
-Gebruikers die de rol van PDFG-beheerder of PDFG-gebruiker hebben, kunnen een PDFG-netwerkprinter installeren. Er moet een 32-bits JDK op de computer zijn geïnstalleerd.
+Gebruikers met de rol PDFG-beheerder of PDFG-gebruiker kunnen een PDFG-netwerkprinter installeren. Er moet een 32-bits JDK op de computer zijn geïnstalleerd.
 
 1. (PDFG-beheerders) Klik in de beheerconsole op Services > PDF Generator > PDFG-netwerkprinter.
 
-   (PDFG-gebruikers) Ga naar `http(s)://[host]:'port'/pdfgui` en klik op de koppeling onder de installatie van de PDFG-netwerkprinter.
+   (PDF-gebruikers) Ga naar `http(s)://[host]:'port'/pdfgui` en klik op de koppeling onder de installatie van de PDFG-netwerkprinter.
 
-1. Klik op de koppeling onder de installatie van de PDFG-netwerkprinter. Geef bij de aanwijzing voor gegevens van gebruikersaccounts de gebruikersnaam en het wachtwoord op die u in stap 1 hebt gebruikt om u aan te melden. Er verschijnt een bericht met de mededeling dat de printer is geïnstalleerd.
+1. Klik op de koppeling onder Installatie van PDFG-netwerkprinter. Geef bij de aanwijzing voor gegevens van gebruikersaccounts de gebruikersnaam en het wachtwoord op die u in stap 1 hebt gebruikt voor aanmelding. Er verschijnt een bericht met de mededeling dat de printer is geïnstalleerd.
 
    ***notitie **: Als het wachtwoord van de gebruiker verandert, moeten gebruikers de PDFG-netwerkprinter opnieuw installeren op hun computer. U kunt het wachtwoord niet bijwerken vanaf de beheerconsole.*
 

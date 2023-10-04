@@ -5,9 +5,9 @@ content-type: reference
 topic-tags: customization
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 73b0057f-082d-4502-90e2-5e41b52c1185
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '795'
+source-wordcount: '789'
 ht-degree: 0%
 
 ---
@@ -59,13 +59,13 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. U kun
 
    * `less` map: bevat de `less` variabele bestanden waarin u de `less` variabelen en `less mixins` die worden gebruikt om de .css stijlen te beheren.
 
-     Deze map bestaat uit `less` variabele bestanden, `less` bestanden mixen, `less` bestanden die stijlen definiëren met behulp van mixins en variabelen. En al deze minder dossiers worden dan ingevoerd in styles.less.
+     Deze map bestaat uit `less` variabele bestanden, `less` bestanden mixen, `less` bestanden die stijlen definiëren met behulp van mixins en variabelen. En al deze `less` bestanden worden vervolgens geïmporteerd in styles.less.
 
    * `css`map: bevat de CSS-bestanden waarin u de statische stijlen definieert die in het thema moeten worden gebruikt.
 
    **Minder variabelen**: Dit zijn de bestanden waarin u de variabelen definieert of overschrijft die worden gebruikt bij het definiëren van CSS-stijlen.
 
-   Adaptieve formulieren bieden OTB-variabelen die zijn gedefinieerd in de volgende bestanden zonder .less:
+   Adaptieve formulieren bieden OTB-variabelen die zijn gedefinieerd in het volgende `.less` bestanden:
 
    * `/apps/clientlibs/fd/af/guidetheme/common/less/globalvariables.less`
    * `/apps/clientlibs/fd/af/guidetheme/common/less/layoutvariables.less`
@@ -74,7 +74,7 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. U kun
 
    `/apps/clientlibs/fd/af/third-party/less/variables.less`
 
-   U kunt de variabelen gebruiken waarvoor minder nodig is, maar u kunt deze variabelen ook overschrijven of nieuwe, minder variabelen maken.
+   U kunt de `less` U kunt deze variabelen overschrijven of u kunt nieuwe `less` variabelen.
 
    >[!NOTE]
    >
@@ -131,11 +131,11 @@ U maakt een **adaptieve sjabloon** en past u het thema toe op de sjabloon. U kun
    }
    ```
 
-   **Stijlen.bestand:** Gebruik dit bestand om alle bestanden op te nemen die u in de clientbibliotheek moet gebruiken, met alle variabelen, mixins en stijlen.
+   **Stijlen.bestand:** Gebruik dit bestand om alle `less` bestanden (variabelen, mixins, stijlen) die u in de clientbibliotheek moet gebruiken.
 
    In het volgende voorbeeld `styles.less` , kan de importinstructie in elke willekeurige volgorde worden geplaatst.
 
-   De instructies voor het importeren van de volgende .less-bestanden zijn verplicht:
+   De instructies voor het importeren van het volgende `.less` bestanden zijn verplicht:
 
    * `globalvariables.less`
    * `layoutvariables.less`

@@ -3,9 +3,9 @@ title: Een Uitnodigingshandler voor externe gebruikers maken
 description: Een Uitnodigingshandler voor externe gebruikers maken
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1075'
 ht-degree: 0%
 
 ---
@@ -34,23 +34,23 @@ Als u een Invite External Users Handler wilt ontwikkelen, moet u de volgende sta
 
 Als u uw ontwikkelomgeving wilt instellen, moet u een nieuw Java-project maken, zoals een Eclipse-project. De ondersteunde versie van Eclipse wordt `3.2.1` of hoger.
 
-De SPI van het Rights Management vereist `edc-server-spi.jar` bestand dat moet worden ingesteld in het klassenpad van uw project. Als u niet naar dit JAR-bestand verwijst, kunt u de Rights Management-SPI niet gebruiken in uw Java-project. Dit JAR-bestand is geïnstalleerd met de AEM Forms SDK in het dialoogvenster `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` map.
+De SPI van het Rights Management vereist `edc-server-spi.jar` bestand dat moet worden ingesteld in het klassepad van uw project. Als u niet naar dit JAR-bestand verwijst, kunt u de Rights Management-SPI niet gebruiken in uw Java-project. Dit JAR-bestand is geïnstalleerd met de AEM Forms SDK in het dialoogvenster `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` map.
 
 Naast het toevoegen van `edc-server-spi.jar` aan de klassenweg van uw project, moet u ook de JAR dossiers toevoegen die worden vereist om de Dienst API van het Rights Management te gebruiken. Deze bestanden zijn nodig om de Rights Management Service API in de Uitnodiging External Users Handler te gebruiken.
 
 ## De implementatie van de uitnodigen van externe gebruikers definiëren {#define-invite-external-users-handler}
 
-Als u een uitnodigingshandler voor externe gebruikers wilt ontwikkelen, moet u een Java-klasse maken die de `com.adobe.edc.server.spi.ersp.InvitedUserProvider` interface. Deze klasse bevat een methode met de naam `invitedUser`, die de dienst van het Rights Management aanhaalt wanneer de e-mailadressen gebruikend **Uitgenodigde gebruikers toevoegen** pagina toegankelijk via beheerconsole.
+Als u een uitnodigingshandler voor externe gebruikers wilt ontwikkelen, moet u een Java-klasse maken die de `com.adobe.edc.server.spi.ersp.InvitedUserProvider` interface. Deze klasse bevat een methode met de naam `invitedUser`, die de dienst van het Rights Management aanhaalt wanneer de e-mailadressen gebruikend **Uitgenodigde gebruikers toevoegen** pagina toegankelijk via de beheerconsole.
 
-De `invitedUser` methode accepteert een `java.util.List` -instantie, die e-mailadressen met tekenreekstype bevat die vanuit de **Uitgenodigde gebruikers toevoegen** pagina. De `invitedUser` methode retourneert een array `InvitedUserProviderResult` objecten. Dit is doorgaans een toewijzing van e-mailadressen aan gebruikersobjecten (retourneren niet null).
+De `invitedUser` methode accepteert een `java.util.List` -instantie, die e-mailadressen met tekenreekstype bevat die vanuit de **Uitgenodigde gebruikers toevoegen** pagina. De `invitedUser` methode retourneert een array met `InvitedUserProviderResult` objecten. Dit is doorgaans een toewijzing van e-mailadressen aan gebruikersobjecten (retourneren niet null).
 
 >[!NOTE]
 >
 >In deze sectie wordt niet alleen getoond hoe u een uitnodigen voor externe gebruikers-handler kunt maken, maar ook de AEM Forms API gebruikt.
 
-De implementatie van de uitnodigen externe gebruikers-handler bevat een door de gebruiker gedefinieerde methode met de naam `createLocalPrincipalAccount`. Deze methode accepteert een tekenreekswaarde die een e-mailadres opgeeft als parameterwaarde. De `createLocalPrincipalAccount` methode gaat ervan uit dat een lokaal domein, genaamd `EDC_EXTERNAL_REGISTERED`. U kunt deze domeinnaam om het even wat vormen u wenst; nochtans, voor een productietoepassing, kunt u met een ondernemingsdomein willen integreren.
+De implementatie van de uitnodigen externe gebruikers manager bevat een user-defined methode genoemd `createLocalPrincipalAccount`. Deze methode accepteert een tekenreekswaarde die een e-mailadres opgeeft als parameterwaarde. De `createLocalPrincipalAccount` methode gaat ervan uit dat een lokaal domein, genaamd `EDC_EXTERNAL_REGISTERED`. U kunt deze domeinnaam om het even wat vormen u wenst; nochtans, voor een productietoepassing, kunt u met een ondernemingsdomein willen integreren.
 
-De `createUsers` methode doorloopt elk e-mailadres en maakt een overeenkomstig object Gebruiker (een lokale gebruiker in het dialoogvenster `EDC_EXTERNAL_REGISTERED` domein). Tot slot `doEmails` wordt aangeroepen. Deze methode wordt opzettelijk als een stoofpot in het monster gelaten. In een productieimplementatie, zou het toepassingslogica bevatten om uitnodigings e-mailberichten naar de pas gecreëerde gebruikers te verzenden. Het wordt in de steekproef verlaten om de stroom van de toepassingslogica van een echte toepassing aan te tonen.
+De `createUsers` methode doorloopt elk e-mailadres en maakt een overeenkomstig object Gebruiker (een lokale gebruiker in het dialoogvenster `EDC_EXTERNAL_REGISTERED` domein). Tot slot de `doEmails` wordt aangeroepen. Deze methode wordt opzettelijk als een stoofpot in het monster gelaten. In een productie-implementatie zou deze toepassingslogica bevatten om uitnodigings-e-mailberichten te verzenden naar de nieuwe gebruikers. Het wordt in de steekproef verlaten om de stroom van de toepassingslogica van een echte toepassing aan te tonen.
 
 ### De implementatie van de uitnodigen van externe gebruikers definiëren {#user-handler-implementation}
 
@@ -172,7 +172,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 U moet een dossier van componentXML bepalen om de uitnodigings externe gebruikersmanagercomponent op te stellen. Er bestaat een XML-componentbestand voor elke component en er worden metagegevens over de component weergegeven.
 
-Het volgende `component.xml` wordt gebruikt voor de uitnodigen externe gebruikers manager. Merk op dat de de dienstnaam is `InviteExternalUsersSample` en de bewerking die deze service beschikbaar stelt, krijgt een naam `invitedUser`. De invoerparameter is een `java.util.List` -instantie en de uitvoerwaarde een array is van `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instanties.
+Het volgende `component.xml` wordt gebruikt voor de uitnodigen externe gebruikers manager. Bericht dat de de dienstnaam is `InviteExternalUsersSample` en de bewerking die deze service beschikbaar stelt, krijgt een naam `invitedUser`. De invoerparameter is een `java.util.List` -instantie en de uitvoerwaarde een array is van `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instanties.
 
 ### Het XML-bestand van de component definiëren voor de handler voor externe gebruikers uitnodigen {#component-xml-invite-external-users-handler}
 
@@ -229,11 +229,11 @@ U moet de uitnodigen externe gebruikers-handler verpakken in een JAR-bestand. In
 
 Om de uitnodigings externe gebruikersmanager te testen, kunt u externe gebruikers toevoegen om uit te nodigen door beleidsconsole te gebruiken.
 
-Om externe gebruikers toe te voegen om het gebruiken van beleidsconsole uit te nodigen:
+Om externe gebruikers toe te voegen om uit te nodigen gebruikend beleidsconsole:
 
 1. Implementeer het JAR-bestand van de uitnodigen van externe gebruikers met Workbench.
 1. Start de toepassingsserver opnieuw.
-1. Meld u aan bij de beheerconsole.
+1. Log in bij de beheerconsole.
 1. Klikken **[!UICONTROL Services]** > **[!UICONTROL Rights Management]** > **[!UICONTROL Configuration]** > Uitgenodigd **[!UICONTROL User Registration]**.
 1. Ingenodigde gebruikersregistratie inschakelen door de optie **[!UICONTROL Enable invited user registration]** doos. Onder **[!UICONTROL Use Built-in registration system]**, klikt u op **[!UICONTROL No]**. Sla uw instellingen op.
 1. Van de homepage van de beleidsconsole, klik **[!UICONTROL Settings]** > **[!UICONTROL User Management]** > **[!UICONTROL Domain Management]**.

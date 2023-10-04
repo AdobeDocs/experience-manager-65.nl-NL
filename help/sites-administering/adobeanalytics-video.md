@@ -1,17 +1,13 @@
 ---
 title: Video bijhouden configureren voor Adobe Analytics
-seo-title: Configuring Video Tracking for Adobe Analytics
 description: Meer informatie over het configureren van videotracering voor SiteCatalyst.
-seo-description: Learn about configuring video tracking for SiteCatalyst.
-uuid: 5a862f05-abfa-42a2-ad40-4c1c32f1bd75
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: a18ddac1-9e4c-4857-9cb3-4d5eeb8dd9ec
 docset: aem65
 exl-id: 5d51f898-b6d1-40ac-bdbf-127cda1dc777
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 1%
@@ -20,7 +16,7 @@ ht-degree: 1%
 
 # Video bijhouden configureren voor Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Er zijn verschillende methoden beschikbaar voor het bijhouden van videogebeurtenissen, waarvan er twee oudere opties zijn voor oudere versies van Adobe Analytics. Deze oudere optie is: Verouderde mijlpalen en oude seconden.
+Er zijn verschillende methoden beschikbaar voor het bijhouden van videogebeurtenissen, waarvan er twee oudere opties zijn voor oudere versies van Adobe Analytics. Deze oudere optie is: oudere mijlpalen en oudere seconden.
 
 >[!NOTE]
 >
@@ -32,7 +28,7 @@ Gebruik de volgende procedure om een framework voor het bijhouden van video&#39;
 
 >[!NOTE]
 >
->Voor nieuwe implementaties verdient het aanbeveling **niet gebruiken** de oudere opties voor het bijhouden van video&#39;s. Gebruik de **Mijlpalen** in plaats daarvan.
+>Voor nieuwe implementaties verdient het aanbeveling **niet gebruiken** de oudere opties voor videotracering. Gebruik de **Mijlpalen** in plaats daarvan.
 
 ## Gemeenschappelijke stappen {#common-steps}
 
@@ -47,7 +43,7 @@ Gebruik de volgende procedure om een framework voor het bijhouden van video&#39;
 1. Selecteer een methode voor bijhouden:
 
    * [Mijlpalen](/help/sites-administering/adobeanalytics.md)
-   * [Niet-verouderde mijlpalen](/help/sites-administering/adobeanalytics.md)
+   * [Niet-oudere mijlpalen](/help/sites-administering/adobeanalytics.md)
    * [Legacy-mijlpalen](/help/sites-administering/adobeanalytics.md)
    * [Oudere seconden](/help/sites-administering/adobeanalytics.md)
 
@@ -81,7 +77,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
   </tr>
   <tr>
    <td>eventdata.videoName </td>
-   <td>De hier aan toegewezen variabelen bevatten de <strong>gebruiksvriendelijk</strong> name (<strong>Titel</strong>) van de video, indien ingesteld in de DAM; als deze niet is ingesteld, wordt de video <strong>bestandsnaam</strong> wordt verzonden. Slechts één keer verzonden, aan het begin van het afspelen van een video.</td>
+   <td>De hier aan toegewezen variabelen bevatten de <strong>gebruiksvriendelijk</strong> name (<strong>Titel</strong>) van de video indien ingesteld in de DAM; als deze niet is ingesteld, worden de video's <strong>bestandsnaam</strong> wordt verzonden. Slechts één keer verzonden, aan het begin van het afspelen van een video.</td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -113,7 +109,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
   </tr>
   <tr>
    <td>eventdata.a.contentType </td>
-   <td>Verzonden op elke mijlpaal; toont zoals pev3 in de vraag van Adobe Analytics, gewoonlijk verzonden als "video"<br /> </td>
+   <td>Verzonden op elke mijlpaal; verschijnt als pev3 in de vraag van Adobe Analytics, gewoonlijk verzonden als "video"<br /> </td>
   </tr>
   <tr>
    <td>eventdata.a.media.name </td>
@@ -128,7 +124,7 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
 
 >[!NOTE]
 >
->U kunt een video instellen **gebruiksvriendelijk** naam geven door de video te openen voor bewerking in de DAM en de instelling van de **Titel** metagegevensveld naar de gewenste naam.
+>U kunt video&#39;s instellen **gebruiksvriendelijk** naam geven door de video te openen voor bewerking in de DAM en de instelling van de **Titel** metagegevensveld naar de gewenste naam.
 
 1. Nadat u Mijlpalen hebt geselecteerd als de methode voor bijhouden, voert u in het vak Verschuiving track een door komma&#39;s gescheiden lijst met verschuivingen in seconden in. De volgende waarde definieert bijvoorbeeld mijlpalen 4, 8, 16, 20 en 28 seconden na het begin van de video:
 
@@ -231,7 +227,7 @@ De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit m
 *Dit is het **eerste oproep**gemaakt naar Adobe Analytics met de volgende waarden:*
 
 * *prop1 en eVar1 voor eventdata.a.media.name,*
-* *props2-4, samen met eVar2 en eVar3 die contentType (video) en segment (1) bevatten:O:1-4)*
+* *props2-4, samen met eVar2 en eVar3 met contentType (video) en segment (1:O:1-4)*
 * *event3, die is toegewezen aan eventData.events.a.media.view.*
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
@@ -244,7 +240,7 @@ De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit m
 * *event11 verzonden omdat eventData.events.milestone8 is bereikt*
 * *prop2 tot en met 4 worden niet verzonden (omdat eventdata.events.a.media.view niet werd geactiveerd)*
 
-## Niet-verouderde mijlpalen {#non-legacy-milestones}
+## Niet-oude mijlpalen {#non-legacy-milestones}
 
 De methode Niet-verouderde mijlpalen is vergelijkbaar met de methode Mijlpalen, behalve dat mijlpalen worden gedefinieerd met percentages van de lengte van de sporen. De gemeenschappelijke waarden zijn als volgt:
 
@@ -292,13 +288,13 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, met het verschil dat de 
 
    * bijvoorbeeld 10,50,75,100
 
-   Bovendien is de informatie die naar Adobe Analytics wordt verzonden minder aanpasbaar; er zijn slechts drie variabelen beschikbaar om in kaart te brengen :
+   Bovendien is de informatie die naar Adobe Analytics wordt verzonden minder aanpasbaar. Er zijn slechts drie variabelen beschikbaar voor toewijzing:
 
 <table>
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>De hier aan toegewezen variabelen bevatten de <strong>gebruiksvriendelijk</strong> name (<strong>Titel</strong>) van de video, indien ingesteld in de DAM; als de titel niet is ingesteld, wordt de video <strong>bestandsnaam</strong> wordt verzonden. Slechts één keer verzonden, aan het begin van het afspelen van een video.<br /> </td>
+   <td>De hier aan toegewezen variabelen bevatten de <strong>gebruiksvriendelijk</strong> name (<strong>Titel</strong>) van de video indien ingesteld in de DAM; als de titel niet is ingesteld, worden de video's <strong>bestandsnaam</strong> wordt verzonden. Slechts één keer verzonden, aan het begin van het afspelen van een video.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -313,7 +309,7 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, met het verschil dat de 
 
 >[!NOTE]
 >
->U kunt een video instellen **gebruiksvriendelijk** naam geven door de video te openen voor bewerking in de DAM en de instelling van de **Titel** metagegevensveld naar de gewenste naam. U moet ook de aangebrachte wijzigingen opslaan wanneer u klaar bent.
+>U kunt video&#39;s instellen **gebruiksvriendelijk** naam geven door de video te openen voor bewerking in de DAM en de instelling van de **Titel** metagegevensveld naar de gewenste naam. U moet ook de aangebrachte wijzigingen opslaan wanneer u klaar bent.
 
 1. Deze variabelen toewijzen aan de profielen 1 tot en met 3
 
@@ -355,7 +351,7 @@ Wanneer het gebruiken van de** erfenisseconden** methode, worden de vraag van Ad
  <tbody>
   <tr>
    <td>eventdata.videoName <br /> </td>
-   <td>De hier aan toegewezen variabelen bevatten de <strong>gebruiksvriendelijk</strong> name (<strong>Titel</strong>) van de video, indien ingesteld in de DAM; als de titel niet is ingesteld, wordt de video <strong>bestandsnaam</strong> wordt verzonden. Slechts één keer verzonden, aan het begin van het afspelen van een video.<br /> </td>
+   <td>De hier aan toegewezen variabelen bevatten de <strong>gebruiksvriendelijk</strong> name (<strong>Titel</strong>) van de video indien ingesteld in de DAM; als de titel niet is ingesteld, worden de video's <strong>bestandsnaam</strong> wordt verzonden. Slechts één keer verzonden, aan het begin van het afspelen van een video.<br /> </td>
   </tr>
   <tr>
    <td>eventdata.videoFileName </td>
@@ -370,7 +366,7 @@ Wanneer het gebruiken van de** erfenisseconden** methode, worden de vraag van Ad
 
 >[!NOTE]
 >
->U kunt een video instellen **gebruiksvriendelijk** naam geven door de video te openen voor bewerking in de DAM en de instelling van de **Titel** metagegevensveld naar de gewenste naam. U moet ook de aangebrachte wijzigingen opslaan wanneer u klaar bent.
+>U kunt video&#39;s instellen **gebruiksvriendelijk** naam geven door de video te openen voor bewerking in de DAM en de instelling van de **Titel** metagegevensveld naar de gewenste naam. U moet ook de aangebrachte wijzigingen opslaan wanneer u klaar bent.
 
 1. Deze variabelen toewijzen aan prop1, prop2 en prop3
 

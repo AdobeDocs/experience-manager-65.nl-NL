@@ -1,5 +1,5 @@
 ---
-title: Communautaire inhoud moderniseren
+title: Modernisering van communautaire inhoud
 seo-title: Moderating Community Content
 description: Moderniseringsconcepten en -acties
 seo-description: Moderation concepts and actions
@@ -12,27 +12,27 @@ discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1510'
+source-wordcount: '1509'
 ht-degree: 0%
 
 ---
 
-# Communautaire inhoud moderniseren {#moderating-community-content}
+# Modernisering van communautaire inhoud {#moderating-community-content}
 
 ## Overzicht {#overview}
 
 Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wordt gemaakt wanneer een lid (dat is aangemeld bij de bezoeker van de site) inhoud van een gepubliceerde communitysite plaatst via interactie met een van de volgende onderdelen van de community:
 
-* [Blog](/help/communities/blog-feature.md): leden plaatsen een blogartikel of commentaar .
-* [Kalender](/help/communities/calendar.md): leden plaatsen een agendagebeurtenis of een opmerking.
+* [Blog](/help/communities/blog-feature.md): leden plaatsen een blogartikel of commentaar.
+* [Kalender](/help/communities/calendar.md): leden plaatsen een agendagebeurtenis of commentaar.
 * [Opmerkingen](/help/communities/comments.md): leden plaatsen een opmerking of reageren op een opmerking.
 
-* [Forum](/help/communities/forum.md): leden plaatsen een nieuw onderwerp of antwoorden op een onderwerp .
-* [Ideatie](/help/communities/ideation-feature.md): leden plaatsen een idee of commentaar .
-* [QnA](/help/communities/working-with-qna.md): leden maken een vraag of beantwoorden een vraag .
-* [Revisies](/help/communities/reviews.md): leden plaatsen commentaar wanneer ze een object beoordelen.
+* [Forum](/help/communities/forum.md): leden plaatsen een nieuw onderwerp of antwoorden op een onderwerp.
+* [Ideatie](/help/communities/ideation-feature.md): leden plaatsen een idee of commentaar.
+* [QnA](/help/communities/working-with-qna.md): leden maken een vraag of beantwoorden een vraag.
+* [Revisies](/help/communities/reviews.md): leden plaatsen een opmerking wanneer ze een object beoordelen.
 
 Moderatie van UGC is nuttig voor het erkennen van positieve bijdragen en het beperken van negatieve bijdragen (zoals spam en misleidende taal). UGC kan vanuit verschillende omgevingen worden gemodereerd:
 
@@ -40,11 +40,11 @@ Moderatie van UGC is nuttig voor het erkennen van positieve bijdragen en het bep
 
 * [Moderniseringsconsole](moderation.md)
 
-   De console van de Moderatie is toegankelijk door beheerders en [gemeenschapsmoderatoren](/help/communities/users.md) in het openbare milieu evenals door beheerders in het auteursmilieu. Dit is mogelijk wanneer inhoud van de gebruikersgemeenschap wordt opgeslagen in een [gemeenschappelijk archief](/help/communities/working-with-srp.md).
+  De console van de Moderatie is toegankelijk door beheerders en [gemeenschapsmoderatoren](/help/communities/users.md) in het openbare milieu evenals door beheerders in het auteursmilieu. Dit is mogelijk wanneer inhoud van de gebruikersgemeenschap wordt opgeslagen in een [gemeenschappelijk archief](/help/communities/working-with-srp.md).
 
 * [Moderatie binnen de context](in-context.md)
 
-   De modernisering in het publicatiemilieu kan door beheerders en communautaire moderatoren direct op de pagina worden uitgevoerd waar de inhoud werd gepost.
+  De modernisering in het publicatiemilieu kan door beheerders en communautaire moderatoren direct op de pagina worden uitgevoerd waar de inhoud werd gepost.
 
 ## Moderatiehandelingen {#moderation-actions}
 
@@ -52,29 +52,29 @@ De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhanke
 
 * `Admin`
 
-   Een gebruiker die lid is van [gemeenschapsbeheerders](users.md) groep.
+  Een gebruiker die lid is van [gemeenschapsbeheerders](users.md) groep.
 
 * `Moderator`
 
-   Een lid van een [gemeenschapsmoderatoren](users.md#publishenvironmentusersandgroups) groep (heeft [moderatormachtigingen](in-context.md#moderatorpermissions)).
+  Een lid van een [gemeenschapsmoderatoren](users.md#publishenvironmentusersandgroups) groep (heeft [moderatormachtigingen](in-context.md#moderatorpermissions)).
 
 * `Creator`
 
-   De gebruiker die de inhoud heeft gepost.
+  De gebruiker die de inhoud heeft gepost.
 
 * `Member`
 
-   Een aangemelde gebruiker zonder speciale machtigingen.
+  Een aangemelde gebruiker zonder speciale machtigingen.
 
 * `Visitor`
 
-   Een anonieme gebruiker.
+  Een anonieme gebruiker.
 
 <table>
  <tbody>
   <tr>
    <td> </td>
-   <td><strong>Beheer</strong></td>
+   <td><strong>Beheerder</strong></td>
    <td><strong>Moderator</strong></td>
    <td><strong>Maker</strong></td>
    <td><strong>Lid</strong></td>
@@ -123,7 +123,7 @@ De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhanke
    <td>X<br /> </td>
   </tr>
   <tr>
-   <td><strong>Markering/<br /> Markering ongedaan maken</strong></td>
+   <td><strong>Markering/<br /> Unflag</strong></td>
    <td>X</td>
    <td>X</td>
    <td> </td>
@@ -161,7 +161,7 @@ Door de actie Knippen te selecteren, wordt de inhoud gekopieerd naar een klembor
 
 ![putbackugc](assets/putbackugc.png)
 
-Op de andere locatie, wanneer inhoud op het klembord aanwezig is, wordt naast Nieuwe advertentie een knop Plakken weergegeven met een nummer dat het aantal te plakken posten aangeeft. Met de knop Plakken kunt u het klembord wissen in plaats van plakken.
+Op de andere locatie, wanneer inhoud op het klembord aanwezig is, wordt naast Nieuwe advertentie een knop Plakken weergegeven met een nummer dat het aantal te plakken posten aangeeft. Met de knop Plakken kunt u het klembord wissen in plaats van te plakken.
 
 ![pasteugisch](assets/pasteugc.png)
 
@@ -183,11 +183,11 @@ De close/Reopen actie kan door beheerders of communautaire moderatoren worden ge
 
 ### Markering/markering ongedaan maken {#flag-unflag}
 
-Markering is een manier om aan te geven dat er een probleem is met de inhoud van een bericht, met uitzondering van de maker van de inhoud. Als de markering eenmaal is aangebracht, wordt een pictogram onder vlag weergegeven, zodat hetzelfde lid de markering van de inhoud kan opheffen.
+Markering is een manier om aan te geven dat er een probleem is met de inhoud van een bericht, met uitzondering van de maker van de inhoud. Als deze eenmaal is gemarkeerd, wordt een pictogram voor markering ongedaan gemaakt, zodat hetzelfde lid de markering van de inhoud kan opheffen.
 
 In-context de matiging kan worden gevormd om leden toe te staan om een reden te selecteren wanneer het vlaggen van een post. De lijst van selecteerbare vlagredenen is configureerbaar met inbegrip van al dan niet een douanereden kan zijn ingegaan. De vlaggenreden wordt bewaard met UGC maar de reden veroorzaakt geen bepaalde actie. Alleen het aantal markeringen activeert een melding. Op gemarkeerde inhoud is als zodanig geannoteerd, zodat moderatoren hierop kunnen reageren.
 
-Het systeem houdt alle vlaggen bij, die zijn gemarkeerd en de reden van de vlag en verzendt een gebeurtenis wanneer de drempel is bereikt. Als UGC door een communautaire moderator wordt toegestaan, worden deze vlaggen gearchiveerd. Nadat het toestaan en het archiveren, als er verdere vlaggen zijn, zouden zij worden gearchiveerd alsof er geen vorige vlaggen waren geweest.
+Het systeem houdt alle vlaggen bij, die zijn gemarkeerd en de reden van de vlag en verzendt een gebeurtenis wanneer de drempelwaarde is bereikt. Als UGC door een communautaire moderator wordt toegestaan, worden deze vlaggen gearchiveerd. Nadat het toestaan en het archiveren, als er verdere vlaggen zijn, zouden zij worden gearchiveerd alsof er geen vorige vlaggen waren geweest.
 
 ### Toestaan {#allow}
 
@@ -238,14 +238,14 @@ De waarneming wordt berekend op basis van het aantal positieve en negatieve tref
 
 De sentimentanalyse gebruikt een reeks vooraf geconfigureerde regels en berekent het sentiment van de UGC. De standaardregels worden gevestigd bij: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
 
-De waarde die de regels genereren, ligt tussen 1 (alle negatieve woorden, geen positieve woorden) en 10 (alle positieve woorden, geen negatieve woorden). Een sentimentwaarde van 5 is een neutraal sentiment en is de standaardwaarde.
+De waarde die de regels genereren, ligt tussen 1 (alle negatieve, geen positieve woorden) en 10 (alle positieve, geen negatieve woorden). Een sentimentwaarde van 5 is een neutraal sentiment en is de standaardwaarde.
 
 De regels die in de /libs component worden bepaald zijn:
 
-* Regel 1: Stel waarde in op 1 als er geen positieve woorden en minstens één negatief woord zijn.
-* Regel 2: Stel waarde in op 10 als er geen negatieve woorden en ten minste één positief woord zijn.
-* Regel 3: Stel waarde in op 3 als er meer negatieve woorden zijn dan positieve woorden.
-* Artikel 4: Stel waarde in op 8 als er meer positieve woorden zijn dan negatieve woorden.
+* Regel 1: stel waarde in op 1 als er geen positieve woorden en ten minste één negatief woord zijn.
+* Regel 2: stel de waarde in op 10 als er geen negatieve woorden en ten minste één positief woord zijn.
+* Regel 3: stel waarde in op 3 als er meer negatieve woorden zijn dan positieve woorden.
+* Regel 4: stel de waarde in op 8 als er meer positieve woorden zijn dan negatieve woorden.
 
 Als u regels wilt overschrijven of toevoegen, maakt u een set regels in de map /apps volgens de structuur van de standaardregels. Bewerk de sentimentconfiguratie om de locatie van de regels te bepalen.
 
@@ -276,19 +276,19 @@ sentiment en wachtwoorden configureren:
 
 * **Positieve wachtwoorden**
 
-   Een door komma&#39;s gescheiden lijst met woorden die bijdragen aan een positief sentiment dat de standaardwaarden overschrijft. Standaard is dit een lege lijst.
+  Een door komma&#39;s gescheiden lijst met woorden die bijdragen aan een positief sentiment dat de standaardwaarden overschrijft. Standaard is dit een lege lijst.
 
 * **Negatieve wachtwoorden**
 
-   Een door komma&#39;s gescheiden lijst met woorden die bijdragen aan een negatief sentiment dat de standaardwaarden overschrijft. Standaard is dit een lege lijst.
+  Een door komma&#39;s gescheiden lijst met woorden die bijdragen aan een negatief sentiment dat de standaardwaarden overschrijft. Standaard is dit een lege lijst.
 
 * **Pad naar controlewoordknooppunt expliciet toepassen**
 
-   De locatie in de opslagplaats van een knooppunt dat de standaardinstelling bevat `positive` en `negative` eigenschappen die standaardwachtwoorden opgeven. Standaard is `/libs/settings/community/watchwords/default`.
+  De locatie in de opslagplaats van een knooppunt dat de standaardinstelling bevat `positive` en `negative` eigenschappen die standaardwachtwoorden opgeven. Standaard is `/libs/settings/community/watchwords/default`.
 
 * **Regels voor waarneming**
 
-   De locatie in de opslagplaats van de regels voor het berekenen van sentimenten op basis van positieve en negatieve watchwords. Standaard is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (er is echter niet langer sprake van een workflow).
+  De locatie in de opslagplaats van de regels voor het berekenen van sentimenten op basis van positieve en negatieve watchwords. Standaard is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (er is echter niet langer sprake van een workflow).
 
 Hier volgt een voorbeeld van een aangepast item voor de standaardwachtwoorden, wanneer `Explicit Path to Watchwords Node` is ingesteld op `/libs/settings/community/watchwords/default`.
 

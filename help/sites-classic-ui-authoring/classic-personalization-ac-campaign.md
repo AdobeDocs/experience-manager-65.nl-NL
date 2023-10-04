@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ U kunt e-mailinhoud bewerken in de klassieke gebruikersinterface of in de gebrui
 
 Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 
-* Adobe Campaign-context. Dit zijn velden die u in de tekst kunt invoegen en die worden aangepast aan de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam of gegevens van de doeldimensie).
+* Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam, of om het even welke gegevens van de doelafmeting) zal aanpassen.
 * Adobe Campaign-verpersoonlijkingsblokken. Dit zijn blokken vooraf gedefinieerde inhoud die niet gerelateerd zijn aan de gegevens van de ontvanger, zoals een merklogo of een koppeling naar een spiegel.
 
 Zie [Adobe Campaign-componenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) voor een volledige beschrijving van de onderdelen van de campagne.

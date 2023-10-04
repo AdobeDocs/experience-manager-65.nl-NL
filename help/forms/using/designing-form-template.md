@@ -1,17 +1,13 @@
 ---
 title: Formuliersjablonen ontwerpen voor HTML5-formulieren
-seo-title: Designing form templates for HTML5 forms
-description: AEM Forms biedt de weergave van XFA-formuliersjablonen in de HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met Designer en de HTML5-uitvoermogelijkheden gebruiken.
-seo-description: AEM Forms offers rendering XFA form template to HTML5 format. Form designers can design form templates using Designer and use the HTML5 rendition capability.
-uuid: 4f6b7231-4479-400a-adcd-c68064f06b4e
+description: AEM Forms kan XFA-formuliersjabloon renderen naar HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met Designer en de HTML5-uitvoermogelijkheden gebruiken.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: f2e9dbe4-e210-41f3-8878-2fc4d166e63c
 docset: aem65
 feature: Mobile Forms
 exl-id: 7c8d501f-c953-495e-8bac-1f66fd99c783
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '478'
 ht-degree: 0%
@@ -20,9 +16,9 @@ ht-degree: 0%
 
 # Formuliersjablonen ontwerpen voor HTML5-formulieren{#designing-form-templates-for-html-forms}
 
-De HTML5-formuliercomponent in AEM biedt rendering van XFA-formuliersjabloon naar HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) en gebruik de HTML5-renderingmogelijkheid. Deze formuliersjablonen kunnen samen met hun elementen in AEM opslagplaats, bestandssysteem of beschikbaar worden gemaakt via http. Als u echter van plan bent uw formulieren te beheren met Forms Manager, moeten de sjablonen en middelen zich in de AEM-opslagplaats bevinden.
+De HTML5-formuliercomponent in AEM kan XFA-formuliersjabloon renderen naar HTML5-indeling. Formulierontwerpers kunnen formuliersjablonen ontwerpen met [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) en gebruik de HTML5-renderingmogelijkheid. Deze formuliersjablonen kunnen samen met hun elementen in AEM opslagplaats, bestandssysteem of beschikbaar worden gemaakt via http. Als u echter van plan bent uw formulieren te beheren met Forms Manager, moeten de sjablonen en middelen zich in de AEM-opslagplaats bevinden.
 
-Hoewel HTML5-formulieren grotendeels overeenkomen met het gedrag van de PDF forms, zijn er bepaalde functies in beide indelingen die niet van toepassing zijn op de andere indeling. De manier waarop streepjescodes worden toegepast op een PDF-formulier in Adobe Reader verschilt bijvoorbeeld per mobiel formulier of de manier waarop een formulier digitaal wordt ondertekend, verschilt ook per indeling. Zie voor meer informatie over dergelijke variaties [Onderscheid tussen HTML5-formulieren en PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
+Hoewel HTML5-formulieren grotendeels overeenkomen met het gedrag van de PDF forms, zijn er bepaalde functies in beide indelingen die niet van toepassing zijn op de andere indeling. De manier waarop streepjescodes worden toegepast op een PDF-formulier in Adobe Reader, verschilt bijvoorbeeld per mobiel formulier of de manier waarop een formulier digitaal wordt ondertekend, verschilt ook per indeling. Zie voor meer informatie over dergelijke variaties [Verschil tussen HTML5-formulieren en PDF forms](../../forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 Raadpleeg de volgende aanbevolen procedures en richtlijnen voor het ontwerpen van formulieren die in beide indelingen werken voor algemene XFA-functies.
 

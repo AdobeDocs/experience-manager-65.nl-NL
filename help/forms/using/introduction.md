@@ -1,27 +1,24 @@
 ---
 title: Inleiding tot HTML5-formulieren
 seo-title: Introduction to HTML5 forms
-description: HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager 6.0 (AEM 6.0)-software die weergave van XFA-formuliersjablonen in HTML5-indeling biedt.
-seo-description: HTML5 forms is a new capability in Adobe Experience Manager 6.0 (AEM 6.0) software that offers rendering of XFA form templates in HTML5 format.
-uuid: 63a2f000-c4c5-40e8-ab3f-c7c44c79ec09
+description: HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager 6.0 (AEM 6.0)-software die XFA-formuliersjablonen kan weergeven in de HTML5-indeling.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 672ee050-63d1-46ed-bef2-f55800208d78
 docset: aem65
 feature: Mobile Forms
 exl-id: 0facca18-ffa1-420c-859a-6f1f2c449d71
-source-git-commit: e9f64722ba7df0a7f43aaf1005161483e04142f5
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
 # Inleiding tot HTML5-formulieren{#introduction-to-html-forms}
 
-HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager 6.0 (AEM 6.0)-software die weergave van XFA-formuliersjablonen in HTML5-indeling biedt. Met deze functie wordt de weergave mogelijk van formulieren op mobiele apparaten en desktopbrowsers waarop XFA-gebaseerde PDF niet wordt ondersteund. HTML5-formulieren ondersteunen niet alleen de bestaande mogelijkheden van XFA-formuliersjablonen, maar voegen ook nieuwe mogelijkheden toe, zoals een krabbelhandtekening, voor mobiele apparaten.
+HTML5-formulieren zijn een nieuwe functie in Adobe Experience Manager 6.0 (AEM 6.0)-software die XFA-formuliersjablonen kan weergeven in de HTML5-indeling. Met deze functie wordt de weergave mogelijk van formulieren op mobiele apparaten en desktopbrowsers waarop XFA-gebaseerde PDF niet wordt ondersteund. HTML5-formulieren ondersteunen niet alleen de bestaande mogelijkheden van XFA-formuliersjablonen, maar voegen ook nieuwe mogelijkheden toe, zoals een krabbelhandtekening, voor mobiele apparaten.
 
-Met HTML5-formulieren worden documenten gegenereerd op basis van standaard HTML5-constructies. U kunt HTML5-formulieren weergeven in alle moderne browsers die HTML 25 ondersteunen. Hiervoor hoeft u geen extra browserplug-ins voor de browsers te installeren. Voor meer informatie over ondersteunde browsers raadpleegt u [Ondersteunde clientplatforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
+Met HTML5-formulieren worden documenten gegenereerd op basis van standaard HTML5-constructies. U kunt HTML5-formulieren weergeven in alle moderne browsers die HTML 25 ondersteunen. Hiervoor hoeft u geen extra browserplug-ins voor de browsers te installeren. Zie voor meer informatie over ondersteunde browsers [Ondersteunde clientplatforms](https://adobe.com/go/learn_aemforms_supportedplatforms_63).
 
 ![HTML5-formuliervoorbeeld](do-not-localize/mobile_form_on_an_ipad_date_14.png)
 

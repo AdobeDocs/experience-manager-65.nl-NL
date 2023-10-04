@@ -1,16 +1,12 @@
 ---
 title: Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld
-seo-title: Files to back up and recover
 description: In dit document worden de toepassing en gegevensbestanden beschreven waarvan een back-up moet worden gemaakt.
-seo-description: This document describes the application and data files that must be backed up.
-uuid: ba04adb9-675a-48f2-ad52-39c1266e423b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2072'
 ht-degree: 0%
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 # Bestanden waarvan een back-up moet worden gemaakt en die moeten worden hersteld {#files-to-back-up-and-recover}
 
-De toepassing en gegevensbestanden waarvan een back-up moet worden gemaakt, worden in de volgende secties nader beschreven.
+De toepassings- en gegevensbestanden waarvan een back-up moet worden gemaakt, worden in de volgende secties gedetailleerder beschreven.
 
 Overweeg de volgende punten met betrekking tot back-up en herstel:
 
@@ -80,7 +76,7 @@ AEM Forms Workspace past de mogelijkheden van de Flex Workspace (Verouderd voor 
 >
 >De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
-Hierdoor is taakbeheer mogelijk voor clients zonder Flash Player en Adobe Reader. Het vergemakkelijkt de uitvoering van HTML Forms, naast PDF forms en Flex-formulieren.
+Hierdoor is taakbeheer op clients zonder Flash Player en Adobe Reader mogelijk. Het vergemakkelijkt de uitvoering van HTML Forms, naast PDF forms en Flex-formulieren.
 
 ## AEM formulierdatabase {#aem-forms-database}
 
@@ -92,7 +88,7 @@ Als u een back-up van de database in real-time wilt maken, moet u de modus Momen
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Levenscyclusdocument van product Adoben](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ### DB2 {#db2}
 
@@ -100,7 +96,7 @@ Vorm uw DB2 gegevensbestand om op de wijze van het archieflogboek te lopen.
 
 >[!NOTE]
 >
->Als de omgeving van uw AEM formulieren is geüpgraded vanaf een eerdere versie van AEM formulieren en DB2 gebruikt, wordt online back-up niet ondersteund. In dit geval moet u AEM formulieren sluiten en een offlineback-up uitvoeren. Toekomstige versies van AEM formulieren ondersteunen online back-ups voor klanten van upgrades.
+Als de omgeving van uw AEM formulieren is geüpgraded vanaf een eerdere versie van AEM formulieren en DB2 gebruikt, wordt online back-up niet ondersteund. In dit geval moet u AEM formulieren sluiten en een offlineback-up uitvoeren. Toekomstige versies van AEM formulieren ondersteunen online back-ups voor klanten van upgrades.
 
 IBM beschikt over een reeks tools en Help-systemen waarmee databasebeheerders hun back-up- en hersteltaken kunnen beheren:
 
@@ -111,7 +107,7 @@ DB2 heeft ingebouwde mogelijkheden aan file een gegevensbestand aan de Manager v
 
 ### Oracle {#oracle}
 
-Maak back-ups van momentopnamen of configureer de database van het Oracle voor uitvoering in de archieflogmodus. (Zie [Back-up van oracle: Een inleiding](https://www.databasedesign-resource.com/oracle-backup.md).) Voor meer informatie over het steunen van en het terugkrijgen van uw gegevensbestand van het Oracle, ga naar deze plaatsen:
+Maak back-ups van momentopnamen of configureer de database van het Oracle voor uitvoering in de archieflogmodus. (Zie [Back-up van oracle: een introductie](https://www.databasedesign-resource.com/oracle-backup.md).) Voor meer informatie over het steunen van en het terugkrijgen van uw gegevensbestand van het Oracle, ga naar deze plaatsen:
 
 [Back-up en herstel van oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken voor het gebruiken van de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en het melden in detail, evenals het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
 
@@ -136,9 +132,9 @@ Gebruik MySQLAdmin of wijzig de INI dossiers in Vensters om uw gegevensbestand t
 
 >[!NOTE]
 >
->De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe: `binlog_format=mixed log-bin=logname`
+De standaard binaire registrerenwijze voor MySQL is &quot;Verklaring&quot;, die met lijsten onverenigbaar is die door de Diensten van de Inhoud (Vervangen) worden gebruikt. Het gebruiken van binair het registreren op deze standaardwijze veroorzaakt de Diensten van de Inhoud (Vervangen) om te ontbreken. Als uw systeem Inhoudsdiensten (Afgekeurd) omvat, gebruik &quot;Gemengd&quot;registrerenwijze. Om het &quot;Gemengd&quot;registreren toe te laten, voeg het volgende argument aan het my.ini- dossier toe: `binlog_format=mixed log-bin=logname`
 
-U kunt het mysqldump-hulpprogramma gebruiken om de volledige databaseback-up te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd neemt veel tijd in beslag. Als u een incrementele back-up wilt maken, moet u de server starten met de - `log-bin` zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met dwingen `FLUSH LOGS SQL` gebruiken. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de `flush-logs` gebruiken, waarmee het volgende logbestand wordt gemaakt.
+U kunt het mysqldump-hulpprogramma gebruiken om de volledige back-up van de database te verkrijgen. Volledige back-ups zijn vereist, maar ze zijn niet altijd handig. Ze produceren grote back-upbestanden en het genereren van tijd duurt langer. Als u een incrementele back-up wilt maken, moet u de server starten met de - `log-bin` zoals beschreven in de vorige sectie. Telkens als de server MySQL opnieuw begint, houdt het het schrijven aan het huidige binaire logboek op, leidt tot nieuwe en, van toen, wordt nieuwe. U kunt een schakelaar manueel met dwingen `FLUSH LOGS SQL` gebruiken. Na de eerste volledige back-up worden de volgende incrementele back-ups uitgevoerd met behulp van het mysqladmin-hulpprogramma met de `flush-logs` gebruiken, waarmee het volgende logbestand wordt gemaakt.
 
 Zie [Samenvatting van back-upstrategie](https://dev.mysql.com/doc/refman/5.5/en/backup-strategy-summary.html).
 
@@ -193,10 +189,10 @@ De standaardlocatie voor de hoofdmap van de index is `[aem-forms root]/lucene-in
 
 ## Door de klant geïnstalleerde lettertypen {#customer-installed-fonts}
 
-Als u aanvullende lettertypen hebt geïnstalleerd op uw AEM, moet u er een afzonderlijk back-up van maken. Maak een back-up van alle mappen met lettertypen voor Adobe en klanten die zijn opgegeven in de beheerconsole onder Instellingen > Core System > Configurations. Zorg ervoor dat u een back-up maakt van de volledige lettertypemap.
+Als u aanvullende lettertypen hebt geïnstalleerd op uw AEM, moet u er een afzonderlijk back-up van maken. Maak een back-up van alle mappen met Adoben en klantlettertypen die in de beheerconsole zijn opgegeven onder Instellingen > Core System > Configurations. Zorg ervoor dat u een back-up maakt van de volledige lettertypemap.
 
 >[!NOTE]
 >
->Standaard bevinden de met AEM formulieren geïnstalleerde Adobe-lettertypen zich in de `[aem-forms root]/fonts` directory.
+De Adobe van lettertypen die met AEM formulieren zijn geïnstalleerd, bevindt zich standaard in de map `[aem-forms root]/fonts` directory.
 
 Als u het besturingssysteem op de hostcomputer opnieuw initialiseert en u de lettertypen van het vorige besturingssysteem wilt gebruiken, moet ook een back-up worden gemaakt van de inhoud van de systeemmap met lettertypen. (Raadpleeg de documentatie bij het besturingssysteem voor specifieke instructies.)

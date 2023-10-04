@@ -12,9 +12,9 @@ discoiquuid: 9fef1f91-a222-424a-8e20-3599bedb8b41
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 exl-id: 419d2e19-1198-4ab5-9aa0-02ad18fe171d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '800'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Maak een apparaatgroepfilter om een set vereisten voor apparaatmogelijkheden te definiëren. Maak zoveel filters als u nodig hebt om de benodigde groepen apparaatmogelijkheden als doel in te stellen.
 
@@ -179,19 +179,19 @@ De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken.
 
 **Insteekmodules:**
 
-* Apache Maven Compiler Plugin: Compileert Java-klassen uit broncode.
-* Apache Felix Maven Bundle Plugin: Maakt de bundel en het manifest
-* Apache Felix Maven SCR-insteekmodule: Creeert het dossier van de componentenbeschrijver en vormt de dienst-component duidelijke kopbal.
+* Apache Maven Compiler Plugin: compileert Java-klassen uit broncode.
+* Apache Felix Maven Bundle Plugin: maakt de bundel en het manifest
+* Apache Felix Maven SCR Insteekmodule: Creeert het dossier van de componentenbeschrijver en vormt de dienst-component duidelijke kopbal.
 
 **Afhankelijkheden:**
 
-* `cq-wcm-mobile-api-5.5.2.jar`: Verstrekt de interfaces DeviceGroup en DeviceGroupFilter.
+* `cq-wcm-mobile-api-5.5.2.jar`: Biedt de interfaces DeviceGroup en DeviceGroupFilter.
 
 * `org.apache.felix.scr.annotations.jar`: Verstrekt de Annotaties van de Component en van de Dienst.
 
-De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen bij de openbare Adobe-opslagplaats.
+De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen bij de openbare opslagplaats voor Adoben.
 
-Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. Adobe webconsole gebruiken ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) om ervoor te zorgen dat dit de bundelversie is die in uw omgeving wordt geïmplementeerd.
+Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. Webconsole Adobe gebruiken ([https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles)) om ervoor te zorgen dat dit de bundelversie is die in uw omgeving wordt geïmplementeerd.
 
 **POM:** (Uw POM gebruikt een andere groupId en versie.)
 
@@ -258,4 +258,4 @@ Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die 
 </project>
 ```
 
-Voeg het profiel toe dat de [De insteekmodule voor het inhoudspakket verkrijgen](/help/sites-developing/vlt-mavenplugin.md) biedt het bestand met instellingen die u hebt toegewezen aan het gebruik van de openbare opslagplaats voor Adobe.
+Voeg het profiel toe dat de [De insteekmodule voor het inhoudspakket verkrijgen](/help/sites-developing/vlt-mavenplugin.md) biedt uw &#39;maven&#39;-instellingenbestand de mogelijkheid om de opslagplaats voor openbare Adoben te gebruiken.

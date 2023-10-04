@@ -1,15 +1,15 @@
 ---
 title: PhoneGap
-description: Deze pagina fungeert als beginpunt voor het ontwikkelen van toepassingen met PhoneGap Enterprise met AEM. AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina's. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee de gebruiker met de inhoud kan werken.
+description: Deze pagina fungeert als beginpunt voor het ontwikkelen van toepassingen met PhoneGap Enterprise met AEM. AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina's. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee gebruikers met de inhoud kunnen werken.
 uuid: c6ac02fa-d41c-4b57-95d8-171a96540dd6
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: bc61e495-b53b-49c5-99e5-c2e35873e6bd
 exl-id: 9a97e11b-a683-490a-ab7b-158de32984ef
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
-AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee de gebruiker met de inhoud kan werken. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps.
+AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee gebruikers met de inhoud kunnen werken. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ De volgende bronnen helpen u aan de slag te gaan met AEM Mobile via Adobe PhoneG
 * [Mobiel met inhoudssynchronisatie](/help/mobile/phonegap-contentsync.md)
 * [Paginasjablonen](/help/mobile/phonegap-apps-arch-page-templates.md)
 
-* [AEM Mobile Content Services: Een overzicht](/help/mobile/develop-content-as-a-service.md)
+* [AEM Mobile Content Services: An Overview](/help/mobile/develop-content-as-a-service.md)
 
    * Om de Diensten van de Inhoud en Modellen van Gegevens toe te laten, zie [Inhoudsservices beheren](/help/mobile/developing-content-services.md)
    * Ga voor meer informatie over het maken van modellen naar [Modellen ontwikkelen](/help/mobile/administer-mobile-apps.md)

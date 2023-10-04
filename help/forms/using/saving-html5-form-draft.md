@@ -10,9 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 feature: Mobile Forms
 exl-id: a9879445-d626-4279-8a95-a9009294b483
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '299'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Opslaan als concept inschakelen voor uw bestaande [aangepast profiel](/help/form
    <td>mfAllowFPDraft</td>
    <td>String</td>
    <td>true</td>
-   <td><p>Hiermee wordt de functie Opslaan als concept ingeschakeld</p> <p>voor dit profiel.</p> </td>
+   <td><p>Hiermee wordt het opslaan als concept ingeschakeld</p> <p>voor dit profiel.</p> </td>
   </tr>
   <tr>
    <td>mfAllowAttachments</td>
@@ -52,7 +52,7 @@ Opslaan als concept inschakelen voor uw bestaande [aangepast profiel](/help/form
 
 ## Opslag en aanbieding opstellen {#drafts-storage-and-listing}
 
-Nadat u de functie Opslaan als concept hebt ingeschakeld voor een formulier; wanneer het formulier wordt opgeslagen, wordt het weergegeven in het dialoogvenster [Concepten en verzendingscomponent](/help/forms/using/draft-submission-component.md). U kunt het opgeslagen formulier ophalen en invullen met de component Concept en Verzending.
+Nadat u de functie Opslaan als concept hebt ingeschakeld voor een formulier, wordt het formulier weergegeven in het dialoogvenster [Concepten en verzendingscomponent](/help/forms/using/draft-submission-component.md). U kunt het opgeslagen formulier ophalen en invullen met de component Concept en Verzending.
 
 Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding in te schakelen voor de component Concept en Verzending:
 

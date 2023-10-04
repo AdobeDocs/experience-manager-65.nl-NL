@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '2327'
 ht-degree: 0%
@@ -23,7 +23,7 @@ AEM biedt een console voor het beheer van de verschillende vertalingen van tekst
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Met het gereedschap Vertaal kunt u tekenreeksen in het Engels en de bijbehorende vertalingen beheren. De woordenboeken worden gemaakt in de opslagplaats, bijvoorbeeld /apps/mijnproject/i18n.
+Gebruik het gereedschap Vertaler voor het beheren van Engelse tekenreeksen en de bijbehorende vertalingen. De woordenboeken worden gemaakt in de opslagplaats, bijvoorbeeld /apps/mijnproject/i18n.
 
 Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Als u pagina of door de gebruiker gegenereerde inhoud wilt vertalen, raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md) en [Vertaling van door de gebruiker gegenereerde inhoud](/help/communities/translate-ugc.md).
 
@@ -55,7 +55,7 @@ Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen a
 
 1. Vul de velden naar wens in en klik op OK. ![chlimage_1-208](assets/chlimage_1-208.png)
 
-1. U kunt nu **OK** of raadpleeg het doelwoordenboek.
+1. U kunt nu op **OK** of raadpleeg het doelwoordenboek.
 
    >[!NOTE]
    >
@@ -164,7 +164,7 @@ Gebruik de volgende procedure om een tekenreeks in een woordenboek te wijzigen.
 Gebruik de volgende procedure om een tekenreeks uit een woordenboek te verwijderen.
 
 1. Selecteer in het vervolgkeuzemenu Woordenboeken het woordenboek waaruit u een tekenreeks verwijdert.
-1. Klik op Verwijderen.
+1. Klik verwijderen.
 
    ![chlimage_1-213](assets/chlimage_1-213.png)
 
@@ -179,13 +179,13 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
 * **Filteren op tekst:** Een patroon dat overeenkomt met de Engelse tekenreeks, opmerking of vertalingen. Alleen items die overeenkomen met het patroon of een deel ervan, worden weergegeven in de tabel.
 * **Wijzigingen: Willekeurig, Gewijzigd, Nieuw, Verwijderd:** Items weergeven die zijn gewijzigd en niet zijn opgeslagen.
 
-   * Willekeurig: Items weergeven die zijn gewijzigd, toegevoegd of verwijderd.
-   * Gewijzigd: Items weergeven die zijn gewijzigd.
-   * Nieuw: Items weergeven die zijn toegevoegd.
-   * Verwijderd: Items weergeven die moeten worden verwijderd.
-   * Meerdere selecties: Items weergeven die alle geselecteerde eigenschappen hebben.
+   * Willekeurig: items tonen die zijn gewijzigd, toegevoegd of verwijderd.
+   * Gewijzigd: items tonen die zijn gewijzigd.
+   * Nieuw: items tonen die zijn toegevoegd.
+   * Verwijderd: items tonen die moeten worden verwijderd.
+   * Meerdere selecties: items tonen met alle geselecteerde eigenschappen.
 
-* **Heeft opmerking**: Items met opmerkingen voor vertalers weergeven.
+* **Heeft opmerking**: Toon punten die commentaren voor vertalers hebben.
 * **Ontbrekende vertalingen:** Toon punten waar minstens één taal geen vertaling heeft.
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
@@ -196,7 +196,7 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
 
 ### Vertaalde tekenreeksen bewerken {#editing-translated-strings}
 
-Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt ook [het woordenboek exporteren](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) om de vertaling door een derde te laten vertalen.
+Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt [het woordenboek exporteren](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) om de vertaling door een derde te laten vertalen.
 
 1. Selecteren [uw projectspecifiek woordenboek](#creating-a-dictionary) zoals het het pad in de opslagplaats met de vertalingen aangeeft. Selecteer bijvoorbeeld **Woordenboeken** als:
 
@@ -208,7 +208,7 @@ Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertal
    >
    >AEM systeemwoordenboeken zijn ook beschikbaar in dit hulpmiddel. Wijzig de AEM systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de interface van de AEM. Ook, kunnen de veranderingen bij verbetering worden verloren. AEM systeemwoordenboeken bevinden zich onder `/libs`.
 
-1. Als u de vertaalde teksten voor een van de tekenreeksen wilt bewerken, kunt u het volgende doen:
+1. Als u de vertaalde teksten voor een van de tekenreeksen wilt bewerken, kunt u:
 
    * Dubbelklik op de gewenste taal voor de vereiste tekenreeks om die ene tekst te bewerken:
 
@@ -226,7 +226,7 @@ Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertal
 
 ## Vertalers van derden gebruiken {#using-third-party-translators}
 
-Ter ondersteuning van het gebruik van externe vertaalservices kunt u met het gereedschap Vertaling woordenboeken exporteren en importeren.
+Ter ondersteuning van het gebruik van vertaalservices van derden kunt u met het gereedschap Vertaling woordenboeken exporteren en importeren.
 
 ### Woordenboek exporteren {#exporting-a-dictionary}
 
@@ -261,7 +261,7 @@ Importeer een XLIFF-bestand in een woordenboek om het woordenboek te vullen. Als
 
 1. Het gereedschap Vertalen openen `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Klik op Importeren > XLIFF-vertalingen.
-1. Selecteer het bestand dat u wilt importeren en klik op OK.
+1. Selecteer het te importeren bestand en klik op OK.
 
 ## Ondersteunde talen beheren {#managing-supported-lanuages}
 
@@ -353,7 +353,7 @@ De standaarddefinities wijzigen:
 
    `/apps/wcm/core/resources/languages`
 
-   Dan veranderend of breidt de lijst daar uit. De eigenschap `defaultCountry` op een taalknooppunt (bijvoorbeeld `ja`) moet de volledige code bevatten, zoals `ja_jp`, die `jp` als het standaardland voor de taal `ja`.
+   Vervolgens wijzigt of verlengt u de lijst daar. De eigenschap `defaultCountry` op een taalknooppunt (bijvoorbeeld `ja`) moet de volledige code bevatten, zoals `ja_jp`, die `jp` als het standaardland voor de taal `ja`.
 
 1. Werk de **WCM-taalbeheer voor CQ**.
 

@@ -1,16 +1,12 @@
 ---
 title: Toepassingen importeren en beheren
-seo-title: Import and manage applications
 description: Leer hoe u toepassingen kunt importeren en beheren.
-seo-description: Learn how to import and manage applications.
-uuid: 7fba6c4e-1a3e-4a4b-9201-acf2ff66a9df
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '820'
 ht-degree: 0%
@@ -39,11 +35,11 @@ Met het tabblad Toepassingen kunt u toepassingen importeren en beheren die in Wo
 ## Een toepassing of archief importeren {#import-an-application-or-archive}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Toepassingsbeheer.
-1. Klik op Importeren.
+1. Klik op Import.
 1. Klik op Bladeren en selecteer het .lca-bestand dat u wilt importeren en klik op Voorvertoning. Op de pagina Voorvertoning toepassing wordt informatie over de toepassing weergegeven.
 1. (Optioneel) Als u een lijst wilt weergeven met de elementen in de toepassing, klikt u op Elementen weergeven.
 1. (Optioneel) Als u de elementen in de runtime wilt implementeren, selecteert u Elementen bij het importeren in runtime implementeren. Als u deze optie niet selecteert, kunt u de elementen later implementeren.
-1. Klik op Importeren. De toepassing wordt weergegeven op het tabblad Toepassingen.
+1. Klik op Import. De toepassing wordt weergegeven op het tabblad Toepassingen.
 1. Meld u aan bij de CRX-opslagplaats met beheerdersreferenties.
 1. Navigeren naar inhoud/dam/toepassingen
 
@@ -89,7 +85,7 @@ Als een toepassingsbeheerder de runtime configuratie voor een toepassing heeft u
 1. Klik op de naam van de toepassing.
 1. Klik op Runtime Config importeren.
 1. Klik op Bladeren en selecteer het XML-bestand dat de runtimeconfiguratie bevat.
-1. Klik op Importeren.
+1. Klik op Import.
 
 ## De runtimeconfiguratie van een toepassing exporteren {#export-an-application-s-runtime-configuration}
 
@@ -110,7 +106,7 @@ U kunt ook een gescripte implementatie gebruiken om toepassingsbestanden in te v
 
 De plaatsing Scripted elimineert de behoefte om montages in het productiemilieu manueel aan te passen alvorens opgezette toepassingen te beginnen.
 
-1. Van een bevelherinnering, navigeer aan *[basis van em-formulieren]*/sdk/misc/Foundation/ArchiveManagement.
+1. Van een bevelherinnering, navigeer aan *[basis van aem-formulieren]*/sdk/misc/Foundation/ArchiveManagement.
 1. Controleer het bestand ReadMe.txt voor meer gedetailleerde instructies.
 1. Wijzig handmatig de bestanden scriptedDeploy.bat en sample-files/sample.xml, zoals beschreven in het bestand readme.txt.
 1. Voer het bestand scriptedDeploy.bat uit. Met deze actie implementeert u het archiefbestand voor AEM formulieren met de overschrijvingsinstellingen.

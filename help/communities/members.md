@@ -1,15 +1,13 @@
 ---
 title: Leden en groepen beheerconsoles
 description: Toegang tot leden en groepen beheerconsoles
-uuid: 2e93e861-a066-4189-91db-f8b784bc5aea
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ccabf301-b417-48aa-8501-8360fd9f3e36
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 201c87da1316944e594ade6d95800326b1e6667c
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '915'
 ht-degree: 0%
@@ -25,11 +23,11 @@ Voor AEM Communities-functies moeten bezoekers van de site vaak worden geregistr
 
 ### Leden (gebruikers) voor publicatie {#members-users-on-publish}
 
-Gebruikend de leden en de Groepen van de Gemeenschappen consoles, leden en leden die in *publish* kan worden gecreëerd en beheerd vanuit de *auteur* milieu. Dit is alleen mogelijk wanneer de [tunneldienst](deploy-communities.md#tunnel-service-on-author) is ingeschakeld.
+Gebruikend de leden en de Groepen van de Gemeenschappen consoles, leden en lidgroepen die in *publish* milieu kan van het *auteur* milieu. Dit is alleen mogelijk wanneer de [tunneldienst](deploy-communities.md#tunnel-service-on-author) is ingeschakeld.
 
 ### Gebruikers op auteur {#users-on-author}
 
-Voor het beheer van gebruikers en groepen die zijn geregistreerd in het *auteur* -omgeving is noodzakelijk om de beveiligingsconsole van het platform te kunnen gebruiken:
+Voor het beheer van gebruikers en groepen die zijn geregistreerd in het *auteur* -omgeving, is het noodzakelijk de beveiligingsconsole van het platform te gebruiken:
 
 * Selecteer bij globale navigatie de optie **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 * Selecteer bij globale navigatie de optie **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]**.
@@ -63,11 +61,11 @@ Selecteer het zoekpictogram aan de linkerkant van het dialoogvenster `Members` o
 
 ### Statistieken van de lidstaten {#member-statistics}
 
-De kolommen die worden weergegeven `Views`, `Posts`, `Follows` en `Likes` worden bijgewerkt wanneer de gebruiker lid is van een of meer communitysites met Adobe Analytics [enabled](sites-console.md#analytics).
+De kolommen weergeven `Views`, `Posts`, `Follows` en `Likes` worden bijgewerkt wanneer de gebruiker lid is van een of meer communitysites met Adobe Analytics [enabled](sites-console.md#analytics).
 
 ### CSV exporteren {#export-csv}
 
-Het selecteren van `Export CSV` Als u een koppeling maakt, worden alle leden gedownload als een lijst met door komma&#39;s gescheiden waarden die u kunt importeren in een spreadsheet.
+De `Export CSV` Als u een koppeling maakt, worden alle leden gedownload als een lijst met door komma&#39;s gescheiden waarden die u kunt importeren in een spreadsheet.
 
 De kolomkoppen zijn
 
@@ -147,7 +145,7 @@ Het lid kan aan een of meer ledengroepen worden toegevoegd. Voer eerst tekst in 
 
 ### Tabblad BADGES {#badges-tab}
 
-De `BADGES` biedt de mogelijkheid om handmatig badges toe te wijzen en deze in te trekken. De badges kunnen voor toegewezen rollen evenals badges typisch worden verdiend.
+De `BADGES` biedt de mogelijkheid om handmatig badges toe te wijzen en in te trekken. De badges kunnen voor toegewezen rollen evenals badges typisch worden verdiend.
 
 Zie ook [Scores en badges](implementing-scoring.md).
 

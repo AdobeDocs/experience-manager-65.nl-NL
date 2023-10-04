@@ -1,16 +1,13 @@
 ---
 title: Barcoded Forms Service Java APIQuick Start (SOAP)
-seo-title: Barcoded Forms Service Java APIQuick Start(SOAP)
 description: Barcoded Forms Service Java APIQuick Start (SOAP)
-uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: 245b9cc4-5837-4a22-b5f4-a1d4c5d66918
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -21,7 +18,7 @@ ht-degree: 0%
 
 Java API Quick Start (SOAP) is beschikbaar voor de Barcoded Forms-service:
 
-[Snel starten (SOAP-modus): Gecodeerde formuliergegevens decoderen met de Java API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met de Java API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
@@ -29,9 +26,9 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 >
 >Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Gecodeerde formuliergegevens decoderen met de Java API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met de Java API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` in een `com.adobe.idp.Document` object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` object in een `com.adobe.idp.Document` object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -114,7 +111,7 @@ De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-f
          ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps);
          BarcodedFormsServiceClient barClient = new BarcodedFormsServiceClient(myFactory);
  
-         //Specify a PDF document to convert to a XDP file
+         //Specify a PDF document to convert to an XDP file
          FileInputStream fileInputStream = new FileInputStream("C:\\Adobe\LoanBarForms.pdf");
          Document inDoc = new Document (fileInputStream);
  
@@ -220,4 +217,4 @@ De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-f
 
 >[!NOTE]
 >
->Wanneer u zowel een `org.w3c.dom.Document` en `com.adobe.idp.Document` in dezelfde toepassingslogica, is het een goede gewoonte om beide objecten volledig te kwalificeren.
+>Wanneer u zowel een `org.w3c.dom.Document` object en `com.adobe.idp.Document` in dezelfde toepassingslogica, is het een goede gewoonte om beide objecten volledig te kwalificeren.

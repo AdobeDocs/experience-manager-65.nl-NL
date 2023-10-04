@@ -11,20 +11,20 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
 workflow-type: tm+mt
-source-wordcount: '785'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
 
 # Gebruikersinterface Recommendations voor klanten{#user-interface-recommendations-for-customers}
 
-Adobe Experience Manager wordt geleverd met twee UI&#39;s: de Unified Experience Cloud UI (ook wel de interface met aanraakbediening genoemd) en de klassieke UI.
+Adobe Experience Manager wordt geleverd met twee UI&#39;s: de interface voor één Experience Cloud (ook wel de interface met aanraakbediening genoemd) en de klassieke UI.
 
 Dit document is bedoeld om klanten te helpen een keuze te maken over welke interface ze moeten gebruiken, afhankelijk van hun situatie.
 
-Belangenvoorwaarden:
+Belangenbeding:
 
 * **UI (of standaardinterface)**
 Moderne gebruikersinterface die in 5.6.0 als technologievoorproef werd geïntroduceerd en in verdere versies werd uitgebreid. De interface is gebaseerd op de ervaring van één gebruiker voor de Adobe Experience Cloud, die voorheen wel een interface met aanraakbediening of een interface met aanraakbediening werd genoemd.
@@ -46,13 +46,13 @@ Mogelijkheid om informatie over de bezoeker samen te voegen en voor verschillend
 
 ## Algemeen {#general}
 
-In de afgelopen jaren heeft Adobe alle Adobe Experience Cloud-oplossingen bijgewerkt met één gebruikersinterface. Gebruikers in de Experience Cloud-oplossingen genieten van een consistente ervaring met gangbare patronen voor het gebruik en het gebruik van de toepassingen. Met elke versie, heeft Adobe het gebruikersinterface verfijnd die op terugkoppelen van klanten wordt gebaseerd die over de diverse oplossingen werken.
+In de afgelopen jaren heeft Adobe alle Adobe Experience Cloud-oplossingen bijgewerkt met één gebruikersinterface. De gebruikers over de oplossingen van de Experience Cloud genieten een verenigbare ervaring met gemeenschappelijke patronen op hoe te om de toepassingen te gebruiken en in werking te stellen. Met elke versie, heeft de Adobe het gebruikersinterface verfijnd die op terugkoppelen van klanten wordt gebaseerd die over de diverse oplossingen werken.
 
 De oorspronkelijke gebruikersinterface voor Adobe Experience Manager (voorheen CQ5 genoemd), die in 2008 werd geïntroduceerd en door klanten met versies 5.0-5.6.1 werd gebruikt, staat in AEM 6.5. Dit garandeert dat klanten een update naar versie 6.5 kunnen uitvoeren en kunnen profiteren van een bijgewerkt platform met nieuwe mogelijkheden en dezelfde gebruikersinterface kunnen blijven gebruiken.
 
-Adobe raadt klanten aan om in 2018/2019 over te schakelen naar de nieuwe interface. Dit kan of tijdens de update aan 6.5 - of in een afzonderlijke projecten na de update worden gedaan, die de noodzakelijke aanpassingen aan de aanpassingen en componentendialogen zou omvatten.
+Adobe raadt klanten aan om in 2018/2019 over te schakelen op de nieuwe interface. Dit kan of tijdens de update aan 6.5 - of in een afzonderlijke projecten na de update worden gedaan, die de noodzakelijke aanpassingen aan de aanpassingen en componentendialogen zou omvatten.
 
-De klassieke gebruikersinterface is vervangen door AEM 6.4 en Adobe is niet van plan om verdere verbeteringen aan te brengen in de klassieke gebruikersinterface. Merk op dat Klassieke UI volledig wordt gesteund terwijl wordt afgekeurd.
+De klassieke gebruikersinterface is vervangen door AEM 6.4 en de Adobe is niet van plan verdere verbeteringen aan te brengen in de klassieke gebruikersinterface. Merk op dat Klassieke UI volledig wordt gesteund terwijl wordt afgekeurd.
 
 ### Regels en Recommendations {#rules-and-recommendations}
 
@@ -73,7 +73,7 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
    <td>
     <ol>
      <li>Bijwerken naar 6.5</li>
-     <li>De standaardinterface gebruiken voor sitebeheer, elementen, ... enz.<br /> </li>
+     <li>De standaardinterface gebruiken voor sitebeheer, elementen.. enz.<br /> </li>
      <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
@@ -85,12 +85,12 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
    <td>
     <ol>
      <li>Bijwerken naar 6.5</li>
-     <li>De standaardinterface gebruiken voor sitebeheer, elementen, ... enz.</li>
+     <li>De standaardinterface gebruiken voor sitebeheer, elementen.. enz.</li>
      <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Gebruikersinterface selecteren</a>.</li>
     </ol> <p>In een tweede fase:</p>
     <ol>
      <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de <a href="/help/sites-developing/modernization-tools.md">AEM moderniseringsinstrumenten</a> om de componenten bij te werken.</li>
-     <li>Vorm ContextHub (de vervanging voor ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. Merk op dat ContextHub een verenigbaarheidswijze heeft die het laden van douaneClientContext opslag toestaat.</li>
+     <li>Vorm ContextHub (de vervanging voor de ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. Merk op dat ContextHub een verenigbaarheidswijze heeft die het laden van de opslag van de douaneClientContext toestaat.</li>
     </ol> </td>
   </tr>
   <tr>
@@ -102,7 +102,7 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
 
 ### Veelgestelde vragen {#faq}
 
-Zie het artikel in de Knowledge Base. [Veelgestelde vragen over Touch UI-authoring](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html)voor nadere bijzonderheden; met inbegrip van om het even welke informatie over het afschilderingsprogramma voor klassieke UI.
+Zie het artikel in de Knowledge Base. [Veelgestelde vragen over Touch UI-authoring](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), voor meer informatie; inclusief informatie over het afbraakschema voor de klassieke interface.
 
 ### Gebruikersinterface selecteren {#selecting-your-ui}
 

@@ -2,7 +2,7 @@
 title: Uw inhoud bijwerken via AEM Assets API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u de REST API kunt gebruiken om toegang te krijgen tot de inhoud van de Content Fragments en deze bij te werken.
 exl-id: af29cb77-0210-4fc4-8d86-2a833d19b49f
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1066'
 ht-degree: 1%
@@ -180,7 +180,7 @@ Assets can have multiple renditions. These are typically exposed as child entiti
 
 ## Elementen HTTP API en inhoudsfragmenten {#assets-http-api-content-fragments}
 
-Inhoudsfragmenten worden gebruikt voor levering zonder kop en een inhoudsfragment is een speciaal type element. Zij worden gebruikt om tot gestructureerde gegevens, zoals teksten, aantallen, data toegang te hebben.
+Inhoudsfragmenten worden gebruikt voor levering zonder kop en een inhoudsfragment is een speciaal type element. Ze worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, getallen, datums.
 
 <!--
 As there are several differences to *standard* assets (such as images or audio), some additional rules apply to handling them.

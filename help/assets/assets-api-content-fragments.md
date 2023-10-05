@@ -5,7 +5,7 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1956'
 ht-degree: 1%
@@ -220,7 +220,7 @@ Elementen kunnen meerdere uitvoeringen hebben. Deze worden doorgaans weergegeven
 
 ### Contentfragmenten {#content-fragments}
 
-A [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals teksten, getallen, datums.
+A [inhoudsfragment](/help/assets/content-fragments/content-fragments.md) is een speciaal soort actief. Ze kunnen worden gebruikt om onder andere toegang te krijgen tot gestructureerde gegevens, zoals tekst, getallen, datums.
 
 Aangezien er verschillende verschillen zijn tussen *standaard* elementen (zoals afbeeldingen of audio). Voor de afhandeling ervan gelden enkele aanvullende regels.
 

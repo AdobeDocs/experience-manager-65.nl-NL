@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 2bae11eafb875f01602c39c0dba00a888e11391a
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '794'
 ht-degree: 0%
@@ -32,14 +32,13 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 
 >[!NOTE]
 >
->Andere methoden zijn ook beschikbaar voor auteurs; zie voor nadere bijzonderheden :
+>Andere methoden zijn ook beschikbaar voor auteurs; zie voor meer informatie:
 >
 >* [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md)
 >* [Workflows toepassen op DAM-elementen](/help/assets/assets-workflow.md)
 >* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Omzettingsprojecten](/help/sites-administering/tc-manage.md)
 >
-
 
 ## Workflowmodellen {#workflow-models}
 
@@ -67,7 +66,7 @@ Voor elk knooppunt kan een startprogramma worden gemaakt. Wijzigingen in bepaald
 * `/var/mobile`
 * `/var/statistics`
 
-   * Uitzondering: Wijzigingen in onderstaande knooppunten `/var/statistics/tracking` *do* zorgt ervoor dat werkstromen worden gestart.
+   * Uitzondering: wijzigingen in onderliggende knooppunten `/var/statistics/tracking` *do* zorgt ervoor dat werkstromen worden gestart.
 
 De standaardinstallatie bevat verschillende definities. Deze worden gebruikt voor taken op het gebied van digitaal middelenbeheer en sociale samenwerking:
 
@@ -81,14 +80,14 @@ Een workflowpakket:
 
 * bevat koppelingen naar een set bronnen (zoals pagina&#39;s, elementen).
 * bevat pakketinformatie zoals de aanmaakdatum, de gebruiker die het pakket heeft gemaakt en een korte beschrijving.
-* wordt gedefinieerd met behulp van een gespecialiseerde paginasjabloon; op deze pagina&#39;s kan de gebruiker de bronnen in het pakket opgeven.
+* is gedefinieerd met behulp van een gespecialiseerde paginasjabloon; op deze pagina&#39;s kan de gebruiker de bronnen in het pakket opgeven.
 * kan meerdere keren worden gebruikt.
 * kan door de gebruiker worden gewijzigd (voeg of verwijder middelen toe) terwijl de werkschemainstantie eigenlijk loopt.
 
 ## Een workflow starten vanuit de Modellen-console {#starting-a-workflow-from-the-models-console}
 
 1. Ga naar de **Modellen** console gebruiken **Gereedschappen**, **Workflow** vervolgens **Modellen**.
-1. Selecteer de werkstroom (volgens de consolemening); U kunt ook Zoeken (linksboven) gebruiken als dat nodig is:
+1. Selecteer de workflow (in overeenstemming met de consoleweergave). U kunt desgewenst ook Zoeken (linksboven) gebruiken:
 
    ![wf-103](assets/wf-103.png)
 
@@ -101,52 +100,54 @@ Een workflowpakket:
 
    * **Payload**
 
-      Dit kan een pagina, knooppunt, element, pakket zijn, naast andere bronnen.
+     Dit kan een pagina, knooppunt, element, pakket zijn, naast andere bronnen.
 
    * **Titel**
 
-      Een optionele titel waarmee dit exemplaar kan worden geïdentificeerd.
+     Een optionele titel waarmee dit exemplaar kan worden geïdentificeerd.
 
    * **Opmerking**
 
-      Een optionele opmerking waarmee u details van dit exemplaar kunt aangeven.
+     Een optionele opmerking waarmee u details van dit exemplaar kunt aangeven.
+
    ![wf-104](assets/wf-104.png)
 
 ## Een opstartconfiguratie maken {#creating-a-launcher-configuration}
 
 1. Ga naar de **Workflowstartprogramma&#39;s** console gebruiken **Gereedschappen**, **Workflow** vervolgens **Launchers**.
-1. Selecteren **Maken** vervolgens **Launcher toevoegen** om het dialoogvenster te openen:
+1. Selecteren **Maken** vervolgens **Launcher toevoegen** het dialoogvenster openen:
 
    ![wf-105](assets/wf-105.png)
 
    * **Type gebeurtenis**
 
-      Het gebeurtenistype dat de workflow start:
+     Het gebeurtenistype dat de workflow start:
 
       * Gemaakt
-      * Gewijzigd
+      * gewijzigd
       * Verwijderd
+
    * **nodetype**
 
-      Het type knooppunt waarop de workflow wordt gestart.
+     Het type knooppunt waarop de workflow wordt gestart.
 
    * **Pad**
 
-      Het pad waarop de workflow wordt gestart.
+     Het pad waarop de workflow wordt gestart.
 
    * **Run-modus(s)**
 
-      Het type server waarop de workflow wordt gestart. Selecteren **Auteur**, **Publiceren**, of **Auteur en publicatie**.
+     Het type server waarop de workflow wordt gestart. Selecteren **Auteur**, **Publiceren**, of **Auteur en publicatie**.
 
    * **Voorwaarden**
 
-      Een lijst met voorwaarden voor knoopwaarden die, wanneer geëvalueerd, bepalen of de workflow wordt gestart. De volgende voorwaarde zorgt er bijvoorbeeld voor dat de workflow wordt gestart wanneer het knooppunt een eigenschapnaam met de waarde Gebruiker heeft:
+     Een lijst met voorwaarden voor knoopwaarden die, wanneer geëvalueerd, bepalen of de workflow wordt gestart. De volgende voorwaarde zorgt er bijvoorbeeld voor dat de workflow wordt gestart wanneer het knooppunt een eigenschapnaam met de waarde Gebruiker heeft:
 
-      name==User
+     name==User
 
    * **Functies**
 
-      Een lijst met functies die moeten worden ingeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
+     Een lijst met functies die moeten worden ingeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
 
    * **Uitgeschakelde functies**
 
@@ -154,38 +155,35 @@ Een workflowpakket:
 
    * **Workflowmodel**
 
-      De workflow die moet worden gestart wanneer het gebeurtenistype zich voordoet op Nodetype en/of Path onder de gedefinieerde Voorwaarde.
+     De workflow die moet worden gestart wanneer het gebeurtenistype zich voordoet op Nodetype en/of Path onder de gedefinieerde Voorwaarde.
 
    * **Beschrijving**
 
-      Uw eigen tekst om de startconfiguratie te beschrijven en te identificeren.
+     Uw eigen tekst om de startconfiguratie te beschrijven en te identificeren.
 
    * **Activeren**
 
-      Bepaalt of de workflow wordt gestart:
+     Bepaalt of de workflow wordt gestart:
 
       * Selecteren **Inschakelen** om workflows te starten wanneer aan de configuratie-eigenschappen wordt voldaan.
       * Selecteren **Uitschakelen** wanneer de workflow niet moet worden uitgevoerd (zelfs niet wanneer aan de configuratie-eigenschappen wordt voldaan).
+
    * **Lijst uitsluiten**
 
-      Hiermee worden JCR-gebeurtenissen opgegeven die moeten worden uitgesloten (negeren) wanneer wordt bepaald of een workflow moet worden geactiveerd.
+     Hiermee worden JCR-gebeurtenissen opgegeven die moeten worden uitgesloten (negeren) wanneer wordt bepaald of een workflow moet worden geactiveerd.
 
-      Deze lanceereigenschap is een door komma&#39;s gescheiden lijst met items: &quot;
+     Deze lanceereigenschap is een door komma&#39;s gescheiden lijst met items: &quot;
 
-      * `property-name` alle `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
-      * `event-user-data:<*someValue*>` negeert elke gebeurtenis die het `*<someValue*`> `user-data` door de [ `ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `property-name` negeren `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
+      * `event-user-data:<*someValue*>` negeert elke gebeurtenis die het `*<someValue*`> `user-data` door de [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
 
-      Bijvoorbeeld:
+     Bijvoorbeeld:
 
-      `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
+     `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
 
-      Deze functie kan worden gebruikt om wijzigingen te negeren die door een ander workflowproces worden veroorzaakt door het uitsluitingsitem toe te voegen:
+     Deze functie kan worden gebruikt om alle wijzigingen te negeren die door een ander workflowproces worden veroorzaakt door het uitsluitingsitem toe te voegen:
 
-      `event-user-data:changedByWorkflowProcess`
-
-
-
-
+     `event-user-data:changedByWorkflowProcess`
 
 1. Selecteren **Maken**, om de lanceerinrichting te creëren en aan de console terug te keren.
 

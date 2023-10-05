@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1920'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Wanneer een werkstroom van voorbijgaande aard is, worden de runtime gegevens met
 
 De voordelen kunnen zijn:
 
-* Een verkorting van de verwerkingstijd van de werkstroom; van maximaal 10%.
+* Een verkorting van de werkschemaverwerkingstijd; van tot 10%.
 * De groei van de opslagplaats aanzienlijk verminderen.
 * Er zijn geen CRUD-workflows meer nodig om te wissen.
 * Bovendien wordt het aantal TAR-bestanden dat moet worden gecomprimeerd, verminderd.
@@ -56,29 +56,29 @@ AEM kunnen meerdere workflowthreads tegelijk uitvoeren. Door gebrek wordt het aa
 
 In gevallen waarin de workflows die worden uitgevoerd veeleisend zijn aan systeembronnen, kan dit betekenen dat er weinig over AEM is om te gebruiken voor andere taken, zoals het renderen van de ontwerpgebruikersinterface. Hierdoor kan het systeem traag zijn tijdens activiteiten zoals het uploaden van grote hoeveelheden afbeeldingen.
 
-Adobe raadt u aan het aantal **Maximale parallelle taken** tussen de helft en driekwart van het aantal processorkernen op het systeem. Dit moet voldoende capaciteit voor het systeem om ontvankelijk te blijven wanneer het verwerken van deze werkschema&#39;s.
+Om dit probleem te verhelpen, raadt de Adobe aan het aantal **Maximale parallelle taken** tussen de helft en driekwart van het aantal processorkernen op het systeem. Hierdoor moet het systeem voldoende capaciteit hebben om snel te kunnen reageren wanneer deze workflows worden verwerkt.
 
 Om te vormen **Maximale parallelle taken** kunt u:
 
-* Configureer de **[OSGi-configuratie](/help/sites-deploying/configuring-osgi.md)** via de AEM webconsole; for **Wachtrij: Graniet Workflow Queue** (en **Configuratie Apache Sling-taakwachtrij**).
+* Vorm **[OSGi-configuratie](/help/sites-deploying/configuring-osgi.md)** vanaf de AEM webconsole; voor **Wachtrij: Granite Workflow Queue** (en **Configuratie Apache Sling-taakwachtrij**).
 
-* De wachtrij configureren vanuit de **Verkooptaken** optie van de AEM webconsole; for **Configuratie taakwachtrij: Graniet Workflow Queue**, om `http://localhost:4502/system/console/slingevent`.
+* Configureer de wachtrij vanuit de **Verkooptaken** optie van de AEM webconsole; voor **Configuratie taakwachtrij: Granite Workflow Queue**, om `http://localhost:4502/system/console/slingevent`.
 
 Bovendien is er een afzonderlijke configuratie voor **Graniet Workflow External Process Job Queue**. Dit wordt gebruikt voor workflowprocessen waarmee externe binaire bestanden worden gestart, zoals **InDesign Server** of **Afbeeldingsgrootte**.
 
 ### Afzonderlijke taakwachtrij configureren {#configure-individual-job-queues}
 
-In sommige gevallen is het nuttig om individuele baanrijen te vormen om gezamenlijke draden, of andere rijopties, op een individuele baanbasis te controleren. U kunt een individuele rij van de console van het Web via toevoegen en vormen **Configuratie Apache Sling-taakwachtrij** fabriek. Om het aangewezen onderwerp te vinden om een lijst te maken, voer het model van uw werkschema uit en zoek het in **Verkooptaken** console; bijvoorbeeld bij `http://localhost:4502/system/console/slingevent`.
+In sommige gevallen is het nuttig om individuele baanrijen te vormen om gezamenlijke draden, of andere rijopties, op een individuele baanbasis te controleren. U kunt een individuele rij van de console van het Web via toevoegen en vormen **Configuratie Apache Sling-taakwachtrij** fabriek. Om het aangewezen onderwerp te vinden om een lijst te maken, voer het model van uw werkschema uit en zoek het in **Verkooptaken** console; bijvoorbeeld op `http://localhost:4502/system/console/slingevent`.
 
 Afzonderlijke taakwachtrijen kunnen ook worden toegevoegd voor tijdelijke werkstromen.
 
 ### Workflow leegmaken configureren {#configure-workflow-purging}
 
-In een standaardinstallatie AEM een onderhoudsconsole biedt waar dagelijkse en wekelijkse onderhoudsactiviteiten kunnen worden gepland en geconfigureerd; bijvoorbeeld :
+In een standaardinstallatie AEM een onderhoudsconsole biedt waar dagelijkse en wekelijkse onderhoudsactiviteiten kunnen worden gepland en geconfigureerd, bijvoorbeeld bij:
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-Standaard worden de **Wekelijks onderhoudvenster** heeft een **Werkstroom leegmaken** taak, maar dit moet worden gevormd alvorens het zal lopen. Voor het configureren van werkstroompuren wordt een nieuwe **Adobe Granite-werkstroom leegmaken configuratie** moet in de console van het Web worden toegevoegd.
+Standaard worden de **Wekelijks onderhoudvenster** heeft een **Werkstroom leegmaken** taak, maar dit moet worden gevormd alvorens het zal lopen. Voor het configureren van werkstroompuren wordt een nieuwe **Configuratie van opschonen van de Adobe van Granite-workflow** moet in de console van het Web worden toegevoegd.
 
 Zie voor meer informatie over onderhoudstaken in AEM [Operations-dashboard](/help/sites-administering/operations-dashboard.md).
 
@@ -88,7 +88,7 @@ Bij het schrijven van aangepaste workflowprocessen moet u rekening houden met ee
 
 ### Locaties {#locations}
 
-Definities van workflowmodellen, draagraketten, scripts en meldingen worden in de gegevensopslagruimte opgeslagen volgens het type; d.w.z. out-of-the-box, aangepast, enz.
+Definities van workflowmodellen, draagraketten, scripts en meldingen worden in de gegevensopslagruimte opgeslagen volgens het type, d.w.z. &#39;out-of-the-box&#39;, aangepast, enzovoort.
 
 >[!NOTE]
 >
@@ -100,35 +100,34 @@ Workflowmodellen worden in de opslagplaats opgeslagen volgens het type:
 
 * Workflowontwerpen die buiten de box vallen, worden opgeslagen onder het volgende pad:
 
-   `/libs/settings/workflow/models/`
+  `/libs/settings/workflow/models/`
 
-   >[!CAUTION]
-   >
-   >Niet:
-   >
-   >* plaats om het even welke modellen van uw douanewerkschema in deze omslag
-   >* alles bewerken in `/libs`
-
-   >
-   >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
+  >[!CAUTION]
+  >
+  >Niet:
+  >
+  >* plaats om het even welke modellen van uw douanewerkschema in deze omslag
+  >* alles bewerken in `/libs`
+  >
+  >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
 * Aangepaste workflowontwerpen vindt u onder:
 
-   ```
-   /conf/global/settings/workflow/models/...
-   ```
+  ```
+  /conf/global/settings/workflow/models/...
+  ```
 
 * Workflowontwerpen bij uitvoering (zowel out-of-the-box als aangepast) bevinden zich onder het volgende pad:
 
-   `/var/workflow/models/`
+  `/var/workflow/models/`
 
 * Verouderde workflowontwerpen (zowel tijdens het ontwerpen als bij uitvoering) staan onder het volgende pad:
 
-   `/etc/workflow/models/`
+  `/etc/workflow/models/`
 
-   >[!NOTE]
-   >
-   >Als deze ontwerpen worden bewerkt *gebruiken van AEM UI* Vervolgens worden de gegevens naar de nieuwe locaties gekopieerd.
+  >[!NOTE]
+  >
+  >Als deze ontwerpen worden bewerkt *gebruiken van AEM UI* Vervolgens worden de gegevens naar de nieuwe locaties gekopieerd.
 
 #### Locaties - Workflowstartprogramma&#39;s {#locations-workflow-launchers}
 
@@ -136,31 +135,30 @@ Werkstroomstartdefinities worden ook volgens het type opgeslagen in de opslagpla
 
 * Startprogramma&#39;s voor workflows die buiten de box vallen, worden ondergebracht in het volgende pad:
 
-   `/libs/settings/workflow/launcher/`
+  `/libs/settings/workflow/launcher/`
 
-   >[!CAUTION]
-   >
-   >Niet:
-   >
-   >* plaats om het even welke douane werkschemalanceerders in deze omslag
-   >* alles bewerken in `/libs`
-
-   >
-   >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
+  >[!CAUTION]
+  >
+  >Niet:
+  >
+  >* plaats om het even welke douane werkschemalanceerders in deze omslag
+  >* alles bewerken in `/libs`
+  >
+  >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
 * Aangepaste draagraketten voor workflows vindt u onder:
 
-   ```
-   /conf/global/settings/workflow/launcher/...
-   ```
+  ```
+  /conf/global/settings/workflow/launcher/...
+  ```
 
 * Verouderde draagraketten voor workflows worden opgeslagen onder het volgende pad:
 
-   `/etc/workflow/launcher/`
+  `/etc/workflow/launcher/`
 
-   >[!NOTE]
-   >
-   >Als deze definities worden bewerkt *gebruiken van AEM UI* Vervolgens worden de gegevens naar de nieuwe locaties gekopieerd.
+  >[!NOTE]
+  >
+  >Als deze definities worden bewerkt *gebruiken van AEM UI* Vervolgens worden de gegevens naar de nieuwe locaties gekopieerd.
 
 #### Locaties - Workflowscripts {#locations-workflow-scripts}
 
@@ -168,62 +166,60 @@ Workflowscripts worden ook in de repository opgeslagen volgens het type:
 
 * Workflowscripts buiten de box worden opgeslagen onder het volgende pad:
 
-   `/libs/workflow/scripts/`
+  `/libs/workflow/scripts/`
 
-   >[!CAUTION]
-   >
-   >Niet:
-   >
-   >* Plaats om het even welke manuscripten van uw douanewerkschema in deze omslag
-   >* alles bewerken in `/libs`
-
-   >
-   >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
+  >[!CAUTION]
+  >
+  >Niet:
+  >
+  >* Plaats om het even welke manuscripten van uw douanewerkschema in deze omslag
+  >* alles bewerken in `/libs`
+  >
+  >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
 * Scripts voor aangepaste workflows staan onder:
 
-   ```
-   /apps/workflow/scripts/...
-   ```
+  ```
+  /apps/workflow/scripts/...
+  ```
 
 * Oudere workflowscripts staan in het volgende pad:
 
-   `/etc/workflow/scripts/`
+  `/etc/workflow/scripts/`
 
 #### Locaties - Workflowmeldingen {#locations-workflow-notifications}
 
 Workflowmeldingen worden ook opgeslagen in de repository volgens het type:
 
-* De definities van de out-of-the-box workflowmelding staan onder het volgende pad:
+* De definities van de out-of-the-box workflowmelding worden gehouden onder het volgende pad:
 
-   `/libs/settings/workflow/notification/`
+  `/libs/settings/workflow/notification/`
 
-   >[!CAUTION]
-   >
-   >Niet:
-   >
-   >* Plaats om het even welke definities van uw douanewerkschemabericht in deze omslag
-   >* alles bewerken in `/libs`
-
-   >
-   >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
+  >[!CAUTION]
+  >
+  >Niet:
+  >
+  >* Plaats om het even welke definities van uw douanewerkschemabericht in deze omslag
+  >* alles bewerken in `/libs`
+  >
+  >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
 * Definities van aangepaste workflowmeldingen vindt u onder:
 
-   ```
-   /conf/global/settings/workflow/notification/...
-   ```
+  ```
+  /conf/global/settings/workflow/notification/...
+  ```
 
-   >[!NOTE]
-   >
-   >Als u de tekst van een workflowmelding wilt overschrijven, maakt u een overlaypad onder:
-   >
-   >
-   >`/conf/global/settings/workflow/notification/<path-under-libs>`
+  >[!NOTE]
+  >
+  >Als u de tekst van een workflowmelding wilt overschrijven, maakt u een overlaypad onder:
+  >
+  >
+  >`/conf/global/settings/workflow/notification/<path-under-libs>`
 
 * Definities van verouderde workflowmeldingen vindt u onder het volgende pad:
 
-   `/etc/workflow/notification/`
+  `/etc/workflow/notification/`
 
 ### Processessies {#process-sessions}
 
@@ -236,7 +232,7 @@ Bij het implementeren van een workflowproces:
 
 * Er wordt een workflowsessie aangeboden die moet worden gebruikt, tenzij er een dwingende reden is om dit niet te doen.
 * Nieuwe sessies moeten niet worden gemaakt op basis van workflowstappen, omdat dit leidt tot inconsistenties in de status(s) en mogelijke gelijktijdige problemen in de workflow-engine.
-* U mag geen nieuwe JCR-sessie aanschaffen vanuit een processtap in een werkstroom. U zou de werkschemasessie die door Stap API van het Proces aan een jcr zitting wordt verstrekt moeten aanpassen. Bijvoorbeeld:
+* U moet geen nieuwe JCR-sessie aanschaffen vanuit een processtap in een workflow. U moet de workflowsessie die wordt geleverd door de Process Step API aanpassen aan een JCr-sessie. Bijvoorbeeld:
 
 ```
 public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap args) throws WorkflowException {
@@ -249,10 +245,10 @@ public void execute(WorkItem item, WorkflowSession workflowSession, MetaDataMap 
 
 Een sessie opslaan:
 
-* In een workflowproces, als `WorkflowSession` wordt gebruikt om de opslagplaats te wijzigen en slaat de sessie niet expliciet op. De werkstroom slaat de sessie op wanneer deze is voltooid.
+* In een workflowproces, als de `WorkflowSession` wordt gebruikt om de opslagplaats te wijzigen en slaat de sessie niet expliciet op. De werkstroom slaat de sessie op wanneer deze is voltooid.
 * `Session.Save` mag niet worden aangeroepen vanuit een workflowstap:
 
-   * het verdient aanbeveling de werkstroom - jcr - sessie aan te passen ; dan `save` is niet nodig omdat de workflowengine de sessie automatisch opslaat zodra de workflow is voltooid.
+   * het wordt aanbevolen de werkstroom-jcr-sessie aan te passen; vervolgens `save` is niet nodig omdat de workflowengine de sessie automatisch opslaat zodra de workflow is voltooid.
    * het wordt niet aanbevolen dat een processtap een eigen jcr-sessie maakt.
 
 * Door onnodige besparingen te elimineren, kunt u overheadkosten verminderen en zo de werkschema&#39;s efficiënter maken.
@@ -274,7 +270,7 @@ Door een globbingpad in de basis van de opslagplaats te maken op één startpunt
 
 Vanwege de invloed van deze draagraketten op het workflowgedrag, kan het ook handig zijn om alle draagraketten die niet in gebruik zijn, uit te schakelen.
 
-### Verbeterde configuratie voor opstartprogramma&#39;s {#configuration-enhancements-for-launchers}
+### Verbeteringen in configuratie voor opstartprogramma&#39;s {#configuration-enhancements-for-launchers}
 
 De aangepaste [opstartconfiguratie](/help/sites-administering/workflows-starting.md#workflows-launchers) is uitgebreid ter ondersteuning van het volgende:
 
@@ -289,7 +285,7 @@ Workflows kunnen een aanzienlijke hoeveelheid overhead met zich meebrengen, zowe
 
 Een voorbeeld hiervan is een workflow die een bedrijfsproces implementeert op een set inhoud en die inhoud vervolgens activeert. Het is beter een aangepast workflowproces te maken dat elk van deze knooppunten activeert in plaats van een **Inhoud activeren** model voor elk van de inhoudsknooppunten die moeten worden gepubliceerd. Deze benadering vereist extra ontwikkelingswerk, maar is efficiënter wanneer uitgevoerd dan het beginnen van een afzonderlijke werkschemainstantie voor elke activering.
 
-Een ander voorbeeld zou een werkschema zijn dat een aantal knopen verwerkt, tot een werkschemapakket leidt, dan genoemd pakket activeert. In plaats van het pakket te maken en vervolgens een aparte workflow te starten met het pakket als de lading, kunt u de lading van uw workflow wijzigen in de stap die het pakket maakt en vervolgens de stap aanroepen om het pakket te activeren binnen hetzelfde workflowmodel.
+Een ander voorbeeld zou een werkschema zijn dat een aantal knopen verwerkt, tot een werkschemapakket leidt, dan genoemd pakket activeert. In plaats van het pakket te maken en vervolgens een aparte workflow te starten met het pakket als de lading, kunt u de lading van uw workflow wijzigen in de stap die het pakket maakt en vervolgens de stap aanroepen om het pakket binnen hetzelfde workflowmodel te activeren.
 
 ### Handler Advance {#handler-advance}
 
@@ -313,7 +309,7 @@ Dit is iets om in mening te houden als u deze stap als deel van een werkschemamo
 
 Wanneer u uw exemplaar upgradet:
 
-* ervoor zorgen dat een back-up wordt gemaakt van aangepaste workflowmodellen voordat een upgrade van een instantie wordt uitgevoerd.
+* ervoor zorgen dat een back-up wordt gemaakt van aangepaste workflowmodellen voordat een upgrade wordt uitgevoerd.
 * bevestig dat geen van uw aangepaste workflows is opgeslagen onder de [locatie](#locations):
 
    * `/libs/settings/workflow/models/projects`

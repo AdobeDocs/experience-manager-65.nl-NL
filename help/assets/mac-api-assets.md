@@ -6,7 +6,7 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '1734'
 ht-degree: 0%
@@ -22,20 +22,20 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De [!DNL Assets] Met de HTTP-API kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, uitvoeringen en opmerkingen, en voor gestructureerde inhoud met gebruik van [!DNL Experience Manager] Inhoudsfragmenten. Het wordt blootgesteld bij `/api/assets` en is geïmplementeerd als REST API. Hieronder vallen [ondersteuning voor inhoudsfragmenten](/help/assets/assets-api-content-fragments.md).
+De [!DNL Assets] Met de HTTP-API kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, uitvoeringen en opmerkingen, en voor gestructureerde inhoud met gebruik van [!DNL Experience Manager] Inhoudsfragmenten Het wordt blootgesteld bij `/api/assets` en is geïmplementeerd als REST API. Hieronder vallen [ondersteuning voor inhoudsfragmenten](/help/assets/assets-api-content-fragments.md).
 
-Toegang krijgen tot de API:
+De API openen:
 
 1. Open het API-servicedocument op `https://[hostname]:[port]/api.json`.
 1. Volg de [!DNL Assets] servicekoppeling die leidt naar `https://[hostname]:[server]/api/assets.json`.
 
 De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
 
-Na de [!UICONTROL Off Time], een actief en de uitleveringen ervan niet beschikbaar zijn via de [!DNL Assets] webinterface en via de HTTP-API. De API geeft een foutbericht van 404 als de [!UICONTROL On Time] in de toekomst is of [!UICONTROL Off Time] is in het verleden.
+Na de [!UICONTROL Off Time], een actief en de uitleveringen ervan niet beschikbaar zijn via de [!DNL Assets] en via de HTTP-API. De API geeft een foutbericht van 404 als de [!UICONTROL On Time] in de toekomst is of [!UICONTROL Off Time] is in het verleden.
 
 >[!CAUTION]
 >
->[HTTP API werkt de eigenschappen van metagegevens bij](#update-asset-metadata) in de `jcr` naamruimte. De gebruikersinterface van de Experience Manager werkt echter de metagegevenseigenschappen in de `dc` naamruimte.
+>[HTTP API werkt de eigenschappen van metagegevens bij](#update-asset-metadata) in de `jcr` naamruimte. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van de metagegevens in de `dc` naamruimte.
 
 ## Contentfragmenten {#content-fragments}
 
@@ -62,7 +62,7 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 
 >[!NOTE]
 >
->Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel. De `jcr` voorvoegsel van `jcr:title`, `jcr:description`, en `jcr:language` worden vervangen door `dc` voorvoegsel. Vandaar in de geretourneerde JSON, `dc:title` en `dc:description` bevatten de waarden van `jcr:title` en `jcr:description`, respectievelijk.
+>Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel. De `jcr` voorvoegsel `jcr:title`, `jcr:description`, en `jcr:language` worden vervangen door `dc` voorvoegsel Vandaar in de geretourneerde JSON, `dc:title` en `dc:description` bevatten de waarden van `jcr:title` en `jcr:description`, respectievelijk.
 
 **Koppelingen** Mappen maken drie koppelingen zichtbaar:
 
@@ -78,7 +78,7 @@ In Experience Manager bevat een element de volgende elementen:
 * Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra vertoningen kunnen afbeeldingen van verschillende grootten, verschillende videocoderingen, of pagina&#39;s uit PDF of zijn geëxtraheerd [!DNL Adobe InDesign] bestanden.
 * Optionele opmerkingen.
 
-Voor informatie over elementen in inhoudsfragmenten raadpleegt u [Ondersteuning voor inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
+Zie voor informatie over elementen in inhoudsfragmenten [Ondersteuning voor inhoudsfragmenten in Experience Manager Assets HTTP API](/help/assets/assets-api-content-fragments.md#content-fragments).
 
 In [!DNL Experience Manager] een map bevat de volgende componenten:
 
@@ -126,7 +126,7 @@ Haalt een Siren-weergave op van een bestaande map en van de onderliggende entite
 
 ## Een map maken {#create-a-folder}
 
-Hiermee maakt u een nieuwe `sling`: `OrderedFolder` op het opgegeven pad. Indien een `*` wordt verstrekt in plaats van een knoopnaam, gebruikt servlet de parameternaam als knooppuntnaam. Gegevens die worden geaccepteerd als aanvraaggegevens zijn een Sirene-weergave van de nieuwe map of een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`Deze optie is handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken. Bovendien kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
+Hiermee maakt u een nieuwe `sling`: `OrderedFolder` op het opgegeven pad. Indien een `*` wordt verstrekt in plaats van een knoopnaam, gebruikt servlet de parameternaam als knooppuntnaam. Gegevens die worden geaccepteerd als aanvraaggegevens zijn een Sirene-weergave van de nieuwe map of een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`, handig als u een map rechtstreeks vanuit een HTML-formulier wilt maken. Bovendien kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
 
 Een API-aanroep mislukt met een `500` antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Een vraag keert een reactiecode terug `409` als de map al bestaat.
 
@@ -148,7 +148,7 @@ Een API-aanroep mislukt met een `500` antwoordcode als het bovenliggende knooppu
 
 Plaats het opgegeven bestand op het opgegeven pad om een element te maken in de DAM-opslagplaats. Indien een `*` wordt opgegeven in plaats van een knooppuntnaam, gebruikt servlet de parameternaam of de bestandsnaam als knooppuntnaam.
 
-**Parameters**: De parameters zijn `name` voor de elementnaam en `file` voor de bestandsverwijzing.
+**Parameters**: De parameters zijn `name` voor de naam van het element en `file` voor de bestandsverwijzing.
 
 **Verzoek**
 
@@ -282,7 +282,7 @@ Hiermee verplaatst u een map of element op het opgegeven pad naar een nieuwe bes
 
 * `X-Destination` - een nieuwe doel-URI binnen het bereik van de API-oplossing waarnaar de bron moet worden gekopieerd.
 * `X-Depth` - hetzij `infinity` of `0`. Gebruiken `0` kopieert alleen de bron en zijn eigenschappen en niet zijn kinderen.
-* `X-Overwrite` - Gebruik beide `T` bestaande bronnen te verwijderen of `F` om te voorkomen dat een bestaande bron wordt overschreven.
+* `X-Overwrite` - Gebruik beide `T` om een bestaande bron te verwijderen of `F` om te voorkomen dat een bestaande bron wordt overschreven.
 
 **Verzoek**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
@@ -317,6 +317,6 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 ## Tips en beperkingen {#tips-best-practices-limitations}
 
-* [HTTP API werkt de eigenschappen van metagegevens bij](#update-asset-metadata) in de `jcr` naamruimte. De gebruikersinterface van de Experience Manager werkt echter de metagegevenseigenschappen in de `dc` naamruimte.
+* [HTTP API werkt de eigenschappen van metagegevens bij](#update-asset-metadata) in de `jcr` naamruimte. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van de metagegevens in de `dc` naamruimte.
 
 * De HTTP-API van middelen retourneert de volledige metagegevens niet. De naamruimten zijn gecodeerd en alleen die naamruimten worden geretourneerd. Zie het middelenpad voor volledige metagegevens `/jcr_content/metadata.json`.

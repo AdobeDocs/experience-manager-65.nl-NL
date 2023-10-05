@@ -10,7 +10,7 @@ topic-tags: testing
 content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
 workflow-type: tm+mt
 source-wordcount: '974'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Er zijn veel websites, boeken en cursussen die met dergelijke beginselen te make
 
 Hoewel toekomstige getallen niet met 100% nauwkeurigheid kunnen worden voorspeld, geeft het observeren van uw bestaande site en het ervaren verkeer een goede indicatie. U kunt ramingen dan afhankelijk maken van de factor waardoor u verwacht/hoopt het verkeer zal stijgen.
 
-**Kwaliteit** - Het is van het grootste belang dat iedereen die test neutraal blijft en alleen maar de resultaten van de uitgevoerde tests meldt.
+**Toezegging aan kwaliteit** - Het is van het grootste belang dat iedereen die test neutraal blijft en alleen maar de resultaten van de uitgevoerde tests meldt.
 
 Het is de verantwoordelijkheid van de projectbeheerder om afhankelijk van de resultaten een besluit te nemen over een actie of acties.
 
@@ -69,7 +69,7 @@ Zwartboxtests zijn functionele tests van een complete eenheid/onderdeel/module, 
 
 **Systeemtests** - Deze test het hele systeem nadat het volledig is geïntegreerd en op een geschikt platform is geïnstalleerd.
 
-Ze testen de functionaliteit op een black-box-basis.
+Ze testen de functionaliteit op een black-box basis.
 
 **Prestatietests** - Prestatietests zijn van cruciaal belang bij AEM.
 
@@ -77,17 +77,17 @@ Deze worden gebruikt om de prestaties onder verschillende omstandigheden te illu
 
 * Normaal
 
-   Voorwaarden die de locatie zal ervaren, zijn bijvoorbeeld 90% van de tijd. Bijvoorbeeld wanneer slechts een deel van de auteurs het systeem gebruikt.
+  Voorwaarden die de locatie zal ervaren, zijn bijvoorbeeld 90% van de tijd. Bijvoorbeeld wanneer slechts een deel van de auteurs het systeem gebruikt.
 
 * Piek
 
-   Voorwaarden die in verband met bijzondere omstandigheden voor een verhoudingsgewijs korte tijd zullen worden gehanteerd; bijvoorbeeld wanneer alle auteurs het systeem gelijktijdig gebruiken of wanneer nieuwe inhoud wordt gepubliceerd en een groter aantal bezoekers uw site bekijken.
+  Voorwaarden die proportioneel kort zullen worden ervaren als gevolg van speciale omstandigheden, bijvoorbeeld wanneer alle auteurs het systeem gelijktijdig gebruiken of wanneer nieuwe inhoud wordt gepubliceerd en een groter aantal bezoekers uw site bekijken.
 
 * Extreem
 
-   Kan worden gebruikt om de voorspelling van de prestaties na te bootsen wanneer er nieuwe, bijzonder interessante inhoud op uw website wordt gepubliceerd. Dan kan een extreme piek worden gezien - hoewel dit niet altijd volledig voorspelbaar is.
+  Kan worden gebruikt om de voorspelling van de prestaties na te bootsen wanneer er nieuwe, bijzonder interessante inhoud op uw website wordt gepubliceerd. Dan kan een extreme piek worden gezien - hoewel dit niet altijd volledig voorspelbaar is.
 
-   Deze omstandigheden worden soms waargenomen wanneer tickets voor specifieke gebeurtenissen beschikbaar worden gesteld, of wanneer voor het eerst een veelverwachte website wordt gepubliceerd.
+  Deze omstandigheden worden soms waargenomen wanneer tickets voor specifieke gebeurtenissen beschikbaar worden gesteld, of wanneer voor het eerst een veelverwachte website wordt gepubliceerd.
 
 De resultaten worden vervolgens gebruikt om de toepassing af te stemmen.
 
@@ -99,7 +99,7 @@ Regressietests zijn (indien mogelijk) goede kandidaten voor automatisering om er
 
 **Acceptatietests** - Acceptatietests zijn een speciale categorie, omdat ze worden gebruikt om aan te geven dat de klant het project accepteert.
 
-De lijst van goedkeuringstests kan een combinatie van tests van de diverse hierboven vermelde categorieën bevatten, en wordt geselecteerd om te verifiëren dat het project aan de vereisten van de klant voldoet
+De lijst met acceptatietests kan een combinatie van tests uit de bovenstaande categorieën bevatten en wordt geselecteerd om te controleren of het project aan de vereisten van de klant voldoet
 
 Zie [Aanvaarding en afmelding](/help/sites-developing/acceptance-signoff.md) voor meer informatie .
 

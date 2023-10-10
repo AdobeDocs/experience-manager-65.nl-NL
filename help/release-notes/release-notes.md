@@ -2,9 +2,10 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: ffda4927ddc8555564f33697fa81d1f8a0cd2cdc
+exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
+source-git-commit: 59d5c2574bf4298469152a3d55e7c1508eb2f1be
 workflow-type: tm+mt
-source-wordcount: '4528'
+source-wordcount: '4613'
 ht-degree: 0%
 
 ---
@@ -462,8 +463,25 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 #### Installatie
 
 * Op het JBoss® 7.1.4-platform, wanneer de gebruiker Experience Manager 6.5.16.0 of hoger servicepack installeert, `adobe-livecycle-jboss.ear` implementatie mislukt. (CQ-4351522, CQDOC-20159)
-* Na installatie van AEM volledige installer van Service Pack 6.5.18.0 mislukt de EAR-implementatie op JEE met JBoss® Turnkey (CQDOC-20803).
-Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` bestand en update `Adobe_Adobe_JAVA_HOME` tot `Adobe_JAVA_HOME` voor alle instanties alvorens de configuratiemanager in werking te stellen.
+* Na upgrade naar AEM Forms 6.5.18.0 JBoss volledig installatieprogramma op Windows Server 2022, kan bij het compileren van de code van de Output-clienttoepassing met behulp van Java 11 de volgende compilatiefout optreden:
+
+  ```
+  error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
+  Illegal character in path at index 70: file:/[AEM_Forms_Installation_dir]/sdk/client-libs/common/${clover.jar.name} 1 error
+  ```
+
+  Voer de volgende stappen uit om het probleem op te lossen:
+   1. Navigeren naar `[AEM_Forms_Installation_dir]\sdk\client-libs\common\` en unzip `adobe-output-client.jar` om de `Manifest.mf` bestand.
+   1. Werk de `Manifest.mf` bestand verwijderen door het item te verwijderen `${clover.jar.name}` uit het kenmerk class-path.
+
+      >[!NOTE]
+      >
+      > U kunt ook een programma voor het op locatie bewerken gebruiken, bijvoorbeeld 7-zip, om het dialoogvenster `Manifest.mf` bestand.
+
+   1. Sla de bijgewerkte versie van de `Manifest.mf` in de `adobe-output-client.jar` archief.
+   1. De gewijzigde versie opslaan `adobe-output-client.jar` en voert de installatie opnieuw uit.  (CQDOC-20878)
+* Na installatie van AEM volledige installer van Service Pack 6.5.18.0, ontbreekt de EAR-implementatie op JEE met JBoss® Turnkey.
+Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` bestand en update `Adobe_Adobe_JAVA_HOME` tot `Adobe_JAVA_HOME` voor alle instanties alvorens de configuratiemanager in werking te stellen. (CQDOC-20803)
 
 #### Adaptieve Forms
 

@@ -2,9 +2,9 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 2ba17c43e84ad449ec858de57812f3ef82fca3e1
+source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
 workflow-type: tm+mt
-source-wordcount: '1940'
+source-wordcount: '1935'
 ht-degree: 0%
 
 ---
@@ -89,7 +89,10 @@ Zie:
 
 Wanneer het gebruiken van voortgeduurde vragen van GraphQL met een CDN, wordt het geadviseerd om aangewezen HTTP- geheim voorgeheugencontrolekopballen te plaatsen.
 
-Elke voortgezette vraag kan zijn eigen specifieke reeks kopballen van de geheim voorgeheugencontrole hebben. De koppen kunnen worden ingesteld op de [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md) of de [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md).
+Elke voortgezette vraag kan zijn eigen specifieke reeks kopballen van de geheim voorgeheugencontrole hebben. De koppen kunnen worden ingesteld op de [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
+
+<!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
+-->
 
 **Verdere verwijzing**
 

@@ -2,9 +2,9 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: c0570d6c0d624d950ddbb5c0d2ce38ff7c3756a4
+source-git-commit: 3ec34efc14cc49d0f45cb4b175573c33c1cc232e
 workflow-type: tm+mt
-source-wordcount: '1935'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -91,6 +91,17 @@ Wanneer het gebruiken van voortgeduurde vragen van GraphQL met een CDN, wordt he
 
 Elke voortgezette vraag kan zijn eigen specifieke reeks kopballen van de geheim voorgeheugencontrole hebben. De koppen kunnen worden ingesteld op de [GRAPHQL API](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md).
 
+Deze kunnen ook worden ingesteld met de opdracht **cURL** opdrachtregelgereedschap. Met een `PUT` verzoek om een verpakte onbewerkte vraag met geheim voorgeheugencontrole tot stand te brengen.
+
+```shell
+$ curl -X PUT \
+    -H 'authorization: Basic YWRtaW46YWRtaW4=' \
+    -H "Content-Type: application/json" \
+    "http://localhost:4502/graphql/persist.json/wknd/plain-article-query-max-age" \
+    -d \
+'{ "query": "{articleList { items { _path author main { json } referencearticle { _path } } } }", "cache-control": { "max-age": 300 }}'
+```
+
 <!-- or the [AEM GraphiQL IDE](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache). 
 -->
 
@@ -99,6 +110,7 @@ Elke voortgezette vraag kan zijn eigen specifieke reeks kopballen van de geheim 
 Zie:
 
 * [Door uw doorlopende query&#39;s in cache te plaatsen](/help/sites-developing/headless/graphql-api/persisted-queries.md#caching-persisted-queries)
+* [Een GraphQL-query laten doorgaan](/help/sites-developing/headless/graphql-api/persisted-queries.md#how-to-persist-query)
 <!--
 * [Managing cache for your persisted queries](/help/sites-developing/headless/graphql-api/graphiql-ide.md#managing-cache)
 -->

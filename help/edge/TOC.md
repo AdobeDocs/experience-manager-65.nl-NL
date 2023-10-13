@@ -5,13 +5,13 @@ sub-product: Edge Delivery Services
 audience: end-user
 user-guide-title: Edge Delivery Services
 breadcrumb-title: Edge Delivery Services
-user-guide-description: Meer informatie over Edge Delivery-services, een set services die een snelle ontwikkelomgeving mogelijk maakt waarin auteurs snel kunnen bijwerken en publiceren en nieuwe sites snel kunnen worden opgestart.
+user-guide-description: Meer informatie over Edge Delivery Services, een set services die kan worden samengesteld om een snelle ontwikkelomgeving mogelijk te maken waarin auteurs snel kunnen updaten en publiceren en nieuwe sites snel kunnen worden opgestart.
 feature: Edge Delivery Services
 role: User
 source-git-commit: f824c2b8028999aec1d5ebaf0ad4951b5121eb79
 workflow-type: tm+mt
 source-wordcount: '47'
-ht-degree: 0%
+ht-degree: 93%
 
 ---
 

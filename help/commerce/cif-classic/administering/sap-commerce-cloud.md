@@ -1,22 +1,22 @@
 ---
-title: AEM gebruiken met SAP Commerce Cloud
-description: Leer hoe u AEM kunt gebruiken met SAP Commerce Cloud.
+title: AEM gebruiken met SAP-Commerce Cloud
+description: Leer hoe u Adobe Experience Manager met SAP-Commerce Cloud kunt gebruiken.
 contentOwner: Guillaume Carlino
 topic-tags: e-commerce
 content-type: reference
 exl-id: c342f789-2ff7-4802-99c7-c3699218fe47
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '1702'
+source-wordcount: '1704'
 ht-degree: 1%
 
 ---
 
-# SAP Commerce Cloud{#sap-commerce-cloud}
+# SAP-Commerce Cloud{#sap-commerce-cloud}
 
 Na de installatie kunt u uw instantie configureren:
 
-1. [De beperkte zoekopdracht voor Geometrixx Outdoors configureren](#configure-the-facetted-search-for-geometrixx-outdoors).
+1. [De beperkte zoekopdracht naar Geometrixx Outdoors configureren](#configure-the-facetted-search-for-geometrixx-outdoors).
 1. [De catalogusversie configureren](#configure-the-catalog-version).
 1. [De importstructuur configureren](#configure-the-import-structure).
 1. [De te laden productkenmerken configureren](#configure-the-product-attributes-to-load).
@@ -24,7 +24,7 @@ Na de installatie kunt u uw instantie configureren:
 1. [De importmodule voor catalogi configureren](#configure-the-catalog-importer).
 1. Gebruik de [Importeren om de catalogus te importeren](#catalog-import) naar een specifieke locatie in AEM.
 
-## De beperkte zoekopdracht voor Geometrixx Outdoors configureren {#configure-the-facetted-search-for-geometrixx-outdoors}
+## De beperkte zoekopdracht naar Geometrixx Outdoors configureren {#configure-the-facetted-search-for-geometrixx-outdoors}
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ Na de installatie kunt u uw instantie configureren:
 
    >[!NOTE]
    >
-   >Voor hybris 5.2 moet u ervoor zorgen dat de `Facet` wordt het kenmerk in de tabel Eigenschappen geselecteerd op basis van de onderstaande schermafbeelding:
+   >Controleer of bij hybris 5.2 de `Facet` wordt het kenmerk in de tabel Eigenschappen geselecteerd op basis van de onderstaande schermafbeelding:
 
    ![chlimage_1-37](/help/sites-administering/assets/chlimage_1-37a.png) ![chlimage_1-38](/help/sites-administering/assets/chlimage_1-38a.png)
 
@@ -105,7 +105,7 @@ De **Catalogusversie** ( `hybris.catalog.version`) die wordt ingevoerd kan voor 
 **Configuratie bedrijfs-hybride van dagelijkse CQ-handel**
 ( `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Catalogusversie** is ingesteld op `Online` of `Staged` (de standaardinstelling).
+**Catalogusversie** is ingesteld op `Online` of `Staged` (de standaardwaarde).
 
 >[!NOTE]
 >
@@ -184,7 +184,7 @@ Er zijn verschillende manieren om de productgegevens te importeren. De productge
 
 * [Volledig importeren](#full-import)
 * [Incrementele import](#incremental-import)
-* [Express Update](#express-update)
+* [Uitdrukkelijke Update](#express-update)
 
 Werkelijke productinformatie geïmporteerd uit hybris wordt in de gegevensopslagplaats bewaard onder:
 
@@ -198,7 +198,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
 >[!NOTE]
 >
->De hybris-implementatie (d.w.z. `geometrixx-outdoors/en_US`) slaat alleen product-id&#39;s en andere basisinformatie op onder `/etc/commerce`.
+>De hybris-implementatie (dat wil zeggen `geometrixx-outdoors/en_US`) slaat alleen product-id&#39;s en andere basisinformatie op onder `/etc/commerce`.
 >
 >Telkens wanneer informatie over een product wordt aangevraagd, wordt verwezen naar de hybrisserver.
 
@@ -214,7 +214,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
       [`http://localhost:4502/crx/de/index.jsp#/etc/commerce/products`](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
-   1. Verwijder het knooppunt dat de productgegevens bevat. bijvoorbeeld: `outdoors`.
+   1. Verwijder het knooppunt dat de productgegevens bevat, bijvoorbeeld `outdoors`.
    1. **Alles opslaan** om de wijziging voort te zetten.
 
 1. Open de hybris-importmodule in AEM:
@@ -225,7 +225,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. De vereiste parameters configureren; bijvoorbeeld:
+1. Configureer de vereiste parameters, bijvoorbeeld:
 
    ![chlimage_1-42](/help/sites-administering/assets/chlimage_1-42a.png)
 
@@ -237,7 +237,7 @@ De volgende eigenschappen geven het verband met hybris aan:
        /etc/commerce/products/outdoors
    ```
 
-   U kunt dit openen in CRXDE Lite; bijvoorbeeld:
+   U kunt dit openen in CRXDE Lite, bijvoorbeeld:
 
    `[http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)`
 
@@ -247,7 +247,7 @@ De volgende eigenschappen geven het verband met hybris aan:
 
    `/etc/commerce/products`
 
-   U kunt dit openen in CRXDE Lite; bijvoorbeeld:
+   U kunt dit openen in CRXDE Lite, bijvoorbeeld:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -271,7 +271,7 @@ De volgende eigenschappen geven het verband met hybris aan:
    ```
 
 
-### Express Update {#express-update}
+### Uitdrukkelijke Update {#express-update}
 
 Het importproces kan lang duren, zodat u als uitbreiding van de productsynchronisatie specifieke gebieden van de catalogus kunt selecteren voor een express update die handmatig wordt geactiveerd. Dit gebruikt de de uitvoervoer samen met de standaardattributenconfiguratie.
 
@@ -279,7 +279,7 @@ Het importproces kan lang duren, zodat u als uitbreiding van de productsynchroni
 
    `/etc/commerce/products`
 
-   U kunt dit openen in CRXDE Lite; bijvoorbeeld:
+   U kunt dit openen in CRXDE Lite, bijvoorbeeld:
 
    [http://localhost:4502/crx/de/index.jsp#/etc/commerce/products](http://localhost:4502/crx/de/index.jsp#/etc/commerce/products)
 
@@ -297,7 +297,7 @@ Het importproces kan lang duren, zodat u als uitbreiding van de productsynchroni
 
    [http://localhost:4502/etc/importers/hybris.html](http://localhost:4502/etc/importers/hybris.html)
 
-1. Selecteren met het selectievakje **Express Update**.
+1. Selecteren met het selectievakje **Uitdrukkelijke Update**.
 1. Klikken **Catalogus importeren** om het importeren te starten.
 
    Na voltooiing kunt u de gegevens controleren die in AEM onder worden bijgewerkt:
@@ -319,7 +319,7 @@ Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemont
 
 ## Catalogus importeren {#catalog-import}
 
-Het hybris-pakket wordt geleverd met een catalogusimportmodule voor het instellen van de initiële paginastructuur.
+Het hybris-pakket wordt geleverd met een catalogusimportmodule waarmee u de structuur van de eerste pagina kunt instellen.
 
 Dit is beschikbaar op:
 
@@ -333,7 +333,7 @@ De volgende informatie moet worden verstrekt:
 De id van de basisopslag die in hybris is is geconfigureerd.
 
 * **Catalogus**
-De id van de catalogus die moet worden geïmporteerd.
+De id van de te importeren catalogus.
 
 * **Basispad**
 Het pad waarin de catalogus moet worden geïmporteerd.
@@ -391,11 +391,11 @@ Een of meer producten uit de catalogus verwijderen:
 
      [http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html](http://localhost:4502/editor.html/content/geometrixx-outdoors/en_US/equipment/biking.html)
 
-   * De `Cajamara` product wordt uit het `Bike` categorie
+   * De `Cajamara` het product wordt uit de `Bike` categorie
 
 1. Het product opnieuw installeren:
 
-   1. Stel de goedkeuringsstatus in door deze weer in te stellen op **goedgekeurd**
+   1. Stel de goedkeuringsstatus in op hybris **goedgekeurd**
    1. In AEM:
 
       1. een incrementele update uitvoeren
@@ -408,7 +408,7 @@ Orderhistorie toevoegen aan de [clientcontext](/help/sites-developing/client-con
 
 1. Open de [ontwerppagina voor clientcontext](/help/sites-administering/client-context.md)door:
 
-   * Open een pagina om te bewerken en open de clientcontext met **Ctrl-Alt-c** (vensters) of **control-option-c** (Mac). Gebruik het potloodpictogram in de linkerbovenhoek van de clientcontext om **De ClientContext-ontwerppagina openen**.
+   * Open een pagina om te bewerken en open de clientcontext met **Ctrl-Alt-c** (ramen) of **control-option-c** (Mac) Gebruik het potloodpictogram in de linkerbovenhoek van de clientcontext om **De pagina voor het ontwerpen van ClientContexten openen**.
    * Ga rechtstreeks naar [http://localhost:4502/etc/clientcontext/default/content.html](http://localhost:4502/etc/clientcontext/default/content.html)
 
 1. [Voeg de **Orderhistorie** component](/help/sites-administering/client-context.md#adding-a-property-component) aan de **Winkelwagen** t component van de clientcontext.

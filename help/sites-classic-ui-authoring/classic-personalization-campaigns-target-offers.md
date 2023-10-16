@@ -1,7 +1,7 @@
 ---
 title: Doelaanbiedingen
 seo-title: Target offers
-description: Doelaanbiedingen maken
+description: Maak in Adobe Experience Manager doelaanbiedingen voor gebruik in Adobe Target.
 seo-description: Create target offers
 uuid: 88206181-9708-454a-a22a-05e3fc0247c2
 contentOwner: User
@@ -10,10 +10,10 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: e26bf608-c57c-4346-88fb-32a82cfa82d2
 exl-id: 46c2fbd0-7eff-4a6c-a088-57560ad2c5e4
-source-git-commit: 75c6bb87bb06c5ac9378ccebf193b5416c080bb1
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '93'
-ht-degree: 4%
+source-wordcount: '102'
+ht-degree: 3%
 
 ---
 
@@ -27,7 +27,7 @@ ht-degree: 4%
    ![Lijstweergave](do-not-localize/chlimage_1-11.png)
 
 1. Klikken **Nieuw...**
-1. U kunt de **Titel**, **Naam** en type ervaring die moet worden opgedaan; in dit geval test&amp;Target-aanbieding.
+1. U kunt de **Titel**, **Naam** en type ervaring dat moet worden gemaakt; in dit geval Test&amp;Target-aanbieding.
 
    ![chlimage_1-139](assets/chlimage_1-139.png)
 

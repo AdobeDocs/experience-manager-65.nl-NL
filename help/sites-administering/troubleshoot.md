@@ -1,6 +1,6 @@
 ---
 title: Problemen met Adobe Experience Manager oplossen
-description: Meer informatie over het oplossen van problemen met AEM.
+description: Meer informatie over het oplossen van problemen die zich kunnen voordoen met Adobe Experience Manager.
 uuid: 72379531-915c-45d0-ba70-42b212665272
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: a2fd3c0c1892ac648c87ca0dec440e22144c37a2
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '551'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen b
 
 >[!NOTE]
 >
->Als u problemen met het maken van AEM met het oplossen van problemen oplost, raadpleegt u [Problemen met auteurs oplossen.](/help/sites-authoring/troubleshooting.md)
+>Als u problemen oplost met het schrijven van AEM, raadpleegt u [Problemen met auteurs oplossen.](/help/sites-authoring/troubleshooting.md)
 
 >[!NOTE]
 >
 >Wanneer u problemen ondervindt, is het ook de moeite waard om de lijst met [Bekende problemen](/help/release-notes/release-notes.md) voor uw instantie (release- en servicepacks).
 
-## Het oplossen van problemen scenario&#39;s voor Beheerders {#troubleshooting-scenarios-for-administrators}
+## Problemen oplossen voor beheerders {#troubleshooting-scenarios-for-administrators}
 
 De volgende lijst verstrekt een overzicht van problemen die de beheerders kunnen problemen oplossen:
 
@@ -63,7 +63,7 @@ De volgende lijst verstrekt een overzicht van problemen die de beheerders kunnen
 
 ## Installatieproblemen {#installation-issues}
 
-Zie [Algemene installatieproblemen](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende het oplossen van problemenscenario&#39;s:
+Zie [Veelvoorkomende installatieproblemen](/help/sites-deploying/troubleshooting.md#common-installation-issues) voor informatie over de volgende het oplossen van problemenscenario&#39;s:
 
 * Dubbelklikken op de Quickstart-strip heeft geen effect op het JAR-bestand met een ander programma (zoals archiefbeheer).
 * Toepassingen die op CRX worden uitgevoerd, genereren fouten die zich buiten het geheugen bevinden.
@@ -78,7 +78,7 @@ De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zi
 ### Dumper met slingerdraad gebruiken {#using-sling-thread-dumper}
 
 1. Open de **Webconsole AEM**; bijvoorbeeld bij `https://localhost:4502/system/console/`.
-1. Selecteer **Threads** krachtens **Status** tab.
+1. Selecteer de **Threads** krachtens **Status** tab.
 
 ![screen_shot_2012-02-13at43925pm](assets/screen_shot_2012-02-13at43925pm.png)
 
@@ -96,7 +96,7 @@ De draadstortplaats is een lijst van alle draden Java™ die momenteel actief zi
 
 >[!NOTE]
 >
->U kunt de draaddumps aan een logboekdossier toevoegen door te gebruiken `>>` uitvoeromleiding:
+>U kunt de draaddumps aan een logboekdossier toevoegen door `>>` uitvoeromleiding:
 >
 >`jstack <pid> >> /path/to/logfile.log`
 
@@ -107,7 +107,7 @@ Zie de [Hoe u de Thread Dumps van een JVM inneemt](https://experienceleague.adob
 Wanneer de functionaliteit voor AEM WCM wordt ontwikkeld, kunnen de zittingen van JCR worden geopend (vergelijkbaar met het openen van een gegevensbestandverbinding). Als de geopende sessies nooit gesloten zijn, kan uw systeem de volgende symptomen ervaren:
 
 * Het systeem wordt langzamer.
-* U kunt veel van CacheManager zien: resizeAll ingangen in het logboekdossier; het volgende getal (size=&lt;x>) geeft het aantal caches weer. Elke sessie opent meerdere caches.
+* U kunt veel van CacheManager zien: resizeAll ingangen in het logboekdossier; het volgende aantal (grootte=&lt;x>) geeft het aantal caches weer. Elke sessie opent meerdere caches.
 * Van tijd tot tijd heeft het systeem onvoldoende geheugen (na een paar uur, dagen of weken - afhankelijk van de ernst).
 
 Raadpleeg het artikel in de Knowledge Base als u niet-afgesloten sessies wilt analyseren en wilt weten welke code een sessie niet sluit [Niet-gesloten sessies analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
@@ -118,7 +118,7 @@ De status van de OSGi-bundels kan ook een vroege indicatie geven van mogelijke p
 
 1. Open de **Webconsole AEM**; bijvoorbeeld bij `https://localhost:4502/system/console/`.
 1. Selecteren **Bundels** krachtens **OSGI** tab.
-1. Controle:
+1. Controleren:
 
    * de status van de bundels. Als er inactief of ontevreden zijn, probeert u de bundel te stoppen en opnieuw te starten. Als het probleem zich blijft voordoen, kunt u het verder onderzoeken met andere methoden.
    * of een van de bundels afhankelijkheden mist. Dergelijke details kunnen worden gezien door de individuele bundelnaam te klikken, die een verbinding is (het volgende voorbeeld heeft geen kwesties):

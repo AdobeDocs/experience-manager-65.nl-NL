@@ -1,7 +1,7 @@
 ---
 title: AEM Sites - GDPR-gereedheid
 seo-title: AEM Sites - GDPR Readiness
-description: Meer informatie over de gereedheid van GDPR voor AEM Sites.
+description: Meer informatie over de procedures voor het verwerken van GDPR-aanvragen in AEM Sites en over het gebruik ervan.
 seo-description: Learn about the details of GDPR Readiness for AEM Sites.
 uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: d8ae63edd71c7d27fe93d24b30fb00a29332658d
+source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
 workflow-type: tm+mt
-source-wordcount: '831'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy; zoals GDPR, CCPA enz.
+>De GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy, zoals de GDPR, de CCPA, enz.
 
 De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de bescherming van persoonsgegevens treedt in werking in mei 2018.
 
-AEM Sites is klaar om klanten te helpen hun verplichtingen op het gebied van GDPR-naleving na te komen. Deze pagina begeleidt klanten door de procedures om GDPR-verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
+AEM Sites is klaar om klanten te helpen bij het nakomen van hun GDPR-verplichtingen. Deze pagina begeleidt klanten door de procedures om GDPR-verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Zie voor meer informatie [GDPR-pagina in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
+Zie voor meer informatie de [GDPR-pagina in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html).
 
 >[!NOTE]
 >
@@ -63,7 +63,7 @@ Zie voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met 
 
 AEM biedt een optionele gegevenslaag met [ContextHub](/help/sites-developing/contexthub.md). Dit houdt bezoekersspecifieke gegevens in browser, die voor op regel-gebaseerde verpersoonlijking moeten worden gebruikt.
 
-Deze bezoekergegevens worden standaard niet in AEM opgeslagen. AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
+Door gebrek, wordt dit bezoeker-gegeven niet opgeslagen in AEM; AEM verzendt regels naar de gegevenslaag om verpersoonlijkingsbesluiten in browser te nemen.
 
 >[!NOTE]
 >
@@ -86,28 +86,28 @@ Deze richtlijnen voeren opt-in als gebrek uit. Daarom moet een websitebezoeker h
 
 * Als een plaatsbezoeker de voorwaarden van de plaats goedkeurt, zou het opt-outkoekje ContextHub moeten worden verwijderd:
 
-   ```
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   ```
+  ```
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  ```
 
 * Als een plaatsbezoeker niet de voorwaarden van de plaats goedkeurt, zou het opt-out van ContextHub koekje moeten worden geplaatst:
 
-   ```
-   ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
-   ```
+  ```
+  ContextHub.Utils.Cookie.setItem('cq-opt-out', 1);
+  ```
 
 * Om te controleren of ContextHub op opt-out wijze loopt, zou de volgende vraag in de browser console moeten worden gemaakt:
 
-   ```
-   var isOptedOut = ContextHub.isOptedOut(true) === true;
-   // if isOptedOut is true, ContextHub is running in opt-out mode
-   ```
+  ```
+  var isOptedOut = ContextHub.isOptedOut(true) === true;
+  // if isOptedOut is true, ContextHub is running in opt-out mode
+  ```
 
 ### Previewing persistentie van ContextHub {#previewing-persistence-of-contexthub}
 
 Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
 
-* Gebruik de browserconsole; bijvoorbeeld:
+* Gebruik de browserconsole, bijvoorbeeld:
 
    * Chroom:
 
@@ -116,6 +116,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
          * Local Storage > (website) > ContextHubPersistence
          * Session Storage > (website) > ContextHubPersistence
          * Cookies > (website) > SessionPersistence
+
    * Firefox:
 
       * Open Developer Tools > Storage:
@@ -123,14 +124,16 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
          * Local Storage > (website) > ContextHubPersistence
          * Session Storage > (website) > ContextHubPersistence
          * Cookies > (website) > SessionPersistence
+
    * Safari:
 
       * Open Voorkeuren > Geavanceerd > Ontwikkelmenu tonen in menubalk
       * Ontwikkelen openen > JavaScript-console tonen
 
          * Console > Opslag > Lokale Opslag > (website) > ContextHubPersistence
-         * Console > Storage > Session Storage > (website) > ContextHubPersistence
+         * Console > Opslag > Sessieopslag > (website) > ContextHubPersistence
          * Console > Opslag > Cookies > (website) > ContextHubPersistence
+
    * Internet Explorer:
 
       * Developer Tools openen > Console
@@ -138,9 +141,6 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
          * localStorage.getItem(&#39;ContextHubPersistence&#39;)
          * sessionStorage.getItem(&#39;ContextHubPersistence&#39;)
          * document.cookie
-
-
-
 
 * Gebruik ContextHub API, in de browser console:
 
@@ -151,8 +151,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
-
+     De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
 
 Als u bijvoorbeeld gegevens wilt weergeven die zijn opgeslagen in localStorage:
 
@@ -165,12 +164,12 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * Local Storage > (website) > ContextHubPersistence
       * Session Storage > (website) > ContextHubPersistence
       * Cookies > (website) > SessionPersistence
+
    * Firefox - open Developer Tools > Storage:
 
       * Local Storage > (website) > ContextHubPersistence
       * Session Storage > (website) > ContextHubPersistence
       * Cookies > (website) > SessionPersistence
-
 
 * Gebruik ContextHub API, in de browser console:
 
@@ -181,8 +180,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-      De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
-
+     De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
 
 Als u bijvoorbeeld gegevens wilt weergeven die zijn opgeslagen in localStorage:
 
@@ -197,27 +195,27 @@ Om de persistentie te ontruimen ContextHub:
 
 * Om persistentie van momenteel geladen opslag te ontruimen:
 
-   ```
-   // in order to be able to fully access persistence layer, Opt-Out must be turned off
-   ContextHub.Utils.Cookie.removeItem('cq-opt-out');
-   
-   // following call asks all currently loaded stores to clear their data
-   ContextHub.cleanAllStores();
-   
-   // following call asks all currently loaded stores to set back default values (provided in their configs)
-   ContextHub.resetAllStores();
-   ```
+  ```
+  // in order to be able to fully access persistence layer, Opt-Out must be turned off
+  ContextHub.Utils.Cookie.removeItem('cq-opt-out');
+  
+  // following call asks all currently loaded stores to clear their data
+  ContextHub.cleanAllStores();
+  
+  // following call asks all currently loaded stores to set back default values (provided in their configs)
+  ContextHub.resetAllStores();
+  ```
 
-* een specifieke persistentielaag te wissen; bijvoorbeeld sessionStorage:
+* Om een specifieke persistentielaag te ontruimen, bijvoorbeeld, sessionStorage:
 
-   ```
-   var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
-   storage.setItem('/store', null);
-   storage.setItem('/_', null);
-   
-   // to confirm that nothing is stored:
-   console.log(storage.getTree());
-   ```
+  ```
+  var storage = new ContextHub.Utils.Persistence({ mode: ContextHub.Utils.Persistence.Modes.SESSION });
+  storage.setItem('/store', null);
+  storage.setItem('/_', null);
+  
+  // to confirm that nothing is stored:
+  console.log(storage.getTree());
+  ```
 
 * Om alle persistentielagen te ontruimen ContextHub, moet de aangewezen code voor alle lagen worden geroepen:
 

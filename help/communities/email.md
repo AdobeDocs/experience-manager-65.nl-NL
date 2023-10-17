@@ -1,6 +1,6 @@
 ---
 title: E-mail configureren
-description: E-mailconfiguratie voor gemeenschappen
+description: Leer hoe u e-mailmeldingen en abonnementen voor Adobe Experience Manager Communities configureert.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '743'
+source-wordcount: '752'
 ht-degree: 0%
 
 ---

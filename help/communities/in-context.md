@@ -1,19 +1,15 @@
 ---
 title: In context Moderatie
-seo-title: In-Context Moderation
-description: Hoe te om moderatoracties uit te voeren
-seo-description: How to perform moderator actions
-uuid: 282a8bea-2822-4e5c-b9f4-4d9a5380d895
+description: Leer hoe beheerders en vertrouwde leden van de gemeenschap moderatoracties in de Gemeenschappen van Adobe Experience Manager kunnen uitvoeren.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 role: Admin
 exl-id: 47b3c19c-5228-4b72-b78c-7ed71b308921
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '795'
 ht-degree: 0%
 
 ---
@@ -30,7 +26,7 @@ Bezoek het moderatieoverzicht voor een beschrijving van [matigingsmaatregelen](m
 
 ## Moderniseringsinterface {#moderation-ui}
 
-UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binnen de dialoog voor het posten van en het beheren van gebruiker geproduceerde inhoud (UGC). De elementen van de gebruikersinterface worden bepaald door de status van de bezoeker van de site - of ze nu ...
+UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binnen de dialoog voor het posten van en het beheren van user-generated inhoud (UGC). De elementen van de gebruikersinterface worden bepaald door de status van de bezoeker van de site - of ze nu ...
 
 1. Het lid dat de inhoud heeft gepost.
 1. Een vertrouwde lidmoderator.
@@ -40,11 +36,11 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 ## Voorbeeld {#example}
 
-Met de [Geometrixx inschakelen](http://localhost:4503/content/sites/engage/en.html) site gemaakt bij [Aan de slag met AEM Communities](getting-started.md), is het mogelijk om snel een draad in een forum op te zetten waarop om diverse matigingsactiviteiten in het publicatiemilieu te ervaren, zoals hieronder wordt gezien.
+Met de [Geometrixx inschakelen](http://localhost:4503/content/sites/engage/en.html) site gemaakt bij [Aan de slag met AEM Communities](getting-started.md), is het mogelijk een thread op te zetten in een forum waarop diverse moderniseringsactiviteiten in de publicatieomgeving kunnen worden uitgevoerd. Zie hieronder.
 
-Aaron McDonald (aaron.mcdonald@mailinator.com) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de groep van community-engact-moderators bij het maken van de site.
+Aaron McDonald (`aaron.mcdonald@mailinator.com`) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de groep van moderatoren in de gemeenschap bij het maken van de site.
 
-Rebekah Larsen (rebekah.larsen@trashymail.com) kan worden toegevoegd als lid van een groep van leden die zich met de gemeenschap bezighouden, via de [Ledenconsole](members.md).
+Rebekah Larsen (`rebekah.larsen@trashymail.com`) kan worden toegevoegd als lid van een gemeenschap-gespreksgroep die [Ledenconsole](members.md).
 
 Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar [Gebruikers en gebruikersgroepen beheren](users.md).
 
@@ -91,7 +87,7 @@ Ga voor meer informatie over gebruikersgroepen uit de gebruikersgemeenschap naar
 
 Hier volgt een weergave van het forum dat wordt weergegeven door een bezoeker van de site die niet is aangemeld (5).
 
-Een anonieme bezoeker van de site kan alleen het forum bekijken, maar kan geen inhoud plaatsen en geen moderatieacties uitvoeren.
+Een anonieme bezoeker van de site kan alleen het forum bekijken, maar mag geen inhoud plaatsen en geen moderatiehandelingen uitvoeren.
 
 ![bezoeker van het communityforum](assets/community-forum-visitor.png)
 
@@ -124,11 +120,11 @@ Opmerking:
 
 ![community-admin-forum](assets/community-admin-forum.png)
 
-Selecteer het menu-item Beheer voor toegang tot het dialoogvenster [moderatieconsole](moderation.md) uit de publicatieomgeving.
+Selecteer het menupunt van het Beleid zodat kunt u tot [moderatieconsole](moderation.md) uit de publicatieomgeving.
 
 Bericht dat, voor een beheerder, alle moderatable inhoud zichtbaar is, niet alleen inhoud van de de communautaire plaats van de Modus van de Geometrixx.
 
-Het zoekfilter is een sidepanel dat in- en uitschakelt.
+Het zoekfilter is een zijpaneel dat tussen open en gesloten schakelt.
 
 Afmelden.
 
@@ -136,7 +132,7 @@ Afmelden.
 
 ### Moderator van de Gemeenschap (#2) {#community-moderator}
 
-Log in als Aaron McDonald (aaron.mcdonal@mailinator.com), een moderator van de gemeenschap, en open de thread door Forum te selecteren, en lees dan meer voor de bulgvogelpost.
+Log in als Aaron McDonald (`aaron.mcdonal@mailinator.com`), een moderator van de gemeenschap, en toegang tot de draad door Forum te selecteren, en dan gelezen meer voor de kolibrieppost.
 
 Opmerking:
 
@@ -147,11 +143,11 @@ Opmerking:
 
 ![gemeenschapsforum-moderator](assets/community-forum-moderator.png)
 
-Selecteer het menu-item Beheer voor toegang tot het dialoogvenster [moderatieconsole](moderation.md) uit de publicatieomgeving.
+Selecteer het menupunt van het Beleid zodat kunt u tot [moderatieconsole](moderation.md) uit de publicatieomgeving.
 
 Bericht dat, voor een communautaire moderator, slechts moderatable inhoud van de de communautaire plaats van de Modus van de Geometrixx is zichtbaar.
 
-Merk op de communautaire moderator de zelfde opties heeft zoals de beheerder (het beeld is met onderzoek sidebar geknepen gesloten), maar geen toegang tot andere AEM consoles.
+Merk op dat de communautaire moderator de zelfde opties zoals de beheerder heeft (het beeld is met onderzoek sidebar geknepen gesloten), maar geen toegang tot andere AEM consoles.
 
 Afmelden.
 
@@ -159,7 +155,7 @@ Afmelden.
 
 ### Inhoudsauteur (#1) {#content-author}
 
-Meld u aan als Rebekah Larsen (rebekah.larsen@mailinator.com), een lid van de gemeenschap dat de thread heeft gestart, en open de thread door Forum te selecteren en lees vervolgens meer voor de bulgvogelpost.
+Aanmelden als Rebekah Larsen (`rebekah.larsen@mailinator.com`), een lid van de gemeenschap die de draad begon, en toegang tot de draad door Forum te selecteren, en dan gelezen meer voor de het kolieren post.
 
 Opmerking:
 

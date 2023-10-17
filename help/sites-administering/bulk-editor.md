@@ -1,15 +1,15 @@
 ---
 title: De Bulkeditor
-description: Leer hoe u de Bulk-editor kunt gebruiken.
+description: Leer hoe u de Bulk-editor kunt gebruiken voor efficiënte bewerkingen wanneer de visuele paginacontext niet nodig is.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: c63e044c-4d2a-44d3-853b-8e7337e1ee03
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '1158'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Met de Bulkeditor kunt u:
 De Bulkeditor gebruiken om meerdere items tegelijk te bewerken:
 
 1. In de **Gereedschappen** console, klik **Importeurs** map om deze uit te vouwen.
-1. Dubbelklik op de knop **Bulkeditor** om het te openen.
+1. Dubbelklik op de knop **Bulkeditor**.
 1. Voer uw selectievereisten in:
 
 <table>
@@ -78,11 +78,11 @@ De Bulkeditor gebruiken om meerdere items tegelijk te bewerken:
   </tr>
   <tr>
    <td>Zoekparameters</td>
-   <td>Voer met behulp van GQL-parameters de zoektekenreeks in waarnaar de Bulk-editor moet zoeken in de gegevensopslagruimte, bijvoorbeeld <code>type:Page</code> zoekt naar alle pagina's in het hoofdpad; <code>text:professional</code> zoekt naar alle pagina's waarop het woord "professioneel" staat, en <code>"jcr:title":English</code> zoekt naar alle pagina's die "Engels"als titel hebben. U kunt alleen naar tekenreeksen zoeken.</td>
+   <td>Gebruikend parameters GQL, ga het onderzoekskoord in u de BulkRedacteur wilt zoeken in de bewaarplaats. Bijvoorbeeld: <code>type:Page</code> zoekt naar alle pagina's in het hoofdpad; <code>text:professional</code> zoekt naar alle pagina's waarop het woord "professioneel" staat, en <code>"jcr:title":English</code> zoekt naar alle pagina's die "Engels"als titel hebben. U kunt alleen naar tekenreeksen zoeken.</td>
   </tr>
   <tr>
    <td>Inhoudsmodus, selectievakje</td>
-   <td>Schakel dit selectievakje in om de eigenschappen in het dialoogvenster te lezen <code>jcr:content</code> subknooppunt van de zoekresultaten, indien aanwezig. Alleen gebruiken voor pagina's. Namen van eigenschappen beginnen met <code>"jcr:content/"</code></td>
+   <td>Schakel dit selectievakje in zodat u eigenschappen kunt lezen in het dialoogvenster <code>jcr:content</code> subknooppunt van de zoekresultaten, indien aanwezig. Alleen gebruiken voor pagina's. Namen van eigenschappen beginnen met <code>"jcr:content/"</code></td>
   </tr>
   <tr>
    <td>Eigenschappen/kolommen</td>
@@ -104,7 +104,7 @@ In het bovenstaande voorbeeld worden alle pagina&#39;s die voldoen aan uw zoekcr
 
    ![Resultaten van de Bulkeditor](assets/chlimage_1-39.png)
 
-1. Breng de gewenste wijzigingen aan door in een cel te dubbelklikken.
+1. Dubbelklik op een cel zodat u wijzigingen kunt aanbrengen.
 
    ![bulksgewijs bewerken](assets/srchresultedit.png)
 
@@ -117,18 +117,18 @@ In het bovenstaande voorbeeld worden alle pagina&#39;s die voldoen aan uw zoekcr
 #### Aanvullende GQL-zoekparameters {#additional-gql-query-parameters}
 
 * **pad:** alleen zoekknooppunten onder dit pad. Als u meer dan één termijn met een wegprefix specificeert, slechts wordt het laatste overwogen.
-* **type:** alleen retourknooppunten van de opgegeven knooppunttypen. Dit omvat primaire en mixintypes. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
+* **type:** alleen retourknooppunten van het opgegeven knooppunttype. Dit omvat primaire en mixintypes. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
 * **bestelling:** het resultaat van de opgegeven eigenschappen te bepalen. U kunt meerdere door komma&#39;s gescheiden eigenschapsnamen opgeven. Als u het resultaat in aflopende volgorde wilt rangschikken, plaatst u gewoon een minteken voor de naam van de eigenschap. Bijvoorbeeld de volgorde:-name. Als u een plusteken gebruikt, wordt het resultaat in oplopende volgorde geretourneerd. Dit is ook de standaardinstelling.
 * **limiet:** beperkt het aantal resultaten met een interval. Limiet:10..20 Het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. limit:10 (retourneert de eerste tien resultaten).
 
 ### Inhoud exporteren {#exporting-content}
 
-U moet mogelijk inhoud exporteren en er wijzigingen in aanbrengen in een Excel-spreadsheet. U kunt bijvoorbeeld een mailinglijst exporteren en de gebiedscode van alle vermelde telefoonnummers rechtstreeks in Excel wijzigen, of extra regels toevoegen enzovoort.
+Exporteer inhoud indien nodig naar een Excel-werkblad om wijzigingen aan te brengen. U kunt bijvoorbeeld een mailinglijst exporteren en de gebiedscode van alle vermelde telefoonnummers rechtstreeks in Excel wijzigen, of extra regels toevoegen.
 
 Inhoud exporteren:
 
 1. Zoeken naar inhoud zoals beschreven in [Inhoud zoeken en bewerken](#searching-and-editing-content).
-1. Klikken **Exporteren** om de veranderingen in een lusje-gescheiden spreadsheet van Excel uit te voeren. AEM WCM vraagt u waar u het bestand wilt downloaden.
+1. Klikken **Exporteren** zodat u de wijzigingen kunt exporteren naar een Excel-werkblad met tabs als scheidingsteken. AEM WCM vraagt u waar u het bestand wilt downloaden.
 
    >[!NOTE]
    >

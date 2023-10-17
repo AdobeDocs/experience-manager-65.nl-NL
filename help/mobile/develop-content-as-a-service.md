@@ -1,13 +1,13 @@
 ---
 title: Inhoud leveren
-description: Inhoud leveren
+description: Leer hoe u alle inhoud in Adobe Experience Manager kunt gebruiken om de beoogde app-ervaring te bieden.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 85e73679-684e-402f-8186-8b56d8bd9372
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '961'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Dit omvat het gebruik van elementen, site-inhoud, CAAS-inhoud (over-the-air) en 
 
 >[!NOTE]
 >
->**Over-the-air inhoud** U kunt uit elk van de bovenstaande items komen via ContentSync-handlers. Het kan worden gebruikt om de verpakking en de levering in batches te verzenden via ritssluitingen en updates of dergelijke pakketten te onderhouden.
+>**Over-the-air inhoud** kan uit om het even welk bovengenoemd door handlers ContentSync komen. Het kan worden gebruikt om de verpakking en de levering in batches te verzenden via ritssluitingen en updates of dergelijke pakketten te onderhouden.
 
 Er zijn drie belangrijke soorten materiaal die de Diensten van de Inhoud leveren:
 
@@ -121,18 +121,18 @@ De volgende opties worden overwogen:
 
 Kanaalonafhankelijke inhoud is een manier om AEM inhoudconstructies, zoals pagina&#39;s, toegankelijk te maken zonder dat u zich zorgen hoeft te maken over de lay-out, componenten of andere kanaalspecifieke informatie.
 
-Deze inhoudentiteiten worden gegenereerd met behulp van een inhoudsmodel om de AEM structuren om te zetten in een JSON-indeling. De resulterende JSON-gegevens bevatten informatie over de gegevens van de inhoud die zijn losgekoppeld van de AEM-opslagplaats. Dit omvat het retourneren van metagegevens en AEM verwijzingskoppelingen naar elementen en de relaties tussen inhoudsstructuren, waaronder de hiërarchie van entiteiten.
+Deze inhoudentiteiten worden gegenereerd met behulp van een inhoudsmodel om de AEM structuren om te zetten in een JSON-indeling. De resulterende JSON-gegevens bevatten informatie over de gegevens van de inhoud die zijn losgekoppeld van de AEM opslagplaats. Dit omvat het retourneren van metagegevens en AEM verwijzingskoppelingen naar elementen en de relaties tussen inhoudsstructuren, waaronder de hiërarchie van entiteiten.
 
 ### Kanaalonafhankelijke inhoud beheren {#managing-channel-independent-content}
 
 Inhoud kan op verschillende manieren aan de app worden toegevoegd.
 
-1. GET content ZIPS via AEM over de lucht
+1. GET-inhoud ZIPS via AEM over de lucht
 
    * Handlers voor het synchroniseren van inhoud kunnen het ZIP-pakket rechtstreeks bijwerken of door bestaande renderers van inhoud aan te roepen
 
       * Platform Handlers
-      * AEMM-handlers
+      * AEM handlers
       * Aangepaste handlers
 
 1. Inhoud rechtstreeks via inhoudrenderers GET

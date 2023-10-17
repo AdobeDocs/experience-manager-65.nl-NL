@@ -1,13 +1,13 @@
 ---
 title: Rendering en levering
-description: Rendering en levering
+description: Leer hoe u Adobe Experience Manager-inhoud kunt renderen door Default Services te verkopen en JSON en andere indelingen te renderen.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: f0c543ae-33ed-40bb-9eb7-0dc3bdea69e0
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -16,11 +16,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager-inhoud (AEM) kan eenvoudig worden gerenderd via [Standaardservers splitsen](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) renderen [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen.
 
-Die buiten-de-box-renders lopen doorgaans de repository en retourneren inhoud zoals ze is.
+Die uitleveringen buiten de doos lopen normaal gesproken de opslagplaats en retourneren inhoud.
 
 AEM, als Verbergen, steunt ook het ontwikkelen van en het opstellen van douane het plaatsen renderers om volledige controle van het teruggegeven schema en de inhoud te nemen.
 
@@ -42,7 +42,7 @@ Gebruiken **&lt;resource.caas span=&quot;&quot; id=&quot;1&quot; translate=&quot
   </tr>
   <tr>
    <td>EXPORTCONFIG</td>
-   <td><p><strong>OPTIONEEL</strong><br /> </p> <p>een exportconfiguratie gevonden onder /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Als u deze weglaat, wordt de standaardexportconfiguratie toegepast </p> </td>
+   <td><p><strong>OPTIONEEL</strong><br /> </p> <p>een exportconfiguratie gevonden onder /apps/mobileapps/caas/exportConfigs/EXPORT-CONFIG<br /> <br /> Indien weggelaten, wordt de standaardexportconfiguratie toegepast </p> </td>
   </tr>
   <tr>
    <td>DEPTH-INT</td>
@@ -155,12 +155,12 @@ In de volgende tabel worden de eigenschappen weergegeven:
    <td>String[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Voor de volgende het rangschikken middeltypes, keer niet de standaardJson van CaaS uitvoer.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
+   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardJson van CaaS uitvoer terug.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
 
-### Bestaande Content Services Exportconfiguraties {#existing-content-services-export-configs}
+### Bestaande Content Services Exporteren Configs {#existing-content-services-export-configs}
 
 De Diensten van de inhoud omvat twee uitvoerconfiguraties:
 

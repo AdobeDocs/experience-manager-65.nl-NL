@@ -1,14 +1,14 @@
 ---
 title: Video-uitvoeringen
-description: Video-uitvoeringen
+description: Leer hoe u Adobe Experience Manager Assets kunt gebruiken om video-uitvoeringen te genereren voor video-elementen van verschillende indelingen, zoals OGG, FLV enzovoort.
 uuid: a02f9ec1-30d9-4cbb-8746-8391ac614f0a
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 discoiquuid: 1601b473-7227-4a56-bb7c-289de2987e4b
 exl-id: a644558e-5be9-4ba2-b560-fc300497fbdf
-source-git-commit: 77687a0674b939460bd34011ee1b94bd4db50ba4
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ De lijst met video-uitvoeringen wordt weergegeven in het dialoogvenster **[!UICO
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Om de volmachtsserver voor DM-Gecodeerde vertoningen te vormen, [Dynamic Media Cloud-services configureren](config-dynamic.md).
+De proxyserver configureren voor met DM gecodeerde uitvoeringen, [Dynamic Media Cloud-services configureren](config-dynamic.md).
 
-U kunt als volgt video-uitvoeringen met de gewenste parameters genereren: [een overeenkomstig videoprofiel maken](video-profiles.md).
+Video-uitvoeringen genereren met de gewenste parameters, [een overeenkomstig videoprofiel maken](video-profiles.md).
 
 Nadat u de proxyserver hebt geconfigureerd en videoprofielen hebt gemaakt, kunt u deze videovoorinstelling opnemen in een verwerkingsprofiel en het verwerkingsprofiel toepassen op een map.
 
@@ -43,4 +43,4 @@ Nadat u de proxyserver hebt geconfigureerd en videoprofielen hebt gemaakt, kunt 
 >
 >Audio afspelen werkt niet voor OGG- en WAV-bestanden in Microsoft® Internet Explorer 11. Een fout `Invalid Source` wordt weergegeven op de pagina met elementdetails voor elementen met de extensie OGG of WAV.
 >
->In MS® Edge en iPad worden OGG-bestanden niet afgespeeld en wordt een niet-ondersteunde indelingsfout weergegeven.
+In MS® Edge en iPad worden OGG-bestanden niet afgespeeld en wordt een niet-ondersteunde indelingsfout weergegeven.

@@ -1,18 +1,14 @@
 ---
 title: Toegang tot werkstromen beheren
-seo-title: Managing Access to Workflows
-description: Leer hoe u de toegang tot Workflows beheert.
-seo-description: Learn how to manage access to Workflows.
-uuid: 58f79b89-fe56-4565-a869-8179c1ac68de
+description: Leer hoe te om de Lijsten van het Toegangsbeheer volgens gebruikersrekeningen te vormen om het beginnen van, en het deelnemen aan, werkschema's toe te staan (of onbruikbaar te maken).
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 exl-id: cc54d637-d66c-49d2-99ee-00d96f1a74e0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '562'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -53,7 +49,7 @@ De modellen van het werkschema erven een standaard toegangsbeheerlijst (ACL) voo
 
 ### Pas ACL voor het specifieke werkschemamodel op /var/workflow/modellen toe {#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models}
 
-Als het workflowmodel is opgeslagen binnen `/var/workflow/models` dan kunt u specifieke ACL, relevant voor slechts dat werkschema, op de omslag toewijzen:
+Als het workflowmodel is opgeslagen binnen `/var/workflow/models`, dan kunt u specifieke ACL, relevant voor slechts dat werkschema, op de omslag toewijzen:
 
 1. Open CRXDE Lite in uw webbrowser (bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Selecteer in de nodestructuur het knooppunt voor de map workflowmodellen:
@@ -61,12 +57,12 @@ Als het workflowmodel is opgeslagen binnen `/var/workflow/models` dan kunt u spe
    `/var/workflow/models`
 
 1. Klik op de knop **Toegangsbeheer** tab.
-1. In de **Beleid voor lokaal toegangsbeheer** (**Toegangsbeheerlijst**). **Item toevoegen**.
-1. In de **Nieuw bericht toevoegen** voegt een nieuw ACE met de volgende eigenschappen toe:
+1. In de **Lokaal beleid voor toegangsbeheer** (**Toegangsbeheerlijst**). **Item toevoegen**.
+1. In de **Nieuw bericht toevoegen** voegt u een ACE toe met de volgende eigenschappen:
 
    * **Opdrachtgever**: `content-authors`
    * **Type**: `Deny`
-   * **Bevoegdheden**: `jcr:read`
+   * **Rechten**: `jcr:read`
    * **rep:glob**: verwijzing naar de specifieke workflow
 
    ![wf-108](assets/wf-108.png)
@@ -92,18 +88,18 @@ Vergelijkbaar met de DAM-workflows die zijn opgeslagen onder
 U kunt ACL aan de omslag zelf dan toevoegen.
 
 1. Open CRXDE Lite in uw webbrowser (bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
-1. Selecteer in de knooppuntstructuur het knooppunt voor de afzonderlijke map in de map met workflowmodellen. bijvoorbeeld:
+1. Selecteer in de knooppuntenstructuur het knooppunt voor de afzonderlijke map in de map met workflowmodellen, bijvoorbeeld:
 
    `/var/workflow/models/prototypes`
 
 1. Klik op de knop **Toegangsbeheer** tab.
 1. In de **Toepasselijk toegangsbeheerbeleid** tabel, klik op het plusteken naar **Toevoegen** een vermelding.
-1. In de **Beleid voor lokaal toegangsbeheer** (**Toegangsbeheerlijst**). **Item toevoegen**.
-1. In de **Nieuw bericht toevoegen** voegt een nieuw ACE met de volgende eigenschappen toe:
+1. In de **Lokaal beleid voor toegangsbeheer** (**Toegangsbeheerlijst**). **Item toevoegen**.
+1. In de **Nieuw bericht toevoegen** voegt u een ACE toe met de volgende eigenschappen:
 
    * **Opdrachtgever**: `content-authors`
    * **Type**: `Deny`
-   * **Bevoegdheden**: `jcr:read`
+   * **Rechten**: `jcr:read`
 
    >[!NOTE]
    >

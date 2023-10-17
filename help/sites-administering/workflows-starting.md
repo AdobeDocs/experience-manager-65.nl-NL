@@ -1,18 +1,14 @@
 ---
 title: Workflows starten
-seo-title: Starting Workflows
-description: Leer hoe u workflows in AEM start.
-seo-description: Learn how to start Workflows in AEM.
-uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
+description: Leer hoe u workflows beheert in Adobe Experience Manager, zodat u ze op verschillende manieren kunt starten, handmatig of automatisch.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 exl-id: 84a1964c-4121-4763-b946-9eee6093747d
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '794'
+source-wordcount: '799'
 ht-degree: 0%
 
 ---
@@ -93,10 +89,10 @@ Een workflowpakket:
 
    >[!NOTE]
    >
-   >De **[Voorzichtig](/help/sites-developing/workflows.md#transient-workflows)** de indicator toont werkschema&#39;s waarvoor de werkschemageschiedenis niet zal voortzetten.
+   >De **[Voorzichtig](/help/sites-developing/workflows.md#transient-workflows)** de indicator toont werkschema&#39;s waarvoor de werkschemageschiedenis niet voortduurt.
 
 1. Selecteren **Workflow starten** op de werkbalk.
-1. Het dialoogvenster Werkstroom uitvoeren wordt geopend, zodat u het volgende kunt opgeven:
+1. Het dialoogvenster Workflow uitvoeren wordt geopend, waarin u het volgende kunt opgeven:
 
    * **Payload**
 
@@ -115,7 +111,7 @@ Een workflowpakket:
 ## Een opstartconfiguratie maken {#creating-a-launcher-configuration}
 
 1. Ga naar de **Workflowstartprogramma&#39;s** console gebruiken **Gereedschappen**, **Workflow** vervolgens **Launchers**.
-1. Selecteren **Maken** vervolgens **Launcher toevoegen** het dialoogvenster openen:
+1. Selecteren **Maken** vervolgens **Launcher toevoegen** om het dialoogvenster te openen:
 
    ![wf-105](assets/wf-105.png)
 
@@ -147,11 +143,11 @@ Een workflowpakket:
 
    * **Functies**
 
-     Een lijst met functies die moeten worden ingeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
+     Een lijst met functies die moeten worden ingeschakeld. Selecteer de gewenste functies met de keuzelijst.
 
    * **Uitgeschakelde functies**
 
-   Een lijst met functies die moeten worden uitgeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
+   Een lijst met functies die moeten worden uitgeschakeld. Selecteer de gewenste functies met de keuzelijst.
 
    * **Workflowmodel**
 
@@ -175,7 +171,7 @@ Een workflowpakket:
      Deze lanceereigenschap is een door komma&#39;s gescheiden lijst met items: &quot;
 
       * `property-name` negeren `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
-      * `event-user-data:<*someValue*>` negeert elke gebeurtenis die het `*<someValue*`> `user-data` door de [`ObservationManager` API](https://www.adobe.io/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String.
+      * `event-user-data:<*someValue*>` negeert elke gebeurtenis die het `*<someValue*`> `user-data` door de [`ObservationManager` API](https://developer.adobe.com/experience-manager/reference-materials/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
 
      Bijvoorbeeld:
 
@@ -187,7 +183,7 @@ Een workflowpakket:
 
 1. Selecteren **Maken**, om de lanceerinrichting te creëren en aan de console terug te keren.
 
-   Zodra de juiste gebeurtenis plaatsvindt, wordt de starter geactiveerd en wordt de workflow gestart.
+   Wanneer de juiste gebeurtenis plaatsvindt, wordt de starter geactiveerd en wordt de workflow gestart.
 
 ## Een opstartconfiguratie beheren {#managing-a-launcher-configuration}
 

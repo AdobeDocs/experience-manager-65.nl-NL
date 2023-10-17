@@ -1,13 +1,13 @@
 ---
 title: Ontwerpen voor Adobe PhoneGap Enterprise in Adobe Experience Manager
-description: PhoneGap
+description: Leer meer over het ontwerpen voor Adobe PhoneGap Enterprise met behulp van sjablonen en componenten om pagina's toe te voegen en te bewerken, componenten te slepen en neer te zetten en media toe te voegen.
 contentOwner: msm-service
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 930a6950-150a-4670-ab48-250b655132fb
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '207'
+source-wordcount: '228'
 ht-degree: 1%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM platform vormt.
 
@@ -28,9 +28,9 @@ Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolco
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}
 
-An ***AEM-auteur* (of *Marketer*)**kan de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
+An ***AEM auteur* (of *Marketer*)**kan de out-of-the-box malplaatjes en de componenten gebruiken om pagina&#39;s toe te voegen en uit te geven. U kunt componenten slepen en neerzetten, en media van alle types van DAM met inbegrip van beelden, video&#39;s, en tekstfragmenten (inhoudsfragmenten) toevoegen.
 
-Zie de volgende bronnen om aan de slag te gaan:
+Zie de volgende bronnen:
 
 * [Mobiele toepassingen ontwerpen](/help/mobile/phonegap-authoring-apps.md)
 * [App-inhoud maken en beheren](/help/mobile/phonegap-manage-app-content.md)
@@ -40,7 +40,7 @@ Zie de volgende bronnen om aan de slag te gaan:
 * [Een AEM Mobile-app maken met een wizard maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
+Meer informatie over **Inhoudsservices**, zie [Overzicht van Content Services](/help/mobile/develop-content-as-a-service.md) aan de slag.
 
 ## Aanvullende bronnen {#additional-resources}
 

@@ -1,14 +1,14 @@
 ---
 title: AEM PhoneGap starten
-description: Meer informatie over de starterkit voor ontwikkelaars.
+description: Leer hoe u de starterkit kunt gebruiken om de basisbeginselen van Adobe Experience Manager Mobile-ontwikkeling te leren kennen.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 7d56b9f0-5aa5-4b68-a85e-7e80415cbc76
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '413'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Voor ontwikkelaars is het de beste plek om te beginnen de Adobe Experience Manager Mobile Starterkit in github te bekijken
 
 https://github.com/Adobe-Marketing-Cloud-Apps/aem-phonegap-starter-kit
 
-De starterkit zorgt ervoor dat u snel aan de slag kunt door de basisbeginselen van AEM Mobile-ontwikkeling te doorlopen, te beginnen met het maken en beheren van projecten, het installeren van het benodigde gereedschap, het definiëren van een Maven-archetype, het bouwen, implementeren en vervolgens uw eigen ervaring creëren.
+De starterkit zorgt ervoor dat je snel door de basisbeginselen van AEM Mobile-ontwikkeling loopt. Het begint met het maken en beheren van projecten, het installeren van het benodigde gereedschap, het definiëren van een Maven-archetype, het bouwen, implementeren en vervolgens uw eigen ervaring creëren.
 
 De ontwikkelaars kunnen dit voorbeeld gebruiken als beginpunt voor het uitproberen van een AEM Mobile-toepassing met PhoneGap. Het runnen door starterkit en de verwijzingstoepassing geeft een stevig inzicht in de grondbeginselen om rijke Mobiele Toepassingen tot stand te brengen.
 
@@ -38,7 +38,7 @@ De ontwikkelaars kunnen dit voorbeeld gebruiken als beginpunt voor het uitprober
 
 ## Sjablonen en componenten {#templates-and-components}
 
-AEM *Sjablonen* en *Componenten* laat lijn-van-bedrijfseigenaars toe om douaneervaringen tot stand te brengen. Beide *Templates *and *Componenten* zijn beschikbaar uit-van-de-doos of kunnen door u, de ontwikkelaar worden ontwikkeld of door bestaande componenten uit te breiden of (geavanceerd) tot stand te brengen greenfield. *Sjablonen* en *Componenten* Dit is de manier waarop de AEM-auteur interessante en relevante ervaringen kan opdoen.
+AEM *Sjablonen* en *Componenten* laat lijn-van-bedrijfseigenaars toe om douaneervaringen tot stand te brengen. Beide *Templates *and *Componenten* zijn beschikbaar uit-van-de-doos of kunnen door u, de ontwikkelaar worden ontwikkeld of door bestaande componenten uit te breiden of (geavanceerd) tot stand te brengen greenfield. *Sjablonen* en *Componenten* Dit is de manier waarop de AEM auteur kan slepen en neerzetten om aantrekkelijke en relevante ervaringen te creëren.
 
 1. [Componenten maken](/help/sites-developing/components.md)
 1. [Sjablonen maken](/help/sites-developing/templates.md)
@@ -51,7 +51,7 @@ Als u de bovenstaande twee stappen goed begrijpt, gaat u naar:
 
 ## De volgende stappen {#the-next-steps}
 
-1. [Mijn AEM Mobile-app starten](/help/mobile/starting-aem-phonegap-app.md)
+1. [Mijn AEM Mobile-app-ervaring starten](/help/mobile/starting-aem-phonegap-app.md)
 1. [De inhoud van mijn app beheren](/help/mobile/phonegap-manage-app-content.md)
 1. [Mijn toepassing samenstellen](/help/mobile/building-app-mobile-phonegap.md)
 1. [De prestaties van mijn app bijhouden met Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)

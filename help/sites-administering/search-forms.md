@@ -1,14 +1,14 @@
 ---
 title: Zoekformulieren configureren
-description: Leer hoe u Search Forms configureert.
+description: Leer hoe u Zoeken in Forms kunt gebruiken om de selectie van zoekvoorspelden aan te passen die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in AEM consoles en deelvensters van de auteursomgeving.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2073'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 Gebruiken **Zoeken in Forms** om de selectie aan te passen van zoekvoorspelden die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in verschillende AEM en/of deelvensters van de auteursomgeving. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
 
-A [predikaat](#predicates-and-their-settings)s is beschikbaar buiten de doos. U kunt veelvoudige predikaten toevoegen, met inbegrip van (onder anderen) het voorspel van het Bezit om naar activa te zoeken die één enkel bezit aanpassen dat door u wordt gespecificeerd, of de Opties voorspellen om activa te zoeken die één of meerdere waarden aanpassen die u voor een bepaald bezit specificeert.
+A [predikaat](#predicates-and-their-settings)s is beschikbaar buiten de doos. U kunt meerdere voorspelden toevoegen, waaronder (onder andere) de voorspelling van de eigenschap, om te zoeken naar elementen die overeenkomen met één eigenschap die door u is opgegeven. Of de opties verwijzen naar zoekelementen die overeenkomen met een of meer waarden die u voor een bepaalde eigenschap opgeeft.
 
 U kunt [de zoekformulieren configureren](#configuring-your-search-forms) worden gebruikt in verschillende consoles en de middelenbrowser (bij het bewerken van pagina&#39;s). De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) kan worden geraadpleegd via:
 
@@ -28,7 +28,7 @@ U kunt [de zoekformulieren configureren](#configuring-your-search-forms) worden 
 
       * **Zoeken in formulieren**
 
-Wanneer u eerst tot deze console toegang hebt kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Zodra u de configuratie hebt aangepast zal het slot - tenzij u verdwijnen [verwijder uw aangepaste configuratie](#deleting-a-configuration-to-reinstate-the-default), in welk geval de standaardwaarde (en de hangslotindicator) opnieuw worden ingevoerd.
+Wanneer u eerst tot deze console toegang hebt, kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Nadat u de configuratie hebt aangepast, verdwijnt het slot tenzij u [verwijder uw aangepaste configuratie](#deleting-a-configuration-to-reinstate-the-default). In dat geval wordt de standaardinstelling (en de hangslotindicator) hersteld.
 
 ![Venster Formulieren zoeken](assets/chlimage_1-374.png)
 
@@ -262,7 +262,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Bereik-opties </td>
-   <td>Een specifieke zoekvoorspelling voor elementen en hetzelfde als gewone voorspelling van Slider. Is nog beschikbaar wegens achterwaartse compatibiliteitskwesties.</td>
+   <td>Een specifieke zoekvoorspelling voor elementen en hetzelfde als gewone voorspelling van Slider. Is nog steeds beschikbaar vanwege compatibiliteitsproblemen met oudere versies.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -295,7 +295,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr>
   <tr>
    <td>Schuifbereik </td>
-   <td>Een gemeenschappelijk onderzoek voorspelt zich uitbreidend de waaiervoorspelling met het schuifvermogen. De waarde van de gezochte eigenschap moet tussen de schuifregelaargrenzen liggen.</td>
+   <td>Een gemeenschappelijke onderzoeksvoorspelling die de waaiervoorspelling met het schuifvermogen uitbreidt. De waarde van de gezochte eigenschap moet tussen de schuifregelaargrenzen liggen.</td>
    <td>
     <ul>
      <li>Veldlabel</li>
@@ -336,7 +336,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 >  `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
 >   * Deze zijn verouderd en zijn alleen beschikbaar voor achterwaartse compatibiliteit.
 >
->Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
+>Deze informatie is uitsluitend ter referentie. Niet wijzigen `/libs`.
 
 ### Instellingen voor voorspelling {#predicate-settings}
 
@@ -358,7 +358,7 @@ Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voo
 
   De eigenschap waarop moet worden gezocht. Er wordt een relatief pad en de jokertekens gebruikt `*/*/*` Geef de diepte van de eigenschap op ten opzichte van de `jcr:content` knooppunt (elke asterisk vertegenwoordigt één knooppuntniveau).
 
-  Als u slechts op een eerste niveaukindknoop van het middel wilt zoeken dat heeft `x` eigenschap op de `jcr:content` knooppuntgebruik `*/jcr:content/x`
+  Als u slechts op een eerste-vlakke kindknoop van het middel wilt zoeken dat heeft `x` eigenschap op de `jcr:content` knooppuntgebruik `*/jcr:content/x`
 
 * **Diepte van eigenschap**
 
@@ -376,7 +376,7 @@ Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voo
 
 * **Optiepad**
 
-  De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren van **+** wordt gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en **-** pictogram dat moet worden verwijderd, indien vereist).
+  De gebruiker kan het pad selecteren met behulp van de Padbrowser op het tabblad Voorspelfunctie. Na het selecteren **+**, wordt het pictogram gebruikt om de selectie toe te voegen aan de lijst met geldige opties (en vervolgens de optie **-** pictogram om te verwijderen, indien nodig).
 
   De opties zijn inhoudsknooppunten die door de gebruiker zijn gemaakt en die de volgende structuur hebben:
 
@@ -388,10 +388,10 @@ In feite hetzelfde als het **Pad naar opties** Alleen dit gebeurt in het gemeens
 * **Enkel selecteren**
 Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
 
-* **Naam/namen van eigenschappen van live-kopie publiceren en kopiëren**
+* **Eigenschapnamen voor publicaties en live kopiëren**
 De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifieke predikaat van Plaatsen.
 
-* De &amp;laatste; op de veldlabels in de **Instellingen** tab betekent dat de velden vereist zijn en dat er een foutbericht verschijnt als deze leeg zijn gelaten
+* De &amp;laatste; op de veldlabels in de **Instellingen** betekent dat de velden verplicht zijn en dat er een foutbericht wordt weergegeven als de velden leeg zijn gelaten.
 
 ## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
 
@@ -401,7 +401,7 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 
 1. Selecteer de configuratie die u wilt aanpassen.
 1. Gebruik de **Bewerken** om de configuratie voor bijwerken te openen.
-1. Als u een nieuwe aanpassing wilt maken, zult u waarschijnlijk [nieuwe basisvelden toevoegen en de instellingen definiëren](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist. Als een bestaande aanpassing u een bestaand gebied en [de instellingen bijwerken](#add-edit-a-predicate-field-and-define-field-settings).
+1. Als u een nieuwe aanpassing wilt maken, is het waarschijnlijk verstandig [nieuwe basisvelden toevoegen en de instellingen definiëren](#add-edit-a-predicate-field-and-define-field-settings) zoals vereist. Als er al een aanpassing is, kunt u een bestaand veld selecteren en [de instellingen bijwerken](#add-edit-a-predicate-field-and-define-field-settings).
 1. Selecteren **Gereed** om de configuratie op te slaan.
 
    >[!NOTE]
@@ -416,15 +416,15 @@ De etiketten voor publiceren en levende exemplaarcontroledozen voor het specifie
 U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bijwerken:
 
 1. [Open de aangepaste configuratie](#creating-opening-a-customized-configuration) voor bijwerken.
-1. Als u een nieuw gebied wilt toevoegen, open **Predicate selecteren** en sleep de vereiste voorspelling naar de gewenste locatie. Bijvoorbeeld de **Datumbereik**:
+1. Als u een gebied wilt toevoegen, open **Predicate selecteren** en sleep de vereiste voorspelling naar de gewenste locatie. Bijvoorbeeld de **Datumbereik**:
 
    ![Een zoekformulier bewerken](assets/chlimage_1-375.png)
 
 1. Afhankelijk van of:
 
-   * U voegt een nieuw veld toe:
+   * U voegt een veld toe:
 
-     Na het toevoegen van predikaat **Instellingen** worden de eigenschappen die kunnen worden gedefinieerd, geopend en weergegeven.
+     Na het toevoegen van predikaat, **Instellingen** wordt geopend en worden de eigenschappen weergegeven die kunnen worden gedefinieerd.
 
    * U wilt een bestaande voorspelling bijwerken:
 
@@ -442,11 +442,11 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    ![Voorbeeld van zoekformulieren](do-not-localize/chlimage_1-31.png)
 
-1. Hierdoor worden de zoekformulieren weergegeven zoals deze worden weergegeven (volledig uitgevouwen) in de kolom Zoeken van de desbetreffende console.
+1. Op deze manier worden de zoekformulieren weergegeven zoals ze worden weergegeven (volledig uitgevouwen) in de kolom Zoeken van de desbetreffende console.
 
    ![Een voorbeeld van het zoekformulier bekijken](assets/chlimage_1-377.png)
 
-1. **Sluiten** de voorvertoning om de configuratie te retourneren en te voltooien.
+1. **Sluiten** de voorvertoning zodat u de configuratie kunt terugzetten en voltooien.
 
 ### Een voorspelbaar veld verwijderen {#deleting-a-predicate-field}
 
@@ -455,13 +455,13 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
 
    ![Pictogram Verwijderen](do-not-localize/chlimage_1-32.png)
 
-1. In een dialoogvenster wordt bevestiging van de verwijderactie gevraagd.
+1. Een dialoogvenster vraagt om bevestiging van de verwijderactie.
 
 1. Bevestig dit en eventuele andere wijzigingen met **Gereed**.
 
 ### Een configuratie verwijderen (om de standaardinstelling te herstellen) {#deleting-a-configuration-to-reinstate-the-default}
 
-Zodra u een configuratie hebt aangepast zal dit de gebreken met voeten treden. U kunt de standaardconfiguratie herstellen door uw aangepaste configuratie te schrappen.
+Nadat u een configuratie hebt aangepast, treedt dit de gebreken met voeten. U kunt de standaardconfiguratie herstellen door uw aangepaste configuratie te schrappen.
 
 >[!NOTE]
 >
@@ -477,13 +477,13 @@ Het schrappen van een aangepaste configuratie wordt gedaan van de console:
 
 ### Voorwaarden voor opties toevoegen {#adding-options-predicates}
 
-Met de voorspelling van opties (Opties, eigenschap Opties) kunt u een item configureren waarnaar moet worden gezocht. Deze worden meestal gebruikt om rechtstreeks onder de pagina naar iets te zoeken, bijvoorbeeld een eigenschap op het paginaknooppunt.
+Met de voorspelling van opties (Opties, eigenschap Opties) kunt u een item configureren waarnaar moet worden gezocht. Ze worden gebruikt om rechtstreeks onder de pagina naar iets te zoeken, bijvoorbeeld een eigenschap op het paginaknooppunt.
 
 In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebruikt om een pagina te maken) worden de desbetreffende stappen geïllustreerd:
 
 1. Maak het knooppunt waarin de eigenschap wordt gedefinieerd waarop moet worden gezocht.
 
-   U hebt een basisknooppunt nodig met definities van de afzonderlijke opties die beschikbaar zijn voor de gebruiker.
+   U hebt een basisknooppunt met definities van de afzonderlijke opties nodig om beschikbaar te zijn voor de gebruiker.
 
    De knooppunten voor de afzonderlijke opties hebben de volgende eigenschappen nodig:
 
@@ -494,7 +494,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    >[!NOTE]
    >
-   >U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
+   >Do ***niet*** om het even wat in `/libs` pad.
    >
    >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
@@ -526,7 +526,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    ![Eigenschapspad toevoegen](assets/chlimage_1-380.png)
 
 1. Selecteren **Gereed** om uw configuratie op te slaan.
-1. Navigeer aan de aangewezen console (in dit voorbeeld, **Sites**) en opent u de **Zoeken** spoorwegen. De nieuwe zoekformulieren worden samen met de verschillende opties weergegeven. Selecteer de gewenste optie om de zoekresultaten weer te geven:
+1. Navigeer aan de aangewezen console (in dit voorbeeld, **Sites**) en opent u de **Zoeken** spoorwegen. De nieuwe zoekformulieren en de verschillende opties zijn zichtbaar. Selecteer de gewenste optie zodat u de zoekresultaten kunt zien:
 
    ![De eindresultaten](assets/chlimage_1-381.png)
 

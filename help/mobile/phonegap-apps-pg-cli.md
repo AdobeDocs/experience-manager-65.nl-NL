@@ -1,16 +1,14 @@
 ---
 title: Apps ontwikkelen met PhoneGap CLI
-description: Meer informatie over het ontwikkelen van toepassingen met PhoneGap CLI.
-uuid: 9a66171d-19af-40db-9c07-f5dd9561e1b5
+description: Leer hoe u met PhoneGap CLI toepassingen voor mobiele apparaten ontwikkelt met behulp van een 'bootstrapped' ontwikkelomgeving.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 exl-id: fbeceb70-b199-478b-907b-253ed212ff99
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '666'
+source-wordcount: '673'
 ht-degree: 0%
 
 ---
@@ -19,31 +17,31 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 Als ontwikkelaar kunt u uw app op elk gewenst moment op een apparaat of in een emulator uitvoeren, op voorwaarde dat u de ontwikkelomgeving hebt geconfigureerd.
 
-Voor het uitvoeren van de volgende voorbeelden hebt u een systeem nodig waarop OS X (Mac) met Xcode wordt uitgevoerd, of een Mac/Win/Linux-systeem waarop de Android™ SDK is geïnstalleerd.
+Voor het uitvoeren van de volgende voorbeelden hebt u een systeem nodig waarop macOS X met Xcode wordt uitgevoerd, of een Mac/Win/Linux-systeem waarop de Android™ SDK is geïnstalleerd.
 
 ## Bootstrap uw ontwikkelomgeving {#bootstrap-your-development-environment}
 
 PhoneGap CLI instellen (`https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface`)
 
-Voor iOS: Voor het ontwikkelen voor iPhones en iPads hebt u Apple Xcode IDE nodig.
+Voor iOS: voor de ontwikkeling van iPhones en iPads hebt u Apple Xcode-IDE nodig.
 
 * Gratis downloaden [hier](https://idmsa.apple.com/IDMSWebAuth/signin?appIdKey=891bd3417a7776362562d2197f89480a8547b108fd934911bcbea0110d07f757&amp;path=%2Fdownload%2F&amp;rv=1).
 * Handleiding bij PhoneGap iOS-platform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_ios_index.md.html#iOS%20Platform%20Guide`)
 
-Voor Android™: Voor het ontwikkelen voor iPhones en iPads hebt u Google Android™ Stuido IDE nodig.
+Voor Android™: voor het ontwikkelen voor iPhones en iPads hebt u Google Android™ Stuido IDE nodig.
 
 * Gratis downloaden [hier](https://developer.android.com/studio).
 * Handleiding bij PhoneGap Android™-platform (`https://docs.phonegap.com/en/4.0.0/guide_platforms_android_index.md.html#Android%20Platform%20Guide`)
 
 ## De bron downloaden {#download-the-source}
 
-Wanneer u de ontwikkelomgeving hebt opgestart, downloadt u de bron van de AEM App Build Tile:
+Wanneer u uw ontwikkelomgeving met succes hebt versneld, downloadt u de bron van de AEM App Build Tile:
 
-* Klik op de PhoneGap Build tieldropdown chevron.
+* Klik op de vervolgkeuzelijst PhoneGap Build-tegel.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -56,7 +54,7 @@ Wanneer u de ontwikkelomgeving hebt opgestart, downloadt u de bron van de AEM Ap
 >
 >De ontwikkelingsbron bevat de meest recente status van uw app, maar inclusief niet-gefaseerde wijzigingen. Gebruik de Staging-bron voor het samenstellen van releasekandidaten voor het indienen bij leveranciers van App Store.
 >
->Als u uw app nooit plaatst, wordt de testworkflow geactiveerd wanneer u Staging selecteert (tip: wordt weergegeven als een gefaseerde app in de PhoneGap Enterprise Viewer-app (beschikbaar in de AppStore en Google PlayStore).
+>Als u uw app nooit in het werkgebied plaatst, wordt door het selecteren van Staging de testworkflow (tip: wordt weergegeven als een gefaseerde app in de PhoneGap Enterprise Viewer App die beschikbaar is in de AppStore en Google PlayStore) geactiveerd.
 
 * Klik op Downloaden en sla het ZIP-bestand op uw computer op.
 * Extraheer het gedownloade ZIP-bestand naar uw werkruimte.
@@ -94,7 +92,7 @@ phonegap run ios
 >
 Dit het oplossen van problemen verifieert dat uw CLI van PhoneGap ontwikkelomgeving correct loopt.
 
-## Foutopsporing in JavaScript met Safari- en IOS-foutopsporing {#debug-javascripts-with-safari-and-ios-debug}
+## Foutopsporing in JavaScript met Safari en IOS debuggen {#debug-javascripts-with-safari-and-ios-debug}
 
 U kunt fouten in JavaScript van uw app opsporen met de ontwikkelaarsprogramma&#39;s van Safari, net als bij een webtoepassing.
 
@@ -141,7 +139,7 @@ phonegap run <platform> --emulator
 U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulator of apparaat werkt, stopt de uitvoering van uw app bij die onderbrekingspunten. U kunt de uitvoering doorlopen en de waarden in variabelen inspecteren.
 
 * Klik Middelen in het venster van de Inspecteur van het Web
-* Navigeer in de bronstructuur en klik op het gewenste bronbestand
+* Navigeren in de bronstructuur en op het gewenste bronbestand klikken
 * Klik op het regelnummer naast een onderbrekingspunt
 * Interactie met apparaat of emulator
 
@@ -153,7 +151,7 @@ U kunt onderbrekingspunten overal in de bron instellen. Wanneer u met uw emulato
 
 >[!NOTE]
 >
-Houd de muis boven de huidige methode om de waarden van variabelen weer te geven.
+Als u de waarden van variabelen in de huidige methode wilt zien, plaatst u de muis.
 
 ## De volgende stappen {#the-next-steps}
 

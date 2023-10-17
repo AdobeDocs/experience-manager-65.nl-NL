@@ -1,13 +1,13 @@
 ---
 title: Inhoudsservices
-description: Inhoudsservices
+description: Leer hoe u AEM Mobile Content Services gebruikt om inhoud aan te vragen die door AEM wordt beheerd.
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 exl-id: 955ffb1c-4fa9-43bb-8e5b-2df7f2d17951
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >De functie Inhoudsservices wordt alleen voor voorvertoningen beschreven.
 >
->Deze kan worden gewijzigd met de release van 6.3 GA Service Pack 1.
+>Het is onderhevig aan verandering met de versie van 6.3 Service Pack 1.
 
 AEM Mobile Content Services is een lichtgewicht functie voor het aanvragen van inhoud die door AEM wordt beheerd. Dit biedt alle ontwikkelaars van apps een krachtige manier om inhoud op te halen zonder dat ze diepgaande kennis hoeven te hebben van AEM opslagplaats voor inhoud (JCR) en webframework (Sling). Hierdoor kunnen de toepassingen die u aanvraagt, worden losgekoppeld van de opslagplaats voor inhoud.
 

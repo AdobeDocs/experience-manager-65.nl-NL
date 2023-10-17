@@ -1,16 +1,12 @@
 ---
 title: Workflows beheren
-seo-title: Administering Workflows
-description: Leer hoe u workflows in AEM beheert.
-seo-description: Learn how to administer workflows in AEM.
-uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
+description: Leer hoe u Adobe Experience Manager-activiteiten kunt automatiseren met workflows.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 exl-id: 10eecfb8-d43d-4f01-9778-87c752dee64c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
@@ -23,10 +19,10 @@ Met workflows kunt u Adobe Experience Manager-activiteiten (AEM) automatiseren. 
 
 * Bestaat uit een reeks stappen die in een specifieke volgorde worden uitgevoerd.
 
-   * Elke stap voert een afzonderlijke activiteit uit; bijvoorbeeld wachten op invoer van de gebruiker, een pagina activeren of een e-mailbericht verzenden.
+   * Elke stap voert een afzonderlijke activiteit uit, zoals het wachten op gebruikersinvoer, het activeren van een pagina of het verzenden van een e-mailbericht.
 
 * Kan communiceren met middelen in de gegevensopslagruimte, gebruikersaccounts en AEM services.
-* Kan ingewikkelde activiteiten coördineren die elk aspect van AEM omvatten.
+* Kan ingewikkelde activiteiten coördineren waarbij elk aspect van AEM betrokken is.
 
 De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#39;s worden vertegenwoordigd. Het publicatieproces van website-inhoud omvat bijvoorbeeld doorgaans stappen zoals goedkeuring en aftekening door verschillende belanghebbenden. Deze processen kunnen worden geïmplementeerd als AEM workflows en worden toegepast op inhoudspagina&#39;s en elementen.
 
@@ -42,7 +38,6 @@ De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#3
 >* Workflowmodellen maken en workflowfunctionaliteit uitbreiden: [Workflows ontwikkelen en uitbreiden](/help/sites-developing/workflows.md).
 >* De prestaties verbeteren van workflows die gebruikmaken van aanzienlijke serverresources: [Gelijktijdige workflowverwerking](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 >
-
 
 ## Workflowmodellen en -instanties {#workflow-models-and-instances}
 
@@ -85,16 +80,16 @@ Een gebruiker of een service voert workflowstappen uit, afhankelijk van het type
 
 >[!NOTE]
 >
->Als een fout voorkomt, zou de dienst/stapimplementatie gedrag voor een foutenscenario moeten behandelen. De workflow-engine zelf probeert de taak opnieuw uit, registreert vervolgens een fout en stopt de instantie.
+>Als een fout voorkomt, zou de dienst/stapimplementatie gedrag voor een foutenscenario moeten behandelen. De workflow-engine zelf probeert de taak opnieuw, meldt vervolgens een fout en stopt de instantie.
 
 ## Workflowstatus en handelingen {#workflow-status-and-actions}
 
-Een werkstroom kan een van de volgende status hebben:
+Een werkstroom kan een van de volgende statussen hebben:
 
 * **UITVOEREN**: De werkstroominstantie wordt uitgevoerd.
 * **VOLTOOID**: De werkstroominstantie is beëindigd.
 
-* **GESCHORST**: Markeer de workflow als onderbroken. Zie echter de waarschuwing hieronder over een bekend probleem met deze staat.
+* **GESCHORST**: Geeft aan dat de workflow is onderbroken. Zie echter de Let op onderstaande opmerking over een bekend probleem met deze toestand.
 * **GEABORTEERD**: De werkstroominstantie is beëindigd.
 * **STAAL**: Voor de voortgang van de werkstroominstantie moet een achtergrondtaak worden uitgevoerd, maar de taak kan niet in het systeem worden gevonden. Deze situatie kan zich voordoen wanneer er een fout optreedt bij het uitvoeren van de workflow.
 
@@ -102,13 +97,13 @@ Een werkstroom kan een van de volgende status hebben:
 >
 >Wanneer de uitvoering van een Stap van het Proces in fouten resulteert, verschijnt de stap in Inbox van de beheerder en de werkschemastatus is **UITVOEREN**.
 
-Afhankelijk van de huidige status kunt u acties uitvoeren op het uitvoeren van workflowinstanties wanneer u moet ingrijpen in de normale voortgang van een workflowinstantie:
+Afhankelijk van de status, kunt u acties op het runnen van werkschemainstanties uitvoeren wanneer u in de normale vooruitgang van een werkschemainstantie moet tussenkomen:
 
-* **Onderbreken**: Met Opschorting wijzigt u de status van de workflow in Opgeschort. Zie Voorzichtigheid hieronder:
+* **Onderbreken**: Met Opschorsen wijzigt u de status van de workflow in Opgeschort. Zie Voorzichtigheid hieronder:
 
 >[!CAUTION]
 >
->Het markeren van een workflowstatus op &quot;Suspend&quot; heeft een bekende kwestie. In deze status is het mogelijk om acties uit te voeren voor geschorste workflowitems in een Postvak IN.
+>Het markeren van een workflowstatus op &quot;Suspend&quot; heeft een bekende kwestie. In deze status is het mogelijk om te reageren op geschorste workflowitems in een Postvak IN.
 
 * **Hervatten**: Hiermee herstart u een stilgezette workflow op hetzelfde uitvoerpunt waar deze werd onderbroken, met dezelfde configuratie.
 * **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in **GEABORTEERD**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.

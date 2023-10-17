@@ -1,18 +1,14 @@
 ---
 title: Workflowinstanties beheren
-seo-title: Administering Workflow Instances
-description: Leer hoe u workflowinstanties beheert.
-seo-description: Lear how to administer Workflow Instances.
-uuid: 81e53ef5-fe62-4ed4-b2d4-132aa986d5aa
+description: Leer hoe de workflowconsole verschillende tools biedt voor het beheer van workflowinstanties om te controleren of deze naar behoren worden uitgevoerd.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 exl-id: 90923d39-3ac5-4028-976c-d011f0404476
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
 workflow-type: tm+mt
-source-wordcount: '993'
+source-wordcount: '1003'
 ht-degree: 0%
 
 ---
@@ -37,7 +33,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 ## Controle van de status van workflowinstanties {#monitoring-the-status-of-workflow-instances}
 
 1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
-1. Selecteren **Instanties** om een lijst weer te geven met werkstroominstanties die momenteel worden uitgevoerd.
+1. Selecteren **Instanties** zodat u de lijst met werkstroominstanties kunt weergeven die momenteel worden uitgevoerd.
 
    ![wf-96](assets/wf-96.png)
 
@@ -66,7 +62,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 ## Het onderbreken, Hervatten, en het Eindigen van een Instantie van het Werkschema {#suspending-resuming-and-terminating-a-workflow-instance}
 
 1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
-1. Selecteren **Instanties** om een lijst weer te geven met werkstroominstanties die momenteel worden uitgevoerd.
+1. Selecteren **Instanties** zodat u de lijst met werkstroominstanties kunt weergeven die momenteel worden uitgevoerd.
 
    ![wf-96-1](assets/wf-96-1.png)
 
@@ -77,7 +73,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 ## Gearchiveerde workflows weergeven {#viewing-archived-workflows}
 
 1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
-1. Selecteren **Archief** om een lijst weer te geven met workflowinstanties die met succes zijn voltooid.
+1. Selecteren **Archief** zodat u een lijst kunt weergeven met workflowinstanties die zijn voltooid.
 
    ![wf-98](assets/wf-98.png)
 
@@ -86,7 +82,7 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
    >De afbreekstatus wordt beschouwd als een succesvolle beëindiging aangezien het als resultaat van gebruikersactie voorkomt; bijvoorbeeld:
    >
    >* gebruik van de **Beëindigen** action
-   >* als een pagina die onderworpen is aan een workflow (geforceerd) wordt verwijderd, wordt de workflow beëindigd
+   >* wanneer een pagina waarop een workflow betrekking heeft (geforceerd) wordt verwijderd, wordt de workflow beëindigd
 
 1. Selecteer vervolgens een specifiek item **Historie openen** voor meer informatie :
 
@@ -102,14 +98,14 @@ Hiermee opent u een venster waarin de **Foutbericht**, **Stap**, en **Stapel mis
 * **Historie openen**
 Geeft details van de workflowgeschiedenis weer.
 
-* **Stap opnieuw proberen** Hiermee wordt de componentinstantie Scriptstap opnieuw uitgevoerd. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
-* **Beëindigen** Beëindig de werkstroom als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
-* **Beëindigen en opnieuw proberen** Vergelijkbaar met **Beëindigen** behalve dat een nieuwe werkschemainstantie gebruikend de originele lading, de titel, en de beschrijving is begonnen.
+* **Stap opnieuw proberen** - Voert de componentinstantie Scriptstap opnieuw uit. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
+* **Beëindigen** - Beëindig de werkstroom als de fout een onherstelbare situatie voor de werkstroom heeft veroorzaakt. De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagplaats die niet langer geldig is voor de werkstroominstantie.
+* **Beëindigen en opnieuw proberen** - Vergelijkbaar met **Beëindigen** behalve dat een nieuwe werkschemainstantie gebruikend de originele lading, de titel, en de beschrijving is begonnen.
 
 Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, gebruik de volgende stappen:
 
 1. Navigatie selecteren **Gereedschappen** vervolgens **Workflow**.
-1. Selecteren **Mislukt** om een lijst weer te geven met werkstroominstanties die niet zijn voltooid.
+1. Selecteren **Mislukt** zodat u de lijst met werkstroominstanties kunt weergeven die niet zijn voltooid.
 1. Selecteer een specifiek item en voer de gewenste actie uit:
 
    ![wf-47](assets/wf-47.png)
@@ -120,7 +116,7 @@ Door het minimaliseren van het aantal workflowexemplaren worden de prestaties va
 
 Configureren **Configuratie van opschonen van de Adobe van Granite-workflow** om werkstroominstanties te wissen op basis van hun leeftijd en status. U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
 
-U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel zuivert wanneer deze veel langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na een bepaald aantal dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
+U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel opschoont wanneer deze langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na een bepaald aantal dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 
 Om de dienst te vormen, kunt u gebruiken [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of [Voeg een configuratie OSGi aan de bewaarplaats toe](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository). In de volgende tabel worden de eigenschappen beschreven die u voor een van beide methoden nodig hebt.
 
@@ -163,7 +159,7 @@ Om de dienst te vormen, kunt u gebruiken [Webconsole](/help/sites-deploying/conf
   <tr>
    <td>Werkstroomleeftijd</td>
    <td>scheduledpurge.daysold</td>
-   <td>De leeftijd van de werkstroominstanties die moeten worden gewist, in dagen.</td>
+   <td>De leeftijd van de werkstroominstanties die in dagen moeten worden gewist.</td>
   </tr>
  </tbody>
 </table>
@@ -184,13 +180,13 @@ U kunt de maximumgrootte van inbox plaatsen door te vormen **Adobe Granite Workf
 
 ## Workflowvariabelen gebruiken voor datastores die eigendom zijn van klanten {#using-workflow-variables-customer-datastore}
 
-Gegevens die door workflows worden verwerkt, worden opgeslagen in de Adobe opgegeven opslagruimte (JCR). Deze gegevens kunnen van nature gevoelig zijn. U wilt mogelijk alle door de gebruiker gedefinieerde metagegevens en gegevens opslaan in uw eigen beheerde opslagruimte in plaats van de door de Adobe verschafte opslagruimte. In deze secties wordt beschreven hoe u deze variabelen instelt voor externe opslag.
+Gegevens die door workflows worden verwerkt, worden opgeslagen in de Adobe opgegeven opslagruimte (JCR). Deze gegevens kunnen van nature gevoelig zijn. U kunt alle door de gebruiker gedefinieerde metagegevens of gegevens in uw eigen beheerde opslagruimte opslaan in plaats van de door de Adobe verschafte opslagruimte. In deze secties wordt beschreven hoe u deze variabelen instelt voor externe opslag.
 
 ### Het model instellen voor externe opslag van metagegevens {#set-model-for-external-storage}
 
 Op het niveau van het workflowmodel wordt een markering opgegeven die aangeeft dat het model (en de runtimeinstanties) externe opslag van metagegevens heeft. Workflowvariabelen blijven niet behouden in JCR voor de workflowinstanties van de modellen die zijn gemarkeerd voor externe opslag.
 
-De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:inhoudsknooppunt* van het workflowmodel. Deze markering blijft behouden in de metagegevens van de workflow als *cq:userMetaDataCustomPersistenceEnabled*.
+De eigenschap *userMetadataPersistenceEnabled* wordt opgeslagen op de *jcr:inhoudsknooppunt* van het workflowmodel. Deze markering wordt in metagegevens van de workflow als *cq:userMetaDataCustomPersistenceEnabled*.
 
 In de onderstaande afbeelding ziet u hoe u de markering op een workflow instelt.
 
@@ -198,7 +194,7 @@ In de onderstaande afbeelding ziet u hoe u de markering op een workflow instelt.
 
 ### API&#39;s voor metagegevens in externe opslag {#apis-for-metadata-external-storage}
 
-Als u de variabelen extern wilt opslaan, moet u de API&#39;s implementeren die in de workflow beschikbaar worden gesteld.
+Als u de variabelen extern wilt opslaan, implementeert u de API&#39;s die in de workflow worden weergegeven.
 
 UserMetaDataPersistenceContext
 

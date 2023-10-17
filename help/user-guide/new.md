@@ -1,8 +1,8 @@
 ---
 title: Bronnen voor nieuwe Adobe Experience Manager-gebruikers
-description: Vragen, antwoorden en bronnen voor nieuwe gebruikers van Adobe Experience Manager
+description: Vragen, antwoorden en bronnen voor nieuwe gebruikers van Adobe Experience Manager 6.5.
 exl-id: a238954f-011c-416b-81af-6cdf78ddaf85
-source-git-commit: 85d39e59b82fdfdcd310be61787a315668aebe38
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%
@@ -20,21 +20,21 @@ Adobe Experience Manager (AEM) is een op het web gebaseerd clientserversysteem v
 
 ## Waar kan ik AEM software downloaden? {#download}
 
-Klanten met een geldig onderhouds- en supportcontract hadden een e-mailmelding met een code moeten ontvangen en AEM van de [Adobe-website voor licentieverlening](https://licensing.adobe.com/).
+Klanten met een geldig onderhouds- en supportcontract hadden een e-mailmelding met een code moeten ontvangen en AEM van de [Licentiewebsite voor Adobe](https://licensing.adobe.com/).
 
 [Meer informatie over de implementatie van de AEM.](/help/sites-deploying/home.md)
 
-Bezoek [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en) voor informatie over AEM releases.
+Bezoek [AEM Sustenance Hub](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en) voor informatie over AEM introducties.
 
 ## Hoe krijg ik officiële steun voor AEM? {#official-support}
 
-Als gelicentieerde klant kunt u ondersteuning voor AEM krijgen van [Klantenzorgteam](https://experienceleague.adobe.com/?support-solution=General#support). U kunt ons ook vragen stellen in de [AEM Gemeenschap](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) of op de AdobeExpCare Twitter-handgreep op `https://twitter.com/adobeexpcare`.
+Als gelicentieerde klant kunt u ondersteuning voor AEM krijgen van [Klantenzorgteam](https://experienceleague.adobe.com/?support-solution=General#support). U kunt ons ook vragen stellen in de [AEM Gemeenschap](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community) of op de AdobeExpCare-Twitter-handgreep op `https://twitter.com/adobeexpcare`.
 
 ## Waar is documentatie voor andere versies van AEM? {#versions}
 
 U bevindt zich op de juiste plaats voor de AEM 6.5 documentatie.
 
-Adobe heeft ook documentatie voor oudere versies van Adobe Experience Manager. U kunt een blik hebben naar [Oudere versies van Adobe Experience Manager-, CQ- en CRX-documentatie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) voor meer informatie .
+Adobe beschikt ook over documentatie voor oudere versies van Adobe Experience Manager. U kunt een blik hebben naar [Oudere versies van Adobe Experience Manager-, CQ- en CRX-documentatie](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html) voor meer informatie .
 
 ## Waar zijn AEM opmerkingen bij de release 6.5? {#release-notes}
 
@@ -43,4 +43,4 @@ Hier vindt u alle opmerkingen bij de release voor AEM:
 * [AEM 6.5 Opmerkingen bij de release](/help/release-notes/home.md)
 * [Lijst met verwijderde en vervangen functies in AEM 6.5](/help/release-notes/deprecated-removed-features.md)
 
-Als u vragen hebt, raadpleegt u de [AEM Community-team](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) of vraag naar de AdobeExpCare Twitter-handgreep op `https://twitter.com/adobeexpcare`.
+Als u vragen hebt, raadpleegt u de [AEM](https://help-forums.adobe.com/content/adobeforums/en/experience-manager-forum/adobe-experience-manager.html) of vraag naar de handgreep van de AdobeExpCare-Twitter op `https://twitter.com/adobeexpcare`.

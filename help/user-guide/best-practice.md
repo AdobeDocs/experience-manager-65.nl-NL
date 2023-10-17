@@ -1,10 +1,8 @@
 ---
 title: AEM 6.5 Beste praktijken
-seo-title: AEM 6.5 Best Practices
-description: Bronnen voor best practices, probleemoplossing en training voor AEM 6.5
-seo-description: Resources for best practices, troubleshooting and training for AEM 6.5
+description: Bronnen voor best practices, probleemoplossing en training voor AEM 6.5.
 exl-id: 077c00b9-f2ec-49a3-8d85-a3d3ecf287bb
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
@@ -17,7 +15,7 @@ ht-degree: 0%
 
 Adobe beschikt over verschillende belangrijke bronnen om u te helpen het beste uit AEM te halen.
 
-* [Officiële AEM trainingscatalogus](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1).
+* [Officiële AEM](https://training.adobe.com/training/current-courses.html#solution=adobeExperienceManager&amp;p=1).
 * Als u op AEM gecertificeerd wilt worden, [hier is een volledige handleiding voor officiële AEM .](https://training.adobe.com/certification/exams.html#p=1&amp;solution=adobeExperienceManager).
 
 De AEM Gemeenschap produceert voortdurend voorbeeldwerkschema&#39;s, zelfstudies, en monsters van de inhoudscode van suggesties en samenwerkingswerk.
@@ -39,12 +37,12 @@ De AEM Gemeenschap produceert voortdurend voorbeeldwerkschema&#39;s, zelfstudies
 
 AEM heeft vele toepassingen in organisaties en is breed genoeg om functionaliteit over een bedrijf te leveren. Als u in eerste stappen wilt graven, kunt u de Begonnen Gidsen bezoeken:
 
-* [Platform en sites aan de slag AEM](/help/sites-deploying/deploy.md#getting-started)
+* [Aan de slag met AEM Platform en sites](/help/sites-deploying/deploy.md#getting-started)
 * [Aan de slag met AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Aan de slag met AEM Communities](/help/communities/getting-started.md)
 
-Adobe heeft een nieuwe [WKND-zelfstudie, een stapsgewijze handleiding voor het maken van uw eerste website met AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html). Er is ook een [stap-voor-stap recept voor het opstellen van Adobe Digitale Stichting oplossing](https://experienceleague.adobe.com/#courses), waarvoor AEM een belangrijke bouwsteen is.
+Adobe heeft een nieuwe [WKND-zelfstudie, een stapsgewijze handleiding voor het maken van uw eerste website met AEM](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html). Er is ook een [stap-voor-stap recept voor het opstellen van de oplossing van de Stichting van de Adobe Digitale](https://experienceleague.adobe.com/#courses), waarvoor AEM een belangrijke bouwsteen is.
 
 ## Aanbevolen implementaties voor AEM {#deployments}
 

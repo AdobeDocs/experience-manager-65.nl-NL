@@ -1,8 +1,8 @@
 ---
 title: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2021
-description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2021
+description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2021.
 exl-id: ec47c5f8-d4dd-469f-94df-5ee28f25d696
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '1318'
 ht-degree: 6%
@@ -11,13 +11,13 @@ ht-degree: 6%
 
 # GitHub-releaseoverzicht van het Commerce Integration Framework
 
-## Overzicht van systeemvereisten
+## Overzicht van de systeemvereisten
 
-Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-versie die u momenteel gebruikt of die u in de toekomst wilt gebruiken.
+Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF versie die u momenteel gebruikt of die u in de toekomst wilt gebruiken.
 
 | Component | Systeemvereisten |
 |:-------|:-----:|
-| CIF-invoegtoepassing | Minimaal: Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL-schema&#39;s |
+| CIF | Minimaal: Adobe Experience Manager (AEM) 6.5.7, Adobe Commerce 2.3.5 GraphQL-schema&#39;s |
 | CIF Core-componenten | [Systeemvereisten](https://github.com/adobe/aem-core-cif-components/blob/master/VERSIONS.md) |
 | Projectarchetype AEM | [Systeemvereisten](https://github.com/adobe/aem-project-archetype/blob/master/VERSIONS.md) |
 
@@ -25,13 +25,13 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.11.18.00 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
+| CIF | 2021.11.18.00 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.11.18.00.zip) |
 | CIF Core-componenten | 2.4.2 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.2) |
 | CIF Venia Reference Site | 2021.12.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.12.01) |
 
 ### Wat is er nieuw? {#what-is-new-november}
 
-* Uitgebreide myAccount componenten die op de verlengbare Peregrine componenten van de Handel gebaseerd zijn
+* Uitgebreide myAccount-componenten die zijn gebaseerd op uitbreidbare Peregrine-componenten van de Handel
 
 ![Uitgebreide myAccount-componenten](/help/assets/CIF/extended-myAccount-components.png)
 
@@ -39,19 +39,19 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Ondersteuning voor cadeaukaarten in AEM Storefront
 
-## Releasedatum: Oktober 2021
+## Releasedatum: oktober 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.10.20.02 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
+| CIF | 2021.10.20.02 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.10.20.02.zip) |
 | CIF Core-componenten | 2.4.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.4.0) |
 | CIF Venia Reference Site | 2021.11.01 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.11.01) |
 
 ### Wat is er nieuw? {#what-is-new-october}
 
-* De invoegtoepassing CIF ondersteunt de nieuwste versie Commerce 2.4.3 met nieuwe GraphQL API&#39;s en schema&#39;s
+* De CIF add-on biedt ondersteuning voor de nieuwste Commerce v2.4.3 met nieuwe GraphQL API&#39;s en schema&#39;s
 
-* Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF-pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
+* Auteurs kunnen koppelingen naar product- en cataloguspagina&#39;s in tekstvelden toevoegen met de RTE (RTE). Er is een CIF pictogram toegevoegd aan de RTE-werkbalk waarmee de kiezers snel het product of de categorie kunnen zoeken en selecteren zonder de context te verlaten.
 
 * Bestaande pop-up winkelwagentje en kassa zijn vervangen door speciale AEM winkelwagentje en afhandelingspagina&#39;s. De componenten op deze pagina&#39;s worden samengesteld met behulp van uitbreidbare Peregrine-onderdelen van Adobe Commerce
 
@@ -63,7 +63,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.09.27 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
+| CIF | 2021.09.27 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.27.zip) |
 | CIF Core-componenten | 2.2.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.2.0) |
 | CIF Venia Reference Site | 2021.09.23 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.09.23) |
 
@@ -91,7 +91,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.09.02 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
+| CIF | 2021.09.02 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.09.02.zip) |
 | CIF Core-componenten | 2.1.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.1.0) |
 | CIF Venia Reference Site | 2021.08.27 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.08.27) |
 
@@ -101,7 +101,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
   ![Nieuwe rubriekkiezer](/help/assets/CIF/category-picker.png)
 
-* Betere A11Y-ondersteuning voor CIF Core-componenten
+* Betere A11Y-ondersteuning voor CIF Core Components
 
 ### Bugfixes {#bug-fixes-august}
 
@@ -109,7 +109,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * De eigenschap &#39;Call to action text&#39; is verbroken in de productteaser
 
-* CIF JS-fouten tijdens AEM implementatiestap van CS
+* JS-fouten CIF tijdens AEM implementatiestap voor CS
 
 * Toegang tot onbewerkte producten herstellen voor in kaart gebrachte producten
 
@@ -117,7 +117,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.07.21 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
+| CIF | 2021.07.21 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.07.21.zip) |
 | CIF Core-componenten | 2.0.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-2.0.0) |
 | CIF Venia Reference Site | 2021.07.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.07.22) |
 
@@ -130,17 +130,17 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Ondersteuning voor [Adobe Commerce Sensei Product Recommendation, aangedreven door Adobe Sensei](https://business.adobe.com/products/magento/product-recommendations.html) in AEM Storefront met behulp van vooraf gedefinieerde of tijdens de vlucht gemaakte aanbevelingen
 
-## Releasedatum: Juni 2021
+## Releasedatum: juni 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.06.18 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
+| CIF | 2021.06.18 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.06.18.zip) |
 | CIF Core-componenten | 1.12.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.12.0) |
 | CIF Venia Reference Site | 2021.06.12 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.06.17) |
 
 ### Wat is er nieuw? {#what-is-new-june}
 
-* Nieuwe CIF-product- en categoriereferentiedetypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
+* Nieuwe CIF product- en categoriereferentietypen voor inhoudsfragmenten (incl. product/categoriekiezer (ondersteuning voor gebruikersinterface)
 * New Commerce Content Fragment Core Component
 * Full-text zoekopdracht ondersteund in AEM achterkant
 * Commerce Core Components ondersteunt Adobe Commerce Sensei Recs gegevensverzameling
@@ -151,7 +151,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.05.26 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
+| CIF | 2021.05.26 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.05.26.zip) |
 | CIF Core-componenten | 1.11.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases/tag/core-cif-components-reactor-1.11.0) |
 | CIF Venia Reference Site | 2021.05.24 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases/tag/venia-2021.05.24) |
 
@@ -165,11 +165,11 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Breadcrumb herstelt voorvertoningsgegevens in productconsole
 
-## Releasedatum: April 2021
+## Releasedatum: april 2021
 
 | Component | Versie | Details |
 |:-------|:-----:|---------------------:|
-| CIF-invoegtoepassing | 2021.04.22 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
+| CIF | 2021.04.22 | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=%2Fcontent%2Fsoftware-distribution%2Fen%2Fdetails.html%2Fcontent%2Fdam%2Faem%2Fpublic%2Faem-commerce-addon-65-2021.04.22.zip) |
 | CIF Core-componenten | 1.10.0 | [GitHub](https://github.com/adobe/aem-core-cif-components/releases) |
 | CIF Venia Reference Site | 2021.04.22 | [GitHub](https://github.com/adobe/aem-cif-guides-venia/releases) |
 
@@ -177,9 +177,9 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Steun voor categorie UID - dit ontgrendelt derde handelsintegraties voor systemen die Koorden voor categorie ids gebruiken
 
-* AEM extensie voor PWA Studio incl. voorbeeldintegratie
+* AEM extensie voor PWA Studio incl. voorbeeld-integratie
 
-* Nieuwe CIF-kerncomponent voor navigatie die de WCM-kerncomponent voor navigatie uitbreidt
+* Nieuwe CIF kerncomponent voor navigatie die de WCM-kerncomponent voor navigatie uitbreidt
 
 ### Bugfixes {#bug-fixes-april}
 
@@ -215,7 +215,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 ### Wat is er nieuw? {#what-is-new-february}
 
-* Product Experience Management: Verrijk de pagina&#39;s van de productcatalogus individueel met de Fragmenten van de Ervaring.
+* Product Experience Management: verrijk de productcataloguspagina&#39;s afzonderlijk met Experience Fragments.
 
 * De uitgebreide eigenschappen van de productconsole om verbonden Middelen en de Fragmenten van de Ervaring te tonen, met inbegrip van actie om snel aan de bijbehorende inhoud te navigeren.
 
@@ -225,7 +225,7 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 * Meerdere opgeloste problemen.
 
-## Releasedatum: Januari 2021
+## Releasedatum: januari 2021
 
 | GitHub | Versie | Gedetailleerde opmerkingen bij de release |
 |:-------|:-----:|---------------------:|
@@ -235,10 +235,10 @@ Controleer de minimale systeemvereisten in de onderstaande tabel voor de CIF-ver
 
 ### Wat is er nieuw? {#what-is-new-january}
 
-* Product Experience Management: Het nieuwe de bezitslusje van de &quot;Handel&quot;voor Activa en de Fragmenten van de Ervaring. Op dit tabblad kunt u elementen en fragmenten uit de ervaring koppelen aan producten en categorieën. Het lusje toont ook gegevens in real time voor verbonden handelsobjecten en een verbinding om details in de productconsole te tonen.
+* Product Experience Management: Nieuw tabblad Eigenschappen &#39;Commerce&#39; voor Elementen en Ervingfragmenten. Op dit tabblad kunt u elementen en fragmenten uit de ervaring koppelen aan producten en categorieën. Het lusje toont ook gegevens in real time voor verbonden handelsobjecten en een verbinding om details in de productconsole te tonen.
 
 ### Verbeterde functies  {#what-is-improved-january}
 
-* Verzend gebruikersgegevens na authentificatie naar de Laag van de Gegevens van de Adobe Cliënt.
+* Verzend gebruikersgegevens na authentificatie aan de Laag van de Gegevens van de Cliënt van de Adobe.
 
 * Meerdere opgeloste problemen.

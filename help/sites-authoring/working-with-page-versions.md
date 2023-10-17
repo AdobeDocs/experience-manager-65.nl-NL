@@ -1,15 +1,10 @@
 ---
 title: Werken met versies van inhoudspagina's
-description: Versies van een pagina maken, vergelijken en herstellen
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
-docset: aem65
+description: Maak, vergelijk en herstel versies van een pagina in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1501'
 ht-degree: 2%
 
 ---
@@ -19,7 +14,7 @@ ht-degree: 2%
 Met Versioning maakt u een &quot;momentopname&quot; van een pagina op een bepaald tijdstip. Met versioning kunt u de volgende handelingen uitvoeren:
 
 * Maak een versie van een pagina.
-* Een pagina herstellen naar een vorige versie; bijvoorbeeld:
+* Een pagina herstellen naar een vorige versie, bijvoorbeeld:
    * om een wijziging die u hebt aangebracht in de pagina ongedaan te maken.
 * Vergelijk de huidige versie van een pagina met een vorige versie:
    * om verschillen in de tekst en afbeeldingen te benadrukken.
@@ -53,7 +48,7 @@ U kunt een versie van uw bron maken op basis van:
 
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
 1. Selecteer de pagina in [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Selecteer **Maken** van de werkbalk om het dialoogvenster te openen.
+1. Selecteer de **Maken** van de werkbalk om het dialoogvenster te openen.
 1. In het dialoogvenster kunt u een **Label** en **Opmerking**, indien vereist:
 
    ![Een label en opmerking invoeren](assets/screen_shot_2012-02-15at105050am.png)
@@ -74,11 +69,11 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 
    * **Versie herstellen**
 
-     Hiermee herstelt u versies van opgegeven pagina&#39;s in de geselecteerde map. dit kan ook het herstellen van pagina&#39;s omvatten die eerder zijn verwijderd.
+     Herstel versies van opgegeven pagina&#39;s in de momenteel geselecteerde map. Dit kan ook het herstellen van eerder verwijderde pagina&#39;s omvatten.
 
    * **Boom herstellen**
 
-     Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd.
+     Zet een versie van een volledige boom op een gespecificeerde datum en tijd opnieuw op; dit kan pagina&#39;s omvatten die eerder zijn geschrapt.
 
 >[!NOTE]
 >
@@ -88,7 +83,7 @@ Nadat u een versie van de pagina hebt gemaakt, kunt u een eerdere versie op vers
 >
 >1. Maak versies van een willekeurige pagina.
 >1. De initiële labels en namen van versieknooppunten zijn 1.0, 1.1, 1.2 enzovoort.
->1. De eerste versie opnieuw installeren; in dit geval, 1.0.
+>1. Zet de eerste versie opnieuw in, in dit geval 1.0.
 >1. Maak opnieuw versies.
 >1. De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
 
@@ -107,7 +102,7 @@ Naar **Vorige versie** de geselecteerde pagina naar een vorige versie:
 
 ### Versie herstellen {#restore-version}
 
-Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de huidige map te herstellen. dit kan ook het herstellen van eerder verwijderde pagina&#39;s omvatten:
+Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de huidige map te herstellen. Dit kan ook het herstellen van eerder verwijderde pagina&#39;s omvatten:
 
 1. Navigeren naar en [selecteren](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste map.
 
@@ -142,7 +137,7 @@ Deze methode kan worden gebruikt om versies van opgegeven pagina&#39;s in de hui
 
 ### Boom herstellen {#restore-tree}
 
-Deze methode kan worden gebruikt om een versie van een boom op een gespecificeerde datum en tijd te herstellen; hieronder kunnen pagina&#39;s vallen die eerder zijn verwijderd:
+Deze methode kan worden gebruikt om een versie van een boom op een gespecificeerde datum en tijd te herstellen; dit kan pagina&#39;s omvatten die eerder zijn geschrapt:
 
 1. Navigeren naar en [selecteren](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources), de vereiste map.
 
@@ -221,9 +216,9 @@ Timewaring is een [mode](/help/sites-authoring/author-environment-tools.md#page-
 
 1. De pagina wordt weergegeven op basis van de datumset. De modus Tijdlijn verdraaien wordt aangegeven via de blauwe statusbalk boven in het venster. Gebruik de koppelingen op de statusbalk om een nieuwe doeldatum of einddatum voor de tijdverdraaiingsmodus te selecteren.
 
-   ![Indicator voor tijdverdraaiing](assets/wwpv-03.png)
+   ![Indicator voor tijdwijziging](assets/wwpv-03.png)
 
-### Beperkingen voor tijdverdraaiing {#timewarp-limitations}
+### Beperkingen voor tijdwijziging {#timewarp-limitations}
 
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 

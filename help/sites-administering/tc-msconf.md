@@ -1,17 +1,12 @@
 ---
 title: Verbinding maken met Microsoft&reg; Vertaler
-description: Leer hoe u AEM verbindt met Microsoft&reg. Vertaler.
-uuid: 5e3916ec-36a0-4d31-94ff-c340a462411a
+description: Leer hoe u Adobe Experience Manager verbindt met Microsoft&reg; Vertaler.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Language Copy
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: 95638b6dd9527c567b38d8cd9da14633bd4142b5
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -31,13 +26,13 @@ Nadat u de configuratie creeert, moet u [activeren](/help/sites-administering/tc
 
 In de volgende procedure wordt gebruikgemaakt van de geoptimaliseerde gebruikersinterface voor het maken van een Microsoft® Translator-configuratie.
 
-1. Klik of tik op Gereedschappen > Cloud Services.
+1. Klik of tik op Gereedschappen > Cloud Servicen op de rails.
 1. Selecteer Configuraties tonen in het gebied Microsoft® Translator.
 1. Klik op de koppeling + naast Beschikbare configuraties.
 
    ![chlimage_1-382](assets/chlimage_1-382.png)
 
-1. Typ een titel voor de configuratie. De titel identificeert de configuratie in de console van Cloud Services en in de drop-down lijsten van het paginabezit. De standaardnaam is gebaseerd op de titel. Typ desgewenst een naam die u wilt gebruiken voor het knooppunt in de opslagplaats dat de configuratie opslaat. Gebruik de standaardwaarde voor het bezit van de Configuratie van de Ouder dat de weg van de gegevensopslaggegevensopslagknoop is.
+1. Typ een titel voor de configuratie. De titel identificeert de configuratie in de console van Cloud Servicen en in de drop-down lijsten van het paginabezit. De standaardnaam is gebaseerd op de titel. Typ desgewenst een naam die u wilt gebruiken voor het knooppunt in de opslagplaats dat de configuratie opslaat. Gebruik de standaardwaarde voor het bezit van de Configuratie van de Ouder dat de weg van de gegevensopslaggegevensopslagknoop is.
 1. Klik op Maken.
 1. Typ in het dialoogvenster dat wordt weergegeven waarden voor de eigenschappen en klik op OK.
 
@@ -51,15 +46,15 @@ De Microsoft® Translator Trial-licentieconfiguratie is een voorbeeldconfigurati
 
 ### Proeflicentie voor Microsoft® Translator - Geometrixx-outdoor {#microsoft-translator-trial-license-geometrixx-outdoors}
 
-De Microsoft® Translator-proeflicentie - Geometrixx-outconfiguratie is een voorbeeldconfiguratie die met Geometrixx Outdoors is geïnstalleerd. Deze configuratie gebruikt dezelfde gratis Microsoft® Translator-account als de Microsoft® Translator Trial License configuratie. Het account heeft een gratis abonnement dat 2 000 000 vertaalde tekens per maand toestaat.
+De Microsoft® Translator-proeflicentie - Geometrixx-outconfiguratie is een voorbeeldconfiguratie die met Geometrixx Outdoors is geïnstalleerd. Deze configuratie gebruikt dezelfde gratis Microsoft® Translator-account als de Microsoft® Translator-licentieconfiguratie voor proefversies. Het account heeft een gratis abonnement dat 2 000 000 vertaalde tekens per maand toestaat.
 
 Deze Microsoft® Translator-configuratie is geoptimaliseerd voor gebruik met het type inhoud van de voorbeeldsite voor Geometrixx Outdoors.
 
-### De Microsoft® Translator-configuratie voor proefversies van licenties upgraden {#upgrading-the-microsoft-translator-trial-license-configuration}
+### De Microsoft® Translator-configuratie voor proefversies van licenties bijwerken {#upgrading-the-microsoft-translator-trial-license-configuration}
 
 Microsoft® Translation Configuration-pagina&#39;s bieden een handige koppeling naar de Microsoft®-website voor het verkrijgen van een accountabonnement dat geschikt is voor productiesystemen.
 
-1. Klik of tik op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
+1. Klik of tik op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
 1. Klik of tik in het gedeelte Microsoft® Translator op Configuraties tonen en klik of tik op Microsoft® Translator Trial License (Microsoft® Translation Configuration).
 
    ![chlimage_1-383](assets/chlimage_1-383.png)
@@ -72,7 +67,7 @@ Microsoft® Translation Configuration-pagina&#39;s bieden een handige koppeling 
 
 Microsoft® Translation configuratiepagina&#39;s bieden een handige koppeling naar de Microsoft® website om uw Microsoft® Translator-engine aan te passen. ([https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/](https://www.microsoft.com/en-us/research/project/microsoft-translator-hub/))
 
-1. Klik of tik op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
+1. Klik of tik op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
 1. Klik of tik in het gedeelte Microsoft® Translator op Configuraties tonen en klik of tik vervolgens op de configuratie die u wilt aanpassen.
 1. Klik op Vertaler aanpassen op de configuratiepagina. Gebruik de Microsoft®-webpagina die wordt geopend om uw service aan te passen.
 
@@ -80,5 +75,5 @@ Microsoft® Translation configuratiepagina&#39;s bieden een handige koppeling na
 
 Activeer uw cloudserviceconfiguraties om vertaalde inhoud te ondersteunen die naar de publicatie-instantie wordt gerepliceerd. Als u de knooppunten in de opslagplaats wilt activeren die de Microsoft® Translator of configuraties van cloudservices van derden opslaan, gebruikt u de methode van [een volledige sectie activeren (boomstructuur)](/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree). De knooppunten bevinden zich onder de volgende bovenliggende knooppunten:
 
-* Microsoft® Translation Service: /libs/settings/cloudconfigs/vertaling/msft-vertaling
+* Microsoft® Translation Service: /libs/settings/cloudconfigs/translatie/msft-vertaling
 * Vertaling door derden: /etc/cloudservices/machine-vertaling

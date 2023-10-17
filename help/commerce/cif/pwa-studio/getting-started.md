@@ -3,9 +3,8 @@ title: Aan de slag met AEM extensie voor PWA Studio
 description: Leer hoe te om een project van de Inhoud en van de Handel van de AEM zonder titel met PWA Studio op te stellen.
 topics: Commerce
 feature: Commerce Integration Framework
-thumbnail: 37843.jpg
 exl-id: de7b8f05-b6b7-4105-84a5-940c16ebf2b4
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '769'
 ht-degree: 0%
@@ -66,7 +65,7 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
 
    Voorbeeld: AEM_CFM_GRAPHQL=<http://localhost:4503/content/graphql/global>
 
-   b. Voeg een volmachtsoplosser aan uw configuratie UPWARD toe. Een voorbeeld-UPWARD-configuratie kan er als volgt uitzien:
+   b. Voeg een proxyoplosser toe aan uw UPWARD-configuratie. Een voorbeeld-UPWARD-configuratie kan er als volgt uitzien:
 
 ```json
    response:
@@ -91,21 +90,21 @@ Om PWA Studio met het eindpunt van GraphQL van AEM te verbinden, kunt u gebruike
 
 Volg de documentatie van de Fragmenten van de Inhoud van de AEM aan opstelling een eindpunt van GraphQL voor uw AEM project. Ook, in uw AEM project, voeg de volgende configuraties toe om uw toepassing van de PWA Studio toe te staan om tot het eindpunt van GraphQL toegang te hebben:
 
-* Beleid voor het delen van bronnen tussen verschillende Adobe-oorsprong (com.adobe.granite.cors.impl.CORSPopolicyImpl)
+* Beleid voor het delen van bronnen tussen verschillende bronnen van Adoben (com.adobe.granite.cors.impl.CORSPopolicyImpl)
 
-   Stel de `allowedorigin` eigenschap aan de volledige hostnaam van uw PWA-toepassing.
+  Stel de `allowedorigin` eigenschap aan de volledige hostnaam van uw PWA-toepassing.
 
-   Voorbeeld:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
+  Voorbeeld:  `<https://pwa-studio-test-vflyn.local.pwadev:9366>`
 
 * Apache Sling Referrer-filter (org.apache.sling.security.impl.ReferrerFilter.cfg.json)
 
-   Stel de eigenschap allow.hosts in op de hostnaam van uw PWA-toepassing.
+  Stel de eigenschap allow.hosts in op de hostnaam van uw PWA-toepassing.
 
-   Voorbeeld: pwa-studio-test-vflyn.local.pwadev
+  Voorbeeld: pwa-studio-test-vflyn.local.pwadev
 
 Hier vindt u volledige voorbeelden van beide configuraties: <https://github.com/adobe/aem-pwa-studio-extensions/tree/master/aem-cfm-blog-extension/aem/config/src/main/content/jcr_root/apps/blog-demo/config>.
 
-Om het eindpunt van GraphQL te tonen, bereidde Adobe sommige modellen van het Fragment van de steekproefinhoud en gegevens door middel van een inhoudspakket voor. Deze stukken werken samen met de React Components die van de uitbreiding van de PWA Studio wordt voorzien.
+Om het eindpunt van GraphQL te tonen, stelde de Adobe sommige modellen van het Fragmentmodel van de steekproefinhoud en gegevens door middel van een inhoudspakket voor. Deze stukken werken samen met de React Components die van de uitbreiding van de PWA Studio wordt voorzien.
 
 ## Het gebruik {#how-to-use}
 

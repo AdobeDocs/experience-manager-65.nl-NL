@@ -2,15 +2,9 @@
 title: Productgegevens verrijken met gekoppelde AEM-inhoud
 description: Leer hoe marketers productgegevens kunnen verrijken met de bijbehorende inhoud van Adobe Experience Manager door dynamisch marketinginhoud toe te voegen aan productpagina's. Dit opent een breed scala aan mogelijkheden voor marketers om specifieke productpagina's met extra inhoud zoals afbeeldingen en video als doel in te stellen.
 sub-product: Commerce
-version: 6.5
-doc-type: feature-video
-activity: use
-audience: marketer
 feature: Commerce Integration Framework
-kt: 7065
-thumbnail: 333205.jpg
 exl-id: 1a069fbc-c036-419a-b585-6aa43e15de16
-source-git-commit: a600acb7d65fbfa1806ef582642a6c5ac7859890
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '350'
 ht-degree: 1%
@@ -31,7 +25,7 @@ Digitale middelen kunnen aan één of meerdere product SKUs worden geassocieerd.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333205/?quality=12&learn=on)
 
-De Fragmenten van de ervaring zijn een eigenschap van Adobe Experience Manager die een prijsmeter toestaat om tot stand te brengen **ongestructureerd** herbruikbare inhoud. De Fragmenten van de ervaring kunnen met een productSKU of catalogusidentiteitskaart worden geassocieerd. Zodra verbonden, kunnen de marketers verwante fragmenten gemakkelijk ontdekken die op producten worden gebaseerd die op een pagina worden getoond. Met behulp van een tijdelijke aanduiding en koppeling kunt u ook dynamisch fragmenten uit de ervaringsfragmenten opnemen op een productcataloguspagina.
+De Fragmenten van de ervaring zijn een eigenschap van Adobe Experience Manager die een prijsmeter toestaat om tot stand te brengen **ongestructureerd** herbruikbare inhoud. De Fragmenten van de ervaring kunnen met een productSKU of catalogusidentiteitskaart worden geassocieerd Zodra verbonden, kunnen de marketers verwante fragmenten gemakkelijk ontdekken die op producten worden gebaseerd die op een pagina worden getoond. Met behulp van een tijdelijke aanduiding en koppeling kunt u ook dynamisch fragmenten uit de ervaringsfragmenten opnemen op een productcataloguspagina.
 
 ## Contentfragmenten
 

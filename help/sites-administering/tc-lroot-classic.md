@@ -1,20 +1,12 @@
 ---
 title: Een taalbasis maken met de klassieke gebruikersinterface
-seo-title: Creating a Language Root Using the Classic UI
-description: Leer hoe u een taalhoofdmap maakt met de klassieke gebruikersinterface.
-seo-description: Learn how to create a language root using the Classic UI.
-uuid: 62e40d39-2868-4d3d-9af7-c60a1a658be0
+description: Leer hoe u in Adobe Experience Manager een hoofdtaalversie maakt met de klassieke gebruikersinterface.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: b88edad4-2a2e-429b-86a2-cc68ba69697e
-docset: aem65
 feature: Language Copy
 exl-id: 1ae21d80-0683-4ab9-afaa-4d733ff47720
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
@@ -27,7 +19,7 @@ De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot
 1. Voeg een nieuwe kindpagina toe die de taalversie van de plaats vertegenwoordigt:
 
    1. Klik op Nieuw > Nieuwe pagina.
-   1. Geef in het dialoogvenster de titel en de naam op. De naam moet de notatie hebben van `<language-code>` of `<language-code>_<country-code>`, bijvoorbeeld en, en_US, en_us, en_GB, en_gb.
+   1. Geef in het dialoogvenster de titel en de naam op. De naam moet de notatie `<language-code>` of `<language-code>_<country-code>`, bijvoorbeeld en, en_US, en_us, en_GB, en_gb.
 
       * De ondersteunde taalcode is tweeletterige code in kleine letters, zoals gedefinieerd door ISO-639-1
       * De ondersteunde landcode is tweeletterige, kleine letters of hoofdletters volgens ISO 3166

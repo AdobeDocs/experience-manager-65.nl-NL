@@ -1,39 +1,32 @@
 ---
-title: Het framework voor vertaalintegratie configureren
-seo-title: Configuring the Translation Integration Framework
-description: Leer hoe te om het Kader van de Integratie van de Vertaling te vormen.
-seo-description: Learn how to configure the Translation Integration Framework.
-uuid: 5ecfe154-732f-4a13-96f8-92f55023c54d
+title: Het Kader voor de Integratie van de Vertaling vormen
+description: Leer hoe u het Translation Integration Framework in Adobe Experience Manager configureert.
 contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: site-features
-content-type: reference
-discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 3d1959a1a81293b51257d99d32c9576866c8a308
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1569'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
 
-# Het framework voor vertaalintegratie configureren{#configuring-the-translation-integration-framework}
+# Het Kader voor de Integratie van de Vertaling vormen{#configuring-the-translation-integration-framework}
 
 Het vertaalintegratiekader integreert met vertaaldiensten van derden om de vertaling van AEM inhoud te ordenen.
 
-* Verbind met uw vertaaldienstverlener.
+* Maak verbinding met uw vertaalserviceprovider.
 * Creeer een configuratie van het Kader van de Integratie van de Vertaling.
 * Koppel de cloudconfiguraties aan uw pagina&#39;s.
 
-Voor een overzicht van de vertaalfuncties voor inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
+Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
 Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider. AEM biedt standaard de mogelijkheid verbinding te maken met Microsoft Translator.
 De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor de Vertaalprojecten. Koppelingen voor meer informatie over de integratie:
 
-* [Translaties.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologieën](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -51,12 +44,11 @@ De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor d
 >Bekijk de volgende pagina&#39;s voor de meest recente lijst met aanbieders van vertalingen voor mensen en machines:
 >
 >
->* [AEM menselijke vertaling](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [AEM Menselijke vertaling](https://www.adobe.com/go/aem-human-translation-connectors)
 >* [AEM machinevertaling](https://www.adobe.com/go/aem-machine-translation-connectors)
 >
 
-
-Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar tot stand brengen. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een cloudconfiguratie voor de Microsoft Translator-aansluiting raadpleegt u [Integreren met Microsoft Translator](/help/sites-administering/tc-msconf.md).
+Nadat u een schakelaarpakket installeert, kunt u een wolkenconfiguratie voor de schakelaar creëren. Doorgaans moet u uw referenties opgeven voor verificatie bij de vertaalservice. Voor informatie over het toevoegen van een cloudconfiguratie voor de Microsoft Translator-aansluiting raadpleegt u [Integreren met Microsoft Translator](/help/sites-administering/tc-msconf.md).
 
 Indien nodig kunt u meerdere cloudconfiguraties voor dezelfde aansluiting maken. U kunt bijvoorbeeld één configuratie maken voor elk van de accounts of projecten die u bij dezelfde leverancier hebt.
 
@@ -76,7 +68,7 @@ Wanneer verschillende gedeelten van uw website verschillende vertaalvereisten he
 
 Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u [koppelen aan de pagina&#39;s](/help/sites-administering/tc-prep.md) die het gebruiken.
 
-**Opmerking:** Voor een overzicht van de vertaalfuncties voor inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
+**Opmerking:** Voor een overzicht van de functies voor het vertalen van inhoud in AEM raadpleegt u [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md).
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud, community-inhoud en elementen moeten worden omgezet.
 ![chlimage_1-386](assets/translation-config-65.jpg)
@@ -95,14 +87,14 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
    <td>Vertaalworkflow</td>
    <td><p>Selecteer de vertaalmethode die het framework uitvoert voor site-inhoud:</p>
     <ul>
-     <li>Machine transleren: De vertaalprovider voert de vertaling in real-time uit met behulp van automatische vertaling.</li>
-     <li>Menselijke vertaling: De inhoud wordt naar de vertaalprovider verzonden en door vertalers vertaald. </li>
-     <li>Niet vertalen: Inhoud wordt niet verzonden voor vertaling. Hiermee slaat u bepaalde vertakkingen met inhoud over die niet worden vertaald, maar wel kunnen worden bijgewerkt met de meest recente inhoud.</li>
+     <li>Machine Translation: de vertaalprovider voert de vertaling uit met automatische vertaling in real-time.</li>
+     <li>Menselijke vertaling: de inhoud wordt naar de vertaler gestuurd om door vertalers te worden vertaald. </li>
+     <li>Niet vertalen: inhoud wordt niet verzonden voor vertaling. Hiermee slaat u bepaalde vertakkingen met inhoud over die niet worden vertaald, maar wel kunnen worden bijgewerkt met de meest recente inhoud.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Vertaalbureau</td>
-   <td>Selecteer de vertaalprovider om de vertaling uit te voeren. Een leverancier verschijnt in de lijst wanneer hun overeenkomstige schakelaar wordt geïnstalleerd.</td>
+   <td>Selecteer de vertaalprovider voor de vertaling. Een leverancier verschijnt in de lijst wanneer hun overeenkomstige schakelaar wordt geïnstalleerd.</td>
   </tr>
   <tr>
    <td>Inhoudscategorie</td>
@@ -120,9 +112,9 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
    <td>Pagina-elementen vertalen</td>
    <td><p>Selecteer hoe u elementen wilt vertalen die vanuit het bestandssysteem aan componenten worden toegevoegd of waarnaar vanuit Middelen wordt verwezen:</p>
     <ul>
-     <li>Niet vertalen: Pagina-elementen worden niet omgezet.</li>
-     <li>Workflow voor het vertalen van sites gebruiken: De activa worden behandeld volgens de configuratieeigenschappen op het lusje van Plaatsen.</li>
-     <li>Workflow voor het vertalen van middelen gebruiken: Elementen worden verwerkt volgens de configuratie van de eigenschappen op het tabblad Middelen.</li>
+     <li>Niet vertalen: pagina-elementen worden niet vertaald.</li>
+     <li>Het gebruiken van het vertaalwerkschema van Plaatsen: De activa worden behandeld volgens de configuratieeigenschappen op het lusje van Plaatsen.</li>
+     <li>Workflow voor het vertalen van middelen gebruiken: elementen worden verwerkt volgens de configuratie van de eigenschappen op het tabblad Elementen.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -134,11 +126,11 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
 
 ### Eigenschappen van Gemeenschappen {#communities-configuration-properties}
 
-De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Zie voor meer informatie [Door gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md).
+De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Zie voor meer informatie [Door de gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md).
 
 | Eigenschap | Beschrijving |
 |---|---|
-| Vertaalbureau | Selecteer de vertaalprovider om de vertaling uit te voeren. De provider waarvoor cloudconfiguraties worden gemaakt, wordt in de lijst weergegeven. |
+| Vertaalbureau | Selecteer de vertaalprovider voor de vertaling. De provider waarvoor cloudconfiguraties worden gemaakt, wordt in de lijst weergegeven. |
 | Inhoudscategorie | A category that describes the content that you are translating. De categorie kan van invloed zijn op de keuze van terminologie en woordgebruik bij het vertalen van inhoud. |
 | Een landinstelling kiezen die u als algemene Share-winkel wilt gebruiken | (Optioneel) Als u een landinstelling selecteert voor het opslaan van UGC, worden posts van alle taalkopieën in één algemeen gesprek weergegeven. Kies bij conventie de landinstelling voor de [basistaal](/help/communities/sites-console.md#translation) voor de website. Als u Geen gemeenschappelijke winkel kiest, wordt de algemene vertaling uitgeschakeld. Globale vertaling is standaard uitgeschakeld. |
 
@@ -156,14 +148,14 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
    <td>Vertaalworkflow</td>
    <td><p>Selecteer het type vertaling dat het framework uitvoert voor elementen:</p>
     <ul>
-     <li>Machine transleren: De vertaalprovider voert de vertaling direct uit met behulp van computervertaling.</li>
-     <li>Menselijke vertaling: Inhoud wordt automatisch naar de vertaalprovider verzonden om handmatig te worden vertaald. </li>
-     <li>Niet vertalen: Elementen worden niet verzonden voor vertaling.</li>
+     <li>Machinevertaling: de vertaalprovider voert de vertaling direct uit met behulp van machinevertaling.</li>
+     <li>Menselijke vertaling: inhoud wordt automatisch naar de vertaalprovider verzonden om handmatig te worden vertaald. </li>
+     <li>Niet omzetten: middelen worden niet verzonden voor vertaling.</li>
     </ul> </td>
   </tr>
   <tr>
    <td>Vertaalbureau</td>
-   <td>Selecteer de vertaalprovider om de vertaling uit te voeren. Een leverancier verschijnt in de lijst wanneer hun overeenkomstige schakelaar wordt geïnstalleerd.</td>
+   <td>Selecteer de vertaalprovider voor de vertaling. Een leverancier verschijnt in de lijst wanneer hun overeenkomstige schakelaar wordt geïnstalleerd.</td>
   </tr>
   <tr>
    <td>Inhoudscategorie</td>
@@ -188,13 +180,13 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
  </tbody>
 </table>
 
-1. Klik of tik in de zijbalk op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
-1. In het gebied van de Integratie van de Vertaling, bepaalt of om het even welke configuraties zijn gecreeerd welke verbinding verschijnt:
+1. Klik of tik in de zijbalk op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
+1. In het gebied van de Integratie van de Vertaling, bepaalt de vraag of om het even welke configuraties zijn gecreeerd welke verbinding verschijnt:
 
-   * Als er geen configuraties zijn gemaakt, klikt of tikt u op Nu configureren.
+   * Als er geen configuraties zijn gemaakt, klikt u of tikt u op Nu configureren.
    * Als er al configuraties zijn, klikt of tikt u op Configuraties tonen en klikt of tikt u op de +-koppeling naast Beschikbare configuraties.
 
-1. Typ een naam voor de configuratie en klik op Maken of tik op Maken.
+1. Typ een naam voor de configuratie en klik of tik op Maken.
 1. Configureer de eigenschappen op het tabblad Sites, Communities en Assets en klik of tik op OK.
 
 ## Pagina&#39;s voor omzetting configureren {#configuring-pages-for-translation}
@@ -202,7 +194,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
 Als u de vertaling van uw bronpagina&#39;s in andere talen wilt configureren, koppelt u de pagina&#39;s aan de volgende cloudconfiguraties:
 
 * De wolkenconfiguratie die AEM met uw vertaalleverancier verbindt.
-* Het vertaalintegratieframework dat de details van de vertaling configureert.
+* Het kader voor vertaalintegratie dat de details van de vertaling vormt.
 
 Merk op dat de cloudconfiguratie van het vertaalintegratieframework de cloudconfiguratie identificeert die moet worden gebruikt om verbinding te maken met de serviceprovider. Wanneer u een bronpagina aan een configuratie van de kaderwolk associeert, moet de pagina met de configuratie van de de dienstverlener wolk worden geassocieerd die de configuratie van de kaderwolk gebruikt.
 
@@ -217,15 +209,15 @@ Voor alle gemeenschappen [SCF-componenten](/help/communities/scf.md) op de pagin
 Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstammende pagina&#39;s te vertalen.
 
 1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
+1. Klik of tik op Bewerken en klik of tik op het tabblad Cloud Servicen.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
-1. Selecteer de vertaalprovider die u wilt gebruiken en klik op Gereed of tik op Gereed.
+1. Selecteer de te gebruiken vertaalprovider en klik op Gereed of tik op Gereed.
 
 ### Pagina&#39;s koppelen aan een vertaalintegratieframework {#associating-pages-with-a-translation-integration-framework}
 
 Koppel een pagina aan het vertaalintegratieframework dat definieert hoe u de vertaling van de pagina en afstammende pagina&#39;s wilt uitvoeren.
 
 1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
+1. Klik of tik op Bewerken en klik of tik op het tabblad Cloud Servicen.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
-1. Selecteer het vertaalintegratieframework dat u wilt gebruiken en klik op Gereed of tik op Gereed.
+1. Selecteer het vertaalintegratieframework dat u wilt gebruiken en klik of tik op Gereed.

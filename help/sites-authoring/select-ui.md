@@ -1,15 +1,10 @@
 ---
 title: Uw gebruikersinterface selecteren in AEM
-description: Vorm welke interface u gebruikt om in AEM te werken.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-docset: aem65
+description: Configureer welke interface u gebruikt om in Adobe Experience Manager 6.5 te werken.
 exl-id: 01cab3c3-4c0d-44d9-b47c-034de9a08cb1
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '733'
+source-wordcount: '735'
 ht-degree: 1%
 
 ---

@@ -1,12 +1,8 @@
 ---
 title: Standaardcomponenten
 description: Adobe Experience Manager wordt geleverd met verschillende kant-en-klare componenten die uitgebreide functionaliteit bieden voor auteurs van websites.
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: page-authoring
-content-type: reference
 exl-id: 85463610-8461-4c1f-bfe7-72229a31ea40
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '425'
 ht-degree: 0%
@@ -36,14 +32,14 @@ U kunt een component selecteren en naar de gewenste locatie op de pagina slepen.
 
 * [Inhoud bewerken - Modus Volledig scherm](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode)
 
-Zie voor meer informatie over het toevoegen van componenten aan een pagina [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md).
+Voor meer informatie over het toevoegen van componenten aan een pagina, zie [Pagina-inhoud bewerken](/help/sites-authoring/editing-content.md).
 Componenten worden gesorteerd op basis van verschillende categorieën, componentgroepen genaamd. Voorbeelden van dergelijke componentgroepen zijn:
 
-* **Wij.Detailhandel**: Omvat de kerncomponenten proxied voor gebruik met [We.Retail-referentieimplementatie](/help/sites-developing/we-retail.md).
+* **Wij.Detailhandel**: Omvat de kerncomponenten die voor gebruik met de [We.Retail-referentieimplementatie](/help/sites-developing/we-retail.md).
 
 * **Wij.Detailhandel**: Omvat commerciële componenten zoals winkelwagentjes en productrasters
 
-* **Algemeen**: Bevat de opmaakcontainer en het ervaringsfragment
+* **Algemeen**: Bevat de lay-outcontainer en het fragment Ervaring
 
 ## Overzicht van alle componenten {#overview-of-all-components}
 

@@ -6,10 +6,8 @@ doc-type: technical-video
 activity: setup
 audience: administrator
 feature: Commerce Integration Framework
-kt: 3046
-thumbnail: 28952.jpg
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -18,7 +16,7 @@ ht-degree: 0%
 
 # Multi-Store Setup (Commerce) {#multi-store}
 
-De AEM CIF Core-componenten kunnen worden gebruikt op meerdere AEM-sitestructuren en de onderliggende GraphQL-clientimplementatie kan verbinding maken met verschillende Adobe Commerce-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
+De AEM CIF Core Components kunnen op meerdere AEM sitestructuren worden gebruikt en de onderliggende GraphQL client-implementatie kan verbinding maken met verschillende Adobe Commerce-winkels/winkelweergaven. Hierdoor kunnen projecten complexe multistore-/multisite-instellingen implementeren.
 
 In een video wordt een overzicht gegeven van de opties voor het integreren van meerdere Adobe Commerce Store Views met Adobe Experience Manager Sites.
 
@@ -28,7 +26,7 @@ AEM functies voor beheer van meerdere sites van Live Copy en Taal Copy worden ge
 
 De aanbevolen setup bestaat uit het gebruik van een 1:1-relatie tussen de AEM site en de Adobe Commerce-winkelweergave.
 
-Voer de onderstaande stappen uit om een AEM-site aan te sluiten en CIF Core-componenten te AEM aan een speciale winkelweergave:
+Voer de onderstaande stappen uit om een AEM-site te verbinden en CIF Core Components ook aan een toegewijde winkelweergave te AEM:
 
 ## Configuratie {#configuration}
 

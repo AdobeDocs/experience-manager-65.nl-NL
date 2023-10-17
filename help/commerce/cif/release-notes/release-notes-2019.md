@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de release AEM inhoud en handel 2019
-description: Opmerkingen bij de release AEM inhoud en handel 2019
+description: Opmerkingen bij de release van Adobe Experience Manager Content and Commerce 2019.
 exl-id: 7e61a75d-6b35-46ee-b88a-444c10b2708f
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '990'
+source-wordcount: '992'
 ht-degree: 6%
 
 ---
@@ -49,7 +49,7 @@ ht-degree: 6%
 
 * Volledig bruikbare sjablonen voor de pagina met productdetails en de pagina met productlijsten. Auteurs kunnen nu sjablonen maken en de productlijst en productdetailcomponenten naar deze sjablonen slepen en neerzetten. Naast het toevoegen van andere componenten, kunnen de auteurs de lay-out van deze malplaatjes nu veranderen, die hen onbeperkte vrijheid geven om verbazende ervaringen tot stand te brengen die marketing en handelsinhoud combineren.
 
-* Alle auteurvriendelijke kern-componenten van CIF zijn verbeterd om te steunen [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
+* Alle auteurvriendelijke CIF core-components zijn uitgebreid om te ondersteunen [AEM](https://experienceleague.adobe.com/docs/experience-manager-65/authoring/siteandpage/style-system.html?lang=en). Er zijn voorbeeldstijlen beschikbaar voor de component met de productlijst.
 
 * React-based cliënt-zijcomponenten voor rekeningsbeheer. Deze release ondersteunt de volgende functies: Aanmelden, Wachtwoord vergeten en Account maken.
 
@@ -91,11 +91,11 @@ ht-degree: 6%
 
 ### Wat is er nieuw? {#what-is-new-august}
 
-* Het insluiten van CIF-connector in CIF Archetype is optioneel gemaakt om ontwikkelaars meer flexibiliteit te bieden.
+* Het insluiten CIF Connector in CIF Archetype wordt facultatief gemaakt om ontwikkelaars meer flexibiliteit te verstrekken.
 
 * CIF-componenten losgekoppeld van &quot;Venia&quot;-specifieke CSS-stijlen, zodat ontwikkelaars naar keuze CSS-stijlen kunnen toepassen.
 
-* Multistore/site functie om gebruik van CIF Core Componenten op veelvoudige AEM plaatsstructuren toe te staan en de onderliggende cliënt van GraphQL toe te laten om met verschillende opslag/opslagmeningen van Adobe Commerce te verbinden.
+* Multistore/site functie om het gebruik van CIF Core Components op meerdere AEM sitestructuren toe te staan en de onderliggende GraphQL client-implementatie in staat te stellen verbinding te maken met verschillende Adobe Commerce store/store-weergaven.
 
 * GraphQL caching is ingeschakeld voor bepaalde GraphQL query&#39;s via HTTP GET om de reactietijd te verminderen.
 
@@ -119,7 +119,7 @@ ht-degree: 6%
 
 ### Wat is er nieuw? {#what-is-new-july}
 
-* Eerste CIF Archetype om ontwikkelaars van verscheidene plaatsingsopties te voorzien: 1.Deploy AEM Venia storefront 2. Stel steigers voor een nieuw project 3 op. CIF-elementen gebruiken in een bestaand project
+* Eerste CIF Archetype om ontwikkelaars van verscheidene plaatsingsopties te voorzien: 1.Deploy AEM Venia storefront 2. Stel steigers voor een nieuw project 3 op. CIF gebruiken in een bestaand project
 
 * Catalogusnavigatie op meerdere niveaus ter ondersteuning van navigatie door categorieën en subcategorieën.
 

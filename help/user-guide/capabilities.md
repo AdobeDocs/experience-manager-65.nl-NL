@@ -1,13 +1,11 @@
 ---
-title: AEM 6.5 Handboek voor mogelijkheden
-seo-title: AEM 6.5 Capabilities User Guide
-description: Een overzicht van de essentiële capaciteiten van AEM 6.5
-seo-description: An overview of the essential capabilities of AEM 6.5
+title: Gebruikershandleiding voor AEM 6.5 Capabilities
+description: Een overzicht van de essentiële capaciteiten van Adobe Experience Manager 6.5.
 exl-id: d9941242-a01d-48fa-bad0-4c5b9dd16f4c
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '129'
-ht-degree: 46%
+source-wordcount: '131'
+ht-degree: 45%
 
 ---
 
@@ -15,7 +13,7 @@ ht-degree: 46%
 
 ## AEM stichting {#aem-foundation}
 
-[Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.5](/help/sites-deploying/home.md), inclusief de cloudimplementatie van Adobe Managed Services.
+[Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.5](/help/sites-deploying/home.md), met inbegrip van onze Adobe Managed Services cloud-implementatie.
 
 [Leer hoe u een AEM-project beheert](/help/managing/home.md).
 
@@ -37,7 +35,7 @@ ht-degree: 46%
 
 [Leer over de digitale signaaloplossing om dynamische en interactieve ervaringen te publiceren.](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
-## AEM Commerce {#aem-commerce}
+## AEM {#aem-commerce}
 
 [Meer weten over AEM Commerce?](/help/commerce/home.md)
 

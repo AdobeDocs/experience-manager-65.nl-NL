@@ -1,28 +1,27 @@
 ---
 title: AEM CIF Classic
-description: AEM Klassieke CIF-hulpmiddelen en documentatiekoppelingen voor zelfhulp
+description: Adobe Experience Manager CIF Klassieke hulpmiddelen en documentatiekoppelingen voor zelfhulp.
 exl-id: ae0823b3-d847-42b6-ba92-e4e949da1799
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '52'
+source-wordcount: '54'
 ht-degree: 1%
 
 ---
 
 # AEM CIF Classic {#commerce-guide}
 
-Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Klassiek CIF.
+Deze pagina maakt een lijst van de zelfhulp middelen betreffende AEM Klassiek.
 
 >[!NOTE]
 >
->CIF Classic is in onderhoudsmodus.
+>CIF Klassiek is in onderhoudsmodus.
 >
 >* Nieuwe projecten moeten [AEM CIF](/help/commerce/home.md).
->* Bestaande CIF Classic moet [migreren naar AEM CIF](/help/commerce/cif/migration.md).
+>* Bestaande CIF Klassiek moet [migreren naar AEM CIF](/help/commerce/cif/migration.md).
 >
 
-
-## Klassieke CIF-artikelen {#key-articles}
+## Belangrijke CIF Klassieke artikelen {#key-articles}
 
 * [Concepten](administering/concepts.md)
 * [Beheer](administering/generic.md)

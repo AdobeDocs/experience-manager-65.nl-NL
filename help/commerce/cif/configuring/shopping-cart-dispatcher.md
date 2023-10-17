@@ -1,9 +1,9 @@
 ---
 title: Winkelwagentje en Dispatcher Setup
-description: Winkelwagentje en Dispatcher Setup
-source-git-commit: a467009851937c4a10b165a3d253c47bf990bbc5
+description: Meer informatie over het winkelwagentje en de Adobe Experience Manager Dispatcher Setup.
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '141'
+source-wordcount: '148'
 ht-degree: 0%
 
 ---

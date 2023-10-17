@@ -1,18 +1,10 @@
 ---
 title: Aanpassing en doelgerichtheid van inhoud
-seo-title: Personalization and Content Targeting
-description: Leer hoe AEM persoonlijke inhoud kan maken
-seo-description: Learn how AEM can create personalized content
-uuid: 3a1aaa3d-5f57-4fb7-a4be-523f0d274b79
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-content-type: reference
-topic-tags: personalization
-discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
+description: Leer hoe u met Adobe Experience Manager 6.5 persoonlijke inhoud kunt maken.
 exl-id: be34760a-875b-419d-9fa4-2359b314a3b7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -25,7 +17,7 @@ AEM biedt een kader van instrumenten voor het ontwerpen van gerichte inhoud en h
 
 ## Doelmodus {#targeting-mode}
 
-[Doelinhoud auteur](/help/sites-authoring/content-targeting-touch.md) het gebruiken van de Wijze van het Doel van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor de ervaringen van uw marketing activiteiten tot stand te brengen.
+[Doelinhoud auteur](/help/sites-authoring/content-targeting-touch.md) het gebruiken van het Doel wijze van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor de ervaringen van uw marketing activiteiten tot stand te brengen.
 
 ## Activiteiten {#activities}
 
@@ -43,7 +35,7 @@ Voor elke activiteit, bepaalt u één of meerdere ervaringen die het publiek ide
 
 De soorten publiek zijn gebaseerd op marketing segmenten die of in AEM of Adobe Target worden gecreeerd. Wanneer een bezoeker een webpagina opent, bepaalt de paginalogica het publiek waartoe zij behoren en geeft deze de inhoud weer die u voor dat publiek hebt gemaakt.
 
-Een activiteit definieert bijvoorbeeld ervaringen voor twee verschillende soorten publiek: vrouwen ouder dan 30 jaar en vrouwen jonger dan 30 jaar. Op de pagina Vrouwen van de website We.Retail staan verschillende producten voor elke ervaring.
+Een activiteit definieert bijvoorbeeld ervaringen voor twee verschillende doelgroepen: vrouwen ouder dan 30 jaar en vrouwen jonger dan 30 jaar. Op de pagina Vrouwen van de website We.Retail staan verschillende producten voor elke ervaring.
 
 U definieert ervaringen voor een activiteit. U kunt de [Activiteitenconsole](/help/sites-authoring/activitylib.md#adding-editing-an-activity-using-the-activities-console) of [Doelmodus](/help/sites-authoring/content-targeting-touch.md#adding-and-removing-experiences-using-targeting-mode) om ervaringen aan een activiteit toe te voegen.
 
@@ -57,7 +49,7 @@ Gebruik de [Aanbiedingsconsole](/help/sites-authoring/offerlib.md) om aanbieding
 
 ## Richtingsmotor {#targeting-engine}
 
-De doelengine is het mechanisme dat de logica voor doelgerichte inhoud aandrijft. [Activiteiten](/help/sites-authoring/activitylib.md) zijn geconfigureerd voor het gebruik van een van de volgende twee motoren: AEM en Adobe Target.
+De doelengine is het mechanisme dat de logica voor doelgerichte inhoud aandrijft. [Activiteiten](/help/sites-authoring/activitylib.md) zijn geconfigureerd voor het gebruik van een van de twee beschikbare motoren voor gerichte toepassingen: AEM en Adobe Target.
 
 ### AEM {#aem}
 

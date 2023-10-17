@@ -1,34 +1,28 @@
 ---
 title: Uw Postvak In om taken te beheren
-description: Uw taken beheren met de Postvak IN.
-uuid: ddd48019-ce69-4a47-be2b-5b66ae2fe3c8
-contentOwner: Chris Bohnert
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: introduction
-content-type: reference
-discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+description: Uw taken beheren met de Postvak IN Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1148'
 ht-degree: 7%
 
 ---
 
 # Uw inbox{#your-inbox}
 
-U kunt meldingen ontvangen van verschillende AEM, waaronder workflows en projecten. bijvoorbeeld over:
+U kunt meldingen ontvangen van verschillende AEM, zoals workflows en projecten, bijvoorbeeld over:
 
 * Taken:
 
-   * Deze kunnen ook worden gemaakt op verschillende punten in de AEM-interface, bijvoorbeeld onder **Projecten**,
+   * Deze kunnen ook worden gemaakt op verschillende punten binnen de AEM-interface, bijvoorbeeld onder **Projecten**,
    * dit kan het resultaat zijn van een workflow **Taak maken** of **Projecttaak maken** stap.
 
 * Workflows:
 
    * tijdelijke items die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren;
 
-      * dit is het product van workflow **Deelnemer** stappen
+      * dit is het product van de workflow **Deelnemer** stappen
 
    * items zijn mislukt, zodat beheerders de mislukte stap opnieuw kunnen proberen.
 
@@ -56,7 +50,7 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 
 >[!NOTE]
 >
->Bepaalde acties worden ook weergegeven in de [kaartweergave van de juiste bron](/help/sites-authoring/basic-handling.md#card-view).
+>Bepaalde acties worden ook weergegeven in het gedeelte [kaartweergave van de juiste bron](/help/sites-authoring/basic-handling.md#card-view).
 
 ## Administratieve taken buiten de box  {#out-of-the-box-administrative-tasks}
 
@@ -158,7 +152,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
 
 * **Gebruikersnavigatie**
    * **Navigatieopties verbergen:** Selecteer deze optie om de beschikbare navigatieopties in de koptekst te verbergen. De navigatieopties omvatten verbindingen aan andere oplossingen, de verbinding van de Hulp, en de auteursopties beschikbaar op het Tikken van het embleem of de tekst van Adobe Experience Manager.
-* **Opslaan:** Tik op deze optie of klik op deze optie om de instellingen op te slaan.
+* **Opslaan:** Tik/klik op deze optie om de instellingen op te slaan.
 
 ## Actie ondernemen op een item {#taking-action-on-an-item}
 
@@ -173,9 +167,9 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
 
    De acties zijn geschikt voor het item en omvatten:
 
-   * **Voltooid** actie; bijvoorbeeld een taak- of workflowitem.
+   * **Voltooid** handeling, bijvoorbeeld een taak of workflowitem.
    * **Opnieuw toewijzen**/**Delegeren** een object.
-   * **Openen** een voorwerp; afhankelijk van het type item kan deze handeling:
+   * **Openen** een item; afhankelijk van het type item kan deze handeling:
 
       * itemeigenschappen weergeven
       * een geschikt dashboard of een geschikte wizard voor verdere actie openen
@@ -191,7 +185,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
    >
    >* Workflowitems - [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md)
 
-1. Afhankelijk van het geselecteerde item wordt een actie gestart. bijvoorbeeld:
+1. Afhankelijk van het geselecteerde item wordt een handeling gestart, bijvoorbeeld:
 
    * er wordt een dialoog geopend die op de actie is toegesneden .
    * er wordt een wizard Handelingen gestart.
@@ -203,23 +197,23 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
 
    Afhankelijk van of een dialoogvenster, wizard, documentatiepagina is geopend, kunt u:
 
-   * Bevestig de passende actie; bijvoorbeeld Opnieuw toewijzen.
+   * Bevestig de juiste actie, bijvoorbeeld Opnieuw toewijzen.
    * Annuleer de handeling.
-   * Pijl-achter; Als bijvoorbeeld een wizard Handelingen of een documentatiepagina is geopend, kunt u terugkeren naar het Postvak IN.
+   * Pijl-terug; als bijvoorbeeld een wizard Handelingen of een documentatiepagina is geopend, kunt u terugkeren naar het Postvak IN.
 
 ## Een taak maken {#creating-a-task}
 
 In het Postvak IN kunt u taken maken:
 
 1. Selecteren **Maken** vervolgens **Taak**.
-1. Vul de vereiste velden in het dialoogvenster **Basis** en **Geavanceerd** tabs; alleen **Titel** is verplicht, zijn alle andere facultatief:
+1. Vul de vereiste velden in het dialoogvenster **Basis** en **Geavanceerd** tabs; alleen de **Titel** is verplicht, zijn alle andere facultatief:
 
    * **Basis**:
 
       * **Titel**
       * **Project**
       * **Geadresseerde**
-      * **Inhoud**; Net als bij Payload is dit een verwijzing van de taak naar een locatie in de repository
+      * **Inhoud**; dit is een verwijzing van de taak naar een locatie in de repository, vergelijkbaar met Payload.
       * **Beschrijving**
       * **Taakprioriteit**
       * **Begindatum**
@@ -229,7 +223,7 @@ In het Postvak IN kunt u taken maken:
 
    * **Geavanceerd**
 
-      * **Naam**: dit wordt gebruikt om de URL te vormen; als het leeg is, wordt het gebaseerd op de **Titel**.
+      * **Naam**: dit wordt gebruikt om de URL te vormen; als deze leeg is, wordt deze gebaseerd op de **Titel**.
 
    ![wf-87](assets/wf-87.png)
 
@@ -243,7 +237,7 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) op b
 
    >[!NOTE]
    >
-   >Alleen taken die zijn gemaakt met de opdracht **Maken** de **Inbox** kan worden gebruikt om een project tot stand te brengen.
+   >Alleen taken die zijn gemaakt met de **Maken** van de **Inbox** kan worden gebruikt om een project tot stand te brengen.
    >
    >Workitems (van een workflow) kunnen niet worden gebruikt om een project te maken.
 
@@ -273,13 +267,13 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) op b
 
 U kunt de vermelde items filteren:
 
-1. Open de **AEM Postvak IN**.
+1. Open de **AEM Inbox**.
 
 1. Open de filterkiezer:
 
    ![wf-88](assets/wf-88.png)
 
-1. U kunt de vermelde items filteren op basis van een reeks criteria, waarvan er vele kunnen worden verfijnd; bijvoorbeeld:
+1. U kunt de vermelde items filteren op basis van een reeks criteria, waarvan er vele kunnen worden verfijnd, bijvoorbeeld:
 
    ![wf-89](assets/wf-89.png)
 

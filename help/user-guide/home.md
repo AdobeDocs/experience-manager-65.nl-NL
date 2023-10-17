@@ -1,15 +1,15 @@
 ---
-title: AEM 6.5 de Hub van de Gids van de Gebruiker
-description: Een overzicht van de essentiële bronnen voor het begrijpen, installeren, beheren en gebruiken van AEM 6.5
+title: AEM 6.5 Hub voor gebruikershandleiding
+description: Een overzicht van de essentiële bronnen voor het begrijpen, installeren, beheren en gebruiken van AEM 6.5.
 exl-id: 51788662-6214-408e-98d9-692950c366be
-source-git-commit: 78c584db8c35ea809048580fe5b440a0b73c8eea
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 1%
 
 ---
 
-# AEM 6.5 de Hub van de Gids van de Gebruiker {#aem-64-user-guide}
+# AEM 6.5 Hub voor gebruikershandleiding {#aem-64-user-guide}
 
 ## Inleiding {#introduction}
 
@@ -35,12 +35,12 @@ ht-degree: 1%
 
 Ondersteuningsafgevaardigden kunnen ondersteuning krijgen via:
 
-* Web: Ondersteuningsportaal voor Experience Managers
+* Web: ondersteuningsportaal voor Experience Managers
 * Telefoon: [Zoek het telefoonnummer voor uw regio.](https://experienceleague.adobe.com/?support-tab=home#support)
 
 >[!NOTE]
 >
->Niet zeker of je een **supportgedelegeerde**? Ontdek of dit [gebruikerstype is op u van toepassing](https://helpx.adobe.com/experience-cloud/supported-users.html) en meer informatie over Adobe [voorwaarden voor bedrijfsondersteuning](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
+>Niet zeker of je een **supportgedelegeerde**? Ontdek of dit [gebruikerstype is op u van toepassing](https://helpx.adobe.com/experience-cloud/supported-users.html) en meer informatie over de Adobe [voorwaarden voor bedrijfsondersteuning](https://helpx.adobe.com/support/programs/enterprise-support-terms.html).
 
 ## Gemeenschap {#community}
 

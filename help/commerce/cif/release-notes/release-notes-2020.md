@@ -1,10 +1,10 @@
 ---
 title: Opmerkingen bij de release AEM Inhoud en Handel 2020
-description: Opmerkingen bij de release AEM Inhoud en Handel 2020
+description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '1352'
+source-wordcount: '1354'
 ht-degree: 8%
 
 ---
@@ -111,13 +111,13 @@ ht-degree: 8%
 
 ### Wat is er nieuw? {#what-is-new-july}
 
-* CIF Venia Reference Site werd geëxtraheerd uit de CIF Archetype repo en is nu een standalone GitHub-opslagplaats.
+* CIF Venia Reference Site is geëxtraheerd uit de CIF Archetype repo en is nu een standalone GitHub-opslagplaats.
 
-* CIF Archetype samengevoegd met AEM Project Archetype. Voor nieuwe projecten, gebruik [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) als het beginpunt.
+* CIF Archetype is samengevoegd met AEM Project Archetype. Voor nieuwe projecten, gebruik [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) als het beginpunt.
 
 * Adresboekbeheer is toegevoegd om gebruikers met een aanmelding in staat te stellen hun adressen te beheren.
 
-* De gebruikersinterface van de CIF Cloud-configuratie ondersteunt publicatie-/unpublish-handelingen.
+* CIF de gebruikersinterface voor configuratie van de cloud ondersteunt publicatie-/publicatieacties.
 
 ### Verbeterde functies {#what-is-improved-july}
 
@@ -143,7 +143,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Categoriefiltering toegevoegd als facet, zodat kopers op basis van categorie kunnen filteren.
 
-* Toegevoegde de dienstgebruikerstoewijzing als deel van veiligheidsvereiste om toegang tot /conf via de dienstgebruikers te verzekeren en niet door ACLs direct te manipuleren. De Componenten van de Kern van CIF moeten nu een de dienstgebruiker gebruiken om tot configuraties toegang te hebben.
+* Toegevoegde de dienstgebruikerstoewijzing als deel van veiligheidsvereiste om toegang tot /conf via de dienstgebruikers te verzekeren en niet door ACLs direct te manipuleren. CIF Core Components moet nu een de dienstgebruiker gebruiken om tot configuraties toegang te hebben.
 
 ### Verbeterde functies {#what-is-improved-june}
 
@@ -189,7 +189,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 ### Wat is er nieuw? {#what-is-new-april}
 
-* De montages van de configuratie voor Schakelaar CIF zijn verenigd en vereenvoudigd. Voor meer details kun je uitchecken [Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) of [Nieuwe AEM CIF Project instellen](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
+* De montages van de configuratie voor CIF Schakelaar zijn verenigd en vereenvoudigd. Voor meer details kun je uitchecken [Aan de slag](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html) of [Nieuwe AEM CIF](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/home.html)
 
 ### Verbeterde functies {#what-is-improved-april}
 
@@ -243,7 +243,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Wijzig de wachtwoordfunctionaliteit die beschikbaar is in mijn account.
 
-* i18n steun voor AEM server-side van CIF kerncomponenten.
+* i18n steun voor AEM CIF server-kant kerncomponenten.
 
 * Algemeen verwante productcomponent is beschikbaar.
 

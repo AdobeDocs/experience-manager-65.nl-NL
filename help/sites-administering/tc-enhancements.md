@@ -1,23 +1,18 @@
 ---
-title: Verbeterde vertaling
-seo-title: Translation Enhancements
-description: Verbeterde vertaalfuncties in AEM.
-seo-description: Translation enhancements in AEM.
-uuid: 0563603f-327b-48f1-ac14-6777c06734b9
-products: SG_EXPERIENCEMANAGER/6.5/SITES
+title: Verbeteringen op gebied van vertaling
+description: Incrementele verbeteringen en verfijningen van de mogelijkheden voor AEM vertaalbeheer.
 topic-tags: site-features
 content-type: reference
-discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 1be3d394283493f7c282ea4c3d794458d88e1ac3
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '681'
+source-wordcount: '686'
 ht-degree: 0%
 
 ---
 
-# Verbeterde vertaling{#translation-enhancements}
+# Verbeteringen op gebied van vertaling{#translation-enhancements}
 
 Deze pagina biedt incrementele verbeteringen en verfijningen voor AEM vertaalbeheermogelijkheden.
 
@@ -29,7 +24,7 @@ Er zijn opties toegevoegd om de productiviteit bij vertaalprojecten te verbetere
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Naar de **Geavanceerd** tab. Onderaan kunt u **Automatisch introducties voor vertaling bevorderen**.
+1. Schakel over naar de **Geavanceerd** tab. Onderaan kunt u **Automatisch introducties voor vertaling bevorderen**.
 
    ![screen_shot_2018-04-19at223430](assets/screen_shot_2018-04-19at223430.jpg)
 
@@ -49,7 +44,7 @@ Het is mogelijk om veelvoudige doeltalen in een vertaalproject te vormen, om het
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
-1. Naar de **Geavanceerd** tab. U kunt meerdere talen toevoegen onder **Doeltaal**.
+1. Schakel over naar de **Geavanceerd** tab. U kunt onder **Doeltaal**.
 
    ![screen_shot_2018-04-22at212601](assets/screen_shot_2018-04-22at212601.jpg)
 
@@ -109,7 +104,7 @@ Taalwortels kunnen nu worden gegroepeerd onder knooppunten, bijvoorbeeld per reg
 
 ## Vertaalstatus rapporteren {#translation-status-reporting}
 
-Een eigenschap kan nu worden geselecteerd in de lijstweergave Sites, die aangeeft of een pagina is vertaald, vertaald of nog niet is vertaald. Deze weergeven:
+Een eigenschap kan nu worden geselecteerd in de lijstweergave Sites, die aangeeft of een pagina is vertaald, vertaald is of nog niet is vertaald. Deze weergeven:
 
 1. Ga in Sites naar **Lijstweergave.**
 

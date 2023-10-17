@@ -1,14 +1,13 @@
 ---
 title: Vertaalcloudservices toepassen op mappen
-description: Vertaalcloudservices toepassen op mappen
-contentOwner: AG
+description: Pas vertaalwolkendiensten op omslagen in Adobe Experience Manager toe.
 role: Admin
 feature: Translation
 exl-id: f17a33d7-eb2f-406b-8d6c-a3bf564c8702
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
 workflow-type: tm+mt
-source-wordcount: '353'
-ht-degree: 43%
+source-wordcount: '357'
+ht-degree: 42%
 
 ---
 
@@ -48,7 +47,7 @@ Als u een aangepaste connector wilt toepassen voor de vertaalservices die u wilt
 
    ![chlimage_1-218](assets/chlimage_1-218.png)
 
-1. Klik op de knop **[!UICONTROL Configure now]** de koppeling openen **[!UICONTROL Create Configuration]** .
+1. Klik op de knop **[!UICONTROL Configure now]** de koppeling openen **[!UICONTROL Create Configuration]** in.
 
    ![chlimage_1-219](assets/chlimage_1-219.png)
 

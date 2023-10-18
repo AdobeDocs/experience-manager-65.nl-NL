@@ -1,6 +1,6 @@
 ---
 title: Rapportenconsole
-description: Leer hoe u verschillende rapporten kunt openen die op verschillende manieren toegankelijk zijn vanuit de Adobe Experience Manager-auteursomgeving.
+description: Leer hoe u verschillende rapporten kunt gebruiken die u op verschillende manieren kunt openen vanuit de Adobe Experience Manager Author-omgeving.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 2aff2ffe-ba6f-4cc9-a126-40fc2a1161e2
-source-git-commit: 5af420c8e95fed88a8516cce27b8bbc7d3974e75
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%

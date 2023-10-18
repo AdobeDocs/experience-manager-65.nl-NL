@@ -1,20 +1,16 @@
 ---
 title: Gebruikerssynchronisatie van gemeenschappen
-seo-title: Communities User Synchronization
-description: De werking van gebruikerssynchronisatie
-seo-description: How user synchronization works
-uuid: 772b82bd-a66c-4c1d-b80b-dcff77c873a3
+description: Leer hoe gebruikerssynchronisatie werkt in Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 97286c2c-f6e3-43ec-b1a9-2abb58616778
 docset: aem65
 role: Admin
 exl-id: ecd30f5d-ad31-4482-96d3-c92f1cf91336
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '2481'
+source-wordcount: '2471'
 ht-degree: 1%
 
 ---
@@ -23,31 +19,29 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-In AEM Communities, van het publicatiemilieu (afhankelijk van gevormde toestemmingen), *sitebezoekers* kan worden *leden*, maken *gebruikersgroepen* en bewerken *gebruikersprofiel* .
+In de gemeenschappen van Adobe Experience Manager (AEM), van het Publish milieu (afhankelijk van toestemmingen die worden gevormd), *sitebezoekers* kan worden *leden*, maken *gebruikersgroepen* en bewerken *gebruikersprofiel* .
 
-*Gebruikersgegevens* is een term die wordt gebruikt om te verwijzen naar *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*.
+*Gebruikersgegevens* verwijst naar *gebruikers*, *gebruikersprofielen*, en *gebruikersgroepen*.
 
-*Leden* is een term die wordt gebruikt om te verwijzen naar *gebruikers* geregistreerd in de publicatieomgeving, in tegenstelling tot gebruikers die zijn geregistreerd in de auteursomgeving.
+*Leden* verwijzen naar *gebruikers* geregistreerd in de publicatieomgeving, in tegenstelling tot gebruikers die zijn geregistreerd in de auteursomgeving.
 
 Ga voor meer informatie over gebruikersgegevens naar [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md).
 
 ## Gebruikers in een publicatiebedrijf synchroniseren {#synchronizing-users-across-a-publish-farm}
 
-Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de ontwerpomgeving.
+Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de auteuromgeving.
 
-De meeste gebruikersgegevens die in de auteursomgeving worden gemaakt, blijven in de auteursomgeving en worden niet gesynchroniseerd of gerepliceerd om instanties te publiceren.
+De meeste gebruikersgegevens die in de auteuromgeving worden gemaakt, blijven in de Auteur-omgeving en worden niet gesynchroniseerd of gerepliceerd naar Publicatie-instanties.
 
-Wanneer de [topologie](/help/communities/topologies.md) is een [publicatiebedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm)registratie en wijzigingen die in één publicatieexemplaar zijn aangebracht, moeten met andere publicatieinstanties worden gesynchroniseerd. Leden moeten zich kunnen aanmelden en hun gegevens op elk publicatieknooppunt kunnen bekijken.
+Wanneer de [topologie](/help/communities/topologies.md) is een [publicatiebedrijf](/help/sites-deploying/recommended-deploys.md#tarmk-farm), registratie en wijzigingen die worden aangebracht op één instantie Publiceren, moeten worden gesynchroniseerd met andere instanties Publish. Leden moeten zich kunnen aanmelden en hun gegevens kunnen bekijken op elk knooppunt Publish.
 
-Wanneer gebruikerssynchronisatie wordt toegelaten, worden de gebruikersgegevens automatisch gesynchroniseerd over publiceer instanties in het landbouwbedrijf.
+Wanneer gebruikerssynchronisatie wordt toegelaten, worden de gebruikersgegevens automatisch gesynchroniseerd over de Publish instanties in het landbouwbedrijf.
 
 ### Instructies voor het synchroniseren van gebruikers {#user-sync-setup-instructions}
 
-Voor gedetailleerde, geleidelijke instructies, op hoe te om synchronisatie over toe te laten publiceert landbouwbedrijf, zie:
+Voor gedetailleerde, geleidelijke instructies op hoe te om synchronisatie over toe te laten publiceert landbouwbedrijf, zie [Gebruikerssynchronisatie](/help/sites-administering/sync.md).
 
-* [Gebruikerssynchronisatie](/help/sites-administering/sync.md)
-
-## Gebruikerssynchronisatie op de achtergrond  {#user-sync-in-the-background}
+## Gebruikerssynchronisatie op de achtergrond {#user-sync-in-the-background}
 
 ![sling-dist-workflow](assets/sling-dist-workflow.png)
 
@@ -57,7 +51,7 @@ Voor gedetailleerde, geleidelijke instructies, op hoe te om synchronisatie over 
 
 * **distributiepakket**
 
-  Het bevat distributieinformatie voor Sling. Dat is informatie over waar de inhoud moet worden verspreid en wanneer deze als laatste werd verspreid.
+  Het bevat distributieinformatie voor Sling. Dat is informatie over waar de inhoud moet worden verspreid en wanneer deze als laatste is verspreid.
 
 ## Wat gebeurt er als ... {#what-happens-when}
 
@@ -67,21 +61,21 @@ Op auteur, wanneer een communautaire plaats van [Community Sites-console](/help/
 
 ### Gebruiker is gemaakt of bewerkt profiel bij publicatie {#user-is-created-or-edits-profile-on-publish}
 
-Gebruikers en profielen die zijn gemaakt in de publicatieomgeving (bijvoorbeeld via zelfinschrijving, aanmelden via een sociaal netwerk of LDAP-verificatie) worden per ontwerp niet weergegeven in de auteursomgeving.
+Gebruikers en profielen die zijn gemaakt in de publicatieomgeving (bijvoorbeeld via zelfinschrijving, aanmelden via een sociaal netwerk of LDAP-verificatie) worden per ontwerp niet weergegeven in de auteuromgeving.
 
 Wanneer de topologie een [publicatiebedrijf](/help/communities/topologies.md) en de gebruikerssynchronisatie correct is geconfigureerd, *user* en *gebruikersprofiel* wordt gesynchroniseerd over het publicatielandbouwbedrijf gebruikend de distributie van het Schuiven.
 
 ### Nieuwe Community Group wordt gemaakt bij Publiceren {#new-community-group-is-created-on-publish}
 
-Hoewel de aanmaak van een communitygroep vanuit een publicatie-instantie wordt gestart, met als resultaat nieuwe sitepagina&#39;s en een nieuwe gebruikersgroep, gebeurt dit in feite op de auteur-instantie.
+Hoewel de actie is gestart vanuit een instantie Publiceren, vindt het maken van de communitygroep, wat resulteert in nieuwe sitepagina&#39;s en een nieuwe gebruikersgroep, feitelijk plaats op de instantie Auteur.
 
-Als onderdeel van het proces worden de nieuwe sitepagina&#39;s gekopieerd naar alle publicatie-instanties. De dynamisch gecreeerde communautaire gebruikersgroep en zijn lidmaatschap verkopen die aan alle publicatieinstanties worden verdeeld.
+Als onderdeel van het proces worden de nieuwe sitepagina&#39;s gerepliceerd naar alle publicatievarianten. De dynamisch gecreeerde communautaire gebruikersgroep en zijn lidmaatschap verkopen die aan alle Publish instanties worden verdeeld.
 
 ### Gebruikers of gebruikersgroepen worden gemaakt met Beveiligingsconsole {#users-or-user-groups-are-created-using-security-console}
 
-Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de auteursomgeving en omgekeerd.
+Gebruikersgegevens die in de publicatieomgeving zijn gemaakt, worden door het ontwerp niet weergegeven in de auteuromgeving en omgekeerd.
 
-Wanneer de [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md) -console wordt gebruikt om nieuwe gebruikers toe te voegen in de publicatieomgeving. Bij gebruikerssynchronisatie worden de nieuwe gebruikers en hun groepslidmaatschap indien nodig gesynchroniseerd met andere publicatieinstanties. Gebruikerssynchronisatie synchroniseert ook gebruikersgroepen die zijn gemaakt via de beveiligingsconsole.
+Wanneer de [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md) De console wordt gebruikt om nieuwe gebruikers in het publicatiemilieu toe te voegen, synchroniseert de gebruikerssynchronisatie de nieuwe gebruikers en hun groepslidmaatschap aan andere te publiceren instanties, indien nodig. Gebruikerssynchronisatie synchroniseert ook gebruikersgroepen die zijn gemaakt via de beveiligingsconsole.
 
 ### Inhoud voor berichten van gebruikers publiceren {#user-posts-content-on-publish}
 
@@ -97,7 +91,7 @@ De gebruikerssynchronisatie is afhankelijk van de auteursomgeving voor het behee
 
 1. Als gebruikers en gebruikersgroepen al op één uitgever zijn gemaakt, wordt het aanbevolen [handmatig synchroniseren](/help/sites-administering/sync.md#manually-syncing-users-and-user-groups) de gebruikersgegevens voor alle uitgevers voordat ze worden geconfigureerd en gebruikerssynchronisatie wordt ingeschakeld.
 
-   Zodra gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers en groepen gesynchroniseerd.
+   Nadat gebruikerssynchronisatie is ingeschakeld, worden alleen nieuwe gebruikers en groepen gesynchroniseerd.
 
 1. Controleer of de laatste code is geïnstalleerd:
 
@@ -207,7 +201,7 @@ Synchronisatie van leden garanderen:
 
 Met deze configuratie kunt u het opiniepeilingsinterval (waarna uitgevers worden gepingeld en wijzigingen door de auteur worden doorgevoerd) configureren om de wijzigingen voor alle uitgevers te synchroniseren.
 
-De auteur opiniepeilt uitgevers om de 30 seconden (standaard). Als er pakketten aanwezig zijn in de map `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`Vervolgens haalt het deze pakketten op en installeert het deze op andere uitgevers.
+De auteur opiniepeilt uitgevers om de 30 seconden (standaard). Als er pakketten aanwezig zijn in de map `/var/sling/distribution/packages/  socialpubsync -  vlt /shared`Vervolgens worden deze pakketten opgehaald en op andere uitgevers geïnstalleerd.
 
 Het opiniepeilingsinterval wijzigen:
 
@@ -257,7 +251,7 @@ Op elke AEM-publicatie-instantie:
 
    `sling:OrderedFolder`
 
-   De knooppunttypen die in deze eigenschap worden opgegeven, worden gesynchroniseerd en de meldingen (blogs en configuraties die worden gevolgd) worden gesynchroniseerd tussen verschillende uitgevers.
+   De knooppunttypen die in deze eigenschap worden opgegeven, worden gesynchroniseerd en de meldingen (blogs en configuraties gevolgd) worden gesynchroniseerd tussen verschillende uitgevers.
 
 1. Alle mappen toevoegen om in te synchroniseren **DistributedFolders**. Bijvoorbeeld,
 
@@ -281,18 +275,18 @@ Op elke AEM-publicatie-instantie:
 
 AEM auteurinstantie gebruikt Verschuivende identiteitskaart om te identificeren van waar de gegevens komen en aan welke uitgevers het (of niet nodig) het pakket moet terugsturen naar.
 
-Zorg ervoor alle uitgevers in een publicatielandbouwbedrijf een unieke Verkoop identiteitskaart hebben Als het Verdelen identiteitskaart het zelfde voor veelvoudige publiceer instanties in publiceer landbouwbedrijf is, dan zal de gebruikerssynchronisatie ontbreken. Aangezien de auteur niet zal weten waar te om het pakket van en te halen waar te om het pakket te installeren.
+Zorg ervoor alle uitgevers in een publicatielandbouwbedrijf een unieke Verkoop identiteitskaart hebben Als het Verdelen identiteitskaart het zelfde voor veelvoudige publiceer instanties in publiceer landbouwbedrijf is, dan ontbreekt de gebruikerssynchronisatie. Aangezien de auteur niet zal weten waar te om het pakket van en te halen waar te om het pakket te installeren.
 
-Om ervoor te zorgen dat de uitgevers in het publicatielandbouwbedrijf unieke verkoopidentiteitskaart hebben, op elke publicatieinstantie:
+Om ervoor te zorgen dat uitgevers in het publicatielandbouwbedrijf unieke verkoopidentiteitskaart van uitgevers, op elke Publish instantie:
 
 1. Bladeren naar [https://_host:poort_/system/console/status-slingsettings](https://localhost:4503/system/console/status-slingsettings).
 1. Controleer de waarde van **Verkoop-id**.
 
    ![slingerend](assets/slingid.png)
 
-   Als de Verschuivende-id van een publicatie-instantie overeenkomt met de Verschuivende-id van een andere publicatie-instantie, geldt het volgende:
+   Als de verkoop-id van een instantie Publish overeenkomt met de id Sling van een andere instantie Publish, dan:
 
-1. Stop een van de publicatie-instanties met een overeenkomende slingerID.
+1. Stop een van de publicatie-instanties met een overeenkomende verkoop-id.
 1. In de `crx-quickstart/launchpad/felix` map, zoek en verwijder het bestand met de naam *sling.id.fi.*
 
    Bijvoorbeeld op een Linux-systeem:
@@ -303,10 +297,10 @@ Om ervoor te zorgen dat de uitgevers in het publicatielandbouwbedrijf unieke ver
 
    Windows Verkenner gebruiken en zoeken naar `sling.id.file`
 
-1. Start de publicatie-instantie. Bij het opstarten wordt er een nieuwe verkoop-id toegewezen.
+1. Start de instantie Publiceren. Bij het opstarten wordt er een nieuwe verkoop-id toegewezen.
 1. Valideren dat de **Verkoop-id** is nu uniek.
 
-Herhaal deze stappen totdat alle publicatie-instanties een unieke id voor verkopers hebben.
+Herhaal deze stappen totdat alle instanties Publiceren een unieke id voor verkopers hebben.
 
 ### Vault Package Builder-fabriek {#vault-package-builder-factory}
 
@@ -315,7 +309,7 @@ In `/home/users`, `*/rep:cache` node wordt gemaakt. Het is een geheime voorgeheu
 
 Gebruikerssynchronisatie kan worden beëindigd als `rep :cache` knooppunten worden gesynchroniseerd tussen uitgevers.
 
-Om ervoor te zorgen dat updates correct over uitgevers, op elke AEM publicatieinstantie worden gesynchroniseerd:
+Om ervoor te zorgen dat updates correct over uitgevers, op elke AEM Publish instantie worden gesynchroniseerd:
 
 1. Toegang krijgen tot de [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
@@ -357,7 +351,7 @@ Als de distributie van het Verdelen ontbreekt, probeer de volgende het zuiveren 
 
 1. **Controleer de configuratie van AEM Communities User Sync Listener.** Als de gemaakte gebruikers zijn gesynchroniseerd maar de volgende abonnementen en abonnementen niet werken, moet u ervoor zorgen dat de configuratie van AEM Communities User Sync Listener:
 
-   * Knooppunttypen - ingesteld op **rep:Gebruiker, nt:ongestructureerd**, **nt:resource**, **rep:ACL**, **sling:map**, en **sling:OrderedFolder**.
+   * Knooppunttypen - ingesteld op **rep:gebruiker, niet:ongestructureerd**, **nt:resource**, **rep:ACL**, **sling:map**, en **sling:OrderedFolder**.
    * Genegeerde knooppunten - ingesteld op **.tokens**, **systeem**, en **rep:cache**.
    * Gedistribueerde mappen - ingesteld op de mappen die u wilt distribueren.
 
@@ -388,13 +382,13 @@ Foutopsporing:
    1. De configuratie zoeken **Apache Sling Distribution Agent - Sync Agents Factory**.
    1. Hef de selectie van **Ingeschakeld** selectievakje.
 
-      Wanneer de gebruikerssynchronisatie wordt uitgeschakeld bij de instantie van de auteur, worden de eindpunten (exportfunctie en importer) uitgeschakeld en is de instantie van de auteur statisch. De **vlt** pakketten worden niet gepingeld of opgehaald door de auteur.
+      Wanneer de gebruikerssynchronisatie wordt uitgeschakeld op eindpunten van de Auteur (exportfunctie en importer), wordt de instantie Auteur statisch. De **vlt** pakketten worden niet gepingeld of opgehaald door de auteur.
 
       Wanneer een gebruiker bij een publicatie-instantie is gemaakt, wordt de opdracht **vlt** pakket is gemaakt in */var/sling/distribution/packages/socialpubsync - vlt/data* knooppunt. En als deze pakketten door de auteur aan een andere dienst worden geduwd. U kunt deze gegevens downloaden en uitpakken om te controleren wat alle eigenschappen aan andere diensten worden geduwd.
 
 1. Ga naar een uitgever en maak een gebruiker op de uitgever. Hierdoor worden gebeurtenissen gemaakt.
-1. Controleer de [volgorde van logbestanden](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities), gemaakt bij het maken van gebruikers.
+1. Controleer de [volgorde van logbestanden](/help/communities/sync.md#troubleshoot-sling-distribution-in-aem-communities) gemaakt bij het maken van gebruikers.
 1. Controleren of een **vlt** pakket is gemaakt op **/var/sling/distribution/packages/socialpubsync-vlt/data**.
-1. Schakel nu de gebruikerssynchronisatie in AEM instantie van de auteur.
+1. Schakel nu de gebruikerssynchronisatie in AEM instantie Auteur in.
 1. Wijzig bij de uitgever de eindpunten voor de exportfunctie of de importer in **Apache Sling Distribution Agent - Sync Agents Factory**.
 We kunnen pakketgegevens downloaden en uitpakken om te controleren welke eigenschappen aan andere uitgevers worden doorgegeven en welke gegevens verloren gaan.

@@ -1,6 +1,6 @@
 ---
 title: Sites-console van gemeenschappen
-description: Hoe te tot de console van de Plaatsen van Gemeenschappen toegang hebben
+description: Leer hoe u toegang krijgt tot de console Communitysites voor het maken, bewerken en beheren van sites.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 426e3adf-3723-4d17-a988-6eb050939e68
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '3080'
+source-wordcount: '3087'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Zie [Aan de slag met AEM Communities](/help/communities/getting-started.md) waar
 
 Voordat u een communitysite maakt, moet u *vereist* tot:
 
-* Zorg ervoor dat een of meer publicatie-instanties actief zijn.
+* Zorg ervoor dat een of meer publicatie-exemplaren actief zijn.
 * De optie [tunneldienst](/help/communities/deploy-communities.md#tunnel-service-on-author) leden en leden te beheren.
 * Identificeer [primaire uitgever](/help/communities/deploy-communities.md#primary-publisher).
 * [Replicatie configureren](/help/communities/deploy-communities.md#replication-agents-on-author) als de primaire uitgevershoort niet het gebrek is (4503).
@@ -67,7 +67,7 @@ Elke gemaakte site bevat een aanmeldingsfunctie omdat bezoekers van de site zich
 
 Het proces wordt gestart door de `Create` boven aan de console Communitysites.
 
-Het ontwerpproces is een reeks stappen die worden gepresenteerd als deelvensters met een set functies die moeten worden geconfigureerd (weergegeven als subdeelvensters). Het is mogelijk verder te gaan naar de **Volgende** stap of **Vorige** naar de vorige stap voordat u de site in de laatste stap toewijst.
+Het ontwerpproces is een reeks stappen die als deelvensters worden gepresenteerd met een set functies die moeten worden geconfigureerd (weergegeven als subdeelvensters). Het is mogelijk verder te gaan naar de **Volgende** stap of **Vorige** naar de vorige stap voordat u de site in de laatste stap toewijst.
 
 ### Stap 1: Sjabloon van site {#step-site-template}
 
@@ -116,7 +116,7 @@ In het deelvenster Sjabloon site worden de volgende waarden opgegeven: Titel, Be
 
 ### Stap 2: Ontwerp {#step-design}
 
-Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het thema en de brandingbanner:
+Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het thema en de brandbanner:
 
 #### COMMUNAUTAIR SITE-THEMA {#community-site-theme}
 
@@ -162,7 +162,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 >
 >**Tunnelservice inschakelen**
 >
->Verscheidene sub-panelen van Montages staan toewijzing van een vertrouwd lid aan gematigde UGC toe, leiden groepen, of zijn contacten voor inschrijvingsmiddelen in het publicatiemilieu.
+>Verscheidene van subpanels van Montages staan toewijzing van een vertrouwd lid aan gematigde UGC toe, leiden groepen, of zijn contacten voor inschrijvingsmiddelen in het publicatiemilieu.
 >
 >De conventie is bedoeld voor publicatie [gebruikers en gebruikersgroepen](/help/communities/users.md) (leden en lidgroepen) om niet in het auteursmilieu worden gedupliceerd.
 >
@@ -450,7 +450,7 @@ In het deelvenster ONTWERP kunt u een nieuw thema toepassen:
 
 ### Instellingen wijzigen {#modify-settings}
 
-In het deelvenster INSTELLINGEN hebt u toegang tot de meeste instellingen onder de subdeelvensters van Stap 3 van het maken van de communitysite:
+In het deelvenster INSTELLINGEN hebt u toegang tot de meeste instellingen onder de subdeelvensters van Stap 3 van het maken van de gemeenschapssite:
 
 * [Gebruikersbeheer](#user-management)
 * [Tags](#tagging)
@@ -475,7 +475,7 @@ Er is een indicatie nadat de site is gepubliceerd.
 
 ### Publiceren met geneste groepen {#publishing-with-nested-groups}
 
-Nadat u een communitysite hebt gepubliceerd, moet u elke subcommunity (geneste groep) die met de [Groepsconsole](/help/communities/groups.md).
+Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subcommunity (genestelde groep) individueel te publiceren die gebruikend wordt gecreeerd [Groepsconsole](/help/communities/groups.md).
 
 ## De site exporteren {#exporting-the-site}
 

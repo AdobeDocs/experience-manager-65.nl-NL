@@ -1,20 +1,16 @@
 ---
 title: Modernisering van communautaire inhoud
-seo-title: Moderating Community Content
-description: Moderniseringsconcepten en -acties
-seo-description: Moderation concepts and actions
-uuid: 5c991d3a-0037-4d78-8f91-bb62e44441fa
+description: Leer hoe u door de gebruiker gegenereerde inhoud kunt modereren, zodat u positieve bijdragen kunt herkennen en negatieve, zoals spam en verkeerd taalgebruik, kunt beperken.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: 6866d209-5789-4ef9-bc3c-d644d4fb4b1c
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '1509'
+source-wordcount: '1510'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wordt gemaakt wanneer een lid (dat is aangemeld bij de bezoeker van de site) inhoud van een gepubliceerde communitysite plaatst via interactie met een van de volgende onderdelen van de community:
+Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wordt gemaakt wanneer een lid (dat is aangemeld bij de bezoeker van de site) inhoud van een gepubliceerde communitysite plaatst via interactie met een van de volgende onderdelen van de gemeenschap:
 
 * [Blog](/help/communities/blog-feature.md): leden plaatsen een blogartikel of commentaar.
 * [Kalender](/help/communities/calendar.md): leden plaatsen een agendagebeurtenis of commentaar.
@@ -34,17 +30,17 @@ Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wor
 * [QnA](/help/communities/working-with-qna.md): leden maken een vraag of beantwoorden een vraag.
 * [Revisies](/help/communities/reviews.md): leden plaatsen een opmerking wanneer ze een object beoordelen.
 
-Moderatie van UGC is nuttig voor het erkennen van positieve bijdragen en het beperken van negatieve bijdragen (zoals spam en misleidende taal). UGC kan vanuit verschillende omgevingen worden gemodereerd:
+Moderatie van UGC is nuttig om positieve bijdragen te herkennen en negatieve (zoals spam en misleidende taal) te beperken. UGC kan vanuit verschillende omgevingen worden gemodereerd:
 
 * [Opslag van communautaire inhoud](working-with-srp.md)
 
 * [Moderniseringsconsole](moderation.md)
 
-  De console van de Moderatie is toegankelijk door beheerders en [gemeenschapsmoderatoren](/help/communities/users.md) in het openbare milieu evenals door beheerders in het auteursmilieu. Dit is mogelijk wanneer inhoud van de gebruikersgemeenschap wordt opgeslagen in een [gemeenschappelijk archief](/help/communities/working-with-srp.md).
+  De console van de Moderatie is toegankelijk door beheerders en [gemeenschapsmoderatoren](/help/communities/users.md) in het openbare milieu en door beheerders in het auteursmilieu. Dit is mogelijk wanneer inhoud van de gebruikersgemeenschap wordt opgeslagen in een [gemeenschappelijk archief](/help/communities/working-with-srp.md).
 
 * [Moderatie binnen de context](in-context.md)
 
-  De modernisering in het publicatiemilieu kan door beheerders en communautaire moderatoren direct op de pagina worden uitgevoerd waar de inhoud werd gepost.
+  De modernisering in het Publish milieu kan door beheerders en communautaire moderatoren direct op de pagina worden uitgevoerd waar de inhoud werd gepost.
 
 ## Moderatiehandelingen {#moderation-actions}
 
@@ -147,7 +143,7 @@ De acties die op geposte inhoud (UGC) kunnen worden uitgevoerd variëren afhanke
 
 ### Bewerken/verwijderen {#edit-delete}
 
-Nadat een post is gemaakt, kan het door de schepper, een beheerder of een communautaire moderator worden uitgegeven of worden geschrapt.
+Nadat een post is gemaakt, kan het door de schepper, een beheerder, of communautaire moderator worden uitgegeven of worden geschrapt.
 
 Wanneer UGC wordt verwijderd, wordt deze verwijderd uit de opslagplaats en wordt deze mogelijk niet hersteld.
 
@@ -185,19 +181,19 @@ De close/Reopen actie kan door beheerders of communautaire moderatoren worden ge
 
 Markering is een manier om aan te geven dat er een probleem is met de inhoud van een bericht, met uitzondering van de maker van de inhoud. Als deze eenmaal is gemarkeerd, wordt een pictogram voor markering ongedaan gemaakt, zodat hetzelfde lid de markering van de inhoud kan opheffen.
 
-In-context de matiging kan worden gevormd om leden toe te staan om een reden te selecteren wanneer het vlaggen van een post. De lijst van selecteerbare vlagredenen is configureerbaar met inbegrip van al dan niet een douanereden kan zijn ingegaan. De vlaggenreden wordt bewaard met UGC maar de reden veroorzaakt geen bepaalde actie. Alleen het aantal markeringen activeert een melding. Op gemarkeerde inhoud is als zodanig geannoteerd, zodat moderatoren hierop kunnen reageren.
+In-context de matiging kan worden gevormd om leden toe te staan om een reden te selecteren wanneer het vlaggen van een post. De lijst van selecteerbare vlagredenen is configureerbaar met inbegrip van of een douanereden kan zijn ingegaan. De vlaggenreden wordt bewaard met UGC maar de reden veroorzaakt geen bepaalde actie. Alleen het aantal markeringen activeert een melding. Op gemarkeerde inhoud is als zodanig geannoteerd, zodat moderatoren hierop kunnen reageren.
 
-Het systeem houdt alle vlaggen bij, die zijn gemarkeerd en de reden van de vlag en verzendt een gebeurtenis wanneer de drempelwaarde is bereikt. Als UGC door een communautaire moderator wordt toegestaan, worden deze vlaggen gearchiveerd. Nadat het toestaan en het archiveren, als er verdere vlaggen zijn, zouden zij worden gearchiveerd alsof er geen vorige vlaggen waren geweest.
+Het systeem houdt alle vlaggen bij, die, en de vlagreden zijn gemarkeerd en verzendt een gebeurtenis wanneer de drempel is bereikt. Als UGC door een communautaire moderator wordt toegestaan, worden deze vlaggen gearchiveerd. Nadat het toestaan en het archiveren, als er verdere vlaggen zijn, zouden zij worden gearchiveerd alsof er geen vorige vlaggen waren geweest.
 
 ### Toestaan {#allow}
 
-De actie Toestaan is een optie voor UGC die is gemarkeerd, geweigerd of niet is goedgekeurd in een vooraf gemoderniseerd systeem. Met de actie Toestaan worden alle gemarkeerde of ontkende/spamstatus gewist en worden alle gemarkeerde gegevens gearchiveerd.
+De actie Toestaan is een optie voor UGC die is gemarkeerd, geweigerd of niet is goedgekeurd in een vooraf gemoderniseerd systeem. Met de handeling Toestaan worden alle gemarkeerde of ontkende/spamstatus gewist en worden alle gemarkeerde gegevens gearchiveerd.
 
 ## Vaak Moderniseringsconcepten {#common-moderation-concepts}
 
 ### Premoderatie {#premoderation}
 
-Wanneer de UGC wordt voorgezeten, zal de post niet op de gepubliceerde plaats verschijnen alvorens door een matigingsactie wordt goedgekeurd. Tijdens de totstandbrenging van een [community-site](/help/communities/sites-console.md), het selectievakje in [Inhoud is vooraf gemodereerd](sites-console.md#moderation) zal de aanleg van de gehele site mogelijk maken. Zodra de componenten op een pagina worden geplaatst, kunnen de componenten die matiging steunen voor premoderatie worden gevormd gebruikend het plaatsen in hun uitgeven dialoog:
+Wanneer de UGC wordt gepremodereerd, verschijnt de post niet op de gepubliceerde plaats tot goedkeuring door een moderatie actie. Tijdens de totstandbrenging van een [community-site](/help/communities/sites-console.md), het selectievakje in [Inhoud is vooraf gemodereerd](sites-console.md#moderation) maakt premoderatie mogelijk voor de gehele site. Wanneer de componenten op een pagina worden geplaatst, kunnen de componenten die matiging steunen voor premoderatie worden gevormd gebruikend het plaatsen in hun uitgeven dialoog:
 
 * [Opmerkingen](comments.md) en [beoordelingen](reviews.md)
 in **[!UICONTROL User Moderation]** > **[!UICONTROL Pre-Moderation]**.
@@ -207,13 +203,13 @@ in **[!UICONTROL Settings]** > **[!UICONTROL Moderated]**.
 
 ### Spam-detectie {#spam-detection}
 
-Spam-detectie is een automatische moderatiefunctionaliteit die ongewenste stukken van door de gebruiker gegenereerde inhoud filtert door deze als spam te markeren. Zodra toegelaten, identificeert het of een gebruiker geproduceerde inhoud spam of niet gebaseerd op een pre-gevormde inzameling van spamwoorden is. De standaardspamwoorden worden verstrekt bij
+Spam-detectie is een automatische moderatiefunctionaliteit die ongewenste stukken verzonden door de gebruiker gegenereerde inhoud filtert door deze als spam te markeren. Zodra toegelaten, identificeert het of een gebruiker-geproduceerde inhoud spam of niet gebaseerd op een pre-gevormde inzameling van spamwoorden is. De standaardspamwoorden worden verstrekt bij
 
 `/libs/settings/community/sites/moderation/spamdetector-conf/profiles/spam_words.txt`.
 
-Als u echter de standaardspamwoorden wilt aanpassen of uitbreiden, maakt u een set woorden in de map /apps die de structuur volgt van de standaardspamwoorden door middel van [bedekking](/help/communities/overlay-comments.md).
+Nochtans, om de standaardspamwoorden aan te passen of uit te breiden, creeer een reeks woorden in de /apps folder die de structuur van de standaardspamwoorden met volgt [bedekking](/help/communities/overlay-comments.md).
 
-Een door gebruikers gegenereerde post (in alle inhoudstypen, zoals blogs, forums en opmerkingen) met spamwoorden wordt boven de post gemarkeerd met de tekst &quot;Deze post is geclassificeerd als spam&quot;.
+Een door gebruikers gegenereerde post (in alle inhoudstypen, zoals blogs, forums en opmerkingen) met spamwoorden wordt boven de post gemarkeerd met de tekst &quot;Dit bericht is geclassificeerd als spam&quot;.
 
 De moderator kan zulk een bericht zien en het zelfde merken om toe te staan of te ontkennen om op de plaats te verschijnen. De acties van de modernisering op deze posten kunnen of in-context of door bulkmoderatie UI worden uitgevoerd.
 
@@ -230,13 +226,13 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 
 >[!NOTE]
 >
->Spam-detectie wordt alleen geïmplementeerd voor de landinstelling Engels.
+>Spam-detectie wordt alleen geïmplementeerd voor Engelse landinstellingen.
 
 ### Sentiment {#sentiment}
 
 De waarneming wordt berekend op basis van het aantal positieve en negatieve trefwoorden ([wachtwoorden](#configuringwatchwords)) aanwezig in een post (UGC).
 
-De sentimentanalyse gebruikt een reeks vooraf geconfigureerde regels en berekent het sentiment van de UGC. De standaardregels worden gevestigd bij: `/libs/cq/workflow/components/workflow/social/sentiments/rules.`
+De sentimentanalyse gebruikt een reeks vooraf geconfigureerde regels en berekent het sentiment van de UGC. De standaardregels zijn op `/libs/cq/workflow/components/workflow/social/sentiments/rules`.
 
 De waarde die de regels genereren, ligt tussen 1 (alle negatieve, geen positieve woorden) en 10 (alle positieve, geen negatieve woorden). Een sentimentwaarde van 5 is een neutraal sentiment en is de standaardwaarde.
 
@@ -247,7 +243,7 @@ De regels die in de /libs component worden bepaald zijn:
 * Regel 3: stel waarde in op 3 als er meer negatieve woorden zijn dan positieve woorden.
 * Regel 4: stel de waarde in op 8 als er meer positieve woorden zijn dan negatieve woorden.
 
-Als u regels wilt overschrijven of toevoegen, maakt u een set regels in de map /apps volgens de structuur van de standaardregels. Bewerk de sentimentconfiguratie om de locatie van de regels te bepalen.
+Als u regels wilt overschrijven of toevoegen, maakt u een set regels in de map /apps volgens de structuur van de standaardregels. Bewerk de sentimentconfiguratie zodat u de locatie van de regels kunt identificeren.
 
 Zodra geanalyseerd, wordt het sentiment bewaard met UGC.
 
@@ -255,13 +251,13 @@ Van de [bulkmoderniseringsconsole](/help/communities/moderation.md), is het moge
 
 #### Wachtwoorden {#watchwords}
 
-AEM gemeenschappen *watchword-analyse* als een stap in het evaluatieproces [sentiment](#sentiment). De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
+AEM Communities biedt een *watchword-analyse* als een stap in het proces om [sentiment](#sentiment). De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
 
 #### Sentificatie en wachtwoorden configureren {#configure-sentiment-and-watchwords}
 
 De lijst van positieve en negatieve woorden kan worden aangepast zoals de sentimentregels kunnen zijn.
 
-De standaardlijst van wachtwoorden kan als eigenschappen van een knoop in de folder, gelijkend op het gebrek worden ingegaan of door het gebrek met voeten te treden door de dienst te vormen OSGi `sentimentprocess.name` met de lijst met woorden.
+De standaardlijst van wachtwoorden kan als eigenschappen van een knoop in de bewaarplaats, gelijkend op het gebrek worden ingegaan of door het gebrek te overschrijven door de dienst te vormen OSGi `sentimentprocess.name` met de lijst met woorden.
 
 De **sentimentprocess.name** kan ook worden gewijzigd om de locatie van een aangepaste set sentimentregels te vermelden.
 
@@ -270,7 +266,7 @@ sentiment en wachtwoorden configureren:
 * Meld u als beheerder aan bij de auteur.
 * Openen [Webconsole](https://localhost:4502/system/console/configMgr).
 * Zoeken `sentimentprocess.name`.
-* Selecteer de configuratie die u wilt openen in de bewerkingsmodus.
+* Selecteer de configuratie zodat u deze kunt openen in de bewerkingsmodus.
 
 ![sentimentatieproces](assets/sentimentprocess.png)
 

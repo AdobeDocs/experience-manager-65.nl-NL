@@ -1,15 +1,15 @@
 ---
 title: Sitesjablonen
-description: Hoe te om tot de console van de Malplaatjes van de Plaats toegang te hebben
+description: Leer hoe te om tot de console van de Malplaatjes van de Plaats toegang te hebben om een communautaire plaats tot stand te brengen.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: 05a944a3-adb1-47b4-b4a5-15bac91c995e
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '436'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De Sitesjabloonconsole is vergelijkbaar met de [Groepssjablonen](tools-groups.md
 
 ## Sitesjabloonconsole {#site-templates-console}
 
-In het auteursmilieu, om de console van communautaire plaatsen te bereiken:
+In het milieu van de Auteur, om de console van communautaire plaatsen te bereiken:
 
 * Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Site Templates]**
 

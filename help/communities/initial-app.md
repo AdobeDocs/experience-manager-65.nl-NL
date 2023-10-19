@@ -1,18 +1,14 @@
 ---
 title: Aanvankelijke zandbaktoepassing
-seo-title: Initial Sandbox Application
-description: Sjabloon, component en script maken
-seo-description: Create template, component, and script
-uuid: b0d03376-d8bc-4e98-aea2-a01744c64ccd
+description: Leer hoe u de sjabloon Inhoud gebruikt om inhoudspagina's en een component en script te maken waarmee websitepagina's worden weergegeven.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: f74d225e-0245-4d5a-bb93-0ee3f31557aa
 exl-id: cbf9ce36-53a2-4f4b-a96f-3b05743f6217
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '599'
 ht-degree: 1%
 
 ---
@@ -21,12 +17,12 @@ ht-degree: 1%
 
 In deze sectie maakt u het volgende:
 
-* De **[template](#createthepagetemplate)** die wordt gebruikt om inhoudspagina&#39;s in de voorbeeldwebsite te maken.
-* De **[component en script](#create-the-template-s-rendering-component)** waarmee de websitepagina&#39;s worden weergegeven.
+* De **[template](#createthepagetemplate)** die wordt gebruikt om inhoudspagina&#39;s in de voorbeeldwebsite tot stand te brengen.
+* De **[component en script](#create-the-template-s-rendering-component)** die wordt gebruikt om de websitepagina&#39;s weer te geven.
 
 ## De inhoudssjabloon maken {#create-the-content-template}
 
-Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websites kunnen verschillende sjablonen gebruiken om de verschillende typen pagina&#39;s op de site te maken. Verder, kan de reeks malplaatjes een blauwdruk worden die aan rollout veranderingen in een cluster van servers wordt gebruikt.
+Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websites kunnen verschillende sjablonen gebruiken om de verschillende typen pagina&#39;s op de site te maken. Verder, kan de reeks malplaatjes een blauwdruk worden die wordt gebruikt om veranderingen in een cluster van servers uit te voeren.
 
 In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatje.
 
@@ -45,25 +41,25 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    Het label wordt gebruikt voor de knooppuntnaam.
 
-   Het type resource wordt weergegeven op het tabblad `playpage`jcr:content node as the property `sling:resourceType`. Het identificeert de component (bron) die de inhoud teruggeeft wanneer daarom door browser wordt gevraagd.
+   Het type resource wordt weergegeven op het tabblad `playpage`s `jcr:content` node as the property `sling:resourceType`. Het identificeert de component (bron) die de inhoud teruggeeft wanneer daarom door browser wordt gevraagd.
 
    In dit geval worden alle pagina&#39;s gemaakt met de `playpage` sjabloon wordt weergegeven door de `an-scf-sandbox/components/playpage` component. Door overeenkomst, is de weg aan de component relatief, toestaand Sling om naar het middel eerst in te zoeken `/apps` en, indien niet gevonden, in de `/libs` map.
 
    ![create-content-template](assets/create-content-template-1.png)
 
-1. Als u kopiëren/plakken gebruikt, moet u ervoor zorgen dat de waarde van het Type resource geen voorloopspaties of navolgende spaties bevat.
+1. Als u kopiëren/plakken gebruikt, dient u ervoor te zorgen dat de waarde voor Type bron geen voorloopspaties of navolgende spaties bevat.
 
    Klik op **[!UICONTROL Next]**.
 
-1. &quot;Toegestane paden&quot; verwijst naar de paden van pagina&#39;s die deze sjabloon gebruiken, zodat de sjabloon wordt weergegeven voor de **[!UICONTROL New Page]** .
+1. &quot;Toegestane paden&quot; verwijst naar de paden van pagina&#39;s die deze sjabloon gebruiken, zodat de sjabloon wordt weergegeven voor de **[!UICONTROL New Page]** in.
 
-   Als u een pad wilt toevoegen, klikt u op de plusknop `+` en type `/content(/.&ast;)?` in het tekstvak dat wordt weergegeven. Als u kopiëren/plakken gebruikt, dient u ervoor te zorgen dat er geen voorloopspaties of volgspaties zijn.
+   Als u een pad wilt toevoegen, klikt u op de plusknop `+` en type `/content(/.&ast;)?` in het tekstvak dat wordt weergegeven. Als u kopieert/plakt, moet u ervoor zorgen dat er geen voorloopspaties of navolgende spaties zijn.
 
-   Opmerking: De waarde van de eigenschap allowed path is a *reguliere expressie*. Inhoudspagina&#39;s met een pad dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van het **/content** en alle bijbehorende subpagina&#39;s.
+   Opmerking: de waarde van de eigenschap allowed path is a *reguliere expressie*. Inhoudspagina&#39;s met een pad dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van het **/content** en alle bijbehorende subpagina&#39;s.
 
    Wanneer een auteur hieronder een pagina maakt `/content`de `playpage` De sjabloon &#39;Een SCF-sjabloon voor een sandbox-pagina&#39; wordt weergegeven in een lijst met beschikbare sjablonen.
 
-   Nadat de basispagina van de sjabloon is gemaakt, kan de toegang tot de sjabloon worden beperkt tot deze website door de eigenschap zodanig te wijzigen dat het hoofdpad wordt opgenomen in de reguliere expressie, d.w.z.
+   Nadat de basispagina van de sjabloon is gemaakt, kan de toegang tot de sjabloon worden beperkt tot deze website door de eigenschap te bewerken en het hoofdpad op te nemen in de reguliere expressie.
 
    `/content/an-scf-sandbox(/.&ast;)?`
 
@@ -73,11 +69,11 @@ In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatj
 
    Klikken **[!UICONTROL Next]** in de **[!UICONTROL Allowed Parents]** deelvenster.
 
-   Klikken **[!UICONTROL Next]** in de **[!UICONTROL Allowed Children]** deelvensters.
+   Klikken **[!UICONTROL Next]** in de **[!UICONTROL Allowed Children]** deelvenster.
 
    Klik op **[!UICONTROL OK]**.
 
-1. Als u eenmaal op OK hebt geklikt en de sjabloon hebt gemaakt, ziet u rode driehoeken in de hoeken van de waarden op het tabblad Eigenschappen voor de nieuwe sjabloon `playpage` sjabloon. Deze rode driehoeken geven bewerkingen aan die niet zijn opgeslagen.
+1. Nadat u op OK hebt geklikt en de sjabloon hebt gemaakt, ziet u de rode driehoeken die in de hoeken van de waarden op het tabblad Eigenschappen van de nieuwe sjabloon worden weergegeven `playpage` sjabloon. Deze rode driehoeken geven bewerkingen aan die niet zijn opgeslagen.
 
    Klikken **[!UICONTROL Save All]** om de nieuwe sjabloon op te slaan in de repository.
 
@@ -113,6 +109,6 @@ Maak de *component* dat de inhoud definieert en alle gemaakte pagina&#39;s rende
 
    >[!CAUTION]
    >
-   >De overeenstemming tussen de weg aan de playpage component en het sling:resourceType bezit van het playpage malplaatje is essentieel voor het correcte functioneren van de website.
+   >De overeenstemming tussen de weg aan de playpage component en `sling:resourceType` bezit van de playpage - sjabloon is van cruciaal belang voor het correct functioneren van de website .
 
    ![verify-template-component](assets/verify-template-component.png)

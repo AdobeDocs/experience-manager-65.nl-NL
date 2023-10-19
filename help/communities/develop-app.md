@@ -1,25 +1,21 @@
 ---
 title: Sandbox-toepassing ontwikkelen
-seo-title: Develop Sandbox Application
-description: Toepassing ontwikkelen met behulp van basisscripts
-seo-description: Develop application using foundation scripts
-uuid: 572f68cd-9ecb-4b43-a7f8-4aa8feb6c64e
+description: Leer hoe u een Sandbox-toepassing ontwikkelt die gebruikmaakt van stichtingsscripts en die de mogelijkheid biedt om ontwerpen met Community-componenten mogelijk te maken.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 exl-id: 7ac0056c-a742-49f4-8312-2cf90ab9f23a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '575'
 ht-degree: 1%
 
 ---
 
 # Sandbox-toepassing ontwikkelen  {#develop-sandbox-application}
 
-In deze sectie, nu het malplaatje opstelling in is geweest [eerste toepassing](initial-app.md) en de eerste pagina&#39;s die zijn vastgesteld in de [initiële inhoud](initial-content.md) -sectie, kan de toepassing worden ontwikkeld met behulp van stichtingsscripts, waaronder de mogelijkheid om ontwerpen met Gemeenschapscomponenten mogelijk te maken. Aan het einde van deze sectie is de website functioneel.
+In deze sectie wordt de sjabloon ingesteld in het dialoogvenster [eerste toepassing](initial-app.md) en de eerste pagina&#39;s die zijn vastgesteld in de [initiële inhoud](initial-content.md) kunt u de toepassing ontwikkelen. U doet dit door stichtingsmanuscripten te gebruiken die de capaciteit omvatten om creatie met de componenten van de Gemeenschappen toe te laten. Aan het einde van deze sectie hebt u een volledig functionele website.
 
 ## Scripts voor basispagina&#39;s gebruiken {#using-foundation-page-scripts}
 
@@ -66,9 +62,9 @@ CRXDE Lite gebruiken:
    %>
    ```
 
-1. Als u weet dat er scripttags voor openen/sluiten zijn, vervangt u &quot; // TODO ...&quot; door scripts voor de kop en de hoofdtekst van &lt;html>.
+1. Als u bekend bent met script-tags open/close, vervangt u &quot; // TODO ...&quot; door `includes` van scripts voor de kop en de hoofdtekst van &lt;html>.
 
-   Met een supertype van `foundation/components/page`, worden alle scripts die niet in dezelfde map zijn gedefinieerd, omgezet naar een script in `/apps/foundation/components/page` map (als deze bestaat), anders naar een script in `/libs/foundation/components/page` map.
+   Met een supertype van `foundation/components/page`, alle scripts die niet in dezelfde map zijn gedefinieerd, worden omgezet naar een script in `/apps/foundation/components/page` map (als deze bestaat) of anders naar een script in `/libs/foundation/components/page` map.
 
    `/apps/an-scf-sandbox/components/playpage/playpage.jsp`
 
@@ -88,9 +84,9 @@ CRXDE Lite gebruiken:
    </html>
    ```
 
-1. Het basatiescript `head.jsp` hoeft niet te worden bedekt, maar het stichtingsscript `body.jsp` is leeg.
+1. Het stichtingsscript overschrijven `head.jsp` is niet noodzakelijk, maar het stichtingsscript `body.jsp` is leeg.
 
-   Omzetten in ontwerpomgeving, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
+   Instellen voor ontwerpen, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
 
    1. Ga naar `/apps/an-scf-sandbox/components`.
    1. Selecteer de `playpage` knooppunt.
@@ -162,13 +158,13 @@ Kies bovendien **[!UICONTROL General]** componenten, zoals
 >
 >De componenten die voor het paginapunt worden toegelaten worden opgeslagen in de bewaarplaats als waarde van `components` eigendom van de
 >
->`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` knooppunt.
+>Knooppunt `/etc/designs/an-scf-sandbox/jcr:content/playpage/par`.
 
 ## Openingspagina {#landing-page}
 
 In een meertalig milieu, zou de wortelpagina een manuscript omvatten dat het verzoek van de cliënt zou ontleden om de aangewezen taal te bepalen.
 
-In dit eenvoudige voorbeeld wordt de basispagina statisch ingesteld op omleiding naar de Engelse pagina, die in de toekomst kan worden ontwikkeld als de hoofdbestemmingspagina met een koppeling naar de afspeelpagina.
+In dit voorbeeld wordt de hoofdpagina statisch ingesteld op omleiding naar de Engelse pagina, die in de toekomst kan worden ontwikkeld als de hoofdbestemmingspagina met een koppeling naar de afspeelpagina.
 
 Wijzig de URL van de browser in de hoofdpagina: `http://localhost:4502/editor.html/content/an-scf-sandbox.html`
 
@@ -181,6 +177,6 @@ Wijzig de URL van de browser in de hoofdpagina: `http://localhost:4502/editor.ht
 
 * Klik op **[!UICONTROL OK]**
 
-Als de site eenmaal is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
+Nadat de site is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 
-De laatste stap vóór het spelen met de gemeenschappenSCF componenten moet een Omslag van de Bibliotheek van de Cliënt toevoegen (clientlibs)... [Clienlibs toevoegen](add-clientlibs.md)
+De laatste stap vóór het spelen met de componenten van Communities SCF moet een Omslag van de Bibliotheek van de Cliënt toevoegen (clientlibs)... [Clientlibs toevoegen](add-clientlibs.md)

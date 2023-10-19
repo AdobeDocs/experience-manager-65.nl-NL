@@ -1,18 +1,14 @@
 ---
 title: Sociale tagcloud gebruiken
-seo-title: Using Social Tag Cloud
-description: Een component van de sociale tag Cloud toevoegen aan een pagina
-seo-description: Adding a Social Tag Cloud component to a page
-uuid: 8c400030-976c-457a-bb5f-e473909647a9
+description: Leer hoe u een component van de cloud voor sociale tags toevoegt aan een pagina waarop ingetekende communityleden snel trending topics kunnen identificeren en gecodeerde inhoud kunnen zoeken.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 exl-id: 56af5362-78de-4308-8958-63a45e8573cc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -27,9 +23,9 @@ Voor een andere manier om de huidige trends te identificeren, gaat u naar [Activ
 
 Deze pagina documenteert de `Social Tag Cloud` en beschrijft de gebruikerservaring.
 
-Voor gedetailleerde informatie voor ontwikkelaars raadpleegt u [Grondbeginselen van tags](tag.md).
+Voor gedetailleerde informatie voor ontwikkelaars, zie [Grondbeginselen van tags](tag.md).
 
-Zie [Tags beheren](../../help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
+Zie [Tags beheren](../../help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 
 ## Een sociale-tagcloud toevoegen {#adding-a-social-tag-cloud}
 
@@ -43,7 +39,7 @@ Wanneer de [vereiste clientbibliotheken](tag.md#essentials-for-client-side) word
 
 ## Cloud voor sociale tags configureren {#configuring-social-tag-cloud}
 
-Selecteer de geplaatste `Social Tag Cloud` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Social Tag Cloud` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![vormen](assets/configure-new.png)
 
@@ -73,9 +69,9 @@ Bepaal welke UGC-tags moeten worden weergegeven. De pull-down opties zijn:
 
 ## Weergave van sociale-tagcloud wijzigen {#change-display-of-social-tag-cloud}
 
-De weergave van het dialoogvenster **Sociale-tagcloud**, enter [Ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) en dubbelklik op de geplaatste `Social Tag Cloud` om een dialoogvenster met een extra tabblad te openen.
+De weergave van het dialoogvenster **Sociale-tagcloud**, enter [Ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) en dubbelklikt u op de geplaatste `Social Tag Cloud` om een dialoogvenster met een extra tabblad te openen.
 
-Met de **[!UICONTROL Social Tag Cloud (Design)]** , geeft u op hoe tags worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
+Met de **[!UICONTROL Social Tag Cloud (Design)]** , geeft u op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
 
 ![social-tag-cloud-design](assets/social-tag-cloud-design.png)
 
@@ -104,8 +100,8 @@ Met de **[!UICONTROL Social Tag Cloud (Design)]** , geeft u op hoe tags worden w
 
   `Geometrixx Media (the namespace)`, `Gadgets`, en `Cars`
 
-   * Ingeschakeld: Alleen `Cars` wordt weergegeven, indien toegepast.
-   * Niet ingeschakeld: `Geometrixx Media` en `Gadgets`alsmede `Cars` wordt weergegeven, indien toegepast.
+   * Ingeschakeld: alleen `Cars` worden weergegeven, indien van toepassing.
+   * Niet ingeschakeld: `Geometrixx Media`, `Gadgets`, en `Cars` worden weergegeven, indien toegepast.
 
   Een eenvoudige tag is een bladtag.
 

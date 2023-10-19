@@ -1,18 +1,14 @@
 ---
 title: Notities maken
-seo-title: Create Nodes
-description: Het opmerkingensysteem bedekken
-seo-description: Overlay the comments system
-uuid: 802ae28b-9989-4c2c-b466-ab76a724efd3
+description: Leer hoe te om het commentaarsysteem met een douaneversie te bedekken door het minimale aantal dossiers noodzakelijk van /libs te kopiëren en hen in /apps uit te geven.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
 exl-id: 3d72cbdf-5eb4-477d-aa61-035a846f7dcb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '271'
 ht-degree: 1%
 
 ---
@@ -23,7 +19,7 @@ Bedek het opmerkingensysteem met een aangepaste versie door het minimale aantal 
 
 >[!CAUTION]
 >
->De inhoud van de map /libs wordt nooit bewerkt, omdat een nieuwe installatie of upgrade de map /libs kan verwijderen of vervangen, terwijl de inhoud van de map /apps ongewijzigd blijft.
+>De inhoud van de map /libs wordt nooit bewerkt, omdat bij een nieuwe installatie of upgrade de map /libs kan worden verwijderd of vervangen terwijl de inhoud van de map /apps ongewijzigd blijft.
 
 Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) op een auteurinstantie, begin door een weg in de /apps omslag te creëren die aan de overlapte componenten in de /libs omslag identiek is.
 
@@ -36,19 +32,19 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
 1. Bladeren naar [http://localhost:4502/crx/de/index.jsp](http://localhost:4502/crx/de/index.jsp)
 1. Maken `/apps/social` (als deze nog niet bestaat)
    * Selecteren `/apps` node
-   * **[!UICONTROL Create > Folder ...]**
+   * **[!UICONTROL Create > Folder]**
       * Naam invoeren: `social`
 1. Selecteren `social` node
-   * **[!UICONTROL Create]** > **[!UICONTROL Folder...]**
+   * **[!UICONTROL Create]** > **[!UICONTROL Folder]**
       * Naam invoeren: `commons`
 1. Selecteren `commons` node
-   * **[!UICONTROL Create > Folder...]**
+   * **[!UICONTROL Create > Folder]**
       * Naam invoeren: `components`
 1. Selecteren `components` node
-   * **[!UICONTROL Create > Folder..]**.
+   * **[!UICONTROL Create > Folder]**.
       * Naam invoeren: `hbs`
 1. Selecteren `hbs` node
-   * **[!UICONTROL Create]** > **[!UICONTROL Create Component...]**
+   * **[!UICONTROL Create]** > **[!UICONTROL Create Component]**
       * Label invoeren: `comments`
       * Titel invoeren: `Comments`
       * Beschrijving invoeren: `List of comments without showing avatars`
@@ -57,7 +53,7 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
       * Klikken **[!UICONTROL Next]** tot **[!UICONTROL OK]**
 1. Selecteren `comments` node
 
-   * **[!UICONTROL Create]** > **[!UICONTROL Create Component...]**
+   * **[!UICONTROL Create]** > **[!UICONTROL Create Component]**
 
       * Label invoeren: `comment`
       * Titel invoeren: `Comment`
@@ -76,11 +72,10 @@ Sommige knooppunten in het pad zijn mappen en andere componenten.
 
 >[!NOTE]
 >
->Om de overervingsketen te behouden, `Super Type` (eigenschap `sling:resourceSuperType`) van de bedekkingscomponenten op dezelfde waarde worden ingesteld als de `Super Type` van de onderdelen waarop de toepassing betrekking heeft, in dit geval:
+>Als u de overervingsketen wilt behouden, `Super Type` (eigenschap `sling:resourceSuperType`) van de bedekkingscomponenten op dezelfde waarde worden ingesteld als de `Super Type` van de onderdelen waarop de toepassing betrekking heeft, in dit geval:
 >
 >* `social/commons/components/comments`
 >* `social/commons/components/comments/comment`
-
 
 De eigen overlay `Type`(eigenschap `sling:resourceType`) moet een relatieve zelfverwijzing zijn, zodat de inhoud die niet wordt gevonden in /apps, wordt gezocht in /libs.
 * Naam: `sling:resourceType`

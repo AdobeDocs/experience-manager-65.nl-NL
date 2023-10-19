@@ -1,25 +1,21 @@
 ---
 title: Classificaties gebruiken
-seo-title: Using Ratings
-description: Een beoordelingscomponent toevoegen aan een pagina
-seo-description: Adding a Rating component to a page
-uuid: a986970b-1221-4648-9a69-410f4480e0ae
+description: Leer hoe u een Beoordelingscomponent aan een pagina toevoegt waarmee leden van de gemeenschap die zich hebben aangemeld hun mening kunnen uiten door inhoud te beoordelen.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 exl-id: 7534ad5d-b408-4b09-bd3d-da7ab009d55b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '215'
 ht-degree: 0%
 
 ---
 
 # Classificaties gebruiken {#using-ratings}
 
-De `Rating` wordt gebruikt op zichzelf of in combinatie met andere communautaire kenmerken. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
+De `Rating` wordt gebruikt op zichzelf of met andere communautaire kenmerken. Met deze component kunnen leden van de gemeenschap die zich hebben aangemeld hun mening kenbaar maken door inhoud te beoordelen.
 
 ## Een waardering toevoegen aan een pagina {#adding-a-rating-to-a-page}
 
@@ -33,11 +29,11 @@ Wanneer de [vereiste clientbibliotheken](rating-basics.md#essentials-for-client-
 
 ## Classificatie configureren {#configuring-rating}
 
-Selecteer de geplaatste `Rating` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Rating` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![configure-new](assets/configure-new.png)
 
-Onder de **[!UICONTROL Texts & Labels]** geeft u de interne id voor de waardering op.
+Onder de **[!UICONTROL Texts & Labels]** , geeft u de interne id voor de waardering op.
 
 ![tallyname](assets/tallyname.png)
 

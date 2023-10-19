@@ -1,14 +1,14 @@
 ---
 title: Essentiële elementen van gebruikersgroepen
-description: Communitysites dynamisch maken
+description: Leer hoe geautoriseerde gebruikers de functie Gebruikersgroepen kunnen gebruiken om dynamisch een subcommunity binnen een communitysite te maken.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: f45ae7be-a500-463a-ab3e-81f281651a9d
-source-git-commit: 681d1e6bd885b801b930e580d95645f160f17cea
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 De eigenschap van communautaire groepen is de capaciteit voor een subcommunity om dynamisch binnen een communautaire plaats door erkende gebruikers van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
-Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack)kunnen groepen worden genest binnen andere groepen
+Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack), kunnen groepen worden genest binnen andere groepen.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -27,7 +27,7 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack)k
  <tbody>
   <tr>
    <td> <strong>resourceType</strong></td>
-   <td>social/group/components/hbs/communitygrouplidlist</td>
+   <td>social/group/components/hbs/communitygroupmembershipList</td>
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td>
@@ -85,9 +85,9 @@ Vanaf Gemeenschappen [functiepakket 1](deploy-communities.md#latestfeaturepack)k
 
 Een community-sitestructuur die een [Groepen, functie](functions.md#groups-function) ondersteunt de oprichting van nieuwe `community groups` vanuit de publicatie- en auteursomgevingen. De gemaakte community-groep bevat een `community groups member list` die de leden van de groep opsomt.
 
-Een of meer [communitygroepsjablonen](tools-groups.md), die het ontwerp van de pagina&#39;s van de communautaire groep verstrekken, kan voor de functie van Groepen worden gevormd wanneer de functie aan een [sjabloon voor community-site](sites.md) of genest binnen een groepssjabloon van een gemeenschap.
+Een of meer [communitygroepsjablonen](tools-groups.md), die het ontwerp van de pagina&#39;s van de communautaire groep verstrekken, kan voor de functie van Groepen worden gevormd. Dit geldt wanneer de functie wordt toegevoegd aan een [sjabloon voor community-site](sites.md) of genest binnen een groepssjabloon van een gemeenschap.
 
-Het opnemen van veelvoudige communautaire groepsmalplaatjes resulteert in een keus van ontwerp dat aan de erkende gebruiker op het tijdstip wordt voorgesteld een nieuwe communautaire groep voor de communautaire plaats wordt gecreeerd, zoals aangetoond in de sectie over [communautaire groepen](creating-groups.md) voor auteurs.
+Het opnemen van meerdere groepssjablonen resulteert in een keuze. Dat wil zeggen, de keuze van het ontwerp dat wordt voorgesteld aan de geautoriseerde gebruiker op het moment dat een community-groep wordt gemaakt voor de community-site. Zie de sectie over [communautaire groepen](creating-groups.md) voor auteurs.
 
 ### Geneste groepen {#nested-groups}
 

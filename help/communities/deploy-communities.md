@@ -1,15 +1,15 @@
 ---
 title: Gemeenschappen inzetten
-description: AEM Communities implementeren
+description: Leer hoe u Communityfuncties en community-functies kunt implementeren in Adobe Experience Manager.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 5b3d572d-e73d-4626-b664-c985949469c9
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1701'
+source-wordcount: '1706'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ AEM 6.5 Communautaire algemene vergadering omvat het communautaire pakket. Meer 
 
 Vanaf AEM 6.4 worden updates aan de Gemeenschappen geleverd als onderdeel van AEM Cumulative Fix Packs en Service Packs.
 
-Voor de meest recente updates van AEM 6.5 raadpleegt u [Adobe Experience Manager 6.4 Cumulatief repareren van pakketten en servicepacks](https://helpx.adobe.com/experience-manager/aem-releases-updates.html).
+Voor de meest recente updates van AEM 6.5 raadpleegt u [Adobe Experience Manager 6.4 Cumulatief repareren van pakketten en servicepacks](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en).
 
 ### Versiehistorie {#version-history}
 
@@ -132,7 +132,7 @@ Meer informatie over het installeren van bundels vindt u op de [Webconsole](/hel
 
 Voor de inzameling SRP (MSRP of DSRP) om geavanceerde meertalige onderzoek (MLS) te steunen, worden nieuwe stop-ins Solr vereist naast een douaneschema en de configuratie Solr. Alle vereiste items worden verpakt in een ZIP-bestand dat kan worden gedownload.
 
-De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar in de gegevensopslagruimte van de Adobe:
+De geavanceerde MLS-download (ook wel bekend als `phasetwo`) is beschikbaar bij de gegevensbank van de Adobe:
 
 * AEM-SOLR-MLS-fasetwo
 
@@ -298,13 +298,11 @@ Om het belangrijkste materiaal van Auteur aan alle andere instanties te kopiëre
 
 #### Replicatie opslagplaats {#repository-replication}
 
-Het bewaren van het sleutelmateriaal in de opslagplaats, zoals het geval was voor AEM 6.2 en eerder, kan worden behouden. Geef de volgende systeemeigenschap op bij het eerste opstarten van elke AEM instantie (die de initiële opslagplaats maakt):
-
-* `-Dcom.adobe.granite.crypto.file.disable=true`
+Het bewaren van het sleutelmateriaal in de opslagplaats, zoals het geval was voor AEM 6.2 en eerder, kan worden behouden. De eigenschap system opgeven `-Dcom.adobe.granite.crypto.file.disable=true` bij het eerste opstarten van elke AEM instantie (die de eerste opslagplaats maakt).
 
 >[!NOTE]
 >
->Het is belangrijk te controleren of de [replicatieagent op auteur](#replication-agents-on-author) correct is geconfigureerd.
+>Controleer of de [replicatieagent op auteur](#replication-agents-on-author) correct is geconfigureerd.
 
 Met het belangrijkste materiaal dat in de bewaarplaats wordt opgeslagen, is de manier om de crypto sleutel van auteur aan andere instanties te herhalen als volgt:
 

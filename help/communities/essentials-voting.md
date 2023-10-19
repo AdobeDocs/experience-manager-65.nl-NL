@@ -1,18 +1,14 @@
 ---
 title: Grondbeginselen van de stemming
-seo-title: Voting Essentials
-description: Overzicht van de stemcomponent
-seo-description: Voting component overview
-uuid: ed0a771d-1c14-4fbf-ab6a-a028e5ee2e2a
+description: Leer hoe u de component Stemmen gebruikt waarmee leden een bepaald stuk inhoud kunnen beoordelen door pijlen omhoog of omlaag te selecteren om hun mening aan te geven.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 exl-id: e8ff751f-404a-498d-8e90-62a13ab593ff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '301'
 ht-degree: 0%
 
 ---
@@ -21,9 +17,9 @@ ht-degree: 0%
 
 De stemcomponent, a [tally](tally.md) subklasse, is een nuttig hulpmiddel dat leden toestaat om een bepaald stuk van inhoud te schatten door eenvoudig pijlen omhoog of onderaan te selecteren om hun mening te wijzen.
 
-Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan; elke instantie moet met een uniek `tally name` eigenschap.
+Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan. Elke instantie moet zijn geconfigureerd met een unieke `tally name` eigenschap.
 
-Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten zich slechts eenmaal registreren en aanmelden om aan de stemming deel te nemen. De ondertekenaar (lid) kan te allen tijde zijn stem wijzigen.
+Anonieme stemplaatsing wordt niet ondersteund. Sitebezoekers moeten zich slechts eenmaal registreren en aanmelden om deel te nemen aan het stemmen. De ondertekende bezoeker (lid) kan te allen tijde hun stem wijzigen.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -60,9 +56,9 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Tally API&#39;s](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API&#39;s](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Eindpunten tellen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Eindpunten tellen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
@@ -71,13 +67,13 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de repository.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de opslagplaats.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.
+* [Refactoring voor sociale hulpmiddelen](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.

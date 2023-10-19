@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
 source-wordcount: '3582'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Een workflowcomponent definieert de vormgeving en het gedrag van de stap bij het
 * Het dialoogvenster Bewerken voor het configureren van componenteigenschappen.
 * De service of het script dat wordt uitgevoerd bij uitvoering.
 
-Zoals met [alle componenten](/help/sites-developing/components.md), workflowstapcomponenten overerven van de component die voor de component `sling:resourceSuperType` eigenschap. Het volgende diagram toont de hiërarchie van `cq:component` knooppunten die de basis vormen van alle workflowstapcomponenten. Het diagram bevat ook de **Processtap**, **Stap deelnemer**, en **Dynamische deelnemersstap** componenten, aangezien dit de gemeenschappelijkste (en fundamentele) uitgangspunt voor het ontwikkelen van de componenten van de douanestappen zijn.
+Zoals met [alle componenten](/help/sites-developing/components.md), worden componenten van workflowstappen overgenomen van de component die is opgegeven voor de component `sling:resourceSuperType` eigenschap. Het volgende diagram toont de hiërarchie van `cq:component` knooppunten die de basis vormen van alle workflowstapcomponenten. Het diagram bevat ook de **Processtap**, **Stap deelnemer**, en **Dynamische deelnemersstap** componenten, aangezien dit de gemeenschappelijkste (en fundamentele) uitgangspunt voor het ontwikkelen van de componenten van de douanestappen zijn.
 
 ![aem_wf_componentinherit](assets/aem_wf_componentinherit.png)
 

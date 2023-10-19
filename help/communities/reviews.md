@@ -1,18 +1,14 @@
 ---
 title: Overzicht van revisies en revisies gebruiken (weergave)
-seo-title: Using Reviews and Reviews Summary (Display)
-description: De componenten Revisies en Revisies Summary toevoegen aan een pagina
-seo-description: Adding the Reviews and Reviews Summary components to a page
-uuid: bd1ccee7-b26b-4a27-b1ea-89609f5080af
+description: Leer hoe u de componenten Revisies en Revisies Summary aan een pagina toevoegt.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 exl-id: 170414a6-c40b-4ad2-9294-7c2266850c3d
-source-git-commit: c667a1658e43bb5b61daede5f94256dae582a4fc
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '1213'
+source-wordcount: '1205'
 ht-degree: 0%
 
 ---
@@ -25,7 +21,7 @@ De `Reviews Summary (Display)` component verstrekt een samenvatting van een acti
 
 >[!NOTE]
 >
->Anonieme terbeschikkingstelling van een revisie wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen. De ondertekende bezoeker kan zijn of haar revisie op elk gewenst moment bijwerken.
+>Anonieme terbeschikkingstelling van een revisie wordt niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen. De aangemelde bezoeker kan zijn of haar revisie op elk gewenst moment bijwerken.
 
 ## Een revisie toevoegen aan een pagina {#adding-a-review-to-a-page}
 
@@ -39,7 +35,7 @@ Wanneer de [vereiste clientbibliotheken](reviews-basics.md#essentials-for-client
 
 ## Revisies configureren {#configuring-reviews}
 
-Selecteer de geplaatste `Reviews` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Reviews` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![configure-new](assets/configure-new.png)
 
@@ -55,7 +51,7 @@ Onder de **[!UICONTROL Allowed Ratings]** geeft u de volledige lijst met classif
 
   Klikken **[!UICONTROL Add Item]** een andere beoordelingskeuze toevoegen.
 
-Onder de **[!UICONTROL Required Ratings]** tabblad, opnieuw items in de lijst met **[!UICONTROL Allowed Ratings]** die moeten worden beoordeeld. Als een item alleen wordt opgegeven op het tabblad Toegestane waarderingen, kan het item niet worden gemarkeerd wanneer het door het lid wordt verzonden.
+Onder de **[!UICONTROL Required Ratings]** tabblad, items opnieuw invoeren in de lijst met **[!UICONTROL Allowed Ratings]** die vereist zijn voor de rating. Als een item alleen wordt opgegeven op het tabblad Toegestane waarderingen, kan het item niet worden gemarkeerd wanneer het door het lid wordt verzonden.
 
 Op de website worden vereiste classificaties gemarkeerd met een sterretje. Als een item vereist is en niet is gemarkeerd, wordt een bericht weergegeven aan het lid en wordt de verzending geweigerd totdat alle vereiste beoordelingen zijn gemarkeerd.
 
@@ -99,7 +95,7 @@ Onder de **[!UICONTROL Reviews]** , geeft u op hoe revisies worden verwerkt.
 
 * **[!UICONTROL Allowed File Types]**
 
-  Alleen relevant als **[!UICONTROL Allow File Uploads]** is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+  Alleen relevant als **[!UICONTROL Allow File Uploads]** is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het scheidingsteken &#39;punt&#39;. Bijvoorbeeld .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
 * **[!UICONTROL Rich Text Editor]**
 
@@ -155,7 +151,7 @@ Als u een `Reviews Summary (Display)` naar een pagina in de modus Schrijver, zoe
 
 * `Communities / Reviews Summary (Display)`
 
-en sleep de revisie naar de juiste plaats op een pagina waarop een overzicht van een actieve of gesloten revisie moet worden weergegeven.
+En sleep de revisie naar de juiste plaats op een pagina waarop een overzicht van een actieve of gesloten revisie moet worden weergegeven.
 
 Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
@@ -169,7 +165,7 @@ Wanneer de [vereiste clientbibliotheken](reviews-basics.md#essentials-for-client
 
 ### Overzicht van revisies configureren (weergave) {#configuring-reviews-summary-display}
 
-Selecteer de geplaatste `Reviews Summary (Display)` te openen en te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Reviews Summary (Display)` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![vormen](assets/configure-new.png)
 
@@ -179,21 +175,21 @@ Onder de **[!UICONTROL Review Summary]** tab
 
 * `Review Path`
 
-  ga of doorblader aan de geplaatste instantie van `reviews`om een overzicht te geven, bijvoorbeeld indien toegevoegd aan de webpagina van het dialoogvenster [Plaats van Geometrixx inschakelen,](getting-started.md) het pad zou zijn :
+  Ga of doorblader aan de geplaatste instantie van binnen `reviews` zodat u bijvoorbeeld een overzicht kunt geven van de inhoud die aan de webpagina van het dialoogvenster [Plaats van Geometrixx inschakelen,](getting-started.md) het pad zou zijn :
 
   `/content/sites/engage/en/page/jcr:content/content/primary/reviews`
 
 * `Include histogram`
 
-  Als deze optie is ingeschakeld, neemt u de weergave op van een staafgrafiek die aangeeft hoeveel van elke sterwaardering de overzichten bevatten. De optie Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, neemt u de weergave op van een staafgrafiek die aangeeft hoeveel sterrenwaarderingen er in de overzichten staan. De optie Standaard is uitgeschakeld.
 
 ### Wijzigen in Type aangepaste revisie {#changing-to-a-custom-review-type}
 
 De component Reviews gebruikt het opmerkingensysteem.
 
-Door het Type van Middel van Commentaar te veranderen, zal het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder een produceren die (uitgebreid) door ontwikkelaars is aangepast.
+Door het Type van Middel van de Commentaar te veranderen, produceert het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder die is aangepast (uitgebreid) door ontwikkelaars.
 
-Zodra de types van douanemiddel gekend zijn, ga binnen [Ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) en dubbelklik op de geplaatste `Comments` om een dialoogvenster met een extra tabblad te openen.
+Wanneer de types van douanemiddel gekend zijn, ga binnen [Ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) en dubbelklikt u op de geplaatste `Comments` om een dialoogvenster met een extra tabblad te openen.
 
 Onder de **[!UICONTROL Resource Types]** tab, specificeer het custom resourceType voor nieuwe instanties van `Comments or Voting` componenten:
 
@@ -203,13 +199,13 @@ Onder de **[!UICONTROL Resource Types]** tab, specificeer het custom resourceTyp
 
   Navigeer naar het resourceType van uitgebreid `comment`component (enkele opmerking) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`.
 
-  Deze bron identificeert het resourceType van de UGC die is gemaakt wanneer een bezoeker een opmerking plaatst.
+  Deze bron identificeert het resourceType van UGC die wordt gecreeerd wanneer een bezoeker een commentaar plaatst.
 
 * **[!UICONTROL Voting Resource Type]**
 
   Navigeer naar het resourceType van uitgebreid `voting`in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`.
 
-  Met deze bron wordt het bronnentype van de UGC geïdentificeerd die wordt gemaakt wanneer een bezoeker een stem plaatst.
+  Dit middel identificeert het middeltype van UGC die wordt gecreeerd wanneer een bezoeker een stem plaatst.
 
 * **[!UICONTROL Comment System Resource Type]**
 

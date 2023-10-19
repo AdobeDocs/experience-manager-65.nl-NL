@@ -1,24 +1,20 @@
 ---
-title: Componenten van overlaygemeenschappen
-seo-title: Overlay communities components
-description: Componenten van overlaygemeenschappen
-seo-description: Overlay communities components
-uuid: 872f7006-959a-49d2-b025-3a5abb7c6dca
+title: Overlay Communities-componenten
+description: Leer over het bedekken van een standaardcomponent zodat u de verschijning of het gedrag van een component globaal kunt veranderen, voor alle relatieve verwijzingen naar de component.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 502c0916-6c54-440c-be8c-eae56001fa26
 docset: aem65
 exl-id: 18376805-c2ed-439a-abc7-e9657afe8baf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
 
-# Componenten van overlaygemeenschappen {#overlay-communities-components}
+# Overlay Communities-componenten {#overlay-communities-components}
 
 De bedoeling van [bedekken](/help/communities/client-customize.md#overlays) een standaardcomponent is het wijzigen van de weergave of het gedrag van een component in het algemeen voor alle relatieve verwijzingen naar de component. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
 
@@ -26,19 +22,19 @@ De bedoeling van [bedekken](/help/communities/client-customize.md#overlays) een 
 
 **Component Overlay-opmerkingen**
 
-Stel dat u de commentaarfunctie wilt wijzigen zodat deze overeenkomt met het ontwerp van uw website, door de koptekst van de opmerking te wijzigen zodat de avatar niet meer wordt weergegeven voor opmerkingen. De oplossingen voor het verbergen van de avatar maken gebruik van CSS of, zoals hier wordt beschreven, van de header.jsp in de map apps, zodat de HTML die de avatar bevat nooit naar de client wordt verzonden.
+Stel dat u de commentaarfunctie wilt wijzigen zodat deze overeenkomt met het ontwerp van uw website, door de koptekst van de opmerking te wijzigen zodat de avatar niet meer wordt weergegeven voor opmerkingen. De oplossingen voor het verbergen van de avatar maken gebruik van CSS of, zoals hier wordt beschreven, van het bedekken van header.jsp in de map apps, zodat de HTML met de avatar nooit naar de client wordt verzonden.
 
 Als u opmerkingen wilt bedekken, moet u:
 
-1. [Opmerkingen pagina](/help/communities/overlay-create-comments-page.md)
+1. [Pagina met opmerkingen maken](/help/communities/overlay-create-comments-page.md)
 1. [Notities maken](/help/communities/overlay-create-nodes.md)
 1. [De vormgeving wijzigen](/help/communities/overlay-alter-appearance.md)
 
 **E-mails met overlaymeldingen**
 
-Stel dat u het bericht van e-mailberichten wilt aanpassen, dat kunt u doen door [bedekken](/help/communities/client-customize.md#overlays) de sjablonen op **/libs/settings/community/templates/email/html**.
+Stel dat u het bericht van e-mailberichten wilt aanpassen, dat kunt u doen door [bedekken](/help/communities/client-customize.md#overlays) de sjablonen op `/libs/settings/community/templates/email/html`.
 
-Als u bijvoorbeeld de meldingen in e-mails over vermeldingen wilt wijzigen (voor een specifieke component van een gemeenschap waarin ugc is gemaakt), voegt u een **indien** voorwaarde voor werkwoord **noemen** in de malplaatjes van de componenten waarvoor u toeliet **@mnotices** ondersteuning.
+Stel dat u de e-mailmeldingen voor vermeldingen wilt bewerken (voor een specifiek onderdeel Community waarin UGC is gemaakt). Voeg in dergelijke gevallen een **indien** voorwaarde voor werkwoord **noemen** in de malplaatjes van de componenten waarvoor u toeliet **@mnotices** ondersteuning.
 
 ```java
 {{#equals this.verb "mention"}}\

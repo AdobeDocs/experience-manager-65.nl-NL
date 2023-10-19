@@ -1,27 +1,23 @@
 ---
 title: Grondbeginselen van classificaties
-seo-title: Rating Essentials
-description: Overzicht van de classificatiecomponent
-seo-description: Rating component overview
-uuid: 48ef61ad-be7a-4a6b-a284-23e5bb4f1671
+description: Leer hoe leden van de gemeenschap die zich hebben aangemeld een functie op de website kunnen beoordelen met de Beoordelingscomponent, een subklasse van Tally.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 7dc3ef57-05c3-45d4-ace3-bb3ba6ea768b
 exl-id: 49456944-ff0d-4507-b3b8-143c90067573
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '279'
+source-wordcount: '287'
 ht-degree: 0%
 
 ---
 
 # Grondbeginselen van classificaties {#rating-essentials}
 
-De ratingcomponent, a [tally](tally.md) subklasse, maakt het mogelijk dat ondertekende leden van de gemeenschap een functie op de website beoordelen.
+De ratingcomponent, [tally](tally.md) subklasse, waarmee leden van de gemeenschap die zich hebben aangemeld een beoordeling kunnen geven voor een functie op de website.
 
-Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan; elke instantie moet met een uniek `tally name` eigenschap.
+Het plaatsen van meerdere instanties van een stemcomponent op dezelfde pagina is toegestaan. Elke instantie moet zijn geconfigureerd met een unieke `tally name` eigenschap.
 
 Anonieme detachering van een rating wordt niet ondersteund. Sitebezoekers moeten zich slechts eenmaal registreren en aanmelden om deel te nemen aan een waardering. De ondertekende bezoeker (lid) kan zijn beoordeling op elk moment wijzigen.
 
@@ -60,9 +56,9 @@ Anonieme detachering van een rating wordt niet ondersteund. Sitebezoekers moeten
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [Tally API&#39;s](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
+* [Tally API&#39;s](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/api/package-summary.html)
 
-* [Eindpunten tellen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
+* [Eindpunten tellen](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/tally/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
@@ -71,13 +67,13 @@ Anonieme detachering van een rating wordt niet ondersteund. Sitebezoekers moeten
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
-* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de repository.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [Overzicht opslagbronprovider](srp.md) - introductie en overzicht van het gebruik in de opslagplaats.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen.
-* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.
+* [Refactoring voor sociale hulpmiddelen](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes.

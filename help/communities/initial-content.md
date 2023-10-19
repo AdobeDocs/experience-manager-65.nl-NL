@@ -1,15 +1,15 @@
 ---
 title: Oorspronkelijke inhoud van sandbox
-description: Inhoud maken
+description: Leer hoe u de paginasjabloon in de sandbox gebruikt om een hoofdpagina te maken voor een Engelse versie van een website en een onderliggende pagina van de hoofdpagina.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 068a0fff-ca48-4847-ba3f-d78416c97f6d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '429'
-ht-degree: 2%
+source-wordcount: '457'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +21,9 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de [paginasjabloon]
 
    * SCF Sandbox - De hoofdpagina voor de Engelse versie van de site.
 
-   * SCF-afspelen - Onderliggend item van de hoofdpagina waarop wordt afgespeeld.
+   * SCF-afspelen - Onderliggend item van de hoofdpagina waarop moet worden afgespeeld.
 
-Hoewel deze zelfstudie niet in [taalkopieën](../../help/sites-administering/tc-prep.md), wordt het ontworpen zodat de wortelpagina opsporing van de aangewezen taal voor de gebruiker door de kopbal van de HTML kan uitvoeren, en aan de aangewezen belangrijkste pagina voor de taal opnieuw richt. De conventie is om de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, en &quot;fr&quot; voor Frans.
+Deze zelfstudie is niet geschikt voor [taalkopieën](../../help/sites-administering/tc-prep.md). In plaats daarvan, wordt het ontworpen zodat kan de wortelpagina opsporing van de aangewezen taal voor de gebruiker door de kopbal van de HTML uitvoeren, en aan de aangewezen belangrijkste pagina voor de taal opnieuw richten. De conventie is om de landcode van twee letters te gebruiken voor de knooppuntnaam van de pagina, bijvoorbeeld &quot;en&quot; voor Engels, en &quot;fr&quot; voor Frans.
 
 ## Eerste pagina&#39;s maken {#create-first-pages}
 
@@ -31,7 +31,7 @@ Nu is er een [paginasjabloon](initial-app.md#createthepagetemplate), kunt u de w
 
 1. De standaard-UI biedt momenteel blauwdrukken voor het maken van sites. Aangezien deze zelfstudie een eenvoudige plaats creeert, is klassieke UI nuttig.
 
-   Als u wilt overschakelen naar de klassieke UI, selecteert u de globale navigatie en houdt u de muisaanwijzer boven de rechterzijde van het pictogram Projecten. Selecteer *Overschakelen naar klassieke gebruikersinterface* pictogram dat verschijnt:
+   Als u wilt overschakelen naar de klassieke UI, selecteert u de globale navigatie en houdt u de muisaanwijzer boven de rechterzijde van het pictogram Projecten. Selecteer de *Overschakelen naar klassieke gebruikersinterface* pictogram dat wordt weergegeven:
 
    ![classic-ui](assets/classic-ui.png)
 

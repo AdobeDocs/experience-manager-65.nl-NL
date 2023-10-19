@@ -1,21 +1,21 @@
 ---
 title: Essentiële opmerkingen
-description: Overzicht van de component Opmerkingen
+description: Leer over het werken met het commentaarsysteem (de component van Commentaren) en het beheren van de gebruiker-geproduceerde inhoud (UGC) in de posten van communityleden.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8b4034f7-2f97-45ad-96d4-51cfbeae5991
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '335'
+source-wordcount: '351'
 ht-degree: 0%
 
 ---
 
 # Essentiële opmerkingen {#comments-essentials}
 
-Deze pagina bevat de belangrijkste elementen van het werken met het opmerkingensysteem (de component comments) en opties voor het beheer van de door de gebruiker gegenereerde inhoud (UGC) die worden geproduceerd wanneer leden opmerkingen of antwoorden plaatsen.
+Deze pagina biedt de basisbeginselen van het werken met het opmerkingssysteem (commentaarcomponent) en opties voor het beheer van de door de gebruiker gegenereerde inhoud (UGC) die wordt geproduceerd wanneer leden opmerkingen of antwoorden plaatsen.
 
 De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke post door een commentaarcomponent (enkelvoudig) wordt vertegenwoordigd. Het is het opmerkingsysteem dat op de pagina is opgenomen. De afzonderlijke opmerkingen worden gemaakt wanneer deze worden aangeroepen.
 
@@ -93,6 +93,6 @@ Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UG
 Zie:
 
 * [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van de opslagplaats.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
-* [SocialUtils Refactoring](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.
+* [Refactoring voor sociale hulpmiddelen](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.

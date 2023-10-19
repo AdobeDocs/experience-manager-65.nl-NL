@@ -1,14 +1,14 @@
 ---
 title: Grondbeginselen van sociale grafiek
-description: Leer over de volgende component en de component van de Volg.
+description: Leer over de grondbeginselen van Sociale Grafiek door de volgende en volgcomponenten op een communautaire plaats te gebruiken.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: c037a788-c943-4f95-a028-1fcb0ef48f86
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '249'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ De `following` de component maakt een lijst van de leden die of het huidige lid 
        <li><i>Waar </i>- de <code>following</code> de component maakt een lijst van de leden die het ondertekende in lid <code>follows</code></li>
        <li><i>Onwaar </i>- de <code>following</code> de component maakt een lijst van de leden die <code>follow </code>het aangemeld lid</li>
       </ul> </li>
-    </ul> <p>Standaardwaarden: <i>true</i> als de eigenschap ontbreekt. Het is niet mogelijk om deze eigenschap in te stellen in het dialoogvenster Bewerken in de modus Auteur. De eigenschap moet worden toegevoegd aan een instantie van de <code>following</code> node gebruiken <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
+    </ul> <p>Standaardwaarden: <i>true</i> als de eigenschap ontbreekt. Het is niet mogelijk om deze eigenschap in te stellen in het dialoogvenster Bewerken in de modus Auteur. De eigenschap moet worden toegevoegd aan een instantie van de <code>following</code> knoop door te gebruiken <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td>
   </tr>
  </tbody>
 </table>

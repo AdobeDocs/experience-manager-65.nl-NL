@@ -1,15 +1,15 @@
 ---
 title: Clientlibs toevoegen
-description: Een ClientLibraryFolder toevoegen
+description: Leer hoe u een ClientLibraryFolder (clientlibs) toevoegt die wordt gebruikt voor de JavaScript- en Cascading Style Sheets die worden gebruikt om de pagina's van uw site weer te geven.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
 workflow-type: tm+mt
-source-wordcount: '672'
+source-wordcount: '701'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 ## Een ClientLibraryFolder (clientlibs) toevoegen {#add-a-clientlibraryfolder-clientlibs}
 
-Een ClientLibraryFolder maken met de naam `clientlibs` die de JS en CSS bevat die worden gebruikt om de pagina&#39;s van uw site weer te geven.
+Een ClientLibraryFolder maken met de naam `clientlibs` bevat de JavaScript- (JS) en CSS-stijlpagina&#39;s die worden gebruikt om de pagina&#39;s van uw site weer te geven.
 
 De `categories` De eigenschapwaarde die aan deze clientbibliotheek wordt gegeven, is de id die wordt gebruikt om deze clientlib rechtstreeks vanaf een inhoudspagina in te sluiten of om deze in andere clientlibs in te sluiten.
 
@@ -41,7 +41,7 @@ In de **Eigenschappen** tab voor de nieuwe `clientlibs` knoop, ga in **categorie
 * Klikken **Toevoegen**
 * Klikken **Alles opslaan**
 
-Opmerking: De waarde voor categorieën wordt voorafgegaan door &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs. BELANGRIJK: Plaatsaanduiding toevoegen `js.tx`t en **`css.txt`** bestanden. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
+Opmerking: geef de waarde voor categorieën een voorvoegsel met &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs. BELANGRIJK: tijdelijke aanduiding toevoegen `js.tx`t en **`css.txt`** bestanden. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
 
 1. Klikken met rechtermuisknop **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Selecteren **Bestand maken...**
@@ -106,7 +106,7 @@ Zo `/etc/designs/an-scf-sandbox/clientlibs` moet nu in de gegevensopslagruimte w
 
 ### Clientlibs opnemen in PlayPage-sjabloon {#include-clientlibs-in-playpage-template}
 
-Zonder de `apps.an-scf-sandbox` De categorie ClientLibraryFolder op de pagina, SCF-componenten zijn niet functioneel en niet opgemaakt omdat de benodigde JavaScript-stijlen niet beschikbaar zijn.
+Zonder de `apps.an-scf-sandbox` De categorie ClientLibraryFolder op de pagina is niet functioneel en is niet opgemaakt omdat de benodigde JavaScript- en CSS-stijlen niet beschikbaar zijn.
 
 Bijvoorbeeld, zonder de clientlibs op te nemen, lijkt de SCF commentaarcomponent ongestileerd:
 
@@ -125,7 +125,7 @@ De instructie include behoort tot de `head` van de `html` script. De standaardwa
 1. Klik met de rechtermuisknop en selecteer **Kopiëren** (Of selecteer Kopiëren op de werkbalk)
 1. Selecteer **`/apps/an-scf-sandbox/components/playpage`**
 1. Klik met de rechtermuisknop en selecteer **Plakken** (of selecteer Plakken op de werkbalk)
-1. Dubbelklikken **`headlibs.jsp`** openen
+1. Dubbelklikken **`headlibs.jsp`** zodat u het kunt openen
 1. De volgende regel toevoegen aan het einde van het bestand
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
@@ -149,17 +149,17 @@ Laad uw website in de browser en controleer of de achtergrond geen blauwe tint h
 
 ### Uw werk tot nu toe opslaan {#saving-your-work-so-far}
 
-Op dit moment bestaat er een minimalistische sandbox en het kan de moeite waard zijn om op te slaan als een pakket, zodat u tijdens het afspelen, als uw opslagplaats beschadigd raakt en u opnieuw wilt beginnen, uw server kunt uitschakelen, de naam van de map crx-quickstart/ kunt wijzigen of verwijderen, uw server kunt inschakelen, dit opgeslagen pakket uploaden en installeren en deze basisstappen niet hoeft te herhalen.
+Op dit moment bestaat er een minimalistische zandbak. Het kan de moeite waard zijn om op te slaan als een pakket, zodat u tijdens het afspelen uw server kunt uitschakelen als uw opslagplaats beschadigd raakt en u opnieuw wilt beginnen. Wijzig vervolgens de naam van de map crx-quickstart/ of verwijder deze, schakel de server in, upload en installeer dit opgeslagen pakket en hoef deze basisstappen niet te herhalen.
 
 Dit pakket is beschikbaar op het tabblad [Een voorbeeldpagina maken](/help/communities/create-sample-page.md) zelfstudie voor hen die niet kunnen wachten om binnen te springen en te beginnen met afspelen...
 
 Een pakket maken:
 
-* Van CRXDE Lite klik [Pakketpictogram](https://localhost:4502/crx/packmgr/)
+* Van CRXDE Lite, klik [Pakketpictogram](https://localhost:4502/crx/packmgr/)
 * Klikken **Pakket maken**
 
    * Pakketnaam: an-scf-sandbox-minimum-pkg
-   * Versie: 0,1
+   * Versie: 0.1
    * Groep: `leave as default`
    * Klikken **OK**
 

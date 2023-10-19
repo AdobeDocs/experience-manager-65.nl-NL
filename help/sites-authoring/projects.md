@@ -1,16 +1,8 @@
 ---
 title: Projecten
-seo-title: Projects
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren.
-seo-description: Projects let you group resources into one entity whose common, shared environment makes it easy to manage your projects
-uuid: 4b5b9d78-d515-46af-abe2-882da0a1c8ae
-products: SG_EXPERIENCEMANAGER/6.5/SITES
-topic-tags: projects
-content-type: reference
-discoiquuid: dee7ac7c-ca86-48e9-8d95-7826fa926c68
-docset: aem65
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
 workflow-type: tm+mt
 source-wordcount: '1365'
 ht-degree: 5%
@@ -223,7 +215,7 @@ Alle projecten steunen de volgende standaardrollen om u veiligheid en controleto
 |---|---|---|---|
 | Waarnemer | Een gebruiker in deze rol kan projectdetails, met inbegrip van de projectstatus bekijken. | Alleen-lezen machtigingen voor een project | `workflow-users` groep |
 | Editor | Een gebruiker met deze rol kan de inhoud van een project uploaden en bewerken. | Lees en schrijf toegang op een project, bijbehorende meta-gegevens, en verwante activa<br>Rechten voor het uploaden van een fotolijst, fotoopname en het controleren en goedkeuren van elementen<br>Machtiging schrijven op `/etc/commerce`<br>Machtigingen wijzigen voor een bepaald project | `workflow-users` groep |
-| Eigenaar | Een gebruiker met deze rol kan een project tot stand brengen, het werk in een project in werking stellen, en goedgekeurde activa naar de productiemap verplaatsen. Alle andere taken in het project kunnen ook door de eigenaar worden bekeken en worden uitgevoerd. | Machtiging schrijven op `/etc/commerce` | `dam-users` groep die een project moet kunnen maken<br>`project-administrators` groeperen om een project te kunnen maken en elementen te kunnen verplaatsen |
+| Eigenaar | Een gebruiker met deze rol kan een project tot stand brengen, het werk in een project in werking stellen, en goedgekeurde activa naar de productiemap verplaatsen. Alle andere taken in het project kunnen ook door de eigenaar worden bekeken en worden uitgevoerd. | Machtiging schrijven op `/etc/commerce` | `dam-users` groep die een project moet kunnen maken<br>`projects-administrators` groeperen om een project te kunnen maken en elementen te kunnen verplaatsen |
 
 Voor creatieve projecten worden ook extra rollen zoals fotografen verstrekt. U kunt deze rollen gebruiken om douanerollen voor een specifiek project af te leiden.
 

@@ -1,14 +1,8 @@
 ---
 title: Veelgestelde vragen AEM
-seo-title: AEM 6.4 frequently asked questions
 description: Gebruik deze veelgestelde vragen om algemene workflows of problemen in AEM te begrijpen, te configureren en op te lossen.
-seo-description: Use these FAQs to understand, configure, and troubleshoot common workflows or issues in AEM.
-uuid: 17d34923-f1ce-463b-8e9d-a713edcce51b
-contentOwner: jsyal
-discoiquuid: a3bb5695-6593-413d-9c2f-4c164e663b15
-docset: aem65
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 68c36d4e3a14567a4d115ee64a4474bcaf9aa386
+source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 0%
@@ -23,7 +17,7 @@ De antwoorden op sommige problemen met AEM problemen met probleemoplossing en co
 
 ### Hoe vorm ik binair-minder distributie? {#how-do-i-configure-binary-less-distribution}
 
-Binaire distributie zonder beperkingen wordt ondersteund voor implementaties via een gedeelde gegevensopslag en betreft agents die gebruikmaken van de exportfunctie van het Vault Distribution Package (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`).
+Binaire distributie zonder beperkingen wordt ondersteund voor implementaties via een gedeelde gegevensopslag en betreft agents die gebruikmaken van de exportfunctie van het Vault Distribution Package (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) pakketbuilder.
 
 Met binair-geen toegelaten wijze, bevatten de verdeelde inhoudspakketten verwijzingen naar binaire getallen eerder dan de daadwerkelijke binaire getallen.
 
@@ -36,13 +30,13 @@ Controleer de `useBinaryReferences` eigenschap in de OSGI-configuratie met de fa
 
 Controleer het deelvenster Netwerk (van de Chrome-browser) waar een persoonlijke setup (JS) niet is geminiateerd.
 
-De weergave van `Initiator` kolom om te bepalen wat de initiatiefnemer van een verzoek was. Het verstrekt de dossiers en de lijnaantallen van waar de AJAX vraag wordt gemaakt. Later kunt u de functie voor foutafhandeling overtrekken en het foutbericht naar wens wijzigen.
+De weergave `Initiator` kolom om te bepalen wat de initiatiefnemer van een verzoek was. Het verstrekt de dossiers en de lijnaantallen van waar de AJAX vraag wordt gemaakt. Later kunt u de functie voor foutafhandeling overtrekken en het foutbericht naar wens wijzigen.
 
 #### Hoe te om toestemmingen toe te laten terwijl het creëren van het Exemplaar van de Taal voor tevreden-Auteurs in AEM? {#how-to-enable-permissions-while-creating-language-copy-for-content-authors-in-aem}
 
 Voor het maken van een functie voor het kopiëren van talen hebben inhoudsauteurs machtigingen nodig op `/content/projects` locatie.
 
-Als de auteurs ook projecten moeten beheren, moet u de auteur aan `project-administrators` groep.
+Als de auteurs ook projecten moeten beheren, moet u de auteur aan `projects-administrators` groep.
 
 #### Hoe te om het formaat te veranderen terwijl het creëren van het Exemplaar van de Taal voor een project? {#how-to-change-the-format-while-creating-language-copy-for-a-project}
 
@@ -64,7 +58,7 @@ Als u de uitvoer wilt omleiden naar een afzonderlijk logbestand, raadpleegt u [H
 
 Adobe Experience Manager (AEM) 6.4 wordt geleverd met de SSL-wizard en biedt een gebruikersinterface voor het configureren van Jetty- en Granite Jetty SSL-ondersteuning.
 
-Ga als volgt te werk om SSL standaard in te schakelen: [Standaard SSL](/help/sites-administering/ssl-by-default.md).
+Ga als volgt te werk om SSL standaard in te schakelen [Standaard SSL](/help/sites-administering/ssl-by-default.md).
 
 #### Wat is de aanbevolen architectuur wanneer de Diensten van de Inhoud van AEM van een mobiele app, ideaal React Inheems gebruikt? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
@@ -72,11 +66,11 @@ De diensten van de Inhoud zijn gebaseerd op de het Verdelen Modellen en de AEM o
 
 Als u wilt begrijpen hoe AEM inhoudsservices van een React-toepassing kunnen worden gebruikt, raadpleegt u [Aan de slag met AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) zelfstudie.
 
-Ook, als de ontwikkelaars een boom van componenten willen uitvoeren kunnen zij ook uitvoeren `ComponentExporter` en `ContainerExporter` en gebruiken `ModelFactory` om de onderliggende componenten te doorlopen en hun modelrepresentatie te retourneren. Zie de volgende bronnen:
+Ook, als de ontwikkelaars een boom van componenten willen uitvoeren kunnen zij ook uitvoeren `ComponentExporter` en `ContainerExporter` en gebruiken de `ModelFactory` om de onderliggende componenten te doorlopen en hun modelrepresentatie te retourneren. Zie de volgende bronnen:
 
-[1] [Adobe-Marketing-Cloud/aem-core-wcm-componenten](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
+[1] [Adobe-marketing-Cloud/aem-core-wcm-componenten](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
-[2] [Apache Sling: Verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)
+[2] [Apache Sling : verkoopmodellen](https://sling.apache.org/documentation/bundles/models.html)
 
 #### Hoe te om AEM 6.4 enquête pop-up onbruikbaar te maken? {#how-to-disable-aem-survey-pop-up}
 
@@ -97,11 +91,11 @@ Als de gebruiker, die de filmdossiers uploadt geen toestemmingen onder activakno
 Wanneer u een taalkopie maakt via de aanraakinterface (**Verwijzingen** -> **Taalkopie bijwerken**), wordt er een nieuwe DAM-map gemaakt onder de nieuwe taal en er wordt naar elementen verwezen.
 
 Dit is de standaardinstelling voor OOTB-configuraties. U kunt instellen **Pagina-elementen vertalen** = **Niet vertalen** in vertaalconfiguraties.
-Voor AEM 6.4: **Gereedschappen** > **Cloud Services** > **Cloudservices voor vertaling**.
+Voor AEM 6.4: **Gereedschappen** > **Cloud Servicen** > **Cloudservices voor vertaling**.
 
 #### Hoe te om een AEM component onbruikbaar te maken die exponentiële groei voor AEM SegmentStore (AEM 6.3.1.1) veroorzaakt? {#how-to-disable-an-aem-component-causing-exponential-growth-for-the-aem-segmentstore-aem}
 
-U kunt de Disabler van de Component OSGi onbruikbaar maken. Als u deze service wilt gebruiken, raadpleegt u [OSGi Component Disabler](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
+U kunt de Component onbruikbaar maken OSGi. Als u deze service wilt gebruiken, raadpleegt u [OSGi Component Disabler](https://adobe-consulting-services.github.io/acs-aem-commons/features/osgi-disablers/component-disabler/index.html).
 
 Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebruikersinterface of via een `curl` (voorbeeld hieronder), na elke AEM opnieuw beginnen.
 
@@ -123,7 +117,7 @@ Voor meer informatie over zoekresultaten/rangschikking en verdere implementatieg
 
 De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van de Top van 2017 AEM Gedetailleerd Onderzoek.
 
-#### Is het mogelijk om insteekmodule voor WordPress te bouwen die een klant toestaat om tot de Plukker van Activa van Adobe toegang te hebben om beelden te selecteren? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
+#### Is het mogelijk om insteekmodule voor WordPress te bouwen die een klant toestaat om tot de Plukker van Activa van de Adobe toegang te hebben om beelden te selecteren? {#is-it-possible-to-build-plugin-for-wordpress-that-allows-a-customer-to-access-adobe-asset-picker-to-select-images}
 
 Ja, een klant die WordPress gebruikt, kan de Adobe Asset Picker gebruiken om afbeeldingen van zijn AEM Assets-server te selecteren en toe te voegen aan advertenties op zijn WordPress-site.
 

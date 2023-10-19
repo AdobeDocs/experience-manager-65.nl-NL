@@ -3,7 +3,7 @@ title: Wizard Taalkopie
 description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Taal in het Manager van de Ervaring van de Adobe.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 2d87022aa2223df261e245fba65df054c041cd69
 workflow-type: tm+mt
 source-wordcount: '215'
 ht-degree: 0%

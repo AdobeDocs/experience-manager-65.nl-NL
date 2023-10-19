@@ -2,7 +2,7 @@
 title: Vertaalprojecten beheren
 description: Leer hoe u vertaalprojecten beheert in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 0%
@@ -433,7 +433,7 @@ U kunt een vertaalproject manueel tot stand brengen als u verkiest de console va
 
 >[!NOTE]
 >
->Als u een project wilt maken, moet uw account lid zijn van de `project-administrators` groep.
+>Als u een project wilt maken, moet uw account lid zijn van de `projects-administrators` groep.
 
 Wanneer u handmatig een vertaalproject maakt, moet u naast de eigenschappen voor vertaling ook waarden opgeven voor de volgende eigenschappen [basiseigenschappen](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project):
 

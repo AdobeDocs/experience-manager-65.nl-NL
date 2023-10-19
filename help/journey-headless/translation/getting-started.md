@@ -2,7 +2,7 @@
 title: Ga aan de slag met AEM headless vertaling
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Er zijn een aantal vereisten voordat u begint met het vertalen van inhoud zonder
 
 * Sandbox-toegang voor het testen van het vertalen van uw inhoud
 * Credentials om verbinding te maken met uw voorkeursvertaalservice
-* Lid zijn van de `project-administrators` groep in AEM
+* Lid zijn van de `projects-administrators` groep in AEM
 
 ## Structuur is sleutel {#content-structure}
 

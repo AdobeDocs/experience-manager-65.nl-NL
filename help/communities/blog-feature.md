@@ -1,17 +1,15 @@
 ---
 title: Blogonderdeel
-description: Informatie van de Gemeenschap in een journalistiek formaat
-uuid: 7323063f-81e8-45c3-9035-bf7df6124830
+description: Leer hoe de blogeigenschap het verstrekken van communautaire informatie in een journaling formaat steunt. Vermeldingen worden in de publicatieomgeving gemaakt door geautoriseerde gebruikers.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: cf8b3d72-30ba-40ca-ae48-b61abbb28802
 docset: aem65
 exl-id: 4650ac36-5506-4efc-be35-fac9e5a58f3d
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1670'
 ht-degree: 0%
 
 ---
@@ -31,8 +29,8 @@ De blogfunctie biedt het volgende:
 * Inline-afbeeldingen (met ondersteuning voor slepen en neerzetten)
 * Inhoud ingesloten sociale netwerken ([Ondersteuning voor insluiten](/help/communities/blog-developer-basics.md#allowing-rich-media))
 * Conceptmodus
-* Geplande publicatie
-* Samenstellen namens (a) [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) kan inhoud maken namens een ander lid van de gemeenschap )
+* Gepland publiceren
+* Samenstellen namens (a [bevoorrecht lid](/help/communities/users.md#privileged-members-group) kan inhoud maken namens een ander lid van de gemeenschap )
 * [In de context en bulkmatiging](/help/communities/moderate-ugc.md) blogartikelen en commentaar
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
@@ -42,7 +40,7 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 >[!NOTE]
 >
->De componenten `Journal` en `Journal Sidebar` worden `Blog` en `Blog Sidebar`.
+>De componenten `Journal` en `Journal Sidebar` zijn genoemd `Blog` en `Blog Sidebar`.
 >
 >De blogfunctie in AEM 6.0 en eerdere versies wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
 
@@ -63,7 +61,7 @@ Wanneer de [vereiste clientbibliotheken](/help/communities/blog-developer-basics
 
 ### Blog configureren {#configuring-blog}
 
-Selecteer de geplaatste `Blog` zodat u de `Configure` Het pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Blog` zodat u toegang hebt tot `Configure` Het pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
 ![vormen](assets/configure-new.png)
 
@@ -83,7 +81,7 @@ Onder de **Instellingen** -tab, geeft u de basisfuncties van de blog op:
 
 * **Minimale afbeeldingsgrootte voor miniatuur**
 
-  Minimale afbeeldingsgrootte (in bytes) voor het genereren van miniaturen voor inline-afbeeldingen. De standaardwaarde is 100000bytes (100 kB).
+  Minimale afbeeldingsgrootte (in bytes) voor het genereren van miniaturen voor inline-afbeeldingen. De standaardwaarde is 100000 bytes (100 kB).
 
 * **Maximale miniatuurgrootte**
 
@@ -133,7 +131,7 @@ Onder de **Instellingen** -tab, geeft u de basisfuncties van de blog op:
 
 * **Tags toestaan**
 
-  Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan hun advertentie (zie **Veld code** ). De optie Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan hun berichten (zie **Veld code** ). De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
@@ -161,7 +159,7 @@ Onder de **Instellingen** -tab, geeft u de basisfuncties van de blog op:
 
 * **Gebruikers toestaan opmerkingen en onderwerpen te verwijderen**
 
-  Als deze optie is ingeschakeld, kunnen leden hun opmerkingen en blogberichten verwijderen. De optie Standaard is uitgeschakeld.
+  Als deze optie is ingeschakeld, kunnen leden de opmerkingen en blogberichten verwijderen die ze hebben gepost. De optie Standaard is uitgeschakeld.
 
 * **Volgen toestaan**
 
@@ -227,7 +225,7 @@ Onder de **Moderatie gebruiker** tab, specificeer de moderatie montages:
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder de **Veld code** -tabblad, geeft u op welke tags kunnen worden toegepast als **Tags toestaan** wordt gecontroleerd op **Instellingen** tab:
+Onder de **Veld code** -tabblad, geeft u op welke tags kunnen worden toegepast als **Tags toestaan** is ingeschakeld op het tabblad **Instellingen** tab:
 
 * **Toegestane naamruimten**
 
@@ -249,8 +247,8 @@ Onder de **Dagboekzijbalkinstellingen** op, geeft u de datumnotatie voor archiev
 
   De indeling die wordt gebruikt om weer te geven voor archieven van blogberichten. Voor deze indeling worden plaatsaanduidingen gebruikt die voldoen aan de Java™-conventie.
 
-   * jjjj : volledig jaar, zoals &quot;2015&quot;
-   * jj : kort jaar, zoals &#39;15&#39;
+   * jjjj : volledig jaar, zoals &#39;2015&#39;
+   * yy : kort jaar, zoals &#39;15&#39;
    * MMMMM: volledige maand, zoals juni
    * MMM: korte maand, zoals jun
    * MM: maandnummer, bijvoorbeeld 06
@@ -303,7 +301,7 @@ Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, ku
 
 #### Leden {#members}
 
-Wanneer de gebruiker met de aanmelding lid is van de gemeenschap of [geprivilegieerd lid](/help/communities/users.md#privileged-members-group) (afhankelijk van de configuratie), kunnen zij selecteren `New Article` om een nieuw blogartikel te maken en te plaatsen.
+Wanneer de gebruiker met de aanmelding lid is van de gemeenschap of [bevoorrecht lid](/help/communities/users.md#privileged-members-group) (afhankelijk van de configuratie), kunnen zij selecteren `New Article` om een nieuw blogartikel te maken en te plaatsen.
 
 Zij kunnen met name:
 

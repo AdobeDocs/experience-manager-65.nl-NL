@@ -1,22 +1,22 @@
 ---
 title: Communautaire groepen
-description: Gebruikersgroepen maken
+description: Leer hoe u met de functie Gebruikersgroepen dynamisch een subcommunity binnen een communitysite kunt maken door geautoriseerde gebruikers in Publiceren en Auteur.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: edcda6cb-df47-4afe-8a9a-82d8e386fe05
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '555'
 ht-degree: 0%
 
 ---
 
 # Communautaire groepen {#community-groups}
 
-De eigenschap van communautaire groepen is de capaciteit voor een subcommunity dynamisch om binnen een communautaire plaats door erkende gebruikers (leden van de gemeenschap en auteurs) van de publicatie en auteursmilieu&#39;s worden gecreeerd.
+De eigenschap van communautaire groepen is de capaciteit voor een subcommunity om dynamisch binnen een communautaire plaats door erkende gebruikers (leden van de gemeenschap en auteurs) van de publicatie en auteursmilieu&#39;s worden gecreeerd.
 
 Deze mogelijkheid is aanwezig wanneer de [group, functie](/help/communities/functions.md#groups-function) aanwezig is in het dialoogvenster [community-site](/help/communities/sites-console.md) structuur.
 

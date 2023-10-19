@@ -1,26 +1,22 @@
 ---
-title: Door gebruiker gegenereerde inhoud vertalen
-seo-title: Translating User Generated Content
-description: De werking van de vertaalfunctie
-seo-description: How the translation feature works
-uuid: 7ee3242c-2aca-4787-a60d-b807161401ad
+title: Door de gebruiker gegenereerde inhoud vertalen
+description: Leer hoe bezoekers en leden van sites door de vertaling van UGC-inhoud een wereldwijde gemeenschap kunnen ervaren door taalbarrières te verwijderen.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
-discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
 role: Admin
 exl-id: ac54f06e-1545-44bb-9f8f-970f161ebb72
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '1081'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
 
-# Door gebruiker gegenereerde inhoud vertalen {#translating-user-generated-content}
+# Door de gebruiker gegenereerde inhoud vertalen {#translating-user-generated-content}
 
-De vertaalfunctie voor AEM Communities breidt het concept van [pagina-inhoud omzetten](../../help/sites-administering/translation.md) aan de gebruiker geproduceerde inhoud (UGC) die aan communautaire plaatsen wordt gepost gebruikend [SCF-componenten (Social Component Framework)](scf.md).
+Met de vertaalfunctie voor Adobe Experience Manager (AEM) Communities wordt het concept van [pagina-inhoud omzetten](../../help/sites-administering/translation.md) naar de door de gebruiker gegenereerde inhoud (UGC) die naar gemeenschapssites wordt gepost met [SCF-componenten (Social Component Framework)](scf.md).
 
 De vertaling van UGC stelt bezoekers en leden van de site in staat een wereldwijde gemeenschap te ervaren door taalbarrières te verwijderen.
 
@@ -30,21 +26,21 @@ Stel bijvoorbeeld:
 * Een ander Japans lid gebruikt de vertaalfunctie om het recept van het Frans naar het Japans te vertalen.
 * Na het lezen van het recept in het Japans heeft het Japanse lid een opmerking geplaatst in het Japans.
 * Het Franse lid gebruikt de vertaalfunctie om de Japanse opmerking in het Frans te vertalen.
-* Wereldwijde communicatie.
+* Algemene communicatie.
 
 ## Overzicht {#overview}
 
-In deze sectie van de documentatie wordt specifiek besproken hoe de vertaalservice werkt met UGC en wordt een inzicht in de manier waarop u AEM met een [vertaalserviceprovider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) en integreer die dienst in een website door te vormen [vertaalintegratiekader](../../help/sites-administering/tc-tic.md).
+Deze sectie bespreekt specifiek hoe de vertaaldienst met UGC werkt. Het veronderstelt ook dat u een inzicht in hebt hoe te om AEM met een [vertaalserviceprovider](../../help/sites-administering/translation.md#connectingtoatranslationserviceprovider) en integreer die dienst in een website door te vormen [vertaalintegratiekader](../../help/sites-administering/tc-tic.md).
 
 Wanneer een vertaaldienstverlener met de plaats wordt geassocieerd, handhaaft elke taalexemplaar van de plaats zijn eigen draden van UGC die door componenten SCF zoals commentaren wordt gepost.
 
-Wanneer een kader van de vertaalintegratie naast de vertaaldienstverlener wordt gevormd, is het mogelijk voor elke taalexemplaar van de plaats om één enkele draad van UGC te delen, waarbij globale mededeling over taalexemplaren wordt verstrekt. In plaats van een besprekingsdraad die door taal wordt gescheiden, gevormd [algemene gedeelde opslag](#global-translation-of-ugc) laat de volledige draad toe om zichtbaar te zijn ongeacht welke taal het wordt bekeken. Bovendien kunnen de veelvoudige configuraties van de vertaalintegratie worden gevormd specificerend verschillende globale gedeelde opslag voor een logische groepering van globale deelnemers, zoals door gebieden.
+Wanneer een vertaalintegratie naast de vertaaldienstverlener wordt gevormd, is het mogelijk voor elke taalexemplaar van de plaats om één enkele draad van UGC te delen, die globale mededeling over taalexemplaren verstrekt. In plaats van een besprekingsdraad die door taal wordt gescheiden, gevormd [algemene gedeelde opslag](#global-translation-of-ugc) laat de volledige draad toe om zichtbaar te zijn ongeacht van welke taal het wordt bekeken. Bovendien kunnen de veelvoudige configuraties van de vertaalintegratie worden gevormd specificerend verschillende globale gedeelde opslag voor een logische groepering van globale deelnemers, zoals door gebieden.
 
 ## De standaardvertaalservice {#the-default-translation-service}
 
 AEM Communities bevat een [proeflicentie](../../help/sites-administering/tc-msconf.md#microsoft-translator-trial-license) voor een [standaardvertaalservice](../../help/sites-administering/tc-msconf.md) ingeschakeld voor meerdere talen.
 
-Wanneer [het creëren van een communautaire plaats](sites-console.md), wordt de standaardvertaalservice ingeschakeld wanneer `Allow Machine Translation` wordt gecontroleerd door [VERTALING](sites-console.md#translation) subpanel.
+Wanneer [het creëren van een communautaire plaats](sites-console.md), wordt de standaardvertaalservice ingeschakeld wanneer `Allow Machine Translation` wordt gecontroleerd door [VERTALING](sites-console.md#translation) subdeelvenster.
 
 >[!CAUTION]
 >
@@ -54,13 +50,13 @@ Wanneer [het creëren van een communautaire plaats](sites-console.md), wordt de 
 
 ## Wereldwijde omzetting van UGC {#global-translation-of-ugc}
 
-Wanneer een website meerdere [taalkopieën](../../help/sites-administering/tc-prep.md), erkent de standaardvertaaldienst niet dat UGC ingegaan op één plaats met UGC zou kunnen verwant zijn ingegaan op een andere, aangezien wanneer UGC, hoofdzakelijk, door de zelfde component (de taalexemplaar van de pagina die de component bevat) wordt geproduceerd.
+Wanneer een website meerdere [taalkopieën](../../help/sites-administering/tc-prep.md), herkent de standaardvertaalservice niet dat UGC die op de ene site is ingevoerd, gerelateerd kan zijn aan UGC die op een andere site is ingevoerd. Dit is waar wanneer UGC door de zelfde component (het taalexemplaar van de pagina die de component bevat) wordt geproduceerd.
 
-Het is vergelijkbaar met groepen mensen die een onderwerp bespreken dat niet op de hoogte is van opmerkingen die in andere groepen dan hun eigen groepen worden gemaakt, in vergelijking met iedereen in één grote groep die aan één gesprek deelneemt.
+Het is vergelijkbaar met groepen mensen die een onderwerp bespreken. Zij zijn niet op de hoogte van opmerkingen die in andere groepen dan hun eigen groepen worden gemaakt, in vergelijking met iedereen in een grote groep die aan één gesprek deelneemt.
 
 Als &quot;één groepsgesprek&quot;wordt gewenst, is het mogelijk om globale vertaling over een website met veelvoudige taalexemplaren toe te laten, zodat de volledige draad zichtbaar is ongeacht welke taalexemplaar het wordt bekeken.
 
-Bijvoorbeeld, als een forum op de basisplaats werd gevestigd, gemaakte taalexemplaren, en globale vertaling werd toegelaten, dan zou een onderwerp dat aan het forum in één taalexemplaar wordt gemaakt in alle taalexemplaren verschijnen. Hetzelfde geldt voor alle antwoorden, ongeacht van welke taalkopie het antwoord is ingevuld. Het resultaat zou zijn dat het onderwerp en zijn volledige draad van antwoorden ongeacht van welke taalexemplaar het onderwerp wordt bekeken zichtbaar zijn.
+Bijvoorbeeld, als een forum op de basisplaats werd gevestigd, gemaakte taalexemplaren, en globale vertaling werd toegelaten, zou een onderwerp dat aan het forum in één taalexemplaar wordt gemaakt in alle taalexemplaren verschijnen. Hetzelfde geldt voor alle antwoorden, ongeacht van welke taalkopie het antwoord is ingevuld. Het resultaat zou zijn dat het onderwerp en zijn volledige draad van antwoorden ongeacht van welke taalexemplaar het onderwerp wordt bekeken zichtbaar zijn.
 
 >[!CAUTION]
 >
@@ -72,7 +68,7 @@ Bijvoorbeeld, als een forum op de basisplaats werd gevestigd, gemaakte taalexemp
 
 ### Configuratie vertaalintegratie {#translation-integration-configuration}
 
-Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de Vertaaldienst met de website op de auteursinstantie integreert:
+Om een Vertaalintegratie tot stand te brengen, die een schakelaar van de Vertaaldienst met de website op de auteursinstantie integreert:
 
 * Aanmelden als beheerder
 * Van de [hoofdmenu](http://localhost:4502/)
@@ -82,13 +78,13 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 * Selecteer **[!UICONTROL Cloud Services]**
 * Omlaag schuiven naar **[!UICONTROL Translation Integration]**
 
-   ![vertaling-integratie](assets/translation-integration.png)
+  ![vertaling-integratie](assets/translation-integration.png)
 
 * Selecteer **[!UICONTROL Show Configurations]**
 
-   ![show-configuration](assets/translation-integration1.png)
+  ![show-configuration](assets/translation-integration1.png)
 
-* Selecteren `[+]` pictogram naast **[!UICONTROL Available Configurations]** om een nieuwe configuratie te creëren
+* Selecteren `[+]` pictogram naast **[!UICONTROL Available Configurations]** zodat kunt u een configuratie creëren.
 
 #### Configuratiedialoogvenster maken {#create-configuration-dialog}
 
@@ -96,15 +92,15 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 
 * **[!UICONTROL Parent Configuration]**
 
-   (Vereist) Verlaat gewoonlijk als gebrek. Standaard is `/etc/cloudservices/translation`.
+  (Vereist) Verlaat gewoonlijk als gebrek. Standaard is `/etc/cloudservices/translation`.
 
 * **[!UICONTROL Title]**
 
-   (Vereist) Voer de gewenste weergavetoewijzing in. Geen standaardwaarde.
+  (Vereist) Voer de gewenste weergavetoewijzing in. Geen standaardwaarde.
 
 * **[!UICONTROL Name]**
 
-   (Optioneel) Voer een naam in voor de configuratie. De standaardwaarde is een knooppuntnaam die op de Titel wordt gebaseerd.
+  (Optioneel) Voer een naam in voor de configuratie. De standaardwaarde is een knooppuntnaam die op de Titel wordt gebaseerd.
 
 * Selecteer **[!UICONTROL Create]**
 
@@ -112,28 +108,26 @@ Om een nieuwe Vertaalintegratie tot stand te brengen, die een schakelaar van de 
 
 ![configuratie-dialoogvenster](assets/translation-integration3.png)
 
-Voor gedetailleerde instructies gaat u naar [Een configuratie voor vertaalintegratie maken](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration)
+Zie voor gedetailleerde instructies [Een configuratie voor vertaalintegratie maken](../../help/sites-administering/tc-tic.md#creating-a-translation-integration-configuration).
 
-* **[!UICONTROL Sites]** tab: kan als standaardinstellingen worden verlaten.
+* **[!UICONTROL Sites]** tab: kan als standaardinstellingen worden ingesteld.
 
 * **[!UICONTROL Communities]** tab:
    * **[!UICONTROL Translation Provider]**
-Selecteer de vertaalprovider in de vervolgkeuzelijst. Standaard is 
-`microsoft`, de testservice.
+Selecteer de vertaalprovider in de vervolgkeuzelijst. Standaard is `microsoft`, de testservice.
 
    * **[!UICONTROL Content Category]**
-Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard is 
-`General.`
+Selecteer een categorie die de inhoud beschrijft die wordt vertaald. Standaard is `General.`
 
    * **[!UICONTROL Choose A Locale...]**
-(Optioneel) Als u een landinstelling selecteert voor het opslaan van UGC, worden posts van alle taalkopieën in één algemeen gesprek weergegeven. Kies bij conventie de landinstelling voor de [basistaal](sites-console.md#translation) voor de website. Kiezen `No Common Store` schakelt algemene vertaling uit. Globale vertaling is standaard uitgeschakeld.
+(Optioneel) Door een landinstelling te selecteren voor het opslaan van UGC, verschijnen publicaties van alle taalkopieën in één algemeen gesprek. Kies bij conventie de landinstelling voor de [basistaal](sites-console.md#translation) voor de website. Kiezen `No Common Store` schakelt algemene vertaling uit. Globale vertaling is standaard uitgeschakeld.
 
-* **[!UICONTROL Assets]** tab: kan als standaardinstellingen worden verlaten.
+* **[!UICONTROL Assets]** tab: kan als standaardinstellingen worden ingesteld.
 * Selecteer **[!UICONTROL OK]**
 
 #### Activering {#activation}
 
-De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publicatieomgeving. Als de activeringsworkflow nog niet is geactiveerd en aan een website is gekoppeld, wordt gevraagd om deze cloudserviceconfiguratie te publiceren wanneer de pagina wordt gepubliceerd waaraan deze is gekoppeld.
+De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd in de publicatieomgeving. Als de activeringsworkflow nog niet is geactiveerd en aan een website is gekoppeld, wordt gevraagd om deze cloudserviceconfiguratie te publiceren wanneer de pagina wordt gepubliceerd waaraan deze is gekoppeld.
 
 ## Vertaalinstellingen beheren {#managing-translation-settings}
 
@@ -141,7 +135,7 @@ De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publica
 >
 >**Voorkeurstaal**
 >
->Om na te gaan of de post zich in een andere taal dan de voorkeurstaal bevindt, moet de voorkeurstaal van de bezoeker worden vastgesteld.
+>Wanneer wordt vastgesteld of de post zich in een andere taal dan de voorkeurstaal bevindt, moet de voorkeurstaal van de bezoeker van de site worden vastgesteld.
 >
 >De voorkeurstaal is de taalvoorkeur die is ingesteld in het profiel van de gebruiker, wanneer de bezoeker van de site is aangemeld en een taalvoorkeur heeft opgegeven.
 >
@@ -151,9 +145,9 @@ De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publica
 
 #### Gebruikersprofiel {#user-profile}
 
-Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zichzelf te identificeren voor de community en hun voorkeuren in te stellen.
+Alle Communitysites bieden een gebruikersprofiel dat de ingelogde leden kunnen bewerken om zich aan de gemeenschap te identificeren en hun voorkeuren in te stellen.
 
-Een van deze instellingen is of gemeenschapsinhoud altijd in de taal van uw voorkeur moet worden weergegeven. De instelling is standaard niet ingesteld en wordt standaard ingesteld op de systeeminstelling. De gebruiker kan de instelling wijzigen in Aan of Uit en zo de systeeminstelling overschrijven.
+Een van deze instellingen is of gemeenschapsinhoud altijd in de taal van uw voorkeur moet worden weergegeven. De instelling wordt standaard niet ingesteld en wordt standaard ingesteld op de systeeminstelling. De gebruiker kan de instelling in Aan of Uit wijzigen om de systeeminstelling te overschrijven.
 
 Wanneer de pagina&#39;s automatisch in de aangewezen taal van de gebruiker worden vertaald, wordt UI voor het tonen van de originele tekst en het verbeteren van de vertaling nog ter beschikking gesteld.
 

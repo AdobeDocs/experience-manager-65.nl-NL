@@ -1,18 +1,14 @@
 ---
 title: Koppeling gebruiken
-seo-title: Using Liking
-description: De Liking-component toevoegen en configureren
-seo-description: Adding and configuring the Liking component
-uuid: 12103ab7-1a1c-49cd-8dad-6c7508b4550e
+description: Leer hoe u de component Liking toevoegt en configureert, zodat gebruikers een mening over een bepaald stuk inhoud, zoals een commentaar, kunnen uiten.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 exl-id: 226fa91c-4a12-4586-b694-1a52fa2ba358
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '216'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ Als u een `Liking` van een component aan een pagina op auteurswijze, gebruik com
 
 * `Communities / Liking`
 
-en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers leuk kunnen vinden.
+En sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers leuk kunnen vinden.
 
 Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](basics.md).
 
@@ -37,7 +33,7 @@ Wanneer de [vereiste clientbibliotheken](essentials-liking.md#essentials-for-cli
 
 ## Liking configureren {#configuring-liking}
 
-Selecteer de geplaatste `Liking` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Liking` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![configure-new](assets/configure-new.png)
 
@@ -47,21 +43,21 @@ Onder de **[!UICONTROL Texts & Labels]** , geeft u de eigenschappen op die worde
 
 * **[!UICONTROL Positive Response Label]**
 
-   (*Vereist*) De eigenschapsnaam voor een positieve reactie.
+  (*Vereist*) De eigenschapsnaam voor een positieve reactie.
 
 * **[!UICONTROL Negative Response Label]**
 
-   (*Vereist*) De eigenschapsnaam voor een negatieve reactie.
+  (*Vereist*) De eigenschapsnaam voor een negatieve reactie.
 
 * **[!UICONTROL Tally Name]**
 
-   (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
+  (*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
 ### Leden {#members}
 
-De leden kunnen te allen tijde van mening veranderen.
+Leden kunnen te allen tijde van mening veranderen.
 
 ### Anoniem {#anonymous}
 

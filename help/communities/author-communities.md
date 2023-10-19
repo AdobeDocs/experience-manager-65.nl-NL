@@ -1,19 +1,15 @@
 ---
 title: Community-componenten
-seo-title: Communities Components
-description: Gebruikersfuncties toevoegen aan elke AEM site
-seo-description: Adding community features to any AEM site
-uuid: 76824820-81e9-4192-8df3-dff55eaf144e
+description: In deze video ziet u hoe u beschikt over een licentie voor AEM Communities. U kunt met de standaardprogramma's voor AEM maken ook Community-functies toevoegen aan elke AEM site.
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: df1ac689-33db-4e30-9f75-3bda2a485652
 docset: aem65
 exl-id: 4a49d14c-e6f0-4791-904e-8f30e47f7cde
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '293'
 ht-degree: 1%
 
 ---
@@ -55,7 +51,7 @@ Zie ook de interactieve [Community Components Guide](/help/communities/component
 | Bericht samenstellen | [Berichten](/help/communities/configure-messaging.md) |
 | Aanbevolen inhoud | [Aanbevolen inhoud](/help/communities/featured.md) |
 | Bestandsbibliotheek | [Bestandsbibliotheek](/help/communities/file-library.md) |
-| Volg | [Sociale grafiek](/help/communities/socialgraph.md) |
+| Volgen | [Sociale grafiek](/help/communities/socialgraph.md) |
 | volgende | [Sociale grafiek](/help/communities/socialgraph.md) |
 | Forum | [Forum](/help/communities/forum.md) |
 | Ideatie | [Ideatie](/help/communities/ideation-feature.md) |
@@ -80,8 +76,8 @@ Zie ook de interactieve [Community Components Guide](/help/communities/component
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
-* Bezoek [Gemeenschappen inzetten](/help/communities/deploy-communities.md) voor meer informatie over aanbevolen implementaties.
+* Bezoek [Gemeenschappen inzetten](/help/communities/deploy-communities.md) waar u over geadviseerde plaatsingen kunt leren.
 
 * Bezoek [Communitysites beheren](/help/communities/administer-landing.md) om over het creëren van een communautaire plaats te leren, vormend communautaire plaatssjablonen, het modereren van communautaire inhoud, het leiden van leden, en het vormen overseinen.
 
-* Bezoek [Ontwikkelingsgemeenschappen](/help/communities/communities.md) voor meer informatie over het raamwerk voor sociale componenten (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
+* Bezoek [Ontwikkelingsgemeenschappen](/help/communities/communities.md) waar u over het sociale componentenkader (SCF) en het aanpassen van de componenten en de eigenschappen van de Gemeenschappen kunt leren.

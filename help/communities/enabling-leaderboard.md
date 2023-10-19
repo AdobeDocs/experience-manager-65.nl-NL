@@ -1,19 +1,15 @@
 ---
 title: Leaderboard-functie
-seo-title: Leaderboard Feature
-description: Een Leaderboard-component aan een pagina toevoegen
-seo-description: Adding a Leaderboard component to a page
-uuid: c4633919-75d3-4bc7-830c-ef9c28cc1cba
+description: Leer hoe u met de component Leaderboard kunt zien hoe leden binnen de gemeenschap communiceren door leden te rangschikken op basis van verdiende punten en expertise.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: authoring
 content-type: reference
-discoiquuid: 9045ce2e-a06d-4da5-9b83-56dd823007bb
 docset: aem65
 exl-id: 8b4d56d9-ba73-4eda-9773-3daaa9237abe
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b8887b4a6f757352e9dbfdf074c10e9ccd6dbd4f
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -22,13 +18,13 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-De `Leaderboard` de component biedt de mogelijkheid om een idee te krijgen van de manier waarop leden binnen de gemeenschap met elkaar communiceren door leden te rangschikken op basis van verdiende punten (basisscore) of hun deskundigheid (geavanceerde scoring).
+De `Leaderboard` helpt u een idee te krijgen van hoe leden binnen de gemeenschap communiceren door leden te rangschikken op basis van verdiende punten (basis scoring) of hun expertise (geavanceerde scoring).
 
 Voordat u de leaderboard-component op een pagina plaatst, moet u [Scores en badges van gemeenschappen](/help/communities/implementing-scoring.md).
 
 In dit gedeelte van de documentatie wordt het volgende beschreven:
 
-* Het toevoegen van `Leaderboard` component aan een [community-site](/help/communities/overview.md#community-sites).
+* De `Leaderboard` component aan een [community-site](/help/communities/overview.md#community-sites).
 * De montages van de configuratie voor de `Leaderboard` component.
 
 ### Een Leaderboard toevoegen aan een pagina {#adding-a-leaderboard-to-a-page}
@@ -37,7 +33,7 @@ Als u een `Leaderboard` naar een pagina in de modus Schrijver, zoek de component
 
 * `Communities / Leaderboard`
 
-en sleep het naar de juiste plaats op een pagina.
+En sleep het naar de juiste plaats op een pagina.
 
 Voor de nodige informatie gaat u naar [Grondbeginselen van Community-componenten](/help/communities/basics.md).
 
@@ -47,7 +43,7 @@ Wanneer de component voor het eerst op een pagina van een communitysite wordt ge
 
 ### Leaderboard configureren {#configuring-leaderboard}
 
-Selecteer de geplaatste `Leaderboard` te openen en de component te selecteren `Configure` wordt het dialoogvenster Bewerken geopend.
+Selecteer de geplaatste `Leaderboard` zodat u toegang hebt tot `Configure` wordt het dialoogvenster Bewerken geopend.
 
 ![configure-new](assets/configure-new.png)
 
@@ -59,22 +55,22 @@ Onder de **[!UICONTROL Settings]** tabblad, geeft u op welke informatie met betr
 
 * **Weergavenaam**
 
-   Een beschrijvende naam die voor het bord moet worden weergegeven en die de regels weergeeft die zijn geselecteerd voor het weergeven van badges en scores.
-Standaard is `Leaderboard`, als er niets is ingevoerd.
+  Een beschrijvende naam die voor het bord moet worden weergegeven en die de regels weergeeft die zijn geselecteerd voor het weergeven van badges en scores.
+Standaard is `Leaderboard` als er niets is ingevoerd.
 
 * **Badge**
 
-   Als deze optie is ingeschakeld, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
+  Als deze optie is ingeschakeld, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
 De optie Standaard is uitgeschakeld.
 
 * **Naam badge**
 
-   Als deze optie is ingeschakeld, wordt een kolom met de naam van de badge opgenomen in het leaderboard.
+  Als deze optie is ingeschakeld, wordt een kolom met de naam van de badge opgenomen in het leaderboard.
 De optie Standaard is uitgeschakeld.
 
 * **Avatar gebruiken**
 
-   Als deze optie is ingeschakeld, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
+  Als deze optie is ingeschakeld, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
 De optie Standaard is uitgeschakeld.
 
 #### Regels, tabblad {#rules-tab}
@@ -83,21 +79,21 @@ Onder de **Regels** tab, de site van de community en de bijbehorende regels voor
 
 * **Locatie van regel**
 
-   (Vereist) Plaats waar de het Scoren/het Bedragen regel wordt gevormd.
+  (Vereist) Plaats waar de het Scoren/het Bedragen regel wordt gevormd.
 
 * **Scoreregel**
 
-   (Vereist) Specifieke regel die de scores genereert die moeten worden weergegeven.
+  (Vereist) Specifieke regel die de scores genereert die moeten worden weergegeven.
 
-* **Badgingregel**
+* **Badregel**
 
-   (Vereist) Specifieke regel die de badge produceert om te tonen.
+  (Vereist) Specifieke regel die de badge produceert om te tonen.
 
 * **Weergavelimiet**
 
-   Aantal leden dat per pagina moet worden weergegeven. De standaardwaarde is 10.
+  Aantal te tonen leden per pagina. De standaardwaarde is 10.
 
-### Voorbeeld: Lederboard van deelnemers {#example-participants-leaderboard}
+### Voorbeeld: Leaderboard van deelnemers {#example-participants-leaderboard}
 
 Deze lederbordrapporten zijn het resultaat van het toepassen van elementaire scoringregels.
 
@@ -121,7 +117,7 @@ Configuratie van de component Leaderboard:
 
 ![deelnemerslijst](assets/participants-leaderboard.png)
 
-### Voorbeeld: Expert Leaderboard {#example-experts-leaderboard}
+### Voorbeeld: Leaderboard van experts {#example-experts-leaderboard}
 
 Dit leaderboard-rapport is het resultaat van het toepassen van geavanceerde scoreregels.
 
@@ -142,7 +138,7 @@ Configuratie van de component Leaderboard:
    * Badgingregel = `/libs/settings/community/badging/rules/adv-forums-badging`
    * Weergavelimiet = `10`
 
-![deskundigenpanel](assets/experts-leaderboard.png)
+![raad van deskundigen](assets/experts-leaderboard.png)
 
 ### Aanvullende informatie {#additional-information}
 

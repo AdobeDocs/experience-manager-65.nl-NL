@@ -1,15 +1,15 @@
 ---
 title: Geneste groepen ontwerpen
-description: Geneste groepen maken
+description: Leer hoe u geneste groepsbestanden voor een Adobe Experience Manager Communities-site maakt.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '549'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,7 @@ De groepfunctie wordt weergegeven als een map waarin instanties van groepen word
 
 ## Hoofdartgroep maken {#create-main-arts-group}
 
-Deze groep kan worden gemaakt omdat de sitestructuur voor engaging een groepsfunctie bevat. De configuratie van de functie in de site `Reference Template` staat standaard de selectie van een ingeschakelde groepssjabloon toe. De voor deze nieuwe groep gekozen sjabloon is dus de `Reference Group`.
+Deze groep kan worden gemaakt omdat de sitestructuur voor engaging de functie van een groep bevat. De configuratie van de functie in de site `Reference Template` staat standaard de selectie van een ingeschakelde groepssjabloon toe. De voor deze nieuwe groep gekozen sjabloon is dus de `Reference Group`.
 
 Deze consoles zijn gelijkaardig aan de console van Plaatsen van Gemeenschappen.
 

@@ -1,29 +1,29 @@
 ---
 title: AEM Communities - Overzicht
-description: Een overzicht van AEM Communities-functies en -instellingen
+description: Leer meer over de basisbeginselen van de functies en instellingen van Adobe Experience Manager Communities.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: administering
 content-type: reference
 docset: aem65
 exl-id: d6243dff-a067-455c-a326-5f451f225efd
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1265'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
 
 # AEM Communities - Overzicht {#aem-communities-overview}
 
-Adobe Experience Manager (AEM) Community&#39;s bieden de mogelijkheid om snel een lokale community-site te maken die de prestaties verbetert, het sitebeheer verbetert en de conversie van sitebezoekers naar waardevolle leden van de community aanmoedigt.
+Met de gemeenschappen van Adobe Experience Manager (AEM) kunt u snel een lokale community-site maken die de prestaties verbetert, het sitebeheer verbetert en de conversie van sitebezoekers naar waardevolle leden van de community aanmoedigt.
 
 ## Functies van Gemeenschappen {#communities-features}
 
 AEM Communities maakt de ontwikkeling mogelijk van een relatie met bezoekers van de site, die:
 
 * **Informs** via blogs, vragen en antwoorden en gebeurtenissencalenders,
-* while **inzichten opdoen** door forums, commentaren, en andere communautaire inhoud, die vaak als gebruiker-geproduceerde inhoud (UGC) wordt bedoeld.
+* while **inzichten ophalen** door forums, commentaren, en andere communautaire inhoud, die vaak als gebruiker-geproduceerde inhoud (UGC) wordt bedoeld.
 * Het staat **matiging** door vertrouwde leden in de publicatieomgeving,
 * **Sociale aanmelding** met Twitter en Facebook,
 * **Inline-omzetting** van communautaire inhoud,
@@ -33,7 +33,7 @@ AEM Communities maakt de ontwikkeling mogelijk van een relatie met bezoekers van
 * **Meldingen** en **activiteitsstromen**,
 * Toestaan **labelen** (@vermeld) andere geregistreerde leden in Gebruiker-Gegenereerde Inhoud, om hun aandacht te vestigen.
 
-De kenmerken van de Gemeenschappen kunnen worden aangetoond met behulp van de [AEM demo-machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) beschikbaar openbaar op GitHub.com of met de nieuwe Wij.Retail verwijzingsimplementatie.
+De kenmerken van de Gemeenschappen kunnen met behulp van [AEM demo-machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) beschikbaar voor het publiek op GitHub.com of met de nieuwe `We.Retail` referentie-uitvoering.
 
 ## Communitysites {#community-sites}
 
@@ -54,22 +54,22 @@ De [wizard voor het maken van sites](/help/communities/sites-console.md):
 
 * Biedt essentiële functies:
 
-   * Responsief ontwerp: gebruik [Twitter-thema&#39;s voor Bootstrap](https://getbootstrap.com)
+   * Responsief ontwerp: gebruik [Thema&#39;s voor Bootstrap twitters](https://getbootstrap.com)
 
    * Aanmelden: zelfregistratie, [sociale aanmelding](/help/communities/social-login.md), gebruikersprofielen
 
-      * Meldingen: leden zien gebeurtenissen die voor hen relevant zijn, en door gebruikers gegenereerde inhoud waar zij zijn [@referred](/help/communities/overview.md#mentionssupport).
+      * Meldingen: leden zien gebeurtenissen die voor hen van belang zijn, en door gebruikers gegenereerde inhoud waar ze zijn [@referred](/help/communities/overview.md#mentionssupport).
 
-      * Berichten: leden kunnen berichten verzenden of ontvangen binnen de site van de gemeenschap .
-      * Zoeken: de mogelijkheid om te zoeken op de site van de community.
-      * Taalomschakeling: de mogelijkheid om een taal te selecteren voor een [meertalige site](/help/sites-administering/translation.md).
+      * Berichten: leden kunnen berichten verzenden of ontvangen binnen de communitysite.
+      * Zoeken: zoekmogelijkheden op de site van de community.
+      * Taalomschakeling: mogelijkheid om een taal voor een [meertalige site](/help/sites-administering/translation.md).
 
-      * Beheer: toegang voor geautoriseerde leden tot de gematigde en beheerde gebruikers op de communautaire site .
+      * Beheer: toegang voor geautoriseerde leden tot gematigde en beheerde gebruikers binnen de site van de gemeenschap.
 
 * Hiermee verwijdert u veel ontwerpstappen op paginaniveau:
 
    * Branding: optionele upload van een bannerafbeelding voor weergave op alle pagina&#39;s van de gemeenschapssite
-   * Navigatiemenu: er zijn navigatiekoppelingen beschikbaar voor de functies die zijn opgenomen in het sjabloon voor de communautaire site .
+   * Navigatiemenu: er zijn navigatiekoppelingen beschikbaar voor de functies die zijn opgenomen in de sjabloon voor de communautaire site.
 
 Ga naar [Aan de slag met AEM Communities](/help/communities/getting-started.md).
 
@@ -98,18 +98,18 @@ In de auteursomgeving biedt de globale navigatieconsole toegang tot de [Communit
 
 * [Moderatie](/help/communities/moderation.md) console
 
-   * Algemene bulkmoderatie UI voor auteur en publicatiemilieu&#39;s.
+   * Gemeenschappelijke bulkmoderatie UI voor Auteur en Publish milieu&#39;s.
    * Nieuwe filtercriteria.
 
 * [Leden en groepen](/help/communities/members.md) beheerconsoles
 
-   * Biedt de mogelijkheid om gebruikers aan de publicatiezijde (leden) te maken en te beheren vanuit de auteursomgeving.
-   * Biedt de mogelijkheid om leden te verbieden.
-   * Verstrekt de capaciteit om te creëren en te leiden publiceer-zij gebruikersgroepen (lidgroepen) van het auteursmilieu.
+   * Hiermee kunt u gebruikers (leden) aan de publicatiezijde maken en beheren vanuit de ontwerpomgeving.
+   * Hiermee kunt u leden verbieden.
+   * Hiermee kunt u gebruikersgroepen (lidgroepen) aan de serverzijde maken en beheren.
 
 * [Rapporten](/help/communities/reports.md) console
 
-   * Verstrekt de capaciteit om rapporten over taken, posten en meningen te produceren.
+   * Hiermee kunt u rapporten genereren over toewijzingen, posten en weergaven.
 
 De globale hulpmiddelenconsole verleent toegang tot de volgende hulpmiddelen van Gemeenschappen:
 
@@ -133,11 +133,11 @@ De globale hulpmiddelenconsole verleent toegang tot de volgende hulpmiddelen van
 
    * een voorbeeldsite; [Community-componenten](https://localhost:4502/editor.html/content/community-components/en.html) verstrekt een steekproef van alle componenten van Gemeenschappen met hun standaardconfiguratie en de capaciteit om met hen te experimenteren.
 
-## Sjablonen voor communautaire sites {#community-site-templates}
+## Sjablonen voor community-sites {#community-site-templates}
 
 De creatie van de communautaire plaats is gebaseerd op selectie van een malplaatje van de communautaire plaats om snel een communautaire plaats te vestigen die van om het even welke steekproefplaats onafhankelijk is.
 
-Een communitysitesjabloon, dat bestaat uit communityfuncties en communitygroepssjablonen, biedt de structuur voor een communitysite, zoals aanmeldingsgegevens, gebruikersprofielen, berichten, berichten, het menu van de site, zoeken, thema&#39;s en brandingfuncties.
+Een communitysitesjabloon, dat bestaat uit communityfuncties en communitygroepssjablonen, biedt de structuur voor een communitysite. Het omvat login, gebruikersprofielen, overseinen, plaatsmenu, onderzoek, thema, en branding eigenschappen.
 
 Zie de [Sitesjabloonconsole](/help/communities/sites.md).
 
@@ -160,8 +160,8 @@ Voor het maken van een community-groep moet u een community-groepssjabloon selec
 Zie ook:
 
 * [Sitegroepen, console](/help/communities/groups.md) voor het maken van subgemeenschappen in de auteursomgeving.
-* [Groep sjablonen, console](/help/communities/tools-groups.md) voor het maken van een sitestructuur voor groepen.
-* [Aan de slag met AEM Communities](/help/communities/getting-started.md) voor zelfstudie voor het snel maken van een community-site met geneste groepen.
+* [Groep sjablonen, console](/help/communities/tools-groups.md) voor het maken van sitestructuren voor groepen.
+* [Aan de slag met AEM Communities](/help/communities/getting-started.md) voor zelfstudie waarmee u snel een site van een community kunt maken, met inbegrip van geneste groepen.
 
 ## Community-componenten {#community-components}
 
@@ -195,7 +195,7 @@ Ga voor het gemak om snel een betrokkenheidsgemeenschap te maken naar [Aan de sl
 
 ## AEM demo-machine {#aem-demo-machine}
 
-De [AEM demo-machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) beheert en voert demo&#39;s voor AEM uit [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Activa](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Gemeenschappen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) en [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), waarvoor vaak meer instellingen nodig zijn dan het starten van een QuickStart-instantie. De AEM Demo Machine zal extra [infrastructuur](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) zoals MongoDB-, Solr-, MySQL-, MPEG- en e-mailservers.
+De [AEM demo-machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) beheert en voert demo&#39;s voor AEM uit [Sites](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Activa](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Gemeenschappen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) en [Forms](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms), waarvoor vaak meer instellingen nodig zijn dan het starten van een QuickStart-instantie. De AEM demomachemachine stelt extra [infrastructuur](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) zoals MongoDB-, Solr-, MySQL-, MPEG- en e-mailservers.
 
 De AEM demomodus omvat:
 
@@ -204,7 +204,7 @@ De AEM demomodus omvat:
 
 * Te installeren pakketten.
 
-De AEM Demo-machine is getest met succes met CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 en AEM 6.4 op Windows, MacOS en Linux®.
+De AEM Demo-machine is getest met succes met CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2, AEM 6.3 en AEM 6.4 op Windows, macOS en Linux®.
 
 Voor AEM demo-machine is een geldige AEM vereist.
 
@@ -214,7 +214,7 @@ Voor AEM demo-machine is een geldige AEM vereist.
 
 ## AEM Communities-documentatie {#aem-communities-documentation}
 
-* Bezoek [Gemeenschappen inzetten](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
-* Bezoek [Communitysites beheren](administer-landing.md) om over het creëren van een communautaire plaats te leren, toevoegend communautaire groepen, vormend de malplaatjes van de communautaire plaats, het modereren van communautaire inhoud, het beheren van leden, het etiketteren, berichten, het scoren, en badges.
-* Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het raamwerk voor sociale componenten (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
-* Bezoek [Componenten van Gemeenschappen ontwerpen](author-communities.md) om te leren om met te schrijven en de componenten van de Gemeenschappen te vormen.
+* Bezoek [Gemeenschappen inzetten](deploy-communities.md) waar u over geadviseerde plaatsingen kunt leren.
+* Bezoek [Communitysites beheren](administer-landing.md) waar u kunt leren over het creëren van een communautaire plaats, het toevoegen van communautaire groepen, het vormen van de malplaatjes van de communautaire plaats, het modereren van communautaire inhoud, het beheren van leden, het etiketteren, berichten, het scoren, en badges.
+* Bezoek [Ontwikkelingsgemeenschappen](communities.md) waar u over het sociale componentenkader (SCF) en het aanpassen van de componenten en de eigenschappen van de Gemeenschappen kunt leren.
+* Bezoek [Componenten van Gemeenschappen ontwerpen](author-communities.md) waar u kunt leren om met te schrijven en de componenten van de Gemeenschappen te vormen.

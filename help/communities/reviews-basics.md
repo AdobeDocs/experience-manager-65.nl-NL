@@ -1,29 +1,25 @@
 ---
 title: Essentiële elementen van revisies
-seo-title: Reviews Essentials
-description: Samenvattingscomponenten van revisies en revisies
-seo-description: Reviews and Review Summary components
-uuid: 540c106e-ee3b-4261-82b2-a909d254dbf7
+description: Leer hoe Revisies in AEM Communities een samengesteld onderdeel zijn op basis van een opmerkingensysteem dat een of meer beoordelingscomponenten (tellingen) bevat.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 62669a9d-2107-4644-a4bf-143d0ac148b3
 exl-id: 91e0e245-a2f1-4bd7-b38f-7641fd94a547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
 
 # Essentiële elementen van revisies {#reviews-essentials}
 
-Deze functie bestaat uit twee componenten die samenwerken: Overzicht van beoordelingen en beoordelingen bekijken.
+Deze functie bestaat uit twee componenten die samenwerken: revisies en overzichtssamenvatting.
 
 Revisies is een samengesteld onderdeel op basis van een [opmerkingssysteem](essentials-comments.md) die een of meer [beoordeling](rating-basics.md) (tally) componenten.
 
-Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten zich registreren en aanmelden om een revisie toe te voegen. De ondertekende bezoeker (lid) kan zijn beoordeling op elk ogenblik bijwerken.
+Anonieme terbeschikkingstelling van een revisie wordt niet ondersteund. Sitebezoekers moeten zich registreren en aanmelden om een revisie toe te voegen. De ondertekende bezoeker (lid) kan zijn beoordeling op elk ogenblik bijwerken.
 
 ## Essentiële elementen voor client-kant {#essentials-for-client-side}
 
@@ -72,9 +68,9 @@ Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [API voor revisie](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
+* [API voor revisie](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/api/package-summary.html)
 
-* [Eindpunten controleren](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
+* [Eindpunten controleren](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/review/client/endpoints/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
@@ -83,13 +79,13 @@ Anonieme publicatie van een revisie wordt niet ondersteund. Sitebezoekers moeten
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.
 Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1. [gemeenschappelijk archief](working-with-srp.md) voor UGC omvat programmatic toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP, of JSRP).
 
 **De locatie en de indeling van de UGC in de opslagplaats kunnen zonder waarschuwing worden gewijzigd**.
 
 Zie:
 
 * [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van de opslagplaats.
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
-* [SocialUtils Refactoring](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.
+* [Refactoring voor sociale hulpmiddelen](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.

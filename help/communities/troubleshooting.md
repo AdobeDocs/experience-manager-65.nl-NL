@@ -1,14 +1,14 @@
 ---
 title: Probleemoplossing in de Gemeenschap
-description: De Gemeenschap van het oplossen van problemen met inbegrip van Bekende Kwesties
+description: Meer informatie over het oplossen van problemen in de community, inclusief bekende problemen en problemen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: ef4f4108-c485-4e2e-a58f-ff64eee9937e
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ Deze sectie bevat gemeenschappelijke zorgen en bekende kwesties wanneer het oplo
 
 ## Bekende problemen {#known-issues}
 
-### Terugzetfout verzender mislukt {#dispatcher-refetch-fails}
+### Terugzetfout van verzender mislukt {#dispatcher-refetch-fails}
 
 Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat op de time-out van het verzoek is gewacht.
 
-Dit probleem wordt opgelost door Dispatcher 4.1.6 of hoger te gebruiken.
+Het gebruik van Dispatcher 4.1.6 of hoger verhelpt dit probleem.
 
-### Kan de Post van het Forum na Bevordering van CQ 5.4 niet openen {#cannot-access-forum-post-after-upgrading-from-cq}
+### Kan de Post van het Forum na Bevordering van CQ 5.4 niet toegang hebben {#cannot-access-forum-post-after-upgrading-from-cq}
 
 Als een forum op CQ 5.4 en geposte onderwerpen werd gecreeerd, en toen de plaats aan AEM 5.6.1 of later werd bevorderd, kan het proberen om de bestaande posten te bekijken in een fout op de pagina resulteren:
 
@@ -45,13 +45,13 @@ Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 * Van: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Aan: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
-De fout is anders bij auteur en publiceren. Op auteur, ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij publicatie wordt de fout op de pagina gegenereerd.
+De fout is anders bij Auteur en Publiceren. Op Auteur, ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij Publiceren wordt de fout op de pagina gegenereerd.
 
 Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
-## Algemene problemen {#common-concerns}
+## Vaak voorkomende problemen {#common-concerns}
 
-### Waarschuwing bij logbestanden: Afgekeurde kleurenbalken {#warning-in-logs-handlebars-deprecated}
+### Waarschuwing bij logbestanden: afgekeurde handgrepen {#warning-in-logs-handlebars-deprecated}
 
 Tijdens het opstarten (niet de eerste - maar elke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
 
@@ -59,7 +59,7 @@ Tijdens het opstarten (niet de eerste - maar elke daarna) kan de volgende waarsc
 
 Deze waarschuwing kan veilig worden genegeerd als `jknack.handlebars.Handlebars`, gebruikt door [SCF](scf.md#handlebarsjavascripttemplatinglanguage), wordt geleverd met een eigen i18n helper-hulpprogramma. Bij het opstarten wordt deze vervangen door een AEM [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
-### Waarschuwing bij logbestanden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
+### Waarschuwing bij aanmelden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
 Het posten van verscheidene het forumonderwerpen van de Sociale Gemeenschappen kan in enorme hoeveelheden waarschuwing en informatielogboeken van OakResourceListener processOsgiEventQueue resulteren.
 
@@ -76,7 +76,7 @@ Deze waarschuwingen kunnen veilig worden genegeerd.
 
 ### Fout in logbestanden: NoClassDefFoundError voor IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Als u AEM 5.6.1 GA upgradet naar de nieuwste cq-socialecommunes-pkg-1.4.x of naar AEM 6.0, resulteert dit in fouten in het logbestand tijdens het opstarten voor een aandoening die zichzelf zal verhelpen, zoals blijkt uit de fout die niet wordt gezien bij het opnieuw opstarten.
+Als u AEM 5.6.1 upgradet naar de nieuwste cq-socialcommunity-pkg-1.4.x of naar AEM 6.0, resulteert dit in fouten in het logbestand. Dit komt tijdens opstarten voor een voorwaarde voor die zich zoals aangetoond door de fout oplost die niet bij nieuw begin wordt gezien.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException

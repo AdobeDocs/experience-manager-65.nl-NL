@@ -1,29 +1,25 @@
 ---
 title: Aanpassing op de server
-seo-title: Server-side Customization
-description: Server-kant aanpassen in AEM Communities
-seo-description: Customizing server-side in AEM Communities
-uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
+description: Leer hoe server-zijaanpassingen in de Gemeenschappen van Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 exl-id: 190735bc-1909-4b92-ba4f-a221c0cd5be7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '886'
 ht-degree: 0%
 
 ---
 
 # Aanpassing op de server {#server-side-customization}
 
-| **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan clientzijde☐](client-customize.md)** |
+| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan client-side bezig](client-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
 
-## Java API&#39;s {#java-apis}
+## Java™ API&#39;s {#java-apis}
 
 >[!NOTE]
 >
@@ -31,7 +27,7 @@ ht-degree: 0%
 
 ### Interface van SocialComponent {#socialcomponent-interface}
 
-Sociale componenten zijn POJO&#39;s die een bron voor een AEM Communities-functie vertegenwoordigen. Idealiter vertegenwoordigt elke SocialComponent een specifiek resourceType met blootgestelde GETters die gegevens aan de cliënt verstrekken zodat wordt het middel nauwkeurig vertegenwoordigd. Alle bedrijfslogica en meningslogica wordt ingekapseld in SocialComponent, met inbegrip van de zittingsinformatie van de plaatsbezoeker, indien nodig.
+Sociale componenten zijn POJO&#39;s die een bron voor een AEM Communities-functie vertegenwoordigen. Idealiter vertegenwoordigt elke SocialComponent een specifiek resourceType met blootgestelde GETters die gegevens aan de cliënt verstrekken zodat wordt het middel nauwkeurig vertegenwoordigd. Alle bedrijfslogica en weergavelogica worden ingekapseld in de sociale component, inclusief de sessiegegevens van de bezoeker van de site, indien nodig.
 
 De interface bepaalt een basisreeks GETters die noodzakelijk zijn om een middel te vertegenwoordigen. Belangrijk, bepaalt de interface Kaart&lt;string object=&quot;&quot;> getAsMap() en String toJSONString() methoden die nodig zijn om Handlebars-sjablonen te renderen en GET JSON-eindpunten voor bronnen beschikbaar te maken.
 
@@ -53,11 +49,11 @@ Een SocialComponentFactory is de dienst OSGi en heeft toegang tot andere dienste
 
 Alle klassen SocialComponentFactory moeten de interface implementeren `com.adobe.cq.social.scf.SocialComponentFactory`
 
-Een implementatie van de methode SocialComponentFactory.getPriority() moet de hoogste waarde retourneren voordat de factory voor het opgegeven resourceType wordt gebruikt, zoals geretourneerd door getResourceType().
+Een implementatie van de methode SocialComponentFactory.getPriority() moet de hoogste waarde retourneren voor de factory die voor het opgegeven resourceType moet worden gebruikt, zoals geretourneerd door getResourceType().
 
 ### SocialComponentFactoryManager-interface {#socialcomponentfactorymanager-interface}
 
-De SocialComponentFactoryManager (manager) beheert alle sociale componenten die bij het framework zijn geregistreerd en is verantwoordelijk voor het selecteren van de SocialComponentFactory die voor een bepaalde resource (resourceType) moet worden gebruikt. Als geen fabrieken voor een specifieke resourceType worden geregistreerd, zal de manager een fabriek met het meest dichtbijgelegen super type voor de bepaalde middel terugkeren.
+De SocialComponentFactoryManager (manager) beheert alle sociale componenten die bij het framework zijn geregistreerd en is verantwoordelijk voor het selecteren van de SocialComponentFactory die voor een bepaalde resource (resourceType) moet worden gebruikt. Als er geen fabrieken zijn geregistreerd voor een specifiek resourceType, retourneert de manager een fabriek met het dichtstbijzijnde supertype voor de opgegeven resource.
 
 Een SocialComponentFactoryManager is de dienst OSGi en heeft toegang tot andere diensten OSGi die tot SocialComponent door een aannemer kunnen worden overgegaan.
 
@@ -67,17 +63,17 @@ Een handgreep van de OSGi-dienst wordt verkregen door een beroep te doen op `com
 
 #### PostOperation-klasse {#postoperation-class}
 
-De eindpunten van de HTTP API-POST zijn PostOperation-klassen die worden gedefinieerd door de implementatie van de `SlingPostOperation` interface (pakket `org.apache.sling.servlets.post`).
+De eindpunten van de HTTP API-POST zijn PostOperation-klassen die worden gedefinieerd door de implementatie van de `SlingPostOperation` interface (pakket) `org.apache.sling.servlets.post`).
 
-De `PostOperation` eindpuntimplementatiesets `sling.post.operation` op een waarde waarop de bewerking zal reageren. Alle verzoeken van de POST met een:parameter van de verrichting die aan die waarde wordt geplaatst zullen aan deze implementatieklasse worden gedelegeerd.
+De `PostOperation` eindpuntimplementatiesets `sling.post.operation` op een waarde waarop de bewerking reageert. Alle POST-aanvragen waarvoor een parameter:operation is ingesteld op die waarde, worden gedelegeerd aan deze implementatieklasse.
 
 De `PostOperation` roept de `SocialOperation` die de voor de bewerking vereiste handelingen uitvoert.
 
 De `PostOperation` ontvangt het resultaat van de `SocialOperation` en retourneert de juiste reactie op de client.
 
-#### Klasse SocialOperation {#socialoperation-class}
+#### SocialOperation-klasse {#socialoperation-class}
 
-Elk `SocialOperation` Het eindpunt breidt de klasse AbstractSocialOperation uit en treedt de methode met voeten `performOperation()`. Deze methode voert alle handelingen uit die nodig zijn om de bewerking te voltooien en een `SocialOperationResult` of anders een `OperationException`, in welk geval een HTTP-foutstatus met een bericht wordt geretourneerd, indien beschikbaar, in plaats van de normale JSON-respons of HTTP-successtatuscode.
+Elk `SocialOperation` Het eindpunt breidt de klasse AbstractSocialOperation uit en treedt de methode met voeten `performOperation()`. Deze methode voert alle handelingen uit die nodig zijn om de bewerking te voltooien en een `SocialOperationResult` of anders een `OperationException`. In dat geval wordt een HTTP-foutstatus met een bericht geretourneerd, indien beschikbaar, in plaats van de normale JSON-respons of HTTP-successtatuscode.
 
 Uitbreiden `AbstractSocialOperation` de mogelijkheid biedt om `SocialComponents` om JSON-reacties te verzenden.
 
@@ -87,7 +83,7 @@ De `SocialOperationResult` wordt geretourneerd als het resultaat van de `SocialO
 
 De `SocialComponent` vertegenwoordigt de bron die door de bewerking is beïnvloed.
 
-Voor een bewerking Maken `SocialComponent` opgenomen in de `SocialOperationResult` vertegenwoordigt het middel enkel gecreeerd en voor een verrichting van de Update, vertegenwoordigt het het middel dat door de verrichting werd veranderd. Nee `SocialComponent` wordt geretourneerd voor een verwijderbewerking.
+Voor een bewerking Maken `SocialComponent` opgenomen in de `SocialOperationResult` vertegenwoordigt het middel en voor een verrichting van de Update, vertegenwoordigt het het middel dat door de verrichting werd veranderd. Nee `SocialComponent` wordt geretourneerd voor een verwijderbewerking.
 
 De gebruikte HTTP-statuscodes voor succes zijn:
 
@@ -97,7 +93,7 @@ De gebruikte HTTP-statuscodes voor succes zijn:
 
 #### OperationException, klasse {#operationexception-class}
 
-An `OperationExcepton` kan worden gegenereerd wanneer een bewerking wordt uitgevoerd als de aanvraag ongeldig is of als er zich een andere fout voordoet, zoals interne fouten, onjuiste parameterwaarden, onjuiste machtigingen, enz. An `OperationException` bestaat uit een HTTP-statuscode en een foutbericht die aan de client worden geretourneerd als reactie op de `PostOperatoin`.
+An `OperationExcepton` wordt gegenereerd wanneer een bewerking wordt uitgevoerd als de aanvraag ongeldig is of als er een andere fout optreedt. Interne fouten, onjuiste parameterwaarden of onjuiste machtigingen. An `OperationException` bestaat uit een HTTP-statuscode en een foutbericht die aan de client worden geretourneerd als reactie op de `PostOperatoin`.
 
 #### OperationService-klasse {#operationservice-class}
 
@@ -107,25 +103,25 @@ Alles `OperationService` klassen uitbreiden `AbstractOperationService`, waardoor
 
 * `performBeforeActions()`
 
-   Voorcontroles/voorbewerking en validaties zijn toegestaan
+  Voorcontroles/voorbewerking en validaties zijn toegestaan
 * `performAfterActions()`
 
-   Staat voor verdere wijziging van middelen toe of het aanhalen van douanegebeurtenissen, werkschema&#39;s, enz.
+  Hiermee kunt u bronnen verder bewerken of aangepaste gebeurtenissen, workflows enzovoort aanroepen.
 
 #### OperationExtension-klasse {#operationextension-class}
 
-`OperationExtension` de klassen zijn douanestukken van code die in een verrichting kunnen worden ingespoten die voor aanpassing van verrichtingen toestaat om aan bedrijfsbehoeften te voldoen. De consumenten van de component kunnen dynamisch en oplopend functionaliteit toevoegen aan de component. Met het extensie-/haakpatroon kunnen ontwikkelaars zich uitsluitend richten op de extensies zelf. Bovendien is het overbodig om volledige bewerkingen en componenten te kopiëren en te overschrijven.
+De `OperationExtension` de klassen zijn douanestukken van code die in een verrichting kunnen worden ingespoten die voor aanpassing van verrichtingen toestaat om aan bedrijfsbehoeften te voldoen. De consumenten van de component kunnen dynamisch en oplopend functionaliteit toevoegen aan de component. Met het extensie-/haakpatroon kunnen ontwikkelaars zich uitsluitend richten op de extensies zelf. Bovendien is het overbodig om volledige bewerkingen en componenten te kopiëren en te overschrijven.
 
 ## Voorbeeldcode {#sample-code}
 
-Voorbeeldcode is beschikbaar in het dialoogvenster [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) opslagplaats. Zoeken naar projecten met `aem-communities` of `aem-scf`.
+Voorbeeldcode is beschikbaar in het dialoogvenster [Adobe Experience Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) opslagplaats. Zoeken naar projecten met `aem-communities` of `aem-scf`.
 
 ## Best practices voor {#best-practices}
 
-De weergave van [Codeerrichtlijnen](code-guide.md) voor verschillende coderingsrichtlijnen en aanbevolen procedures voor AEM Communities-ontwikkelaars.
+De weergave [Codeerrichtlijnen](code-guide.md) voor verschillende coderingsrichtlijnen en aanbevolen procedures voor AEM Communities-ontwikkelaars.
 
 Zie ook [Storage Resource Provider (SRP) voor UGC](srp.md) voor meer informatie over het benaderen van door de gebruiker gegenereerde inhoud.
 
-| **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan clientzijde☐](client-customize.md)** |
+| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan client-side bezig](client-customize.md)** |
 |---|---|
-|  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
+|   | **[SCF Handlebars Helpers](handlebars-helpers.md)** |

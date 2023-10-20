@@ -1,18 +1,14 @@
 ---
 title: Eerste instelling
-seo-title: Initial Setup
-description: Oprichting van Gemeenschappen
-seo-description: Setting up Communities
-uuid: c53d280c-c5ae-47cf-8038-f0dea68e15ff
+description: Leer hoe u eerst Adobe Experience Manager Communities instelt.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 0d462ad1-5619-4bb6-9609-bc8987c40a0c
 exl-id: 6bda0f09-7ae5-4540-b035-9dd249ac3186
-source-git-commit: 942db8fe3dad16be53dc6abe0e519d97a659e480
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '665'
 ht-degree: 0%
 
 ---
@@ -21,21 +17,21 @@ ht-degree: 0%
 
 ## Auteur- en publicatie-instanties starten {#start-author-and-publish-instances}
 
-Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één publicatieexemplaar uit te voeren.
+Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één publicatie-instantie uit te voeren.
 
-Volg hiervoor de AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies, die resulteren in:
+Volg hiervoor de basis-Adobe Experience Manager (AEM) [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies die het volgende opleveren:
 
 * Auteursomgeving op [localhost:4502](http://localhost:4502/)
 * Publicatie-omgeving op [localhost:4503](http://localhost:4503/)
 
 Voor AEM Communities:
 
-* De auteursomgeving is voor:
+* De auteur-omgeving is bedoeld voor:
 
    * Ontwikkeling van sites, sjablonen en componenten.
    * Administratieve en configuratietaken.
 
-* De publicatieomgeving is bedoeld voor:
+* De publicatie-omgeving is bedoeld voor:
 
    * De ervaring van de gemeenschap met het plaatsen en moderniseren van inhoud.
    * Creëren van groepen van gemeenschappen, leden en leden.
@@ -54,7 +50,7 @@ Ga voor de installatie van het nieuwste functiepakket naar:
 
 ## Analyses configureren {#configure-analytics}
 
-Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md)Er is informatie beschikbaar over de activiteiten van de community die de ervaring van het lid van de community verbetert en feedback geeft aan beheerders van de site.
+Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md)Er is informatie beschikbaar over de activiteiten van de community die de ervaring van het lid van de community vergroot en feedback geeft aan beheerders van de site.
 
 Integratie met Adobe Analytics is optioneel.
 
@@ -68,11 +64,11 @@ Zie [E-mail configureren](email.md).
 
 ## De tunnelservice inschakelen {#enable-the-tunnel-service}
 
-Wanneer het creëren van een communautaire plaats in het auteursmilieu, maakt de tunneldienst de capaciteit mogelijk om rollen aan vertrouwde op communautaire leden toe te wijzen die in het publicatiemilieu worden geregistreerd. De tunneldienst verleent ook toegang aan leden van de gemeenschap van de [Samenstellingen van leden en groepen](members.md) in de ontwerpomgeving.
+Wanneer het creëren van een communautaire plaats in het milieu van de Auteur, maakt de tunneldienst de capaciteit mogelijk om rollen aan vertrouwde op communautaire leden toe te wijzen die in het Publish milieu worden geregistreerd. De tunneldienst verleent ook toegang aan leden van de gemeenschap van de [Samenstellingen van leden en groepen](members.md) in de ontwerpomgeving.
 
-De conventie bepaalt dat leden en ledengroepen die in de publicatieomgeving zijn gemaakt *niet* opnieuw worden gemaakt in de auteursomgeving. Zie voor meer informatie [Gebruikers en gebruikersgroepen beheren](users.md).
+De conventie is voor leden en ledengroepen die in de publicatieomgeving zijn gemaakt, *niet* opnieuw worden gemaakt in de auteursomgeving. Zie voor meer informatie [Gebruikers en gebruikersgroepen beheren](users.md).
 
-Voor eenvoudige instructies om de tunneldienst op een **auteur** -instantie, zie [Tunnelservice](deploy-communities.md#tunnel-service-on-author).
+Voor eenvoudige instructies om de tunneldienst op een **Auteur** -instantie, zie [Tunnelservice](deploy-communities.md#tunnel-service-on-author).
 
 ## Rol van communautaire beheerder {#community-administrator-role}
 
@@ -96,7 +92,7 @@ Een gebruiker maken op *auteur*, die de rol van communautaire administrateur kri
 * In de `Create New User` dialoogvenster openen:
 
    * **[!UICONTROL ID]**: sirius
-   * **[!UICONTROL Emai Address]**: sirius.nilson@mailinator.com
+   * **[!UICONTROL Email Address]**: sirius.nilson@mailinator.com
    * **[!UICONTROL Password]**: password
    * **[!UICONTROL Confirm Password&ast;]**: password
    * **[!UICONTROL First Name]**: Sirius
@@ -113,11 +109,11 @@ Omlaag schuiven naar `Add User to Groups`:
 
 * Selecteer **[!UICONTROL Save]**.
 
-![aanmaken-gebruiker](assets/create-user.png)
+![aanmaken](assets/create-user.png)
 
 ## Sociale aanmelding inschakelen {#enable-social-login}
 
-Voordat de demonstratieversies van de sociale aanmelding bij Facebook en Twitter kunnen worden gebruikt, moet
+Voordat de demonstratieversies van de aanmelding bij Facebook en de Twitter kunnen worden gebruikt, moet
 
 1. Installeer een fixpack of [nieuwste functiepakket](deploy-communities.md#latestfeaturepack) (voor wijzigingen in de Facebook API van maart 2017).
 1. [De OAuth-provider inschakelen](social-login.md#adobe-granite-oauth-authentication-handler) in de publicatieomgeving.
@@ -128,7 +124,7 @@ Zie [Sociale aanmelding met Facebook en Twitter](social-login.md).
 
 ## Zelfstudietags maken {#create-tutorial-tags}
 
-Tags maken die u wilt gebruiken voor de instructiezelfstudies, met de naamruimte tag van `Tutorial`.
+Tags maken, zodat u deze kunt gebruiken voor zelfstudies voor deelname met behulp van de naamruimte tag van `Tutorial`.
 
 Gebruik de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) om de volgende labels te maken:
 
@@ -146,13 +142,13 @@ Volg vervolgens de instructies op:
 1. [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions).
 1. [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags).
 
-Voorbeeld van pakket met tags die zijn gemaakt voor de Tutorials Aan de slag van AEM Communities
+Voorbeeldpakket met tags gemaakt voor de Tutorials Aan de slag van AEM Communities
 
 [Bestand ophalen](assets/tutorial_tags-v63.zip)
 
 ## MongoDB voor UGC Common Store {#mongodb-for-ugc-common-store}
 
-U kunt het beste, maar optioneel, instellen [MSRP](msrp.md) (MongoDB) als de [gemeenschappelijk archief](working-with-srp.md) om de flexibiliteit te ervaren van het moderniseren van al UGC van of publiceren en/of auteursmilieu&#39;s.
+U kunt het beste, maar optioneel, instellen [MSRP](msrp.md) (MongoDB) [gemeenschappelijk archief](working-with-srp.md) om de flexibiliteit te ervaren van het moderniseren van al UGC van of publiceren en/of auteursmilieu&#39;s.
 
 Voor instructies gaat u naar [MongoDB voor demo instellen](demo-mongo.md).
 

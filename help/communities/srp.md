@@ -1,14 +1,14 @@
 ---
 title: Overzicht opslagbronprovider
-description: Gemeenschappelijke opslag voor de Gemeenschappen
+description: Leer hoe de communautaire inhoud, die als gebruiker-geproduceerde inhoud (UGC) wordt bekend, in een eenvoudige, gemeenschappelijke opslag wordt opgeslagen die door een leverancier van opslagmiddelen (SRP) wordt verstrekt.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5f313274-1a2a-4e83-9289-60a4729b99b4
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1125'
+source-wordcount: '1140'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,9 @@ Alle SCF componenten worden uitgevoerd gebruikend SRP API, toestaand code om zon
 
 Zie ook:
 
-* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden.
+* [SRP en UGC Essentials](srp-and-ugc.md) - SRP-gebruiksmethoden en -voorbeelden.
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - Coderingsrichtsnoeren.
-* [SocialUtils Refactoring](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.
+* [Refactoring voor sociale hulpmiddelen](socialutils.md) - Afgekeurde hulpprogrammamethoden worden toegewezen aan de huidige SRP-hulpprogrammamethoden.
 
 ## Informatie over de opslagplaats {#about-the-repository}
 
@@ -49,11 +49,11 @@ Eén implementatie van JCR is de AEM opslagplaats, Oak.
 
 Zowel JCR als Oak worden doorgaans gebruikt om naar de AEM opslagplaats te verwijzen.
 
-Nadat u site-inhoud hebt ontwikkeld in de omgeving van de privéauteur, moet u deze kopiëren naar de openbare publicatieomgeving. Dit gebeurt vaak via een bewerking die *[replicatie](deploy-communities.md#replication-agents-on-author)*. Dit gebeurt onder controle van de auteur/ontwikkelaar/beheerder.
+Nadat u site-inhoud hebt ontwikkeld in de privéontwerpomgeving, moet u deze kopiëren naar de openbare publicatieomgeving. Dit gebeurt vaak via een bewerking die *[replicatie](deploy-communities.md#replication-agents-on-author)*. Dit gebeurt onder controle van de auteur/ontwikkelaar/beheerder.
 
 Voor UGC wordt de inhoud ingevoerd door geregistreerde sitebezoekers (leden van de community) in de publicatieomgeving van het publiek. Dit gebeurt willekeurig.
 
-Voor beheer en rapportage is het nuttig om vanuit de omgeving van de particuliere auteur toegang tot UGC te hebben. Met SRP, is de toegang tot UGC van auteur consistenter en uitvoerender aangezien de omgekeerde replicatie van publiceren aan auteur niet noodzakelijk is.
+Met het oog op beheer en rapportage is het nuttig om vanuit de omgeving van de particuliere auteur toegang tot UGC te hebben. Met SRP, is de toegang tot UGC van Auteur consistenter en uitvoerender aangezien de omgekeerde replicatie van Publish aan Auteur niet noodzakelijk is.
 
 ## SRP {#about-srp}
 
@@ -73,11 +73,11 @@ Zie [ASRP - Adobe Storage Resource Provider](asrp.md).
 
 Ontwikkelaars hebben niet rechtstreeks toegang tot de UGC.
 
-ASRP gebruikt de wolk van Adobe voor vragen.
+ASRP gebruikt de wolk van de Adobe voor vragen.
 
 ### MSRP {#msrp}
 
-Als er is, MSRP, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in MongoDB. UGC opgeslagen in MSRP kan niet met CRXDE Lite worden bekeken of worden betreden gebruikend JCR API.
+Als er is, MSRP, wordt UGC niet opgeslagen in JCR, wordt het opgeslagen in MongoDB. UGC die in MSRP wordt opgeslagen kan niet met CRXDE Lite worden bekeken of worden betreden gebruikend JCR API.
 
 Zie [MSRP - MongoDB Storage Resource Provider](msrp.md).
 
@@ -91,9 +91,9 @@ JSRP is de standaardleverancier voor de toegang tot van al UGC op één enkele A
 
 Zie [JSRP - JCR Storage Resource Provider](jsrp.md).
 
-Als er JSRP is, terwijl UGC wordt opgeslagen in JCR en toegankelijk via zowel de CRXDE Lite- als de JCR-API, wordt aanbevolen dat u hiervoor nooit de JCR API gebruikt, anders kunnen toekomstige wijzigingen van invloed zijn op aangepaste code.
+Als er JSRP is terwijl UGC wordt opgeslagen in JCR, en het toegankelijk is in CRXDE Lite en JCR API, adviseert de Adobe dat u nooit JCR API gebruikt om dit te doen. Als u dit doet, kunnen toekomstige wijzigingen van invloed zijn op aangepaste code.
 
-Bovendien wordt de opslagplaats voor de auteur- en publicatieomgevingen niet gedeeld. Hoewel een cluster met publicatie-instanties resulteert in een gedeelde publicatierecorder, is UGC die tijdens publicatie wordt ingevoerd, niet zichtbaar voor de auteur, zodat de auteur de UGC niet kan beheren. UGC blijft alleen behouden in de AEM repository (JCR) van de instantie waarin het werd ingevoerd.
+Bovendien wordt de opslagplaats voor de auteur- en publicatie-omgevingen niet gedeeld. Hoewel een cluster met publicatie-instanties resulteert in een gedeelde publicatieruimte, is UGC die u hebt ingevoerd bij Publiceren niet zichtbaar op Auteur, zodat de UGC niet door de auteur kan worden beheerd. UGC blijft alleen behouden in de AEM repository (JCR) van de instantie waarin het werd ingevoerd.
 
 JSRP gebruikt de indexen van het Eak voor vragen.
 
@@ -104,13 +104,13 @@ Schaduwknooppunten, die het pad naar UGC nabootsen, bestaan in de lokale opslagr
 1. [Toegangsbeheer (ACLs)](#for-access-control-acls)
 1. [Niet-bestaande bronnen (NER&#39;s)](#for-non-existing-resources-ners)
 
-Ongeacht de implementatie SRP, zal daadwerkelijke UGC *not zichtbaar op de zelfde plaats zoals de schaduwknoop zijn.
+Ongeacht de implementatie SRP, is daadwerkelijke UGC *niet* zichtbaar op dezelfde locatie als het schaduwknooppunt.
 
 ### Voor Toegangsbeheer (ACLs) {#for-access-control-acls}
 
 Sommige implementaties SRP, zoals ASRP en MSRP, slaan communautaire inhoud in gegevensbestanden op die geen ACL controle verstrekken. De knopen van de schaduw verstrekken een plaats in de lokale bewaarplaats waarop ACLs kan worden toegepast.
 
-Met de SRP API voeren alle SRP-opties dezelfde controle uit op de schaduwlocatie voorafgaand aan alle CRUD-bewerkingen.
+Met de SRP API voeren alle SRP-opties dezelfde controle uit op de schaduwlocatie vóór alle CRUD-bewerkingen.
 
 De ACL controle gebruikt een nutsmethode die een weg geschikt voor het controleren van de toestemmingen terugkeert die op UGC van het middel worden toegepast.
 
@@ -142,7 +142,7 @@ Er is geen UGC gevonden onder het schaduwknooppunt.
 
 Standaard worden schaduwknooppunten ingesteld op een publicatie-instantie wanneer naar de relevante substructuur wordt verwezen voor lezen of schrijven.
 
-Als voorbeeld, veronderstel dat de plaatsing is [MSRP](msrp.md) met een TarMK-publicatiebedrijf.
+Stel dat de implementatie [MSRP](msrp.md) met een TarMK-publicatiebedrijf.
 
 Wanneer een [lid](users.md) Hiermee wordt UGC op pub1 geplaatst (opgeslagen in MongoDB), worden schaduwknooppunten gemaakt in JCR op pub1.
 

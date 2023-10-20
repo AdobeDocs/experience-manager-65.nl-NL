@@ -1,14 +1,14 @@
 ---
 title: Essentiële zoekopdrachten
-description: Zoeken in gemeenschappen
+description: Meer weten over de zoekfunctie die essentieel is voor AEM Communities? De gemeenschappen verstrekken ook onderzoek API voor gebruiker-geproduceerde inhoud.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 8af5ee58-19d7-47b6-b45d-e88006703a5d
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1170'
+source-wordcount: '1189'
 ht-degree: 0%
 
 ---
@@ -68,11 +68,11 @@ Wanneer u aangepaste eigenschappen maakt die doorzoekbaar zijn, moet u zich aan 
 
 ### JSRP-zoekopdrachten {#jsrp-searches}
 
-Voor [JSRP](jsrp.md), UGC wordt opgeslagen in [Eik](../../help/sites-deploying/platform.md) en is alleen zichtbaar in de gegevensopslagruimte van de AEM auteur of het publicatieexemplaar waarop het is ingevoerd.
+Voor [JSRP](jsrp.md), UGC wordt opgeslagen in [Eik](../../help/sites-deploying/platform.md) en is alleen zichtbaar in de opslagplaats van de AEM Auteur of de instantie Publiceren waarop het is ingevoerd.
 
-Aangezien UGC typisch in het publicatiemilieu, voor multi-uitgeversproductiesystemen is ingegaan, is het noodzakelijk om een [cluster publiceren](topologies.md), niet een publicatiecentrum, zodat de ingevoerde inhoud zichtbaar is voor alle uitgevers.
+Aangezien UGC typisch in het Publish milieu, voor multi-uitgeverproductiesystemen is ingegaan, is het noodzakelijk om een [cluster publiceren](topologies.md), niet een publicatiecentrum, zodat de ingevoerde inhoud zichtbaar is voor alle uitgevers.
 
-Voor JSRP, is UGC ingegaan in het publicatiemilieu nooit zichtbaar in het auteursmilieu. Daarom [matiging](moderate-ugc.md) taken vinden plaats in de publicatieomgeving.
+Voor JSRP, is UGC ingegaan in het Publish milieu nooit zichtbaar in het auteursmilieu. Daarom [matiging](moderate-ugc.md) taken worden uitgevoerd in de publicatieomgeving.
 
 Voor aangepaste zoekfuncties moet u de opdracht [UGC-zoekAPI](#ugc-search-api).
 

@@ -1,41 +1,37 @@
 ---
-title: Auteur van een nieuwe communautaire site
-seo-title: Author a New Community Site
-description: Een nieuwe AEM Communities-site maken
-seo-description: How to author a new AEM Communities site
-uuid: 4f609f5f-ef07-44fc-aeb3-1c616e120d46
+title: Auteur van een communautaire site
+description: Leer hoe u een Adobe Experience Manager Communities-site ontwerpt.
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: introduction
 content-type: reference
-discoiquuid: 8ae324ea-8b84-47a3-aabf-1fee2a3bd46d
 docset: aem65
 exl-id: d4c1895f-421c-4146-b94a-8d11065ef9e3
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '1580'
+source-wordcount: '1557'
 ht-degree: 0%
 
 ---
 
-# Auteur van een nieuwe communautaire site{#author-a-new-community-site}
+# Auteur van een communautaire site{#author-a-new-community-site}
 
 ## Een Community-site maken {#create-a-community-site}
 
-Gebruik de auteur instantie om een communautaire plaats tot stand te brengen. Instantie van AEM-auteur:
+Gebruik de auteur instantie om een communautaire plaats tot stand te brengen. Op AEM instantie Auteur:
 
 1. Meld u aan met beheerdersrechten.
 1. Ga van globale navigatie naar **[!UICONTROL Communities]** > **[!UICONTROL Sites]**.
 
 De console van de Plaatsen van Gemeenschappen verstrekt een tovenaar om door de stappen te begeleiden om een communautaire plaats tot stand te brengen. Het is mogelijk verder te gaan naar de `Next` stap of `Back` naar de vorige stap voordat u de site in de laatste stap toewijst.
 
-Ga als volgt te werk om een nieuwe communitysite te maken:
+Ga als volgt te werk om een communitysite te maken:
 
-* Selecteer `Create` knop.
+* Selecteer de `Create` knop.
 
 ![createcommunitysite](assets/createcommunitysite.png)
 
-### Stap 1: Sitesjabloon {#step-site-template}
+### Stap 1: Sitjabloon {#step-site-template}
 
 ![sjabloon om site te maken](assets/create-site.png)
 
@@ -44,13 +40,13 @@ Op de [Sjabloonstap voor site](/help/communities/sites-console.md#step2013asitet
 * **Titel van gemeenschapssite**: `Getting Started Tutorial`
 * **Beschrijving van community-site**: `A site for engaging with the community.`
 * **Hoofdmap van gemeenschapssite**: (leeg laten voor standaardhoofdmap `/content/sites`)
-* **Cloudconfiguraties**: (leeg laten als er geen cloudconfiguraties zijn opgegeven) het pad naar de opgegeven cloudconfiguraties bieden.
-* **Basis van gemeenschapssite**: (ongewijzigd laten voor één taal: Engels) gebruik de drop-down lijst om één te kiezen *of meer* basistalen uit de beschikbare talen: Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (traditioneel) en Chinees (vereenvoudigd). Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze site bestaat in dezelfde sitemap volgens de in [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
+* **Cloudconfiguraties**: (leeg laten als er geen cloudconfiguraties zijn opgegeven) pad naar de opgegeven wolkenconfiguraties bieden.
+* **Basis van gemeenschapssite**: (niet gewijzigd laten voor één taal: Engels) de vervolgkeuzelijst gebruiken om een taal te kiezen *of meer* basistalen uit de beschikbare talen: Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (traditioneel) en Chinees (vereenvoudigd). Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze bestaat in dezelfde sitemap volgens de in [Inhoud vertalen voor meertalige sites](/help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina die wordt genoemd door de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
 
-* **Naam van communautaire site**: aangaan
+* **Naam van communautaire site**: connect
 
    * Controleer de naam tweemaal omdat deze na het maken van de site niet gemakkelijk kan worden gewijzigd
-   * De eerste URL wordt onder de naam van de communautaire site weergegeven
+   * De eerste URL wordt weergegeven onder de naam van de communautaire site
    * Voeg voor een geldige URL een basistaalcode + &quot;.html&quot; toe
    * *Bijvoorbeeld*, https://localhost:4502/content/sites/ `engage/en.html`
 
@@ -64,7 +60,7 @@ De stap Ontwerp wordt in twee secties weergegeven voor het selecteren van het th
 
 #### COMMUNAUTAIR SITE-THEMA {#community-site-theme}
 
-Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie is geselecteerd, wordt op het thema een vinkje weergegeven.
+Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie is geselecteerd, wordt het thema bedekt met een vinkje.
 
 #### COMMUNAUTAIRE SITOBRANDING {#community-site-branding}
 
@@ -78,7 +74,7 @@ Selecteren **Volgende**.
 
 ### Stap 3: Instellingen {#step-settings}
 
-Selecteer in de stap Instellingen voordat u `Next`, merk op dat er zeven secties zijn die toegang tot configuraties verlenen die gebruikersbeheer, het etiketteren, moderatie, groepsbeheer, analyses, en vertaling impliceren.
+Selecteer in de stap Instellingen voordat u `Next`, zijn er zeven secties die toegang tot configuraties verlenen die gebruikersbeheer, het etiketteren, matiging, groepsbeheer, analyses, en vertaling impliceren.
 
 #### Gebruikersbeheer {#user-management}
 
@@ -88,7 +84,7 @@ Alle selectievakjes inschakelen voor [Gebruikersbeheer](/help/communities/sites-
 * Site-bezoekers toestaan de site weer te geven zonder zich aan te melden
 * Leden toestaan berichten van andere leden van de gemeenschap te verzenden en te ontvangen
 * Aanmelden met Facebook toestaan in plaats van zich te registreren en een profiel te maken
-* Aanmelden met Twitter toestaan in plaats van zich te registreren en een profiel te maken
+* Aanmelden met Twitter toestaan in plaats van een profiel te registreren en te maken
 
 >[!NOTE]
 >
@@ -98,7 +94,7 @@ Alle selectievakjes inschakelen voor [Gebruikersbeheer](/help/communities/sites-
 
 #### TAGS {#tagging}
 
-De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingsconsole](/help/sites-administering/tags.md#tagging-console) (zoals de [Naamruimte voor zelfstudie](/help/communities/setup.md#create-tutorial-tags)).
+De tags die worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via het dialoogvenster [Tagingsconsole](/help/sites-administering/tags.md#tagging-console) (zoals de [Naamruimte voor zelfstudie](/help/communities/setup.md#create-tutorial-tags)).
 
 Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
 
@@ -126,13 +122,13 @@ Bijvoorbeeld,
 
 #### MODERING {#moderation}
 
-Accepteer de standaard algemene instellingen voor [gematigd](/help/communities/sites-console.md#moderation) door de gebruiker gegenereerde inhoud (UGC).
+De algemene standaardinstellingen voor [gematigd](/help/communities/sites-console.md#moderation) door de gebruiker gegenereerde inhoud (UGC).
 
 ![matiging](assets/moderation1.png)
 
-#### ANALYSE {#analytics}
+#### ANALYTICA {#analytics}
 
-Als Adobe Analytics een licentie heeft en er een cloudservice en -framework voor Analytics zijn geconfigureerd, is het mogelijk Analytics in te schakelen en het framework te selecteren.
+Als Adobe Analytics een licentie heeft en er een Analytics Cloud-service en -framework zijn geconfigureerd, is het mogelijk om Analytics in te schakelen en het framework te selecteren.
 
 Zie [Analytische configuratie voor functies van Gemeenschappen](/help/communities/analytics.md).
 
@@ -140,7 +136,7 @@ Zie [Analytische configuratie voor functies van Gemeenschappen](/help/communitie
 
 #### VERTALING {#translation}
 
-De [Vertaalinstellingen](/help/communities/sites-console.md#translation) de basistaal voor de site en of UGC al dan niet kan worden vertaald en in welke taal, indien dat het geval is.
+De [Vertaalinstellingen](/help/communities/sites-console.md#translation) de basistaal voor de site en of UGC kan worden vertaald en in welke taal, indien dat het geval is.
 
 * Controleren **Machinevertaling toestaan**
 * Laat standaardtalen geselecteerd blijven voor vertaling door de standaardvertaalservice voor machines
@@ -151,7 +147,7 @@ De [Vertaalinstellingen](/help/communities/sites-console.md#translation) de basi
 
 ![translatie-instellingen](assets/translation-settings.png)
 
-### Stap 4: Communitysite maken {#step-create-communities-site}
+### Stap 4: Create Communities Site {#step-create-communities-site}
 
 Selecteer **Maken.**
 
@@ -159,7 +155,7 @@ Selecteer **Maken.**
 
 Wanneer het proces is voltooid, wordt de map voor de nieuwe site weergegeven in de console Communities - Sites.
 
-![communautiessitesconsole](assets/communitiessitesconsole.png)
+![communautisesconsole](assets/communitiessitesconsole.png)
 
 ## De Community-site publiceren {#publish-the-community-site}
 
@@ -177,24 +173,23 @@ Van links naar rechts zijn ze:
 
 * **Site openen**
 
-   Selecteer het potloodpictogram om de gemeenschapssite te openen in de modus Bewerken door auteur om paginacomponenten toe te voegen en/of te configureren
+  Als u het potloodpictogram selecteert, wordt de gemeenschapssite geopend in de modus Auteur bewerken, waar u paginacomponenten kunt toevoegen of configureren.
 
 * **Site bewerken**
 
-   Selecteer het eigenschappenpictogram om de communitysite te openen voor wijziging van eigenschappen, zoals de titel of om het thema te wijzigen
+  Als u het eigenschappenpictogram selecteert, wordt de communautaire site geopend voor het wijzigen van eigenschappen, zoals de titel, of voor het wijzigen van het thema.
 
 * **Site publiceren**
 
-   Selecteer het wereldpictogram om de communitysite te publiceren (bijvoorbeeld als uw publicatieserver op uw lokale computer wordt uitgevoerd en vervolgens standaard naar localhost:4503)
+  Als u het wereldpictogram selecteert, wordt de communitysite gepubliceerd (als de publicatieserver bijvoorbeeld op uw lokale computer wordt uitgevoerd, standaard naar localhost:4503).
 
 * **Site exporteren**
 
-   Selecteer het exportpictogram om een pakket te maken van de communitysite waarin beide zijn opgeslagen [pakketbeheer](/help/sites-administering/package-manager.md) en gedownload.
-UGC is niet opgenomen in het sitepakket.
+  Als u het exportpictogram selecteert, wordt een pakket van de communitysite gemaakt waarin beide bestanden zijn opgeslagen [Pakketbeheer](/help/sites-administering/package-manager.md) en gedownload. UGC is niet opgenomen in het sitepakket.
 
 * **Site verwijderen**
 
-   Selecteer het verwijderpictogram om de communitysite van binnenuit te verwijderen **[!UICONTROL Communities > Sites console]**. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
+  Als u het verwijderpictogram selecteert, wordt de communitysite van binnenuit verwijderd **[!UICONTROL Communities > Sites console]**. Deze actie verwijdert alle punten verbonden aan de plaats, zoals UGC, gebruikersgroepen, activa, en gegevensbestandverslagen.
 
 ![sitehandelingen](assets/siteactions.png)
 
@@ -211,8 +206,7 @@ UGC is niet opgenomen in het sitepakket.
 >1. Selecteer in het pop-updialoogvenster Agent-instellingen de optie **[!UICONTROL Transport]** tab.
 >1. Wijzig in URI het poortnummer 4503 in het gewenste poortnummer. Als u bijvoorbeeld poort 6103 wilt gebruiken: https://localhost:6103/bin/receive?sling:authRequestLogin=1
 >1. Selecteer **[!UICONTROL OK]**.
->1. (Optioneel) Selecteer **[!UICONTROL Clear]** of **[!UICONTROL Force Retry]** om de replicatiewachtrij opnieuw in te stellen.
-
+>1. (Optioneel) Selecteer **[!UICONTROL Clear]** of **[!UICONTROL Force Retry]** om de replicatiewachtrij te herstellen.
 
 ### Publiceren selecteren {#select-publish}
 
@@ -226,7 +220,7 @@ Wanneer de communitysite met succes is gepubliceerd, wordt kort het bericht &#39
 
 Samen met de nieuwe communautaire plaats, worden de nieuwe gebruikersgroepen gecreeerd die de aangewezen toestemmingen hebben die voor diverse administratieve functies worden geplaatst. Ga voor meer informatie naar [Gebruikersgroepen voor communitysites](/help/communities/users.md#usergroupsforcommunitysites).
 
-Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;verbind&quot;in Stap 1, kunnen de vier nieuwe gebruikersgroepen van worden gezien [Groepsconsole](/help/communities/members.md) (globale navigatie: Gemeenschappen, groepen):
+Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;verbind&quot;in Stap 1, kunnen de vier nieuwe gebruikersgroepen van [Groepsconsole](/help/communities/members.md) (globale navigatie: Gemeenschappen, groepen):
 
 * Community-managers voor community inschakelen
 * Gemeenschapsgroepsbeheerders
@@ -235,7 +229,7 @@ Voor deze nieuwe communautaire plaats, gezien de plaatsnaam &quot;verbind&quot;i
 * Geprivilegieerde leden van Community Engineering
 * Community Engineering Site-inhoudsbeheer
 
-Let op: [Aaron McDonald](/help/communities/tutorials.md#demo-users) lid is van
+[Aaron McDonald](/help/communities/tutorials.md#demo-users) lid is van
 
 * Community-managers voor community inschakelen
 * Maatschappelijke experts
@@ -249,7 +243,7 @@ Let op: [Aaron McDonald](/help/communities/tutorials.md#demo-users) lid is van
 
 ## Configureren voor verificatiefout {#configure-for-authentication-error}
 
-Nadat een site is geconfigureerd en geduwd op publiceren, [aanmeldingstoewijzing configureren](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) op het publicatieexemplaar. Het voordeel is dat als de aanmeldingsgegevens niet correct zijn ingevoerd, de verificatiefout de aanmeldingspagina van de communautaire site opnieuw weergeeft met een foutbericht.
+Nadat een site is geconfigureerd en geduwd op publiceren, [logintoewijzing configureren](/help/communities/sites-console.md#configure-for-authentication-error) ( `Adobe Granite Login Selector Authentication Handler`) op het publicatieexemplaar. Het voordeel is dat wanneer de login geloofsbrieven niet correct zijn ingegaan, de authentificatiefout de login van de communautaire plaats pagina met een foutenmelding opnieuw toont.
 
 Voeg een `Login Page Mapping` als
 
@@ -268,7 +262,7 @@ Aan de slag:
 1. Meld u aan bij een publicatieexemplaar met beheerdersrechten.
 1. Bladeren naar [https://localhost:4503/crx/de](https://localhost:4503/crx/de).
 1. Vouw in de projectbrowser uit `/etc/map.`
-1. Selecteer `http` knooppunt:
+1. Selecteer de `http` knooppunt:
 
    * Selecteren **Knooppunt maken:**
 
@@ -283,12 +277,12 @@ Aan de slag:
    * **Naam** sling:match
       * **Type** String
       * **Waarde** localhost.4503/$ (moet eindigen met &#39;$&#39; teken)
+
    * Eigenschap toevoegen:
 
       * **Naam** sling:internalRedirect
       * **Type** String
       * **Waarde** /content/sites/engage/en.html
-
 
 1. Selecteren **Alles opslaan.**
 1. (Optioneel) Verwijder de browsergeschiedenis.
@@ -302,13 +296,13 @@ Aan de slag:
 
 ![optionele stappen](assets/optional-steps.png)
 
-#### Problemen oplossen: Fout bij opslaan van kaart {#troubleshooting-error-saving-map}
+#### Problemen oplossen: fout bij opslaan kaart {#troubleshooting-error-saving-map}
 
 Als u de wijzigingen niet kunt opslaan, controleert u of de knooppuntnaam `localhost.4503`, met een &#39;punt&#39;-scheidingsteken, en niet `localhost:4503` met een &#39;dubbele punt&#39;-scheidingsteken, als `localhost`is geen geldig naamruimtevoorvoegsel.
 
 ![foutbericht](assets/error-message.png)
 
-#### Problemen oplossen: Doorsturen mislukt {#troubleshooting-fail-to-redirect}
+#### Problemen oplossen: kan niet worden omgeleid {#troubleshooting-fail-to-redirect}
 
 De &#39;**$**&#39; aan het einde van de reguliere expressie `sling:match`tekenreeks is van cruciaal belang, zodat alleen `https://localhost:4503/` wordt toegewezen, anders wordt de omleidingswaarde gepresteerd aan om het even welk weg die na server zou kunnen bestaan:haven in URL. Wanneer AEM probeert om naar de aanmeldingspagina om te leiden, mislukt dit.
 

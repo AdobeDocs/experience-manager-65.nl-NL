@@ -1,18 +1,14 @@
 ---
 title: Grondbeginselen van tags
-seo-title: Tag Essentials
-description: Overzicht van tags
-seo-description: Tag overview
-uuid: a5d52319-f821-4608-b0ab-abc8a1374343
+description: Leer over wanneer de componenten van Gemeenschappen met toegelaten etiketteren worden gevormd, kunnen de communautaire leden inhoud etiketteren die zij in publicatiemilieu posten.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 exl-id: 6e8af8cf-1239-46f9-b2fe-4aa80abc86ea
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -25,9 +21,9 @@ De onderliggende infrastructuur voor tags die worden toegepast in de publicatieo
 
 * Zie [Tags beheren](../../help/sites-administering/tags.md) en [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) (UGC) voor informatie over het maken en beheren van tags.
 
-* Zie [Tags voor ontwikkelaars](../../help/sites-developing/tags.md) voor informatie over de [coderingskader](../../help/sites-developing/framework.md) alsmede tags opnemen en uitbreiden in [aangepaste toepassingen](../../help/sites-developing/building.md).
+* Zie [Tags voor ontwikkelaars](../../help/sites-developing/tags.md) voor informatie over de [coderingskader](../../help/sites-developing/framework.md) en tags opnemen en uitbreiden in [aangepaste toepassingen](../../help/sites-developing/building.md).
 
-* Zie [Sociale tagcloud gebruiken](tagcloud.md) voor informatie aan auteurs over het toevoegen van een `social tag cloud` op een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
+* Zie [Sociale tagcloud gebruiken](tagcloud.md) voor informatie over het toevoegen van een `social tag cloud` op een pagina om de tags te markeren die in de publicatieomgeving op UGC zijn toegepast.
 
 Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-console.md#tagging) of een van de volgende kenmerken:
 
@@ -74,9 +70,9 @@ Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-cons
 
 ## Essentiële elementen voor server-side {#essentials-for-server-side}
 
-* [API voor sociale tags](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
+* [API voor sociale tags](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagcloud/api/package-summary.html)
 
-* [Sociaal tagbeheer](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
+* [Sociaal tagbeheer](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/social/commons/tagging/package-summary.html)
 
 * [Aanpassingen op de server](server-customize.md)
 
@@ -84,4 +80,4 @@ Tags voor UGC kunnen zijn ingeschakeld wanneer u een [community-site](sites-cons
 
 Vanaf [functiepakket 1](deploy-communities.md#latestfeaturepack) (FP1), wordt het zoeken van tags uitgevoerd gebruikend [titels labelen](../../help/sites-developing/framework.md#tag-characteristics).
 
-Voorafgaand aan FP1, werd het onderzoek uitgevoerd gebruikend [tag id](../../help/sites-developing/framework.md#tagid).
+Vóór FP1 werd het onderzoek uitgevoerd gebruikend [tag id](../../help/sites-developing/framework.md#tagid).

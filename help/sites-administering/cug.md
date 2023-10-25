@@ -2,7 +2,7 @@
 title: Een gesloten gebruikersgroep maken
 seo-title: Creating a Closed User Group
 description: Leer hoe u een gesloten gebruikersgroep maakt.
-seo-description: Learn how to create a Closed User Group.
+seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
 uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 64d174cc824c8bf200cece4e29f60f946ee5560e
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
 source-wordcount: '753'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Een gesloten gebruikersgroep maken{#creating-a-closed-user-group}
 
-Gesloten gebruikersgroepen (CUG&#39;s) worden gebruikt om de toegang tot specifieke pagina&#39;s op een gepubliceerde website te beperken. Dergelijke pagina&#39;s vereisen de toegewezen leden login en verstrekken veiligheidsgeloofsbrieven.
+Gesloten gebruikersgroepen (CUG&#39;s) worden gebruikt om de toegang te beperken tot specifieke pagina&#39;s die zich op een gepubliceerde website bevinden. Dergelijke pagina&#39;s vereisen de toegewezen leden login en verstrekken veiligheidsgeloofsbrieven.
 
 U configureert een dergelijk gebied binnen uw website als volgt:
 
@@ -50,12 +50,12 @@ Een gesloten gebruikersgroep maken:
    >
    >Zie [Gebruikers en groepen beheren](/help/sites-administering/security.md#managing-users-and-groups) voor volledige informatie over het creëren van en het vormen van gebruikers en groepen.
 
-1. Selecteer **Groepen** van het volgende scherm.
+1. Selecteer de **Groepen** van het volgende scherm.
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
 1. Druk op **Maken** in de rechterbovenhoek om een nieuwe groep te maken.
-1. Geef de nieuwe groep een naam; bijvoorbeeld: `cug_access`.
+1. Geef de nieuwe groep een naam, bijvoorbeeld `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
 
@@ -64,7 +64,7 @@ Een gesloten gebruikersgroep maken:
    ![screenshot_2018-10-30at151808](assets/screenshot_2018-10-30at151808.png)
 
 1. Activeer om het even welke gebruikers die u aan uw CUG hebt toegewezen; in dit geval, alle leden van `cug_access`.
-1. Activeer de gesloten gebruikersgroep zodat deze beschikbaar is in de publicatieomgeving; in dit voorbeeld: `cug_access`.
+1. Activeer de gesloten gebruikersgroep zodat deze beschikbaar is in de publicatieomgeving; in dit voorbeeld `cug_access`.
 
 ## Gesloten gebruikersgroep toepassen op inhoudspagina&#39;s {#applying-your-closed-user-group-to-content-pages}
 
@@ -79,7 +79,7 @@ De CUG toepassen op een pagina of pagina&#39;s:
 
 1. Omlaag schuiven naar de **Verificatievereiste** sectie.
 
-   1. De **Inschakelen** tickbox.
+   1. Activeer **Inschakelen** tickbox.
 
    1. Voeg het pad toe aan uw **Aanmeldingspagina**.
 Dit is optioneel. Als de standaardaanmeldingspagina leeg blijft, wordt deze gebruikt.
@@ -98,7 +98,7 @@ Dit is optioneel. Als de standaardaanmeldingspagina leeg blijft, wordt deze gebr
 
 1. De **Gesloten gebruikersgroep bewerken** wordt geopend. Hier kunt u zoeken naar en uw CUG selecteren en vervolgens de groepselectie bevestigen met **Opslaan**.
 
-   De groep wordt toegevoegd aan de lijst. bijvoorbeeld de groep **cug_access**.
+   De groep wordt toegevoegd aan de lijst, bijvoorbeeld de groep **cug_access**.
 
    ![CUG toegevoegd](assets/cug-added.png)
 

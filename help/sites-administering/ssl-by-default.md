@@ -1,7 +1,7 @@
 ---
 title: Standaard SSL/TLS
 seo-title: SSL/TLS By Default
-description: Leer hoe u in AEM SSL standaard kunt gebruiken.
+description: Leer hoe u in AEM 6.5 SSL standaard kunt gebruiken.
 seo-description: Learn how to use SSL by Default in AEM.
 uuid: 2fbfd020-1d33-4b22-b963-c698e62f5bf6
 contentOwner: User
@@ -11,16 +11,16 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: 7edd848bbdbadfb387bd4d880b24931ad6758dbd
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # Standaard SSL/TLS{#ssl-tls-by-default}
 
-In een poging om de veiligheid van AEM onophoudelijk te verbeteren, heeft Adobe een eigenschap genoemd SSL Door Standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM instanties.
+In een poging om de veiligheid van AEM onophoudelijk te verbeteren, heeft de Adobe een eigenschap genoemd SSL Door Standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM instanties.
 
 ## SSL/TLS standaard inschakelen {#enabling-ssl-tls-by-default}
 
@@ -40,7 +40,7 @@ Een servicegebruiker die **ssl-service** is gemaakt voor deze functie. Zodra u h
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** in de rechterbovenhoek van de pagina. Vervolgens uploadt u de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL/TLS-verbinding.
+1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** rechtsboven op de pagina. Vervolgens uploadt u de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL/TLS-verbinding.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
@@ -93,7 +93,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- statuscode antwoorden. U kunt meer informatie over de status vinden in de HTML-hoofdtekst van de reactie.
+De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- statuscode antwoorden. U kunt meer informatie over de status vinden in de HTML-tekst van de reactie.
 
 Hieronder staan voorbeelden voor zowel een geslaagde reactie als een fout.
 
@@ -154,7 +154,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 U kunt de installatie van SSL/TLS ook automatiseren door een pakket te uploaden dat al deze vereiste items bevat:
 
-* Het sleutelarchief van de ssl-dienst gebruiker. Deze bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
+* Het sleutelarchief van de gebruiker van de ssl-dienst. Deze bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
 * De `GraniteSslConnectorFactory` configuratie
 
 ### Een privésleutel/certificaatpaar genereren voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
@@ -243,7 +243,7 @@ Zodra u het bevel hebt uitgevoerd, verifieer dat alle certificaten het aan keyst
 ### Een TLS 1.3-verbinding inschakelen {#enabling-tls-connection}
 
 1. Ga naar de webconsole
-1. Navigeer vervolgens naar **OSGi** - **Configuratie** - **Adobe granite SSL Connector Factory**
+1. Blader vervolgens naar **OSGi** - **Configuratie** - **Adobe graniet SSL Connector Factory**
 1. Ga naar de **Inclusief cementsuites** en voeg de volgende vermeldingen toe. U kunt elke toevoeging bevestigen door op &quot;**+**&quot;, links van het veld, na elke knop in te voegen:
 
    * `TLS_AES_256_GCM_SHA384`

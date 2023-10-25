@@ -1,7 +1,7 @@
 ---
 title: Back-up en herstel
 seo-title: Backup and Restore
-description: Leer hoe u back-ups maakt van uw AEM en deze terugzet.
+description: Leer hoe u back-ups kunt maken van uw AEM inhoud en configuraties en deze kunt herstellen.
 seo-description: Learn how to backup and restore your AEM content.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2285'
 ht-degree: 0%
 
 ---
@@ -80,13 +80,13 @@ Met een online back-up van uw opslagplaats kunt u back-upbestanden maken, downlo
 
 >[!CAUTION]
 >
->AEM Online back-up niet tegelijk uitvoeren met [Verzameling van ongewenste details](/help/sites-administering/data-store-garbage-collection.md) of [Revisie opschonen](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
+>AEM Online back-up niet tegelijk uitvoeren met [Verzameling van afval uit datastore](/help/sites-administering/data-store-garbage-collection.md) of [Revisie opschonen](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
 
-Bij het starten van een back-up kunt u een **Doelpad** en/of **Vertraging**.
+Bij het starten van een back-up kunt u een **Doelpad** of een **Vertraging**.
 
-**Doelpad** De back-upbestanden worden meestal opgeslagen in de bovenliggende map van de map waarin het JAR-bestand (.jar) voor snelstartbestanden wordt opgeslagen. Bijvoorbeeld, als u het AEM jar dossier onder /InstallationKits/AEM wordt gevestigd, dan zal de steun onder /InstallationKits worden geproduceerd. U kunt ook een doel opgeven op de gewenste locatie.
+**Doelpad** De back-upbestanden worden meestal opgeslagen in de bovenliggende map van de map waarin het JAR-bestand (.jar) voor snelstartbestanden wordt opgeslagen. Bijvoorbeeld, als u het AEM jar dossier onder /InstallationKits/AEM wordt gevestigd, dan zal de steun onder /InstallationKits worden geproduceerd. U kunt ook een doel opgeven op een door u gekozen locatie.
 
-Als de **TargetPath** De afbeelding van de repository wordt gemaakt in deze directory. Als dezelfde map meerdere malen (of altijd) wordt gebruikt voor het opslaan van een back-up,
+Als de **TargetPath** is een map, wordt de afbeelding van de repository gemaakt in deze directory. Als dezelfde map meerdere malen (of altijd) wordt gebruikt voor het opslaan van een back-up,
 
 * Gewijzigde bestanden in de opslagplaats worden dienovereenkomstig gewijzigd in het TargetPath-bestand
 * verwijderde bestanden in de gegevensopslagruimte worden verwijderd in het TargetPath-bestand
@@ -108,7 +108,7 @@ Als de **TargetPath** De afbeelding van de repository wordt gemaakt in deze dire
 **Vertraging** Geeft een tijdvertraging (in milliseconden) aan, zodat de prestaties van de opslagplaats niet worden beïnvloed. Standaard wordt de back-up van de opslagplaats op volledige snelheid uitgevoerd. U kunt het maken van een online back-up vertragen, zodat andere taken niet worden vertraagd.
 
 Wanneer u een zeer grote vertraging gebruikt, moet u ervoor zorgen dat de online back-up niet meer dan 24 uur in beslag neemt. Als dit het geval is, verwijdert u deze reservekopie, omdat deze mogelijk niet alle binaire elementen bevat.
-Een vertraging van 1 milliseconde resulteert doorgaans in 10% CPU-gebruik en een vertraging van 10 milliseconden resulteert meestal in minder dan 3% CPU-gebruik. De totale vertraging in seconden kan als volgt worden geschat: Grootte opslagplaats in MB, vermenigvuldigd met vertraging in milliseconden, gedeeld door 2 (als de optie ZIP wordt gebruikt), of gedeeld door 4 (wanneer het steunen aan een folder). Dat betekent dat een back-up naar een directory van een 200 MB opslagplaats met een vertraging van 1 ms de back-uptijd met ongeveer 50 seconden verhoogt.
+Een vertraging van 1 milliseconde resulteert doorgaans in 10% CPU-gebruik en een vertraging van 10 milliseconden resulteert meestal in minder dan 3% CPU-gebruik. De totale vertraging in seconden kan als volgt worden geschat: de grootte van de opslagplaats in MB, vermenigvuldigd met vertraging in milliseconden, gedeeld door 2 (als de optie ZIP wordt gebruikt), of gedeeld door 4 (wanneer het steunen aan een folder). Dat betekent dat een back-up naar een directory van een 200 MB opslagplaats met een vertraging van 1 ms de back-uptijd met ongeveer 50 seconden verhoogt.
 
 >[!NOTE]
 >
@@ -162,7 +162,7 @@ Back-ups kunnen worden geautomatiseerd via de `wget` of `curl` HTTP-clients. In 
 
 >[!CAUTION]
 >
->In het volgende voorbeeld worden diverse parameters in het dialoogvenster `curl` bevel zou voor uw instantie kunnen moeten worden gevormd; bijvoorbeeld de hostnaam ( `localhost`), poort ( `4502`), beheerderswachtwoord ( `xyz`) en bestandsnaam ( `backup.zip`).
+>In het volgende voorbeeld worden diverse parameters in het dialoogvenster `curl` bevel zou voor uw instantie kunnen moeten worden gevormd; bijvoorbeeld, hostname ( `localhost`), poort ( `4502`), beheerderswachtwoord ( `xyz`) en bestandsnaam ( `backup.zip`).
 
 ```shell
 curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.granite:type=Repository/op/startBackup/java.lang.String?target=backup.zip
@@ -203,23 +203,23 @@ Het hier beschreven proces is speciaal geschikt voor grote opslagplaatsen.
 >
 >Als u deze back-upbenadering wilt gebruiken, moet uw systeem bestandssysteemmomentopnamen ondersteunen. Voor Linux betekent dit bijvoorbeeld dat uw bestandssystemen op een logisch volume moeten worden geplaatst.
 
-1. Voer een momentopname van het AEM in.
+1. Voer een momentopname uit van het AEM waarop wordt geïmplementeerd.
 
 1. De momentopname van het bestandssysteem koppelen.
 1. Maak een back-up en maak de opname ongedaan.
 
 ### Hoe AEM online back-up werkt {#how-aem-online-backup-works}
 
-AEM Online back-up bestaat uit een reeks interne acties om de integriteit te garanderen van de gegevens waarvan een back-up wordt gemaakt en van de back-upbestanden die worden gemaakt. Deze worden hieronder weergegeven voor de gegadigden.
+AEM Online back-up bestaat uit een reeks interne acties om de integriteit te garanderen van de gegevens waarvan een back-up wordt gemaakt en van het back-upbestand of de back-upbestanden die worden gemaakt. Deze worden hieronder weergegeven voor de gegadigden.
 
 Voor de online back-up wordt het volgende algoritme gebruikt:
 
 1. Wanneer u een ZIP-bestand maakt, moet u eerst de doelmap maken of vinden.
 
-   * Als u een back-up maakt van een ZIP-bestand, wordt een tijdelijke map gemaakt. De mapnaam begint met `backup.` en eindigt met `.temp`; bijvoorbeeld `backup.f4d3.temp`.
+   * Als er een back-up wordt gemaakt van een ZIP-bestand, wordt er een tijdelijke map gemaakt. De mapnaam begint met `backup.` en eindigt met `.temp`; bijvoorbeeld `backup.f4d3.temp`.
    * Als u een back-up maakt naar een map, wordt de naam gebruikt die in het doelpad is opgegeven. Een bestaande map kan worden gebruikt, anders wordt een nieuwe map gemaakt.
 
-      Een leeg bestand met de naam `backupInProgress.txt` wordt in de doelmap gemaakt wanneer de back-up wordt gestart. Dit bestand wordt verwijderd wanneer de back-up is voltooid.
+     Een leeg bestand met de naam `backupInProgress.txt` wordt in de doelmap gemaakt wanneer de back-up wordt gestart. Dit bestand wordt verwijderd wanneer de back-up is voltooid.
 
 1. De bestanden worden van de bronmap naar de doelmap (of de tijdelijke map wanneer u een ZIP-bestand maakt) gekopieerd. De segmentstore wordt gekopieerd vóór de datastore om beschadiging van de opslagplaats te voorkomen. De index- en cachegegevens worden weggelaten wanneer u de back-up maakt. Dientengevolge, gegevens van `crx-quickstart/repository/cache` en `crx-quickstart/repository/index` is niet opgenomen in de back-up. De voortgangsbalkindicator van het proces ligt tussen 0% - 70% wanneer u een ZIP-bestand maakt, of 0% - 100% als er geen ZIP-bestand wordt gemaakt.
 
@@ -249,7 +249,7 @@ U kunt een back-up als volgt herstellen:
 
 ## Back-up van pakket {#package-backup}
 
-Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, die de indeling Inhoudspakket gebruiken om back-ups te maken van inhoud en deze te herstellen. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
+Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, waarmee u back-ups kunt maken van inhoud en deze weer kunt terugzetten. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
 
 Zie voor meer informatie over de functies en voordelen van elk van deze afzonderlijke indelingen voor inhoudspakketten [Werken met pakketten](/help/sites-administering/package-manager.md).
 

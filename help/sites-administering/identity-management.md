@@ -1,7 +1,7 @@
 ---
 title: Identity Management
 seo-title: Identity Management
-description: Meer informatie over identiteitsbeheer in AEM.
+description: Meer informatie over de interne werking van identiteitsbeheer in AEM.
 seo-description: Learn about identity management in AEM.
 uuid: d9b83cd7-c47a-41a5-baa4-bbf385d13bfd
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: 1036127ae508ec76c868db5fb67709c104c51123
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1250'
+source-wordcount: '1254'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Gebruikers kunnen zich bijvoorbeeld aanmelden of een nieuwe account maken met de
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
-![Voorbeeld van aanmeldingspagina](assets/login.png)
+![Voorbeeld van aanmeldpagina](assets/login.png)
 
 ## Afmelden {#logging-out}
 
@@ -88,28 +88,28 @@ Aangezien er een login mechanisme is, wordt een logout mechanisme ook vereist. D
 
 ## Een profiel weergeven en bijwerken {#viewing-and-updating-a-profile}
 
-Afhankelijk van uw registratieformulier kan de bezoeker gegevens in zijn profiel hebben geregistreerd. Zij moeten dit in een later stadium kunnen bekijken en/of bijwerken. Dit kan in een vergelijkbare vorm gebeuren; bijvoorbeeld in Geometrixx:
+Afhankelijk van uw registratieformulier kan de bezoeker gegevens in zijn profiel hebben geregistreerd. Zij moeten dit in een later stadium kunnen bekijken en/of bijwerken. Dit kan met een gelijkaardige vorm worden gedaan; bijvoorbeeld in Geometrixx:
 
 ```
 http://localhost:4502/content/geometrixx-outdoors/en/user/profile.html
 ```
 
-Klik op **Mijn profiel** in de rechterbovenhoek van een pagina; bijvoorbeeld met de `admin` account:
+Klik op **Mijn profiel** in de rechterbovenhoek van een pagina, bijvoorbeeld met de `admin` account:
 `http://localhost:4502/home/users/a/admin/profile.form.html/content/geometrixx-outdoors/en/user/profile.html.`
 
-U kunt een ander profiel weergeven met de opdracht [clientcontext](/help/sites-administering/client-context.md) (over de auteursomgeving en met voldoende privileges):
+U kunt een ander profiel weergeven met de [clientcontext](/help/sites-administering/client-context.md) (over de auteursomgeving en met voldoende privileges):
 
-1. Open een pagina; bijvoorbeeld de pagina Geometrixx:
+1. Open een pagina, bijvoorbeeld de pagina Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
-1. Klikken **Mijn profiel** in de rechterbovenhoek. U ziet het profiel van uw huidige account; bijvoorbeeld de beheerder.
+1. Klikken **Mijn profiel** in de rechterbovenhoek. U ziet het profiel van uw huidige account, bijvoorbeeld de beheerder.
 1. Druk **control-alt-C** om de clientcontext te openen.
 1. Klik in de linkerbovenhoek van de clientcontext op de knop **Een profiel laden** knop.
 
    ![Een profielpictogram laden](do-not-localize/loadprofile.png)
 
-1. Selecteer een ander profiel in de vervolgkeuzelijst in het dialoogvenster. bijvoorbeeld: **Alison Parker**.
+1. Selecteer een ander profiel in de vervolgkeuzelijst in het dialoogvenster, bijvoorbeeld **Alison Parker**.
 1. Klikken **OK**.
 1. Klik nogmaals op **Mijn profiel**. Het formulier wordt bijgewerkt met de gegevens van Alison.
 
@@ -131,13 +131,13 @@ U kunt velden toevoegen aan de profieldefinitie. U kunt bijvoorbeeld het veld Fa
    * **Titel** - `Favorite Color`
    * **Items** - Verschillende kleuren toevoegen als items
 
-   Klikken **OK** om op te slaan.
+   Klikken **OK** opslaan.
 
 1. Sluit de pagina en ga terug naar de **Websites** en activeer de pagina Mijn profiel.
 
    De volgende keer dat u een profiel weergeeft, kunt u een favoriete kleur selecteren:
 
-   ![Favoriete kleurvoorbeeldveld van Alison Parker](assets/aparkerfavcolour.png)
+   ![Het favoriete kleurvoorbeeldveld van Alison Parker](assets/aparkerfavcolour.png)
 
    Het veld wordt opgeslagen onder het tabblad **profiel** deel van de desbetreffende gebruikersaccount:
 
@@ -151,9 +151,9 @@ Dit betekent dat een geschikte eigenschap in het gebruikersprofiel moet worden g
 
 * is zichtbaar en toegankelijk voor de gebruiker
 * definieert twee statussen voor elke eigenschap
-* schakelt tussen de twee gedefinieerde statussen
+* staat het schakelen tussen de twee gedefinieerde frames toe
 
-Dit gebeurt met:
+Dit wordt gedaan met:
 
 * [Providers](#state-providers)
 
@@ -163,7 +163,7 @@ Dit gebeurt met:
 
   Handelingen met betrekking tot de staten beheren.
 
-Er kunnen meerdere statussen worden gedefinieerd; in de Geometrixx zijn bijvoorbeeld :
+Er kunnen meerdere statussen worden gedefinieerd, bijvoorbeeld in Geometrixx:
 
 * zich abonneren (of het afmelden) op berichten op nieuwsbrieven of commentaardraden
 * toevoegen en verwijderen van een verbinding met een vriend
@@ -181,7 +181,7 @@ De leveranciers van de staat worden uitgevoerd als componenten, zodat kan voor u
 
 De leveranciers van de staat leiden een profielbezit en zijn staten.
 
-Er is een workflow nodig om de acties met betrekking tot de staten uit te voeren. Als u zich bijvoorbeeld abonneert op meldingen, wordt in de workflow de actie voor het feitelijke abonnement afgehandeld. wanneer u zich niet meer abonneert op meldingen , wordt in de workflow het verwijderen van de gebruiker uit de abonnementenlijst afgehandeld .
+Er is een workflow nodig om de acties met betrekking tot de staten uit te voeren. Wanneer u bijvoorbeeld een abonnement neemt op meldingen, wordt in de workflow de actie voor het feitelijke abonnement afgehandeld. Wanneer u zich niet meer abonneert op meldingen, wordt in de workflow het verwijderen van de gebruiker uit de abonnementenlijst afgehandeld.
 
 ## Profielen en gebruikersaccounts {#profiles-and-user-accounts}
 
@@ -239,4 +239,4 @@ Met deze component kan de gebruiker een gedetailleerde naam invoeren.
 
 Met deze component kan de gebruiker zijn geslacht invoeren.
 
-![Genderselectie](assets/dc_profiles_gender.png)
+![Genderselector](assets/dc_profiles_gender.png)

@@ -1,7 +1,7 @@
 ---
 title: Code en aanpassingen bijwerken
 seo-title: Upgrading Code and Customizations
-description: Meer informatie over het upgraden van aangepaste code in AEM.
+description: Meer informatie over het upgraden van code en aanpassingen in AEM.
 seo-description: Learn more about upgrading custom code in AEM.
 uuid: dec11ef0-bf85-4e4e-80ac-dcb94cc3c256
 contentOwner: sarchiz
@@ -13,9 +13,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: a36a310d-5943-4ff5-8ba9-50eaedda98c5
-source-git-commit: a296e459461973fc2dbd0641c6fdda1d89d8d524
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '2112'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Bij het plannen van een upgrade moeten de volgende onderdelen van een implementa
 
 * [De basiscode bijwerken](#upgrade-code-base)
 * [Uitlijnen met 6.5 Repository Structure](#align-repository-structure)
-* [Aanpassingen AEM](#aem-customizations)
+* [AEM](#aem-customizations)
 * [Testprocedure](#testing-procedure)
 
 ## Overzicht {#overview}
@@ -45,7 +45,7 @@ Voordat u verdergaat met een upgrade, moet u beschikken over een stabiele basis 
 Naast de optioneel upgrade van uw codebasis en aanpassingen om met de nieuwe AEM te werken, helpt 6.5 u ook om uw aanpassingen efficiënter te beheren met de functie Achterwaartse compatibiliteit, zoals beschreven op [deze pagina](/help/sites-deploying/backward-compatibility.md).
 
 Zoals hierboven vermeld en in het onderstaande diagram wordt getoond, wordt de [Patroondetector](/help/sites-deploying/pattern-detector.md) in de eerste stap kunt u de algemene complexiteit van de upgrade beoordelen. Het kan u ook helpen besluiten of u op verenigbaarheidswijze wilt lopen of uw aanpassingen bijwerken om alle nieuwe AEM 6.5 eigenschappen te gebruiken. Zie de [Achterwaartse compatibiliteit in AEM 6.5](/help/sites-deploying/backward-compatibility.md) voor meer informatie.
-[ ![opt_bijgesneden](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
+[![opt_bijgesneden](assets/opt_cropped.png)](assets/upgrade-code-base-highlevel.png)
 
 ## De basiscode bijwerken {#upgrade-code-base}
 
@@ -91,15 +91,15 @@ Klassieke UI-authoring is nog steeds beschikbaar in AEM 6.5, maar wordt afgekeur
 
 Om upgrades eenvoudiger te maken en ervoor te zorgen dat configuraties niet tijdens een upgrade worden overschreven, wordt de opslagplaats in 6.4 geherstructureerd om inhoud van configuratie te scheiden.
 
-Daarom moeten verschillende instellingen worden verplaatst om niet langer onder te kunnen wonen `/etc` zoals in het verleden het geval was geweest . Om de volledige reeks problemen met de reorganisatie van opslagplaatsen te beoordelen die in de bijgewerkte versie tot AEM 6.4 moeten worden herzien en aangepakt, raadpleegt u [Herstructurering van de depositaris in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
+Daarom moeten verschillende instellingen worden verplaatst om niet langer onder te kunnen wonen `/etc` zoals in het verleden het geval was geweest . Om de volledige reeks problemen met de reorganisatie van opslagplaatsen te beoordelen die in de bijgewerkte versie tot AEM 6.4 moeten worden herzien en aangepakt, zie [Herstructurering van de depositaris in AEM 6.4](/help/sites-deploying/repository-restructuring.md).
 
-## Aanpassingen AEM  {#aem-customizations}
+## AEM  {#aem-customizations}
 
 Alle aanpassingen aan de AEM ontwerpomgeving in de bronversie van AEM moeten worden geïdentificeerd. Nadat elke aanpassing is geïdentificeerd, wordt aanbevolen deze in versiebeheer op te slaan of er minimaal een back-up van te maken als onderdeel van een inhoudspakket. Alle aanpassingen moeten worden geïmplementeerd en gevalideerd in een QA- of Staging-omgeving waarin de doelversie van AEM wordt uitgevoerd vóór een productieupgrade.
 
 ### Bedekkingen in het algemeen {#overlays-in-general}
 
-Het is gebruikelijk om AEM uit de boxfunctionaliteit uit te breiden door knooppunten en/of bestanden onder /libs te bedekken met extra knooppunten onder /apps. Deze overlays moeten worden bijgehouden in versiebeheer en worden getest op basis van de doelversie van AEM. Als een bestand (zoals JS, JSP, HTL) wordt overlapt, raadt Adobe u aan een opmerking over te laten over de functionaliteit die is verbeterd om de regressietests in de doelversie van AEM te vereenvoudigen. Meer informatie over overlays vindt u in het algemeen [hier](/help/sites-developing/overlays.md). Hieronder vindt u instructies voor specifieke AEM-overlays.
+Het is gebruikelijk om AEM uit de boxfunctionaliteit uit te breiden door knooppunten en/of bestanden onder /libs te bedekken met extra knooppunten onder /apps. Deze overlays moeten worden bijgehouden in versiebeheer en worden getest op basis van de doelversie van AEM. Als een bestand (zoals JS, JSP, HTL) wordt overlapt, wordt u door de Adobe aangeraden een opmerking te achterlaten over de functionaliteit die is verbeterd om de regressietests in de doelversie van AEM te vereenvoudigen. Meer informatie over overlays vindt u in het algemeen [hier](/help/sites-developing/overlays.md). Hieronder vindt u instructies voor specifieke AEM-overlays.
 
 ### Aangepast zoeken in Forms bijwerken {#upgrading-custom-search-forms}
 
@@ -123,7 +123,7 @@ U kunt aanpassingen aan de UI van Activa voorbereiden door het volgende te doen:
 
 1. De naam van het inhoudsknooppunt wijzigen in **content_backup** door met de rechtermuisknop op het verkennervenster in de linkerzijde van het venster te klikken en **Naam wijzigen**.
 
-1. Zodra de naam van het knooppunt is gewijzigd, maakt u een knooppunt met de naam content onder `/apps/dam` benoemd **content** en stel het knooppunttype in op **sling:map**.
+1. Als de naam van het knooppunt is gewijzigd, maakt u een knooppunt met de naam content onder `/apps/dam` benoemd **content** en stel het knooppunttype in op **sling:map**.
 
 1. Alle onderliggende knooppunten verplaatsen van **content_backup** op het nieuwe inhoudsknooppunt door met de rechtermuisknop op elk onderliggende knooppunt in het deelvenster Verkenner te klikken en **Verplaatsen**.
 
@@ -135,7 +135,7 @@ U kunt aanpassingen aan de UI van Activa voorbereiden door het volgende te doen:
 
 Als u element-id&#39;s voor bestaande elementen wilt genereren, moet u de elementen upgraden wanneer u uw AEM-instantie upgradet naar AEM 6.5. Deze stap is vereist om de [Assets Insights, functie](/help/assets/asset-insights.md). Zie voor meer informatie [Insluitcode toevoegen](/help/assets/use-page-tracker.md#add-embed-code).
 
-Als u elementen wilt bijwerken, configureert u het pakket Id&#39;s van bijbehorende elementen in de JMX-console. Afhankelijk van het aantal activa in de gegevensopslagruimte, `migrateAllAssets` kan lang duren. Adobe schatting ongeveer één uur voor 125 000 activa op TarMK.
+Als u elementen wilt bijwerken, configureert u het pakket Id&#39;s van bijbehorende elementen in de JMX-console. Afhankelijk van het aantal activa in de gegevensopslagruimte, `migrateAllAssets` kan lang duren. De interne tests van de Adobe schatten ongeveer een uur voor 125000 activa op TarMK.
 
 ![1487758945977](assets/1487758945977.png)
 
@@ -143,9 +143,9 @@ Als u id&#39;s van elementen nodig hebt voor een subset van uw gehele elementen,
 
 Voor alle andere doeleinden gebruikt u de `migrateAllAssets()` API.
 
-### InDesign Script-aanpassingen {#indesign-script-customizations}
+### Scriptaanpassingen InDesign {#indesign-script-customizations}
 
-Adobe raadt u aan aangepaste scripts te plaatsen op `/apps/settings/dam/indesign/scripts` locatie. Meer informatie over InDesign Script-aanpassingen vindt u op [hier](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
+Adobe raadt u aan aangepaste scripts in te voeren `/apps/settings/dam/indesign/scripts` locatie. Meer informatie over de aanpassingen van het Manuscript van het InDesign kan worden gevonden [hier](/help/assets/indesign.md#configuring-the-aem-assets-workflow).
 
 ### ContextHub-configuraties herstellen {#recovering-contexthub-configurations}
 
@@ -153,7 +153,7 @@ De configuraties van ContextHub worden beïnvloed door een verbetering. Instruct
 
 ### Workflowaanpassingen {#workflow-customizations}
 
-Het is gebruikelijk om werkstromen uit het vak te bewerken om overbodige functionaliteit toe te voegen of te verwijderen. Een algemene workflow die wordt aangepast is de [!UICONTROL DAM Update Asset] workflow. Van alle workflows die vereist zijn voor een aangepaste implementatie, moet een back-up worden gemaakt en worden opgeslagen in versiebeheer, aangezien deze tijdens een upgrade kunnen worden overschreven.
+Het is gebruikelijk om werkstromen uit het vak te bewerken om overbodige functionaliteit toe te voegen of te verwijderen. Een algemene workflow die wordt aangepast, is de [!UICONTROL DAM Update Asset] workflow. Van alle workflows die vereist zijn voor een aangepaste implementatie, moet een back-up worden gemaakt en worden opgeslagen in versiebeheer, aangezien deze tijdens een upgrade kunnen worden overschreven.
 
 ### Bewerkbare sjablonen {#editable-templates}
 
@@ -161,7 +161,7 @@ Het is gebruikelijk om werkstromen uit het vak te bewerken om overbodige functio
 >
 >Deze procedure is alleen vereist voor Sites-upgrades die Bewerkbare sjablonen uit AEM 6.2 gebruiken
 
-De structuur voor bewerkbare sjablonen is gewijzigd tussen AEM 6.2 en 6.3. Als u een upgrade uitvoert vanaf 6.2 of eerder en als uw site-inhoud is samengesteld met bewerkbare sjablonen, moet u de opdracht [Reactieknooppunten opruimen](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration). Het gereedschap is bedoeld om te worden uitgevoerd **na** een upgrade uitvoeren om de inhoud op te schonen. Voer deze uit op zowel Auteur- als Publish-niveaus.
+De structuur voor bewerkbare sjablonen is gewijzigd tussen AEM 6.2 en 6.3. Als u een upgrade uitvoert vanaf 6.2 of eerder en als uw site-inhoud is samengesteld met bewerkbare sjablonen, moet u de opdracht [Reactieknooppunten opruimen](https://github.com/Adobe-Marketing-Cloud/aem-sites-template-migration). Het programma moet worden uitgevoerd **na** een upgrade uitvoeren om de inhoud op te schonen. Voer deze uit op zowel Auteur- als Publish-niveaus.
 
 ### Wijzigingen in CUG-implementatie {#cug-implementation-changes}
 
@@ -177,7 +177,7 @@ De verbeteringsprocedure zoals hier geschetst zou op Dev en milieu&#39;s QA zoal
 
 ### Testgebieden voor de implementatie  {#implementation-test-areas-}
 
-Hieronder vindt u een aantal belangrijke onderdelen van een AEM implementatie die onder uw testplan moeten vallen als de omgeving is bijgewerkt en de geüpgrade codebasis is geïmplementeerd.
+Hieronder volgen enkele belangrijke gebieden van elke AEM implementatie die onder uw testplan moeten vallen zodra de omgeving is bijgewerkt en de geüpgrade codebasis is geïmplementeerd.
 
 <table>
  <tbody>

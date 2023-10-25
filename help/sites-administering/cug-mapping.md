@@ -1,7 +1,7 @@
 ---
 title: Toewijzing van aangepaste gebruikersgroepen in AEM 6.5
 seo-title: Custom User Group Mapping in AEM 6.5
-description: Leer hoe de Toewijzing van de Gebruikersgroep van de Douane in AEM werkt.
+description: Leer hoe de Toewijzing van de Gebruikersgroep van de Douane in Adobe Experience Manager werkt.
 seo-description: Lear how Custom User Group Mapping works in AEM.
 uuid: 7520351a-ab71-4661-b214-a0ef012c0c93
 contentOwner: User
@@ -12,16 +12,16 @@ discoiquuid: 13085dd3-d283-4354-874b-cd837a9db9f9
 docset: aem65
 exl-id: 661602eb-a117-454d-93d3-a079584f7a5d
 feature: Security
-source-git-commit: 2981f11565db957fac323f81014af83cab2c0a12
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
 
 # Toewijzing van aangepaste gebruikersgroepen in AEM 6.5 {#custom-user-group-mapping-in-aem}
 
-## Vergelijking van JCR-inhoud met betrekking tot CUG (Custom User Group) {#comparison-of-jcr-content-related-to-cug}
+## Vergelijking van JCR-inhoud met betrekking tot CUG (aangepaste gebruikersgroep) {#comparison-of-jcr-content-related-to-cug}
 
 <table>
  <tbody>
@@ -31,22 +31,22 @@ ht-degree: 0%
    <td><strong>Opmerkingen</strong></td>
   </tr>
   <tr>
-   <td><p>Eigenschap: cq:cugEnabled</p> <p>Type knooppunt declareren: N.v.t., resterend vermogen</p> </td>
-   <td><p>Autorisatie:</p> <p>Knooppunt: rep:cugPolicy of node type rep:CugPolicy</p> <p>Type knooppunt declareren: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Verificatie:</p> <p>Mengtype: graniet:AuthenticationRequired</p> </td>
-   <td><p>Om leestoegang te beperken, wordt een specifiek beleid van de CUG toegepast op de doelknoop.</p> <p>OPMERKING: Het beleid kan slechts bij de gevormde gesteunde wegen worden toegepast.</p> <p>Nodes met name rep:cugPolicy en type rep:CugPolicy zijn beschermd en kunnen niet worden geschreven gebruikend regelmatige vraag JCR API; gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">deze pagina</a> voor meer informatie.</p> <p>Om authentificatievereiste op een knoop af te dwingen, is het voldoende om mixintype granite toe te voegen:AuthenticationRequired.</p> <p>OPMERKING: Alleen gerespecteerd onder de geconfigureerde ondersteunde paden.</p> </td>
+   <td><p>Eigenschap: cq:cugEnabled</p> <p>Type knooppunt declareren: N.v.t., resteigenschap</p> </td>
+   <td><p>Autorisatie:</p> <p>Node: rep:cugPolicy of node type rep:CugPolicy</p> <p>Type knooppunt declareren: rep:CugMixin</p> <p> </p> <p> </p> <p> </p> Verificatie:</p> <p>Mixintype: graniet:AuthenticationRequired</p> </td>
+   <td><p>Om leestoegang te beperken, wordt een specifiek beleid van de CUG toegepast op de doelknoop.</p> <p>NOTA: Het beleid kan slechts op de gevormde gesteunde wegen worden toegepast.</p> <p>Nodes met name rep:cugPolicy en type rep:CugPolicy zijn beschermd en kunnen niet worden geschreven gebruikend regelmatige vraag JCR API; gebruik in plaats daarvan het beheer van de toegangscontrole JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html">deze pagina</a> voor meer informatie.</p> <p>Om authentificatievereiste op een knoop af te dwingen, is het voldoende om mixintype granite toe te voegen:AuthenticationRequired.</p> <p>NOTA: Slechts gerespecteerd onder de gevormde gesteunde wegen.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschap: cq:cugPrincipals</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
    <td><p>Eigenschap: rep:principalNames</p> <p>Type knooppunt declareren: rep:CugPolicy</p> </td>
-   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van regelmatige JCR API-aanroepen. gebruik in plaats daarvan het toegangsbeheer van JCR.</p> <p>Zie <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">deze pagina</a> voor meer informatie over de uitvoering.</p> </td>
+   <td><p>De eigenschap die de namen bevat van de hoofden die de inhoud onder de beperkte CUG mogen lezen, is beveiligd en kan niet worden geschreven met behulp van reguliere JCR API-aanroepen. Gebruik in plaats daarvan het JCR-toegangsbeheer.</p> <p>Zie <a href="https://jackrabbit.apache.org/api/2.12/org/apache/jackrabbit/api/security/authorization/PrincipalSetPolicy.html">deze pagina</a> voor meer informatie over de uitvoering.</p> </td>
   </tr>
   <tr>
    <td><p>Eigenschap: cq:cugLoginPage</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
-   <td><p>Eigenschap: graniet:loginPath (optioneel)</p> <p>Type knooppunt declareren: graniet:AuthenticationRequired</p> </td>
-   <td><p>Een JCR-knooppunt waarvoor het mixinetype granite:AuthenticationRequired is gedefinieerd, kan optioneel een alternatief aanmeldingspad definiëren.</p> <p>OPMERKING: Alleen gerespecteerd onder de geconfigureerde ondersteunde paden.</p> </td>
+   <td><p>Eigenschap: graniet:loginPath (optioneel)</p> <p>Notititietype declareren: graniet:AuthenticationRequired</p> </td>
+   <td><p>Een JCR-knooppunt waarvoor het mixinetype granite:AuthenticationRequired is gedefinieerd, kan optioneel een alternatief aanmeldingspad definiëren.</p> <p>NOTA: Slechts gerespecteerd onder de gevormde gesteunde wegen.</p> </td>
   </tr>
   <tr>
-   <td><p>Eigenschap: cq:cugRealm</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
+   <td><p>Eigenschap: cq:cugReal</p> <p>Type knooppunt declareren: NA, resteigenschap</p> </td>
    <td>NA</td>
    <td>Niet meer ondersteund met de nieuwe implementatie.</td>
   </tr>
@@ -57,7 +57,7 @@ ht-degree: 0%
 
 **Oudere AEM**
 
-Label: Ondersteuning voor Adobe Granite Closed User Group (CUG)
+Label: ondersteuning voor gesloten gebruikersgroep (CUG) bij Adobe Granite
 
 Naam: com.day.cq.auth.impl.CugSupportImpl
 
@@ -65,40 +65,40 @@ Naam: com.day.cq.auth.impl.CugSupportImpl
 
 * Label: Apache Jackrabbit Oak CUG Configuration
 
-   Naam: org.apache.jackrabbit.oak.spi.security.authentication.cug.impl.CugConfiguration
+  Naam: org.apache.jackrabbit.oak.spi.security.authentication.cug.impl.CugConfiguration
 
-   ConfigurationPolicy = REQUIRED
+  ConfigurationPolicy = REQUIRED
 
 * Label: Apache Jackrabbit Oak CUG Exclusive List
 
-   Naam: org.apache.jackrabbit.oak.spi.security.authentication.cug.impl.CugExcludeImpl
+  Naam: org.apache.jackrabbit.oak.spi.security.authentication.cug.impl.CugExcludeImpl
 
-   ConfigurationPolicy = REQUIRED
+  ConfigurationPolicy = REQUIRED
 
 * Naam: com.adobe.granite.auth.requirements.impl.RequirementService
-* Label: Adobe Granite-verificatie vereist en Aanmeldingspad-handler
+* Label: Adobe graniet-verificatie vereist en Aanmeldingspad-handler
 
-   Naam: com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler
+  Naam: com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler
 
-   ConfigurationPolicy = REQUIRED
+  ConfigurationPolicy = REQUIRED
 
 **Opmerkingen**
 
 * Configuratie van de CUG-autorisatie en inschakelen/uitschakelen van de evaluatie.
 Dienst om uitsluitingslijsten van principes te configureren die niet door de CUG-autorisatie moeten worden beïnvloed.
 
-   >[!NOTE]
-   > 
-   >Als de `CugExcludeImpl` is niet geconfigureerd, `CugConfiguration` wordt de standaardwaarde hersteld.
+  >[!NOTE]
+  > 
+  >Als de `CugExcludeImpl` is niet geconfigureerd, `CugConfiguration` wordt de standaardwaarde hersteld.
 
-   Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten als er speciale behoeften zijn.
+  Het is mogelijk om een aangepaste CugExclude-implementatie aan te sluiten als er speciale behoeften zijn.
 
 * De component OSGi die LoginPathProvider uitvoert die een passende login weg aan LoginSelectorHandler blootstelt. Het heeft een verplichte verwijzing naar een RequirementHandler die wordt gebruikt om de waarnemer te registreren die aan veranderde auteisen luistert die in de inhoud door middel van graniet worden opgeslagen:AuthenticationRequired mixin type.
 * De component OSGi die RequirementHandler uitvoert die SlingAuthenticator over veranderingen in authrequirements op de hoogte brengt.
 
-   Aangezien het configuratiebeleid voor deze component VEREIST is, wordt het slechts geactiveerd als een reeks gesteunde wegen wordt gespecificeerd.
+  Aangezien het configuratiebeleid voor deze component VEREIST is, wordt het slechts geactiveerd als een reeks gesteunde wegen wordt gespecificeerd.
 
-   Het toelaten van de dienst lanceert RequirementService.
+  Het toelaten van de dienst lanceert RequirementService.
 
 <!-- nested tables not supported - text above is the table>
 <table>

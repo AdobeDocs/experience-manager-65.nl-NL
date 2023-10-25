@@ -1,11 +1,11 @@
 ---
 title: Ondersteuning voor zelfde site-cookie voor AEM 6.5
-description: Ondersteuning voor zelfde site-cookie voor AEM 6.5
+description: Meer informatie over de ondersteuning voor Zelfde sitecookie voor AEM 6.5.
 topic-tags: security
 exl-id: e1616385-0855-4f70-b787-b01701929bbc
-source-git-commit: f7a4907ca6ce8ecaff9ef1fdf99ec0951ff497e0
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ U kunt de instelling toevoegen door de volgende stappen uit te voeren:
 
 1. Ga naar de webconsole op `http://serveraddress:serverport/system/console/configMgr`
 1. Zoeken naar en klikken op de knop **Adobe Granite Token Authentication Handler**
-1. Stel de **SameSite-kenmerk voor het cookie met het token** tot `None`, zoals wordt weergegeven in de onderstaande afbeelding
+1. Stel de **Het attribuut SameSite voor het cookie met het token login** tot `None`, zoals wordt weergegeven in de onderstaande afbeelding
    ![samesite](assets/samesite1.png)
 1. Klik op Opslaan
 1. Zodra dit het plaatsen wordt bijgewerkt en de gebruikers het programma worden geopend en opnieuw het programma geopend, `login-token` cookies hebben de `None` kenmerk ingesteld en wordt opgenomen in aanvragen voor andere sites.

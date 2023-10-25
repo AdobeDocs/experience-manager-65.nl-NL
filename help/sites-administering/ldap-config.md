@@ -1,6 +1,6 @@
 ---
 title: LDAP configureren met AEM 6
-description: Leer hoe u LDAP kunt configureren met AEM.
+description: Leer om de diensten LDAP met AEM te gebruiken en te vormen.
 uuid: 0007def4-86f0-401d-aa37-c8d49d5acea1
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,16 +8,16 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 5faf6ee5-9242-48f4-87a8-ada887a3be1e
 exl-id: 2ebca4fb-20f7-499c-96a0-4018eaeddc1a
-source-git-commit: 768576e300b655962adc3e1db20fc5ec06a5ba6c
+source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
 workflow-type: tm+mt
-source-wordcount: '1625'
+source-wordcount: '1628'
 ht-degree: 0%
 
 ---
 
 # LDAP configureren met AEM 6 {#configuring-ldap-with-aem}
 
-LDAP (de **L** oprecht **D** irector **A** toegang **P** protocol) wordt gebruikt voor de toegang tot de gecentraliseerde indexdiensten. Het helpt de inspanning te verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
+LDAP (de **L** rechtlijnig **D** irector **A** toegang **P** protocol) wordt gebruikt voor de toegang tot de gecentraliseerde indexdiensten. Het helpt de inspanning te verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
 
 Gebruikersaccounts kunnen worden gesynchroniseerd tussen de LDAP-server en de gegevensopslagruimte, waarbij de gegevens van de LDAP-account worden opgeslagen in de gegevensopslagruimte. Met deze functionaliteit kunnen de accounts worden toegewezen aan groepen in de opslagplaats voor het toewijzen van de vereiste machtigingen en bevoegdheden.
 
@@ -34,13 +34,13 @@ Alle configuraties LDAP zijn nu beschikbaar als configuraties OSGi. Zij kunnen v
 
 Om LDAP te hebben werkend met AEM, moet u drie configuraties tot stand brengen OSGi:
 
-1. Een LDAP-identiteitsprovider (IDP).
+1. Een LDAP Identity Provider (IDP).
 1. Een synchronisatiehandler.
 1. Een externe aanmeldingsmodule.
 
 >[!NOTE]
 >
->Controle [Externe aanmeldingsmodule van Oak — Verifiëren met LDAP en Buiten](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=en) naar diepe duikende externe aanmeldingsmodules.
+>Controle [Externe aanmeldingsmodule van Oak — Verifiëren met LDAP en Buiten](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/gems2015/aem-oak-external-login-module-authenticating-with-ldap-and-beyond.html?lang=en) tot diepe duik Externe Login Modules.
 >
 >Als u een voorbeeld wilt lezen van het configureren van Experience Manager met Apache DS, raadpleegt u [Adobe Experience Manager 6.5 configureren voor het gebruik van Apache Directory Service.](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/configuring-adobe-experience-manager-6-to-use-apache-directory/m-p/183805)
 
@@ -112,7 +112,7 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
   </tr>
   <tr>
    <td><strong>Extra filter Gebruiker</strong></td>
-   <td>Extra LDAP-filter bij het zoeken naar gebruikers. Het uiteindelijke filter wordt als volgt opgemaakt: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
+   <td>Extra LDAP-filter bij het zoeken naar gebruikers. Het laatste filter heeft de volgende notatie: '(&amp;(&lt;idattr&gt;=&lt;userid&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)' (user.extraFilter)</td>
   </tr>
   <tr>
    <td><strong>DN-paden gebruiker</strong></td>
@@ -132,7 +132,7 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
   </tr>
   <tr>
    <td><strong>Extra filter groeperen</strong></td>
-   <td>Extra LDAP-filter bij het zoeken naar groepen. Het uiteindelijke filter wordt als volgt opgemaakt: '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
+   <td>Extra LDAP-filter bij het zoeken naar groepen. Het laatste filter wordt als volgt opgemaakt: '(&amp;(&lt;nameattr&gt;=&lt;groupname&gt;)(objectclass=&lt;objectclass&gt;)&lt;extrafilter&gt;)'</td>
   </tr>
   <tr>
    <td><strong>DN-paden groeperen</strong></td>
@@ -149,7 +149,7 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
 
 De synchronisatiehandler definieert hoe de gebruikers en groepen van Identiteitsproviders worden gesynchroniseerd met de gegevensopslagruimte.
 
-Het bevindt zich onder de **Apache Jackrabbit Oak Handler voor standaardsynchronisatie** naam in de beheersconsole.
+De locatie bevindt zich onder de **Apache Jackrabbit Oak Handler voor standaardsynchronisatie** naam in de beheersconsole.
 
 De volgende configuratieopties zijn beschikbaar voor de Synchronisatie-handler:
 
@@ -157,7 +157,7 @@ De volgende configuratieopties zijn beschikbaar voor de Synchronisatie-handler:
  <tbody>
   <tr>
    <td><strong>Naam synchronisatiehandler</strong></td>
-   <td>Naam van de synchronisatieconfiguratie.</td>
+   <td>Naam van de sync-configuratie.</td>
   </tr>
   <tr>
    <td><strong>Vervaltijd gebruiker</strong></td>
@@ -222,6 +222,7 @@ De volgende configuratieopties zijn beschikbaar:
 | **Naam synchronisatiehandler** | Naam van de synchronisatiehandler. |
 
 >[!NOTE]
+>
 Als u op het hebben van meer dan één configuratie LDAP met uw AEM instantie van plan bent, moeten de afzonderlijke Leveranciers van de Identiteit en de Managers van de Synchronisatie voor elke configuratie worden gecreeerd.
 
 ## LDAP configureren via SSL {#configure-ldap-over-ssl}
@@ -290,7 +291,7 @@ Om te toelaten zuivert registreren, moet u het volgende doen:
 
 Gebruikers die via LDAP zijn gesynchroniseerd, kunnen deel uitmaken van verschillende groepen in AEM. Deze groepen kunnen externe LDAP-groepen zijn die als onderdeel van het synchronisatieproces aan AEM worden toegevoegd. Ze kunnen echter ook groepen zijn die afzonderlijk worden toegevoegd en geen deel uitmaken van het oorspronkelijke LDAP-groepslidmaatschapsschema.
 
-Gewoonlijk worden deze groepen toegevoegd door een lokale AEM of door een andere identiteitsprovider.
+Gewoonlijk worden deze groepen toegevoegd door een lokale AEM beheerder of door een andere identiteitsprovider.
 
 Als een gebruiker wordt verwijderd uit een groep op de LDAP-server, wordt de wijziging tijdens de synchronisatie weerspiegeld aan de AEM kant. Alle andere groepsrelaties van de gebruiker die niet door LDAP zijn toegevoegd, blijven echter van kracht.
 

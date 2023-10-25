@@ -1,7 +1,7 @@
 ---
 title: Integreren met Adobe Target
 seo-title: Integrating with Adobe Target
-description: Meer informatie over de integratie van AEM met Adobe Target.
+description: Leer hoe u Adobe Experience Manager kunt integreren met Adobe Target.
 seo-description: Learn about integrating AEM with Adobe Target.
 uuid: b90346e8-9757-4272-a870-bbe5e647303f
 contentOwner: Guillaume Carlino
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
 exl-id: 2b17d8cd-a43c-4d54-b990-a6f0cb1db22b
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '598'
+source-wordcount: '601'
 ht-degree: 1%
 
 ---
@@ -34,10 +34,10 @@ Voer de volgende taken uit om met Doel te integreren:
 
 1. Ofwel:
 
-   1. [Opteren in Adobe Target](/help/sites-administering/opt-in.md): De wizard voor aanmelding neemt uw doelaccount-informatie in aanmerking en maakt een Adobe Target-cloudconfiguratie en een Target Framework. De tovenaar associeert ook uw plaatsen met het Kader van het Doel. Als de wizard geen verbinding kan maken met het doel, raadpleegt u de [verbindingsproblemen oplossen](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sectie. U kunt vervolgens [De standaardcloudconfiguraties wijzigen](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): Indien nodig wijzigt u de cloudconfiguratie en het framework dat de wizard voor aanmelding heeft gemaakt. Wijzig bijvoorbeeld het framework om aanvullende contextgegevens naar Target te verzenden. Als u Adobe Analytics als rapporteringsbron voor Adobe Target wilt gebruiken, moet u de wolkenconfiguratie wijzigen om aan de configuratie A4T te richten.
+   1. [Opteren in Adobe Target](/help/sites-administering/opt-in.md): De wizard voor aanmelding neemt de gegevens van uw doelaccount in overweging en maakt een Adobe Target-cloudconfiguratie en een Target Framework. De tovenaar associeert ook uw plaatsen met het Kader van het Doel. Als de wizard geen verbinding kan maken met doel, raadpleegt u de [verbindingsproblemen oplossen](/help/sites-administering/target-configuring.md#troubleshooting-target-connection-problems) sectie. U kunt vervolgens [De standaardcloudconfiguraties wijzigen](/help/sites-administering/target-configuring.md#modifying-the-opt-in-wizard-configurations): Wijzig zo nodig de cloudconfiguratie en het framework dat de wizard Optie-in heeft gemaakt. Wijzig bijvoorbeeld het framework om aanvullende contextgegevens naar Target te verzenden. Als u Adobe Analytics als rapporteringsbron voor Adobe Target wilt gebruiken, moet u de wolkenconfiguratie wijzigen om aan de configuratie A4T te richten.
    1. [Handmatig integreren met Adobe Target](/help/sites-administering/target-configuring.md#manually-integrating-with-adobe-target).
 
-1. [Activiteiten configureren](/help/sites-authoring/activitylib.md): Koppel uw activiteiten aan de doelwolkenconfiguratie.
+1. [Activiteiten configureren](/help/sites-authoring/activitylib.md): Koppel uw activiteiten aan de configuratie van de doelcloud.
 
 >[!NOTE]
 >
@@ -50,7 +50,6 @@ Voer de volgende taken uit om met Doel te integreren:
 >* 3.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
 >* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
-
 
 >[!CAUTION]
 >
@@ -78,7 +77,6 @@ Voor de integratie van AEM met Adobe Target is kennis van Adobe Target, AEM Acti
 >
 >* 50 locaties
 >* 2.000 ervaringen
->* 50 metriek
+>* 50 cijfers
 >* 50 rapporteringssegmenten
 >
-

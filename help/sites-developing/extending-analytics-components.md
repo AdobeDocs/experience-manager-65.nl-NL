@@ -1,14 +1,14 @@
 ---
 title: Adobe Analytics-tracking toevoegen aan componenten
-description: Adobe Analytics-tracking toevoegen aan componenten
+description: Leer hoe u Adobe Analytics Tracking toevoegt aan componenten in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: e6c1258c-81d5-48e4-bdf1-90d7cc13a22d
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1266'
+source-wordcount: '1273'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,9 @@ ht-degree: 0%
 
 ## De Adobe Analytics-module opnemen in een pagina-component {#including-the-adobe-analytics-module-in-a-page-component}
 
-Componenten van paginasjablonen (bijvoorbeeld `head.jsp, body.jsp`) behoefte omvat JSP om ContextHub en de integratie van Adobe Analytics te laden (die een deel van Cloud Services is). Alles omvat JavaScript-bestanden laden.
+Componenten van paginasjablonen (bijvoorbeeld `head.jsp, body.jsp`) behoefte omvat JSP om ContextHub en de integratie van Adobe Analytics (die een deel van Cloud Servicen is) te laden. Alles omvat JavaScript-bestanden laden.
 
-Het ContextHub-item moet direct onder het `<head>` -tag, terwijl Cloud Services moeten worden opgenomen in de `<head>` en vóór de `</body>` sectie; bijvoorbeeld:
+Het ContextHub-item moet direct onder het `<head>` -tag, terwijl Cloud Servicen moeten worden opgenomen in de `<head>` en vóór de `</body>` sectie; bijvoorbeeld:
 
 ```xml
 <head>
@@ -36,7 +36,7 @@ Het ContextHub-item moet direct onder het `<head>` -tag, terwijl Cloud Services 
 
 De `contexthub` script dat u na het `<head>` het element voegt de eigenschappen ContextHub aan de pagina toe.
 
-De `cloudservices` scripts die u toevoegt in het dialoogvenster `<head>` en de `<body>` de secties zijn van toepassing op de configuraties van de wolkendiensten die aan de pagina worden toegevoegd. (Als de pagina meer dan één configuratie van Cloud Services gebruikt, moet u ContextHub jsp en Cloud Services jsp slechts eenmaal omvatten.)
+De `cloudservices` scripts die u in het dialoogvenster `<head>` en de `<body>` de secties zijn van toepassing op de configuraties van de wolkendiensten die aan de pagina worden toegevoegd. (Als de pagina meer dan één configuratie van Cloud Servicen gebruikt, moet u ContextHub jsp en de Cloud Servicen jsp slechts eenmaal omvatten.)
 
 Wanneer een Adobe Analytics-framework aan de pagina wordt toegevoegd, wordt `cloudservices` scripts genereren JavaScript met betrekking tot Adobe Analytics en verwijzingen naar bibliotheken aan de clientzijde, vergelijkbaar met het volgende voorbeeld:
 
@@ -130,21 +130,21 @@ Componenten die met het Adobe Analytics-framework werken, worden in de Sidekick 
 
 Componenten kunnen communiceren met het Adobe Analytics-framework wanneer de component een onderliggende node heeft met de naam `analytics`. De `analytics` node heeft de volgende eigenschappen:
 
-* `cq:trackevents`: Identificeert de CQ-gebeurtenissen die de component beschikbaar maakt. (Zie Aangepaste gebeurtenissen.)
-* `cq:trackvars`: De CQ-variabelen die zijn toegewezen aan Adobe Analytics-eigenschappen krijgen een naam.
+* `cq:trackevents`: Identificeert de CQ-gebeurtenissen die door de component worden weergegeven. (Zie Aangepaste gebeurtenissen.)
+* `cq:trackvars`: Namen van de CQ-variabelen die zijn toegewezen met Adobe Analytics-eigenschappen.
 * `cq:componentName`: De naam voor de component die in Sidekick wordt weergegeven.
-* `cq:componentGroup`: De groep in Sidekick die de component omvat.
+* `cq:componentGroup`: De groep in Sidekick die de component bevat.
 
-De code in de component JSP voegt het JavaScript toe aan de pagina die het volgen activeert, en bepaalt de gegevens die worden gevolgd. De naam van de gebeurtenis en de gegevensnamen die in het JavaScript worden gebruikt, moeten overeenkomen met de corresponderende waarden van de `analytics` knoopeigenschappen.
+De code in de component JSP voegt het JavaScript toe aan de pagina die het volgen activeert, en bepaalt de gegevens die worden gevolgd. De naam van de gebeurtenis en de gegevensnamen die in het JavaScript worden gebruikt, moeten overeenkomen met de overeenkomstige waarden van het `analytics` knoopeigenschappen.
 
 * Gebruik het kenmerk voor het bijhouden van gegevens om gebeurtenisgegevens bij te houden wanneer een pagina wordt geladen. (Zie [Aangepaste gebeurtenissen bijhouden bij laden van pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-on-page-load).)
 * Gebruik de functie CQ_Analytics.record om gebeurtenisgegevens bij te houden wanneer gebruikers met paginafuncties werken. (Zie [Aangepaste gebeurtenissen bijhouden na laden van pagina](/help/sites-developing/extending-analytics.md#tracking-custom-events-after-page-load).)
 
 Wanneer u deze gegevens-volgende methodes gebruikt, voert de de integratiemodule van Adobe Analytics automatisch de vraag aan Adobe Analytics uit om de gebeurtenissen en de gegevens te registreren.
 
-### Voorbeeld: Te openen klikken bijhouden {#example-tracking-topnav-clicks}
+### Voorbeeld: klikken op topnav bijhouden {#example-tracking-topnav-clicks}
 
-Breid de stichtingshoogste component uit zodat Adobe Analytics spoor klikt op navigatiekoppelingen bij de bovenkant van de pagina. Wanneer op een navigatiekoppeling wordt geklikt, registreert Adobe Analytics de koppeling waarop is geklikt en de pagina waarop erop is geklikt.
+Breid de stichting uit topnav component zodat de sporen van Adobe Analytics op navigatiekoppelingen bij de bovenkant van de pagina klikken. Wanneer op een navigatiekoppeling wordt geklikt, registreert Adobe Analytics de koppeling waarop is geklikt en de pagina waarop erop is geklikt.
 
 De volgende procedures vereisen dat u reeds de volgende taken hebt uitgevoerd:
 
@@ -161,7 +161,7 @@ Kopieer de bovenste component naar de CQ-toepassing. De procedure vereist dat uw
 
 #### Integratie van topnav met het Adobe Analytics-kader {#integrating-topnav-with-the-adobe-analytics-framework}
 
-Configureer de bovenste component en bewerk het JSP-bestand om de volgende gebeurtenissen en gegevens te definiëren.
+Configureer de component topnav en bewerk het JSP-bestand om de volgende gebeurtenissen en gegevens te definiëren.
 
 1. Klik met de rechtermuisknop op het bovenste knooppunt en klik op Maken > Node maken. Geef de volgende eigenschapswaarden op en klik op OK:
 
@@ -285,7 +285,7 @@ De inhoud van de `topnav.jsp` Het bestand moet er als volgt uitzien:
 
 >[!NOTE]
 >
->Het is vaak wenselijk om gegevens van ContextHub te volgen. Voor informatie over het gebruik van JavaScript om deze informatie te verkrijgen, raadpleegt u [Toegang tot Waarden in ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
+>Het is vaak wenselijk om gegevens van ContextHub te volgen. Voor informatie over het gebruik van JavaScript om deze informatie te verkrijgen, zie [Toegang tot Waarden in ContextHub](/help/sites-developing/extending-analytics.md#accessing-values-in-the-contexthub).
 
 #### De volgende component toevoegen aan de Sidekick {#adding-the-tracking-component-to-sidekick}
 
@@ -360,7 +360,7 @@ De `analytics` knooppunt van de component moet de variabelenamen zichtbaar maken
 * product.evars.eVarName1
 * product.evars.eVarName_n
 
-De module eCommerce biedt verschillende componenten die variabele gegevens van s.products genereren. De `submitorder` component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genereert JavaScript die vergelijkbaar is met het volgende voorbeeld:
+De module eCommerce biedt verschillende componenten die variabele gegevens van s.products genereren. Bijvoorbeeld de `submitorder` component ([http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp](http://localhost:4502/crx/de/index.jsp#/libs/commerce/components/submitorder/submitorder.jsp)) genereert JavaScript die vergelijkbaar is met het volgende voorbeeld:
 
 ```
 <script type="text/javascript">

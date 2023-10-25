@@ -1,15 +1,15 @@
 ---
 title: Developing and Page Diff
-description: Developing and Page Diff
+description: Leer hoe u de functie page diff in Adobe Experience Manager kunt ontwikkelen en gebruiken.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: b07134b2-074a-4d52-8d0c-7e7abe51fc3a
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '370'
+source-wordcount: '380'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,9 @@ ht-degree: 0%
 
 ## Overzicht van functies {#feature-overview}
 
-Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
+Inhoud maken is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies enzovoort. Voor meer informatie over deze gebruikersfunctie raadpleegt u [Pagina grijs](/help/sites-authoring/page-diff.md).
+Met het paginagecheiding kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies enzovoort. Zie voor meer informatie over deze gebruikersfunctie [Pagina grijs](/help/sites-authoring/page-diff.md).
 
 ## Bewerkingsdetails {#operation-details}
 
@@ -38,7 +38,7 @@ Er wordt automatisch een opschoningstaak uitgevoerd om deze tijdelijke inhoud op
 
 Eerder moest in de klassieke gebruikersinterface speciale aandacht worden besteed aan de ontwikkeling om AEM verschillen te vergemakkelijken (zoals het gebruik van `cq:text` tag lib, of aangepaste integratie van de `DiffService` OSGi-service in componenten). Dit is niet meer nodig voor de nieuwe functie voor Diff, aangezien het diff cliënt-kant via DOM vergelijking voorkomt.
 
-Er zijn echter enkele beperkingen die de ontwikkelaar in overweging moet nemen.
+Er zijn echter enkele beperkingen die door de ontwikkelaar in overweging moeten worden genomen.
 
 * Deze functie gebruikt CSS-klassen die geen naamruimte hebben voor het AEM Product. Als andere aangepaste CSS-klassen of CSS-klassen van derden met dezelfde namen op de pagina worden opgenomen, kan dit van invloed zijn op de weergave van het diff.
 

@@ -1,14 +1,14 @@
 ---
 title: Core Components uitproberen in We.Retail
-description: Core Components uitproberen in We.Retail
+description: Leer hoe u Core Components kunt uitproberen in Adobe Experience Manager met We.Retail.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: b5f2be67-c93c-4dbc-acc0-3edd8f1a282f
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '533'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
 1. Wanneer u de rail opent in de componentenconsole, kunt u filteren voor een bepaalde componentgroep. De kerncomponenten vindt u in
 
-   * `.core-wcm`: De standaardbasiscomponenten
+   * `.core-wcm`: De standaard kerncomponenten
    * `.core-wcm-form`: De kerncomponenten voor het verzenden van formulieren
 
    Kies `.core-wcm`.
@@ -35,7 +35,7 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 1. Alle kerncomponenten krijgen een naam **v1**, waaruit blijkt dat dit de eerste versie van deze kerncomponent is. Regelmatige versies worden uitgebracht, die versiecompatibel zijn met AEM en eenvoudig upgraden mogelijk maken, zodat u kunt profiteren van de nieuwste functies.
 1. Klikken **Tekst (v1)**.
 
-   Zie de **Type bron** van de component `/apps/core/wcm/components/text/v1/text`. Kerncomponenten vindt u onder `/apps/core/wcm/components` en zijn versioned per component.
+   Zie de **Resourcetype** van de component `/apps/core/wcm/components/text/v1/text`. Kerncomponenten vindt u onder `/apps/core/wcm/components` en zijn versioned per component.
 
    ![chlimage_1-163](assets/chlimage_1-163.png)
 
@@ -44,17 +44,17 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Ga terug naar de componentconsole. Filter voor de groep **Wij.Detailhandel** en selecteert u de **Tekst** component.
-1. Zie de **Type bron** punten naar een component zoals verwacht onder `/apps/weretail` maar de **Super Type resource** verwijst terug naar de kerncomponent `/apps/core/wcm/components/text/v1/text`.
+1. Zie de **Resourcetype** punten naar een component zoals wordt verwacht onder `/apps/weretail` maar de **Super Type resource** verwijst terug naar de kerncomponent `/apps/core/wcm/components/text/v1/text`.
 
    ![chlimage_1-165](assets/chlimage_1-165.png)
 
-1. Klik op de knop **Live-gebruik** om te zien op welke pagina&#39;s deze component wordt gebruikt. Klik op de eerste knop **Bedankt** pagina om de pagina te bewerken.
+1. Klik op de knop **Live-gebruik** om te zien op welke pagina&#39;s deze component wordt gebruikt. Klik eerst **Bedankt** pagina om de pagina te bewerken.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
 1. Selecteer op de pagina Hartelijk dank de tekstcomponent en klik in het bewerkingsmenu van de component op het pictogram Overerving annuleren.
 
-   [We.Retail heeft een geglobaliseerde sitestructuur](/help/sites-developing/we-retail-globalized-site-structure.md) waar inhoud van taalstramienen naar [live kopieën via een mechanisme dat overerving wordt genoemd](/help/sites-administering/msm.md). Daarom moet overerving worden geannuleerd, zodat een gebruiker tekst handmatig kan bewerken.
+   [We.Retail heeft een geglobaliseerde sitestructuur](/help/sites-developing/we-retail-globalized-site-structure.md) waar inhoud van taalstramienen naar [levende exemplaren door een mechanisme genoemd erfenis](/help/sites-administering/msm.md). Daarom moet overerving worden geannuleerd, zodat een gebruiker tekst handmatig kan bewerken.
 
    ![chlimage_1-167](assets/chlimage_1-167.png)
 

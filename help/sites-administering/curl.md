@@ -1,7 +1,7 @@
 ---
 title: cURL gebruiken met AEM
 seo-title: Using cURL with AEM
-description: Leer hoe u cURL met AEM gebruikt.
+description: Leer hoe u cURL gebruikt voor algemene Adobe Experience Manager-taken.
 seo-description: Learn how to use cURL with AEM.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
 contentOwner: Silviu Raiman
@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: fafcf5f9ec64f147447300b02afbc0590d0c5e22
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '885'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld e
 
    ![chlimage_1-66](assets/chlimage_1-66a.png)
 
-1. Start de ontwikkelaarsgereedschappen en selecteer de **Netwerk** tab. Klik op de knop **Logbestand behouden** voordat u de console wist.
+1. Start de ontwikkelaars en selecteer de **Netwerk** tab. Klik op de knop **Logbestand behouden** voordat u de console wist.
 
    ![chlimage_1-67](assets/chlimage_1-67a.png)
 
@@ -317,7 +317,7 @@ Zie [Opteren in Adobe Analytics en Adobe Target](/help/sites-administering/opt-i
 
 Zie [Single Sign On](/help/sites-deploying/single-sign-on.md) voor meer informatie.
 
-## Algemene AEM-URL-opdrachten voor het manipuleren van inhoud {#common-content-manipulation-aem-curl-commands}
+## Algemene AEM-URL-opdrachten voor bewerken van inhoud {#common-content-manipulation-aem-curl-commands}
 
 Hier volgt een lijst met AEM cURL-opdrachten voor het manipuleren van inhoud.
 
@@ -411,6 +411,6 @@ curl -u <user>:<password> -F"test2.properties=@test.properties"  http://localhos
 curl -u <user>:<password> -F "*=@test.properties;type=text/plain" http://localhost:4502/etc/test
 ```
 
-### Manipulatie van bedrijfsmiddelen {#asset-manipulation}
+### Manipulatie van middelen {#asset-manipulation}
 
 Zie [Elementen HTTP-API](/help/assets/mac-api-assets.md) voor meer informatie.

@@ -1,14 +1,14 @@
 ---
 title: Adaptieve sjabloonrendering
-description: Adaptieve sjabloonrendering
+description: Meer informatie over adaptieve sjabloonrendering in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 58cac3b1-b7cd-44b2-b89b-f5ee8811c198
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '480'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ De adaptieve sjabloonrendering biedt een manier om een pagina met variaties te b
 
 De malplaatjes worden gebouwd rond een ontvankelijk net, en de pagina&#39;s die op deze malplaatjes worden gecreeerd volledig ontvankelijk zijn, die automatisch aan viewport van het cliëntapparaat aanpassen. Met behulp van de werkbalk Emulator in de pagina-editor kunnen auteurs lay-outs richten op specifieke apparaten.
 
-Het is ook mogelijk om sjablonen in te stellen ter ondersteuning van adaptieve rendering. Wanneer apparaatgroepen correct zijn geconfigureerd, wordt de pagina weergegeven met een andere kiezer in de URL wanneer een apparaat wordt geselecteerd in de emulatormodus. Met behulp van een kiezer kan een specifieke pagina-rendering rechtstreeks via de URL worden aangeroepen.
+Het is ook mogelijk om sjablonen in te stellen ter ondersteuning van adaptieve rendering. Wanneer apparaatgroepen correct zijn geconfigureerd, wordt de pagina weergegeven met een andere kiezer in de URL wanneer een apparaat wordt geselecteerd in de emulatormodus. Met behulp van een kiezer kan een specifieke pagina-rendering rechtstreeks via de URL worden opgeroepen.
 
 Onthoud dat u apparaatgroepen instelt:
 
@@ -46,7 +46,7 @@ In dit voorbeeld gaat u de bestaande apparaatgroep configureren **Slimme telefoo
 
    ![chlimage_1-157](assets/chlimage_1-157.png)
 
-1. De kiezer is beschikbaar voor de **BlackBerry®** en **iPhone 4** voorzien de apparatengroep **Slimme telefoon** wordt in de volgende stappen toegevoegd aan de sjabloon- en paginastructuren.
+1. De kiezer is beschikbaar voor de **BlackBerry®** en **IPHONE 4** voorzien de apparatengroep **Slimme telefoon** wordt in de volgende stappen toegevoegd aan de sjabloon- en paginastructuren.
 
    ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -70,7 +70,7 @@ In dit voorbeeld gaat u de bestaande apparaatgroep configureren **Slimme telefoo
 
    ![chlimage_1-160](assets/chlimage_1-160.png)
 
-Nu wanneer u de [emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de pagina-editor (bijvoorbeeld wanneer [de lay-out wijzigen](/help/sites-authoring/responsive-layout.md)) en u kiest een apparaat van de geconfigureerde apparaatgroep, wordt de pagina weergegeven met een kiezer als onderdeel van de URL.
+Nu wanneer u de opdracht [emulator](/help/sites-authoring/responsive-layout.md#layout-definitions-device-emulation-and-breakpoints) in de pagina-editor (bijvoorbeeld wanneer [de lay-out wijzigen](/help/sites-authoring/responsive-layout.md)) en u kiest een apparaat van de geconfigureerde apparaatgroep, wordt de pagina weergegeven met een kiezer als onderdeel van de URL.
 
 In dit voorbeeld wordt bij het bewerken van een pagina gebaseerd op de **Experience Page** sjabloon, en iPhone 4 kiezen in de emulator, wordt de pagina weergegeven inclusief de kiezer als `arctic-surfing-in-lofoten.smart.html` in plaats van `arctic-surfing-in-lofoten.html`
 

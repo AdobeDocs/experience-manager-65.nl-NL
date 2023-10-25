@@ -1,7 +1,7 @@
 ---
 title: Programmatische interactie met Workflows
 seo-title: Interacting with Workflows Programmatically
-description: Programmatische interactie met Workflows
+description: Leer hoe u programmatisch kunt werken met workflows in Adobe Experience Manager.
 seo-description: null
 uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '2004'
+source-wordcount: '2011'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De workflow Java API bestaat uit de [`com.adobe.granite.workflow`](https://helpx
 * werkartikelen
 * workflowinstanties
 * workflowgegevens
-* postvakken
+* items in postvak
 
 De klasse biedt ook verschillende methoden voor het ingrijpen in workflowlevenscycli.
 
@@ -48,7 +48,7 @@ De volgende tabel bevat koppelingen naar de referentiedocumentatie van verschill
 
 ## Workflowobjecten verkrijgen in ECMA-scripts {#obtaining-workflow-objects-in-ecma-scripts}
 
-Zoals beschreven in [Script zoeken](/help/sites-developing/the-basics.md#locating-the-script), AEM (via Apache Sling) biedt een ECMA-scriptengine die ECMA-scripts op de server uitvoert. De [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) klasse is direct beschikbaar voor uw scripts als de `sling` variabele.
+Zoals beschreven in [Script zoeken](/help/sites-developing/the-basics.md#locating-the-script), AEM (via Apache Sling) biedt een ECMA-scriptengine die ECMA-scripts op de server uitvoert. De [`org.apache.sling.scripting.core.ScriptHelper`](https://sling.apache.org/apidocs/sling5/org/apache/sling/scripting/core/ScriptHelper.html) -klasse is direct beschikbaar voor uw scripts als de `sling` variabele.
 
 De `ScriptHelper` klasse verleent toegang tot `SlingHttpServletRequest` die u kunt gebruiken om uiteindelijk de `WorkflowSession` object; bijvoorbeeld:
 
@@ -58,7 +58,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 ## De REST-API voor workflows gebruiken {#using-the-workflow-rest-api}
 
-De workflowconsole maakt intensief gebruik van de REST API; Deze pagina beschrijft dus de REST API voor workflows.
+De workflowconsole maakt intensief gebruik van de REST API, zodat deze pagina de REST API voor workflows beschrijft.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ De volgende acties worden ondersteund met de REST API:
 
 Op deze pagina wordt aangenomen dat AEM op localhost op poort wordt uitgevoerd `4502` en dat de installatiecontext &quot; `/`&quot; (basis). Als dit niet het geval is voor uw installatie, moeten de URI&#39;s, waarop de HTTP-aanvragen van toepassing zijn, dienovereenkomstig worden aangepast.
 
-De ondersteunde rendering voor `GET` Aanvragen zijn de JSON-rendering. De URL&#39;s voor `GET` moet `.json` extensie, bijvoorbeeld:
+De ondersteunde rendering voor `GET` Aanvragen zijn de JSON-rendering. De URL&#39;s voor `GET` moet de `.json` bijvoorbeeld:
 
 `http://localhost:4502/etc/workflow.json`
 
@@ -99,7 +99,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Hiermee wordt een nieuwe werkstroominstantie gemaakt. De parameters zijn:<br /> - <code>model</code>: de ID (URI) van het respectieve werkschemamodel<br /> - <code>payloadType</code>: met het type lading (bijvoorbeeld <code>JCR_PATH</code> of URL).<br /> De lading wordt verzonden als parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een locatiekopbal die URL van de nieuwe werkschemainstantiebron bevat.</p> </td>
+   <td><p>Maakt een nieuwe werkstroominstantie. De parameters zijn:<br /> - <code>model</code>: de id (URI) van het respectieve workflowmodel<br /> - <code>payloadType</code>: bevat het type van de lading (bijvoorbeeld <code>JCR_PATH</code> of URL).<br /> De lading wordt verzonden als parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een locatiekopbal die URL van de nieuwe werkschemainstantiebron bevat.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -155,12 +155,12 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Hiermee maakt u een nieuw workflowmodel. Als de parameter <code>title</code> wordt verzonden, wordt een nieuw model gecreeerd met de gespecificeerde titel. Een JSON-modeldefinitie als parameter koppelen <code>model</code> maakt een nieuw workflowmodel volgens de opgegeven definitie.<br /> A <code>201</code> response (<code>CREATED</code>) wordt teruggestuurd met een locatiekoptekst die de URL van de nieuwe bron van het workflowmodel bevat.<br /> Dit gebeurt ook wanneer een modeldefinitie wordt gekoppeld als een bestandsparameter die <code>modelfile</code>.<br /> In beide gevallen <code>model</code> en <code>modelfile</code> parameters, een extra parameter genoemd <code>type</code> is vereist om het rangschikkingsformaat te bepalen. De nieuwe rangschikkingsformaten kunnen worden geïntegreerd gebruikend OSGI API. Er wordt een standaard JSON-serializer geleverd met de workflow-engine. Het type is JSON. Zie hieronder voor een voorbeeld van de opmaak.</td>
+   <td>Maakt een nieuw workflowmodel. Als de parameter <code>title</code> wordt verzonden, wordt een nieuw model gecreeerd met de gespecificeerde titel. Een JSON-modeldefinitie als parameter koppelen <code>model</code> maakt een nieuw workflowmodel volgens de opgegeven definitie.<br /> A <code>201</code> response (<code>CREATED</code>) wordt teruggestuurd met een locatiekoptekst die de URL van de nieuwe bron van het workflowmodel bevat.<br /> Dit gebeurt ook wanneer een modeldefinitie wordt gekoppeld als een bestandsparameter die <code>modelfile</code>.<br /> In beide gevallen <code>model</code> en <code>modelfile</code> parameters, een extra parameter genoemd <code>type</code> is vereist om het rangschikkingsformaat te bepalen. De nieuwe rangschikkingsformaten kunnen worden geïntegreerd gebruikend OSGI API. Er wordt een standaard JSON-serializer geleverd met de workflow-engine. Het type is JSON. Zie hieronder voor een voorbeeld van de opmaak.</td>
   </tr>
  </tbody>
 </table>
 
-Voorbeeld: in de browser, een verzoek om `http://localhost:4502/etc/workflow/models.json` Hiermee genereert u een JSON-reactie die vergelijkbaar is met het volgende:
+Voorbeeld: in de browser kunt u een aanvraag indienen op `http://localhost:4502/etc/workflow/models.json` Hiermee genereert u een JSON-reactie die vergelijkbaar is met het volgende:
 
 ```
 [
@@ -240,7 +240,7 @@ Wanneer `*{uri}*` Dit is het pad naar het modelknooppunt in de repository.
   </tr>
   <tr>
    <td><code>PUT</code></td>
-   <td>Hiermee werkt u de <code>HEAD</code> versie van het model (maakt een nieuwe versie).<br /> De volledige modeldefinitie voor de nieuwe versie van het model moet worden toegevoegd als een parameter genoemd <code>model</code>. Daarnaast <code>type</code> parameter is nodig zoals bij het creëren van nieuwe modellen en moet de waarde hebben <code>JSON</code>.<br /> </td>
+   <td>Hiermee werkt u de <code>HEAD</code> versie van het model (maakt een nieuwe versie).<br /> De volledige modeldefinitie voor de nieuwe versie van het model moet worden toegevoegd als een parameter genoemd <code>model</code>. Daarnaast een <code>type</code> parameter is nodig zoals bij het creëren van nieuwe modellen en moet de waarde hebben <code>JSON</code>.<br /> </td>
   </tr>
   <tr>
    <td><code>POST</code></td>
@@ -253,7 +253,7 @@ Wanneer `*{uri}*` Dit is het pad naar het modelknooppunt in de repository.
  </tbody>
 </table>
 
-Voorbeeld: in de browser, een verzoek om `http://localhost:4502/var/workflow/models/publish_example.json` retourneert een `json` reactie die vergelijkbaar is met de volgende code:
+Voorbeeld: in de browser kunt u een aanvraag indienen op `http://localhost:4502/var/workflow/models/publish_example.json` retourneert een `json` reactie die vergelijkbaar is met de volgende code:
 
 ```shell
 {
@@ -331,7 +331,7 @@ Voorbeeld: in de browser, een verzoek om `http://localhost:4502/var/workflow/mod
 ]}
 ```
 
-#### Het beheren van een Model van het Werkschema door zijn Versie {#managing-a-workflow-model-by-its-version}
+#### Een workflowmodel beheren op basis van de versie {#managing-a-workflow-model-by-its-version}
 
 De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
@@ -390,7 +390,7 @@ Voorbeeld met krullen:
 curl -u admin:admin http://localhost:4502/etc/workflow/instances.RUNNING.json
 ```
 
-De `uri` weergegeven in de resultaten kunnen worden gebruikt als de instantie `id` in andere opdrachten; bijvoorbeeld:
+De `uri` weergegeven in de resultaten kunnen worden gebruikt als de instantie `id` in andere opdrachten, bijvoorbeeld:
 
 ```shell
 [
@@ -404,13 +404,13 @@ De `uri` weergegeven in de resultaten kunnen worden gebruikt als de instantie `i
 
 ### Hoe te om de Titel van het Werkschema te veranderen {#how-to-change-the-workflow-title}
 
-Als u het dialoogvenster **Werkstroomtitel** weergegeven in de **Instanties** tabblad van de workflowconsole, een `POST` opdracht:
+Als u het dialoogvenster **Werkstroomtitel** weergegeven in het dialoogvenster **Instanties** tabblad van de workflowconsole, een `POST` opdracht:
 
 * tot: `http://localhost:4502/etc/workflow/instances/{id}`
 
 * met de volgende parameters:
 
-   * `action`: de waarde ervan moet : `UPDATE`
+   * `action`: de waarde moet: `UPDATE`
    * `workflowTitle`: de titel van de workflow
 
 #### Hoe te om de Titel van het Werkschema te veranderen - REST gebruikend krullen {#how-to-change-the-workflow-title-rest-using-curl}
@@ -472,7 +472,7 @@ var wfsession = sling.getRequest().getResource().getResourceResolver().adaptTo(P
 
 ### Workflowmodellen maken, lezen of verwijderen {#creating-reading-or-deleting-workflow-models}
 
-De volgende voorbeelden laten zien hoe u workflowmodellen kunt openen:
+In de volgende voorbeelden ziet u hoe u workflowmodellen kunt openen:
 
 * In de code voor Java- en ECMA-scripts wordt het `WorkflowSession.createNewModel` methode.
 * De curl-opdracht geeft rechtstreeks toegang tot het model via de URL.
@@ -490,20 +490,20 @@ De gebruikte voorbeelden:
 
 Bij het maken van een nieuw model:
 
-* De werkschemamodeleditor vereist dat modellen een specifieke knooppuntstructuur hieronder gebruiken `/var/workflow/models`. Het bovenliggende knooppunt van het model moet van het type zijn `cq:Page` een `jcr:content` knooppunt met de volgende eigenschapswaarden:
+* De werkstroommodeleditor vereist dat modellen een specifieke knooppuntstructuur hieronder gebruiken `/var/workflow/models`. Het bovenliggende knooppunt van het model moet van het type zijn `cq:Page` een `jcr:content` knooppunt met de volgende eigenschapswaarden:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
 
-   Wanneer u een model maakt, moet u dit eerst maken `cq:Page` knoop en gebruik zijn `jcr:content` knooppunt als het bovenliggende knooppunt van het modelknooppunt.
+  Wanneer u een model maakt, moet u dit eerst maken `cq:Page` knoop en gebruik zijn `jcr:content` knooppunt als het bovenliggende knooppunt van het modelknooppunt.
 
 * De `id` argument dat sommige methodes voor het identificeren van het model vereisen is de absolute weg van de modelknoop in de bewaarplaats:
 
-   `/var/workflow/models/<*model_name>*/jcr:content/model`
+  `/var/workflow/models/<*model_name>*/jcr:content/model`
 
-   >[!NOTE]
-   >
-   >Zie [Hoe te om van alle Modellen van het Werkschema een lijst te maken](#how-to-list-all-workflow-models).
+  >[!NOTE]
+  >
+  >Zie [Hoe te om van alle Modellen van het Werkschema een lijst te maken](#how-to-list-all-workflow-models).
 
 #### Workflowmodellen maken, lezen of verwijderen - Java {#creating-reading-or-deleting-workflow-models-java}
 
@@ -626,63 +626,63 @@ wfSession.terminateWorkflow(workflow);
 
 * **Een workflow starten**
 
-   ```shell
-   # starting a workflow
-   curl -d "model={id}&payloadType={type}&payload={payload}" http://localhost:4502/etc/workflow/instances
-   
-   # for example:
-   curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
-   ```
+  ```shell
+  # starting a workflow
+  curl -d "model={id}&payloadType={type}&payload={payload}" http://localhost:4502/etc/workflow/instances
+  
+  # for example:
+  curl -u admin:admin -d "model=/var/workflow/models/request_for_activation&payloadType=JCR_PATH&payload=/content/we-retail/us/en/products" http://localhost:4502/etc/workflow/instances
+  ```
 
 * **De instanties weergeven**
 
-   ```shell
-   # listing the instances
-   curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
-   ```
+  ```shell
+  # listing the instances
+  curl -u admin:admin http://localhost:4502/etc/workflow/instances.json
+  ```
 
-   Hierin worden alle gevallen vermeld; bijvoorbeeld:
+  Hier worden alle instanties vermeld, bijvoorbeeld:
 
-   ```shell
-   [
-       {"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_1"}
-       ,{"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_2"}
-   ]
-   ```
+  ```shell
+  [
+      {"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_1"}
+      ,{"uri":"/var/workflow/instances/server0/2018-02-26/prototype-01_2"}
+  ]
+  ```
 
-   >[!NOTE]
-   >
-   >Zie [Hoe te om een Lijst van alle Lopende Werkschema&#39;s te krijgen](#how-to-get-a-list-of-all-running-workflows-with-their-ids) met hun ID&#39;s voor aanbiedingsinstanties met een specifieke status.
+  >[!NOTE]
+  >
+  >Zie [Hoe te om een Lijst van alle Lopende Werkschema&#39;s te krijgen](#how-to-get-a-list-of-all-running-workflows-with-their-ids) met hun ID&#39;s voor aanbiedingsinstanties met een specifieke status.
 
 * **Een workflow opschorten**
 
-   ```shell
-   # suspending a workflow
-   curl -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # suspending a workflow
+  curl -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=SUSPENDED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 * **Een workflow hervatten**
 
-   ```shell
-   # resuming a workflow
-   curl -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # resuming a workflow
+  curl -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=RUNNING" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 * **Een werkstroominstantie beëindigen**
 
-   ```shell
-   # terminating a workflow
-   curl -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/{id}
-   
-   # for example:
-   curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
-   ```
+  ```shell
+  # terminating a workflow
+  curl -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/{id}
+  
+  # for example:
+  curl -u admin:admin -d "state=ABORTED" http://localhost:4502/etc/workflow/instances/server0/2017-03-08/request_for_activation_1
+  ```
 
 ### Interactie met werkitems {#interacting-with-work-items}
 
@@ -728,89 +728,89 @@ wfSession.complete(workItem, routes.get(0));
 
 * **Werkitems van de aanbieding in het Postvak IN**
 
-   ```shell
-   # listing the work items
-   curl -u admin:admin http://localhost:4502/bin/workflow/inbox
-   ```
+  ```shell
+  # listing the work items
+  curl -u admin:admin http://localhost:4502/bin/workflow/inbox
+  ```
 
-   Details voor werkitems die zich momenteel in de Postvak IN bevinden, worden weergegeven. bijvoorbeeld:
+  Details voor werkitems die zich momenteel in de Postvak IN bevinden, worden weergegeven, bijvoorbeeld:
 
-   ```shell
-   [{
-       "uri_xss": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
-       "uri": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
-       "currentAssignee_xss": "workflow-administrators",
-       "currentAssignee": "workflow-administrators",
-       "startTime": 1519656289274,
-       "payloadType_xss": "JCR_PATH",
-       "payloadType": "JCR_PATH",
-       "payload_xss": "/content/we-retail/es/es",
-       "payload": "/content/we-retail/es/es",
-       "comment_xss": "Process resource is null",
-       "comment": "Process resource is null",
-       "type_xss": "WorkItem",
-       "type": "WorkItem"
-     },{
-       "uri_xss": "configuration/configure_analyticstargeting",
-       "uri": "configuration/configure_analyticstargeting",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/securitychecklist",
-       "uri": "configuration/securitychecklist",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/enable_collectionofanonymoususagedata",
-       "uri": "configuration/enable_collectionofanonymoususagedata",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     },{
-       "uri_xss": "configuration/configuressl",
-       "uri": "configuration/configuressl",
-       "currentAssignee_xss": "administrators",
-       "currentAssignee": "administrators",
-       "type_xss": "Task",
-       "type": "Task"
-     }
-   ```
+  ```shell
+  [{
+      "uri_xss": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
+      "uri": "/var/workflow/instances/server0/2018-02-26/prototype-01_2/workItems/node2_var_workflow_instances_server0_2018-02-26_prototype-01_2",
+      "currentAssignee_xss": "workflow-administrators",
+      "currentAssignee": "workflow-administrators",
+      "startTime": 1519656289274,
+      "payloadType_xss": "JCR_PATH",
+      "payloadType": "JCR_PATH",
+      "payload_xss": "/content/we-retail/es/es",
+      "payload": "/content/we-retail/es/es",
+      "comment_xss": "Process resource is null",
+      "comment": "Process resource is null",
+      "type_xss": "WorkItem",
+      "type": "WorkItem"
+    },{
+      "uri_xss": "configuration/configure_analyticstargeting",
+      "uri": "configuration/configure_analyticstargeting",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/securitychecklist",
+      "uri": "configuration/securitychecklist",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/enable_collectionofanonymoususagedata",
+      "uri": "configuration/enable_collectionofanonymoususagedata",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    },{
+      "uri_xss": "configuration/configuressl",
+      "uri": "configuration/configuressl",
+      "currentAssignee_xss": "administrators",
+      "currentAssignee": "administrators",
+      "type_xss": "Task",
+      "type": "Task"
+    }
+  ```
 
 * **Werkitems delegeren**
 
-   ```xml
-   # delegating
-   curl -d "item={item}&delegatee={delegatee}" http://localhost:4502/bin/workflow/inbox
-   
-   # for example:
-   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_act_1&delegatee=administrators" http://localhost:4502/bin/workflow/inbox
-   ```
+  ```xml
+  # delegating
+  curl -d "item={item}&delegatee={delegatee}" http://localhost:4502/bin/workflow/inbox
+  
+  # for example:
+  curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_act_1&delegatee=administrators" http://localhost:4502/bin/workflow/inbox
+  ```
 
-   >[!NOTE]
-   >
-   >De `delegatee` moet een geldige optie zijn voor de workflowstap.
+  >[!NOTE]
+  >
+  >De `delegatee` moet een geldige optie zijn voor de workflowstap.
 
 * **Werkonderdelen voltooien of naar de volgende stap gaan**
 
-   ```xml
-   # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
-   http://localhost:4502/etc/workflow/instances/<path-to-the-workitem>.routes.json
-   
-   # completing or advancing to the next step; use the appropriate route ID (rid value) from the above list
-   curl -d "item={item}&route={route}" http://localhost:4502/bin/workflow/inbox
-   
-   # for example:
-   curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
-   ```
+  ```xml
+  # retrieve the list of routes; the results will be similar to {"results":1,"routes":[{"rid":"233123169","label":"End","label_xss":"End"}]}
+  http://localhost:4502/etc/workflow/instances/<path-to-the-workitem>.routes.json
+  
+  # completing or advancing to the next step; use the appropriate route ID (rid value) from the above list
+  curl -d "item={item}&route={route}" http://localhost:4502/bin/workflow/inbox
+  
+  # for example:
+  curl -u admin:admin -d "item=/etc/workflow/instances/server0/2017-03-08/request_for_activation_1/workItems/node1_etc_workflow_instances_server0_2017-03-08_request_for_activation_1&route=233123169" http://localhost:4502/bin/workflow/inbox
+  ```
 
 ### Luisteren naar workflowgebeurtenissen {#listening-for-workflow-events}
 
-Gebruik het OSGi-gebeurtenisframework om te luisteren naar gebeurtenissen die [ `com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) definieert. Deze klasse biedt ook verschillende nuttige methoden om informatie over het onderwerp van de gebeurtenis te verkrijgen. De `getWorkItem` methode retourneert de `WorkItem` object voor het werkitem dat bij de gebeurtenis is betrokken.
+Gebruik het OSGi-gebeurtenisframework om te luisteren naar gebeurtenissen die [`com.adobe.granite.workflow.event.WorkflowEvent`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/granite/workflow/event/WorkflowEvent.html) definieert. Deze klasse biedt ook verschillende nuttige methoden om informatie over het onderwerp van de gebeurtenis te verkrijgen. Bijvoorbeeld de `getWorkItem` methode retourneert de methode `WorkItem` object voor het werkitem dat bij de gebeurtenis is betrokken.
 
 De volgende voorbeeldcode definieert een service die luistert naar workflowgebeurtenissen en taken uitvoert op basis van het type gebeurtenis.
 

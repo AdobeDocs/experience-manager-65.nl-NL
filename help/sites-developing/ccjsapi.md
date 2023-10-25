@@ -1,7 +1,7 @@
 ---
 title: JavaScript-API voor clientcontext
 seo-title: Client Context JavaScript API
-description: De JavaScript API voor clientcontext
+description: Meer informatie over de JavaScript API voor clientcontext in Adobe Experience Manager.
 seo-description: The JavaScript API for Client Context
 uuid: be58998c-f23e-4768-8394-1f1ad3994c4c
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '3153'
+source-wordcount: '3159'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Retourneert een sessiearchief met een opgegeven naam. Zie ook [Een sessiewinkel 
 
 **Parameters**
 
-* naam: Tekenreeks. De naam van de sessiewinkel.
+* name: String. De naam van de sessiewinkel.
 
 **Retourneert**
 
@@ -46,7 +46,7 @@ Registreert een zittingsopslag met de Context van de Cliënt. Hiermee worden geb
 
 **Parameters**
 
-* sessionstore: CQ_Analytics.SessionStore. Het sessieopslagobject dat moet worden geregistreerd.
+* sessionstore: CQ_Analytics.SessionStore. Het te registreren sessieopslagobject.
 
 **Retourneert**
 
@@ -76,9 +76,9 @@ Wanneer de vertraging is ingesteld op `true` Voor een aantal milliseconden, wach
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam van het sessiearchief om de listener toe te voegen.
-* callback: Functie. De functie om op archiefinitialisatie te roepen.
-* vertraging: Boolean of Number. De hoeveelheid tijd om de vraag aan de callback functie, in milliseconden te vertragen. Een booleaanse waarde van `true` gebruikt de standaardvertraging van `200 ms`. Een booleaanse waarde van `false` of een negatief getal zorgt ervoor dat geen vertraging wordt gebruikt.
+* storeName: String. De naam van het sessiearchief om de listener toe te voegen.
+* callback: Function. De functie om op archiefinitialisatie te roepen.
+* delay: Boolean of Number. De hoeveelheid tijd om de vraag aan de callback functie, in milliseconden te vertragen. Een booleaanse waarde van `true` gebruikt de standaardvertraging van `200 ms`. Een booleaanse waarde van `false` of een negatief getal zorgt ervoor dat geen vertraging wordt gebruikt.
 
 **Retourneert**
 
@@ -90,8 +90,8 @@ Registreert een callback functie die wordt geroepen wanneer een zittingsopslag w
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam van het sessiearchief om de listener toe te voegen.
-* callback: Functie. De functie om op archiefinitialisatie te roepen.
+* storeName: String. De naam van het sessiearchief om de listener toe te voegen.
+* callback: Function. De functie om op archiefinitialisatie te roepen.
 
 **Retourneert**
 
@@ -117,11 +117,11 @@ Maakt een CQ_Analytics.JSONPStore-object.
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
-* serviceURL: Tekenreeks. De URL van de JSONP-service
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
+* serviceURL: String. De URL van de JSONP-service
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
-* deferLoading: (Optioneel) Booleaans. De waarde true voorkomt dat de JSONP-service bij het maken van objecten wordt aangeroepen. Een waarde van vals veroorzaakt de dienst JSONP om worden geroepen.
-* loadingCallback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
+* delayLoading: (Optioneel) Boolean. De waarde true voorkomt dat de JSONP-service bij het maken van objecten wordt aangeroepen. Een waarde van vals veroorzaakt de dienst JSONP om worden geroepen.
+* loadingCallback: (Optioneel) String. De naam van de functie om voor verwerking van het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
 **Retourneert**
 
@@ -145,9 +145,9 @@ Roept de dienst JSONP aan. JSONP URL is de dienst URL die met een bepaalde callb
 
 **Parameters**
 
-* serviceURL: (Optioneel) String. De JSONP-service die moet worden aangeroepen. De waarde null zorgt ervoor dat de reeds geconfigureerde service-URL wordt gebruikt. Een waarde die niet gelijk is aan null, stelt de JSONP-service in die voor dit object moet worden gebruikt. (Zie setServiceURL.)
+* serviceURL: (Optioneel) tekenreeks. De JSONP-service die moet worden aangeroepen. De waarde null zorgt ervoor dat de reeds geconfigureerde service-URL wordt gebruikt. Een waarde die niet gelijk is aan null, stelt de JSONP-service in die voor dit object moet worden gebruikt. (Zie setServiceURL.)
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
-* callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
+* callback: (Optioneel) String. De naam van de functie om voor verwerking van het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
 **Retourneert**
 
@@ -159,10 +159,10 @@ Maakt een CQ_Analytics.JSONPStore-object en registreert de winkel met Client-con
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
-* serviceURL: (Optioneel) String. De URL van de JSONP-service.
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
+* serviceURL: (Optioneel) tekenreeks. De URL van de JSONP-service.
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
-* callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
+* callback: (Optioneel) String. De naam van de functie om voor verwerking van het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
 **Retourneert**
 
@@ -174,7 +174,7 @@ Plaatst URL van de dienst JSONP voor het terugwinnen van JSON- gegevens te gebru
 
 **Parameters**
 
-* serviceURL: Tekenreeks. De URL van de JSONP-service die JSON-gegevens levert
+* serviceURL: String. URL van de dienst JSONP die JSON gegevens verstrekt
 
 **Retourneert**
 
@@ -222,7 +222,7 @@ Maakt een CQ_Analytics.JSONStore-object met een opgegeven naam en geïnitialisee
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
 **Retourneert**
@@ -278,7 +278,7 @@ B/B1: "valueBB1"
 **Parameters**
 
 * jsonData: Een JSON-object dat de gegevens bevat die moeten worden opgeslagen.
-* doNotClear: Bij de waarde true blijven de bestaande initialisatie-eigenschappen behouden en worden de eigenschappen toegevoegd die zijn afgeleid van het JSON-object. Bij de waarde false worden de bestaande initialisatie-eigenschappen verwijderd voordat de eigenschappen uit het JSON-object worden toegevoegd.
+* doNotClear: de waarde true behoudt de bestaande initialisatie-eigenschappen en voegt de waarden toe die zijn afgeleid van het JSON-object. Bij de waarde false worden de bestaande initialisatie-eigenschappen verwijderd voordat de eigenschappen uit het JSON-object worden toegevoegd.
 
 **Retourneert**
 
@@ -290,7 +290,7 @@ Maakt een CQ_Analytics.JSONStore-object met een opgegeven naam en geïnitialisee
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
 **Retourneert**
@@ -309,9 +309,9 @@ Registreert een listener voor een gebeurtenis. Zie ook [Listener maken om te rea
 
 **Parameters**
 
-* gebeurtenis: Tekenreeks. De naam van de gebeurtenis waarnaar moet worden geluisterd.
+* event: String. De naam van de gebeurtenis waarnaar moet worden geluisterd.
 * fct: Functie. De functie die wordt aangeroepen wanneer de gebeurtenis plaatsvindt.
-* bereik: (Optioneel) Object. Het bereik waarin de handlerfunctie moet worden uitgevoerd. De context van de handlerfunctie &#39;this&#39;.
+* bereik: (optioneel) Object. Het bereik waarin de handlerfunctie moet worden uitgevoerd. De context van de handlerfunctie &#39;this&#39;.
 
 **Retourneert**
 
@@ -323,7 +323,7 @@ Verwijdert de opgegeven gebeurtenishandler voor een gebeurtenis.
 
 **Parameters**
 
-* gebeurtenis: Tekenreeks. De naam van de gebeurtenis.
+* event: String. De naam van de gebeurtenis.
 * fct: Functie. De gebeurtenishandler.
 
 **Retourneert**
@@ -346,11 +346,11 @@ Maakt een CQ_Analytics.PersistedJSONPStore-object.
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
-* serviceURL: Tekenreeks. De URL van de JSONP-service
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
+* serviceURL: String. De URL van de JSONP-service
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
-* deferLoading: (Optioneel) Booleaans. De waarde true voorkomt dat de JSONP-service bij het maken van objecten wordt aangeroepen. Een waarde van vals veroorzaakt de dienst JSONP om worden geroepen.
-* loadingCallback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
+* delayLoading: (Optioneel) Boolean. De waarde true voorkomt dat de JSONP-service bij het maken van objecten wordt aangeroepen. Een waarde van vals veroorzaakt de dienst JSONP om worden geroepen.
+* loadingCallback: (Optioneel) String. De naam van de functie om voor verwerking van het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
 **Retourneert**
 
@@ -374,9 +374,9 @@ Roept de dienst JSONP aan. JSONP URL is de dienst URL die met een bepaalde callb
 
 **Parameters**
 
-* serviceURL: (Optioneel) String. De JSONP-service die moet worden aangeroepen. De waarde null zorgt ervoor dat de reeds geconfigureerde service-URL wordt gebruikt. Een waarde die niet gelijk is aan null, stelt de JSONP-service in die voor dit object moet worden gebruikt. (Zie setServiceURL.)
+* serviceURL: (Optioneel) tekenreeks. De JSONP-service die moet worden aangeroepen. De waarde null zorgt ervoor dat de reeds geconfigureerde service-URL wordt gebruikt. Een waarde die niet gelijk is aan null, stelt de JSONP-service in die voor dit object moet worden gebruikt. (Zie setServiceURL.)
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
-* callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
+* callback: (Optioneel) String. De naam van de functie om voor verwerking van het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
 **Retourneert**
 
@@ -388,10 +388,10 @@ Maakt een CQ_Analytics.PersistedJSONPStore-object en registreert de winkel met C
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
-* serviceURL: (Optioneel) String. De URL van de JSONP-service.
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters. Als er geen storeName is opgegeven, retourneert de methode null.
+* serviceURL: (Optioneel) tekenreeks. De URL van de JSONP-service.
 * dynamicData: (Optioneel) Object. JSON-gegevens die aan de initialisatiegegevens van de winkel moeten worden toegevoegd voordat de callback-functie wordt aangeroepen.
-* callback: (Optioneel) String. De naam van de functie om voor verwerking het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
+* callback: (Optioneel) String. De naam van de functie om voor verwerking van het voorwerp te roepen JSONP dat de dienst JSONP terugkeert. De callback functie moet één enkele parameter bepalen die een voorwerp CQ_Analytics.JSONPStore is.
 
 **Retourneert**
 
@@ -403,7 +403,7 @@ Plaatst URL van de dienst JSONP voor het terugwinnen van JSON- gegevens te gebru
 
 **Parameters**
 
-* serviceURL: Tekenreeks. De URL van de JSONP-service die JSON-gegevens levert
+* serviceURL: String. URL van de dienst JSONP die JSON gegevens verstrekt
 
 **Retourneert**
 
@@ -435,7 +435,7 @@ Maakt een CQ_Analytics.PersistedJSONStore-object met een opgegeven naam en geïn
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
 **Retourneert**
@@ -479,7 +479,7 @@ B/B1: "valueBB1"
 **Parameters**
 
 * jsonData: Een JSON-object dat de gegevens bevat die moeten worden opgeslagen.
-* doNotClear: Bij de waarde true blijven de bestaande initialisatie-eigenschappen behouden en worden de eigenschappen toegevoegd die zijn afgeleid van het JSON-object. Bij de waarde false worden de bestaande initialisatie-eigenschappen verwijderd voordat de eigenschappen uit het JSON-object worden toegevoegd.
+* doNotClear: de waarde true behoudt de bestaande initialisatie-eigenschappen en voegt de waarden toe die zijn afgeleid van het JSON-object. Bij de waarde false worden de bestaande initialisatie-eigenschappen verwijderd voordat de eigenschappen uit het JSON-object worden toegevoegd.
 
 **Retourneert**
 
@@ -491,7 +491,7 @@ Maakt een CQ_Analytics.PersistedJSONStore-object met een opgegeven naam en geïn
 
 **Parameters**
 
-* storeName: Tekenreeks. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
+* storeName: String. De naam die als eigenschap STORENAME moet worden gebruikt. De waarde van het bezit STOREKEY wordt geplaatst aan storeName met alle karakters in hoofdletters.
 * jsonData: Object. Een object dat JSON-gegevens bevat.
 
 **Retourneert**
@@ -528,7 +528,7 @@ Geen
 
 **Retourneert**
 
-De waarde van de `STOREKEY` eigenschap.
+De waarde van `STOREKEY` eigenschap.
 
 #### isPersisted(name) {#ispersisted-name}
 
@@ -536,7 +536,7 @@ Hiermee wordt bepaald of een gegevenseigenschap wordt gepresteerd.
 
 **Parameters**
 
-* naam: Tekenreeks. De naam van de eigenschap.
+* name: String. De naam van de eigenschap.
 
 **Retourneert**
 
@@ -564,7 +564,7 @@ Hiermee verwijdert u alle gegevenseigenschappen uit de winkel en gaat u door met
 
 **Parameters**
 
-* delayEvent: De waarde true voorkomt het `update` -gebeurtenis worden geactiveerd. Een waarde van `false` zorgt dat de updategebeurtenis wordt gestart.
+* delayEvent: de waarde true voorkomt dat de `update` -gebeurtenis worden geactiveerd. Een waarde van `false` zorgt dat de updategebeurtenis wordt gestart.
 
 **Retourneert**
 
@@ -572,11 +572,11 @@ Geen geretourneerde waarde.
 
 #### setNonPersisted(name) {#setnonpersisted-name}
 
-Hiermee wordt een gegevenseigenschap gemarkeerd als niet voortgezet.
+Hiermee wordt een gegevenseigenschap gemarkeerd als niet blijvend.
 
 **Parameters**
 
-* naam: Tekenreeks. The name of the property that is not to be persisted.
+* name: String. The name of the property that is not to be persisted.
 
 **Retourneert**
 
@@ -606,8 +606,8 @@ Gebruik loadInitProperties om de gegevens van de zittingsopslag met de initialis
 
 **Parameters**
 
-* naam: Tekenreeks. De naam van de eigenschap die moet worden toegevoegd.
-* waarde: Tekenreeks. De waarde van de eigenschap die moet worden toegevoegd.
+* name: String. De naam van de eigenschap die moet worden toegevoegd.
+* value: String. De waarde van de eigenschap die moet worden toegevoegd.
 
 **Retourneert**
 
@@ -631,7 +631,7 @@ Retourneert de opslaggegevens. Hiermee worden naameigenschappen eventueel uitges
 
 **Parameters**
 
-uitgesloten: (Optioneel) Een array met namen van eigenschappen die worden uitgesloten van de geretourneerde gegevens.
+exclude: (Optioneel) Een array met namen van eigenschappen die worden uitgesloten van de geretourneerde gegevens.
 
 **Retourneert**
 
@@ -643,7 +643,7 @@ Hiermee wordt de waarde van een eigenschap data opgehaald.
 
 **Parameters**
 
-* naam: Tekenreeks. The name of the data property to retrieve.
+* name: String. The name of the data property to retrieve.
 
 **Retourneert**
 
@@ -667,8 +667,8 @@ Retourneert de waarde van een eigenschap. De waarde wordt geretourneerd als de o
 
 **Parameters**
 
-* naam: Tekenreeks. The name of the data property to retrieve.
-* raw: Booleaans. De waarde true zorgt ervoor dat de waarde van de onbewerkte eigenschap wordt geretourneerd. Bij de waarde false wordt de geretourneerde waarde XSS-gefilterd.
+* name: String. The name of the data property to retrieve.
+* raw: Boolean. De waarde true zorgt ervoor dat de waarde van de onbewerkte eigenschap wordt geretourneerd. Bij de waarde false wordt de geretourneerde waarde XSS-gefilterd.
 
 **Retourneert**
 
@@ -680,7 +680,7 @@ Retourneert de namen van de eigenschappen die de sessieopslag bevat. roept de `i
 
 **Parameters**
 
-uitgesloten: (Optioneel) Een array met namen van eigenschappen die uit de resultaten moeten worden weggelaten.
+uitgesloten: (Optioneel) Een array met namen van eigenschappen die niet in de resultaten worden opgenomen.
 
 **Retourneert**
 
@@ -729,7 +729,7 @@ Voegt de eigenschappen van een bepaald voorwerp aan de initialisatiegegevens van
 **Parameters**
 
 * obj: Een object dat opsombare eigenschappen bevat.
-* setValues: Indien waar (true), worden de eigenschappen obj toegevoegd aan de opslaggegevens van de sessie als de opslaggegevens nog geen eigenschap met dezelfde naam bevatten. Wanneer de waarde false is, worden geen gegevens toegevoegd aan de opslaggegevens van de sessie.
+* setValues: Indien true, worden de eigenschappen obj toegevoegd aan de gegevens van de sessieopslagruimte als de opslaggegevens nog geen eigenschap met dezelfde naam bevatten. Wanneer de waarde false is, worden geen gegevens toegevoegd aan de opslaggegevens van de sessie.
 
 **Retourneert**
 
@@ -741,7 +741,7 @@ Hiermee wordt een eigenschap uit de sessieopslag verwijderd. Hiermee wordt het `
 
 **Parameters**
 
-* naam: Tekenreeks. De naam van de eigenschap die moet worden verwijderd.
+* name: String. The name of the property to remove.
 
 **Retourneert**
 
@@ -765,7 +765,7 @@ Stelt de waarden van meerdere eigenschappen in. Hiermee wordt het `update` gebeu
 
 **Parameters**
 
-* Eigenschappen: Object. Een object dat opsombare eigenschappen bevat. Elke eigenschapsnaam en -waarde wordt toegevoegd aan de winkel.
+* Eigenschappen: Object. Een object dat opsombare eigenschappen bevat. Elke eigenschapnaam en -waarde worden toegevoegd aan de winkel.
 
 **Retourneert**
 
@@ -777,8 +777,8 @@ Hiermee wordt de waarde van een eigenschap ingesteld. Hiermee wordt het `update`
 
 **Parameters**
 
-* naam: Tekenreeks. De naam van de eigenschap.
-* waarde: Tekenreeks. Waarde eigenschap.
+* name: String. De naam van de eigenschap.
+* value: String. Waarde eigenschap.
 
 **Retourneert**
 

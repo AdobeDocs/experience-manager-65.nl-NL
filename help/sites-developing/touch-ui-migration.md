@@ -1,28 +1,28 @@
 ---
 title: Migratie naar de aanraakinterface
-description: Migratie naar de aanraakinterface
+description: Meer informatie over de migratie van Adobe Experience Manager naar de Touch-gebruikersinterface en over de gevolgen hiervan voor u.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: introduction
 docset: aem65
 exl-id: 33dc1ee7-1e34-43d8-9265-c66535f5e002
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '659'
+source-wordcount: '669'
 ht-degree: 1%
 
 ---
 
 # Migratie naar de aanraakinterface{#migration-to-the-touch-ui}
 
-Vanaf versie 6.0 introduceerde Adobe Experience Manager (AEM) een nieuwe gebruikersinterface die *interface met aanraakbediening* (ook wel bekend als de *aanraakinterface*). De interface wordt uitgelijnd op de Adobe Experience Cloud en de algemene richtlijnen voor de gebruikersinterface van Adobe. Dit is de standaard UI in AEM met de erfenis, Desktop-oriented interface geworden die als *klassieke gebruikersinterface*.
+Vanaf versie 6.0 introduceerde Adobe Experience Manager (AEM) een nieuwe gebruikersinterface die *interface met aanraakbediening* (ook wel bekend als de *aanraakinterface*). Deze wordt uitgelijnd op de Adobe Experience Cloud en de algemene richtlijnen voor de gebruikersinterface voor Adoben. Dit is de standaard UI in AEM met de erfenis, Desktop-oriented interface geworden die als *klassieke gebruikersinterface*.
 
 Als u AEM met klassieke UI hebt gebruikt, neem actie om uw instantie te migreren. Deze pagina is bedoeld als springboard door koppelingen naar individuele bronnen aan te bieden.
 
 >[!NOTE]
 >
->Een dergelijk migratieproject kan grote gevolgen hebben voor uw instantie. Zie [Projecten beheren - Aanbevolen werkwijzen](/help/managing/best-practices.md) voor aanbevolen richtlijnen.
+>Een dergelijk migratieproject kan grote gevolgen hebben voor uw instantie. Zie [Projecten beheren - Aanbevolen procedures](/help/managing/best-practices.md) voor aanbevolen richtlijnen.
 
 ## De basisbeginselen {#the-basics}
 
@@ -35,8 +35,8 @@ Houd tijdens het migreren rekening met de volgende grote verschillen tussen de k
    <td>Interface met aanraakbediening</td>
   </tr>
   <tr>
-   <td>Wordt in de JCR-opslagplaats beschreven als een structuur van knooppunten. Elke knoop die een element van UI vertegenwoordigt wordt genoemd een <em>ExtJS-widget</em> en op de client worden gerenderd door <code>ExtJS</code>.</td>
-   <td>Wordt in de JCR-opslagplaats ook beschreven als een structuur van knooppunten. In dit geval verwijst elk knooppunt echter naar een Sling-brontype (Sling-component) dat verantwoordelijk is voor de rendering ervan. De gebruikersinterface wordt (in feite) weergegeven op de server.</td>
+   <td>Wordt in de JCR-opslagplaats beschreven als een structuur van knooppunten. Elke knoop die een element van UI vertegenwoordigt wordt genoemd en <em>ExtJS-widget</em> en op de client worden gerenderd door <code>ExtJS</code>.</td>
+   <td>Wordt in de JCR-opslagplaats ook beschreven als een structuur van knooppunten. Nochtans, in dit geval, verwijst elke knoop naar een Sling middeltype (de component van het Sling), dat de oorzaak van zijn teruggeven is. De gebruikersinterface wordt (in feite) weergegeven op de server.</td>
   </tr>
   <tr>
    <td><p><code>sling:resourceType</code></p>
@@ -68,7 +68,7 @@ Houd tijdens het migreren rekening met de volgende grote verschillen tussen de k
     </ul> </td>
    <td><p>JavaScript-locatie:</p>
     <ul>
-     <li>Imperatieve onderdelen kunnen niet worden ingesloten in de definitie van het dialoogvenster. scheiding van verantwoordelijkheden.</li>
+     <li>Imperatieve onderdelen kunnen niet worden opgenomen in de definitie van het dialoogvenster, scheiding van verantwoordelijkheden.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -90,7 +90,7 @@ Houd tijdens het migreren rekening met de volgende grote verschillen tussen de k
    <td>Renderen uitgevoerd door de server:
     <ul>
      <li>De cliënt vraagt pagina's samen met verwante UI.</li>
-     <li>De server verzendt (duw) UI als documenten van HTML; gebruiken van de componenten van Coral UI.<br /> </li>
+     <li>De server verzendt (duw) UI als documenten van HTML; het gebruiken van de componenten van de Koraal UI.<br /> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -100,7 +100,7 @@ Met andere woorden, wanneer u een gedeelte van de gebruikersinterface van de kla
 
 Controleer voordat u begint de status en de bijbehorende aanbevelingen:
 
-* [Status van touch-functies](/help/release-notes/touch-ui-features-status.md)
+* [Status Touch UI-functies](/help/release-notes/touch-ui-features-status.md)
 * [Gebruikersinterface Recommendations voor klanten](/help/sites-deploying/ui-recommendations.md)
 
 De basisbeginselen van de ontwikkeling van de aanraakinterface bieden een solide basis:
@@ -112,14 +112,14 @@ De basisbeginselen van de ontwikkeling van de aanraakinterface bieden een solide
 
 Dialoogvensters zijn een belangrijke factor bij het migreren van uw componenten:
 
-* [AEM ontwikkelen](/help/sites-developing/developing-components.md) (met de interface met aanraakbediening)
+* [Ontwikkelen AEM componenten](/help/sites-developing/developing-components.md) (met de interface met aanraakbediening)
 * [Migreren vanuit een klassieke component](/help/sites-developing/developing-components.md#migrating-from-a-classic-component)
 * [AEM moderniseringsinstrumenten](/help/sites-developing/modernization-tools.md) - om u te helpen de dialoogvensters van uw klassieke UI-componenten om te zetten in aanrakingsinterface
 
    * Er is een compatibiliteitslaag in aanraak UI om een klassiek UI-dialoogvenster te openen binnen een &quot;Touch UI-wrapper&quot;, maar deze heeft beperkte functionaliteit en wordt niet aanbevolen voor de lange termijn.
 
 * [Dialoogvenstervelden aanpassen in Touch UI](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-customizing-dialog-fields-in-touch-ui.html)
-* [Een nieuwe graniet UI-veldcomponent maken](/help/sites-developing/granite-ui-component.md)
+* [Een nieuwe graniet-UI-veldcomponent maken](/help/sites-developing/granite-ui-component.md)
 * [Paginaontwerp aanpassen](/help/sites-developing/customizing-page-authoring-touch.md) (met de interface met aanraakbediening)
 
 ## Consoles migreren {#migrating-consoles}
@@ -138,7 +138,7 @@ Hoewel er niet rechtstreeks verband is met een migratie naar de aanraakinterface
 
 >[!NOTE]
 >
->Zie ook [Ontwikkelen - Aanbevolen werkwijzen](/help/sites-developing/best-practices.md).
+>Zie ook [Ontwikkelen - Aanbevolen praktijken](/help/sites-developing/best-practices.md).
 
 ## Aanvullende bronnen {#further-resources}
 
@@ -153,4 +153,4 @@ Voor volledige informatie over het ontwikkelen AEM zie de inzameling van middele
 
 >[!CAUTION]
 >
->AEM Moderniseringsinstrumenten zijn een gemeenschapsinspanning en worden niet gesteund of gerechtvaardigd door Adobe.
+>AEM Moderniseringsinstrumenten zijn een communautaire inspanning en worden niet gesteund of gerechtvaardigd door Adobe.

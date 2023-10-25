@@ -1,21 +1,21 @@
 ---
 title: Codetips
-description: Tips voor het coderen van AEM
+description: Lees wat tips voor het coderen van best practices in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
 
 # Codetips{#coding-tips}
 
-## Taglibs of HTML zoveel mogelijk gebruiken {#use-taglibs-or-htl-as-much-as-possible}
+## Gebruik zo veel mogelijk tags of HTML {#use-taglibs-or-htl-as-much-as-possible}
 
 Het opnemen van scriptlets in JSPs maakt het moeilijk om kwesties in de code te zuiveren. Door scriptlets in JSPs op te nemen, is het ook moeilijk om bedrijfslogica van de meningslaag te scheiden, die een schending van het Enige Verantwoordelijkheidsbeginsel en het ontwerppatroon MVC vormt.
 
@@ -64,7 +64,7 @@ DRY geeft aan dat dezelfde codeset nooit mag worden gedupliceerd. Dit geldt ook 
 
 ### Naakte CSS-regels vermijden {#avoid-naked-css-rules}
 
-CSS-regels moeten specifiek zijn voor uw doelelement in de context van uw toepassing. Bijvoorbeeld een CSS-regel die wordt toegepast op *.content.center* Deze stijl zou te breed zijn en zou mogelijk veel inhoud in uw systeem beïnvloeden, waardoor anderen deze stijl in de toekomst moeten overschrijven. Overwegende dat *.mijnapp-centertext* zou een specifiekere regel zijn aangezien het gecentreerd specificeert *text* in de context van uw toepassing.
+CSS-regels moeten specifiek zijn voor uw doelelement in de context van uw toepassing. Bijvoorbeeld een CSS-regel toegepast op *.content.center* Deze stijl zou te breed zijn en zou mogelijk invloed kunnen hebben op veel inhoud in uw systeem, waardoor anderen deze stijl in de toekomst moeten overschrijven. Overwegende dat *.mijnapp-centertext* zou een specifiekere regel zijn aangezien het gecentreerd specificeert *text* in de context van uw toepassing.
 
 ### Gebruik van verouderde API&#39;s elimineren {#eliminate-usage-of-deprecated-apis}
 
@@ -84,15 +84,15 @@ AEM verstrekt een XSS API om parameters gemakkelijk schoon te maken en veilighei
 
 ### Pas het aangewezen registreren toe {#implement-appropriate-logging}
 
-Voor code Java™, AEM steunt slf4j als standaard API voor het registreren van berichten en zou met de configuraties moeten worden gebruikt die door de console OSGi ter wille van consistentie in beleid ter beschikking worden gesteld. Slf4j stelt vijf verschillende registrerenniveaus bloot. Adobe raadt u aan de volgende richtlijnen te gebruiken wanneer u kiest op welk niveau een bericht moet worden geregistreerd:
+Voor code Java™, AEM steunt slf4j als standaard API voor het registreren van berichten en zou met de configuraties moeten worden gebruikt die door de console OSGi ter wille van consistentie in beleid ter beschikking worden gesteld. Slf4j stelt vijf verschillende registrerenniveaus bloot. Adobe raadt u aan de volgende richtlijnen te gebruiken wanneer u kiest welk niveau u wilt gebruiken om een bericht te registreren bij:
 
 * FOUT: Wanneer er iets in de code is verbroken en de verwerking niet kan worden voortgezet. Dit gebeurt vaak als gevolg van een onverwachte uitzondering. Het is handig om stacksporen in deze scenario&#39;s op te nemen.
 * WAARSCHUWING: Als iets niet goed heeft gewerkt, maar de verwerking kan doorgaan. Dit zal vaak het resultaat zijn van een uitzondering die we verwachtten, zoals een *PathNotFoundException*.
-* INFO: Informatie die nuttig zou zijn wanneer het controleren van een systeem. Onthoud dat dit de standaardinstelling is en dat de meeste klanten dit op hun plaats zullen laten in hun omgeving. Gebruik het daarom niet te veel.
-* FOUTOPSPORING: Informatie op een lager niveau over verwerking. Nuttig wanneer het zuiveren van een kwestie met steun.
-* TRACE: Het laagste niveau van informatie, dingen zoals het ingaan van/het verlaten van methodes. Dit zal gewoonlijk slechts door ontwikkelaars worden gebruikt.
+* INFO: informatie die nuttig zou zijn bij het controleren van een systeem. Onthoud dat dit de standaardinstelling is en dat de meeste klanten dit op hun plaats zullen laten in hun omgeving. Gebruik het daarom niet te veel.
+* FOUTOPSPORING: informatie op een lager niveau over verwerking. Nuttig wanneer het zuiveren van een kwestie met steun.
+* TRACE: Het laagste niveau van informatie, dingen zoals het invoeren/afsluiten van methoden. Dit zal gewoonlijk slechts door ontwikkelaars worden gebruikt.
 
-In het geval van JavaScript: *console.log* dienen alleen tijdens de ontwikkeling te worden gebruikt en alle loginstructies dienen vóór de release te worden verwijderd.
+In het geval van JavaScript *console.log* dienen alleen tijdens de ontwikkeling te worden gebruikt en alle loginstructies dienen vóór de release te worden verwijderd.
 
 ### Ladingencatalogus vermijden {#avoid-cargo-cult-programming}
 

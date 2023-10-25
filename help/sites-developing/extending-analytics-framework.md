@@ -1,15 +1,15 @@
 ---
 title: Adobe Analytics Framework aanpassen
-description: Adobe Analytics Framework aanpassen
+description: Leer hoe u het Adobe Analytics-framework voor Adobe Experience Manager kunt aanpassen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1613'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Wanneer u aangepaste JavaScript-code gebruikt om het framework aan te passen, wi
 
 ## Adobe Analytics-eigenschappen configureren {#configuring-adobe-analytics-properties}
 
-Er zijn verscheidene vooraf bepaalde variabelen binnen Adobe Analytics die op een kader configureerbaar zijn. De **charset**, **cookieLifetime**, **currencyCode** en **trackInlineStats** in de **Algemene analytische instellingen** lijst standaard.
+Er zijn verscheidene vooraf bepaalde variabelen binnen Adobe Analytics die op een kader configureerbaar zijn. De **charset**, **cookieLifetime**, **currencyCode** en **trackInlineStats** de variabelen worden opgenomen in de **Algemene analytische instellingen** lijst standaard.
 
 ![aa-22](assets/aa-22.png)
 
@@ -269,7 +269,7 @@ Gebruik de volgende procedure om de map met de clientbibliotheek voor uw plug-in
 
 1. Klik met de rechtermuisknop op de map /apps/my-app/clientlibs en klik op Maken > Node maken. Voer de volgende eigenschapswaarden in en klik op OK:
 
-   * Naam: Een naam voor de clientbibliotheekmap, zoals mijn plug-ins
+   * Naam: een naam voor de bibliotheekmap van de client, zoals mijn plug-ins
 
    * Type: cq:ClientLibraryFolder
 

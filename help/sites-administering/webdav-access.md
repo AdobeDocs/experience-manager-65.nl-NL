@@ -1,7 +1,7 @@
 ---
 title: WebDAV-toegang
 seo-title: WebDAV Access
-description: Meer informatie over WebDAV-toegang in AEM.
+description: Leer hoe u toegang krijgt tot Adobe Experience Manager met WebDAV.
 seo-description: Learn about WebDAV access in AEM.
 uuid: b0ecaa5d-5454-42df-8453-404ece734c32
 contentOwner: Chiradeep Majumdar
@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 exl-id: 891ee66c-e49c-4561-8fef-e6e448a8aa1c
-source-git-commit: e05f6cd7cf17f4420176cf76f28cb469bcee4a0a
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1097'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Verbinding maken met AEM via WebDAV met KDE:
 
-AEM biedt WebDAV-ondersteuning waarmee u inhoud in opslagruimten kunt weergeven en bewerken. Verbinding maken via WebDAV geeft u rechtstreeks via uw bureaublad toegang tot de opslagplaats voor inhoud. Tekst- en PDF-bestanden die via de WebDAV-verbinding aan de opslagplaats worden toegevoegd, worden automatisch geïndexeerd met volledige tekst en kunnen worden gezocht met de standaardzoekinterfaces en met de standaard Java™ API&#39;s.
+AEM biedt WebDAV-ondersteuning waarmee u inhoud in de opslagplaats kunt weergeven en bewerken. Verbinding maken via WebDAV geeft u rechtstreeks via uw bureaublad toegang tot de opslagplaats voor inhoud. Tekst- en PDF-bestanden die via de WebDAV-verbinding aan de opslagplaats worden toegevoegd, worden automatisch geïndexeerd met volledige tekst en kunnen worden gezocht met de standaardzoekinterfaces en met de standaard Java™ API&#39;s.
 
 ## Algemeen {#general}
 
@@ -148,7 +148,7 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
    ![chlimage_1-112](assets/chlimage_1-112a.png)
 
-1. Als u de wizard wilt starten, klikt u op **Kaartnetwerkstation**.
+1. Klik op **Kaartnetwerkstation**.
 1. Voer de toewijzingsdetails in:
 
    * **Drive**: Kies een beschikbare letter
@@ -181,6 +181,7 @@ Er zijn geen configuratiestappen vereist om via WebDAV verbinding te maken op ma
 1. In de **Verbinding maken met server** Voer de AEM in:
 
    * `http://localhost:4502`
+
    >[!NOTE]
    >
    >Als AEM zich op een andere poort bevindt, gebruikt u dat poortnummer in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u `localhost` met de respectieve servernaam of IP adres.

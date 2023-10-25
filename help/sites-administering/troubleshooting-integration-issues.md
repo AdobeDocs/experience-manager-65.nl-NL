@@ -1,7 +1,7 @@
 ---
 title: Problemen met integratie oplossen
 seo-title: Troubleshooting Integration Issues
-description: Leer hoe u integratieproblemen kunt oplossen.
+description: Leer hoe u problemen kunt oplossen bij de integratie met Adobe Experience Manager.
 seo-description: Learn how to troubleshoot integration issues.
 uuid: fe080e58-a855-4308-a611-f72eb47ba82d
 contentOwner: raiman
@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 exl-id: 11b0023e-34bd-4dfe-8173-5466db9fbe34
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1101'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ### Geen JavaScript-fouten opsporen {#ensure-there-are-no-javascript-errors}
 
-Controleer of er fouten worden weergegeven in de JavaScript-console van de browser. Onverwerkte fouten kunnen voorkomen dat de volgende code correct wordt uitgevoerd. Als er fouten optreden, controleert u welk script de fout veroorzaakt en op welk gebied. Het pad naar het script kan aangeven tot welke functionaliteit het script behoort.
+Controleer of de JavaScript-console van de browser fouten weergeeft. Onverwerkte fouten kunnen voorkomen dat de volgende code correct wordt uitgevoerd. Als er fouten optreden, controleert u welk script de fout veroorzaakt en op welk gebied. Het pad naar het script kan aangeven tot welke functionaliteit het script behoort.
 
 ### Aanmelden op componentniveau {#logging-on-component-level}
 
@@ -62,7 +62,7 @@ Lees het volgende artikel voor meer informatie over het maken van aangepaste ser
 
 ### Het afsluiten duurt lang vanwege de PollingImporter {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk schakelt u Analytics in voor een site door een verwijzing naar een analytische configuratie toe te voegen binnen de pagina-eigenschappen [Cloud Services](/help/sites-developing/extending-cloud-config.md) tab. De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw te verwijzen tenzij een pagina een verschillende configuratie vereist. Als u een verwijzing naar een site toevoegt, worden ook automatisch meerdere knooppunten van het type gemaakt (12 voor AEM 6.3 en lager of 6 voor AEM 6.4 en hoger) `cq;PollConfig` die PollingImporters concretiseert die worden gebruikt om de gegevens van Analytics in AEM in te voeren. Dientengevolge:
+Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk schakelt u Analytics in voor een site door een verwijzing naar een analytische configuratie toe te voegen binnen de pagina-eigenschappen [Cloud Servicen](/help/sites-developing/extending-cloud-config.md) tab. De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw te verwijzen tenzij een pagina een verschillende configuratie vereist. Als u een verwijzing naar een site toevoegt, worden ook automatisch meerdere knooppunten van het type gemaakt (12 voor AEM 6.3 en lager of 6 voor AEM 6.4 en hoger) `cq;PollConfig` die PollingImporters concretiseert die worden gebruikt om de gegevens van Analytics in AEM in te voeren. Dientengevolge:
 
 * Veel pagina&#39;s die verwijzen naar Analytics leiden tot een grote hoeveelheid PollingImporters.
 * Bovendien, leidt het kopiëren en het kleven van pagina&#39;s met een verwijzing naar een configuratie van Analytics tot een verdubbeling van zijn PollingImporters.
@@ -91,27 +91,27 @@ Lees het volgende artikel voor meer informatie over het maken van aangepaste ser
 
 ### De DTM-scripttag wordt niet weergegeven in de paginabron {#the-dtm-script-tag-is-not-rendered-in-the-page-source}
 
-De [DTM](/help/sites-administering/dtm.md) scripttag wordt niet correct op de pagina opgenomen, ook al wordt naar de configuratie verwezen in de pagina-eigenschappen [Cloud Services](/help/sites-developing/extending-cloud-config.md) tab.
+De [DTM](/help/sites-administering/dtm.md) scripttag wordt niet correct op de pagina opgenomen, ook al wordt naar de configuratie verwezen in de pagina-eigenschappen [Cloud Servicen](/help/sites-developing/extending-cloud-config.md) tab.
 
 #### Oplossing {#solution-2}
 
 U kunt het volgende proberen om het probleem op te lossen:
 
 * Zorg ervoor dat gecodeerde eigenschappen kunnen worden gedecodeerd (gebruik een andere automatisch gegenereerde sleutel voor elke AEM). Lees voor meer informatie ook [Coderingsondersteuning voor configuratieeigenschappen](/help/sites-administering/encryption-support-for-configuration-properties.md).
-* Publiceer de configuraties in `/etc/cloudservices/dynamictagmanagement`
+* Publiceer de configuraties die u vindt in `/etc/cloudservices/dynamictagmanagement`
 * ACLs controleren op `/etc/cloudservices`. ACLs zou moeten zijn:
 
-   * toestaan; jcr:read; webservice-support-servicelibfinder
-   * toestaan; jcr:read; iedereen; rep:glob:&amp;ast;/defaults/&amp;ast;
-   * toestaan; jcr:read; iedereen; rep:glob:&amp;ast;/default
-   * toestaan; jcr:read; iedereen; rep:glob:&amp;ast;/public/&amp;ast;
-   * toestaan; jcr:read; iedereen; rep:glob:&amp;ast;/public
+   * allow; jcr:read; webservice-support-servicelibfinder
+   * allow; jcr:read; all; rep:glob:&amp;ast;/defaults/&amp;ast;
+   * allow; jcr:read; all; rep:glob:&amp;ast;/default
+   * allow; jcr:read; all; rep:glob:&amp;ast;/public/&amp;ast;
+   * allow; jcr:read; all; rep:glob:&amp;ast;/public
 
 Voor meer informatie over het beheren van ACLs, lees [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md#permissions-in-aem) pagina.
 
 ## Problemen met doelintegratie {#target-integration-issues}
 
-### Gerichte inhoud niet zichtbaar in de modus Voorbeeld bij gebruik van aangepaste paginacomponenten {#targeted-content-not-visible-in-preview-mode-when-using-custom-page-components}
+### Gerichte inhoud niet zichtbaar in de modus Voorbeeld bij gebruik van aangepaste pagina-componenten {#targeted-content-not-visible-in-preview-mode-when-using-custom-page-components}
 
 Dit probleem treedt op omdat aangepaste paginacomponenten niet de juiste JSP- of clientbibliotheken bevatten die de DTM-integratie van het doel afhandelen.
 
@@ -141,7 +141,7 @@ Bij gebruik van DTM voor levering `mbox.js` of `at.js` Zorg ervoor dat de biblio
 
 Lees voor meer informatie de [Ontwikkelen voor gerichte inhoud](/help/sites-developing/target.md#understanding-the-target-component) pagina.
 
-### De fout &quot;Ontbrekende ID van de Reeks van het Rapport in initialisatie AppMeturement&quot;wordt getoond in de browser console {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
+### De fout &quot;Ontbrekende ID van de Reeks van het Rapport in de initialisering van het AppMeasurement&quot;wordt getoond in de browser console {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
 Dit probleem kan optreden wanneer Adobe Analytics op de website wordt geïmplementeerd met DTM en aangepaste code gebruikt. De oorzaak is dat de `s = new AppMeasurement()` om het `s` object.
 
@@ -160,7 +160,7 @@ Dit probleem kan meerdere oorzaken hebben:
 
 * Doelclientbibliotheken laden ( `mbox.js` of `at.js`) asynchroon gebruik van Tag Management Systems van derden kan willekeurig afbreken. De doelbibliotheken moeten synchroon in de paginakop worden geladen. Dit geldt altijd wanneer de bibliotheken worden geleverd vanuit AEM.
 
-* Twee doelclientbibliotheken laden ( `at.js`), bijvoorbeeld één met DTM en één met de doelconfiguratie in AEM. Dit kan tot klassen voor `adobe.target` als de `at.js` versies verschillen.
+* Twee doelclientbibliotheken laden ( `at.js`), bijvoorbeeld één met DTM en één met behulp van de doelconfiguratie in AEM. Dit kan tot klassen voor `adobe.target` als de `at.js` versies verschillen.
 
 #### Oplossing {#solution-5}
 
@@ -212,7 +212,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Als het antwoord de lijn bevat `a4tEnabled:false`, tegenwerking [Adobe Klantenservice](https://helpx.adobe.com/contact.html) voor een correcte provisioning van uw account.
+Als het antwoord de lijn bevat `a4tEnabled:false`, tegenwerking [Klantenservice Adoben](https://helpx.adobe.com/contact.html) voor een correcte provisioning van uw account.
 
 ### Nuttige doel-API&#39;s {#helpful-target-apis}
 

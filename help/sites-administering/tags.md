@@ -1,7 +1,7 @@
 ---
 title: Tags beheren
 seo-title: Administering Tags
-description: Leer hoe u tags in AEM beheert.
+description: Leer hoe u tags beheert en beheert in Adobe Experience Manager.
 seo-description: Learn how to administer Tags in AEM.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
@@ -10,9 +10,9 @@ topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1760'
+source-wordcount: '1764'
 ht-degree: 0%
 
 ---
@@ -45,22 +45,22 @@ Enkele eigenschappen van markeringen binnen AEM omvatten:
    * slash `/` - subtags afbakenen
 
 * Tags kunnen door auteurs en bezoekers van de site worden toegepast. Ongeacht de maker van de tags worden alle typen tags beschikbaar gemaakt voor selectie, zowel bij het toewijzen aan een pagina als bij het zoeken.
-* Tags kunnen worden gemaakt en hun taxonomie kan worden gewijzigd door leden van de groep &quot;tagbeheerders&quot; en leden die wijzigingsrechten hebben op `/content/cq:tags`.
+* Tags kunnen worden gemaakt en de bijbehorende taxonomie kan worden gewijzigd door leden van de groep &quot;tagbeheerders&quot; en leden die wijzigingsrechten hebben op `/content/cq:tags`.
 
    * Een tag die onderliggende tags bevat, wordt aangeduid als een containertag
    * Een tag die geen containertag is, wordt aangeduid als een bladtag
-   * Een naamruimte van een tag is een bladtag of een containertag
+   * Een tagnaamruimte is een bladtag of een containertag
 
 * Tags worden gebruikt door de [component Zoeken](https://helpx.adobe.com/experience-manager/core-components/using/quick-search.html) om het zoeken naar inhoud te vergemakkelijken.
 * Tags worden gebruikt door de [Teaglascomponent](https://helpx.adobe.com/experience-manager/core-components/using/teaser.html), die de tagcloud van een gebruiker controleert om gerichte inhoud te bieden.
 * Als labelen een belangrijk aspect van uw inhoud is
 
    * zorg ervoor dat de labels worden verpakt met de pagina&#39;s die deze gebruiken
-   * ervoor zorgen [tagmachtigingen](#setting-tag-permissions) lezen inschakelen
+   * zorg ervoor dat [tagmachtigingen](#setting-tag-permissions) lezen inschakelen
 
 ## Tagingsconsole {#tagging-console}
 
-De Tagingconsole wordt gebruikt om tags en hun taxonomieën te maken en te beheren. Een van de doelstellingen is om te voorkomen dat er veel gelijksoortige tags zijn die in wezen op hetzelfde betrekking hebben: bijvoorbeeld pagina&#39;s of schoeisel en schoenen.
+De Tagingconsole wordt gebruikt om tags en hun taxonomieën te maken en te beheren. Een van de doelstellingen is om te voorkomen dat er veel gelijksoortige tags zijn die in wezen op hetzelfde ding betrekking hebben, bijvoorbeeld pagina&#39;s en pagina&#39;s of schoeisel en schoenen.
 
 Tags worden beheerd door groeperen in naamruimten, het gebruik van bestaande tags evalueren voordat u nieuwe tags maakt en opnieuw ordenen zonder dat de tag wordt losgekoppeld van de inhoud waarnaar momenteel wordt verwezen.
 
@@ -85,15 +85,13 @@ De naamruimte is zelf een tag en hoeft geen subtags te bevatten. Om een taxonomi
 ![chlimage_1-183](assets/chlimage_1-183a.png) ![maken_tags_naamruimten](assets/creating_tags_andnamespacesa.png)
 
 * **Titel**
-
-   *(vereist)* Een weergavetitel voor de naamruimte.
+  *(vereist)* Een weergavetitel voor de naamruimte.
 
 * **Naam**
-   *(optioneel)* Een naam voor de naamruimte. Als er geen waarde wordt opgegeven, wordt een geldige knooppuntnaam gemaakt op basis van de titel. Zie [TagID](/help/sites-developing/framework.md#tagid).
+  *(optioneel)* Een naam voor de naamruimte. Als er geen waarde wordt opgegeven, wordt een geldige knooppuntnaam gemaakt op basis van de titel. Zie [TagID](/help/sites-developing/framework.md#tagid).
 
 * **Beschrijving**
-
-   *(optioneel)* Een beschrijving van de naamruimte.
+  *(optioneel)* Een beschrijving van de naamruimte.
 
 Zodra de vereiste informatie is ingevoerd
 
@@ -131,7 +129,7 @@ Als u de tag voor bewerkingen wilt selecteren en meerdere selecties wilt maken, 
 
 ![chlimage_1-188](assets/chlimage_1-188.png)
 
-Wanneer een naamruimte of andere tag is geselecteerd, selecteert u de opdracht **`View Properties`** resulteert in de weergave van informatie over de `name`, tijd van laatste bewerking en aantal verwijzingen. Indien gepubliceerd, de tijd het werd gepubliceerd en identiteitskaart van de uitgever wordt getoond. Deze informatie wordt in een kolom links van de tagkolommen weergegeven.
+Wanneer een naamruimte of andere tag is geselecteerd, selecteert u de opdracht **`View Properties`** resulteert in de weergave van informatie over de `name`, tijd van laatste bewerking en aantal verwijzingen. Indien gepubliceerd, wordt de tijd het laatst werd gepubliceerd en identiteitskaart van de uitgever getoond. Deze informatie wordt in een kolom links van de tagkolommen weergegeven.
 
 ![chlimage_1-189](assets/chlimage_1-189.png)
 
@@ -178,7 +176,7 @@ Zodra de vereiste informatie is ingevoerd
 
 Wanneer een naamruimte of andere tag is geselecteerd, is het mogelijk de Titel, Beschrijving te wijzigen en de titel te lokaliseren door ** te selecteren`Edit`**pictogram.
 
-Selecteer **Opslaan**.
+Nadat de bewerkingen zijn aangebracht, selecteert u **Opslaan**.
 
 Zie de sectie over het toevoegen van taalvertalingen voor meer informatie over het toevoegen van taalvertalingen [Tags beheren in verschillende talen](#managing-tags-in-different-languages).
 
@@ -197,15 +195,13 @@ Wanneer een naamruimte of andere tag is geselecteerd, selecteert u de opdracht *
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Pad**
-
-   *(alleen-lezen)* Het huidige pad naar de geselecteerde tag.
+  *(alleen-lezen)* Het huidige pad naar de geselecteerde tag.
 
 * **Verplaatsen naar**
 Blader naar het nieuwe pad waaronder u de tag wilt verplaatsen.
 
 * **Naam wijzigen in**
-Hiermee wordt de huidige 
-`name`van de tag. Een nieuwe `name`kan worden ingevoerd.
+Hiermee wordt de huidige `name`van de tag. Een nieuwe `name`kan worden ingevoerd.
 
 * selecteren **Opslaan**
 
@@ -220,8 +216,7 @@ Wanneer een naamruimte of andere tag is geselecteerd, selecteert u de opdracht *
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Pad**
-
-   *(alleen-lezen)* Het pad van de geselecteerde tag die moet worden samengevoegd met een andere tag.
+  *(alleen-lezen)* Het pad van de geselecteerde tag die moet worden samengevoegd met een andere tag.
 
 * **Samenvoegen in**
 Blader naar het pad van de tag waarin u wilt samenvoegen.
@@ -240,7 +235,7 @@ Wanneer een naamruimte of andere tag is geselecteerd, selecteert u de opdracht *
 
 Als u een taxonomie (een naamruimte en subtags) wilt publiceren, kunt u het beste een [package](/help/sites-administering/package-manager.md) van de naamruimte (zie [Taxonomy Root Node](/help/sites-developing/framework.md#taxonomy-root-node)). Zorg ervoor dat u [machtigingen toepassen](#setting-tag-permissions) naar de naamruimte voordat het pakket wordt gemaakt.
 
-### Publicatietags ongedaan maken {#unpublishing-tags}
+### Publicatie van labels ongedaan maken {#unpublishing-tags}
 
 ![chlimage_1-202](assets/chlimage_1-202.png)
 
@@ -254,22 +249,22 @@ Wanneer een naamruimte of andere tag is geselecteerd, selecteert u de opdracht *
 
 ## Tagmachtigingen instellen {#setting-tag-permissions}
 
-Tagmachtigingen zijn [&#39;secure (by default)&#39;](/help/sites-administering/production-ready.md); Een beste manier voor de publicatieomgeving waarvoor leesmachtigingen expliciet moeten worden toegestaan voor tags. Dit gebeurt in eerste instantie door een pakket van de tagnaamruimte te maken nadat de machtigingen bij de auteur zijn ingesteld en het pakket op alle publicatieinstanties te installeren.
+Tagmachtigingen zijn [&#39;secure (by default)&#39;](/help/sites-administering/production-ready.md); dit is een aanbevolen werkwijze voor de publicatieomgeving waarvoor leesmachtigingen expliciet zijn toegestaan voor tags. Dit gebeurt in eerste instantie door een pakket van de tagnaamruimte te maken nadat de machtigingen bij de auteur zijn ingesteld en het pakket op alle publicatieinstanties te installeren.
 
-* op auteurinstantie
+* op instantie van auteur
 
    * aanmelden met beheerdersrechten
    * toegang tot [Beveiligingsconsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console),
 
       * blader bijvoorbeeld naar http://localhost:4502/useradmin
+
    * in het linkerdeelvenster selecteert u de groep (of gebruiker) waarvoor [leesmachtiging](/help/sites-administering/security.md#permissions) wordt verleend
    * Zoek in het rechterdeelvenster het **Pad **naar de tagnaamruimte
 
       * bijvoorbeeld: `/content/cq:tags/mycommunity`
+
    * Selecteer de `checkbox`in de **Lezen** kolom
    * selecteren **Opslaan**
-
-
 
 ![chlimage_1-204](assets/chlimage_1-204.png)
 
@@ -278,10 +273,10 @@ Tagmachtigingen zijn [&#39;secure (by default)&#39;](/help/sites-administering/p
    * één aanpak is : [een pakket maken](/help/sites-administering/package-manager.md#package-manager) van de naamruimte bij de auteur
 
       * op `Advanced` tab, for `AC Handling` selecteren `Overwrite`
+
    * het pakket herhalen
 
       * kiezen `Replicate` vanuit pakketbeheer
-
 
 ## Tags beheren in verschillende talen {#managing-tags-in-different-languages}
 
@@ -301,7 +296,7 @@ Wanneer alle vertalingen zijn ingevoerd, selecteert u **Opslaan** om de bewerkin
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-In het algemeen wordt de taal die voor de tag wordt gekozen, ontleend aan de paginataal, indien beschikbaar. Wanneer de [ `tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) wordt in andere gevallen gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
+In het algemeen wordt de taal die voor de tag wordt gekozen, ontleend aan de paginataal, indien beschikbaar. Wanneer de [`tag` widget](/help/sites-developing/building.md#tagging-on-the-client-side) wordt in andere gevallen gebruikt (bijvoorbeeld in formulieren of in dialoogvensters), is de taal van de tag afhankelijk van de context.
 
 In plaats van de instelling voor de paginataal te gebruiken, gebruikt de Tagingconsole de taalinstelling van de gebruiker. In de Tagingconsole wordt voor de tag &#39;Dieren&#39; de tag &#39;Animaux&#39; weergegeven voor een gebruiker die de taal in zijn gebruikerseigenschappen instelt op Frans.
 
@@ -315,6 +310,6 @@ Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u [Een n
 
 * [Tags voor ontwikkelaars](/help/sites-developing/tags.md)
 
-   Informatie over het coderingskader en het uitbreiden en opnemen van codes in aangepaste toepassingen.
+  Informatie over het coderingskader en het uitbreiden en opnemen van codes in aangepaste toepassingen.
 
 * [Klassieke UI-tagconsole](/help/sites-administering/classic-console.md)

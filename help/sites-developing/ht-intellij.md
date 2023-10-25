@@ -1,6 +1,6 @@
 ---
 title: Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA
-description: IntelliJ IDEA gebruiken om AEM Projecten te ontwikkelen
+description: Leer hoe u IntelliJ IDEA kunt gebruiken om Adobe Experience Manager-projecten te ontwikkelen.
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -8,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: af60428255fb883265ade7b2d9f363aacb84b9ad
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -87,9 +87,9 @@ De volgende stappen zijn noodzakelijk voor het zuiveren JSPs met IntelliJ IDEA
 IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat IDEA het `content-package-maven-plugin` instellingen, moet deze handmatig worden geconfigureerd.
 
 1. Ga naar **Bestand -> Projectstructuur**
-1. Selecteer **Inhoud** module
+1. Selecteer de **Inhoud** module
 1. Klikken **+** boven de lijst van modules en selecteer **Web**
-1. Als Folder van het Middel van het Web, selecteer `content/src/main/content/jcr_root subdirectory` van uw project zoals aangetoond in het hieronder opgenomen screenshot.
+1. Als Folder van het Middel van het Web, selecteer `content/src/main/content/jcr_root subdirectory` van uw project zoals aangetoond in het hieronder opgenomen scherm.
 
 ![chlimage_1-48](assets/chlimage_1-48a.png)
 
@@ -106,9 +106,9 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 
 1. Ga naar **Uitvoeren -> Configuraties bewerken**
 1. Druk op **+** en selecteert u **JSR45 extern**
-1. Selecteer in het dialoogvenster Configuratie de optie **Configureren** naast **Toepassingsserver** en een generieke server configureren
+1. Selecteer in het dialoogvenster Configuratie **Configureren** naast **Toepassingsserver** en een generieke server configureren
 1. Stel de startpagina in op een geschikte URL als u een browser wilt openen wanneer u de foutopsporing start
-1. Alles verwijderen **Voor starten** taken als u vlt autosync gebruikt, of aangewezen Gemaakt taken vormen als u niet
+1. Alles verwijderen **Voordat u start** taken als u vlt autosync gebruikt, of aangewezen Gemaakt taken vormen als u niet
 1. Op de **Opstarten/Verbinding** deelvenster, pas indien nodig de poort aan
 1. Kopieer de opdrachtregelargumenten die IntelliJ IDEA voorstelt
 

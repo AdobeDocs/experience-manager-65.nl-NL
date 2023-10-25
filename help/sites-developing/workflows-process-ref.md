@@ -1,14 +1,14 @@
 ---
 title: Referentie workflowproces
-description: Referentie workflowproces
+description: Raadpleeg deze naslaggids voor workflows in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: a9de8ec6-6948-4643-89c3-62d9b1f6293a
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1068'
+source-wordcount: '1076'
 ht-degree: 0%
 
 ---
@@ -32,9 +32,9 @@ Processtappen worden gedefinieerd door een Java™-klasse of een ECMAScript.
 
 De nuttige lading is de entiteit waarop een werkschemainstantie handelt. De payload wordt impliciet geselecteerd door de context waarbinnen een werkschemainstantie is begonnen.
 
-Als bijvoorbeeld een workflow wordt toegepast op een AEM pagina *P* dan *P* wordt van stap tot stap overgegaan terwijl het werkschema vordert, met elke stap naar keuze handelend op *P* in zekere zin .
+Als bijvoorbeeld een workflow wordt toegepast op een AEM pagina *P* dan *P* wordt van stap tot stap doorgegeven terwijl de workflow wordt uitgevoerd, waarbij elke stap optioneel wordt uitgevoerd *P* in zekere zin .
 
-In het meest voorkomende geval is de lading een JCR-knooppunt in de repository (bijvoorbeeld een AEM Pagina of Element). Een JCR-knooppuntlading wordt doorgegeven als een tekenreeks die een JCR-pad of een JCR-id (UUID) is. Soms kan de lading een bezit JCR (die als weg JCR), een URL, een binair voorwerp, of een generisch voorwerp Java™ worden overgegaan. De individuele processtappen die op de lading handelen zullen gewoonlijk een lading van een bepaald type verwachten, of verschillend afhankelijk van het ladingstype handelen. Voor elk hieronder beschreven proces wordt het verwachte ladingstype, indien van toepassing, beschreven.
+In het meest voorkomende geval is de lading een JCR-knooppunt in de repository (bijvoorbeeld een AEM Pagina of Element). Een JCR-knooppuntlading wordt doorgegeven als een tekenreeks die een JCR-pad of een JCR-id (UUID) is. Soms kan de lading een bezit JCR (die als weg JCR wordt overgegaan), een URL, een binair voorwerp, of een generisch voorwerp Java™ zijn. De individuele processtappen die op de lading handelen zullen gewoonlijk een lading van een bepaald type verwachten, of verschillend afhankelijk van het ladingstype handelen. Voor elk hieronder beschreven proces wordt het verwachte ladingstype, indien van toepassing, beschreven.
 
 ### Argumenten {#arguments}
 
@@ -85,11 +85,11 @@ De geadviseerde manier om dit te doen is een de dienstgebruiker te gebruiken die
 
 ## Workflowbeheerprocessen {#workflow-control-processes}
 
-De volgende processen voeren geen handelingen uit op inhoud. Ze dienen om het gedrag van de workflow zelf te bepalen.
+De volgende processen voeren geen handelingen uit op inhoud. Zij dienen om het gedrag van het werkschema zelf te controleren.
 
 ### AbsoluteTimeAutoAdvancer (Absolute Time Auto Advancer) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
-De `AbsoluteTimeAutoAdvancer` (Absolute Tijd AutoGeavanceerde) gedrag identiek aan **AutoAdvancer**, behalve dat het op een bepaalde tijd en datum in plaats van na een bepaalde tijdsduur vervalt.
+De `AbsoluteTimeAutoAdvancer` (Absolute Tijd AutoGeavanceerde) processen gedraagt zich identiek aan **AutoAdvancer**, behalve dat het op een bepaalde tijd en datum in plaats van na een bepaalde tijdsduur vervalt.
 
 * **Java™-klasse**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Payload**: Geen.
@@ -104,7 +104,7 @@ De `AutoAdvancer` wordt de workflow automatisch naar de volgende stap verplaatst
 
 * **Payload**: Geen.
 * **Argumenten**: Geen.
-* **Time-out**: Procestijden worden na ingestelde tijdsduur weergegeven.
+* **Time-out**: Procestijden verlopen na ingestelde tijdsduur.
 
 ### ProcessAssembler (procesvergadering) {#processassembler-process-assembler}
 
@@ -112,7 +112,7 @@ De `ProcessAssembler` het proces voert veelvoudige subprocessen opeenvolgend in 
 
 * **Java™-klasse**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Payload**: Een DAM-element, AEM pagina of geen lading (is afhankelijk van de vereisten van subprocessen).
+* **Payload**: Een DAM-element, AEM pagina of geen lading (afhankelijk van de vereisten van subprocessen).
 * **Argumenten**:
 
 ```
@@ -126,7 +126,7 @@ De `ProcessAssembler` het proces voert veelvoudige subprocessen opeenvolgend in 
         listitem := /* A string */
 ```
 
-* **Time-out**: Eerbiedigd.
+* **Time-out**: Met respect.
 
 Bijvoorbeeld:
 
@@ -148,7 +148,7 @@ De volgende processen voeren eenvoudige taken uit of dienen als voorbeelden.
 
 >[!CAUTION]
 >
->Wijzig niets in het dialoogvenster `/libs` pad.
+>Wijzig niets in de `/libs` pad.
 >
 >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven dat u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
@@ -160,17 +160,17 @@ Het item in het opgegeven pad wordt verwijderd.
 
 * **Payload**: JCR-pad
 * **Argumenten**: Geen
-* **Time-out**: Genegeerd
+* **Time-out**: genegeerd
 
 ### nop {#noop}
 
-Dit is het null-proces. Het voert geen verrichting uit, maar registreert een zuivert bericht.
+Dit is het null-proces. Er wordt geen bewerking uitgevoerd, maar er wordt een foutopsporingsbericht geregistreerd.
 
 * **ECMAScript-pad**: `/libs/workflow/scripts/noop.ecma`
 
 * **Payload**: Geen
 * **Argumenten**: Geen
-* **Time-out**: Genegeerd
+* **Time-out**: genegeerd
 
 ### rule-false {#rule-false}
 
@@ -180,7 +180,7 @@ Dit is een null-proces dat retourneert `false` op de `check()` methode.
 
 * **Payload**: Geen
 * **Argumenten**: Geen
-* **Time-out**: Genegeerd
+* **Time-out**: genegeerd
 
 ### monster {#sample}
 
@@ -190,7 +190,7 @@ Dit is een voorbeeld van een ECMAScript-proces.
 
 * **Payload**: Geen
 * **Argumenten**: Geen
-* **Time-out**: Genegeerd
+* **Time-out**: genegeerd
 
 ### LockProcess {#lockprocess}
 
@@ -234,4 +234,4 @@ Hiermee maakt u een versie van de payload van de werkstroom (AEM pagina of DAM-e
 
 * **Payload**: Een JCR-pad of UUID die verwijst naar een pagina of DAM-element
 * **Argumenten**: Geen
-* **Time-out**: Eerbiedigd
+* **Time-out**: Met respect

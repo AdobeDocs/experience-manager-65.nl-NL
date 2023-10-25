@@ -1,7 +1,7 @@
 ---
 title: Extensie AEM
 seo-title: AEM Brackets Extension
-description: Extensie AEM
+description: Leer hoe u de Adobe Experience Manager-extensie voor haakjes gebruikt.
 seo-description: null
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '930'
+source-wordcount: '938'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Het project moet ten minste het volgende bevatten:
 
 1. a `jcr_root` map (bijvoorbeeld `myproject/jcr_root`)
 
-1. a `filter.xml` bestand (bijvoorbeeld `myproject/META-INF/vault/filter.xml`); voor meer informatie over de structuur van de `filter.xml` dossier gelieve te zien gelieve [Definitie van werkruimtfilter](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` bestand (bijvoorbeeld `myproject/META-INF/vault/filter.xml`); voor meer informatie over de structuur van de `filter.xml` bestand te zien [Definitie van werkruimtefilter](https://jackrabbit.apache.org/filevault/filter.html).
 
 In haakjes&#39;&#39; **Bestand** menu, kiest u **Map openen...** en kies `jcr_root` of de bovenliggende projectmap.
 
@@ -146,7 +146,7 @@ De extensie AEM Brackets beschikt ook over enkele automatische aantekeningen waa
 1. Typ in een HTML-kenmerk `sly`. Het kenmerk wordt automatisch ingevuld bij `data-sly-`.
 1. Selecteer het HTML-kenmerk in de vervolgkeuzelijst.
 
-### Automatische voltooiing van expressie {#expression-auto-completion}
+### Uitdrukking automatisch voltooid {#expression-auto-completion}
 
 Binnen een expressie `${}`, worden algemene variabelenamen automatisch ingevuld.
 

@@ -1,19 +1,19 @@
 ---
-title: OSGI-pakketten
-description: Tips voor het beheren van uw OSGi-bundels
+title: OSGi-bundels
+description: Lees wat tips voor het beheer van uw OSGi-bundels in Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e18065c7-75b9-4b37-8294-cf94122a4dcf
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '346'
 ht-degree: 0%
 
 ---
 
-# OSGI-pakketten{#osgi-bundles}
+# OSGi-bundels{#osgi-bundles}
 
 ## Semantische versienummering gebruiken {#use-semantic-versioning}
 
@@ -21,7 +21,7 @@ De beste werkwijzen voor semantische versienummering zijn overeengekomen op [htt
 
 ## Sluit niet meer klassen en potten in dan strikt noodzakelijk in bundels OSGi {#do-not-embed-more-classes-and-jars-than-strictly-needed-in-osgi-bundles}
 
-Gemeenschappelijke bibliotheken moeten in afzonderlijke bundels worden opgenomen. Hierdoor kunnen ze opnieuw worden gebruikt in alle bundels. Bij het omsluiten van een *JAR* in een OSGI-bundel, zorg ervoor dat u online bronnen controleert om te zien of iemand dit al eerder heeft gedaan. Enkele gebruikelijke plaatsen om bestaande bundelomhulsels te vinden zijn: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes en de SpringSource Enterprise Bundle Repository.
+Gemeenschappelijke bibliotheken moeten in afzonderlijke bundels worden opgenomen. Hierdoor kunnen ze opnieuw worden gebruikt in alle bundels. Bij het omsluiten van een *JAR* in een bundel OSGi, zorg ervoor om online bronnen te controleren om te zien of heeft iemand dit reeds eerder gedaan. Een aantal gangbare plaatsen om bestaande bundelpakjes te vinden zijn: Apache Felix, Apache Sling, Apache Geronimo, Apache ServiceMix, Eclipse Bundle Recipes en de SpringSource Enterprise Bundle Repository.
 
 ## Afhankelijk van de laagst benodigde bundelversies {#depend-on-the-lowest-needed-bundle-versions}
 

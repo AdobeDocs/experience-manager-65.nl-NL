@@ -1,7 +1,7 @@
 ---
 title: Klassieke UI-tagconsole
 seo-title: Classic UI Tagging Console
-description: Meer informatie over de Classic UI Tagging Console.
+description: Meer informatie over de Adobe Experience Manager Classic UI Tagging Console.
 seo-description: Learn about the Classic UI Tagging Console.
 uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: 21330d460d1080ab1dee3e82bc3c3877677c1420
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '892'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Deze sectie is voor de Classic UI Tagging Console.
 
 De voor aanraking geoptimaliseerde UI-tagging-console is [hier](/help/sites-administering/tags.md#tagging-console).
 
-U kunt als volgt de klassieke UI-tagingconsole openen:
+De klassieke UI-tagingconsole openen:
 
 * op auteur
 * aanmelden met beheerdersrechten
@@ -68,13 +68,13 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 1. Selecteer in het rechterdeelvenster de tag die u wilt bewerken.
 1. Klikken **Bewerken**.
 1. U kunt de **Titel** en de **Beschrijving**.
-1. Klikken **Opslaan** om het dialoogvenster te sluiten.
+1. Klikken **Opslaan** het dialoogvenster sluiten.
 
 ## Tags verwijderen {#deleting-tags}
 
 1. Selecteer in het rechterdeelvenster het label dat u wilt verwijderen.
 1. Klikken **Verwijderen**.
-1. Klikken **Ja** om het dialoogvenster te sluiten.
+1. Klikken **Ja** het dialoogvenster sluiten.
 
    De tag mag niet meer worden vermeld.
 
@@ -95,7 +95,7 @@ Als u wilt helpen dat tagbeheerders en ontwikkelaars de taxonomie opschonen of d
 
 1. Open de **Tags** console.
 1. Selecteer de tag en klik op **Verplaatsen...** in de bovenste werkbalk (of in het contextmenu).
-1. In de **Tag verplaatsen** instellen:
+1. In de **Tag verplaatsen** , definiëren:
 
    * **tot**, het doelknooppunt.
    * **Naam wijzigen in**, de naam van het nieuwe knooppunt.
@@ -108,7 +108,7 @@ De **Tag verplaatsen** ziet er als volgt uit:
 
 >[!NOTE]
 >
->Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig mogen auteurs [de titels van tags wijzigen](#editing-tags).
+>Auteurs mogen geen tags verplaatsen of de naam van een tag-id wijzigen. Indien nodig mogen auteurs alleen [de titels van tags wijzigen](#editing-tags).
 
 ## Tags samenvoegen {#merging-tags}
 
@@ -118,7 +118,7 @@ Een tag samenvoegen in een andere tag:
 
 1. Open de **Tags** console.
 1. Selecteer de tag en klik op **Samenvoegen...** in de bovenste werkbalk (of in het contextmenu).
-1. In de **Tag samenvoegen** instellen:
+1. In de **Tag samenvoegen** , definiëren:
 
    * **in**, het doelknooppunt.
 
@@ -133,7 +133,7 @@ De **Tag samenvoegen** ziet er als volgt uit:
 Zo ziet u hoe vaak een tag wordt gebruikt:
 
 1. Open de **Tags** console.
-1. Klikken **Telgebruik** in de bovenste werkbalk: In de kolom Aantal wordt het resultaat weergegeven.
+1. Klikken **Telgebruik** in de bovenste werkbalk: het resultaat wordt weergegeven in de kolom Aantal.
 
 ## Tags beheren in verschillende talen {#managing-tags-in-different-languages}
 
@@ -141,7 +141,7 @@ De optionele `title`De eigenschap van een tag kan in meerdere talen worden verta
 
 ### Tagtitels definiëren in meerdere talen {#defining-tag-titles-in-multiple-languages}
 
-De volgende procedure laat zien hoe u de `title`van de tag **Dieren** in het Engels, Duits en Frans:
+De volgende procedure laat zien hoe u de `title`van de tag **Dieren** Engels, Duits en Frans:
 
 1. Ga naar de **Tags** console.
 1. De tag bewerken **Dieren** onder **Tags** > **Stock Photography**.
@@ -165,12 +165,12 @@ Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u de sec
 
 Standaard wordt de tag `titles`in de pagina-eigenschappen worden weergegeven in de paginataal. Het tagdialoogvenster in de pagina-eigenschappen heeft een taalveld waarmee de tag kan worden weergegeven `titles`in een andere taal. De volgende procedure beschrijft hoe u de tag kunt weergeven `titles`in het Frans:
 
-1. Raadpleeg het vorige gedeelte om de Franse vertaling toe te voegen aan de **Dieren** onder **Tags** > **Stock Photography**.
+1. Zie het vorige gedeelte om de Franse vertaling aan de **Dieren** onder **Tags** > **Stock Photography**.
 1. Open de pagina-eigenschappen van het dialoogvenster **Producten** pagina in het Engelse gedeelte van de **Geometrixx** site.
 1. Open de **Tags/trefwoorden** (door het keuzemenu rechts van het weergavegebied Tags/Trefwoorden te selecteren) en het dialoogvenster **Frans** in het keuzemenu rechtsonder.
 1. Schuif met de pijlen naar links en rechts totdat u de optie **Stock Photography** tab
 
-   Selecteer **Dieren** (**Animaux**) en selecteert u buiten het dialoogvenster om het te sluiten en de tag toe te voegen aan de pagina-eigenschappen.
+   Selecteer de **Dieren** (**Animaux**) en selecteert u buiten het dialoogvenster om het te sluiten en de tag toe te voegen aan de pagina-eigenschappen.
 
    ![Een andere tag bewerken](assets/french_tag.png)
 

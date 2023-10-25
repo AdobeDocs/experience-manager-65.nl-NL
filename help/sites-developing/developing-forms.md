@@ -1,7 +1,7 @@
 ---
 title: Forms ontwikkelen (klassieke gebruikersinterface)
 seo-title: Developing Forms (Classic UI)
-description: Meer informatie over het ontwikkelen van formulieren
+description: Meer informatie over het ontwikkelen van formulieren voor de klassieke gebruikersinterface van Adobe Experience Manager
 seo-description: Learn how to develop forms
 uuid: 33859f29-edc5-4bd5-a634-35549f3b5ccf
 contentOwner: Guillaume Carlino
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
 workflow-type: tm+mt
-source-wordcount: '1947'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ De basisstructuur van een formulier is:
 
 * Begin formulier
 * Formulierelementen
-* Einde formulier
+* Einde van formulier
 
 Al deze worden gerealiseerd met een reeks gebrek [Formuliercomponenten](/help/sites-authoring/default-components.md#form), beschikbaar in een standaard AEM installatie.
 
@@ -40,7 +40,7 @@ Naast [ontwikkeling van nieuwe onderdelen](/help/sites-developing/developing-com
 
 >[!NOTE]
 >
->In dit document wordt de nadruk gelegd op het ontwikkelen van formulieren met behulp van de [Elementaire componenten](/help/sites-authoring/default-components-foundation.md) in de klassieke UI. Adobe raadt u aan de nieuwe [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [Voorwaarden verbergen](/help/sites-developing/hide-conditions.md) voor formulierontwikkeling in de interface met aanraakbediening.
+>Dit document is gericht op het ontwikkelen van formulieren met behulp van de [Elementaire componenten](/help/sites-authoring/default-components-foundation.md) in de klassieke UI. Adobe beveelt aan de nieuwe [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [Voorwaarden verbergen](/help/sites-developing/hide-conditions.md) voor formulierontwikkeling in de interface met aanraakbediening.
 
 ## Formulierwaarden vooraf laden {#preloading-form-values}
 
@@ -72,7 +72,7 @@ De **Pad items laden** kan worden gebruikt om toegang te krijgen tot een lijst v
 
 1. Een nieuwe eigenschap toevoegen (bijvoorbeeld `myList`) van het type multi-value string ( `String[]`) om de lijst met vervolgkeuzelijsten te bevatten. Inhoud kan ook worden geïmporteerd met een script, zoals met een JSP-script of cURL in een shell-script.
 
-1. Gebruik het volledige pad in het dialoogvenster **Pad items laden** veld: bijvoorbeeld: `/etc/designs/geometrixx/formlistvalues/myList`
+1. Gebruik het volledige pad in het dialoogvenster **Pad items laden** veld: bijvoorbeeld `/etc/designs/geometrixx/formlistvalues/myList`
 
 Let erop dat als de waarden in de `String[]` hebben de volgende notatie:
 
@@ -95,7 +95,7 @@ Een reeks acties wordt voorzien van een standaard AEM installatie, deze kunnen o
 
 `/libs/foundation/components/form/actions`
 
-en in de **Type handeling** lijst van **Formulier** component:
+en in de **Type handeling** lijst van de **Formulier** component:
 
 ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -151,7 +151,7 @@ Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aa
       1. `init.jsp`
       1. voor alle beperkingen van het veld: `clientvalidation.jsp`
       1. validatieRT van formulier: `clientvalidation.jsp`
-      1. formulier wordt geladen via bron laden als dit is ingesteld
+      1. formulier wordt geladen via bron laden indien ingesteld
       1. `addfields.jsp` tijdens renderen `<form></form>`
 
    * bij het verwerken van een formulier `POST`:
@@ -160,7 +160,7 @@ Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aa
       1. voor alle beperkingen van het veld: `servervalidation.jsp`
       1. validatieRT van formulier: `servervalidation.jsp`
       1. `forward.jsp`
-      1. als een voorwaarts pad is ingesteld ( `FormsHelper.setForwardPath`), stuurt u het verzoek door en roept u vervolgens `cleanup.jsp`
+      1. als een voorwaarts pad is ingesteld ( `FormsHelper.setForwardPath`), het verzoek doorsturen en vervolgens `cleanup.jsp`
 
       1. Als er geen voorwaarts pad is ingesteld, roept u `post.POST.jsp` (eindigt hier, nee `cleanup.jsp` opgeroepen)
 
@@ -168,7 +168,7 @@ Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aa
 
    1. Een script voor het toevoegen van velden.
 De naam van het script is `addfields.<extension>`, bijvoorbeeld `addfields.jsp`
-An `addfields` wordt onmiddellijk aangeroepen nadat de HTML voor het begin van het formulier is geschreven. Hierdoor kan de actie aangepaste invoervelden of een andere HTML toevoegen in het formulier.
+An `addfields` wordt onmiddellijk aangeroepen nadat de HTML voor het begin van het formulier is geschreven. Op deze manier kan de actie aangepaste invoervelden of andere HTML toevoegen in het formulier.
 
    1. Een initialisatiescript.
 De naam van het script is `init.<extension>`, bijvoorbeeld `init.jsp`
@@ -208,7 +208,7 @@ U kunt uw eigen beperkingen voor een afzonderlijk veld toevoegen (onder `/apps`)
 
    * `sling:resourceType` - ingesteld op `foundation/components/form/constraint`
 
-   * `constraintMessage` - een aangepast bericht dat wordt weergegeven als het veld volgens de beperking niet geldig is op het moment dat het formulier wordt ingediend.
+   * `constraintMessage` - een aangepast bericht dat wordt weergegeven als het veld volgens de beperking niet geldig is op het moment dat het formulier wordt verzonden
 
    * Optioneel:
 
@@ -217,10 +217,10 @@ U kunt uw eigen beperkingen voor een afzonderlijk veld toevoegen (onder `/apps`)
 
 1. In deze map hebt u de volgende scripts nodig:
 
-   * Een clientvalidatiescript: De naam van het script is `clientvalidation.<extension>`, bijvoorbeeld `clientvalidation.jsp`
+   * Een clientvalidatiescript: de naam van het script is `clientvalidation.<extension>`, bijvoorbeeld `clientvalidation.jsp`
 Dit wordt aangeroepen wanneer het formulierveld wordt gegenereerd. U kunt hiermee JavaScript voor de client maken om het veld op de client te valideren.
 
-   * Een servervalidatiescript: De naam van het script is `servervalidation.<extension>`, bijvoorbeeld `servervalidation.jsp`
+   * Een servervalidatiescript: de naam van het script is `servervalidation.<extension>`, bijvoorbeeld `servervalidation.jsp`
 Dit wordt aangeroepen wanneer het formulier wordt verzonden. Het kan worden gebruikt om het gebied op de server te bevestigen nadat het wordt voorgelegd.
 
 >[!NOTE]
@@ -252,7 +252,7 @@ Gebruik de **Regels tonen/verbergen bewerken** om de voorwaarden op te geven waa
 
 Gebruik de velden boven in het dialoogvenster om de volgende informatie op te geven:
 
-* Hiermee wordt aangegeven of u voorwaarden opgeeft voor het verbergen of weergeven van de component.
+* Of u voorwaarden voor het verbergen of weergeven van de component opgeeft.
 * Of om het even welke of alle voorwaarden waar moeten zijn om de component te tonen of te verbergen.
 
 Onder deze velden worden een of meer voorwaarden weergegeven. Een voorwaarde vergelijkt de waarde van een andere formuliercomponent (op hetzelfde formulier) met een waarde. Als de werkelijke waarde in het veld aan de voorwaarde voldoet, wordt de waarde true geëvalueerd. De voorwaarden omvatten de volgende informatie:

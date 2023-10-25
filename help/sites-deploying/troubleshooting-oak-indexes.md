@@ -1,7 +1,7 @@
 ---
 title: Probleemoplossing voor Oak-indexen
 seo-title: Troubleshooting Oak Indexes
-description: Hoe te om langzaam opnieuw indexeren te ontdekken en te bevestigen.
+description: Leer hoe u kunt vaststellen of indexering traag is, de oorzaak kunt achterhalen en het probleem kunt oplossen.
 uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '1465'
+source-wordcount: '1473'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Het is belangrijk om een onderscheid te maken tussen opnieuw indexeren die een o
 
 Zie de [Beste praktijken op Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md) voor aanvullende informatie over wanneer en hoe inhoud opnieuw moet worden geindexeerd.
 
-## Eerste detectie {#initial-detection}
+## Aanvankelijke detectie {#initial-detection}
 
 De initiële detectie vertraagt de indexering vereist dat de `IndexStats` JMX MBeans. Ga als volgt te werk voor de betreffende AEM instantie:
 
@@ -40,7 +40,7 @@ De initiële detectie vertraagt de indexering vereist dat de `IndexStats` JMX MB
 
 ## De indexering wordt gepauzeerd na een gedwongen sluiting {#indexing-is-paused-after-a-forced-shutdown}
 
-Een gedwongen sluiting resulteert in AEM het opschorten van asynchrone indexering tot 30 minuten na het opnieuw beginnen. Het duurt meestal nog 15 minuten om de eerste herindexeringspas af te ronden, voor een totaal van ongeveer 45 minuten (terugkoppelen naar de [Eerste detectie](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) tijdsbestek van 45 minuten). Als indexeren wordt gepauzeerd na een gedwongen sluiting:
+Een gedwongen sluiting resulteert in AEM het opschorten van asynchrone indexering tot 30 minuten na het opnieuw beginnen. Het duurt meestal nog 15 minuten om de eerste herindexeringspas af te ronden, voor een totaal van ongeveer 45 minuten (terugkoppelen naar de [Aanvankelijke detectie](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) tijdsbestek van 45 minuten). Als indexeren wordt gepauzeerd na een gedwongen sluiting:
 
 1. Bepaal eerst of de AEM instantie geforceerd is afgesloten (het AEM proces is met kracht gedood of er is een stroomstoring opgetreden) en begin later opnieuw.
 
@@ -68,7 +68,7 @@ In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asynchr
 1. Controleer of de nieuwe Apache Sling Scheduler-thread-pool is geregistreerd en wordt weergegeven in de webconsole van Apache Sling Scheduler-status.
 
    * Navigeer naar de AEM OSGi Webconsole>Status>Sling Scheduler of ga naar https://&lt;host>:&lt;port>/system/console/status-slingplanner (bijvoorbeeld [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
-   * Controleer of de volgende poolitems bestaan:
+   * Controleer of de volgende poolitems aanwezig zijn:
 
       * ApacheSlingoak
       * ApacheSlingdefault
@@ -77,7 +77,7 @@ In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asynchr
 
 ## De waarnemingswachtrij is vol {#observation-queue-is-full}
 
-Als er te veel veranderingen en verplichtingen in korte tijd aan de repository worden aangebracht, kan de indexering vertraagd worden vanwege een volledige waarnemingswachtrij. Bepaal eerst of de waarnemingswachtrij vol is:
+Als er te veel veranderingen en verplichtingen in korte tijd aan de gegevensopslagplaats worden aangebracht, kan de indexering worden vertraagd vanwege een volledige waarnemingswachtrij. Bepaal eerst of de waarnemingswachtrij vol is:
 
 1. Ga naar de webconsole en klik op het tabblad JMX of ga naar https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx))
 1. Open de Statistieken van de Bewaarplaats van de Eak MB en bepaal als om het even welk `ObservationQueueMaxLength` waarde is groter dan 10.000.
@@ -85,12 +85,12 @@ Als er te veel veranderingen en verplichtingen in korte tijd aan de repository w
    * Bij normale bewerkingen moet deze maximumwaarde uiteindelijk altijd tot nul worden teruggebracht (met name in de `per second` ) om te controleren of de `ObservationQueueMaxLength`s seconden metriek is 0.
    * Als de waarden 10.000 of meer zijn en gestaag toenemen, geeft dit aan dat ten minste één (mogelijk meer) wachtrij niet kan worden verwerkt zodra nieuwe wijzigingen (vastleggingen) optreden.
    * Elke waarnemingswachtrij heeft een limiet (standaard ingesteld op 10.000) en als de wachtrij deze limiet bereikt, neemt de verwerking af.
-   * Als u MongoMK gebruikt, neemt de snelheid van de interne cache van de eiken toe naarmate de lengte van de rijen toeneemt. Deze correlatie kan gezien worden in een verhoogde `missRate` voor de `DocChildren` in de cache `Consolidated Cache` Statistieken MBean.
+   * Als u MongoMK gebruikt, neemt de snelheid van de interne cache van de eiken toe naarmate de lengte van de rijen toeneemt. Deze correlatie kan gezien worden in een verhoogde `missRate` voor de `DocChildren` in de cache `Consolidated Cache` statistieken MBean.
 
 1. Om te voorkomen dat de limieten van de waarnemingswachtrij worden overschreden, wordt aanbevolen:
 
-   * Verlaag de constante snelheid van komma&#39;s. Korte punten in vastleggingen zijn aanvaardbaar, maar de constante snelheid moet worden verlaagd.
-   * De grootte van de `DiffCache` zoals beschreven in [Tips voor het afstemmen van prestaties > Mongo Storage Tuning > Documentcachegrootte](/help/sites-deploying/configuring-performance.md).
+   * Verlaag de constante snelheid van komma&#39;s. Korte pieken in vastleggingen zijn aanvaardbaar, maar de constante snelheid moet worden verlaagd.
+   * De grootte van de `DiffCache` zoals beschreven in [Tips voor het afstemmen van prestaties > Mongo Storage Tuning > Documentcache-grootte](/help/sites-deploying/configuring-performance.md).
 
 ## Een vast herindexeringsproces identificeren en corrigeren {#identifying-and-remediating-a-stuck-re-indexing-process}
 
@@ -111,24 +111,24 @@ Ga als volgt te werk om een vast opnieuw indexeringsproces te identificeren en t
 
       * *org.apache.jackrabbit.oak.plugins.index.AsyncIndexUpdate*
       * *org.apache.jackrabbit.oak.plugins.index.IndexUpdate*
+
    * Gegevens verzamelen van de async `IndexStats` MBean:
 
       * Navigeer naar AEM OSGi Webconsole>Main>JMX>IndexState>async
 
-         of ga naar [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
-   * Gebruiken [de consolemodus van eak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) om de details te verzamelen van wat er in het kader van de * bestaat `/:async`* node.
+        of ga naar [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DIndexStats)
+
+   * Gebruiken [de consolemodus van eak-run.jar](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run) om de details te verzamelen van wat er onder de * bestaat `/:async`* node.
    * Een lijst met controlepunten in de opslagplaats verzamelen met de `CheckpointManager` MBean:
 
       * AEM OSGi Webconsole>Main>JMX>CheckpointManager>listCheckpoints()
 
-         of ga naar [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
-
-
+        of ga naar [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3DSegment+node+store+checkpoint+management%2Ctype%3DCheckpointManager)
 
 1. Na het verzamelen van alle informatie die in Stap 1 wordt geschetst, begin AEM opnieuw.
 
    * Het opnieuw opstarten van AEM kan het probleem oplossen als er een hoge gelijktijdige belasting is (overloop van de waarnemingswachtrij of iets dergelijks).
-   * Als het probleem niet wordt opgelost door opnieuw opstarten, opent u een probleem met [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) en verstrekt alle informatie die in Stap 1 wordt verzameld.
+   * Als het probleem niet wordt opgelost door opnieuw opstarten, opent u een probleem met [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) en verstrekt alle informatie die in Stap 1 wordt verzameld.
 
 ## Asynchrone herindexering veilig afbreken {#safely-aborting-asynchronous-re-indexing}
 
@@ -152,14 +152,16 @@ Voer de volgende stappen uit om opnieuw indexeren veilig af te breken:
 1. De `abortAndPause()` de juiste `IndexStats` MBean.
 1. Markeer de definitie van de eiken-index op de juiste wijze om te voorkomen dat het indexeren van de rijstrook wordt hervat.
 
-   * Wanneer u een **bestaand** index, stel de eigenschap voor opnieuw indexeren in op false
+   * Bij het opnieuw indexeren van een **bestaand** index, stel de eigenschap voor opnieuw indexeren in op false
 
       * `/oak:index/someExistingIndex@reindex=false`
+
    * Of anders, voor een **new** index, ofwel:
 
       * De eigenschap type instellen op uitgeschakeld
 
          * `/oak:index/someNewIndex@type=disabled`
+
       * of verwijder de indexdefinitie volledig
 
    Leg de wijzigingen vast in de opslagplaats wanneer deze zijn voltooid.

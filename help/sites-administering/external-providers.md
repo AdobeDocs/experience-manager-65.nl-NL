@@ -1,15 +1,15 @@
 ---
 title: Analyse met externe providers
-description: Meer informatie over Analytics met externe providers.
+description: Leer hoe te om uw eigen instantie van de Generische Fragmenten van Analytics te vormen om een nieuwe de dienstconfiguratie te bepalen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -64,12 +64,12 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 Voor de basisconfiguratie:
 
 1. Open de **Gereedschappen** console.
-1. Vouw vanuit het linkerdeelvenster uit **Configuraties van Cloud Services**.
-1. Dubbelklikken **Generic Analytics-fragment** om de pagina te openen:
+1. Vouw vanuit het linkerdeelvenster uit **Configuraties van Cloud Servicen**.
+1. Dubbelklikken **Generic Analytics-fragment** de pagina openen:
 
    ![Generic Analytics-fragment](assets/analytics_genericoverview.png)
 
-1. Klik op + om een nieuwe configuratie toe te voegen met behulp van het dialoogvenster. Wijs ten minste een naam toe, bijvoorbeeld Google Analytics:
+1. Klik + om een nieuwe configuratie toe te voegen gebruikend de dialoogdoos. Wijs ten minste een naam toe, bijvoorbeeld Googles Analytics:
 
    ![Configuratie maken](assets/analytics_addconfig.png)
 
@@ -77,24 +77,24 @@ Voor de basisconfiguratie:
 
    ![De component bewerken](assets/analytics_snippet.png)
 
-1. Klikken **OK** om op te slaan.
+1. Klikken **OK** opslaan.
 
 ## Uw nieuwe service op pagina&#39;s gebruiken {#using-your-new-service-on-pages}
 
 Nadat u de de dienstconfiguratie hebt gecreeerd, moet u nu de vereiste pagina&#39;s vormen om het te gebruiken:
 
-1. Navigeer naar de pagina.
-1. Open de **Pagina-eigenschappen** van sidekick, dan **Cloud Services** tab.
-1. Klikken **Service toevoegen** selecteert u vervolgens de gewenste service. De **Generic Analytics-fragment**:
+1. Ga naar de pagina.
+1. Open de **Pagina-eigenschappen** van sidekick, dan **Cloud Servicen** tab.
+1. Klikken **Service toevoegen** selecteert u vervolgens de gewenste service. Bijvoorbeeld de **Generic Analytics-fragment**:
 
    ![Een cloudservice toevoegen](assets/analytics_selectservice.png)
 
-1. Klikken **OK** om op te slaan.
-1. U bent teruggekeerd aan **Cloud Services** tab. De **Generic Analytics-fragment** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren. Voorbeeld: google-analytics:
+1. Klikken **OK** opslaan.
+1. U bent teruggekeerd aan **Cloud Servicen** tab. De **Generic Analytics-fragment** wordt nu vermeld met het bericht `Configuration reference missing`. Gebruik de drop-down lijst om uw specifiek de dienstgeval te selecteren. Voorbeeld: google-analytics:
 
    ![Configuratie van cloudservice toevoegen](assets/analytics_selectspecificservice.png)
 
-1. Klikken **OK** om op te slaan.
+1. Klikken **OK** opslaan.
 
    Het fragment kan nu worden weergegeven als u de paginabron voor de pagina bekijkt.
 

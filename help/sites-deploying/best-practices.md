@@ -1,14 +1,14 @@
 ---
 title: Best practices implementeren
-description: Het opstellen en handhaven van beste praktijken.
+description: Leer hoe u Adobe Experience Manager (AEM) op de meest efficiënte en effectieve manier kunt implementeren en onderhouden.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 4cbc0a30-d5f6-40ff-b7f6-8d64762e1970
-source-git-commit: fd937341e26edd0c3edfced8e862066ebc30f9a3
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '434'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Raadpleeg een van de volgende bronnen voor beste praktijken bij het beheren, ont
 * [Aanbevolen werkwijzen ontwikkelen](/help/sites-developing/best-practices.md)
 * [Aanbevolen werkwijzen ontwerpen](/help/sites-authoring/best-practices.md)
 
-Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
+In de volgende tabellen worden specifieke documenten beschreven en aan deze documenten gekoppeld.
 
 ## Eik {#oak}
 
@@ -80,7 +80,7 @@ De beste werkwijzen rond de gebruikersinterface worden hier beschreven:
 
 [Gebruikersinterface Recommendations voor klanten](/help/sites-deploying/ui-recommendations.md)
 
-AEM heeft momenteel twee UI&#39;s: klassieke en aanraakgeoptimaliseerde interface in dezelfde release. Daarom moeten klanten een besluit nemen over welk gebruik tijdens de projectimplementatie moet worden gemaakt. Dit document is bedoeld om u te helpen bij het zoeken naar de juiste keuze.
+AEM heeft momenteel twee gebruikersinterface&#39;s: klassieke gebruikersinterface en interface met aanraakfunctionaliteit in dezelfde release. Daarom moeten klanten een besluit nemen over welk gebruik tijdens de uitvoering van het project moet worden gemaakt. Dit document is bedoeld om u te helpen bij het zoeken naar de juiste keuze.
 
 ## Prestaties {#performance}
 

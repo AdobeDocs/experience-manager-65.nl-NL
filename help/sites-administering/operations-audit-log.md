@@ -1,8 +1,8 @@
 ---
 title: Onderhoud controlelogbestand in AEM 6
 seo-title: Audit Log Maintenance in AEM 6
-description: Meer informatie over onderhoud van controlelogbestanden in AEM.
-seo-description: Lear about Audit Log Maintenance in AEM.
+description: Meer informatie over het onderhoud van controlelogbestanden in Adobe Experience Manager (AEM).
+seo-description: Learn about Audit Log Maintenance in Adobe Experience Manager (AEM).
 uuid: 212de4df-6bf4-434c-94e1-74186d21945a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 9134130f349c6c7a06ad9658a87f78a86b7dbf9c
+source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
 workflow-type: tm+mt
-source-wordcount: '603'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Voer de volgende stappen uit om het opschonen van controlelogbestanden te config
 
    ![chlimage_1-365](assets/chlimage_1-365.png)
 
-1. Vervolgens configureert u de zuiveringsplanner volgens uw vereisten. De beschikbare opties zijn:
+1. Vervolgens configureert u de zuiveringsplanner op basis van uw vereisten. De beschikbare opties zijn:
 
    * **Naam regel:** de naam van de regel inzake controlebeleid;
    * **Inhoudspad:** het pad van de inhoud waarop de regel van toepassing is;
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om het opschonen van controlelogbestanden te config
 
 1. Druk op **Wekelijks onderhoudvenster** kaart.
 
-1. U zult de onderhoudstaak vinden die reeds in het kader van **AuditLog-onderhoudstaak** kaart.
+1. U zult de onderhoudstaak vinden die reeds onder **AuditLog-onderhoudstaak** kaart.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
@@ -84,7 +84,7 @@ In AEM 6.3, als het geplande onderhoudsvenster sluit alvorens de taak van het Lo
 
    * **Naam regel:** de naam van de regel inzake controlebeleid;
    * **Inhoudspad:** het pad van de inhoud waarop de regel van toepassing is
-   * **Minimumleeftijd:** de tijd in dagen dat de auditlogs moeten worden bewaard
+   * **Minimumleeftijd:** de tijd in dagen dat de auditlogboeken moeten worden bewaard
    * **Typen auditlogbestandgebeurtenissen:** de typen DAM-auditgebeurtenissen die moeten worden gewist.
 
 1. Klikken **Opslaan** om uw configuratie te bewaren
@@ -97,7 +97,7 @@ In AEM 6.3, als het geplande onderhoudsvenster sluit alvorens de taak van het Lo
 
    * **Naam regel:** de naam van de regel van het controlebeleid
    * **Inhoudspad:** het pad van de inhoud waarop de regel van toepassing is
-   * **Minimumleeftijd:** de tijd in dagen dat de auditlogs moeten worden bewaard
+   * **Minimumleeftijd:** de tijd in dagen dat de auditlogboeken moeten worden bewaard
    * **Gebeurtenistypen van het Logboek van de controle:** de soorten de controlegebeurtenissen van de Replicatie die zouden moeten worden gezuiverd
 
 1. Klikken **Opslaan** om uw configuratie op te slaan.

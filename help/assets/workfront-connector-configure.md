@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
 workflow-type: tm+mt
-source-wordcount: '1619'
+source-wordcount: '1624'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,7 @@ Metagegevenstoewijzing tussen Workfront-projecten en AEM mappen wordt gedefiniee
 
 Voer de volgende stappen uit om de toewijzingen te configureren:
 
+1. Toevoegen `jcr:read` machtigingen voor `/conf/global/settings/dam/adminui-extension/foldermetadataschema` for `wf-workfront-users` groep.
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Folder Metadata Schemas]**.
 1. Selecteer het schema voor metagegevens van de map dat u wilt bewerken en klik op Bewerken.
 1. Selecteer het formulierveld voor het metagegevensschema van de map dat u wilt bewerken en selecteer het tabblad Instellingen in het rechterdeelvenster.

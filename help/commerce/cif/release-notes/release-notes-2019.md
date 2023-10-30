@@ -35,7 +35,7 @@ ht-degree: 6%
 
 * React-gebaseerde componenten zijn beschikbaar als npm pakket. Dit staat ontwikkelaars toe om het pakket van Componenten van de Reactie als gebiedsdeel voor een nieuw project van de Reactie te gebruiken om aanpassing van bestaande componenten toe te staan of nieuwe React-based componenten te ontwikkelen.
 
-* Aanpassing van GraphQL-query is vereenvoudigd. Dit staat ontwikkelaars toe om de kerncomponenten van CIF met minder code aan te passen.
+* Aanpassing van GraphQL-query is vereenvoudigd. Op deze manier kunnen ontwikkelaars CIF basiscomponenten aanpassen met minder code.
 
 ## Releasedatum: oktober 2019
 

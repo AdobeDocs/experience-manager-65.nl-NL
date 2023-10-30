@@ -1,19 +1,15 @@
 ---
 title: Het CRX2Oak-migratiehulpprogramma gebruiken
-seo-title: Using the CRX2Oak Migration Tool
-description: Leer hoe u het migratiehulpmiddel CRX2Oak gebruikt met AEM.
-seo-description: Learn how to use the CRX2Oak migration tool.
-uuid: 9b788981-4ef0-446e-81f0-c327cdd3214b
+description: Leer hoe u het migratiehulpprogramma CRX2Oak kunt gebruiken met Adobe Experience Manager. Het programma is ontworpen om u te helpen bij het migreren van gegevens tussen verschillende opslagplaatsen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
-discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 feature: Upgrading
 exl-id: ef3895b9-8d35-4881-8188-c864ae3f0b4c
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: ee1134be6ad81cc6638ee9004f7dad475a6cc67d
 workflow-type: tm+mt
-source-wordcount: '1222'
+source-wordcount: '1208'
 ht-degree: 0%
 
 ---
@@ -31,7 +27,7 @@ U kunt de nieuwste versie van crx2oak downloaden van de opslagplaats voor openba
 
 >[!NOTE]
 >
->Zie voor meer informatie over Apache Oak en de belangrijkste concepten van AEM persistentie [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md).
+>Raadpleeg voor meer informatie over Apache Oak en de belangrijkste concepten van Adobe Experience Manager (AEM) persistentie [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md).
 
 ## Gevallen voor migratiegebruik {#migration-use-cases}
 
@@ -51,15 +47,15 @@ In het onderstaande diagram worden alle mogelijke migratiecombinaties weergegeve
 
 CRX2Oak wordt geroepen tijdens AEM verbeteringen op een manier waarin de gebruiker een vooraf bepaald migratieprofiel kan specificeren dat de herconfiguratie van persistentiemodi automatiseert. Dit wordt de snelstartmodus genoemd.
 
-Het kan ook afzonderlijk worden uitgevoerd voor het geval het meer aanpassing vereist. Let er echter op dat in deze modus alleen wijzigingen worden aangebracht in de opslagplaats en dat een eventuele aanvullende herconfiguratie van AEM handmatig moet worden uitgevoerd. Dit wordt de standalone wijze genoemd.
+Het kan ook afzonderlijk worden uitgevoerd voor het geval het meer aanpassing vereist. In deze modus worden wijzigingen echter alleen doorgevoerd in de opslagplaats en moeten eventuele aanvullende aanpassingen van AEM handmatig worden uitgevoerd. Dit wordt de standalone wijze genoemd.
 
-Een ander ding om op te merken is dat met de standaardmontages op standalone wijze, slechts de Opslag van de Knoop zal worden gemigreerd en de nieuwe bewaarplaats zal de oude binaire opslag hergebruiken.
+Een ander ding om op te merken is dat met de standaardmontages op standalone wijze, slechts de Opslag van de Knoop wordt gemigreerd en de nieuwe bewaarplaats de oude binaire opslag opnieuw gebruikt.
 
 ### Automatische QuickStart-modus {#automated-quickstart-mode}
 
 Sinds AEM 6.3 kan CRX2Oak door de gebruiker gedefinieerde migratieprofielen verwerken die kunnen worden geconfigureerd met alle migratieopties die al beschikbaar zijn. Hierdoor is meer flexibiliteit mogelijk en kunt u de configuratie van AEM automatiseren. Functies die niet beschikbaar zijn als u het gereedschap in zelfstandige modus gebruikt.
 
-Als u wilt overschakelen van CRX2Oak naar de snelstartmodus, moet u het pad naar de crx-quickstart-map in de AEM installatiemap definiëren via deze omgevingsvariabele van het besturingssysteem:
+Als u van CRX2Oak naar de snelstartmodus wilt overschakelen, definieert u het pad naar de crx-quickstart-map in de installatiemap van het AEM met behulp van deze omgevingsvariabele van het besturingssysteem:
 
 **Voor op UNIX gebaseerde systemen en macOS:**
 
@@ -79,11 +75,11 @@ De migratie kan op elk moment worden onderbroken, met de mogelijkheid om deze la
 
 #### Aanpasbare upgradelogica {#customizable-upgrade-logic}
 
-Aangepaste Java-logica wordt ook geïmplementeerd met `CommitHooks`. Aangepast `RepositoryInitializer` kunnen klassen worden geïmplementeerd om de repository te initialiseren met aangepaste waarden.
+Aangepaste Java™-logica kan worden geïmplementeerd met `CommitHooks`. Aangepast `RepositoryInitializer` kunnen worden geïmplementeerd om de repository te initialiseren met aangepaste waarden.
 
 #### Ondersteuning voor bewerkingen met geheugentoewijzing {#support-for-memory-mapped-operations}
 
-CRX2Oak ondersteunt standaard ook bewerkingen die zijn toegewezen aan het geheugen. Geheugentoewijzing verbetert de prestaties aanzienlijk en moet waar mogelijk worden gebruikt.
+CRX2Oak ondersteunt standaard ook bewerkingen met geheugentoewijzing. Geheugentoewijzing verbetert de prestaties aanzienlijk en moet waar mogelijk worden gebruikt.
 
 >[!CAUTION]
 >
@@ -97,7 +93,7 @@ Als er een onderdeel van de inhoud is dat niet op het nieuwe exemplaar wordt ver
 
 #### Pad samenvoegen {#path-merging}
 
-Als gegevens moeten worden gekopieerd tussen twee opslagplaatsen en u een inhoudspad hebt dat op beide instanties verschillend is, kunt u het in de `--merge-path` parameter. Zodra u, zal CRX2Oak slechts de nieuwe knopen aan de bestemmingsbewaarplaats kopiëren en zal oude op zijn plaats houden.
+Als gegevens tussen twee opslagplaatsen moeten worden gekopieerd en u hebt een inhoudspad dat op beide instanties verschillend is, kunt u het in de `--merge-path` parameter. Als u dat doet, kopieert CRX2Oak alleen de nieuwe knooppunten naar de doelopslagplaats en blijven de oude knooppunten op hun plaats.
 
 ![chlimage_1-152](assets/chlimage_1-152.png)
 
@@ -105,7 +101,7 @@ Als gegevens moeten worden gekopieerd tussen twee opslagplaatsen en u een inhoud
 
 AEM maakt standaard een versie van elk knooppunt of elke pagina die wordt gewijzigd en slaat deze op in de opslagplaats. De versies kunnen vervolgens worden gebruikt om de pagina in een eerdere staat te herstellen.
 
-Deze versies worden echter nooit leeggemaakt, zelfs niet als de originele pagina wordt verwijderd. Wanneer het behandelen van bewaarplaatsen die lange tijd in werking zijn geweest, zou de migratie veel overtollige gegevens kunnen moeten verwerken die door weesversies worden veroorzaakt.
+Deze versies worden echter nooit leeggemaakt, zelfs niet als de originele pagina wordt verwijderd. Wanneer u werkt met opslagruimten die al lange tijd in bedrijf zijn, kan de migratie leiden tot het opnieuw verwerken van overbodige gegevens die worden veroorzaakt door zwevende versies.
 
 Een nuttig kenmerk voor dit soort situaties is de toevoeging van de `--copy-versions` parameter. Het kan worden gebruikt om de versieknooppunten tijdens migratie of exemplaar van een bewaarplaats over te slaan.
 
@@ -117,7 +113,7 @@ Beide parameters ondersteunen ook een `YYYY-MM-DD` datumnotatie als u versies ni
 
 #### Bronversie openen {#open-source-version}
 
-Een open-bronversie van CRX2Oak is beschikbaar in de vorm van eik-verbetering. Alle functies worden ondersteund, met uitzondering van:
+Een open-bronversie van CRX2Oak is beschikbaar in de vorm van eiken-verbetering. Alle functies worden ondersteund, met uitzondering van:
 
 * CRX2-ondersteuning
 * Ondersteuning voor migratieprofiel
@@ -136,7 +132,7 @@ Zie de [Apache-documentatie](https://jackrabbit.apache.org/oak/docs/migration.ht
 
 * `--src-user:` Gebruiker voor de bron-RDB
 
-* `--user`: Gebruiker voor de beoogde RDB
+* `--user`: Gebruiker voor de doel-RDB
 
 * `--password`: Wachtwoord voor de doel-RDB.
 
@@ -144,13 +140,13 @@ Zie de [Apache-documentatie](https://jackrabbit.apache.org/oak/docs/migration.ht
 
 * `--early-shutdown`: Sluit de bron-JCR2-opslagplaats af nadat knooppunten zijn gekopieerd en voordat de haken voor vastleggen zijn toegepast
 * `--fail-on-error`: Dwingt een fout van de migratie als de knopen niet van de bronbewaarplaats kunnen worden gelezen.
-* `--ldap`: Hiermee migreert u LDAP-gebruikers van een CQ 5.x-instantie naar een op eik gebaseerde instantie. Dit werkt alleen als de Identiteitsprovider in de configuratie Eak een naam heeft. Zie de klasse [LDAP-documentatie](/help/sites-administering/ldap-config.md).
+* `--ldap`: Hiermee migreert u LDAP-gebruikers van een CQ 5.x-instantie naar een op eik gebaseerde instantie. Dit werkt alleen als de Identiteitsprovider in de configuratie Eak de naam dap heeft. Zie de klasse [LDAP-documentatie](/help/sites-administering/ldap-config.md).
 
-* `--ldap-config:` Gebruik dit in combinatie met de `--ldap` parameter voor CQ 5.x-opslagruimten die meerdere LDAP-servers voor verificatie hebben gebruikt. U kunt het gebruiken om naar CQ 5.x te richten `ldap_login.conf` of `jaas.conf` configuratiebestanden. De indeling is `--ldapconfig=path/to/ldap_login.conf`.
+* `--ldap-config:` Gebruik dit met de `--ldap` parameter voor CQ 5.x-opslagruimten die meerdere LDAP-servers voor verificatie hebben gebruikt. U kunt het gebruiken om naar CQ 5.x te richten `ldap_login.conf` of `jaas.conf` configuratiebestanden. De indeling is `--ldapconfig=path/to/ldap_login.conf`.
 
 ### Opties voor versieopslag {#version-store-options}
 
-* `--copy-orphaned-versions`: Hiermee slaat u het kopiëren van zwevende versies over. Ondersteunde parameters zijn: `true`, `false` en `yyyy-mm-dd`. Standaardwaarden: `true`.
+* `--copy-orphaned-versions`: Hiermee slaat u het kopiëren van zwevende versies over. Ondersteunde parameters zijn: `true`, `false`, en `yyyy-mm-dd`. Standaardwaarden: `true`.
 
 * `--copy-versions:` Kopieert de versieopslag. Parameters: `true`, `false`, `yyyy-mm-dd`. Standaardwaarden: `true`.
 
@@ -200,7 +196,7 @@ U kunt ook foutopsporingsinformatie inschakelen voor het migratieproces om probl
   </tr>
   <tr>
    <td>Stand-alone modus</td>
-   <td><p>Voeg de <strong>—trace</strong> opties aan de CRX2Oak bevellijn om de gebeurtenissen van TRACE op standaardoutput te tonen (u moet logboeken zelf opnieuw richten gebruikend redirection karakter: '&gt;' of het bevel van de "boom"voor recentere inspectie).</p> </td>
+   <td><p>Voeg de <strong>—trace</strong> Hiermee kunt u opties instellen op de opdrachtregel van CRX2Oak, zodat u TRACE-gebeurtenissen kunt weergeven bij de standaarduitvoer (u moet de logbestanden zelf omleiden met het redirection-teken '&gt;' of de opdracht 'tee' voor latere controle).</p> </td>
   </tr>
  </tbody>
 </table>

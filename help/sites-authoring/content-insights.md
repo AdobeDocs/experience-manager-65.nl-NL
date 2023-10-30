@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '530'
 ht-degree: 0%
 
 ---
@@ -29,20 +29,24 @@ De lay-out van de pagina Inzicht in inhoud wordt aangepast aan de schermafmeting
 
 De pagina Content Insight bevat rapporten waarin Adobe SiteCatalyst-, Adobe Target-, Adobe Social- en BrightStor-gegevens worden gebruikt:
 
-* SiteCatalyst: De rapporten voor de volgende metriek zijn beschikbaar:
+* SiteCatalyst: Rapporten voor de volgende cijfers zijn beschikbaar:
 
    * Paginaweergaven
-   * Gemiddelde tijd die aan pagina wordt doorgebracht
+   * Gemiddelde tijd besteed aan pagina
    * Bronnen
 
-* Doel: Meldt over campagneactiviteit waarvoor uw pagina voorstellen omvat.
-* HelderheidRand: Rapporten over de paginafuncties die de zichtbaarheid van de pagina voor zoekprogramma&#39;s verbeteren, en adviseren functies die moeten worden geïmplementeerd.
+* Doel: rapporteert over campagneactiviteiten waarvoor uw pagina voorstellen bevat.
+* BrightStor: meldt de paginafuncties die de zichtbaarheid van de pagina voor zoekprogramma&#39;s verbeteren en raadt functies aan die moeten worden geïmplementeerd.
 
 Zie [Analyses en Recommendations openen voor een pagina](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
 ## Rapportageperiode
 
 De rapporten tonen gegevens voor een periode die u controleert. Wanneer u de rapportageperiode aanpast, worden de rapporten automatisch vernieuwd met gegevens voor die periode. Visuele aanwijzingen geven de tijd aan waarop paginaversies zijn gewijzigd, zodat u de prestaties van elke versie kunt vergelijken.
+
+>[!NOTE]
+>
+>De tijdlijn voor het dashboard Inzicht van inhoud staat in `GMT`.
 
 U kunt ook de korreligheid van de gerapporteerde gegevens opgeven, bijvoorbeeld gegevens van dag tot week, maandelijks of jaarlijks.
 
@@ -93,7 +97,7 @@ Voor elke campagne waarvoor de pagina actief is, wordt een rapport met de naam *
 
 ## Het SEO Recommendations-rapport {#the-seo-recommendations-report}
 
-Het SEO Recommendations-rapport bevat de resultaten van de BrightEdge-analyse voor de pagina. Het rapport is een controlelijst van paginafuncties die aangeeft welke functies de pagina heeft en niet bevat voor het maximaliseren van de zoekbaarheid met zoekmachines.
+Het SEO Recommendations-rapport bevat de resultaten van de BrightEdge-analyse voor de pagina. Het rapport is een controlelijst van paginafuncties die aangeeft welke functies de pagina heeft en niet bevat voor het maximaliseren van de zoekbaarheid met behulp van zoekmachines.
 
 Met dit rapport kunt u taken maken die u wilt verbeteren en de zoekbaarheid van pagina&#39;s verbeteren. Recommendations geeft aan dat er taken zijn gecreëerd voor de tenuitvoerlegging van de aanbeveling. Zie [Taken toewijzen voor SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 

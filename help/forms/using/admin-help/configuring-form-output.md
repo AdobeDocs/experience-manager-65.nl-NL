@@ -1,8 +1,6 @@
 ---
 title: Formulieruitvoer configureren
-seo-title: Configuring form output
-description: Leer hoe u formulieruitvoer configureert.
-seo-description: Learn how to configure form output.
+description: Leer hoe u formulieruitvoer configureert. Gebruik de aangepaste scripts voordat u het formulier verzendt om de formulieruitvoer te configureren en de functie in te schakelen.
 uuid: 70aad14e-c845-4ef3-a751-ad8860d5d505
 contentOwner: admin
 content-type: reference
@@ -10,16 +8,16 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 exl-id: d739806c-ce72-40fd-b304-3262a0988d96
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
 
 # Formulieruitvoer configureren{#configuring-form-output}
 
-## Het type HTML-uitvoer opgeven dat wordt geretourneerd aan de webbrowser {#specify-the-type-of-html-output-returned-to-the-web-browser}
+## Geef het type HTML-uitvoer op dat wordt geretourneerd aan de webbrowser {#specify-the-type-of-html-output-returned-to-the-web-browser}
 
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer formulier in de lijst Uitvoertype een van de volgende opties:
@@ -42,15 +40,15 @@ ht-degree: 0%
 
 1. Klik op Opslaan.
 
-## Aanroepen van aangepaste scripts configureren voordat het formulier wordt verzonden {#configuring-invocation-of-custom-scripts-before-form-submit}
+## Aanroeping van aangepaste scripts configureren voordat het formulier wordt verzonden {#configuring-invocation-of-custom-scripts-before-form-submit}
 
 Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Meld u aan bij de beheerconsole.
+1. Aanmelden bij de beheerconsole.
 1. Ga naar **Services** > **formulieren**.
 1. Geef het uitvoertype op als Formulierhoofdtekst.
 1. Sla de instellingen op.
-1. Declareer een JavaScript-variabele, __CUSTOM_SCRIPTS_VERSION, in de kopsectie van de HTML-code en stel de waarde ervan in op 1.
+1. Declareer een variabele JavaScript, __CUSTOM_SCRIPTS_VERSION, in de kopsectie van de code van de HTML en plaats zijn waarde aan 1.
 
    >[!NOTE]
    >

@@ -1,8 +1,6 @@
 ---
 title: Adobe PDF-instellingen configureren
-seo-title: Configuring Adobe PDF settings
-description: Leer hoe u Adobe PDF-instellingen configureert.
-seo-description: Learn how to configure Adobe PDF settings.
+description: Leer hoe u de Adobe PDF-instellingen configureert die op de pagina Adobe PDF Settings worden weergegeven. U kunt de vooraf gedefinieerde PDF-instellingen gebruiken of uw eigen instellingen maken.
 uuid: 980c9d6a-f75e-4e7d-b050-d2d07a10ef33
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '7265'
+source-wordcount: '7285'
 ht-degree: 0%
 
 ---
@@ -26,7 +24,7 @@ Op de pagina Adobe PDF Settings kunt u de volgende taken uitvoeren:
 
 * Bekijk de vooraf gedefinieerde PDF-instellingen. (Zie [De vooraf gedefinieerde PDF-instellingen](configuring-pdf-settings.md#about-the-predefined-pdf-settings).)
 * Maak een PDF-instelling of bewerk een instelling die u eerder hebt gemaakt. (Zie [PDF-instellingen toevoegen of bewerken](configuring-pdf-settings.md#add-or-edit-pdf-settings).)
-* Geef standaardinstellingen voor PDF op. (Zie [De standaardinstellingen wijzigen](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings))
+* Geef de standaardinstellingen voor PDF op. (Zie [De standaardinstellingen wijzigen](/help/forms/using/admin-help/configuring-file-type-settings.md#change-the-default-settings))
 * Upload een bestand met PDF-instellingen naar de server. (Zie [PDF-instellingen uploaden](configuring-pdf-settings.md#upload-pdf-settings).)
 * Aangepaste PDF-instellingen verwijderen. (Zie [PDF-instellingen verwijderen](configuring-pdf-settings.md#delete-pdf-settings).)
 * Proloog- en epiloogbestanden uploaden en downloaden. (Zie [Proloog- en epiloogbestanden uploaden en downloaden](configuring-pdf-settings.md#uploading-and-downloading-prologue-and-epilogue-files).)
@@ -45,9 +43,9 @@ Adobe PDF-instellingen zijn alleen van toepassing op conversies op basis van PDF
 
 ## De vooraf gedefinieerde PDF-instellingen {#about-the-predefined-pdf-settings}
 
-PDF Generator biedt verschillende vooraf gedefinieerde PDF-instellingen voor uw gebruik. U kunt deze vooraf gedefinieerde instellingen niet wijzigen. u kunt echter een instelling maken op basis van een bestaande instelling door de instelling te bewerken en onder een andere naam op te slaan.
+PDF Generator biedt verschillende vooraf gedefinieerde PDF-instellingen voor uw gebruik. U kunt deze vooraf gedefinieerde instellingen niet wijzigen. U kunt echter een instelling maken op basis van een bestaande instelling door de instelling te bewerken en onder een andere naam op te slaan.
 
-**Afdrukken met hoge kwaliteit:** Hiermee maakt u PDF-bestanden voor uitvoer van hoge kwaliteit. Deze instelling:
+**Afdrukken met hoge kwaliteit:** Maakt PDF-bestanden voor uitvoer van hoge kwaliteit. Deze instelling:
 
 * Hiermee worden kleuren- en grijswaardenafbeeldingen gedownsampled met 300 dpi
 * Hiermee worden monochrome afbeeldingen gedownsampled met 1200 dpi
@@ -56,9 +54,9 @@ PDF Generator biedt verschillende vooraf gedefinieerde PDF-instellingen voor uw 
 
 Deze PDF-bestanden kunnen worden geopend in Adobe Acrobat 5 en Adobe Acrobat Reader® 5 of hoger.
 
-**Grote pagina&#39;s:** Hiermee maakt u PDF-documenten die geschikt zijn voor het betrouwbaar weergeven en afdrukken van technische tekeningen die groter zijn dan 200 x 200 inch. Gemaakt PDF-documenten kunnen worden geopend in Adobe Acrobat Professional en Acrobat Standard, versie 7 of hoger en Adobe Reader 7 of hoger.
+**Grote pagina&#39;s:** Hiermee maakt u PDF-documenten die geschikt zijn voor het betrouwbaar weergeven en afdrukken van technische tekeningen die groter zijn dan 200 x 200 inch. Gemaakte PDF-documenten kunnen worden geopend in Adobe Acrobat Professional en Acrobat Standard, versie 7 of hoger en Adobe Reader 7 of hoger.
 
-**PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB:** Hiermee wordt gecontroleerd of binnenkomende taken voldoen aan de ISO-norm voor langetermijnbewaring (archivering) van elektronische documenten en worden alleen PDF/A-bestanden gemaakt als deze voldoen. Deze bestanden worden vooral gebruikt voor archivering. Compatibele bestanden kunnen alleen tekst, rasterafbeeldingen en vectorobjecten bevatten. ze kunnen geen versleuteling en scripts bevatten. Bovendien moeten alle lettertypen zijn ingesloten, zodat de documenten kunnen worden geopend en weergegeven zoals ze zijn gemaakt. PDF/A-1b gebruikt PDF 1.4 en zet alle kleuren in of CMYK of RGB om, afhankelijk van welke norm u kiest. PDF-bestanden die met dit instellingenbestand zijn gemaakt, kunnen worden geopend in Acrobat 5 en Acrobat Reader 5 en hoger. Voor meer informatie over PDF/A, zie Adobe en industriestandaarden.
+**PDF/A-1B 2005 CMYK / PDF/A-1B 2005 RGB:** Hiermee wordt gecontroleerd of binnenkomende taken voldoen aan de ISO-norm voor langetermijnbewaring (archivering) van elektronische documenten en worden alleen PDF/A-bestanden gemaakt als deze voldoen. Deze bestanden worden vooral gebruikt voor archivering. Compatibele bestanden kunnen alleen tekst, rasterafbeeldingen en vectorobjecten bevatten; ze kunnen geen versleuteling en scripts bevatten. Bovendien moeten alle lettertypen zijn ingesloten, zodat de documenten kunnen worden geopend en weergegeven zoals ze zijn gemaakt. PDF/A-1b gebruikt PDF 1.4 en zet alle kleuren in of CMYK of RGB om, afhankelijk van welke norm u kiest. PDF-bestanden die met dit instellingenbestand zijn gemaakt, kunnen worden geopend in Acrobat 5 en Acrobat Reader 5 en hoger. Zie Adobe en industriestandaarden voor meer informatie over PDF/A.
 
 **PDF/X-1a 2001:** Hiermee worden inkomende taken gecontroleerd op compatibiliteit met PDF/X-1a en worden alleen PDF-bestanden gemaakt als deze voldoen. PDF/X-1a is een ISO-standaard voor het uitwisselen van grafische inhoud. PDF/X-1a vereist dat alle lettertypen worden ingesloten, dat de juiste PDF-vakken worden opgegeven en dat kleuren worden weergegeven als CMYK- of steunkleuren. PDF-bestanden die voldoen aan de PDF/X-1a-vereisten, zijn gericht op een specifieke uitvoervoorwaarde, zoals web-offsetdrukwerk volgens de specificaties voor Web-offsetpublicaties. Zie Adobe en industriestandaarden voor meer informatie over PDF/X.
 
@@ -111,9 +109,9 @@ PDF-instellingen bepalen exact hoe bestanden worden geconverteerd en de resulter
 
 ## PDF-instellingen uploaden {#upload-pdf-settings}
 
-U kunt PDF montages beschikbaar op de server van de Generator van de PDF hebben door hen van een lokale computer of een netwerkplaats te uploaden.
+U kunt PDF-instellingen beschikbaar hebben op de PDF Generator-server door deze te uploaden vanaf een lokale computer of een netwerklocatie.
 
-1. Klik in de beheerconsole op Services > PDF Generator > Adobe PDF Settings en klik op Upload.
+1. Klik in de beheerconsole op Services > PDF Generator > Adobe PDF-instellingen en klik op Uploaden.
 1. Klik op de pagina Adobe PDF-instellingen uploaden op Bladeren, zoek het bestand met PDF-instellingen en klik op Openen.
 1. Klik op OK en vervolgens nogmaals op OK.
 
@@ -127,7 +125,7 @@ U kunt PDF-instellingen permanent verwijderen als deze niet meer vereist zijn.
 
 ## Algemene opties {#general-options}
 
-Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebruiken voor bestandscompatibiliteit en andere bestands- en apparaatopties. Voor instructies over de toegang tot van de Algemene opties, zie [PDF-instellingen toevoegen of bewerken](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebruiken voor bestandscompatibiliteit en andere bestands- en apparaatopties. Zie voor instructies over het openen van de algemene opties [PDF-instellingen toevoegen of bewerken](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 ### Bestandsopties {#file-options}
 
@@ -149,9 +147,9 @@ Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebru
   </tr>
   <tr>
    <td><p>Kan geen illustraties bevatten die actieve transparantie-effecten gebruiken. Transparantie moet worden afgevlakt voordat u de afbeelding omzet in PDF 1.3.</p> </td>
-   <td><p>Ondersteunt het gebruik van actieve transparantie in illustraties. (Met de Acrobat Distiller-functie wordt transparantie afgevlakt.)</p> </td>
-   <td><p>Ondersteunt het gebruik van actieve transparantie in illustraties. (Met de Acrobat Distiller-functie wordt transparantie afgevlakt.)</p> </td>
-   <td><p>Ondersteunt het gebruik van actieve transparantie in illustraties. (Met de Acrobat Distiller-functie wordt transparantie afgevlakt.)</p> </td>
+   <td><p>Ondersteunt het gebruik van actieve transparantie in illustraties. (Acrobat Distiller-functie voegt transparantie af.)</p> </td>
+   <td><p>Ondersteunt het gebruik van actieve transparantie in illustraties. (Acrobat Distiller-functie voegt transparantie af.)</p> </td>
+   <td><p>Ondersteunt het gebruik van actieve transparantie in illustraties. (Acrobat Distiller-functie voegt transparantie af.)</p> </td>
   </tr>
   <tr>
    <td><p>Lagen worden niet ondersteund.</p> </td>
@@ -162,8 +160,8 @@ Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebru
   <tr>
    <td><p>DeviceN-kleurruimte met 8 kleurstoffen wordt ondersteund.</p> </td>
    <td><p>DeviceN-kleurruimte met 8 kleurstoffen wordt ondersteund.</p> </td>
-   <td><p>DeviceN-kleurruimte met maximaal 31 kleuren wordt ondersteund.</p> </td>
-   <td><p>DeviceN-kleurruimte met maximaal 31 kleuren wordt ondersteund.</p> </td>
+   <td><p>DeviceN-kleurruimte met maximaal 31 kleurstoffen wordt ondersteund.</p> </td>
+   <td><p>DeviceN-kleurruimte met maximaal 31 kleurstoffen wordt ondersteund.</p> </td>
   </tr>
   <tr>
    <td><p>Multibyte-lettertypen kunnen worden ingesloten. (Distiller converteert de lettertypen bij het insluiten.)</p> </td>
@@ -194,7 +192,7 @@ Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebru
 
 **Binding:** Geeft aan of een PDF-bestand met linker- of rechterbinding moet worden weergegeven. Deze instelling is van invloed op de weergave van pagina&#39;s in de indeling Pagina naast elkaar - Doorlopende lay-out en de weergave van miniaturen naast elkaar.
 
-**Resolutie:** Hiermee stelt u de emulatie in voor de resolutie van een printer voor invoerbestanden die hun gedrag aanpassen aan de resolutie van de printer waarop ze afdrukken. Voor de meeste invoerbestanden leidt een hogere resolutie-instelling tot grotere, maar kwalitatief betere PDF-bestanden en een lagere instelling tot kleinere, maar minder goede PDF-bestanden. Meestal bepaalt de resolutie het aantal stappen in een verloop of overvloeiing. U kunt een waarde tussen 72 en 4000 invoeren. Deze instelling blijft de standaardinstelling, tenzij u het PDF-bestand wilt afdrukken op een specifieke printer en u de resolutie wilt emuleren die in het oorspronkelijke invoerbestand is gedefinieerd.
+**Resolutie:** Hiermee stelt u de emulatie in voor de resolutie van een printer voor invoerbestanden die hun gedrag aanpassen op basis van de resolutie van de printer waarop ze afdrukken. Voor de meeste invoerbestanden leidt een hogere resolutie-instelling tot grotere, maar kwalitatief betere PDF-bestanden en een lagere instelling tot kleinere, maar minder goede PDF-bestanden. Meestal bepaalt de resolutie het aantal stappen in een verloop of overvloeiing. U kunt een waarde tussen 72 en 4000 invoeren. Deze instelling blijft de standaardinstelling, tenzij u het PDF-bestand wilt afdrukken op een specifieke printer en u de resolutie wilt emuleren die in het oorspronkelijke invoerbestand is gedefinieerd.
 
 >[!NOTE]
 >
@@ -206,7 +204,7 @@ Gebruik de algemene opties om de versie van Acrobat op te geven die u wilt gebru
 
 ### Standaardpaginaformaat {#default-page-size}
 
-Met de opties bij Standaardpaginaformaat geeft u het paginaformaat op dat moet worden gebruikt wanneer het oorspronkelijke bestand geen formaat bevat. Adobe PostScript-bestanden bevatten deze informatie meestal, behalve voor Encapsulated PostScript-bestanden (EPS), die een selectiekadergrootte hebben maar geen paginaformaat. Het maximale paginaformaat is 31.800.000 inch (15.000.000 cm) in beide richtingen. Met deze opties configureert u het standaardpaginaformaat:
+Met de opties bij Standaardpaginaformaat geeft u het paginaformaat op dat moet worden gebruikt als er geen formaat is opgegeven in het oorspronkelijke bestand. Adobe PostScript-bestanden bevatten deze informatie meestal, behalve voor Encapsulated PostScript-bestanden (EPS), die een selectiekadergrootte hebben maar geen paginaformaat. Het maximale paginaformaat is 31.800.000 inch (15.000.000 cm) in beide richtingen. Met deze opties configureert u het standaardpaginaformaat:
 
 **Breedte:** Breedte van de pagina
 
@@ -220,7 +218,7 @@ Met de opties bij Afbeeldingen geeft u compressie en resampling voor afbeeldinge
 
 Met deze opties configureert u afbeeldingen in kleur, grijswaarden en monochroom:
 
-**Downsample:** Stel een waarde in voor elk type afbeelding. Voor het downsamplen van kleuren-, grijswaarden- of monochrome afbeeldingen, combineert PDF Generator pixels in een monstergebied om één grotere pixel te maken. Geef de resolutie van het uitvoerapparaat op in dpi (dots per inch) en voer een resolutie in dpi in het tekstvak Voor afbeeldingen boven in. Voor afbeeldingen met een resolutie die hoger is dan deze drempelwaarde, combineert PDF Generator indien nodig pixels om de resolutie van de afbeelding (pixels per inch) tot de opgegeven dpi-instelling te beperken. Selecteer Uit om downsampling uit te schakelen. Hier volgen de opties:
+**Downsample:** Stel een waarde in voor elk type afbeelding. Voor het downsamplen van kleuren-, grijswaarden- of monochrome afbeeldingen, combineert PDF Generator pixels in een monstergebied om één grotere pixel te maken. Geef de resolutie van het uitvoerapparaat op in dpi (dots per inch) en voer een resolutie in dpi in het tekstvak Voor afbeeldingen boven in. Voor afbeeldingen met een resolutie die hoger is dan deze drempelwaarde, combineert PDF Generator zo nodig pixels om de resolutie van de afbeelding (pixels per inch) tot de opgegeven dpi-instelling te beperken. Selecteer Uit om downsampling uit te schakelen. Hier volgen de opties:
 
 **Gemiddelde downsampling op:** Hiermee wordt het gemiddelde genomen van de pixels in een monstergebied en wordt het gehele gebied vervangen door de gemiddelde pixelkleur bij de opgegeven resolutie.
 
@@ -257,7 +255,7 @@ In deze tabel ziet u de typen printers en de resolutie van deze printers, gemete
   </tr>
   <tr>
    <td><p>1200 dpi (imagesetter)</p> </td>
-   <td><p>120 lpi</p> </td>
+   <td><p>120 lp</p> </td>
    <td><p>240 ppi</p> </td>
   </tr>
   <tr>
@@ -277,7 +275,7 @@ Zorg ervoor dat monochrome afbeeldingen worden gescand als monochroom en niet al
 
 **Afbeeldingskwaliteit:** Hiermee configureert u de afbeeldingskwaliteit voor kleuren- en grijswaardenafbeeldingen. De opties zijn minimaal, laag, gemiddeld, hoog en maximaal.
 
-**Anti-alias naar grijs:** Hiermee maakt u oneffen randen in monochrome afbeeldingen vloeiender. Selecteer 2-bits, 4-bits of 8-bits om 4, 16 of 256 grijsniveaus op te geven. (Anti-aliasing kan kleine tekst of dunne lijnen vervagen.)
+**Anti-alias naar grijs:** Hiermee maakt u oneffen randen in monochrome afbeeldingen vloeiender. Selecteer 2 bits, 4 bits of 8 bits om 4, 16 of 256 grijsniveaus op te geven. (Anti-aliasing kan kleine tekst of dunne lijnen vervagen.)
 
 >[!NOTE]
 >
@@ -291,15 +289,15 @@ Met de lettertypeopties geeft u op welke lettertypen u in een PDF-bestand wilt i
 
 >[!NOTE]
 >
->Wanneer u PDF-bestanden combineert met dezelfde fontsubset, probeert de PDF Generator de fontsubsets te combineren.
+>Wanneer u PDF-bestanden combineert met dezelfde fontsubset, probeert PDF Generator de fontsubsets te combineren.
 
 **Alle fonts insluiten:** Hiermee worden alle lettertypen ingesloten die in het bestand worden gebruikt. Lettertype-insluiting is vereist voor PDF/X-compatibiliteit.
 
-**Subset maken van lettertypen wanneer percentage gebruikte tekens kleiner is dan:** Als u deze optie selecteert, geeft u een drempelpercentage op om alleen een subset van de lettertypen in te sluiten. Als de drempelwaarde bijvoorbeeld 35 is en minder dan 35% van de tekens wordt gebruikt, sluit de PDF Generator alleen die tekens in. Alleen fonts met de juiste machtigingsbits worden ingesloten.
+**Subset maken van lettertypen wanneer percentage gebruikte tekens kleiner is dan:** Als u deze optie selecteert, geeft u een drempelpercentage op om alleen een subset van de lettertypen in te sluiten. Als de drempelwaarde bijvoorbeeld 35 is en minder dan 35% van de tekens wordt gebruikt, sluit PDF Generator alleen die tekens in. Alleen fonts met de juiste machtigingsbits worden ingesloten.
 
-**Wanneer insluiten mislukt:** Hiermee geeft u op hoe PDF Generator reageert als er bij de verwerking van een bestand geen font voor insluiting wordt gevonden. PDF Generator kan de aanvraag negeren en het font vervangen, u waarschuwen en het font vervangen of de verwerking van de huidige taak annuleren.
+**Wanneer insluiten mislukt:** Hiermee geeft u op hoe de PDF Generator reageert als er bij de verwerking van een bestand geen font voor insluiting kan worden gevonden. PDF Generatoren kunnen de aanvraag negeren en het font vervangen, u waarschuwen en het font vervangen of de verwerking van de huidige taak annuleren.
 
-**Fontbron:** De locatie van de lettertypen die door de PDF Generator worden gebruikt.
+**Fontbron:** De locatie van de lettertypen die de PDF Generator gebruikt.
 
 ### Opgeven welke fonts moeten worden ingesloten {#specify-which-fonts-to-embed}
 
@@ -307,8 +305,8 @@ Met de lettertypeopties geeft u op welke lettertypen u in een PDF-bestand wilt i
 1. Klik op Nieuw of klik op de naam van een instelling.
 1. Klik op Lettertypen en schakel de optie Alle lettertypen insluiten uit.
 1. Selecteer een lettertypenbron in de lijst Lettertypenbron en klik op Ga om de lijst met lettertypen in het vak links te vernieuwen.
-1. Klik op een lettertype in het vak aan de linkerkant. Klik vervolgens op Toevoegen naast het desbetreffende vak om het item te verplaatsen naar de lijst Altijd insluiten of Nooit insluiten. Herhaal dit voor elk lettertype. Houd Ctrl ingedrukt en klik om meerdere lettertypen te selecteren die u wilt verplaatsen.
-1. Als u een lettertype wilt verwijderen uit de lijst Altijd insluiten of Nooit insluiten, selecteert u het en klikt u op Verwijderen naast het desbetreffende vak. Hierdoor wordt het lettertype niet van uw systeem verwijderd. alleen de verwijzing ernaar in de lijst wordt verwijderd .
+1. Klik op een lettertype in het vak aan de linkerkant. Klik vervolgens op Toevoegen naast het desbetreffende vak om het item te verplaatsen naar de lijst Altijd insluiten of Nooit insluiten. Herhaal dit voor elk lettertype. Houd Ctrl ingedrukt en klik om meerdere te verplaatsen lettertypen te selecteren.
+1. Als u een lettertype wilt verwijderen uit de lijst Altijd insluiten of Nooit insluiten, selecteert u het en klikt u op Verwijderen naast het desbetreffende vak. Met deze actie verwijdert u het lettertype niet van uw systeem, maar verwijdert u alleen de verwijzing naar het lettertype in de lijst.
 1. Als het lettertype dat u wilt opgeven niet wordt weergegeven, typt u de naam in het vak Lettertype toevoegen en klikt u op Altijd insluiten of Nooit insluiten. Fontnamen mogen geen alfanumerieke tekens bevatten.
 
 >[!NOTE]
@@ -325,17 +323,17 @@ Met de kleuropties stelt u alle kleurbeheerinformatie voor de PDF Generator in. 
 
 ### Adobe Color-instellingen {#adobe-color-settings}
 
-**Instellingenbestand:** Deze lijst bevat een lijst met kleurinstellingen die ook worden gebruikt in grote grafische toepassingen, zoals Adobe Photoshop en Adobe Illustrator. De kleurinstelling die u selecteert, bepaalt de andere kleurinstellingen voor Adobe op deze pagina. Als u bijvoorbeeld een andere instelling dan Geen selecteert, worden alle andere opties dan die voor apparaatafhankelijke gegevens vooraf gedefinieerd en gedimd. U kunt de instellingen Beleid voor kleurbeheer en Werkruimten alleen bewerken als u Geen selecteert bij Instellingenbestand.
+**Instellingenbestand:** Deze lijst bevat een lijst met kleurinstellingen die ook worden gebruikt in grote grafische toepassingen, zoals Adobe Photoshop en Adobe Illustrator. De kleurinstelling die u selecteert, bepaalt de andere kleurinstellingen voor de Adobe op deze pagina. Als u bijvoorbeeld een andere instelling dan Geen selecteert, worden alle andere opties dan die voor apparaatafhankelijke gegevens vooraf gedefinieerd en gedimd. U kunt de instellingen Beleid voor kleurbeheer en Werkruimten alleen bewerken als u Geen selecteert bij Instellingenbestand.
 
 ### Beleid voor kleurbeheer {#color-management-policies}
 
-Als u Geen hebt geselecteerd bij Instellingenbestand, wordt in het gebied Beleid voor kleurbeheer aangegeven hoe de PDF Generator onbeheerde kleuren in een PostScript-bestand converteert.
+Als u Geen hebt geselecteerd bij Instellingenbestand, wordt in het gebied Beleid voor kleurbeheer aangegeven hoe PDF Generator onbeheerde kleuren in een PostScript-bestand converteert.
 
 **Kleur ongewijzigd laten:** Hiermee blijven apparaatafhankelijke kleuren ongewijzigd en blijven apparaatonafhankelijke kleuren als het dichtstbijzijnde equivalent in PDF behouden. Deze optie is handig voor drukkers die al hun apparaten hebben gekalibreerd, die deze informatie gebruiken om de kleur in het bestand op te geven en die alleen op die apparaten afdrukken.
 
 **Alles coderen voor kleurbeheer:** Hiermee wordt een profiel van een International Color Consortium ingesloten bij het distilleren van bestanden en het kalibreren van kleur in afbeeldingen. Hierdoor worden kleuren in de resulterende PDF-bestanden apparaatonafhankelijk als u Acrobat 4 (PDF 1.3) of latere compatibiliteit hebt geselecteerd. Apparaatafhankelijke kleurruimten in bestanden (RGB, Grijswaarden en CMYK) worden echter omgezet in apparaatonafhankelijke kleurruimten (CalRGB, CalGray en LAB).
 
-**Alleen afbeeldingen coderen voor kleurbeheer:** Hiermee sluit u ICC-profielen alleen in afbeeldingen in, niet in tekst of afbeeldingen, wanneer u bestanden destilleert als u compatibiliteit met Acrobat 4 (PDF 1.3) hebt geselecteerd. Met deze optie voorkomt u dat zwarte tekst een kleurverschuiving ondergaat. Apparaatafhankelijke kleurruimten in afbeeldingen (RGB, Grijswaarden en CMYK) worden echter omgezet in apparaatonafhankelijke kleurruimten (CalRGB, CalGray en LAB). Tekst en afbeeldingen worden niet geconverteerd.
+**Alleen afbeeldingen coderen voor kleurbeheer:** Hiermee sluit u ICC-profielen alleen in afbeeldingen in, niet in tekst of afbeeldingen, wanneer u bestanden destilleert als u compatibiliteit met Acrobat 4 (PDF 1.3) hebt geselecteerd. Met deze optie voorkomt u dat zwarte tekst een kleurverschuiving ondergaat. Apparaatafhankelijke kleurruimten in afbeeldingen (RGB, Grijswaarden en CMYK) worden echter omgezet in apparaatonafhankelijke kleurruimten (CalRGB, CalGray en LAB). Tekst en afbeeldingen worden niet omgezet.
 
 **Alle kleuren converteren naar sRGB of Alle kleuren converteren naar CMYK:** Kalibreert de kleur in het bestand en maakt de kleur apparaatonafhankelijk, vergelijkbaar met Alles coderen voor kleurbeheer. Als u compatibiliteit met Acrobat 4 (PDF 1.3) of hoger hebt geselecteerd en de CMYK- en RGB-afbeeldingen hebt omgezet in sRGB, worden deze omgezet in sRGB.
 
@@ -361,17 +359,17 @@ Grijswaardenafbeeldingen blijven ongewijzigd, ongeacht de compatibiliteitsoptie 
 
 Voor alle waarden in de lijst onder Beleid voor kleurbeheer, behalve Kleur ongewijzigd laten, selecteert u een van de lijsten in het gebied Werkruimte om op te geven welke ICC-profielen worden gebruikt voor het definiëren en kalibreren van de grijswaarden-, RGB- en CMYK-kleurruimten in gedistilleerde PDF-bestanden. Deze opties zijn beschikbaar:
 
-**Grijs:** Hiermee definieert u de kleurruimte van alle grijswaardenafbeeldingen in bestanden. Deze optie is alleen beschikbaar als u Alles labelen voor kleurbeheer of Alleen labels toewijzen voor afbeeldingen voor kleurbeheer hebt gekozen. Het standaard-ICC-profiel voor grijswaardenafbeeldingen is Grijsgamma 2.2. U kunt ook Geen selecteren om te voorkomen dat grijswaardenafbeeldingen worden geconverteerd.
+**Grijs:** Hiermee definieert u de kleurruimte van alle grijswaardenafbeeldingen in bestanden. Deze optie is alleen beschikbaar als u Alles labelen voor kleurbeheer of Alleen labels toewijzen voor afbeeldingen voor kleurbeheer hebt gekozen. Het standaard-ICC-profiel voor grijswaardenafbeeldingen is Grijsgamma 2.2. U kunt ook Geen selecteren om te voorkomen dat grijswaardenafbeeldingen worden omgezet.
 
-**RGB:** Hiermee definieert u de kleurruimte van alle RGB-afbeeldingen in bestanden. De standaardinstelling, sRGB IEC61966-2.1, is doorgaans een goede keuze omdat deze industriestandaard wordt en veel uitvoerapparaten deze herkennen. U kunt ook Geen selecteren om te voorkomen dat RGB-afbeeldingen worden geconverteerd.
+**RGB:** Hiermee definieert u de kleurruimte van alle RGB-afbeeldingen in bestanden. De standaardinstelling, sRGB IEC61966-2.1, is doorgaans een goede keuze omdat deze industriestandaard wordt en veel uitvoerapparaten deze herkennen. U kunt ook Geen selecteren om te voorkomen dat RGB-afbeeldingen worden omgezet.
 
-**CMYK:** Hiermee definieert u de kleurruimte van alle CMYK-afbeeldingen in bestanden. De standaardwaarde is U.S. Web Coated (SWOP) v2. U kunt ook Geen selecteren om te voorkomen dat CMYK-afbeeldingen worden geconverteerd.
+**CMYK:** Hiermee definieert u de kleurruimte van alle CMYK-afbeeldingen in bestanden. De standaardwaarde is U.S. Web Coated (SWOP) v2. U kunt ook Geen selecteren om te voorkomen dat CMYK-afbeeldingen worden omgezet.
 
 >[!NOTE]
 >
 >Als u Geen selecteert voor alle drie de werkruimten, heeft dit hetzelfde effect als wanneer u Kleur ongewijzigd laten selecteert.
 
-**CMYK-waarden behouden voor gekalibreerde CMYK-kleurruimten:** Als deze optie is geselecteerd, worden apparaatonafhankelijke CMYK-waarden beschouwd als apparaatafhankelijke waarden (DeviceCMYK), worden apparaatonafhankelijke kleurruimten genegeerd en gebruiken PDF/X-1a-bestanden de waarde Alle kleuren converteren naar CMYK. Als deze optie niet is geselecteerd, worden apparaatonafhankelijke kleurruimten geconverteerd naar CMYK als het kleurbeheerbeleid is ingesteld op Alle kleuren converteren naar CMYK.
+**CMYK-waarden behouden voor gekalibreerde CMYK-kleurruimten:** Als deze optie is geselecteerd, worden apparaatonafhankelijke CMYK-waarden beschouwd als apparaatafhankelijke waarden (DeviceCMYK), worden apparaatonafhankelijke kleurruimten genegeerd en gebruiken PDF/X-1a-bestanden de waarde Alle kleuren converteren naar CMYK. Als deze optie niet is geselecteerd, worden apparaatonafhankelijke kleurruimten omgezet in CMYK als het kleurbeheerbeleid is ingesteld op Alle kleuren converteren naar CMYK.
 
 ### Apparaatafhankelijke gegevens {#device-dependent-data}
 
@@ -383,7 +381,7 @@ Overdrachtsfuncties worden gebruikt voor artistieke effecten en voor het aanpass
 
 **Wanneer overdrachtsfuncties worden gevonden:** Bepaalt wat te doen wanneer de overdrachtsfuncties worden gevonden:
 
-**Behouden:** Hiermee behoudt u de overdrachtsfuncties die gewoonlijk worden gebruikt om de puntverbreding of puntversmalling te compenseren die kunnen optreden wanneer een afbeelding naar film wordt overgezet. Er treedt puntverbreding op wanneer de inktstippen waaruit een afgedrukte afbeelding bestaat, groter zijn (bijvoorbeeld door spreiding op papier) dan in het halftoonraster. puntverlies treedt op wanneer de punten kleiner worden afgedrukt. Met deze optie worden de overdrachtsfuncties als onderdeel van het bestand bewaard en op het bestand toegepast wanneer het bestand wordt uitgevoerd.
+**Behouden:** Hiermee behoudt u de overdrachtsfuncties die gewoonlijk worden gebruikt om de puntverbreding of puntversmalling te compenseren die kunnen optreden wanneer een afbeelding naar film wordt overgezet. Er treedt puntverbreding op wanneer de inktstippen waaruit een afgedrukte afbeelding bestaat, groter zijn (bijvoorbeeld door spreiding op papier) dan in het halftoonraster. Puntverlies treedt op wanneer de punten kleiner worden afgedrukt. Met deze optie worden de overdrachtsfuncties als onderdeel van het bestand bewaard en op het bestand toegepast wanneer het bestand wordt uitgevoerd.
 
 **Toepassen:** De overdrachtsfunctie blijft niet behouden, maar wordt toegepast op het bestand, waardoor de kleuren in het bestand worden gewijzigd. Deze optie is handig voor het maken van kleureffecten in een bestand. Deze optie is standaard geselecteerd voor nieuwe instellingen.
 
@@ -397,7 +395,7 @@ In de traditionele afdrukproductie wordt een halftoon gemaakt door een halftoonr
 
 Met de opties Geavanceerd geeft u op welke DSC-opmerkingen (Documentstructuurconventies) u in het PDF-bestand wilt behouden en hoe u andere opties wilt instellen die van invloed zijn op de conversie vanuit PostScript. In een PostScript-bestand bevatten DSC-opmerkingen informatie over het bestand (zoals de brontoepassing, de aanmaakdatum en de afdrukstand van de pagina). Ze bieden ook structuur voor paginabeschrijvingen in het bestand (zoals instructies voor het begin en einde van een prologsectie). DSC-opmerkingen kunnen handig zijn wanneer uw document wordt afgedrukt of ingedrukt. Voor instructies over de toegang tot van de Geavanceerde opties, zie [PDF-instellingen toevoegen of bewerken](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
-Als u werkt met de opties Geavanceerd, is het handig om te weten wat de PostScript-taal is en hoe deze wordt vertaald naar PDF. (Zie [Adobe PostScript 3](https://www.adobe.com/products/postscript/main.html).)
+Als u werkt met de opties Geavanceerd, is het handig om te weten wat de PostScript-taal is en hoe deze wordt vertaald naar PDF. (Zie [ADOBE POSTSCRIPT 3](https://www.adobe.com/products/postscript/main.html).)
 
 **PostScript-bestand toestaan om Adobe PDF-instellingen te overschrijven:** Gebruikt instellingen die in een PostScript-bestand zijn opgeslagen in plaats van het huidige Adobe PDF-instellingenbestand. Voordat u een PostScript-bestand verwerkt, kunt u parameters in het bestand plaatsen om de volgende aspecten te beheren:
 
@@ -407,7 +405,7 @@ Als u werkt met de opties Geavanceerd, is het handig om te weten wat de PostScri
 
 **PostScript-XObjecten toestaan:** PostScript XObjecten slaan informatie op die op veel pagina&#39;s van hetzelfde bestand wordt weergegeven, zoals een achtergrondafbeelding of kop- en voettekstinformatie. Het gebruik van PostScript XObjects kan resulteren in sneller afdrukken, maar vereist meer printergeheugen. Als u wilt voorkomen dat PostScript-XObjects worden gemaakt, schakelt u deze optie uit als u PDF-bestanden maakt met compatibiliteit met Acrobat 5 (PDF 1.4) of hoger.
 
-**Verlopen omzetten in vloeiende schaduwen:** Hiermee zet u overvloeiingen om in vloeiende schaduwen voor Acrobat 4 en hoger, waardoor de PDF-bestanden kleiner worden en de kwaliteit van de uiteindelijke uitvoer kan verbeteren. PDF Generator zet verlopen om van Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress en Microsoft PowerPoint.
+**Verlopen omzetten in vloeiende schaduwen:** Hiermee zet u overvloeiingen om in vloeiende schaduwen voor Acrobat 4 en hoger, waardoor de PDF-bestanden kleiner worden en de kwaliteit van de uiteindelijke uitvoer kan verbeteren. PDF Generator converteert verlopen vanuit Adobe Illustrator, Adobe InDesign, Adobe FreeHand MX, CorelDraw, Quark Xpress en Microsoft PowerPoint.
 
 **Vloeiende lijnen converteren naar curven:** Hiermee vermindert u het aantal besturingspunten dat wordt gebruikt om curven op te bouwen in CAD-tekeningen. Dit resulteert in kleinere PDF en snellere rendering op het scherm.
 
@@ -419,15 +417,15 @@ Als u werkt met de opties Geavanceerd, is het handig om te weten wat de PostScri
 
 **Adobe PDF-instellingen opslaan in PDF-bestand:** Hiermee sluit u het instellingenbestand in dat wordt gebruikt om het PDF-bestand te maken. U kunt het instellingenbestand (met de bestandsnaamextensie .joboptions) openen en weergeven in het dialoogvenster Bestandsbijlagen in Acrobat. Het Adobe PDF-instellingenbestand wordt een item in de structuur EmbeddedFiles in het PDF-bestand.
 
-**Oorspronkelijke JPEG-afbeeldingen indien mogelijk opslaan in PDF:** Verwerkt gecomprimeerde JPEG-afbeeldingen (afbeeldingen die al zijn gecomprimeerd met DCT-codering) zonder ze opnieuw te comprimeren. Als deze optie is ingeschakeld, worden JPEG-afbeeldingen door PDF Generator gedecomprimeerd om te voorkomen dat ze beschadigd raken. Geldige afbeeldingen worden echter niet opnieuw gecomprimeerd, waardoor de oorspronkelijke afbeelding ongewijzigd wordt verwerkt. Als deze optie is geselecteerd, verbeteren de prestaties omdat alleen decompressie (geen recompressie) optreedt en de afbeeldingsgegevens en metagegevens behouden blijven.
+**Oorspronkelijke JPEG-afbeeldingen indien mogelijk opslaan in PDF:** Verwerkt gecomprimeerde JPEG-afbeeldingen (afbeeldingen die al zijn gecomprimeerd met DCT-codering) zonder ze opnieuw te comprimeren. Als u deze optie selecteert, worden JPEG-afbeeldingen door de PDF Generator gedecomprimeerd om te voorkomen dat ze beschadigd raken. Geldige afbeeldingen worden echter niet opnieuw gecomprimeerd, waardoor de oorspronkelijke afbeelding ongewijzigd wordt verwerkt. Als deze optie is geselecteerd, verbeteren de prestaties omdat alleen decompressie (geen recompressie) optreedt en de afbeeldingsgegevens en metagegevens behouden blijven.
 
 **Draagbaar opdrachtetiket opslaan in PDF-bestand:** Hiermee blijft een PostScript-opdrachtticket behouden in een PDF-bestand. Het opdrachtticket bevat informatie over het PostScript-bestand, zoals het paginaformaat, de resolutie en overvullingsgegevens, in plaats van informatie over de inhoud. Deze informatie kan later in een werkstroom of voor druk worden gebruikt de PDF.
 
-**Prologue.ps en Epilogue.ps gebruiken:** Hiermee wordt bij elke taak een proloog- en een epiloogbestand verzonden. Deze bestanden hebben vele doeleinden. Profielbestanden kunnen bijvoorbeeld worden bewerkt om omslagpagina&#39;s op te geven. U kunt Epilog-bestanden bewerken om een reeks procedures in een PostScript-bestand op te lossen. U kunt de bestanden uploaden of downloaden. (Zie Prologue- en epiloogbestanden uploaden en downloaden.)
+**Prologue.ps en Epilogue.ps gebruiken:** Hiermee wordt bij elke taak een proloog- en een epiloogbestand verzonden. Deze bestanden hebben vele doeleinden. Profielbestanden kunnen bijvoorbeeld worden bewerkt en omslagpagina&#39;s opgeven. Epiloogbestanden kunnen worden bewerkt om een reeks procedures in een PostScript-bestand op te lossen. U kunt de bestanden uploaden of downloaden. (Zie Prologue- en epiloogbestanden uploaden en downloaden.)
 
 **DSC-opmerkingen verwerken:** Hiermee wordt DSC-informatie uit een PostScript-bestand bewaard. Deze subopties zijn beschikbaar:
 
-**DSC-waarschuwingen logboek:** Toont waarschuwingsberichten over problematische commentaren van DSC tijdens verwerking en voegt hen aan een logboekdossier toe.
+**DSC-waarschuwingen in logboek:** Toont waarschuwingsberichten over problematische commentaren van DSC tijdens verwerking en voegt hen aan een logboekdossier toe.
 
 **EPS-informatie uit DSC behouden:** Hiermee behoudt u informatie, zoals de brontoepassing en de aanmaakdatum voor een EPS-bestand. Als deze optie is uitgeschakeld, wordt de grootte en het midden van de pagina gebaseerd op de linkerbovenhoek van het object linksboven en de rechterbenedenhoek van het object rechtsonder op de pagina.
 
@@ -439,15 +437,15 @@ Als u werkt met de opties Geavanceerd, is het handig om te weten wat de PostScri
 
 ## Standaardrapporterings- en compatibiliteitsopties {#standards-reporting-and-compliance-options}
 
-PDF Generator kan de documentinhoud in een PostScript-bestand controleren om na te gaan of deze voldoen aan de standaard PDF/X-1a-, PDF/X-3- of PDF/A-criteria voordat het PDF-bestand wordt gemaakt. Voor bestanden die compatibel zijn met PDF/X, kunt u ook opgeven dat het PostScript-bestand aan extra criteria voldoet door andere opties te selecteren onder &#39;Standaardenrapportage en -compatibiliteit&#39;. De beschikbaarheid van opties is afhankelijk van de standaard die u selecteert.
+PDF Generatoren kunnen de documentinhoud in een PostScript-bestand controleren om na te gaan of deze voldoen aan de standaard PDF/X-1a-, PDF/X-3- of PDF/A-criteria voordat ze het PDF-bestand maken. Voor bestanden die compatibel zijn met PDF/X, kunt u ook opgeven dat het PostScript-bestand aan extra criteria voldoet door andere opties te selecteren onder &#39;Standaardenrapportage en -compatibiliteit&#39;. De beschikbaarheid van opties is afhankelijk van de standaard die u selecteert.
 
 PDF/X-compatibele bestanden worden voornamelijk gebruikt als een gestandaardiseerde indeling voor de uitwisseling van PDF-bestanden die zijn bedoeld voor de productie van afdrukken met hoge resolutie. Tenzij u een PDF-document maakt voor afdrukproductie, kunt u de compatibiliteitsnormen voor PDF/X negeren.
 
-Bestanden die voldoen aan de PDF/A-standaard worden vooral gebruikt voor archivering. Omdat bewaring op lange termijn het doel is, mag het document alleen bevatten wat nodig is voor het openen en weergeven gedurende de gehele beoogde levensduur van het document. Bestanden die voldoen aan de PDF/A-standaard kunnen bijvoorbeeld alleen tekst, rasterafbeeldingen en vectorobjecten bevatten. ze kunnen geen versleuteling en scripts bevatten. Bovendien moeten alle lettertypen zijn ingesloten, zodat de documenten kunnen worden geopend en weergegeven zoals ze zijn gemaakt. Met andere woorden: documenten die aan de PDF/A-standaard voldoen, zijn *dunner* dan hun PDF/X-tegenhangers, die bestemd zijn voor hoogwaardige productie.
+Bestanden die voldoen aan de PDF/A-standaard worden vooral gebruikt voor archivering. Omdat bewaring op lange termijn het doel is, mag het document alleen bevatten wat nodig is voor het openen en weergeven gedurende de gehele beoogde levensduur van het document. Bestanden die voldoen aan de PDF/A-standaard kunnen bijvoorbeeld alleen tekst, rasterafbeeldingen en vectorobjecten bevatten; ze kunnen geen versleuteling en scripts bevatten. Bovendien moeten alle lettertypen zijn ingesloten, zodat de documenten kunnen worden geopend en weergegeven zoals ze zijn gemaakt. Met andere woorden: documenten die aan de PDF/A-standaard voldoen, zijn *dunner* dan hun PDF/X-tegenhangers, die bestemd zijn voor hoogwaardige productie.
 
 >[!NOTE]
 >
->Als u een controlemap instelt voor het maken van bestanden die voldoen aan de PDF/A-standaard, moet u ervoor zorgen dat u geen beveiliging aan de map toevoegt. de PDF/A-standaard staat geen versleuteling toe.
+>Als u een controlemap instelt voor het maken van bestanden die voldoen aan de PDF/A-standaard, moet u ervoor zorgen dat u geen beveiliging aan de map toevoegt. Codering wordt niet toegestaan door de PDF/A-standaard.
 
 Voor instructies over de toegang tot van de Normen rapportering en nalevingsopties, zie [PDF-instellingen toevoegen of bewerken](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
@@ -467,13 +465,13 @@ Voor instructies over de toegang tot van de Normen rapportering en nalevingsopti
 
 **Taak annuleren:** Hiermee maakt u alleen een PDF-bestand als het PostScript-bestand voldoet aan de PDF/X-vereisten van de geselecteerde rapportopties en anderszins geldig is. Als beide PDF/X-rapportopties zijn geselecteerd en het PostScript-bestand slechts aan één set PDF/X-criteria voldoet (bijvoorbeeld PDF/X-3), maakt PDF Generator het compatibele bestand.
 
-**Als er geen TrimBox en geen ArtBox zijn opgegeven:** Beschikbaar wanneer de Norm van de Naleving op de Pagina van de Rapportering en van de Naleving van Normen aan een andere optie dan niets wordt geplaatst.
+**Als er geen TrimBox en geen ArtBox zijn opgegeven:** Beschikbaar wanneer de Norm van de Naleving op de pagina van de Normen meldt en van de Naleving aan een andere optie dan niets wordt geplaatst.
 
 **Als fout rapporteren:** Hiermee markeert u het PostScript-bestand als niet-compatibel als een van de rapportopties is geselecteerd en een bijsnijdvak of illustratievak ontbreekt op een pagina.
 
 **TrimBox instellen op MediaBox met afstand:** Berekent waarden in punten voor het bijsnijdvak op basis van de verschuivingen voor het mediavak van de respectieve pagina&#39;s als noch het bijsnijdvak, noch het illustratievak is opgegeven. Het bijsnijdvak is altijd zo klein of kleiner dan het omsluitende mediavak.
 
-**Als er geen BleedBox is opgegeven:** Beschikbaar wanneer de Norm van de Naleving op de Pagina van de Rapportering en van de Naleving van Normen aan een andere optie dan niets wordt geplaatst.
+**Als er geen BleedBox is opgegeven:** Beschikbaar wanneer de Norm van de Naleving op de pagina van de Normen meldt en van de Naleving aan een andere optie dan niets wordt geplaatst.
 
 **BleedBox instellen op MediaBox:** Hiermee gebruikt u de waarden voor het mediavak voor het afloopvak als het afloopvak niet is opgegeven.
 
@@ -481,17 +479,17 @@ Voor instructies over de toegang tot van de Normen rapportering en nalevingsopti
 
 **Standaardwaarden, indien niet opgegeven in het document:** Deze optie is beschikbaar wanneer de Norm van de Naleving op de pagina van de Rapportering en van de Naleving van Normen aan een andere optie dan niets wordt geplaatst.
 
-**Naam uitvoerintentieprofiel:** Hiermee wordt de gekarakteriseerde afdrukvoorwaarde aangegeven waarop het document wordt voorbereid. Als in een document geen naam voor een uitvoerintentie is opgegeven, gebruikt PDF Generator de geselecteerde waarde in dit menu. U kunt een van de opgegeven namen selecteren of een naam invoeren in de beschikbare ruimte. Selecteer Geen als de workflow vereist dat het document de uitvoerintentie opgeeft. Een document dat niet aan de vereisten voldoet, kan niet worden gecontroleerd op de naleving.
+**Naam uitvoerintentieprofiel:** Hiermee wordt de gekarakteriseerde afdrukvoorwaarde aangegeven waarop het document wordt voorbereid. Als een document geen naam van OutputIntent opgeeft, gebruikt de PDF Generator de geselecteerde waarde van dit menu. U kunt een van de opgegeven namen selecteren of een naam invoeren in de beschikbare ruimte. Selecteer Geen als de workflow vereist dat het document de uitvoerintentie opgeeft. Een document dat niet aan de vereisten voldoet, kan niet worden gecontroleerd op de naleving.
 
-**Uitvoervoorwaarde-id:** Geeft de referentienaam aan die is opgegeven in het register van de naam van het uitvoerintentieprofiel.
+**Uitvoervoorwaarde-id:** Hiermee wordt de referentienaam aangegeven die is opgegeven in het register van de naam van het uitvoerintentieprofiel.
 
 **Uitvoervoorwaarde:** Beschrijft de voorgenomen drukvoorwaarde. Deze vermelding kan nuttig zijn voor de ontvanger van het PDF-document.
 
-**Registernaam (URL):** Geeft het webadres aan voor meer informatie over het register. De URL wordt automatisch ingevoerd voor ICC-registernamen.
+**Registernaam (URL)** Geeft het webadres aan voor meer informatie over het register. De URL wordt automatisch ingevoerd voor ICC-registernamen.
 
 **Overvuld:** Geeft de status van overvulling in het document aan. Voor compatibiliteit met PDF/X is de waarde Waar of Onwaar vereist. Als het document de overvulstatus niet opgeeft, wordt de hier opgegeven waarde gebruikt. Selecteer Ongedefinieerd laten als uw werkstroom vereist dat het document de overvulstatus opgeeft. Een document dat niet aan de vereisten voldoet, kan niet worden gecontroleerd op de naleving.
 
-### Opties voor standaard PDF/A {#options-for-pdf-a-standard}
+### Opties voor PDF/A-standaard {#options-for-pdf-a-standard}
 
 Deze opties worden ingeschakeld wanneer Compatibiliteit (in het gedeelte Algemeen) is ingesteld op Acrobat 4 (PDF 1.3) of Acrobat 5 (PDF 1.4).
 
@@ -507,7 +505,7 @@ Deze opties worden ingeschakeld wanneer Compatibiliteit (in het gedeelte Algemee
 
 ## Oorspronkelijke weergaveopties {#initial-view-options}
 
-Deze opties zijn onderverdeeld in drie gebieden: Documentopties, Vensteropties en Interfaceopties. Voor instructies over de toegang tot van de Initiële meningsopties, zie [PDF-instellingen toevoegen of bewerken](configuring-pdf-settings.md#add-or-edit-pdf-settings).
+Deze opties zijn ingedeeld in drie gebieden: Documentopties, Vensteropties en Interfaceopties. Voor instructies over de toegang tot van de Initiële meningsopties, zie [PDF-instellingen toevoegen of bewerken](configuring-pdf-settings.md#add-or-edit-pdf-settings).
 
 Als u opties wilt gebruiken, selecteert u Instellingen voor beginweergave instellen.
 
@@ -555,9 +553,9 @@ De gebruikersinterface-opties bepalen welke besturingselementen worden weergegev
 
 ## Proloog- en epiloogbestanden uploaden en downloaden {#uploading-and-downloading-prologue-and-epilogue-files}
 
-Prolologbestanden worden gebruikt om aangepaste PostScript-code toe te voegen die wordt uitgevoerd aan het begin van elke PostScript-taak die wordt gedistilleerd. Epiloogbestanden worden gebruikt om aangepaste PostScript-code toe te voegen die aan het einde van elke PostScript-taak wordt uitgevoerd. U kunt proloog- en epiloogbestanden downloaden van de server om ze lokaal op te slaan. U kunt de bestanden downloaden om ze onafhankelijk te configureren of naar een andere locatie of computer te uploaden.
+Prolologbestanden worden gebruikt om aangepaste PostScript-code toe te voegen die wordt uitgevoerd aan het begin van elke PostScript-taak die wordt gedistilleerd. Epiloogbestanden worden gebruikt om aangepaste PostScript-code toe te voegen die aan het einde van elke PostScript-taak wordt uitgevoerd. U kunt proloog- en epiloogbestanden downloaden van de server om ze lokaal op te slaan. U kunt de bestanden downloaden om ze onafhankelijk te configureren of te uploaden naar een andere locatie of een andere computer.
 
-Deze bestanden hebben vele doeleinden. Profielbestanden kunnen bijvoorbeeld worden bewerkt om omslagpagina&#39;s op te geven; U kunt epiloogbestanden bewerken om een reeks procedures in een PostScript-bestand op te lossen. U kunt ook de proloog- en epiloogbestanden selecteren en uploaden die u met elke taak wilt verzenden.
+Deze bestanden hebben vele doeleinden. U kunt prologbestanden bijvoorbeeld bewerken om omslagpagina&#39;s op te geven. U kunt epiloogbestanden bewerken om een reeks procedures in een PostScript-bestand op te lossen. U kunt ook de proloog- en epiloogbestanden selecteren en uploaden die u met elke taak wilt verzenden.
 
 ### Een proloog- of epiloogbestand downloaden {#download-a-prologue-or-epilogue-file}
 

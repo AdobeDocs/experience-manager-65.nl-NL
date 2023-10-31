@@ -1,8 +1,6 @@
 ---
 title: Aanmelden bij AEM Forms-workflows
-seo-title: Logging in AEM Forms workflows
-description: Gebruik logboeken om fouten in de AEM Forms-workflow op te sporen.
-seo-description: Use logs to debug AEM Forms workflow issues.
+description: Fouten in de AEM Forms-workflow opsporen en foutopsporingslogbestanden voor AEM Forms-workflows inschakelen om de logbestanden weer te geven.
 uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +8,9 @@ topic-tags: publish
 discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '278'
 ht-degree: 6%
 
 ---
@@ -21,40 +19,40 @@ ht-degree: 6%
 
 Workflowstappen van Forms bieden gedetailleerde logboeken voor het eenvoudig opsporen van fouten in workflowgerelateerde problemen. Schakel foutopsporingslogboeken in voor AEM Forms-workflows om de logbestanden weer te geven.
 
-Standaard zijn alle logboekgegevens beschikbaar in de **error.log** bestand op */crx-repository/logs/* directory.
+Standaard zijn alle logboekgegevens beschikbaar in de **error.log** bestand op het */crx-repository/logs/* directory.
 
 De logbestanden voor foutopsporing voor formulierworkflows zijn onder andere:
 
 * Invoer van elke workflowstap. Bijvoorbeeld:\
-   `[DEBUG] "Executing Invoke DDX Process step"`
+  `[DEBUG] "Executing Invoke DDX Process step"`
 
 * Afsluiten van elke workflowstap. Bijvoorbeeld:\
-   `[DEBUG] "Successfully finished Invoke DDX Process step"`
+  `[DEBUG] "Successfully finished Invoke DDX Process step"`
 
 * Service-oproepberichten. Bijvoorbeeld:\
-   `[DEBUG] Invoking Adobe Sign Service for creating agreement`
+  `[DEBUG] Invoking Adobe Sign Service for creating agreement`
 
 * Service exit messages. Bijvoorbeeld:\
-   `[DEBUG] Agreement created successfully with agreement id <agreement id>`
+  `[DEBUG] Agreement created successfully with agreement id <agreement id>`
 
 * Variabelen worden gelezen van de metagegevenskaart. Bijvoorbeeld:\
-   `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
+  `[DEBUG] Successfully retrieved variable <variable name> from workflow meta data map`
 
 * Variabelen die zijn geschreven in de JCR-gegevensopslagruimte. Bijvoorbeeld:
 
-   ```verilog
-      [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
-   ```
+  ```verilog
+     [DEBUG] Successfully written variable <variable name> into meta data node at <JCR path where meta data is being written>
+  ```
 
 * Uitzonderingsberichten met volledige stacktracering. Bijvoorbeeld:\
-   `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
+  `[DEBUG] Exception in Adobe Sign Service <complete stack trace>`
 
 * Dynamische stapmetagegevensparameters. Bijvoorbeeld:
 
-   ```verilog
-   [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
-    [DEBUG] Locale to be used for Document of Record is <locale>
-   ```
+  ```verilog
+  [DEBUG] Document of Record to be generated for adaptive form <path of adaptive form>
+   [DEBUG] Locale to be used for Document of Record is <locale>
+  ```
 
 In het volgende voorbeeld worden de logboeken voor de stap Document ondertekenen weergegeven:
 

@@ -1,7 +1,6 @@
 ---
 title: Java API QuickStart (SOAP) van PDF Service converteren
-seo-title: Convert PDF Service Java API QuickStart(SOAP)
-description: Java API QuickStart (SOAP) van PDF Service converteren
+description: Met de service PDF converteren worden PDF-documenten geconverteerd naar PostScript- of afbeeldingsbestanden (JPEG, JPEG 2000, PNG en TIFF).
 uuid: 97253ac7-f0c1-4766-a7bd-c19af52adf51
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
 exl-id: 8974c468-ff2b-431d-96fb-e987698619bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -21,9 +20,9 @@ ht-degree: 0%
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service-API van Convert PDF.
 
-[Snel starten (SOAP-modus): Een PDF-document converteren naar PostScript met de Java API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document converteren naar PostScript met de Java API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document converteren naar JPEG-bestanden met de Java API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document converteren naar JPEG-bestanden met de Java API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
@@ -31,7 +30,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 >
 >De snelle Begin die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Snel starten (SOAP-modus): Een PDF-document converteren naar PostScript met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document converteren naar PostScript met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een PostScript-document dat *Lening.ps*. (Zie [PDF-documenten converteren naar PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
@@ -146,9 +145,9 @@ In het volgende codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* na
  }
 ```
 
-## Snel starten (SOAP-modus): Een PDF-document converteren naar JPEG-bestanden met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document converteren naar JPEG-bestanden met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* aan een reeks dossiers van JPEG en slaat hen in C:\Adobe directory op. Elk bestand krijgt een naam `tempFile[index].jpg`, waarbij het eerste afbeeldingsbestand een naam heeft *tempFile0.jpg*. (Zie [PDF-documenten omzetten in afbeeldingsindelingen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een set JPEG-bestanden en slaat deze op in de map C:\Adobe. Elk bestand krijgt een naam `tempFile[index].jpg`, waarbij het eerste afbeeldingsbestand een naam heeft *tempFile0.jpg*. (Zie [PDF-documenten omzetten in afbeeldingsindelingen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```java
  /*

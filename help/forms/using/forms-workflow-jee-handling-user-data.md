@@ -1,16 +1,15 @@
 ---
 title: Forms JEE-workflows | Gebruikersgegevens verwerken
-seo-title: Forms JEE workflows | Handling user data
-description: Forms JEE-workflows | Gebruikersgegevens verwerken
+description: AEM Forms JEE-workflows voor het ontwerpen, maken en beheren van bedrijfsprocessen.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1370'
 ht-degree: 0%
 
 ---
@@ -29,7 +28,7 @@ Ga voor meer informatie over het maken van het AEM Forms JEE-workflowproces naar
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Wanneer een proces wordt geactiveerd en tijdens het proces worden gegevens vastgelegd over de deelnemers aan het proces, gegevens die door deelnemers zijn ingevoerd in het formulier dat aan het proces is gekoppeld en bijlagen die aan het formulier zijn toegevoegd. De gegevens worden opgeslagen in de AEM Forms JEE-serverdatabase en als deze zijn geconfigureerd, worden sommige gegevens zoals bijlagen opgeslagen in de GDS-map (Global Document Storage). De GDS-map kan worden geconfigureerd op een gedeeld bestandssysteem of een database.
+Wanneer een proces wordt geactiveerd en tijdens het proces worden gegevens over de deelnemers aan het proces, gegevens die door deelnemers zijn ingevoerd in het formulier dat aan het proces is gekoppeld, en bijlagen die aan het formulier zijn toegevoegd, vastgelegd. De gegevens worden opgeslagen in de AEM Forms JEE-serverdatabase en als deze zijn geconfigureerd, worden sommige gegevens zoals bijlagen opgeslagen in de GDS-map (Global Document Storage). De GDS-map kan worden geconfigureerd op een gedeeld bestandssysteem of een database.
 
 ## Gebruikersgegevens openen en verwijderen {#access-and-delete-user-data}
 
@@ -37,8 +36,8 @@ Wanneer een proces wordt geactiveerd, worden een unieke procesinstantie-id en ee
 
 U kunt de procesinstantie-id voor een initiator echter niet identificeren in de volgende scenario&#39;s:
 
-* **Proces geactiveerd door een gecontroleerde map**: Een procesinstantie kan niet met de initiator worden geïdentificeerd als het proces door een gecontroleerde omslag wordt teweeggebracht. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
-* **Proces dat is gestart van AEM publicatie-instantie**: Alle procesinstanties die worden geactiveerd via AEM publicatieinstantie, leggen geen informatie over de initiator vast. Gebruikersgegevens kunnen echter worden vastgelegd in het formulier dat is gekoppeld aan het proces, dat is opgeslagen in workflowvariabelen.
+* **Proces geactiveerd door een gecontroleerde map**: Een procesinstantie kan niet worden geïdentificeerd met de initiator als het proces wordt geactiveerd door een gecontroleerde map. In dit geval wordt de gebruikersinformatie gecodeerd in de opgeslagen gegevens.
+* **Proces dat is gestart van AEM publicatie-instantie**: Alle procesinstanties die worden geactiveerd via AEM publicatie-instantie, leggen geen informatie over de initiator vast. Gebruikersgegevens kunnen echter worden vastgelegd in het formulier dat is gekoppeld aan het proces, dat is opgeslagen in workflowvariabelen.
 * **Verwerking gestart via e-mail**: De e-mailid van de afzender wordt vastgelegd als een eigenschap in een ondoorzichtige blob-kolom van het dialoogvenster `tb_job_instance` databasetabel, die niet rechtstreeks kan worden opgevraagd.
 
 ### Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is {#initiator-participant}
@@ -62,7 +61,7 @@ Voer de volgende stappen uit om procesinstantie-id&#39;s voor een workflowaanvra
    De vraag keert taken terug die door gespecificeerd worden in werking gesteld `initiator`_ `principal_id`. De taken zijn van twee typen:
 
    * **Voltooide taken**: Deze taken zijn verzonden en geven een alfanumerieke waarde weer in het dialoogvenster `process_instance_id` veld. Neem nota van alle procesinstantie IDs voor voorgelegde taken en ga met de stappen verder.
-   * **Taken die zijn gestart maar niet zijn voltooid**: Deze taken zijn begonnen maar nog niet ingediend. De waarde in het dialoogvenster `process_instance_id` veld voor deze taken is **0** (nul). Neem in dit geval nota van de overeenkomstige taak-id&#39;s en zie [Werken met wezen](#orphan).
+   * **Taken die zijn gestart maar niet zijn voltooid**: Deze taken zijn gestart, maar nog niet ingediend. De waarde in het dialoogvenster `process_instance_id` veld voor deze taken is **0** (nul). Neem in dit geval nota van de overeenkomstige taak-id&#39;s en zie [Werken met wezen](#orphan).
 
 1. (**Voor workflowdeelnemers**) Voer het volgende bevel uit om procesinstantie IDs terug te winnen verbonden aan belangrijkste identiteitskaart van de procesdeelnemer voor de initiatiefnemer van `tb_assignment` databasetabel.
 
@@ -82,8 +81,8 @@ Voer de volgende stappen uit om procesinstantie-id&#39;s voor een workflowaanvra
 
 Een workflow kan zo worden ontworpen dat de gebruikersgegevens worden vastgelegd in een variabele die als een blob in de database wordt opgeslagen. In dergelijke gevallen kunt u alleen gebruikersgegevens opvragen als deze zijn opgeslagen in een van de volgende primitieve variabelen:
 
-* **String**: Bevat de gebruiker - identiteitskaart direct of als substring en kan worden gevraagd gebruikend SQL.
-* **Numeriek**: Bevat de gebruikersnaam rechtstreeks.
+* **String**: Bevat de gebruikers-id direct of als een subtekenreeks en kan worden opgevraagd met SQL.
+* **Numeriek**: Bevat de gebruikers-id.
 * **XML**: Bevat de gebruikers-id als een subtekenreeks in de tekst die is opgeslagen als tekstkolommen in de database en kan worden opgevraagd als tekenreeksen.
 
 Voer de volgende stappen uit om te bepalen of een werkschema dat gegevens in primitieve-type variabelen opslaat gegevens voor de gebruiker bevat:
@@ -98,7 +97,7 @@ Voer de volgende stappen uit om te bepalen of een werkschema dat gegevens in pri
 
    >[!NOTE]
    >
-   >De waarde van de `name` Deze eigenschap kan complex zijn als de workflow in submappen in de toepassing is genest. Zorg ervoor dat u het exacte volledige pad naar de workflow opgeeft, dat u kunt ophalen via het menu `omd_object_type` databasetabel.
+   >De waarde van `name` Deze eigenschap kan complex zijn als de workflow in submappen in de toepassing is genest. Zorg ervoor dat u het exacte volledige pad naar de workflow opgeeft, dat u kunt ophalen via het menu `omd_object_type` databasetabel.
 
 1. Controleer de `tb_<number>` tabelschema. De tabel bevat variabelen die gebruikersgegevens voor de opgegeven workflow opslaan. De variabelen in de tabel komen overeen met de variabelen in de workflow.
 
@@ -128,7 +127,7 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
 1. Een instantie van het publiek maken `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) met een `ServiceClientFactory` instantie met de juiste verbindingsinstellingen.
 
-   Zie Java API-naslaggids voor meer informatie voor [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Zie Java API-naslag voor meer informatie [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controleer de status van de workflowinstantie. Als de status anders is dan 2 (COMPLETE) of 4 (TERMINATED), beëindigt u de instantie eerst door de volgende methode aan te roepen:
 
@@ -165,6 +164,7 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
       In het GDS-bestandssysteem:
 
       1. Zoek naar dossiers met de volgende koorden van zitting ID als hun uitbreidingen:
+
       * `_wfattach<task_id>`
       * `_wftask<fd_id>`
       * `_wftaskformid<fd_id>`
@@ -174,6 +174,7 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
       `<file_name_guid>.session<session_id_string>`
 
       1. Alle markeringsbestanden en andere bestanden met de exacte bestandsnaam verwijderen als `<file_name_guid>` uit het bestandssysteem.
+
    1. **GDS in database**
 
       Voer de volgende bevelen voor elke zitting-identiteitskaart uit:
@@ -183,9 +184,6 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
       delete from tb_dm_session_reference where sessionid=<session_id>
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
-
-
-
 
 1. Voer de volgende opdrachten uit om gegevens voor taak-id&#39;s te verwijderen uit de AEM Forms-serverdatabase:
 

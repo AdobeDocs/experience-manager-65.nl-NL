@@ -1,8 +1,7 @@
 ---
 title: Prestaties van de fijnafgestelde Health Monitor
 seo-title: Fine-tuning Health Monitor performance
-description: Leer hoe u de prestaties van de Health Monitor kunt verfijnen
-seo-description: Learn how to fine-tune Health Monitor performance
+description: Leer hoe u de prestaties van de Health Monitor kunt verfijnen. Beheer de systeemstatistieken die invloed hebben op de prestaties van de formulieromgeving met behulp van de optie voor JAVA-instelling.
 uuid: 770b10cb-065f-41b5-9594-a291e4311151
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 exl-id: 41042e08-5e14-4809-89b7-16d98a72d1b4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '422'
 ht-degree: 0%
 
 ---
@@ -47,8 +46,8 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
   </tr>
   <tr>
    <td><p>adobe.cache.multicast-port</p></td>
-   <td><p>De multicast haven die wordt gebruikt om met andere leden van het verdeelde systeem te communiceren. Indien ingesteld op nul, wordt multicast uitgeschakeld voor detectie en distributie van leden. </p><p>Opmerking: Selecteer verschillende multicast adressen en havens voor verschillende verdeelde systemen. Gebruik niet alleen andere adressen.</p></td>
-   <td><p>Geen standaardwaarde. Geldige waarden lopen van 0 tot en met 65535.</p></td>
+   <td><p>De multicast haven die wordt gebruikt om met andere leden van het verdeelde systeem te communiceren. Indien ingesteld op nul, wordt multicast uitgeschakeld voor detectie en distributie van leden. </p><p>Nota: Selecteer verschillende multicast adressen en havens voor verschillende verdeelde systemen. Gebruik niet alleen andere adressen.</p></td>
+   <td><p>Geen standaardwaarde. Geldige waarden liggen tussen 0 en 65535.</p></td>
   </tr>
   <tr>
    <td><p>Statistisch steekproefpercentage</p></td>
@@ -66,7 +65,7 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
 ## Java-opties toevoegen aan JBoss {#add-java-options-to-jboss}
 
 1. Stop de JBoss-toepassingsserver.
-1. Open de *[appserver-hoofdmap]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een editor en voeg zo nodig een van de Java-opties toe.
+1. Open de *[appserver-hoofdmap]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een editor en voeg zo nodig Java-opties toe.
 1. Start de server opnieuw.
 
 ## Java-opties toevoegen aan WebLogic {#add-java-options-to-weblogic}
@@ -91,4 +90,4 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
 1. Klik onder Serverinfrastructuur op Java en de formulierworkflow > Procesdefinitie.
 1. Klik onder Extra eigenschappen op Java Virtual Machine.
 1. Typ in het vak Algemene JVM-argumenten de argumenten die u nodig hebt.
-1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de master configuratie.
+1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de hoofdconfiguratie.

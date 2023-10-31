@@ -1,18 +1,15 @@
 ---
 title: Aanpassing thema
-seo-title: Theme Customization
-description: Het thema van uw AEM Forms-app aanpassen.
-seo-description: How to customize the theme of your AEM Forms app.
-uuid: 36632e67-1cc6-416d-ae80-d84bbabab4bd
+description: Leer hoe u het thema van de AEM Forms-toepassing aanpast. U kunt de code van de HTML en CSS dossier aanpassen om organisatie-specifieke blik en mening te verstrekken.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 exl-id: 9b8c5933-b783-48f9-b463-15a01e06ee98
-source-git-commit: 6bc228866aca785ec768daefb73970fc24568ef0
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '238'
 ht-degree: 0%
 
 ---
@@ -36,7 +33,7 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een aparte organisatie-sp
 1. Navigeer naar de map templates.
 
    * Navigeer in Xcode naar de **Vastleggen > www > wsmobile > js > runtime > templates** map.
-   * Navigeer in Eclipse naar de **assets > www > wsmobile > js > runtime > templates** map.
+   * Ga in Eclipse naar de knop **assets > www > wsmobile > js > runtime > templates** map.
    * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > js > runtime > templates** map.
 
 1. Open de `template.html` bestand voor bewerking.
@@ -75,7 +72,7 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een aparte organisatie-sp
 1. Navigeer naar de css-map.
 
    * Navigeer in Xcode naar **Vastleggen > www > wsmobile > css**.
-   * Navigeer in Eclipse naar **middelen > www > wsmobile > css**.
+   * Blader in Eclipse naar **middelen > www > wsmobile > css**.
    * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > css**.
 
 1. Open de `_style.css` bestand voor bewerking.

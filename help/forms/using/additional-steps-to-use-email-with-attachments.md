@@ -1,15 +1,15 @@
 ---
 title: Extra stappen voor het ophalen van e-mail met bijlage
-description: Extra stappen voor het ophalen van e-mail met bijlage
+description: Los de fout op wanneer u e-mail met Bijlagen voor AEM Forms op platforms JEE niet kunt terugwinnen.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
 
-# Kan geen e-mail ophalen met bijlagen voor AEM Forms op JEE-Platforms{#unable-to-get-email-with-attachments}
+# Kan geen e-mail ophalen met bijlagen voor AEM Forms op JEE-platforms{#unable-to-get-email-with-attachments}
 
 De kwestie is op de volgende versie van toepassing:
 * Experience Manager 6.5 Forms
@@ -37,10 +37,10 @@ De gebruiker kan geen handelingen uitvoeren zoals PDF verzenden via e-mail of Bi
 
 1. Installeren `java.mail-1.5.jar` verkregen uit stap 3. Met deze stap worden de verkoopeigenschappen van de JEE-implementatie opnieuw gestart. Wacht op de geïnstalleerde bundels bij `http://<server name>:<port>/lc/system/console/bundles` Status weergeven als **Actief**.
 
-   >Opmerking: In het geval dat de status nog steeds **InActive**, opnieuw starten   **JBoss®** van de **Services Console**.
+   >Opmerking: als de status nog steeds is **InActive**, opnieuw starten   **JBoss®** van de **Services Console**.
 
 
-1. Installeren `javax.mail-1.5.6.redhat-1.jar`bestand dat is gedownload met gebruik van stap 5.
+1. Installeren `javax.mail-1.5.6.redhat-1.jar`gedownload met gebruik van stap 5.
 
 1. Stoppen **JBoss®** van de **Services Console** en voeg de volgende eigenschappen toe **Sling.properties** bestand:
    * `org.osgi.framework.system.packages.extra=javax.activation; version\=1.2.0`

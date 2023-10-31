@@ -1,14 +1,14 @@
 ---
 title: Toepassingen importeren en beheren
-description: Leer hoe u toepassingen kunt importeren en beheren.
+description: Leer hoe u toepassingen kunt importeren en beheren. Een toepassing is een container voor het opslaan van elementen die vereist zijn voor het implementeren van een oplossing voor AEM formulieren.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '820'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---

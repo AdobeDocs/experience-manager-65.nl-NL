@@ -1,29 +1,28 @@
 ---
 title: Correspondentenbeheer | Gebruikersgegevens verwerken
-seo-title: Correspondence Management | Handling user data
-description: Correspondentenbeheer | Gebruikersgegevens verwerken
+description: Correspondentiebeheer en verwerking van gebruikersgegevens in AEM Forms-omgeving.
 uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '540'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
 
 # Correspondentenbeheer | Gebruikersgegevens verwerken {#correspondence-management-handling-user-data}
 
-Met AEM Forms Correspondence Management kunt u veilige en gepersonaliseerde klantcorrespondentie maken, beheren en stroomlijnen. Het verstrekt een intuïtieve gebruikersinterface voor bedrijfsgebruikers om correspondentie tot stand te brengen gebruikend vooraf goedgekeurde inhoudsblokken en media elementen. Zie voor meer informatie over het maken van correspondentie [Correspondentie maken](/help/forms/using/create-correspondence.md).
+Met AEM Forms Correspondence Management kunt u veilige en persoonlijke klantcorrespondentie maken, beheren en stroomlijnen. Het verstrekt een intuïtieve gebruikersinterface voor bedrijfsgebruikers om correspondentie tot stand te brengen gebruikend vooraf goedgekeurde inhoudsblokken en media elementen. Zie voor meer informatie over het maken van correspondentie [Correspondentie maken](/help/forms/using/create-correspondence.md).
 
 Wanneer een zakelijke gebruiker of een agent een correspondentie opslaat als concept of deze verzendt, wordt een letterinstantie opgeslagen in de AEM-opslagplaats. De brieveninstantie omvat brievengegevens en meta-gegevens.
 
 >[!NOTE]
 >
->In AEM 6.5 Forms is het correspondentiebeheer niet beschikbaar in het tekstvak. Als u een upgrade uitvoert vanaf een eerdere AEM Forms-versie, installeert u het compatibiliteitspakket en migreert u de middelen voor correspondentiebeheer om deze te blijven gebruiken in AEM 6.5 Forms. Zie voor meer informatie [Compatibiliteitspakket](/help/forms/using/compatibility-package.md).
+>In AEM 6.5 Forms is het correspondentiebeheer niet beschikbaar in het tekstvak. Als u een upgrade uitvoert vanaf een eerdere AEM Forms-versie, installeert u het compatibiliteitspakket en migreert u de middelen voor correspondentiebeheer om deze te blijven gebruiken in AEM 6.5 Forms. Zie voor meer informatie [Verenigbaarheidspakket](/help/forms/using/compatibility-package.md).
 
 ## Gebruikersgegevens en gegevensopslag {#data}
 
@@ -41,7 +40,7 @@ Afhankelijk van de persistentie van de gegevensopslag die voor uw AEM plaatsing 
   <tr>
    <td><p>Standaard</p> </td>
    <td><p>AEM opslagplaats van publicatie-instantie en auteurinstanties die zijn opgegeven in omgekeerde replicatieconfiguratie</p> </td>
-   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code> </p> </td>
+   <td><p><code>/content/apps/cm/letterInstances/[yyyy]/[mm]/[dd]/[node-id]/[letter-instance-name]/</code><br /> </p> </td>
   </tr>
   <tr>
    <td><p>Extern</p> </td>
@@ -63,7 +62,7 @@ Onder de [letter-instance-name] knooppunt, wordt de volgende knooppuntstructuur 
 |---|---|
 | `extendedProperties` | Hiermee worden eigenschappen van metagegevens van de letterinstantie opgeslagen. |
 | `dataXML` | Hiermee wordt een downloadbaar dataXML-bestand opgeslagen dat de correspondentiegegevens in binaire indeling bevat. |
-| `processedXDP` | Omvat de details van het malplaatje XDP dat wordt gebruikt om de voorgelegde brief tot stand te brengen. Dit knooppunt wordt alleen gemaakt voor verzonden correspondentie. |
+| `processedXDP` | Bevat de details van de XDP-sjabloon die wordt gebruikt om de verzonden letter te maken. Dit knooppunt wordt alleen gemaakt voor verzonden correspondentie. |
 | `submittedLetter` | Slaat de voorgelegde brievengegevens in downloadbaar binair formaat op. Dit knooppunt wordt alleen gemaakt voor verzonden correspondentie. |
 
 ## Gebruikersgegevens openen en verwijderen {#access-and-delete-user-data}
@@ -74,7 +73,7 @@ U kunt tot ontwerp en voorgelegde brievengegevens in de gevormde gegevensopslag 
 
 Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzonden brieven te zoeken en te openen. Met behulp van de API&#39;s kunt u lettervarianten zoeken en openen met de id van het lettertype of de gebruiker die de correspondentie heeft opgeslagen of verzonden. Zie voor meer informatie [API&#39;s voor toegang tot lettervarianten](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM repository navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslagplaats.
+U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM opslagplaats navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslagplaats.
 
 ### Gebruikersgegevens verwijderen {#delete-user-data}
 

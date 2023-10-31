@@ -1,8 +1,6 @@
 ---
 title: Terugvallettertypen configureren
-seo-title: Configuring fallback fonts
-description: Leer hoe u fallback-lettertypen configureert.
-seo-description: Learn how to configure fallback fonts.
+description: Leer hoe u fallback-lettertypen kunt configureren voor AEM Forms. Met het bestand FontManagerResources.properties kunt u de standaardlettertypen handmatig toewijzen aan terugvallettertypen.
 uuid: 2745541c-8c6d-4bb4-aa14-ec19afd6bc35
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
 exl-id: 76dd2b0c-9f16-47bf-a565-99277be750fb
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
 workflow-type: tm+mt
-source-wordcount: '247'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -37,12 +35,12 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
    >
    >Als het opgegeven lettertype of standaardlettertype geen specifiek Unicode-teken bevat of als dit niet beschikbaar is, wordt het teken volgens de volgende prioriteit van een fallback-lettertype genomen:
 
-   * Landspecifiek font
+   * Landspecifiek lettertype
    * HOOFDLETTERlettertype indien landinstelling niet is ingesteld
    * Algemeen lettertype, doorzocht op volgorde ingesteld in de fallback-tabel
 
 1. Verpak het bestand adobe-fontmanager.jar opnieuw.
-1. De adobe-livecycle opnieuw verpakken *`[appserver]`*.ear dossier en dan herstelt het of manueel of door de Manager van de Configuratie in werking te stellen.
+1. De adobe-livecycle opnieuw verpakken *`[appserver]`*.ear-bestand en gebruikt het vervolgens handmatig of door Configuratiebeheer uit te voeren.
 
 >[!NOTE]
 >

@@ -1,14 +1,14 @@
 ---
 title: Certificaatintrekkingslijsten beheren
-description: Leer hoe u lijsten voor certificaatintrekking beheert.
+description: Leer hoe u lijsten voor certificaatintrekking beheert. U kunt lijsten voor certificaatintrekking (CRL's) importeren, bewerken en verwijderen met Betrouwbaarheidsbeheer.
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01e966f6-a650-4565-80d1-e2297f25da5c
-source-git-commit: e33816b3b8d190e185d2b23dad3a05aca272f01c
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '167'
 ht-degree: 0%
 
 ---

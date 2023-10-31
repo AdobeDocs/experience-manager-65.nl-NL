@@ -1,7 +1,6 @@
 ---
 title: Introductie van Java API QuickStart
-seo-title: Introducing Java API QuickStart
-description: Introductie van Java API QuickStart
+description: AEM Forms-bewerkingen kunnen worden uitgevoerd met de sterk getypeerde AEM Forms Java-API die is ingeschakeld met SOAP-verbinding.
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop, development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 role: Developer
 exl-id: 1d4062ef-fb24-4527-b899-896ce757beda
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '534'
 ht-degree: 0%
 
 ---
@@ -21,7 +20,7 @@ ht-degree: 0%
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-Met de Adobe AEM Forms API Quick Start kunt u uw inspanningen versnellen om programma&#39;s te ontwikkelen die communiceren met de AEM Forms-services. *Snel starten* s zijn volledige programma&#39;s die u kunt kopiëren en plakken in uw eigen projecten en als uitgangspunt gebruiken. U kunt een Snel Begin in werking stellen om te zien hoe het zich gedraagt en het voor uw eigen behoeften wijzigt.
+Met de Adobe AEM Forms API Quick Start kunt u uw inspanningen versnellen om programma&#39;s te ontwikkelen die met de diensten van AEM Forms communiceren. *Snel starten* s zijn volledige programma&#39;s die u kunt kopiëren en plakken in uw eigen projecten en als uitgangspunt gebruiken. U kunt een Snel Begin in werking stellen om te zien hoe het zich gedraagt en het voor uw eigen behoeften wijzigt.
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
@@ -64,23 +63,23 @@ De lijst met JAR-bestanden bevindt zich in een opmerkingssectie aan het begin va
      */
 ```
 
-## Meerdere services snel aan de slag {#multiple-services-quick-start}
+## Meerdere services snel starten {#multiple-services-quick-start}
 
 De meeste snelstarthandleidingen in *Programmeren met AEM Forms op JEE* Roep een specifieke dienst aan om een verrichting uit te voeren. Sommige Quick Start-programma&#39;s roepen echter meerdere AEM Forms-services aan om een bepaalde workflow uit te voeren. In de volgende lijst vindt u een snelle start van Java waarbij meerdere AEM Forms-services worden aangeroepen:
 
-[Snel starten (SOAP-modus): Een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (Roept de dienst van de Bewaarplaats en van de Output aan)
+[Snel starten (SOAP-modus): een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (Roept de dienst van de Bewaarplaats en van de Output aan)
 
-[Snel starten (SOAP-modus): Een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (Roept de dienst van de Assembler en van de Output aan)
+[Snel starten (SOAP-modus): een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (Roept de dienst van de Assembler en van de Output aan)
 
 [Snel starten (SOAP-modus): PDF-documenten maken met verzonden XML-gegevens met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (Roept de service Forms, Output en Document Management aan)
 
-[Snel starten (SOAP-modus): Documenten doorgeven aan de Forms-service met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (roept de Forms en de Document Management Service aan)
+[Snel starten (SOAP-modus): documenten doorgeven aan de Forms-service met behulp van de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (roept de Forms en de Document Management Service aan)
 
-[Snel starten (SOAP-modus): Een XFA-gebaseerd formulier digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (roept de Forms- en handtekeningenservice aan)
+[Snel starten (SOAP-modus): digitaal een XFA-gebaseerd formulier ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (roept de Forms- en handtekeningenservice aan)
 
-[Snel starten (SOAP-modus): Rollen en machtigingen beheren met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) (Roept DirectoryManager en de dienst AuthorizationManager aan)
+[Snel starten (SOAP-modus): rollen en machtigingen beheren met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) (Roept DirectoryManager en de dienst AuthorizationManager aan)
 
-[Snel starten (SOAP-modus): Documenten doorgeven aan de uitvoerservice met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (Roep de service Uitvoer en Documentbeheer aan)
+[Snel starten (SOAP-modus): documenten doorgeven aan de uitvoerservice met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api) (Roep de service Uitvoer en Documentbeheer aan)
 
 >[!NOTE]
 >

@@ -1,7 +1,6 @@
 ---
 title: AEM Forms-processen begrijpen
-seo-title: Understanding AEM Forms Processes
-description: AEM Forms-processen begrijpen
+description: AEM Forms-processen omvatten het maken, verzenden, verwerken, valideren, integreren, automatiseren van werkstromen en uitvoerbeheer van formulieren.
 uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: development-tools, coding
 discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '815'
 ht-degree: 0%
 
 ---
@@ -33,7 +32,7 @@ Er zijn echter situaties waarin een proces niet synchroon kan worden voltooid va
 * Een proces kan organisatorische grenzen overspannen.
 * Een proces heeft externe input nodig om het te voltooien. Neem bijvoorbeeld een situatie waarin een formulier wordt verzonden naar een manager die buiten het kantoor is. In dit geval is het proces niet volledig totdat de manager het formulier retourneert en invult.
 
-   Deze soorten processen zijn gekend als langlevende processen. Een proces van lange duur wordt asynchroon uitgevoerd, toestaand voor systemen om als middelen toelaten in wisselwerking te staan en het volgen van en het toezicht op de verrichting toe te staan. Wanneer een proces met een lange levensduur wordt aangeroepen, maakt AEM Forms een waarde voor de aanroepings-id als onderdeel van een record die de status van het proces met een lange levensduur bijhoudt. De record wordt opgeslagen in de AEM Forms-database. U kunt langlevende procesverslagen zuiveren wanneer zij niet meer worden vereist.
+  Deze soorten processen zijn gekend als langlevende processen. Een proces van lange duur wordt asynchroon uitgevoerd, toestaand voor systemen om als middelen toelaten in wisselwerking te staan en het volgen van en het toezicht op de verrichting toe te staan. Wanneer een proces met een lange levensduur wordt aangeroepen, maakt AEM Forms een waarde voor de aanroepings-id als onderdeel van een record die de status van het proces met een lange levensduur bijhoudt. De record wordt opgeslagen in de AEM Forms-database. U kunt langlevende procesverslagen zuiveren wanneer zij niet meer worden vereist.
 
 >[!NOTE]
 >
@@ -52,7 +51,7 @@ De volgende afbeelding is een voorbeeld van een kortstondig proces met de naam *
 Wanneer dit proces van korte duur wordt aangehaald, voert het de volgende acties uit:
 
 1. Hiermee wordt het onbeveiligde PDF-document opgehaald dat als invoerwaarde aan het proces wordt doorgegeven.
-1. Hiermee versleutelt u het PDF-document met een wachtwoord. De naam van de invoerparameter voor dit proces is `inDoc` en het gegevenstype is document.
+1. Hiermee versleutelt u het PDF-document met een wachtwoord. De invoerparameter voor dit proces heet `inDoc` en het gegevenstype is document.
 1. Hiermee slaat u het met een wachtwoord gecodeerde PDF-document op als een PDF-bestand in het lokale bestandssysteem. Dit proces retourneert het gecodeerde PDF-document als een uitvoerwaarde. De naam van de uitvoerparameter voor dit proces is `outDoc` en het gegevenstype is document.
 
    Dit proces wordt synchroon voltooid op de zelfde uitvoeringsdraad waarvan het werd aangehaald. De naam van dit kortstondige proces is `MyApplication/EncryptDocument`en de werking ervan `invoke`.
@@ -63,7 +62,7 @@ Wanneer dit proces van korte duur wordt aangehaald, voert het de volgende acties
 
    *Programmeren met AEM formulieren* beschrijft de volgende manieren waarin u dit kortstondige proces programmatically kunt aanhalen:
 
-   * [Een kortstondig proces aanroepen door een onbeveiligd document door te geven met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Flex-toepassingen gebruiken)
+   * [Een kortlopend proces aanroepen door een onbeveiligd document door te geven met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Flex-toepassingen gebruiken)
    * [Een kortstondig proces aanroepen met de API voor aanroepen](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java Invocation API)
    * [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (voorbeeld van webservice)
    * [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (voorbeeld van webservice)

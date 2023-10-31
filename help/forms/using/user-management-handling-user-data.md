@@ -1,16 +1,15 @@
 ---
 title: Forms-gebruikersbeheer | Gebruikersgegevens verwerken
-seo-title: Forms user management | Handling user data
-description: Forms-gebruikersbeheer | Gebruikersgegevens verwerken
+description: Met de AEM Forms JEE-gebruikersbeheercomponent kunt u gebruikers maken, autoriseren en beheren voor toegang tot AEM Forms.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 role: Admin
 exl-id: eeeab5d1-073a-4e13-a781-391dfe70bb37
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '882'
+source-wordcount: '893'
 ht-degree: 0%
 
 ---
@@ -19,9 +18,9 @@ ht-degree: 0%
 
 Gebruikersbeheer is een AEM Forms JEE-component waarmee AEM Forms-gebruikers toegang kunnen krijgen tot AEM Forms en waarmee ze deze kunnen maken, beheren en autoriseren. Gebruikersbeheer gebruikt domeinen als map voor het verkrijgen van gebruikersinformatie. De volgende domeintypen worden ondersteund:
 
-**Lokale domeinen**: Dit type domein is niet verbonden met een opslagsysteem van derden. In plaats daarvan, worden de gebruikers en de groepen gecreeerd plaatselijk en verblijven in het gegevensbestand van het Beheer van de Gebruiker. De wachtwoorden worden lokaal opgeslagen, en de authentificatie wordt gedaan gebruikend een lokaal gegevensbestand.
+**Lokale domeinen**: Dit type domein is niet verbonden met een opslagsysteem van derden. In plaats daarvan worden gebruikers en groepen lokaal gemaakt en bevinden ze zich in de gebruikersbeheerdatabase. De wachtwoorden worden lokaal opgeslagen, en de authentificatie wordt gedaan gebruikend een lokaal gegevensbestand.
 
-**Hybride domeinen**: Dit type domein is niet verbonden met een opslagsysteem van derden. In plaats daarvan, worden de gebruikers en de groepen gecreeerd plaatselijk en verblijven in het gegevensbestand van het Beheer van de Gebruiker. In tegenstelling tot lokale domeinen, gebruiken de hybride domeinen een externe authentificatieleverancier, die LDAP, Kerberos, SAML, of een leverancier van de douaneauthentificatie kan zijn.
+**Hybride domeinen**: Dit type domein is niet verbonden met een opslagsysteem van derden. In plaats daarvan worden gebruikers en groepen lokaal gemaakt en bevinden ze zich in de gebruikersbeheerdatabase. In tegenstelling tot lokale domeinen, gebruiken de hybride domeinen een externe authentificatieleverancier, die LDAP, Kerberos, SAML, of een leverancier van de douaneauthentificatie kan zijn.
 
 **Enterprise-domeinen**: Bestaat uit gebruikers en groepen die zich in een opslagsysteem van derden bevinden, zoals een LDAP-directory. Gebruikersbeheer schrijft niet naar het opslagsysteem van derden. In plaats daarvan synchroniseert Gebruikersbeheer de gebruikers- en groepsgegevens met de gebruikersbeheerdatabase. De domeinen van de onderneming gebruiken ook een externe authentificatieleverancier, die LDAP, Kerberos, SAML, of een leverancier van de douaneauthentificatie kan zijn.
 
@@ -68,7 +67,7 @@ Gebruikersbeheer slaat gebruikersgegevens op in de volgende databasetabellen:
    <td>Bevat ingangen van alle gebruikers van lokale, onderneming, en hybride domeinen. Deze bevat e-mailadressen van gebruikers.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code> (Oracle- en MS SQL-databases)</p> </td>
+   <td><p><code>EdcPrincipalGrpCtmntEntity</code></p> <p><code>EdcPrincipalGrpCtmntEnti</code><br /> (Oracle- en MS SQL-databases)</p> </td>
    <td>Hiermee slaat u de toewijzing tussen gebruikers en groepen op.</td>
   </tr>
   <tr>
@@ -80,7 +79,7 @@ Gebruikersbeheer slaat gebruikersgegevens op in de volgende databasetabellen:
    <td>Slaat de afbeelding tussen hoofd en toestemmingen voor zowel gebruikers als groepen op.</td>
   </tr>
   <tr>
-   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code> (Oracle- en MS SQL-databases)</p> </td>
+   <td><p><code>EdcPrincipalMappingEntity</code></p> <p><code>EdcPrincipalMappingEntit</code><br /> (Oracle- en MS SQL-databases)</p> </td>
    <td>Hiermee slaat u oude en nieuwe kenmerkwaarden op die overeenkomen met een principal.<br /> </td>
   </tr>
  </tbody>
@@ -98,7 +97,7 @@ U kunt gegevens van het gebruikersbeheer voor gebruikers in de gebruikersbeheerg
 
 Als u gebruikersgegevens wilt exporteren of verwijderen uit een gebruikersbeheerdatabase, moet u verbinding maken met de database met behulp van een databaseclient en de belangrijkste id opzoeken op basis van sommige PII&#39;s van de gebruiker. Bijvoorbeeld, om belangrijkste identiteitskaart van een gebruiker terug te winnen die een login identiteitskaart gebruikt, stel het volgende in werking `select` gebruiken in de database.
 
-In de `select` vervangen `<user_login_id>` met de login identiteitskaart van de gebruiker waarvan belangrijkste identiteitskaart u wilt terugwinnen.
+In de `select` de opdracht vervangen `<user_login_id>` met de login identiteitskaart van de gebruiker waarvan belangrijkste identiteitskaart u wilt terugwinnen.
 
 ```sql
 select refprincipalid from EdcPrincipalUserEntity where uidstring = <user_login_id>
@@ -122,7 +121,6 @@ Voer de volgende databaseopdrachten uit om gebruikersbeheergegevens voor een hoo
 >
 >* Vervangen `EdcPrincipalGrpCtmntEntity` with `EdcPrincipalGrpCtmntEnti`
 >
-
 
 ```sql
 Select * from EdcPrincipalLocalAccountEntity where refuserprincipalid in (Select id from EdcPrincipalUserEntity where refprincipalid in (Select id from EDCPRINCIPALENTITY where id='<principal_id>'));
@@ -183,6 +181,6 @@ Om gebruiker te bekijken die in AEM bewaarplaats wordt gecreeerd, login `https:/
 Een gebruiker verwijderen:
 
 1. Ga naar `https://'[server]:[port]'/lc/useradmin` met AEM beheerdersreferenties.
-1. Zoek naar een gebruiker en klik de gebruikersbenaming tweemaal om gebruikerseigenschappen te openen. Kopieer de `Path` eigenschap.
+1. Zoek naar een gebruiker en klik de gebruikersbenaming tweemaal om gebruikerseigenschappen te openen. De `Path` eigenschap.
 1. Ga naar AEM CRX DELite op `https://'[server]:[port]'/lc/crx/de/index.jsp` en navigeer of doorzoek het gebruikerspad.
 1. Het pad verwijderen en klikken **[!UICONTROL Save All]** om de gebruiker permanent uit AEM opslagplaats te verwijderen.

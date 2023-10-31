@@ -1,7 +1,6 @@
 ---
 title: DocConverter Service Java API QuickStart (SOAP)
-seo-title: DocConverter Service Java API QuickStart(SOAP)
-description: DocConverter Service Java API QuickStart (SOAP)
+description: Converteer een document naar een PDF/A-document en beheer de compatibiliteit met de Java API Quick Start (SOAP).
 uuid: a02e13a5-4557-4c8a-a4be-e8d017127128
 contentOwner: admin
 content-type: reference
@@ -10,9 +9,9 @@ topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
 exl-id: 554b19d6-47c3-4171-b59d-343f1ad935b2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -23,7 +22,7 @@ Java API Quick Start (SOAP) is beschikbaar voor de DocConverter-service.
 
 [Snel starten (SOAP-modus): PDF/A-compatibiliteit bepalen met de Java API](docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een document converteren naar een PDF/A-document met de Java API](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Snel starten (SOAP-modus): een document converteren naar een PDF/A-document met de Java API](docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
@@ -31,7 +30,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 >
 >De snelle Beginnen die in Programmering met AEM vormen worden gevestigd zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Een document converteren naar een PDF/A-document met de Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
+## Snel starten (SOAP-modus): een document converteren naar een PDF/A-document met de Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een PDF/A-document dat is opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie [Documenten converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 

@@ -1,8 +1,6 @@
 ---
 title: Beveiligingsinstellingen configureren
-seo-title: Configuring security settings
-description: Leer hoe u beveiligingsinstellingen configureert.
-seo-description: Learn how to configure security settings.
+description: Leer hoe u beveiligingsinstellingen configureert. U kunt PDF documenten beschermen door de toegang te beperken. U kunt het document versleutelen, certificeren of met een wachtwoord beveiligen.
 uuid: 9747f268-3551-4064-8dba-e1de4a577843
 contentOwner: admin
 content-type: reference
@@ -11,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '1358'
+source-wordcount: '1375'
 ht-degree: 0%
 
 ---
@@ -57,7 +55,7 @@ Zorg ervoor dat het compatibiliteitsniveau consistent is met het compatibiliteit
 
 **Geen versleuteling:** Hiermee wordt geen enkel deel van het document versleuteld.
 
-**Alle inhoud van het document versleutelen:** Hiermee worden het document en de metagegevens van het document gecodeerd. Als deze optie is geselecteerd, hebben zoekprogramma&#39;s geen toegang tot de metagegevens van het document.
+**Alle inhoud van het document versleutelen:** Codeert het document en de documentmeta-gegevens. Als deze optie is geselecteerd, hebben zoekfuncties geen toegang tot de metagegevens van het document.
 
 **Alle inhoud van het document versleutelen, behalve metagegevens (compatibel met Acrobat 6 en hoger):** Hiermee wordt de inhoud van een document gecodeerd, maar zijn de metagegevens van het document nog wel toegankelijk voor zoekfuncties. Deze optie is alleen beschikbaar als de optie Compatibiliteit is ingesteld op Acrobat 6.0 of hoger, Acrobat 7.0 of hoger of Acrobat 9.0 of hoger.
 
@@ -69,13 +67,13 @@ Met deze instellingen configureert u de wachtwoordbeveiliging:
 >
 >Als u een wachtwoord bent vergeten, kan dit niet uit het document worden hersteld. Het wordt aanbevolen wachtwoorden op een andere beveiligde locatie op te slaan voor het geval u ze vergeet. Bewaar bovendien een reservekopie van het document dat niet met een wachtwoord is beveiligd.
 
-**Wachtwoord vereist om document te openen:** Hiermee schakelt u de wachtwoordopties in.
+**Wachtwoord vereist om document te openen:** Schakelt de wachtwoordopties in.
 
 **Wachtwoord voor document openen:** Hiermee voorkomt u dat gebruikers het document kunnen openen, tenzij ze het door u opgegeven wachtwoord invoeren. Wachtwoorden zijn hoofdlettergevoelig. Acrobat gebruikt de RC4 methode van veiligheid van de Veiligheid Inc. van RSA aan wachtwoord-beschermt de documenten van PDF. Als u afdrukken en bewerken beperkt, kunt u het beste een wachtwoord voor het openen van documenten toevoegen om de beveiliging te verbeteren.
 
 **Typ het wachtwoord voor het openen van het document opnieuw:** Hiermee zorgt u ervoor dat het wachtwoord voor het openen van het document correct is.
 
-**Wachtwoord vereisen voor het openen van bestandsbijlagen:** Hiermee schakelt u de wachtwoordopties in. Deze optie is alleen beschikbaar als de optie Compatibiliteit is ingesteld op Acrobat 7.0 of hoger of op Acrobat 9.0 of hoger en de optie Documentbeperking is ingesteld op Alleen bestandsbijlagen versleutelen.
+**Wachtwoord vereisen voor het openen van bestandsbijlagen:** Schakelt de wachtwoordopties in. Deze optie is alleen beschikbaar als de optie Compatibiliteit is ingesteld op Acrobat 7.0 of hoger of op Acrobat 9.0 of hoger en de optie Documentbeperking is ingesteld op Alleen bestandsbijlagen versleutelen.
 
 **Wachtwoord voor het openen van bestandsbijlagen:** Hiermee zorgt u ervoor dat een wachtwoord is vereist om een bestandsbijlage te openen. Gebruikers kunnen het document zonder wachtwoord openen. Deze optie is alleen beschikbaar als de optie Compatibiliteit is ingesteld op Acrobat 7.0 of hoger of op Acrobat 9.0 of hoger en de optie Documentbeperking is ingesteld op Alleen bestandsbijlagen versleutelen.
 
@@ -93,7 +91,7 @@ Met deze opties configureert u de machtigingen:
 
 **Geen:** Voorkomt dat gebruikers het document afdrukken.
 
-**Lage resolutie (150 dpi):** Gebruikers kunnen het document afdrukken met een resolutie die niet hoger is dan 150 dpi. Het afdrukken kan langzamer zijn omdat elke pagina als een bitmapafbeelding wordt afgedrukt. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
+**Lage resolutie (150 dpi):** Gebruikers kunnen het document afdrukken met een resolutie van maximaal 150 dpi. Het afdrukken kan langzamer zijn omdat elke pagina als een bitmapafbeelding wordt afgedrukt. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
 
 **Hoge resolutie:** Gebruikers kunnen met elke resolutie afdrukken, waarbij vectoruitvoer van hoge kwaliteit wordt afgedrukt op PostScript-printers en andere printers die geavanceerde functies voor hoge afdrukkwaliteit ondersteunen.
 
@@ -121,4 +119,4 @@ U kunt een beveiligingsinstelling verwijderen als deze niet meer vereist is. Voo
 
 1. Klik in de beheerconsole op **[!UICONTROL Services > PDF Generator > Security Settings]**.
 1. Schakel het selectievakje naast de instelling die u wilt verwijderen in. U kunt meerdere instellingen selecteren.
-1. Klikken **[!UICONTROL Delete]** en op de **[!UICONTROL Delete Confirmation]** pagina, klikt u op **[!UICONTROL Delete]** opnieuw.
+1. Klikken **[!UICONTROL Delete]** en op de **[!UICONTROL Delete Confirmation]** pagina, klikt u **[!UICONTROL Delete]** opnieuw.

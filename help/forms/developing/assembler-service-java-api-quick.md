@@ -1,15 +1,15 @@
 ---
 title: Java API QuickStart (SOAP) van de Assembler-service
-description: Java API QuickStart (SOAP) van de Assembler-service
+description: U kunt een PDF-document samenstellen, dempen en dynamisch maken met de Java API QuickStart (SOAP) van de Assembler Service.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---

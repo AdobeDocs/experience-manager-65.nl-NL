@@ -1,8 +1,6 @@
 ---
-title: Onderscheid tussen HTML5-formulieren en PDF forms
-seo-title: Feature differentiation between HTML5 forms and PDF forms
-description: Functie wordt ondersteund in HTML5-formulieren en PDF forms
-seo-description: Feature supported in HTML5 forms and PDF forms
+title: Verschil tussen HTML5-formulieren en PDF forms
+description: Meer informatie over de verschillen tussen HTML5-formulieren en PDF forms.
 uuid: 6ddee197-d108-4897-9976-77d115a06504
 contentOwner: robhagat
 content-type: reference
@@ -12,16 +10,16 @@ discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '446'
 ht-degree: 1%
 
 ---
 
-# Onderscheid tussen HTML5-formulieren en PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Verschil tussen HTML5-formulieren en PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HTML5-formulieren en PDF forms:
+In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HTML5-formulieren en -PDF forms:
 
 <table>
  <tbody>
@@ -31,13 +29,13 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
    <th>PDF</th>
   </tr>
   <tr>
-   <td>Streepjescodes<br /> </td>
+   <td>Barcodes<br /> </td>
    <td>Niet beschikbaar op gebruikersinterfaceniveau. </td>
    <td>Ondersteund</td>
   </tr>
   <tr>
    <td>Handtekeningveld<br /> </td>
-   <td><strong>Digitale handtekeningen</strong> worden niet ondersteund, maar een nieuwe <strong>Krabbelhandtekening</strong> het veld wordt toegevoegd voor handtekeningen op papier. U kunt de handtekening op het formulier krabbelen met de <strong>Krabbelhandtekening</strong> veld. De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt gegevens over de geolocatie opslaan in het dialoogvenster <strong>Krabbelhandtekening</strong> veld.</td>
+   <td><strong>Digitale handtekeningen</strong> worden niet ondersteund, maar een nieuwe <strong>Krabbelhandtekening</strong> het veld wordt toegevoegd voor handtekeningen die vergelijkbaar zijn met papier. U kunt de handtekening op het formulier krabbelen met de <strong>Krabbelhandtekening</strong> veld. De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt gegevens over de geolocatie opslaan in het dialoogvenster <strong>Krabbelhandtekening</strong> veld.</td>
    <td>Handtekeningveld beschikbaar voor <strong>Digitale handtekeningen</strong>.</td>
   </tr>
   <tr>
@@ -76,7 +74,7 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
    <td>Als het PDF-bestand wordt geopend in Acrobat of Reader, worden ook alle script-API's van Acrobat ondersteund.</td>
   </tr>
   <tr>
-   <td>Ondersteuning voor talen die van rechts naar links worden geschreven </td>
+   <td>Ondersteuning voor talen van rechts naar links </td>
    <td>Ondersteund</td>
    <td>Ondersteund</td>
   </tr>

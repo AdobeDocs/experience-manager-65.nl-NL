@@ -1,8 +1,6 @@
 ---
 title: Eindpunten van Taakbeheer configureren
-seo-title: Configuring Task Manager endpoints
-description: Leer hoe te om de eindpunten van de Manager van de Taak te vormen.
-seo-description: Learn how to configure Task Manager endpoints.
+description: Leer hoe te om de eindpunten van de Manager van de Taak te vormen om de dienst aan te halen. Verschillende instellingen zijn vereist voor het configureren van eindpunten voor Taakbeheer.
 uuid: 07604b10-0bd7-4bce-9624-7ebac4754f56
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 9c55feb9-23d8-4798-a3c5-70ec736df3ad
 exl-id: 8495a3d7-6ac9-41f5-b1f9-31decaba118a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '245'
 ht-degree: 0%
 
 ---
@@ -29,7 +27,7 @@ Gebruik de volgende montages om een eindpunt van de Manager van de Taak te vorme
 
 **Omschrijving:** Een beschrijving van het eindpunt. Neem geen &lt;-teken op omdat de beschrijving die in Workspace wordt weergegeven hierdoor wordt afgekapt.
 
-**Taakinstructies:** Instructies voor de gebruiker die deze workflow start.
+**Taakinstructies** Instructies voor de gebruiker die deze workflow start.
 
 **Proceeigenaar:** De naam van de persoon die verantwoordelijk is voor het proces.
 
@@ -37,7 +35,7 @@ Gebruik de volgende montages om een eindpunt van de Manager van de Taak te vorme
 
 **Venster Bijlage tonen:** Hiermee kan de gebruiker het venster met bijlagen weergeven.
 
-**Toevoegen van bijlage toestaan:** Hiermee kan de gebruiker bijlagen en notities toevoegen.
+**Bijlage toevoegen toestaan:** Hiermee kan de gebruiker bijlagen en notities toevoegen.
 
 **Aanvankelijk vergrendelde taak:** Vergrendelt de eerste taak.
 

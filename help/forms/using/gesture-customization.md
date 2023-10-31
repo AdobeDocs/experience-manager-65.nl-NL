@@ -1,8 +1,6 @@
 ---
 title: Bewegingsaanpassing
-seo-title: Gesture customization
-description: De bewegingen in uw AEM Forms-app aanpassen
-seo-description: Customize the gestures on your AEM Forms app
+description: Leer hoe u de bewegingen in de AEM Forms-app aanpast. U kunt de bewegingen aanpassen om een verschillende manier van interactie met de toepassing te bieden.
 uuid: 117e0e21-66bd-42f1-879c-6c1443991974
 contentOwner: robhagat
 content-type: reference
@@ -10,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: 747d13d3-e7cc-4aa1-bcc8-4b57157e71ed
 exl-id: 6debb1a7-7889-4fdd-87c7-ecb87cc0b1f5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -23,7 +21,7 @@ U kunt de gebaren van de AEM Forms-app aanpassen om een aparte methode voor het 
 
 ## Bewegingen aanpassen in de AEM Forms-app {#to-customize-gestures-in-aem-forms-app}
 
-In de AEM Forms-app wordt met de veegbeweging links een nieuwe taak of beginpunt geopend en met de veegbeweging rechts niets. In het volgende voorbeeld worden stappen beschreven voor het openen van een nieuwe taak of beginpunt voor het uitvoeren van de rechterveegbeweging in de AEM Forms-app.
+In de AEM Forms-app wordt met de veegbeweging links een nieuwe taak of een nieuw beginpunt geopend, terwijl met de veegbeweging rechts niets wordt gedaan. In het volgende voorbeeld worden stappen beschreven voor het openen van een nieuwe taak of beginpunt voor het uitvoeren van de rechterveegbeweging in de AEM Forms-app.
 
 1. Open uw project.
 
@@ -31,10 +29,10 @@ In de AEM Forms-app wordt met de veegbeweging links een nieuwe taak of beginpunt
    * Voor Android opent u het Android-project in Eclipse.
    * Voor Windows: open `MWSWindows.sln` in Visual Studio.
 
-1. Navigeer naar de map views en open het dialoogvenster `task.js` bestand voor bewerking.
+1. Navigeer naar de map views en open de `task.js` bestand voor bewerking.
 
    * Navigeer in Xcode naar de **Vastleggen > www > wsmobile > js > runtime > views** map.
-   * Navigeer in Eclipse naar de **assets > www > wsmobile > js > runtime > views** map.
+   * Ga in Eclipse naar de knop **assets > www > wsmobile > js > runtime > views** map.
    * In Visual Studio, navigeer aan **MWSWindows > www > wsmobile > js > runtime > views** map.
 
    >[!NOTE]
@@ -51,25 +49,25 @@ In de AEM Forms-app wordt met de veegbeweging links een nieuwe taak of beginpunt
 
 1. Zoeken
 
-   * &quot;tap.taskContentArea&quot;: &quot;onTaskClick&quot;,
+   * &quot;tap.taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-     &quot;tap.taskOpenArea&quot;: &quot;onTaskClick&quot;,
+     &quot;tap.taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-     &quot;tik.task-content&quot;: &quot;onTaskClick&quot;,
+     &quot;tap.task-content&quot; : &quot;onTaskClick&quot;,
 
-     &quot;tap.last_empty_div&quot;: &quot;onTaskClick&quot;,
+     &quot;tap.last_empty_div&quot; : &quot;onTaskClick&quot;,
 
    en vervangen door
 
-   * &quot;swipe.taskContentArea&quot; : &quot;onTaskClick&quot;,
+   * &quot;vepe.taskContentArea&quot; : &quot;onTaskClick&quot;,
 
-     &quot;swipe.taskOpenArea&quot; : &quot;onTaskClick&quot;,
+     &quot;vepe.taskOpenArea&quot; : &quot;onTaskClick&quot;,
 
-     &quot;veeggebaar.task-content&quot;: &quot;onTaskClick&quot;,
+     &quot;swipe.task-content&quot; : &quot;onTaskClick&quot;,
 
-     &quot;veeggebaar.last_empty_div&quot;: &quot;onTaskClick&quot;,
+     &quot;vepe.last_empty_div&quot; : &quot;onTaskClick&quot;,
 
-1. Sla het bestand op en sluit het `task.js` bestand.
+1. Opslaan en het dialoogvenster sluiten `task.js` bestand.
 1. De AEM Forms-app ontwikkelen en uitvoeren. Nu kunt u een toepassing openen met een veegbeweging naar links en een veegbeweging naar rechts.
 
 Op dezelfde manier kunt u ook wijzigingen aanbrengen in andere weergaven voor verschillende combinaties van bewegingen, HTML-elementen en functies.

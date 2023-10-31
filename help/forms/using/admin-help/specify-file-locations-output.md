@@ -1,8 +1,6 @@
 ---
 title: Bestandslocaties voor uitvoer opgeven
-seo-title: Specify file locations for Output
-description: Leer hoe u bestandslocaties opgeeft voor Uitvoer.
-seo-description: Learn how to specify file locations for Output.
+description: Leer hoe u bestandslocaties opgeeft voor Output voor bepaalde bestandstypen, bijvoorbeeld Content Root URI, XCI Configuration File, Cache and Default.
 uuid: 3287274f-85b5-4811-8abb-d347a9b80947
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
 exl-id: 620c69d6-4fe1-46d6-b5d4-3b562142e547
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '314'
+source-wordcount: '330'
 ht-degree: 0%
 
 ---
@@ -41,7 +39,7 @@ De standaardwaarde is `com/adobe/formServer/PA/pa_output.xci`.
 
 * **JBoss:** `[JBoss Home]\server\[install type]\svcdata\Output\Cache`
 * **WebLogic:** `[WebLogic Home]\user_projects\domains\[aem-forms domain Name]\adobe\[forms server name]\Output\Cache`
-* **WebSphere:** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
+* **WebSphere** `[IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\Output\Cache`
 
 **LC Temp-map:** De cache wordt gemaakt in een submap van de tijdelijke map voor AEM formulieren, die wordt opgegeven in de beheerconsole onder Instellingen > Core System Settings > Configurations > Location of Temp Directory. De naam van de submap is `adobeoutput_[servername]`.
 

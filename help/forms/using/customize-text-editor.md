@@ -1,8 +1,6 @@
 ---
 title: Teksteditor aanpassen
-seo-title: Customize text editor
-description: Leer hoe u de teksteditor kunt aanpassen.
-seo-description: Learn how to customize text editor.
+description: Leer hoe u de teksteditor in de AEM Forms-omgeving kunt aanpassen.
 uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -11,9 +9,9 @@ discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
 workflow-type: tm+mt
-source-wordcount: '605'
+source-wordcount: '609'
 ht-degree: 0%
 
 ---
@@ -43,7 +41,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
 1. Maak in de map apps een map met de naam config met een pad/structuur die lijkt op de configuratiemap (libs/fd/cm/config). Ga hierbij als volgt te werk:
 
-   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/config`
 
@@ -174,15 +172,14 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 
    1. Klikken **Alles opslaan**.
 
-
 ## Aangepaste lettertypen toevoegen aan de clientcomputer {#addcustomfonts}
 
-Als u een lettertype opent in de teksteditor voor Correspondentiebeheer, moet dit lettertype aanwezig zijn op de clientcomputer die u gebruikt voor toegang tot Correspondentiebeheer. Als u een aangepast lettertype in de teksteditor wilt gebruiken, moet u dit eerst op de client installeren.
+Wanneer u een lettertype opent in de teksteditor voor Correspondentiebeheer, moet dit aanwezig zijn op de clientcomputer die u gebruikt voor toegang tot Correspondentiebeheer. Als u een aangepast lettertype in de teksteditor wilt gebruiken, moet u dit eerst op de client installeren.
 
 Raadpleeg de volgende secties voor meer informatie over het installeren van lettertypen:
 
 * [Lettertypen installeren of verwijderen in Windows](https://windows.microsoft.com/en-us/windows-vista/install-or-uninstall-fonts)
-* [Basisprincipes van Mac: Lettertypeboek](https://support.apple.com/en-us/HT201749)
+* [Mac-basisbeginselen: lettertypeboek](https://support.apple.com/en-us/HT201749)
 
 ## Lettertypeaanpassingen openen {#access-font-customizations}
 

@@ -1,8 +1,6 @@
 ---
 title: E-maileindpunten configureren
-seo-title: Configuring email endpoints
-description: Leer hoe u e-maileindpunten configureert.
-seo-description: Learn how to configure email endpoints.
+description: Leer hoe u e-maileindpunten configureert. Met e-maileindpunten kunt u de service oproepen door een of meer documenten naar een opgegeven e-mailaccount te verzenden.
 uuid: d47bb45b-0e0e-43ca-9e25-e347d0e60206
 contentOwner: admin
 content-type: reference
@@ -10,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
 workflow-type: tm+mt
-source-wordcount: '3757'
+source-wordcount: '3776'
 ht-degree: 0%
 
 ---
@@ -31,7 +29,7 @@ Alvorens u een e-maileindpunt vormt, creeer een POP3 of IMAP e-mailrekening voor
 
 Alle e-maileindpunten zijn geconfigureerd met een geoorloofde gebruikersnaam en wachtwoord voor de e-mailpostvak, die vereist zijn wanneer de service wordt aangeroepen. Het e-mailaccount is beveiligd door het systeem van de mailserver waarop het is geconfigureerd.
 
-Als uw gebruikers documenten met West-Europese taalkarakters in dossier en omzettingswegnamen verzenden, moeten zij een e-mailtoepassing gebruiken die de vereiste coderingstypes (Latin1 steunt [ISO-8859-1], West-Europees [Windows], of UTF-8). Zie voor meer informatie de *AEM installeren en implementeren* document voor uw toepassingsserver.
+Als uw gebruikers documenten met West-Europese taalkarakters in dossier en omzettingswegnamen verzenden, moeten zij een e-mailtoepassing gebruiken die de vereiste coderingstypes (Latin1 steunt [ISO-8859-1], West-Europees [Windows], of UTF-8). Zie de klasse *AEM installeren en implementeren* document voor uw toepassingsserver.
 
 Alvorens u een e-maileindpunt vormt, vorm de E-maildienst. (Zie [Standaardinstellingen voor het e-maileindpunt configureren](configuring-email-endpoints.md#configure-default-email-endpoint-settings).) De configuratieparameters van de e-mailservice hebben twee doelen:
 
@@ -56,7 +54,7 @@ U kunt POP3, IMAP, of SMTP vormen om de Veilige Laag van Contactdozen (SSL) voor
 
 >[!NOTE]
 >
->Tip: Als u problemen ondervindt bij het gebruik van SSL, gebruikt u een e-mailclient zoals Microsoft Outlook om te controleren of deze via SSL toegang heeft tot de e-mailserver. Als de e-mailclient geen toegang heeft tot de e-mailserver, is de uitgave gerelateerd aan de configuratie van uw certificaat of uw e-mailserver.
+>Tip: als u problemen ondervindt bij het gebruik van SSL, gebruikt u een e-mailclient zoals Microsoft Outlook om te controleren of deze via SSL toegang heeft tot de e-mailserver. Als de e-mailclient geen toegang heeft tot de e-mailserver, is de uitgave gerelateerd aan de configuratie van uw certificaat of uw e-mailserver.
 
 ## Standaardinstellingen voor het e-maileindpunt configureren {#configure-default-email-endpoint-settings}
 
@@ -67,7 +65,7 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 ### De standaardwaarden voor e-maileindpunten wijzigen {#change-the-default-values-for-email-endpoints}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
-1. Klik op E-mail op de pagina Servicebeheer: 1.0 (de component-id is com.adobe.idp.dsc.provider.service.email.Email).
+1. Klik op de pagina Servicebeheer op E-mail: 1.0 (de component-id is com.adobe.idp.dsc.provider.service.email.Email).
 1. Voor het lusje van de Configuratie, specificeer de standaard e-maileindpuntmontages en klik dan sparen.
 
 ### Standaardinstellingen voor e-maileindpunt {#default-email-endpoint-settings}
@@ -84,9 +82,9 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **Asynchroon:** Identificeert het aanroepingstype als asynchroon of synchroon. De voorbijgaande en synchrone processen kunnen slechts synchroon worden aangehaald. De standaardwaarde is asynchroon.
 
-**Domeinpatroon:** Het domeinnaampatroon waarmee inkomende e-mailberichten worden gefilterd. Als bijvoorbeeld adobe.com wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt. E-mail van andere domeinen wordt genegeerd.
+**Domeinpatroon:** Het domeinnaampatroon waarmee inkomende e-mailberichten worden gefilterd. Als bijvoorbeeld adobe.com wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt; e-mail van andere domeinen wordt genegeerd.
 
-**Bestandspatroon:** De inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Dit omvat bestanden met specifieke extensies (&amp;ast;.dat, &amp;ast;.xml), specifieke namen (gegevens) en samengestelde expressies in de naam en de extensie (.[dD][aA]&#39;port&#39;). De standaardwaarde is &amp;last;.&amp;ast;.
+**Bestandspatroon** De inkomende patronen van de dossiergehechtheid die de leverancier goedkeurt. Dit omvat bestanden met specifieke extensies (&amp;ast;.dat, &amp;ast;.xml), specifieke namen (gegevens) en samengestelde expressies in de naam en de extensie (.[dD][aA]&#39;port&#39;). De standaardwaarde is &amp;last;.&amp;ast;..
 
 **Ontvangers van geslaagde taak:** Een of meer e-mailadressen die worden gebruikt om e-mailberichten te verzenden om aan te geven dat taken zijn geslaagd. Standaard wordt altijd een bericht met een geslaagde taak verzonden naar de afzender van de oorspronkelijke taak. Er worden maximaal 100 ontvangers ondersteund. Laat dit veld leeg als u deze instelling wilt uitschakelen.
 
@@ -106,7 +104,7 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **POP3/IMAP SSL ingeschakeld:** Als deze optie is geselecteerd, wordt SSL ingeschakeld.
 
-**SMTP-host:** De hostnaam van de mailserver die de e-mailprovider gebruikt om resultaten en foutberichten te verzenden. Bijvoorbeeld mail.voorbeeld.com.
+**SMTP-host:** De hostnaam van de mailserver die de e-mailprovider gebruikt om resultaten en foutberichten te verzenden. Bijvoorbeeld mail.example.com.
 
 **SMTP-poort:** De poort die wordt gebruikt om verbinding te maken met de mailserver. De standaardwaarde is 25.
 
@@ -132,7 +130,7 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **Fout in e-mailhoofdtekst:** Laat u toe om de eerste lijn in de lichaamstekst van mislukkings e-mailberichten te specificeren die voor dit eindpunt worden verzonden.
 
-**E-mailoverzicht:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de formulierserver hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
+**E-mailoverzichtsgegevens:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de formulierserver hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
 
 **Valideer Inbox alvorens dit eindpunt tot stand te brengen/bij te werken:** Als deze optie is geselecteerd, controleert de formulierserver of de SMTP/POP3-instellingen correct zijn voordat het eindpunt wordt gemaakt. Wanneer u op Toevoegen klikt, wordt een bericht weergegeven waarin wordt aangegeven of de Postvak IN-account geldig is. Als deze optie niet is geselecteerd, maakt de AEM-formulierserver het eindpunt zonder het postvak in te vullen.
 
@@ -162,9 +160,9 @@ Gebruik de volgende montages om een e-maileindpunt te vormen.
 
 **Domeinnaam:** Een verplichte instelling; dit is het domein van de gebruiker. De standaardwaarde is DefaultDom.
 
-**Domeinpatroon:** Geeft de domeinpatronen aan van binnenkomende e-mailberichten die de provider accepteert. Als bijvoorbeeld adobe.com wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt. E-mail van andere domeinen wordt genegeerd.
+**Domeinpatroon:** Geeft de domeinpatronen aan van binnenkomende e-mailberichten die de provider accepteert. Als bijvoorbeeld adobe.com wordt gebruikt, wordt alleen e-mail van adobe.com verwerkt; e-mail van andere domeinen wordt genegeerd.
 
-**Bestandspatroon:** Hiermee worden de inkomende patronen voor bestandsbijlagen opgegeven die de provider accepteert. Dit omvat bestanden met specifieke extensies (&amp;ast;.dat, &amp;ast;.xml), specifieke namen (gegevens) of samengestelde expressies in de naam en extensie (&amp;ast;..[dD][aA]&#39;port&#39;).
+**Bestandspatroon** Hiermee worden de inkomende patronen voor bestandsbijlagen opgegeven die de provider accepteert. Dit omvat bestanden met specifieke extensies (&amp;ast;.dat, &amp;ast;.xml), specifieke namen (gegevens) of samengestelde expressies in de naam en extensie (&amp;ast;..[dD][aA]&#39;port&#39;).
 
 **Ontvangers van geslaagde taak:** Een e-mailadres waarnaar berichten worden verzonden om aan te geven dat taken zijn gelukt. Standaard wordt altijd een bericht met een geslaagde taak naar de afzender verzonden. Als u de afzender typt, worden de e-mailresultaten verzonden naar de afzender. Er worden maximaal 100 ontvangers ondersteund. Geef extra ontvangers op met e-mailadressen, gescheiden door komma&#39;s (,).
 
@@ -222,7 +220,7 @@ De standaardwaarde is asynchroon.
 
 **Fout in e-mailhoofdtekst:** Laat u toe om de eerste lijn in de lichaamstekst van mislukkings e-mailberichten te specificeren die voor dit eindpunt worden verzonden.
 
-**E-mailoverzicht:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de formulierserver hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
+**E-mailoverzichtsgegevens:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de formulierserver hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
 
 **Valideer Inbox alvorens dit eindpunt tot stand te brengen/bij te werken:** Als deze optie is geselecteerd, controleert de formulierserver of de SMTP/POP3-instellingen correct zijn voordat het eindpunt wordt gemaakt. Wanneer u op Toevoegen klikt, wordt een bericht weergegeven waarin wordt aangegeven of de Postvak IN-account geldig is. Als deze optie niet is geselecteerd, maakt de AEM-formulierserver het eindpunt zonder het postvak in te vullen.
 
@@ -232,7 +230,7 @@ De standaardwaarde is asynchroon.
 
 **Letterlijk:** Het e-mailbericht gebruikt de waarde die in het veld wordt ingevoerd terwijl het wordt weergegeven.
 
-**Variabele:** U kunt een tekenreeks toewijzen aan het e-mailadres van het onderwerp, de tekst, de koptekst of de afzender. Hiervoor gebruikt u een van de volgende trefwoorden: %SUBJECT%, %BODY%, %HEADER% of %SENDER%. Als u bijvoorbeeld %SUBJECT% gebruikt, wordt de inhoud van het e-mailonderwerp gebruikt als invoerparameter. Als u bijlagen wilt ophalen, voert u een bestandspatroon in dat het e-maileindpunt kan gebruiken om de bijgevoegde documenten te selecteren. Als u bijvoorbeeld &amp;last;.pdf opgeeft, worden alle bijgevoegde documenten met de bestandsnaamextensie .pdf geselecteerd. &amp;Startpunt; selecteert een bijgevoegd document. Als u example.pdf invoert, worden alle gekoppelde documenten met de naam example.pdf geselecteerd.
+**Variabele:** U kunt een tekenreeks toewijzen aan het e-mailadres van het onderwerp, de tekst, de koptekst of de afzender. Gebruik hiervoor een van de volgende trefwoorden: %SUBJECT%, %BODY%, %HEADER% of %SENDER%. Als u bijvoorbeeld %SUBJECT% gebruikt, wordt de inhoud van het e-mailonderwerp gebruikt als invoerparameter. Als u bijlagen wilt ophalen, voert u een bestandspatroon in dat het e-maileindpunt kan gebruiken om de bijgevoegde documenten te selecteren. Als u bijvoorbeeld &amp;last;.pdf opgeeft, worden alle bijgevoegde documenten met de bestandsnaamextensie .pdf geselecteerd. &amp;Bezig met invoeren van snelheid; selecteert bijgevoegd document. Als u example.pdf invoert, worden alle gekoppelde documenten met de naam example.pdf geselecteerd.
 
 **Toewijzingen uitvoerparameter:** Gebruikt om de output van de dienst en de verrichting te vormen. De volgende tekens in de toewijzingswaarden van de uitvoerparameter worden uitgebreid in de bestandsnaam van de bijlage:
 
@@ -246,7 +244,7 @@ Elke keer dat de backslash (\) voorkomt, wordt vervangen door %%.
 
 De volgende waarden zijn beschikbaar:
 
-**Enkel object:** De e-mailprovider heeft niet de bestemming van de bronmap; resultaten worden geretourneerd als bijlagen. Het patroon is Result/%F.ps en retourneert Result%%sourcefilename.ps als de bestandsbijlage.
+**Enkel object:** De e-mailprovider heeft niet de bestemming van de bronmap; de resultaten worden geretourneerd als bijlagen. Het patroon is Result/%F.ps en retourneert Result%%sourcefilename.ps als de bestandsbijlage.
 
 **Lijst:** Het patroon is Resultaat/%F/ en retourneert Result%%sourcefilename%%file1 als de bestandsbijlage.
 
@@ -261,7 +259,7 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 1. Selecteer op het tabblad Eindpunten de optie E-mail in de vervolgkeuzelijst en klik op Toevoegen.
 1. Typ de hostnaam of het IP-adres van de mailserver in het vak Inbox-host.
 1. Typ in het vak Inbox-gebruiker de gebruikersnaam die is vereist voor aanmelding bij de e-mailaccount die u hebt gemaakt voor de verwerking van formulierverzendingen. Afhankelijk van de e-mailserver en configuratie kan deze naam alleen het onderdeel met de gebruikersnaam van de e-mail zijn of het volledige e-mailadres.
-1. Typ het wachtwoord voor de Postvak In in het vak Wachtwoord Postvak IN.
+1. Typ in het vak Wachtwoord Postvak IN het wachtwoord voor de Postvak In-gebruiker.
 1. Typ in het vak SMTP-host de hostnaam of het IP-adres van de mailserver waarvan de e-mailprovider de resultaten en foutberichten verzendt.
 1. Typ in het vak SMTP-gebruiker de gebruikersaccount voor de e-mailprovider die moet worden gebruikt wanneer deze e-mail verzendt voor resultaten en fouten. Dit gebruikersaccount kan dezelfde waarde zijn als voor Inbox-gebruiker.
 1. Typ in het vak SMTP-wachtwoord het wachtwoord voor de SMTP-account.
@@ -269,5 +267,5 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 1. Selecteer Variabele en typ in de lijst Bijlage `*.*` in het aangrenzende vak. Dit verzendt alle gehechtheid van de binnenkomende postberichten naar een kaartvariabele voor het Volledige proces van de Taak.
 1. Selecteer in de lijst MailBody de variabele en typ `%BODY%` in het aangrenzende vak.
 1. Selecteer Variabele in de lijst MailFrom en typ `%SENDER%` in het aangrenzende vak. Dit brengt het afzenderadres aan de Volledige het procesgegevens van de Taak in kaart.
-1. Typ in het vak Resultaten `results`. Dit veroorzaakt de Volledige Taak of Proces van het Begin om een resultaatkoord terug te keren.
-1. Klik op Toevoegen.
+1. Typ in het vak Resultaten `results`. Dit veroorzaakt de Volledige Taak of het Proces van het Begin om een resultaatkoord terug te keren.
+1. Klik toevoegen.

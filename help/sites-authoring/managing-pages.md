@@ -2,10 +2,10 @@
 title: Pagina's maken en ordenen met AEM
 description: Leer hoe u pagina's maakt en beheert met Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '2526'
-ht-degree: 3%
+source-wordcount: '2436'
+ht-degree: 4%
 
 ---
 
@@ -378,18 +378,13 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 #### Asynchrone handelingen {#asynchronous-actions}
 
-Normaal gesproken wordt de handeling Pagina verplaatsen of Naam wijzigen onmiddellijk uitgevoerd. Dit wordt beschouwd als synchrone verwerking en verdere actie in UI wordt geblokkeerd tot de actie volledig is.
+Handelingen voor het verplaatsen van pagina&#39;s worden altijd asynchroon verwerkt, zodat de gebruiker de bewerkingen in de gebruikersinterface ongehinderd kan voortzetten.
 
-Als het aantal pagina&#39;s waarop de actie betrekking heeft echter boven een gedefinieerde limiet ligt, wordt de actie asynchroon verwerkt, zodat de gebruiker het ontwerpen in de gebruikersinterface kan voortzetten zonder dat dit wordt belemmerd door de actie Verplaatsen of Naam wijzigen van de pagina.
+* De gebruiker moet definiëren wanneer de asynchrone bewerking moet worden uitgevoerd
+   * **Nu** Hiermee wordt direct begonnen met de uitvoering van de asynchrone taak.
+   * **Later** Hiermee kan de gebruiker definiëren wanneer de asynchrone taak wordt gestart.
 
-* Wanneer u klikt **Verplaatsen** in de laatste stap hierboven, controleert AEM de gevormde grens.
-* Als het aantal pagina&#39;s waarop de actie betrekking heeft, onder de limiet ligt, wordt een synchrone bewerking uitgevoerd.
-* Als het aantal pagina&#39;s waarop de actie betrekking heeft, boven de limiet ligt, wordt een asynchrone bewerking uitgevoerd.
-   * De gebruiker moet definiëren wanneer de asynchrone bewerking moet worden uitgevoerd
-      * **Nu** Hiermee wordt direct begonnen met de uitvoering van de asynchrone taak.
-      * **Later** Hiermee kan de gebruiker definiëren wanneer de asynchrone taak wordt gestart.
-
-        ![Asynchrone verplaatsing van pagina](assets/asynchronous-page-move.png)
+  ![Asynchrone verplaatsing van pagina](assets/asynchronous-page-move.png)
 
 De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Taken**
 

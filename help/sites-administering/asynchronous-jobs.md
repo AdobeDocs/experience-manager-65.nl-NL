@@ -2,9 +2,9 @@
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '724'
 ht-degree: 96%
 
 ---
@@ -19,7 +19,6 @@ Deze bewerkingen omvatten:
 * Veel assets verplaatsen, of assets met veel verwijzingen verplaatsen
 * Metadata van assets bulksgewijs exporteren/importeren
 * Assets die boven de ingestelde drempelwaarde liggen, importeren vanaf een externe Experience Manager-implementatie
-* Pagina’s verplaatsen
 * Actieve exemplaren uitrollen
 
 U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Job Status]**-dashboard via **Algemene navigatie** -> **Tools** -> **Bewerkingen** -> **Taken**.
@@ -113,19 +112,6 @@ Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt
 1. Geef in het vak **[!UICONTROL Threshold number of assets/references]** het drempelaantal assets/mappen of verwijzingen op voor de asynchrone verwerkings- of verplaatsingsbewerkingen.
 
    ![Drempel voor verplaatsing van assets](assets/async-move-threshold.png)
-
-1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. succes bijvoorbeeld, mislukt.
-1. Sla de wijzigingen op.
-
-### Asynchrone verplaatsingsbewerkingen van pagina’s configureren {#configuring-asynchronous-page-move-operations}
-
-Als het aantal te verplaatsen pagina’s de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
-
-1. Klik vanuit Algemene navigatie op **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-1. Open vanuit de webconsole de **[!UICONTROL Async Page Move Operation Job Processing Configuration.]**
-1. Geef in het veld **[!UICONTROL Threshold number of references]** het drempelaantal verwijzingen op voor asynchrone verwerking van paginaverplaatsingsbewerkingen.
-
-   ![Drempel voor verplaatsing van pagina’s](assets/async-page-move.png)
 
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. succes bijvoorbeeld, mislukt.
 1. Sla de wijzigingen op.

@@ -1,15 +1,15 @@
 ---
-title: De vertalingsconnector configureren
+title: De vertaalintegratie configureren
 description: Leer hoe u verbinding AEM maken met een vertaalservice.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1164'
 ht-degree: 0%
 
 ---
 
-# De vertalingsconnector configureren {#configure-connector}
+# De vertaalintegratie configureren {#configure-integration}
 
 Leer hoe u verbinding AEM maken met een vertaalservice.
 
@@ -25,7 +25,7 @@ Dit artikel bouwt op die grondbeginselen voort zodat kunt u de eerste configurat
 
 ## Doelstelling {#objective}
 
-Dit document helpt u te begrijpen hoe te opstelling een AEM schakelaar aan uw gekozen vertaaldienst. Na het lezen moet u:
+Dit document helpt u te begrijpen hoe u een AEM integratie aan uw gekozen vertaaldienst plaatst. Na het lezen moet u:
 
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
@@ -34,7 +34,7 @@ Dit document helpt u te begrijpen hoe te opstelling een AEM schakelaar aan uw ge
 
 AEM TIF (Translation Integration Framework) integreert met vertaalservices van derden om de vertaling van AEM inhoud te ordenen. Het gaat om drie basisstappen.
 
-1. Verbind met uw vertaaldienstverlener.
+1. Maak verbinding met uw vertaalserviceprovider.
 1. Creeer een configuratie van het Kader van de Integratie van de Vertaling.
 1. Koppel de configuratie aan uw inhoud.
 
@@ -64,13 +64,13 @@ Als u een andere leverancier kiest, moet uw beheerder het aansluitingspakket ins
 
 Nadat het schakelaarpakket voor uw aangewezen vertaaldienst wordt geïnstalleerd, moet u een configuratie van het Kader van de Integratie van de Vertaling voor die dienst tot stand brengen. De configuratie bevat de volgende informatie:
 
-* Welke vertaalserviceprovider moet worden gebruikt
+* Welke vertaalserviceprovider moet worden gebruikt?
 * Of het vertalen van mensen of machines moet worden uitgevoerd
 * Of andere inhoud die aan het inhoudsfragment is gekoppeld, zoals tags, moet worden vertaald
 
 Een nieuwe vertaalconfiguratie maken:
 
-1. Klik of tik op **Gereedschappen** -> **Cloud Services** -> **Cloud Services voor vertaling**.
+1. Klik of tik op **Gereedschappen** -> **Cloud Servicen** -> **Cloud Servicen voor vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
    * In dit geval zou een configuratie globaal kunnen worden gemaakt om op alle inhoud, of enkel voor het WKND project van toepassing te zijn.
 
@@ -78,7 +78,7 @@ Een nieuwe vertaalconfiguratie maken:
 
 1. Geef de volgende informatie op in de velden en klik of tik op **Maken**.
    1. Selecteren **Configuratietype** in de vervolgkeuzelijst. Selecteren **Translation Integration** in de lijst.
-   1. Voer een **Titel** voor uw configuratie. De **Titel** identificeert de configuratie in **Cloud Services** console en in drop-down lijsten van het paginabezit.
+   1. Voer een **Titel** voor uw configuratie. De **Titel** identificeert de configuratie in de **Cloud Servicen** console en in drop-down lijsten van het paginabezit.
    1. Typ desgewenst een **Naam** om te gebruiken voor het gegevensopslagknooppunt dat de configuratie opslaat.
 
    ![Vertaalconfiguratie maken](assets/create-translation-configuration.png)
@@ -116,7 +116,7 @@ Navigeer hiertoe naar de hoofdtaalmap van de inhoud. Voor ons voorbeelddoel is d
 
 1. Ga naar de globale navigatie en ga naar **Navigatie** -> **Activa** -> **Bestanden**.
 1. Selecteer in de middelenconsole de hoofdtaal die u wilt configureren en klik of tik op **Eigenschappen**.
-1. Tik of klik op de knop **Cloud Services** tab.
+1. Tik of klik op de knop **Cloud Servicen** tab.
 1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** dropdown, selecteer uw schakelaar. Het moet in het vervolgkeuzemenu worden weergegeven wanneer u het pakket als [hierboven beschreven.](#connect-translation-provider)
 1. Onder **Configuraties van Cloud Servicen** in de **Configuratie toevoegen** ook uw configuratie selecteren.
 1. Tik of klik op **Opslaan en sluiten**.
@@ -130,11 +130,11 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM doorlopende vertaaltocht door het document opnieuw te bekijken [Vertaalregels configureren,](translation-rules.md) Hier leert u hoe u definieert welke inhoud u wilt vertalen.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Vertaalregels configureren,](translation-rules.md) Hier leert u hoe u definieert welke inhoud u wilt vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 
 U kunt het beste naar het volgende gedeelte van de reis zonder kop gaan door het document te bekijken [Vertaalregels configureren](translation-rules.md) hieronder volgen enkele aanvullende , optionele bronnen die dieper ingaan op bepaalde in dit document genoemde concepten , maar die niet nodig zijn om verder te gaan op de weg zonder kop .
 
-* [Het framework voor vertaalintegratie configureren](/help/sites-administering/tc-tic.md) - Een lijst met geselecteerde vertaalconnectors bekijken en leren hoe u het vertaalintegratieframework kunt configureren voor integratie met vertaalservices van derden.
-* [Verbinding maken met Microsoft Translator](/help/sites-administering/tc-msconf.md) - AEM levert een Microsoft Translation-account voor testdoeleinden.
+* [Het Kader voor de Integratie van de Vertaling vormen](/help/sites-administering/tc-tic.md) - Een lijst met geselecteerde vertaalconnectors bekijken en leren hoe u het vertaalintegratieframework kunt configureren voor integratie met vertaalservices van derden.
+* [Verbinding maken met Microsoft Translator](/help/sites-administering/tc-msconf.md) - AEM verstrekt een proefrekening van Microsoft Vertaling voor testdoeleinden.

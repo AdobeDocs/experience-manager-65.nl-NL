@@ -2,7 +2,7 @@
 title: Inhoud vertalen
 description: Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: 29fb61f9fdcb72864068662d935bc01779b9e451
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '2163'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Inhoud vertalen {#translate-content}
 
-Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
+Gebruik de vertaalintegratie en de regels om uw inhoud zonder kop te vertalen.
 
 ## Het verhaal tot nu toe {#story-so-far}
 

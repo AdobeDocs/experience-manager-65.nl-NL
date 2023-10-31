@@ -2,7 +2,7 @@
 title: Ga aan de slag met AEM headless vertaling
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 947b17a82f704a244e7fdc710cfa9df50c64f46b
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '1495'
 ht-degree: 0%
@@ -180,7 +180,7 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp hoe AEM inhoud zonder kop opslaat.
 * Wees vertrouwd met AEM vertaalhulpmiddelen.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [De vertaalaansluiting configureren](configure-connector.md) waar u leert hoe u AEM kunt maken met een vertaalservice.|
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [De vertaalintegratie configureren](configure-connector.md) waar u leert hoe u AEM kunt maken met een vertaalservice.|
 
 ## Aanvullende bronnen {#additional-resources}
 

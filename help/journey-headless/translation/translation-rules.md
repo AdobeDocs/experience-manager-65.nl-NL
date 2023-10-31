@@ -2,7 +2,7 @@
 title: Vertaalregels configureren
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
 workflow-type: tm+mt
 source-wordcount: '871'
 ht-degree: 0%
@@ -15,12 +15,12 @@ Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 
 ## Het verhaal tot nu toe {#story-so-far}
 
-In het vorige document van de AEM zonder kop [Vertaalaansluiting configureren](configure-connector.md) u leerde hoe te om uw vertaalschakelaar te installeren en te vormen en zou nu moeten:
+In het vorige document van de AEM zonder kop [Vertaalintegratie configureren](configure-connector.md) u hebt geleerd hoe u uw vertaalintegratie kunt installeren en configureren en dat u nu moet doen:
 
 * Begrijp de belangrijke parameters van het Kader van de Integratie van de Vertaling in AEM.
 * Uw eigen verbinding met uw vertaalservice instellen.
 
-Nu uw schakelaar opstelling is, neemt dit artikel u door de volgende stap van het identificeren van welke inhoud u moet vertalen.
+Nu uw integratie is ingesteld, wordt in dit artikel stapsgewijs vastgesteld welke inhoud u moet vertalen.
 
 ## Doelstelling {#objective}
 
@@ -92,7 +92,7 @@ Nu u dit deel van de reis zonder kop hebt voltooid, moet u:
 * Begrijp wat de vertaalregels doen.
 * U kunt uw eigen vertaalregels definiëren.
 
-Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Inhoud vertalen](translate-content.md) waar u zult leren hoe uw schakelaar en regels samenwerken om hoofdloze inhoud te vertalen.
+Gebaseerd op deze kennis en doorgaan met uw AEM reis zonder hoofd door het document opnieuw te bekijken [Inhoud vertalen](translate-content.md) waar u zult leren hoe uw integratie en regels samenwerken om inhoud zonder kop te vertalen.
 
 ## Aanvullende bronnen {#additional-resources}
 

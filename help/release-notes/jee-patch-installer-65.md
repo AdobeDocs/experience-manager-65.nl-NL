@@ -57,11 +57,11 @@ Navigeer aan de aangewezen folder, en van een bevelherinnering, type `./aem65_cf
 
    * U kunt de selectie van de **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. Voor uitvoering **Configuratiebeheer** gebruiken **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer naar *`<AEMForms_Install_Dir>\configurationManager\bin`* directory en replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) en [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) bestanden.
 
-   
-   >[!NOTE]
+   >>
+   [!NOTE]
+   >>
+   Gebruiken **ConfigurationManager.bat** kunt u voorkomen dat de naam van de .lax-bestanden handmatig wordt bijgewerkt.
    >
-   >Gebruiken **ConfigurationManager.bat** kunt u voorkomen dat de naam van de .lax-bestanden handmatig wordt bijgewerkt.
-   
 
 1. **[Alleen voor Unix]:**
 

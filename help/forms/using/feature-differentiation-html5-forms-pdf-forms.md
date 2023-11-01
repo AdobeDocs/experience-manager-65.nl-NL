@@ -1,18 +1,16 @@
 ---
 title: Verschil tussen HTML5-formulieren en PDF forms
-description: Meer informatie over de verschillen tussen HTML5-formulieren en PDF forms.
-uuid: 6ddee197-d108-4897-9976-77d115a06504
+description: Meer informatie over de functieverschillen tussen HTML5-formulieren en PDF forms.
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: bdd97c20-d1f2-4898-9862-1a6a8071be88
 docset: aem65
 feature: Mobile Forms
 exl-id: 3150f95f-7150-4eee-b5a9-121422dec2a1
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '447'
 ht-degree: 1%
 
 ---
@@ -50,7 +48,7 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
   </tr>
   <tr>
    <td>Paginering<br /> </td>
-   <td><p>Een HTML5-formulier is verdeeld in deelvensters en vakken, zodat het er net zo uitziet als PDF forms. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen en wordt er geen lege ruimte (spatie) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td>
+   <td><p>Een HTML5-formulier is verdeeld in deelvensters en vakken, zodat het er net zo uitziet als PDF forms. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen. Er wordt geen lege ruimte (lege ruimte) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier wordt verwijderd of gemarkeerd als verborgen, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td>
    <td>Paginering in PDF is afhankelijk van samengevoegde gegevensinhoud of van gebruikersinhoud en het aantal pagina's wordt op basis daarvan verhoogd/verlaagd.</td>
   </tr>
   <tr>
@@ -65,7 +63,7 @@ In de volgende tabel wordt de ondersteuning aangegeven die wordt geboden voor HT
   </tr>
   <tr>
    <td>XFA Script API</td>
-   <td>Ondersteunt de meestgebruikte XFA-scriptconstructies. Zie voor meer informatie over ondersteunde constructies <a href="/help/forms/using/scripting-support.md">scriptondersteuning</a>.</td>
+   <td>Ondersteunt de meestgebruikte XFA-scriptconstructies. Zie voor een gedetailleerd overzicht van ondersteunde constructies <a href="/help/forms/using/scripting-support.md">scriptondersteuning</a>.</td>
    <td>Ondersteunt alle XFA-scriptconstructies.</td>
   </tr>
   <tr>

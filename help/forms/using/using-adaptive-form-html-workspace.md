@@ -1,14 +1,12 @@
 ---
 title: Een adaptief formulier gebruiken in HTML Workspace
-description: Leer een adaptief formulier te gebruiken in de HTML Workspace om veldwerkers toegang te geven tot het formulier op hun apparaten.
-uuid: 473d5daf-a3ed-449f-9136-585755b59922
+description: Leer hoe u een adaptief formulier gebruikt in de HTML Workspace waarmee veldwerkers het formulier op hun apparaten kunnen openen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2b6875cd-2ee7-4aa8-90c7-d33583dc2f0e
 docset: aem65
 exl-id: 15b9ae98-059f-4bf7-bfdd-9cfeb8eb30a4
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -19,7 +17,7 @@ ht-degree: 0%
 
 AEM Forms on JEE biedt de mogelijkheid om een adaptief formulier te gebruiken in HTML Workspace.
 
-Aangezien u tijdens het ontwerpen van processen een XDP kunt selecteren, is de mogelijkheid om vanuit een bestaande adaptieve AEM opslagplaats te bladeren toegevoegd. Het vermogen geeft de ontwerper van het Proces de capaciteit om een adaptief vorm in BeginPunt evenals in Taak te vormen.
+Aangezien u tijdens het ontwerpen van processen een XDP kunt selecteren, is de mogelijkheid om vanuit een bestaande adaptieve AEM opslagplaats te bladeren toegevoegd. De mogelijkheid biedt de Process Designer de mogelijkheid om een adaptief formulier te configureren in Startpunt en Taken.
 
 ## Procesontwerpervaring {#process-design-experience}
 
@@ -37,17 +35,17 @@ Omdat adaptieve formulieren zich in de AEM opslagplaats bevinden, bevat de expor
 
 HTML Workspace biedt naast de besturingselementen voor mobiele formulieren ook enkele adaptieve formulierspecifieke besturingselementen. Een gebruiker kan bijlagen toevoegen, opslaan, ondertekenen, verzenden en in de HTML Workspace door de aangepaste formulieren navigeren wanneer de gebruiker een taak of beginpunt opent. Hieronder worden de specifieke kenmerken beschreven:
 
-1. Voor het bijvoegen van bestanden gebruikt u Taakbijlagen, net als bij Mobile Forms. Een knop van het type bestandsbijlage van het adaptieve formulier is verborgen.
+1. Als u bestanden wilt bijvoegen, gebruikt u Taakbijlagen, net als bij Mobile Forms. Een knop van het type bestandsbijlage van het adaptieve formulier is verborgen.
 
 1. Als u een aangepast formulier wilt opslaan, klikt u op **Opslaan**, zoals ook het geval was in Mobile Forms. Elke knop voor het type Opslaan van het adaptieve formulier is verborgen.
 
 1. Als u een adaptief formulier wilt verzenden, gebruikt u de **Verzenden** beschikbare knop- of routeacties, zoals het geval was in Mobile Forms. De knop Verzendtype van het adaptieve formulier is verborgen.
 
-1. **Zichtbaarheid van de werkbalk Adaptief formulier wereldwijd**: Als de procesontwerper de algemene werkbalk of de werkbalk op hoofdniveau verbergt, worden de werkbalk en de knoppen niet weergegeven op adaptieve formulieren.
+1. **Zichtbaarheid van de werkbalk Adaptief formulier wereldwijd**: Als in Process Designer de algemene werkbalk/werkbalk op hoofdniveau wordt verborgen, worden de werkbalk en de knoppen niet weergegeven op adaptieve formulieren.
 
-1. **Workspace navigation controls for Adaptive Forms**: De knoppen Volgende/Vorige zijn beschikbaar samen met de knoppen Opslaan, Verzenden en Route Handeling voor een adaptief formulier in de HTML Workspace. Klik op de knoppen Volgende/Vorige om in de HTML Workspace te navigeren door deelvensters met adaptieve formulieren. De knoppen Volgende/Vorige bieden diepgaande navigatie, vergelijkbaar met navigatiebesturingselementen in de weergave Mobiel van adaptieve formulieren.
+1. **Workspace navigation controls for Adaptive Forms**: De knoppen Volgende/Vorige zijn beschikbaar samen met de knoppen Opslaan, Verzenden en Route Handeling voor een adaptief formulier in de HTML Workspace. Klik op de knoppen Volgende/Vorige om door de deelvensters met adaptieve formulieren te navigeren in de HTML Workspace. De knoppen Volgende/Vorige bieden diepgaande navigatie, vergelijkbaar met navigatiebesturingselementen in de weergave Mobiel van adaptieve formulieren.
 
-1. **eSign Services en Samenvattingscomponent van adaptief formulier**: De component Summary is niet operationeel in de werkruimte HTML. Met andere woorden, als een adaptief formulier een overzichtscomponent heeft, is het niet zichtbaar in de werkruimte. In plaats van Automatisch verzenden in de component Esign, klikt de werkruimteconstructie de Submit of een routeactie in de Werkruimte van de HTML. Nadat een document is ondertekend, is het zichtbaar als een vlak ondertekend document. Klikken **Verzenden** of een routeactie om de taak of het Punt van het Begin te sluiten/te voltooien.\
+1. **eSign Services en Samenvattingscomponent van adaptief formulier**: De component Summary is niet operationeel in de werkruimte HTML. Met andere woorden, als een adaptief formulier een overzichtscomponent heeft, is het niet zichtbaar in de werkruimte. In plaats van Automatisch verzenden in de component E-sign, klikt de werkruimteconstructie de Submit of een routeactie in de Werkruimte van de HTML. Nadat een document is ondertekend, is het zichtbaar als een vlak ondertekend document. Klikken **Verzenden** of een routeactie zodat kunt u de taak of het Punt van het Begin sluiten/voltooien.\
    Het ondertekende document wordt verzameld van de eSign-serviceserver en het data-xml-bestand wordt doorgestuurd naar de volgende stap in het proces.
 
 ## Stappen voor het gebruik van adaptieve formulieren in procesontwerp {#steps-to-use-adaptive-forms-in-process-design}
@@ -58,13 +56,13 @@ HTML Workspace biedt naast de besturingselementen voor mobiele formulieren ook e
 
    ![Nieuwe toepassing maken](assets/create_new_appl.png)
 
-   Nieuwe toepassing maken
+   Toepassing maken
 
 1. Maak een proces of gebruik een bestaand proces in de toepassing.
 
    ![Nieuw proces maken](assets/create_new_process.png)
 
-   Nieuw proces maken
+   Proces maken
 
 1. Creeer een Punt van het Begin of wijs Taak toe en klik het tweemaal.
 1. Onder de **[!UICONTROL Presentation & Data]** sectie, selecteert u **[!UICONTROL use a CRX asset]** en klik op de ellipsen vóór het element.

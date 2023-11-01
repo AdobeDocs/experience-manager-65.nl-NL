@@ -1,15 +1,13 @@
 ---
 title: Correspondentenbeheer | Gebruikersgegevens verwerken
-description: Correspondentiebeheer en verwerking van gebruikersgegevens in AEM Forms-omgeving.
-uuid: d5bb190b-d668-4da3-95da-b7705ad302d9
+description: Meer informatie over Correspondence Management en het verwerken van gebruikersgegevens in een Adobe Experience Manager Forms-omgeving.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 764d8e0d-604d-4c7b-89cd-7686ce5f03ff
 role: Admin
 exl-id: a0c6a02c-47a3-4e70-a14c-953ee016b8e4
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -73,7 +71,7 @@ U kunt tot ontwerp en voorgelegde brievengegevens in de gevormde gegevensopslag 
 
 Correspondentiebeheer biedt API&#39;s die u kunt gebruiken om concepten en verzonden brieven te zoeken en te openen. Met behulp van de API&#39;s kunt u lettervarianten zoeken en openen met de id van het lettertype of de gebruiker die de correspondentie heeft opgeslagen of verzonden. Zie voor meer informatie [API&#39;s voor toegang tot lettervarianten](/help/forms/using/cm-apis-to-access-letter-instances.md).
 
-U kunt ook met behulp van CRX DELite naar de letter-instantie in AEM opslagplaats navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslagplaats.
+U kunt ook met CRXDE Lite naar de letter-instantie in AEM repository navigeren. Zie [Gebruikersgegevens en gegevensopslag](/help/forms/using/correspondence-management-handling-user-data.md#data) voor informatie over opgeslagen gegevens en opslagplaats.
 
 ### Gebruikersgegevens verwijderen {#delete-user-data}
 

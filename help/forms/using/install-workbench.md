@@ -1,13 +1,13 @@
 ---
 title: Workbench installeren
-description: Installeren, verwijderen, configureren, beheren of implementeren van AEM Forms Workbench.
+description: Leer hoe u AEM Forms Workbench kunt installeren, verwijderen, configureren, beheren of implementeren.
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 role: Admin
 exl-id: d530dbb9-f95e-4329-9665-37faf8f7931b
-source-git-commit: ad5d98c5519cda29cecde54a880958bae81c4764
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '2238'
+source-wordcount: '2242'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,9 @@ De volgende minimale vereisten worden aanbevolen: schijfruimte voor installatie:
 >
 >Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
 
-* Hardwarevereisten: Intel® Pentium® 4- of AMD®-equivalent, 1 GHz-processor.
+* Hardwarevereisten: Intel® Pentium® 4- of AMD®-equivalent, 1-GHz processor.
 * Java™ Runtime Environment (JRE) 7.0 werkt 51 of hoger bij naar 7.0.
-* Monitorresolutie van minimaal 1024 x 768 pixels met 16-bits kleur of hoger.
+* Minimaal 1024 x 768 pixels of meer bij een monitorresolutie van 16 bits of hoger.
 * TCP/IPv4- of TCP/IPv6-netwerkverbinding met de AEM Forms Server.
 * Installeer Visuele C++ Redistributable runtime Pakketten 2012 met 32 bits.
 * Installeer Visuele C++ Redistributable runtime Pakketten 2013 met 32 bits.
@@ -119,7 +119,7 @@ Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar best
   </tr>
   <tr>
    <td><p>Designer (zelfstandig)</p> </td>
-   <td><p>Geen. <br />De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. <br />Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd met het Workbench-installatieprogramma, gepatcheerd. Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> </p> </td>
+   <td><p>Geen. <br />De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. <br />Het installatieprogramma van Workbench installeert geen nieuwe versie van Designer opnieuw. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd bij het Workbench-installatieprogramma, patcheerd. Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> </p> </td>
   </tr>
  </tbody>
 </table>
@@ -167,7 +167,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
    Het pad naar de installatiemap mag geen # (pound)- en $ (dollar)-tekens bevatten.
 
 1. Controleer het overzicht van de voorinstallatie en klik op Installeren. In het installatieprogramma wordt de voortgang van de installatie weergegeven.
-1. Controleer het installatieoverzicht. Selecteer AEM Forms Workbench starten om Workbench te starten en klik op Volgende.
+1. Controleer het installatieoverzicht. Selecteer AEM Forms Workbench starten als u Workbench wilt starten en klik vervolgens op Volgende.
 1. Controleer de opmerkingen bij de release en klik op Gereed.
 1. De volgende items zijn nu op uw computer geïnstalleerd:
    * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Zie voor meer informatie de <a href="https://helpx.adobe.com/content/dam/help/en/experience-manager/6-5/forms/pdf/WorkbenchHelp.pdf">Workbench gebruiken</a> documentatie.
@@ -184,7 +184,7 @@ Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meesta
 
 >[!NOTE]
 >
-Als u AEM Forms zodanig hebt geconfigureerd dat de EMC Documentum® of IBM® FileNet-opslagprovider wordt gebruikt en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in AEM beheerconsole voor formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op als username@Repository.
+Als u AEM Forms hebt geconfigureerd voor gebruik van de EMC Documentum® of IBM® FileNet Repository Provider en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in AEM beheerconsole voor formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op als username@Repository.
 
 ### Instellingen voor time-out configureren {#configuring-timeout-settings}
 
@@ -205,7 +205,7 @@ Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in he
 
    >[!NOTE]
    >
-   Als u het certificaat wilt exporteren, opent u een webbrowser en meldt u zich aan bij de beheerconsole, installeert u het certificaat in de browser en exporteert u het certificaat van de browser naar een tijdelijke opslaglocatie (of rechtstreeks naar de [Workbench_HOME]/workbench/jre/lib/security directory).
+   Als u het certificaat wilt exporteren, opent u een webbrowser en meldt u zich aan bij beheerconsole. Installeer het certificaat in de browser en exporteer het certificaat vanuit de browser naar een tijdelijke opslaglocatie (of rechtstreeks naar de [Workbench_HOME]/workbench/jre/lib/security directory).
 
 1. Het certificaat kopiëren naar de [Workbench_HOME]/workbench/jre/lib/security directory.
 
@@ -224,7 +224,7 @@ Waarbij:
 
 De volgende aspecten van cachebewerkingen moeten in overweging worden genomen als uw toepassing direct unieke sjablonen genereert door XFA-inhoud automatisch bij te werken. In feite gebruikt elke transactie een nieuwe, unieke sjabloon.
 
-Wanneer de de vormengenerator of output naar, of updates, ingangen in het geheime voorgeheugen voor een specifiek vormmalplaatje zoekt, gebruikt het verscheidene zeer belangrijke waarden om van de specifieke geheim voorgeheugeningang de plaats te bepalen die zal worden betreden.
+Wanneer de de vormengenerator of output naar, of updates, ingangen in het geheime voorgeheugen voor een specifiek vormmalplaatje zoekt, gebruikt het verscheidene zeer belangrijke waarden om van de specifieke geheim voorgeheugeningang de plaats te bepalen die wordt betreden.
 
 * **Naam sjabloonbestand**: De locatie en bestandsnaam van de sjabloon die wordt gebruikt als de primaire unieke id van het formulier in de cache.
 * **Tijdstempel**: Het sjabloonbestand bevat een tijdstempel waarmee de laatste updatetijd van het formulier wordt bepaald.
@@ -237,18 +237,21 @@ Wanneer de de vormengenerator of output naar, of updates, ingangen in het geheim
 
 
 De Forms-service ontvangt sjablonen op basis van de bestandsnaam of de locatie in de opslagplaats, of op basis van de waarde als een XML-object in het geheugen.
+
 * **Door verwijzing doorgegeven sjablonen**: Hiermee gebruikt u de hoofdmap van de inhoud en de naam van het formulier. Als unieke sjablonen met verschillende bestandsnamen in elke aanvraag worden doorgegeven met deze methode, groeit de schijfcache eindeloos en wordt deze nooit opnieuw gebruikt. Om dit te voorkomen, zouden de unieke malplaatjes met zelfde filename moeten worden overgegaan om ervoor te zorgen dat het zelfde geheime voorgeheugen voor alle verzoeken wordt bijgewerkt.
-* **Sjablonen doorgegeven via waarde**: Gebruikt sjabloonbytes die samen met de gegevens worden doorgegeven met de parameter theinDataDoc. Als unieke sjablonen met verschillende UUID&#39;s met deze methode worden doorgegeven, groeit de schijfcache eindeloos en wordt deze nooit opnieuw gebruikt. Om dit te verhinderen, zou het attribuut UUID van alle malplaatjes moeten worden gestript om ervoor te zorgen dat geen geheim voorgeheugen voor het malplaatje wordt gecreeerd. Als u dezelfde UUID doorgeeft die niet gelijk is aan null, kunnen de cacheobjecten worden gemaakt, maar wordt gegarandeerd dat dezelfde cache bij elke aanvraag wordt bijgewerkt.
+* **Sjablonen doorgegeven via waarde**: Gebruikt sjabloonbytes die samen met de gegevens worden doorgegeven met de parameter theinDataDoc. Als unieke sjablonen met verschillende UUID met deze methode worden doorgegeven, wordt de schijfcache eindeloos groter en wordt deze nooit opnieuw gebruikt. Om dit te verhinderen, zou het attribuut UUID van alle malplaatjes moeten worden gestript om ervoor te zorgen dat geen geheim voorgeheugen voor het malplaatje wordt gecreeerd. Als u dezelfde UUID doorgeeft die niet gelijk is aan null, kunnen de cacheobjecten worden gemaakt, maar wordt gegarandeerd dat dezelfde cache bij elke aanvraag wordt bijgewerkt.
 
 Als u wilt voorkomen dat de cache eindeloos groeit, moet u rekening houden met de volgende factoren voor het renderen van dynamisch gegenereerde sjablonen met de nieuwe AEM Forms API&#39;s: renderHTMLForm2 en renderPDFForm2.
 
 Wanneer u de nieuwe API&#39;s gebruikt, wordt de sjabloon doorgegeven als een documentobject, dat wordt afgehandeld in de Forms-service op basis van het feit of de sjabloon al dan niet is gepassioneerd.
 
 Houd rekening met de volgende aspecten van gepassiveerde documenten waarin de UUID en de inhoudswortel fungeren als de cachemoets:
+
 * De cache wordt niet gemaakt voor gepassiveerde invoersjablonen zonder UUID.
 * Als meer dan één gepassioneerde inputmalplaatje met de zelfde UUID en inhoudswortel worden overgegaan, dan wordt het zelfde geheime voorgeheugen overschreven.
 
 Houd rekening met het volgende voor niet-gepassiveerde documenten waarbij de bestandsnaam en de hoofdmap van de inhoud als cachesleutel fungeren:
+
 * Voor niet-gepassiveerde invoersjablonen is het in cache plaatsen afhankelijk van de hoofdmap en bestandsnaam van de inhoud waaruit het document is gegenereerd.
 Hetzelfde cachegeheugen wordt alleen gebruikt voor aanvragen met dezelfde hoofdmap en naam van het sjabloon.
 De volgende beste praktijken zorgen ervoor dat het geheime voorgeheugen niet eindeloos groeit wanneer dynamisch geproduceerde malplaatjes worden overgegaan tot de dienst van Forms:
@@ -266,9 +269,11 @@ Met behulp van de XDC Editor kunnen netwerkprinterbeheerders XDC-bestanden (XML 
 Voordat uw beheerder van de netwerkprinter de XDC Editor gebruikt, verplaatst u de voorbeeld-XDC-bestanden en raadpleegt u Apparaatprofielen maken met de XDC Editor.
 
 **De voorbeeld-XDC-bestanden ophalen**:
+
 1. Zoek op de AEM Forms-server de XDC-map op in [AEM Forms root]\sdk\samples\Output\IVS.
 1. Kopieer de inhoud van deze map naar een map die toegankelijk is via het Workbench- of Eclipse-systeem.
 
 **Om de XDC Editor Help te verkrijgen**:
+
 1. Ga naar de AEM Forms documentatiewebsite.
 1. Klik op de knop **Ontwikkelen** en navigeer naar Apparaatprofielen maken met XDC Editor. Download het bestand xdc_editor_help_web.zip en installeer de Help-bestanden aan de hand van de instructies in het bestand Readme.

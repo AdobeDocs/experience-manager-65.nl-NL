@@ -1,37 +1,35 @@
 ---
-title: Componenten en services Java APIQuick Start (SOAP)
-description: U kunt AEM Forms-componenten en -services programmatisch manipuleren met behulp van Java API Quick Start (SOAP).
-uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
+title: Java&trade voor componenten en services; APIQuick Start (SOAP)
+description: Leer hoe u AEM Forms-componenten en -services programmatisch kunt manipuleren met Java&trade; API Quick Start (SOAP).
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
-discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 role: Developer
 exl-id: fe1198b5-4145-4dcd-ab8a-4015daaf89b7
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
 
-# Componenten en services Java API Quick Start (SOAP) {#components-and-services-java-apiquick-start-soap}
+# Componenten en services Java™ API Quick Start (SOAP) {#components-and-services-java-apiquick-start-soap}
 
-Java API Quick Start (SOAP) is beschikbaar voor componenten en services.
+Java™ API Quick Start (SOAP) is beschikbaar voor componenten en services.
 
 
-[Snel starten (SOAP-modus): een component implementeren met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
+[Snel starten (SOAP-modus): een component implementeren met Java](components-services-java-api-quick.md#quick-start-soap-mode-deploying-a-component-using-the-java-api)
 
-[Snel starten (SOAP-modus): de uitvoeringscontext van een service instellen met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
+[Snel starten (SOAP-modus): de uitvoeringscontext van een service instellen met de Java](components-services-java-api-quick.md#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): servicebeveiliging uitschakelen met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
+[Snel starten (SOAP-modus): servicebeveiliging uitschakelen met Java](components-services-java-api-quick.md#quick-start-soap-mode-disabling-service-security-using-the-java-api)
 
-[Snel starten (SOAP-modus): een service starten met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
+[Snel starten (SOAP-modus): een service starten met behulp van Java](components-services-java-api-quick.md#quick-start-soap-mode-starting-a-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): configuratiewaarden voor services wijzigen met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
+[Snel starten (SOAP-modus): serviceconfiguratiewaarden wijzigen met de Java](components-services-java-api-quick.md#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api)
 
-[Snel starten (SOAP-modus): componenten verwijderen met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
+[Snel starten (SOAP-modus): componenten verwijderen met Java](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
@@ -42,15 +40,15 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de server van Forms die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u specifieke paden voor vensters door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang in Programmering met AEM vormen is gebaseerd op de Server die van Forms op JBoss® en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
->Als u een douanecomponent hebt en u de protocollen van de ZEEP of EJB gebruikt om DSCs op de zelfde lokale server aan te halen, en die aanroepen werken na een verbetering, dan gebruik in-VM aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en bouw geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
+Als u een douanecomponent hebt en u de protocollen van de ZEEP of EJB gebruikt om DSCs op de zelfde lokale server aan te halen, en die aanroepen werken na een verbetering, dan gebruik in-VM aanroepingsstrategie. Gebruik de aanroepingsmethode van DSC in-VM met standaardServiceClientFactory en bouw geen ServiceClientFactory gebruikend protocollen SOAP of EJB.
 
-## Snel starten (SOAP-modus): een component implementeren met de Java API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
+## Snel starten (SOAP-modus): een component implementeren met de Java™ API {#quick-start-soap-mode-deploying-a-component-using-the-java-api}
 
-In het volgende Java-voorbeeld wordt een component geïmplementeerd die is gebaseerd op een JAR-bestand met de naam *adobe-emailSample-dsc.jar*.
+In het volgende Java™-voorbeeld wordt een component geïmplementeerd die is gebaseerd op een JAR-bestand met de naam *adobe-emailSample-dsc.jar*.
 
 ```java
  /* 
@@ -150,9 +148,9 @@ In het volgende Java-voorbeeld wordt een component geïmplementeerd die is gebas
  
 ```
 
-## Snel starten (SOAP-modus): de uitvoeringscontext van een service instellen met de Java API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
+## Snel starten (SOAP-modus): de uitvoeringscontext van een service instellen met de Java™ API {#quick-start-soap-mode-setting-the-execution-context-of-a-service-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt de uitvoeringscontext van Run-As Invoker ingesteld op een voorbeeldservice met de naam *EncryptDocument*.
+In het volgende Java™-codevoorbeeld wordt de uitvoeringscontext van Run-As Invoker ingesteld op een voorbeeldservice met de naam *EncryptDocument*.
 
 ```java
  /* 
@@ -242,9 +240,9 @@ In het volgende Java-codevoorbeeld wordt de uitvoeringscontext van Run-As Invoke
  
 ```
 
-## Snel starten (SOAP-modus): servicebeveiliging uitschakelen met de Java API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
+## Snel starten (SOAP-modus): servicebeveiliging uitschakelen met de Java™ API {#quick-start-soap-mode-disabling-service-security-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt de beveiliging uitgeschakeld van de voorbeeldservice EncryptDocument en de services die vanuit deze service worden aangeroepen (de services Waarde instellen en Versleuteling).
+In het volgende Java™-codevoorbeeld worden de beveiliging uitgeschakeld van de voorbeeldservice EncryptDocument en de services die vanuit deze service worden aangeroepen (de services Waarde instellen en Codering).
 
 ```java
  /* 
@@ -355,9 +353,9 @@ In het volgende Java-codevoorbeeld wordt de beveiliging uitgeschakeld van de voo
  
 ```
 
-## Snel starten (SOAP-modus): een service starten met de Java API {#quick-start-soap-mode-starting-a-service-using-the-java-api}
+## Snel starten (SOAP-modus): een service starten met de Java™ API {#quick-start-soap-mode-starting-a-service-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een service gestart met de naam *SendEmailService*.
+Het volgende Java™-codevoorbeeld start een service met de naam *SendEmailService*.
 
 ```java
  package com.adobe.sample.servicemanager; 
@@ -413,9 +411,9 @@ In het volgende Java-codevoorbeeld wordt een service gestart met de naam *SendEm
  
 ```
 
-## Snel starten (SOAP-modus): configuratiewaarden voor services wijzigen met de Java API {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
+## Snel starten (SOAP-modus): Een serviceconfiguratiewaarde wijzigen met de Java™ API {#quick-start-soap-mode-modifying-a-services-configuration-values-using-the-java-api}
 
-In het volgende Java-voorbeeld worden configuratiewaarden gewijzigd die horen bij SendEmail Service.
+In het volgende Java™-voorbeeld worden configuratiewaarden gewijzigd die horen bij SendEmail Service.
 
 ```java
  /* 
@@ -504,7 +502,7 @@ In het volgende Java-voorbeeld worden configuratiewaarden gewijzigd die horen bi
              modService.setConfigParameterAsText("smtpUser","smyUserName");     
              modService.setConfigParameterAsText("smtpPassword","myPassword");     
                       
-             //Modify the service’s configuration values 
+             //Modify the service's configuration values 
              serviceReg.modifyConfiguration(modService); 
                           
              //Conform the new configuration values 
@@ -525,9 +523,9 @@ In het volgende Java-voorbeeld worden configuratiewaarden gewijzigd die horen bi
  
 ```
 
-## Snel starten (SOAP-modus): componenten verwijderen met de Java API {#quick-start-soap-mode-removing-components-using-the-java-api}
+## Snel starten (SOAP-modus): componenten verwijderen met de Java™ API {#quick-start-soap-mode-removing-components-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een component verwijderd met de Java API.
+In het volgende Java™-codevoorbeeld wordt een component verwijderd met de Java™ API.
 
 ```java
  /* 

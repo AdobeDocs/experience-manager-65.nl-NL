@@ -1,17 +1,15 @@
 ---
 title: AEM Forms-processen begrijpen
-description: AEM Forms-processen omvatten het maken, verzenden, verwerken, valideren, integreren, automatiseren van werkstromen en uitvoerbeheer van formulieren.
-uuid: 7cbebe7d-f222-42fa-8eb6-d2443458a791
+description: Leer hoe AEM Forms-processen het maken van formulieren, verzenden, gegevensverwerking, validatie, integratie, workflowautomatisering en uitvoerbeheer omvatten.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: development-tools, coding
-discoiquuid: ac9fe461-63e7-442b-bd1c-eb9576ef55aa
 role: Developer
 exl-id: 434ac316-8a01-43a6-844b-1b792f60fa21
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '814'
 ht-degree: 0%
 
 ---
@@ -40,7 +38,7 @@ Er zijn echter situaties waarin een proces niet synchroon kan worden voltooid va
 
 Met de waarde voor de oproepings-id kunt u de status van het langlevende proces volgen. U kunt bijvoorbeeld de waarde voor de identificatie van de procesaanroep gebruiken om bewerkingen van Process Manager uit te voeren, zoals het beëindigen van een actieve procesinstantie.
 
-**Voorbeeld van een kortlopend proces**
+**Voorbeeld van kortstondig proces**
 
 De volgende afbeelding is een voorbeeld van een kortstondig proces met de naam *MyApplication/EncryptDocument*.
 
@@ -63,7 +61,7 @@ Wanneer dit proces van korte duur wordt aangehaald, voert het de volgende acties
    *Programmeren met AEM formulieren* beschrijft de volgende manieren waarin u dit kortstondige proces programmatically kunt aanhalen:
 
    * [Een kortlopend proces aanroepen door een onbeveiligd document door te geven met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-a-short-lived-process-by-passing-an-unsecure-document-using-remoting) (Flex-toepassingen gebruiken)
-   * [Een kortstondig proces aanroepen met de API voor aanroepen](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java Invocation API)
+   * [Een kortstondig proces aanroepen met de API voor aanroepen](/help/forms/developing/invoking-aem-forms-using-java.md#invoking-a-short-lived-process-using-the-invocation-api) (Java™ Invocation API)
    * [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding) (voorbeeld van webservice)
    * [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom) (voorbeeld van webservice)
    * [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref) (voorbeeld van webservice)

@@ -1,34 +1,34 @@
 ---
-title: Barcoded Forms Service Java APIQuick Start (SOAP)
-description: Met de Barcoded Forms Service Java API Quick Start (SOAP) in AEM Forms kunt u streepjescodes naadloos verwerken.
+title: Barcoded Forms Service Java&trade; API Quick Start (SOAP)
+description: Leer hoe de Barcoded Forms Service Java&trade; API Quick Start (SOAP) in AEM Forms een naadloze verwerking van streepjescodes mogelijk maakt.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 907c12be-dab4-48b5-9da1-a76b711f49f2
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '230'
 ht-degree: 0%
 
 ---
 
-# Barcoded Forms Service Java API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
+# Barcoded Forms Service Java™ API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
-Java API Quick Start (SOAP) is beschikbaar voor de Barcoded Forms-service:
+Java™ API Quick Start (SOAP) is beschikbaar voor de Barcoded Forms-service:
 
-[Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met de Java API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met Java](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss® Application Server en het Microsoft® Windows besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met de Java API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
+## Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met de Java™ API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
-De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` object in een `com.adobe.idp.Document` object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
+De volgende Java™-code decodeert formuliergegevens in een PDF-formulier dat is opgeslagen als Loan.pdf. De gedecodeerde gegevens worden opgeslagen als een XML-bestand met de naam extractedData.xml. In dit codevoorbeeld wordt een `org.w3c.dom.Document` object in een `com.adobe.idp.Document` object. (Zie [Gecodeerde formuliergegevens decoderen](/help/forms/developing/barcoded-forms.md#decoding-barcoded-form-data).)
 
 ```java
  /*
@@ -217,4 +217,4 @@ De volgende Java-code decodeert formuliergegevens die zich bevinden in een PDF-f
 
 >[!NOTE]
 >
->Wanneer u zowel een `org.w3c.dom.Document` object en `com.adobe.idp.Document` in dezelfde toepassingslogica, is het een goede gewoonte om beide objecten volledig te kwalificeren.
+Wanneer u zowel een `org.w3c.dom.Document` object en `com.adobe.idp.Document` in dezelfde toepassingslogica, is het een goede gewoonte om beide objecten volledig te kwalificeren.

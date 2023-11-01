@@ -1,17 +1,15 @@
 ---
 title: Teksteditor aanpassen
-description: Leer hoe u de teksteditor in de AEM Forms-omgeving kunt aanpassen.
-uuid: 598246fe-8f15-49b6-b6d3-9154bebcd27e
+description: Leer hoe u de teksteditor in een Adobe Experience Manager Forms-omgeving aanpast.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 666fee78-a103-44dc-afe7-71b90ce219b7
 docset: aem65
 feature: Correspondence Management
 exl-id: 1dd3f55c-24f7-4331-a9a3-c9223e613fec
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '604'
 ht-degree: 0%
 
 ---
@@ -29,7 +27,7 @@ U kunt het volgende wijzigen in de lettertype-instellingen:
 * Standaardwaarden van lettertypefamilie en -grootte, hoogte, letterspatiëring en datumnotatie
 * Opsommingstekens
 
-Hiervoor moet u:
+Ga als volgt te werk:
 
 1. [Lettertypen aanpassen door het bestand tbxeditor-config.xml in CRX te bewerken](#customizefonts)
 1. [Aangepaste lettertypen toevoegen aan de clientcomputer](#addcustomfonts)
@@ -159,7 +157,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
       </editorConfig>
       ```
 
-   1. Breng de gewenste wijzigingen aan in het bestand om de volgende wijzigingen in de lettertype-instellingen aan te brengen:
+   1. Breng de gewenste wijzigingen aan in het bestand, zodat u de volgende wijzigingen in de lettertype-instellingen kunt aanbrengen:
 
       * Lettertypefamilie en -grootte toevoegen of verwijderen
       * Eigenschappen zoals hoogte- en letterspatiëring
@@ -174,7 +172,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 
 ## Aangepaste lettertypen toevoegen aan de clientcomputer {#addcustomfonts}
 
-Wanneer u een lettertype opent in de teksteditor voor Correspondentiebeheer, moet dit aanwezig zijn op de clientcomputer die u gebruikt voor toegang tot Correspondentiebeheer. Als u een aangepast lettertype in de teksteditor wilt gebruiken, moet u dit eerst op de client installeren.
+Als u een lettertype opent in de teksteditor voor Correspondentiebeheer, moet dit aanwezig zijn op de clientcomputer die u gebruikt voor toegang tot Correspondentiebeheer. Als u een aangepast lettertype in de teksteditor wilt gebruiken, moet u dit eerst op de client installeren.
 
 Raadpleeg de volgende secties voor meer informatie over het installeren van lettertypen:
 
@@ -183,7 +181,7 @@ Raadpleeg de volgende secties voor meer informatie over het installeren van lett
 
 ## Lettertypeaanpassingen openen {#access-font-customizations}
 
-Nadat u wijzigingen hebt aangebracht in de lettertypen in het bestand tbxeditor-config.xml in CRX en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms, worden de wijzigingen weergegeven in de teksteditor.
+Nadat u de lettertypen in het dialoogvenster `tbxeditor-config.xml` en installeerde de vereiste lettertypen op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms. De wijzigingen worden weergegeven in de teksteditor.
 
 Het lettertype Sazanami Mincho Medium dat bijvoorbeeld is toegevoegd aan het dialoogvenster [Lettertypen aanpassen door het bestand tbxeditor-config.xml in CRX te bewerken](#customizefonts) De procedure wordt als volgt weergegeven in de gebruikersinterface van de teksteditor:
 

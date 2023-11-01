@@ -7,7 +7,7 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: 9593ca2a-7f9e-4487-a1a5-ca44114bff17
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '1092'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur te maken in het dialoogv
 
       >[!NOTE]
       >
-      >Wijzig de instelling `/libs` vertakking. Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
+      >Wijzig de instelling `/libs` vertakking. Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking wijzigingen kan ondergaan wanneer u:
       >
       >    
       >    
@@ -83,7 +83,7 @@ Gebruik de volgende stappen om de vereiste mapstructuur te maken in het dialoogv
 
    1. Klikken **OK**. De css-map wordt gemaakt in het opgegeven pad.
 
-1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die lijkt op de map imgs (in de map ccrui).
+1. Maak in de map Apps een map met de naam `imgs` met een pad/structuur die vergelijkbaar is met `imgs` in de map ccrui.
 
    1. Klik met de rechtermuisknop op de knop **imgs** map op het volgende pad en selecteer **Overlayknooppunt**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:

@@ -1,14 +1,14 @@
 ---
 title: Integratie met Adobe Sign | Gebruikersgegevens verwerken
-description: AEM Forms integreert Adobe Sign voor e-handtekeningen in adaptieve formulieren. Het steunt veelvoudige het ondertekenen opties voor diverse werkschema's.
+description: Leer AEM Forms-integratie met Adobe Sign voor e-handtekeningen in adaptieve formulieren. Het steunt veelvoudige het ondertekenen opties voor diverse werkschema's.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Acrobat Sign
 role: Admin
 exl-id: b43ed9b7-b1ef-4878-ae3b-643b558eed7b
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '321'
+source-wordcount: '323'
 ht-degree: 0%
 
 ---

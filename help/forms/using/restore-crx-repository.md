@@ -1,8 +1,8 @@
 ---
 title: Kan beschadigde CRX-opslagplaats die van toepassing is op JEE-clusterserver niet herstellen
-description: Stappen om beschadigde CRX-opslagplaats te herstellen.
+description: Leer de stappen voor het herstellen van een beschadigde CRX-opslagplaats.
 exl-id: 212f61f1-360f-4abe-b874-055ec65454c7
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
 source-wordcount: '179'
 ht-degree: 0%
@@ -21,7 +21,6 @@ Maak een back-up van uw CRX-opslagplaats voordat u de onderstaande stappen uitvo
 
 ## Oplossing {#solution}
 
-Voer de volgende stappen uit om het probleem op te lossen:
 1. Ga naar  `https://[AEM Forms Server]:[port]/system/console/bundles`.
 
 1. Zoek de `oak-core` bundel en controleer of het programma wordt uitgevoerd.
@@ -33,6 +32,4 @@ Voer de volgende stappen uit om het probleem op te lossen:
 
 ## Van toepassing op {#applies-to}
 
-Deze oplossing geldt voor:
-
-* AEM Forms on JEE Cluster
+Deze oplossing geldt voor AEM Forms op JEE Cluster.

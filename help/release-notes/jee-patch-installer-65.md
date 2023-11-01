@@ -1,13 +1,13 @@
 ---
 title: AEM Forms JEE Patch Installer
-description: AEM Forms JEE Patch Installer om problemen in AEM 6.5 Forms-componenten op te lossen.
+description: Leer hoe u AEM Forms JEE Patch Installer kunt gebruiken om problemen in AEM 6.5 Forms-componenten op te lossen.
 uuid: 76662858-afca-4ba3-883b-9b9a61874f15
 content-type: reference
 discoiquuid: b0283feb-c3ec-4ef0-885c-46bc83a61e26
 exl-id: 6b17472b-9226-4319-b305-4dba862d21af
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '519'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html) voor meer informatie of om de pleister te verkrijgen.
+>[Contact opnemen met ondersteuning](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) voor meer informatie of om de pleister te verkrijgen.
 
 ## Het installatieprogramma van de patch {#about-the-patch-installer}
 
@@ -39,10 +39,10 @@ Navigeer naar de juiste map op de installatiemedia of de installatiemap op de va
       * (Windows 32-bits) `Windows\Disk1\InstData\VM`
       * (Windows 64-bits) `Windows_64Bit`\ `Disk1\InstData\VM`
 
-   * **Linux**
+   * **Linux®**
 Navigeer aan de aangewezen folder, en van een bevelherinnering, type `./aem65_cfp_install.bin`.
 
-      * (Linux) `Linux/Disk1/InstData/NoVM`
+      * (Linux®) `Linux/Disk1/InstData/NoVM`
 
    Hiermee wordt een installatiewizard gestart die u door de installatie begeleidt.
 
@@ -52,7 +52,7 @@ Navigeer aan de aangewezen folder, en van een bevelherinnering, type `./aem65_cf
 1. Lees de informatie van het Pre-installatieoverzicht en klik **[!UICONTROL Install]**.
 1. Wanneer de installatie is voltooid, klikt u op **[!UICONTROL Next]** om de snelle reparatie updates op uw geïnstalleerde dossiers toe te passen.
 
-1. **[Alleen voor Windows]:** Voer een van de volgende stappen uit:
+1. **[Alleen voor Windows]:** Ga als volgt te werk:
    * Schakel de optie **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. Uitvoeren **Configuratiebeheer** door de **ConfigurationManager.bat** bestand in `[aem-forms root]\configurationManager\bin`.
 
    * U kunt de selectie van de **Configuratiebeheer starten** voordat u klikt op **[!UICONTROL Done]**. Voor uitvoering **Configuratiebeheer** gebruiken **ConfigurationManager.exe** of **ConfigurationManager_IPv6.exe**, navigeer naar *`<AEMForms_Install_Dir>\configurationManager\bin`* directory en replace [ConfigurationManager.lax](/help/assets/ConfigurationManager.lax) en [ConfigurationManager_IPV6.lax](/help/assets/ConfigurationManager_IPv6.lax) bestanden.
@@ -69,16 +69,16 @@ Navigeer aan de aangewezen folder, en van een bevelherinnering, type `./aem65_cf
 
 1. Kies afhankelijk van uw toepassingsserver een van de volgende documenten en volg de instructies in het dialoogvenster *Formulieren configureren en implementeren AEM* sectie.
 
-   * [AEM voor JBoss installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
-   * [AEM voor WebSphere installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
+   * [AEM voor JBoss® installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installJBoss_65)
+   * [AEM voor WebSphere® installeren en implementeren](https://www.adobe.com/go/learn_aemforms_installWebSphere_65)
 
-1. (Alleen JBoss) Nadat u de patch hebt geïnstalleerd en de server hebt geconfigureerd, verwijdert u tmp- en werkmappen van de JBoss-toepassingsserver.
+1. (Alleen JBoss®) Nadat u de patch hebt geïnstalleerd en de server hebt geconfigureerd, verwijdert u tmp- en werkmappen van de JBoss®-toepassingsserver.
 
 ## Configuratie na implementatie {#post-deployment-configurations}
 
 ### SAML-configuraties {#saml-configurations}
 
-Als u de authentificatie van SAML en het onder ogen zien van kwesties met grote meta-gegevens IDP had gevormd, doe het volgende na het installeren van het flard:
+Als u de authentificatie van SAML gevormd hebt en problemen met grote meta-gegevens IDP onder ogen ziet, doe het volgende na het installeren van het flard:
 
 1. Stel de volgende systeemeigenschap in op uw toepassingsserver:\
    `um.saml.enable.large.xml=true`
@@ -91,4 +91,4 @@ Als u de authentificatie van SAML en het onder ogen zien van kwesties met grote 
 * Documentbeveiliging
 * Foundation JEE
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
+[Contact opnemen met ondersteuning](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support)

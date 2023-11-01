@@ -1,20 +1,20 @@
 ---
-title: Java API QuickStart (SOAP) van de Assembler-service
-description: U kunt een PDF-document samenstellen, dempen en dynamisch maken met de Java API QuickStart (SOAP) van de Assembler Service.
+title: Java&trade voor de vergaderingsservice; API QuickStart (SOAP)
+description: Leer hoe u een PDF-document kunt samenstellen, demonteren en dynamisch maken met de Java&trade API QuickStart (SOAP) van de Assembler Service;
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 306cd40b-1831-45aa-9f58-3ab1983a68c5
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
 
-# Java API QuickStart (SOAP) van de Assembler-service {#assembler-service-java-api-quickstart-soap}
+# Java™ API QuickStart (SOAP) van de Assembler-service {#assembler-service-java-api-quickstart-soap}
 
 Java API Quick Start (SOAP) is beschikbaar voor de Assembler-service
 
@@ -44,7 +44,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle Begin die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Quick Start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss® Application Server en het Microsoft® Windows besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Snel starten (SOAP-modus): een PDF-document samenstellen met de Java API {#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api}
 
@@ -1683,11 +1683,11 @@ In het volgende Java-codevoorbeeld worden XDP-fragmenten geassembleerd die zijn 
 
 ## Snel starten (SOAP-modus): een PDF-document redigeren met de Java API {#quick-start-soap-mode-redacting-a-pdf-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een PDF-document geredigeerd met `PDFUtility`.
+In het volgende codevoorbeeld wordt een PDF-document geredigeerd met de `PDFUtility`.
 
 >[!NOTE]
 >
->`PDFUtility` kan alleen die PDF redigeren die zijn gemarkeerd voor redactie met Acrobat.
+De `PDFUtility` kan alleen die PDF redigeren die zijn gemarkeerd voor redactie met Acrobat.
 
 ```java
 /*

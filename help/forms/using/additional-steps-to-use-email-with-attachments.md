@@ -1,10 +1,10 @@
 ---
-title: Extra stappen voor het ophalen van e-mail met bijlage
-description: Los de fout op wanneer u e-mail met Bijlagen voor AEM Forms op platforms JEE niet kunt terugwinnen.
+title: Extra stappen voor het ophalen van e-mail met bijlagen
+description: Leer hoe u de fout verhelpt wanneer u geen e-mail met bijlagen voor AEM Forms op JEE-platforms kunt ophalen.
 exl-id: 0d0713fb-d95a-4a95-91ef-9cdaea30e343
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,7 @@ ht-degree: 0%
 # Kan geen e-mail ophalen met bijlagen voor AEM Forms op JEE-platforms{#unable-to-get-email-with-attachments}
 
 De kwestie is op de volgende versie van toepassing:
+
 * Experience Manager 6.5 Forms
 
 ## Probleem {#issue}
@@ -37,7 +38,7 @@ De gebruiker kan geen handelingen uitvoeren zoals PDF verzenden via e-mail of Bi
 
 1. Installeren `java.mail-1.5.jar` verkregen uit stap 3. Met deze stap worden de verkoopeigenschappen van de JEE-implementatie opnieuw gestart. Wacht op de geïnstalleerde bundels bij `http://<server name>:<port>/lc/system/console/bundles` Status weergeven als **Actief**.
 
-   >Opmerking: als de status nog steeds is **InActive**, opnieuw starten   **JBoss®** van de **Services Console**.
+   >Als de status nog steeds **InActive**, opnieuw starten   **JBoss®** van de **Services Console**.
 
 
 1. Installeren `javax.mail-1.5.6.redhat-1.jar`gedownload met gebruik van stap 5.

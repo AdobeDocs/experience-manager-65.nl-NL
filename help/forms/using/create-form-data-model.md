@@ -1,24 +1,22 @@
 ---
-title: "Zelfstudie: Formuliergegevensmodel maken"
-description: Configureer MySQL als gegevensbron, maak FDM (form data model, configureer dit en test voor AEM Forms).
-uuid: b9d2bb1b-90f0-44f4-b1e3-0603cdf5f5b8
+title: "Lesbestand: formuliergegevensmodel maken"
+description: Leer hoe u MySQL configureert als gegevensbron, een formuliergegevensmodel (FDM) maakt, dit configureert en test voor AEM Forms.
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-discoiquuid: 12e6c325-ace0-4a57-8ed4-6f7ceee23099
 docset: aem65
 exl-id: 40bc5af6-9023-437e-95b0-f85d3df7d8aa
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1454'
+source-wordcount: '1458'
 ht-degree: 1%
 
 ---
 
-# Zelfstudie: Formuliergegevensmodel maken {#tutorial-create-form-data-model}
+# Lesbestand: formuliergegevensmodel maken {#tutorial-create-form-data-model}
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Deze zelfstudie is een stap in de [Uw eerste adaptieve formulier maken](../../forms/using/create-your-first-adaptive-form.md) reeks. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Deze zelfstudie is een stap in de [Uw eerste adaptieve formulier maken](../../forms/using/create-your-first-adaptive-form.md) reeks. De Adobe raadt u aan de reeks in chronologische volgorde te volgen om de volledige Gebruikszaak van de zelfstudie te begrijpen, uit te voeren en te demonstreren.
 
 ## Over de zelfstudie {#about-the-tutorial}
 
@@ -49,43 +47,43 @@ Voordat u begint, moet u het volgende doen:
 
 ## Stap 1: Vorm MySQL gegevensbestand als gegevensbron {#config-database}
 
-U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zullen wij het gegevensbestand vormen MySQL dat u met steekproefgegevens vormde en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [AEM Forms-gegevensintegratie](../../forms/using/data-integration.md).
+U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor deze zelfstudie configureert u de MySQL-database die u hebt geconfigureerd en gevuld met voorbeeldgegevens. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [AEM Forms-gegevensintegratie](../../forms/using/data-integration.md).
 
 Doe het volgende uw vormen [!DNL MySQL] database:
 
-1. JDBC-stuurprogramma installeren voor [!DNL MySQL] database als een OSGi-bundel:
+1. Installeer het JDBC-stuurprogramma voor [!DNL MySQL] database als een OSGi-bundel:
 
-   1. Downloaden [!DNL MySQL] JDBC Driver OSGi Bundle van `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
-   1. Meld u aan bij AEM [!DNL Forms] Author Instance als beheerder en ga naar bundels met AEM-webconsoles. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
+   1. Download [!DNL MySQL] JDBC Driver OSGi Bundle van `http://www.java2s.com/ref/jar/download-orgosgiservicejdbc100jar-file.html`. <!-- This URL is an insecure link but using https is not possible -->
+   1. Aanmelden bij AEM [!DNL Forms] Instantie van auteur als beheerder en ga naar AEM bundels van de Webconsole. De standaard-URL is [https://localhost:4502/system/console/bundles](https://localhost:4502/system/console/bundles).
 
-   1. Tik op **[!UICONTROL Install/Update]**. Er wordt een [!UICONTROL Upload / Install Bundles] dialoogvenster weergegeven.
+   1. Tik op **[!UICONTROL Install/Update]**. An [!UICONTROL Upload / Install Bundles] wordt weergegeven.
 
-   1. Tikken **[!UICONTROL Choose File]** om te bladeren en selecteren [!DNL MySQL] JDBC-stuurprogramma OSGi-bundel. Selecteren **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** en tikken **[!UICONTROL Install or Update]**. Zorg ervoor dat de [!DNL Oracle Corporation's] JDBC-stuurprogramma voor [!DNL MySQL] is actief. Het stuurprogramma is geïnstalleerd.
+   1. Tikken **[!UICONTROL Choose File]** om te bladeren en selecteren [!DNL MySQL] JDBC-stuurprogramma OSGi-bundel. Selecteren **[!UICONTROL Start Bundle]** en **[!UICONTROL Refresh Packages]** en tikken **[!UICONTROL Install or Update]**. Controleer of het [!DNL Oracle Corporation's] JDBC-stuurprogramma voor [!DNL MySQL] actief is. Het stuurprogramma is geïnstalleerd.
 
-1. Configureren [!DNL MySQL] database als gegevensbron:
+1. Database configureren [!DNL MySQL] als een gegevensbron:
 
-   1. Ga naar AEM webconsole op [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
-   1. Zoeken **Apache Sling Connection Pooled DataSource** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
+   1. Ga naar de AEM-webconsole op [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr).
+   1. Zoek naar **een configuratie voor gegroepeerde gegevensbron** voor Apache Sling Connection. Tik om de configuratie in de bewerkingsmodus te openen.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
       * **Naam gegevensbron:** U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **WeRetailMySQL**.
       * **Eigenschapnaam van DataSource-service**: Geef een naam op van de eigenschap service die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld: **datasource.name**.
-      * **JDBC-stuurprogrammaklasse**: Geef de Java-klassenaam van het JDBC-stuurprogramma op. Geef [!DNL MySQL] **voor database com.mysql.jdbc.Driver op**.
-      * **URI voor JDBC-verbinding**: Geef de verbindings-URL van de database op. Voor [!DNL MySQL] database die wordt uitgevoerd op poort 3306 en schema weretail, is de URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
+      * **JDBC-stuurprogrammaklasse**: Geef de Java™-klassenaam van het JDBC-stuurprogramma op. Voor [!DNL MySQL] database, specificeren **com.mysql.jdbc.Driver**.
+      * **URI** van JDBC-verbinding: geef de verbindings-URL van de database op. Voor [!DNL MySQL] database die op poort 3306 en schema `weretail`wordt uitgevoerd, is de URL: `jdbc:mysql://'server':3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
 
       >[!NOTE]
       >
-      > Wanneer de [!DNL MySQL] database bevindt zich achter een firewall, maar de hostnaam van de database is geen openbare DNS. Het IP-adres van de database moet worden toegevoegd aan het */etc/hosts-bestand* van de AEM-hostcomputer.
+      > Wanneer de [!DNL MySQL] database zich achter een firewall bevindt, is de databasehostname geen openbare DNS. Het IP-adres van de database moet worden toegevoegd aan het */etc/hosts-bestand* van de AEM-hostcomputer.
 
-      * **Gebruikersnaam:** Gebruikersnaam van de database. U moet het JDBC-stuurprogramma inschakelen om een verbinding met de database tot stand te brengen.
+      * **Gebruikersnaam:** Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
       * **Wachtwoord:** Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
 
       >[!NOTE]
       >
-      >AEM Forms ondersteunt geen NT-verificatie voor [!DNL MySQL]. Ga naar AEM webconsole op [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek &quot;Apache Sling Connection Pooled Datasource&quot;.Voor de eigenschap &quot;JDBC connection URI&quot; stelt u de waarde van &quot;IntegratedSecurity&quot; in als Onwaar en gebruikt u de gemaakte gebruikersnaam en het wachtwoord voor verbinding met [!DNL MySQL] database.
+      >AEM Forms ondersteunt geen NT-verificatie voor [!DNL MySQL]. Ga naar de AEM-webconsole in [https://localhost:4502/system/console/configMgr](https://localhost:4502/system/console/configMgr) en zoek &quot;Apache Sling Connection Pooled Datasource&quot;. Stel voor de eigenschap &quot;JDBC connection URI&quot; de waarde van &quot;integratedSecurity&quot; in op False en gebruik gemaakte gebruikersnaam en wachtwoord om verbinding te maken met [!DNL MySQL] de database.
 
-      * **Testen op lenen:** De optie **[!UICONTROL Test on Borrow]** -optie.
-      * **Testen op rendement:** De optie **[!UICONTROL Test on Return]** -optie.
+      * **Test op Uitlenen:** Schakel de **[!UICONTROL Test on Borrow]** optie in.
+      * **Test bij terugkeer:** Schakel de **[!UICONTROL Test on Return]** optie in.
       * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld: **selecteren &#42; van klantgegevens**.
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
 
@@ -95,11 +93,11 @@ Doe het volgende uw vormen [!DNL MySQL] database:
 
         ![relationele database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
-## Stap 2: Formuliergegevensmodel maken {#create-fdm}
+## Stap 2: Een formuliergegevensmodel maken {#create-fdm}
 
-AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface om een formuliergegevensmodel](data-integration.md) te [maken op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen in een formuliergegevensmodel gebruiken. In onze praktijkvoorbeeld gebruiken we de geconfigureerde [!DNL MySQL] gegevensbron.
+AEM [!DNL Forms] biedt een intuïtieve gebruikersinterface voor [een formuliergegevensmodel maken](data-integration.md) van gevormde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor dit gebruiksgeval, kunt u gevormde gebruiken [!DNL MySQL] gegevensbron.
 
-Ga als volgt te werk om een formuliergegevensmodel te maken:
+Ga als volgt te werk om het formuliergegevensmodel te maken:
 
 1. Navigeer in AEM auteurinstantie naar **[!UICONTROL Forms]** > **[!UICONTROL Data Integrations]**.
 1. Tik op **[!UICONTROL Create]** > **[!UICONTROL Form Data Model]**.
@@ -126,21 +124,21 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Vouw de WebRailMySQL-gegevensbronstructuur uit. Selecteer de volgende gegevensmodelvoorwerpen en de diensten van **wieg** > **klantgegevens** schema naar formuliergegevensmodel:
+1. Vouw de WebRailMySQL-gegevensbronstructuur uit. Selecteer de volgende gegevensmodelvoorwerpen en de diensten van **wieg** > **klantgegevens** schema zodat u het gegevensmodel kunt vormen:
 
    * **Gegevensmodelobjecten**:
 
       * id
       * name
       * ShippingAddress
-      * stad
-      * state
-      * Postcode
+      * Stad
+      * Staat
+      * postcode
 
-   * **Diensten:**
+   * **Services:**
 
-      * Toevoegen
-      * Update
+      * get
+      * update
 
    Tikken **Geselecteerde toevoegen** Hiermee voegt u geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
 
@@ -161,36 +159,36 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
       ![standaard schrijven](assets/write-default.png)
 
-      Voeg en vorm toe **id** als volgt.
+      Voeg het id-argument **toe en configureer het** als volgt.
 
       ![id-arg](assets/id-arg.png)
 
-   1. Tikken **[!UICONTROL Done]** om de eigenschappen van het gegevensmodel op te slaan. Tik vervolgens op **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
+   1. Tik **[!UICONTROL Done]** om de eigenschappen van het gegevensmodelobject op te slaan. Tik vervolgens op **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 
-      De **[!UICONTROL get]** en **[!UICONTROL update]** services worden toegevoegd als standaardservices voor het gegevensmodelobject.
+      De **[!UICONTROL get]** en **[!UICONTROL update]** de diensten worden toegevoegd als standaarddiensten voor het voorwerp van het gegevensmodel.
 
       ![data-model-object](assets/data-model-object.png)
 
 1. Ga naar de **[!UICONTROL Services]** tab en configure **[!UICONTROL get]** en **[!UICONTROL update]** diensten.
 
    1. Selecteer de **[!UICONTROL get]** service en tikken **[!UICONTROL Edit Properties]**. Het dialoogvenster Eigenschappen wordt geopend.
-   1. Geef het volgende op in het dialoogvenster Eigenschappen bewerken:
+   1. Geef in het dialoogvenster Eigenschappen bewerken het volgende op:
 
-      * **Titel**: Geef de titel van de service op. Bijvoorbeeld: Verzendadres ophalen.
+      * **Titel**: geef de titel van de service op. Bijvoorbeeld Verzendadres ophalen.
       * **Beschrijving**: Geef een beschrijving op met een gedetailleerde werking van de service. Bijvoorbeeld:
 
-        Deze service haalt het verzendadres en andere klantgegevens op van [!DNL MySQL] database
+        Met deze service haalt u het verzendadres en andere klantgegevens op van de [!DNL MySQL] database
 
       * **Uitvoermodelobject**: Selecteer een schema dat klantgegevens bevat. Bijvoorbeeld:
 
         klantdetailschema
 
       * **Retourarray**: Schakel het dialoogvenster **Retourarray** -optie.
-      * **Argumenten**: selecteer het argument id ****.
+      * **Argumenten**: Benoemd argument selecteren **ID**.
 
-      Tik op **[!UICONTROL Done]**. De service voor het ophalen van klantgegevens uit de MySQL-database is geconfigureerd.
+      Tik op **[!UICONTROL Done]**. De dienst om klantendetails van het gegevensbestand terug te winnen MySQL wordt gevormd.
 
-      ![shiiping-address-retrieval](assets/shiiping-address-retrieval.png)
+      ![verzendadres-herwinning](assets/shiiping-address-retrieval.png)
 
    1. Selecteer de **[!UICONTROL update]** service en tikken **[!UICONTROL Edit Properties]**. Het dialoogvenster Eigenschappen wordt geopend.
 
@@ -207,7 +205,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
       * **Uitvoertype**: Select **BOOLEAN**.
 
-      * **Argumenten**: Benoemd argument selecteren **ID** en **klantgegevens**.
+      * **Argumenten**: Selecteer argumentnaam **ID** en **klantgegevens**.
 
       Tik op **[!UICONTROL Done]**. De **[!UICONTROL update]** service voor het bijwerken van klantgegevens in de [!DNL MySQL] database is geconfigureerd.
 
@@ -235,6 +233,6 @@ Voer de volgende handelingen uit om de test uit te voeren:
 
    ![test-schrijven-model](assets/test-write-model.png)
 
-   Nu, als u de gelezen modeldienst opnieuw voor identiteitskaart 7107215 test, zal het de bijgewerkte klantendetails terugwinnen en tonen zoals hieronder getoond.
+   Nu, als u de gelezen modeldienst opnieuw voor identiteitskaart 7107215 test, haalt het en toont de bijgewerkte klantendetails zoals hieronder getoond.
 
    ![lezen-bijgewerkt](assets/read-updated.png)

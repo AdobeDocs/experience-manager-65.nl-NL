@@ -1,14 +1,14 @@
 ---
 title: API's voor toegang tot lettervarianten
-description: API's detecteren en deze gebruiken om via programmacode toegang te krijgen tot letterinstanties in de AEM Forms-omgeving.
+description: Ontdek APIs en gebruik hen om tot brieveninstanties in het milieu van AEM Forms programmatically toegang te hebben.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
 feature: Correspondence Management
 exl-id: 9d43d9d4-5487-416c-b641-e807227ac056
-source-git-commit: 68a1edf5f62d7a988094fceb3f762504711dc2f1
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -134,8 +134,8 @@ Boolean result = letterInstanceService.letterInstanceExists(letterInstanceName )
 
 Instantie letter kan van het type Verzonden of Concept zijn. Wanneer u beide lettertypen opent, worden verschillende gedragingen getoond:
 
-* In het geval van een Ingediende letter wordt een PDF geopend die de letter vertegenwoordigt. De ingediende instantie van de Brief die op de server wordt voortgeduurd bevat ook dataXML &amp; verwerkte XDP, die kan worden gebruikt om een geval te verwezenlijken en verder te gebruiken zoals het creëren van een PDF/A.
-* In het geval van een Conceptbrief-instantie wordt de aanmaakcorrespondentie-UI opnieuw geladen naar de exacte vorige status zoals deze was tijdens het maken van het concept
+* Als er een instantie Ingediend letter is, wordt een PDF geopend die de instantie van de letter vertegenwoordigt. De ingediende instantie van de Brief die op de server wordt voortgeduurd bevat ook dataXML &amp; verwerkte XDP, die kan worden gebruikt om een geval te verwezenlijken en verder te gebruiken zoals het creëren van een PDF/A.
+* Als er een Concept brieveninstantie is wordt creeer correspondentie UI opnieuw geladen aan de nauwkeurige vorige staat zoals het tijdens de tijd was toen het ontwerp werd gecreeerd
 
 ### Lettertypeinstantie concept openen  {#opening-draft-letter-instance-nbsp}
 

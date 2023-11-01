@@ -1,15 +1,13 @@
 ---
 title: Forms JEE-workflows | Gebruikersgegevens verwerken
-description: AEM Forms JEE-workflows voor het ontwerpen, maken en beheren van bedrijfsprocessen.
-uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
+description: Leer hoe u AEM Forms JEE-workflows kunt gebruiken voor het ontwerpen, maken en beheren van bedrijfsprocessen.
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 role: Admin
 exl-id: 847fa303-8d1e-4a17-b90d-5f9da5ca2d77
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1370'
+source-wordcount: '1388'
 ht-degree: 0%
 
 ---
@@ -42,9 +40,9 @@ U kunt de procesinstantie-id voor een initiator echter niet identificeren in de 
 
 ### Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is {#initiator-participant}
 
-Voer de volgende stappen uit om procesinstantie-id&#39;s voor een workflowaanvrager of een deelnemer te identificeren:
+Voer de volgende stappen uit zodat u procesinstantie-id&#39;s kunt identificeren voor een workflowaanvrager of een deelnemer:
 
-1. Voer het volgende bevel in het servergegevensbestand van AEM Forms uit om belangrijkste identiteitskaart voor werkschemaminitiator of deelnemer van terug te winnen `edcprincipalentity` databasetabel.
+1. Voer het volgende bevel in het gegevensbestand van de Server van AEM Forms uit om belangrijkste identiteitskaart voor werkschemageinitiator of deelnemer van terug te winnen `edcprincipalentity` databasetabel.
 
    ```sql
    select id from edcprincipalentity where canonicalname='user_ID'
@@ -75,7 +73,7 @@ Voer de volgende stappen uit om procesinstantie-id&#39;s voor een workflowaanvra
 
    Voor verweesde taken of taken waarbij `process_instance_id` is 0 (nul), neem nota van overeenkomstige taak IDs en zie [Werken met wezen](#orphan).
 
-1. Volg de instructies in [Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) sectie om gebruikersgegevens voor geïdentificeerde procesinstantie-id&#39;s te verwijderen.
+1. Volg de instructies in [Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie-id&#39;s verwijderen.
 
 ### Id&#39;s van procesinstanties identificeren wanneer gebruikersgegevens worden opgeslagen in primitieve variabelen {#primitive}
 
@@ -85,7 +83,7 @@ Een workflow kan zo worden ontworpen dat de gebruikersgegevens worden vastgelegd
 * **Numeriek**: Bevat de gebruikers-id.
 * **XML**: Bevat de gebruikers-id als een subtekenreeks in de tekst die is opgeslagen als tekstkolommen in de database en kan worden opgevraagd als tekenreeksen.
 
-Voer de volgende stappen uit om te bepalen of een werkschema dat gegevens in primitieve-type variabelen opslaat gegevens voor de gebruiker bevat:
+Voer de volgende stappen uit zodat u kunt bepalen of een werkschema dat gegevens in primitieve-type variabelen opslaat gegevens voor de gebruiker bevat:
 
 1. Voer de volgende databaseopdracht uit:
 
@@ -111,13 +109,13 @@ Voer de volgende stappen uit om te bepalen of een werkschema dat gegevens in pri
 
    De query retourneert alle procesinstantie-id&#39;s die zijn gekoppeld aan de opgegeven `user_ID`.
 
-1. Volg de instructies in [Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) sectie om gebruikersgegevens voor geïdentificeerde procesinstantie-id&#39;s te verwijderen.
+1. Volg de instructies in [Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s](/help/forms/using/forms-workflow-jee-handling-user-data.md#purge) zodat kunt u gebruikersgegevens voor geïdentificeerde procesinstantie-id&#39;s verwijderen.
 
 ### Gebruikersgegevens uit workflowinstanties wissen op basis van procesinstantie-id&#39;s {#purge}
 
 Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zijn gekoppeld, gaat u als volgt te werk om gebruikersgegevens te verwijderen uit de respectieve procesinstanties.
 
-1. Voer het volgende bevel uit om langlevende aanroepingsID en status voor een procesinstantie van terug te winnen `tb_process_instance` tabel.
+1. Voer de volgende opdracht uit, zodat u de aanroepings-id en -status voor een procesinstantie van lange duur kunt ophalen via de knop `tb_process_instance` tabel.
 
    ```sql
    select long_lived_invocation_id, status from tb_process_instance where id='process_instance_id'
@@ -127,7 +125,7 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
 1. Een instantie van het publiek maken `ProcessManager` client ( `com.adobe.idp.workflow.client.ProcessManager`) met een `ServiceClientFactory` instantie met de juiste verbindingsinstellingen.
 
-   Zie Java API-naslag voor meer informatie [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
+   Zie Java™ API-naslaggids voor meer informatie voor [Class ProcessManager](https://helpx.adobe.com/experience-manager/6-3/forms/ProgramLC/javadoc/com/adobe/idp/workflow/client/ProcessManager.html).
 
 1. Controleer de status van de workflowinstantie. Als de status anders is dan 2 (COMPLETE) of 4 (TERMINATED), beëindigt u de instantie eerst door de volgende methode aan te roepen:
 
@@ -137,15 +135,15 @@ Nu u de procesinstantie-id&#39;s hebt geïdentificeerd die aan een gebruiker zij
 
    `ProcessManager.purgeProcessInstance(<long_lived_invocation_id>)`
 
-   De `purgeProcessInstance` Methode verwijdert alle gegevens voor de opgegeven oproepings-id volledig uit de AEM Forms-serverdatabase en GDS, indien geconfigureerd.
+   De `purgeProcessInstance` Methode verwijdert alle gegevens voor de opgegeven oproepings-id volledig uit de AEM Forms Server-database en GDS, indien geconfigureerd.
 
 ### Werken met wezen {#orphan}
 
-Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog niet is ingediend. in dit geval `process_instance_id` is **0** (nul). Daarom kunt u gebruikersgegevens die voor wezen taken worden opgeslagen niet volgen gebruikend procesinstantie IDs. Nochtans, kunt u het vinden gebruikend taakidentiteitskaart voor een wezen taak. U kunt de taken-id&#39;s identificeren vanuit de `tb_task` tabel voor een gebruiker, zoals beschreven in [Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
+Orphan-taken zijn de taken waarvan het omvattende proces is gestart maar nog niet is ingediend. In dit geval worden de `process_instance_id` is **0** (nul). Daarom kunt u gebruikersgegevens die voor wezen taken worden opgeslagen niet volgen gebruikend procesinstantie IDs. Nochtans, kunt u het vinden gebruikend taakidentiteitskaart voor een wezen taak. U kunt de taken-id&#39;s identificeren vanuit de `tb_task` tabel voor een gebruiker, zoals beschreven in [Id&#39;s van procesinstanties identificeren wanneer de aanvrager of deelnemer van de workflow bekend is](/help/forms/using/forms-workflow-jee-handling-user-data.md#initiator-participant).
 
 Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehorende bestanden en gegevens te wissen met een wezen-taak uit GDS en de database.
 
-1. Voer het volgende bevel op het servergegevensbestand van AEM Forms uit om identiteitskaarts voor geïdentificeerde taak IDs terug te winnen.
+1. Voer de volgende opdracht uit in de AEM Forms Server-database, zodat u id&#39;s voor de geïdentificeerde taak-id&#39;s kunt ophalen.
 
    ```sql
    select id from tb_form_data where task_id=<task_id>
@@ -185,7 +183,7 @@ Als u de taak-id&#39;s hebt, voert u de volgende handelingen uit om de bijbehore
       delete from tb_dm_deletion where sessionid=<session_id>
       ```
 
-1. Voer de volgende opdrachten uit om gegevens voor taak-id&#39;s te verwijderen uit de AEM Forms-serverdatabase:
+1. Voer de volgende opdrachten uit, zodat u gegevens voor taak-id&#39;s kunt verwijderen uit de AEM Forms Server-database:
 
    ```sql
    delete from tb_task_acl where task_id=<task_id>

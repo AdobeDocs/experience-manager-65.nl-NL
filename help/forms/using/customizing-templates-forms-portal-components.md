@@ -1,22 +1,20 @@
 ---
-title: Sjablonen aanpassen voor componenten van een formulierportal
-description: Met de AEM Forms-gebruikersinterface kunnen gebruikers metagegevens toevoegen aan formulieren. Aangepaste metagegevens verbeteren de gebruikerservaring bij het weergeven van formulieren en het zoeken naar uw organisatie.
-uuid: 212109ca-85c8-4915-82e5-a18a0443be1b
+title: Sjablonen aanpassen voor Forms Portal-componenten
+description: Leer hoe gebruikers in de AEM Forms-gebruikersinterface metagegevens aan formulieren kunnen toevoegen. Aangepaste metagegevens verbeteren de gebruikerservaring bij het weergeven en zoeken van formulieren.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: customization
-discoiquuid: 7566203f-2f80-4ce7-bff9-073d67119f64
 docset: aem65
 feature: Forms Portal
 exl-id: f889d996-77f7-4a4f-a637-da43fe1343c5
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '1243'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
 
-# Sjablonen aanpassen voor componenten van een formulierportal{#customizing-templates-for-forms-portal-components}
+# Sjablonen aanpassen voor Forms Portal-componenten{#customizing-templates-for-forms-portal-components}
 
 ## Vereisten {#prerequisites}
 
@@ -30,7 +28,7 @@ In de AEM Forms-gebruikersinterface kunt u metagegevens toevoegen aan elk formul
 
 Met Forms Portal kunt u aangepaste metagegevens gebruiken in formulierlijsten. Wanneer u aangepaste sjablonen voor elementen maakt, kunt u de lay-out van deze sjablonen wijzigen en aangepaste metagegevens gebruiken met de CSS-stijlset.
 
-Voer de volgende stappen uit om een aangepaste sjabloon te maken voor verschillende Forms Portal-componenten.
+Ga als volgt te werk, zodat u een aangepaste sjabloon kunt maken voor verschillende Forms Portal-componenten.
 
 ## Een aangepaste sjabloon maken {#creating-a-nbsp-custom-template}
 
@@ -55,7 +53,7 @@ Voer de volgende stappen uit om een aangepaste sjabloon te maken voor verschille
    In de volgende afbeelding ziet u de configuratie voor de component Search &amp; Lister.
    ![Een tekenreeks maken:map](assets/1.png)
 
-1. Maak een bestandssjabloon.html in deze map om als aangepaste sjabloon te dienen.
+1. Maak een bestandssjabloon.html in deze map zodat deze kan dienen als aangepaste sjabloon.
 1. Schrijf de aangepaste sjabloon en gebruik aangepaste metagegevens zoals hieronder beschreven.
 
 ## Werkvoorbeeld {#working-example}
@@ -105,7 +103,7 @@ Verschillende Forms Portal-componenten bieden exclusieve sets OOTB-metagegevens 
 * **beschrijving**: Beschrijving van het formulier
 * **formUrl**: URL om het formulier weer te geven als HTML
 * **pdfUrl**: URL om het formulier weer te geven als PDF
-* **assetType**: Type van het element. Geldige waarden zijn **Formulier**,**PDF-formulier**, **Formulier afdrukken**, en **Adaptief formulier**
+* **assetType**: Type van het element. Geldige waarden zijn **Formulier**, **PDF-formulier**, **Formulier afdrukken**, en **Adaptief formulier**
 
 * **htmlStyle**&amp; **pdfStyle**: Weergavestijl voor HTML- en PDF-pictogrammen die respectievelijk worden gebruikt voor rendering. Geldige waarden zijn &quot;**__FP_display_none**&quot; of leeg.
 
@@ -120,8 +118,8 @@ Ondersteuning voor lokalisatie, sorteren en het gebruik van configuratie-eigensc
 1. **Ondersteuning voor lokalisatie**: Gebruik het kenmerk om statische tekst te lokaliseren `${localize-YOUR_TEXT}` en maak de gelokaliseerde waarde beschikbaar, als reeds niet bestaat.
    *In het besproken voorbeeld, de attributen `${localize-Apply}` en `${localize-Download}` worden gebruikt om de tekst Toepassen en downloaden te lokaliseren.*
 
-1. **Ondersteuning voor sorteren**: Klik op het element HTML om de zoekresultaten te sorteren. Als u sorteren in een ingediende lay-out wilt implementeren, voegt u het kenmerk &quot;data-sortKey&quot; toe aan de desbetreffende tabelkoptekst. Voeg ook de waarde ervan toe als de metagegevens waarvoor u wilt sorteren.
-Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header &#39;data-sortKey&#39; bijvoorbeeld &#39;title&#39;. Klik op de kop om de waarden in een bepaalde kolom te sorteren.
+1. **Ondersteuning voor sorteren**: Klik op het element HTML om de zoekresultaten te sorteren. Als u sorteren in een tabellay-out wilt implementeren, voegt u het kenmerk &quot;data-sortKey&quot; toe aan de desbetreffende tabelkoptekst. Voeg ook de waarde ervan toe als de metagegevens waarvoor u wilt sorteren.
+Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header &#39;data-sortKey&#39; bijvoorbeeld &#39;title&#39;. Klik op de kop, zodat u de waarden in een bepaalde kolom kunt sorteren.
 
 1. **Configuratieeigenschappen gebruiken**: De component Search &amp; Lister heeft diverse configuraties die u in de gebruikersinterface kunt gebruiken. Als u bijvoorbeeld HTML ToolTip-tekst wilt weergeven die is opgeslagen via het dialoogvenster Bewerken, gebruikt u de opdracht `${config-htmlLinkText}` kenmerk. **Op dezelfde manier kunt u voor knopinfo-tekst de opdracht** `${config-pdfLinkText}` kenmerk.
 
@@ -134,7 +132,7 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 
 ### Component Concepten en verzendingen {#drafts-amp-submissions-component}
 
-* **Pad**: Het pad van het metagegevensknooppunt concept/verzending. Gebruik dit bestand met de extensie .HTML als een URL om een concept of verzending te openen.
+* **Pad**: Het pad van het metagegevensknooppunt concept/verzending. Gebruik deze extensie met de extensie .HTML als een URL, zodat u een concept of verzending kunt openen.
 * **contextPath**: Contextpad van AEM instantie
 * **firstLetter**: Eerste letter (in hoofdletters) van de titel van het adaptieve formulier, die als concept is opgeslagen of is ingediend.
 * **formName**: De titel van het adaptieve formulier, dat als concept is opgeslagen of is ingediend.
@@ -142,7 +140,7 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 * **submitID**: ID voor de verzending die wordt vermeld (alleen gebruiken in de sjabloon voor de sectie Verzending).
 * **status**: Status van het ingediende formulier. (Alleen gebruiken in de sjabloon voor de sectie Verzending).
 * **beschrijving**: Beschrijving van het aan het ontwerp of de indiening verbonden adaptieve formulier.
-* **diffTime**: Verschil tussen de huidige tijd en de laatste opslagactie voor het concept. U kunt ook een verschil maken tussen de huidige tijd en de laatste verzendactie voor de verzending.
+* **diffTime**: Verschil tussen de huidige tijd en de laatste opslagactie voor het concept. Het verschil tussen de huidige tijd en de laatst ingediende actie voor de indiening.
 * **iconClass**: CSS-klasse die wordt gebruikt om de eerste letter van het concept/de verzending weer te geven. Forms Portal bevat de volgende klassen, die verschillende gekleurde achtergronden bieden.
 * **eigenaar**: Gebruiker die het concept/de verzending heeft gemaakt.
 * **Vandaag**: Datum van opstelling of indiening in DD:MM:YYYY-indeling.
@@ -162,7 +160,7 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 
 **C.** Kenmerk dat kan worden herhaald voor de sjabloonsectie voor elk formulier
 
-**D.** De tekenreeks Toepassen lokaliseren
+**D.** Tekenreeks &quot;Toepassen&quot; lokaliseren
 
 **E.** De configuratieeigenschap pdfLinkText gebruiken
 
@@ -177,11 +175,11 @@ Voor de koptekst &#39;Titel&#39; in de rasterweergave is de waarde van de header
 
 ## Verwante artikelen
 
-* [Formulierportonderdelen inschakelen](/help/forms/using/enabling-forms-portal-components.md)
-* [Pagina Formulierportal maken](/help/forms/using/creating-form-portal-page.md)
+* [Forms Portal-componenten inschakelen](/help/forms/using/enabling-forms-portal-components.md)
+* [Forms Portal-pagina maken](/help/forms/using/creating-form-portal-page.md)
 * [Formulieren op een webpagina weergeven met API&#39;s](/help/forms/using/listing-forms-webpage-using-apis.md)
 * [Concepten en verzendingscomponent gebruiken](/help/forms/using/draft-submission-component.md)
 * [Opslag van concepten en verzonden formulieren aanpassen](/help/forms/using/draft-submission-component.md)
-* [Voorbeeld voor het integreren van concepten en verzendingen in de database](/help/forms/using/integrate-draft-submission-database.md)
-* [Sjablonen aanpassen voor componenten van een formulierportal](/help/forms/using/customizing-templates-forms-portal-components.md)
+* [Voorbeeld voor het integreren van concepten en verzendingscomponenten met database](/help/forms/using/integrate-draft-submission-database.md)
+* [Sjablonen aanpassen voor Forms Portal-componenten](/help/forms/using/customizing-templates-forms-portal-components.md)
 * [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md)

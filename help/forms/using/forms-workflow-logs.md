@@ -1,23 +1,21 @@
 ---
 title: Aanmelden bij AEM Forms-workflows
-description: Fouten in de AEM Forms-workflow opsporen en foutopsporingslogbestanden voor AEM Forms-workflows inschakelen om de logbestanden weer te geven.
-uuid: 869d0271-c7e3-4b6d-8e63-893dc6af8b8a
+description: Leer hoe u fouten in AEM Forms Workflow-problemen kunt opsporen en foutopsporingslogbestanden kunt inschakelen voor AEM Forms-workflows om de logbestanden weer te geven.
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
-discoiquuid: 14bb521a-42ea-4fe2-90fb-202e7ddf917a
 docset: aem65
 exl-id: 601c8d95-0d1a-4945-a522-e85d3e9fc4ae
-source-git-commit: 20b0d0db54dc30285c056a10032f02ba45f8baca
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '278'
+source-wordcount: '282'
 ht-degree: 6%
 
 ---
 
 # Aanmelden bij AEM Forms-workflows{#logging-in-aem-forms-workflows}
 
-Workflowstappen van Forms bieden gedetailleerde logboeken voor het eenvoudig opsporen van fouten in workflowgerelateerde problemen. Schakel foutopsporingslogboeken in voor AEM Forms-workflows om de logbestanden weer te geven.
+De stappen van de Forms Workflow verstrekken gedetailleerde logboeken om werkschemagerelateerde kwesties gemakkelijk te zuiveren. Schakel foutopsporingslogboeken in voor AEM Forms-workflows om de logbestanden weer te geven.
 
 Standaard zijn alle logboekgegevens beschikbaar in de **error.log** bestand op het */crx-repository/logs/* directory.
 
@@ -68,7 +66,7 @@ In het volgende voorbeeld worden de logboeken voor de stap Document ondertekenen
 
 Gebruik de logboeken om te evalueren dat:
 
-* U gebruikt een correcte configuratie voor het ondertekenen van Adobe.
+* U gebruikt de juiste Adobe Sign-configuratie.
 * De Adobe Sign Service wordt afgesloten nadat een overeenkomst is gemaakt.
 * De stap Document ondertekenen sluit af met een succesbericht.
 
@@ -76,7 +74,7 @@ Als er een uitzondering is, kunt u de volledige stacktracering bekijken om de oo
 
 ## Foutopsporingsregistratie inschakelen voor AEM Forms-workflows {#enable-debug-logging-for-aem-forms-workflows}
 
-Voer de volgende stappen uit om het registreren van fouten voor AEM Forms-workflows in te schakelen:
+Ga als volgt te werk, zodat u foutopsporingslogbestanden kunt inschakelen voor AEM Forms-workflows:
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op:
 

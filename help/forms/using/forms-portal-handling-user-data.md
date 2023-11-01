@@ -1,32 +1,32 @@
 ---
 title: Forms Portal | Gebruikersgegevens verwerken
-description: Gebruikersgegevens beheren, zoals toegang, verwijderen en gegevensopslag op de AEM Forms-portal.
+description: Meer informatie over het beheer van gebruikersgegevens, zoals toegang, verwijderen en gegevensopslag op AEM Forms Portal.
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 role: Admin
 exl-id: 791524a4-a8bb-4632-a68d-e96864e139a9
-source-git-commit: bb1e1790b8b9e6d6224c62b1f51d8af50a82e975
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '861'
 ht-degree: 0%
 
 ---
 
 # Forms Portal | Gebruikersgegevens verwerken {#forms-portal-handling-user-data}
 
-[!DNL AEM Forms] biedt componenten die u kunt gebruiken voor het weergeven van adaptieve formulieren, HTML5-formulieren en andere Forms-middelen op de [!DNL AEM Sites] pagina. Bovendien kunt u het configureren om concepten en verzonden adaptieve formulieren en HTML5 formulieren voor een aangemelde gebruiker weer te geven. Voor meer informatie over formulierportal raadpleegt u [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md).
+[!DNL AEM Forms] Portal bevat componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-elementen kunt weergeven op de [!DNL AEM Sites] pagina. Bovendien kunt u het configureren om concepten en verzonden adaptieve formulieren en HTML5 formulieren voor een aangemelde gebruiker weer te geven. Ga voor meer informatie over Forms Portal naar [Inleiding tot het publiceren van formulieren op een portal](/help/forms/using/introduction-publishing-forms.md).
 
-Wanneer een aangemelde gebruiker een adaptief formulier opslaat als concept of het verzendt, worden deze weergegeven op de tabbladen Concepten en Verzending op de portal Formulieren. De gegevens voor opgestelde of ingediende formulieren worden opgeslagen in de gegevensopslag die voor AEM implementatie is geconfigureerd. De concepten en verzendingen van anonieme gebruikers worden niet weergegeven op de pagina Formulierportal, maar de gegevens worden opgeslagen in de geconfigureerde gegevensopslag. Zie [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md).
+Wanneer een aangemelde gebruiker een adaptief formulier opslaat als concept of het verzendt, worden deze weergegeven op de tabbladen Concepten en Verzending op de Forms Portal. De gegevens voor opgestelde of ingediende formulieren worden opgeslagen in de gegevensopslag die voor AEM implementatie is geconfigureerd. De concepten en verzendingen van anonieme gebruikers worden niet weergegeven op de pagina Forms Portal, maar de gegevens worden opgeslagen in de geconfigureerde gegevensopslag. Zie [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md).
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-In het Forms-portaal worden gegevens voor concepten en verzonden formulieren opgeslagen in de volgende scenario&#39;s:
+In Forms Portal worden gegevens voor concepten en verzonden formulieren opgeslagen in de volgende scenario&#39;s:
 
 * De verzendactie die in het adaptieve formulier is geconfigureerd, is **Forms Portal-verzendactie**.
-* Voor het verzenden van andere acties dan **Forms Portal-verzendactie** de **[!UICONTROL Store data in forms portal]** optie is ingeschakeld in het dialoogvenster **[!UICONTROL Submission]** eigenschappen van de adaptieve formuliercontainer.
+* Voor het verzenden van andere acties dan **Forms Portal-verzendactie** de **[!UICONTROL Store data in Forms Portal]** optie is ingeschakeld in het dialoogvenster **[!UICONTROL Submission]** eigenschappen van de adaptieve formuliercontainer.
 
-Voor elk ontwerp en voorgelegd formulier voor aangemelde en anonieme gebruikers worden in het portal Formulieren de volgende gegevens opgeslagen:
+Voor elk ontwerp en voorgelegd formulier voor aangemelde en anonieme gebruikers slaat het Forms Portal de volgende gegevens op:
 
 * Metagegevens van formulieren zoals de naam, het formulierpad, de concept- of verzendings-id, het pad naar bijlagen en de gebruikersnaam van de gebruikersgegevens
 * Formulierbijlage als gegevensbytes
@@ -43,17 +43,17 @@ Afhankelijk van de geconfigureerde persistentie van de gegevensopslag worden con
   </tr>
   <tr>
    <td><p>Standaard</p> </td>
-   <td><p>AEM opslagplaats van auteur- en publicatieinstanties</p> </td>
+   <td><p>AEM gegevensopslagruimte van auteur- en publicatieinstanties</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Extern</p> </td>
-   <td><p>AEM opslagplaats van auteur en externe AEM</p> </td>
+   <td><p>AEM opslagplaats van Auteur en externe AEM</p> </td>
    <td><p><code>/content/forms/fp/</code></p> </td>
   </tr>
   <tr>
    <td><p>Database</p> </td>
-   <td><p>AEM gegevensopslagruimte van auteurinstantie en gegevensbestandlijsten</p> </td>
+   <td><p>AEM gegevensopslagruimte van instantie Auteur en databasetabellen</p> </td>
    <td>Databasetabellen <code>data</code>, <code>metadata</code>, en <code>additionalmetadata</code></td>
   </tr>
  </tbody>
@@ -69,7 +69,7 @@ Alle concepten en verzonden formuliergegevens in AEM instanties (auteur, publica
 
 #### Gebruikersgegevens openen {#access-user-data}
 
-Wanneer een aangemelde gebruiker een concept opslaat of een formulier verzendt, wordt een onderliggend knooppunt gemaakt met haar gebruikersnaam. Concepten en verzendgegevens voor Sarah Rose waarvan de gebruikersnaam `srose` worden opgeslagen in `/content/forms/fp/srose/` knooppunt in AEM repository. Binnen de knoop van identiteitskaart van de gebruiker, worden de gegevens georganiseerd in een hiërarchische structuur.
+Wanneer een aangemelde gebruiker een concept opslaat of een formulier verzendt, wordt een onderliggend knooppunt gemaakt met de bijbehorende gebruikers-id. Concepten en verzendgegevens voor Sarah Rose waarvan de gebruikersnaam `srose` worden opgeslagen in `/content/forms/fp/srose/` knooppunt in AEM repository. Binnen de knoop van identiteitskaart van de gebruiker, worden de gegevens georganiseerd in een hiërarchische structuur.
 
 In de volgende tabel wordt uitgelegd hoe de gegevens voor alle concepten `srose` wordt opgeslagen in AEM opslagplaats.
 
@@ -97,7 +97,7 @@ Concepten en verzendgegevens voor alle anonieme gebruikers worden opgeslagen in 
 
 ### Database {#database}
 
-Wanneer AEM wordt gevormd om gegevens in een gegevensbestand op te slaan, vormen portalconcept en voorleggingsgegevens in de volgende gegevensbestandlijsten voor zowel het programma geopende als anonieme gebruikers worden opgeslagen:
+Wanneer AEM wordt gevormd om gegevens in een gegevensbestand op te slaan, wordt het ontwerp en de voorleggingsgegevens van Forms Portal opgeslagen in de volgende gegevensbestandlijsten voor zowel het programma geopende als anonieme gebruikers:
 
 * data
 * metagegevens

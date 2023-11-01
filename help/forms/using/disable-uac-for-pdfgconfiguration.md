@@ -1,10 +1,10 @@
 ---
 title: UAC voor PDFG-configuratie uitschakelen voor zowel JEE als OSGI
-description: Stappen om UAC voor Configuratie PDFG onbruikbaar te maken om Word aan de omzetting van PDF te bevestigen.
+description: Leer de stappen op hoe u UAC voor Configuratie PDFG kunt onbruikbaar maken om Word aan PDF omzetting te bevestigen.
 exl-id: 785b7bb4-7158-45ea-a1e5-eebf3dc3ebc3
-source-git-commit: 0e5b89617d481c69882ec5d4658e76855aa9b691
+source-git-commit: 000c22028259eb05a61625d43526a2e8314a1d60
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
@@ -13,16 +13,18 @@ ht-degree: 0%
 
 ## Probleem {#issue}
 
-Wanneer de gebruiker Word- of Excel-bestanden naar PDF probeert om te zetten op Microsoft Windows Server, wordt de volgende fout aangetroffen:
+Wanneer de gebruiker Word- of Excel-bestanden naar PDF probeert om te zetten op Microsoft® Windows Server, wordt de volgende fout aangetroffen:
 
-*Foutbericht van de primaire converter: ALC-PDG-015-003-Het systeem kan het invoerbestand niet openen. Verzend het bestand opnieuw of neem contact op met de systeembeheerder.*
+*Foutbericht van de primaire converter:*
+*ALC-PDG-015-003-Het systeem kan het invoerbestand niet openen. Verzend het bestand opnieuw of neem contact op met de systeembeheerder.*
 
 
 ## Oplossing {#solution}
 
-Voer de volgende stappen uit om het probleem op te lossen:
+Ga als volgt te werk:
+
 1. Ga voor toegang tot het hulpprogramma Systeemconfiguratie naar **[!UICONTROL Start > Run]** en vervolgens voert u **[!UICONTROL MSCONFIG]**.
-1. Klik op de knop **[!UICONTROL Tools]** en omlaag schuiven en selecteren **[!UICONTROL Change UAC Settings]**. Klikken **[!UICONTROL Launch]** om de opdracht in een nieuw venster uit te voeren.
+1. Klik op de knop **[!UICONTROL Tools]** en omlaag schuiven en selecteren **[!UICONTROL Change UAC Settings]**. Klikken **[!UICONTROL Launch]** zodat u de opdracht in een nieuw venster kunt uitvoeren.
 1. Pas de schuifregelaar aan op het niveau Nooit aangeven. Wanneer gebeëindigd, sluit het bevelvenster en sluit het venster van de Configuratie van het Systeem.
 1. Verifieer dat register het plaatsen voor UAC aan 0 (nul) wordt geplaatst. Voer de volgende stappen uit om te verifiëren:
 
@@ -35,6 +37,4 @@ Voer de volgende stappen uit om het probleem op te lossen:
 
 ## Van toepassing op {#appliesto}
 
-Deze oplossing is van toepassing op het volgende:
-* AEM Forms op JEE Server
-* AEM Forms op OSGi Server
+Deze oplossing is van toepassing op AEM Forms op JEE Server en AEM Forms op OSGi Server.

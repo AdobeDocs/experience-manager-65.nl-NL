@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '987'
+source-wordcount: '985'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,9 @@ De procedure voor het creëren van een project is het zelfde voor alle projectma
 
 ### Bronnen koppelen aan uw project {#associating-resources-with-your-project}
 
-Met projecten kunt u resources groeperen in één entiteit om deze als geheel te beheren. Daarom moet u middelen aan uw project associëren. Deze bronnen worden binnen het project gegroepeerd als **Tegels**. De typen bronnen die u kunt toevoegen, worden beschreven in [Projectblokken](/help/sites-authoring/projects.md#project-tiles).
+Met projecten kunt u resources groeperen in één entiteit om deze als geheel te beheren. Daarom moet u middelen aan uw project associëren. Deze bronnen worden als **Tegels**. De typen bronnen die u kunt toevoegen, worden beschreven in [Projectblokken](/help/sites-authoring/projects.md#project-tiles).
 
-Bronnen aan uw project koppelen:
+Om middelen met uw project te associëren:
 
 1. Open uw project vanuit de **Projecten** console.
 1. Tikken/klikken **Tegel toevoegen** en selecteer de tegel die u aan uw project wilt koppelen. U kunt meerdere typen tegels selecteren.
@@ -109,11 +109,11 @@ Elementen worden weergegeven in de spoorstaaf. Gebruik de spoorkiezer om terug t
 
 ### Inactieve projecten weergeven {#viewing-active-inactive-projects}
 
-Tussen uw actieve en [inactieve projecten;](#making-projects-inactive-or-active) in de **Projecten** console, klik **Actieve projecten schakelen** in de werkbalk.
+Tussen uw actieve en [inactieve projecten;](#making-projects-inactive-or-active) in de **Projecten** console, klik **Actieve projecten in-/uitschakelen** in de werkbalk.
 
 ![Pictogram Actieve projecten in-/uitschakelen](assets/projects-toggle-active.png)
 
-Door gebrek toont de console actieve projecten. Klik op de knop **Actieve projecten schakelen** pictogram één keer om naar het bekijken van inactieve projecten over te schakelen. Klik opnieuw het om op actieve projecten terug te schakelen.
+Door gebrek toont de console actieve projecten. Klik op de knop **Actieve projecten in-/uitschakelen** pictogram één keer om naar het bekijken van inactieve projecten over te schakelen. Klik opnieuw het om op actieve projecten terug te schakelen.
 
 ## Projecten organiseren {#organizing-projects}
 
@@ -154,7 +154,7 @@ Voer de volgende stappen uit om een project te verwijderen.
 1. Ga naar het hoogste niveau van **Projecten** console.
 1. Het selecteren van uw project in de console.
 1. Tik of klik op **Verwijderen** in de werkbalk.
-1. AEM kan bijbehorende projectgegevens verwijderen/wijzigen bij het verwijderen van een project. Selecteer de opties die u nodig hebt in het dialoogvenster **Project verwijderen** .
+1. AEM kan bijbehorende projectgegevens verwijderen/wijzigen bij het verwijderen van een project. Selecteer de opties die u nodig hebt in het dialoogvenster **Project verwijderen** in.
    * Projectgroepen en -rollen verwijderen
    * Map Projectelementen verwijderen
    * Projectworkflows beëindigen

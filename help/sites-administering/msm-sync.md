@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2701'
+source-wordcount: '2699'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaak
 
 * **Bij activering**: De bronpagina wordt geactiveerd.
 
-* **Bij deactivering**: De bronpagina wordt gedeactiveerd.
+* **Bij deactivering**: De bronpagina is gedeactiveerd.
 
 >[!NOTE]
 >
@@ -64,7 +64,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
   </tr>
   <tr>
    <td>Standaardconfiguratie voor rollout</td>
-   <td>Standaardrollout-configuratie waarmee het implementatieproces kan worden gestart bij rollout-trigger en waarmee handelingen kunnen worden uitgevoerd: onderliggende knooppunten maken, bijwerken, verwijderen en ordenen.</td>
+   <td>Standaardrollout-configuratie waarmee het implementatieproces kan worden gestart bij rollout-trigger en waarmee handelingen kunnen worden uitgevoerd: maken, bijwerken, inhoud verwijderen en onderliggende knooppunten bestellen.</td>
    <td>Bij rollout</td>
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> productUpdate<br /> orderChildren</td>
   </tr>
@@ -117,7 +117,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïn
    <td>contentUpdate<br /> contentCopy<br /> contentDelete<br /> referencesUpdate<br /> orderChildren<br /> dpsMetadataFilter</td>
   </tr>
   <tr>
-   <td>Configuratie van verouderde (5.6.0) catalogus-uitrol</td>
+   <td>Verouderde (5.6.0) configuratie van de Catalogusuitrol</td>
    <td>Vervangen. Gebruik Catalogusgenerator in plaats van MSM voor catalogusrollouts.</td>
    <td>Bij rollout</td>
    <td>editProperties</td>
@@ -153,7 +153,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   </tr>
   <tr>
    <td>editProperties</td>
-   <td><p>Hiermee bewerkt u de eigenschappen van de actieve kopie. De eigenschap editMap bepaalt welke eigenschappen worden bewerkt en de waarde ervan. De waarde van de eigenschap editMap moet de volgende indeling gebruiken:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ... ,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>De <code>current_value</code> en <code>new_value</code> items zijn reguliere expressies. <br /> </p> <p>Neem bijvoorbeeld de volgende waarde voor editMap:</p> <p><code>sling:resourceType#/</code>(contentPage|homepage)#/<br /> MobilinhoudPage<br /> cq:template#/contentPage#/mobileContentPage</p> <p>Met deze waarde worden de eigenschappen van de knooppunten van de live kopie als volgt bewerkt:</p>
+   <td><p>Hiermee bewerkt u de eigenschappen van de actieve kopie. De eigenschap editMap bepaalt welke eigenschappen worden bewerkt en de waarde ervan. De waarde van de eigenschap editMap moet de volgende indeling gebruiken:</p> <p><code>[property_name_1]#[current_value]#</code>[new_value],<br /> <code>[property_name_2]#[current_value]#</code>[new_value],<br /> ...,<br /> <code>[property_name_n]#[current_value]#</code>[new_value]</p> <p>De <code>current_value</code> en <code>new_value</code> items zijn reguliere expressies. <br /> </p> <p>Neem bijvoorbeeld de volgende waarde voor editMap:</p> <p><code>sling:resourceType#/</code>(contentPage|homepage)#/<br /> mobileContentPage<br /> cq:template#/contentPage#/mobileContentPage</p> <p>Met deze waarde worden de eigenschappen van de knooppunten van de live kopie als volgt bewerkt:</p>
     <ul>
      <li>De <code>sling:resourceType</code> eigenschappen die zijn ingesteld op <code>contentpage</code> of aan <code>homepage</code> zijn ingesteld op <code>mobilecontentpage.</code></li>
      <li>De <code>cq:template</code> eigenschappen die zijn ingesteld op <code>contentpage</code> zijn ingesteld op <code>mobilecontentpage.</code></li>
@@ -172,7 +172,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   </tr>
   <tr>
    <td>referencesUpdate</td>
-   <td><p>Voor de live kopie werkt deze synchronisatiehandeling verwijzingen zoals koppelingen bij.<br /> Er wordt gezocht naar paden op de pagina's met live kopieën die naar een bron in de blauwdruk verwijzen. Wanneer gevonden, werkt het de weg bij om aan het verwante middel binnen het levende exemplaar (in plaats van het blauwdruk) te richten. Verwijzingen met doelen buiten de blauwdruk worden niet gewijzigd.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">De service Actie bijwerken van CQ MSM-verwijzingen configureren</a> om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. </p> </td>
+   <td><p>Voor de live kopie werkt deze synchronisatiehandeling verwijzingen zoals koppelingen bij.<br /> Er wordt gezocht naar paden op de pagina's met live kopieën die naar een bron in de blauwdruk verwijzen. Wanneer gevonden, werkt het de weg bij om aan het verwante middel binnen het levende exemplaar (in plaats van het blauwdruk) te richten. Verwijzingen die doelen buiten de blauwdruk hebben, worden niet gewijzigd.</p> <p><a href="#excluding-properties-and-node-types-from-synchronization">De service Actie bijwerken van CQ MSM-verwijzingen configureren</a> om de knooppunttypes, paragraafpunten, en pagina-eigenschappen te specificeren om uit te sluiten. </p> </td>
    <td> </td>
   </tr>
   <tr>
@@ -193,7 +193,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
   <tr>
    <td>werkstroom</td>
    <td><p>Hiermee wordt de workflow gestart die door de eigenschap target (alleen voor pagina's) wordt gedefinieerd en wordt de live kopie als een payload ingesteld.</p> <p>Het doelpad is het pad van het modelknooppunt.</p> </td>
-   <td>doel: (String) Het pad naar het workflowmodel.<br /> </td>
+   <td>target: (String) Het pad naar het workflowmodel.<br /> </td>
   </tr>
   <tr>
    <td>verplicht</td>
@@ -203,7 +203,7 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li>
      <li>ActionSet.ACTION_NAME_ACL_MODIFY</li>
     </ul> <p>Gebruik deze handeling alleen voor pagina's.</p> </td>
-   <td>doel: (Tekenreeks) De id van de groep waarvoor u machtigingen instelt. <br /> </td>
+   <td>target: (String) De id van de groep waarvoor u machtigingen instelt. <br /> </td>
   </tr>
   <tr>
    <td>mandatoryContent</td>
@@ -212,16 +212,16 @@ De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïns
      <li>ActionSet.ACTION_NAME_SET_PROPERTY</li>
      <li>ActionSet.ACTION_NAME_ACL_MODIFY</li>
     </ul> <p>Gebruik deze handeling alleen voor pagina's.</p> </td>
-   <td>doel: (Tekenreeks) De id van de groep waarvoor u machtigingen instelt. </td>
+   <td>target: (String) De id van de groep waarvoor u machtigingen instelt. </td>
   </tr>
   <tr>
    <td>mandatoryStructure</td>
    <td>Plaatst de toestemming van ACL ActionSet.ACTION_NAME_REMOVE op de levende exemplaarpagina aan read-only voor een specifieke gebruikersgroep. Gebruik deze handeling alleen voor pagina's.</td>
-   <td>doel: (Tekenreeks) De id van de groep waarvoor u machtigingen instelt. </td>
+   <td>target: (String) De id van de groep waarvoor u machtigingen instelt. </td>
   </tr>
   <tr>
    <td>VersionCopyAction</td>
-   <td>Als de blauwdruk-/bronpagina ten minste één keer is gepubliceerd, wordt een pagina voor live kopieën gemaakt met de versie die wordt gepubliceerd. Opmerking: deze handeling is alleen beschikbaar voor het maken van een pagina met live kopieën op basis van een gepubliceerde bronpagina, niet voor het bijwerken van een bestaande pagina met live kopieën. </td>
+   <td>Als de blauwdruk-/bronpagina ten minste één keer is gepubliceerd, wordt een pagina voor live kopieën gemaakt met de versie die wordt gepubliceerd. Opmerking: deze handeling is alleen beschikbaar voor het maken van een pagina voor live kopieën op basis van een gepubliceerde bronpagina, niet voor het bijwerken van een bestaande pagina voor live kopieën. </td>
    <td> </td>
   </tr>
   <tr>
@@ -271,7 +271,7 @@ U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieactie
 
 Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
-In de volgende tabel staan de synchronisatiehandelingen waarvoor u de knooppunten kunt opgeven die moeten worden uitgesloten. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
+In de volgende tabel worden de synchronisatiehandelingen weergegeven waarvoor u de knooppunten kunt opgeven die moeten worden uitgesloten. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
 
 | Synchronisatie-actie | Servicenaam in webconsole | Service PID |
 |---|---|---|
@@ -374,7 +374,7 @@ Bijvoorbeeld, gebruikt een blauwdruk de Site van de Verwijzing Wij.Retail als br
 
 ### De rollout-configuraties instellen voor een Live Copy-pagina {#setting-the-rollout-configurations-for-a-live-copy-page}
 
-Vorm een levende exemplaarpagina met de rollout configuraties aan gebruik wanneer de bronpagina uit wordt opgerold. De pagina&#39;s van het kind erven de configuratie door gebrek. Wanneer u de rollout configuratie aan gebruik vormt, treedt u de configuratie met voeten die de levende exemplaarpagina van zijn ouder erft.
+Vorm een levende exemplaarpagina met de rollout configuraties aan gebruik wanneer de bronpagina uit wordt opgerold. Onderliggende pagina&#39;s nemen de configuratie standaard over. Wanneer u de rollout configuratie aan gebruik vormt, treedt u de configuratie met voeten die de levende exemplaarpagina van zijn ouder erft.
 
 U kunt de rollout configuraties voor een levende exemplaarpagina ook vormen wanneer u [de live kopie maken](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-page).
 

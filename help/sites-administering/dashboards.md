@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '839'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Wanneer u AEM gebruikt, kunt u veel inhoud van verschillende typen beheren (bijv
 
 Ga als volgt te werk om een nieuw dashboard te maken:
 
-1. In de **Gereedschappen** sectie, klikt u op **Configuratieconsole**.
+1. In de **Gereedschappen** sectie, klikken **Configuratieconsole**.
 1. Dubbelklik in de structuur op **Dashboard**.
 1. Klikken **Nieuw dashboard**.
 1. Typ de **Titel** (bijvoorbeeld Mijn dashboard) en de **Naam**.
@@ -45,7 +45,7 @@ Ga als volgt te werk om een nieuw dashboard te maken:
 
 Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud vanuit verschillende weergaven te bekijken. AEM biedt een kloonfunctie waarmee u een bestaand dashboard kunt dupliceren, zodat u een nieuw dashboard kunt maken. Ga als volgt te werk om een dashboard te klonen:
 
-1. In de **Gereedschappen** sectie, klikt u op **Configuratieconsole**.
+1. In de **Gereedschappen** sectie, klikken **Configuratieconsole**.
 
 1. Klik in de structuur op **Dashboard**.
 1. Klik op het dashboard dat u wilt klonen.
@@ -56,7 +56,7 @@ Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud van
 
 ### Een dashboard verwijderen {#removing-a-dashboard}
 
-1. In de **Gereedschappen** sectie, klikt u op **Configuratieconsole**.
+1. In de **Gereedschappen** sectie, klikken **Configuratieconsole**.
 
 1. Klik in de structuur op **Dashboard**.
 1. Klik op het dashboard dat u wilt verwijderen.
@@ -92,9 +92,9 @@ De **Basis** verleent toegang tot de volgende configuratieingangen:
 
 **Type aanvraag** De manier waarop gegevens worden aangevraagd.
 
-**SiteCatalyst-configuratie (optioneel)** De configuratie u wilt gebruiken om met SiteCatalyst te verbinden. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
+**Configuratie SiteCatalyst (optioneel)** De configuratie u wilt gebruiken om met SiteCatalyst te verbinden. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
 
-**ID rapportsuite (optioneel)** De SiteCatalyst-rapportsuite die u wilt gebruiken om de grafiek te genereren.
+**ID rapportsuite (optioneel)** De het rapportreeks van de SiteCatalyst u wilt gebruiken om de grafiek te produceren.
 
 #### Rapportconfiguratie {#report-configuration}
 
@@ -138,7 +138,7 @@ Elke component definieert ook specifieke instellingen.
 
 **Elementen** Het element dat de cijfergegevens in de grafiek opsplitst.
 
-#### Rapport voor bovenste sectie {#top-site-section-report}
+#### Rapport voor bovenste site-sectie {#top-site-section-report}
 
 Deze component geeft een grafiek weer met de meer bezochte sectie van een website volgens de volgende configuratie.
 
@@ -180,7 +180,7 @@ Het ontwikkelen van een dashboardcomponent bestaat uit het maken van een gewone 
 
 ![chlimage_1-31](assets/chlimage_1-31a.png)
 
-De bovenste auteurcomponenten worden opgeslagen in de repository op `/apps/geometrixx-outdoors/components/reporting` en bestaat uit:
+De bovenste auteurcomponenten worden opgeslagen in de gegevensopslagruimte op `/apps/geometrixx-outdoors/components/reporting` en bestaat uit:
 
 1. a `jsp` bestand dat jcr-gegevens leest en dat de `html` plaatsaanduiding.
 

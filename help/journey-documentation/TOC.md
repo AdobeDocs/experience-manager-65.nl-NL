@@ -5,9 +5,9 @@ breadcrumb-title: AEM Documentenreizen
 user-guide-description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
 feature: Developer Tools
 role: Developer, Architect
-source-git-commit: 0b8b517607f305ad82caf6ba766cad5a46021439
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '529'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Please note that all links to other guides need to be absolute references with l
       + [Vertaalregels configureren](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translation-rules.html)
       + [Inhoud vertalen](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/translate-content.html)
       + [Vertaalde inhoud publiceren](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/translation/publish-content.html)
-   + Schrijverreis zonder kopinhoud {#author}
+   + Auteursreis zonder kopinhoud {#author}
       + [AEM Schrijverreis zonder kopinhoud - Overzicht](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/overview.html)
       + [Ontwerpen voor headless met AEM - Een inleiding](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/introduction.html)
       + [Grondbeginselen van ontwerpen voor headless met AEM](https://experienceleague.adobe.com/docs/experience-manager-65/headless-journey/author/basics.html)

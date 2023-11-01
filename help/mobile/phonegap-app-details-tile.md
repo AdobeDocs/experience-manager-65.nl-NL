@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1248'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 De **App beheren** De tegel op het dashboard van de App verstrekt de capaciteit om details over de Toepassing te wijzigen. Als u de pagina Details wilt openen, klikt u op de detailkoppeling van de app beheren. Vanuit de beheerpagina kunt u de configuratie-instellingen (config.xml) van de PhoneGap-toepassing bewerken en uw toepassing voorbereiden voor verzending naar de verschillende opslagruimten van toepassingen.
 
@@ -25,7 +25,7 @@ De **App beheren** De tegel op het dashboard van de App verstrekt de capaciteit 
 
 ## De toepassingstegel beheren {#understanding-the-manage-app-tile}
 
-U kunt in elke tegel in de **App beheren** om details weer te geven of te bewerken door op de knop &#39;..&#39; te klikken. in de rechterbenedenhoek.
+U kunt in elke tegel in de **App beheren** U kunt een tegel toevoegen om details weer te geven of te bewerken door te klikken op &#39;...&#39; in de rechterbenedenhoek.
 
 ### Het tabblad Standaard {#the-basic-tab}
 
@@ -37,7 +37,7 @@ U kunt de **Naam**, **Auteur**, **Korte beschrijving** en de **Beschrijving** vo
 
 Elk mobiel toepassingsplatform beschrijft welke gegevens worden verzameld, specifiek gericht op elke toepassingsopslag.
 
-Weergegeven Platforms worden aangestuurd door de inhoud PhoneGap config.xml:
+De getoonde platforms worden gedreven door de inhoud PhoneGap config.xml:
 
 ```xml
 <widget>
@@ -64,7 +64,7 @@ Elke winkel van leverancierstoepassingen, bijvoorbeeld Apple App Store of Google
 
 #### Algemene metagegevens {#common-metadata}
 
-Elke toepassing zou bijbehorende meta-gegevens moeten hebben die in het vormen van verschillende aspecten van de toepassing helpen. De pagina App beheren wordt gescheiden in twee verschillende gebieden die betrekking hebben op de verzameling van metagegevens. Specifieke metagegevens en algemene metagegevens Platforms.
+Elke toepassing zou bijbehorende meta-gegevens moeten hebben die in het vormen van verschillende aspecten van de toepassing helpen. De pagina App beheren wordt gescheiden in twee verschillende gebieden die betrekking hebben op de verzameling van metagegevens. Platformspecifieke metagegevens en algemene metagegevens.
 
 Er zijn algemene configuratie en metagegevens voor alle platforms.
 
@@ -84,7 +84,7 @@ In deze sectie definieert u de URL van de Content Update Server, de openingspagi
 >
 >Bovenaan in de weergave Details ziet u de toepassingsversie, PhoneGap-versie en URL bijwerken. Elk van deze waarden kan worden ingesteld in de sectie Algemene metagegevens. De toepassings-id kan echter niet worden bewerkt.
 
-#### Metagegevens Platform {#platform-metadata}
+#### Metagegevens platform {#platform-metadata}
 
 Elk platform dat in PhoneGap config.xml wordt bepaald kan de eigenschappen van het douaneplatform bevatten. Een AEM ontwikkelaar moet de inhoudsstructuur bijdragen om deze eigenschappen vast te leggen. Een voorbeeld van platformspecifieke eigenschappen vindt u in iOS.
 
@@ -98,11 +98,11 @@ Voor platforms die niet door AEM worden begrepen, is het nog mogelijk voor een A
 
 #### iOS-metagegevens {#ios-metadata}
 
-De Apple AppStore heeft aanvullende metagegevens nodig om uw toepassing voor distributie te kunnen verzenden. In de sectie met iOS-metagegevens wordt geprobeerd de vereiste informatie te verzamelen die door het iTMSTransporter-hulpprogramma van Apple kan worden gebruikt om de metagegevens te publiceren naar de bijbehorende Apple-ontwikkelaarsaccount.
+De Apple AppStore vereist extra meta-gegevens om uw toepassing voor distributie voor te leggen. In de sectie met iOS-metagegevens wordt geprobeerd de vereiste informatie te verzamelen die door het iTMSTransporter-hulpprogramma van Apple kan worden gebruikt om de metagegevens te publiceren naar de bijbehorende Apple-ontwikkelaarsaccount.
 
 Als u de specifieke metagegevens voor Apple wilt verkrijgen, moet u eerst de toepassing maken op [https://itunesconnect.apple.com](https://itunesconnect.apple.com/). Bij het maken van uw toepassing genereert Apple metagegevens die vereist zijn in de sectie met iOS-metagegevens als u de Apple iTMSTransporter-tool wilt gebruiken om de metagegevens te valideren en te uploaden naar itunesconnect.apple.com. Als u alleen de metagegevens wilt verzamelen, hoeft u niet noodzakelijkerwijs de iOS-specifieke metagegevens in te vullen. U kunt nog steeds de metagegevens exporteren die de iOS en de algemene metagegevens samenvoegen en alle schermafbeeldingen verzamelen in een ZIP-bestand dat op elk gewenst moment kan worden gedownload.
 
-Het gedownloade zip-bestand bevat een gps-bestand dat kan worden gecontroleerd op metadata.xml. Het itmsp-bestand bevat de geëxporteerde metagegevens (in het bestand metadata.xml) en alle bijbehorende schermafbeeldingen.
+Het gedownloade zip-bestand bevat een gps-bestand dat kan worden geïnspecteerd op metadata.xml. Het itmsp-bestand bevat de geëxporteerde metagegevens (in het bestand metadata.xml) en alle bijbehorende schermafbeeldingen.
 
 De exportfunctionaliteit wordt gebruikt om een handige manier te bieden om de schermafbeeldingen en metagegevens te verzamelen die kunnen worden doorgegeven aan de uitgever van de toepassing voor invoer in de specifieke toepassingsopslag van de leverancier.
 
@@ -120,7 +120,7 @@ De exportfunctionaliteit wordt gebruikt om een handige manier te bieden om de sc
 
 Een van de belangrijkste functies van AEM Apps is de mogelijkheid om een mobiele toepassing nieuwe inhoud te laten aanvragen via ContentSync, waar inhoud kan bestaan uit HTML-bronnen, pagina&#39;s, video, afbeeldingen, tekst en meer. Nadat de inhoud door de auteur is bijgewerkt en vervolgens is gepubliceerd, stelt de server de update van de inhoud beschikbaar zodat de mobiele toepassing deze kan downloaden.
 
-Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te publiceren instantie moet richten; rechtstreeks of via de Dispatcher of CDN. De indeling van de URL is eenvoudig:
+Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te publiceren instantie moet richten; of direct of door de Verzender of CDN. De indeling van de URL is eenvoudig:
 
 `https://[hostname]:[port]`
 
@@ -134,9 +134,9 @@ De **Plug-ins** bevat een beschrijving van de plug-ins die aan uw app zijn gekop
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 
-### Het tabblad Screenshots {#the-screenshots-tab}
+### Het tabblad Schermopnamen {#the-screenshots-tab}
 
-De **Schermafbeeldingen** worden de ondersteunde schermresoluties op verschillende platforms weergegeven.
+De **Screenshots** worden de ondersteunde schermresoluties op verschillende platforms weergegeven.
 
 ![chlimage_1-123](assets/chlimage_1-123.png)
 

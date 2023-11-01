@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '825'
+source-wordcount: '823'
 ht-degree: 12%
 
 ---
@@ -43,19 +43,19 @@ U kunt extra zoektabbladen toevoegen door deze te configureren in het dialoogven
 
    >[!NOTE]
    >
-   >Wanneer u een tweede `siteadminsearchpanel`moet u een `id` gebruiken om formulierconflicten te voorkomen.
+   >Wanneer u een tweede `siteadminsearchpanel`, moet u een `id` om formulierconflicten te voorkomen.
 
 ## Aangepaste voorspelling maken {#creating-custom-predicates}
 
 [!DNL Assets] wordt geleverd met een set vooraf gedefinieerde voorspelling die kan worden gebruikt om een pagina voor het delen van elementen aan te passen. Op deze manier wordt een aandeel in activa aangepast in [Een pagina voor het delen van elementen maken en configureren](/help/assets/assets-finder-editor.md#creating-and-configuring-an-asset-share-page).
 
-Naast het gebruik van reeds bestaande voorspellingen, [!DNL Experience Manager] ontwikkelaars kunnen ook hun eigen voorspellingen maken met behulp van de [Query Builder-API](/help/sites-developing/querybuilder-api.md).
+Naast het gebruik van reeds bestaande voorspellingen, [!DNL Experience Manager] ontwikkelaars kunnen ook hun eigen voorspellingen maken met de [Query Builder-API](/help/sites-developing/querybuilder-api.md).
 
 Voor het maken van aangepaste predikaten is basiskennis over de [Widget-framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
 De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Voorspelregels voor monsters bevinden zich in **/libs/cq/search/components/predicates**.
 
-### Voorbeeld: Een eenvoudige voorspelling van eigenschappen maken {#example-build-a-simple-property-predicate}
+### Voorbeeld: een eenvoudige eigenschap maken {#example-build-a-simple-property-predicate}
 
 Een voorspelling van eigenschappen maken:
 
@@ -140,7 +140,7 @@ Een voorspelling van eigenschappen maken:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt **cq:editConfig** van het primaire type **cq:EditConfig** toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden **cq:actions** met één waarde van **DELETE** toe te voegen.
-1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld **press.html**) overschakelen naar de ontwerpmodus en uw nieuwe component inschakelen voor het predikaat-alineasysteem (bijvoorbeeld **left**).
+1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld **press.html**) schakelt u over naar de ontwerpmodus en schakelt u uw nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
 
 1. In **Bewerken** de nieuwe component is nu beschikbaar in de sidekick (in de **Zoeken** groep). De component invoegen in het dialoogvenster **Voorspellen** kolom en typ een zoekwoord, bijvoorbeeld **Ruitje** en klik op het vergrootglas om het zoeken te starten.
 
@@ -148,7 +148,7 @@ Een voorspelling van eigenschappen maken:
    >
    >Zorg er bij het zoeken voor dat u de term exact typt, inclusief het juiste hoofdlettergebruik.
 
-### Voorbeeld: Een eenvoudige groepspreiding maken {#example-build-a-simple-group-predicate}
+### Voorbeeld: een eenvoudige groepspreiding maken {#example-build-a-simple-group-predicate}
 
 Om een groep te bouwen predikaat:
 
@@ -244,7 +244,7 @@ Om een groep te bouwen predikaat:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt **cq:editConfig** van het primaire type **cq:EditConfig** toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden **cq:actions** met één waarde van **DELETE** toe te voegen.
-1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld **press.html**) overschakelen naar de ontwerpmodus en uw nieuwe component inschakelen voor het predikaat-alineasysteem (bijvoorbeeld **left**).
+1. Navigeer naar de browser en op de voorbeeldpagina (bijvoorbeeld **press.html**) schakelt u over naar de ontwerpmodus en schakelt u uw nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
 1. In **Bewerken** de nieuwe component is nu beschikbaar in de sidekick (in de **Zoeken** groep). De component invoegen in het dialoogvenster **Voorspellen** kolom.
 
 ## Vooraf geïnstalleerde widgets {#installed-predicate-widgets}
@@ -290,7 +290,7 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 | titel | String | Hiermee wordt een extra bovenste titel toegevoegd |
 | predikaatName | String | Naam van de voorspelling. Standaardwaarden: `daterange` |
 | eigenschapsnaam | String | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/metadata/cq:tags` |
-| samenvouwen | String | Niveau samenvouwen. Standaardwaarden: `level1` |
+| ineenstorten | String | Niveau samenvouwen. Standaardwaarden: `level1` |
 | triggerSearch | Boolean | Markering voor het activeren van zoekopdrachten bij controle. Standaard ingesteld op false |
 | searchCallback | -functie | Callback voor het teweegbrengen van onderzoek. Standaardwaarden: `CQ.wcm.SiteAdmin.doSearch` |
 | searchTimeoutTime | Getal | Time-out voordat searchCallback wordt gestart. Wordt standaard ingesteld op 800 ms |

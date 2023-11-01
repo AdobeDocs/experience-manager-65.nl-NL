@@ -1,18 +1,14 @@
 ---
 title: SPA
-seo-title: SPA Blueprint
 description: In dit document wordt het algemene, kaderonafhankelijke contract beschreven dat elk SPA kader moet vervullen om bewerkbare SPA binnen AEM te implementeren.
-seo-description: This document describes the general, framework-independent contract that any SPA framework should fulfill in order to implement editable SPA components within AEM.
-uuid: 48f2d415-ec34-49dc-a8e1-6feb5a8a5bbe
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 04ac8203-320b-4671-aaad-6e1397b12b6f
 docset: aem65
 exl-id: 383f84fd-455c-49a4-9e2b-1c4757cc188b
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2080'
+source-wordcount: '2074'
 ht-degree: 0%
 
 ---
@@ -31,7 +27,7 @@ In dit document wordt het algemene contract beschreven waaraan elk SPA kader moe
 
 >[!NOTE]
 >
->De volgende vereisten zijn frameonafhankelijk. Als aan deze vereisten wordt voldaan, kan een kader-specifieke laag worden verstrekt die uit modules, componenten, en de diensten wordt samengesteld.
+>De volgende vereisten zijn onafhankelijk van het framework. Als aan deze vereisten wordt voldaan, kan een kader-specifieke laag worden verstrekt die uit modules, componenten, en de diensten wordt samengesteld.
 >
 >**Aan deze eisen wordt reeds voldaan voor de React and Angular frameworks in AEM.** De vereisten in deze blauwdruk zijn alleen relevant als u een ander kader voor gebruik met AEM wilt implementeren.
 
@@ -39,7 +35,7 @@ In dit document wordt het algemene contract beschreven waaraan elk SPA kader moe
 >
 >Hoewel de SPA mogelijkheden van AEM frameonafhankelijk zijn, worden momenteel alleen de React- en Angular-frameworks ondersteund.
 
-Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de gegevens uit te geven die door één enkel kader van de Toepassing van de Pagina worden blootgesteld, moet een project de structuur van het model kunnen interpreteren die de semantische die gegevens vertegenwoordigt voor een toepassing binnen de AEM bewaarplaats worden opgeslagen. Om dit doel te bereiken, worden twee raamwerk-agnostische bibliotheken verstrekt: de `PageModelManager` en de `ComponentMapping`.
+Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de gegevens uit te geven die door een Enige Kader van de Toepassing van de Pagina worden blootgesteld, moet een project de structuur van het model kunnen interpreteren die de semantische waarde van de gegevens vertegenwoordigt die voor een toepassing binnen de AEM bewaarplaats worden opgeslagen. Om dit doel te bereiken, worden twee raamwerk-agnostische bibliotheken aangeboden: de `PageModelManager` en de `ComponentMapping`.
 
 ### PageModelManager {#pagemodelmanager}
 
@@ -49,13 +45,13 @@ Namens de SPA onttrekt het de herwinning en het beheer van de structuur JSON die
 
 Zie het NPM-pakket [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 
-Bij het initialiseren van het dialoogvenster `PageModelManager`, laadt de bibliotheek eerst het verstrekte wortelmodel van App (via parameter, meta bezit, of huidige URL). Als in de bibliotheek wordt aangegeven dat het model van de huidige pagina geen deel uitmaakt van het hoofdmodel, wordt het opgehaald en opgenomen als het model van een onderliggende pagina.
+Bij het initialiseren van de `PageModelManager`, laadt de bibliotheek eerst het verstrekte wortelmodel van App (via parameter, meta bezit, of huidige URL). Als in de bibliotheek wordt aangegeven dat het model van de huidige pagina geen deel uitmaakt van het hoofdmodel, wordt het opgehaald en opgenomen als het model van een onderliggende pagina.
 
 ![page_model_consolidatie](assets/page_model_consolidation.png)
 
 ### ComponentMapping {#componentmapping}
 
-De `ComponentMapping` wordt verstrekt als pakket NPM aan het front-end project. Het slaat front-end componenten op en verstrekt een manier voor de SPA om front-end componenten aan AEM middeltypes in kaart te brengen. Hierdoor wordt een dynamische resolutie van componenten ingeschakeld bij het parseren van het JSON-model van de toepassing.
+De `ComponentMapping` wordt verstrekt als pakket NPM aan het front-end project. Het slaat front-end componenten op en verstrekt een manier voor de SPA aan kaart front-end componenten aan AEM middeltypes. Hierdoor wordt een dynamische resolutie van componenten ingeschakeld bij het parseren van het JSON-model van de toepassing.
 
 Elk onderdeel in het model bevat een `:type` veld dat een AEM-brontype weergeeft. Als de front-end component is gekoppeld, kan deze zichzelf renderen met behulp van het fragment van het model dat is ontvangen van de onderliggende bibliotheken.
 
@@ -75,15 +71,15 @@ In de rest van dit document worden de vereisten van deze specifieke laag van het
 
 De inhoudsstructuur van de pagina wordt opgeslagen in AEM. Het model van de pagina wordt gebruikt om SPA componenten in kaart te brengen en te concretiseren. De SPA ontwikkelaars creëren SPA componenten die zij aan AEM componenten in kaart brengen. Om dit te doen, gebruiken zij het middeltype (of weg aan de AEM component) als unieke sleutel.
 
-De SPA componenten moeten synchroon zijn met het paginamodel en worden bijgewerkt met wijzigingen in de inhoud. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven structuur van het paginamodel.
+De SPA componenten moeten synchroon zijn met het paginamodel en worden bijgewerkt met eventuele wijzigingen in de inhoud. Een patroon dat gebruikmaakt van dynamische componenten, moet worden gebruikt om direct componenten te instantiëren volgens de opgegeven modelstructuur van de pagina.
 
 ### Meta-velden {#meta-fields}
 
-Het paginamodel gebruikt de JSON Model Exporter, die zelf gebaseerd is op de [Verkoopmodel](https://sling.apache.org/documentation/bundles/models.html) API. De exporteerbare slingmodellen stellen de volgende lijst van gebieden bloot om de onderliggende bibliotheken toe te laten het gegevensmodel interpreteren:
+Het paginamodel gebruikt de JSON Model Exporter, die zelf gebaseerd is op de [Verkoopmodel](https://sling.apache.org/documentation/bundles/models.html) API. De exporteerbare kiesmodellen geven de volgende lijst met velden weer, zodat de onderliggende bibliotheken het gegevensmodel kunnen interpreteren:
 
-* `:type`: Type van de AEM (gebrek = middeltype)
+* `:type`: Type van de AEM-bron (standaard = type resource)
 * `:children`: Hierarchische onderliggende elementen van de huidige bron. Onderliggende items maken geen deel uit van de binneninhoud van de huidige bron (vindt u bij items die een pagina vertegenwoordigen)
-* `:hierarchyType`: Het hiërarchische type van een bron. De `PageModelManager` ondersteunt momenteel het paginatype
+* `:hierarchyType`: Hiërarchisch type van een bron. De `PageModelManager` ondersteunt momenteel het paginatype
 
 * `:items`: Bronnen voor onderliggende inhoud van de huidige bron (geneste structuur, alleen aanwezig op containers)
 * `:itemsOrder`: Ordered list of the children. Het JSON-toewijzingsobject garandeert de volgorde van de velden niet. Door zowel de kaart als de huidige array te hebben, heeft de consument van de API de voordelen van beide structuren
@@ -95,7 +91,7 @@ Zie ook [Aan de slag met AEM Content Services.](https://helpx.adobe.com/experien
 
 Het scheiden van zorgen helpt de uitvoering van het project te vergemakkelijken. Daarom moet een npm-specifiek pakket worden verstrekt. Dit pakket is verantwoordelijk voor het samenvoegen en blootstellen van de basismodules, de diensten, en de componenten. Deze componenten moeten de logica van het gegevensmodelbeheer inkapselen en toegang tot de gegevens verlenen de component van het project verwacht. De module is ook verantwoordelijk voor het tijdelijk blootstellen van nuttige ingangspunten van de onderliggende bibliotheken.
 
-Om de interoperabiliteit van de bibliotheken te bevorderen, adviseert Adobe de kader-specifieke module om de volgende bibliotheken te bundelen. Indien nodig, kan de laag onderliggende APIs inkapselen en aanpassen alvorens hen aan het project bloot te stellen.
+Om de interoperabiliteit van de bibliotheken te vergemakkelijken, adviseert de Adobe de specifieke module voor het kader om de volgende bibliotheken te bundelen. Indien nodig, kan de laag onderliggende APIs inkapselen en aanpassen alvorens hen aan het project bloot te stellen.
 
 * [@adobe/aem-spa-page-model-manager](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
 * [@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
@@ -128,13 +124,13 @@ De componentdecorator is verantwoordelijk voor het versieren van de buitenste HT
 
 De volgende meta-gegevens moeten aan het buitenelement van HTML worden toegevoegd dat door de component van het project wordt geproduceerd. Hiermee kan de Pagina-editor de corresponderende bewerkingsconfiguratie ophalen.
 
-* `data-cq-data-path`: Pad naar de bron ten opzichte van de `jcr:content`
+* `data-cq-data-path`: Het pad naar de bron ten opzichte van de `jcr:content`
 
 #### Bewerkbaarheidsverklaring en plaatsaanduiding {#editing-capability-declaration-and-placeholder}
 
 De volgende meta- gegevens en klassennamen moeten aan het buitenelement van HTML worden toegevoegd dat door de component van het project wordt geproduceerd. Hiermee kan de Pagina-editor gerelateerde functies bieden.
 
-* `cq-placeholder`: Klassenaam die de tijdelijke aanduiding voor een leeg onderdeel aanduidt
+* `cq-placeholder`: Klassenaam die de tijdelijke aanduiding voor een lege component identificeert
 * `data-emptytext`: Label dat door de overlay moet worden weergegeven wanneer een componentinstantie leeg is
 
 **Plaatsaanduiding voor lege componenten**
@@ -148,13 +144,13 @@ Elke component moet worden uitgebreid met een functionaliteit waarmee het buiten
 
 ### Container {#container}
 
-Een container is een component die onderliggende componenten bevat en rendert. Om dit te doen, herhaalt de container over `:itemsOrder`, `:items` en `:children` eigenschappen van zijn model.
+Een container is een component die is bedoeld om onderliggende componenten te bevatten en te renderen. De container doorloopt de `:itemsOrder`, `:items` en `:children` eigenschappen van zijn model.
 
 De container krijgt dynamisch de kindcomponenten van de opslag van [`ComponentMapping`](/help/sites-developing/spa-blueprint.md#componentmapping) bibliotheek. De container breidt vervolgens de onderliggende component uit met de mogelijkheden van de ModelProvider en instantieert deze ten slotte.
 
 ### Pagina {#page}
 
-De `Page` component breidt de `Container` component. Een container is een component die is bedoeld om onderliggende componenten, waaronder onderliggende pagina&#39;s, te bevatten en te renderen. Om dit te doen, herhaalt de container over `:itemsOrder`, `:items`, en `:children` eigenschappen van zijn model. De `Page` de component krijgt dynamisch de kindcomponenten van de opslag van [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) bibliotheek. De `Page` is verantwoordelijk voor het instantiëren van onderliggende componenten.
+De `Page` component breidt de `Container` component. Een container is een component die onderliggende componenten, waaronder onderliggende pagina&#39;s, moet bevatten en weergeven. De container doorloopt de `:itemsOrder`, `:items`, en `:children` eigenschappen van zijn model. De `Page` de component krijgt dynamisch de kindcomponenten van de opslag van [ComponentMapping](/help/sites-developing/spa-blueprint.md#componentmapping) bibliotheek. De `Page` is verantwoordelijk voor het instantiëren van onderliggende componenten.
 
 ### Responsief raster {#responsive-grid}
 
@@ -182,7 +178,7 @@ Bijvoorbeeld:
 >De klassenamen die in het voorbeeld worden gebruikt, worden momenteel vereist door de pagina-editor.
 >
 >* `"new section"`: Geeft aan dat het huidige element de tijdelijke aanduiding van de container is
->* `"aem-Grid-newComponent"`: Hiermee wordt de component genormaliseerd voor het ontwerpen van de lay-out
+>* `"aem-Grid-newComponent"`: Normaliseert de component voor het ontwerpen van de lay-out
 >
 
 #### Componenttoewijzing {#component-mapping}
@@ -236,7 +232,7 @@ ComponentMapping.map = function map (resourceTypes, clazz, editConfig) {};
 
 De projectcomponenten moeten minstens de volgende gegevensattributen produceren om de redacteur toe te staan om met hen in wisselwerking te staan.
 
-* `data-cq-data-path`: Relatief pad van de component, zoals opgegeven door de `PageModel` (bijvoorbeeld: `"root/responsivegrid/image"`). Dit kenmerk mag niet aan pagina&#39;s worden toegevoegd.
+* `data-cq-data-path`: Relatief pad van de component, opgegeven door de `PageModel` (bijvoorbeeld: `"root/responsivegrid/image"`). Dit kenmerk mag niet aan pagina&#39;s worden toegevoegd.
 
 Samengevat, om door de paginaredacteur als editable te worden geïnterpreteerd, moet een projectcomponent het volgende contract in acht nemen:
 
@@ -269,7 +265,7 @@ Het volgende fragment illustreert de typische HTML-representatie van een pagina-
 
 ## Navigatie en routering {#navigation-and-routing}
 
-App bezit het verpletteren. De front-end ontwikkelaar moet eerst een component van de Navigatie (in kaart gebracht aan een AEM navigatiecomponent) uitvoeren. Deze component zou URL-koppelingen renderen die moeten worden gebruikt in combinatie met een reeks routes die fragmenten van inhoud weergeven of verbergen.
+App bezit het verpletteren. De front-end ontwikkelaar moet eerst een component van de Navigatie (in kaart gebracht aan een AEM navigatiecomponent) uitvoeren. Deze component zou URL verbindingen teruggeven die samen met een reeks routes moeten worden gebruikt die fragmenten van inhoud tonen of zullen verbergen.
 
 De onderliggende waarde [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliotheek en ` [ModelRouter](/help/sites-developing/spa-routing.md)` de module (die door gebrek wordt toegelaten) is de oorzaak van het pre-halen en het verlenen van toegang tot het model verbonden aan een bepaalde middelweg.
 
@@ -281,7 +277,7 @@ Zie het artikel [SPA](/help/sites-developing/spa-routing.md) voor meer informati
 
 Bekijk hoe een eenvoudige SPA werkt en experimenteer met een SPA zelf door door te gaan met het document [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md).
 
-## Meer informatie {#further-reading}
+## Verdere lezing {#further-reading}
 
 Raadpleeg de volgende documenten voor meer informatie over SPA in AEM:
 

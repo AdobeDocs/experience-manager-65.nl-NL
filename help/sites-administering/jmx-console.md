@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4956'
+source-wordcount: '4950'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Voor informatie over het maken van MBans om uw services te beheren met de JMX Co
 Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte workflowinstanties.
 
 * Domein: com.adobe.granite.workflow
-* Type: Onderhoud
+* Type: onderhoud
 
 >[!NOTE]
 >
@@ -41,18 +41,18 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
 **listRunningWorkflowsPerModel** Hier wordt het aantal workflowinstanties weergegeven dat wordt uitgevoerd voor elk workflowmodel.
 
-* Argumenten: none
-* Geretourneerde waarde: Tabelgegevens met de kolommen Aantal en ModelId.
+* Argumenten: geen
+* Geretourneerde waarde: tabelgegevens met de kolommen Aantal en ModelId.
 
 **listCompletedWorkflowsPerModel** Hier wordt het aantal voltooide workflowexemplaren voor elk workflowmodel weergegeven.
 
-* Argumenten: none
-* Geretourneerde waarde: Tabelgegevens met de kolommen Aantal en ModelId.
+* Argumenten: geen
+* Geretourneerde waarde: tabelgegevens met de kolommen Aantal en ModelId.
 
 **returnWorkflowQueueInfo** Hier wordt informatie weergegeven over workflowitems die zijn verwerkt en in de wachtrij voor verwerking staan.
 
-* Argumenten: none
-* Geretourneerde waarde: Tabelgegevens met de volgende kolommen:
+* Argumenten: geen
+* Geretourneerde waarde: tabelgegevens met de volgende kolommen:
 
    * Taken
    * Naam wachtrij
@@ -67,8 +67,8 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
 **returnWorkflowJobTopicInfo** Vermeldt verwerkingsinformatie voor werkstroomtaken, ingedeeld op onderwerp.
 
-* Argumenten: none
-* Geretourneerde waarde: Tabelgegevens met de volgende kolommen:
+* Argumenten: geen
+* Geretourneerde waarde: tabelgegevens met de volgende kolommen:
 
    * Onderwerpnaam
    * Gemiddelde verwerkingstijd
@@ -82,28 +82,28 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
 * Argumenten:
 
-   * model: De id van het model waarop moet worden gezocht. Als u een aantal mislukte workflowinstanties voor alle workflowmodellen wilt zien, geeft u geen waarde op. De id is het pad naar het modelknooppunt, bijvoorbeeld:
+   * model: De id van het model waarnaar moet worden gezocht. Als u een aantal mislukte workflowinstanties voor alle workflowmodellen wilt zien, geeft u geen waarde op. De id is het pad naar het modelknooppunt, bijvoorbeeld:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Geretourneerde waarde: Het aantal mislukte werkstroominstanties.
+* Geretourneerde waarde: het aantal mislukte werkstroominstanties.
 
 **returnFailedWorkflowCountPerModel** Geeft het aantal werkstroominstanties weer dat is mislukt voor elk workflowmodel.
 
 * Argumenten: geen.
-* Geretourneerde waarde: Tabelgegevens met de kolommen Aantal en Model-id.
+* Geretourneerde waarde: tabelgegevens met de kolommen Aantal en Model-id.
 
 **terminateFailedInstances** Beëindig werkstroominstanties die zijn mislukt. U kunt alle mislukte exemplaren beëindigen of slechts de ontbroken instanties voor een specifiek model. Desgewenst kunt u de exemplaren opnieuw beginnen nadat zij worden geëindigd. U kunt de bewerking ook testen om de resultaten te zien zonder de bewerking daadwerkelijk uit te voeren.
 
 * Argumenten:
 
    * Start de instantie opnieuw: (Optioneel) Geef een waarde op van `true` om de exemplaren opnieuw te beginnen nadat zij worden geëindigd. De standaardwaarde van `false` veroorzaakt geen herstart van beëindigde werkschemainstanties.
-   * Droge run: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
+   * Droge uitvoering: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
    * Model: (Optioneel) De id van het model waarop de bewerking wordt toegepast. Geef geen model op om de bewerking toe te passen op de mislukte exemplaren van alle workflowmodellen. De id is het pad naar het modelknooppunt, bijvoorbeeld:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Geretourneerde waarde: Tabelgegevens over de instanties die worden beëindigd, die de volgende kolommen bevatten:
+* Geretourneerde waarde: tabelgegevens over de instanties die worden beëindigd, met de volgende kolommen:
 
    * Initiator
    * InstanceId
@@ -116,12 +116,12 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
 * Argumenten:
 
-   * Droge run: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
+   * Droge uitvoering: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
    * Model: (Optioneel) De id van het model waarop de bewerking wordt toegepast. Geef geen model op om de bewerking toe te passen op de mislukte werkitems van alle workflowmodellen. De id is het pad naar het modelknooppunt, bijvoorbeeld:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Geretourneerde waarde: Tabelgegevens over de mislukte werkitems die opnieuw worden geprobeerd, inclusief de volgende kolommen:
+* Geretourneerde waarde: tabelgegevens over de mislukte werkitems die opnieuw worden geprobeerd, inclusief de volgende kolommen:
 
    * Initiator
    * InstanceId
@@ -137,10 +137,10 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
    * Model: (Optioneel) De id van het model waarop de bewerking wordt toegepast. Geef geen model op om de bewerking toe te passen op de workflowinstanties van alle workflowmodellen. De id is het pad naar het modelknooppunt, bijvoorbeeld:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Aantal dagen sinds het begin van de workflow: De leeftijd van de werkstroominstanties die moeten worden gewist, in dagen.
-   * Droge run: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
+   * Aantal dagen sinds het begin van de werkstroom: de leeftijd van de werkstroominstanties die moeten worden gewist, in dagen.
+   * Droge uitvoering: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
 
-* Geretourneerde waarde: Tabelgegevens over de actieve werkstroominstanties die worden gewist, inclusief de volgende kolommen:
+* Geretourneerde waarde: tabelgegevens over de actieve werkstroominstanties die worden gewist, inclusief de volgende kolommen:
 
    * Initiator
    * InstanceId
@@ -157,7 +157,7 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Geretourneerde waarde: Het aantal instanties van een schaalworkflow.
+* Geretourneerde waarde: het aantal instanties van een schaalworkflow.
 
 **startStaleWorkflows** Hiermee worden de instanties van de vaste workflow opnieuw gestart. U kunt alle instanties van de schaal of slechts de instanties van de schaal voor een specifiek model opnieuw beginnen. U kunt de bewerking ook testen om de resultaten te zien zonder de bewerking daadwerkelijk uit te voeren.
 
@@ -166,16 +166,16 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
    * Model: (Optioneel) De id van het model waarop de bewerking wordt toegepast. Geef geen model op om de bewerking toe te passen op de schaalvarianten van alle workflowmodellen. De id is het pad naar het modelknooppunt, bijvoorbeeld:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Droge run: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
+   * Droge uitvoering: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
 
-* Geretourneerde waarde: Een lijst met werkstroominstanties die opnieuw worden gestart.
+* Geretourneerde waarde: een lijst met werkstroominstanties die opnieuw worden gestart.
 
 **fetchModelList** Hier worden alle workflowmodellen weergegeven.
 
-* Argumenten: none
-* Geretourneerde waarde: Tabelgegevens die de workflowmodellen identificeren, inclusief de kolommen ModelId en ModelName.
+* Argumenten: geen
+* Geretourneerde waarde: tabelgegevens die de workflowmodellen identificeren, inclusief de kolommen ModelId en ModelName.
 
-**countRunningWorkflows** Retourneert het aantal werkstroominstanties dat wordt uitgevoerd. U kunt het aantal actieve exemplaren voor alle werkschemamodellen of voor een specifiek model terugwinnen.
+**countRunningWorkflows** Retourneert het aantal werkstroominstanties dat wordt uitgevoerd. U kunt het aantal actieve exemplaren voor alle workflowmodellen of voor een specifiek model ophalen.
 
 * Argumenten:
 
@@ -183,9 +183,9 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Geretourneerde waarde: Het aantal actieve workflowinstanties.
+* Geretourneerde waarde: het aantal actieve workflowinstanties.
 
-**countCompletedWorkflows** Retourneert het aantal werkstroominstanties dat is voltooid. U kunt het aantal voltooide exemplaren voor alle werkschemamodellen of voor een specifiek model terugwinnen.
+**countCompletedWorkflows** Retourneert het aantal werkstroominstanties dat is voltooid. U kunt het aantal voltooide exemplaren ophalen voor alle workflowmodellen of voor een specifiek model.
 
 * Argumenten:
 
@@ -193,7 +193,7 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
 
-* Geretourneerde waarde: Het aantal voltooide workflowexemplaren.
+* Geretourneerde waarde: het aantal voltooide workflowinstanties.
 
 **purgeCompleted** Hiermee verwijdert u records van voltooide workflows van een bepaalde leeftijd uit de opslagplaats. Gebruik deze bewerking regelmatig om de grootte van de opslagplaats te minimaliseren wanneer u veel gebruik maakt van workflows. U kunt voltooide exemplaren voor alle modellen of slechts de instanties voor een specifiek model leegmaken. U kunt de bewerking desgewenst testen om de resultaten te zien zonder de bewerking daadwerkelijk uit te voeren.
 
@@ -202,10 +202,10 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
    * Model: (Optioneel) De id van het model waarop de bewerking wordt toegepast. Geef geen model op om de bewerking toe te passen op de workflowinstanties van alle workflowmodellen. De id is het pad naar het modelknooppunt, bijvoorbeeld:
 
      `/conf/global/settings/workflow/models/dam/update_asset/jcr:content/model`
-   * Aantal dagen sinds werkstroom is voltooid: Het aantal dagen dat de werkstroominstanties de voltooide status hebben.
-   * Droge run: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
+   * Aantal dagen sinds de werkstroom is voltooid: Het aantal dagen dat de werkstroominstanties de voltooide status hebben.
+   * Droge uitvoering: (Optioneel) Geef een waarde op van `true` de resultaten van de bewerking te zien zonder de bewerking daadwerkelijk uit te voeren. De standaardwaarde van `false` zorgt dat de bewerking wordt uitgevoerd.
 
-* Geretourneerde waarde: Tabelgegevens over de voltooide werkstroominstanties die worden gewist, inclusief de volgende kolommen:
+* Geretourneerde waarde: tabelgegevens over de voltooide werkstroominstanties die worden gewist, inclusief de volgende kolommen:
 
    * Initiator
    * InstanceId
@@ -219,7 +219,7 @@ Bewerkingen voor het beheren van actieve, voltooide, geschaalde en mislukte work
 Informatie over de CRX-opslagplaats
 
 * Domein: com.adobe.granite
-* Type: Bewaarplaats
+* Type: gegevensopslagruimte
 
 ### Attributen {#attributes}
 
@@ -231,7 +231,7 @@ Informatie over de CRX-opslagplaats
 
 **Klantnaam** De naam van de klant aan wie de softwarevergunning wordt uitgegeven. Alleen-lezen.
 
-**LicenseKey** De unieke licentiecode voor deze installatie van de opslagplaats. Alleen-lezen.
+**LicentieKey** De unieke licentiecode voor deze installatie van de opslagplaats. Alleen-lezen.
 
 **AvailableDiskSpace** De schijfruimte die beschikbaar is voor dit exemplaar van de opslagplaats, in Mbytes. Alleen-lezen.
 
@@ -255,10 +255,10 @@ Informatie over de CRX-opslagplaats
    <td>identifier.stability</td>
    <td>Geeft de stabiliteit van niet-referentieerbare knooppuntid's aan. De volgende waarden zijn mogelijk:
     <ul>
-     <li>identifier.stability.indefinite.duration: Id's worden niet gewijzigd.</li>
-     <li>identifier.stability.method.duration: Identifiers kunnen tussen methodevraag veranderen.</li>
-     <li>identifier.stability.save.duration: Id's worden niet gewijzigd in een cyclus voor opslaan en vernieuwen.</li>
-     <li>identifier.stability.session.duration: Id's worden tijdens een sessie niet gewijzigd.</li>
+     <li>identifier.stability.indefinite.duration: Identifiers do not change.</li>
+     <li>identifier.stability.method.duration: id's kunnen veranderen tussen methodeaanroepen.</li>
+     <li>identifier.stability.save.duration: id's worden niet gewijzigd in een cyclus voor opslaan en vernieuwen.</li>
+     <li>identifier.stability.session.duration: id's worden niet gewijzigd tijdens een sessie.</li>
     </ul> </td>
   </tr>
   <tr>
@@ -371,11 +371,11 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>node.type.management.inheritance</td>
-   <td><p>Geeft het niveau van opslagruimteondersteuning voor overerving van knooppunttypen aan. De volgende waarden zijn mogelijk:</p> <p>node.type.management.inheritance.minimum: De registratie van primaire knooppunttypes is beperkt tot die die slechts niet:basis als supertype hebben. Registratie van typen mixinknooppunten is beperkt tot knooppunten zonder supertype.</p> <p>node.type.management.inheritance.single: Registratie van typen primaire knooppunten is beperkt tot knooppunten met één supertype. Registratie van typen mixinknooppunten is beperkt tot knooppunten met ten hoogste één supertype.</p> <p><br /> node.type.management.inheritance.multiple: De primaire knooptypes kunnen met één of meerdere supertypes worden geregistreerd. Mixinknooptypen kunnen met nul of meer supertypen worden geregistreerd.</p> </td>
+   <td><p>Geeft het niveau van opslagruimteondersteuning voor overerving van knooppunttypen aan. De volgende waarden zijn mogelijk:</p> <p>node.type.management.inheritance.minimum: de registratie van de types van primaire knoop is beperkt tot die die slechts niet:base als supertype hebben. Registratie van typen mixinknooppunten is beperkt tot knooppunten zonder supertype.</p> <p>node.type.management.inheritance.single: Registratie van typen primaire knooppunten is beperkt tot knooppunten met één supertype. Registratie van typen mixinknooppunten is beperkt tot knooppunten met ten hoogste één supertype.</p> <p><br /> node.type.management.inheritance.multiple: de primaire knooppunttypes kunnen met één of meerdere supertypes worden geregistreerd. Mixinknooptypen kunnen met nul of meer supertypen worden geregistreerd.</p> </td>
   </tr>
   <tr>
    <td>crx.cluster.preferredMaster</td>
-   <td>true geeft aan dat dit clusterknooppunt de voorkeursserver master van het cluster is.</td>
+   <td>true geeft aan dat dit clusterknooppunt de voorkeursmaster van de cluster is.</td>
   </tr>
   <tr>
    <td>option.transactions.supported</td>
@@ -405,8 +405,8 @@ Informatie over de CRX-opslagplaats
    <td>query.joins</td>
    <td><p>Het niveau van steun voor verbindingen in vragen. De volgende waarden zijn mogelijk:</p>
     <ul>
-     <li>query.joins.none: Geen ondersteuning voor verbindingen. Voor query's kan één kiezer worden gebruikt.</li>
-     <li>query.joins.inner: Ondersteuning voor verbindingen binnen.</li>
+     <li>query.joins.none: geen ondersteuning voor verbindingen. Voor query's kan één kiezer worden gebruikt.</li>
+     <li>query.joins.inner: Ondersteuning voor binnenverbindingen.</li>
      <li>query.joins.inner.outer: Ondersteuning voor binnenste en buitenste verbindingen.</li>
     </ul> </td>
   </tr>
@@ -440,7 +440,7 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>crx.cluster.master</td>
-   <td>true geeft aan dat dit opslagruimteknooppunt het master knooppunt van de cluster is.</td>
+   <td>true geeft aan dat dit opslagruimteknooppunt het hoofdknooppunt van de cluster is.</td>
   </tr>
   <tr>
    <td>level.1.supported</td>
@@ -476,7 +476,7 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>
-   <td>true geeft aan dat de repository knoopeigenschappen ondersteunt die nul of meer waarden kunnen hebben.</td>
+   <td>true geeft aan dat de gegevensopslagruimte knooppunteigenschappen ondersteunt die nul of meer waarden kunnen hebben.</td>
   </tr>
   <tr>
    <td>option.retention.supported</td>
@@ -497,7 +497,7 @@ Informatie over de CRX-opslagplaats
 
 **BackupInProgress** De waarde true geeft aan dat een back-upproces wordt uitgevoerd. Alleen-lezen.
 
-**BackupProgress** Voor de huidige back-up het percentage van alle bestanden waarvan een back-up is gemaakt. Alleen-lezen.
+**BackupProgress** Voor de huidige reservekopie, het percentage van alle dossiers die zijn gesteund. Alleen-lezen.
 
 **CurrentBackupTarget** Voor de huidige back-up het ZIP-bestand waarin back-upbestanden worden opgeslagen. Als er geen back-up wordt gemaakt, wordt er geen waarde weergegeven. Alleen-lezen.
 
@@ -505,11 +505,11 @@ Informatie over de CRX-opslagplaats
 
 **BackupResult** De status van de huidige back-up. De volgende waarden zijn mogelijk:
 
-* Back-up wordt uitgevoerd: Er wordt momenteel een back-up uitgevoerd.
-* Back-up geannuleerd: De back-up is geannuleerd.
-* Back-up voltooid met fout: Er is een fout opgetreden tijdens de back-up. Het foutbericht bevat informatie over de oorzaak.
-* Back-up voltooid: De back-up is gemaakt.
-* Er is tot nu toe geen back-up uitgevoerd: Er is geen back-up bezig.
+* Back-up wordt uitgevoerd: er wordt momenteel een back-up uitgevoerd.
+* Back-up geannuleerd: de back-up is geannuleerd.
+* Back-up voltooid met fout: er is een fout opgetreden tijdens de back-up. Het foutbericht bevat informatie over de oorzaak.
+* Back-up voltooid: de back-up is gelukt.
+* Er is tot nu toe geen back-up uitgevoerd: er is geen back-up bezig.
 
 Alleen-lezen.
 
@@ -523,7 +523,7 @@ Alleen-lezen.
 
 **ClusterId** De id van deze repository cluster. Alleen-lezen.
 
-**ClusterMasterId** De id van het master knooppunt van deze opslagruimtecluster. Alleen-lezen.
+**ClusterMasterId** De id van het hoofdknooppunt van deze repository cluster. Alleen-lezen.
 
 **ClusterNodeId** De id van dit knooppunt van de opslagcluster. Alleen-lezen.
 
@@ -533,22 +533,22 @@ Alleen-lezen.
 
 * Argumenten:
 
-   * naam: Een tekenreekswaarde die de naam van de nieuwe werkruimte vertegenwoordigt.
+   * name: Een tekenreekswaarde die de naam van de nieuwe werkruimte vertegenwoordigt.
 
-* Geretourneerde waarde: none
+* Geretourneerde waarde: geen
 
 **runDataStoreGarbageCollection** Voert huisvuilinzameling op de knopen van de bewaarplaats uit.
 
 * Argumenten:
 
-   * verwijderen: Een Booleaanse waarde die aangeeft of ongebruikte repository-items moeten worden verwijderd. De waarde true zorgt ervoor dat ongebruikte knooppunten en eigenschappen worden verwijderd. Bij de waarde false worden alle knooppunten gescand, maar worden geen knooppunten verwijderd.
+   * delete: Een Booleaanse waarde die aangeeft of ongebruikte opslagplaats-items moeten worden verwijderd. De waarde true zorgt ervoor dat ongebruikte knooppunten en eigenschappen worden verwijderd. Bij de waarde false worden alle knooppunten gescand, maar worden geen knooppunten verwijderd.
 
-* Geretourneerde waarde: none
+* Geretourneerde waarde: geen
 
 **stopDataStoreGarbageCollection** Stopt een lopende inzameling van het huisvuil van de gegevensopslag.
 
-* Argumenten: none
-* Geretourneerde waarde: tekenreeksrepresentatie van de huidige status
+* Argumenten: geen
+* Geretourneerde waarde: tekenreeksrepresentatie van huidige status
 
 **startBackup** Hiermee maakt u een back-up van gegevens in een ZIP-bestand.
 
@@ -562,32 +562,32 @@ Alleen-lezen.
 
      Wanneer u geen waarde opgeeft, wordt de standaardwaarde `backup-currentdate.zip` wordt gebruikt, waarbij `currentdate` heeft de notatie `yyyyMMdd-HHmm`.
 
-* Geretourneerde waarde: none
+* Geretourneerde waarde: geen
 
 **cancelBackup** Stopt het huidige back-upproces en verwijdert het tijdelijke archief dat het proces voor het archiveren van gegevens heeft gemaakt.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **blockRepositoryWrites** Blokken veranderen in de gegevens in de opslagplaats. Alle back-uplisteners van de opslagplaats worden op de hoogte gesteld van het blok.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **unblockRepositoryWrites** Verwijdert het blok uit de repository. Alle back-uplisteners van de opslagplaats worden op de hoogte gesteld van de blokverwijdering.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **startTarOptimization** Start het TAR-bestandsoptimalisatieproces met de standaardwaarde voor tarOptimizationDelay.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **stopTarOptimization** Stopt de optimalisatie van TAR-bestanden.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **tarIndexMerge** Voegt de hoogste indexdossiers van alle reeksen TAR samen. De bovenste indexbestanden zijn bestanden met verschillende hoofdversies. De volgende bestanden worden bijvoorbeeld samengevoegd in het bestand index_3_1.tar: index_1_1.tar, index_2_0.tar, index_3_0.tar. De samengevoegde bestanden worden verwijderd (in het vorige voorbeeld worden index_1_1.tar, index_2_0.tar en index_3_0.tar verwijderd).
 
@@ -595,22 +595,22 @@ Alleen-lezen.
 
    * `background`: Een Booleaanse waarde die aangeeft of de bewerking op de achtergrond moet worden uitgevoerd, zodat de webconsole tijdens de uitvoering bruikbaar is. De waarde true voert de bewerking op de achtergrond uit.
 
-* Geretourneerde waarde: none
+* Geretourneerde waarde: geen
 
-**nowClusterMaster** Stelt dit opslagruimteknooppunt in als het master knooppunt van de cluster. Als deze opdracht nog niet is master, wordt de listener van de huidige master instantie gestopt en wordt een master listener op het huidige knooppunt gestart. Dit knooppunt wordt vervolgens ingesteld als het master knooppunt en wordt opnieuw opgestart, waardoor alle andere knooppunten in het cluster (dat wil zeggen knooppunten die door de master worden bestuurd) verbinding maken met deze instantie.
+**nowClusterMaster** Stelt dit opslagruimteknooppunt in als het hoofdknooppunt van de cluster. Als deze opdracht nog niet het hoofdniveau heeft, wordt de listener van de huidige hoofdinstantie gestopt en wordt een hoofdlistener op het huidige knooppunt gestart. Dit knooppunt wordt vervolgens ingesteld als het hoofdknooppunt en wordt opnieuw opgestart, waardoor alle andere knooppunten in de cluster (dat wil zeggen knooppunten die door de master worden beheerd) verbinding maken met deze instantie.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
-**joinCluster** Voegt deze opslagplaats aan een cluster als knoop toe die door master cluster wordt gecontroleerd. Voor verificatiedoeleinden moet u een gebruikersnaam en wachtwoord opgeven. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
+**joinCluster** Voegt deze opslagplaats aan een cluster toe als een knoop die door de clustermeester wordt gecontroleerd. Voor verificatiedoeleinden moet u een gebruikersnaam en wachtwoord opgeven. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
 
 * Argumenten:
 
-   * `master`: Een tekenreekswaarde die het IP-adres of de computernaam vertegenwoordigt van de computer waarop het knooppunt van de master opslagplaats wordt uitgevoerd.
+   * `master`: Een tekenreekswaarde die het IP-adres of de computernaam vertegenwoordigt van de computer waarop het knooppunt van de hoofdopslagplaats wordt uitgevoerd.
    * `username`: De naam die moet worden gebruikt voor verificatie met de cluster.
-   * `password`: Het wachtwoord dat voor verificatie moet worden gebruikt.
+   * `password`: Het wachtwoord voor verificatie.
 
-* Geretourneerde waarde: none
+* Geretourneerde waarde: geen
 
 **traversalCheck** Hiermee worden inconsistenties in een substructuur die begint bij een bepaald knooppunt, overschreven en optioneel gecorrigeerd. Dit wordt uitvoerig besproken in de documentatie over persistentiemanagers.
 
@@ -622,7 +622,7 @@ De waarde van het gebied TimeSeries voor elk statistiektype dat `org.apache.jack
 
 * Domein: `com.adobe.granite`
 * Type: `TimeSeries`
-* Naam: Een van de volgende waarden uit de `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum, klasse:
+* Naam: een van de volgende waarden uit de `org.apache.jackrabbit.api.stats.RepositoryStatistics.Type` Enum, klasse:
 
    * BUNDLE_CACHE_ACCESS_COUNTER
    * BUNDLE_CACHE_MISS_AVERAGE
@@ -631,7 +631,7 @@ De waarde van het gebied TimeSeries voor elk statistiektype dat `org.apache.jack
    * BUNDLE_CACHE_SIZE_COUNTER
    * BUNDLE_COUNTER
    * BUNDLE_READ_COUNTER
-   * BUNDLE_WRITE_AVERAGE
+   * BUNDLE_WRITE_AGE
    * BUNDLE_WRITE_COUNTER
    * BUNDLE_WRITE_DURATION
    * BUNDLE_WS_SIZE_COUNTER
@@ -651,12 +651,12 @@ De waarde van het gebied TimeSeries voor elk statistiektype dat `org.apache.jack
 
 De volgende eigenschappen worden verstrekt voor elk statistisch type dat wordt gerapporteerd:
 
-* ValuePerSecond: De gemeten waarde per seconde gedurende de laatste minuut. Alleen-lezen.
-* ValuePerMinute: De gemeten waarde per minuut over het laatste uur. Alleen-lezen.
-* ValuePerHour: De gemeten waarde per uur in de laatste week. Alleen-lezen.
-* ValuePerWeek: De gemeten waarde per week over de laatste drie jaar. Alleen-lezen.
+* ValuePerSecond: de gemeten waarde per seconde gedurende de laatste minuut. Alleen-lezen.
+* ValuePerMinute: de gemeten waarde per minuut gedurende het laatste uur. Alleen-lezen.
+* ValuePerHour: de gemeten waarde per uur gedurende de laatste week. Alleen-lezen.
+* ValuePerWeek: de gemeten waarde per week gedurende de laatste drie jaar. Alleen-lezen.
 
-## Query-statistieken opslagplaats {#repository-query-stats}
+## Query-statistische gegevens opslagplaats {#repository-query-stats}
 
 Statistische informatie over query&#39;s in de gegevensopslagruimte.
 
@@ -677,13 +677,13 @@ Statistische informatie over query&#39;s in de gegevensopslagruimte.
 
 **clearSlowQueriesQueue** Verwijdert alle vragen uit de lijst SlowQueries.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **clearPopularQueriesQueue** Verwijdert alle vragen uit de lijst PopularQueries.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 ## Replication Agents {#replication-agents}
 
@@ -707,7 +707,7 @@ Alleen-lezen.
 
 **Ingeschakeld** Een booleaanse waarde die aangeeft of de agent is ingeschakeld:
 
-* `true`: Ingeschakeld.
+* `true`: Enabled.
 * `false`: Uitgeschakeld.
 
 **QueueBlocked** Een booleaanse waarde die aangeeft of de wachtrij bestaat en wordt geblokkeerd:
@@ -719,7 +719,7 @@ Alleen-lezen.
 
 **QueuePaused** Een booleaanse waarde die aangeeft of de taakwachtrij is gepauzeerd:
 
-* `true`: Gepauzeerd (opgeschort)
+* `true`: Gepauzeerd (onderbroken)
 * `false`: Niet gepauzeerd of bestaat niet.
 
 Lezen.
@@ -738,13 +738,13 @@ Lezen.
 
 **queueForceRetry** Voor geblokkeerde rijen, geeft het opnieuw proberen bevel aan de rij uit.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **queueClear** Hiermee verwijdert u alle taken uit de wachtrij.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 ## Sling Engine {#sling-engine}
 
@@ -770,14 +770,14 @@ Verstrekt statistieken over HTTP- verzoeken zodat u de prestaties van de dienst 
 
 **resetStatistics** Stelt alle statistieken in op nul. Herstel de statistieken wanneer u de prestaties van de verzoekverwerking tijdens een specifiek tijdkader moet analyseren.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **id** De tekenreeksrepresentatie van de pakket-id.
 
 **geïnstalleerd** Een booleaanse waarde die aangeeft of het pakket is geïnstalleerd:
 
-* `true`: Geïnstalleerd.
+* `true`: geïnstalleerd.
 * `false`: Niet geïnstalleerd.
 
 **installedBy** De id van de gebruiker die het pakket als laatste heeft geïnstalleerd.
@@ -798,19 +798,19 @@ Informatie over het opstartproces en de QuickStart-starter.
 
 **log**
 
-Hiermee wordt een bericht weergegeven in het QuickStart-venster.
+Toont een bericht in het QuickStart venster.
 
 Argumenten:
 
 * p1: A `String` waarde die staat voor het bericht dat moet worden weergegeven.
-* Geretourneerde waarde: none
+* Geretourneerde waarde: geen
 
 **startFinished**
 
 Roept de opstartenFinished methode van de serverlancerer. De methode probeert de welkomstpagina in een webbrowser te openen.
 
-* Argumenten: none
-* Geretourneerde waarde: none
+* Argumenten: geen
+* Geretourneerde waarde: geen
 
 **startProgress**
 
@@ -880,8 +880,8 @@ Verschillende serverbronnen van derden installeren MBans die kenmerken en bewerk
 
 In de JMX-console wordt informatie weergegeven over verschillende services die op de server worden uitgevoerd:
 
-* Kenmerken: Service-eigenschappen zoals configuraties of runtime-gegevens. Kenmerken kunnen alleen-lezen of lezen-schrijven zijn.
-* Bewerkingen: Opdrachten die u op de service kunt aanroepen.
+* Attributen: Service-eigenschappen zoals configuraties of runtime-gegevens. Kenmerken kunnen alleen-lezen of lezen-schrijven zijn.
+* Bewerkingen: opdrachten die u op de service kunt aanroepen.
 
 MBeans die met de dienst OSGi worden opgesteld stelt de dienstattributen en verrichtingen aan de console bloot. De MBean bepaalt de attributen en de verrichtingen die worden blootgesteld, en of de attributen read-only of read-write zijn.
 
@@ -894,11 +894,11 @@ De belangrijkste pagina van de console JMX omvat een lijst van de diensten. Elke
 
 ## Externe JMX-toepassingen gebruiken voor bewaking {#using-external-jmx-applications-for-monitoring}
 
-Met CRX kunnen externe toepassingen werken met Beheerde Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Algemene consoles gebruiken, zoals [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) Voor domeinspecifieke controletoepassingen, staat het krijgen en het plaatsen van CRX configuraties en eigenschappen, evenals de controle van prestaties en middelgebruik toe.
+Met CRX kunnen externe toepassingen werken met Beheerde Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Algemene consoles zoals [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) Voor domeinspecifieke controletoepassingen, staat het krijgen en het plaatsen van CRX configuraties en eigenschappen, evenals de controle van prestaties en middelgebruik toe.
 
 ### Het gebruiken van JConsole om met CRX te verbinden {#using-jconsole-to-connect-to-crx}
 
-Voer de volgende stappen uit om verbinding te maken met CRX met behulp van JConsole:
+Ga als volgt te werk om verbinding te maken met CRX met behulp van JConsole:
 
 1. Open een terminalvenster.
 1. Voer de volgende opdracht in:
@@ -909,7 +909,7 @@ JConsole wordt gestart en het JConsole-venster wordt weergegeven.
 
 ### Verbinding maken met een lokaal CRX-proces {#connecting-to-a-local-crx-process}
 
-JConsole zal een lijst van lokale processen van de Virtuele Machine van Java tonen. De lijst bevat twee snelstartprocessen. Selecteer het snelstartproces &quot;CHILD&quot; in de lijst met lokale processen (meestal het proces met de hogere PID).
+JConsole zal een lijst van lokale processen van de Virtuele Machine van Java tonen. De lijst bevat twee snelstartprocessen. Selecteer het &#39;KINDERproces&#39; in de lijst met lokale processen (meestal het proces met de hogere PID).
 
 ![screen_shot_2012-03-26at114557am](assets/screen_shot_2012-03-26at114557am.png)
 
@@ -921,7 +921,7 @@ Om externe JMX-verbindingen in te schakelen, moet de volgende systeemeigenschap 
 
 `com.sun.management.jmxremote.port=portNum`
 
-In de bovenstaande eigenschap: `portNum` is het havenaantal waardoor u verbindingen wilt toelaten JMX RMI. Geef een ongebruikt poortnummer op. Naast het publiceren van een schakelaar RMI voor lokale toegang, publiceert het plaatsen van dit bezit een extra schakelaar RMI in een privé read-only register bij de gespecificeerde haven gebruikend een bekende naam, &quot;jmxrmi&quot;.
+In de bovenstaande eigenschap: `portNum` is het havenaantal waardoor u verbindingen wilt toelaten JMX RMI. Ben zeker om een ongebruikt havenaantal te specificeren. Naast het publiceren van een schakelaar RMI voor lokale toegang, publiceert het plaatsen van dit bezit een extra schakelaar RMI in een privé read-only register bij de gespecificeerde haven gebruikend een bekende naam, &quot;jmxrmi&quot;.
 
 Wanneer u de JMX-agent inschakelt voor externe controle, gebruikt deze standaard wachtwoordverificatie op basis van een wachtwoordbestand dat moet worden opgegeven met de volgende systeemeigenschap bij het starten van de Java VM:
 

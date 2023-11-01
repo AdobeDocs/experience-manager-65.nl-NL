@@ -1,18 +1,14 @@
 ---
 title: Sites Repositoregeling Herstructurering AEM 6.5
-seo-title: Sites Repository Restructuring in AEM 6.5
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.5 voor sites.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 for Sites.
-uuid: 6dc5f8bd-1680-40af-9b8f-26c1f4bc3304
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 voor Sites.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 58594be73372e128ba999a8290615fbcb447084e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1462'
+source-wordcount: '1460'
 ht-degree: 0%
 
 ---
@@ -36,7 +32,6 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 * [Paginastructuur](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#page-scaffolding)
 * [Responsief raster MINDER](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#responsive-grid-less)
 * [Statische sjabloonontwerpen](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#static-template-designs)
-
 <!-- Search&Promote is end-of-life September 1, 2022 * [Adobe Search and Promote Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-search-and-promote-integration-client-libraries) -->
 * [Adobe Target Integration Client Libraries](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#adobe-target-integration-client-libraries)
 * [WCM Foundation-clientbibliotheken](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md#wcm-foundation-client-libraries)
@@ -52,8 +47,8 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/segmentation/contexthub</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
-   <td><p><code>/apps/settings/wcm/segments</code> </p> <p><code>/conf/settings/settings/wcm/segments</code> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
+   <td><p><code>/apps/settings/wcm/segments</code><br /> </p> <p><code>/conf/settings/settings/wcm/segments</code><br /> </p> <p><code>/conf/&lt;tenant&gt;/settings/wcm/segments</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
@@ -72,7 +67,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ul>
      <li>/etc/segmentation/geometrixx/</li>
      <li>/etc/segmentation/geometrixx-outdoor</li>
-    </ul> <p>Opmerking: Als ClientContext in gebruik is, wordt het geadviseerd om in ContextHub om te zetten.</p> </td>
+    </ul> <p>Nota: Als de ClientContext in gebruik is, wordt het geadviseerd om in ContextHub om te zetten.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -88,7 +83,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><code>/etc/clientlibs/foundation/sitecatalyst</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/cq/analytics/clientlibs/analytics</code></td>
   </tr>
   <tr>
@@ -129,7 +124,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/designs/wordDesign</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/wordDesign</code></p> <p><code>/apps/settings/wcm/designs/wordDesign</code></p> </td>
   </tr>
   <tr>
@@ -148,7 +143,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -162,7 +157,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><code>/etc/mobile</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/mobile</code></p> <p><code>/apps/settings/mobile</code></p> <p><code>/conf/global/settings/mobile</code></p> <p><code>/conf/&lt;tenant&gt;/settings/mobile</code></p> </td>
   </tr>
   <tr>
@@ -212,7 +207,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/blueprints</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/apps/msm</code> (Klantblauwdrukconfiguraties)</p> <p><code>/libs/msm</code> (Configuratie Vervaging buiten kader voor schermen, handel)</p> </td>
   </tr>
   <tr>
@@ -239,7 +234,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><code>/etc/msm/rolloutConfigs</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/msm/wcm/rolloutconfigs</code></p> <p><code>/apps/msm/wcm/rolloutconfigs</code></p> </td>
   </tr>
   <tr>
@@ -266,7 +261,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><code>/etc/notification/email/default/com.day.cq.wcm.core.page</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/notification-templates/com.day.cq.wcm.core.page</code></p> <p><code>/apps/settings/notification-templates/com.day.cq.wcm.core.page</code></p> </td>
   </tr>
   <tr>
@@ -298,7 +293,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/scaffolding</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><span class="code">/libs/settings/
       <code>
        wcm
@@ -313,7 +308,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -327,7 +322,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/clientlibs/wcm/foundation/grid/grid_base.less</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/wcm/foundation/clientlibs/grid/grid_base.less</code></td>
   </tr>
   <tr>
@@ -353,7 +348,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/designs/&lt;custom-site&gt;</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/apps/settings/wcm/designs/&lt;custom-site&gt;</code></td>
   </tr>
   <tr>
@@ -419,7 +414,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><code>/etc/clientlibs/foundation/target</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/cq/testandtarget/clientlibs/testandtarget</code></td>
   </tr>
   <tr>
@@ -464,7 +459,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p><code>/etc/clientlibs/wcm/foundation</code></p> </td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/wcm/foundation/clientlibs</code></td>
   </tr>
   <tr>

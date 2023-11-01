@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '7850'
+source-wordcount: '7848'
 ht-degree: 0%
 
 ---
@@ -592,7 +592,7 @@ In dit document wordt de term *native toepassing* om aan te geven welke toepassi
 1. Het dialoogvenster Afdrukken openen door Bestand > Afdrukken te selecteren
 1. Het dialoogvenster Afdrukken wordt weergegeven
 
-AppMon gebruikt standaard Win32 APIs om met derdetoepassingen in wisselwerking te staan om gebeurtenissen over te brengen UI zoals zeer belangrijk-slagen en muisklikken, die nuttig is om deze toepassingen te controleren om PDF dossiers van hen te produceren.
+AppMon gebruikt standaard Win32 APIs om met derdetoepassingen in wisselwerking te staan om gebeurtenissen over te brengen UI zoals zeer belangrijke slagen en muisklikken, die nuttig is om deze toepassingen te controleren om PDF dossiers van hen te produceren.
 
 Vanwege een beperking met deze Win32 APIs, kan AppMon deze gebeurtenissen UI aan sommige specifieke soorten vensters, zoals floating menu-bars (die in sommige toepassingen zoals TextPad worden gevonden), en bepaalde soorten dialogen niet verzenden de waarvan inhoud niet kan worden teruggewonnen gebruikend Win32 APIs.
 
@@ -982,7 +982,7 @@ In dit voorbeeld wordt aangegeven hoe de service PDF genereren moet werken met K
 * from Adobe Systems Incorporated.
 *-->
 
-<!-- This file automates printing of text files via notepad to Adobe PDF printer. In order to see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
+<!-- This file automates printing of text files via notepad to Adobe PDF printer. To see the complete hierarchy Adobe recommends using the Microsoft Spy++ which details the properties of windows necessary to write scripts. In this sample there are total of eight steps-->
 
 <application name="Notepad" version="9.0" locale="en_US" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="scripts.xsd">
 

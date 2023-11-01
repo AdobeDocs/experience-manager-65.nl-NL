@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: a07765f95f01f05a30dce14138f75e7edbe94ae2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1624'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Een gebruiker met beheerdertoegang in [!DNL Adobe Experience Manager] vormt de v
 
 ## Gebeurtenisabonnementen configureren {#event-subscriptions}
 
-Gebeurtenisabonnementen worden gebruikt om AEM op de hoogte te brengen van gebeurtenissen die plaatsvinden in [!DNL Adobe Workfront]. Er zijn drie [!DNL Workfront for Experience Manager enhanced connector] functies die gebeurtenisabonnementen nodig hebben om te werken, zijn de volgende:
+Gebeurtenisabonnementen worden gebruikt om AEM op de hoogte te brengen van gebeurtenissen die plaatsvinden in [!DNL Adobe Workfront]. Er zijn drie [!DNL Workfront for Experience Manager enhanced connector] zijn de volgende functies die gebeurtenisabonnementen nodig hebben om te werken:
 
 * Automatisch maken van aan een project gekoppelde mappen.
 * Synchronisatie van wijzigingen in Workfront-document aangepaste formulierwaarden naar metagegevens van AEM element.
@@ -62,7 +62,7 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 1. Gekoppelde mapstructuur: voer door komma&#39;s gescheiden waarden in. Elke waarde moet `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name of een of andere &#39;Letterlijke tekenreekswaarde&#39; (deze laatste met aanhalingstekens). Deze is momenteel ingesteld op Portfolio,Programma,Jaar,DE:Projecttype,Naam.
 1. De functie voor het maken van gekoppelde mappen in Workfront met het selectievakje voor mapstructuurnamen moet zijn ingeschakeld als de titel van de map in Workfront alle mappen in de structuur moet bevatten. Anders wordt dit de titel van de laatste map.
 1. Met submappen met meerdere velden kunt u een lijst opgeven met mappen die moeten worden gemaakt als een onderliggende map van de gekoppelde map.
-1. Projectstatus: selecteer de status waarnaar het project moet worden ingesteld om de gekoppelde map te maken.
+1. Projectstatus: selecteer de status van het project om de gekoppelde map te maken.
 1. Maak een gekoppelde map in projecten met een portfolio: lijst met Portfolio&#39;s waartoe het project moet behoren om de gekoppelde map te maken. Laat deze lijst leeg om de gekoppelde map voor alle projectportfolio te maken.
 1. Maak een gekoppelde map in projecten met een aangepast formulierveld: aangepast formulierveld en de bijbehorende waarde die het project nodig heeft om de gekoppelde map te maken. Deze configuratie wordt genegeerd als deze leeg wordt gelaten. Selecteren `CUSTOM FORMS: Create DAM Linked Folder` voor het veld en de invoer `Yes` voor de waarde.
 1. Klik op Automatisch maken van gekoppelde mappen inschakelen. Als u teruggaat naar het tabblad Gebeurtenisabonnementen, ziet u dat er nu een gebeurtenis create is.

@@ -8,9 +8,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 3086a8a1-8d2e-455a-a055-91b07d31ea65
 exl-id: 3f9ed24e-c54b-4bd4-9212-eabc67bb540e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1224'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
    >
    >De **Elementnaam** moet voor elk formulierveld anders zijn. Wijzig deze indien nodig.
    >
-   >Elk formulier moet een **Gecodeerde primaire sleutel** om de ontvangers in de Adobe Campaign-database correct te beheren.
+   >Elk formulier moet een **Gecodeerde primaire sleutel** om ontvangers in de Adobe Campaign-database correct te beheren.
 
 1. De pagina activeren door **Pagina** > **Pagina activeren** in de gereedschapset. De pagina wordt geactiveerd op uw site. U kunt het bekijken door naar uw AEM publicatieexemplaar te gaan. De gegevens in de Adobe Campaign-database worden bijgewerkt nadat een formulier is gevalideerd.
 

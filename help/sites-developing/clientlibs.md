@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2860'
+source-wordcount: '2856'
 ht-degree: 0%
 
 ---
@@ -134,7 +134,7 @@ In eerdere versies stonden de mappen met de clientbibliotheek hieronder. `/etc/c
 
 >[!NOTE]
 >
->Om code beter van inhoud en configuratie te isoleren, wordt het aanbevolen om de clientbibliotheken onder `/apps` en ze via `/etc.clientlibs` door de `allowProxy` eigenschap.
+>Om code beter van inhoud en configuratie te isoleren, wordt het geadviseerd om van cliëntbibliotheken onder de plaats te bepalen `/apps` en ze via `/etc.clientlibs` door de `allowProxy` eigenschap.
 
 Voor de clientbibliotheken onder `/apps` om toegankelijk te zijn, wordt een volmachtsserver gebruikt. ACLs wordt nog afgedwongen op de omslag van de cliëntbibliotheek, maar servlet laat voor de inhoud toe om via worden gelezen `/etc.clientlibs/` als de `allowProxy` eigenschap is ingesteld op `true`.
 

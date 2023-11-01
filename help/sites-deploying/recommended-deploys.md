@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1792'
+source-wordcount: '1782'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ In dit scenario, loopt één enkele instantie TarMK op één enkele server.
 
 De voordelen:
 
-* Eenvoudig
+* eenvoudig
 * Eenvoudig onderhoud
 * Goede prestaties
 
@@ -76,11 +76,11 @@ De nadelen:
 
 >[!NOTE]
 >
->De plaatsing van de Reserve van de Koude in dit voorbeeld TarMK vereist dat zowel de primaire als reserve instanties afzonderlijk worden vergunning gegeven, aangezien er constante replicatie aan de failoverserver is. Voor meer informatie over licenties raadpleegt u de [Algemene licentievoorwaarden van Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
+>De plaatsing van de Reserve van de Koude in dit voorbeeld TarMK vereist dat zowel de primaire als reserve instanties afzonderlijk worden vergunning gegeven, aangezien er constante replicatie aan de failoverserver is. Raadpleeg voor meer informatie over licenties de [Algemene licentievoorwaarden van de Adobe](https://www.adobe.com/legal/terms/enterprise-licensing.html).
 
 ### TarMK Farm {#tarmk-farm}
 
-Meerdere Oak-instanties worden elk uitgevoerd met één TarMK-instantie. De TarMK-opslagplaatsen zijn onafhankelijk en moeten gesynchroniseerd blijven.
+Meerdere instanties van het type Oak worden elk uitgevoerd met één instantie TarMK. De TarMK-opslagplaatsen zijn onafhankelijk en moeten gesynchroniseerd blijven.
 
 Het houden van de bewaarplaatsen in synchronisatie wordt voorzien van het feit dat de auteurserver de zelfde inhoud aan elk landbouwbedrijflid publiceert. Zie voor meer informatie [Replicatie](/help/sites-deploying/replication.md).
 
@@ -130,25 +130,25 @@ De voordelen:
 >
 >Voor meer informatie over de architecturale concepten MongoDB die in deze sectie worden beschreven, raadpleegt u [MongoDB-replicatie](https://docs.mongodb.org/manual/replication/).
 
-## Microkorrels: welke {#microkernels-which-one-to-use}
+## Microkorrels: één voor gebruik {#microkernels-which-one-to-use}
 
 De basisregel waarmee rekening moet worden gehouden bij het kiezen tussen de twee beschikbare microkorrels is dat TarMK ontworpen is voor prestaties, terwijl MongoMK wordt gebruikt voor schaalbaarheid.
 
 U kunt deze besluitmatrices gebruiken om te bepalen wat het beste type implementatie is dat aan uw vereisten is aangepast.
 
-Adobe adviseert hoogst TarMK om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel auteur AEM als Publish instanties wordt gebruikt, behalve in de hieronder geschetste gebruiksgevallen.
+De Adobe adviseert hoogst TarMK om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel de AEM Auteur als Publish instanties wordt gebruikt, behalve in de hieronder geschetste gebruiksgevallen.
 
-### Uitzonderingen voor het kiezen van AEM MongoMK in TarMK op Auteurinstanties {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
+### Uitzonderingen voor het kiezen van AEM MongoMK in TarMK op authorinstanties {#exceptions-for-choosing-aem-mongomk-over-tarmk-on-author-instances}
 
 De primaire reden voor het kiezen van de MongoMK persistence backend over TarMK is de instanties horizontaal te schalen. Dit betekent dat er altijd twee of meer actieve auteur-instanties moeten worden uitgevoerd en dat MongoDB moet worden gebruikt als het opslagsysteem voor persistentie. De noodzaak om meer dan één auteurinstantie in werking te stellen vloeit over het algemeen voort uit het feit dat de cpu en geheugencapaciteit van één enkele server, die alle gezamenlijke auteursactiviteiten steunt, niet meer duurzaam is.
 
-Het is bijna onmogelijk om te voorspellen wat het precieze gelijktijdige model zal zijn nadat een nieuwe site live gaat. Daarom adviseert Adobe u de volgende criteria in overweging te nemen wanneer het evalueren of om MongoMK en twee of meer Actieve knopen van de Auteur te gebruiken:
+Het is bijna onmogelijk om te voorspellen wat het precieze gelijktijdige model zal zijn nadat een nieuwe site live gaat. Daarom adviseert de Adobe u de volgende criteria in overweging te nemen wanneer het evalueren of om MongoMK en twee of meer Actieve knopen van de Auteur te gebruiken:
 
 1. Aantal benoemde gebruikers verbonden in een dag: in de duizenden of meer.
 1. Aantal gelijktijdige gebruikers: in honderden of meer.
-1. Omvang van de ingenomen activa per dag: in honderdduizenden of meer.
-1. Volume van paginabewerkingen per dag: in honderdduizenden of meer (waaronder automatische updates via Multi Site Manager of bijvoorbeeld inname van nieuwsberichten).
-1. Volume zoekopdrachten per dag: in tienduizenden of meer.
+1. Hoeveelheid ingenomen activa per dag: in honderdduizenden of meer.
+1. Volume van paginabewerkingen per dag: in honderdduizenden of meer (inclusief automatische updates via Meerdere Sitebeheer of inname van nieuwsberichten).
+1. Aantal zoekopdrachten per dag: in tienduizenden of meer.
 
 >[!NOTE]
 >
@@ -177,10 +177,10 @@ Een reeks eerste vereisten en aanbevelingen is beschikbaar als u een plaatsing M
 
 **Verplichte voorwaarden voor MongoDB-implementaties:**
 
-1. De mongoDB-implementatiearchitectuur en -grootte moeten deel uitmaken van de projectimplementatie met hulp van Adobe Consulting- of MongoDB-architecten die vertrouwd zijn met AEM.
-1. De deskundigheid MongoDB moet binnen de partner of klantenteam aanwezig zijn om vertrouwen in het kunnen een bestaande of nieuwe milieu te kunnen handhaven MongoDB;
+1. De mongoDB-implementatiearchitectuur en -grootte moeten deel uitmaken van de projectimplementatie met hulp van Adobe Consulting of MongoDB-architecten die vertrouwd zijn met AEM.
+1. De deskundigheid MongoDB moet binnen de partner of het klantenteam aanwezig zijn om vertrouwen in het kunnen een bestaande of nieuwe milieu te kunnen handhaven MongoDB;
 1. U kunt ervoor kiezen om de commerciële of open-sourceversie van MongoDB te implementeren (AEM ondersteunt beide), maar u moet rechtstreeks een MongoDB-onderhouds- en ondersteuningscontract aanschaffen bij MongoDB Inc;
-1. De architecturen en infrastructuren van de AEM en MongoDB moeten goed worden gedefinieerd en gevalideerd door een architecte van de Adobe AEM.
+1. De algemene AEM en MongoDB-architecturen en -infrastructuren moeten duidelijk gedefinieerd en gevalideerd worden door een Adobe AEM architect;
 1. U moet het supportmodel voor AEM implementaties met MongoDB controleren.
 
 **Sterke aanbevelingen voor MongoDB-implementaties:**
@@ -191,13 +191,13 @@ Een reeks eerste vereisten en aanbevelingen is beschikbaar als u een plaatsing M
 
 >[!NOTE]
 >
->Voor alle aanvullende vragen over deze richtlijnen, voorwaarden en aanbevelingen kunt u contact opnemen met [Adobe Klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html).
+>Voor alle aanvullende vragen over deze richtlijnen, voorwaarden en aanbevelingen kunt u contact opnemen met [Klantenservice Adoben](https://helpx.adobe.com/marketing-cloud/contact-support.html).
 
 ### Overwegingen voor AEM Communities {#considerations-for-aem-communities}
 
-Voor sites die van plan zijn te implementeren [AEM Communities](/help/communities/overview.md)wordt aanbevolen [een implementatie kiezen](/help/communities/working-with-srp.md#characteristicsofstorageoptions) geoptimaliseerd voor de verwerking van UGC die door leden van de gemeenschap vanuit de publicatieomgeving is geplaatst.
+Voor sites die van plan zijn te implementeren [AEM Communities](/help/communities/overview.md)wordt aanbevolen [kiezen voor een implementatie](/help/communities/working-with-srp.md#characteristicsofstorageoptions) geoptimaliseerd voor de verwerking van UGC die door leden van de gemeenschap vanuit de publicatieomgeving is geplaatst.
 
-Door een [gemeenschappelijk archief](/help/communities/working-with-srp.md), hoeft UGC niet te worden gerepliceerd tussen auteur- en andere publicatie-instanties om een consistente weergave van de UGC te verkrijgen.
+Door een [gemeenschappelijk archief](/help/communities/working-with-srp.md), hoeft UGC niet te worden gerepliceerd tussen auteur- en andere publicatieinstanties om een consistente weergave van de UGC te verkrijgen.
 
 Hieronder vindt u een reeks beslissingsmatrixen die u kunnen helpen bij het kiezen van het beste type persistentie voor uw implementatie:
 
@@ -211,7 +211,7 @@ Hieronder vindt u een reeks beslissingsmatrixen die u kunnen helpen bij het kiez
 
 >[!NOTE]
 >
->MongoDB is software van derden en is niet opgenomen in het AEM licentiepakket. Zie voor meer informatie de [MongoDB-licentiebeleid](https://www.mongodb.org/about/licensing/) pagina.
+>MongoDB is software van derden en is niet opgenomen in het AEM licentiepakket. Zie voor meer informatie de [Beleid voor MongoDB-licenties](https://www.mongodb.org/about/licensing/) pagina.
 >
 >Om optimaal gebruik te kunnen maken van uw AEM, raadt Adobe u aan een licentie te verlenen voor de MongoDB Enterprise-versie, zodat u kunt profiteren van professionele ondersteuning.
 >
@@ -219,4 +219,4 @@ Hieronder vindt u een reeks beslissingsmatrixen die u kunnen helpen bij het kiez
 >
 >Als u zowel de auteur als de publicatie op MongoDB wilt uitvoeren, moet u twee aparte licenties aanschaffen.
 >
->Zie voor meer informatie de [Pagina MongoDB voor Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).
+>Zie de klasse [Pagina MongoDB voor Adobe Experience Manager](https://www.mongodb.com/lp/contact/mongodb-adobe-experience-manager).

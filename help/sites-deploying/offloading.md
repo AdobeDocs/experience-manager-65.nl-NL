@@ -1,19 +1,15 @@
 ---
 title: Taken verschuiven
-seo-title: Offloading Jobs
 description: Leer hoe te om AEM instanties in een topologie te vormen en te gebruiken om specifieke soorten verwerking uit te voeren.
-seo-description: Learn how to configure and use AEM instances in a topology in order to perform specific types of processing.
-uuid: e971d403-dfd2-471f-b23d-a67e35f1ed88
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 08a6777bf1ff3abf62f45fe1e164ef2027996848
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2362'
 ht-degree: 0%
 
 ---
@@ -32,8 +28,8 @@ Voor informatie over het toevoegen van instanties aan een topologie, zie [Onderw
 
 Sling JobManager en JobConsumer laten de verwezenlijking van banen toe die in een topologie worden verwerkt:
 
-* JobManager: De dienst die banen voor specifieke onderwerpen leidt.
-* JobConsumer: De dienst die banen van één of meerdere onderwerpen uitvoert. De veelvoudige diensten JobConsumer kunnen voor het zelfde onderwerp worden geregistreerd.
+* JobManager: de dienst die banen voor specifieke onderwerpen leidt.
+* JobConsumer: een dienst die banen van één of meerdere onderwerpen uitvoert. De veelvoudige diensten JobConsumer kunnen voor het zelfde onderwerp worden geregistreerd.
 
 Wanneer JobManager een baan creeert, selecteert het Offloading kader een cluster van de Experience Manager in de topologie om de baan uit te voeren:
 
@@ -58,8 +54,8 @@ De technologieën zijn losjes-verbonden clusters van de Experience Manager die a
 
 Elke instantie van de Experience Manager stelt de volgende aan het ontladen verwante diensten in werking:
 
-* Detectieservice: Verzendt verzoeken naar een Schakelaar van de Topologie om zich bij de topologie aan te sluiten.
-* Topology Connector: Ontvangt om zich bij verzoeken aan te sluiten en of keurt goed of weigert elk verzoek.
+* De Dienst van de ontdekking: verzendt verzoeken aan een Schakelaar van de Topologie om zich bij de topologie aan te sluiten.
+* De Schakelaar van de topologie: Ontvangt de toetrederingsverzoeken en of keurt of weigert elk verzoek goed.
 
 De dienst van de Ontdekking van alle leden van de topologie richt aan de Schakelaar van de Topologie op één van de leden. In de volgende secties wordt dit lid het hoofdlid genoemd.
 
@@ -197,9 +193,9 @@ De taken worden verdeeld onder instanties die het bijbehorende die onderwerp heb
 
 1. Klik één van de volgende knopen naast een onderwerp om het verbruiksgedrag voor de instantie te vormen, en dan sparen te klikken:
 
-   * Ingeschakeld: Dit exemplaar verbruikt banen van dit onderwerp.
-   * Uitgeschakeld: Dit exemplaar verbruikt geen banen van dit onderwerp.
-   * Exclusief: Dit exemplaar verbruikt slechts banen van dit onderwerp.
+   * Ingeschakeld: deze instantie gebruikt taken van dit onderwerp.
+   * Uitgeschakeld: dit exemplaar verbruikt geen banen van dit onderwerp.
+   * Exclusief: dit exemplaar verbruikt slechts banen van dit onderwerp.
 
    **Opmerking:** Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
 
@@ -210,7 +206,7 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 | Taakonderwerp | Service PID | Beschrijving |
 |---|---|---|
 | / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Geïnstalleerd met Apache Sling. Verwerkt banen die OSGi gebeurtenisadmin, voor achterwaartse verenigbaarheid produceert. |
-| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen herhaalt. |
+| com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen repliceert. |
 
 <!--
 | com/adobe/granite/workflow/offloading |com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer |Processes jobs that the DAM Update Asset Offloader workflow generates. |
@@ -222,13 +218,13 @@ De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderw
 
 **Opmerking:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
-De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van gewezen personen zijn. Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en er zijn geen onderwerpen uitgeschakeld (de lijst van gewezen personen heeft geen waarde).
+De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van gewezen personen zijn. Standaard zijn alle onderwerpen ingeschakeld (de waarde van de lijst van gewenste personen is `*`) en er zijn geen onderwerpen uitgeschakeld (de lijst van gewezen personen heeft geen waarde).
 
 Webconsole of een `sling:OsgiConfig` knooppunt om de volgende eigenschappen te configureren. Voor `sling:OsgiConfig` knooppunten, is de PID van de dienst van de Manager van de Consumenten van de Baan org.apache.sling.event.impl.job.JobConsumerManager.
 
 | Eigenschapnaam in webconsole | OSGi-id | Beschrijving |
 |---|---|---|
-| Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
+| Topic lijst van gewenste personen | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt dat alle onderwerpen worden verzonden naar de geregistreerde dienst TopicConsumer. |
 | Topic lijst van gewezen personen | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
 
 ## Replication-agents voor offloaden maken {#creating-replication-agents-for-offloading}
@@ -284,7 +280,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Instellingen > Type serienummering | Standaard |
    | Transport > Transport URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Transport-gebruiker | Replicatiegebruiker op doelinstantie |
+   | Vervoer > Gebruiker van het Vervoer | Replicatiegebruiker op doelinstantie |
    | Transport > Transport Password | Replicatiewachtwoord voor doelinstantie |
    | Uitgebreid > HTTP-methode | POST |
    | Triggers > Standaard negeren | Waar |
@@ -298,7 +294,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    |---|---|
    | Instellingen > Type serienummering | Standaard |
    | Transport > Transport URI | https://*`<ip of target instance>`*:*`<port>`*`/bin/receive?sling:authRequestLogin=1` |
-   | Transport > Transport-gebruiker | Replicatiegebruiker op doelinstantie |
+   | Vervoer > Gebruiker van het Vervoer | Replicatiegebruiker op doelinstantie |
    | Transport > Transport Password | Replicatiewachtwoord voor doelinstantie |
    | Uitgebreid > HTTP-methode | GET |
 
@@ -315,7 +311,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### De verkoper-id zoeken {#finding-the-sling-id}
 
-Verkrijg identiteitskaart van de Schuine kant van een instantie van de Experience Manager gebruikend één van beide volgende methodes:
+Verkrijg identiteitskaart van de Schuine kant van een instantie van de Experience Manager gebruikend één van beiden van de volgende methodes:
 
 * Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het Verdeelde bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
 * Gebruik browser van de Topologie als de instantie reeds deel van de topologie uitmaakt.
@@ -352,8 +348,8 @@ The following procedure assumes the following characteristics for the offloading
 1. On the instances that perform the background processing of DAM assets, disable the workflow launchers that execute the [!UICONTROL DAM Update Asset] workflow.
 -->
 
-## Meer informatie {#further-reading}
+## Verdere lezing {#further-reading}
 
-Naast de details op deze pagina kunt u ook het volgende lezen:
+Naast de details die op deze pagina worden voorgesteld, kunt u ook het volgende lezen:
 
 * Voor informatie over het gebruik van Java API&#39;s om banen te creëren en baangebruikers, zie [Banen voor offloaden maken en consumeren](/help/sites-developing/dev-offloading.md).

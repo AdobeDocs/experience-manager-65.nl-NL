@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 role: Admin
 exl-id: eafb60be-2963-4ac9-8618-50fd9bc6fe6c
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '716'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
@@ -33,8 +33,8 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL en het gege
    * [MySQL-server](https://dev.mysql.com/downloads/mysql/) Community Server versie 5.6 of hoger
 
       * Kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
-   * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
+   * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 ## MySQL installeren {#installing-mysql}
 
@@ -49,7 +49,7 @@ Als u bijvoorbeeld alle tabelnamen met kleine letters wilt opgeven op een Linux-
 * Bestand bewerken `/etc/my.cnf`
 * In de `[mysqld]` de volgende regel toevoegen:
 
-   `lower_case_table_names = 1`
+  `lower_case_table_names = 1`
 
 ### UTF8-tekenset {#utf-character-set}
 
@@ -64,11 +64,11 @@ Wijzig de MySQL-database in de standaardwaarde voor UTF8:
 * Bestand bewerken `/etc/my.cnf`
 * In de `[client]` de volgende regel toevoegen:
 
-   `default-character-set=utf8`
+  `default-character-set=utf8`
 
 * In de `[mysqld]` de volgende regel toevoegen:
 
-   `character-set-server=utf8`
+  `character-set-server=utf8`
 
 ## MySQL Workbench installeren {#installing-mysql-workbench}
 
@@ -84,7 +84,7 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 ### Nieuwe verbindingsinstellingen {#new-connection-settings}
 
-1. Selecteer `+` pictogram rechts van `MySQL Connections`.
+1. Selecteer de `+` pictogram rechts van `MySQL Connections`.
 1. In het dialoogvenster `Setup New Connection`Voer de waarden in die geschikt zijn voor uw platform
 
    Voor demonstratiedoeleinden, met de auteur AEM instantie en MySQL op de zelfde server:
@@ -128,7 +128,7 @@ Het SQL-script is afkomstig uit de AEM opslagplaats:
 
 Eén methode voor het downloaden van het schema is:
 
-* Selecteer `jcr:content` knooppunt voor het sql-bestand
+* Selecteer de `jcr:content` knooppunt voor het sql-bestand
 * Let op de waarde voor de `jcr:data` eigenschap is een weergavekoppeling
 
 * Selecteer de weergavekoppeling om de gegevens in een lokaal bestand op te slaan
@@ -158,7 +158,7 @@ In de volgende afbeelding worden de `init_schema.sql` bestand kan worden uitgevo
 
 #### Vernieuwen {#refresh}
 
-Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om te verfrissen `SCHEMAS` van de `Navigator` om de nieuwe database te kunnen zien. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
+Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om te verfrissen `SCHEMAS` van de `Navigator` om de nieuwe database te bekijken. Gebruik het vernieuwingspictogram rechts van &#39;SCHEMAS&#39;:
 
 ![vernieuwingsschema](assets/refresh-schema.png)
 
@@ -172,31 +172,31 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 
 * Op elke auteur en publiceer AEM instantie.
 * Aangemeld met beheerdersrechten.
-* Toegang krijgen tot [webconsole](../../help/sites-deploying/configuring-osgi.md).
+* Toegang krijgen tot de [webconsole](../../help/sites-deploying/configuring-osgi.md).
 
    * Bijvoorbeeld: [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
 
 * Zoek de `Day Commons JDBC Connections Pool`
-* Selecteer `+` pictogram om een nieuwe verbindingsconfiguratie tot stand te brengen.
+* Selecteer de `+` pictogram om een nieuwe verbindingsconfiguratie te creëren.
 
-   ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
+  ![configure-jdbc-connection](assets/configure-jdbc-connection.png)
 
 * Voer de volgende waarden in:
 
    * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
    * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM server *gemeenschappen* is de standaardnaam van de database (schema).
+     Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM server *gemeenschappen* is de standaardnaam van de database (schema).
 
    * **[!UICONTROL Username]**: `root`
 
-      Of ga gevormde Gebruikersnaam voor de server MySQL in, als niet &quot;wortel&quot;.
+     Of ga gevormde Gebruikersnaam voor de server MySQL in, als niet &quot;wortel&quot;.
 
    * **[!UICONTROL Password]**:
 
-      Wis dit gebied als geen wachtwoord voor MySQL wordt geplaatst,
+     Wis dit gebied als geen wachtwoord voor MySQL wordt geplaatst,
 
-      anders ga het gevormde wachtwoord voor de Gebruikersnaam MySQL in.
+     anders ga het gevormde wachtwoord voor de Gebruikersnaam MySQL in.
 
    * **[!UICONTROL Datasource name]**: naam ingevoerd voor de [MySQL-verbinding](#new-connection-settings), bijvoorbeeld &quot;gemeenschappen&quot;.
 

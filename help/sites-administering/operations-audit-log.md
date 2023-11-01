@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '602'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Voer de volgende stappen uit om het opschonen van controlelogbestanden te config
    >Het inhoudspad is alleen van toepassing op onderliggende elementen van het dialoogvenster `/var/audit/com.day.cq.wcm.core.page` in de repository.
 
 1. Sla de regel op.
-1. De regel u enkel creeerde moet in het Dashboard van Verrichtingen worden blootgesteld opdat het wordt uitgevoerd. Om dit te doen, ga **Gereedschappen - Operaties - Onderhoud** in het welkomstscherm AEM.
+1. De regel u enkel creeerde moet in het Dashboard van Verrichtingen worden blootgesteld opdat het wordt uitgevoerd. Ga als volgt te werk om dit te doen **Gereedschappen - Operaties - Onderhoud** in het welkomstscherm AEM.
 
 1. Druk op **Wekelijks onderhoudvenster** kaart.
 

@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1874'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ U kunt een webtoepassing maken die Java-servlets gebruikt om de Forms-service aa
 >
 >In deze sectie wordt beschreven hoe u een webtoepassing maakt die een Java-servlet gebruikt die de Forms-service aanroept en op fragmenten gebaseerde formulieren weergeeft. (Zie [Forms renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
 
-Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
+Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server, waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
 
 In deze sectie wordt besproken hoe u een webtoepassing kunt maken waarmee de gebruiker op Amerika gebaseerde formuliergegevens of op Canada gebaseerde formuliergegevens kan selecteren, zoals in de volgende afbeelding wordt getoond.
 
@@ -47,7 +47,7 @@ Als de gebruiker Canadese gegevens selecteert, bevat het geretourneerde formulie
 
 >[!NOTE]
 >
->Voor informatie over het maken van formulierontwerpen op basis van fragmenten raadpleegt u [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Zie voor informatie over het maken van formulierontwerpen op basis van fragmenten [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 **Voorbeeldbestanden**
 
@@ -99,7 +99,7 @@ Ga voor de locatie van deze JAR-bestanden naar [Inclusief AEM Forms Java-bibliot
 
 1. Eclipse starten en klikken **Bestand** >  **Nieuw project**.
 1. In de **Nieuw project** dialoogvenster selecteert u **Web** > **Dynamisch webproject**.
-1. Type `FragmentsWebApplication` voor de naam van uw project en klik vervolgens op **Voltooien**.
+1. Type `FragmentsWebApplication` voor de naam van uw project en klik dan **Voltooien**.
 
 **U voegt als volgt vereiste JAR-bestanden toe aan uw project:**
 
@@ -125,7 +125,7 @@ Ga voor de locatie van deze JAR-bestanden naar [Inclusief AEM Forms Java-bibliot
 
 ### Java-toepassingslogica voor de servlet maken {#creating-java-application-logic-for-the-servlet}
 
-U maakt Java-toepassingslogica die de Forms-service aanroept vanuit de Java-servlet. De volgende code toont de syntaxis van `RenderFormFragment` Java Servlet:
+U maakt Java-toepassingslogica die de Forms-service aanroept vanuit de Java-servlet. De volgende code toont de syntaxis van `RenderFormFragment` Java Server:
 
 ```java
      public class RenderFormFragment extends HttpServlet implements Servlet {
@@ -140,14 +140,14 @@ U maakt Java-toepassingslogica die de Forms-service aanroept vanuit de Java-serv
              }
 ```
 
-Normaal gesproken plaatst u geen clientcode in een Java-servlet `doGet` of `doPost` methode. Een betere programmeerpraktijk is deze code binnen een afzonderlijke klasse te plaatsen, de klasse van binnen te concretiseren `doPost` methode (of `doGet` methode) en roept de aangewezen methodes aan. Voor de beknoptheid van de code worden de codevoorbeelden in deze sectie echter tot een minimum beperkt en worden codevoorbeelden in de `doPost` methode.
+Normaal gesproken plaatst u geen clientcode in een Java-servlet `doGet` of `doPost` methode. Een betere programmeerpraktijk is deze code binnen een afzonderlijke klasse te plaatsen, de klasse van binnen te concretiseren `doPost` of `doGet` methode) en roept de aangewezen methodes aan. Voor de beknoptheid van de code worden de codevoorbeelden in deze sectie echter tot een minimum beperkt en worden codevoorbeelden in de `doPost` methode.
 
 Als u een formulier wilt genereren op basis van fragmenten met de API van de Forms-service, voert u de volgende taken uit:
 
 1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 1. Hiermee haalt u de waarde op van het keuzerondje dat vanuit het HTML-formulier wordt verzonden en geeft u aan of Amerikaanse of Canadese gegevens moeten worden gebruikt. Als American wordt verzonden, maakt u een `com.adobe.idp.Document` dat gegevens opslaat die zich in de *Purchase Order US.xml*. En als Canadees, creeer dan `com.adobe.idp.Document` dat gegevens opslaat die zich in de *Purchase Order Canada.xml* bestand.
 1. Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
-1. Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+1. Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 1. Een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
 1. De `URLSpec` object `setApplicationWebRoot` en geeft een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
 1. De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de AEM Forms-opslagplaats wilt verwijzen, geeft u `repository://`.
@@ -164,7 +164,7 @@ Als u een formulier wilt genereren op basis van fragmenten met de API van de For
 
 1. Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
 1. Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-1. Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+1. Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
 1. Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
 1. Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
 1. Maak een bytearray die deze met de formuliergegevensstroom vult door de `InputStream` object `read`en de bytearray doorgeven als een argument.
@@ -309,7 +309,7 @@ In het volgende codevoorbeeld ziet u het Java-servlet dat de Forms-service activ
 
 ### De webpagina maken {#creating-the-web-page}
 
-De webpagina index.html biedt een ingangspunt voor de Java-server en roept de Forms-service aan. Deze webpagina is een basisformulier voor HTML met twee keuzerondjes en een verzendknop. De naam van de keuzerondjes is keuzerondjes. Wanneer de gebruiker op de verzendknop klikt, worden formuliergegevens naar de `RenderFormFragment` Java servlet.
+De index.html-webpagina biedt een ingangspunt voor de Java-server en roept de Forms-service aan. Deze webpagina is een basisformulier voor HTML met twee keuzerondjes en een verzendknop. De naam van de keuzerondjes is keuzerondjes. Wanneer de gebruiker op de verzendknop klikt, worden formuliergegevens naar de `RenderFormFragment` Java servlet.
 
 De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met behulp van de volgende Java-code:
 
@@ -379,7 +379,7 @@ Als u de Java-servlet wilt implementeren die de Forms-service aanroept, moet u u
 
 **Een webtoepassing verpakken naar een WAR-bestand:**
 
-1. Van de **Projectverkenner** venster, klikt u met de rechtermuisknop op de knop `FragmentsWebApplication` project en selecteer **Exporteren** > **WAR-bestand**.
+1. Van de **Project Explorer** venster, klikt u met de rechtermuisknop op de knop `FragmentsWebApplication` project en selecteer **Exporteren** > **WAR-bestand**.
 1. In de **Webmodule** tekstvak, tekst `FragmentsWebApplication` voor de naam van het Java-project.
 1. In de **Doel** tekstvak, tekst `FragmentsWebApplication.war`**voor de** bestandsnaam, geef de locatie voor het WAR-bestand op en klik op Voltooien.
 
@@ -397,4 +397,4 @@ Nadat u de webtoepassing hebt geïmplementeerd, kunt u deze testen met een webbr
 
 * http://localhost:8080/FragmentsWebApplication/index.html
 
-   Selecteer een keuzerondje en klik op Verzenden. Een formulier dat is gebaseerd op fragmenten, wordt weergegeven in de webbrowser. Als er problemen optreden, raadpleegt u het logbestand van de J2EE-toepassingsserver.
+  Selecteer een keuzerondje en klik op Verzenden. Een formulier dat is gebaseerd op fragmenten, wordt weergegeven in de webbrowser. Zie het logbestand van de J2EE-toepassingsserver als er zich problemen voordoen.

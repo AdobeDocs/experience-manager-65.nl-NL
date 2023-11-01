@@ -6,9 +6,9 @@ seo-description: Learn about the options available when installing a standalone 
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -47,13 +47,13 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 
 Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen van AEM.
 
-* Het volgende - `-add-opens` de schakelaars moeten worden toegevoegd om verwante bezinningstoegang te verhinderen WARNING berichten in `stdout.log`
+* Het volgende - `-add-opens` de schakelaars moeten worden toegevoegd om de verwante berichten van de bezinningstoegang WARNING in te verhinderen `stdout.log`
 
 ```shell
 --add-opens=java.desktop/com.sun.imageio.plugins.jpeg=ALL-UNNAMED --add-opens=java.base/sun.net.www.protocol.jrt=ALL-UNNAMED --add-opens=java.naming/javax.naming.spi=ALL-UNNAMED --add-opens=java.xml/com.sun.org.apache.xerces.internal.dom=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/jdk.internal.loader=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED -Dnashorn.args=--no-deprecation-warning
 ```
 
-* Daarnaast moet u gebruikmaken van de `-XX:+UseParallelGC` om eventuele prestatieproblemen te beperken.
+* Daarnaast moet u gebruikmaken van de `-XX:+UseParallelGC` Schakel over om mogelijke prestatieproblemen te beperken.
 
 Hieronder ziet u een voorbeeld van hoe de extra JVM-parameters eruit moeten zien wanneer u AEM start op Java 11:
 

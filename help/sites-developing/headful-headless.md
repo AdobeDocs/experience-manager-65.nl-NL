@@ -2,9 +2,9 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden geïmplementeerd in een krachtig en zonder kop, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1014'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Toepassingen op één pagina (SPA) zijn vaak de bestemming voor inhoud die zonde
 
 ## Voorbeeld van webwinkel {#web-shop-example}
 
-Laten we zeggen dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten zoals promotiesites, blogs en inhoud van campagnes te ondersteunen. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
+Laten we zeggen dat u een bestaande webshop hebt voor uw bedrijf als SPA. Hierin staan al uw productdetails en afbeeldingen. Vervolgens introduceert u AEM om uw marketingactiviteiten, zoals promotiesites, blogs en inhoud van campagnes, kracht bij te zetten. Hoe integreer je deze twee? AEM maakt een spectrum van opties mogelijk:
 
 * **De systemen onafhankelijk laten werken.**
 * **Bied de webshop met beperkte inhoud van AEM via GraphQL.** Inhoud kan door auteurs in AEM worden gemaakt, maar kan alleen via de SPA van de webshop worden bekeken.

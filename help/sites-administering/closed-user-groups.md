@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6854'
+source-wordcount: '6836'
 ht-degree: 0%
 
 ---
@@ -129,7 +129,7 @@ Aangezien dit type van authentificatievereiste naar verwachting tot bepaalde loo
 
 De standaard AEM opstelling maakt nu gebruik van deze configuratie door toe te staan om de mixin op de wijze van de auteurslooppas te plaatsen maar het slechts van kracht te hebben op replicatie aan te publiceren instantie. Zie [deze pagina](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) voor details hoe Sling de authentificatievereiste afdwingt.
 
-De `granite:AuthenticationRequired` het mixintype binnen de gevormde gesteunde wegen zal de registratie OSGi van de verantwoordelijke manager veroorzaken om worden bijgewerkt die een nieuwe, extra ingang met bevat `sling.auth.requirements` eigenschap. Als een bepaalde vereiste voor verificatie de optionele `granite:loginPath` eigenschap, wordt de waarde aanvullend geregistreerd bij de authenticator met een &#39;-&#39; voorvoegsel om te worden uitgesloten van de verificatievereiste.
+De `granite:AuthenticationRequired` het mixintype binnen de gevormde gesteunde wegen zal de registratie OSGi van de verantwoordelijke manager veroorzaken om worden bijgewerkt die een nieuwe, extra ingang met bevat `sling.auth.requirements` eigenschap. Als een bepaalde vereiste voor verificatie de optionele `granite:loginPath` eigenschap, wordt de waarde bovendien geregistreerd bij de authenticator met een &#39;-&#39; voorvoegsel dat van de verificatievereiste moet worden uitgesloten.
 
 #### Evaluatie en overerving van de authenticatievereiste {#evaluation-and-inheritance-of-the-authentication-requirement}
 
@@ -718,7 +718,7 @@ Raadpleeg de [CUG-pluggable](https://jackrabbit.apache.org/oak/docs/security/aut
 
 ### De verificatievereiste uitschakelen {#disable-the-authentication-requirement}
 
-Om steun voor het authentificatievereiste zoals voorzien door uit te schakelen `granite.auth.authhandler` de module het volstaat om de configuratie te verwijderen verbonden aan **Vereiste van de Authentificatie van Granite van de Adobe en de Bediener van de Weg van de Login**.
+Om steun voor het authentificatievereiste zoals voorzien door onbruikbaar te maken `granite.auth.authhandler` de module het volstaat om de configuratie te verwijderen verbonden aan **Vereiste van de Authentificatie van Granite van de Adobe en de Bediener van de Weg van de Login**.
 
 >[!NOTE]
 >
@@ -728,7 +728,7 @@ Om steun voor het authentificatievereiste zoals voorzien door uit te schakelen `
 
 ### Apache Jackrabbit API {#apache-jackrabbit-api}
 
-Om op het nieuwe type van toegangsbeheerbeleid te wijzen dat door het de vergunningsmodel van de GG wordt gebruikt, is API die door Apache Jackrabbit wordt bepaald uitgebreid. Sinds versie 2.11.0 van het `jackrabbit-api` module bepaalt een nieuwe geroepen interface `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, die zich uitstrekt van `javax.jcr.security.AccessControlPolicy`.
+Om op het nieuwe type van toegangsbeheerbeleid te wijzen dat door het de vergunningsmodel van de CUG wordt gebruikt, is API die door Apache Jackrabbit wordt bepaald uitgebreid. Sinds versie 2.11.0 van het `jackrabbit-api` module bepaalt een nieuwe geroepen interface `org.apache.jackrabbit.api.security.authorization.PrincipalSetPolicy`, die zich uitstrekt van `javax.jcr.security.AccessControlPolicy`.
 
 ### Apache Jackrabbit FileVault {#apache-jackrabbit-filevault}
 
@@ -753,7 +753,7 @@ Er is één beperking van het repliceren van beleid van CUG. Als een bepaald bel
 
 De verificatiehandler **Adobe Granite HTTP Header Authentication Handler** meegeleverd bij `com.adobe.granite.auth.authhandler` bundel bevat een verwijzing naar de `CugSupport` interface die door de zelfde module wordt bepaald. Het wordt gebruikt om het &quot;domein&quot;in bepaalde omstandigheden te berekenen, die terug naar het domein vallen dat met de manager wordt gevormd.
 
-Dit is aangepast om de verwijzing naar `CugSupport` facultatief om maximale achterwaartse verenigbaarheid te verzekeren als een bepaalde opstelling besluit om de verouderde implementatie opnieuw toe te laten. Installaties die gebruikmaken van de implementatie krijgen niet langer het domein dat wordt opgehaald uit de CUG-implementatie, maar geven altijd het domein weer zoals gedefinieerd met **Adobe Granite HTTP Header Authentication Handler**.
+Dit is aangepast om de verwijzing naar `CugSupport` optioneel om maximale achterwaartse compatibiliteit te garanderen als een bepaalde instelling besluit de vervangen implementatie opnieuw in te schakelen. Installaties die gebruikmaken van de implementatie krijgen niet langer het domein dat wordt opgehaald uit de CUG-implementatie, maar geven altijd het domein weer zoals gedefinieerd met **Adobe Granite HTTP Header Authentication Handler**.
 
 >[!NOTE]
 >
@@ -776,7 +776,7 @@ Het doel van deze sectie is een overzicht te geven van de wijzigingen die in de 
 
 ### Verschillen in de Opstelling en de Configuratie van de CUG {#differences-in-cug-setup-and-configuration}
 
-De vervangen OSGi-component **Ondersteuning voor gebruikersgroep voor gesloten gebruikersgroep (CUG) met Adobe** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) is vervangen door nieuwe componenten om de onderdelen van de vroegere CUG-functionaliteit die betrekking hebben op autorisatie en authenticatie afzonderlijk te kunnen verwerken.
+De vervangen OSGi-component **Ondersteuning voor gebruikersgroep voor gesloten gebruikersgroep (CUG) met Adobe** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) is vervangen door nieuwe componenten die op autorisatie en authenticatie betrekking hebbende delen van de vroegere CUG-functionaliteit afzonderlijk kunnen verwerken.
 
 ## Verschillen in het beheren van CUG&#39;s in de inhoud van de opslagplaats {#differences-in-managing-cugs-in-the-repository-content}
 
@@ -794,7 +794,7 @@ Met de nieuwe implementatie wordt de opstelling van het toegangsbeheer van het s
 
 **CUG-beleid bewerken in Access Control Management**
 
-Deze beweging van resterende eigenschappen JCR aan een specifiek toegangsbeheerbeleid heeft een invloed op de toestemming nodig om het vergunningsdeel van de eigenschap van de GG tot stand te brengen of te wijzigen. Aangezien dit als een wijziging van de inhoud van de toegangscontrole wordt beschouwd, vereist het `jcr:readAccessControl` en `jcr:modifyAccessControl` rechten om naar de opslagplaats te worden geschreven. Daarom kunnen alleen inhoudsauteurs die gemachtigd zijn om de inhoud van het toegangsbeheer van een pagina te wijzigen, deze inhoud instellen of wijzigen. Dit staat in schril contrast met de oude implementatie waar de capaciteit om regelmatige eigenschappen te schrijven JCR voldoende was, resulterend in een voorrechtescalatie.
+Deze beweging van resterende eigenschappen JCR aan een specifiek toegangsbeheerbeleid heeft een invloed op de toestemming nodig om het vergunningsdeel van de eigenschap van de GG tot stand te brengen of te wijzigen. Aangezien dit als een wijziging van de inhoud van de toegangscontrole wordt beschouwd, vereist het `jcr:readAccessControl` en `jcr:modifyAccessControl` rechten die naar de opslagplaats moeten worden geschreven. Daarom kunnen alleen inhoudsauteurs die gemachtigd zijn om de inhoud van het toegangsbeheer van een pagina te wijzigen, deze inhoud instellen of wijzigen. Dit staat in schril contrast met de oude implementatie waar de capaciteit om regelmatige eigenschappen te schrijven JCR voldoende was, resulterend in een voorrechtescalatie.
 
 **Doelknooppunt gedefinieerd door beleid**
 

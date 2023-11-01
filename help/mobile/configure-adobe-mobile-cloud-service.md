@@ -1,7 +1,7 @@
 ---
-title: Uw Adobe Mobile Services-Cloud Service configureren
+title: Vorm uw Cloud Service van de Diensten van de Adobe Mobiele
 seo-title: Configure your Adobe Mobile Services Cloud Service
-description: Volg deze pagina om uw Adobe Mobiele Cloud Service van de Diensten te vormen.
+description: Volg deze pagina om uw Cloud Service van de Diensten van de Adobe Mobiele te vormen.
 seo-description: Follow this page to configure your Adobe Mobile Services Cloud Service.
 uuid: 21fe5b24-dc4d-4ee4-9e7f-ed4783baf276
 contentOwner: User
@@ -11,22 +11,22 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 exl-id: 209c36f9-1a4b-4eea-8dde-22e0fc9718c1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '451'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
 
-# Uw Adobe Mobile Services-Cloud Service configureren {#configure-your-adobe-mobile-services-cloud-service}
+# Vorm uw Cloud Service van de Diensten van de Adobe Mobiele {#configure-your-adobe-mobile-services-cloud-service}
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
-De **Mobiele metrische tegel** in het opdrachtcentrum levert realtime analyses voor uw mobiele toepassing.
+De **Mobiele metrische tegel** in het opdrachtcentrum hebt u toegang tot realtime analyses voor uw mobiele toepassing.
 
-De [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK wordt beschikbaar gesteld via een PhoneGap-plug-in. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Op dat moment worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
+De [Mobiele Adobe-analyse](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK wordt beschikbaar gesteld via een PhoneGap-plug-in. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Op dat moment worden de gegevens naar de Adobe Mobile Services Cloud geduwd voor rapportage en analyse.
 
 Adobe Mobile Analytics SDK biedt het volgende:
 
@@ -47,13 +47,13 @@ Metrische tegel AEM Command Center
 
 ## De Cloud Service configureren {#configuring-the-cloud-service}
 
-Als u gebruik wilt maken van Adobe Mobile Services Analytics, moet u de AEM Mobile Analytics Cloud Service configureren met uw Adobe Analytics-accountgegevens.
+Als u gebruik wilt maken van de Adobe Mobile Services Analytics, moet u de AEM Mobile Analytics Cloud Service configureren met uw Adobe Analytics-accountgegevens.
 
-1. Klik op het pictogram aan de rechterbovenzijde om de Cloud Services toe te voegen of te bewerken vanuit het menu **Cloud Services beheren** element uit het dashboard van de app.
+1. Klik op het pictogram aan de rechterbovenzijde om de Cloud Servicen toe te voegen of te bewerken vanuit het menu **Cloud Servicen beheren** element uit het dashboard van de app.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
-1. De **Cloud Services toevoegen of bewerken** weergegeven. Selecteren **Adobe mobiele services** en klik op **Volgende**.
+1. De **Cloud Servicen toevoegen of bewerken** schermweergaven. Selecteren **Adobe mobiele services** en klik op **Volgende**.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 

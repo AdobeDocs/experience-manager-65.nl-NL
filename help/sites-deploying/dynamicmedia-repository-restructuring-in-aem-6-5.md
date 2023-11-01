@@ -1,16 +1,14 @@
 ---
 title: Herstructurering van Dynamic Media-opslagplaats in Adobe Experience Manager 6.5
 description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in Experience Manager 6.5 voor Dynamic Media.
-uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Upgrading
 exl-id: 4e736924-74ea-431a-be19-1c4ff022f464
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '413'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
@@ -47,7 +45,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -74,7 +72,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -97,7 +95,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -116,11 +114,11 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>1. Alle video's van YouTube verwijderen<br /> 2. De YouTube-configuratie maken met de nieuwe TouchUI (van <code>/conf</code>) inclusief het kopiëren van alle kanalen van de oude locatie<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
+   <td><p>1. Publiceer alle video's van YouTube ongedaan<br /> 2. De YouTube-configuratie maken met de nieuwe TouchUI (van <code>/conf</code>) inclusief het kopiëren van alle kanalen van de oude locatie<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een TouchUI YouTube-config maakt, worden onder Eigenschappen meerdere YouTube-URL's weergegeven, omdat de opnieuw gemaakte kanalen opnieuw worden gepubliceerd, als dit de kans is. Deze functionaliteit houdt in dat u nutteloze URL's hebt die onder Eigenschappen worden vermeld.</p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -143,7 +141,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -164,7 +162,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>

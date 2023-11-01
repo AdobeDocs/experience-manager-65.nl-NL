@@ -11,9 +11,9 @@ topic-tags: repo_restructuring
 discoiquuid: fc879b0b-823b-4bdc-aaa6-36f53a33fb22
 feature: Upgrading
 exl-id: 2572aa8d-2a3a-4e5b-ae5f-07e1017ea0f4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '532'
 ht-degree: 0%
 
 ---
@@ -31,16 +31,16 @@ Te dien einde, vanaf AEM 6.4 en om in toekomstige versies te worden voortgezet, 
 * AEM productcode zal altijd in /libs worden geplaatst, die niet door douanecode moet worden beschreven
 * De aangepaste code moet worden geplaatst in /apps, /content en /conf
 
-## Effect op upgrades van 6,5 graden {#impact-on-upgrades}
+## Effect op 6,5 upgrades {#impact-on-upgrades}
 
-Wanneer u een upgrade uitvoert naar AEM 6.5, wordt een grote subset van de inhoud onder /etc. gedupliceerd in andere mappen in de opslagplaats. Deze nieuwe locaties zijn de voorkeurslocaties voor de inhoud. Nochtans, is elke poging gemaakt om AEM 6.5 verbetering achterwaarts compatibel met de vorige plaatsen in de /etc omslag te zijn en zo in de meeste gevallen zullen de oude plaatsen door AEM code blijven worden van verwijzingen voorzien tot de veranderingen actief — en in veel gevallen manueel — in de toepassing van een klant worden gemaakt. Vanuit een tijdlijnperspectief zijn er twee categorieën wijzigingen:
+Bij de upgrade naar AEM 6.5 wordt een grote subset van de inhoud onder /etc gedupliceerd in andere mappen in de opslagplaats. Deze nieuwe locaties zijn de voorkeurslocaties voor de inhoud. Nochtans, is elke poging gemaakt om AEM 6.5 verbetering achterwaarts compatibel met de vorige plaatsen in de /etc omslag te zijn en zo in de meeste gevallen zullen de oude plaatsen door AEM code blijven worden van verwijzingen voorzien tot de veranderingen actief — en in veel gevallen manueel — in de toepassing van een klant worden gemaakt. Vanuit een tijdlijnperspectief zijn er twee categorieën wijzigingen:
 
 * Met 6.5 Verbetering - een handvol van de /etc-herstructureringen zijn niet achterwaarts compatibel en daarom zouden de aanpassingen als deel van AEM 6.5 verbetering moeten worden gepland en worden uitgevoerd.
 * Voorafgaand aan de toekomstige upgrade: het overgrote deel van de wijzigingen in de herstructurering /etc. kan worden uitgesteld tot enige tijd in de toekomstige upgrade. Zoals eerder vermeld, zal AEM 6.5 code de oude plaatsen blijven van verwijzingen voorzien tot de wijzigingen als deel van een klantenversie worden uitgevoerd. Hoewel er geen geforceerde tijdlijn is waarvoor de veranderingen zouden moeten worden aangebracht, wordt geadviseerd dat zij vóór de toekomstige verbetering worden gemaakt aangezien de toekomstige eigenschappen op de nieuwe plaatsen kunnen baseren die worden van verwijzingen voorzien. Bovendien zal de documentatie voor een bepaalde eigenschap door conventie naar de nieuwe plaatsen verwijzen en het zou daarom verwarrend kunnen zijn als de oude plaatsen nog worden gebruikt.
 
 ### Herstructureringsrichtsnoeren {#restructuring-guidance}
 
-Bij het plannen van een upgrade naar AEM 6.5 moet naar de volgende pagina&#39;s per oplossing worden verwezen om de werkinspanning te beoordelen:
+Tijdens de planning voor een upgrade naar AEM 6.5, moet naar de volgende pagina&#39;s per oplossing worden verwezen om de werkinspanning te beoordelen:
 
 * [Herstructurering van de opslagplaats gemeenschappelijk voor alle AEM oplossingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md)
 * [Herstructurering van AEM Sites-opslagplaats](/help/sites-deploying/sites-repository-restructuring-in-aem-6-5.md)

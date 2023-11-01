@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: c4fb1b5e-e15e-450e-b882-fe27b165ff9f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1787'
+source-wordcount: '1785'
 ht-degree: 0%
 
 ---
@@ -214,7 +214,7 @@ public interface ExperienceFragmentLinkRewriterProvider {
 
 Om de interface te gebruiken, moet u eerst een bundel tot stand brengen die een nieuwe de dienstcomponent bevat die de interface van de Leverancier van Rewriter van de Verbinding uitvoert.
 
-Deze service wordt gebruikt om de functie Exporteren naar doel van fragment uit ervaring in te sluiten voor toegang tot de verschillende koppelingen.
+Deze service wordt gebruikt om in het dialoogvenster Exporteren van fragment uit ervaring naar doel te plaatsen voor toegang tot de verschillende koppelingen.
 
 Bijvoorbeeld, `ComponentService`:
 

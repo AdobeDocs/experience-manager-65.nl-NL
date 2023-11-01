@@ -1,18 +1,14 @@
 ---
-title: Repositoregeling voor de herstructurering van AEM Communities in punt 6.4
-seo-title: Repository Restructuring for AEM Communities in 6.4
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe dataopslagstructuur in AEM 6.4 voor Gemeenschappen.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.4 for Communities.
-uuid: d161655f-4074-44a7-8d69-38e80934c58b
+title: Repositoregeling voor AEM Communities in punt 6.4
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe dataopslagstructuur in AEM 6.4 voor Communities.
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 7383265b-0ed4-4ea7-b741-0a417d187bdd
 feature: Upgrading
 exl-id: 4d2bdd45-a29a-4936-b8da-f7e011d81e83
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1011'
+source-wordcount: '1009'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 
 **Met 6,5-upgrade**
 
-* [E-mailmeldingssjablonen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#e-mail-notification-templates)
+* [Templates voor e-mailmeldingen](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#e-mail-notification-templates)
 * [Subscription Configurations](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#subscription-configurations)
 
 **Voorafgaand aan toekomstige upgrade**
@@ -35,12 +31,12 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 
 * [Configuraties voor sociale aanmelding in pinterest](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#pinterest-social-login-configurations)
 * [Scoringconfiguraties](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#scoring-configurations)
-* [Configuraties voor sociale aanmelding in twitter](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
+* [Configuraties voor sociale aanmelding voor twitters](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#twitter-social-login-configurations)
 * [Dic](/help/sites-deploying/communities-repository-restructuring-in-aem-6-5.md#misc)
 
 ## Met 6,5-upgrade {#with-upgrade}
 
-### E-mailmeldingssjablonen {#e-mail-notification-templates}
+### Templates voor e-mailmeldingen {#e-mail-notification-templates}
 
 <table>
  <tbody>
@@ -49,7 +45,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/community/notifications</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/settings/community/notifications</code></td>
   </tr>
   <tr>
@@ -58,7 +54,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -72,7 +68,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/community/subscriptions</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/settings/community/subscriptions</code></td>
   </tr>
   <tr>
@@ -81,7 +77,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -95,7 +91,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td>/etc/watchwords</td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td>/libs/community/watchwords</td>
   </tr>
   <tr>
@@ -104,7 +100,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -120,7 +116,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/community/badging</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><strong>Badge-regels:</strong></p> <p><code>/libs/settings/community/badging</code></p> <p><strong>Badge-afbeeldingen:</strong></p> <p>Voor standaardafbeeldingen: <code>/etc/community/badging/images are moved to /libs/community/badging/images</code></p> <p>Voor aangepaste afbeeldingen: <code>/content/community/badging/images</code></p> <p> </p> </td>
   </tr>
   <tr>
@@ -136,11 +132,11 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
        <li>Als de eigenschap bijvoorbeeld <code>cq:conf = /conf/we-retail</code>vervolgens <code>badgingRules [] = community/badging/rules</code> als de regels nu naar dit nieuwe emmertje worden verplaatst .</li>
       </ol> </li>
      <li>Pas op dezelfde manier de verwijzingen naar het schrapen van regels in een merkende regelknoop aan om een relatief pad te hebben.</li>
-    </ol> <p> </p> <p>Tot slot kunt u opschonen door de resource te verwijderen <code>/etc/community/badging</code></p> </td>
+    </ol> <p> </p> <p>Tot slot schoon door het middel te verwijderen <code>/etc/community/badging</code></p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -154,16 +150,16 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/designs/social/console</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/social/console</code></p> <p><code>/apps/settings/wcm/designs/social/console</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -177,7 +173,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/cloudservices/facebookconnect</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code class="code">/conf/global/settings/cloudconfigs/facebookconnect
        </code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/facebookconnect</code></p> <p> </p> </td>
   </tr>
@@ -187,7 +183,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Nieuwe Facebook Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Facebook</strong>.<br /> of <br /> </li>
+       <li>Nieuwe Facebook Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Servicen &gt; Configuratie van sociale aanmelding voor Facebook</strong>.<br /> of <br /> </li>
        <li>Kopieer nieuwe Facebook Cloud Configurations van vorige locatie naar de juiste nieuwe locatie, onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Als u de hoofdmap van de AEM Communities-site wilt bijwerken en wilt verwijzen naar de nieuwe configuratie voor sociale aanmelding van Facebook, stelt u de optie <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
@@ -196,7 +192,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -210,16 +206,16 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/social/config/languageOpts</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/social/translation/languageOpts</code></td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -233,7 +229,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/cloudservices/pinterestconnect</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code class="code">/conf/global/settings/cloudconfigs/pinterestconnect
        </code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/pinterestconnect</code></p> <p> </p> </td>
   </tr>
@@ -243,7 +239,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Nieuwe Pinterest Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Pinterest</strong>.<br /> of</li>
+       <li>Nieuwe Pinterest Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Servicen &gt; Configuratie van sociale aanmelding voor Pinterest</strong>.<br /> of</li>
        <li>Kopieer nieuwe Pinterest Cloud Configurations van vorige locatie naar de juiste nieuwe locatie onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
      <li>Als u een AEM Communities Site-hoofdmap wilt bijwerken, verwijst u naar de nieuwe Pinterest Social Login Configuration op basis van de instellingen in het dialoogvenster <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
@@ -252,7 +248,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -266,7 +262,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/community/scoring</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/settings/community/scoring</code></td>
   </tr>
   <tr>
@@ -274,23 +270,23 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><p>Om met nieuwe bewaarplaatsstructuur te richten, kan het schrapen regels in worden opgeslagen <code>/apps/settings/</code> of /<code>conf/.../settings</code></p>
     <ol>
      <li>Voor <code>/apps/settings</code>, zou dit als globale of standaardregels handelen die in SCM worden beheerd.</li>
-    </ol> <p>Contextbewuste configuraties maken in <code>/conf/</code> door CRXDELite te gebruiken:</p>
+    </ol> <p>Contextbewuste configuraties maken in <code>/conf/</code> met CRXDELite:</p>
     <ol>
      <li>Maak de configuraties in de gewenste <code>/conf/.../settings</code> locatie<br /> </li>
-     <li>De site van de Gemeenschappen moet de <code>cq:conf </code>eigenschap ingesteld.
+     <li>De site van de Gemeenschappen moet <code>cq:conf </code>eigenschap ingesteld.
       <ol>
        <li>Indien niet <code>cq:conf</code> is ingesteld, worden scoringregels rechtstreeks gelezen van het opgegeven pad voor eigenschap '<code>scoringRules</code>' in het hoofdknooppunt van de site, bijvoorbeeld: <code>/content/we-retail/us/en/community/jcr:content</code></li>
       </ol> </li>
-    </ol> <p>Overbodig verwijderen: De bron verwijderen <code>/etc/community/scoring</code></p> </td>
+    </ol> <p>Overbodig verwijderen: de bron verwijderen <code>/etc/community/scoring</code></p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
 
-### Configuraties voor sociale aanmelding in twitter {#twitter-social-login-configurations}
+### Configuraties voor sociale aanmelding voor twitters {#twitter-social-login-configurations}
 
 <table>
  <tbody>
@@ -299,7 +295,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/cloudservices/twitterconnect</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code class="code">/conf/global/settings/cloudconfigs/twitterconnect
        </code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/twitterconnect</code></p> <p> </p> </td>
   </tr>
@@ -309,16 +305,16 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ol>
-       <li>Nieuwe Twitter Social Login Configurations handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Configuratie van sociale aanmelding voor Twitter</strong>.<br /> of <br /> </li>
-       <li>Kopieer nieuwe Twitter Cloud Configurations van vorige locatie naar de juiste nieuwe locatie, onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
+       <li>Nieuwe configuraties voor sociale aanmelding voor Twitters handmatig opnieuw maken via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Servicen &gt; Configuratie van sociale aanmelding Twitters</strong>.<br /> of <br /> </li>
+       <li>Kopieer alle nieuwe Twitter Cloud Configurations van Vorige Locatie naar de juiste nieuwe locatie, onder <code>/conf/global or /conf/&lt;tenant&gt;</code>.</li>
       </ol> </li>
-     <li>Als u de hoofdmap van de AEM Communities-site wilt bijwerken en wilt verwijzen naar de nieuwe configuratie voor sociale aanmelding van Twitter, stelt u de optie <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
-     <li>Koppel de verouderde Twitter Connect-Cloud Service los van de basis van de AEM Communities-site die is bijgewerkt om naar de nieuwe locatie te verwijzen.</li>
+     <li>Werk om het even welke wortel van de Plaats van AEM Communities bij om naar de nieuwe Configuratie van de Sociale Aanmelding van de Twitter te verwijzen door te plaatsen <code>[cq:Page]/jcr:content@cq:conf</code> eigenschap naar het absolute pad in de nieuwe locatie.</li>
+     <li>Koppel de oudere Twitter Connect-Cloud Service los van de hoofdmappen van de AEM Communities-site die zijn bijgewerkt om naar de nieuwe locatie te verwijzen.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.<br /> </td>
+   <td>NVT<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -332,7 +328,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
    <td><code>/etc/community/templates</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/libs/settings/community/templates</code></td>
   </tr>
   <tr>

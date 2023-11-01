@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: cc0574ae22758d095a3ca6b91f0ceae4a8691f0e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1911'
+source-wordcount: '1907'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ In AEM Communities kunnen gebruikers zichzelf registreren en hun profielen bewer
 
 In de publicatieomgeving geregistreerde gebruikers worden doorgaans *leden van de gemeenschap ( leden )* om ze van elkaar te onderscheiden *gebruikers* in de ontwerpomgeving.
 
-Machtigingen worden verleend door leden toe te wijzen aan een van de [leden (gebruikersgroepen)](#publish-group-roles) dynamisch gemaakt wanneer de communitysite wordt [gemaakt](sites-console.md) of [gewijzigd](sites-console.md#modifying-site-properties) van de auteur-omgeving. Wanneer het werken van het auteursmilieu, zijn de leden zichtbaar van het publicatiemilieu door middel van [tunneldienst](#tunnel-service).
+Machtigingen worden verleend door leden toe te wijzen aan een van de [leden (gebruikersgroepen)](#publish-group-roles) dynamisch gemaakt wanneer de communitysite wordt [gemaakt](sites-console.md) of [gewijzigd](sites-console.md#modifying-site-properties) van de auteur-omgeving. Wanneer het werken van het auteursmilieu, zijn de leden zichtbaar van het publicatiemilieu door [tunneldienst](#tunnel-service).
 
 Door ontwerp, leden en lidgroepen die in het publicatiemilieu worden gecreeerd zouden niet in het auteursmilieu moeten verschijnen. Gebruikers en gebruikersgroepen die in de auteursomgeving zijn gemaakt, moeten ook in de auteursomgeving blijven.
 
@@ -42,13 +42,13 @@ Voor een [publicatiebedrijf](topologies.md), moeten registratie en wijzigingen d
 
 ### Bijdragelimieten {#contribution-limits}
 
-Ter bescherming tegen spam is het mogelijk de frequentie van het plaatsen van inhoud door de leden te beperken. Bovendien is het mogelijk de bijdragen van nieuw geregistreerde leden automatisch te beperken.
+Ter bescherming tegen spam is het mogelijk de frequentie van het plaatsen van inhoud door leden te beperken. Bovendien is het mogelijk de bijdragen van nieuw geregistreerde leden automatisch te beperken.
 
 Zie voor meer informatie [Limieten voor bijdragen van de lidstaten](limits.md).
 
 ### Dynamisch gemaakte gebruikersgroepen {#dynamically-created-user-groups}
 
-Wanneer een nieuwe communautaire plaats wordt gecreeerd, worden de nieuwe gebruikersgroepen dynamisch gecreeerd met unieke identiteitskaart (uid) en toestemmingen aangewezen voor diverse administratieve functies noodzakelijk om de communautaire plaats of in het auteursmilieu (zie [Auteursgroeprollen](#author-group-roles)) of de publicatieomgeving (zie [Groeprollen publiceren](#publish-group-roles)).
+Wanneer een nieuwe communautaire plaats wordt gecreeerd, worden de nieuwe gebruikersgroepen dynamisch gecreeerd met unieke identiteitskaart (uid) en toestemmingen aangewezen voor diverse administratieve functies noodzakelijk om de communautaire plaats of in het auteursmilieu te beheren (zie [Auteursgroeprollen](#author-group-roles)) of de publicatieomgeving (zie [Groeprollen publiceren](#publish-group-roles)).
 
 De namen van de groepen worden gegenereerd op basis van de naam die de site tijdens [site maken](sites-console.md#step13asitetemplate). Unieke id&#39;s vermijden naamgevingsconflicten voor sites met dezelfde naam en groepen van gemeenschappen op dezelfde server.
 
@@ -75,7 +75,7 @@ Als u gebruikers en gebruikersgroepen wilt beheren die zijn geregistreerd in de 
 | Indien lid van de groep... | Primaire rol |
 |---|---|
 | beheerders | De groep van beheerders bestaat uit systeembeheerders die alle capaciteiten van een communautaire Beheerder evenals de capaciteit hebben om de groep van Communautaire Beheerders te beheren. |
-| Communautaire administrateurs | De communautaire groep van Beheerders wordt automatisch een lid van alle communautaire plaatsen en om het even welke communautaire groepen die op de plaats worden gecreeerd. Een aanvankelijk lid van de groep van Communautaire Beheerders is de beheerdersgroep. In de auteursomgeving, kunnen de Communautaire Beheerders communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud. |
+| Community-beheerders | De communautaire groep van Beheerders wordt automatisch een lid van alle communautaire plaatsen en om het even welke communautaire groepen die op de plaats worden gecreeerd. Een aanvankelijk lid van de groep van Communautaire Beheerders is de beheerdersgroep. In de auteursomgeving, kunnen de Communautaire Beheerders communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud. |
 | Community &lt;*sitenaam*> Sitecontentmanager | Met Community Site Content Manager kunt u traditionele AEM ontwerpen, inhoud maken en pagina&#39;s voor een communitysite wijzigen. |
 | Geen | Een anonieme sitebezoeker heeft mogelijk geen toegang tot de auteursomgeving. |
 
@@ -83,7 +83,7 @@ Als u gebruikers en gebruikersgroepen wilt beheren die zijn geregistreerd in de 
 
 De leden van de beheerdersgroep zijn systeembeheerders die de aanvankelijke opstelling van een AEM installatie voor zowel de auteur als publicatiemilieu&#39;s kunnen uitvoeren.
 
-Voor demonstratie- en ontwikkelingsdoeleinden heeft de groep met beheerders een lid waarvan de gebruiker *beheerder* en wachtwoord is *beheerder*.
+Voor demonstratie- en ontwikkelingsdoeleinden heeft de groep met beheerders een lid waarvan de gebruiker *admin* en wachtwoord is *admin*.
 
 Voor productieomgevingen moet de standaardbeheerdersgroep worden gewijzigd.
 
@@ -93,7 +93,7 @@ Zorg ervoor dat u de [Beveiligingscontrolelijst](../../help/sites-administering/
 
 ### Lid worden {#becoming-a-member}
 
-In de publicatieomgeving, afhankelijk van de [instellingen](sites-console.md#user-management) van de communautaire site kan een bezoeker van de site lid worden van de gemeenschap :
+Afhankelijk van de [instellingen](sites-console.md#user-management) van de communautaire site kan een bezoeker van de site lid worden van de gemeenschap :
 
 * Wanneer de site van de community privé is (gesloten):
    * Op uitnodiging
@@ -101,7 +101,7 @@ In de publicatieomgeving, afhankelijk van de [instellingen](sites-console.md#use
 
 * Wanneer de site van de community openbaar is (open):
    * Op zelfregistratie
-   * Via sociale aanmelding bij Facebook en Twitter
+   * Op sociale aanmelding met Facebook en Twitter
 
 >[!NOTE]
 >
@@ -116,13 +116,13 @@ In de publicatieomgeving, afhankelijk van de [instellingen](sites-console.md#use
 | Community &lt;*sitenaam*> &lt;*groepsnaam*> Leden | Een lid van een communautaire groep is een lid van de gemeenschap dat zich heeft aangesloten bij een open communautaire groep of is uitgenodigd voor een gesloten communautaire groep. Zij hebben de capaciteiten van een lid voor die communautaire groep binnen de plaats. |
 | Community &lt;*sitenaam*> Groepbeheerders | Een beheerder van een community-sitegroep is een vertrouwd communitylid dat is toegewezen aan het maken en beheren van subgemeenschappen (groepen) binnen een communitysite. Omvat is het vermogen om in-context matiging te verstrekken. |
 | *Bevoorrechte ledenbeveiligingsgroep* | Een handmatig gemaakte en onderhouden gebruikersgroep om het maken van inhoud te beperken. Zie [Groep met geprivilegieerde leden](#privileged-members-group). |
-| Geen | Een anonieme sitebezoeker, die de site ontdekt, kan gemeenschapssites weergeven en doorzoeken die anonieme toegang toestaan. Om te kunnen deelnemen en inhoud te kunnen plaatsen, moet de gebruiker zich zelf registreren (indien toegestaan) en lid worden van de gemeenschap. |
+| Geen | Een anonieme sitebezoeker, die de site ontdekt, kan gemeenschapssites weergeven en doorzoeken die anonieme toegang toestaan. Om deel te nemen en inhoud te posten, moet de gebruiker zich (indien toegestaan) registreren en een lid van de gemeenschap worden. |
 
 ### Leden toewijzen aan rollen van groepen publiceren {#assigning-members-to-publish-group-roles}
 
 Wanneer [het creëren van een communautaire plaats](sites-console.md) in de ontwerpomgeving, of wanneer [site-eigenschappen wijzigen;](sites-console.md#modifying-site-properties) leden kunnen diverse rollen worden toegewezen die in het publicatiemilieu, zoals moderatoren, groepsbeheerders, middelcontacten, of bevoorrechte leden worden uitgevoerd.
 
-[De tunnelservice inschakelen](sync.md#accessingpublishusersfromauthor) resulteert in toewijzingskeuzen die door leden bij publicatie worden voorgesteld in plaats van gebruikers bij auteur.
+[Het toelaten van de tunneldienst](sync.md#accessingpublishusersfromauthor) resulteert in toewijzingskeuzen die door leden bij publicatie worden voorgesteld in plaats van gebruikers bij auteur.
 
 De geselecteerde leden worden automatisch toegewezen aan de [passende groep](#publish-group-roles) en hun lidmaatschap zal worden opgenomen wanneer de site van de gemeenschap ( opnieuw ) wordt gepubliceerd .
 
@@ -130,7 +130,7 @@ De geselecteerde leden worden automatisch toegewezen aan de [passende groep](#pu
 
 Het doel van een bevoorrechte groep van de ledenveiligheid is de verwezenlijking van inhoud voor bepaalde communautaire functies tot een bevoorrechte ondergroep van de leden van een communautaire plaats te beperken.
 
-De bevoorrechte ledengroep is een lidgroep die wordt gecreeerd en wordt beheerd gebruikend [console Gemeenschappen-groepen](members.md).
+De bevoorrechte ledengroep is een lidgroep die wordt gecreeerd en wordt beheerd gebruikend [console Gemeenschappen/Groepen](members.md).
 
 Nadat een bevoorrechte ledengroep wordt gecreeerd, en met [tunnelservice ingeschakeld](sync.md#accessingpublishusersfromauthor)kan een bestaande structuur van een communautaire site [gewijzigd](sites-console.md#modify-structure) om de configuratie van zijn communityfuncties te bewerken naar &#39;Geprivilegieerde leden toestaan&#39; en de gemaakte groep toe te voegen.
 
@@ -157,7 +157,7 @@ Wanneer leden worden gemaakt in `/home/users/community`, erven zij juiste ACLs d
 
 Op dezelfde manier zouden de gebruikersgroepen van de douanegemeenschap (zoals bevoorrechte ledengroepen) in moeten worden gecreeerd `/home/groups/community`.
 
-Met de [Samenstellingen van leden en groepen](members.md) worden gebruikers en groepen in deze paden gemaakt.
+Met de [Samenstellingen van leden en groepen](members.md) Hiermee maakt u gebruikers en groepen in deze paden.
 
 Als u een aangepast pad wilt opgeven, moet u de klassieke beveiligingsinterface gebruiken. Deze interface is toegankelijk op [https://&lt;server>:&lt;port>/useradmin](http://localhost:4503/useradmin).
 
@@ -189,10 +189,10 @@ Er zijn vier afzonderlijke consoles beschikbaar slechts in het auteursmilieu:
 
 | console | Gereedschappen, beveiliging, gebruikers | Gereedschappen, Beveiliging, Groepen | Gemeenschappen, leden | Gemeenschappen, groepen |
 |----------|-----------------------|------------------------|------------------------------------------------------------|------------------------------------------------------------|
-| beheer | gebruikers op auteur | gebruikersgroepen bij auteur | leden die worden gepubliceerd | lidgroepen die worden gepubliceerd |
-| vereist | machtiging beheerder | machtiging beheerder | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm |
+| beheert | gebruikers op auteur | gebruikersgroepen bij auteur | leden die publiceren | lidgroepen die worden gepubliceerd |
+| vereist | beheerdersbevoegdheid | beheerdersbevoegdheid | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm | beheerdersrechten, tunnelservice, gebruikerssynchronisatie voor publicatiefarm |
 
-### Rol van communautaire administrateurs {#community-administrators-role}
+### Rol van communautaire beheerders {#community-administrators-role}
 
 Zoals vermeld in het [Auteursgroeprollen](#author-group-roles) in kaart brengen, kunnen de leden van de groep van Beheerders Gemeenschap communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud.
 
@@ -239,8 +239,8 @@ Wanneer het bespreken van groepen, zijn er twee verschillende onderwerpen:
 
 * **[Communautaire groepen](overview.md#communitygroups)**
 
-   Communautaire groepen zijn de subgemeenschappen die kunnen worden gecreëerd in de publicatieomgeving voor een communautaire site die de oprichting van groepen van gemeenschappen ondersteunt. Als u een community maakt, worden er meer pagina&#39;s toegevoegd aan de website en worden deze beheerd op een manier die vergelijkbaar is met de bovenliggende community-site. Ga voor meer informatie naar [Essentiële elementen van gebruikersgroepen](essentials-groups.md) voor ontwikkelaars en [Communautaire groep](creating-groups.md) voor auteurs.
+  Communautaire groepen zijn de subgemeenschappen die kunnen worden gecreëerd in de publicatieomgeving voor een communautaire site die de oprichting van groepen van gemeenschappen ondersteunt. Als u een community maakt, worden er meer pagina&#39;s toegevoegd aan de website en worden deze beheerd op een manier die vergelijkbaar is met de bovenliggende community-site. Voor meer informatie gaat u naar [Essentiële elementen van gebruikersgroepen](essentials-groups.md) voor ontwikkelaars en [Communautaire groep](creating-groups.md) voor auteurs.
 
 * **[Leden](../../help/sites-administering/security.md)**
 
-   De groepen van de leden zijn de groepen waartot de leden kunnen behoren en door de console van Groepen worden geleid. Een groot deel van de discussie over deze pagina is gewijd aan de leden van de fracties. De ledengroepen die automatisch voor een communitysite worden gemaakt, worden vooraf ingesteld op *`Community`*, kan worden aangeduid als een communautaire groep, zodat de context van de discussie moet worden overwogen.
+  De groepen van de leden zijn de groepen waartot de leden kunnen behoren en door de console van Groepen worden geleid. Een groot deel van de discussie over deze pagina is gewijd aan de leden van de fracties. De ledengroepen die automatisch voor een communitysite worden gemaakt, worden vooraf ingesteld op *`Community`*, kan worden aangeduid als een communautaire groep, zodat de context van de discussie moet worden overwogen.

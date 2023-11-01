@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1685'
+source-wordcount: '1683'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Hieronder vindt u een lijst met alle aangepaste Search Forms en de wijzigingen d
   </tr>
   <tr>
    <td>Type bron in 6.2</td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
  </tbody>
 </table>
@@ -78,7 +78,7 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekopdracht Uit in 6.1</td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -114,7 +114,7 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
 
 **Handeling:** Pas de `resourceType` eigenschap (toevoegen &quot;**/koraal**&quot; zoals op de hierboven aangegeven locatie 6.2).
 
-### Voorwaarden labels {#tags-predicates}
+### Voorwaarden voor tags {#tags-predicates}
 
 <table>
  <tbody>
@@ -141,7 +141,7 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>pagestatus prediken</td>
+   <td>pagestatuspredikaat</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -149,7 +149,7 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
   </tr>
   <tr>
    <td>Type bron in 6.2</td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
  </tbody>
 </table>
@@ -211,7 +211,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**Handeling:** Er is niets om aan te passen.
+**Handeling:** Niets om aan te passen.
 
 ### Voorspelling van analysemogelijkheden {#analytics-predicate}
 
@@ -240,7 +240,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -257,7 +257,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
 
 >[!NOTE]
 >
->Opmerking: In tegenstelling tot 6.1, geeft het Predicate van de Waaier niet meer een markering in de onderzoeksbar terug.
+>Opmerking: in tegenstelling tot 6.1 wordt met het voorspellende bereik niet langer een tag in de zoekbalk weergegeven.
 
 ### Eigenschappenvoorspelling opties {#options-property-predicate}
 
@@ -265,7 +265,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -280,13 +280,13 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
 
 **Handeling:** Pas de `resourceType` eigenschap (toevoegen &quot;**/koraal**&quot; zoals op de hierboven aangegeven locatie 6.2).
 
-### Predicate voor schuifregelaarbereik {#slider-range-predicate}
+### Predicate voor schuifbereik {#slider-range-predicate}
 
 <table>
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -307,7 +307,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -328,7 +328,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -349,7 +349,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  <tbody>
   <tr>
    <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td>
-   <td>n.v.t.</td>
+   <td>nvt</td>
   </tr>
   <tr>
    <td><p>Type bron in 6.1</p> </td>
@@ -373,7 +373,7 @@ De onderstaande knooppunten verwijzen naar de namen in `/conf/global/settings/da
 | Knooppunt(en) in standaardzoekformulier in 6.1 | fulltext |
 |---|---|
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/fulltextpreate |
-| Type bron in 6.2 | n.v.t. |
+| Type bron in 6.2 | nvt |
 
 In 6.1 maakte het standaard fulltext predikaat deel uit van het onderzoeksformulier. In 6.2 is het volledige tekstveld vervangen door OmniSearch. Dit predikaat wordt programmatically overgeslagen en kan worden verwijderd.
 
@@ -413,13 +413,13 @@ In 6.1 maakte het standaard fulltext predikaat deel uit van het onderzoeksformul
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/assetlastmodifiedpredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/assetlastmodifiedpredicate |
 
-Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijvoorbeeld op de hierboven aangegeven locatie 6.2).
+Actie: Pas het resourceType-bezit aan (voeg &quot;/koral&quot;toe zoals in de 6.2 hierboven vermelde plaats).
 
 ### Voorspelling publiceren {#publish-predicate}
 
 | Knooppunt(en) in standaardzoekformulier in 6.1 | publish |
 |---|---|
-| Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/publish predikate |
+| Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/publish prepress |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/publish predikate |
 
 **Handelingen:**
@@ -441,7 +441,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 ### Voorspellingen voor verloopstatus {#expiry-status-predicates}
 
-| Knooppunt(en) in standaardzoekformulier in 6.1 | expirystatus |
+| Knooppunt(en) in standaardzoekformulier in 6.1 | vervalstatus |
 |---|---|
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/expiredassetpredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/expiredassetpredicate |
@@ -450,7 +450,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 ### Voorspelden voor metagegevensgeldigheid {#metadata-validity-predicates}
 
-| Knooppunt(en) in standaardzoekformulier in 6.1 | metadatavalidity |
+| Knooppunt(en) in standaardzoekformulier in 6.1 | metadatavaliditeit |
 |---|---|
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/optionspredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/optionspredicate |
@@ -477,11 +477,11 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 * Pas de `resourceType` eigenschap (toevoegen &quot;**/koraal**&quot; zoals op de hierboven vermelde locatie 6.2)
 
-* Voeg een `fieldLabel` eigenschap met dezelfde waarde als de eigenschap `text` eigenschap op hetzelfde knooppunt.
+* Voeg een `fieldLabel` eigenschap met dezelfde waarde als de `text` eigenschap op hetzelfde knooppunt.
 
-* Een `emptyText` eigenschap met dezelfde waarde als de eigenschap `text` eigenschap op hetzelfde knooppunt.
+* Een `emptyText` eigenschap met dezelfde waarde als `text` eigenschap op hetzelfde knooppunt.
 
-* Voeg een `rootPath` eigenschap met dezelfde waarde als de eigenschap `optionPaths` eigenschap op hetzelfde knooppunt.
+* Voeg een `rootPath` eigenschap met dezelfde waarde als `optionPaths` eigenschap op hetzelfde knooppunt.
 
 ### Stijlvoorspelling {#style-predicate}
 
@@ -494,11 +494,11 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 * Pas de `resourceType` eigenschap (toevoegen &quot;**/koraal**&quot; zoals op de hierboven vermelde locatie 6.2)
 
-* Voeg een `fieldLabel` eigenschap met dezelfde waarde als de eigenschap `text` eigenschap op hetzelfde knooppunt.
+* Voeg een `fieldLabel` eigenschap met dezelfde waarde als de `text` eigenschap op hetzelfde knooppunt.
 
-* Een `emptyText` eigenschap met dezelfde waarde als de eigenschap `text` eigenschap op hetzelfde knooppunt.
+* Een `emptyText` eigenschap met dezelfde waarde als `text` eigenschap op hetzelfde knooppunt.
 
-* Voeg een `rootPath` eigenschap met dezelfde waarde als de eigenschap `optionPaths` eigenschap op hetzelfde knooppunt.
+* Voeg een `rootPath` eigenschap met dezelfde waarde als `optionPaths` eigenschap op hetzelfde knooppunt.
 
 ### Voorspelden video-indeling {#video-format-predicates}
 

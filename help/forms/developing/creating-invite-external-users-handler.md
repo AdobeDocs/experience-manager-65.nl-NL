@@ -3,9 +3,9 @@ title: Een Uitnodigingshandler voor externe gebruikers maken
 description: Leer hoe u een Invite External Users Handler maakt. Het laat de dienst van het Rights Management toe om externe gebruikers uit te nodigen om Rights Management gebruikers te worden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1093'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---

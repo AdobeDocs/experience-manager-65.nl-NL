@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '15513'
+source-wordcount: '15485'
 ht-degree: 0%
 
 ---
@@ -878,7 +878,7 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 **Een met beleid beveiligd PDF-document ophalen**
 
-U moet een document met een door het beleid beveiligde PDF ophalen om het te kunnen intrekken. U kunt een document dat al is ingetrokken of dat niet door een beleid beveiligd is, niet intrekken.
+U moet een met beleid beveiligd PDF-document opvragen om het te herroepen. U kunt een document dat al is ingetrokken of dat niet door een beleid beveiligd is, niet intrekken.
 
 Als u de waarde van de vergunningsidentificatie van het beleid-beschermde document kent, dan is het niet noodzakelijk om het beleid-beschermde document van de PDF terug te winnen. In de meeste gevallen zult u echter het PDF-document moeten ophalen om de waarde van de licentie-id te verkrijgen.
 
@@ -2132,7 +2132,7 @@ Voordat u via programmacode een bewerking met de documentbeveiligingsservice kun
 
 **Een met beleid beveiligd Word-document ophalen**
 
-U moet een beleid-beschermd document van Word terugwinnen om een beleid te verwijderen. Als u probeert om een beleid uit een document van Word te verwijderen dat niet door een beleid wordt beschermd, zult u een uitzondering veroorzaken.
+U moet een door een beleid beveiligd Word-document ophalen om een beleid te verwijderen. Als u probeert om een beleid uit een document van Word te verwijderen dat niet door een beleid wordt beschermd, zult u een uitzondering veroorzaken.
 
 **Het beleid verwijderen uit het Word-document**
 

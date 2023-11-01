@@ -1,7 +1,7 @@
 ---
 title: Werken met PDF/A-documenten
 seo-title: Working with PDF/A Documents
-description: Gebruik de DocConverter-service om te bepalen of een PDF-document een PDF/A-document is en zet PDF-documenten om in PDF/A-documenten.
+description: Gebruik de DocConverter-service om te bepalen of een PDF-document een PDF/A-document is en om PDF-documenten om te zetten in PDF/A-documenten.
 seo-description: Use the  DocConverter service to determine if a PDF document is a PDF/A document and convert PDF documents to PDF/A documents.
 uuid: c258d253-068a-4412-955a-21d8a4792d6f
 contentOwner: admin
@@ -11,16 +11,16 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 role: Developer
 exl-id: 966c3554-25df-4467-866e-11c43cc15b58
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2358'
+source-wordcount: '2356'
 ht-degree: 0%
 
 ---
 
 # Werken met PDF/A-documenten {#working-with-pdf-a-documents}
 
-**Over de DocConverter-service**
+**Informatie over de DocConverter-service**
 
 De DocConverter-service kan PDF-documenten omzetten in PDA/A-documenten. U kunt deze taken uitvoeren met deze service:
 
@@ -35,7 +35,7 @@ De DocConverter-service kan PDF-documenten omzetten in PDA/A-documenten. U kunt 
 
 Met de DocConverter-service kunt u een PDF-document omzetten in een PDF/A-document. Omdat PDF/A een archiefindeling is voor langdurige bewaring van de inhoud van het document, worden alle lettertypen ingesloten en wordt het bestand niet gecomprimeerd. Een PDF/A-document is daarom doorgaans groter dan een standaard PDF-document. Een PDF/A-document bevat ook geen audio- en video-inhoud. Voordat u een PDF-document omzet in een PDF/A-document, moet u controleren of het PDF-document geen PDF/A-document is.
 
-De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk A en B. Het grootste verschil tussen beide is de logische structuur (toegankelijkheid) die niet vereist is voor niveau B. Ongeacht het compatibiliteitsniveau bepaalt PDF/A-1 dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document. Op dit moment wordt alleen PDF/A-1b ondersteund voor validatie (en conversie).
+De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk A en B. Het belangrijkste verschil tussen beide is de logische structuur (toegankelijkheid) die niet vereist is voor compatibiliteitsniveau B. Ongeacht het compatibiliteitsniveau, dicteert PDF/A-1 dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document. Op dit moment wordt alleen PDF/A-1b ondersteund voor validatie (en conversie).
 
 Hoewel PDF/A de standaard is voor het archiveren van PDF-documenten, is het niet verplicht dat PDF/A wordt gebruikt voor archivering als een standaard PDF-document voldoet aan de eisen van uw bedrijf. Het doel van de PDF/A-standaard is een PDF-bestand te maken dat is bedoeld voor archiverings- en documentbewaardoeleinden op lange termijn.
 
@@ -49,7 +49,7 @@ Voer de volgende stappen uit om een PDF-document om te zetten in een PDF/A-docum
 
 1. Inclusief projectbestanden.
 1. Een DocConvert-client maken
-1. Verwijzen naar een PDF-document dat moet worden geconverteerd naar een PDF/A-document.
+1. Verwijzen naar een PDF-document dat moet worden omgezet in een PDF/A-document.
 1. Trackinggegevens instellen.
 1. Converteer het document.
 1. Sla het PDF/A-document op.
@@ -111,12 +111,12 @@ Een PDF-document converteren naar een PDF/A-document met de Java API:
 1. Een DocConvert-client maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `DocConverterServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `DocConverterServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een PDF-document dat moet worden omgezet in een PDF/A-document
 
    * Een `java.io.FileInputStream` object dat staat voor het PDF-document dat moet worden geconverteerd met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het PDF-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Trackinggegevens instellen
 
@@ -142,7 +142,7 @@ Een PDF-document converteren naar een PDF/A-document met de Java API:
 
 [Werken met PDF/A-documenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[Snel starten (SOAP-modus): Een document converteren naar een PDF/A-document met de Java API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
+[Snel starten (SOAP-modus): een document converteren naar een PDF/A-document met de Java API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -160,12 +160,12 @@ Een PDF-document converteren naar een PDF/A-document met de DocConverter-API (we
 1. Een DocConvert-client maken
 
    * Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `DocConverterServiceService` object door de standaardconstructor aan te roepen.
-   * Stel de `DocConverterServiceService` object `Credentials` lid van de gegevens met een `System.Net.NetworkCredential` waarde die de gebruikersnaam en wachtwoordwaarde specificeert.
+   * Stel de `DocConverterServiceService` object `Credentials` lid met gegevens `System.Net.NetworkCredential` waarde die de gebruikersnaam en wachtwoordwaarde specificeert.
 
 1. Verwijzen naar een PDF-document dat moet worden omgezet in een PDF/A-document
 
-   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om het PDF-document op te slaan dat wordt geconverteerd naar een PDF/A-document.
-   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus voor het openen van het bestand in vertegenwoordigt.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het PDF-document op te slaan dat wordt geconverteerd naar een PDF/A-document.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus voor het openen van het bestand in vertegenwoordigt.
    * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
    * Vul de `BLOB` object door het toe te wijzen `binaryData` eigenschap met de inhoud van de bytearray.
@@ -202,7 +202,7 @@ Een PDF-document converteren naar een PDF/A-document met de DocConverter-API (we
 
 ## Programmaticaal bepalen van PDF/A-compatibiliteit {#programmatically-determining-pdf-a-compliancy}
 
-U kunt de dienst DocConverter gebruiken om te bepalen of een document van de PDF PDF/A-Volgzaam is. Voor informatie over een PDF/A-document en hoe u een PDF-document omzet in een PDF/A-document, raadpleegt u [Documenten converteren naar PDF/A-documenten](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
+U kunt de dienst DocConverter gebruiken om te bepalen of een document van de PDF PDF/A-Volgzaam is. Zie voor informatie over een PDF/A-document en hoe u een PDF-document kunt omzetten in een PDF/A-document [Documenten converteren naar PDF/A-documenten](pdf-a-documents.md#converting-documents-to-pdf-a-documents).
 
 >[!NOTE]
 >
@@ -242,7 +242,7 @@ Er moet naar een PDF-document worden verwezen en dat document moet worden doorge
 
 **Uitvoeringsopties instellen**
 
-U kunt een runtime optie instellen die bepaalt hoeveel informatie tijdens het conversieproces wordt bijgehouden. Dat wil zeggen, u kunt negen verschillende niveaus instellen die aangeven hoeveel informatie de DocConverter-service bijhoudt wanneer een PDF-document wordt omgezet in een PDF/A-document.
+U kunt een runtime optie instellen die bepaalt hoeveel informatie tijdens het conversieproces wordt bijgehouden. Dat wil zeggen, u kunt negen verschillende niveaus instellen die aangeven hoeveel informatie de DocConverter-service bijhoudt wanneer een PDF-document wordt geconverteerd naar een PDF/A-document.
 
 **Informatie ophalen over het PDF-document**
 
@@ -269,12 +269,12 @@ Bepaal de PDF/A-compatibiliteit met de Java API:
 1. Een DocConvert-client maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `DocConverterServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `DocConverterServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een PDF-document dat wordt gebruikt om de PDF/A-compatibiliteit te bepalen
 
    * Een `java.io.FileInputStream` object dat staat voor het PDF-document dat moet worden geconverteerd met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het PDF-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Uitvoeringsopties instellen
 
@@ -313,12 +313,12 @@ Bepaal PDF/A-compatibiliteit met de webservice-API:
 1. Een DocConvert-client maken
 
    * Gebruikend de de cliëntassemblage van Microsoft .NET, creeer een `DocConverterServiceService` object door de standaardconstructor aan te roepen.
-   * Stel de `DocConverterServiceService` object `Credentials` lid van de gegevens met een `System.Net.NetworkCredential` waarde die de gebruikersnaam en wachtwoordwaarde specificeert.
+   * Stel de `DocConverterServiceService` object `Credentials` lid met gegevens `System.Net.NetworkCredential` waarde die de gebruikersnaam en wachtwoordwaarde specificeert.
 
 1. Verwijzen naar een PDF-document dat wordt gebruikt om de PDF/A-compatibiliteit te bepalen
 
-   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om het PDF-document op te slaan dat wordt geconverteerd naar een PDF/A-document.
-   * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus voor het openen van het bestand in vertegenwoordigt.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` wordt gebruikt om het PDF-document op te slaan dat wordt geconverteerd naar een PDF/A-document.
+   * Een `System.IO.FileStream` door de constructor aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus voor het openen van het bestand in vertegenwoordigt.
    * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.
    * Vul de `BLOB` object door het toe te wijzen `binaryData` eigenschap met de inhoud van de bytearray.

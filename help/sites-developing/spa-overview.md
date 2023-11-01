@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1659'
+source-wordcount: '1653'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 
 ## Inleiding {#introduction}
 
-De plaatsen die gebruikend gemeenschappelijke SPA zoals React en Angular worden gebouwd laden hun inhoud via dynamische JSON en verstrekken niet de structuur van de HTML die noodzakelijk voor de AEM Redacteur van de Pagina is om bewerkingscontroles te kunnen plaatsen.
+De plaatsen die gebruikend gemeenschappelijke SPA zoals React en Angular worden gebouwd laden hun inhoud via dynamische JSON en verstrekken niet de structuur van de HTML die voor de AEM Redacteur van de Pagina noodzakelijk is om bewerkingscontroles te kunnen plaatsen.
 
 Om het bewerken van SPA binnen AEM mogelijk te maken, is een toewijzing tussen de JSON-uitvoer van de SPA en het inhoudsmodel in de AEM opslagplaats nodig om wijzigingen in de inhoud op te slaan.
 
@@ -47,9 +47,9 @@ De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindco
 
 ### Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel` bibliotheek. De SPA moet de bibliotheek Paginamodel gebruiken om te worden geïnitialiseerd en door de SPA Editor te worden ontworpen. De bibliotheek Paginamodel die indirect via de `aem-react-editable-components` npm. Het paginamodel is een tolk tussen AEM en de SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, voegt u een extra bibliotheek toe `cq.authoring.pagemodel.messaging` moet worden toegevoegd om de communicatie met de paginaeditor mogelijk te maken.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven `PageModel` bibliotheek. De SPA moet de bibliotheek van het Model van de Pagina gebruiken om worden geïnitialiseerd en door de SPA Redacteur worden ontworpen. De bibliotheek Paginamodel die indirect via de `aem-react-editable-components` npm. Het paginamodel is een tolk tussen AEM en de SPA en moet daarom altijd aanwezig zijn. Wanneer de pagina is gemaakt, voegt u een extra bibliotheek toe `cq.authoring.pagemodel.messaging` moet worden toegevoegd om de communicatie met de paginaeditor mogelijk te maken.
 
-Als de SPA paginacomponent overerft van de hoofdcomponent van de pagina, zijn er twee opties voor het maken van de component `cq.authoring.pagemodel.messaging` beschikbare categorie voor clientbibliotheek:
+Als de SPA paginacomponent overerft van de hoofdcomponent van de pagina, zijn er twee opties voor het maken van `cq.authoring.pagemodel.messaging` beschikbare categorie voor clientbibliotheek:
 
 * Als de sjabloon bewerkbaar is, voegt u deze toe aan het paginabeleid.
 * U kunt ook de categorieën toevoegen met de opdracht `customfooterlibs.html`.
@@ -63,7 +63,7 @@ Voor elke bron in het geëxporteerde model wijst de SPA een werkelijke component
 
 ### Gegevenstype communicatie {#communication-data-type}
 
-Wanneer de `cq.authoring.pagemodel.messaging` wordt toegevoegd aan de pagina. Er wordt een bericht verzonden naar de Pagina-editor om het JSON-communicatietype vast te stellen. Wanneer het gegevenstype van communicatiegegevens aan JSON wordt geplaatst, zullen de verzoeken van de GET met de Sling Model eindpunten van een component communiceren. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. De bibliotheek Paginamodel stelt vervolgens de SPA van updates op de hoogte.
+Wanneer de `cq.authoring.pagemodel.messaging` wordt toegevoegd aan de pagina. Er wordt een bericht naar de Pagina-editor verzonden om het JSON-communicatietype vast te stellen. Wanneer het gegevenstype van communicatiegegevens aan JSON wordt geplaatst, zullen de verzoeken van de GET met de Sling Model eindpunten van een component communiceren. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. De bibliotheek Paginamodel stelt vervolgens de SPA van updates op de hoogte.
 
 ![screen_shot_2018-08-20at143628](assets/screen_shot_2018-08-20at143628.png)
 
@@ -110,7 +110,7 @@ Dit is een gedetailleerder overzicht van de interactie tussen client en server b
 
 1. De SPA initialiseert zichzelf en vraagt het paginamodel aan bij Sling Model Exporter.
 1. De verkoper ModelExporter verzoekt om de middelen die de pagina van de bewaarplaats samenstellen.
-1. De repository retourneert de bronnen.
+1. De opslagplaats retourneert de bronnen.
 1. De verkoper van het ModelExporter keert het model van de pagina terug.
 1. De SPA instantieert zijn componenten die op het paginamodel worden gebaseerd.
 1. **6 bis.** De inhoud informeert de editor dat deze gereed is voor ontwerpen.
@@ -119,8 +119,8 @@ Dit is een gedetailleerder overzicht van de interactie tussen client en server b
 
    **6 quater** De paginaeditor ontvangt de componentconfiguraties.
 1. Wanneer de auteur een component bewerkt, wordt in de pagina-editor een wijzigingsverzoek naar de standaard POST servlet gepost.
-1. De bron wordt bijgewerkt in de opslagplaats.
-1. De bijgewerkte bron wordt doorgegeven aan de POST servlet.
+1. De bron wordt bijgewerkt in de gegevensopslagruimte.
+1. De bijgewerkte bron wordt doorgegeven aan het servlet van de POST.
 1. De standaard server van de POST deelt de paginaredacteur mee dat het middel is bijgewerkt.
 1. De paginaeditor vraagt om het nieuwe paginamodel.
 1. De bronnen waaruit de pagina bestaat, worden opgevraagd bij de opslagplaats.
@@ -147,7 +147,7 @@ Dit is een gedetailleerder overzicht dat is toegespitst op de ontwerpervaring.
 
    **2 ter** Wanneer deze op de hoogte wordt gesteld, werkt de componentbeheerder de inhoudsstructuur van de pagina bij.
 1. De componentenbeheerder vraagt de afbeelding tussen een AEM middeltype en een SPA component.
-1. De componentinstantie instantieert dynamisch de SPA component op basis van het paginamodel en de componenttoewijzing.
+1. De componentorchestrator instantieert dynamisch de SPA component op basis van het paginamodel en de componenttoewijzing.
 1. De paginaeditor werkt het paginamodel bij.
 1. **6 bis.** Het paginamodel verstrekt bijgewerkte auteursgegevens aan de paginaredacteur.
 
@@ -171,7 +171,7 @@ Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, m
 
 ### Aanvullende kaders {#additional-frameworks}
 
-Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie de [SPA](/help/sites-developing/spa-blueprint.md) document voor de vereisten waaraan een kader moet voldoen om tot een kader-specifieke laag te leiden die uit modules, componenten, en de diensten wordt samengesteld om met de AEM SPA Redacteur te werken.
+Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie de [SPA](/help/sites-developing/spa-blueprint.md) document voor de vereisten die een kader moet vervullen om tot een kader-specifieke laag te leiden die uit modules, componenten, en de diensten wordt samengesteld om met de Redacteur van de SPA van de AEM te werken.
 
 ### Meerdere kiezers gebruiken {#multiple-selectors}
 
@@ -181,7 +181,7 @@ Aanvullende aangepaste kiezers kunnen worden gedefinieerd en gebruikt als onderd
 
 Als u de op plaats-editor wilt gebruiken van een tekstcomponent die in SPA is gemaakt, is er aanvullende configuratie vereist.
 
-1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. Voor de WKND Journal-voorbeeldinhoud is het een `<div>` element en de kiezer die is gebruikt, is `data-rte-editelement`.
+1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. Voor de WKND Journal-voorbeeldinhoud is het een `<div>` element en de kiezer die is gebruikt, `data-rte-editelement`.
 1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` dat bijvoorbeeld naar die kiezer wijst, `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
 
 Voor een voorbeeld van hoe dit wordt gedaan, zie [WKND Journal-voorbeeldinhoud.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)
@@ -190,12 +190,12 @@ Voor meer informatie over de `editElementQuery` eigenschap en de configuratie va
 
 ### Beperkingen {#limitations}
 
-De AEM SPA Editor SDK werd geïntroduceerd met AEM 6.4 service pack 2. Het wordt volledig gesteund door Adobe, en het blijft worden verbeterd en uitgebreid. De volgende AEM worden nog niet ondersteund door de SPA Editor:
+De AEM SPA Editor SDK werd geïntroduceerd met AEM 6.4 service pack 2. Het wordt volledig ondersteund door Adobe en het wordt verder uitgebreid en uitgebreid. De volgende AEM worden nog niet ondersteund door de SPA Editor:
 
 * Doelmodus
 * ContextHub
 * Inline-afbeeldingen bewerken
-* Configs bewerken (bijv. listeners)
+* Configs bewerken (bijvoorbeeld listeners)
 * Ongedaan maken/Opnieuw
 * Pagina diff en Tijd verdraaien
 * Functies die HTML herschrijven aan de serverzijde uitvoeren, zoals Koppelingencontrole, CDN-herschrijvingsservice, URL-verkorting enz.

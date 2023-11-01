@@ -2,9 +2,9 @@
 title: Aan de slag met AEM Headless
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '3042'
+source-wordcount: '3038'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van d
 
 AEM ondersteunt zowel de volledige koploze als de traditionele volledige stapel of topmodellen van een CMS. AEM biedt echter niet alleen deze twee exclusieve keuzes, maar ook de mogelijkheid om hybride modellen te ondersteunen die de voordelen van beide combineren en unieke flexibiliteit bieden voor uw project zonder titel.
 
-Om uw begrip van headless concepten te verzekeren, richt deze AEM Headless Ontwikkelaarsreis zich op het zuivere headless model om u zo snel mogelijk aan de slag te krijgen zonder codering in AEM.
+Om uw begrip van headless concepten te verzekeren, richt deze AEM Headless Ontwikkelaarsreis zich op het zuivere headless model om u aan de slag te krijgen zo spoedig mogelijk zonder codering in AEM.
 
 U moet echter goed op de hoogte zijn van de extra hybride mogelijkheden die voor u beschikbaar zijn als u AEM functies zonder kop begrijpt. Deze gevallen worden hieronder beschreven voor uw bewustzijn. Aan het eind van de reis, zult u aan deze concepten in detail worden geïntroduceerd voor het geval dat zulk flexibiliteit voor uw project wordt vereist.
 

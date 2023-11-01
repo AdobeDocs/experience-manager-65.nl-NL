@@ -2,9 +2,9 @@
 title: AEM Documentenreizen
 description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1228'
 ht-degree: 0%
 
 ---
@@ -33,9 +33,9 @@ De reizen zorgen ervoor dat de lezer weet hoe AEM een probleem kan oplossen in p
 
 ### Oriëntatie van best practices {#best-practices}
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op het nieuwste onderzoek, bewezen ervaring met de implementatie van Adobe-services en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie van Adobe-services en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert om een bedrijfsgeval met AEM op te lossen, zijn de Reizen van de Documentatie waar te beginnen.
+Als u wilt weten hoe de Adobe adviseert om een bedrijfsgeval met AEM op te lossen, zijn de Reizen van de Documentatie waar te beginnen.
 
 ## Hoe wordt een documentatiereis gestructureerd? {#structure}
 
@@ -48,7 +48,7 @@ Een typisch Documentatiereis heeft de volgende delen.
 * Beschrijving van de theorie die nodig is om het probleem op te lossen
 * Vereisten en vereisten
 * Beschrijving van het beoogde publiek
-* Uitvoeringsstappen
+* Implementatiestappen
 
 Het doel van een documentatiereis is de lezer vertrouwd te maken met de basisbeginselen van hoe AEM verschillende functies en gereedschappen gebruikt om één bedrijfsprobleem op te lossen. Om deze reden, illustreren de implementatiestappen de gemeenschappelijkste gebruikspatronen en de belangrijkste eigenschappen en de opties. Gedetailleerde configuratieopties zijn gekoppeld aan de technische documentatie voor verdere lezing.
 
@@ -64,7 +64,7 @@ Er zijn echter veel verschillende soorten AEM gebruikers met verschillende behoe
 * Ontwikkelaars
 * Inhoudsauteurs
 * Vertaalspecialisten
-* Inhoudsarchitecten
+* Inhoud architecten
 
 Elke reis begint met een duidelijke verklaring van het beoogde publiek voor de reis. Omdat niemand in een vacuüm werkt, wanneer de lezer de hulp van een systeemgebruiker of een persoon vereist, wordt dit duidelijk verklaard binnen de reis.
 
@@ -77,7 +77,7 @@ Documentatiereizen zijn bedoeld als aanvulling op bestaande AEM technische docum
 | Documentatiereis | Een reis bepaalt hoe AEM een algemeen bedrijfsprobleem door een verhaal kan oplossen dat lezers door complexe, onderling verbonden processen en eigenschappen begeleidt. Het illustreert hoe de veelvoudige eigenschappen samenwerken om een bedrijfsbehoefte op een beste praktijkwijze op te lossen. | Readers die nieuw zijn voor AEM | Algemene kennis van CMS | Gedetailleerde opties en configuratie | Tekst | Ca. 1 uur |
 | Technische documenten | De technische documenten richten zich op individuele eigenschappen, die de technische werking van de eigenschap en elke optie specificeren beschikbaar aan de gebruiker. | Ervaren AEM gebruikers | AEM | Context en achtergrond | Tekst | Varieert |
 | Zelfstudie | Een zelfstudie is een diepgaand duiken in een onderwerp dat een ontwikkelaar of beheerder toont hoe te om een technisch doel (over het algemeen programmering of systeemconfiguratie) op een geleidelijke manier te bereiken, die specifieke voorbeelden en voorbeeldcode verstrekt, gewoonlijk leveraging een beperkte reeks eigenschappen. | AEM ontwikkelaars of beheerders | AEM | Achtergrond en theorie | Video | > 1 uur |
-| Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM Admins | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 uur |
+| Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 uur |
 
 ## Welke reizen zijn er? {#journeys}
 

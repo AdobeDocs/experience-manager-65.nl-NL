@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
 exl-id: 419335b2-2aae-4e83-98ff-18e61b7efa9c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2904'
+source-wordcount: '2902'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ De volgende lijst verklaart de stappen in het diagram.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Gegevens worden ingediend bij de <code>HandleData</code> Java Servlet als XML-gegevens.</p></td>
+   <td><p>Gegevens worden ingediend bij de <code>HandleData</code> Java Server als XML-gegevens.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
@@ -113,7 +113,7 @@ Als formuliergegevens worden verzonden als UTF-16-URL-gegevens, vereist de clien
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -145,13 +145,13 @@ U kunt ook formuliervelden ophalen uit een formulier dat als PDF-gegevens wordt 
 
 U geeft het inhoudstype van het verzonden formulier op wanneer u het `processFormSubmission` methode. In de volgende lijst worden de toepasselijke waarden voor inhoudstypen aangegeven:
 
-* **text/xml**: Geeft het inhoudstype aan dat moet worden gebruikt wanneer een PDF-formulier formuliergegevens als XML verzendt.
-* **application/x-www-form-urlencoded**: Geeft het inhoudstype aan dat moet worden gebruikt wanneer een HTML-formulier gegevens als XML verzendt.
-* **application/pdf**: Geeft het inhoudstype aan dat moet worden gebruikt wanneer een PDF-formulier gegevens verzendt als PDF.
+* **text/xml**: Vertegenwoordigt het inhoudstype dat moet worden gebruikt wanneer een PDF-formulier formuliergegevens als XML verzendt.
+* **application/x-www-form-urlencoded**: Vertegenwoordigt het inhoudstype dat moet worden gebruikt wanneer een HTML-formulier gegevens als XML verzendt.
+* **application/pdf**: Vertegenwoordigt het inhoudstype dat moet worden gebruikt wanneer een PDF-formulier gegevens verzendt als PDF.
 
 >[!NOTE]
 >
->Er zijn drie bijbehorende snelstarthandleidingen gekoppeld aan de sectie Verzendde Forms afhandelen. De PDF forms voor verwerking die als PDF zijn verzonden met de Java API Quick start, tonen aan hoe de verzonden PDF-gegevens moeten worden verwerkt. Het inhoudstype dat in deze snelle start wordt opgegeven, is `application/pdf`. De PDF forms voor verwerking die als XML worden verzonden met behulp van de Java API Quick start tonen aan hoe de verzonden XML-gegevens die vanuit een PDF-formulier worden verzonden, moeten worden afgehandeld. Het inhoudstype dat in deze snelle start wordt opgegeven, is `text/xml`. Op dezelfde manier tonen de HTML-formulieren voor verwerking die als XML worden verzonden met de snelle start van de Java API aan hoe de verzonden XML-gegevens die vanuit een HTML-formulier zijn verzonden, moeten worden afgehandeld. Het inhoudstype dat in deze snelle start wordt opgegeven, is application/x-www-form-urlencoded.
+>Er zijn drie bijbehorende snelstarthandleidingen gekoppeld aan de sectie Verzendde Forms afhandelen. De PDF forms die worden verzonden als PDF met de Java API Quick start tonen aan hoe de verzonden PDF-gegevens moeten worden verwerkt. Het inhoudstype dat in deze snelle start wordt opgegeven, is `application/pdf`. De PDF forms die worden verzonden als XML met de snelle start van de Java API laten zien hoe de verzonden XML-gegevens worden verwerkt die worden verzonden vanuit een PDF-formulier. Het inhoudstype dat in deze snelle start wordt opgegeven, is `text/xml`. Op dezelfde manier tonen de HTML-formulieren voor verwerking die als XML worden verzonden met de snelle start van de Java API aan hoe de verzonden XML-gegevens die vanuit een HTML-formulier zijn verzonden, moeten worden afgehandeld. Het inhoudstype dat in deze snelle start wordt opgegeven, is application/x-www-form-urlencoded.
 
 U haalt formuliergegevens op die naar de Forms-service zijn verzonden en bepaalt de verwerkingsstatus. Dat wil zeggen dat wanneer gegevens worden ingediend bij de Forms-dienst, dit niet noodzakelijkerwijs betekent dat de Forms-dienst de gegevens heeft verwerkt en dat de gegevens klaar zijn om te worden verwerkt. Gegevens kunnen bijvoorbeeld naar de Forms-service worden verzonden, zodat een berekening kan worden uitgevoerd. Wanneer de berekening is voltooid, wordt het formulier teruggestuurd naar de gebruiker met de weergegeven berekeningsresultaten. Voordat u verzonden gegevens verwerkt, wordt u aangeraden te bepalen of de Forms-service de gegevens heeft verwerkt.
 
@@ -204,7 +204,7 @@ Een verzonden formulier verwerken met de Forms API (Java):
 1. Een Forms Client API-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Formuliergegevens ophalen
 
@@ -222,11 +222,9 @@ Een verzonden formulier verwerken met de Forms API (Java):
       * Een tekenreekswaarde die de `HTTP_USER_AGENT` headerwaarde, bijvoorbeeld . `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Deze parameterwaarde is optioneel.
       * A `RenderOptionsSpec` -object dat uitvoeringsopties opslaat.
 
-      De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
+     De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
 
-   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door het aanroepen van de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `0`De gegevens zijn klaar om te worden verwerkt.
-
-
+   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `0`De gegevens zijn klaar om te worden verwerkt.
 
 1. Bepalen of de formulierverzending bestandsbijlagen bevat
 
@@ -246,17 +244,17 @@ Een verzonden formulier verwerken met de Forms API (Java):
       * Een `org.w3c.dom.DocumentBuilderFactory` object door het statische object aan te roepen `org.w3c.dom.DocumentBuilderFactory` object `newInstance` methode.
       * Een `org.w3c.dom.DocumentBuilder` door het object aan te roepen `org.w3c.dom.DocumentBuilderFactory` object `newDocumentBuilder` methode.
       * Een `org.w3c.dom.Document` door het object aan te roepen `org.w3c.dom.DocumentBuilder` object `parse` en het doorgeven van de `java.io.InputStream` object.
-      * Hiermee wordt de waarde van elk knooppunt in het XML-document opgehaald. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: de `org.w3c.dom.Document` -object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
+      * Haal de waarde van elk knooppunt in het XML-document op. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: de `org.w3c.dom.Document` -object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
+
    * Als het gegevenstype van de gegevensinhoud `application/pdf`, maakt u toepassingslogica om de verzonden PDF-gegevens op te slaan als een PDF-bestand.
 
       * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object `getOutputContent` methode.
-      * Een `java.io.File` object met behulp van de openbare constructor. Zorg ervoor dat u PDF opgeeft als de bestandsnaamextensie.
+      * Een `java.io.File` object met behulp van de openbare constructor. Zorg ervoor dat u PDF opgeeft als bestandsextensie.
       * Vul het PDF-bestand door het `com.adobe.idp.Document` object `copyToFile` en het doorgeven van de `java.io.File` object.
-
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): PDF forms die als XML zijn verzonden, afhandelen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Snel starten (SOAP-modus): PDF forms verwerken die als XML zijn verzonden met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
 [Snel starten (SOAP-modus): HTML-formulieren verwerken die zijn verzonden als XML met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
@@ -292,7 +290,7 @@ Een verzonden formulier verwerken met de Forms API (webservice):
 
       * De `BLOB` object dat de formuliergegevens bevat.
       * Een tekenreekswaarde die omgevingsvariabelen opgeeft, inclusief alle relevante HTTP-headers. Geef het inhoudstype op dat u wilt afhandelen. Als u XML-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=text/xml`. Als u PDF-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=application/pdf`.
-      * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde; bijvoorbeeld: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` -object dat uitvoeringsopties opslaat.
       * Een leeg `BLOBHolder` object dat door de methode wordt gevuld.
       * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld.
@@ -302,10 +300,9 @@ Een verzonden formulier verwerken met de Forms API (webservice):
       * Een leeg `MyArrayOf_xsd_anyTypeHolder` object dat door de methode wordt gevuld. Met deze parameter worden bestandsbijlagen opgeslagen die samen met het formulier worden verzonden.
       * Een leeg `FormsResultHolder` object dat door de methode is gevuld met het formulier dat wordt verzonden.
 
-      De `processFormSubmission` wordt de `FormsResultHolder` met de resultaten van het verzenden van het formulier.
+     De `processFormSubmission` wordt de `FormsResultHolder` met de resultaten van het verzenden van het formulier.
 
-   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door het aanroepen van de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `0`, zijn de formuliergegevens klaar om te worden verwerkt. U kunt een `FormsResult` object door de waarde van het object op te halen `FormsResultHolder` object `value` lid.
-
+   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `0`, zijn de formuliergegevens klaar om te worden verwerkt. U kunt een `FormsResult` object door de waarde van het object op te halen `FormsResultHolder` object `value` lid.
 
 1. Bepalen of de formulierverzending bestandsbijlagen bevat
 
@@ -321,15 +318,15 @@ Een verzonden formulier verwerken met de Forms API (webservice):
       * Een `org.w3c.dom.DocumentBuilderFactory` object door het statische object aan te roepen `org.w3c.dom.DocumentBuilderFactory` object `newInstance` methode.
       * Een `org.w3c.dom.DocumentBuilder` door het object aan te roepen `org.w3c.dom.DocumentBuilderFactory` object `newDocumentBuilder` methode.
       * Een `org.w3c.dom.Document` door het object aan te roepen `org.w3c.dom.DocumentBuilder` object `parse` en het doorgeven van de `java.io.InputStream` object.
-      * Hiermee wordt de waarde van elk knooppunt in het XML-document opgehaald. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: de `org.w3c.dom.Document` -object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
+      * Haal de waarde van elk knooppunt in het XML-document op. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: de `org.w3c.dom.Document` -object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
+
    * Als het gegevenstype van de gegevensinhoud `application/pdf`, maakt u toepassingslogica om de verzonden PDF-gegevens op te slaan als een PDF-bestand.
 
       * Een `BLOB` door het object aan te roepen `FormsResult` object `getOutputContent` methode.
       * Maak een bytearray door de `BLOB` object `getBinaryData` methode.
-      * Een `java.io.File` object met behulp van de openbare constructor. Zorg ervoor dat u PDF opgeeft als de bestandsnaamextensie.
-      * Een `java.io.FileOutputStream` object door de constructor ervan te gebruiken en door te geven `java.io.File` object.
+      * Een `java.io.File` object met behulp van de openbare constructor. Zorg ervoor dat u PDF opgeeft als bestandsextensie.
+      * Een `java.io.FileOutputStream` object door de constructor ervan te gebruiken en de `java.io.File` object.
       * Vul het PDF-bestand door het `java.io.FileOutputStream` object `write` en geeft u de bytearray door.
-
 
 **Zie ook**
 

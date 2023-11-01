@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f883483-b81e-42c6-a4a1-eb499dd112e7
 role: Developer
 exl-id: 5a746c6c-bf6e-4b25-ba7c-a35edb1f55f3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1431'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Bij het weergeven van een formulier kunt u uitvoeringsopties instellen die de pr
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -37,7 +37,7 @@ Voer de volgende taken uit om de prestaties van de Forms-service te optimalisere
 
 1. Inclusief projectbestanden.
 1. Maak een Forms Client API-object.
-1. Stel opties voor de uitvoeringstijd in.
+1. Stel opties voor het uitvoeren van de prestaties in.
 1. Het formulier weergeven.
 1. Schrijf de gegevensstroom van het formulier naar de webbrowser van de client.
 
@@ -53,12 +53,12 @@ Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvo
 
 U kunt de volgende uitvoeringsopties voor de prestaties instellen om de prestaties van de Forms-service te verbeteren:
 
-* **Formulier in cache plaatsen**: U kunt een formulier dat als PDF wordt weergegeven, in het cachegeheugen van de server in cache plaatsen. Elk formulier wordt in de cache geplaatst nadat het voor het eerst wordt gegenereerd. Als het formulier in de cache vervolgens wordt gerenderd en het nieuwer is dan de tijdstempel van het formulierontwerp, wordt het formulier opgehaald uit de cache. Door formulieren in cache te plaatsen, verbetert u de prestaties van de Forms-service, omdat het formulierontwerp niet hoeft op te halen uit een opslagplaats.
+* **Formulier in cache plaatsen**: U kunt een formulier dat als PDF wordt weergegeven, in de cache van de server in cache plaatsen. Elk formulier wordt in de cache geplaatst nadat het voor het eerst wordt gegenereerd. Als het formulier in de cache vervolgens wordt gerenderd en het nieuwer is dan de tijdstempel van het formulierontwerp, wordt het formulier opgehaald uit de cache. Door formulieren in cache te plaatsen, verbetert u de prestaties van de Forms-service, omdat het formulierontwerp niet hoeft op te halen uit een opslagplaats.
 * Het kan langer duren om formulierhulplijnen (afgekeurd) te renderen dan andere transformatietypen. U wordt aangeraden hulplijnen (afgekeurd) in cache te plaatsen om de prestaties te verbeteren.
 * **Standalone, optie**: Als u niet wilt dat de Forms-service serverberekeningen uitvoert, kunt u de optie Standalone instellen op `true`, wat ertoe leidt dat formulieren worden gegenereerd zonder statusinformatie. Statusinformatie is nodig als u een interactief formulier wilt genereren voor een eindgebruiker die vervolgens gegevens in het formulier invoert en het formulier terugstuurt naar de Forms-service. De Forms-service voert vervolgens een berekeningsbewerking uit en geeft het formulier weer aan de gebruiker met de resultaten die in het formulier worden weergegeven. Als een formulier zonder statusinformatie wordt teruggestuurd naar de Forms-service, zijn alleen de XML-gegevens beschikbaar en worden geen berekeningen op de server uitgevoerd.
 * **Lineaire PDF**: Een gelineariseerd PDF-bestand is geordend om efficiënte incrementele toegang in een netwerkomgeving mogelijk te maken. Het PDF-bestand is in alle opzichten geldig PDF en is compatibel met alle bestaande viewers en andere PDF-toepassingen. Een gelineariseerde PDF kan dus worden weergegeven terwijl het bestand nog wordt gedownload.
 * Deze optie verbetert de prestaties niet wanneer een PDF-formulier op de client wordt gegenereerd.
-* **GuideRSL, optie**: Hiermee schakelt u het genereren van een formulierhulplijn (afgekeurd) in met gezamenlijke bibliotheken bij uitvoering. Dit betekent het eerste verzoek een kleiner SWF-bestand zal downloaden, plus grotere gedeelde bibliotheken die in het browsercache zijn opgeslagen. Zie RSL in de documentatie van Flex voor meer informatie.
+* **GuideRSL, optie**: Schakelt het genereren van (afgekeurde) formulierhulplijnen in via gezamenlijke bibliotheken bij uitvoering. Dit betekent het eerste verzoek een kleiner SWF-bestand zal downloaden, plus grotere gedeelde bibliotheken die in het browsercache zijn opgeslagen. Zie RSL in de documentatie van Flex voor meer informatie.
 * U kunt ook de prestaties van de Forms-service verbeteren door een formulier op de client te genereren. (Zie [Forms renderen op de client](/help/forms/developing/rendering-forms-client.md).)
 
 **Het formulier renderen**
@@ -94,7 +94,7 @@ Een formulier met optimale prestaties renderen met de Forms API (Java):
 1. Een Forms Client API-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Opties voor het uitvoeren van de prestaties instellen
 
@@ -124,7 +124,7 @@ Een formulier met optimale prestaties renderen met de Forms API (Java):
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Prestaties optimaliseren met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
+[Snel starten (SOAP-modus): Prestaties optimaliseren met behulp van de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-optimizing-performance-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -155,14 +155,14 @@ Een formulier met optimale prestaties renderen met de Forms API (webservice):
    De `FormsService` object `renderPDFForm` en geeft de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
-   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u door `null`.
+   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null`.
    * A `PDFFormRenderSpecc` -object dat uitvoeringsopties opslaat.
    * A `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
    * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
    * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF formulier op.
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen).
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking zal bevatten.
 
    De `renderPDFForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 

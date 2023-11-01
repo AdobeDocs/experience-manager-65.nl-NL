@@ -1,18 +1,14 @@
 ---
 title: Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.5
-seo-title: Common Repository Restructuring in AEM 6.5
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.5 die algemeen gelden voor alle AEM.
-seo-description: Learn how to make the necessary changes in order to migrate to the new repository structure in AEM 6.5 that are common for all areas of AEM.
-uuid: a4bb64e5-387b-4084-9258-54e68db12f3b
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.5 die algemeen gelden voor alle AEM.
 contentOwner: chaikels
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
-discoiquuid: 80bd707f-c02d-4616-9b45-90f6c726abea
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2689'
 ht-degree: 0%
 
 ---
@@ -32,7 +28,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 **Voorafgaand aan toekomstige upgrade**
 
 * [ContextHub-configuraties](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#contexthub-configurations)
-* [Klassieke Cloud Services ontwerpen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
+* [Klassieke Cloud Servicen ontwerpen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-cloud-services-designs)
 * [Klassieke dashboards ontwerpen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-dashboards-designs)
 * [Klassieke rapportontwerpen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#classic-reports-designs)
 * [Standaardontwerpen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#default-designs)
@@ -47,8 +43,8 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
 * [Talen voor vertaling](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-languages)
 * [Vertaalregels](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-rules)
 * [Widget-clientbibliotheek voor vertaling](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#translation-widget-client-library)
-* [Webconsole voor activering van boomstructuur](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
-* [Cloud Services van leverancier-vertalingsconnector](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
+* [Webconsole voor activering van structuur](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#tree-activation-web-console)
+* [Cloud Servicen van leverancier-vertalingsconnector](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#vendor-translation-connector-cloud-services)
 * [E-mailsjablonen voor workflowmeldingen](/help/sites-deploying/all-repository-restructuring-in-aem-6-5.md#workflow-notification-email-templates)
 
 ## Met 6,5-upgrade {#with-upgrade}
@@ -77,7 +73,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/workflow/models</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/workflow/models</code></p> <p><code>/conf/global/settings/workflow/models</code></p> <p><code>/var/workflow/models</code></p> </td>
   </tr>
   <tr>
@@ -95,7 +91,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
       </ol> </li>
      <li>Schakel de modus Bewerken in de Workflowmodeleditor in, waarmee de definitie van het workflowmodel wordt gekopieerd naar /conf/global/workflow/models.</li>
      <li>Tik op de knop Sync om de wijzigingen in het workflowmodel voor uitvoering te synchroniseren onder /var/workflow/modellen.</li>
-     <li>Exporteer beide workflowmodellen (/conf/global/workflow/models/&lt;workflow-model&gt;) en Runtime Workflowmodel (/var/workflow/modellen/&lt;workflow-model&gt;) en in het AEM-project te integreren.
+     <li>Exporteer beide workflowmodellen (/conf/global/workflow/models/&lt;workflow-model&gt;) en Runtime Workflowmodel (/var/workflow/modellen/&lt;workflow-model&gt;) en integreren in het AEM project.
       <ol>
        <li>Bijvoorbeeld exporteren:
         <ul>
@@ -126,7 +122,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/workflow/instances</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/var/workflow/instances</code></td>
   </tr>
   <tr>
@@ -138,7 +134,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td>Alle expliciete padverwijzingen in
     <code>
      custom
-    </code> in de code naar de vorige locatie moet ook rekening worden gehouden met de nieuwe locatie. Het wordt geadviseerd dat deze code refactored is om de AEM Werkstroom APIs te gebruiken.</td>
+    </code> de code naar de vorige locatie moet ook rekening houden met de nieuwe locatie. Het wordt geadviseerd dat deze code refactored is om de AEM Werkstroom APIs te gebruiken.</td>
   </tr>
  </tbody>
 </table>
@@ -152,7 +148,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/workflow/launcher/config</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/workflow/launcher/config</code></p> <p><code>/conf/global/settings/workflow/launcher/config</code></p> </td>
   </tr>
   <tr>
@@ -183,7 +179,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/workflow/scripts</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/workflow/scripts</code></p> <p><code>/apps/workflow/scripts</code></p> </td>
   </tr>
   <tr>
@@ -218,7 +214,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/cloudsettings</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/cloudsettings</code></p> <p><code>/conf/global/settings/cloudsettings</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudsettings</code></p> </td>
   </tr>
   <tr>
@@ -235,12 +231,12 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
 
-### Klassieke Cloud Services ontwerpen {#classic-cloud-services-designs}
+### Klassieke Cloud Servicen ontwerpen {#classic-cloud-services-designs}
 
 <table style="table-layout:auto">
  <tbody>
@@ -249,7 +245,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/designs/cloudservices</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/cloudservices</code></p> <p><code>/apps/settings/wcm/designs/cloudservices</code></p> </td>
   </tr>
   <tr>
@@ -274,7 +270,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -288,7 +284,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/designs/dashboards</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/dashboards</code></p> <p><code>/apps/settings/wcm/designs/dashboards</code></p> </td>
   </tr>
   <tr>
@@ -313,7 +309,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -327,7 +323,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/designs/reports</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/reports</code></p> <p><code>/apps/settings/wcm/designs/reports</code></p> </td>
   </tr>
   <tr>
@@ -352,7 +348,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -366,7 +362,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/designs/default</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/default</code></p> <p><code>/apps/settings/wcm/designs/default</code></p> </td>
   </tr>
   <tr>
@@ -391,7 +387,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -405,7 +401,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/clientlibs/dtm</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/var/cq/dtm/clientlibs</code></td>
   </tr>
   <tr>
@@ -414,7 +410,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -428,7 +424,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/dtm-hook</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/var/cq/dtm/web-hook</code></td>
   </tr>
   <tr>
@@ -437,7 +433,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -451,7 +447,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/taskmanagement</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/var/taskmanagement</code></td>
   </tr>
   <tr>
@@ -478,7 +474,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/blueprints</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/msm</code></p> <p><code>/apps/msm</code></p> </td>
   </tr>
   <tr>
@@ -491,7 +487,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
@@ -505,7 +501,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/projects/dashboard/gadgets</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/cq/core/content/projects/dashboard/gadgets</code></p> <p><code>/apps/cq/core/content/projects/dashboard/gadgets</code></p> </td>
   </tr>
   <tr>
@@ -535,7 +531,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/notification/email/default/com.day.cq.replication</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/notification-templates/com.day.cq.replication</code></p> <p><code>/apps/settings/notification-templates/com.day.cq.replication</code></p> </td>
   </tr>
   <tr>
@@ -568,7 +564,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/tags</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/content/cq:tags</code></td>
   </tr>
   <tr>
@@ -602,38 +598,38 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/cloudservices/translation</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/cloudconfigs/translation/translationcfg</code></p> <p><code>/apps/settings/cloudconfigs/translation/translationcfg</code></p> <p><code>/conf/global/settings/cloudconfigs/translation/translationcfg</code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translation/translationcfg</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Nieuwe Cloud Services voor vertaling moeten naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Nieuwe Cloud Servicen voor vertaling moeten naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ul>
-       <li>Creëer handmatig nieuwe configuraties van Cloud Services voor vertaling via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Services &gt; Cloud Services voor vertaling</strong>.<br /> OF </li>
-       <li>Kopieer alle nieuwe configuraties van Cloud Services voor vertaling van de vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>Creëer handmatig nieuwe configuraties van Cloud Servicen voor vertaling via de AEM-ontwerpinterface op <strong>Gereedschappen &gt; Cloud Servicen &gt; Cloud Servicen voor vertaling</strong>.<br /> OF </li>
+       <li>Kopieer alle nieuwe configuraties van Cloud Servicen voor vertaling van de vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Koppel de toepasselijke AEM configuraties aan de hiërarchieën van AEM inhoud.
       <ol>
        <li>AEM Sites-paginamanager via <strong>AEM Sites &gt; Pagina-eigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
-       <li>AEM Ervaar fragmenthiërarchieën via <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.</li>
-       <li>AEM de hiërarchieën van fragmentmappen via <strong>AEM Experience Fragments &gt; Folder &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.<br /> </li>
-       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Folder Properties &gt; Cloud Services Tab &gt; Configuration</strong>.</li>
+       <li>AEM de hiërarchieën van Fragmenten van de Ervaring via <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Properties &gt; Cloud Servicen Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM de hiërarchieën van fragmentmappen via <strong>AEM Experience Fragments &gt; Folder &gt; Properties &gt; Cloud Servicen Tab &gt; Cloud Configuration</strong>.<br /> </li>
+       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Folder Properties &gt; Cloud Servicen Tab &gt; Configuration</strong>.</li>
        <li>Projecten AEM via <strong>AEM Projecten &gt; Project &gt; Projecteigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
       </ol> </li>
-     <li>Koppel eventuele gemigreerde verouderde Cloud Services voor vertaling los van de bovenstaande AEM inhoudhiërarchieën.</li>
+     <li>Koppel eventuele gemigreerde verouderde Cloud Servicen voor vertaling los van de bovenstaande AEM inhoudhiërarchieën.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>De Cloud Services van de vertaling komt in de volgende orde voor:</p>
+   <td><p>De resolutie van Cloud Servicen voor omzetting vindt in de volgende volgorde plaats:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/apps/settings/cloudconfigs/translations/translationcfg</code></li>
      <li><code>/libs/settings/cloudconfigs/translations/translationcfg</code></li>
-    </ol> <p>Gemigreerde Cloud Services voor vertaling moeten compatibel zijn met AEM 6.4.</p> </td>
+    </ol> <p>Cloud Servicen voor gemigreerde vertalingen moeten compatibel zijn met AEM 6.4.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -647,7 +643,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/translation/supportedLanguages</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/translation/supportedLanguages</code></p> <p><code>/apps/settings/translation/supportedLanguages</code></p> </td>
   </tr>
   <tr>
@@ -678,12 +674,12 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/workflow/models/translation/translation_rules.xml</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/translation/rules/translation_rules.xml</code></p> <p><code>/apps/settings/translation/rules/translation_rules.xml</code></p> <p><code>/conf/global/settings/translation/rules/translation_rules.xml</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Een gewijzigd XML-bestand met vertaalregels moet naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, of <code>/conf/global</code>).</p> <p>1. Kopieer het XML-bestand met gewijzigde vertaalregels van de vorige locatie naar de nieuwe locatie.</p> </td>
+   <td><p>Een gewijzigd XML-bestand met vertaalregels moet naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, of <code>/conf/global</code>).</p> <p>1. Kopieer het XML-bestand met de gewijzigde omzettingsregels van de vorige locatie naar de nieuwe locatie.</p> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
@@ -709,7 +705,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/designs/translation/translationwidget</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/wcm/designs/translation/translationwidget</code></p> <p><code>/apps/settings/wcm/designs/translation/translationwidget</code></p> </td>
   </tr>
   <tr>
@@ -734,22 +730,22 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
  </tbody>
 </table>
 
-### Webconsole voor activering van boomstructuur {#tree-activation-web-console}
+### Webconsole voor activering van structuur {#tree-activation-web-console}
 
 | **Vorige locatie** | `/etc/replication/treeactivation` |
 |---|---|
-| **Nieuwe locatie(s)** | `/libs/replication/treeactivation` |
+| **Nieuwe locatie of locaties** | `/libs/replication/treeactivation` |
 | **Herstructureringsrichtsnoeren** | Geen actie vereist. |
 | **Notities** | De webconsole voor activering van de structuur is nu beschikbaar via **Extra > Implementatie > Replicatie > Boom activeren**. |
 
 {style="table-layout:auto"}
 
-### Cloud Services van leverancier-vertalingsconnector {#vendor-translation-connector-cloud-services}
+### Cloud Servicen van leverancier-vertalingsconnector {#vendor-translation-connector-cloud-services}
 
 <table style="table-layout:auto">
  <tbody>
@@ -758,34 +754,34 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/cloudservices/&lt;vendor&gt;</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/cloudconfigs/translation/&lt;vendor&gt;</code></p> <p><code class="code">/apps/settings/cloudconfigs/translation/&lt;vendor&gt;
        </code></p> <p><code class="code">/conf/global/settings/cloudconfigs/translation/&lt;vendor&gt;
        </code></p> <p><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translation/&lt;vendor&gt;</code></p> </td>
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Elke nieuwe Cloud Services voor de vertalingsconnector van de leverancier moet naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
+   <td><p>Alle nieuwe Cloud Servicen voor de vertaalaansluiting van leveranciers moeten naar de nieuwe locatie worden gemigreerd (<code>/apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>).</p>
     <ol>
      <li>Bestaande configuraties in de vorige locatie migreren naar de nieuwe locatie.
       <ul>
-       <li>Creëer manueel netto-nieuwe Cloud Services van de Schakelaar van de Vertaling van de Leverancier via <strong>AEM creatieve gebruikersinterface via Gereedschappen &gt; Cloud Services &gt; Cloud Services voor vertaling</strong>.<br /> OF </li>
-       <li>Kopieer alle nieuwe configuraties van de Cloud Services van de Vertaalverbinding van de Leverancier van vorige plaats aan de nieuwe plaats (<code>/apps</code>, <code>/conf/global </code>of <code>/conf/&lt;tenant&gt;</code>).</li>
+       <li>Creëer manueel netto-nieuwe de configuraties van de VerbindingsCloud Servicen van de Vertaling van de Leverancier via <strong>AEM authoring UI bij Tools &gt; Cloud Servicen &gt; Translation Cloud Servicen</strong>.<br /> OF </li>
+       <li>Kopieer alle configuraties van nieuwe Cloud Servicen voor de vertaalaansluiting van leveranciers van vorige locatie naar de nieuwe locatie (<code>/apps</code>, <code>/conf/global </code>of <code>/conf/&lt;tenant&gt;</code>).</li>
       </ul> </li>
      <li>Koppel de toepasselijke AEM configuraties aan de hiërarchieën van AEM inhoud.
       <ol>
        <li>AEM Sites-paginamanager via <strong>AEM Sites &gt; Pagina-eigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
-       <li>AEM Ervaar fragmenthiërarchieën via <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.</li>
-       <li>AEM de hiërarchieën van fragmentmappen via <strong>AEM Experience Fragments &gt; Folder &gt; Properties &gt; Cloud Services Tab &gt; Cloud Configuration</strong>.</li>
-       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Folder Properties &gt; Cloud Services Tab &gt; Configuration</strong>.</li>
+       <li>AEM de hiërarchieën van Fragmenten van de Ervaring via <strong>AEM Experience Fragments &gt; Experience Fragment &gt; Properties &gt; Cloud Servicen Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM de hiërarchieën van fragmentmappen via <strong>AEM Experience Fragments &gt; Folder &gt; Properties &gt; Cloud Servicen Tab &gt; Cloud Configuration</strong>.</li>
+       <li>AEM Assets-maphiërarchieën via <strong>AEM Assets &gt; Map &gt; Folder Properties &gt; Cloud Servicen Tab &gt; Configuration</strong>.</li>
        <li>Projecten AEM via <strong>AEM Projecten &gt; Project &gt; Projecteigenschappen &gt; Geavanceerd tabblad &gt; Cloud Configuration</strong>.</li>
       </ol> </li>
-     <li>Koppel eventuele gemigreerde verouderde Cloud Services voor vertaling los van de bovenstaande AEM inhoudhiërarchieën.</li>
+     <li>Koppel eventuele gemigreerde verouderde Cloud Servicen voor vertaling los van de bovenstaande AEM inhoudhiërarchieën.</li>
     </ol> </td>
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>De Cloud Services van de vertaling komt in de volgende orde voor:</p>
+   <td><p>De resolutie van Cloud Servicen voor omzetting vindt in de volgende volgorde plaats:</p>
     <ol>
      <li><code>/conf/&lt;tenant&gt;/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
      <li><code>/conf/global/settings/cloudconfigs/translations/&lt;vendor&gt;</code></li>
@@ -805,7 +801,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/workflow/notification</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><p><code>/libs/settings/workflow/notification</code></p> <p><code>/conf/global/settings/workflow/notification</code></p> </td>
   </tr>
   <tr>
@@ -837,7 +833,7 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
    <td><code>/etc/workflow/packages</code></td>
   </tr>
   <tr>
-   <td><strong>Nieuwe locatie(s)</strong></td>
+   <td><strong>Nieuwe locatie of locaties</strong></td>
    <td><code>/var/workflow/packages</code></td>
   </tr>
   <tr>

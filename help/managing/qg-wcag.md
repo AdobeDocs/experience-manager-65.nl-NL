@@ -2,10 +2,10 @@
 title: Snelgids voor WCAG 2.1
 description: A Quick Guide to Web Content Accessibility Guidelines (WCAG) versie 2.1.
 exl-id: 9cd37f5a-ff59-4617-a0f3-cd8994fbf4ab
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1779'
-ht-degree: 92%
+source-wordcount: '1777'
+ht-degree: 90%
 
 ---
 
@@ -42,7 +42,7 @@ Met andere woorden, richtlijnen die kunnen worden toegepast op verschillende web
 Elke richtlijn is zodanig opgesteld dat het op objectieve manier kan worden getest om te garanderen dat een groep toegankelijkheidsdeskundigen het er in het algemeen over eens is dat aan de richtlijn is voldaan. Een van de uitdagingen van toegankelijkheidsrichtlijnen is dat sommige richtlijnen technisch getest kunnen worden, terwijl andere vereisen dat mensen oordelen of de richtlijn al dan niet succesvol is nageleefd.
 
 * **Prioritaire en contextafhankelijke implementatie ondersteunen:**
-De richtlijnen van WCAG 2.1 krijgen een prioriteitsniveau en hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtlijn voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtlijnen voor hun specifieke situatie. Daarnaast wordt het concept van *ondersteunde toegankelijkheid* geïntroduceerd. Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden, het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende technologische hulpmiddelen en/of browsers beschikken om te kunnen profiteren van toegankelijkheidsfuncties.
+De richtlijnen van WCAG 2.1 krijgen een prioriteitsniveau en hebben betrekking op de mogelijke gevolgen van het niet volgen van een richtlijn voor een bepaalde groep gebruikers met een handicap. Op die manier kunnen auteurs een geïnformeerde beslissing nemen over de belangrijkste richtlijnen voor hun specifieke situatie. Daarnaast wordt het concept van *ondersteunde toegankelijkheid* geïntroduceerd. Op deze manier kunnen auteurs beslissen hoe ze webtechnologieën die mogelijk geen volledige toegankelijkheidsondersteuning bieden het beste kunnen gebruiken, of van gebruikers verlangen dat ze over specifieke ondersteunende technologieën en/of browsers beschikken om te profiteren van toegankelijkheidsfuncties.
 
 Deze doelstellingen hebben de structuur van WCAG 2.1 aanzienlijk beïnvloed.
 

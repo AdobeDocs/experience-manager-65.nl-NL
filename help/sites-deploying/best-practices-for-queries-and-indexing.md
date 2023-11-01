@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '4613'
+source-wordcount: '4609'
 ht-degree: 0%
 
 ---
@@ -111,7 +111,7 @@ Voor vraagstatistieken, bekijk genoemde MBean **Query-statistieken voor onak**.
 
 Als u met een gereedschap als [Luke](https://code.google.com/archive/p/luke/), moet u de console van het Eak gebruiken om de index van `NodeStore` naar een bestandssysteemmap. Lees voor instructies over hoe u dit kunt doen de [Lucene-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
-U kunt de indexen in uw systeem ook in JSON-indeling extraheren. Hiervoor hebt u toegang tot `https://server:port/oak:index.tidy.-1.json`
+U kunt de indexen in uw systeem ook in JSON-indeling extraheren. Om dit te doen, moet u toegang hebben `https://server:port/oak:index.tidy.-1.json`
 
 ### Zoeklimieten {#query-limits}
 

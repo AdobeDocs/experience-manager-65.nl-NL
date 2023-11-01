@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1833'
+source-wordcount: '1831'
 ht-degree: 0%
 
 ---
@@ -217,7 +217,7 @@ Zoals u een gebruiker in Adobe Campaign nodig hebt die AEM kan gebruiken om met 
 
 ## De externe AEM-account configureren in de campagne {#acc-external-user}
 
-Wanneer u [een AEM specifieke sjabloon voor e-maillevering heeft gemaakt,](#aem-email-delivery-template) u hebt opgegeven dat de sjabloon de `aemInstance` externe account voor communicatie met AEM. Om communicatie in twee richtingen tussen beide oplossingen mogelijk te maken, moet u deze account configureren in Adobe Campaign.
+Wanneer u [een AEM specifieke sjabloon voor e-maillevering heeft gemaakt,](#aem-email-delivery-template) u hebt opgegeven dat de sjabloon de `aemInstance` externe account voor communicatie met AEM. Om communicatie in twee richtingen tussen beide oplossingen mogelijk te maken, moet u deze rekening in Adobe Campaign vormen.
 
 1. Meld u als beheerder aan bij Adobe Campaign.
 

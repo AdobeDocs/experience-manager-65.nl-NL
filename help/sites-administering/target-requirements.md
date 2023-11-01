@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: ae4a6e97-c0d7-472d-a25f-b89b1abf4df3
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '556'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,11 @@ De clientcode identificeert de Adobe Target-klantenaccount wanneer de Adobe Targ
 
 >[!NOTE]
 >
->Uw account moet ook door het Target-team zijn ingeschakeld om de integratie te kunnen gebruiken.
+>Uw account moet ook zijn ingeschakeld door het Target-team om de integratie te kunnen gebruiken.
 >
->Indien dit niet het geval is, gelieve contact op te nemen met [Adobe Klantenservice](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
+>Indien dit niet het geval is, gelieve contact op te nemen met [Klantenservice Adoben](https://experienceleague.adobe.com/docs/target/using/cmp-resources-and-contact-information.html).
 
-## Toelatend de Agent van de Replicatie van het Doel {#enabling-the-target-replication-agent}
+## De agent voor doelreplicatie inschakelen {#enabling-the-target-replication-agent}
 
 Test en doel [replicatieagent](/help/sites-deploying/replication.md) moet zijn ingeschakeld op de instantie van de auteur. Merk op dat deze replicatieagent niet door gebrek wordt toegelaten als u gebruikte [nosamplcontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) uitvoeringsmodus voor het installeren van AEM. Voor meer informatie over het beveiligen van uw productieomgeving raadpleegt u de [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md).
 
@@ -45,9 +45,9 @@ Test en doel [replicatieagent](/help/sites-deploying/replication.md) moet zijn i
 
    >[!NOTE]
    >
-   >Wanneer u de Test en de replicatieagent van het Doel vormt, in **Vervoer** tab, de URI is standaard ingesteld op **tnt:///**. Deze URI niet vervangen door **https://admin.testandtarget.omniture.com**.
+   >Wanneer u de Test en de replicatieagent van het Doel vormt, in **Vervoer** tab, de URI is standaard ingesteld op **tnt:///**. Vervang deze URI niet door **https://admin.testandtarget.omniture.com**.
    >
-   >Houd er rekening mee dat als u de verbinding probeert te testen met **tnt:///**, wordt een fout gegenereerd. Dit wordt verwacht omdat deze URI alleen voor intern gebruik is en niet mag worden gebruikt **Verbinding testen**.
+   >Houd er rekening mee dat als u de verbinding probeert te testen met **tnt:///**, wordt een fout gegenereerd. Dit wordt verwacht omdat deze URI alleen voor intern gebruik is en niet mag worden gebruikt met **Verbinding testen**.
 
 ## Het knooppunt Activiteitsinstellingen beveiligen {#securing-the-activity-settings-node}
 
@@ -63,7 +63,7 @@ De **cq:ActivitySettings** knoop onder jcr van de activiteit:inhoud wordt besche
 
 Met deze instellingen zorgt u ervoor dat normale gebruikers geen toegang hebben tot de knoopeigenschappen. Gebruik zelfde ACLs op auteur en bij publiceren. Zie [Gebruikersbeheer en beveiliging](/help/sites-administering/security.md) voor meer informatie .
 
-## Het vormen van de Verbinding Externalzer van de AEM {#configuring-the-aem-link-externalizer}
+## Het vormen van de AEM Verbinding Externalzer {#configuring-the-aem-link-externalizer}
 
 Wanneer u een activiteit bewerkt in Adobe Target, verwijst de URL naar **localhost** tenzij u de URL wijzigt in het AEM auteurknooppunt. U kunt AEM Verbinding Externalzer vormen als u de uitgevoerde inhoud aan specifiek wilt richten *publish* domein.
 
@@ -71,7 +71,7 @@ Wanneer u een activiteit bewerkt in Adobe Target, verwijst de URL naar **localho
 >
 >Zie ook [Cloudconfiguratie toevoegen](/help/sites-administering/experience-fragments-target.md#add-the-cloud-configuration).
 
-De AEM-externalizer configureren:
+Om de AEM externalizer te vormen:
 
 >[!NOTE]
 >

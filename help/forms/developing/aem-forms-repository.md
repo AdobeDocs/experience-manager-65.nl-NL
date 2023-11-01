@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '9113'
+source-wordcount: '9109'
 ht-degree: 0%
 
 ---
@@ -842,7 +842,7 @@ Zoek naar een bron met behulp van de Repository Service API (Java):
 
 1. De bronnen ophalen uit het zoekresultaat
 
-   Doorloop de `List` en elk object naar een `Resource` om haar informatie op te vragen. In dit voorbeeld wordt de naam van elke bron weergegeven.
+   Doorloop de `List` en elk object naar een `Resource` om zijn informatie te extraheren. In dit voorbeeld wordt de naam van elke bron weergegeven.
 
 **Zie ook**
 

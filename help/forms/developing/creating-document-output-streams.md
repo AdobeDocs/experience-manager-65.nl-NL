@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '19016'
+source-wordcount: '19006'
 ht-degree: 0%
 
 ---
@@ -162,7 +162,7 @@ Stel de bestands-URI-optie in wanneer u een PDF-document maakt. Met deze optie g
 
 **Renderopties tijdens runtime instellen**
 
-U kunt bij het maken van een PDF-document renderingopties instellen. Hoewel deze opties niet vereist zijn (in tegenstelling tot PDF runtime opties die worden vereist), kunt u taken uitvoeren zoals het verbeteren van de prestaties van de Output-service. U kunt bijvoorbeeld het formulierontwerp dat de Output-service gebruikt in cache plaatsen om de prestaties te verbeteren.
+U kunt bij het maken van een PDF-document renderingopties instellen. Hoewel deze opties niet vereist zijn (in tegenstelling tot PDF runtime opties die worden vereist), kunt u taken uitvoeren zoals het verbeteren van de prestaties van de Output-service. U kunt bijvoorbeeld het formulierontwerp in cache plaatsen dat de uitvoerservice gebruikt om de prestaties te verbeteren.
 
 Als u een gecodeerd Acrobat-formulier als invoer gebruikt, kunt u de instelling voor getagde invoer niet uitschakelen met de Java- of webservice-API van de Output-service. Als u probeert programmatisch deze optie in te stellen op `false`, is het PDF-document van het resultaat nog steeds gecodeerd.
 
@@ -1749,7 +1749,7 @@ U moet de volgende runtime opties voor de dienst van de Output plaatsen om veelv
 
 **Renderopties tijdens runtime instellen**
 
-Tijdens het maken van meerdere bestanden kunt u opties voor het renderen tijdens runtime instellen. Hoewel deze opties niet vereist zijn (in tegenstelling tot uitvoeropties, die vereist zijn), kunt u taken uitvoeren zoals het verbeteren van de prestaties van de uitvoerservice. U kunt bijvoorbeeld het formulierontwerp dat de Output-service gebruikt in cache plaatsen om de prestaties te verbeteren.
+Tijdens het maken van meerdere bestanden kunt u opties voor het renderen tijdens runtime instellen. Hoewel deze opties niet vereist zijn (in tegenstelling tot uitvoeropties, die vereist zijn), kunt u taken uitvoeren zoals het verbeteren van de prestaties van de uitvoerservice. U kunt bijvoorbeeld het formulierontwerp in cache plaatsen dat de uitvoerservice gebruikt om de prestaties te verbeteren.
 
 Wanneer de dienst van de Output partijverslagen verwerkt, leest het gegevens die veelvoudige verslagen op een stijgende manier bevatten. Dat wil zeggen dat de Output-service de gegevens in het geheugen leest en de gegevens vrijgeeft terwijl de batch met records wordt verwerkt. De uitvoerservice laadt gegevens incrementeel wanneer een van de twee uitvoeringsopties is ingesteld. Als u de runtime van de Naam van het Verslag optie plaatst, leest de dienst van de Output gegevens op een stijgende manier. Op dezelfde manier, als u de runtime van het Niveau van het Verslag optie aan 2 of groter plaatst, leest de dienst van de Output gegevens op een stijgende manier.
 
@@ -1998,7 +1998,7 @@ Stel de volgende PDF runtime-opties in zodat de Output-service een PDF-document 
 
 **Renderopties tijdens runtime instellen**
 
-Tijdens het maken van PDF-bestanden kunt u renderingopties instellen. Hoewel deze opties niet vereist zijn (in tegenstelling tot PDF runtime opties), kunt u taken uitvoeren zoals het verbeteren van de prestaties van de Output-service. U kunt bijvoorbeeld het formulierontwerp dat de Output-service gebruikt in cache plaatsen om de prestaties te verbeteren.
+Tijdens het maken van PDF-bestanden kunt u renderingopties instellen. Hoewel deze opties niet vereist zijn (in tegenstelling tot PDF runtime opties), kunt u taken uitvoeren zoals het verbeteren van de prestaties van de Output-service. U kunt bijvoorbeeld het formulierontwerp in cache plaatsen dat de uitvoerservice gebruikt om de prestaties te verbeteren.
 
 **Een PDF-document genereren**
 
@@ -2057,7 +2057,7 @@ Maak zoekregels met de Output API (Java):
 1. Stel renderingopties in.
 
    * Een `RenderOptionsSpec` object met behulp van de constructor.
-   * Plaats het formulierontwerp in de cache om de prestaties van de Output-service te verbeteren door het aanroepen van de `RenderOptionsSpec` object `setCacheEnabled` en passeren `true`.
+   * Plaats het formulierontwerp in de cache om de prestaties van de uitvoerservice te verbeteren door het aanroepen van de `RenderOptionsSpec` object `setCacheEnabled` en passeren `true`.
 
 1. Een PDF-document genereren.
 
@@ -2147,7 +2147,7 @@ Maak zoekregels met de Output API (webservice):
 1. Renderopties tijdens runtime instellen
 
    * Een `RenderOptionsSpec` object met behulp van de constructor.
-   * Plaats het formulierontwerp in de cache om de prestaties van de Output-service te verbeteren door de waarde toe te wijzen `true` aan de `RenderOptionsSpec` object `cacheEnabled` lid.
+   * Plaats het formulierontwerp in de cache om de prestaties van de uitvoerservice te verbeteren door de waarde toe te wijzen `true` aan de `RenderOptionsSpec` object `cacheEnabled` lid.
 
    >[!NOTE]
    >

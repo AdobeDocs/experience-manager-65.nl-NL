@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 6fa3679429527e026313b22d953267503598d1a9
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Deze handler slaat het gecodeerde SAML-responsbericht op in het user-node ( `use
 
 ## De SAML 2.0-verificatiehandler configureren {#configuring-the-saml-authentication-handler}
 
-De [Webconsole](/help/sites-deploying/configuring-osgi.md) verleent toegang tot [SAML](https://saml.xml.org/saml-specifications) 2.0 de geroepen Configuratie van de Handler van de Authentificatie **Adobe granite SAML 2.0-verificatiehandler**. De volgende eigenschappen kunnen worden ingesteld.
+De [Webconsole](/help/sites-deploying/configuring-osgi.md) verleent toegang tot [SAML](https://saml.xml.org/saml-specifications) 2.0 de geroepen Configuratie van de Handler van de Authentificatie **Adobe graniet SAML 2.0-verificatiehandler**. De volgende eigenschappen kunnen worden ingesteld.
 
 >[!NOTE]
 >
@@ -46,7 +46,6 @@ De [Webconsole](/help/sites-deploying/configuring-osgi.md) verleent toegang tot 
 >* De Service Provider Entiteit ID.
 >
 
-
 >[!NOTE]
 >
 >SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit werkt alleen als u ten minste het openbare certificaat van de Identiteitsprovider in de TrustStore opgeeft. Zie [Het IdP-certificaat toevoegen aan de TrustStore](/help/sites-administering/saml-2-0-authenticationhandler.md#add-the-idp-certificate-to-the-aem-truststore) voor meer informatie.
@@ -55,7 +54,7 @@ De [Webconsole](/help/sites-deploying/configuring-osgi.md) verleent toegang tot 
 
 **Servicereeks** OSGi de Rangschikkende waarde van de Dienst van het Kader om op de orde te wijzen waarin om deze dienst te roepen. Dit is een geheel getal waarbij hogere waarden een hogere prioriteit aangeven.
 
-**IDP-certificaatalias** De alias van het certificaat van IdP in globale truststore. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld. Zie het hoofdstuk &quot;Add the IdP Certificate to the AEM TrustStore&quot; hieronder over hoe u het instelt.
+**IdP-certificaatalias** De alias van het certificaat van IdP in globale truststore. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld. Zie het hoofdstuk &quot;Add the IdP Certificate to the AEM TrustStore&quot; hieronder over hoe u het instelt.
 
 **IDP-URL** URL van IDP waar het verzoek van de Authentificatie van SAML zou moeten worden verzonden naar. Als deze eigenschap leeg is, wordt de verificatiehandler uitgeschakeld.
 
@@ -133,10 +132,10 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 
 ## Vorm Logger voor SAML {#configure-a-logger-for-saml}
 
-U kunt opstelling een Logger om het even welke kwesties zuiveren die uit het misconfigureren SAML zouden kunnen voortvloeien. U kunt dit doen door:
+U kunt opstelling een Logger om het even welke kwesties te zuiveren die uit het misconfigureren van SAML zouden kunnen voortvloeien. U kunt dit doen door:
 
 1. Ga naar de webconsole, op *http://localhost:4502/system/console/configMgr*
-1. Zoeken naar en klikken op het item dat wordt aangeroepen **Logboekconfiguratie Apache Sling Logging**
+1. Zoeken naar en klikken op de aangeroepen vermelding **Logboekconfiguratie Apache Sling Logging**
 1. Maak een logger met de volgende configuratie:
 
    * **Logniveau:** Foutopsporing

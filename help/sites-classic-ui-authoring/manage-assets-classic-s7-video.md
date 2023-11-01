@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 exl-id: c540aa49-9981-4e8c-97df-972085b26490
-source-git-commit: 59e182c165f6fd4b822eaf0e34f6e4b3bb18eb14
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1633'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -18,21 +18,21 @@ ht-degree: 0%
 
 Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Dynamic Media Classic-video&#39;s voor het ontwerpen van pagina&#39;s.
 
-Dynamic Media Classic-videointegratie breidt het bereik van geoptimaliseerde video uit tot alle schermen (automatische apparaat- en bandbreedtedetectie).
+Dynamic Media Classic-videointegratie breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische detectie van apparaat en bandbreedte).
 
 * De Dynamic Media Classic-videocomponent voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en videokwaliteit van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
 * Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, waaronder desktopapparaten, iOS, Android™, BlackBerry® en mobiele Windows-apparaten. Zie [Dynamic Media Classic-documentatie over adaptieve videosets voor meer informatie](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/video/quick-start-video.html#video).
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
-Het standaardvideocoderingsproces is gebaseerd op het gebruik van de op FFMPEG gebaseerde integratie met videoprofielen. Daarom moet de [!UICONTROL DAM Update Asset] De workflow bevat de volgende twee workflowstappen op basis van ffmpeg:
+Het standaardproces voor videocodering is gebaseerd op het gebruik van de op FFMPEG gebaseerde integratie met videoprofielen. Daarom moet de [!UICONTROL DAM Update Asset] De workflow bevat de volgende twee workflowstappen op basis van ffmpeg:
 
 * FMPEG-miniaturen
 * FFMPEG-codering
 
-Als u de Dynamic Media Classic-integratie inschakelt en configureert, worden deze twee workflowstappen niet automatisch verwijderd of gedeactiveerd uit de set-out [!UICONTROL DAM Update Asset] Invoerworkflow. Als u in Adobe Experience Manager al op FFMPEG gebaseerde videocodering gebruikt, is het waarschijnlijk dat FFMPEG is geïnstalleerd in uw ontwerpomgeving. In dit geval wordt een nieuwe video die met Experience Manager Assets wordt ingevoerd, twee keer gecodeerd: eenmaal van de FFMPEG-encoder en eenmaal van de Dynamic Media Classic-integratie.
+Als u de Dynamic Media Classic-integratie inschakelt en configureert, worden deze twee workflowstappen niet automatisch verwijderd of gedeactiveerd uit de set-out [!UICONTROL DAM Update Asset] Invoegwerkstroom. Als u in Adobe Experience Manager al op FFMPEG gebaseerde videocodering gebruikt, is het waarschijnlijk dat FFMPEG is geïnstalleerd in uw ontwerpomgeving. In dit geval wordt een nieuwe video die met Experience Manager Assets wordt ingevoerd, twee keer gecodeerd: één keer vanuit de FFMPEG-codeermodule en één keer vanuit de Dynamic Media Classic-integratie.
 
-Als u op FFMPEG-gebaseerde videocodering in Experience Manager hebt geconfigureerd en FFMPEG hebt geïnstalleerd, raadt Adobe u aan de twee FFMPEG-workflows uit uw [!UICONTROL DAM Update Asset] workflows.
+Als u op FFMPEG-gebaseerde videocodering in Experience Manager hebt geconfigureerd en FFMPEG hebt geïnstalleerd, raadt de Adobe u aan de twee FFMPEG-workflows uit uw [!UICONTROL DAM Update Asset] workflows.
 
 ### Ondersteunde indelingen {#supported-formats}
 
@@ -48,9 +48,9 @@ Bepaal waar u uw video-elementen wilt uploaden afhankelijk van het volgende:
 * Hebt u een workflow voor het video-element nodig?
 * Hebt u versiebeheer nodig voor het video-element?
 
-Als het antwoord op een van deze vragen &quot;ja&quot; is, uploadt u uw video rechtstreeks naar Adobe DAM. Als het antwoord op beide vragen &quot;nee&quot; is, uploadt u uw video rechtstreeks naar Dynamic Media Classic. Het werkschema voor elk scenario wordt beschreven in de volgende sectie.
+Als het antwoord &quot;ja&quot;op één van beide of beide vragen is, dan upload uw video direct aan Adobe DAM. Als het antwoord op beide vragen &quot;nee&quot; is, uploadt u uw video rechtstreeks naar Dynamic Media Classic. Het werkschema voor elk scenario wordt beschreven in de volgende sectie.
 
-#### Als u de video rechtstreeks uploadt naar Adobe Assets {#if-you-are-uploading-your-video-directly-to-adobe-assets}
+#### Als u de video rechtstreeks uploadt naar Adobe-elementen {#if-you-are-uploading-your-video-directly-to-adobe-assets}
 
 Als u een workflow of versie voor uw elementen nodig hebt, moet u eerst uploaden naar Adobe Assets. Hieronder vindt u de aanbevolen workflow:
 
@@ -62,14 +62,14 @@ Als u een workflow of versie voor uw elementen nodig hebt, moet u eerst uploaden
 
 Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen uploaden naar Dynamic Media Classic. Hieronder vindt u de aanbevolen workflow:
 
-1. In de Dynamic Media Classic-bureaubladtoepassing: [Een geplande FTP-upload en -codering naar Dynamic Media Classic instellen (systeem geautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
+1. In de Dynamic Media Classic-bureaubladtoepassing: [Een geplande FTP-upload en -codering naar Dynamic Media Classic instellen (systeem automatisch)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#upload-options).
 1. In Experience Manager hebt u toegang tot video-elementen in WCM in het dialoogvenster **[!UICONTROL Dynamic Media Classic]** van de Inhoudszoeker.
 1. Auteur met het Dynamic Media Classic-videoonderdeel.
 
 ### Integratie met Dynamic Media Classic Video configureren {#configuring-integration-with-scene-video}
 
 1. In **[!UICONTROL Cloud Services]**, navigeert u naar uw **[!UICONTROL Dynamic Media Classic]** configuratie en selecteer **[!UICONTROL Edit]**.
-1. Selecteer **[!UICONTROL Video]** tab.
+1. Selecteer de **[!UICONTROL Video]** tab.
 
    >[!NOTE]
    >
@@ -81,7 +81,7 @@ Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen up
    >
    >Ga voor meer informatie over wat de videovoorinstellingen betekenen naar [Videovoorinstellingen voor het coderen van videobestanden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files).
    >
-   >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** optie.
+   >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** -optie.
 
 1. De geselecteerde coderingsprofielen worden automatisch toegepast op alle video&#39;s die zijn geüpload naar de CQ DAM-doelmap die u hebt ingesteld voor deze Dynamic Media Classic-cloudconfiguratie. U kunt meerdere Dynamic Media Classic-cloudconfiguraties met verschillende doelmappen instellen om zo nodig verschillende coderingsprofielen toe te passen.
 
@@ -108,7 +108,7 @@ U kunt als volgt uw primaire bronvideo vanaf Adobe DAM uploaden naar Dynamic Med
 
 Wanneer u Experience Manager gebruikt, hebt u toegang tot zowel de videocomponent Video beschikbaar in Sites als de videocomponent van Dynamic Media Classic. Deze componenten zijn niet onderling verwisselbaar.
 
-De Dynamic Media Classic-videocomponent werkt alleen voor Dynamic Media Classic-video&#39;s. De stivingscomponent werkt met video&#39;s die zijn opgeslagen vanuit Experience Manager (met behulp van mpeg) en Dynamic Media Classic-video&#39;s.
+De Dynamic Media Classic-videocomponent werkt alleen voor Dynamic Media Classic-video&#39;s. De stichtingscomponent werkt met video&#39;s die zijn opgeslagen vanuit Experience Manager (met behulp van mpeg) en Dynamic Media Classic-video&#39;s.
 
 De volgende matrix legt uit wanneer u welke component moet gebruiken:
 
@@ -117,6 +117,7 @@ De volgende matrix legt uit wanneer u welke component moet gebruiken:
 >[!NOTE]
 >
 >Het Dynamic Media Classic-videoonderdeel gebruikt het universele videoprofiel buiten het vak. U kunt de op HTML5 gebaseerde videospeler echter verkrijgen voor gebruik door Experience Manager. Kopieer in Dynamic Media Classic de insluitcode van de uit-van-box HTML5-videospeler en plaats deze in de pagina Experience Manager.
+>
 
 ## Experience Manager Video-component {#aem-video-component}
 
@@ -126,7 +127,7 @@ Zelfs als het gebruik van de Dynamic Media Classic Video-component wordt aanbevo
 
 De volgende lijst verstrekt een high-level vergelijking van gesteunde mogelijkheden tussen de Videomponent van de Stichting van de Experience Manager en de Videocomponent van Dynamic Media Classic:
 
-|  | Video over Experience Manager Foundation | Dynamic Media Classic Video |
+|   | Video over Experience Manager Foundation | Dynamic Media Classic Video |
 |---|---|---|
 | Benadering | HTML5 eerste aanpak. Flash wordt alleen gebruikt voor niet-HTML-fallback. | Flash op de meeste desktops. HTML5 wordt gebruikt voor mobiele apparaten en tabletten. |
 | Aflevering | Progressief | Adaptieve streaming |
@@ -151,7 +152,7 @@ De verschillende videocoderingen worden gemaakt volgens de Dynamic Media Classic
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. Bewerk het nieuwe videoprofiel. Selecteer eerst de cloud config. Selecteer vervolgens dezelfde coderingsvoorinstelling die u in de cloudconfiguratie hebt geselecteerd.
+1. Bewerk het nieuwe videoprofiel. Selecteer eerst de cloudconfiguratie. Selecteer vervolgens dezelfde coderingsvoorinstelling die u in de cloudconfiguratie hebt geselecteerd.
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -165,7 +166,7 @@ De verschillende videocoderingen worden gemaakt volgens de Dynamic Media Classic
 
 #### Ontwerp configureren {#configuring-design}
 
-De basis videocomponent moet weten welke videoprofielen moeten worden gebruikt om de lijst met videobronnen te maken. Open het dialoogvenster voor het ontwerpen van videocomponenten en configureer het componentontwerp voor het gebruik van de nieuwe videoprofielen.
+De stichtingsvideocomponent moet weten welke videoprofielen moeten worden gebruikt om de lijst met videobronnen te bouwen. Open het dialoogvenster voor het ontwerpen van videocomponenten en configureer het componentontwerp voor het gebruik van de nieuwe videoprofielen.
 
 >[!NOTE]
 >
@@ -173,14 +174,14 @@ De basis videocomponent moet weten welke videoprofielen moeten worden gebruikt o
 
 >[!NOTE]
 >
->Wijzigingen in het ontwerp vereisen activering van het ontwerp om van kracht te worden bij de publicatie.
+>Wijzigingen in het ontwerp vereisen dat het ontwerp wordt geactiveerd om na publicatie van kracht te worden.
 
-1. Open het ontwerpdialoogvenster van de stichtingsvideo-component en wijzig de instelling in **[!UICONTROL Profiles]** tab. Verwijder vervolgens de out-of-the-box profielen en voeg de nieuwe Dynamic Media Classic-videoprofielen toe. De volgorde van de profiellijst in het ontwerpdialoogvenster definieert ook de volgorde van het element videobronnen bij het renderen.
+1. Open het ontwerpdialoogvenster van de stichtingsvideo-component en wijzig de instelling in **[!UICONTROL Profiles]** tab. Verwijder vervolgens de profielen uit de doos en voeg de nieuwe Dynamic Media Classic-videoprofielen toe. De volgorde van de profiellijst in het ontwerpdialoogvenster definieert ook de volgorde van het element videobronnen bij het renderen.
 1. Voor browsers die geen HTML5 ondersteunen, kunt u met de component Video een fallback configureren. Open het ontwerpdialoogvenster voor videocomponenten en wijzig de instelling in **[!UICONTROL Flash]** tab. Configureer de Flash Player-instellingen en wijs een fallback-profiel toe aan de Flash Player.
 
 #### Checklist {#checklist}
 
-1. Een Dynamic Media Classic-cloudconfiguratie maken. Zorg ervoor dat de voorinstellingen voor videocodering zijn ingesteld en dat de importmodule wordt uitgevoerd.
+1. Een Dynamic Media Classic-cloud configureren. Zorg ervoor dat de voorinstellingen voor videocodering zijn ingesteld en dat de importmodule wordt uitgevoerd.
 1. Maak een Dynamic Media Classic-videoprofiel voor elke videocoderingsvoorinstelling die is geselecteerd in de cloudconfiguratie.
 1. De videoprofielen moeten worden geactiveerd.
 1. Configureer het ontwerp van de basis-videocomponent op de pagina.

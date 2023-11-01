@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1306'
 ht-degree: 1%
 
 ---
@@ -71,11 +71,11 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 1. CSS installeren als clientbibliotheken zoals beschreven in de sectie [Overzicht](#overview).
 1. CSS-klassen configureren die u beschikbaar wilt maken voor de auteurs van de inhoud, zoals wordt beschreven in de sectie [Als sjabloonauteur](#as-a-template-author).
-1. De auteurs van de inhoud kunnen dan de stijlen gebruiken zoals die in de sectie worden beschreven [Als inhoudsauteur](#as-a-content-author).
+1. Inhoudsauteurs kunnen vervolgens de stijlen gebruiken zoals beschreven in de sectie [Als inhoudsauteur](#as-a-content-author).
 
 ### Als inhoudsauteur {#as-a-content-author}
 
-1. Na het installeren van het WKND-project navigeert u naar de master homepage van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u de pagina.
+1. Na het installeren van het WKND-project navigeert u naar de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en` en bewerkt u de pagina.
 1. Selecteer een **Titel** component verder omlaag op de pagina
 
    ![Stijlsysteem voor de auteur](assets/style-system-author.png)
@@ -90,7 +90,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 ### Als sjabloonauteur {#as-a-template-author}
 
-1. Tijdens het bewerken van de master homepage van de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens -> Sjabloon bewerken**.
+1. Tijdens het bewerken van de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens -> Sjabloon bewerken**.
 
    ![Sjabloon bewerken](assets/style-system-edit-template.png)
 
@@ -132,7 +132,7 @@ Met de gevormde component, zullen de stijlen die door de paginaauteurs worden ge
 
 Vanaf AEM versie 6.5.3.0 is het tabblad Optionele stijlen in het dialoogvenster Bewerken nu beschikbaar. In tegenstelling tot het tabblad Ontwerpdialoogvenster is het tabblad in het dialoogvenster Bewerken niet essentieel voor het functioneren van het Stijlsysteem, maar is het een optionele alternatieve interface voor de auteur van inhoud om stijlen in te stellen.
 
-Het tabblad Bewerken van het dialoogvenster kan op vergelijkbare wijze worden opgenomen als het tabblad Ontwerpdialoogvenster:
+Het tabblad Bewerken kan op vergelijkbare wijze worden opgenomen als het tabblad van het dialoogvenster Ontwerpen:
 
 * `path = "/mnt/overlay/cq/gui/components/authoring/dialog/style/tab_edit/styletab"`
 * `sling:resourceType = "granite/ui/components/coral/foundation/include"`
@@ -151,13 +151,13 @@ Deze eigenschap is ingesteld op het tabblad `cq:Component` knooppunt. Bijvoorbee
 
 >[!CAUTION]
 >
->Definieer geen elementnamen voor stijlen die kunnen worden gecombineerd. Wanneer meerdere elementnamen zijn gedefinieerd, is de volgorde van prioriteit:
+>Definieer geen elementnamen voor stijlen die kunnen worden gecombineerd. Wanneer de veelvoudige elementnamen worden bepaald, is de orde van prioriteit:
 >
 >1. HTML heeft voorrang op alles: `data-sly-resource="${'path/to/resource' @ decorationTagName='span'}`
 >1. Dan onder veelvoudige actieve stijlen, wordt de eerste stijl in de lijst van stijlen die in het beleid van de component worden gevormd genomen.
 >1. Tot slot de componenten `cq:htmlTag`/ `cq:tagName` wordt beschouwd als een terugvalwaarde.
 >
 
-Deze mogelijkheid om stijlnamen te definiëren is handig voor zeer algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
+Deze mogelijkheid om stijlnamen te definiëren, is handig voor zeer algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
 
 Zo kan een container voor lay-out bijvoorbeeld semantiek krijgen `<main>`, `<aside>`, `<nav>`, enz.

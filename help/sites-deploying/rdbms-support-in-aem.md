@@ -12,9 +12,9 @@ discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '621'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Ondersteuning voor relationele databasedruk in AEM wordt geïmplementeerd met behulp van Document Microkernel. De Document Microkernel is de basis die ook wordt gebruikt voor de implementatie van MongoDB-persistentie.
+Ondersteuning voor relationele databasedruk in AEM wordt geïmplementeerd via Document Microkernel. De Document Microkernel is de basis die ook wordt gebruikt voor de implementatie van MongoDB-persistentie.
 
 Deze API bestaat uit een Java API die is gebaseerd op de API van Mongo Java. Er wordt ook een implementatie van een BlobStore-API geleverd. Standaard worden klodders opgeslagen in de database.
 
@@ -57,6 +57,7 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
 1. Vorm de gegevensbron en de parameters JDBC door een ander configuratiedossier met de volgende naam in te creëren `crx-quickstart\install` map:
 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
+
    >[!NOTE]
    >
    >Voor gedetailleerde informatie over de gegevensbronconfiguratie voor elke gesteunde gegevensbestand, zie [Configuratieopties gegevensbron](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).

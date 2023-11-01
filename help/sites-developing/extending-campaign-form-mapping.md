@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Nadat u de gebeurtenissentabel hebt gemaakt, voert u de **Wizard Databasestructu
 
 ### De zaadtabel uitbreiden {#extending-the-seed-table}
 
-Tik/klik in Adobe Campaign op **Toevoegen** om een nieuwe uitbreiding van **Zaadadressen (nms)** tabel.
+Tik/klik in Adobe Campaign **Toevoegen** om een nieuwe uitbreiding van het **Zaadadressen (nms)** tabel.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -79,7 +79,7 @@ Hierna voert u **Databasewizard bijwerken** om de wijzigingen toe te passen.
 
 ### Aangepaste doeltoewijzing maken {#creating-custom-target-mapping}
 
-In **Beheer/Campagne** t, ga naar **Doeltoewijzingen** en voeg een nieuwe T toe **Doeltoewijzing.**
+In **Beheer/Campagne** t, ga **Doeltoewijzingen** en voeg een nieuwe T toe **Doeltoewijzing.**
 
 >[!NOTE]
 >
@@ -107,7 +107,7 @@ Wanneer u de velden configureert, moet u unieke elementnamen opgeven voor de for
 
 Nadat de gebieden worden gevormd, moet u de afbeelding manueel veranderen.
 
-Ga in CRXDE-lite naar de **jcr:inhoud** (van de pagina) en wijzig de **acMapping** aan de interne naam van de **Doeltoewijzing**.
+Ga in CRXDE-lite naar de **jcr:inhoud** (van de pagina) en wijzig de **acMapping** waarde voor de interne naam van de **Doeltoewijzing**.
 
 ![chlimage_1-198](assets/chlimage_1-198.png)
 

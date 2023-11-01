@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1491'
+source-wordcount: '1489'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Nadat u hebt vastgesteld hoe AEM formulieren worden gebruikt, bepaalt u welke be
 
 >[!NOTE]
 >
->Net als bij elk ander aspect van de implementatie van uw AEM formulieren, moet uw back-up- en herstelstrategie worden ontwikkeld en getest in een ontwikkelings- of testomgeving voordat deze in de productie wordt gebruikt, om ervoor te zorgen dat de volledige oplossing werkt zoals u had verwacht zonder gegevensverlies.
+>Net als bij elk ander aspect van de implementatie van uw AEM formulieren, moet uw back-up- en herstelstrategie worden ontwikkeld en getest in een ontwikkelings- of testomgeving voordat deze in de productie wordt gebruikt om ervoor te zorgen dat de volledige oplossing werkt zoals u had verwacht zonder gegevensverlies.
 
 Adobe Experience Manager (AEM) maakt integrerend deel uit van AEM formulieren. Daarom moet u AEM ook synchroniseren met AEM formulieren voor back-ups, zoals Correspondence Management Solution en -services, zoals formulierbeheer, zijn gebaseerd op gegevens die zijn opgeslagen in AEM deel van AEM formulieren.Om gegevensverlies te voorkomen, moeten de AEM specifieke gegevens op een zodanige manier worden opgeslagen dat GDS en AEM (gegevensopslagruimte) correleren met databaseverwijzingen.De directory&#39;s database, GDS, AEM en Content Storage Root moeten worden hersteld naar een DNS op dezelfde manier Geef het origineel een naam.
 

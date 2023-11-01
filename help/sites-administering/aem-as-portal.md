@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '6100'
+source-wordcount: '6098'
 ht-degree: 0%
 
 ---
@@ -395,7 +395,7 @@ Voor het openen van de pagina voor websitebeheer of het bewerken van een pagina 
 
 ### Rechten {#privileges}
 
-Sommige functies van de portlet worden beschermd door voorrechten. De huidige gebruiker heeft dit voorrecht nodig om toegang te krijgen tot deze functie. Er zijn de volgende vooraf gedefinieerde rechten:
+Sommige functies van de portlet worden beschermd door voorrechten. De huidige gebruiker moet over dit voorrecht beschikken om toegang te krijgen tot deze functie. Er zijn de volgende vooraf gedefinieerde rechten:
 
 * &quot;toolbar&quot;: Dit is het algemene voorrecht om de toolbar in portlet te zien/te gebruiken.
 * &quot;prefs&quot; : Als de gebruiker over dit recht beschikt, mag de gebruiker de voorkeuren van de portlet zien/wijzigen.

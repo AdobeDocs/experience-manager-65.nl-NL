@@ -11,16 +11,16 @@ discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
 
 # Aangepaste formuliersjablonen{#adaptive-form-templates}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 | Versie | Artikelkoppeling |
 | -------- | ---------------------------- |
@@ -62,8 +62,8 @@ Wanneer u een sjabloon opent voor bewerking, kunt u de volgende AEM Editor-compo
 * **Pagina, werkbalk**
 Bevat de volgende opties:
 
-   * **Zijpaneel in-/uitschakelen**: Hiermee kunt u de zijbalk weergeven of verbergen.
-   * **Pagina-informatie**: Hier kunt u informatie opgeven, zoals de publicatie-/publicatietijd, miniaturen, bibliotheken aan de clientzijde, het paginabeleid en de clientbibliotheek van het paginaontwerp.
+   * **Zijpaneel in-/uitschakelen**: Hiermee kunt u het zijpaneel weergeven of verbergen.
+   * **Pagina-informatie**: Hier kunt u informatie opgeven zoals de publicatie-/publicatietijd, miniaturen, bibliotheken aan de clientzijde, het paginabeleid en de clientbibliotheek van het paginaontwerp.
    * **Emulator**: Hiermee kunt u het uiterlijk van verschillende apparaten simuleren en aanpassen.
    * **Laagkiezer:** Hiermee kunt u de laag wijzigen.
 U kunt **Structuur** laag of **Oorspronkelijke inhoud** laag. Met de structuurlaag kunt u de kop- en voettekst toevoegen en aanpassen. Met de eerste laag Inhoud kunt u de formulierinhoud aanpassen.
@@ -117,7 +117,7 @@ U voegt bijvoorbeeld de koptekstcomponent in de sjabloon toe. Wanneer u de compo
 
 Als de optie Begininhoud is geselecteerd, wordt de container van het adaptieve formulier van de sjabloon geopend als een adaptief formulier voor bewerking. Net als bij het ontwerpen van een adaptief formulier kunt u initiële instellingen opgeven, zoals het selecteren van een thema en het verzenden van handelingen.
 
-Auteurs van formulieren gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, tikt u vóór de voorvertoning op de pagina-werkbalk op ![canvas-drop-down](assets/canvas-drop-down.png) **> Oorspronkelijke inhoud**.
+Formulierauteurs gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, tikt u vóór de voorvertoning op de pagina-werkbalk op ![canvas-drop-down](assets/canvas-drop-down.png) **> Eerste inhoud**.
 ![Oorspronkelijke inhoudslaag in de Sjablooneditor](assets/initial-content-layer.png)
 
 Oorspronkelijke inhoudslaag in de Sjablooneditor met de adaptieve formuliercontainer geselecteerd voor het opgeven van eigenschappen.
@@ -143,24 +143,24 @@ U hebt een logo toegevoegd, een titel opgegeven en een voettekst toegevoegd aan 
 
 Wijzig de laag van Structuur in Begininhoud en voeg inhoud toe aan het formulier. Als u een structuur met tabbladen wilt maken, voegt u een onderliggend deelvenster toe in het guideRootPanel van de container van het adaptieve formulier. Een deelvenster toevoegen:
 
-* U kunt een deelvenster toevoegen door te tikken op de knop **+** wanneer u de optie **Componenten hierheen slepen** optie.
+* U kunt een deelvenster toevoegen door te tikken op de knop **+** wanneer u de optie **Componenten hierheen slepen** -optie.
 
 * U kunt de deelvenstercomponent slepen en neerzetten vanuit de deelvensterbrowser in de zijbalk.
 * U kunt een onderliggend deelvenster van het dialoogvenster `guideRootPanel` op de werkbalk van de component.
 
-Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster met onderliggende items van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik op ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk te openen. De elementnamen wijzigen als `general-info` en `professional-info`en titels als algemene informatie en beroepsinformatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tikken ![cmppr](assets/cmppr.png) in de componentwerkbalk om de eigenschappen te openen. Selecteer in het veld Indeling van deelvenster de optie **Tabs boven** en tikken **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
+Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster met onderliggende items van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik ![cmppr](assets/cmppr.png) om de eigenschappen in de zijbalk te openen. De elementnamen wijzigen als `general-info` en `professional-info`en titels als algemene informatie en beroepsinformatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tikken ![cmppr](assets/cmppr.png) in de componentwerkbalk om de eigenschappen te openen. Selecteer in het veld Indeling van deelvenster de optie **Tabs boven** en tikken **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
 
 #### Inhoud toevoegen op tabbladen {#adding-content-in-tabs}
 
-![Velden toevoegen aan de aangepaste formuliersjabloon](assets/template-edit-initial-content.png)
+![Velden toevoegen aan de adaptieve formuliersjabloon](assets/template-edit-initial-content.png)
 
-Nadat u deelvensters hebt toegevoegd en deze hebt gestructureerd als tabbladen, kunt u velden toevoegen binnen de tabbladen. Wanneer u een tabblad selecteert in de editor, kunt u de opties **Componenten hierheen slepen** optie. U kunt componenten zoals tekstvakken, lijstitems en knoppen slepen en neerzetten. U kunt componenten slepen-dalingscomponenten van componentenbrowser in sidebar.
+Nadat u deelvensters hebt toegevoegd en deze hebt gestructureerd als tabbladen, kunt u velden toevoegen binnen de tabbladen. Wanneer u een tabblad selecteert in de editor, kunt u de opties **Componenten hierheen slepen** -optie. U kunt componenten zoals tekstvakken, lijstitems en knoppen slepen en neerzetten. U kunt componenten slepen-dalingscomponenten van componentenbrowser in sidebar.
 
 Elke component bevat eigenschappen die het vastleggen en bewerken van gegevens verbeteren. U kunt bijvoorbeeld de opdracht **Vereist veld** eigenschap van een component. Uw auteurs kunnen een bericht specificeren dat uw klanten zien wanneer zij het vullen van een vereist gebied overslaan. Geef het bericht op in **Bericht vereist veld** eigenschap.
 
 In de voorbeeldsjabloon worden de velden Naam, Telefoonnummer en Geboortedatum toegevoegd op het tabblad Algemene informatie. Op het tabblad Professionele informatie, momenteel gebruikt, worden het werkgelegenheidstype en de kwalificatievelden voor het onderwijs toegevoegd.
 
-Nadat u velden hebt toegevoegd, kunt u knoppen toevoegen zoals Verzenden en Herstellen.
+Nadat u velden hebt toegevoegd, kunt u knoppen toevoegen, zoals Verzenden en Herstellen.
 
 ### De sjabloon inschakelen {#enabling-the-template}
 
@@ -178,7 +178,7 @@ Een formulier werkt met de sjabloon. Wanneer u een adaptief formulier downloadt 
 
 ## Een adaptief formulier maken met behulp van de sjabloon {#creating-an-adaptive-form-using-the-template}
 
-Nadat u een sjabloon hebt gemaakt en ingeschakeld, is deze beschikbaar in formulierbeheer wanneer u een adaptief formulier maakt. Als u een sjabloon wilt gebruiken en een adaptief formulier wilt maken, raadpleegt u [Een adaptief formulier maken](../../forms/using/creating-adaptive-form.md).
+Nadat u een sjabloon hebt gemaakt en ingeschakeld, is deze beschikbaar in formulierbeheer wanneer u een adaptief formulier maakt. Als u een sjabloon wilt gebruiken en een aangepast formulier wilt maken, raadpleegt u [Een adaptief formulier maken](../../forms/using/creating-adaptive-form.md).
 
 ## Weergaveoptie wijzigen van uit de vaksjablonen  {#change-display-option-of-out-of-the-box-templates}
 
@@ -194,8 +194,8 @@ Voer de volgende stappen uit om sjablonen weer te geven en te verbergen:
 
 1. Zoek en open de **FormsManager-configuratie** instellingen:
 
-   * Als u de aangepaste formuliersjabloon voor het vak wilt weergeven of verbergen, schakelt u het selectievakje **Sjablonen opnemen uit het vak AF en AD** optie.
-   * Als u adaptieve formuliersjablonen wilt weergeven of verbergen die zijn toegevoegd in AEM 6.0 Forms of AEM 6.1 Forms-versies maar die nu zijn vervangen, schakelt u de optie **Inclusief AEM 6.0 AF-sjablonen** optie. Als deze optie is ingeschakeld, moet de optie **Sjablonen opnemen uit het vak AF en AD** configuratie die moet worden ingeschakeld.
+   * Als u de aangepaste formuliersjabloon voor het vak wilt weergeven of verbergen, schakelt u het selectievakje **Sjablonen opnemen uit het vak AF en AD** -optie.
+   * Als u adaptieve formuliersjablonen wilt weergeven of verbergen die zijn toegevoegd in AEM 6.0 Forms of AEM 6.1 Forms-versies maar die nu zijn vervangen, schakelt u de optie **Inclusief AEM 6.0 AF-sjablonen** -optie. Als deze optie is ingeschakeld, moet de optie **Sjablonen opnemen uit het vak AF en AD** configuratie die moet worden ingeschakeld.
 
 1. Klikken **Opslaan**. De weergaveopties voor de out van de vaksjablonen worden gewijzigd.
 

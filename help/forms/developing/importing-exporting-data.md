@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2774'
 ht-degree: 0%
 
 ---
@@ -27,12 +27,12 @@ ht-degree: 0%
 De dienst van de Integratie van Gegevens van de Vorm kan gegevens in een vorm van PDF invoeren en gegevens van een vorm van PDF uitvoeren. De import- en exportbewerkingen ondersteunen twee typen PDF forms:
 
 * Een Acrobat-formulier (gemaakt in Acrobat) is een PDF-document dat formuliervelden bevat.
-* Een Adobe XML-formulier (gemaakt in Designer) is een PDF-document dat voldoet aan de XML Adobe XML Forms Architecture (XFA).
+* Een XML-formulier voor Adoben (gemaakt in Designer) is een PDF-document dat voldoet aan de XML Adobe XML Forms Architecture (XFA).
 
 Formuliergegevens kunnen afhankelijk van het type PDF-formulier in een van de volgende indelingen bestaan:
 
 * An XFDF file, which is an XML version of the Acrobat form data format.
-* Een XDP-bestand, dat een XML-bestand is dat formuliervelddefinities bevat. Het kan ook formulierveldgegevens en een ingesloten PDF-bestand bevatten. Een door Designer gegenereerd XDP-bestand kan alleen worden gebruikt als het een ingesloten basis-64-gecodeerd PDF-document bevat.
+* Een XDP-bestand, een XML-bestand dat formuliervelddefinities bevat. Het kan ook formulierveldgegevens en een ingesloten PDF-bestand bevatten. Een door Designer gegenereerd XDP-bestand kan alleen worden gebruikt als het een ingesloten basis-64-gecodeerd PDF-document bevat.
 
 U kunt deze taken uitvoeren met de service Formuliergegevensintegratie:
 
@@ -51,7 +51,7 @@ Als u gegevens wilt importeren in een formulier dat is gemaakt in Designer, moet
 
 ![ie_ie_lannformdata](assets/ie_ie_loanformdata.png)
 
-Als u gegevenswaarden wilt importeren in dit formulier, moet u beschikken over een geldige XML-gegevensbron die overeenkomt met het formulier. U kunt geen willekeurige XML-gegevensbron gebruiken om gegevens in een formulier te importeren met de service Formuliergegevensintegratie. Het verschil tussen een willekeurige XML-gegevensbron en een XDP XML-gegevensbron is dat een XDP-gegevensbron voldoet aan de XML Forms Architecture (XFA). De volgende XML vertegenwoordigt een XDP XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassing.
+Als u gegevenswaarden in dit formulier wilt importeren, moet u beschikken over een geldige XML-gegevensbron die overeenkomt met het formulier. U kunt geen willekeurige XML-gegevensbron gebruiken om gegevens in een formulier te importeren met de service Formuliergegevensintegratie. Het verschil tussen een willekeurige XML-gegevensbron en een XDP XML-gegevensbron is dat een XDP-gegevensbron voldoet aan de XML Forms Architecture (XFA). De volgende XML vertegenwoordigt een XDP XML-gegevensbron die overeenkomt met het voorbeeld van een hypotheektoepassing.
 
 ```xml
  <?xml version="1.0" encoding="UTF-8" ?>
@@ -123,7 +123,7 @@ Als u gegevens wilt importeren in een PDF-formulier, moet u verwijzen naar een X
 
 **Verwijzen naar een XML-gegevensbron**
 
-Als u formuliergegevens wilt importeren, moet u verwijzen naar een geldige gegevensbron. Als u gegevens wilt importeren in een XFA XML-formulier dat is gemaakt in Designer, moet u een XDP XML-gegevensbron gebruiken. Als u naar een Acrobat-formulier verwijst, moet u een XFDF-gegevensbron gebruiken. Voor elk veld waarin u gegevens wilt importeren, moet een waarde worden opgegeven. Als een element in de XML-gegevensbron niet overeenkomt met een veld in het formulier, wordt het element genegeerd.
+Als u formuliergegevens wilt importeren, moet u naar een geldige gegevensbron verwijzen. Als u gegevens wilt importeren in een XFA XML-formulier dat is gemaakt in Designer, moet u een XDP XML-gegevensbron gebruiken. Als u naar een Acrobat-formulier verwijst, moet u een XFDF-gegevensbron gebruiken. Voor elk veld waarin u gegevens wilt importeren, moet een waarde worden opgegeven. Als een element in de XML-gegevensbron niet overeenkomt met een veld in het formulier, wordt het element genegeerd.
 
 **Gegevens importeren in het PDF-formulier**
 
@@ -158,7 +158,7 @@ Formuliergegevens importeren met de API voor formuliergegevensintegratie (Java):
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormDataIntegrationClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormDataIntegrationClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een PDF-formulier.
 
@@ -188,7 +188,7 @@ Formuliergegevens importeren met de API voor formuliergegevensintegratie (Java):
 
 [Overzicht van de stappen](importing-exporting-data.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Formuliergegevens importeren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): formuliergegevens importeren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -209,7 +209,7 @@ Formuliergegevens importeren met de API (webservice) voor formuliergegevensinteg
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
    * Een `FormDataIntegrationClient` object met de standaardconstructor.
-   * Een `FormDataIntegrationClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `FormDataIntegrationClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `FormDataIntegrationClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -328,7 +328,7 @@ Formuliergegevens exporteren met de API voor formuliergegevensintegratie (Java):
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormDataIntegrationClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormDataIntegrationClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een PDF-formulier.
 
@@ -348,7 +348,7 @@ Formuliergegevens exporteren met de API voor formuliergegevensintegratie (Java):
 
 [Overzicht van de stappen](importing-exporting-data.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Formuliergegevens exporteren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): formuliergegevens exporteren met de Java API](/help/forms/developing/form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -367,7 +367,7 @@ Formuliergegevens exporteren met de API (webservice) voor formuliergegevensinteg
 1. Creeer een de dienstcliënt van de Integratie van Gegevens van de Vorm.
 
    * Een `FormDataIntegrationClient` object met de standaardconstructor.
-   * Een `FormDataIntegrationClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `FormDataIntegrationClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormDataIntegration?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `FormDataIntegrationClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -379,7 +379,7 @@ Formuliergegevens exporteren met de API (webservice) voor formuliergegevensinteg
 
 1. Verwijzen naar een PDF-formulier.
 
-   * Een `BLOB` object met behulp van de constructor. Dit `BLOB` -object wordt gebruikt om het PDF-formulier op te slaan waaruit gegevens worden geëxporteerd.
+   * Een `BLOB` object met behulp van de constructor. Dit `BLOB` wordt gebruikt om het PDF-formulier op te slaan waaruit gegevens worden geëxporteerd.
    * Een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de locatie van het PDF-formulier aangeeft en de modus waarin het bestand moet worden geopend.
    * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en geeft u de bytearray, de startpositie en de streamlengte door die u wilt lezen.

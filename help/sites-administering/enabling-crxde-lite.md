@@ -1,25 +1,21 @@
 ---
 title: CRXDE Lite inschakelen in AEM
-seo-title: Enabling CRXDE Lite in AEM
 description: Leer hoe u CRXDE Lite inschakelt in Adobe Experience Manager.
-seo-description: Learn how to enable CRXDE Lite in AEM.
-uuid: d7a3db67-6384-463b-9aa9-f08ecc6c99c6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 72df3ece-badf-466b-8f9a-0ec985d87741
 exl-id: bf51def2-1dd4-4bd3-b989-685058f0ead8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
 # CRXDE Lite inschakelen in AEM{#enabling-crxde-lite-in-aem}
 
-Om ervoor te zorgen dat AEM installaties zo veilig mogelijk zijn, wordt in de beveiligingscontrolelijst aanbevolen [WebDAV uitschakelen](/help/sites-administering/security-checklist.md#disable-webdav) in productieomgevingen.
+Om ervoor te zorgen dat AEM installaties zo veilig mogelijk zijn, raadt de beveiligingscontrolelijst aan [WebDAV uitschakelen](/help/sites-administering/security-checklist.md#disable-webdav) in productieomgevingen.
 
 CRXDE Lite is echter afhankelijk van de `org.apache.sling.jcr.davex` bundel om behoorlijk te functioneren, zodat zal onbruikbaar makend WebDAV effectief CRXDE Lite ook onbruikbaar maken.
 
@@ -29,7 +25,7 @@ Wanneer dit gebeurt, bladert u naar `https://serveraddress:4502/crx/de/index.jsp
 404 Resource at '/crx/server/crx.default/jcr:root/.1.json' not found: No resource found
 ```
 
-Hoewel deze aanbeveling bedoeld is om aanvalsoppervlakken zoveel mogelijk te beperken, hebben systeembeheerders soms toegang tot CRXDE Lite nodig om inhoud te kunnen doorbladeren of problemen met betrekking tot productieinstanties op te sporen.
+Hoewel deze aanbeveling bedoeld is om aanvalsoppervlakken zoveel mogelijk te beperken, hebben systeembeheerders soms toegang tot CRXDE Lite nodig om door inhoud te bladeren of problemen met betrekking tot productieinstanties op te sporen.
 
 U kunt CRXDE Lite inschakelen met beide [OSGi-instellingen](#enabling-crxde-lite-osgi) of met [cURL, opdracht](#enabling-crxde-lite-curl).
 
@@ -48,7 +44,7 @@ Als deze optie is uitgeschakeld, kunt u CRXDE Lite inschakelen door de onderstaa
 
    * `org.apache.sling.jcr.davex.impl.servlets.SlingDavExServlet`
 
-1. Klik op het moersleutelpictogram naast het pictogram om de configuratieopties te bekijken:
+1. Klik op het moersleutelpictogram naast het pictogram om de configuratieopties weer te geven:
 
    ![chlimage_1-80](assets/chlimage_1-80a.png)
 

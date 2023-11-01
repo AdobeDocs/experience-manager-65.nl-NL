@@ -7,9 +7,9 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '1341'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ In deze sectie wordt beschreven hoe u het Oak-runtime-programma kunt gebruiken o
 
 Nieuwe versies van de AEM brengen wijzigingen aan de indexdefinities van eikel aan aangezien de eigenschapreeks wordt uitgebreid. Wijzigingen in de indexen van het eik dwingen opnieuw indexeren wanneer u het AEM-exemplaar bijwerkt. Het opnieuw indexeren is duur voor middelenimplementaties omdat tekst in elementen (bijvoorbeeld tekst in een PDF-bestand) wordt geëxtraheerd en geïndexeerd. Bij MongoMK-opslagruimten blijven gegevens via het netwerk behouden, waardoor er meer tijd nodig is voor opnieuw indexeren.
 
-Het probleem waarmee de meeste klanten tijdens een upgrade worden geconfronteerd, beperkt het downtime-venster. De oplossing is: **overslaan** de herindexeringsactiviteit tijdens de upgrade. Dit kan worden bereikt door de nieuwe decies te creëren **voorafgaand** om de verbetering uit te voeren, dan eenvoudig invoerend hen tijdens de verbetering.
+Het probleem waarmee de meeste klanten tijdens een upgrade worden geconfronteerd, beperkt het downtime-venster. De oplossing is: **overslaan** de herindexeringsactiviteit tijdens de upgrade. Dit kan worden bereikt door de nieuwe indeces te creëren **voorafgaand** om de verbetering uit te voeren, dan eenvoudig invoerend hen tijdens de verbetering.
 
 ## Benadering {#approach}
 
@@ -61,7 +61,7 @@ java java -jar oak-run.jar tika <nodestore path> --fds-path <datastore path> --d
 
 Wanneer `nodestore path` is de `mongo_ur` of `crx-quickstart/repository/segmentstore/`
 
-Gebruik de `--fake-ds-path=temp` parameter in plaats van `–fds-path` versnellen.
+Gebruik de `--fake-ds-path=temp` parameter in plaats van `–fds-path` het proces te versnellen.
 
 **2. De binaire tekstwinkel die beschikbaar is in de bestaande index opnieuw gebruiken**
 
@@ -75,7 +75,7 @@ java -jar oak-run.jar index <nodestore path> --fds-path=<datastore path> --index
 
 Wanneer `nodestore path` is de `mongo_ur` of `crx-quickstart/repository/segmentstore/`
 
-Dan, gebruik de bovengenoemde indexstortplaats om de opslag te bevolken:
+Gebruik vervolgens de bovenstaande indexdump om de winkel te vullen:
 
 ```
 java -jar oak-run.jar tika --data-file text-extraction/oak-binary-stats.csv --store-path text-extraction/store --index-dir ./indexing-result/index-dumps/<oak-index-name>/data populate
@@ -105,7 +105,7 @@ Voer de volgende stappen uit om de index offline te maken:
 
 **1. Eak-Lucene-indexdefinities genereren voor de AEM versie**
 
-Zet de bestaande indexdefinities neer. Indexdefinities die zijn gewijzigd, zijn gegenereerd met de bundel van de Adobe Granite-opslagruimte van de AEM versie en de eak-run van het doel.
+Zet de bestaande indexdefinities neer. Indexdefinities die zijn gewijzigd, zijn gegenereerd met behulp van de bundel van de graniet-opslagruimte van de doelversie AEM en de eak-run.
 
 Om de indexdefinitie van te dumpen **bron** AEM instantie, voer deze opdracht uit:
 
@@ -117,7 +117,7 @@ Om de indexdefinitie van te dumpen **bron** AEM instantie, voer deze opdracht ui
 java -jar oak-run.jar index --fds-path <datastore path> <nodestore path> --index-definitions
 ```
 
-Wanneer `datastore path` en `nodestore path` afkomstig zijn van **bron** AEM.
+Wanneer `datastore path` en `nodestore path` afkomstig zijn van **bron** AEM instantie.
 
 Vervolgens genereert u indexdefinities op basis van de **target** AEM versie die de graniet-opslagbundel van de doelversie gebruikt.
 
@@ -131,11 +131,11 @@ java -cp oak-run.jar:bundle-com.adobe.granite.repository.jar org.apache.jackrabb
 
 Met de bovenstaande stappen maakt u een JSON-bestand met de naam `merge-index-definitions_target.json` Dit is de indexdefinitie.
 
-**2. Een controlepunt maken in de repository**
+**2. Een controlepunt maken in de opslagplaats**
 
 Een controlepunt maken in de productie **bron** AEM instantie met een lange levensduur. Dit moet gebeuren voordat de opslagplaats wordt gekloond.
 
-Via JMX-console op `http://serveraddress:serverport/system/console/jmx`, ga naar `CheckpointMBean` en maak een controlepunt met een lang genoeg leven (bijvoorbeeld, 200 dagen). Roep hiervoor `CheckpointMBean#createCheckpoint` with `17280000000` als het argument voor de levensduurduur in milliseconden.
+Via JMX-console op `http://serveraddress:serverport/system/console/jmx`, ga naar `CheckpointMBean` en maak een controlepunt met een lang genoeg leven (bijvoorbeeld, 200 dagen). Hiervoor roept u `CheckpointMBean#createCheckpoint` with `17280000000` als het argument voor de levensduurduur in milliseconden.
 
 Kopieer de zojuist gemaakte checkpoint-id en valideer de levensduur met JMX `CheckpointMBean#listCheckpoints`.
 
@@ -143,7 +143,7 @@ Kopieer de zojuist gemaakte checkpoint-id en valideer de levensduur met JMX `Che
 >
 >Dit controlepunt wordt verwijderd wanneer de index later wordt geïmporteerd.
 
-Voor meer informatie raadpleegt u [aanmaken controlepunt](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) in de documentatie van de eik.
+Raadpleeg voor meer informatie [aanmaken controlepunt](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html#out-of-band-create-checkpoint) in de documentatie van de eik.
 
 **Offline indexeren uitvoeren voor de gegenereerde indexdefinities**
 

@@ -11,9 +11,9 @@ topic-tags: Security
 discoiquuid: 68077369-0549-4c0f-901b-952e323013ea
 docset: aem65
 exl-id: 574e2fc2-6ebf-49b6-9b65-928237a8a34d
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '853'
 ht-degree: 0%
 
 ---
@@ -202,7 +202,7 @@ U kunt de SSL/TLS-configuratie ook automatiseren met het gereedschap cURL. U kun
 
 *https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
-Hieronder ziet u de parameters die u kunt gebruiken om de verschillende instellingen in de configuratietovenaar te wijzigen:
+Hieronder vindt u de parameters die u kunt gebruiken om de verschillende instellingen in de configuratietovenaar te wijzigen:
 
 * `-F "keystorePassword=password"` - het sleutelarchiefwachtwoord;
 

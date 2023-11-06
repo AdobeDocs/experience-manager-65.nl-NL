@@ -1,20 +1,18 @@
 ---
 title: Hoe kan ik Adaptive Forms Core Components inschakelen op AEM 6.5 Forms?
-seo-title: How to enable Adaptive Forms Core Components on AEM 6.5 Forms?
 description: Stapsgewijze handleiding voor het inschakelen van adaptieve Forms Core Components in een AEM 6.5 Forms-omgeving.
-seo-description: Step-by-Step guide to help you enable Adaptive Forms Core Components on an AEM 6.5 Forms environment.
 keywords: Core Components, Core Components Adaptive Forms, Core Components on 6.5, Adaptive Forms Core Components on AEM 6.5, AF Core Components on AEM 6.5, AEM 6.5 Forms Core Components
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 6585ea71-6242-47d3-bc59-6f603cf507b6
+source-git-commit: 1da3abac8a7f09d41127818a5abacf29524f1365
 workflow-type: tm+mt
-source-wordcount: '888'
+source-wordcount: '990'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve Forms Core-componenten inschakelen op AEM 6.5 Forms {#enable-adaptive-forms-core-components}
 
@@ -27,10 +25,9 @@ ht-degree: 0%
 
 Door Adaptieve Forms Core-componenten in te schakelen kunt u beginnen met het maken, publiceren en leveren van [Adaptieve Forms met basis van kerncomponenten](create-an-adaptive-form-core-components.md) en [Forms zonder hoofdadapter](https://experienceleague.adobe.com/docs/experience-manager-headless-adaptive-forms/using/overview.html) uit uw AEM 6.5 Forms-omgeving.
 
-Om HAdaptive Forms Core Components op uw AEM 6.5 Forms-omgeving mogelijk te maken, stelt u een [Archetype 41 of hoger AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebaseerd project (met formulieropties ingeschakeld) op al uw instanties Auteur en Publiceren.
+Als u Adaptive Forms Core Components wilt inschakelen in uw AEM 6.5 Forms-omgeving, moet u een [Archetype 41 of hoger AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) gebaseerd project (met formulieropties ingeschakeld) op al uw instanties Auteur en Publiceren.
 
-Dit artikel bevat gedetailleerde instructies voor het instellen en implementeren van een project op basis van Archetype 41 of hoger op uw AEM 6.5 Forms-omgeving om Adaptive Forms Core Components (Aangepaste Core-componenten) in te schakelen.
-
+Dit artikel bevat gedetailleerde instructies voor het instellen en implementeren van een project op basis van Archetype 41 of hoger op uw AEM 6.5 Forms-omgeving om Adaptive Forms Core Components (Aangepaste Core-componenten) in te schakelen. U kunt de onderstaande lijst raadplegen voor **AEM 6,5** compatibele versies voor het inschakelen van Forms Core Components:
 
 ## Vereisten {#prerequisites}
 
@@ -107,7 +104,16 @@ Een AEM Archetype 41 of [later](https://github.com/adobe/aem-project-archetype) 
 1. Project bijwerken met de nieuwste versie van Forms Core Components:
 
    1. Open de [Projectmap Archetype AEM]/pom.xml voor bewerken.
-   1. Versie instellen van `core.forms.components.version` en `core.forms.components.af.version` tot [nieuwste Forms Core-componenten](https://github.com/adobe/aem-core-forms-components/tree/release/650) versie.
+   1. Versie instellen van `core.forms.components.version` en `core.forms.components.af.version` tot [nieuwste Forms Core-componenten](https://github.com/adobe/aem-core-forms-components/tree/release/650#system-requirements) versie en zorg dat beide dezelfde versie hebben als **Forms Core-componenten** genoemd in de lijst, en vastgestelde versie van `core.wcm.components.version` zoals vermeld in de **WCM Core-componenten**.
+
+      >[!WARNING]
+      >
+      >* Wanneer u een project Archetype maakt met `version 45`de [Projectmap Archetype AEM]/pom.xml stelt de versie van de kerncomponenten van formulieren aanvankelijk in op `1.1.28`. Voordat u het project Archetype gaat maken of implementeren, moet u de versie van de kerncomponenten van de formulieren bijwerken naar `1.1.26`.
+
+
+      >[!NOTE]
+      >
+      >* Als u opstelling een andere topologie, ervoor zorgt dat u verzend toevoegt, vooraf instelt, en andere URLs aan de lijst van gewenste personen bij de laag van de Verzender.
 
    1. Sla het bestand op en sluit het.
 

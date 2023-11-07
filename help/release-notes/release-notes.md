@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
 workflow-type: tm+mt
-source-wordcount: '4612'
+source-wordcount: '4620'
 ht-degree: 0%
 
 ---
@@ -492,7 +492,7 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 
 #### Interactieve communicatie
 
-* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om interactieve communicatie brieven uit te geven. (FORMS-10578) Voer de volgende stappen uit om het probleem op te lossen:
+* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om de Interactieve Communicatie met grote gealigneerde beelden op Edit wijze te openen. (FORMS-10578) Voer de volgende stappen uit om het probleem op te lossen:
 
    1. Downloaden [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) via SD-koppeling.
    1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.

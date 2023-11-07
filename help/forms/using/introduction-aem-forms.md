@@ -11,7 +11,7 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 1683338f02d01d5d9843368955fa42f309718f26
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '919'
 ht-degree: 0%
@@ -87,9 +87,9 @@ Alle formuliertypen ondersteunen de volgende functies:
 
 Zodra de vormgegevens worden voorgelegd, verbindt Adobe Experience Manager de vormgegevens met bestaande systemen, bedrijfsregels, en de vereiste mensen.
 
-AEM Forms biedt Forms Workspace, een mobiele toepassing die uw digitale bedrijfsprocessen uitbreidt tot mobiele apparaten. Met Forms Workspace kunt u zelfs gegevens verzamelen en opnemen als u offline bent. In Forms Workspace worden de mogelijkheden van uw mobiele apparaat benut en kunt u foto&#39;s, video&#39;s en gegevensverzamelingen vastleggen, zoals tijdstempels en andere informatie. De volgende keer dat u verbinding maakt met een netwerk, kunt u de verzamelde gegevens synchroniseren.
+AEM Forms biedt Forms Workspace, een mobiele toepassing die uw digitale bedrijfsprocessen uitbreidt tot mobiele apparaten. Met Forms Workspace kunt u zelfs gegevens verzamelen en opnemen als u offline bent. In Forms Workspace worden de mogelijkheden van uw mobiele apparaat gebruikt en kunt u foto&#39;s, video&#39;s en gegevens zoals tijdstempels en andere informatie vastleggen. De volgende keer dat u verbinding maakt met een netwerk, kunt u de verzamelde gegevens synchroniseren.
 
-Met name voor mensen in het veld is het handig om gegevens offline vast te leggen en deze de volgende keer dat u online terugkeert, te synchroniseren. Het verbetert productiviteit en vermindert fouten.
+Met name voor mensen in het veld is het handig om gegevens offline vast te leggen en deze de volgende keer online te synchroniseren. Het verbetert productiviteit en vermindert fouten.
 
 **Voordelen van het gebruik van Forms Workspace voor offlinegegevensverzameling**
 
@@ -107,9 +107,9 @@ Met name voor mensen in het veld is het handig om gegevens offline vast te legge
 
 Een belangrijke component van een efficiënte zelfbedienings digitale ervaring moet geschikte, gepersonaliseerde informatie communiceren die de gebruikers van overal, en op om het even welk apparaat kunnen toegang hebben. De gepersonaliseerde en geschikte mededelingen kunnen zowel omzettingspercentages als gebruikerstevredenheid verbeteren.
 
-Met AEM Forms kunnen zakelijke gebruikers aansprekende persoonlijke gebruikerservaring creëren door documentsjablonen aan te passen, door informatie van back-endprocessen op te nemen en interactieve componenten op te nemen. Een intuïtieve gebruikersinterface helpt niet-technische gebruikers bedrijfsregels ontwikkelen die besluiten wanneer om een mededeling te produceren die op een onderzoek wordt gebaseerd, of een user-generated reactie in werking te stellen.
+Met AEM Forms kunnen zakelijke gebruikers aansprekende persoonlijke gebruikerservaringen maken door documentsjablonen aan te passen, door informatie van back-endprocessen op te nemen en interactieve componenten op te nemen. Een intuïtieve gebruikersinterface helpt niet-technische gebruikers bedrijfsregels ontwikkelen die besluiten wanneer om een mededeling te produceren die op een onderzoek wordt gebaseerd, of een user-generated reactie in werking te stellen.
 
-Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, kunnen gemakkelijk op meerdere kanalen worden afgeleverd. Organisaties kunnen het verkeer naar gepersonaliseerde webportalen sturen, wat leidt tot inschrijving of aankoop van extra services.
+Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, kunnen gemakkelijk op meerdere kanalen worden afgeleverd. Organisaties kunnen het verkeer naar gepersonaliseerde webportalen sturen, wat leidt tot inschrijving of aanschaf van extra services.
 
 **Belangrijkste kenmerken**
 

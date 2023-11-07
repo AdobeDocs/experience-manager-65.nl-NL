@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 3139564f-9346-4933-8e39-2e1642bff097
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9901'
+source-wordcount: '9888'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ De volgende lijst maakt een lijst van de dienstWSDL definities (veronderstellend
 
 **AEM Forms Process WSDL-definities**
 
-U moet de naam van de Toepassing en de naam van het Proces binnen de definitie van WSDL specificeren om tot WSDL toegang te hebben die tot een proces behoort dat in Workbench wordt gecreeerd. Stel dat de naam van de toepassing `MyApplication` en de naam van het proces is `EncryptDocument`. In dit geval, specificeer de volgende definitie WSDL:
+Geef de toepassingsnaam en de procesnaam in de WSDL-definitie op voor toegang tot een WSDL die tot een proces behoort dat in Workbench is gemaakt. Stel dat de naam van de toepassing `MyApplication` en de naam van het proces is `EncryptDocument`. In dit geval, specificeer de volgende definitie WSDL:
 
 ```java
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl
@@ -212,7 +212,7 @@ Als een AEM Forms-servicebewerking een `BLOB` Als een invoerwaarde typt, maakt u
 
 Waarden toewijzen aan velden die bij de `BLOB` instantie als volgt:
 
-* **Base64**: Als u gegevens wilt doorgeven als tekst die is gecodeerd in een Base64-indeling, stelt u de gegevens in in het dialoogvenster `BLOB.binaryData` veld en stel het gegevenstype in in de MIME-indeling (bijvoorbeeld `application/pdf`) in de `BLOB.contentType` veld. (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
+* **Base64**: Als u gegevens wilt doorgeven als tekst die is gecodeerd in een Base64-indeling, stelt u de gegevens in in het dialoogvenster `BLOB.binaryData` en het gegevenstype in de MIME-indeling instellen (bijvoorbeeld `application/pdf`) in de `BLOB.contentType` veld. (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
 * **MTOM**: Als u binaire gegevens wilt doorgeven in een MTOM-bijlage, stelt u de gegevens in het dialoogvenster `BLOB.MTOM` veld. Deze instelling koppelt de gegevens aan de SOAP-aanvraag met behulp van het Java JAX-WS-framework of de native API van het SOAP-framework. (Zie [AEM Forms aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
 * **SwaRef**: Om binaire gegevens in een WS-I SwaRef gehechtheid over te gaan, plaats de gegevens in `BLOB.swaRef` veld. Deze instelling koppelt de gegevens aan het SOAP-verzoek met behulp van het Java JAX-WS-framework. (Zie [AEM Forms aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
 * **MIME- of DIME-bijlage**: Als u gegevens wilt doorgeven in een MIME- of DIME-bijlage, voegt u de gegevens toe aan de SOAP-aanvraag met de native API van het SOAP-framework. De id van de bijlage instellen in het dialoogvenster `BLOB.attachmentID` veld. (Zie [AEM Forms aanroepen met Base64-codering](#invoking-aem-forms-using-base64-encoding).)
@@ -357,7 +357,7 @@ U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklas
 1. Installeer JDK 1.6 of later.
 
    * Voeg de JDK bin-map toe aan het klassepad.
-   * Voeg de binmap JRE toe aan het klassepad. Dit vak bevindt zich in het dialoogvenster `[JDK_INSTALL_LOCATION]/jre` directory.
+   * Voeg de binmap JRE toe aan het klassepad. Dit vak bevindt zich in het `[JDK_INSTALL_LOCATION]/jre` directory.
    * Stel de `JAVA_HOME` omgevingsvariabele naar de map waarin u de JDK hebt geïnstalleerd.
 
    JDK 1.6 omvat het havenprogramma dat in het build.xml- dossier wordt gebruikt. JDK 1.5 omvat dat programma niet.
@@ -431,7 +431,7 @@ U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklas
 
 1. Plaats de JAVA-bestanden in een JAR-bestand. Voer de volgende stappen uit als u werkt aan Eclipse:
 
-   * Maak een nieuw Java-project dat wordt gebruikt om de JAVA-proxybestanden in te pakken in een JAR-bestand.
+   * Maak een Java-project dat wordt gebruikt om de JAVA-proxybestanden in te pakken in een JAR-bestand.
    * Maak een bronmap in het project.
    * Een `com.adobe.idp.services` in de map Source.
    * Selecteer de `com.adobe.idp.services` verpakken en vervolgens de JAVA-bestanden vanuit de map adobe/idp/services in het pakket importeren.
@@ -444,7 +444,7 @@ U kunt JAX-WS gebruiken om een Forms-service-WSDL om te zetten in Java-proxyklas
 
    >[!NOTE]
    >
-   >Alle Java-webservices worden snel gestart (behalve de Forms-service) in Programmeren met AEM formulieren. U maakt Java-proxybestanden met JAX-WS. Bovendien begint alle Java-webservice snel met SwaRef. (Zie [AEM Forms aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
+   >Alle Java-webservices worden snel gestart (behalve de Forms-service) bij Programmeren met AEM formulieren. U maakt Java-proxybestanden met JAX-WS. Bovendien begint alle Java-webservice snel met SwaRef. (Zie [AEM Forms aanroepen met SwaRef](#invoking-aem-forms-using-swaref).)
 
 **Zie ook**
 
@@ -584,7 +584,7 @@ U kunt een .NET cliëntassemblage tot stand brengen om de dienst van Forms van e
 
 **Een proxyklasse maken**
 
-U kunt een volmachtsklasse tot stand brengen die wordt gebruikt om de .NET cliëntassemblage tot stand te brengen door een hulpmiddel te gebruiken dat Microsoft Visual Studio begeleidt. De naam van het hulpmiddel is wsdl.exe en het wordt gevestigd in de installatiemap van Microsoft Visual Studio. Als u een proxyklasse wilt maken, opent u de opdrachtprompt en navigeert u naar de map die het bestand wsdl.exe bevat. Voor meer informatie over het hulpmiddel wsdl.exe, zie *Help bij MSDN*.
+U kunt een volmachtsklasse tot stand brengen die wordt gebruikt om de .NET cliëntassemblage tot stand te brengen door een hulpmiddel te gebruiken dat Microsoft Visual Studio begeleidt. De naam van het hulpmiddel is wsdl.exe en het is in de installatiemap van Microsoft Visual Studio. Als u een proxyklasse wilt maken, opent u de opdrachtprompt en navigeert u naar de map die het bestand wsdl.exe bevat. Voor meer informatie over het hulpmiddel wsdl.exe, zie *Help bij MSDN*.
 
 Ga het volgende bevel bij de bevelherinnering in:
 
@@ -669,7 +669,7 @@ U kunt de dienst van AEM Forms aanhalen gebruikend de volmachtsklassen van Java 
    >Vervangen `hiro-xp` *met het IP-adres van de J2EE-toepassingsserver die AEM Forms host.*
 
 1. Plaats de Java-proxyklassen die met JAX-WS zijn gemaakt in een JAR-bestand.
-1. Neem het JAR-bestand voor de Java-proxy en de JAR-bestanden op in het volgende pad:
+1. Neem het JAR-bestand voor Java-proxy&#39;s en de JAR-bestanden op in het volgende pad:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -864,7 +864,7 @@ Om het `MyApplication/EncryptDocument` Voer de volgende stappen uit door Java-pr
    >Vervangen `hiro-xp` *met het IP-adres van de J2EE-toepassingsserver die AEM Forms host.*
 
 1. Plaats de Java-proxyklassen die met JAX-WS zijn gemaakt in een JAR-bestand.
-1. Neem het JAR-bestand voor de Java-proxy en de JAR-bestanden op in het volgende pad:
+1. Neem het JAR-bestand voor Java-proxy&#39;s en de JAR-bestanden op in het volgende pad:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 
@@ -987,7 +987,7 @@ U kunt een AEM Forms-service aanroepen met Java-proxyklassen en BLOB-gegevens vi
    >Vervangen `hiro-xp` *met het IP-adres van de J2EE-toepassingsserver die AEM Forms host.*
 
 1. Plaats de Java-proxyklassen die met JAX-WS zijn gemaakt in een JAR-bestand.
-1. Neem het JAR-bestand voor de Java-proxy en de JAR-bestanden op in het volgende pad:
+1. Neem het JAR-bestand voor Java-proxy&#39;s en de JAR-bestanden op in het volgende pad:
 
    &lt;install directory=&quot;&quot;>\Adobe\Adobe_Experience_Manager_forms\sdk\client-libs\thirdparty
 

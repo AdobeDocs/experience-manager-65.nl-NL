@@ -7,9 +7,9 @@ topic-tags: development-tools
 content-type: reference
 docset: aem65
 exl-id: 9e88ca55-ac3d-4857-b6b2-aeb732562664
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2120'
+source-wordcount: '2119'
 ht-degree: 0%
 
 ---
@@ -172,7 +172,7 @@ Het leidt tot:
 
 * Een onderliggende node van het type `cq:PageContent` met eigenschappen voor Pagina-inhoud
 
-U kunt eigenschappen toevoegen aan uw sjabloon: raadpleeg de [Een eigenschap maken](#creating-a-property) sectie.
+U kunt eigenschappen aan uw sjabloon toevoegen: zie [Een eigenschap maken](#creating-a-property) sectie.
 
 ## Een component maken {#creating-a-component}
 

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: 54b942f9-5dd9-4826-9a0a-028f2d7b8e41
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2347'
 ht-degree: 0%
@@ -132,7 +132,7 @@ Filteren wordt niet ondersteund.
 
 * **upperBound**
 
-  Bovengrens voor het controleren van eigenschappen, bijvoorbeeld `2014-10-01T12:15:00`.
+  Bovenaan gebonden om eigenschap te controleren voor, bijvoorbeeld, `2014-10-01T12:15:00`.
 
 * **upperOperation**
 
@@ -247,7 +247,7 @@ Ondersteunt facetextractie. Verstrekt emmers voor elke unieke taalcode.
 
 * **taal**
 
-  ISO-taalcode, bijvoorbeeld &quot; `de`&quot;
+  ISO-taalcode, bijvoorbeeld &quot;`de`&quot;
 
 ### hoofdmiddel {#mainasset}
 
@@ -313,7 +313,7 @@ Hiermee kunt u de resultaten sorteren. Als het opdracht geven door veelvoudige e
 
 * **ordonneren**
 
-  De eigenschapsnaam van beide JCR wordt aangegeven door een regelafstand @, bijvoorbeeld `@jcr:lastModified` of `@jcr:content/jcr:title`of een andere voorspelling in de query, bijvoorbeeld `2_property`, waarop wordt gesorteerd.
+  De JCR-eigenschapsnaam die wordt aangegeven door een regelafstand @, bijvoorbeeld `@jcr:lastModified` of `@jcr:content/jcr:title`of een andere voorspelling in de query, bijvoorbeeld `2_property`, waarop wordt gesorteerd.
 
 * **sorteren**
 
@@ -459,7 +459,7 @@ De naam &quot;wortel&quot;wordt nooit gebruikt in een vraag, het is impliciet.
 
 * **p.radenTotaal**
 
-  Aanbevolen: vermijd het berekenen van het volledige resultaattotaal, wat kostbaar kan zijn; ofwel een getal dat het maximale totaal aangeeft dat kan worden geteld (bijvoorbeeld 1000, een getal dat gebruikers voldoende feedback geeft over de ruwe grootte en exacte getallen voor kleinere resultaten), ofwel &quot; `true`&quot; om slechts tot het noodzakelijke minimum te tellen `p.offset` + `p.limit`.
+  Aanbevolen: vermijd het berekenen van het volledige resultaattotaal, wat kostbaar kan zijn; ofwel een getal dat het maximale totaal aangeeft dat moet worden geteld tot (bijvoorbeeld 1000, een getal dat gebruikers voldoende feedback geeft over de ruwe grootte en exacte getallen voor kleinere resultaten) of &quot; `true`&quot; om slechts tot het noodzakelijke minimum te tellen `p.offset` + `p.limit`.
 
 * **p.excerpt**
 
@@ -521,7 +521,7 @@ Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag, waarbij het h
 
 * **tag**
 
-  Titelpad van tag die moet worden gezocht, bijvoorbeeld &quot;Eigenschappen van element: oriëntatie / liggend&quot;.
+  Titelpad van tag om bijvoorbeeld te zoeken naar &quot;Eigenschappen van element: oriëntatie / liggend&quot;.
 
 * **N_value**
 
@@ -541,7 +541,7 @@ Ondersteunt facetextractie. Verschaft emmers voor elke unieke tag met behulp van
 
 * **gelabeld**
 
-  Tag id zodat u kunt zoeken, bijvoorbeeld &quot; `properties:orientation/landscape`&quot;.
+  Label-id zodat u bijvoorbeeld naar &quot; `properties:orientation/landscape`&quot;.
 
 * **N_value**
 
@@ -585,4 +585,4 @@ Ondersteunt facetextractie. Verstrekt emmers voor elk uniek type in de resultate
 
 * **type**
 
-  Knooppunttype of mixnaam die u wilt zoeken, bijvoorbeeld `cq:Page`.
+  Node-type- of mixingnaam die u wilt zoeken, bijvoorbeeld `cq:Page`.

@@ -3,9 +3,9 @@ title: Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en A
 description: Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows
 contentOwner: khsingh
 exl-id: 505b8988-b2b3-4222-b3cb-9b3c6259fdd2
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '925'
 ht-degree: 19%
 
 ---
@@ -396,7 +396,7 @@ Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows (AEM Forms on JEE
 
 ## Verschillen tussen functies van AEM Inbox- en AEM Forms-apps {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Twee van de belangrijkste manieren om een Forms-centric workflow te starten, worden gebruikt [AEM Inbox](../../forms/using/manage-applications-inbox.md) en AEM Forms-app. De mogelijkheden van AEM Inbox en AEM Forms-app verschillen echter. AEM Inbox werkt alleen met [Forms-gecentreerde workflows](../../forms/using/aem-forms-workflow.md) terwijl de AEM Forms-app werkt met zowel Forms-gecentreerde workflows als procesbeheer.
+Twee van de belangrijkste manieren om een Forms-centric workflow te starten, worden gebruikt [AEM Inbox](../../forms/using/manage-applications-inbox.md) en AEM Forms-app. De mogelijkheden van AEM Inbox en AEM Forms-app verschillen echter. AEM Inbox werkt alleen met [Forms-gecentreerde workflows](../../forms/using/aem-forms-workflow.md) terwijl de AEM Forms-app werkt met zowel Forms-gerichte workflows als procesbeheer.
 
 In de volgende tabel worden de mogelijkheden van de toepassingen AEM Inbox en AEM Forms weergegeven:
 

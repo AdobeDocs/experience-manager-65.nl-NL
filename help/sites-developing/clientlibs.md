@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2856'
+source-wordcount: '2853'
 ht-degree: 0%
 
 ---
@@ -122,7 +122,7 @@ De webclient moet over toegangsrechten voor de `cq:ClientLibraryFolder` knooppun
 
 ### Bibliotheken in /lib overschrijven {#overriding-libraries-in-lib}
 
-Clientbibliotheekmappen verderop `/apps` hebben voorrang op mappen met dezelfde naam die zich op dezelfde manier in `/libs`. Bijvoorbeeld: `/apps/cq/ui/widgets` heeft voorrang boven `/libs/cq/ui/widgets`. Wanneer deze bibliotheken tot dezelfde categorie behoren, wordt de onderstaande bibliotheek weergegeven `/apps` wordt gebruikt.
+Clientbibliotheekmappen verderop `/apps` hebben voorrang op mappen met dezelfde naam in `/libs`. Bijvoorbeeld: `/apps/cq/ui/widgets` heeft voorrang boven `/libs/cq/ui/widgets`. Wanneer deze bibliotheken tot dezelfde categorie behoren, wordt de onderstaande bibliotheek weergegeven `/apps` wordt gebruikt.
 
 ### Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -197,7 +197,7 @@ Vervolgens stelt u de `allowProxy` eigenschap op `foo` naar waar.
 
 ### Koppeling naar afhankelijke instellingen {#linking-to-dependencies}
 
-Wanneer de code in de map met clientbibliotheken verwijst naar andere bibliotheken, identificeert u de andere bibliotheken als afhankelijkheden. In het JSP `ui:includeClientLib` -tag die verwijst naar de map met de clientbibliotheek, bevat de HTML-code een koppeling naar het gegenereerde bibliotheekbestand en de afhankelijkheden.
+Wanneer de code in de map met clientbibliotheken verwijst naar andere bibliotheken, identificeert u de andere bibliotheken als afhankelijkheden. In het JSP `ui:includeClientLib` -tag die verwijst naar de clientbibliotheekmap, bevat de HTML-code een koppeling naar het gegenereerde bibliotheekbestand en de afhankelijkheden.
 
 De afhankelijkheden moeten een andere `cq:ClientLibraryFolder`. Om gebiedsdelen te identificeren, voeg een bezit aan uw toe `cq:ClientLibraryFolder` knooppunt met de volgende kenmerken:
 

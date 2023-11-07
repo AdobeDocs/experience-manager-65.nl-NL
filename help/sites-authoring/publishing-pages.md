@@ -2,9 +2,9 @@
 title: Inhoudspagina's publiceren
 description: Leer hoe u pagina's met inhoud publiceert in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1664'
+source-wordcount: '1660'
 ht-degree: 5%
 
 ---
@@ -60,13 +60,13 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
    * Als de pagina verwijzingen bevat die moeten worden gepubliceerd, worden deze weergegeven in het dialoogvenster **Publiceren** wizard, waarbij u:
 
-      * Geef aan welke elementen/tags/etc. u wilt samen met de pagina publiceren, dan gebruiken **Publiceren** om het proces te voltooien.
+      * Geef op welke elementen/tags/enzovoort u samen met de pagina wilt publiceren en gebruik vervolgens **Publiceren** om het proces te voltooien.
 
       * Gebruiken **Annuleren** om de handeling af te breken.
 
    ![chlimage_1](assets/chlimage_1.png)
 
-1. Selecteren **Publiceren** wordt de pagina gerepliceerd naar de publicatieomgeving. In de paginaeditor wordt een informatiebanner weergegeven die de publicatieactie bevestigt.
+1. Selecteren **Publiceren** wordt de pagina gerepliceerd naar de publicatieomgeving. In de paginaredacteur, wordt een informatiebanner getoond die de publicatieactie bevestigen.
 
    ![screen_shot_2018-03-21at152840](assets/screen_shot_2018-03-21at152840.png)
 
@@ -182,7 +182,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    >[!NOTE]
    >
-   >De **Workflows** Deze stap wordt weergegeven op basis van de rechten die de gebruiker heeft of niet. Zie de [vorige notitie op deze pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) met betrekking tot publicatiebevoegdheden en [Toegang tot werkstromen beheren](/help/sites-administering/workflows-managing.md) en [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) voor meer informatie.
+   >De **Workflows** deze stap wordt weergegeven op basis van de rechten die de gebruiker al dan niet heeft. Zie de [vorige notitie op deze pagina](/help/sites-authoring/publishing-pages.md#main-pars-note-0-ejsjqg-refd) met betrekking tot publicatiebevoegdheden en [Toegang tot werkstromen beheren](/help/sites-administering/workflows-managing.md) en [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md#main-pars-text-5-bvhbkh-refd) voor meer informatie.
 
    De bronnen worden gegroepeerd op basis van de workflows die worden geactiveerd en elke optie heeft de volgende opties:
 

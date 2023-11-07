@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 0aa2c22f-32bb-4e50-8328-63ed73c0f19e
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/microkernels-in-aem-6-0
 exl-id: 52437eb5-f9fb-4945-9950-5a1562fe878d
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '708'
+source-wordcount: '707'
 ht-degree: 0%
 
 ---
@@ -29,11 +29,11 @@ Dit artikel heeft betrekking op:
 
 Een van de belangrijkste wijzigingen in AEM 6 zijn de innovaties op het niveau van de opslagplaats.
 
-Momenteel zijn er twee knoopopslagimplementaties beschikbaar in AEM6: Taaropslag en MongoDB-opslag.
+Er zijn momenteel twee knoopopslagimplementaties beschikbaar in AEM6: Tar-opslag en MongoDB-opslag.
 
 ### Teeropslag {#tar-storage}
 
-#### Een nieuw geïnstalleerd AEM met Tar Storage uitvoeren {#running-a-freshly-installed-aem-instance-with-tar-storage}
+#### Een nieuw geïnstalleerd AEM-exemplaar uitvoeren met Tar Storage {#running-a-freshly-installed-aem-instance-with-tar-storage}
 
 >[!CAUTION]
 >
@@ -52,7 +52,7 @@ Standaard gebruikt AEM 6 de Tar-opslag om knooppunten en binaire bestanden op te
 
 1. Bewerk het bestand en stel de configuratieopties in. De volgende opties zijn beschikbaar voor de Opslag van de Knoop van het Segment, die de basis van AEM de opslagimplementatie van de Tar is:
 
-   * `repository.home`: Pad naar de thuislocatie van de gegevensopslagruimte waarin verschillende gegevensbestanden met betrekking tot de gegevensopslagruimte worden opgeslagen. Standaard worden segmentbestanden opgeslagen onder de map crx-quickstart/segmentstore.
+   * `repository.home`: Pad naar de thuislocatie van de gegevensopslagruimte waarin verschillende gegevensbestanden met betrekking tot de gegevensopslagruimte zijn opgeslagen. Standaard worden segmentbestanden opgeslagen onder de map crx-quickstart/segmentstore.
    * `tarmk.size`: Maximale grootte van een segment in MB. De standaardwaarde is 256 MB.
 
 1. Start AEM.
@@ -64,7 +64,7 @@ Standaard gebruikt AEM 6 de Tar-opslag om knooppunten en binaire bestanden op te
 AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de onderstaande procedure te volgen:
 
 1. Download de AEM 6 QuickStart jar en plaats deze in een nieuwe map.
-1. AEM uitpakken door de volgende opdracht uit te voeren:
+1. Pak AEM uit door het volgende bevel in werking te stellen:
 
    `java -jar cq-quickstart-6.jar -unpack`
 
@@ -76,11 +76,11 @@ AEM 6 kan worden geconfigureerd voor gebruik met MongoDB-opslag door de ondersta
 
 1. Bewerk het bestand en stel de configuratieopties in. De volgende opties zijn beschikbaar:
 
-   * `mongouri`: De [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) vereist om verbinding te maken met de Mongo-database. De standaardwaarde is `mongodb://localhost:27017`
+   * `mongouri`: De [MongoURI](https://docs.mongodb.org/manual/reference/connection-string/) vereist om verbinding te maken met Mongo Database. De standaardwaarde is `mongodb://localhost:27017`
    * `db`: Naam van de Mongo-database. Standaard gebruiken nieuwe AEM 6 installaties **aem-auteur** als de databasenaam.
    * `cache`: De cachegrootte in megabytes. Deze cachegrootte wordt verdeeld over verschillende caches die in DocumentNodeStore worden gebruikt. De standaardwaarde is 256.
-   * `changesSize`: Grootte in MB van afgekapte inzameling die in Mongo wordt gebruikt voor caching van de diff output. De standaardwaarde is 256.
-   * `customBlobStore`: Een Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is false.
+   * `changesSize`: Grootte in MB van de afgetopte inzameling die in Mongo voor caching van de afdiff output wordt gebruikt. De standaardwaarde is 256.
+   * `customBlobStore`: Booleaanse waarde die aangeeft dat een aangepaste gegevensopslag wordt gebruikt. De standaardwaarde is false.
 
 1. Maak een configuratiebestand met de PID van de gegevensopslagruimte die u wilt gebruiken en bewerk het bestand om de configuratieopties in te stellen. Zie voor meer informatie [Knooppuntenwinkels en gegevensopslag configureren](/help/sites-deploying/data-store-config.md).
 
@@ -122,7 +122,6 @@ Red Hat® Linux® gebruikt een algoritme voor geheugenbeheer met de naam Transpa
 >* Raadpleeg voor meer informatie over transparante, grote pagina&#39;s op Red Hat® Linux® [artikel](https://access.redhat.com/solutions/46111).
 * Voor Linux® tuning tips raadpleegt u deze [artikel](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/configuring/configuring-performance.html?lang=en).
 >
-
 
 ## Behoud van de opslagplaats {#maintaining-the-repository}
 

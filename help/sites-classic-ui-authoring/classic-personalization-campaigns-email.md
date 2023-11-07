@@ -1,19 +1,15 @@
 ---
 title: E-mailmarketing
-seo-title: E-mail Marketing
-description: E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
-seo-description: E-mail marketing (for example, newsletters) are an important part of any marketing campaign as you use them to push content to your leads. In AEM, you can create newsletters from existing AEM content as well as add new content, specific to the newsletters.
-uuid: 565943bf-fe37-4d5c-98c3-7c629c4ba264
+description: E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken op basis van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 69ca5acb-83f9-4e1b-9639-ec305779c931
 docset: aem65
 exl-id: a1d8b74e-67eb-4338-9e8e-fd693b1dbd48
-source-git-commit: 1ba34f95cf3ce3f136482075802d2e4372f28917
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1770'
+source-wordcount: '1764'
 ht-degree: 0%
 
 ---
@@ -23,10 +19,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe is niet van plan om het e-mailvolgen van open/grenzen (niet te leveren) verder te verbeteren die door AEM dienst SMTP worden verzonden.
->Aanbeveling is [Adobe Campaign en de integratie van AEM](/help/sites-administering/campaign.md).
+>De Adobe is niet van plan het e-mailvolgen van open/grenzen (niet leverbaar) verder te verbeteren die door AEM dienst SMTP worden verzonden.
+>Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
 
-E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
+E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken op basis van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
 
 Nadat u de nieuwsbrieven hebt gemaakt, kunt u deze direct of op een ander gepland tijdstip naar de specifieke groep gebruikers sturen (via een workflow). Bovendien kunnen gebruikers zich abonneren op nieuwsbrieven in de door hen gekozen indeling.
 
@@ -61,13 +57,13 @@ In dit document worden de basisbeginselen van het maken van nieuwsbrieven in AEM
 
 1. Klikken **Nieuw...**
 
-   U kunt de **Titel**, **Naam** en type ervaring die moet worden opgedaan; in dit geval, Newsletter.
+   U kunt de **Titel**, **Naam** en type ervaring die moet worden opgedaan; in dit geval Newsletter.
 
-   ![Het dialoogvenster Ervaring maken](assets/mcm_createnewsletter.png)
+   ![Dialoogvenster Ervaring maken](assets/mcm_createnewsletter.png)
 
 1. Klikken **Maken**.
 
-1. Er wordt onmiddellijk een nieuw dialoogvenster geopend. Hier kunt u eigenschappen voor de nieuwsbrief ingaan.
+1. Er wordt direct een nieuw dialoogvenster geopend. Hier kunt u eigenschappen voor de nieuwsbrief ingaan.
 
    De **Standaardlijst met ontvangers** is een verplicht veld omdat dit het aanraakpunt voor de nieuwsbrief vormt (zie [Werken met lijsten](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#workingwithlists) voor meer informatie over lijsten).
 
@@ -94,9 +90,9 @@ De tijd waarop de nieuwsbrief moet worden verzonden.
    * **Standaardlijst met ontvangers**
 Standaardlijst die de nieuwsbrief moet ontvangen.
 
-   Deze kunnen later worden bijgewerkt via de **Eigenschappen...** .
+   Deze kunnen later worden bijgewerkt via de **Eigenschappen...** in.
 
-1. Klikken **OK** om op te slaan.
+1. Klikken **OK** opslaan.
 
 ## Inhoud toevoegen aan nieuwsbrieven {#adding-content-to-newsletters}
 
@@ -113,7 +109,7 @@ U kunt inhoud, inclusief dynamische inhoud, op dezelfde manier aan uw nieuwsbrie
 
    ![Inhoud voor nieuwsbrieven bewerken](assets/mcm_newsletter_content.png)
 
-1. Als u variabelen wilt invoegen, selecteert u de variabele in de lijst en klikt u op **Invoegen**. Variabelen worden gevuld vanuit het profiel.
+1. Als u variabelen wilt invoegen, selecteert u de variabele in de lijst en klikt u **Invoegen**. Variabelen worden gevuld vanuit het profiel.
 
 ## Nieuwsbrieven aanpassen {#personalizing-newsletters}
 
@@ -173,9 +169,9 @@ Als u wilt schakelen tussen clients, klikt u op het bijbehorende pictogram om de
 Hoewel alleen geautoriseerde gebruikers een nieuwsbrief kunnen verzenden, dient u het volgende aan te passen:
 
 * De onderwerpregel, zodat gebruikers uw e-mail willen openen en er ook voor zorgen dat uw nieuwsbrief niet als spam wordt gemarkeerd.
-* Het adres Van, bijvoorbeeld noreply@geometrixx.com, zodat de gebruikers e-mail van een gespecificeerd adres ontvangen.
+* Het adres Van, bijvoorbeeld, `noreply@geometrixx.com`, zodat gebruikers een e-mail van een opgegeven adres ontvangen.
 
-De nieuwsbrief-instellingen aanpassen:
+Nieuwsbrieven aanpassen:
 
 1. Open vanuit de MCM de nieuwsbrief waarvoor u instellingen wilt aanpassen.
 
@@ -186,7 +182,7 @@ De nieuwsbrief-instellingen aanpassen:
    ![Instellingen voor nieuwsbrieven bewerken](assets/mcm_newsletter_settings.png)
 1. Voer de **Van** e-mailadres
 
-1. De **Onderwerp** van de e-mail, indien nodig.
+1. Wijzig de **Onderwerp** van het e-mailbericht, indien nodig.
 
 1. Selecteer een **Standaardlijst met ontvangers** in de vervolgkeuzelijst.
 
@@ -201,7 +197,7 @@ Hoewel het testen van de vlucht niet verplicht is, kunt u het best testen voorda
 Bij het testen van de vlucht kunt u het volgende doen:
 
 * Bekijk de nieuwsbrief in [alle beoogde cliënten](#testing-newsletters-in-different-e-mail-clients).
-* Controleer of de mailserver juist is ingesteld.
+* Controleer of de mailserver op de juiste wijze is ingesteld.
 * Bepaal of je e-mail wordt gemarkeerd als spam. (Zorg ervoor dat u uzelf opneemt in de lijst met ontvangers.)
 
 >[!NOTE]
@@ -216,14 +212,14 @@ Voor nieuwsbrieven voor vliegproeven:
 
    ![Instellingen om een nieuwsbrief te testen](assets/mcm_newsletter_testsettings.png)
 
-1. Voer het teste-mailadres in waarnaar u de nieuwsbrief wilt verzenden en klik op **Verzenden**. Als u het profiel wilt wijzigen, laadt u een ander profiel in de clientcontext. U doet dit door op CTRL+ALT+c te drukken en een profiel laden en laden te selecteren.
+1. Voer het testadres in waarnaar de nieuwsbrief moet worden verzonden en klik op **Verzenden**. Als u het profiel wilt wijzigen, laadt u een ander profiel in de clientcontext. U doet dit door op CTRL+ALT+c te drukken en een profiel laden en laden te selecteren.
 
 ## Nieuwsbrieven verzenden {#sending-newsletters}
 
 >[!NOTE]
 >
->Adobe is niet van plan om het e-mailvolgen van open/grenzen (niet te leveren) verder te verbeteren die door AEM dienst SMTP worden verzonden.
->Aanbeveling is [Adobe Campaign en de integratie van AEM](/help/sites-administering/campaign.md).
+>De Adobe is niet van plan het e-mailvolgen van open/grenzen (niet leverbaar) verder te verbeteren die door AEM dienst SMTP worden verzonden.
+>Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
 
 U kunt een nieuwsbrief vanuit de nieuwsbrief of de lijst verzenden. Beide procedures worden beschreven.
 
@@ -272,7 +268,7 @@ Een nieuwsbrief verzenden vanuit een lijst:
 
    >[!NOTE]
    >
-   >Voordat u een nieuwsbrief verzendt, moet u controleren of u het onderwerp van de nieuwsbrief en het oorspronkelijke e-mailadres hebt aangepast door [aanpassen, instellingen](#customizing-newsletter-settings). U kunt een nieuwsbrief niet testen als u het van de lijst verzendt; u [vliegproef](#flight-testing-newsletters) het als u het vanuit de nieuwsbrief verzendt.
+   >Voordat u een nieuwsbrief verzendt, moet u controleren of u het onderwerp van de nieuwsbrief en het oorspronkelijke e-mailadres hebt aangepast door [aanpassen, instellingen](#customizing-newsletter-settings). U kunt een nieuwsbrief niet testen als u deze vanuit de lijst verzendt; u kunt [vliegproef](#flight-testing-newsletters) het als u het vanuit de nieuwsbrief verzendt.
 
 1. Schakel het selectievakje in naast de lijst met leads waarnaar u een nieuwsbrief wilt verzenden.
 
@@ -286,7 +282,7 @@ Een nieuwsbrief verzenden vanuit een lijst:
 
 1. De installatie is voltooid. Klikken **Verzenden** om de geselecteerde nieuwsbrief naar de gespecificeerde lijst van lood te verzenden.
 
-   ![Bevestiging verzenden](assets/mcm_newslettersenddialog_confirmation.png)
+   ![Bevestigen](assets/mcm_newslettersenddialog_confirmation.png)
 
    Uw nieuwsbrief wordt verzonden naar de geselecteerde ontvangers.
 
@@ -296,10 +292,10 @@ In deze sectie wordt beschreven hoe u zich op een nieuwsbrief kunt abonneren.
 
 ### Abonneren op een nieuwsbrief {#subscribing-to-a-newsletter-1}
 
-Abonneren op een nieuwsbrief (de website van de Geometrixx als voorbeeld):
+Abonneren op een nieuwsbrief (de website van de Geometrixx als voorbeeld gebruiken):
 
-1. Klikken **Websites** en navigeer naar de Geometrixx **Werkbalk** en open.
+1. Klikken **Websites** en navigeer naar de Geometrixx **Werkbalk** en open het.
 
    ![Voorbeeld van abonnement](assets/chlimage_1-121.png)
 
-1. In de nieuwsbrief van de Geometrixx **Aanmelden** veld, voer uw e-mailadres in en klik op **Aanmelden**. U bent nu geabonneerd op de nieuwsbrief.
+1. In de nieuwsbrief Geometrixx **Aanmelden** veld, voer uw e-mailadres in en klik op **Aanmelden**. U bent nu geabonneerd op de nieuwsbrief.

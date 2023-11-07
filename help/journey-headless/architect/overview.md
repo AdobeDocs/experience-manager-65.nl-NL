@@ -2,10 +2,10 @@
 title: Reis van architect zonder hoofdinhoud AEM
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 exl-id: 44c58ece-225e-4361-929c-faa110fe2842
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '802'
-ht-degree: 0%
+source-wordcount: '798'
+ht-degree: 1%
 
 ---
 
@@ -39,7 +39,7 @@ Deze reis is ontworpen voor de persona van de Content Architect. Als Content Arc
 
 De reis bepaalt de vereisten, de stappen, en de benadering van een AEM Zwaardeloos project vanuit het perspectief van een Architect van de Inhoud. De reis zal extra persona&#39;s bepalen waarmee de inhoudarchitect voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is dat van de inhoudarchitect.
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+Informatie op deze reis kan nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
 
 ## De tocht van de Architect zonder inhoud {#the-journey}
 
@@ -62,7 +62,7 @@ U bent nu klaar om aan de slag te gaan met uw Adobe Headless reis. We raden u aa
 
 Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal te verstrekken dat u door complexe, onderling samenhangende processen en eigenschappen begeleidt. Een reis illustreert hoe de veelvoudige eigenschappen samenwerken om één enkele bedrijfsbehoefte te dienen.
 
-Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan kan echter met elkaar verwant zijn. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
+Als zodanig zijn reizen zodanig ontworpen dat ze op zichzelf staan. Verschillende kunnen echter aan elkaar zijn gerelateerd. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
 * [AEM doorsnedenloze vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
 * [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.

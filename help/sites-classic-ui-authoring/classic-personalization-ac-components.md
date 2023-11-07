@@ -1,17 +1,15 @@
 ---
 title: Adobe Campaign-componenten
 description: Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u met nieuwsbrieven en met formulieren werkt.
-uuid: cc9417c9-4cc1-4554-858e-2ecd682dc92f
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 5afe864d-5794-4ffa-99e7-a3233f982aff
 docset: aem65
 exl-id: eeff89c1-41b3-403d-b4bf-c79b09b24d4a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2531'
+source-wordcount: '2530'
 ht-degree: 0%
 
 ---
@@ -24,7 +22,7 @@ Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wan
 >
 >De AEM e-mailcomponenten zijn vervangen. Vanwege de aard van e-mail, waarin inhoud en stijl worden samengevoegd, worden de e-mailcomponenten die door AEM buiten de box worden geleverd van beperkte hergebruik voor klanten omdat aangepaste stijlen moeten worden geïmplementeerd in alle componenten die vereist zijn voor projecten.
 >
->E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Deze vervangen onderdelen mogen echter niet worden gebruikt voor projecten.
+>E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Gebruik deze vervangen componenten echter niet voor projecten.
 
 ## Adobe Campaign Newsletter-componenten {#adobe-campaign-newsletter-components}
 
@@ -174,7 +172,7 @@ Sleep een afbeelding vanuit de zoekfunctie voor inhoud of klik om naar een afbee
 * **Eigenschappen van afbeelding** (**Geavanceerde afbeeldingseigenschappen**) Hier kunt u het volgende opgeven:
 
    * **Titel**
-De titel van het blok; wordt weergegeven door de muis over het blok te bewegen.
+De titel van het blok; deze wordt weergegeven door mouseover.
 
    * **Alt-tekst**
 Alternatieve tekst die moet worden weergegeven als de afbeelding niet kan worden weergegeven.

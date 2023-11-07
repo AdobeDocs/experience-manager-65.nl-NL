@@ -2,9 +2,9 @@
 title: Ontwikkeling zonder hoofd voor AEM 6.5 sites
 description: Leer hoe AEM 6.5 krachtige mogelijkheden zonder kop, zoals Content Models, Content Fragments, en de GraphQL API samenwerken om u in staat te stellen uw ervaringen centraal te beheren en hen te dienen over kanalen.
 exl-id: b6598bcf-b2ce-403a-87cf-6895fec8a91b
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '520'
+source-wordcount: '518'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ AEM 6.5 is een flexibel instrument voor het model van de implementatie zonder ko
 
 ## Uw eerste stappen met AEM zonder kop {#first-steps}
 
-Er zijn een aantal bronnen beschikbaar waarmee u aan de slag kunt met AEM functies zonder kop. Ze zijn bedoeld voor verschillende gebruiksgevallen, maar bieden allemaal een stevig overzicht van AEM hoofdloze kenmerken.
+Er zijn verschillende bronnen beschikbaar waarmee u aan de slag kunt met AEM functies zonder kop. Ze zijn bedoeld voor verschillende gebruiksgevallen, maar bieden allemaal een stevig overzicht van AEM hoofdloze kenmerken.
 
 | Bron | Beschrijving | Type | Publiek | Oost. Tijd |
 |---|---|---|---|---|

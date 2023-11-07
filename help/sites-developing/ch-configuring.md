@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1793'
+source-wordcount: '1788'
 ht-degree: 0%
 
 ---
 
 # ContextHub configureren {#configuring-contexthub}
 
-ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Voor meer detail op ContextHub, gelieve te zien [ontwikkelaarsdocumentatie](/help/sites-developing/contexthub.md). ContextHub vervangt [Clientcontext](/help/sites-administering/client-context.md) in de aanraakinterface.
+ContextHub is een kader voor het opslaan van, het manipuleren van, en het voorstellen van contextgegevens. Voor meer detail op ContextHub, zie [ontwikkelaarsdocumentatie](/help/sites-developing/contexthub.md). ContextHub vervangt [Clientcontext](/help/sites-administering/client-context.md) in de aanraakinterface.
 
 Vorm [ContextHub](/help/sites-developing/contexthub.md) toolbar om te controleren of het op de wijze van de Voorproef verschijnt, om opslag te creëren ContextHub, en modules toe te voegen UI gebruikend touch-Geoptimaliseerde UI.
 
@@ -103,7 +103,7 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 | [contexthub.browserinfo](/help/sites-developing/ch-samplemodules.md#contexthub-browserinfo-ui-module-type) | Hiermee wordt informatie over de browser weergegeven | surferinfo |
 | [contexthub.datetime](/help/sites-developing/ch-samplemodules.md#contexthub-datetime-ui-module-type) | Datum- en tijdgegevens weergeven | datetime |
 | [contexthub.device](/help/sites-developing/ch-samplemodules.md#contexthub-device-ui-module-type) | Het clientapparaat weergeven | emulators |
-| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Hiermee geeft u de breedte en lengte van de client en de locatie op een kaart weer. Hiermee kunt u de locatie wijzigen. | geolocatie |
+| [contexthub.location](/help/sites-developing/ch-samplemodules.md#contexthub-location-ui-module-type) | Geeft de breedte en lengte van de client en de locatie op een kaart weer. Hiermee kunt u de locatie wijzigen. | geolocatie |
 | [contexthub.screen-orientation](/help/sites-developing/ch-samplemodules.md#contexthub-screen-orientation-ui-module-type) | Geeft de schermstand van het apparaat (liggend of staand) weer | emulators |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Statistieken over paginatags weergeven | tagcloud |
 | [graniet.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Hiermee wordt de profielinformatie voor de huidige gebruiker weergegeven, inclusief authorizableID, displayName en familyName. U kunt de waarde van displayName en familyName wijzigen. | profiel |
@@ -145,7 +145,7 @@ AEM verstrekt de volgende kandidaten van de steekproefopslag waarop u een opslag
 | [aem.resolvedsegments](/help/sites-developing/ch-samplestores.md#aem-resolvedsegments-sample-store-candidate) | Hiermee slaat u de momenteel opgeloste segmenten op. Luistert aan de dienst ContextHub SegmentManager om de opslag automatisch bij te werken |
 | [contexthub.geolocation](/help/sites-developing/ch-samplestores.md#contexthub-geolocation-sample-store-candidate) | Hiermee slaat u de breedte en lengte van de browserlocatie op. |
 | [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) | Hiermee worden de huidige datum, tijd en seizoen voor de browserlocatie opgeslagen |
-| [graniet.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Definieert eigenschappen en mogelijkheden voor een aantal apparaten en detecteert het huidige clientapparaat |
+| [graniet.emulators](/help/sites-developing/ch-samplestores.md#granite-emulators-sample-store-candidate) | Definieert eigenschappen en mogelijkheden voor verschillende apparaten en detecteert het huidige clientapparaat |
 | [contexthub.generic-jsonp](/help/sites-developing/ch-samplestores.md#contexthub-generic-jsonp-sample-store-candidate) | Wint en slaat gegevens van de dienst JSONP op |
 | [graniet.profile](/help/sites-developing/ch-samplestores.md#granite-profile-sample-store-candidate) | Hiermee worden profielgegevens voor de huidige gebruiker opgeslagen |
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Hiermee wordt informatie over de client opgeslagen, zoals apparaatinformatie, browsertype en vensterrichting |

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 role: Developer
 exl-id: cff65f74-ba95-438e-88a4-5ec7d22aafba
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1405'
+source-wordcount: '1404'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-**Informatie over de XMP Utilities Service**
+**Informatie over de service XMP**
 
-PDF-documenten bevatten metagegevens. Dit zijn gegevens over het document die worden onderscheiden van de inhoud van het document, zoals tekst en afbeeldingen. Adobe Extensible Metadata Platform (XMP) is een standaard voor de verwerking van documentmetagegevens.
+PDF-documenten bevatten metagegevens. Dit zijn gegevens over het document die worden onderscheiden van de inhoud van het document, zoals tekst en afbeeldingen. Adobe Extensible Metadata Platform (XMP) is een standaard voor de verwerking van metagegevens van documenten.
 
 Met de XMP Utilities kunt u XMP metagegevens uit PDF-documenten ophalen en opslaan, en XMP metagegevens importeren in PDF-documenten.
 
@@ -39,7 +39,7 @@ U kunt deze taken uitvoeren met behulp van de service XMP Hulpprogramma&#39;s:
 
 ## Metagegevens importeren in PDF-documenten {#importing-metadata-into-pdf-documents}
 
-Met de XMP Utilities Java en de webservice-API&#39;s kunt u XMP metagegevens programmatisch importeren in een PDF-document. Metagegevens bevatten informatie over een PDF-document, zoals de auteur van het document en trefwoorden die betrekking hebben op het document. Metagegevens kunnen worden gevonden in het dialoogvenster Documenteigenschappen van het document, zoals in de volgende afbeelding wordt getoond.
+Met de XMP Utilities Java en de webservice-API&#39;s kunt u XMP metagegevens programmatisch importeren in een PDF-document. Metagegevens bevatten informatie over een PDF-document, zoals de auteur van het document en trefwoorden die betrekking hebben op het document. Metagegevens kunnen worden weergegeven in het dialoogvenster Documenteigenschappen van het document, zoals in de volgende afbeelding wordt getoond.
 
 ![ww_ww_metadatadialog](assets/ww_ww_metadatadialog.png)
 
@@ -162,7 +162,7 @@ Importeer XMP metagegevens met de XMP Utilities-API (Java):
 
 1. Een XMPUtilityService-client maken
 
-   Een `XMPUtilityServiceClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Een `XMPUtilityServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De importbewerking voor XMP metagegevens aanroepen
 
@@ -171,7 +171,7 @@ Importeer XMP metagegevens met de XMP Utilities-API (Java):
    Als u het `importMetadata` , geeft u de volgende waarden door:
 
    * A `com.adobe.idp.Document` object dat het PDF-bestand vertegenwoordigt.
-   * An `XMPUtilityMetadata` -object dat de metagegevens bevat die moeten worden geïmporteerd.
+   * An `XMPUtilityMetadata` -object dat de te importeren metagegevens bevat.
 
    Als u het `importXMP` , geeft u de volgende waarden door:
 
@@ -208,7 +208,7 @@ Voer de volgende taken uit om XMP metagegevens via de API voor XMP hulpprogramma
    Als u het `importMetadata` , geeft u de volgende waarden door:
 
    * A `BLOB` object dat het PDF-bestand vertegenwoordigt.
-   * An `XMPUtilityMetadata` -object dat de metagegevens bevat die moeten worden geïmporteerd.
+   * An `XMPUtilityMetadata` -object dat de te importeren metagegevens bevat.
 
    Als u het `importXMP` , geeft u de volgende waarden door:
 
@@ -279,7 +279,7 @@ Exporteer XMP metagegevens met behulp van de XMP Utilities-API (Java):
 
 1. Een XMPUtilityService-client maken
 
-   Een `XMPUtilityServiceClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Een `XMPUtilityServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. De importbewerking voor XMP metagegevens aanroepen
 

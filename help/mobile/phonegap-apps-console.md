@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2692'
+source-wordcount: '2688'
 ht-degree: 0%
 
 ---
@@ -169,16 +169,16 @@ Voer de volgende procedure uit op de instantie waar u het cachegeheugen wilt bij
 
 ### App-sjablonen gebruiken {#using-app-templates}
 
-Deze functie is beschikbaar in Apps 6.1 Feature Pack 2 en biedt een eenvoudige manier om bestaande app-sjablonen te gebruiken voor het maken van nieuwe apps binnen AEM.
+Deze functie is beschikbaar in Apps 6.1 Feature Pack 2 en biedt een eenvoudige manier om bestaande toepassingssjablonen te gebruiken voor het maken van nieuwe apps binnen AEM.
 
 Wat is een toepassingssjabloon? Beschouw het als een verzameling paginasjablonen en componenten die een basislijn of basis van een app vormen.
-Wanneer u een nieuwe app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
+Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
 
 U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingssjabloon) hebben om van deze functie gebruik te kunnen maken.
 
 Het meest recente AEM Apps 6.1 voorbeeldenpakket bevat een bijgewerkte versie van de Geometrixx-app met een toepassingssjabloon. U kunt ook de StarterKit installeren die ook een sjabloon biedt.
 
-Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
+Stappen voor het maken van een app op basis van een toepassingssjabloon:
 
 1. Zorg ervoor dat u het nieuwste AEM Apps 6.1 functiepakket en referentiemonsteringspakketten hebt geïnstalleerd
 1. Klik Apps van de linkerspoorstaaf.

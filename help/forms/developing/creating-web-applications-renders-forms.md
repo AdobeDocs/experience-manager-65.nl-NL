@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 role: Developer
 exl-id: 85e00003-8c8b-463a-b728-66af174be295
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1865'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Als de gebruiker Canadese gegevens selecteert, bevat het geretourneerde formulie
 
 **Voorbeeldbestanden**
 
-In deze sectie worden voorbeeldbestanden gebruikt die zich op de volgende locatie bevinden:
+In deze sectie worden voorbeeldbestanden gebruikt die zich op de volgende locatie kunnen bevinden:
 
 &lt;*Installatiemap van Forms Designer*>/Samples/Forms/Purchase Order/Form Fragments
 
@@ -71,7 +71,7 @@ De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaa
 
 Voer de volgende stappen uit om een webtoepassing te maken die formulieren weergeeft op basis van fragmenten:
 
-1. Maak een nieuw webproject.
+1. Maak een webproject.
 1. Maak Java-toepassingslogica die de Java-servlet vertegenwoordigt.
 1. Maak de webpagina voor de webtoepassing.
 1. Verpak de Webtoepassing aan een dossier van WAR.
@@ -84,7 +84,7 @@ Voer de volgende stappen uit om een webtoepassing te maken die formulieren weerg
 
 ### Een webproject maken {#creating-a-web-project}
 
-De eerste stap voor het maken van een webtoepassing die een Java-servlet bevat die de Forms-service kan aanroepen, is het maken van een nieuw webproject. De Java-IDE waarop dit document is gebaseerd, is Eclipse 3.3. Gebruikend IDE van de Verduistering, creeer een Webproject en voeg de vereiste JAR dossiers aan uw project toe. Voeg ten slotte een HTML-pagina met de naam *index.html* en een Java-servlet voor uw project.
+De eerste stap voor het maken van een webtoepassing die een Java-servlet bevat die de Forms-service kan aanroepen, is het maken van een webproject. De Java-IDE waarop dit document is gebaseerd, is Eclipse 3.3. Gebruikend IDE van de Verduistering, creeer een Webproject en voeg de vereiste JAR dossiers aan uw project toe. Voeg ten slotte een HTML-pagina met de naam *index.html* en een Java-servlet voor uw project.
 
 In de volgende lijst worden de JAR-bestanden weergegeven die u aan uw webproject moet toevoegen:
 
@@ -145,12 +145,12 @@ Normaal gesproken plaatst u geen clientcode in een Java-servlet `doGet` of `doPo
 Als u een formulier wilt genereren op basis van fragmenten met de API van de Forms-service, voert u de volgende taken uit:
 
 1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Voor informatie over de locatie van deze bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
-1. Hiermee haalt u de waarde op van het keuzerondje dat vanuit het HTML-formulier wordt verzonden en geeft u aan of Amerikaanse of Canadese gegevens moeten worden gebruikt. Als American wordt verzonden, maakt u een `com.adobe.idp.Document` dat gegevens opslaat die zich in de *Purchase Order US.xml*. En als Canadees, creeer dan `com.adobe.idp.Document` dat gegevens opslaat die zich in de *Purchase Order Canada.xml* bestand.
+1. Hiermee haalt u de waarde op van het keuzerondje dat vanuit het HTML-formulier wordt verzonden en geeft u aan of Amerikaanse of Canadese gegevens moeten worden gebruikt. Als American wordt verzonden, maakt u een `com.adobe.idp.Document` die gegevens in het *Purchase Order US.xml*. En als Canadees, creeer dan `com.adobe.idp.Document` die gegevens in het *Purchase Order Canada.xml* bestand.
 1. Een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 1. Een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
 1. De `URLSpec` object `setApplicationWebRoot` en geeft een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-1. De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de AEM Forms-opslagplaats wilt verwijzen, geeft u `repository://`.
+1. De `URLSpec` object `setContentRootURI` methode en geef een tekenreekswaarde door die de URI-waarde van de inhoudsbasis opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de basisinhoud bevinden. Als niet, werpt de dienst van Forms een uitzondering. Als u naar de AEM Forms-opslagplaats wilt verwijzen, geeft u `repository://`.
 1. De `URLSpec` object `setTargetURL` en geeft een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
 1. De `FormsServiceClient` object `renderPDFForm` en geeft de volgende waarden door:
 
@@ -184,7 +184,7 @@ In het volgende codevoorbeeld ziet u het Java-servlet dat de Forms-service activ
      * that contains this quick start is exported as a WAR file which
      * is deployed to the J2EE application server)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs
      *
      * For complete details about the location of these JAR files,

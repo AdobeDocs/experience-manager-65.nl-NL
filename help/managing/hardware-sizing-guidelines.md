@@ -7,9 +7,9 @@ topic-tags: managing
 content-type: reference
 docset: aem65
 exl-id: 5837ef4f-d4e0-49d7-a671-87d5547e0d98
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2795'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 
 Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM project op te stellen. Het rangschikken van ramingen hangt van de architectuur van het project, de ingewikkeldheid van de oplossing, het verwachte verkeer, en de projectvereisten af. Deze gids helpt u om de hardwarebehoeften voor een specifieke oplossing te bepalen, of een hogere en lagere schatting voor de hardwarevereisten te vinden.
 
-De belangrijkste factoren die in aanmerking moeten worden genomen zijn (in deze volgorde):
+De volgende basisfactoren moeten in aanmerking worden genomen:
 
 * **Netwerksnelheid**
 
@@ -48,14 +48,14 @@ De belangrijkste factoren die in aanmerking moeten worden genomen zijn (in deze 
 
 ## Architectuur {#architecture}
 
-Een standaardinstelling voor AEM bestaat uit een auteur en een publicatieomgeving. Deze omgevingen hebben verschillende vereisten met betrekking tot de onderliggende hardwaregrootte en systeemconfiguratie. De gedetailleerde overwegingen voor beide milieu&#39;s worden beschreven in [auteursomgeving](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) en [publicatieomgeving](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) secties.
+Een standaardinstelling voor AEM bestaat uit een auteur en een publicatieomgeving. Deze omgevingen hebben verschillende vereisten met betrekking tot de onderliggende hardwaregrootte en systeemconfiguratie. Gedetailleerde overwegingen voor beide omgevingen worden beschreven in de [auteursomgeving](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) en [publicatieomgeving](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) secties.
 
 In een typisch projectopstelling, hebt u verscheidene milieu&#39;s waarop aan de fasen van het werkgebiedproject:
 
 * **Ontwikkelingsomgeving**
 Nieuwe functies ontwikkelen of belangrijke wijzigingen aanbrengen. De beste praktijken moeten werken gebruikend een ontwikkelomgeving per ontwikkelaar (lokale installaties op hun persoonlijke systemen).
 
-* **Testomgeving auteur**
+* **Testomgeving van auteur**
 Wijzigingen verifiëren. Het aantal testomgevingen kan variëren afhankelijk van de projectvereisten (bijvoorbeeld, apart voor QA, integratietests of gebruikeracceptatietests).
 
 * **Testomgeving publiceren**
@@ -67,25 +67,25 @@ Voor auteurs om inhoud te bewerken.
 * **Productieomgeving publiceren**
 Gepubliceerde inhoud bedienen.
 
-Bovendien kunnen de omgevingen variëren, variërend van een systeem met één server en een toepassingsserver tot een zeer geschaalde set van multi-server, multi-CPU geclusterde instanties. Adobe raadt u aan voor elk productiesysteem een aparte computer te gebruiken en geen andere toepassingen op deze computers uit te voeren.
+Bovendien kunnen de omgevingen variëren, variërend van een systeem met één server en een toepassingsserver tot een zeer geschaalde set van multi-server, multi-CPU geclusterde instanties. De Adobe adviseert dat u een afzonderlijke computer voor elk productiesysteem gebruikt en dat u geen andere toepassingen op deze computers in werking stelt.
 
 ## Algemene overwegingen voor hardwaregrootte {#generic-hardware-sizing-considerations}
 
-In de volgende secties wordt uitgelegd hoe u de hardwarevereisten kunt berekenen, rekening houdend met verschillende overwegingen. Voor grote systemen, stelt Adobe voor dat u een eenvoudige reeks interne benchmarktests op een verwijzingsconfiguratie uitvoert.
+In de volgende secties wordt uitgelegd hoe u de hardwarevereisten kunt berekenen, rekening houdend met verschillende overwegingen. Voor grote systemen, stelt de Adobe voor dat u een eenvoudige reeks interne benchmarktests op een verwijzingsconfiguratie uitvoert.
 
 Optimalisering van prestaties is een fundamentele taak die moet worden uitgevoerd voordat benchmarking voor een specifiek project kan worden uitgevoerd. Pas het advies toe dat in het dialoogvenster [Documentatie over optimalisatie van prestaties](/help/sites-deploying/configuring-performance.md) voordat u benchmarktests uitvoert en de resultaten ervan gebruikt voor berekeningen voor het aanpassen van de hardwaregrootte.
 
 De vereisten voor het aanpassen van de hardwaregrootte voor gevallen van geavanceerd gebruik moeten gebaseerd zijn op een gedetailleerde prestatiebeoordeling van het project. Kenmerken van gevallen van geavanceerd gebruik waarvoor uitzonderlijke hardwarebronnen nodig zijn, zijn onder meer combinaties van:
 
-* hoge inhoudslading / doorvoer
+* hoge lading/doorvoer van inhoud
 * uitgebreid gebruik van aangepaste code, aangepaste workflows of softwarebibliotheken van derden
 * integratie met niet-ondersteunde externe systemen
 
 ### Schijfruimte/vaste schijf {#disk-space-hard-drive}
 
-De vereiste schijfruimte hangt sterk af van zowel het volume als het type van uw webtoepassing. De berekeningen moeten rekening houden met het volgende:
+De vereiste schijfruimte hangt sterk af van zowel het volume als het type van uw webtoepassing. In de berekeningen moet rekening worden gehouden met het volgende:
 
-* de hoeveelheid en grootte van pagina&#39;s, elementen en andere opslagplaatsen-opgeslagen entiteiten zoals werkstromen, profielen, enz.
+* de hoeveelheid en grootte van pagina&#39;s, elementen en andere opslagplaatsen-opgeslagen entiteiten zoals werkschema&#39;s, profielen, etc.
 * de geschatte frequentie van inhoudwijzigingen en dus het maken van contentversies
 * het volume van DAM-activa die worden gegenereerd
 * de algemene groei van de inhoud in de loop der tijd
@@ -115,11 +115,11 @@ Terwijl alle systemen actief zijn, zijn er betere computerprestaties beschikbaar
 De schatting van het aantal clusterknooppunten dat nodig is, is gebaseerd op de basisvereisten en de specifieke gebruiksgevallen van het specifieke webproject:
 
 * Vanuit het perspectief van mislukken-veiligheid, is het noodzakelijk om, voor alle milieu&#39;s te bepalen hoe kritieke mislukking en de tijd van de mislukkingscompensatie is gebaseerd op hoe lang het voor een clusterknoop vergt om terug te krijgen.
-* Voor het aspect schaalbaarheid is het aantal schrijfbewerkingen in wezen de belangrijkste factor; zie [Auteurs die parallel werken](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) voor de auteursomgeving en [Sociale samenwerking](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) voor de publicatieomgeving. Er kan een taakverdeling worden vastgesteld voor bewerkingen die alleen toegang hebben tot het systeem om leesbewerkingen te verwerken; zie [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) voor meer informatie.
+* Voor het aspect van scalability, is het aantal schrijfverrichtingen fundamenteel de belangrijkste factor; zie [Auteurs die parallel werken](/help/managing/hardware-sizing-guidelines.md#authors-working-in-parallel) voor de auteursomgeving en [Sociale samenwerking](/help/managing/hardware-sizing-guidelines.md#socialcollaborationspecificconsiderations) voor de publicatieomgeving. Er kan een taakverdeling worden ingesteld voor bewerkingen die alleen toegang hebben tot het systeem om leesbewerkingen te verwerken; zie [Dispatcher](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html?lang=en) voor meer informatie.
 
 ## Omgevingsspecifieke berekeningen van auteur {#author-environment-specific-calculations}
 
-Voor benchmarkingdoeleinden heeft Adobe enkele benchmarktests ontwikkeld voor op zichzelf staande auteur-instanties.
+Voor benchmarkingdoeleinden heeft de Adobe enkele benchmarktests ontwikkeld voor op zichzelf staande auteur-instanties.
 
 * **Benchmarktest 1**
 Bereken de maximale doorvoer van een laadprofiel waarbij gebruikers een eenvoudige bewerking voor het maken van een pagina uitvoeren boven op een basisbelasting van 300 bestaande pagina&#39;s die allemaal van gelijke aard zijn. De betrokken stappen waren het aanmelden bij de site, het maken van een pagina met een SWF en een afbeelding/tekst, het toevoegen van een tagcloud en het vervolgens activeren van de pagina.
@@ -145,9 +145,9 @@ In de auteursomgeving is de caching efficiency typisch veel lager, omdat de vera
 
 ### Auteurs die parallel werken {#authors-working-in-parallel}
 
-In de auteursomgeving zijn het aantal auteurs die parallel werken en de lading hun interactie aan het systeem toevoegen de belangrijkste beperkende factoren. Daarom adviseert Adobe dat u uw systeem schrapt dat op de gedeelde productie van gegevens wordt gebaseerd.
+In de auteursomgeving zijn het aantal auteurs die parallel werken en de lading hun interactie aan het systeem toevoegen de belangrijkste beperkende factoren. Daarom adviseert de Adobe dat u uw systeem schrapt dat op de gedeelde productie van gegevens wordt gebaseerd.
 
-Voor dergelijke scenario&#39;s, voert Adobe benchmarktests op een twee knoop uit delen-niets cluster van auteursinstanties.
+Voor dergelijke scenario&#39;s, de tests van de looppas van de Adobe benchmarktests op een twee knoop delen-niets cluster van auteursinstanties.
 
 * **Benchmarktest 1a**
 Met een actief-actief delen-niets cluster van 2 auteursinstanties, bereken de maximumproductie met een ladingsprofiel waar de gebruikers eenvoudig uitvoeren creeer paginamotie bovenop een basislading van 300 bestaande pagina&#39;s, allen van gelijkaardige aard.
@@ -179,9 +179,9 @@ Zie ook [Parallelisatie](/help/managing/hardware-sizing-guidelines.md#paralleliz
 
 ### Hardware Recommendations {#hardware-recommendations}
 
-Gewoonlijk kunt u voor uw auteursomgeving dezelfde hardware gebruiken als voor uw het publiceren milieu wordt geadviseerd. Websiteverkeer is doorgaans veel lager op ontwerpsystemen, maar de efficiëntie van de cache is ook lager. De fundamentele factor hierbij is echter het aantal auteurs dat parallel werkt, en het soort acties dat in het systeem wordt ondernomen. In het algemeen is AEM clustering (van de auteursomgeving) het meest effectief bij het schalen van leesbewerkingen; met andere woorden , een AEM cluster kan goed worden geschaald met auteurs die elementaire bewerkingen uitvoeren .
+Gewoonlijk kunt u voor uw auteursomgeving dezelfde hardware gebruiken als voor uw het publiceren milieu wordt geadviseerd. Websiteverkeer is doorgaans veel lager op ontwerpsystemen, maar de efficiëntie van de cache is ook lager. De fundamentele factor hierbij is echter het aantal auteurs dat parallel werkt, en het soort acties dat in het systeem wordt ondernomen. Over het algemeen is AEM clustering (van de auteursomgeving) het meest effectief bij het schalen van leesbewerkingen; met andere woorden, een AEM cluster schaalt goed met auteurs die elementaire bewerkingsbewerkingen uitvoeren.
 
-De benchmarktests bij Adobe werden uitgevoerd met het Red Hat® 5.5-besturingssysteem, uitgevoerd op een Hewlett-Packard ProLiant DL380 G5-hardwareplatform met de volgende configuratie:
+De benchmarktests bij Adobe werden uitgevoerd met het Red Hat® 5.5-besturingssysteem, dat werd uitgevoerd op een Hewlett-Packard ProLiant DL380 G5-hardwareplatform met de volgende configuratie:
 
 * Twee Quad Core Intel Xeon® X5450 CPU&#39;s met 3,00 GHz
 * 8 GB RAM
@@ -209,7 +209,7 @@ Efficiëntie van de cache is van cruciaal belang voor de snelheid van de website
 
 >[!CAUTION]
 >
->Disclaimer: De nummers zijn gebaseerd op een standaardhardwareconfiguratie en kunnen variëren afhankelijk van de gebruikte hardware.
+>Disclaimer: de getallen zijn gebaseerd op een standaardhardwareconfiguratie en kunnen variëren afhankelijk van de specifieke gebruikte hardware.
 
 De cacheverhouding is het percentage pagina&#39;s dat de Dispatcher kan retourneren zonder dat AEM toegankelijk is. 100% geeft aan dat de Dispatcher alle verzoeken beantwoordt, 0% betekent dat elke pagina AEM wordt berekend.
 
@@ -241,14 +241,14 @@ De variabelen in de vergelijking zijn als volgt:
     <ul>
      <li>1 - een volledig anonieme, inhoudgeoriënteerde site</li>
      <li>1.1 - een volledig anonieme, inhoudgeoriënteerde site met klantgerichte/doelpersonalisatie</li>
-     <li>1.5 - een op inhoud georiënteerde plaats met zowel anonieme als het programma geopende secties, cliënt-kant/de verpersoonlijking van het Doel</li>
+     <li>1.5 - een op inhoud georiënteerde plaats met zowel anonieme als het programma geopende secties, cliënt-kant/het personalisatie van het Doel</li>
      <li>1.7 - voor een content-oriented plaats met zowel anonieme als het programma geopende secties, cliënt-kant/Doel verpersoonlijking en wat gebruiker-geproduceerde inhoud</li>
      <li>2 - waar voor de gehele site aanmeldingsgegevens nodig zijn, met intensief gebruik van door de gebruiker gegenereerde inhoud en verschillende personalisatietechnieken</li>
     </ul> </td>
   </tr>
   <tr>
    <td>cacheRatio</td>
-   <td>Het percentage pagina's dat afkomstig is uit de Dispatcher-cache. Gebruik 1 als alle pagina's uit het cachegeheugen komen of 0 als elke pagina door AEM wordt berekend.</td>
+   <td>Het percentage pagina's dat afkomstig is uit de Dispatcher-cache. Gebruik 1 als alle pagina's uit het cachegeheugen komen, of 0 als elke pagina door AEM wordt berekend.</td>
   </tr>
   <tr>
    <td>templateComplexiteit</td>
@@ -256,7 +256,7 @@ De variabelen in de vergelijking zijn als volgt:
   </tr>
   <tr>
    <td>activering</td>
-   <td>Het aantal gemiddelde activeringen (replicatie van pagina's met gemiddelde grootte en middelen van de auteur naar de publicatielaag) per uur gedeeld door x, waarbij x het aantal activeringen is dat op een systeem zonder neveneffecten op de prestaties wordt uitgevoerd voor andere taken die door het systeem worden verwerkt. U kunt ook een pessimistische beginwaarde vooraf definiëren, bijvoorbeeld x = 100.<br /> </td>
+   <td>Het aantal gemiddelde activeringen (replicatie van pagina's met gemiddelde grootte en middelen van de auteur naar de publicatielaag) per uur gedeeld door x, waarbij x het aantal activeringen is dat op een systeem zonder neveneffecten op de prestaties wordt uitgevoerd voor andere taken die door het systeem worden verwerkt. U kunt een pessimistische aanvankelijke waarde zoals x = 100 vooraf bepalen.<br /> </td>
   </tr>
  </tbody>
 </table>
@@ -281,9 +281,9 @@ Als u een complexere website hebt, hebt u ook krachtigere webservers nodig, zoda
 
 ## Aanvullende gebruiksspecifieke berekeningen {#additional-use-case-specific-calculations}
 
-Naast de berekening voor een standaardwebtoepassing moet u wellicht rekening houden met specifieke factoren voor de volgende gebruiksgevallen. De berekende waarden worden toegevoegd aan de standaardberekening.
+Naast de berekening voor een standaardwebtoepassing moet u wellicht rekening houden met specifieke factoren voor de volgende gebruiksgevallen. De berekende waarden moeten aan de standaardberekening worden toegevoegd.
 
-### Specifieke overwegingen voor activa {#assets-specific-considerations}
+### Specifieke overwegingen voor de activa {#assets-specific-considerations}
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 

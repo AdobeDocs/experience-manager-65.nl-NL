@@ -2,9 +2,9 @@
 title: AEM Forms Patch Installation Instructions for AEM Forms
 description: AEM Forms service pack installatieinstructies voor OSGi- en JEE-omgeving
 exl-id: ae4c7e9d-9af8-4288-a6f9-e3bcbe7d153d
-source-git-commit: 692193326e0623036ee3834985cfa9dc8d7076d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1709'
+source-wordcount: '1708'
 ht-degree: 0%
 
 ---

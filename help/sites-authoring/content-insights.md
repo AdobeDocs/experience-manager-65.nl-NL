@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 exl-id: 187f3cde-a0db-4c02-9e8b-08272987a67d
-source-git-commit: 245d501d4124d9aaa3f2b12bdb06a5bdd1661e8c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
@@ -48,7 +48,7 @@ De rapporten tonen gegevens voor een periode die u controleert. Wanneer u de rap
 >
 >De tijdlijn voor het dashboard Inzicht van inhoud staat in `GMT`.
 
-U kunt ook de korreligheid van de gerapporteerde gegevens opgeven, bijvoorbeeld gegevens van dag tot week, maandelijks of jaarlijks.
+U kunt ook de granulariteit van de gerapporteerde gegevens opgeven. U kunt bijvoorbeeld dagelijkse, wekelijkse, maandelijkse of jaarlijkse gegevens zien.
 
 Zie [Wijziging van de verslagperiode](/help/sites-authoring/ci-analyze.md#changing-the-reporting-period).
 

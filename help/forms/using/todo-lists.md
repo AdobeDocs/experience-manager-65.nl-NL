@@ -11,9 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4032'
+source-wordcount: '4031'
 ht-degree: 0%
 
 ---
@@ -374,7 +374,7 @@ Als u toegang krijgt tot de lijst Aan-doe van een andere gebruiker, kunt u geen 
 
 Als u van plan bent om uit het bureau te zijn, kunt u specificeren wat aan taken gebeurt die aan u voor die periode worden toegewezen.
 
-U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als de instellingen buiten het kantoor van toepassing zijn. Als u in een verschillende tijdzone van de server wordt gevestigd, is de gebruikte tijdzone die van de server.
+U kunt een begindatum en -tijd en een einddatum en -tijd opgeven die van kracht moeten worden als de instellingen buiten het kantoor van toepassing zijn. Als u zich in een verschillende tijdzone van de server bevindt, wordt de tijdzone gebruikt die van de server.
 
 U kunt een standaardpersoon instellen waarnaar al uw taken worden verzonden. U kunt ook uitzonderingen voor taken van specifieke processen specificeren die naar een verschillende gebruiker moeten worden verzonden of in uw te doen lijst blijven tot u terugkeert. Als de aangewezen persoon ook uit het bureau is, gaat de taak naar de gebruiker die zij hebben aangewezen. Als de taak niet aan een gebruiker kan worden toegewezen die niet uit het bureau is, blijft de taak in uw te doen lijst.
 

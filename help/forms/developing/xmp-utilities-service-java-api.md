@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 1b229ddf-9350-40b6-8056-dcbe0c5afd5b
 role: Developer
 exl-id: 699a7309-a976-480e-886f-2e466a477348
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '232'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de server van Forms als u een ander werkend systeem, zoals UNIX gebruikt, vervangt vensters-specifieke wegen door wegen die door het toepasselijke werkende systeem worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Snel begint met programmeren met AEM formulieren zijn gebaseerd op de Forms-server als u een ander besturingssysteem gebruikt, zoals UNIX, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): XMP metagegevens exporteren met de Java API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
@@ -62,7 +62,7 @@ In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -71,7 +71,7 @@ In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -139,7 +139,7 @@ In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd 
 
 ## Snel starten (SOAP-modus): XMP metagegevens importeren met de Java API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het XML-document dat de metagegevens bevat die in het PDF-document moeten worden geïmporteerd, is gebaseerd op een XML-bestand met de naam *LoanMetaData.xml*. Voor informatie over dit XML-bestand raadpleegt u [Metagegevens importeren in PDF-documenten](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
+In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het XML-document dat de metagegevens bevat die in het PDF-document moeten worden geïmporteerd, is gebaseerd op een XML-bestand met de naam *LoanMetaData.xml*. Zie voor informatie over dit XML-bestand [Metagegevens importeren in PDF-documenten](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents).
 
 ```java
  /*
@@ -167,7 +167,7 @@ In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -176,7 +176,7 @@ In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

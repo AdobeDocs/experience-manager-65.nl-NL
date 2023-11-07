@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: b777fdca-e7a5-427a-9e86-688dd7cac636
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '838'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 De functie van het Kader van de Aanpassing wordt ontworpen helpen de schendingen in niet verlengbare gebieden van de code (zoals APIS) of inhoud (zoals overlays) verminderen die niet verbeteringsvriendelijk zijn.
 
-Er zijn twee componenten van het aanpassingskader: de **API-oppervlak** en de **Inhoudsclassificatie**.
+Er zijn twee componenten van het aanpassingskader: het **API-oppervlak** en de **Inhoudsclassificatie**.
 
 #### API-oppervlak {#api-surface}
 
@@ -33,7 +33,7 @@ In eerdere versies van Adobe Experience Manager (AEM) werden veel API&#39;s via 
 
 * De openbare API&#39;s zijn achterwaarts compatibel met de installatie van een compatibiliteitspakket.
 * Het compatibiliteitspakket bevat een Uber JAR-compatibiliteitspakket om achterwaartse compatibiliteit te garanderen
-* Java™ API&#39;s gemarkeerd als `Private` zijn alleen bedoeld voor gebruik door AEM interne bundels en mogen niet door aangepaste bundels worden gebruikt.
+* Java™ API&#39;s gemarkeerd als `Private` zijn alleen bedoeld voor gebruik door AEM interne bundels, niet door aangepaste bundels.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Om het voor klanten veiliger en gemakkelijker te maken om te begrijpen welke geb
 
 * **Abstract (graniet:AbstractArea)** - Definieert een knooppunt als abstract. Knooppunten kunnen worden bedekt of overgeërfd ( `sling:resourceSupertype`) maar niet rechtstreeks gebruikt ( `sling:resourceType`).
 
-* **Final (graniet:FinalArea)** - Definieert een knooppunt als definitief. Als definitief geclassificeerde knooppunten mogen idealiter niet worden bedekt of overgeërfd. Uiteindelijke knooppunten kunnen rechtstreeks via `sling:resourceType`. Subknooppunten onder het laatste knooppunt worden standaard als intern beschouwd.
+* **Final (graniet:FinalArea)** - Definieert een knooppunt als definitief. Als definitief geclassificeerde knooppunten mogen idealiter niet worden bedekt of overgeërfd. Uiteindelijke knooppunten kunnen rechtstreeks worden gebruikt via `sling:resourceType`. Subknooppunten onder het laatste knooppunt worden standaard als intern beschouwd.
 
 * ***Internal (granite:InternalArea)*** *- *Definieert een knooppunt als internal. Knooppunten die idealiter als interne knooppunten zijn geclassificeerd, mogen niet worden bedekt, overgeërfd of rechtstreeks worden gebruikt. Deze knooppunten zijn alleen bedoeld voor de interne functionaliteit van AEM
 
@@ -59,11 +59,11 @@ Om het voor klanten veiliger en gemakkelijker te maken om te begrijpen welke geb
 
 >[!NOTE]
 >
-Dit beleid wordt slechts afgedwongen tegen het Verdelen van op weg-gebaseerde mechanismen van het onderzoekspad. Andere gebieden van **/libs** zoals een clientbibliotheek kan worden gemarkeerd als `Internal`, maar kan nog steeds worden gebruikt met standaard clientlib inclusie. Het is belangrijk dat een klant in deze gevallen de interne classificatie blijft respecteren.
+Dit beleid wordt slechts afgedwongen tegen het Verdelen van zoekpad-gebaseerde mechanismen. Andere gebieden van **/libs** zoals een clientbibliotheek kan worden gemarkeerd als `Internal`, maar kan nog steeds worden gebruikt met standaard clientlib inclusie. Het is belangrijk dat een klant in deze gevallen de interne classificatie blijft respecteren.
 
 #### Type-indicatoren voor CRXDE Lite-inhoud {#crxde-lite-content-type-indicators}
 
-Mixins die worden toegepast in CRXDE Lite tonen inhoudsknooppunten en bomen die zijn gemarkeerd als `INTERNAL` als gedimd (grijs weergegeven). Voor `FINAL`wordt alleen het pictogram grijs weergegeven. De onderliggende knooppunten van deze knooppunten worden ook gedimd weergegeven. In beide gevallen is de functie Overlayknooppunt uitgeschakeld.
+In CRXDE Lite toegepaste mengsels tonen inhoudsknooppunten en bomen die als `INTERNAL` als gedimd (grijs weergegeven). Voor `FINAL`, alleen het pictogram wordt grijs weergegeven. De onderliggende knooppunten van deze knooppunten worden ook gedimd weergegeven. In beide gevallen is de functie Overlay Node uitgeschakeld.
 
 **Openbaar**
 
@@ -81,7 +81,7 @@ Mixins die worden toegepast in CRXDE Lite tonen inhoudsknooppunten en bomen die 
 
 >[!NOTE]
 >
-Met ingang van AEM 6.5 raadt Adobe u aan de patroondetector te gebruiken om schendingen van de toegang tot inhoud te detecteren. Patroondetectorrapporten zijn gedetailleerder, detecteren meer problemen en verminderen de kans op valse positieven.
+Vanaf AEM 6.5 raadt Adobe u aan de patroondetector te gebruiken om schendingen van de toegang tot inhoud te detecteren. Patroondetectorrapporten zijn gedetailleerder, detecteren meer problemen en verminderen de kans op valse positieven.
 >
 Zie voor meer informatie [De complexiteit van upgrades beoordelen met de patroondetector](/help/sites-deploying/pattern-detector.md).
 

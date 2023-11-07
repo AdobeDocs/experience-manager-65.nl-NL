@@ -1,16 +1,12 @@
 ---
 title: AEM Sites - GDPR-gereedheid
-seo-title: AEM Sites - GDPR Readiness
 description: Meer informatie over de procedures voor het verwerken van GDPR-aanvragen in AEM Sites en over het gebruik ervan.
-seo-description: Learn about the details of GDPR Readiness for AEM Sites.
-uuid: 00d1fdce-ef9a-4902-a7a5-7225728e8ffc
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 772f6188-5e0b-4e66-b94a-65a0cc267ed3
 exl-id: 8c1ea483-7319-4e5c-be4c-d43a2b67d316
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '837'
 ht-degree: 0%
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->De GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy, zoals de GDPR, de CCPA, enz.
+>De GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy, zoals de GDPR, de CCPA enzovoort.
 
 De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de bescherming van persoonsgegevens treedt in werking in mei 2018.
 
@@ -151,7 +147,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
+     De opslag ContextHub bepaalt welke persistentielaag wordt gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
 
 Als u bijvoorbeeld gegevens wilt weergeven die zijn opgeslagen in localStorage:
 
@@ -180,7 +176,7 @@ Aan voorproefpersistentie gebruikt ContextHub, kan een gebruiker:
       * ContextHub.Utils.Persistence.Modes.COOKIE
       * ContextHub.Utils.Persistence.Modes.WINDOW
 
-     De opslag ContextHub bepaalt welke persistentielaag zal worden gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
+     De opslag ContextHub bepaalt welke persistentielaag wordt gebruikt, zo om de huidige staat van persistentie te bekijken alle lagen zouden moeten worden gecontroleerd.
 
 Als u bijvoorbeeld gegevens wilt weergeven die zijn opgeslagen in localStorage:
 

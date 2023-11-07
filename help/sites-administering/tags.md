@@ -1,18 +1,14 @@
 ---
 title: Tags beheren
-seo-title: Administering Tags
 description: Leer hoe u tags beheert en beheert in Adobe Experience Manager.
-seo-description: Learn how to administer Tags in AEM.
-uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 exl-id: ff041ef0-e566-4373-818e-76680ff668d8
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1764'
+source-wordcount: '1761'
 ht-degree: 0%
 
 ---
@@ -78,7 +74,7 @@ De tagconsole openen:
 
 ### Een naamruimte maken {#creating-a-namespace}
 
-Als u een nieuwe naamruimte wilt maken, selecteert u de optie **`Create Namespace`** pictogram.
+Als u een naamruimte wilt maken, selecteert u de **`Create Namespace`** pictogram.
 
 De naamruimte is zelf een tag en hoeft geen subtags te bevatten. Om een taxonomie te blijven creëren, [subtags maken](#creating-tags), die op hun beurt ofwel bladtags of containercodes kunnen zijn.
 
@@ -310,6 +306,6 @@ Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u [Een n
 
 * [Tags voor ontwikkelaars](/help/sites-developing/tags.md)
 
-  Informatie over het coderingskader en het uitbreiden en opnemen van codes in aangepaste toepassingen.
+  Informatie over het coderingsframework en het uitbreiden en opnemen van codes in aangepaste toepassingen.
 
 * [Klassieke UI-tagconsole](/help/sites-administering/classic-console.md)

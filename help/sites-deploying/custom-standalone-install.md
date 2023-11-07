@@ -1,14 +1,12 @@
 ---
 title: Aangepaste standalone installatie
-seo-title: Custom Standalone Install
 description: Meer informatie over de beschikbare opties bij het installeren van een zelfstandige AEM.
-seo-description: Learn about the options available when installing a standalone AEM instance.
 content-type: reference
 topic-tags: deploying
 exl-id: d6484bb7-8123-4f42-96e8-aa441b1093f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1618'
 ht-degree: 0%
 
 ---
@@ -45,7 +43,7 @@ Er zijn verschillende regels die moeten worden gevolgd bij het wijzigen van de n
 
 ### Overwegingen bij Java 11 {#java-considerations}
 
-Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen van AEM.
+Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, moeten de extra schakelaars aan uw bevellijn worden toegevoegd wanneer het beginnen van AEM.
 
 * Het volgende - `-add-opens` de schakelaars moeten worden toegevoegd om de verwante berichten van de bezinningstoegang WARNING in te verhinderen `stdout.log`
 
@@ -67,7 +65,7 @@ Tot slot als u een instantie in werking stelt die van AEM 6.3 wordt bevorderd, z
 
 ## Modi uitvoeren {#run-modes}
 
-**Modus Uitvoeren** Hiermee kunt u uw AEM instellen voor een bepaald doel, bijvoorbeeld voor auteur of publicatie, test, ontwikkeling, intranet enzovoort. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud is gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
+**Modus Uitvoeren** Laat u uw AEM instantie voor een specifiek doel stemmen; bijvoorbeeld, auteur of publiceert, test, ontwikkeling, Intranet, etc. Met deze modi kunt u ook het gebruik van voorbeeldinhoud beheren. Deze voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten. Dit kan met name handig zijn voor installaties die klaar zijn voor de productie wanneer u de installatie slank en zonder voorbeeldinhoud wilt houden. Zie voor meer informatie:
 
 * [Modi uitvoeren](/help/sites-deploying/configure-runmodes.md)
 
@@ -143,7 +141,7 @@ Klik op **Stoppen** in de **Services** navigeer naar de map en typ `instsrv.bat 
 
 ## De locatie van de tijdelijke werkmap opnieuw definiëren {#redefining-the-location-of-the-temporary-work-directory}
 
-De standaardlocatie van de tijdelijke map van de Java-machine is `/tmp`. AEM gebruikt deze map ook, bijvoorbeeld bij het maken van pakketten.
+De standaardlocatie van de tijdelijke map van de Java-machine is `/tmp`. AEM gebruikt deze map bijvoorbeeld ook bij het maken van pakketten.
 
 Als u de locatie van de tijdelijke map wilt wijzigen (bijvoorbeeld als u een map met meer vrije ruimte nodig hebt), definieert u een * `<new-tmp-path>`* door de JVM-parameter toe te voegen:
 

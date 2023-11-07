@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 7eb0e8a8-d76a-43f7-a012-c21157b14cd4
 role: Developer
 exl-id: 0b992b1c-3878-447a-bccc-7034aa3e98bc
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2345'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Met de Forms-service kunt u een werkbalk aanpassen die wordt weergegeven met een
 
 >[!NOTE]
 >
->Deze URI-locatie bevindt zich in het bestand adobe-forms-core.jar, dat zich in het bestand adobe-forms-dsc.jar bevindt. Het bestand adobe-forms-dsc.jar bevindt zich in C:\Adobe\Adobe_Experience_Manager_forms\ folder (C:\ is the installation directory). U kunt een hulpprogramma voor het uitpakken van bestanden, zoals Win RAR, gebruiken om de adobe te openen.
+>Deze URI-locatie bevindt zich in het bestand adobe-forms-core.jar, dat zich in het bestand adobe-forms-dsc.jar bevindt. Het bestand adobe-forms-dsc.jar staat in de map C:\Adobe\Adobe_Experience_Manager_forms\ (C:\ is de installatiemap). U kunt een hulpprogramma voor het uitpakken van bestanden, zoals Win RAR, gebruiken om de adobe te openen.
 
 U kunt fscmenu.xml van deze plaats kopiëren, het wijzigen om aan uw vereisten te voldoen, en dan het in een plaats van douaneURI plaatsen. Vervolgens stelt u met de Forms Service API uitvoeringsopties in die resulteren in de Forms-service met behulp van het bestand fscmenu.xml van de opgegeven locatie. Deze acties resulteren in de Forms-service die een HTML-formulier met een aangepaste werkbalk weergeeft.
 
@@ -48,15 +48,15 @@ fscCSS is een stijlpagina die aan een bepaalde knoop wordt geassocieerd. De stij
 
 Controleer of naar alle bovenstaande bestanden wordt verwezen in het bestand fscmenu.xml. Dat wil zeggen dat u in het bestand fscmenu.xml URI-locaties opgeeft die naar deze bestanden verwijzen, zodat de Forms-service ze kan vinden. Deze bestanden zijn standaard beschikbaar op URI-locaties die beginnen met interne trefwoorden `FSWebRoot` of `ApplicationWebRoot`.
 
-Als u de werkbalk wilt aanpassen, vervangt u de trefwoorden door het externe trefwoord te gebruiken `FSToolBarURI`. Dit sleutelwoord vertegenwoordigt URI die aan de dienst van Forms in runtime wordt overgegaan (deze benadering wordt getoond later in deze sectie).
+Als u de werkbalk wilt aanpassen, vervangt u de trefwoorden met het externe trefwoord `FSToolBarURI`. Dit sleutelwoord vertegenwoordigt URI die aan de dienst van Forms in runtime wordt overgegaan (deze benadering wordt getoond later in deze sectie).
 
 U kunt ook de absolute locaties van deze JS- en CSS-bestanden opgeven, zoals https://www.mycompany.com/scripts/misc/fscmenu.js. In deze situatie hoeft u de `FSToolBarURI` trefwoord.
 
 >[!NOTE]
 >
->Het wordt afgeraden om de manier waarop naar deze bestanden wordt verwezen, door elkaar te gebruiken. Er moet dus naar alle URI&#39;s worden verwezen door een van de `FSToolBarURI` trefwoord of een absolute locatie.
+>Het wordt afgeraden om de manier waarop naar deze bestanden wordt verwezen, door elkaar te gebruiken. Er moet dus naar alle URI&#39;s worden verwezen door een van de `FSToolBarURI` of een absolute locatie.
 
-U kunt de JS- en CSS-bestanden verkrijgen door de adobe-forms te openen&lt;appserver>.ear-bestand. Open het bestand adobe-forms-res.war in dit bestand. Al deze bestanden bevinden zich in het WAR-bestand. De adobe-formulieren&lt;appserver>Het .ear-bestand bevindt zich in de installatiemap voor AEM formulieren (C:\ is the installation directory). U kunt de adobe-formulieren openen&lt;appserver>.ear die een hulpmiddel van de dossierextractie zoals WinRAR gebruikt.
+U kunt de JS- en CSS-bestanden verkrijgen door de adobe-forms te openen&lt;appserver>.ear-bestand. Open het bestand adobe-forms-res.war in dit bestand. Al deze bestanden staan in het WAR-bestand. De adobe-formulieren&lt;appserver>.ear-bestand bevindt zich in de installatiemap voor AEM formulieren (C:\ is de installatiemap). U kunt de adobe-formulieren openen&lt;appserver>.ear die een hulpmiddel van de dossierextractie zoals WinRAR gebruikt.
 
 De volgende XML-syntaxis toont een voorbeeld van het bestand fscmenu.xml.
 
@@ -102,7 +102,7 @@ De volgende items beschrijven hoe u een werkbalk kunt aanpassen:
 * De waarden wijzigen van `fscJS`, `fscCSS`, `fscVCSS`, `fscIECSS` attributen (in het fscmenu.xml- dossier) om op de douaneplaatsen van de referenced dossiers door één van de methodes te wijzen die in deze sectie worden beschreven (bijvoorbeeld `fscJS="FSToolBarURI/scripts/fscmenu.js"`).
 * Alle CSS- en JS-bestanden moeten worden opgegeven. Als geen van de bestanden wordt gewijzigd, geeft u de standaardmap op de aangepaste locatie op. U kunt de standaardbestanden verkrijgen door verschillende bestanden te openen, zoals in deze sectie wordt beschreven.
 * Een absolute verwijzing (bijvoorbeeld https://www.example.com/scripts/custom-vertical-fscmenu.css) voor elk bestand is toegestaan.
-* De JS- en CSS-bestanden die de `div#fscmenu` knooppunt is essentieel voor werkbalkfunctionaliteit. Individueel `ul#fscmenuItem` knooppunten kunnen al dan niet ondersteunende JS- of CSS-bestanden hebben.
+* De JS- en CSS-bestanden `div#fscmenu` knooppunt is essentieel voor werkbalkfunctionaliteit. Individueel `ul#fscmenuItem` knooppunten kunnen al dan niet ondersteunende JS- of CSS-bestanden hebben.
 
 **De lokale waarde wijzigen**
 
@@ -157,7 +157,7 @@ Geef ook een geldige waarde voor de landinstelling op door het dialoogvenster `H
 >
 >Voordat u een HTML-formulier genereert dat gebruikmaakt van een aangepaste werkbalk, moet u weten hoe HTML-formulieren worden gegenereerd. (Zie [Forms renderen als HTML](/help/forms/developing/rendering-forms-html.md).)
 
-Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -179,7 +179,7 @@ Voordat u via programmacode een bewerking kunt uitvoeren die door de Forms-servi
 
 **Verwijzen naar een aangepast XML-bestand met een fsmenu**
 
-Als u een HTML-formulier wilt weergeven dat een aangepaste werkbalk bevat, verwijst u naar een XML-bestand met fsmenu&#39;s dat de werkbalk beschrijft. (Deze sectie bevat twee voorbeelden van een fsmenu-XML-bestand.) Zorg er ook voor dat het bestand fscmenu.xml de locaties van alle bestanden waarnaar wordt verwezen correct opgeeft. Zoals eerder vermeld in deze sectie, moet u ervoor zorgen dat naar alle bestanden wordt verwezen door de `FSToolBarURI` sleutelwoord of hun absolute plaatsen.
+Als u een HTML-formulier wilt weergeven dat een aangepaste werkbalk bevat, verwijst u naar een XML-bestand met fsmenu&#39;s dat de werkbalk beschrijft. (Deze sectie bevat twee voorbeelden van een fsmenu-XML-bestand.) Zorg er ook voor dat het bestand fscmenu.xml de locaties van alle bestanden waarnaar wordt verwezen correct opgeeft. Zoals eerder in deze sectie is vermeld, moet u ervoor zorgen dat naar alle bestanden wordt verwezen door de `FSToolBarURI` sleutelwoord of hun absolute plaatsen.
 
 **Een HTML-formulier renderen**
 
@@ -220,7 +220,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
 1. Een Forms Java API-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar een aangepast XML-bestand met een fsmenu
 
@@ -251,7 +251,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
 
    * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
    * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read` en de bytearray doorgeven als een argument.
@@ -259,7 +259,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een HTML-formulier weergeven met een aangepaste werkbalk met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
+[Snel starten (SOAP-modus): een HTML-formulier weergeven met een aangepaste werkbalk met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-with-a-custom-toolbar-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -295,7 +295,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * A `TransformTo` Enum value that specifies the HTML preferences type. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML`.
-   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u door `null`.
+   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null`.
    * De `HTMLRenderSpec` -object waarin HTML-runtime-opties zijn opgeslagen.
    * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322`). U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
    * A `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
@@ -305,7 +305,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat wordt gevuld door het `renderHTMLForm` methode. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat wordt gevuld door het `renderHTMLForm` methode. In dit argument wordt de waarde van de landinstelling opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat wordt gevuld door het `renderHTMLForm` methode. In dit argument wordt de gebruikte HTML-renderwaarde opgeslagen.
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking zal bevatten.
 
    De `renderHTMLForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
@@ -314,7 +314,7 @@ Een HTML-formulier met een aangepaste werkbalk weergeven met de Forms Service AP
    * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
    * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `BLOB` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
    * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.

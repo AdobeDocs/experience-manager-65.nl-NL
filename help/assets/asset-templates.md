@@ -5,7 +5,7 @@ contentOwner: AG
 role: User
 feature: Asset Management,Developer Tools
 exl-id: 12c92aad-3a1d-486e-a830-31de2fc6d07b
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1503'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Elementsjablonen zijn een speciale klasse elementen die het snel opnieuw gebruik
 
 Dankzij de flexibiliteit om beperkte bewerkingen uit te voeren en de globale handtekening te beveiligen, zijn asset templates ideaal voor het maken van bouwstenen voor snelle aanpassing en distributie van inhoud als inhoudsartefacten voor verschillende functies. Inhoud die opnieuw wordt gebruikt, helpt de kosten voor het beheer van afdruk- en digitale kanalen te verlagen en biedt holistische en consistente ervaringen op deze kanalen.
 
-Als markeerteken kunt u sjablonen opslaan en beheren in [!DNL Experience Manager Assets] en gebruik één basissjabloon om eenvoudig meerdere persoonlijke afdrukervaringen te maken. U kunt diverse soorten marketing onderpand, met inbegrip van brochures, vliegers, postcards, visitekaartjes, etc. tot stand brengen om uw marketing bericht aan klanten lucently over te brengen. U kunt ook uitvoer van meerdere pagina&#39;s samenstellen op basis van bestaande of nieuwe afdrukuitvoer. Met name kunt u tegelijkertijd eenvoudig zowel digitale als afdrukervaringen bieden, zodat gebruikers een consistente, geïntegreerde ervaring hebben.
+Als markeerteken kunt u sjablonen opslaan en beheren in [!DNL Experience Manager Assets] en gebruik één basissjabloon om eenvoudig meerdere persoonlijke afdrukervaringen te maken. U kunt diverse soorten marketing onderpand, met inbegrip van brochures, vliegers, postcards, visitekaartjes, etc. tot stand brengen om uw marketing bericht aan klanten lucently over te brengen. U kunt ook uitvoer van meerdere pagina&#39;s samenstellen op basis van bestaande of nieuwe afdrukuitvoerbestanden. Met name kunt u tegelijkertijd eenvoudig zowel digitale als afdrukervaringen bieden, zodat gebruikers een consistente, geïntegreerde ervaring hebben.
 
 Elementsjablonen zijn meestal [!DNL Adobe InDesign] bestanden, kennis van [!DNL Adobe InDesign] is geen belemmering voor het creëren van stellaire artefacten. U hoeft de velden van uw [!DNL Adobe InDesign] sjabloon met uw productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Voor [!DNL Adobe InDesign] om uw het uitgeven veranderingen te verwerken, moet u eerst vormen [!DNL Experience Manager Assets] om te integreren met [!DNL Adobe InDesign Server].
 
-De mogelijkheid om te bewerken [!DNL Adobe InDesign] sjablonen van de webinterface bevorderen een betere samenwerking tussen creatief en marketingpersoneel. De verhoogde snelheid van de inhoud vermindert de tijd-aan-markt voor marketing zekerheden.
+Bewerkbaarheid [!DNL Adobe InDesign] sjablonen van de webinterface bevorderen een betere samenwerking tussen creatief en marketingpersoneel. De verhoogde snelheid van de inhoud vermindert de tijd-aan-markt voor marketing zekerheden.
 
 U kunt het volgende bereiken met middelensjablonen:
 
@@ -99,7 +99,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
 1. Klikken **[!UICONTROL Preview]** om een voorvertoning van de tekstwijzigingen weer te geven.
 
-1. Als u een afbeelding wilt omwisselen, klikt u op de knop **[!UICONTROL Asset Finder]** ![chlimage_1-113](assets/chlimage_1-318.png).
+1. Als u een afbeelding wilt wisselen, klikt u op de knop **[!UICONTROL Asset Finder]** ![chlimage_1-113](assets/chlimage_1-318.png).
 
 1. Selecteer het afbeeldingsveld in de lijst met bewerkbare velden en sleep een gewenste afbeelding van de elementkiezer naar het bewerkbare veld.
 
@@ -120,15 +120,13 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
    >
    >* Afbeeldingen worden niet in de onderliggende afbeelding ingesloten [!DNL InDesign] sjabloon.
    >* Afbeeldingen worden gekoppeld vanuit het lokale bestandssysteem.
-
    >
    >Inschakelen [!DNL Experience Manager] Voer de volgende handelingen uit om afbeeldingen op te lossen:
    >
    >* Afbeeldingen insluiten tijdens het maken [!DNL InDesign] sjablonen (zie [Over koppelingen en ingesloten afbeeldingen](https://helpx.adobe.com/indesign/using/graphics-links.html)).
    >* Koppelen [!DNL Experience Manager] naar uw lokale bestandssysteem en wijs vervolgens ontbrekende pictogrammen toe met bestaande elementen in [!DNL Experience Manager].
-
    >
-   >Meer informatie over werken met [!DNL InDesign] documenten, zie [aanbevolen procedures voor het werken met InDesign-documenten in de Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
+   >Meer informatie over werken met [!DNL InDesign] documenten, zie [aanbevolen procedures voor het werken met InDesigns documenten in Experience Manager](https://helpx.adobe.com/experience-manager/kb/best-practices-idd-docs-aem.html).
 
 1. Als u een PDF-uitvoering voor de brochure wilt genereren, selecteert u de Acrobat-optie in het dialoogvenster en klikt u op **[!UICONTROL Continue]**.
 1. Het onderpand wordt gecreeerd in de omslag u met begon. Als u de vertoningen wilt bekijken, opent u het onderpand en kiest u **[!UICONTROL Renditions]** uit de lijst GlobalNav.
@@ -149,7 +147,7 @@ U kunt direct nadat u het hebt gemaakt, een onderpand bewerken. U kunt het besta
 
    ![chlimage_1-120](assets/chlimage_1-325.png)
 
-1. Van de [!UICONTROL Template Merge] pagina, klikt u op **[!UICONTROL Merge]** ![elementen toevoegen](assets/do-not-localize/assets_add_icon.png).
+1. Van de [!UICONTROL Template Merge] pagina, klikt u **[!UICONTROL Merge]** ![elementen toevoegen](assets/do-not-localize/assets_add_icon.png).
 
 1. Navigeer naar de locatie van de elementen die u wilt samenvoegen en klik op de miniaturen van de elementen die u wilt samenvoegen om deze te selecteren.
 

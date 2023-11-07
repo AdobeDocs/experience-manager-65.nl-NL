@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 91b738ec-aa00-4f05-bf42-2574ced8d993
 role: Developer
 exl-id: a2560c87-ae95-4d65-869a-8cba177a1cd6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '252'
 ht-degree: 0%
 
 ---
@@ -22,17 +22,17 @@ ht-degree: 0%
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Integratie van de Gegevens van de Vorm.
 
-[Snel starten (SOAP-modus): Formuliergegevens importeren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): formuliergegevens importeren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-importing-form-data-using-the-java-api)
 
-[Snel starten (SOAP-modus): Formuliergegevens exporteren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): formuliergegevens exporteren met de Java API](form-data-integration-service-java.md#quick-start-soap-mode-exporting-form-data-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle Begin die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Begin in Programmering met AEM vormen is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Formuliergegevens importeren met de Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}
+## Snel starten (SOAP-modus): formuliergegevens importeren met de Java API {#quick-start-soap-mode-importing-form-data-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-formulier. De gegevens bevinden zich in een XML-bestand met de naam *Loan_data.xml* en het PDF-formulier wordt opgeslagen als een PDF-bestand met de naam *ResultLoanForm.pdf*. (Zie [Formuliergegevens importeren](/help/forms/developing/importing-exporting-data.md#importing-form-data).)
 
@@ -63,16 +63,16 @@ In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-form
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -134,7 +134,7 @@ In het volgende Java-codevoorbeeld worden gegevens geïmporteerd in een PDF-form
  
 ```
 
-## Snel starten (SOAP-modus): Formuliergegevens exporteren met de Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
+## Snel starten (SOAP-modus): formuliergegevens exporteren met de Java API {#quick-start-soap-mode-exporting-form-data-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gegevens geëxporteerd uit een PDF-formulier. De formuliergegevens worden opgeslagen als een XML-bestand met de naam *Loan_data.xml*. (Zie [Formuliergegevens exporteren](/help/forms/developing/importing-exporting-data.md#exporting-form-data).)
 
@@ -165,16 +165,16 @@ In het volgende Java-codevoorbeeld worden gegevens geëxporteerd uit een PDF-for
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a

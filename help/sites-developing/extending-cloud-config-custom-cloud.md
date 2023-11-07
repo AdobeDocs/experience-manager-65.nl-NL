@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 9414c77a-b180-4440-8386-e6eb4426e475
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '404'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 # Een aangepaste Cloud Service maken{#creating-a-custom-cloud-service}
 
-De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Servicen. Hiermee kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is vooral handig voor externe analyseproviders, zoals Googles Analytics, Chartbeat, enzovoort. Cloud Servicen worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
+De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Servicen. Hiermee kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is vooral handig voor externe analyseproviders, zoals Googles Analytics, Chartmaatbedrijven, enzovoort. Cloud Servicen worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
 
 >[!NOTE]
 >
@@ -208,6 +208,6 @@ De standaardset Clouden Services kan worden uitgebreid met aangepaste Cloud Serv
 
    Kies **Configuratie Googles Analytics** en klik op **Maken**.
 
-1. Voer een **Account-id** bijvoorbeeld `AA-11111111-1`. Klikken **OK**.
+1. Voer een **Account-id**, bijvoorbeeld `AA-11111111-1`. Klikken **OK**.
 1. Navigeer naar een pagina en voeg de nieuw gemaakte configuratie toe in de pagina-eigenschappen, onder de **Cloud Servicen** tab.
 1. Aan de pagina wordt de aangepaste markering toegevoegd.

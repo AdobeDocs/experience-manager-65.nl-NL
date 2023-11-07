@@ -2,9 +2,9 @@
 title: Aan de slag met AEM Headless
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3038'
+source-wordcount: '3032'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ AEM biedt twee robuuste API&#39;s om uw inhoud zonder problemen aan te passen.
 * Met de GraphQL API kunt u aanvragen maken voor toegang tot en levering van inhoudsfragmenten.
 * Met de REST API voor middelen kunt u inhoudsfragmenten (en andere elementen) maken en wijzigen.
 
-U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van de AEM headless-tocht. Of verwijs naar de [extra middelen](#additional-resources) voor aanvullende documentatie.
+U leert over deze API&#39;s en hoe u deze kunt gebruiken in een later deel van de AEM headless-tocht. Of raadpleeg de [extra middelen](#additional-resources) voor aanvullende documentatie.
 
 ## Niveaus voor toploze integratie {#integration-levels}
 
@@ -113,13 +113,13 @@ Dit integratieniveau bouwt voort op niveau twee door de meeste inhoud in de exte
 
 ### U hebt nog geen externe consument van de inhoud zonder kop, zoals een toepassing voor één pagina (SPA). {#do-not-have-a-spa}
 
-Als u een nieuwe SPA wilt maken die zonder problemen inhoud van AEM verbruikt, kunt u functies zoals Content Fragments gebruiken om uw inhoud zonder kop te beheren en ook een SPA maken met AEM Editor-framework.
+Als u een SPA wilt maken die zonder problemen inhoud van AEM verbruikt, kunt u functies zoals Content Fragments gebruiken om uw inhoud zonder kop te beheren en ook een SPA maken met AEM Editor-framework.
 
 Met behulp van de SPA Editor verbruikt de SPA niet alleen inhoud van AEM, maar is deze ook volledig bewerkbaar binnen AEM van de auteurs van de inhoud, zodat u zowel de mogelijkheid hebt om zonder kop te leveren als in de context te bewerken binnen AEM.
 
 ## Eisen en voorwaarden {#requirements-prerequisites}
 
-Er zijn een aantal vereisten voordat u begint met een project zonder kop AEM.
+Er zijn verscheidene vereisten alvorens u met uw hoofd AEM project begint.
 
 ### Kennis {#knowledge}
 

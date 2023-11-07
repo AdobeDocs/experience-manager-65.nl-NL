@@ -1,18 +1,14 @@
 ---
 title: Werken met Adobe Campaign 6.1 en Adobe Campaign Standard
-seo-title: Working with Adobe Campaign 6.1 and Adobe Campaign Standard
 description: U kunt e-mailinhoud maken in AEM en deze verwerken in Adobe Campaign-e-mails.
-seo-description: You can create email content in AEM and process it in Adobe Campaign emails.
-uuid: 439df7fb-590b-45b8-9768-565b022a808b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 61b2bd47-dcef-4107-87b1-6bf7bfd3043b
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1163'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 U kunt e-mailinhoud maken in AEM en deze verwerken in Adobe Campaign-e-mails. Daartoe moet u:
 
-1. Maak een nieuwe nieuwsbrief in AEM van een Adobe Campaign-specifieke sjabloon.
+1. Maak een nieuwsbrief in AEM van een Adobe Campaign-specifieke sjabloon.
 1. Selecteren [een Adobe Campaign-service](#selectingtheadobecampaigncloudservice) voordat u de inhoud bewerkt, hebt u toegang tot alle functies.
 1. Bewerk de inhoud.
 1. Valideer de inhoud.
@@ -56,7 +52,7 @@ In dit document worden gedetailleerde instructies beschreven.
 
    >[!NOTE]
    >
-   >[E-mailvoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md#weretail). Download voorbeeldinhoud van Geometrixx uit Pakket delen.
+   >[E-mailvoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md#weretail). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -115,7 +111,7 @@ U kunt e-mailinhoud bewerken in de klassieke gebruikersinterface of in de gebrui
 
 Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 
-* Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam, of om het even welke gegevens van de doelafmeting) zal aanpassen.
+* Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld, voornaam, achternaam, of om het even welke gegevens van de doeldimensie) zal aanpassen.
 * Adobe Campaign-verpersoonlijkingsblokken. Dit zijn blokken vooraf gedefinieerde inhoud die niet gerelateerd zijn aan de gegevens van de ontvanger, zoals een merklogo of een koppeling naar een spiegel.
 
 Zie [Adobe Campaign-componenten](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) voor een volledige beschrijving van de onderdelen van de campagne.
@@ -147,7 +143,7 @@ Zie [Adobe Campaign-componenten](/help/sites-classic-ui-authoring/classic-person
 
 ### Een voorvertoning van een nieuwsbrief weergeven {#previewing-a-newsletter}
 
-U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie bekijken.
+U kunt voorvertonen hoe de nieuwsbrief eruit zal zien en een voorvertoning van de personalisatie bekijken.
 
 1. Open de nieuwsbrief u voorproef en klik Voorproef (vergrootglas) om hulpdekick te krimpen.
 1. Klik op een van de e-mailclientpictogrammen om te zien hoe uw nieuwsbrief er in elke e-mailclient uitziet.

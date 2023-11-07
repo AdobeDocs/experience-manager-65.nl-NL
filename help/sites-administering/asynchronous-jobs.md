@@ -2,10 +2,10 @@
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: cc63291c32f7a234398ebe8bf67ab53aaf8fa90f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '724'
-ht-degree: 96%
+source-wordcount: '722'
+ht-degree: 89%
 
 ---
 
@@ -55,7 +55,7 @@ Navigeer naar de pagina **[!UICONTROL Async Job Status]** om de status van de as
 
    ![stop_icon](assets/async-stop-icon.png)
 
-1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logboekbestanden, selecteert u de bewerking en klikt u op de werkbalk op **[!UICONTROL Open]**.
+1. Als u meer details wilt weergeven, bijvoorbeeld een beschrijving en logbestand, selecteert u de bewerking en klikt u op **[!UICONTROL Open]** op de werkbalk.
 
    ![open_icon](assets/async-open-icon.png)
 
@@ -88,7 +88,7 @@ U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooid
 
 ## Asynchrone verwerking configureren {#configuring-asynchronous-processing}
 
-U kunt configureren wat het maximum aantal assets, pagina’s of verwijzingen voor AEM is om een bepaalde bewerking asynchroon te verwerken en om e-mailmeldingen over de verwerking van taken in en uit te schakelen.
+U kunt het drempelaantal elementen, pagina&#39;s of verwijzingen voor AEM configureren om een bepaalde bewerking asynchroon te verwerken en e-mailmeldingen in en uit te schakelen wanneer de taken worden verwerkt.
 
 ### Asynchrone verwijderingsbewerkingen van assets configureren {#configuring-synchronous-delete-operations}
 

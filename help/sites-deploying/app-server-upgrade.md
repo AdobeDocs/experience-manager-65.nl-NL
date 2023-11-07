@@ -3,9 +3,9 @@ title: Upgradestappen voor installatie van toepassingsservers
 description: Leer hoe te om instanties van AEM te bevorderen die via de Servers van de Toepassing worden opgesteld.
 feature: Upgrading
 exl-id: 86dd10ae-7f16-40c8-84b6-91ff2973a523
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '446'
+source-wordcount: '445'
 ht-degree: 0%
 
 ---
@@ -67,7 +67,7 @@ Alle voorbeelden in deze procedure gebruiken Tomcat als de Server van de Toepass
 
    * Verwijderen **sling.options.file** door uitvoering: `find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf`
 
-1. Creëer nu de knoopopslag en de gegevensopslag die met AEM 6.5 zullen worden gebruikt. U kunt dit doen door twee bestanden te maken met de volgende namen onder `crx-quickstart\install`:
+1. Creëer nu de knoopopslag en gegevensopslag die met AEM 6.5 wordt gebruikt. U kunt dit doen door twee bestanden te maken met de volgende namen onder `crx-quickstart\install`:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`

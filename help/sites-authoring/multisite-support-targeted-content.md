@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2869'
+source-wordcount: '2855'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ In dit document wordt het volgende beschreven:
 
 Als u wilt instellen hoe uw sites gepersonaliseerde inhoud delen, moet u de volgende stappen uitvoeren:
 
-1. [Een nieuw gebied maken](#creating-new-areas) of [een nieuw gebied maken als actieve kopie](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina, dat wil zeggen de locatie op de pagina waarop de component is aangewezen. Als u een nieuw gebied maakt, wordt een leeg gebied gemaakt, terwijl u door een nieuw gebied te maken als een live kopie inhoud kunt overnemen in de sitestructuren.
+1. [Een gebied maken](#creating-new-areas) of [een gebied maken als actieve kopie](#creating-new-areas). Een gebied omvat alle activiteiten die voor een *gebied* van de pagina, dat wil zeggen de locatie op de pagina waarop de component is aangewezen. Als u een gebied maakt, wordt een leeg gebied gemaakt, terwijl u door het maken van een gebied als een live kopie inhoud kunt overnemen in de sitestructuren.
 
 1. [Uw site of pagina koppelen](#linking-sites-to-an-area) naar een gebied.
 
@@ -60,7 +60,7 @@ Een site of live kopie is gekoppeld aan een gebied met de activiteiten die besch
 
 ## Gebruik hoofdletters {#use-cases}
 
-U kunt ondersteuning voor meerdere sites instellen voor doelinhoud op verschillende manieren, afhankelijk van uw gebruiksscenario. In deze sectie wordt beschreven hoe dit theoretisch zou werken met één merk. Daarnaast [Voorbeeld: Inhoud als doel instellen op basis van Geogrpahy](#example-targeting-content-based-on-geography)kunt u een echte toepassing zien van het richten van inhoud in veelvoudige plaatsen.
+U kunt ondersteuning voor meerdere sites instellen voor doelinhoud, afhankelijk van uw gebruiksscenario. In deze sectie wordt beschreven hoe dit theoretisch zou werken met één merk. Daarnaast [Voorbeeld: Inhoud als doel instellen op basis van Geogrpahy](#example-targeting-content-based-on-geography)kunt u een echte toepassing zien van het richten van inhoud in veelvoudige plaatsen.
 
 Gerichte inhoud wordt verpakt in zogenaamde gebieden, die het bereik voor sites of pagina&#39;s bepalen. Deze gebieden worden op merkniveau gedefinieerd. Eén merk kan meerdere gebieden bevatten. Gebieden kunnen verschillend zijn tussen merken. Hoewel één merk het hoofdgebied kan bevatten en daarom voor alle merken wordt gedeeld, kan een ander merk meerdere merken bevatten (bijvoorbeeld per regio). Merkens hoeven dus niet de reeks gebieden ertussen te weerspiegelen.
 
@@ -130,11 +130,11 @@ U kunt de overerving op elk gewenst moment opschorten of de overerving volledig 
 >
 >Voor een technisch overzicht van deze functie raadpleegt u [Hoe multisite beheer voor gerichte inhoud is gestructureerd](/help/sites-authoring/technical-multisite-targeted.md).
 
-### Een nieuw gebied maken in plaats van een nieuw gebied te maken als livecopie {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
+### Een gebied maken in plaats van een gebied te maken als livecopie {#creating-a-new-area-versus-creating-a-new-area-as-livecopy}
 
-In AEM kunt u een nieuw gebied maken of nieuwe gebieden maken als een livecopy. Het creëren van een nieuw gebied groepeert activiteiten en om het even wat die tot die activiteiten behoren, zoals aanbiedingen, ervaringen, etc. U maakt een nieuw gebied als u een volledig aparte set doelinhoud wilt maken of als u een set doelinhoud wilt delen.
+In AEM hebt u de mogelijkheid om een gebied te maken of een gebied te maken als een gebied met een bibliotheek. Het creëren van een gebiedsgroepen activiteiten en om het even wat die tot die activiteiten behoren, zoals aanbiedingen, ervaringen, etc. U maakt een gebied wanneer u een volledig aparte set doelinhoud wilt maken of wanneer u een set doelinhoud wilt delen.
 
-Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt u de activiteiten willen erven. In dit geval maakt u een nieuw gebied als een live kopie, waarbij Y een live kopie van X is en dus ook alle activiteiten overneemt.
+Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt u de activiteiten willen erven. In dit geval maakt u een gebied als een live kopie, waarbij Y een live kopie van X is en dus ook alle activiteiten overneemt.
 
 >[!NOTE]
 >
@@ -159,7 +159,7 @@ Gebieden kunnen activiteiten en aanbiedingen omvatten. Nadat u een gebied in é�
 >
 >Het standaardgebied genaamd Mastergebied wordt standaard samengevouwen wanneer u op de naam van een merk tikt of klikt **totdat** u een ander gebied maakt. Wanneer u vervolgens een merk selecteert in de console **Activiteit** of **Aanbiedingen**, ziet u de console **Gebied**.
 
-Een nieuw gebied maken:
+Een gebied maken:
 
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
 1. Tik of klik op **Gebied maken**.

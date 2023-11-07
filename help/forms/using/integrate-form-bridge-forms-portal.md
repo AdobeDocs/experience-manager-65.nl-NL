@@ -11,9 +11,9 @@ discoiquuid: bd9bf095-d74d-458c-afe7-fab04050849d
 docset: aem65
 feature: Mobile Forms
 exl-id: 89118bb8-6ec8-4048-b3d6-5c73a9eea33e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '392'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Een bestaande HTML-toepassing kan de FormBridge API gebruiken om te communiceren
    1. Meld u aan met beheerdersreferenties.
    1. Maak een profiel of kies een bestaand profiel.
 
-      Ga voor meer informatie over het maken van een profiel naar [Een nieuw profiel maken](/help/forms/using/custom-profile.md).
+      Ga voor meer informatie over het maken van een profiel naar [Een profiel maken](/help/forms/using/custom-profile.md).
 
 1. **Het profiel HTML wijzigen**
 

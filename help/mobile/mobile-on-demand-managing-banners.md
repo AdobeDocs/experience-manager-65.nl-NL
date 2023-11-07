@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '663'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
@@ -46,7 +46,7 @@ De algemene workflow voor het maken van een artikel is als volgt:
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
 1. Klik op de pijl omlaag in de rechterbovenhoek van het dialoogvenster **Banners beheren** tegel.
 1. Werk door elke stap van de wizard om door te gaan met het maken van uw nieuwe banner.
-1. Klik, indien gereed, op **Maken**.
+1. Klik op **Maken**.
 1. Uw nieuwe banner wordt weergegeven in het dialoogvenster **Banners beheren** tegel.
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
@@ -107,7 +107,7 @@ De algemene workflow voor het uploaden van een banner:
 
 1. Van **Mobiel**, kiest u uw mobiele On-Demand-app in de catalogus.
 1. In de **Banners beheren** Selecteer een banner die u wilt uploaden naar Mobiel op aanvraag.
-1. Voeg zo nodig meer banners toe in de lijstweergave.
+1. Voeg desgewenst meer banners toe in de lijstweergave.
 1. Selecteren **Uploaden** Klik in de actiebalk op Uploaden in het dialoogvenster.
 1. Uw banner(s) worden nu geüpload naar Mobile On-Demand.
 
@@ -123,7 +123,7 @@ De algemene workflow voor het verwijderen van een banner:
 1. Selecteer de banner die u wilt verwijderen in het dialoogvenster **Banners beheren** tegel.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
 1. Klikken **Verwijderen** in de actiebalk.
-1. Controleer of u niet alleen mobiele apparaten op aanvraag maar ook AEM wilt verwijderen.
+1. Controleer of u gegevens uit AEM en mobiel op aanvraag wilt verwijderen.
 1. Klikken **Verwijderen**.
 1. Uw banner is nu verwijderd uit de lijst.
 
@@ -134,5 +134,5 @@ Een die u leert over het beheren van banners, raadpleegt u
 * [Artikelen beheren](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Verzamelingen beheren](/help/mobile/mobile-on-demand-managing-collections.md)
 * [Gedeelde bronnen uploaden](/help/mobile/mobile-on-demand-shared-resources.md)
-* [De inhoud publiceren/verwijderen](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
+* [De inhoud publiceren/publiceren ongedaan maken](/help/mobile/mobile-on-demand-publishing-unpublishing.md)
 * [Voorvertonen met Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md)

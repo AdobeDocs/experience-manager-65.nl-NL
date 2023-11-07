@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 role: Developer
 exl-id: 1101c85a-6a90-471d-a7be-8d25765e84bf
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 **Informatie over de Credential Service**
 
-Een referentie bevat uw persoonlijke sleutelgegevens die nodig zijn voor het ondertekenen of identificeren van documenten. Een certificaat is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM Forms gebruikt certificaten en referenties voor verschillende doeleinden:
+Een referentie bevat de gegevens van uw persoonlijke sleutel die nodig zijn voor het ondertekenen of identificeren van documenten. Een certificaat is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM Forms gebruikt certificaten en referenties voor verschillende doeleinden:
 
 * Acrobat Reader DC-extensies gebruiken een referentie om Adobe Reader-gebruiksrechten in PDF-documenten in te schakelen. (Zie [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
 * De handtekeningservice krijgt toegang tot certificaten en gegevens tijdens het uitvoeren van bewerkingen, zoals het digitaal ondertekenen van PDF-documenten. (Zie [PDF-documenten digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
@@ -42,7 +42,7 @@ U kunt programmatically met de dienst van de Referentie in wisselwerking staan g
 
 Met de Betrouwbaarheidsbeheer-API kunt u via programmacode een referentie naar AEM Forms importeren. U kunt bijvoorbeeld een referentie importeren die wordt gebruikt om een PDF-document te ondertekenen. (Zie [PDF-documenten digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents)).
 
-Wanneer u een referentie importeert, geeft u een alias voor de referentie op. De alias wordt gebruikt om een Forms-bewerking uit te voeren waarvoor een referentie vereist is. Zodra ingevoerd, kan een referentie in beleidsconsole worden bekeken, zoals aangetoond in de volgende illustratie. Merk op dat de alias voor de referentie *Beveiligen*.
+Wanneer u een referentie importeert, geeft u een alias voor de referentie op. De alias wordt gebruikt om een Forms-bewerking uit te voeren waarvoor een referentie vereist is. Zodra ingevoerd, kan een referentie in beleidsconsole worden bekeken, zoals aangetoond in de volgende illustratie. De alias voor de referentie is *Beveiligen*.
 
 ![ww_ww_truststore](assets/ww_ww_truststore.png)
 
@@ -108,19 +108,19 @@ Een referentie importeren in AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
 1. Een crediteurenserviceclient maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `CredentialServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `CredentialServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Referentie van de referentie
 
    * Een `java.io.FileInputStream` object met behulp van de constructor. Geef een tekenreekswaarde door die de locatie van de referentie opgeeft.
-   * Een `com.adobe.idp.Document` object dat de referentie opslaat met het `com.adobe.idp.Document` constructor. Geef de `java.io.FileInputStream` object dat de referentie voor de constructor bevat.
+   * Een `com.adobe.idp.Document` object dat de referentie opslaat met de `com.adobe.idp.Document` constructor. Geef de `java.io.FileInputStream` object dat de referentie voor de constructor bevat.
 
 1. De importbewerking uitvoeren
 
    * Maak een array met tekenreeksen die één element bevat. De waarde toewijzen `truststore.usage.type.sign` naar het element.
    * De `CredentialServiceClient` object `importCredential` en geeft de volgende waarden door:
 
-      * Een tekenreekswaarde die de aliaswaarde voor de referentie opgeeft.
+      * Een tekenreekswaarde die de alias voor de referentie opgeeft.
       * De `com.adobe.idp.Document` instantie die de referentie opslaat.
       * Een tekenreekswaarde die het wachtwoord opgeeft dat aan de referentie is gekoppeld.
       * De tekenreeks-array die de gebruikswaarde bevat. U kunt bijvoorbeeld deze waarde opgeven `truststore.usage.type.sign`. Als u een Reader Extension-referentie wilt importeren, geeft u `truststore.usage.type.lcre`.
@@ -129,7 +129,7 @@ Een referentie importeren in AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
 
 [Referenties importeren met de Betrouwbaarheidsbeheer-API](credentials.md#importing-credentials-by-using-the-trust-manager-api)
 
-[Snel starten (SOAP-modus): Referenties importeren met de Java API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
+[Snel starten (SOAP-modus): referenties importeren met de Java API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -137,7 +137,7 @@ Een referentie importeren in AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
 
 ## Referenties verwijderen met de Betrouwbaarheidsbeheer-API {#deleting-credentials-by-using-the-trust-manager-api}
 
-U kunt een referentie programmatically schrappen door de Manager API van het Vertrouwen te gebruiken. Wanneer u een referentie verwijdert, geeft u een alias op die overeenkomt met de referentie. Als deze eenmaal is verwijderd, kan geen referentie worden gebruikt om een bewerking uit te voeren.
+U kunt een referentie programmatically schrappen door de Manager API van het Vertrouwen te gebruiken. Wanneer u een referentie verwijdert, geeft u een alias op die overeenkomt met de referentie. Als deze eenmaal is verwijderd, kan een referentie niet worden gebruikt om een bewerking uit te voeren.
 
 >[!NOTE]
 >
@@ -192,7 +192,7 @@ Een referentie uit AEM Forms verwijderen met de Betrouwbaarheidsbeheer-API (Java
 1. Een crediteurenserviceclient maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `CredentialServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `CredentialServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. De verwijderbewerking uitvoeren
 
@@ -202,7 +202,7 @@ Een referentie uit AEM Forms verwijderen met de Betrouwbaarheidsbeheer-API (Java
 
 [Referenties verwijderen met de Betrouwbaarheidsbeheer-API](credentials.md#deleting-credentials-by-using-the-trust-manager-api)
 
-[Snel starten (SOAP-modus): Referenties verwijderen met de Java API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
+[Snel starten (SOAP-modus): referenties verwijderen met de Java API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

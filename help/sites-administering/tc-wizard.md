@@ -3,9 +3,9 @@ title: Wizard Taalkopie
 description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Taal in het Manager van de Ervaring van de Adobe.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 2d87022aa2223df261e245fba65df054c041cd69
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '214'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ U kunt als volgt deze wizard openen:
    >
    >Standaard is er slechts één vertaalinstelling. Om andere montages te kunnen selecteren, moet u wolkenconfiguraties eerst vormen. Zie [Het Kader voor de Integratie van de Vertaling vormen](/help/sites-administering/tc-tic.md).
 
-1. De **Volgende** de knoop brengt u aan **Vertalen** stap van de wizard. Hier kunt u kiezen tussen het maken van alleen de structuur, het maken van een nieuw vertaalproject of het toevoegen aan een bestaand vertaalproject.
+1. De **Volgende** de knoop brengt u aan **Vertalen** stap van de wizard. Hier kunt u kiezen tussen het maken van alleen de structuur, het maken van een vertaalproject of het toevoegen aan een bestaand vertaalproject.
 
    >[!NOTE]
    >

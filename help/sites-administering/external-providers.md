@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 9bf818f9-6e33-4557-b2e4-b0d4900f2a05
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '446'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 >
 >De demosite Geometrixx-buiten is zo geconfigureerd dat de kenmerken die worden opgegeven in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` eindtag) in de bijbehorende `js` script.
 >
->Als u uw eigen `/apps` niet overerven van de standaardpagina-component ( `/libs/foundation/components/page`) moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` scripts worden opgenomen, bijvoorbeeld door `cq/cloudserviceconfigs/components/servicescomponents`of met een soortgelijk mechanisme.
+>Als u uw eigen `/apps` niet overerven van de standaardpagina-component ( `/libs/foundation/components/page`) moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` scripts worden bijvoorbeeld opgenomen door `cq/cloudserviceconfigs/components/servicescomponents`of met een soortgelijk mechanisme.
 >
 >Zonder dit, zal geen van de diensten (Generic, Analytics, Doel, etc.) werken.
 

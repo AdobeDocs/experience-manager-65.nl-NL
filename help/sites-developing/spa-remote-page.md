@@ -2,9 +2,9 @@
 title: De RemotePage-component
 description: De component RemotePage is een aangepaste pagina-component voor het bewerken van SPA op afstand in AEM.
 exl-id: 3f015997-0d42-4241-a890-0f16a19c5e34
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '390'
 ht-degree: 0%
 
 ---
@@ -44,4 +44,4 @@ Zie het artikel [Een externe SPA bewerken in AEM](spa-edit-external.md) voor mee
 
 ## Technische details {#technical-details}
 
-Net als de rest van het AEM SPA-project is de RemotePage-component een open bron. Voor de volledige technische details van de RemotePage-component, [zie gelieve de bewaarplaats GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)
+Net als de rest van het AEM SPA-project is de RemotePage-component een open bron. Voor de volledige technische details van de RemotePage-component, [zie de bewaarplaats GitHub.](https://github.com/adobe/aem-spa-project-core/tree/master/ui.apps/src/main/content/jcr_root/apps/spa-project-core/components/remotepage)

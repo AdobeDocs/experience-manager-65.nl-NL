@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 exl-id: 27a6b012-576e-40bc-9b50-c310b3c56c9e
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '430'
+source-wordcount: '429'
 ht-degree: 7%
 
 ---
@@ -25,7 +25,7 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 >[!NOTE]
 >
->Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de in [AEM voor probleemoplossing (voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
+>Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de in [AEM voor probleemoplossing (voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet genoeg voorrechten hebt, zie uw systeembeheerder over het oplossen van AEM.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
@@ -44,17 +44,17 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
    * Wis de cache in uw lokale browser en open de pagina opnieuw.
    * Toevoegen `?` tot het einde van de pagina-URL. Bijvoorbeeld:
 
-      `http://localhost:4502/sites.html/content?`
+     `http://localhost:4502/sites.html/content?`
 
-      Hiermee wordt de pagina rechtstreeks bij AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
+     Hiermee wordt de pagina rechtstreeks bij AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
 
    * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 
-## Sidetrap niet zichtbaar {#sidekick-not-visible}
+## Sidekick niet zichtbaar {#sidekick-not-visible}
 
 * **Probleem**:
 
-   * Sidetrap is niet zichtbaar bij het bewerken van een inhoudspagina in de auteursomgeving.
+   * Sidekick is niet zichtbaar bij het bewerken van een inhoudspagina in de auteursomgeving.
 
 * **Reden**:
 
@@ -62,13 +62,13 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 * **Oplossing**:
 
-   * Log uit van uw huidige sessie en meld u opnieuw aan. Sidetrap keert terug naar de standaardpositie.
+   * Log uit van uw huidige sessie en meld u opnieuw aan. Sidekick keert terug naar de standaardpositie.
 
 ## Zoeken en vervangen - niet alle exemplaren worden vervangen {#find-replace-not-all-instances-are-replaced}
 
 * **Probleem:**
 
-   * Wanneer u de **Zoeken en vervangen** kan voorkomen dat niet alle instanties van de `find` worden vervangen op een pagina.
+   * Wanneer u de opdracht **Zoeken en vervangen** kan voorkomen dat niet alle instanties van de `find` worden vervangen op een pagina.
 
 * **Reden**:
 
@@ -83,4 +83,4 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
    * Deze definities kunnen met de configuratie voor **Day CQ WCM-zoekservice vervangen** met de **Webconsole**; bijvoorbeeld bij
 
-      `http://localhost:4502/system/console/configMgr`
+     `http://localhost:4502/system/console/configMgr`

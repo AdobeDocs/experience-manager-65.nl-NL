@@ -4,9 +4,9 @@ description: Leer hoe u inhoud voorbereidt voor vertaling in Adobe Experience Ma
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '683'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ Maak een taalhoofdmap als de hoofdpagina van een taalkopie die de taal van de in
 
 Als u de hoofdtaal wilt maken van de taal, maakt u een pagina en gebruikt u een ISO-taalcode als waarde voor de eigenschap Naam. De taalcode moet een van de volgende notaties hebben:
 
-* `<language-code>`De ondersteunde taalcode is bijvoorbeeld een tweelettercode zoals gedefinieerd in ISO-639-1 `en`.
+* `<language-code>`De ondersteunde taalcode is bijvoorbeeld een tweelettercode zoals gedefinieerd in ISO-639-1. `en`.
 
-* `<language-code>_<country-code>` of `<language-code>-<country-code>`De ondersteunde landcode is bijvoorbeeld een tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166. `en_US`, `en_us`, `en_GB`, `en-gb`.
+* `<language-code>_<country-code>` of `<language-code>-<country-code>`De ondersteunde landcode is bijvoorbeeld een tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166, `en_US`, `en_us`, `en_GB`, `en-gb`.
 
-U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen.  De hoofdpagina van de Franse taalkopie van de site Geometrixx heeft bijvoorbeeld `fr` als de eigenschap Name. Merk op dat het bezit van de Naam als naam van de paginaknooppunt in de bewaarplaats wordt gebruikt, en daarom de weg van de pagina bepaalt. http://localhost:4502/content/geometrixx/fr.html)
+U kunt beide indelingen gebruiken op basis van de structuur die u voor uw globale site hebt gekozen.  De hoofdpagina van de Franse taalkopie van de site Geometrixx heeft bijvoorbeeld `fr` als de eigenschap Name. Het bezit van de Naam wordt gebruikt als naam van de paginaknooppunt in de bewaarplaats, en bepaalt daarom de weg van de pagina. http://localhost:4502/content/geometrixx/fr.html)
 
 In de volgende procedure wordt de voor aanrakingen geoptimaliseerde interface gebruikt om een taalkopie van een website te maken. Voor instructies die de klassieke gebruikersinterface gebruiken, raadpleegt u [Een taalbasis maken met de klassieke gebruikersinterface](/help/sites-administering/tc-lroot-classic.md).
 
@@ -65,7 +65,7 @@ In de volgende procedure wordt de voor aanrakingen geoptimaliseerde interface ge
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
 1. Selecteer de paginasjabloon en klik of tik op Volgende.
-1. Typ in het veld Naam de landcode in de notatie `<language-code>` of `<language-code>_<country-code>`bijvoorbeeld `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Typ een titel voor de pagina.
+1. Typ in het veld Naam de landcode in de notatie `<language-code>` of `<language-code>_<country-code>`, bijvoorbeeld `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Typ een titel voor de pagina.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 

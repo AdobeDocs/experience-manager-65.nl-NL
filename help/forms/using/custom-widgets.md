@@ -12,7 +12,7 @@ discoiquuid: 17a86543-30d3-4e16-a373-67b46d551da9
 docset: aem65
 feature: Mobile Forms
 exl-id: 76bd1e2d-9e65-452c-8cef-123d28886a62
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
@@ -49,7 +49,7 @@ HTML5-formulieren bieden een implementatie van het widgetframework dat kan worde
   </tr>
   <tr>
    <td>getEventMap</td>
-   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> {<br /> vervagen: XFA_EXIT_EVENT,<br /> }<br /> In dit voorbeeld wordt getoond dat de vervaging een HTML-gebeurtenis is en dat XFA_EXIT_EVENT corresponderende XFA-gebeurtenis is. </td>
+   <td>Retourneert een kaart om HTML-gebeurtenissen om te zetten in XFA-gebeurtenissen. <br /> {<br /> vervagen: XFA_EXIT_EVENT,<br /> }<br /> In dit voorbeeld wordt getoond dat de vervaging een HTML-gebeurtenis is en dat XFA_EXIT_EVENT overeenkomt met XFA-gebeurtenis. </td>
   </tr>
   <tr>
    <td>getOptionsMap</td>
@@ -70,7 +70,7 @@ HTML5-formulieren bieden een implementatie van het widgetframework dat kan worde
  </tbody>
 </table>
 
-Als u uw eigen widget wilt maken, neemt u in het hierboven gemaakte profiel verwijzingen op van het JavaScript-bestand dat overschreven functies en nieuw toegevoegde functies bevat. De *sliderNumericFieldWidget* is een widget voor numerieke velden. Als u de widget in uw profiel in de koptekstsectie wilt gebruiken, neemt u de volgende regel op:
+Als u uw eigen widget wilt maken, neemt u in het hierboven gemaakte profiel verwijzingen op van het JavaScript-bestand dat overschreven functies en nieuw toegevoegde functies bevat. Bijvoorbeeld de *sliderNumericFieldWidget* is een widget voor numerieke velden. Als u de widget in uw profiel in de koptekstsectie wilt gebruiken, neemt u de volgende regel op:
 
 ```javascript
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);

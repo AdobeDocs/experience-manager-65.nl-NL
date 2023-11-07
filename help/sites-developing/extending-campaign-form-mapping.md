@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 exl-id: bce6c586-9962-4217-82cb-c837e479abc0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Nadat u de gebeurtenissentabel hebt gemaakt, voert u de **Wizard Databasestructu
 
 ### De zaadtabel uitbreiden {#extending-the-seed-table}
 
-Tik/klik in Adobe Campaign **Toevoegen** om een nieuwe uitbreiding van het **Zaadadressen (nms)** tabel.
+Selecteer in Adobe Campaign **Toevoegen** om een extensie van de **Zaadadressen (nms)** tabel.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 

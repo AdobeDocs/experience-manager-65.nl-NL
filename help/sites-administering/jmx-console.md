@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4950'
+source-wordcount: '4962'
 ht-degree: 0%
 
 ---
@@ -355,7 +355,7 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>option.shareable.nodes.supported</td>
-   <td>true geeft aan dat de opslagplaats het maken van deelbare knooppunten ondersteunt.</td>
+   <td>true geeft aan dat de gegevensopslagruimte het maken van deelbare knooppunten ondersteunt.</td>
   </tr>
   <tr>
    <td>crx.cluster.id</td>
@@ -424,15 +424,15 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>option.xml.import.supported</td>
-   <td>true geeft aan dat de opslagplaats de XML-code die wordt geïmporteerd als inhoud ondersteunt.</td>
+   <td>true geeft aan dat de repository het importeren van XML-code als inhoud ondersteunt.</td>
   </tr>
   <tr>
    <td>node.type.management.same.name.siblings.supported</td>
-   <td>true geeft aan dat de gegevensopslagruimte knooppunten op hetzelfde niveau (knooppunten met hetzelfde bovenliggende knooppunt) met dezelfde naam ondersteunt.</td>
+   <td>true geeft aan dat de gegevensopslagruimte knooppunten op hetzelfde niveau (knooppunten met dezelfde bovenliggende knooppunten) met dezelfde naam ondersteunt.</td>
   </tr>
   <tr>
    <td>node.type.management.residual.definitions.supported</td>
-   <td>true geeft aan dat de opslagplaats naameigenschappen met residudefinities ondersteunt. Als dit wordt ondersteund, kan het kenmerk name van een itemdefinitie een sterretje ("*") zijn.</td>
+   <td>true geeft aan dat de gegevensopslagruimte naameigenschappen met residuele definities ondersteunt. Als dit wordt ondersteund, kan het kenmerk name van een itemdefinitie een sterretje ("*") zijn.</td>
   </tr>
   <tr>
    <td>node.type.management.autocreated.definitions.supported</td>
@@ -456,7 +456,7 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>option.versioning.supported</td>
-   <td>true geeft aan dat de opslagplaats volledige versioning ondersteunt.</td>
+   <td>true geeft aan dat de gegevensopslagruimte volledige versioning ondersteunt.</td>
   </tr>
   <tr>
    <td>jcr.repository.name</td>
@@ -464,7 +464,7 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>option.locking.supported</td>
-   <td>true geeft aan dat de opslagplaats de vergrendeling van knooppunten ondersteunt. Door vergrendeling kan de gebruiker tijdelijk voorkomen dat andere gebruikers wijzigingen aanbrengen.</td>
+   <td>true geeft aan dat de repository het vergrendelen van knooppunten ondersteunt. Door vergrendeling kan de gebruiker tijdelijk voorkomen dat andere gebruikers wijzigingen aanbrengen.</td>
   </tr>
   <tr>
    <td>jcr.repository.version.display</td>
@@ -476,7 +476,7 @@ Informatie over de CRX-opslagplaats
   </tr>
   <tr>
    <td>node.type.management.multivalued.properties.supported</td>
-   <td>true geeft aan dat de gegevensopslagruimte knooppunteigenschappen ondersteunt die nul of meer waarden kunnen hebben.</td>
+   <td>true geeft aan dat de gegevensopslagruimte knoopeigenschappen ondersteunt die nul of meer waarden kunnen hebben.</td>
   </tr>
   <tr>
    <td>option.retention.supported</td>
@@ -894,7 +894,7 @@ De belangrijkste pagina van de console JMX omvat een lijst van de diensten. Elke
 
 ## Externe JMX-toepassingen gebruiken voor bewaking {#using-external-jmx-applications-for-monitoring}
 
-Met CRX kunnen externe toepassingen werken met Beheerde Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Algemene consoles zoals [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) Voor domeinspecifieke controletoepassingen, staat het krijgen en het plaatsen van CRX configuraties en eigenschappen, evenals de controle van prestaties en middelgebruik toe.
+Met CRX kunnen externe toepassingen werken met Beheerde Beans (MBeans) via [Java Management Extensions (JMX)](https://docs.oracle.com/javase/6/docs/technotes/guides/management/overview.html). Algemene consoles zoals [JConsole](https://java.sun.com/developer/technicalArticles/J2SE/jconsole.html) Voor domeinspecifieke controletoepassingen, staat het krijgen en het plaatsen van CRX configuraties en eigenschappen, en de controle van prestaties en middelgebruik toe.
 
 ### Het gebruiken van JConsole om met CRX te verbinden {#using-jconsole-to-connect-to-crx}
 

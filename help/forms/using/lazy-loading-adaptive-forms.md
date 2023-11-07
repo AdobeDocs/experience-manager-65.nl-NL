@@ -6,9 +6,9 @@ topic-tags: develop
 docset: aem65
 feature: Adaptive Forms
 exl-id: f7e3e2cd-0cbe-4b26-9e55-7afc6dc3af63
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ Bij op Forms gebaseerde transacties worden dynamische elementen gebruikt om rele
 * **Regels schrijven om de zichtbaarheid van velden te bepalen**
 Forms bevat enkele velden en secties die niet van toepassing zijn op alle gebruikers en onder alle omstandigheden. Forms-auteurs en -ontwikkelaars gebruiken zichtbaarheids- of show-hide-regels om hun zichtbaarheid te bepalen op basis van gebruikersinvoer. Bijvoorbeeld, wordt het gebied van het Adres van het Bureau niet getoond aan de gebruikers die op het gebied van de Status van de Werkgelegenheid in een vorm werkloos kiezen. Voor meer informatie over het schrijven van regels, zie [Regeleditor gebruiken](../../forms/using/rule-editor.md).
 
-  U kunt zichtbaarheidsregels toepassen in de laaggeladen fragmenten, zodat voorwaardelijke velden alleen worden weergegeven wanneer ze vereist zijn. Markeer ook het voorwaardelijke veld globaal om ernaar te verwijzen in de zichtbaarheidsexpressie van het langzaam geladen fragment.
+  U kunt zichtbaarheidsregels gebruiken in de laaggeladen fragmenten, zodat voorwaardelijke velden alleen worden weergegeven wanneer ze vereist zijn. Markeer ook het voorwaardelijke veld globaal om ernaar te verwijzen in de zichtbaarheidsexpressie van het langzaam geladen fragment.
 
 ## Lazy laden configureren {#configuring-lazy-loading}
 
@@ -73,7 +73,7 @@ U kunt de waarden van objecten in het laaggeladen fragment als globaal markeren,
 
 Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet houden bij het werken met lazy laden zijn:
 
-* Aanbevolen wordt om adaptieve formulieren op basis van XSD-schema&#39;s via op XFA gebaseerde adaptieve formulieren te gebruiken voor het configureren van lazy loading op grote formulieren. De prestatiewinst als gevolg van de lazy loading-implementatie in op XFA gebaseerde adaptieve formulieren is relatief minder dan de toename in op XSD gebaseerde adaptieve formulieren.
+* Gebruik op XSD-schema gebaseerde adaptieve formulieren via op XFA gebaseerde adaptieve formulieren voor het configureren van lazy loading op grote formulieren. De prestatiewinst als gevolg van de lazy loading-implementatie in op XFA gebaseerde adaptieve formulieren is relatief minder dan de toename in op XSD gebaseerde adaptieve formulieren.
 * Het laden van fragmenten in een adaptieve vorm die gebruikmaken van **[!UICONTROL Responsive -everything on one page without navigation]** layout voor het hoofddeelvenster. Als gevolg van de responsieve layoutconfiguratie worden alle fragmenten tegelijkertijd in een adaptieve vorm geladen. Het kan ook leiden tot verminderde prestaties.
 * Het wordt aanbevolen om het laden van het eerste fragment niet in een adaptieve vorm te configureren.
 * Het wordt aanbevolen het laden van fragmenten in het eerste deelvenster dat wordt weergegeven bij het laden van het adaptieve formulier, niet te configureren.
@@ -87,7 +87,7 @@ Enkele beperkingen, aanbevelingen en belangrijke punten waarmee u rekening moet 
 Belangrijke aandachtspunten bij het ontwikkelen van scripts voor luie laadvensters zijn:
 
 * Zorg ervoor dat de initialisatie en de berekening van manuscripten die op de gebieden van een lui geladen fragment worden gebruikt in de aard van de epidemie zijn. Onbetrouwbare scripts zijn scripts die hetzelfde effect hebben, zelfs na meerdere uitvoeringen.
-* Met de algemeen beschikbare eigenschap van velden maakt u de waarde van velden in een wazig venster voor laden beschikbaar voor alle andere deelvensters van een formulier.
+* Met de algemeen beschikbare eigenschap van velden kunt u de waarde van velden in een wazig venster voor het laden beschikbaar maken voor alle andere deelvensters van een formulier.
 * Verwijs geen verwijzingswaarde van een gebied binnen een lui paneel ongeacht gebied door zich globaal over fragmenten wordt duidelijk of niet.
 * Met de functie voor het opnieuw instellen van deelvensters kunt u alle zichtbare elementen in het deelvenster opnieuw instellen met de volgende klikexpressie.\
   guideBridge.resolveNode(guideBridge.getFocus({&quot;focusOption&quot;: &quot;navigablePanel&quot;})).resetData()

@@ -2,9 +2,9 @@
 title: AEM doorsnedenloze vertaalreis
 description: Begin hier voor een begeleide reis door uw inhoud zonder kop te vertalen met AEM krachtige vertaalhulpmiddelen.
 exl-id: 1a9d4c88-b676-4168-a9ef-7d218b39129f
-source-git-commit: f627bc2b58578df1b4ff6c95d87f0c64daafa1c7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1055'
+source-wordcount: '1051'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Het volgende is de persoon die in deze reis interactie heeft.
 | Beheerder | Beheert de basisopstelling en configuratie van AEM | De vertaalspecialist werkt met de beheerder om configuratieveranderingen nodig voor vertaling zoals het installeren van een vertaalschakelaar aan te brengen. |
 | Content Architect | Analyseert de vereisten voor de gegevens die zonder kop moeten worden geleverd en bepaalt de structuur voor deze gegevens | Vertaalspecialisten werken samen met de inhoudarchitect om de organisatie van de inhoud te bepalen zodat het gemakkelijk kan worden vertaald. |
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor iedereen, maar sommige informatie kan voor bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/home.md#journeys)
+De informatie in deze reis kan voor alle mensen nuttig zijn, maar sommige informatie kan aan bepaalde rollen overbodig zijn. Blijf op de hoogte voor [komende reizen die bijkomende rollen bestrijken.](/help/journey-documentation/home.md#journeys)
 
 ## De Headless Translation Reis {#the-journey}
 
@@ -79,7 +79,7 @@ U bent nu klaar om aan de slag te gaan met uw Adobe zonder hoofd-vertaalreis. We
 
 Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal te verstrekken dat u door complexe, onderling samenhangende processen en eigenschappen begeleidt. Een reis illustreert hoe de veelvoudige eigenschappen samenwerken om één enkele bedrijfsbehoefte te dienen.
 
-Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan kan echter met elkaar verwant zijn. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
+Als zodanig zijn reizen zodanig ontworpen dat ze op zichzelf staan. Verschillende kunnen echter aan elkaar zijn gerelateerd. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
 * [Papierreis zonder koppen](/help/journey-headless/author/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om uw inhoud op uw eerste headless project te modelleren.
 * [Architect zonder hoofd](/help/journey-headless/architect/overview.md) - Begin hier voor een introductie van de krachtige, flexibele, eindeloze functies van Adobe Experience Manager en hoe u inhoud voor uw project kunt modelleren.

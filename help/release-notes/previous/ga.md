@@ -2,7 +2,7 @@
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: a51a863a4edf7e8b951a8361c5c7f0517b09f12a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4675'
 ht-degree: 1%
@@ -11,7 +11,7 @@ ht-degree: 1%
 
 # Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5{#general-release-notes-for-adobe-experience-manager}
 
-## Geen informatie {#release-information}
+## Gegevens vrijgeven {#release-information}
 
 | Product | [!DNL Adobe Experience Manager] |
 |---|---|
@@ -43,8 +43,8 @@ De QuickStart gebruikt Eclipse Jetty 9.4.15 als servlet-engine.
 #### Java™-ondersteuning  {#java-support}
 
 * Nieuwe ondersteuning voor Java™ 11 en de reeds ondersteunde Java™ 8.
-* Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Zie voor meer informatie de [installeren en bijwerken](/help/sites-deploying/custom-standalone-install.md) sectie.
-* Java™ 11- en Java™ 8-onderhoudsupdates worden door Adobe gedistribueerd voor gebruik door klanten in AEM gerelateerde projecten, wanneer deze niet openbaar zijn vanuit Oracle.
+* Overschrijf voor optimale prestaties de standaard GC-waarden met andere waarden. Zie de klasse [installeren en bijwerken](/help/sites-deploying/custom-standalone-install.md) sectie.
+* Java™ 11- en Java™ 8-onderhoudsupdates worden door de Adobe gedistribueerd voor gebruik door de klant in aan AEM gerelateerde projecten, wanneer deze niet algemeen beschikbaar zijn vanuit het Oracle.
 
 #### Java™-ontwikkeling {#java-development}
 
@@ -62,7 +62,7 @@ Er zijn verschillende verbeteringen aangebracht in de interface om deze producti
 
 >[!CAUTION]
 >
->Adobe is niet van plan om verdere verhogingen aan Klassieke UI te maken. AEM 6.5 heeft de klassieke gebruikersinterface inbegrepen, en klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Klassieke UI blijft volledig gesteund terwijl wordt afgekeurd. [Meer informatie](/help/sites-deploying/ui-recommendations.md).
+>De Adobe is niet van plan om verdere verhogingen aan Klassieke UI te maken. AEM 6.5 heeft de klassieke gebruikersinterface inbegrepen, en klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Klassieke UI blijft volledig gesteund terwijl wordt afgekeurd. [Meer informatie](/help/sites-deploying/ui-recommendations.md).
 
 #### Zoeken en indexeren {#indexing-and-search}
 
@@ -73,22 +73,22 @@ Er zijn verschillende verbeteringen aangebracht in de interface om deze producti
 
 * Directe upgrade naar AEM 6.5 wordt ondersteund voor klanten die AEM 6.2, 6.3 en 6.4 uitvoeren. Klanten die 5.x of 6.0/6.1 gebruiken die op plaats verbetering willen gebruiken moeten eerst aan 6.4 bevorderen. Voer vervolgens een upgrade uit naar 6.5 of voer een upgrade uit door de inhoud tussen de verschillende exemplaren rechtstreeks over te brengen naar AEM 6.5.
 * De upgradeprocedure blijft grotendeels dezelfde in paragraaf 6.5.
-* We blijven de functies Achterwaartse compatibiliteit, Complexiteitsbeoordeling upgraden en Duurzame upgrades ondersteunen die in 6.4 zijn geïntroduceerd. Er zijn waar nodig versiespecifieke updates aangebracht op deze gebieden.
+* We blijven de functies Achterwaartse compatibiliteit, Complexiteitsbeoordeling upgraden en Duurzame upgrades die in 6.4 zijn geïntroduceerd, ondersteunen. Er zijn waar nodig versiespecifieke updates aangebracht op deze gebieden.
 * Het pakket Patroondetector is nu vereenvoudigd. Er is één pakket dat verbeteringen aan 6.5 voor de beschikbare bronversies evalueert.
 * Voor details over verbeteringsprocedure, zie [upgradedocumentatie](/help/sites-deploying/upgrade.md).
 
 #### Projecten en workflows {#projects-and-workflows}
 
-* De nieuwe die redacteur van het Model van het Werkschema in 6.4 wordt geïntroduceerd is verbeterd om meer verrichtingen zoals Exemplaar en Publiceren, veranderlijke steun in de stappen van het Werkschema en verbeterd op te nemen `OR` en `AND` splitsen.
+* De nieuwe die redacteur van het Model van het Werkschema in 6.4 wordt geïntroduceerd is verbeterd om meer verrichtingen zoals Exemplaar en Publiceren, veranderlijke steun in de stappen van het Werkschema en verbeterd te omvatten `OR` en `AND` splitsen.
 
 #### Bewaarplaats {#repository}
 
-* De basis voor Adobe Experience Manager 6.5 is gebaseerd op de bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java™ Content Repository: Apache Jackrabbit Oak 1.10.2.
-* Voor een overzicht van de vaste problemen raadpleegt u [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) en [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
+* De basis van Adobe Experience Manager 6.5 bouwt voort op de bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java™ Content Repository: Apache Jackrabbit Oak 1.10.2.
+* Zie voor een overzicht van de vaste problemen [Apache Jackrabbit Oak Jira v. 1.10.0](https://archive.apache.org/dist/jackrabbit/oak/1.10.0/RELEASE-NOTES.txt), [Apache Jackrabbit Oak Jira v. 1.10.1](https://archive.apache.org/dist/jackrabbit/oak/1.10.1/RELEASE-NOTES.txt) en [Apache Jackrabbit Oak Jira v. 1.10.2](https://archive.apache.org/dist/jackrabbit/oak/1.10.2/RELEASE-NOTES.txt).
 
 >[!CAUTION]
 >
->De nieuwe versie van de Oak Segment Tar, die sinds AEM 6.3 aanwezig is, vereist een repository migratie. Deze stap is verplicht als u een upgrade uitvoert van een oudere versie van TarMK of als u de nieuwe segmentmarkering wilt overschakelen van een ander type persistentie. Voor meer informatie over wat de voordelen van het nieuwe Segment Tar zijn, zie [Veelgestelde vragen over migreren naar eikensegment](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
+>De nieuwe versie van de Oak Segment Tar, die sinds AEM 6.3 aanwezig is, vereist een repository migratie. Deze stap is verplicht als u een upgrade uitvoert van een oudere versie van TarMK of als u de nieuwe segmentmarkering wilt overschakelen van een ander type persistentie. Zie voor meer informatie over de voordelen van de nieuwe segmentmarkering de [Veelgestelde vragen over migreren naar eikensegment](/help/sites-deploying/revision-cleanup.md#migrating-to-oak-segment-tar).
 
 #### OSGI {#osgi}
 
@@ -96,7 +96,7 @@ Er zijn verschillende verbeteringen aangebracht in de interface om deze producti
 
 #### Beveiliging {#security}
 
-* Vervaldatum toegevoegd wachtwoord voor gebruiker admin.
+* Wachtwoordvervaldatum voor Admin-gebruiker toegevoegd.
 
 #### Webserver {#web-server}
 
@@ -110,7 +110,7 @@ De paginabewerker voegt de mogelijkheid toe om inhoud in context te bewerken en 
 
 De eerste verscheepte als deel van AEM 6.4 SP2, met AEM 6.5 de SPA steun krijgt volgende mogelijkheden:
 
-* De Redacteur van het Malplaatje van het gebruik om de AEM editable delen van de SPA uit te geven en te vormen
+* Gebruik de Redacteur van het Malplaatje om de AEM editable delen van de SPA uit te geven en te vormen
 * Gebruik beheer op meerdere locaties om ervaringen met landspecifieke SPA, franchise of witte labels te maken
 
 #### Beheer van inhoud zonder hoofd {#headless-content-management}
@@ -137,7 +137,7 @@ Efficiënt ontwerpen, leveren en optimaliseren van ervaringen op alle digitale s
 * Personaliseer door plaats of configuratie van gegevens teweeggebrachte inhoud door dynamische placeholders te gebruiken.
 * Verenigde inzichten gedreven door de integratie van Adobe Analytics in AEM Screens Player
 
-Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen bij de release in het dialoogvenster [AEM Screens-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
+Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen bij de release in de [AEM Screens-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-screens/user-guide/aem-screens-introduction.html?lang=en).
 
 #### Component- en sjabloonontwikkeling {#component-amp-template-development}
 
@@ -147,25 +147,25 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 
    * operator &quot;in&quot; voor tekenreeksen, arrays en objecten:
 
-      ```html
-      ${'a' in 'abc'}
-      ${100 in myArray}
-      ${'a' in myObject}
-      ```
+     ```html
+     ${'a' in 'abc'}
+     ${100 in myArray}
+     ${'a' in myObject}
+     ```
 
    * Declaraties van variabelen met subset van gegevens:
-      `<sly data-sly-set.title="${currentPage.title}"/>${title}`
+     `<sly data-sly-set.title="${currentPage.title}"/>${title}`
 
-   * Controleparameters weergeven en herhalen: begin, stap, einde:
-      `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
+   * De controleparameters van de lijst en van de herhaling: begin, stap, eind:
+     `<h2 data-sly-repeat="${currentPage.listChildren @ begin = 1, step=2}">${item.title}</h2>`
 
    * Id&#39;s voor terugloop van gegevensdoorhaling:
 
-      ```html
-      <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
-      text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
-      </div>
-      ```
+     ```html
+     <div data-sly-unwrap.isUnwrapped="${myCondition || myOtherCondition}">
+     text <span data-sly-test="${isUnwrapped}>is unwrapped</code>
+     </div>
+     ```
 
    * Ondersteuning voor negatieve getallen
 
@@ -181,7 +181,7 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 
 >[!CAUTION]
 >
->AEM bevat versie 1.12.4 van de jQuery-bibliotheek voor maximale compatibiliteit met bestaande aangepaste code. Adobe heeft wijzigingen aangebracht om bekende beveiligingsproblemen aan te pakken.
+>AEM bevat versie 1.12.4 van de jQuery-bibliotheek voor maximale compatibiliteit met bestaande aangepaste code. De Adobe heeft wijzigingen aangebracht om bekende beveiligingsproblemen aan te pakken.
 
 #### Sitebeheer {#site-administration}
 
@@ -194,10 +194,10 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 * In-context bewerken en samenstellen van app-ervaringen van één pagina toestaan die zijn opgebouwd met React en Angular client-side componenten die de JS SDK gebruiken (ook wel SPA Editor genoemd)
 * De modus Basisstructuur wordt alleen weergegeven als op de pagina een basispagina is geconfigureerd.
 
-#### Inhoudsfragmenten en -editor {#content-fragments-amp-editor}
+#### Inhoudsfragmenten en editor {#content-fragments-amp-editor}
 
 * Nieuw [Annotaties](/help/assets/content-fragments/content-fragments-variations.md#viewing-editing-deleting-annotations) rail in de Inhoudsfragmenteditor om algemene opmerkingen te maken en opmerkingen te bekijken die in de tekst zijn gemaakt (ook weergegeven in de tijdlijntrack)
-* Mogelijkheid om het standaard inhoudstype van een tekstelement met meerdere regels in te stellen in een [Inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md) aan eenvoudige tekst, rijke tekst of prijsverhoging
+* Mogelijkheid om het standaardinhoudstype van een tekstelement met meerdere regels in te stellen in een [Inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md) aan eenvoudige tekst, rijke tekst of prijsverhoging
 * Toevoegen [opmerking/annotaties](/help/assets/content-fragments/content-fragments-variations.md#annotating-a-content-fragment) door tekst in RTE (volledig-schermmening) te selecteren
 * [Versies vergelijken](/help/assets/content-fragments/content-fragments-managing.md#comparing-fragment-versions) van een inhoudsfragment naast elkaar via referentieslegel
 * In het rapport Downloaden van middelen worden nu inhoudsfragmenten dienovereenkomstig weergegeven
@@ -241,7 +241,6 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 >
 >* Beide `at.js. 1.x` en `at.js 2.x` worden gesteund als u de uitvoer van het Fragment van de Ervaring naar Doel en lopende Activiteiten binnen de console van Target gebruikt.
 
-
 * Adobe Target-integratie gebruikt nu de standaard-API van het doel. Eerdere versies van AEM gebruiken de Classic HTTP-API van Target, die nu is afgekeurd.
 * Adobe Target `mbox.js` versie 63 is opgenomen. Adobe raadt u ten zeerste aan over te schakelen op `at.js` v1.x.
 * `at.js` versie 1.5.0 is nu inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) aan `at.js` v1.x naar de site.
@@ -249,11 +248,11 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 #### AEM en Adobe Analytics {#aem-amp-adobe-analytics}
 
 * `s_code.js` H.27.5 is inbegrepen. Adobe raadt u aan over te schakelen op `AppMeasurement.js`
-* `AppMeasurement.js` v1.8.0 is inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) om AppMeasurement.js op de site te plaatsen.
+* `AppMeasurement.js` v1.8.0 is inbegrepen. Adobe raadt u aan [Adobe Experience Platform Launch](https://business.adobe.com/products/experience-platform/launch.html) om AppMeasurement.js in de plaats te verstrekken.
 
 #### AEM en handel {#aem-commerce}
 
-De verbeteringen aan het Kader van de Integratie van de Handel zijn op een snellere versiecyclus sinds AEM 6.4. [Meer informatie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
+Verbeteringen aan het Commerce integration framework verlopen sneller sinds AEM 6.4. [Meer informatie hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/magento.html).
 
 #### Invoegtoepassing Gemeenschappen {#communities-add-on}
 
@@ -272,13 +271,13 @@ De gemeenschapsbeheerders moeten **Menu inschakelen** op communautaire component
 
 **Groepsberichten**
 
-Geregistreerde leden van de community kunnen nu bulksgewijs directe berichten naar groepen verzenden via één e-mailcompositie, in plaats van hetzelfde bericht afzonderlijk naar groepsleden te verzenden. Om toe te staan [groepsberichten](/help/communities/configure-messaging.md), beide instanties van [Service voor berichtenverkeer](/help/communities/messaging.md#group-messaging).
+Geregistreerde leden van de community kunnen nu bulksgewijs directe berichten naar groepen verzenden via één e-mailcompositie, in plaats van hetzelfde bericht afzonderlijk naar groepsleden te verzenden. Toestaan [groepsberichten](/help/communities/configure-messaging.md), schakelt u beide [Service voor berichtenverkeer](/help/communities/messaging.md#group-messaging).
 
 ![Groepsbericht](/help/release-notes/assets/group-messaging.png)
 
 ##### Verbeteringen voor Bulk Moderation {#enhancements-to-bulk-moderation}
 
-Aangepaste filters in Bulk Moderatie
+Aangepaste filters in Bulk-moderatie
 
 [Aangepaste filters](/help/communities/moderation.md#custom-filters) kan nu worden ontwikkeld en aan BulkModeration UI worden toegevoegd.
 
@@ -309,7 +308,7 @@ Sitebeheerders kunnen een groep op elk hiërarchisch niveau maken en de standaar
 De enablement-functionaliteit van AEM 6.5 Communities ondersteunt Shareable Content Object Reference Model [(SCORM) 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) motor.
 
 * Ondersteuning voor toetsenbordnavigatie op schakelingscomponenten
-* De componenten van Enablement (bijvoorbeeld Catalog en Course die spelen, Toewijzingen, de Bibliotheek van het Dossier) in AEM Communities steunen toetsenbordnavigatie voor betere toegankelijkheid.
+* De componenten van Enablement (bijvoorbeeld, Catalog en Cursus het Spelen, Toewijzingen, de Bibliotheek van het Dossier) in AEM Communities steunen toetsenbordnavigatie voor betere toegankelijkheid.
 
 ##### Andere verbeteringen {#other-enhancements}
 
@@ -330,7 +329,7 @@ Lees verder om de specifieke mogelijkheden en integratie van [!DNL Experience Ma
 
 [!DNL Adobe Asset Link] versterkt de samenwerking tussen creatieve en marketingmedewerkers bij het maken van inhoud. Creatieven hebben toegang tot inhoud die is opgeslagen in [!DNL Experience Manager Assets], zonder de toepassingen te verlaten die ze het meest kennen. Met het deelvenster in de app in kunt u op een naadloze manier door middelen bladeren, zoeken, uitchecken en inchecken [!DNL Adobe Photoshop], [!DNL Adobe Illustrator], en [!DNL Adobe InDesign] apps.
 
-[!DNL Adobe Asset Link] maakt deel uit van [Creative Cloud voor bedrijven](https://www.adobe.com/creativecloud/business/enterprise.html) aanbieden. Voor meer informatie over het, met inbegrip van noodzakelijke configuratie van uw [!DNL Experience Manager] implementatie, zie [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
+[!DNL Adobe Asset Link] maakt deel uit van [Creative Cloud voor ondernemingen](https://www.adobe.com/creativecloud/business/enterprise.html) aanbieden. Voor meer informatie, met inbegrip van noodzakelijke configuratie van uw [!DNL Experience Manager] implementatie, zie [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html).
 
 ![Middelen zoeken in Adobe Photoshop](/help/release-notes/assets/asset_search_photoshop.png)
 
@@ -338,7 +337,7 @@ Lees verder om de specifieke mogelijkheden en integratie van [!DNL Experience Ma
 
 Uw organisatie kan [!DNL Adobe Stock] ondernemingsplan binnen [!DNL Experience Manager Assets] om ervoor te zorgen dat gelicentieerde activa algemeen beschikbaar zijn voor uw creatieve en marketing projecten. U kunt snel zoeken, voorvertonen en licenties maken [!DNL Adobe Stock] middelen die in Experience Manager worden bewaard, die de krachtige mogelijkheden DAM van [!DNL Experience Manager].
 
-[!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
+[!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen hoogwaardige, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
 
 Zie voor meer informatie [Adobe Stock-middelen gebruiken in Experience Manager Assets](/help/assets/aem-assets-adobe-stock.md).
 
@@ -348,7 +347,7 @@ Zie voor meer informatie [Adobe Stock-middelen gebruiken in Experience Manager A
 
 ![De gelicentieerde Adobe Stock-afbeeldingen zoeken en filteren in Experience Manager](/help/release-notes/assets/aem-search-filters2.jpg)
 
-*Afbeelding: De licentie zoeken en filteren [!DNL Adobe Stock] afbeeldingen in [!DNL Experience Manager].*
+*Afbeelding: De gelicentieerde bestanden zoeken en filteren [!DNL Adobe Stock] afbeeldingen in [!DNL Experience Manager].*
 
 ##### Dynamische verwijzingen in [!DNL Adobe InDesign] {#dynamic-references-in-indesign}
 
@@ -368,11 +367,11 @@ In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, 
 
 ![Een element slepen vanuit een [!DNL Experience Manager] implementatie op een [!DNL Sites] pagina van een andere [!DNL Experience Manager] implementatie](/help/release-notes/assets/connected-assets-drag-and-drop-only.gif)
 
-*Afbeelding: Een element slepen vanuit een [!DNL Experience Manager] implementatie op een [!DNL Sites] pagina op een andere pagina [!DNL Experience Manager] implementatie.*
+*Figuur: Sleep activa van een activa [!DNL Experience Manager] implementatie op een [!DNL Sites] pagina op een andere pagina [!DNL Experience Manager] implementatie.*
 
 ####  Dynamic Media  {#dynamic-media}
 
-[!DNL Dynamic Media] biedt verbeterde mogelijkheden voor het schrijven en leveren van rijke media in [!DNL Experience Manager Assets] om geavanceerde ervaringen te stimuleren die meeslepend en gepersonaliseerd zijn. Door één primair middel van hoge kwaliteit te uploaden en geavanceerde cloudrendering en viewers van hoge kwaliteit te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediastrategie van uw organisatie.
+[!DNL Dynamic Media] biedt verbeterde mogelijkheden voor het schrijven en leveren van rijke media in [!DNL Experience Manager Assets] om geavanceerde ervaringen te stimuleren die diepgaand en gepersonaliseerd zijn. Door één primaire bron van hoge kwaliteit te uploaden en de geavanceerde cloudweergave en viewers van Adobe te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediabeleid van uw organisatie.
 
 Meer informatie over nieuwe [!DNL Dynamic Media] functies, zie [Opmerkingen bij de release van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/release-notes/s7rn2017.html).
 
@@ -394,7 +393,7 @@ U kunt de miniaturen voor uw video-elementen nu aanpassen met frames uit de vide
 
 ![Het aantal elementen weergeven zonder zoekresultaten te filteren in zoekfacetten](/help/assets/assets/asset_search_results_in_facets_filters.png)
 
-*Afbeelding: Zie het aantal elementen zonder zoekresultaten te filteren in zoekfacetten.*
+*Figuur: Zie het aantal activa zonder het filtreren onderzoeksresultaten in onderzoeksfacetten.*
 
 #### Verbetering van bruikbaarheid {#usability-enhancement}
 
@@ -419,7 +418,7 @@ De Inhoudsfragmenten en de aandelen van de verbinding zijn nu inbegrepen in het 
 AEM 6.5 Forms biedt verschillende nieuwe functies en verbeteringen. De hooglichten omvatten:
 
 * Transactierapporten om het aantal ingediende formulieren, verwerkte documenten en gerenderde documenten bij te houden
-* Verbeteringen in bruikbaarheid van interactieve communicatie
+* Verbeteringen van de bruikbaarheid van interactieve communicatie
 * Digitale handtekeningen op basis van cloud in adaptieve formulieren
 * Aangepaste formulieren en interactieve communicatie insluiten in een AEM Sites-toepassing van één pagina (SPA).
 * Ondersteuning voor variabelen in AEM Workflows
@@ -433,7 +432,7 @@ Zie de [Overzicht van nieuwe functies en verbeteringen in AEM 6.5 Forms](/help/f
 
 Adobe gebruikt een klantgericht ontwikkelingsmodel dat klanten toestaat om aan alle stadia van het ontwikkelingsproces, tijdens specificatie, ontwikkeling, en het testen bij te dragen. Onze dank gaat uit naar alle klanten en partners die een bijdrage leveren aan dit proces.
 
-Adobe heeft de procedures en de processen op zijn plaats om inzameling, prioritering, en het volgen van klant-geconcentreerde insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. De [Experience Manager Support-portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) is geïntegreerd met het Adobe-systeem voor verbetering en foutopsporing. De vragen van de klant worden geïdentificeerd en opgelost door het team van de Steun van de Klant waar mogelijk. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun, garantiekwesties, en klant-betaalde verhogingen.
+De Adobe heeft de procedures en de processen op zijn plaats om inzameling, prioritering, en het volgen van klant-geconcentreerde insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. De [Experience Manager Support Portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) is geïntegreerd met de Adobe Verbetering en Systeem voor het opsporen van defecten. De vragen van de klant worden geïdentificeerd en opgelost door het team van de Steun van de Klant waar mogelijk. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun, garantiekwesties, en klant-betaalde verhogingen.
 
 Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgeleverd die in AEM 6.5 worden bevestigd.
 
@@ -502,7 +501,7 @@ Voor opstellingsvereisten, zie [installatie-instructies](/help/sites-deploying/c
 
 Zie voor gedetailleerde instructies [upgradedocumentatie](/help/sites-deploying/upgrade.md).
 
-## Ondersteunde Platforms {#supported-platforms}
+## Ondersteunde platforms {#supported-platforms}
 
 Zoek de volledige matrix van ondersteunde platforms, inclusief ondersteuning op [AEM 6.5 technische voorschriften](/help/sites-deploying/technical-requirements.md).
 
@@ -512,7 +511,7 @@ Zoek de volledige matrix van ondersteunde platforms, inclusief ondersteuning op 
 
 ## Verouderde en verwijderde functies {#deprecated-and-removed-features}
 
-Adobe evalueert constant mogelijkheden in het product en in tijd plannen om mogelijkheden met krachtigere versies te vervangen, of besluit om geselecteerde delen opnieuw uit te voeren om beter voor toekomstige verwachtingen of uitbreidingen worden voorbereid.
+De Adobe evalueert constant mogelijkheden in het product en in tijd plannen om mogelijkheden met krachtigere versies te vervangen, of besluit om geselecteerde delen opnieuw uit te voeren om beter voor toekomstige verwachtingen of uitbreidingen worden voorbereid.
 
 Voor [!DNL Adobe Experience Manager] 6.5 [lees de lijst met afgekeurde en verwijderde mogelijkheden](/help/release-notes/deprecated-removed-features.md). De pagina bevat ook een vooraankondiging van wijzigingen die in de toekomst zullen plaatsvinden en een belangrijke kennisgeving voor klanten die een update uitvoeren van eerdere releases.
 
@@ -522,20 +521,20 @@ Voor [!DNL Adobe Experience Manager] 6.5 [lees de lijst met afgekeurde en verwij
 
 * Er wordt een probleem gerapporteerd waarbij de CRX-Quickstart en de inhoud ervan worden verwijderd.
 
-   Controleer bij elk van deze handelingen of de eigenschap `htmllibmanager.fileSystemOutputCacheLocation` is geen lege tekenreeks:
+  Controleer bij elk van deze handelingen of de eigenschap `htmllibmanager.fileSystemOutputCacheLocation` is geen lege tekenreeks:
 
    1. Aanroepen `/libs/granite/ui/content/dumplibs.rebuild.html?invalidate=true`.
    2. Upgrade naar AEM 6.5.
    3. Uitvoeren van &quot;luie migratie van inhoud&quot; op AEM 6.5.
 
-   A [Kennisbank](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) het artikel is beschikbaar met meer details en de oplossing voor deze kwestie .
+  A [Kennisbank](https://helpx.adobe.com/experience-manager/kb/avoid-crx-quickstart-deletion-in-aem-6-5.html) het artikel is beschikbaar met meer details en de oplossing voor deze kwestie .
 
 * Als u JDK 11 met AEM 6.5 instantie gebruikt, zouden sommige pagina&#39;s als leeg kunnen tonen na het opstellen van sommige pakketten. Het volgende foutbericht wordt weergegeven in het logbestand:
 
-   ```java
-   *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
-   java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
-   ```
+  ```java
+  *ERROR* [OsgiInstallerImpl] org.apache.sling.scripting.sightly bundle org.apache.sling.scripting.sightly:1.1.2.1_4_0 (558)[org.apache.sling.scripting.sightly.impl.engine.extension.use.JavaUseProvider(3345)] : Error during instantiation of the implementation object (java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl)
+  java.lang.NoClassDefFoundError: jdk/internal/reflect/ConstructorAccessorImpl
+  ```
 
 Deze fout oplossen:
 
@@ -555,23 +554,23 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
 
 ### Assets {#assets}
 
-* **Zoeken:** Er wordt geen zoekopdracht geretourneerd als de zoektekenreeks voorloopspaties bevat ([OAK-4786](https://issues.apache.org/jira/browse/OAK-4786))
+* **Zoeken:** Er wordt geen zoekopdracht geretourneerd als de zoektekenreeks voorloopspaties bevat ([4786](https://issues.apache.org/jira/browse/OAK-4786))
 * **Metagegevensschema van map**: Nadat u een keuzerondje hebt toegevoegd, worden het veld Id en Waarde niet weergegeven zoals u had verwacht en werkt de verwijderfunctie niet. (CQ-4261144)
 * Wanneer u de naam van een element wijzigt, is het niet mogelijk een witruimte in de elementnaam te gebruiken. (CQ-4266403)
 
 ### Forms {#forms}
 
 * Als AEM Forms is geïnstalleerd op het Linux®-besturingssysteem, werkt Digital Signature with Hardware Security Module niet. (CQ-4266721)
-* (Alleen AEM Forms op WebSphere®) De **Forms Workflow** > **Zoeken in taken** Deze optie geeft geen resultaat als u naar een **Beheerder** with **Gebruikersnaam** als de zoekcriteria. (CQ-4266457)
+* (Alleen AEM Forms op WebSphere®) De **Forms Workflow** > **Zoeken in taken** Deze optie geeft geen resultaat als u naar een **Beheerder** with **Gebruikersnaam** als de zoekcriteria. (CQ-426457)
 
 * AEM Forms converteert TIF- en TIFF-bestanden met JPEG-compressie niet naar PDF-documenten. (CQ-4265972)
-* De **AEM Forms Assets Scanner** en **Letter to Interactive Communication Migration** de opties werken niet op de **AEM Forms-migratie** pagina. (CQ-4266572)
+* De **AEM Forms Assets Scanner** en **Letter to Interactive Communication Migration** de opties werken niet op **AEM Forms-migratie** pagina. (CQ-4266572)
 
 * (Alleen JBoss® 7) Wanneer u een upgrade uitvoert van een vorige versie naar AEM 6.5 Forms en de vorige versie processen (.lca) had die een kopie van het standaard verzendings- of standaardrenderproces hebben gemaakt en gebruikt, kan HTML5 Forms die dergelijke processen (.lca) gebruikt, de vereiste handelingen niet uitvoeren. (CQ-4243928)
 * Wanneer een formuliergegevensmodelservice wordt aangeroepen vanuit de regeleditor om de waarden van de afbeeldingskeuzescomponent dynamisch bij te werken, worden de waarden van de afbeeldingskeuzeselectie niet bijgewerkt. (CQ-4254754)
 * Voor het installatieprogramma van AEM Forms Designer is de 32-bits versie van [Visuele C++ redistributable runtime package 2012](https://docs.microsoft.com/en-US/cpp/windows/latest-supported-vc-redist?view=msvc-170) en [Visuele C++ redistributable runtime pakketten 2013](https://support.microsoft.com/en-us/topic/update-for-visual-c-2013-and-visual-c-redistributable-package-5b2ac5ab-4139-8acc-08e2-9578ec9b2cf1). Zorg ervoor dat de eerder vermelde herdistribueerbare runtimepakketten zijn geïnstalleerd voordat u de installatie start. (CQ-4265668)
 
-* PDF Generator ondersteunt geen verificatie op basis van smartcards. Wanneer een beheerder het Beleid van de Groep toelaat `Interactive Logon: Require Smart card` op een Windows-server worden alle bestaande PDF Generator-gebruikers ongeldig gemaakt.
+* PDF Generator biedt geen ondersteuning voor verificatie op basis van smartcards. Wanneer een beheerder het Beleid van de Groep toelaat `Interactive Logon: Require Smart card` op een Windows-server worden alle bestaande PDF Generatoren ongeldig gemaakt.
 
 * Wanneer een adaptief formulier is geconfigureerd om de waarden van een component dynamisch bij te werken en het publicatie-exemplaar dat als host fungeert voor het formulier via de Dispatcher, werkt de functionaliteit om de waarden van een veld dynamisch bij te werken niet meer. Als u het probleem wilt oplossen, opent u CRXDE in de publicatie-instantie en navigeert u naar `/libs/fd/af/runtime/clientlibs/guideChartReducer`en maakt u de eigenschap die hieronder wordt vermeld.
 
@@ -580,21 +579,21 @@ org.osgi.framework.bootdelegation=sun.*,com.sun.*,jdk.internal.reflect,jdk.inter
    * Waarde: true
    * Beveiligd: Onwaar
    * Verplicht: Onwaar
-   * Meerdere: Onwaar
+   * Meerdere: onwaar
    * Automatisch gemaakt: Onwaar
 
-   Met deze eigenschap hebben de clientbibliotheken in de runtimemap toegang tot proxy&#39;s. (CQ-4268679)
+  Met deze eigenschap hebben de clientbibliotheken in de runtimemap toegang tot proxy&#39;s. (CQ-4268679)
 
-* Wanneer AEM Forms wordt gestart, wordt `SAX Security Manager could not be setup` verschijnt.
+* Wanneer AEM Forms wordt gestart, wordt `SAX Security Manager could not be setup` wordt weergegeven.
 * Als u een PDF die is beveiligd met AEM Forms Document Security opent op een Apple iOS of iPadOS met versie 20.10.00 van Adobe Acrobat Reader
 * Wanneer u een formulier verzendt met een standaard HTML-uploadveld van een Apple iOS-apparaat, wordt soms de inhoud van het bestand niet verzonden en wordt aan de andere kant een bestand van 0 byte ontvangen. Apple iOS 15.1 biedt een oplossing voor het probleem.
 
 ## Productdownload en -ondersteuning (beperkt aantal sites) {#product-download-and-support-restricted-sites}
 
-De volgende sites zijn alleen beschikbaar voor klanten. Als u een klant bent en toegang nodig hebt, neemt u contact op met uw Adobe-accountmanager.
+De volgende sites zijn alleen beschikbaar voor klanten. Als u een klant bent en toegang nodig hebt, neemt u contact op met uw accountmanager van de Adobe.
 
 * [Product downloaden op licensing.adobe.com](https://licensing.adobe.com/).
 
 * Productupdates, patches en pakketten voor extra functionaliteit op [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe Customer Support-ervaring](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).
+* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie voor meer informatie [Nieuwe Adobe voor klantenondersteuning](https://experienceleague.adobe.com/docs/customer-one/using/home.html?lang=en).

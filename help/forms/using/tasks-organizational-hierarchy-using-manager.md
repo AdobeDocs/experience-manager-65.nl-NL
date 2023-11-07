@@ -1,17 +1,13 @@
 ---
 title: Taken in een organisatiehiërarchie beheren met de beheerweergave
-seo-title: Managing tasks in an organizational hierarchy using Manager View
 description: Hoe managers en organisatiehoofden toegang hebben tot de taken van hun directe en indirecte rapporten en deze kunnen bewerken op het tabblad Te doen in de AEM Forms-werkruimte.
-seo-description: How managers and organization heads can access and work on the tasks of their direct and indirect reports in the To-do tab in AEM Forms workspace.
-uuid: c44c55e6-6cc1-417d-8e89-c8d5c32914c8
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 2e60df86-d8ff-4cf9-b801-9559857b5ff4
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -24,7 +20,7 @@ In de werkruimte van AEM Forms, kunnen de managers tot de taken nu toegang hebbe
 
 **Doorsturen** Een taak door:sturen van direct rapport aan om het even welke gebruiker.
 
-**Claim** Vorderen van een taak van een rechtstreeks verslag.
+**Claim** Vordering van een rechtstreekse verslaglegging.
 
 **Claim &amp; Openen** Vordeer een taak van een direct rapport en open het automatisch in de te doen lijst van de manager.
 
@@ -32,7 +28,7 @@ In de werkruimte van AEM Forms, kunnen de managers tot de taken nu toegang hebbe
 
 AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de gebruiker toegangsbeheer (ACL) heeft. Een dergelijke controle zorgt ervoor dat een gebruiker alleen de taken kan ophalen waarop de gebruiker toegangsmachtigingen heeft. Met behulp van externe webservices en implementaties om de hiërarchie te definiëren, kan een organisatie de definitie van manager en directe rapporten aanpassen aan hun behoeften.
 
-1. Maak een DSC. Voor meer informatie, zie het onderwerp van &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;in [Programmeren met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) hulplijn.
+1. Maak een DSC. Zie het onderwerp &#39;Componenten ontwikkelen voor AEM Forms&#39; in voor meer informatie [Programmeren met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) hulplijn.
 1. In DSC, bepaal nieuw SPI voor hiërarchiebeheer om directe rapporten en hiërarchie binnen de gebruikers van AEM Forms te bepalen. Hier volgt een voorbeeld van een Java™-codefragment.
 
    ```java
@@ -68,7 +64,7 @@ AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de ge
    }
    ```
 
-1. Maak een bestand component.xml. Zorg ervoor dat de specificatie-id gelijk is aan de code die hieronder wordt weergegeven. Hieronder volgt een voorbeeldcodefragment dat u opnieuw kunt gebruiken.
+1. Maak een bestand component.xml. Zorg ervoor dat de specificatie-id hetzelfde is als in het codefragment hieronder. Hier volgt een voorbeeldcodefragment dat u opnieuw kunt gebruiken.
 
    ```xml
    <component xmlns="https://adobe.com/idp/dsc/component/document">

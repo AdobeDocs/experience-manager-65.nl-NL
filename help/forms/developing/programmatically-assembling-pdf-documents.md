@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
 exl-id: 7d6fd230-e477-4286-9fb3-18a3474e3e48
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2124'
+source-wordcount: '2123'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ In dit DDX-document worden twee PDF-documenten samengevoegd met de naam *map.pdf
 
 >[!NOTE]
 >
->Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overwegingen bij het aanroepen van de Assembler-service met behulp van webservices {#considerations-when-invoking-assembler-service-using-web-services}
 
@@ -91,7 +91,7 @@ als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassings
 
 **Een PDF Assembler-client maken**
 
-Voordat u programmatically een verrichting van de Assembler kunt uitvoeren, moet u een cliënt van de Assembler tot stand brengen.
+Voordat u een Assembler-bewerking programmatisch kunt uitvoeren, moet u een Assembler-client maken.
 
 **Verwijzen naar een bestaand DDX-document**
 
@@ -105,7 +105,7 @@ Zowel het bestand map.pdf als het bestand direction.pdf moeten in een verzamelin
 
 >[!NOTE]
 >
->An `AssemblerResult` object, dat een verzamelingsobject bevat, wordt geretourneerd wanneer u het object activeert `invokeDDX` bewerking. Deze bewerking wordt gebruikt wanneer u twee of meer invoerdocumenten van PDF doorgeeft aan de Assembler-service. Als u echter maar één invoerdocument doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de instelling `invokeOneDocument` bewerking. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Voor informatie over het gebruik van deze bewerking raadpleegt u [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
+>An `AssemblerResult` object, dat een verzamelingsobject bevat, wordt geretourneerd wanneer u het object activeert `invokeDDX` -bewerking. Deze bewerking wordt gebruikt wanneer u twee of meer invoerdocumenten van PDF doorgeeft aan de Assembler-service. Als u echter maar één invoerdocument doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de instelling `invokeOneDocument` -bewerking. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Zie voor informatie over het gebruik van deze bewerking [Gecodeerde PDF-documenten samenstellen](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents).
 
 **Uitvoeringsopties instellen**
 
@@ -119,7 +119,7 @@ Nadat u de de dienstcliënt creeert, verwijs een DX- dossier, creeer een inzamel
 
 De dienst van de Assembler keert a terug `java.util.Map` -object, dat kan worden verkregen uit het `AssemblerResult` en die bewerkingsresultaten bevatten. De geretourneerde `java.util.Map` bevat de resulterende documenten en eventuele uitzonderingen.
 
-In de volgende tabel vindt u een overzicht van enkele sleutelwaarden en objecttypen die zich in het geretourneerde object kunnen bevinden `java.util.Map` object.
+In de volgende tabel vindt u een overzicht van enkele sleutelwaarden en objecttypen die in het geretourneerde object kunnen worden gebruikt `java.util.Map` object.
 
 <table>
  <thead>
@@ -167,12 +167,12 @@ U kunt een PDF-document samenstellen met behulp van de API (Java) voor vergaderi
 1. Maak een PDF Assembler-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Referentie-invoer PDF-documenten.
 
@@ -204,16 +204,16 @@ U kunt een PDF-document samenstellen met behulp van de API (Java) voor vergaderi
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
    * De `AssemblerResult` object `getDocuments` methode. Dit retourneert een `java.util.Map` object.
-   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object. (U kunt het PDF-resultaatelement dat in het DDX-document is opgegeven, gebruiken om het document op te halen.)
+   * Doorlopen `java.util.Map` object tot u het resultaat hebt gevonden `com.adobe.idp.Document` object. (U kunt het PDF-resultaatelement gebruiken dat in het DDX-document is opgegeven.)
    * De `com.adobe.idp.Document` object `copyToFile` methode om het PDF-document te extraheren.
 
    >[!NOTE]
    >
-   >Indien `LOG_LEVEL` is ingesteld om een logboek te maken, kunt u het logboek extraheren met de `AssemblerResult` object `getJobLog` methode.
+   >Indien `LOG_LEVEL` is ingesteld om een logboek te maken, kunt u het logboek extraheren met de optie `AssemblerResult` object `getJobLog` methode.
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een PDF-document samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -234,7 +234,7 @@ U kunt PDF-documenten samenstellen met behulp van de API (webservice) voor verga
 1. Maak een PDF Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -284,7 +284,7 @@ U kunt PDF-documenten samenstellen met behulp van de API (webservice) voor verga
 
    Voer de volgende handelingen uit om het nieuwe PDF-document te verkrijgen:
 
-   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de PDF-documenten van het resultaat bevat.
+   * Toegang krijgen tot de `AssemblerResult` object `documents` veld, dat een `Map` -object dat de PDF-documenten van het resultaat bevat.
    * Doorlopen `Map` -object totdat u de sleutel vindt die overeenkomt met de naam van het resulterende document. Dan giet dat serielid `value` een `BLOB`.
    * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een PDF-bestand kunt schrijven.
 

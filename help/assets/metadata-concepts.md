@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2708'
+source-wordcount: '2706'
 ht-degree: 6%
 
 ---
@@ -19,9 +19,9 @@ Metagegevens zijn gegevens over gegevens. In dit verband verwijzen gegevens naar
 Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor een element, maar die niet noodzakelijkerwijs in die afbeelding voorkomen. Voorbeelden van metagegevens zijn:
 
 * Naam van het element.
-* Tijdstip en datum van laatste wijziging.
+* Tijd en datum van laatste wijziging.
 * Grootte van het middel zoals het in de bewaarplaats werd opgeslagen.
-* Naam van de map waarin deze zich bevindt.
+* Naam van de map waarin de map zich bevindt.
 * Gerelateerde elementen of toegepaste tags.
 
 Het bovenstaande zijn de basiseigenschappen van metagegevens die [!DNL Experience Manager] kan beheren voor elementen, waardoor gebruikers alle elementen kunnen zien. Het is bijvoorbeeld handig elementen te bestellen op de laatste wijzigingsdatum wanneer u onlangs toegevoegde elementen probeert te vinden.
@@ -48,10 +48,10 @@ Om deze redenen [!DNL Assets] biedt u de juiste middelen voor het maken, beheren
 
 De twee basistypen metagegevens zijn technische metagegevens en beschrijvende metagegevens.
 
-Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepalen automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
+Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepalen automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Enkele technische metagegevens zijn:
 
 * Grootte van een bestand.
-* Dimension (hoogte en breedte) van een afbeelding.
+* Dimensionen (hoogte en breedte) van een afbeelding.
 * Bitsnelheid van een audio- of videobestand.
 * Resolutie (detailniveau) van een afbeelding.
 
@@ -61,12 +61,12 @@ De kosten voor het handmatig maken van beschrijvende metagegevens zijn hoog. Er 
 
 ## Coderingsnormen {#encoding-standards}
 
-Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een selectie coderingsstandaarden wordt ondersteund:
+Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Er wordt ondersteuning geboden voor een selectie coderingsstandaarden:
 
 * XMP: gebruikt door [!DNL Assets] om de geëxtraheerde metagegevens op te slaan in de gegevensopslagruimte.
 * ID3: voor audio- en videobestanden.
-* EXIF: voor afbeeldingsbestanden.
-* Overige/Verouderd: van [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
+* Exif: voor afbeeldingsbestanden.
+* Overig/Verouderd: van [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
 
 ### XMP {#xmp}
 
@@ -96,7 +96,7 @@ Metagegevensvelden die door EXIF worden gedefinieerd, zijn doorgaans technisch v
 
 Andere metagegevens die kunnen worden ingesloten vanuit bestanden, zijn onder andere [!DNL Microsoft Word], [!DNL PowerPoint], [!DNL Excel], enzovoort.
 
-## Metagegevensschema&#39;s begrijpen {#metadata-schemata}
+## Instellingen voor metagegevens begrijpen {#metadata-schemata}
 
 Metagegevensschema&#39;s zijn vooraf gedefinieerde sets definities van metagegevenseigenschappen die in verschillende toepassingen kunnen worden gebruikt. Eigenschappen worden altijd gekoppeld aan een element. Dit houdt in dat de eigenschappen &#39;over&#39; de bron zijn.
 
@@ -160,7 +160,7 @@ De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metag
 
 ## Referentie metagegevensschema {#metadata-schemata-reference}
 
-De volgende naslaggids bevat informatie over een bepaald metagegevensschema (in alfabetische volgorde) en een lijst met eigenschappen en de bijbehorende definities.
+De volgende naslaggids bevat informatie over een bepaalde metagegevensschema (in alfabetische volgorde) en een lijst met eigenschappen en hun definities.
 
 ### Dublin Core {#dublin-core}
 
@@ -206,7 +206,7 @@ Door workflows te maken die op metagegevens zijn gebaseerd, kunt u bepaalde proc
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die wordt gebruikt door [!DNL Adobe Experience Manager Assets] voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, biedt XMP [inhoudsmodel](#xmp-core-concepts) en is [ondersteund door Adobe](#advantages-of-xmp) en andere ondernemingen, zodat gebruikers van XMP in combinatie met [!DNL Assets] beschikken over een krachtig platform waarop kan worden voortgebouwd.
+Naast het aanbieden van universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten, biedt XMP [inhoudsmodel](#xmp-core-concepts) en is [ondersteund door Adobe](#advantages-of-xmp) en andere ondernemingen, zodat de gebruikers van XMP in combinatie met [!DNL Assets] beschikken over een krachtig platform waarop kan worden voortgebouwd.
 
 De [XMP](https://www.adobe.com/devnet/xmp.html) is beschikbaar bij Adobe.
 
@@ -214,13 +214,13 @@ De [XMP](https://www.adobe.com/devnet/xmp.html) is beschikbaar bij Adobe.
 
 Adobe introduceerde eerst de XMP standaard als onderdeel van het Adobe Acrobat-softwareproduct. Sindsdien is de XMP norm op grote schaal aangenomen. [!DNL Assets] native ondersteunt het XMP - het Extensible Metadata Platform dat wordt geleid door Adobe. XMP is een standaard voor het verwerken en opslaan van gestandaardiseerde en merkgebonden metagegevens in digitale elementen. XMP wordt ontworpen om de gemeenschappelijke norm te zijn die veelvoudige toepassingen toestaat om effectief met meta-gegevens te werken.
 
-Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP ondersteuning binnen toepassingen om informatie in meerdere indelingen door te geven. [!DNL Assets] opslagplaats extraheert de XMP metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
+Productieprofessionals gebruiken bijvoorbeeld de ingebouwde XMP binnen de toepassingen van de Adobe om informatie door te geven over meerdere bestandsindelingen. [!DNL Assets] opslagplaats extraheert de XMP metagegevens en gebruikt deze om de levenscyclus van de inhoud te beheren en biedt de mogelijkheid om automatiseringsworkflows te maken.
 
 XMP standaardiseren hoe metagegevens worden gedefinieerd, gemaakt en verwerkt door een gegevensmodel, een opslagmodel en schema&#39;s op te geven. Al deze concepten worden behandeld in deze sectie.
 
 Alle verouderde meta-gegevens van EXIF, ID3, of Microsoft Office wordt automatisch vertaald aan XMP, die kan worden uitgebreid om klant-specifiek meta-gegevensschema, zoals productcatalogi te steunen.
 
-Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een bepaalde entiteit die als middel wordt bedoeld; dat wil zeggen dat de eigenschappen &quot;over&quot; de bron zijn. In het geval van XMP is de bron altijd het middel.
+Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een bepaalde entiteit die als middel wordt bedoeld; namelijk zijn de eigenschappen &quot;over&quot;de middel. In het geval van XMP is de bron altijd het middel.
 
 ### XMP ecosysteem {#xmp-ecosystem}
 
@@ -251,11 +251,11 @@ De volgende secties beschrijven de kernconcepten van XMP, met inbegrip van names
 
 Een XMP schema is een reeks eigenschapnamen in een gemeenschappelijke XML-naamruimte die het gegevenstype en beschrijvende informatie bevat. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
 
-De `Creator` eigenschap in twee onafhankelijk ontworpen schema&#39;s kan de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
+Bijvoorbeeld de `Creator` eigenschap in twee onafhankelijk ontworpen schema&#39;s kan de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
 
 #### Eigenschappen en waarden {#properties-and-values}
 
-XMP kunnen eigenschappen van een of meer schema&#39;s omvatten. Een standaardsubset die door veel Adobe-toepassingen wordt gebruikt, kan bijvoorbeeld het volgende zijn:
+XMP kunnen eigenschappen van een of meer schema&#39;s omvatten. Een standaardsubset die bijvoorbeeld door veel Adobe-toepassingen wordt gebruikt, kan het volgende zijn:
 
 * Dublin-kernschema: `dc:title`, `dc:creator`, `dc:subject`, `dc:format`, `dc:rights`.
 * Basisschema XMP: `xmp:CreateDate`, `xmp:CreatorTool`, `xmp:ModifyDate`, `xmp:metadataDate`.
@@ -285,7 +285,7 @@ De pagina Eigenschappen voor elementen bevat nu aparte tabbladen waarmee de meta
 
 1. Klik op de knop **[!UICONTROL IPTC Extension]** om de IPTC Extension-metagegevens voor het element weer te geven.
 1. Bewerk desgewenst de eigenschappen van de IPTC-metagegevens voor extensies.
-1. Klikken **[!UICONTROL Save & Close]** om de wijzigingen op te slaan.
+1. Klikken **[!UICONTROL Save & Close]** om de wijzigingen op te slaan
 
 ### Ondersteuning voor creatieve beoordelingen {#creative-rating-support}
 
@@ -299,6 +299,6 @@ Deze eigenschap is momenteel echter niet geïndexeerd om conflicten met aangepas
 
 ### Trefwoordondersteuning {#keyword-support}
 
-De **[!UICONTROL IPTC]** tabblad van het dialoogvenster [!UICONTROL Properties] op de pagina worden ook trefwoorden weergegeven die via Adobe Bridge en andere Adobe Creative Cloud-apps aan middelen zijn toegevoegd. U kunt deze trefwoorden ook bewerken en meer trefwoorden toevoegen via het menu **[!UICONTROL IPTC]** tab.
+De **[!UICONTROL IPTC]** tabblad van het [!UICONTROL Properties] op de pagina worden ook trefwoorden weergegeven die via Adobe Bridge en andere Adobe Creative Cloud-apps aan middelen zijn toegevoegd. U kunt deze trefwoorden ook bewerken en meer trefwoorden toevoegen via het menu **[!UICONTROL IPTC]** tab.
 
 ![trefwoorden](assets/keywords-in-iptc-tab.png)

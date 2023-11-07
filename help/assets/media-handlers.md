@@ -6,18 +6,18 @@ contentOwner: AG
 role: User
 feature: Workflow,Renditions
 exl-id: cfd6c981-1a35-4327-82d7-cf373d842cc3
-source-git-commit: acc4b78f551e0e0694f41149fff7e24d855f504f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2090'
+source-wordcount: '2085'
 ht-degree: 1%
 
 ---
 
 # Elementen verwerken met behulp van mediafuncties en workflows {#processing-assets-using-media-handlers-and-workflows}
 
-[!DNL Adobe Experience Manager Assets] wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld duimnagelgeneratie of meta-gegevensextractie.
+[!DNL Adobe Experience Manager Assets] wordt geleverd met een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een werkschema bepaalt de taken die op de activa moeten worden uitgevoerd, dan delegeert de specifieke taken aan de media managers, bijvoorbeeld, duimnagelgeneratie of meta-gegevensextractie.
 
-Een workflow kan zo worden geconfigureerd dat deze automatisch wordt uitgevoerd wanneer een element van een bepaald MIME-type wordt geüpload. De verwerkingsstappen worden gedefinieerd als een reeks van [!DNL Assets] mediahandlers. [!DNL Experience Manager] bevat enkele [ingebouwde handlers,](#default-media-handlers) en aanvullende [aangepast ontwikkeld](#creating-a-new-media-handler) of gedefinieerd door het proces te delegeren aan een [opdrachtregel, gereedschap](#command-line-based-media-handler).
+Een werkstroom kan worden gevormd om automatisch uit te voeren wanneer een middel van een bepaald type MIME wordt geupload. De verwerkingsstappen worden gedefinieerd als een reeks van [!DNL Assets] mediahandlers. [!DNL Experience Manager] bevat enkele [ingebouwde handlers,](#default-media-handlers) en aanvullende [aangepast ontwikkeld](#creating-a-new-media-handler) of gedefinieerd door het proces te delegeren aan een [opdrachtregel](#command-line-based-media-handler).
 
 Mediahandlers zijn services in [!DNL Assets] die specifieke handelingen uitvoeren op elementen. Wanneer u bijvoorbeeld een MP3-audiobestand uploadt naar [!DNL Experience Manager], activeert een workflow een MP3-handler die de metagegevens extraheert en een miniatuur genereert. Meestal worden media-afhandelingen gebruikt in combinatie met workflows. De meeste gangbare MIME-typen worden ondersteund binnen [!DNL Experience Manager]. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden/te maken, media-handlers uit te breiden/te maken of media-handlers uit te schakelen/in te schakelen.
 
@@ -42,7 +42,7 @@ De volgende media-handlers zijn beschikbaar binnen [!DNL Assets] en verwerkt de 
 | [!UICONTROL PictHandler] | com.day.cq.dam.handler.standard.pict.PictHandler | image/pict |
 | [!UICONTROL StandardImageHandler] | com.day.cq.dam.core.impl.handler.StandardImageHandler | <ul><li>image/gif </li><li> image/png </li> <li>toepassing/photoshop </li> <li>image/jpeg </li><li> image/tiff </li> <li>image/x-ms-bmp </li><li> image/bmp</li></ul> |
 | [!UICONTROL MSOfficeHandler] | com.day.cq.dam.handler.standard.msoffice.MSOfficeHandler | application/msword |
-| [!UICONTROL MSPowerPointHandler] | com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler | application/vnd.ms-powerpoint |
+| [!UICONTROL MSPowerPointHandler] | com.day.cq.dam.handler.standard.msoffice.MSPowerPointHandler | application/vnd.ms |
 | [!UICONTROL OpenOfficeHandler] | com.day.cq.dam.handler.standard.ooxml.OpenOfficeHandler | <ul><li>application/vnd.openxmlformats-officedocument.wordprocessingml.document</li><li> application/vnd.openxmlformats-officedocument.spreadsheetml.sheet</li><li> application/vnd.openxmlformats-officedocument.presentationml.presentation</li></ul> |
 | [!UICONTROL EPubHandler] | com.day.cq.dam.handler.standard.epub.EPubHandler | application/epub+zip |
 | [!UICONTROL GenericAssetHandler] | com.day.cq.dam.core.impl.handler.GenericAssetHandler | fallback als er geen andere handler is gevonden om gegevens uit een element te extraheren |
@@ -80,23 +80,23 @@ Een media-handler in- en uitschakelen:
 
 1. Blader in uw browser naar `https://<host>:<port>/system/console/components`.
 1. Klikken **[!UICONTROL Disable]** naast de naam van de media-handler. Bijvoorbeeld: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
-1. De pagina vernieuwen: naast de mediafunctie wordt een pictogram weergegeven dat aangeeft dat het is uitgeschakeld.
+1. De pagina vernieuwen: naast de media-handler wordt een pictogram weergegeven dat aangeeft dat de pagina is uitgeschakeld.
 1. Klik op **[!UICONTROL Enable]** naast de naam van de media-handler.
 
-### Nieuwe mediafunctie maken {#creating-a-new-media-handler}
+### Een mediafunctie maken {#creating-a-new-media-handler}
 
-Voor ondersteuning van een nieuw mediatype of voor het uitvoeren van specifieke taken op een element, is het nodig een nieuwe mediafunctie te maken. In dit gedeelte wordt beschreven hoe u verder kunt gaan.
+Voor ondersteuning van een nieuw mediatype of voor het uitvoeren van specifieke taken op een element, is het nodig een mediafunctie te maken. In dit gedeelte wordt beschreven hoe u verder kunt gaan.
 
 #### Belangrijke klassen en interfaces {#important-classes-and-interfaces}
 
-De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: de `com.day.cq.dam.core.AbstractAssetHandler` klasse.
+De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: `com.day.cq.dam.core.AbstractAssetHandler` klasse.
 
 Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u overerft van deze klasse en de gemanipuleerde insteekmodule gebruikt, moet u de overervingmarkering instellen op `true`.
 
 Voer de volgende methodes uit:
 
 * `extractMetadata()`: extraheert alle beschikbare metagegevens.
-* `getThumbnailImage()`: Hiermee maakt u een miniatuurafbeelding van het doorgegeven element.
+* `getThumbnailImage()`: hiermee maakt u een miniatuurafbeelding van het doorgegeven element.
 * `getMimeTypes()`: retourneert de MIME-typen van het element.
 
 Hier volgt een voorbeeldsjabloon:
@@ -108,7 +108,7 @@ package my.own.stuff; /** * @scr.component inherit="true" * @scr.service */ publ
 De interface en de klassen omvatten:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een nieuw MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
-* `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
+* `com.day.cq.dam.core.AbstractAssetHandler` klasse: deze klasse dient als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
 * `com.day.cq.dam.core.AbstractSubAssetHandler`-klasse:
    * Deze klasse fungeert als basis voor alle andere implementaties van asset-handlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van submiddelen.
    * De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: de klasse com.day.cq.dam.core.AbstractAssetHandler.
@@ -116,19 +116,19 @@ De interface en de klassen omvatten:
 
 De volgende methoden moeten worden toegepast:
 
-* `extractMetadata()`: met deze methode worden alle beschikbare metagegevens geëxtraheerd.
-* `getThumbnailImage()`: met deze methode maakt u een miniatuurafbeelding van het doorgegeven element.
-* `getMimeTypes()`: Deze methode retourneert het MIME-type(n) van het element.
+* `extractMetadata()`: deze methode extraheert alle beschikbare metagegevens.
+* `getThumbnailImage()`: met deze methode wordt een miniatuurafbeelding gemaakt van het doorgegeven element.
+* `getMimeTypes()`: deze methode retourneert het MIME-type(n) van het element.
 
 Hier volgt een voorbeeldsjabloon:
 
-pakket my.own.stuff; /&amp;ast;&amp;ast &amp;asteren; @scr.component inherit=&quot;true&quot;&amp;ast; @scr.service&amp;ast;/ De klasse MyMediaHandler van de openbare klasse breidt com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
+package my.own.stuff; /&amp;ast;&amp;ast; &amp;ast; @scr.component inherit=&quot;true&quot;&amp;ast; @scr.service&amp;ast;/ public class MyMediaHandler extends com.day.cq.dam.core.AbstractAssetHandler { // implementeert de relevante onderdelen }
 
 De interface en de klassen omvatten:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke types MIME toevoegt. Als u een nieuw MIME-type wilt toevoegen, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
-* `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
+* `com.day.cq.dam.core.AbstractAssetHandler` klasse: deze klasse dient als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
+* `com.day.cq.dam.core.AbstractSubAssetHandler` klasse: deze klasse dient als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
 
 #### Voorbeeld: een specifieke teksthandler maken {#example-create-a-specific-text-handler}
 
@@ -136,7 +136,7 @@ In deze sectie maakt u een specifieke teksthandler die miniaturen met een waterm
 
 Ga als volgt te werk:
 
-Zie [Ontwikkelingsinstrumenten](../sites-developing/dev-tools.md) om Eclipse te installeren en in te stellen met een [!DNL Maven] insteekmodule en voor het instellen van de afhankelijkheden die nodig zijn voor de [!DNL Maven] project.
+Zie [Ontwikkelingsinstrumenten](../sites-developing/dev-tools.md) Eclipse installeren en instellen met een [!DNL Maven] insteekmodule en voor het instellen van de afhankelijkheden die nodig zijn voor de [!DNL Maven] project.
 
 Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!DNL Experience Manager], worden de metagegevens van het bestand geëxtraheerd en worden twee miniaturen met een watermerk gegenereerd.
 
@@ -150,9 +150,9 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
       * Groep-id: `com.day.cq5.myhandler`.
       * Artefact-id: myBundle.
       * Naam: Mijn [!DNL Experience Manager] bundel.
-      * Omschrijving: Dit is mijn [!DNL Experience Manager] bundel.
-   1. Klik op **[!UICONTROL Finish]**.
+      * Beschrijving: Dit is mijn [!DNL Experience Manager] bundel.
 
+   1. Klik op **[!UICONTROL Finish]**.
 
 1. Stel de [!DNL Java] compiler naar versie 1.5:
 
@@ -162,10 +162,10 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
       * Compatibiliteitsniveau compiler
       * Compatibiliteit van gegenereerde .class-bestanden
       * Broncompatibiliteit
-   1. Klik op **[!UICONTROL OK]**. Klik in het dialoogvenster op **[!UICONTROL Yes]**.
 
+   1. Klik op **[!UICONTROL OK]**. Klik op **[!UICONTROL Yes]**.
 
-1. Vervang de code in de `pom.xml` bestand met de volgende code:
+1. Vervang de code in het dialoogvenster `pom.xml` bestand met de volgende code:
 
    ```xml
    <project xmlns="https://maven.apache.org/POM/4.0.0" xmlns:xsi="https://www.w3.org/2001/XMLSchema-instance"
@@ -438,9 +438,9 @@ Nadat u de volgende procedure uitvoert, wanneer u een TXT- dossier in uploadt [!
    1. Klik met de rechtermuisknop op de knop `myBundle` project selecteren **[!UICONTROL Run As]** vervolgens **[!UICONTROL Maven Install]**.
    1. De bundel `myBundle-0.0.1-SNAPSHOT.jar` (met de gecompileerde klasse) wordt gemaakt onder `myBundle/target`.
 
-1. Maak in de CRX-verkenner een nieuw knooppunt onder `/apps/myApp`. Naam = `install`, Type = `nt:folder`.
+1. Maak in CRX Explorer een knooppunt onder `/apps/myApp`. Naam = `install`, Type = `nt:folder`.
 1. De bundel kopiëren `myBundle-0.0.1-SNAPSHOT.jar` en opslaan onder `/apps/myApp/install` (bijvoorbeeld met WebDAV). De nieuwe teksthandler is nu actief in [!DNL Experience Manager].
-1. Open in uw browser de [!UICONTROL Apache Felix Web Management Console]. Selecteer [!UICONTROL Components] tab en disable de standaardteksthandler `com.day.cq.dam.core.impl.handler.TextHandler`.
+1. Open in uw browser de [!UICONTROL Apache Felix Web Management Console]. Selecteer de [!UICONTROL Components] tab en disable de standaardteksthandler `com.day.cq.dam.core.impl.handler.TextHandler`.
 
 ## Media-handler op basis van opdrachtregel {#command-line-based-media-handler}
 
@@ -463,13 +463,13 @@ De `CommandLineProcess` Het proces voert de volgende bewerkingen uit in de volgo
 * Hiermee maakt u een tijdelijke map op de schijf waarop het [!DNL Experience Manager] server.
 * Hiermee wordt het oorspronkelijke bestand gestroomd naar de tijdelijke map.
 * Voert de opdracht uit die door de argumenten van de stap wordt gedefinieerd. De opdracht wordt uitgevoerd in de tijdelijke map met de machtigingen van de gebruiker die de opdracht uitvoert [!DNL Experience Manager].
-* Hiermee streamt u het resultaat terug naar de map met uitvoeringen van het dialoogvenster [!DNL Experience Manager] server.
+* Hiermee wordt het resultaat weer gestroomd naar de weergavemap van het dialoogvenster [!DNL Experience Manager] server.
 * Hiermee verwijdert u de tijdelijke map.
 * Hiermee maakt u miniaturen op basis van deze uitvoeringen, indien opgegeven. Het aantal en de afmetingen van de miniaturen worden bepaald door de argumenten van de stap.
 
 ### Een voorbeeld met [!DNL ImageMagick] {#an-example-using-imagemagick}
 
-In het volgende voorbeeld ziet u hoe u de processtap van de opdrachtregel instelt, zodat elke keer dat een element met het e-type GIF miMIME of TIFF wordt toegevoegd aan `/content/dam` op de [!DNL Experience Manager] een gespiegelde afbeelding van het origineel wordt gemaakt, samen met drie extra miniaturen (140x100, 48x48 en 10x250).
+In het volgende voorbeeld ziet u hoe u de processtap van de opdrachtregel instelt, zodat elke keer dat een element met het e-type GIF miMIME of TIFF wordt toegevoegd aan `/content/dam` op de [!DNL Experience Manager] een gespiegelde afbeelding van het origineel wordt gemaakt, samen met drie extra miniaturen (140 x 100, 48 x 48 en 10 x 250).
 
 Om dit te doen, gebruik [!DNL ImageMagick]. [!DNL ImageMagick] is een gratis opdrachtregelprogramma waarmee u bitmapafbeeldingen kunt maken, bewerken en samenstellen.
 
@@ -507,13 +507,13 @@ Scheid de waarden van [!UICONTROL Process Arguments] gebruiken en niet beginnen 
 |---|---|
 | mime:&lt;mime-type> | Optioneel argument. Het proces wordt toegepast als het element hetzelfde MIME-type heeft als het argument. <br>Er kunnen verschillende MIME-typen worden gedefinieerd. |
 | tn:&lt;width>:&lt;height> | Optioneel argument. Het proces leidt tot een duimnagel met de afmetingen die in het argument worden bepaald. <br>Er kunnen verschillende miniaturen worden gedefinieerd. |
-| cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af. Er kan slechts één opdracht worden gedefinieerd. <br>U kunt de volgende variabelen gebruiken om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: de volledige padnaam van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: map van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp` <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld de oorspronkelijke naam <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld JPG. |
+| cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis is afhankelijk van het opdrachtregelgereedschap. Er kan slechts één opdracht worden gedefinieerd. <br>U kunt de volgende variabelen gebruiken om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: volledige padnaam van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp/original.jpg` <br> `${directory}`: map van het invoerbestand, bijvoorbeeld `/tmp/cqdam0816.tmp` <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld JPG. |
 
 Als [!DNL ImageMagick] is geïnstalleerd op de schijf waarop het [!DNL Experience Manager] en als u een processtap maakt met [!UICONTROL CommandLineProcess] als Implementatie en de volgende waarden als [!UICONTROL Process Arguments]:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
-wanneer de workflow wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` als `mime-types`, wordt een gespiegelde afbeelding van het origineel gemaakt, wordt deze omgezet in JPG en worden drie miniaturen gemaakt met de afmetingen: 140x100, 48x48 en 10x250.
+wanneer de workflow wordt uitgevoerd, is de stap alleen van toepassing op elementen die `image/gif` of `mime:image/tiff` als `mime-types`, wordt een gespiegelde afbeelding van het origineel gemaakt, wordt deze omgezet in JPG en worden drie miniaturen gemaakt met de volgende afmetingen: 140 x 100, 48 x 48 en 10 x 250.
 
 Gebruik het volgende [!UICONTROL Process Arguments] de drie standaardminiaturen maken met [!DNL ImageMagick]:
 
@@ -530,4 +530,3 @@ Gebruik het volgende [!UICONTROL Process Arguments] om de voor het web ingeschak
 >[!MORELIKETHIS]
 >
 >* [Proceselementen](assets-workflow.md)
-

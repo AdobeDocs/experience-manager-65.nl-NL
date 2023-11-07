@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 role: Developer
 exl-id: 1d2d6d64-f16e-4381-8691-f3c2744481ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '201'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Java API Quick Start (SOAP) is beschikbaar voor de service Application Manager.
 
 [Snel starten: Toepassingen implementeren met de Java API (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-deploying-applications-using-the-java-api)
 
-[Snel starten: Een toepassing verwijderen met de Java API (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
+[Snel starten: een toepassing verwijderen met de Java API (SOAP)](application-manager-service-java-api.md#quick-start-soap-mode-removing-an-application-using-the-java-api)
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de AEM Forms sterk
 
 >[!NOTE]
 >
->Java API (SOAP) Quick Start in Programming with AEM forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het toepasselijke besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Java API (SOAP) Quick Start in Programming with AEM forms are based on the Forms if you using another operating system, such as Unix, replace windows specific paths with paths supported by the applicable operating system. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Toepassingen implementeren met de Java API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd op basis van een bestaand LCA-bestand met de naam *EncryptDocument.lca*.
+In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd op basis van een bestaand LCA-bestand genaamd *EncryptDocument.lca*.
 
 ```java
  /*
@@ -67,7 +67,7 @@ In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd op basis v
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -76,7 +76,7 @@ In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd op basis v
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -137,7 +137,7 @@ In het volgende Java-codevoorbeeld wordt een toepassing geïmporteerd op basis v
  
 ```
 
-## Snel starten (SOAP-modus): Een toepassing verwijderen met de Java API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
+## Snel starten (SOAP-modus): een toepassing verwijderen met de Java API {#quick-start-soap-mode-removing-an-application-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een toepassing met de naam *EncryptDocument*.
 
@@ -169,7 +169,7 @@ In het volgende Java-codevoorbeeld wordt een toepassing met de naam *EncryptDocu
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -178,7 +178,7 @@ In het volgende Java-codevoorbeeld wordt een toepassing met de naam *EncryptDocu
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

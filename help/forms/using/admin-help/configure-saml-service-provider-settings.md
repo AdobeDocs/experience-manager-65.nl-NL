@@ -10,16 +10,16 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '598'
 ht-degree: 0%
 
 ---
 
 # SAML-serviceleverinstellingen configureren{#configure-saml-service-provider-settings}
 
-SAML (Security Assertion Markup Language) is een van de opties die u kunt selecteren wanneer u een machtiging voor een onderneming of hybride domein configureert. SAML wordt hoofdzakelijk gebruikt om SSO over veelvoudige domeinen te steunen. Wanneer SAML als uw authentificatieleverancier wordt gevormd, registreren de gebruikers en voor authentiek verklaren aan AEM vormen via een gespecificeerde derde identiteitsleverancier (IDP).
+SAML (Security Assertion Markup Language) is een van de opties die u kunt selecteren wanneer u een machtiging voor een onderneming of hybride domein configureert. SAML wordt hoofdzakelijk gebruikt om SSO over veelvoudige domeinen te steunen. Als SAML is geconfigureerd als uw verificatieprovider, kunnen gebruikers zich aanmelden en zich via een opgegeven externe identiteitsprovider (IDP) verifiëren bij AEM formulieren.
 
 Voor een uitleg van SAML, zie [SAML (Security Assertion Markup Language) V2.0 - Technisch overzicht](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
 
@@ -51,13 +51,13 @@ Voor een uitleg van SAML, zie [SAML (Security Assertion Markup Language) V2.0 - 
 
    * U kunt AEM vormen om een bevestiging van SAML voor een geldigheidsperiode uit te geven die de geldigheidsperiode van een derdebewering aanpast. Als u de SAML-assertietime-out van derden wilt respecteren, voegt u de volgende regel toe in Aangepaste eigenschappen:
 
-      `saml.sp.honour.idp.assertion.expiry=true`
+     `saml.sp.honour.idp.assertion.expiry=true`
 
    * Voeg het volgende douanebezit voor het gebruiken van RelayState toe om URL te bepalen waar de gebruiker na succesvolle authentificatie opnieuw zal worden gericht.
 
-      `saml.sp.use.relaystate=true`
+     `saml.sp.use.relaystate=true`
 
-   * Voeg het volgende douanebezit toe om URL voor de Pagina&#39;s van de Server van douaneJava (JSP) te vormen, die zullen worden gebruikt om de geregistreerde lijst van identiteitsleveranciers terug te geven. Als u geen aangepaste webtoepassing hebt geïmplementeerd, wordt de standaardpagina Gebruikersbeheer gebruikt om de lijst weer te geven.
+   * Voeg het volgende douanebezit toe om URL voor de Pagina&#39;s van de Server van douaneJava (JSP) te vormen, die wordt gebruikt om de geregistreerde lijst van identiteitsleveranciers terug te geven. Als u geen aangepaste webtoepassing hebt geïmplementeerd, wordt de standaardpagina Gebruikersbeheer gebruikt om de lijst weer te geven.
 
    `saml.sp.discovery.url=/custom/custom.jsp`
 

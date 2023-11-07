@@ -1,19 +1,17 @@
 ---
 title: Carousel-banners
 description: Leer hoe u met carrouselbanners werkt in Dynamic Media
-uuid: 73684a08-d84d-4665-ab89-3a1bf88ac5dd
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e26c7f7f-bdd7-421a-8614-ba48abf381d2
 docset: aem65
 feature: Carousel Banners
 role: User, Admin
 exl-id: 53d34d3a-ecb6-4fa0-9665-60d21f48021e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4640'
+source-wordcount: '4636'
 ht-degree: 2%
 
 ---
@@ -44,7 +42,7 @@ Doorloop afspelen ingeschakeld [hoe carrouselbanners worden gemaakt](https://s7d
 
 >[!NOTE]
 >
->Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u uw systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
+>Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
 
 ## Snel starten: Carousel-banners {#quick-start-carousel-banners}
 
@@ -179,7 +177,7 @@ Bekijk de volgende voorbeelden van URL&#39;s in QuickView en de resulterende hot
 
 ## Afbeeldingsbanners uploaden {#uploading-image-banners}
 
-Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap: [Carrouselsets maken](#creating-carousel-sets). Houd er rekening mee dat de afbeeldingen die in de carrousel worden gebruikt, moeten worden geüpload nadat Dynamic Media is ingeschakeld.
+Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap: [Carrouselsets maken](#creating-carousel-sets). De afbeeldingen die in de carrousel worden gebruikt, moeten worden geüpload nadat Dynamic Media is ingeschakeld.
 
 Als u afbeeldingsbanners wilt uploaden, raadpleegt u [Elementen uploaden](/help/assets/manage-assets.md).
 
@@ -187,7 +185,7 @@ Als u afbeeldingsbanners wilt uploaden, raadpleegt u [Elementen uploaden](/help/
 
 >[!NOTE]
 >
->Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u uw systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
+>Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
 
 **Carousel-sets maken:**
 
@@ -337,7 +335,7 @@ Zie [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
-Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt bij het maken of bewerken van bestanden, raadpleegt u uw systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
+Niet-administratieve gebruikers moeten worden toegevoegd aan de **[!UICONTROL dam-users]** groeperen om carrouselbanners te kunnen maken of bewerken. Als u problemen ondervindt met het maken of bewerken van bestanden, raadpleegt u de systeembeheerder die u aan de **[!UICONTROL dam-users]** groep.
 
 U kunt verschillende bewerkingstaken uitvoeren op Carousel Sets, zoals:
 

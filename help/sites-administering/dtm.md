@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2208'
+source-wordcount: '2206'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,6 @@ Nadat u de integratie vormt, vereisen de veranderingen in Dynamische de plaatsin
 >* 4.x wordt geconfigureerd met [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
 >
 
-
 ## Implementatieopties {#deployment-options}
 
 De volgende plaatsingsopties beïnvloeden de configuratie van de integratie met Dynamische Tag Management.
@@ -42,10 +41,10 @@ De volgende plaatsingsopties beïnvloeden de configuratie van de integratie met 
 
 AEM ondersteunt Dynamic Tag Management die wordt gehost in de cloud of wordt gehost op AEM.
 
-* Door cloud gehost: De Dynamic Tag Management-JavaScript-bibliotheken worden opgeslagen in de cloud en de AEM pagina&#39;s verwijzen er rechtstreeks naar.
+* In de cloud gehoste: de dynamische Tag Management-JavaScript-bibliotheken worden opgeslagen in de cloud en de AEM pagina&#39;s verwijzen er rechtstreeks naar.
 * AEM: Dynamic Tag Management genereert javascript-bibliotheken. AEM gebruikt een workflowmodel voor het ophalen en installeren van de bibliotheken.
 
-Het type van het ontvangen dat uw implementatie gebruikt bepaalt enkele configuratie en implementatietaken die u uitvoert. Voor informatie over de hostingopties raadpleegt u [Hosting - Tab insluiten](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) in Dynamic Tag Management Help.
+Het type van het ontvangen dat uw implementatie gebruikt bepaalt enkele configuratie en implementatietaken die u uitvoert. Zie voor informatie over de hostingopties [Hosting - Tab insluiten](https://microsite.omniture.com/t2/help/en_US/dtm/#Hosting__Embed_Tab) in Dynamic Tag Management Help.
 
 ### Staging- en productiebibliotheek {#staging-and-production-library}
 
@@ -59,7 +58,7 @@ Indien gewenst, kan uw auteurinstantie de productiebibliotheken gebruiken. De br
 
 Wanneer AEM gastheren de Dynamische bibliotheken van Tag Management, kunt u de Dynamic Tag Management plaatsingshakendienst gebruiken om bibliotheekupdates aan AEM automatisch te duwen. De bibliotheekupdates worden geduwd wanneer de veranderingen in de bibliotheken zoals worden aangebracht wanneer de Dynamische eigenschappen van het Web van Tag Management worden uitgegeven.
 
-Om de plaatsingshaak te gebruiken, moet Dynamische Tag Management met de AEM instantie kunnen verbinden die gastheren de bibliotheken. U moet [toegang tot AEM mogelijk maken](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) voor de Dynamic Tag Management-servers.
+Om de plaatsingshaak te gebruiken, moet Dynamische Tag Management met de AEM instantie kunnen verbinden die gastheren de bibliotheken. U moet [toegang tot AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) voor de Dynamic Tag Management-servers.
 
 In sommige omstandigheden AEM onbereikbaar, zoals wanneer AEM achter een firewall ligt. In deze gevallen kunt u de optie voor het importeren van opiniepeilingen AEM gebruiken om de bibliotheken regelmatig op te halen. Een uitsnijdtaakexpressie schrijft het programma voor het downloaden van bibliotheken voor.
 
@@ -72,7 +71,7 @@ Schakel de Dynamic Tag Management-implementatiehakenservice in om toegang te kri
 
 Voer de configuratie uit gebruikend of [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of [`sling:OsgiConfig`](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) knooppunt:
 
-* In de Console van het Web, gebruik het punt van de Configuratie van de Haak van de Adobe DTM op de pagina van de Configuratie.
+* In de Console van het Web, gebruik het punt van de Configuratie van het Hook van de Adobe DTM op de pagina van de Configuratie opstelt.
 * Voor een configuratie OSGi, de dienst PID is `com.adobe.cq.dtm.impl.servlets.DTMDeployHookServlet`.
 
 In de volgende tabel worden de eigenschappen beschreven die moeten worden geconfigureerd.
@@ -145,7 +144,7 @@ Wanneer het ontvangen van de Dynamische bibliotheken van Tag Management op AEM, 
   </tr>
   <tr>
    <td>Workflow downloaden</td>
-   <td><p>Het workflowmodel dat moet worden gebruikt voor het downloaden en installeren van de Dynamic Tag Management-bibliotheek. Het standaardmodel is Default DTM Bundle Download. Gebruik dit model tenzij u een aangepast model hebt gemaakt.</p> <p>De standaarddownloadworkflow activeert automatisch de bibliotheken wanneer ze worden gedownload.</p> </td>
+   <td><p>Het workflowmodel voor het downloaden en installeren van de Dynamic Tag Management-bibliotheek. Het standaardmodel is Default DTM Bundle Download. Gebruik dit model tenzij u een aangepast model hebt gemaakt.</p> <p>De standaarddownloadworkflow activeert automatisch de bibliotheken wanneer ze worden gedownload.</p> </td>
   </tr>
   <tr>
    <td>Domeinhint</td>
@@ -157,11 +156,11 @@ Wanneer het ontvangen van de Dynamische bibliotheken van Tag Management op AEM, 
   </tr>
   <tr>
    <td>Gedeeld geheim</td>
-   <td><p>(Optioneel) Het gedeelde geheim dat moet worden gebruikt voor het decoderen van de download. Verkrijg deze waarde van het Gedeelde Geheime gebied van de pagina van de Download van de Bibliotheek van Dynamic Tag Management.</p> <p><strong>Opmerking:</strong> U moet beschikken over de <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> op de computer waarop AEM is geïnstalleerd, zijn geïnstalleerd zodat AEM de gedownloade bibliotheken kan decoderen.</p> </td>
+   <td><p>(Optioneel) Het gedeelde geheim dat moet worden gebruikt voor het decoderen van de download. Verkrijg deze waarde van het Gedeelde Geheime gebied van de pagina van de Download van de Bibliotheek van Dynamic Tag Management.</p> <p><strong>Opmerking:</strong> U moet beschikken over <a href="https://www.openssl.org/docs/apps/openssl.html">OpenSSL</a> op de computer waarop AEM is geïnstalleerd, zijn geïnstalleerd zodat AEM de gedownloade bibliotheken kan decoderen.</p> </td>
   </tr>
   <tr>
    <td>Opiniepeilingimportfunctie inschakelen</td>
-   <td><p>(Optioneel) Selecteer deze optie om de Dynamic Tag Management-bibliotheek periodiek te downloaden en installeren om er zeker van te zijn dat u een bijgewerkte versie gebruikt. Als deze optie is ingeschakeld, verzendt Dynamic Tag Management geen aanvragen van HTTP-POSTEN naar de URL van Hook implementeren.</p> <p>AEM vormt automatisch het bezit van HookURL van de Opname van de Bibliotheek van de Eigenschappen van de Download voor het Dynamische het Webbezit van Tag Management opstellen. Wanneer geselecteerd, wordt het bezit gevormd zonder waarde. Als deze optie niet is geselecteerd, wordt de eigenschap geconfigureerd met de URL van de configuratie van Dynamic Tag Management.</p> <p>Schakel polling importer in wanneer de Dynamic Tag Management-implementatiehaak geen verbinding kan maken met AEM, bijvoorbeeld wanneer AEM zich achter een firewall bevindt.</p> </td>
+   <td><p>(Optioneel) Selecteer deze optie om de Dynamic Tag Management-bibliotheek periodiek te downloaden en installeren om er zeker van te zijn dat u een bijgewerkte versie gebruikt. Als deze optie is ingeschakeld, verzendt Dynamic Tag Management geen aanvragen van HTTP-POSTEN naar de URL van Hook implementeren.</p> <p>AEM vormt automatisch het bezit van HookURL van de Opname van de Bibliotheek eigenschappen van de Download voor het Dynamische het Webbezit van Tag Management opstellen. Wanneer geselecteerd, wordt het bezit gevormd zonder waarde. Als deze optie niet is geselecteerd, wordt de eigenschap geconfigureerd met de URL van de configuratie van Dynamic Tag Management.</p> <p>Schakel polling importer in wanneer de Dynamic Tag Management-implementatiehaak geen verbinding kan maken met AEM, bijvoorbeeld wanneer AEM zich achter een firewall bevindt.</p> </td>
   </tr>
   <tr>
    <td>Planningsexpressie</td>
@@ -201,7 +200,7 @@ U configureert de volgende eigenschappen voor uw dynamische Tag Management-confi
 
 In de volgende procedure wordt gebruikgemaakt van de geoptimaliseerde interface voor aanrakingen om de integratie met Dynamic Tag Management te configureren.
 
-1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
+1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
 1. In het gebied Dynamische Tag Management wordt een van de volgende koppelingen weergegeven voor het toevoegen van een configuratie:
 
    * Klik vormen nu als dit de eerste configuratie is die u toevoegt.
@@ -227,9 +226,9 @@ In de volgende procedure wordt gebruikgemaakt van de geoptimaliseerde interface 
 
 ## De dynamische Tag Management-bibliotheek handmatig downloaden {#manually-downloading-the-dynamic-tag-management-library}
 
-Download de Dynamic Tag Management-bibliotheken handmatig om deze direct bij te werken op AEM. Download bijvoorbeeld handmatig wanneer u een bijgewerkte bibliotheek wilt testen voordat de pollingimporter is gepland om de bibliotheek automatisch te downloaden.
+Download de Dynamic Tag Management-bibliotheken handmatig om deze onmiddellijk bij te werken bij AEM. Download bijvoorbeeld handmatig wanneer u een bijgewerkte bibliotheek wilt testen voordat de pollingimporter is gepland om de bibliotheek automatisch te downloaden.
 
-1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
+1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
 1. Klik in het gedeelte Dynamische Tag Management op Configuraties tonen en klik vervolgens op uw configuratie.
 1. Klik in het gebied Instellingen voor staging of Productie-instellingen op de knop Workflow voor downloaden om de bibliotheekbundel te downloaden en implementeren.
 
@@ -247,7 +246,6 @@ Download de Dynamic Tag Management-bibliotheken handmatig om deze direct bij te 
 >* `servertype`
 >
 
-
 ## Een dynamische Tag Management-configuratie koppelen aan uw site {#associating-a-dynamic-tag-management-configuration-with-your-site}
 
 Koppel uw Dynamic Tag Management-configuratie aan de pagina&#39;s van uw website, zodat AEM het vereiste script aan de pagina&#39;s toevoegt. Koppel de hoofdpagina van uw site aan de configuratie. Alle afstammingen van die pagina nemen de koppeling over. Indien nodig, kunt u de vereniging op een afstammende pagina met voeten treden.
@@ -255,18 +253,18 @@ Koppel uw Dynamic Tag Management-configuratie aan de pagina&#39;s van uw website
 Gebruik de volgende procedure om een pagina en de afstammelingen aan een Dynamische configuratie van Tag Management te associëren.
 
 1. Open de hoofdpagina van uw site in de klassieke gebruikersinterface.
-1. Gebruik Sidetrap om de pagina-eigenschappen te openen.
-1. Klik op het tabblad Cloud Services op Service toevoegen, selecteer Dynamic Tag Management en klik op OK.
+1. Gebruik Sidekick om de pagina-eigenschappen te openen.
+1. Klik op het tabblad Cloud Servicen op Service toevoegen, selecteer Dynamic Tag Management en klik op OK.
 
    ![chlimage_1-357](assets/chlimage_1-357.png)
 
-1. Gebruik het Dynamische drop-down menu van Tag Management om uw configuratie te selecteren, en dan O.K. te klikken.
+1. Gebruik het Dynamische drop-down menu van Tag Management om uw configuratie te selecteren, en klik dan O.K.
 
 Gebruik de volgende procedure om de geërfte configuratievereniging voor een pagina met voeten te treden. De overschrijving heeft invloed op de pagina en op alle onderliggende pagina&#39;s.
 
 1. Open de pagina in klassieke UI.
-1. Gebruik Sidetrap om de pagina-eigenschappen te openen.
-1. Klik op het tabblad Cloud Services op het hangslotpictogram naast de eigenschap Geërfd van en klik vervolgens op Ja in het bevestigingsdialoogvenster.
+1. Gebruik Sidekick om de pagina-eigenschappen te openen.
+1. Klik op het tabblad Cloud Servicen op het hangslotpictogram naast de eigenschap Geërfd van en klik vervolgens op Ja in het bevestigingsdialoogvenster.
 
    ![chlimage_1-358](assets/chlimage_1-358.png)
 

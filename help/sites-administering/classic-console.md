@@ -1,19 +1,15 @@
 ---
 title: Klassieke UI-tagconsole
-seo-title: Classic UI Tagging Console
 description: Meer informatie over de Adobe Experience Manager Classic UI Tagging Console.
-seo-description: Learn about the Classic UI Tagging Console.
-uuid: 51e29422-f967-424b-a7fd-4ca2ddc6b8a3
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: b279c033-bc93-4e62-81ad-123c40b9fdd2
 docset: aem65
 exl-id: 8c6ba22f-5555-4e3c-998a-9353bd44715b
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '892'
+source-wordcount: '891'
 ht-degree: 0%
 
 ---
@@ -159,7 +155,7 @@ Het dialoogvenster ziet er als volgt uit:
 
 In de tagconsole wordt de taalinstelling van de gebruiker gebruikt. Voor de tag Animal wordt &#39;Animaux&#39; weergegeven voor een gebruiker die de taal in gebruikerseigenschappen instelt op Frans.
 
-Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u de sectie [Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in de **Tags voor ontwikkelaars** sectie.
+Zie de sectie voor een nieuwe taal aan het dialoogvenster [Een nieuwe taal toevoegen aan het dialoogvenster Tag bewerken](/help/sites-developing/building.md#adding-a-new-language-to-the-edit-tag-dialog) in de **Tags voor ontwikkelaars** sectie.
 
 ### Tagtitels weergeven in Pagina-eigenschappen in een opgegeven taal {#displaying-tag-titles-in-page-properties-in-a-specified-language}
 

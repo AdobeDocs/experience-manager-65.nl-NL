@@ -12,9 +12,9 @@ discoiquuid: 291c91e5-65ff-473d-ac11-3da480239e76
 docset: aem65
 feature: Upgrading
 exl-id: 37d4aee4-15eb-41ab-ad71-dfbd5c7910f8
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2031'
+source-wordcount: '2029'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Wanneer AEM wordt gestart vanuit het jar-bestand, wordt een `quickstart.properti
 
 De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` de taken vereisen afzonderlijke configuraties OSGi en kunnen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. Documentatie voor het configureren van taken voor werkstroomzuivering vindt u op [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md) en de configuratie van de de onderhoudstaak van het controlelogboek kan worden gevonden bij [Onderhoud controlelogbestand in AEM 6](/help/sites-administering/operations-audit-log.md).
 
-Voor werkstroom- en controlelogboekzuivering op CQ 5.6 en controle logpuring op AEM 6.0, zie [Werkstroom en controleknooppunten wissen](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
+Voor werkstroom- en auditlogbestandzuivering op CQ 5.6 en controle van logboeken op AEM 6.0 raadpleegt u [Werkstroom en controleknooppunten wissen](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html).
 
 ## De taken vóór de upgrade installeren, configureren en uitvoeren {#install-configure-run-pre-upgrade-tasks}
 

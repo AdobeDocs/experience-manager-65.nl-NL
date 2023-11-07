@@ -1,17 +1,13 @@
 ---
 title: JSON-objectbeschrijving in de AEM Forms-werkruimte
-seo-title: AEM Forms workspace JSON object description
 description: Conceptuele informatie over de JSON JavaScript-objecten die in de LiveCycle AEM Forms-werkruimte worden gebruikt voor aanpassing, uitbreiding, wijziging en hergebruik.
-seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
-uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -78,7 +74,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    | beschrijving | F | Het bevat een beschrijving voor een startpunt. |
    | name | F | Deze bevat de naam van het startpunt. |
    | serializedImageTicket | F | Het bevat een afbeeldingsticket dat overeenkomt met het startpunt. Dit beeldkaartje wordt gebruikt in imageUrl gebied van startpoint, om beeld voor startpunt van de server te krijgen. |
-   | serviceName | F | Het bevat naam van de dienst voor startpoint. |
+   | serviceName | F | Het bevat naam van de dienst voor startpunt. |
    | startpointId | F | Het bevat id van startpunt. |
    | isFavorite | T | Geeft aan of het startpunt favoriet is of niet. True if startpoint is preferred else false. |
    | isDefaultImage | T | Geeft aan of er een afbeelding is opgegeven voor proces of niet. True if there is no image associated with process else false. |
@@ -274,7 +270,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>taskFormType<br /> </td>
    <td>T</td>
-   <td>Het bevat het type taakformulier. Met dit veld wordt de taak op de client weergegeven als pdf for, swf form enzovoort.<br /> </td>
+   <td>Het bevat het type taakformulier. Als u dit veld gebruikt, wordt de taak op de client weergegeven als pdf for, swf form enzovoort.<br /> </td>
   </tr>
   <tr>
    <td>showDirectActions<br /> </td>
@@ -294,7 +290,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>supportsSave<br /> </td>
    <td>T</td>
-   <td>Indien waar (true), kan de gebruiker de taak opslaan.<br /> </td>
+   <td>Indien true, kan de gebruiker de taak opslaan.<br /> </td>
   </tr>
   <tr>
    <td>readerSubmitOptions<br /> </td>
@@ -359,7 +355,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>dataUrl<br /> </td>
    <td>T</td>
-   <td>Het is de URL voor de gegevens van de vorm van een taak.<br /> </td>
+   <td>Het is de URL voor de gegevens in de vorm van een taak.<br /> </td>
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td>
@@ -452,7 +448,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>F</td>
-   <td>True if user is out-of-office.<br type="_moz" /> </td>
+   <td>Waar als de gebruiker buiten kantoor is.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>outOfOfficeDesignate<br type="_moz" /> </td>
@@ -462,7 +458,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td>
    <td>F</td>
-   <td>Het bevat een array met objecten voor processpecifieke aanwijzen buiten het kantoor. In elk proces-specifiek wijs voorwerp toe, bevat processName de naam van het proces, isNotDesignated is waar als geen gebruiker voor het overeenkomstige proces wordt toegewezen, en userDesignated is ongeldig als geen gebruiker anders details van de gebruiker toewees voor het overeenkomstige proces.<br type="_moz" /> </td>
+   <td>Het bevat serie van voorwerpen voor proces-specifieke uit-van-bureau aangewezen. In elk proces-specifiek wijs voorwerp toe, bevat processName de naam van het proces, isNotDesignated is waar als geen gebruiker voor het overeenkomstige proces wordt toegewezen, en userDesignated is ongeldig als geen gebruiker anders details van de gebruiker toewees voor het overeenkomstige proces.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>processen<br type="_moz" /> </td>
@@ -634,7 +630,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
 
 1. ACL-object taak
 
-   Het ACL voorwerp van de taak bevat informatie over toestemmingen zoals voorwaarts, aandeel, raadpleeg enz. van een taak. Na zijn de eigenschappen van ACL van taak.
+   Het ACL van de taak voorwerp bevat informatie over toestemmingen zoals voorwaarts, aandeel, raadpleeg, etc., van een taak. Na zijn de eigenschappen van ACL van taak.
 
 <table>
  <tbody>
@@ -656,7 +652,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>canClaim<br type="_moz" /> </td>
    <td>F</td>
-   <td>Indien waar (true), kan de taak worden opgehaald.<br type="_moz" /> </td>
+   <td>Indien waar (true), kan de taak worden opgeëist.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>canConsult<br type="_moz" /> </td>
@@ -809,7 +805,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>isOutOfOffice<br type="_moz" /> </td>
    <td>F</td>
-   <td>True if user is out-of-office.<br type="_moz" /> </td>
+   <td>Waar als de gebruiker buiten kantoor is.<br type="_moz" /> </td>
   </tr>
   <tr>
    <td>lastName<br type="_moz" /> </td>

@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2699'
+source-wordcount: '2695'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaak
 
 ### Geïnstalleerde uitrolconfiguraties {#installed-rollout-configurations}
 
-De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïnstalleerd zijn. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [een nieuwe rollout-configuratie maken](#creating-a-rollout-configuration).
+De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïnstalleerd zijn. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u [een rollout-configuratie maken](#creating-a-rollout-configuration).
 
 <table>
  <tbody>
@@ -269,7 +269,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties steunen zodat zij geen specifieke knooptypes en eigenschappen beïnvloeden. Veel eigenschappen en subknooppunten die bijvoorbeeld betrekking hebben op de interne werking van AEM, mogen niet in een live kopie worden opgenomen. Alleen de inhoud die relevant is voor de gebruiker van de pagina moet worden gekopieerd.
 
-Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 In de volgende tabel worden de synchronisatiehandelingen weergegeven waarvoor u de knooppunten kunt opgeven die moeten worden uitgesloten. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
 
@@ -334,7 +334,7 @@ Als u bijvoorbeeld de pagina wilt **Titel** om te worden opgenomen in de wijzigi
 
 U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties met betrekking tot het bijwerken van verwijzingen steunen.
 
-Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 In de volgende tabel staan de synchronisatiehandelingen waarvoor u de update van de verwijzing kunt opgeven. De lijst verstrekt de namen van de diensten om het gebruiken van de Console en PID van het Web voor het vormen van het gebruiken van een gegevensopslagknoop te vormen.
 
@@ -405,7 +405,7 @@ De onderliggende pagina&#39;s van de blauwdrukpagina nemen de configuratie over.
 1. Gebruik de **Sites** -console om de basispagina van de blauwdruk te selecteren.
 1. Selecteren **Eigenschappen** op de werkbalk.
 1. Open de **Blauwdruk** tab.
-1. Selecteer een of meer **Uitrolconfiguraties** de keuzelijst gebruiken.
+1. Selecteer een of meer **Uitrolconfiguraties** met de keuzelijst.
 1. Updates blijven gebruiken met **Opslaan**.
 
 ### De standaardconfiguratie van de systeemuitrol instellen {#setting-the-system-default-rollout-configuration}

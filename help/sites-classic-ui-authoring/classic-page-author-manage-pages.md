@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: bd2636d1-6f13-4c6c-b8cd-3bed9e83a101
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1906'
-ht-degree: 2%
+source-wordcount: '1892'
+ht-degree: 0%
 
 ---
 
@@ -72,7 +72,7 @@ Deze structuur kan van de console van Websites worden bekeken, die u kunt gebrui
 
 ### Naamgevingsconventies voor pagina {#page-naming-conventions}
 
-Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
+Bij het maken van een pagina zijn er twee sleutelvelden:
 
 * **[Titel](#title)**:
 
@@ -84,7 +84,7 @@ Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
    * Hiermee wordt de URI gegenereerd.
    * Gebruikersinvoer voor dit veld is optioneel. Indien niet opgegeven, wordt de naam afgeleid van de titel.
 
-Wanneer u een nieuwe pagina maakt, AEM [De paginanaam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
+Wanneer u een pagina maakt, AEM [valideert de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
 
 De implementatie en de lijst met toegestane tekens verschillen enigszins afhankelijk van de gebruikersinterface (deze is uitgebreider voor de interface met aanraakbediening), maar het minimaal toegestane aantal is:
 
@@ -98,7 +98,7 @@ Gebruik alleen deze tekens als u zeker wilt weten dat deze worden geaccepteerd/g
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. ](/help/sites-developing/naming-conventions.md) In beide UI&#39;s **Titel** veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
+Als u alleen een pagina opgeeft **Titel** wanneer u een pagina maakt, wordt AEM de pagina afgeleid **Naam** van deze tekenreeks en [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR. In beide UI&#39;s **Titel** veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -107,7 +107,7 @@ Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, le
 
 #### Naam {#name}
 
-Als u een pagina **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
+Als u een pagina **Naam** bij het maken van een pagina, AEM [valideert de naam volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
 
 In de klassieke gebruikersinterface **kan geen ongeldige tekens invoeren** in de **Naam** veld.
 
@@ -155,7 +155,7 @@ Als u eenmaal een pagina hebt gemaakt en geopend, kunt u [inhoud toevoegen met d
 
 Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voordat u inhoud kunt gaan maken:
 
-1. Van de **Websites** selecteert u het niveau waarop u een nieuwe pagina wilt maken.
+1. Van de **Websites** selecteert u het niveau waarop u een pagina wilt maken.
 
    In het volgende voorbeeld maakt u een pagina onder het niveau **Producten** - weergegeven in het linkervenster; in het rechtervenster worden pagina&#39;s weergegeven die al op het niveau onder **Producten**.
 
@@ -170,7 +170,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * Geef een **Titel**; dit wordt weergegeven aan de gebruiker.
    * Geef een **Naam**; dit wordt gebruikt om de URI te genereren. Als deze niet wordt opgegeven, wordt de naam afgeleid van de titel.
 
-      * Als u een pagina **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
+      * Als u een pagina **Naam** bij het maken van een pagina, AEM [valideert de naam volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
       * In de klassieke gebruikersinterface **kan geen ongeldige tekens invoeren** in de **Naam** veld.
 
    * Klik op de sjabloon die u wilt gebruiken om de nieuwe pagina te maken.
@@ -181,7 +181,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    >
    >Zie [Naamgevingsconventies voor pagina](#page-naming-conventions).
 
-   De minimale informatie die nodig is om een nieuwe pagina te maken, is de **Titel** en de vereiste template.
+   De minimale informatie die nodig is om een pagina te maken, is de **Titel** en de vereiste template.
 
    ![screen_shot_2012-02-15at114845am](assets/screen_shot_2012-02-15at114845am.png)
 
@@ -191,11 +191,11 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
 1. Klikken **Maken** om de pagina te maken. U keert terug naar de **Websites** console waar u een ingang voor de nieuwe pagina kunt zien.
 
-   De console verstrekt informatie over de pagina (bijvoorbeeld wanneer het laatst werd uitgegeven en door wie) die zonodig wordt bijgewerkt.
+   De console verstrekt informatie over de pagina (bijvoorbeeld, toen het laatst werd uitgegeven en door wie) die zonodig wordt bijgewerkt.
 
    >[!NOTE]
    >
-   >U kunt ook een pagina maken wanneer u een bestaande pagina bewerkt. Onderliggende pagina maken **vanuit het menu **Pagina** van de assistent maakt u rechtstreeks onder de pagina die wordt bewerkt een nieuwe pagina.
+   >U kunt ook een pagina maken wanneer u een bestaande pagina bewerkt. Gebruiken **Onderliggende pagina maken** van de **Pagina** van het zijpaneel maakt een pagina direct onder de pagina die wordt bewerkt.
 
 ### Een pagina openen voor bewerken {#opening-a-page-for-editing}
 

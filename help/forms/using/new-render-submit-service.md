@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: 6a32d240-c6a6-4937-a31f-7a5ec3c60b1f
 docset: aem65
 exl-id: 46de0101-9607-4429-84c3-7c1f34d2da27
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
@@ -23,14 +23,14 @@ ht-degree: 0%
 
 Als u in Workbench een `AssignTask` Geef een bepaald formulier op (XDP- of PDF-formulier). Geef ook een set services voor renderen en verzenden op via een actieprofiel.
 
-Een XDP kan als vorm van de PDF of een vorm van de HTML worden teruggegeven. De nieuwe mogelijkheden omvatten de capaciteit:
+Een XDP kan als vorm van de PDF of een vorm van de HTML worden teruggegeven. De nieuwe mogelijkheden omvatten de capaciteit om:
 
 * Een XDP-formulier renderen en verzenden als HTML
 * Een XDP-formulier weergeven en verzenden als PDF op het bureaublad en als HTML op mobiele apparaten (bijvoorbeeld een iPad)
 
 ### Nieuwe HTML Forms-service {#new-html-forms-service}
 
-De nieuwe HTML Forms-service maakt gebruik van de nieuwe functie in Forms om het weergeven van XDP-formulieren als HTML te ondersteunen. De nieuwe dienst van HTML Forms stelt de volgende methodes bloot:
+De nieuwe HTML Forms-service gebruikt de nieuwe functie in Forms om het weergeven van XDP-formulieren als HTML te ondersteunen. De nieuwe dienst van HTML Forms stelt de volgende methodes bloot:
 
 ```java
 /*
@@ -59,7 +59,7 @@ Meer informatie over profielen van mobiele formulieren vindt u op [Een aangepast
 
 ## Nieuwe HTML-formulieren renderen en verzenden {#new-html-form-render-amp-submit-processes}
 
-Geef voor elke bewerking &#39;AssignTask&#39; een Render- en een Verzendproces op met het formulier. Deze processen worden aangeroepen door TaskManager `renderForm`en `submitForm`API&#39;s om aangepaste afhandeling toe te staan. Semantiek van deze processen voor Nieuwe vorm van HTML:
+Geef voor elke bewerking &#39;AssignTask&#39; een Render- en een Verzendproces op met het formulier. Deze processen worden aangeroepen door TaskManager `renderForm`en `submitForm`API&#39;s voor aangepaste afhandeling. Semantiek van deze processen voor Nieuwe vorm van HTML:
 
 ### Een nieuw HTML-formulier renderen {#render-a-new-html-form}
 
@@ -116,10 +116,10 @@ Browsers trekken de ondersteuning voor op NPAPI gebaseerde plug-ins, waaronder p
 
 1. Selecteer de toepassingen waarvoor u de rendering van mobiele formulieren wilt wijzigen en klik op **OK**.
 1. Open het proces waarvoor u de rendering wilt wijzigen.
-1. Open het beoogde startpunt/de beoogde taak, navigeer naar de sectie Presentatie en gegevens en klik op **Actieprofielen beheren**.
+1. Open het beoogde startpunt/de beoogde taak, ga naar de sectie Presentatie en gegevens en klik op **Actieprofielen beheren**.
 
    Het dialoogvenster Actieprofielen beheren wordt geopend.
-1. Standaardrenderprofielconfiguraties wijzigen van PDF naar HTML en klikken **OK**.
+1. Standaardrenderprofielconfiguraties wijzigen van PDF naar HTML en klikken op **OK**.
 1. Controleer het proces.
 1. Herhaal de stappen om de rendering voor andere processen te wijzigen.
 1. Implementeer de toepassing die relevant is voor de processen die u hebt gewijzigd.

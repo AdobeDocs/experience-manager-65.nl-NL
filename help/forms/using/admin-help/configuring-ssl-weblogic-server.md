@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '1047'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Voor het configureren van SSL op WebLogic Server hebt u een SSL-referentie nodig voor verificatie. U kunt Java gebruiken keytool om de volgende taken uit te voeren om een referentie tot stand te brengen:
 
-* Creeer een openbaar/privé zeer belangrijk paar, verpak de openbare sleutel in een X.509 v1 zelf-ondertekend certificaat dat als enig-elementcertificaatketting wordt opgeslagen, en bewaar dan de certificaatketting en de privé sleutel in een nieuw sleutelarchief. Dit sleutelarchief is het sleutelarchief van de Aangepaste Identiteit van de toepassingsserver.
+* Creeer een openbaar/privé zeer belangrijk paar, verpak de openbare sleutel in een X.509 v1 zelf-ondertekend certificaat dat als enig-elementcertificaatketting wordt opgeslagen, en bewaar dan de certificaatketting en de privé sleutel in een nieuw sleutelarchief. Dit sleutelarchief is het sleutelarchief voor aangepaste identiteiten van de toepassingsserver.
 * Extraheer het certificaat en voeg het in een nieuw sleutelarchief in. Dit sleutelarchief is het sleutelarchief van het Aangepast vertrouwen van de toepassingsserver.
 
 Vervolgens configureert u WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief voor aangepaste identiteiten en het sleutelarchief voor aangepaste vertrouwen dat u hebt gemaakt. Schakel ook de WebLogic Hostname Verification-functie uit omdat de DN-naam die is gebruikt om de sleutelarchiefbestanden te maken, niet de naam van de computer bevat die als host fungeert voor WebLogic.
@@ -77,18 +77,18 @@ De opdracht Keytool bevindt zich gewoonlijk in de map JavaJre/bin en moet versch
    <td><p>Het wachtwoord waarmee de inhoud van het sleutelarchief wordt beveiligd. </p></td>
    <td>
     <ul>
-     <li><p>Aangepast sleutelarchief voor identiteiten: Het sleutelarchiefwachtwoord moet met het SSL credentiewachtwoord beantwoorden dat voor de component van de Opslag van het Vertrouwen van de Console van het Beleid werd gespecificeerd.</p></li>
-     <li><p>Aangepast sleutelarchief vertrouwen: Gebruik hetzelfde wachtwoord als voor het sleutelarchief voor aangepaste identiteiten.</p></li>
+     <li><p>Aangepast sleutelarchief voor identiteiten: het sleutelarchiefwachtwoord moet overeenkomen met het SSL-wachtwoord dat is opgegeven voor de component Trust Store van de beheerconsole.</p></li>
+     <li><p>Aangepast sleutelarchief voor vertrouwen: gebruik hetzelfde wachtwoord als voor het sleutelarchief voor aangepaste identiteiten.</p></li>
     </ul></td>
   </tr>
   <tr>
    <td><p>-keypass</p></td>
    <td><p>Het wachtwoord dat de persoonlijke sleutel van het sleutelpaar beschermt.</p></td>
-   <td><p>Gebruik het wachtwoord dat u voor de <code>-storepass</code> optie. Het sleutelwachtwoord moet ten minste zes tekens lang zijn.</p></td>
+   <td><p>Gebruik het wachtwoord dat u voor de <code>-storepass</code> -optie. Het sleutelwachtwoord moet ten minste zes tekens lang zijn.</p></td>
   </tr>
   <tr>
    <td><p>-dname</p></td>
-   <td><p>De DN-naam die de persoon identificeert die eigenaar is van het sleutelarchief.</p></td>
+   <td><p>De DN-naam die de eigenaar van het sleutelarchief aangeeft.</p></td>
    <td><p><code>"CN=</code><code>[User name]</code><code>,OU=</code><code>[Group Name]</code><code>, O=</code><code>[Company Name]</code><code>, L=</code><code>[City Name]</code><code>, S=</code><code>[State or province]</code><code>, C=</code><code>[Country Code]</code><code>"</code></p>
     <ul>
      <li><p><code><i>[User name]</i></code> Dit is de identificatie van de gebruiker die eigenaar is van het sleutelarchief.</p></li>
@@ -141,7 +141,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
    C:\Program Files\Java\jrockit-jdk1.6.0_24-R28\bin\keytool" -export -v -alias ads-credentials -file "ads-ca.cer" -keystore "ads-credentials.jks" -storepass P@ssw0rd
    ```
 
-   Het certificaatbestand &quot;ads-ca.cer&quot; wordt gemaakt in het dialoogvenster [appserverdomein]/adobe/[*servernaam*] directory.
+   Het certificaatbestand met de naam &quot;ads-ca.cer&quot; wordt gemaakt in het dialoogvenster [appserverdomein]/adobe/[*servernaam*] directory.
 
 1. Kopieer het bestand ads-ca.cer naar alle hostcomputers die beveiligde communicatie met de toepassingsserver nodig hebben.
 1. Voeg het certificaat in een nieuw sleutelarchiefbestand in (het sleutelarchief van Aangepast vertrouwen) door de volgende opdracht in te voeren:

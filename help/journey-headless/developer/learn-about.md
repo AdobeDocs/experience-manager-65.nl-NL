@@ -2,7 +2,7 @@
 title: Meer informatie over CMS Headless Development
 description: In dit deel van de AEM Headless Developer Journey, leer over technologie zonder kop en waarom je het zou gebruiken.
 exl-id: f0989cea-3102-43cd-976e-9a6b265d9c15
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1612'
 ht-degree: 0%
@@ -56,13 +56,13 @@ Gebruikers verwachten betrokkenheid, ongeacht het platform of aanraakpunt, waard
 
 Het hoofd van een systeem is doorgaans de uitvoerrenderer van dat systeem, meestal in de vorm van een grafische interface of andere grafische uitvoer.
 
-Een server zonder kop zit bijvoorbeeld waarschijnlijk ergens in een rack in een serverruimte en heeft geen monitor aangesloten. Om tot het toegang te hebben moet u ver met het verbinden. In dit geval is de monitor de kop omdat deze zorgt voor het renderen van de uitvoer van de server. Als consument van de service geeft u uw eigen hoofd (de monitor) op wanneer u op afstand verbinding maakt.
+Een server zonder kop bijvoorbeeld zit waarschijnlijk ergens in een rack in een serverruimte en heeft geen monitor aangesloten. Om tot het toegang te hebben moet u ver met het verbinden. In dit geval is de monitor de kop omdat deze zorgt voor het renderen van de uitvoer van de server. Als consument van de service geeft u uw eigen hoofd (de monitor) op wanneer u op afstand verbinding maakt.
 
 Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft het leveren aan consumenten. Maar alleen door de **content** op gestandaardiseerde wijze weglaat een CMS zonder kop de uiteindelijke rendering van de uitvoer, waardoor de **presentatie** van de inhoud aan de verbruikende dienst.
 
 ![CMS zonder hoofd](assets/headless-cms.png)
 
-De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enz., nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
+De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enzovoort, nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
 Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
 
@@ -84,7 +84,7 @@ Er is nog steeds behoefte aan robuuste REST API&#39;s. REST-verzoeken kunnen ech
 
 Bij de levering van inhoud zonder kop wordt vaak gebruikgemaakt van GraphQL API&#39;s. GraphQL staat voor een gelijkaardige stateless overdracht toe, maar staat voor meer gerichte vragen toe, die het totale aantal vereiste vragen verminderen, en prestaties verbeteren. Het is gebruikelijk om oplossingen te zien die een combinatie van REST en GraphQL gebruiken, in feite het beste instrument kiezen voor de taak die hier ligt.
 
-Wat de gekozen API ook is, door een headless-systeem te definiëren op basis van gemeenschappelijke API&#39;s, kunt u de nieuwste browser en andere webtechnologieën, zoals progressieve webapps (PWA), benutten. API&#39;s maken een standaardinterface die eenvoudig kan worden uitgebreid en aangepast.
+Wat de gekozen API ook is, door een headless-systeem te definiëren op basis van gemeenschappelijke API&#39;s, kunt u de nieuwste browser en andere webtechnologieën gebruiken, zoals progressieve webapps (PWA). API&#39;s maken een standaardinterface die eenvoudig kan worden uitgebreid en aangepast.
 
 Inhoud wordt doorgaans weergegeven aan de clientzijde. Dit betekent doorgaans dat iemand uw inhoud op een mobiel apparaat aanroept, dat uw CMS de inhoud levert en dat het mobiele apparaat (de client) verantwoordelijk is voor het renderen van de inhoud die u hebt bediend. Als het apparaat oud of anderszins langzaam is, is uw digitale ervaring ook langzaam.
 
@@ -96,7 +96,7 @@ Met headless hebt u de beschikking over een wereld van flexibiliteit om uw digit
 
 Als er veel verschillende kanalen zijn, kan dat betekenen dat ze elk hun eigen presentatiesystemen hebben. Hoewel ze allemaal dezelfde inhoud gebruiken via dezelfde API&#39;s, kan de ervaring verschillen vanwege de verschillende presentaties. De consistentie van de ervaring van de klant moet in het oog worden gehouden en er moet zorg voor worden gedragen.
 
-Door zorgvuldige ontwerpsystemen, het delen van patroonbibliotheken, en het gebruiken van herbruikbare ontwerpcomponenten evenals gevestigde, open cliënt-kant kaders, kunnen de verenigbare ervaringen worden gewaarborgd, maar dit moet worden gepland.
+Door zorgvuldige ontwerpsystemen uit te voeren, patroonbibliotheken te delen, herbruikbare ontwerpcomponenten te gebruiken en gevestigde open client-side frameworks te gebruiken, kunnen consistente ervaringen worden gegarandeerd, maar dit moet worden gepland.
 
 ## De toekomst is zonder kop en de toekomst is nu {#future}
 
@@ -110,7 +110,7 @@ Terwijl u deze ontwikkelaarstraject doorloopt, leert u hoe AEM levering zonder k
 
 Als marktleider op het gebied van digitaal ervaringsbeheer realiseert de Adobe zich dat de ideale oplossing voor echte uitdagingen die ontwerpers ervaren zelden een binaire keuze is. Daarom AEM niet alleen beide modellen worden ondersteund, maar ook de naadloze hybride combinatie van beide, waarbij de voordelen van een volledig en zonder kop stapel worden gecombineerd, zodat u de consumenten van uw inhoud het beste kunt dienen, waar ze zich ook bevinden.
 
-Deze reis concentreert zich op het hoofdloze-enige model van inhoudlevering. Maar als je deze basiskennis hebt, kun je verder verkennen hoe je de kracht van beide modellen kunt benutten.
+Deze reis concentreert zich op het hoofdloze-enige model van inhoudlevering. Maar als je deze basiskennis hebt, kun je verder verkennen hoe je de kracht van beide modellen kunt gebruiken.
 
 ## Volgende functies {#what-is-next}
 

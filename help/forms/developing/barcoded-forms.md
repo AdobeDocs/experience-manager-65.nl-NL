@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1920'
+source-wordcount: '1915'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,13 @@ ht-degree: 0%
 
 De service voor streepjescodes automatiseert het vastleggen van gegevens van invulformulieren en integreert vastgelegde informatie in de belangrijkste IT-systemen van een organisatie.
 
-Met de service voor streepjescodes kunt u eendimensionale en tweedimensionale streepjescodes toevoegen aan interactieve PDF forms. U kunt de gecodeerde formulieren vervolgens publiceren naar een website of ze via e-mail of cd verspreiden. Wanneer een gebruiker een formulier met streepjescodes invult in Adobe Reader, Acrobat Professional of Acrobat Standard, wordt de streepjescode automatisch bijgewerkt om de door de gebruiker opgegeven formuliergegevens te coderen. De gebruiker kan het formulier elektronisch verzenden of afdrukken naar papier en het verzenden per post, fax of hand. U kunt de gebruiker-geleverde gegevens als deel van een geautomatiseerde werkschema later halen, verpletterend de gegevens onder goedkeuringsprocessen en bedrijfssystemen.
+Met de service voor streepjescodes kunt u eendimensionale en tweedimensionale streepjescodes toevoegen aan interactieve PDF forms. Vervolgens kunt u de formulieren met streepjescodes publiceren naar een website of deze via e-mail of cd verspreiden. Wanneer een gebruiker een formulier met streepjescodes invult in Adobe Reader, Acrobat Professional of Acrobat Standard, wordt de streepjescode automatisch bijgewerkt om de door de gebruiker opgegeven formuliergegevens te coderen. De gebruiker kan het formulier elektronisch verzenden of afdrukken naar papier en het verzenden per post, fax of hand. U kunt de gebruiker-geleverde gegevens als deel van een geautomatiseerde werkschema later halen, verpletterend de gegevens onder goedkeuringsprocessen en bedrijfssystemen.
 
 Voor meer informatie over de service voor streepjescodes raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Gecodeerde formuliergegevens decoderen {#decoding-barcoded-form-data}
 
-U kunt de API van de service voor gecodeerde formulieren gebruiken om gegevens te decoderen van een PDF-formulier of een afbeelding die een streepjescode bevat. Formuliergegevens decoderen betekent gegevens extraheren die zich in de streepjescode bevinden. Voordat gegevens kunnen worden gedecodeerd vanuit een PDF-formulier (of afbeelding), moet een gebruiker het formulier vullen met gegevens.
+U kunt de API van de service voor gecodeerde formulieren gebruiken om gegevens te decoderen van een PDF-formulier of een afbeelding die een streepjescode bevat. Formuliergegevens decoderen houdt in dat gegevens uit de streepjescode worden geëxtraheerd. Voordat gegevens kunnen worden gedecodeerd vanuit een PDF-formulier (of afbeelding), moet een gebruiker het formulier vullen met gegevens.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-barcodedforms-client.jar
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* xercesImpl.jar (bevindt zich in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\third)
+* xercesImpl.jar (in &lt;install directory=&quot;&quot;>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
 
 Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBOSS is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Voor informatie over de locatie van alle AEM Forms JAR-bestanden raadpleegt u [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files).
 
@@ -74,7 +74,7 @@ U moet een PDF-formulier ophalen dat een streepjescode bevat die is gevuld met g
 
 **De gegevens decoderen uit het PDF-formulier**
 
-Nadat u een PDF-formulier (of afbeelding) met een streepjescode hebt ontvangen, kunt u gegevens decoderen. De service Barcoded Forms ondersteunt de volgende typen streepjescodes:
+Nadat u een PDF-formulier (of afbeelding) hebt ontvangen dat een streepjescode bevat, kunt u gegevens decoderen. De service Barcoded Forms ondersteunt de volgende typen streepjescodes:
 
 * PDF417-streepjescodes.
 * Streepjescodes gegevensmatrix.
@@ -119,12 +119,12 @@ Formuliergegevens decoderen met de API voor streepjescodes (Java):
 
 1. Een gestreepte API-object voor formulieren maken
 
-   Een `BarcodedFormsServiceClient` object door de constructor ervan te gebruiken en een object door te geven `ServiceClientFactory` object dat verbindingseigenschappen bevat.
+   Een `BarcodedFormsServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
 
 1. Een PDF-formulier ophalen dat gecodeerde gegevens bevat
 
    * Een `java.io.FileInputStream` object dat het PDF-formulier vertegenwoordigt dat gecodeerde gegevens met streepjescodes bevat, door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. De gegevens decoderen uit het PDF-formulier
 
@@ -160,13 +160,13 @@ Formuliergegevens decoderen met de API voor streepjescodes (Java):
 
 1. De gedecodeerde gegevens verwerken
 
-   * Doorlopen `java.util.List` object om elk op te halen `org.w3c.dom.Document` object dat zich in de lijst bevindt.
-   * Zet voor elk element in de lijst de `org.w3c.dom.Document` object naar een `com.adobe.idp.Document` object. (De toepassingslogica die een `org.w3c.dom.Document` in een `com.adobe.idp.Document` -object wordt weergegeven in de formuliergegevens met streepjescode decoderen met behulp van het Java API-voorbeeld).
+   * Doorlopen `java.util.List` object om elk op te halen `org.w3c.dom.Document` -object in de lijst.
+   * Voor elk element in de lijst converteert u de `org.w3c.dom.Document` object naar een `com.adobe.idp.Document` object. (De toepassingslogica die een `org.w3c.dom.Document` object in een `com.adobe.idp.Document` -object wordt weergegeven in de formuliergegevens met streepjescode decoderen met behulp van het Java API-voorbeeld).
    * Sla de XML-gegevens op als een XML-bestand door het `com.adobe.idp.Document` object `copyToFile`en geeft u een File-object door dat het XML-bestand vertegenwoordigt.
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Gecodeerde formuliergegevens decoderen met de Java API](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): gecodeerde formuliergegevens decoderen met de Java API](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 

@@ -2,9 +2,9 @@
 title: Projecten
 description: Met projecten kunt u bronnen groeperen in één entiteit waarvan de gemeenschappelijke, gedeelde omgeving het eenvoudig maakt om uw projecten te beheren.
 exl-id: 632c0608-2ab8-4a5b-8251-cd747535449b
-source-git-commit: 1d64a9a6d6dfbc7606d7c222ef50a21bf9b902d6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1365'
+source-wordcount: '1359'
 ht-degree: 5%
 
 ---
@@ -34,7 +34,7 @@ De projectenconsole is waar u tot uw projecten binnen AEM toegang hebt en leidt.
 
 ![De projectenconsole](assets/screen-shot_2019-03-05at125110.png)
 
-De console van Projecten is gelijkaardig aan andere consoles in AEM, staat een aantal acties op individuele projecten toe evenals het aanpassen van uw mening van de projecten.
+De console van Projecten is gelijkaardig aan andere consoles in AEM, staat verscheidene acties op individuele projecten toe en past uw mening van de projecten aan.
 
 ### Modus schakelen {#modes}
 
@@ -129,7 +129,7 @@ De **Koppelingen** met de tegel kunt u externe koppelingen aan uw project koppel
 
 ![Koppelingenblok](assets/project-tile-links.png)
 
-U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en u kunt de miniatuur wijzigen.
+U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en de miniatuur wijzigen.
 
 ### Projectinfo {#project-info}
 

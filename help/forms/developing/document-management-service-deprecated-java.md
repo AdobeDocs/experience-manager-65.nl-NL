@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 role: Developer
 exl-id: 38a90957-bdde-4f38-9edd-c59522e5f525
-source-git-commit: 5910b0e64a579998bc9cd79cf4e95f5e6f459c5a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -25,19 +25,19 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 >
 >Vanaf 5 augustus 2011 migreert Adobe klanten van Content Services ES naar de Adobe Digital Enterprise Platform Experience Services. Het product roadmap voor klanten die de Diensten van de Inhoud gebruiken is naar de nieuwe Diensten van de Ervaring van ADEP - Kern over te gaan, die een inheemse Bewaarplaats van de Inhoud omvat die op de moderne, modulaire CRX architectuur wordt voortgebouwd, die tijdens de aanschaf van de Software van de Adobe van Dag wordt verworven.
 
-[Snel starten (SOAP-modus): Spaties voor inhoudsservices maken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
+[Snel starten (SOAP-modus): Inhoudsservices-ruimten maken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud van Content Services verwijderen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP-modus): inhoud van inhoudsservices verwijderen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud toevoegen aan inhoudsservices met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
+[Snel starten (SOAP-modus): inhoud toevoegen aan Content Services met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud ophalen van Content Services met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
+[Snel starten (SOAP-modus): inhoud ophalen van Content Services met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud van Content Services verplaatsen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP-modus): Inhoud van inhoudsservices verplaatsen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud weergeven met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP-modus): Inhoud van inhoudsservices weergeven met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated)
 
-[Snel starten (SOAP-modus): Inhoud van Content Services zoeken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
+[Snel starten (SOAP-modus): Inhoud zoeken met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated)
 
 [Snel starten (SOAP-modus): Machtigingen voor inhoudsservices instellen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
@@ -45,11 +45,11 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang in Programmering met AEM vormen is gebaseerd op de Server die van Forms op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Spaties voor inhoudsservices maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
+## Snel starten (SOAP-modus): Inhoudsservices-ruimten maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
-In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *Testmap* gevestigd in het Huis van het Bedrijf. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
+In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *Testmap* in Company Home. De identificatiewaarde van de nieuwe ruimte wordt geschreven aan de console.
 
 ```java
  /*
@@ -78,16 +78,16 @@ In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -129,7 +129,7 @@ In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *
              String storeName ="SpacesStore";
              String nodeName = "/Company Home/Test Directory" ;
  
-             //Create a new space
+             //Create a space
              String spaceId = docManager.createSpace(storeName,nodeName);
              System.out.println("The identifier value of the new space is " +spaceId);
          }
@@ -143,7 +143,7 @@ In het volgende Java-codevoorbeeld wordt een nieuwe spatie gemaakt met de naam *
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud van Content Services verwijderen met de Java API (afgekeurd) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP-modus): inhoud van inhoudsservices verwijderen met de Java API (afgekeurd) {#quick-start-soap-mode-delete-content-services-content-using-the-java-api-deprecated}
 
 Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/de Folder van de Test.
 
@@ -174,16 +174,16 @@ Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -243,7 +243,7 @@ Het volgende de codevoorbeeld van Java schrapt een ruimte genoemd /Company Huis/
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud toevoegen aan inhoudsservices met behulp van de Java API (afgekeurd) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
+## Snel starten (SOAP-modus): inhoud toevoegen aan Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-add-content-to-content-services-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* aan een omslag genoemd /Company Huis/de Folder van de Test. De auteur- en beschrijvingskenmerken worden ingesteld. De identificatiewaarde van de nieuwe inhoud wordt geschreven aan de console.
 
@@ -274,16 +274,16 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -366,7 +366,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud ophalen van Content Services met behulp van de Java API (afgekeurd) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
+## Snel starten (SOAP-modus): inhoud ophalen van Content Services met de Java API (afgekeurd) {#quick-start-soap-mode-retrieve-content-from-content-services-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Home. Het PDF-bestand wordt opgeslagen in het lokale bestandssysteem en krijgt de naam *BijgewerkteMortgaugeForm.pdf*.
 
@@ -397,16 +397,16 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -472,7 +472,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud van Content Services verplaatsen met de Java API (afgekeurd) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP-modus): Inhoud van inhoudsservices verplaatsen met de Java API (afgekeurd) {#quick-start-soap-mode-move-content-services-content-using-the-java-api-deprecated}
 
 In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeForm.pdf* van /Company Huis/de Folder van de Test aan /Company Huis. De identificatiewaarde van de verplaatste inhoud wordt geschreven aan de console.
 
@@ -503,16 +503,16 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -573,9 +573,9 @@ In het volgende Java-codevoorbeeld wordt een PDF-bestand met de naam *MortgaugeF
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud van inhoudsservices weergeven met de Java API (afgekeurd) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP-modus): Inhoud weergeven met de Java API (afgekeurd) {#quick-start-soap-mode-list-content-services-content-using-the-java-api-deprecated}
 
-Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Company Huis wordt gevestigd. Elk knooppunttype en knooppuntnaam wordt getoond.
+Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Company Huis is. Elk knooppunttype en knooppuntnaam wordt getoond.
 
 ```java
  /*
@@ -604,16 +604,16 @@ Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Compan
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -686,7 +686,7 @@ Het volgende de codevoorbeeld van Java maakt een lijst van inhoud die in /Compan
  
 ```
 
-## Snel starten (SOAP-modus): Inhoud van Content Services zoeken met de Java API (afgekeurd) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
+## Snel starten (SOAP-modus): Inhoud zoeken met de Java API (afgekeurd) {#quick-start-soap-mode-search-content-services-content-using-the-java-api-deprecated}
 
 De volgende code van Java zoekt /Company Huis naar een document dat de tekst MortgaugeForm bevat. De submappen worden ook doorzocht.
 
@@ -717,16 +717,16 @@ De volgende code van Java zoekt /Company Huis naar een document dat de tekst Mor
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -780,10 +780,10 @@ De volgende code van Java zoekt /Company Huis naar een document dat de tekst Mor
              ResultSet rs = docManager.searchRepository(storeName, path, true, qImpl, 200);
              long resultSize = rs.getResultSize();
  
-             //Determine if the document is located in Content space
+             //Determine if the document is in Content space
              if (resultSize > 0)
              {
-                 System.out.println("MortgageForm is located in the Repository");
+                 System.out.println("MortgageForm is in the Repository");
              }
          }
      catch(Exception e)
@@ -827,16 +827,16 @@ In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebru
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -880,7 +880,7 @@ In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebru
              String storeName ="SpacesStore";
              String nodeName = "/Company Home/Test Directory/";
  
-              //Create a new permission
+              //Create a permission
              ContentAccessPermission permission = new ContentAccessPermission();
              permission.setAuthority("tblue/DefaultDom");
              permission.setIsAllowed(false);
@@ -908,7 +908,7 @@ In het volgende Java-codevoorbeeld wordt een machtiging ingesteld voor een gebru
 
 ## Snel starten (SOAP-modus): Koppelingen maken met de Java API (afgekeurd) {#quick-start-soap-mode-creating-associations-using-the-java-api-deprecated}
 
-Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy.In het PDF-document moet de koppelbare eigenschap zijn toegepast.
+De volgende Java-code maakt een koppeling naar een XML-gegevensbestand en een PDF-formulier. Dit type koppeling heeft de naam LinkedBy.In het PDF-document moet de koppelbare eigenschap zijn toegepast.
 
 ```java
  /*
@@ -937,16 +937,16 @@ Met de volgende Java-code maakt u een koppeling naar een XML-gegevensbestand en 
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a

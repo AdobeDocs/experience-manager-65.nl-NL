@@ -1,17 +1,15 @@
 ---
 title: Workflowdeelname
 description: Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit op een pagina of element uitvoert.
-uuid: 15d56bcc-1e84-4cc0-8b71-7fb906cd7ff7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: f170613c-329e-446b-9ac3-350615f1bfb6
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1525'
+source-wordcount: '1519'
 ht-degree: 1%
 
 ---
@@ -57,7 +55,7 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
   >
   >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
 
-* Wanneer **Tijdlijn** is geopend voor de bron, wordt de workflowstap weergegeven. Wanneer u op de waarschuwingsbanner klikt of tikt, worden ook de beschikbare acties weergegeven:
+* Wanneer **Tijdlijn** is open voor het middel, wordt de werkschemastap getoond. Wanneer u op de waarschuwingsbanner klikt of tikt, worden ook de beschikbare acties weergegeven:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -84,7 +82,7 @@ Voer de volgende procedure uit om het werkitem te voltooien:
 1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteren **Voltooid** op de werkbalk.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
+1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
 #### Een stap voor een deelnemer voltooien - Pagina-editor {#completing-a-participant-step-page-editor}
@@ -93,7 +91,7 @@ Voer de volgende procedure uit om het werkitem te voltooien:
 
 1. Open de [pagina voor bewerken](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Voltooid** in de statusbalk boven in het scherm.
-1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop down selecteur en voeg een **Opmerking** indien nodig.
+1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
 
 #### Een stap voor een deelnemer voltooien - tijdlijn {#completing-a-participant-step-timeline}

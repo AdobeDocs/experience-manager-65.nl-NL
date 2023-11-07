@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: page-authoring, introduction
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 exl-id: b41aa7e5-1a5f-4e5e-be79-637d9f71ad72
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '412'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Het omvat:
 
 * [Aan de slag](#getting-started): De basisvolgorde weergeven van gebeurtenissen die u nodig hebt voor het maken en publiceren van uw eerste pagina.
 
-* [Verdere acties](#further-actions): De vele andere acties die u tijdens het ontwerpen kunt gebruiken, volgen.
+* [Verdere acties](#further-actions): Hiermee gaat u verder met de vele andere handelingen die u tijdens het ontwerpen kunt gebruiken.
 
 ## Aan de slag {#getting-started}
 
@@ -35,15 +35,15 @@ De inhoud van uw website staat in een boomstructuur. Als u een pagina wilt maken
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
-Voordat u gaat bewerken, moet u [een nieuwe pagina maken](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
+Voordat u gaat bewerken, moet u [een pagina maken](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#creating-a-new-page).
 
-### Een pagina openen {#opening-a-page}
+### Pagina&#39;s openen {#opening-a-page}
 
 Voor vele acties, zoals het uitgeven, moet u [een pagina openen](/help/sites-classic-ui-authoring/classic-page-author-manage-pages.md#opening-a-page-for-editing).
 
 ### Een pagina bewerken {#editing-a-page}
 
-Of uw exemplaar reeds bestaande pagina&#39;s heeft of u enkel een nieuwe pagina hebt gecreeerd zelf kunt u [een pagina bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) door:
+Of uw instantie al bestaande pagina&#39;s heeft of u zelf een nieuwe pagina hebt gemaakt [een pagina bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) door:
 
 * [Een component invoegen (alinea)](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#inserting-a-component)
 * [Een component bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md#editing-a-component-content-and-properties)
@@ -57,7 +57,7 @@ Of uw exemplaar reeds bestaande pagina&#39;s heeft of u enkel een nieuwe pagina 
 
 ### Pagina&#39;s publiceren {#publishing-a-page}
 
-Als u klaar bent met het bewerken van de pagina, wilt u [de pagina publiceren (of activeren)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) zodat deze beschikbaar is voor bezoekers van uw website.
+Als u klaar bent met het bewerken van de pagina, wilt u [de pagina publiceren (of activeren)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#main-pars-title-10) zodat de website beschikbaar is voor bezoekers.
 
 ## Verdere acties {#further-actions}
 
@@ -73,7 +73,7 @@ Het is soms gemakkelijker om [pagina&#39;s kopiëren](/help/sites-classic-ui-aut
 
 ### Publicatie van een pagina ongedaan maken {#unpublishing-a-page}
 
-Als u eerder gepubliceerde (of geactiveerde) inhoud niet beschikbaar wilt maken op uw openbare website, [Publicatie van de pagina ongedaan maken (of de pagina deactiveren)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
+Als u eerder gepubliceerde (of geactiveerde) inhoud niet beschikbaar wilt maken op uw openbare website, [de publicatie van de pagina ongedaan maken (of de pagina deactiveren)](/help/sites-classic-ui-authoring/classic-page-author-publish-pages.md#unpublishing-a-page).
 
 ### Een pagina verwijderen {#deleting-a-page}
 
@@ -89,4 +89,4 @@ U kunt [een versie van een pagina maken](/help/sites-classic-ui-authoring/classi
 
 ## Meer informatie {#more-information}
 
-Toegang tot meer informatie over ontwerpen vindt u onder [Pagina&#39;s ontwerpen](/help/sites-classic-ui-authoring/classic-page-author.md) en [Werken met de ontwerpomgeving](/help/sites-classic-ui-authoring/author-env.md).
+Toegang tot meer informatie over ontwerpen kunt u vinden onder [Pagina&#39;s ontwerpen](/help/sites-classic-ui-authoring/classic-page-author.md) en [Werken met de ontwerpomgeving](/help/sites-classic-ui-authoring/author-env.md).

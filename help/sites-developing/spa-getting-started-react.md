@@ -1,19 +1,15 @@
 ---
 title: Aan de slag met SPA in AEM - Reageren
-seo-title: Getting Started with SPAs in AEM - React
 description: In dit artikel wordt een voorbeeld SPA toepassing gepresenteerd, wordt uitgelegd hoe deze wordt samengesteld en kunt u snel met uw eigen SPA aan de slag met het React-framework.
-seo-description: This article presents a sample SPA application, explains how it is put together, and lets you get up-and-running with your own SPA quickly using the React framework.
-uuid: 2beca277-a381-4482-99f6-85005d826d06
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: cc1e5c20-cc9c-4222-8a11-ec5a963d4466
 docset: aem65
 exl-id: 552649e7-6054-4ae8-b570-5ba7230e6f19
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1161'
 ht-degree: 0%
 
 ---
@@ -114,7 +110,7 @@ module.exports = {
 
 ### Gebouw {#building}
 
-Eigenlijk de app-hefboomwerkingen maken [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
+Toepassingen ontwikkelen [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
 
 `"build": "webpack && clientlib --verbose"`
 
@@ -122,7 +118,7 @@ Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
 ### Projectarchetype AEM {#aem-project-archetype}
 
-Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
+Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten steunt die React of Angular gebruiken en SPA SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -134,7 +130,7 @@ Een vereenvoudigde afbeeldingscomponent wordt als voorbeeld gebruikt, maar alle 
 
 ### index.js {#index-js}
 
-Het ingangspunt in de SPA is natuurlijk `index.js` bestand dat hier wordt weergegeven, is vereenvoudigd zodat u zich kunt concentreren op de belangrijke inhoud.
+Het ingangspunt in de SPA is de `index.js` bestand dat hier wordt weergegeven, is vereenvoudigd zodat u zich kunt concentreren op de belangrijke inhoud.
 
 ```
 import ReactDOM from 'react-dom';
@@ -273,7 +269,7 @@ Zie voor meer informatie de [Blauwdrukdocument SPA](/help/sites-developing/spa-b
 
 Componenten in een toepassing van één pagina moeten regelmatig informatie uitwisselen. Er zijn verschillende aanbevolen manieren om dit te doen, die als volgt worden opgesomd in toenemende mate van complexiteit.
 
-* **Optie 1:** Centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld door React Context te gebruiken.
+* **Optie 1:** Centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld, door React Context te gebruiken.
 * **Optie 2:** Deelstatussen delen met een framebibliotheek, zoals Redux.
 * **Optie 3:** Gebruik de objecthiërarchie door de containercomponent aan te passen en uit te breiden.
 
@@ -285,4 +281,4 @@ Zie het artikel voor meer informatie over hoe u uzelf kunt organiseren om SPA vo
 
 Raadpleeg het artikel voor meer informatie over het dynamische model naar componenttoewijzing en over de manier waarop het binnen SPA in AEM werkt [Dynamisch model naar componenttoewijzing voor SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u SPA in AEM voor een ander kader dan React of Angular wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe SPA SDK voor AEM werkt, verwijs naar [SPA](/help/sites-developing/spa-blueprint.md) artikel.
+Als u SPA in AEM voor een ander kader dan React of Angular wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe SPA SDK voor AEM werkt, zie [SPA](/help/sites-developing/spa-blueprint.md) artikel.

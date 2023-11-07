@@ -11,9 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '783'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
     </ol> <p>In een tweede fase:</p>
     <ol>
      <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de <a href="/help/sites-developing/modernization-tools.md">AEM moderniseringsinstrumenten</a> om de componenten bij te werken.</li>
-     <li>Vorm ContextHub (de vervanging voor de ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. Merk op dat ContextHub een verenigbaarheidswijze heeft die het laden van de opslag van de douaneClientContext toestaat.</li>
+     <li>Vorm ContextHub (de vervanging voor de ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. ContextHub heeft een verenigbaarheidswijze die het laden van de opslag van de douaneClientContext toestaat.</li>
     </ol> </td>
   </tr>
   <tr>

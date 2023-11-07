@@ -2,20 +2,20 @@
 title: ContextHub toevoegen aan Pagina's en Toegang tot Sporen
 description: Voeg ContextHub aan uw pagina's toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub
 exl-id: ae745af9-b49f-46b9-ab48-2fd256e9a681
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '927'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
 
 # ContextHub toevoegen aan Pagina&#39;s en Toegang tot Sporen {#adding-contexthub-to-pages-and-accessing-stores}
 
-Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en met de bibliotheken van JavaScript te verbinden ContextHub.
+Voeg ContextHub aan uw pagina&#39;s toe om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub.
 
 De JavaScript-API van ContextHub biedt toegang tot de contextgegevens die door ContextHub worden beheerd. Deze pagina beschrijft kort de belangrijkste eigenschappen van API voor de toegang tot van en het manipuleren van contextgegevens. Volg de koppelingen naar de API-naslagdocumentatie voor gedetailleerde informatie en codevoorbeelden.
 
-## ContextHub toevoegen aan een component Page {#adding-contexthub-to-a-page-component}
+## ContextHub toevoegen aan een paginacomponent {#adding-contexthub-to-a-page-component}
 
 Om de eigenschappen ContextHub toe te laten en aan de bibliotheken van JavaScript te verbinden ContextHub, omvat `contexthub` in de `head` van uw pagina. De HTML-code voor uw paginacomponent moet op het volgende voorbeeld lijken:
 
@@ -34,7 +34,7 @@ De opslag van ContextHub van het gebruik om contextgegevens voort te zetten. Con
 * [JSONPStore](contexthub-api.md#contexthub-store-persistedjsonpstore)
 * [PersistedJSONPStore](contexthub-api.md#contexthub-store-persistedstore)
 
-Alle winkeltypen zijn extensies van de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) klasse. Voor informatie over het maken van een nieuw winkeltype raadpleegt u [Aangepaste winkels maken](ch-extend.md#creating-custom-store-candidates). Voor informatie over de types van steekproefopslag, zie [Voorbeeld van ContextHub Store-kandidaten](ch-samplestores.md).
+Alle winkeltypen zijn extensies van de [`ContextHub.Store.Core`](contexthub-api.md#contexthub-store-core) klasse. Voor informatie over het maken van een winkeltype raadpleegt u [Aangepaste winkels maken](ch-extend.md#creating-custom-store-candidates). Voor informatie over de types van steekproefopslag, zie [Voorbeeld van ContextHub Store-kandidaten](ch-samplestores.md).
 
 ### Persistentiemodi {#persistence-modes}
 
@@ -113,7 +113,7 @@ Merk op dat de kandidaten van de douaneopslag extra functies kunnen bepalen die 
 
 ### ContextHub Event {#contexthub-eventing}
 
-ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk winkelobject bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object dat beschikbaar is als de opslagruimte [`eventing`](contexthub-api.md#eventing) eigenschap. Gebruik de [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) om een JavaScript-functie aan een store-gebeurtenis te binden.
+ContextHub omvat een gebeurteniskader dat u toelaat om automatisch te reageren om gebeurtenissen op te slaan. Elk winkelobject bevat een [`ContextHub.Utils.Eventing`](contexthub-api.md#contexthub-utils-eventing) object dat beschikbaar is als de opslagruimte [`eventing`](contexthub-api.md#eventing) eigenschap. Gebruik de [`on`](contexthub-api.md#on-name-handler-selector-triggerforpastevents) of [`once`](contexthub-api.md#once-name-handler-selector-triggerforpastevents) functie om een JavaScript-functie te binden aan een store-gebeurtenis.
 
 ## Contexthub gebruiken om cookies te manipuleren {#using-context-hub-to-manipulate-cookies}
 
@@ -127,7 +127,7 @@ De ContextHub segmentmotor laat u toe om te bepalen welke van de geregistreerde 
 
 ContextHub-segmenten worden onder de `/conf/<site>/settings/wcm/segments` knooppunt.
 
-De volgende segmenten worden geïnstalleerd met de [WKND-zelfstudiesite.](getting-started.md)
+De volgende segmenten worden geïnstalleerd met de [WKND-zelfstudie.](getting-started.md)
 
 * zomer
 * winter
@@ -139,11 +139,11 @@ De regels die worden gebruikt om deze segmenten op te lossen zijn als volgt same
 
 >[!WARNING]
 >
->De geïnstalleerde segmenten worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen en als zodanig niet direct zouden moeten worden gebruikt.
+>De geïnstalleerde segmenten worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen. Niet direct gebruiken.
 
 ## Foutopsporing in ContextHub {#debugging-contexthub}
 
-Er zijn een aantal opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [Het vormen ContextHub voor meer informatie.](ch-configuring.md#logging-debug-messages-for-contexthub)
+Er zijn verscheidene opties voor het zuiveren ContextHub met inbegrip van het produceren van logboeken. Zie [Het vormen ContextHub voor meer informatie.](ch-configuring.md#logging-debug-messages-for-contexthub)
 
 ## Zie een Overzicht van het Kader ContextHub {#see-an-overview-of-the-contexthub-framework}
 

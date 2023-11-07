@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2672'
+source-wordcount: '2670'
 ht-degree: 0%
 
 ---
@@ -30,10 +30,10 @@ Omdat de paginadynamiek en de interactieve inhoud zeer belangrijk voor de ervari
 Op het hoogste niveau zou u een stevig inzicht in moeten hebben:
 
 * de [HTTP/1.1-protocol](https://www.ietf.org/rfc/rfc2616.txt)
-* HTML (bij voorkeur [HTML5](https://html.spec.whatwg.org/))
+* HTML (bij voorkeur [HTML 5](https://html.spec.whatwg.org/))
 * Cascading Style Sheets
 * Extensible Markup Language (XML)
-* Asynchrone ontwerppatronen voor JavaScript en XML (AJAX)
+* Asynchrone JavaScript- en XML-ontwerppatronen (AJAX)
 * JavaScript Object Notation (JSON)
 * het Document Object Model
 * Stateful versus stateless interacties
@@ -53,7 +53,7 @@ De inhoud bevat niet alleen alle gegevens die de webtoepassing blijvend maakt. D
 
 ### David&#39;s Model {#david-s-model}
 
-Voor het modelleren van inhoud in een Java™ Content Repository is een totaal andere manier van denken nodig dan wat in de softwareindustrie gebruikelijk is voor het modelleren van gegevens in de relationele wereld. Essentieel lezen voor elke nieuwkomer voor contentbeheer op de JCR-manier is [David&#39;s model: Een gids voor het modelleren van inhoud](https://wiki.apache.org/jackrabbit/DavidsModel).
+Voor het modelleren van inhoud in een Java™ Content Repository is een totaal andere manier van denken nodig dan wat in de softwareindustrie gebruikelijk is voor het modelleren van gegevens in de relationele wereld. Essentieel lezen voor elke nieuwkomer voor contentbeheer op de JCR-manier is [David&#39;s Model: Een gids voor het modelleren van inhoud](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### RESTfulness {#restfulness}
 
@@ -71,19 +71,19 @@ De belangrijkste aspecten die u moet begrijpen van de aanvraagresolutie van Apac
 
 ### QuickStart {#quickstart}
 
-Geen stap drie: Als u wilt installeren en uitvoeren, downloadt en dubbelklikt u gewoon op het QuickStart JAR-bestand. Er is geen stap drie. Voor extra optionele functies hoeft u alleen het juiste pakket te installeren vanuit Package Share.
+Geen stap drie: als u wilt installeren en uitvoeren, downloadt en dubbelklikt u op het QuickStart JAR-bestand. Er is geen stap drie. Voor extra optionele functies hoeft u alleen het juiste pakket te installeren vanuit Package Share.
 
-Kleine snelstartgrootte: Houd het bestand QuickStart JAR minimaal. Maak slim, geoptimaliseerd gebruik van bibliotheken en verplaats optionele functionaliteit naar Package Share.
+Kleine QuickStart-grootte: houd de grootte van het QuickStart JAR-bestand minimaal. Maak slim, geoptimaliseerd gebruik van bibliotheken en verplaats optionele functionaliteit naar Package Share.
 
-Snellere opstarttijd: Wanneer u een verandering aanbrengt die de starttijd zou kunnen beïnvloeden, zorg ervoor het korter maakt, niet langer.
+Snellere opstarttijd: wanneer u een wijziging aanbrengt die de opstarttijd kan beïnvloeden, moet u ervoor zorgen dat deze korter wordt, niet langer.
 
 ### Lean en Mean {#lean-and-mean}
 
 We zijn voor code en projecten die licht, klein, snel en elegant zijn. &quot;Goed genoeg&quot; is niet goed genoeg.
 
-Hergebruik van code: Onze OSGi-gebaseerde productarchitectuur en &quot;alles is inhoud&quot;filosofie betekent dat wij ongebruikelijk goede kansen voor hergebruik van code en artefacten hebben. We proberen zo veel mogelijk van dat feit te profiteren om functies mager en gemiddeld te houden.
+Hergebruik van code: Onze OSGi-gebaseerde productarchitectuur en de filosofie &quot;alles is inhoud&quot; betekenen dat we ongebruikelijk goede mogelijkheden hebben om code en artefacten opnieuw te gebruiken. We proberen zo veel mogelijk van dat feit te profiteren om functies mager en gemiddeld te houden.
 
-Losse koppeling: We zijn voor losjes gekoppelde interacties boven strakke afhankelijkheden en &quot;ongewenste intimiteit&quot;. Met losse koppeling kunt u ook meer code hergebruiken.
+Losse koppeling: we zijn voorstander van losjes gekoppelde interacties boven strakke afhankelijkheden en &quot;ongewenste intimiteit&quot;. Met losse koppeling kunt u ook meer code hergebruiken.
 
 ### De demo niet breken {#don-t-break-the-demo}
 
@@ -91,7 +91,7 @@ Word vertrouwd met demoscripts en productfuncties die het vaakst in demo&#39;s w
 
 ### Ontwerpen voor betrouwbaarheid {#design-for-reliability}
 
-We streven ernaar om functies te ontwerpen en te coderen op faalveilige wijze, zodat (bijvoorbeeld) een probleem met één DOM-element er niet toe leidt dat een hele pagina niet wordt weergegeven. Met andere woorden: Maak dingen die fataal, fataal zouden moeten zijn. Laat alles overleven. Maak het product &#39;vergeven&#39;.
+We streven ernaar om functies te ontwerpen en te coderen op faalveilige wijze, zodat (bijvoorbeeld) een probleem met één DOM-element er niet toe leidt dat een hele pagina niet wordt weergegeven. Met andere woorden: maak dingen die fataal, fataal zouden moeten zijn. Laat alles overleven. Maak het product &#39;vergeven&#39;.
 
 ### Abnormal is the New Normal {#abnormal-is-the-new-normal}
 
@@ -101,7 +101,7 @@ Vertrouw niet op stophaken, zorg ervoor dat u opschoont bij het opstarten. Abnor
 
 ### Wees klaar voor elastische clustering {#be-ready-for-elastic-clustering}
 
-altijd klaar zijn voor elastische clustering; Ga er altijd van uit dat er sprake is van clustering. Over het algemeen betekent het naleven van alles wat zich in de inhoudsopslagplaats bevindt, geïntegreerde clusterondersteuning.
+Altijd klaar voor elastische groepering zijn; veronderstel altijd dat er zich het groeperen is. Over het algemeen betekent het naleven van alles wat zich in de inhoudsopslagplaats bevindt, geïntegreerde clusterondersteuning.
 
 ### Ontwerpen voor achterwaartse Verenigbaarheid {#design-for-backward-compatibility}
 
@@ -125,7 +125,7 @@ Het is ook mogelijk om meerdere instanties van de opslagplaats voor inhoud te co
 
 **Component** - In AEM is een component een objecttype, waarvan instanties doorgaans kunnen worden gemaakt door ze van bijvoorbeeld de Sidekick te slepen en neer te zetten. Bijvoorbeeld, buiten-de-dooscomponenten die met AEM worden verschepen omvatten de de Tekst, Titel, Cloud van de Markering, Carousel, Beeld, en componenten van de Lijst, allen beschikbaar bij de Sidekick bij runtime.
 
-**Inhoudszoeker** - In de ontwerpmodus is de Content Finder een speciaal deelvenster (frame) aan de linkerkant van de pagina dat, afhankelijk van het tabblad dat u boven selecteert, lijsten weergeeft met afbeeldingen, documenten, Flash-elementen, pagina&#39;s, alinea&#39;s of opslagplaatsen die u vanuit de Content Finder kunt slepen en neerzetten op de pagina waaraan u werkt (aan de rechterkant).
+**Inhoudzoeker** - In de ontwerpmodus is de Content Finder een speciaal deelvenster (frame) aan de linkerkant van de pagina dat, afhankelijk van het tabblad dat u boven selecteert, lijsten weergeeft met afbeeldingen, documenten, elementen van de Flash, pagina&#39;s, alinea&#39;s of opslagplaatsen die u vanuit de Content Finder kunt slepen en neerzetten op de pagina waaraan u werkt (aan de rechterkant).
 
 **Digitale middelen** - In AEM zijn digitale elementen (doorgaans) afbeeldingen en rich media-bestanden. Zie Werken met Digital Assets in DAM voor meer informatie.
 
@@ -133,7 +133,7 @@ Het is ook mogelijk om meerdere instanties van de opslagplaats voor inhoud te co
 
 **ExtJS-widgets** - De meeste gebruikersinterface-elementen in AEM maken gebruik van ExtJS, een externe widgetbibliotheek die in JavaScript is geschreven. ExtJS biedt krachtige, aanpasbare UI-widgets en een goed ontworpen en uitbreidbaar componentmodel.
 
-**JCR, Java™ Content Repository** - De Java™ Content Repository Specification (JSR-283) biedt zowel een abstract gegevensmodel als een Application Programming Interface voor het realiseren van een enorm schaalbare NoSQL-gegevensopslagruimte waarin functies van een bestandssysteem en een objectdatabase worden gecombineerd. Hoewel u JSR-283 niet in detail hoeft te begrijpen, moet u de tijd nemen om vertrouwd te maken met de basismogelijkheden van JCR en het gegevensmodel dat eraan ten grondslag ligt, omdat JCR de filosofie van &quot;alles is inhoud&quot; van AEM mogelijk maakt.
+**JCR, Java™ Content Repository** - De Java™ Content Repository Specification (JSR-283) biedt zowel een abstract gegevensmodel als een Application Programming Interface voor het realiseren van een enorm schaalbare NoSQL-gegevensopslagruimte waarin functies van een bestandssysteem en een objectdatabase worden gecombineerd. Hoewel u JSR-283 niet in detail hoeft te begrijpen, moet u de tijd nemen om vertrouwd te maken met de basismogelijkheden van de JCR en het gegevensmodel dat eraan ten grondslag ligt, omdat JCR de filosofie van &quot;alles is inhoud&quot; van AEM mogelijk maakt.
 
 In wezen is JCR een systeem van knooppunten en eigenschappen, waarin knooppunten kunnen overerven van andere knooppunten en alle inhoud wordt opgeslagen als eigenschap *waarden*. Naast de normale overerving biedt JCR ook een concept van &#39;mixin&#39;-knooppunten, waarmee meerdere overervingen kunnen worden gemodelleerd.
 
@@ -141,7 +141,7 @@ JCR heeft verscheidene vooraf bepaalde knooptypes en bezitstypes, maar over het 
 
 De JavaDoc voor de Java™-API van JCR is [hier](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
-Voordat u probeert de JavaDoc- of JCR-specificatie zelf te lezen, is het verstandig [deze verklaring op hoog niveau](/help/sites-developing/the-basics.md#java-content-repository) van JCR geïmplementeerd door Adobe Experience Services.
+Voordat u probeert de JavaDoc- of JCR-specificatie zelf te lezen, is het verstandig [deze verklaring op hoog niveau](/help/sites-developing/the-basics.md#java-content-repository) van JCR zoals geïmplementeerd door Adobe Experience Services.
 
 **MSM (Multi-Site Manager)** - De MSM-functie van AEM helpt klanten meertalige en multinationale content te verwerken, waardoor ze gecentraliseerde branding in evenwicht kunnen brengen met gelokaliseerde content.
 
@@ -151,19 +151,19 @@ Voordat u probeert de JavaDoc- of JCR-specificatie zelf te lezen, is het verstan
 
 **Microkernel** - Elke werkruimte in de opslagplaats kan afzonderlijk worden geconfigureerd om de gegevens op te slaan via een specifieke microkernel (een klasse die het lezen en schrijven van de gegevens beheert). Op dezelfde manier kan de gegevensopslagruimte-brede versieopslag ook onafhankelijk worden gevormd om een bepaalde microkernel te gebruiken. Er zijn verschillende microkorrels beschikbaar waarmee gegevens in verschillende bestandsindelingen of relationele databases kunnen worden opgeslagen. (Er zijn bijvoorbeeld persistentiemanagers voor MongoDB, DB2® of Oracle) De standaardmicrokernel voor AEM is TarMK (zie verder hieronder).
 
-**Instantie publiceren** - Voor beveiliging, bestuur en andere redenen deelt een productiesite doorgaans instanties van AEM in instanties Auteur en Publiceren. Voor meer informatie over plaatsingsarchitectuur (met inbegrip van auteur/publiceer instanties), zie documentatie over AEM Instanties.
+**Instantie publiceren** - Voor beveiliging, bestuur en andere redenen deelt een productiesite instanties van AEM doorgaans op in instanties Auteur en Publiceren. Voor meer informatie over plaatsingsarchitectuur (met inbegrip van auteur/publiceer instanties), zie documentatie over AEM Instanties.
 
-**QuickStart** - In tegenstelling tot veel andere programma&#39;s installeert u AEM met behulp van één zelfuitpakkend JAR-bestand met de naam QuickStart. Wanneer u voor het eerst op het JAR-bestand dubbelklikt, wordt alles wat u nodig hebt automatisch geïnstalleerd. De QuickStart JAR bevat alle bestanden die vereist zijn voor de CRX-opslagplaats (inclusief beheerfaciliteiten), virtuele opslagservices, index- en zoekservices, workflowservices, beveiliging en een webserver, plus de CQ Servlet Engine (CQSE) en alle AEM services. Er zijn geen andere bestanden om te installeren: De QuickStart is op zichzelf staand.
+**QuickStart** - In tegenstelling tot veel andere programma&#39;s installeert u AEM met behulp van één zelfuitpakkend JAR-bestand met de naam QuickStart. Wanneer u voor het eerst op het JAR-bestand dubbelklikt, wordt alles wat u nodig hebt automatisch geïnstalleerd. De QuickStart JAR bevat alle bestanden die vereist zijn voor de CRX-opslagplaats (inclusief beheerfaciliteiten), virtuele opslagservices, index- en zoekservices, workflowservices, beveiliging en een webserver, plus de CQ Server Engine (CQSE) en alle AEM services. Er zijn geen andere bestanden om te installeren: de QuickStart is op zichzelf staand.
 
 De eerste keer dat u de Quickstart start start, wordt op de achtergrond een volledige opslagplaats gemaakt die voldoet aan de JCR, wat enkele minuten kan duren. Na dit eerste opstarten zijn de volgende stappen veel sneller, aangezien de infrastructuur van de opslagplaats reeds is vastgelegd.
 
-Vele opstartopties (zoals het actieve havenaantal en of de AEM instantie in kwestie een Publish instantie tegenover een instantie van de Auteur zou moeten zijn; en nog veel meer) kunt u beheren door de naam van het QuickStart-bestand op de juiste manier te wijzigen. Als u een lijst met opties op dit gebied wilt weergeven, voert u de JAR met &quot;-help&quot; uit op de opdrachtregel:
+Vele opstartopties (zoals het actieve havenaantal en of de AEM instantie in kwestie een Publish instantie tegenover een instantie van de Auteur zou moeten zijn; en veel meer) kunnen worden gecontroleerd door het dossier van QuickStart correct anders te noemen. Als u een lijst met opties op dit gebied wilt weergeven, voert u de JAR met &quot;-help&quot; uit op de opdrachtregel:
 
 ```shell
 java -jar <quickstartfilename>.jar -help
 ```
 
-**Replication-agents** - Replicatieagents zijn van centraal belang voor AEM als het mechanisme dat wordt gebruikt om inhoud van een auteur naar een publicatieomgeving te publiceren (activeren); inhoud uit de Dispatcher-cache verwijderen; Door de gebruiker gegenereerde inhoud (bijvoorbeeld formulierinvoer) vanuit de publicatieomgeving terugsturen naar de auteur-omgeving.
+**Replication-agents** - De agenten van de replicatie zijn centraal om als mechanisme te AEM dat wordt gebruikt om inhoud van een auteur aan een publicatiemilieu te publiceren (te activeren); inhoud van het geheime voorgeheugen van de Verzender te spoelen; door de gebruiker geproduceerde inhoud (bijvoorbeeld, vorminput) van het Publish milieu aan het milieu van de Auteur terug te keren.
 
 **Basisstructuur** - Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina&#39;s weerspiegelen. Met dit formulier kunt u eenvoudig pagina&#39;s maken op basis van deze structuur.
 

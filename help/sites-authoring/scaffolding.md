@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: f5025f64-d3ce-43e8-9666-5c7c162536c7
 exl-id: e3488c9d-035f-4165-ad32-21103ec7e581
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '153'
+source-wordcount: '151'
 ht-degree: 0%
 
 ---
@@ -23,4 +23,4 @@ Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die
 
 >[!NOTE]
 >
->Hoewel er een structuur is [mode](/help/sites-authoring/author-environment-tools.md#page-modes) Het onderhoud en de creatie van basispagina&#39;s en het maken van nieuwe pagina&#39;s van basispagina&#39;s worden uitgevoerd in de klassieke gebruikersinterface. Zie [Basisstructuur](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in de klassieke UI authoring documentatie voor meer informatie.
+>Hoewel er een structuur is [mode](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar, wordt het onderhoud en de verwezenlijking van steigers en het creëren van nieuwe pagina&#39;s van steigers gedaan in klassieke UI. Zie [Basisstructuur](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in de klassieke UI authoring documentatie voor meer informatie.

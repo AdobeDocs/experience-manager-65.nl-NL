@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 exl-id: efebe66d-3d30-4033-9c4c-ae347e134f2f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '480'
 ht-degree: 8%
 
 ---
@@ -29,7 +29,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
-1. De moduskiezer biedt niet langer een ontwerpmodus. Alle pagina&#39;s voor We.Retail zijn gebaseerd op bewerkbare sjablonen en om het ontwerp van bewerkbare sjablonen te wijzigen, moeten deze worden bewerkt in de sjablooneditor.
+1. De moduskiezer beschikt niet meer over een ontwerpmodus. Alle pagina&#39;s voor We.Retail zijn gebaseerd op bewerkbare sjablonen en om het ontwerp van bewerkbare sjablonen te wijzigen, moeten deze worden bewerkt in de sjablooneditor.
 1. Van de **Pagina-informatie** menu selecteren **Sjabloon bewerken**.
 1. U bewerkt nu de sjabloon voor de hoofdpagina.
 
@@ -45,7 +45,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
 1. In het dialoogvenster Ontwerp van de container voor lay-outs kunt u
 
-   * Een bestaand beleid selecteren of een nieuw beleid voor de container maken
+   * Een bestaand beleid selecteren of een beleid voor de container maken
    * Selecteer welke componenten zijn toegestaan in de container
    * De standaardcomponenten definiëren die moeten worden geplaatst wanneer een element naar de container wordt gesleept
 
@@ -55,7 +55,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
    Hiermee kunt u:
 
-   * Een bestaand beleid selecteren of een nieuw beleid voor de container maken
+   * Een bestaand beleid selecteren of een beleid voor de container maken
    * Definieer de functies die beschikbaar zijn voor de auteur van de pagina wanneer u deze component gebruikt, zoals
 
       * Toegestane bronnen voor plakken
@@ -73,6 +73,6 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
 ## Meer informatie {#more-information}
 
-Voor meer informatie raadpleegt u het ontwerpdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
+Zie het ontwerpdocument voor meer informatie [Paginasjablonen maken](/help/sites-authoring/templates.md) of de pagina voor ontwikkelaarsdocumenten [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
 
 Misschien wilt u ook een onderzoek instellen [kerncomponenten](/help/sites-developing/we-retail-core-components.md). Zie het ontwerpdocument [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Basiscomponenten ontwikkelen](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: repo_restructuring
 exl-id: 2d852d9d-9be3-487a-966a-4902bd7df7f9
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2689'
 ht-degree: 0%
@@ -578,13 +578,13 @@ De `sling:resourceType` van de configuratie ContextHub moet relatief eerder dan 
   </tr>
   <tr>
    <td><strong>Notities</strong></td>
-   <td><p>Als u de bundel Dagcommunique Tagging OSGi opnieuw start, wordt de nieuwe locatie alleen geregistreerd als de hoofdcode als de vorige locatie leeg is.</p> <p>Verwijzingen naar de vorige locatie blijven werken na het migreren naar nieuwe locatie voor alle functies die gebruikmaken van AEM API voor tagbeheer voor het oplossen van tags.</p> <p>Elke aangepaste code die expliciet naar het pad verwijst <code>/etc/tags</code> moet worden bijgewerkt tot <span class="code">/content/
+   <td><p>Als u de bundel Dagcommunique Tagging OSGi opnieuw start, wordt de nieuwe locatie alleen geregistreerd als de hoofdcode als de vorige locatie leeg is.</p> <p>Verwijzingen naar de vorige locatie blijven werken na het migreren naar nieuwe locatie voor alle functies die AEM API TagManager gebruiken voor het oplossen van tags.</p> <p>Elke aangepaste code die expliciet naar het pad verwijst <code>/etc/tags</code> moet worden bijgewerkt tot <span class="code">/content/
       <code>
        cq
       </code>
       <code>
        :tags
-      </code></span>of bij voorkeur herschreven om de Java API van TagManager te gebruiken, in combinatie met deze migratie.</p> </td>
+      </code></span>of liever herschreven om de Java API van TagManager Java te gebruiken, in combinatie met deze migratie.</p> </td>
   </tr>
  </tbody>
 </table>

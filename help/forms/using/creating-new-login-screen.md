@@ -1,23 +1,19 @@
 ---
-title: Een nieuw aanmeldingsscherm maken
-seo-title: Creating a new login screen
-description: Hoe kan ik de aanmeldingspagina van LiveCycle-modules wijzigen, bijvoorbeeld van de AEM Forms-werkruimte of Forms Manager.
-seo-description: How-to modify the login page of LiveCycle modules, for example of AEM Forms workspace or Forms Manager.
-uuid: 2d4a72f4-cc9a-412d-856d-0fca75f1272b
+title: Een aanmeldingsscherm maken
+description: Hoe te om de login pagina van de modules van het LiveCycle, bijvoorbeeld, van de werkruimte van AEM Forms of de Manager van Forms te wijzigen.
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 35497785-263d-44b1-9ee4-85921997295b
 docset: aem65
 exl-id: 5cb906b6-6a3c-498c-94f5-27a9071ea934
-source-git-commit: 30327950779337ce869b6ca376120bc09826be21
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '460'
 ht-degree: 2%
 
 ---
 
-# Een nieuw aanmeldingsscherm maken{#creating-a-new-login-screen}
+# Een aanmeldingsscherm maken{#creating-a-new-login-screen}
 
 U kunt het aanmeldingsscherm wijzigen van alle AEM Forms-modules die het AEM Forms-aanmeldingsscherm gebruiken. De wijzigingen zijn bijvoorbeeld van invloed op het aanmeldingsscherm van zowel de Forms Manager- als de AEM Forms-werkruimte.
 
@@ -42,24 +38,25 @@ U kunt het aanmeldingsscherm wijzigen van alle AEM Forms-modules die het AEM For
 
    1. Repliceer de hiërarchische structuur: van `/libs/livecycle/core/components/login` om `/apps/livecycle/core/components/login`. Handhaaf de zelfde (knoop/omslag) eigenschappen en toegangsbeheer.
 
-   1. Kopieer de map met componenten: van `/libs/livecycle/core` tot `/apps/livecycle/core`.
+   1. Map met componenten kopiëren: van `/libs/livecycle/core` tot `/apps/livecycle/core`.
 
    1. Verwijder de inhoud van de map: `/apps/livecycle/core/components/login`.
 
 ### Een nieuwe landinstelling toevoegen {#adding-a-new-locale}
 
-1. Kopieer de `i18n` map:
+1. De `i18n` map:
 
    * Van `/libs/livecycle/core/components/login`
    * tot `/apps/livecycle/core/components/login`
 
 1. Alle mappen in de map verwijderen `i18n` op één na, zeg `en`.
 
-1. In de map `en`, voert de volgende handelingen uit:
+1. In de map `en`, voert u de volgende handelingen uit:
 
    1. Wijzig de naam van de map in de naam van de landinstelling die u wilt ondersteunen. Bijvoorbeeld, `ar`.
 
    1. De eigenschap wijzigen `jcr:language` waarde aan `ar`(voor de `ar` map).
+
    >[!NOTE]
    >
    >Als locale een combinatie van taal- en landcode is, bijvoorbeeld `ar-DZ`Wijzig vervolgens de mapnaam en de eigenschapswaarde in `ar-DZ`.
@@ -212,6 +209,7 @@ String browserLocale = "en";
       * Van `/libs/livecycle/core/components/login`
 
       * tot `/apps/livecycle/core/components/login`
+
    1. Wijzigen `/apps/livecycle/core/components/login/login.jsp` om de toegevoegde tekst op te nemen.
 
    ![Nieuw sleutelwaardepaar toevoegen](assets/capture_new.png)
@@ -254,8 +252,8 @@ String browserLocale = "en";
       * Van `/libs/livecycle/core/components/login`
 
       * tot `/apps/livecycle/core/components/login`
-   1. Wijzigen `/apps/livecycle/core/components/login/login.jsp` om de toegevoegde stijlen op te nemen.
 
+   1. Wijzigen `/apps/livecycle/core/components/login/login.jsp` om de toegevoegde stijlen op te nemen.
 
 
 Bijvoorbeeld:
@@ -272,15 +270,15 @@ css.newLoginContentArea {
 * Na wijzigen in `/apps/livecycle/core/components/login.jsp`.
 
 
-   ```jsp
-   <div class="loginContentArea">
-   ```
+  ```jsp
+  <div class="loginContentArea">
+  ```
 
-   Naar
+  Naar
 
-   ```jsp
-   <div class="newLoginContentArea">
-   ```
+  ```jsp
+  <div class="newLoginContentArea">
+  ```
 
 >[!NOTE]
 >
@@ -288,15 +286,15 @@ css.newLoginContentArea {
 
 ### Nieuwe afbeeldingen toevoegen {#add-new-images}
 
-1. Voer de stappen uit om een nieuwe stijl toe te voegen of bestaande stijl te wijzigen (zoals hierboven beschreven).
+1. Voer de stappen uit om een nieuwe stijl toe te voegen of een bestaande stijl te wijzigen (zoals hierboven beschreven).
 1. Nieuwe afbeeldingen toevoegen in `/apps/livecycle/core/content/login`. Afbeelding toevoegen:
 
    1. WebDAV-client installeren.
-   1. Navigeren naar `/apps/livecycle/core/content/login` map, met webDAV-client. Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
+   1. Navigeren naar `/apps/livecycle/core/content/login` met webDAV-client. Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en).
 
    1. Voeg nieuwe afbeeldingen toe.
 
-1. Nieuwe stijlen toevoegen in `/apps/livecycle/core/content/login/login.css,` komt overeen met nieuwe afbeeldingen die zijn toegevoegd in `/apps/livecycle/core/content/login`.
+1. Nieuwe stijlen toevoegen in `/apps/livecycle/core/content/login/login.css,` komt overeen met nieuwe afbeeldingen toegevoegd in `/apps/livecycle/core/content/login`.
 1. De nieuwe stijlen gebruiken in `login.jsp` om `/apps/livecycle/core/components`.
 
 Bijvoorbeeld:

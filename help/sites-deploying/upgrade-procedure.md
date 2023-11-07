@@ -9,9 +9,9 @@ docset: aem65
 targetaudience: target-audience upgrader
 feature: Upgrading
 exl-id: 5242600c-2281-46f9-a347-d985b4e319b3
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '815'
+source-wordcount: '813'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 >
 >De upgrade vereist downtime voor de Auteur-laag, aangezien de meeste Adobe Experience Manager-upgrades (AEM) op hun plaats worden uitgevoerd. Door deze beste praktijken te volgen, kunt u Publish laagonderbreking minimaliseren of elimineren.
 
-Wanneer u uw AEM-omgevingen upgradet, moet u rekening houden met de verschillen in aanpak tussen het upgraden van de auteursomgevingen of het publiceren van omgevingen om downtime voor zowel uw auteurs als eindgebruikers te minimaliseren. Deze pagina schetst de procedure op hoog niveau voor de bevordering van een AEM topologie die momenteel op een versie van AEM 6.x loopt. Aangezien het proces verschilt tussen auteur- en publicatieniveaus en op Mongo en TarMK gebaseerde implementaties, is elke laag en microkernel in een aparte sectie vermeld. Wanneer u uw implementatie uitvoert, raadt Adobe u aan eerst de auteursomgeving te upgraden, te bepalen of uw toepassing is gelukt en vervolgens door te gaan naar de publicatieomgevingen.
+Wanneer u uw AEM-omgevingen upgradet, moet u rekening houden met de verschillen in aanpak tussen het upgraden van de auteursomgevingen of het publiceren van omgevingen om downtime voor zowel uw auteurs als eindgebruikers te minimaliseren. Deze pagina schetst de procedure op hoog niveau voor de bevordering van een AEM topologie die momenteel op een versie van AEM 6.x loopt. Omdat het proces tussen auteur en publicatielagen en op Mongo en TarMK gebaseerde plaatsingen verschilt, is elke rij en microkernel vermeld in een afzonderlijke sectie. Wanneer het uitvoeren van uw plaatsing, adviseert de Adobe eerst uw auteursmilieu te bevorderen, bepalend succes, en dan aan de publicatiemilieu&#39;s te werk te gaan.
 
 <!--
 >[!IMPORTANT]
@@ -75,7 +75,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een server van de Auteu
 
 ![terugdraaien](assets/rollback.jpg)
 
-1. Start de Cold Standby-instantie als de nieuwe Primaire instantie.
+1. Start de Cold Standby-instantie als de nieuwe primaire instantie.
 
 1. Maak de Auteur-omgeving opnieuw vanuit de koude stand-by.
 
@@ -83,7 +83,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een server van de Auteu
 
 ### Begintopologie {#starting-topology-1}
 
-De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Auteur MongoMK met minstens twee instanties van de Auteur AEM, gesteund door minstens twee gegevensbestanden MongoMK. Alle instanties van Auteurs delen een datastore. Deze stappen zouden op zowel S3 als de datastores van het Dossier moeten van toepassing zijn. De replicatie komt van de servers van de Auteur aan het TarMK voor publiceert landbouwbedrijf.
+De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Auteur MongoMK met minstens twee AEM instanties van de Auteur, gesteund door minstens twee gegevensbestanden MongoMK. Alle instanties van Auteurs delen een datastore. Deze stappen zouden op zowel S3 als de datastores van het Dossier moeten van toepassing zijn. De replicatie komt van de servers van de Auteur aan het TarMK voor publiceert landbouwbedrijf.
 
 ![mongotopologie](assets/mongo-topology.jpg)
 
@@ -93,7 +93,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 1. Inhoud niet schrijven.
 1. Kloont de gegevensopslag voor back-up.
-1. Stop alle AEM-auteur-instanties op één na, uw primaire auteur.
+1. Stop op één na alle AEM instantie Auteur, uw primaire auteur.
 1. Verwijder op één na alle MongoDB-knooppunten uit de replicaset, uw primaire Mongo-instantie.
 1. Werk de `DocumentNodeStoreService.cfg` bestand op de primaire auteur om de replicaset voor één lid weer te geven.
 1. Start de primaire auteur opnieuw om ervoor te zorgen dat deze opnieuw op de juiste wijze wordt opgestart.
@@ -113,7 +113,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 ![mongo-gedetacheerde](assets/mongo-secondaries.jpg)
 
-1. Maak nieuwe 6.5 Auteurinstanties die zijn verbonden met de geüpgrade Mongo-instantie.
+1. Maak nieuwe 6.5 Auteur-instanties die zijn verbonden met de geüpgrade Mongo-instantie.
 
 1. Maak de MongoDB-knooppunten die uit de cluster zijn verwijderd, opnieuw.
 
@@ -135,7 +135,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 
 1. Start de secundaire Mongo-instanties op met een van hen als de nieuwe primaire instantie.
 
-1. Configureer de `DocumentNodeStoreService.cfg` bestanden op de instanties van de secundaire auteur verwijzen naar de replicaset van nog niet bijgewerkte Mongo-instanties.
+1. Vorm `DocumentNodeStoreService.cfg` bestanden op de instanties van de secundaire auteur verwijzen naar de replicaset van nog niet bijgewerkte Mongo-instanties.
 
 1. Start de secundaire Auteur-instanties op.
 

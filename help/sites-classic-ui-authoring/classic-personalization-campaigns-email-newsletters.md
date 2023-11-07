@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 exl-id: c07692f7-3618-4e8c-96d7-4db09f2d9896
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1107'
+source-wordcount: '1106'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Voer de volgende stappen uit om uw e-mail naar het e-mailservicebureau te public
 
 Een e-mail of nieuwsbrief die u aan een e-maildienst wilt publiceren kan onder een campagne worden gecreeerd gebruikend **Geometrixx-nieuwsbrief** sjabloon. U kunt ook de opdracht **E-mailadres Geometrixx Outdoors** sjabloon. Voorbeeld van e-mail/nieuwsbrief op basis van de **E-mailadres Geometrixx Outdoors** sjabloon is beschikbaar op `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
-Een nieuwe e-mail tot stand brengen die aan de gevormde e-maildienst wordt gepubliceerd:
+Om een e-mail tot stand te brengen die aan de gevormde e-maildienst wordt gepubliceerd:
 
 1. Ga naar **Websites** en vervolgens **Campagnes**. Selecteer een campagne.
 1. Klikken **Nieuw** om de **Pagina maken** venster.

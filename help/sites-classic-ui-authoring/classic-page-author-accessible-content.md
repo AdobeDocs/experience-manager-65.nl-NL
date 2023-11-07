@@ -1,19 +1,15 @@
 ---
 title: Toegankelijke content maken (WCAG 2.0-compatibiliteit)
-seo-title: Creating Accessible Content (WCAG 2.0 Conformance)
 description: WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap.
-seo-description: WCAG 2.0 consists of a set of technology independent guidelines and success criteria to help make web content accessible to, and usable by, persons with disabilities.
 page-status-flag: de-activated
-uuid: c2c0cac0-2a9f-478d-8261-e8cc894aae34
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9152'
+source-wordcount: '9151'
 ht-degree: 6%
 
 ---
@@ -528,13 +524,13 @@ Ook informatie die onderscheid moet maken tussen verschillende geluiden (bijvoor
 
 >[!NOTE]
 >
-Raadpleeg voor vereisten met betrekking tot alternatieven voor kleur [Gebruik van kleur](#use-of-color).
+Voor eisen met betrekking tot alternatieven voor kleur, zie [Gebruik van kleur](#use-of-color).
 
 #### Voldoen aan sensorische kenmerken (1.3.3) {#how-to-meet-sensory-characteristics}
 
 Zorg ervoor dat alle informatie die afhankelijk is van visuele kenmerken van pagina-inhoud, ook in een andere indeling wordt weergegeven.
 
-* Vertrouw niet op de visuele positie om informatie te geven. Als u bijvoorbeeld gebruikers naar een menu aan de rechterkant van de pagina wilt verwijzen voor toegang tot meer informatie, verwijst u niet naar *het menu aan de rechterkant* In plaats daarvan geeft u het menu een naam (bijvoorbeeld via een kop) en verwijst u naar die naam in de tekst.
+* Vertrouw niet op de visuele positie om informatie te geven. Als u bijvoorbeeld gebruikers naar een menu aan de rechterkant van de pagina wilt verwijzen voor toegang tot meer informatie, verwijst u niet naar *het menu aan de rechterkant* In plaats daarvan geeft u het menu een naam (bijvoorbeeld als kop) en verwijst u naar die naam in de tekst.
 * Vertrouw niet op tekstopmaak (bijvoorbeeld vette of cursieve tekst) als enige manier om informatie over te brengen.
 
 >[!NOTE]
@@ -684,7 +680,7 @@ Als afbeeldingen van tekst moeten worden gebruikt, gebruikt u CSS om de afbeeldi
 
 Opmerkingen zijn:
 
-1. Voor vereisten met betrekking tot flikkerende of knipperende inhoud raadpleegt u [Inhoud niet ontwerpen op een manier waarvan bekend is dat deze aanvallen veroorzaakt (2.3)](#seizures).
+1. Voor eisen met betrekking tot flikkerende of knipperende inhoud raadpleegt u [Inhoud niet ontwerpen op een manier waarvan bekend is dat deze aanvallen veroorzaakt (2.3)](#seizures).
 1. Aangezien inhoud die niet aan dit succescriterium voldoet, de mogelijkheid van een gebruiker om de hele pagina te gebruiken kan beïnvloeden, moet alle inhoud op de webpagina (ongeacht of deze wordt gebruikt om aan andere succescriteria te voldoen of niet) aan dit succescriterium voldoen. Zie [Conformiteitsvereiste 5: geen interferentie](https://www.w3.org/TR/WCAG20/#cc5).
 1. Inhoud die regelmatig door software wordt bijgewerkt of naar de gebruikersagent wordt gestreamd, is niet verplicht informatie te bewaren of te presenteren die wordt gegenereerd of ontvangen tussen het begin van de pauze- en de hervattingspresentatie, aangezien dit technisch mogelijk is en in veel situaties misleidend kan zijn om dit te doen.
 1. Een animatie die optreedt als onderdeel van een voorlaadfase of een vergelijkbare situatie, kan als essentieel worden beschouwd als er tijdens die fase geen interactie kan optreden voor alle gebruikers en als de voortgang niet wordt aangegeven, gebruikers in verwarring kan brengen of kan leiden tot het vermoeden dat de inhoud is bevroren of gebroken.

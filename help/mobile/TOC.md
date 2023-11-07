@@ -7,9 +7,9 @@ breadcrumb-title: Gids voor mobiele apparaten
 user-guide-description: Maak en beheer content voor mobiele apps.
 feature: Mobile
 role: User
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '330'
 ht-degree: 5%
 
 ---
@@ -63,7 +63,7 @@ ht-degree: 5%
    + [App-metagegevens bewerken](phonegap-editmetadata.md)
    + [Toepassingsdefinities](phonegap-app-definitions.md)
    + [App-inhoud maken en beheren](phonegap-manage-app-content.md)
-   + [Een nieuwe AEM Mobile-app maken met de wizard Maken](phonegap-create-new-app.md)
+   + [Een AEM Mobile-app maken met een wizard maken](phonegap-create-new-app.md)
    + [Mobiele toepassingen ontwerpen](phonegap-authoring-apps.md)
    + [App-tegel beheren](phonegap-app-details-tile.md)
    + [Aanpassing van AEM Mobile-content](phonegap-aem-mobile-content-personalization.md)

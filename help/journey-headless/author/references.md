@@ -2,9 +2,9 @@
 title: Meer informatie over het gebruik van verwijzingen in inhoudsfragmenten
 description: Leer over het gebruiken van verwijzingen in de Fragmenten van de Inhoud, voor inhoud, andere fragmenten en andere activa (media). Introduceer de noodzaak voor en de mechaniek van geneste fragmenten voor CMS-creatie zonder koppen.
 exl-id: d54a0a40-a8af-456a-9bf5-219d84540c97
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '726'
+source-wordcount: '722'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Content Reference do just that - they lets you reference any other content. Hier
 
 ## Verwijzingen naar element/media {#assets-media-references}
 
-In een tekstblok kan naar elementen (bijvoorbeeld afbeeldingen of media) worden verwezen met de opdracht **Element invoegen** -optie. Hiermee wordt een browser geopend waarin u het element kunt selecteren.
+In een tekstblok kan naar elementen (bijvoorbeeld afbeeldingen of media) worden verwezen met de opdracht **Element invoegen** -optie. Hiermee opent u een browser waarin u het element kunt selecteren.
 
 ![Inhoudsfragmenten - Element invoegen](/help/journey-headless/author/assets/headless-journey-author-references-02.png)
 
@@ -58,7 +58,7 @@ U kunt bijvoorbeeld de volgende modellen van inhoudsfragmenten definiëren:
 * Persoon
 * Uitreiking
 
-Het lijkt vrij eenvoudig, maar een bedrijf heeft natuurlijk zowel een CEO als werknemers...en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
+Het lijkt vrij eenvoudig, maar een bedrijf heeft zowel een CEO als werknemers...en dit zijn allemaal mensen, elk gedefinieerd als een persoon.
 
 En een persoon kan een Prijs (of misschien twee) hebben.
 

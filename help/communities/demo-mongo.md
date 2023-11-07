@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 role: Admin
 exl-id: 7e257b34-a0f5-47db-b1a9-e26333c287d9
-source-git-commit: b9c164321baa3ed82ae87a97a325fcf0ad2f6ca0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Dit begint een server MongoDB gebruikend standaardhaven 27017.
 >
 >Als MongoDB is gestart *na* AEM, **opnieuw opstarten** alles **AEM** instanties zodat ze verbinding maken met MongoDB.
 
-### Optie voor demoproductie: MongoDB-replicaset instellen {#demo-production-option-setup-mongodb-replica-set}
+### Optie voor demoproductie: Set MongoDB Replica instellen {#demo-production-option-setup-mongodb-replica-set}
 
 De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset met 3 knooppunten op localhost:
 
@@ -112,7 +112,7 @@ Om een inzameling Solr voor MSRP voor demo te vormen, zijn er twee te nemen besl
 1. Solr uitvoeren in zelfstandige of [SolrCloud-modus](msrp.md#solrcloudmode).
 1. Installeren [standaard](msrp.md#installingstandardmls) of [geavanceerd](msrp.md#installingadvancedmls) meertalig zoeken (MLS).
 
-### Zelfstandige Solr {#standalone-solr}
+### Zelfstandige zonne-energie {#standalone-solr}
 
 De methode voor het uitvoeren van Solr kan verschillen, afhankelijk van de versie en wijze van installatie. De [Solo-naslaggids](https://archive.apache.org/dist/lucene/solr/ref-guide/) is de gezaghebbende documentatie.
 
@@ -147,7 +147,7 @@ Volg de instructies op de hoofddocumentatiepagina: [MSRP - MongoDB Common Store]
 
 ## Testen {#test}
 
-Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een opmerking op de publicatieinstantie en bekijkt u deze op de auteurinstantie, en bekijkt u de UGC in MongoDB en Solr:
+Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een opmerking op de publicatieinstantie en bekijkt u deze op de auteurinstantie. U ziet de UGC in MongoDB en Solr:
 
 1. Blader in de publicatie-instantie naar de [Community Components Guide](http://localhost:4503/content/community-components/en/comments.html) en selecteert u de component Opmerkingen.
 1. Meld u aan om een opmerking te plaatsen:
@@ -159,7 +159,7 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
    ![view-comment](assets/view-comment.png)
 
-   Opmerking: Terwijl er JCR-knooppunten onder de *asipath* Op auteur, zijn deze knopen voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
+   Opmerking: terwijl er JCR-knooppunten onder de *asipath* Op auteur, zijn deze knopen voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
 
 1. UGC weergeven in mongodb **[!UICONTROL Communities]** > **[!UICONTROL Collections]** > **[!UICONTROL Content]**
 

@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2072'
+source-wordcount: '2065'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ DB2 heeft ingebouwde mogelijkheden aan file een gegevensbestand aan de Manager v
 
 Maak back-ups van momentopnamen of configureer de database van het Oracle voor uitvoering in de archieflogmodus. (Zie [Back-up van oracle: een introductie](https://www.databasedesign-resource.com/oracle-backup.md).) Voor meer informatie over het steunen van en het terugkrijgen van uw gegevensbestand van het Oracle, ga naar deze plaatsen:
 
-[Back-up en herstel van oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken voor het gebruiken van de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en het melden in detail, evenals het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
+[Back-up en herstel van oracle:](https://www.oracle.com/technetwork/database/features/availability/br-overview-097160.html) Verklaart de concepten steun en terugwinning en de gemeenschappelijkste technieken voor het gebruiken van de Manager van de Terugwinning (RMAN) voor steun, terugwinning, en het melden in meer detail, en het verstrekken van meer informatie over hoe te om een steun en terugwinningsstrategie te plannen.
 
 [Gebruikershandleiding voor back-up en herstel van database oracle:](https://download.oracle.com/docs/cd/E11882_01/backup.112/e10642.pdf) Verstrekt diepgaande informatie over architectuur RMAN, steun en terugwinningsconcepten en mechanismen, geavanceerde terugwinningstechnieken zoals punt-in-tijd terugwinning en gegevensbestand flashback eigenschappen, en steun en terugwinningsprestaties het stemmen. Het omvat ook door de gebruiker beheerde back-up en herstel, waarbij gebruik wordt gemaakt van hostbesturingssysteemfaciliteiten in plaats van RMAN. Dit volume is essentieel voor back-up en herstel van geavanceerdere databaseimplementaties en voor geavanceerde herstelscenario&#39;s.
 
@@ -163,7 +163,7 @@ Maak een back-up van de volgende mappen in de hoofdmap van de inhoudsopslagruimt
 
 /backup-lucene-indexen
 
-Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, die ook in de folder van de Root van de Opslag van de Inhoud wordt gevestigd. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
+Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, ook in de folder van de Root van de Opslag van de Inhoud. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
 
 ### Hoofdlocatie voor opslag van inhoud (geclusterde omgeving) {#content-storage-root-location-clustered-environment}
 
@@ -183,7 +183,7 @@ De standaardlocatie voor de hoofdmap van de inhoudsopslag is `[GDS root]/lccs_da
 
 /backup-lucene-indexen
 
-Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, die ook in de folder van de Root van de Opslag van de Inhoud wordt gevestigd. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
+Als de /backup-lucene-indexes folder niet aanwezig is, file de /lucene-indexes folder, ook in de folder van de Root van de Opslag van de Inhoud. Als de /backup-lucene-indexes folder aanwezig is, maak geen file de /lucene-indexes folder omdat het fouten kan veroorzaken.
 
 De standaardlocatie voor de hoofdmap van de index is `[aem-forms root]/lucene-indexes` op elk knooppunt.
 
@@ -193,6 +193,6 @@ Als u aanvullende lettertypen hebt geïnstalleerd op uw AEM, moet u er een afzon
 
 >[!NOTE]
 >
-De Adobe van lettertypen die met AEM formulieren zijn geïnstalleerd, bevindt zich standaard in de map `[aem-forms root]/fonts` directory.
+De Adobe van lettertypen die met AEM formulieren zijn geïnstalleerd, vindt u standaard in het dialoogvenster `[aem-forms root]/fonts` directory.
 
 Als u het besturingssysteem op de hostcomputer opnieuw initialiseert en u de lettertypen van het vorige besturingssysteem wilt gebruiken, moet ook een back-up worden gemaakt van de inhoud van de systeemmap met lettertypen. (Raadpleeg de documentatie bij het besturingssysteem voor specifieke instructies.)

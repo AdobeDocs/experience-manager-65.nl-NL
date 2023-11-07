@@ -2,9 +2,9 @@
 title: Een externe SPA bewerken in Adobe Experience Manager
 description: In dit document worden de aanbevolen stappen beschreven voor het uploaden van een zelfstandige SPA naar een Adobe Experience Manager-instantie, het toevoegen van bewerkbare gedeelten van inhoud en het inschakelen van het schrijven.
 exl-id: 25236af4-405a-4152-8308-34d983977e9a
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2432'
 ht-degree: 0%
 
 ---
@@ -247,7 +247,7 @@ Wanneer de auteur van de inhoud deze component bijwerkt, wordt een nieuwe `text_
 
 #### Eisen en beperkingen {#limitations}
 
-Er zijn verschillende vereisten om virtuele bladcomponenten toe te voegen en enkele beperkingen.
+Er zijn verschillende vereisten om virtuele bladcomponenten en enkele beperkingen toe te voegen.
 
 * De `pagePath` eigenschap is verplicht voor het maken van een virtuele component.
 * Het paginaknooppunt dat is opgegeven op het pad in `pagePath` moet in het AEM-project bestaan.
@@ -286,7 +286,7 @@ Meer componenten en inhoud kunnen nu aan de container worden toegevoegd zoals de
 
 #### Eisen en beperkingen {#container-limitations}
 
-Er zijn verschillende vereisten om virtuele containers toe te voegen en enkele beperkingen.
+Er zijn verschillende vereisten om virtuele containers en enkele beperkingen toe te voegen.
 
 * Het beleid om te bepalen welke componenten kunnen worden toegevoegd zal van de oudercontainer worden geërft.
 * Het directe bovenliggende element van de container die moet worden gemaakt, moet al in AEM bestaan.
@@ -314,9 +314,9 @@ Stel dat we een SPA hebben waarin de toepassing wordt gerenderd in een `div` van
 
 1. Voer twee stappen uit in de hoofdtekst van de paginacomponent van de AEM-app:
 
-   1. Een nieuwe `body.html` voor de pagina-component.
+   1. Een `body.html` voor de pagina-component.
 
-   ![Een nieuw bestand body.html maken](assets/external-spa-update-body.gif)
+   ![Een bestand body.html maken](assets/external-spa-update-body.gif)
 
    1. Het nieuwe basiselement toevoegen aan het nieuwe `body.html` bestand.
 
@@ -336,9 +336,9 @@ Om het uitgeven binnen AEM voor dit SPA toe te laten, zijn de volgende stappen v
 
    * Voor onze steekproef, denken wij `wknd-spa-react/us/en` als de basis van de SPA. Dit betekent dat alles vóór dat pad AEM alleen pagina&#39;s/inhoud is.
 
-1. Maak een nieuwe pagina op het vereiste niveau.
+1. Maak een pagina op het vereiste niveau.
 
-   * In dit voorbeeld is de pagina die moet worden bewerkt `mydomain.com/test`. `test` bevindt zich in het hoofdpad van de app. Dit moet ook worden behouden bij het maken van de pagina in AEM. Daarom kunnen wij een nieuwe pagina op het wortelniveau tot stand brengen dat in de vorige stap wordt bepaald.
+   * In dit voorbeeld is de pagina die moet worden bewerkt `mydomain.com/test`. `test` bevindt zich in het hoofdpad van de app. Dit moet ook worden behouden bij het maken van de pagina in AEM. Daarom kunt u een pagina op het wortelniveau tot stand brengen dat in de vorige stap wordt bepaald.
    * De nieuwe pagina die u maakt, moet dezelfde naam hebben als de pagina die u wilt bewerken. In dit voorbeeld voor `mydomain.com/test`moet de nieuwe pagina worden gemaakt `/path/to/aem/root/test`.
 
 1. Voeg helpers binnen SPA het verpletteren toe.

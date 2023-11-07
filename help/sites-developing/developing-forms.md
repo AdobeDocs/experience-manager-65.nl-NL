@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6ee3bd3b-51d1-462f-b12e-3cbe24898b85
 docset: aem65
 exl-id: f43e9491-aa8f-40af-9800-123695142559
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1953'
+source-wordcount: '1947'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Naast [ontwikkeling van nieuwe onderdelen](/help/sites-developing/developing-com
 
 >[!NOTE]
 >
->Dit document is gericht op het ontwikkelen van formulieren met behulp van de [Elementaire componenten](/help/sites-authoring/default-components-foundation.md) in de klassieke UI. Adobe beveelt aan de nieuwe [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [Voorwaarden verbergen](/help/sites-developing/hide-conditions.md) voor formulierontwikkeling in de interface met aanraakbediening.
+>Dit document is gericht op het ontwikkelen van formulieren met behulp van de [Elementaire componenten](/help/sites-authoring/default-components-foundation.md) in de klassieke UI. Adobe raadt u aan de nieuwe [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html) en [Voorwaarden verbergen](/help/sites-developing/hide-conditions.md) voor formulierontwikkeling in de interface met aanraakbediening.
 
 ## Formulierwaarden vooraf laden {#preloading-form-values}
 
@@ -68,7 +68,7 @@ Een vervolgkeuzelijst kan worden geconfigureerd met uw reeks waarden voor select
 
 De **Pad items laden** kan worden gebruikt om toegang te krijgen tot een lijst vanuit een map in de repository en deze vooraf in het veld te laden:
 
-1. Een nieuwe deelmap maken ( `sling:Folder`) bijvoorbeeld `/etc/designs/<myDesign>/formlistvalues`
+1. Een deelmap maken ( `sling:Folder`) bijvoorbeeld `/etc/designs/<myDesign>/formlistvalues`
 
 1. Een nieuwe eigenschap toevoegen (bijvoorbeeld `myList`) van het type multi-value string ( `String[]`) om de lijst met vervolgkeuzelijsten te bevatten. Inhoud kan ook worden geïmporteerd met een script, zoals met een JSP-script of cURL in een shell-script.
 
@@ -78,7 +78,7 @@ Let erop dat als de waarden in de `String[]` hebben de volgende notatie:
 
 * `AL=Alabama`
 * `AK=Alaska`
-* enz.
+* enzovoort
 
 AEM genereert de lijst vervolgens als:
 
@@ -178,7 +178,7 @@ Dit script wordt aangeroepen wanneer het formulier wordt gegenereerd. Deze kan w
 De naam van het script is `cleanup.<extension>`, bijvoorbeeld `cleanup.jsp`
 Dit script kan worden gebruikt om opschoning uit te voeren.
 
-1. Gebruik de **Forms** in een parsys. De **Type handeling** de keuzelijst bevat nu uw nieuwe handeling.
+1. Gebruik de **Forms** in een parsys. De **Type handeling** de vervolgkeuzelijst bevat nu uw nieuwe handeling.
 
    >[!NOTE]
    >
@@ -275,7 +275,7 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
 
 1. Selecteren **Tonen/verbergen** om de **Regels tonen/verbergen bewerken** dialoogvenster:
 
-   * Selecteer in de eerste vervolgkeuzelijst een van de **Tonen** of **Verbergen** om op te geven of uw voorwaarden bepalen of de component moet worden weergegeven of verborgen.
+   * Selecteer in de eerste vervolgkeuzelijst of **Tonen** of **Verbergen** om op te geven of uw voorwaarden bepalen of de component moet worden weergegeven of verborgen.
 
    * Selecteer in de vervolgkeuzelijst aan het einde van de bovenste regel:
 

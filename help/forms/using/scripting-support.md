@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: c4045313200ffecbf05abfacd67aabc80ad67e7f
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3892'
+source-wordcount: '3888'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Hiermee geeft u de inhoud van het veld op nadat deze is gewijzigd als reactie op handelingen van de gebruiker.</td>
    <td><p>De <code>newText</code> De eigenschap werkt niet goed voor de volgende gevallen:</p>
     <ul>
-     <li>Bij het selecteren van teksten</li>
+     <li>Bij het selecteren en vervangen van tekst</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
      <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (, ), &amp;, @ en meer) in numerieke velden<br /> </li>
      <li>Bij gebruik van de combinatie shift+alfanumeriek. </li>
@@ -65,7 +65,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Hiermee wordt de waarde opgegeven die een gebruiker in een veld typt of plakt direct nadat de handeling is uitgevoerd. </td>
    <td><p>De eigenschap change werkt niet goed voor de volgende gevallen:</p>
     <ul>
-     <li>Bij het selecteren van teksten</li>
+     <li>Bij het selecteren en vervangen van tekst</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
      <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (,), &amp;, @ en meer) in numerieke velden<br /> </li>
      <li>Bij gebruik van de combinatie shift+alfanumeriek. </li>
@@ -136,7 +136,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td><code>pageUp</code></td>
-   <td>Ga naar de vorige pagina.</td>
+   <td>Goes to the previous page.</td>
    <td>Voor HTML5-formulieren wordt niet hetzelfde pagineringsbeleid gevolgd als voor PDF-formulieren. De vorige pagina van een HTML5-formulier is dus anders dan de vorige pagina van een PDF-formulier.</td>
   </tr>
   <tr>
@@ -339,7 +339,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr>
    <td>parentSubform</td>
    <td>Hiermee wordt het bovenliggende subformulier (pagina) van dit veld opgegeven.</td>
-   <td>Retourneert altijd het bovenliggende subformulier in plaats van het eerste niet-bereikbare bovenliggende subformulier te retourneren.<br /> </td>
+   <td>Retourneert altijd het bovenliggende subformulier in plaats van het eerste bovenliggende subformulier zonder bereik te retourneren.<br /> </td>
   </tr>
   <tr>
    <td>selectedIndex</td>
@@ -353,7 +353,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 
 | **Eigenschap** | **Beschrijving** | **Uitzondering** |
 |---|---|---|
-| formNodes | Hiermee wordt een lijst geretourneerd van alle formuliermodelobjecten die zijn gebonden aan een opgegeven gegevensobject. |  |
+| formNodes | Retourneert een lijst met alle formuliermodelobjecten die zijn gebonden aan een opgegeven gegevensobject. |  |
 
 ## InstanceManager {#instancemanager}
 
@@ -378,7 +378,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
 | `item` | Een op nul gebaseerde index in de verzameling. |
 | `append` | Hiermee wordt een knooppunt toegevoegd aan het einde van de lijst met knooppunten. |
 | `remove` | Hiermee wordt een knooppunt uit de lijst met knooppunten verwijderd. |
-| `insert` | Voegt een knooppunt in vóór een specifiek knooppunt in de lijst met knooppunten. |
+| `insert` | Voegt een knoop vóór een specifieke knoop in de knooplijst in. |
 
 ## node {#node}
 
@@ -1225,7 +1225,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
    1. Oneof()
    1. Within()
 
-1. **Tekenreeksfuncties**
+1. **Reeksfuncties**
 
    1. At()
    1. Concat()
@@ -1267,7 +1267,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   </tr>
   <tr>
    <td>app.beep()</td>
-   <td>Zorgt ervoor dat het systeem een geluid afspeelt.</td>
+   <td>Hiermee wordt door het systeem een geluid afgespeeld.</td>
    <td>Er wordt geen actie uitgevoerd.</td>
   </tr>
   <tr>
@@ -1307,7 +1307,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   </tr>
   <tr>
    <td>app.activeDocs</td>
-   <td>Een array met het object Doc voor elk actief document. Als er geen documenten actief zijn, retourneert activeDocs niets. Dat wil zeggen dat de code hetzelfde gedrag heeft als d = new Array(0) in de kern-JavaScript.</td>
+   <td>Een array met het object Doc voor elk actief document. Als er geen documenten actief zijn, retourneert activeDocs niets. Dit houdt in dat het dezelfde werking heeft als d = new Array(0) in kern-JavaScript.</td>
    <td>Retourneert een lege array voor HTML5-formulieren.</td>
   </tr>
   <tr>
@@ -1322,7 +1322,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
   </tr>
   <tr>
    <td>app.focusRect</td>
-   <td>Hiermee schakelt u de focusrechthoek in of uit. De focusrechthoek bestaat uit de stippellijn met de puntjes rond knoppen, selectievakjes, keuzerondjes en handtekeningen om aan te geven dat het formulierveld de toetsenbordfocus heeft. Bij de waarde true wordt de focusrechthoek ingeschakeld.</td>
+   <td>Hiermee schakelt u de focusrechthoek in of uit. De focusrechthoek bestaat uit de stippellijn met een zwakke punt rond knoppen, selectievakjes, keuzerondjes en handtekeningen om aan te geven dat het formulierveld de toetsenbordfocus heeft. Bij de waarde true wordt de focusrechthoek ingeschakeld.</td>
    <td>Altijd waar voor HTML5-formulieren.</td>
   </tr>
   <tr>
@@ -1353,4 +1353,4 @@ De volgende client-side XFA-gebeurtenissen worden ondersteund:
 
 >[!NOTE]
 >
->HTML5-formulieren worden weergegeven op de client (browser). Aanbevolen wordt om de clientzijde te gebruiken **validate** en **berekenen** scripts in plaats van serverscripts.
+>HTML5-formulieren worden weergegeven op de client (browser). Client-kant gebruiken **validate** en **berekenen** scripts in plaats van serverscripts.

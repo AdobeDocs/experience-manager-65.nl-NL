@@ -3,9 +3,9 @@ title: Behandeling van GDPR-verzoeken voor de Adobe Experience Manager Foundatio
 description: Behandeling van GDPR-verzoeken voor de Adobe Experience Manager Foundation
 contentOwner: sarchiz
 exl-id: 411d40ab-6be8-4658-87f6-74d2ac1a4913
-source-git-commit: 96e2e945012046e6eac878389b7332985221204e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '433'
 ht-degree: 0%
 
 ---
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy; zoals GDPR, CCPA enz.
+>De GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy, zoals de GDPR, de CCPA enzovoort.
 
 ## Ondersteuning van AEM Foundation GDPR {#aem-foundation-gdpr-support}
 
@@ -24,7 +24,7 @@ Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opge
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de console van het Beleid van de Gebruiker, door te doorbladeren aan **[!UICONTROL Settings - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Settings - Security - Users]** of door rechtstreeks te bladeren naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -38,7 +38,7 @@ Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opge
 
 ### HTTP-API {#http-api}
 
-Zoals vermeld, verstrekt Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
+Zoals vermeld, verstrekt de Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
 **UserProperties-API**
 
@@ -105,7 +105,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
 ### HTTP-API {#http-api-1}
 
-Bij de volgende procedures wordt gebruikgemaakt van de `curl` opdrachtregelprogramma om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en profielen verwijderen van `cavery` die beschikbaar zijn op de standaardlocatie.
+Bij de volgende procedures worden de `curl` opdrachtregelprogramma om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en profielen verwijderen van `cavery` die beschikbaar zijn op de standaardlocatie.
 
 * *De startpagina van de gebruiker opzoeken*
 

@@ -10,18 +10,18 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2623'
 ht-degree: 0%
 
 ---
 
 # Serverinstellingen configureren {#configuring-server-settings}
 
-De pagina Serverinstellingen biedt toegang tot verschillende instellingen voor de formulierworkflow:
+Via de pagina Serverinstellingen hebt u toegang tot verschillende instellingen voor de formulierworkflow:
 
-* **E-mailinstellingen** die uitgaande e-mailberichten inschakelen, samen met de instellingen voor de e-mailserver die voor die berichten worden gebruikt. (Zie [E-mailinstellingen configureren](configuring-server-settings.md#configuring-email-settings).)
+* **E-mailinstellingen** die uitgaande e-mailberichten, samen met de instellingen van de e-mailserver voor die berichten, inschakelen. (Zie [E-mailinstellingen configureren](configuring-server-settings.md#configuring-email-settings).)
 * **Instellingen voor taakmeldingen** die de berichten die in e-mailberichten naar eindgebruikers en groepen worden verzonden met betrekking tot hun taken inschakelen, uitschakelen of wijzigen. (Zie [Meldingen voor gebruikers en groepen configureren](configuring-server-settings.md#configuring-notifications-for-users-and-groups).)
 * **Instellingen voor beheerdersmeldingen** die de berichten die in e-mailmeldingen worden verzonden voor beheertaken inschakelen, uitschakelen of wijzigen. (Zie [Meldingen voor beheerders configureren](configuring-server-settings.md#configuring-notifications-for-administrators).)
 
@@ -45,7 +45,7 @@ Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is
 
    >[!NOTE]
    >
-   >Als u Microsoft Exchange Server gebruikt en het e-mailadres een ongeldig e-mailadres is, verzendt de Microsoft Exchange-server geen e-mail naar de Distribution List. Selecteer de optie **Externe communicatie inschakelen** optie voor elke Lijst van de Distributie op de server van de Uitwisseling van Microsoft afzonderlijk.
+   >Als u Microsoft Exchange Server gebruikt en het e-mailadres een ongeldig e-mailadres is, verzendt de Microsoft Exchange-server geen e-mail naar de Distribution List. Selecteer de optie **Externe communicatie inschakelen** voor elke Distribution List op de Microsoft Exchange-server afzonderlijk.
 
 1. Klik op Opslaan.
 
@@ -118,8 +118,8 @@ U kunt taaktoewijzingsmeldingen verzenden naar een gebruiker of groep wanneer aa
 U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadline voor het uitvoeren van een toegewezen taak is verstreken. Een deadline-melding is doorgaans informatief omdat de gebruiker niet langer kan reageren op de toegewezen taak.
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Serverinstellingen > Taakmeldingen.
-1. Onder het Type van Bericht, klik Deadline (voor gebruikers) of Groep - Deadline (voor groepen).
-1. Selecteer Deadline inschakelen of Groep - Deadline inschakelen.
+1. Klik onder Type bericht op Deadline (voor gebruikers) of Group - Deadline (voor groepen).
+1. Selecteer Deadline inschakelen of Groep - deadline inschakelen.
 1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie voor meer informatie over het aanpassen van dit veld [Inhoud van meldingen aanpassen](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Selecteer in de lijst Berichtindeling de indeling waarin het e-mailbericht wordt verzonden, HTML of Tekst. De standaardindeling is HTML.
@@ -136,11 +136,11 @@ For details, see [How to hide the 'DO-NOT-DELETE' tag with CSS](https://blogs.ad
 
 ## Meldingen voor beheerders configureren {#configuring-notifications-for-administrators}
 
-U kunt sjablonen configureren die in de formulierworkflow worden gebruikt om de e-mailmeldingen te genereren die naar beheerders worden verzonden.
+U kunt sjablonen configureren die in de formulierwerkstroom worden gebruikt om de e-mailmeldingen te genereren die naar beheerders worden verzonden.
 
 U configureert de volgende typen meldingen voor beheerders:
 
-* stilgezette vertakking
+* gestapelde vertakking
 * stilstaande bewerking
 
 ### Gestapelde filiaalmeldingen configureren {#configure-stalled-branch-notifications}
@@ -179,7 +179,7 @@ De pagina&#39;s Taakmeldingen en Beheerdersmeldingen bevatten verschillende func
 
 ### RTF-editor {#rich-text-editor}
 
-Het gebied van het Malplaatje van het Bericht is een rijke tekstredacteur die u toelaat om HTML voor de e-mailberichtberichten te produceren. Deze sjabloon biedt opmaakopties voor lettertypen en alinea&#39;s, die u vindt onder het vak Meldingssjabloon. U kunt onder andere lettertype, tekengrootte, stijl en kleur kiezen, en alinea-uitlijning en opsommingstekens gebruiken.
+Het gebied van het Malplaatje van het Bericht is een rijke tekstredacteur die u toelaat om HTML voor de e-mailberichtberichten te produceren. Deze sjabloon biedt opmaakopties voor lettertypen en alinea&#39;s, die u vindt onder het vak Meldingssjabloon. U kunt onder andere lettertype, tekengrootte, stijl en kleur en alinea-uitlijning en opsommingstekens kiezen.
 
 ### URL genereren {#url-generation}
 
@@ -187,11 +187,11 @@ Alleen voor Taakmeldingen bevat de Forms-workflow twee vooraf gedefinieerde URL-
 
 * OpenTask is beschikbaar voor de berichttypen Herinnering en Taak toewijzen. Deze URL bevat een koppeling naar de taak in Workspace, zodat de gebruiker deze taak snel kan openen vanuit het e-mailbericht. Wanneer u de OpenTask URL naar het vakje van het Malplaatje van het Bericht sleept, is URL in het volgende formaat:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 * ClaimTask is beschikbaar voor de Groep - Herinnering en Groep - de berichttypes van de Taak van de Taak. Deze URL bevat een koppeling naar de pagina met taakdetails in Workspace, waar de gebruiker een claim kan indienen of een claim kan indienen en het werkitem kan openen. Wanneer u de ClaimTask URL aan het vakje van het Malplaatje van het Bericht sleept, is URL in het volgende formaat:
 
-   `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
+  `https://@@notification-host@@:<PORT>/workpace/Main.html?taskId=@@taskid@@`
 
 >[!NOTE]
 >
@@ -245,7 +245,7 @@ Voor gestalte takken, kunt u de volgende variabelen in de dozen van het Malplaat
 
 **tak-id** De vertakkings-id.
 
-**process-id** De id van de procesinstantie.
+**process-id** De instantie-id van het proces.
 
 **notification-host** De hostnaam van de toepassingsserver voor AEM formulieren.
 
@@ -255,7 +255,7 @@ Voor gestalte verrichtingen, kunt u de volgende variabelen in de vakjes van het 
 
 **tak-id** De vertakkings-id.
 
-**process-id** De id van de procesinstantie.
+**process-id** De instantie-id van het proces.
 
 **notification-host** De hostnaam van de toepassingsserver voor AEM formulieren.
 
@@ -281,11 +281,11 @@ De beheerder ontvangt een e-mailbericht dat de volgende inhoud bevat als het ver
 
 ## Verbindingen voor Business Activity Monitoring configureren {#configuring-business-activity-monitoring-connections}
 
-De Controle van de bedrijfsactiviteit, een facultatieve module, verstrekt een reeks operationele dashboards die in real time zicht in uw verrichtingen en zeer belangrijke prestatiesindicatoren verstrekken.
+De Controle van de Bedrijfs van de Activiteit, een facultatieve module, verstrekt een reeks operationele dashboards die in real time zicht in uw verrichtingen en zeer belangrijke prestatiesindicatoren verstrekken.
 
 Op de pagina van de Montages van de Configuratie BAM, plaatst u de verbindingen aan de server die BAM in werking stelt zodat de proces-verwante gebeurtenissen kunnen worden gevolgd en aan die server worden overgebracht.
 
-1. Klik in de beheerconsole op Services > Forms-workflow > Serverinstellingen > BAM-configuratie-instellingen.
+1. Klik in de beheerconsole op Services > Forms workflow > Serverinstellingen > BAM Configuration Settings.
 1. Typ in het vak BAM-host de naam van de server waarop BAM wordt uitgevoerd. De standaardwaarde is localhost.
 1. Typ in het vak BAM-poort de poort die u wilt gebruiken om verbinding te maken met de server waarop BAM wordt uitgevoerd. De standaard BAM-poort voor JBoss is 8080, WebLogic is 7001 en WebSphere is 9080.
 1. Typ in het vak Serverhost de naam of het IP-adres van de server met hostformulieren. De standaardwaarde is localhost.

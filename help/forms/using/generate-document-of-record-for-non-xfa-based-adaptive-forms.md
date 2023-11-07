@@ -1,19 +1,15 @@
 ---
 title: Document met record genereren voor adaptieve formulieren
-seo-title: Generate Document of Record for adaptive forms
 description: Verklaart hoe u een malplaatje voor een document van verslag (DoR) voor adaptieve vormen kunt produceren.
-seo-description: Explains how you can generate a template for a document of record (DoR) for adaptive forms.
-uuid: 2dc7e0de-fff9-43fa-9426-e9b047eb2595
 content-type: reference
 topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: ce65cb5f-94ec-4423-9fa9-d617e9703091
 docset: aem65
 feature: Adaptive Forms
 exl-id: 7240897f-6b3a-427a-abc6-66310c2998f3
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3415'
+source-wordcount: '3416'
 ht-degree: 0%
 
 ---
@@ -218,7 +214,7 @@ De tabelcomponenten voor adaptieve formulieren, zoals koptekst, voettekst en rij
 
 De basissjabloon biedt opmaak- en weergavegegevens voor documenten met een record. Hiermee kunt u de standaardweergave van automatisch gegenereerd document met record aanpassen. U wilt bijvoorbeeld het bedrijfslogo in de koptekst en copyrightinformatie in de voettekst van het document met de record plaatsen. De basispagina van het basissjabloon wordt gebruikt als een basispagina voor documenten met een recordsjabloon. De stramienpagina kan informatie bevatten, zoals paginakoptekst, voettekst en paginanummer, die u kunt toepassen op het recorddocument. U kunt dergelijke informatie op document van verslag toepassen gebruikend basissjabloon voor auto het produceren van document van verslag. Met een basissjabloon kunt u de standaardeigenschappen van velden wijzigen.
 
-Volg deze [Basissjabloonconventies](#base-template-conventions) wanneer u basissjabloon ontwerpt.
+Zorg ervoor dat u volgt [Basissjabloonconventies](#base-template-conventions) wanneer u basissjabloon ontwerpt.
 
 ## Basissjabloonconventies {#base-template-conventions}
 
@@ -234,7 +230,7 @@ Een basissjabloon wordt gebruikt om de kop-, voettekst-, opmaak- en vormgeving v
 
 **Opmaakconventies voor velden**
 
-* Als u stijl wilt toepassen op de velden in het document met records, bevat de basissjabloon velden in het dialoogvenster `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` basissubformulier.
+* Als u een stijl wilt toepassen op de velden in het document met records, bevat de basissjabloon velden in het dialoogvenster `AF_FIELDSSUBFORM` subfrom under the `AF_METATEMPLATE` basissubformulier.
 
 * De eigenschappen van deze velden worden toegepast op de velden in het recorddocument. Deze velden moeten `AF_<name of field in all caps>_XFO` naamgevingsconventie. De veldnaam voor het selectievakje moet bijvoorbeeld `AF_CHECKBOX_XFO`.
 

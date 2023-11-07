@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1611'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Tot slot, versieringsmogelijkheden van [!DNL Experience Manager] Hiermee slaat u
 
 Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige opslagruimte te berekenen om gebruikersactiva op te slaan.
 
-1. Bepaal de grootte en het aantal elementen dat in het systeem wordt geladen.
+1. Bepaal de grootte en het aantal elementen die in het systeem worden geladen.
 1. Een representatieve steekproef van de elementen ophalen waarnaar geüpload moet worden [!DNL Experience Manager]. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
 1. De uitvoeringen maken in [!DNL Experience Manager] gebruiken [!DNL ImageMagick] of [!DNL Adobe Creative Cloud] toepassingen. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media implementeren, kunt u het binaire getal IC gebruiken om de PTIFF-uitvoeringen te genereren die in de Experience Manager moeten worden opgeslagen.
@@ -103,7 +103,7 @@ Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 30
 
 ## Netwerk {#network}
 
-[!DNL Assets] heeft een aantal gebruiksgevallen die netwerkprestaties belangrijker maken dan op veel van onze [!DNL Experience Manager] projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het knooppunt in de netwerkverbinding van een gebruiker te bepalen met [!DNL Experience Manager] om [De overwegingen van activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](/help/assets/assets-network-considerations.md).
+[!DNL Assets] heeft verscheidene gebruiksgevallen die netwerkprestaties belangrijker dan op veel van ons maken [!DNL Experience Manager] projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het knooppunt in de netwerkverbinding van een gebruiker te bepalen met [!DNL Experience Manager] om [De overwegingen van activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](/help/assets/assets-network-considerations.md).
 
 ## Beperkingen {#limitations}
 

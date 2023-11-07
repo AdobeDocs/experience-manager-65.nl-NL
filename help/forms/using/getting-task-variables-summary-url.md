@@ -1,17 +1,13 @@
 ---
 title: Taakvariabelen ophalen in Summiere URL
-seo-title: Getting Task Variables in Summary URL
 description: Hoe te om de informatie over een taak te hergebruiken en een Samenvatting URL te produceren om een taak samen te vatten of te beschrijven.
-seo-description: How-to reuse the information about a task and generate a Summary URL to summarize or describe a task.
-uuid: 9eab3a6a-a99a-40ae-b483-33ec7d21c5b6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 6dc31bec-b02d-47db-a4f4-be8c14c5619e
 exl-id: b5e27b54-d141-48dd-a4ed-dd0a691319a5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '431'
 ht-degree: 0%
 
 ---
@@ -63,7 +59,7 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
    1. Een proces maken **PTO-overzicht maken** en gebruik dit als een subproces vóór de **Taak toewijzen** in uw orkest.
    1. Definiëren **employeeName**, **employeeID**, **ptoReason**, **totalDays**, en **nodeName** als invoervariabelen in uw nieuwe proces. Deze variabelen worden doorgegeven als verzonden formuliergegevens.
 
-      Ook een uitvoervariabele definiëren **ptoNodePath** die worden gebruikt bij het instellen van de samenvatting-URL.
+      Ook een uitvoervariabele definiëren **ptoNodePath** wordt gebruikt bij het instellen van de samenvatting-URL.
 
    1. In de **PTO-overzicht maken** proces gebruiken **waarde instellen** om de invoerdetails in een **nodeProperty**(**nodeProps**) kaart.
 
@@ -71,15 +67,15 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
 
       Voeg ook een **sling:resourceType** key with value **Werknemers/PtoApplication** op de kaart.
 
-   1. Het subproces gebruiken **storeContent** van de **ContentRepositoryConnector** in de **PTO-overzicht maken** proces. Met dit subproces wordt een CRX-knooppunt gemaakt.
+   1. Het subproces gebruiken **storeContent** van de **ContentRepositoryConnector** in de **PTO-overzicht maken** proces. Dit subproces leidt tot een knoop CRX.
 
       Er zijn drie invoervariabelen voor nodig:
 
       * **Mappad**: Het pad waar het nieuwe CRX-knooppunt wordt gemaakt. Pad instellen als **/content**.
-      * **Knooppuntnaam**: Wijs de input variable nodeName aan dit gebied toe. Dit is een unieke tekenreeks met een knooppuntnaam.
-      * **Knooppunttype**: De tekst definiëren als **nt:ongestructureerd**. De uitvoer van dit proces is nodePath. Het nodePath is het CRX-pad van het nieuwe knooppunt. De nodePath zou de definitieve output van zijn **PTO maken** samenvattingsproces.
-   1. De verzonden formuliergegevens doorgeven (**employeeName**, **employeeID**, **ptoReason**, en **totalDays**) als input voor het nieuwe proces **PTO-overzicht maken**. De uitvoer als volgt instellen **ptoSummaryNodePath**.
+      * **Knooppuntnaam**: Wijs de invoervariabele nodeName aan dit veld toe. Dit is een unieke tekenreeks met een knooppuntnaam.
+      * **Knooppunttype**: Definieer het type als **nt:ongestructureerd**. De uitvoer van dit proces is nodePath. Het nodePath is het CRX-pad van het nieuwe knooppunt. De nodePath zou de definitieve output van zijn **PTO maken** samenvattingsproces.
 
+   1. De verzonden formuliergegevens doorgeven (**employeeName**, **employeeID**, **ptoReason**, en **totalDays**) als input voor het nieuwe proces **PTO-overzicht maken**. De uitvoer als volgt instellen **ptoSummaryNodePath**.
 
 1. De samenvatting-URL definiëren als een XPath-expressie die de serverdetails bevat, samen met **ptoSummaryNodePath**.
 

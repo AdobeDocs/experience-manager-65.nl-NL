@@ -1,20 +1,16 @@
 ---
 title: HTML Forms renderen met aangepaste CSS-bestanden
-seo-title: Rendering HTML Forms Using Custom CSS Files
 description: Gebruik de Forms-service om te verwijzen naar aangepaste CSS-bestanden om HTML-formulieren te genereren als reactie op een HTTP-aanvraag van een webbrowser. U kunt een HTML-formulier weergeven dat een CSS-bestand gebruikt met de API voor Java API en Web Service.
-seo-description: Use the Forms service to refer to custom CSS files to render HTML forms in response to an HTTP request from a web browser. You can render an HTML form that uses a CSS file using the Java API and Web Service API.
-uuid: a44e96f1-001d-48a2-8c96-15cb9d0c71b3
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 8fe7c072-7df0-44b7-92d0-bf39dc1e688a
 role: Developer
 exl-id: 5fa385a7-f030-4c0c-8938-0991d02ef361
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1688'
+source-wordcount: '1687'
 ht-degree: 0%
 
 ---
@@ -31,9 +27,9 @@ In de volgende lijst worden stijlen weergegeven die in een aangepast CSS-bestand
 
 * **Selector-stijlparen op klasseniveau**: Indien aanwezig in een aangepast CSS-bestand, worden kiezers gebruikt die in het HTML-formulier als klassenstijlen worden gebruikt. Ongebruikte klassenstijlen worden genegeerd.
 * **Selector-stijlparen op niveau van id**: Alle id-stijlen worden gebruikt als deze in het HTML-formulier worden gebruikt.
-* **Paren op elementniveau in stijl**: Alle elementstijlen worden gebruikt als ze in het HTML-formulier worden gebruikt.
+* **Paren op elementniveau met selectorstijl**: Alle elementstijlen worden gebruikt als deze in het HTML-formulier worden gebruikt.
 * **Stijlprioriteit**: Stijlprioriteit (zoals belangrijk) wordt ondersteund en kan worden gebruikt in een aangepast CSS-bestand.
-* **Mediatype**: Een of meer combinaties in selectorstijl kunnen in @media-stijl worden opgenomen om het mediatype te definiëren. De Forms-service controleert niet of het opgegeven mediatype wordt ondersteund. Het mediatype dat is opgegeven in het aangepaste CSS-bestand wordt samengevoegd in het HTML-formulier.
+* **Mediatype**: Een of meer paren in selectorstijl kunnen worden opgenomen in @media-stijl om het mediatype te definiëren. De Forms-service controleert niet of het opgegeven mediatype wordt ondersteund. Het mediatype dat is opgegeven in het aangepaste CSS-bestand wordt samengevoegd in het HTML-formulier.
 
 U kunt een voorbeeld-CSS-bestand ophalen met de FormsIVS-toepassing. Upload het formulier, selecteer het op de pagina Formulierontwerp testen en klik op CSS genereren. U hoeft het transformatietype HTML niet in te stellen voordat u op de knop klikt. Selecteer vervolgens Opslaan. U kunt dit CSS-bestand bewerken om aan uw zakelijke vereisten te voldoen.
 
@@ -43,7 +39,7 @@ U kunt een voorbeeld-CSS-bestand ophalen met de FormsIVS-toepassing. Upload het 
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -99,12 +95,12 @@ Een HTML-formulier renderen dat een aangepast CSS-bestand gebruikt met de Forms 
 
 1. Projectbestanden opnemen
 
-   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project.
+   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassepad van uw Java-project.
 
 1. Een Forms Java API-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijzen naar het CSS-bestand
 
@@ -127,9 +123,9 @@ Een HTML-formulier renderen dat een aangepast CSS-bestand gebruikt met de Forms 
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
+   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.h\ttp.HttpServletResponse` object `getOutputStream` methode.
    * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
    * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read` en de bytearray doorgeven als een argument.
@@ -139,7 +135,7 @@ Een HTML-formulier renderen dat een aangepast CSS-bestand gebruikt met de Forms 
 
 [HTML Forms renderen met aangepaste CSS-bestanden](#rendering-html-forms-using-custom-css-files)
 
-[Snel starten (SOAP-modus): Een HTML-formulier weergeven dat een CSS-bestand gebruikt met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
+[Snel starten (SOAP-modus): een HTML-formulier weergeven dat een CSS-bestand gebruikt met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-that-uses-a-css-file-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -169,7 +165,7 @@ Een HTML-formulier renderen dat een aangepast CSS-bestand gebruikt met de Forms 
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * A `TransformTo` Enum value that specifies the HTML preferences type. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML`.
-   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u door `null`. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null`. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * De `HTMLRenderSpec` -object waarin HTML-runtime-opties zijn opgeslagen.
    * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, zoals `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
    * A `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
@@ -179,7 +175,7 @@ Een HTML-formulier renderen dat een aangepast CSS-bestand gebruikt met de Forms 
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat wordt gevuld door het `(Deprecated) renderHTMLForm` methode. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat wordt gevuld door het `(Deprecated) renderHTMLForm` methode. In dit argument wordt de waarde van de landinstelling opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat wordt gevuld door het `(Deprecated) renderHTMLForm` methode. In dit argument wordt de gebruikte HTML-renderwaarde opgeslagen.
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking zal bevatten.
 
    De `(Deprecated) renderHTMLForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
@@ -188,7 +184,7 @@ Een HTML-formulier renderen dat een aangepast CSS-bestand gebruikt met de Forms 
    * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
    * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `BLOB` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
    * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.

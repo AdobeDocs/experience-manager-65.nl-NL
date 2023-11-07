@@ -7,9 +7,9 @@ topic-tags: managing-checklist
 content-type: reference
 docset: aem65
 exl-id: 9672f7a4-82b7-4175-874d-181846115442
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6948'
+source-wordcount: '6946'
 ht-degree: 0%
 
 ---
@@ -289,7 +289,7 @@ Een eerste ontwerp van de juridische overeenkomst.
 
 ### Huidige structuur en indeling van inhoud {#current-content-structure-and-format}
 
-Documentatie van de huidige inhoudarchitectuur en -indeling. Hiermee wordt de toekomstige inhoudsarchitectuur gegenereerd. Het zal ook voor het Concept van de Migratie worden gebruikt.
+Documentatie van de huidige inhoudarchitectuur en -indeling. Dit wordt gebruikt om de toekomstige inhoudarchitectuur te produceren. Het zal ook voor het Concept van de Migratie worden gebruikt.
 
 ### Beleid voor back-up en herstel van klanten {#customer-backup-and-restore-policy}
 
@@ -666,7 +666,7 @@ Details van het oudere systeem moeten worden verzameld, zodat u weet wat u met p
 
 ### Lijst met te gebruiken ontwikkelingsinstrumenten {#list-of-development-tools-to-be-used}
 
-Een overzicht van de instrumenten die bij de uitvoering zullen worden gebruikt; de instrumenten moeten omvatten:
+Een overzicht van de instrumenten die in de implementatie worden gebruikt; de instrumenten moeten omvatten:
 
 * documentatiehulpmiddelen
 * tools voor het bijhouden van problemen

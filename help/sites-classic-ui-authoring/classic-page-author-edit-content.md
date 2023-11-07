@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: de321869-ebf9-41a1-8203-e12bdb088678
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1832'
 ht-degree: 0%
@@ -79,7 +79,7 @@ Een nieuwe component invoegen:
 
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
-1. In zowel de sidekick als de **Nieuwe component invoegen** op de werkbalk ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.), die naar behoefte kunnen worden uitgebreid.
+1. In zowel de sidekick als de **Nieuwe component invoegen** op de werkbalk ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden gesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enzovoort), die naar behoefte kunnen worden uitgebreid.
 
    Afhankelijk van uw productieomgeving kunnen deze opties afwijken. Voor volledige informatie over componenten raadpleegt u [Standaardcomponenten](/help/sites-classic-ui-authoring/classic-page-author-default-components.md).
 
@@ -87,7 +87,7 @@ Een nieuwe component invoegen:
 
 ### Een component invoegen met de Inhoudszoeker {#inserting-a-component-using-the-content-finder}
 
-U kunt ook een nieuwe component aan de pagina toevoegen door een element van de [Inhoudzoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hiermee wordt automatisch een nieuwe component van het juiste type gemaakt die het element bevat.
+U kunt ook een nieuwe component aan de pagina toevoegen door een element van de [Inhoudzoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#the-content-finder). Hierdoor wordt automatisch een component van het juiste type gemaakt die het element bevat.
 
 Dit is geldig voor de volgende elementtypen (sommige zijn afhankelijk van het pagina-/alineasysteem):
 

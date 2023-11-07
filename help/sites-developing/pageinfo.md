@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 505bf3e3-ce3c-40aa-9619-e1b9f6634deb
 exl-id: 7c856e87-9f90-435d-aceb-994f10ea6f50
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '943'
 ht-degree: 0%
@@ -60,7 +60,7 @@ De `/libs/foundation/components/page` wordt gekoppeld aan de volgende PageInfoPr
 * **Informatieprovider voor live relaties:** Informatie over MSM (Multi Site Management), zoals of de pagina deel uitmaakt van een blauwe afdruk en of het een live kopie is.
 * **Servlet van de Taal van de inhoud:** De taal van de huidige pagina en informatie over elke taal waarin de pagina beschikbaar is.
 * **Workflow Status Provider:** Statusinformatie over de actieve werkstroom die de pagina als een lading heeft.
-* **Informatieprovider werkstroompakket:** Informatie over elk werkstroompakket dat in de bewaarplaats wordt opgeslagen, en of elk pakket de huidige bron bevat.
+* **Informatieaanbieder voor workflowpakket:** Informatie over elk werkstroompakket dat in de bewaarplaats wordt opgeslagen, en of elk pakket de huidige bron bevat.
 * **Emulatorinformatieprovider:** Informatie over de emulators van mobiele apparaten die beschikbaar zijn voor deze bron. Als de paginacomponent geen mobiele pagina&#39;s rendert, zijn er geen emulators beschikbaar.
 * **Informatieaanbieder annotaties:** Informatie over annotaties die op de pagina staan.
 
@@ -475,9 +475,10 @@ Vorm de dienst van de Leverancier van de Informatie van het Pakket van het Pakke
 
 >[!NOTE]
 >
->Het tabblad Workflow van Sidetrap gebruikt het PageInfo-servlet voor het verkrijgen van een lijst met workflowpakketten. In de lijst kunt u het pakket selecteren waaraan u de huidige pagina wilt toevoegen. De filters die u creeert beïnvloeden deze lijst.
+>Het tabblad Workflow van Sidekick gebruikt het PageInfo-servlet om een lijst met workflowpakketten te verkrijgen. In de lijst kunt u het pakket selecteren waaraan u de huidige pagina wilt toevoegen. De filters die u creeert beïnvloeden deze lijst.
+>
 
-De id van de service is `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Als u een filter wilt maken, geeft u een waarde op voor een `workflowpackageinfoprovider.filter` eigenschap.
+De id van de service is `com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider`. Als u een filter wilt maken, geeft u een waarde op voor `workflowpackageinfoprovider.filter` eigenschap.
 
 Eigenschapwaarden beginnen met een plusteken (+ of -) gevolgd door het pakketpad:
 
@@ -494,7 +495,7 @@ De service past het cumulatieve resultaat van alle filters toe. De volgende filt
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
 
 Bijvoorbeeld, om de dienst te vormen gebruikend CRXDE Lite:
 
@@ -508,7 +509,7 @@ Bijvoorbeeld, om de dienst te vormen gebruikend CRXDE Lite:
 
    * Naam: `workflowpackageinfoprovider.filter`
    * Type: `String[]`
-   * Waarde: Het pad naar het workflowpakket met de juiste indeling.
+   * Waarde: het pad naar het workflowpakket met de juiste indeling.
 
 1. Klik op Alles opslaan.
 
@@ -516,7 +517,7 @@ Om de dienst in uw projectbron te vormen:
 
 1. Zoek of maak de configuratiemap voor uw AEM toepassing in uw projectbron.
 
-   Als u bijvoorbeeld het archetype met meerdere modules van de insteekmodule Inhoudspakket hebt gebruikt om uw project te maken, is het mappad `<projectroot>/content/src/ for example content/src/main/content/jcr_root/apps/<appname>/config`.
+   Als u bijvoorbeeld het archetype met meerdere modules van de insteekmodule Inhoudspakket hebt gebruikt om uw project te maken, is het mappad `<projectroot>/content/src/ for example, content/src/main/content/jcr_root/apps/<appname>/config`.
 1. Maak in de configuratiemap een tekstbestand met de naam com.day.cq.wcm.workflow.impl.WorkflowPackageInfoProvider.xml
 1. Kopieer de volgende tekst naar het bestand:
 
@@ -548,7 +549,7 @@ Maak een aangepaste service van de provider van paginagegevens om metagegevens t
 
    * Naam: className
    * Type: String
-   * Waarde: De PID van uw PageInfoProvider-service.
+   * Waarde: de PID van uw PageInfoProvider-service.
 
 Voor bronnen die uw component van de toepassingspagina als `sling:resourceType`, retourneert het PageInfo-servlet naast de standaardmetagegevens van PageInfoProvider ook de aangepaste PageInfoProvider-metagegevens.
 

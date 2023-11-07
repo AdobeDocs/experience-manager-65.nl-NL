@@ -10,9 +10,9 @@ discoiquuid: c47ef627-261e-4b4b-8846-873d3d84234b
 docset: aem65
 feature: Form Data Model
 exl-id: 16b76265-9ec4-4993-9ac0-b7aef1b1e5f1
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4070'
+source-wordcount: '4067'
 ht-degree: 0%
 
 ---
@@ -317,7 +317,7 @@ Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op ba
 
 U kunt bijvoorbeeld een berekende eigenschap maken **FullName** waarvan de waarde het resultaat is van samenvoegen van de bestaande **FirstName** en **LastName** eigenschappen. Daartoe:
 
-1. Een nieuwe eigenschap met de naam maken `FullName` waarvan het gegevenstype String is.
+1. Een eigenschap met de naam maken `FullName` waarvan het gegevenstype String is.
 1. Inschakelen **[!UICONTROL Computed]** en tikken **[!UICONTROL Done]** om de eigenschap te maken.
 
    ![berekend](assets/computed.png)

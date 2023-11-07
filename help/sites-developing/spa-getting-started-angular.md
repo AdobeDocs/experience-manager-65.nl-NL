@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 9cdd7648-d67e-414d-aedf-a5687da39326
 docset: aem65
 exl-id: 9528d92b-0989-4e2d-83be-ba6c07c845e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1012'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Dit document loopt door de structuur van een vereenvoudigde SPA en illustreert h
 
 ## Afhankelijkheden, configuratie en gebouwen {#dependencies-configuration-and-building}
 
-Naast de verwachte afhankelijkheid van Angulars, kan de steekproef SPA extra bibliotheken gebruiken om de verwezenlijking van SPA efficiënter te maken.
+Naast de verwachte afhankelijkheid van de Angular, kan de steekproef SPA extra bibliotheken gebruiken om de verwezenlijking van SPA efficiënter te maken.
 
 ### Afhankelijkheden {#dependencies}
 
@@ -106,7 +106,7 @@ module.exports = {
 
 ### Gebouw {#building}
 
-Eigenlijk de app-hefboomwerkingen maken [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
+Toepassingen ontwikkelen [Webpack](https://webpack.js.org/) voor de omzetting in aanvulling op de aem-clientlib-generator voor het automatisch maken van clientbibliotheken. Daarom zal het bouwstijlbevel op lijken:
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
@@ -114,7 +114,7 @@ Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
 ### Projectarchetype AEM {#aem-project-archetype}
 
-Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten met React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
+Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die SPA projecten steunt die React of Angular gebruiken en SPA SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -282,7 +282,7 @@ Ten slotte kan de afbeelding worden gerenderd in `image.component.html`.
 
 Componenten in een toepassing van één pagina moeten regelmatig informatie uitwisselen. Er zijn verschillende aanbevolen manieren om dit te doen, die als volgt worden opgesomd in toenemende mate van complexiteit.
 
-* **Optie 1:** Centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld door een util klasse als zuivere object-oriented oplossing te gebruiken.
+* **Optie 1:** Centraliseer de logica en uitzending aan de noodzakelijke componenten bijvoorbeeld, door een util klasse als zuivere object-oriented oplossing te gebruiken.
 * **Optie 2:** De componentenstaten van het aandeel door een staatsbibliotheek zoals NgRx te gebruiken.
 * **Optie 3:** Gebruik de objecthiërarchie door de containercomponent aan te passen en uit te breiden.
 
@@ -294,4 +294,4 @@ Zie het artikel voor meer informatie over hoe u uzelf kunt organiseren om SPA vo
 
 Raadpleeg het artikel voor meer informatie over het dynamische model naar componenttoewijzing en over de manier waarop het binnen SPA in AEM werkt [Dynamisch model naar componenttoewijzing voor SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u SPA in AEM voor een ander kader dan React of Angular wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe SPA SDK voor AEM werkt, verwijs naar [SPA](/help/sites-developing/spa-blueprint.md) artikel.
+Als u SPA in AEM voor een ander kader dan React of Angular wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe SPA SDK voor AEM werkt, zie [SPA](/help/sites-developing/spa-blueprint.md) artikel.

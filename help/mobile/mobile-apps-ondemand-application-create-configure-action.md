@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: ccafd49a-5c8a-44eb-9b0c-37070560bb52
 exl-id: dbe81ead-dfaa-4af0-9b66-a14917a1bcc7
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '443'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 ## Een toepassing op aanvraag maken {#creating-an-on-demand-application}
 
-Het maken van een app is vaak de eerste stap op weg naar het maken en beheren van AEM Mobile On-Demand-inhoud en wordt vaak uitgevoerd op het niveau van de AEM beheerder. Deze vertegenwoordigt een inhoud die op mobiele apparaten kan worden weergegeven en die door de auteur gemaakte inhoud kan weergeven, zoals artikelen, afbeeldingen, verzamelingen, enz.
+Het maken van een app is vaak de eerste stap op weg naar het maken en beheren van AEM Mobile On-Demand-inhoud en wordt vaak uitgevoerd op het niveau van de AEM beheerder. Deze vertegenwoordigt een inhoud die op mobiele apparaten kan worden weergegeven en die door de auteur gemaakte inhoud kan weergeven, zoals artikelen, afbeeldingen, verzamelingen, enzovoort.
 
 De details van uw app kunnen worden weergegeven in het dashboard of het AEM Mobile Control Center.
 
@@ -54,10 +54,10 @@ De details van uw app kunnen worden weergegeven in het dashboard of het AEM Mobi
 
 ## App-sjablonen gebruiken {#using-app-templates}
 
-Toepassingssjablonen bieden een eenvoudige manier om gebruik te maken van bestaande ontwerpen die door ontwikkelaars zijn gemaakt en die worden gebruikt voor het maken van nieuwe apps in AEM.
+Toepassingssjablonen bieden een eenvoudige manier om bestaande ontwerpen te gebruiken die door ontwikkelaars zijn gemaakt en die worden gebruikt voor het maken van nieuwe apps in AEM.
 
 Wat is een toepassingssjabloon? Beschouw het als een verzameling paginasjablonen en componenten die een basislijn of basis van een app vormen.
-Wanneer u een nieuwe app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
+Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
 
 U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingssjabloon) hebben om van deze functie gebruik te kunnen maken.
 

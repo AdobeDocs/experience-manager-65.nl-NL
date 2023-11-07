@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 exl-id: 17a4e4dc-804e-44a9-9942-c37dbfc8016f
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '858'
+source-wordcount: '856'
 ht-degree: 0%
 
 ---
@@ -25,15 +25,15 @@ Adobe Analytics gebruikt de `s.pageName` om pagina&#39;s op unieke wijze te iden
 
 * Ontwerp de paginacomponent zodanig dat deze de CQ-variabele bevat die u toewijst aan de `s.pageName` eigenschap. (Zie [Adobe Analytics-tracking voor aangepaste componenten implementeren](/help/sites-developing/extending-analytics-components.md).)
 
-Om analysegegevens in de console van Plaatsen en in Inzicht van de Inhoud bloot te stellen, vereist AEM de waarde van `s.pageName` eigenschap voor elke pagina. De Java API voor AEM Analytics definieert de `AnalyticsPageNameProvider` interface die u implementeert om de Sites-console en Content Insights te voorzien van de waarde van de `s.pageName` eigenschap. Uw `AnaltyicsPageNameProvider` De service verhelpt de eigenschap pageName op de server voor rapportagedoeleinden, aangezien deze dynamisch kan worden ingesteld met JavaScript op de client voor traceringsdoeleinden.
+Om analysegegevens in de console van Plaatsen en in Inzicht van de Inhoud bloot te stellen, vereist AEM de waarde van `s.pageName` eigenschap voor elke pagina. De Java API voor AEM Analytics definieert de `AnalyticsPageNameProvider` interface die u implementeert om de Sites-console en Content Insights de waarde van de `s.pageName` eigenschap. Uw `AnaltyicsPageNameProvider` De service verhelpt de eigenschap pageName op de server voor rapportagedoeleinden, aangezien deze dynamisch kan worden ingesteld met JavaScript op de client voor traceringsdoeleinden.
 
 ## De service Default Analytics Page Name Provider {#the-default-analytics-page-name-provider-service}
 
-De `DefaultPageNameProvider` de dienst is de standaarddienst die de waarde van bepaalt `s.pageName` eigenschap die moet worden gebruikt voor het ophalen van analysegegevens voor een pagina. De dienst werkt samen met de component van de AEM stichtingspagina ( `/libs/foundation/components/page`). Deze paginacomponent definieert de volgende CQ-variabelen die aan de `s.pageName` eigenschap:
+De `DefaultPageNameProvider` de dienst is de standaarddienst die de waarde van bepaalt `s.pageName` eigenschap die moet worden gebruikt voor het ophalen van analysegegevens voor een pagina. De dienst werkt samen met de component van de AEM stichting ( `/libs/foundation/components/page`). Deze paginacomponent definieert de volgende CQ-variabelen die aan de `s.pageName` eigenschap:
 
 * `pagedata.path`: De waarde wordt ingesteld op het paginapad.
 * `pagedata.title`: De waarde wordt ingesteld op de paginatitel.
-* `pagedata.navTitle`: De waarde wordt ingesteld op de titel van de paginanavigatie.
+* `pagedata.navTitle`: De waarde wordt ingesteld op de paginanavigatiettel.
 
 De `DefaultPageNameProvider` de dienst bepaalt welke van deze variabelen CQ aan in kaart wordt gebracht `s.pageName` in het Cloud-serviceframework Analytics. De dienst bepaalt dan het aangewezen paginabezit voor het terugwinnen van analyserapportgegevens te gebruiken:
 
@@ -62,7 +62,7 @@ Om de continuïteit van de rapportage te waarborgen, moet de waarde van `s.pageN
 
 * Uniek.
 * Stabiel.
-* Geschikt voor mensen.
+* Voor de mens leesbaar.
 
 Een aangepaste pagina-component kan bijvoorbeeld een pagina-eigenschap bevatten die auteurs gebruiken om een unieke id op te geven voor de pagina die wordt gebruikt als de waarde voor de component `s.pageProperties` eigenschap:
 
@@ -72,9 +72,9 @@ Een aangepaste pagina-component kan bijvoorbeeld een pagina-eigenschap bevatten 
 
 >[!NOTE]
 >
->Vraag uw consultant voor Analytics om hulp bij het ontwikkelen van een effectieve strategie voor uw `s.pageName` waarde.
+>Vraag uw analist om hulp bij het ontwikkelen van een effectieve strategie voor uw `s.pageName` waarde.
 
-### De service voor het uitvoeren van een analyse van paginanamen {#implementing-an-analytics-page-name-provider-service}
+### De service voor het uitvoeren van een analyse van paginanummerservice {#implementing-an-analytics-page-name-provider-service}
 
 Implementeer de `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameProvider` interface als dienst OSGi om de logica aan te passen die terugwint `s.pageName` eigenschapswaarde. De de paginaanalyses van Plaatsen en Inzicht van de Inhoud gebruiken de dienst om rapportgegevens van Analytics terug te winnen.
 
@@ -82,7 +82,7 @@ De interface AnalyticsPageNameProvider definieert twee methoden die u moet imple
 
 * `getPageName`: Retourneert een `String` waarde die de waarde vertegenwoordigt die als de `s.pageName` eigenschap.
 
-* `getResource`: Retourneert een `org.apache.sling.api.resource.Resource` object dat staat voor de pagina die is gekoppeld aan de `s.pageName` eigenschap.
+* `getResource`: Hiermee wordt een `org.apache.sling.api.resource.Resource` object dat staat voor de pagina die is gekoppeld aan de `s.pageName` eigenschap.
 
 Beide methoden hebben een `com.day.cq.analytics.sitecatalyst.AnalyticsPageNameContext` object als parameter. De `AnalyticsPageNameContext` class geeft informatie over de context van de analytische aanroepen:
 
@@ -154,7 +154,7 @@ De volgende implementatie van de methode getResource keert het voorwerp van het 
     }
 ```
 
-De volgende code vertegenwoordigt de volledige klasse, met inbegrip van SCR annotaties die de dienst vormen. Merk op dat de de dienstrangschikking 200 is die de standaarddienst met voeten treedt.
+De volgende code vertegenwoordigt de volledige klasse, met inbegrip van SCR annotaties die de dienst vormen. De de dienstrangschikking is 200 die de standaarddienst met voeten treedt.
 
 ```java
 /*************************************************************************

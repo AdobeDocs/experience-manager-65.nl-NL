@@ -8,7 +8,7 @@ topic-tags: configuring
 docset: aem65
 feature: Configuring
 exl-id: cfa822c8-f9a9-4122-9eac-0293d525f6b5
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1227'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan de repl
 1. Wordt de wachtrij weergegeven **geblokkeerd** status? Zo ja, wordt de publicatie-instantie dan niet uitgevoerd of reageert deze niet? Controleer de publicatie-instantie om te zien wat er mis is. Dat wil zeggen, controleer de logboeken en controleer of er een fout OutOfMemory of een ander probleem is. Als het slechts langzaam is, dan neem draaddumps en analyseer hen.
 1. Geeft de wachtrijstatus weer **Wachtrij is actief - # in behandeling**? De replicatietaak kan in feite vastzitten in een socket die wacht tot de publicatie-instantie of Dispatcher heeft gereageerd. Dit kan betekenen dat de publicatie-instantie of de Dispatcher onder hoge druk staat of vastzit in een vergrendeling. Neem draaddumps van auteur en publiceer in dit geval.
 
-   * Open de draaddumps van auteur in een analysator van de draadstortplaats, controleer of het toont dat de sling van de replicatieagent de gebeurtenisbaan in socketRead geplakt is.
+   * Open de draaddumps van auteur in een analysator van de draadstortplaats, controleer of het toont dat de sling van de replicatieagent de gebeurtenisbaan in socketRead vastzit.
    * Open de draaddumps van publiceren in een analysator van de draadstortplaats, analyseer wat zou kunnen veroorzaken publiceer instantie om niet te antwoorden. U zou een draad met POST /bin/receive in zijn naam moeten zien die de draad is die de replicatie van auteur ontvangt.
 
 **Als alle agentenrijen worden geplakt**
@@ -65,7 +65,7 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan de repl
 1. Het zou ook het geval kunnen zijn dat de configuratie DefaultJobManager in een inconsistente staat krijgt. Dit kan gebeuren wanneer iemand handmatig de configuratie van de &#39;Apache Sling Job Event Handler&#39; wijzigt via de OSGiconsole (Schakel bijvoorbeeld de eigenschap &#39;Job Processing Enabled&#39; uit en schakel deze weer in en sla de configuratie op).
 
    * Op dit punt wordt de configuratie DefaultJobManager die in crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config wordt opgeslagen in een inconsistente staat. En alhoewel het bezit van de Gebeurtenis van de Baan van de &quot;Apache het Verdelen van de Baan van de Gebeurtenis&quot;om in gecontroleerde staat toont te zijn toegelaten, wanneer men aan het Verschuivende lusje van de Gebeurtenis navigeert, toont het het bericht - DE VERWERKING VAN DE TAAK WORDT UITGESCHAKELD en de replicatie werkt niet.
-   * Om deze kwestie op te lossen, navigeer aan de pagina van de Configuratie van de console OSGi en schrap de &quot;Apache Sling de Handler van de Gebeurtenis van de Baan&quot;configuratie. Dan begin de Master knoop van de cluster opnieuw om de configuratie terug in een verenigbare staat te krijgen. Dit zou de kwestie moeten bevestigen en de replicatie begint opnieuw te werken.
+   * Om deze kwestie op te lossen, navigeer aan de pagina van de Configuratie van de console OSGi en schrap de &quot;Apache Sling de Handler van de Gebeurtenis van de Baan&quot;configuratie. Dan begin de Hoofdknoop van de cluster opnieuw om de configuratie terug in een verenigbare staat te krijgen. Dit zou de kwestie moeten bevestigen en de replicatie begint opnieuw te werken.
 
 **Een replication.log maken**
 
@@ -75,15 +75,15 @@ Soms is het nuttig om al replicatieregistreren te plaatsen om in een afzonderlij
 1. Zoek de Apache Sling Logging Logger-fabriek en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie. Hiermee maakt u een nieuw logbestand.
 1. Stel de configuratie als volgt in:
 
-   * Logniveau: DEBUG
-   * Pad logbestand: logs/replication.log
+   * Logniveau: FOUTOPSPORING
+   * Logbestandspad: logs/replication.log
    * Categorieën: com.day.cq.replication
 
 1. Als u vermoedt dat het probleem te maken heeft met sling-gebeurtenissen/taken, kunt u dit Java™-pakket ook toevoegen onder categorieën:org.apache.sling.event
 
 ## Wachtrij replicatieagent pauzeren  {#pausing-replication-agent-queue}
 
-Soms kan het geschikt zijn om de replicatiewachtrij te pauzeren om de belasting van het auteursysteem te verminderen zonder deze uit te schakelen. Momenteel, is dit slechts mogelijk door een gebrek om een ongeldige haven tijdelijk te vormen. Vanaf 5.4 kon u pauzeknoop in replicatieagentenrij zien het één of andere beperking heeft
+Soms kan het geschikt zijn om de replicatiewachtrij te pauzeren om de belasting van het auteursysteem te verminderen zonder deze uit te schakelen. Momenteel, is dit slechts mogelijk door een hack van tijdelijk het vormen van een ongeldige haven. Vanaf 5.4 kon u pauzeknoop in replicatieagentenrij zien het één of andere beperking heeft
 
 1. De status blijft niet bestaan. Dit betekent dat als u een server opnieuw opstart of een replicatiebundel wordt gerecycled, de status weer actief wordt.
 1. De pauze is nutteloos voor een kortere periode (OOB 1 uur na geen activiteiten met replicatie door andere draden) en niet voor een langere tijd. Omdat er een functie in sling is die nutteloze draden vermijdt. Controleer in feite of een thread voor een taakwachtrij langer ongebruikt is, als dit het geval is, of er opschoningscycli zijn. Vanwege het opschoonprogramma stopt het de thread en daardoor gaat de gepauzeerde instelling verloren. Omdat de banen worden voortgeduurd, stelt het een nieuwe draad in werking om de rij te verwerken die geen details van de gepauzeerde configuratie heeft. Vanwege deze wachtrij wordt deze status ingeschakeld.
@@ -92,7 +92,7 @@ Soms kan het geschikt zijn om de replicatiewachtrij te pauzeren om de belasting 
 
 Paginamachtigingen worden niet gerepliceerd omdat ze worden opgeslagen onder de knooppunten waartoe toegang wordt verleend, niet met de gebruiker.
 
-In het algemeen moeten paginamachtigingen niet door de auteur worden gerepliceerd om te publiceren en zijn ze niet standaard. Dit komt doordat toegangsrechten in deze twee omgevingen verschillend moeten zijn. Daarom adviseert Adobe dat u ACLs bij publiceert, gescheiden van auteur vormt.
+In het algemeen moeten paginamachtigingen niet door de auteur worden gerepliceerd om te publiceren en zijn ze niet standaard. Dit komt omdat toegangsrechten in deze twee omgevingen verschillend zouden moeten zijn. Daarom adviseert de Adobe dat u ACLs bij publiceert, gescheiden van auteur vormt.
 
 ## Replicatiereeks geblokkeerd tijdens replicatie van naamruimtegegevens van Auteur voor publiceren {#replication-queue-blocked-when-replicating-namespace-information-from-author-to-publish}
 

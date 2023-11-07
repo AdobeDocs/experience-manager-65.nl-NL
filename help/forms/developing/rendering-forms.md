@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 role: Developer
 exl-id: ec9ccf04-7cec-493a-91ab-0e399a905338
-source-git-commit: 0c7dba43dad8608b4a5de271e1e44942c950fb16
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '571'
+source-wordcount: '569'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Met de Forms-service kunt u interactieve toepassingen voor het vastleggen van ge
 
 Wanneer een eindgebruiker een formulier aanvraagt, stuurt een clienttoepassing de aanvraag naar de Forms-service, die het formulier in de juiste indeling retourneert. Zodra de Forms-service een aanvraag ontvangt, worden gegevens met een formulierontwerp samengevoegd en wordt het formulier in de gewenste indeling geleverd. De uitvoer van de formulierservice is een interactief formulier, meestal een PDF-document. Met een interactief formulier kunnen gebruikers de velden op het formulier invullen.
 
-Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwebbrowser schrijven of het formulier opslaan als een PDF-bestand. Een webtoepassing kan het formulier naar een webbrowser schrijven. Een bureaubladtoepassing kan het formulier opslaan als een PDF-bestand. Als u wilt zien hoe u naar een webbrowser en naar een PDF-bestand schrijft, wordt de snelkoppeling in het dialoogvenster *Forms renderen* de sectie op de volgende wijze wordt georganiseerd:
+Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwebbrowser schrijven of het formulier opslaan als een PDF-bestand. Een webtoepassing kan het formulier naar een webbrowser schrijven. Een bureaubladtoepassing kan het formulier opslaan als een PDF-bestand. Om te tonen hoe u naar een webbrowser en naar een PDF-bestand schrijft, begint de snelkoppeling in het dialoogvenster *Forms renderen* de sectie op de volgende wijze wordt georganiseerd:
 
 * De sterk getypte Java API-voorbeelden (SOAP-modus) zijn een Java-servlet.
 * De voorbeelden van de webservice (Java Base64) zijn een Java-servlet.
@@ -37,19 +37,19 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 
 >[!NOTE]
 >
->Voor informatie over het maken van een webtoepassing die Java-servlets gebruikt om de Forms-service aan te roepen, raadpleegt u [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md).
+>Ga voor informatie over het maken van een webtoepassing die Java-servlets gebruikt om de Forms-service aan te roepen naar [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md).
 
 U kunt op twee manieren een formulierontwerp (een XDP-bestand) of een PDF-document doorgeven aan de Forms-service:
 
-* U kunt naar het formulierontwerp verwijzen met een URL-waarde. Deze aanpak omvat het gebruik van een `URLSpec` object. De inhoudroot wordt doorgegeven aan de Forms-service met behulp van de `URLSpec` object `setContentRootURI` methode. De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameter. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen. (De meeste snelle start bevindt zich in de *Forms renderen* deze aanpak gebruiken.)
-* U kunt een `com.adobe.idp.Document` die het formulierontwerp voor de Forms-service bevat. Twee nieuwe methoden met een naam `renderPDFForm2` en `renderHTMLForm2` accepteren `com.adobe.idp.Document` object dat een formulierontwerp bevat. (Zie [Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md)
+* U kunt naar het formulierontwerp verwijzen met een URL-waarde. Bij deze methode wordt een `URLSpec` object. De inhoudroot wordt doorgegeven aan de Forms-service met behulp van de `URLSpec` object `setContentRootURI` methode. De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameter. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen. (De meeste sneltoetsen beginnen in het dialoogvenster *Forms renderen* deze aanpak te gebruiken.)
+* U kunt een `com.adobe.idp.Document` die het formulierontwerp voor de Forms-service bevat. Twee nieuwe methoden met naam `renderPDFForm2` en `renderHTMLForm2` accepteren `com.adobe.idp.Document` object dat een formulierontwerp bevat. (Zie [Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md)
 
 U kunt deze taken uitvoeren met de Forms-service:
 
 * Interactieve PDF forms renderen. (Zie [Interactieve PDF forms renderen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 * Formulieren weergeven op de client. (Zie [Forms renderen op de client](/help/forms/developing/rendering-forms-client.md).)
 * Formulieren weergeven op basis van fragmenten. (Zie [Forms renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
-* Formulieren met rechten weergeven. (Zie [Forms met renderrechten](/help/forms/developing/rendering-rights-enabled-forms.md).)
+* Formulieren met rechten weergeven. (Zie [Forms met rechten voor renderen](/help/forms/developing/rendering-rights-enabled-forms.md).)
 * Formulieren weergeven als HTML. (Zie [Forms renderen als HTML](/help/forms/developing/rendering-forms-html.md).)
 * HTML Forms renderen met aangepaste CSS-bestanden ([HTML Forms renderen met aangepaste CSS-bestanden](/help/forms/developing/rendering-html-forms-using-custom.md).)
 * Ingevulde formulieren verwerken. (Zie [Verzendde Forms afhandelen](/help/forms/developing/handling-submitted-forms.md).)

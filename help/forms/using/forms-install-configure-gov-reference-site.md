@@ -4,9 +4,9 @@ description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4607'
+source-wordcount: '4604'
 ht-degree: 0%
 
 ---
@@ -362,7 +362,7 @@ Dit pakket wordt vooraf geconfigureerd voor verbinding met Adobe Analytics. De s
 
    ![Configuratie van cloudservices voor analyse](assets/analytics_config.jpg)
 
-1. Klik op de knop Bewerken om de Adobe Analytics-configuratie bij te werken (hiervoor moet u het Gedeelde geheim opgeven). Klik op &quot;Verbinden met Analytics&quot; om verbinding te maken en op &quot;OK&quot; om de verbinding te voltooien.
+1. Klik op de knop Bewerken om de Adobe Analytics-configuratie bij te werken (u moet het Gedeelde geheim opgeven). Klik op &quot;Verbinden met Analytics&quot; om verbinding te maken en op &quot;OK&quot; om de verbinding te voltooien.
 
    ![We.Gov Adobe Analytics](assets/wegov_adobe_analytics.jpg)
 
@@ -700,7 +700,7 @@ Pagina&#39;s die in dit pakket zijn opgenomen, ondersteunen ook het stijlsysteem
 
 [Stijlsysteem](../../sites-authoring/style-system.md)
 
-U kunt ook verwijzen naar [Sjablonen aanpassen, stijlsysteem](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) voor documentatie over ondersteunde stijlen.
+U kunt ook [Sjablonen aanpassen, stijlsysteem](../../forms/using/forms-install-configure-gov-reference-site.md#customizetemplates) voor documentatie over ondersteunde stijlen.
 
 ### Aanpassing van adaptieve formulieren {#adaptive-forms-customization}
 
@@ -749,7 +749,7 @@ Deze sectie bevat informatie over demo-functies en ontwerpbeslissingen die tijde
 
 ### Chrome voor toegankelijkheidstest inschakelen bij {#enable-chrome-add-on}
 
-Installeer de Chrome-plug-in op `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, please fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
+Installeer de Chrome-plug-in op `https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en`. <!-- This URL is a 404. As such, fix and update this entire topic. We ought not to be writing about third-party software that we have no control over to avoid these 404s. Consider making this topic entirely generic and leaving it up to the user to choose their own Accessibility Testing add-on. -->
 
 Nadat de pagina is geïnstalleerd, laadt u de pagina die u wilt testen in de Chrome-browser (Opmerking: wanneer meerdere tabbladen zijn geopend, heeft dit mogelijk invloed op de score. U kunt beter maar één tab openen). Nadat de pagina is geladen, **rechtsklikken** op de pagina en selecteer **Audits** tab. Er kunnen ontwikkelaars het type controle selecteren dat door de insteekmodule Toegankelijkheid moet worden uitgevoerd. Nadat alle gewenste opties zijn geselecteerd, kan de gebruiker op de knop Rapport genereren klikken. Hiermee wordt een PDF-document gegenereerd dat de algemene toegankelijkheidsscore weergeeft en wat kan worden gebruikt om de score voor toegankelijkheid in het algemeen te verhogen.
 

@@ -2,9 +2,9 @@
 title: Vertaalregels configureren
 description: Leer hoe u vertaalregels definieert om inhoud voor vertaling te identificeren.
 exl-id: 262503af-361b-491c-8639-0bb32f0a4c0e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '864'
 ht-degree: 0%
 
 ---
@@ -59,14 +59,14 @@ Er is een **Omzetconfiguratie** console beschikbaar voor het vormen van vertaalr
 1. Navigeren naar **Gereedschappen** -> **Algemeen**.
 1. Tik of klik op **Omzetconfiguratie**.
 
-In de **Omzetconfiguratie** UI, zijn er een aantal opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
+In de **Omzetconfiguratie** UI, zijn er verscheidene opties beschikbaar voor uw vertaalregels. Hier benadrukken wij de meest noodzakelijke en typische stappen die voor een basisconfiguratie zonder kop worden vereist.
 
 1. Tik of klik op **Context toevoegen**, waarmee u een pad kunt toevoegen. Dit is het pad van de inhoud waarop de regel van toepassing is.
    ![Context toevoegen](assets/add-translation-context.png)
 1. Gebruik de padbrowser om het vereiste pad te selecteren en tik of klik op de knop **Bevestigen** op te slaan. Onthoud dat Content Fragments, die inhoud zonder kop bevatten, zich doorgaans onder `/content/dam/<your-project>`.
    ![Het pad selecteren](assets/select-context.png)
 1. AEM slaat de configuratie op.
-1. Selecteer de context die u zojuist hebt gemaakt en tik of klik op **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
+1. U moet de gemaakte context selecteren en vervolgens tikken of klikken **Bewerken**. Hierdoor wordt het **Editor voor omzettingsregels** om de eigenschappen te configureren.
    ![Editor voor vertaalregels](assets/translation-rules-editor.png)
 1. Standaard worden alle configuraties overgenomen van het bovenliggende pad, in dit geval `/content/dam`. Schakel de optie uit **Overnemen van`/content/dam`** om extra gebieden aan de configuratie toe te voegen.
 1. Als deze optie is uitgeschakeld, onder de knop **Algemeen** in de lijst, voegt u de eigenschapnamen toe van de inhoudsfragmentmodellen die u gebruikt [eerder geïdentificeerd als velden voor vertaling.](getting-started.md#content-models)
@@ -81,7 +81,7 @@ U hebt nu uw vertaalregels geconfigureerd.
 
 ## Geavanceerd gebruik {#advanced-usage}
 
-Er zijn een aantal extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
+Er zijn verscheidene extra eigenschappen die als deel van uw vertaalregels kunnen worden gevormd. Bovendien kunt u uw regels handmatig als XML opgeven, waardoor meer specificiteit en flexibiliteit mogelijk zijn.
 
 Dergelijke functies zijn meestal niet nodig om uw inhoud zonder kop te lokaliseren, maar u kunt er meer over lezen in het dialoogvenster [Aanvullende bronnen](#additional-resources) als u geïnteresseerd bent.
 

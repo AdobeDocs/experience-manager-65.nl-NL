@@ -1,19 +1,15 @@
 ---
 title: AEM en portlets
-seo-title: AEM Portals and Portlets
 description: Leer hoe te om AEM als portaal te vormen en te beheren en hoe te om AEM inhoud in een portlet te vormen en te tonen.
-seo-description: Learn how to configure and administer AEM as a portal and how to configure and display AEM content in a portlet.
-uuid: 7f9e316d-277e-4a1e-b6f3-cd89addc897b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: 99528fda-5c8c-4034-bcbe-a4cea42f694b
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6098'
+source-wordcount: '6093'
 ht-degree: 0%
 
 ---
@@ -193,7 +189,7 @@ Om een replicatieagent voor het portaal te vormen:
 
    ![screen_shot_2012-02-15at40817pm](assets/screen_shot_2012-02-15at40817pm.png)
 
-1. Dubbelklik op de replicatieagent die u net hebt gemaakt. Het toont ongeldig aangezien het nog niet is gevormd.
+1. Dubbelklik op de replicatieagent die u hebt gemaakt. Het toont ongeldig aangezien het nog niet is gevormd.
 
    ![screen_shot_2012-02-15at41001pm](assets/screen_shot_2012-02-15at41001pm.png)
 
@@ -247,7 +243,7 @@ De configuratieopties van de authentificatie die portlet in AEM instanties WCM g
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor de diensten OSGi (console of bewaarplaatsknooppunten) te beheren.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor de diensten OSGi (console of bewaarplaatsknooppunten) te beheren.
 >
 >Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
 
@@ -548,7 +544,7 @@ De portlet voor AEM inhoud heeft een ingebouwde lokalisatiefunctie, die ervoor z
 Dit gebeurt in twee stappen:
 
 1. De taaldetector van de poortmap detecteert de landinstelling van de poortgebruiker door de landinstelling van het portaal op te halen. Deze dienst moet met de lijst van beschikbare talen in AEM worden gevormd.
-1. De portaalversie van Director-handlers voor de landinstelling handelt de lokalisatie van het huidige verzoek af. Het pad van de aangevraagde inhoud wordt bijvoorbeeld aangehouden `/content/geometrixx/en/company.html`en volgens de configuratie worden de **en** met de werkelijke landinstelling van de gebruiker.
+1. De portaalversie van Director-handlers voor de landinstelling handelt de lokalisatie van het huidige verzoek af. Het pad van de gevraagde inhoud is bijvoorbeeld `/content/geometrixx/en/company.html`en volgens de configuratie worden de **en** met de werkelijke landinstelling van de gebruiker.
 
 De portaalhandler voor Director-landinstellingen kan worden geconfigureerd met de paden om te controleren op informatie over landinstellingen. Dit omvat gewoonlijk alles onder `/content` en met de positie van de landinstellingsinformatie in het pad. Standaard volgt de landinstellingshandler de aanbevolen procedure voor het structureren van meertalige sites in AEM.
 
@@ -616,7 +612,7 @@ Wanneer het uitvoeren van een dergelijke dienst, zorg ervoor om **service.rankin
 | **Naam** | **Beschrijving** | **Standaardgedrag** |
 |---|---|---|
 | Authenticator | Verstrekt de authentificatieinformatie aan AEM | Gebruikt een configureerbare technische gebruiker voor zowel auteur als publiceert. Of SSO kan worden gebruikt. |
-| HTMLRewriter | Hiermee herschrijft u koppelingen, afbeeldingen, enzovoort. | Herschrijft AEM verbindingen aan poortverbindingen, kan door een UrlMapper en een TextMapper worden uitgebreid |
+| HTMLRewriter | Hiermee herschrijft u koppelingen, afbeeldingen, enzovoort | Herschrijft AEM verbindingen aan poortverbindingen, kan door een UrlMapper en een TextMapper worden uitgebreid |
 | HttpClientService | Verwerkt alle http-verbindingen | Standaardimplementatie |
 | LocaleHandler | De informatie over de landinstelling verwerken | Hiermee herschrijft u een koppeling naar de inhoud ten opzichte van de landinstelling. |
 | LocaleDetector | Detecteert de landinstelling van de gebruiker. | Gebruikt de landinstelling die door het portaal wordt opgegeven. |
@@ -741,7 +737,7 @@ Standaard maakt de portlet verbinding met de publicatieinstantie op localhost:45
 
 >[!NOTE]
 >
->Bij deze procedures wordt het Websphere-portaal als voorbeeld gebruikt, hoewel deze zo algemeen mogelijk zijn. Houd er rekening mee dat de procedures voor andere webportalen verschillen. Hoewel de stappen in wezen identiek zijn voor alle webportalen, moet u de stappen voor uw specifieke webportaal opnieuw gebruiken.
+>Bij deze procedures wordt het Websphere-portaal als voorbeeld gebruikt, hoewel deze zo algemeen mogelijk zijn; houd er rekening mee dat de procedures voor andere webportalen verschillen. Hoewel de stappen in wezen identiek zijn voor alle webportalen, moet u de stappen voor uw specifieke webportaal opnieuw gebruiken.
 
 #### De portlet installeren {#installing-the-portlet}
 
@@ -799,7 +795,7 @@ Doorgaans wijst het beginpad rechtstreeks naar de inhoud in AEM. Als u beginpade
 De portlet toevoegen aan de portlet-pagina:
 
 1. Zorg ervoor dat u zich in het beheervenster van uw toepassingsserver bevindt en navigeer naar de locatie waar u pagina&#39;s beheert. (in WebSphere 6.1 klikt u bijvoorbeeld op **Pagina&#39;s beheren**).
-1. Selecteer de naam van de portlet en selecteer dan een bestaande pagina of creeer een nieuwe pagina.
+1. Selecteer de naam van de portlet en selecteer dan een bestaande pagina of creeer een pagina.
 1. Bewerk de pagina-indeling.
 1. Selecteer portlet en voeg het aan een container toe.
 1. Sla uw wijzigingen op.
@@ -809,4 +805,4 @@ De portlet toevoegen aan de portlet-pagina:
 De pagina openen die u aan de portlet hebt toegevoegd:
 
 1. In het de verpersoonlijkingsmenu van portlet, vorm portlet aangezien u het in het portaal vormde.
-1. Open de configuratie (portlet toont publicatiebegin URL die in de configuratie van portlet wordt gevormd) en breng zonodig uitgeeft, dan sparen hen aan.
+1. Open de configuratie (portlet toont publicatiebegin URL die in de configuratie van portlet wordt gevormd) en maak zonodig uitgeeft, dan sparen hen.

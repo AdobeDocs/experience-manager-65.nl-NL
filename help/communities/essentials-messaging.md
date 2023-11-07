@@ -7,7 +7,7 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: b941b5e0-f768-4393-9a9d-ded2cd7d10c4
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 0%
@@ -114,7 +114,7 @@ Een community-sitestructuur die met de wizard is gemaakt, bevat de berichtfuncti
 
 ### Voorbeeldcode: bericht ontvangen {#sample-code-message-received-notification}
 
-Met de functie Sociaal overseinen worden bijvoorbeeld gebeurtenissen voor bewerkingen gegenereerd `send`, `marking read`, `marking delete`. Deze gebeurtenissen kunnen worden afgevangen en er kunnen acties worden ondernomen op basis van de gegevens in de gebeurtenis.
+Met de functie Sociaal overseinen worden bijvoorbeeld gebeurtenissen voor bewerkingen gegenereerd. `send`, `marking read`, `marking delete`. Deze gebeurtenissen kunnen worden afgevangen en er kunnen acties worden ondernomen op basis van de gegevens in de gebeurtenis.
 
 Het volgende voorbeeld is een gebeurtenishandler die luistert naar de gebeurtenis `message sent` en verzendt een e-mail naar alle berichtontvangers met behulp van de `Day CQ Mail Service`.
 

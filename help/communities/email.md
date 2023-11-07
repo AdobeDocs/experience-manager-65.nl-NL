@@ -8,7 +8,7 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '752'
 ht-degree: 0%
@@ -41,7 +41,7 @@ De standaardmailservice is vereist voor zowel meldingen als abonnementen.
 
 Dit is gebaseerd op de documentatie voor [E-mailmelding configureren](../../help/sites-administering/notification.md), maar met een verschil op dat gebied `"From" address` is *niet* vereist en moet leeg blijven.
 
-Bijvoorbeeld (alleen invullen met waarden voor illustratieve doeleinden):
+Bijvoorbeeld (alleen ingevuld met waarden voor illustratieve doeleinden):
 
 ![email-config](assets/email-config.png)
 

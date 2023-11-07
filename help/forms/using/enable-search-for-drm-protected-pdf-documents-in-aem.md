@@ -12,7 +12,7 @@ discoiquuid: b79c147c-f846-4e48-bec0-8b658502bb6f
 docset: aem65
 feature: Document Security
 exl-id: 7cf17fb6-021a-473e-bc3b-27c317953002
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '697'
 ht-degree: 0%
@@ -51,34 +51,34 @@ AEM zoekopdracht kan AEM elementen zoeken en zoeken en tekst zoeken op verschill
 
 U kunt een van de volgende methoden gebruiken om de beveiligde verbinding tot stand te brengen:
 
-* Adobe LiveCycle Client SDK-bundel configureren met AEM Forms op JEE-beheerdersreferenties
-* Adobe LiveCycle Client SDK-bundel configureren met wederzijdse verificatie
+* De Adobe LiveCycle Client SDK-bundel configureren met AEM Forms op JEE-beheerdersreferenties
+* De SDK-bundel voor client-SDK van Adobe LiveCycle configureren met wederzijdse verificatie
 
-#### Adobe LiveCycle Client SDK-bundel configureren met AEM Forms op JEE-beheerdersreferenties {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
+#### De Adobe LiveCycle Client SDK-bundel configureren met AEM Forms op JEE-beheerdersreferenties {#configure-adobe-livecycle-client-sdk-bundle-with-aem-forms-on-jee-admin-credentials}
 
 1. Open AEM webconsole. De URL is https://&#39;[server]:[poort]&quot;/system/console/configMgr.
-1. Zoek en open de **Adobe LiveCycle Client SDK-bundel**. Geef waarde op voor de volgende velden:
+1. Zoek en open de **Adobe LiveCycle client SDK-bundel**. Geef waarde op voor de volgende velden:
 
    * **Server-URL:** Geef de HTTPS-URL van AEM Forms op de JEE-server op. Start de server opnieuw op met -Djavax.net.ssl.trustStore= om communicatie via https mogelijk te maken&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> parameter.
-   * **Servicenaam**: Voeg RightsManagementService aan de lijst van de gespecificeerde diensten toe.
+   * **Servicenaam**: Voeg de RightsManagementService toe aan de lijst met opgegeven services.
    * **Gebruikersnaam:** Geef de gebruikersnaam op van de AEM Forms op de JEE-account die moet worden gebruikt om oproepen van AEM server te starten. De opgegeven account moet beschikken over machtigingen om documentservices te starten op de AEM Forms op de JEE-server.
    * **Wachtwoord**: Geef het wachtwoord van de AEM Forms op voor de JEE-account die in het veld Gebruikersnaam wordt vermeld.
 
    Klikken **Opslaan**. AEM is ingeschakeld om te zoeken in documenten met een beveiligde PDF.
 
-#### Adobe LiveCycle Client SDK-bundel configureren met wederzijdse verificatie {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
+#### De SDK-bundel voor client-SDK van Adobe LiveCycle configureren met wederzijdse verificatie {#configure-adobe-livecycle-client-sdk-bundle-using-mutual-authentication}
 
 1. Schakel wederzijdse verificatie in voor AEM Forms op JEE. Zie voor meer informatie [CAC en wederzijdse verificatie](https://helpx.adobe.com/livecycle/kb/cac-mutual-authentication.html).
 1. Open AEM webconsole. De URL is https://&#39;[server]:[poort]&quot;/system/console/configMgr.
 1. Zoek en open de **Adobe LiveCycle Client SDK** Bundel. Geef waarde op voor de volgende eigenschappen:
 
-   * **Server-URL**: Geef de HTTPS-URL van AEM Forms op de JEE-server op. Als u communicatie via https wilt inschakelen, start u de AEM server opnieuw met de -Djavax.net.ssl.trustStore=&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> parameter.
+   * **Server-URL**: Geef de HTTPS-URL van AEM Forms op de JEE-server op. Start de AEM opnieuw met de -Djavax.net.ssl.trustStore= om communicatie via https mogelijk te maken&lt;path of=&quot;&quot; aem=&quot;&quot; forms=&quot;&quot; on=&quot;&quot; jee=&quot;&quot; keystore=&quot;&quot; file=&quot;&quot;> parameter.
    * **2-wegs SSL inschakelen**: Schakel de optie 2-wegs SSL inschakelen in.
    * **URL sleutelarchiefbestand**: Geef de URL van het sleutelarchiefbestand op.
    * **TrustStore-bestands-URL**: Geef de URL van het bestand truststore op.
    * **KeyStore-wachtwoord**: Geef het wachtwoord voor het sleutelarchiefbestand op.
    * **TrustStorePassword**: Geef het wachtwoord voor het bestand truststore op.
-   * **Servicenaam**: Voeg RightsManagementService aan de lijst van de gespecificeerde diensten toe.
+   * **Servicenaam**: Voeg de RightsManagementService toe aan de lijst met opgegeven services.
 
    Klikken **Opslaan**. AEM is ingeschakeld om te zoeken naar documenten met een beveiligde PDF
 

@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3570'
+source-wordcount: '3568'
 ht-degree: 0%
 
 ---
@@ -275,7 +275,7 @@ U moet [het pakket opnieuw opbouwen](#building-a-package) om de inhoud bij te we
 
 ### Een pakket opnieuw inpakken {#rewrapping-a-package}
 
-Nadat een pakket is gemaakt, kan het opnieuw worden verpakt. Wanneer u de pakketgegevens opnieuw inpakt, worden deze zonder miniatuur, beschrijving, enzovoort gewijzigd. De pakketinhoud blijft ongewijzigd.
+Nadat een pakket is gemaakt, kan het opnieuw worden verpakt. Wanneer u de pakketgegevens opnieuw inpakt, worden deze zonder miniatuur, beschrijving, enzovoort gewijzigd, zonder dat de pakketinhoud wordt gewijzigd.
 
 1. [Access Package Manager.](#accessing)
 
@@ -581,7 +581,7 @@ AEM Pakketten kunnen worden gebruikt om inhoud te creëren en te delen over AEM 
 
 [Softwaredistributie](https://downloads.experiencecloud.adobe.com) is een gecentraliseerde dienst die wordt ontworpen om het zoeken en het downloaden van AEM pakketten te vereenvoudigen.
 
-Voor meer informatie raadpleegt u de [Documentatie voor softwaredistributie.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
+Zie de klasse [Documentatie voor softwaredistributie.](https://experienceleague.adobe.com/docs/experience-cloud/software-distribution/home.html)
 
 >[!NOTE]
 >

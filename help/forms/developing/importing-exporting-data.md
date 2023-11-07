@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
 exl-id: 96310e0a-8e95-4a55-9508-5298b8d67f83
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2774'
+source-wordcount: '2771'
 ht-degree: 0%
 
 ---
@@ -177,7 +177,7 @@ Formuliergegevens importeren met de API voor formuliergegevensintegratie (Java):
    * De `com.adobe.idp.Document` object waarin het PDF-formulier is opgeslagen.
    * De `com.adobe.idp.Document` -object dat formuliergegevens opslaat.
 
-   De `importData` methode retourneert een `com.adobe.idp.Document` object dat een PDF-formulier opslaat dat de gegevens bevat die zich in de XML-gegevensbron bevinden.
+   De `importData` methode retourneert een `com.adobe.idp.Document` object dat een PDF-formulier opslaat dat de gegevens in de XML-gegevensbron bevat.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
 
@@ -242,7 +242,7 @@ Formuliergegevens importeren met de API (webservice) voor formuliergegevensinteg
    * De `BLOB` object waarin het PDF-formulier is opgeslagen.
    * De `BLOB` -object dat formuliergegevens opslaat.
 
-   De `importData` methode retourneert een `BLOB` object dat een PDF-formulier opslaat dat de gegevens bevat die zich in de XML-gegevensbron bevinden.
+   De `importData` methode retourneert een `BLOB` object dat een PDF-formulier opslaat dat de gegevens in de XML-gegevensbron bevat.
 
 1. Sla het PDF-formulier op als een PDF-bestand.
 

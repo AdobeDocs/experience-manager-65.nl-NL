@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 exl-id: 5b934e3a-f554-46ec-a913-8d570abb1503
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '837'
+source-wordcount: '829'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ Wanneer u AEM gebruikt, kunt u veel inhoud van verschillende typen beheren (bijv
 ## Dashboards beheren {#administering-dashboards}
 
 ### Een dashboard maken {#creating-a-dashboard}
-
-Ga als volgt te werk om een nieuw dashboard te maken:
 
 1. In de **Gereedschappen** sectie, klikken **Configuratieconsole**.
 1. Dubbelklik in de structuur op **Dashboard**.

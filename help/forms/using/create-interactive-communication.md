@@ -10,9 +10,9 @@ discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5995'
+source-wordcount: '5994'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Tik op het documentfragment en tik op ![configure_icon](assets/configure_icon.pn
 
    Navigeren naar [Variabelen en gegevensmodelobjecten](../../forms/using/create-interactive-communication.md#hiddenvariables) Hiermee stelt u de binding in van verborgen variabelen in het documentfragment.
 
-   U kunt ook gegevensbronelementen of tekstdocumentfragmenten slepen en neerzetten om de binding van variabelen in te stellen.  Als u een binding wilt maken met gegevensbronelementen, selecteert u de optie **Gegevensbronnen** en sleep het element naar de naam van de variabele. Het gegevensbronelement en de variabele moeten van het zelfde type zijn aan opstelling met succes bindt. Als u een gegevensbronelement naar een reeds gebonden variabele sleept, vervangt het nieuwe element vorige om een nieuwe band met de variabele tot stand te brengen. Selecteer op dezelfde manier de **Activa** en sleep het tekstdocumentfragment naar de naam van een variabele om de binding tussen de fragmenten in te stellen. Het tekstdocumentfragment mag geen variabelen bevatten.
+   U kunt ook gegevensbronelementen of tekstdocumentfragmenten slepen en neerzetten om de binding van variabelen in te stellen.  Als u een binding wilt maken met gegevensbronelementen, selecteert u de optie **Gegevensbronnen** en sleep het element naar de naam van de variabele. Het gegevensbronelement en de variabele moeten van het zelfde type zijn aan opstelling met succes bindt. Als u een gegevensbronelement naar een reeds gebonden variabele sleept, vervangt het nieuwe element vorige om een band met de variabele tot stand te brengen. Selecteer op dezelfde manier de **Activa** en sleep het tekstdocumentfragment naar de naam van een variabele om de binding tussen de fragmenten in te stellen. Het tekstdocumentfragment mag geen variabelen bevatten.
 
 1. Als u een tabel wilt toevoegen met het afdrukkanaal geselecteerd in het dialoogvenster **[!UICONTROL Assets]** past u het filter toe om alleen de layoutfragmenten weer te geven. Sleep het vereiste lay-outfragment naar de interactieve communicatie en zet het neer. Een lay-outfragment is gebaseerd op een XDP en kan worden gebruikt om grafische lay-outs of statische en dynamische lijsten in Interactieve Communicatie tot stand te brengen die met dynamische gegevens worden bevolkt.
 

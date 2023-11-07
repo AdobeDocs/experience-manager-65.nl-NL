@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7848'
+source-wordcount: '7847'
 ht-degree: 0%
 
 ---
@@ -619,7 +619,7 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
   <tr>
    <td><p>Script </p></td>
    <td><p>Geeft interacties op tussen de service PDF genereren en een native toepassing. Dergelijke interacties leiden de toepassing gewoonlijk om een dossier aan de bestuurder van Adobe PDF te drukken. </p><p>Het script bevat instructies die de oorspronkelijke toepassing de opdracht geven specifieke dialoogvensters te openen en die specifieke reacties bieden op velden en knoppen in die dialoogvensters. </p></td>
-   <td><p>De service PDF genereren bevat scriptbestanden voor alle ondersteunde native toepassingen. U kunt deze bestanden wijzigen met een XML-bewerkingstoepassing.</p><p>Als u ondersteuning voor een nieuwe native toepassing wilt toevoegen, moet u een nieuw scriptbestand maken. (Zie <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing</a>.) </p></td>
+   <td><p>De service PDF genereren bevat scriptbestanden voor alle ondersteunde native toepassingen. U kunt deze bestanden wijzigen met een XML-bewerkingstoepassing.</p><p>Als u ondersteuning voor een nieuwe native toepassing wilt toevoegen, moet u een scriptbestand maken. (Zie <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing</a>.) </p></td>
   </tr>
   <tr>
    <td><p>Instructies in het dialoogvenster Algemeen </p></td>

@@ -6,7 +6,7 @@ role: User, Admin
 feature: Asset Reports,Asset Management
 exl-id: b4963a03-3496-4c6c-9d30-8812304d0e9f
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1096'
 ht-degree: 7%
@@ -35,7 +35,7 @@ Wanneer een rapport wordt gegenereerd, ontvangt u een melding via e-mail (option
 Ga als volgt te werk om rapporten te genereren:
 
 * Inschakelen [!UICONTROL Day CQ DAM Event Recorder] service van **[!UICONTROL Tools]** > **[!UICONTROL Operations]** > **[!UICONTROL Web Console]**.
-* Selecteer de activiteiten of gebeurtenissen waarop u wilt rapporteren. Als u bijvoorbeeld een rapport wilt genereren over gedownloade elementen, selecteert u [!UICONTROL Asset downloaded (DOWNLOADED)].
+* Selecteer de activiteiten of gebeurtenissen waarop u wilt rapporteren. Als u bijvoorbeeld rapport wilt genereren over gedownloade elementen, selecteert u [!UICONTROL Asset downloaded (DOWNLOADED)].
 
 ![Elementrapportage inschakelen in webconsole](assets/reports-config-day-cq-dam-event-recorder.png)
 
@@ -59,7 +59,7 @@ Ga als volgt te werk om rapporten te genereren:
 
    ![Pagina Gereedschappen om te navigeren in middelenrapport](assets/AssetsReportNavigation.png)
 
-1. Op de [!UICONTROL Asset Reports] pagina, klikt u op **[!UICONTROL Create]** op de werkbalk.
+1. Op de [!UICONTROL Asset Reports] pagina, klikt u **[!UICONTROL Create]** op de werkbalk.
 1. Van de **[!UICONTROL Create Report]** pagina, kiest u het rapport dat u wilt maken en klikt u op **[!UICONTROL Next]**.
 
    ![Rapporttype selecteren](assets/choose_report.png)
@@ -84,15 +84,15 @@ Ga als volgt te werk om rapporten te genereren:
    >
    >Als u ervoor kiest om het rapport later te plannen, zorg ervoor dat u de datum en de tijd in de gebieden van de Datum en van de Tijd specificeert. Als u geen waarde specificeert, behandelt de rapportmotor het als een rapport dat onmiddellijk moet worden geproduceerd.
 
-   De gebieden van de configuratie kunnen verschillen gebaseerd op het type van rapport u creeert. De **[!UICONTROL Disk Usage]** rapport biedt opties voor het opnemen van elementen bij het berekenen van de schijfruimte die door elementen wordt gebruikt. U kunt ervoor kiezen om elementen in submappen op te nemen of uit te sluiten voor het berekenen van het schijfgebruik.
+   De gebieden van de configuratie kunnen verschillen gebaseerd op het type van rapport u creeert. Bijvoorbeeld de **[!UICONTROL Disk Usage]** rapport biedt opties voor het opnemen van elementen bij het berekenen van de schijfruimte die door elementen wordt gebruikt. U kunt ervoor kiezen om elementen in submappen op te nemen of uit te sluiten voor het berekenen van het schijfgebruik.
 
    >[!NOTE]
    >
    >Het rapport **[!UICONTROL Disk Usage]** bevat geen datumbereikvelden omdat het alleen het huidige gebruik van schijfruimte aangeeft.
 
-   ![Detailpagina van rapport Schijfgebruik](assets/disk_usage_configuration.png)
+   ![Pagina met details van rapport Schijfgebruik](assets/disk_usage_configuration.png)
 
-   Wanneer u de **[!UICONTROL Files]** rapport, kunt u submappen opnemen/uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
+   Wanneer u de opdracht **[!UICONTROL Files]** rapport, kunt u submappen opnemen/uitsluiten. U kunt echter geen elementuitvoeringen opnemen voor dit rapport.
 
    ![Pagina met details van rapport Bestanden](assets/files_report.png)
 
@@ -134,7 +134,7 @@ U kunt douanekolommen aan de volgende rapporten toevoegen om meer gegevens voor 
 Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
 1. In de [!DNL Manager interface], klikt u op **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Reports]**.
-1. Op de [!UICONTROL Asset Reports] pagina, klikt u op **[!UICONTROL Create]** op de werkbalk.
+1. Op de [!UICONTROL Asset Reports] pagina, klikt u **[!UICONTROL Create]** op de werkbalk.
 
 1. Van de **[!UICONTROL Create Report]** pagina, kiest u het rapport dat u wilt maken en klikt u op **[!UICONTROL Next]**.
 1. Configureer rapportdetails zoals titel, beschrijving, miniatuur, mappad en datumbereik.
@@ -147,7 +147,7 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
    ![Eigenschappenpad toewijzen vanuit paden in jcr:content](assets/property_picker.png)
 
-   Als u meer aangepaste kolommen wilt toevoegen, klikt u op **[!UICONTROL Add]** en herhaal stap 5 en 6.
+   Klik op **[!UICONTROL Add]** en herhaal stap 5 en 6.
 
 1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
@@ -155,14 +155,14 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
 Om rapporten te verwijderen die u niet meer vereist, vorm de dienst van de Leegmaken van het Rapport DAM van de Webconsole om bestaande rapporten te zuiveren die op hun hoeveelheid en leeftijd worden gebaseerd.
 
-1. De webconsole openen (configuratiemanager) vanuit `https://[aem_server]:[port]/system/console/configMgr`.
+1. Toegang tot de webconsole (configuratiemanager) vanaf `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL DAM Report Purge Service]** configuratie.
 1. Geef de frequentie (tijdsinterval) voor de zuiveringsservice op in het dialoogvenster `scheduler.expression.name` veld. U kunt de leeftijd en de kwantitatieve drempel voor rapporten ook vormen.
 1. Sla de wijzigingen op.
 
 ## Problemen met informatie, tips en beperkingen oplossen {#best-practices-and-limitations}
 
-* Als bepaalde rapporten of nummers in de rapporten niet beschikbaar of naar verwachting zijn, moet u ervoor zorgen dat [!UICONTROL Day CQ DAM Event Recorder] service is ingeschakeld.
+* Als sommige rapporten of nummers in de rapporten niet beschikbaar of naar verwachting zijn, controleert u of [!UICONTROL Day CQ DAM Event Recorder] service is ingeschakeld.
 
 * Verwijder de rapporten die niet meer vereist zijn. Gebruik de configuratieopties in de DAM dienst van de Leegmaken van het Rapport om de criteria te vormen om rapporten te zuiveren.
 

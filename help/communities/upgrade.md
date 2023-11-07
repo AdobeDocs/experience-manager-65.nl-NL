@@ -11,9 +11,9 @@ topic-tags: deploying
 discoiquuid: abe5a998-bbe3-4a2b-bcf7-b490a8275219
 docset: aem65
 exl-id: ea41d35c-967c-4606-b4ec-377e817902e4
-source-git-commit: 066a61a332aa620078740d36bd7f8689282fbf14
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '621'
 ht-degree: 0%
 
 ---
@@ -36,11 +36,11 @@ Wanneer het installeren van een nieuw de eigenschappak van Gemeenschappen op een
 
 ## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
 
-Als reeds bestaande UGC moet worden behouden, dan hangt de middelen om dit te doen af van of de plaatsing opgeslagen UGC [op locatie](#on-premise-storage) of in de [Adobe-cloud](#adobe-cloud-storage).
+Als reeds bestaande UGC moet worden behouden, dan hangt de middelen om dit te doen af van of de plaatsing opgeslagen UGC [op locatie](#on-premise-storage) of in de [Adobe cloud](#adobe-cloud-storage).
 
 ### Adobe Cloud Storage {#adobe-cloud-storage}
 
-Als de geüpgrade site is geconfigureerd voor het gebruik van de Adobe-cloudopslag, wordt deze mogelijk (onjuist) weergegeven alsof alle UGC is verloren omdat de SRP-methoden de reeds bestaande UGC op de oude locatie niet kunnen vinden.
+Als de geüpgrade site is geconfigureerd voor het gebruik van Adobe-cloud-opslag, kan deze (onjuist) worden weergegeven alsof alle UGC is verloren omdat de SRP-methoden de reeds bestaande UGC op de oude locatie niet kunnen vinden.
 
 Aldus is er de capaciteit om ASRP te instrueren om te gebruiken `AEM 6.0 compatability-mode` toegang tot UGC.
 
@@ -61,8 +61,7 @@ Voor alle AEM 6.3 auteur- en publicatieinstanties:
 
          * Selecteren **Opslaan**
 
-      ![nutsbedrijven](assets/utilities.png)
-
+     ![nutsbedrijven](assets/utilities.png)
 
 ### Opslag op locatie {#on-premise-storage}
 
@@ -75,7 +74,7 @@ Voor dit doel, is een open bronmigratiehulpmiddel beschikbaar op GitHub:
 
 Houd er rekening mee dat veel API&#39;s in verschillende pakketten zijn ondergebracht bij de opwaardering van AEM 6.0 sociale gemeenschappen naar AEM 6.3 Gemeenschappen. De meeste moeten gemakkelijk worden opgelost wanneer het gebruiken van winde voor aanpassing van de eigenschappen van Gemeenschappen.
 
-Ga voor meer informatie over het verouderde pakket met sociale hulpmiddelen naar [SocialUtils Refactoring](/help/communities/socialutils.md).
+Ga voor meer informatie over het verouderde pakket met sociale hulpmiddelen naar [Refactoring voor sociale hulpmiddelen](/help/communities/socialutils.md).
 
 Zie ook [Maven gebruiken voor Gemeenschappen](/help/communities/maven.md).
 
@@ -83,7 +82,7 @@ Zie ook [Maven gebruiken voor Gemeenschappen](/help/communities/maven.md).
 
 De [sociale component](/help/communities/scf.md) (SCF) gebruikt [HandlebarsJS](https://handlebarsjs.com/) (HBS) sjabloontaal in plaats van JSP (Java Server Pages) die vóór AEM 6.0 wordt gebruikt.
 
-In AEM 6.0 bleven de JSP componenten naast de nieuwe HBS kadercomponenten op dezelfde plaats, met de componenten HBS typisch gevestigd in subfolders genoemd &quot;hbs&quot;.
+In AEM 6.0 bleven de JSP componenten naast de nieuwe HBS kadercomponenten op dezelfde plaats, met de componenten van GB typisch in subfolders genoemd &quot;hbs&quot;.
 
 Vanaf AEM 6.1 werden de JSP-componenten volledig verwijderd. Voor Gemeenschappen, wordt het geadviseerd om al gebruik van componenten JSP met componenten SCF te vervangen.
 
@@ -97,8 +96,8 @@ Naast het bewegen van UGC van vroegere versies, is het ook mogelijk om het hulpm
 
 Conceptueel zijn er drie generaties gemeenschappen componenten:
 
-**Gen 1**: Ruwweg CQ 5.4 tot AEM 5.6.0, zijn dit **collab** componenten die UGC in de lokale opslagplaats hebben opgeslagen gebruikend replicatie als middel om UGC over platforms te synchroniseren. Andere verschillen betreffen de implementatie met behulp van JSP (Java Server Pages) en de blogfunctie die bestaat uit alleen ontwerpen in de auteursomgeving.
+**Gen 1**: Ruw CQ 5.4 tot en met AEM 5.6.0, dit zijn **collab** componenten die UGC in de lokale opslagplaats hebben opgeslagen gebruikend replicatie als middel om UGC over platforms te synchroniseren. Andere verschillen betreffen de implementatie met behulp van JSP (Java Server Pages) en de blogfunctie die bestaat uit alleen ontwerpen in de auteursomgeving.
 
-**Gen 2**: Van AEM 5.6.1 tot AEM 6.1 is dit een mix van **collab** en **sociaal** componenten. AEM 6.0 introduceert het nieuwe [sociale component](/help/communities/scf.md) (SCF) en AEM 6.2 [algemene UGC-opslag](/help/communities/working-with-srp.md) waar UGC wordt benaderd via een [opslagbronprovider](/help/communities/srp.md) (SRP).
+**Gen 2**: Van AEM 5.6.1 tot en met AEM 6.1 is dit een mix van: **collab** en **sociaal** componenten. AEM 6.0 introduceert het nieuwe [sociale component](/help/communities/scf.md) (SCF) en AEM 6.2 [algemene UGC-opslag](/help/communities/working-with-srp.md) waar UGC wordt benaderd via een [opslagbronprovider](/help/communities/srp.md) (SRP).
 
 **Gen 3**: Vanaf AEM 6.2 zijn er alleen **sociaal** componenten, die in SCF als componenten van Handlebars (HBS) worden uitgevoerd die een keus van SRP voor UGC vereisen.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MANAGING
 topic-tags: managing
 content-type: reference
 exl-id: e67f848a-a8cd-4585-a734-e6b1de8a8d74
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '982'
 ht-degree: 60%
 
 ---
@@ -94,7 +94,7 @@ Als u gegevens die in een publicatieomgeving zijn gegenereerd, wilt terugkeren n
 
 #### Publicatie {#publish}
 
-Een publicatieomgeving bevindt zich in de gedemilitariseerde zone (DMZ). Dit is de omgeving waarin bezoekers toegang krijgen tot uw inhoud (bijvoorbeeld via een website of in de vorm van een mobiele toepassing) en ermee communiceren; moet het openbaar zijn, of binnen uw Intranet. Een publicatieomgeving:
+Een publicatieomgeving bevindt zich in de gedemilitariseerde zone (DMZ). Dit is de omgeving waarin bezoekers toegang krijgen tot uw inhoud (bijvoorbeeld via een website of in de vorm van een mobiele toepassing) en ermee communiceren, of het nu gaat om een openbare of intranetfunctie. Een publicatieomgeving:
 
 * bevat content die is gerepliceerd vanuit de auteuromgeving
 * stelt die content ter beschikking van de bezoekers
@@ -117,7 +117,7 @@ De code (bijvoorbeeld aangepaste functionaliteit van webtoepassingen en ontwerps
 AEM Projecten activeren vaak de implementatie van code:
 
 * Automatisch: voor overdracht naar de ontwikkelings- en kwaliteitscontroleomgevingen.
-* Handmatig: de implementatie in de staging- en productieomgevingen gebeurt op een meer beheerste en vaak handmatige manier; automatisering is echter mogelijk , indien nodig .
+* Handmatig: implementaties in de staging- en productieomgeving worden op een meer beheerste manier uitgevoerd, vaak handmatig; automatisering is echter mogelijk, indien nodig.
 
 ![chlimage_1](assets/chlimage_1.png)
 

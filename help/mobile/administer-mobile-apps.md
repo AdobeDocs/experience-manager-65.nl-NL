@@ -8,7 +8,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 302d1bd9-fdb3-4db6-a446-6ed85ad9fba5
 exl-id: dc7ba6ad-9df9-4312-a82f-5f3405dea684
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '133'
 ht-degree: 0%
@@ -19,9 +19,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
-Adobe Experience Manager (AEM) Mobile maakt deel uit van het Adobe Experience Manager multi-channel digitale platform dat ook gebruikmaakt van AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms. AEM Mobile biedt een opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
+Adobe Experience Manager (AEM) Mobile maakt deel uit van het Adobe Experience Manager multi-channel digitale platform dat ook AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms gebruikt. AEM Mobile biedt een opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
 
 AEM Mobile biedt meerdere methoden voor het maken van apps. U kunt toepassingen op verschillende manieren maken:
 

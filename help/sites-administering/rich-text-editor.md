@@ -3,9 +3,9 @@ title: Configureer de Rich Text Editor voor het schrijven van inhoud in Adobe Ex
 description: Leer hoe u de Adobe Experience Manager Rich Text Editor configureert voor het schrijven van inhoud in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2923'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
@@ -182,7 +182,7 @@ Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om de sto
 >
 >De [Tekstcomponent Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html?lang=en#the-text-component-and-the-rich-text-editor) staat malplaatjeredacteurs toe om vele steekmodules van RTE in GUI als inhoudsbeleid te vormen, die de behoefte aan technische configuratie elimineren. Het inhoudsbeleid kan werken met RTE UI-configuraties, zoals in dit document wordt beschreven.
 >
->Zie de klasse [De montages van de UI van RTE en inhoudsbeleid](/help/sites-administering/rich-text-editor.md) en [Paginasjablonen maken](/help/sites-authoring/templates.md) en de [Documentatie voor ontwikkelaars van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
+>Zie de klasse [De montages van de UI van RTE en inhoudsbeleid](/help/sites-administering/rich-text-editor.md) van dit document en [Paginasjablonen maken](/help/sites-authoring/templates.md) en de [Documentatie voor ontwikkelaars van kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/developing.html).
 
 >[!NOTE]
 >

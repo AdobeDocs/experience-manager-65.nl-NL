@@ -8,9 +8,9 @@ topic-tags: deploying
 legacypath: /content/docs/en/aem/6-0/deploy/upgrade/queries-and-indexing
 feature: Configuring
 exl-id: d9ec7728-84f7-42c8-9c80-e59e029840da
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3034'
+source-wordcount: '3032'
 ht-degree: 0%
 
 ---
@@ -429,7 +429,7 @@ AEM kan ook worden geconfigureerd om te werken met een externe Solr-serverinstan
 
 #### Aanbevolen configuratie voor Solr {#recommended-configuration-for-solr}
 
-Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. Het past de specifieke bezitsindexen aan die reeds in AEM aanwezig zijn en niet met andere toepassingen zouden moeten worden gebruikt.
+Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. Het past de specifieke bezitsindexen aan die reeds in AEM aanwezig zijn; gebruik niet met andere toepassingen.
 
 Om het behoorlijk te gebruiken, moet u de inhoud van het archief in de Solr Folder van het Huis direct plaatsen. Als er multi-knoopplaatsingen zijn, zou het direct onder de wortelomslag van elke knoop moeten gaan.
 

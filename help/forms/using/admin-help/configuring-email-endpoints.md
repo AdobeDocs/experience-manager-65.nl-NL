@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3776'
+source-wordcount: '3775'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **Host Postvak IN:** De hostnaam of het IP-adres in het Postvak IN van de e-mailprovider die moet worden gescand.
 
-**Poort Postvak IN:** Het inbox-poortnummer dat de e-mailprovider moet scannen. Als de waarde 0 is, wordt de standaard IMAP- of POP3-poort gebruikt.
+**Poort Postvak IN:** Het inbox-poortnummer dat de e-mailprovider moet scannen. Als de waarde 0 is, wordt de standaardIMAP of POP3 haven gebruikt.
 
 **Inbox-protocol:** Het e-mailprotocol voor het e-maileindpunt dat moet worden gebruikt om inbox te scannen. De keuzen zijn IMAP of POP3. De postserver van de inbox gastheer moet deze protocollen steunen.
 

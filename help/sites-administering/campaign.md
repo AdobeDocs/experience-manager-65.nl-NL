@@ -8,9 +8,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
 exl-id: ab41e540-1d43-4fc2-99d4-621ff2290e77
-source-git-commit: 6fe5e617ceac3c97a77de2d574ec370f30887330
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '335'
 ht-degree: 3%
 
 ---
@@ -26,11 +26,11 @@ Adobe Campaign is een reeks oplossingen waarmee u campagnes kunt personaliseren 
 >
 >In dit document wordt beschreven hoe Adobe Campaign wordt geïntegreerd met AEM 6.5, de oplossing op locatie of de oplossing die door AMS wordt gehost AEM.
 >
->Voor meer informatie over de integratie van Adobe Campaign met AEM as a Cloud Service, de cloud-native AEM oplossing, [raadpleeg dit document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
+>Voor meer informatie over de integratie van Adobe Campaign met AEM as a Cloud Service, de cloud-native AEM oplossing, [zie dit document.](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/sites/integrations/campaign.html)
 
 ## Integreren met Adobe Campaign Classic {#acc}
 
-Er zijn een aantal Adobe Campaign Classic (ACC)-versies. De ondersteuning voor integratie met AEM is afhankelijk van de ACC-versie die u hebt geïmplementeerd en of AEM op locatie is geïnstalleerd in Adobe Manage Services (AMS).
+Er zijn verschillende Adobe Campaign Classic-versies (ACC). De ondersteuning voor integratie met AEM is afhankelijk van de ACC-versie die u hebt geïmplementeerd en of AEM in Adobe Manage Services (AMS) op locatie is geïnstalleerd.
 
 | ACC-versie | Integratie met AEM 6.5 <br>Op locaties | Integratie met AEM 6.5<br>AMS |
 |---|---|---|
@@ -51,7 +51,7 @@ In de volgende aanvullende documentatie wordt beschreven hoe u de integratie kun
 
 ## Integreren met Adobe Campaign Standard {#acs}
 
-Integratie van [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS) met AEM hangt af van of AEM op-gebouw op in Adobe Manage Services (AMS) geïnstalleerd is.
+Integratie van [Adobe Campaign Standard](https://experienceleague.adobe.com/docs/campaign-standard.html) (ACS) met AEM hangt af van of AEM op-gebouw op in Adobe wordt geïnstalleerd leidt de Diensten (AMS).
 
 | Integratie met AEM 6.5 <br>Op locaties | Integratie met AEM 6.5<br>AMS |
 |---|---|

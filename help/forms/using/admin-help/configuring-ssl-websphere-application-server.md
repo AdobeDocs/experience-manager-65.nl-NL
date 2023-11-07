@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: b0786b52-879e-4a24-9cc9-bd9dcb2473cc
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1225'
+source-wordcount: '1222'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Deze sectie bevat de volgende stappen om SSL te configureren met uw IBM WebSpher
 
 Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in het lokale OS gebruikersregister hebben dat toestemming heeft om het systeem te beheren:
 
-* (Vensters) creeer een nieuwe gebruiker van Vensters die deel van de groep van Beheerders uitmaakt en het voorrecht heeft om als deel van het werkende systeem te handelen. (Zie [Een Windows-gebruiker voor WebSphere maken](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
+* (Vensters) creeer een gebruiker van Vensters die deel van de groep van Beheerders uitmaakt en het voorrecht heeft om als deel van het werkende systeem te handelen. (Zie [Een Windows-gebruiker voor WebSphere maken](configuring-ssl-websphere-application-server.md#create-a-windows-user-for-websphere).)
 * (Linux, UNIX) De gebruiker kan een wortelgebruiker of een andere gebruiker zijn die wortelvoorrechten heeft. Wanneer u SSL op WebSphere inschakelt, gebruikt u de serveridentificatie en het wachtwoord van deze gebruiker.
 
 ### Een Linux- of UNIX-gebruiker voor WebSphere maken {#create-a-linux-or-unix-user-for-websphere}
@@ -51,7 +51,7 @@ Voor het toelaten van SSL, moet WebSphere toegang tot een gebruikersrekening in 
 1. Klik met de rechtermuisknop op Gebruikers en selecteer **Nieuwe gebruiker**.
 1. Typ een gebruikersnaam en wachtwoord in de desbetreffende vakken en typ alle overige gegevens die u nodig hebt in de overige vakken.
 1. Deselecteren **Gebruiker moet wachtwoord wijzigen bij volgende aanmelding**, klikt u op **Maken** en klik vervolgens op **Sluiten**.
-1. Klikken **Gebruikers**, klikt u met de rechtermuisknop op de gebruiker die u net hebt gemaakt en selecteert u **Eigenschappen**.
+1. Klikken **Gebruikers**, klikt u met de rechtermuisknop op de gebruiker die u hebt gemaakt en selecteert u **Eigenschappen**.
 1. Klik op de knop **Lid van** en klik vervolgens op **Toevoegen**.
 1. Typ in het vak Geef de objectnamen op die u wilt selecteren `Administrators`, klikt u op Namen controleren om te controleren of de groepsnaam correct is.
 1. Klikken **OK** en klik vervolgens op **OK** opnieuw.

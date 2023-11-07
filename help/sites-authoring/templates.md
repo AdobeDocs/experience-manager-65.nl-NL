@@ -1,20 +1,16 @@
 ---
 title: Paginasjablonen maken
-seo-title: Creating Page Templates
 description: De sjabloon definieert de structuur van de resulterende pagina en met de sjablooneditor. Het maken en onderhouden van sjablonen is niet langer een taak die alleen voor ontwikkelaars geldt
-seo-description: The template defines the structure of the resultant page and with the template editor, creating and maintaining templates is no longer a developer-only task
-uuid: e14cd298-289f-43f0-aacb-314ed5d56c12
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: b53348ca-fc50-4e7d-953d-b4c03a5025bb
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4862'
-ht-degree: 8%
+source-wordcount: '4840'
+ht-degree: 6%
 
 ---
 
@@ -26,7 +22,7 @@ Met de **Sjablooneditor** is het creëren en onderhouden van sjablonen niet meer
 
 De **Sjabloonconsole** stelt sjabloonauteurs in staat:
 
-* Maak een nieuwe sjabloon of kopieer een bestaande sjabloon.
+* Maak een sjabloon of kopieer een bestaande sjabloon.
 * De levenscyclus van de sjabloon beheren.
 
 De **Sjablooneditor** stelt sjabloonauteurs in staat:
@@ -55,13 +51,13 @@ Raadpleeg het document voor ontwikkelaars voor gedetailleerde informatie over ho
 
 De volgende punten zijn belangrijk om te overwegen alvorens u begint:
 
-* Voor het maken van een nieuwe sjabloon is samenwerking vereist. Daarom [Rol](#roles) wordt aangegeven voor elke taak.
+* Voor het maken van een sjabloon is samenwerking vereist. Daarom [Rol](#roles) wordt aangegeven voor elke taak.
 
 * Afhankelijk van hoe uw instantie wordt gevormd, zou het nuttig kunnen zijn om zich ervan bewust te zijn dat AEM nu verstrekt [twee basistypen sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates). Dit heeft geen invloed op hoe je eigenlijk [een sjabloon gebruiken om een pagina te maken](#using-a-template-to-create-a-page), maar dit is van invloed op het type sjabloon dat u kunt maken en op de manier waarop een pagina betrekking heeft op de sjabloon.
 
 ### Rollen {#roles}
 
-Om een nieuwe sjabloon te maken met behulp van de **sjabloonconsole** en de **sjablooneditor** is samenwerking tussen de volgende rollen vereist:
+Een sjabloon maken met de opdracht **Sjabloonconsole** en de **Sjablooneditor** is samenwerking vereist tussen de volgende rollen:
 
 * **Beheerder**:
 
@@ -110,24 +106,24 @@ AEM biedt nu twee basistypen sjablonen:
    * Ze zijn [verstrekt door uw ontwikkelaars](/help/sites-developing/page-templates-static.md)en kunnen dus niet door auteurs worden gemaakt of bewerkt.
    * Er wordt gekopieerd om de nieuwe pagina te maken, maar er bestaat daarna geen dynamische verbinding (hoewel de sjabloonnaam ter informatie is geregistreerd).
    * Gebruiken [Ontwerpmodus](/help/sites-authoring/default-components-designmode.md) om ontwerpeigenschappen te behouden.
-   * Omdat het bewerken van statische sjablonen de exclusieve taak van een ontwikkelaar is, raadpleegt u het document voor ontwikkelaars [Paginasjablonen - statisch](/help/sites-developing/page-templates-static.md) voor meer informatie .
+   * Omdat het uitgeven van statische malplaatjes de exclusieve taak van een ontwikkelaar is, zie het ontwikkelaarsdocument [Paginasjablonen - statisch](/help/sites-developing/page-templates-static.md) voor meer informatie .
 
 De sjabloonconsole en sjablooneditor staan per definitie alleen het maken en bewerken van bewerkbare sjablonen toe. Daarom richt dit document zich uitsluitend op bewerkbare sjablonen.
 
 ### Een sjabloon gebruiken om een pagina te maken {#using-a-template-to-create-a-page}
 
-Als u een sjabloon gebruikt naar [een nieuwe pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page) er is geen zichtbaar verschil en geen aanwijzing tussen statische en bewerkbare sjablonen. Voor de auteur van de pagina is het proces transparant.
+Als u een sjabloon gebruikt naar [een pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page) er is geen zichtbaar verschil en geen aanwijzing tussen statische en bewerkbare sjablonen. Voor de auteur van de pagina is het proces transparant.
 
 ## Sjablonen maken en beheren {#creating-and-managing-templates}
 
-Bij het maken van een nieuwe bewerkbare sjabloon:
+Bij het maken van een bewerkbare sjabloon:
 
 * Gebruik de **Sjabloon** console. Dit is beschikbaar in het dialoogvenster **Algemeen** van de **Gereedschappen** console.
 
    * Of rechtstreeks bij: [https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf](https://localhost:4502/libs/wcm/core/content/sites/templates.html/conf)
 
 * Kan [een map maken voor de sjablonen](#creating-a-template-folder-admin) indien nodig
-* [Een nieuwe sjabloon maken](#creatinganewtemplateauthor), die aanvankelijk leeg zal zijn
+* [Een sjabloon maken](#creatinganewtemplateauthor), die aanvankelijk leeg is
 
 * [Aanvullende eigenschappen definiëren](#definingtemplatepropertiesauthor) voor de sjabloon indien vereist
 * [De sjabloon bewerken](#editingtemplates) om de volgende waarden te definiëren:
@@ -200,7 +196,7 @@ Een sjabloon kan de volgende eigenschappen hebben:
 
 * Beschrijving
 
-   * Een facultatieve beschrijving om meer informatie over het malplaatje en zijn gebruik te verstrekken, dat bijvoorbeeld in **Pagina maken** wizard.
+   * Een optionele beschrijving voor meer informatie over de sjabloon en het gebruik ervan, die bijvoorbeeld in de **Pagina maken** wizard.
 
 De eigenschappen weergeven en/of bewerken:
 
@@ -251,7 +247,7 @@ Een sjabloon kan worden in- of uitgeschakeld, zodat deze beschikbaar of niet bes
 
 1. In de **Sjabloonconsole** selecteert u de sjabloon.
 1. Selecteren **Inschakelen** of **Uitschakelen** op de werkbalk en nogmaals in het bevestigingsdialoogvenster.
-1. U kunt nu uw sjabloon gebruiken wanneer [een nieuwe pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page), hoewel u waarschijnlijk [de sjabloon bewerken](#editingatemplate) volgens uw vereisten.
+1. U kunt nu uw sjabloon gebruiken wanneer [een pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page), hoewel u waarschijnlijk [de sjabloon bewerken](#editingatemplate) volgens uw eigen vereisten.
 
 >[!NOTE]
 >
@@ -318,7 +314,7 @@ De volgende aspecten van een sjabloon kunnen worden bewerkt:
 
   >[!NOTE]
   >
-  >In **Oorspronkelijke inhoud** zowel in de modus als op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen die een toegankelijk bovenliggend element hebben (d.w.z. onderdelen in een lay-outcontainer) worden verwijderd.
+  >In **Oorspronkelijke inhoud** in de modus en op de resulterende pagina&#39;s kunnen alle ontgrendelde onderdelen met een toegankelijk bovenliggend element (dat wil zeggen onderdelen in een lay-outcontainer) worden verwijderd.
 
 * [Layout](#editingatemplatelayout)
 
@@ -559,7 +555,7 @@ In **Structuur** modus van de sjablooneditor:
 
   ![chlimage_1-146](assets/chlimage_1-146.png)
 
-  Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/content aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven in de modus **Structuur**, maar in de modus **Initiële content**. In de **modus Structuur** wordt alleen de containercomponent zelf weergegeven met de lijst **Toegestane componenten**.
+  Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/inhoud aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven wanneer u in **Structuur** , maar worden weergegeven in **Oorspronkelijke inhoud** -modus. In **Structuurmodus** wordt alleen de containercomponent zelf weergegeven met de lijst met **Toegestane componenten**.
 
   ![chlimage_1-147](assets/chlimage_1-147.png)
 
@@ -682,7 +678,7 @@ Met pagina-eigenschappen kunt u de vereiste clientbibliotheken definiëren met d
 
 >[!NOTE]
 >
->Terwijl de sjabloonauteur het paginabeleid voor de sjabloon kan opgeven, moet hij of zij details van de desbetreffende client-side bibliotheken ophalen van de ontwikkelaar.
+>Hoewel de sjabloonauteur het paginabeleid voor de sjabloon kan opgeven, moet hij of zij details van de desbetreffende client-side bibliotheken van de ontwikkelaar ophalen.
 
 ### Een sjabloon bewerken - Initiële pagina-eigenschappen - Auteur {#editing-a-template-initial-page-properties-author}
 

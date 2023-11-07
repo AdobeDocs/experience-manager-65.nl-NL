@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 role: Developer
 exl-id: ff087084-fb1c-43a4-ae54-cc77eb862493
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3505'
+source-wordcount: '3501'
 ht-degree: 0%
 
 ---
@@ -106,7 +106,7 @@ In het volgende diagram ziet u een voorbeeld van een inkooporderformulier. De in
 
 Forms met stroombare indelingen is gebaseerd op formulierontwerpen die zijn gemaakt in Designer. Een formulierontwerp bevat een set regels voor de indeling, presentatie en gegevensvastlegging, inclusief het berekenen van waarden op basis van de gebruikersinvoer. De regels worden toegepast wanneer gegevens in een formulier worden ingevoerd. Velden die aan een formulier worden toegevoegd, zijn subformulieren die zich binnen het formulierontwerp bevinden. In het inkooporderformulier dat in het vorige diagram wordt weergegeven, is elke regel bijvoorbeeld een subformulier. Voor informatie over het maken van een formulierontwerp dat subformulieren bevat, raadpleegt u [Een inkooporderformulier maken met een stroombare indeling](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9).
 
-### Werken met gegevenssubgroepen {#understanding-data-subgroups}
+### Gegevensubgroepen {#understanding-data-subgroups}
 
 Een XML-gegevensbron wordt gebruikt om formulieren vooraf in te vullen met vaste indelingen en stroombare indelingen. Het verschil is echter dat een XML-gegevensbron die een formulier met een stroombare indeling vooraf invult, herhalende XML-elementen bevat die worden gebruikt om vooraf subformulieren in te vullen die in het formulier worden herhaald. Deze herhaalde XML-elementen worden gegevenssubgroepen genoemd.
 
@@ -176,7 +176,7 @@ Elke gegevenssubgroep bevat vier XML-elementen die overeenkomen met deze informa
 * Aantal objecten
 * Eenheidsprijs
 
-De naam van het bovenliggende XML-element van een gegevenssubgroep moet overeenkomen met de naam van het subformulier dat zich in het formulierontwerp bevindt. In het vorige diagram ziet u bijvoorbeeld dat de naam van het bovenliggende XML-element van de gegevenssubgroep bestaat uit `detail`. Dit komt overeen met de naam van het subformulier in het formulierontwerp waarop het inkooporderformulier is gebaseerd. Als de naam van het bovenliggende XML-element van de gegevenssubgroep en het subformulier niet overeenkomen, wordt een formulier op de server niet vooraf ingevuld.
+De naam van het bovenliggende XML-element van een gegevenssubgroep moet overeenkomen met de naam van het subformulier in het formulierontwerp. In het vorige diagram ziet u bijvoorbeeld dat de naam van het bovenliggende XML-element van de gegevenssubgroep bestaat uit `detail`. Dit komt overeen met de naam van het subformulier in het formulierontwerp waarop het inkooporderformulier is gebaseerd. Als de naam van het bovenliggende XML-element van de gegevenssubgroep en het subformulier niet overeenkomen, wordt een formulier op de server niet vooraf ingevuld.
 
 Elke gegevenssubgroep moet XML-elementen bevatten die overeenkomen met de veldnamen in het subformulier. De `detail` Het subformulier in het formulierontwerp bevat de volgende velden:
 
@@ -191,7 +191,7 @@ Elke gegevenssubgroep moet XML-elementen bevatten die overeenkomen met de veldna
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -212,15 +212,15 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een XML-gegevensbron in het geheugen maken**
 
-U kunt `org.w3c.dom` klassen om een XML-gegevensbron in het geheugen te maken om een formulier vooraf in te vullen met een stroombare indeling. U moet gegevens in een XML-gegevensbron plaatsen die voldoet aan het formulier. Voor informatie over de relatie tussen een formulier met een stroombare indeling en de XML-gegevensbron raadpleegt u [Werken met gegevenssubgroepen](#understanding-data-subgroups).
+U kunt `org.w3c.dom` klassen om een XML-gegevensbron in het geheugen te maken om een formulier vooraf in te vullen met een stroombare indeling. U moet gegevens in een XML-gegevensbron plaatsen die voldoet aan het formulier. Zie voor informatie over de relatie tussen een formulier met een stroombare indeling en de XML-gegevensbron [Gegevensubgroepen](#understanding-data-subgroups).
 
 **De XML-gegevensbron converteren**
 
-Een XML-gegevensbron in het geheugen die is gemaakt met `org.w3c.dom` kunnen worden omgezet in een `com.adobe.idp.Document` object voordat u het kunt gebruiken om een formulier vooraf in te vullen. Een XML-gegevensbron in het geheugen kan worden geconverteerd met Java XML-transformatieklassen.
+Een XML-gegevensbron in het geheugen die is gemaakt met `org.w3c.dom` kunnen worden omgezet in een `com.adobe.idp.Document` -object voordat u het kunt gebruiken om een formulier vooraf in te vullen. Een XML-gegevensbron in het geheugen kan worden geconverteerd met Java XML-transformatieklassen.
 
 >[!NOTE]
 >
->Als u de WSDL van de Forms-service gebruikt om een formulier vooraf in te vullen, moet u een `org.w3c.dom.Document` in een `BLOB` object.
+>Als u de WSDL van de Forms-service gebruikt om een formulier vooraf in te vullen, moet u een `org.w3c.dom.Document` object in een `BLOB` object.
 
 **Een vooraf ingevuld formulier renderen**
 
@@ -253,25 +253,25 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Roep de `DocumentBuilder` object `newDocument` methode om een instantie te maken `org.w3c.dom.Document` object.
    * Maak het basiselement van de XML-gegevensbron door het `org.w3c.dom.Document` object `createElement` methode. Hiermee maakt u een `Element` object dat het basiselement vertegenwoordigt. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Voeg vervolgens het hoofdelement aan het document toe door het `Document` object `appendChild` en geeft het hoofdelement-object door als een argument. Deze toepassingslogica wordt in de volgende coderegels getoond:
 
-      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
+     ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
    * Maak het koptekstelement van de XML-gegevensbron door het aanroepen van `Document` object `createElement` methode. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Voeg vervolgens het koptekstelement aan het hoofdelement toe door het aanroepen van de `root` object `appendChild` en geeft u het kopelement-object door als een argument. De XML-elementen die aan het koptekstelement worden toegevoegd, komen overeen met het statische gedeelte van het formulier. De volgende coderegels tonen deze toepassingslogica:
 
-      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
+     ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Maak een onderliggend element dat tot het koptekstelement behoort door het aanroepen van de `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het koptekstelement door het koptekstelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als een argument. De volgende coderegels tonen deze toepassingslogica:
+   * Maak een onderliggend element dat tot het koptekstelement behoort door het aanroepen van de `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het koptekstelement door het koptekstelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als argument. De volgende coderegels tonen deze toepassingslogica:
 
-      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
+     ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
 
-   * Voeg alle resterende elementen aan het koptekstelement toe door de laatste substap te herhalen voor elk veld in het statische gedeelte van het formulier (in het XML-gegevensbrondiagram worden deze velden weergegeven in sectie A. (Zie [Werken met gegevenssubgroepen](#understanding-data-subgroups).)
+   * Voeg alle resterende elementen aan het koptekstelement toe door de laatste substap te herhalen voor elk veld in het statische gedeelte van het formulier (in het XML-gegevensbrondiagram worden deze velden weergegeven in sectie A. (Zie [Gegevensubgroepen](#understanding-data-subgroups).)
    * Maak het detailelement van de XML-gegevensbron door het `Document` object `createElement` methode. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Voeg vervolgens het detailelement toe aan het basiselement door het `root` object `appendChild` en geeft u het detailelementobject door als een argument. De XML-elementen die aan het detailelement worden toegevoegd, komen overeen met het dynamische gedeelte van het formulier. De volgende coderegels tonen deze toepassingslogica:
 
-      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
+     ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Maak een onderliggend element dat tot het detailelement behoort door het `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het detailelement door het detailelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als een argument. De volgende coderegels tonen deze toepassingslogica:
+   * Maak een onderliggend element dat tot het detailelement behoort door het `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het detailelement door het detailelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als argument. De volgende coderegels tonen deze toepassingslogica:
 
-      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
+     ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
    * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`, en `numUnitPrice`.
    * Herhaal de laatste twee substappen voor alle gegevensitems die worden gebruikt om het formulier vooraf in te vullen.
@@ -281,8 +281,8 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Een `javax.xml.transform.Transformer` door het object aan te roepen `javax.xml.transform.Transformer` statisch object `newInstance` methode.
    * Een `Transformer` door het object aan te roepen `TransformerFactory` object `newTransformer` methode.
    * Een `ByteArrayOutputStream` object met behulp van de constructor.
-   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en door te geven `org.w3c.dom.Document` object dat is gemaakt in stap 1.
-   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en door te geven `ByteArrayOutputStream` object.
+   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en de `org.w3c.dom.Document` object dat is gemaakt in stap 1.
+   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en de `ByteArrayOutputStream` object.
    * Java vullen `ByteArrayOutputStream` door het object aan te roepen `javax.xml.transform.Transformer` object `transform` en het doorgeven van de `javax.xml.transform.dom.DOMSource` en de `javax.xml.transform.stream.StreamResult` objecten.
    * Maak een bytearray en wijs de grootte van de array toe `ByteArrayOutputStream` object naar de bytearray.
    * De bytearray vullen door de `ByteArrayOutputStream` object `toByteArray` methode.
@@ -305,7 +305,6 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
    * Maak een bytearray die deze met de formuliergegevensstroom vult door de `InputStream` object `read` en de bytearray doorgeven als een argument.
    * De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
-
 
 **Zie ook**
 
@@ -331,24 +330,24 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Roep de `DocumentBuilder` object `newDocument` methode om een instantie te maken `org.w3c.dom.Document` object.
    * Maak het basiselement van de XML-gegevensbron door het `org.w3c.dom.Document` object `createElement` methode. Hiermee maakt u een `Element` object dat het basiselement vertegenwoordigt. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Voeg vervolgens het hoofdelement aan het document toe door het `Document` object `appendChild` en geeft het hoofdelement-object door als een argument. De volgende coderegels tonen deze toepassingslogica:
 
-      ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
+     ` Element root = (Element)document.createElement("transaction");  document.appendChild(root);`
 
    * Maak het koptekstelement van de XML-gegevensbron door het aanroepen van `Document` object `createElement` methode. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Voeg vervolgens het koptekstelement aan het hoofdelement toe door het aanroepen van de `root` object `appendChild` en geeft u het kopelement-object door als een argument. De XML-elementen die aan het koptekstelement worden toegevoegd, komen overeen met het statische gedeelte van het formulier. De volgende coderegels tonen deze toepassingslogica:
 
-      ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
+     ` Element header = (Element)document.createElement("header");  root.appendChild(header);`
 
-   * Maak een onderliggend element dat tot het koptekstelement behoort door het aanroepen van de `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het koptekstelement door het koptekstelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als een argument. Deze toepassingslogica wordt in de volgende coderegels getoond:
+   * Maak een onderliggend element dat tot het koptekstelement behoort door het aanroepen van de `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het koptekstelement door het koptekstelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als argument. Deze toepassingslogica wordt in de volgende coderegels getoond:
 
-      ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
+     ` Element poNum= (Element)document.createElement("txtPONum");  poNum.appendChild(document.createTextNode("8745236985"));  header.appendChild(LastName);`
 
-   * Voeg alle resterende elementen aan het koptekstelement toe door de laatste substap te herhalen voor elk veld in het statische gedeelte van het formulier (in het XML-gegevensbrondiagram worden deze velden weergegeven in sectie A. (Zie [Werken met gegevenssubgroepen](#understanding-data-subgroups).)
+   * Voeg alle resterende elementen aan het koptekstelement toe door de laatste substap te herhalen voor elk veld in het statische gedeelte van het formulier (in het XML-gegevensbrondiagram worden deze velden weergegeven in sectie A. (Zie [Gegevensubgroepen](#understanding-data-subgroups).)
    * Maak het detailelement van de XML-gegevensbron door het `Document` object `createElement` methode. Geef een tekenreekswaarde die de naam van het element vertegenwoordigt, door aan de `createElement` methode. De geretourneerde waarde omzetten in `Element`. Voeg vervolgens het detailelement toe aan het basiselement door het `root` object `appendChild` en geeft u het detailelementobject door als een argument. De XML-elementen die aan het detailelement worden toegevoegd, komen overeen met het dynamische gedeelte van het formulier. Deze toepassingslogica wordt in de volgende coderegels getoond:
 
-      ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
+     ` Element detail = (Element)document.createElement("detail");  root.appendChild(detail);`
 
-   * Maak een onderliggend element dat tot het detailelement behoort door het `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het detailelement door het detailelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als een argument. Deze toepassingslogica wordt in de volgende coderegels getoond:
+   * Maak een onderliggend element dat tot het detailelement behoort door het `Document` object `createElement` en geeft u een tekenreekswaarde door die de naam van het element vertegenwoordigt. De geretourneerde waarde omzetten in `Element`. Stel vervolgens een waarde in voor het onderliggende element door de bijbehorende `appendChild` en geeft u de `Document` object `createTextNode` als een argument. Geef een tekenreekswaarde op die als waarde van het onderliggende element wordt weergegeven. Voeg ten slotte het onderliggende element toe aan het detailelement door het detailelement aan te roepen `appendChild` en geeft u het onderliggende-elementobject door als argument. Deze toepassingslogica wordt in de volgende coderegels getoond:
 
-      ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
+     ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
    * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`, en `numUnitPrice`.
    * Herhaal de laatste twee substappen voor alle gegevensitems die worden gebruikt om het formulier vooraf in te vullen.
@@ -358,8 +357,8 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Een `javax.xml.transform.Transformer` door het object aan te roepen `javax.xml.transform.Transformer` statisch object `newInstance` methode.
    * Een `Transformer` door het object aan te roepen `TransformerFactory` object `newTransformer` methode.
    * Een `ByteArrayOutputStream` object met behulp van de constructor.
-   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en door te geven `org.w3c.dom.Document` object dat is gemaakt in stap 1.
-   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en door te geven `ByteArrayOutputStream` object.
+   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en de `org.w3c.dom.Document` object dat is gemaakt in stap 1.
+   * Een `javax.xml.transform.dom.DOMSource` object door de constructor ervan te gebruiken en de `ByteArrayOutputStream` object.
    * Java vullen `ByteArrayOutputStream` door het object aan te roepen `javax.xml.transform.Transformer` object `transform` en het doorgeven van de `javax.xml.transform.dom.DOMSource` en de `javax.xml.transform.stream.StreamResult` objecten.
    * Maak een bytearray en wijs de grootte van de array toe `ByteArrayOutputStream` object naar de bytearray.
    * De bytearray vullen door de `ByteArrayOutputStream` object `toByteArray` methode.
@@ -377,14 +376,14 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF formulier op.
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen).
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking zal bevatten.
 
    De `renderPDFForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
    * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
    * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `BLOB` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
    * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.

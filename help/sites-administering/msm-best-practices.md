@@ -4,9 +4,9 @@ description: Zoek naar beste praktijken die door Adobe engineering en adviesteam
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1614'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -52,11 +52,11 @@ De extra voordelen van het gebruiken van een blauwdrukconfiguratie zijn dat zij:
 
 Als er niet naar een blauwdrukconfiguratie wordt verwezen, kunnen rollouts alleen worden geïnitieerd vanuit de live kopieën zelf, waarbij inhoud van de bron wordt opgehaald.
 
-Wanneer het creëren van een nieuwe plaats met levende kopie, is het voordelig om blauwdrukconfiguraties tot stand te brengen om de beschikbaarheid van de volledige MSM eigenschapreeks te verzekeren.
+Wanneer het creëren van een plaats met levende kopie, is het voordelig om blauwdrukconfiguraties tot stand te brengen om de beschikbaarheid van de volledige MSM eigenschapreeks te verzekeren.
 
 >[!NOTE]
 >
->CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
+>CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit rond wanneer het vormen van Levend Exemplaar.
 
 ## Componenten en containersynchronisatie {#components-and-container-synchronization}
 
@@ -87,7 +87,7 @@ U ziet dat AEM twee hoofdbenaderingen heeft voor het maken van live kopieën:
 
 Houd rekening met het volgende wanneer u een site maakt:
 
-* Als u een nieuwe site wilt maken, hebt u een [blauwdrukconfiguratie](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
+* Als u een site wilt maken, hebt u een [blauwdrukconfiguratie](/help/sites-administering/msm-livecopy.md#managing-blueprint-configurations).
 * Als u wilt dat de taalpaden op een nieuwe site kunnen worden geselecteerd, moeten de overeenkomstige taalwortels in de blauwdruk (bron) aanwezig zijn.
 * Eenmaal [nieuwe site is gemaakt als een live kopie](/help/sites-administering/msm-livecopy.md#creating-a-live-copy-of-a-site-from-a-blueprint-configuration) (gebruiken **Maken** vervolgens **Site**), zijn de eerste twee niveaus van deze kopie *onbeschaamd*. Onderliggende items van de pagina behoren niet tot de live-relatie, maar de rollout neemt wel af als een live-relatie wordt gevonden die overeenkomt met de trigger.
 
@@ -108,7 +108,7 @@ MSM kan op twee manieren helpen bij het maken van meertalige websites:
       * Met MSM kunt u overname op pagina- en/of componentniveau annuleren. Zo voorkomt u bij de volgende rollout dat vertaalde inhoud (van een live kopie met nog niet-vertaalde inhoud van een blauwdruk) wordt overschreven.
       * Sommige vertalingsconnectors van derden automatiseren dit beheer van MSM-overerving.
 
-        Neem contact op met uw vertaalserviceprovider voor meer informatie.
+        Vraag uw vertaalservicebureau om meer informatie.
 
       * Een alternatieve benadering voor het maken en vertalen van taalmeesters is het gebruik van taalkopieën in combinatie met AEM kader voor vertaalintegratie buiten de doos.
 

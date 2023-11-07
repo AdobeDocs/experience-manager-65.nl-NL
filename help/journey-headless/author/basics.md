@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1692'
+source-wordcount: '1688'
 ht-degree: 1%
 
 ---
@@ -209,7 +209,7 @@ Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragm
 
 * **Paginaverwijzingen bijwerken**
 
-  Deze handeling is beschikbaar via de **...** (ellipsen). Het is niet interessant voor headless auteurs aangezien het op paginascreatie betrekking heeft.
+  Deze handeling is beschikbaar via de **...** (ellipsen) drop-down. Het is niet interessant voor headless auteurs aangezien het op paginascreatie betrekking heeft.
 
 ### Publiceren {#publishing}
 

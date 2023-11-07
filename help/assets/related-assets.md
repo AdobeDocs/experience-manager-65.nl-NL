@@ -5,9 +5,9 @@ contentOwner: AG
 role: User
 feature: Collaboration,Asset Management
 exl-id: ddb69727-74a0-4a4d-a14e-7d3bb5ceea2a
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Met deze functie kunt u een PDF- of JPG-bestand met een lage resolutie delen met
 
 ## Relatieve elementen {#relating-assets}
 
-1. Van de [!DNL Experience Manager] interface, opent u de **[!UICONTROL Properties]** pagina voor een element dat u wilt koppelen.
+1. Van de [!DNL Experience Manager] interface, open **[!UICONTROL Properties]** pagina voor een element dat u wilt koppelen.
 
    ![de eigenschappenpagina van een element openen om het element te koppelen](assets/asset-properties-relate-assets.png)
 
@@ -42,15 +42,15 @@ Met deze functie kunt u een PDF- of JPG-bestand met een lage resolutie delen met
 1. Voer een van de volgende handelingen uit:
 
    * Selecteer **[!UICONTROL Source]** in de lijst.
-   * Selecteer **[!UICONTROL Derived]** in de lijst.
-   * Selecteer **[!UICONTROL Others]** in de lijst.
+   * Als u een afgeleid bestand wilt koppelen, selecteert u **[!UICONTROL Derived]** in de lijst.
+   * Als u een relatie in twee richtingen wilt maken tussen de elementen, selecteert u **[!UICONTROL Others]** in de lijst.
 
 1. Van de **[!UICONTROL Select Asset]** , navigeert u naar de locatie van het element dat u wilt koppelen en selecteert u het.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Klik op **[!UICONTROL Confirm]**.
-1. Klikken **[!UICONTROL OK]** om het dialoogvenster te sluiten. Afhankelijk van uw keuze voor relatie in stap 3 wordt het gerelateerde actief vermeld onder een geschikte categorie in de categorie **[!UICONTROL Related]** sectie. Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het onder **[!UICONTROL Source]**.
+1. Klikken **[!UICONTROL OK]** het dialoogvenster sluiten. Afhankelijk van uw keuze voor relatie in stap 3 wordt het gerelateerde actief vermeld onder een geschikte categorie in de categorie **[!UICONTROL Related]** sectie. Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het onder **[!UICONTROL Source]**.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
@@ -60,7 +60,7 @@ Met deze functie kunt u een PDF- of JPG-bestand met een lage resolutie delen met
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Klikken **[!UICONTROL OK]** om het dialoogvenster te sluiten. De activa waarvoor u betrekkingen schrapte worden geschrapt van de lijst van verwante activa onder **[!UICONTROL Related]** sectie.
+1. Klikken **[!UICONTROL OK]** het dialoogvenster sluiten. De activa waarvoor u betrekkingen schrapte worden geschrapt van de lijst van verwante activa onder **[!UICONTROL Related]** sectie.
 
 ## Gerelateerde elementen vertalen {#translating-related-assets}
 
@@ -72,9 +72,9 @@ Als het bronbestand verwant is aan een ander element, [!DNL Experience Manager A
 
 ![De pagina met eigenschappen van elementen bevat het bronbestand van het verwante element dat moet worden opgenomen voor vertaling](assets/asset-properties-source-asset.png)
 
-*Afbeelding: Bronactiva van de gerelateerde activa die voor vertaling moeten worden opgenomen.*
+*Afbeelding: Bronelement van de gerelateerde elementen die moeten worden opgenomen voor vertaling.*
 
-1. Vertaal de elementen in de bronmap naar een doeltaal door de stappen in [Een nieuw vertaalproject maken](translation-projects.md#create-a-new-translation-project). In dit geval vertaalt u uw middelen bijvoorbeeld naar het Frans.
+1. Vertaal de elementen in de bronmap naar een doeltaal door de stappen in [Een vertaalproject maken](translation-projects.md#create-a-new-translation-project). In dit geval vertaalt u uw middelen bijvoorbeeld naar het Frans.
 
 1. Van de [!UICONTROL Projects] pagina, opent u de vertaalmap.
 

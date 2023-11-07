@@ -1,16 +1,12 @@
 ---
 title: Mobiele toepassingen ontwikkelen in AEM
-seo-title: Developing Mobile Applications in AEM
 description: Volg deze pagina om te beginnen met het ontwikkelen van mobiele toepassingen in AEM met Adobe PhoneGap Enterprise.
-seo-description: Follow this page to start developing mobile application in AEM using Adobe PhoneGap Enterprise.
-uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 exl-id: cf8ba05c-6dcd-4880-b8bf-72382118cd80
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '582'
 ht-degree: 0%
@@ -21,14 +17,14 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 AEM maakt gebruik van Adobe PhoneGap en Adobe Publishing Solutions, waarmee u zowel content-rich als op toepassingen gebaseerde mobiele toepassingen voor meerdere platforms kunt maken en beheren:
 
 * Beheer al uw bedrijven mobiele apps op één locatie.
 * Bekijk toepassingen in ontwikkelings- en testomgevingen zonder de complexiteit van inrichtingsprofielen en de extra inspanning om uw app te maken en te uploaden voor delen.
 * Gebruik de AEM ontwerpomgeving om rijke inhoud voor uw apps te maken en te beheren.
-* Gebruik de HTML5 met Adobe PhoneGap om rijke ervaringen met apparaat-inheemse mogelijkheden te creëren.
+* Gebruik de HTML5 met Adobe PhoneGap om rijke ervaringen met apparaat-inheemse mogelijkheden tot stand te brengen.
 * Introduceer HTML5-webweergaven tot nieuwe of reeds bestaande **native** toepassingen door Cordova WebViews.
 * Maak, curseer en deel rijke multimedia-inhoud via alle leveringskanalen, waaronder web, mobiel-web, mobiele-app en drukwerk.
 
@@ -56,7 +52,7 @@ De readme voor de Starter Kit Git-opslagplaats bevat een zelfstudie voor het geb
 
 ## Ontwikkelen voor IOS 9 en HTTP-hosts {#developing-for-ios-and-http-hosts}
 
-iOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-apps die op iOS 9 worden uitgevoerd. Deze kwestie verhindert verzoeken aan onveilige gastheren (zoals *http://localhost:4502*). Dit probleem zal worden opgelost met de komende vrijgave van cordova-ios (verbruikt door de CLI van Cordova), maar ondertussen zijn er twee oplossingen beschikbaar:
+IOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-apps die op iOS 9 worden uitgevoerd. Deze kwestie verhindert verzoeken aan onveilige gastheren (zoals *http://localhost:4502*). Dit probleem zal worden opgelost met de komende vrijgave van cordova-ios (verbruikt door de CLI van Cordova), maar ondertussen zijn er twee oplossingen beschikbaar:
 
 1. U kunt nu alle iOS 8-simulators zonder problemen gebruiken.
 1. Als u iOS 9 moet gebruiken, kunt u de apps -Info.plist gebruiken (deze vindt u na uitvoering `cordova platform add ios` in &quot;&lt;app root=&quot;&quot;>/platforms/ios/&lt;app name=&quot;&quot;>/&lt;app name=&quot;&quot;>-Info.plist&quot;) kan handmatig worden bewerkt en de volgende eigenschap bevatten:
@@ -73,7 +69,7 @@ iOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-app
 
 >[!NOTE]
 >
->Voor meer informatie over &quot;de Veiligheid van het Vervoer van de App&quot;, zie de volgende sectie van [Apple iOS9 prereleasedocumenten](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) en [Stapel overloop, discussie](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
+>Voor meer informatie over &quot;de Veiligheid van het Vervoer van de App&quot;, zie de volgende sectie van [Apple iOS9-prereleasedocumenten](https://developer.apple.com/library/prerelease/ios/releasenotes/General/WhatsNewIniOS/Articles/iOS9.html#//apple_ref/doc/uid/TP40016198-SW14) en dit [Stapel overloop, discussie](https://stackoverflow.com/questions/30751053/ios9-ats-what-about-html5-based-apps/).
 
 ## Mobiele toepassingen ontwikkelen in AEM {#developing-mobile-applications-in-aem-1}
 
@@ -87,7 +83,7 @@ iOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-app
 * [App-prestaties bijhouden met Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
 * [Adobe Analytics toevoegen aan uw mobiele toepassing](/help/mobile/phonegap-add-analytics-to-apps.md)
 * [Pushmeldingen](/help/mobile/phonegap-push-notifications.md)
-* [AEM Mobile-inhoud aanpassen](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+* [Aanpassing van AEM Mobile-content](/help/mobile/phonegap-aem-mobile-content-personalization.md)
 * [De anatomie van een app](/help/mobile/phonegap-apps-arch.md)
 * [Is uw hybride app gereed voor AEM Mobile?](/help/mobile/phonegap-adding-content-to-imported-app.md)
 

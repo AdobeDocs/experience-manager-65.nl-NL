@@ -4,9 +4,9 @@ description: Leer hoe u inhoud kunt identificeren die in Adobe Experience Manage
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 8ca7bbcc-413a-49a8-a836-7083a9cadda1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1153'
+source-wordcount: '1152'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ Vanaf hier kunt u **Context toevoegen**. Hiermee kunt u een pad toevoegen.
 
 ![chlimage_1-57](assets/chlimage_1-57.jpeg)
 
-Vervolgens moet u de context selecteren en vervolgens op **Bewerken**. Hiermee opent u de Editor voor de vertaalregels.
+Vervolgens moet u de context selecteren en vervolgens op **Bewerken**. Hiermee opent u de Editor voor vertaalregels.
 
 ![chlimage_1-58](assets/chlimage_1-58.jpeg)
 

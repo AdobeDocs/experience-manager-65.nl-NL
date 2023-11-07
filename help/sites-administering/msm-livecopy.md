@@ -3,9 +3,9 @@ title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert in Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4233'
+source-wordcount: '4226'
 ht-degree: 0%
 
 ---
@@ -123,8 +123,8 @@ Een live kopie maken:
    * Geselecteerd: alleen een live kopie van de geselecteerde pagina maken (oppervlakkige live kopie)
    * Niet geselecteerd: maak een live kopie die alle onderliggende elementen van de geselecteerde pagina bevat (diepe live kopie)
 
-1. (Optioneel) Als u een of meer rollout-configuraties wilt opgeven die voor de livecopy moeten worden gebruikt, gebruikt u de opdracht **Rollout Configs** vervolgkeuzelijst om ze te selecteren. Geselecteerde configuraties worden weergegeven onder de keuzelijst.
-1. Klikken of tikken **Maken**. Er wordt een bevestigingsbericht weergegeven. Hier kunt u kiezen uit **Openen** of **Gereed**.
+1. (Optioneel) Als u een of meer rollout-configuraties wilt opgeven die voor de livecopy moeten worden gebruikt, gebruikt u de opdracht **Rollout Configs** vervolgkeuzelijst om ze te selecteren. Geselecteerde configuraties worden onder de keuzelijst weergegeven.
+1. Klikken of tikken **Maken**. Er wordt een bevestigingsbericht weergegeven. Hier kunt u een van de volgende opties selecteren **Openen** of **Gereed**.
 
 ### Een live kopie van een site maken op basis van een blauwdrukconfiguratie {#creating-a-live-copy-of-a-site-from-a-blueprint-configuration}
 
@@ -325,7 +325,7 @@ Als u inhoud voor live kopieën wilt wijzigen, kunt u:
 
 >[!NOTE]
 >
->Als u handmatig een nieuwe pagina maakt in de live kopie, is deze lokaal bij de live kopie, wat betekent dat er geen bijbehorende bronpagina aan is gekoppeld.
+>Als u handmatig een pagina maakt in de live kopie, is deze lokaal bij de live kopie, wat betekent dat er geen bijbehorende bronpagina aan is gekoppeld.
 >
 >De beste praktijken om een lokale pagina tot stand te brengen die deel van de verhouding uitmaakt zouden het in de bron moeten creëren en (diepe) rollout doen. Hierdoor wordt de pagina lokaal gemaakt als live kopieën.
 
@@ -418,7 +418,7 @@ Als deze optie is geselecteerd, wordt het dialoogvenster weergegeven. U kunt des
 
 De [Handeling voor hervatten is ook beschikbaar via het Live Copy-overzicht](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview), wanneer u een pagina voor live kopiëren hebt geselecteerd.
 
-1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een pagina van Actieve kopie die is opgeschort; wordt weergegeven als **OVERERVING GEANNULEERD**.
+1. Open de [Overzicht van live kopiëren](/help/sites-administering/msm-livecopy-overview.md#using-the-live-copy-overview) en selecteer een Live Copy-pagina die is opgeschort; deze wordt weergegeven als **OVERERVING GEANNULEERD**.
 1. Selecteren **Hervatten** op de werkbalk.
 1. Geef aan of u de pagina wilt synchroniseren nadat u de overerving hebt omgekeerd. Bevestig vervolgens de optie **Hervatten** in de **Live kopie hervatten** in.
 
@@ -624,7 +624,7 @@ Er zijn implicaties voor waar binnen de boom die u gebruikt **Loskoppelen**:
 
       * Dit komt omdat MSM hen als manueel gecreëerde pagina&#39;s beschouwt die een conflict veroorzaken aangezien zij de zelfde naam zoals de levenspagina&#39;s hebben het probeert te creëren.
 
-   1. Maak een nieuwe (livecopy-)pagina met de oorspronkelijke naam, die de wijzigingen bevat die zijn aangebracht tijdens de rollout.
+   1. Maak een pagina (livecopy) met de oorspronkelijke naam, die de wijzigingen bevat die u tijdens de rollout hebt aangebracht.
 
   >[!NOTE]
   >

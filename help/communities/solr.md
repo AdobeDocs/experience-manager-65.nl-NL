@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: e228f1db-91ea-4ec3-86da-06d89d74bc72
 role: Admin
 exl-id: a9fc9c06-b9e6-4a5e-ab5e-0930ecd4b51b
-source-git-commit: ce6d24e53a27b64a5d0a9db2e4b6672bd77cf9ec
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1424'
+source-wordcount: '1422'
 ht-degree: 0%
 
 ---
 
 # Solr Configuratie voor SRP {#solr-configuration-for-srp}
 
-## Solr. voor AEM Platform {#solr-for-aem-platform}
+## Solr voor AEM Platform {#solr-for-aem-platform}
 
 An [Apache Solr](https://solr.apache.org/) de installatie kan worden gedeeld tussen de [knooppuntopslag](../../help/sites-deploying/data-store-config.md) (eikenhout) en [gemeenschappelijk archief](working-with-srp.md) (SRP) door verschillende verzamelingen te gebruiken.
 
@@ -38,7 +38,7 @@ Download en installeer Apache Solr:
 * Er is geen service nodig
 * Keuze van uitvoeringsmodi:
 
-   * Standalone modus
+   * Stand-alone modus
    * [SolrCloud-modus](#solrcloud-mode) (aanbevolen voor productieomgevingen)
 
 * Keuze van meertalig zoeken (MLS)
@@ -67,7 +67,7 @@ JVM_OPTS="-server -Xmx2048m -XX:MaxPermSize=768M -XX:+UseConcMarkSweepGC -XX:+CM
 
 Wanneer de installatie van MLS wordt uitgevoerd in de SolrCloud-modus, zijn het gebruik en de kennis van de volgende opdrachten voor de SolrCloud-instelling vereist.
 
-#### 1. Een configuratie uploaden naar ZooKeeper {#upload-a-configuration-to-zookeeper}
+#### 1. Upload een configuratie aan ZooKeeper {#upload-a-configuration-to-zookeeper}
 
 Referentie:
 [https://solr.apache.org/guide/6_6/command-line-utilities.html](https://solr.apache.org/guide/6_6/command-line-utilities.html)
@@ -93,7 +93,7 @@ Gebruik:
 -s *aantal schepen* \
 -rf *aantal replica&#39;s*
 
-#### 3. Een verzameling koppelen aan een configuratieset {#link-a-collection-to-a-configuration-set}
+#### 3. Koppel een verzameling aan een configuratieset {#link-a-collection-to-a-configuration-set}
 
 Koppel een verzameling aan een configuratie die al is geüpload naar ZooKeeper.
 
@@ -110,20 +110,20 @@ Gebruik: sh./scripts/cloud-scripts/zkcli.sh \
 
 Meertalig zoeken (MLS) voor AEM Communities is ontwikkeld voor het Solr-platform, zodat alle ondersteunde talen, waaronder het Engels, beter kunnen worden doorzocht.
 
-MLS voor AEM Communities is beschikbaar als Standaard MLS of Geavanceerde MLS. Standaard MLS bevat alleen Solr-configuratie-instellingen en sluit insteekmodules of bronbestanden uit. Geavanceerde MLS is de uitgebreidere oplossing en bevat zowel de configuratie-instellingen voor Solr als plug-ins en bijbehorende bronnen
+MLS voor AEM Communities is beschikbaar als Standaard MLS of Geavanceerde MLS. Standaard MLS bevat alleen Solr-configuratie-instellingen en sluit insteekmodules of bronbestanden uit. Geavanceerde MLS is de uitgebreidere oplossing en bevat de configuratie-instellingen en plug-ins van Solr en verwante bronnen
 
 Standaard MLS bevat verbeteringen voor het zoeken naar inhoud voor de volgende talen:
 
 * Engels: Verbeterde stemmer voor het zoeken naar overeenkomsten met woordafleidingen.
-* Japans: Verbeterde Japanse tokenisatie voor tekens met halve breedte.
+* Japans: verbeterde tokenisatie voor tekens met halve breedte.
 
 Geavanceerde MLS bevat verbeteringen voor het zoeken naar inhoud voor de volgende talen:
 
-* Engels: Vervangen stemmer met citroenzuur.
-* Duits: Toegevoegde decompounder.
-* Frans: Toegevoegde uitzichtsbehandeling.
-* Chinees (vereenvoudigd): Een slimmere tokenizer toegevoegd.
-* Diverse talen: Er is een stemmer, een stopwoordlijst en een normalisatie toegevoegd.
+* Engels: Replaced stemmer with lemmatizer.
+* Duits: toegevoegde decompounder.
+* Frans: Toegevoegde uitzichtafhandeling.
+* Chinees (vereenvoudigd): er is een intelligentere tokenizer toegevoegd.
+* Verschillende talen: er is een stemmer toegevoegd, de woordenlijst wordt gestopt en er wordt een normalisatie toegepast.
 
 In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 
@@ -133,7 +133,7 @@ In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 | Chinees (vereenvoudigd) | Haitian Creole | Portugees |
 | Chinees (traditioneel) | Hebreeuws | Roemeens |
 | Tsjechisch | Hongaars | Russisch |
-| Deens | Indonesisch | Slowaaks |
+| Deens | Indonesische | Slowaaks |
 | Nederlands | Italiaans | Sloveens |
 | Engels | Japans | Spaans |
 | Ests | Koreaans | Zweeds |
@@ -142,7 +142,7 @@ In alle talen worden de volgende 33 talen ondersteund in Advanced MLS.
 
 #### Vergelijking van AEM 6.1 Solr onderzoek, Standaard MLS, en Geavanceerde MLS {#comparison-of-aem-solr-search-standard-mls-and-advanced-mls}
 
-**Opmerking**: AEM 6.1 verwijst naar AEM 6.1 KP3 en lager.
+**Opmerking**: AEM 6.1 verwijst naar AEM 6.1 KP3 en eerder.
 
 ![compare-solr-mls](assets/compare-solr-mls.png)
 
@@ -185,10 +185,10 @@ De standaard MLS-bestanden worden opgeslagen in de AEM opslagplaats.
 
    1. Kopieer de inhoud van de bestaande Solr configuratiemap naar *new-config-dir*
 
-      * Voor Solr4: kopiëren `solr-install-dir/example/solr/collection1/conf/`
-      * Voor Solr5: kopiëren `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. Het gedownloade bestand kopiëren **schema.xml** en **solrconfig.xml** tot *new-config-dir* om bestaande bestanden te overschrijven.
+      * Voor Solr4: kopie `solr-install-dir/example/solr/collection1/conf/`
+      * Voor Solr5: kopie `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
 
+   1. Het gedownloade bestand kopiëren **schema.xml** en **solrconfig.xml** tot *new-config-dir* bestaande bestanden overschrijven.
 
 1. [De nieuwe configuratie uploaden](#upload-a-configuration-to-zookeeper) naar ZooKeeper.
 1. [Een verzameling maken](#create-a-collection) het specificeren van de noodzakelijke parameters, zoals aantal plaatsen, aantal replica&#39;s, en configuratienaam.
@@ -244,15 +244,15 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
 
       * zoals `solr-install-dir/myconfig/`
       * Submappen maken `stopwords/` en `lang/`
+
    1. Kopieer de inhoud van de bestaande Solr config-map naar *new-config-dir*
 
-      * Voor Solr4: Kopiëren `solr-install-dir/example/solr/collection1/conf/`
-      * Voor Solr5: Kopiëren `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
-   1. Het geëxtraheerde bestand kopiëren **schema.xml** en **solrconfig.xml** tot *new-config-dir* om bestaande bestanden te overschrijven.
-   1. Voor Solr5: Kopiëren `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` tot `new-config-dir/lang/`
-   1. Het geëxtraheerde bestand kopiëren **stopwords/** map naar *new-config-dir* leiden tot `new-config-dir/stopwords/*.txt`
+      * Voor Solr4: Kopie `solr-install-dir/example/solr/collection1/conf/`
+      * Voor Solr5: Kopie `solr-install-dir/server/solr/configsets/data_driven_schema_configs/`
 
-
+   1. Het geëxtraheerde bestand kopiëren **schema.xml** en **solrconfig.xml** tot *new-config-dir* bestaande bestanden overschrijven.
+   1. Voor Solr5: Kopie `solr_install_dir/server/solr/configsets/sample_techproducts_configs/conf/lang/*.txt` tot `new-config-dir/lang/`
+   1. Het geëxtraheerde bestand kopiëren **stopwords/** map naar *new-config-dir* resulterend in `new-config-dir/stopwords/*.txt`
 
 1. [De nieuwe configuratie uploaden](#upload-a-configuration-to-zookeeper) naar ZooKeeper
 1. Nieuw kopiëren **profielen/** map ...
@@ -262,7 +262,7 @@ Installatie-instructies - let op de weinige verschillen voor Solr4 en Solr5:
 
 1. Een **lib/** in de map solr-home (bevat solr.xml) van elk knooppunt in SolrCloud. Kopieer potten van de volgende locaties naar de nieuwe lib/-map op elk knooppunt:
 
-   * **extra-libs/** geëxtraheerd uit het geavanceerde MLS-pakket
+   * **extra-libs/** uit het geavanceerde MLS-pakket
    * *solr-install-dir/contrib/extractie/lib/*.jar
    * *solr-install-dir/dist/solr-cell*.jar
    * *solr-install-dir/contrib/clustering/lib/*.jar
@@ -296,19 +296,19 @@ waarbij:
 
    * -d solrhome
 
-      Solr-installatiemap
+     Solr-installatiemap
 
    * -c verzamelingspad
 
-      Verzamelingspad in solo
+     Verzamelingspad in solo
 
    * —help
 
-      Opties voor de opdrachtregel Afdrukken
+     Opties voor de opdrachtregel Afdrukken
 
    * -v [4|5]
 
-      Versie instellen voor solr
+     Versie instellen voor solr
 
 * Voorbeeld voor Solr 4.10.4:
 
@@ -326,8 +326,8 @@ waarbij:
 
 De **solrconfig.xml** het dossier controleert automatisch interval en onderzoekszicht begaan en vereist het testen en het stemmen.
 
-`<autoCommit>`: Door gebrek, wordt het interval AutoCommit, dat hard aan stabiele opslag is begaan, geplaatst aan 15 seconden. De zoekzichtbaarheid wordt standaard ingesteld op het gebruik van de vooraf vastgelegde index.
+`<autoCommit>`: Standaard wordt het AutoCommit-interval, dat een harde vastlegging aan stabiele opslag is, ingesteld op 15 seconden. De zoekzichtbaarheid wordt standaard ingesteld op het gebruik van de index die voorafgaat aan vastleggen.
 
 Als u een zoekopdracht wilt wijzigen en een index wilt gebruiken die is bijgewerkt om wijzigingen door te voeren die het gevolg zijn van de bewerking, wijzigt u de inhoud `openSearcher` naar waar.
 
-`autoSoftCommit`: Een &#39;soft&#39; commit zorgt ervoor dat de veranderingen zichtbaar zijn (de index wordt bijgewerkt), maar verzekert niet dat de veranderingen aan stabiele opslag (hard begaan) worden gesynchroniseerd. Het resultaat is een verbetering van de prestaties. Standaard, `autoSoftCommit` is uitgeschakeld met de bevat `maxTime` ingesteld op -1.
+`autoSoftCommit`: Een &#39;soft&#39; commit zorgt ervoor dat de wijzigingen zichtbaar zijn (de index wordt bijgewerkt), maar zorgt er niet voor dat de wijzigingen worden gesynchroniseerd met een stabiele opslag (hard commit). Het resultaat is een verbetering van de prestaties. Standaard, `autoSoftCommit` is uitgeschakeld met de bevat `maxTime` ingesteld op -1.

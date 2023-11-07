@@ -1,19 +1,15 @@
 ---
 title: SPA
-seo-title: SPA Page Component
 description: In een SPA verstrekt de paginacomponent niet de HTML elementen van zijn kindcomponenten, maar in plaats daarvan delegeert dit aan het kader van de SPA. In dit document wordt uitgelegd hoe de paginacomponent van een SPA hierdoor uniek wordt.
-seo-description: In an SPA the page component doesn't provide the HTML elements of its child components, but instead delegates this to the SPA framework. This document explains how this makes the page component of an SPA unique.
-uuid: d444527a-e883-4873-a55b-c2bc140d8d7f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 6329301c-1a26-4a46-99ae-1b7cc15b08be
 docset: aem65
 exl-id: 0e9e2350-67ef-45c3-991f-6c1cd98fe93d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '732'
+source-wordcount: '730'
 ht-degree: 0%
 
 ---
@@ -32,12 +28,12 @@ De paginacomponent voor een SPA verstrekt niet de HTML elementen van zijn kindco
 
 ## Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. De SPA moet `PageModelManager` wanneer deze wordt geïnitialiseerd om het eerste paginamodel op te halen en zich te registreren voor modelupdates, meestal gemaakt wanneer de auteur de pagina bewerkt via de Pagina-editor. De `PageModelManager` is toegankelijk via SPA project als een npm-pakket. Als tolk tussen AEM en de SPA `PageModelManager` is bedoeld om de SPA te vergezellen.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) -module. De SPA moet met de `PageModelManager` wanneer deze wordt geïnitialiseerd om het eerste paginamodel op te halen en zich te registreren voor modelupdates, die meestal worden gemaakt wanneer de auteur de pagina bewerkt via de Pagina-editor. De `PageModelManager` is toegankelijk via SPA project als een npm-pakket. Als tolk tussen AEM en de SPA `PageModelManager` is bedoeld om de SPA te vergezellen.
 
 Als u het schrijven van de pagina wilt toestaan, wordt een clientbibliotheek met de naam `cq.authoring.pagemodel.messaging` moet worden toegevoegd om een communicatiekanaal tussen de SPA en de pagina-editor te bieden. Als de SPA paginacomponent overerft van de pagina-component wcm/core, zijn er de volgende opties om de `cq.authoring.pagemodel.messaging` beschikbare categorie voor clientbibliotheek:
 
 * Als de sjabloon bewerkbaar is, voegt u de categorie van de clientbibliotheek toe aan het paginabeleid.
-* Voeg de categorie van de cliëntbibliotheek toe gebruikend `customfooterlibs.html` van de paginacomponent.
+* Voeg de categorie van de cliëntbibliotheek toe gebruikend `customfooterlibs.html` van de pagina-component.
 
 Vergeet niet de opname van de `cq.authoring.pagemodel.messaging` in de context van de pagina-editor.
 
@@ -83,17 +79,17 @@ De eigenschappen van de meta-bron die de SPA inhoud beschrijven:
 ## Eigenschappen van meta {#meta-properties}
 
 * `cq:wcmmode`: WCM-modus van de editors (bijvoorbeeld pagina, sjabloon)
-* `cq:pagemodel_root_url`: URL van het basismodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. De ` [PageModelManager](/help/sites-developing/spa-page-component.md)` vervolgens wordt het oorspronkelijke toepassingsmodel systematisch opnieuw samengesteld zodat de toepassing wordt ingevoerd vanaf het beginpunt van de toepassing.
+* `cq:pagemodel_root_url`: URL van het hoofdmodel van de app. Cruciaal bij directe toegang tot een onderliggende pagina, aangezien het onderliggende paginamodel een fragment is van het basismodel van de app. De ` [PageModelManager](/help/sites-developing/spa-page-component.md)` vervolgens wordt het oorspronkelijke toepassingsmodel systematisch opnieuw samengesteld zodat de toepassing wordt ingevoerd vanaf het beginpunt van de toepassing.
 
-* `cq:pagemodel_router`: Schakel de ` [ModelRouter](/help/sites-developing/spa-routing.md)` van de `PageModelManager` bibliotheek
+* `cq:pagemodel_router`: Schakel het dialoogvenster ` [ModelRouter](/help/sites-developing/spa-routing.md)` van de `PageModelManager` bibliotheek
 
-* `cq:pagemodel_route_filters`: Door komma&#39;s gescheiden lijsten of reguliere expressies om routes te bieden ` [ModelRouter](/help/sites-developing/spa-routing.md)` moet worden genegeerd.
+* `cq:pagemodel_route_filters`: Door komma&#39;s gescheiden lijst of reguliere expressies om routes te bieden voor de ` [ModelRouter](/help/sites-developing/spa-routing.md)` moet worden genegeerd.
 
 >[!CAUTION]
 >
->Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
+>Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Niet gebruiken voor projectwerk.
 >
->Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die ondersteuning biedt voor SPA projecten die gebruikmaken van React of Angular en de SPA SDK als hefboom gebruikt. Alle SPA projecten op AEM moeten gebaseerd zijn op het Maven Archetype voor SPA Starter Kit.
+>Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html), die ondersteuning biedt voor SPA projecten die gebruikmaken van React of Angular en de SPA SDK gebruiken. Alle SPA projecten op AEM moeten gebaseerd zijn op het Maven Archetype voor SPA Starter Kit.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 
@@ -103,7 +99,7 @@ De synchronisatie van de overlays wordt gegarandeerd door dezelfde Mutation Obse
 
 Wanneer de verpletterende mogelijkheden worden toegelaten, is de veronderstelling dat de uitvoer JSON van de SPA de verschillende routes van de toepassing dankzij de uitvoer JSON van de AEM navigatiecomponent bevat. De JSON-uitvoer van de AEM navigatiecomponent kan via de volgende twee eigenschappen worden geconfigureerd in het inhoudsbeleid voor SPA basispagina:
 
-* `structureDepth`: Aantal dat overeenkomt met de diepte van de geëxporteerde structuur
+* `structureDepth`: Nummer dat overeenkomt met de diepte van de geëxporteerde structuur
 * `structurePatterns`: Regex van array van regexes die overeenkomt met de pagina die geëxporteerd moet worden
 
 Dit kan worden weergegeven in de inhoud van het SPA monster in `/conf/we-retail-journal/react/settings/wcm/policies/we-retail-journal/react/components/structure/page/root`.

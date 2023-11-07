@@ -11,9 +11,9 @@ discoiquuid: ba70921e-db7e-43f6-902c-1065d3b13aef
 docset: aem65
 feature: Adaptive Forms
 exl-id: 935b734c-6fb1-45e8-8515-e98c8b85286c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3100'
+source-wordcount: '3098'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ De interface voor het optimaliseren van aanrakingen voor het ontwerpen van adapt
 * Standaardformuliercomponenten
 * Geïntegreerde opslagplaats voor middelen
 
-Wanneer u een nieuw formulier maakt of een bestaand adaptief formulier bewerkt, gebruikt u de volgende interface-elementen:
+Wanneer u een bestaand adaptief formulier maakt of bewerkt, gebruikt u de volgende UI-elementen:
 
 * [Zijbalk](#sidebar)
 * [Pagina, werkbalk](#page-toolbar)
@@ -154,7 +154,7 @@ Hiermee kunt u formuliermodelelementen naar het aangepaste formulier slepen en n
   </tr>
   <tr>
    <td>E-mail</td>
-   <td><p>Hiermee voegt u een veld toe waarin u het e-mailadres kunt vastleggen. De component Email valideert standaard e-mailadressen met de volgende reguliere expressie.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
+   <td><p>Hiermee voegt u een veld toe waarin u het e-mailadres kunt vastleggen. De component Email valideert standaard e-mailadressen met de volgende reguliere expressie.</p> <p><code>^[a-zA-Z0-9.!#$%&amp;'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:.[a-zA-Z0-9-]+)*$</code></p> </td>
   </tr>
   <tr>
    <td>Bestandsbijlage</td>

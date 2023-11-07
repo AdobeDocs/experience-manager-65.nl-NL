@@ -1,7 +1,7 @@
 ---
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '743'
 ht-degree: 0%
 
 ---
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ## Documentatiefilosofie
 
-Adobe weet dat Adobe Experience Manager-gebruikers in een zeer concurrerende omgeving werken en ernaar streven om digitale ervaringen te creëren die hen onderscheiden van hun concurrenten. Daarom is het van essentieel belang dat wanneer Adobe geavanceerde nieuwe hulpmiddelen in AEM levert, deze hulpmiddelen met nauwkeurige en duidelijke documentatie worden aangevuld om de klant toe te staan om hun AEM investering onmiddellijk te gebruiken en ROI te maximaliseren.
+De Adobe weet dat Adobe Experience Manager-gebruikers in een zeer concurrerende omgeving werken en ernaar streven om digitale ervaringen te creëren die hen onderscheiden van hun concurrenten. Daarom is het van essentieel belang dat wanneer de Adobe geavanceerde nieuwe hulpmiddelen in AEM levert, deze hulpmiddelen met nauwkeurige en duidelijke documentatie worden aangevuld om de klant toe te staan om hun AEM investering onmiddellijk te gebruiken en ROI te maximaliseren.
 
-Het doel van de AEM is zo snel mogelijk documentatie in de handen van AEM gebruikers te plaatsen. Daarom geeft Adobe prioriteit aan nauwkeurige, bruikbare documentatie en streeft het ernaar deze voortdurend bij te werken en te verbeteren.
+Het doel van de AEM is zo snel mogelijk documentatie in de handen van AEM gebruikers te plaatsen. Daarom geeft de Adobe prioriteit aan nauwkeurige, bruikbare documentatie en streeft zij ernaar deze voortdurend bij te werken en te verbeteren.
 
 ## Documentatiebijdragen
 
@@ -19,11 +19,11 @@ Met het oog op de voortdurende verbetering van AEM documentatie is de hele gemee
 
 ## Documentatienormen
 
-Hoewel Adobe de bijdragen aan onze documentatie toejuicht, moet elke bijdrage aan de AEM documentatie, in de vorm van een pull-verzoek of een kwestie, in overeenstemming zijn met onze bijdrage- en documentatienormen.
+Hoewel de Adobe de bijdragen aan onze documentatie toejuicht, moet elke bijdrage aan de AEM documentatie, in de vorm van een pull-verzoek of een kwestie, in overeenstemming zijn met onze bijdrage- en documentatienormen.
 
 Bijdragen die niet aan deze normen voldoen, kunnen worden afgewezen.
 
-### Standaard documentgebruik.
+### Standaardinstellingen voor documenten.
 
 AEM documentatie behandelt standaardgebruikscenario&#39;s. Gebruiksgevallen die buiten het bereik van de standaardinstallatie en het standaardgebruik van het product vallen, maken geen deel uit van AEM documentatie.
 
@@ -37,9 +37,9 @@ De uitzonderingen op deze regel zijn op de versienota&#39;s van toepassing waar 
 
 Alle ideeën die u eventueel nodig hebt om AEM documentatie te verbeteren, zijn welkom als bijdragen. Opmerkingen, problemen en intrekkingsverzoeken zijn echter bedoeld voor *bijdragen* alleen. Ze zijn niet bedoeld om u te helpen uw vragen te beantwoorden over het gebruik van AEM, het implementeren van uw AEM-project of het oplossen van technische problemen.
 
-Eventuele vragen over het gebruik van AEM of technische fouten moeten via het normale supportproces via het [Experience Manager Support-portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) of in de [Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
+Eventuele vragen over het gebruik van AEM of technische fouten moeten via het normale supportproces via het [Experience Manager Support Portal](https://experienceleague.adobe.com/?support-solution=Experience+Manager#support) of in de [Experience Manager](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/ct-p/adobe-experience-manager-community).
 
-***De bijdragen van AEM documentatie zijn geen vervanging voor de klantenondersteuning van Adobe*** en dergelijke bijdragen die antwoorden op ondersteunende vragen willen, zullen worden afgewezen.
+***AEM bijdragen in de documentatie zijn geen vervanging voor de klantenondersteuning van de Adobe*** en dergelijke bijdragen die antwoorden op ondersteunende vragen willen, zullen worden afgewezen.
 
 ### Bijdragen moeten duidelijk verwijzen naar betrokken documentatiepagina&#39;s.
 
@@ -75,11 +75,11 @@ Alle lezers van AEM documentatie zijn wereldwijd en kunnen niet verwachten dat z
 | Bestandsnaam, pad, gebruikersinvoer, parameterwaarden | `monospaced` |
 | Code, opdrachtregel | ```Code Block``` |
 
-### Schermafbeeldingen
+### Screenshots
 
-Schermafbeeldingen moeten op een oordeelkundige manier worden gebruikt en alleen wanneer een tekstbeschrijving niet volstaat.
+Schermafbeeldingen moeten met de nodige voorzichtigheid worden gebruikt en alleen wanneer een tekstbeschrijving niet volstaat.
 
-Markeertekens of andere annotaties in schermafbeeldingen (zoals rode kaders, pijlen of tekst) mogen niet worden gebruikt. Op deze manier zijn de schermafbeeldingen gemakkelijker te hergebruiken of in gelokaliseerde versies van de documentatie te herhalen.
+Gebruik geen markeringen of andere annotaties in schermafbeeldingen (zoals rode kaders, pijlen of tekst). Op deze manier zijn de schermafbeeldingen gemakkelijker te hergebruiken of in gelokaliseerde versies van de documentatie te herhalen.
 
 ### Versiespecifieke verwijzingen
 
@@ -89,4 +89,4 @@ Probeer zo veel mogelijk directe verwijzingen naar een specifieke versie in de d
 
 Het product moet altijd worden aangeduid met de volledige naam **Adobe Experience Manager** voor het eerst in een artikel en kan daarna worden verwezen naar **AEM**.
 
-De software van de dag, de Dag, CQ, en CRX zouden niet moeten worden gebruikt behalve waar onvermijdbaar zoals in klassennamen of verwijzend naar de geschiedenis van AEM.
+Gebruik geen Day, Day Software, CQ en CRX, tenzij dit onvermijdelijk is, bijvoorbeeld in klassenamen of met verwijzing naar de geschiedenis van AEM.

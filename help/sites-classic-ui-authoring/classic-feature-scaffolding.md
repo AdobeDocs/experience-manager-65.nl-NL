@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 58e61302-cfb4-4a3d-98d4-3c92baa2ad42
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1427'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Het lichaam van het substraat is de vorm. Wanneer een gebruiker een pagina wil m
 
 ### Een stapel maken {#creating-a-scaffold}
 
-Als u een nieuw subformulier wilt maken, gaat u naar de **Gereedschappen** console, dan **Standaardpaginascheiding** en maakt u een pagina. Er is één paginasjabloontype beschikbaar, namelijk *Basisstructuursjabloon.*
+Als u een subpagina wilt maken, gaat u naar de **Gereedschappen** console, dan **Standaardpaginascheiding** en maakt u een pagina. Er is één paginasjabloontype beschikbaar, namelijk *Basisstructuursjabloon.*
 
 Ga naar de **Pagina-eigenschappen** van de nieuwe pagina en stel de *Titeltekst*, *Beschrijving*, *Doelsjabloon*, en *Doelpad*, zoals hierboven beschreven.
 

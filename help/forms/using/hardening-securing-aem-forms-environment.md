@@ -8,9 +8,9 @@ topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
 role: Admin
 exl-id: 5da3cc59-4243-4098-b1e0-438304fcd0c5
-source-git-commit: 603518dbe3d842a08900ac40651919c55392b573
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1443'
+source-wordcount: '1440'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Het artikel is bedoeld voor consultants, beveiligingsspecialisten, systeemarchit
 * IT en de ingenieurs van verrichtingen die veilige Webtoepassingen en servers in hun eigen of klantenorganisaties moeten opstellen.
 * Architecten en planners die verantwoordelijk zijn voor de planning van de architectuurinspanningen voor de klanten in hun organisaties.
 * IT-beveiligingsspecialisten die zich richten op het bieden van beveiliging op alle platforms binnen hun organisatie.
-* Consultants van Adobe en partners die gedetailleerde bronnen voor klanten en partners nodig hebben.
+* Adviseurs van Adobe en partners die gedetailleerde middelen voor klanten en partners vereisen.
 
 De volgende afbeelding toont componenten en protocollen die worden gebruikt in een standaard AEM Forms-implementatie, inclusief de juiste firewalltopologie:
 
@@ -123,7 +123,7 @@ U kunt de interne firewall vormen om bepaalde componenten van AEM Forms (bijvoor
 
 #### Machtigingen van de bewaarplaats van de opstelling en toegangsbeheerlijsten (ACLs) {#setup-repository-permissions-and-access-control-lists-acls}
 
-Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iedereen. Alleen-lezen toegang is ingeschakeld voor alle elementen. Het is vereist anonieme toegang toe te laten. Als u de formulierweergave wilt beperken en alleen voor geverifieerde gebruikers toegang wilt geven, gebruikt u een algemene groep om alleen geverifieerde gebruikers alleen-lezentoegang te geven tot de middelen die beschikbaar zijn op de publicatieknooppunten. De volgende locaties/mappen bevatten formulierelementen die verharding vereisen (alleen-lezen toegang voor geverifieerde gebruikers):
+Standaard zijn de middelen op de publicatieknooppunten toegankelijk voor iedereen. Alleen-lezen toegang is ingeschakeld voor alle elementen. Het is vereist anonieme toegang toe te laten. Als u de formulierweergave wilt beperken en alleen voor geverifieerde gebruikers toegang wilt geven, gebruikt u een algemene groep om alleen geverifieerde gebruikers alleen-lezentoegang te geven tot de elementen die beschikbaar zijn op de publicatieknooppunten. De volgende locaties/mappen bevatten formulierelementen die verharding vereisen (alleen-lezen toegang voor geverifieerde gebruikers):
 
 * /content/&amp;ast;
 * /etc.clientlibs/fd/&amp;ast;
@@ -145,7 +145,7 @@ Standaard slaat de verzendactie van een portal Formulieren met aangepaste formul
 
 U kunt de opslagdienst vormen om over-de-draad naar de verwerkingscluster te verzenden zonder om het even wat plaatselijk op te slaan publiceer knoop. De verwerkingscluster bevindt zich in een veilige zone achter de privéfirewall en de gegevens blijven veilig.
 
-Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Het wordt aanbevolen referenties te gebruiken van een niet-administratieve gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Zie voor meer informatie [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md).
+Gebruik de referenties van de verwerkingsserver voor AEM DS-instellingenservice om gegevens van het publicatieknooppunt naar de verwerkingsserver te posten. Gebruik de referenties van een niet-beheerbare gebruiker met lees-schrijftoegang tot de opslagplaats van de verwerkingsserver. Zie voor meer informatie [Opslagservices configureren voor concepten en verzending](/help/forms/using/configuring-draft-submission-storage.md).
 
 ### Beveiligde gegevens die worden verwerkt door FDM (Form Data Model) {#secure-data-handled-by-form-data-model-fdm}
 
@@ -154,7 +154,7 @@ De integratie van gegevens verstrekt ook methodes om FDM de dienstverzoeken toe 
 
 **Voorafgaande goedkeuring:** U kunt de pre-procesvergunning gebruiken om authentificatie van een verzoek te bevestigen alvorens het uit te voeren. U kunt input, de dienst en verzoekdetails gebruiken om uitvoering van het verzoek toe te staan of tegen te houden. U kunt een uitzondering OPERATION_ACCESS_DENIED van de gegevensintegratie terugkeren als de uitvoering wordt tegengehouden. U kunt ook de clientaanvraag wijzigen voordat u deze ter uitvoering verzendt. U kunt bijvoorbeeld de invoer wijzigen en aanvullende informatie toevoegen.
 
-**Autorisatie na verwerking:** U kunt de postprocesvergunning gebruiken om de resultaten te bevestigen en te controleren alvorens de resultaten aan aanvrager terug te keren. U kunt ook aanvullende gegevens filteren, verwijderen en invoegen.
+**Toelating na de verwerking:** U kunt de postprocesvergunning gebruiken om de resultaten te bevestigen en te controleren alvorens de resultaten aan aanvrager terug te keren. U kunt ook aanvullende gegevens filteren, verwijderen en invoegen.
 
 ### Gebruikerstoegang beperken {#limit-user-access}
 
@@ -176,12 +176,12 @@ Voor auteur-, publicatie- en verwerkingsinstanties is een andere set met gebruik
       * kan geen adaptief formulier op basis van XDP maken.
       * geen machtigingen hebben om scripts voor adaptieve formulieren te schrijven.
       * kan XDP of een pakket dat XDP bevat niet importeren
+
    * Een gebruiker van een gebruikersgroep voor formulieren maakt, vult, publiceert en verzendt alle typen formulieren, schrijft scripts voor adaptieve formulieren en importeert pakketten met XDP.
    * Een gebruiker van malplaatje-auteurs en malplaatje-macht-gebruiker kan voorproef en een malplaatje creëren.
    * Een gebruiker van fdm-auteurs kan een model van vormgegevens tot stand brengen en wijzigen.
    * Een gebruiker van cm-user-agent groep kan correspondentiebeheerbrieven creëren, voorproef, en publiceren.
    * Een gebruiker van een groep workfloweditors kan een inbox-toepassing en workflowmodel maken.
-
 
 **Bij de verwerkingsauteur:**
 
@@ -190,7 +190,7 @@ Voor auteur-, publicatie- en verwerkingsinstanties is een andere set met gebruik
 
 ## Beveiligde intranetelementen van een AEM Forms-omgeving {#secure-intranet-elements-of-an-aem-forms-environment}
 
-Over het algemeen worden verwerkingsclusters en de invoegtoepassing Forms Workflow (AEM Forms on JEE) achter een firewall uitgevoerd. Deze zijn dus veilig. U kunt nog steeds een paar stappen uitvoeren om deze omgevingen te beschadigen:
+Over het algemeen worden verwerkingsclusters en de invoegtoepassing Forms Workflow (AEM Forms on JEE) achter een firewall uitgevoerd. Dus deze worden als veilig beschouwd. U kunt nog steeds een paar stappen uitvoeren om deze omgevingen te beschadigen:
 
 ### Veilig verwerkingscluster {#secure-processing-cluster}
 

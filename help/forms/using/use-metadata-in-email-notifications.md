@@ -1,14 +1,10 @@
 ---
 title: Metagegevens gebruiken in een e-mailmelding
-seo-title: Use metadata in an email notification
 description: Metagegevens gebruiken om informatie in te vullen in een e-mailmelding in een formulierwerkstroom
-seo-description: Use metadata to populate information in a forms workflow email notification
-uuid: 9075b64e-1934-44d5-8b16-aa6e95e93da9
 topic-tags: publish
-discoiquuid: d48b5137-c866-43cd-925b-7a6a8eac8c0b
 docset: aem65
 exl-id: 18cfc4be-676d-4f08-afc1-4f11bb48dab6
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 0%
@@ -23,7 +19,7 @@ U kunt metagegevens in een e-mailsjabloon gebruiken om gegevens in een e-mailber
 
 ![Standaard e-mailsjabloon](assets/default_email_template_metadata_new.png)
 
-Metagegevens worden opgeslagen in sleutelwaardeparen. U kunt de sleutel in het e-mailmalplaatje specificeren en de sleutel wordt vervangen met een waarde bij runtime (wanneer een e-mailbericht wordt geproduceerd). In het onderstaande codevoorbeeld is &quot;$ {workitem_title} &quot; bijvoorbeeld een sleutel. Deze wordt tijdens de runtime vervangen door de waarde &quot;Loan-Request&quot;.
+Metagegevens worden opgeslagen in sleutelwaardeparen. U kunt de sleutel in het e-mailmalplaatje specificeren en de sleutel wordt vervangen met een waarde bij runtime (wanneer een e-mailbericht wordt geproduceerd). In het onderstaande codevoorbeeld wordt bijvoorbeeld &quot;$ {workitem_title} &quot; is een sleutel. Deze wordt tijdens de runtime vervangen door de waarde &quot;Loan-Request&quot;.
 
 ```html
 subject=Task Assigned - ${workitem_title}
@@ -87,7 +83,7 @@ message=<html><body>\n\
    </tr>\n\
    <tr>\n\
     <td style="border-top: solid 1px #EDEAE7; padding: 16px;">\n\
-     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Please do not reply to this email.</code></p>\n\
+     <p><span style="font-size: 12px; font-weight: normal; font-style: italic; color: #919191;">This is an automatically generated email. Do not reply to this email.</code></p>\n\
     </td>\n\
    </tr>\n\
   </tbody>\n\
@@ -159,7 +155,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 1. Meld u aan bij CRX DE met een beheeraccount. De URL is https://&#39;[server]:[poort]&#39;/crx/de/index.jsp
 
-1. Navigeer naar /apps/fd/dashboard/scripts/metadataScripts. Maak een bestand met de extensie .ecma. Bijvoorbeeld usermetadata.ecma
+1. Ga naar /apps/fd/dashboard/scripts/metadataScripts. Maak een bestand met de extensie .ecma. Bijvoorbeeld usermetadata.ecma
 
    Als het bovenvermelde pad niet bestaat, maakt u het.
 
@@ -198,7 +194,7 @@ U kunt ook aangepaste metagegevens gebruiken in een e-mailmelding. Aangepaste me
 
 U kunt de interface WorkitemUserMetadataService Java gebruiken om aangepaste metagegevens voor e-mailsjablonen toe te voegen. U kunt een bundel OSGi tot stand brengen die de interface van Java WorkitemUserMetadataService gebruikt en het aan de server van AEM Forms opstelt. De metagegevens worden beschikbaar gesteld voor selectie in de stap Taak toewijzen.
 
-Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar en [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) dossiers als externe gebiedsdelen aan het OSGi bundelproject. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar Bestand > Nieuw project.
 
@@ -248,6 +244,6 @@ Als u een OSGi-bundel met Java-interface wilt maken, voegt u [AEM Forms Client S
 
    `mvn clean install`
 
-1. Upload de bundel naar een AEM Forms-server. U kunt AEM pakketbeheer gebruiken om de bundel te importeren naar de AEM Forms-server.
+1. Upload de bundel naar een AEM Forms-server. Met AEM Package Manager kunt u de bundel importeren naar de AEM Forms-server.
 
 Nadat de bundel wordt ingevoerd, kunt u de meta-gegevens in de Assign stap van de Taak selecteren en het gebruiken een e-mailmalplaatje.

@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Eerst en vooral, controleer de verbinding tussen de auteur en publiceer instanti
 >Zorg ervoor dat de **acMapping** eigenschap op de pagina **jcr:inhoud** node is ingesteld op **mapRecipient** of **profiel** bij gebruik van respectievelijk Adobe Campaign Classic of Adobe Campaign Standard
 >
 
-1. Navigeer in Sites AEM naar de plaats waar u een nieuwe pagina wilt maken.
+1. Navigeer in Sites AEM naar de plaats waar u een pagina wilt maken.
 1. Een pagina maken en selecteren **Adobe Campaign Classic-profiel** of **Adobe Campaign Standard-profiel** en klik op **Volgende**.
 
    ![chlimage_1-43](assets/chlimage_1-43a.png)
@@ -95,7 +95,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
    * **Adobe Campaign: abonneren op services**: Hiermee kunt u de abonnementen van een ontvanger in Adobe Campaign beheren.
    * **Adobe Campaign: Abonnement op services opzeggen**: Hiermee kunt u de abonnementen van een ontvanger in Adobe Campaign annuleren.
 
-1. U moet een **Gecodeerde primaire sleutel** op elk formulier. Deze component bepaalt welke URL-parameter wordt gebruikt om de gecodeerde primaire sleutel van een Adobe Campaign-profiel te accepteren. Selecteer in Componenten de optie Adobe Campaign, zodat alleen de componenten zichtbaar zijn.
+1. U moet een **Gecodeerde primaire sleutel** op elk formulier. Deze component definieert welke URL-parameter wordt gebruikt om de gecodeerde primaire sleutel van een Adobe Campaign-profiel te accepteren. Selecteer in Componenten de optie Adobe Campaign, zodat alleen de componenten zichtbaar zijn.
 1. Sleep de component **Gecodeerde primaire sleutel** naar het formulier (waar dan ook) en klik of tik op het **Configuratie** pictogram. In de **Adobe Campaign** op, geeft u een naam voor de URL-parameter op. Klik of tik het vinkje om uw veranderingen te bewaren.
 
    Gegenereerde koppelingen naar dit formulier moeten deze URL-parameter gebruiken en er de gecodeerde primaire sleutel van een Adobe Campaign-profiel aan toewijzen. De gecodeerde primaire sleutel moet correct (percent) gecodeerd zijn URL.

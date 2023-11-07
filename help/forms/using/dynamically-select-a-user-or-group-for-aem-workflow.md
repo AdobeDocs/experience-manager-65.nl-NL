@@ -8,9 +8,9 @@ content-type: troubleshooting
 topic-tags: publish
 discoiquuid: e6c9f3bb-8f20-4889-86f4-d30578fb1c51
 exl-id: 3c48660e-5e4f-4615-82d4-9f1f285c2a39
-source-git-commit: 8f0e8b15d2ed8b436594fd2be464b4ace29a8902
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '903'
+source-wordcount: '902'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ ECMAScript is een scripttaal. Het wordt gebruikt voor client-side scripting en s
    * (Pad voor taakstap toewijzen) `/apps/fd/dashboard/scripts/participantChooser`
    * (Pad voor stap Handtekening) `/apps/fd/workflow/scripts/adobesign`
 
-1. Voeg ECMAScript, dat de logica heeft om een gebruiker dynamisch te selecteren, aan het .ecma dossier toe. Klik op **[!UICONTROL Save All]**.
+1. Voeg ECMAScript, dat de logica aan dynamisch het selecteren van een gebruiker, aan het .ecma dossier heeft. Klik op **[!UICONTROL Save All]**.
 
    Zie voor voorbeeldscripts [Voorbeeld-ECMAScripts voor het dynamisch selecteren van een gebruiker of groep](/help/forms/using/dynamically-select-a-user-or-group-for-aem-workflow.md#sample-ecmascripts-to-dynamically-choose-a-user-or-a-group).
 
@@ -77,7 +77,7 @@ In het volgende voorbeeld van ECMAScript wordt dynamisch een toegewezen voor de 
 
 >[!NOTE]
 >
->Bij gebruik van ECMAScript for Adobe Sign moet het script zich in de crx-opslagplaats op /apps/fd/workflow/scripts/adobesign/ bevinden en moet het een functie met de naam getAdobeSignRecipients hebben om een lijst met gebruikers te retourneren.
+>Als u ECMAScript for Adobe Sign gebruikt, moet het script zich in de crx-repository op /apps/fd/workflow/scripts/adobesign/ bevinden en moet het een functie met de naam getAdobeSignRecipients hebben om een lijst met gebruikers te retourneren.
 
 ```javascript
 function getAdobeSignRecipients() {
@@ -118,7 +118,7 @@ function getAdobeSignRecipients() {
 
 U kunt de [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface om dynamisch een gebruiker of een groep voor Adobe Sign te kiezen en taakstappen toe te wijzen. U kunt een bundel tot stand brengen OSGi die het gebruik gebruikte [RecipientInfoSpecifier](https://www.adobe.io/experience-manager/reference-materials/6-5/forms/javadocs/com/adobe/fd/workflow/adobesign/api/RecipientInfoSpecifier.html) Java-interface en implementeren op de AEM Forms-server. Het maakt de optie beschikbaar voor selectie in de Assign Taak en de componenten van Adobe Sign van AEM Workflow.
 
-U hebt [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar en [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
+U hebt [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) jar [granietjar](https://repo1.maven.org/maven2/com/adobe/granite/com.adobe.granite.workflow.api/1.0.2/) bestanden om het hieronder vermelde codevoorbeeld te compileren. Voeg deze jar dossiers als externe gebiedsdelen aan het OSGi bundelproject toe. U kunt om het even welke winde van Java gebruiken om een bundel te creëren OSGi. De volgende procedure verstrekt stappen om Eclipse te gebruiken om een bundel te creëren OSGi:
 
 1. Open Eclipse IDE. Ga naar **[!UICONTROL File]**> **[!UICONTROL New Project]**.
 1. Selecteer in het scherm Selecteer een wizard de optie **[!UICONTROL Maven Project]** en klik op **[!UICONTROL Next]**.
@@ -230,7 +230,7 @@ U hebt [AEM Forms Client SDK](https://experienceleague.adobe.com/docs/experience
 
    `mvn clean install`
 
-1. Upload de bundel naar een AEM Forms-server. U kunt AEM pakketbeheer gebruiken om de bundel te importeren naar de AEM Forms-server.
+1. Upload de bundel naar een AEM Forms-server. Met AEM Package Manager kunt u de bundel importeren naar de AEM Forms-server.
 
 Nadat de bundel is geïmporteerd, wordt de optie om de Java-interface te kiezen voor het dynamisch selecteren van een gebruiker of een groep beschikbaar in Adobe Sign en Taakstappen toewijzen.
 

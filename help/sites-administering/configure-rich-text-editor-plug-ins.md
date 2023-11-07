@@ -3,7 +3,7 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4380'
 ht-degree: 0%
@@ -226,7 +226,7 @@ U doet dit door de plug-in Stijl in te schakelen.
 
 Geef vervolgens de locaties op van de stijlpagina&#39;s waarnaar u wilt verwijzen:
 
-1. Ga bijvoorbeeld naar het hoofdknooppunt van de tekstcomponent `/apps/<myProject>/components/text`.
+1. Ga bijvoorbeeld naar het hoofdknooppunt van de tekstcomponent. `/apps/<myProject>/components/text`.
 1. De eigenschap toevoegen `externalStyleSheets` naar het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam** `externalStyleSheets`
@@ -327,7 +327,7 @@ Alle tekst die in RTE is geschreven, wordt binnen een bloktag geplaatst, waarbij
 
 >[!NOTE]
 >
->Als een bloktag, bijvoorbeeld een &lt;hr> -tag, kan niet aan een alinea worden toegewezen, is dit geen geldig geval voor gebruik van een insteekmodule voor paraformat.
+>Als een bloktag bijvoorbeeld een &lt;hr> -tag, kan niet aan een alinea worden toegewezen, is dit geen geldig geval voor gebruik van een insteekmodule voor paraformat.
 
 Wanneer de insteekmodule Alineopmaak voor het eerst is ingeschakeld, zijn er geen standaardalineaopmaak beschikbaar. De pop-uplijst is leeg. Ga als volgt te werk om de auteurs alinea-indelingen te bieden:
 

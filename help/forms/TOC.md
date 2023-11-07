@@ -9,9 +9,9 @@ breadcrumb-title: Gids voor formulieren
 user-guide-description: Maak, beheer en publiceer digitale formulieren.
 role: User
 feature: Forms Service
-source-git-commit: 28cc10b79d2ac8cf12ddfd0bf7d1a8e013fe6238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3912'
+source-wordcount: '3911'
 ht-degree: 0%
 
 ---
@@ -228,7 +228,7 @@ ht-degree: 0%
    + [Inleiding tot de werkruimte AEM formulier aanpassen](using/introduction-customizing-html-workspace.md)
    + [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](using/generic-steps-html-workspace-customization.md)
    + [De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen](using/changing-locale-user-interface.md)
-   + [Een nieuw aanmeldingsscherm maken](using/creating-new-login-screen.md)
+   + [Een aanmeldingsscherm maken](using/creating-new-login-screen.md)
    + [Foutdialoogvensters aanpassen](using/customizing-error-dialogs.md)
    + [Tabs aanpassen voor een taak](using/customizing-tabs-task.md)
    + [De pagina met taakdetails aanpassen](using/customizing-task-details-page.md)

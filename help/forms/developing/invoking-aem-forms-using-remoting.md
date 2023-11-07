@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4597'
+source-wordcount: '4593'
 ht-degree: 0%
 
 ---
@@ -550,7 +550,7 @@ Wanneer u een beveiligd document doorgeeft, gebruikt u Single Sign-On en geeft u
 
 >[!NOTE]
 >
-Wanneer u een nieuwe rol maakt en u wilt dat leden van die rol beveiligde documenten uploaden, controleert u of u de machtiging Document uploaden hebt opgegeven.
+Wanneer u een rol maakt en u wilt dat leden van die rol beveiligde documenten uploaden, controleert u of u de machtiging Document uploaden hebt opgegeven.
 
 AEM Forms ondersteunt een bewerking met de naam `getFileUploadToken` die een token retourneert dat wordt doorgegeven aan de uploadserver. De `DocumentReference.constructRequestForUpload` voor deze methode is een URL naar AEM Forms vereist, samen met het token dat door de `LC.FileUploadAuthenticator.getFileUploadToken` methode. Deze methode retourneert een `URLRequest` object dat wordt gebruikt bij het aanroepen van de uploadserver. De volgende code demonstreert deze toepassingslogica.
 
@@ -889,7 +889,7 @@ als AEM Forms is geconfigureerd om alleen beveiligde documenten te uploaden en d
 
 ## Aanroepen van aangepaste componentenservices met Remoting {#invoking-custom-component-services-using-remoting}
 
-U kunt de diensten aanhalen die in een douanecomponent worden gevestigd gebruikend het Verwijderen. Neem bijvoorbeeld de bankcomponent die de klantenservice bevat. U kunt bewerkingen die bij de klantenservice horen, aanroepen met een clienttoepassing die in Flex is geschreven. Voordat u de snelstartcomponent van deze sectie kunt uitvoeren, moet u de aangepaste component Bank maken.
+U kunt services in een aangepaste component aanroepen met Verwijderen. Neem bijvoorbeeld de bankcomponent die de klantenservice bevat. U kunt bewerkingen die bij de klantenservice horen, aanroepen met een clienttoepassing die in Flex is geschreven. Voordat u de snelstartcomponent van deze sectie kunt uitvoeren, moet u de aangepaste component Bank maken.
 
 De klantenservice stelt een bewerking met de naam `createCustomer`. In deze beschrijving wordt beschreven hoe u een Flex-clienttoepassing kunt maken die de klantenservice aanroept en een klant maakt. Voor deze bewerking is een complex object van het type vereist `com.adobe.livecycle.sample.customer.Customer` dat de nieuwe klant vertegenwoordigt. De volgende illustratie toont de cliënttoepassing die de dienst van de Klant aanhaalt en een nieuwe klant creeert. De `createCustomer` bewerking retourneert een id-waarde voor de klant. De identificatiewaarde wordt weergegeven in het tekstvak Customer Identifier.
 
@@ -969,7 +969,7 @@ De volgende ActionScript-klasse met de naam Klant laat zien hoe u het AEM Forms-
 
 Het volledig gekwalificeerde gegevenstype van het complex type AEM Forms wordt toegewezen aan de alias-tag.
 
-De velden van de klasse ActionScript komen overeen met de velden die bij het complexe type AEM Forms horen. De zes velden in de klasse Customer ActionScript komen overeen met de velden waartoe `com.adobe.livecycle.sample.customer.Customer`.
+De velden van de klasse ActionScript komen overeen met de velden die bij het complexe type AEM Forms horen. De zes gebieden in de klasse van het ActionScript van de Klant passen de gebieden aan die tot `com.adobe.livecycle.sample.customer.Customer`.
 
 >[!NOTE]
 >

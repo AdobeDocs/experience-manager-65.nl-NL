@@ -2,9 +2,9 @@
 title: Aan de slag met Edge Delivery Services
 description: Aan de slag met Edge Delivery Services (EDS).
 exl-id: 8d2b2d6c-ae11-4829-842e-b186f5491713
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 1%
 
 Met Edge Delivery Services biedt AEM buitengewone ervaringen die de betrokkenheid en conversies stimuleren. AEM doet dit door het bieden van ervaringen met grote impact die snel bij de auteur en de ontwikkeling zijn. Het is een samenstellbare reeks diensten die een snelle ontwikkelomgeving toelaat waar de auteurs kunnen bijwerken en publiceren snel, en de nieuwe plaatsen worden gelanceerd snel. Als zodanig kunt u met Edge Delivery Services de conversie verbeteren, de kosten verlagen en de snelheid van de inhoud extreem verhogen.
 
-Door gebruik te maken van Edge Delivery kunt u:
+Met Edge Delivery kunt u:
 
 * Maak snelle sites met een perfecte Lighthouse Score en controleer de prestaties van uw site voortdurend via RUM (real user monitoring).
 * Verhoog de efficiëntie bij het ontwerpen door inhoudsbronnen te ontkoppelen. U kunt zowel AEM ontwerpen als op documenten gebaseerd schrijven. Als zodanig kunt u met meerdere inhoudsbronnen werken op dezelfde website.
@@ -29,7 +29,7 @@ De levering van de rand is een composable reeks diensten die voor een hoge graad
 
 U kunt inhoud bijvoorbeeld rechtstreeks vanuit Microsoft Word of Google Docs gebruiken. Dit betekent dat documenten uit deze bronnen pagina&#39;s op uw website kunnen worden. Daarnaast kunnen koppen, lijsten, afbeeldingen en lettertype-elementen allemaal van de oorspronkelijke bron naar de website worden overgebracht. De nieuwe inhoud wordt direct toegevoegd zonder een herbouwingsproces.
 
-De hefboomwerkingen van de Levering van de rand GitHub zodat kunnen de klanten code van hun bewaarplaats direct beheren en opstellen GitHub. U kunt bijvoorbeeld inhoud schrijven in Google Docs of Microsoft Word en de functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub. Wanneer u klaar bent, kunt u de browser van de Sidekick extensie gebruiken om inhoudsupdates voor te vertonen en te publiceren.
+De Levering van de rand gebruikt GitHub zodat kunnen de klanten code van hun bewaarplaats direct beheren en opstellen GitHub. U kunt bijvoorbeeld inhoud schrijven in Google Docs of Microsoft Word en de functionaliteit van uw site kan worden ontwikkeld met CSS en JavaScript in GitHub. Wanneer u klaar bent, kunt u de browser van de Sidekick extensie gebruiken om inhoudsupdates voor te vertonen en te publiceren.
 
 Verdere lezing:
 
@@ -49,7 +49,7 @@ Het is eenvoudig om aan de slag te gaan met Edge Delivery Services. Ga aan de sl
 
 ## Help van Adobe ophalen {#adobe-gethelp}
 
-U kunt met de productteams van de Adobe via uw leverings productsamenwerkingskanaal (zie hieronder voor toegangsdetails) in gesprek gaan om vragen over productgebruik of beste praktijken te beantwoorden. Houd er rekening mee dat er geen SLT (Service Level Terms) aan de gesprekken via het kanaal voor productsamenwerking zijn gekoppeld. Als een productkwestie extra onderzoek en het oplossen van problemen vereist, en reactie SLTs moet ontmoeten, kunt u een steunkaartje na indienen [supportproces](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
+U kunt met de productteams van de Adobe via uw leverings productsamenwerkingskanaal (zie hieronder voor toegangsdetails) in gesprek gaan om vragen over productgebruik of beste praktijken te beantwoorden. Er zijn geen Termen van het Niveau van de Dienst (SLT) verbonden aan de gesprekken via het kanaal van de productsamenwerking. Als een productkwestie extra onderzoek en het oplossen van problemen vereist, en reactie SLTs moet ontmoeten, kunt u een steunkaartje na indienen [supportproces](https://experienceleague.adobe.com/?lang=en&amp;support-tab=home#support).
 
 Adobe biedt drie kanalen om u te helpen met Edge Delivery Services:
 

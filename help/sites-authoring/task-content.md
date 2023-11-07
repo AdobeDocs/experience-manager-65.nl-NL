@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: 1b79d373-73f4-4228-b309-79e74d191f3e
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 200b47070b7ead54ee54eea504bd960d4e0731d9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '597'
+source-wordcount: '595'
 ht-degree: 3%
 
 ---
@@ -32,9 +32,9 @@ U kunt projectvooruitgang volgen door de actieve/voltooide taken binnen een proj
 
 * **Taaklijst:** Wanneer u op de taaktegel klikt, wordt een lijst met taken weergegeven. Deze lijst bevat gedetailleerde informatie over alle taken met betrekking tot het project.
 
-Beide opties maken een lijst met workflowtaken en taken die u rechtstreeks in de takentegel maakt.
+Met beide opties worden workflowtaken en taken die u rechtstreeks in de takentegel maakt, weergegeven.
 
-### Taaktegel {#task-tile}
+### Tegel {#task-tile}
 
 Als een project om het even welke verwante taken heeft, wordt een taaktegel getoond binnen het project. De taaktegel toont de huidige status van het project. Dit is gebaseerd op bestaande taken binnen de workflow en bevat geen taken die in de toekomst worden gegenereerd wanneer de workflow doorgaat. De volgende informatie is zichtbaar in de taaktegel:
 
@@ -44,7 +44,7 @@ Als een project om het even welke verwante taken heeft, wordt een taaktegel geto
 
 ![Taken](assets/project-tile-tasks.png)
 
-### Het bekijken of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
+### Het bekijken van of het Wijzigen van de Taken in een Project {#viewing-or-modifying-the-tasks-in-a-project}
 
 Naast het volgen van vooruitgang, kunt u meer informatie over het project willen bekijken of het wijzigen.
 
@@ -89,4 +89,4 @@ Vanuit het Postvak IN kunt u de taken openen en de taakstatus instellen. De take
 
 ![Inbox](assets/project-inbox.png)
 
-Als u een taak wilt voltooien, selecteert u de taak en klikt u op **Voltooid** in de werkbalk. Voeg informatie toe aan de taak en klik vervolgens op **Gereed**. Zie [Uw Postvak IN](/help/sites-authoring/inbox.md) voor meer informatie .
+Selecteer de taak en klik op **Voltooid** in de werkbalk. Voeg informatie toe aan de taak en klik vervolgens op **Gereed**. Zie [Uw Postvak IN](/help/sites-authoring/inbox.md) voor meer informatie .

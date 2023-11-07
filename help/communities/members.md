@@ -7,9 +7,9 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: b64e24d2-8407-484c-8216-8d328ef5fa4f
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '910'
 ht-degree: 0%
 
 ---
@@ -145,7 +145,7 @@ Het lid kan aan een of meer ledengroepen worden toegevoegd. Voer eerst tekst in 
 
 ### Tabblad BADGES {#badges-tab}
 
-De `BADGES` biedt de mogelijkheid om handmatig badges toe te wijzen en in te trekken. De badges kunnen voor toegewezen rollen evenals badges typisch worden verdiend.
+De `BADGES` kunt u handmatig badges toewijzen en intrekken. De badges kunnen voor toegewezen rollen en badges zijn typisch verdiend.
 
 Zie ook [Scores en badges](implementing-scoring.md).
 
@@ -174,7 +174,7 @@ Selecteren `Add Group` om een groep te maken in de publicatieomgeving.
 
 ![Het venster Nieuwe groep maken](assets/group-console1.png)
 
-De vereiste gebieden voor het creëren van een nieuwe publish-side lidgroep zijn:
+De vereiste gebieden voor het creëren van een publish-zij lidgroep zijn:
 
 * **[!UICONTROL ID]**
 

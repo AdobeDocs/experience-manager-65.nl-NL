@@ -1,19 +1,15 @@
 ---
 title: Het beheer van meerdere sites uitbreiden
-seo-title: Extending the Multi Site Manager
 description: Met deze pagina kunt u de functionaliteit van de beheer van meerdere sites uitbreiden
-seo-description: This page helps you extend the functionalities of the Multi Site Manager
-uuid: dfa7d050-29fc-4401-8d4d-d6ace6b49bea
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: 6128c91a-4173-42b4-926f-bbbb2b54ba5b
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2585'
+source-wordcount: '2578'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ ht-degree: 0%
 Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitbreiden:
 
 * Leer meer over de belangrijkste leden van de MSM Java API.
-* Creeer een nieuwe synchronisatieactie die in een rollout configuratie kan worden gebruikt.
+* Creeer een synchronisatieactie die in een rollout configuratie kan worden gebruikt.
 * Wijzig de standaardtaal en landcodes.
 
 <!-- * Remove the "Chapters" step in the Create Site wizard. -->
@@ -111,7 +107,7 @@ De `LiveActionFactory` maakt instanties van de `LiveAction` klasse voor een bepa
 
 * `LiveAction` klassen omvatten de volgende methoden:
 
-   * `getName`: Retourneert de naam van de handeling De naam wordt gebruikt om naar de handeling te verwijzen, bijvoorbeeld in rollout-configuraties.
+   * `getName`: Retourneert de naam van de handeling. De naam wordt gebruikt om naar de actie, bijvoorbeeld, in rollout configuraties te verwijzen.
    * `execute`: Voert de taken van de handeling uit.
 
 * `LiveActionFactory` de klassen omvatten de volgende leden:
@@ -182,8 +178,6 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 ### De configuratie van de rollout maken {#create-the-rollout-configuration}
 
-Een nieuwe rollout-configuratie maken:
-
 1. Open CRXDE Lite, bijvoorbeeld:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
@@ -240,7 +234,7 @@ Onderliggende knooppunten van het type toevoegen `cq:LiveSyncAction` synchronisa
 1. **Maken** een knooppunt met de volgende knoopeigenschappen:
 
    * **Naam**: De knooppuntnaam van de synchronisatiehandeling.
-De naam moet gelijk zijn aan **Naam van handeling** in de onderstaande tabel [Synchronisatiehandelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions)bijvoorbeeld `contentCopy` of `workflow`.
+De naam moet gelijk zijn aan **Naam van handeling** in de onderstaande tabel [Synchronisatiehandelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow`.
    * **Type**: `cq:LiveSyncAction`
 
 1. Voeg en vorm zo vele knopen van de synchronisatieactie toe aangezien u vereist. Wijzig de rangschikking van de actieknoppen zodat de volgorde overeenkomt met de volgorde waarin u deze wilt uitvoeren. Het bovenste actieknooppunt komt eerst voor.
@@ -600,7 +594,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 1. In CRX Explorer, remove the node:
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a node:
 
     1. **Name** = `chapters`; **Type** = `cq:Widget`.
 

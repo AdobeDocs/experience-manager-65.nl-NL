@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
 exl-id: cdb7ff54-7891-45b1-a921-10b01ef5188d
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 
 1. Klik in de beheerconsole op Services > Workspace > Global Administration.
 1. Klik onder Sjabloondefinitie importeren op Bestand kiezen en selecteer de zoeksjabloon. U kunt alleen zoeksjabloondefinities importeren die oorspronkelijk zijn geëxporteerd uit een exemplaar van Workspace.
-1. Klik op Importeren.
+1. Klik op Import.
 
 ## Een zoeksjabloondefinitie exporteren {#export-a-search-template-definition}
 
@@ -54,7 +54,7 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 ## Algemene instellingen importeren {#import-global-settings}
 
 1. Klik op de pagina Algemeen beheer onder Globale instellingen importeren op Bestand kiezen en selecteer het algemene instellingenbestand. Het algemene instellingenbestand moet de XML-indeling hebben.
-1. Klik op Importeren.
+1. Klik op Import.
 
 ## Algemene instellingen exporteren {#export-global-settings}
 
@@ -63,7 +63,7 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 
 ## Algemene instellingen werkruimte {#workspace-global-settings}
 
-U kunt het algemene instellingenbestand wijzigen; de enige instellingen die u wilt bewerken zijn echter de instellingen JChannelConnectionProperties, formViewOnly en specialRoutes.
+U kunt het algemene instellingenbestand wijzigen. De enige instellingen die u wilt bewerken zijn echter de instellingen JChannelConnectionProperties, formViewOnly en specialRoutes.
 
 >[!NOTE]
 >
@@ -75,19 +75,19 @@ Het bestand met algemene instellingen voor Workspace bevat de volgende instellin
 
 De *specialRoutes* de montages specificeren de eigenschappen van de speciale routes, goedkeuren en ontkennen, in Werkruimte. In bepaalde situaties worden de knoppen voor deze routes weergegeven op de taakkaarten in Workspace en kan de gebruiker deze selecteren zonder het formulier te openen. U kunt de specialRoutes montages in het globale montagedossier wijzigen om aangepaste namen toe te voegen voor goedkeuren en ontkennen of om extra routes tot stand te brengen.
 
-**client_specialRoutes_routes_accept_style:** De naam van de stijl die zich in het thema Werkruimte bevindt. Hiermee worden de pictogrammen voor goed keuren weergegeven. De stijl moet waarden voor een ingeschakeld pictogram en een uitgeschakeld pictogram bevatten. Als u een stijl voor een aangepaste knop wilt definiëren, moet u de volgende sjabloon gebruiken:
+**client_specialRoutes_routes_accept_style:** De naam van de stijl in het thema Werkruimte, die de pictogrammen voor de goed te keuren knop identificeert. De stijl moet waarden voor een ingeschakeld pictogram en een uitgeschakeld pictogram bevatten. Als u een stijl voor een aangepaste knop wilt definiëren, moet u de volgende sjabloon gebruiken:
 ` .buttonApprove {  icon: Embed('images/LC_DirectApprove_Sm_N.png');  disabledIcon: Embed('images/LC_DirectApprove_Sm_D.png');  paddingLeft: 5;  }` Het CSS-bestand voor de werkruimte is ingesloten in het bestand workspace-theme.swf, dat zich bevindt in het bestand adobe-workspace-client.ear > adobe-workspace-client.war. Als u de weergave van de werkruimte wilt wijzigen, moet u het bestand workspace-theme.swf opnieuw compileren.
 
 **client_specialRoutes_routes_deny_names:** De verscheidenheid van koorden die een gebruiker Workbench kan gebruiken om als &quot;ontkennen&quot;te worden geïnterpreteerd. De tekenreeksen zijn hoofdlettergevoelig. De standaardwaarde is bijvoorbeeld Weigeren. Als de Workbench-gebruiker het woord Weigeren in een proces gebruikt, wordt het woord niet herkend. Het woord ontkent moet aan dit het plaatsen voor de routeknoop worden toegevoegd om te worden aangepast en de stijl hebben op het worden toegepast.
 
-**client_specialRoutes_routes_deny_style:** De naam van de stijl die zich in het het themadossier van de Werkruimte bevindt, dat ontkent knooppictogrammen identificeert. De stijl moet waarden voor een ingeschakeld pictogram en een uitgeschakeld pictogram bevatten. Als u een stijl voor een aangepaste knop wilt definiëren, moet u de volgende sjabloon gebruiken:
+**client_specialRoutes_routes_deny_style:** De naam van de stijl die in het het themadossier van de Werkruimte is, dat ontkent knooppictogrammen identificeert. De stijl moet waarden voor een ingeschakeld pictogram en een uitgeschakeld pictogram bevatten. Als u een stijl voor een aangepaste knop wilt definiëren, moet u de volgende sjabloon gebruiken:
 `  .buttonDeny {   icon: Embed('images/LC_DirectDeny_Sm_N.png');   disabledIcon: Embed('images/LC_DirectDeny_Sm_D.png');   paddingLeft: 0;   }` **client_specialRoutes_routes_accept_names:** De verscheidenheid van koorden die een gebruiker Workbench kan gebruiken om als &quot;goed te keuren&quot;worden geïnterpreteerd. De tekenreeksen zijn hoofdlettergevoelig. De standaardwaarde is bijvoorbeeld Goedkeuren. Als de Workbench-gebruiker het woord Goedkeuren in een proces gebruikt, wordt het woord niet herkend. Het woord keurt moet aan dit het plaatsen voor de routeknoop worden toegevoegd om worden aangepast en de stijl hebben op het worden toegepast.
 
 **client_specialRoutes_names:** De sleutels die worden gebruikt om van de aangepaste koordwaarde van de middeldossiers de plaats te bepalen. Elk item in deze instelling moet de waarden voor de namen en stijl bevatten.
 
 ### JGroup-instellingen {#jgroup-settings}
 
-Deze instellingen worden alleen weergegeven als u een upgrade hebt uitgevoerd vanaf Adobe LiveCycle 2.5 of eerder.
+Deze montages verschijnen slechts als u van LiveCycle ES 2.5 van de Adobe of vroeger hebt bevorderd.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** De maximale tijd die de JGroup wacht voor gebeurtenisberichten. Deze instelling mag niet worden gewijzigd.
 
@@ -99,7 +99,7 @@ U kunt de waarden UDP voor het multicast IP adres (mcast_addr), de multicastIP h
 
 >[!NOTE]
 >
->De TTL moet groter zijn dan het aantal netwerkschakelaars tussen de servers in de cluster; nochtans, als de waarde te hoog wordt geplaatst, kan het multicast pakketten veroorzaken om in subnets te reizen, waar zij zullen worden verworpen.
+>TTL moet groter zijn dan het aantal netwerkschakelaars tussen de servers in de cluster; nochtans, als de waarde te hoog wordt geplaatst, kan het multicast pakketten veroorzaken om in subnets te reizen, waar zij zullen worden verworpen.
 
 De overige eigenschappen in deze instelling mogen niet worden gewijzigd.
 
@@ -113,13 +113,13 @@ For additional information on JGroups and Workspace, see [JGroups and AEM forms 
 
 ### formView-instellingen {#formview-settings}
 
-**client_formView_openFormInFullScreen:** Als u alle formulieren in Workspace wilt weergeven in de modus Volledig scherm, stelt u deze optie in op true. Deze optie is standaard ingesteld op false en formulieren worden niet in de modus Volledig scherm weergegeven. De service Gebruiker bevat een optie waarmee u het document dat aan een taak is gekoppeld, in de modus Volledig scherm kunt openen. Hierdoor kunt u de weergave per proces besturen.
+**client_formView_openFormInFullScreen:** Als u alle formulieren in Workspace wilt weergeven in de modus Volledig scherm, stelt u deze optie in op true. Deze optie is standaard ingesteld op false en formulieren worden niet in de modus Volledig scherm weergegeven. De gebruikersservice bevat een optie waarmee u het document dat aan een taak is gekoppeld, op volledig scherm kunt openen. Hierdoor kunt u de weergave per proces besturen.
 
 **client_routes_formViewOnly:** Wanneer geplaatst aan Waar, worden de routes niet getoond in kaartmening of lijstmening in Werkruimte. De standaardwaarde is Vals, betekenend dat de routes in kaartmening en lijstmening worden getoond.
 
 ### Overige instellingen {#other-settings}
 
-**client_mimeTypes_openOutsideBrowser:** Het MIME-type van documenten die buiten de Workspace browser-instantie worden geopend. Als de processen van uw organisatie een extra type MIME vereisen, specificeer het hier. De standaardwaarden zijn:
+**client_mimeTypes_openOutsideBrowser:** Het MIME-type van documenten dat buiten de de browser van de Werkruimte instantie opent. Als de processen van uw organisatie een extra type MIME vereisen, specificeer het hier. De standaardwaarden zijn:
 
 * `application/msword`
 * `application/msexcel`

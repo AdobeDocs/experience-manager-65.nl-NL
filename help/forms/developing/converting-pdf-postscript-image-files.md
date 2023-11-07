@@ -1,19 +1,15 @@
 ---
 title: PDF converteren naar PostScript- en afbeeldingsbestanden
-seo-title: Converting PDF to Postscript andImage Files
-description: Met de service PDF converteren kunt u PDF-documenten converteren naar PostScript en naar een aantal afbeeldingsindelingen (JPEG, JPEG 2000, PNG en TIFF) met behulp van de API van Java en Web Service API.
-seo-description: Use the Convert PDF service to convert PDF documents to PostScript and to a number of image formats (JPEG, JPEG 2000, PNG, and TIFF) using the Java API and Web Service API.
-uuid: 07da0391-7180-4197-aaa6-ae753d753b84
+description: Met de service PDF converteren kunt u PDF-documenten converteren naar PostScript en naar verschillende indelingen voor afbeeldingen (JPEG, JPEG 2000, PNG en TIFF) met behulp van de API voor Java en Web Service API.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 role: Developer
 exl-id: 31730c24-46c3-4111-9391-ccd4342740e9
-source-git-commit: 135f50cc80f8bb449b2f1621db5e2564f5075968
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2809'
+source-wordcount: '2801'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 **Over de Convert PDF Service**
 
-Met de service PDF converteren worden PDF-documenten geconverteerd naar PostScript en naar een aantal afbeeldingsindelingen (JPEG, JPEG 2000, PNG en TIFF). Het converteren van een PDF-document naar PostScript is handig voor afdrukken op basis van een server zonder toezicht op elke PostScript-printer. Het omzetten van een PDF-document in een TIFF-bestand met meerdere pagina&#39;s is handig bij het archiveren van documenten in systemen voor inhoudsbeheer die geen ondersteuning bieden voor PDF-documenten.
+Met de service PDF converteren worden PDF-documenten geconverteerd naar PostScript en naar verschillende afbeeldingsindelingen (JPEG, JPEG 2000, PNG en TIFF). Het converteren van een PDF-document naar PostScript is handig voor afdrukken op basis van een server zonder toezicht op elke PostScript-printer. Het omzetten van een PDF-document in een TIFF-bestand met meerdere pagina&#39;s is handig bij het archiveren van documenten in systemen voor inhoudsbeheer die geen ondersteuning bieden voor PDF-documenten.
 
 U kunt deze taken uitvoeren met de service PDF converteren:
 
@@ -33,7 +29,7 @@ U kunt deze taken uitvoeren met de service PDF converteren:
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de PDF van de Bekeerling, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie voor meer informatie over de service PDF converteren [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF-documenten converteren naar PostScript {#converting-pdf-documents-to-postscript}
 
@@ -41,7 +37,7 @@ In dit onderwerp wordt beschreven hoe u de API voor PDF-service converteren (Jav
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de PDF van de Bekeerling, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie voor meer informatie over de service PDF converteren [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -60,9 +56,9 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Convert PDF-client maken**
 
-Voordat u programmatically een Convert PDF de dienstverrichting kunt uitvoeren, moet u een Convert de dienstcliënt van de PDF tot stand brengen. Als u de Java API gebruikt, maakt u een `ConvertPdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `ConvertPDFServiceService` object.
+Voordat u programmatically een Convert PDF de dienstverrichting kunt uitvoeren, moet u een Convert PDF de dienstcliënt creëren. Als u de Java API gebruikt, maakt u een `ConvertPdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `ConvertPDFServiceService` object.
 
-Deze sectie gebruikt webservicefunctionaliteit die in AEM Forms is geïntroduceerd. Als u toegang wilt tot nieuwe functionaliteit, moet u het proxyobject maken met de `lc_version` kenmerk. (Zie &quot;Toegang tot nieuwe functionaliteit met behulp van webservices&quot; in [AEM Forms aanroepen met webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+Deze sectie gebruikt webservicefunctionaliteit die in AEM Forms is geïntroduceerd. Als u toegang wilt tot nieuwe functionaliteit, moet u het proxyobject maken met de `lc_version` kenmerk. (Zie &quot;Toegang tot nieuwe functionaliteit via webservices&quot; in [AEM Forms aanroepen met webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 **Verwijs naar het PDF-document dat u wilt converteren naar een PostScript-bestand**
 
@@ -72,9 +68,9 @@ Verwijs naar het PDF-document dat u naar een PostScript-bestand wilt converteren
 
 Wanneer u een PDF-document naar een PostScript-bestand converteert, kunt u runtime-opties definiëren waarmee het PostScript-type wordt opgegeven dat wordt gemaakt. U kunt bijvoorbeeld een PostScript-bestand van niveau 3 definiëren.
 
-Doorgaans geeft het gegenereerde PostScript-bestand de grootte van het invoer-PDF-document aan. Als u `ShrinkToFit` (waardoor de uitvoer van het PostScript-bestand wordt verkleind zodat het op de pagina past), ziet u geen verschil tussen het invoerdocument en het gegenereerde PostScript-PDF-bestand. De `ShrinkToFit` Deze optie is alleen van kracht als u ervoor kiest om af te drukken op een kleiner paginaformaat dan het invoerdocument PDF. Als u een kleiner paginaformaat wilt selecteren, definieert u de optie `PageSize` optie. Daarnaast wordt u aangeraden het `RotateAndCenter` optie voor `true` om de juiste PostScript-uitvoer te verkrijgen.
+Doorgaans geeft het gegenereerde PostScript-bestand de grootte van het invoer-PDF-document aan. Als u `ShrinkToFit` (waardoor de uitvoer van het PostScript-bestand wordt verkleind zodat het op de pagina past), ziet u geen verschil tussen het invoerdocument en het gegenereerde PostScript-PDF-bestand. De `ShrinkToFit` Deze optie is alleen van kracht als u ervoor kiest om af te drukken op een kleiner paginaformaat dan het invoerdocument PDF. Als u een kleiner paginaformaat wilt selecteren, definieert u de optie `PageSize` -optie. Daarnaast wordt u aangeraden het `RotateAndCenter` optie voor `true` om de juiste PostScript-uitvoer te verkrijgen.
 
-En als u de optie `ExpandToFit` (waarmee de uitvoer van het PostScript-bestand wordt uitgebreid zodat het op de pagina past), heeft deze optie alleen effect als u ervoor kiest om af te drukken op een grotere pagina dan het invoerdocument PDF. Als u een groter paginaformaat wilt selecteren, definieert u de optie `PageSize` optie. Daarnaast wordt u aangeraden het `RotateAndCenter` optie voor `true` om de juiste PostScript-uitvoer te verkrijgen.
+En als u de optie `ExpandToFit` (waarmee de uitvoer van het PostScript-bestand wordt uitgebreid zodat het op de pagina past), heeft deze optie alleen effect als u ervoor kiest om af te drukken op een grotere pagina dan het invoerdocument PDF. Als u een groter paginaformaat wilt selecteren, definieert u de optie `PageSize` -optie. Daarnaast wordt u aangeraden het `RotateAndCenter` optie voor `true` om de juiste PostScript-uitvoer te verkrijgen.
 
 >[!NOTE]
 >
@@ -106,12 +102,12 @@ Converteer een PDF-document naar PostScript met de Java-API (Convert PDF Service
 
 1. Inclusief projectbestanden.
 
-   Neem client-JAR-bestanden, zoals adobe-convertpdf-client.jar, op in het klassenpad van uw Java-project.
+   Neem client-JAR-bestanden, zoals adobe-convertpdf-client.jar, op in het klassepad van uw Java-project.
 
 1. Maak een Convert PDF-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `ConvertPdfServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `ConvertPdfServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijs naar het PDF-document dat u wilt converteren naar een PostScript-bestand.
 
@@ -121,7 +117,7 @@ Converteer een PDF-document naar PostScript met de Java-API (Convert PDF Service
 1. Stel opties voor de uitvoering van de conversie in.
 
    * Een `ToPSOptionsSpec` object door de constructor ervan aan te roepen.
-   * Stel runtime-opties in door een geschikte methode aan te roepen die tot de `ToPSOptionsSpec` object. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u het `ToPSOptionsSpec` object `setPsLevel` methode en een `PSLevel` opsommingswaarde die het PostScript-niveau opgeeft. Voor informatie over alle runtime waarden die u kunt instellen, raadpleegt u de `ToPSOptionsSpec` klasseverwijzing in [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel runtime-opties in door een geschikte methode aan te roepen die tot de `ToPSOptionsSpec` object. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u het `ToPSOptionsSpec` object `setPsLevel` methode en een `PSLevel` opsommingswaarde die het PostScript-niveau opgeeft. Voor informatie over alle runtime waarden die u kunt plaatsen, zie `ToPSOptionsSpec` klasseverwijzing in [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Zet het PDF-document om in een PostScript-bestand.
 
@@ -141,7 +137,7 @@ Converteer een PDF-document naar PostScript met de Java-API (Convert PDF Service
 
 [Overzicht van de stappen](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Een PDF-document converteren naar PostScript met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document converteren naar PostScript met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -162,7 +158,7 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (webs
 1. Maak een Convert PDF-client.
 
    * Een `ConvertPdfServiceClient` object met de standaardconstructor.
-   * Een `ConvertPdfServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Geef echter `?blob=mtom`.
+   * Een `ConvertPdfServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Geef echter `?blob=mtom`.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `ConvertPdfServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -174,7 +170,7 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (webs
 
 1. Verwijs naar het PDF-document dat u wilt converteren naar een PostScript-bestand.
 
-   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om een PDF-document op te slaan dat naar een PostScript-bestand wordt geconverteerd.
+   * Een `BLOB` object met behulp van de constructor. De `BLOB` -object wordt gebruikt om een PDF-document op te slaan dat wordt omgezet in een PostScript-bestand.
    * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document dat moet worden omgezet en de modus waarin het bestand moet worden geopend.
    * Maak een bytearray waarin de inhoud van de `System.IO.FileStream` object. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` object `Length` eigenschap.
    * De bytearray vullen met streamgegevens door de `System.IO.FileStream` object `Read` en het doorgeven van de bytearray, de startpositie en de streamlengte om te lezen.
@@ -183,13 +179,13 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (webs
 1. Stel opties voor de uitvoering van de conversie in.
 
    * Een `ToPSOptionsSpec` object door de constructor ervan aan te roepen.
-   * Stel runtime-opties in door een waarde toe te wijzen aan de `ToPSOptionsSpec` gegevenslid van object. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, wijst u een `PSLevel` opsommingswaarde voor de `ToPSOptionsSpec` object `psLevel` lid.
+   * Stel runtime-opties in door een waarde toe te wijzen aan de `ToPSOptionsSpec` lid van objectgegevens. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, wijst u een `PSLevel` opsommingswaarde voor de `ToPSOptionsSpec` object `psLevel` lid.
 
 1. Zet het PDF-document om in een PostScript-bestand.
 
    De `GeneratePDFServiceService` object `toPS2` en geeft de volgende waarden door:
 
-   * A `BLOB` object dat staat voor het PDF-document dat naar een PostScript-bestand moet worden geconverteerd
+   * A `BLOB` object dat staat voor het PDF-document dat moet worden omgezet in een PostScript-bestand
    * A `ToPSOptionsSpec` object dat uitvoeringsopties opgeeft
 
    Nadat de conversie is voltooid, extraheert u de binaire gegevens die het PostScript-document vertegenwoordigen door het document te openen `BLOB` object `MTOM` eigenschap. Hiermee wordt een bytearray geretourneerd die u naar een PostScript-bestand kunt schrijven.
@@ -217,7 +213,7 @@ Wanneer u een PDF-document omzet in een afbeelding, maakt de service PDF omzette
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de PDF van de Bekeerling, zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Zie voor meer informatie over de service PDF converteren [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -236,15 +232,15 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Convert PDF-client maken**
 
-Voordat u programmatically een Convert PDF de dienstverrichting kunt uitvoeren, moet u een Convert de dienstcliënt van de PDF tot stand brengen. Als u de Java API gebruikt, maakt u een `ConvertPdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `ConvertPDFServiceService` object.
+Voordat u programmatically een Convert PDF de dienstverrichting kunt uitvoeren, moet u een Convert PDF de dienstcliënt creëren. Als u de Java API gebruikt, maakt u een `ConvertPdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `ConvertPDFServiceService` object.
 
 **Het te converteren PDF-document ophalen**
 
-U moet het PDF-document opvragen om het naar een afbeelding om te zetten. U kunt een interactief PDF-document niet omzetten in een afbeelding. Wanneer u dit probeert, wordt een uitzondering gegenereerd. Als u een interactief PDF-document wilt converteren naar een afbeeldingsbestand, moet u het PDF-document samenvoegen voordat u het converteert. (Zie [PDF-documenten afvlakken](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
+Haal het PDF-document op dat u wilt omzetten in een afbeelding. U kunt een interactief PDF-document niet omzetten in een afbeelding. Wanneer u dit probeert, wordt een uitzondering gegenereerd. Als u een interactief PDF-document wilt converteren naar een afbeeldingsbestand, moet u het PDF-document samenvoegen voordat u het converteert. (Zie [PDF-documenten afvlakken](/help/forms/developing/creating-document-output-streams.md#flattening-pdf-documents).)
 
 **Uitvoeringsopties instellen**
 
-U moet runtime opties instellen, zoals de afbeeldingsindeling en de resolutiewaarden. Voor informatie over de runtime waarden, zie `ToImageOptionsSpec` klasseverwijzing in [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+Stel runtime-opties in, zoals de afbeeldingsindeling en de resolutiewaarden. Voor informatie over de runtime waarden, zie `ToImageOptionsSpec` klasseverwijzing in [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **De PDF omzetten in een afbeelding**
 
@@ -270,17 +266,17 @@ Een PDF-document converteren naar een afbeeldingsindeling met de API (Java) voor
 
 1. Inclusief projectbestanden.
 
-   Neem client-JAR-bestanden, zoals adobe-convertpdf-client.jar, op in het klassenpad van uw Java-project.
+   Neem client-JAR-bestanden, zoals adobe-convertpdf-client.jar, op in het klassepad van uw Java-project.
 
 1. Maak een Convert PDF-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `ConvertPdfServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `ConvertPdfServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Haal het PDF-document op dat u wilt converteren.
 
    * Een `java.io.FileInputStream` object dat staat voor het PDF-document dat moet worden geconverteerd met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het PDF-document aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Stel runtime-opties in.
 
@@ -289,7 +285,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de API (Java) voor
 
    >[!NOTE]
    >
-   >De instelling `ImageConvertFormat` opsommingswaarde is verplicht.
+   >De instelling van `ImageConvertFormat` opsommingswaarde is verplicht.
 
 1. Zet de PDF om in een afbeelding.
 
@@ -306,7 +302,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de API (Java) voor
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Een PDF-document converteren naar JPEG-bestanden met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document converteren naar JPEG-bestanden met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
 ### Een PDF-document converteren naar afbeeldingsbestanden met de webservice-API {#convert-a-pdf-document-to-image-files-using-the-web-service-api}
 
@@ -320,10 +316,10 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
    >
    >Vervangen `localhost` met het IP-adres van de server die als host fungeert voor AEM Forms.
 
-1. Maak een PDF-client voor omzetten.
+1. Maak een PDF-client voor converteren.
 
    * Een `ConvertPdfServiceClient` object met de standaardconstructor.
-   * Een `ConvertPdfServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Geef echter `?blob=mtom`.
+   * Een `ConvertPdfServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Geef echter `?blob=mtom`.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `ConvertPdfServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -348,7 +344,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
 
    >[!NOTE]
    >
-   >De instelling `ImageConvertFormat` opsommingswaarde is verplicht.
+   >De instelling van `ImageConvertFormat` opsommingswaarde is verplicht.
 
 1. Zet de PDF om in een afbeelding.
 
@@ -361,7 +357,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
 
 1. Haal de afbeeldingsbestanden op uit een verzameling.
 
-   * Het aantal elementen in het dialoogvenster `MyArrayOfBLOB` object door de waarde van het object op te halen `Count` veld. Elk element is een `BLOB` object dat de afbeelding bevat.
+   * Het aantal elementen in het dialoogvenster `MyArrayOfBLOB` object door de waarde van het object op te halen `Count` veld. Elk element is een `BLOB` -object dat de afbeelding bevat.
    * Doorlopen `MyArrayOfBLOB` objecten maken en elk afbeeldingsbestand opslaan.
 
 **Zie ook**

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 role: Admin
 exl-id: 4237085a-d70d-41de-975d-153f58336daa
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1903'
 ht-degree: 0%
 
 ---
@@ -74,7 +74,7 @@ Als u gebruikers en gebruikersgroepen wilt beheren die zijn geregistreerd in de 
 
 | Indien lid van de groep... | Primaire rol |
 |---|---|
-| beheerders | De groep van beheerders bestaat uit systeembeheerders die alle capaciteiten van een communautaire Beheerder evenals de capaciteit hebben om de groep van Communautaire Beheerders te beheren. |
+| beheerders | De beheerdersgroep bestaat uit systeembeheerders die alle capaciteiten van een communautaire beheerder en de capaciteit hebben om de groep van Communautaire Beheerders te beheren. |
 | Community-beheerders | De communautaire groep van Beheerders wordt automatisch een lid van alle communautaire plaatsen en om het even welke communautaire groepen die op de plaats worden gecreeerd. Een aanvankelijk lid van de groep van Communautaire Beheerders is de beheerdersgroep. In de auteursomgeving, kunnen de Communautaire Beheerders communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud. |
 | Community &lt;*sitenaam*> Sitecontentmanager | Met Community Site Content Manager kunt u traditionele AEM ontwerpen, inhoud maken en pagina&#39;s voor een communitysite wijzigen. |
 | Geen | Een anonieme sitebezoeker heeft mogelijk geen toegang tot de auteursomgeving. |

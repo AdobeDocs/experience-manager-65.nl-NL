@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2753'
+source-wordcount: '2749'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 U kunt e-mailinhoud maken in AEM en deze verwerken in Adobe Campaign-e-mails. Daartoe moet u:
 
-1. Maak een nieuwe nieuwsbrief in AEM van een Adobe Campaign-specifieke sjabloon.
+1. Maak een nieuwsbrief in AEM van een Adobe Campaign-specifieke sjabloon.
 1. Selecteren [een Adobe Campaign-service](#selecting-the-adobe-campaign-cloud-service-and-template) voordat u de inhoud bewerkt, hebt u toegang tot alle functies.
 1. Bewerk de inhoud.
 1. Valideer de inhoud.
@@ -55,7 +55,7 @@ In dit document worden gedetailleerde instructies beschreven.
 
    >[!NOTE]
    >
-   >[E-mailvoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van Geometrixx uit Pakket delen.
+   >[E-mailvoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
 
    ![chlimage_1-15](assets/chlimage_1-15a.png)
 
@@ -125,7 +125,7 @@ E-mailinhoud bewerken:
 
    >[!NOTE]
    >
-   >Als de verpersoonlijkingsgebieden in eigenschappen van binnen de redacteur grayed zijn, gelieve uw configuratie opnieuw te onderzoeken.
+   >Als de verpersoonlijkingsgebieden in eigenschappen van binnen de redacteur grayed uit zijn, heronderzoek uw configuratie.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
@@ -145,7 +145,7 @@ E-mailinhoud bewerken:
 
 Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 
-* Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld voornaam, achternaam, of om het even welke gegevens van de doeldimensie) aanpassen.
+* Adobe Campaign-context. Dit zijn gebieden die u binnen uw tekst kunt opnemen die volgens de gegevens van de ontvanger (bijvoorbeeld, voornaam, achternaam, of om het even welke gegevens van de doeldimensie) aanpassen.
 * Adobe Campaign-verpersoonlijkingsblokken. Dit zijn blokken vooraf gedefinieerde inhoud die niet gerelateerd zijn aan de gegevens van de ontvanger, zoals een merklogo of een koppeling naar een spiegel.
 
 Zie [Adobe Campaign-componenten](/help/sites-authoring/adobe-campaign-components.md) voor een volledige beschrijving van de onderdelen van de campagne.
@@ -187,7 +187,7 @@ Personalisatie invoegen:
 
 ### Een voorvertoning van een nieuwsbrief weergeven {#previewing-a-newsletter}
 
-U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie bekijken.
+U kunt voorvertonen hoe de nieuwsbrief eruit zal zien en een voorvertoning van de personalisatie bekijken.
 
 1. Open de nieuwsbrief en klik op **Voorvertoning** in de rechterbovenhoek van AEM. AEM toont hoe de nieuwsbrief kijkt wanneer de gebruikers het ontvangen.
 
@@ -257,7 +257,7 @@ Als een nieuwsbrief aan verscheidene leveringen wordt verbonden, het aantal verb
 
 Een pagina die is gemaakt in AEM koppelen aan een e-mailbericht van Adobe Campaign:
 
-1. Maak een nieuw e-mailbericht op basis van een AEM-specifieke e-mailsjabloon. Zie [E-mails maken in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) voor meer informatie .
+1. Maak een e-mailbericht op basis van een AEM-specifieke e-mailsjabloon. Zie [E-mails maken in Adobe Campaign Standard](https://helpx.adobe.com/campaign/standard/channels/using/creating-an-email.html) voor meer informatie .
 
    ![chlimage_1-36](assets/chlimage_1-36a.png)
 
@@ -351,13 +351,13 @@ In AEM gemaakte inhoud synchroniseren met een levering vanuit Adobe Campaign:
 
    ![chlimage_1-42](assets/chlimage_1-42a.png)
 
-1. Geef de andere parameters voor uw levering op (doel, enz.)
-1. Start zo nodig het goedkeuringsproces voor de levering in Adobe Campaign. Goedkeuring van inhoud in AEM is noodzakelijk naast goedkeuringen die in Adobe Campaign zijn geconfigureerd (budget, doel, enz.). Goedkeuring van inhoud in Adobe Campaign is alleen mogelijk als de inhoud al is goedgekeurd in AEM.
+1. Geef de andere parameters van de levering op (doel, enzovoort)
+1. Start zo nodig het goedkeuringsproces voor de levering in Adobe Campaign. De goedkeuring van inhoud in AEM is noodzakelijk naast goedkeuringen die in Adobe Campaign worden gevormd (begroting, doel, etc.). Goedkeuring van inhoud in Adobe Campaign is alleen mogelijk als de inhoud al is goedgekeurd in AEM.
 1. Voer de levering uit. Tijdens de leveringsanalyse, wordt de meest bijgewerkte versie van de AEM inhoud teruggewonnen.
 
    >[!NOTE]
    >
-   * Nadat de levering en de inhoud zijn gesynchroniseerd, wordt de leveringsinhoud in Adobe Campaign alleen-lezen. Het onderwerp van de e-mail en de inhoud ervan kunnen niet meer worden gewijzigd.
+   * Nadat de levering en de inhoud zijn gesynchroniseerd, wordt de leveringsinhoud in Adobe Campaign alleen-lezen. Het onderwerp en de inhoud van de e-mail kunnen niet meer worden gewijzigd.
    * Als de inhoud in AEM wordt bijgewerkt terwijl deze aan een levering in Adobe Campaign is gekoppeld, wordt deze tijdens de leveringsanalyse automatisch bijgewerkt in de levering. De synchronisatie kan ook handmatig worden uitgevoerd met de **Inhoud nu vernieuwen** knop.
    * U kunt synchronisatie tussen een levering en AEM inhoud annuleren met de **Desynchroniseren** knop. Dit is alleen beschikbaar als de inhoud al is gesynchroniseerd met de levering. Als u andere inhoud wilt synchroniseren met een levering, moet u de huidige inhoudssynchronisatie annuleren voordat u een nieuwe koppeling kunt maken.
    * Als de synchronisatie van de lokale inhoud is opgeheven, wordt de lokale inhoud bewaard en wordt deze bewerkbaar in Adobe Campaign. Als u de inhoud opnieuw synchroniseert nadat u deze hebt gewijzigd, gaan alle wijzigingen verloren.

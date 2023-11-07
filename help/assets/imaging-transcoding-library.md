@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools,Asset Processing
 exl-id: b67465f9-177c-49c4-b4eb-a1d6e09ac9a2
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '942'
 ht-degree: 0%
@@ -56,10 +56,10 @@ De opdrachtregelargumenten voor de bibliotheek voor het transformeren van afbeel
 
 U kunt de volgende opties voor de `-resize` parameter:
 
-* `X`: Werken vergelijkbaar met [!DNL Experience Manager]. Bijvoorbeeld -resize 319.
-* `WxH`: De hoogte-breedteverhouding blijft niet behouden, bijvoorbeeld `-resize 319x319`.
-* `Wx`: Hiermee stelt u de breedte vast en berekent u de hoogte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld `-resize 319x`.
-* `xH`: Hiermee corrigeert u de hoogte en berekent u de breedte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld `-resize x319`.
+* `X`: Werken vergelijkbaar met [!DNL Experience Manager]. Bijvoorbeeld - resize 319.
+* `WxH`: De hoogte-breedteverhouding blijft bijvoorbeeld niet behouden `-resize 319x319`.
+* `Wx`: Hiermee stelt u de breedte vast en berekent u de hoogte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld, `-resize 319x`.
+* `xH`: Hiermee corrigeert u de hoogte en berekent u de breedte met behoud van de hoogte-breedteverhouding. Bijvoorbeeld, `-resize x319`.
 
 ```shell
  -AllowUpsampling (Resizes smaller images)

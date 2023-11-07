@@ -11,20 +11,20 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1889'
+source-wordcount: '1885'
 ht-degree: 0%
 
 ---
 
 # Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
-Wanneer een conventioneel WCM-element wordt verwijderd, kan de verwijzing naar het onderliggende record van de gegevensopslagruimte uit de knooppunthiërarchie worden verwijderd, maar blijft de record van de gegevensopslagruimte zelf behouden. Deze gegevensopslagrecord zonder referenties wordt dan &#39;garbage&#39; die niet hoeft te worden bewaard. In gevallen waar een aantal vuilnisbelten bestaan, is het nuttig om van hen af te komen om ruimte te bewaren en steun en het onderhoudsprestaties van het bestandssysteem te optimaliseren.
+Wanneer een conventioneel WCM-element wordt verwijderd, kan de verwijzing naar het onderliggende record van de gegevensopslagruimte uit de knooppunthiërarchie worden verwijderd, maar blijft de record van de gegevensopslagruimte zelf behouden. Deze gegevensopslagrecord zonder referenties wordt dan &#39;garbage&#39; die niet hoeft te worden bewaard. In gevallen waarin verschillende afvalvoorzieningen aanwezig zijn, is het nuttig deze te verwijderen om ruimte te besparen en de onderhoudsprestaties van back-ups en bestandssystemen te optimaliseren.
 
 Een WCM-toepassing heeft meestal de neiging om informatie te verzamelen, maar niet om informatie te verwijderen. Hoewel er nieuwe afbeeldingen worden toegevoegd, zelfs als deze oudere versies vervangen, blijft het oude versiebeheersysteem behouden en kunt u er desgewenst naar terugkeren. Het grootste deel van de inhoud die wij als toevoeging aan het systeem beschouwen, wordt dus permanent opgeslagen. Wat is de typische bron van &quot;afval&quot; in de opslagplaats die we misschien willen opschonen?
 
-AEM gebruikt de opslagplaats als opslagplaats voor een aantal interne en huishoudelijke activiteiten:
+AEM gebruikt de opslagplaats als opslagplaats voor verschillende interne en huishoudelijke activiteiten:
 
 * Gebouwde en gedownloade pakketten
 * Tijdelijke bestanden gemaakt voor publicatie-replicatie
@@ -157,7 +157,7 @@ Opschoonfunctie uitvoeren:
 
 ## Afvalverzameling van gegevensopslag automatiseren {#automating-data-store-garbage-collection}
 
-Indien mogelijk, zou de inzameling van het huisvuil van de gegevensopslag moeten in werking worden gesteld wanneer er weinig lading op het systeem, bijvoorbeeld in de ochtend is.
+Indien mogelijk, zou de inzameling van het huisvuil van de gegevensopslag moeten in werking worden gesteld wanneer er weinig lading op het systeem, bijvoorbeeld, in de ochtend is.
 
 Het ingebouwde wekelijkse onderhoudvenster, beschikbaar via de [Operations-dashboard](/help/sites-administering/operations-dashboard.md), bevat een ingebouwde taak om de Inzameling van de Winkel van Gegevens toe te laten om 1.00 uur op Zondag. U zou ook moeten controleren dat geen steunen op dit ogenblik lopen. Het begin van het onderhoudsvenster kan zo nodig via het dashboard worden aangepast.
 

@@ -1,18 +1,14 @@
 ---
 title: Ontwerpen en de Designer
-seo-title: Designs and the Designer
-description: U moet een ontwerp voor uw website maken en in AEM doet u dit met de Designer
-seo-description: You will need to create a design for your website and in AEM, you do so by using the Designer
-uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
+description: Leer hoe u met Designer een ontwerp voor uw website en in AEM maakt.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 exl-id: c81c5910-b6c9-41bd-8840-a6782792701f
-source-git-commit: adbdff9ff5b5bd8f5f6b22fb724a0e5273072de2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -21,13 +17,13 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->In dit artikel wordt beschreven hoe u een website maakt op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals in detail wordt beschreven in het artikel [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt op basis van de klassieke gebruikersinterface. Adobe raadt aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals in het artikel gedetailleerd wordt beschreven [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
 
 Met Designer kunt u een ontwerp voor uw website maken met de opdracht [Klassieke interface](/help/release-notes/touch-ui-features-status.md) in AEM.
 
 >[!NOTE]
 >
->Voor meer informatie over de toegankelijkheid van het Web, zie [AEM en de Web Accessibility Guidelines](/help/managing/web-accessibility.md).
+>Zie voor meer informatie over webtoegankelijkheid [AEM en de Web Accessibility Guidelines](/help/managing/web-accessibility.md).
 
 ## De Designer gebruiken {#using-the-designer}
 
@@ -65,4 +61,4 @@ Het voorgaande voorbeeld biedt verschillende voordelen:
 * Componenten kunnen een andere vormgeving hebben op basis van elke site en een ander ontwerppad gebruiken.
 * U kunt de website opnieuw ontwerpen door het ontwerppad vanuit de hoofdmap van de site naar een ander knooppunt van de site te wijzen `design/v1` tot `design/v2.`
 
-* `/etc/designs` en `/content` zijn de enige externe URL&#39;s die de browser ziet als bescherming van een externe gebruiker die zich zorgen maakt over wat er onder uw `/apps` boom. De bovenstaande URL-voordelen helpen uw systeembeheerder ook een betere beveiliging in te stellen, omdat u de blootstelling van de elementen aan een aantal verschillende locaties beperkt.
+* `/etc/designs` en `/content` zijn de enige externe URL&#39;s die de browser ziet als beveiliging van een externe gebruiker die zich zorgen maakt over wat er onder uw `/apps` boom. De bovenstaande URL-voordelen helpen uw systeembeheerder ook om een betere beveiliging in te stellen, omdat u de blootstelling van de elementen aan een aantal verschillende locaties beperkt.

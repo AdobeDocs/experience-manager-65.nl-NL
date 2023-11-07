@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1779'
+source-wordcount: '1777'
 ht-degree: 8%
 
 ---
@@ -55,13 +55,13 @@ Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Terwijl hu
 
 ### Middelen opnemen {#ingesting-assets}
 
-Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Omdat u een grote hoeveelheid gegevens in het systeem laadt, wilt u ervoor zorgen dat het systeem zo goed mogelijk presteert om de vereiste hoeveelheid tijd te minimaliseren en overbelasting van het systeem te vermijden, wat tot een systeemneerstorting kan leiden, vooral in systemen die reeds in productie zijn.
+Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Omdat u een grote hoeveelheid gegevens in het systeem laadt, wilt u ervoor zorgen dat het systeem presteert en dat het de vereiste hoeveelheid tijd kan minimaliseren en te vermijden overbelast het systeem, dat tot een systeemneerstorting kan leiden, vooral in systemen die reeds in productie zijn.
 
 Er zijn twee manieren om de elementen in het systeem te laden: een op push gebaseerde benadering met gebruikmaking van HTTP of een op pull gebaseerde benadering met behulp van de JCR API&#39;s.
 
 #### Verzenden via HTTP {#pushing-through-http}
 
-Het team van Managed Services van de Adobe gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map laadt [!DNL Experience Manager] implementatie. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
+Het Managed Services-team van Adobe gebruikt een hulpprogramma met de naam Glutton om gegevens in klantomgevingen te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map laadt [!DNL Experience Manager] implementatie. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
 
 Er zijn twee grote nadelen aan het gebruiken van de benadering van het doorduwen van https:
 
@@ -82,14 +82,14 @@ Nadat u de elementen in het systeem hebt geladen, moet u ze door de [!UICONTROL 
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 
-1. De eenvoudigste aanpak is [ACS Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Met dit gereedschap kunt u een query uitvoeren en de resultaten van de query verwerken via een workflow. Er zijn ook opties voor het instellen van batchgrootten.
+1. De eenvoudigste aanpak is [ACS Commons Bulk Workflow Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/bulk-workflow-manager.html). Met dit gereedschap kunt u een query uitvoeren en de resultaten van de query verwerken via een workflow. Er zijn ook opties voor het instellen van batchgrootten.
 1. U kunt [ACS Commons Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) gebruiken in overleg met [Synthetische workflows](https://adobe-consulting-services.github.io/acs-aem-commons/features/synthetic-workflow.html). Hoewel deze benadering veel meer betrokken is, kunt u de overhead van de [!DNL Experience Manager] workflowengine tijdens optimalisatie van het gebruik van serverbronnen. Bovendien verhoogt de Fast Action Manager de prestaties nog meer door serverresources dynamisch te controleren en het plaatsen van de lading op het systeem te vertragen. U vindt voorbeeldscripts op de ACS Commons-functiepagina.
 
 ### Elementen activeren {#activating-assets}
 
 Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren aan publiceer landbouwbedrijf. Hoewel Adobe aanbeveelt meerdere publicatieinstanties uit te voeren, is het het meest efficiënt om alle elementen te repliceren naar één publicatieinstantie en die instantie vervolgens te klonen. Wanneer u grote aantallen elementen activeert en een boomstructuur activeert, moet u mogelijk ingrijpen. Hieronder wordt beschreven waarom: bij het uitschakelen van de activering worden de items toegevoegd aan de wachtrij met taken/gebeurtenissen. Nadat de grootte van deze rij ongeveer 40.000 punten begint te overschrijden, vertraagt de verwerking dramatisch. Als deze wachtrij groter is dan 100.000 items, heeft de systeemstabiliteit te lijden.
 
-Als u dit probleem wilt verhelpen, kunt u de opdracht [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) om de replicatie van bedrijfsmiddelen te beheren. Dit werkt zonder de het Verschuiven rijen te gebruiken, verminderend overheadkosten, terwijl het vertragen van de werkbelasting om de server te verhinderen worden overbelast. Een voorbeeld om FAM te gebruiken om replicatie te beheren wordt getoond op de de documentatiepagina van de eigenschap.
+Als u dit probleem wilt verhelpen, kunt u de opdracht [Fast Action Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) om de replicatie van bedrijfsmiddelen te beheren. Dit werkt zonder de het Verschuiven rijen te gebruiken, verminderend overheadkosten, terwijl het vertragen van de werkbelasting om de server te verhinderen worden overbelast. Een voorbeeld van het gebruiken van FAM om replicatie te beheren wordt getoond op de de documentatiepagina van de eigenschap.
 
 Andere opties om assets naar de publicatiefarm te sturen, omvatten het gebruik van [vlt-rcp](https://jackrabbit.apache.org/filevault/rcp.html) of [oak-run](https://github.com/apache/jackrabbit-oak/tree/trunk/oak-run), die als hulpprogramma&#39;s als onderdeel van Jackrabbit worden verstrekt. Een andere optie is om een open-sourced hulpmiddel voor uw [!DNL Experience Manager] infrastructuur [Grabbit](https://github.com/TWCable/grabbit), die beweert snellere prestaties te hebben dan vlt.
 

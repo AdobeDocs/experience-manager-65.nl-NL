@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3501'
+source-wordcount: '3498'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Hier volgen de logische stappen waarmee ontwerpimporters uw aangepaste component
 
 1. Een TagHandler maken
 
-   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een geneste &lt;p> -tag, de &lt;p> -tag wordt ook naar uw TagHandler gegenereerd en het is aan u hoe u ervoor wilt zorgen.
+   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een genest &lt;p> -tag, de &lt;p> -tag wordt ook naar uw TagHandler gegenereerd en het is aan u hoe u ervoor wilt zorgen.
    * De interface van de markeringsmanager is gelijkaardig aan een interface van de inhoudsmanager van SAX. Het ontvangt SAX-gebeurtenissen voor elke HTML-tag. Als leverancier van labelafhandelingen moet u bepaalde levenscyclusmethoden implementeren die automatisch worden aangeroepen door het framework van ontwerporters.
 
 1. Maak de bijbehorende TagHandlerFactory.
@@ -113,7 +113,7 @@ Houd rekening met de volgende beperkingen voordat u gaat importeren:
 
 ### Kenmerken zoals klasse of id die op de tag &amp;lt;body> zijn toegepast, blijven niet behouden {#any-attribute-like-class-or-id-applied-on-the-amp-lt-body-tag-is-not-preserved}
 
-Als bijvoorbeeld een kenmerk zoals id of klasse op de tag body wordt toegepast `<body id="container">` dan wordt het niet bewaard na de invoer. Het geïmporteerde ontwerp mag dus niet afhankelijk zijn van de kenmerken die op de `<body>` -tag.
+Als bijvoorbeeld een kenmerk zoals id of klasse wordt toegepast op de tag body, `<body id="container">` dan wordt het niet bewaard na de invoer. Het geïmporteerde ontwerp mag dus niet afhankelijk zijn van de kenmerken die op de `<body>` -tag.
 
 ### ZIP slepen en neerzetten {#drag-and-drop-zip}
 
@@ -438,9 +438,9 @@ Als er geen codering is opgegeven in de geïmporteerde HTML, is UTF-8 de standaa
 
 ### Bezig met overschrijven van sjabloon {#overlaying-template}
 
-De sjabloon Lege landingspagina kan worden overschreven door een nieuwe sjabloon te maken op: `/apps/<appName>/designimporter/templates/<templateName>`
+De sjabloon Lege landingspagina kan worden overschreven door een sjabloon te maken op: `/apps/<appName>/designimporter/templates/<templateName>`
 
-De stappen voor het maken van een nieuwe sjabloon in AEM worden uitgelegd [hier](/help/sites-developing/templates.md).
+De stappen voor het maken van een sjabloon in AEM worden uitgelegd [hier](/help/sites-developing/templates.md).
 
 ### Een component vanuit de bestemmingspagina verwijzen {#referring-a-component-from-landing-page}
 

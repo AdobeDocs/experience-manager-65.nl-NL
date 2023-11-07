@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1535'
+source-wordcount: '1533'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Raadpleeg voor meer informatie het desbetreffende kennisbankartikel voor uw data
 * [Microsoft® SQL Server Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403623)
 * [DB2® Backup and Recovery for AEM Forms](https://www.adobe.com/go/kb403626)
 
-Deze artikelen bieden richtlijnen voor basisdatabasefuncties voor het maken van back-ups en het herstellen van gegevens. Ze zijn niet bedoeld als allesomvattende technische hulplijnen van de back-up- en herstelfunctie van de database van een specifieke leverancier. Zij schetsen bevelen die worden vereist om een betrouwbare strategie van de gegevensbestandsteun voor uw de toepassingsgegevens van AEM Forms tot stand te brengen.
+Deze artikelen bieden richtlijnen voor basisdatabasefuncties voor het maken van back-ups en het herstellen van gegevens. Ze zijn niet bedoeld als allesomvattende technische hulplijnen van de back-up- en herstelfunctie van de database van een specifieke leverancier. Ze bevatten opdrachten die nodig zijn om een betrouwbare back-upstrategie voor uw AEM Forms-toepassingsgegevens te maken.
 
 >[!NOTE]
 >
@@ -74,7 +74,7 @@ Deze artikelen bieden richtlijnen voor basisdatabasefuncties voor het maken van 
 
 ### De back-upmodi invoeren {#entering-the-backup-modes}
 
-U kunt ofwel de beheerconsole, de LCBackupMode-opdracht, ofwel de API die beschikbaar is bij de AEM Forms-installatie gebruiken om de back-upmodi in en uit te schakelen. Voor het rollen steun (ononderbroken dekking), is de optie van de beleidsconsole niet beschikbaar; U moet de opdrachtregeloptie of de API gebruiken. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
+U kunt ofwel de beheerconsole, de LCBackupMode-opdracht, ofwel de API die beschikbaar is bij de AEM Forms-installatie gebruiken om de back-upmodi in en uit te schakelen. Voor het rollen steun (ononderbroken dekking), is de optie van de beleidsconsole niet beschikbaar; u zou of de bevel-lijn optie of API moeten gebruiken. <!-- Fix broken link For information about using the API to enter and leave backup modes, see AEM Forms API Reference on Help and Tutorials page. -->
 
 >[!NOTE]
 >
@@ -82,7 +82,7 @@ U kunt ofwel de beheerconsole, de LCBackupMode-opdracht, ofwel de API die beschi
 
 **De beheerconsole gebruiken om de veilige back-upmodus te activeren**
 
-1. Meld u aan bij de beheerconsole.
+1. Log in bij de beheerconsole.
 1. Klik op Instellingen > Core System Settings > Backup Utilities.
 1. Selecteer Werken in veilige back-upmodus en klik op OK.
 
@@ -95,7 +95,7 @@ U kunt de opdrachtregelinterface gebruiken `LCBackupMode` scripts om AEM Forms i
 1. Stel ADOBE_LIVECYCLE in en start de toepassingsserver.
 1. Ga naar de `*[aem-forms root]*/sdk/misc/Foundation/BackupRestoreCommandline` map.
 1. Afhankelijk van uw besturingssysteem kunt u de opdracht `LCBackupMode.cmd` of `LCBackupMode.sh` gebruiken om standaardwaarden op te geven die geschikt zijn voor uw systeem.
-1. Bij de bevelherinnering, stel het volgende bevel op één enkele lijn in werking:
+1. Voer bij de opdrachtprompt de volgende opdracht uit op één regel:
 
    * (Windows) `LCBackupMode.cmd enter [-Host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*password* `] [-label=`*labelnaam* `] [-timeout=`*seconden* `]`
    * (Linux®, UNIX®) `LCBackupMode.sh enter [-host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*password* `] [-label=`*labelnaam* `]`
@@ -137,7 +137,7 @@ U kunt de opdrachtregelinterface gebruiken om AEM Forms uit de veilige back-upmo
 
    >[!NOTE]
    >
-   >U moet de directory JAVA_HOME instellen zoals beschreven in het betreffende hoofdstuk voor uw toepassingsserver in [Installatie van AEM Forms voorbereiden](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
+   >Stel de map JAVA_HOME in zoals beschreven in het betreffende hoofdstuk voor uw toepassingsserver in [Installatie van AEM Forms voorbereiden](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63)*.*
 
 1. Voer de volgende opdracht op één regel uit:
 
@@ -162,6 +162,6 @@ U kunt de opdrachtregelinterface gebruiken om AEM Forms uit de veilige back-upmo
 
    >[!NOTE]
    >
-   >Als u de opslag van documenten in de database hebt ingeschakeld, zijn de back-upmodus voor momentopnamen en de modus voor rolback-ups niet van toepassing.
+   >Als u de opslag van documenten in de database hebt ingeschakeld, zijn de back-upmodus voor momentopnamen en de modus voor het rollen van back-ups niet van toepassing.
 
    Zie het Lees mij-bestand in de map BackupRestoreCommandline voor meer informatie over de opdrachtregelinterface naar de back-upmodus.

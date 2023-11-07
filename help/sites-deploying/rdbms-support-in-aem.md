@@ -1,20 +1,16 @@
 ---
 title: RDBMS-ondersteuning in AEM 6.4
-seo-title: RDBMS Support in AEM 6.4
 description: Leer over de relationele steun van de gegevensbestandpersistentie in AEM 6.4 en de beschikbare configuratieopties.
-seo-description: Learn about the relational database persistence support in AEM 6.4 and the available configuration options.
-uuid: c8422b0d-c6df-488d-bb6a-af92c9afda50
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 6a754d42-da30-4c2f-8b9c-369e1f1f92b5
 docset: aem65
 feature: Configuring
 exl-id: 1e34c5ca-9e08-4b2a-901c-ab28aeb4a807
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '616'
 ht-degree: 0%
 
 ---
@@ -35,7 +31,7 @@ Voor meer informatie over de implementatiedetails raadpleegt u de [RDBDocumentSt
 
 ## Ondersteunde databases {#supported-databases}
 
-Voor meer informatie over het niveau van de Relationele Steun van het Gegevensbestand in AEM, gelieve te zien [Pagina Technische vereisten](/help/sites-deploying/technical-requirements.md).
+Voor meer informatie over het niveau van de Relationele Steun van het Gegevensbestand in AEM, zie [Pagina Technische vereisten](/help/sites-deploying/technical-requirements.md).
 
 ## Configuratiestappen {#configuration-steps}
 
@@ -43,7 +39,7 @@ De opslagplaats wordt gemaakt door de configuratie van de `DocumentNodeStoreServ
 
 Om het te werken, moet een gegevensbron met AEM worden gevormd. Dit gebeurt via de `org.apache.sling.datasource.DataSourceFactory.config` bestand. De bestuurders JDBC voor het respectieve gegevensbestand moeten afzonderlijk als bundels OSGi binnen de lokale configuratie worden verstrekt.
 
-Voor stappen bij het maken van OSGi-bundels voor JDBC-stuurprogramma&#39;s raadpleegt u deze [documentatie](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) op de Apache Sling-website.
+Voor stappen bij het creëren van bundels OSGi voor bestuurders JDBC, zie dit [documentatie](https://sling.apache.org/documentation/bundles/datasource-providers.html#convert-driver-jars-to-bundle) op de Apache Sling-website.
 
 Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te configureren met RDB-persistentie:
 

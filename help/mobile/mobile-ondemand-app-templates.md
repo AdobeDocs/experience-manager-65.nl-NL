@@ -1,7 +1,7 @@
 ---
 title: Sjablonen en componenten maken en toevoegen
 seo-title: Creating and Adding Templates and Components
-description: Volg deze pagina voor meer informatie over het maken en toevoegen van sjablonen en componenten aan uw app. De pagina gebruikt de Geometrixx Unlimited-app als de app die een voorbeeld-app-sjabloon en paginasjablonen bevat.
+description: Volg deze pagina voor meer informatie over het maken en toevoegen van sjablonen en componenten aan uw app. De pagina gebruikt Geometrixx Unlimited App als app die een sjabloon en paginasjablonen voor de voorbeeldapp bevat.
 seo-description: Follow this page to learn about creating and adding templates and components to your app. The page uses Geometrixx Unlimited App as the app that contains a sample app template and page templates.
 uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
@@ -9,9 +9,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 exl-id: 5f050baa-fe10-4acc-ad32-de20793edc13
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1160'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
 AEM Mobile On-Demand biedt een volledig geconfigureerde toepassingssjabloon, een artikelsjabloon en artikelcomponenten.
 
 We.Unlimited App is een voorbeeldsjabloon die de shell van een volledig configureerbare en beheerbare AEM Mobile On-Demand-toepassing vertegenwoordigt.
 
-Als u deze voorbeeldsjabloon selecteert wanneer u een nieuwe app maakt, beschikt u over een dashboard met uitgebreide AEM Mobile-functies.
+Als u deze voorbeeldsjabloon selecteert wanneer u een app maakt, wordt een dashboard met uitgebreide AEM Mobile-functies weergegeven.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
@@ -36,13 +36,13 @@ Als u deze voorbeeldsjabloon selecteert wanneer u een nieuwe app maakt, beschikt
 
 ## App-sjablonen maken {#creating-app-templates}
 
-Een App-sjabloon wordt gebruikt om een nieuwe app te maken en fungeert als een verzameling paginasjablonen en -componenten die een basislijn of basis van een app vormen. De sjabloon stempelt enkele fundamentele eigenschappen uit om de app op de juiste manier te leiden. Over het algemeen zou een klant niet te veel apps maken.
+Een App-sjabloon wordt gebruikt om een app te maken en fungeert als een verzameling paginasjablonen en -componenten die een basislijn of basis van een app vormen. De sjabloon stempt enkele fundamentele eigenschappen uit om de app op de juiste manier te leiden. Over het algemeen zou een klant niet te veel apps maken.
 
-Toepassingssjablonen bieden een eenvoudige manier om gebruik te maken van bestaande ontwerpen die door ontwikkelaars zijn gemaakt en die worden gebruikt voor het maken van nieuwe apps in AEM.
+Toepassingssjablonen bieden een eenvoudige manier om bestaande ontwerpen te gebruiken die door ontwikkelaars zijn gemaakt en die worden gebruikt voor het maken van nieuwe apps in AEM.
 
-Wanneer u een nieuwe app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
+Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
 
-Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
+Stappen voor het maken van een app op basis van een toepassingssjabloon:
 
 1. Ga naar de AEM Mobile-toepassingscatalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Selecteren **Maken** —> **App** zoals hieronder weergegeven
@@ -51,7 +51,7 @@ Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en ver
 
 >[!NOTE]
 >
->U kunt ook een voorbeeld-app-sjabloon selecteren, bijvoorbeeld **Wij.Onbeperkt** , beschikbaar gesteld door een AEM ontwikkelaar. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
+>U kunt ook een voorbeeldtoepassingssjabloon selecteren, bijvoorbeeld **Wij.Onbeperkt** , beschikbaar gesteld door een AEM ontwikkelaar. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
 
 >[!CAUTION]
 >
@@ -75,7 +75,7 @@ Elk eenheidstype heeft twee out-of-the-box malplaatjes. Deze zijn:
 
 Het artikel Onbeperkt is een voorbeeldsjabloon die een gebruikelijke lay-out van AEM Mobile On-Demand-artikelen vertegenwoordigt.
 
-1. Klikken op **+** in **Artikelen beheren** om een nieuw artikel te maken. U kunt een van de **Onbeperkt artikel** of **Rich Text Article**. In de onderstaande afbeelding ziet u de optie waarmee u een van deze twee artikelsjablonen kunt kiezen.
+1. In **Artikelen beheren**, selecteert u **+**  om een artikel te maken. U kunt een van de **Onbeperkt artikel** of **Rich Text Article**. In de onderstaande afbeelding ziet u de optie waarmee u een van deze twee artikelsjablonen kunt kiezen.
 
 1. Klikken **Volgende** om metagegevens van artikelen te definiëren, zoals artikelnaam/titel, beschrijving, auteur, abstract, afdeling, miniatuurafbeelding, artikeltoegang, enzovoort.
 1. Klikken **Volgende** om de Advertentie-eigenschappen in te vullen.
@@ -137,7 +137,7 @@ Wanneer de component al op een AEM pagina is opgenomen, kunt u samen met enkele 
 
 1. Kies die pagina en controleer of u in de modus Bewerken werkt. Ga hiervoor naar het vervolgkeuzemenu rechtsboven in de koptekst van de Editor.
 1. Zijpaneel in-/uitschakelen met het pictogram uiterst links in de koptekst van de Editor
-1. Selecteer **Componenten** tab
+1. Selecteer de **Componenten** tab
 1. Sleep een van de beschikbare componenten naar de pagina
 
 ![chlimage_1-75](assets/chlimage_1-75.png)

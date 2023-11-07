@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 role: Developer
 exl-id: d61c20a9-27c6-4b57-ab00-dfaa77fe3f75
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '522'
 ht-degree: 0%
 
 ---
@@ -22,19 +22,19 @@ ht-degree: 0%
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van de Taak.
 
-[Snel starten (SOAP-modus): Taken toewijzen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
+[Snel starten (SOAP-modus): taken toewijzen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-assigning-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): Taken vergrendelen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
+[Snel starten (SOAP-modus): taken vergrendelen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-locking-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): Taken ophalen die zijn toegewezen aan gebruikers met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
+[Snel starten (SOAP-modus): taken ophalen die aan gebruikers zijn toegewezen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api)
 
-[Snel starten (SOAP-modus): Formuliergegevens ophalen van taken met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
+[Snel starten (SOAP-modus): formuliergegevens ophalen van taken met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): Formuliergegevens wijzigen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
+[Snel starten (SOAP-modus): formuliergegevens wijzigen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-modifying-form-data-using-the-java-api)
 
-[Snel starten (SOAP-modus): Bestandsbijlagen ophalen van taken met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
+[Snel starten (SOAP-modus): bestandsbijlagen ophalen van taken met behulp van de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api)
 
-[Snel starten (SOAP-modus): Taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
+[Snel starten (SOAP-modus): taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
@@ -44,9 +44,9 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
+## Snel starten (SOAP-modus): taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker Tony Blue.
 
@@ -77,7 +77,7 @@ In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker To
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -86,7 +86,7 @@ In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker To
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -179,7 +179,7 @@ In het volgende Java-codevoorbeeld wordt een taak toegewezen aan de gebruiker To
  
 ```
 
-## Snel starten (SOAP-modus): Taken vergrendelen met de Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
+## Snel starten (SOAP-modus): taken vergrendelen met de Java API {#quick-start-soap-mode-locking-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt met de waarde 2 voor de taak-id.
 
@@ -210,7 +210,7 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -219,7 +219,7 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -268,7 +268,7 @@ In het volgende Java-codevoorbeeld wordt een taak vergrendeld die overeenkomt me
  
 ```
 
-## Snel starten (SOAP-modus): Taken ophalen die zijn toegewezen aan gebruikers met de Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
+## Snel starten (SOAP-modus): taken ophalen die aan gebruikers zijn toegewezen met de Java API {#quick-start-soap-mode-retrieving-tasks-assigned-to-users-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewezen aan een gebruiker met de naam *tonblauw*. Deze gebruiker is opgegeven in de eigenschappen van de verbinding. Informatie over geretourneerde taken, zoals de waarde en beschrijving van de id, wordt weergegeven.
 
@@ -299,7 +299,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewez
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -308,7 +308,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewez
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -394,7 +394,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn toegewez
  }
 ```
 
-## Snel starten (SOAP-modus): Formuliergegevens ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
+## Snel starten (SOAP-modus): formuliergegevens ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-form-data-from-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een taak met de id-waarde 304. Formuliergegevens worden naar een XML-bestand met de naam *FormData.xml* te vinden op C:\Adobe.
 
@@ -425,7 +425,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -434,7 +434,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -483,7 +483,7 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
              long formInstanceId = fi[0].getFormInstanceId();
              FormInstance newfi = myTaskManager.getFormInstanceForTask(taskId, formInstanceId, true);
  
-             //Get data located in the form and
+             //Get data in the form and
              //write the data to FormData.xml
              Document doc = newfi.getDocument();
              File myTestFile = new File("C:\\Adobe\FormData.xml");
@@ -500,9 +500,9 @@ In het volgende Java-codevoorbeeld worden formuliergegevens opgehaald van een ta
  
 ```
 
-## Snel starten (SOAP-modus): Formuliergegevens wijzigen met de Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
+## Snel starten (SOAP-modus): formuliergegevens wijzigen met de Java API {#quick-start-soap-mode-modifying-form-data-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens die zich in het *FormData.xml* bestand.
+In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens uit het *FormData.xml* bestand.
 
 ```java
  /*
@@ -531,7 +531,7 @@ In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens d
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -540,7 +540,7 @@ In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens d
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -610,7 +610,7 @@ In het volgende Java-codevoorbeeld wordt een formulier bijgewerkt met gegevens d
  
 ```
 
-## Snel starten (SOAP-modus): Bestandsbijlagen ophalen van taken met de Java API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
+## Snel starten (SOAP-modus): bestandsbijlagen ophalen van taken met behulp van de Java API {#quick-start-soap-mode-retrieving-file-attachments-from-tasks-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke bestandsbijlage wordt opgeslagen als een TXT-bestand.
 
@@ -641,7 +641,7 @@ In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke besta
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -650,7 +650,7 @@ In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke besta
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -714,7 +714,7 @@ In het volgende Java-codevoorbeeld worden bestandsbijlagen opgehaald. Elke besta
  
 ```
 
-## Snel starten (SOAP-modus): Taakgegevens ophalen met de Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
+## Snel starten (SOAP-modus): taakgegevens ophalen met de Java API {#quick-start-soap-mode-retrieving-task-information-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseerd op een proces met de naam *Hypothecaire lening - Prebuilt*. Het statuut van elke teruggekeerde taak wordt gecontroleerd om ervoor te zorgen dat het een voltooide taak is. Informatie zoals de naam van de gebruiker die de taak heeft voltooid en de datum waarop de taak is voltooid, wordt opgehaald en weergegeven.
 
@@ -745,7 +745,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseer
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -754,7 +754,7 @@ In het volgende Java-codevoorbeeld worden alle taken opgehaald die zijn gebaseer
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

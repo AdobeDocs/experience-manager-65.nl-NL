@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1013'
 ht-degree: 0%
@@ -71,7 +71,7 @@ Met het inhoudspakket kan de AEM App Author pagina-inhoud beheren in AEM en kan 
 
 Met Inhoudspakket wordt voor elke update een ZIP-bestand gemaakt, dat wordt beschouwd als een pakket met de inhoudsversie. Deze pakketten bevatten HTML-bronnen en HTML-pagina&#39;s die tijdens het renderen van de app worden gegenereerd en zijn intelligent genoeg om alleen die bestanden te verpakken die sinds de laatste update zijn gewijzigd.
 
-De tegels van het inhoudspakket beheren **Type** de kolomvertoningen of &quot;App&quot;om de inhoud van Shell van de Toepassing, bijvoorbeeld kader of infrastructuur van app te betekenen die door een ontwikkelaar wordt geleid of, &quot;Inhoud&quot;die pagina inhoud vertegenwoordigt die door de inhoudauteur wordt beheerd.
+De tegels van het inhoudspakket beheren **Type** de kolomvertoningen of &quot;App&quot;om de inhoud van Shell van de Toepassing te betekenen, bijvoorbeeld, kader of infrastructuur van app die door een ontwikkelaar wordt beheerd of, &quot;Inhoud&quot;die pagina inhoud vertegenwoordigt die door de inhoudauteur wordt beheerd.
 
 Inhoud kan worden weergegeven als een taal of als een bepaald deel van de app waarin meerdere pakketten voor inhoudsrelease worden gebruikt door de app. De manier waarop u uw inhoud bundelt, is flexibel en volledig geschikt voor het beheren van inhoud voor uw toepassing.
 

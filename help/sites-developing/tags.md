@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 feature: Tagging
 exl-id: 6db75405-d957-4714-b75a-9b71c17c89d6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '100'
+source-wordcount: '98'
 ht-degree: 2%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 2%
 
 Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden geclassificeerd door een naamruimte en een taxonomie.
 
-* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
+* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
 * Zie [Tags gebruiken](/help/sites-authoring/tags.md) voor informatie over het labelen van inhoud.
 
 De volgende informatie is beschikbaar voor ontwikkelaars:

@@ -1,31 +1,29 @@
 ---
 title: Workflows toepassen op inhoudspagina's
-description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. het is ook mogelijk meerdere werkstromen toe te passen .
-uuid: 652d9a23-907d-43ad-9eef-7ab1d07918cd
+description: Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina's. Het is ook mogelijk om meerdere workflows toe te passen.
 contentOwner: AEM Docs
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 6472dc94-96e0-4286-8f86-d85726cc843c
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '645'
 ht-degree: 11%
 
 ---
 
 # Workflows toepassen op pagina&#39;s{#applying-workflows-to-pages}
 
-Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina&#39;s. het is ook mogelijk meerdere werkstromen toe te passen .
+Tijdens het ontwerpen kunt u workflows aanroepen om actie te ondernemen op uw pagina&#39;s. Het is ook mogelijk om meerdere workflows toe te passen.
 
 Wanneer u de workflow toepast, geeft u de volgende informatie op:
 
 * De workflow die moet worden toegepast.
 U kunt elke workflow toepassen (waartoe u toegang hebt, zoals is toegewezen door uw AEM-beheerder).
 * Naar keuze, een titel die helpt de werkschemainstantie in Inbox van een gebruiker identificeren.
-* de workflow-lading; dit kan een of meer pagina&#39;s zijn.
+* De nuttige werkstroom. Dit kunnen een of meer pagina&#39;s zijn.
 
 Workflows kunnen worden gestart vanaf:
 
@@ -39,7 +37,6 @@ Workflows kunnen worden gestart vanaf:
 >* [Workflows toepassen op DAM-elementen](/help/assets/assets-workflow.md).
 >* [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md).
 >
-
 
 >[!NOTE]
 >
@@ -83,12 +80,12 @@ Van de **Tijdlijn** u kunt een workflow starten die op de geselecteerde bron moe
 
 De **Workflow maken** De wizard helpt u de workflow te selecteren en de vereiste details op te geven.
 
-Na het openen van het dialoogvenster **Workflow maken** wizard van:
+Na het openen van de **Workflow maken** wizard van:
 
 * [De optie Maken op de werkbalk Sites](#starting-a-workflow-from-the-sites-toolbar).
 * [de tijdlijnrail van de Sites-console](#starting-a-workflow-from-the-timeline).
 
-U kunt details opgeven:
+U kunt details specificeren:
 
 1. In de **Eigenschappen** De basisopties van de workflow worden nu gedefinieerd:
 
@@ -103,6 +100,7 @@ U kunt details opgeven:
    * **Pakkettitel**
 
       * U kunt een titel voor het pakket opgeven om het te identificeren.
+
    >[!NOTE]
    >
    >De optie **Workflowpakket bijhouden** is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere resources en er meerdere resources zijn geselecteerd.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
@@ -113,18 +111,18 @@ U kunt details opgeven:
 
 1. In de **Toepassingsgebied** stap die u kunt selecteren:
 
-   * **Inhoud toevoegen** om de [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) en selecteer aanvullende middelen; wanneer u in de browser klikt of tikt **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
+   * **Inhoud toevoegen** om de [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) en selecteer aanvullende bronnen; klik in de browser op **Selecteren** om de inhoud aan de werkstroominstantie toe te voegen.
 
    * Een bestaande bron voor het weergeven van extra handelingen:
 
-      * **Inclusief kinderen** om te specificeren dat de kinderen van die bron in het werkschema zullen worden omvat.
+      * **Inclusief onderliggende items** om te specificeren dat de kinderen van die bron in het werkschema zullen worden omvat.
 Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis van:
 
          * Alleen directe kinderen opnemen.
          * Alleen gewijzigde pagina&#39;s opnemen.
          * Alleen al gepubliceerde pagina&#39;s opnemen.
 
-         Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
+        Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
 
       * **Selectie verwijderen** om die bron uit de workflow te verwijderen.
 

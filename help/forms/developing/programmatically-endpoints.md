@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10801'
+source-wordcount: '10790'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ Nadat u EJB eindpuntattributen plaatst, kunt u een eindpunt EJB voor de dienst t
 
 **Het eindpunt inschakelen**
 
-Nadat u een nieuw eindpunt creeert, moet u het toelaten. Nadat u het eindpunt toelaat, kan het worden gebruikt om de dienst aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
+Nadat u een eindpunt creeert, moet u het toelaten. Nadat u het eindpunt toelaat, kan het worden gebruikt om de dienst aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
 
 **Zie ook**
 
@@ -213,7 +213,7 @@ Nadat u de eigenschappen van het eindpunt van de ZEEP plaatst, kunt u een eindpu
 
 **Het eindpunt inschakelen**
 
-Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt toegelaten, kan het worden gebruikt om de dienst aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
+Nadat u een eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt toegelaten, kan het worden gebruikt om de dienst aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
 
 **Zie ook**
 
@@ -319,7 +319,7 @@ Om een Gecontroleerd eindpunt van de Omslag voor de dienst tot stand te brengen,
 
 **Configuratiewaarden opgeven**
 
-U moet configuratiewaarden voor een Gecontroleerd eindpunt van de Omslag specificeren wanneer programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst. Deze configuratiewaarden worden gespecificeerd door een beheerder als een Gecontroleerd eindpunt van de Omslag door beleidsconsole wordt toegevoegd te gebruiken.
+Specificeer configuratiewaarden voor een Gecontroleerd eindpunt van de Omslag wanneer programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst. Deze configuratiewaarden worden gespecificeerd door een beheerder als een Gecontroleerd eindpunt van de Omslag door beleidsconsole wordt toegevoegd te gebruiken.
 
 De volgende lijst specificeert configuratiewaarden die wanneer programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst worden geplaatst:
 
@@ -552,7 +552,7 @@ Om een E-maileindpunt voor de dienst tot stand te brengen, specificeer de volgen
 
 **Configuratiewaarden opgeven**
 
-U moet configuratiewaarden voor een E-mail eindpunt specificeren wanneer programmatically het toevoegen van een E-mail eindpunt aan de dienst. Deze configuratiewaarden worden gespecificeerd door een beheerder als een E-maileindpunt gebruikend beleidsconsole wordt toegevoegd.
+Specificeer configuratiewaarden voor een E-mail eindpunt wanneer programmatically het toevoegen van een E-mail eindpunt aan de dienst. Deze configuratiewaarden worden gespecificeerd door een beheerder als een E-maileindpunt gebruikend beleidsconsole wordt toegevoegd.
 
 >[!NOTE]
 >
@@ -811,7 +811,7 @@ Nadat u het Verwijderen eindpuntattributen plaatst, kunt u een Remoting eindpunt
 
 **Het eindpunt inschakelen**
 
-Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer een Remoting eindpunt wordt toegelaten, laat het een cliënt van Flex toe om de dienst aan te halen.
+Nadat u een eindpunt creeert, moet u het toelaten. Wanneer een Remoting eindpunt wordt toegelaten, laat het een cliënt van Flex toe om de dienst aan te halen.
 
 **Zie ook**
 
@@ -899,7 +899,7 @@ Alvorens u een eindpunt kunt programmatically toevoegen TaskManager, moet u tot 
 
 **Een categorie voor het eindpunt maken**
 
-Categorieën worden gebruikt om services in Workspace te organiseren. Namelijk kan een gebruiker van de Werkruimte de dienst aanhalen die een eindpunt TaskManager door een categorie binnen Werkruimte te selecteren heeft. Wanneer het creëren van een eindpunt TaskManager, kunt u of van verwijzingen voorzien een bestaande categorie of programmatically tot een nieuwe categorie leiden.
+Categorieën worden gebruikt om services in Workspace te organiseren. Namelijk kan een gebruiker van de Werkruimte de dienst aanhalen die een eindpunt TaskManager door een categorie binnen Werkruimte te selecteren heeft. Wanneer het creëren van een eindpunt TaskManager, kunt u of van verwijzingen voorzien een bestaande categorie of programmatically tot een categorie leiden.
 
 >[!NOTE]
 >
@@ -922,7 +922,7 @@ Nadat u een taakmanager eindpuntattributen plaatst, kunt u een eindpunt TaskMana
 
 **Het eindpunt inschakelen**
 
-Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt toegelaten, kan het worden gebruikt om de dienst van binnen Werkruimte aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
+Nadat u een eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt toegelaten, kan het worden gebruikt om de dienst van binnen Werkruimte aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
 
 **Zie ook**
 
@@ -1034,7 +1034,7 @@ Wanneer het wijzigen van een eindpunt, specificeer nieuwe configuratiewaarden. B
 
 >[!NOTE]
 >
->U kunt niet de dienst wijzigen die door het eindpunt wordt aangehaald. Als u probeert om de dienst te wijzigen, wordt een uitzondering geworpen. Om de dienst te wijzigen verbonden aan een bepaald eindpunt, verwijder het eindpunt en creeer nieuwe. (Zie [Eindpunten verwijderen](programmatically-endpoints.md#removing-endpoints).)
+>U kunt niet de dienst wijzigen die door het eindpunt wordt aangehaald. Als u probeert om de dienst te wijzigen, wordt een uitzondering geworpen. Om de dienst te wijzigen verbonden aan een bepaald eindpunt, verwijder het eindpunt en creeer één. (Zie [Eindpunten verwijderen](programmatically-endpoints.md#removing-endpoints).)
 
 **Zie ook**
 
@@ -1128,7 +1128,7 @@ U kunt een eindpunt terugwinnen door een lijst van eindpunten terug te winnen. U
 
 **Het eindpunt verwijderen**
 
-Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt toegelaten, kan het worden gebruikt om de dienst aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
+Nadat u een eindpunt creeert, moet u het toelaten. Wanneer het eindpunt wordt toegelaten, kan het worden gebruikt om de dienst aan te halen. Nadat u het eindpunt toelaat, kunt u het binnen beleidsconsole bekijken.
 
 **Zie ook**
 

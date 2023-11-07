@@ -2,7 +2,7 @@
 title: Elementaire componenten
 description: Leer over de Componenten van de Stichting in Adobe Experience Manager 6.5.
 exl-id: 278701f3-3f0c-45f4-90b7-c0e316a7da8a
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '7204'
 ht-degree: 0%
@@ -347,7 +347,7 @@ Met de component Flash kunt u een Flash film laden. U kunt een Flash-element van
 
    * **Venstermodus**
 
-     Hoe het venster eruitziet, bijvoorbeeld dekkend, transparant of als een duidelijk (effen) venster.
+     Hoe het venster er uitziet, bijvoorbeeld dekkend, transparant of als een duidelijk (effen) venster.
 
    * **Achtergrondkleur**
 

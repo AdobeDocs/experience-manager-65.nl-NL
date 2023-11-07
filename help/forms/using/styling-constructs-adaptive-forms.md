@@ -1,7 +1,7 @@
 ---
 title: Constructies voor stijlen voor adaptieve formulieren
 seo-title: Styling constructs for adaptive forms
-description: Gebruik het LESS-framework om de weergave van adaptieve formulieren aan te passen.
+description: Met het LESS-framework kunt u de weergave van aangepaste formulieren aanpassen.
 seo-description: Use LESS framework to customize appearance of adaptive forms.
 uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,16 +10,16 @@ discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2365'
+source-wordcount: '2363'
 ht-degree: 0%
 
 ---
 
 # Constructies voor stijlen voor adaptieve formulieren{#styling-constructs-for-adaptive-forms}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
 ## Vereisten {#prerequisites}
 
@@ -27,7 +27,7 @@ Kennis van CSS en het LESS-framework.
 
 ## Wat kan worden aangepast {#what-can-be-customized}
 
-In het artikel worden openbaar beschikbare CSS-klassen van adaptieve formulieren vermeld. U kunt deze klassen gebruiken om diverse componenten van een adaptief formulier op te maken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten die [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+In het artikel worden openbaar beschikbare CSS-klassen van adaptieve formulieren vermeld. Met deze klassen kunt u diverse componenten van een adaptief formulier opmaken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten die [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
 
 ## Stijlen in aangepaste formulieren aanpassen {#customizing-styles-in-adaptive-forms}
 
@@ -60,7 +60,7 @@ Momenteel zijn LESS-variabelen alleen voor deze eigenschappen van de verschillen
 
 U kunt de weergave, lay-out, positionering en zichtbaarheid van elementen wijzigen. U kunt deze taak uitvoeren door uw aangepaste CSS-bestanden te maken of bij te werken, zodat deze de opmaakconstructies bevatten die in dit artikel worden vermeld.
 
-Als u een stijl wilt toepassen op een adaptief formulier, opent u het adaptieve formulier in voor bewerking, opent u eigenschappen van adaptieve formuliercontainer en geeft u het pad van het aangepaste CSS-bestand op op het tabblad Standaard. Standaardstijlconstructies van het adaptieve formulier die worden overschreven door de constructies in het aangepaste CSS-bestand.
+Als u een stijl wilt toepassen op een adaptief formulier, opent u het adaptieve formulier in voor bewerking, opent u eigenschappen van adaptieve formuliercontainer en geeft u het pad van het aangepaste CSS-bestand op op het tabblad Standaard. Standaardstijlconstructies van het adaptieve formulier die worden overschreven door de constructies in het bestand custom.css.
 
 ## Onderdelen {#components}
 
@@ -131,7 +131,7 @@ Velden zijn labels, widgets, Help-beschrijving (zowel lange als korte beschrijvi
   </tr>
   <tr>
    <td><p><code>field-error-font-color</code></p> </td>
-   <td><p>Lettertypekleur van het foutbericht van het veld</p> </td>
+   <td><p>Fontkleur van de foutmelding van het veld</p> </td>
   </tr>
   <tr>
    <td><p><code>field-error-font-size</code></p> </td>
@@ -281,7 +281,7 @@ Afhankelijk van het type, bevatten widgets ook klassen. Vaak bevatten widgets de
   </tr>
   <tr>
    <td><p><code>listboxwidget-height</code></p> </td>
-   <td><p>Maximumhoogte voor een meerkeuzevrijheid</p> </td>
+   <td><p>Maximumhoogte voor een meerkeuzevervolgkeuzelijst</p> </td>
   </tr>
  </tbody>
 </table>
@@ -347,7 +347,7 @@ De Voorwaarden (TnC) `` ``) kunt u voorwaarden en bepalingen opgeven. U kunt de 
   </tr>
   <tr>
    <td><code>tnc-visited</code></td>
-   <td>Lettertypekleur van bezochte tnc-koppeling.</td>
+   <td>Tekenkleur van bezochte tnc-koppeling.</td>
   </tr>
  </tbody>
 </table>
@@ -419,7 +419,7 @@ HTML code voor knop:
   </tr>
   <tr>
    <td><p><code>button-font-color</code></p> </td>
-   <td><p>Lettertypekleur van de knop</p> </td>
+   <td><p>Tekenkleur van knop</p> </td>
   </tr>
   <tr>
    <td><p><code>button-border-color</code></p> </td>
@@ -537,7 +537,7 @@ U kunt het kleurthema voor koptekst- en tekstrijen in een tabel wijzigen met de 
 
 ## Bestandsbijlage {#file-attachment}
 
-Met de widget Bestandsbijlage van adaptieve formulieren kunt u bestanden uploaden. U kunt de widget ook aanpassen met behulp van de variabelen.
+Met de widget Bestandsbijlage van adaptieve formulieren kunt u bestanden uploaden. U kunt de widget ook aanpassen met de variabelen.
 
 <table>
  <tbody>
@@ -559,7 +559,7 @@ Met de widget Bestandsbijlage van adaptieve formulieren kunt u bestanden uploade
   </tr>
   <tr>
    <td><p><code>fileItemColor</code></p> </td>
-   <td><p>Lettertypekleur voor het bestandstitem</p> </td>
+   <td><p>Fontkleur voor het bestandstitem</p> </td>
   </tr>
   <tr>
    <td><p><code>filePreviewIconColor</code></p> </td>
@@ -567,7 +567,7 @@ Met de widget Bestandsbijlage van adaptieve formulieren kunt u bestanden uploade
   </tr>
   <tr>
    <td><p><code>fileItemCommentHeight</code></p> </td>
-   <td><p>Hoogte van de opmerking voor het bestandstitem</p> </td>
+   <td><p>Hoogte van de opmerking voor het bestandspunt</p> </td>
   </tr>
  </tbody>
 </table>
@@ -753,7 +753,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
   </tr>
   <tr>
    <td><p><code>tabs-hover-font-color</code></p> </td>
-   <td><p>Fontkleur voor tab bij aanwijzen</p> </td>
+   <td><p>Fontkleur voor de tab bij aanwijzen</p> </td>
   </tr>
   <tr>
    <td><p><code>tabs-active-bg-color</code></p> </td>
@@ -825,7 +825,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
   </tr>
   <tr>
    <td><p><code>wizard-tabs-font-color</code></p> </td>
-   <td><p>Fontkleur voor de wizard</p> </td>
+   <td><p>Lettertypekleur voor de wizard</p> </td>
   </tr>
   <tr>
    <td><p><code>wizard-tabs-active-bg-color</code></p> </td>
@@ -890,7 +890,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
  </tbody>
 </table>
 
-## Opmaak voor deelvensters {#panel-styling}
+## Opmaak deelvenster {#panel-styling}
 
 Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
 
@@ -939,12 +939,12 @@ Een deelvenster bevat een optionele werkbalk en de bijbehorende inhoud.
   </tr>
   <tr>
    <td><p><code>panel-help-border-indicator-color</code></p> </td>
-   <td><p>Indicator randkleur voor de hulp van het paneel</p> </td>
+   <td><p>Randkleur voor het deelvenster aangeven</p> </td>
   </tr>
  </tbody>
 </table>
 
-Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Daar `` `` is geen afzonderlijke stijlcomponent voor de inhoud. De beschreven variabelen worden zowel op de navigator als op de inhoud toegepast.
+Het knooppunt van het deelvenster is onderverdeeld in navigators en inhoud. Daar `` `` is geen afzonderlijke stijlcomponent voor de inhoud. De beschreven variabelen worden toegepast op de navigator en de inhoud.
 
 Het bovenste deelvenster (RootPanel) heeft deze klasse niet.
 
@@ -1078,7 +1078,7 @@ Deze variabelen in de volgende tabel zijn van invloed op de vaste indeling van d
 
 ## Themaspecifieke variabele {#theme-specific-variable}
 
-De **Eenvoudige inschrijving** thema op /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie `guide.theme.simpleEnrollment` ook enkele variabelen invoeren. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
+De **Eenvoudige inschrijving** thema op /etc/clientlibs/fd/af/guidetheme/simpleEnrollment en de categorie `guide.theme.simpleEnrollment` ook een aantal variabelen invoeren. Als u een thema wilt creëren dat eenvoudige inschrijving verbetert, kunt u de volgende &quot;extra variabelen gebruiken:
 
 <table>
  <tbody>

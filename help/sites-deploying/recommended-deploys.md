@@ -1,19 +1,15 @@
 ---
 title: Aanbevolen implementaties
-seo-title: Recommended Deployments
 description: Dit artikel beschrijft de geadviseerde topologieën voor AEM.
-seo-description: This article describes the recommended topologies for AEM.
-uuid: bc638121-c531-43eb-9ec6-3283a33519f8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: 66d351e1-87f1-4006-bf8a-3cbbd33db9ed
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1782'
+source-wordcount: '1780'
 ht-degree: 0%
 
 ---
@@ -152,7 +148,7 @@ Het is bijna onmogelijk om te voorspellen wat het precieze gelijktijdige model z
 
 >[!NOTE]
 >
->Tough Day kan worden gebruikt om de prestaties van de toepassing van de klant in de context van de opgestelde hardwareconfiguratie te evalueren. Meer informatie over dit gereedschap is beschikbaar [hier](/help/sites-developing/tough-day.md).
+>U kunt de lange dag gebruiken om de prestaties van de toepassing van de klant in de context van de geïmplementeerde hardwareconfiguratie te evalueren. Meer informatie over dit gereedschap is beschikbaar [hier](/help/sites-developing/tough-day.md).
 
 Een minimumplaatsing met MongoDB zal typisch de volgende topologie impliceren:
 

@@ -12,9 +12,9 @@ discoiquuid: 91833914-b811-4355-a97d-e1a9cb7441f1
 docset: aem65
 role: Admin
 exl-id: 2395c895-c611-43ac-abb6-c2bc4b4a41f4
-source-git-commit: 4dbbcc41757843d3b2d5a3bbb2656ef587e83d2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2220'
+source-wordcount: '2216'
 ht-degree: 0%
 
 ---
@@ -55,11 +55,11 @@ Wanneer een communautaire functie aan een malplaatje van de communautaire plaats
 
 * **Titel**
 
-   (*Vereist*) De tekst die wordt weergegeven in het menu met functies voor de site
+  (*Vereist*) De tekst die wordt weergegeven in het menu met functies voor de site
 
 * **URL**
 
-   (*Vereist*) De naam die wordt gebruikt om de URI te genereren. De naam moet in overeenstemming zijn met de [naamconventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
+  (*Vereist*) De naam die wordt gebruikt om de URI te genereren. De naam moet overeenkomen met de [naamconventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
 
 Als u bijvoorbeeld de site gebruikt die u hebt gemaakt op basis van de [Aan de slag](/help/communities/getting-started.md) zelfstudie, als
 
@@ -84,17 +84,17 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 * [Instellingen voor Titel en URL](#title-and-url-settings)
 
-* **Weergave Mijn activiteiten tonen**
+* **Weergave &quot;Mijn activiteiten&quot; weergeven**
 
-   Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die door het huidige lid binnen de gemeenschap worden gegenereerd. Standaard is geselecteerd.
+  Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die door het huidige lid binnen de gemeenschap worden gegenereerd. Standaard is geselecteerd.
 
 * **Weergave Alle activiteiten tonen**
 
-   Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad dat alle binnen de gemeenschap gegenereerde activiteiten bevat waartoe het huidige lid toegang heeft. Standaard is geselecteerd.
+  Als deze optie is geselecteerd, bevat de pagina Activiteiten een tabblad dat alle binnen de gemeenschap gegenereerde activiteiten bevat waartoe het huidige lid toegang heeft. Standaard is geselecteerd.
 
-* **Weergave Nieuwe feed tonen**
+* **Weergave &quot;News Feed&quot; weergeven**
 
-   Als deze optie is geselecteerd, bevatten de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die het huidige lid volgt. Standaard is geselecteerd.
+  Als deze optie is geselecteerd, bevatten de pagina Activiteiten een tabblad waarop activiteiten worden gefilterd op basis van activiteiten die het huidige lid volgt. Standaard is geselecteerd.
 
 ### Blogfunctie {#blog-function}
 
@@ -108,19 +108,19 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 * **Geprivilegieerde leden toestaan**
 
-   Als deze optie is geselecteerd, kunnen geprivilegieerde leden alleen artikelen maken door de selectie van een [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. Standaard is uitgeschakeld.
+  Als deze optie is geselecteerd, kunnen geprivilegieerde leden alleen artikelen maken door de selectie van een [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
-   Als deze optie is geselecteerd, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is geselecteerd.
+  Als deze optie is geselecteerd, biedt de blog leden de mogelijkheid bestanden te uploaden. Standaard is geselecteerd.
 
 * **Reacties met verbindingen toestaan**
 
-   Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
+  Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
 
 * **Aanbevolen inhoud toestaan**
 
-   Indien geselecteerd, wordt de blog geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Indien geselecteerd, wordt de blog geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Kalenderfunctie {#calendar-function}
 
@@ -134,23 +134,23 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 * **Vastzetten toestaan**
 
-   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
+  Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
 * **Geprivilegieerde leden toestaan**
 
-   Als deze optie is geselecteerd, kunnen geprivilegieerde leden alleen artikelen maken door de selectie van een [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. Standaard is uitgeschakeld.
+  Als deze optie is geselecteerd, kunnen geprivilegieerde leden alleen artikelen maken door de selectie van een [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de community het bestand maken. De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
-   Als deze optie is geselecteerd, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is geselecteerd.
+  Als deze optie is geselecteerd, biedt de blog leden de mogelijkheid bestanden te uploaden. Standaard is geselecteerd.
 
 * **Reacties met verbindingen toestaan**
 
-   Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
+  Als deze optie niet is geselecteerd, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is geselecteerd.
 
 * **Aanbevolen inhoud toestaan**
 
-   Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Functie aanbevolen inhoud {#featured-content-function}
 
@@ -180,29 +180,29 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 * **Vastzetten toestaan**
 
-   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
+  Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
 * **Geprivilegieerde leden toestaan**
 
-   Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+  Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
-   Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
+  Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
 
 * **Reacties met verbindingen toestaan**
 
-   Als deze optie niet is geselecteerd, staat het forum commentaar op een onderwerp toe, maar zijn antwoorden op deze opmerkingen niet toegestaan. Standaard is geselecteerd.
+  Als deze optie niet is geselecteerd, staat het forum commentaar op een onderwerp toe, maar zijn antwoorden op deze opmerkingen niet toegestaan. Standaard is geselecteerd.
 
 * **Aanbevolen inhoud toestaan**
 
-   Indien geselecteerd, wordt de inhoud van de component geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Indien geselecteerd, wordt de inhoud van de component geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Functie Groepen {#groups-function}
 
 >[!CAUTION]
 >
->De groepfunctie moet *niet* zijn *alleen* functioneren in de structuur van een site of in een sjabloon voor een community-site.
+>De groepfunctie moet *niet* zijn *eerst of alleen* functioneren in de structuur van een site of in een sjabloon voor een community-site.
 >
 >Elke andere functie, zoals de [page, functie](#page-function), moet worden opgenomen en als eerste worden vermeld.
 
@@ -222,15 +222,15 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 * **Groepssjablonen selecteren**
 
-   Een drop-down die selectie van één of meerdere toegelaten groepsmalplaatjes toestaat waarvan de toekomstige schepper van een nieuwe communautaire groep (in het publicatiemilieu) kan kiezen.
+  Een drop-down die selectie van één of meerdere toegelaten groepsmalplaatjes toestaat waarvan de toekomstige schepper van een nieuwe communautaire groep (in het publicatiemilieu) kan kiezen.
 
 * **Geprivilegieerde leden toestaan**
 
-   Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [veiligheidsgroep van geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+  Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [veiligheidsgroep van geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
 * **Publiceren toestaan**
 
-   Als deze optie is geselecteerd, kunnen geautoriseerde leden van de gemeenschap een groep maken in de publicatieomgeving. Als deze optie niet is geselecteerd, kunnen alleen nieuwe groepen (subgemeenschappen) worden gemaakt in de auteursomgeving van de console Groepen van sites van de Gemeenschappen.
+  Als deze optie is geselecteerd, kunnen geautoriseerde leden van de gemeenschap een groep maken in de publicatieomgeving. Als deze optie niet is geselecteerd, kunnen alleen nieuwe groepen (subgemeenschappen) worden gemaakt in de auteursomgeving van de console Groepen van sites van de Gemeenschappen.
 Standaard is geselecteerd.
 
 ### Idealisatiefunctie {#ideation-function}
@@ -245,25 +245,25 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met d
 
 * **Geprivilegieerde leden toestaan**
 
-   Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [veiligheidsgroep van geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+  Indien geselecteerd, staat het forum slechts bevoorrechte leden toe om onderwerpen te posten door selectie van toe te staan [veiligheidsgroep van geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
-   Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
+  Als deze optie is geselecteerd, kunnen leden bestanden uploaden. Standaard is geselecteerd.
 
 * **Reacties met verbindingen toestaan**
 
-   Als deze optie niet is geselecteerd, kunnen reacties (opmerkingen) op een onderwerp worden geplaatst, maar kunnen opmerkingen niet worden beantwoord. Standaard is geselecteerd.
+  Als deze optie niet is geselecteerd, kunnen reacties (opmerkingen) op een onderwerp worden geplaatst, maar kunnen opmerkingen niet worden beantwoord. Standaard is geselecteerd.
 
 * **Aanbevolen inhoud toestaan**
 
-   Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ### Leaderboard-functie {#leaderboard-function}
 
 De leaderboardfunctie is een pagina met één pagina [Leaderboard-component](/help/communities/enabling-leaderboard.md).
 
-**OPMERKING**: De Leaderboard-component moet verder worden geconfigureerd *na* Er wordt een community-site gemaakt op basis van een communitysjabloon die de Leaderboard-functie bevat. De Leaderboard-componenten opgeven [regels](/help/communities/enabling-leaderboard.md#rules-tab), die afhankelijk zijn van de configuratie van [scoring en badges](/help/communities/implementing-scoring.md) voor de site van de community.
+**OPMERKING**: De component Leaderboard moet verder worden geconfigureerd *na* Er wordt een community-site gemaakt op basis van een communitysjabloon die de Leaderboard-functie bevat. De Leaderboard-componenten opgeven [regels](/help/communities/enabling-leaderboard.md#rules-tab), die afhankelijk zijn van de configuratie van [scoring en badges](/help/communities/implementing-scoring.md) voor de site van de community.
 
 Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met de standaardnamen voor Titel en URL en de standaardweergave-instellingen voor de sjabloon:
 
@@ -273,22 +273,22 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met d
 
 * **Badge weergeven**
 
-   Als deze optie is geselecteerd, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
-Standaard is uitgeschakeld.
+  Als deze optie is geselecteerd, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
+De optie Standaard is uitgeschakeld.
 
 * **Naam van badge weergeven**
 
-   Als deze optie is geselecteerd, wordt een kolom met de naam van de badge in het leaderboard opgenomen.
-Standaard is uitgeschakeld.
+  Als deze optie is geselecteerd, wordt een kolom met de naam van de badge in het leaderboard opgenomen.
+De optie Standaard is uitgeschakeld.
 
 * **Avatar weergeven**
 
-   Als deze optie is geselecteerd, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
-Standaard is uitgeschakeld.
+  Als deze optie is geselecteerd, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
+De optie Standaard is uitgeschakeld.
 
 ### Paginacode {#page-function}
 
-De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: aanmelden, menu, meldingen, berichten, berichten, thema&#39;s en branding. Inhoud wordt aan de pagina toegevoegd met de [standaard AEM ontwerpmodus](/help/sites-authoring/editing-content.md).
+De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: login, menu, berichten, overseinen, thema en branding. Inhoud wordt aan de pagina toegevoegd met de [standaard AEM ontwerpmodus](/help/sites-authoring/editing-content.md).
 
 Wanneer toegevoegd aan een malplaatje, is de enige configuratie voor [Instellingen voor Titel en URL](#title-and-url-settings).
 
@@ -304,23 +304,23 @@ Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoo
 
 * **Vastzetten toestaan**
 
-   Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
+  Indien geselecteerd, laat het forum onderwerpantwoorden toe om aan het begin van de lijst van commentaren worden vastgezet. Standaard is geselecteerd.
 
 * **Geprivilegieerde leden toestaan**
 
-   Indien geselecteerd, staat het forum QnA slechts bevoorrechte leden toe om vragen te posten door selectie van toe te staan [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. Standaard is uitgeschakeld.
+  Indien geselecteerd, staat het forum QnA slechts bevoorrechte leden toe om vragen te posten door selectie van toe te staan [groep geprivilegieerde leden](/help/communities/users.md#privileged-members-group). Als deze optie niet is geselecteerd, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
 * **Uploaden van bestanden toestaan**
 
-   Indien geselecteerd, omvat het forum QnA de capaciteit voor leden om dossiers te uploaden. Standaard is geselecteerd.
+  Indien geselecteerd, omvat het forum QnA de capaciteit voor leden om dossiers te uploaden. Standaard is geselecteerd.
 
 * **Reacties met verbindingen toestaan**
 
-   Als deze optie niet is geselecteerd, kan op het QnA-forum commentaar (antwoorden) worden gegeven op een geposte vraag, maar antwoorden op antwoorden zijn niet toegestaan. Standaard is geselecteerd.
+  Als deze optie niet is geselecteerd, kan op het QnA-forum commentaar (antwoorden) worden gegeven op een geposte vraag, maar antwoorden op antwoorden zijn niet toegestaan. Standaard is geselecteerd.
 
 * **Aanbevolen inhoud toestaan**
 
-   Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
+  Indien geselecteerd, wordt de inhoud ervan geïdentificeerd als [aanbevolen inhoud](/help/communities/featured.md). Standaard is geselecteerd.
 
 ## Community-functie maken {#create-community-function}
 
@@ -336,15 +336,15 @@ In het deelvenster Community Function Name worden een naam, beschrijving en of d
 
 * **Community-functienaam**
 
-   De functienaam die wordt gebruikt voor weergave en opslag.
+  De functienaam die wordt gebruikt voor weergave en opslag.
 
 * **Beschrijving van functie Gemeenschap**
 
-   De functiebeschrijving voor de weergave.
+  De functiebeschrijving voor de weergave.
 
 * **Uitgeschakeld/Ingeschakeld**
 
-   Een schakeloptie die bepaalt of naar de functie kan worden verwezen.
+  Een schakeloptie die bepaalt of naar de functie kan worden verwezen.
 
 ### AEM {#aem-blueprint}
 
@@ -354,7 +354,7 @@ Op de `AEM Blueprint` is het mogelijk de blauwdruk te selecteren die de onderlig
 
 De functie van de gemeenschap is een mini plaats die één of meerdere pagina&#39;s omvat, die voor opneming in een communautaire plaats met inbegrip van login, gebruikersprofielen, berichten, overseinen, plaatsmenu, onderzoek, thema, en branding eigenschappen vooraf worden getelegrafeerd. Wanneer de functie is gemaakt, is het mogelijk om [open de functie](#open-community-function) in de bewerkingsmodus van de auteur en pas de pagina- of componentinstellingen aan.
 
-Aangezien de communautaire functie als [live kopie](/help/sites-administering/msm.md#live-copies) van [blauwdruk](/help/sites-administering/msm-livecopy.md#creatingablueprint), is het mogelijk wijzigingen door te voeren die zijn aangebracht in een functie die van invloed is op alle pagina&#39;s van de gemeenschapssite die zijn gemaakt op basis van de [sjabloon voor community-site](/help/communities/sites.md) of [communitygroepsjabloon](/help/communities/tools-groups.md) dat de functie omvatte. Het is ook mogelijk om een pagina los te koppelen van de bovenliggende blauwdruk om wijzigingen op paginaniveau aan te brengen.
+Aangezien de communautaire functie als [live kopie](/help/sites-administering/msm.md#live-copies) van een [blauwdruk](/help/sites-administering/msm-livecopy.md#creatingablueprint), is het mogelijk wijzigingen door te voeren die zijn aangebracht in een functie die van invloed is op alle pagina&#39;s van de gemeenschapssite die zijn gemaakt op basis van de [sjabloon voor community-site](/help/communities/sites.md) of [communitygroepsjabloon](/help/communities/tools-groups.md) dat de functie omvatte. Het is ook mogelijk om een pagina los te koppelen van de bovenliggende blauwdruk om wijzigingen op paginaniveau aan te brengen.
 
 Zie ook [Beheer van meerdere sites](/help/sites-administering/msm.md).
 
@@ -366,9 +366,9 @@ In het deelvenster Miniatuur kan een afbeelding worden geüpload om te worden we
 
 ## Community-functie openen {#open-community-function}
 
-![open-functie](assets/open-function.png)
+![open functie](assets/open-function.png)
 
-Selecteer `Open Community Function` pictogram om de bewerkingsmodus voor auteurs in te schakelen voor het ontwerpen van de pagina-inhoud en het wijzigen van de configuratie van de component(en) met functies.
+Selecteer de `Open Community Function` pictogram om de bewerkingsmodus voor auteurs in te schakelen voor het ontwerpen van de pagina-inhoud en het wijzigen van de configuratie van de component(en) met functies.
 
 ### Componenten configureren {#configuring-components}
 
@@ -384,4 +384,4 @@ Voor configuratiedetails, bezoek [Community-componenten](/help/communities/autho
 
 ![bewerken, functie](assets/edit-function.png)
 
-Selecteer `Edit Community Function` pictogram om de eigenschappen van de functie te bewerken met dezelfde deelvensters als [gemeenschapsfunctie maken](#create-community-function), inclusief het inschakelen of uitschakelen van de functie.
+Selecteer de `Edit Community Function` pictogram om de eigenschappen van de functie te bewerken met dezelfde deelvensters als [gemeenschapsfunctie maken](#create-community-function), inclusief het inschakelen of uitschakelen van de functie.

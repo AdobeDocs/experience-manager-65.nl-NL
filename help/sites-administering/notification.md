@@ -1,18 +1,14 @@
 ---
 title: E-mailmelding configureren
-seo-title: Configuring Email Notification
 description: Leer hoe u e-mailmeldingen configureert in Adobe Experience Manager.
-seo-description: Learn how to configure Email Notification in AEM.
-uuid: 6cbdc312-860b-4a69-8bbe-2feb32204a27
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2067'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 AEM stuurt e-mailmeldingen naar gebruikers die:
 
-* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld aanpassing of replicatie. De [Melding in vak](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) in deze sectie wordt beschreven hoe u zich op dergelijke gebeurtenissen kunt abonneren.
+* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld, wijziging of replicatie. De [Melding in vak](/help/sites-classic-ui-authoring/author-env-inbox.md#subscribing-to-notifications) in deze sectie wordt beschreven hoe u zich op dergelijke gebeurtenissen kunt abonneren.
 
 * Hebt u zich geabonneerd op forumgebeurtenissen.
 * Een stap in een werkstroom uitvoeren. De [Stap deelnemer](/help/sites-developing/workflows-step-ref.md#participant-step) in deze sectie wordt beschreven hoe u e-mailmeldingen in een workflow kunt activeren.
@@ -36,11 +32,11 @@ Wanneer een gebruiker op de hoogte wordt gesteld, ontvangt hij een e-mail in de 
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 ## De e-mailservice configureren {#configuring-the-mail-service}
 
-Als AEM e-mailberichten wilt kunnen verzenden, **Day CQ Mail Service** moet correct worden geconfigureerd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+Als AEM e-mailberichten wilt kunnen verzenden, **Day CQ Mail Service** moet correct worden geconfigureerd. U kunt de configuratie in de console van het Web bekijken. Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 De volgende beperkingen zijn van toepassing:
 
@@ -361,7 +357,7 @@ Bevestig ten slotte de configuratie door:
 1. Ga vervolgens naar **Certificaten en geheimen**, klikt u op **Nieuw clientgeheim** en volg de stappen op het scherm om een geheim te maken. Let op dit geheim voor later gebruik
 1. Druk **Overzicht** in het linkerdeelvenster en kopieer de waarden voor **Toepassings-id (client)** en **Directory (huurder)-id** voor later gebruik
 
-Om opnieuw te verpakken, zult u aan de volgende informatie nodig hebben om OAuth2 voor de dienst van de Aannemer op de AEM te vormen:
+Om opnieuw te verpakken, moet u de volgende informatie hebben om OAuth2 voor de dienst van de Aannemer op de AEM te vormen:
 
 * Auth URL, die met huurderidentiteitskaart zal worden geconstrueerd. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/authorize`
 * De token-URL, die wordt samengesteld met de huurder-id. Het heeft de volgende vorm: `https://login.microsoftonline.com/<tenantID>/oauth2/v2.0/token`

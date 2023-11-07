@@ -10,9 +10,9 @@ discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '772'
 ht-degree: 1%
 
 ---
@@ -153,8 +153,8 @@ Gebruik workflowmodellen voor bulkverwerking van geconverteerde startpagina&#39;
 1. Wanneer auteurs startpagina&#39;s promoten, slaan ze deze op in het workflowpakket.
 1. Start een workflowmodel met het pakket als de payload.
 
-Als u automatisch een workflow wilt starten wanneer pagina&#39;s worden geconverteerd, [configureren van een workflow](/help/sites-administering/workflows-starting.md#workflows-launchers) voor het pakketknooppunt.
+Als u automatisch een workflow wilt starten wanneer pagina&#39;s worden geconverteerd, [configureren van workflow-starter](/help/sites-administering/workflows-starting.md#workflows-launchers) voor het pakketknooppunt.
 
-U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
+U kunt bijvoorbeeld automatisch aanvragen voor paginanactivering genereren wanneer auteurs pagina&#39;s voor Starten promoten. Configureer een werkstroomstartprogramma om de workflow voor activering van aanvragen te starten wanneer het pakketknooppunt wordt gewijzigd.
 
 ![Workflow starten](assets/chlimage_1-108.png)

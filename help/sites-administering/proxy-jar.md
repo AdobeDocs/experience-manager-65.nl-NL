@@ -7,7 +7,7 @@ topic-tags: operations
 content-type: reference
 docset: aem65
 exl-id: 3df50303-5cdd-4df0-abec-80831d2ccef7
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 0%
@@ -82,7 +82,7 @@ Controleren of in leven houden werkt:
 
 **Verzoeken om verlies zoeken**
 
-Als u verzoeken in een complexe serverinstelling verliest, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
+Als u verzoeken verliest in een complexe serverinstelling, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
 
 1. Een proxy starten voor een firewall
 1. Een andere proxy starten na een firewall

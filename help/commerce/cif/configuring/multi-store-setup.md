@@ -7,7 +7,7 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Voer de onderstaande stappen uit om een AEM-site te verbinden en CIF Core Compon
 4. Wijs de kindconfiguratie aan een AEM plaats toe
 
    * Ga naar de AEM Sites-console
-   * Navigeer naar het gebied of de taalhoofdmap van de sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
+   * Navigeer naar de hoofdmap of hoofdtaal van uw sitestructuur, bijvoorbeeld /content/venia/us _of_ /content/venia/us/nl voor de voorbeeldpagina van Venia
    * Selecteer de pagina en open de pagina-eigenschappen
    * Selecteer het tabblad Geavanceerd
    * In de `Configuration` sectie, selecteer de configuratie die u bij stap creeerde

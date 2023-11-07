@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 1ea9d8fe-602c-452b-9a24-4125b705aedf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1351'
+source-wordcount: '1350'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Deze procedure lijkt op [digitale elementen toevoegen als verwijzingen in Adobe 
 
 ### Verwijzingen naar elementen maken door een ZIP-bestand te exporteren {#create-references-to-aem-assets-by-exporting-a-zip-file}
 
-1. Voer de stappen uit in [Workflowmodellen maken](/help/sites-developing/workflows-models.md) om een nieuwe workflow te maken.
+1. Voer de stappen uit in [Workflowmodellen maken](/help/sites-developing/workflows-models.md) om een workflow te maken.
 1. Gebruik de [Pakketfunctie](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) van [!DNL Adobe InDesign] om het document te exporteren. [!DNL Adobe InDesign] U kunt een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een `Links` map met subelementen in het dialoogvenster [!DNL InDesign] bestand. De `Links` is aanwezig in dezelfde map als het INDD-bestand.
 1. Een ZIP-bestand maken en uploaden naar het [!DNL Experience Manager] opslagplaats.
 1. Start de `Unarchiver` workflow.

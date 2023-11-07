@@ -2,7 +2,7 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 3ec34efc14cc49d0f45cb4b175573c33c1cc232e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1966'
 ht-degree: 0%
@@ -124,7 +124,7 @@ This capability allows AEM to further cache content within the scope of GraphQL 
 
 **Further Reference**
 
-Please contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
+Contact Adobe to enable this capability for your AEM Cloud Service program and environments. 
 -->
 
 ### GraphQL Query-optimalisatie {#graphql-query-optimization}

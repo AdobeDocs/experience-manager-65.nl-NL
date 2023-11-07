@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1581'
+source-wordcount: '1573'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Dankzij deze integratie kunnen AEM en Adobe Campaign Classic onafhankelijk worde
 
 ## Integratiestappen {#integration-steps}
 
-De integratie tussen AEM en Campagne vereist een aantal stappen in beide oplossingen.
+De integratie tussen AEM en Campagne vereist verscheidene stappen in beide oplossingen.
 
 1. [Installeer het AEM integratiepakket in de campagne.](#install-package)
 1. [Een operator maken voor AEM in campagne](#create-operator)
@@ -41,12 +41,12 @@ Dit document leidt u door elk van deze stappen in detail.
 
 * Toegang tot Adobe Campaign Classic voor beheerders
    * Om de integratie uit te voeren, hebt u een werkende instantie van Adobe Campaign Classic, met inbegrip van een gevormd gegevensbestand nodig.
-   * Raadpleeg voor meer informatie over het instellen en configureren van Adobe Campaign Classic de [Adobe Campaign Classic-documentatie;](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) met name de gids Installatie en Configuratie.
+   * Als u meer informatie nodig hebt over het instellen en configureren van Adobe Campaign Classic, raadpleegt u de [Adobe Campaign Classic-documentatie;](https://experienceleague.adobe.com/docs/campaign-classic/using/campaign-classic-home.html) met name de gids Installatie en Configuratie.
 * Toegang tot AEM beheerder
 
 ## Het AEM integratiepakket in de campagne installeren {#install-package}
 
-De **AEM integratie** -pakket in Adobe Campaign bevat een aantal standaardconfiguraties die nodig zijn om verbinding te maken met AEM.
+De **AEM integratie** -pakket in Adobe Campaign bevat diverse standaardconfiguraties die nodig zijn om verbinding te maken met AEM.
 
 1. Meld u als beheerder aan bij de Adobe Campaign-instantie met de clientconsole.
 
@@ -112,7 +112,7 @@ Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt 
    >
    >Door gebrek, is er geen veiligheidsstreek die voor de exploitant wordt gevormd. Als u AEM verbinding wilt maken met Adobe Campaign, moet u een zone selecteren zoals in de vorige stappen wordt beschreven.
    >
-   >Adobe beveelt ten zeerste aan een veiligheidszone in te stellen die is gewijd aan AEM om veiligheidsproblemen te voorkomen. Raadpleeg voor meer informatie over dit onderwerp de [Adobe Campaign Classic-documentatie.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
+   >Adobe beveelt ten zeerste aan een veiligheidszone in te stellen die is gewijd aan AEM om veiligheidsproblemen te voorkomen. Voor meer informatie over dit onderwerp raadpleegt u de [Adobe Campaign Classic-documentatie.](https://experienceleague.adobe.com/docs/campaign-classic/using/installing-campaign-classic/additional-configurations/security-zones.html)
 
 1. Ga in de Campagne-client terug naar de `aemserver` en selecteert u de **Algemeen** tab.
 

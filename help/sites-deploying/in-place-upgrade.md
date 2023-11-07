@@ -4,9 +4,9 @@ description: Leer hoe u een upgrade ter plekke uitvoert voor AEM 6.5.
 topic-tags: upgrading
 feature: Upgrading
 exl-id: aef6ef00-993c-4252-b0ad-ddc4917beaf7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1242'
+source-wordcount: '1238'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Zie [Code en aanpassingen bijwerken](/help/sites-deploying/upgrading-code-and-customizations.md) en [Onderhoudstaken vóór upgrade](/help/sites-deploying/pre-upgrade-maintenance-tasks.md) voor meer informatie . Zorg er bovendien voor dat uw systeem voldoet aan de vereisten voor de nieuwe versie van AEM. Zie hoe u de complexiteit van uw upgrade kunt inschatten met behulp van Patroondetector en ook de sectie Upgradebereik en -vereisten van [Uw upgrade plannen](/help/sites-deploying/upgrade-planning.md) voor meer informatie .
 
-<!--Finally, note that the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
+<!--Finally, the downtime during the upgrade can be significally reduced by indexing the repository **before** performing the upgrade. For more information, see [Using Offline Reindexing To Reduce Downtime During an Upgrade](/help/sites-deploying/upgrade-offline-reindexing.md)-->
 
 ## Migratievereisten {#migration-prerequisites}
 
@@ -161,13 +161,13 @@ Wanneer `/path/to/datastore` geeft het pad naar uw gegevensopslagruimte voor bes
 
 ### Bepaal het correcte bevel van het verbeteringsbegin {#determining-the-correct-upgrade-start-command}
 
-Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaat gebruiken om de instantie op te roepen. Voor een upgrade naar 6.5 kunt u ook andere opties voor inhoudsherstructurering en migratie bekijken in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) die u met het verbeteringsbevel kunt kiezen.
+Als u de upgrade wilt uitvoeren, is het belangrijk dat u AEM het jar-bestand gaat gebruiken om de instantie op te roepen. Voor een upgrade naar 6.5 raadpleegt u de overige opties voor het herstructureren van inhoud en migratie in [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) die u met het verbeteringsbevel kunt kiezen.
 
 >[!IMPORTANT]
 >
->Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, zullen de extra schakelaars aan uw bevellijn moeten worden toegevoegd wanneer het beginnen van AEM. Zie voor meer informatie [Overwegingen bij Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
+>Als u Oracle Java 11 (of over het algemeen versies van Java nieuwer dan 8) in werking stelt, moeten de extra schakelaars aan uw bevellijn worden toegevoegd wanneer het beginnen van AEM. Zie voor meer informatie [Overwegingen bij Java 11](/help/sites-deploying/custom-standalone-install.md#java-considerations).
 
-Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, enz. te omvatten. Om deze reden, adviseert de Adobe na deze procedure om het juiste verbeteringsbevel te bepalen:
+Merk op dat het beginnen van AEM van het beginmanuscript niet de verbetering zal beginnen. De meeste klanten beginnen AEM het beginmanuscript te gebruiken en hebben dit beginmanuscript aangepast om schakelaars voor omgevingsconfiguraties zoals geheugenmontages, veiligheidscertificaten, etc. te omvatten. Om deze reden, adviseert de Adobe na deze procedure om het juiste verbeteringsbevel te bepalen:
 
 1. Voer bij een actieve AEM de volgende handelingen uit vanaf de opdrachtregel:
 

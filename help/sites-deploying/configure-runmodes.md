@@ -1,26 +1,22 @@
 ---
 title: Modi uitvoeren
-seo-title: Run Modes
 description: Leer hoe u uw AEM voor specifieke doeleinden kunt afstemmen met behulp van runmodi.
-seo-description: Learn how to tune your AEM instance for specific purposes by using run modes.
-uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: configuring
 content-type: reference
-discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '745'
+source-wordcount: '744'
 ht-degree: 0%
 
 ---
 
 # Modi uitvoeren{#run-modes}
 
-De wijzen van de looppas laten u uw AEM instantie voor een specifiek doel stemmen; bijvoorbeeld auteur of publiceren, test, ontwikkeling, Intranet of anderen.
+Met uitvoeringsmodi kunt u de AEM voor een bepaald doel instellen, bijvoorbeeld auteur of publicatie, test, ontwikkeling, intranet of andere.
 
 U kunt:
 
@@ -153,7 +149,7 @@ java -jar cq-56-p4545.jar -r dev
 
 Een systeemeigenschap in het beginscript kan worden gebruikt om de uitvoermodus op te geven.
 
-* Gebruik bijvoorbeeld het volgende om een instantie te starten als een publicatie-instantie voor productie die zich in de VS bevindt:
+* Gebruik bijvoorbeeld het volgende om een instantie te starten als een publicatie-instantie voor productie in de VS:
 
   `-Dsling.run.modes=publish,prod,us`
 

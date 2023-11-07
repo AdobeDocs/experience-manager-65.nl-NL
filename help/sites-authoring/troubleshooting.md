@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 exl-id: 05586b17-35d4-496e-8f0e-293c755eb066
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '295'
+source-wordcount: '294'
 ht-degree: 10%
 
 ---
@@ -25,7 +25,7 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 >[!NOTE]
 >
->Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de in [AEM voor probleemoplossing (voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
+>Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de in [AEM voor probleemoplossing (voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet genoeg voorrechten hebt, zie uw systeembeheerder over het oplossen van AEM.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
@@ -46,8 +46,8 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
       * `http://localhost:4502/sites.html/content?`
       * Hiermee wordt de pagina rechtstreeks bij AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
-   * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 
+   * Neem contact op met uw systeembeheerder als er problemen zijn met de replicatiestijden.
 
 ## Componenthandelingen niet zichtbaar op werkbalk {#component-actions-not-visible-on-toolbar}
 

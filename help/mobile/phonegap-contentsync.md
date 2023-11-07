@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 docset: aem65
 exl-id: 2cadd9c5-4335-48d0-8d1c-941fca717409
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2959'
+source-wordcount: '2957'
 ht-degree: 0%
 
 ---
@@ -287,7 +287,7 @@ Let erop dat de *fabriek* De definitie bevat de gemeenschappelijke interface en 
 
 ### Een aangepaste updatehandler implementeren {#implementing-a-custom-update-handler}
 
-Elke pagina Web.Retail Mobile bevat een logo in de linkerbovenhoek dat we natuurlijk in het ZIP-bestand willen opnemen. Voor het optimaliseren van de cache verwijst AEM echter niet naar de werkelijke locatie van het afbeeldingsbestand in de opslagplaats, wat ons belet om de **kopiëren** configuratietype. Wat we moeten doen, is onze eigen middelen inzetten **logo** configuratietype dat de afbeelding beschikbaar maakt op de locatie die door AEM wordt gevraagd. In het volgende codevoorbeeld wordt de volledige implementatie van de logo-updatehandler getoond:
+Elke pagina Web.Retail Mobile bevat een logo in de linkerbovenhoek dat we in het ZIP-bestand willen opnemen. Voor het optimaliseren van de cache verwijst AEM echter niet naar de werkelijke locatie van het afbeeldingsbestand in de opslagplaats, wat ons belet om de **kopiëren** configuratietype. Wat we moeten doen, is onze eigen middelen inzetten **logo** configuratietype dat de afbeelding beschikbaar maakt op de locatie die door AEM wordt gevraagd. In het volgende codevoorbeeld wordt de volledige implementatie van de logo-updatehandler getoond:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 

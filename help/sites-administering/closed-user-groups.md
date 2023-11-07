@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6836'
+source-wordcount: '6818'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Sinds AEM 6.3, is er een nieuwe gesloten implementatie van de Groep van de Gebru
 
 >[!NOTE]
 >
->Ter wille van de eenvoud wordt de CUG-afkorting in deze documentatie gebruikt.
+>Ter wille van de eenvoud wordt in deze documentatie de afkorting CUG gebruikt.
 
 Het doel van de nieuwe implementatie is om waar nodig bestaande functionaliteit te bestrijken en tegelijkertijd problemen en ontwerpbeperkingen van oudere versies aan te pakken. Het resultaat is een nieuw ontwerp van CUG met de volgende kenmerken:
 
@@ -207,7 +207,7 @@ Het nieuwe type toegangsbeheerbeleid om gelezen toegang voor een KUG te beperken
 
 #### Een nieuw CUG-beleid instellen {#set-a-new-cug-policy}
 
-Code om een nieuw beleid van de GECG op een knoop toe te passen die geen KUG had eerder geplaatst. Houd er rekening mee dat `getApplicablePolicies` alleen nieuwe beleidsvormen terugsturen die nog niet eerder zijn vastgesteld. Uiteindelijk moet het beleid worden teruggeschroefd en moeten de veranderingen worden voortgezet.
+Code om een nieuw beleid van de GECG op een knoop toe te passen die geen KUG had eerder geplaatst. Let op: `getApplicablePolicies` retourneert alleen nieuw beleid dat nog niet eerder is ingesteld. Uiteindelijk moet het beleid worden teruggeschroefd en moeten de veranderingen worden voortgezet.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -243,7 +243,7 @@ session.save();
 
 #### Een bestaand CUG-beleid bewerken {#edit-an-existing-cug-policy}
 
-De volgende stappen zijn nodig om een bestaand beleid van CUG uit te geven. Houd er rekening mee dat het gewijzigde beleid moet worden teruggeschreven en dat de wijzigingen moeten worden voortgezet met `javax.jcr.Session.save()`.
+De volgende stappen zijn nodig om een bestaand beleid van CUG uit te geven. Het gewijzigde beleid moet worden teruggeschreven en de veranderingen moeten worden voortgezet gebruikend `javax.jcr.Session.save()`.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -281,7 +281,7 @@ Het beheer van het toegangsbeheer JCR bepaalt een beste inspanningsmethode om he
 
 >[!NOTE]
 >
->Let op het verschil tussen `getEffectivePolicies` en het verdere codevoorbeeld dat omhoog de hiërarchie loopt om te vinden of maakt een bepaalde weg reeds deel uit van een bestaande KUG.
+>Het verschil tussen `getEffectivePolicies` en het verdere codevoorbeeld dat omhoog de hiërarchie loopt om te vinden of maakt een bepaalde weg reeds deel uit van een bestaande KUG.
 
 ```java
 String path = [...] // needs to be a supported, absolute path
@@ -338,7 +338,7 @@ Het creëren, de wijziging, of de verwijdering van een nieuw authentificatievere
 
 #### Nieuwe auteisen toevoegen {#adding-a-new-auth-requirement}
 
-De stappen om een nieuw authentificatievereiste tot stand te brengen zijn hieronder gedetailleerd. Merk op dat het vereiste alleen bij de Apache Sling Authenticator wordt geregistreerd als de `RequirementHandler` is gevormd voor de boom die de doelknoop bevatten.
+De stappen om een authentificatievereiste tot stand te brengen zijn hieronder gedetailleerd. De vereiste wordt alleen geregistreerd bij de Apache Sling Authenticator als de `RequirementHandler` is gevormd voor de boom die de doelknoop bevatten.
 
 ```java
 Node targetNode = [...]
@@ -349,7 +349,7 @@ session.save();
 
 #### Voeg een Nieuwe Vereiste van de Auth met Login Weg toe {#add-a-new-auth-requirement-with-login-path}
 
-Stappen om een nieuw authentificatievereiste met inbegrip van een login weg tot stand te brengen. Merk op dat het vereiste en de uitsluiting voor de login weg slechts met de Authenticator van de Apache Sling zullen worden geregistreerd als `RequirementHandler` is gevormd voor de boom die de doelknoop bevatten.
+Stappen om een authentificatievereiste met inbegrip van een login weg tot stand te brengen. Merk op dat het vereiste en de uitsluiting voor de login weg slechts met de Authenticator van de Apache Sling zullen worden geregistreerd als `RequirementHandler` is gevormd voor de boom die de doelknoop bevatten.
 
 ```java
 Node targetNode = [...]
@@ -582,7 +582,7 @@ De beschikbare configuratieopties verbonden aan de CUG-vergunningsmodule zijn ve
 
 #### Exclusief de hoofden van de CUG-evaluatie {#excluding-principals-from-cug-evaluation}
 
-Van de vorige uitvoering zijn individuele beginselen van de CUG-evaluatie vrijgesteld. De nieuwe vergunning van de GECG behandelt dit met een specifieke interface genoemd CugExclude. Apache Jackrabbit Oak 1.4 schepen met een standaardimplementatie die een vaste reeks principes evenals een uitgebreide implementatie uitsluit die individuele belangrijkste namen toestaat te vormen. De laatste is geconfigureerd in AEM publicatieinstanties.
+Van de vorige uitvoering zijn individuele beginselen van de CUG-evaluatie vrijgesteld. De nieuwe vergunning van de GECG behandelt dit met een specifieke interface genoemd CugExclude. Apache Jackrabbit Oak 1.4 schepen met een standaardimplementatie die een vaste reeks principes en een uitgebreide implementatie uitsluit die individuele belangrijkste namen toestaat te vormen. De laatste is geconfigureerd in AEM publicatieinstanties.
 
 Het gebrek sinds AEM 6.3 verhindert de volgende hoofden door beleid van de GN worden beïnvloed:
 
@@ -768,11 +768,11 @@ Het configureren van CUG&#39;s in combinatie met LiveCopy wordt in de opslagplaa
 
 Beide elementen worden gemaakt onder de `cq:Page`. Met het huidige ontwerp, behandelt MSM slechts knopen en eigenschappen die onder zijn `cq:PageContent` (`jcr:content`) node.
 
-CUG-groepen kunnen daarom niet worden geïmplementeerd in Actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
+CUG-groepen kunnen daarom niet worden geïmplementeerd in Actieve kopieën van blauwdrukken. Plan dit rond wanneer het vormen van Levend Exemplaar.
 
 ## Wijzigingen aanbrengen in de nieuwe CUG-implementatie {#changes-with-the-new-cug-implementation}
 
-Het doel van deze sectie is een overzicht te geven van de wijzigingen die in de CUG-functie zijn aangebracht, en een vergelijking te maken tussen de oude en de nieuwe implementatie. Het maakt een lijst van de veranderingen die van invloed zijn op de manier de steun van CUG wordt gevormd en beschrijft hoe en door wie CUGs in de bewaarplaats inhoud wordt beheerd.
+Het doel van deze sectie is een overzicht te geven van de wijzigingen die in de CUG-functie zijn aangebracht en een vergelijking te maken tussen de oude en de nieuwe implementatie. Het maakt een lijst van de veranderingen die van invloed zijn op de manier de steun van CUG wordt gevormd en beschrijft hoe en door wie CUGs in de bewaarplaats inhoud wordt beheerd.
 
 ### Verschillen in de Opstelling en de Configuratie van de CUG {#differences-in-cug-setup-and-configuration}
 

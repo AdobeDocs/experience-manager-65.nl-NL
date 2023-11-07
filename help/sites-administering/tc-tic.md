@@ -4,9 +4,9 @@ description: Leer hoe u het Translation Integration Framework in Adobe Experienc
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1571'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ Als u de vertaling van uw bronpagina&#39;s in andere talen wilt configureren, ko
 * De wolkenconfiguratie die AEM met uw vertaalleverancier verbindt.
 * Het kader voor vertaalintegratie dat de details van de vertaling vormt.
 
-Merk op dat de cloudconfiguratie van het vertaalintegratieframework de cloudconfiguratie identificeert die moet worden gebruikt om verbinding te maken met de serviceprovider. Wanneer u een bronpagina aan een configuratie van de kaderwolk associeert, moet de pagina met de configuratie van de de dienstverlener wolk worden geassocieerd die de configuratie van de kaderwolk gebruikt.
+De cloudconfiguratie van het vertaalintegratieframework identificeert de cloudconfiguratie die moet worden gebruikt om verbinding te maken met de serviceprovider. Wanneer u een bronpagina aan een configuratie van de kaderwolk associeert, moet de pagina met de configuratie van de de dienstverlener wolk worden geassocieerd die de configuratie van de kaderwolk gebruikt.
 
 Wanneer u een pagina aan een wolkenconfiguratie associeert, erven de nakomelingen van de pagina de vereniging. Als u bijvoorbeeld de pagina /content/geometrixx/nl/products aan een Translation Integration Framework koppelt, worden de pagina Producten en alle onderliggende pagina&#39;s vertaald volgens het framework.
 

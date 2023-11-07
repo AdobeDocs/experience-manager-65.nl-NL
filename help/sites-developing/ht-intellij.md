@@ -8,7 +8,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '638'
 ht-degree: 0%
@@ -118,7 +118,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 
 De laatste vereiste stap is AEM te beginnen met de JVM-opties die door IntelliJ IDEA worden voorgesteld.
 
-Start het AEM jar-bestand rechtstreeks en voeg deze opties toe, bijvoorbeeld met de volgende opdrachtregel:
+Start het AEM jar-bestand rechtstreeks en voeg deze opties bijvoorbeeld toe met de volgende opdrachtregel:
 
 `java -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,suspend=n,server=y -Xmx1024m -jar cq-quickstart-6.5.0.jar`
 

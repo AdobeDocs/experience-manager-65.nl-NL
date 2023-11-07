@@ -12,9 +12,9 @@ discoiquuid: a644978e-5736-4771-918a-dfefe350a4a1
 docset: aem65
 feature: Mobile Forms
 exl-id: ed8349a1-f761-483f-9186-bf435899df7d
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2011'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De functionaliteit voor HTML5-formulieren wordt geïmplementeerd als een pakket 
 
 Voor details over het eindpunt van REST en gesteunde verzoekparameters, zie [Formuliersjabloon renderen](/help/forms/using/rendering-form-template.md).
 
-Wanneer een gebruiker een verzoek indient van een clientapparaat zoals een iOS- of Android™-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Vanuit dit profielknooppunt wordt het volgende gelezen: **sling:resourceSuperType** en **sling:resourceType** om te bepalen welke scripts beschikbaar zijn die deze aanvraag voor het renderen van formulieren kunnen verwerken. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst Forms OSGi.
+Wanneer een gebruiker een verzoek indient van een clientapparaat zoals een iOS- of Android™-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Vanuit dit profielknooppunt wordt het **sling:resourceSuperType** en **sling:resourceType** om te bepalen welke scripts beschikbaar zijn die deze aanvraag voor het renderen van formulieren kunnen verwerken. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst Forms OSGi.
 
 Zie voor meer informatie over het oplossen van scriptoplossingen [AEM Cheatblad](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/previous-updates/aem-previous-versions.html?lang=en) of [Apache Sling Url-decompositie](https://sling.apache.org/documentation/the-sling-engine/url-decomposition.html).
 
@@ -96,12 +96,12 @@ HTML5-formulieren gebruiken caching om de doorvoer en de responstijd te optimali
   </tr>
   <tr>
    <td>Agressief</td>
-   <td>Gerenderde HTML-inhoud in cache plaatsen<br /> Plaats alle artefacten in het cachegeheugen op conservatief niveau.<br /> <strong>Opmerking</strong>: Deze strategie levert de beste prestaties, maar verbruikt meer geheugen voor het opslaan van de artefacten in de cache.</td>
+   <td>Gerenderde HTML-inhoud in cache plaatsen<br /> Plaats alle artefacten in het cachegeheugen op conservatief niveau.<br /> <strong>Opmerking</strong>: Deze strategie resulteert in de beste prestaties, maar verbruikt meer geheugen voor het opslaan van de artefacten in de cache.</td>
   </tr>
  </tbody>
 </table>
 
-HTML5-formulieren voeren in het geheugen caching uit met behulp van LRU-strategie. Als de cachestrategie aan niets geheim voorgeheugen wordt geplaatst zal niet worden gecreeerd en de bestaande geheim voorgeheugengegevens, als om het even welk, zouden worden ontruimd. Naast de caching strategie, kunt u de totale grootte van het in-geheugengeheime voorgeheugen ook vormen die in het hebben van het maximum gebonden aan geheim voorgeheugengrootte kan helpen en als het verder gaat dan dat het wijze LRU zal gebruiken om geheim voorgeheugenmiddelen vrij te maken.
+HTML5-formulieren voeren in het geheugen caching uit met behulp van LRU-strategie. Als de cachestrategie aan niets geheim voorgeheugen wordt geplaatst zal niet worden gecreeerd en de bestaande geheim voorgeheugengegevens, als om het even welk, zouden worden ontruimd. Naast de caching strategie, kunt u de totale grootte van het in-geheugengeheime voorgeheugen ook vormen die in het hebben van het maximum gebonden aan geheim voorgeheugengrootte kan helpen en als het verder gaat dat het wijze LRU zal gebruiken om geheim voorgeheugenmiddelen vrij te maken.
 
 >[!NOTE]
 >
@@ -123,7 +123,7 @@ Het Runtime-pakket bevat de client-side bibliotheken die worden gebruikt om HTML
 
 #### Scriptengine {#scripting-engine}
 
-Adobe XFA-implementatie ondersteunt twee soorten scripttalen om door de gebruiker gedefinieerde logische uitvoering in formulieren mogelijk te maken: JavaScript en FormCalc.
+De Adobe XFA-implementatie ondersteunt twee soorten scripttalen om door de gebruiker gedefinieerde logische uitvoering in formulieren mogelijk te maken: JavaScript en FormCalc.
 
 De scriptengine van HTML Forms is geschreven in JavaScript ter ondersteuning van de XFA-scripting-API in beide talen.
 
@@ -156,7 +156,7 @@ Om het even welke manuscripten die duidelijk aan looppas-bij-server of duidelijk
 De clientscriptengine:
 
 1. Maakt een synchrone aanroep naar de server die de huidige formulierstatus doorgeeft in de vorm van JSON
-1. Voert het manuscript of de Dienst van het Web op de server uit
+1. Hiermee wordt het script of de webservice op de server uitgevoerd
 1. Genereert een nieuwe JSON-status
 1. Voegt de nieuwe JSON-status op de client samen wanneer de reactie wordt geretourneerd.
 

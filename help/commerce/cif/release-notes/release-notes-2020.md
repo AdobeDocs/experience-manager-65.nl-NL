@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM Inhoud en Handel 2020
 description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1353'
 ht-degree: 8%
 
 ---
@@ -45,7 +45,7 @@ ht-degree: 8%
 
 * Een nieuwe component van de carrousel van de Categorie werd toegevoegd om bedrijfsgebruikers toe te laten om deze component op AEM inhoudspagina&#39;s te slepen en te laten vallen om inhoudspagina&#39;s met handelsgegevens te verrijken.
 
-* CIF kerncomponenten uitgebreid om de Laag van Gegevens van de Cliënt van de Adobe te bevrijden door handelsgegevens te verzenden. De gegevenslaag van de Cliënt van de Adobe is een gestandaardiseerde methode om gegevens te verzamelen en de gegevens aan Digitale Analytics en het melden van servers mee te delen. Raadpleeg voor meer informatie [Gegevenslaag client-Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
+* CIF kerncomponenten uitgebreid om de Laag van Gegevens van de Cliënt van de Adobe te bevrijden door handelsgegevens te verzenden. De gegevenslaag van de Cliënt van de Adobe is een gestandaardiseerde methode om gegevens te verzamelen en de gegevens aan Digitale Analytics en het melden van servers mee te delen. Zie voor meer informatie [Gegevenslaag client-Adobe](https://github.com/adobe/adobe-client-data-layer/wiki).
 
 * Pagina&#39;s met productdetails en productlijsten die zijn uitgebreid om automatisch SEO-metagegevens (zoals titel, meta-beschrijving, metatrefwoorden) te vullen die zijn geconfigureerd vanuit de Adobe Commerce-beheerinterface
 

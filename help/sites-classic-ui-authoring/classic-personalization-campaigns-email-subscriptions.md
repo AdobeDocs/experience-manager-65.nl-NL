@@ -1,18 +1,14 @@
 ---
 title: Abonnementen beheren
-seo-title: Managing Subscriptions
 description: Gebruikers kunnen worden gevraagd zich in te schrijven op de mailinglijsten van de e-mailprovider met de hulp van de formuliercomponent die op een AEM webpagina wordt gebruikt. Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
-seo-description: Users can be asked to subscribe to Email Service Provider's mailing lists with the help of the Form component used on an AEM web page. To prepare an AEM page with a sign-up form for subscription to your e-mail service mailing lists, you must apply the corresponding service configuration to the AEM page that the potential subscriber will visit.
-uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 exl-id: add05d22-3a11-49e9-a554-2315962552d5
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '913'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >De Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
->De aanbeveling is om het hefboomeffect te vergroten [Adobe Campaign en zijn AEM integratie](/help/sites-administering/campaign.md).
+>De aanbeveling is om [Adobe Campaign en zijn AEM integratie](/help/sites-administering/campaign.md).
 
 Gebruikers kunnen worden gevraagd zich in te schrijven op **E-mailserviceproviders** mailinglijsten met behulp van de **Formulier** op een AEM webpagina wordt gebruikt. Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
 
@@ -72,7 +68,7 @@ Een aanmeldingsformulier maken en dit configureren voor abonnementen op de maili
 Als u wilt dat e-mailservices zich abonneren op of zich niet meer abonneren op het publicatieexemplaar, moet u de volgende stappen uitvoeren:
 
 1. Navigeer in de auteurinstantie naar Package Manager.
-1. Maak een nieuw pakket. Het filter instellen als `/etc/key`.
+1. Maak een pakket. Het filter instellen als `/etc/key`.
 1. Het pakket maken en downloaden.
 1. Navigeer naar Package Manager op de publicatie-instantie en upload dit pakket.
 1. Navigeer naar de publicatieconsole en start de bundel met de naam **Adobe Granite Crypto-ondersteuning**.

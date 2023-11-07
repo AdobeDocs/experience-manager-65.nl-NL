@@ -2,9 +2,9 @@
 title: AEM Documentenreizen
 description: Documentatiereizen bieden een verhalende structuur binnen AEM documentatie door complexe en verschillende functies te koppelen om een zakelijk doel op een manier van best practices op te lossen. Ontworpen met AEM beginners in mening, introduceren de reizen de concepten en de eigenschappen om een doel van A tot Z te bereiken.
 exl-id: bb0a26e2-5686-4fb7-bb6e-231dafc8268b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1228'
+source-wordcount: '1223'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Als u wilt weten hoe de Adobe adviseert om een bedrijfsgeval met AEM op te losse
 
 ## Hoe wordt een documentatiereis gestructureerd? {#structure}
 
-Een Documentatiereis dient als een op beste praktijken-gebaseerde inleiding aan hoe AEM gemeenschappelijke bedrijfsproblemen oplost. Daarom wordt elke reis ontworpen met lezers die niet in mening AEM, die het bedrijfsprobleem beschrijven, om het even welke noodzakelijke theorie beschrijven, en dan een geleidelijke overzicht geven van hoe AEM het probleem oplost. Vanwege het uitgebreide karakter van een reis kan het handig zijn voor lezers die niet alleen AEM, maar ook ervaren gebruikers zijn.
+Een Documentatiereis dient als een op beste praktijken-gebaseerde inleiding aan hoe AEM gemeenschappelijke bedrijfsproblemen oplost. Daarom wordt elke reis ontworpen met lezers die niet in mening AEM, die het bedrijfsprobleem beschrijven, om het even welke noodzakelijke theorie beschrijven, en dan een geleidelijke overzicht geven van hoe AEM het probleem oplost. Vanwege het uitgebreide karakter van een reis, kan het handig zijn voor lezers die nieuw zijn voor AEM en ervaren gebruikers.
 
 Een typisch Documentatiereis heeft de volgende delen.
 
@@ -76,12 +76,12 @@ Documentatiereizen zijn bedoeld als aanvulling op bestaande AEM technische docum
 |---|---|---|---|---|---|---|
 | Documentatiereis | Een reis bepaalt hoe AEM een algemeen bedrijfsprobleem door een verhaal kan oplossen dat lezers door complexe, onderling verbonden processen en eigenschappen begeleidt. Het illustreert hoe de veelvoudige eigenschappen samenwerken om een bedrijfsbehoefte op een beste praktijkwijze op te lossen. | Readers die nieuw zijn voor AEM | Algemene kennis van CMS | Gedetailleerde opties en configuratie | Tekst | Ca. 1 uur |
 | Technische documenten | De technische documenten richten zich op individuele eigenschappen, die de technische werking van de eigenschap en elke optie specificeren beschikbaar aan de gebruiker. | Ervaren AEM gebruikers | AEM | Context en achtergrond | Tekst | Varieert |
-| Zelfstudie | Een zelfstudie is een diepgaand duiken in een onderwerp dat een ontwikkelaar of beheerder toont hoe te om een technisch doel (over het algemeen programmering of systeemconfiguratie) op een geleidelijke manier te bereiken, die specifieke voorbeelden en voorbeeldcode verstrekt, gewoonlijk leveraging een beperkte reeks eigenschappen. | AEM ontwikkelaars of beheerders | AEM | Achtergrond en theorie | Video | > 1 uur |
+| Zelfstudie | Een leerprogramma is een diepgaande duik in een onderwerp dat een ontwikkelaar of admin toont hoe te om een technisch doel (over het algemeen programmering of systeemconfiguratie) op een geleidelijke manier te bereiken, die specifieke voorbeelden en voorbeeldcode verstrekken, gewoonlijk gebruikend een beperkte reeks eigenschappen. | AEM ontwikkelaars of beheerders | AEM | Achtergrond en theorie | Video | > 1 uur |
 | Aan de slag | Een gids Aan de slag is een bliksemsnelle analyse van een specifieke nieuwe AEM eigenschap. Het is een snel overzicht van een individuele eigenschap, die de gebruiker door de belangrijke (maar niet alle) stappen leidt aan het vormen en het gebruiken van een eenvoudig gebruiksgeval. | AEM | AEM | Achtergrond, theorie, gedetailleerde opties | Tekst | &lt;1 uur |
 
 ## Welke reizen zijn er? {#journeys}
 
-Er zijn een aantal Documentatiereizen reeds beschikbaar aan u. Aangezien elke reis als verhaal wordt ontworpen, gelieve met de inleiding te beginnen en volledig te lezen om een volledig inzicht in het onderwerp in de context van AEM te krijgen.
+Er zijn verschillende documentatiereizen die u al hebt. Aangezien elke reis als verhaal wordt ontworpen, begin met de inleiding en lees helemaal door om een volledig inzicht in het onderwerp in de context van AEM te krijgen.
 
 | Reis | Beschrijving |
 |---|---|

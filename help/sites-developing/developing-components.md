@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 823e756f470b0599f7d53a3e08fdf650b4e892d1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3454'
+source-wordcount: '3446'
 ht-degree: 0%
 
 ---
@@ -206,13 +206,13 @@ Zie voor voorbeelden:
 
 Widgets voor de interface met aanraakbediening worden geïmplementeerd als graniet-UI-componenten.
 
-Als u een nieuwe widget wilt maken voor gebruik in een componentdialoogvenster voor de interface met aanraakbediening, moet u: [een nieuwe granite UI-veldcomponent maken](/help/sites-developing/granite-ui-component.md).
+Als u een widget wilt maken voor gebruik in een componentdialoogvenster voor de interface met aanraakbediening, moet u: [een graniet UI-veldcomponent maken](/help/sites-developing/granite-ui-component.md).
 
 >[!NOTE]
 >
->Voor volledige informatie over de graniet-gebruikersinterface raadpleegt u de [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
+>Voor volledige informatie over de graniet-interface raadpleegt u de [Granite UI-documentatie](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/index.html).
 
-Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een nieuw formulierveld moet u een brontype maken. Dit is hetzelfde als het maken van een nieuwe component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
+Als u het dialoogvenster beschouwt als een eenvoudige container voor een formulierelement, kunt u ook de primaire inhoud van het dialoogvenster zien als formuliervelden. Voor het maken van een formulierveld moet u een brontype maken. Dit is hetzelfde als het maken van een component. Om u in die taak te helpen, biedt granite UI een generische gebiedscomponent aan om van (het gebruiken van `sling:resourceSuperType`):
 
 `/libs/granite/ui/components/coral/foundation/form/field`
 
@@ -228,7 +228,7 @@ Zodra u uw middeltype hebt gecreeerd, kunt u uw gebied concretiseren door een ni
 
 Als u stijlen en gedrag voor uw component wilt definiëren, kunt u een speciale [clientbibliotheek](/help/sites-developing/clientlibs.md) die uw aangepaste CSS/LESS en JS definieert.
 
-Als u de clientbibliotheek alleen voor het dialoogvenster van de component wilt laden (de bibliotheek wordt dus niet voor een andere component geladen), moet u de eigenschap instellen `extraClientlibs` van uw dialoogvenster naar de categorienaam van de clientbibliotheek die u zojuist hebt gemaakt. Dit is aan te raden als uw clientbibliotheek erg groot is en/of als uw veld specifiek is voor dat dialoogvenster en niet nodig is in andere dialoogvensters.
+Als u de clientbibliotheek alleen voor het dialoogvenster van de component wilt laden (de bibliotheek wordt dus niet voor een andere component geladen), moet u de eigenschap instellen `extraClientlibs` van het dialoogvenster naar de categorienaam van de clientbibliotheek die u hebt gemaakt. Dit is aan te raden als uw clientbibliotheek erg groot is en/of als uw veld specifiek is voor dat dialoogvenster en niet nodig is in andere dialoogvensters.
 
 Als u de clientbibliotheek voor alle dialoogvensters wilt laden, stelt u de categorie-eigenschap van de clientbibliotheek in op `cq.authoring.dialog`. Dit is de categorienaam van de clientbibliotheek die standaard wordt opgenomen wanneer alle dialoogvensters worden weergegeven. U wilt dat doen als uw clientbibliotheek klein is en/of uw veld algemeen is en opnieuw kan worden gebruikt in andere dialoogvensters.
 
@@ -346,13 +346,13 @@ Als uw nieuwe component verwijst naar inhoud van andere pagina&#39;s, kunt u ove
 
 Uit-de-doos AEM slechts de component van de Verwijzing. Om uw component toe te voegen moet u de bundel vormen OSGi **Configuratie van WCM-ontwerpnaslaggids**.
 
-Maak een nieuw item in de definitie en geef de component op, samen met de eigenschap die moet worden gecontroleerd. Bijvoorbeeld:
+Maak een item in de definitie en geef de component op, samen met de eigenschap die moet worden gecontroleerd. Bijvoorbeeld:
 
 `/apps/<*your-Project*>/components/reference@parentPath`
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren. Zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor meer details en de aanbevolen werkwijzen.
 
 ## De component inschakelen en toevoegen aan het alineasysteem {#enabling-and-adding-your-component-to-the-paragraph-system}
 
@@ -373,12 +373,12 @@ Dit gedrag, en de vereiste activa-aan-component verhouding kan worden gevormd:
 
    * `/etc/designs/<myApp>/page/par`
 
-   Een nieuw knooppunt maken:
+   Een knooppunt maken:
 
    * Naam: `cq:authoring`
    * Type: `nt:unstructured`
 
-1. Onder dit creeer een nieuwe knoop om al activa-aan-component afbeeldingen te houden:
+1. Onder dit, creeer een knoop om al activa-aan-component afbeeldingen te houden:
 
    * Naam: `assetToComponentMapping`
    * Type: `nt:unstructured`

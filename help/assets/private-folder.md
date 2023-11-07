@@ -6,7 +6,7 @@ role: User
 feature: Collaboration
 exl-id: c1aece06-7c1c-43a0-bea0-6f11ecda7e68
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '579'
 ht-degree: 1%
@@ -20,7 +20,7 @@ ht-degree: 1%
 | AEM as a Cloud Service | [Klik hier](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/assets/manage/private-folder.html?lang=en) |
 | AEM 6,5 | Dit artikel |
 
-U kunt een privémap maken in het dialoogvenster [!DNL Adobe Experience Manager Assets] -gebruikersinterface die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
+U kunt een privémap maken in het dialoogvenster [!DNL Adobe Experience Manager Assets] -gebruikersinterface die exclusief voor u beschikbaar is. U kunt deze persoonlijke map delen met andere gebruikers en deze gebruikers verschillende rechten geven. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de elementen in de map weergeven of de elementen bewerken.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ Persoonlijke map maken en delen:
 
    ![Map met elementen maken](assets/Create-folder.png)
 
-1. In de **[!UICONTROL Create Folder]** voert u een titel en naam (optioneel) voor de map in en selecteert u **[!UICONTROL Private]** optie.
+1. In de **[!UICONTROL Create Folder]** voert u een titel en naam (optioneel) voor de map in en selecteert u **[!UICONTROL Private]** -optie.
 
 1. Klik op **[!UICONTROL Create]**. Er wordt een persoonlijke map gemaakt.
 
@@ -48,7 +48,7 @@ Persoonlijke map maken en delen:
    >
    >De map is pas zichtbaar voor andere gebruikers als u deze deelt.
 
-1. In de **[!UICONTROL Folder Properties]** pagina, selecteert u een gebruiker in het menu **[!UICONTROL Add User]** een rol toewijzen aan de gebruiker in uw persoonlijke map en klikken **[!UICONTROL Add]**.
+1. In de **[!UICONTROL Folder Properties]** pagina, selecteert u een gebruiker in het **[!UICONTROL Add User]** een rol toewijzen aan de gebruiker in uw persoonlijke map en klikken **[!UICONTROL Add]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
@@ -90,4 +90,4 @@ U kunt een map verwijderen door de map te selecteren en [!UICONTROL Delete] in h
 >
 >Als u een map verwijdert met de bovenstaande methode uit de gebruikersinterface, worden ook de bijbehorende gebruikersgroepen verwijderd.
 >
->De bestaande overbodige, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter uit de opslagplaats worden verwijderd met `clean` methode in JMX in de instantie van de auteur (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).
+>De bestaande overbodige, ongebruikte en automatisch gegenereerde gebruikersgroepen kunnen echter uit de opslagplaats worden verwijderd met `clean` methode in JMX in de auteurinstantie (`http://[server]:[port]/system/console/jmx/com.day.cq.dam.core.impl.team%3Atype%3DClean+redundant+groups+for+Assets`).

@@ -7,9 +7,9 @@ topic-tags: correspondence-management
 docset: aem65
 feature: Correspondence Management
 exl-id: bf6d3edb-6bf7-4d3e-b042-d75cb8e39e3f
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1354'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
 
-1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de selectiemap en voer daarbij de volgende stappen uit:
+1. Maak in de map Apps een map met de naam Items met een pad/structuur die vergelijkbaar is met de map Items in de selectiemap. Ga hierbij als volgt te werk:
 
    1. Klik met de rechtermuisknop op de knop **items** map op het volgende pad en selecteer **Overlayknooppunt**:
 
@@ -136,7 +136,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
         </tbody>
        </table>
 
-1. Maak in de map apps een map met de naam js met een pad/structuur die lijkt op de map met items in de map admin met de volgende stappen:
+1. Maak in de map apps een map met de naam js met een pad/structuur die vergelijkbaar is met de map met items in de map admin met behulp van de volgende stappen:
 
    1. Klik met de rechtermuisknop op de knop **js** map op het volgende pad en selecteer **Overlayknooppunt**:
 
@@ -226,7 +226,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       De bovenstaande code is bedoeld voor handelingen met letters van de opdracht die in deze procedure wordt gemaakt. Wijzig de JavaScript-code voor de afhandeling van handelingen met andere elementen.
 
-1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de map met actionhandlers. Ga hierbij als volgt te werk:
+1. Maak in de map apps een map met de naam items met een pad/structuur die vergelijkbaar is met de map met items in de map met actionhandlers. Ga hierbij als volgt te werk:
 
    1. Klik met de rechtermuisknop op de knop **items** map op het volgende pad en selecteer **Overlayknooppunt**:
 

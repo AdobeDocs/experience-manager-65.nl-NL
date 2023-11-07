@@ -5,7 +5,7 @@ contentOwner: AG
 feature: Asset Management
 role: Leader, Architect, User
 exl-id: 68239634-a2e8-414e-a866-cd8082641ee8
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '869'
 ht-degree: 0%
@@ -18,7 +18,7 @@ AEM [!DNL Assets] is een DAM-hulpmiddel (Digital Asset Management) dat deel uitm
 
 ## Wat is Digital Asset Management? {#what-is-digital-asset-management}
 
-[!DNL Assets] biedt bedrijfsbrede uitwisseling en distributie van de belangrijkste digitale middelen van een organisatie. Gebruikers in een organisatie kunnen digitale elementen zoals afbeeldingen, afbeeldingen, audio, video en documenten via een webinterface (of een CIFS- of WebDAV-map) opslaan, beheren en benaderen.
+[!DNL Assets] biedt bedrijfsbrede uitwisseling en distributie van de belangrijkste digitale middelen van een organisatie. Gebruikers in een organisatie kunnen digitale elementen zoals afbeeldingen, afbeeldingen, audio, video en documenten via een webinterface (of een CIF- of WebDAV-map) opslaan, beheren en benaderen.
 
 [!DNL Assets] vermogen van [!DNL Experience Manager] Hiermee kunt u het volgende doen:
 
@@ -26,7 +26,7 @@ AEM [!DNL Assets] is een DAM-hulpmiddel (Digital Asset Management) dat deel uitm
 * Elementen beheren door deze te groeperen op tags, lichtbakken of sterren (uw favorieten). Annotaties toevoegen aan elementen.
 * U kunt elementen zoeken door te zoeken in bestandsnamen, de volledige tekst van documenten en door datums, documenttype en codes te zoeken.
 * Voeg metagegevens voor elementen toe of bewerk deze. Metagegevens worden automatisch bijgewerkt met het bijbehorende element. U kunt metagegevens van elementen importeren of exporteren.
-* Voer beeldbewerkingsfuncties uit, zoals schalen en afbeeldingsfilters toevoegen. U kunt meerdere digitale elementen tegelijk importeren en exporteren met een WebDAV- of CIFS-map.
+* Voer beeldbewerkingsfuncties uit, zoals schalen en afbeeldingsfilters toevoegen. U kunt meerdere digitale elementen tegelijk importeren en exporteren met een WebDAV- of CIF-map.
 * Gebruik workflows en meldingen om gezamenlijke verwerking en downloads van een set elementen mogelijk te maken en toegangsrechten voor elementen te beheren.
 
 ### [!DNL Experience Manager Assets] is geïntegreerd met [!DNL Experience Manager Sites] {#aem-assets-fully-integrated-in-cq-wcm}
@@ -66,7 +66,7 @@ Wanneer u werkt met digitale middelen in [!DNL Experience Manager]Het is handig 
 
 * **Tags**: [!DNL Assets] kunnen worden gelabeld en geclassificeerd. Zie [elementen ordenen](/help/assets/organize-assets.md).
 
-* **Uitvoeringen**: Een vertoning is de binaire representatie van een element. [!DNL Assets] altijd een primaire representatie hebben, namelijk die van het geüploade bestand. Ze kunnen een willekeurig aantal aanvullende voorstellingen hebben die worden gemaakt, bijvoorbeeld door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
+* **Uitvoeringen**: Een vertoning is de binaire representatie van een element. [!DNL Assets] altijd een primaire representatie hebben, namelijk die van het geüploade bestand. Ze kunnen een aantal aanvullende voorstellingen hebben die bijvoorbeeld worden gemaakt door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
 
 * **Versies**: Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in [!DNL Assets]](manage-assets.md#asset-versioning).
 

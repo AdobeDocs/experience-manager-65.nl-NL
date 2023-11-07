@@ -1,7 +1,7 @@
 ---
 title: Aanbevolen procedures voor HTML5-formulieren
 seo-title: Best practices for HTML5 forms
-description: Tune uw op XFA gebaseerde HTML5 Forms voor de beste prestaties.
+description: Stem uw op XFA gebaseerde HTML5 Forms af voor de beste prestaties.
 seo-description: Learn how to tune your XFA-based HTML5 Forms for best performance.
 uuid: 3804effd-f1f2-4d7a-8e52-717b5c1c62cf
 contentOwner: khsingh
@@ -12,9 +12,9 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1418'
+source-wordcount: '1416'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,15 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-AEM Forms heeft een component met de naam HTML5-formulieren. Het helpt bestaande op XFA-Gebaseerde PDF forms (XDP dossiers) in HTML5 formaat terug te geven. Dit document bevat richtlijnen en aanbevelingen om de laadtijd te verminderen en de prestaties van HTML5-formulieren op mobiele apparaten te verbeteren.
+AEM Forms heeft een component met de naam HTML5-formulieren. Hiermee kunt u bestaande XFA-PDF forms (XDP-bestanden) renderen in de HTML5-indeling. Dit document bevat richtlijnen en aanbevelingen om de laadtijd te verminderen en de prestaties van HTML5-formulieren op mobiele apparaten te verbeteren.
 
 De meeste mobiele apparaten hebben een beperkte verwerkingscapaciteit en geheugencapaciteit. Het helpt bij het verbeteren van de stand-bytijd van mobiele apparaten. De webbrowsers die op een mobiel apparaat worden uitgevoerd, hebben toegang tot beperkte bronnen (beperkt geheugen en verwerkingsmogelijkheden). Nadat de limiet is bereikt, wordt het browsergedrag traag. Dit document bevat aanbevelingen om de grootte van een HTML5-formulier te controleren. Een kleiner formulier schendt de geheugen- en verwerkingsvermogenslimieten van een apparaat niet en zorgt voor een vloeiende ervaring.
 
-Hoewel de aanbevelingen die in dit artikel worden besproken gericht zijn op HTML5-formulieren, zijn deze ook van toepassing op XFA-gebaseerde PDF forms. Deze beste praktijken dragen collectief bij tot de algemene prestaties van HTML5 vormen. Het vereist een zorgvuldige planning om efficiënte en productieve vormen te ontwikkelen. Laten we beginnen:
+Hoewel de aanbevelingen die in dit artikel worden besproken gericht zijn op HTML5-formulieren, zijn deze ook van toepassing op XFA-PDF forms. Deze beste praktijken dragen collectief bij tot de algemene prestaties van HTML5 vormen. Het vereist een zorgvuldige planning om efficiënte en productieve vormen te ontwikkelen. Laten we beginnen:
 
 ## Knooppunten zijn valuta van HTML5-vormen, ze verstandig uitgeven {#nodes-are-currency-of-html-forms-spend-them-wisely}
 
-Over het algemeen heeft een XFA-formulier meerdere elementen. Bijvoorbeeld tabel, tekstveld en afbeeldingen. Elk element heeft een aantal eigenschappen om het gedrag en de verschijning van het element te controleren. Wanneer een XFA-formulier wordt weergegeven in de HTML5-indeling, worden alle XFA-elementen en de bijbehorende eigenschappen geconverteerd naar Model- of HTML DOM-knooppunten. Deze knopen voegen aan de grootte en de ingewikkeldheid van DOM toe. De HTML5-vorm traag renderen.
+Over het algemeen heeft een XFA-formulier meerdere elementen. Bijvoorbeeld tabel, tekstveld en afbeeldingen. Elk element heeft verscheidene eigenschappen om het gedrag en de verschijning van het element te controleren. Wanneer een XFA-formulier wordt weergegeven in de HTML5-indeling, worden alle XFA-elementen en de bijbehorende eigenschappen geconverteerd naar Model- of HTML DOM-knooppunten. Deze knopen voegen aan de grootte en de ingewikkeldheid van DOM toe. De HTML5-vorm traag renderen.
 
 Het is voor de browsers gemakkelijker om een leaner DOM terug te geven. U kunt dus de volgende optimalisaties uitvoeren op een XFA-formulier om het aantal knooppunten te verminderen. Maak daarom een leaanse DOM-structuur:
 
@@ -52,8 +52,8 @@ Daarom is het verkleinen van de omvang van de externe middelen en het gebruik va
 
 Een HTML5-formulier kan in honderden pagina&#39;s worden weergegeven. Een formulier met een groot aantal velden wordt traag geladen in de browser. U kunt de volgende optimalisaties uitvoeren op een XFA-formulier om de formulieren te optimaliseren met een groot aantal velden en pagina&#39;s:
 
-* Evalueer het splitsen van de grote formulieren in meerdere formulieren. U kunt ook een formulierset gebruiken om alle kleinere formulieren te groeperen en weer te geven als één eenheid. Een formulierset laadt alleen de vereiste formulieren. Bovendien kunt u in een formulierset veelvoorkomende velden in verschillende formulieren configureren om gegevensbindingen te delen. De bindingen van gegevens helpen gebruikers gemeenschappelijke informatie slechts eenmaal vullen; de informatie automatisch wordt ingevuld in volgende formulieren, wat leidt tot aanzienlijke prestatieverbeteringen. Zie voor meer informatie over formuliersets [Formulierset in AEM formulieren](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
-* Overweeg secties te splitsen en elke sectie naar een andere pagina te verplaatsen. In HTML5-formulieren wordt elke pagina dynamisch geladen wanneer een pagina wordt opgevraagd. Alleen de geschoven pagina (de pagina die wordt weergegeven en de pagina&#39;s die eraan voorafgaan) wordt in het geheugen opgeslagen. de rest van de pagina&#39;s wordt op verzoek geladen. Als u dus een sectie op een eigen pagina splitst en verplaatst, wordt de tijd die nodig is om een formulier te laden, verkort. U kunt de eerste pagina van het formulier ook gebruiken als bestemmingspagina. Het lijkt op de inhoudsopgave van een boek. Een openingspagina van het formulier bevat alleen koppelingen naar de andere secties van het formulier. Hiermee wordt de laadtijd van de eerste pagina van het formulier aanzienlijk verkort en wordt de gebruikerservaring verbeterd.
+* Evalueer het splitsen van de grote formulieren in meerdere formulieren. U kunt ook een formulierset gebruiken om alle kleinere formulieren te groeperen en weer te geven als één eenheid. Een formulierset laadt alleen de vereiste formulieren. Bovendien kunt u in een formulierset veelvoorkomende velden in verschillende formulieren configureren om gegevensbindingen te delen. Met gegevensbindingen kunnen gebruikers de algemene gegevens slechts eenmaal invullen. De gegevens worden automatisch ingevuld in volgende formulieren, wat tot aanzienlijke prestatieverbeteringen leidt. Zie voor meer informatie over formuliersets [Formulierset in AEM formulieren](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
+* Overweeg secties te splitsen en elke sectie naar een andere pagina te verplaatsen. In HTML5-formulieren wordt elke pagina dynamisch geladen wanneer een pagina wordt opgevraagd. Alleen de geschoven pagina (de pagina die wordt weergegeven en de pagina&#39;s die eraan voorafgaan) wordt in het geheugen opgeslagen. De rest van de pagina&#39;s wordt op aanvraag geladen. Als u dus een sectie op een eigen pagina splitst en verplaatst, wordt de tijd die nodig is om een formulier te laden, verkort. U kunt de eerste pagina van het formulier ook gebruiken als bestemmingspagina. Het is gelijkaardig aan de inhoudstafel (TOC) van een boek. Een openingspagina van het formulier bevat alleen koppelingen naar de andere secties van het formulier. Hiermee wordt de laadtijd van de eerste pagina van het formulier aanzienlijk verkort en wordt de gebruikerservaring verbeterd.
 * Voorwaardelijke secties standaard verborgen houden. Deze secties alleen zichtbaar maken als aan een bepaalde voorwaarde is voldaan. Hierdoor wordt de DOM tot een minimum beperkt. U kunt navigatie met tabs ook gebruiken om slechts één sectie tegelijk weer te geven.
 
 ## Minder is meer, verlaag het aantal pagina&#39;s {#less-is-more-reduce-the-number-of-pages}
@@ -63,7 +63,7 @@ HTML5-formulieren kunnen gegevensgestuurde velden (tabellen en subformulieren) b
 * Gebruik XFA-scripting om gepagineerde navigatie tot stand te brengen om gegeven-gedreven gebieden (lijsten en subformulieren) te tonen. Bij gepagineerde navigatie worden alleen specifieke gegevens weergegeven op een pagina. Hierdoor wordt de verfbewerking in de browser beperkt tot de velden die tegelijkertijd worden weergegeven en is het gemakkelijker om in een formulier te navigeren. Bovendien zijn gebruikers op mobiele apparaten alleen geïnteresseerd in een subset gegevens. Het helpt u een geweldige gebruikerservaring te bieden en verkort de tijd die nodig is om de vereiste gegevens te laden. Je krijgt twee oplossingen voor de prijs van één.  Let er ook op dat gepagineerde navigatie niet beschikbaar is buiten het vak. U kunt XFA-scripts gebruiken om gepagineerde navigatie te ontwikkelen.
 
 * Evalueer het samenvoegen van meerdere alleen-lezen kolommen in één kolom. Hiermee vermindert u het geheugen dat nodig is om het formulier weer te geven. Vermijd ook het weergeven van de kolommen waarvoor geen invoer van gebruikers nodig is.
-* Evalueer het splitsen van de gegevensgestuurde vorm in een [formulierset](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), indien de bovenstaande suggesties niet veel verbeteringen opleveren. Als een tabel bijvoorbeeld meer dan 1000 rijen bevat, verplaatst u elke 100 rijen naar een ander formulier. Hiermee kunt u de laadtijd en prestaties van de formulieren verbeteren.  Een formulierset genereert een geconsolideerde verzendings-XML voor alle formulieren. Als u gegevens van elk formulier wilt onderscheiden, moet u verschillende basisgegevens gebruiken. Zie voor meer informatie [Formulierset in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
+* Evalueren door de gegevensgestuurde vorm in een [formulierset](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html), indien de bovenstaande suggesties niet veel verbeteringen opleveren. Als een tabel bijvoorbeeld meer dan 1000 rijen bevat, verplaatst u elke 100 rijen naar een ander formulier. Hiermee kunt u de laadtijd en prestaties van de formulieren verbeteren.  Een formulierset genereert een geconsolideerde verzendings-XML voor alle formulieren. Als u gegevens van elk formulier wilt onderscheiden, moet u verschillende basisgegevens gebruiken. Zie voor meer informatie [Formulierset in AEM Forms](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html).
 
 ## Macht van twee voor Document of Record (DOR) {#power-of-two-for-document-of-record-dor}
 
@@ -83,4 +83,4 @@ Met Adobe Experience Manager (AEM)-formulieren kunt u complexe transacties trans
 ## Snelle referentiekaart {#quick-reference-card}
 
 U kunt de volgende kaart afdrukken (klik op de kaart om een versie met hoge resolutie te downloaden) en deze voor een snelle referentie op uw bureau houden:
-[ ![HTML5 Forms Best practices Snelle referentiekaart](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)
+[![HTML5 Forms Best practices Snelle referentiekaart](do-not-localize/best-practices_reference_card.png)](assets/html5_forms_best_practices_reference_card.pdf)

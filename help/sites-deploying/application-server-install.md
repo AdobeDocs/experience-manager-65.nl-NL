@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1165'
 ht-degree: 0%
@@ -17,10 +17,10 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->`JAR` en `WAR` zijn de bestandstypen waarin Adobe Experience Manager (AEM) wordt vrijgegeven. Deze formaten ondergaan kwaliteitsgarantie om de steunniveaus aan te passen die Adobe heeft toegezegd.
+>`JAR` en `WAR` zijn de bestandstypen waarin Adobe Experience Manager (AEM) wordt vrijgegeven. Deze formaten worden kwaliteitsborgd om de Adobe van steunniveaus aan te passen.
 >
 
-In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [Ondersteunde Platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor meer informatie over de specifieke supportniveaus die voor de afzonderlijke toepassingsservers zijn opgegeven.
+In deze sectie wordt uitgelegd hoe u Adobe Experience Manager (AEM) kunt installeren met een toepassingsserver. Raadpleeg de [Ondersteunde platforms](/help/sites-deploying/technical-requirements.md#servlet-engines-application-servers) voor meer informatie over de specifieke supportniveaus die voor de afzonderlijke toepassingsservers zijn opgegeven.
 
 De installatiestappen van de volgende toepassingsservers worden beschreven:
 
@@ -46,23 +46,23 @@ Indien opgesteld, gebeurt het volgende door gebrek:
 * de uitvoeringsmodus is `author`
 * de instantie (Repository, Felix OSGI-omgeving, bundels enzovoort) is geïnstalleerd in `${user.dir}/crx-quickstart`waar `${user.dir}` Dit pad naar crx-quickstart wordt de huidige werkmap genoemd `sling.home`
 
-* De hoofdmap van de context is bijvoorbeeld de naam van het oorlogsbestand: `aem-6`
+* de hoofdmap van de context is bijvoorbeeld de naam van het oorlogsbestand;  `aem-6`
 
 #### Configuratie {#configuration}
 
 U kunt het standaardgedrag als volgt wijzigen:
 
-* uitvoeringsmodus: vorm `sling.run.modes` in de `WEB-INF/web.xml` dossier van het AEM oorlogsdossier vóór plaatsing
+* run mode: configure `sling.run.modes` in de `WEB-INF/web.xml` dossier van het AEM oorlogsdossier vóór plaatsing
 
-* sling.home: vorm `sling.home` in de `WEB-INF/web.xml`dossier van het AEM oorlogsdossier vóór plaatsing
+* sling.home: configureer de `sling.home` in de `WEB-INF/web.xml`dossier van het AEM oorlogsdossier vóór plaatsing
 
-* contextbasis: naam van AEM oorlogsbestand wijzigen
+* contextroot: naam van AEM oorlogsbestand wijzigen
 
 #### Installatie publiceren {#publish-installation}
 
 Als u een publicatie-instantie wilt implementeren, moet u de uitvoeringsmodus instellen om te publiceren:
 
-* De map WEB-INF/web.xml uit het AEM oorlogsbestand verwijderen
+* De map WEB-INF/web.xml uit het AEM-oorlogsbestand verwijderen
 * De parameter sling.run.modes wijzigen om te publiceren
 * Het bestand web.xml opnieuw omzetten in AEM oorlogsbestand
 * AEM oorlogsbestand implementeren
@@ -80,7 +80,7 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en 
 
 1. Wijzig de variabelen sling.home en sling.run.modes van de publicatie-instantie.
 1. Pak het bestand WEB-INF/web.xml uit van het AEM oorlogsbestand.
-1. Wijzig de parameter sling.home in een ander pad (absolute en relatieve paden zijn mogelijk).
+1. Wijzig sling.home in een ander pad (absolute en relatieve paden zijn mogelijk).
 1. Wijzig sling.run.modes om te publiceren voor de publicatie-instantie.
 1. Herhaal het bestand web.xml.
 1. Wijzig de naam van de oorlogsbestanden, zodat ze verschillende namen hebben. De ene naam wordt bijvoorbeeld gewijzigd in aemauteur.war en de andere in aempublish.war.
@@ -94,13 +94,13 @@ Voor demonstratiedoeleinden kan het aangewezen zijn om auteur te installeren en 
 
 ### WebSphere® 8.5 {#websphere}
 
-Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
+Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
 
 **Servervoorbereiding**
 
 * Laat de Basiskopballen van de Auditie door overgaan:
 
-   * Één manier om AEM te laten om een gebruiker voor authentiek te verklaren is de globale administratieve veiligheid van de server WebSphere® onbruikbaar te maken, om dit te doen: Ga naar Beveiliging -> Algemene beveiliging en schakel het selectievakje Beheersbeveiliging inschakelen uit, sla de server op en start de server opnieuw.
+   * Één manier om AEM te laten een gebruiker voor authentiek verklaren is de globale administratieve veiligheid van de server onbruikbaar te maken WebSphere®, om dit te doen: ga naar Veiligheid -> Globale Veiligheid en uncheck Enable administratieve veiligheidscheckbox, sparen, en herstart de server.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * Als u AEM wilt installeren met gebruik van contextroot = /, wijzigt u de basis van de context van de bestaande standaardwebtoepassing.
@@ -123,7 +123,7 @@ Voor een implementatie leest u de [Algemene beschrijving](#general-description) 
 
 #### JBoss® EAP 6.3.0/6.4.0 {#jboss-eap}
 
-Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
+Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
 
 **JBoss®-server voorbereiden**
 
@@ -147,7 +147,7 @@ Als u de implementatie-scanner gebruikt om de AEM webtoepassing te installeren, 
 
 #### Oracle WebLogic 12.1.3/12.2 {#oracle-weblogic}
 
-Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
+Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
 
 Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
@@ -155,7 +155,7 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
 * In `${myDomain}/config/config.xml`toevoegen aan de veiligheid-configuratie sectie:
 
-   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is o.k.)
+   * `<enforce-valid-basic-auth-credentials>false</enforce-valid-basic-auth-credentials>` zie op [https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd](https://xmlns.oracle.com/weblogic/domain/1.0/domain.xsd) voor de correcte positie (per gebrek om het aan het eind van de sectie te plaatsen is OK)
 
 * VM-geheugeninstellingen verhogen:
 
@@ -182,7 +182,7 @@ Dit gebruikt een eenvoudige serverlay-out met slechts een Server Admin.
 
 #### Tomcat 8/8.5 {#tomcat}
 
-Voor een implementatie leest u de [Algemene beschrijving](#general-description) hierboven.
+Voordat een implementatie de [Algemene beschrijving](#general-description) hierboven.
 
 * **Tomcat-server voorbereiden**
 
@@ -213,7 +213,7 @@ Voor een implementatie leest u de [Algemene beschrijving](#general-description) 
    * Als u AEM met contextwortel &quot;/&quot;wilt opstellen, dan moet u contextwortel van bestaande Webapp veranderen ROOT:
 
       * ROOT-webapp stoppen en verwijderen
-      * Naam van map ROOT.war wijzigen in de map webapps van Tomcat
+      * Naam van map ROOT.war wijzigen in de map met webapps van Tomcat
       * Webapp opnieuw starten
 
    * Als u de AEM webtoepassing installeert met behulp van de manager-gui, moet u de maximale grootte van een geüpload bestand verhogen, aangezien de standaard alleen uploadgrootte van 50 MB toestaat. Open hiertoe web.xml van de manager Webtoepassing,

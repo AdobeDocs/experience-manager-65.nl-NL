@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 role: Developer
 exl-id: 659eb9b0-93a0-4bae-8836-d4bc9c3a8c77
-source-git-commit: 3d80ea6a6fbad05afcdd1f41f4b9de70921ab765
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '429'
 ht-degree: 0%
@@ -18,17 +18,17 @@ ht-degree: 0%
 
 De volgende Java™ API Quick Start (SOAP) is beschikbaar voor de Client van de Manager van de Toepassing.
 
-[Snel starten (SOAP-modus): Toepassingsversie maken met Java](#quick-start-soap-mode-creating-application-version-using-the-java-api)
+[Snel starten (SOAP-modus): Toepassingsversie maken met behulp van Java](#quick-start-soap-mode-creating-application-version-using-the-java-api)
 
-[Snel starten (SOAP-modus): Toepassingen exporteren met de Java](#quick-start-soap-mode-exporting-applications-using-the-java-api)
+[Snel starten (SOAP-modus): toepassingen exporteren met behulp van Java](#quick-start-soap-mode-exporting-applications-using-the-java-api)
 
-[Snel starten (SOAP-modus): Toepassingen importeren met de Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
+[Snel starten (SOAP-modus): toepassingen importeren met behulp van Java](#quick-start-soap-mode-importing-applications-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een AEM Forms-toepassing ophalen met Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
+[Snel starten (SOAP-modus): een AEM Forms-toepassing ophalen met de Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-a-application-using-the-java-api)
 
-[Snel starten (SOAP-modus): Toepassingen ophalen met Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
+[Snel starten (SOAP-modus): de toepassingen ophalen met behulp van de Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-the-applications-using-the-java-api)
 
-[Snel starten (SOAP-modus): Status van toepassingen ophalen met Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
+[Snel starten (SOAP-modus): status van toepassingen ophalen met Java](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
 [Snel starten (SOAP-modus):voorvertoning van het AEM Forms- en latere toepassingsarchief weergeven met Java](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
@@ -69,11 +69,11 @@ In het volgende Java™-codevoorbeeld wordt een toepassing gemaakt met de Java�
  * 19. xbean.jar (required for SOAP mode)
  * 20. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -167,11 +167,11 @@ In het volgende Java™-codevoorbeeld wordt een toepassing geëxporteerd met de 
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -248,7 +248,7 @@ In het volgende Java™-codevoorbeeld wordt een toepassing geïmporteerd met de 
 
 >[!NOTE]
 >
-De Java™ API importApplication() vervangt bestaande toepassingen met dezelfde naam door nieuwere toepassingen. Als u een bestaande toepassing wilt bijwerken, gebruikt u API importApplication() in plaats van API updateApplication().
+De Java™ API importApplication() vervangt bestaande toepassingen met dezelfde naam door nieuwere toepassingen. Gebruik API importApplication() in plaats van API updateApplication() om een bestaande toepassing bij te werken.
 
 ```java
 /*
@@ -274,11 +274,11 @@ De Java™ API importApplication() vervangt bestaande toepassingen met dezelfde 
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -357,11 +357,11 @@ In het volgende Java™-codevoorbeeld wordt een toepassing opgehaald met de Java
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -436,11 +436,11 @@ public class GetApplication_SOAP {
 }
 ```
 
-## Snel starten (SOAP-modus): Toepassingen ophalen met de Java™ API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
+## Snel starten (SOAP-modus): de toepassingen ophalen met de Java™ API {#quick-start-soap-mode-getting-the-applications-using-the-java-api}
 
 In het volgende Java™-codevoorbeeld worden de toepassingen opgehaald met de Java™ API.
 
-**Opmerking**: Als u de AEM Forms-toepassings-API ophaalt, getApplications(), wordt alleen geïmplementeerde toepassingen geretourneerd.
+**Opmerking**: AEM Forms Application API ophalen, getApplications(), retourneert alleen geïmplementeerde toepassingen.
 
 ```java
 /*
@@ -466,11 +466,11 @@ In het volgende Java™-codevoorbeeld worden de toepassingen opgehaald met de Ja
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -535,7 +535,7 @@ public class GetApplications_SOAP {
 }
 ```
 
-## Snel starten (SOAP-modus): Status ophalen van toepassingen met Java™ API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
+## Snel starten (SOAP-modus): status ophalen van toepassingen met Java™ API {#quick-start-soap-mode-getting-status-of-applications-using-java-api}
 
 ```java
 /*
@@ -561,11 +561,11 @@ public class GetApplications_SOAP {
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *
@@ -668,11 +668,11 @@ Het volgende Java™-codevoorbeeld is bedoeld voor het voorvertonen van een AEM 
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  */
 package com.adobe.idp.dsc.applicationmanager;
@@ -747,11 +747,11 @@ Het volgende Java™-codevoorbeeld is bedoeld voor het verwijderen van een toepa
  * 18. xbean.jar (required for SOAP mode)
  * 19. xercesImpl.jar (required for SOAP mode)
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  *

@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1306'
+source-wordcount: '1304'
 ht-degree: 1%
 
 ---
@@ -24,7 +24,7 @@ Dit elimineert de behoefte om een douanecomponent voor elke stijl te ontwikkelen
 
 ## Hoofdletters gebruiken {#use-case}
 
-De auteurs van het malplaatje vergen niet alleen de capaciteit om te vormen hoe de componenten voor de inhoudsauteurs functioneren, maar ook om een aantal alternatieve visuele variaties van een component te vormen.
+De auteurs van het malplaatje vergen niet alleen de capaciteit om te vormen hoe de componenten voor de inhoudsauteurs functioneren, maar ook om verscheidene alternatieve visuele variaties van een component te vormen.
 
 Op dezelfde manier hebben inhoudsauteurs niet alleen de mogelijkheid nodig om de inhoud te structureren en te rangschikken, maar ook om te selecteren hoe de inhoud visueel wordt weergegeven.
 
@@ -111,7 +111,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 >[!CAUTION]
 >
->De CSS-klassen (en eventueel noodzakelijke JavaScript) die zijn geconfigureerd als stijleigenschappen van het beleid van een component, moeten worden geïmplementeerd zoals [Clientbibliotheken](/help/sites-developing/clientlibs.md) om te werken.
+>De CSS-klassen (en eventueel noodzakelijke JavaScript) die zijn geconfigureerd als stijleigenschappen van het beleid van een component, moeten worden geïmplementeerd als [Clientbibliotheken](/help/sites-developing/clientlibs.md) om te werken.
 
 ## Instellen {#setup}
 
@@ -160,4 +160,4 @@ Deze eigenschap is ingesteld op het tabblad `cq:Component` knooppunt. Bijvoorbee
 
 Deze mogelijkheid om stijlnamen te definiëren, is handig voor zeer algemene componenten, zoals de container van de layout of de component Content Fragment, zodat ze een extra betekenis krijgen.
 
-Zo kan een container voor lay-out bijvoorbeeld semantiek krijgen `<main>`, `<aside>`, `<nav>`, enz.
+Zo kan een container voor lay-out bijvoorbeeld semantiek krijgen `<main>`, `<aside>`, `<nav>`, enzovoort.

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '15485'
+source-wordcount: '15469'
 ht-degree: 0%
 
 ---
@@ -293,7 +293,7 @@ Een beleid maken met de API voor documentbeveiliging (webservice):
    * Een `PolicySpec` object met behulp van de constructor.
    * Stel de naam van het beleid in door een tekenreekswaarde toe te wijzen aan de `PolicySpec` object `name` lid.
    * Stel de beschrijving van het beleid in door een tekenreekswaarde toe te wijzen aan de `PolicySpec` object `description` lid.
-   * Geef de beleidsset op waartoe het beleid behoort door een tekenreekswaarde toe te wijzen aan de `PolicySpec` object `policySetName` lid. U moet een bestaande naam voor een beleidsset opgeven. (U kunt `null` voor deze parameterwaarde die ertoe leidt dat het beleid wordt toegevoegd aan *Mijn beleid*.)
+   * Geef de beleidsset op waartoe het beleid behoort door een tekenreekswaarde toe te wijzen aan de `PolicySpec` object `policySetName` lid. Geef een bestaande naam voor een beleidsset op. (U kunt `null` voor deze parameterwaarde die ertoe leidt dat het beleid wordt toegevoegd aan *Mijn beleid*.)
    * Stel de offline leaseperiode van het beleid in door een geheel-getalwaarde toe te wijzen aan de `PolicySpec` object `offlineLeasePeriod` lid.
    * Stel de `PolicySpec` object `policyXml` gegevenslid met een tekenreekswaarde die PDRL XML-gegevens vertegenwoordigt. Om deze taak uit te voeren, creeer .NET `StreamReader` object met behulp van de constructor. Geef de locatie van een PDRL XML-bestand dat het beleid vertegenwoordigt, door aan de `StreamReader` constructor. Roep vervolgens het `StreamReader` object `ReadLine` en wijs de geretourneerde waarde toe aan een tekenreeksvariabele. Doorlopen `StreamReader` tot de `ReadLine` methode retourneert null. Wijs de tekenreeksvariabele toe aan de `PolicySpec` object `policyXml` lid.
 
@@ -325,7 +325,7 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 U kunt een bestaand beleid wijzigen met de Java API voor documentbeveiliging of de webservice-API. Om veranderingen in een bestaand beleid aan te brengen, wint u het terug, wijzigt het, en werkt dan het beleid op de server bij. Stel dat u een bestaand beleid ophaalt en de geldigheidsperiode ervan verlengt. Voordat de wijziging van kracht wordt, moet u het beleid bijwerken.
 
-U kunt een beleid wijzigen wanneer de bedrijfsvereisten veranderen en het beleid niet meer op deze vereisten wijst. In plaats van een nieuw beleid te maken, kunt u gewoon een bestaand beleid bijwerken.
+U kunt een beleid wijzigen wanneer de bedrijfsvereisten veranderen en het beleid niet meer op deze vereisten wijst. In plaats van een beleid te maken, kunt u gewoon een bestaand beleid bijwerken.
 
 Als u beleidskenmerken wilt wijzigen met behulp van een webservice (bijvoorbeeld met Java-proxyklassen die zijn gemaakt met JAX-WS), moet u ervoor zorgen dat het beleid is geregistreerd bij de Document Security-service. U kunt dan naar het bestaande beleid verwijzen door `PolicySpec.getPolicyXml` en wijzigt u de beleidskenmerken met de toepasselijke methoden. U kunt bijvoorbeeld de offline leaseperiode wijzigen door de `PolicySpec.setOfflineLeasePeriod` methode.
 
@@ -353,7 +353,7 @@ Voordat u via programmacode een bewerking voor documentbeveiliging kunt uitvoere
 
 **Een bestaand beleid ophalen**
 
-U moet een bestaand beleid terugwinnen om het te wijzigen. Om een beleid terug te winnen, specificeer de beleidsnaam en het beleid dat wordt geplaatst waartot het beleid behoort. Als u een `null` waarde voor de naam van de beleidsset, wordt het beleid opgehaald uit de *Mijn beleid* beleidsset.
+Haal een bestaand beleid op om het te wijzigen. Om een beleid terug te winnen, specificeer de beleidsnaam en het beleid dat wordt geplaatst waartot het beleid behoort. Als u een `null` waarde voor de naam van de beleidsset, wordt het beleid opgehaald uit de *Mijn beleid* beleidsset.
 
 **De kenmerken van het beleid instellen**
 
@@ -878,9 +878,9 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 **Een met beleid beveiligd PDF-document ophalen**
 
-U moet een met beleid beveiligd PDF-document opvragen om het te herroepen. U kunt een document dat al is ingetrokken of dat niet door een beleid beveiligd is, niet intrekken.
+Haal een document met een door het beleid beschermde PDF op om het in te trekken. U kunt een document dat al is ingetrokken of dat niet door een beleid beveiligd is, niet intrekken.
 
-Als u de waarde van de vergunningsidentificatie van het beleid-beschermde document kent, dan is het niet noodzakelijk om het beleid-beschermde document van de PDF terug te winnen. In de meeste gevallen zult u echter het PDF-document moeten ophalen om de waarde van de licentie-id te verkrijgen.
+Als u de waarde van de vergunningsidentificatie van het beleid-beschermde document kent, dan is het niet noodzakelijk om het beleid-beschermde document van de PDF terug te winnen. In de meeste gevallen moet u echter het PDF-document ophalen om de waarde van de licentie-id op te halen.
 
 **Intrekken van het document dat met een beleid is beveiligd**
 
@@ -1020,7 +1020,7 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 **De licentiecode van het ingetrokken PDF-document ophalen**
 
-U moet de licentie-id van het ingetrokken PDF-document ophalen om een ingetrokken PDF-document opnieuw in te voeren. Nadat u de waarde van de licentie-id hebt gekregen, kunt u een ingetrokken document opnieuw installeren. Als u probeert een document opnieuw in te voegen dat niet is ingetrokken, veroorzaakt u een uitzondering.
+Haal de licentie-id van het ingetrokken PDF-document op om een ingetrokken PDF-document opnieuw in te voeren. Nadat u de waarde van de licentie-id hebt gekregen, kunt u een ingetrokken document opnieuw installeren. Als u probeert een document opnieuw in te voegen dat niet is ingetrokken, veroorzaakt u een uitzondering.
 
 **Toegang tot het ingetrokken PDF-document opnieuw instellen**
 
@@ -1287,7 +1287,7 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 **De kenmerken van de watermerken instellen**
 
-Als u een nieuw watermerk wilt maken, moet u de kenmerken van het watermerk instellen. Het kenmerk name moet altijd worden gedefinieerd. Naast het kenmerk name moet u ten minste een van de volgende kenmerken instellen:
+Als u een watermerk wilt maken, moet u de kenmerken van het watermerk instellen. Het kenmerk name moet altijd worden gedefinieerd. Naast het kenmerk name moet u ten minste een van de volgende kenmerken instellen:
 
 * Aangepaste tekst
 * DateIncluded
@@ -1622,9 +1622,9 @@ De dienst van het Rights Management volgt specifieke acties aangezien zij voorko
 
 Gebeurtenissen behoren tot een van de volgende categorieën:
 
-* Beheerdersgebeurtenissen zijn handelingen die betrekking hebben op een beheerder, zoals het maken van een nieuwe beheerdersaccount.
+* Beheergebeurtenissen zijn handelingen die betrekking hebben op een beheerder, zoals het maken van een beheerdersaccount.
 * Documentgebeurtenissen zijn handelingen die betrekking hebben op een document, zoals het sluiten van een document dat met een beleid is beveiligd.
-* Beleidsgebeurtenissen zijn acties die betrekking hebben op een beleid, zoals het maken van een nieuw beleid.
+* Beleidsgebeurtenissen zijn handelingen die betrekking hebben op een beleid, zoals het maken van een beleid.
 * De gebeurtenissen van de dienst zijn acties met betrekking tot de dienst van het Rights Management, zoals het synchroniseren met de gebruikersfolder.
 
 U kunt zoeken naar specifieke gebeurtenissen met behulp van de Rights Management Java API of de webservice-API. Door naar gebeurtenissen te zoeken, kunt u taken uitvoeren, zoals het creëren van een logboekdossier van bepaalde gebeurtenissen.
@@ -1652,7 +1652,7 @@ Alvorens u een de dienstverrichting van het Rights Management programmatically k
 
 **Geef de gebeurtenissen op waarnaar u wilt zoeken**
 
-U moet de gebeurtenis opgeven waarnaar u wilt zoeken. U kunt bijvoorbeeld zoeken naar het beleid om een gebeurtenis te maken, die optreedt wanneer een nieuw beleid wordt gemaakt.
+Geef op naar welke gebeurtenis moet worden gezocht. U kunt bijvoorbeeld zoeken naar het beleid om een gebeurtenis te maken, die optreedt wanneer een nieuw beleid wordt gemaakt.
 
 **Zoeken naar de gebeurtenis**
 
@@ -1977,7 +1977,7 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 **Een Word-document ophalen**
 
-U moet een Word-document opvragen om een beleid toe te passen. Nadat u een beleid op het document van Word toepast, worden de gebruikers beperkt wanneer het gebruiken van het document. Als het beleid bijvoorbeeld niet toestaat dat het document offline wordt geopend, moeten gebruikers online zijn om het document te openen.
+Hiermee wordt een Word-document opgehaald om een beleid toe te passen. Nadat u een beleid op het document van Word toepast, worden de gebruikers beperkt wanneer het gebruiken van het document. Als het beleid bijvoorbeeld niet toestaat dat het document offline wordt geopend, moeten gebruikers online zijn om het document te openen.
 
 **Een bestaand beleid toepassen op het Word-document**
 
@@ -2132,7 +2132,7 @@ Voordat u via programmacode een bewerking met de documentbeveiligingsservice kun
 
 **Een met beleid beveiligd Word-document ophalen**
 
-U moet een door een beleid beveiligd Word-document ophalen om een beleid te verwijderen. Als u probeert om een beleid uit een document van Word te verwijderen dat niet door een beleid wordt beschermd, zult u een uitzondering veroorzaken.
+Woord-document dat door een beleid is beveiligd, ophalen om een beleid te verwijderen. Als u probeert om een beleid uit een document van Word te verwijderen dat niet door een beleid wordt beschermd, zult u een uitzondering veroorzaken.
 
 **Het beleid verwijderen uit het Word-document**
 

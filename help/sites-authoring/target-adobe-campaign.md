@@ -1,16 +1,14 @@
 ---
 title: Uw Adobe Campaign als doel instellen
 description: U kunt gerichte ervaringen voor Adobe Campaign maken nadat u segmentatie hebt ingesteld.
-uuid: 8fcc9210-d8c5-44e3-8aa8-6c6db810c98e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: f1cb5e98-ccd1-4b2c-acca-2b3cc1b7ac5f
 exl-id: fc6fccba-41c5-4c13-aac0-b4ef67767abe
-source-git-commit: f4b6eb2ded17ec641f23a1fc3b977ce77169c8a1
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
@@ -34,9 +32,9 @@ De opstellingssegmentatie omvat het creëren van segmenten, een merk, een campag
 Segmenten maken:
 
 1. Open de [segmentatieconsole](http://localhost:4502/miscadmin#/etc/segmentation) om **&lt;host>:&lt;port>/miscadmin#/etc/segmentatie**.
-1. Maak een nieuwe pagina en voer een titel in, bijvoorbeeld **AC-segmenten**- en selecteer de **Segment (Adobe Campaign)** sjabloon.
+1. Maak een pagina en voer een titel in, bijvoorbeeld **AC-segmenten**- en selecteer de **Segment (Adobe Campaign)** sjabloon.
 1. Selecteer de gemaakte pagina in de structuurweergave aan de linkerkant.
-1. Maak een segment, bijvoorbeeld voor mannelijke gebruikers, door een nieuwe pagina te maken onder het segment dat u met de naam Mannelijk hebt gemaakt en selecteer de optie **Segment (Adobe Campaign)** sjabloon.
+1. Maak bijvoorbeeld een segment voor mannelijke gebruikers door een pagina te maken onder het segment dat u met de naam Mannelijk hebt gemaakt en selecteer de optie **Segment (Adobe Campaign)** sjabloon.
 1. Open de gemaakte segmentpagina en sleep een **Segment-id** van het hulpje naar de pagina.
 1. Dubbelklik op het kenmerk, voer in dit geval de id in die het mannelijke segment vertegenwoordigt dat in Adobe Campaign is gedefinieerd, bijvoorbeeld: **MALE** - en klik op **OK**. Het volgende bericht moet worden weergegeven: *`targetData.segmentCode == "MALE"`*
 1. Herhaal de stappen voor een ander segment, bijvoorbeeld een segment dat zich richt op vrouwelijke gebruikers.
@@ -46,25 +44,25 @@ Segmenten maken:
 Een merk maken:
 
 1. In **Sites**, navigeert u naar de **Campagnes** map (bijvoorbeeld in We.Retail).
-1. Klikken **Pagina maken** en voer een titel voor de pagina in, bijvoorbeeld Wij.Handelsmerk en selecteer de **Merk** sjabloon.
+1. Klikken **Pagina maken** en voer een titel voor de pagina in, bijvoorbeeld We.Retail Brand en selecteer de **Merk** sjabloon.
 
 ### Een campagne maken {#creating-a-campaign}
 
 Een campagne maken:
 
-1. Open de **Merk** pagina die u zojuist hebt gemaakt.
+1. Open de **Merk** pagina die u hebt gemaakt.
 1. Klikken **Pagina maken** en voer een titel in voor uw pagina, bijvoorbeeld Wij.Handelscampagne, en selecteer de **Campagne** sjabloon en klik op **Maken**.
 
 ### Ervaringen maken {#creating-experiences}
 
 Zo creëert u ervaringen voor segmenten:
 
-1. Open de **Campagne** pagina die u zojuist hebt gemaakt.
+1. Open de **Campagne** pagina die u hebt gemaakt.
 1. Maak ervaringen voor uw segmenten door op **Pagina maken** en voert u een titel in voor uw pagina, bijvoorbeeld Mannelijk terwijl u een ervaring maakt voor het Mannelijke segment, en selecteert u de optie **Ervaring** sjabloon.
 1. Open de pagina voor het maken van ervaring.
 1. Klikken **Bewerken** en klik vervolgens onder Segmenten op **Item toevoegen**.
-1. Voer bijvoorbeeld het pad naar het mannelijke segment in **/etc/segmentation/ac-segments/male** en klik op **OK**. Het volgende bericht moet worden weergegeven: *De ervaring is gericht op: Mannelijk*
-1. Herhaal de vorige stappen om een ervaring voor alle segmenten, bijvoorbeeld het vrouwelijke doel tot stand te brengen.
+1. Voer bijvoorbeeld het pad naar het mannelijke segment in. **/etc/segmentation/ac-segments/male** en klik op **OK**. Het volgende bericht moet worden weergegeven: *De ervaring is gericht op: Mannelijk*
+1. Herhaal de vorige stappen om een ervaring voor alle segmenten, bijvoorbeeld, het vrouwelijke doel tot stand te brengen.
 
 ## Een nieuwsbrief met doelinhoud maken {#creating-a-newsletter-with-targeted-content}
 
@@ -72,17 +70,17 @@ Nadat u segmenten, een merk, een campagne en een ervaring hebt gemaakt, kunt u e
 
 >[!NOTE]
 >
->[E-mailvoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van Geometrixx uit Pakket delen.
+>[E-mailvoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
 
 Een nieuwsbrief met doelinhoud maken:
 
-1. Een nieuwsbrief met doelinhoud maken: Klik of tik onder E-mailcampagnes in Geometrixx Outdoors **Maken** > **Pagina** en selecteer een van de Adobe Campaign Mail-sjablonen.
+1. Een nieuwsbrief met de gewenste inhoud maken: klik of tik onder E-mailcampagnes in Geometrixx Outdoors **Maken** > **Pagina** en selecteer een van de Adobe Campaign Mail-sjablonen.
 
    ![chlimage_1-188](assets/chlimage_1-188.png)
 
 1. Voeg in de nieuwsbrief een component Tekst en Personalisatie toe.
 1. Voeg tekst toe aan de component Tekst en Personalisatie, zoals &quot;Dit is de standaardinstelling&quot;.
-1. Klik op de pijl naast **Bewerken** en selecteert u **Doelstelling**.
+1. Klik op de pijl naast **Bewerken** en selecteert u **Targeting**.
 1. Selecteer uw merk in het keuzemenu Merk en selecteer uw Campagne. (Dit is het merk en de campagne die u eerder hebt gemaakt).
 1. Klikken **Doelstelling starten**. U ziet de segmenten verschijnen in het gebied Soorten publiek. De standaardervaring wordt gebruikt als geen van de gedefinieerde segmenten overeenkomt.
 
@@ -94,7 +92,7 @@ Een nieuwsbrief met doelinhoud maken:
 
    ![chlimage_1-189](assets/chlimage_1-189.png)
 
-1. Navigeer naar een ander segment (Mannelijk) en klik op **Voorstel toevoegen** en klik op het plusteken +. Bewerk vervolgens het voorstel.
+1. Navigeer naar een ander segment (Mannelijk) en klik **Voorstel toevoegen** en klik op het plusteken +. Bewerk vervolgens het voorstel.
 1. Navigeer naar een ander segment (Vrouwelijk) en klik op **Voorstel toevoegen** en het plusteken +. Bewerk dit voorstel vervolgens.
 1. Klikken **Volgende** om Toewijzing te zien, klikt u vervolgens op **Volgende** om Settings weer te geven, die niet van toepassing is op Adobe Campaign, en klik op **Opslaan**.
 

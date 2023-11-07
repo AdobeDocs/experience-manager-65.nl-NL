@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 exl-id: 171754a2-1ba5-42dc-b6d2-3d730807cc31
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2420'
+source-wordcount: '2418'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De AEM Forms-app maakt het mogelijk om adaptieve formulieren, mobiele formulieren en formsets op mobiele apparaten te synchroniseren op basis van uw server. U kunt workflows definiëren die [Centric workflows voor Forms op OSGi](/help/forms/using/aem-forms-workflow.md) of Forms-workflows op JEE. Bijvoorbeeld, leidt u een bankbedrijf, en gebruikt AEM Forms om klantentoepassingen en mededelingen te beheren. Uw klanten vullen een formulier in en verzenden het ter verificatie. Als u het formulier inschakelt op mobiele apparaten, kunnen uw klanten het formulier invullen in de AEM Forms-app. U kunt de verificatieworkflow ook beheren door het verificatieformulier in te schakelen op mobiele apparaten. Uw veldworker kan een mobiel apparaat bij de klant dragen, de gegevens controleren en het formulier verzenden. De AEM Forms-toepassing synchroniseert met de AEM Forms-server en haalt de formulieren op die zijn ingeschakeld voor mobiele apparaten. Als de app offline is, worden gegevens lokaal opgeslagen.
+De AEM Forms-app maakt het mogelijk om adaptieve formulieren, mobiele formulieren en formsets op mobiele apparaten te synchroniseren op basis van uw server. U kunt workflows definiëren die [Centric workflows voor Forms op OSGi](/help/forms/using/aem-forms-workflow.md) of Forms-workflows op JEE. Bijvoorbeeld, leidt u een bankbedrijf, en gebruikt AEM Forms om klantentoepassingen en mededelingen te beheren. Uw klanten vullen een formulier in en verzenden het ter verificatie. Als u het formulier inschakelt op mobiele apparaten, kunnen uw klanten het formulier invullen in de AEM Forms-app. U kunt de verificatieworkflow ook beheren door het verificatieformulier in te schakelen op mobiele apparaten. Uw veldworker kan een mobiel apparaat bij de klant dragen, de gegevens controleren en het formulier verzenden. De AEM Forms-toepassing synchroniseert met de AEM Forms-server en haalt de formulieren op die zijn ingeschakeld voor mobiele apparaten. Als de app offline is, worden de gegevens lokaal opgeslagen.
 
 De broncode van de AEM Forms-app is via Software Distribution beschikbaar voor klanten. Het broncodepakket in Softwaredistributie is beschikbaar als: `adobe-aemfd-forms-app-src-pkg-<version>.zip`.
 
@@ -103,7 +103,7 @@ Zie:
 
 ### Offline werken {#working-offline}
 
-U kunt in de offlinemodus werken op uw mobiele apparaat. U kunt zich zelfs aanmelden bij de toepassing als er geen netwerkverbinding is en u kunt werken aan alle formulieren die tijdens de laatste onlineperiode met het apparaat waren gesynchroniseerd. Voor meer informatie over het synchroniseren van uw formulieren raadpleegt u [De app synchroniseren](/help/forms/using/sync-app.md). Als u de aan een formulier gekoppelde bijlagen wilt synchroniseren, kunt u de bijlagen ook in de offlinemodus openen. U kunt het formulier bewerken, notities toevoegen en een formulier verzenden of opslaan in de offlinemodus. De volgende keer dat u online bent, wordt het formulier gesynchroniseerd met de AEM Forms-server.
+U kunt in de offlinemodus werken op uw mobiele apparaat. U kunt zich zelfs aanmelden bij de toepassing als er geen netwerkverbinding is en u kunt werken aan alle formulieren die tijdens de laatste onlineperiode met het apparaat waren gesynchroniseerd. Zie voor meer informatie over het synchroniseren van uw formulieren [De app synchroniseren](/help/forms/using/sync-app.md). Als u de aan een formulier gekoppelde bijlagen wilt synchroniseren, kunt u de bijlagen ook in de offlinemodus openen. U kunt het formulier bewerken, notities toevoegen en een formulier verzenden of opslaan in de offline modus. De volgende keer dat u online bent, wordt het formulier gesynchroniseerd met de AEM Forms-server.
 
 Zie voor meer informatie [Werken in de offlinemodus](/help/forms/using/work-offline-mode.md).
 
@@ -117,13 +117,13 @@ U kunt de volgende bijlagen toevoegen aan een formulier op uw mobiele apparaat
 
 ### Automatisch opslaan {#autosave}
 
-Wanneer een gebruiker gegevens in de AEM Forms-app invoert, slaat de functie voor automatisch opslaan deze op regelmatige intervallen op. Met de functie voor automatisch opslaan in de AEM Forms-app kunt u gegevensverlies voorkomen als de app wordt gesloten vanwege omstandigheden zoals een lage batterij.
+Wanneer een gebruiker gegevens in de AEM Forms-app invoert, slaat de functie voor automatisch opslaan deze op regelmatige intervallen op. Met de functie voor automatisch opslaan in de AEM Forms-app kunt u gegevensverlies voorkomen als de app wordt gesloten als gevolg van omstandigheden zoals een lage batterij.
 
 Zie [Automatisch opslaan gebruiken in AEM Forms-app](/help/forms/using/autosave-data-app.md).
 
 ## Verschillen tussen functies van AEM Inbox- en AEM Forms-apps {#differences-between-aem-inbox-and-aem-forms-app-features}
 
-Twee van de belangrijkste manieren om een Forms-centric workflow te starten, worden gebruikt [AEM Postvak IN](/help/forms/using/manage-applications-inbox.md) en AEM Forms-app. De mogelijkheden van AEM Inbox en AEM Forms-app verschillen echter. AEM Inbox werkt alleen met [Forms-gecentreerde workflows](/help/forms/using/aem-forms-workflow.md) terwijl de AEM Forms-app werkt met zowel Forms-gerichte workflows als procesbeheer. Voor meer informatie over de verschillen tussen de mogelijkheden van AEM Inbox- en AEM Forms-apps raadpleegt u [Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows](capabilities-osgi-jee-workflows.md).
+Twee van de belangrijkste manieren om een Forms-centric workflow te starten, worden gebruikt [AEM Inbox](/help/forms/using/manage-applications-inbox.md) en AEM Forms-app. De mogelijkheden van AEM Inbox en AEM Forms-app verschillen echter. AEM Inbox werkt alleen met [Forms-gecentreerde workflows](/help/forms/using/aem-forms-workflow.md) terwijl de AEM Forms-app werkt met zowel Forms-gerichte workflows als procesbeheer. Voor meer informatie over de verschillen tussen de mogelijkheden van AEM Inbox- en AEM Forms-apps raadpleegt u [Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows](capabilities-osgi-jee-workflows.md).
 
 ## Ondersteunde formulieren {#supported-forms}
 
@@ -163,7 +163,7 @@ De AEM Forms-app is eenvoudig aan te passen aan de specifieke behoeften van de o
 
 U kunt uw app aanpassen voor:
 
-**Branding**: Wijzig het toepassingspictogram, de naam van de toepassing, start afbeeldingen en pagina&#39;s in de AEM Forms-app. U kunt tekst ook wijzigen om de app voor een bepaald gebied te lokaliseren. Ga voor meer informatie over het brandmerken van de AEM Forms-app naar [Aanpassing branding](/help/forms/using/branding-customization.md).
+**Branding**: wijzig het app-pictogram, de naam van de app, start afbeeldingen en pagina&#39;s in de AEM Forms-app. U kunt tekst ook wijzigen om de app voor een bepaald gebied te lokaliseren. Ga voor meer informatie over het brandmerken van de AEM Forms-app naar [Aanpassing branding](/help/forms/using/branding-customization.md).
 
 **Thema**: Wijzig stijlen zoals kleuren, lettertypen en spatiëring in de gebruikersinterface van de AEM Forms-app. Zie voor meer informatie [Aanpassing thema](/help/forms/using/theme-customization.md).
 
@@ -218,4 +218,4 @@ U kunt de app rechtstreeks vanuit de afspeelwinkel upgraden.
 
 * **Als een eerdere versie van de app is gemaakt en geïnstalleerd met de broncode (van toepassing op iOS en Android)**:
 
-   Voordat u de nieuwe app installeert, moet u al uw gegevens synchroniseren met de AEM Forms-server. Nadat de gegevens zijn gesynchroniseerd, verwijdert u de eerdere versie van de app en installeert u de nieuwe app.
+  Voordat u de nieuwe app installeert, moet u al uw gegevens synchroniseren met de AEM Forms-server. Nadat de gegevens zijn gesynchroniseerd, verwijdert u de eerdere versie van de app en installeert u de nieuwe app.

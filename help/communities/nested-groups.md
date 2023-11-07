@@ -7,9 +7,9 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 55803b7a-9064-4392-9cc2-9f113fa8dc29
-source-git-commit: f03d0ab9d0f491441378e16e1590d33651f064b5
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '548'
 ht-degree: 1%
 
 ---
@@ -50,7 +50,7 @@ Deze consoles zijn gelijkaardig aan de console van Plaatsen van Gemeenschappen.
    * **[!UICONTROL Community Group Root]**: *standaard verlaten*
    * **[!UICONTROL Additional Available Community Group Language(s)]**: gebruik het keuzemenu om de beschikbare talen van de groep van de gemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
    * **[!UICONTROL Community Group Name]**: kunsten
-   * **[!UICONTROL Template]**: vervolgkeuzelijst om te selecteren `Reference Group`
+   * **[!UICONTROL Template]**: te selecteren vervolgkeuzelijst `Reference Group`
    * Selecteer **[!UICONTROL Next]**
 
 ![Geneste groepen van gemeenschappen](assets/parent-to-nestedgroup.png)
@@ -148,7 +148,7 @@ Na publicatie van de hoofdsite van de community:
 
 ## Ervaring met publiceren {#experience-on-publish}
 
-U kunt de verschillende groepen ervaren wanneer u zich aanmeldt, bijvoorbeeld met de [demo-gebruikers](/help/communities/tutorials.md#demo-users) gebruikt voor:
+U kunt de verschillende groepen ervaren wanneer u zich bijvoorbeeld aanmeldt bij de [demo-gebruikers](/help/communities/tutorials.md#demo-users) gebruikt voor:
 
 * Groepslid illustratie/geschiedenis: `emily.andrews@mailinator.com/password`
    * De beperkte (geheime) groep, kunst/geschiedenis, is zichtbaar:

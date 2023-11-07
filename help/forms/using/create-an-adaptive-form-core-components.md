@@ -9,13 +9,13 @@ contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: ee596672-b0b5-42e9-a139-72f90287bf3b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 0%
 
 ---
-
 
 # Op Adaptieve Forms gebaseerde Core Components maken {#creating-an-adaptive-form-core-components}
 

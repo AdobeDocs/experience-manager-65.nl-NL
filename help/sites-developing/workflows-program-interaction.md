@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2009'
+source-wordcount: '2008'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ De volgende acties worden ondersteund met de REST API:
 
 >[!NOTE]
 >
->Met Firebug, een Firefox-extensie voor webontwikkeling, kunt u het HTTP-verkeer volgen wanneer de console wordt uitgevoerd. U kunt bijvoorbeeld de parameters en waarden controleren die naar de AEM server worden verzonden met een `POST` verzoek.
+>Met Firebug, een Firefox-extensie voor webontwikkeling, kunt u het HTTP-verkeer volgen wanneer de console wordt uitgevoerd. U kunt bijvoorbeeld de parameters en de waarden controleren die met een `POST` verzoek.
 
 Op deze pagina wordt aangenomen dat AEM op localhost op poort wordt uitgevoerd `4502` en dat de installatiecontext &quot; `/`&quot; (basis). Als dit niet het geval is voor uw installatie, moeten de URI&#39;s, waarop de HTTP-aanvragen van toepassing zijn, dienovereenkomstig worden aangepast.
 
@@ -99,7 +99,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td><p>Maakt een nieuwe werkstroominstantie. De parameters zijn:<br /> - <code>model</code>: de id (URI) van het respectieve workflowmodel<br /> - <code>payloadType</code>: bevat het type van de lading (bijvoorbeeld <code>JCR_PATH</code> of URL).<br /> De lading wordt verzonden als parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een locatiekopbal die URL van de nieuwe werkschemainstantiebron bevat.</p> </td>
+   <td><p>Maakt een nieuwe werkstroominstantie. De parameters zijn:<br /> - <code>model</code>: de id (URI) van het respectieve workflowmodel<br /> - <code>payloadType</code>: met het type van de lading (bijvoorbeeld <code>JCR_PATH</code> of URL).<br /> De lading wordt verzonden als parameter <code>payload</code>. A <code>201</code> (<code>CREATED</code>) reactie wordt teruggestuurd met een locatiekopbal die URL van de nieuwe werkschemainstantiebron bevat.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -488,7 +488,7 @@ De gebruikte voorbeelden:
 >
 >Verwijderen verwijdert het modelknooppunt niet.
 
-Bij het maken van een nieuw model:
+Bij het maken van een model:
 
 * De werkstroommodeleditor vereist dat modellen een specifieke knooppuntstructuur hieronder gebruiken `/var/workflow/models`. Het bovenliggende knooppunt van het model moet van het type zijn `cq:Page` een `jcr:content` knooppunt met de volgende eigenschapswaarden:
 

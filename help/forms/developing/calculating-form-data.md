@@ -1,7 +1,7 @@
 ---
 title: Formuliergegevens berekenen
 seo-title: Calculating Form Data
-description: Gebruik de Forms-service om waarden te berekenen die een gebruiker in een formulier invoert en de resultaten weer te geven. De dienst van Forms berekent de waarden gebruikend Java API en de Dienst API van het Web.
+description: Met de Forms-service kunt u waarden berekenen die een gebruiker in een formulier invoert en de resultaten weergeven. De dienst van Forms berekent de waarden gebruikend Java API en de Dienst API van het Web.
 seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
 uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1882'
+source-wordcount: '1878'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ De gebruiker voert waarden in het formulier in en klikt op de knop Berekenen om 
 
 * De gebruiker heeft toegang tot een HTML-pagina met de naam StartLoan.html die fungeert als de startpagina van de webtoepassing. Deze pagina roept een Java-server aan met de naam `GetLoanForm`.
 * De `GetLoanForm` servlet geeft een leningformulier weer . Dit formulier bevat een script, interactieve velden, een knop Berekenen en een knop Verzenden.
-* De gebruiker voert waarden in de velden van het formulier in en klikt op de knop Berekenen. Het formulier wordt verzonden naar de `CalculateData` Java Servlet waar het script wordt uitgevoerd. Het formulier wordt teruggestuurd naar de gebruiker met de berekeningsresultaten die in het formulier worden weergegeven.
+* De gebruiker voert waarden in de velden van het formulier in en klikt op de knop Berekenen. Het formulier wordt verzonden naar de `CalculateData` Java Server waar het script wordt uitgevoerd. Het formulier wordt teruggestuurd naar de gebruiker met de berekeningsresultaten die in het formulier worden weergegeven.
 * De gebruiker gaat verder met het invoeren en berekenen van waarden totdat een bevredigend resultaat wordt weergegeven. Als de gebruiker tevreden is, klikt u op de knop Verzenden om het formulier te verwerken. Het formulier wordt verzonden naar een andere Java-server met de naam `ProcessForm` die verantwoordelijk is voor het ophalen van de verzonden gegevens. (Zie [Verzendde Forms afhandelen](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
 
 
@@ -55,11 +55,11 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>De <code>GetLoanForm</code> Java Servlet gebruikt de Forms Service Client API om het leningformulier te genereren naar de webbrowser van de client. Het verschil tussen het weergeven van een formulier met een script dat is geconfigureerd om op de server te worden uitgevoerd en het weergeven van een formulier dat geen script bevat, is dat u de doellocatie moet opgeven die wordt gebruikt om het script uit te voeren. Als geen doellocatie is opgegeven, wordt een script dat is geconfigureerd om op de server te worden uitgevoerd, niet uitgevoerd. Neem bijvoorbeeld de toepassing die in deze sectie is geïntroduceerd. De <code>CalculateData</code> Java Servlet is de doellocatie waar het script wordt uitgevoerd.</p></td>
+   <td><p>De <code>GetLoanForm</code> Java Servlet gebruikt de Forms Service Client API om het leningformulier te genereren naar de webbrowser van de client. Het verschil tussen het weergeven van een formulier met een script dat is geconfigureerd om op de server te worden uitgevoerd en het weergeven van een formulier dat geen script bevat, is dat u de doellocatie moet opgeven die wordt gebruikt om het script uit te voeren. Als er geen doellocatie is opgegeven, wordt een script dat is geconfigureerd om op de server te worden uitgevoerd, niet uitgevoerd. Neem bijvoorbeeld de toepassing die in deze sectie is geïntroduceerd. De <code>CalculateData</code> Java Servlet is de doellocatie waar het script wordt uitgevoerd.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>De gebruiker voert gegevens in interactieve gebieden in en klikt de Calculate knoop. Het formulier wordt verzonden naar de <code>CalculateData</code> Java Servlet, waar het script wordt uitgevoerd. </p></td>
+   <td><p>De gebruiker voert gegevens in interactieve gebieden in en klikt de Calculate knoop. Het formulier wordt verzonden naar de <code>CalculateData</code> Java Server, waar het script wordt uitgevoerd. </p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
@@ -86,15 +86,15 @@ De syntaxis van het script in dit formulierontwerp is als volgt:
      NumericField3 = NumericField2 + NumericField1
 ```
 
-In dit formulierontwerp is de knop Berekenen een opdrachtknop en bevindt het script zich in de map `Click` gebeurtenis. Wanneer een gebruiker waarden in de eerste twee velden invoert (NumericField1 en NumericField2) en op de knop Berekenen klikt, wordt het formulier verzonden naar de Forms-service waar het script wordt uitgevoerd. De Forms-service geeft het formulier terug naar het clientapparaat met de resultaten van de berekening die in het veld NumericField3 worden weergegeven.
+In dit formulierontwerp is de knop Berekenen een opdrachtknop en bevindt het script zich in de knoppen `Click` gebeurtenis. Wanneer een gebruiker waarden in de eerste twee velden invoert (NumericField1 en NumericField2) en op de knop Berekenen klikt, wordt het formulier verzonden naar de Forms-service waar het script wordt uitgevoerd. De Forms-service geeft het formulier terug naar het clientapparaat met de resultaten van de berekening die in het veld NumericField3 worden weergegeven.
 
 >[!NOTE]
 >
->Voor informatie over het maken van een formulierontwerpscript raadpleegt u [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+>Zie voor informatie over het maken van een formulierontwerpscript: [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -117,11 +117,11 @@ Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvo
 
 U gebruikt de Forms Service Client API om toepassingslogica te maken die een formulier afhandelt dat een script bevat dat is geconfigureerd om op de server te worden uitgevoerd. Het proces is vergelijkbaar met het verwerken van een verzonden formulier. (Zie [Verzendde Forms afhandelen](/help/forms/developing/handling-submitted-forms.md).)
 
-Controleren of de verwerkingsstatus van het verzonden formulier gelijk is aan `1` `(Calculate)`, wat betekent dat de Forms-service een berekening uitvoert voor de formuliergegevens en dat de resultaten moeten worden teruggeschreven naar de gebruiker. In deze situatie, wordt een manuscript dat wordt gevormd om op de server in werking te stellen automatisch uitgevoerd.
+Controleren of de verwerkingsstatus die aan het verzonden formulier is gekoppeld, `1` `(Calculate)`, wat betekent dat de Forms-service een berekening uitvoert voor de formuliergegevens en dat de resultaten moeten worden teruggeschreven naar de gebruiker. In deze situatie, wordt een manuscript dat wordt gevormd om op de server in werking te stellen automatisch uitgevoerd.
 
 **De formuliergegevensstroom terugschrijven naar de webbrowser van de client**
 
-Nadat u hebt gecontroleerd of de verwerkingsstatus van een verzonden formulier `1`, moet u de resultaten terugschrijven naar de clientwebbrowser. Wanneer het formulier wordt weergegeven, wordt de berekende waarde weergegeven in het (de) desbetreffende veld(en).
+Nadat u hebt gecontroleerd of de verwerkingsstatus van een verzonden formulier `1`, moet u de resultaten terugschrijven naar de clientwebbrowser. Wanneer het formulier wordt weergegeven, wordt de berekende waarde weergegeven in het juiste veld of de juiste velden.
 
 **Zie ook**
 
@@ -144,7 +144,7 @@ Formuliergegevens berekenen met de Forms API (Java):
 1. Een Forms Client API-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Een formulier ophalen dat een berekeningsscript bevat
 
@@ -152,14 +152,13 @@ Formuliergegevens berekenen met de Forms API (Java):
    * De `FormsServiceClient` object `processFormSubmission` en geeft de volgende waarden door:
 
       * De `com.adobe.idp.Document` object dat de formuliergegevens bevat.
-      * Een tekenreekswaarde die omgevingsvariabelen opgeeft, inclusief alle relevante HTTP-headers. U moet het inhoudstype specificeren om te behandelen door één of meerdere waarden voor te specificeren `CONTENT_TYPE` omgevingsvariabele. Als u bijvoorbeeld XML- en PDF-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
-      * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde; bijvoorbeeld: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Een tekenreekswaarde die omgevingsvariabelen opgeeft, inclusief alle relevante HTTP-headers. Geef het inhoudstype op dat u wilt afhandelen door een of meer waarden voor de `CONTENT_TYPE` omgevingsvariabele. Als u bijvoorbeeld XML- en PDF-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=application/xml&CONTENT_TYPE=application/pdf`
+      * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` -object dat uitvoeringsopties opslaat.
 
-      De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
+     De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
 
    * Controleren of de verwerkingsstatus van een verzonden formulier `1` door de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `1`, is de berekening uitgevoerd en kunnen de gegevens worden teruggeschreven naar de webbrowser van de client.
-
 
 1. De formuliergegevensstroom terugschrijven naar de webbrowser van de client
 
@@ -191,7 +190,7 @@ Formuliergegevens berekenen met de Forms API (webservice):
 1. Een formulier ophalen dat een berekeningsscript bevat
 
    * Als u formuliergegevens wilt ophalen die naar een Java Server zijn gepost, maakt u een `BLOB` object met behulp van de constructor.
-   * Een `java.io.InputStream` object gebruiken `javax.servlet.http.HttpServletResponse` object `getInputStream` methode.
+   * Een `java.io.InputStream` object door het `javax.servlet.http.HttpServletResponse` object `getInputStream` methode.
    * Een `java.io.ByteArrayOutputStream` object door de constructor ervan te gebruiken en de lengte van het object door te geven `java.io.InputStream` object.
    * Kopieer de inhoud van het dialoogvenster `java.io.InputStream` in het `java.io.ByteArrayOutputStream` object.
    * Maak een bytearray door de `java.io.ByteArrayOutputStream` object `toByteArray` methode.
@@ -201,7 +200,7 @@ Formuliergegevens berekenen met de Forms API (webservice):
 
       * De `BLOB` object dat de formuliergegevens bevat.
       * Een tekenreekswaarde die omgevingsvariabelen opgeeft die alle relevante HTTP-headers bevatten. U kunt bijvoorbeeld de volgende tekenreekswaarde opgeven: `HTTP_REFERER=referrer&HTTP_CONNECTION=keep-alive&CONTENT_TYPE=application/xml`
-      * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde; bijvoorbeeld: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
       * A `RenderOptionsSpec` -object dat uitvoeringsopties opslaat. Voor meer informatie, .
       * Een leeg `BLOBHolder` object dat door de methode wordt gevuld.
       * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld.
@@ -211,10 +210,9 @@ Formuliergegevens berekenen met de Forms API (webservice):
       * Een leeg `MyArrayOf_xsd_anyTypeHolder` object dat door de methode wordt gevuld. Met deze parameter worden bestandsbijlagen opgeslagen die samen met het formulier worden verzonden.
       * Een leeg `FormsResultHolder` object dat door de methode is gevuld met het formulier dat wordt verzonden.
 
-      De `processFormSubmission` wordt de `FormsResultHolder` met de resultaten van het verzenden van het formulier. De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
+     De `processFormSubmission` wordt de `FormsResultHolder` met de resultaten van het verzenden van het formulier. De `processFormSubmission` methode retourneert een `FormsResult` object met de resultaten van het verzenden van het formulier.
 
    * Controleren of de verwerkingsstatus van een verzonden formulier `1` door de `FormsResult` object `getAction` methode. Als deze methode de waarde retourneert `1`, is de berekening uitgevoerd en kunnen de gegevens worden teruggeschreven naar de webbrowser van de client.
-
 
 1. De formuliergegevensstroom terugschrijven naar de webbrowser van de client
 

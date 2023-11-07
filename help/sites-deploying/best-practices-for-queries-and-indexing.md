@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4609'
+source-wordcount: '4602'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,7 @@ Terwijl alle vragen in SQL2 alvorens worden in werking gesteld worden omgezet, i
 
 ### Het gereedschap Uitleg query {#the-explain-query-tool}
 
-Zoals met om het even welke vraagtaal, moet de eerste stap aan het optimaliseren van een vraag begrijpen hoe het zal lopen. Als u deze activiteit wilt inschakelen, kunt u de [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query) die deel uitmaakt van het vluchthandboek. Met dit hulpmiddel, kan een vraag binnen worden gestopt en worden verklaard. Een waarschuwing wordt getoond als de vraag kwesties met een grote bewaarplaats en runtime en de indexen zal veroorzaken die zullen worden gebruikt. Het gereedschap kan ook een lijst met trage en populaire query&#39;s laden die vervolgens kunnen worden uitgelegd en geoptimaliseerd.
+Zoals met om het even welke vraagtaal, moet de eerste stap aan het optimaliseren van een vraag begrijpen hoe het zal lopen. Als u deze activiteit wilt inschakelen, kunt u de [Het gereedschap Query uitvoeren](/help/sites-administering/operations-dashboard.md#explain-query) die deel uitmaakt van het vluchthandboek. Met dit hulpmiddel, kan een vraag binnen worden gestopt en worden verklaard. Een waarschuwing wordt getoond als de vraag kwesties met een grote bewaarplaats en runtime en de indexen zal veroorzaken die worden gebruikt. Het gereedschap kan ook een lijst met trage en populaire query&#39;s laden die vervolgens kunnen worden uitgelegd en geoptimaliseerd.
 
 ### FOUTOPSPORING VOOR VRAGEN {#debug-logging-for-queries}
 
@@ -109,7 +109,7 @@ Nadat u zich hebt aangemeld bij de JMX-console, kunt u zoeken naar **Lucene Inde
 
 Voor vraagstatistieken, bekijk genoemde MBean **Query-statistieken voor onak**.
 
-Als u met een gereedschap als [Luke](https://code.google.com/archive/p/luke/), moet u de console van het Eak gebruiken om de index van `NodeStore` naar een bestandssysteemmap. Lees voor instructies over hoe u dit kunt doen de [Lucene-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
+Als u met een gereedschap als [Luke](https://code.google.com/archive/p/luke/), moet u de console van het Eak gebruiken om de index van `NodeStore` naar een bestandssysteemmap. Voor instructies over hoe te om dit te doen, lees [Lucene-documentatie](https://jackrabbit.apache.org/oak/docs/query/lucene.html).
 
 U kunt de indexen in uw systeem ook in JSON-indeling extraheren. Om dit te doen, moet u toegang hebben `https://server:port/oak:index.tidy.-1.json`
 
@@ -189,7 +189,7 @@ De documentatie van het Eak voor indexen van de Luik maakt een lijst van versche
 * In een bezitsindex, zou het hebben van een unieke bezitsnaam helpen de grootte op een index verminderen, maar voor indexen Lucene, gebruik van `nodeTypes` en `mixins` moet worden gezorgd voor coherente indexen. Een specifieke vraag stellen `nodeType` of `mixin` zal beter presteren dan vragen `nt:base`. Bij het gebruik van deze methode definieert u `indexRules` voor de `nodeTypes` in kwestie.
 
 * Als uw vragen slechts onder bepaalde wegen worden in werking gesteld, dan creeer die indexen onder die wegen. Indexen hoeven niet in de hoofdmap van de opslagplaats te wonen.
-* Men adviseert om één enkele index te gebruiken wanneer alle eigenschappen die worden geïndexeerd verwant zijn om Lucene toe te staan om zo vele bezitsbeperkingen te evalueren mogelijk native. Ook, zal een vraag slechts één index gebruiken, zelfs wanneer het uitvoeren van een toetreden.
+* Gebruik één index wanneer alle eigenschappen die worden geïndexeerd verwant zijn om Lucene toe te staan om zo vele bezitsbeperkingen te evalueren mogelijk native. Ook, zal een vraag slechts één index gebruiken, zelfs wanneer het uitvoeren van een toetreden.
 
 ### CopyOnRead {#copyonread}
 
@@ -297,7 +297,7 @@ De volgende details en resoluties zijn mogelijk:
 
       * Anders, [hergroeperen](#how-to-re-index) de lucene-index
 
-         * Opmerking: de indexstaat van de laatste goede herindexering (of eerste indexering) wordt gebruikt totdat een nieuwe herindexering wordt geactiveerd.
+         * Opmerking: de indexstatus van de laatste goede herindexering (of eerste indexering) wordt gebruikt totdat een nieuwe herindexering wordt geactiveerd.
 
 ### Erkende en uitzonderlijke situaties {#erring-and-exceptional-situations}
 
@@ -426,7 +426,7 @@ Tekstomloop kan niet worden gebruikt voor nieuwe inhoud die aan de opslagplaats 
 
 Nieuwe inhoud wordt toegevoegd aan de repository zal automatisch en incrementeel geïndexeerd worden door het async full-text indexeringsproces (standaard elke 5 seconden).
 
-Onder normale verrichting van AEM, bijvoorbeeld het uploaden van Activa via het Web UI of programmatic ingest van Activa, zal AEM automatisch en incrementeel full-text index de nieuwe binaire inhoud. Aangezien de hoeveelheid gegevens incrementeel en relatief klein is (ongeveer de hoeveelheid gegevens die in 5 seconden aan de opslagplaats kan worden gepresteerd), kan AEM de full-text extractie uit de binaire getallen uitvoeren tijdens het indexeren zonder de algemene systeemprestaties te beïnvloeden.
+Onder normale verrichting van AEM, bijvoorbeeld, zal het uploaden van Activa via het Web UI of programmatic ingest van Activa, AEM automatisch en incrementeel full-text index de nieuwe binaire inhoud. Aangezien de hoeveelheid gegevens incrementeel en relatief klein is (ongeveer de hoeveelheid gegevens die in 5 seconden aan de opslagplaats kan worden gepresteerd), kan AEM de full-text extractie uit de binaire getallen uitvoeren tijdens het indexeren zonder de algemene systeemprestaties te beïnvloeden.
 
 #### Vereisten voor het gebruik van tekstvoorextractie {#prerequisites-to-using-text-pre-extraction}
 

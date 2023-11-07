@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 61a4e196-bd53-4ef0-816b-c14401462457
 docset: aem65
 exl-id: 6e67f2b3-78b9-45f2-b496-61776b9fd9cc
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 
 AEM biedt verschillende mechanismen om u in staat te stellen de consoles (en de [functionaliteit voor paginaontwerp](/help/sites-developing/customizing-page-authoring-touch.md)) van de ontwerpinstantie.
 
-* Clientlibs Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` Het kan bijvoorbeeld de code bevatten die voor uw aangepaste component wordt vereist.
+* Clientlibs Clientlibs laten u de standaardimplementatie uitbreiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` Het kan bijvoorbeeld de code bevatten die is vereist voor uw aangepaste component.
 
 * Bedekkingen zijn gebaseerd op knooppuntdefinities en laten u de standaardfunctionaliteit bedekken (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
 
@@ -158,6 +158,6 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
 
 ### Bronnen filteren {#filtering-resources}
 
-Wanneer u een console gebruikt, wordt vaak gebruikgemaakt van een array wanneer de gebruiker bronnen moet selecteren (bijvoorbeeld pagina&#39;s, componenten, elementen, enzovoort). Dit kan de vorm hebben van een lijst, bijvoorbeeld van waaruit de auteur een punt moet kiezen.
+Wanneer het gebruiken van een console, is een gemeenschappelijk gebruiksgeval wanneer de gebruiker uit middelen (bijvoorbeeld, pagina&#39;s, componenten, activa, etc.) moet selecteren. Dit kan bijvoorbeeld de vorm aannemen van een lijst waaruit de auteur een item moet kiezen.
 
 Om de lijst tot een redelijke grootte en ook relevant voor het gebruiksgeval te houden, kan een filter in de vorm van een douanevoorspelling worden uitgevoerd. Zie [dit artikel](/help/sites-developing/customizing-page-authoring-touch.md#filtering-resources) voor meer informatie.

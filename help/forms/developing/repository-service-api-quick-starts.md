@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '648'
 ht-degree: 0%
 
 ---
@@ -24,25 +24,25 @@ ht-degree: 0%
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de service AEM Forms Repository.
 
-[Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
+[Snel starten (SOAP-modus): een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een bron schrijven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
+[Snel starten (SOAP-modus): een bron schrijven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): Bronnen weergeven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
+[Snel starten (SOAP-modus): bronnen weergeven met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-listing-resources-using-the-java-api)
 
 [Snel starten (SOAP-modus): Een bron lezen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-reading-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een bron bijwerken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
+[Snel starten (SOAP-modus): een bron bijwerken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-updating-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): Zoeken naar bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
+[Snel starten (SOAP-modus): zoeken naar bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-searching-for-resources-using-the-java-api)
 
-[Snel starten (SOAP-modus): Relaties maken tussen bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
+[Snel starten (SOAP-modus): relaties maken tussen bronnen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een bron vergrendelen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
+[Snel starten (SOAP-modus): een bron vergrendelen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-locking-a-resource-using-the-java-api)
 
-[Snel starten (SOAP-modus): Toegangsbeheerlijsten beheren met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
+[Snel starten (SOAP-modus): toegangsbeheerlijsten beheren met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-managing-access-control-lists-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een bron verwijderen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
+[Snel starten (SOAP-modus): een bron verwijderen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP
 
@@ -50,21 +50,21 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor 
 
 De meeste AEM Forms-opslagservice begint snel met interactie met een toepassing met de naam `Applications/FormsApplication,` zoals weergegeven in de volgende afbeelding.
 
-De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld programmatisch toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld programmatisch toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
-Het pad naar een bron in de AEM Forms-opslagplaats is:
+Het pad naar een resource in de AEM Forms-opslagplaats is:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
 >[!NOTE]
 >
->U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de gegevensopslagruimte wilt bladeren, voert u de volgende URL in een webbrowser in `https://[server name]:[server port]/repository`. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
+>U kunt in de AEM Forms Repository bladeren met een webbrowser. Voer de volgende URL in een webbrowser in om door de gegevensopslagruimte te bladeren `https://[server name]:[server port]/repository`. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
 
 >[!NOTE]
 >
 >Toepassingen/FormsApplication bestaat niet standaard. Als u deze toepassing wilt volgen bij het snel starten, maakt u deze met Workbench. Voor informatie over het maken van een toepassing met Workbench raadpleegt u [Aan de slag met procesontwerp](https://www.adobe.com/go/learn_aemforms_workbench_65).
 
-## Snel starten (SOAP-modus): Een map maken met de Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
+## Snel starten (SOAP-modus): een map maken met de Java API {#quick-start-soap-mode-creating-a-folder-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolder* op de volgende locatie `/Applications/FormsApplication/1.0/`. (Zie [Mappen maken](/help/forms/developing/aem-forms-repository.md#creating-folders).)
 
@@ -84,19 +84,19 @@ In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolde
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -170,7 +170,7 @@ In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolde
  }
 ```
 
-## Snel starten (SOAP-modus): Een bron schrijven met de Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
+## Snel starten (SOAP-modus): een bron schrijven met de Java API {#quick-start-soap-mode-writing-a-resource-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de repository. De bron wordt toegevoegd aan de `/Applications/FormsApplication/1.0/FormsFolder` locatie. (Zie [Bronnen schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
@@ -190,19 +190,19 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de r
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -298,9 +298,9 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de r
  
 ```
 
-## Snel starten (SOAP-modus): Bronnen weergeven met de Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}
+## Snel starten (SOAP-modus): bronnen weergeven met de Java API {#quick-start-soap-mode-listing-resources-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich bevinden in `Applications/FormsApplication/1.0/FormsFolder`. (Zie [Aanbiedingsbronnen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
+In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Applications/FormsApplication/1.0/FormsFolder`. (Zie [Aanbiedingsbronnen](/help/forms/developing/aem-forms-repository.md#listing-resources).)
 
 ```java
  /*
@@ -318,19 +318,19 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich bevinden 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -350,7 +350,7 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich bevinden 
  import com.adobe.repository.bindings.dsc.client.ResourceRepositoryClient;
  import com.adobe.repository.infomodel.bean.Resource;
  
- //This quick start lists the content located in Applications/FormsApplication/1.0/FormsFolder
+ //This quick start lists the content in Applications/FormsApplication/1.0/FormsFolder
  //Ensure that you create a AEM Forms application named Applications/FormsApplication using Workbench
  public class ListFiles {
  
@@ -372,7 +372,7 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich bevinden 
              // Create a ResourceRepositoryClient object using the service client factory
              ResourceRepositoryClient repositoryClient = new ResourceRepositoryClient(myFactory);
  
-             // List all the files located in the
+             // List all the files in the
              String resourceFolderPath = "/Applications/FormsApplication/1.0/FormsFolder";
  
              // Retrieve the list of resources under the folder path
@@ -417,19 +417,19 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *Lening.xdp* uit d
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -498,7 +498,7 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *Lening.xdp* uit d
  
 ```
 
-## Snel starten (SOAP-modus): Een bron bijwerken met de Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
+## Snel starten (SOAP-modus): een bron bijwerken met de Java API {#quick-start-soap-mode-updating-a-resource-using-the-java-api}
 
 De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplication/1.0/FormsFolder` door de beschrijving ervan te wijzigen. (Zie [Bronnen bijwerken](/help/forms/developing/aem-forms-repository.md#updating-resources).)
 
@@ -518,19 +518,19 @@ De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplicati
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -610,7 +610,7 @@ De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplicati
  
 ```
 
-## Snel starten (SOAP-modus): Zoeken naar bronnen met de Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
+## Snel starten (SOAP-modus): zoeken naar bronnen met de Java API {#quick-start-soap-mode-searching-for-resources-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/FormsApplication/1.0/FormsFolder`. (Zie [Zoeken naar bronnen](/help/forms/developing/aem-forms-repository.md#searching-for-resources).)
 
@@ -630,19 +630,19 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -734,7 +734,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
  }
 ```
 
-## Snel starten (SOAP-modus): Relaties maken tussen bronnen met de Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
+## Snel starten (SOAP-modus): relaties maken tussen bronnen met de Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de AEM Forms-opslagplaats. (Zie [Resourcerelaties maken](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships).)
 
@@ -754,19 +754,19 @@ In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -875,7 +875,7 @@ In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen
  }
 ```
 
-## Snel starten (SOAP-modus): Een bron vergrendelen met de Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
+## Snel starten (SOAP-modus): een bron vergrendelen met de Java API {#quick-start-soap-mode-locking-a-resource-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/FormsFolder/Loan.xdp vergrendeld. (Zie [Bronnen vergrendelen](/help/forms/developing/aem-forms-repository.md#locking-resources).)
 
@@ -895,19 +895,19 @@ In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/Form
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -986,7 +986,7 @@ In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/Form
  }
 ```
 
-## Snel starten (SOAP-modus): Toegangsbeheerlijsten beheren met de Java API {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
+## Snel starten (SOAP-modus): toegangsbeheerlijsten beheren met de Java API {#quick-start-soap-mode-managing-access-control-lists-using-the-java-api}
 
 Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (ACLs) in de bewaarplaats.
 
@@ -1006,19 +1006,19 @@ Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (AC
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1101,7 +1101,7 @@ Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (AC
  }
 ```
 
-## Snel starten (SOAP-modus): Een bron verwijderen met de Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
+## Snel starten (SOAP-modus): een bron verwijderen met de Java API {#quick-start-soap-mode-deleting-a-resource-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/FormsApplication/1.0/FormsFolder`. Als dit XDP-bestand zich niet in deze map bevindt, wordt een uitzondering gegenereerd. (Zie [Bronnen verwijderen](/help/forms/developing/aem-forms-repository.md#deleting-resources).)
 
@@ -1121,19 +1121,19 @@ In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/F
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -1157,7 +1157,7 @@ In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/F
  
  
  // This quick start deletes Loan.xdp from Applications/FormsApplication/1.0/FormsFolder
- //If this XDP is not located in this folder, an exception is thrown
+ //If this XDP is not in this folder, an exception is thrown
  //Ensure that you create a AEM Forms application named FormsApplication using Workbench
  public class DeleteResource {
  

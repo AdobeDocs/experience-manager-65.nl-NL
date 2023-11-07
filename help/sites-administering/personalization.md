@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1698'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Personalisatie kan in veel gevallen worden gebruikt, bijvoorbeeld:
 
 ### Specifieke, beperkte, doelgebruikersgroepen - Extra&#39;s {#extranets}
 
-* Gebruikers dienen zich aan te melden voor een vergunning. Dit wordt gekoppeld aan een profiel met informatie die nodig is voor personalisatie. Eventuele gegevens zoals de locatie, de relatie met het product, de gebruiksgeschiedenis, budgettaire verantwoordelijkheden, enz.
+* De gebruikers vereisen login voor vergunning; dit zal met een profiel worden verbonden dat informatie verstrekt die voor verpersoonlijking wordt vereist; misschien details zoals hun plaats, verhouding aan het product, gebruiksgeschiedenis, het begroten verantwoordelijkheden, etc.
 * Dergelijke instanties kunnen zich uitstrekken over sites zoals:
 * Bedrijven die websites aanbieden aan een zeer gespecialiseerde afdeling van hun markt, bijvoorbeeld een farmaceutische onderneming die een gespecialiseerde website voor artsen aanbiedt.
 * Bedrijven die websites aanbieden waarmee hun klanten actuele account- en factureringsgegevens kunnen bekijken, bijvoorbeeld telefoonproviders.

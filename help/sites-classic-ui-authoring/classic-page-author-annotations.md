@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: d60e9601-d15b-4378-a33e-e90961f63195
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '761'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Een annotatie plaatst een gekleurde markering/notitie op de pagina. Met de annot
 
 >[!NOTE]
 >
->Annotaties die zijn gemaakt in de klassieke gebruikersinterface worden ook weergegeven in de gebruikersinterface voor geoptimaliseerde aanrakingen. Schetsen zijn echter specifiek voor de gebruikersinterface en worden alleen weergegeven in de gebruikersinterface waarin ze zijn gemaakt.
+>Annotaties die zijn gemaakt in de klassieke gebruikersinterface worden weergegeven in de gebruikersinterface voor geoptimaliseerde aanrakingen. Schetsen zijn echter specifiek voor de gebruikersinterface en worden alleen weergegeven in de gebruikersinterface waarin ze zijn gemaakt.
 
 >[!CAUTION]
 >

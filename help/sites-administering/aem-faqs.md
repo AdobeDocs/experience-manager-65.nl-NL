@@ -2,9 +2,9 @@
 title: Veelgestelde vragen AEM
 description: Gebruik deze veelgestelde vragen om algemene workflows of problemen in AEM te begrijpen, te configureren en op te lossen.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: f7bfbfab9fb9ec00304f2889735c70be924cc217
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1096'
+source-wordcount: '1085'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ De antwoorden op sommige problemen met AEM problemen met probleemoplossing en co
 
 ### Hoe vorm ik binair-minder distributie? {#how-do-i-configure-binary-less-distribution}
 
-Binaire distributie zonder beperkingen wordt ondersteund voor implementaties via een gedeelde gegevensopslag en betreft agents die gebruikmaken van de exportfunctie van het Vault Distribution Package (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) pakketbuilder.
+Binaire distributie zonder beperkingen wordt ondersteund voor implementaties via een gedeelde gegevensopslag en betreft agents die gebruikmaken van de vault-based Distribution Package Exporter (factory PID: `org.apache.sling.distribution.serialization.impl.vlt.VaultDistributionPackageBuilderFactory`) pakketbuilder.
 
 Met binair-geen toegelaten wijze, bevatten de verdeelde inhoudspakketten verwijzingen naar binaire getallen eerder dan de daadwerkelijke binaire getallen.
 
@@ -44,7 +44,7 @@ Creeer een taalwortel en taalexemplaar binnen de wortel, alvorens een vertaalpro
 
 U kunt bijvoorbeeld een hoofdmap maken op `/content/geometrixx` met naam als `fr_LU` (en de titel Frans (Luxemburg)). Maak vervolgens een taalkopie van de pagina in het venster Referenties en navigeer naar `Create structure only` optie in `Create & Translate`. Tot slot creeer een vertaalproject en voeg dan de taalexemplaar aan de vertaalbaan toe.
 
-Raadpleeg de volgende aanvullende bronnen voor meer informatie:
+Zie de volgende aanvullende bronnen voor meer informatie:
 
 * [Inhoud voorbereiden voor vertaling](/help/sites-administering/tc-prep.md)
 * [Vertaalprojecten beheren](/help/sites-administering/tc-manage.md)
@@ -60,13 +60,13 @@ Adobe Experience Manager (AEM) 6.4 wordt geleverd met de SSL-wizard en biedt een
 
 Ga als volgt te werk om SSL standaard in te schakelen [Standaard SSL](/help/sites-administering/ssl-by-default.md).
 
-#### Wat is de aanbevolen architectuur wanneer de Diensten van de Inhoud van AEM van een mobiele app, ideaal React Inheems gebruikt? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
+#### Wat is de aanbevolen architectuur wanneer u AEM Content Services van een mobiele app gebruikt, idealiter React Native? {#what-is-the-recommended-architecture-when-using-aem-s-content-services-from-a-mobile-app-ideally-react-native}
 
 De diensten van de Inhoud zijn gebaseerd op de het Verdelen Modellen en de AEM ontwikkelaars moeten een het Verdelen Model pojo voor elke component verstrekken die wordt uitgevoerd.
 
 Als u wilt begrijpen hoe AEM inhoudsservices van een React-toepassing kunnen worden gebruikt, raadpleegt u [Aan de slag met AEM Content Services](https://helpx.adobe.com/experience-manager/kt/sites/using/content-services-tutorial-use.html) zelfstudie.
 
-Ook, als de ontwikkelaars een boom van componenten willen uitvoeren kunnen zij ook uitvoeren `ComponentExporter` en `ContainerExporter` en gebruiken de `ModelFactory` om de onderliggende componenten te doorlopen en hun modelrepresentatie te retourneren. Zie de volgende bronnen:
+Ook, als de ontwikkelaars een boom van componenten willen uitvoeren kunnen zij ook uitvoeren `ComponentExporter` en `ContainerExporter` interfaces en gebruiken `ModelFactory` om de onderliggende componenten te doorlopen en hun modelrepresentatie te retourneren. Zie de volgende bronnen:
 
 [1] [Adobe-marketing-Cloud/aem-core-wcm-componenten](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/blob/master/bundles/core/src/main/java/com/adobe/cq/wcm/core/components/internal/models/v1/PageImpl.java#L245)
 
@@ -103,17 +103,17 @@ Als tussenoplossing kunt u de component ook handmatig uitschakelen via de gebrui
 
 #### Hoe te om admin consoles aan te passen? {#how-to-customize-admin-consoles}
 
-AEM biedt verschillende mechanismen waarmee u de consoles en de functionaliteit voor het schrijven van pagina&#39;s van de ontwerpinstantie kunt aanpassen. Voor meer informatie over het maken van een aangepaste console en het aanpassen van een standaardweergave voor een console, raadpleegt u [De consoles aanpassen](/help/sites-developing/customizing-consoles-touch.md).
+AEM biedt verschillende mechanismen waarmee u de consoles en de functionaliteit voor het schrijven van pagina&#39;s van de ontwerpinstantie kunt aanpassen. Zie voor meer informatie over het maken van een aangepaste console en het aanpassen van een standaardweergave voor een console [De consoles aanpassen](/help/sites-developing/customizing-consoles-touch.md).
 
 #### Wat is het verschil tussen CoralUI 2 en CoralUI op 3-Gebaseerde componenten? {#what-is-the-difference-between-coralui-and-coralui-based-components}
 
 Een nieuwe reeks het Verdelen componenten van de Stichting van Granite UI wordt gecreeerd voor Coral3 en onder gevestigd [/libs/granite/ui/components/koral/foundation.](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/coral/foundation/server.html) Er is één set voor op CoralUI 2 gebaseerde componenten en één set voor op CoralUI 3 gebaseerde componenten. De nieuwe set is niet alleen een kopie-plakbewerking van de oude set, maar wordt opgeschoond (bijvoorbeeld het stroomlijnen, verwijderen van vervangen functies). Daarom wordt aanbevolen dat een pagina alleen gebruik maakt van op CoralUI 3 gebaseerde of op CoralUI 2 gebaseerde sets.
 
-Voor meer informatie raadpleegt u [Migratiegids voor CoralUI 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
+Ga voor meer informatie naar [Migratiegids voor CoralUI 3](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/legacy/coral2/migration.html).
 
 #### Hoe kan ik de zoekcomponent in AEM Assets aanpassen? {#how-to-customize-the-search-component-in-aem-assets}
 
-Voor meer informatie over zoekresultaten/rangschikking en verdere implementatiegegevens raadpleegt u [Eenvoudige gids voor implementatie van zoekopdrachten](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
+Ga voor meer informatie over zoekresultaten/beoordelingen en verdere implementatiegegevens naar [Eenvoudige gids voor implementatie van zoekopdrachten](https://helpx.adobe.com/experience-manager/kt/sites/using/search-tutorial-develop.html).
 
 De Eenvoudige onderzoeksimplementatie is de materialen van het laboratorium van de Top van 2017 AEM Gedetailleerd Onderzoek.
 

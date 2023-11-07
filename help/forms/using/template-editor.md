@@ -1,19 +1,15 @@
 ---
 title: Aangepaste formuliersjablonen
-seo-title: Adaptive Form Templates
 description: Maak adaptieve formuliersjablonen door de basisstructuur en initiële formulierinhoud te definiëren met de Sjablooneditor.
-seo-description: Create adaptive form templates by defining the basic structure and initial form content using the Template Editor.
-uuid: 317ca3ab-f809-49a7-a063-9d0c17a35fe4
 contentOwner: sashanka
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: b21a48ba-eccd-4bb5-9b92-3039026ddf2a
 docset: aem65
 feature: Adaptive Forms
 exl-id: d7287ee7-fb4e-4d47-b37e-0a9260344070
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2040'
 ht-degree: 0%
 
 ---
@@ -39,9 +35,9 @@ U wilt bijvoorbeeld dat alle formulierauteurs bepaalde tekstvakken, navigatiekno
 
 ## Werken met sjablonen {#working-with-templates}
 
-U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan te navigeren **Adobe Experience Manager > Gereedschappen > Sjablonen**. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen. AEM biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een nieuwe map voor sjablonen te maken. Ga voor meer informatie over het maken van mappen naar [Sjabloonmappen](/help/sites-developing/page-templates-editable.md).
+U kunt tot malplaatjeredacteur van het menu van Hulpmiddelen toegang hebben door aan te navigeren **Adobe Experience Manager > Gereedschappen > Sjablonen**. Hier worden de sjablonen ingedeeld in mappen die zijn ingeschakeld voor bewerkbare sjablonen. AEM biedt een algemene map voor het organiseren van sjablonen. Deze optie is echter niet standaard ingeschakeld. U kunt de beheerder vragen de algemene map in te schakelen of een map voor sjablonen te maken. Ga voor meer informatie over het maken van mappen naar [Sjabloonmappen](/help/sites-developing/page-templates-editable.md).
 
-Als u eenmaal hebt getikt om een map te openen, verschijnt er een knop Maken waarmee u een nieuwe sjabloon voor adaptieve formulieren kunt maken.
+Zodra u tikt om een map te openen, ziet u een knop Maken waarmee u een sjabloon voor adaptieve formulieren kunt maken.
 
 ### Een sjabloon maken {#create-template}
 

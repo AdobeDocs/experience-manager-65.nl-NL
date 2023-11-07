@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: d8d9a799-3e30-442a-843b-d4d7ba70c557
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '471'
+source-wordcount: '468'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ContextHub verstrekt verscheidene kandidaten van de steekproefopslag die u in uw
 
 >[!WARNING]
 >
->De kandidaten van de steekproefopslag worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen en als zodanig niet direct zouden moeten worden gebruikt.
+>De kandidaten van de steekproefopslag worden verstrekt als verwijzingsconfiguraties om u te helpen uw eigen specifieke configuratie voor uw project bouwen. Niet direct gebruiken.
 
 ## aem.segmentation Voorbeeld Store Candidate {#aem-segmentation-sample-store-candidate}
 

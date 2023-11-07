@@ -10,9 +10,9 @@ docset: aem65
 feature: Viewers
 role: User, Admin,Developer,Data Engineer,Data Architect
 exl-id: 161dfe22-bc1c-4b60-8ab6-a19407a39e2e
-source-git-commit: 04941e17054951bcf6264da957d951a5d1107896
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6226'
+source-wordcount: '6222'
 ht-degree: 7%
 
 ---
@@ -496,7 +496,7 @@ Zie ook [Handleiding voor analytische implementatie](https://experienceleague.ad
 
 ## Experience Platform-tags configureren voor integratie {#configuring-adobe-launch-for-the-integration}
 
-Nadat u de Markeringen van het Experience Platform vormt, zal het volgende opstelling voor de integratie zijn:
+Nadat u de Markeringen van het Experience Platform vormt, wordt het volgende opstelling voor de integratie:
 
 * Het creëren van een nieuw Bezit om al uw configuraties samen te houden.
 * De installatie en installatie van extensies. De client-side code van alle extensies die in de eigenschap zijn geïnstalleerd, wordt samen gecompileerd in een bibliotheek. Deze bibliotheek wordt later door de webpagina gebruikt.
@@ -826,7 +826,7 @@ Bijvoorbeeld: `https://ims-na1.adobelogin.com/`
 
    In de **[!UICONTROL Library URI]** (Uniform Resource Identifier). Controleer de locatie van de testversie van de Experience Platform Tags-bibliotheek. Experience Manager vult dit veld automatisch in.
 
-   Alleen voor de doeleinden van deze stap worden bibliotheken met Experience Platform-tags gebruikt die zijn geïmplementeerd op Adobe CDN.
+   Voor steekproefdoeleinden slechts, gebruikt deze stap de bibliotheken van de Markeringen van het Experience Platform die aan Adobe CDN worden opgesteld.
 
    >[!NOTE]
    >

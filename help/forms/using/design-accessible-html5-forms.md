@@ -11,9 +11,9 @@ discoiquuid: 8711ad33-396b-4572-b2ee-71e9f45f4ebe
 docset: aem65
 feature: Mobile Forms
 exl-id: fca2f9b2-11a2-4db0-a370-c4046f32be63
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ HTML5-formulieren maken gebruik van de toegankelijkheidsstandaard van ARIA HTML5
 
 *Opmerking:navigatie met tabbladen geldt niet voor beveiligde velden, zoals berekeningsvelden waarin de som van waarden wordt weergegeven. Als u wilt dat de schermlezer de waarde van een beveiligd veld kan lezen, plaatst u een leeg veld Alleen-lezen boven of naast het beveiligde veld. Wijs de waarde van het beveiligde veld toe aan het nieuwe veld Alleen-lezen. De schermlezer of navigatie met tabs kan dit alleen-lezen veld selecteren en dit uitlezen als de waarde van het beveiligde veld.*
 
-AEM Forms Designer bevat een aantal opties voor spraaktekst die aan schermlezers kunnen worden doorgegeven. Voor elk object in een formulier kan de gebruiker een van de volgende instellingen opgeven voor de schermlezertekst:
+AEM Forms Designer bevat verschillende opties voor spraaktekst die aan schermlezers kunnen worden doorgegeven. Voor elk object in een formulier kan de gebruiker een van de volgende instellingen opgeven voor de schermlezertekst:
 
 * Aangepaste schermlezertekst, die kan worden ingesteld met het palet Toegankelijkheid. Auteurs kunnen notities aanbrengen bij de namen van knoppen en velden en bij het doel ervan.
 * Knopinfo, die u kunt instellen in het palet Toegankelijkheid.
@@ -33,4 +33,4 @@ AEM Forms Designer bevat een aantal opties voor spraaktekst die aan schermlezers
 
 ![toegankelijkheid](assets/accessibility.png)
 
-Als er meerdere opties beschikbaar zijn voor een formulierbesturingselement, zoals knopinfo, Reader Tekst en Bijschrift, gebruikt de Reader Scherm slechts een van deze eigenschappen. De standaardvolgorde is Tekst, knopinfo, Bijschrift en Naam van aangepaste Reader voor scherm. U kunt de standaardvolgorde overschrijven met de Reader Scherm **Voorrang** in het palet Toegankelijkheid.
+Als er meerdere opties beschikbaar zijn voor een formulierbesturingselement, zoals knopinfo, Reader Tekst en Bijschrift, gebruikt de Reader Scherm slechts een van deze eigenschappen. De standaardvolgorde is Tekst, knopinfo, Bijschrift en Naam van aangepaste Reader voor scherm. U kunt de standaardvolgorde overschrijven met de Reader Scherm **Voorrang** in het palet Toegang.

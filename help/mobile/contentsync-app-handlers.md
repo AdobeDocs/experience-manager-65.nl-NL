@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
 exl-id: e2ddf5d1-0f5b-4f3b-9666-0f388915730e
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1409'
+source-wordcount: '1406'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Deze handler moet worden toegevoegd aan elke AEM ContentSync Config voor Apps.
 }
 ```
 
-**mobileContentpackageslisting** Hiermee wordt het AEM inhoudspakket in een bepaalde app weergegeven, plus de serverURL waarnaar updateaanvragen moeten worden ingediend. Dit wordt gebruikt de cliënt zijjs op apparaat om inhoudsupdates te verzoeken
+**mobileContentpackageslisting** Hiermee geeft u het AEM inhoudspakket in een bepaalde app en de serverURL weer waarnaar updateaanvragen moeten worden ingediend. Dit wordt gebruikt de cliënt zijjs op apparaat om inhoudsupdates te verzoeken
 
 De manager zou op AEM App Shell ContentSync Config (knoop met pge-type=app-instance) moeten worden gebruikt
 
@@ -157,7 +157,7 @@ AEM eigenschappen zijn de eigenschappen met naamruimte &quot;cq&quot;, &quot;sli
 
    * een andere ContentSync config
    * aan een Pakket van de Inhoud (zal zijn phonegap-exportTemplate bezit gebruiken om zijn config ContentSync te vinden)
-   * aan een Mobiele Middel (app-inhoud zal onder dat middel worden gevonden en, als die inhoudspakketten een pge-includeInBuild bezit hebben dat waar is, phonegap-exportTemplate zal worden gebruikt om zijn config ContentSync te vinden)
+   * aan een Mobiele Middel (app-inhoud zal onder dat middel worden gevonden en, als die inhoudspakketten een pge-includeInBuild bezit hebben dat waar is, phonegap-exportTemplate wordt gebruikt om zijn config ContentSync te vinden)
 
 * ***autoCreateFirstUpdateBeforeImport - Boolean*** - indien waar (true), een eerste **update** in het doel config alvorens in te voeren als eens niet reeds bestaat
 

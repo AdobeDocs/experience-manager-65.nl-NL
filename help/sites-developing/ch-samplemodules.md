@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: df28180f-7af4-437d-8e91-bfd305f73113
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1174'
 ht-degree: 0%
 
 ---
@@ -23,9 +23,9 @@ ContextHub verstrekt verscheidene modules van steekproefUI die u in uw oplossing
 * Waar u de broncode kunt vinden, zodat u deze kunt openen voor leerdoeleinden.
 * Hoe te om de module UI te vormen.
 
-Voor informatie over het toevoegen van modules UI aan ContextHub, zie [UI-modules toevoegen](ch-configuring.md#adding-a-ui-module). Voor informatie over het ontwikkelen van modules UI, zie [ContextHub UI-moduletypen maken](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
+Voor informatie over het toevoegen van modules UI aan ContextHub, zie [Een UI-module toevoegen](ch-configuring.md#adding-a-ui-module). Voor informatie over het ontwikkelen van modules UI, zie [ContextHub UI-moduletypen maken](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types).
 
-## Contextthub.base UI-moduletype {#contexthub-base-ui-module-type}
+## Type module contextthub.base {#contexthub-base-ui-module-type}
 
 Het contexthub.base moduletype UI is het basistype voor alle andere UI moduletypes. Als dusdanig verstrekt het generische eigenschappen voor het teruggeven van opslaggegevens.
 
@@ -44,10 +44,10 @@ De broncode bevindt zich in /libs/granite/contexthub/code/ui/container/js/Contex
 Configureer de module Contextthub.base UI met behulp van een JavaScript-object in JSON-indeling. Omvat om het even welke volgende eigenschappen om de eigenschappen van de UI module te vormen:
 
 * **afbeelding:** Een URL naar een afbeelding die als pictogram moet worden weergegeven.
-* **pictogram:** De naam van een [Pictogram Koraalinterface](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) klasse. Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.
+* **pictogram:** De naam van [Pictogram Koraalinterface](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) klasse. Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.
 
 * **titel:** Een titel voor de module UI. De titel wordt weergegeven wanneer de aanwijzer op het pictogram van de gebruikersinterface wordt gepauzeerd.
-* **volledig scherm:** Een booleaanse waarde die aangeeft of de UI-module de modus Volledig scherm ondersteunt. Gebruiken `true` om volledig scherm te steunen en `false` om de modus Volledig scherm te voorkomen.
+* **Volledig scherm:** Een booleaanse waarde die aangeeft of de UI-module de modus Volledig scherm ondersteunt. Gebruiken `true` om volledig scherm te steunen en `false` om de modus Volledig scherm te voorkomen.
 
 * **sjabloon:** A [Werkbalken](https://handlebarsjs.com/) malplaatje dat de inhoud specificeert in de toolbar ContextHub terug te geven. Maximaal twee gebruiken `<p>` -tags.
 
@@ -56,7 +56,7 @@ Configureer de module Contextthub.base UI met behulp van een JavaScript-object i
 
    * titel: De tekst die voor dit item moet worden weergegeven
    * afbeelding: (Optioneel) Een URL naar een afbeelding die links moet worden weergegeven
-   * pictogram: (Optioneel) Een CUI-pictogramklasse die links moet worden weergegeven. genegeerd als een afbeelding is opgegeven
+   * pictogram: (Optioneel) Een CUI-pictogramklasse die aan de linkerkant moet worden weergegeven; wordt genegeerd als een afbeelding is opgegeven
    * geselecteerd: (Optioneel) Een Booleaanse waarde die aangeeft of dit item moet worden weergegeven als geselecteerd (true=selected). Geselecteerde items worden standaard weergegeven met een vet lettertype. Een `listType` eigenschap voor het configureren van andere weergaven (zie hieronder).
 
 * **listType:** De stijl die moet worden gebruikt voor items in de keuzelijst. Gebruik een van de volgende waarden:
@@ -94,7 +94,7 @@ De broncode voor de module UI bevindt zich in /libs/granite/contexthub/component
 
 ### Configuratie {#configuration-1}
 
-Instanties van de module Contextthub.browserinfo UI vereisen geen waarde voor de Configuratie van het Detail. De volgende JSON-tekst vertegenwoordigt de standaardconfiguratie van de module.
+Voor instanties van de module Contextthub.browserinfo UI is geen waarde vereist voor de Detail Configuration. De volgende JSON-tekst vertegenwoordigt de standaardconfiguratie van de module.
 
 ```xml
 {
@@ -117,7 +117,7 @@ De bron van de contexthub.datetime UI-module bevindt zich in /libs/granite/conte
 
 ### Configuratie {#configuration-2}
 
-Instanties van de module Contextthub.datetime UI vereisen geen waarde voor de Configuratie van het Detail. De volgende JSON-tekst vertegenwoordigt de standaardconfiguratie van de module.
+Voor instanties van de module Contextthub.datetime UI is geen waarde vereist voor de Detail Configuration. De volgende JSON-tekst vertegenwoordigt de standaardconfiguratie van de module.
 
 ```xml
 {
@@ -183,7 +183,7 @@ De bron van de module UI bevindt zich bij /libs/granite/contexthub/components/mo
 
 ### Configuratie {#configuration-5}
 
-Instanties van de contexthub.screen-orientation UI module vereisen geen waarde voor de Configuratie van het Detail. De volgende JSON-tekst vertegenwoordigt de standaardconfiguratie van de module. De `clickable` eigenschap is `false` standaard. Als u de standaardconfiguratie overschrijft om in te stellen `clickable` tot `true`Als u op de module klikt, wordt een pop-up weergegeven waarin u de richting kunt selecteren.
+Instanties van de contexthub.screen-orientation UI module vereisen geen waarde voor de Configuratie van het Detail. De volgende JSON-tekst vertegenwoordigt de standaardconfiguratie van de module. De `clickable` eigenschap is `false` standaard. Als u de standaardconfiguratie overschrijft om in te stellen `clickable` tot `true`Als u op de module klikt, wordt er een pop-up weergegeven waarin u de richting kunt selecteren.
 
 ```xml
 {

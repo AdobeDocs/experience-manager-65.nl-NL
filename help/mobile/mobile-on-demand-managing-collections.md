@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '798'
+source-wordcount: '796'
 ht-degree: 0%
 
 ---
@@ -113,7 +113,7 @@ De algemene workflow voor het verwijderen van een verzameling:
 1. Selecteer het artikel dat u wilt verwijderen in het dialoogvenster **Verzamelingen beheren** tegel.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
 1. Klikken **Verwijderen** in de actiebalk.
-1. Controleer of u niet alleen mobiele apparaten op aanvraag maar ook AEM wilt verwijderen.
+1. Controleer of u gegevens uit AEM en mobiel op aanvraag wilt verwijderen.
 1. Klikken **Verwijderen**.
 1. Uw verzameling wordt nu verwijderd uit de lijst.
 

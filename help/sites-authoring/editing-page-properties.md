@@ -2,9 +2,9 @@
 title: Eigenschappen van inhoudspagina bewerken
 description: Definieer de vereiste eigenschappen voor een pagina in Adobe Experience Manager.
 exl-id: 3cd9374f-6f16-40fb-97cf-5f9a750b8dd2
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1871'
 ht-degree: 2%
 
 ---
@@ -257,7 +257,7 @@ U kunt pagina-eigenschappen definiëren:
 
 * Van de **Sites** console:
 
-   * [Een nieuwe pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page) (een subset van de eigenschappen)
+   * [Een pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page) (een subset van de eigenschappen)
 
    * Klikken of tikken **Eigenschappen**
 
@@ -352,7 +352,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u het volgende doen:
    * Algemene eigenschappen met een gemeenschappelijke waarde
 
       * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
-      * Wanneer het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven wanneer *alles* vaak voorkomen. Als slechts enkele van de algemene voorbeelden voorkomen, worden deze alleen weergegeven tijdens het bewerken.
+      * Wanneer het veld meerdere waarden heeft (bijvoorbeeld tags), worden waarden alleen weergegeven wanneer *alles* vaak voorkomen. Als slechts enkele van de algemene voorbeelden voorkomen, worden deze alleen weergegeven tijdens het bewerken.
 
   Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
 
@@ -363,7 +363,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u het volgende doen:
    * U kunt de waarden in de beschikbare velden bijwerken.
 
       * De nieuwe waarden worden toegepast op alle geselecteerde pagina&#39;s wanneer u **Gereed**.
-      * Wanneer het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
+      * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), kunt u een nieuwe waarde toevoegen of een gemeenschappelijke waarde verwijderen.
 
    * Velden die veel voorkomen, maar verschillende waarden op de verschillende pagina&#39;s hebben, worden aangegeven met een speciale waarde, zoals de tekst `<Mixed Entries>`.
 

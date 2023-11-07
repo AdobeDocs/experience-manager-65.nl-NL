@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '706'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,21 @@ ht-degree: 0%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
-* Zie [Tags voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het etiketteringskader evenals het opnemen van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
+* Zie [Tags voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het etiketteringskader en het opnemen van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
-1. Inhoud ordenen: het labelen maakt het leven voor auteurs gemakkelijker aangezien zij inhoud snel en zonder moeite kunnen organiseren .
-1. Tags organiseren: terwijl tags inhoud ordenen, ordenen hiërarchische taxonomieën/naamruimten tags.
-1. Georganiseerde tags toepassen: met de mogelijkheid om codes en subcodes te maken, wordt het mogelijk volledige taxonomische systemen uit te drukken, met inbegrip van termen, subtermen en hun relaties. Zo kunt u een tweede (of derde) inhoudshiërarchie maken die parallel is aan de officiële inhoudshiërarchie.
-1. Gecontroleerde labeling: U kunt de codering beheren door machtigingen toe te passen op tags en/of naamruimten om het maken en de toepassing van tags te beheren.
-1. Flexibele tags: Tags hebben vele namen en gezichten: tags, taxonomie termen, categorieën, labels en nog veel meer. Zij zijn flexibel in hun inhoudsmodel en in de manier waarop zij kunnen worden gebruikt; bijvoorbeeld bij het schetsen van doeldemografie, het categoriseren en classificeren van inhoud of het creëren van een secundaire inhoudshiërarchie.
-1. Verbeterd zoeken: de standaardzoekcomponent in AEM bevat over het algemeen gemaakte tags en toegepaste tags waarop filters kunnen worden toegepast om de resultaten te beperken tot die welke relevant zijn.
-1. SEO inschakelen: tags die zijn toegepast als pagina-eigenschappen, worden automatisch weergegeven in de tags van de pagina, zodat deze zichtbaar zijn voor zoekprogramma&#39;s.
-1. Eenvoudig, geavanceerd: U kunt eenvoudig tags maken op basis van een woord en een knop. Daarna kunt u een titel, beschrijving en een onbeperkt label toevoegen om meer semantiek aan de tag toe te voegen.
-1. Kernconsistentie: het coderingssysteem is een kernonderdeel van AEM en wordt door alle AEM gebruikt om inhoud te categoriseren . Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
-1. Combineert structuur en flexibiliteit: AEM is ideaal voor het werken met gestructureerde informatie, door het nesten van pagina&#39;s en paden. Het is even krachtig wanneer het werken met ongestructureerde informatie, toe te schrijven aan de ingebouwde full-text onderzoek. Tags combineren de sterke punten van structuur en flexibiliteit.
+1. Inhoud ordenen: labelen maakt het voor auteurs gemakkelijker om inhoud snel en eenvoudig te organiseren.
+1. Tags organiseren: terwijl de inhoud wordt gerangschikt, ordenen hiërarchische taxonomieën/naamruimten de tags.
+1. Met diep georganiseerde tags: met de mogelijkheid om tags en subtags te maken, wordt het mogelijk om volledige taxonomische systemen uit te drukken, met inbegrip van termen, subtermen en hun relaties. Zo kunt u een tweede (of derde) inhoudshiërarchie maken die parallel is aan de officiële inhoudshiërarchie.
+1. Gecontroleerde labeling: codering kan worden beheerd door machtigingen toe te passen op tags en/of naamruimten om het maken en de toepassing van tags te regelen.
+1. Flexibele tags: tags hebben veel namen en gezichten: tags, taxonomie termen, categorieën, labels en nog veel meer. Ze zijn flexibel in hun inhoudsmodel en in de manier waarop ze kunnen worden gebruikt, bijvoorbeeld bij het beschrijven van doeldemografie, het categoriseren en classificeren van inhoud of het creëren van een secundaire inhoudshiërarchie.
+1. Verbeterd zoeken: de standaardzoekcomponent in AEM bevat over het algemeen gemaakte tags en toegepaste tags waarop filters kunnen worden toegepast om de resultaten te beperken tot de relevante waarden.
+1. SEO Inschakelen : tags die zijn toegepast als pagina-eigenschappen worden automatisch weergegeven in de tags van de pagina, zodat deze zichtbaar zijn voor zoekmachines.
+1. Eenvoudig, geavanceerd: tags kunnen eenvoudig worden gemaakt op basis van een woord en de druk op een knop. Daarna kunt u een titel, beschrijving en een onbeperkt label toevoegen om meer semantiek aan de tag toe te voegen.
+1. Basisconsistentie: het coderingssysteem is een kernonderdeel van AEM en wordt door alle AEM gebruikt om inhoud te categoriseren. Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
+1. Combineert Structuur en flexibiliteit: AEM is ideaal voor het werken met gestructureerde informatie vanwege het nesten van pagina&#39;s en paden. Het is even krachtig wanneer het werken met ongestructureerde informatie, toe te schrijven aan de ingebouwde full-text onderzoek. Tags combineren de sterke punten van structuur en flexibiliteit.
 
 Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor elementen ontwerpt, moet u rekening houden met de lichte en toegankelijke manier waarop u tags kunt toewijzen.
 
@@ -53,7 +53,7 @@ Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 
 * Afzonderlijke tags activeren.
 
-   Net als bij pagina&#39;s moeten nieuwe tags worden geactiveerd voordat deze beschikbaar komen in de publicatieomgeving.
+  Net als bij pagina&#39;s moeten nieuwe tags worden geactiveerd voordat deze beschikbaar komen in de publicatieomgeving.
 
 >[!NOTE]
 >

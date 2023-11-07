@@ -6,9 +6,9 @@ role: Developer
 feature: APIs,Assets HTTP API,Developer Tools
 exl-id: 6bc10f4e-a951-49ba-9c71-f568a7f2e40d
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1731'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ if (jcrcontentNode.hasProperty("jcr:title"))
 
 ## Een elementuitvoering maken {#create-an-asset-rendition}
 
-Maak een nieuwe elementuitvoering voor een element. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
+Een elementuitvoering voor een element maken. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
 
 **Parameters**: De parameters zijn `name` voor de naam van de vertoning en `file` als bestandsverwijzing.
 

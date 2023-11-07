@@ -1,7 +1,7 @@
 ---
 title: LiveCycleProcess Java API(SOAP)Snel starten
 seo-title: LiveCycleProcess Java API(SOAP)Quick Start
-description: Gebruik de LiveCycleProcess Java API (SOAP) Quick Start om naar procesinstanties te zoeken, procesinstanties op te schorten, instanties van geschorste processen te starten, procesinstanties te beëindigen, procesgegevens op te ruimen en de status van een taak op te halen.
+description: Met de SOAP (LiveCycleProcess Java API) kunt u snel aan de slag om naar procesinstanties te zoeken, procesinstanties op te schorten, geschorste procesinstanties te starten, procesinstanties te beëindigen, procesgegevens op te ruimen en de status van een taak op te halen.
 seo-description: Use the LiveCycleProcess Java API (SOAP) Quick Start to search for process instances, suspend process instances, start suspended process instances, terminate process instances, purge process data, and retrieve the status of a job.
 uuid: ad14fb50-8dd5-44e0-9e48-f0f0334e04d6
 contentOwner: admin
@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 role: Developer
 exl-id: 7b309743-10ea-4d10-adb6-be5ce9f03ce2
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -22,25 +22,25 @@ ht-degree: 0%
 
 De Java API (SOAP) Quick Start is beschikbaar voor processen. A *procesinstantie* is een instantie van een specifiek proces dat is gestart door een aanroepingsmethode zoals de API voor aanroepen of vanuit de werkruimte.
 
-[Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
+[Snel starten (SOAP-modus): zoeken naar procesinstanties met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-searching-for-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): Procesinstanties onderbreken met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
+[Snel starten (SOAP-modus): procesinstanties onderbreken met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-suspending-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): Opgeschorte procesinstanties starten met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
+[Snel starten (SOAP-modus): instanties van geschorste processen starten met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): Procesinstanties beëindigen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
+[Snel starten (SOAP-modus): procesinstanties beëindigen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-terminating-process-instances-using-the-java-api)
 
-[Snel starten (SOAP-modus): Procesgegevens wissen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
+[Snel starten (SOAP-modus): procesgegevens wissen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-purging-process-data-using-the-java-api)
 
-[Snel starten (SOAP-modus): De status van een taak ophalen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
+[Snel starten (SOAP-modus): de status van een taak ophalen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick start in Programming with AEM Forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Snel aan de slag met Programmeren met AEM Forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het toepasselijke besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
-## Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
+## Snel starten (SOAP-modus): zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn gebaseerd op de *Hypothecaire lening - Prebuilt* proces.
 
@@ -71,7 +71,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -80,7 +80,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -158,7 +158,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar procesinstanties die zijn 
  
 ```
 
-## Snel starten (SOAP-modus): Procesinstanties onderbreken met de Java API {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
+## Snel starten (SOAP-modus): procesinstanties onderbreken met de Java API {#quick-start-soap-mode-suspending-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u een procesinstantie wilt onderbreken, hebt u de proces-oproepings-id nodig die kan worden verkregen wanneer een langdurig proces wordt aangeroepen met de API voor oproeping.
 
@@ -189,7 +189,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u e
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -198,7 +198,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u e
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -250,7 +250,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie opgeschort. Als u e
  
 ```
 
-## Snel starten (SOAP-modus): Opgeschorte procesinstanties starten met de Java API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
+## Snel starten (SOAP-modus): instanties van geschorste processen starten met de Java API {#quick-start-soap-mode-starting-suspended-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces gestart.
 
@@ -281,7 +281,7 @@ In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -290,7 +290,7 @@ In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -338,7 +338,7 @@ In het volgende Java-codevoorbeeld wordt een instantie voor een geschorst proces
  
 ```
 
-## Snel starten (SOAP-modus): Procesinstanties beëindigen met de Java API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
+## Snel starten (SOAP-modus): procesinstanties beëindigen met de Java API {#quick-start-soap-mode-terminating-process-instances-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de id-waarde 756c22860a242fb101ec7a5bc0977fd6.
 
@@ -369,7 +369,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -378,7 +378,7 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -429,9 +429,9 @@ In het volgende Java-codevoorbeeld wordt een procesinstantie beëindigd met de i
  
 ```
 
-## Snel starten (SOAP-modus): Procesgegevens wissen met de Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
+## Snel starten (SOAP-modus): procesgegevens wissen met de Java API {#quick-start-soap-mode-purging-process-data-using-the-java-api}
 
-De volgende Java-code verwijdert gegevens uit een proces met de naam *SecureDocument*. Er wordt een filter gebruikt dat aangeeft dat gegevens moeten worden gewist voor procesinstanties waarbij de procesvariabele genaamd *inValue* is groter dan 200.
+Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam *SecureDocument*. Er wordt een filter gebruikt dat aangeeft dat gegevens moeten worden gewist voor procesinstanties waarbij de procesvariabele genaamd *inValue* is groter dan 200.
 
 ```java
  /*
@@ -459,7 +459,7 @@ De volgende Java-code verwijdert gegevens uit een proces met de naam *SecureDocu
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -468,7 +468,7 @@ De volgende Java-code verwijdert gegevens uit een proces met de naam *SecureDocu
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -536,7 +536,7 @@ De volgende Java-code verwijdert gegevens uit een proces met de naam *SecureDocu
  
 ```
 
-## Snel starten (SOAP-modus): De status van een taak ophalen met de Java API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
+## Snel starten (SOAP-modus): de status van een taak ophalen met de Java API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
 In het volgende codevoorbeeld wordt de status van 10 AEM Forms-taken opgehaald.
 
@@ -567,7 +567,7 @@ In het volgende codevoorbeeld wordt de status van 10 AEM Forms-taken opgehaald.
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -576,7 +576,7 @@ In het volgende codevoorbeeld wordt de status van 10 AEM Forms-taken opgehaald.
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *

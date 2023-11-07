@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7667'
+source-wordcount: '7665'
 ht-degree: 0%
 
 ---
@@ -430,7 +430,7 @@ U kunt het aantal mislukkingspogingen en de daaropvolgende sluitingstijd instell
 
 ### Controle en registratie {#auditing-and-logging}
 
-Het juiste en veilige gebruik van toepassingscontrole en het registreren kan helpen ervoor zorgen dat de veiligheid en andere anomalische gebeurtenissen worden gevolgd en zo snel mogelijk ontdekt. Het effectieve gebruik van controle en het registreren binnen een toepassing omvat punten zoals het volgen van succesvolle en ontbroken logins, evenals zeer belangrijke toepassingsgebeurtenissen zoals de verwezenlijking of de schrapping van zeer belangrijke verslagen.
+Het juiste en veilige gebruik van toepassingscontrole en het registreren kan helpen ervoor zorgen dat de veiligheid en andere anomalische gebeurtenissen worden gevolgd en zo snel mogelijk ontdekt. Het effectieve gebruik van controle en het registreren binnen een toepassing omvat punten zoals het volgen van succesvolle en ontbroken logins, en zeer belangrijke toepassingsgebeurtenissen zoals de verwezenlijking of de schrapping van zeer belangrijke verslagen.
 
 U kunt controle gebruiken om vele soorten aanvallen, met inbegrip van deze te ontdekken:
 
@@ -662,7 +662,7 @@ Bepaalde URL&#39;s worden gemarkeerd als eindgebruikers gerichte webtoepassingen
 
 Een CSRF-aanval (Cross-Site Request Svervalsing) misbruikt het vertrouwen dat een website heeft voor de gebruiker, om opdrachten door te geven die niet door de gebruiker zijn geautoriseerd en onbedoeld. De aanval wordt opstelling door een verbinding of een manuscript in een Web-pagina, of een URL in een e-mailbericht te omvatten, om tot een andere plaats toegang te hebben waaraan de gebruiker reeds voor authentiek is verklaard.
 
-U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag met een `src` kenmerk dat een serverscript op de website van het slachtoffer aanwijst. Door gebruik te maken van het op cookies gebaseerde mechanisme voor sessieverificatie dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld. Zie voor meer voorbeelden [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
+U kunt bijvoorbeeld zijn aangemeld bij de beheerconsole terwijl u tegelijkertijd door een andere website bladert. Een van de webpagina&#39;s kan een HTML-afbeeldingstag met een `src` kenmerk dat een serverscript op de website van het slachtoffer aanwijst. Door het op cookies gebaseerde mechanisme voor sessieverificatie te gebruiken dat door webbrowsers wordt geboden, kan de aanvallende website kwaadaardige verzoeken verzenden naar dit script op de server van het slachtoffer, waarbij de vraag als de legitieme gebruiker wordt gesteld. Zie voor meer voorbeelden [https://owasp.org/www-community/attacks/csrf#Examples](https://owasp.org/www-community/attacks/csrf#Examples).
 
 De volgende kenmerken komen voor in KVP:
 
@@ -706,7 +706,7 @@ Het filterproces Referrer kan als volgt worden beschreven:
 
 AEM Forms on JEE biedt een Referrer Filter om Referrer op te geven die toegang krijgen tot uw serverbronnen. Standaard filtert het filter Referenter geen aanvragen die een veilige HTTP-methode gebruiken, bijvoorbeeld GET, tenzij *CSRF_CHECK_GETS* is ingesteld op true. Als het havenaantal voor een Toegestane ingang van de Verwijzing aan 0 wordt geplaatst, zal AEM Forms op JEE alle verzoeken met Referrer van die gastheer ongeacht het havenaantal toestaan. Als er geen poortnummer is opgegeven, zijn alleen aanvragen van standaardpoort 80 (HTTP) of poort 443 (HTTPS) toegestaan. Filteren met verwijzing is uitgeschakeld als alle items in de lijst Toegestane verwijzing worden verwijderd.
 
-Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane lijst van de Verwijzing bijgewerkt met het adres van de server waarop de Diensten van het Document geïnstalleerd is. De ingangen voor de server omvatten de servernaam, het IPv4 adres, het IPv6 adres als IPv6 wordt toegelaten, het loopbackadres, en een localhost ingang. De namen die aan de lijst Toegestane verwijzing worden toegevoegd, worden geretourneerd door het hostbesturingssysteem. Een server met een IP-adres van 10.40.54.187 bevat bijvoorbeeld de volgende vermeldingen: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Voor om het even welke niet gekwalificeerde naam die door het werkende systeem van de Gastheer (namen wordt teruggegeven die geen IPv4 adres, IPv6 adres of gekwalificeerde domeinnaam) hebben wordt de lijst van gewenste personen niet bijgewerkt. Wijzig de Toegestane lijst van Referiteers om uw bedrijfsomgeving aan te passen. Implementeer de formulierserver niet in de productieomgeving met de standaardlijst Toegestane verwijzing. Nadat u een van de toegestane referentie-, referentie-uitzonderingen of URI&#39;s hebt gewijzigd, zorgt u ervoor dat de server opnieuw wordt gestart zodat de wijzigingen van kracht worden.
+Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane lijst van de Verwijzing bijgewerkt met het adres van de server waarop de Diensten van het Document geïnstalleerd is. De ingangen voor de server omvatten de servernaam, het IPv4 adres, het IPv6 adres als IPv6 wordt toegelaten, het loopbackadres, en een localhost ingang. De namen die aan de lijst Toegestane verwijzing worden toegevoegd, worden geretourneerd door het hostbesturingssysteem. Bijvoorbeeld, zal een server met een IP adres van 10.40.54.187 de volgende ingangen omvatten: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Voor om het even welke niet gekwalificeerde naam die door het werkende systeem van de Gastheer (namen wordt teruggegeven die geen IPv4 adres, IPv6 adres of gekwalificeerde domeinnaam) hebben wordt de lijst van gewenste personen niet bijgewerkt. Wijzig de Toegestane lijst van Referiteers om uw bedrijfsomgeving aan te passen. Implementeer de formulierserver niet in de productieomgeving met de standaardlijst Toegestane verwijzing. Nadat u een van de toegestane referentie-, referentie-uitzonderingen of URI&#39;s hebt gewijzigd, zorgt u ervoor dat de server opnieuw wordt gestart zodat de wijzigingen van kracht worden.
 
 **Toegestane verwijzingslijst beheren**
 

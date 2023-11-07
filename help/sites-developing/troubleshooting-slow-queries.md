@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 exl-id: 3405cdd3-3d1b-414d-9931-b7d7b63f0a6f
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2269'
+source-wordcount: '2268'
 ht-degree: 0%
 
 ---
@@ -321,7 +321,7 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 ## Bestaande indexafstemming {#existing-index-tuning}
 
 1. Als de optimale query wordt omgezet in een index met eigenschappen, hoeft u niets meer te doen omdat Eigenschapindexen minimaal afstelbaar zijn.
-1. Anders, zou de vraag aan een Index van het Bezit van Lucene moeten oplossen. Als geen index kan worden opgelost, sprong aan het Creëren van een nieuwe Index.
+1. Anders, zou de vraag aan een Index van het Bezit van Lucene moeten oplossen. Als geen index kan worden opgelost, sprong aan het Creëren van een Index.
 1. Converteer de query zo nodig naar XPath of JCR-SQL2.
 
    * **Query Builder-query**

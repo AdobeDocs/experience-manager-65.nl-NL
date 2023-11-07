@@ -8,7 +8,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 exl-id: a3606d72-1bd8-4886-9285-6457dae66486
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '297'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Hieronder vindt u een overzicht van het ontwerpen met AEM:
 
 Om u te helpen bij het ontwerpen van pagina&#39;s, biedt de auteursomgeving functies zoals:
 
-* **Slepen en neerzetten**
+* **Slepen en slepen**
 Componenten (zoals Tekst, Afbeelding) en digitale elementen (zoals afbeeldingen) kunnen eenvoudig op de pagina worden geplaatst door ze naar de gewenste locatie te slepen.
 
 * **Bewerken**
@@ -38,11 +38,11 @@ Zodra gepositioneerd op de pagina, kan een componentspecifieke dialoog worden ge
 * **Lokaal bewerken**
 Componenten Tekst en Afbeelding kunnen rechtstreeks op de webpagina worden bewerkt zonder een dialoogvenster of een expliciete opslaghandeling te openen.
 
-* **[Sidetrap](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
+* **[Sidekick](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#sidekickclassicui)**
 Een zwevend venster &quot;inspecteur&quot; dat wordt weergegeven op de bewerkbare pagina. Vanaf hier kunnen nieuwe componenten naar de pagina worden gesleept en kunnen paginaspecifieke handelingen worden uitgevoerd.
 
-* **[Inhoudszoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
-Aan de linkerkant van elke pagina die kan worden geschreven, biedt de zoeker van inhoud snel toegang tot een reeks elementen, waaronder digitale elementen (zoals andere afbeeldingen, Flash-elementen en documenten), andere pagina&#39;s en alinea&#39;s. Deze items kunnen naar de pagina worden gesleept. bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
+* **[Inhoudzoeker](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md#thecontentfinderclassicui)**
+Aan de linkerkant van elke pagina die kan worden geschreven, biedt de zoeker van inhoud snel toegang tot een reeks elementen, waaronder digitale elementen (zoals andere afbeeldingen, Flash-elementen en documenten), andere pagina&#39;s en alinea&#39;s. Deze items kunnen naar de pagina worden gesleept, bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
 
 * **Contextmenu**
 Als u met de rechtermuisknop op de meeste elementen op het scherm klikt (bijvoorbeeld alinea&#39;s op de pagina), wordt een contextmenu met de juiste actieopties weergegeven.

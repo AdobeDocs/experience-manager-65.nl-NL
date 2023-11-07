@@ -1,19 +1,15 @@
 ---
 title: Clientcontext
-seo-title: Client Context
 description: Leer hoe u de clientcontext gebruikt om informatie over de huidige pagina en bezoeker in Adobe Experience Manager weer te geven.
-seo-description: Learn how to use the Client Context in AEM.
-uuid: 82b2f976-cb41-42f8-ad4b-3a5cd23cc5f5
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 7a3322fe-554e-479e-a27c-4259cdd3ba2e
 docset: aem65
 exl-id: 69c66c82-fbd6-406e-aefd-b85480a62109
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1978'
+source-wordcount: '1979'
 ht-degree: 0%
 
 ---
@@ -64,13 +60,13 @@ De context van de Cliënt kan de volgende eigenschappen tonen ([afhankelijk van 
 * de **muis X** positie
 * de **mouse Y** positie
 
-**Activiteitenstroom** Dit biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms, bijvoorbeeld de AEM forums, blogs, beoordelingen, enz.
+**Activiteitenstroom** Dit biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms, bijvoorbeeld de AEM forums, blogs, beoordelingen, enzovoort.
 
 **Campagne** Hiermee kunnen auteurs een specifieke ervaring voor een campagne simuleren. Deze component overschrijft de normale campagneresolutie en ervaringsselectie om het testen van verschillende permutaties mogelijk te maken.
 
 De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt gewoonlijk geselecteerd gebaseerd op segmentatie.
 
-**Kar** Geeft winkelwagengegevens weer, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enz.), opgeloste aanbiedingen (titel, bericht, enz.) en vouchers (code, beschrijving, enz.).
+**Kar** Geeft winkelwagengegevens weer, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enzovoort), opgeloste promoties (titel, bericht, enzovoort) en vouchers (code, beschrijving, enzovoort).
 
 De opslag van de wortelzitting brengt de server ook op de hoogte van opgeloste bevorderingsveranderingen (die op segmenteringsveranderingen worden gebaseerd) gebruikend ClientContextCartServlet.
 
@@ -164,7 +160,7 @@ Wanneer u klaar bent, kunt u [het profiel opnieuw instellen](#resetting-the-prof
 
 U kunt ook een profiel selecteren met de selectieregelaar:
 
-1. Dubbelklik op het pictogram dat de huidige gebruiker vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare profielen weer te geven:
+1. Dubbelklik op het pictogram dat de huidige gebruiker vertegenwoordigt. De kiezer wordt geopend, u kunt met de pijlen navigeren en de beschikbare profielen weergeven:
 
    ![De gebruikerskiezer](assets/clientcontext_profileselector.png)
 
@@ -178,7 +174,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 ### Het browserplatform wijzigen {#changing-the-browser-platform}
 
-1. Dubbelklik op het pictogram dat het browserplatform vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare platforms/browsers te bekijken:
+1. Dubbelklik op het pictogram dat het browserplatform vertegenwoordigt. De kiezer wordt geopend en u kunt met de pijlen navigeren naar de beschikbare platformen/browsers.
 
    ![Selector browserplatform](assets/clientcontext_browserplatform.png)
 
@@ -186,7 +182,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
 ### De Geolocatie wijzigen {#changing-the-geolocation}
 
-1. Dubbelklik op het geolocatiepictogram. Er wordt een uitgevouwen kaart geopend waarin u het markeerteken naar een nieuwe locatie kunt slepen:
+1. Dubbelklik op het geolocatiepictogram. Er wordt een uitgevouwen kaart geopend en u kunt de markering naar een nieuwe locatie slepen:
 
    ![Geolocatie](assets/clientcontext_geomocationrelocate.png)
 

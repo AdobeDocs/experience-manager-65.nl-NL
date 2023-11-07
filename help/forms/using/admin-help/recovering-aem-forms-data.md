@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e093114-219b-4018-9530-9002eb665448
 exl-id: 9e648bab-9284-4fda-abb4-8bd7cd085981
-source-git-commit: 3d713021ac410ca2925a282c5dfca98ed4e483ee
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1122'
+source-wordcount: '1121'
 ht-degree: 0%
 
 ---
@@ -53,9 +53,9 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
 
 1. Stop de AEM formulierservices en toepassingsserver als deze actief zijn.
 1. Maak indien nodig het fysieke systeem opnieuw op basis van een systeemimage. Deze stap is bijvoorbeeld mogelijk niet nodig als de reden voor de terugwinning een onjuiste databaseserver is.
-1. Pas patches of updates toe op AEM formulieren die zijn toegepast sinds de afbeelding is gemaakt. Deze informatie werd geregistreerd in de reserveprocedure. AEM formulieren moeten op hetzelfde patchniveau worden geplaatst als toen een back-up van het systeem werd gemaakt.
+1. Pas patches of updates toe op AEM formulieren die zijn toegepast sinds de afbeelding is gemaakt. Deze informatie is opgenomen in de back-upprocedure. AEM formulieren moeten op hetzelfde patchniveau worden geplaatst als toen een back-up van het systeem werd gemaakt.
 1. (WebSphere® Application Server) Als u herstelt naar een nieuwe instantie van WebSphere® Application Server, voert u de opdracht restoreConfig.bat/sh uit.
-1. Herstel de AEM-formulierdatabase door eerst een terugzetbewerking uit te voeren met behulp van de back-upbestanden van de database en vervolgens de transactierlogboeken opnieuw toe te passen op de herstelde database. (Zie [AEM formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Zie een van de volgende artikelen in de kennisbasis voor meer informatie:
+1. Herstel de AEM-formulierdatabase door eerst een terugzetbewerking uit te voeren met behulp van de back-upbestanden van de database en vervolgens de transactierlogboeken opnieuw uit te voeren op de herstelde database. (Zie [AEM formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Zie een van de volgende artikelen in de kennisbasis voor meer informatie:
 
    * [DB2](/help/forms/using/admin-help/files-back-recover.md#db2)
    * [Back-up en herstel van oracle voor AEM formulieren](/help/forms/using/admin-help/files-back-recover.md#oracle)
@@ -71,15 +71,15 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
 
    * (JBoss®) Naam wijzigen `[appserver root]/server/'server'/svcnative/DocumentStorage/backup` tot:
 
-      `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
+     `[appserver root]/server/'server'/svcnative/DocumentStorage/restore`.
 
    * (WebLogic) Naam wijzigen `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/backup` tot:
 
-      `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
+     `[appserverdomain]/'server'/adobe/AEMformsserver/DocumentStorage/restore`.
 
    * (WebSphere®) Naam wijzigen `[appserver root]/installedApps/adobe/'server'/DocumentStorage/backup` tot:
 
-      `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
+     `[appserver root]/installedApps/adobe/'server'/DocumentStorage/restore`.
 
 1. Herstel de basismap voor de opslag van inhoud door eerst de inhoud van de basismap voor de opslag van inhoud te verwijderen bij de bestaande installatie van AEM formulieren en herstel de inhoud door de taken voor zelfstandige of geclusterde omgevingen uit te voeren:
 
@@ -99,15 +99,15 @@ Als één enkele knoop van een multinode cluster ontbrak en de resterende knopen
 
    * **Zelfstandig**
 
-      *Instanties van auteurs en publicatie herstellen*: Als zich een noodsituatie voordoet, kunt u de opslagplaats terugzetten naar de laatste back-upstatus door de stappen uit te voeren die worden beschreven in [Back-up en herstel.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
+     *Instanties van auteurs en publicatie herstellen*: Als zich een ramp voordoet, kunt u de opslagplaats herstellen naar de laatste back-upstatus door de in [Back-up en herstel.](https://helpx.adobe.com/experience-manager/kb/CRXBackupAndRestoreProcedure.html)
 
-      Het volledig herstel van het knooppunt Auteur zorgt ervoor dat ook de gegevens van Forms Manager en AEM Forms Workspace worden hersteld.
+     Het volledig herstel van het knooppunt Auteur zorgt ervoor dat ook de gegevens van Forms Manager en AEM Forms Workspace worden hersteld.
 
    * **Geclusterd**
 
-      Voor restauratie in een gegroepeerde omgeving raadpleegt u [Strategie voor back-up en herstel in een geclusterde omgeving](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
+     Voor restauratie in een gegroepeerde omgeving raadpleegt u [Strategie voor back-up en herstel in een geclusterde omgeving](/help/forms/using/admin-help/strategy-backup-restore-clustered-environment.md#strategy-for-backup-and-restore-in-a-clustered-environment).
 
-1. Verwijder alle AEM formulieren die tijdelijk zijn gemaakt in de map java.io.temp of in de map Adobe temp.
+1. Verwijder alle AEM formulieren die tijdelijk zijn gemaakt in de map java.io.temp of in de map temp van de Adobe.
 1. AEM formulieren starten (zie [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services))<!-- BROKEN LINK and the application server(s) (see [Maintaining the Application Server](/help/forms/using/admin-help/topics/maintaining-the-application-server.md))-->.
 
 ## De GDS-locatie wijzigen tijdens het herstellen {#changing-the-gds-location-during-recovery}
@@ -124,11 +124,11 @@ Als uw GDS op een andere plaats dan waar het oorspronkelijk was wordt hersteld, 
 
 >[!NOTE]
 >
->De implementatie van componenten mislukt in Windows als de GDS-map zich in de hoofdmap van het station bevindt (bijvoorbeeld D:\). Bij GDS moet u ervoor zorgen dat de map zich niet in de hoofdmap van de schijf bevindt, maar in een submap. De map moet bijvoorbeeld D:\GDS and not simply D:\.
+>De implementatie van componenten mislukt in Windows als de GDS-map zich in de hoofdmap van het station bevindt (bijvoorbeeld D:\). Bij GDS moet u ervoor zorgen dat de map zich niet in de hoofdmap van de schijf bevindt, maar in een submap. De map moet bijvoorbeeld D:\GDS zijn en niet gewoon D:\.
 
 ## De GDS herstellen naar een geclusterde omgeving {#recovering-the-gds-to-a-clustered-environment}
 
-Om de plaats GDS in een gegroepeerde milieu te veranderen, sluit de volledige cluster en stel het manuscript LCSetGDS op één enkele knoop van de cluster in werking. (Zie [De GDS-locatie wijzigen tijdens het herstellen](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Start alleen dat knooppunt. Wanneer dat knooppunt volledig is gestart, kunnen andere knooppunten in de cluster veilig worden gestart en correct naar de nieuwe GDS-knooppunten verwijzen.
+Om de plaats GDS in een gegroepeerde milieu te veranderen, sluit de volledige cluster en stel het manuscript LCSetGDS op één enkele knoop van de cluster in werking. (Zie [De GDS-locatie wijzigen tijdens het herstellen](recovering-aem-forms-data.md#changing-the-gds-location-during-recovery).) Start alleen dat knooppunt. Wanneer dat knooppunt volledig is opgestart, kunnen andere knooppunten in de cluster veilig worden opgestart en correct naar de nieuwe GDS verwijzen.
 
 >[!NOTE]
 >

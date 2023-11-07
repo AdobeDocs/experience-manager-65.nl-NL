@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a6e5810b-dac5-4137-93cf-5d8d53cacc49
 feature: Context Hub
 exl-id: 24bdf9fc-71e6-4b99-9dad-0f41a5e36b98
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3159'
+source-wordcount: '3157'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Een sessiewinkel is bijvoorbeeld gebaseerd op een JSON-object en opgehaald via e
 * De opslag wordt vooraf gevuld met standaardwaarden (init-eigenschappen), maar de aanvraag mislukt (timeout). Er is slechts één initialisatie met standaardwaarden.
 * De winkel is vooraf gevuld.
 
-Wanneer de vertraging is ingesteld op `true` Voor een aantal milliseconden, wacht de methode alvorens de callback methode te roepen. Als een andere initialisatiegebeurtenis wordt geactiveerd voordat de vertraging wordt doorgegeven, wordt gewacht totdat de vertragingstijd is overschreden zonder initialisatiegebeurtenis. Dit laat het wachten op een tweede initialiseringsgebeurtenis toe om worden teweeggebracht en roept de callback functie in het meest optimale geval.
+Wanneer de vertraging is ingesteld op `true` Voor verscheidene milliseconden, wacht de methode alvorens de callback methode te roepen. Als een andere initialisatiegebeurtenis wordt geactiveerd voordat de vertraging wordt doorgegeven, wordt gewacht totdat de vertragingstijd is overschreden zonder initialisatiegebeurtenis. Dit laat het wachten op een tweede initialiseringsgebeurtenis toe om worden teweeggebracht en roept de callback functie in het meest optimale geval.
 
 **Parameters**
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
 exl-id: 5ca58bc3-8505-4d91-9cd1-6b2e2671f1be
-source-git-commit: e161c37544c3391607cbe495644f3353b9f77fe3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1478'
+source-wordcount: '1477'
 ht-degree: 0%
 
 ---
@@ -19,14 +19,14 @@ Het sociale componentenkader (SCF) vereenvoudigt het proces om, componenten van 
 
 De voordelen van het kader:
 
-* **Functioneel**: Eenvoud van integratie buiten de handgreep met weinig of geen aanpassing voor 80% van de gebruikscategorieën.
+* **Functioneel**: Eenvoud van integratie buiten de verpakking met weinig of geen aanpassing voor 80% van de gebruikscategorieën.
 * **Skinnable**: Consistent gebruik van HTML-kenmerken voor CSS-opmaak.
-* **Uitbreidbaar**: De implementatie van de component is object-oriented en licht op bedrijfslogica - gemakkelijk om stijgende bedrijfslogin op server toe te voegen.
+* **Uitbreidbaar**: De implementatie van de component is objectgeoriënteerd en licht op bedrijfslogica - gemakkelijk om stijgende bedrijfslogin op server toe te voegen.
 * **Flexibel**: Eenvoudige JavaScript-sjablonen zonder logica die gemakkelijk kunnen worden bedekt en aangepast.
-* **Toegankelijk**: De HTTP-API ondersteunt het posten vanaf elke client, inclusief mobiele apps.
-* **Overdraagbaar**: Integreer/sluit in om het even welke webpagina in die op om het even welke technologie wordt gebouwd.
+* **Toegankelijk**: De HTTP-API biedt ondersteuning voor posten vanaf elke client, inclusief mobiele apps.
+* **Overdraagbaar**: Integreer/sluit in elke webpagina in die op elke technologie is gebaseerd.
 
-Ontdek een auteur- of publicatieexemplaar met interactieve [Community Components Guide](components-guide.md).
+Ontdek een auteur- of publicatieexemplaar met behulp van het interactieve [Community Components Guide](components-guide.md).
 
 ## Overzicht {#overview}
 
@@ -57,7 +57,7 @@ Als u de componenten wilt aanpassen of uitbreiden, schrijft u alleen de overlays
 * Aangepaste verwerking toevoegen tijdens bewerkingen:
    * Schrijf een [OperationExtension](server-customize.md#operationextension-class).
 * Een aangepaste bewerking toevoegen:
-   * Een nieuwe [Verschuiving na bewerking](server-customize.md#postoperation-class).
+   * Een [Verschuiving na bewerking](server-customize.md#postoperation-class).
    * Bestaande gebruiken [OperationServices](server-customize.md#operationservice-class) indien nodig.
    * Voeg JavaScript-code toe om de bewerking zo nodig vanaf de client aan te roepen.
 
@@ -71,7 +71,7 @@ De Java™ API&#39;s bieden abstracte klassen en interfaces die gemakkelijk kunn
 
 De hoofdklassen worden beschreven op het tabblad [Aanpassing op de server](server-customize.md) pagina.
 
-Bezoek [Overzicht opslagbronprovider](srp.md) voor meer informatie over het werken met UGC.
+Bezoek [Overzicht opslagbronprovider](srp.md) om te leren werken met UGC.
 
 ### HTTP-API {#http-api}
 
@@ -109,7 +109,7 @@ Er is een Sling POST:verrichting voor elke verrichting SocialComponent. De bedri
 
 ### Storage Resource Provider (SRP) {#storage-resource-provider-srp}
 
-Meer informatie over de verwerking van UGC die is opgeslagen in het dialoogvenster [community content store](working-with-srp.md), zie:
+Meer informatie over de verwerking van UGC in het dialoogvenster [community content store](working-with-srp.md), zie:
 
 * [Overzicht opslagbronprovider](srp.md) - Inleiding en overzicht van het gebruik van de opslagplaats.
 * [SRP en UGC Essentials](srp-and-ugc.md) - SRP API-hulpprogrammamethoden en -voorbeelden.
@@ -117,7 +117,7 @@ Meer informatie over de verwerking van UGC die is opgeslagen in het dialoogvenst
 
 ### Aanpassingen op de server {#server-side-customizations}
 
-Bezoek [Aanpassingen op de server](server-customize.md) voor informatie over het aanpassen van de bedrijfslogica en het gedrag van een onderdeel van de Gemeenschappen aan de serverzijde.
+Bezoek [Aanpassingen op de server](server-customize.md) voor informatie over het aanpassen van de bedrijfslogica en het gedrag van een onderdeel van de Gemeenschappen op de server.
 
 ## Handlebars JS Templating Language {#handlebars-js-templating-language}
 
@@ -139,7 +139,7 @@ De toegang van HTTP tot .hbs dossiers kan niet worden verboden.
 
 ### Een onderdeel van een Gemeenschappen toevoegen of opnemen {#add-or-include-a-communities-component}
 
-De meeste onderdelen van een Gemeenschappen moeten *added* als Verlenen adresseerbare bron. Een aantal communautaire componenten kan *inbegrepen* in een sjabloon als een niet-bestaande bron, zodat de locatie waar door de gebruiker gegenereerde inhoud (UGC) moet worden geschreven, dynamisch kan worden opgenomen en aangepast.
+De meeste onderdelen van een Gemeenschappen moeten *added* als Verlenen adresseerbare bron. Een selectie van enkele communautaire componenten kan *inbegrepen* in een sjabloon als een niet-bestaande bron, zodat de locatie waar door de gebruiker gegenereerde inhoud (UGC) moet worden geschreven, dynamisch kan worden opgenomen en aangepast.
 
 In beide gevallen geldt dat de component [vereiste clientbibliotheken](clientlibs.md) moet ook aanwezig zijn.
 
@@ -151,9 +151,9 @@ Het resultaat is een JCR-onderliggend knooppunt onder een pari-knooppunt, dat ad
 
 **Een component opnemen**
 
-Het opnemen van een component verwijst naar het proces waarbij een verwijzing naar een component wordt toegevoegd [&quot;niet-bestaande&quot; resource](srp.md#for-non-existing-resources-ners) (geen JCR-knooppunt) in de sjabloon, zoals het gebruik van een scripttaal.
+Het opnemen van een component verwijst naar het proces waarbij een verwijzing naar een component wordt toegevoegd [&quot;niet-bestaande&quot; resource](srp.md#for-non-existing-resources-ners) (geen JCR-knooppunt) in de sjabloon, bijvoorbeeld met een scripttaal.
 
-Vanaf Adobe Experience Manager (AEM) 6.1 is het mogelijk om, wanneer een component dynamisch wordt opgenomen in plaats van toegevoegd, de eigenschappen van de component te bewerken in de auteur *ontwerp* in.
+Vanaf Adobe Experience Manager (AEM) 6.1 is het mogelijk om de eigenschappen van de component te bewerken in de auteur wanneer een component dynamisch wordt opgenomen in plaats van toegevoegd *ontwerp* -modus.
 
 Slechts een paar AEM Communities-componenten kunnen dynamisch worden opgenomen. Het zijn:
 
@@ -162,9 +162,9 @@ Slechts een paar AEM Communities-componenten kunnen dynamisch worden opgenomen. 
 * [Revisies](reviews-basics.md)
 * [Stemming](essentials-voting.md)
 
-De [Community Components Guide](components-guide.md) staat toe inbegrepen componenten om van worden een knevel te schakelen aan worden opgenomen.
+De [Community Components Guide](components-guide.md) staat toe inbegrepen componenten om van worden een knevel te schakelen van worden toegevoegd aan worden omvat.
 
-**Bij gebruik van handgrepen** sjabloontaal, de niet-bestaande bron wordt opgenomen met de [inclusief helper](handlebars-helpers.md#include) door zijn resourceType te specificeren:
+**Bij gebruik van handgrepen** sjabloontaal, de niet-bestaande bron wordt opgenomen met de [inclusief helper](handlebars-helpers.md#include) door het resourceType op te geven:
 
 `{{include this.id path="comments" resourceType="social/commons/components/hbs/comments"}}`
 

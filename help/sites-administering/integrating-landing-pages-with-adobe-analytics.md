@@ -1,5 +1,5 @@
 ---
-title: Landingpagina's integreren met Adobe Analytics
+title: Openingspagina's integreren met Adobe Analytics
 seo-title: Integrating Landing Pages with Adobe Analytics
 description: Leer hoe u bestemmingspagina's kunt integreren met Adobe Analytics.
 seo-description: Learn how to integrate landing pages with Adobe Analytics.
@@ -10,14 +10,14 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 8ae7ccec-489b-4d20-ac56-6101402fb18a
 exl-id: da3f7b7e-87e5-446a-9a77-4b12b850a381
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '376'
+source-wordcount: '374'
 ht-degree: 0%
 
 ---
 
-# Landingpagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
+# Openingspagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
 AEM heeft de landingspagina-oplossing geïntegreerd met [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) door de volgende vraag-aan-actie (CTA) componenten te gebruiken:
 
@@ -40,7 +40,7 @@ In AEM **Oproep tot actie** componenten - **ClickThroughLink** en **GraphicalLin
 
 U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
 
-1. Nadat u de Adobe Analytics-configuratie hebt gemaakt en een nieuw framework hebt gemaakt, selecteert u de gewenste rapportsuite in het keuzemenu. Hierdoor worden de Adobe Analytics-variabelen opgehaald en weergegeven in de zoekfunctie voor inhoud.
+1. Nadat u de Adobe Analytics-configuratie hebt gemaakt en een framework hebt gemaakt, selecteert u de gewenste rapportsuite in het keuzemenu. Hierdoor worden de Adobe Analytics-variabelen opgehaald en weergegeven in de zoekfunctie voor inhoud.
 1. De belemmering en laat vallen Vraag aan de componenten van de Actie (CTA) van sidekick in het kaartingsgebied in het midden van de pagina, zoals aangewezen.
 
 <table>
@@ -89,7 +89,7 @@ U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
 </table>
 
 1. Wijs deze belichte kenmerken toe aan alle Adobe Analytics-variabelen van de zoeker naar inhoud. Het framework is nu gebruiksklaar.
-1. U kunt nu een nieuwe bestemmingspagina tot stand brengen of een bestaande landingspagina met bestaande componenten openen CTA en klikken **Cloud Services** tab in **Pagina-eigenschappen** in het zijpaneel (in de interface met geoptimaliseerde aanrakingen selecteert u **Eigenschappen openen** en klik op **Cloud Services**) en configureert u het framework dat u wilt gebruiken met de bestemmingspagina. Selecteer het framework in de vervolgkeuzelijst.
+1. U kunt nu een bestemmingspagina tot stand brengen of een bestaande landingspagina met bestaande componenten openen CTA en klikken **Cloud Servicen** tab in **Pagina-eigenschappen** in het zijpaneel (in de interface met geoptimaliseerde aanrakingen) selecteert u **Eigenschappen openen** en klik op **Cloud Servicen**) en configureert u het framework dat u wilt gebruiken met de bestemmingspagina. Selecteer het framework in de vervolgkeuzelijst.
 
    ![chlimage_1-25](assets/chlimage_1-25a.png)
 

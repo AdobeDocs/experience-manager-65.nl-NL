@@ -7,7 +7,7 @@ role: User, Admin, Leader
 feature: Connected Assets,User and Groups
 exl-id: 4ceb49d8-b619-42b1-81e7-c3e83d4e6e62
 hide: true
-source-git-commit: bc6a97a55f392cba03131ee3ca7cad35b8c1e69b
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3832'
 ht-degree: 16%
@@ -32,7 +32,7 @@ De functionaliteit Connected Assets ondersteunt de bovenstaande gebruiksscenario
 
 ## Overzicht van gekoppelde assets {#overview-of-connected-assets}
 
-Wanneer u pagina&#39;s bewerkt in [!UICONTROL Page Editor] als doeldoel kunnen de auteurs naadloos zoeken naar elementen van een andere map en deze insluiten [!DNL Assets] plaatsing die als bron van activa dienst doet. De beheerders creëren eenmalig integratie van een plaatsing van [!DNL Experience Manager] with [!DNL Sites] capaciteit met een andere plaatsing van [!DNL Experience Manager] with [!DNL Assets] capaciteit. Siteauteurs kunnen ook Dynamic Media-afbeeldingen op de webpagina&#39;s van hun site gebruiken via Connected Assets en de Dynamic Media-functies gebruiken, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
+Wanneer u pagina&#39;s bewerkt in [!UICONTROL Page Editor] als doeldoel kunnen de auteurs naadloos zoeken naar elementen van een andere map en deze insluiten [!DNL Assets] plaatsing die als bron van activa dienst doet. De beheerders creëren eenmalig integratie van een plaatsing van [!DNL Experience Manager] with [!DNL Sites] capaciteit met een andere plaatsing van [!DNL Experience Manager] with [!DNL Assets] capaciteit. Siteauteurs kunnen ook Dynamic Media-afbeeldingen op de webpagina&#39;s van hun site gebruiken via Connected Assets en de Dynamic Media-functies gebruiken, zoals slimme voorinstellingen voor uitsnijden en afbeeldingen.
 
 Voor de [!DNL Sites] auteurs, zijn de verre activa beschikbaar als read-only lokale activa. De functionaliteit ondersteunt naadloze zoekopdrachten en toegang tot externe middelen in de Site-editor. Voor andere gebruiksgevallen waarbij het volledige assetcorpus op Sites beschikbaar moet zijn, kunt u overwegen de middelen in bulk te migreren in plaats van Connected Assets te gebruiken. Zie [Experience Manager Assets-migratiegids](/help/assets/assets-migration-guide.md).
 
@@ -145,7 +145,7 @@ U kunt de connectiviteit tussen gevormd controleren [!DNL Sites] implementaties 
 ## Dynamic Media-middelen gebruiken {#dynamic-media-assets}
 
 
-Met Connected Assets kunt u afbeeldingselementen gebruiken die zijn verwerkt door [!DNL Dynamic Media] vanaf de externe DAM-implementatie op sitepagina&#39;s en met Dynamic Media-functies, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
+Met Connected Assets kunt u afbeeldingselementen gebruiken die zijn verwerkt door [!DNL Dynamic Media] vanaf de externe DAM-implementatie op sitepagina&#39;s en gebruik Dynamic Media-functies, zoals voorinstellingen voor slimme uitsnijdingen en afbeeldingen.
 
 Te gebruiken [!DNL Dynamic Media] met verbonden elementen:
 

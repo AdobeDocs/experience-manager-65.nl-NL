@@ -8,9 +8,9 @@ geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10699'
+source-wordcount: '10694'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ De standaardwaarde van deze instelling is `/LiveCycleES/ConnectorforIBMFileNet/A
 
 ## PDF-service-instellingen converteren {#convert-pdf-service-settings}
 
-De service Convert PDF ( `ConvertPdfService`) converteert PDF-documenten naar PostScript en naar een aantal afbeeldingsindelingen (JPEG, JPEG 2000, PNG en TIFF). Het converteren van een PDF-document naar PostScript is handig voor afdrukken op basis van een server zonder toezicht op elke PostScript-printer. Het omzetten van een PDF-document in een TIFF-bestand met meerdere pagina&#39;s is handig bij het archiveren van documenten in inhoudsbeheersystemen die geen ondersteuning bieden voor PDF-documenten.
+De service Convert PDF ( `ConvertPdfService`) converteert PDF-documenten naar PostScript en naar verschillende afbeeldingsindelingen (JPEG, JPEG 2000, PNG en TIFF). Het converteren van een PDF-document naar PostScript is handig voor afdrukken op basis van een server zonder toezicht op elke PostScript-printer. Het omzetten van een PDF-document in een TIFF-bestand met meerdere pagina&#39;s is handig bij het archiveren van documenten in inhoudsbeheersystemen die geen ondersteuning bieden voor PDF-documenten.
 
 De volgende instellingen zijn beschikbaar voor de service PDF converteren.
 
@@ -243,7 +243,7 @@ De volgende instellingen zijn beschikbaar voor de FTP-service.
 
 ## Instellingen voor PDF-service genereren {#generate-pdf-service-settings}
 
-De dienst Generate PDF ( `GeneratePDFService`) converteert bestanden in diverse native indelingen naar PDF-documenten en converteert PDF-documenten naar een aantal bestandsindelingen.
+De dienst Generate PDF ( `GeneratePDFService`) converteert bestanden in diverse native indelingen naar PDF-documenten en converteert PDF-documenten naar verschillende bestandsindelingen.
 
 De volgende montages zijn beschikbaar voor de Generate dienst van PDF.
 
@@ -826,7 +826,7 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
    * **SUPERVISOR_PERM:** Om de gegevens van de procesinstantie voor de dienst te bekijken die van een proces wordt gecreeerd
    * **START_STOP_PERM:** Om de dienst te beginnen en te stoppen
    * **ADD_REMOVE_ENDPOINTS_PERM:** Om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
-   * **CREATE_VERSION_PERM:** Een nieuwe versie van de service maken
+   * **CREATE_VERSION_PERM:** Een versie van de service maken
    * **DELETE_VERSION_PERM:** Een versie van de service verwijderen
    * **MODIFY_VERSION_PERM:** Om een versie van de dienst te wijzigen
    * **READ_PERM:** De service weergeven

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3221'
+source-wordcount: '3219'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Bewerkbare sjablonen maken wordt voornamelijk uitgevoerd met de opdracht [sjablo
 
 Voor informatie over hoe te om editable malplaatjes in een AEM project te gebruiken zie [Een AEM maken met behulp van Lazybones](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-manager/create-aem-project-structure-using-lazybones/m-p/186478).
 
-Bij het maken van een nieuwe bewerkbare sjabloon:
+Bij het maken van een bewerkbare sjabloon:
 
 1. Een [map voor de sjablonen](#template-folders). Deze map is niet verplicht, maar wordt aanbevolen.
 1. Selecteer een [sjabloontype](#template-type). Dit type wordt gekopieerd om het [sjabloondefinitie](#template-definitions).
@@ -416,7 +416,7 @@ De [apparaatgroepen](/help/sites-developing/mobile.md#device-groups) gebruikt vo
 * Op het bewerkbare sjabloontype
 * Op de bewerkbare sjabloon
 
-Wanneer u een nieuwe bewerkbare sjabloon maakt, wordt de waarde van het sjabloontype naar de afzonderlijke sjabloon gekopieerd. Als de waarde niet op het type is ingesteld, kan deze in de sjabloon worden ingesteld. Als een sjabloon eenmaal is gemaakt, is er geen overerving van het type naar de sjabloon.
+Wanneer u een bewerkbare sjabloon maakt, wordt de waarde van het sjabloontype naar de afzonderlijke sjabloon gekopieerd. Als de waarde niet op het type is ingesteld, kan deze in de sjabloon worden ingesteld. Als een sjabloon eenmaal is gemaakt, is er geen overerving van het type naar de sjabloon.
 
 >[!CAUTION]
 >

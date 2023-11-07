@@ -1,18 +1,14 @@
 ---
 title: Extensie AEM
-seo-title: AEM Brackets Extension
 description: Leer hoe u de Adobe Experience Manager-extensie voor haakjes gebruikt.
-seo-description: null
-uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
-discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 exl-id: 829d8256-b415-4a44-a353-455ac16950f3
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '936'
+source-wordcount: '935'
 ht-degree: 0%
 
 ---
@@ -21,7 +17,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-De extensie AEM Brackets biedt een vloeiende workflow voor het bewerken van AEM componenten en clientbibliotheken en maakt gebruik van de kracht van de [Haakjes](https://brackets.io/) code-editor, die vanuit de code-editor toegang biedt tot Photoshop-bestanden en -lagen. De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM kennis ook om aan projecten deel te nemen. Deze extensie biedt ook enige ondersteuning voor de [HTML Sjabloontaal (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), waardoor de complexiteit van JSP wordt weggenomen om de ontwikkeling van componenten eenvoudiger en veiliger te maken.
+De extensie AEM Brackets biedt een vloeiende workflow voor het bewerken van AEM componenten en clientbibliotheken en gebruikt de kracht van de [Haakjes](https://brackets.io/) code-editor, die vanuit de code-editor toegang biedt tot Photoshop-bestanden en -lagen. De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM kennis ook om aan projecten deel te nemen. Deze extensie biedt ook enige ondersteuning voor de [HTML Sjabloontaal (HTL)](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html), waardoor de complexiteit van JSP wordt weggenomen om de ontwikkeling van componenten eenvoudiger en veiliger te maken.
 
 ![chlimage_1-53](assets/chlimage_1-53a.png)
 
@@ -71,7 +67,7 @@ Het project moet ten minste het volgende bevatten:
 
 1. a `jcr_root` map (bijvoorbeeld `myproject/jcr_root`)
 
-1. a `filter.xml` bestand (bijvoorbeeld `myproject/META-INF/vault/filter.xml`); voor meer informatie over de structuur van de `filter.xml` bestand te zien [Definitie van werkruimtefilter](https://jackrabbit.apache.org/filevault/filter.html).
+1. a `filter.xml` bestand (bijvoorbeeld `myproject/META-INF/vault/filter.xml`); voor meer informatie over de structuur van de `filter.xml` bestand de [Definitie van werkruimtefilter](https://jackrabbit.apache.org/filevault/filter.html).
 
 In haakjes&#39;&#39; **Bestand** menu, kiest u **Map openen...** en kies `jcr_root` of de bovenliggende projectmap.
 
@@ -127,7 +123,7 @@ De extensie AEM Brackets heeft een waarschuwingspictogram op de werkbalk rechts 
 * geel - sommige bestanden zijn niet gesynchroniseerd
 * rood - geen van de bestanden is gesynchroniseerd
 
-Als u op het meldingspictogram klikt, wordt het dialoogvenster Synchronisatie-statusrapport geopend met een lijst van alle status voor elk gesynchroniseerd bestand.
+Wanneer u op het meldingspictogram klikt, wordt het dialoogvenster Synchronisatie-statusrapport geopend met een lijst van alle status voor elk gesynchroniseerd bestand.
 
 ![chlimage_1-58](assets/chlimage_1-58a.png)
 

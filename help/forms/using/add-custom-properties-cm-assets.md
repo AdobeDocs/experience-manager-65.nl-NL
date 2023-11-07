@@ -11,9 +11,9 @@ discoiquuid: 79437b96-7b57-4581-b7e7-fcaedc3d05de
 docset: aem65
 feature: Correspondence Management
 exl-id: ba2e145d-51ee-4844-a9e1-9927971d25a1
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4435'
+source-wordcount: '4428'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ De volgende scenario&#39;s tonen hoe u eigenschappen/lusjes aan de activa en de 
 
 Door de eigenschappen, paden en waarden in deze scenario&#39;s aan te passen, kunt u aangepaste eigenschappen en tabbladen toevoegen aan een andere set elementen, afhankelijk van uw vereisten.
 
-### Scenario: Een gemeenschappelijk veld (eigenschap) toevoegen aan alle elementtypen {#scenario-adding-a-common-field-property-to-all-the-asset-types}
+### Scenario: een gemeenschappelijk veld (eigenschap) toevoegen aan alle elementtypen {#scenario-adding-a-common-field-property-to-all-the-asset-types}
 
 In dit scenario ziet u hoe u een aangepaste eigenschap kunt toevoegen aan alle elementtypen (tekst, lijst, voorwaarde en layoutfragmenten) en aan de letters. Met dit scenario kunt u een eigenschap, Locatie van ontvangers, toevoegen aan alle elementen en letters. Met de eigenschap Locatie van ontvangers kunt u bepalen voor welk geografisch gebied van levering een element of brief relevant is.
 
@@ -42,14 +42,14 @@ In dit scenario ziet u hoe u een aangepaste eigenschap kunt toevoegen aan alle e
 >
 >Als u al een aangepaste eigenschap hebt toegevoegd, wordt de eigenschap weergegeven op de pagina voor het maken van elementen. Zie Aangepaste eigenschappen bij het maken van elementen en de pagina&#39;s Eigenschappen tonen/verbergen om een dergelijke eigenschap te verbergen.
 
-![Aangepaste eigenschap toegevoegd aan alle elementtypen](assets/lcoationofrecipientsui.png)
+![Aangepaste eigenschap die aan alle elementtypen is toegevoegd](assets/lcoationofrecipientsui.png)
 
 Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle elementtypen en letters:
 
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
 1. Maak in de map apps een map met de naam css met een pad/structuur die lijkt op de css-map (in de map ccrui) en voer de volgende stappen uit:
 
-   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
@@ -69,7 +69,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
    1. Klikken **Alles opslaan**.
 
-1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste eigenschap in alle elementen (voorbeeld: GeoLocation) gebruikend de volgende stappen:
+1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste eigenschap in alle elementen (bijvoorbeeld GeoLocation) door de volgende stappen uit te voeren:
 
    1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Knooppunt maken**.
 
@@ -88,7 +88,7 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
-      | fieldLabel | String | De naam die u het veld of de eigenschap wilt geven. (Hier: Locatie van ontvangers) |
+      | fieldLabel | String | De naam die u het veld of de eigenschap wilt geven. (Hier: locatie van ontvangers) |
       | name | String | `./extendedproperties/GeoLocation` (Houd dezelfde waarde als de veldnaam die u onder het knooppunt Items hebt gemaakt) |
       | renderReadOnly | Boolean | true |
       | sling:resourceType | String | `granite/ui/components/coral/foundation/form/textfield` |
@@ -105,17 +105,17 @@ Voer de volgende stappen uit om een aangepaste eigenschap toe te voegen aan alle
 
    >[!NOTE]
    >
-   >De gemeenschappelijke eigenschappen voor alle activa die u toevoegt verschijnen in het basislusje van de activa eigenschappen. Standaard worden de gemeenschappelijke eigenschappen die voor alle elementen zijn toegevoegd, weergegeven op de pagina met eigenschappen en op de pagina met het maken van elementen. Als u de algemene eigenschappen wilt verbergen, moet u <!--link to show / hide properties]-->.
+   >De gemeenschappelijke eigenschappen voor alle activa die u toevoegt verschijnen in het basislusje van de activa eigenschappen. Standaard worden de gemeenschappelijke eigenschappen die voor alle elementen zijn toegevoegd, weergegeven op de pagina met eigenschappen en op de pagina voor het maken van elementen. Als u de algemene eigenschappen wilt verbergen, moet u <!--link to show / hide properties]-->.
 
-### Scenario: Aangepaste vervolgkeuzelijsten en waarden toevoegen aan een aangepaste eigenschap/veld {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
+### Scenario: aangepaste vervolgkeuzelijst en waarden toevoegen aan een aangepaste eigenschap/veld {#scenario-add-custom-drop-down-and-values-to-a-custom-property-field}
 
 In dit scenario ziet u hoe u een aangepaste eigenschap aan alle elementtypen kunt toevoegen en er vervolgkeuzelijsten aan kunt toevoegen.
 
-1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items`
 
-1. Onder het nieuwe overlayknooppunt (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items) Maak een knooppunt voor elk van de eigenschappen (velden) waarvoor u een vervolgkeuzelijst moet maken (hier `geographicallocation`) van het type nt:ongestructureerd.
+1. Onder het nieuwe overlayknooppunt (/apps/fd/cm/ma/gui/content/cmmetadataproperties/commonproperties/col1/items) Maak een knooppunt voor alle eigenschappen (velden) waarvoor u een vervolgkeuzelijst moet maken (hier `geographicallocation`) van het type nt:ongestructureerd.
 1. Voeg de volgende eigenschappen aan de knoop (hier geografische toewijzing) toe en klik **Alles opslaan**:
 
    <table>
@@ -180,7 +180,7 @@ De aangepaste vervolgkeuzelijst wordt als volgt weergegeven in de eigenschappen 
 
 ![drop-down_customization](assets/drop-down_customization.png)
 
-### Scenario: Algemeen tabblad voor alle elementtypen {#scenario-common-tab-for-all-asset-types}
+### Scenario: tabblad Algemeen voor alle typen elementen {#scenario-common-tab-for-all-asset-types}
 
 In dit scenario ziet u hoe u een aangepast tabblad, Ontvangers, kunt toevoegen aan alle elementtypen (tekst, lijst, voorwaarde en layoutfragmenten) en aan de letters. Op het tabblad Ontvangers kunt u alle aangepaste eigenschappen die relevant zijn voor de ontvangers plaatsen.
 
@@ -211,7 +211,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
       Klikken **Alles opslaan**.
 
-1. Voeg onder de map cmmetadataproperties een knooppunt toe voor het maken van een aangepast tabblad voor alle elementen (voorbeeld: commontab) met behulp van de volgende stappen:
+1. Voeg onder de map cmmetadataProperties een knooppunt toe voor het maken van een aangepast tabblad voor alle elementen (bijvoorbeeld: common tab) met behulp van de volgende stappen:
 
    1. Klik met de rechtermuisknop op de map cmmetadataproperties en selecteer **Maken** > **Knooppunt maken**.
 
@@ -236,7 +236,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
          <tr>
           <td>jcr:titel</td>
           <td>String</td>
-          <td>De naam die u aan de kolom wilt geven. (Hier: Ontvangers)</td>
+          <td>De naam die u aan de kolom wilt geven. (hier: Ontvangers)</td>
          </tr>
          <tr>
           <td>sling:resourceType</td>
@@ -322,7 +322,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
    `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[assettype]/items/tabs/items`
 
-   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/letter/items/tabs/items`
 
@@ -378,7 +378,7 @@ Met de volgende procedure kunt u een tabblad met een veld toevoegen aan al uw el
 
    ![Aangepast tabblad toegevoegd aan letters](assets/recipientstab-1.png)
 
-### Scenario: Aangepaste eigenschappen toevoegen voor specifieke elementtypen {#scenario-adding-custom-properties-for-specific-asset-types}
+### Scenario: aangepaste eigenschappen toevoegen voor specifieke elementtypen {#scenario-adding-custom-properties-for-specific-asset-types}
 
 In dit scenario ziet u hoe u een eigenschap aan een bepaald elementtype kunt toevoegen, zoals een veld, voor alle tekstelementen. Met behulp van dit proces kunt u eigenschappen toevoegen aan een van de volgende:
 
@@ -389,7 +389,7 @@ In dit scenario ziet u hoe u een eigenschap aan een bepaald elementtype kunt toe
 * Gegevenswoordenboek
 * Letter
 
-Als u bijvoorbeeld alleen de tekstelementen wilt bewerken, wilt u een eigenschap, Locatie van ontvangers, toevoegen om aan te geven voor welk geografisch gebied een element relevant is.  ![Aangepaste eigenschap toegevoegd aan een element](assets/newtabui.png)
+Als u bijvoorbeeld alleen de tekstelementen wilt bewerken, wilt u een eigenschap, Locatie van ontvangers, toevoegen om aan te geven voor welk geografisch gebied een element relevant is.  ![Aangepaste eigenschap die aan een element is toegevoegd](assets/newtabui.png)
 
 Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen:
 
@@ -402,7 +402,7 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
    Ga als volgt te werk om deze mapstructuur te maken:
 
-   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmmetadataproperties/properties/[AssetType]/items/tabs/items`
 
@@ -424,7 +424,7 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
       Klikken **Alles opslaan**.
 
-1. Voeg in de map met nieuw gemaakte items een knooppunt toe voor het aangepaste tabblad in het element (voorbeeld: aangepaste tab) met behulp van de volgende stappen:
+1. Voeg in de map met nieuw gemaakte items een knooppunt toe voor het aangepaste tabblad in het element (Voorbeeld: aangepast tabblad) door de volgende stappen uit te voeren:
 
    1. Klik met de rechtermuisknop op de map met items en selecteer **Maken** > **Knooppunt maken**.
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **OK**:
@@ -521,7 +521,7 @@ Voer de volgende stappen uit om een eigenschap aan een elementtype toe te voegen
 
 Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevoegd, alleen zichtbaar op de eigenschappenpagina en niet op de pagina voor het maken van elementen, omdat de pagina voor het maken van elementen geen tablay-out heeft. Als u de aangepaste eigenschappen samen met andere eigenschappen op de pagina voor het maken van elementen wilt weergeven, moet u het volgende doen:
 
-1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
    `/libs/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
@@ -545,13 +545,13 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
 
 1. Klikken **OK**. De mapstructuur wordt gemaakt in de map apps.
 
-1. Onder de knoop van bedekkingspunten u creeerde, creeer een knoop van de naam col4 (of om het even welke andere naam) en klik **Alles opslaan**.
+1. Onder de knoop van bedekkingspunten u creeerde, creeer een knoop van de naam col4 (of een andere naam) en klik **Alles opslaan**.
 
    Hier volgt bijvoorbeeld het bedekkingsknooppunt dat voor letters is gemaakt.
 
    `/apps/fd/cm/ma/gui/content/createasset/createletter/jcr:content/body/items/form/items/letterWizard/items/properties/items/properties/items/letterproperties/items`
 
-1. Voeg de volgende eigenschappen aan de pas gecreëerde knoop (hier col4) toe en klik **Alles opslaan**:
+1. Voeg de volgende eigenschappen toe aan het nieuwe knooppunt (hier col4) en klik **Alles opslaan**:
 
 <table>
  <tbody>
@@ -563,10 +563,10 @@ Standaard zijn de aangepaste eigenschappen die aan nieuwe tabbladen zijn toegevo
   <tr>
    <td>pad</td>
    <td>String</td>
-   <td><p>Dit pad is de aanwijzer naar de kolom die is gemaakt in:</p>
+   <td><p>Dit pad is de aanwijzer naar de kolom in:</p>
     <ul>
-     <li>Voor het algemene tabblad voor alle elementtypen: /apps/fd/cm/ma/gui/content/cmmetadataproperties/commontab/items/col1</li>
-     <li>Voor verschillende eigenschappen voor verschillende elementtypen: /apps/fd/cm/ma/gui/content/cmmetadataproperties/properties/items/tabs/items/customtab/items/col1</li>
+     <li>Voor een gemeenschappelijk tabblad voor alle elementtypen: /apps/fd/cm/ma/gui/content/cmmetadataproperties/commontab/items/col1</li>
+     <li>Voor verschillende eigenschappen voor verschillende elementtypen: /apps/fd/cm/ma/gui/content/cmmetadataproperties/properties/items/tabs/items/customtab/items/customtab/items/col1</li>
     </ul> </td>
   </tr>
   <tr>
@@ -730,9 +730,9 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
 
    De UI-kolom en -eigenschap die in deze procedure worden toegevoegd, worden voor alle elementtypen weergegeven. De waarden in deze eigenschappen kunnen echter alleen worden ingevoerd en weergegeven voor de elementtypen waarvoor u oorspronkelijk de aangepaste eigenschap hebt toegevoegd.
 
-   Met het scenario kunt u bijvoorbeeld: Wanneer u aangepaste eigenschappen toevoegt voor specifieke elementtypen en een aangepaste eigenschap toevoegt aan tekstelementen, kunt u alleen aangepaste eigenschappen invoeren voor tekstelementen. Als u die aangepaste eigenschap echter weergeeft in de gebruikersinterface, wordt de kolom weergegeven voor alle elementtypen.
+   Zo kunt u bijvoorbeeld met het scenario Scenario: Aangepaste eigenschappen toevoegen voor specifieke elementtypen die u een aangepaste eigenschap toevoegt aan tekstelementen, en alleen aangepaste eigenschappen invoeren voor tekstelementen. Als u die aangepaste eigenschap echter weergeeft in de gebruikersinterface, wordt de kolom weergegeven voor alle elementtypen.
 
-   ![customPropertyInListView](assets/custompropertyinlistview.png)
+   ![customPropertyInlistview](assets/custompropertyinlistview.png)
 
 1. (Optioneel) Standaard wordt de nieuwe kolom weergegeven als de laatste kolom in de gebruikersinterface. Als u de kolom op een specifieke positie wilt weergeven, voegt u de volgende eigenschap toe aan het kolomknooppunt:
 
@@ -751,7 +751,7 @@ Voer de volgende stappen uit om de aangepaste eigenschap weer te geven in de geb
  </tbody>
 </table>
 
-Wanneer u de eigenschap sling:orderBefore toevoegt om de kolomlocatie op te geven, moet u ook de volgorde van de corresponderende &lt;td> -tag als gespecificeerd in stap 6.4 van deze procedure. In dit geval moet u er bijvoorbeeld voor zorgen dat de &lt;td> tag van geografische locatie wordt geplaatst vóór &lt;td> tag van kolom Versie:
+Wanneer u de eigenschap sling:orderBefore toevoegt om de kolomlocatie op te geven, moet u ook de volgorde van de bijbehorende &lt;td> in stap 6.4 van deze procedure vermelde tag. In dit geval moet u er bijvoorbeeld voor zorgen dat de &lt;td> tag van geografische locatie wordt geplaatst vóór &lt;td> tag van kolom Versie:
 
 ```xml
 <td is="coral-td" value="<%= xssAPI.encodeForHTMLAttr(geographicalLocation) %>"><%= xssAPI.encodeForHTML(geographicalLocation) %></td>
@@ -846,9 +846,9 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
 ## Standaardweergave van de zoekpagina wijzigen {#change-default-view-of-the-search-page}
 
 1. Ga naar `https://'[server]:[port]'/[ContextPath]/crx/de` en aanmelden als beheerder.
-1. Maak in de map Apps een map met de naam list met een pad/structuur die lijkt op de map met lijsten in /libs/granite/ui/content/shell/omnissearch/search results/singleresults/views:
+1. Maak in de map Apps een map met de naam list met een pad/structuur die lijkt op de lijstmap in /libs/granite/ui/content/shell/omnissearch/search results/singleresults/views:
 
-   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/granite/ui/content/shell/omnisearch/searchresults/singleresults/views/list`
 
@@ -894,7 +894,7 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
 
    /libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/
 
-   1. Klik met de rechtermuisknop op de map Items in het volgende pad en selecteer **Overlayknooppunt**:
+   1. Klik met de rechtermuisknop op de map met items op het volgende pad en selecteer **Overlayknooppunt**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/views/list`
 
@@ -933,7 +933,7 @@ Voer de volgende stappen uit om het indexeren van aangepaste eigenschappen toe t
 
 Voer de volgende stappen uit om de aangepaste eigenschappen weer te geven of te verbergen:
 
-1. Onder het knooppunt voor aangepaste eigenschappen, zoals geografische toewijzing, maakt u een nieuw knooppunt met de naam &quot;granite:rendercondition&quot; van het type &quot;nt:unStructured&quot;.
+1. Onder de knoop van het douanebezit, zoals geografische toewijzing, creeer een knoop met naam &quot;granite:rendercondition&quot;van type &quot;nt:unStructured.&quot;
 1. Voeg de volgende eigenschap toe aan het knooppunt en klik op **Alles opslaan**:
 
    <table>

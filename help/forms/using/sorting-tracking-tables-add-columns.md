@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 exl-id: 9ab657cc-fa8e-4168-8a68-e38ac5c51b29
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -141,7 +141,7 @@ Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen
        <tbody>
            <%_.each(obj, function(task){%>
            <tr>
-               <!-- Put the task attributes in the order of headings, for example -->
+               <!-- Put the task attributes in the order of headings, for example, -->
                <td><%= task.stepName %></td>
                <td><%= task.instructions %></td>
                <td><%= !task.selectedRoute?'':(task.selectedRoute=='null'?'Default':task.selectedRoute) %></td>
@@ -153,7 +153,7 @@ Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen
    </table>
    ```
 
-## Een tabel bijhouden sorteren {#sorting-a-tracking-table}
+## Een tabel voor reeksspatiëring sorteren {#sorting-a-tracking-table}
 
 U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop klikt:
 
@@ -177,7 +177,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
 
 1. De `TaskTableHeaderClick` methode in `js/runtime/util/history.js`.
 
-   De methode zoekt het taakkenmerk van de gebeurtenis click, sorteert de taaklijst van dat kenmerk en geeft de taaktabel weer met de gesorteerde taaklijst.
+   De methode zoekt het taakkenmerk van de klikgebeurtenis, sorteert de taaklijst van dat kenmerk en geeft de taaktabel weer met de gesorteerde taaklijst.
 
    Sorteren gebeurt met behulp van de Backbone-sorteerfunctie in de taaklijstverzameling door een vergelijkingsfunctie op te geven.
 

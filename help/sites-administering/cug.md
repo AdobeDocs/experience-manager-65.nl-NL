@@ -1,19 +1,15 @@
 ---
 title: Een gesloten gebruikersgroep maken
-seo-title: Creating a Closed User Group
 description: Leer hoe u een gesloten gebruikersgroep maakt.
-seo-description: Learn how to work with Closed User Groups in Adobe Experience Manager.
-uuid: dc3c7dbd-2e86-43f9-9377-3b75053203b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
-discoiquuid: 6ae57874-a9a1-4208-9001-7f44a1f57cbe
 docset: aem65
 exl-id: 9efba91d-45e8-42e1-9db6-490d21bf7412
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '751'
+source-wordcount: '747'
 ht-degree: 0%
 
 ---
@@ -54,7 +50,7 @@ Een gesloten gebruikersgroep maken:
 
    ![screenshot_2018-10-30at145502](assets/screenshot_2018-10-30at145502.png)
 
-1. Druk op **Maken** in de rechterbovenhoek om een nieuwe groep te maken.
+1. Druk op **Maken** in de rechterbovenhoek om een groep te maken.
 1. Geef de nieuwe groep een naam, bijvoorbeeld `cug_access`.
 
    ![screenshot_2018-10-30at151459](assets/screenshot_2018-10-30at151459.png)
@@ -82,7 +78,7 @@ De CUG toepassen op een pagina of pagina&#39;s:
    1. Activeer **Inschakelen** tickbox.
 
    1. Voeg het pad toe aan uw **Aanmeldingspagina**.
-Dit is optioneel. Als de standaardaanmeldingspagina leeg blijft, wordt deze gebruikt.
+Dit is optioneel als de standaardaanmeldingspagina leeg blijft.
 
    ![CUG toegevoegd](assets/cug-authentication-requirement.png)
 
@@ -92,7 +88,7 @@ Dit is optioneel. Als de standaardaanmeldingspagina leeg blijft, wordt deze gebr
 
    >[!NOTE]
    >
-   >CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit probleem bij het configureren van Live Copy.
+   >CUG&#39;s op het tabblad Machtigingen kunnen niet worden geïmplementeerd voor actieve kopieën van blauwdrukken. Plan dit rond wanneer het vormen van Levend Exemplaar.
    >
    >Zie voor meer informatie [deze pagina](closed-user-groups.md#aem-livecopy).
 

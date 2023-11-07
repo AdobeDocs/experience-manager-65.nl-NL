@@ -2,9 +2,9 @@
 title: Uw Postvak In om taken te beheren
 description: Uw taken beheren met de Postvak IN Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1148'
+source-wordcount: '1144'
 ht-degree: 7%
 
 ---
@@ -191,7 +191,7 @@ De optie Beheer is alleen zichtbaar voor de leden van de `administrators` of `wo
    * er wordt een wizard Handelingen gestart.
    * er wordt een documentatiepagina geopend .
 
-   Bijvoorbeeld: **Opnieuw toewijzen** wordt een dialoogvenster geopend:
+   Bijvoorbeeld: **Opnieuw toewijzen** Hiermee wordt een dialoogvenster geopend:
 
    ![wf-85](assets/wf-85.png)
 

@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 discoiquuid: ccc0e434-8847-4e12-8a18-84b55fb2964b
 docset: aem65
 exl-id: 5623dcf4-bda9-4dee-ace3-5a1f6057e96c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ U kunt de tekst op de pagina rechtstreeks bewerken in plaats van in een dialoogv
 
 >[!NOTE]
 >
->Als u de zoeker naar inhoud hebt geopend, wordt boven aan het tabblad (zoals hierboven) een werkbalk met de opties voor de RTE-opmaak weergegeven.
+>Als u de inhoudzoeker hebt geopend, wordt boven aan het tabblad (zoals hierboven) een werkbalk met de RTE-opmaakopties weergegeven.
 >
 >Als de zoeker naar inhoud niet geopend is, wordt de werkbalk niet weergegeven.
 
@@ -78,7 +78,7 @@ Alles wordt als een schakeloptie gebruikt, dus bij herselectie wordt de indeling
 
 ![cq55_rte_stylesparagraph](assets/cq55_rte_stylesparagraph.png)
 
-Uw installatie kan vooraf gedefinieerde stijlen en indelingen bevatten. Deze zijn beschikbaar bij de **[!UICONTROL Style]** en **[!UICONTROL Format]** vervolgkeuzelijsten en kan worden toegepast op geselecteerde tekst.
+Uw installatie kan vooraf gedefinieerde stijlen en indelingen bevatten. Deze zijn beschikbaar bij de **[!UICONTROL Style]** en **[!UICONTROL Format]** vervolgkeuzelijsten en kunnen worden toegepast op tekst die u hebt geselecteerd.
 
 Een stijl kan worden toegepast op een specifieke tekenreeks (een stijl heeft een CSS-correlatie):
 
@@ -353,7 +353,7 @@ Selecteer één cel om deze te splitsen:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
-Als u een geneste tabel maakt, wordt er een nieuwe, op zichzelf staande tabel in de huidige cel gemaakt.
+Als u een geneste tabel maakt, wordt er een zelfstandige tabel in de huidige cel gemaakt.
 
 >[!NOTE]
 >

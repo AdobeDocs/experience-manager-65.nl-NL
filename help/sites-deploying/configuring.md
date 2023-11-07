@@ -7,7 +7,7 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2116'
 ht-degree: 0%
@@ -89,11 +89,11 @@ Dit betekent dat wanneer een IP adres moet worden gespecificeerd u (zoals vereis
 
 * een IPv6-adres
 
-  bijvoorbeeld `https://[ab12::34c5:6d7:8e90:1234]:4502`
+  bijvoorbeeld: `https://[ab12::34c5:6d7:8e90:1234]:4502`
 
 * een IPv4-adres
 
-  bijvoorbeeld `https://123.1.1.4:4502`
+  bijvoorbeeld: `https://123.1.1.4:4502`
 
 * een servernaam
 
@@ -287,7 +287,7 @@ Zie de [Basisbeginselen van de aanpassing van rapporten](/help/sites-administeri
 
 CQ stuurt e-mailmeldingen naar gebruikers die:
 
-* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld aanpassing of replicatie.
+* Hebt u zich op paginagebeurtenissen geabonneerd, bijvoorbeeld, wijziging of replicatie.
 * Hebt u zich geabonneerd op forumgebeurtenissen.
 * Een stap in een werkstroom uitvoeren.
 

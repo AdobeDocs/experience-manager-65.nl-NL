@@ -7,9 +7,9 @@ topic-tags: authoring
 content-type: reference
 docset: aem65
 exl-id: 2a4297e4-2d88-4fa6-8fea-3fea06753605
-source-git-commit: ab3d016c7c9c622be361596137b150d8719630bd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '344'
+source-wordcount: '342'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 ## Inleiding {#introduction}
 
-De `Community Activity List` kunt u trending information betreffende posten en meningen door leden evenals posten en meningen van inhoud toevoegen.
+De `Community Activity List` kunt u trending information about posts en views door leden en posten en weergaven van content toevoegen.
 
 In het document wordt beschreven:
 

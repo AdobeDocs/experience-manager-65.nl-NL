@@ -4,9 +4,9 @@ description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2388'
 ht-degree: 4%
 
 ---
@@ -183,7 +183,7 @@ Als het Content Fragment-model fragmentverwijzingen bevat, hebben de auteurs van
 De optie **Inhoudsfragment bewerken** Hiermee opent u dat fragment in een nieuw venstertabblad.
 
 <!--
-The option **Edit Content Fragment** will open that fragment in a new editor tab (within the same browser tab).
+The option **Edit Content Fragment** opens that fragment in a new editor tab (within the same browser tab).
 
 Selecting the original tab again (for example, **Little Pony Inc.**), will close this secondary tab (in this case, **Adam Smith**).
 
@@ -435,7 +435,7 @@ Een bestaande variatie een andere naam geven:
 
 1. Open het fragment en selecteer **Variaties** in het zijpaneel.
 1. Selecteer de gewenste variatie.
-1. Selecteren **Naam wijzigen** van de **Handelingen** vallen.
+1. Selecteren **Naam wijzigen** van de **Handelingen** vervolgkeuzelijst.
 
 1. Voer in het dialoogvenster dat verschijnt de nieuwe **titel** en/of **beschrijving** in.
 
@@ -451,7 +451,7 @@ Een bestaande wijziging verwijderen:
 
 1. Open het fragment en selecteer **Variaties** in het zijpaneel.
 1. Selecteer de gewenste variatie.
-1. Selecteren **Verwijderen** van de **Handelingen** vallen.
+1. Selecteren **Verwijderen** van de **Handelingen** vervolgkeuzelijst.
 
 1. Bevestig de **Verwijderen** in het dialoogvenster.
 
@@ -481,7 +481,7 @@ Het overbrengen van wijzigingen *van een variatie naar **master*** is niet besch
 
 1. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:
 
-   * de **Handelingen** keuzelijst - **Huidig element synchroniseren met stramien**
+   * de **Handelingen** drop-down kiezer - **Huidig element synchroniseren met stramien**
 
      ![synchroniseren met stramien](assets/cfm-variations-11a.png)
 

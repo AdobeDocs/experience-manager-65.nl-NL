@@ -1,15 +1,15 @@
 ---
 title: Documenten digitaal ondertekenen en certificeren
-description: Met de handtekeningservice kunt u digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document, de namen ophalen van handtekeningvelden in een PDF-document, handtekeningvelden wijzigen, PDF-documenten digitaal ondertekenen, PDF-documenten certificeren, digitale handtekeningen in een PDF-document valideren, alle digitale handtekeningen in een PDF-document valideren en een digitale handtekening uit een handtekeningveld verwijderen.
+description: Met de handtekeningservice kunt u digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document, de namen van handtekeningvelden in een PDF-document ophalen, handtekeningvelden wijzigen, PDF-documenten digitaal ondertekenen, PDF-documenten certificeren, digitale handtekeningen in een PDF-document valideren, alle digitale handtekeningen in een PDF-document valideren en een digitale handtekening uit een handtekeningveld verwijderen.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '17045'
+source-wordcount: '17029'
 ht-degree: 0%
 
 ---
@@ -37,12 +37,12 @@ Als er meerdere handtekeningvelden in een PDF-document staan, is het raadzaam de
 U kunt deze taken uitvoeren met de service Handtekening:
 
 * Digitale handtekeningvelden toevoegen aan en verwijderen uit een PDF-document. (Zie [Handtekeningvelden toevoegen](digitally-signing-certifying-documents.md#adding-signature-fields).)
-* Haal de namen op van handtekeningvelden in een PDF-document. (Zie [Namen van handtekeningvelden ophalen](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+* Haal de namen van handtekeningvelden op in een PDF-document. (Zie [Namen van handtekeningvelden ophalen](digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 * Handtekeningvelden wijzigen. (Zie [Handtekeningvelden wijzigen](digitally-signing-certifying-documents.md#modifying-signature-fields).)
 * PDF-documenten digitaal ondertekenen. (Zie [PDF-documenten digitaal ondertekenen](digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 * PDF-documenten certificeren. (Zie [PDF-documenten certificeren](digitally-signing-certifying-documents.md#certifying-pdf-documents).)
-* Digitale handtekeningen in een PDF-document valideren. (Zie [Digitale handtekeningen verifiëren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
-* Valideer alle digitale handtekeningen in een PDF-document. (Zie [Meerdere digitale handtekeningen controleren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Digitale handtekeningen valideren in een PDF-document. (Zie [Digitale handtekeningen verifiëren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
+* Alle digitale handtekeningen in een PDF-document valideren. (Zie [Meerdere digitale handtekeningen controleren](digitally-signing-certifying-documents.md#verifying-digital-signatures).)
 * Een digitale handtekening verwijderen uit een handtekeningveld. (Zie [Digitale handtekeningen verwijderen](digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
 >[!NOTE]
@@ -213,7 +213,7 @@ Een handtekeningveld toevoegen met de handtekening-API (webservice):
 
 ## Namen van handtekeningvelden ophalen {#retrieving-signature-field-names}
 
-U kunt de namen ophalen van alle handtekeningvelden die zich bevinden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
 >[!NOTE]
 >
@@ -347,7 +347,7 @@ Namen van handtekeningvelden ophalen met de handtekening-API (webservice):
 
 ## Handtekeningvelden wijzigen {#modifying-signature-fields}
 
-U kunt handtekeningvelden die zich in een PDF-document bevinden, wijzigen met de Java API en de webservice-API. Als u een handtekeningveld wijzigt, moet u de vergrendelingswoordenboekwaarden van het handtekeningveld of de waarden van het zaadwaardewoordenboek bewerken.
+U kunt handtekeningvelden in een PDF-document wijzigen met de Java API en de webservice-API. Als u een handtekeningveld wijzigt, moet u de vergrendelingswoordenboekwaarden van het handtekeningveld of de waarden van het zaadwaardewoordenboek bewerken.
 
 A *veldvergrendelingswoordenboek* Hiermee geeft u een lijst op met velden die zijn vergrendeld wanneer het handtekeningveld wordt ondertekend. Een vergrendeld veld voorkomt dat gebruikers wijzigingen in het veld aanbrengen. A *zaadwaardewoordenboek* bevat beperkende informatie die wordt gebruikt op het moment dat de handtekening wordt toegepast. U kunt bijvoorbeeld machtigingen wijzigen die de acties bepalen die kunnen plaatsvinden zonder een handtekening ongeldig te maken.
 
@@ -816,7 +816,7 @@ U kunt als volgt een PDF-document digitaal ondertekenen met de handtekening-API 
 
 U kunt een interactief formulier ondertekenen dat door de Forms-service wordt gemaakt. Neem bijvoorbeeld de volgende workflow:
 
-* U voegt een op XFA gebaseerd PDF formulier samen dat is gemaakt met Designer en formuliergegevens die zich in een XML-document bevinden met de Forms-service. Op de Forms-server wordt een interactief formulier weergegeven.
+* U voegt een op XFA gebaseerd PDF formulier dat is gemaakt met Designer samen met formuliergegevens in een XML-document met behulp van de Forms-service. Op de Forms-server wordt een interactief formulier weergegeven.
 * U ondertekent het interactieve formulier met de API van de handtekeningenservice.
 
 Het resultaat is een digitaal ondertekend interactief PDF-formulier. Wanneer u een PDF-formulier ondertekent dat is gebaseerd op een XFA-formulier, moet u ervoor zorgen dat u het PDF-bestand opslaat als een Adobe statisch PDF-formulier. Als u een PDF-formulier probeert te ondertekenen dat is opgeslagen als een Adobe dynamisch PDF-formulier, treedt een uitzondering op. Zorg ervoor dat het formulier een handtekeningveld bevat omdat u het formulier ondertekent dat door de Forms-service wordt geretourneerd.
@@ -1514,7 +1514,7 @@ Verifieer een digitale handtekening met behulp van de Signature Service API (web
 
 ## Meerdere digitale handtekeningen controleren {#verifying-multiple-digital-signatures}
 
-AEM Forms biedt de mogelijkheid om alle digitale handtekeningen te verifiëren die zich in een PDF-document bevinden. Stel dat een PDF-document meerdere digitale handtekeningen bevat als resultaat van een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars nodig zijn. Neem bijvoorbeeld een financiële transactie waarvoor zowel de handtekening van een medewerker als die van een manager is vereist. Met de Java API of de webservice-API van de handtekeningenservice kunt u alle handtekeningen in het PDF-document verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, is het raadzaam deze te verifiëren. U wordt aangeraden bekend te zijn met het controleren van één digitale handtekening.
+AEM Forms biedt de mogelijkheid om alle digitale handtekeningen in een PDF-document te verifiëren. Stel dat een PDF-document meerdere digitale handtekeningen bevat als resultaat van een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars nodig zijn. Neem bijvoorbeeld een financiële transactie waarvoor zowel de handtekening van een medewerker als die van een manager is vereist. Met de Java API of de webservice-API van de handtekeningenservice kunt u alle handtekeningen in het PDF-document verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, is het raadzaam deze te verifiëren. U wordt aangeraden bekend te zijn met het controleren van één digitale handtekening.
 
 >[!NOTE]
 >
@@ -1641,7 +1641,7 @@ Verifieer meerdere digitale handtekeningen met de API voor handtekeningenservice
    * A `PKIOptions` object dat PKI-runtimeopties bevat.
    * A `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt `null` voor deze parameter.
 
-   De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` -object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
+   De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
 
 1. Alle handtekeningen doorlopen
 
@@ -1707,7 +1707,7 @@ Verifieer veelvoudige digitale handtekeningen door de Dienst API van de Handteke
    * A `PKIOptions` object dat PKI-runtimeopties bevat.
    * A `VerifySPIOptions` instantie die SPI-informatie bevat. U kunt null opgeven voor deze parameter.
 
-   De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` -object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
+   De `verifyPDFDocument` methode retourneert een `PDFDocumentVerificationInfo` object dat informatie bevat over alle digitale handtekeningen in het PDF-document.
 
 1. Alle handtekeningen doorlopen
 

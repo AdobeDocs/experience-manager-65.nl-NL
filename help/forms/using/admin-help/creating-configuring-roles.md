@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
 exl-id: b447e545-f73e-4fde-a001-86e0e1cf4a12
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2525'
+source-wordcount: '2523'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 
 **Inhoudsruimtebeheerder AEM formulieren:** Kan instellingen van de pagina Content Services (Afgekeurd) in de beheerconsole weergeven en wijzigen
 
-**Formulieren AEM gebruiker van inhoudsruimte:** Kan zich aanmelden bij de pagina&#39;s van de inhoudsruimte (Afgekeurd)
+**Formulieren AEM Inhoudsruimte gebruiker:** Kan zich aanmelden bij de pagina&#39;s van de inhoudsruimte (Afgekeurd)
 
 **Documentum Connector Administrator:** Kan instellingen bekijken en wijzigen van de Connector voor EMC Documentum pagina in beheerconsole
 
@@ -73,13 +73,13 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 
 **Uitgenodigde en lokale gebruikers beheren van Rights Management:** Kan taken uitvoeren die vereist zijn om alle uitgenodigde en lokale gebruikers op de relevante pagina&#39;s van het Rights Management te beheren
 
-**Beheerder beleidsset Rights Management:** Voert alle taken uit die voor alle beleidsreeksen op de relevante pagina&#39;s van het Rights Management worden vereist
+**Beheerder voor beleidsset voor Rights Management:** Voert alle taken uit die voor alle beleidsreeksen op de relevante pagina&#39;s van het Rights Management worden vereist
 
 **Extra beheerder Rights Management:** Voert alle taken uit die van de pagina van het Rights Management worden vereist
 
 **AEM werkruimtebeheerder:** Kan instellingen weergeven en wijzigen vanaf de pagina Werkruimte in de beheerconsole
 
-***notitie **: De Flex-werkruimte is verouderd voor AEM formulierrelease.*
+***notitie **: De Flex-werkruimte is vervangen voor AEM formulierrelease.*
 
 **Gebruiker werkruimte:** Kan zich aanmelden bij de Workspace-toepassing voor eindgebruikers
 
@@ -93,7 +93,7 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 
 >[!NOTE]
 >
->Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen geen toegang tot de webpagina&#39;s van eindgebruikers in Workspace. Omdat deze pagina&#39;s buiten een firewall kunnen bestaan, zou het toestaan van beleid-vlakke taken een veiligheidsrisico kunnen vormen. Alleen gebruikers met de AEM Workspace Administrator of AEM formulierwerkruimte Gebruikersrechten hebben toegang tot de eindgebruikerwebpagina&#39;s van de Workspace.
+>Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen geen toegang tot de webpagina&#39;s van eindgebruikers in Workspace. Omdat deze pagina&#39;s buiten een firewall kunnen bestaan, zou het toestaan van beleid-vlakke taken een veiligheidsrisico kunnen vormen. Alleen gebruikers met de AEM Workspace Administrator of AEM formulierwerkruimte Gebruikersrechten hebben toegang tot de webpagina&#39;s van de eindgebruiker van de Workspace.
 
 >[!NOTE]
 >
@@ -125,7 +125,7 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
-   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Beheer van de Gebruiker. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
+   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Gebruikersbeheer. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
 
 1. Klik op de rol die u wilt bewerken, bewerk de algemene instellingen en klik op Opslaan.
 1. Als u machtigingen voor rollen wilt bewerken, klikt u op het tabblad Machtigingen en voert u de volgende taken uit:
@@ -144,7 +144,7 @@ U kunt alle rollen verwijderen die u hebt gemaakt, maar niet de standaardrollen 
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
-   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Beheer van de Gebruiker. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
+   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Gebruikersbeheer. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
 
 1. Schakel het selectievakje voor de rol die u wilt verwijderen in, klik op Verwijderen en klik op OK.
 
@@ -161,7 +161,7 @@ U kunt rollen ook toewijzen door de pagina Rolbeheer te gebruiken.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
-   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Beheer van de Gebruiker. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
+   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Gebruikersbeheer. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
 
 1. Klik op het tabblad Rolgebruikers op de pagina Roldetails. Er wordt een lijst weergegeven met gebruikers en groepen die rechtstreeks aan de rol zijn gekoppeld.
 
@@ -171,7 +171,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
-   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Beheer van de Gebruiker. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
+   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Gebruikersbeheer. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
 
 1. Selecteer de rol om toestemmingen voor te bekijken en de Toestemmingen te klikken tabel.
 1. Als u deze machtigingen wilt wijzigen, klikt u op Machtigingen zoeken, schakelt u de selectievakjes in voor de machtigingen die u aan de rol wilt toevoegen, klikt u op OK en vervolgens op Opslaan.
@@ -201,7 +201,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **Core Settings Control:** De instellingen op de pagina Core System Settings in de beheerconsole beheren
 
-**CREATE_VERSION_PERM:** Een nieuwe versie van een service maken
+**CREATE_VERSION_PERM:** Een versie van een service maken
 
 **Credentials wijzigen:** Ondertekeningsreferentie wijzigen in de Trust Store
 
@@ -213,7 +213,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **CRL-lezen:** Een CRL lezen in de Trust Store
 
-**Schrijven van CRL:** CRL toevoegen aan vertrouwde opslag
+**Schrijven van CRL:** Een CRL toevoegen aan de Trust Store
 
 **Delegeren:** Plaats ACL op een middel
 
@@ -223,7 +223,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **Domeinbesturing:** Instellingen maken, verwijderen of wijzigen voor elk gebruikersbeheerdomein, inclusief verificatie- en directoryproviders
 
-**Bewerken van gebeurtenistype:** Bewerken naar gebeurtenistypen
+**Type gebeurtenis bewerken:** Bewerken naar gebeurtenistypen
 
 **Naamimitatiebeheer:** Identiteit imiteren in Gebruikersbeheer
 
@@ -291,7 +291,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **Beleidsset Rights Management coördinator toevoegen:** Machtigingen voor beleidssetcoördinatoren toevoegen, verwijderen en wijzigen
 
-**Beleid instellen voor maken van Rights Management:** Nieuw beleid maken voor een beleidsset
+**Beleid instellen voor maken van Rights Management:** Een beleid maken voor een beleidsset
 
 **Beleid voor Rights Managementen instellen Verwijderbeleid:** Een beleid verwijderen uit een beleidsset
 
@@ -305,7 +305,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **Beleid van de Vastgestelde Schakelaar van het Rights Management:** Van beleid wisselen voor een document
 
-**Document intrekken door beleidsset Rights Management:** Een document intrekken
+**Document intrekken ongedaan maken beleidsset Rights Management:** Een document intrekken
 
 **Weergavegebeurtenis voor Beleidsset Rights Management:** Beleid en documentgebeurtenissen weergeven voor beleid of document binnen een beleidsset
 
@@ -317,7 +317,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **Service toevoegen:** Stel een nieuwe dienst aan de de dienstregistratie op. Dit omvat het toevoegen van nieuwe processen en procesvarianten
 
-**Service gedeactiveerd:** Stop om het even welke dienst in het systeem
+**Service uitgeschakeld:** De dienst in het systeem tegenhouden
 
 **Service verwijderen:** Alle services in het systeem verwijderen, inclusief processen en procesvarianten
 
@@ -354,7 +354,7 @@ Gebruik de pagina Rolbeheer om gebruikers en groepen uit een bepaalde rol te ver
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Rolbeheer en klik vervolgens op Rolnaam.
 
-   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Beheer van de Gebruiker. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
+   Door gebrek, toont de pagina van het Beheer van de Rol alle rollen in het gegevensbestand van het Gebruikersbeheer. Als de lijst met rollen groot is, gebruikt u het zoekgebied boven aan de pagina om naar een specifieke rolnaam te zoeken.
 
 1. Klik in de lijst met rollen op de naam van de rol die u wilt bijwerken en klik vervolgens op het tabblad Rolgebruikers. Er wordt een lijst weergegeven met gebruikers en groepen die aan de rol zijn gekoppeld.
 1. Schakel de selectievakjes in voor de gebruikers en groepen die u uit de rol wilt verwijderen en klik op Toewijzen ongedaan maken.

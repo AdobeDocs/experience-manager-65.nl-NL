@@ -1,7 +1,7 @@
 ---
 title: HTML5-voorbeeld van een XDP-formulier genereren
 seo-title: Generate HTML5 preview of an XDP form
-description: Het tabblad Voorbeeld van HTML in LiveCycle Designer kan worden gebruikt om een voorbeeld van formulieren weer te geven zoals deze in een browser worden weergegeven.
+description: Het tabblad Voorbeeld-HTML in LiveCycle Designer kan worden gebruikt om een voorbeeld van formulieren weer te geven zoals deze in een browser worden weergegeven.
 seo-description: Preview HTML tab in LiveCycle Designer can be used to preview forms as they appear in a browser.
 uuid: cbee956f-bf2d-40c5-8e03-58fce0fa215b
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
@@ -10,9 +10,9 @@ discoiquuid: 34e6d1bc-4eca-42dc-9ae5-9a2107fbefce
 docset: aem65
 feature: Mobile Forms
 exl-id: 548f302b-57f0-4bdc-8a99-1a4967caa32f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '822'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,7 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 
       * -/content/xfaforms
       * -/etc/clientlibs
+
    * AEM Forms op OSGi
 
       * -/content/xfaforms
@@ -63,7 +64,7 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
    * URL voor AEM Forms op JEE is `https://'[server]:[port]'/lc/system/console/configMgr`
 
 1. Openen **[!UICONTROL Mobile Forms Configurations]** voor bewerken.
-1. Schakel de optie **[!UICONTROL Protected Mode]** en klik op **[!UICONTROL Save]**.
+1. Hef de selectie van **[!UICONTROL Protected Mode]** en klik op **[!UICONTROL Save]**.
 
 ### Geef details van de AEM Forms-server op {#provide-details-of-aem-forms-server}
 
@@ -73,11 +74,12 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
    * **Server-URL**: URL AEM Forms-server.
 
    * **HTTP-poortnummer**: AEM serverpoort. De standaardwaarde is 4502.
-   * **Context voorvertoning HTML:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
+   * **Context voorvertoning HTML:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt om een voorbeeld van het formulier weer te geven in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms op OSGi)
 
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms op JEE)
+
    * **Context Forms Manager:** Contextpad waarop de gebruikersinterface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
 
       * `/aem/forms` (AEM Forms op OSGi)
@@ -100,7 +102,8 @@ De [beveiligde modus](../../forms/using/get-xdp-pdf-documents-aem.md) is standaa
    >
    >    * Als het tabblad Voorvertoning HTML is gesloten, drukt u op F4 om het tabblad Voorvertoning HTML te openen. U kunt ook Voorvertoning HTML selecteren in het menu Weergave om het tabblad Voorbeeld-HTML te openen.
    >    * De HTML-voorvertoning ondersteunt geen PDF-documenten, de HTML-voorvertoning is alleen voor XDP-documenten.
-
+   >
+   >
 
    >[!CAUTION]
    >
@@ -112,9 +115,9 @@ Met Designer kunt u een voorbeeld van een formulier bekijken en het formulier te
 
 Als u geen voorbeeldgegevens hebt, kunt u deze in Designer maken of deze zelf maken. (Zie [Voorbeeldgegevens automatisch genereren voor een voorbeeldweergave van het formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7efe.2) en [Voorbeeldgegevens maken voor een voorbeeldweergave van uw formulier](https://help.adobe.com/en_US/AEMForms/6.1/DesignerHelp/WS107c29ade9134a2c136ae6f212a1f379c94-8000.2.html#WS92d06802c76abadb-728f46ac129b395660c-7eff.2).)
 
-Als u het formulier test met een voorbeeldgegevensbron, weet u zeker dat de gegevens en velden zijn toegewezen en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken met de juiste ruimte voor elk object om de samengevoegde gegevens weer te geven.
+Als u het formulier test met een voorbeeldgegevensbron, weet u zeker dat de gegevens en velden zijn toegewezen en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken die de juiste ruimte biedt voor elk object om de samengevoegde gegevens weer te geven.
 
-1. Selecteren **Bestand > Formuliereigenschappen**.
+1. Selecteren **File > Form Properties**.
 
 1. Klik op de knop **Voorvertoning** en typt u in het vak Gegevensbestand het volledige pad naar het bestand met testgegevens. U kunt de Browse knoop ook gebruiken om aan het dossier te navigeren.
 
@@ -122,4 +125,4 @@ Als u het formulier test met een voorbeeldgegevensbron, weet u zeker dat de gege
 
 ## Formulieren voorvertonen in een gegevensopslagruimte {#html-preview-of-forms-in-forms-manager}
 
-In AEM Forms kunt u formulieren en documenten voorvertonen in een gegevensopslagruimte. Met Voorvertoning kunt u precies zien hoe de formulieren eruitzien en zich gedragen zoals ze worden gebruikt door eindgebruikers.
+In AEM Forms kunt u formulieren en documenten voorvertonen in een gegevensopslagruimte. Met Voorvertoning kunt u precies zien hoe de formulieren er uitzien en hoe ze zich gedragen door eindgebruikers.

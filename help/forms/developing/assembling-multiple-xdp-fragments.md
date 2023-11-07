@@ -13,9 +13,9 @@ discoiquuid: c4706632-02e5-4510-ad9c-4f732d5fbdad
 docset: aem65
 role: Developer
 exl-id: 54d98c69-2b2e-46cb-9f6a-7e9bdbe5c378
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1887'
+source-wordcount: '1883'
 ht-degree: 0%
 
 ---
@@ -74,9 +74,9 @@ Het DDX-document bevat een XDP `result` -tag die de naam van het resultaat aange
  }
 ```
 
-De `XDP source` -tag geeft het XDP-bestand aan dat een volledig XDP-document vertegenwoordigt dat kan worden gebruikt als container voor het toevoegen van XDP-fragmenten of als een van een aantal documenten die op volgorde worden toegevoegd. In deze situatie wordt het XDP-document alleen als container gebruikt (de eerste illustratie die wordt getoond in *Meerdere XDP-fragmenten samenstellen*). De andere XDP-bestanden worden dus in de XDP-container geplaatst.
+De `XDP source` -tag geeft het XDP-bestand aan dat een volledig XDP-document vertegenwoordigt dat kan worden gebruikt als container voor het toevoegen van XDP-fragmenten of als een van de verschillende documenten die op volgorde worden toegevoegd. In deze situatie wordt het XDP-document alleen als container gebruikt (de eerste illustratie die wordt getoond in *Meerdere XDP-fragmenten samenstellen*). De andere XDP-bestanden worden dus in de XDP-container geplaatst.
 
-Voor elk subformulier kunt u een `XDPContent` element (dit element is optioneel). In het bovenstaande voorbeeld zijn er drie subformulieren: `subPatientContact`, `subPatientPhysical`, en `subPatientHealth`. Beide `subPatientPhysical` subformulier en de `subPatientHealth` Het subformulier bevindt zich in hetzelfde XDP-bestand, tuc018_patiënt.xdp. Het fragmentelement geeft de naam van het subformulier op, zoals gedefinieerd in Designer.
+Voor elk subformulier kunt u een `XDPContent` element (dit element is optioneel). In het bovenstaande voorbeeld zijn er drie subformulieren: `subPatientContact`, `subPatientPhysical`, en `subPatientHealth`. Beide `subPatientPhysical` het subformulier en de `subPatientHealth` subformulier bevindt zich in hetzelfde XDP-bestand, tuc018_patiënt.xdp. Het fragmentelement geeft de naam van het subformulier op, zoals gedefinieerd in Designer.
 
 >[!NOTE]
 >
@@ -84,7 +84,7 @@ Voor elk subformulier kunt u een `XDPContent` element (dit element is optioneel)
 
 >[!NOTE]
 >
->Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de Assembler van de Dienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
+>Voor meer informatie over een DDX-document raadpleegt u [De Verwijzing van de AssemblerDienst en DDX](https://www.adobe.com/go/learn_aemforms_ddx_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -126,7 +126,7 @@ Als u meerdere XDP-documenten wilt samenstellen, verwijst u naar alle XDP-bestan
  <XDPContent insertionPoint="ddx_fragment" source="tuc018_contact.xdp" fragment="subPatientContact" required="false"/>
 ```
 
-Het subformulier genaamd *subPatientContact* moet zich in het XDP-bestand bevinden met de naam *tuc018_contact.xdp*.
+Het subformulier genaamd *subPatientContact* moet in het XDP-bestand met de naam *tuc018_contact.xdp*.
 
 **Uitvoeringsopties instellen**
 
@@ -134,7 +134,7 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Meerdere XDP-documenten samenstellen**
 
-Als u meerdere XDP-bestanden wilt samenstellen, roept u de `invokeDDX` bewerking. De dienst van de Assembler keert het geassembleerde XDP document binnen een inzamelingsvoorwerp terug.
+Als u meerdere XDP-bestanden wilt samenstellen, roept u de `invokeDDX` -bewerking. De dienst van de Assembler keert het geassembleerde XDP document binnen een inzamelingsvoorwerp terug.
 
 **Het samengevoegde XDP-document ophalen**
 
@@ -165,12 +165,12 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (Java) voor ve
 1. Maak een PDF Assembler-client.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `AssemblerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Verwijs naar een bestaand DDX-document.
 
    * Een `java.io.FileInputStream` een object dat het DDX-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het DDX-bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Verwijs naar de XDP-documenten.
 
@@ -207,7 +207,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (Java) voor ve
 **Zie ook**
 
 [Meerdere XDP-fragmenten samenstellen](assembling-multiple-xdp-fragments.md#assembling-multiple-xdp-fragments)
-[Snel starten (SOAP-modus): Meerdere XDP-fragmenten samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
+[Snel starten (SOAP-modus): meerdere XDP-fragmenten samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-multiple-xdp-fragments-using-the-java-api)
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -230,7 +230,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 1. Maak een PDF Assembler-client.
 
    * Een `AssemblerServiceClient` object met de standaardconstructor.
-   * Een `AssemblerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de AEM Forms-service, zoals `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Een `AssemblerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de AEM Forms-service, zoals `https://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `AssemblerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -280,7 +280,7 @@ U kunt meerdere XDP-fragmenten samenstellen met behulp van de API (webservice) v
 
    Voer de volgende handelingen uit om het nieuwe XDP-document te verkrijgen:
 
-   * Toegang krijgen tot `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
+   * Toegang krijgen tot de `AssemblerResult` object `documents` veld, dat een `Map` -object dat de resulterende PDF-documenten bevat.
    * Doorlopen `Map` om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` een `BLOB`.
    * Extraheer de binaire gegevens die het document van de PDF door tot zijn toegang te hebben vertegenwoordigen `BLOB` object `MTOM` eigenschap. Hiermee wordt een array met bytes geretourneerd die u naar een XDP-bestand kunt schrijven.
 

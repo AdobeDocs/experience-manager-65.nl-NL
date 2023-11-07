@@ -1,18 +1,14 @@
 ---
 title: Woordenboeken beheren met Vertaler
-seo-title: Using Translator to Manage Dictionaries
 description: AEM biedt een console voor het beheer van de verschillende vertalingen van teksten die worden gebruikt in de gebruikersinterface van componenten
-seo-description: AEM provides a console for managing the various translations of texts used in component UI
-uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
-discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2327'
+source-wordcount: '2320'
 ht-degree: 0%
 
 ---
@@ -43,7 +39,7 @@ De vertaler geeft een overzicht van de teksten die in AEM met de verschillende t
 
 U kunt de Engelse en vertaalde teksten zoeken, filteren en bewerken. U kunt woordenboeken ook exporteren naar de XLIFF-indeling om ze te vertalen en de vertalingen vervolgens weer importeren in de woordenboeken.
 
-Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen aan een vertaalproject. U kunt een nieuw project maken of een bestaand project uitbreiden.
+Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen aan een vertaalproject. U kunt een project maken of toevoegen aan een bestaand project.
 
 1. Klikken **Woordenboek omzetten**.
 
@@ -283,7 +279,7 @@ Het gereedschap Vertaler bevat de volgende talen in de woordenlijst:
 
 Gebruik de volgende procedure om talen toe te voegen of te verwijderen.
 
-1. Met CRXDE Lite maakt u een nieuw knooppunt:
+1. Maak een knooppunt met CRXDE Lite:
 
    `/etc/languages`
 
@@ -341,7 +337,7 @@ De standaardlanden worden gebruikt wanneer het tonen van vlaggen (bijvoorbeeld, 
 
 >[!NOTE]
 >
->Voor lokalisaties die door de bovenstaande vertaler worden beheerd, werkt alleen de exacte taal. Als de taalvoorkeur in het keuzemenu wordt gebruikt `en_uk`moet er een `en_uk` in de opslagplaats.
+>Voor lokalisaties die door de bovenstaande vertaler worden beheerd, werkt alleen de exacte taal. Als het taalvoorkeurskeuzemenu wordt gebruikt `en_uk`moet er een `en_uk` in de opslagplaats.
 
 De standaarddefinities wijzigen:
 
@@ -382,7 +378,7 @@ Ook het testen van woordenboektekenreeksen moet worden uitgevoerd als onderdeel 
 
 >[!NOTE]
 >
->De standaardpublicatiefunctie, of replicatie, zouden niet voor woordenboeken moeten worden gebruikt. In plaats daarvan moeten woordenboeken op dezelfde manier worden behandeld als code en configuratie. Dit omvat het gebruiken van broncontrole om veranderingen te volgen, en het gebruiken van inhoudspakketten om veranderingen op auteur toe te passen en te publiceren.
+>Gebruik geen normale publicatiefunctionaliteit, of replicatie, voor woordenboeken. In plaats daarvan moeten woordenboeken op dezelfde manier worden behandeld als code en configuratie. Dit omvat het gebruiken van broncontrole om veranderingen te volgen, en het gebruiken van inhoudspakketten om veranderingen op auteur toe te passen en te publiceren.
 
 >[!NOTE]
 >

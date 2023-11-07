@@ -7,9 +7,9 @@ topic-tags: components
 content-type: reference
 legacypath: /content/docs/en/aem/6-2/develop/components/components-classic
 exl-id: 3f078139-73fd-4913-9d67-264fb2515f8a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2385'
+source-wordcount: '2384'
 ht-degree: 0%
 
 ---
@@ -196,7 +196,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
    * met CRXDE Lite de waarde toevoegen `<path-to-component>` (bijvoorbeeld `/apps/geometrixx/components/myComponent`) aan de eigenschapcomponenten van het knooppunt `/etc/designs/geometrixx/jcr:content/contentpage/par`
    * Volg de instructies in [Nieuwe componenten toevoegen aan alineasystemen](#adding-a-new-component-to-the-paragraph-system-design-mode)
 
-1. Open in AEM WCM een pagina op uw website en voeg een alinea in van het type dat u net hebt gemaakt om ervoor te zorgen dat de component goed werkt.
+1. Open in AEM WCM een pagina op uw website en voeg een alinea in van het type dat u hebt gemaakt om ervoor te zorgen dat de component goed werkt.
 
 >[!NOTE]
 >
@@ -206,7 +206,7 @@ Als u nieuwe componenten voor AEM wilt ontwikkelen op basis van een bestaande co
 
 Nadat de component is ontwikkeld, voegt u deze toe aan het alineasysteem, waarmee auteurs de component kunnen selecteren en gebruiken tijdens het bewerken van een pagina.
 
-1. Open bijvoorbeeld een pagina in de ontwerpomgeving waarin het alineasysteem wordt gebruikt `<contentPath>/Test.html`.
+1. Open bijvoorbeeld een pagina in de ontwerpomgeving waarin het alineasysteem wordt gebruikt. `<contentPath>/Test.html`.
 1. Schakel over naar de ontwerpmodus door:
 
    * toevoegen `?wcmmode=design` aan het einde van de URL en de toegang tot de URL, bijvoorbeeld:

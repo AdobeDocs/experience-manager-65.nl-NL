@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: d4c2b2f0-613a-409d-b39b-8e37fdb96eea
 role: Developer
 exl-id: 012a3a9f-542c-4ed1-a092-572bfccbdf21
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1455'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvo
 
 **Opties voor het uitvoeren van gebruiksrechten instellen**
 
-U moet de runtime van gebruiksrechten opties plaatsen om een recht-Toegelaten vorm terug te geven. U moet ook de alias van de referentie opgeven die wordt gebruikt om gebruiksrechten toe te passen op een formulier. Nadat u de alias-waarde hebt opgegeven, geeft u elk gebruiksrecht op dat u op het formulier wilt toepassen.
+Stel uitvoeringsopties voor gebruiksrechten in om een formulier met toegangsrechten te genereren. U moet ook de alias van de referentie opgeven die wordt gebruikt om gebruiksrechten toe te passen op een formulier. Nadat u de alias-waarde hebt opgegeven, geeft u elk gebruiksrecht op dat u op het formulier wilt toepassen.
 
 **Een formulier met ingeschakelde rechten weergeven**
 

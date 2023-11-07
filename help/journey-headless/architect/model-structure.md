@@ -2,7 +2,7 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 2%
@@ -20,7 +20,7 @@ Dit artikel bouwt op deze voort zodat begrijpt u hoe te om uw eigen Modellen van
 ## Doelstelling {#objective}
 
 * **Publiek**: Begin
-* **Doelstelling**: de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
+* **Doelstelling**: de concepten en mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 
 <!-- which persona does this? -->
 <!-- and who allows the configuration on the folders? -->
@@ -28,7 +28,7 @@ Dit artikel bouwt op deze voort zodat begrijpt u hoe te om uw eigen Modellen van
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a new configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
 
@@ -45,7 +45,7 @@ Vervolgens kunt u de modellen van Content Fragments maken en de structuur defini
 
 Nadat u deze optie hebt geselecteerd, navigeert u naar de locatie voor uw model en selecteert u **Maken**. Hier kunt u verschillende belangrijke details invoeren.
 
-De optie **Model inschakelen** is standaard geactiveerd. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in te schakelen (of uit te schakelen).
+De optie **Model inschakelen** is standaard geactiveerd. Dit betekent dat uw model beschikbaar is voor gebruik (bij het maken van inhoudsfragmenten) zodra u het hebt opgeslagen. U kunt dit desgewenst deactiveren. Er zijn later mogelijkheden om een bestaand model in of uit te schakelen.
 
 ![Inhoudsfragmentmodel maken](/help/assets/content-fragments/assets/cfm-models-02.png)
 
@@ -53,7 +53,7 @@ Bevestigen met **Maken** en u kunt **Openen** uw model om de structuur te beginn
 
 ## Modellen voor inhoudsfragmenten definiëren {#defining-content-fragment-models}
 
-Wanneer u voor het eerst een nieuw model opent, ziet u een groot, leeg vak aan de linkerkant en een lange lijst met **Gegevenstypen** rechts:
+Wanneer u voor het eerst een nieuw model opent, ziet u dit - een grote lege ruimte links en een lange lijst met **Gegevenstypen** rechts:
 
 ![Leeg model](/help/assets/content-fragments/assets/cfm-models-03.png)
 
@@ -100,7 +100,7 @@ Inhoudsfragmentmodellen moeten worden gepubliceerd wanneer/voordat afhankelijke 
 
 Zodra een model is gepubliceerd, wordt het *vergrendeld* in de modus ALLEEN-LEZEN bij de auteur. Dit is bedoeld om wijzigingen te voorkomen die zouden leiden tot fouten in bestaande GraphQL-schema&#39;s en query&#39;s, met name in de publicatieomgeving. Het wordt in de console aangegeven door **Vergrendeld**.
 
-Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en structuur van modellen zien, maar niet rechtstreeks bewerken; hoewel u kunt beheren **Vergrendeld** modellen van of de console, of de modelredacteur.
+Wanneer het model **Vergrendeld** (in de modus ALLEEN-LEZEN) kunt u de inhoud en de structuur van modellen zien, maar niet rechtstreeks bewerken, hoewel u deze kunt beheren **Vergrendeld** modellen van of de console, of de modelredacteur.
 
 ## Volgende functies {#whats-next}
 

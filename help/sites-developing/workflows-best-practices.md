@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1929'
+source-wordcount: '1923'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Bij het configureren van workflowprocessen (aangepast en/of out-of-the-box) zijn
 
 Voor het optimaliseren van hoge inname kunt u een [workflow als tijdelijk](/help/sites-developing/workflows.md#transient-workflows).
 
-Wanneer een werkstroom van voorbijgaande aard is, worden de runtime gegevens met betrekking tot de tussenliggende werkstappen niet voortgeduurd in JCR wanneer zij lopen (de uitvoeruitvoeruitvoeruitvoeringen blijven natuurlijk voortbestaan).
+Wanneer een workflow een overgang is, worden de runtimegegevens met betrekking tot de tussenliggende werkstappen niet in het JCR voortgezet wanneer ze worden uitgevoerd (de uitvoeruitvoeruitvoeruitvoeringen blijven bestaan).
 
 De voordelen kunnen zijn:
 
@@ -68,7 +68,7 @@ Bovendien is er een afzonderlijke configuratie voor **Graniet Workflow External 
 
 ### Afzonderlijke taakwachtrij configureren {#configure-individual-job-queues}
 
-In sommige gevallen is het nuttig om individuele baanrijen te vormen om gezamenlijke draden, of andere rijopties, op een individuele baanbasis te controleren. U kunt een individuele rij van de console van het Web via toevoegen en vormen **Configuratie Apache Sling-taakwachtrij** fabriek. Om het aangewezen onderwerp te vinden om een lijst te maken, voer het model van uw werkschema uit en zoek het in **Verkooptaken** console; bijvoorbeeld op `http://localhost:4502/system/console/slingevent`.
+In sommige gevallen is het nuttig om individuele baanrijen te vormen om gezamenlijke draden, of andere rijopties, op een individuele baanbasis te controleren. U kunt een individuele rij van de console van het Web via toevoegen en vormen **Configuratie Apache Sling-taakwachtrij** fabriek. Om het aangewezen onderwerp te vinden om te vermelden, voer het model van uw werkschema uit en zoek het in **Verkooptaken** console; bijvoorbeeld op `http://localhost:4502/system/console/slingevent`.
 
 Afzonderlijke taakwachtrijen kunnen ook worden toegevoegd voor tijdelijke werkstromen.
 
@@ -223,7 +223,7 @@ Workflowmeldingen worden ook opgeslagen in de repository volgens het type:
 
 ### Processessies {#process-sessions}
 
-Net als bij elke aangepaste ontwikkeling wordt altijd aangeraden de sessie van een gebruiker te gebruiken als dat mogelijk is:
+Net als bij elke aangepaste ontwikkeling wordt altijd aanbevolen om de sessie van een gebruiker te gebruiken als dat mogelijk is:
 
 * voor een optimale naleving van de beveiligingsrichtlijnen
 * om het systeem toe te staan om het openen en het sluiten van de zitting te leiden
@@ -255,7 +255,7 @@ Een sessie opslaan:
 
 >[!CAUTION]
 >
->Als u, ondanks de aanbevelingen hier, uw eigen jcr zitting creeert, dan zal het moeten worden bewaard.
+>Als u, ondanks de aanbevelingen hier, uw eigen jcr zitting creeert, dan moet het worden bewaard.
 
 ### Aantal/bereik van opstarters minimaliseren {#minimize-the-number-scope-of-launchers}
 
@@ -285,7 +285,7 @@ Workflows kunnen een aanzienlijke hoeveelheid overhead met zich meebrengen, zowe
 
 Een voorbeeld hiervan is een workflow die een bedrijfsproces implementeert op een set inhoud en die inhoud vervolgens activeert. Het is beter een aangepast workflowproces te maken dat elk van deze knooppunten activeert in plaats van een **Inhoud activeren** model voor elk van de inhoudsknooppunten die moeten worden gepubliceerd. Deze benadering vereist extra ontwikkelingswerk, maar is efficiënter wanneer uitgevoerd dan het beginnen van een afzonderlijke werkschemainstantie voor elke activering.
 
-Een ander voorbeeld zou een werkschema zijn dat een aantal knopen verwerkt, tot een werkschemapakket leidt, dan genoemd pakket activeert. In plaats van het pakket te maken en vervolgens een aparte workflow te starten met het pakket als de lading, kunt u de lading van uw workflow wijzigen in de stap die het pakket maakt en vervolgens de stap aanroepen om het pakket binnen hetzelfde workflowmodel te activeren.
+Een ander voorbeeld zou een werkschema zijn dat verscheidene knopen verwerkt, tot een werkschemapakket leidt, dan genoemd pakket activeert. In plaats van het pakket te maken en vervolgens een aparte workflow te starten met het pakket als de lading, kunt u de lading van uw workflow wijzigen in de stap die het pakket maakt en vervolgens de stap aanroepen om het pakket binnen hetzelfde workflowmodel te activeren.
 
 ### Handler Advance {#handler-advance}
 

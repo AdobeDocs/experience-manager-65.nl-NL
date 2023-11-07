@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1f15f028-aa81-478e-97eb-f83a4dc0418c
 exl-id: 30edcef2-e8fa-403a-9850-b8dfeeb9ac65
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3227'
+source-wordcount: '3226'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Voor elk ondernemingsdomein u vormt, specificeer de folders die de authentificat
 1. Selecteer Gebruikersinstellingen en configureer de instellingen naar wens. (Zie [Directoryinstellingen](configuring-directories.md#directory-settings).)
 1. Om te verifiëren dat basis DN en andere gevormde attributen de correcte partij van gebruikers verzamelen, klik Test. LDAP probeert de eerste 200 records op te halen met behulp van de opgegeven instellingen (zoals de basis-DN, het zoekfilter en alle kenmerken).
 
-   Als gebruikers worden geretourneerd, geven de resultaten de waarden weer die aan elk veld zijn toegewezen volgens de kenmerkset. Als de test mislukt als gevolg van een niet-bestaande servernaam, onjuiste autorisatiegegevens of onjuiste kenmerken, wordt het volgende foutbericht weergegeven: &quot;De opgegeven zoekcriteria hebben geen resultaat opgeleverd&quot;. Om de worteloorzaak van de mislukking te bepalen, herzie de uitzondering in het het logboekdossier van de Server van de Toepassing. Klik op Sluiten en vervolgens op Volgende.
+   Als gebruikers worden geretourneerd, geven de resultaten de waarden weer die aan elk veld zijn toegewezen volgens de kenmerkset. Als de test mislukt vanwege een niet-bestaande servernaam, onjuiste autorisatiegegevens of onjuiste kenmerken, wordt het volgende foutbericht weergegeven: &quot;De opgegeven zoekcriteria hebben geen resultaat geretourneerd&quot;. Om de worteloorzaak van de mislukking te bepalen, herzie de uitzondering in het het logboekdossier van de Server van de Toepassing. Klik op Sluiten en vervolgens op Volgende.
 
 1. Selecteer Groepsinstellingen en configureer de instellingen naar wens. (Zie [Directoryinstellingen](configuring-directories.md#directory-settings).)
 1. Om te verifiëren dat basis DN en andere gevormde attributen de correcte partij van groepen verzamelen, klik Test. Als groepen worden geretourneerd, geven de resultaten de waarden weer die aan elk veld zijn toegewezen volgens de kenmerkset. Klik op Sluiten.
@@ -63,7 +63,7 @@ U kunt de details van een folder uitgeven die u eerder vormde.
 
 ## Een map verwijderen {#delete-a-directory}
 
-Wanneer u domeinen synchroniseert nadat u een map hebt verwijderd, worden alle gebruikers en groepen in die map gemarkeerd als verouderd in de database. Deze worden niet geretourneerd in een zoekopdracht vanuit de beheerconsole.
+Wanneer u domeinen synchroniseert nadat u een map hebt verwijderd, worden alle gebruikers en groepen in die map gemarkeerd als verouderd in de database. Zij zullen niet in om het even welk onderzoek van de Console van het Beleid zijn teruggekeerd.
 
 >[!NOTE]
 >
@@ -78,7 +78,7 @@ Wanneer u domeinen synchroniseert nadat u een map hebt verwijderd, worden alle g
 
 Wanneer u een map aan een domein toevoegt, geeft u de volgende directoryinstellingen op.
 
-**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer met de naam x in het adobe.com-netwerk is de FQDN bijvoorbeeld x.adobe.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
+**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer die x heet in het netwerk adobe.com, is de FQDN bijvoorbeeld x.adobe.com. Een IP-adres kan worden gebruikt in plaats van de FQDN-servernaam.
 
 **Poort:** (Verplicht) De poort die de directoryserver gebruikt. Typisch 389, of 636 als het Veilige protocol van de Laag van Contactdozen (SSL) wordt gebruikt voor het verzenden van authentificatieinformatie over het netwerk.
 
@@ -88,7 +88,7 @@ Wanneer u een map aan een domein toevoegt, geeft u de volgende directoryinstelli
 
 **Anoniem:** Geen gebruikersnaam of wachtwoord vereist. Een anonieme gebruiker kan slechts een beperkte hoeveelheid gegevens ophalen. Deze optie kan handig zijn voor de eerste test.
 
-**Gebruiker:** Verificatie is vereist. Geef in het vak Naam de naam op van de gebruikersrecord die toegang kan krijgen tot de map. U kunt het beste de volledige DN (Distinguished Name) van de gebruikersaccount invoeren, zoals cn=Jane Doe, ou=user, dc=can, dc=com. Geef in het vak Wachtwoord het bijbehorende wachtwoord op. Deze instellingen zijn vereist wanneer u de optie Gebruiker binden selecteert.
+**Gebruiker:** Verificatie is vereist. Geef in het vak Naam de naam op van de gebruikersrecord die toegang kan krijgen tot de map. U kunt het beste de volledige DN (Distinguished Name) van de gebruikersaccount invoeren, zoals cn=Jane Doe, ou=user, dc=can, dc=com. Geef in het vak Wachtwoord het bijbehorende wachtwoord op. Deze instellingen zijn vereist wanneer u Gebruiker selecteert als de optie Binding.
 
 **Naam:** Naam die kan worden gebruikt om verbinding te maken met de LDAP-database wanneer anonieme toegang niet is ingeschakeld. Voor Actieve Folder 2003, specificeer `[domain name]\[userid]`. Voor Sun™ One, eDirectory of IBM Tivoli Directory Server geeft u de volledig gekwalificeerde naam van de gebruiker op, zoals uid=lcuser,ou=it,o=company.com.
 
@@ -114,11 +114,11 @@ Wanneer u een map aan een domein toevoegt, geeft u de volgende directoryinstelli
 
 **Basis-DN:** Instellen als beginpunt voor het synchroniseren van gebruikers en groepen in de LDAP-hiërarchie. Het is best om een basis DN op het laagste niveau van de hiërarchie te specificeren die alle gebruikers en groepen omvat die voor de diensten moeten worden gesynchroniseerd.
 
-Als u de verwijzingsoptie Inschakelen hebt geselecteerd in de directoryinstellingen, stelt u de optie Basis-DN in op de optie *dc* deel van de DN. De verwijzing werkt alleen als het zoekbereik zowel bovenliggende als onderliggende domeinen bevat.
+Als u de optie Enable verwijzing hebt geselecteerd in de directoryinstellingen, stelt u de optie Base DN in op de optie *dc* deel van de DN. De verwijzing werkt alleen als het zoekbereik zowel bovenliggende als onderliggende domeinen bevat.
 
 >[!NOTE]
 >
->Neem de DN van de gebruiker niet op in deze instelling. Als u een bepaalde gebruiker wilt synchroniseren, gebruikt u de instelling Zoekfilter.
+>Neem de DN van de gebruiker niet op in deze instelling. Gebruik de instelling Zoekfilter om een bepaalde gebruiker te synchroniseren.
 
 Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommige directoryservers, zoals IBM Domino Enterprise Server, mogelijk een lege BaseDN. Als u een lege basis-DN wilt opgeven, exporteert u het bestand config.xml, bewerkt u de instelling in het bestand config.xml en importeert u deze vervolgens opnieuw. (Zie [Het configuratiebestand importeren en exporteren](/help/forms/using/admin-help/importing-exporting-configuration-file.md#importing-and-exporting-the-configuration-file).)
 
@@ -138,7 +138,7 @@ Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommig
 
 **Zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen (de sleutel van de bedrijfskalender) wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM formulieren kunnen zakelijke kalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier u zaken kalendersleutels aan gebruikers toewijst hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie Business Calendars configureren.)
 
-Als u een ondernemingsdomein gebruikt, kunt u het BedrijfsKalender plaatsen aan een gebied in de folder in kaart brengen LDAP. Als bijvoorbeeld elk gebruikersrecord in uw map een *land* en u wilt zakelijke kalenders toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de *land* veldnaam als de waarde voor de instelling van de Business Calendar. Vervolgens kunt u de agenda-toetsen voor het bedrijf toewijzen (de waarden die voor de *land* (in de LDAP-directory) aan zakelijke kalenders in de formulierworkflow.
+Als u een ondernemingsdomein gebruikt, kunt u het BedrijfsKalender plaatsen aan een gebied in de folder in kaart brengen LDAP. Als bijvoorbeeld elk gebruikersrecord in uw map een *land* en u wilt zakelijke kalenders toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de *land* veldnaam als de waarde voor de instelling van de Business Calendar. Vervolgens kunt u de agenda-toetsen voor het bedrijf toewijzen (de waarden die voor de *land* (in de LDAP-directory) aan zakelijke kalenders in de formulierwerkstroom.
 
 De hoeveelheid ruimte die wordt gebruikt voor het weergeven van de naam van de zakelijke kalendersleutel in de pagina&#39;s van de formulierwerkstroom is beperkt. Beperk de naam van de zakelijke kalendersleutel tot minder dan 53 tekens om te voorkomen dat deze op deze pagina&#39;s wordt afgekapt.
 
@@ -158,7 +158,7 @@ De hoeveelheid ruimte die wordt gebruikt voor het weergeven van de naam van de z
 
 **Tijdzone:** Het attribuut van het schema dat de tijdzone bevat waar de gebruiker wordt gevestigd. De waarde bestaat uit een tekenreeks zoals Plaats/Land.
 
-**Besturingselement Virtuele lijstweergave (VLV) inschakelen:** Een LDAP-besturingselement waarmee AEM formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de map veel gebruikers bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar gebruikers. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV voor groepen ook toelaten. Als u VLV-controle (Virtual List View) inschakelen selecteert, geeft u een naam op in het vak Sorteerveld.
+**Besturingselement Virtuele lijstweergave inschakelen:** Een LDAP-besturingselement waarmee AEM formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de map veel gebruikers bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar gebruikers. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV voor groepen ook toelaten. Als u VLV-controle (Virtual List View) inschakelen selecteert, geeft u een naam op in het vak Sorteerveld.
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Als DN als uniek herkenningsteken wordt gespecificeerd, te hoeven u niet om het 
 
 **Tijdstempel wijzigen:** Als u synchronisatie met de delta-directory wilt inschakelen, stelt u deze waarde in om Tijdstempel te wijzigen. (Zie Synchronisatie van delta-directory inschakelen.)
 
-**Besturingselement Virtuele lijstweergave (VLV) inschakelen:** Een LDAP-besturingselement waarmee AEM formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de directory vele groepen bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar groepen. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV ook inschakelen voor gebruikers. Als u Enable Virtual List View (VLV) Control selecteert, geeft u een naam voor het veld Sorteren op.
+**Besturingselement Virtuele lijstweergave inschakelen:** Een LDAP-besturingselement waarmee AEM formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de directory vele groepen bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar groepen. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV ook inschakelen voor gebruikers. Als u Enable Virtual List View (VLV) Control selecteert, geeft u een naam voor het veld Sorteren op.
 
 >[!NOTE]
 >
@@ -216,7 +216,7 @@ Als gebruikers en groepen worden geretourneerd, geven de resultaten de waarden w
 
 >[!NOTE]
 >
->Gebruikersbeheer ondersteunt geen dubbele gebruikers-id&#39;s binnen een domein; er wordt slechts één gebruiker met de gebruikersnaam gesynchroniseerd.
+>Gebruikersbeheer ondersteunt geen dubbele gebruikers-id&#39;s binnen een domein; slechts één gebruiker met de gebruikersnaam wordt gesynchroniseerd.
 
 ## Gebruikersbeheer configureren voor gebruik van de Virtual List View (VLV) {#configure-user-management-to-use-virtual-list-view-vlv}
 
@@ -229,10 +229,10 @@ Het protocol LDAP verstrekt een mechanisme om grote gegevensreeksen op een gepag
 >Deze sectie beschrijft het gebruiken van de controle VLV voor de Server van de Folder van Zon ONE. Nochtans, kunt u deze controle voor om het even welke folderserver gebruiken die controle VLV steunt.
 
 1. Wanneer het vormen van de folder, laat de uitgezochte Virtuele Controle van de Lijstmening (VLV) op zowel de pagina van de Montages van de Gebruiker als de pagina van de Montages van de Groep toe. Wanneer u het selectievakje inschakelt, moet u ook een sorteernaam opgeven in het vak Sorteerveld. De standaardwaarde is uid. (Zie [Mappen of aangepaste SPI&#39;s toevoegen](configuring-directories.md#adding-directories-or-custom-spis) of [Een map bewerken](configuring-directories.md#edit-a-directory).)
-1. Gebruik Sun ONE-beheerconsole of een opdrachtregelscript om de LDAP VLV-ingangen voor gebruikers en groepen te maken. Als u een opdrachtregelscript gebruikt, kunt u de voorbeeldgebruikers en groepen LDIF-bestanden gebruiken. (Zie [Het vormen van de Zon ONE Server van de Folder voor VLV](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
+1. Gebruik Sun ONE-beheerconsole of een opdrachtregelscript om de LDAP VLV-ingangen voor gebruikers en groepen te maken. Als u een opdrachtregelscript gebruikt, kunt u de voorbeeldgebruikers en groepen LDIF-bestanden gebruiken. (Zie [De Sun ONE Directory Server voor VLV configureren](configuring-directories.md#configuring-the-sun-one-directory-server-for-vlv).)
 1. Stop de server en creeer de vereiste index. (Zie [De index van directoryservers voor VLV maken](configuring-directories.md#create-the-directory-server-index-for-vlv).)
 
-### Het vormen van de Zon ONE Server van de Folder voor VLV {#configuring-the-sun-one-directory-server-for-vlv}
+### De Sun ONE Directory Server voor VLV configureren {#configuring-the-sun-one-directory-server-for-vlv}
 
 Het creëren van VLV vereist een paar ingangen die omvatten `vlvSearch` en `vlvIndex` objectklassen. Het vlvSearch-item bevat een zoekbasis en de `vlvFilter` -kenmerk, dat de objectklasse opgeeft die de kenmerken bevat die u wilt sorteren. De `vlvIndex` objectklasse bevat de `vlvSort` -kenmerk, dat een of meer kenmerken opgeeft die moeten worden gesorteerd en de volgorde waarin ze moeten worden gesorteerd. (A minteken (-) geeft de omgekeerde alfabetische volgorde aan.) Voor het gebruik van VLV met AEM formulieren zijn aparte vermeldingen voor gebruikers en groepen vereist.
 
@@ -263,9 +263,9 @@ Hier volgt een voorbeeldscript voor LDIF voor VLV-invoer voor gebruikers:
 
 1. Het voorbeeldscript heeft een LDAP-item met de naam `lcuser`. Dit item is bedoeld voor VLV-gerelateerde configuratie voor gebruikerssynchronisatie in AEM formulieren. Pas de volgende eigenschappen dienovereenkomstig aan:
 
-   **Invoernaam:** De naam van het item in dit voorbeeld is `lcuser`. Indien `lcuser` wordt gewijzigd, moet deze op alle gebieden van het voorbeeldscript worden gewijzigd.
+   **Invoernaam:** De invoernaam in dit voorbeeld is `lcuser`. Indien `lcuser` wordt gewijzigd, moet deze op alle gebieden van het voorbeeldscript worden gewijzigd.
 
-   **vlvBase:** De basis-DN die is opgegeven op de pagina Gebruikersinstellingen.
+   **vlvBase** De basis-DN die is opgegeven op de pagina Gebruikersinstellingen.
 
    **vlvFilter:** Het Zoekfilter dat is opgegeven op de pagina Gebruikersinstellingen.
 
@@ -275,7 +275,7 @@ Hier volgt een voorbeeldscript voor LDIF voor VLV-invoer voor gebruikers:
 
    >[!NOTE]
    >
-   >Als conventie wordt de naam van het vlvIndex-item ook ingesteld op `lcuser`, maar u kunt het een andere naam geven. Gebruik dezelfde naam in het vlvindex-gereedschap. (Zie [De index van directoryservers voor VLV maken ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
+   >De vlvIndex-itemnaam is ook ingesteld op `lcuser`, maar u kunt het een andere naam geven. Gebruik dezelfde naam in het vlvindex-gereedschap. (Zie [De index van directoryservers voor VLV maken ](configuring-directories.md#create-the-directory-server-index-for-vlv)*.)*
 
 1. Met de `ldapmodify` Een gereedschap dat bij Sun ONE Server wordt geleverd, maakt u een vergelijkbare vermelding voor groepen met gebruik van respectievelijk de Basis-DN van de groep, de Zoekfilter en het Sorteerveld:
 
@@ -307,7 +307,7 @@ Nadat u de directoryinstellingen hebt geconfigureerd en de LDAP VLV-items voor g
     [21/Nov/2007:16:47:29 +051800] - userRoot: Finished indexing.
    ```
 
-   Het vlvindex-gereedschap bevindt zich in de map met de directoryserverinstanties. Als de Zon ONE Server twee instanties heeft die server1 en server2 in werking stellen, wordt het vlvindex hulpmiddel gevestigd in *Sun ONE-servermap*\server1 directory. De waarde voor parameter `-T` is de waarde van de `cn` kenmerk van het vlvindex-item dat eerder in het voorbeeld LDIF is gemaakt. In dit geval is `lcuser`.
+   Het vlvindex-gereedschap bevindt zich in de map met de directoryserverinstanties. Als de Zon ONE Server twee instanties heeft die server1 en server2 in werking stellen, is het vlvindex hulpmiddel binnen *Sun ONE-servermap*\server1 directory. De waarde voor parameter `-T` is de waarde van de `cn` kenmerk van het vlvindex-item dat eerder in het voorbeeld LDIF is gemaakt. In dit geval is het `lcuser`.
 
 1. Als VLV ook voor groepen wordt toegelaten, creeer de overeenkomstige index voor de groepen. Verifieer of de indexen door het volgende bevel in werking te stellen worden gecreeerd:
 

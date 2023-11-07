@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Renditions,Developer Tools
 exl-id: 6c149d31-1e64-4d29-a32a-58bd69e9fa98
-source-git-commit: b2faf81983216bef9151548d90ae86f1c26a9f91
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '655'
 ht-degree: 0%
@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Het kan beelden in diverse formaten (meer dan 200) lezen en schrijven met inbegrip van PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF, en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
 
-Gebruik de [!DNL Adobe Experience Manager] media manager van de bevellijn aan procesbeelden door ImageMagick. Als u met verschillende bestandsindelingen werkt met ImageMagick, raadpleegt u [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](/help/assets/assets-file-format-best-practices.md). Voor meer informatie over alle ondersteunde bestandsindelingen raadpleegt u [Ondersteunde indelingen voor middelen](/help/assets/assets-formats.md).
+Gebruik de [!DNL Adobe Experience Manager] media manager van de bevellijn aan procesbeelden door ImageMagick. Als u met verschillende bestandsindelingen werkt met ImageMagick, raadpleegt u [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](/help/assets/assets-file-format-best-practices.md). Zie voor meer informatie over alle ondersteunde bestandsindelingen [Ondersteunde indelingen voor middelen](/help/assets/assets-formats.md).
 
-Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u van plan bent zeer grote bestanden te verwerken met ImageMagick, gebruikt u de standaardprocedure [!DNL Experience Manager] server. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
+Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u van plan bent zeer grote bestanden te verwerken met ImageMagick, moet u de standaardprocedure [!DNL Experience Manager] server. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
 
 >[!NOTE]
 >
->Als u [!DNL Experience Manager] op [!DNL Adobe Managed Services] (AMS) neemt u contact op met de klantenondersteuning van Adobe als u veel PSD- of PSB-bestanden met hoge resolutie wilt verwerken. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
+>Als u [!DNL Experience Manager] op [!DNL Adobe Managed Services] (AMS) kunt u contact opnemen met de klantenondersteuning van de Adobe als u veel PSD- of PSB-bestanden met hoge resolutie wilt verwerken. [!DNL Experience Manager] PSB-bestanden met een zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, worden mogelijk niet verwerkt.
 
 ## ImageMagick installeren {#installing-imagemagick}
 
@@ -48,7 +48,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
    `convert ./${filename} -flip ./${basename}.flipped.jpg`
 
-1. Selecteer **[!UICONTROL Delete Generated Rendition]** en **[!UICONTROL Generate Web Rendition]** vlaggen.
+1. Selecteer de **[!UICONTROL Delete Generated Rendition]** en **[!UICONTROL Generate Web Rendition]** vlaggen.
 
    ![select_flags](assets/select_flags.png)
 
@@ -56,11 +56,11 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Klikken **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. Klikken **[!UICONTROL OK]** om de wijzigingen op te slaan
 
    >[!NOTE]
    >
-   >De `convert` de opdracht kan niet worden uitgevoerd met bepaalde Windows-versies (bijvoorbeeld Windows SE), omdat er een conflict is met de native `convert` nut dat een deel van de installatie van Vensters is. In dit geval, vermeld de volledige weg voor het nut ImageMagick. Geef bijvoorbeeld
+   >De `convert` de opdracht kan niet worden uitgevoerd met bepaalde Windows-versies (bijvoorbeeld Windows SE), omdat er een conflict is met de native `convert` nut dat een deel van de installatie van Vensters is. In dit geval, vermeld de volledige weg voor het nut ImageMagick. Geef bijvoorbeeld op:
    >
    >
    >`"C:\Program Files\ImageMagick-6.8.9-Q16\convert.exe" -define jpeg:size=319x319 ./${filename} -thumbnail 319x319 cq5dam.thumbnail.319.319.png`
@@ -69,7 +69,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. In de **[!UICONTROL Web Enabled Image]** tabblad, het MIME-type toevoegen `image/jpeg` onder de **[!UICONTROL Skip List]**. Klikken **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. In de **[!UICONTROL Web Enabled Image]** tabblad, het MIME-type toevoegen `image/jpeg` onder de **[!UICONTROL Skip List]**. Klikken **[!UICONTROL OK]** om de wijzigingen op te slaan
 
    ![web_enabled](assets/web_enabled.png)
 
@@ -83,7 +83,7 @@ Er zijn meerdere beveiligingskwetsbaarheden verbonden aan het gebruik van ImageM
 
 Daarnaast zijn verschillende plug-ins voor beeldverwerking afhankelijk van de ImageMagick-bibliotheek, waaronder, maar niet uitsluitend, PHP&#39;s fantaick, Ruby&#39;s magick en paperclip en de imagemagick van nodejs.
 
-Als u ImageMagick of een beïnvloede bibliotheek gebruikt, adviseert Adobe dat u de bekende kwetsbaarheid verlicht door minstens één van de volgende taken (maar bij voorkeur allebei) uit te voeren:
+Als u ImageMagick of een beïnvloede bibliotheek gebruikt, adviseert de Adobe dat u de bekende kwetsbaarheid verlicht door minstens één van de volgende taken (maar bij voorkeur allebei) uit te voeren:
 
 1. Controleer of alle afbeeldingsbestanden beginnen met de verwachte [&quot;magic bytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) komt overeen met de afbeeldingsbestandstypen die u ondersteunt voordat u ze naar ImageMagick stuurt voor verwerking.
 1. Gebruik een beleidsdossier om de kwetsbare Codeurs onbruikbaar te maken ImageMagick. Het algemene beleid voor ImageMagick is te vinden op `/etc/ImageMagick`.

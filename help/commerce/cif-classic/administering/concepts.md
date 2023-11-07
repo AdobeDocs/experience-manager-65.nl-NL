@@ -3,9 +3,9 @@ title: Concepten
 description: Leer de algemene concepten van e-handel met Adobe Experience Manager.
 contentOwner: Guillaume Carlino
 exl-id: 290b2af6-257f-42f2-b809-1248227a4795
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4480'
+source-wordcount: '4481'
 ht-degree: 0%
 
 ---
@@ -574,7 +574,7 @@ Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de ca
 
 >[!NOTE]
 >
->[hybrispromoties](https://www.hybris.com/modules/promotion) en [hybrisvouchers](https://www.hybris.com/en/modules/voucher) alles te bestrijken wat van invloed is op het winkelwagentje en verband houdt met de prijsstelling . Promotie-specifieke marketinginhoud (zoals banners, enz.) maakt geen deel uit van de hybris promotie.
+>[hybrispromoties](https://www.hybris.com/modules/promotion) en [hybrisvouchers](https://www.hybris.com/en/modules/voucher) alles te bestrijken wat van invloed is op het winkelwagentje en verband houdt met de prijsstelling . Promotie-specifieke marketing inhoud (zoals banners, enzovoort.) maakt geen deel uit van de hybris promotie.
 
 ## Personalisatie {#personalization}
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: caa43d80-1f38-46fc-a8b9-9485c235c0ca
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1825'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Dankzij deze integratie kunnen AEM en Adobe Campaign Standard onafhankelijk word
 
 ## Integratiestappen {#integration-steps}
 
-De configuratie van de integratie tussen AEM en Adobe Campaign Standard vereist een aantal stappen in beide oplossingen.
+De configuratie van de integratie tussen AEM en Adobe Campaign Standard vereist verschillende stappen in beide oplossingen.
 
 1. [Vorm ](#aemserver-user)
 1. [Controleer de ](#resource-type-filter)
@@ -42,7 +42,7 @@ Dit document leidt u door elk van deze stappen in detail.
 ## Vereisten {#prerequisites}
 
 * Toegang tot Adobe Campaign Standard voor beheerders
-   * Raadpleeg voor meer informatie over het instellen en configureren van Adobe Campaign Standard de [Adobe Campaign Standard-documentatie.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
+   * Als u meer informatie nodig hebt over het instellen en configureren van Adobe Campaign Standard, raadpleegt u de [Adobe Campaign Standard-documentatie.](https://experienceleague.adobe.com/docs/campaign-standard/using/campaign-standard-home.html)
 * Toegang tot AEM beheerder
 
 ## De beheerder van de server configureren in Campagne {#aemserver-user}
@@ -63,7 +63,7 @@ Adobe Campaign Standard wordt standaard geleverd met een `aemserver` gebruiker d
 
 Uw `aemserver` -gebruiker beschikt nu over de benodigde rechten, zodat AEM deze kan gebruiken om te communiceren met Adobe Campaign.
 
-Voordat AEM echter de opdracht `aemserver` -gebruiker, moet het wachtwoord zijn ingesteld. Dat kan niet via Adobe Campaign. Het moet worden uitgevoerd door een Adobe-ondersteunend ingenieur. [Vraag een ticket aan bij de klantenservice van de Adobe](https://experienceleague.adobe.com/?support-tab=home#support) om het opnieuw instellen van de `aemserver` wachtwoord. Bewaar het wachtwoord van de klantenservice van de Adobe op een veilige locatie.
+Voordat AEM echter de opdracht `aemserver` -gebruiker, moet het wachtwoord zijn ingesteld. Dat kan niet via Adobe Campaign. Het moet worden uitgevoerd door een Adobe-ondersteunend ingenieur. [Een ticket indienen bij de klantenservice van de Adobe](https://experienceleague.adobe.com/?support-tab=home#support) om het opnieuw instellen van de `aemserver` wachtwoord. Als u het wachtwoord van de klantenservice van de Adobe hebt, bewaart u het op een veilige locatie.
 
 ## Verifieer AEMResourceTypeFilter in Campagne {#resource-type-filter}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Upgrading
 exl-id: 797bbdf9-917a-4537-a5f9-bf2682db968b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1683'
+source-wordcount: '1681'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ naar een nieuwe locatie onder:
 
 Daarom moeten de formulieren na een upgrade handmatig worden aangepast om te kunnen blijven werken.
 
-Dit geldt zowel voor nieuwe Zoeken in Forms als voor standaard Forms die is aangepast.
+Dit geldt voor de nieuwe Search Forms en standaard Forms die zijn aangepast.
 
 Zie de documentatie over [Zoeken in gezichten](/help/assets/search-facets.md).
 

@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: fbcdea8a-72e9-431b-9c32-dc02d4cdb9c8
 exl-id: d989e235-5993-4738-8523-5b9a5f6bf712
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '486'
 ht-degree: 1%
 
 ---
@@ -25,7 +25,7 @@ ht-degree: 1%
 
 AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met PhoneGap kan de gebruiker hulpprogramma-apps maken waarmee gebruikers met de inhoud kunnen werken. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps.
 
-Doorgaans een ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een nieuwe toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren.
+Doorgaans een ***AEM*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een toepassing te maken met de wizard Maken of door een bestaande toepassing te importeren.
 
 Van hier en ***AEM auteur*** (of *Marketer*) kan nu de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
 

@@ -2,9 +2,9 @@
 title: AEM Schrijverreis zonder kopinhoud
 description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om inhoud voor uw project te ontwerpen.
 exl-id: b8cdbd0f-c034-4c9f-976f-5e39b1bd33bf
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '865'
+source-wordcount: '861'
 ht-degree: 1%
 
 ---
@@ -43,7 +43,7 @@ Deze reis is ontworpen voor de persoon van de Inhoudsauteur. Als Inhoudsauteur m
 
 De reis bepaalt de vereisten, de stappen, en de benadering voor creatie inhoud voor een AEM Zwaardeloos project. De reis zal extra karakters bepalen waarmee de auteur voor een succesvol project moet in wisselwerking staan, maar het punt van mening voor de reis is die van de inhoudauteur.
 
-Informatie op deze reis kan natuurlijk nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
+Informatie op deze reis kan nuttig zijn voor andere personen, maar sommige informatie zal overbodig zijn voor bepaalde rollen. Blijf op de hoogte voor komende reizen die extra rollen omvatten.
 
 ## De Headless Content Author Reis {#the-journey}
 
@@ -66,7 +66,7 @@ U bent nu klaar om aan de slag te gaan met uw Adobe Headless reis. We raden u aa
 <!--
 ### Choose Your Own Adventure {#choose-your-path}
 
-However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So please consider these two options.
+However, Adobe wants you to succeed as you get started with your AEM Headless project, regardless of your learning style. So consider these two options.
 
 * If you prefer to continue to **learn about headless concepts and AEM's headless technologies**, you should continue your AEM headless journey as recommended by next reviewing the document [How to Model Your Content as AEM Content Models](model-your-content.md) where you learn how to model your content structure in AEM.
 * If you prefer to **learn by doing**, you can jump to the [Getting Started with AEM Headless hands-on tutorial](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-with-aem-headless/graphql/multi-step/overview.html) where you will jump directly into AEM Headless development by implementing a simple project to expose AEM headless content.
@@ -76,7 +76,7 @@ However, Adobe wants you to succeed as you get started with your AEM Headless pr
 
 Documentatiereizen tonen u hoe AEM een bedrijfsprobleem oplost door een verhaal te verstrekken dat u door complexe, onderling samenhangende processen en eigenschappen begeleidt. Een reis illustreert hoe de veelvoudige eigenschappen samenwerken om één enkele bedrijfsbehoefte te dienen.
 
-Als zodanig zijn de trajecten bedoeld om zelfstandig te staan. Een aantal ervan kan echter met elkaar verwant zijn. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
+Als zodanig zijn reizen zodanig ontworpen dat ze op zichzelf staan. Verschillende kunnen echter aan elkaar zijn gerelateerd. Bekijk deze extra reizen voor meer informatie over hoe AEM krachtige functies samenwerken.
 
 * [AEM doorsnedenloze vertaalreis](/help/journey-headless/translation/overview.md) - Deze documentatietraject geeft u een ruim inzicht in technologie zonder kop, hoe AEM inhoud zonder kop dient en hoe u deze kunt vertalen.
 * [AEM Headless Developer Journey](/help/journey-headless/developer/overview.md) - Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw eerste ontwikkelingsproject te gebruiken.

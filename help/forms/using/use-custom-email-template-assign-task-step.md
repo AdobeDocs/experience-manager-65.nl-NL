@@ -8,9 +8,9 @@ topic-tags: publish
 discoiquuid: 2ad4b7b5-2162-4599-af3f-9476f1256de6
 docset: aem65
 exl-id: d4035c91-ee8d-4f12-bdac-e3912be732d7
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '523'
+source-wordcount: '521'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of 
 
 ![E-mailmelding met een e-mailadres uit de vaksjabloon](do-not-localize/default_email_template_new.png)
 
-U kunt de weergave aanpassen en aangepaste metagegevens in een e-mailmelding gebruiken. AEM Forms geeft een sjabloon buiten het vak voor e-mailberichten op. U kunt de sjabloon buiten het vak aanpassen of een nieuwe sjabloon maken.
+U kunt de weergave aanpassen en aangepaste metagegevens in een e-mailmelding gebruiken. AEM Forms geeft een sjabloon buiten het vak voor e-mailberichten op. U kunt de sjabloon buiten het vak aanpassen of een geheel nieuwe sjabloon maken.
 
 Sjablonen voor e-mailmeldingen zijn gebaseerd op [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). Deze e-mailberichten worden aangepast aan verschillende e-mailclients en schermgrootten. Bovendien wordt de opmaak van de e-mail gedefinieerd in de sjabloon.
 
@@ -57,7 +57,7 @@ AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een
 
 1. Voeg aangepaste HTML-code toe aan het bestand.
 
-   Een sjabloon voor e-mailmeldingen is een [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). U kunt aangepaste HTML-code aan het bestand toevoegen om een nieuwe sjabloon te maken.
+   Een sjabloon voor e-mailmeldingen is een [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). U kunt aangepaste HTML-code aan het bestand toevoegen om een sjabloon te maken.
 
 1. Sla het bestand op. Het malplaatje is klaar voor gebruik in de stap van de Taak toewijzen.
 

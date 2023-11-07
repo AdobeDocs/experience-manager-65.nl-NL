@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1248'
+source-wordcount: '1246'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te pu
 
 ### Het tabblad Plug-ins {#the-plugins-tab}
 
-De **Plug-ins** bevat een beschrijving van de plug-ins die aan uw app zijn gekoppeld. Deze informatie wordt gebruikt om de juiste insteekmodule op te halen tijdens een build.
+De **Plug-ins** bevat een beschrijving van de plug-ins die aan uw app zijn gekoppeld. Deze informatie wordt gebruikt om de aangewezen stop in tijdens een bouwstijl terug te winnen.
 
 ![chlimage_1-122](assets/chlimage_1-122.png)
 

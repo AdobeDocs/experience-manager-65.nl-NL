@@ -4,9 +4,9 @@ description: Leer hoe u de middelenconsole kunt gebruiken om uw AEM inhoudsfragm
 feature: Content Fragments
 role: User
 exl-id: 25c91a85-06ff-4666-a809-46778a689e25
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1724'
+source-wordcount: '1714'
 ht-degree: 6%
 
 ---
@@ -180,13 +180,13 @@ Sommige functies in de bovenste werkbalk zijn beschikbaar in meerdere modi:
 
 ![modi](assets/cfm-managing-top-toolbar.png)
 
-* Er wordt een bericht weergegeven wanneer al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
+* Er wordt een bericht weergegeven wanneer er al naar het fragment wordt verwezen op een inhoudspagina. U kunt **Sluiten** het bericht.
 
 * Het zijpaneel kan worden verborgen of weergegeven met de opdracht **Zijpaneel in-/uitschakelen** pictogram.
 
 * Onder de fragmentnaam ziet u de naam van de component [Inhoudsfragmentmodel](/help/assets/content-fragments/content-fragments-models.md) gebruikt voor het maken van het huidige fragment:
 
-   * De naam is ook een verbinding die de modelredacteur zal openen.
+   * De naam is ook een verbinding die de modelredacteur opent.
 
 * Zie de status van het fragment, bijvoorbeeld informatie over wanneer het is gemaakt, gewijzigd of gepubliceerd.
 
@@ -319,13 +319,13 @@ Bijvoorbeeld:
 
 De **Vergelijken met huidige** actie is beschikbaar via de [Tijdlijn](/help/assets/content-fragments/content-fragments-managing.md#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
 
-Hiermee wordt het volgende geopend:
+Dit wordt geopend:
 
 * de **Huidig** (meest recente) versie (links)
 
 * de geselecteerde versie **v&lt;*x.y*>** (rechts)
 
-Zij worden naast elkaar weergegeven, waarbij:
+Zij worden naast elkaar getoond, waarbij:
 
 * Eventuele verschillen worden gemarkeerd
 

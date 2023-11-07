@@ -3,9 +3,9 @@ title: Een Uitnodigingshandler voor externe gebruikers maken
 description: Leer hoe u een Invite External Users Handler maakt. Het laat de dienst van het Rights Management toe om externe gebruikers uit te nodigen om Rights Management gebruikers te worden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1091'
+source-wordcount: '1090'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Als u een Invite External Users Handler wilt ontwikkelen, moet u de volgende sta
 
 ## De ontwikkelomgeving instellen {#setting-up-development-environment}
 
-Als u uw ontwikkelomgeving wilt instellen, moet u een nieuw Java-project maken, zoals een Eclipse-project. De ondersteunde versie van Eclipse wordt `3.2.1` of hoger.
+Als u uw ontwikkelomgeving wilt instellen, moet u een Java-project maken, zoals een Eclipse-project. De ondersteunde versie van Eclipse wordt `3.2.1` of hoger.
 
 De SPI van het Rights Management vereist `edc-server-spi.jar` bestand dat moet worden ingesteld in het klassepad van uw project. Als u niet naar dit JAR-bestand verwijst, kunt u de Rights Management-SPI niet gebruiken in uw Java-project. Dit JAR-bestand is geïnstalleerd met de AEM Forms SDK in het dialoogvenster `[install directory]\Adobe\Adobe_Experience_Manager_forms\sdk\spi` map.
 

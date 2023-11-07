@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 role: Developer
 exl-id: 744df8b2-0c61-410f-89e9-20b8adddbf45
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1325'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ De Distiller® service zet PostScript®-, Encapsulated PostScript- (EPS) en PRN-
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Distiller-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Distiller-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PostScript converteren naar PDF-documenten {#converting-postscript-to-pdf-documents-inner}
 
@@ -36,11 +36,11 @@ In dit onderwerp wordt beschreven hoe u de Distiller Service API (Java en webser
 
 >[!NOTE]
 >
->Ga voor meer informatie over de Distiller-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de Distiller-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
->Als u PostScript-bestanden wilt converteren naar PDF-documenten, moet u een van de volgende opties installeren op de server die als host fungeert voor AEM Forms: Acrobat 9 of Microsoft Visual C++ 2005 herdistribueerbaar pakket.
+>Als u PostScript-bestanden wilt converteren naar PDF-documenten, moet u een van de volgende elementen installeren op de server die als host fungeert voor AEM Forms: Acrobat 9 of Microsoft Visual C++ 2005 redistributable-pakket.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -48,7 +48,7 @@ Voer de volgende stappen uit als u een van de ondersteunde typen wilt convertere
 
 1. Inclusief projectbestanden.
 1. Maak een Distiller-serviceclient.
-1. Haal het te converteren bestand op.
+1. Haal het bestand op dat u wilt converteren.
 1. Roep de bewerking PDF maken aan.
 1. Sla het PDF-document op.
 
@@ -62,7 +62,7 @@ Voordat u een Distiller-servicebewerking programmatisch kunt uitvoeren, moet u e
 
 **Het te converteren bestand ophalen**
 
-U moet het bestand ophalen dat u wilt converteren. Als u bijvoorbeeld een PS-bestand wilt converteren naar een PDF-document, moet u het PS-bestand ophalen.
+Haal het bestand op dat u wilt converteren. Als u bijvoorbeeld een PS-bestand wilt converteren naar een PDF-document, moet u het PS-bestand ophalen.
 
 **De bewerking PDF maken aanroepen**
 
@@ -95,12 +95,12 @@ Een PostScript-bestand converteren naar een PDF-document met de Distiller Servic
 1. Maak een Distiller-serviceclient.
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `DistillerServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `DistillerServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
-1. Haal het te converteren bestand op.
+1. Haal het bestand op dat u wilt converteren.
 
    * Een `java.io.FileInputStream` object dat het bestand vertegenwoordigt dat moet worden omgezet met de constructor ervan en dat een tekenreekswaarde doorgeeft die de locatie van het bestand aangeeft.
-   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en door te geven `java.io.FileInputStream` object.
+   * Een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en de `java.io.FileInputStream` object.
 
 1. Roep de bewerking PDF maken aan.
 
@@ -109,7 +109,7 @@ Een PostScript-bestand converteren naar een PDF-document met de Distiller Servic
    * De `com.adobe.idp.Document` object dat staat voor het te converteren PS-, EPS- of PRN-bestand
    * A `java.lang.String` object dat de naam bevat van het bestand dat moet worden omgezet
    * A `java.lang.String` object dat de naam bevat van de Adobe PDF-instellingen die moeten worden gebruikt
-   * A `java.lang.String` object dat de naam bevat van de beveiligingsinstellingen die moeten worden gebruikt
+   * A `java.lang.String` object dat de naam bevat van de te gebruiken beveiligingsinstellingen
    * Een optioneel `com.adobe.idp.Document` object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document
    * Een optioneel `com.adobe.idp.Document` object dat metagegevens bevat die moeten worden toegepast op het PDF-document
 
@@ -127,12 +127,11 @@ Een PostScript-bestand converteren naar een PDF-document met de Distiller Servic
    * De `CreatePDFResult` object `getLogDocument` methode. Dit retourneert een `com.adobe.idp.Document` object.
    * De `com.adobe.idp.Document` object `copyToFile` methode om het logdocument te extraheren.
 
-
 **Zie ook**
 
 [Overzicht van de stappen](converting-postscript-pdf-documents.md#summary-of-steps)
 
-[Snel starten (SOAP-modus): Een PostScript-bestand converteren naar een PDF-document met de Java API](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PostScript-bestand converteren naar een PDF-document met de Java API](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -153,7 +152,7 @@ Een PostScript-bestand converteren naar een PDF-document met de Distiller Servic
 1. Maak een Distiller-serviceclient.
 
    * Een `DistillerServiceClient` object met de standaardconstructor.
-   * Een `DistillerServiceClient.Endpoint.Address` object gebruiken `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DistillerService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` om MTOM te gebruiken.
+   * Een `DistillerServiceClient.Endpoint.Address` object door het `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DistillerService?blob=mtom`.) U hoeft de `lc_version` kenmerk. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Geef echter `?blob=mtom` MTOM gebruiken.
    * Een `System.ServiceModel.BasicHttpBinding` object door de waarde van het object op te halen `DistillerServiceClient.Endpoint.Binding` veld. De geretourneerde waarde omzetten in `BasicHttpBinding`.
    * Stel de `System.ServiceModel.BasicHttpBinding` object `MessageEncoding` veld naar `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -163,7 +162,7 @@ Een PostScript-bestand converteren naar een PDF-document met de Distiller Servic
       * De constante waarde toewijzen `HttpClientCredentialType.Basic` naar het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * De constante waarde toewijzen `BasicHttpSecurityMode.TransportCredentialOnly` naar het veld `BasicHttpBindingSecurity.Security.Mode`.
 
-1. Haal het te converteren bestand op.
+1. Haal het bestand op dat u wilt converteren.
 
    * Een `BLOB` object met behulp van de constructor. Dit `BLOB` wordt gebruikt om het bestand op te slaan dat naar een PDF-document moet worden geconverteerd.
    * Een `System.IO.FileStream` -object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie en de modus vertegenwoordigt waarin het bestand moet worden geopend.
@@ -178,7 +177,7 @@ Een PostScript-bestand converteren naar een PDF-document met de Distiller Servic
    * De `BLOB` object dat staat voor het PS-bestand dat moet worden omgezet
    * Een tekenreeks die de padnaam bevat van het bestand dat moet worden omgezet
    * Een tekenreeksobject dat de Adobe PDF-instellingen bevat die moeten worden gebruikt (bijvoorbeeld `Standard`)
-   * Een tekenreeksobject dat de beveiligingsinstellingen bevat die moeten worden gebruikt (bijvoorbeeld `No Securit`y)
+   * Een tekenreeksobject dat de te gebruiken beveiligingsinstellingen bevat (bijvoorbeeld `No Securit`y)
    * Een optioneel `BLOB` object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document
    * Een optioneel `BLOB` object dat metagegevens bevat die moeten worden toegepast op het PDF-document
    * A `BLOB` uitvoerparameter die wordt gebruikt om het PDF-document op te slaan

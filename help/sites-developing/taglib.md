@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: 50e608d5-951f-4a3f-bed4-9e92ff5d7bd4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2462'
+source-wordcount: '2460'
 ht-degree: 0%
 
 ---
@@ -117,7 +117,7 @@ Het heeft de volgende optionele kenmerken:
 
 **tagName** - Naam van het element dat een niet-lege uitvoer omsluit. De standaardwaarde is DIV.
 
-**plaatsaanduiding** - Standaardwaarde die moet worden gebruikt voor lege of null-tekst in de bewerkingsmodus, dat wil zeggen de tijdelijke aanduiding. De standaardcontrole wordt uitgevoerd na de optionele opmaak en escape, dat wil zeggen dat deze ongewijzigd naar de uitvoer wordt geschreven. De standaardwaarde is:
+**plaatsaanduiding** - Standaardwaarde die moet worden gebruikt voor lege of null-tekst in de bewerkingsmodus, dat wil zeggen de tijdelijke aanduiding. De standaardcontrole wordt uitgevoerd na de optionele opmaak en escape, d.w.z. dat deze ongewijzigd naar de uitvoer wordt geschreven. De standaardwaarde is:
 
 `<div><span class="cq-text-placeholder">&para;</span></div>`
 

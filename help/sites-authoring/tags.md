@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 9fb6d603-eb17-4192-bfa6-6c316f14ac7d
 docset: aem65
 exl-id: 49f95b31-92cd-4124-8c0f-c9802099fd0b
-source-git-commit: 8dafa901bc628ee5e4823e9f8811bf4d09b7e072
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '569'
+source-wordcount: '563'
 ht-degree: 3%
 
 ---
@@ -21,8 +21,8 @@ ht-degree: 3%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
-* Zie [Tags voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het etiketteringskader evenals het opnemen van en het uitbreiden van markeringen in douanetoepassingen.
+* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en waarop inhoudstags zijn toegepast.
+* Zie [Tags voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het etiketteringskader en het opnemen van en het uitbreiden van markeringen in douanetoepassingen.
 
 ## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
 
@@ -30,7 +30,7 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 1. **Tags ordenen** - Terwijl tags inhoud ordenen, ordenen hiërarchische taxonomieën/naamruimten tags.
 1. **Georganiseerde tags toepassen** - Met de mogelijkheid om codes en subcodes te maken, wordt het mogelijk volledige taxonomische systemen uit te drukken, met inbegrip van termen, subtermen en hun relaties. Zo kunt u een tweede (of derde) inhoudshiërarchie maken die parallel is aan de officiële inhoudshiërarchie.
 1. **Gecontroleerde labeling** - Tags kunnen worden ingesteld door machtigingen toe te passen op tags en/of naamruimten om het maken en de toepassing van tags te beheren.
-1. **Flexibele tags** - Tags hebben vele namen en gezichten: tags, taxonomie termen, categorieën, labels en nog veel meer. Zij zijn flexibel in hun inhoudsmodel en in de manier waarop zij kunnen worden gebruikt; bijvoorbeeld bij het schetsen van doeldemografie, het categoriseren en classificeren van inhoud of het creëren van een secundaire inhoudshiërarchie.
+1. **Flexibele tags** - Tags hebben vele namen en gezichten: tags, taxonomie termen, categorieën, labels en nog veel meer. Ze zijn flexibel in hun inhoudsmodel en in de manier waarop ze kunnen worden gebruikt, bijvoorbeeld bij het beschrijven van doeldemografie, het categoriseren en classificeren van inhoud of het creëren van een secundaire inhoudshiërarchie.
 1. **Verbeterd zoeken** - De standaardzoekcomponent in AEM bevat over het algemeen gemaakte tags en toegepaste tags waarop filters kunnen worden toegepast om de resultaten te beperken tot de relevante waarden.
 1. **SEO inschakelen** - Labels die als pagina-eigenschappen zijn toegepast, worden automatisch weergegeven in de tags van de pagina, zodat deze zichtbaar zijn voor zoekmachines.
 1. **Eenvoudig, geavanceerd** - Tags kunnen eenvoudig worden gemaakt op basis van een woord en de druk op een knop. Daarna kunt u een titel, beschrijving en een onbeperkt label toevoegen om meer semantiek aan de tag toe te voegen.
@@ -43,9 +43,9 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In de auteursomgeving kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in te gaan in **Tags/trefwoorden** veld.
 
-Toepassen [vooraf gedefinieerde tags](/help/sites-administering/tags.md)in de **Pagina-eigenschappen** het venster gebruiken **Tags** en **Labels selecteren** venster. Het tabblad **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` als voorvoegsel is voor de taxonomie.
+Toepassen [vooraf gedefinieerde tags](/help/sites-administering/tags.md)in de **Pagina-eigenschappen** het venster gebruiken **Tags** en de **Labels selecteren** venster. Het tabblad **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` als voorvoegsel is voor de taxonomie.
 
-![Selecteer het venster Codes. gebruik X knoop om de momenteel geselecteerde markeringen te schrappen](assets/chlimage_1-41.png)
+![Selecteer het venster van Markeringen; gebruik de knoop van X om de momenteel geselecteerde markeringen te schrappen](assets/chlimage_1-41.png)
 
 ### Codes publiceren {#publishing-tags}
 

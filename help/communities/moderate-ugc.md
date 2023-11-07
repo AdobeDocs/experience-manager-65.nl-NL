@@ -8,7 +8,7 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: 22276580-e6bc-41c5-9ac3-e8f291f676b7
-source-git-commit: 00b6f2f03470aca7f87717818d0dfcd17ac16bed
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1510'
 ht-degree: 0%
@@ -209,7 +209,7 @@ Spam-detectie is een automatische moderatiefunctionaliteit die ongewenste stukke
 
 Nochtans, om de standaardspamwoorden aan te passen of uit te breiden, creeer een reeks woorden in de /apps folder die de structuur van de standaardspamwoorden met volgt [bedekking](/help/communities/overlay-comments.md).
 
-Een door gebruikers gegenereerde post (in alle inhoudstypen, zoals blogs, forums en opmerkingen) met spamwoorden wordt boven de post gemarkeerd met de tekst &quot;Dit bericht is geclassificeerd als spam&quot;.
+Een door de gebruiker gegenereerde post (in alle inhoudstypen, zoals blogs, forums en opmerkingen) met spamwoorden wordt boven de post gemarkeerd met de tekst &quot;Dit bericht is geclassificeerd als spam&quot;.
 
 De moderator kan zulk een bericht zien en het zelfde merken om toe te staan of te ontkennen om op de plaats te verschijnen. De acties van de modernisering op deze posten kunnen of in-context of door bulkmoderatie UI worden uitgevoerd.
 

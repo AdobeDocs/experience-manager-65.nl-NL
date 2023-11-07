@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 role: Developer
 exl-id: e861d848-b0b7-4ae9-a56d-c0957ec95730
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '458'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,13 @@ ht-degree: 0%
 
 De volgende Snelle Beginnen zijn beschikbaar voor de dienst van Hulpprogramma&#39;s van de PDF.
 
-[Snel starten (SOAP-modus): Een PDF-document converteren naar een XDP-document met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document converteren naar een XDP-document met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een XDP-document converteren naar een PDF-document met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een XDP-document converteren naar een PDF-document met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Eigenschappen van PDF-documenten ophalen met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api)
+[Snel starten (SOAP-modus): eigenschappen van PDF-documenten ophalen met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api)
 
-[Snel starten (SOAP-modus): Opslagstijl voor een PDF-document instellen met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): de opslagstijl voor een PDF-document instellen met de Java API](pdf-utilities-service-java-api.md#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api)
 
 [Snel starten (SOAP-modus): PDF-documenten ontsmetten](pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
@@ -36,9 +36,9 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 >[!NOTE]
 >
->Quick Start-programma&#39;s in Programming met AEM formulieren zijn gebaseerd op het besturingssysteem Forms Server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM forms are based on the Forms Server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Een PDF-document converteren naar een XDP-document met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document converteren naar een XDP-document met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-an-xdp-document-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-document. (Zie [PDF-documenten converteren naar XDP-documenten](/help/forms/developing/pdf-utilities.md#converting-pdf-documents-into-xdp-documents).
 
@@ -69,7 +69,7 @@ In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -78,7 +78,7 @@ In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -139,7 +139,7 @@ In het volgende codevoorbeeld wordt een PDF-document geconverteerd naar een XDP-
  
 ```
 
-## Snel starten (SOAP-modus): Een XDP-document converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een XDP-document converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-an-xdp-document-to-a-pdf-document-using-the-java-api}
 
 In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-document. (Zie [XDP-documenten converteren naar PDF-documenten](/help/forms/developing/pdf-utilities.md#converting-xdp-documents-into-pdf-documents).)
 
@@ -170,7 +170,7 @@ In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -179,7 +179,7 @@ In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -239,7 +239,7 @@ In het volgende codevoorbeeld wordt een XDP-document geconverteerd naar een PDF-
  
 ```
 
-## Snel starten (SOAP-modus): Eigenschappen van PDF-documenten ophalen met de Java API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
+## Snel starten (SOAP-modus): eigenschappen van PDF-documenten ophalen met de Java API {#quick-start-soap-mode-retrieving-pdf-document-properties-using-the-java-api}
 
 In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is en, zo ja, de oudste Acrobat-versie die het kan lezen. (Zie [Eigenschappen van PDF-document ophalen](/help/forms/developing/pdf-utilities.md#retrieving-pdf-document-properties).)
 
@@ -270,7 +270,7 @@ In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is 
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -279,7 +279,7 @@ In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is 
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -327,7 +327,7 @@ In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is 
              PDFPropertiesOptionSpec optionsSpec = new PDFPropertiesOptionSpec();
  
              // Set the properties to be evaluated in the options specification.
-             // In this example, the options specification will be used to determine
+             // In this example, the options specification is used to determine
              // if the document is a PDF document, and if so,
              // which Acrobat version is required to read it.
              optionsSpec.setIsPDFDocument(true);
@@ -356,7 +356,7 @@ In het volgende codevoorbeeld wordt bepaald of het document een PDF-document is 
  
 ```
 
-## Snel starten (SOAP-modus): Opslagstijl voor een PDF-document instellen met de Java API {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): de opslagstijl voor een PDF-document instellen met de Java API {#quick-start-soap-mode-setting-the-save-style-for-a-pdf-document-using-the-java-api}
 
 In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave ingesteld en wordt het PDF-document vervolgens doorgegeven aan de coderingsservice waar het is versleuteld. Het gecodeerde PDF-document dat wordt opgeslagen voor snelle webweergave, wordt opgeslagen als een PDF-bestand met de naam* FastWebViewLoan.pdf*. (Zie [Modi voor het opslaan van PDF-documenten instellen](/help/forms/developing/pdf-utilities.md#setting-pdf-document-save-modes).)
 
@@ -387,7 +387,7 @@ In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave inges
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
      *
@@ -396,7 +396,7 @@ In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave inges
      * If you want to invoke a remote forms server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
-     * you have to include additional JAR files located in the following
+     * you have to include additional JAR files in the following
      * path
      * <install directory>/sdk/client-libs/thirdparty
      *
@@ -496,7 +496,7 @@ In het volgende codevoorbeeld wordt de opslagmodus voor snelle webweergave inges
  
 ```
 
-## Snel starten (SOAP-modus): Een document converteren naar een PDF/A-2b-document met de Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
+## Snel starten (SOAP-modus): een document converteren naar een PDF/A-2b-document met de Java API {#quick-start-soap-mode-converting-a-document-to-a-pdf-a-2b-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pdf* naar een PDF/A-2b-document dat is opgeslagen als een PDF-bestand met de naam *LoanArchive.pdf*. (Zie [Documenten converteren naar PDF/A-documenten](/help/forms/developing/pdf-a-documents.md#converting-documents-to-pdf-a-documents).)
 
@@ -508,7 +508,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pd
  * 2. adobe-livecycle-client.jar
  * 3. adobe-usermanager-client.jar
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
@@ -518,7 +518,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pd
  * If you want to invoke a remote AEM Forms instance and there is a
  * firewall between the client application and AEM Forms, then it is
  * recommended that you use the SOAP mode. When using the SOAP mode,
- * you have to include additional JAR files located in the following
+ * you have to include additional JAR files in the following
  * path
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *
@@ -596,7 +596,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pd
  * 2. adobe-livecycle-client.jar
  * 3. adobe-usermanager-client.jar
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/common
  *
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/jboss
@@ -606,7 +606,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Lening.pd
  * If you want to invoke a remote AEM Forms instance and there is a
  * firewall between the client application and AEM Forms, then it is
  * recommended that you use the SOAP mode. When using the SOAP mode,
- * you have to include additional JAR files located in the following
+ * you have to include additional JAR files in the following
  * path
  * <install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs/thirdparty
  *

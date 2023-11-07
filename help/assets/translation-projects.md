@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1736'
+source-wordcount: '1732'
 ht-degree: 9%
 
 ---
@@ -30,7 +30,7 @@ Als u een taalkopie wilt maken, activeert u een van de volgende workflows voor h
 Met de workflow Maken en vertalen kunt u voor het eerst voor een bepaalde taal een kopie van de taal genereren. De workflow bevat de volgende opties:
 
 * Alleen structuur maken.
-* Maak een nieuw vertaalproject.
+* Maak een vertaalproject.
 * Toevoegen aan bestaand vertaalproject.
 
 ### Alleen structuur maken {#create-structure-only}
@@ -55,7 +55,7 @@ Gebruik de **[!UICONTROL Create structure only]** om een doelmaphiërarchie binn
 
    ![onthullend-in-activa](assets/reveal-in-assets.png)
 
-### Een nieuw vertaalproject maken {#create-a-new-translation-project}
+### Een vertaalproject maken {#create-a-new-translation-project}
 
 Als u deze optie gebruikt, worden de te vertalen middelen gekopieerd aan de taalwortel van de taal waaraan u wilt vertalen. Afhankelijk van de opties u kiest, wordt een vertaalproject gecreeerd voor de activa in de console van Projecten. Afhankelijk van de instellingen kan het vertaalproject handmatig worden gestart of automatisch worden uitgevoerd zodra het vertaalproject is gemaakt.
 
@@ -164,10 +164,10 @@ Als u deze optie gebruikt, wordt de vertaalworkflow uitgevoerd voor elementen di
 
 Voer deze workflow uit om extra elementen te vertalen en deze op te nemen in een taalkopie voor een bepaalde landinstelling. In dit geval worden de vertaalde elementen toegevoegd aan de doelmap die al eerder vertaalde elementen bevat. Afhankelijk van de keuze van opties wordt een vertaalproject gemaakt of wordt een bestaand vertaalproject bijgewerkt voor de nieuwe elementen. De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties:
 
-* Een nieuw vertaalproject maken
+* Een vertaalproject maken
 * Toevoegen aan bestaand vertaalproject
 
-### Een nieuw vertaalproject maken {#create-a-new-translation-project-1}
+### Een vertaalproject maken {#create-a-new-translation-project-1}
 
 Als u deze optie gebruikt, wordt een vertaalproject gecreeerd voor de reeks activa waarvoor u een taalexemplaar wilt bijwerken.
 

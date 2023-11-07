@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 22d9b22a0fc0bc5f753f2e11ca66e2627e1a8405
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7181'
+source-wordcount: '7177'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ U kunt op de volgende twee manieren een controlemap maken:
 
 * Creeer een omslag op het dossiersysteem alvorens een gecontroleerd omslageindpunt te vormen, en typ dan de volledige weg in de doos van de Weg.
 
-In een gegroepeerde omgeving, moet de omslag die als gecontroleerde omslag zal worden gebruikt toegankelijk zijn, schrijfbaar, en op het dossiersysteem of netwerk worden gedeeld. In dit scenario moet elke instantie van de toepassingsserver van de cluster toegang hebben tot dezelfde gedeelde map.
+In een gegroepeerde omgeving, moet de omslag die als gecontroleerde omslag wordt gebruikt toegankelijk zijn, schrijfbaar, en op het dossiersysteem of netwerk worden gedeeld. In dit scenario moet elke instantie van de toepassingsserver van de cluster toegang hebben tot dezelfde gedeelde map.
 
 Als de toepassingsserver in Windows als service wordt uitgevoerd, moet deze zijn gestart met de juiste toegang tot de gedeelde map op een van de volgende manieren:
 
@@ -386,7 +386,7 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
    * Voor `java.lang.String`: De beheerder heeft twee opties. Eerst kan de beheerder het toewijzingstype opgeven als `Literal` en voer een toewijzingswaarde in als een tekenreeks, zoals `hello.` Gecontroleerde map roept de service aan met de tekenreeks `hello`. Ten tweede kan de beheerder het toewijzingstype opgeven als een `Variable` en voer een toewijzingswaarde in met een patroon als `*.txt`. In het laatste geval worden bestanden met de extensie .txt gelezen als een document dat als een tekenreeks wordt gecomprimeerd om de service aan te roepen.
    * Primitief Java-type: de beheerder kan het toewijzingstype opgeven als `Literal` en geef de waarde op. Gecontroleerde map activeert de service met de opgegeven waarde.
 
-* Controlemap is bedoeld voor gebruik met documenten. De ondersteunde uitvoer is `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`, alsmede een lijst en kaart van deze typen. Elk ander type resulteert in een foutuitvoer in de map met foutmeldingen.
+* Controlemap is bedoeld voor gebruik met documenten. De ondersteunde uitvoer is `com.adobe.idp.Document`, `org.w3c.Document`, `org.w3c.Node`en een lijst en kaart van deze typen. Elk ander type resulteert in een foutuitvoer in de map met foutmeldingen.
 * Als de resultaten niet in de resultaatomslag zijn, verifieer de mislukkingsomslag om te zien of is een mislukking voorgekomen.
 * Controlemap werkt het beste als deze wordt gebruikt in de asynchrone modus. In deze modus wordt de aanroepingsaanvraag door de gecontroleerde map in de wachtrij geplaatst en wordt een nieuwe aanroep uitgevoerd. De wachtrij wordt vervolgens asynchroon verwerkt. Wanneer de Asynchrone optie niet wordt geplaatst, roept de Gecontroleerde Omslag de doeldienst synchroon aan en de Motor van het Proces wacht tot de dienst met het verzoek wordt gedaan en de resultaten worden veroorzaakt. Als het verwerken van de aanvraag lang duurt voor de doelservice, kunnen time-outfouten optreden in de gecontroleerde map.
 * Het maken van gecontroleerde mappen voor import- en exportbewerkingen staat het onttrekken van bestandsextensies niet toe. Wanneer de service Formuliergegevensintegratie wordt aangeroepen met gecontroleerde mappen, komt het extensietype voor het uitvoerbestand mogelijk niet overeen met de gewenste uitvoerindeling voor het documentobjecttype. Als het invoerbestand naar een controlemap die de exportbewerking activeert bijvoorbeeld een XFA-formulier is dat gegevens bevat, moet de uitvoer een XDP-gegevensbestand zijn. Als u een uitvoerbestand met de juiste bestandsnaamextensie wilt verkrijgen, kunt u dit opgeven in de toewijzing van de uitvoerparameter. In dit voorbeeld kunt u %F.xdp gebruiken voor de toewijzing van de uitvoerparameter.

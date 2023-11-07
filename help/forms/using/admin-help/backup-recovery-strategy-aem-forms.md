@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1487'
 ht-degree: 0%
 
 ---
@@ -94,7 +94,7 @@ Als u in een cluster TCP-caching gebruikt in plaats van UDP, moet u de configura
 
 ### De systeempaden van het knooppunt AEM formulieren wijzigen {#changing-the-aem-forms-node-file-system-paths}
 
-Als u de paden van het bestandssysteem wijzigt voor een zelfstandig knooppunt, moet u de desbetreffende verwijzingen bijwerken in de voorkeuren, andere systeemconfiguraties, aangepaste toepassingen en geïmplementeerde AEM formuliertoepassingen. Voor een cluster moeten daarentegen alle knooppunten dezelfde padconfiguratie van het bestandssysteem gebruiken. U moet de GDS-hoofdmap (Global Document Storage) instellen en ervoor zorgen dat deze verwijst naar een kopie van de herstelde GDS die synchroon is met de herstelde database. Het instellen van het GDS-pad is belangrijk omdat de GDS gegevens kunnen bevatten die moeten blijven bestaan over het opnieuw opstarten van de toepassingsserver.
+Als u de paden van het bestandssysteem wijzigt voor een zelfstandig knooppunt, moet u de desbetreffende verwijzingen bijwerken in de voorkeuren, andere systeemconfiguraties, aangepaste toepassingen en geïmplementeerde AEM formuliertoepassingen. Voor een cluster moeten daarentegen alle knooppunten dezelfde padconfiguratie van het bestandssysteem gebruiken. Stel de hoofdmap van de algemene documentopslag (GDS) in en zorg ervoor dat deze verwijst naar een kopie van de herstelde GDS die synchroon is met de herstelde database. Het instellen van het GDS-pad is belangrijk omdat de GDS gegevens kunnen bevatten die moeten blijven bestaan over het opnieuw opstarten van de toepassingsserver.
 
 In een geclusterde omgeving moet de padconfiguratie van het bestandssysteem van de opslagplaats gelijk zijn voor alle clusterknooppunten vóór de back-up en na de herstelbewerking.
 

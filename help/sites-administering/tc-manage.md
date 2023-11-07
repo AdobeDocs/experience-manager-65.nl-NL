@@ -2,9 +2,9 @@
 title: Vertaalprojecten beheren
 description: Leer hoe u vertaalprojecten beheert in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 9438868191961404e9e18cb0dd2e844985ac9db0
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3588'
+source-wordcount: '3578'
 ht-degree: 0%
 
 ---
@@ -123,7 +123,7 @@ Nadat u een vertaalproject hebt gecreeerd, kunt u de ruit van Middelen gebruiken
 
 Wanneer u pagina&#39;s toevoegt aan een vertaalproject, worden de pagina&#39;s opgenomen in een nieuwe vertaaltaak. U kunt [pagina&#39;s toevoegen aan een bestaande taak](#adding-pages-assets-to-a-translation-job).
 
-Net zoals bij het maken van een nieuw project, worden bij het toevoegen van pagina&#39;s kopieën van de pagina&#39;s zo nodig toegevoegd aan een opstart om te voorkomen dat bestaande taalkopieën worden overschreven. (Zie [Vertaalprojecten maken voor bestaande taalkopieën](#performing-initial-translations-and-updating-existing-translations).)
+Net als bij het maken van een project worden bij het toevoegen van pagina&#39;s kopieën van de pagina&#39;s zo nodig toegevoegd aan een opstart om te voorkomen dat bestaande taalkopieën worden overschreven. (Zie [Vertaalprojecten maken voor bestaande taalkopieën](#performing-initial-translations-and-updating-existing-translations).)
 
 1. Gebruik de console van Plaatsen om de pagina te selecteren die u aan het vertaalproject toevoegt.
 
@@ -234,7 +234,7 @@ Wanneer een project gebruikend de ruit van Middelen van een pagina wordt gecreee
 
 ## De status van een vertalingstaak controleren {#monitoring-the-status-of-a-translation-job}
 
-De tegel Vertaal baan van een Vertaalproject verstrekt de status van een vertaalbaan, evenals het aantal pagina&#39;s en activa in de baan.
+De tegel Vertaal baan van een Vertaalproject verstrekt de status van een vertaalbaan, en het aantal pagina&#39;s en activa in de baan.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
 
@@ -412,7 +412,7 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. 
 
 ## Een bronpagina verplaatsen of de naam ervan wijzigen {#move-source}
 
-Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, wordt er een nieuwe taalkopie gemaakt op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie blijft aanwezig. Om dit te voorkomen, kunt u de functionaliteit voor het kopiëren van de updatetaal na de verplaatsing gebruiken:
+Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page)Als u de pagina na de verplaatsing opnieuw vertaalt, wordt een kopie van de taal gemaakt op basis van de nieuwe paginanaam/locatie. De oude taalkopie op basis van de vorige naam/locatie is er nog. Om dit te voorkomen, kunt u de functionaliteit voor het kopiëren van de updatetaal na de verplaatsing gebruiken:
 
 1. Verplaats een pagina met een taalkopie.
 1. Selecteer de hoofdmap van de taalkopie.
@@ -423,9 +423,9 @@ Als een reeds vertaalde bronpagina moet zijn [hernoemd of verplaatst](/help/site
 1. Klikken **Bijwerken**. A [Starten](/help/sites-authoring/launches-promoting.md) wordt gemaakt.
 1. Navigeer naar de vereiste hoofdtaal en selecteer deze.
 1. Met de **Verwijzingen** deelvenster, selecteert u **Starten**.
-1. Klik op de Launch die zojuist is gemaakt en klik op **Starten bevorderen**.
+1. Klik op de Launch die is gemaakt en klik op **Starten bevorderen**.
 
-Nu is de bronpagina verplaatst en is ook de bijbehorende taalkopie gemaakt.
+Nu is de bronpagina verplaatst en de bijbehorende taalkopie.
 
 ## Een vertaalproject maken met de projectconsole {#creating-a-translation-project-using-the-projects-console}
 
@@ -450,7 +450,7 @@ Wanneer u handmatig een vertaalproject maakt, moet u naast de eigenschappen voor
 
 ## Een vertaaltaak exporteren {#exporting-a-translation-job}
 
-U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld om naar een vertaalleverancier te verzenden die niet met AEM via een schakelaar geïntegreerd is, of om de inhoud te herzien.
+U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld, om naar een vertaalleverancier te verzenden die niet met AEM via een schakelaar geïntegreerd is, of de inhoud te herzien.
 
 1. Klik of tik op Exporteren in het vervolgkeuzemenu van het onderdeel Vertaal taak.
 1. Klik of tik in het dialoogvenster Exporteren op Geëxporteerd bestand downloaden en gebruik indien nodig het dialoogvenster van de webbrowser om het bestand op te slaan.
@@ -458,7 +458,7 @@ U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld om naar een vertaa
 
 ## Een vertaaltaak importeren {#importing-a-translation-job}
 
-U kunt vertaalde inhoud in AEM importeren, bijvoorbeeld wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet via een connector is geïntegreerd met AEM.
+U kunt vertaalde inhoud bijvoorbeeld importeren in AEM, wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet is geïntegreerd met AEM via een connector.
 
 1. Klik of tik op Importeren in het vervolgkeuzemenu van het onderdeel Vertaal taak.
 1. Selecteer in het dialoogvenster van de webbrowser het bestand dat u wilt importeren.

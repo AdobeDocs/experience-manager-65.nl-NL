@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 6346cd93-1ca3-4510-9c31-a74c41017ddb
 docset: aem65
 exl-id: d2d351e7-87a5-4895-b4ec-391fb0b66798
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -110,7 +110,7 @@ Wanneer de functionaliteit voor AEM WCM wordt ontwikkeld, kunnen de zittingen va
 * U kunt veel van CacheManager zien: resizeAll ingangen in het logboekdossier; het volgende aantal (grootte=&lt;x>) geeft het aantal caches weer. Elke sessie opent meerdere caches.
 * Van tijd tot tijd heeft het systeem onvoldoende geheugen (na een paar uur, dagen of weken - afhankelijk van de ernst).
 
-Raadpleeg het artikel in de Knowledge Base als u niet-afgesloten sessies wilt analyseren en wilt weten welke code een sessie niet sluit [Niet-gesloten sessies analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
+Om unclosed zittingen te analyseren en te weten te komen welke code een zitting niet sluit, zie het artikel van de Kennisbank [Niet-gesloten sessies analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeUnclosedSessions.html).
 
 ### De Adobe Experience Manager-webconsole gebruiken {#using-the-adobe-experience-manager-web-console}
 

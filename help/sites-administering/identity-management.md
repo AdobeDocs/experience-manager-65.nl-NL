@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 994a5751-7267-4a61-9bc7-01440a256c65
 docset: aem65
 exl-id: acb5b235-523e-4c01-9bd2-0cc2049f88e2
-source-git-commit: e54c1d422f2bf676e8a7b0f50a101e495c869c96
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1254'
+source-wordcount: '1250'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ De login component kan worden gebruikt om de login informatie te verzamelen, dan
 
 Hierdoor krijgt de bezoeker de standaardvelden van **Gebruikersnaam** en **Wachtwoord**, met een **Aanmelden** om het aanmeldingsproces te activeren wanneer de aanmeldingsgegevens worden ingevoerd.
 
-Gebruikers kunnen zich bijvoorbeeld aanmelden of een nieuwe account maken met de **Aanmelden** op de werkbalk Geometrixx, die de pagina gebruikt:
+Gebruikers kunnen zich bijvoorbeeld aanmelden of een account maken met de **Aanmelden** op de werkbalk Geometrixx, die de pagina gebruikt:
 
 `http://localhost:4502/content/geometrixx-outdoors/en/user/sign-in.html`
 
@@ -119,7 +119,7 @@ U kunt een ander profiel weergeven met de [clientcontext](/help/sites-administer
 
 ## Velden toevoegen aan de profieldefinitie {#adding-fields-to-the-profile-definition}
 
-U kunt velden toevoegen aan de profieldefinitie. U kunt bijvoorbeeld het veld Favoriete kleur toevoegen aan het profiel Geometrixx:
+U kunt velden toevoegen aan de profieldefinitie. Als u bijvoorbeeld een veld Favoriete kleur wilt toevoegen aan het profiel Geometrixx:
 
 1. Navigeer vanuit de websiteconsole naar Geometrixx Outdoors Site > Engels > Gebruiker > Mijn profiel.
 1. Dubbelklik op de knop **Mijn profiel** pagina om deze te openen voor bewerking.
@@ -145,7 +145,7 @@ U kunt velden toevoegen aan de profieldefinitie. U kunt bijvoorbeeld het veld Fa
 
 ## Profielstatussen {#profile-states}
 
-Er zijn een aantal gebruiksgevallen die vereisen wetend of een gebruiker (of eerder hun profiel) in een *specifieke staat* of niet.
+Er zijn verscheidene gebruiksgevallen die vereisen wetend of een gebruiker (of eerder hun profiel) in een *specifieke staat* of niet.
 
 Dit betekent dat een geschikte eigenschap in het gebruikersprofiel moet worden gedefinieerd:
 
@@ -163,7 +163,7 @@ Dit wordt gedaan met:
 
   Handelingen met betrekking tot de staten beheren.
 
-Er kunnen meerdere statussen worden gedefinieerd, bijvoorbeeld in Geometrixx:
+U kunt meerdere statussen definiëren, bijvoorbeeld in Geometrixx:
 
 * zich abonneren (of het afmelden) op berichten op nieuwsbrieven of commentaardraden
 * toevoegen en verwijderen van een verbinding met een vriend

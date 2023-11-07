@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: f7b24617dec77c6907798b1615debdc2329c9d80
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3310'
+source-wordcount: '3306'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ De volgende zaken zijn van belang voor ontwikkeling:
 
 **Item** Een item is een knooppunt of een eigenschap.
 
-Voor gedetailleerde informatie over het manipuleren van voorwerpen van het Punt, verwijs naar [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) van de interface javax.jcr.Item
+Voor gedetailleerde informatie over het manipuleren van voorwerpen van het Punt, zie [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Item.html) van de interface javax.jcr.Item
 
 **Knooppunt (en de eigenschappen ervan)** Knooppunten en hun eigenschappen worden gedefinieerd in de JCR API 2.0-specificatie (JSR 283). Ze slaan inhoud, objectdefinities, scripts en andere gegevens op.
 
@@ -349,7 +349,7 @@ Als u bijvoorbeeld de eigenschappen van het huidige knooppunt wilt ophalen, kunt
 
 The currentNode being the current node object.
 
-Raadpleeg voor meer informatie over het manipuleren van Node-objecten de [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
+Voor meer informatie over het manipuleren van voorwerpen van de Knoop, zie [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 **Widget** In AEM wordt alle gebruikersinvoer beheerd door widgets. Deze worden vaak gebruikt om het bewerken van een stuk inhoud te besturen.
 
@@ -388,7 +388,7 @@ Als u bijvoorbeeld de naam van de huidige pagina wilt ophalen, kunt u de volgend
 
 S`tring pageName = currentPage.getName();`
 
-TcurrentPage is het huidige paginaobject. Raadpleeg voor meer informatie over het bewerken van paginaobjecten de [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
+TcurrentPage is het huidige paginaobject. Zie de klasse [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/Page.html).
 
 **Paginabeheer** Het paginabeheer is een interface die methoden biedt voor bewerkingen op paginaniveau.
 
@@ -396,7 +396,7 @@ Bijvoorbeeld, om de bevattende pagina van een middel te krijgen, kunt u de volge
 
 Page myPage = pageManager.getConcontainingPage(myResource);
 
-De pageManager die het voorwerp van de paginamanager zijn, en myResource een middelvoorwerp. Raadpleeg voor meer informatie over de methoden die worden geleverd door de paginabeheerder de [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
+De pageManager die het voorwerp van de paginamanager zijn, en myResource een middelvoorwerp. Zie voor meer informatie over de methoden die worden geleverd door de paginabeheerder de [Java™-documenten](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/api/PageManager.html).
 
 ## Structuur in de opslagplaats {#structure-within-the-repository}
 

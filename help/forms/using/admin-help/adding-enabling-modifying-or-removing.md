@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7d0d4f96-fc72-4e2b-a2cc-5741b0a30f74
 exl-id: b7461d5c-95d1-4da2-9d2a-f54c410a87f9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## Voeg een eindpunt aan de dienst toe {#add-an-endpoint-to-a-service}
 
-Eindpunten kunnen alleen aan services worden toegevoegd. Een eindpunt kan niet alleen bestaan; het moet met een dienst worden geassocieerd.
+Eindpunten kunnen alleen aan services worden toegevoegd. Een eindpunt kan niet bestaan alleen; het moet met de dienst worden geassocieerd.
 
 >[!NOTE]
 >
->U wordt aangeraden unieke namen te gebruiken wanneer u eindpunten toevoegt.
+>Het wordt aanbevolen unieke namen te gebruiken wanneer u eindpunten toevoegt.
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Voor de pagina van het Beheer van de Dienst, klik de dienst om te vormen.
@@ -40,11 +40,11 @@ Eindpunten kunnen alleen aan services worden toegevoegd. Een eindpunt kan niet a
 
 [Instellingen voor eindpunten verwijderen](/help/forms/using/admin-help/configuring-remoting-endpoints.md#remoting-endpoint-settings)
 
-1. Klik op Toevoegen.
+1. Klik toevoegen.
 
 ## Een eindpunt in- of uitschakelen {#enable-or-disable-an-endpoint}
 
-Nieuwe eindpunten worden standaard automatisch ingeschakeld. Maar als u een eindpunt hebt onbruikbaar gemaakt, zult u het voor het operationeel moeten toelaten.
+Nieuwe eindpunten worden standaard automatisch ingeschakeld. Maar als u een eindpunt onbruikbaar hebt gemaakt, moet u het voor het om operationeel te maken toelaten.
 
 Als u problemen met de diensten ervaart, maak de bijbehorende eindpunten onbruikbaar om het probleem beter op te lossen. U kunt eindpunten tijdens regelmatig systeemonderhoud of wanneer het bevorderen van de dienst ook willen onbruikbaar maken.
 

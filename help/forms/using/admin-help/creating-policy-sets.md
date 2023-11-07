@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Document Security
 exl-id: 736926af-ae41-4da3-b181-444de72407bd
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1294'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ Tijdens het creëren van de beleidsreeks, kunt u de Achterknoop gebruiken om aan
 
    >[!NOTE]
    >
-   >U kunt een naam van een beleidsset maken die uitgebreide tekens bevat. wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als identiek beschouwd. Wanneer iemand een beleidsset maakt, wordt een vergelijking gemaakt om te controleren of al een beleidsset met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat de beleidsset al aan de database is toegevoegd en de nieuwe niet.
+   >U kunt een naam maken voor een beleidsset die uitgebreide tekens bevat. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als hetzelfde beschouwd. Wanneer iemand een beleidsset maakt, wordt een vergelijking gemaakt om te controleren of al een beleidsset met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat de beleidsset al aan de database is toegevoegd en de nieuwe niet.
 
 1. (Optioneel) Als u de domeinen wilt instellen die zichtbaar zijn voor documentuitgevers wanneer zij gebruikers aan een beleid toevoegen, klikt u op Domeinen toevoegen, selecteert u de domeinen die u wilt doorzoeken, klikt u op Toevoegen en klikt u vervolgens op OK.
 1. Klik op de pagina Zichtbare gebruikers en groepen toevoegen op Volgende.
@@ -94,9 +94,9 @@ U kunt nu beleid toevoegen aan uw beleidsset. (Zie [Beleid maken en bewerken](/h
 1. Voor de documentveiligheid, pagina, klik Beleid, klik het lusje van de Reeksen van het Beleid, en klik de beleidreeks om uit te geven.
 1. Klik op het desbetreffende tabblad en bewerk indien nodig:
 
-   * **Details:** De naam en beschrijving van de beleidsset bewerken.
+   * **Details:** Bewerk de naam en beschrijving van de beleidsset.
    * **Beleid:** Beleid binnen de beleidsset maken, inschakelen, bewerken en verwijderen.
-   * **Zichtbare gebruikers en groepen:** Voeg zichtbare gebruikers en groepen toe en verwijder die in een beleid kunnen worden omvat.
+   * **zichtbare gebruikers en groepen:** Voeg zichtbare gebruikers en groepen toe en verwijder die in een beleid kunnen worden omvat.
    * **Beleidssetcoördinatoren:** Machtigingen voor coördinatoren toevoegen, verwijderen en wijzigen.
    * **Documentuitgevers:** Voeg gebruikers toe en verwijder gebruikers die documenten kunnen publiceren door het beleid in de reeks te gebruiken.
 
@@ -105,7 +105,7 @@ U kunt nu beleid toevoegen aan uw beleidsset. (Zie [Beleid maken en bewerken](/h
 1. Zoek op het tabblad Beleid naar beleid dat u wilt toevoegen aan de beleidsset en maak nieuwe beleidsregels:
 
    * Als u naar een beleid wilt zoeken, selecteert u Beleids-id of Beleidsnaam, typt u de bijbehorende waarde, selecteert u het aantal items dat u wilt weergeven en klikt u op Zoeken.
-   * Ga voor meer informatie over het maken van een nieuw beleid naar [Beleid maken en bewerken](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
+   * Zie voor meer informatie over het maken van beleid de [Beleid maken en bewerken](/help/forms/using/admin-help/creating-policies.md#creating-and-editing-policies).
 
 ## Een beleidsset verwijderen {#delete-a-policy-set}
 

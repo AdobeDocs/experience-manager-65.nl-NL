@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: 2418777e-4eb2-4d82-aa9e-8d1b0bf740f3
 docset: aem65
 exl-id: 6666eddc-dc17-4bd4-9d55-e6522f40a680
-source-git-commit: 3f48e059ec8b0b255caf7d29749930e0534a37f7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1081'
 ht-degree: 0%
@@ -35,7 +35,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 >
 >Alle inhoud van de campagne moet worden gemaakt onder een `master` tekstpagina `cq/personalization/components/ambitpage`.
 >
->Bijvoorbeeld als uw geplande campagnestructuur ongeveer als volgt is
+>Als uw geplande campagnestructuur bijvoorbeeld ongeveer zo is
 >
 >`/content/campaigns/teasers/en/campaign-promotion-global`
 >
@@ -45,7 +45,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
 >[!NOTE]
 >
->Wanneer u een e-mailsjabloon voor Adobe Campaign maakt, moet u de eigenschap **acMapping** met de waarde **mapRecipient** in de **jcr:inhoud** knooppunt van de sjabloon. Als u dit niet doet, kunt u de Adobe Campaign-sjabloon niet selecteren in **Pagina-eigenschappen** van Experience Manager (veld is uitgeschakeld).
+>Wanneer u een mailsjabloon voor Adobe Campaign maakt, moet u de eigenschap **acMapping** met de waarde **mapRecipient** in de **jcr:inhoud** knooppunt van de sjabloon. Als u dit niet doet, kunt u de Adobe Campaign-sjabloon niet selecteren in **Pagina-eigenschappen** van Experience Manager (veld is uitgeschakeld).
 
 ## Sjabloon/pagina-component {#template-page-component}
 
@@ -66,7 +66,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
    <td><p>Is ingesteld op UTF-8.</p> <p>&lt;meta http-equiv="content-type" content="text/html; charset=UTF-8"&gt;</p> </td>
   </tr>
   <tr>
-   <td><p>Alle structuur coderen met behulp van de &lt;table&gt;element. Voor complexere lay-outs moet u tabellen nesten om complexe structuren te maken.</p> <p>E-mail moet er goed uitzien, zelfs zonder css.</p> </td>
+   <td><p>Alle structuur coderen met de &lt;table&gt;element. Voor complexere lay-outs moet u tabellen nesten om complexe structuren te maken.</p> <p>E-mail moet er goed uitzien, zelfs zonder css.</p> </td>
    <td><p>Tabellen worden in de gehele sjabloon gebruikt voor het structureren van inhoud. Momenteel met maximaal vier geneste tabellen (1 basislabel + max.) 3 nestniveaus)</p> <p>&lt;div&gt; -tags worden alleen gebruikt in de ontwerpmodus voor een juiste componentbewerking.</p> </td>
   </tr>
   <tr>
@@ -74,7 +74,7 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
    <td><p>Alle tabellen bevatten noodzakelijke kenmerken, zoals <i>border</i>, <i>celopvulling</i>, <i>celafstand</i>, en <i>width</i>.</p> <p>Om de plaatsing van elementen in tabellen te harmoniseren, hebben alle tabelcellen het kenmerk <i>valign="top"</i> wordt ingesteld.</p> </td>
   </tr>
   <tr>
-   <td><p>Indien mogelijk rekening houden met de vriendelijkheid van mobiele apparaten. Gebruik mediaquery's om de tekstgrootte op kleine schermen te verhogen en selecteer aanraakgebieden met de grootte van het blokje voor koppelingen.</p> <p>Maak een e-mail ontvankelijk als het ontwerp het toestaat.</p> </td>
+   <td><p>Houd, indien mogelijk, rekening met de vriendelijkheid van mobiele apparaten. Gebruik mediaquery's om de tekstgrootte op kleine schermen te verhogen en selecteer aanraakgebieden met de grootte van het blokje voor koppelingen.</p> <p>Maak een e-mail ontvankelijk als het ontwerp het toestaat.</p> </td>
    <td>Voor zover CSS-stijlen worden gebruikt om demonstratieontwerp te illustreren, worden mediaquery's gebruikt om een mobiele versie aan te bieden.</td>
   </tr>
   <tr>
@@ -146,7 +146,7 @@ Alle hebben een **header**, **voettekst** en **lichaam** sectie. Onder de hoofds
 
 ### Onderdelen {#components}
 
-Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allemaal gebaseerd op de opmaaktaal Adobe **HTL**.
+Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemalplaatjes](/help/sites-authoring/adobe-campaign-components.md). Deze componenten zijn allemaal gebaseerd op de opmaaktaal van de Adobe **HTL**.
 
 | **Componentnaam** | **Componentpad** |
 |---|---|
@@ -160,6 +160,6 @@ Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemal
 
 >[!NOTE]
 >
->Deze componenten zijn geoptimaliseerd voor e-mailinhoud. dat wil zeggen dat zij zich houden aan de beste praktijken die in dit document worden beschreven. Het gebruiken van andere uit-van-de-doos componenten schendt gewoonlijk deze regels.
+>Deze componenten zijn geoptimaliseerd voor e-mailinhoud, dat wil zeggen dat ze de beste werkwijzen volgen die in dit document worden beschreven. Het gebruiken van andere uit-van-de-doos componenten schendt gewoonlijk deze regels.
 
 Deze componenten worden in detail beschreven [Adobe Campaign-componenten](/help/sites-authoring/adobe-campaign-components.md).

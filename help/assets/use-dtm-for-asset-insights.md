@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Assets Insights inschakelen via DTM {#enable-asset-insights-through-dtm}
 
-Adobe Dynamic Tag Management is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt de trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen om Assets Insights te gebruiken, of u kunt DTM gebruiken om asset Insights-tags in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
+Adobe Dynamic Tag Management is een hulpmiddel waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt de trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen om Assets Insights te gebruiken, of u kunt DTM gebruiken om asset Insights-tags in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
 >[!CAUTION]
 >
->Adobe DTM is vervangen door [!DNL Adobe Experience Platform] en zal binnenkort [einde van leven](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe raadt u aan [gebruiken [!DNL Adobe Experience Platform] voor informatie over activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
+>Adobe DTM is vervangen door [!DNL Adobe Experience Platform] en zal binnenkort [einde van leven](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe beveelt aan [gebruiken [!DNL Adobe Experience Platform] voor informatie over activa](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
 
@@ -30,7 +30,7 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
 1. Aanmelden bij [https://dtm.adobe.com](https://dtm.adobe.com/)en selecteert u, naar gelang van het geval, een onderneming.
 1. Een bestaande webeigenschap maken of openen
 
-   * Selecteer **[!UICONTROL Web Properties]** en klikt u op **[!UICONTROL Add Property]**.
+   * Selecteer de **[!UICONTROL Web Properties]** en klikt u op **[!UICONTROL Add Property]**.
 
    * Werk de velden naar wens bij en klik op **[!UICONTROL Create Property]**. Zie [documentatie](https://experienceleague.adobe.com/docs/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html).
 
@@ -110,7 +110,7 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
    * De codeaanroepen `assetAnalytics.dispatcher.init()` na te gaan of `_satellite.getToolsByType('sc')[0].getS()` is geïnitialiseerd en `assetAnalytics,dispatcher.init` is beschikbaar. Daarom kunt u overslaan toevoegend het in stap 11.
    * Zoals aangegeven in opmerkingen binnen de code voor Inzichten van paginanummers (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), wanneer Paginanummer geen `AppMeasurement` -object, zijn de eerste drie argumenten (RSID, Tracking Server en Visitor Namespace) irrelevant. Lege tekenreeksen worden doorgegeven om dit te markeren.\
      De resterende argumenten komen overeen met wat is geconfigureerd in de pagina voor Inzichten configureren (**[!UICONTROL Tools > Assets > Insights Configuration]**).
-   * Het object AppMeasurement wordt opgehaald door te zoeken `satelliteLib` voor alle beschikbare SiteCatalyst-motoren. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.
+   * Het object AppMeasurement wordt opgehaald door te zoeken `satelliteLib` voor alle beschikbare SiteCatalyst-motoren. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de gereedschappen voor SiteCatalysts die beschikbaar zijn in de DTM-interface.
 
 1. Sla het venster Code-editor op, sluit dit en sla de wijzigingen vervolgens op in de configuratie van het gereedschap.
 1. In de **[!UICONTROL Approvals]** , keurt beide goedkeuringen goed die in behandeling zijn. De tag DTM kan worden ingevoegd in uw webpagina.

@@ -10,9 +10,9 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1783'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
@@ -21,12 +21,12 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Deze sectie beschrijft het vormen segmentatie wanneer het gebruiken van ContextHub. Als u de functionaliteit van de Context van de Cliënt gebruikt, gelieve de relevante documentatie voor [segmentatie configureren voor clientcontext](/help/sites-administering/campaign-segmentation.md).
+>Deze sectie beschrijft het vormen segmentatie wanneer het gebruiken van ContextHub. Als u de functionaliteit van de Context van de Cliënt gebruikt, zie de relevante documentatie voor [segmentatie configureren voor clientcontext](/help/sites-administering/campaign-segmentation.md).
 >
 
 Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [Soorten publiek beheren](/help/sites-authoring/managing-audiences.md) voor informatie over hoe de segmentatie werkt en zeer belangrijke termijnen.
 
-Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, zult u de segmenten en de strategieën nodig voor uw gerichte inhoud moeten bepalen.
+Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, moet u de segmenten en de strategieën bepalen nodig voor uw gerichte inhoud.
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud blijft behouden in het dialoogvenster [Personalisatie](/help/sites-authoring/personalization.md) van de website. [Activiteiten](/help/sites-authoring/activitylib.md) Hier gedefinieerd kan op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
@@ -34,13 +34,13 @@ Met AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het laat u ook de resu
 
 ## Segmenten openen {#accessing-segments}
 
-De [Soorten publiek](/help/sites-authoring/managing-audiences.md) De console wordt gebruikt om segmenten voor ContextHub of de Context van de Cliënt evenals publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub. Voor [Clientcontextsegmenten](/help/sites-administering/campaign-segmentation.md) en Adobe Target-segmenten, zie de desbetreffende documentatie.
+De [Soorten publiek](/help/sites-authoring/managing-audiences.md) console wordt gebruikt om segmenten voor ContextHub of de Context en het publiek van de Cliënt voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub. Voor [Clientcontextsegmenten](/help/sites-administering/campaign-segmentation.md) en Adobe Target-segmenten, zie de relevante documentatie.
 
 Om tot uw segmenten toegang te hebben moet u uw configuratie selecteren. Selecteer in globale navigatie **Navigation > Personalisatie > Soorten publiek**. De beschikbare configuraties worden weergegeven:
 
 ![Soorten publiek - configuraties](assets/segmentation-access-confs.png)
 
-Selecteer uw configuratie om de segmenten, bijvoorbeeld de Plaats van WKND te zien:
+Selecteer uw configuratie om de segmenten, bijvoorbeeld, Plaats WKND te zien:
 
 ![Soorten publiek - segmenten](assets/segmentation-access-segments.png)
 
@@ -141,7 +141,7 @@ Het nieuwe segment definiëren:
 
    ![chlimage_1-311](assets/chlimage_1-311.png)
 
-1. In de **Nieuw ContextHub-segment** Voer een titel voor het segment in en geef indien nodig een ophaalwaarde op en tik of klik op **Maken**.
+1. In de **Nieuw ContextHub-segment** Voer een titel voor het segment in en geef desgewenst een opstartitewaarde op en tik of klik op **Maken**.
 
    ![chlimage_1-312](assets/chlimage_1-312.png)
 

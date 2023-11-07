@@ -8,7 +8,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 exl-id: bfb95cae-4b0f-4521-a113-042dc4005a63
-source-git-commit: d673a447e9ce2377c8645c87f12be81cbad06238
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1473'
 ht-degree: 1%
@@ -17,9 +17,9 @@ ht-degree: 1%
 
 # SCF Handlebars Helpers {#scf-handlebars-helpers}
 
-| **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
-|   | **[Aanpassing aan clientzijde☐](client-customize.md)** |
+|   | **[Aanpassing aan client-side bezig](client-customize.md)** |
 
 Handlebars Helpers (helpers) zijn methodes callable van de manuscripten van Handlebars om het werken met componenten te vergemakkelijken SCF.
 
@@ -49,11 +49,11 @@ Als safeString is ingesteld op true, is de geretourneerde tekenreeks een SafeStr
 
   (Optioneel) Standaard is de lege tekenreeks
 
-* **maxLength**: Getal
+* **maxLength**: Number
 
   (Optioneel) Standaard is de lengte van de context.
 
-* **maxWords**: Getal
+* **maxWords**: Number
 
   (Optioneel) De standaardwaarde is het aantal woorden in de bijgesneden tekenreeks.
 
@@ -97,7 +97,7 @@ Een hulpmiddel om twee reeksen onder een div toe te voegen, één voor de volled
 
   (Optioneel) Standaard is de lege tekenreeks.
 
-* **numChars**: Getal
+* **numChars**: Number
 
   (Optioneel) Het aantal tekens dat moet worden weergegeven wanneer geen volledige tekst wordt weergegeven. De standaardwaarde is 100.
 
@@ -133,7 +133,7 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
 ### Parameters {#parameters-2}
 
-* **context**: Getal
+* **context**: Number
 
   (Optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
 
@@ -163,7 +163,7 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 * **lvalue**: String
 
-  De waarde aan de linkerkant die moet worden vergeleken.
+  De waarde die links moet worden vergeleken.
 
 * **tegenwaarde**: String
 
@@ -221,7 +221,7 @@ Zie ook [Tekenreeksen internationaliseren in JavaScript-code](../../help/sites-d
 
 * **opmerking**: String
 
-  (Optioneel) Een vertaaltip
+  (Optioneel) Een vertaalhint
 
 ### Voorbeeld {#example-3}
 
@@ -242,7 +242,7 @@ Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit di
 
 ### Parameters {#parameters-6}
 
-* **context**: Tekenreeks of object
+* **context**: String of object
 
   (Optioneel, tenzij een relatief pad wordt opgegeven)
 
@@ -264,7 +264,7 @@ Deze helper, die alleen geschikt is aan de serverzijde, biedt functionaliteit di
 
 * **authoringDisabled**: Boolean
 
-  (Optioneel) Standaard is false. Uitsluitend voor intern gebruik.
+  (Optioneel) Standaard is false. Alleen voor intern gebruik.
 
 ### Voorbeeld {#example-4}
 
@@ -349,11 +349,11 @@ Bijvoorbeeld:
 
 ### Parameters {#parameters-8}
 
-* **context**: Getal
+* **context**: Number
 
   Een tijd in het verleden om te vergelijken met &quot;nu&quot;. Tijd wordt uitgedrukt als een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk).
 
-* **daysCutoff**: Getal
+* **daysCutoff**: Number
 
   Het aantal dagen geleden voordat wordt overgeschakeld op een werkelijke datum. De standaardwaarde is 60.
 
@@ -377,13 +377,13 @@ Depending on how long in the past, may return
 
 Een hulpmiddel dat een bronkoord voor HTML elementinhoud codeert helpen tegen XSS beschermen.
 
-OPMERKING: Deze helper is geen validator en mag niet worden gebruikt voor het schrijven van kenmerkwaarden.
+OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het schrijven van kenmerkwaarden.
 
 ### Parameters {#parameters-9}
 
 * **context**: object
 
-  De HTML die moet worden gecodeerd.
+  De te coderen HTML.
 
 ### Voorbeeld {#example-6}
 
@@ -393,15 +393,15 @@ OPMERKING: Deze helper is geen validator en mag niet worden gebruikt voor het sc
 
 ## Xss-htmlAttr {#xss-htmlattr}
 
-Een helper die een bronkoord codeert voor het schrijven aan een waarde van het attribuut van HTML om tegen XSS te helpen beschermen.
+Een helper die een bronkoord codeert voor het schrijven aan een waarde van het attribuut van HTML helpen tegen XSS beschermen.
 
-OPMERKING: Deze helper is geen validator en mag niet worden gebruikt voor het schrijven van actiefattributen (href, src, gebeurtenishandlers).
+OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het schrijven van actiefattributen (href, src, gebeurtenishandlers).
 
 ### Parameters {#parameters-10}
 
 * **context**: Object
 
-  De HTML die moet worden gecodeerd.
+  De te coderen HTML.
 
 ### Voorbeeld {#example-7}
 
@@ -413,13 +413,13 @@ OPMERKING: Deze helper is geen validator en mag niet worden gebruikt voor het sc
 
 Een hulpmiddel dat een bronkoord codeert voor het schrijven aan JavaScript koordinhoud helpen tegen XSS beschermen.
 
-OPMERKING: Deze helper is geen validator en mag niet worden gebruikt voor het schrijven naar willekeurig JavaScript.
+OPMERKING: deze helper is geen validator en mag niet worden gebruikt voor het schrijven naar willekeurig JavaScript.
 
 ### Parameters {#parameters-11}
 
 * **context**: Object
 
-  De HTML die moet worden gecodeerd.
+  De te coderen HTML.
 
 ### Voorbeeld {#example-8}
 
@@ -431,7 +431,7 @@ var input = {{xss-jsString topic-title}}
 
 Een helper die een URL ontsmetten voor het schrijven als HTML href of srce attributenwaarde helpen tegen XSS.
 
-OPMERKING: Deze hulp kan een lege koord terugkeren.
+OPMERKING: deze hulpfunctie kan een lege tekenreeks retourneren.
 
 ### Parameters {#parameters-12}
 
@@ -449,8 +449,8 @@ OPMERKING: Deze hulp kan een lege koord terugkeren.
 
 * Een hulpvraag van Handlebars is eenvoudig herkenningsteken ( *name* van de helper), gevolgd door nul of meer door spaties gescheiden parameters.
 * Parameters kunnen een eenvoudig String-, Number-, Boolean- of JSON-object zijn, en een optionele reeks sleutelwaardeparen (hash-argumenten) als de laatste parameters.
-* De sleutels in knoeiboelargumenten moeten eenvoudige herkenningstekens zijn.
-* De waarden in hash-argumenten zijn Handlebars-expressies: eenvoudige id&#39;s, paden of tekenreeksen.
+* De sleutels in hakargumenten moeten eenvoudige herkenningstekens zijn.
+* De waarden in hashargumenten zijn Handlebars-expressies: eenvoudige id&#39;s, paden of Tekenreeksen.
 * De huidige context, `this`, is altijd beschikbaar voor de helpers van Handlebars.
 * De context kan een String, Number, boolean of een JSON-gegevensobject zijn.
 * Het is mogelijk een object door te geven dat in de huidige context als de context is genest, zoals `this.url` of `this.id` (zie de volgende voorbeelden van eenvoudige en blokhulplijnen).
@@ -597,8 +597,8 @@ Clilib moet:
 * Laden nadat handgrepen zijn geladen.
 * zijn [inbegrepen](clientlibs.md).
 
-Opmerking: de SCF-helpers worden gedefinieerd in `/etc/clientlibs/social/commons/scf/helpers.js`.
+Opmerking: de SCF-helpers zijn gedefinieerd in `/etc/clientlibs/social/commons/scf/helpers.js`.
 
-| **[Essentiële ⇐](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
+| **[Essentiële ⇐ functies](essentials.md)** | **[Aanpassing aan server-side bezig jj.](server-customize.md)** |
 |---|---|
-|   | **[Aanpassing aan clientzijde☐](client-customize.md)** |
+|   | **[Aanpassing aan client-side bezig](client-customize.md)** |

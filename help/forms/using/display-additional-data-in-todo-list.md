@@ -1,7 +1,7 @@
 ---
 title: Extra gegevens weergeven in de lijst ToDo
 seo-title: Displaying additional data in ToDo list
-description: Hoe te om de vertoning van de te doen lijst van de werkruimte van LiveCycle AEM Forms aan te passen om meer informatie naast het gebrek te tonen.
+description: Hoe te om de vertoning van de te doen lijst van de werkruimte van AEM Forms van het LiveCycle aan te passen om meer informatie naast het gebrek te tonen.
 seo-description: How-to customize the display of the To-do list of LiveCycle AEM Forms workspace to show more information besides the default.
 uuid: 9467c655-dce2-43ce-8e8f-54542fe81279
 content-type: reference
@@ -10,7 +10,7 @@ topic-tags: forms-workspace
 discoiquuid: fed3b562-bcc2-4fb7-8fd2-35b1ac621e16
 docset: aem65
 exl-id: f8b84f13-02d3-4787-95e1-25fd684e6d3b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Standaard worden in de lijst Taak-weergavenaam en -beschrijving van de AEM Forms
 
 ![Een blik bij de Te doen lusje van de Werkruimte van de HTML die standaardconfiguratie tonen](assets/html-todo-list.png)
 
-In dit artikel worden de stappen beschreven die moeten worden uitgevoerd om informatie toe te voegen die voor elke taak in de lijst AanDoe moet worden weergegeven.
+In dit artikel worden de stappen beschreven die moeten worden uitgevoerd om informatie toe te voegen voor elke taak in de lijst AanDoe.
 
 ## Wat kan worden toegevoegd {#what-can-be-added}
 
@@ -34,9 +34,9 @@ Zie voor meer informatie over de beschrijving van het JSON-object [dit](/help/fo
 ## Informatie weergeven over een taak {#displaying-information-on-a-task}
 
 1. Volg de [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](../../forms/using/generic-steps-html-workspace-customization.md).
-1. Als u aanvullende informatie voor een taak wilt weergeven, moeten de corresponderende sleutel-waardeparen worden toegevoegd binnen het taakblok van `translation.json`.
+1. Om extra informatie voor een taak te tonen, moeten de overeenkomstige zeer belangrijk-waardeparen binnen het taakblok van worden toegevoegd `translation.json`.
 
-   Bijvoorbeeld wijzigen `/apps/ws/locales/en-US/translation.json` voor het Engels:
+   Bijvoorbeeld, wijzigen `/apps/ws/locales/en-US/translation.json` voor het Engels:
 
    ```json
    "task" : {
@@ -125,7 +125,7 @@ Zie voor meer informatie over de beschrijving van het JSON-object [dit](/help/fo
 
 1. U kunt stijl toepassen op de informatie (eigenschap) die aan een taak is toegevoegd. Hiervoor moet u stijlinformatie toevoegen voor de nieuwe eigenschap die is toegevoegd aan `/apps/ws/css/newStyle.css`.
 
-   Voeg bijvoorbeeld toe:
+   Bijvoorbeeld:
 
    ```css
    .task .taskProperties .stepname{

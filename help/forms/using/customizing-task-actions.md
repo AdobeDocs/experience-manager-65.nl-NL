@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 exl-id: d17863fb-7950-493d-b378-16861c4af176
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '287'
 ht-degree: 0%
@@ -110,7 +110,7 @@ Als u de tekststijl wilt aanpassen, voegt u het volgende codefragment toe in het
 
 ## Afbeeldingen aanpassen {#customizing-images}
 
-Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in het dialoogvenster `/apps/ws/css/newStyle.css` bestand. Met het volgende codefragment wordt de afbeelding voor de *vergrendelen* handeling:
+Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in de `/apps/ws/css/newStyle.css` bestand. Met het volgende codefragment wordt de afbeelding voor de *vergrendelen* handeling:
 
 ```css
 #taskarea .taskActionsPopUp .lock, .task .taskActionsPopUp .lock{
@@ -120,7 +120,7 @@ Als u de afbeeldingen wilt aanpassen, voegt u het volgende codefragment toe in h
 
 >[!NOTE]
 >
->Voeg afzonderlijke stijlen toe om verschillende beelden of beelden van verschillende resolutie voor de lijst van de Taak en de acties van de Details van de Taak te tonen. U kunt bijvoorbeeld de actie &#39;vergrendelen&#39; wijzigen:
+>Voeg afzonderlijke stijlen toe om verschillende beelden of beelden van verschillende resolutie voor de lijst van de Taak en de acties van de Details van de Taak te tonen. Als u bijvoorbeeld de vergrendeling wilt wijzigen:
 
 ```css
 #taskarea .taskActionsPopUp .lock{
@@ -267,7 +267,7 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
 Voer de volgende stappen uit om het pop-upmenu Acties voor details aan te passen:
 
 * Kopieer het bestand /libs/ws/js/runtime/templates/taskdetails.html naar de map `/apps/ws/js/runtime/templates/` map:
-* Pictogramlabel inkapselen in de ankertag in plaats van tekst. De *nieuwe code* hieronder wordt de pictogramtag ingekapseld in de ankertag:
+* Pictogramlabel inkapselen in de ankertag in plaats van tekst. Bijvoorbeeld de *nieuwe code* hieronder wordt de pictogramtag ingekapseld in de ankertag:
 
 ```html
 // Original code

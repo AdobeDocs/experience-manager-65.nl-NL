@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
 exl-id: 8753aaab-959f-459b-bdb6-057cbe05d480
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1836'
+source-wordcount: '1835'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Als u bijvoorbeeld het volgende typt in de URL van uw browser:
 
 `https://<servername><port_number>/etc/importers/bulkeditor.html?rootPath=/content/geometrixx/en&queryParams=geometrixx&initialSearch=true&hrp=true`
 
-De bulkeditor wordt zonder de **Hoofdpad** veld als hrp=true verbergt het veld. Met de parameter hrp=false wordt het veld weergegeven (de standaardwaarde).
+De bulkeditor wordt zonder de **Hoofdpad** het veld verborgen als hrp=true. Met de parameter hrp=false wordt het veld weergegeven (de standaardwaarde).
 
 Hieronder volgt een lijst met queryparameters voor de Bulk Editor:
 
@@ -123,22 +123,22 @@ Hieronder volgt een lijst met queryparameters voor de Bulk Editor:
   <tr>
    <td> hideSaveButton / hsavep</td>
    <td> Boolean</td>
-   <td> indien waar (true), wordt de knop Opslaan verborgen</td>
+   <td> indien true, wordt de knop Opslaan verborgen</td>
   </tr>
   <tr>
    <td> hideExportButton / hexpb</td>
    <td> Boolean</td>
-   <td> indien waar (true), wordt de knop Exporteren verborgen</td>
+   <td> indien true, wordt de knop Exporteren verborgen</td>
   </tr>
   <tr>
    <td> hideImportButton / hib</td>
    <td> Boolean</td>
-   <td> indien waar (true), wordt de knop Importeren verborgen</td>
+   <td> indien true, wordt de knop Importeren verborgen</td>
   </tr>
   <tr>
    <td> hideResultNumber / hrn</td>
    <td> Boolean</td>
-   <td> indien waar (true), wordt de tekst van het rasterzoekresultaat verborgen</td>
+   <td> indien waar (true), wordt de tekst van het rasterzoekresultaatnummer verborgen</td>
   </tr>
   <tr>
    <td> hideInsertButton / hinsertB</td>
@@ -148,7 +148,7 @@ Hieronder volgt een lijst met queryparameters voor de Bulk Editor:
   <tr>
    <td> hideDeleteButton / hdelb</td>
    <td> Boolean</td>
-   <td> indien waar (true), wordt de knop voor het verwijderen van het raster verborgen</td>
+   <td> indien waar (true), wordt de knop Rasterverwijdering verborgen</td>
   </tr>
   <tr>
    <td> hidePathCol / hpc</td>
@@ -164,12 +164,12 @@ Deze sectie biedt een overzicht van het gebruik van de Bulk-editor en een beschr
 
 Met de component Productlijst kunnen gebruikers een tabel met gegevens weergeven en bewerken. U kunt bijvoorbeeld de component Productlijst gebruiken om producten in een catalogus te vertegenwoordigen. De informatie wordt weergegeven in een standaard HTML-tabel en alle bewerkingen worden uitgevoerd in het dialoogvenster **Bewerken** , die een BulkEditor-widget bevat. (Deze Bulk-editor is hetzelfde als de editor die beschikbaar is via /etc/importers/bulkeditor.html of via het menu Gereedschappen.) De component van de Lijst van het Product is gevormd voor specifieke, beperkte functionaliteit van de Redacteur van het Bulk. Elk deel van de Redacteur van het Bulk (of componenten die uit de Redacteur van het Bulk worden afgeleid) kan worden gevormd.
 
-Met de Bulk-editor kunt u de rijen toevoegen, wijzigen, verwijderen, filteren en exporteren, wijzigingen opslaan en een set rijen importeren. Elke rij wordt opgeslagen als een knoop onder de de componenteninstantie van de Lijst van het Product zelf. Elke cel is een eigenschap van elk knooppunt. Dit is een ontwerpkeuze die eenvoudig kan worden gewijzigd. U kunt knooppunten bijvoorbeeld ergens anders in de opslagplaats opslaan. De rol van de vraagserver is de lijst van de knopen terug te keren aan vertoning; het zoekpad wordt gedefinieerd als een instantie van de productlijst.
+Met de Bulk-editor kunt u de rijen toevoegen, wijzigen, verwijderen, filteren en exporteren, wijzigingen opslaan en een set rijen importeren. Elke rij wordt opgeslagen als een knoop onder de de componenteninstantie van de Lijst van het Product zelf. Elke cel is een eigenschap van elk knooppunt. Dit is een ontwerpkeuze die eenvoudig kan worden gewijzigd. U kunt knooppunten bijvoorbeeld ergens anders in de opslagplaats opslaan. De rol van de vraagserver is de lijst van de knopen terug te keren om te tonen; het onderzoekspad wordt bepaald als instantie van de Lijst van het Product.
 
 De broncode van de component Product List is beschikbaar in de gegevensopslagruimte op /apps/geometrixx/components/productlist en bestaat uit verschillende onderdelen, zoals alle Adobe Experience Manager-componenten (AEM):
 
-* HTML renderen: wordt de rendering uitgevoerd in een JSP-bestand (/apps/geometrixx/components/productlist/productlist.jsp). JSP leest subnodes van de huidige component van de Lijst van het Product en toont elk van hen als rij van een lijst van HTML.
-* Het dialoogvenster Bewerken waarin u de configuratie van de Bulk-editor definieert. Configureer het dialoogvenster zodat dit voldoet aan de behoeften van de component: beschikbare kolommen en mogelijke acties die worden uitgevoerd op het raster of op de zoekopdracht. Zie [Eigenschappen voor de configuratie van de Bulkeditor](#bulk-editor-configuration-properties) voor informatie over alle configuratieeigenschappen.
+* HTML-rendering: de rendering wordt uitgevoerd in een JSP-bestand (/apps/geometrixx/components/productlist/productlist.jsp). JSP leest subnodes van de huidige component van de Lijst van het Product en toont elk van hen als rij van een lijst van HTML.
+* Het dialoogvenster Bewerken waarin u de configuratie van de Bulk-editor definieert. Configureer het dialoogvenster zodat het voldoet aan de behoeften van de component: beschikbare kolommen en mogelijke acties die op het raster of op de zoekopdracht worden uitgevoerd. Zie [Eigenschappen voor de configuratie van de Bulkeditor](#bulk-editor-configuration-properties) voor informatie over alle configuratieeigenschappen.
 
 Hier volgt een XML-weergave van de subknooppunten van het dialoogvenster:
 
@@ -262,9 +262,9 @@ Hier volgt een XML-weergave van de subknooppunten van het dialoogvenster:
         </editor>
 ```
 
-### Eigenschappen van Bulkeditor {#bulk-editor-configuration-properties}
+### Eigenschappen van de Bulkeditor {#bulk-editor-configuration-properties}
 
-Elk deel van de Bulk-editor kan worden geconfigureerd. De volgende lijst maakt een lijst van alle configuratieeigenschappen voor de Redacteur van het Bulk.
+Elk deel van de Redacteur van het Bulk kan worden gevormd. De volgende lijst maakt een lijst van alle configuratieeigenschappen voor de Redacteur van het Bulk.
 
 <table>
  <tbody>
@@ -282,11 +282,11 @@ Elk deel van de Bulk-editor kan worden geconfigureerd. De volgende lijst maakt e
   </tr>
   <tr>
    <td>contentMode</td>
-   <td>True to enable content mode: eigenschappen worden gelezen op jcr:content node en niet op search result node</td>
+   <td>True to enable content mode: properties are read on jcr:content node and not on search result node</td>
   </tr>
   <tr>
    <td>colsValue</td>
-   <td>Gezochte eigenschappen (gecontroleerde waarden van colsSelection weergegeven als checkboxes)</td>
+   <td>Gezocht eigenschappen (controleerden waarden van colsSelection die als checkboxes worden getoond)</td>
   </tr>
   <tr>
    <td>extraCols</td>
@@ -434,9 +434,9 @@ Elk deel van de Bulk-editor kan worden geconfigureerd. De volgende lijst maakt e
     <ul>
      <li>cellStyle: html-stijl </li>
      <li>cellCls: css, klasse </li>
-     <li>readOnly: waar (true) om waarde niet te kunnen wijzigen </li>
+     <li>readOnly: true om waarde niet te kunnen wijzigen </li>
      <li>selectievakje: true om alle cellen van de kolom als selectievakjes te definiëren (waarden true/false) </li>
-     <li>forcePosition: gehele waarde om op te geven waar de kolom in het raster moet worden geplaatst (tussen 0 en het aantal kolommen-1)<p><br /> </p> </li>
+     <li>forcePosition: geheel getal om aan te geven waar de kolom in het raster moet worden geplaatst (tussen 0 en het aantal kolommen-1)<p><br /> </p> </li>
     </ul> </td>
   </tr>
  </tbody>
@@ -455,9 +455,9 @@ CSS- en alleen-lezen kolommen
 
 De Bulkeditor heeft drie kolomconfiguraties:
 
-* CSS-klassenaam van cel (cellCls): een CSS klassennaam die aan elke cel van de gevormde kolom wordt toegevoegd.
-* Celstijl (cellStyle): een stijl van HTML die aan elke cel van de gevormde kolom wordt toegevoegd.
-* Alleen-lezen (alleen-lezen): read only wordt geplaatst voor elke cel van de gevormde kolom.
+* CSS-klassenaam van cel (cellCls): een CSS-klassenaam die aan elke cel van de geconfigureerde kolom wordt toegevoegd.
+* Celstijl (cellStyle): een HTML-stijl die aan elke cel van de geconfigureerde kolom wordt toegevoegd.
+* Alleen-lezen (readOnly): alleen-lezen wordt ingesteld voor elke cel van de geconfigureerde kolom.
 
 De configuratie moet als volgt worden gedefinieerd:
 
@@ -522,7 +522,7 @@ In het eerste voorbeeld is de selectiekolom de eerste kolom met de notatie force
 
 Standaard kunt u de Query-server vinden op `/libs/wcm/core/components/bulkeditor/json.java`. U kunt een ander pad configureren om de gegevens op te halen.
 
-De servlet van de Vraag werkt als volgt: het ontvangt een vraag GQL en de kolommen om terug te keren, verwerkt de resultaten, en verzendt de resultaten terug naar de Redacteur van het Bulk als stroom JSON.
+Het servlet van de Vraag werkt als volgt: het ontvangt een vraag GQL en de kolommen om terug te keren, verwerkt de resultaten, en verzendt de resultaten terug naar de Redacteur van het Bulk als stroom JSON.
 
 In het de componentengeval van de Lijst van het Product, zijn de twee parameters die naar servlet van de Vraag worden verzonden als volgt:
 
@@ -570,4 +570,4 @@ servlet moet weten waar het catalogCode bezit wordt opgeslagen.
 
 Een standaard Save servlet implementatie is beschikbaar in /libs/wcm/bulkeditor/save/POST.jsp en wordt gebruikt in de component van de Lijst van het Product. Het neemt alle parameters van het verzoek (met a &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;> en schrijft eigenschappen op knooppunten die de JCR API gebruiken. Er wordt ook een knooppunt gemaakt als deze niet bestaan (raster ingevoegde rijen).
 
-De standaardcode zou niet moeten worden gebruikt zoals is omdat het uitvoert wat de server native doet (een POST op &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) en is daarom slechts een goed uitgangspunt voor de bouw van sparen servlet die een model van de bezitsovererving kan beheren.
+De standaardcode niet ongewijzigd gebruiken omdat deze bijimplementeert wat de server zelf doet (een POST op &lt;jcr path=&quot;&quot;>/&lt;property name=&quot;&quot;>) en is daarom slechts een goed uitgangspunt voor de bouw van sparen servlet die een model van de bezitsovererving kan beheren.

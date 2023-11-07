@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 565d89de-b3ca-41a5-8e1c-d10905c25fb5
 exl-id: 1e05faf5-619a-4ea3-acbf-2fd37c71e6d2
 feature: Operations
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '600'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Het onderhoud van het controlelogboek omvat verscheidene delen van functionalite
 
 Het wordt uitgevoerd als configureerbare wekelijkse onderhoudstaak en is toegankelijk via de de monitorconsole van het Dashboard van Verrichtingen.
 
-Raadpleeg voor meer informatie de [Documentatie van het bewerkingsdashboard](/help/sites-administering/operations-dashboard.md).
+Zie de klasse [Documentatie van het bewerkingsdashboard](/help/sites-administering/operations-dashboard.md).
 
 Er zijn drie typen opties voor het opschonen van controlelogbestanden:
 
@@ -58,7 +58,7 @@ Voer de volgende stappen uit om het opschonen van controlelogbestanden te config
    >Het inhoudspad is alleen van toepassing op onderliggende elementen van het dialoogvenster `/var/audit/com.day.cq.wcm.core.page` in de repository.
 
 1. Sla de regel op.
-1. De regel u enkel creeerde moet in het Dashboard van Verrichtingen worden blootgesteld opdat het wordt uitgevoerd. Ga als volgt te werk om dit te doen **Gereedschappen - Operaties - Onderhoud** in het welkomstscherm AEM.
+1. De regel u creeerde moet in het Dashboard van Verrichtingen worden blootgesteld opdat het wordt uitgevoerd. Ga als volgt te werk om dit te doen **Gereedschappen - Operaties - Onderhoud** in het welkomstscherm AEM.
 
 1. Druk op **Wekelijks onderhoudvenster** kaart.
 

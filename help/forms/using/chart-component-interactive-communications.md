@@ -11,9 +11,9 @@ discoiquuid: e21714ad-d445-4aff-b0db-d577061e0907
 docset: aem65
 feature: Interactive Communication
 exl-id: 0f877a15-a17f-427f-8d89-62ada4d20918
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2579'
+source-wordcount: '2575'
 ht-degree: 0%
 
 ---
@@ -161,7 +161,7 @@ Configureer de volgende eigenschappen tijdens het maken van grafieken voor afdru
    <td><p>Naast gemeenschappelijke configuraties, zijn de volgende grafiek-specifieke configuratie beschikbaar:</p>
     <ul>
      <li><strong>Legenda tonen: </strong>Hiermee geeft u een legenda weer voor de taart of het donutdiagram als dit is ingeschakeld.</li>
-     <li><strong>Legenda: </strong>Geeft de positie van de legenda ten opzichte van het diagram aan. De beschikbare opties zijn Rechts, Links, Boven en Onder. U wordt aangeraden de rechterlegenda in het afdrukkanaal te gebruiken.</li>
+     <li><strong>Legenda: </strong>Geeft de positie van de legenda ten opzichte van het diagram aan. De beschikbare opties zijn Rechts, Links, Boven en Onder. Gebruik de rechterlegenda in het afdrukkanaal.</li>
      <li><strong>Binnenstraal</strong>: Beschikbaar voor Donut-grafieken om de straal (in pixels) van de binnencirkel in het diagram op te geven.</li>
      <li><strong>Lijnkleur</strong>: Beschikbaar voor diagrammen voor Lijn, Lijn en Punt en Gebied om de kleur voor de lijn in de grafiek op te geven.</li>
      <li><strong>Puntkleur</strong>: Beschikbaar voor de grafieken van het Punt en van de Lijn en van het Punt om de kleur voor de punten in de grafiek te specificeren.<br /> </li>

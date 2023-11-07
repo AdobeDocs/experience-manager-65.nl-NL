@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 exl-id: 009b7e2c-ac37-4acc-a656-0a34d3853dfd
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '634'
 ht-degree: 0%
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework nodig hebben (bijvoorbeeld Reageren). [Meer informatie](/help/sites-developing/spa-overview.md).
+>De Adobe adviseert het gebruiken van de SPARedacteur voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (bijvoorbeeld, Reageren) vereisen. [Meer informatie](/help/sites-developing/spa-overview.md).
 
-Met Adobe Experience Manager (AEM) kunnen auteurs een pagina weergeven in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken, bijvoorbeeld op een mobiel apparaat of in een e-mailclient.
+Met Adobe Experience Manager (AEM) kunnen auteurs een pagina weergeven in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina weergeeft, bijvoorbeeld op een mobiel apparaat of in een e-mailclient.
 
 Het AEM emulatorframework:
 
@@ -93,7 +93,7 @@ Er zijn twee div-tags toegevoegd:
 
 * div met id `cq-emulator-content` die de viewport/het scherm/het inhoudsgebied van het apparaat vertegenwoordigt waar de pagina-inhoud zich bevindt.
 
-Nieuwe CSS-klassen worden ook toegewezen aan de nieuwe emulator-div: ze vertegenwoordigen de naam van de huidige emulator.
+Nieuwe CSS-klassen worden ook toegewezen aan de nieuwe emulator-div: deze vertegenwoordigen de naam van de huidige emulator.
 
 Plugins van een emulator kunnen de lijst met toegewezen CSS-klassen verder uitbreiden, zoals in het voorbeeld van de rotatie-insteekmodule, waarbij een klasse &quot;vertical&quot; of &quot;horizontal&quot; wordt ingevoegd, afhankelijk van de huidige rotatie van het apparaat.
 
@@ -114,7 +114,7 @@ De bestaande mobiele emulators:
 
 Wanneer de paginacomponent op de mobiele paginacomponent ( `/libs/wcm/mobile/components/page`), wordt de emulatorfunctionaliteit automatisch in de pagina geïntegreerd via het volgende mechanisme:
 
-* De component mobiele pagina `head.jsp` bevat de daaraan gekoppelde emulator van de apparaatgroep in de it-component (alleen in de auteursmodus) en de CSS-weergave van de apparaatgroep via:
+* De component voor mobiele pagina `head.jsp` bevat de daaraan gekoppelde emulator van de apparaatgroep in de it-component (alleen in de auteursmodus) en de CSS-weergave van de apparaatgroep via:
 
   `deviceGroup.drawHead(pageContext);`
 
@@ -139,15 +139,15 @@ Een aangepaste mobiele emulator maken:
 
 1. Stel de `sling:resourceSuperType` eigenschap aan `/libs/wcm/mobile/components/emulators/base`
 
-1. Een CSS-clientbibliotheek met een categorie definiëren `cq.wcm.mobile.emulator` voor de vormgeving van de emulator: name = `css`, knooppunttype = `cq:ClientLibrary`
+1. Een CSS-clientbibliotheek met een categorie definiëren `cq.wcm.mobile.emulator` voor de vormgeving van de emulator: naam = `css`, knooppunttype = `cq:ClientLibrary`
 
    Als voorbeeld kunt u naar het knooppunt verwijzen `/libs/wcm/mobile/components/emulators/iPhone/css`
 
-1. Definieer zo nodig een JS-clientbibliotheek, bijvoorbeeld om een specifieke insteekmodule te definiëren: name = js, knooptype = cq:ClientLibrary
+1. Definieer zo nodig een JS-clientbibliotheek, bijvoorbeeld om een specifieke insteekmodule te definiëren: name = js, knooppunttype = cq:ClientLibrary
 
    Als voorbeeld kunt u naar het knooppunt verwijzen `/libs/wcm/mobile/components/emulators/base/js`
 
-1. Als de emulator specifieke functies ondersteunt die worden gedefinieerd door plug-ins (zoals aanraakschuiven), maakt u een configuratieknooppunt onder de emulator: name = `cq:emulatorConfig`, knooppunttype = `nt:unstructured` en voeg de eigenschap toe die de insteekmodule definieert:
+1. Als de emulator specifieke functies ondersteunt die worden gedefinieerd door plug-ins (zoals schuiven door aanrakingen), maakt u een configuratieknooppunt onder de emulator: name = `cq:emulatorConfig`, knooppunttype = `nt:unstructured` en voeg de eigenschap toe die de insteekmodule definieert:
 
    * Naam = `canRotate`, Type = `Boolean`, Waarde = `true`: om de rotatiefunctie op te nemen.
 

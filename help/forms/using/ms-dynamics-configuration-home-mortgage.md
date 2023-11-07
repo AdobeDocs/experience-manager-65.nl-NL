@@ -1,29 +1,25 @@
 ---
 title: Configureer Microsoft Dynamics 365 voor de workflow voor hypothecair thuis van de website Web.Finance
-seo-title: Configure Microsoft Dynamics 365 for the home mortgage workflow of the We.Finance reference site
-description: Leer hoe u de Microsoft® Dynamics 365-services kunt gebruiken door adaptieve formulieren te maken voor de workflow voor hypotheken thuis op de website Web.Finance Reference
-seo-description: Learn how to leverage the Microsoft® Dynamics 365 services through adaptive forms for the home mortgage workflow of the We.Finance Reference site
-uuid: a0656d90-84c7-46d1-9a16-dadcc19ff9ef
+description: Leer hoe u de Microsoft&reg gebruikt; Dynamics 365 services via adaptieve formulieren voor de workflow voor hypotheken thuis van de website Web.Finance Reference.
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: develop, Configuration
-discoiquuid: 6b31397a-fb06-4043-9368-59fb4fce8afa
 exl-id: 2ac37dc5-d88d-4f98-8576-cd2ca6f0ea3a
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '398'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 # Configureer Microsoft Dynamics 365 voor de workflow voor hypothecair thuis van de website Web.Finance {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
-Leer hoe u de Microsoft® Dynamics 365-services kunt gebruiken door adaptieve formulieren te maken voor de workflow voor hypotheken thuis op de website Web.Finance Reference
+Leer hoe u de Microsoft® Dynamics 365-services kunt gebruiken via adaptieve formulieren voor de hypotheekworkflow op de website Web.Finance
 
 ## Overzicht {#overview}
 
 Microsoft® Dynamics 365 is een ERP-software (Customer Relationship Management) en een ERP-software (Customer Relationship Management) die bedrijfsoplossingen biedt voor het maken en beheren van klantaccounts, contactpersonen, leads, mogelijkheden en gevallen.
 
-AEM Forms biedt een cloudservice voor de integratie van Dynamics 365 met [Forms-gegevensintegratie](/help/forms/using/data-integration.md) module. Alvorens u de de toepassingsanalyse van de Kortere meetkunde van het Huis met het scenario van de Dynamiek Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
+AEM Forms biedt een cloudservice voor de integratie van Dynamics 365 met [Forms-gegevensintegratie](/help/forms/using/data-integration.md) -module. Alvorens u de de toepassingsanalyse van de Kortere pas van het Huis met het scenario van de Dynamiek Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
 
 ## Vereisten {#prerequisites}
 
@@ -31,7 +27,7 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
 * AEM 6.3 Forms Service Pack 1 en hoger
 * Microsoft® Dynamics 365 account
-* Geregistreerde toepassing voor Dynamics 365-service met Microsoft® Azure Active Directory
+* Registered application for Dynamics 365 service with Microsoft® Azure Active Directory
 * Client-id en clientgeheim voor de geregistreerde toepassing
 
 ## Koppel de hypotheekcalculator voor woninghypotheken aan de homepage van uw site {#link-the-home-mortgage-calculator-with-your-site-home-page}
@@ -64,7 +60,7 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importeer het oplossingspakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Instellingen** > **Oplossingen** en tik vervolgens op **Importeren**.
+   1. Importeer het oplossingspakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Instellingen** > **Oplossingen** en tikt u vervolgens op **Importeren**.
 
 1. Als u de contactgegevens van de gebruiker wilt instellen die worden gebruikt in de terugzetsite, importeert u het pakket Sarah Rose Contact.CSV naar de instantie Microsoft® Dynamics:
 
@@ -72,4 +68,4 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
       `https://'[server]:[port]'/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importeer het pakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Verkoop** > **Contactpersonen** en tik vervolgens op **Gegevens importeren**.
+   1. Importeer het pakket naar de Microsoft® Dynamics-instantie. Ga in je Microsoft® Dynamics-instantie naar **Verkoop** > **Contactpersonen** en tikt u vervolgens op **Gegevens importeren**.

@@ -5,9 +5,9 @@ role: Admin
 feature: Integrations
 exl-id: 2660de7c-0281-4884-98d9-e78f20cf571c
 hide: true
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1608'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Voer de volgende stappen uit om u te abonneren op de gebeurtenissen:
 1. Ga naar het tabblad Gekoppelde projectmappen in de cloudservices.
 1. Bovenliggend pad van gekoppelde map: selecteer een map in de DAM waar u de gekoppelde mappen wilt maken. Als het verlaten leeg blijft, zal het aan /content/dam in gebreke blijven. Controleer of het metagegevensschema voor Workfront Tools en het metagegevensschema voor de map Workfront Linked Folder zijn toegepast op de geselecteerde map.
 1. Gekoppelde mapstructuur: voer door komma&#39;s gescheiden waarden in. Elke waarde moet `DE:<some-project-custom-form-field>`, Portfolio, Program, Year, Name of een of andere &#39;Letterlijke tekenreekswaarde&#39; (deze laatste met aanhalingstekens). Deze is momenteel ingesteld op Portfolio,Programma,Jaar,DE:Projecttype,Naam.
-1. De functie voor het maken van gekoppelde mappen in Workfront met het selectievakje voor mapstructuurnamen moet zijn ingeschakeld als de titel van de map in Workfront alle mappen in de structuur moet bevatten. Anders wordt dit de titel van de laatste map.
+1. De functie voor het maken van gekoppelde mappen in Workfront met het selectievakje voor mapstructuurnamen moet zijn ingeschakeld als de titel van de map in Workfront alle mappen in de structuur moet bevatten. Anders is dit de titel van de laatste map.
 1. Met submappen met meerdere velden kunt u een lijst opgeven met mappen die moeten worden gemaakt als een onderliggende map van de gekoppelde map.
 1. Projectstatus: selecteer de status van het project om de gekoppelde map te maken.
 1. Maak een gekoppelde map in projecten met een portfolio: lijst met Portfolio&#39;s waartoe het project moet behoren om de gekoppelde map te maken. Laat deze lijst leeg om de gekoppelde map voor alle projectportfolio te maken.
@@ -95,7 +95,7 @@ Metagegevenstoewijzing tussen Adobe Workfront-documenten en -elementen wordt ged
 Voer de volgende stappen uit om de toewijzingen te configureren:
 
 1. Navigeren naar **Gereedschappen** > **Activa** > **Metagegevensschema&#39;s**.
-1. Selecteer het schema voor metagegevens dat u wilt bewerken en klik op **Bewerken** of maak een geheel nieuw metagegevensschema.
+1. Selecteer het schema voor metagegevens dat u wilt bewerken en klik op **Bewerken** of maak een volledig nieuw metagegevensschema.
 1. Selecteer het formulierveld voor het metagegevensschema dat u wilt bewerken en selecteer **Instellingen** in het rechterdeelvenster.
 1. In [!DNL Workfront] Selecteer de naam van het veld Aangepast formulier [!DNL Workfront] veld dat u wilt toewijzen aan de geselecteerde AEM-eigenschap. Beschikbare opties zijn:
 
@@ -173,7 +173,7 @@ Om versiegeschiedenis van activa in AEM te handhaven, vorm activa versioning in 
 
 1. Selectie, optie **[!UICONTROL Store assets with the same name as versions of the existing asset]**. Als deze optie is ingeschakeld, kunnen elementen die met dezelfde naam en naar dezelfde locatie zijn geüpload als de versie van het bestaande element worden opgeslagen. Als deze optie is uitgeschakeld, wordt een nieuw element gemaakt met een andere naam (bijvoorbeeld `asset-name.pdf` en `asset-name-1.pdf`).
 
-1. Selectie, optie **[!UICONTROL Update asset metadata when creating a new version]**. Als deze optie is ingeschakeld, worden de metagegevens van de elementen bijgewerkt wanneer een nieuwe versie van het element wordt gemaakt. Als deze optie is uitgeschakeld, blijven de metagegevens van het element behouden voordat de nieuwe versie wordt gemaakt.
+1. Selectie, optie **[!UICONTROL Update asset metadata when creating a version]**. Als deze optie is ingeschakeld, worden de metagegevens van de elementen bijgewerkt wanneer een nieuwe versie van het element wordt gemaakt. Als deze optie is uitgeschakeld, blijven de metagegevens van het element behouden voordat de nieuwe versie wordt gemaakt.
 
 ![middelenversie configureren](/help/assets/assets/wf-config-versioning.png)
 

@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dd11fd83-3df1-4727-8340-8c5426812823
 docset: aem65
 exl-id: 8d17194b-8baf-4878-b3ae-d351a056aebf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1078'
+source-wordcount: '1077'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM, waaro
 
 De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Zie voor meer informatie over weergave en filters [Uw Postvak IN](/help/sites-authoring/inbox.md).
 
-Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken beheren.
+Samenvattend kunt u met Inbox een toepassing maken en toegewezen taken beheren.
 
 >[!NOTE]
 >

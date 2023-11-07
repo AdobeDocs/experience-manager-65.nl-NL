@@ -1,21 +1,21 @@
 ---
-title: Een nieuwe graniet UI-veldcomponent maken
-description: De graniet-interface biedt een aantal componenten die zijn ontworpen voor gebruik in formulieren, velden genaamd
+title: Een nieuwe graniet-UI-veldcomponent maken
+description: Granite UI biedt een reeks componenten die zijn ontworpen voor gebruik in formulieren, velden genaamd.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
 content-type: reference
 exl-id: e4820330-2ee6-4eca-83fd-462aa0b83647
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
 
-# Een nieuwe graniet UI-veldcomponent maken{#creating-a-new-granite-ui-field-component}
+# Een nieuwe graniet-UI-veldcomponent maken{#creating-a-new-granite-ui-field-component}
 
-Graniet UI biedt een reeks componenten die zijn ontworpen voor gebruik in formulieren; deze worden *velden* in de woordenlijst van de gebruikersinterface van Granite. De standaardcomponenten voor graniet-formulieren zijn beschikbaar onder:
+De graniet UI verstrekt een waaier van componenten die worden ontworpen om in vormen worden gebruikt; deze worden genoemd *velden* in de woordenlijst van de gebruikersinterface van Granite. De standaardcomponenten voor graniet-formulieren zijn beschikbaar onder:
 
 `/libs/granite/ui/components/foundation/form/*`
 
@@ -44,8 +44,8 @@ Gebruik het granite UI Foundation-framework om granitecomponenten te ontwikkelen
 
 De generische graniet UI-component `field` bestaat uit twee belangstellende bestanden:
 
-* `init.jsp`: verwerkt de generieke verwerking; een label, beschrijving en een formulierwaarde die u nodig hebt bij het weergeven van uw veld.
-* `render.jsp`: In dit geval wordt de daadwerkelijke rendering van het veld uitgevoerd en moet deze worden overschreven voor het aangepaste veld. is opgenomen in `init.jsp`.
+* `init.jsp`Met : wordt de algemene verwerking afgehandeld; de labels, beschrijving en de formulierwaarde die u nodig hebt bij het weergeven van het veld.
+* `render.jsp`: dit is de plaats waar de daadwerkelijke rendering van het veld wordt uitgevoerd en moet worden overschreven voor uw aangepaste veld; wordt opgenomen door `init.jsp`.
 
 Zie [Granite UI-documentatie - Veld](https://developer.adobe.com/experience-manager/reference-materials/6-5/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/form/field/index.html) voor meer informatie.
 
@@ -85,7 +85,7 @@ Het aangepaste veld mag alleen het `render.jsp` script, waar u de markering voor
    vm.get("value, String.class");
    ```
 
-   Voor meer informatie, gelieve te verwijzen naar de implementatie van uit-van-de-doos gebieden van de Vergroting UI; bijvoorbeeld: `/libs/granite/ui/components/foundation/form/textfield`.
+   Voor meer details, zie de implementatie van uit-de-doos gebieden van de Vergroting UI; bijvoorbeeld `/libs/granite/ui/components/foundation/form/textfield`.
 
    >[!NOTE]
    >
@@ -96,9 +96,9 @@ Het aangepaste veld mag alleen het `render.jsp` script, waar u de markering voor
 Specifiek gedrag aan de clientzijde toevoegen aan de component:
 
 1. Een clientlib van een categorie maken `cq.authoring.dialog`.
-1. Een clientlib van een categorie maken `cq.authoring.dialog` en definieer uw `JS`/ `CSS` erin.
+1. Een clientlib van een categorie maken `cq.authoring.dialog` en definieert u uw `JS`/ `CSS` erin.
 
-   Definieer uw `JS`/ `CSS` in de clientlib.
+   Definieer uw `JS`/ `CSS` in de client.
 
    >[!NOTE]
    >

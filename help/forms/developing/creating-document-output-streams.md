@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '19006'
+source-wordcount: '18965'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ In de volgende secties ziet u hoe u een formulierontwerp aan de Output-service d
 
 In de volgende secties ziet u hoe u een formulierontwerp kunt doorgeven in een `com.adobe.idp.Document` -instantie:
 
-* [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [PDF-documenten maken met behulp van fragmenten](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 
 Als u bepaalt welke techniek u moet gebruiken, moet u eerst bepalen of u het formulierontwerp van een andere AEM Forms-service ontvangt en het vervolgens doorgeeft binnen een `com.adobe.idp.Document` -instantie. Beide *Documenten doorgeven aan de uitvoerservice* en *PDF-documenten maken met behulp van fragmenten* In deze secties ziet u hoe u een formulierontwerp kunt ophalen van een andere AEM Forms-service. De eerste sectie haalt het formulierontwerp op van Content Services (afgekeurd). In de tweede sectie wordt het formulierontwerp opgehaald uit de Assembler-service.
@@ -57,7 +57,7 @@ U kunt deze taken uitvoeren met de service Uitvoer:
 
 * [PDF-documenten maken](creating-document-output-streams.md#creating-pdf-documents)
 * [PDF/A-documenten maken](creating-document-output-streams.md#creating-pdf-a-documents)
-* [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
+* [Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)
 * [PDF-documenten maken met behulp van fragmenten](creating-document-output-streams.md#creating-pdf-documents-using-fragments)
 * [Afdrukken naar bestanden](creating-document-output-streams.md#printing-to-files)
 * [Afdrukstromen naar printers verzenden](creating-document-output-streams.md#sending-print-streams-to-printers)
@@ -188,7 +188,7 @@ Als het XDP-bestand afbeeldingen (of andere bronnen zoals fragmenten) bevat, pla
 
 >[!NOTE]
 >
->Voor een volledige snelle start die een PDF-document maakt door te verwijzen naar een XDP die zich in een Forms-toepassing bevindt, raadpleegt u [Snel starten (EJB-modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
+>Zie voor een volledige snelle start die een PDF-document maakt door te verwijzen naar een XDP in een Forms-toepassing [Snel starten (EJB-modus): een PDF-document maken op basis van een XDP-bestand van een toepassing met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-an-application-xdp-file-using-the-java-api).
 
 **De resultaten van de bewerking ophalen**
 
@@ -265,7 +265,7 @@ Een PDF-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >U kunt ook een PDF-document maken door het `OutputClient` object `generatePDFOutput2` methode. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >U kunt ook een PDF-document maken door het `OutputClient` object `generatePDFOutput2` methode. (Zie [Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Haal de resultaten van de bewerking op.
 
@@ -358,7 +358,7 @@ Maak een PDF-document met de Output API (webservice):
 
    >[!NOTE]
    >
-   >U kunt ook een PDF-document maken door het `OutputClient` object `generatePDFOutput2` methode. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
+   >U kunt ook een PDF-document maken door het `OutputClient` object `generatePDFOutput2` methode. (Zie [Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice ](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service)*.)*
 
 1. Haal de resultaten van de bewerking op.
 
@@ -385,7 +385,7 @@ Met de service Uitvoer kunt u een PDF/A-document maken. Omdat PDF/A een archiefi
 
 De PDF/A-1-specificatie bestaat uit twee conformiteitsniveaus, namelijk a en b. Het grootste verschil tussen beide is de logische structuur (toegankelijkheid) die niet vereist is voor niveau b. Ongeacht het compatibiliteitsniveau, dicteert PDF/A-1 dat alle lettertypen zijn ingesloten in het gegenereerde PDF/A-document.
 
-Hoewel PDF/A de norm voor het archiveren van PDF- documenten is, is het niet verplicht dat PDF/A voor het archiveren wordt gebruikt als een standaarddocument van de PDF voldoet aan de behoeften van uw bedrijf. Het doel van de PDF/A-standaard is een PDF-bestand te maken dat gedurende een lange periode kan worden opgeslagen en dat voldoet aan de vereisten voor documentbewaring. Een URL kan bijvoorbeeld niet worden ingesloten in een PDF/A omdat de URL na verloop van tijd ongeldig kan worden.
+Hoewel PDF/A de norm voor het archiveren van PDF- documenten is, is het niet verplicht dat PDF/A voor het archiveren wordt gebruikt als een standaarddocument van de PDF voldoet aan de behoeften van uw bedrijf. De PDF/A-standaard heeft tot doel een bestand van het type PDF te maken dat gedurende een lange periode kan worden opgeslagen en voldoet aan de vereisten voor documentbewaring. Een URL kan bijvoorbeeld niet worden ingesloten in een PDF/A omdat de URL na verloop van tijd ongeldig kan worden.
 
 Uw organisatie moet haar eigen behoeften, de tijdsduur beoordelen u van plan bent om het document te houden, dossiergrootte overwegingen, en uw eigen archiveringsstrategie te bepalen. U kunt programmatically bepalen als een document van PDF PDF/A volgzaam is door de dienst te gebruiken DocConverter. (Zie [Programmaticaal bepalen van PDF/A-compatibiliteit](/help/forms/developing/pdf-a-documents.md#programmatically-determining-pdf-a-compliancy).)
 
@@ -523,7 +523,7 @@ Een PDF/A-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2 methode. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2 methode. (Zie [Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Haal de resultaten van de bewerking op.
 
@@ -609,7 +609,7 @@ Een PDF/A-document maken met de Output API (webservice):
 
    >[!NOTE]
    >
-   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2 methode. (Zie [Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
+   >U kunt ook een PDF /A-document maken door het `OutputClient` object `generatePDFOutput`2 methode. (Zie [Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice](creating-document-output-streams.md#passing-documents-located-in-content-services-deprecated-to-the-output-service).)
 
 1. Haal de resultaten van de bewerking op.
 
@@ -626,9 +626,9 @@ Een PDF/A-document maken met de Output API (webservice):
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Het overgaan van Documenten die in de (verlaten) Inhoudsdiensten worden gevestigd aan de Dienst van de Output {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
+## Documenten in Inhoudsservices (afgekeurd) doorgeven aan de Uitvoerservice {#passing-documents-located-in-content-services-deprecated-to-the-output-service}
 
-De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De uitvoerservice geeft vervolgens het formulierontwerp weer dat zich bevindt in het dialoogvenster `com.adobe.idp.Document` object.
+De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De service Uitvoer geeft het formulierontwerp vervolgens weer in het dialoogvenster `com.adobe.idp.Document` object.
 
 Een voordeel van het doorgeven van een `com.adobe.idp.Document` object naar de Output-service is dat andere AEM Forms-servicebewerkingen een `com.adobe.idp.Document` -instantie. Dat wil zeggen dat je een `com.adobe.idp.Document` instantie van een andere servicebewerking en rendert u deze. Stel dat een XDP-bestand wordt opgeslagen in een knooppunt Content Services (afgekeurd) genaamd `/Company Home/Form Designs`, zoals in de volgende afbeelding wordt getoond.
 
@@ -817,13 +817,13 @@ Geef een document door dat is opgehaald uit Content Services (afgekeurd) met de 
 
 ## Documenten in de opslagplaats doorgeven aan de uitvoerservice {#passing-documents-located-in-the-repository-to-the-output-service}
 
-De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De uitvoerservice geeft vervolgens het formulierontwerp weer dat zich bevindt in het dialoogvenster `com.adobe.idp.Document` object.
+De service Uitvoer genereert een niet-interactief PDF-formulier dat is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. U kunt een `com.adobe.idp.Document` object dat het formulierontwerp bevat voor de uitvoerservice. De service Uitvoer geeft het formulierontwerp vervolgens weer in het dialoogvenster `com.adobe.idp.Document` object.
 
 Een voordeel van het doorgeven van een `com.adobe.idp.Document` object naar de Output-service is dat andere AEM Forms-servicebewerkingen een `com.adobe.idp.Document` -instantie. Dat wil zeggen dat je een `com.adobe.idp.Document` instantie van een andere servicebewerking en rendert u deze. Stel bijvoorbeeld dat een XDP-bestand wordt opgeslagen in de AEM Forms-opslagplaats, zoals in de volgende afbeelding wordt getoond.
 
 ![pd_pd_formrepository](assets/pd_pd_formrepository.png)
 
-De *FormsFolder* Deze map is een door de gebruiker gedefinieerde locatie in de AEM Forms-opslagplaats (deze locatie is een voorbeeld en bestaat standaard niet). In dit voorbeeld bevindt zich een formulierontwerp met de naam Loan.xdp in deze map. Naast het formulierontwerp kunnen ook andere formulierelementen, zoals afbeeldingen, op deze locatie worden opgeslagen. Het pad naar een bron in de AEM Forms-opslagplaats is:
+De *FormsFolder* Deze map is een door de gebruiker gedefinieerde locatie in de AEM Forms-opslagplaats (deze locatie is een voorbeeld en bestaat standaard niet). In dit voorbeeld bevindt het formulierontwerp met de naam Loan.xdp zich in deze map. Naast het formulierontwerp kunnen ook andere formulierelementen, zoals afbeeldingen, op deze locatie worden opgeslagen. Het pad naar een resource in de AEM Forms-opslagplaats is:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -877,7 +877,7 @@ U kunt het niet-interactieve formulier opslaan als een PDF-bestand. Het formulie
 
 **Zie ook**
 
-[Documenten in de opslagplaats doorgeven aan de uitvoerservice met behulp van de Java API](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Documenten in de gegevensopslagruimte aan de uitvoerservice doorgeven met de Java API](creating-document-output-streams.md#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -887,7 +887,7 @@ U kunt het niet-interactieve formulier opslaan als een PDF-bestand. Het formulie
 
 ResourceRepositoryClient
 
-### Documenten in de opslagplaats doorgeven aan de uitvoerservice met behulp van de Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
+### Documenten in de gegevensopslagruimte aan de uitvoerservice doorgeven met de Java API {#pass-documents-located-in-the-repository-to-the-output-service-using-the-java-api}
 
 Geef een document dat is opgehaald uit de opslagplaats door gebruik te maken van de Output-service en de Repository-API (Java):
 
@@ -936,7 +936,7 @@ Geef een document dat is opgehaald uit de opslagplaats door gebruik te maken van
 
 ## PDF-documenten maken met behulp van fragmenten {#creating-pdf-documents-using-fragments}
 
-Met de services Uitvoer en Samenstellen kunt u een uitvoerstream maken, zoals een PDF-document, die is gebaseerd op fragmenten. De Assembler-service brengt een XDP-document samen dat is gebaseerd op fragmenten die zich in meerdere XDP-bestanden bevinden. Het samengevoegde XDP-document wordt doorgegeven aan de Output-service, die een PDF-document maakt. Hoewel deze workflow een PDF-document weergeeft dat wordt gegenereerd, kan de Output-service andere uitvoertypen genereren, zoals ZPL, voor deze workflow. Een PDF-document wordt alleen gebruikt voor discussiedoeleinden.
+Met de services Uitvoer en Samenstellen kunt u een uitvoerstream maken, zoals een PDF-document, die is gebaseerd op fragmenten. De Assembler-service brengt een XDP-document samen dat is gebaseerd op fragmenten in meerdere XDP-bestanden. Het samengevoegde XDP-document wordt doorgegeven aan de Output-service, die een PDF-document maakt. Hoewel deze workflow een PDF-document weergeeft dat wordt gegenereerd, kan de Output-service andere uitvoertypen genereren, zoals ZPL, voor deze workflow. Een PDF-document wordt alleen gebruikt voor discussiedoeleinden.
 
 Deze workflow wordt in de volgende afbeelding getoond.
 
@@ -1313,7 +1313,7 @@ Afdrukken naar een bestand met de Output API (webservice):
 1. Stel de runtime-opties voor afdrukken in die nodig zijn om af te drukken naar een bestand.
 
    * Een `PrintedOutputOptionsSpec` object met behulp van de constructor.
-   * Geef het bestand op door een tekenreekswaarde toe te wijzen die de locatie en naam van het bestand vertegenwoordigt voor de `PrintedOutputOptionsSpec` object `fileURI` lid. Als u bijvoorbeeld wilt dat de uitvoerservice wordt afgedrukt naar een PostScript-bestand met de naam *MortgaugeForm.ps* in C:\Adobe, specificeer C:\\Adobe\MortgageForm.ps.
+   * Geef het bestand op door een tekenreekswaarde toe te wijzen die de locatie en naam van het bestand vertegenwoordigt voor de `PrintedOutputOptionsSpec` object `fileURI` lid. Als u bijvoorbeeld wilt dat de uitvoerservice wordt afgedrukt naar een PostScript-bestand met de naam *MortgaugeForm.ps* in C:\Adobe: C:\\Adobe\MortgageForm.ps.
    * Geef het aantal exemplaren op dat moet worden afgedrukt door een geheel-getalwaarde toe te wijzen die het aantal exemplaren aan de `PrintedOutputOptionsSpec` object `copies` leden van gegevens.
 
 1. Druk de afdrukstroom naar een bestand af.
@@ -1741,7 +1741,7 @@ Een XML-element moet bestaan voor elk formulierveld dat u wilt vullen met gegeve
 
 **Opties voor PDF bij uitvoering instellen**
 
-U moet de volgende runtime opties voor de dienst van de Output plaatsen om veelvoudige dossiers tot stand te brengen die op een gegevensbron van XML worden gebaseerd:
+Stel de volgende uitvoeringsopties voor de service Uitvoer in om meerdere bestanden te maken op basis van een XML-gegevensbron:
 
 * **Veel bestanden**: Geeft aan of de service Uitvoer een of meer documenten maakt. U kunt waar of onwaar opgeven. Geef true op als u een afzonderlijk document wilt maken voor elke gegevensrecord in de XML-gegevensbron.
 * **Bestands-URI**: Hiermee geeft u de locatie op van de bestanden die de uitvoerservice genereert. Stel bijvoorbeeld dat u C:\\Adobe\forms\Loan.pdf opgeeft. In dit geval maakt de service Uitvoer een bestand met de naam Loan.pdf en wordt het bestand in de map C:\\Adobe\forms geplaatst. Als er meerdere bestanden zijn, zijn de bestandsnamen Loan0001.pdf, Loan0002.pdf, Loan0003.pdf enzovoort. Als u een bestandslocatie opgeeft, worden de bestanden op de server geplaatst, niet op de clientcomputer.
@@ -1970,7 +1970,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
+als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
 **Een Output Client-object maken**
 
@@ -1986,7 +1986,7 @@ Als u zoekregels wilt definiëren, definieert u een of meer tekstpatronen waarna
 
 >[!NOTE]
 >
->Als tekstpatronen niet worden gevonden, wordt het standaardformulier gebruikt. Zorg ervoor dat alle formulierontwerpen die u gebruikt zich in de basisinhoud bevinden.
+>Als tekstpatronen niet worden gevonden, wordt het standaardformulier gebruikt. Zorg ervoor dat alle formulierontwerpen die u gebruikt, zich in de basisinhoud bevinden.
 
 **Opties voor PDF bij uitvoering instellen**
 

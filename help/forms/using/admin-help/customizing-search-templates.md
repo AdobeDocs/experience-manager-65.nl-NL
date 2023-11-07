@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '856'
+source-wordcount: '855'
 ht-degree: 0%
 
 ---
@@ -46,11 +46,11 @@ U kunt zo veel zoeksjablonen maken als u wilt.
 
    * Selecteer boven aan het tabblad Criteria een proceselement of taakelement.
 
-      **Tip**: *Als u eerder het element Procesnaam hebt geselecteerd en een proces hebt opgegeven, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, ook beschikbaar voor selectie.*
+     **Tip**: *Als u eerder het element Procesnaam hebt geselecteerd en een proces hebt opgegeven, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, ook beschikbaar voor selectie.*
 
-      **Tip**: *Als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
+     **Tip**: *Als u het Zichtbare element van de Taak selecteert, zullen de gebruikers voltooide taken uit de onderzoeksresultaten kunnen verwijderen.*
 
-      De velden met zoekcriteria voor het geselecteerde element staan onder aan het tabblad Criteria.
+     De velden met zoekcriteria voor het geselecteerde element staan onder aan het tabblad Criteria.
 
    * Vul voor elk proceselement, elk taakelement en elke procesvariabele die u selecteert de bijbehorende zoekvelden onder aan het tabblad Criteria in:
 
@@ -58,10 +58,9 @@ U kunt zo veel zoeksjablonen maken als u wilt.
       * (Optioneel) Als u wilt dat gebruikers de operandwaarde in Workspace kunnen wijzigen, selecteert u De gebruiker toestaan de operand te wijzigen.
       * (Optioneel) Als u gebruikers wilt toestaan de relationele operator te wijzigen, selecteert u Toestaan dat de gebruiker een andere relationele operator selecteert. Selecteer in de lijst die wordt weergegeven de operatoren die beschikbaar zijn voor de gebruiker.
 
-      **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Na het selecteren van een proces, zijn om het even welke procesvariabelen die in dat proces worden bepaald beschikbaar voor selectie onder de Variabelen van het Proces in de hoogste sectie van het lusje van Criteria.*
+     **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Nadat u een proces hebt geselecteerd, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, beschikbaar voor selectie onder Procesvariabelen in de bovenste sectie van het tabblad Criteria.*
 
-      **Tip**: *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
-
+     **Tip**: *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
 
 1. (Optioneel) Klik op het tabblad Lay-out voor elke kolomkop die in de zoekresultaten moet worden weergegeven en voer de volgende stappen uit:
 
@@ -80,8 +79,8 @@ U kunt zo veel zoeksjablonen maken als u wilt.
    * (Optioneel) Als u een kolom in aflopende volgorde wilt sorteren, schakelt u het selectievakje naast de elementnaam in. Als het selectievakje niet is ingeschakeld, wordt de kolom in oplopende volgorde gesorteerd.
 
 1. Klik op het tabblad Opslaan.
-1. (Optioneel) Geef een nieuwe zoeksjabloon een unieke naam. Als u geen unieke naam opgeeft, kunt u een bestaande sjabloon overschrijven.
-1. Klik op de knop Opslaan.
+1. (Optioneel) Geef een zoeksjabloon een unieke naam. Als u geen unieke naam opgeeft, kunt u een bestaande sjabloon overschrijven.
+1. Klik op Opslaan.
 
 ## Een zoeksjabloon verwijderen {#delete-a-search-template}
 

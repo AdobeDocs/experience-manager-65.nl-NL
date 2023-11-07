@@ -1,19 +1,15 @@
 ---
 title: Gebruikers beheren
-seo-title: Managing Users
-description: Gebruik de API voor gebruikersbeheer om clienttoepassingen te maken die rollen, machtigingen en principes (die gebruikers of groepen kunnen zijn) kunnen beheren en om gebruikers te verifiëren.
-seo-description: Use the User Management API to create client applications that can manage roles, permissions, and principals (which can be users or groups), as well as authenticate users.
-uuid: 68d8a0bc-6e3d-4286-ba5c-534dcf58cb84
+description: Gebruik de API voor gebruikersbeheer om clienttoepassingen te maken die rollen, machtigingen en principes (die gebruikers of groepen kunnen zijn) kunnen beheren en gebruikers kunnen verifiëren.
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '6226'
+source-wordcount: '6218'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ ht-degree: 0%
 
 **Over Gebruikersbeheer**
 
-U kunt de API voor gebruikersbeheer gebruiken om clienttoepassingen te maken die rollen, machtigingen en hoofden (die gebruikers of groepen kunnen zijn) kunnen beheren en om gebruikers te verifiëren. Gebruikersbeheer-API bestaat uit de volgende AEM Forms API&#39;s:
+U kunt de API voor gebruikersbeheer gebruiken om clienttoepassingen te maken die rollen, machtigingen en principes (die gebruikers of groepen kunnen zijn) kunnen beheren en gebruikers kunnen verifiëren. Gebruikersbeheer-API bestaat uit de volgende AEM Forms API&#39;s:
 
 * Directory Manager-service-API
 * API voor verificatiebeheer
@@ -66,7 +62,7 @@ De volgende lijst beschrijft elke stap van het authentificatieproces.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Het Beheer van de gebruiker verzendt de gebruikersnaam en het wachtwoord, evenals configuratieinformatie, naar de authentificatieleverancier.</p></td>
+   <td><p>Het Beheer van de gebruiker verzendt de gebruikersnaam en het wachtwoord, en configuratieinformatie, naar de authentificatieleverancier.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>

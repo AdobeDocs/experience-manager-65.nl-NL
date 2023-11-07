@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
 exl-id: be076477-2681-4570-953d-6c44d3c30843
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1375'
+source-wordcount: '1372'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Met deze opties configureert u de machtigingen:
 
 **Gebruik een wachtwoord om het afdrukken en bewerken van het document en de beveiligingsinstellingen te beperken:** Hiermee worden beperkingen op machtigingen ingeschakeld.
 
-**Wachtwoord voor machtigingen:** Hiermee beperkt u gebruikers tot afdrukken en bewerken. Gebruikers kunnen deze beveiligingsinstellingen alleen wijzigen als zij het door u opgegeven wachtwoord invoeren. U kunt niet hetzelfde wachtwoord gebruiken als voor het wachtwoord om het document te openen. Wanneer u een wachtwoord voor machtigingen instelt, kunnen alleen die personen die dat wachtwoord invoeren, beveiligingsinstellingen wijzigen. Als het PDF-document beide typen wachtwoorden heeft, wordt het geopend met een van beide wachtwoorden. Een gebruiker kan de beperkte functies echter alleen instellen of wijzigen met het wachtwoord voor machtigingen. Als het PDF-document alleen het wachtwoord voor machtigingen heeft of als een gebruiker het document opent met het wachtwoord om het document te openen, wordt een wachtwoord weergegeven wanneer de gebruiker beveiligingsinstellingen probeert te wijzigen.
+**Wachtwoord voor machtigingen:** Hiermee beperkt u gebruikers tot afdrukken en bewerken. Gebruikers kunnen deze beveiligingsinstellingen alleen wijzigen als zij het door u opgegeven wachtwoord invoeren. U kunt niet hetzelfde wachtwoord gebruiken als voor het wachtwoord om het document te openen. Wanneer u een wachtwoord voor machtigingen instelt, kunnen alleen die personen die dat wachtwoord invoeren, beveiligingsinstellingen wijzigen. Als het PDF-document beide typen wachtwoorden heeft, wordt het geopend door een van beide wachtwoorden. Een gebruiker kan de beperkte functies echter alleen instellen of wijzigen met het wachtwoord voor machtigingen. Als het PDF-document alleen het wachtwoord voor machtigingen heeft of als een gebruiker het document opent met het wachtwoord om het document te openen, wordt een wachtwoord weergegeven wanneer de gebruiker beveiligingsinstellingen probeert te wijzigen.
 
 **Wachtwoord voor machtigingen opnieuw invoeren:** Hiermee zorgt u ervoor dat het wachtwoord voor machtigingen correct is.
 

@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Document Security
 exl-id: 5e57451c-1a89-442c-8404-841e95d5ceff
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4718'
+source-wordcount: '4715'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Uitgenodigde gebruikers kunnen ook persoonlijke beleidsregels maken, bewerken, k
 
 Beheerders en beleidssetcoördinatoren maken gezamenlijk beleid op basis van de vertrouwelijkheidsvereisten die uw organisatie voor verschillende typen documenten en gebruikers identificeert. Het gedeelde beleid is bevat binnen beleidsreeksen en is beschikbaar aan alle erkende gebruikers (documentuitgevers, beleidssetcoördinatoren, en documentontvangers) voor een bepaalde beleidsreeks. Beheerders en beleidssetcoördinatoren kunnen gedeeld beleid in- en uitschakelen. Gedeeld beleid wordt weergegeven in beleidssets op het tabblad Beleidssets van de pagina Beleid.
 
-Wanneer u de documentbeveiliging voor het eerst installeert, bevat deze één gedeeld beleid met de naam *Beperken tot alle afdrukopdragers*. Wanneer dit beleid op een document wordt toegepast, kan om het even welke gebruiker die login aan documentveiligheid kan toegang hebben tot het document. Dit beleid wordt gevestigd in de genoemde beleidsreeks *Algemene beleidsset*. Dit beleid is standaard niet ingeschakeld. U kunt deze functie inschakelen als deze aan de behoeften van uw organisatie voldoet.
+Wanneer u de documentbeveiliging voor het eerst installeert, bevat deze één gedeeld beleid met de naam *Beperken tot alle afdrukopdragers*. Wanneer dit beleid op een document wordt toegepast, kan om het even welke gebruiker die login aan documentveiligheid kan toegang hebben tot het document. Dit beleid bevindt zich in de beleidsset genaamd *Algemene beleidsset*. Dit beleid is standaard niet ingeschakeld. U kunt deze functie inschakelen als deze aan de behoeften van uw organisatie voldoet.
 
 **Beleid dat automatisch wordt gegenereerd in Microsoft Outlook**
 
@@ -60,11 +60,11 @@ Voor meer informatie over de verschillende documentbeveiligingsrollen raadpleegt
 
 ## Beleid maken en bewerken {#creating-and-editing-policies}
 
-Gebruikers kunnen een persoonlijk beleid voor eigen gebruik maken of bewerken. Beheerders en beleidssetcoördinatoren kunnen gezamenlijk beleid voor uw organisatie maken of bewerken.
+Gebruikers kunnen een persoonlijk beleid voor eigen gebruik maken of bewerken. Beheerders en beleidssetcoördinatoren kunnen gedeelde beleidsregels voor uw organisatie maken of bewerken.
 
 ### Overwegingen bij het bewerken van beleidsregels {#considerations-for-editing-policies}
 
-Wanneer u een beleid uitgeeft, beïnvloeden de veranderingen documenten die het beleid momenteel beschermt, evenals documenten die het beleid daarna beschermt. Als u bijvoorbeeld ontvangers verwijdert uit een beleid dat momenteel op een document wordt toegepast, kunnen de ontvangers het document niet meer openen.
+Wanneer u een beleid uitgeeft, beïnvloeden de veranderingen documenten die het beleid momenteel beschermt, en documenten die het beleid daarna beschermt. Als u bijvoorbeeld ontvangers verwijdert uit een beleid dat momenteel op een document wordt toegepast, kunnen de ontvangers het document niet meer openen.
 
 De status van het document bepaalt wanneer de wijziging van kracht wordt:
 
@@ -91,7 +91,7 @@ Wanneer u beleid bewerkt, gelden de volgende beperkingen:
    * Als u een gedeeld beleid wilt maken of bewerken, klikt u op het tabblad Beleidssets en klikt u op de naam van de desbetreffende beleidsset en vervolgens op het tabblad Beleid.
 
 1. Klik op Nieuw of selecteer het beleid dat u wilt bewerken in de lijst.
-1. Typ in het vak Naam een naam die het beleid op unieke wijze identificeert. Beschrijf in het vak Beschrijving wat het beleid doet en wanneer het moet worden gebruikt. Als het beleid binnen een beleidsreeks is, verschijnen de naam en de beschrijving in de beleidslijst voor alle gespecificeerde gebruikers. Het persoonlijke beleid is beschikbaar slechts aan de gebruiker en de beheerders.
+1. Typ in het vak Naam een naam die het beleid uniek identificeert. Beschrijf in het vak Beschrijving wat het beleid doet en wanneer het moet worden gebruikt. Als het beleid binnen een beleidsreeks is, verschijnen de naam en de beschrijving in de beleidslijst voor alle gespecificeerde gebruikers. Het persoonlijke beleid is beschikbaar slechts aan de gebruiker en de beheerders.
 
    De volgende tekens kunnen niet in de naam of beschrijving worden gebruikt:
 
@@ -110,7 +110,7 @@ Wanneer u beleid bewerkt, gelden de volgende beperkingen:
 
    >[!NOTE]
    >
-   >U kunt een beleidsnaam maken die uitgebreide tekens bevat. wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als identiek beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of er al een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
+   >U kunt een beleidsnaam maken die uitgebreide tekens bevat. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als hetzelfde beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of er al een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
 
 1. Voeg gebruikers en groepen aan het beleid toe en plaats de aangewezen toestemmingen. (Zie [Gebruikers en groepen](creating-policies.md#users-and-groups).)
 1. Selecteer onder Algemene instellingen de gewenste opties. (Zie [Algemene instellingen](creating-policies.md#general-settings).)
@@ -148,11 +148,11 @@ In het gebied Gebruikers en groepen geeft u de gebruikers op die toegang hebben 
 
 Nadat gebruikers zich hebben geregistreerd, kunnen ze met een beleid beveiligde documenten gebruiken waarvoor ze toestemming hebben. Afhankelijk van de mogelijkheden die de beheerder inschakelt, kunnen de externe gebruikers toestemming hebben om beleid toe te passen op documenten, beleid te maken, te bewerken en te verwijderen en andere externe gebruikers aan het beleid toe te voegen.
 
-**Anonieme gebruiker toevoegen:** Als u anonieme gebruikerstoegang wilt toestaan, klikt u op Anonieme gebruiker toevoegen. Deze optie is alleen beschikbaar als de beheerder anonieme gebruikerstoegang heeft ingeschakeld voor documentbeveiliging. (Zie De documentbeveiligingsserver configureren.) Met deze optie krijgt iedereen toegang tot documenten die door dit beleid worden beveiligd, ongeacht of hij een account voor documentbeveiliging heeft. Als u deze optie selecteert, kunt u geen andere soorten gebruikers aan het beleid toevoegen.
+**Anonieme gebruiker toevoegen:** Klik op Anonieme gebruiker toevoegen om anonieme gebruikerstoegang toe te staan. Deze optie is alleen beschikbaar als de beheerder anonieme gebruikerstoegang heeft ingeschakeld voor documentbeveiliging. (Zie De documentbeveiligingsserver configureren.) Met deze optie krijgt iedereen toegang tot documenten die door dit beleid worden beveiligd, ongeacht of hij een account voor documentbeveiliging heeft. Als u deze optie selecteert, kunt u geen andere soorten gebruikers aan het beleid toevoegen.
 
 >[!NOTE]
 >
->Om anonieme toegang tot een beleid-beschermd document toe te laten dat het momenteel niet heeft, verwijder het bestaande beleid en pas dan een beleid toe dat anonieme toegang toestaat. Als u het bestaande beleid schakelt of wijzigt, moeten de gebruikers zich nog aanmelden om het document te openen.
+>Om anonieme toegang tot een beleid-beschermd document toe te laten dat het momenteel niet heeft, verwijder het bestaande beleid en pas dan een beleid toe dat anonieme toegang toestaat. Als u het bestaande beleid schakelt of wijzigt, moeten de gebruikers zich nog aanmelden om toegang te krijgen tot het document.
 
 #### Documentmachtigingen opgeven voor gebruikers en groepen {#specify-the-document-permissions-for-users-and-groups}
 
@@ -196,7 +196,7 @@ Deze documentmachtigingen zijn beschikbaar op het tabblad Opties. U kunt deze ma
 
 Voor gedeelde beleidsregels kunnen beheerders de volgende bevoegdheden uitschakelen voor de documentuitgever (de gebruiker die het beleid toepast op een document):
 
-**Intrekken:** Hiermee kan de uitgever van het document de toegangsrechten voor het document intrekken.
+**Intrekken:** Hiermee kan de documentuitgever de toegangsrechten voor het document intrekken.
 
 **Overschakelen:** Laat de documentuitgever toe om beleidsvoorrechten te schakelen.
 
@@ -210,7 +210,7 @@ Het gebied Algemene instellingen bevat de volgende instellingen:
 
 **Document is na deze datum niet geldig:** Het document is geldig vanaf de datum waarop het beleid is toegepast op het document tot de opgegeven einddatum.
 
-**Geldig van, tot en met:** Het document is geldig gedurende de opgegeven datums. U kunt de kalender gebruiken om een datum te selecteren, waar van toepassing, door het kalenderpictogram te klikken.
+**Geldig van, tot:** Het document is geldig gedurende de opgegeven datums. U kunt de kalender gebruiken om een datum te selecteren, waar van toepassing, door het kalenderpictogram te klikken.
 
 **Document is altijd geldig:** De geldigheidsperiode van het document loopt niet af.
 
@@ -224,7 +224,7 @@ Het gebied Algemene instellingen bevat de volgende instellingen:
 >
 >De beheerder moet server controle op de de configuratiepagina van de Montages van de Controle en van de Privacy ook toelaten om de controleeigenschap te werken.
 
-**Uitgebreide gebruiksregistratie:** Het bijhouden van gebruik in- of uitschakelen documentbeveiliging ondersteunt het bijhouden van gebruikersgebeurtenissen die zijn gekoppeld aan verschillende bewerkingen die op een PDF-bestand worden uitgevoerd. U kunt het documenthandbeveiligingsobject openen met behulp van een JavaScript. Een klik op een knop, een multimediabestand dat wordt afgespeeld of het opslaan van een bestand zijn enkele voorbeelden van gebeurtenissen die kunnen worden geactiveerd door een PDF die met een beleid is beveiligd. Met behulp van het beveiligingsobject van het document kunt u ook gebruikersgegevens ophalen. Het bijhouden van gebeurtenissen kan op algemeen niveau of op beleidsniveau worden ingeschakeld op de documentbeveiligingsserver.
+**Uitgebreide gebruiksregistratie:** Het bijhouden van gebruik in- of uitschakelen. documentbeveiliging ondersteunt het bijhouden van gebruikersgebeurtenissen die zijn gekoppeld aan verschillende bewerkingen die op een PDF-bestand worden uitgevoerd. U kunt het documenthandbeveiligingsobject openen met behulp van een JavaScript. Een klik op een knop, een multimediabestand dat wordt afgespeeld of het opslaan van een bestand zijn enkele voorbeelden van gebeurtenissen die kunnen worden geactiveerd door een PDF die met een beleid is beveiligd. Met behulp van het beveiligingsobject van het document kunt u ook gebruikersgegevens ophalen. Het bijhouden van gebeurtenissen kan op algemeen niveau of op beleidsniveau worden ingeschakeld op de documentbeveiligingsserver.
 
 **Automatische offline leaseperiode:** Het maximumaantal dagen dat de ontvanger het document met beleidsbeveiliging offline kan gebruiken (zonder actieve internet- of netwerkverbinding). Wanneer de huurperiode verloopt, moet de ontvanger het document opnieuw synchroniseren om het te blijven gebruiken.
 
@@ -268,7 +268,7 @@ Als u een beleid uitgeeft en de beheerder een gevormd watermerk schrapte dat u e
 
 Selecteer deze optie als u zich zorgen maakt over het schrijven van een insteekmodule door een ontvanger van een document die de documentbeveiliging in Acrobat 8.0 en hoger kan omzeilen. Selecteer deze optie niet als ontvangers van het document plug-ins van derden in Acrobat moeten gebruiken om te communiceren met documenten.
 
-Met deze optie wordt alleen de gecertificeerde modus ingeschakeld in Acrobat 8.0 of hoger. de beheerder moet de toegang voor Acrobat 7.0 uitschakelen.
+Met deze optie wordt alleen de gecertificeerde modus in Acrobat 8.0 of hoger ingeschakeld. De beheerder moet de toegang voor Acrobat 7.0 uitschakelen.
 
 (Zie [De beveiligingsserver voor het document configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server).)
 
@@ -280,15 +280,15 @@ Deze optie is niet van toepassing op Adobe Reader.
 
 Het gedeelte Onveranderbare geavanceerde instellingen bevat de volgende instellingen. U kunt deze instellingen niet wijzigen nadat u het beleid hebt opgeslagen.
 
-**Versleutelingsalgoritme en sleutellengte:** Wordt gebruikt om uw documenten te beveiligen. U kunt uit deze opties kiezen:
+**Versleutelingsalgoritme en sleutellengte:** Wordt gebruikt om uw documenten te beveiligen. U kunt uit de volgende opties kiezen:
 
 * AES 128-bits
-* AES 256-bits. Alleen Acrobat 9.0 en hoger ondersteunen deze optie. Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Rechtdiction Policy) (Java Cryptography Extension) ophalen en installeren. Deze bestanden vervangen de bestanden local_policy.jar en US_export_policy.jar in het dialoogvenster [JAVE_HOME]/lib/security folder. Als u bijvoorbeeld Sun JDK 1.6 gebruikt, kopieert u de gedownloade bestanden naar de [deproot]/Java/jdk1.6.0_26/lib/security folder. U kunt deze bestanden downloaden van [Java SE-downloads](https://java.sun.com/javase/downloads/index.jsp).
+* AES 256-bits. Alleen Acrobat 9.0 en hoger ondersteunen deze optie. Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Rechtdiction Policy) (Java Cryptography Extension) ophalen en installeren. Deze bestanden vervangen de bestanden local_policy.jar en US_export_policy.jar in het dialoogvenster [JAVE_HOME]/lib/security folder. Als u bijvoorbeeld Sun JDK 1.6 gebruikt, kopieert u de gedownloade bestanden naar de [dep-root]/Java/jdk1.6.0_26/lib/security folder. U kunt deze bestanden downloaden van [Java SE-downloads](https://java.sun.com/javase/downloads/index.jsp).
 * Geen versleuteling. Acrobat 9.0 en hoger ondersteunen deze optie momenteel. Als u deze optie selecteert, zijn de opties voor documentbeperkingen uitgeschakeld. Deze optie kan handig zijn als u documentbeveiliging wilt gebruiken voor documentcontrole of versiebeheer, maar het document niet wilt versleutelen.
 
-**Documentbeperkingen:** Selecteer de PDF-documentcomponenten die u wilt versleutelen. Met andere clienttoepassingen wordt het gehele document versleuteld, maar niet de gekoppelde of ingesloten bestanden. U kunt uit deze opties kiezen:
+**Documentbeperkingen:** Selecteer de PDF-documentcomponenten die u wilt versleutelen. Met andere clienttoepassingen wordt het gehele document versleuteld, maar niet de gekoppelde of ingesloten bestanden. U kunt uit de volgende opties kiezen:
 
-* Het gehele document, inclusief de bijlagen en metagegevens. *Metagegevens* Hier vindt u informatie over het document en de inhoud ervan die u kunt weergeven via het dialoogvenster Documenteigenschappen of het menu Geavanceerd van Acrobat. In Acrobat kunt u bestanden van verschillende typen (bijvoorbeeld tekst-, audio- en videobestanden) aan PDF-documenten koppelen.
+* Het gehele document, inclusief de bijlagen en metagegevens. *Metagegevens* Hier vindt u informatie over het document en de inhoud ervan. U kunt deze weergeven via het dialoogvenster Documenteigenschappen of het menu Geavanceerd van Acrobat. In Acrobat kunt u bestanden van verschillende typen (bijvoorbeeld tekst-, audio- en videobestanden) aan PDF-documenten koppelen.
 * Het document en de bijlagen, maar niet de metagegevens.
 * Alleen de documentbijlagen. U kunt de bijlagen versleutelen naar een PDF-bestand zonder de documentinhoud te versleutelen.
 
@@ -333,7 +333,7 @@ U kunt meer gedetailleerde informatie over een beleid bekijken dat in de lijst v
 1. Selecteer het gewenste beleid in de lijst.
 1. Op de pagina van het Detail van het Beleid, kunt u details over het beleid zien, het beleid uitgeven, of gebeurtenissen met betrekking tot het beleid bekijken.
 
-## Zoeken naar beleid {#search-for-policies}
+## Zoeken naar beleidsregels {#search-for-policies}
 
 Beheerders kunnen zoeken naar gedeeld beleid en naar persoonlijk beleid dat door andere gebruikers is gemaakt.
 
@@ -347,7 +347,7 @@ Beheerders kunnen zoeken naar gedeeld beleid en naar persoonlijk beleid dat door
 
    **Beleidsnaam:** De naam van het beleid. U kunt de naam van het beleid geheel of gedeeltelijk zoeken.
 
-1. Typ in het tekstvak de bijbehorende waarde. Als u bijvoorbeeld Beleidsnaam hebt geselecteerd, typt u de naam van het beleid waarnaar u zoekt.
+1. Typ in het tekstvak de corresponderende waarde. Als u bijvoorbeeld Beleidsnaam hebt geselecteerd, typt u de naam van het beleid waarnaar u zoekt.
 1. Selecteer in de lijst Weergave het aantal resultaten dat u wilt weergeven en klik op Zoeken. De zoekresultaten worden weergegeven.
 1. (Optioneel) Klik op het beleid om de beleidsdetails weer te geven.
 
@@ -379,7 +379,7 @@ Externe gebruikers kunnen beleid alleen kopiëren als de beheerder deze mogelijk
 
    >[!NOTE]
    >
-   >U kunt een beleidsnaam maken die uitgebreide tekens bevat. wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als identiek beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of er al een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
+   >U kunt een beleidsnaam maken die uitgebreide tekens bevat. Wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als hetzelfde beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of er al een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
 
 1. Klik op OK.
 

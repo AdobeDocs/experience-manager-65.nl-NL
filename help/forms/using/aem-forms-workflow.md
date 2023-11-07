@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 73e63493-e821-443f-b50d-10797360f5d1
 docset: aem65
 exl-id: c3e5f8fc-d2b9-4f76-9a3d-4bc5733f5a5c
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3593'
 ht-degree: 0%
@@ -121,7 +121,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    Voor het hypotheekvoorbeeld voegt u een document met een record te genereren, twee taakstappen toe en een stap in het ondertekeningsdocument aan vertakking 1 van het model, zoals in de onderstaande afbeelding wordt weergegeven. Eén taakstap toewijzen is weergeven en verzenden **te ondertekenen leningsdocumenten aan de aanvrager** en een andere taakcomponent toewijzen is **om ondertekende documenten te tonen**. Voeg ook een taakcomponent toe aan vertakking 2. Deze wordt geactiveerd wanneer een gebruiker op Afwijzen in AEM Postvak IN tikt.
 
-   Voor de volledige set waarden van alle velden van de taakstappen toewijzen, de stap Document of Record en de stap voor het ondertekeningsdocument die zijn geconfigureerd voor bijvoorbeeld de hypotheektoepassing, importeert u het voorbeeldpakket dat beschikbaar is om te worden gedownload vanaf het begin van deze sectie.
+   Voor de volledige set waarden van alle velden van de taakstappen toewijzen, documentstap en stap voor ondertekeningsdocumenten die zijn geconfigureerd, bijvoorbeeld hypotheektoepassing, importeert u het voorbeeldpakket dat beschikbaar is voor downloaden in het begin van deze sectie.
 
    Het workflowmodel is gereed. U kunt de workflow op verschillende manieren starten. Zie voor meer informatie [Een Forms-centric workflow starten op OSGi](#launch).
 
@@ -277,9 +277,9 @@ Door het minimaliseren van het aantal workflowexemplaren worden de prestaties va
 
 ## Gevoelige gegevens beperken tot workflowvariabelen en opslaan in externe gegevensopslagruimten {#externalize-wf-variables}
 
-Alle gegevens die van adaptieve formulieren naar [!DNL Experience Manager] Workflows kunnen PII (Persoonlijk identificeerbare gegevens) of EPD (Gevoelige persoonlijke gegevens) van de eindgebruikers van uw bedrijf hebben. Het is echter niet verplicht om uw gegevens in [!DNL Adobe Experience Manager] [JCR-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). U kunt de opslag van eindgebruikergegevens in uw beheerde gegevensopslag (bijvoorbeeld opslag van Azure-blob) extern maken door de gegevens in [workflowvariabelen](/help/forms/using/variable-in-aem-workflows.md).
+Alle gegevens die van adaptieve formulieren naar [!DNL Experience Manager] Workflows kunnen PII (Persoonlijk identificeerbare gegevens) of EPD (Gevoelige persoonlijke gegevens) van de eindgebruikers van uw bedrijf hebben. Het is echter niet verplicht om uw gegevens in [!DNL Adobe Experience Manager] [JCR-opslagplaats](https://experienceleague.adobe.com/docs/experience-manager-learn/cloud-service/underlying-technology/introduction-jcr.html). U kunt de opslag van eindgebruikergegevens in uw beheerde gegevensopslag (bijvoorbeeld, opslag van Azure blob) externaliseren door de informatie in te parameters te bepalen [workflowvariabelen](/help/forms/using/variable-in-aem-workflows.md).
 
-In een [!DNL Adobe Experience Manager] Forms-workflow worden gegevens verwerkt en doorgegeven via een reeks workflowstappen aan de hand van workflowvariabelen. Deze variabelen zijn benoemde eigenschappen of sleutelwaardeparen die zijn opgeslagen in het knooppunt met metagegevens voor workflowinstanties, bijvoorbeeld `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Deze workflowvariabelen kunnen worden geexternaliseerd naar een andere opslagplaats dan de JCR en vervolgens worden verwerkt door [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] biedt API `[!UICONTROL UserMetaDataPersistenceProvider]` om de werkschemariabelen in uw beheerde externe opslag op te slaan. Meer informatie over het gebruik van workflowvariabelen voor datastores die eigendom zijn van klanten in [!DNL Adobe Experience Manager], zie [Werkstroomvariabelen beheren voor externe datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
+In een [!DNL Adobe Experience Manager] Forms-workflow worden gegevens verwerkt en doorgegeven via een reeks workflowstappen aan de hand van workflowvariabelen. Deze variabelen zijn benoemde eigenschappen of sleutelwaardeparen die zijn opgeslagen in de metagegevensnode voor workflowinstanties, bijvoorbeeld `/var/workflow/instances/<serverid>/<datebucket>/<uniquenameof model>_<id>/data/metaData`. Deze workflowvariabelen kunnen worden geexternaliseerd naar een andere opslagplaats dan de JCR en vervolgens worden verwerkt door [!DNL Adobe Experience Manager] workflows. [!DNL Adobe Experience Manager] biedt API `[!UICONTROL UserMetaDataPersistenceProvider]` om de werkschemariabelen in uw beheerde externe opslag op te slaan. Meer informatie over het gebruik van workflowvariabelen voor datastores die eigendom zijn van klanten in [!DNL Adobe Experience Manager], zie [Werkstroomvariabelen beheren voor externe datastores](/help/sites-administering/workflows-administering.md#using-workflow-variables-customer-datastore).
 [!DNL Adobe] verstrekt het volgende [monster](https://github.com/adobe/workflow-variable-externalizer) om variabelen van werkschemakaart aan Azure blob opslag op te slaan, door API te gebruiken [UserMetaDataPersistenceProvider](https://github.com/adobe/workflow-variable-externalizer/blob/master/README.md). Op vergelijkbare regels kunt u het voorbeeld gebruiken als richtlijn [UserMetaDataPersistenceProvider] API voor het extern maken van de workflowvariabelen in andere gegevensopslag buiten [!DNL Adobe Experience Manager] en beheren.
 
 >[!NOTE]
@@ -313,11 +313,11 @@ Hier volgen de doeleinden (en voorbeelden) van deze eigenschappen:
 
 * **accountName** is het azure-account waarin gegevens moeten worden opgeslagen.
 
-* **endSuffix** bijvoorbeeld `core.windows.net`.
+* **endSuffix**, bijvoorbeeld `core.windows.net`.
 
 * **containerName** is de container in de rekening waar de gegevens moeten worden opgeslagen. Het voorbeeld gaat ervan uit dat de container bestaat.
 
-* **protocol** bijvoorbeeld `https` of `http`.
+* **protocol**, bijvoorbeeld `https` of `http`.
 
 1. Het workflowmodel configureren in [!DNL Adobe Experience Manager]. Zie voor informatie over het configureren van het workflowmodel voor externe opslag [Het workflowmodel configureren](#configure-aem-wf-model).
 

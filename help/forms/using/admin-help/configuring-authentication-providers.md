@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 31dd8db3-ddac-429e-82f8-8c5dc4ffc186
 exl-id: d72a3977-1423-49e0-899b-234bb76be378
-source-git-commit: 1cdd15800548362ccdd9e70847d9df8ce93ee06e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1576'
+source-wordcount: '1575'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Als u de LDAP-server wilt gebruiken die in uw directoryconfiguratie is opgegeven
 
 Als u een andere LDAP-server wilt gebruiken om verificatie uit te voeren, selecteert u LDAP als de verificatieprovider en schakelt u het selectievakje Aangepaste LDAP-verificatie in. De volgende configuratie-instellingen worden weergegeven.
 
-**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer die x op het netwerk example.com wordt aangeroepen, is de FQDN bijvoorbeeld x.voorbeeld.com. U kunt een IP-adres gebruiken in plaats van de naam van de FQDN-server.
+**Server:** (Verplicht) Volledig gekwalificeerde domeinnaam (FQDN) van de directoryserver. Voor een computer die x heet in het netwerk example.com, is de FQDN bijvoorbeeld x.example.com. Een IP-adres kan worden gebruikt in plaats van de FQDN-servernaam.
 
 **Poort:** (Verplicht) De poort die de directoryserver gebruikt. Typisch 389, of 636 als het Veilige protocol van de Laag van Contactdozen (SSL) wordt gebruikt voor het verzenden van authentificatieinformatie over het netwerk.
 
@@ -68,11 +68,11 @@ Als u een andere LDAP-server wilt gebruiken om verificatie uit te voeren, select
 
 **Anoniem:** Geen gebruikersnaam of wachtwoord vereist.
 
-**Gebruiker:** Verificatie is vereist. Geef in het vak Naam de naam op van de gebruikersrecord die toegang kan krijgen tot de map. U kunt het beste de volledige DN (Distinguished Name) van de gebruikersaccount invoeren, zoals cn=Jane Doe, ou=user, dc=can, dc=com. Geef in het vak Wachtwoord het bijbehorende wachtwoord op. Deze instellingen zijn vereist wanneer u de optie Gebruiker binden selecteert.
+**Gebruiker:** Verificatie is vereist. Geef in het vak Naam de naam op van de gebruikersrecord die toegang kan krijgen tot de map. U kunt het beste de volledige DN (Distinguished Name) van de gebruikersaccount invoeren, zoals cn=Jane Doe, ou=user, dc=can, dc=com. Geef in het vak Wachtwoord het bijbehorende wachtwoord op. Deze instellingen zijn vereist wanneer u Gebruiker selecteert als de optie Binding.
 
 **Basis-DN&#39;s ophalen:** (Niet verplicht) Haalt de basis-DN&#39;s op en geeft deze weer in de vervolgkeuzelijst. Deze instelling is handig wanneer u meerdere basis-DN&#39;s hebt en een waarde moet selecteren.
 
-**Basis-DN:** (Verplicht) Wordt gebruikt als beginpunt voor het synchroniseren van gebruikers en groepen vanuit de LDAP-hiërarchie. Het is best om een basis DN op het laagste niveau van de hiërarchie te specificeren die alle gebruikers en groepen omvat die voor de diensten moeten worden gesynchroniseerd. Neem de DN van de gebruiker niet op in deze instelling. Als u een bepaalde gebruiker wilt synchroniseren, gebruikt u de instelling Zoekfilter.
+**Basis-DN:** (Verplicht) Wordt gebruikt als beginpunt voor het synchroniseren van gebruikers en groepen vanuit de LDAP-hiërarchie. Het is best om een basis DN op het laagste niveau van de hiërarchie te specificeren die alle gebruikers en groepen omvat die voor de diensten moeten worden gesynchroniseerd. Neem de DN van de gebruiker niet op in deze instelling. Gebruik de instelling Zoekfilter om een bepaalde gebruiker te synchroniseren.
 
 **Pagina vullen met:** (Niet verplicht) Wanneer u deze optie selecteert, worden de kenmerken op de pagina&#39;s met gebruikersinstellingen en groepsinstellingen gevuld met de bijbehorende standaard LDAP-waarden.
 
@@ -90,7 +90,7 @@ Als u authentificatie voor een onderneming of een hybride domein vormt en authen
 
 **Servicerealm:** Domeinnaam voor Active Directory
 
-**Servicewachtwoord:** Wachtwoord servicegebruiker
+**Servicewachtwoord:** Wachtwoord van de gebruiker van de dienst
 
 **SPNEGO inschakelen:** Hiermee wordt het gebruik van SPNEGO voor Single Sign-On (SSO) ingeschakeld. (Zie SSO inschakelen met SPNEGO.)
 
@@ -100,7 +100,7 @@ Als u authentificatie voor een onderneming of een hybride domein vormt en authen
 
 **Selecteer een metagegevensbestand van een SAML-identiteitsprovider dat u wilt importeren:** Klik op Bladeren om een metagegevensbestand voor een SAML-identiteitsprovider te selecteren dat is gegenereerd op basis van uw IDP en klik vervolgens op Importeren. De details van IDP worden getoond.
 
-**Titel:** Alias aan URL die door EntiteitID wordt vermeld. De titel wordt ook weergegeven op de aanmeldingspagina voor ondernemingen en lokale gebruikers.
+**Titel:** Alias to the URL denoted by the EntiteitID. De titel wordt ook weergegeven op de aanmeldingspagina voor ondernemingen en lokale gebruikers.
 
 **Identiteitsprovider ondersteunt basisclientverificatie:** De Basisauthentificatie van de cliënt wordt gebruikt wanneer IDP een profiel van de Resolutie van het Artefact van SAML gebruikt. In dit profiel, verbindt het Beheer van de Gebruiker terug met de Webdienst die bij IDP loopt om de daadwerkelijke bevestiging van SAML terug te winnen. IDP kan authentificatie vereisen. Als de IDP authentificatie vereist, selecteer deze optie en specificeer een gebruikersnaam en een wachtwoord in de vakjes verstrekt.
 
@@ -108,14 +108,14 @@ Als u authentificatie voor een onderneming of een hybride domein vormt en authen
 
 De volgende aangepaste eigenschappen zijn vereist als artefactbinding wordt gebruikt.
 
-* Voeg het volgende douanebezit toe om een gebruikersbenaming te specificeren die de AEM vormen Service Provider vertegenwoordigt, die zal worden gebruikt om aan de dienst van de Resolutie van het Artefact IDP voor authentiek te verklaren.
-   `saml.idp.resolve.username=<username>`
+* Voeg het volgende douanebezit toe om een gebruikersbenaming te specificeren die de AEM vormen Service Provider vertegenwoordigt, die wordt gebruikt om aan de dienst van de Resolutie van het Artefact IDP voor authentiek te verklaren.
+  `saml.idp.resolve.username=<username>`
 
 * Voeg de volgende aangepaste eigenschap toe om het wachtwoord voor de in `saml.idp.resolve.username`.
-   `saml.idp.resolve.password=<password>`
+  `saml.idp.resolve.password=<password>`
 
 * Voeg de volgende aangepaste eigenschap toe zodat de serviceprovider de certificaatvalidatie kan negeren terwijl de verbinding met de Artefactresolutie via SSL tot stand wordt gebracht.
-   `saml.idp.resolve.ignorecert=true`
+  `saml.idp.resolve.ignorecert=true`
 
 ### Aangepaste instellingen {#custom-settings}
 

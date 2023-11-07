@@ -10,16 +10,16 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aa58cfb8-ec15-4698-a8f0-97683b0de51c
 exl-id: 9d421599-0417-4329-a528-9cda4e3716f5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '436'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
 
 # Hoe te om AEM Projecten te ontwikkelen gebruikend Eclipse{#how-to-develop-aem-projects-using-eclipse}
 
-In deze handleiding wordt beschreven hoe u Eclipse kunt gebruiken voor het ontwikkelen van op AEM gebaseerde projecten.
+In deze handleiding wordt beschreven hoe u Eclipse kunt gebruiken voor het ontwikkelen van AEM projecten.
 
 >[!NOTE]
 >
@@ -40,7 +40,7 @@ Elk van hen wordt meer in detail beschreven in de rest van dit hoe te.
 >
 >Deze handleiding is gebaseerd op Eclipse 4.3 (Kepler) en AEM 5.6.1.
 
-## Verduistering installeren {#install-eclipse}
+## Eclipse installeren {#install-eclipse}
 
 Download de &quot;Eclipse IDE for Java EE Developers&quot; van de [Pagina Eclipdownloads](https://www.eclipse.org/downloads/).
 
@@ -64,7 +64,7 @@ Om dat te doen:
 
    Met de Maven-supportplug-in van Eclipse, m2e, wordt de maven-jspc-plugin niet ondersteund. Met deze configuratie wordt aan m2e doorgegeven dat de plug-in en de bijbehorende taak om de resultaten van de tijdelijke compilatie op te schonen, moeten worden genegeerd.
 
-   Dit is geen probleem: zoals vermeld in [Hoe kan ik-werken met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), wordt de maven-jspc-stop in deze opstelling slechts gebruikt om te bevestigen dat JSPs als deel van het bouwstijlproces compileert. Eclipse rapporteert al problemen in JSPs en vertrouwt niet op deze Maven plugin om dit te kunnen doen.
+   Dit is geen probleem, zoals vermeld in [Hoe kan ik-werken met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps), wordt de maven-jspc-stop in deze opstelling slechts gebruikt om te bevestigen dat JSPs als deel van het bouwstijlproces compileert. Eclipse rapporteert al problemen in JSPs en vertrouwt niet op deze Maven plugin om dit te kunnen doen.
 
    **myproject/content/pom.xml**
 
@@ -133,4 +133,4 @@ Om dat te doen:
 
    >[!NOTE]
    >
-   >Als u `/libs/foundation/global.jsp` of andere JSP&#39;s in `/libs`, zult u dat aan uw project moeten kopiëren zodat kan Eclipse de opneming oplossen. Tegelijkertijd moet u ervoor zorgen dat het pakket niet door Maven in het inhoudspakket wordt opgenomen. Hoe dit te bereiken wordt beschreven in [Hoe te om AEM Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
+   >Als u `/libs/foundation/global.jsp` of andere JSP&#39;s in `/libs`, moet u dat naar uw project kopiëren zodat Eclipse de opname kan oplossen. Tegelijkertijd moet u ervoor zorgen dat het pakket niet door Maven in het inhoudspakket wordt opgenomen. Hoe dit te bereiken wordt beschreven in [Hoe te om AEM Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).

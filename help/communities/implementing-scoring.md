@@ -9,9 +9,9 @@ docset: aem65
 tagskeywords: scoring, badging, badges, gamification
 role: Admin
 exl-id: 4aa857f7-d111-4548-8f03-f6d6c27acf51
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2852'
+source-wordcount: '2851'
 ht-degree: 0%
 
 ---
@@ -285,7 +285,7 @@ In de release zijn twee scoreregels opgenomen voor de [Functie van forum](/help/
 * `subRules` is een kenmerk van het type String[] over de regels `jcr:content` knooppunt.
 
 * `sub-rules` kunnen worden gedeeld door verschillende scoreregels.
-* `rules` moet zich bevinden op een locatie in de opslagplaats met leesmachtigingen voor iedereen.
+* `rules` moet zich op een opslagplaats bevinden met leesmachtigingen voor iedereen.
 
    * Regelnamen moeten uniek zijn, ongeacht de locatie.
 
@@ -385,15 +385,15 @@ cURL -i -X POST -H *header* -u *handtekening* -F *bewerking* -F *badge* *member-
 
 *header* = &quot;Accept:application/json&quot;, aangepaste header die wordt doorgegeven aan de server (vereist)
 
-*handtekening* = administrator-id:password bijvoorbeeld : admin:admin
+*handtekening* = beheerder-id:wachtwoord, bijvoorbeeld admin:admin
 
 *bewerking* = &quot;:operation=social:assignBadge&quot; OF &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
-*badge-image-file* = de locatie van het bestand met de badge-afbeelding in de opslagplaats, bijvoorbeeld: /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
+*badge-image-file* = de locatie van het bestand met de badge-afbeelding in de opslagplaats, bijvoorbeeld /libs/settings/community/badging/images/moderator/jcr:content/moderator.png
 
-*member-profile-url* = het eindpunt voor het profiel van het lid bij publiceren bijvoorbeeld: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+*member-profile-url* = het eindpunt voor het profiel van het lid op publiceren bijvoorbeeld, https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -616,7 +616,7 @@ Volgende, [herpubliceren](/help/communities/sites-console.md#publishing-the-site
 Tot slot:
 
 * Blader naar de component in de publicatie-instantie.
-* Meld u aan als lid van de gemeenschap (bijvoorbeeld: weston.mccall@dodgit.com / wachtwoord).
+* Meld u aan als lid van de gemeenschap (bijvoorbeeld weston.mccall@dodgit.com / wachtwoord).
 * Plaats een nieuw forumonderwerp.
 * De badge wordt alleen weergegeven als de pagina is vernieuwd.
 

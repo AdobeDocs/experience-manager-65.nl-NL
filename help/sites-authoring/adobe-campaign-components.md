@@ -1,17 +1,15 @@
 ---
 title: Integreren met Adobe Campaign-componenten
 description: Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u met nieuwsbrieven en met formulieren werkt.
-uuid: a858d5ca-aa6e-4bde-92db-a6dcd8b48ae6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
-discoiquuid: 9da34dab-7e89-4127-ab26-532687746b2a
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2834'
+source-wordcount: '2833'
 ht-degree: 0%
 
 ---
@@ -24,7 +22,7 @@ Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wan
 >
 >De AEM e-mailcomponenten zijn vervangen. Vanwege de aard van e-mail, waarin inhoud en stijl worden samengevoegd, worden de e-mailcomponenten die door AEM buiten de box worden geleverd van beperkte hergebruik voor klanten omdat aangepaste stijlen moeten worden geïmplementeerd in alle componenten die vereist zijn voor projecten.
 >
->E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Deze vervangen onderdelen mogen echter niet worden gebruikt voor projecten.
+>E-mailcomponenten kunnen op projectniveau worden geïmplementeerd en de verouderde AEM e-mailcomponenten laten zien hoe dat kan worden bereikt. Gebruik deze vervangen componenten echter niet voor projecten.
 
 ## Adobe Campaign Newsletter-componenten {#adobe-campaign-newsletter-components}
 
@@ -216,7 +214,7 @@ Sleep een afbeelding vanuit de zoekfunctie voor inhoud of klik om naar een afbee
 * **Eigenschappen van afbeelding** (**Geavanceerde afbeeldingseigenschappen**) Hier kunt u het volgende opgeven:
 
    * **Titel**
-De titel van het blok; wordt weergegeven door de muis over het blok te bewegen.
+De titel van het blok; deze wordt weergegeven door mouseover.
 
    * **Alt-tekst**
 Alternatieve tekst die moet worden weergegeven als de afbeelding niet kan worden weergegeven.

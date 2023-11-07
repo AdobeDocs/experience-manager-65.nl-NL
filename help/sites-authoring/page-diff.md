@@ -11,9 +11,9 @@ topic-tags: site-features
 discoiquuid: 8386a16a-9d47-46d5-bc60-5f290c59e60e
 docset: aem65
 exl-id: 3beea5cd-5ae0-485b-8dfc-8b3a23c11586
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '571'
 ht-degree: 1%
 
 ---
@@ -102,4 +102,4 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 
 >[!NOTE]
 >
->Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die invloed kunnen hebben op pagina-diff de [ontwikkelaarsdocumentatie](/help/sites-developing/pagediff.md) van deze functie.
+>Zie voor meer informatie over de werking van het mechanisme voor pagina-diff en de beperkingen die paginadiff kunnen beïnvloeden het dialoogvenster [ontwikkelaarsdocumentatie](/help/sites-developing/pagediff.md) van deze functie.

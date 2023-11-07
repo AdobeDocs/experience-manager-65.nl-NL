@@ -2,9 +2,9 @@
 title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '788'
+source-wordcount: '786'
 ht-degree: 0%
 
 ---
@@ -74,11 +74,11 @@ Gebruiken **Opslaan als** om uw nieuwe vraag voort te zetten.
 
 Selecteer de query die u wilt bijwerken in de lijst in het dialoogvenster **[Blijvende query&#39;s](/help/sites-developing/headless/graphql-api/persisted-queries.md)** (helemaal links).
 
-De query wordt weergegeven in het deelvenster Editor. Breng de gewenste wijzigingen aan en gebruik vervolgens **Opslaan** om uw updates aan de persisted query vast te leggen.
+De vraag wordt getoond in het redacteurspaneel. Breng de gewenste wijzigingen aan en gebruik vervolgens **Opslaan** om uw updates aan de persisted query vast te leggen.
 
 ## Query&#39;s uitvoeren {#running-queries}
 
-U kunt een nieuwe vraag in werking stellen onmiddellijk, of u kunt een voortgezette vraag laden en in werking stellen. Als u een blijvende query wilt laden, selecteert u deze in de lijst. De query wordt dan weergegeven in het editorpaneel.
+U kunt een nieuwe vraag in werking stellen onmiddellijk, of u kunt een voortgezette vraag laden en in werking stellen. Als u een voortgezette query wilt laden, selecteert u deze in de lijst. De query wordt weergegeven in het deelvenster Editor.
 
 In beide gevallen is de query die wordt weergegeven in het editorpaneel de query die wordt uitgevoerd wanneer u een van de volgende twee doet:
 
@@ -112,7 +112,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
 
    ![Persisted Query HTTP Cache Headers](assets/cfm-graphqlapi-headers-01.png "Persisted Query HTTP Cache Headers")
 
-1. Selecting this will open the **Cache Configuration** dialog:
+1. Selecting this opens the **Cache Configuration** dialog box:
 
    ![Persisted Query HTTP Cache Header Settings](assets/cfm-graphqlapi-headers-02.png "Persisted Query HTTP Cache Header Settings")
 

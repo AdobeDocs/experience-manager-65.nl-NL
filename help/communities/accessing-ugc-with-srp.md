@@ -1,19 +1,15 @@
 ---
 title: Toegang tot UGC met SRP
-seo-title: Accessing UGC with SRP
 description: Wanneer een plaats wordt gevormd om ASRP of MSRP te gebruiken, wordt daadwerkelijke UGC niet opgeslagen in AEM knoopopslag (JCR)
-seo-description: When a site is configured to use ASRP or MSRP, the actual UGC is not be stored in AEM's node store (JCR)
-uuid: 30549f93-e370-4b8b-a35a-69e05884227e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/COMMUNITIES
 topic-tags: developing
 content-type: reference
-discoiquuid: 72d4022c-43ba-49e0-b94c-f2beabaef64d
 docset: aem65
 exl-id: 1157366f-2cc5-46e4-8ec6-e66fe5d0a0f6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '340'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -26,7 +22,7 @@ Alle AEM Communities-componenten en -functies zijn gebaseerd op de [Sociaal-comp
 
 Voordat een communitysite wordt gemaakt, moet u [Storage Resource Provider (SRP)](/help/communities/working-with-srp.md) moet worden geconfigureerd om een implementatie te selecteren die consistent is met de onderliggende [topologie](/help/communities/topologies.md). De implementatie SRP is gebaseerd op drie opslagopties:
 
-1. [ASRP](/help/communities/asrp.md) - Adobe-opslag op aanvraag
+1. [ASRP](/help/communities/asrp.md) - Adobe op aanvraag
 1. [MSRP](/help/communities/msrp.md) - MongoDB
 1. [JSRP](/help/communities/jsrp.md) - JCR
 
@@ -67,7 +63,7 @@ Methoden om te voorkomen:
 
 ### Zoekverzamelingen gebruiken {#use-search-collections}
 
-Verschillende SRPs kan verschillende inheemse vraagtalen hebben. Aanbevolen wordt methoden te gebruiken van de [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pakket om de aangewezen vraagtaal in werking te stellen.
+Verschillende SRPs kan verschillende inheemse vraagtalen hebben. Gebruik methoden van het menu [com.adobe.cq.social.ugc.api](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/adobe/cq/social/ugc/api/package-summary.html) pakket om de aangewezen vraagtaal in werking te stellen.
 
 Zie voor meer informatie [Essentiële zoekopdrachten](/help/communities/search-implementation.md).
 
@@ -77,4 +73,4 @@ Zie voor meer informatie [Essentiële zoekopdrachten](/help/communities/search-i
 * [Overzicht opslagbronprovider](/help/communities/srp.md) - overzicht van het gebruik van introducties en opslagplaatsen
 * [SRP en UGC Essentials](/help/communities/srp-and-ugc.md) - SRP-hulpprogrammamethoden en -voorbeelden
 * [Essentiële zoekopdrachten](/help/communities/search-implementation.md) - essentiële informatie voor het doorzoeken van UGC
-* [SocialUtils Refactoring](/help/communities/socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes
+* [Refactoring voor sociale hulpmiddelen](/help/communities/socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP nutsmethodes

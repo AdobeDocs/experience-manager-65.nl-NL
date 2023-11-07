@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
 exl-id: e3f018e6-563e-456f-99d5-d232f1a4aa55
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '885'
+source-wordcount: '883'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ cURL is een opensource opdrachtregelprogramma voor het uitvoeren van URL-bewerki
 
 cURL is een gevestigde en wijdverspreide hulpmiddel om gegevens te krijgen of te verzenden gebruikend de syntaxis URL en oorspronkelijk vrijgegeven in 1997. De naam cURL betekende oorspronkelijk &quot;zie URL.&quot;
 
-Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep, die kan worden uitgevoerd met cURL. [Taken voor het manipuleren van inhoud](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) zoals het activeren van pagina&#39;s, het starten van workflows en [operationele taken](/help/sites-administering/curl.md#common-operational-aem-curl-commands) zoals pakketbeheer en het beheren van gebruikers kunnen worden geautomatiseerd met cURL. Bovendien kunt u [zelf een cURL maken](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) opdrachten voor de meeste taken in AEM.
+Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep, die kan worden uitgevoerd met cURL. [Taken voor het manipuleren van inhoud](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) zoals het activeren van pagina&#39;s en het starten van workflows en [operationele taken](/help/sites-administering/curl.md#common-operational-aem-curl-commands) zoals pakketbeheer en het beheren van gebruikers kunnen worden geautomatiseerd met cURL. Bovendien kunt u [zelf een cURL maken](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) opdrachten voor de meeste taken in AEM.
 
 >[!NOTE]
 >

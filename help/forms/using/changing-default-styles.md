@@ -11,9 +11,9 @@ discoiquuid: 582b0fe8-a92b-4a1d-b859-57f13f53d0d8
 docset: aem65
 feature: Mobile Forms
 exl-id: 4c84cfd1-50a4-416f-b4a5-7f2f4c7f10af
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -32,11 +32,11 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
 
 1. **Een profiel kiezen om aangepaste stijlen toe te voegen**
 
-   Heb toegang tot de interface CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en maak een profiel of kies een bestaand profiel. Ga voor meer informatie over het maken van een profiel naar [Een nieuw profiel maken](/help/forms/using/custom-profile.md)
+   Heb toegang tot de interface CRX DE bij URL: **https://&lt;server>:&lt;port>/crx/de** en maak een profiel of kies een bestaand profiel. Zie voor informatie over het maken van een profiel [Een profiel maken](/help/forms/using/custom-profile.md)
 
 1. **Een CSS-stijlpagina maken voor het opmaken van de HTML5-formulieren**
 
-   Navigeer naar de map waarin u de profielrenderer hebt gemaakt en maak een CSS-stijlbladbestand. De volgende stappen zijn
+   Navigeer naar de map waarin u de profielrenderer hebt gemaakt en maak een CSS-stijlbladbestand. De volgende stappen zijn:
 
    1. Klik met de rechtermuisknop op de map en selecteer **maken** > **bestand maken** in het menu
 
@@ -44,7 +44,7 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
    1. Open vanuit het navigatievenster het CSS-bestand dat u hebt gemaakt.
    1. Definieer de CSS-klassen van de componenten die u wilt opmaken en voeg stijlen toe in die klassen.
 
-   Als u wilt weten welke CSS-klassen u voor een bepaalde component in uw HTML5-formulieren wilt maken, raadpleegt u [Inleiding tot stijlen](/help/forms/using/css-styles.md).
+   Zie voor meer informatie over de CSS-klassen die u voor een bepaalde component in uw HTML5-formulieren wilt maken [Inleiding tot stijlen](/help/forms/using/css-styles.md).
 
 1. **Stijlblad opnemen in renderer profiel**
 

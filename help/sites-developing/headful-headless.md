@@ -2,9 +2,9 @@
 title: Hoofdletters en headless in AEM
 description: AEM projecten kunnen worden geïmplementeerd in een krachtig en zonder kop, maar de keuze is niet binair. AEM biedt de flexibiliteit om de voordelen van beide modellen in één project te benutten.
 exl-id: c9597c78-be05-42ff-84fe-f7451119e83d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1012'
+source-wordcount: '1013'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Maar dit hoeft geen binaire keuze te zijn. AEM biedt ongekende flexibiliteit, di
 
 ![Implementatiemodellen AEM](/help/sites-developing/headless/getting-started/assets/aem-implementation-models.png)
 
-In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaarplaats en AEM componenten die op Java, HTML, enz. worden gebaseerd. worden gebruikt om de inhoud weer te geven voor de gebruikerservaring. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en het leveren ervan allemaal in AEM.
+In een krachtig of volledig-stapelmodel, wordt de inhoud beheerd in de AEM bewaarplaats en AEM componenten die op Java, HTML worden gebaseerd, etc., worden gebruikt om de inhoud voor de gebruikerservaring terug te geven. In dit model gebeurt het maken van de inhoud, het vormgeven, het presenteren en het leveren ervan allemaal in AEM.
 
 In een headless model, wordt de inhoud beheerd in de AEM bewaarplaats, maar geleverd via APIs zoals REST en GraphQL aan een ander systeem om de inhoud voor de gebruikerservaring terug te geven. In dit model wordt inhoud gemaakt in AEM, maar wordt de inhoud vormgegeven, gepresenteerd en geleverd op een ander platform.
 
@@ -43,7 +43,7 @@ In de volgende sectie worden deze integratieniveaus nader beschreven.
 
 >[!NOTE]
 >
->Natuurlijk kunt u de SPA van de webshop ook opnieuw implementeren als een volledig functionerende AEM SPA [het AEM SPA Editor-framework gebruiken.](/help/sites-developing/spa-walkthrough.md) Als u al een nieuwe webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar valt deze buiten het bereik van dit document.
+>Natuurlijk kunt u de SPA van de webshop ook opnieuw implementeren als een volledig functionerende AEM SPA [het AEM SPA Editor-framework gebruiken.](/help/sites-developing/spa-walkthrough.md) Als u al een webshop of andere SPA hebt AEM en wilt maken, is dit de aanbevolen methode, maar is deze buiten het bereik van dit document.
 
 ## SPA integratieniveaus {#integration-levels}
 

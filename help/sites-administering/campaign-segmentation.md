@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1136'
+source-wordcount: '1132'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Dit document behandelt de configuratie van segmentatie zoals die met de Context van de Cliënt wordt gebruikt. Om segmenten met ContextHub te vormen die de aanraking UI gebruiken, gelieve te zien [Het vormen Segmentatie met ContextHub](/help/sites-administering/segmentation.md).
+>Dit document behandelt de configuratie van segmentatie zoals die met de Context van de Cliënt wordt gebruikt. Om segmenten met ContextHub te vormen die de aanraking UI gebruiken, zie [Het vormen Segmentatie met ContextHub](/help/sites-administering/segmentation.md).
 
 Segmentering is een belangrijke overweging bij het maken van een campagne. Zie [Verklarende woordenlijst voor segmentatie](/help/sites-authoring/segmentation-overview.md) voor informatie over hoe de segmentatie werkt en zeer belangrijke termijnen.
 
-Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, zult u de segmenten en de strategieën nodig voor uw gerichte inhoud moeten bepalen.
+Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstellingen hebt verzameld u wilt bereiken, moet u de segmenten en de strategieën bepalen nodig voor uw gerichte inhoud.
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud blijft behouden in het dialoogvenster [Campagnes](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md) van de website. De hier gedefinieerde taserpagina&#39;s kunnen als taseralinea&#39;s op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
@@ -131,7 +131,7 @@ Het nieuwe segment definiëren:
 1. Een [nieuwe pagina](/help/sites-authoring/editing-content.md#creatinganewpage) met de **Segment** sjabloon.
 1. Open de nieuwe pagina om de segmenteditor weer te geven:
 
-   ![De eerste stap van het creëren van een nieuw segment in de Redacteur van het Segment](assets/screen_shot_2012-02-02at101726am.png)
+   ![De eerste stap van het creëren van een segment in de Redacteur van het Segment](assets/screen_shot_2012-02-02at101726am.png)
 
 1. Gebruik de zijbalk of het contextmenu (klik met de rechtermuisknop en selecteer vervolgens **Nieuw...** om het venster van de Component van het Tussenvoegsel Nieuwe te openen) om het segmentspoor te vinden u wenst. Sleep het vervolgens naar de **Segment-editor** wordt standaard weergegeven **EN** container.
 1. Dubbelklik op de nieuwe eigenschap om de specifieke parameters te bewerken, bijvoorbeeld de muispositie:

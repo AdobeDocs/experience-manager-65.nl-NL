@@ -2,10 +2,10 @@
 title: Pagina's maken en ordenen met AEM
 description: Leer hoe u pagina's maakt en beheert met Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2434'
-ht-degree: 4%
+source-wordcount: '2412'
+ht-degree: 2%
 
 ---
 
@@ -21,11 +21,11 @@ In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ado
 
 >[!NOTE]
 >
->Er zijn een aantal [sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md) die u kunt gebruiken vanuit de websiteconsole om uw pagina&#39;s efficiënter te ordenen.
+>Er zijn verschillende [sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md) die u kunt gebruiken vanuit de websiteconsole om uw pagina&#39;s efficiënter te ordenen.
 
 ## Uw website ordenen {#organizing-your-website}
 
-Als auteur moet u uw website binnen AEM organiseren. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
+Organiseer uw website als auteur in AEM. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
 
 * U kunt deze gemakkelijk vinden in de ontwerpomgeving
 * Bezoekers naar uw site kunnen deze gemakkelijk in de publicatieomgeving bekijken
@@ -78,7 +78,7 @@ Vanuit elk punt kunt u de vertakking naar boven zien vanuit de broodkruimels in 
 
 ### Naamgevingsconventies voor pagina {#page-naming-conventions}
 
-Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
+Bij het maken van een pagina zijn er twee sleutelvelden:
 
 * **[Titel](#title)**:
 
@@ -104,7 +104,7 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Wanneer u een nieuwe pagina maakt, AEM [De paginanaam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en het GCO.
+Wanneer u een pagina maakt, AEM [valideert de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en het GCO.
 
 De minimaal toegestane tekens zijn:
 
@@ -122,7 +122,7 @@ Alle tekens die zijn toegestaan, zijn beschikbaar in [naamconventies](/help/site
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. ](/help/sites-developing/naming-conventions.md) A **Titel** het veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
+Als u alleen een pagina opgeeft **Titel** wanneer u een pagina maakt, wordt AEM de pagina afgeleid **Naam** van deze tekenreeks en [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR. A **Titel** het veld met ongeldige tekens wordt geaccepteerd, maar voor de afgeleide naam worden de ongeldige tekens vervangen. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
@@ -131,7 +131,7 @@ Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, le
 
 #### Naam {#name}
 
-Wanneer u een pagina opgeeft **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het dialoogvenster **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
+Wanneer u een pagina opgeeft **Naam** bij het maken van een pagina, AEM [valideert de naam volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het dialoogvenster **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
 
 ![caop-02](assets/caop-02.png)
 
@@ -186,7 +186,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
 1. Open de Sites-console (bijvoorbeeld [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)).
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
-1. Open de vervolgkeuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
+1. De keuzelijst openen met **Maken** in de werkbalk selecteert u vervolgens **Pagina** in de lijst:
 
    ![caop-03](assets/caop-03.png)
 
@@ -213,7 +213,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u een pagina **Naam** bij het maken van een nieuwe pagina AEM [De naam valideren volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
+      * Als u een pagina **Naam** bij het maken van een pagina, AEM [valideert de naam volgens de conventies](/help/sites-developing/naming-conventions.md) opgelegd door AEM en JCR.
 
       * U **kan geen ongeldige tekens verzenden** in de **Naam** veld. Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
 
@@ -221,7 +221,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    >
    >Zie [Naamgevingsconventies voor pagina](#page-naming-conventions).
 
-   De minimale informatie die nodig is om een nieuwe pagina te maken, is de **Titel**.
+   De minimale informatie die nodig is om een pagina te maken, is de **Titel**.
 
    ![caop-05](assets/caop-05.png)
 
@@ -231,7 +231,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
    >[!NOTE]
    >
-   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld: `winter` bestaat al `winter0`.
+   >Als u een pagina maakt met een naam die al op die locatie bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `winter` bestaat al `winter0`.
 
 1. Als u terugkeert naar de console, zult u uw nieuwe pagina zien:
 
@@ -281,17 +281,17 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
    >Als u in de selectiemodus werkt, wordt dit automatisch verlaten zodra de pagina wordt gekopieerd.
 
 1. Navigeer naar de locatie voor de nieuwe kopie van de pagina.
-1. De **Plakken** is beschikbaar met een pijl-omlaag rechtstreeks naar rechts:
+1. De **Plakken** is beschikbaar met een vervolgkeuzepijl rechtstreeks naar rechts:
 
    ![Plakken](assets/paste-without-children.png)
 
    U kunt:
    * Selecteer de **Plakken** paginapictogram zelf: op deze locatie wordt een kopie van de originele pagina en eventuele onderliggende pagina&#39;s gemaakt.
-   * Selecteer de vervolgkeuzepijl om de knop **Plakken zonder kinderen** -optie. Op deze locatie wordt een kopie van de originele pagina gemaakt. Onderliggende pagina&#39;s worden niet gekopieerd.
+   * Selecteer de vervolgkeuzepijl om de **Plakken zonder kinderen** -optie. Op deze locatie wordt een kopie van de originele pagina gemaakt. Onderliggende pagina&#39;s worden niet gekopieerd.
 
    >[!NOTE]
    >
-   >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Bijvoorbeeld: `winter` bestaat al `winter` wordt `winter1`.
+   >Als u de pagina kopieert naar een locatie waar al een pagina met dezelfde naam als het origineel bestaat, genereert het systeem automatisch een variatie in de naam door een nummer toe te voegen. Als `winter` bestaat al `winter` wordt `winter1`.
 
 ### Een pagina verplaatsen of de naam ervan wijzigen {#moving-or-renaming-a-page}
 
@@ -321,7 +321,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
 
-   Hiermee wordt de wizard Verplaatsen van de pagina geopend.
+   Hiermee opent u de wizard Verplaatsen pagina.
 
 1. Van de **Naam wijzigen** het werkgebied van de wizard dat u kunt instellen:
 
@@ -335,7 +335,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld: `winter` bestaat al `winter` wordt `winter1`.
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `winter` bestaat al `winter` wordt `winter1`.
 
 1. Van de **Doel selecteren** het werkgebied van de wizard dat u kunt instellen:
 
@@ -354,7 +354,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Bijvoorbeeld: `winter` bestaat al `winter` wordt `winter1`.
+   >Als u een pagina verplaatst naar een locatie waar al een pagina met dezelfde naam bestaat, genereert het systeem automatisch een variatie in de naam door een getal toe te voegen. Als `winter` bestaat al `winter` wordt `winter1`.
 
 1. Als de pagina is gekoppeld aan of waarnaar wordt verwezen, of is gepubliceerd, worden de details weergegeven in het dialoogvenster **Aanpassen/Opnieuw publiceren** stap.
 
@@ -390,7 +390,7 @@ De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [*
 
 >[!NOTE]
 >
->Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor paginabeweging te vormen/noem acties anders, gelieve te zien [Asynchrone taken](/help/sites-administering/asynchronous-jobs.md) document in de de gebruikersgids van het Beleid.
+>Voor meer informatie over asynchrone baanverwerking en hoe te om de grens voor de beweging van de pagina te vormen/acties anders te noemen, zie [Asynchrone taken](/help/sites-administering/asynchronous-jobs.md) document in de de gebruikersgids van het Beleid.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Standaardcomponenten configureren in ontwerpmodus
 description: Adobe Experience Manager-componenten configureren in ontwerpmodus.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '915'
+source-wordcount: '914'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ De inhoud van een productpagina kan bijvoorbeeld een alineasysteem bevatten dat 
 >
 >Het bewerken van het ontwerp in de ontwerpmodus, zoals beschreven in dit artikel, is de aanbevolen manier om ontwerpen van statische sjablonen te definiëren
 >
->Het aanpassen van ontwerpen in bijvoorbeeld CRX DE is geen goede praktijk en de toepassing van dergelijke ontwerpen kan van verwacht gedrag variëren. Zie het document voor ontwikkelaars [Paginasjablonen - statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) voor meer informatie .
+>Het aanpassen van ontwerpen in CRX DE bijvoorbeeld, is geen beste praktijk en de toepassing van dergelijke ontwerpen kan van verwacht gedrag variëren. Zie het document voor ontwikkelaars [Paginasjablonen - statisch](/help/sites-developing/page-templates-static.md#how-template-designs-are-applied) voor meer informatie .
 
 ## Componenten in-/uitschakelen {#enable-disable-components}
 
@@ -66,7 +66,7 @@ Een component in- of uitschakelen:
 
    Hiermee selecteert u het alineasysteem dat de huidige component bevat.
 
-1. De **Configureren** pictogram voor het alineasysteem wordt weergegeven op de actiebalk van het bovenliggende element.
+1. De **Configureren** wordt het pictogram voor het alineasysteem weergegeven op de actiebalk van het bovenliggende element.
 
    ![Configureren](do-not-localize/screen_shot_2018-03-22at103256.png)
 
@@ -95,7 +95,7 @@ Een component in- of uitschakelen:
 
    >[!NOTE]
    >
-   >Adaptieve formuliercomponenten zijn ontworpen om te werken in de container van adaptieve formulieren met behulp van het Forms-ecosysteem. Daarom moeten deze componenten alleen worden gebruikt in een adaptieve formuliereditor en werken ze niet in de pagina-editor Sites.
+   >Adaptieve formuliercomponenten zijn ontworpen voor gebruik in adaptieve formuliercontainers met het Forms-ecosysteem. Daarom moeten deze componenten alleen worden gebruikt in een adaptieve formuliereditor en werken ze niet in de pagina-editor Sites.
 
    **Instellingen**
 

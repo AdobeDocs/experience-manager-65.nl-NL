@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: 5675d69a5bdf296782339f02162db8068daf29e3
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7565'
+source-wordcount: '7564'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ U kunt de component ook gebruiken om het gedrag van de taak te controleren. Bijv
 
 ## E-mailstap verzenden {#send-email-step}
 
-Met de stap E-mail kunt u een e-mailbericht verzenden, bijvoorbeeld een e-mailbericht met een recorddocument, een koppeling van een adaptief formulier, een koppeling van een interactieve communicatie of met een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
+Met de stap E-mail kunt u bijvoorbeeld een e-mailbericht verzenden met een recorddocument, een koppeling naar een adaptief formulier, een koppeling naar een interactieve communicatie of een bijgevoegd PDF-document. E-mailstapondersteuning verzenden [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). HTML e-mailberichten reageren en passen zich aan de e-mailclient en schermgrootte van de ontvangers aan. Met een e-mailsjabloon voor HTML kunt u de weergave, het kleurenschema en het gedrag van de e-mail definiëren.
 
 In de e-mailstap wordt de Day CQ Mail Service gebruikt om e-mailberichten te verzenden. Controleer voordat u de stap E-mail gebruikt of de knop [e-mailservice](../../forms/using/aem-forms-workflow.md) is geconfigureerd. De e-mailstap heeft de volgende eigenschappen:
 

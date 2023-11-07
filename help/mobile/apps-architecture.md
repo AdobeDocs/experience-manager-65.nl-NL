@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2666'
+source-wordcount: '2664'
 ht-degree: 0%
 
 ---
@@ -59,9 +59,9 @@ De hoofdtekst van een pagina van de Angular wordt anders weergegeven afhankelijk
 
 In de auteurmodus wordt elke afzonderlijke pagina afzonderlijk weergegeven. Angular behandelt het verpletteren tussen pagina&#39;s niet, noch is een ng-mening die wordt gebruikt om een gedeeltelijk malplaatje te laden dat de componenten van de pagina bevat. In plaats daarvan wordt de inhoud van de paginasjabloon (template.jsp) aan de serverzijde opgenomen via de `cq:include` -tag.
 
-Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, Sidekick, ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
+Deze strategie laat de auteurseigenschappen (zoals het toevoegen van en het uitgeven componenten in het paragraafsysteem, Sidekick, ontwerpwijze, etc.) toe om zonder aanpassing te functioneren. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
 
-Merk op dat het malplaatje.jsp omvat in a verpakt is `div` element dat het `ng-controller` richtlijn. Met deze structuur kunt u de DOM-inhoud koppelen aan de controller. Daarom, hoewel de pagina&#39;s die zich op de cliëntkant teruggeven ontbreken, individuele componenten die dit doen goed werken (zie sectie over Componenten hieronder).
+Het include-bestand template.jsp wordt opgenomen in een `div` element dat het `ng-controller` richtlijn. Met deze structuur kunt u de DOM-inhoud koppelen aan de controller. Daarom, hoewel de pagina&#39;s die zich op de cliëntkant teruggeven ontbreken, individuele componenten die dit doen goed werken (zie sectie over Componenten hieronder).
 
 ```xml
 <div ng-controller="<c:out value="${controllerNameStripped}"/>">
@@ -144,7 +144,7 @@ Met het controller.js.jsp-script wordt het controllerfragment voor elke pagina g
 ])
 ```
 
-Let erop dat de `data` variable wordt toegewezen de belofte die door de Angular is geretourneerd `$http.get` methode. Elke component die in deze pagina is opgenomen, kan desgewenst .json-inhoud (via het script angular.json.jsp) beschikbaar maken en op de inhoud van dit verzoek reageren wanneer dit wordt opgelost. Het verzoek is zeer snel op mobiele apparaten omdat het eenvoudig tot het dossiersysteem toegang heeft.
+De `data` variable wordt toegewezen de belofte die door de Angular is geretourneerd `$http.get` methode. Elke component die in deze pagina is opgenomen, kan desgewenst .json-inhoud (via het script angular.json.jsp) beschikbaar maken en op de inhoud van dit verzoek reageren wanneer dit wordt opgelost. Het verzoek is zeer snel op mobiele apparaten omdat het eenvoudig tot het dossiersysteem toegang heeft.
 
 Als een component op deze manier deel moet uitmaken van de controller, moet deze de component /libs/mobileapps/components/angular/ng-component uitbreiden en de component `frameworkType: angular` eigenschap.
 
@@ -367,7 +367,7 @@ De map www bevat alle webinhoud (HTML-, JS- en CSS-bestanden) die de weergave en
 
 #### www/config.xml {#www-config-xml}
 
-De PhoneGap-documentatie (`https://docs.phonegap.com`) verwijst naar dit bestand als een &#39;globaal configuratiebestand&#39;. Het bestand config.xml bevat veel app-eigenschappen, zoals de naam van de app, de &#39;voorkeuren&#39; van de toepassing (bijvoorbeeld of een iOS-webweergave het mogelijk maakt om te schuiven) en insteekmodules die *alleen* verbruikt door PhoneGap-build.
+De PhoneGap-documentatie (`https://docs.phonegap.com`) verwijst naar dit bestand als een &#39;globaal configuratiebestand&#39;. Het bestand config.xml bevat veel app-eigenschappen, zoals de naam van de app, de &#39;voorkeuren&#39; van de toepassing (bijvoorbeeld of een iOS-webweergave het schuiven toestaat of niet) en insteekmodules die *alleen* verbruikt door PhoneGap-build.
 
 Het bestand config.xml is een statisch bestand in AEM en wordt als zodanig geëxporteerd via Content Sync.
 

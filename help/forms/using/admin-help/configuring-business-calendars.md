@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1907'
+source-wordcount: '1901'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Een taakherinnering is bijvoorbeeld geconfigureerd voor drie werkdagen nadat de 
 
 >[!NOTE]
 >
->Bij het berekenen van datums en tijden met gebruik van bedrijfsplannen, gebruiken AEM formulieren de datum en tijd van de server waarop deze wordt uitgevoerd en passen ze zich niet aan voor het verschil tussen tijdzones. Bijvoorbeeld, als een taakherinnering om 10:00 uur op een server gepland is die in Londen loopt, maar de gebruiker die de herinnering ontvangt wordt gevestigd in de Stad van New York, zou de gebruiker de herinnering om 5:00 lokale tijd ontvangen.
+>Bij het berekenen van datums en tijden met gebruik van bedrijfsplannen, gebruiken AEM formulieren de datum en tijd van de server waarop deze wordt uitgevoerd en passen ze zich niet aan voor het verschil tussen tijdzones. Bijvoorbeeld, als een taakherinnering om 10:00 uur op een server gepland is die in Londen loopt, maar de gebruiker die de herinnering ontvangt is in de Stad van New York, zou de gebruiker de herinnering om 5:00 lokale tijd ontvangen.
 
 ## De standaardagenda voor het bedrijf gebruiken {#using-the-default-business-calendar}
 
@@ -65,7 +65,7 @@ Als uw organisatie verschillende reeksen gebruikers bevat die verschillende niet
 
 >[!NOTE]
 >
->Als u geen nieuwe bedrijfskalender creeert, dan zal de standaardkalender worden gebruikt.
+>Als u geen bedrijfsagenda maakt, wordt de standaardkalender gebruikt.
 
 1. Klik in de beheerconsole op Services > Forms-workflow > Business Calendars.
 1. Als u een nieuwe agenda wilt toevoegen, klikt u op ![bus_cal_plus](assets/bus_cal_plus.png). De tekst *Nieuwe kalender* in de vervolgkeuzelijst. Selecteer de tekst en typ een andere naam voor de kalender.

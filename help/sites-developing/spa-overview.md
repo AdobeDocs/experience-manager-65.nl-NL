@@ -1,19 +1,15 @@
 ---
 title: Overzicht SPA Editor
-seo-title: SPA Editor Overview
 description: In dit artikel wordt een uitgebreid overzicht gegeven van de SPA Editor en van de manier waarop dit werkt. In dit artikel zijn gedetailleerde workflows opgenomen van interactie tussen de SPA Editor in AEM.
-seo-description: This article gives a comprehensive overview of the SPA Editor and how it works included detailed workflows of interaction of the SPA Editor within AEM.
-uuid: c283abab-f5bc-414a-bc81-bf3bdce38534
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
-discoiquuid: 06b8c0be-4362-4bd1-ad57-ea5503616b17
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1653'
+source-wordcount: '1651'
 ht-degree: 0%
 
 ---
@@ -158,7 +154,7 @@ Dit is een gedetailleerder overzicht dat is toegespitst op de ontwerpervaring.
 
 ## Vereisten en beperkingen {#requirements-limitations}
 
-Om de auteur in staat te stellen om de paginaredacteur te gebruiken om de inhoud van een SPA uit te geven, moet uw SPA toepassing worden uitgevoerd om met de AEM SPA Redacteur SDK in wisselwerking te staan. Zie de [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md) -document voor minimale informatie die u nodig hebt om die van u te kunnen gebruiken.
+Om de auteur in staat te stellen om de paginaredacteur te gebruiken om de inhoud van een SPA uit te geven, moet uw SPA toepassing worden uitgevoerd om met de AEM SPA Redacteur SDK in wisselwerking te staan. Zie [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md) voor het minimum dat u moet weten om van u te lopen.
 
 ### Ondersteunde kaders {#supported-frameworks}
 
@@ -171,7 +167,7 @@ Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, m
 
 ### Aanvullende kaders {#additional-frameworks}
 
-Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie de [SPA](/help/sites-developing/spa-blueprint.md) document voor de vereisten die een kader moet vervullen om tot een kader-specifieke laag te leiden die uit modules, componenten, en de diensten wordt samengesteld om met de Redacteur van de SPA van de AEM te werken.
+Er kunnen aanvullende SPA worden geïmplementeerd om te werken met de AEM SPA Editor SDK. Zie de [SPA](/help/sites-developing/spa-blueprint.md) voor de vereisten die een kader moet vervullen om tot een kader-specifieke laag te leiden die uit modules, componenten, en de diensten wordt samengesteld om met de AEM SPA Redacteur te werken.
 
 ### Meerdere kiezers gebruiken {#multiple-selectors}
 
@@ -198,6 +194,6 @@ De AEM SPA Editor SDK werd geïntroduceerd met AEM 6.4 service pack 2. Het wordt
 * Configs bewerken (bijvoorbeeld listeners)
 * Ongedaan maken/Opnieuw
 * Pagina diff en Tijd verdraaien
-* Functies die HTML herschrijven aan de serverzijde uitvoeren, zoals Koppelingencontrole, CDN-herschrijvingsservice, URL-verkorting enz.
+* Functies die HTML herschrijven aan de serverzijde uitvoeren, zoals Koppelingencontrole, CDN-herschrijfservice, URL-verkorting, enzovoort.
 * Modus Ontwikkelaar
 * AEM starten

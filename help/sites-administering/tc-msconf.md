@@ -4,7 +4,7 @@ description: Leer hoe u AEM kunt verbinden met Microsoft Translator vanuit de ve
 feature: Language Copy
 role: Admin
 exl-id: ca575a30-fc3e-4f38-9aa7-dbecbc089f87
-source-git-commit: f6e94d215a49683efe87254ccc1600fefcb369bc
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '477'
 ht-degree: 0%
@@ -22,7 +22,7 @@ Een configuratie maken voor de [Microsoft Vertaler](https://www.microsoft.com/en
 | Eigenschap | Beschrijving |
 |---|---|
 | Vertaallabel | De weergavenaam voor de vertaalservice |
-| Vertaalkenmerk | (Optioneel) Voor door de gebruiker gegenereerde inhoud wordt bijvoorbeeld de toewijzing naast vertaalde tekst weergegeven `Translations by Microsoft` |
+| Vertaalkenmerk | (Optioneel) Voor door de gebruiker gegenereerde inhoud wordt bijvoorbeeld de toewijzing naast vertaalde tekst weergegeven. `Translations by Microsoft` |
 | Werkruimte-id | (Optioneel) De id van de aangepaste Microsoft Translator-engine die u wilt gebruiken |
 | Subscription Key | Je Microsoft Subscription Key voor Microsoft Translator |
 

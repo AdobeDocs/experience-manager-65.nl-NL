@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
 role: Developer
 exl-id: 6af148eb-427a-4b54-9c5f-8750736882d8
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3918'
+source-wordcount: '3914'
 ht-degree: 0%
 
 ---
@@ -69,7 +69,7 @@ Als u programmatisch een Acrobat Reader DC Extension Service-bewerking wilt uitv
 
 **Een PDF-document ophalen**
 
-U moet een PDF-document ophalen om gebruiksrechten toe te passen. PDF-documenten met ingeschakelde rechten bevatten een gebruiksrechtenwoordenboek. Wanneer Adobe Reader een document met een dergelijk woordenboek opent, worden alleen de gebruiksrechten ingeschakeld die in het woordenboek voor dat document zijn opgegeven. Als het document geen gebruiksrechtenwoordenboek bevat, wordt dit gemaakt door de Acrobat Reader DC Extension Service. Als het al een woordenboek bevat, overschrijft de Acrobat Reader DC-extensieservice bestaande gebruiksrechten met de gebruiksrechten die u opgeeft. In het woordenboek wordt opgegeven welke gebruiksrechten zijn ingeschakeld. Wanneer een gebruiker het document in Adobe Reader opent, zijn alleen de gebruiksrechten toegestaan die in het woordenboek zijn opgegeven.
+Haal een PDF-document op om gebruiksrechten toe te passen. PDF-documenten met ingeschakelde rechten bevatten een gebruiksrechtenwoordenboek. Wanneer Adobe Reader een document met een dergelijk woordenboek opent, worden alleen de gebruiksrechten ingeschakeld die in het woordenboek voor dat document zijn opgegeven. Als het document geen gebruiksrechtenwoordenboek bevat, wordt dit gemaakt door de Acrobat Reader DC Extension Service. Als het al een woordenboek bevat, overschrijft de Acrobat Reader DC-extensieservice bestaande gebruiksrechten met de gebruiksrechten die u opgeeft. In het woordenboek wordt opgegeven welke gebruiksrechten zijn ingeschakeld. Wanneer een gebruiker het document in Adobe Reader opent, zijn alleen de gebruiksrechten toegestaan die in het woordenboek zijn opgegeven.
 
 **Gebruiksrechten opgeven om toe te passen**
 
@@ -388,7 +388,7 @@ Voordat u een Acrobat Reader DC-extensieservicebewerking programmatisch kunt uit
 
 **Een PDF-document met ingeschakelde rechten ophalen**
 
-U moet een voor rechten geschikt document van de PDF terugwinnen om informatie over de referentie terug te winnen. U kunt informatie over een referentie ook terugwinnen door zijn alias te specificeren; nochtans, als u informatie over een referentie wilt terugwinnen die werd gebruikt om gebruiksrechten op een specifiek recht-toegelaten document van de PDF toe te passen, dan moet u het document terugwinnen.
+Haal een PDF-document met ingeschakelde rechten op om informatie over de referentie op te halen. U kunt informatie over een referentie ook terugwinnen door zijn alias te specificeren; nochtans, als u informatie over een referentie wilt terugwinnen die werd gebruikt om gebruiksrechten op een specifiek recht-toegelaten document van de PDF toe te passen, dan moet u het document terugwinnen.
 
 **Informatie over de referentie ophalen**
 

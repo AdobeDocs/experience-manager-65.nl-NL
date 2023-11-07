@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4150'
+source-wordcount: '4143'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 0%
 
 **Voorbeelden en voorbeelden in dit document gelden alleen voor AEM Forms in JEE-omgeving.**
 
-De Forms-service geeft formulieren als HTML weer in reactie op een HTTP-aanvraag van een webbrowser. Een voordeel van het weergeven van een formulier als HTML is dat de computer waarop de webbrowser van de client zich bevindt, geen Adobe Reader, Acrobat of Flash Player vereist (voor formulierhulplijnen (afgekeurd)).
+De Forms-service geeft formulieren als HTML weer in reactie op een HTTP-aanvraag van een webbrowser. Een voordeel van het weergeven van een formulier als HTML is dat de computer waarop de webbrowser van de client zich bevindt geen Adobe Reader, Acrobat of Flash Player vereist (voor formulierhulplijnen (afgekeurd)).
 
 Als u een formulier wilt weergeven als HTML, moet het formulierontwerp worden opgeslagen als een XDP-bestand. Een formulierontwerp dat is opgeslagen als een PDF-bestand, kan niet worden weergegeven als HTML. Houd rekening met de volgende criteria wanneer u een formulierontwerp ontwikkelt in Designer dat wordt weergegeven als HTML:
 
@@ -33,7 +33,7 @@ Als u een formulier wilt weergeven als HTML, moet het formulierontwerp worden op
 
 >[!NOTE]
 >
->Als u een formulier met TIFF-afbeeldingen weergeeft met de opdracht `FormServiceClient` object `(Deprecated) renderHTMLForm` en `renderHTMLForm2` -methoden, zijn de TIFF-afbeeldingen niet zichtbaar in het weergegeven HTML-formulier dat wordt weergegeven in Internet Explorer- of Mozilla Firefox-browsers. Deze browsers bieden geen native ondersteuning voor TIFF-afbeeldingen.
+>Als u een formulier met TIFF-afbeeldingen weergeeft met de opdracht `FormServiceClient` object `(Deprecated) renderHTMLForm` en `renderHTMLForm2` de TIFF-afbeeldingen niet zichtbaar zijn in het weergegeven HTML-formulier dat wordt weergegeven in Internet Explorer- of Mozilla Firefox-browsers. Deze browsers bieden geen native ondersteuning voor TIFF-afbeeldingen.
 
 ## HTML pagina&#39;s {#html-pages}
 
@@ -55,7 +55,7 @@ Wanneer een formulierontwerp wordt weergegeven als een HTML-formulier, wordt elk
 
 Wanneer formulierontwerpen worden weergegeven als HTML-formulieren, blijven de deelvensters beperkt tot een bepaald paginaformaat. Als u dynamische subformulieren hebt, moeten deze in het deelvenstersubformulier worden genest. Dynamische subformulieren kunnen worden uitgebreid tot een oneindig aantal HTML-pagina&#39;s.
 
-Wanneer een formulier wordt weergegeven als een HTML-formulier, hebben paginaformaten (vereist voor paginering van formulieren die worden weergegeven als PDF) geen betekenis. Omdat een formulier met een stroombare indeling kan worden uitgebreid tot een oneindig aantal HTML-pagina&#39;s, is het belangrijk dat u geen voetteksten op de master pagina plaatst. Een voettekst onder het inhoudsgebied op een master pagina kan HTML-inhoud overschrijven die voorbij een paginagrens loopt.
+Wanneer een formulier wordt weergegeven als een HTML-formulier, hebben paginaformaten (vereist voor paginering van formulieren die worden weergegeven als PDF) geen betekenis. Omdat een formulier met een stroombare indeling kan worden uitgebreid tot een oneindig aantal HTML-pagina&#39;s, is het belangrijk dat u geen voetteksten op de basispagina plaatst. Een voettekst onder het inhoudsgebied op een basispagina kan HTML-inhoud overschrijven die voorbij een paginagrens loopt.
 
 U moet expliciet van deelvenster naar deelvenster gaan met de opdracht `xfa.host.pageUp` en `xfa.host.pageDown` methoden. U wijzigt pagina&#39;s door een formulier naar de Forms-service te verzenden en het formulier door de Forms-service terug te sturen naar het clientapparaat, meestal een webbrowser.
 
@@ -69,7 +69,7 @@ U moet expliciet van deelvenster naar deelvenster gaan met de opdracht `xfa.host
 
 **.fsc-ds-ssb**: Dit stijlblad is van toepassing in het geval van een leeg tekenveld.
 
-**.fsc-ds-ssv**: Dit stijlblad is van toepassing in het geval van een geldig tekenveld.
+**.fsc-ds-ssv**: Dit stijlblad is van toepassing in het geval van een geldig handtekeningveld.
 
 **.fsc-ds-ssc**: Dit stijlblad is van toepassing in het geval van een geldig handtekeningveld, maar er zijn gegevens gewijzigd.
 
@@ -89,9 +89,9 @@ U kunt formulieren ontwerpen die tussen pagina&#39;s (deelvensters) bewegen door
 
 U wordt aangeraden scriptvariabelen en formuliervelden niet dezelfde namen te geven, zoals item. Sommige webbrowsers, zoals Internet Explorer, initialiseren een variabele met dezelfde naam als een formulierveld, waardoor een scriptfout optreedt. Het is een goede gewoonte om formuliervelden en scriptvariabelen verschillende namen te geven.
 
-Wanneer u HTML-formulieren weergeeft die zowel paginanavigatiefuncties als formulierscripts bevatten (bijvoorbeeld, neem aan dat een script veldgegevens ophaalt uit een database telkens wanneer het formulier wordt gegenereerd), moet u ervoor zorgen dat het formulierscript zich in de gebeurtenis form:calculate bevindt in plaats van in de gebeurtenis form:readyevent.
+Bij het weergeven van HTML-formulieren die zowel paginanavigatiefuncties als formulierscripts bevatten (bijvoorbeeld, neem aan dat een script veldgegevens ophaalt uit een database telkens wanneer het formulier wordt gegenereerd), moet u ervoor zorgen dat het formulierscript de gebeurtenis form:calculate heeft in plaats van de gebeurtenis form:readyevent.
 
-Formulierscripts die zich in de gebeurtenis form:ready bevinden, worden slechts eenmaal uitgevoerd tijdens de eerste weergave van het formulier en worden niet uitgevoerd voor volgende opvragingen van pagina&#39;s. De gebeurtenis form:calculate wordt daarentegen uitgevoerd voor elke paginanavigatie waarin het formulier wordt gegenereerd.
+Formulierscripts in de gebeurtenis form:ready worden slechts eenmaal uitgevoerd tijdens de eerste weergave van het formulier en worden niet uitgevoerd voor volgende opvragingen van pagina&#39;s. De gebeurtenis form:calculate wordt daarentegen uitgevoerd voor elke paginanavigatie waarin het formulier wordt gegenereerd.
 
 >[!NOTE]
 >
@@ -99,9 +99,9 @@ Op een formulier met meerdere pagina&#39;s blijven wijzigingen die door JavaScri
 
 U kunt aangepaste scripts aanroepen voordat u een formulier verzendt. Deze functie werkt op alle beschikbare browsers. Deze kan echter alleen worden gebruikt wanneer gebruikers het HTML-formulier met de bijbehorende `Output Type` eigenschap ingesteld op `Form Body`. Het werkt niet als de `Output Type` is `Full HTML`. Zie Formulieren configureren in de Help voor het beheer voor stappen om deze functie te configureren.
 
-U moet eerst een callback-functie definiëren die wordt aangeroepen voordat u het formulier verzendt, waarbij de naam van de functie `_user_onsubmit`. Er wordt aangenomen dat de functie geen uitzondering genereert of dat de uitzondering wordt genegeerd als dit het geval is. Het wordt aanbevolen de JavaScript-functie in de kopsectie van de HTML te plaatsen. nochtans, kunt u het overal vóór het eind van de manuscriptmarkeringen verklaren die omvatten `xfasubset.js`.
+U moet eerst een callback-functie definiëren die wordt aangeroepen voordat u het formulier verzendt, waarbij de naam van de functie `_user_onsubmit`. Er wordt aangenomen dat de functie geen uitzondering genereert of dat de uitzondering wordt genegeerd als dit het geval is. Het wordt aangeraden de JavaScript-functie in de kopsectie van de HTML te plaatsen, maar u kunt deze functie overal vóór het einde van de scripttags declareren die ook scripttags bevatten `xfasubset.js`.
 
-Wanneer de formserver een XDP teruggeeft die een drop-down lijst bevat, naast het creëren van de drop-down lijst, leidt het ook tot twee verborgen tekstgebieden. In deze tekstvelden worden de gegevens van de vervolgkeuzelijst opgeslagen (in de ene tekstveld wordt de weergavenaam van de opties opgeslagen en in de andere tekstveld wordt de waarde voor de opties opgeslagen). Daarom wordt elke keer dat een gebruiker het formulier verzendt, het volledige gegeven van de vervolgkeuzelijst verzonden. Ervan uitgaande dat u niet zoveel gegevens elke keer wilt verzenden, kunt u een aangepast script schrijven om dat uit te schakelen. Bijvoorbeeld: De naam van de vervolgkeuzelijst is `drpOrderedByStateProv` en de subformulierkoptekst wordt ingepakt. De naam van het HTML-invoerelement wordt `header[0].drpOrderedByStateProv[0]`. De naam van de verborgen velden waarin de gegevens van het vervolgkeuzemenu worden opgeslagen en verzonden, heeft de volgende namen: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
+Wanneer de formserver een XDP teruggeeft die een drop-down lijst bevat, naast het creëren van de drop-down lijst, leidt het ook tot twee verborgen tekstgebieden. In deze tekstvelden worden de gegevens van de vervolgkeuzelijst opgeslagen (in de ene tekstveld wordt de weergavenaam van de opties opgeslagen en in de andere tekstveld wordt de waarde voor de opties opgeslagen). Elke keer dat een gebruiker het formulier verzendt, worden dus de volledige gegevens van de vervolgkeuzelijst verzonden. Ervan uitgaande dat u niet zoveel gegevens elke keer wilt verzenden, kunt u een aangepast script schrijven om dat uit te schakelen. De naam van de vervolgkeuzelijst is bijvoorbeeld `drpOrderedByStateProv` en de subformulierkoptekst wordt ingepakt. De naam van het HTML-invoerelement wordt `header[0].drpOrderedByStateProv[0]`. De naam van de verborgen velden waarin de gegevens van het vervolgkeuzemenu worden opgeslagen en verzonden, heeft de volgende namen: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
 U kunt deze invoerelementen op de volgende manier uitschakelen als u de gegevens niet wilt posten. `var __CUSTOM_SCRIPTS_VERSION = 1; //enabling the feature function _user_onsubmit() { var elems = document.getElementsByName("header[0].drpOrderedByStateProv_DISPLAYITEMS_[0]"); elems[0].disabled = true; elems = document.getElementsByName("header[0].drpOrderedByStateProv_VALUEITEMS_[0]"); elems[0].disabled = true; }`
 
@@ -125,7 +125,7 @@ Wanneer u formulierontwerpen maakt die moeten worden gerenderd als HTML, moet u 
 
 Scripts die op de client worden uitgevoerd of op zowel de client als de server worden uitgevoerd, moeten binnen de XFA-subset worden geschreven. Scripts die op de server worden uitgevoerd, kunnen het volledige XFA-scriptmodel gebruiken en ook FormCalc gebruiken. Voor informatie over het gebruik van JavaScript raadpleegt u [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
-Bij het uitvoeren van scripts op de client kan alleen het deelvenster dat momenteel wordt weergegeven, scripts gebruiken. U kunt bijvoorbeeld geen script uitvoeren op velden die zich in deelvenster A bevinden wanneer deelvenster B wordt weergegeven. Wanneer scripts op de server worden uitgevoerd, zijn alle deelvensters toegankelijk.
+Wanneer scripts op de client worden uitgevoerd, kan alleen het huidige deelvenster dat wordt weergegeven, een script gebruiken. U kunt bijvoorbeeld geen script uitvoeren op velden in deelvenster A wanneer deelvenster B wordt weergegeven. Wanneer scripts op de server worden uitgevoerd, zijn alle deelvensters toegankelijk.
 
 U moet ook voorzichtig zijn wanneer het gebruiken van de uitdrukkingen van het Model van Objecten Scripting (SOM) binnen manuscripten die op de cliënt lopen. Alleen een vereenvoudigde subset van SOM-expressies wordt ondersteund door scripts die op de client worden uitgevoerd.
 
@@ -144,7 +144,7 @@ Voor meer informatie over een ongeldige test, zie [Forms Designer](https://www.a
 
 ## Formulierknoppen {#form-buttons}
 
-Als u op een knop Verzenden klikt, worden formuliergegevens naar de Forms-service verzonden en wordt het einde van de formulierverwerking aangegeven. De `preSubmit` -gebeurtenis kan zo worden ingesteld dat deze op de client of server wordt uitgevoerd. De `preSubmit` De gebeurtenis wordt uitgevoerd voordat het formulier wordt verzonden als dit is geconfigureerd om op de client te worden uitgevoerd. Anders wordt `preSubmit` De gebeurtenis wordt tijdens het verzenden van het formulier op de server uitgevoerd. Voor meer informatie over de `preSubmit` gebeurtenis, zie [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Als u op een knop Verzenden klikt, worden formuliergegevens naar de Forms-service verzonden en wordt het einde van de formulierverwerking aangegeven. De `preSubmit` -gebeurtenis kan zo worden ingesteld dat deze op de client of server wordt uitgevoerd. De `preSubmit` De gebeurtenis wordt uitgevoerd voordat het formulier wordt verzonden als dit is geconfigureerd om op de client te worden uitgevoerd. Anders wordt de `preSubmit` De gebeurtenis wordt tijdens het verzenden van het formulier op de server uitgevoerd. Voor meer informatie over de `preSubmit` gebeurtenis, zie [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 Als er aan een knop geen clientscript is gekoppeld, worden gegevens naar de server verzonden, worden berekeningen op de server uitgevoerd en wordt het HTML-formulier opnieuw gegenereerd. Als een knop een clientscript bevat, worden er geen gegevens naar de server verzonden en wordt het clientscript in de webbrowser uitgevoerd.
 
@@ -156,9 +156,9 @@ U wordt aangeraden de formulierlogica in Calculate-gebeurtenissen te plaatsen, d
 
 ## Presentatiewijzigingen behouden {#maintaining-presentation-changes}
 
-Bij het schakelen tussen HTML-pagina&#39;s (deelvensters) blijft alleen de status van de gegevens behouden. Instellingen zoals achtergrondkleur of verplichte veldinstellingen blijven niet behouden (als deze afwijken van de oorspronkelijke instellingen). Als u de presentatiestatus wilt behouden, moet u (gewoonlijk verborgen) velden maken die de presentatiestatus van velden aangeven. Als u een script toevoegt aan de opdrachten van een veld `Calculate` Als u de presentatie wijzigt op basis van verborgen veldwaarden, kunt u de presentatiestatus behouden wanneer u heen en weer gaat tussen HTML pagina&#39;s (deelvensters).
+Bij het schakelen tussen HTML-pagina&#39;s (deelvensters) blijft alleen de status van de gegevens behouden. Instellingen zoals achtergrondkleur of verplichte veldinstellingen blijven niet behouden (als deze afwijken van de oorspronkelijke instellingen). Als u de presentatiestatus wilt behouden, moet u (gewoonlijk verborgen) velden maken die de presentatiestatus van velden aangeven. Als u een script toevoegt aan de opdrachten van `Calculate` Als u de presentatie wijzigt op basis van verborgen veldwaarden, kunt u de presentatiestatus behouden wanneer u heen en weer gaat tussen HTML pagina&#39;s (deelvensters).
 
-In het volgende script wordt het `fillColor` van een veld op basis van de waarde van `hiddenField`. Stel dat dit script zich in de map van een veld bevindt `Calculate` gebeurtenis.
+In het volgende script wordt het `fillColor` van een veld op basis van de waarde van `hiddenField`. Stel dat dit script zich in een veld bevindt `Calculate` gebeurtenis.
 
 ```java
      If (hiddenField.rawValue == 1)
@@ -180,7 +180,7 @@ U kunt geen HTML-formulier ondertekenen dat een digitaal handtekeningveld bevat 
 * StaticHTML
 * NoScriptXHTML
 
-Voor informatie over het digitaal ondertekenen van een document raadpleegt u [Documenten digitaal ondertekenen en certificeren](/help/forms/developing/digitally-signing-certifying-documents.md)
+Zie voor informatie over het digitaal ondertekenen van een document [Documenten digitaal ondertekenen en certificeren](/help/forms/developing/digitally-signing-certifying-documents.md)
 
 ## Een XHTML-formulier dat voldoet aan toegankelijkheidsrichtlijnen weergeven {#rendering-an-accessibility-guidelines-compliant-xhtml-form}
 
@@ -188,11 +188,11 @@ U kunt een volledig HTML formulier weergeven dat voldoet aan toegankelijkheidsri
 
 ## Formuliergegevens valideren {#validating-form-data}
 
-Het wordt aanbevolen om het gebruik van validatieregels voor formuliervelden te beperken bij het weergeven van het formulier als een HTML-formulier. Sommige validatieregels worden mogelijk niet ondersteund voor HTML-formulieren. Wanneer bijvoorbeeld een validatiepatroon van DD-MM-JJJJ wordt toegepast op een `Date/Time` Het veld dat zich bevindt in een formulierontwerp dat wordt weergegeven als een HTML-formulier, werkt niet correct, zelfs niet als de datum op de juiste wijze is ingevoerd. Dit validatiepatroon werkt echter goed voor formulieren die worden weergegeven als PDF.
+Het wordt aanbevolen om het gebruik van validatieregels voor formuliervelden te beperken bij het weergeven van het formulier als een HTML-formulier. Sommige validatieregels worden mogelijk niet ondersteund voor HTML-formulieren. Wanneer bijvoorbeeld een validatiepatroon van DD-MM-JJJJ wordt toegepast op een `Date/Time` veld in een formulierontwerp dat wordt weergegeven als een HTML-formulier, werkt het niet correct, zelfs als de datum op de juiste wijze wordt ingevoerd. Dit validatiepatroon werkt echter goed voor formulieren die worden weergegeven als PDF.
 
 >[!NOTE]
 >
-Ga voor meer informatie over de Forms-service naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+Voor meer informatie over de Forms-service raadpleegt u [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -216,8 +216,8 @@ Voordat u gegevens via programmacode kunt importeren in een PDF formClient-API, 
 
 U stelt HTML-uitvoeringsopties in wanneer u een HTML-formulier weergeeft. U kunt bijvoorbeeld een werkbalk toevoegen aan een HTML-formulier, zodat gebruikers bestandsbijlagen kunnen selecteren op de clientcomputer of bestandsbijlagen kunnen ophalen die met het HTML-formulier worden gegenereerd. Een werkbalk HTML is standaard uitgeschakeld. Als u een werkbalk wilt toevoegen aan een HTML-formulier, moet u via programmacode uitvoeringsopties instellen. Een werkbalk HTML bestaat standaard uit de volgende knoppen:
 
-* `Home`: Koppelt naar de hoofdmap van de toepassing.
-* `Upload`: Biedt een gebruikersinterface voor het selecteren van bestanden die u wilt bijvoegen bij het huidige formulier.
+* `Home`: Hiermee wordt een koppeling naar de hoofdmap van de toepassing geboden.
+* `Upload`: Hiermee wordt een gebruikersinterface weergegeven voor het selecteren van bestanden die u wilt bijvoegen bij het huidige formulier.
 * `Download`: Biedt een gebruikersinterface voor het weergeven van de bijgevoegde bestanden.
 
 Wanneer een werkbalk HTML op een HTML-formulier wordt weergegeven, kan een gebruiker maximaal tien bestanden selecteren die samen met de formuliergegevens moeten worden verzonden. Nadat de bestanden zijn verzonden, kan de Forms-service de bestanden ophalen.
@@ -273,7 +273,7 @@ Een HTML-formulier renderen met de Forms API (Java):
 1. Een Forms Client API-object maken
 
    * Een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en door te geven `ServiceClientFactory` object.
+   * Een `FormsServiceClient` object door de constructor ervan te gebruiken en de `ServiceClientFactory` object.
 
 1. Opties voor HTML bij uitvoering instellen
 
@@ -294,7 +294,7 @@ Een HTML-formulier renderen met de Forms API (Java):
    * A `TransformTo` Enum value that specifies the HTML preferences type. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML`.
    * A `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u een lege waarde door `com.adobe.idp.Document` object.
    * De `HTMLRenderSpec` -object waarin HTML-runtime-opties zijn opgeslagen.
-   * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde; bijvoorbeeld: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+   * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
    * A `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren.
    * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen.
 
@@ -304,7 +304,7 @@ Een HTML-formulier renderen met de Forms API (Java):
 
    * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `com.adobe.idp.Document` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
    * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read` en de bytearray doorgeven als een argument.
@@ -314,7 +314,7 @@ Een HTML-formulier renderen met de Forms API (Java):
 
 [Forms renderen als HTML](#rendering-forms-as-html)
 
-[Snel starten (SOAP-modus): Een HTML-formulier weergeven met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
+[Snel starten (SOAP-modus): een HTML-formulier weergeven met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-an-html-form-using-the-java-api)
 
 [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
@@ -350,9 +350,9 @@ Een HTML-formulier renderen met de Forms API (webservice):
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u naar een formulierontwerp verwijst dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, zoals `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * A `TransformTo` Enum value that specifies the HTML preferences type. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamic HTML voor Internet Explorer 5.0 of hoger, geeft u `TransformTo.MSDHTML`.
-   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u door `null`. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
+   * A `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Als u geen gegevens wilt samenvoegen, geeft u `null`. (Zie [Forms vooraf vullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
    * De `HTMLRenderSpec` -object waarin HTML-runtime-opties zijn opgeslagen.
-   * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde; bijvoorbeeld: `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
+   * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde, bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
    * A `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren. (Zie [URI-waarden opgeven](/help/forms/developing/rendering-interactive-pdf-forms.md).)
    * A `java.util.HashMap` object waarin bestandsbijlagen zijn opgeslagen. Dit is een optionele parameter en u kunt `null` als u geen bestanden aan het formulier wilt koppelen. (Zie [Bestanden aan het formulier koppelen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
    * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Met deze parameterwaarde wordt het gerenderde formulier opgeslagen.
@@ -360,7 +360,7 @@ Een HTML-formulier renderen met de Forms API (webservice):
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. In dit argument wordt de waarde van de landinstelling opgeslagen.
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. In dit argument wordt de gebruikte HTML-renderwaarde opgeslagen.
-   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking bevat.
+   * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` -object dat de resultaten van deze bewerking zal bevatten.
 
    De `(Deprecated) renderHTMLForm` wordt de `com.adobe.idp.services.holders.FormsResultHolder` object dat wordt doorgegeven als de laatste argumentwaarde met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
@@ -369,7 +369,7 @@ Een HTML-formulier renderen met de Forms API (webservice):
    * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
    * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van het dialoogvenster door `BLOB` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
    * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.

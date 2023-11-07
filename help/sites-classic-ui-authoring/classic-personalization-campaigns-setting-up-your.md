@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2257'
+source-wordcount: '2223'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Het opzetten van een nieuwe campagne omvat de volgende (generische) stappen:
 1. [Een campagne maken](#creating-a-new-campaign) om ervaringen op te slaan, bijvoorbeeld laserpagina&#39;s of een nieuwsbrief.
 1. Indien nodig kunt u [de eigenschappen voor uw nieuwe campagne definiëren](#defining-the-properties-for-your-new-campaign).
 
-Afhankelijk van het type ervaring dat u maakt, moet u [een ervaring creëren](#creating-a-new-experience). De details van de ervaring en de acties die volgen op de creatie zijn afhankelijk van het type ervaring dat u wilt maken:
+Afhankelijk van het type ervaringen dat u maakt, moet u [een ervaring creëren](#creating-a-new-experience). De details van de ervaring en de acties die volgen op de creatie zijn afhankelijk van het type ervaring dat u wilt maken:
 
 * Als u een taser maakt:
 
@@ -50,8 +50,6 @@ Afhankelijk van het type ervaring dat u maakt, moet u [een ervaring creëren](#c
 
 ## Een nieuw merk maken {#creating-a-new-brand}
 
-Een nieuw merk maken:
-
 1. Open de **MCM** en selecteert u **Campagnes** in het linkerdeelvenster.
 
 1. Selecteren **Nieuw...** om de **Titel** en **Naam** en sjabloon voor uw nieuwe merk:
@@ -72,8 +70,6 @@ Een nieuw merk maken:
 
 ### Nieuwe campagne maken {#creating-a-new-campaign}
 
-Een nieuwe campagne maken:
-
 1. Van **Campagnes** selecteert u het nieuwe merk in het linkervenster of dubbelklikt u op het pictogram in het rechtervenster.
 
    Het overzicht wordt weergegeven (leeg als het merk nieuw is).
@@ -82,7 +78,7 @@ Een nieuwe campagne maken:
 
    ![chlimage_1-19](assets/chlimage_1-19.png)
 
-1. Klikken **Maken**. Uw nieuwe campagne zal in MCM worden getoond.
+1. Klikken **Maken**. Uw nieuwe campagne wordt getoond in MCM.
 
 ### Eigenschappen voor uw nieuwe campagne definiëren {#defining-the-properties-for-your-new-campaign}
 
@@ -105,7 +101,7 @@ Campagneigenschappen configureren die het gedrag bepalen:
 
 ### Een nieuwe ervaring maken {#creating-a-new-experience}
 
-De procedure voor het creëren van een nieuwe ervaring is afhankelijk van het type ervaring:
+De procedure voor het creëren van een ervaring is afhankelijk van het type ervaring:
 
 * [Een taser maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingateaser)
 * [Een nieuwsbrief maken](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatinganewsletter)
@@ -154,7 +150,7 @@ Als u bestaande ervaringen hebt, kunt u een aanraakpunt rechtstreeks vanuit de k
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads beheren).
->Aanbeveling is [Adobe Campaign en de integratie van AEM](/help/sites-administering/campaign.md).
+>Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
 
 In AEM MCM kunt u verbindingen organiseren en toevoegen door ze handmatig in te voeren of door een lijst met door komma&#39;s gescheiden waarden te importeren, bijvoorbeeld een mailinglijst. Aanvullende manieren om leads te genereren zijn afkomstig van nieuwsbrief-ups of community-aanmeldingen (als deze zijn geconfigureerd, kunnen ze een workflow activeren die leads vult).
 
@@ -172,7 +168,7 @@ In het dashboard hebt u toegang tot alle leads door op **Leads** in het linkerde
 
 Nadat u nieuwe leads hebt gemaakt, moet u [activeren](#activating-or-deactivating-leads) zodat u hun activiteit op het publicatieexemplaar kunt volgen en hun ervaring kunt personaliseren.
 
-Een nieuwe lead handmatig maken:
+Een lead handmatig maken:
 
 1. Navigeer in AEM naar de MCM. Klik in het dashboard op **Leads**.
 1. Klikken **Nieuw**. De **Nieuw maken** wordt geopend.
@@ -207,7 +203,7 @@ Aan actieve of deactieve leads:
 
 ### Nieuwe leads importeren {#importing-new-leads}
 
-Wanneer u nieuwe leads importeert, kunt u deze automatisch toevoegen aan een bestaande lijst of een nieuwe lijst maken waarin deze leads worden opgenomen.
+Wanneer u nieuwe leads importeert, kunt u deze automatisch toevoegen aan een bestaande lijst of een lijst maken waarin deze leads worden opgenomen.
 
 Om lood van een komma-gescheiden lijst te importeren:
 
@@ -302,7 +298,7 @@ Als u bestaande leads in de MCM wilt verwijderen, schakelt u het selectievakje n
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (lijsten beheren).
->Aanbeveling is [Adobe Campaign en de integratie van AEM](/help/sites-administering/campaign.md).
+>Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
 
 Met lijsten kunt u uw leads ordenen in groepen. Met lijsten kunt u uw marketingcampagnes richten op een bepaalde groep personen. U kunt bijvoorbeeld een doelnieuwsbrief naar een lijst sturen. Lijsten zijn zichtbaar in MCM, of in het Dashboard of door te klikken **Lijsten**. Beide verstrekken u de naam van de lijst en het aantal leden.
 
@@ -314,8 +310,6 @@ Als u op **Lijsten** kunt u ook bekijken of de lijst lid is van een andere lijst
 
 ### Nieuwe lijsten maken {#creating-new-lists}
 
-Een nieuwe lijst (groep) maken:
-
 1. Klik op het MCM-dashboard op **Nieuwe lijst...** of in **Lijsten**, klikt u op **Nieuw** ... Het venster Lijst maken wordt geopend.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
@@ -325,8 +319,6 @@ Een nieuwe lijst (groep) maken:
    ![screen_shot_2012-02-21at125320pm](assets/screen_shot_2012-02-21at125320pm.png)
 
 ### Bestaande lijsten wijzigen {#modifying-existing-lists}
-
-Een bestaande lijst wijzigen:
 
 1. Klik in de MCM op **Lijsten**.
 
@@ -384,7 +376,7 @@ Bestaande lijsten samenvoegen:
 
 U kunt op elk gewenst moment bekijken welke leads tot een specifieke lijst behoren door te bladeren of te zoeken naar leden.
 
-U kunt als volgt de leads weergeven die bij een lijst horen:
+U kunt als volgt de leads in lijsten weergeven:
 
 1. Klik in de MCM op **Lijsten**.
 

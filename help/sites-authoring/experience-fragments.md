@@ -2,10 +2,10 @@
 title: Ervaringsfragmenten
 description: Ervaar fragmenten in Adobe Experience Manager Sites-authoring.
 exl-id: 1ff9ac47-9a3a-4a4e-8af8-bc73048e0409
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1444'
-ht-degree: 6%
+source-wordcount: '1440'
+ht-degree: 5%
 
 ---
 
@@ -55,7 +55,7 @@ Er moeten ervaringsfragmenten worden gebruikt:
 * Als u ervaring hebt met verschillende variaties of uitvoeringen.
 
    * Kanaal- of contextspecifieke variaties
-   * Ervaringen die zinvol zijn om te groeperen (bijvoorbeeld een campagne met verschillende ervaringen over kanalen)
+   * Ervaringen die zinvol zijn om te groeperen (bijvoorbeeld een campagne met verschillende ervaringen op verschillende kanalen)
 
 * Wanneer u Omnichannel Commerce gebruikt.
 
@@ -234,7 +234,7 @@ U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk 
 
    ![xf-06](assets/xf-06.png)
 
-1. Bevestigen met **Gereed** (tik pictogram), wordt de nieuwe variatie weergegeven in het paneel:
+1. Bevestigen met **Gereed** (tik pictogram), wordt de nieuwe variatie getoond in het paneel:
 
    ![xf-07](assets/xf-07.png)
 
@@ -267,7 +267,7 @@ U kunt een of meer componenten selecteren om een bouwsteen voor recycling binnen
 
 ### Een bouwblok maken {#creating-a-building-block}
 
-Een nieuw bouwblok maken:
+Een bouwblok maken:
 
 1. In de redacteur van het Fragment van de Ervaring, selecteer de componenten u wilt hergebruiken:
 
@@ -281,7 +281,7 @@ Een nieuw bouwblok maken:
 
    ![xf-11](assets/xf-11.png)
 
-1. De **bouwsteen** wordt weergegeven op het tabblad en kan worden geselecteerd in het alineasysteem:
+1. De **Bouwsteen** wordt weergegeven op het tabblad en kan in het alineasysteem worden geselecteerd:
 
    ![xf-12](assets/xf-12.png)
 

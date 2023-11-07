@@ -2,9 +2,9 @@
 title: Ga aan de slag met AEM headless vertaling
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1493'
+source-wordcount: '1490'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Dit document helpt u begrijpen hoe u aan de slag kunt gaan met het vertalen van 
 
 ## Eisen en voorwaarden {#requirements-prerequisites}
 
-Er zijn een aantal vereisten voordat u begint met het vertalen van inhoud zonder kop AEM inhoud.
+Er zijn verschillende vereisten waaraan u moet voldoen voordat u inhoud zonder kop gaat vertalen AEM inhoud.
 
 ### Kennis {#knowledge}
 
@@ -44,7 +44,7 @@ Er zijn een aantal vereisten voordat u begint met het vertalen van inhoud zonder
 
 >[!TIP]
 >
->Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-authoring/basic-handling.md) documentatie voordat u verdergaat. De documentatie voor basisverwerking maakt geen deel uit van de reis. Ga daarom na voltooiing terug naar deze pagina.
+>Als u niet vertrouwd bent met het gebruik van een grootschalig CMS als AEM, kunt u overwegen om de [Basisverwerking](/help/sites-authoring/basic-handling.md) documentatie voordat u verdergaat. De documentatie van de Basisbehandeling maakt geen deel uit van de reis, zodat terugkeer aan deze pagina wanneer volledig.
 
 ### Gereedschappen {#tools}
 

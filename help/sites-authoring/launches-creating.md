@@ -9,9 +9,9 @@ topic-tags: site-features
 discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: bc7897da-15f6-4de4-a9fd-9dd84e6c7eed
-source-git-commit: e85aacd45a2bbc38f10d03915e68286f0a55364e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1040'
+source-wordcount: '1039'
 ht-degree: 13%
 
 ---
@@ -34,7 +34,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    >[!NOTE]
    >
-   >Wanneer u de **Sites** console is het gebruikelijk om naar de plaats van de bronpagina te navigeren, maar dit is niet verplicht aangezien u kunt navigeren wanneer het selecteren van **Bron starten** in de wizard.
+   >Wanneer u de opdracht **Sites** console is het gebruikelijk om naar de plaats van de bronpagina te navigeren, maar dit is niet verplicht aangezien u kunt navigeren wanneer het selecteren van **Bron starten** in de wizard.
 
 1. Afhankelijk van de console die u gebruikt:
 
@@ -64,7 +64,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    >[!NOTE]
    >
-   >Als u pagina&#39;s en/of vertakkingen wilt toevoegen aan een lancering, moeten deze zich binnen een site bevinden. d.w.z. onder een gemeenschappelijke hoofdmap.
+   >Als u pagina&#39;s en/of vertakkingen wilt toevoegen aan een introductie, moeten deze zich binnen een site bevinden, dus onder een gemeenschappelijke hoofdmap op hoofdniveau.
    >
    >Als een site taalwortels onder het bovenste niveau bevat, moeten de pagina&#39;s en vertakkingen voor een introductie zich onder een gemeenschappelijke hoofdtaalbasis bevinden.
    >
@@ -84,12 +84,12 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    * **Titel starten**: De naam van de Launch. De naam moet zinvol zijn voor auteurs.
    * **met bestaande inhoud**: de oorspronkelijke inhoud wordt gebruikt om de opstart te maken.
-   * **een nieuwe sjabloon gebruiken om de pagina te vervangen**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
-   * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van [live kopie](/help/sites-administering/msm.md).
+   * **de pagina vervangen met een nieuwe sjabloon**: Zie [Starten met nieuwe sjabloon maken](#create-launch-with-new-template) voor meer informatie .
+   * **Live-gegevens van bronpagina overnemen**: Selecteer deze optie als u de inhoud van startpagina&#39;s automatisch wilt bijwerken wanneer de bronpagina&#39;s veranderen. Met deze optie bereikt u dit door de introductie van een [live kopie](/help/sites-administering/msm.md).
 
      Deze optie is standaard geselecteerd.
 
-   * **Opstartdatum**: De datum en het tijdstip waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** vlag; zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+   * **Opstartdatum**: De datum en tijd waarop de opstartafbeelding moet worden geactiveerd (afhankelijk van de **Gereed voor productie** markering; zie [Starten - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
 
    ![Eigenschappen opgeven](assets/chlimage_1-227.png)
 
@@ -148,7 +148,7 @@ Een geneste opstart maken vanuit de **Starten** console is in wezen het zelfde a
 
 Als u een geneste opstart wilt maken vanuit de **Sites** console - gebaseerd op een bestaande lancering:
 
-1. Toegang krijgen tot [Starten vanuit verwijzingen (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
+1. Toegang krijgen tot de [Starten vanuit verwijzingen (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven.
 1. Selecteer **Start maken** om de wizard te openen (aangezien de bron al is geselecteerd, wordt de stap **Bron selecteren** overgeslagen).
 
 1. Voer de **Titel starten** en alle andere vereiste gegevens (zoals bij een normale start).

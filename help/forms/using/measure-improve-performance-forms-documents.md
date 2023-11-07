@@ -10,9 +10,9 @@ topic-tags: integrations
 discoiquuid: a128877d-239c-4272-99c2-72d6486d5703
 docset: aem65
 exl-id: 4f45ad22-611b-4b4f-8e89-cb64a122b70a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1277'
+source-wordcount: '1275'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Sommige aanbevelingen voor het ontwerpen van formulieren en het uitvoeren van A/
 * Standaardterminologie of algemene terminologie gebruiken voor formuliervelden.
 * Beschrijf het veld en de vereiste invoer met voorbeelden of Help, waarbij gebruikers door elkaar kunnen raken.
 * Valideer gebruikersinvoer tijdens het typen, waar mogelijk, om fouten bij het verzenden van formulieren te voorkomen.
-* Optimaliseer lay-outs voor zowel desktops als mobiele apparaten.
+* Lay-outs voor bureaublad en mobiele apparaten optimaliseren.
 * Gegevens automatisch invullen voor bekende gebruikers.
 
 **A/B-tests**

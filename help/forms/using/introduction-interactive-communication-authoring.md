@@ -11,9 +11,9 @@ discoiquuid: 5855d21b-340c-4139-aabe-c3a534cedb98
 docset: aem65
 feature: Interactive Communication
 exl-id: 3d15a723-df6c-4b4a-992e-a6636f4cf3dc
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1312'
+source-wordcount: '1310'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ De gebruikersinterface voor ontwerpen [Interactieve communicatie](/help/forms/us
 * WYSIWYG-documenteditor voor slepen en neerzetten
 * Geïntegreerde opslagplaats voor middelen - de activa die aan worden geupload en op de server worden gecreeerd zijn beschikbaar in de browser van Activa van Interactive Communication auteursinterface
 
-Wanneer u [een nieuwe of een bestaande interactieve communicatie maken](../../forms/using/create-interactive-communication.md)gebruikt u de volgende gebruikersinterface-elementen:
+Wanneer u [een bestaande interactieve communicatie maken of bewerken](../../forms/using/create-interactive-communication.md)gebruikt u de volgende gebruikersinterface-elementen:
 
 * [Zijbalk](#sidebar)
 * [Pagina, werkbalk](#page-toolbar)

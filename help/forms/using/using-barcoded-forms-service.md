@@ -1,16 +1,12 @@
 ---
 title: Barcoded Forms Service
-seo-title: Using AEM Forms Barcoded Forms Service
 description: Gebruik de AEM Forms Barcoded Forms-service om gegevens te extraheren uit elektronische afbeeldingen van streepjescodes.
-seo-description: Use AEM Forms Barcoded Forms service to extract data from electronic images of barcodes.
-uuid: b044a788-0e4a-4718-b71a-bd846933d51b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: document_services
-discoiquuid: d431c4cb-e4be-41a5-8085-42393d4d468c
 docset: aem65
 exl-id: edaf12be-473f-4175-b4e0-549b41159a55
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1022'
 ht-degree: 0%
@@ -29,7 +25,7 @@ De service Barcoded Forms biedt ondersteuning voor het volgende: **tweedimension
 * Gegevensmatrix
 * QR-code
 
-De service biedt ook ondersteuning voor het volgende: **eendimensionaal** symbolen die worden aangeboden als gescande TIFF- of PDF-documenten:
+De service ondersteunt ook het volgende: **eendimensionaal** symbolen die worden aangeboden als gescande TIFF- of PDF-documenten:
 
 * Codabar
 * Code128
@@ -39,7 +35,7 @@ De service biedt ook ondersteuning voor het volgende: **eendimensionaal** symbol
 
 Met de service Barcoded Forms kunt u de volgende taken uitvoeren:
 
-* Hiermee extraheert u streepjescodegegevens uit streepjescodeafbeeldingen (TIFF of PDF). De gegevens worden opgeslagen als tekst met scheidingstekens.
+* Streepjescodegegevens extraheren uit streepjescodeafbeeldingen (TIFF of PDF). De gegevens worden opgeslagen als tekst met scheidingstekens.
 * Zet afgebakende tekstgegevens om in XML (XDP of XFDF). XML-gegevens kunnen gemakkelijker worden geparseerd dan tekst met scheidingstekens. Gegevens in XDP- of XFDF-indeling kunnen ook worden gebruikt als invoer voor andere services in AEM Forms.
 
 Voor elke streepjescode in een afbeelding zoekt de service Barcoded Forms de streepjescode, decodeert deze en extraheert de gegevens. De service retourneert de streepjescodegegevens (waarbij indien nodig eenheidcodering wordt gebruikt) in een inhoudselement van een XML-document. De volgende gescande TIFF-afbeelding van een formulier bevat bijvoorbeeld twee streepjescodes:
@@ -128,7 +124,7 @@ Overweeg ook de volgende beperkingen wanneer u de service Barcoded Forms gebruik
 * De service biedt volledige ondersteuning voor AcroForms en statische formulieren met 2D-streepjescodes die zijn opgeslagen met Adobe Reader of Acrobat. Voor 1D-streepjescodes kunt u het formulier echter afvlakken of het als gescand PDF- of TIFF-document opgeven.
 * Dynamische XFA-formulieren worden niet volledig ondersteund. Als u 1D- en 2D-streepjescodes op de juiste manier wilt decoderen in een dynamische vorm, voegt u het formulier samen of geeft u het op als gescand PDF- of TIFF-document.
 
-Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen gebruikt als de bovenstaande beperkingen worden nageleefd. Zie voor meer informatie over het maken van interactieve formulieren met streepjescodes [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
+Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen gebruikt als de bovenstaande beperkingen in acht worden genomen. Zie voor meer informatie over het maken van interactieve formulieren met streepjescodes [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_63).
 
 ## Eigenschappen van de service configureren   {#configureproperties}
 
@@ -138,7 +134,7 @@ U kunt de **AEMFD Barcoded Forms Service** in AEM Console om eigenschappen voor 
 
 Barcoded Forms Service biedt de volgende twee API&#39;s:
 
-* **[decoderen](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Hiermee worden alle streepjescodes gedecodeerd die beschikbaar zijn in een invoer-PDF-document of -TIFF-afbeelding. Er wordt een ander XML-document geretourneerd dat gegevens bevat die zijn opgehaald uit alle streepjescodes die beschikbaar zijn in het invoerdocument of de afbeelding.
+* **[decoderen](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: decodeert alle streepjescodes die beschikbaar zijn in een invoerdocument of -afdruk van een PDF-. Er wordt een ander XML-document geretourneerd dat gegevens bevat die zijn opgehaald uit alle streepjescodes die beschikbaar zijn in het invoerdocument of de afbeelding.
 
 * **[extractToXML](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Gegevens die zijn gedecodeerd met de decoder-API converteren naar XML-gegevens. Deze XML-gegevens kunnen worden samengevoegd met een XFA-formulier. Er wordt een lijst met XML-documenten geretourneerd, één voor elke streepjescode.
 
@@ -175,13 +171,13 @@ De volgende voorbeeldcode decodeert een streepjescode in een document en slaat d
 
  // Create a Docmanager Document object for 
  // the tiff file containing barcode
- // Please see Docmanager Document javadoc for
+ // See Docmanager Document javadoc for
  // more details
  Document inputDoc = new Document(documentPath);
 
  // Invoke decode operation of barcoded forms service 
  // Second parameter is set to true to decode PDF417 barcode symbology
- // Please see javadoc for details of parameters
+ // See javadoc for details of parameters
 
  org.w3c.dom.Document result = bcfService.decode(inputDoc, // Input Document Object
                                                     true, 

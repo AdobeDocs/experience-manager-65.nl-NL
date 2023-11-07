@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 exl-id: 35f9acbf-7a82-43b1-9e17-9be4de666212
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '447'
 ht-degree: 0%
 
 ---
@@ -48,9 +48,9 @@ U kunt specifieke kenmerken invoeren om een gedetailleerde zoekopdracht uit te v
 
    * Selecteer een kenmerk in de lijst Kenmerk.
    * Selecteer een operator in de lijst Filter.
-   * Typ in het vak Waarde een waarde die geschikt is voor het kenmerk dat u hebt geselecteerd.
+   * Typ in het vak Waarde een waarde die geschikt is voor het geselecteerde kenmerk.
 
-1. Als u nog een rij wilt toevoegen, selecteert u Meer filters. Er wordt een andere set met kenmerken-, filter- en waardenlijsten en een lijst met voorwaarden weergegeven.
+1. Als u nog een rij wilt toevoegen, selecteert u Meer filters. Er wordt een andere set met kenmerken-, filter- en waardenlijsten weergegeven en een lijst met voorwaarden.
 1. Selecteer AND of OR onder Voorwaarde. Herhaal desgewenst de stappen 1 tot en met 3 om uw zoekopdracht verder te beperken.
 1. Als u rijen wilt toevoegen of verwijderen, klikt u op Meer filters of Minder filters. U kunt een tot vier rijen hebben.
 1. Klik op Zoeken. De pagina Procesinstantie wordt weergegeven met een overzicht van de gevonden varianten.

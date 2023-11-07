@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Begin door de connectiviteit tussen de individuele cliëntapparaten en het colle
 
 Clientapparaten maken op verschillende manieren verbinding met het bedrijfsnetwerk, zoals gedeelde WiFi, Ethernet met een gedeelde switch en VPN. Het identificeren van en het begrip van chokepoints op dit netwerk is belangrijk voor [!DNL Assets] planning en om het netwerk te wijzigen.
 
-Linksboven in het diagram worden drie apparaten weergegeven als een 48 Mbps WiFi-toegangspunt. Als alle apparaten tegelijk uploaden, wordt de bandbreedte van het WiFi-netwerk gedeeld tussen de apparaten. Vergeleken met het systeem als geheel, kan een gebruiker een verschillend onderdrukkingspunt voor de drie cliënten over dit verdeelde kanaal ontmoeten.
+Linksboven in het diagram worden drie apparaten weergegeven als het delen van een 48 Mbps WiFi-toegangspunt. Als alle apparaten tegelijk uploaden, wordt de bandbreedte van het WiFi-netwerk gedeeld tussen de apparaten. Vergeleken met het systeem als geheel, kan een gebruiker een verschillend onderdrukkingspunt voor de drie cliënten over dit verdeelde kanaal ontmoeten.
 
 Het is een uitdaging om de ware snelheid van een WiFi-netwerk te meten omdat een traag apparaat andere clients kan beïnvloeden op het toegangspunt. Als u WiFi wilt gebruiken voor de interactie tussen bedrijfsmiddelen, voert u een snelheidstest uit bij meerdere clients tegelijk om de doorvoer te evalueren.
 
@@ -45,7 +45,7 @@ De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan
 
 ![chlimage_1-354](assets/chlimage_1-354.png)
 
-Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een onderdrukking-punt zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
+Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een onderdrukkingspunt zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
 ## Uploaden naar internet vanaf het bedrijfsnetwerk en [!DNL Experience Manager] milieu {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
@@ -61,13 +61,13 @@ In dit voorbeeld heeft de onderneming een opstraalverbinding van 10 Gbps. Het mo
 
 Dit is het kleinste clientgeoriënteerde onderdrukkingspunt. Nochtans, kunt u voor een verandering evalueren of een lijst van gewenste personen vormen met de groep van netwerkverrichtingen verantwoordelijk voor deze firewall.
 
-Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptueel kanaal 10Mbps delen. Afhankelijk van de omvang van de hefboomwerking van de activa, kan dit ontoereikend zijn om aan gebruikersverwachtingen te voldoen.
+Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptueel kanaal 10Mbps delen. Afhankelijk van de grootte van de gebruikte activa, kan dit ontoereikend zijn om gebruikersverwachtingen te ontmoeten.
 
 ## Topologie van de [!DNL Experience Manager] milieu {#topology-of-the-aem-environment}
 
 ![chlimage_1-356](assets/chlimage_1-356.png)
 
-Het ontwerpen van de topologie van [!DNL Experience Manager] milieu vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
+De topologie van de [!DNL Experience Manager] milieu vereist gedetailleerde kennis van de systeemconfiguratie en hoe het netwerk binnen het gebruikersmilieu wordt aangesloten.
 
 Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en gevormde Dynamic Media.
 

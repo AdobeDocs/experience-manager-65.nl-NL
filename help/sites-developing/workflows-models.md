@@ -1,19 +1,15 @@
 ---
 title: Workflowmodellen maken
-seo-title: Creating Workflow Models
 description: U maakt een workflowmodel om de reeks stappen te definiëren die worden uitgevoerd wanneer een gebruiker de workflow start.
-seo-description: You create a workflow model to define the series of steps executed when a user starts the workflow.
-uuid: 31071d3a-d6d5-4476-9ac0-7b335de406d9
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c097b60f-bcdf-45de-babe-b4c2e2b746a1
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2426'
+source-wordcount: '2414'
 ht-degree: 0%
 
 ---
@@ -30,14 +26,14 @@ Wanneer een gebruiker een workflow start, wordt een instantie gestart. Dit is he
 
 ## Een nieuwe workflow maken {#creating-a-new-workflow}
 
-Wanneer u voor het eerst een nieuw workflowmodel maakt, bevat dit model:
+Wanneer u voor het eerst een workflowmodel maakt, bevat dit:
 
 * de stappen, **Stroom starten** en **Einde stroom**.
 Deze vertegenwoordigen het begin en einde van de workflow. Deze stappen zijn vereist en kunnen niet worden bewerkt/verwijderd.
 * Een voorbeeld **Deelnemer** stap benoemd **Stap 1**.
 Deze stap wordt gevormd om een het werkpunt aan de werkschemainitiatiefnemer toe te wijzen. Bewerk of verwijder deze stap en voeg desgewenst stappen toe.
 
-Een nieuwe workflow maken met de editor:
+Een workflow maken met de editor:
 
 1. Open de **Workflowmodellen** console; via **Gereedschappen**, **Workflow**, **Modellen** of, bijvoorbeeld: [https://localhost:4502/aem/workflow](https://localhost:4502/aem/workflow)
 1. Selecteren **Maken** vervolgens **Model maken**.
@@ -86,8 +82,8 @@ Wanneer u een [Standaard en/of verouderd model](/help/sites-developing/workflows
 * De browser Stappen is niet beschikbaar (links).
 * Er is een **Bewerken** in de werkbalk (rechts) beschikbaar.
 * In eerste instantie worden het model en de eigenschappen ervan in de modus Alleen-lezen weergegeven als:
-   * Standaardworkflows bevinden zich in `/libs`
-   * Oudere workflows bevinden zich in `/etc`
+   * Standaardworkflows zijn ingeschakeld `/libs`
+   * Verouderde workflows zijn opgenomen in `/etc`
 Selecteren **Bewerken** zal:
 * neem een kopie van de workflow naar `/conf`
 * stelt browser Stappen ter beschikking
@@ -167,7 +163,7 @@ U kunt **Configureren** en pas het gedrag van een werkschemastap aan gebruikend 
 
 ### Een tijdelijke workflow maken {#creating-a-transient-workflow}
 
-U kunt een [Voorzichtig](/help/sites-developing/workflows.md#transient-workflows) workflowmodel bij het maken van een nieuw model of bij het bewerken van een bestaand model:
+U kunt een [Voorzichtig](/help/sites-developing/workflows.md#transient-workflows) workflowmodel bij het maken van een model of bij het bewerken van een bestaand model:
 
 1. Het workflowmodel openen voor [bewerken](#editinganexistingworkflow).
 1. Selecteren **Eigenschappen workflowmodel** op de werkbalk.
@@ -207,7 +203,7 @@ Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontb
 
 ### Een workflow configureren voor ondersteuning van meerdere bronnen {#configuring-a-workflow-for-multi-resource-support}
 
-U kunt een workflowmodel configureren voor [Ondersteuning voor meerdere bronnen](/help/sites-developing/workflows.md#multi-resource-support) bij het maken van een nieuw model of door een bestaand model te bewerken:
+U kunt een workflowmodel configureren voor [Ondersteuning voor meerdere bronnen](/help/sites-developing/workflows.md#multi-resource-support) bij het maken van een model of door een bestaand model te bewerken:
 
 1. Het workflowmodel openen voor [bewerken](#editinganexistingworkflow).
 1. Selecteren **Eigenschappen workflowmodel** op de werkbalk.
@@ -264,7 +260,7 @@ Om te bepalen **Staven** voor uw workflow:
 
 Een workflowmodel exporteren in een pakket:
 
-1. Een nieuw pakket maken met de opdracht [Pakketbeheer](/help/sites-administering/package-manager.md#package-manager):
+1. Een pakket maken met de opdracht [Pakketbeheer](/help/sites-administering/package-manager.md#package-manager):
 
    1. Ga via **Gereedschappen**, **Implementatie**, **Pakketten**.
 
@@ -299,7 +295,7 @@ U kunt een formulier configureren voor verwerking door de geselecteerde workflow
 
 U configureert als volgt de workflow die met het formulier moet worden gebruikt:
 
-1. Maak een nieuwe pagina en open deze voor bewerking.
+1. Maak een pagina en open deze voor bewerking.
 1. Voeg een **Formulier** naar de pagina.
 1. **Configureren** de **Begin formulier** die op de pagina werden weergegeven.
 1. Gebruiken **Workflow starten** om de gewenste workflow te selecteren uit de beschikbare werkstromen:
@@ -328,7 +324,7 @@ U kunt ook AEM configureren voor weergave **DEBUG** in de logbestanden. Zie [Log
 
 Om enkele mogelijkheden voor het maken van een workflow te illustreren, maakt u in het volgende voorbeeld een variatie van de optie `Publish Example` workflow.
 
-1. [Een nieuw workflowmodel maken](#creating-a-new-workflow).
+1. [Een workflowmodel maken](#creating-a-new-workflow).
 
    De nieuwe workflow bevat:
 

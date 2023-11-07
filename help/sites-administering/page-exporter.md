@@ -2,7 +2,7 @@
 title: De pagina-exportfunctie
 description: Leer hoe u de pagina-exportfunctie van Adobe Experience Manager (AEM) gebruikt.
 exl-id: 15d08758-cf75-43c0-9818-98a579d64183
-source-git-commit: 6799f1d371734b69c547f3c0c68e1e633aa63229
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -107,7 +107,7 @@ Wanneer uw malplaatje wordt gevormd, maak het beschikbaar:
 
 De sjabloon bestaat uit een knooppuntstructuur, omdat deze de [Content Sync-framework](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/package-summary.html). Elk knooppunt heeft een `type` eigenschap die een specifieke handeling definieert in het aanmaakproces van het ZIP-bestand.
 
-<!-- For more details about the type property, refer to the Overview of configuration types section in the Content Sync framework page.
+<!-- For more details about the type property, see the Overview of configuration types section in the Content Sync framework page.
 -->
 
 De volgende knooppunten kunnen worden gebruikt om een exportsjabloon te maken:
@@ -131,7 +131,7 @@ Het paginaknooppunt wordt gebruikt om pagina html aan het ZIP dossier te kopiër
 
 * `rewrite`
 Het knooppunt rewrite definieert hoe de koppelingen in de geëxporteerde pagina worden herschreven. De herschreven koppelingen kunnen verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
-  <!-- Please refer to the Content Sync page for a complete description of the `rewrite` node. -->
+  <!-- See the Content Sync page for a complete description of the `rewrite` node. -->
 
 * `design`
 Het ontwerpknooppunt wordt gebruikt om het ontwerp te kopiëren dat voor de geëxporteerde pagina wordt gebruikt. Het heeft de volgende kenmerken:
@@ -156,7 +156,7 @@ Een generisch knooppunt wordt gebruikt om bronnen als clientlibs te kopiëren `.
    * Node type is `nt:unstructured`.
    * Heeft een `type` eigendom en `type` verwante eigenschappen. <!--Has a `type` property and any `type` related properties as defined in the Overview of configuration types section of the Content Sync framework.-->
 
-  De volgende configuratieknooppunten kopiëren bijvoorbeeld de `mysite.clientlibs.js` bestanden naar het ZIP-bestand:
+  De volgende configuratieknooppunt kopieert bijvoorbeeld de `mysite.clientlibs.js` bestanden naar het ZIP-bestand:
 
   ```xml
   "mysite.clientlibs.js": {
@@ -177,7 +177,7 @@ As you may have noticed in the node structure, the **Geometrixx** page export te
 
 Om aan bepaalde specifieke vereisten te voldoen, voert u een [aangepaste update-handler](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/contentsync/handler/package-summary.html).
 
-<!-- To meet some specific requirements, you may need to implement a custom `type` property: to do so, refer to the Implementing a custom update handler section in the Content Sync page.
+<!-- To meet some specific requirements, you may need to implement a custom `type` property. To do so, see the Implementing a custom update handler section in the Content Sync page.
 -->
 
 ## Pagina&#39;s programmatisch exporteren {#programmatically-exporting-a-page}

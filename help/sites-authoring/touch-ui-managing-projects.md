@@ -10,9 +10,9 @@ topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
 exl-id: 62586c8e-dab4-4be9-a44a-2c072effe3c0
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '985'
+source-wordcount: '981'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ De eenvoudigste manier om dit te doen is de **projecten-gebruikers** groep lees 
 
 ## Een project maken {#creating-a-project}
 
-Ga als volgt te werk om een nieuw project te maken.
+Voer de volgende stappen uit om een project te maken.
 
 1. In de **Projecten** console, tikken of klikken **Maken** om de **Project maken** wizard.
 1. Selecteer een sjabloon en klik op **Volgende**. U kunt meer over de standaardprojectmalplaatjes leren [hier.](/help/sites-authoring/projects.md#project-templates)
@@ -76,11 +76,11 @@ Items toevoegen aan een tegel:
 
    ![Tile chevron](assets/project-tile-create-task.png)
 
-1. Voeg het item op dezelfde manier toe aan de tegel als wanneer u een nieuwe tegel maakt. Projectelementen worden beschreven [hier.](/help/sites-authoring/projects.md#project-tiles)
+1. Voeg het item aan de tegel toe zoals u dat zou doen bij het maken van een tegel. Projectelementen worden beschreven [hier.](/help/sites-authoring/projects.md#project-tiles)
 
 ## Projectinformatie weergeven {#viewing-project-info}
 
-Het hoofddoel van de projecten is de bijbehorende informatie op één plaats te groeperen om deze toegankelijker en actiever te maken. U hebt een aantal manieren om deze informatie te openen.
+Het hoofddoel van de projecten is de bijbehorende informatie op één plaats te groeperen om deze toegankelijker en actiever te maken. U kunt deze gegevens op verschillende manieren openen.
 
 ### Een tegel openen {#opening-a-tile}
 

@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '953'
 ht-degree: 0%
 
 ---
@@ -23,13 +23,13 @@ ht-degree: 0%
 
 Omdat Granite de implementatie van de JCR API-specificatie in de CRX Repository integreert, heeft het een eigen gebruikers- en groepsbeheer.
 
-Deze rekeningen vormen de onderliggende grondslag van de [AEM](/help/sites-administering/security.md) en eventuele wijzigingen van de rekeningen die met het beheer van Granite zijn doorgevoerd, worden weergegeven als/wanneer de rekeningen van de [AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (bijvoorbeeld `http://localhost:4502/useradmin`). Vanuit de AEM gebruikersconsole kunt u ook de rechten en andere AEM beheren.
+Deze rekeningen vormen de onderliggende grondslag van de [AEM](/help/sites-administering/security.md) en eventuele wijzigingen van de rekeningen die met het beheer van Granite zijn aangebracht, worden weergegeven als/wanneer de rekeningen van de [AEM](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (bijvoorbeeld `http://localhost:4502/useradmin`). Vanuit de AEM gebruikersconsole kunt u ook de rechten en andere AEM beheren.
 
 De gebruikers- en groepsbeheerconsoles in graniet zijn beide beschikbaar in de **[Gereedschappen](/help/sites-administering/tools-consoles.md)** console van de interface voor geoptimaliseerde aanrakingen:
 
-![Tools Console](assets/chlimage_1-72a.png)
+![Gereedschapsconsole](assets/chlimage_1-72a.png)
 
-Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmiddelen zal de aangewezen console openen. In beide gevallen kunt u actie ondernemen via het selectievakje en vervolgens via de werkbalk of door de accountgegevens te openen via de koppeling onder **Naam**.
+Kies een van beide **Gebruikers** of **Groepen** vanuit de console van Hulpmiddelen opent de aangewezen console. In beide gevallen kunt u actie ondernemen via het selectievakje en vervolgens via de werkbalk of door de accountgegevens te openen via de koppeling onder **Naam**.
 
 * [Gebruikersbeheer](#user-administration)
 
@@ -148,7 +148,7 @@ U kunt de account markeren als **actief** of **inactief**.
 
    ![Het pictogram Groepen gebruiken](do-not-localize/chlimage_1-2.png)
 
-   Het keuzemenu Groepsselectie openen:
+   U opent als volgt de keuzelijst voor groepselectie:
 
    ![Groepen, kiezer](assets/chlimage_1-78a.png)
 
@@ -188,7 +188,7 @@ U kunt de account markeren als **actief** of **inactief**.
 
    * **Naam**
 
-     Een naam voor de groep; het zal in de console van Groepen worden getoond.
+     Een naam voor de groep; het wordt getoond in de console van Groepen.
 
    * **Beschrijving**
 

@@ -8,9 +8,9 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 3400df1ecd545aa0fb0e3fcdcc24f629ce4c99ba
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '922'
+source-wordcount: '917'
 ht-degree: 1%
 
 ---
@@ -36,14 +36,14 @@ Wanneer het broninhoudsfragment wordt bijgewerkt of gewijzigd, moet het bijbehor
 De workflow Maken en vertalen bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
 * Alleen structuur maken: zie voor procedurestappen [Structuur alleen maken voor elementen](translation-projects.md#create-structure-only).
-* Een nieuw vertaalproject maken: zie voor procedurestappen [Een nieuw vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project).
+* Een vertaalproject maken: zie voor procedurestappen [Een vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project).
 * Toevoegen aan bestaand vertaalproject: zie voor procedurestappen [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project).
 
 ## Workflow voor het kopiëren van talen bijwerken {#update-language-copies-workflow}
 
 De workflow voor het kopiëren van de taal Bijwerken bevat de volgende opties. De procedurele stappen die aan elke optie zijn gekoppeld, zijn vergelijkbaar met die welke aan de overeenkomstige optie voor activa zijn gekoppeld.
 
-* Een nieuw vertaalproject maken: zie voor procedurestappen [Een nieuw vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project) (updateworkflow).
+* Een vertaalproject maken: zie voor procedurestappen [Een vertaalproject voor elementen maken](translation-projects.md#create-a-new-translation-project) (updateworkflow).
 * Toevoegen aan bestaand vertaalproject: zie voor procedurestappen [Toevoegen aan bestaand vertaalproject voor elementen](translation-projects.md#add-to-existing-translation-project) (updateworkflow).
 
 U kunt ook tijdelijke-taalkopieën maken voor fragmenten, vergelijkbaar met de manier waarop u tijdelijke kopieën maakt voor elementen. Zie voor meer informatie [Tijdelijke taalkopieën maken voor elementen](translation-projects.md#creating-temporary-language-copies).
@@ -159,4 +159,4 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    >[!NOTE]
    >
-   >De procedures voor het toevoegen van een inhoudsfragment aan een bestaand project of voor het uitvoeren van updatewerkstromen zijn gelijkaardig aan de overeenkomstige procedures voor activa. Zie voor leidraden voor deze procedures de voor activa beschreven procedures.
+   >De procedures voor het toevoegen van een inhoudsfragment aan een bestaand project of voor het uitvoeren van updatewerkstromen zijn gelijkaardig aan de overeenkomstige procedures voor activa. Zie de voor activa beschreven procedures voor richtsnoeren over deze procedures.

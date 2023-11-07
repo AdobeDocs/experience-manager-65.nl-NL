@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 46d6bde0-8645-4cff-b79c-8e1615ba4ed4
 docset: aem65
 exl-id: 3f6aa06e-b5fd-4ab0-9ecc-14250cb3f55e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1037'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt ge
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
-1. AEM WCM activeert de geselecteerde inhoud. De gepubliceerde pagina of pagina&#39;s worden weergegeven in het dialoogvenster [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (groen gemarkeerd) met informatie over wie de inhoud heeft geactiveerd en over de datum en tijd van activering.
+1. AEM WCM activeert de geselecteerde inhoud. De gepubliceerde pagina of pagina&#39;s worden weergegeven in het dialoogvenster [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (groen gemarkeerd) met informatie over wie de inhoud heeft geactiveerd en de datum en tijd van activering.
 
    ![screen_shot_2012-02-08at14335pm](assets/screen_shot_2012-02-08at14335pm.png)
 
@@ -88,7 +88,7 @@ U kunt een pagina ook activeren wanneer u deze hebt geopend voor bewerking.
 
 Nadat u de pagina hebt geopend en de inhoud ervan hebt gewijzigd, kunt u:
 
-1. Selecteer **Pagina** in de Sidekick.
+1. Selecteer de **Pagina** in de Sidekick.
 1. Klikken **Pagina activeren**.
 Rechtsboven in het venster wordt een bericht weergegeven waarin wordt bevestigd dat de pagina is geactiveerd.
 
@@ -120,7 +120,7 @@ Uw activering voor een later tijdstip plannen:
 
 Als u later activeert, wordt een workflow gestart om deze versie van de pagina op het opgegeven tijdstip te activeren. Als u later deactiveert, wordt daarentegen een workflow gestart om deze versie van de pagina op een bepaald moment te deactiveren.
 
-Als u deze activering/deactivering wilt annuleren, gaat u naar [Workflowconsole](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) om de corresponderende workflow te beëindigen.
+Als u deze activering/deactivering wilt annuleren, ga naar [Workflowconsole](/help/sites-administering/workflows-administering.md#main-pars_title_3-yjqslz-refd) om de corresponderende workflow te beëindigen.
 
 ### Later deactiveren {#deactivate-later}
 
@@ -148,7 +148,7 @@ De status kan worden bekeken vanuit de [Websiteconsole](/help/sites-classic-ui-a
 
 Van de **Websites** kunt u de afzonderlijke pagina&#39;s activeren. Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerkt - die allen onder de zelfde wortelpagina ingezeten zijn - kan het gemakkelijker zijn om de volledige boom in één actie te activeren. U kunt ook een droog programma uitvoeren om een activering na te bootsen en te markeren welke pagina&#39;s moeten worden geactiveerd.
 
-1. Open de **Gereedschappen** console door het van de **Welkom** en dubbelklikken **Replicatie** om de console te openen ( `https://localhost:4502/etc/replication.html`).
+1. Open de **Gereedschappen** console door het van de **Welkom** en dubbelklikken **Replicatie** de console openen ( `https://localhost:4502/etc/replication.html`).
 
    ![screen_shot_2012-02-08at125033pm](assets/screen_shot_2012-02-08at125033pm.png)
 
@@ -163,7 +163,7 @@ Van de **Websites** kunt u de afzonderlijke pagina&#39;s activeren. Wanneer u ee
 
    * **Alleen gewijzigd**: alleen pagina&#39;s activeren die zijn gewijzigd.
    * **Alleen geactiveerd**: alleen pagina&#39;s activeren die (al) zijn geactiveerd. Werkt als een vorm van reactivering.
-   * **Negeren gedeactiveerd**: pagina&#39;s die zijn gedeactiveerd, negeren.
+   * **Negeren gedeactiveerd**: negeer alle pagina&#39;s die zijn gedeactiveerd.
 
 1. Selecteer de handeling die u wilt uitvoeren:
 

@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6f775933-e989-4456-ad01-9bdf5dee3dad
 exl-id: 0d36160a-29fa-4cc4-a0ff-fc681d3e040e
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1089'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 Deze inhoud beschrijft hoe gecontroleerde omslagen door verschillende steun en terugwinningsscenario&#39;s, de beperkingen en de resultaten van deze scenario&#39;s worden beïnvloed, en hoe te om gegevensverlies te minimaliseren.
 
-*Controlemap* is een op een bestandssysteem gebaseerde toepassing die geconfigureerde servicebewerkingen aanroept die het bestand in een van de volgende mappen in de controlemap manipuleren:
+*Gecontroleerde map* is een op een bestandssysteem gebaseerde toepassing die geconfigureerde servicebewerkingen aanroept die het bestand in een van de volgende mappen in de controlemap manipuleren:
 
 * Invoer
 * Werkgebied
@@ -142,7 +142,7 @@ Als er een recentere back-up is gemaakt, kunt u de bestanden herstellen. Bedenk 
 
 **Invoer:** Bestanden in deze map worden opnieuw verwerkt nadat de gecontroleerde map is hersteld.
 
-**Resultaat:** Bestanden in deze map worden niet verwerkt.
+**Resultaat** Bestanden in deze map worden niet verwerkt.
 
 **Uitvoer:** Bestanden in deze map worden niet verwerkt.
 
@@ -155,10 +155,10 @@ Met de volgende strategieën kunt u het gegevensverlies van de uitvoer- en invoe
 * Maak regelmatig een back-up van de uitvoermappen en de mislukkingsmappen, bijvoorbeeld om het verlies van resultaat- en foutbestanden te voorkomen.
 * Maak een back-up van de invoerbestanden in een andere map dan de gecontroleerde map. Dit zorgt ervoor dat bestanden na herstel beschikbaar zijn voor het geval u de bestanden niet kunt vinden in de uitvoermap of de map voor mislukkingen. Zorg ervoor dat uw schema voor het benoemen van bestanden consistent is.
 
-   Als u bijvoorbeeld de uitvoer opslaat met `%F.`*extension*, heeft het uitvoerbestand dezelfde naam als het invoerbestand. Hierdoor kunt u bepalen welke invoerbestanden worden gemanipuleerd en welke opnieuw moeten worden verzonden. Als u alleen file1_out in de resultaatmap ziet en niet file2_out, file3_out en file4_out, moet u file2, file3 en file4 opnieuw verzenden.
+  Als u bijvoorbeeld de uitvoer opslaat met `%F.`*extension*, heeft het uitvoerbestand dezelfde naam als het invoerbestand. Hierdoor kunt u bepalen welke invoerbestanden worden gemanipuleerd en welke opnieuw moeten worden verzonden. Als u alleen file1_out in de resultaatmap ziet en niet file2_out, file3_out en file4_out, moet u file2, file3 en file4 opnieuw verzenden.
 
-* Als de beschikbare controlemap ouder is dan de tijd die nodig is om de taak te verwerken, moet u het systeem toestaan een nieuwe controlemap te maken en de bestanden automatisch in de invoermap te plaatsen.
-* Als de meest recente beschikbare back-up niet recent genoeg is, is de back-uptijd korter dan de tijd die nodig is om de bestanden te verwerken en de gecontroleerde map wordt hersteld, is het bestand in een van de volgende verschillende stadia gemanipuleerd:
+* Als de beschikbare controlemap ouder is dan de tijd die nodig is om de taak te verwerken, moet u het systeem toestaan een controlemap te maken en de bestanden automatisch in de invoermap te plaatsen.
+* Als de meest recente beschikbare back-up niet recent genoeg is, de back-uptijd korter is dan de tijd die nodig is om de bestanden te verwerken en de gecontroleerde map wordt hersteld, is het bestand in een van de volgende verschillende stadia gemanipuleerd:
 
    * **Fase 1:** In de invoermap
    * **Fase 2:** Gekopieerd naar de werkgebiedmap, maar het proces wordt nog niet aangeroepen
@@ -166,11 +166,11 @@ Met de volgende strategieën kunt u het gegevensverlies van de uitvoer- en invoe
    * **Fase 4:** Bezig met manipuleren
    * **Fase 5:** Resultaten geretourneerd
 
-   Bestanden in werkgebied 1 worden gemanipuleerd. Als bestanden zich in werkgebied 2 of 3 bevinden, plaatst u ze in de invoermap zodat ze opnieuw kunnen worden gemanipuleerd.
+  Bestanden in werkgebied 1 worden gemanipuleerd. Als bestanden zich in werkgebied 2 of 3 bevinden, plaatst u ze in de invoermap zodat ze opnieuw kunnen worden gemanipuleerd.
 
-   >[!NOTE]
-   >
-   >Als een bestand meerdere keren wordt bewerkt, wordt gegevensverlies voorkomen, maar kunnen de resultaten worden gedupliceerd.
+  >[!NOTE]
+  >
+  >Als een bestand meerdere keren wordt gemanipuleerd, wordt gegevensverlies voorkomen, maar kunnen de resultaten worden gedupliceerd.
 
 ## Conclusie {#conclusion}
 

@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 5f4bbad87768cf6bd73771f9eac6e01ab3bf3309
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5873'
+source-wordcount: '5872'
 ht-degree: 0%
 
 ---
@@ -190,7 +190,7 @@ Schakel deze opties in om op te geven hoe de inhoud moet worden weergegeven, hoe
 
 **Pagina-indeling:** Selecteer het type pagina-indeling voor het PDF-document.
 
-**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardvergroting voor Acrobat gebruikt.
+**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardvergroting van Acrobat gebruikt.
 
 **Openen naar paginanummer:** Geef het paginanummer op waarop de PDF wordt geopend.
 

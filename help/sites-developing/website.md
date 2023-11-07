@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: d7cf843c-c837-4b97-b6c5-0fbd6793bdd4
-source-git-commit: a56d5121a6ce11b42a6c30dae9e479564d16af27
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '4941'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste Adobe Experience Manager (AEM)-technologieën voor uw websites te gebruiken, zoals in het artikel gedetailleerd wordt beschreven. [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt aan de nieuwste Adobe Experience Manager (AEM)-technologieën voor uw websites te gebruiken, zoals in het artikel gedetailleerd wordt beschreven [Aan de slag met het ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md).
 
 Met deze zelfstudie kunt u een volledig uitgeruste website met AEM maken. De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkelingen vinden plaats in een auteursomgeving.
 
@@ -50,13 +50,13 @@ Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te
 
 **OPMERKING:** Wanneer u dit pakket installeert, worden alle bronnen in de ontwerpinstantie die u met deze zelfstudie hebt gemaakt, overschreven.
 
-Inhoud van website
+Inhoud website-pakket
 
 [Bestand ophalen](assets/website-1_0.zip)
 
 ## Adobe Experience Manager installeren {#installing-adobe-experience-manager}
 
-Als u een AEM voor het ontwikkelen van uw website wilt installeren, volgt u de instructies voor het instellen van een [implementatieomgeving met auteur- en publicatieinstanties](/help/sites-deploying/deploy.md#author-and-publish-installs)of voert een [algemene installatie](/help/sites-deploying/deploy.md#default-local-install). De algemene installatie omvat het downloaden van het AEM QuickStart JAR-bestand, het plaatsen van het bestand license.properties in dezelfde map als het JAR-bestand en het dubbelklikken op het JAR-bestand.
+Volg de instructies voor het instellen van een AEM voor het ontwikkelen van uw website [implementatieomgeving met auteur- en publicatieinstanties](/help/sites-deploying/deploy.md#author-and-publish-installs)of voert een [algemene installatie](/help/sites-deploying/deploy.md#default-local-install). De algemene installatie omvat het downloaden van het AEM QuickStart JAR-bestand, het plaatsen van het bestand license.properties in dezelfde map als het JAR-bestand en het dubbelklikken op het JAR-bestand.
 
 Nadat u AEM hebt geïnstalleerd, toegang tot de ontwikkelomgeving van de CRXDE Lite door de verbinding van de CRXDE Lite op de Welkome pagina te klikken:
 
@@ -122,9 +122,9 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 1. Typ in het dialoogvenster Sjabloon maken de volgende waarden en klik vervolgens op **Volgende**:
 
-   * **Label**: contentpagina
-   * **Titel**: Sjabloon voor pagina met inhoud van mijn website
-   * **Beschrijving**: Dit is mijn pagina-sjabloon voor website-inhoud
+   * **Label**: contentPage
+   * **Titel**: Sjabloon voor pagina met inhoud op mijn website
+   * **Beschrijving**: Dit is mijn sjabloon voor pagina met website-inhoud
    * **Type bron:** mywebsite/componenten/contentPage
 
    Gebruik de standaardwaarde voor het Rangschikken bezit.
@@ -152,9 +152,9 @@ Maak de *component* Hiermee definieert u de inhoud en geeft u de pagina&#39;s we
 1. In CRXDE Lite klikt u met de rechtermuisknop `/apps/mywebsite/components` en klik op **Maken** > **Component**.
 1. In de **Component maken** typt u de volgende eigenschapswaarden:
 
-   * **Label**: contentpagina
-   * **Titel**: Inhoud pagina Mijn website
-   * **Beschrijving**: Dit is de inhoud van mijn website
+   * **Label**: contentPage
+   * **Titel**: Inhoud pagina-component Mijn website
+   * **Beschrijving**: Dit is de inhoud van mijn website, component Pagina
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
@@ -211,7 +211,7 @@ Voeg code toe aan het script contentPage.jsp om de pagina-inhoud te definiëren.
 
 ### Websitepagina&#39;s en inhoudspagina&#39;s maken {#creating-your-website-page-and-content-pages}
 
-In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de inhoudspagina gebruiken: Mijn Website, Engels, Producten, de Diensten, en Klanten.
+In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de inhoudspagina gebruiken: Mijn website, Engels, Producten, Services en Klanten.
 
 1. Op de AEM Welkomstpagina ([https://localhost:4502/libs/cq/core/content/welcome.html](https://localhost:4502/libs/cq/core/content/welcome.html)), klikt u op Websites.
 
@@ -222,7 +222,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
    * Titel: `My Website`
    * Naam: `mywebsite`
-   * Selecteer `My Website Content Page Template`
+   * Selecteer de `My Website Content Page Template`
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
@@ -277,13 +277,13 @@ Wanneer u klaar bent, **Producten** De pagina moet er als volgt uitzien:
 
 #### Het gebruiken van de Manuscripten van de Pagina van de Stichting {#using-the-foundation-page-scripts}
 
-In deze oefening, vormt u uw paginaContent component zodat zijn supertype de AEM component van de Pagina is. Omdat componenten de eigenschappen van hun supertype erven, erft uw pagina-inhoud de scripts en eigenschappen van de component Pagina.
+In deze oefening, vormt u uw component van de pagina-inhoud zodat zijn supertype de AEM component van de Pagina is. Omdat componenten de eigenschappen van hun supertype erven, erft uw pagina-inhoud de scripts en eigenschappen van de component Pagina.
 
 In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen die de supertype-component biedt, alsof deze in de component zijn opgenomen.
 
 1. Voeg in CRXDE Lite een eigenschap toe aan de `/apps/mywebsite/components/contentpage` knooppunt.
 
-   1. Selecteer `/apps/mywebsite/components/contentpage` knooppunt.
+   1. Selecteer de `/apps/mywebsite/components/contentpage` knooppunt.
    1. Typ onder aan het tabblad Eigenschappen de volgende eigenschapswaarden en klik op Toevoegen:
 
       * **Naam:** sling:resourceSuperType
@@ -348,7 +348,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
 
    1. Typ in het dialoogvenster `center.jsp` als **Naam** en klik op **OK**.
 
-1. Het bestand bewerken `center.jsp` om de bestaande inhoud te verwijderen en te vervangen door de volgende code:
+1. Het bestand bewerken `center.jsp` om de bestaande inhoud te verwijderen en deze te vervangen door de volgende code:
 
    ```java
    <%@include file="/libs/foundation/global.jsp"%><%
@@ -494,7 +494,7 @@ De bron voor de afbeeldingskoppeling naar de pagina Producten kan bijvoorbeeld h
 
 1. Sling bepaalt het pad van de bron die moet worden gebruikt `/content/mwebysite/en/products.png.`
 1. De verkoop stemt met dit pad overeen met `/content/mywebsite/en/products` knooppunt.
-1. De schuifregelaar bepaalt de `sling:resourceType` van dit knooppunt dat moet worden `mywebsite/components/contentpage`.
+1. De schuifregelaar bepaalt de `sling:resourceType` van dit knooppunt `mywebsite/components/contentpage`.
 
 1. Bij Sling wordt het script in deze component gevonden dat het beste overeenkomt met de URL-kiezer ( `navimage`) en bestandsextensie ( `png`).
 
@@ -518,7 +518,7 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
 
    De .java-bestandsnaamextensie geeft aan Sling aan dat de Apache Sling Scripting Java™-ondersteuning moet worden gebruikt om het script te compileren en een servlet te maken.
 
-1. De volgende code kopiëren naar `navimage.png.java.`De code breidt de klasse AbstractImageServlet uit:
+1. De volgende code kopiëren naar `navimage.png.java.`De code breidt de klasse AbstractImageServer uit:
 
    * [AbstractImageServlet](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/wcm/commons/AbstractImageServlet.html) Maakt een ImageContext-object dat de eigenschappen van de huidige bron opslaat.
    * De bovenliggende pagina van de bron wordt geëxtraheerd uit het ImageContext-object. De paginatitel en -ondertitel worden vervolgens opgehaald.
@@ -669,7 +669,7 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina die twee spec
 
 1. Stel in CRXDE Lite een beschrijving en een datum in voor de pagina Product 1:
 
-   1. Selecteer `/content/mywebsite/en/products/product1/jcr:content` knooppunt.
+   1. Selecteer de `/content/mywebsite/en/products/product1/jcr:content` knooppunt.
    1. In de **Eigenschappen** voert u de volgende waarden in:
 
       * Naam: `jcr:description`
@@ -679,10 +679,10 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina die twee spec
    1. Klikken **Toevoegen**.
    1. In de **Eigenschappen** kunt u een andere eigenschap maken met de volgende waarden:
 
-      * Naam: date
+      * Naam: datum
       * Type: String
       * Waarde: 14-02-2008
-      * Klik op Toevoegen.
+      * Klik toevoegen.
 
    1. Klik op Alles opslaan.
 
@@ -691,17 +691,17 @@ Maak twee pagina&#39;s onder de pagina Producten. Voor elke pagina die twee spec
    1. Selecteer het knooppunt /content/mywebsite/nl/products/product2/jcr:content.
    1. In de **Eigenschappen** voert u de volgende waarden in:
 
-      * Naam: jcr:beschrijving
+      * Naam: jcr:description
       * Type: String
-      * Waarde: Dit is een beschrijving van Product 2!
+      * Waarde: dit is een beschrijving van Product 2!.
 
    1. Klikken **Toevoegen**.
    1. Vervang in dezelfde tekstvakken de vorige waarden door de volgende waarden:
 
-      * Naam: date
+      * Naam: datum
       * Type: String
       * Waarde: 11-05-2012
-      * Klik op Toevoegen.
+      * Klik toevoegen.
 
    1. Klik op Alles opslaan.
 
@@ -713,10 +713,10 @@ De component listchildren maken:
 1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op Volgende:
 
    * Label: listchildren.
-   * Titel: Mijn component Listchildren.
-   * Omschrijving: Dit is de component My Listchildren.
+   * Titel: component Mijn onderliggende objecten.
+   * Beschrijving: Dit is de component Mijn onderliggende objecten van het type Listener.
 
-1. Klik op Volgende totdat het deelvenster Toegestane onderliggende items wordt weergegeven en klik op OK.
+1. Ga door met klikken op Volgende totdat het deelvenster Toegestane onderliggende items wordt weergegeven en klik op OK.
 
 #### Het script List Children maken {#creating-the-list-children-script}
 
@@ -729,7 +729,7 @@ Ontwikkel het manuscript voor de component listchildren.
    <%@include file="/libs/foundation/global.jsp"%><%
    %><%@ page import="java.util.Iterator,
             com.day.cq.wcm.api.PageFilter"%><%
-        /* Create a new Page object using the path of the current page */
+        /* Create a Page object using the path of the current page */
          String listroot = properties.get("listroot", currentPage.getPath());
         Page rootPage = pageManager.getPage(listroot);
         /* iterate through the child pages and gather properties */
@@ -771,7 +771,7 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
 
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
-1. Selecteer `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` knooppunt.
+1. Selecteer de `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` knooppunt.
 1. Wijzig op het tabblad Eigenschappen de waarde van het dialoogvenster **titel** eigenschap aan `List Children`
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
@@ -837,7 +837,7 @@ Als u de volledige werking van deze component wilt zien, kunt u de pagina Produc
 
 ### De component Logo maken {#creating-the-logo-component}
 
-Maak een component die het bedrijfslogo weergeeft en een koppeling naar de startpagina van de site bevat. De component bevat een dialoogvenster voor de ontwerpmodus, zodat de eigenschapswaarden worden opgeslagen in het siteontwerp (/etc/designs/mywebsite):
+Maak een component die het bedrijfslogo weergeeft en die een koppeling naar de startpagina van de site bevat. De component bevat een dialoogvenster voor de ontwerpmodus, zodat de eigenschapswaarden worden opgeslagen in het siteontwerp (/etc/designs/mywebsite):
 
 * De eigenschapswaarden zijn van toepassing op alle instanties van de component die worden toegevoegd aan pagina&#39;s die het ontwerp gebruiken.
 * De eigenschappen kunnen worden gevormd gebruikend om het even welke instantie van de component die op een pagina is die het ontwerp gebruikt.
@@ -852,7 +852,7 @@ Als u klaar bent, ziet het er als volgt uit:
 >
 >Adobe Experience Manager biedt een logo met meer functies ( `/libs/foundation/components/logo`).
 
-#### Het knooppunt Logo-component maken {#creating-the-logo-component-node}
+#### Het knooppunt Logo Component {#creating-the-logo-component-node}
 
 Voer de volgende stappen uit om het logo-onderdeel te maken:
 
@@ -1124,7 +1124,7 @@ Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te
 1. Klik met de rechtermuisknop op de knop `/apps/mywebsite/components` en klik op Plakken.
 1. Klik met de rechtermuisknop op de knop `Copy of logo` knoop, klikt anders noemen, schrapt de bestaande tekst en type `image`.
 
-1. Selecteer `image` componentknooppunt en wijzig de volgende eigenschapswaarden:
+1. Selecteer de `image` componentknooppunt en wijzig de volgende eigenschapswaarden:
 
    * `jcr:title:` Mijn afbeeldingscomponent.
    * `jcr:description`: Dit is de component Mijn afbeelding.
@@ -1173,7 +1173,7 @@ In deze sectie wordt beschreven hoe u het afbeeldingsscript maakt.
 
 De `cq:editConfig` het knooptype laat u toe om bepaald gedrag van componenten te vormen wanneer het uitgeven van hun eigenschappen.
 
-In deze sectie gebruikt u het knooppunt cq:editConfig om u in staat te stellen elementen van de Inhoudszoeker naar de afbeeldingscomponent te slepen.
+In deze sectie gebruikt u een knooppunt cq:editConfig om u in staat te stellen elementen van de Inhoudszoeker naar de afbeeldingscomponent te slepen.
 
 1. Maak in CRXDE Lite onder het knooppunt /apps/mywebsite/components/image als volgt een knooppunt:
 
@@ -1214,8 +1214,8 @@ In deze sectie bekijkt u de **Producten** en voeg de afbeeldingscomponent toe aa
 1. Laad in uw browser de **Producten** pagina.
 1. Klik in de Sidekick op de knop **ontwerpmodus** pictogram.
 1. Klik op de knop Bewerken om het ontwerpdialoogvenster van par te bewerken.
-1. In het dialoogvenster wordt een lijst met **Toegestane componenten** wordt getoond; navigeren naar **MyWebsite**, selecteert u de **Mijn afbeeldingscomponent** en klik op **OK.**
-1. Terug naar **bewerkingsmodus.**
+1. In het dialoogvenster wordt een lijst met **Toegestane componenten** wordt weergegeven; navigeert naar **MyWebsite**, selecteert u de **Mijn afbeeldingscomponent** en klik op **OK.**
+1. Terug naar **bewerken.**
 1. Dubbelklik op het parsys-frame (ingeschakeld) **Componenten of elementen hierheen slepen**). De **Nieuwe component invoegen** en **Sidekick** kiezers zien er als volgt uit:
 
    ![chlimage_1-4](assets/chlimage_1-4.jpeg)
@@ -1226,7 +1226,7 @@ In deze sectie neemt u de werkbalkcomponent op. Dit is een van de basiscomponent
 
 U hebt verschillende opties in de bewerkingsmodus en de ontwerpmodus.
 
-1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u de `body.jsp` en zoek de volgende code:
+1. Ga in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u de `body.jsp` en zoek de volgende code:
 
    ```java
    <div class="toolbar">toolbar</div>
@@ -1275,8 +1275,8 @@ Wanneer u klaar bent, ziet uw zoekinvoervak er als volgt uit op het tabblad **En
 
       * Label: zoeken
       * Titel: Mijn zoekcomponent
-      * Omschrijving: Dit is mijn zoekcomponent
-      * Groep: MyWebsite
+      * Beschrijving: Dit is mijn zoekcomponent
+      * Groep: MijnWebsite
 
    1. Klik op Volgende. Klik nogmaals op Volgende.
    1. Klik in het deelvenster Toegestane bovenliggende elementen op de knop + en typ `*/parsys`.
@@ -1504,7 +1504,7 @@ In deze sectie voegt u uw zoekcomponent toe aan het alineasysteem.
 
    ![chlimage_1-58](assets/chlimage_1-58.png)
 
-1. Navigeer naar de pagina Producten. Zoek naar klanten in de invoerdoos en druk binnengaan. U wordt omgeleid naar de zoekpagina. Overschakelen naar voorvertoningsmodus: de uitvoer heeft een vergelijkbare indeling als de volgende:
+1. Navigeer naar de pagina Producten. Zoek naar klanten in de invoerdoos en druk binnengaan. U wordt omgeleid naar de zoekpagina. Overschakelen naar voorvertoningsmodus: de uitvoer heeft een indeling die vergelijkbaar is met de volgende:
 
    ![chlimage_1-59](assets/chlimage_1-59.png)
 
@@ -1514,7 +1514,7 @@ In deze sectie, omvat u de component van het Systeem van de Paragraaf van de Ove
 
 Voor deze component kunt u verschillende parameters instellen in zowel de bewerkingsmodus als de ontwerpmodus.
 
-1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `right.jsp`en vervangen:
+1. Ga in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, opent u het bestand `right.jsp`en vervangen:
 
    ```java
    <div>iparsys</div>

@@ -3,7 +3,7 @@ title: Gebruik de modus Lay-out om het formaat van componenten voor interactieve
 description: De positie van componenten bepalen met behulp van het responsieve raster dat beschikbaar is in de modus Lay-out
 feature: Interactive Communication
 exl-id: 9534fcb2-4260-4dd0-9f7e-779b10fd3a22
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -12,21 +12,21 @@ ht-degree: 0%
 
 # Gebruik de modus Lay-out om het formaat van componenten te wijzigen {#use-layout-mode-to-resize-components}
 
-De interactieve Communicatie het kanaal van het Web auteursinterface laat u toe om componenten te resize gebruikend de wijze van de Lay-out. Sleep blauwe stippen in kolommen om de begin- en eindpunten voor de positiecomponenten te definiëren. De blauwe stippen worden weergegeven nadat u op de component in het responsieve raster hebt getikt. Het responsieve raster bestaat uit 12 gelijke kolommen. Met de witte en blauwe kleurschaduw in alternatieve kolommen wordt de ene kolom onderscheiden van de andere.
+De interactieve Communicatie het kanaal van het Web auteursinterface laat u toe om componenten te resize gebruikend de wijze van de Lay-out. Sleep blauwe stippen in kolommen om de begin- en eindpunten voor de positiecomponenten te definiëren. De blauwe stippen worden weergegeven nadat u op de component in het responsieve raster hebt getikt. Het responsieve raster bestaat uit twaalf gelijke kolommen. Met de witte en blauwe kleurschaduw in alternatieve kolommen wordt de ene kolom onderscheiden van de andere.
 
 U kunt de modus Lay-out gebruiken om het formaat van componenten te wijzigen voor alle apparaattypen, zoals bureaublad, tablet, telefoon en andere kleinere apparaten. De tablet leidt automatisch de lay-outconfiguratie van de Desktopversie af en de kleinere apparaten leiden lay-outconfiguratie van telefoon af. Nochtans, kunt u de automatisch afgeleide configuraties met voeten treden om een verschillende configuratie voor elk apparatentype te bepalen.
 
 >[!NOTE]
 >
->Als u het kanaal van het Web creeert gebruikend [Kanaal als master afdrukken](../../forms/using/create-interactive-communication.md) voor een Interactieve Communicatie, omvatten de componenten beschikbaar voor het resizing ook de subformulieren en de gebieden die in het kanaal van het Web auto-geproduceerd gebruikend het kanaal van de Druk zijn. Het kanaal van het Web behoudt de lay-out voor de het kanaalelementen van de Druk op de wijze van de Lay-out.
+>Als u het kanaal van het Web creeert gebruikend [Kanaal als stramien afdrukken](../../forms/using/create-interactive-communication.md) voor een Interactieve Communicatie, omvatten de componenten beschikbaar voor het resizing ook de subformulieren en de gebieden die in het kanaal van het Web auto-geproduceerd gebruikend het kanaal van de Druk zijn. Het kanaal van het Web behoudt de lay-out voor de het kanaalelementen van de Druk op de wijze van de Lay-out.
 
 ## Modus Toegang tot layout {#access-layout-mode}
 
-Selecteren **Layout** van de drop-down lijst die bij de bovenkant van de Interactieve Communicatie auteursinterface naast **Voorvertoning** optie. Het formulier wordt weergegeven in de modus Indeling.
+Selecteren **Layout** van de drop-down lijst die bij de bovenkant van de Interactieve Communicatie auteursinterface naast **Voorvertoning** -optie. Het formulier wordt weergegeven in de modus Indeling.
 
 1. Meld u aan bij de AEM auteur en navigeer naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documenten**.
-1. Een nieuwe of bestaande [Interactieve communicatie](../../forms/using/create-interactive-communication.md).
-1. Selecteren **Layout** in de vervolgkeuzelijst die boven aan het dialoogvenster **Voorvertoning** optie. Het formulier wordt weergegeven in de modus Indeling.
+1. Een [Interactieve communicatie](../../forms/using/create-interactive-communication.md) of open een bestaande.
+1. Selecteren **Layout** in de vervolgkeuzelijst die boven aan het dialoogvenster **Voorvertoning** -optie. Het formulier wordt weergegeven in de modus Indeling.
 
    ![Lay-outmodus voor interactieve communicatie](assets/layout_mode_ic_new.png)
 
@@ -62,7 +62,7 @@ Selecteren **Layout** van de drop-down lijst die bij de bovenkant van de Interac
 
    ![Tabel en afbeelding parallel in de modus Lay-out](assets/table_image_parallel_new.png)
 
-   U kunt de component Image selecteren en tikken op de knop **Zweven naar nieuwe regel** beschikbaar op de werkbalk om de component Afbeelding naar de volgende regel te verplaatsen.
+   U kunt de component Image selecteren en op de knop **Zweven naar nieuwe regel** beschikbaar in de werkbalk om de component Afbeelding naar de volgende regel te verplaatsen.
 
 ## Deelvensters vergroten/verkleinen {#resize-panels-layout-mode}
 
@@ -85,7 +85,7 @@ Voer de volgende stappen uit om het aantal kolommen voor een deelvenster te defi
 
 1. In de **[!UICONTROL Layout]** , tikt u op een van de componenten in het deelvenster en selecteert u ![Bovenliggend element selecteren](assets/select_parent_icon.svg)en selecteert u het deelvenster.
 
-1. Tikken ![meerdere kolommen](assets/multi-column.svg) en selecteert u het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan variëren van 1 tot en met 12. Het deelvenster wordt verdeeld in een lay-out met meerdere kolommen.
+1. Tikken ![meerdere kolommen](assets/multi-column.svg) en selecteert u het aantal kolommen in de vervolgkeuzelijst. Het aantal kolommen kan variëren van 1 tot 12. Het deelvenster wordt verdeeld in een lay-out met meerdere kolommen.
 
 ![meerdere kolommen in de lay-outmodus](assets/multi-column-layout.png)
 
@@ -95,10 +95,10 @@ U kunt de modus Indeling uitschakelen voor formulieren met een oude responsieve 
 
 Voer de volgende stappen uit om de modus Lay-out uit te schakelen:
 
-1. Selecteren **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** en opent u de sjabloon die in het formulier wordt gebruikt **[!UICONTROL Edit]** in.
+1. Selecteren **[!UICONTROL Tools]** > **[!UICONTROL General]** > **[!UICONTROL Templates]** en opent u de sjabloon die in het formulier wordt gebruikt **[!UICONTROL Edit]** -modus.
 1. Selecteer de documentcontainer in het linkervenster en tik op **[!UICONTROL Policy.]**
 
    ![Lay-outmodus uitschakelen](assets/policy_disable_layout_mode.png)
 
 1. Tik op de knop **[!UICONTROL Layout Settings]** en selecteert u **[!UICONTROL Disable Layout Mode]**.
-1. Tikken ![Wijzigingen opslaan](assets/save_icon.png) om de sjablooneigenschappen op te slaan.
+1. Tikken ![Wijzigingen opslaan](assets/save_icon.png) de sjablooneigenschappen opslaan.

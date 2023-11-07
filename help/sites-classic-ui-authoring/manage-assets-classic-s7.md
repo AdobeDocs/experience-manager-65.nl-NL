@@ -9,7 +9,7 @@ content-type: reference
 discoiquuid: dc0191d0-f181-4e1e-b3f4-73427aa22073
 docset: aem65
 exl-id: bc9c864b-8bc3-42b4-ba25-6c5108be4f65
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3392'
 ht-degree: 0%
@@ -55,7 +55,7 @@ U kunt digitale middelen naar Dynamic Media Classic (Scene7) publiceren vanuit d
 
 U kunt vanuit de middelenconsole publiceren naar Dynamic Media Classic (Scene7) als de middelen zich in een doelmap van Dynamic Media Classic (Scene7) bevinden.
 
-1. Selecteer in de klassieke UI van de Experience Manager **[!UICONTROL Digital Assets]** toegang tot de beheerder van digitale middelen.
+1. Selecteer in de klassieke UI van de Experience Manager **[!UICONTROL Digital Assets]** toegang te krijgen tot de beheerder van digitale middelen.
 
 1. Selecteer het element (of de middelen) of de map in de doelmap die u naar Dynamic Media Classic (Scene7) wilt publiceren, klik met de rechtermuisknop en selecteer **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]**. U kunt ook **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]** van de **[!UICONTROL Tools]** -menu.
 
@@ -77,7 +77,7 @@ U kunt een element handmatig publiceren zolang dat element zich in de gesynchron
 
 Publiceren naar Dynamic Media Classic (Scene7) rechtstreeks vanaf een digitaal middel:
 
-1. Selecteer in Experience Manager de optie **[!UICONTROL Digital Assets]** toegang tot de beheerder van digitale middelen.
+1. Selecteer in Experience Manager **[!UICONTROL Digital Assets]** toegang te krijgen tot de beheerder van digitale middelen.
 
 1. Dubbelklik om een element te openen.
 
@@ -93,7 +93,7 @@ Publiceren naar Dynamic Media Classic (Scene7) rechtstreeks vanaf een digitaal m
 
 ### Elementen publiceren van buiten de CQ-doelmap {#publishing-assets-from-outside-the-cq-target-folder}
 
-Adobe raadt u aan elementen alleen vanuit de doelmap Dynamic Media Classic (Scene7) naar Dynamic Media Classic (Scene7) te publiceren. Als u echter elementen moet uploaden vanuit een map buiten de doelmap, kunt u dat nog steeds doen door ze te uploaden naar een map op aanvraag in Dynamic Media Classic (Scene7). Configureer eerst de cloudconfiguratie voor de pagina waarop u het element wilt weergeven. Vervolgens voegt u een Dynamic Media Classic-component (Scene7) aan de pagina toe en sleept u een element naar de component. Nadat de pagina-eigenschappen voor die pagina zijn ingesteld, voert u een **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]** wordt weergegeven dat wanneer deze optie is geselecteerd, uploaden naar Dynamic Media Classic (Scene7) wordt geactiveerd.
+Adobe raadt u aan elementen alleen naar Dynamic Media Classic (Scene7) te publiceren vanuit middelen in de doelmap Dynamic Media Classic (Scene7). Als u echter elementen moet uploaden vanuit een map buiten de doelmap, kunt u dat nog steeds doen door ze te uploaden naar een map op aanvraag in Dynamic Media Classic (Scene7). Configureer eerst de cloudconfiguratie voor de pagina waarop u het element wilt weergeven. Vervolgens voegt u een Dynamic Media Classic-component (Scene7) aan de pagina toe en sleept u een element naar de component. Nadat de pagina-eigenschappen voor die pagina zijn ingesteld, voert u een **[!UICONTROL Publish to Dynamic Media Classic (Scene7)]** wordt weergegeven dat wanneer deze optie is geselecteerd, uploaden naar Dynamic Media Classic (Scene7) wordt geactiveerd.
 
 >[!NOTE]
 >
@@ -149,7 +149,7 @@ Nadat ze in de ontwerpmodus beschikbaar zijn gemaakt, kunt u de componenten net 
 
 ### Kennisgeving over de gebruiksduur van Flash-viewers {#flash-viewers-end-of-life-notice}
 
-Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (Scene7) officieel de ondersteuning voor het Flash-viewerplatform beëindigd.
+Met ingang van 31 januari 2017 heeft Adobe Dynamic Media Classic (Scene7) de ondersteuning voor het viewerplatform voor Flash officieel beëindigd.
 
 ### Een Dynamic Media Classic-component (Scene7) aan een pagina toevoegen {#adding-a-scene-component-to-a-page}
 
@@ -159,7 +159,7 @@ Een Dynamic Media Classic-component (Scene7)/viewer toevoegen aan een pagina in 
 
 1. Open in Experience Manager de pagina waaraan u de Dynamic Media Classic-component (Scene7) wilt toevoegen.
 
-1. Als er geen Dynamic Media Classic (Scene7)-componenten beschikbaar zijn, selecteert u de liniaal in het zijpaneel om het item in te voeren **Ontwerp** modus, selecteren **[!UICONTROL Edit]** parsys, en selecteer alle **[!UICONTROL Dynamic Media Classic (Scene7)]** componenten om deze beschikbaar te maken.
+1. Als er geen Dynamic Media Classic (Scene7)-componenten beschikbaar zijn, selecteert u de liniaal in het zijpaneel om te gaan **Ontwerp** modus, selecteren **[!UICONTROL Edit]** parsys, en selecteer alle **[!UICONTROL Dynamic Media Classic (Scene7)]** componenten om deze beschikbaar te maken.
 
 1. Terug naar **Bewerken** door het potlood in het zijpaneel te selecteren.
 
@@ -175,7 +175,7 @@ Het responsieve ontwerp voor uw elementen betekent dat uw elementen worden aange
 
 Een interactieve kijkervaring toevoegen aan een responsieve site in de klassieke gebruikersinterface:
 
-1. Meld u aan bij de Experience Manager en zorg ervoor dat u beschikt over [geconfigureerde Adobe Dynamic Media Classic (Scene7)-Cloud Services](/help/sites-administering/scene7.md#configuring-scene-integration) en dat Dynamic Media Classic (Scene7)-componenten beschikbaar zijn.
+1. Meld u aan bij de Experience Manager en zorg ervoor dat u [geconfigureerde Adobe Dynamic Media Classic (Scene7)-Cloud Servicen](/help/sites-administering/scene7.md#configuring-scene-integration) en dat Dynamic Media Classic (Scene7)-componenten beschikbaar zijn.
 
    >[!NOTE]
    >
@@ -204,19 +204,19 @@ U stelt deze configuratieopties in door bijvoorbeeld een Dynamic Media Classic-c
 
 De HTML5 component van het Gezoem toont een groter beeld wanneer u + knoop drukt.
 
-Het element heeft onderaan zoomgereedschappen. Selecteren **[!UICONTROL +]** vergroten. Selecteren **[!UICONTROL -]** om te verminderen. Het selecteren van **[!UICONTROL x]** of met de zoompijl opnieuw instellen wordt de oorspronkelijke grootte van de afbeelding hersteld. Selecteer de diagonale pijlen zodat u deze op volledig scherm kunt weergeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](#settings-common-to-all-scene-components).
+Het element heeft onderaan zoomgereedschappen. Selecteren **[!UICONTROL +]** vergroten. Selecteren **[!UICONTROL -]** om te verminderen. De **[!UICONTROL x]** of met de zoompijl opnieuw instellen wordt de oorspronkelijke grootte van de afbeelding hersteld. Selecteer de diagonale pijlen zodat u deze op volledig scherm kunt weergeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](#settings-common-to-all-scene-components).
 
 ![Afbeelding van tulpbloemen in de HTML5-zoomcomponent.](do-not-localize/chlimage_1-3.png)
 
 ### Flyout {#flyout}
 
-In de HTML5 Flyout-component wordt het element weergegeven als een gesplitst scherm; het element in de opgegeven grootte laten staan; rechts wordt het zoomgedeelte weergegeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](/help/sites-administering/scene7.md#settingscommontoallscene7components).
+In de HTML5 Flyout-component wordt het element weergegeven als een gesplitst scherm, waarbij het element in de opgegeven grootte wordt geplaatst en rechts het zoomgedeelte wordt weergegeven. Selecteren **[!UICONTROL Edit]** zodat kunt u de component vormen. Met deze component, kunt u vormen [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](/help/sites-administering/scene7.md#settingscommontoallscene7components).
 
 >[!NOTE]
 >
 >Als uw Flyout-component een aangepaste grootte gebruikt, wordt die aangepaste grootte gebruikt en wordt de responsieve instelling van de component uitgeschakeld.
 >
->Als de component Flyout de standaardgrootte gebruikt, zoals die in de ontwerpweergave is ingesteld, wordt de standaardgrootte gebruikt. De component wordt uitgerekt om de grootte van de paginalay-out aan te passen met responsieve instelling van de component ingeschakeld. Houd er echter rekening mee dat er een beperking geldt voor de responsieve instelling van de component. Wanneer u de component Flyout met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de Flyout de rechterrand van de pagina overschrijden.
+>Als de component Flyout de standaardgrootte gebruikt, zoals die in de ontwerpweergave is ingesteld, wordt de standaardgrootte gebruikt. De component wordt uitgerekt om de grootte van de paginalay-out aan te passen met responsieve instelling van de component ingeschakeld. Houd er echter rekening mee dat er een beperking geldt voor de responsieve installatie van de component. Wanneer u de component Flyout met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de Flyout de rechterrand van de pagina overschrijden.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -238,11 +238,11 @@ Met de Dynamic Media Classic (Scene7) Image-component kunt u Dynamic Media Class
 
 **Afbeeldingsvoorinstelling** - Selecteer een bestaande voorinstelling voor de afbeelding in het keuzemenu. Als de voorinstelling die u zoekt niet zichtbaar is, moet u deze zichtbaar maken. Zie Voorinstellingen afbeelding beheren. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en omgekeerd.
 
-**Uitvoerindeling** - Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld JPEG. Afhankelijk van de uitvoerindeling die u selecteert, hebt u mogelijk aanvullende configuratieopties. Zie Aanbevolen werkwijzen voor voorinstellingen afbeelding.
+**Uitvoerindeling** - Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld jpeg. Afhankelijk van de uitvoerindeling die u selecteert, hebt u mogelijk aanvullende configuratieopties. Zie Aanbevolen werkwijzen voor voorinstellingen afbeelding.
 
 **Verscherpen** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in de aanbevolen werkwijzen voor voorinstellingen van afbeeldingen en in de aanbevolen werkwijzen voor Verscherpen.
 
-**URL-modificatoren** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor S7-afbeeldingen in te voeren. Deze opdrachten worden beschreven in Voorinstellingen afbeelding en de opdrachtverwijzing.
+**URL-wijzigingstoetsen** - U kunt afbeeldingseffecten wijzigen door extra opdrachten voor S7-afbeeldingen in te voeren. Deze opdrachten worden beschreven in Voorinstellingen afbeelding en de opdrachtverwijzing.
 
 **Onderbrekingspunten** - Als uw website reageert, wilt u de onderbrekingspunten aanpassen. Onderbrekingspunten moeten worden gescheiden door komma&#39;s (,).
 
@@ -250,7 +250,7 @@ Met de Dynamic Media Classic (Scene7) Image-component kunt u Dynamic Media Class
 
 Dynamic Media Classic (Scene7) Image Templates (Afbeeldingssjablonen) zijn gelaagde Photoshop-inhoud die is geïmporteerd naar Dynamic Media Classic (Scene7), waar de parameters voor inhoud en eigenschappen zijn bepaald op basis van variabiliteit. De **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in Experience Manager wijzigen. Bovendien kunt u vormen **[!UICONTROL Image template]** gebruiken om waarden uit de clientcontext te gebruiken, zodat elke gebruiker de afbeelding op een gepersonaliseerde manier ervaart.
 
-Selecteren **[!UICONTROL Edit]** - om de component te configureren. U kunt configureren [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](/help/sites-administering/scene7.md#settingscommontoallscene7components) en andere instellingen die in deze sectie worden beschreven.
+Selecteren **[!UICONTROL Edit]** - om de component te configureren. U kunt [gemeenschappelijke instellingen voor alle Dynamic Media Classic (Scene7)-componenten](/help/sites-administering/scene7.md#settingscommontoallscene7components) en andere instellingen die in deze sectie worden beschreven.
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -282,7 +282,7 @@ De tekst in de afbeelding verandert. U kunt de oorspronkelijke waarde van de tek
 
 #### Tekst wijzigen om de waarde van de context van een client weer te geven {#changing-text-to-reflect-the-value-of-a-client-context-value}
 
-Selecteer **[!UICONTROL Select]** om het cliënt-context menu te openen, selecteer de cliëntcontext, en selecteer **[!UICONTROL OK]**. In dit voorbeeld verandert de naam op basis van de koppeling van de naam met de opgemaakte naam in het profiel.
+Als u een veld wilt koppelen aan een clientcontextwaarde, selecteert u **[!UICONTROL Select]** om het cliënt-context menu te openen, selecteer de cliëntcontext, en selecteer **[!UICONTROL OK]**. In dit voorbeeld verandert de naam op basis van de koppeling van de naam met de opgemaakte naam in het profiel.
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -292,7 +292,7 @@ De tekst geeft de naam weer van de gebruiker die momenteel is aangemeld. U kunt 
 
 #### Een koppeling maken van de Dynamic Media Classic (Scene7)-afbeeldingssjabloon {#making-the-scene-image-template-a-link}
 
-U kunt van de Dynamic Media Classic (Scene7)-afbeeldingssjablooncomponent een klikbare koppeling maken.
+U kunt van de Dynamic Media Classic (Scene7) beeldmalplaatjecomponent een klikbare verbinding maken.
 
 1. Selecteer op de pagina met de Dynamic Media Classic (Scene7)-afbeeldingssjablooncomponent de optie **[!UICONTROL Edit]**.
 1. In de **[!UICONTROL URL]** Voer de URL in waarnaar gebruikers gaan wanneer op de afbeelding wordt geklikt. In de **[!UICONTROL Open in]** , selecteert u of het doel moet worden geopend (een nieuw venster of hetzelfde venster).
@@ -303,11 +303,11 @@ U kunt van de Dynamic Media Classic (Scene7)-afbeeldingssjablooncomponent een kl
 
 ### Video-component {#video-component}
 
-De Dynamic Media Classic (Scene7) **[!UICONTROL Video]** -component (beschikbaar in de sectie Dynamic Media Classic (Scene7) van het zijpaneel) gebruikt apparaat- en bandbreedtedetectie voor de juiste video voor elk scherm. Dit onderdeel is een HTML5-videospeler. het is één viewer die via meerdere kanalen kan worden gebruikt.
+De Dynamic Media Classic (Scene7) **[!UICONTROL Video]** -component (beschikbaar in de sectie Dynamic Media Classic (Scene7) van het zijpaneel) gebruikt apparaat- en bandbreedtedetectie voor de juiste video voor elk scherm. Deze component is een HTML5-videospeler; het is één viewer die met meerdere kanalen kan worden gebruikt.
 
 Deze kan worden gebruikt voor adaptieve videosets, één MP4-video of één F4V-video.
 
-Zie [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) voor meer informatie over hoe video&#39;s werken met de integratie van Dynamic Media Classic (Scene7). Zie ook hoe [de **Dynamic Media Classic (Scene7)-video** component vergelijkt met de stichting **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
+Zie [Video](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md) voor meer informatie over hoe video&#39;s werken met Dynamic Media Classic (Scene7) integratie. Zie ook hoe [de **Dynamic Media Classic (Scene7)-video** component vergelijkt met de stichting **video** component](/help/sites-classic-ui-authoring/manage-assets-classic-s7-video.md).
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -322,7 +322,7 @@ Wanneer u een adaptieve videoset gebruikt met de Dynamic Media Classic (Scene7)-
 
 ## Dynamic Media Classic (Scene7)-inhoudbrowser {#scene-content-browser}
 
-Met de Dynamic Media Classic (Scene7)-inhoudbrowser kunt u inhoud uit Dynamic Media Classic (Scene7) rechtstreeks in Experience Manager weergeven. Als u de inhoudbrowser wilt openen, selecteert u in de Inhoudszoeker de optie **Dynamic Media Classic (Scene7)** in de aanraakgeoptimaliseerde gebruikersinterface of de **S7** in de klassieke gebruikersinterface. De functionaliteit is identiek tussen beide gebruikersinterfaces.
+Met de Dynamic Media Classic (Scene7)-inhoudbrowser kunt u inhoud uit Dynamic Media Classic (Scene7) rechtstreeks in Experience Manager weergeven. Als u de inhoudbrowser wilt openen, selecteert u in de Inhoudszoeker **Dynamic Media Classic (Scene7)** in de aanraakgeoptimaliseerde gebruikersinterface of de **S7** in de klassieke gebruikersinterface. De functionaliteit is identiek tussen beide gebruikersinterfaces.
 
 Als u veelvoudige configuraties hebt, toont de Experience Manager door gebrek [standaardconfiguratie](/help/sites-administering/scene7.md#configuring-a-default-configuration). U kunt verschillende configuraties rechtstreeks selecteren in de Dynamic Media Classic-inhoudbrowser (Scene7) in het keuzemenu.
 
@@ -359,7 +359,7 @@ Elementen worden standaard weergegeven op bestandsnaam. U kunt resultaten echter
 
 ### Zoeken naar Dynamic Media Classic (Scene7)-elementen met de inhoudbrowser {#searching-for-scene-assets-with-the-content-browser}
 
-Het zoeken naar Dynamic Media Classic (Scene7)-elementen lijkt op het zoeken naar Experience Managers. De uitzondering is dat wanneer u zoekt, u eigenlijk een verre mening van de activa in het systeem van Dynamic Media Classic (Scene7) ziet, eerder dan hen direct in Experience Manager in te voeren.
+Het zoeken naar Dynamic Media Classic (Scene7)-elementen lijkt op het zoeken naar Experience Manager-elementen. De uitzondering is dat wanneer u zoekt, u eigenlijk een verre mening van de activa in het systeem van Dynamic Media Classic (Scene7) ziet, eerder dan hen direct in Experience Manager in te voeren.
 
 U kunt zowel de klassieke interface als de interface met geoptimaliseerde aanrakingen gebruiken om elementen weer te geven en te zoeken. Afhankelijk van de interface, is hoe u zoekt lichtjes verschillend.
 
@@ -381,11 +381,11 @@ Standaard zoekt de Experience Manager naar de geselecteerde map en naar alle sub
 
 ![chlimage_1-67](assets/chlimage_1-67.png)
 
-**Configuratie** - Als u meer dan één Dynamic Media Classic (Scene7) configuratie in Cloud Services hebt bepaald, kunt u het hier selecteren. Hierdoor wordt de map gewijzigd op basis van de configuratie die u hebt gekozen.
+**Configuratie** - Als u meer dan één Dynamic Media Classic (Scene7) configuratie in Cloud Servicen hebt bepaald, kunt u het hier selecteren. Hierdoor wordt de map gewijzigd op basis van de gekozen configuratie.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-**Type element** - In de Dynamic Media Classic (Scene7)-browser kunt u de resultaten filteren en de volgende items opnemen: afbeeldingen, sjablonen, video&#39;s en adaptieve videosets. Als u geen elementtype selecteert, zoekt Experience Manager standaard naar alle elementtypen.
+**Type element** - In de Dynamic Media Classic (Scene7)-browser kunt u de resultaten filteren en de volgende opties opnemen: afbeeldingen, sjablonen, video&#39;s en adaptieve videosets. Als u geen elementtype selecteert, zoekt Experience Manager standaard naar alle elementtypen.
 
 ![chlimage_1-69](assets/chlimage_1-69.png)
 
@@ -397,6 +397,6 @@ Standaard zoekt de Experience Manager naar de geselecteerde map en naar alle sub
 >* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt Experience Manager de submappen niet.
 >
 
-**Status publiceren** - U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus: Niet gepubliceerd of gepubliceerd. Als u geen publicatiestatus selecteert, zoekt de Experience Manager standaard naar alle publicatiestatussen.
+**Status publiceren** - U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus: Niet gepubliceerd of Gepubliceerd. Als u geen publicatiestatus selecteert, zoekt de Experience Manager standaard naar alle publicatiestatussen.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)

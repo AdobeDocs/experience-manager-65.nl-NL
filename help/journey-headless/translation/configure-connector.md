@@ -2,9 +2,9 @@
 title: De vertaalintegratie configureren
 description: Leer hoe u verbinding AEM maken met een vertaalservice.
 exl-id: a1a4b1ca-d353-46e2-a992-f38be6be338e
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1162'
+source-wordcount: '1159'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Nadat het schakelaarpakket voor uw aangewezen vertaaldienst wordt geïnstalleerd
 * Of het vertalen van mensen of machines moet worden uitgevoerd
 * Of andere inhoud die aan het inhoudsfragment is gekoppeld, zoals tags, moet worden vertaald
 
-Een nieuwe vertaalconfiguratie maken:
+Een vertaalconfiguratie maken:
 
 1. Klik of tik op **Gereedschappen** -> **Cloud Servicen** -> **Cloud Servicen voor vertaling**.
 1. Navigeer naar de plaats waar u de configuratie in uw inhoudsstructuur wilt maken. Dit is vaak gebaseerd op een bepaald project of kan globaal zijn.
@@ -78,7 +78,7 @@ Een nieuwe vertaalconfiguratie maken:
 
 1. Geef de volgende informatie op in de velden en klik of tik op **Maken**.
    1. Selecteren **Configuratietype** in de vervolgkeuzelijst. Selecteren **Translation Integration** in de lijst.
-   1. Voer een **Titel** voor uw configuratie. De **Titel** identificeert de configuratie in de **Cloud Servicen** console en in drop-down lijsten van het paginabezit.
+   1. Voer een **Titel** voor uw configuratie. De **Titel** identificeert de configuratie in de **Cloud Servicen** console en in de drop-down lijsten van het paginabezit.
    1. Typ desgewenst een **Naam** om te gebruiken voor het gegevensopslagknooppunt dat de configuratie opslaat.
 
    ![Vertaalconfiguratie maken](assets/create-translation-configuration.png)

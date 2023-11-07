@@ -8,9 +8,9 @@ content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 feature: PDF Generator
 exl-id: 1a6640cc-22ef-41d5-a0c6-7a2c2dabcef1
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5880'
+source-wordcount: '5879'
 ht-degree: 0%
 
 ---
@@ -188,7 +188,7 @@ Schakel deze opties in om op te geven hoe de inhoud moet worden weergegeven, hoe
 
 **Pagina-indeling:** Selecteer het type pagina-indeling voor het PDF-document.
 
-**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardvergroting voor Acrobat gebruikt.
+**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardvergroting van Acrobat gebruikt.
 
 **Openen naar paginanummer:** Geef het paginanummer op waarop de PDF wordt geopend.
 

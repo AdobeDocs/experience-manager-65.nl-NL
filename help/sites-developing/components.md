@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 exl-id: 9e30c969-2692-4380-943a-b022ee900ce8
-source-git-commit: b886844dc80482ae4aae5fc7ce09e466efecc3bd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -40,13 +40,13 @@ Omdat componenten modulair zijn, kunt u:
 * Ontwikkel een nieuwe component op uw lokale instantie.
 * Implementeer deze in de testomgeving.
 * Implementeer deze in uw live ontwerpomgeving, waar auteurs en/of beheerders inhoud kunnen toevoegen en configureren.
-* Implementeer deze in uw live publicatieomgeving(en), waar ze worden gebruikt om inhoud te renderen voor bezoekers van uw website. Bepaalde componenten, bijvoorbeeld voor Communities, accepteren ook invoer van uw gebruikers.
+* Implementeer deze in uw live publicatieomgeving(en), waar ze worden gebruikt om inhoud te renderen voor bezoekers van uw website. Bepaalde componenten, bijvoorbeeld, voor de Gemeenschappen, aanvaarden ook input van uw gebruikers.
 
 Elke AEM component:
 
 * Is een middeltype.
 * Is een inzameling van manuscripten die een specifieke functie volledig realiseren.
-* Kan werken in *isolatie*, ofwel in AEM of een portaal.
+* Kan werken in *isolatie*, dat wil zeggen in AEM of een portaal.
 
 ## Buiten-de-box Componenten binnen AEM {#out-of-the-box-components-within-aem}
 
@@ -62,7 +62,7 @@ De geleverde onderdelen en het gebruik ervan binnen de [voorbeeld weergeven.Hand
 
 ### Basiscomponenten en basiscomponenten {#core-components-and-foundation-components}
 
-Er zijn twee reeksen van Adobe-Geleverde AEM beschikbare componenten:
+Er zijn twee reeksen Adobe-Geleverde AEM beschikbare componenten:
 
 * [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
 * [Elementaire componenten](/help/sites-authoring/default-components-foundation.md)
@@ -98,10 +98,10 @@ U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagpl
 De volgende pagina&#39;s verstrekken meer gedetailleerde informatie over het ontwikkelen van deze-en ander-componenten:
 
 * [Componenten AEM - De basisbeginselen](/help/sites-developing/components-basics.md)
-* [AEM ontwikkelen](/help/sites-developing/developing-components.md)
+* [Ontwikkelen AEM componenten](/help/sites-developing/developing-components.md)
 * [Ontwikkelen AEM componenten - Codevoorbeelden](/help/sites-developing/developing-components-samples.md)
 * [Meerdere lokale editors configureren](/help/sites-developing/multiple-inplace-editors.md)
-* [Ontwerpmodus](/help/sites-developing/developer-mode.md)
+* [Modus voor ontwikkelaars](/help/sites-developing/developer-mode.md)
 * [Uw gebruikersinterface testen](/help/sites-developing/hobbes.md)
 * [Componenten voor inhoudsfragmenten](/help/sites-developing/components-content-fragments.md)
 * [Pagina-informatie ophalen in JSON-indeling](/help/sites-developing/pageinfo.md)

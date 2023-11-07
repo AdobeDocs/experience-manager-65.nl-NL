@@ -1,18 +1,14 @@
 ---
 title: Configuratie Microsoft Dynamics OData
-seo-title: Microsoft Dynamics ODtata configuration
-description: Gebruik, integreer en werk met de online en in-gebouw diensten van de Dynamica van Microsoft door het model van vormgegevens.
-seo-description: Learn how to leverage integrate and work with online and on-premises Microsoft Dynamics services through form data model.
-uuid: 37e59633-484b-4a20-808d-2a0bc0d336cc
+description: Leer gebruiken, integreren, en werken met online en op-gebouw de diensten van de Dynamica van Microsoft door vorm gegevensmodel.
 topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 627507f5-1ffc-48f8-8cc9-5dbc5e409ae3
 docset: aem65
 feature: Form Data Model
 exl-id: 90cc9452-e107-4e57-80a3-f44f0bde132e
-source-git-commit: 5ca6c5abeb5ed09d8929d1986aa24c1416e0cc06
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '1218'
 ht-degree: 0%
 
 ---
@@ -28,11 +24,11 @@ ht-degree: 0%
 
 Microsoft Dynamics is een ERP-software (Customer Relationship Management) en Enterprise Resource Planning (Enterprise Resource Planning) die bedrijfsoplossingen biedt voor het maken en beheren van klantaccounts, contactpersonen, leads, kansen en gevallen. [AEM Forms-gegevensintegratie](../../forms/using/data-integration.md) biedt een OData-cloudserviceconfiguratie om Forms te integreren met zowel de online server als de server voor Microsoft Dynamics op locatie. Hiermee kunt u een formuliergegevensmodel maken op basis van de entiteiten, kenmerken en services die zijn gedefinieerd in de service Microsoft Dynamics. Met het gegevensmodel van het formulier kunt u adaptieve formulieren maken die interageren met de Microsoft Dynamics-server om bedrijfsworkflows mogelijk te maken. Bijvoorbeeld:
 
-* Query uitvoeren op Microsoft Dynamics-server voor gegevens en aangepaste formulieren vooraf invullen
+* Query Microsoft Dynamics-server voor gegevens en aangepaste formulieren vooraf invullen
 * Gegevens naar Microsoft Dynamics schrijven bij het verzenden van aangepaste formulieren
 * Gegevens schrijven in Microsoft Dynamics via aangepaste entiteiten die zijn gedefinieerd in het formuliergegevensmodel en omgekeerd
 
-Het AEM Forms-add-on-pakket bevat ook een referentie OData-configuratie die u kunt gebruiken om Microsoft Dynamics snel met AEM Forms te integreren.
+Het AEM Forms-add-on-pakket bevat ook een referentie OData-configuratie waarmee u Microsoft Dynamics snel kunt integreren met AEM Forms.
 
 Wanneer het pakket is geïnstalleerd, zijn de volgende entiteiten en services beschikbaar op uw AEM Forms-exemplaar:
 
@@ -101,7 +97,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    `Add-AdfsClient -ClientId "<Client-ID>" -Name "<name>" -RedirectUri "<redirect-uri>" -GenerateClientSecret`
 
-   Waar:
+   Waarbij:
 
    * `Client-ID` is een cliëntidentiteitskaart u het gebruiken van om het even welke generator kunt produceren GUID.
    * `redirect-uri` is de URL naar de Microsoft Dynamics OData cloud service op AEM Forms. De standaardcloudservice die wordt geïnstalleerd met het AEM Forms-pakket, wordt geïmplementeerd op de volgende URL:
@@ -111,7 +107,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    `Grant-AdfsApplicationPermission -ClientRoleIdentifier "<Client-ID>" -ServerRoleIdentifier <resource> -ScopeNames openid`
 
-   Waar:
+   Waarbij:
 
    * `resource` is de URL van de Microsoft Dynamics-organisatie.
 
@@ -119,7 +115,7 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
 ## Cloudservice configureren voor uw Microsoft Dynamics-service {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-De **MS Dynamics OData Cloud Service (OData Service)** configuratie komt met standaard configuratie OData. Ga als volgt te werk om de instantie te configureren voor verbinding met uw Microsoft Dynamics.
+De **MS Dynamics OData Cloud Service (OData Service)** de configuratie komt met standaard configuratie OData. Ga als volgt te werk om de instantie te configureren voor verbinding met uw Microsoft Dynamics.
 
 1. Navigeren naar **[!UICONTROL Tools > Cloud Services > Data Sources]** en tik op de knop `global` configuratiemap.
 1. Selecteren **MS Dynamics OData Cloud Service (OData Service)** configuratie en tikken **[!UICONTROL Properties]**. Het dialoogvenster voor de configuratie-eigenschap van de cloudservice wordt geopend.
@@ -128,7 +124,7 @@ De **MS Dynamics OData Cloud Service (OData Service)** configuratie komt met sta
 
    1. Voer de waarde in voor de **Serviceruimte** veld. Ga naar de instantie Dynamics en navigeer naar **Bronnen voor ontwikkelaars** om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld https://&lt;tenant-name>/api/data/v9.1/
 
-   1. De standaardwaarden in het dialoogvenster **Client-id**(ook aangeduid als **Toepassings-id**), **Clientgeheim**, **OAuth URL**, **Token-URL vernieuwen**, **Toegang tot token-URL**, en **Resource** velden met waarden uit de configuratie van de Microsoft Dynamics. Het is verplicht de URL van de dynamische instantie op te geven in het dialoogvenster **Resource** veld voor het configureren van Microsoft Dynamics met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. De standaardwaarden vervangen in het dialoogvenster **Client-id**(ook aangeduid als **Toepassings-id**), **Clientgeheim**, **OAuth URL**, **Token-URL vernieuwen**, **Toegang tot token-URL**, en **Bron** velden met waarden uit de configuratie van de Microsoft Dynamics. Het is verplicht de URL van de dynamische instantie op te geven in het dialoogvenster **Bron** veld voor het configureren van Microsoft Dynamics met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld: [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
 
    1. Opgeven **openhartig** in de **Autorisatiebereik** veld voor autorisatieproces op Microsoft Dynamics.
 

@@ -2,9 +2,9 @@
 title: Aangepaste HTTP-headers
 description: Leer hoe te om de Kopballen van douaneHTTP in de Handel van Adobe Experience Manager te vormen.
 exl-id: 834aadac-c3be-4e7a-a3cb-349608810b40
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -26,8 +26,8 @@ Om de kopballen van douaneHTTP te vormen, moet men hen eerst bepalen. De aangepa
 
 U kunt de waarden van de kopballen van HTTP in de pagina van de Configuratie van de Cloud Service voor uw project vormen:
 
-1. Ga naar de configuratiepagina van de Cloud Service in Hulpmiddelen -> Clouden Services -> CIF Configuratie
-1. Een bestaande configuratie openen of een nieuwe configuratie maken
+1. Ga naar de de configuratiepagina van de Cloud Service in Hulpmiddelen > Clouden Services > CIF Configuratie.
+1. Open een bestaande configuratie of maak een configuratie.
 1. Ga naar het tabblad &quot;Geavanceerd&quot; en zoek het multiveld &quot;Aangepaste HTTP-headers&quot;. U kunt de eerder gedefinieerde kopteksten selecteren en er waarden aan toewijzen.
 
 De componenten die de bovenstaande cloudserviceconfiguratie gebruiken, verzenden deze HTTP-headers met elke GraphQL-aanvraag.

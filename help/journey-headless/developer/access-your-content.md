@@ -2,9 +2,9 @@
 title: Toegang tot uw inhoud via AEM levering-API's
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u GraphQL-query's kunt gebruiken om toegang te krijgen tot de inhoud van Content Fragments.
 exl-id: 44f85d00-a958-470a-8a6e-e2ae1580525a
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1332'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ De fragmentmodellen worden gebruikt:
 
 ### Waar kan ik uw query&#39;s testen? {#where-to-test-your-queries}
 
-De vragen kunnen in [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md), bijvoorbeeld op:
+De vragen kunnen in [GraphiQL-interface](/help/sites-developing/headless/graphql-api/graphiql-ide.md), bijvoorbeeld bij:
 
 * `http://localhost:4502/aem/graphiql.html`
 

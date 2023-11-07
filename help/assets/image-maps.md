@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Management
 exl-id: 77da4917-47ce-4f2e-b062-73cee312a7ea
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '245'
 ht-degree: 0%
@@ -18,11 +18,11 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
 
 1. Voer een van de volgende handelingen uit om te openen **[!UICONTROL In-place Image Editor]**:
 
-   * Klik met Snelle handelingen op **[!UICONTROL Edit]** die wordt weergegeven op een element in het dialoogvenster **[!UICONTROL Card]** weergeven. Selecteer het element in de lijstweergave en klik op **[!UICONTROL Edit]** in de werkbalk.
+   * Klik met Snelle handelingen op **[!UICONTROL Edit]** die wordt weergegeven op een element in de **[!UICONTROL Card]** weergeven. Selecteer het element in de lijstweergave en klik op **[!UICONTROL Edit]** in de werkbalk.
 
-      >[!NOTE]
-      >
-      >Snelle handelingen zijn niet beschikbaar in het dialoogvenster **[!UICONTROL List]** weergeven.
+     >[!NOTE]
+     >
+     >Snelle handelingen zijn niet beschikbaar in het dialoogvenster **[!UICONTROL List]** weergeven.
 
    * In de **[!UICONTROL Card]** of **[!UICONTROL List]** selecteert u het element en klikt u op **[!UICONTROL Edit]** op de werkbalk.
    * Klikken **[!UICONTROL Edit]** op de elementpagina.
@@ -36,7 +36,7 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Klikken **[!UICONTROL Confirm]** en klik vervolgens op **[!UICONTROL Finish]** ![Selecteer controle voltooid](assets/do-not-localize/check-ok-done-icon.png) op de werkbalk om de wijzigingen op te slaan.
+1. Klikken **[!UICONTROL Confirm]** en klik vervolgens op **[!UICONTROL Finish]** ![Selecteer controle voltooid](assets/do-not-localize/check-ok-done-icon.png) van de toolbar om de veranderingen te bewaren.
 
    Als u de afbeelding met hyperlinks wilt verwijderen, klikt u op de hotspot en klikt u op **[!UICONTROL Delete]** ![delete](assets/do-not-localize/delete-solid-line.png).
 

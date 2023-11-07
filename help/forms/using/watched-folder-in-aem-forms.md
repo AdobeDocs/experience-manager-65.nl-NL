@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '7148'
+source-wordcount: '7146'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
 
 >[!NOTE]
 >
->Zelfs wanneer een input duidelijk als getimed uit gebruikend dit mechanisme wordt gemerkt, kan het nog op de achtergrond verwerken maar enkel meer tijd nemen dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.
+>Zelfs wanneer een input duidelijk als getimed uit gebruikend dit mechanisme wordt gemerkt, kan het nog op de achtergrond verwerken maar enkel meer tijd nemen dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om) wordt geactiveerd, dan zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.
 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, standaard true):** Hiermee wordt aangegeven of het verloopmechanisme alleen moet worden geactiveerd wanneer de controlemap wordt vertraagd. Het mechanisme is relevanter voor vertraagde controlemappen aangezien een klein aantal dossiers die zich in een onverwerkte staat (wegens intermitterende baan/werkschemafouten) rond blijven de mogelijkheid hebben om verwerking voor de volledige partij te onderdrukken wanneer het vertragen wordt toegelaten. Als deze eigenschap wordt ingesteld op true (de standaardwaarde), wordt het verloopmechanisme niet geactiveerd voor gecontroleerde mappen die niet worden vertraagd. Als de eigenschap false blijft, wordt het mechanisme altijd geactiveerd zolang de eigenschap stageFileExpirationDuration een positief getal is.
 

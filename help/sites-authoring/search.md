@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 4ec15013-f7ab-44d6-8053-ed28b14f95e2
 docset: aem65
 exl-id: dd65b308-c449-4f64-9f46-0797b922910f
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '506'
+source-wordcount: '507'
 ht-degree: 6%
 
 ---
@@ -33,7 +33,7 @@ Zoeken is beschikbaar op de bovenste werkbalk:
 Met de zoekrail kunt u:
 
 * Zoeken naar een specifiek trefwoord, pad of tag.
-* Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte, enzovoort.
+* Filter volgens bronspecifieke criteria, zoals gewijzigde datums, paginastatus, bestandsgrootte enzovoort.
 * Definieer een [opgeslagen zoekopdracht](#saved-searches) - op basis van bovenstaande criteria.
 
 >[!NOTE]
@@ -53,9 +53,9 @@ U kunt als volgt uw bronnen zoeken en filteren:
    ![screen_shot_2018-03-23at101445](assets/screen_shot_2018-03-23at101445.png)
 
 1. Indien nodig kunt u het locatiefilter verwijderen (selecteer **X** op het filter dat u wilt verwijderen) om te zoeken in alle consoles/middeltypen.
-1. De resultaten zullen worden getoond, gegroepeerd volgens console en verwant middeltype.
+1. De resultaten worden getoond, gegroepeerd volgens console en verwant middeltype.
 
-   U kunt een specifieke bron selecteren (voor verdere actie) of naar beneden boren door het vereiste middeltype te selecteren, bijvoorbeeld **Alle sites weergeven**:
+   U kunt een bepaalde bron selecteren (voor verdere actie) of naar beneden boren door het vereiste type resource te selecteren, bijvoorbeeld **Alle sites weergeven**:
 
    ![screen-shot_2019-03-05at101900](assets/screen-shot_2019-03-05at101900.png)
 

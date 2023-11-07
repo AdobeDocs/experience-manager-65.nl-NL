@@ -1,18 +1,14 @@
 ---
 title: Aangepaste AEM paginasjabloon maken met Adobe Campaign-formuliercomponenten
-seo-title: Creating Custom AEM Page Template with Adobe Campaign Form Components
 description: Een aangepaste paginasjabloon maken waarin Adobe Campaign-formuliercomponenten worden gebruikt
-seo-description: Build a custom page template that uses Adobe Campaign Form components
-uuid: 8162ace2-b661-4c39-b0fb-288e1c035b9c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: c3f6eed4-bbda-454a-88ce-c7f2041d4217
 exl-id: de5c634a-c0d7-4e69-b941-d2fbfe83117d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -23,7 +19,7 @@ Deze pagina legt uit hoe u een aangepaste paginasjabloon kunt maken dat [Adobe C
 
 >[!NOTE]
 >
->[E-mail- en formuliervoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van Geometrixx uit Pakket delen.
+>[E-mail- en formuliervoorbeelden zijn alleen beschikbaar in Geometrixx](/help/sites-developing/we-retail.md). Download voorbeeldinhoud van het Geometrixx van het Pakket Delen.
 
 Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formuliercomponenten, moet u het volgende doen:
 
@@ -38,7 +34,7 @@ Als u een aangepaste AEM paginasjabloon wilt maken met Adobe Campaign-formulierc
 
    ![chlimage_1-201](assets/chlimage_1-201.png)
 
-1. **ClientContext-instellingen**
+1. **Instellingen ClientContext**
 
    Wanneer u de montages van de clientcontext ( `/etc/designs/geometrixx-outdoors/jcr:content/page_campaign_profile`) u ziet de volgende instellingen:
 

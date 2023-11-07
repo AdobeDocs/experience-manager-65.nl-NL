@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
 exl-id: a07e51ca-fea0-4719-8071-1b7e805de2ae
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '9109'
+source-wordcount: '9095'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Er bevindt zich een bestand met de naam Loan.xdp in de FormsFolder. Als u dit fo
 >
 >Voor informatie over het maken van een Forms-toepassing met Workbench gaat u naar [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
-Het pad naar een bron in de AEM Forms-opslagplaats is:
+Het pad naar een resource in de AEM Forms-opslagplaats is:
 
 `Applications/Application-name/Application-version/Folder.../Filename`
 
@@ -50,7 +50,7 @@ De volgende waarden tonen enkele voorbeelden van URI-waarden:
 >
 >U kunt in de AEM Forms Repository bladeren met een webbrowser. Voer de volgende URL in een webbrowser in om door de gegevensopslagruimte te bladeren `https://[server name]:[server port]/repository`. U kunt via een webbrowser controleren welke snelstartresultaten worden gekoppeld aan de sectie Werken met AEM Forms Repository. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser. (Zie [Snel starten (SOAP-modus): een bron schrijven met de Java API](/help/forms/developing/repository-service-api-quick-starts.md#quick-start-soap-mode-writing-a-resource-using-the-java-api).)
 
-De API van de dataopslag biedt een aantal bewerkingen die u kunt gebruiken om gegevens op te slaan en op te halen uit de dataopslag. Bijvoorbeeld, kunt u een lijst van middelen verkrijgen of specifieke middelen terugwinnen die in de bewaarplaats worden opgeslagen wanneer een middel als deel van de verwerking van een toepassing nodig is.
+De API van de dataopslag biedt verschillende bewerkingen die u kunt gebruiken om gegevens op te slaan en op te halen uit de dataopslag. Bijvoorbeeld, kunt u een lijst van middelen verkrijgen of specifieke middelen terugwinnen die in de bewaarplaats worden opgeslagen wanneer een middel als deel van de verwerking van een toepassing nodig is.
 
 >[!NOTE]
 >
@@ -305,7 +305,7 @@ Schrijf een bron met behulp van de Repository Service API (Java):
 
 1. De bron naar de doelmap schrijven
 
-   De `ResourceRepositoryClient` object `writeResource` methode en geef in URI van de omslag, evenals door `Resource` object.
+   De `ResourceRepositoryClient` object `writeResource` en geeft u de URI van de map en de `Resource` object.
 
 **Zie ook**
 
@@ -354,7 +354,7 @@ Schrijf een bron met behulp van de Repository Service API (webservice):
 
 1. De bron naar de doelmap schrijven
 
-   De `RepositoryServiceService` object `writeResource` methode en geef in URI van de omslag, evenals door `Resource` object. Voldoende `null` voor de andere twee parameters.
+   De `RepositoryServiceService` object `writeResource` en geeft u de URI van de map en de `Resource` object. Voldoende `null` voor de andere twee parameters.
 
 **Zie ook**
 
@@ -542,7 +542,7 @@ Een bron lezen met de API voor opslagplaats (Java):
 
 1. De URI opgeven van de te lezen bron
 
-   Geef een tekenreekswaarde op die de URI vertegenwoordigt van de bron die moet worden opgehaald. Bijvoorbeeld, veronderstellend wordt het middel genoemd *testResource* die zich in een map met de naam *testFolder*, specificeren `/testFolder/testResource`.
+   Geef een tekenreekswaarde op die de URI vertegenwoordigt van de bron die moet worden opgehaald. Bijvoorbeeld, veronderstellend wordt het middel genoemd *testResource* in een map met de naam *testFolder*, specificeren `/testFolder/testResource`.
 
 1. De bron lezen
 

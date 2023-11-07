@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '4734'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
@@ -68,7 +68,7 @@ Wanneer u uw AEM project hebt ingesteld, definieert u een strategie voor het ont
    * **XFA-formuliersjabloon**: Het is een ideaal formuliermodel als u investeert in op XFA gebaseerde HTML5-formulieren. Dit biedt een directe manier om uw XFA-formulieren om te zetten in adaptieve formulieren. Bestaande XFA-regels blijven behouden in de bijbehorende adaptieve formulieren. De resulterende adaptieve formulieren ondersteunen XFA-constructies, zoals validaties, gebeurtenissen, eigenschappen en patronen.
    * **Formuliergegevensmodel**: Het is een voorkeursformuliermodel als u uw back-endsystemen, zoals databases, webservices en AEM gebruikersprofiel, wilt integreren om adaptieve formulieren vooraf in te vullen en verzonden formuliergegevens terug te schrijven naar de back-endsystemen. Met een formuliergegevensmodeleditor kunt u entiteiten en services definiëren en configureren in een formuliergegevensmodel waarmee u adaptieve formulieren kunt maken. Zie voor meer informatie [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md).
 
-Het is belangrijk om zorgvuldig het gegevensmodel te kiezen dat niet alleen aan uw vereisten voldoet maar uw bestaande investeringen in XFA en XSD activa uitbreidt, als om het even welk. Het wordt aanbevolen XSD-model te gebruiken om formuliersjablonen te maken, omdat de gegenereerde XML gegevens bevat volgens de XPATH-definitie in het schema. Het gebruik van XSD-model als standaardkeuze voor het formuliergegevensmodel helpt ook omdat het formulierontwerp loskoppelt van een back-end systeem dat gegevens verwerkt en verbruikt, en het verbetert de prestaties van het formulier door een-op-een-toewijzing van formuliervelden. BindRef van het veld kan ook de XPATH van de gegevenswaarde in XML worden gemaakt.
+Het is belangrijk om zorgvuldig het gegevensmodel te kiezen dat niet alleen aan uw vereisten voldoet maar uw bestaande investeringen in XFA en XSD activa uitbreidt, als om het even welk. Gebruik het XSD-model om formuliersjablonen te maken, omdat de gegenereerde XML gegevens bevat volgens de XPATH die door het schema wordt gedefinieerd. Het gebruik van XSD-model als standaardkeuze voor het formuliergegevensmodel helpt ook omdat het formulierontwerp loskoppelt van een back-end systeem dat gegevens verwerkt en verbruikt, en het verbetert de prestaties van het formulier door een-op-een-toewijzing van formuliervelden. BindRef van het veld kan ook de XPATH van de gegevenswaarde in XML worden gemaakt.
 
 Zie voor meer informatie [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md).
 
@@ -187,7 +187,7 @@ De redacteur van de regel verstrekt een visuele redacteur en een coderedacteur v
 
 ### Werken met thema&#39;s {#working-with-themes}
 
-Met Aangepast voor thema&#39;s kunt u herbruikbare stijlen maken die op verschillende formulieren kunnen worden toegepast voor een consistente vormgeving. U wordt aangeraden thema&#39;s te gebruiken om stijlen voor formuliercomponenten en deelvensters te definiëren. De beste praktijken rond thema&#39;s zijn als volgt:
+Met Aangepast voor thema&#39;s kunt u herbruikbare stijlen maken die op verschillende formulieren kunnen worden toegepast voor een consistente vormgeving. Met Thema&#39;s kunt u stijlen definiëren voor formuliercomponenten en deelvensters. De beste praktijken rond thema&#39;s zijn als volgt:
 
 * Gebruik de elementenbibliotheek voor een snelle toepassing van tekststijlen, achtergrond en afbeeldingen. Wanneer een stijl wordt toegevoegd aan de elementenbibliotheek, is deze beschikbaar voor andere thema&#39;s en in de stijlmodus van de formuliereditor.
 * Algemene instellingen zoals lettertype en pagina-achtergrond toepassen met behulp van een kiezer op paginaniveau.
@@ -241,7 +241,7 @@ Voor adaptieve formulieren zijn acties verzenden vereist om door de gebruiker op
 * U kunt een aangepaste verzendactie schrijven als de standaardverzendacties niet voldoen aan uw gebruiksscenario. Zie voor meer informatie [Aangepaste verzendactie schrijven voor adaptieve formulieren](/help/forms/using/custom-submit-action-form.md).
 * Voeg validaties aan de serverzijde toe om te voorkomen dat er ongeldige gegevens worden verzonden.
 
-U kunt de multi-sign ervaring van Adobe Sign in adaptieve vormen gebruiken. Houd rekening met het volgende wanneer u Adobe Sign in adaptieve formulieren configureert. Zie voor meer informatie [Adobe Sign in een adaptieve vorm gebruiken](/help/forms/using/working-with-adobe-sign.md).
+U kunt multi-sign ervaring van Adobe Sign in adaptieve vormen gebruiken. Houd rekening met het volgende wanneer u Adobe Sign in adaptieve formulieren configureert. Zie voor meer informatie [Adobe Sign in een adaptieve vorm gebruiken](/help/forms/using/working-with-adobe-sign.md).
 
 * Het adaptieve formulier dat geschikt is voor Adobe Sign, wordt alleen verzonden nadat alle ondertekenaars het formulier hebben ondertekend. Forms wordt weergegeven in de status In afwachting van ondertekening totdat het formulier door alle ondertekenaars is ondertekend.
 * U kunt ondertekeningservaring in formulieren configureren of ondertekenaars omleiden naar een ondertekeningspagina bij verzending.

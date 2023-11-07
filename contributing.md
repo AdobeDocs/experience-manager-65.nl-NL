@@ -1,7 +1,7 @@
 ---
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '522'
+source-wordcount: '516'
 ht-degree: 2%
 
 ---
@@ -54,7 +54,7 @@ Bekijk de volgende video voor een snel overzicht van hoe u problemen kunt maken 
 
 Als u een medewerker van de Adobe bent en een bijdrage hebt, gebruikt u `AdobeDocs` org in het bedrijfsgat.
 
-Uiteraard zijn wij blij met elke bijdrage en zullen wij uw bijdrage herzien als deze via de openbare gegevensbank wordt geleverd, maar het is gemakkelijker om verzoeken van Adobe werknemers te verwerken en sneller in de bedrijfsrapportages te worden goedgekeurd. Zorg ervoor dat de bedrijfseigen informatie alleen wordt besproken in het bedrijfsantwoord.
+Wij zijn blij met elke bijdrage en zullen uw bijdrage beoordelen als deze via de openbare gegevensopslagruimte wordt ingediend. Het is echter gemakkelijker om verzoeken van Adobe werknemers te verwerken en ze kunnen sneller worden goedgekeurd in de bedrijfsrapportering. Zorg ervoor dat om het even welke merkgebonden informatie slechts op de collectieve repo wordt besproken.
 
 ## Aanvullende informatie
 

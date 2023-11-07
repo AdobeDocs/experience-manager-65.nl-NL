@@ -2,7 +2,7 @@
 title: Edge Delivery Services gebruiken
 description: Edge Delivery Services gebruiken (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 6a1d96125ca6647770718fff74ec21afb5c91a68
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '609'
 ht-degree: 1%
@@ -28,7 +28,7 @@ Met Edge Delivery is het publiceren van inhoud naadloos, ongeacht uw inhoudsbron
 
 ## Edge Delivery Services en GitHub {#github-edge}
 
-De hefboomwerkingen van de Levering van de rand GitHub zodat kunnen de klanten code van hun bewaarplaats direct beheren en opstellen GitHub. U kunt bijvoorbeeld inhoud schrijven in Google Docs of Microsoft Word en de functionaliteit van uw site ontwikkelen met CSS en JavaScript in GitHub. Er worden automatisch websites gemaakt voor elk van uw vertakkingen, van de voorvertoning van de inhoud tot de productie. Elk middel dat u in uw bewaarplaats GitHub zet is beschikbaar op uw website zonder een bouwstijlproces.
+De Levering van de rand gebruikt GitHub zodat kunnen de klanten code van hun bewaarplaats direct beheren en opstellen GitHub. U kunt bijvoorbeeld inhoud schrijven in Google Docs of Microsoft Word en de functionaliteit van uw site ontwikkelen met CSS en JavaScript in GitHub. Er worden automatisch websites gemaakt voor elk van uw vertakkingen, van de voorvertoning van de inhoud tot de productie. Elk middel dat u in uw bewaarplaats GitHub zet is beschikbaar op uw website zonder een bouwstijlproces.
 
 ## De Sidekick gebruiken {#using-sidekick}
 

@@ -7,9 +7,9 @@ topic-tags: platform
 content-type: reference
 docset: aem65
 exl-id: 971d6c25-1fbe-4c07-944e-be6b97a59922
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ In Adobe Experience Manager (AEM) **ExternalAlizer** is de dienst OSGI die u pro
 
 Omdat een instantie zijn uiterlijk zichtbare URL niet kan kennen als het achter een Weblaag loopt, en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
-Deze pagina verklaart hoe te om te vormen **ExternalAlizer** en hoe deze te gebruiken. Raadpleeg voor meer informatie de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
+Deze pagina verklaart hoe te om te vormen **ExternalAlizer** en hoe deze te gebruiken. Zie voor meer informatie de [Javadocs](https://developer.adobe.com/experience-manager/reference-materials/6-5/javadoc/com/day/cq/commons/Externalizer.html).
 
 ## De service ExternalAlizer configureren {#configuring-the-externalizer-service}
 

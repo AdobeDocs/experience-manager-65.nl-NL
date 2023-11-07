@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 role: Developer
 exl-id: 82f0b6c1-ca0c-48c7-b7f6-b54704ac0830
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '311'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
@@ -25,13 +25,13 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Acrobat Read
 
 [Gebruiksrechten verwijderen uit PDF-documenten](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Crediteringsgegevens ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
+[Snel starten (SOAP-modus): referentie-informatie ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
 AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het Forms server operating system. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
@@ -62,13 +62,13 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-d
      * 18. xbean.jar (required for SOAP mode) 
      * 19. xercesImpl.jar (required for SOAP mode) 
      * 
-     * These JAR files are located in the following path: 
+     * These JAR files are in the following path: 
      * <install directory>/sdk/client-libs/common 
      * 
      * 
      * <install directory>/jboss/bin/client 
      * 
-     * SOAP required JAR files are located in the following path: 
+     * SOAP required JAR files are in the following path: 
      * <install directory>/sdk/client-libs/thirdparty 
      * 
      * If you want to invoke a remote forms server instance and there is a 
@@ -132,7 +132,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-d
              null, 
              reOptions);  
           
-           //Create a new PDF file that represents the rights-enabled PDF document 
+           //Create a PDF file that represents the rights-enabled PDF document 
            File resultFile = new File("C:\\Adobe\LoanUsageRights.pdf");  
            rightsEnabledPDF.copyToFile(resultFile); 
                           
@@ -145,7 +145,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-d
   
 ```
 
-## Snel starten (SOAP-modus): Gebruiksrechten verwijderen uit een PDF-document met de Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): gebruiksrechten verwijderen uit een PDF-document met de Java API {#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF-document waarvoor rechten zijn ingeschakeld met de naam *LoanUsageRights.pdf*. (Zie [Gebruiksrechten verwijderen uit PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
@@ -176,7 +176,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to  
      * your local development environment and then include the 3 JBoss JAR files in your class path 
      * 
-     * These JAR files are located in the following path: 
+     * These JAR files are in the following path: 
      * <install directory>/sdk/client-libs/common 
      * 
      * 
@@ -185,7 +185,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF
      * If you want to invoke a remote forms server instance and there is a 
      * firewall between the client application and the server, then it is  
      * recommended that you use the SOAP mode. When using the SOAP mode,  
-     * you have to include additional JAR files located in the following  
+     * you have to include additional JAR files in the following  
      * path 
      * <install directory>/sdk/client-libs/thirdparty 
      * 
@@ -245,7 +245,7 @@ In het volgende Java-codevoorbeeld worden gebruiksrechten verwijderd uit een PDF
  
 ```
 
-## Snel starten (SOAP-modus): Crediteringsgegevens ophalen met de Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
+## Snel starten (SOAP-modus): referentie-informatie ophalen met de Java API {#quick-start-soap-mode-retrieving-credential-information-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt informatie opgehaald over de referentie die wordt gebruikt om gebruiksrechten toe te passen op een PDF-document waarvoor rechten zijn ingeschakeld met de naam *LoanUsageRights.pdf*. (Zie [Referentiegegevens ophalen](/help/forms/developing/assigning-usage-rights.md).)
 
@@ -276,7 +276,7 @@ In het volgende Java-codevoorbeeld wordt informatie opgehaald over de referentie
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to  
      * your local development environment and then include the 3 JBoss JAR files in your class path 
      * 
-     * These JAR files are located in the following path: 
+     * These JAR files are in the following path: 
      * <install directory>/sdk/client-libs/common 
      * 
      * 
@@ -285,7 +285,7 @@ In het volgende Java-codevoorbeeld wordt informatie opgehaald over de referentie
      * If you want to invoke a remote forms server instance and there is a 
      * firewall between the client application and the server, then it is  
      * recommended that you use the SOAP mode. When using the SOAP mode,  
-     * you have to include additional JAR files located in the following  
+     * you have to include additional JAR files in the following  
      * path 
      * <install directory>/sdk/client-libs/thirdparty 
      * 

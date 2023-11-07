@@ -6,16 +6,16 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2713'
+source-wordcount: '2707'
 ht-degree: 0%
 
 ---
 
 # Het gereedschap VLT gebruiken {#how-to-use-the-vlt-tool}
 
-Het Jackrabbit FileVault-hulpprogramma (VLT) is een hulpprogramma dat is ontwikkeld door [De Apache Foundation](https://www.apache.org/) die de inhoud van een instantie Jackrabbit/AEM aan uw bestandssysteem toewijst. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, evenals configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
+Het Jackrabbit FileVault-hulpprogramma (VLT) is een hulpprogramma dat is ontwikkeld door [De Apache Foundation](https://www.apache.org/) die de inhoud van een instantie Jackrabbit/AEM aan uw bestandssysteem toewijst. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, en configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
 
 U voert het gereedschap VLT uit vanaf de opdrachtregel. In dit document wordt beschreven hoe u het gereedschap kunt gebruiken, inclusief hoe u aan de slag kunt en hoe u hulp kunt krijgen, en een lijst met alle [opdrachten](#vlt-commands) en beschikbaar [opties](#vlt-global-options).
 
@@ -781,7 +781,7 @@ De vault sync-service wordt gebruikt om inhoud in de opslagplaats te synchronise
 
 >[!NOTE]
 >
->De vault sync-service is een ontwikkelingsprogramma en het is zeer ontmoedigend om het op een productief systeem te gebruiken. Merk ook op dat de dienst slechts met het lokale filesystem kan synchroniseren en niet voor verre ontwikkeling kan worden gebruikt.
+>De vault sync-service is een ontwikkelingsprogramma en het is zeer ontmoedigend om het op een productief systeem te gebruiken. Bovendien kan de service alleen synchroniseren met het lokale bestandssysteem en kan deze niet worden gebruikt voor externe ontwikkeling.
 
 ### De service installeren met vlt {#installing-the-service-using-vlt}
 
@@ -854,7 +854,7 @@ Zodra de dienst in werking stelt kan het met de volgende parameters worden gevor
 >
 >De dienst kan met de console van het Web of a worden gevormd `sling:OsgiConfig` node (met de naam `com.day.jcr.sync.impl.VaultSyncServiceImpl`) in de opslagplaats.
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
+>Wanneer het werken met AEM, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
 
 #### Mapconfiguratie synchroniseren {#sync-folder-configuration}
 

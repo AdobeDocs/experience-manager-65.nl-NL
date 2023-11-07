@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2784'
+source-wordcount: '2793'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Inhoudsfragmentmodellen definiëren de structuur van een inhoudsfragment wanneer dit wordt gemaakt.
    * Een fragment verwijst naar het model. Wijzigingen in het model kunnen/zullen daarom van invloed zijn op afhankelijke fragmenten.
    * Modellen zijn opgebouwd uit gegevenstypen.
-   * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
+   * Functies om nieuwe variaties toe te voegen, enzovoort, moeten het fragment overeenkomstig bijwerken.
 
   >[!CAUTION]
   >
@@ -62,8 +62,8 @@ Afhankelijk van het type fragment worden ook modellen of sjablonen gebruikt:
    * Wordt gebruikt voor het definiëren van eenvoudige inhoudsfragmenten.
    * Sjablonen definiëren de (basis-, alleen-tekst) structuur van een inhoudsfragment wanneer dit wordt gemaakt.
    * De sjabloon wordt naar het fragment gekopieerd wanneer het wordt gemaakt. Verdere wijzigingen in de sjabloon worden dus niet weerspiegeld in bestaande fragmenten.
-   * Functies om nieuwe variaties toe te voegen, enz., moeten het fragment dienovereenkomstig bijwerken.
-   * [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md) op een andere manier te werken dan andere sjablonen in het AEM (bijvoorbeeld paginasjablonen, enz.). Daarom moeten zij afzonderlijk worden beschouwd.
+   * Functies om nieuwe variaties toe te voegen, enzovoort, moeten het fragment overeenkomstig bijwerken.
+   * [Sjablonen voor inhoudsfragmenten](/help/sites-developing/content-fragment-templates.md) werken op een andere manier dan andere sjablonen binnen het AEM ecosysteem (bijvoorbeeld paginasjablonen, enzovoort). Daarom moeten zij afzonderlijk worden beschouwd.
    * Wanneer gebaseerd op een malplaatje wordt het MIME type van de inhoud beheerd op de daadwerkelijke inhoud; dit betekent dat elk element en elke variatie een verschillend MIME type kunnen hebben.
 
 ### Integratie met middelen {#integration-with-assets}
@@ -72,7 +72,7 @@ CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 * Inhoudsfragmenten zijn elementen.
 * Ze gebruiken de bestaande functionaliteit Elementen.
-* Ze zijn volledig geïntegreerd met middelen (beheerconsoles, enz.).
+* Ze zijn volledig geïntegreerd met Elementen (beheerconsoles, enzovoort).
 
 #### Gestructureerde inhoudsfragmenten toewijzen aan elementen {#mapping-structured-content-fragments-to-assets}
 
@@ -138,7 +138,7 @@ Vanuit AEM pagina&#39;s kan naar inhoudsfragmenten worden verwezen, net als met 
 * Bovendien kunt u een reeks alinea&#39;s selecteren om de uitvoer te beperken. Deze alinea kan bijvoorbeeld worden gebruikt voor uitvoer met meerdere kolommen.
 * De component staat [tussenliggende inhoud](/help/sites-developing/components-content-fragments.md#in-between-content):
 
-   * Hier kunt u andere elementen (afbeeldingen, enz.) plaatsen tussen de alinea&#39;s van het fragment waarnaar wordt verwezen.
+   * Hier kunt u met de component andere elementen (afbeeldingen, enzovoort) tussen de alinea&#39;s van het fragment waarnaar wordt verwezen plaatsen.
    * Voor tussenliggende inhoud moet u:
 
       * Houd rekening met de mogelijkheid van instabiele verwijzingen. Tussen de inhoud (die bij het ontwerpen van een pagina wordt toegevoegd) bestaat geen vaste relatie met de alinea die naast de inhoud wordt geplaatst. Er wordt een nieuwe alinea (in de fragmenteditor van de inhoud) ingevoegd voordat de positie van de inliggende inhoud de relatieve positie kan verliezen
@@ -182,7 +182,7 @@ Er zijn nog enkele richtlijnen die u moet volgen om ervoor te zorgen dat de comp
 
 * Als de uitvoer van meerdere elementen wordt ondersteund (door `elementNames` om meerdere elementen op te geven), wordt de werkelijke weergavemodus gedefinieerd door de eigenschap `displayMode`:
 
-   * Als de waarde `singleText` (en er is slechts één geconfigureerd) wordt het element weergegeven als een tekst met tussenliggende inhoud, ondersteuning voor de layout, enz. Dit is de standaardinstelling voor fragmenten waarbij slechts één element wordt gerenderd.
+   * Als de waarde `singleText` (en er is slechts één gevormd element) dan wordt het element teruggegeven als tekst met inhoud tussen, lay-outsteun, etc. Dit is de standaardinstelling voor fragmenten waarbij slechts één element wordt gerenderd.
    * Anders wordt een veel eenvoudigere aanpak gebruikt (deze kan &#39;formulierweergave&#39; worden genoemd), waarbij geen tussenliggende inhoud wordt ondersteund en de fragmentinhoud &#39;zoals deze is&#39; wordt weergegeven.
 
 * Als het fragment voor `displayMode` == `singleText` (impliciet of expliciet) worden de volgende aanvullende eigenschappen toegepast:
@@ -254,7 +254,7 @@ De volgende drie interfaces kunnen als ingangspunten dienen:
 
 * **Fragmentsjabloon** ([FragmentTemplate](https://www.adobe.io/experience-manager/reference-materials/6-5/javadoc/com/adobe/cq/dam/cfm/FragmentTemplate.html))
 
-  Gebruiken `FragmentTemplate.createFragment()` voor het maken van een nieuw fragment.
+  Gebruiken `FragmentTemplate.createFragment()` voor het maken van een fragment.
 
   ```
   Resource templateOrModelRsc = resourceResolver.getResource("...");
@@ -492,9 +492,9 @@ if (fragmentResource != null) {
 }
 ```
 
-### Voorbeeld: een nieuw inhoudsfragment maken {#example-creating-a-new-content-fragment}
+### Voorbeeld: een inhoudsfragment maken {#example-creating-a-new-content-fragment}
 
-Als u programmatisch een nieuw inhoudsfragment wilt maken, moet u het volgende gebruiken:
+Als u programmatisch een inhoudsfragment wilt maken, moet u het volgende gebruiken:
 
 `com.adobe.cq.dam.cfm.ContentFragmentManager#create`
 

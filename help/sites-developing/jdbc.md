@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 exl-id: 1082b2d7-2d1b-4c8c-a31d-effa403b21b2
-source-git-commit: 061af6f3318d68b50c5f606ad50db7a39da0f4fd
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '917'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Open een externe SQL-database zodat uw CQ-toepassingen kunnen werken met de gege
 
 ## Het JDBC-databasestuurprogramma bundelen {#bundling-the-jdbc-database-driver}
 
-Sommige gegevensbestandverkopers verstrekken bestuurders JDBC in een bundel OSGi, bijvoorbeeld [MySQL](https://dev.mysql.com/downloads/connector/j/). Als het JDBC-stuurprogramma voor uw database niet beschikbaar is als OSGi-bundel, vraagt u het stuurprogramma JAR op en plaatst u deze in een OSGi-bundel. De bundel moet de pakketten uitvoeren die voor het in wisselwerking staan met de gegevensbestandserver worden vereist. De bundel moet ook de pakketten invoeren die het verwijzingen.
+Sommige gegevensbestandverkopers verstrekken bestuurders JDBC in een bundel OSGi, bijvoorbeeld, [MySQL](https://dev.mysql.com/downloads/connector/j/). Als het JDBC-stuurprogramma voor uw database niet beschikbaar is als OSGi-bundel, vraagt u het stuurprogramma JAR op en plaatst u deze in een OSGi-bundel. De bundel moet de pakketten uitvoeren die voor het in wisselwerking staan met de gegevensbestandserver worden vereist. De bundel moet ook de pakketten invoeren die het verwijzingen.
 
 In het volgende voorbeeld wordt het [Plug-in voor bundel voor Maven](https://felix.apache.org/documentation/subprojects/apache-felix-maven-bundle-plugin-bnd.html) om het HSQLDB-stuurprogramma in een OSGi-bundel te plaatsen. De POM geeft de plug-in de opdracht het bestand hsqldb.jar dat als een afhankelijkheid is geïdentificeerd, in te sluiten. Alle org.hsqldb pakketten worden uitgevoerd.
 
@@ -94,7 +94,7 @@ Met de volgende koppelingen worden de downloadpagina&#39;s voor bepaalde populai
 
 Voeg een configuratie voor de dienst van de Pool van Verbindingen JDBC toe die de bestuurder JDBC gebruikt om gegevensbronvoorwerpen tot stand te brengen. Uw toepassingscode gebruikt deze service om het object te verkrijgen en verbinding te maken met de database.
 
-JDBC-verbindingspool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) is een fabrieksservice. Als u verbindingen vereist die verschillende eigenschappen, bijvoorbeeld read-only of lees-schrijftoegang gebruiken, creeer veelvoudige configuraties.
+JDBC-verbindingspool ( `com.day.commons.datasource.jdbcpool.JdbcPoolService`) is een fabrieksservice. Als u verbindingen vereist die verschillende eigenschappen, bijvoorbeeld, read-only of read-write toegang gebruiken, creeer veelvoudige configuraties.
 
 Wanneer het werken met CQ, zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie [OSGi configureren](/help/sites-deploying/configuring-osgi.md) voor volledige informatie.
 

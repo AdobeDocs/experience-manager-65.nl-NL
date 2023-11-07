@@ -11,9 +11,9 @@ topic-tags: develop
 discoiquuid: 07fffbd5-5430-4abc-b532-0840ecc7b1b0
 role: Developer
 exl-id: 34069505-a6cf-4540-932b-604f81823178
-source-git-commit: 37d2c70bff770d13b8094c5959e488f5531aef55
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '872'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -22,35 +22,35 @@ ht-degree: 0%
 
 De volgende Java API Quick Start (SOAP) is beschikbaar voor de AEM Forms JEE Signature-service:
 
-[Snel starten (SOAP-modus): Een handtekeningveld toevoegen aan een PDF-document met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een handtekeningveld toevoegen aan een PDF-document met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Namen van handtekeningvelden ophalen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
+[Snel starten (SOAP-modus): namen van handtekeningvelden ophalen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een handtekeningveld wijzigen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
+[Snel starten (SOAP-modus): een handtekeningveld wijzigen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een PDF-document digitaal ondertekenen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
+[Snel starten (SOAP-modus): een PDF-document digitaal ondertekenen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een XFA-gebaseerd formulier digitaal ondertekenen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
+[Snel starten (SOAP-modus): digitaal een XFA-gebaseerd formulier ondertekenen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api)
 
 [Snel starten (SOAP-modus): Een PDF-document certificeren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-certifying-a-pdf-document-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een digitale handtekening verifiëren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
+[Snel starten (SOAP-modus): een digitale handtekening verifiëren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api)
 
-[Snel starten (SOAP-modus): Meerdere digitale handtekeningen verifiëren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
+[Snel starten (SOAP-modus): meerdere digitale handtekeningen controleren met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een digitale handtekening verwijderen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
+[Snel starten (SOAP-modus): een digitale handtekening verwijderen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-[Snel starten (SOAP-modus): Tijdstempel van document toepassen met de Java API](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
+[Snel starten (SOAP-modus): tijdstempel van document toepassen met de Java API](#quick-start-soap-mode-apply-document-timestamp-using-the-java-api)
 
 AEM Forms JEE-bewerkingen kunnen worden uitgevoerd met de sterk getypte AEM Forms API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle Begin die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de server van Forms die op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op de Forms-server die wordt geïmplementeerd op JBoss Application Server en het Microsoft Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *SignatureField1* naar een PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf*. Het PDF-document dat het nieuwe handtekeningveld bevat, wordt opgeslagen als een PDF-bestand met de naam *LoanSig.pdf*. (Zie [Handtekeningvelden toevoegen](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
+In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *SignatureField1* naar een PDF-document dat is gebaseerd op een PDF-bestand met de naam *Lening.pdf*. Het PDF-document met het nieuwe handtekeningveld wordt opgeslagen als een PDF-bestand met de naam *LoanSig.pdf*. (Zie [Handtekeningvelden toevoegen](/help/forms/developing/digitally-signing-certifying-documents.md#adding-signature-fields).)
 
 ```java
  /*
@@ -76,16 +76,16 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *Signa
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -164,9 +164,9 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam *Signa
  
 ```
 
-## Snel starten (SOAP-modus): Namen van handtekeningvelden ophalen met de Java API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
+## Snel starten (SOAP-modus): namen van handtekeningvelden ophalen met de Java API {#quick-start-soap-mode-retrieving-signature-field-names-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden de namen opgehaald van handtekeningvelden in een PDF-document met de naam *LoanSig.pdf*. (Zie [Namen van handtekeningvelden ophalen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
+In het volgende Java-codevoorbeeld worden de namen van handtekeningvelden opgehaald uit een PDF-document met de naam *LoanSig.pdf*. (Zie [Namen van handtekeningvelden ophalen](/help/forms/developing/digitally-signing-certifying-documents.md#retrieving-signature-field-names).)
 
 ```java
  /*
@@ -195,16 +195,16 @@ In het volgende Java-codevoorbeeld worden de namen opgehaald van handtekeningvel
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -270,7 +270,7 @@ In het volgende Java-codevoorbeeld worden de namen opgehaald van handtekeningvel
  }
 ```
 
-## Snel starten (SOAP-modus): Een handtekeningveld wijzigen met de Java API {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
+## Snel starten (SOAP-modus): een handtekeningveld wijzigen met de Java API {#quick-start-soap-mode-modifying-a-signature-field-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam SignatureField1 gewijzigd door alle velden in het formulier te vergrendelen wanneer een handtekening wordt toegepast op het handtekeningveld en ervoor te zorgen dat geen wijzigingen zijn toegestaan. Nadat de handtekeningservice het PDF-document heeft geretourneerd dat het gewijzigde handtekeningveld bevat, wordt het PDF-document opgeslagen als een PDF-bestand met de naam LoanSig.pdf. (In dit voorbeeld wordt het PDF-bestand overschreven dat is doorgegeven aan de service Handtekening.) (Zie [Handtekeningvelden wijzigen](/help/forms/developing/digitally-signing-certifying-documents.md#modifying-signature-fields).)
 
@@ -301,16 +301,16 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam Signat
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -398,7 +398,7 @@ In het volgende Java-codevoorbeeld wordt een handtekeningveld met de naam Signat
  
 ```
 
-## Snel starten (SOAP-modus): Een PDF-document digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
+## Snel starten (SOAP-modus): een PDF-document digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-pdf-document-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op een PDF-bestand met de naam *LoanSig.pdf*. De alias die voor de veiligheidsreferentie wordt gespecificeerd is veilig, en de herroepingscontrole wordt uitgevoerd. Omdat er geen CRL- of OCSP-serverinformatie is opgegeven, wordt de serverinformatie opgehaald uit het certificaat dat wordt gebruikt om het PDF-document digitaal te ondertekenen. Het ondertekende document wordt opgeslagen als een PDF-bestand met de naam *LoanSigned.pdf*. (Zie [PDF-documenten digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
@@ -429,16 +429,16 @@ In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op ee
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -547,7 +547,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op ee
  
 ```
 
-## Snel starten (SOAP-modus): Een XFA-gebaseerd formulier digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
+## Snel starten (SOAP-modus): digitaal een XFA-gebaseerd formulier ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend dat door de Forms-service wordt gegenereerd. De `com.adobe.idp.Document` -instantie die door de Forms-service wordt geretourneerd, wordt doorgegeven aan de ondertekeningsservice. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
 
@@ -578,16 +578,16 @@ In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend d
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -790,16 +790,16 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gecertificeerd dat is 
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -908,9 +908,9 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gecertificeerd dat is 
  }
 ```
 
-## Snel starten (SOAP-modus): Een digitale handtekening verifiëren met de Java API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
+## Snel starten (SOAP-modus): een digitale handtekening verifiëren met de Java API {#quick-start-soap-mode-verifying-a-digital-signature-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd die zich bevindt in een ondertekend PDF-document dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Digitale handtekeningen verifiëren](#verifying-digital-signatures).)
+In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd die zich in een ondertekend PDF-document bevindt dat is gebaseerd op een PDF-bestand met de naam LoanSigned.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Digitale handtekeningen verifiëren](#verifying-digital-signatures).)
 
 ```java
  /*
@@ -935,16 +935,16 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd 
      * 18. xbean.jar (required for SOAP mode)
      * 19. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -1010,17 +1010,17 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd 
  
        //Determine the status of the signature
        if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-              myStatus = "The signatures located in the dynamic PDF form are unknown";
+              myStatus = "The signatures in the dynamic PDF form are unknown";
           else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-              myStatus = "The signatures located in the PDF document are unknown";
+              myStatus = "The signatures in the PDF document are unknown";
           else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-              myStatus = "The signatures located in a certified PDF form are valid";
+              myStatus = "The signatures in a certified PDF form are valid";
           else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-              myStatus = "The signatures located in a signed dynamic PDF form are valid";
+              myStatus = "The signatures in a signed dynamic PDF form are valid";
           else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-              myStatus = "The signatures located in a certified PDF document are valid";
+              myStatus = "The signatures in a certified PDF document are valid";
           else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-              myStatus = "The signatures located in a signed PDF document are valid";
+              myStatus = "The signatures in a signed PDF document are valid";
           else if (sigStatus == SignatureStatus.SignatureFormatError)
               myStatus = "The format of a signature in a signed document is invalid";
           else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -1072,9 +1072,9 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening geverifieerd 
  
 ```
 
-## Snel starten (SOAP-modus): Meerdere digitale handtekeningen verifiëren met de Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
+## Snel starten (SOAP-modus): meerdere digitale handtekeningen controleren met de Java API {#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecontroleerd die zich bevinden in een ondertekend PDF-document dat is gebaseerd op een PDF-bestand met de naam LoanAllSigs.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Meerdere digitale handtekeningen controleren](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
+In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecontroleerd die zich in een ondertekend PDF-document bevinden dat is gebaseerd op een PDF-bestand met de naam LoanAllSigs.pdf. De verificatietijd is ingesteld op de huidige tijd en de optie voor intrekkingscontrole is ingesteld op de beste inspanning. (Zie [Meerdere digitale handtekeningen controleren](signature-service-java-api-quick.md#quick-start-soap-mode-verifying-multiple-digital-signatures-using-the-java-api).)
 
 ```java
  /*
@@ -1103,16 +1103,16 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -1162,13 +1162,13 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
        pkiOptions.setVerificationTime(VerificationTime.CURRENT_TIME);
        pkiOptions.setRevocationCheckStyle(RevocationCheckStyle.BestEffort);
  
-       //Verify all digital signatures that are located in a PDF document
+       //Verify all digital signatures that are in a PDF document
        PDFDocumentVerificationInfo  allSig = signClient.verifyPDFDocument(
           inDoc,
           pkiOptions,
           null);
  
-       //Get a list of all signatures that are located in the PDF document
+       //Get a list of all signatures that are in the PDF document
        List allSignatures = allSig.getVerificationInfos();
  
      //Create an Iterator object and iterate through
@@ -1184,17 +1184,17 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
  
              //Determine the status of the signature
                if (sigStatus == SignatureStatus.DynamicFormSignatureUnknown)
-                   myStatus = "The signatures located in the dynamic PDF form are unknown";
+                   myStatus = "The signatures in the dynamic PDF form are unknown";
                else if (sigStatus == SignatureStatus.DocumentSignatureUnknown)
-                   myStatus = "The signatures located in the PDF document are unknown";
+                   myStatus = "The signatures in the PDF document are unknown";
                else if (sigStatus == SignatureStatus.CertifiedDynamicFormSignatureTamper)
-                   myStatus = "The signatures located in a certified PDF form are valid";
+                   myStatus = "The signatures in a certified PDF form are valid";
                else if (sigStatus == SignatureStatus.SignedDynamicFormSignatureTamper)
-                   myStatus = "The signatures located in a signed dynamic PDF form are valid";
+                   myStatus = "The signatures in a signed dynamic PDF form are valid";
                else if (sigStatus == SignatureStatus.CertifiedDocumentSignatureTamper)
-                   myStatus = "The signatures located in a certified PDF document are valid";
+                   myStatus = "The signatures in a certified PDF document are valid";
                else if (sigStatus == SignatureStatus.SignedDocumentSignatureTamper)
-                   myStatus = "The signatures located in a signed PDF document are valid";
+                   myStatus = "The signatures in a signed PDF document are valid";
                else if (sigStatus == SignatureStatus.SignatureFormatError)
                    myStatus = "The format of a signature in a signed document is invalid";
                else if (sigStatus == SignatureStatus.DynamicFormSigNoChanges)
@@ -1234,7 +1234,7 @@ In het volgende Java-codevoorbeeld worden meerdere digitale handtekeningen gecon
  }
 ```
 
-## Snel starten (SOAP-modus): Een digitale handtekening verwijderen met de Java API {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
+## Snel starten (SOAP-modus): een digitale handtekening verwijderen met de Java API {#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd uit een handtekeningveld met de naam *SignatureField1*. De naam van het PDF-bestand met het handtekeningveld is *LoanSigned.pdf*. (Zie [Digitale handtekeningen verwijderen](/help/forms/developing/digitally-signing-certifying-documents.md#removing-digital-signatures).)
 
@@ -1265,16 +1265,16 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd ui
      * 20. xbean.jar (required for SOAP mode)
      * 21. xercesImpl.jar (required for SOAP mode)
      *
-     * These JAR files are located in the following path:
+     * These JAR files are in the following path:
      * <install directory>/sdk/client-libs/common
      *
-     * The adobe-utilities.jar file is located in the following path:
+     * The adobe-utilities.jar file is in the following path:
      * <install directory>/sdk/client-libs/jboss
      *
-     * The jboss-client.jar file is located in the following path:
+     * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * SOAP required JAR files are located in the following path:
+     * SOAP required JAR files are in the following path:
      * <install directory>/sdk/client-libs/thirdparty
      *
      * If you want to invoke a remote forms server instance and there is a
@@ -1343,7 +1343,7 @@ In het volgende Java-codevoorbeeld wordt een digitale handtekening verwijderd ui
  
 ```
 
-## Snel starten (SOAP-modus): Tijdstempel van document toepassen met de Java API {#quick-start-soap-mode-apply-document-timestamp-using-the-java-api}
+## Snel starten (SOAP-modus): tijdstempel van document toepassen met de Java API {#quick-start-soap-mode-apply-document-timestamp-using-the-java-api}
 
 In het volgende Java-codevoorbeeld wordt een tijdstempel toegepast op een PDF-document:
 
@@ -1364,13 +1364,13 @@ In het volgende Java-codevoorbeeld wordt een tijdstempel toegepast op een PDF-do
  * 11. adobe-utilities.jar (required for SOAP mode)
  *
  *
- * These JAR files are located in the following path:
+ * These JAR files are in the following path:
  * <install directory>/sdk/client-libs/common
  *
- * The adobe-utilities.jar file is located in the following path:
+ * The adobe-utilities.jar file is in the following path:
  * <install directory>/sdk/client-libs/jboss
  *
- * SOAP required JAR files are located in the following path:
+ * SOAP required JAR files are in the following path:
  * <install directory>/sdk/client-libs/thirdparty
  *
  * If you want to invoke a remote forms server instance and there is a

@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 7222a0c3-cdb9-4c73-9d53-26f00792e439
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '936'
 ht-degree: 0%
@@ -215,7 +215,7 @@ Controleren of in leven houden werkt:
 
 **Verzoeken om verlies zoeken**
 
-Als u verzoeken in een complexe serverinstelling verliest, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
+Als u verzoeken verliest in een complexe serverinstelling, bijvoorbeeld met een firewall en een Dispatcher, kunt u de proxyserver gebruiken om te achterhalen waar de aanvraag is verloren. Als er een firewall is:
 
 * Een proxy starten voor een firewall
 * Een andere proxy starten na een firewall

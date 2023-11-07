@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
 exl-id: 6b57d00e-5ba0-41ee-8497-49ecfec5b9ed
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1608'
+source-wordcount: '1606'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ De Forms-service bestaat uit formulierontwerpen die in Designer zijn gemaakt en 
 
 De Forms-pagina in de beheerconsole bevat instellingen die bepalen hoe de Forms-service items in cache plaatst. U kunt deze instellingen aanpassen om de prestaties van de Forms-service te optimaliseren.
 
-De Forms service plaatst de volgende items in cache:
+De Forms-service plaatst de volgende items in cache:
 
 * **formulierontwerpen:** De Forms-service plaatst formulierontwerpen in cache die het ophaalt uit de gegevensopslagruimte of HTTP-bronnen. Dit in cache plaatsen verbetert de prestaties, omdat de Forms-service het formulierontwerp ophaalt uit de cache in plaats van uit de opslagplaats.
 * **fragmenten en afbeeldingen:** De Forms-service kan fragmenten en afbeeldingen die in formulierontwerpen worden gebruikt in cache plaatsen. Wanneer de Forms-service deze objecten in cache plaatst, worden de prestaties verbeterd omdat de fragmenten en afbeeldingen alleen worden gelezen uit de opslagplaats op het eerste verzoek.
@@ -95,7 +95,7 @@ De instellingen in het dialoogvenster **Algemene cache-instellingen** heeft invl
 
 **Max. documentgrootte cache (kB):** De maximale grootte, in kilobytes, van een formulierontwerp of andere bron die in een cache in het geheugen kan worden opgeslagen. Dit is een algemene instelling die van toepassing is op alle cache in het geheugen. Als een bron groter is dan deze waarde, wordt deze niet in het geheugen opgeslagen. De standaardwaarde is 1024 kilobytes. Deze instelling heeft geen invloed op de cache van de schijf.
 
-**Cache voor het renderen van formulieren ingeschakeld:** Deze optie is standaard ingeschakeld, wat betekent dat weergegeven formulieren in de cache worden geplaatst voor volgende opvraging. Deze instelling verbetert de prestaties omdat de Forms-service slechts één keer een bepaald formulier hoeft te genereren en vervolgens de versie in de cache gebruikt. Deze optie werkt met de eigenschap voor het in cache plaatsen van het formulierontwerp. Zie Help bij Designer voor informatie over het configureren van deze waarde in het formulierontwerp.
+**Cache voor het renderen van formulieren ingeschakeld:** Deze optie is standaard ingeschakeld, wat betekent dat weergegeven formulieren in de cache worden geplaatst om ze later op te halen. Deze instelling verbetert de prestaties omdat de Forms-service slechts één keer een bepaald formulier hoeft te genereren en vervolgens de versie in de cache gebruikt. Deze optie werkt met de eigenschap voor het in cache plaatsen van het formulierontwerp. Zie Help bij Designer voor informatie over het configureren van deze waarde in het formulierontwerp.
 
 ### Formulierontwerpen in cache plaatsen {#caching-form-designs}
 
@@ -103,7 +103,7 @@ Wanneer de Forms-service een renderaanvraag ontvangt, haalt deze het formulieron
 
 De Forms-service plaatst formulierontwerpen altijd in cache op schijf. Als formulierontwerpen worden opgeslagen op de server, worden deze bestanden beschouwd als de schijfcache. De Forms-service plaatst ook formulierontwerpen in het geheugen in de cache volgens de instelling in het dialoogvenster **In Geheugensjablooncache** gebied. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u [De diensten verbonden aan AEM vormmodules beginnen of tegenhouden](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
 
-**Cachegrootte sjabloonconfiguratie:** Het maximumaantal voorwerpen van de malplaatjeconfiguratie in geheugen te houden. De standaardwaarde is 100. U wordt aangeraden deze waarde groter dan of gelijk aan de waarde voor Grootte sjablooncache in te stellen. Deze instelling heeft geen invloed op de cache van de schijf.
+**Grootte sjabloonconfiguratiecache:** Het maximumaantal voorwerpen van de malplaatjeconfiguratie in geheugen te houden. De standaardwaarde is 100. U wordt aangeraden deze waarde groter dan of gelijk aan de waarde voor Grootte sjablooncache in te stellen. Deze instelling heeft geen invloed op de cache van de schijf.
 
 **Grootte sjablooncache:** Het maximumaantal sjablooninhoudsobjecten dat in het geheugen moet worden bewaard. De standaardwaarde is 100. Deze instelling heeft geen invloed op de cache van de schijf.
 
@@ -113,17 +113,17 @@ De Forms-service plaatst formulierontwerpen altijd in cache op schijf. Als formu
 
 De Forms-service plaatst gegenereerde formulieren in cache, zodat deze niet hetzelfde formulier hoeven op te lossen en weer te geven in volgende aanvragen. Gegenereerde formulieren worden zowel op de schijf als in het geheugen in cache geplaatst.
 
-Deze instellingen bevinden zich in het dialoogvenster **In cache voor het renderen van geheugenformulieren** gebied. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u [De diensten verbonden aan AEM vormmodules beginnen of tegenhouden](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
+Deze instellingen bevinden zich in het gedeelte **In cache voor het renderen van geheugenformulieren** gebied. Als u een van deze instellingen wijzigt, start u de Forms-service opnieuw, zodat de wijziging van kracht wordt. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u [De diensten verbonden aan AEM vormmodules beginnen of tegenhouden](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) voor instructies.
 
-**Cachegrootte:** Hiermee geeft u het maximum aantal weergegeven formulieren op dat in de cache in het geheugen kan worden opgeslagen. De standaardwaarde is 100. Deze instelling heeft geen invloed op de cache van de schijf.
+**Grootte cache:** Hiermee geeft u het maximum aantal weergegeven formulieren op dat in de cache in het geheugen kan worden opgeslagen. De standaardwaarde is 100. Deze instelling heeft geen invloed op de cache van de schijf.
 
 **Ingeschakeld:** Deze optie is standaard geselecteerd, wat betekent dat gerenderde formulieren in het geheugen worden opgeslagen. Als deze optie niet is geselecteerd, worden de weergegeven formulieren alleen op de schijf in het cachegeheugen opgeslagen.
 
 ### Fragmenten en afbeeldingen in cache plaatsen {#caching-fragments-and-images}
 
-De Forms-service plaatst fragmenten en afbeeldingen die in formulierontwerpen op schijf worden gebruikt in cache. Dit verbetert de prestaties, omdat de fragmenten en afbeeldingen alleen worden gelezen van de opslagplaats op het eerste verzoek. Vervolgens leest de Forms-service fragmenten en afbeeldingen uit de cache van de schijf. Fragmenten en afbeeldingen worden alleen op de schijf in het cachegeheugen opgeslagen en niet in het geheugen.
+De Forms-service plaatst fragmenten en afbeeldingen die in formulierontwerpen op schijf worden gebruikt in cache. Dit verbetert de prestaties, omdat de fragmenten en afbeeldingen alleen worden gelezen van de opslagplaats op het eerste verzoek. Vervolgens leest de Forms-service op volgende verzoeken fragmenten en afbeeldingen uit de cache van de schijf. Fragmenten en afbeeldingen worden alleen op de schijf in het cachegeheugen opgeslagen en niet in het geheugen.
 
-Met de volgende instellingen kunt u het in cache plaatsen op schijf van fragmenten en afbeeldingen beheren. Deze instellingen bevinden zich in het dialoogvenster **Instellingen voor sjabloonbroncache** gebied:
+Met de volgende instellingen kunt u het in cache plaatsen op schijf van fragmenten en afbeeldingen beheren. Deze instellingen bevinden zich in het gedeelte **Instellingen voor sjabloonbroncache** gebied:
 
 **Resource Caching** Selecteer een van de volgende opties in de lijst:
 
@@ -133,7 +133,7 @@ Met de volgende instellingen kunt u het in cache plaatsen op schijf van fragment
 
 **Uitgeschakeld:** De Forms-service slaat geen fragmenten of afbeeldingen in de cache op.
 
-**Overbodig verwijderen (seconden):** Hiermee bepaalt u hoe vaak de Forms-service oude ongeldige cachebestanden verwijdert. De Forms-service verwijdert geen geldige cachebestanden. Als u het opschooninterval wijzigt, start u de Forms-service opnieuw om de wijziging in werking te laten treden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u De services die zijn gekoppeld aan AEM formuliermodules starten of stoppen voor instructies. De standaardwaarde is 600 seconden.
+**Overbodig verwijderen (seconden):** Hiermee geeft u op hoe vaak de Forms-service oude ongeldige cachebestanden verwijdert. De Forms-service verwijdert geen geldige cachebestanden. Als u het opschooninterval wijzigt, start u de Forms-service opnieuw om de wijziging in werking te laten treden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u De services die zijn gekoppeld aan AEM formuliermodules starten of stoppen voor instructies. De standaardwaarde is 600 seconden.
 
 ## Groeperingsoverwegingen voor caches {#clustering-considerations-for-caches}
 

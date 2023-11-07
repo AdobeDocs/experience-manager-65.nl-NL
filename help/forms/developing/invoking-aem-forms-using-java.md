@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 036c35c1-1be7-4825-bbb6-ea025e49c6f6
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '5396'
+source-wordcount: '5393'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 AEM Forms kan worden aangeroepen met de AEM Forms Java API. Wanneer u de AEM Forms Java API gebruikt, kunt u de Invocation API- of Java-clientbibliotheken gebruiken. Java-clientbibliotheken zijn beschikbaar voor services zoals de service Rights Management. Met deze sterk getypeerde API&#39;s kunt u Java-toepassingen ontwikkelen die AEM Forms aanroepen.
 
-De oproepings-API zijn klassen die zich bevinden in de `com.adobe.idp.dsc` pakket. Met deze klassen kunt u een aanroepingsverzoek rechtstreeks naar een service verzenden en een geretourneerde aanroepingsreactie afhandelen. Gebruik de oproepings-API om kortstondige of langlevende processen aan te roepen die met Workbench zijn gemaakt.
+De oproepings-API bevindt zich in de volgende klassen `com.adobe.idp.dsc` pakket. Met deze klassen kunt u een aanroepingsverzoek rechtstreeks naar een service verzenden en een geretourneerde aanroepingsreactie afhandelen. Gebruik de oproepings-API om kortstondige of langlevende processen aan te roepen die met Workbench zijn gemaakt.
 
 De geadviseerde manier om een dienst programmatically aan te halen is een de cliëntbibliotheek van Java te gebruiken die aan de dienst in tegenstelling tot de Inroeping API beantwoordt. Als u bijvoorbeeld de coderingsservice wilt aanroepen, gebruikt u de clientbibliotheek van de coderingsservice. Om een de dienstverrichting van de Encryptie uit te voeren, haal een methode aan die tot het de dienstcliëntvoorwerp van de Encryptie behoort. U kunt een PDF-document versleutelen met een wachtwoord door het `EncryptionServiceClient` object `encryptPDFUsingPassword` methode.
 
@@ -632,7 +632,7 @@ In dit scenario wordt een clienttoepassing uitgevoerd in een eigen JVM en worden
 
 ### Clienttoepassing die geclusterde AEM Forms-instanties aanroept {#client-application-invoking-clustered-aem-forms-instances}
 
-In het volgende diagram wordt een clienttoepassing weergegeven die in een eigen JVM wordt uitgevoerd en die AEM Forms-instanties aanroept die zich in een cluster bevinden.
+In het volgende diagram wordt een clienttoepassing weergegeven die in een eigen JVM wordt uitgevoerd en die AEM Forms-instanties in een cluster oproept.
 
 Dit scenario is vergelijkbaar met een clienttoepassing die een zelfstandige AEM Forms-instantie aanroept. De URL van de provider is echter anders. Als een clienttoepassing verbinding wil maken met een specifieke J2EE-toepassingsserver, moet de toepassing de URL wijzigen om naar de specifieke J2EE-toepassingsserver te verwijzen.
 

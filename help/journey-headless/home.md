@@ -2,9 +2,9 @@
 title: AEM Headless Journeys
 description: Een verzameling documentatietrajecten waarin wordt beschreven hoe u Adobe Experience Manager als een CMS zonder koptekst kunt gebruiken.
 exl-id: 369f79ab-c8ae-4d49-9b0b-e3a2e423b40f
-source-git-commit: ed11891c27910154df1bfec6225aecd8a9245bff
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '457'
 ht-degree: 1%
 
 ---
@@ -25,17 +25,17 @@ Als je nog niet helemaal vertrouwd bent met AEM en/of zonder kop, AEM Headless J
 
 [Een documentatiereis](/help/journey-documentation/home.md) verbindt vele verschillende en misschien ingewikkelde onderwerpen en eigenschappen met elkaar door een verhaal te verstrekken dat de lezer helpt, die nieuw kan zijn om een bedrijfsprobleem van begin tot eind te AEM, te begrijpen en op te lossen, terwijl het veronderstellen van minimale voorafgaand onderwerp of AEM kennis.
 
-Documentatiereizen zijn ontworpen op basis van de beginselen van best practices, gebaseerd op de meest recente onderzoeken, bewezen ervaring met de implementatie van Adobe-consultants en feedback van klantprojecten.
+Documentatiereizen zijn gebaseerd op de beginselen van best practices, op basis van het meest recente onderzoek van de Adobe, bewezen ervaring met de implementatie door consultants van de Adobe en feedback van klantprojecten.
 
-Als u wilt weten hoe Adobe adviseert om zaken zonder kop met AEM op te lossen, AEM de Transparanten van de Zetel zijn waar te beginnen.
+Als u wilt weten hoe de Adobe aanbeveelt om zaken zonder kop met AEM op te lossen, AEM zijn de Transparanten zonder hoofd waar te beginnen.
 
 ## Soorten publiek {#audiences}
 
-Dagloze ritten zijn ontworpen voor verschillende personen, waarin de vereisten, stappen en de aanpak voor het implementeren van oplossingen zonder kop vanuit verschillende perspectieven worden beschreven.
+De dagloze Reizen worden ontworpen voor verschillende personen, die de vereisten, de stappen, en de benadering van het uitvoeren van oplossingen zonder hoofd van verschillende perspectieven beschrijven.
 
 Een individuele reis wordt bepaald voor een specifiek persoon of een publiek, maar ook bepaalt extra karakters waarmee de lezer interactie aangaat.
 
-Informatie over reizen kan natuurlijk nuttig zijn voor meerdere personen, maar een reis is gericht op een bepaalde persoon en sommige informatie kan overbodig zijn voor bepaalde rollen.
+Informatie over reizen kan nuttig zijn voor meerdere personen, maar een reis is gericht op een specifieke persoon en sommige informatie kan voor bepaalde rollen overbodig zijn.
 
 ## Reizen zonder hoofd {#headless-journeys}
 

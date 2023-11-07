@@ -2,9 +2,9 @@
 title: De Rich Text Editor gebruiken om inhoud te ontwerpen
 description: De Rich Text Editor gebruiken om inhoud te ontwerpen in Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt 
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Als u nogmaals tikt of erop klikt of de component aanvankelijk selecteert met een langzaam dubbeltikken/klikken, wordt de bewerking op de plaats geopend. Deze heeft een eigen werkbalk. Hier kunt u de inhoud bewerken en basisopmaakwijzigingen aanbrengen.
+Als u nogmaals tikt of erop klikt, of de component aanvankelijk selecteert met een langzaam dubbeltikken/klikken, wordt de bewerking op de plaats geopend met een eigen werkbalk. Hier kunt u de inhoud bewerken en basisopmaakwijzigingen aanbrengen.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

@@ -5,9 +5,9 @@ contentOwner: AG
 role: Developer
 feature: Search
 exl-id: 9e33d1c0-232b-458a-ad6a-f595aa541a5a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '822'
 ht-degree: 12%
 
 ---
@@ -53,13 +53,13 @@ Naast het gebruik van reeds bestaande voorspellingen, [!DNL Experience Manager] 
 
 Voor het maken van aangepaste predikaten is basiskennis over de [Widget-framework](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/widgets-api/index.html).
 
-De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Voorspelregels voor monsters bevinden zich in **/libs/cq/search/components/predicates**.
+De beste praktijken moeten een bestaand predikaat kopiëren en het aanpassen. Voorspelregels voor voorbeelden bevinden zich in **/libs/cq/search/components/predicates**.
 
 ### Voorbeeld: een eenvoudige eigenschap maken {#example-build-a-simple-property-predicate}
 
 Een voorspelling van eigenschappen maken:
 
-1. Maak bijvoorbeeld een componentmap in de projectmap **/apps/weretail/components/titlepredicate**.
+1. Maak bijvoorbeeld een componentmap in de projectmap. **/apps/weretail/components/titlepredicate**.
 1. Toevoegen **content.xml**:
 
    ```xml
@@ -89,7 +89,7 @@ Een voorspelling van eigenschappen maken:
    
        <div class="title">Title</div>
    
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are appended to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
    
    </div><script type="text/javascript">
@@ -108,7 +108,7 @@ Een voorspelling van eigenschappen maken:
            var id = qb.createId(predicateName);
    
            // Hidden field that defines the property to search for; in our case this
-           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" etc.)
+           // is the "dc:title" metadata. The name "property" (or "1_property", "2_property" and so on.)
            // indicates the server to use the property predicate
            // (com.day.cq.search.eval.JcrPropertyPredicateEvaluator).
            qb.addField({
@@ -152,7 +152,7 @@ Een voorspelling van eigenschappen maken:
 
 Om een groep te bouwen predikaat:
 
-1. Maak bijvoorbeeld een componentmap in de projectmap **/apps/weretail/components/picspredicate**.
+1. Maak bijvoorbeeld een componentmap in de projectmap. **/apps/weretail/components/picspredicate**.
 1. Toevoegen **content.xml**:
 
    ```xml
@@ -182,7 +182,7 @@ Om een groep te bouwen predikaat:
    
        <div class="title">Image Formats</div>
    
-       <%-- The wrapper for the form elements. All items will be append to this wrapper. --%>
+       <%-- The wrapper for the form elements. All items are append to this wrapper. --%>
        <div id="<%= elemId %>" class="content"></div>
    
    </div><script type="text/javascript">
@@ -228,7 +228,7 @@ Om een groep te bouwen predikaat:
                qb.addField({
                    "xtype": "checkbox",
                    "renderTo": "<%= elemId %>",
-                   // 1_group.property.0_value, 1_group.property.1_value etc.
+                   // 1_group.property.0_value, 1_group.property.1_value and so on.
                    "name": groupId + "." +  predicateName + "." + i + "_value",
                    "inputValue": options[i].value,
                    "boxLabel": options[i].label,

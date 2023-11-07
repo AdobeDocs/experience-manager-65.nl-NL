@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 8d965e94-c368-481d-b000-6e22456c34db
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '938'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,9 @@ AEM Mobile heeft een Adobe Analytics-account nodig om trackinggegevens in uw app
 
 Nadat de account Analytics is ingesteld, maakt u een configuratie voor inhoudssynchronisatie om de inhoud in uw mobiele toepassing te plaatsen.
 
-Zie Inhoud synchroniseren met inhoud configureren voor meer informatie. De configuratie zal de Synchronisatie van de Inhoud moeten instrueren om ADBMobileConfig in de /www folder te zetten. In de Geometrixx Outdoors-app is de configuratie van Content Sync bijvoorbeeld ingesteld op: */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling, maar die is identiek aan de niet-ontwikkelingsconfiguratie voor Geometrixx Outdoors.
+Zie Inhoud synchroniseren met inhoud configureren voor meer informatie. De configuratie moet de Synchronisatie van de Inhoud opdragen om ADBMobileConfig in de /www folder te zetten. In de Geometrixx Outdoors-app is de configuratie van Content Sync bijvoorbeeld ingesteld op: */content/phonegap/geometrixx-outdoor/shell/jcr:content/pge-app/app-config/ams-ADBMobileConfig*. Er is ook een configuratie voor ontwikkeling, maar die is identiek aan de niet-ontwikkelingsconfiguratie voor Geometrixx Outdoors.
 
-Raadpleeg Analytics - Mobile Services - Adobe Mobile Services SDK Config File voor meer informatie over het downloaden van ADBMobileConfig vanuit het dashboard AEM Mobile Application Apps.
+Zie Analytics - Mobile Services - Adobe Mobile Services SDK Config File voor meer informatie over het downloaden van ADBMobileConfig vanuit het dashboard voor toepassingen voor mobiele toepassingen AEM toepassingen.
 
 ```xml
 <jcr:root xmlns:jcr="https://www.jcp.org/jcr/1.0" xmlns:nt="https://www.jcp.org/jcr/nt/1.0"
@@ -63,7 +63,7 @@ Voor elk platform moet ADBMobileConfig naar een specifieke locatie worden gekopi
 
 Als het bouwen met CLI PhoneGap dit met cordova kan worden gedaan bouwen hamanuscripten. Dit is te zien in de Geometrixx Outdoor App op:*content/phonegap/geometrixx-outdoors/shell/_jcr_content/pge-app/app-content/phonegap/scripts/restore_plugins.js.*
 
-Voor iOS moet het bestand naar de XCode-projectversie worden gekopieerd **Bronnen** directory (bijvoorbeeld &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android™, is het pad naar kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor meer details bij het gebruiken van haken tijdens CLI van PhoneGap bouwt, zie [Drie haken voor uw Cordova/PhoneGap-project](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
+Voor iOS moet het bestand naar het XCode-project worden gekopieerd **Bronnen** directory (bijvoorbeeld &quot;platforms/ios/Geometrixx/Resources/ADBMobileConfig.json&quot;). Als de toepassing is bedoeld voor Android™, is het pad naar kopiëren &quot;platforms/android/assets/ADBMobileConfig.json&quot;. Voor meer details bij het gebruiken van haken tijdens CLI van PhoneGap bouwt, zie [Drie haken voor uw Cordova/PhoneGap-project](https://gist.github.com/jlcarvalho/22402d013bc72f795d45a01836ce735c).
 
 ```xml
 ///////////////////////////

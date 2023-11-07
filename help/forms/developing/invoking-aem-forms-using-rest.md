@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 5bdf42d1ce7b2126bfb2670049deec4b6eaedba2
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '2506'
+source-wordcount: '2505'
 ht-degree: 0%
 
 ---
@@ -321,4 +321,4 @@ De volledige URL om het proces aan te roepen is https://hiro-xp:8080/rest/servic
 
 Als voor het proces een PDF-document nodig is als invoerwaarde, moet u ervoor zorgen dat het formulier als PDF wordt verzonden, zoals in de vorige afbeelding wordt getoond. Als u een proces wilt activeren, moet het proces ook een PDF-document retourneren. Anders kan Acrobat de geretourneerde waarde niet verwerken en treedt er een fout op. U hoeft de naam van de invoerprocesvariabele niet op te geven. Bijvoorbeeld de *MyApplication/EncryptDocument* proces heeft een invoervariabele met een naam `inDoc`. U hoeft niet in Doc op te geven, zolang het formulier als PDF wordt verzonden.
 
-U kunt ook formuliergegevens als XML verzenden naar een Forms-proces. Als u XML-gegevens wilt verzenden, moet u ervoor zorgen dat de `Submit As` drop down specificeert XML. Omdat de geretourneerde waarde van het proces een PDF-document moet zijn, wordt het PDF-document weergegeven in Acrobat.
+U kunt ook formuliergegevens als XML verzenden naar een Forms-proces. Als u XML-gegevens wilt verzenden, moet u ervoor zorgen dat de `Submit As` drop-down specificeert XML. Omdat de geretourneerde waarde van het proces een PDF-document moet zijn, wordt het PDF-document weergegeven in Acrobat.

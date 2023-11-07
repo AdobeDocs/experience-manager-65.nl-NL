@@ -2,7 +2,7 @@
 title: Adobe Experience Manager Headless Content Architect Reis
 description: Een inleiding tot de krachtige, flexibele, eindeloze eigenschappen van Adobe Experience Manager, en hoe te om inhoud voor uw project te modelleren.
 exl-id: 49ba0d6d-dde4-42e2-92fd-c7655c0eebc0
-source-git-commit: 9c517590c2b78eed7c52e33e0a106237a2af3bb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Als we het hebben over een CMS zonder kop, beheert het CMS de inhoud en blijft h
 
 ![CMS zonder hoofd](/help/journey-headless/developer/assets/headless-cms.png)
 
-De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enz., nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
+De verbruikende services, of het nu gaat om AIR, een webshop, mobiele ervaring, progressieve webapps (PWA), enzovoort, nemen inhoud van het CMS zonder kop in en bieden hun eigen rendering. Ze zorgen ervoor dat ze hun eigen hoofd geven aan je inhoud.
 
 Het weglaten van het hoofd vereenvoudigt CMS door ingewikkeldheid te verwijderen. Hierdoor wordt ook de verantwoordelijkheid voor het renderen van de inhoud verplaatst naar de diensten die de inhoud nodig hebben en die vaak beter geschikt zijn voor dergelijke rendering.
 
@@ -66,7 +66,7 @@ AEM u als Content Architect de inhoud modelleert om een reeks van **Modellen van
 
 Dit is meer een ontwikkelingsdetail - maar het zou u kunnen interesseren, enkel om het verhaal te voltooien.
 
-Nadat u de modellen voor inhoudsfragmenten hebt gemaakt en de auteurs deze hebben gebruikt om de inhoud te genereren, hebben de toepassingen zonder kop toegang tot deze inhoud nodig.
+Nadat u de modellen voor inhoudsfragmenten hebt gemaakt en de auteurs deze hebben gebruikt om de inhoud te genereren, moeten de toepassingen zonder kop toegang krijgen tot deze inhoud.
 
 Adobe Experience Manager (AEM) heeft via de GraphQL API selectief toegang tot uw inhoudsfragmenten. Alleen de benodigde inhoud wordt geretourneerd. Met de API kan een ontwikkelaar query&#39;s formuleren die specifieke inhoud selecteren. Dit selectieproces is gebaseerd op *uw* Modellen van inhoudsfragmenten.
 

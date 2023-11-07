@@ -1,18 +1,14 @@
 ---
 title: Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen
-seo-title: Backing up and recovering the EMC Documentum repository
 description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM formulieromgeving.
-seo-description: This document describes the tasks required to back up and recover the EMC Documentum repository configured for your AEM forms environment.
-uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 exl-id: bc21659f-88d6-4dff-8baf-12746e1b3ed9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '803'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -43,7 +39,7 @@ U hebt de volgende EMC NetWorker-modules nodig:
 * NetWorker-module
 * Wizard Configuratie NetWorker
 * Wizard Configuratie van NetWorker-apparaat
-* De Module van NetWorker voor het gegevensbestandtype dat door uw Server van de Inhoud wordt gebruikt
+* NetWorker Module voor het gegevensbestandtype dat door uw Server van de Inhoud wordt gebruikt
 * NetWorker Module voor Documentum
 
 ## De EMC Document Content Server voorbereiden voor back-up en herstel {#preparing-the-emc-document-content-server-for-backup-and-recovery}
@@ -54,7 +50,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
 1. Installeer op de EMC Documentum Content Server de EMC NetWorker-modules en accepteer alle standaardinstellingen.
 
-   Tijdens de installatieprocessen, wordt u ertoe aangezet om de servernaam van de computer van de Server van de Inhoud als in te gaan *NetWorker-servernaam*. Wanneer u de EMC NetWorker Module voor uw database installeert, kiest u een volledige installatie.
+   Tijdens de installatieprocessen, wordt u ertoe aangezet om de servernaam van de computer van de Server van de Inhoud als *NetWorker-servernaam*. Wanneer u de EMC NetWorker Module voor uw database installeert, kiest u een volledige installatie.
 
 1. Maak met behulp van de onderstaande voorbeeldinhoud een configuratiebestand met de naam *nsrnmd_win.cfg* en sla deze op een toegankelijke locatie op de Content Server op. Dit bestand wordt aangeroepen door de opdrachten voor back-up en herstel.
 
@@ -67,7 +63,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
     #
     # Parameters not shown can be set in this file (as per site customisation) #or from the command-line.
     #
-    # Please refer to the user Guides for details on all parameters, including
+    # See the user Guides for details on all parameters, including
     # those not listed below.
     # Note: DCTM environment for D6 is slightly different from D5, refer to D6
     # Installation Guide to update the values.
@@ -198,29 +194,29 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 
    * Volledige back-up van database (nsrnmddbf.bat):
 
-      `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
+     `NetWorker_database_module_root` `-s`*&lt;networker_server_name>* `-U``[username]` `-P`*[password ]*`-l full`*&lt;database_name>*
 
    * Incrementele back-up van databases (nsrnmddbi.bat):
 
-      `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s`*&lt;NetWorker_Server_Name>* `-U``[username]` `-P``[password]` `-l 1 -R`*&lt;database_name>*
 
    * Back-up van databaselogbestand (nsrnmddbl.bat):
 
-      `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
+     `[NetWorker_database_module_root]` `-s``<NetWorker_Server_Name>` `-U``[username]` `-P``[password]` `-l incr -R`*&lt;database_name>*
 
-      Waar:
+     Waarbij:
 
-      `[NetWorker_database_module_root]` is de installatiemap van de module NetWorker. Bijvoorbeeld, is de standaardinstallatiemap voor Module NetWorker voor SQL Server C:\Program Files\Legato\nsr\bin\nsrsqlsv.
+     `[NetWorker_database_module_root]` is de installatiemap van de module NetWorker. Bijvoorbeeld, is de standaardinstallatiemap voor Module NetWorker voor SQL Server C:\Program Files\Legato\nsr\bin\nsrsqlsv.
 
-      `NetWorker_Server_Name` is de server waarop NetWorker is geïnstalleerd.
+     `NetWorker_Server_Name` is de server waarop NetWorker is geïnstalleerd.
 
-      `username` &amp; `password` Dit zijn de gebruikersnaam en het wachtwoord van de databasebeheerder.
+     `username` &amp; `password` Dit zijn de gebruikersnaam en het wachtwoord van de databasebeheerder.
 
-      `database_name` is de naam van de database waarvan een back-up moet worden gemaakt.
+     `database_name` is de naam van de database waarvan een back-up moet worden gemaakt.
 
 **Een back-upapparaat maken**
 
-1. Maak een nieuwe directory op de EMC Documentum-server en deel de map door alle gebruikers volledige rechten te geven.
+1. Maak een directory op de EMC Documentum-server en deel de map door alle gebruikers volledige rechten te geven.
 1. Start EMC NetWorker Administrator en klik op Mediabeheer > Apparaten.
 1. Klik met de rechtermuisknop op Apparaten en selecteer Maken.
 1. Voer de volgende waarden in en klik op OK:
@@ -230,7 +226,7 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
    **Mediatype:** `File`
 
 1. Klik met de rechtermuisknop op het nieuwe apparaat en selecteer Bewerkingen.
-1. Klik op Label, voer een naam in, klik op OK en klik op Onderbrengen.
+1. Klik op Label, voer een naam in, klik op OK en klik vervolgens op Onderbrengen.
 
 Er wordt een apparaat toegevoegd waarop de back-upbestanden worden opgeslagen. U kunt meerdere apparaten met verschillende indelingen toevoegen.
 

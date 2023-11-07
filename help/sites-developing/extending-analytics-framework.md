@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 11c0aac6-a7f6-4d6b-a080-b04643045a64
 exl-id: ab0d4f2e-f761-4510-ba51-4a2dcea49601
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1619'
 ht-degree: 0%
 
 ---
@@ -92,9 +92,9 @@ Gebruik de volgende procedure om variabelen aan de lijst toe te voegen:
 
 1. Vouw op uw Adobe Analytics-frameworkpagina de **Algemene analytische instellingen** gebied.
 1. Klik onder de lijst met variabelen op Item toevoegen om een nieuwe variabele aan de lijst toe te voegen.
-1. Voer in de cel links een naam in voor de variabele, bijvoorbeeld `prop10`.
+1. Voer in de linkercel bijvoorbeeld een naam voor de variabele in. `prop10`.
 
-1. Voer in de rechterkolom bijvoorbeeld een waarde voor de variabele in `CONSTANT`.
+1. Voer in de rechterkolom bijvoorbeeld een waarde in voor de variabele: `CONSTANT`.
 
 1. Als u een variabele wilt verwijderen, klikt u op de knop (-) naast de variabele.
 
@@ -199,7 +199,7 @@ Uw JavaScript moet daarom worden ingesteld `s.usePlugins` tot `true` zodat de co
    1. Opgeven `cq` als de mapnaam en klik op OK.
    1. Maak op dezelfde manier de `analytics` en `components` mappen.
 
-1. Klik met de rechtermuisknop op de knop `components` de map die u net hebt gemaakt en klik op Maken > Component maken. Geef de volgende eigenschapswaarden op:
+1. Klik met de rechtermuisknop op de knop `components` map die u hebt gemaakt en klik op Maken > Component maken. Geef de volgende eigenschapswaarden op:
 
    * Label: `sitecatalyst`
    * Titel: `sitecatalyst`

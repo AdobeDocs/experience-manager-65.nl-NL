@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1956'
+source-wordcount: '1959'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,7 @@ De reactie zal het pagineren informatie als deel van bevatten `properties` van d
 
 Mappen fungeren als containers voor elementen en andere mappen. Ze weerspiegelen de structuur van de AEM-inhoudsopslagplaats.
 
-De REST API voor middelen stelt toegang tot de eigenschappen van een map beschikbaar, bijvoorbeeld de naam, titel, enz. Elementen worden weergegeven als onderliggende entiteiten van mappen en submappen.
+De REST API voor middelen stelt toegang tot de eigenschappen van een map beschikbaar, bijvoorbeeld de naam, titel, enzovoort. Elementen worden weergegeven als onderliggende entiteiten van mappen en submappen.
 
 >[!NOTE]
 >
@@ -235,9 +235,9 @@ Inhoudsfragmenten:
 
 #### Inhoudsmodellen en inhoudsfragmenten {#content-models-and-content-fragments}
 
-De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom *consument* moet op de hoogte zijn van het model van een fragment (minimaal), hoewel de meeste informatie kan worden afgeleid van de lading; als gegevenstypen, enz. maken deel uit van de definitie.
+De modellen die de structuur van een inhoudsfragment definiëren, worden momenteel niet via een HTTP-API weergegeven. Daarom *consument* moet op de hoogte zijn van het model van een fragment (minimaal), hoewel de meeste informatie kan worden afgeleid van de lading, als gegevenstypen enzovoort. maken deel uit van de definitie.
 
-Als u een nieuw inhoudsfragment wilt maken, moet u het pad (interne gegevensopslagruimte) van het model opgeven.
+Als u een inhoudsfragment wilt maken, moet u het pad (interne gegevensopslagruimte) van het model opgeven.
 
 #### Gekoppelde inhoud {#associated-content}
 
@@ -307,7 +307,7 @@ Gebruik gebeurt via:
 
 Er zijn een paar beperkingen:
 
-* **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het inhoudsfragmentmodel weten om een nieuw inhoudsfragment te kunnen maken of een bestaand inhoudsfragment bij te werken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
+* **Inhoudsfragmentmodellen worden momenteel niet ondersteund**: ze kunnen niet worden gelezen of gemaakt. Ontwikkelaars moeten het juiste pad naar het fragmentmodel van de inhoud kennen om een inhoudsfragment te kunnen maken of een bestaand fragment bij te werken. Momenteel is de enige methode om een overzicht van deze te krijgen door het beleid UI.
 * **Verwijzingen worden genegeerd**. Er wordt momenteel niet gecontroleerd of naar een bestaand inhoudsfragment wordt verwezen. Daarom kan het verwijderen van een inhoudsfragment bijvoorbeeld resulteren in problemen op een pagina die een verwijzing naar het verwijderde inhoudsfragment bevat.
 * **JSON-gegevenstype** De REST API-uitvoer van de *JSON-gegevenstype* is momenteel *op tekenreeks gebaseerde uitvoer*.
 

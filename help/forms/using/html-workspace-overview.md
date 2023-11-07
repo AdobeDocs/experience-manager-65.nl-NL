@@ -10,9 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1043'
+source-wordcount: '1042'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Zie voor meer informatie [Inleiding tot de AEM Forms-werkruimte](/help/forms/usi
 
 ## Kennis krijgen {#getting-familiar}
 
-Om vertrouwd met het proces van begin tot eind te zijn om een vormtoepassing te creëren om een bedrijfsproces te automatiseren, volg de analyse. U kunt een toepassing maken, beheren en testen met Workbench, Designer en AEM Forms nadat u de stappen hebt uitgevoerd. Zie voor meer informatie over de implementatie [Uw eerste AEM Forms-toepassing maken](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
+Om vertrouwd met het proces van begin tot eind te zijn om een vormtoepassing tot stand te brengen om een bedrijfsproces te automatiseren, volg de analyse. U kunt een toepassing maken, beheren en testen met Workbench, Designer en AEM Forms nadat u de stappen hebt uitgevoerd. Zie voor meer informatie over de implementatie [Uw eerste AEM Forms-toepassing maken](https://help.adobe.com/en_US/livecycle/11.0/CreateFirstApp/index.html).
 
 ## Functioneel overzicht {#functional-overview}
 
@@ -94,19 +94,19 @@ De toewijzing tussen diverse soorten aanpassingen in beide werkruimten is als vo
     <ol>
      <li>De gebruikersinterface van de werkruimte vereenvoudigen<br /> </li>
      <li>Een nieuw aanmeldingsscherm maken</li>
-     <li>Een aangepaste goedkeuringscontainer maken</li>
+     <li>Een aangepaste Goedkeuringscontainer maken</li>
     </ol> </td>
    <td>
     <ol>
      <li><a href="/help/forms/using/description-reusable-components.md">Werken met herbruikbare componenten</a></li>
-     <li><a href="/help/forms/using/creating-new-login-screen.md">Een nieuw aanmeldingsscherm maken</a></li>
+     <li><a href="/help/forms/using/creating-new-login-screen.md">Aanmeldingsscherm maken</a></li>
      <li>Goedkeuringscontainer is afgekeurd.</li>
     </ol> </td>
   </tr>
  </tbody>
 </table>
 
-Enkele functies van de Flex Workspace die niet beschikbaar zijn in de AEM Forms-werkruimte zijn onder andere: berichten en meldingen, welkomstpagina, goedkeuringscontainer en optie voor het beheren van kolomkoppen. Voor een volledige lijst raadpleegt u [Functies van de Flex-werkruimte zijn niet beschikbaar in de AEM Forms-werkruimte](/help/forms/using/features-flex-workspace-available-html.md).
+Enkele functies van de Flex Workspace die niet beschikbaar zijn in de AEM Forms-werkruimte zijn onder andere: berichten en meldingen, welkomstpagina, goedkeuringscontainer en optie voor het beheer van kolomkoppen. Zie voor een volledige lijst [Functies van Flex Workspace zijn niet beschikbaar in de AEM Forms-werkruimte](/help/forms/using/features-flex-workspace-available-html.md).
 
 ## Ontwikkelen met de AEM Forms-werkruimte {#developing-with-aem-forms-workspace}
 
@@ -118,7 +118,7 @@ De AEM Forms-werkruimte is een op HTML en JavaScript™ gebaseerde webtoepassing
 
 De AEM Forms-werkruimte ondersteunt een groot aantal aanpassingen waarmee de lay-out van de gebruikersinterface, de weergave, functionaliteit en nog veel meer kunnen worden bijgewerkt. Bij de aanpassingen moet u een of meer van de volgende handelingen bijwerken:
 
-* Weergaven van de gebruikersinterface
+* Vormgeving van de gebruikersinterface
 * Functionaliteit met semantische aanpassingen
 * HTML-componenten opnieuw gebruiken in andere webtoepassingen
 
@@ -138,4 +138,4 @@ Voor een nieuw proces wordt een XDP-formulier standaard weergegeven in de PDF-in
 
 ## AEM Forms-app voor werkruimte {#aem-forms-workspace-app}
 
-Als u aan uw bedrijfsprocessen op een mobiel apparaat wilt werken, kunt u de AEM Forms-app voor werkruimte van AEM Forms gebruiken. Zie voor meer informatie de [Overzicht van de AEM Forms-werkruimte](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).
+Als u aan uw bedrijfsprocessen op een mobiel apparaat wilt werken, kunt u de AEM Forms-app voor werkruimte van AEM Forms gebruiken. Zie de klasse [Overzicht van de AEM Forms-werkruimte](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html).

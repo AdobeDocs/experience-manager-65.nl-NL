@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '8187'
+source-wordcount: '8184'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ U moet een niet-gecodeerd PDF-document verkrijgen om het document met een wachtw
 
 Als u een PDF-document met een wachtwoord wilt versleutelen, geeft u vier waarden op, waaronder twee wachtwoordwaarden. Het eerste wachtwoord wordt gebruikt om het PDF-document te versleutelen en moet worden opgegeven bij het openen van het PDF-document. De tweede wachtwoordwaarde, die de hoofdwachtwoordwaarde wordt genoemd, wordt gebruikt om encryptie uit het document van de PDF te verwijderen. Wachtwoordwaarden zijn hoofdlettergevoelig en deze twee wachtwoordwaarden kunnen niet dezelfde waarden zijn.
 
-U moet de PDF-documentbronnen opgeven die u wilt versleutelen. U kunt het volledige document van de PDF, alles behalve de meta-gegevens van het document, of enkel de gehechtheid van het document coderen. Als u alleen de bijlagen van het document versleutelt, wordt een gebruiker om een wachtwoord gevraagd wanneer hij of zij de bestandsbijlagen wil openen.
+Geef de bronnen voor het PDF-document op die u wilt versleutelen. U kunt het volledige document van de PDF, alles behalve de meta-gegevens van het document, of enkel de gehechtheid van het document coderen. Als u alleen de bijlagen van het document versleutelt, wordt een gebruiker om een wachtwoord gevraagd wanneer hij of zij de bestandsbijlagen wil openen.
 
 Wanneer u een PDF-document versleutelt, kunt u machtigingen opgeven die aan het beveiligde document zijn gekoppeld. Door machtigingen op te geven, kunt u de handelingen beheren die een gebruiker die een met een wachtwoord gecodeerd PDF-document opent, mag uitvoeren. Als u bijvoorbeeld met succes formuliergegevens wilt extraheren, moet u de volgende machtigingen instellen:
 

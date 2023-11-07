@@ -4,9 +4,9 @@ description: Dit artikel introduceert de concepten van een SPA en loopt door het
 topic-tags: spa
 content-type: reference
 exl-id: 95990112-2afc-420a-a7c7-9613f40d4c4a
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1965'
+source-wordcount: '1950'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,9 @@ De analyse is gebaseerd op standaard AEM functionaliteit en de steekproefWKND SP
 
 >[!CAUTION]
 >
->In dit document worden de [WKND Spa Project-app](https://github.com/adobe/aem-guides-wknd-spa) uitsluitend voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
+>In dit document worden de [WKND Spa Project-app](https://github.com/adobe/aem-guides-wknd-spa) uitsluitend voor demonstratiedoeleinden. Niet gebruiken voor projectwerk.
 >
->Elk AEM project moet [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) die SPA projecten steunt die React of Angular gebruiken en hefboomwerkingen de SPA SDK.
+>Voor elk AEM project moet het [Projectarchetype AEM](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/developing/archetype/overview.html) die SPA projecten gebruikend React of Angular steunt en SPA SDK gebruikt.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -75,7 +75,7 @@ Door sneller, vloeiend en meer als een native toepassing te zijn, wordt een SPA 
 **Ontwikkelaars**
 
 * Ontwikkelaars willen een duidelijke scheiding tussen inhoud en presentatie.
-* Schone scheiding maakt het systeem uitbreidbaarder en maakt een onafhankelijke ontwikkeling aan de voorzijde mogelijk.
+* Schone scheiding maakt het systeem meer uitbreidbaar en maakt een onafhankelijke ontwikkeling aan de voorzijde mogelijk.
 
 ### Hoe werkt een SPA? {#how-does-a-spa-work}
 
@@ -97,7 +97,7 @@ Door het pagina-element op de client weer te geven, reageert het pagina-element 
 
 ## Ervaring voor het bewerken van inhoud met SPA {#content-editing-experience-with-spa}
 
-Wanneer een SPA is gemaakt om gebruik te maken van de AEM SPA Editor, merkt de auteur van de inhoud op dat er geen verschil is bij het bewerken en maken van inhoud. Er is algemene AEM beschikbaar en er zijn geen wijzigingen in de workflow van de auteur vereist.
+Wanneer een SPA is gemaakt om de AEM SPA Editor te gebruiken, merkt de auteur van de inhoud op dat er geen verschil is bij het bewerken en maken van inhoud. Er is algemene AEM beschikbaar en er zijn geen wijzigingen in de workflow van de auteur vereist.
 
 1. Bewerk de WKND SPA Project-app in AEM.
 
@@ -109,7 +109,7 @@ Wanneer een SPA is gemaakt om gebruik te maken van de AEM SPA Editor, merkt de a
 
    ![Stap 2](assets/spa-walkthrough-step-2.png)
 
-1. Bewerk de inhoud als normaal binnen AEM en houd er rekening mee dat de wijzigingen zich blijven voordoen.
+1. Bewerk de inhoud als normaal binnen AEM. De wijzigingen blijven bestaan.
 
    ![Stap 3](assets/spa-walkthrough-step-3.png)
 
@@ -183,7 +183,7 @@ de volgende afdeling, [Een SPA toepassing laden,](#loading-an-spa-application) g
 
 1. Schakel over naar de **Netwerk** van de ontwikkelaarsgereedschappen en laad de pagina opnieuw.
 
-   Afbeeldingsverzoeken negeren. De primaire bronnen die voor de pagina worden geladen, zijn de pagina zelf, CSS, de React JavaScript, de afhankelijkheden en JSON-gegevens voor de pagina.
+   Afbeeldingsverzoeken worden genegeerd. De primaire bronnen die voor de pagina worden geladen, zijn de pagina zelf, CSS, de React JavaScript, de afhankelijkheden en JSON-gegevens voor de pagina.
 
    ![Stap 5](assets/spa-walkthrough-step-1-5.png)
 
@@ -195,7 +195,7 @@ de volgende afdeling, [Een SPA toepassing laden,](#loading-an-spa-application) g
 
    De AEM SPA Editor gebruikt [AEM Content Services](/help/assets/content-fragments/content-fragments.md) om de volledige inhoud van de pagina als JSON-model te leveren.
 
-   Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt naar beneden gedelegeerd aan elke component (van pagina, alinea, component, enz.).
+   Door specifieke interfaces uit te voeren, verstrekken de Modellen van het Sling de informatie noodzakelijk aan de SPA. De levering van de JSON-gegevens wordt omlaag gedelegeerd aan elke component (van pagina, alinea, component, enzovoort).
 
    Elke component kiest wat het blootstelt en hoe het (server-kant met HTML of cliënt-kant met React) wordt teruggegeven. Dit artikel richt zich op client-side rendering met React.
 
@@ -213,7 +213,7 @@ de volgende afdeling, [Een SPA toepassing laden,](#loading-an-spa-application) g
 
 ### Interactie met de SPA Editor {#interaction-with-the-spa-editor}
 
-Met behulp van de voorbeeldtoepassing WKND SPA Project is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, waarbij gebruik wordt gemaakt van inhoudsservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
+Met behulp van de voorbeeldtoepassing WKND SPA Project is het duidelijk hoe de app zich gedraagt en wordt geladen wanneer deze wordt gepubliceerd, met behulp van inhoudsservices voor het leveren van JSON-inhoud en het asynchroon laden van bronnen.
 
 Voor de auteur van de inhoud is het maken van inhoud met een SPA-editor bovendien naadloos in AEM.
 
@@ -235,7 +235,7 @@ In de volgende sectie zullen wij het contract onderzoeken dat de SPARedacteur to
 
    Met dit pad kunt u het contextconfiguratieobject van elke component ophalen en koppelen.
 
-   Dit is het enige prijsverhogingsattribuut dat voor de redacteur wordt vereist om dit als editable component binnen de SPA te erkennen. Op basis van dit kenmerk bepaalt de SPA Editor welke bewerkbare configuratie aan de component is gekoppeld, zodat het juiste frame, de juiste werkbalk, enzovoort. is geladen.
+   Dit is het enige prijsverhogingsattribuut dat voor de redacteur wordt vereist om dit als editable component binnen de SPA te erkennen. Gebaseerd op dit attribuut, zal de SPA Redacteur bepalen welke editable configuratie met de component wordt geassocieerd, zodat het correcte kader, de toolbar, etc., wordt geladen.
 
    Bepaalde specifieke klassenamen worden ook toegevoegd voor het markeren van plaatsaanduidingen en voor het slepen en neerzetten van elementen.
 
@@ -252,4 +252,4 @@ Nu u de SPA het uitgeven ervaring in AEM begrijpt en hoe een SPA op de SPA Redac
 
 * [Aan de slag met SPA in AEM](/help/sites-developing/spa-getting-started-react.md) toont hoe een basis SPA wordt gebouwd om met de SPARedacteur in AEM te werken
 * [Overzicht SPA Editor](/help/sites-developing/spa-overview.md) gaat dieper in het communicatie model tussen AEM en de SPA.
-* [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architecture.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen evenals hoe SPA met AEM architectuur in wisselwerking staan.
+* [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architecture.md) beschrijft hoe te om front-end ontwikkelaars in dienst te nemen om een SPA voor AEM te ontwikkelen en hoe SPA met AEM architectuur in wisselwerking staan.

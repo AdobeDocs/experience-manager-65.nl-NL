@@ -1,19 +1,15 @@
 ---
 title: Openingspagina's
-seo-title: Landing Pages
 description: Met de functie voor het plaatsen van pagina's kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of slechts een deel van een pagina kunnen worden geïmporteerd.
-seo-description: The landing pages feature allows quick and easy importing of a design and content right into an AEM page. A web developer can prepare the HTML and additional assets that can be imported as a full page or only a part of a page.
-uuid: b294c43f-63ae-4b5b-bef0-04566e350b63
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 061dee36-a3bb-4166-a9c1-3ab7e4de1d1d
 docset: aem65
 exl-id: 0f1014a7-b0ba-4455-b3a4-5023bcd4c5a1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '3329'
+source-wordcount: '3323'
 ht-degree: 0%
 
 ---
@@ -351,13 +347,13 @@ Adobe raadt aan de importer van het ontwerp op een testinstantie te gebruiken. O
 
 ### Een importpagina maken {#creating-an-importer-page}
 
-Voordat u het ontwerp van de bestemmingspagina kunt importeren, moet u een importerpagina maken, bijvoorbeeld in het kader van een campagne. Met de sjabloon Pagina importeren kunt u de volledige HTML-landingspagina importeren. De pagina bevat een neerzetvak waarin het ontwerppakket van de bestemmingspagina kan worden geïmporteerd door slepen en neerzetten te gebruiken.
+Voordat u het ontwerp van de bestemmingspagina kunt importeren, moet u bijvoorbeeld een importerpagina maken in het kader van een campagne. Met de sjabloon Pagina importeren kunt u de volledige HTML-landingspagina importeren. De pagina bevat een neerzetvak waarin het ontwerppakket van de bestemmingspagina kan worden geïmporteerd door slepen en neerzetten te gebruiken.
 
 >[!NOTE]
 >
 >Standaard kan een pagina Importer alleen worden gemaakt via campagnes, maar u kunt deze sjabloon ook bedekken om een bestemmingspagina te maken onder `/content/mysite`.
 
-Een nieuwe openingspagina maken:
+Een openingspagina maken:
 
 1. Ga naar de **Websites** console.
 1. Selecteer de campagne in het linkerdeelvenster.
@@ -417,7 +413,7 @@ Wanneer u het ontwerppakket importeert, **Ontwerp wissen** en **Geïmporteerde p
 
 ### Het geïmporteerde ontwerppakket downloaden {#downloading-the-imported-design-package}
 
-Door het ZIP-bestand te downloaden, kunt u opnemen welk ZIP-bestand met een bepaalde bestemmingspagina is geïmporteerd. Wijzigingen die op een pagina zijn aangebracht, worden niet toegevoegd aan het postvak.
+Door het ZIP-bestand te downloaden, kunt u opnemen welk ZIP-bestand met een bepaalde bestemmingspagina is geïmporteerd. Wijzigingen die worden aangebracht op een pagina, worden niet toegevoegd aan het postvak.
 
 Klik op **Postcode downloaden** op de werkbalk Landingspagina.
 

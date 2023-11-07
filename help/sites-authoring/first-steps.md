@@ -1,6 +1,6 @@
 ---
 title: Eerste stappen voor auteurs bij het maken van inhoud in AEM
-description: Een overzicht van de belangrijkste taken die u gebruikt bij het ontwerpen van inhoud met Adobe Experience Manager (AEM).
+description: Een overzicht van de belangrijkste taken die u gebruikt wanneer het ontwerpen van inhoud met de Managaer van de Ervaring van de Adobe (AEM).
 uuid: 1a09da22-faa4-4a7a-a2c5-97a255a6a2ae
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 85ebc05d-ce45-4bbb-b9cc-b21810d0d877
 docset: aem65
 exl-id: b2103774-1876-4bf8-a29a-2ba0d51e7914
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -23,10 +23,10 @@ Deze sectie geeft u een overzicht van de belangrijkste taken die u wanneer zult 
 Het omvat:
 
 * [Aan de slag](#getting-started)\
-   De basisvolgorde weergeven van gebeurtenissen die u nodig hebt voor het maken en publiceren van uw eerste pagina.
+  De basisvolgorde weergeven van gebeurtenissen die u nodig hebt voor het maken en publiceren van uw eerste pagina.
 
 * [Verdere acties](#further-actions)\
-   De vele andere acties die u tijdens het ontwerpen kunt gebruiken, volgen.
+  De vele andere acties die u tijdens het ontwerpen kunt gebruiken, volgen.
 
 ## Aan de slag {#getting-started}
 
@@ -38,15 +38,15 @@ De inhoud van uw website staat in een boomstructuur. Als u een pagina wilt maken
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
-Voordat u gaat bewerken, moet u [een nieuwe pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page).
+Voordat u gaat bewerken, moet u [een pagina maken](/help/sites-authoring/managing-pages.md#creating-a-new-page).
 
-### Een pagina openen {#opening-a-page}
+### Pagina&#39;s openen {#opening-a-page}
 
 Voor vele acties, zoals het uitgeven, moet u [een pagina openen](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 
 ### Een pagina bewerken {#editing-a-page}
 
-Of uw exemplaar reeds bestaande pagina&#39;s heeft of u enkel een nieuwe pagina hebt gecreeerd zelf kunt u [een pagina bewerken](/help/sites-authoring/editing-content.md) door:
+Of uw instantie al bestaande pagina&#39;s heeft of u zelf een nieuwe pagina hebt gemaakt [een pagina bewerken](/help/sites-authoring/editing-content.md) door:
 
 * [Een component invoegen (alinea)](/help/sites-authoring/editing-content.md#inserting-a-component)
 * [Bewerken/configureren/kopiëren/knippen/verwijderen/plakken](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) een component
@@ -59,7 +59,7 @@ Of uw exemplaar reeds bestaande pagina&#39;s heeft of u enkel een nieuwe pagina 
 
 ### Pagina&#39;s publiceren {#publishing-a-page}
 
-Als u klaar bent met het bewerken van de pagina, wilt u [de pagina publiceren (of activeren)](/help/sites-authoring/publishing-pages.md#main-pars-title-10) zodat deze beschikbaar is voor bezoekers van uw website.
+Als u klaar bent met het bewerken van de pagina, wilt u [de pagina publiceren (of activeren)](/help/sites-authoring/publishing-pages.md#main-pars-title-10) zodat de website beschikbaar is voor bezoekers.
 
 ## Verdere acties {#further-actions}
 
@@ -75,7 +75,7 @@ Het is soms gemakkelijker om [pagina&#39;s kopiëren](/help/sites-authoring/mana
 
 ### Publicatie van een pagina ongedaan maken {#unpublishing-a-page}
 
-Als u eerder gepubliceerde (of geactiveerde) inhoud niet beschikbaar wilt maken op uw openbare website, [Publicatie van de pagina ongedaan maken (of de pagina deactiveren)](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
+Als u eerder gepubliceerde (of geactiveerde) inhoud niet beschikbaar wilt maken op uw openbare website, [de publicatie van de pagina ongedaan maken (of de pagina deactiveren)](/help/sites-authoring/publishing-pages.md#main-pars-title-5).
 
 ### Een pagina verwijderen {#deleting-a-page}
 
@@ -87,8 +87,8 @@ Elke [pagina heeft eigenschappen](/help/sites-authoring/editing-page-properties.
 
 ### Een versie van een pagina maken {#creating-a-version-of-a-page}
 
-U kunt [een versie maken](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) van een pagina en vervolgens [terugkeren naar een versie](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version) indien nodig.
+U kunt [een versie maken](/help/sites-authoring/working-with-page-versions.md#creating-a-new-version) van een pagina [terugkeren naar een versie](/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version) indien nodig.
 
 ## Meer informatie {#more-information}
 
-Toegang tot meer informatie over ontwerpen vindt u onder [Pagina&#39;s ontwerpen](/help/sites-authoring/page-authoring.md).
+Toegang tot meer informatie over ontwerpen kunt u vinden onder [Pagina&#39;s ontwerpen](/help/sites-authoring/page-authoring.md).

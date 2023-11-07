@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '10239'
+source-wordcount: '10229'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Als u IPv6 gebruikt, ga de Basis URL als computernaam of DNS naam in. Als u een 
 
 >[!NOTE]
 >
->De basis-URL is ingesloten in bestanden die met een beleid zijn beveiligd. Clienttoepassingen gebruiken de basis-URL om weer verbinding te maken met de server. Beveiligde bestanden blijven de basis-URL bevatten, zelfs als deze later wordt gewijzigd. Als u de basis-URL wijzigt, moeten de configuratiegegevens voor alle verbindingsclients worden bijgewerkt.
+>De basis-URL is ingesloten in bestanden die met een beleid zijn beveiligd. Clienttoepassingen gebruiken de basis-URL om weer verbinding te maken met de server. Beveiligde bestanden blijven de basis-URL bevatten, zelfs als deze later wordt gewijzigd. Als u de basis-URL wijzigt, moeten de configuratiegegevens voor alle verbindende clients worden bijgewerkt.
 
 **Standaardperiode offlinelease:** De standaardtijdsduur dat een gebruiker een beveiligd document offline kan gebruiken. Deze instelling bepaalt de aanvankelijke waarde van de instelling voor de automatisch offline leaseperiode wanneer u een beleid maakt. (Zie Beleid maken en bewerken.) Wanneer de huurperiode verloopt, moet de ontvanger het document opnieuw synchroniseren om het te blijven gebruiken.
 
@@ -625,7 +625,7 @@ Indien vereist door uw gastheer SMTP, typ de vereiste informatie in de de Naam v
 
 ### E-mailinstellingen voor uitnodiging registreren {#registration-invitation-email-settings}
 
-Met documentbeveiliging wordt automatisch een e-mailuitnodiging tot inschrijving verzonden wanneer u een nieuwe uitgenodigde gebruikersaccount maakt of wanneer een bestaande gebruiker een externe ontvanger toevoegt die zich nog niet heeft geregistreerd of die is uitgenodigd om zich te registreren voor een beleid. Het e-mailbericht bevat een koppeling die de ontvanger kan gebruiken om toegang te krijgen tot de registratiepagina en persoonlijke accountgegevens in te voeren, zoals gebruikersnaam en wachtwoord. Het wachtwoord kan elke combinatie van acht tekens zijn.
+Met documentbeveiliging wordt automatisch een e-mailuitnodiging tot inschrijving verzonden wanneer u een uitgenodigde gebruikersaccount maakt of wanneer een bestaande gebruiker een externe ontvanger toevoegt die zich nog niet heeft geregistreerd of die is uitgenodigd om zich te registreren voor een beleid. Het e-mailbericht bevat een koppeling die de ontvanger kan gebruiken om toegang te krijgen tot de registratiepagina en persoonlijke accountgegevens in te voeren, zoals gebruikersnaam en wachtwoord. Het wachtwoord kan elke combinatie van acht tekens zijn.
 
 Wanneer de ontvanger de account activeert, wordt de gebruiker een lokale gebruiker.
 
@@ -645,7 +645,7 @@ Nadat uitgenodigde gebruikers zich hebben geregistreerd, verzendt de documentbev
 
 Wanneer de ontvanger de gebruikersaccount activeert, wordt de gebruiker een lokale gebruiker.
 
-De volgende instellingen bevinden zich in het gebied Configuratie via e-mail activeren van de pagina Uitgenodigde gebruikersregistratie.
+De volgende instellingen bevinden zich in het gedeelte Configuratie via e-mail activeren van de pagina Uitgenodigde gebruikersregistratie.
 
 >[!NOTE]
 >
@@ -663,7 +663,7 @@ De volgende instellingen bevinden zich in het gebied Configuratie via e-mail act
 
 Als u het wachtwoord van een uitgenodigde gebruiker opnieuw moet instellen, wordt een bevestigingsmail geproduceerd die de gebruiker uitnodigt om een nieuw wachtwoord te kiezen. Het wachtwoord van een gebruiker kan niet worden bepaald; als de gebruiker het vergeet, moet u het terugstellen.
 
-De volgende instellingen bevinden zich in het e-mailgebied Wachtwoord opnieuw instellen van de pagina Uitgenodigde gebruikersregistratie.
+De volgende instellingen bevinden zich in het gebied Wachtwoord opnieuw instellen in de pagina Uitgenodigde gebruikersregistratie.
 
 **Van:** Het e-mailadres waar het e-mailadres voor het opnieuw instellen van het wachtwoord naartoe wordt verzonden. De standaardindeling van het e-mailadres Van is postmaster@[your_installation_domain].com.
 
@@ -706,7 +706,7 @@ De geselecteerde gebruikers en groepen hebben nu toestemming om aangepast beleid
 
 ### Gebruikers en groepen opgeven die zichtbaar zijn in zoekopdrachten {#specify-users-and-groups-that-are-visible-in-searches}
 
-Wanneer gebruikers hun douanebeleid beheren, kunnen zij naar gebruikers en groepen zoeken om aan hun beleid toe te voegen. U moet de domeinen specificeren waarvan de gebruikers en de groepen in deze onderzoeken zichtbaar zijn.
+Wanneer gebruikers hun douanebeleid beheren, kunnen zij naar gebruikers en groepen zoeken om aan hun beleid toe te voegen. Geef de domeinen op waaruit gebruikers en groepen zichtbaar zijn in deze zoekopdrachten.
 
 1. Voor de pagina van de documentveiligheid, klik Configuratie > Mijn Beleid.
 1. Voor de Mijn pagina van Beleid, klik de Zichtbare Gebruikers en de Groepen tabel.

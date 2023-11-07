@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 8eef7e4d-a6f2-4b87-a995-0761447283c6
-source-git-commit: 4e2ee7da5424ac6677eaa2392de7803e7543d13c
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM)-componenten en -sjablonen vormen een krachtige toolkit. Ze kunnen door ontwikkelaars worden gebruikt om zakelijke gebruikers, editors en beheerders van websites de functionaliteit te bieden om hun websites aan te passen aan veranderende bedrijfsbehoeften (inhouds-behendigheid). Dit alles met behoud van de uniforme lay-out van de sites (merkbescherming).
 
-Een typische uitdaging voor een persoon verantwoordelijk voor een website, of reeks websites (bijvoorbeeld in een bijkantoor van een globale onderneming), is een nieuw type van inhoudspresentatie op hun websites te introduceren.
+Een typische uitdaging voor een persoon verantwoordelijk voor een website, of een reeks websites (bijvoorbeeld in een bijkantoor van een globale onderneming), is een nieuw type van inhoudspresentatie op hun websites te introduceren.
 
 Laten we ervan uitgaan dat er een nieuwsbrief moet worden toegevoegd aan de websites, waarin uittreksels uit andere artikelen staan die al zijn gepubliceerd. De pagina moet hetzelfde ontwerp en dezelfde structuur hebben als de rest van de website.
 
 De aanbevolen manier om een dergelijke uitdaging aan te gaan is:
 
-* U kunt een bestaande sjabloon opnieuw gebruiken, zodat u een nieuw type pagina kunt maken. De sjabloon definieert grofweg de paginastructuur (navigatie-elementen, deelvensters, enzovoort), die verder wordt verfijnd door het ontwerp (CSS, afbeeldingen).
+* U kunt een bestaande sjabloon opnieuw gebruiken, zodat u een paginatype kunt maken. De sjabloon definieert grofweg de paginastructuur (navigatie-elementen, deelvensters, enzovoort), die verder wordt verfijnd door het ontwerp (CSS, afbeeldingen).
 * Gebruik het paragraafsysteem (parsys/iparsys) op de nieuwe pagina&#39;s.
 * Bepaal toegangsrecht tot de wijze van het Ontwerp van de paragraafsystemen, zodat slechts de gemachtigde mensen (gewoonlijk de beheerder) hen kunnen veranderen.
 * Definieer de componenten die zijn toegestaan in het opgegeven alineasysteem, zodat editors de vereiste componenten op de pagina kunnen plaatsen. In dit geval kan het een component List zijn, die een subboomstructuur van pagina&#39;s kan doorlopen en de informatie kan ophalen volgens vooraf gedefinieerde regels.

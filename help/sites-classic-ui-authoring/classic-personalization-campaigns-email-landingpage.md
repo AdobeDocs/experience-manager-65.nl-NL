@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: b41de64a-7d27-4633-a8d5-ac91d47eb1bb
 docset: aem65
 exl-id: c2fbf858-8815-426e-a2e5-f92bcf909ad0
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '613'
 ht-degree: 0%
@@ -32,7 +32,7 @@ Als u een effectieve bestemmingspagina voor nieuwsbrieven wilt maken, moet u het
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).
->Aanbeveling is gericht op het benutten van [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
+>Aanbevolen wordt [Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md).
 
 ## Een lijst maken voor de nieuwsbrief {#creating-a-list-for-the-newsletter}
 
@@ -48,7 +48,7 @@ Maak een registratieformulier voor nieuwsbrieven waarmee gebruikers zich op tags
 
 Als u uw eigen nieuwsbrief wilt maken, raadpleegt u de informatie over het maken van formulieren in het dialoogvenster [Forms-documentatie](/help/sites-authoring/default-components.md#form). De nieuwsbrief gebruikt de markeringen van de bibliotheek van de Markering. Zie voor meer tags [Tagbeheer](/help/sites-authoring/tags.md#tagadministration).
 
-De verborgen gebieden in het volgende voorbeeld verstrekken de volledige minimale hoeveelheid informatie (e-mail); bovendien kunt u later meer velden toevoegen, maar dit heeft invloed op de conversiesnelheid.
+De verborgen velden in het volgende voorbeeld bieden de minimale hoeveelheid informatie (e-mail). Daarnaast kunt u later meer velden toevoegen, maar dit heeft invloed op de conversiesnelheid.
 
 In het volgende voorbeeld wordt een formulier gemaakt op https://localhost:4502/cf#/content/geometrixx/en/toolbar/newsletter.html.
 

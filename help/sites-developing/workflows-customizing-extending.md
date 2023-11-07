@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 exl-id: 9e205912-50a6-414a-b8d4-a0865269d0e0
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '3588'
 ht-degree: 0%
@@ -825,7 +825,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
      Moet overerven van een bestaande stap.
 
-     In dit voorbeeld overerven we van de basisstap bij `cq/workflow/components/model/step`, maar u kunt andere supertypen gebruiken zoals `participant`, `process`, enz.
+     In dit voorbeeld overerven we van de basisstap bij `cq/workflow/components/model/step`, maar u kunt andere supertypen gebruiken zoals `participant`, `process`, enzovoort.
 
    * `jcr:title`
 

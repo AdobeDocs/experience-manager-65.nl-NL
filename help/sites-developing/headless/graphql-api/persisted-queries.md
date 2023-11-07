@@ -2,9 +2,9 @@
 title: Blijvende GraphQL-query's
 description: Leer hoe u GraphQL-query's in Adobe Experience Manager kunt voortzetten voor optimale prestaties. De aanhoudende vragen kunnen door cliënttoepassingen worden gevraagd gebruikend de methode van de GET van HTTP en de reactie kan bij de lagen worden in het voorgeheugen ondergebracht Dispatcher en CDN, uiteindelijk verbeterend de prestaties van de cliënttoepassingen.
 exl-id: d7a1955d-b754-4700-b863-e9f66396cbe1
-source-git-commit: 71b3f7c6ad2c7712762a29518de6cf0639081cb7
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
-source-wordcount: '1423'
+source-wordcount: '1422'
 ht-degree: 1%
 
 ---
@@ -195,7 +195,7 @@ GET <AEM_HOST>/graphql/execute.json/<PERSISTENT_PATH>
 
 Wanneer `PERSISTENT_PATH` is een verkort pad naar de opslaglocatie van de Persisted-query.
 
-1. Bijvoorbeeld `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persisted-query. De query uitvoeren:
+1. Bijvoorbeeld: `wknd` is de configuratienaam en `plain-article-query` is de naam van de Persisted-query. De query uitvoeren:
 
    ```shell
    $ curl -X GET \
@@ -395,10 +395,10 @@ De blijvende vragen kunnen in worden gebouwd [AEM](/help/sites-administering/pac
 Een pakket maken:
 
 1. Navigeren naar **Gereedschappen** > **Implementatie** > **Pakketten**.
-1. Een nieuw pakket maken door te tikken **Pakket maken**. Hiermee wordt een dialoogvenster geopend waarin het pakket wordt gedefinieerd.
+1. Een pakket maken door erop te tikken **Pakket maken**. Hiermee wordt een dialoogvenster geopend waarin u het pakket kunt definiëren.
 1. In het dialoogvenster Pakketdefinitie, onder **Algemeen** Voer een **Naam** zoals &quot;wknd-persistent-questions&quot;.
 1. Voer een versienummer in, bijvoorbeeld &quot;1.0&quot;.
-1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor de `wknd` configuratie het volledige weg zal zijn `/conf/wknd/settings/graphql/persistentQueries`.
+1. Onder **Filters** een nieuwe **Filter**. Gebruik de Finder van de Weg om te selecteren `persistentQueries` onder de configuratie. Bijvoorbeeld voor `wknd` configuratie het volledige weg zal zijn `/conf/wknd/settings/graphql/persistentQueries`.
 1. Tikken **Opslaan** om de nieuwe pakketdefinitie op te slaan en het dialoogvenster te sluiten.
 1. Tik op de knop **Opbouwen** in de nieuwe definitie van het Pakket.
 

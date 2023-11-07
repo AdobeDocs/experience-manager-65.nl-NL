@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: interactive-communication
 feature: Interactive Communication
 exl-id: f65d8eb9-4d2c-4a6e-825f-45bcfaa7ca75
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '2166'
 ht-degree: 0%
@@ -187,7 +187,7 @@ Voordat u de Java-servlet implementeert, moet u ervoor zorgen dat u een interact
        </dependency>
    ```
 
-1. Open het project van Java, creeer een .java dossier, bijvoorbeeld CCMBatchServlet.java. Voeg de volgende code toe aan het bestand:
+1. Open het project van Java, creeer een .java dossier, bijvoorbeeld, CCMBatchServlet.java. Voeg de volgende code toe aan het bestand:
 
    ```java
            package com.adobe.fd.ccm.multichannel.batch.integration;

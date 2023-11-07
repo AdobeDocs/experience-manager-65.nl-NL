@@ -1,14 +1,12 @@
 ---
 title: Tags gebruiken
 description: Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
-uuid: 9799131f-4043-4022-a401-af8be93a1bf6
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 exl-id: 4b6c273c-560e-4330-b886-a02825d5aaa1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 27e5c7fea4e90873bf80f976e179b5af0088f550
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%

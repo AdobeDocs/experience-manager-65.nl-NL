@@ -1,14 +1,12 @@
 ---
 title: Werken met workflows
 description: Met AEM workflows kunt u een reeks stappen automatiseren die op een pagina of element worden uitgevoerd. Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren.
-uuid: 3eb6e790-6589-414a-8e51-33c358f47a73
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: b11f0e4c-4dec-4b66-9f54-a0aa13ac77b9
 exl-id: 298fcfeb-dc8d-4edc-8743-83c0e5e5bc08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
 source-wordcount: '208'
 ht-degree: 6%

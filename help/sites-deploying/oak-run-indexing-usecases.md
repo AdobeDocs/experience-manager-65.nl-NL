@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: deploying
 noindex: true
 exl-id: d25e3070-080a-4594-8fdb-9f09164135fc
-source-git-commit: ae08247c7be0824151637d744f17665c3bd82f2d
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '1386'
+source-wordcount: '1385'
 ht-degree: 0%
 
 ---
@@ -28,7 +28,7 @@ Secties hieronder bieden voorbeeldopdrachten. De opdracht voor het uitvoeren van
 
 ## Hoofdlettergebruik 1 - Consistentiecontrole index {#usercase1indexconsistencycheck}
 
-Dit is een gebruiksgeval met betrekking tot indexcorruptie. Soms kon niet worden bepaald welke indexen corrupt zijn. Daarom heeft Adobe instrumenten verstrekt die:
+Dit is een gebruiksgeval met betrekking tot indexcorruptie. Soms was het niet mogelijk om te bepalen welke indexen corrupt zijn. Daarom heeft de Adobe instrumenten verstrekt die:
 
 1. voert indexconsistentiecontroles op alle indexen uit en verstrekt een rapport waarop indexen geldig zijn en die ongeldig zijn;
 1. De werktuigen zijn ook bruikbaar als AEM niet toegankelijk is;
@@ -70,7 +70,7 @@ Dit hulpmiddel kan nu door Steun en de Beheerder van het Systeem worden gebruikt
 
 ## Hoofdlettergebruik 2 - Indexstatistieken {#usecase2indexstatistics}
 
-Voor het diagnostiseren van sommige gevallen rond de Adobe van vraagprestaties vereiste vaak bestaande indexdefinitie, op index betrekking hebbende statistieken van de klantenopstelling. Tot dusverre werd deze informatie verspreid over meerdere bronnen. Om het oplossen van problemen gemakkelijker te maken, heeft Adobe tooling gecreeerd die zal:
+Voor het diagnostiseren van sommige gevallen rond de Adobe van vraagprestaties vereiste vaak bestaande indexdefinitie, op index betrekking hebbende statistieken van de klantenopstelling. Tot dusverre werd deze informatie verspreid over meerdere bronnen. Om het oplossen van problemen gemakkelijker te maken, heeft de Adobe tooling gecreeerd die zal:
 
 1. Alle indexdefinitie in het systeem in één JSON-bestand dumpen.
 
@@ -78,7 +78,7 @@ Voor het diagnostiseren van sommige gevallen rond de Adobe van vraagprestaties v
 
 1. de inhoud van de pompindex voor offline analyse;
 
-1. Wordt ook bruikbaar als AEM niet toegankelijk is
+1. Is bruikbaar zelfs als AEM niet toegankelijk is
 
 De bovenstaande bewerkingen kunnen nu worden uitgevoerd met de volgende opdrachten voor de bewerkingsindex:
 
@@ -136,10 +136,10 @@ Voor `DocumentNodeStore` installaties die opnieuw worden gecomprimeerd, kunnen w
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore mongodb://server:port/aem
 ```
 
-Dit biedt de volgende voordelen
+Dit biedt de volgende voordelen:
 
 * Minimale invloed op het uitvoeren van AEM instanties. De meeste leest kan van secundaire servers worden gedaan en het lopen AEM de geheime voorgeheugens worden niet nadelig beïnvloed wegens al die traversal die voor het opnieuw indexeren wordt vereist;
-* Gebruikers kunnen via de `--index-definitions-file` optie.
+* Gebruikers kunnen ook een JSON van een nieuwe of bijgewerkte index opgeven via de `--index-definitions-file` -optie.
 
 ### Opnieuw indexeren - SegmentNodeStore {#reindexsegmentnodestore}
 
@@ -183,14 +183,14 @@ Het verschil tussen deze aanpak en de hierboven beschreven aanpak is dat het mak
 In dit geval kunt u opnieuw indexeren op een gekloonde instelling om de invloed op de actieve AEM te minimaliseren:
 
 1. Een controlepunt maken door middel van een JMX-bewerking. Je kunt dit doen door naar de [JMX-console](/help/sites-administering/jmx-console.md) en zoek naar `CheckpointManager`. Klik vervolgens op de knop **createCheckpoint(long p1)** een bewerking waarbij een hoge waarde wordt gebruikt voor de vervaldatum in seconden (bijvoorbeeld **2592000**).
-1. Kopieer de `crx-quickstart` naar een nieuwe computer
+1. De `crx-quickstart` naar een nieuwe computer
 1. Herindexeren uitvoeren met de opdracht Indexeren op einde
 
 1. De gegenereerde indexbestanden kopiëren naar AEM server
 
-1. Importeer de indexbestanden met behulp van JMX.
+1. Importeer de indexbestanden via JMX.
 
-In dit geval wordt aangenomen dat de Data Store toegankelijk is op een andere instantie die mogelijk niet mogelijk is `FileDataStore` wordt geplaatst op een op wolken-gebaseerde opslagoplossing zoals EBS. Dit sluit het scenario uit waarin `FileDataStore` is ook gekloond. Als de indexdefinitie geen fullText indexeren uitvoert, dan toegang tot `DataStore` is niet vereist.
+In dit geval wordt aangenomen dat de Data Store toegankelijk is op een andere instantie die mogelijk niet mogelijk is `FileDataStore` wordt geplaatst op een op cloud gebaseerde opslagoplossing zoals EBS. Dit sluit het scenario uit waarin `FileDataStore` is ook gekloond. Als de indexdefinitie geen fullText indexeren uitvoert, dan toegang tot `DataStore` is niet vereist.
 
 ## Hoofdlettergebruik 4 - Indexdefinities bijwerken {#usecase4updatingindexdefinitions}
 
@@ -205,5 +205,5 @@ Voor dit gebruiksgeval moet u rekening houden met het volgende:
 1. Een ontwikkelaar werkt de indexdefinities op een lokale instantie bij en genereert vervolgens een JSON-indexdefinitiebestand via de `--index-definitions` option
 
 1. De bijgewerkte JSON wordt vervolgens aan de systeembeheerder gegeven
-1. De Beheerder van het systeem volgt de out-of-band benadering en bereidt de index op een verschillende installatie voor
+1. Systeembeheerder volgt de out-of-band-benadering en bereidt de index voor op een andere installatie
 1. Nadat dit wordt voltooid, worden de geproduceerde indexdossiers ingevoerd op een lopende AEM installatie.

@@ -1,11 +1,11 @@
 ---
-source-git-commit: e068cee192c0837f1473802143e0793674d400e8
+source-git-commit: 2a97935a81cf9c0a1a832dd27b62d388805863e0
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
-# Gedragscode Adobe
+# Gedragscode van de Adobe
 
 ## Toezegging
 
@@ -18,7 +18,7 @@ Voorbeelden van gedrag dat bijdraagt tot het maken van een positieve omgeving zi
 * Het gebruiken van verwelkomings en inclusieve taal
 * Naleving van verschillende standpunten en ervaringen
 * Erg vriendelijk constructieve kritiek te aanvaarden
-* Focus op wat het beste is voor de gemeenschap
+* Focussen op wat het beste is voor de gemeenschap
 * Empathie tonen ten opzichte van andere leden van de gemeenschap
 
 Voorbeelden van onacceptabel gedrag van deelnemers zijn:
@@ -29,7 +29,7 @@ Voorbeelden van onacceptabel gedrag van deelnemers zijn:
 * Persoonlijke gegevens van anderen publiceren, zoals een fysiek of elektronisch adres, zonder uitdrukkelijke toestemming
 * Andere gedragingen die redelijkerwijs als ongeschikt in een professionele omgeving kunnen worden beschouwd
 
-## Verantwoordelijkheden
+## Verplichtingen
 
 Projectbeheerders zijn verantwoordelijk voor het verduidelijken van de normen voor aanvaardbaar gedrag en zullen naar verwachting passende en eerlijke corrigerende maatregelen nemen in geval van onaanvaardbare gedragingen.
 
@@ -37,11 +37,11 @@ Projectbeheerders hebben het recht en de verantwoordelijkheid om opmerkingen, ve
 
 ## Scope
 
-Deze gedragscode is zowel van toepassing binnen projectruimten als in openbare ruimten wanneer een individu het project of zijn gemeenschap vertegenwoordigt. Voorbeelden van het vertegenwoordigen van een project of gemeenschap zijn het gebruik van een officieel e-mailadres voor een project, het posten via een officiële sociale-mediaaccount of het optreden als een aangewezen vertegenwoordiger tijdens een online- of offline-evenement. De representatie van een project kan nader worden omschreven en verduidelijkt door projectbeheerders.
+Deze gedragscode is zowel van toepassing binnen projectruimten als in openbare ruimten wanneer een individu het project of zijn gemeenschap vertegenwoordigt. Voorbeelden van het vertegenwoordigen van een project of gemeenschap zijn het gebruik van een officieel e-mailadres voor een project, het posten via een officiële sociale-mediaaccount of het optreden als een aangestelde vertegenwoordiger tijdens een online- of offlineevenement. De representatie van een project kan nader worden omschreven en verduidelijkt door de projectbeheerders.
 
 ## Handhaving
 
-Gevallen van misbruik, pesterijen of anderszins onacceptabel gedrag kunnen worden gemeld door contact op te nemen met het projectteam op Grp-opensourceoffice@adobe.com. Alle klachten zullen worden getoetst en onderzocht en zullen resulteren in een antwoord dat noodzakelijk en passend wordt geacht in verband met de omstandigheden. Het projectteam is verplicht de vertrouwelijkheid ten aanzien van de melder van een incident te handhaven. Nadere bijzonderheden over het specifieke handhavingsbeleid kunnen afzonderlijk worden vermeld.
+Gevallen van misbruik, pesterijen of anderszins onacceptabel gedrag kunnen worden gemeld door contact op te nemen met het projectteam op Grp-opensourceoffice@adobe.com. Alle klachten worden onderzocht en onderzocht en resulteren in een antwoord dat noodzakelijk en passend wordt geacht in verband met de omstandigheden. Het projectteam is verplicht de vertrouwelijkheid ten aanzien van de melder van een incident te handhaven. Nadere bijzonderheden over het specifieke handhavingsbeleid kunnen afzonderlijk worden vermeld.
 
 Projectbeheerders die de gedragscode te goeder trouw niet naleven of handhaven, kunnen tijdelijke of permanente gevolgen ondervinden, zoals bepaald door andere leiders van het project.
 

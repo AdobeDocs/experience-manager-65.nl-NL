@@ -11,9 +11,9 @@ topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '865'
 ht-degree: 1%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 1%
 Gebruik de console van Aanbiedingen om aanbiedingen tot stand te brengen die u kunt [gebruik in de praktijk](/help/sites-authoring/content-targeting-touch.md). Het creëren van aanbiedingen in de console van Aanbiedingen bespaart tijd wanneer verscheidene ervaringen de zelfde aanbieding vereisen:
 
 * Maak het aanbod eenmaal in de bibliotheek en gebruik het in meerdere ervaringen met uw merkactiviteiten.
-* Wijzig de aanbieding in de bibliotheek en de wijziging heeft invloed op alle ervaringen die met de wijziging worden gemaakt.
+* Wijzig de aanbieding in de bibliotheek en de wijziging is van invloed op alle ervaringen die met de wijziging zijn opgedaan.
 
 De console van Aanbiedingen organiseert aanbiedingen door merk. Elk merk bevat een bibliotheek met aanbiedingen die in de ervaringen van een merk kunnen worden gebruikt. Gebruik mappen om een hiërarchische structuur te definiëren voor het organiseren van aanbiedingen in elke bibliotheek. Met een logische mapstructuur kunnen auteurs eenvoudig aanbiedingen zoeken door te bladeren. Met tags en zoekgereedschappen kunnen auteurs ook aanbiedingen vinden.
 
@@ -64,14 +64,14 @@ Voeg een aanbieding toe aan de aanbiedingsbibliotheek van een merk zodat deze aa
 
 Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 
-1. Open in de console van Aanbiedingen de locatie waar u de aanbieding wilt maken. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
+1. In de console van Aanbiedingen, open de plaats waar u de aanbieding wilt tot stand brengen. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
 1. Klikken of tikken **Maken** > **Map of voorstel maken**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Selecteer **Aanbiedingspagina** sjabloon en klik of tik op **Volgende**.
+1. Selecteer de **Pagina voorstellen** sjabloon en klik of tik op **Volgende**.
 1. Typ een titel voor de aanbieding en selecteer of typ desgewenst een of meer tags die u aan de aanbieding wilt koppelen. Klik of tik vervolgens op **Maken**.
-1. Klik of tik op **Pagina openen**.
+1. Klik of tik in het bevestigingsdialoogvenster om de aanbieding voor bewerken te openen **Pagina openen**.
 
 ## Een voorstel bewerken {#editing-an-offer}
 
@@ -84,7 +84,7 @@ U kunt een voorstel van een omslag in een aanbiedingsbibliotheek of van onderzoe
 
 ## Een voorstel verwijderen {#deleting-an-offer}
 
-Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u probeert om een voorstel te schrappen dat in een ervaring wordt gebruikt, wordt u ertoe aangezet om de schrapping te bevestigen. Als u bevestigt, wordt het aanbod verwijderd en wordt het uit de ervaringen verwijderd.
+Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u een aanbieding probeert te verwijderen die in een ervaring wordt gebruikt, wordt u gevraagd de verwijdering te bevestigen. Als u bevestigt, wordt het aanbod verwijderd en wordt het uit de ervaringen verwijderd.
 
 U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibliotheek of de zoekresultaten bekijkt.
 

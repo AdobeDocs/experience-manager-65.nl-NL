@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 exl-id: 14775476-6fe5-4583-8ab5-b55fef892174
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1923'
+source-wordcount: '1921'
 ht-degree: 0%
 
 ---
@@ -259,9 +259,9 @@ Een sessie opslaan:
 
 ### Aantal/bereik van opstarters minimaliseren {#minimize-the-number-scope-of-launchers}
 
-Er is één listener die verantwoordelijk is voor alle [workflowstartprogramma&#39;s](/help/sites-administering/workflows-starting.md#workflows-launchers) die zijn geregistreerd:
+Eén listener is verantwoordelijk voor alle [workflowstartprogramma&#39;s](/help/sites-administering/workflows-starting.md#workflows-launchers) die zijn geregistreerd:
 
-* Er wordt geluisterd naar wijzigingen in alle paden die zijn opgegeven in de globbingseigenschappen van de andere draagraketten.
+* Er wordt geluisterd naar wijzigingen op alle paden die zijn opgegeven in de globbingseigenschappen van de andere draagraketten.
 * Wanneer een gebeurtenis wordt verzonden, zal de werkschemamotor dan elke lancerer evalueren om te bepalen of het zou moeten lopen.
 
 Het maken van te veel draagraketten zorgt ervoor dat het evaluatieproces langzamer wordt uitgevoerd.

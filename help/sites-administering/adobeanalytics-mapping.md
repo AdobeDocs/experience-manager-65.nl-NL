@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: c7c0c705-ec16-40f5-ad08-193f82d01263
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1440'
+source-wordcount: '1439'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Gebruik de volgende procedure om CQ-componentvariabelen toe te wijzen aan Adobe 
    >* `eVars` en `props` worden toegewezen aan CQ-variabelen die beginnen met `pagedata.X` of `eventdata.X`
    >* overwegende dat gebeurtenissen moeten worden toegewezen aan variabelen die beginnen met `eventdata.events.X`
 
-1. Als u het framework beschikbaar wilt maken op de publicatie-instantie van uw site, opent u het dialoogvenster **Pagina** tabblad van de assistent en klik op **Activeer Framework.**
+1. Als u het framework beschikbaar wilt maken op de publicatie-instantie van uw site, opent u de **Pagina** tabblad van de assistent en klik op **Activeer Framework.**
 
 ## Toewijzing van productgerelateerde variabelen {#mapping-product-related-variables}
 
@@ -71,11 +71,11 @@ AEM gebruikt een conventie voor de naamgeving van productgerelateerde variabelen
 | CQ-variabele | Analysevariabele | Beschrijving |
 |--- |--- |--- |
 | `product.category` | `product.category` (conversievariabele) | De productcategorie. |
-| `product.sku` | `product.sku` (conversievariabele) | De sku van het product. |
+| `product.sku` | `product.sku` (conversievariabele) | De productsku. |
 | `product.quantity` | `product.quantity` (conversievariabele) | Het aantal producten dat wordt aangeschaft. |
 | `product.price` | `product.price` (conversievariabele) | De productprijs. |
 | `product.events.<eventName>` | De succesgebeurtenis(sen) die aan het product in uw rapport moeten worden gekoppeld. | `product.events` is het voorvoegsel voor benoemde gebeurtenissen *eventName.* |
-| `product.evars.<eVarName>` | De conversievariabele(s) ( `eVar`) aan het product te koppelen. | `product.evars` is het voorvoegsel voor benoemde eVar *eVarName.* |
+| `product.evars.<eVarName>` | De conversievariabele(s) ( `eVar`) aan het product te koppelen. | `product.evars` is het voorvoegsel voor benoemde eVar-variabelen *VarName.* |
 
 Verschillende AEM Commerce-componenten gebruiken deze variabelenamen.
 
@@ -89,9 +89,9 @@ Verschillende AEM Commerce-componenten gebruiken deze variabelenamen.
 1. Zorg ervoor RSID wordt geselecteerd die in de vorige stappen wordt gebruikt.
 1. In **Rapporten** (aan de linkerkant van de pagina) selecteer **Aangepaste omzetting** vervolgens **Aangepaste omzetting 1-10** en selecteer de variabele die overeenkomt met `eVar7`
 
-1. Afhankelijk van de versie van Adobe Analytics die u gebruikt, moet u gemiddeld 45 minuten wachten tot het rapport met de gebruikte zoekterm wordt bijgewerkt; Bijvoorbeeld, aubergine in het voorbeeld
+1. Afhankelijk van de versie van Adobe Analytics die u gebruikt, moet u gemiddeld 45 minuten wachten op het rapport dat met de gebruikte zoekterm moet worden bijgewerkt; bijvoorbeeld, aubergine in het voorbeeld
 
-## De Content Finder (cf#) gebruiken met Adobe Analytics-frameworks {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
+## De Inhoudszoeker (cf#) gebruiken met Adobe Analytics-frameworks {#using-the-content-finder-cf-with-adobe-analytics-frameworks}
 
 Wanneer u in eerste instantie een Adobe Analytics-framework opent, bevat de zoekfunctie voor inhoud vooraf gedefinieerde variabelen voor Analytics onder:
 
@@ -106,11 +106,11 @@ Afhankelijk van de weergave die voor het framework is geselecteerd, wordt de zoe
 
 De lijst kan op de volgende manieren worden gemanipuleerd:
 
-1. Wanneer in **AEM** De lijst kan worden gefilterd op basis van het geselecteerde variabeletype met de drie filterknoppen:
+1. Wanneer in **AEM** De lijst kan worden gefilterd op basis van het geselecteerde variabeletype met behulp van de drie filterknoppen:
 
    * Indien *Geen knop* is geselecteerd, wordt in de lijst de volledige lijst weergegeven.
    * Als de **Verkeer** wordt geselecteerd, zal de lijst slechts de variabelen tonen die tot de sectie van het Verkeer behoren.
-   * Als de **Conversie** als deze optie is geselecteerd, worden in de lijst alleen de variabelen weergegeven die tot de sectie Conversie behoren.
+   * Als de **Conversie** wordt geselecteerd, worden in de lijst alleen de variabelen weergegeven die tot de sectie Conversie behoren.
    * Als de **Gebeurtenissen** als deze optie is geselecteerd, worden in de lijst alleen de variabelen weergegeven die tot de sectie Gebeurtenissen behoren.
 
    >[!NOTE]
@@ -124,7 +124,7 @@ De lijst kan op de volgende manieren worden gemanipuleerd:
 
 1. In de weergave Adobe Analytics worden alle CQ-variabelen weergegeven die horen bij de volgende componenten die in de CQ-weergave zijn gesleept.
 
-   * Bijvoorbeeld voor het geval **Component downloaden** is de *slechts één gesleept* in CQ-weergave (met twee toewijzingsvariabelen) *eventdata.downloadLink* en *eventdata.events.startDownload*), ziet de zoekfunctie voor inhoud er als volgt uit wanneer u overschakelt naar de Adobe Analytics-weergave:
+   * Bijvoorbeeld voor het geval dat **Component downloaden** is de *slechts één gesleept* in CQ-weergave (met twee toewijzingsvariabelen) *eventdata.downloadLink* en *eventdata.events.startDownload*), ziet de zoekfunctie voor inhoud er als volgt uit wanneer u overschakelt naar de Adobe Analytics-weergave:
 
    ![aa-22](assets/aa-22.png)
 
@@ -134,7 +134,7 @@ De lijst kan op de volgende manieren worden gemanipuleerd:
 
    >[!NOTE]
    >
-   >Er kan slechts één CQ-variabele op elk moment worden toegewezen aan een Adobe Analytics-variabele.
+   >Er kan slechts één CQ-variabele op elk gewenst moment aan een Adobe Analytics-variabele worden toegewezen.
 
 ## De weergave AEM en Analyse gebruiken {#using-aem-view-and-analytics-view}
 
@@ -148,7 +148,7 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, kunt u **AEM** heeft de vo
 
 1. Dit is de standaardweergave wanneer het framework wordt geopend.
 1. Linkerkant: de zoeker van de inhoud (cf#) wordt gevuld met Adobe Analytics-variabelen op basis van de geselecteerde RSID(&#39;s).
-1. Tabkoppen (**AEM** en **Analyseweergave**): Gebruik deze om tussen de twee weergaven te schakelen.
+1. Tabkoppen (**AEM** en **Analyseweergave**): gebruik deze om te schakelen tussen de twee weergaven.
 
 1. **AEM**:
 
@@ -156,9 +156,9 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, kunt u **AEM** heeft de vo
 
       1. Overerfde componenten zijn vergrendeld.
       1. Als u een overgeërfde component wilt ontgrendelen, dubbelklikt u op de vergrendeling naast de naam van de component
-      1. Als u de overerving wilt herstellen, verwijdert u de ontgrendelde component. waarna de vergrendelde status weer wordt hersteld.
+      1. Als u de overerving wilt herstellen, verwijdert u de niet-vergrendelde component. Daarna krijgt deze de vergrendelde status terug.
 
-   1. **Sleep componenten hier naartoe om ze op te nemen in het analyseframework**: Componenten kunnen vanuit de Sidekick worden gesleept en hier neergezet.
+   1. **Sleep componenten hier naartoe om ze op te nemen in het analyseframework**: Componenten kunnen uit de Sidekick worden gesleept en hier neergezet.
    1. U kunt alle componenten vinden die momenteel in het analytische framework zijn opgenomen:
 
       1. Als u een component wilt toevoegen, sleept u een component van het tabblad Componenten van het zijpaneel
@@ -170,8 +170,8 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, kunt u **AEM** heeft de vo
 ![aa-24](assets/aa-24.png)
 
 1. U kunt deze weergave openen door over te schakelen op de **Analyseweergave** op het framework.
-1. Linkerkant: De Inhoudszoeker (cf#) wordt gevuld met CQ-variabelen op basis van de componenten die in de CQ-weergave naar het framework zijn gesleept.
-1. Tabkoppen (**AEM** en **Analyseweergave**): Gebruik deze om tussen de twee weergaven te schakelen.
+1. Linkerkant: Inhoudszoeker (cf#) gevuld met CQ-variabelen op basis van de componenten die in de CQ-weergave naar het framework zijn gesleept.
+1. Tabkoppen (**AEM** en **Analyseweergave**): gebruik deze om te schakelen tussen de twee weergaven.
 
 1. In de drie tabellen (Verkeer, Conversie, Gebeurtenis) worden alle beschikbare Adobe Analytics-variabelen vermeld. behoren tot de geselecteerde RSID(&#39;s). De hier getoonde toewijzingen moeten gelijk zijn aan die in de AEM weergave:
 
@@ -197,9 +197,9 @@ Als u de bovenstaande afbeelding als voorbeeld neemt, kunt u **AEM** heeft de vo
 >
 >Bijvoorbeeld naast `prop3` u kunt toevoegen:
 >     `'`* `Adobe:'+pagedata.title+':'+pagedata.sitesection`\
-om de *titel* van een pagina samengevoegd met de *plaats* gebruiken *:* (dubbele punt) en voorgefixeerd met *Adobe* als `prop3`
+om de *titel* van een pagina samengevoegd met de *sitesectie* gebruiken *:* (dubbele punt) en vooraf voorzien van *Adobe* als `prop3`
 >
 
 >[!CAUTION]
 >
-Er kan slechts één CQ-variabele op elk moment worden toegewezen aan een Adobe Analytics-variabele.
+Er kan slechts één CQ-variabele op elk gewenst moment aan een Adobe Analytics-variabele worden toegewezen.

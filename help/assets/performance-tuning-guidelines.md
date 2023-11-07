@@ -6,9 +6,9 @@ mini-toc-levels: 1
 role: Architect, Admin
 feature: Asset Management
 exl-id: 1d9388de-f601-42bf-885b-6a7c3236b97e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2674'
+source-wordcount: '2673'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ U kunt bijvoorbeeld na het uitvoeren van een groot aantal niet-tijdelijke workfl
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
-Standaard, [!DNL Experience Manager] wordt een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens zware belasting alle processors worden bezet door [!UICONTROL DAM Update Asset] workflows, snelheid van de gebruikersinterface verlagen en voorkomen [!DNL Experience Manager] van het uitvoeren van andere processen die serverprestaties en stabiliteit beschermen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
+Standaard, [!DNL Experience Manager] wordt een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens zware werktijden alle processors door [!UICONTROL DAM Update Asset] workflows, snelheid van de gebruikersinterface verlagen en voorkomen [!DNL Experience Manager] van het uitvoeren van andere processen die serverprestaties en stabiliteit beschermen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
 1. Aan [!DNL Experience Manager] Auteur, toegang `https://[aem_server]:[port]/system/console/slingevent`.
 

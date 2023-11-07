@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 exl-id: 4da96c8f-8bd0-4cad-9087-18e324f084e7
-source-git-commit: d1fc2ff44378276522c2ff3208f5b3bdc4484bba
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '336'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -99,14 +99,14 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
    <td><p>https://'[server]:[poort]'/rest/services/SystemInfo.threads?delay=[n]&amp;iterations=[n]</p></td>
    <td><p>Haalt aantal en stapelspoor van actieve draden terug. De volgende parameters worden geaccepteerd:</p>
     <ul>
-     <li><p>iterations= [n]: Hiermee geeft u het aantal herhalingen op. Vervang n door een getal. </p></li>
-     <li><p>Vertraging= [n]: Geeft het aantal milliseconden op dat moet worden gewacht voordat de volgende herhaling wordt gestart. </p></li>
+     <li><p>iterations= [n]: Geeft het aantal herhalingen op. Vervang n door een getal. </p></li>
+     <li><p>Delay= [n]: Geeft het aantal milliseconden op dat moet worden gewacht voordat de volgende herhaling wordt gestart. </p></li>
     </ul><p></p></td>
   </tr>
   <tr>
    <td><p>SystemInfo.info</p></td>
    <td><p>https://'[server]:[poort]'/rest/services/ SystemInfo.info</p></td>
-   <td><p>Deze API is een omslag voor alle dienst APIs van de systeeminformatiedienst. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong>notitie</strong>: SystemInfo.info verstrekt geen telling en stapelspoor van actieve draden. </i></p></td>
+   <td><p>Deze API is een omslag voor alle de dienstAPIs van de systeeminformatie. Intern worden alle API's voor systeeminformatie uitgevoerd en wordt informatie gedownload in de ZIP-indeling. </p><p><i><strong>notitie</strong>: SystemInfo.info verstrekt geen telling en stackspoor van actieve draden. </i></p></td>
   </tr>
  </tbody>
 </table>

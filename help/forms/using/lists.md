@@ -8,9 +8,9 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '6910'
+source-wordcount: '6908'
 ht-degree: 0%
 
 ---
@@ -209,7 +209,7 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 
 ## Lijst {#list}
 
-Een lijst is een groep documentfragmenten, waaronder tekst, (andere) lijsten, voorwaarden en afbeeldingen. De volgorde van de lijstelementen kan vast of bewerkbaar zijn. Tijdens het maken van een letter kunt u sommige of alle lijstelementen gebruiken om een herbruikbaar patroon van elementen te repliceren. Lijsten gedragen zich in feite als doelen die binnen andere doelen kunnen worden genest.
+Een lijst is een groep documentfragmenten, waaronder tekst, (andere) lijsten, voorwaarden en afbeeldingen. De volgorde van de lijstelementen kan vast of bewerkbaar zijn. Tijdens het maken van een letter kunt u enkele of alle lijstelementen gebruiken om een herbruikbaar patroon van elementen te repliceren. Lijsten gedragen zich in feite als doelen die binnen andere doelen kunnen worden genest.
 
 ### Uitvoeringslijsten {#implementing-lists}
 

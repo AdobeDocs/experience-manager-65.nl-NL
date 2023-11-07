@@ -1,16 +1,14 @@
 ---
 title: Archiefbestanden importeren en beheren
 description: Leer hoe u archieven kunt importeren en beheren. Hiermee worden importbewerkingen gearchiveerd en LCA's die in Workbench zijn gemaakt, beheerd. U kunt een archief importeren, configureren, gebruiken en verwijderen.
-uuid: aa1613dd-6350-49a7-9643-44365e2acdcc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 exl-id: 0c15677a-ee17-425e-a261-fb3ae8688eb2
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1471'
+source-wordcount: '1470'
 ht-degree: 0%
 
 ---
@@ -26,7 +24,7 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. Klik op Bladeren om het te importeren archief te zoeken en klik vervolgens op Voorvertoning.
 1. Controleer de lijst met bronnen en objecten die samen met het archief worden geïnstalleerd. Zorg ervoor dat er geen conflicten zijn met bestaande bronnen, objecten en serviceconfiguraties omdat er geen mogelijkheden voor ongedaan maken beschikbaar zijn.
 
-   Als u selecteert om de de dienstconfiguraties in te voeren, AEM vormen invoer alle dossiers van de procesconfiguratie (eindpunten, veiligheidsprofielen, en de parameters van de de dienstconfiguratie) die door de processen in LCA worden gebruikt.
+   Als u selecteert om de de dienstconfiguraties in te voeren, AEM vormen invoert alle dossiers van de procesconfiguratie (eindpunten, veiligheidsprofielen, en de parameters van de de dienstconfiguratie) die door de processen in LCA worden gebruikt.
 
 1. Klik op Import.
 1. Controleer de resultaten bij importeren en klik op Configuratie overslaan om het importproces te voltooien of klik op Configureren om het archief te configureren.

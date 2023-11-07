@@ -1,18 +1,14 @@
 ---
 title: Connector configureren voor EMC Documentum
-seo-title: Configuring Connector for EMC Documentum
 description: Leer hoe u de Connector voor EMC Documentum configureert voor communicatie tussen AEM formulieren en EMC Documentum.
-seo-description: Learn how to configure the Connector for EMC Documentum to enable communication between AEM forms and EMC Documentum.
-uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
 exl-id: a31a496f-87b9-43c0-a98c-5f6ca5d11690
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1024'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -77,12 +73,12 @@ U kunt configureren welke repository service provider moet worden gebruikt met D
 
 ## Opslaggegevens configureren {#configuring-repository-credentials}
 
-De Documentum referentie-informatie wordt gebruikt in de AEM systeemcontext. Referenties van opslagplaats zijn specifiek voor bepaalde gegevensbanken in Documentum. U kunt geloofsbrieven voor om het even welk aantal bewaarplaatsen verstrekken; u kunt echter slechts één set gegevens per gegevensopslagruimte opgeven.
+De Documentum referentie-informatie wordt gebruikt in de AEM systeemcontext. Referenties van opslagplaats zijn specifiek voor bepaalde gegevensbanken in Documentum. U kunt referenties opgeven voor een willekeurig aantal opslagplaatsen, maar u kunt per opslagplaats slechts één set gegevens opgeven.
 
 ### Creditering gegevensopslagruimte toevoegen {#add-a-repository-credential}
 
 1. Klik in de beheerconsole op Services > Connector voor EMC Documentum > Repository Credentials Settings.
-1. Klik op Toevoegen. De pagina Documentum System Credentials Information wordt weergegeven.
+1. Klik toevoegen. De pagina Documentum System Credentials Information wordt weergegeven.
 1. Voer een naam in voor de gegevensopslagruimte.
 1. Voer een gebruikersnaam en wachtwoord in.
 1. Klik op Opslaan.
@@ -98,7 +94,7 @@ Als de Content Repository Connector voor EMC Documentum Service en/of de Reposit
 
 1. Klik in de beheerconsole op Services > Connector voor EMC Documentum > Configuration Settings.
 1. Klik op de naam van de repository waarvoor u referenties wilt bewerken.
-1. Wijzig de gebruikersnaam of het wachtwoord van de repository, of beide. (De naam van de gegevensopslagruimte is alleen-lezen.)
+1. Wijzig de gebruikersnaam of het wachtwoord van de opslagplaats, of beide. (De naam van de gegevensopslagruimte is alleen-lezen.)
 1. Klik op Opslaan.
 
 Als de Content Repository Connector voor EMC Documentum Service en/of de Repository Service voor EMC Documentum wordt uitgevoerd, wordt de referentie-informatie geverifieerd op basis van de opgegeven repository voordat deze in de database wordt opgeslagen. Als de referenties ongeldig zijn of bestaan, wordt een foutbericht weergegeven.

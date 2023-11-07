@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 429c96ff-4185-4215-97e8-9bd2c130a9b1
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2362'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -197,7 +197,7 @@ De taken worden verdeeld onder instanties die het bijbehorende die onderwerp heb
    * Uitgeschakeld: dit exemplaar verbruikt geen banen van dit onderwerp.
    * Exclusief: dit exemplaar verbruikt slechts banen van dit onderwerp.
 
-   **Opmerking:** Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
+   **Opmerking:** Wanneer u Exclusief voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
 
 ### Geïnstalleerde taakgebruikers {#installed-job-consumers}
 
@@ -245,7 +245,7 @@ Deze opstelling vereist de volgende drie agenten:
 1. Een reverse agent op de auteurinstantie die vanaf outbox op de arbeidersinstantie trekt.
 1. Een outbox agent op de arbeidersinstantie.
 
-Dit replicatieschema is vergelijkbaar met het replicatieschema dat wordt gebruikt tussen auteur- en publicatieinstanties. Voor de ontladingssituatie zijn alle betrokken gevallen echter ontwerpgevallen.
+Dit replicatieschema is vergelijkbaar met het replicatieschema dat wordt gebruikt tussen auteur- en publicatieinstanties. Voor de ontlaadsituatie zijn alle betrokken gevallen echter ontwerpgevallen.
 
 >[!NOTE]
 >

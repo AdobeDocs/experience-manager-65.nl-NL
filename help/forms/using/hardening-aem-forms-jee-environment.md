@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '7665'
+source-wordcount: '7661'
 ht-degree: 0%
 
 ---
@@ -269,7 +269,7 @@ Configuration Manager maakte gebruik van een servlet die op uw toepassingsserver
 
 Met Configuratiebeheer kunt u een Acrobat Reader DC-extensie uploaden die is gecrediteerd aan de AEM Forms in de JEE-vertrouwde opslag. Dit betekent dat de toegang tot de Dienst van de Referentie van de Opslag van het Vertrouwen over verre protocollen (ZEEP en EJB) door gebrek is toegelaten. Deze toegang is niet meer noodzakelijk nadat u de credentie van Rechten gebruikend de Manager van de Configuratie hebt geupload of als u besluit om de Console van het Beleid later te gebruiken om geloofsbrieven te beheren.
 
-U kunt de externe toegang tot alle services van de Trust Store uitschakelen door de stappen in de sectie uit te voeren [Niet-essentiële externe toegang tot services uitschakelen](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
+U kunt de externe toegang tot alle Trust Store-services uitschakelen door de stappen in de sectie uit te voeren [Niet-essentiële externe toegang tot services uitschakelen](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_remote_access_to_services).
 
 **Alle niet-essentiële anonieme toegang uitschakelen**
 

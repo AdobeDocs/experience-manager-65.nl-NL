@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Migration,Renditions,Asset Management
 exl-id: 184f1645-894a-43c1-85f5-8e0d2d77aa73
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1777'
+source-wordcount: '1773'
 ht-degree: 8%
 
 ---
@@ -55,7 +55,7 @@ Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Terwijl hu
 
 ### Middelen opnemen {#ingesting-assets}
 
-Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Omdat u een grote hoeveelheid gegevens in het systeem laadt, wilt u ervoor zorgen dat het systeem presteert en dat het de vereiste hoeveelheid tijd kan minimaliseren en te vermijden overbelast het systeem, dat tot een systeemneerstorting kan leiden, vooral in systemen die reeds in productie zijn.
+Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Omdat u een grote hoeveelheid gegevens in het systeem laadt, wilt u ervoor zorgen dat het systeem goed presteert om de vereiste hoeveelheid tijd te minimaliseren en overbelasting van het systeem te vermijden, wat tot een systeemneerstorting kan leiden, vooral in systemen die reeds in productie zijn.
 
 Er zijn twee manieren om de elementen in het systeem te laden: een op push gebaseerde benadering met gebruikmaking van HTTP of een op pull gebaseerde benadering met behulp van de JCR API&#39;s.
 

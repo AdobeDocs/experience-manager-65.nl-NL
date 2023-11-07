@@ -1,18 +1,14 @@
 ---
 title: Bedrijfskalenders configureren
-seo-title: Configuring Business Calendars
 description: Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen voor uw organisatie. Leer hoe u de bedrijfskalenders configureert.
-seo-description: Business calendars define business and non-business days for your organization. Learn how to configure the business calendars.
-uuid: 0ba610b8-72a8-480c-8783-70d98cbe890a
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 7a85e13d-4800-47c4-812a-5c6e2355298a
 exl-id: 4282718a-41f1-411a-9cd7-8c470005107d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1901'
+source-wordcount: '1898'
 ht-degree: 0%
 
 ---
@@ -39,7 +35,7 @@ Als sommige gebruikers in uw organisatie verschillende niet-bedrijfsdagen hebben
 
 1. Bepaal hoe u de aangewezen bedrijfskalender met een gebruiker zult associëren. Er zijn twee manieren om een bedrijfskalender met een gebruiker te associëren:
 
-   **Groepslidmaatschap:** U kunt een bedrijfskalender aan een gebruiker toewijzen die op het de groepslidmaatschap van de gebruiker wordt gebaseerd. In dit geval gebruikt elke gebruiker in de groep dezelfde agenda voor het bedrijf.
+   **Groepslidmaatschap:** U kunt een zakelijke kalender toewijzen aan een gebruiker op basis van het groepslidmaatschap van de gebruiker. In dit geval gebruikt elke gebruiker in de groep dezelfde agenda voor het bedrijf.
 
    Als een gebruiker lid is van twee verschillende groepen en deze groepen zijn toegewezen aan twee verschillende zakelijke kalenders, gebruiken AEM formulieren de eerste kalender die het in de zoekresultaten vindt. Overweeg in dit geval het gebruik van agenda&#39;s voor zakelijk gebruik om gebruikers te koppelen aan zakelijke kalenders.
 
@@ -128,7 +124,7 @@ Met AEM formulieren kunt u uw bedrijfsplannen exporteren en importeren als XML-b
 
 >[!NOTE]
 >
->Met deze functie worden alle gedefinieerde bedrijfscalenders geëxporteerd en geïmporteerd, inclusief de standaardagenda voor bedrijven die door AEM formulieren wordt verschaft. Een geïmporteerde agenda voor bedrijven met dezelfde naam als een bestaande kalender overschrijft de bestaande kalender.
+>Met deze functie exporteert en importeert u alle gedefinieerde zakelijke kalenders, inclusief de standaardagenda voor bedrijven die in AEM formulieren worden opgegeven. Een geïmporteerde agenda voor bedrijven met dezelfde naam als een bestaande kalender overschrijft de bestaande kalender.
 
 ### Zakelijke kalenders exporteren {#export-business-calendars}
 

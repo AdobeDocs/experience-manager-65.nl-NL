@@ -1,18 +1,14 @@
 ---
 title: SSL configureren voor JBoss Application Server
-seo-title: Configuring SSL for JBoss Application Server
 description: Leer hoe u SSL voor JBoss Application Server configureert.
-seo-description: Learn how to configure SSL for JBoss Application Server.
-uuid: 7c13cf00-ea89-4894-a4fc-aaeec7ae9f66
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '908'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -30,7 +26,7 @@ In deze procedure:
 
 ## SSL-referenties maken {#create-an-ssl-credential}
 
-1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om de referentie en keystore tot stand te brengen:
+1. Navigeer naar een opdrachtprompt *[JAVA HOME]*/bin en typ het volgende bevel om de referentie en keystore tot stand te brengen:
 
    `keytool -genkey -dname "CN=`*Hostnaam* `, OU=`*Groepsnaam* `, O=`*Bedrijfsnaam* `,L=`*Plaats* `, S=`*Staat* `, C=`Landcode&quot; `-alias "AEMForms Cert"` `-keyalg RSA -keypass`*key_password* `-keystore`*sleutelbestandsnaam* `.keystore`
 
@@ -44,7 +40,7 @@ In deze procedure:
    >
    >De `keystore_password` *Bij deze stap kan het wachtwoord (key_password) hetzelfde zijn als bij stap 1, of het kan anders zijn.*
 
-1. Kopieer de *sleutelbestandsnaam*.keystore aan `[appserver root]/server/[type]/conf` door een van de volgende opdrachten te typen:
+1. De *sleutelbestandsnaam*.keystore aan `[appserver root]/server/[type]/conf` door een van de volgende opdrachten te typen:
 
    * (Windows Eén server) `copy` `keystorename.keystore[appserver root]\standalone\configuration`
    * (Windows Server Cluster) kopiëren `keystorename.keystore[appserver root]\domain\configuration`
@@ -70,7 +66,7 @@ In deze procedure:
    * `keytool -printcert -v -file [appserver root]\standalone\configuration\AEMForms_cert.cer`
    * `keytool -printcert -v -file [appserver root]\domain\configuration\AEMForms_cert.cer`
 
-1. Schrijftoegang verlenen tot het cacerts-bestand in `[JAVA_HOME]\jre\lib\security`Voer indien nodig de volgende taak uit:
+1. Schrijftoegang verlenen tot het cacerts-bestand in `[JAVA_HOME]\jre\lib\security`Voer, indien nodig, de volgende taak uit:
 
    * (Windows) Klik met de rechtermuisknop op het controlebestand en selecteer Eigenschappen. Schakel vervolgens het kenmerk Alleen-lezen uit.
    * (Linux) Type `chmod 777 cacerts`
@@ -145,6 +141,7 @@ In deze procedure:
       * Selecteer Actie > Stoppen.
       * Wacht tot de status van de service wordt weergegeven als gestopt.
       * Selecteer Actie > Begin.
+
    * Voor Adobe preconfigured of manueel gevormde installaties JBoss:
 
       * Van een bevelherinnering, navigeer aan *`[appserver root]`*/bin.
@@ -152,13 +149,12 @@ In deze procedure:
 
          * (Windows) `shutdown.bat -S`
          * (Linux) `./shutdown.sh -S`
+
       * Wacht tot het proces JBoss volledig is gesloten (wanneer het proces JBoss controle aan de terminal terugkeert het binnen was begonnen).
       * Start de server door de volgende opdracht in te voeren:
 
          * (Windows) `run.bat -c <profile>`
          * (Linux) `./run.sh -c <profile>`
-
-
 
 1. Om tot beleidsconsole toegang te hebben gebruikend SSL, type `https://[host name]:'port'/adminui` in een webbrowser:
 
@@ -166,7 +162,7 @@ In deze procedure:
 
 ## Vraag om een referentie van een CA {#request-a-credential-from-a-ca}
 
-1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om keystore en de sleutel tot stand te brengen:
+1. Navigeer naar een opdrachtprompt *[JAVA HOME]*/bin en typ het volgende bevel om keystore en de sleutel tot stand te brengen:
 
    `keytool -genkey -dname "CN=`*Hostnaam* `, OU=`*Groepsnaam* `, O=`*Bedrijfsnaam* `, L=`*Plaats* `, S=`*Staat* `, C=`*Landcode*&quot; `-alias "AEMForms Cert"` `-keyalg RSA -keypass`-*key_password* `-keystore`*sleutelbestandsnaam* `.keystore`
 
@@ -182,7 +178,7 @@ In deze procedure:
 
 ## Een referentie van een CA gebruiken om SSL in te schakelen {#use-a-credential-obtained-from-a-ca-to-enable-ssl}
 
-1. In een bevelherinnering, navigeer aan *`[JAVA HOME]`*/bin en typ het volgende bevel om het wortelcertificaat van CA in te voeren waarmee CSR is ondertekend:
+1. Navigeer naar een opdrachtprompt *`[JAVA HOME]`*/bin en typ het volgende bevel om het wortelcertificaat van CA in te voeren waarmee CSR is ondertekend:
 
    `keytool -import -trustcacerts -file` rootcert.pem-sleutelarchief` keystorename.keystore -alias root`
 
@@ -192,7 +188,7 @@ In deze procedure:
    >
    >Vervangen *`[JAVA_HOME]`met de directory waarin de JDK is geïnstalleerd, en vervangt u de cursieve tekst door waarden die overeenkomen met uw omgeving.*
 
-1. In een bevelherinnering, navigeer aan *`[JAVA HOME]`*/bin en typ het volgende bevel om de referentie in keystore in te voeren:
+1. Navigeer naar een opdrachtprompt *`[JAVA HOME]`*/bin en typ het volgende bevel om de referentie in keystore in te voeren:
 
    `keytool -import -trustcacerts -file`*CACCertificateName* `.crt -keystore`*sleutelbestandsnaam* `.keystore`
 
@@ -200,6 +196,5 @@ In deze procedure:
    >
    >* Vervangen `[JAVA_HOME]` met de directory waarin de JDK is geïnstalleerd, en vervangt u de cursieve tekst door waarden die overeenkomen met uw omgeving.
    >* Het geïmporteerde CA-ondertekende certificaat vervangt een zelfondertekend openbaar certificaat als dit bestaat.
-
 
 1. Voer de stappen 13 tot en met 18 van Een SSL-referentie maken uit.

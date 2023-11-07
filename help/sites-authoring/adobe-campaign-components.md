@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2833'
+source-wordcount: '2832'
 ht-degree: 0%
 
 ---
@@ -327,7 +327,7 @@ In de volgende tabel worden de componenten beschreven die beschikbaar zijn om Ad
 
 ### Instellingen die door de meeste componenten worden gebruikt {#settings-common-to-most-components}
 
-De Adobe Campaign-componenten hebben dezelfde instellingen als voor alle componenten (behalve de componenten Gecodeerde primaire sleutel en Verborgen reconstruatietoets).
+De Adobe Campaign-componenten hebben dezelfde instellingen voor alle componenten (behalve de componenten Gecodeerde primaire sleutel en Verborgen reconstruatietoets).
 
 In de meeste componenten, kunt u het volgende vormen:
 

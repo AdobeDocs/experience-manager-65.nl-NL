@@ -4,9 +4,9 @@ description: Een AEM Forms-demopakket installeren, configureren en aanpassen.
 contentOwner: anujkapo
 docset: aem65
 exl-id: 1fee474e-7da5-4ab2-881a-34b8e055aa29
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '4604'
+source-wordcount: '4598'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ De [AEM Forms We.Gov-demopakket](https://experience.adobe.com/#/downloads/conten
 
    * **we-gov-forms.ui.analytics-&lt;version>.zip** - *Bevat alle gegevens van We.Gov Forms Analytics die in de opslagplaats moeten worden opgeslagen.*
 
-   * **we-gov-forms.config.public-&lt;version>.zip** - *Bevat alle standaardconfiguratieknooppunten, inclusief de configuraties van de plaatsaanduidingswolk, om problemen met het gegevensmodel van formulieren en servicebinding te helpen voorkomen.*
+   * **we-gov-forms.config.public-&lt;version>.zip** - *Bevat alle standaardconfiguratieknooppunten, inclusief de configuraties van de plaatsaanduidingswolk, om problemen met het gegevensmodel van formulieren en servicebinding te voorkomen.*
 
 De elementen die in dit pakket zijn opgenomen, zijn:
 

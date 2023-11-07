@@ -1,16 +1,14 @@
 ---
 title: Servicemontages configureren
 description: Leer hoe te om de dienstmontages te vormen. U kunt de pagina van het Beheer van de Dienst voor het vormen van de montages voor elk van de diensten gebruiken die deel van AEM vormen uitmaken.
-uuid: e95425a4-62f6-473e-b21b-d081c432e02d
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '10694'
+source-wordcount: '10692'
 ht-degree: 0%
 
 ---
@@ -223,7 +221,7 @@ De volgende instellingen zijn beschikbaar voor de coderingsservice.
 
 >[!NOTE]
 >
->Gebruik alleen eenvoudige verificatie (gebruikersnaam en wachtwoord) wanneer de verbinding is beveiligd via SSL (met LDAPS).
+Gebruik alleen eenvoudige verificatie (gebruikersnaam en wachtwoord) wanneer de verbinding is beveiligd via SSL (met LDAPS).
 
 **Compatibiliteitsmodus:**
 
@@ -431,7 +429,7 @@ De volgende instellingen zijn beschikbaar voor de Microsoft SharePoint-configura
 
 >[!NOTE]
 >
->Als Offlineondersteuning is ingeschakeld en u deze vervolgens uitschakelt, worden de inrichtingsprofielen van de gebruikers direct of zodra ze online zijn, bijgewerkt. Als een gebruiker offline heeft gewerkt, worden alle hangende taken geretourneerd naar de lijst Taken en worden alle items in de wachtrij, inclusief formulieren, taken en formulieren met validatiefouten die in behandeling zijn, verwijderd uit de wachtrij.
+Als Offlineondersteuning is ingeschakeld en u deze vervolgens uitschakelt, worden de inrichtingsprofielen van de gebruikers direct of zodra ze online zijn, bijgewerkt. Als een gebruiker offline heeft gewerkt, worden alle hangende taken geretourneerd naar de lijst Taken en worden alle items in de wachtrij, inclusief formulieren, taken en formulieren met validatiefouten die in behandeling zijn, verwijderd uit de wachtrij.
 
 **Android:** Hiermee kunnen Android-apparaten verbinding maken met de server.
 
@@ -733,7 +731,7 @@ Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaa
 
 >[!NOTE]
 >
->Hoe kleiner de resulterende mappen, hoe beter Gecontroleerde mappen. Als de geschatte belasting voor de gecontroleerde map bijvoorbeeld 1000 bestanden per uur is, probeert u een patroon zoals `result/%Y%M%D%H` zodat er elk uur een nieuwe submap wordt gemaakt. Als de belasting kleiner is (bijvoorbeeld 1000 bestanden per dag), kunt u een patroon gebruiken zoals `result/%Y%M%D`.
+Hoe kleiner de resulterende mappen, hoe beter Gecontroleerde mappen. Als de geschatte belasting voor de gecontroleerde map bijvoorbeeld 1000 bestanden per uur is, probeert u een patroon zoals `result/%Y%M%D%H` zodat er elk uur een nieuwe submap wordt gemaakt. Als de belasting kleiner is (bijvoorbeeld 1000 bestanden per dag), kunt u een patroon gebruiken zoals `result/%Y%M%D`.
 
 **Werkgebiedmap:** De standaardnaam voor de werkgebiedmap in de controlemap.
 
@@ -815,7 +813,7 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
 
    >[!NOTE]
    >
-   >De diensten die met xfaForm, de Vorm van het Document, en de variabelen van de Vorm worden gebruikt worden teruggeven en voorleggen altijd uitgevoerd gebruikend de de gebruikersrekening van het Systeem.
+   De diensten die met xfaForm, de Vorm van het Document, en de variabelen van de Vorm worden gebruikt worden teruggeven en voorleggen altijd uitgevoerd gebruikend de de gebruikersrekening van het Systeem.
 
 1. Klik toevoegen Belangrijker om de toestemmingen te specificeren die de gebruikers en de groepen voor deze dienst hebben.
 1. Het Uitgezochte Belangrijkste scherm toont de gebruikers en de groepen die in het Beheer van de Gebruiker worden gevormd. Als de gewenste gebruiker of groep niet wordt weergegeven, gebruikt u de zoekfunctie om deze te zoeken. Klik op de naam van een gebruiker of groep.

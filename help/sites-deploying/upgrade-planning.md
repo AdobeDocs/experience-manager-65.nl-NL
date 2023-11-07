@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '2397'
+source-wordcount: '2395'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,7 @@ De nieuwe functies in AEM 6.5 zijn te vinden in [de AEM van adobe.com](/help/rel
 
 ### Een testplan maken {#creating-a-test-plan}
 
-De implementatie van AEM door elke klant is uniek en is aangepast om aan hun bedrijfsvereisten te voldoen. Daarom is het belangrijk om alle aanpassingen te bepalen die in het systeem zijn aangebracht zodat deze in een testplan kunnen worden opgenomen. Dit testplan zal het proces van QA aandrijven dat de Adobe op de promotieinstantie uitvoert.
+De implementatie van AEM door elke klant is uniek en is aangepast om aan hun bedrijfsvereisten te voldoen. Daarom is het belangrijk om alle aanpassingen te bepalen die aan het systeem zijn aangebracht zodat zij in een testplan kunnen worden omvat. Dit testplan zal het proces van QA aandrijven dat de Adobe op de promotieinstantie uitvoert.
 
 ![testplan](assets/test-plan.png)
 

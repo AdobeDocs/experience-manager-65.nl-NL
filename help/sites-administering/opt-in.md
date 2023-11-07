@@ -1,18 +1,14 @@
 ---
 title: Opteren in Adobe Analytics en Adobe Target
-seo-title: Opting Into Adobe Analytics and Adobe Target
 description: Leer hoe u zich aanmeldt bij Adobe Analytics en Adobe Target.
-seo-description: Learn how to opt into Adobe Analytics and Adobe Target.
-uuid: 9090a0f3-d373-4826-aa68-6aa82c0fbfbb
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 exl-id: 3603e929-2aa1-4c25-ad9a-b10ff52a59f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '1308'
+source-wordcount: '1305'
 ht-degree: 0%
 
 ---
@@ -191,8 +187,7 @@ Welke parameters u verzendt hangt van het volgende af:
   curl -v -u admin:admin -X POST -d"automaticProvisioning=true&servicename=target&servicename=analytics&path=/content/we-retail" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
   ```
 
-* Als u de **marketingcloud.properties** moet u de referenties en parameters verzenden, bijvoorbeeld:
-
+* Als u de **marketingcloud.properties** moet u de referenties en parameters verzenden. Bijvoorbeeld:
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
    * path=path naar een AEM pagina om de gemaakte cloudservices te koppelen; er kunnen meerdere paden worden gedefinieerd

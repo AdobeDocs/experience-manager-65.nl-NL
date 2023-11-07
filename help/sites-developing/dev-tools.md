@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: 97310ed5-f8fb-416c-8a66-68f652abeaa0
-source-git-commit: 26c0411d6cc16f4361cfa9e6b563eba0bfafab1e
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '379'
+source-wordcount: '378'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,17 @@ ht-degree: 0%
 
 Voor het ontwikkelen van uw JCR-, Apache Sling- of Adobe Experience Manager-toepassingen (AEM) zijn de volgende gereedschapssets beschikbaar:
 
-* één stel bestaande uit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en WebDAV. CRXDE Lite is ingebed in CRX/AEM en laat u toe om standaardontwikkelingstaken in browser uit te voeren. Met CRXDE Lite kunt u bestanden (zoals .jsp en .java), mappen, sjablonen, componenten, dialoogvensters, knooppunten, eigenschappen en bundels maken en bewerken terwijl u zich aanmeldt en integreert met SVN.
+* één stel bestaande uit [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) en WebDAV. CRXDE Lite is ingebed in CRX/AEM en laat u toe om standaardontwikkelingstaken in browser uit te voeren. Met CRXDE Lite kunt u bestanden (zoals .jsp en .java), mappen, sjablonen, componenten, dialoogvensters, knooppunten, eigenschappen en bundels maken en bewerken tijdens het aanmelden en integreren met SVN.
 
   CRXDE Lite wordt aanbevolen wanneer u geen directe toegang hebt tot de CRX/AEM-server, wanneer u een toepassing ontwikkelt door de componenten en Java™-bundels die buiten de box vallen uit te breiden of te wijzigen of wanneer u geen speciale foutopsporing, codevoltooiing en syntaxismarkering nodig hebt.
 
 * één stel bestaande uit:
    * Een geïntegreerde ontwikkelomgeving. Bijvoorbeeld: [Eclipse](/help/sites-developing/howto-projects-eclipse.md) of [IntelliJ](/help/sites-developing/ht-intellij.md).
    * Een bouwstijlhulpmiddel. Bijvoorbeeld: [Apache Maven](/help/sites-developing/ht-projects-maven.md).
-   * FileVault die door Adobe is ontwikkeld om een opslagplaats toe te wijzen aan een bestandssysteem, een versiecontrolesysteem. Bijvoorbeeld Subversion.
+   * FileVault die is ontwikkeld door Adobe om een opslagplaats toe te wijzen aan een bestandssysteem, een versiecontrolesysteem. Bijvoorbeeld Subversion.
    * Een systeem voor foutopsporing. Bijvoorbeeld Jira.
    * Een centraal systeem voor afhankelijkheidsbeheer. Bijvoorbeeld Apache Archiva.
-   * En een systeem van bouwstijlautomatisering. Bijvoorbeeld Apache Continuum.
+   * En een systeem voor automatisering. Bijvoorbeeld Apache Continuum.
 
   Met deze setup kunt u uw toepassing (inhoud, code, configuratie) volledig integreren in elke ontwikkelomgeving en elk ontwikkelingsproces. De koppeling tussen de verschillende elementen is de representatie van het bestandssysteem van de gegevensopslagruimte via FileVault, aangezien alle eerder genoemde ontwikkelingsprogramma&#39;s met bestanden kunnen werken.
 
@@ -42,7 +42,7 @@ Adobe heeft de volgende extensies uitgebracht:
 
 AEM schepen met andere instrumenten die de ontwikkeling bevorderen:
 
-* [Dialoogvenster-editor](/help/sites-developing/dialog-editor.md)
+* [Dialoogeditor](/help/sites-developing/dialog-editor.md)
 * [Woordenboeken beheren met Vertaler](/help/sites-developing/i18n-translator.md)
 * [Pakketten beheren met Maven](/help/sites-developing/vlt-mavenplugin.md)
 * [Hoe te om AEM Projecten te ontwikkelen gebruikend Eclipse](/help/sites-developing/howto-projects-eclipse.md)
@@ -51,7 +51,7 @@ AEM schepen met andere instrumenten die de ontwikkeling bevorderen:
 * [Het gereedschap VLT gebruiken](/help/sites-developing/ht-vlttool.md)
 * [Het gereedschap Proxyserver gebruiken](/help/sites-developing/ht-proxy-server.md)
 * [AEM-moderniseringstools](/help/sites-developing/modernization-tools.md)
-* [AEM](/help/sites-developing/aem-repo-tool.md)
+* [Gereedschap AEM](/help/sites-developing/aem-repo-tool.md)
 
 Instrumenten die het opzetten van nieuwe projecten vergemakkelijken:
 

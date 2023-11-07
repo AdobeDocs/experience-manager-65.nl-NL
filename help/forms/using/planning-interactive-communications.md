@@ -1,5 +1,5 @@
 ---
-title: "Zelfstudie: Plan de Interactieve Communicatie"
+title: "Lesbestand: interactieve communicatie plannen"
 seo-title: Plan your Interactive Communication
 description: Plan de anatomie voor uw Interactieve Communicatie
 seo-description: Plan the anatomy for your Interactive Communication
@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 feature: Interactive Communication
 exl-id: ea0c8971-56f4-4094-87e4-1b222b73951f
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '654'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
 
-# Zelfstudie: De interactieve communicatie plannen {#tutorial-plan-the-interactive-communication}
+# Lesbestand: interactieve communicatie plannen {#tutorial-plan-the-interactive-communication}
 
 Plan de anatomie voor uw Interactieve Communicatie
 
@@ -31,7 +31,7 @@ De eerste stap in het plannen van een Interactieve Mededeling is de inhoud van d
 Een interactieve communicatie omvat de volgende elementen:
 
 * **Statische tekst** Het omvat vooral de delen van de interactieve communicatie die van generieke aard zijn en in communicatie aan alle klanten inbegrepen zijn. Bijvoorbeeld kop-, voettekst-, aanhef- of disclaimers.
-* **Gegevens afkomstig van een back-endsysteem (formuliergegevensmodel)** is klantspecifiek en wordt dynamisch samengevoegd met de interactieve communicatie. Het beleidsnummer of adres kan bijvoorbeeld worden opgehaald aan de hand van het formuliergegevensmodel.
+* **Gegevens afkomstig van een back-endsysteem (formuliergegevensmodel)** is klantspecifiek en wordt dynamisch samengevoegd met de interactieve communicatie. Het beleidsnummer of adres kan bijvoorbeeld worden opgehaald met het formuliergegevensmodel.
 * **Layout of sjablonen** voor de versie van de Druk en van het Web van de Interactieve Communicatie.
 * **Volgorde** waarin de verschillende tekstalinea&#39;s worden weergegeven in de interactieve communicatie.
 * **Gegevens ingegaan door een frontline werknemer (Agent UI)** wie de communicatie aanpast voordat deze wordt verzonden. Bijvoorbeeld de vervaldatum van de betaling.

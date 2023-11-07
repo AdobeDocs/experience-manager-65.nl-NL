@@ -1,16 +1,12 @@
 ---
 title: Werken met taken
-seo-title: Working with tasks
 description: Gebruik de pagina van het Onderzoek van de Taak aan onderzoek naar taken door gebruikersnaam of taakidentiteitskaart Meer weten over het werken met taken?
-seo-description: Use the Task Search page to search for tasks by user name or task ID. Learn more about working with tasks.
-uuid: 630372d5-255f-4ea8-974d-d4f923108673
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
 exl-id: 375376d1-60b3-49a4-8893-ba9336e6bf7b
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -19,7 +15,7 @@ ht-degree: 0%
 
 # Werken met taken {#working-with-tasks}
 
-Gebruik de pagina van het Onderzoek van de Taak aan onderzoek naar taken door gebruikersnaam of taakidentiteitskaart De onderzoeksresultaten worden getoond op de pagina van de Lijst van de Taak, waar u tot de geschiedenis van een taak kunt toegang hebben. U kunt een taak ook opnieuw toewijzen als één gebruiker te veel taken heeft of als een gebruiker een taak ten onrechte heeft toegewezen.
+Gebruik de pagina van het Onderzoek van de Taak aan onderzoek naar taken door gebruikersnaam of taakidentiteitskaart De zoekresultaten worden weergegeven op de pagina Taaklijst, waar u de geschiedenis van een taak kunt openen. U kunt een taak ook opnieuw toewijzen als één gebruiker te veel taken heeft of als een gebruiker een taak ten onrechte heeft toegewezen.
 
 >[!NOTE]
 >
@@ -29,11 +25,11 @@ Gebruik de pagina van het Onderzoek van de Taak aan onderzoek naar taken door ge
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom > Taakzoekopdracht.
 1. Selecteer Gebruikersnaam bij Zoeken op. Als u een gedeelte van de gebruikersnaam kent waarnaar u zoekt, typt u deze in het vak. Klik op Gebruiker zoeken.
-1. De pagina Gebruiker zoeken wordt weergegeven. U kunt uw zoekopdracht verder verfijnen door op gebruikersnaam of e-mail te zoeken. Wanneer u de gebruiker zoekt, selecteert u het keuzerondje naast de naam en klikt u op OK.
+1. De pagina Gebruiker zoeken wordt weergegeven. U kunt uw zoekopdracht verder verfijnen door te zoeken op gebruikersnaam of e-mail. Wanneer u de gebruiker zoekt, selecteert u het keuzerondje naast de naam en klikt u op OK.
 1. Standaard zoekt de taakzoekopdracht naar taken die momenteel aan de gebruiker zijn toegewezen. Als u ook wilt zoeken naar taken die eerder aan de gebruiker zijn toegewezen, selecteert u Niet toegewezen taak tonen. Als u ook wilt zoeken naar taken die de gebruiker heeft voltooid, selecteert u Voltooide taak tonen.
 1. Klik op Zoeken. De pagina Taaklijst wordt weergegeven met een lijst van het zoekresultaat.
 
-## Een taak zoeken wanneer u de taak-id kent {#search-for-a-task-when-you-know-its-task-id}
+## Zoeken naar een taak wanneer u de taak-id kent {#search-for-a-task-when-you-know-its-task-id}
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom > Taakzoekopdracht.
 1. Selecteer Taak-id in Zoeken op en typ de taak-id in het vak.
@@ -87,12 +83,12 @@ Voor elke taaktoewijzing, toont de lijst de volgende informatie:
 
 **Opnieuw toewijzen beheerder:** De taak is opnieuw toegewezen door een beheerder.
 
-**Toewijzingsdatum:** De datum en tijd waarop de taak aan de gebruiker is toegewezen.
+**Datum toewijzing:** De datum en tijd waarop de taak aan de gebruiker is toegewezen.
 
 ### Een nieuwe gebruiker toewijzen aan een taak {#assigning-a-new-user-to-a-task}
 
 Op de pagina Gebruiker toewijzen worden de gebruikers weergegeven die aan een taak kunnen worden toegewezen. U hebt toegang tot de pagina Gebruiker toewijzen door op de pagina Taakgeschiedenis op Nieuwe gebruiker toewijzen te klikken.
 
-1. Typ in het vak Zoeken naar op de pagina Gebruiker toewijzen een deel van de vereiste gebruikersnaam of het volledige e-mailadres of een deel ervan.
+1. Typ in het vak Zoeken naar op de pagina Gebruiker toewijzen een deel van of alle vereiste gebruikersnaam of e-mailadres.
 1. Selecteer Naam of E-mailadres onder Gebruiken en klik op Zoeken. De gebruikers die overeenkomen met de zoekopdracht worden weergegeven.
 1. Selecteer de gebruiker in de lijst en klik op OK. De pagina Taakgeschiedenis wordt weergegeven met de nieuwe gebruikerstoewijzing.

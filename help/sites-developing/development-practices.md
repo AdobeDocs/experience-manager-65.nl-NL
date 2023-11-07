@@ -1,19 +1,19 @@
 ---
-title: Ontwikkelingspraktijken
+title: Ontwikkelspraktijken
 description: Aanbevolen procedures voor ontwikkeling op Adobe Experience Manager.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 65b2029e-03c9-4df4-8579-2b15dbee1035
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
-source-wordcount: '616'
+source-wordcount: '615'
 ht-degree: 0%
 
 ---
 
-# Ontwikkelingspraktijken{#development-practices}
+# Ontwikkelspraktijken{#development-practices}
 
 ## Werken volgens de definitie van Gereed (DoD) {#work-according-to-a-definition-of-done}
 
@@ -60,7 +60,7 @@ De instrumenten van de codeanalyse kunnen waardevol zijn, maar slechts als hun r
 
 ### Volg de Scout voor de jongen {#follow-the-boy-scout-rule}
 
-De Scouten van de Jongen hebben een regel: &quot;Laat het beter staan dan u het hebt gevonden.&quot; Zolang alle leden van het ontwikkelingsteam zich aan deze regel houden en iets opschonen wanneer ze een puinhoop tegenkomen, zal de code voortdurend verbeteren.
+De Scouten van de Jongen hebben een regel: &quot;Laat het beter dan je vond.&quot; Zolang alle leden van het ontwikkelingsteam zich aan deze regel houden en iets opruimen wanneer ze een puinhoop tegenkomen, zal de code voortdurend verbeteren.
 
 ### Gebruik geen YAGNI-functies {#avoid-implementing-yagni-features}
 

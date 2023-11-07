@@ -1,17 +1,13 @@
 ---
 title: Java API voor uitvoerservice, snel starten (SOAP)
-seo-title: Output Service Java API Quick Start(SOAP)
 description: Met de Output service Java API Quick Start (SOAP) kunt u een PDF-document maken, een PDF-document maken op basis van een XDP-bestand van de toepassing, een PDF/A-document maken, documenten doorgeven aan de Output-service, een document doorgeven in de AEM Forms-opslagruimte aan de Output-service, een PDF-document maken op basis van fragmenten, afdrukken naar een bestand, een afdrukstream naar een netwerkprinter verzenden, meerdere PDF-bestanden maken, zoekregels maken, een PDF-document transformeren.
-seo-description: Use the Output service Java API Quick Start (SOAP) to create a PDF document, create a PDF document based on application XDP file, create a PDF/A document, pass documents to the Output service, pass a document in the AEM Forms repository to the Output service, create a PDF document based on fragments, printing to a file, sending a print stream to a network printer, create multiple PDF files, create search rules, transform a PDF document.
-uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
-discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 role: Developer
 exl-id: dc99dd4d-fce9-4ec5-9b51-661d37a21559
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 0%
@@ -974,7 +970,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document gemaakt dat is gebasee
                  //Create a Document object
                  Document inFragment2Doc = new Document(inFragment2);
  
-                 //Place all of the XDP files into the MAP
+                 //Place all the XDP files into the MAP
                  inputs.put("tuc018_template_flowed.xdp",myMapSource);
                  inputs.put("tuc018_contact.xdp",inFragment1Doc);
                  inputs.put("tuc018_patient.xdp",inFragment2Doc);

@@ -1,16 +1,12 @@
 ---
 title: Het vormen uit de Montages van het Bureau
-seo-title: Configuring Out of Office Settings
 description: Met de functie Buiten-kantoor kunt u opgeven wanneer een gebruiker buiten het kantoor komt en geen taken kan uitvoeren die door AEM formulieren zijn toegewezen.
-seo-description: The Out of Office feature enables you to specify when a user will be out of the office and unable to complete tasks assigned by AEM forms.
-uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 exl-id: 1c8ad09b-d44a-4d90-86d5-d4c66cf5c57c
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
 workflow-type: tm+mt
 source-wordcount: '659'
 ht-degree: 0%
@@ -30,15 +26,15 @@ Wanneer het creëren van een proces, kan de gebruiker Workbench specificeren of 
 
    **Zoeken op naam**
 
-   Selecteer de optie Zoeken op naam. Typ de gebruikersnaam volledig of gedeeltelijk en klik op Zoeken. Als u het veld leeg laat, wordt een lijst met alle gebruikers geretourneerd in de Forms-workflow
+   Selecteer de optie Zoeken op naam. Typ de gebruikersnaam volledig of gedeeltelijk en klik op Zoeken. Als u het veld leeg laat, wordt een lijst met alle gebruikers geretourneerd in de Forms-workflow.
 
    **Zoeken op datumbereik**
 
    Selecteer de optie Zoeken op datumbereik. Geef de datums van en tot en met de gewenste tijdstempels op om het zoekresultaat te beperken. Klik op Zoeken.
 
-1. Klik op een gebruikersnaam om de gegevens van de gebruiker buiten het kantoor onder de lijst met gebruikers weer te geven.
+1. Klik op een gebruikersnaam om de gegevens van de gebruiker buiten het Bureau onder de lijst met gebruikers weer te geven.
 
-## De status van een gebruiker buiten het kantoor wijzigen {#change-a-user-s-out-of-office-status}
+## De status van een gebruiker buiten kantoor wijzigen {#change-a-user-s-out-of-office-status}
 
 1. Zoek de gebruiker, zoals beschreven in [De informatie van een gebruiker van het Bureau van de mening](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Klik op de naam van de gebruiker die u wilt wijzigen.
@@ -66,7 +62,7 @@ Wanneer een gebruiker buiten het kantoor is, kunt u een of meer gebruikers toewi
    1. Klik op de naam van de gebruiker die u wilt wijzigen.
    1. In de StandaardGebruiker voor uit de lijst van Taken van het Bureau, selecteer een gebruiker van de lijst. Als u geen standaardgebruiker wilt aanwijzen om opnieuw toegewezen punten te ontvangen, uitgezocht wijs niet toe.
 
-      Als de juiste gebruikersnaam niet in de lijst staat, klikt u op Gebruiker zoeken en gebruikt u het dialoogvenster Gebruiker zoeken om naar de gebruiker te zoeken. Selecteer de gewenste gebruiker in de lijst en klik op Gebruiker selecteren. U kunt ook op Gebruikersoverzicht weergeven in het dialoogvenster Gebruiker zoeken klikken om de geselecteerde planning voor een gebruiker buiten het kantoor te bekijken.
+      Als de juiste gebruikersnaam niet in de lijst staat, klikt u op Gebruiker zoeken en gebruikt u het dialoogvenster Gebruiker zoeken om naar de gebruiker te zoeken. Selecteer de gewenste gebruiker in de lijst en klik op Gebruiker selecteren. U kunt ook op Gebruikersoverzicht weergeven in het dialoogvenster Gebruiker zoeken klikken om de geselecteerde gebruikers te zien die buiten het kantoorschema om zijn.
 
    1. Als er processen zijn die niet naar de standaardgebruiker zouden moeten worden verzonden, voegt de klik een Uitzondering toe, dan selecteert het proces en selecteert een andere gebruiker van de lijst. U kunt ook selecteren niet toewijst om de taak te hebben toegewezen aan de gebruiker die uit het bureau is.
    1. Klik op Opslaan.

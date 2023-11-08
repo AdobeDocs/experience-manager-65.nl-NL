@@ -2,7 +2,7 @@
 title: Creërend een Hoofdloze Gids van het Begin van de Configuratie
 description: Creeer een configuratie als eerste stap aan het worden begonnen met hoofdloze in AEM 6.5.
 exl-id: f1df97a1-164f-4ed4-bb63-34caf35ae27c
-source-git-commit: 7355c149500f9e5044c9ff78af208d36ee681f56
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 1%
@@ -28,7 +28,7 @@ In de context van het beheer van inhoud zonder kop in AEM, denk aan een configur
 Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, of zeer seldomly wanneer een nieuwe werkruimte voor het organiseren van uw Modellen van de Inhoud wordt vereist. Voor deze gids aan de slag, moeten wij slechts één configuratie tot stand brengen.
 
 1. Meld u aan bij AEM en selecteer in het hoofdmenu **Gereedschappen -> Algemeen -> Configuratiebrowser**.
-1. Een **Titel** voor uw configuratie.
+1. Geef een **Titel** voor uw configuratie.
    * Er wordt automatisch een naam gegenereerd op basis van de titel en aangepast op basis van [AEM naamconventies.](/help/sites-developing/naming-conventions.md). Het wordt de knooppuntnaam in de repository.
 1. Controleer de volgende opties:
    * **Modellen van contentfragmenten**
@@ -38,7 +38,7 @@ Een beheerder zou slechts één keer een configuratie moeten tot stand brengen, 
 
 1. Tik of klik op **Maken**
 
-Indien nodig kunt u meerdere configuraties maken. Configuraties kunnen ook worden genest.
+U kunt indien nodig meerdere configuraties maken. Configuraties kunnen ook worden genest.
 
 >[!NOTE]
 >

@@ -12,9 +12,9 @@ discoiquuid: 4b676e7e-191f-4a19-8b8f-fc3e30244b59
 docset: aem65
 feature: Mobile Forms
 exl-id: 85c9315e-1bc8-44a9-937e-af6fc7cf54d1
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2005'
+source-wordcount: '2003'
 ht-degree: 0%
 
 ---
@@ -116,7 +116,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom zijn HTML-formulieren groter dan PDF forms?
 
-   Antwoord: Er zijn veel tussenliggende gegevensstructuren en -objecten vereist, zoals formulierdom, gegevensdom en indelingsdom, om een XDP naar een HTML-formulier te renderen.
+   Antwoord: Er zijn talloze tussenliggende gegevensstructuren en objecten zoals formulierdom, gegevensdom en indelingsstructuur vereist om een XDP naar een HTML-formulier te renderen.
 
    Voor PDF forms beschikt Adobe Acrobat over een ingebouwde XTG-engine voor het maken van tussenliggende gegevensstructuren en -objecten. Acrobat houdt zich ook bezig met layout en scripts.
 

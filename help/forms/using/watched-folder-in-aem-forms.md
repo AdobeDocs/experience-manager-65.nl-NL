@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: fbf5c7c3-cb01-4fda-8e5d-11d56792d4bf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7144'
 ht-degree: 0%
@@ -486,7 +486,7 @@ Voor het eindpunt van een gecontroleerde map kunnen gebruikers bestandsverwerkin
 
 Als voor een taak slechts één invoerbestand vereist is voor gecontroleerde mapeindpunten, kan de gebruiker dat bestand naar de hoofdmap van de gecontroleerde map kopiëren.
 
-Als de taak meer dan één invoerbestand bevat, moet de gebruiker een map buiten de hiërarchie Gecontroleerde map maken die alle vereiste bestanden bevat. Deze nieuwe map moet de invoerbestanden bevatten (en desgewenst een DDX-bestand als dit vereist is voor het proces). Nadat de taakmap is samengesteld, kopieert de gebruiker deze naar de invoermap van de gecontroleerde map.
+Als de taak meer dan één invoerbestand bevat, moet de gebruiker een map buiten de hiërarchie Gecontroleerde map maken die alle vereiste bestanden bevat. Deze nieuwe map moet de invoerbestanden bevatten (en eventueel een DDX-bestand als dit nodig is voor het proces). Nadat de taakmap is samengesteld, kopieert de gebruiker deze naar de invoermap van de gecontroleerde map.
 
 >[!NOTE]
 >

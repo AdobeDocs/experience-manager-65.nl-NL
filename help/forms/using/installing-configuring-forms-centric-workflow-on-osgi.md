@@ -1,17 +1,13 @@
 ---
 title: Forms-centric workflow op OSGi installeren en configureren
-seo-title: Installing and Configuring Forms-centric workflow on OSGi
 description: Installeer en configureer AEM Forms Interactive Communications om zakelijke correspondentie, documenten, instructies, kennisgevingen van voordelen, marketingmails, facturen en welkomstkits te maken.
-seo-description: Install and configure AEM Forms Interactive Communications to create business correspondences, documents, statements, benefit notices, marketing mails, bills, and welcome kits.
-uuid: 1ceae822-215a-4b83-a562-4609a09c3a54
 topic-tags: installing
-discoiquuid: de292a19-07db-4ed3-b13a-7a2f1cd9e0dd
 docset: aem65
 role: Admin
 exl-id: 4b24a38a-c1f0-4c81-bb3a-39ce2c4892b1
-source-git-commit: 63f066013c34a5994e2c6a534d88db0c464cc905
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1588'
 ht-degree: 0%
 
 ---
@@ -20,45 +16,45 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Ondernemingen verzamelen en verwerken gegevens van meerdere formulieren, back-endsystemen en andere gegevensbronnen. De verwerking van gegevens omvat toetsings- en goedkeuringsprocedures, herhaalde taken en archivering van gegevens. U kunt bijvoorbeeld een formulier reviseren en converteren naar een PDF-document. Wanneer manueel gedaan, kunnen de herhalende taken veel tijd en middelen vergen.
+Ondernemingen verzamelen en verwerken gegevens uit meerdere formulieren, back-endsystemen en andere gegevensbronnen. De verwerking van gegevens omvat beoordelings- en goedkeuringsprocedures, herhalende taken en gegevensarchivering. U kunt bijvoorbeeld een formulier reviseren en converteren naar een PDF-document. Wanneer u deze taken handmatig uitvoert, kunnen deze taken veel tijd en vele middelen in beslag nemen.
 
-U kunt [Forms-centric workflow op OSGi](../../forms/using/aem-forms-workflow.md) om snel adaptieve, op formulieren gebaseerde workflows te bouwen. Deze workflows kunnen u helpen bij het automatiseren van workflows voor revisie en goedkeuring, workflows voor bedrijfsprocessen en andere herhalende taken. Met deze workflows kunt u ook documenten verwerken (PDF-documenten maken, samenstellen, distribueren en archiveren, digitale handtekeningen toevoegen om de toegang tot documenten te beperken, gecodeerde formulieren decoderen en meer) en de Adobe Sign-handtekeningworkflow gebruiken voor formulieren en documenten.
+U kunt de op formulieren gebaseerde workflow op OSGi](../../forms/using/aem-forms-workflow.md) gebruiken [om snel aanpasbare workflows op basis van formulieren te maken. Met deze workflows kunt u workflows voor revisie en goedkeuring, workflows voor bedrijfsprocessen en andere herhalende taken automatiseren. Met deze workflows kunt u ook gemakkelijker documenten verwerken (PDF-documenten maken, samenvoegen, distribueren en archiveren, digitale handtekeningen toevoegen om de toegang tot documenten te beperken, formulieren met streepjescodes decoderen en meer) en een Adobe Sign-ondertekeningsworkflow gebruiken met formulieren en documenten.
 
-Nadat de werkstromen zijn ingesteld, kunnen deze handmatig worden geactiveerd om een gedefinieerd proces te voltooien of via programmacode worden uitgevoerd wanneer gebruikers een formulier of interactieve communicatie verzenden. De mogelijkheid is opgenomen in het invoegpakket voor AEM Forms.
+Nadat deze workflows zijn ingesteld, kunnen ze handmatig worden geactiveerd om een gedefinieerd proces te voltooien of om programmatisch uit te voeren wanneer gebruikers een formulier of interactieve communicatie verzenden. De functie is opgenomen in het AEM Forms-invoegtoepassingspakket.
 
-AEM Forms is een krachtig platform op bedrijfsniveau. Forms-gerichte workflow op OSGi is slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst van mogelijkheden, zie [Inleiding tot AEM Forms](introduction-aem-forms.md).
+AEM Forms is een krachtig platform op bedrijfsniveau. Forms-gerichte workflow op OSGi is slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst met mogelijkheden raadpleegt u [Inleiding tot AEM Forms](introduction-aem-forms.md).
 
 >[!NOTE]
 >
->Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Zie een [vergelijking](capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE om het verschil en de gelijkenissen in de mogelijkheden te leren.
+>Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Bekijk een [vergelijking](capabilities-osgi-jee-workflows.md) van de op formulieren gebaseerde AEM-workflows op OSGi en Procesbeheer op JEE om meer te weten te komen over de verschillen en overeenkomsten tussen de mogelijkheden.
 >
->Na de vergelijking raadpleegt u als u de mogelijkheid Process Management op een JEE-stapel wilt installeren. Ga naar [AEM Forms installeren of upgraden op JEE](/help/forms/home.md) voor gedetailleerde informatie over het installeren en configureren van JEE-stack en de mogelijkheden van Process Management.
+>Als u na de vergelijking de procesbeheerfunctie op de JEE-stapel wilt installeren, raadpleegt [u AEM-formulieren installeren of upgraden op JEE](/help/forms/home.md) voor meer informatie over het installeren en configureren van de JEE-stapel en de mogelijkheden voor procesbeheer.
 
-## Implementatietopologie {#deployment-topology}
+## Distributietopologie {#deployment-topology}
 
-AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U hebt slechts een minimum van één AEM-auteur of -verwerkingsinstantie (productieauteur) nodig om de Forms-centrische workflow op OSGi-functionaliteit uit te voeren. Een verwerkingsinstantie is een [verhard AEM-auteur](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Voer geen daadwerkelijke creatie uit, zoals het creëren van werkschema&#39;s of adaptieve vormen, op de auteur van de productie.
+AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. U vereist slechts een minimum van één AEM Auteur of van de Verwerking instantie (productieauteur) om de Forms-centric werkschema op vermogen OSGi in werking te stellen. Een verwerkingsinstantie is een [AEM auteur](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Voer geen daadwerkelijke ontwerpbewerkingen uit, zoals het maken van workflows of adaptieve formulieren, op de auteur van de productie.
 
 De volgende topologie is indicatieve topologie om de Interactieve Mededelingen van AEM Forms, het Beheer van de Correspondentie, AEM Forms gegevensvangst, en Forms-Centric werkschema op mogelijkheden in werking te stellen OSGi. Voor gedetailleerde informatie over de topologie, zie [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
 ![aanbevolen topologie](assets/recommended-topology.png)
 
-AEM Forms Forms-centric workflow op OSGi voert AEM interface voor het maken van workflowmodellen in en AEM op de Author-instanties van AEM Forms uit.
+AEM Forms Forms-centric workflow op OSGi voert AEM interface uit voor het maken van het workflowmodel en AEM op de Author-instanties van AEM Forms.
 
 ## Systeemvereisten {#system-requirements}
 
 >[!NOTE]
 >
->Overslaan naar de [Volgende stappen](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) als u AEM Forms al op OSGi hebt geïnstalleerd, zoals wordt uitgelegd in de sectie [mogelijkheden voor gegevensvastlegging installeren en configureren](../../forms/using/installing-configuring-aem-forms-osgi.md) artikel.
+>Overslaan naar de [Volgende stappen](../../forms/using/installing-configuring-forms-centric-workflow-on-osgi.md#next-steps) als u AEM Forms al op OSGi hebt geïnstalleerd, zoals wordt uitgelegd in de sectie [mogelijkheden voor het vastleggen van gegevens installeren en configureren](../../forms/using/installing-configuring-aem-forms-osgi.md) artikel.
 
 Voordat u begint met het installeren en configureren van een op Forms gerichte workflow op OSGi, moet u ervoor zorgen dat:
 
-* Hardware- en software-infrastructuur is aanwezig. Ga voor een gedetailleerde lijst met ondersteunde hardware en software naar [technische voorschriften](/help/sites-deploying/technical-requirements.md).
+* Hardware- en software-infrastructuur is aanwezig. Voor een gedetailleerde lijst met ondersteunde hardware en software raadpleegt u [technische voorschriften](/help/sites-deploying/technical-requirements.md).
 
 * Het installatiepad van de AEM-instantie bevat geen witruimten.
 * Er wordt een AEM-instantie uitgevoerd. In AEM terminologie is een &quot;instantie&quot; een kopie van AEM die op een server in de auteur- of publicatiemodus wordt uitgevoerd. U hebt minstens één AEM (Auteur of Verwerking) nodig om een Forms-centric workflow op OSGi uit te voeren:
 
    * **Auteur**: Een AEM die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
-   * **Verwerking:** Een verwerkingsinstantie is een [verhard AEM-auteur](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Nadat u de installatie hebt uitgevoerd, kunt u een instantie Auteur instellen en deze lastiger maken.
+   * **Verwerking:** Een verwerkingsinstantie is een [AEM auteur](/help/forms/using/hardening-securing-aem-forms-environment.md) -instantie. Nadat u de installatie hebt uitgevoerd, kunt u een instantie Auteur instellen en deze lastiger maken.
 
    * **Publiceren**: Een AEM instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
 
@@ -67,7 +63,7 @@ Voordat u begint met het installeren en configureren van een op Forms gerichte w
    * 15 GB tijdelijke ruimte voor Microsoft Windows-installaties.
    * 6 GB tijdelijke ruimte voor UNIX-installaties.
 
-* Extra eisen voor op UNIX gebaseerde systemen: Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgende pakketten via de installatiemedia van het desbetreffende besturingssysteem.
+* Extra vereisten voor op UNIX gebaseerde systemen: als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgende pakketten via de installatiemedia van het desbetreffende besturingssysteem.
 
 <table>
  <tbody>
@@ -111,20 +107,20 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 1. Openen [Pakketbeheer](https://experienceleague.adobe.com/docs/experience-manager-65/administering/contentmanagement/package-manager.html)  en klik op **[!UICONTROL Upload Package]** om het pakket te uploaden.
 1. Selecteer het pakket en klik op **[!UICONTROL Install]**.
 
-   U kunt het pakket ook downloaden via de directe koppeling in het dialoogvenster [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) artikel.
+   U kunt het pakket ook downloaden via de directe koppeling in het [artikel over afstandsverklaringen](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms.
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in de [AEM-installatiemap]Het bestand /crx-quickstart/logs/error.log en het logbestand zijn stabiel.
-1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw op te starten. **Start de server niet meteen opnieuw op.** Voordat u de AEM Forms-server stopt, moet u wachten totdat de Geregistreerde ServiceEvent- en ServiceEvent UNREGISTERED-berichten niet meer voorkomen in het [bestand AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
+1. Herhaal stap 1-7 voor alle auteurs- en publicatieinstanties.
 
-## Configuratie na installatie {#post-installation-configurations}
+## Configuraties na de installatie {#post-installation-configurations}
 
 AEM Forms heeft een paar verplichte en optionele configuraties. De verplichte configuraties omvatten het vormen bibliotheken BouncyCastle en serialization agent. De optionele configuraties zijn het configureren van dispatcher en Adobe Target.
 
-### Verplichte configuraties na installatie {#mandatory-post-installation-configurations}
+### Verplichte configuraties na de installatie {#mandatory-post-installation-configurations}
 
 #### RSA- en BouncyCastle-bibliotheken configureren  {#configure-rsa-and-bouncycastle-libraries}
 
-Voer de volgende stappen op alle Auteur uit en publiceer instanties om de bibliotheken op te starten afvaardigen:
+Voer de volgende stappen uit op alle ontwerp- en publicatie-instanties om de bibliotheken te delegeren:
 
 1. Stop de onderliggende AEM instantie.
 1. Open de [AEM installatiemap]\crx-quickstart\conf\sling.properties.
@@ -165,7 +161,7 @@ Dispatcher is een programma voor het in cache plaatsen en taakverdeling voor AEM
 
 1. Configureer de referentiefilterservice:
 
-   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is https://&#39;server&#39;:[port_number]/system/console/configMgr. In de **Configuraties** selecteert u de **Filter Apache Sling Referrer** optie. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De opmaak van de vermelding is `https://'[server]:[port]'`.
+   Meld u als beheerder aan bij Apache Felix. De standaard-URL van het configuratiemanager is https://&#39;server&#39;:[port_number]/system/console/configMgr. In de **Configuraties** , selecteert u de **Filter Apache Sling Referrer** -optie. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De opmaak van de vermelding is `https://'[server]:[port]'`.
 
 #### Cache configureren {#configure-cache}
 
@@ -189,7 +185,7 @@ Adobe Sign maakt workflows voor e-handtekeningen mogelijk voor adaptieve formuli
 
 In een standaard Adobe Sign- en Forms-gecentreerde workflow bij OSGi-scenario vult een gebruiker een adaptief formulier in op **een dienst aanvragen**. Bijvoorbeeld een creditcardaanvraag en een burgerservicepakket. Wanneer een gebruiker het aanvraagformulier invult, verzendt en ondertekent, wordt een workflow voor goedkeuring/afwijzing gestart. De serviceprovider controleert de toepassing in AEM Postvak In en gebruikt Adobe Sign om de toepassing elektronisch te ondertekenen. Als u vergelijkbare workflows voor elektronische handtekeningen wilt inschakelen, kunt u Adobe Sign integreren met AEM Forms.
 
-Als u Adobe Sign wilt gebruiken met AEM Forms, [Adobe Sign integreren met AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
+Adobe Sign gebruiken met AEM Forms [Adobe Sign integreren met AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 
 ## Volgende stappen {#next-steps}
 

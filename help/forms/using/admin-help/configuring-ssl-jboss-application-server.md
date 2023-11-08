@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 8eb4f691-a66b-498e-8114-307221f63718
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '907'
 ht-degree: 0%
@@ -66,7 +66,7 @@ In deze procedure:
    * `keytool -printcert -v -file [appserver root]\standalone\configuration\AEMForms_cert.cer`
    * `keytool -printcert -v -file [appserver root]\domain\configuration\AEMForms_cert.cer`
 
-1. Schrijftoegang verlenen tot het cacerts-bestand in `[JAVA_HOME]\jre\lib\security`Voer, indien nodig, de volgende taak uit:
+1. Schrijftoegang verlenen tot het cacerts-bestand in `[JAVA_HOME]\jre\lib\security`verricht, indien nodig, de volgende taak:
 
    * (Windows) Klik met de rechtermuisknop op het controlebestand en selecteer Eigenschappen. Schakel vervolgens het kenmerk Alleen-lezen uit.
    * (Linux) Type `chmod 777 cacerts`

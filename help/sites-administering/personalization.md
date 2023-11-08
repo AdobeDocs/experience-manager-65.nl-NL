@@ -1,18 +1,14 @@
 ---
 title: Personalisatie
-seo-title: Personalization
 description: Leer over verpersoonlijking in Adobe Experience Manager om de gebruiker van een op maat gemaakte milieu te voorzien die dynamische inhoud toont.
-seo-description: Learn about personalization in AEM.
-uuid: 5790a3e0-f0ec-4785-b915-330a10dea30c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 03ebc494-8baa-4741-b8de-dac5ace743c8
 exl-id: 3a550a33-b54b-4217-b9a6-b5a7971276ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1696'
 ht-degree: 0%
 
 ---
@@ -115,7 +111,7 @@ Houd rekening met het volgende wanneer u personalisatie gebruikt:
 
 * Personalisatie die wordt gerealiseerd door het gedrag van de gebruiker te volgen, of regels te plaatsen die op het profiel van de gebruiker worden gebaseerd, moet nauwkeurig en logisch zijn.
 * Er is niets frustrerender voor de gebruiker dan het hebben van inhoud gedwongen op, of ontkend aan, hen wegens de onnauwkeurige logica van een regel.
-* Daarom moeten de regels goed doordacht zijn - met de eisen van de gebruiker op de voorgrond. Dit kan veel moeite kosten, en moet niet onderschat worden; het bepalen van de bedrijfsregels weegt vaak zwaarder dan de technische inspanning wanneer het uitvoeren van verpersoonlijking.
+* Daarom moeten de regels goed doordacht zijn - met de eisen van de gebruiker op de voorgrond. Dit kan veel moeite kosten en mag niet onderschat worden; het definiëren van de bedrijfsregels weegt vaak zwaarder dan de technische inspanning bij het implementeren van personalisatie.
 
 #### Wanneer gebruiken {#when-to-use}
 
@@ -157,7 +153,7 @@ Diverse componenten worden voorzien van AEM voor verpersoonlijking. Sommige gebr
 | Forms-tekstveld | Tekstveld waarin gebruikers gegevens kunnen invoeren. |
 | Mijn gadgets | Hiermee kunt u een van de beschikbare gadgets opnemen. |
 | Profiel Avatar Photo | Hiermee wordt invoer van een Avatar-foto toegestaan. |
-| Gedetailleerde naam profiel | Invoer van naamdetails, inclusief elementen zoals titel, middelnaam en achtervoegsel, indien vereist. |
+| Gedetailleerde naam profiel | Invoer van naamdetails, met inbegrip van elementen zoals titel, middelnaam en achtervoegsel indien nodig. |
 | Weergavenaam profiel | Naam die moet worden weergegeven. |
 | E-mailadres profiel | Invoer van een e-mailadres. |
 | Profiel Geslacht | Hiermee kan het geslacht worden ingevoerd. |

@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 exl-id: 39e35a07-140f-4853-8f0d-8275bce27a65
 feature: Security
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '6816'
+source-wordcount: '6808'
 ht-degree: 0%
 
 ---
@@ -798,7 +798,7 @@ Deze beweging van resterende eigenschappen JCR aan een specifiek toegangsbeheerb
 
 **Doelknooppunt gedefinieerd door beleid**
 
-Van het beleid van de CUG wordt verwacht om bij de knoop worden gecreeerd JCR die de subboom bepaalt aan beperkte lees toegang te worden onderworpen. Dit is waarschijnlijk een AEM pagina als de CUG wordt verwacht voor de gehele boomstructuur.
+Creeer het beleid van de GECG bij de knoop JCR die de subboom bepaalt aan beperkte lees toegang te worden onderworpen. Dit is waarschijnlijk een AEM pagina als de CUG wordt verwacht voor de gehele boomstructuur.
 
 Merk op dat het plaatsen van het beleid van de GIDS slechts bij jcr:inhoudsknoop onder een bepaalde pagina wordt gevestigd slechts toegang tot de inhoud s.str van een bepaalde pagina zal beperken maar niet op om het even welke siblings of kindpagina&#39;s van kracht zal worden. Dit kan een geldig gebruiksgeval zijn en het is mogelijk om met een bewaargegevensopslagredacteur te bereiken die toestaat om fijnkorrelige toegangsinhoud toe te passen. Nochtans, contrasteert het de vroegere implementatie waar het plaatsen van een cq:cugEnabled bezit op jcr:content knoop intern aan de paginaknooppunt werd opnieuw in kaart gebracht. Deze toewijzing wordt niet meer uitgevoerd.
 
@@ -839,7 +839,7 @@ Wat de `granite:loginPath` heeft betrekking op het zelfde recht wordt vereist om
 
 #### Doelknooppunt gedefinieerd door mixintype {#target-node-defined-by-mixin-type}
 
-Er worden verificatievereisten verwacht die worden gemaakt op het JCR-knooppunt dat de subboomstructuur definieert voor gedwongen aanmelding. Dit zal waarschijnlijk een AEM Pagina zijn voor het geval dat de CUG naar verwachting de volledige boom zal beïnvloeden en UI voor de nieuwe implementatie zal bijgevolg het auto-vereiste mixintype op de paginaknooppunt toevoegen.
+Creeer authentificatievereisten bij de knoop JCR die de subboom bepaalt te worden onderworpen aan gedwongen login. Dit zal waarschijnlijk een AEM Pagina zijn voor het geval dat de CUG naar verwachting de volledige boom zal beïnvloeden en UI voor de nieuwe implementatie zal bijgevolg het auto-vereiste mixintype op de paginaknooppunt toevoegen.
 
 Het plaatsen van het beleid van de GIDS slechts bij jcr:inhoudsknoop die onder een bepaalde pagina wordt gevestigd zal slechts toegang tot de inhoud beperken, maar zal niet op de paginaknoop zelf of op om het even welke kindpagina&#39;s beïnvloeden.
 

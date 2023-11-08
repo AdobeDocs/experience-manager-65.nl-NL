@@ -1,19 +1,17 @@
 ---
 title: Panoramische afbeeldingen
 description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
-uuid: ced3e5bd-93c8-4d5f-a397-1380d4d0a5e7
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
 content-type: reference
-discoiquuid: 632a9074-b747-49a1-a57d-1f42bba1f4e9
 docset: aem65
 feature: Panoramic Images,Asset Management
 role: User, Admin
 exl-id: 4d6fbeb1-94db-4154-9e41-b76033fb4398
-source-git-commit: 363e5159d290ecfbf4338f6b9793e11b613389a5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '544'
+source-wordcount: '545'
 ht-degree: 4%
 
 ---
@@ -32,7 +30,7 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
 
 * Een hoogte-breedteverhouding van 2.
 U kunt de standaardverhouding van 2 in CRXDE Lite bij het volgende met voeten treden:
-   `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
+  `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Gecodeerd met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags gebruiken](/help/sites-authoring/tags.md).
 
@@ -46,7 +44,7 @@ De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voo
 
 1. Open de [Dynamic Media Classic-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started)en meld u vervolgens aan bij uw account.
 
-1. Selecteer in de rechterbovenhoek van de pagina de optie **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
+1. Selecteer rechtsboven in de pagina de optie **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** > **[!UICONTROL Publish Setup]** > **[!UICONTROL Image Server]**.
 1. Op de pagina van de Server van het Beeld publiceren, van **[!UICONTROL Publish Context]** vervolgkeuzemenu boven, selecteert u **[!UICONTROL Image Serving]**.
 
 1. Zoek op dezelfde pagina voor het publiceren van afbeeldingsservers de kop **[!UICONTROL Request Attributes]**.
@@ -61,7 +59,7 @@ De Panorama-viewer werkt alleen correct in Adobe Experience Manager als u de voo
 1. Ga als volgt te werk onder Aanvraagkenmerken:
 
    * Modus Obfuseren aanvragen instellen op **[!UICONTROL Disabled]**.
-   * Vergrendelingsmodus verzoek instellen op **[!UICONTROL Disabled]**.
+   * Vergrendelingsmodus voor aanvragen instellen op **[!UICONTROL Disabled]**.
 
    Deze instellingen zijn nodig voor het gebruik van de `Panoramic Media` WCM-component in Experience Manager.
 

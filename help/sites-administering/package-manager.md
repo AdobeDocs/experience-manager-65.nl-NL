@@ -3,16 +3,14 @@ title: Pakketbeheer
 description: Leer de grondbeginselen van AEM pakketbeheer met Package Manager.
 feature: Administering
 role: Admin
-uuid: cba76a5f-5d75-4d63-a0f4-44c13fa1baf2
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: content
 content-type: reference
-discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3570'
+source-wordcount: '3568'
 ht-degree: 0%
 
 ---
@@ -223,7 +221,7 @@ Er zijn vele acties die op een pakket kunnen worden ondernomen.
 
    >[!TIP]
    >
-   >Als uw instantie veel pakketten bevat, is er mogelijk een mapstructuur aanwezig. In dergelijke gevallen is het eenvoudiger om naar de vereiste doelmap te navigeren voordat u het nieuwe pakket maakt.
+   >Als uw instantie vele pakketten heeft, zou er een omslagstructuur op zijn plaats kunnen zijn. In dergelijke gevallen is het eenvoudiger om naar de vereiste doelmap te navigeren voordat u het nieuwe pakket maakt.
 
 1. In de **Nieuw pakket** voert u de volgende velden in:
 

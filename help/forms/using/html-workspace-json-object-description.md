@@ -5,9 +5,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 exl-id: f837a2b3-4650-4261-84c6-291bb2a46dc7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2113'
+source-wordcount: '2115'
 ht-degree: 0%
 
 ---
@@ -478,7 +478,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
   <tr>
    <td>userSearchHistory<br type="_moz" /> </td>
    <td>T</td>
-   <td>Het bevat een lijst met gebruikers die door de aangemelde gebruiker tot de datum worden doorzocht.<br type="_moz" /> </td>
+   <td>Het bevat een lijst van gebruikers die door een het programma geopende gebruiker tot datum worden gezocht.<br type="_moz" /> </td>
   </tr>
  </tbody>
 </table>

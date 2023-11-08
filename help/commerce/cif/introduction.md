@@ -3,9 +3,9 @@ title: Inleiding en overzicht
 description: Inleiding en overzicht van inhoud en handel. Het Commerce integration framework van de Experience Manager (CIF) is het geadviseerde patroon van de Adobe om handelsdiensten van Adobe Commerce en andere derde handelsoplossingen met de Experience Cloud te integreren en uit te breiden.
 thumbnail: introducing-aem-commerce.jpg
 exl-id: 52dad8f9-1812-42a3-8106-92b23f8517cd
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ Met meer dan 200 klanten, heeft CIF zich als succesvol ingrediënt voor een succ
 
 ## CIF {#cif-benefits}
 
-CIF verstrekt uit-van-de-doos de kerncomponenten van de handel die de behoefte aan douanecode verminderen, die de tijd aan markt voor merken versnelt. Alle kerncomponenten zijn geïntegreerd uit de doos met cliënt-zijgegevenslaag van de Adobe om klantenprofielen, zoals het verenigde profiel te hydreren. Dit profiel vangt in detail het gedrag van een bezoeker, dat kan worden gebruikt om de klantenreis in echt te voorspellen en te personaliseren - tijd.
+CIF verstrekt uit-van-de-doos de kerncomponenten van de handel die de behoefte aan douanecode verminderen, die de tijd aan markt voor merken versnelt. Alle kerncomponenten worden geïntegreerd uit de doos met cliënt-zijgegevenslaag van de Adobe om klantenprofielen, zoals het verenigde profiel te hydrateren. Dit profiel legt in detail het gedrag van een bezoeker vast, dat kan worden gebruikt om de reis van de klant in real time te voorspellen en te personaliseren.
 
 De CIF toe:voegen-op brengt productcontext in Experience Manager en verstrekt auteurshulpmiddelen zoals een productconsole en product/categoriekiezers die de tellers machtigen om onvoorstelbare ervaringen in Experience Manager tot stand te brengen en te leveren zonder op de ontwikkelaar te vertrouwen. De voordelen zijn onder meer:
 

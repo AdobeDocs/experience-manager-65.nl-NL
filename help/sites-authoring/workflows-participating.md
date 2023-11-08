@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 1%
@@ -66,7 +66,7 @@ U kunt een item voltooien zodat de workflow naar de volgende stap kan gaan.
 Op deze actie kunt u aangeven:
 
 * **Volgende stap**: de volgende stap die moet worden uitgevoerd; u kunt een keuze maken in een opgegeven lijst
-* **Opmerking**: indien vereist
+* **Opmerking** indien nodig:
 
 U kunt een deelnemersstap uitvoeren vanuit:
 
@@ -125,7 +125,7 @@ De gebruikers die voor delegatie beschikbaar zijn hangen af van wie het het werk
 Op deze actie kunt u aangeven:
 
 * **Gebruiker**: de gebruiker u aan wilt delegeren; u kunt uit een verstrekte lijst selecteren
-* **Opmerking**: indien vereist
+* **Opmerking** indien nodig:
 
 U kunt een deelnemersstap delegeren vanuit:
 
@@ -175,7 +175,7 @@ Als u ontdekt dat een stap, of een reeks stappen, moet worden herhaald kunt u ac
 Op deze actie kunt u aangeven:
 
 * **Vorige stap**: de stap waarnaar u wilt terugkeren; u kunt een keuze maken in een opgegeven lijst
-* **Opmerking**: indien vereist
+* **Opmerking** indien nodig:
 
 U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 
@@ -254,7 +254,7 @@ U opent als volgt een workflowitem en bekijkt de details:
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteren **Openen** om de informatietabbladen te openen.
 
-1. Selecteer zo nodig de gewenste actie, geef details op en bevestig deze met **OK** (of **Annuleren**).
+1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
 1. Gebruiken **Opslaan** of **Annuleren** om af te sluiten.
 
 #### Workflow Details openen - Pagina-editor {#opening-workflow-details-page-editor}
@@ -264,7 +264,7 @@ U opent als volgt een workflowitem en bekijkt de details:
 1. Open de [pagina voor bewerken](/help/sites-authoring/managing-pages.md#opening-a-page-for-editing).
 1. Selecteren **Details weergeven** van de statusbar om de informatielusjes te openen.
 
-1. Selecteer zo nodig de gewenste actie, geef details op en bevestig deze met **OK** (of **Annuleren**).
+1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
 1. Gebruiken **Opslaan** of **Annuleren** om af te sluiten.
 
 ### Het bekijken van de Payload van het Werkschema (Veelvoudige Middelen) {#viewing-the-workflow-payload-multiple-resources}

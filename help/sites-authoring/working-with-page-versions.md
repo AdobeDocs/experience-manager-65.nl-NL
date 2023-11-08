@@ -2,7 +2,7 @@
 title: Werken met versies van inhoudspagina's
 description: Maak, vergelijk en herstel versies van een pagina in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1501'
 ht-degree: 2%
@@ -49,7 +49,7 @@ U kunt een versie van uw bron maken op basis van:
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
 1. Selecteer de pagina in [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Selecteer de **Maken** van de werkbalk om het dialoogvenster te openen.
-1. In het dialoogvenster kunt u een **Label** en **Opmerking**, indien vereist:
+1. In het dialoogvenster kunt u een **Label** en **Opmerking**, indien nodig:
 
    ![Een label en opmerking invoeren](assets/screen_shot_2012-02-15at105050am.png)
 

@@ -7,9 +7,9 @@ role: User, Admin
 feature: Collaboration,Adobe Asset Link,Desktop App
 exl-id: c7d589a3-1c5f-4ff0-879e-15e1c556f6dc
 hide: true
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3260'
 ht-degree: 14%
 
 ---
@@ -199,7 +199,7 @@ De Verbinding van de Activa van de Adobe biedt een goede steun voor dit gebruiks
 * Aangezien het Creative Cloud zich in de account van het Creative Cloud bevindt, is het ook beschikbaar op andere apparaten die de gebruiker mogelijk heeft (kunnen bijvoorbeeld worden geopend of bewerkt in een speciale mobiele app voor het ) en kan het voor samenwerkingsdoeleinden worden gedeeld met andere gebruikers in het Creative Cloud.
 * Wanneer de creatieve gebruiker klaar is met de wijzigingen, kan hij of zij een incheckbewerking op dat bestand uitvoeren in zijn of haar toepassing op het Creative Cloud, met een optionele opmerking. Het corresponderende actief in [!DNL Experience Manager] zijn versioned en bijgewerkt aan met het nieuwe binaire getal. [!DNL Experience Manager] gebruikers zoals Marketers of LOB-gebruikers hebben via [!DNL Experience Manager] UI van de tijdlijn van middelen.
 
-[!DNL Experience Manager] desktop app biedt netwerkshare voor middelen die zijn geopend in de native app. Standaard worden alle lokaal uitgevoerde wijzigingen geüpload naar [!DNL Experience Manager] automatisch na een korte tijd. Met zo&#39;n configuratie, zou het frequente sparen tijdens het werk in lopende fase allen worden geupload in [!DNL Experience Manager] en versioned, creërend veel netwerkverkeer en potentiële scalability uitdagingen - om onnodige versies in te noemen [!DNL Experience Manager].
+[!DNL Experience Manager] desktop app biedt netwerkshare voor middelen die zijn geopend in de native app. Standaard worden alle lokaal uitgevoerde wijzigingen geüpload naar [!DNL Experience Manager] automatisch na een korte tijd. Met zo&#39;n configuratie, zou het frequente sparen tijdens het werk in lopende fase allen worden geupload in [!DNL Experience Manager] en versioned, creërend talrijke netwerkverkeer en potentiële scalability uitdagingen - om onnodige versies in te noemen [!DNL Experience Manager].
 
 Hier kunt u het beste een optie gebruiken in [!DNL Experience Manager] bureaubladtoepassing om geautomatiseerde updates uit te schakelen en wijzigingen in middelen te uploaden naar [!DNL Experience Manager] wijzigt u handmatig met de actie voor uploaden de status van bedrijfsmiddelen van de app.
 

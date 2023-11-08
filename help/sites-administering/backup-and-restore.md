@@ -1,18 +1,14 @@
 ---
 title: Back-up en herstel
-seo-title: Backup and Restore
 description: Leer hoe u back-ups kunt maken van uw AEM inhoud en configuraties en deze kunt herstellen.
-seo-description: Learn how to backup and restore your AEM content.
-uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '2283'
+source-wordcount: '2282'
 ht-degree: 0%
 
 ---
@@ -232,7 +228,7 @@ De bestanden worden in vier fasen naar de doelmap gekopieerd:
    * Fase A - alles wordt gekopieerd behalve de datastore (met vertraging).
    * Fase B - alleen de datastore wordt gekopieerd (met vertraging).
 
-1. In het tweede kopieerwerkgebied (voortgangsindicator 63% - 65,8% bij het maken van een ZIP-bestand of 90% - 94% als er geen ZIP-bestand is gemaakt) worden alleen bestanden gekopieerd die in de bronmap zijn gemaakt of gewijzigd sinds het eerste kopieerwerkgebied is gestart. Afhankelijk van de activiteit van de opslagplaats, zou dit zich van geen dossiers, tot een significant aantal dossiers kunnen uitstrekken (omdat het eerste dossier van het dossierexemplaar gewoonlijk veel tijd vergt). Het kopieerproces is vergelijkbaar met het eerste stadium (fase A en fase B met vertraging).
+1. In het tweede kopieerwerkgebied (voortgangsindicator 63% - 65,8% bij het maken van een ZIP-bestand of 90% - 94% als er geen ZIP-bestand is gemaakt) worden alleen bestanden gekopieerd die in de bronmap zijn gemaakt of gewijzigd sinds het eerste kopieerwerkgebied is gestart. Afhankelijk van de activiteit van de gegevensopslagruimte kan dit variëren van helemaal geen bestanden tot een aanzienlijk aantal bestanden (omdat het eerste stadium van het kopiëren van bestanden meestal de meeste tijd in beslag neemt). Het kopieerproces is vergelijkbaar met het eerste stadium (fase A en fase B met vertraging).
 1. In het derde kopieerstadium (voortgangsindicator 65,8% - 68,6% bij het maken van een ZIP-bestand of 94% - 98% als er geen ZIP-bestand is gemaakt) worden alleen bestanden gekopieerd die in de bronmap zijn gemaakt of gewijzigd sinds de tweede kopieerfase is gestart. Afhankelijk van de activiteit van de gegevensopslagruimte zijn er mogelijk geen bestanden om te kopiëren, of een zeer klein aantal bestanden (omdat het tweede bestand meestal snel wordt gekopieerd). Het kopieerproces is vergelijkbaar met de tweede fase - Fase A en Fase B, maar zonder vertraging.
 1. Fase 1 tot en met 3 van de bestandskopie wordt allemaal tegelijk uitgevoerd terwijl de opslagplaats actief is. Alleen bestanden die in de bronmap zijn gemaakt of gewijzigd sinds het derde kopieerwerkgebied is gestart, worden gekopieerd. Afhankelijk van de activiteit van de gegevensopslagruimte zijn er mogelijk geen bestanden om te kopiëren, of een zeer, zeer klein aantal bestanden (omdat het tweede bestand meestal zeer snel wordt gekopieerd). Progress-indicator 68,6% - 70% bij het maken van een ZIP-bestand of 98% - 100% als er geen ZIP-bestand is gemaakt. Het kopieerproces is vergelijkbaar met de derde fase.
 1. Afhankelijk van het doel:

@@ -7,7 +7,7 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4834'
 ht-degree: 6%
@@ -125,7 +125,7 @@ Bij het maken van een bewerkbare sjabloon:
 * Kan [een map maken voor de sjablonen](#creating-a-template-folder-admin) indien nodig
 * [Een sjabloon maken](#creatinganewtemplateauthor), die aanvankelijk leeg is
 
-* [Aanvullende eigenschappen definiëren](#definingtemplatepropertiesauthor) voor de sjabloon indien vereist
+* [Aanvullende eigenschappen definiëren](#definingtemplatepropertiesauthor) voor de template, indien nodig
 * [De sjabloon bewerken](#editingtemplates) om de volgende waarden te definiëren:
 
    * [Structuur](#editingatemplatestructureauthor) - Vooraf gedefinieerde inhoud die niet kan worden gewijzigd op pagina&#39;s die met de sjabloon zijn gemaakt.

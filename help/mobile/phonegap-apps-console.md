@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '2685'
 ht-degree: 0%
@@ -89,7 +89,7 @@ In de volgende procedure wordt de Touch-gebruikersinterface gebruikt om een mobi
 
    ![Het pictogram Maken dat wordt aangegeven door een plusteken binnen een vierkant.](do-not-localize/chlimage_1-7.png)
 
-1. (Optioneel) Geef op het tabblad Geavanceerd een beschrijving voor de toepassing op en wijzig de URL van de server indien nodig.
+1. (Optioneel) Geef op het tabblad Geavanceerd een beschrijving voor de toepassing op en wijzig zo nodig de URL van de server.
 1. (Optioneel) Als u PhoneGap Build gebruikt om de toepassing te compileren, selecteert u op het tabblad Build de configuratie die u wilt gebruiken.
 
    Klik op Configuraties beheren om een PhoneGap-build-configuratie te maken.

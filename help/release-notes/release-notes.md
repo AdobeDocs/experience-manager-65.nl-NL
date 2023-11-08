@@ -2,35 +2,34 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 31bc86f81620bdc6fe9877cdc96f4004a80d60f9
+source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
 workflow-type: tm+mt
-source-wordcount: '4621'
+source-wordcount: '3368'
 ht-degree: 0%
 
 ---
 
 # [!DNL Adobe Experience Manager] 6.5 Laatste Opmerkingen bij de release Service Pack {#aem-service-pack-release-notes}
 
-<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/Documents/issue_tracker_sp_cfp_updates.xlsx?d=w3ea81ae4e6054153b132f2698c86f84e&csf=1&web=1&e=7yhrWb&nav=MTVfe0U0RjdDQUM3LTZCQ0EtNDk1Qy04Mjc1LTM2MUJEMzE1OEVGN30 -->
+<!-- For an itemized list of all issues found in these release notes, see the following spreadsheet: https://adobe-my.sharepoint.com/:x:/r/personal/anujkapo_adobe_com/_layouts/15/Doc.aspx?sourcedoc=%7B3ea81ae4-e605-4153-b132-f2698c86f84e%7D&action=edit&wdinitialsession=d8c7b903-87fc-4f2d-9ef2-542a82169570&wdrldsc=3&wdrldc=1&wdrldr=SessionMemoryQuotaExceededDuringSession -->
 
 <!-- DO NOT DELETE THIS HIDDEN NOTE      DO NOT DELETE THIS HIDDEN NOTE
 >[!NOTE]
 >
->Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, June 1, 2023. In addition, a list of Forms fixes and enhancements is added to this section. -->
+>Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the add-on packages release Thursday, November 30, 2023. In addition, a list of Forms fixes and enhancements is added to this section. -->
 
 ## Gegevens vrijgeven {#release-information}
 
 | Product | [!DNL Adobe Experience Manager] 6.5 |
 | -------- | ---------------------------- |
-| Versie | 6.5.18.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Versie | 6.5.19.0 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | Type | Service Pack-release |
-| Datum | donderdag 24 augustus 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
+| Datum | Donderdag 23 november 2023 <!-- UPDATE FOR EACH NEW RELEASE --> |
 | URL downloaden | [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip) <!-- UPDATE FOR EACH NEW RELEASE --> |
 
-## Wat is inbegrepen in [!DNL Experience Manager] 6.5.18.0. {#what-is-included-in-aem-6518}
+## Wat is inbegrepen in [!DNL Experience Manager] 6.5.19,0 {#what-is-included-in-aem-6519}
 
-[!DNL Experience Manager] 6.5.18.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, insectenmoeilijke situaties, en prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 zijn vrijgegeven. [Dit servicepack installeren](#install) op [!DNL Experience Manager] 6.5
+[!DNL Experience Manager] 6.5.19.0 omvat nieuwe eigenschappen, zeer belangrijke klant-gevraagde verhogingen, insectenmoeilijke situaties, en prestaties, stabiliteit, en veiligheidsverbeteringen die sinds de aanvankelijke beschikbaarheid van 6.5 in April 2019 zijn vrijgegeven. [Dit servicepack installeren](#install) op [!DNL Experience Manager] 6.5
 
 <!-- UPDATE FOR EACH NEW RELEASE -->
 
@@ -42,245 +41,202 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 **Belangrijkste kenmerken**
 
-* Middelen, Dynamic Media - [Ondersteuning voor multi-subtitle en multi-audiotrack voor video&#39;s in Dynamic Media](/help/assets/video.md#about-msma)—U kunt nu eenvoudig meerdere ondertitels en meerdere audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
-
-* Middelen - Vanuit de zoekresultaten kunt u nu naar de maplocatie navigeren die een element bevat waarmee u verschillende taken voor middelenbeheer kunt uitvoeren. (ACTIVA-23182)
+* A
 
 **Belangrijke verbeteringen**
 
-* De Plukker van Polaris van Plaatsen in de Fragmenten van de Inhoud heeft betere prestaties. (SITES-14092)
-
-* Gebruikers van de Pagina-editor/afbeeldingscomponent van Sites konden naar elementen van de Cloud Service voor externe middelen verwijzen. (SITES-13448, SITES-13433)
-
-* Om snel een project in de mening van de Lijst te vinden, waar u vele projecten in uw systeem kunt hebben, steunt de Adobe nu server-zijhet sorteren. Projectknooppunten worden op de achtergrond gesorteerd op basis van de kolom die door de gebruiker is geselecteerd voordat ze in de gebruikersinterface worden weergegeven. (NPR-41027)
-
-* AEM 6.5.18.0 ondersteunt MongoDB 5.0 tot 6.0.
+* S
 
 **Verouderde functie**
 
 * ActiveMQ in AEM is vervangen. ActiveMQ is gebruikt voor communicatie tussen twee AEM Publish-instanties. Adobe raadt klanten aan een taakverdelingsmechanisme te gebruiken.
 
-**Forms**
-
-* **[Verbeterde fout behandeling met de managers van de douanefout in de regelredacteur](https://experienceleague.adobe.com/docs/experience-manager-65/forms/adaptive-forms-advanced-authoring/standard-validation-error-messages-adaptive-forms.html)** - U kunt nu een aangepaste functie aanroepen (met behulp van de clientbibliotheek) als reactie op een fout die door een externe service is geretourneerd. En u kunt eindgebruikers een op maat gesneden reactie geven. Of u kunt specifieke acties uitvoeren voor fouten die door een service worden geretourneerd. Bijvoorbeeld, kunt u een douanewerkschema in de achtergrond voor specifieke foutencodes aanhalen of de klant meedelen dat de dienst neer is
-
-* **[Verbeterde Adobe Sign Workflow-stap](https://experienceleague.adobe.com/docs/experience-manager-65/forms/workflows/aem-forms-workflow-step-reference.html#sign-document-step)** - Adobe Sign-workflowstap in AEM Workflows is beschikbaar met de volgende verbeteringen.
-
-   * **Uitgebreide beveiliging met verificatie op basis van overheidsidentiteitskaart voor Adobe Sign** - Verificatie op basis van Adobe Acrobat Sign-gebruikersnaam biedt een extra verificatielaag. Het stelt gebruikers in staat hun identiteit te verifiëren met behulp van door de overheid afgegeven id&#39;s (rijbewijs, nationale identiteitskaart, paspoort). Door vertrouwde identificatiedocumenten te gebruiken, voegt deze verbetering een extra niveau van vertrouwen aan het ondertekeningsproces toe, die het ideaal maakt voor scenario&#39;s die verhoogde veiligheid, naleving, en gebruikersbevestiging vereisen.
-
-   * **Verbeterde transparantie met audittrail voor Adobe Sign-documenten** - Gebruik de functie Audittrail voor meer informatie over de levenscyclus van uw Adobe Sign-documenten. Met het audittrail, kunt u een uitvoerig verslag van alle acties en interactie handhaven met betrekking tot uw documenten. Dit omvat gegevens zoals wie het document heeft bekeken, bewerkt of ondertekend, samen met tijdstempels voor elke gebeurtenis. Deze verbetering is van cruciaal belang voor het handhaven van de naleving, het oplossen van geschillen en het verzekeren van de integriteit van uw digitale overeenkomsten.
-
-
-   * **De rollen voor overeenkomstontvangers uitbreiden tot buiten alleen de ondertekenaar** - Met Adobe Acrobat Sign kunt u de rollen voor overeenkomstontvangers uitbreiden naar een andere plaats dan alleen de ondertekenaar, zodat ze beter aansluiten op hun workflowvereisten. Wanneer toegelaten, heeft elke ontvanger in een Overeenkomst zijn rol individueel configureerbaar, met Ondertekenaar die het gebrek is.
-
-
-* **[AEM Forms op JEE volledig installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-65/forms/install-aem-forms/jee-installation/aem-forms-jee-supported-platforms.html)** - Het servicepakket biedt een volledig installatieprogramma voor AEM Forms op JEE dat ondersteuning biedt voor meerdere nieuwe softwarecombinaties, waaronder:
-   * Microsoft® Windows Server 2022
-   * Microsoft® Active Directory 2022
-   * Oracle WebLogic 14C op Windows Server 2022
-   * Red Hat® JBoss® 7.4.10
-   * MongoDB 4.4
-   * MySQL JDBC-connector 8
-
-Als u de nieuwste software voor uw AEM 6.5 Forms in JEE-omgeving installeert of wilt gebruiken, raadt Adobe u aan AEM 6.5.18.0 Forms in te voeren in het volledige installatieprogramma van JEE. Raadpleeg de documentatie voor AEM Forms op JEE of AEM Forms op OSGi voor meer informatie over de volledige lijst met nieuw toegevoegde en vervangen software.
-
 <!-- UPDATE BELOW FOR EACH NEW RELEASE -->
 
-## Opgeloste problemen in Service Pack 18 {#fixed-issues}
+## Opgeloste problemen in Service Pack 19 {#fixed-issues}
 
-### [!DNL Sites]{#sites-6518}
+### [!DNL Sites]{#sites-6519}
 
-* Met de Bulkeditor kunt u de eigenschappen van meerdere pagina&#39;s bijwerken door het gereedschap `tsv` Exporteren, wijzigingen offline doorvoeren en vervolgens het dialoogvenster `tsv` terug naar Experience Manager. Hoewel de pagina&#39;s zijn bijgewerkt, bevat de eigenschap JCR `cq:lastModified` is niet bijgewerkt en bevindt zich in de tijdlijn. (SITES-14072)
-* De verwijzing van de verbinding wordt niet bijgewerkt binnen een Fragment van de Ervaring wanneer het creëren van een levende exemplaar of de uitrol van een Fragment van de Ervaring. (SITES-14759)
-* Een actie van de workflowsynchronisatie werd toegevoegd aan de uit-van-de-doos standaard uitrolconfiguratie van de Experience Manager, de &quot;pagina Rollout en subpages&quot;, van de ouderpagina, en de asynchrone baan ontbreekt met uitzondering NullPointer. De bronlocatiepagina (en-us) bestaat niet in het bovenliggende element, maar wel op de doellocatie (Live copy) (en). (SITES-12207)
-* U hebt een &#39;en&#39;-pagina die `jcr:description` en heeft de pagina ter vertaling verzonden. De `jcr:description` wordt vertaald en het bezit is aanwezig onder lancering. Wanneer de lancering echter wordt bevorderd, `jcr:description` wordt niet bijgewerkt op de pagina. (SITES-13146)
-* Gelokaliseerde inhoud in Live kopie gaat verloren na het rollout van de blauwdruk. (SITES-12602)
+* U
 
-#### Gebruikersinterface Admin{#sites-adminui-6518}
+#### Toegankelijkheid{#sites-accessibility-6519}
 
-* Als de schrappingstoestemming van een gebruiker door middel van gebruikersadmin console wordt verwijderd, ziet de gebruiker niet meer de knoop van &quot;Eigenschappen&quot;in de console sites.html (wanneer het selecteren van de pagina). Deze optie is echter beschikbaar als de gebruiker de pagina-editor opent. (SITES-14341)
-* Wanneer een map veel pagina&#39;s bevat en elke map een groot aantal versies heeft, wordt bij gebruik van de functie Vergelijkingsversie de belasting voor de instantie hoog. Wanneer meerdere gebruikers de functie tegelijkertijd gebruiken, kan de instantie omlaag gaan. (SITES-13026)
+* Als u op een AEM Sites-pagina 200% inzoomt op de pagina, worden de koppelingen **[!UICONTROL Language Copy]** en **[!UICONTROL CSV Report]** in de References verdwijnen. (SITES-11011) NORMAAL
 
-#### [!DNL Content Fragments]{#sites-contentfragments-6518}
+#### Gebruikersinterface Admin{#sites-adminui-6519}
 
-* Er is een probleem ontdekt met de uitzonderingsbehandeling in het dialoogvenster `RemoteAssetClientImpl`. Wanneer een IOException of RuntimeException terwijl het vragen van de meta-gegevens voorkomt, probeert de huidige draad om gedeelde httpClient te sluiten en opnieuw te creëren die in een cascade van andere fouten in de draden kon resulteren. (SITES-14092)
-* Wanneer auteurs het RTF-veld in een inhoudsfragment invullen en een afbeelding in een koppeling invoegen, wordt het foutbericht weergegeven wanneer het inhoudsfragment wordt opgevraagd via de GraphQL API `Exception while fetching data (/genericContentByPath) : null` wordt geretourneerd. Deze fout is alleen opgetreden als er een koppeling was met een afbeelding in de fout. Als u de afbeelding uit de koppeling verwijdert, ging het foutbericht weg. (SITES-13988)
-* De GraphQL-implementatie van Experience Manager 6.5 was niet op dezelfde manier verlopen als de meester en er ontbraken enkele belangrijke correcties. (SITES-13096)
-* Een verplichte HTTP-header is nodig voor toegang tot het eindpunt van de metagegevensservice. (SITES-13068)
+* AEM Screens Channel **[!UICONTROL Preview]** werkt niet en wordt niet weergegeven op het dashboard. (SITES-15730) KRITIEK
+* Tijdens het verplaatsen van een pagina worden de verwijzingen, als de gebruikersinterface de verwijzingen niet kan tonen maar verklaart dat deze automatisch opnieuw worden gepubliceerd, zij *niet* opnieuw gepubliceerd. (SITES-16435)
+* In AEM 6.5 met Service Pack 16 of 17, wanneer in de mening van de Lijst van plaatsen met de toegelaten kolom van het &quot;Werkschema&quot;, kunt u niet de lijst sorteren die op de punten in die kolom wordt gebaseerd. Er vindt geen sortering plaats. (SITES-15385) MAJOR
+* Voor een paginasjabloon voor omleiding is het veld voor omleiding verplicht gesteld. De validatie voor het vereiste veld wordt echter niet toegepast en werkt niet in deze twee scenario&#39;s: wanneer een pagina wordt gemaakt zonder verplichte omleidingswaarde; u kunt geen omleidingspagina maken. De validatie werkt niet wanneer u met sneltoetsen navigeert en wanneer het veld is gemarkeerd als ongeldig, wordt niet verder gegaan. (SITES-15903) NORMAAL
+* Sommige **Binnenkomende koppelingen** werden niet opgenomen in het weergegeven aantal in het dialoogvenster **Verwijzingen** deelvenster. Het deelvenster werd bijvoorbeeld weergegeven **Binnenkomende koppelingen (6)** maar er waren eigenlijk negen binnenkomende links . (SITES-14816) NORMAAL
 
-#### Kernonderdelen{#sites-core-components-6518}
+#### Klassieke interface{#sites-classicui-6519}
 
-* Met de functie voor het selecteren van elementen wordt geen bijgewerkte lijst met elementen opgehaald wanneer deze wordt gesloten en opnieuw geopend. Als nieuwe elementen in de repository worden geüpload, worden ze pas weergegeven in de assetkiezer als de pagina met de assetkiezer is vernieuwd. (SITES-14828)
-* De gebruikersinterface van de de selecteur van activa, die in de redacteur van Plaatsen (CS) wordt geïntegreerd, reageert niet wanneer het venster wordt verminderd. (SITES-14127)
-* De configuratie van Adobe IMS (Identity Management System) voor de integratie van Asset Selector accepteerde onjuiste waarden. (SITES-13962)
-* Als Asset Selector is geïntegreerd in de component Sites Image, mag deze geen andere elementen dan de afbeelding selecteren. (SITES-13879)
-* Nadat de aanmelding is voltooid, wordt de gebruiker omgeleid naar de Pagina-editor. De gebruiker moet de kiezer voor middelen opnieuw openen om Externe elementen te kiezen. (SITES-13851)
-* De Remote Asset Picker leidt altijd naar de werkgebiedomgeving van Adobe IMS (Identity Management System). (SITES-13448, SITES-13433)
+* Nadat u hotfix hebt geïnstalleerd in SITES-15827, werden dialoogvenstertitels met witruimte tussen woorden vervangen door `" "`. Er werden ook regeleinden verwijderd. (SITES-16089)
+* Titels van gecodeerde dialoogvensters resulteren nu in een dubbele codering van de titel. (SITES-15841) NORMAAL
+* De update van AEM servers van de dienstpak 6.5.16 tot 6.5.17 resulteerde in een dubbele codering van Klassieke de dialoogvaktitels van de UI. (SITES-15634) NORMAAL
 
-<!-- #### [!DNL Experience Fragments]{#sites-experiencefragments-6518}
+#### [!DNL Content Fragments]{#sites-contentfragments-6519}
+
+* Er verschijnt een bericht Interne serverfout in de Inhoudsfragmenteditor. (SITES-13550) KRITIEK
+* De bijwerking van de `org.json` bibliotheek door middel van NPR-41291 heeft geleid tot conversies van gegevensfouten in de `DefaultDataTypeConverter` van de `cfm-impl` bundel. Conversie van gegevenstypen moet flexibeler zijn. (SITES-16473) NORMAAL
+* Het pop-upbericht &#39;Deze versie van het inhoudsfragment kan vanwege incompatibele inhoud niet worden vergeleken met de huidige versie.&#39; Inhoudsfragmenten moeten vergelijkbaar zijn, maar niet. (SITES-16317) NORMAAL
+* De JS-URL van de elementkiezer is gewijzigd van
+  `https://experience.adobe.com/solutions/CQ-assets-selectors/assets/resources/assets-selectors.js`
+tot
+  `https://experience.adobe.com/solutions/CQ-assets-selectors/static-assets/resources/assets-selectors.js` (SITES-16068) NORMAAL
+* Pas het nieuwe API-responsschema voor metagegevens van Polaris aan voor CFM-Polaris-integratie. (SITES-15166) NORMAAL
+* Alle inhoudsfragmenten moeten worden vermeld op de plaats waar naar het geselecteerde inhoudsfragment wordt verwezen. In plaats daarvan bevatten elementverwijzingen in het referentievenster voor inhoudsfragmenten 0 (nul) verwijzingen. (SITES-15036) NORMAAL
+
+#### Core Backend{#sites-core-backend-6519}
+
+* Verbeteren `StyleImpl`. (SITES-15164) NORMAAL
+
+<!--#### Core Components{#sites-core-components-6519}
 
 * A -->
 
-#### Pagina-editor{#sites-pageeditor-6518}
+#### Campagne-integratie{#sites-campaign-integration-6519}
 
-* Wanneer de auteur Pagina-eigenschappen opent, wordt in het dialoogvenster een onjuiste weergave weergegeven. Er is dus een extra horizontale schuifbalk en extra marges zichtbaar. (SITES-14502)
-* De stijlen die in Experience Manager 6.5, Service Pack 17, voor anker en body-tag zijn toegevoegd, veroorzaakten CSS-problemen. Ankertags zijn niet onderstreept weergegeven in Auteur. (SITES-14261)
+* Op de component signature (`/apps/fpl/components/campaign/signature`) werkt de koppeling ExternalAlizer niet. Het domein wordt niet toegevoegd aan de afbeeldingsbron als de HTML-opmerking boven de afbeeldingstag is verwijderd. Dit probleem is alleen gevonden met de handtekeningcomponent in de productieomgeving, niet met de testomgeving. (SITES-16120) NORMAAL
 
-### [!DNL Assets]{#assets-6518}
+<!--#### Experience Fragments{#sites-experiencefragments-6519}
 
-* De schermlezer kondigt de toestand voor uitvouwen of samenvouwen van het dialoogvenster [!UICONTROL Start Crop] tijdens het bewerken van een element. (NPR-40593)
-* Experience Manager geeft fout- en waarschuwingsberichten weer tijdens het uploaden van een element op AEM 6.5.17.0-instantie. (ACTIVA-26232)
-* Wanneer u middelen van een omslag met volledige toegang tot activa van een omslag met read-only toegang met elkaar in verband brengt, toont de Experience Manager een foutenmelding, maar leidt nog tot een gedeeltelijk verband tussen de twee activa. (ACTIVA-25832)
-* Verbonden elementen werken niet tussen een AMS-instantie en een Cloud Service-instantie. (ACTIVA-24930)
-* Tijdens het bewerken van Metadata Schema Forms worden de waarden van [!UICONTROL On time] en [!UICONTROL Off time] velden worden niet correct opgeslagen. (ACTIVA-24871)
-* Als u het rapport Slimme tags genereert voor de opgeleide tags, worden de tags met lage betrouwbaarheidsscores niet weergegeven. (ACTIVA-24109)
-* Experience Manager geeft een leeg scherm weer terwijl u een afbeelding bewerkt en annoteert in de kolomweergave. (ACTIVA-24108)
-* Schermlezers geven het doel van het veld Gebruiker toevoegen niet aan wanneer u een verzameling maakt. (ACTIVA-21736)
-* De **Verzamelingen** label is niet gelokaliseerd op de pagina Eigenschappen van verzamelingen. (ACTIVA-21102)
-* Wanneer u een regel toevoegt of een bestaande regel bewerkt met het standaardformulier Metagegevensschema, worden de talen in de vervolgkeuzelijst niet gelokaliseerd. (ACTIVA-2012)
-* Experience Manager geeft een niet-gelokaliseerd foutbericht weer bij het toevoegen van een JSON-pad in het metagegevensschema. (ACTIVA-2012)
-* De tijdlijnoptie op de linkernavigatie toont niet de aangewezen contrastverhouding. (ACTIVA-17348)
-* Kalenderelementen maken geen gebruik van de vereiste ARIA-kenmerken. (ACTIVA-17282)
-* In de navigatietekst links wordt de juiste contrastverhouding niet weergegeven. (ACTIVA-17268)
-* De lichtbakafbeelding wordt niet verborgen voor schermlezers. (ACTIVA-17263, ACTIVA-17242)
-* De status van een actieve gebruikersinterface biedt geen geschikte contrastverhouding voor de achtergrond. (ACTIVA-17260)
-* De schermlezer herkent tijdens het annoteren van een element de [!UICONTROL Save as version] of [!UICONTROL Start workflow] navigeren met de pijltoetsen op het toetsenbord. (ACTIVA-17253)
-* Bepaalde rollen van ARIA bevatten niet de aangewezen kindrollen op de homepage van Activa. (ACTIVA-17248)
-* Wanneer u met het toetsenbord naar de bewerkingsopties voor een element van een afbeeldingstype navigeert, [!UICONTROL Launch Map] wordt niet herkend en gaat de toetsenbordfocus naar de knop Annuleren. (ACTIVA-17238)
+* A -->
 
-#### [!DNL Dynamic Media]{#assets-dm-6518}
+#### Elementaire componenten (verouderd){#sites-foundation-components-legacy-6519}
 
-* Wanneer VTT niet kan worden gedownload, is de video niet zichtbaar. Er wordt een leeg scherm weergegeven, terwijl de videoscrubber voorwaarts wordt weergegeven. (ACTIVA-21909)
-* Wanneer u met Tab op het toetsenbord navigeert, gaat de focus niet naar meerdere besturingselementen onder de video. Als zodanig zijn ze niet toegankelijk. Verbeterde toetsenbordnavigatie voor interactieve video&#39;s. (ACTIVA-25749)
-* Voorinstellingen van de viewer met vaste functionaliteit die worden weergegeven in de Dynamic Media-component. (ACTIVA-22922)
-* Verwijderd &quot;Beeldverwerking&quot; op het tabblad Algemene instellingen Beveiliging. (ACTIVA-24618)
-* Correctie van activa die niet aan Dynamic Media en StringIndexOutOfBoundsException konden uploaden. (ACTIVA-25787)
-* Er is een visuele asterisk toegevoegd voor het verplichte bewerkingsveld &#39;width&#39; op het tabblad &#39;Basic&#39;. (ACTIVA-25741)
-* Watermark Dynamic Media Rendition is nu gedownload. (ACTIVA-26173)
-* De limiet van 127 tekens voor namen van niet-video-elementen wordt opnieuw ingesteld. (ACTIVA-26074)
+* Adobe Experience Manager (AEM) Sites Search component verbreekt de gebruikersinterface. (SITES-15087) NORMAAL
 
-### [!DNL Forms]{#forms-6518}
+#### GraphQL Query Editor{#sites-graphql-query-editor-6519}
 
-<!-- Fixes in [!DNL Experience Manager] Forms are delivered through a separate add-on package one week after the scheduled [!DNL Experience Manager] Service Pack release date. In this case, the AEM 6.5.18.0 Forms add-on packages release is scheduled for Thursday, August 31, 2023. A list of Forms fixes and enhancements would be added to this section post the release. -->
+* In de gebruikersinterface van GraphQL Editor kunt u niet door alle voortgezette query&#39;s bladeren wanneer er een groot aantal query&#39;s is (bijvoorbeeld meer dan 25). (SITES-16008)
+* De GraphQL Editor slaat de publicatiestatus van voortgezette query&#39;s niet op. De knop Publiceren ongedaan maken wordt weergegeven in de GraphQL Editor, maar het pictogram dat aangeeft dat de voortgezette query is gepubliceerd, wordt niet weergegeven. Als u de pagina vernieuwt, ziet u dat de voortgezette query niet eens wordt gepubliceerd. (SITES-15858) MAJOR
 
+#### Lanceringen{#sites-launches-6519}
+
+* Wijzigingen in de opslagplaats worden niet opgeslagen vanwege `Oak0001` veroorzaakt een conflict wanneer meerdere pagina&#39;s worden bewerkt of de inhoud wordt geschreven. Het is normaal dat u in een dergelijke gebeurtenis opnieuw probeert, maar dit gebeurt niet. (SITES-14840)
+
+#### MSM - Actieve kopieën{#sites-msm-live-copies-6519}
+
+* MSM-uitrolknop werkt niet in de grafische gebruikersinterface met aanraakbediening. (SITES-16991)
+* De Verwijzing van de verbinding wordt niet bijgewerkt binnen het Fragment van de Ervaring wanneer het creëren van een levende exemplaar of het uitvoeren van een Fragment van de Ervaring. (SITES-15460) NORMAAL
+
+#### Pagina-editor{#sites-pageeditor-6519}
+
+* De selectie van meerdere documentfiletypen op het filter voor elementtype werkt niet op de paginaconsole. Er worden geen resultaten gevonden, zelfs niet als de resultaten van een bepaald bestandstype beschikbaar zijn. Auteurs kunnen daarom niet meerdere documenten filteren. Zij moeten veelvoudige documenttypes gebruiken en zij moeten het tegelijkertijd filtreren. (SITES-14047)
+* Nadat u een exemplaar van AEM 6.5.17 en AEM 6.5.18 hebt bijgewerkt, vanuit de Pagina-editor, als u **[!UICONTROL Publish Page]**, wordt u omgeleid naar een URL die niet bestaat. De gebruiker moet worden omgeleid naar de wizard Publiceren. (SITES-15856) NORMAAL
+* (SITES-15704) NORMAAL
+* Overbodige kopie van AEM klembord tijdens plakken vanaf het klembord van het besturingssysteem. (SITES-15704) NORMAAL
+* In elementen selecteren **[!UICONTROL Documents]** vervolgens onder **[!UICONTROL Filtertype]**, selecteren **[!UICONTROL Microsoft® Word]** of **[!UICONTROL Microsoft® Excel]** geeft geen resultaten weer, ook al bestaan er bestanden van beide typen. (SITES-14837) NORMAAL
+
+### [!DNL Assets]{#assets-6519}
+
+* Kan geen onderscheid maken tussen publicatiemiddelen en Experience Manager of Brand Portal. [NPR-41320]
+* Wanneer u een openbare map maakt of opslaat, worden drie groepen gemaakt in een beheerdashboard. [ACTIVA-26700]
+* Wanneer u in het zoekvenster selectievakjes selecteert en een van deze selectievakjes uitschakelt, zijn alle selectievakjes uitgeschakeld. [ACTIVA-26377]
+
+#### [!DNL Dynamic Media]{#assets-dm-6519}
+
+* Nadat een element naar AEM is geüpload, `update_asset` de workflow wordt geactiveerd. De workflow wordt nooit voltooid. Wanneer u de workflowinstanties bekijkt, wordt de workflow voltooid tot de uploadstap voor het product. De volgende stap is scène7 batch upload. De gebruiker kan zien dat het middel zich in Scene7 bevindt vanuit de Dynamic Media Classic-app. (ACTIVA-30443)
+* Een aangepast servereindpunt (API-eindpunt) retourneert een onjuiste Dynamic Media-bestandsnaam (Scene7). Dit gebeurt wanneer een element wordt verwijderd en vervangen door een element met dezelfde naam. De aangepaste servlet retourneert de oude Dynamic Media-bestandsnaam (Scene7), terwijl een JCr-API-aanroep de juiste bestandsnaam retourneert. (ACTIVA-29476)
+* Zelfs nadat Sync is uitgeschakeld op mapniveau, wordt in het logbestand de trigger &quot;Scene7 ReplicateOnModifyListener&quot; weergegeven. De `ReplicateOnModifyListener/Worker` moet verwerking op niet-Dynamic Media-mapelementen en inhoudsfragmenten overslaan. (ACTIVA-26705)
+* Mensen met een laag gezichtsvermogen worden beïnvloed als de focus niet zichtbaar is in vervolgkeuzemenu&#39;s (Alleen inhoud, Weergave, Meer opties) in zwart-witmodi met hoog contrast. (ACTIVA-25759) NORMAAL
+* Mensen met een laag gezichtsvermogen worden beïnvloed als de lichtsterktecontrastverhouding voor tekst op een pagina minder dan 4,5:1 is. (ACTIVA-25756) NORMAAL
+* Schermlezers vertellen het weergegeven pop-upbericht niet nadat ze de gegevens hebben verzonden. (ACTIVA-25755) NORMAAL
+* Schermlezers herkennen geen markeringen op de pagina (Dynamic Media; maken van een videocoderingsprofiel) wanneer ze navigeren met een vaste-kommasleutel/regiosneltoets `D/R`. (ACTIVA-25752) NORMAAL
+* Schermlezers herkennen niet meerdere markeringen op de pagina (Dynamic Media; interactieve video maken) wanneer ze navigeren met behulp van een sneltoets voor liggend/regionaal `D/R`. (ACTIVA-25750) NORMAAL
+* Schermlezers (NVDA/JAWS/Narrator) herkennen de Landmarkeringen niet in **Element bewerken** pagina tijdens navigeren met de sneltoetsen `D/R`. (ACTIVA-25744) NORMAAL
+* De gebruiker krijgt een leeg/vals asynchroon baanbericht maar het aangesloten middel wordt met succes gepubliceerd. (ACTIVA-29342) TRIVIAL
+
+### [!DNL Forms]{#forms-6519}
+
+Oplossingen in [!DNL Experience Manager] Forms wordt één week na de geplande levering geleverd via een afzonderlijk invoegpakket [!DNL Experience Manager] Releasedatum van Service Pack. In dit geval is de AEM 6.5.19.0 Forms add-on pakketrelease gepland voor donderdag 30 november 2023. Na de release wordt een lijst met Forms-correcties en -verbeteringen toegevoegd aan deze sectie.
+
+* Toegangsbeheerlijst toevoegen voor `fd-cloudservice` gebruiker in staat te stellen de Microsoft® configuraties te lezen of bij te werken onder `cloudconfigs/microsoftoffice`. (FORMS-11142) NORMAL
+
+<!--LEFT BULLET LIST HERE IN CASE OF REUSE BY FORMS IN THE FUTURE 
 * **Document Services**
-   * Wanneer een gebruiker een transformPDF-service gebruikt, mislukt deze met een uitzondering: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml` (FORMS-9957)
-   * Als de server wordt afgesloten tijdens het genereren van een PDF-document, worden fouten bij het uitvoeren van een opstarttaak na de server gegenereerd. Het argument -Dcom.adobe.livecycle.dsc.deferServiceStart=true moet tijdens het opstarten van de server worden toegevoegd. (FORMS-9836)
-   * Als een gebruiker probeert om PDF samen te voegen gebruikend de methode AssemblerService.Invoke, ontbreekt de assembleur om de taak uit te voeren. (FORMS-9550)
-   * Wanneer u aan AEM 6.5.15.0 Service Pack op milieu&#39;s OSGI en JEE bevordert, houdt de dienst van de Assembler gebruikend een specifiek malplaatje op het werk. (FORMS-9355, FORMS-9445, FORMS-9408)
-   * Java™ garbage collection is unable to clear old-gen heap on an AEM Forms OSGi server, because the Global Timeout for XMLFormService is not configured to a proper value. (FORMS-9384, FORMS-9035)
-   * Tijdens het weergeven van de PDF-voorvertoning van een adaptief formulier worden de ongewenste Java™-stackdumps weergegeven in de foutlogboeken. (FORMS-8865)
-   * Wanneer een gebruiker de documentstatus voor documenten in de sectie met documentdetails bekijkt, wordt deze niet correct weergegeven. (FORMS-8946, FORMS-10424)
-   * Wanneer een gebruiker upgradet naar AEM Forms en de sendToPrinter-service gebruikt, neemt het heapgebruik voortdurend toe. (FORMS-10148)
-   * Op JBoss® 7.4 EAP-server mislukt de e-mailfunctionaliteit met `java.io.IOException`. (FORMS-10138)
-   * Wanneer een gebruiker de dienst transformPDF gebruikt, ontbreekt het met een fout: `java.lang.ClassNotFoundException: default task-158Class name com.adobe.internal.afml.AFMLExceptionInvalidParameter from package com.adobe.internal.afml`(FORMS-9957)
-   * Na bevordering aan AEM Service Pack 6.5.14.0, komt de kwestie in de assembleerdienst voor wanneer het gebruiken van een specifiek malplaatje voor. (FORMS-9445, FORMS-9408)
-  <!-- *  When a user configures the watched folder endpoint for PDF Generator, it fails to pick documents on JDK 11. (FORMS-10152) -->
-* **Adaptieve Forms**
-   * Wanneer een gebruiker een aangepaste functie probeert aan te roepen zonder een veld te wijzigen, zoals het instellen van de waarde van een ander veld, mislukt dit. (FORMS-9921)
-   * Wanneer u werkt met de aangepaste foutfunctie voor de Rule Editor in een adaptief formulier, treden de volgende fouten op:
-      * Wanneer een gebruiker @param probeert te gebruiken{boolean} met een functie staat de regeleditor niet toe dat Booleaanse waarden worden doorgegeven aan een functie.
-      * Wanneer een gebruiker @param probeert te gebruiken{string} met een functie, ontbreekt de regelredacteur om de facultatieve waarden en de waarschuwingen van onvolledige regels over te gaan. (FORMS-9816, FORMS-9815)
-   * De formulieren-gebruikersgroep roept de Redacteur van de Regel tweemaal in een Aangepast Vorm. (FORMS-9051)
-   * Wanneer een gebruiker in een visuele editor een object Form selecteert, wordt het hele object field instance doorgegeven aan de aangepaste functie in plaats van alleen de waarde van het veld. (FORMS-10015)
-   * Wanneer een gebruiker een op een basiscomponent gebaseerd adaptief formulier maakt en een tekstinvoercomponent toevoegt, `Is Empty` en `Is Not Empty` werken niet in de redacteur van de Regel. (FORMS-10098)
-   * Als een veld in een op kerncomponenten gebaseerd adaptief formulier als ongeldig is gemarkeerd, wordt een wijzigingsgebeurtenis in het veld gestart. (FORMS-10087)
-   * Wanneer een gebruiker een adaptief formulier probeert te maken met een complex JSON-schema, mislukt het. De fout treedt op als:
-     `GET /content/forms/af/katezeroone/testaf1.html HTTP/1.1] com.adobe.aemds.guide.service.impl.JsonObjectCreatorImpl Could not emit JSON with context java.lang.ArrayIndexOutOfBoundsException:0`. (FORMS-9639)
-   * Als een gebruiker in een adaptief formulier het selectievakje &quot;Ik ga akkoord met de voorwaarden&quot; uitschakelt, wordt dit weer ingeschakeld wanneer de gebruiker omlaag schuift. (FORMS-9458)
-   * Wanneer een gebruiker een adaptief formulier opent op een Android™-apparaat met Google Chrome/Firefox en het maximaal toegestane aantal tekens invoert in een tekstvak, wordt de waarde in het tekstvak niet gewist. (FORMS-9354)
-   * Wanneer het label van het selectievakje speciale tekens bevat, zoals &#39;,&#39;, &#39;/&#39; of &#39;.&#39;, wordt het desbetreffende selectievakje niet ingeschakeld wanneer u op de tekst/het label klikt. (FORMS-9313)
-   * Wanneer een gebruiker de component Voorwaarden en Voorwaarden probeert te valideren, kan de component niet worden gevalideerd als de component geen focus heeft terwijl de andere component wordt gevalideerd. (FORMS-8725, FORMS-8913)
-   * Als een adaptief formulier na de upgrade naar AEM 6.5.16.0 Service Pack opnieuw wordt geladen, mislukt het ophalen van de bestandsbijlage. (FORMS-8906)
-   * In een adaptief formulier dat is gebaseerd op een XDP, wordt de teksttitel afgekapt en komt deze niet overeen met de toegewezen waarde als een component van het selectievakje een teksttitel bevat waaraan een numerieke waarde is toegewezen. (FORMS-8743)
-   * Als een gebruiker probeert om het laden uit te voeren op een fragment dat in een adaptief formulier is ingesloten voor de auteursomgeving, worden de regels/logica die voor het fragment zijn gedefinieerd niet weerspiegeld in het formulier. (FORMS-8554, FORMS-9182)
-   * Wanneer u probeert om het even welke dialoog van het Koraal in AEM 6.5.16.0 Service Pack te openen, produceert het `error.log: cannot render resource` uitzondering. (FORMS-8942)
-   * Wanneer een gebruiker een selectievakje met één optie in een adaptief formulier probeert te vertalen, mislukt dit. (FORMS-10181)
-   * Niet alle Document of Record (DoR)-sjablonen publiceren. Alleen Engelstalige, op landinstellingen gebaseerde DoR-sjablonen en de bijbehorende, op Forms gebaseerde DoR-sjablonen worden gepubliceerd. (FORMS-10535)
+  * text
+* **Adaptive Forms** 
+  * text
+* **Accessibility**
+  * text
+* **Interactive Communications**
+  * text -->
 
-* **Toegankelijkheid**
-   * Wanneer u de component Krabbelhandtekening in een adaptief formulier gebruikt, treden de volgende fouten op:
-      * Als er meer componenten zijn en u na de component Krabbelhandtekening drukt, wordt de Tab-toets niet doorgestuurd naar het dialoogvenster Handtekening. In plaats daarvan wordt de component verplaatst naar de volgende component. Alleen nadat alle componenten zijn doorlopen, wordt het document uiteindelijk naar het dialoogvenster Handtekening verplaatst.
-      * Wanneer een gebruiker zich in het handtekeningdialoogvenster aanmeldt met een penseel of toetsenbord, wordt het dialoogvenster niet gesloten als u op Enter drukt.
-      * Het dialoogvenster voor het bevestigen van handtekeningen kan niet worden geopend met een toetsenbord.
-      * De schermlezer kan de informatie die in een dialoogvenster is ingevoerd, niet lezen.
-      * U kunt de handtekening niet wissen zonder een muis te gebruiken. (FORMS-9317)
-   * Wanneer een gebruiker een adaptief formulier verzendt, leest de schermlezer geen foutberichten voor de verplichte velden. (FORMS-9316)
-   * Wanneer een schermlezer een HTML-formulier leest, doet zich het probleem voor bij het lezen van de tekst met spatiëring. (FORMS-9258)
-   * In een adaptief formulier worden de verwijzingen/voetnoten die aan de tekst zijn gekoppeld, niet uitgeroepen met de schermlezer. (FORMS-8920)
-   * Toegankelijkheidstags worden niet goed herkend in de nieuwste Designer. (FORMS-10139)
-* **Interactieve communicatie**
-   * In Correspondence Management werkt de lokalisatie niet. (FORMS-8926)
-   * De conceptbrief kan niet worden geopend wanneer de service publishAll wordt gebruikt. (FORMS-8589)
-   * Na Experience Manager, is Service Pack 16 geïnstalleerd op de servers, beginnen alle Interactieve communicatie Brieven aan klok als zij proberen om deze brieven uit te geven. Als ze een voorbeeldlading leveren om de eigenschappenpagina voor te vertonen, weer te geven of te bewerken, werken ze. Ze kunnen de letters echter niet bewerken. (FORMS-9067)
-
-
-<!-- ### [!DNL Commerce]{#commerce-6518}
+<!--### Commerce{#commerce-6519}
 
 * A -->
 
-### Stichting{#foundation-6518}
+### Stichting{#foundation-6519}
 
-#### Inhoudsdistributie{#foundation-content-distribution-6518}
+* Als u een taalkopie maakt op het hoofdniveau van de taal, worden de paden op de pagina niet aangepast. In het geval waarin de taalkopie is gemaakt, is het pad niet correct gewijzigd voor de hoofdtaal, maar voor de pagina&#39;s eronder. (NPR-41364) MAJOR
+* De knopinfo &#39;Relatieve datumpresentatie&#39; kan alleen worden gesloten door op het toetsenbord op Escape (ESC) te drukken. De knopinfo moet worden gesloten wanneer de gebruiker een gedeelte van de gebruikersinterface selecteert. (NPR-41394) NORMAL
+* Niet-gelokaliseerde tekenreeks `Something went wrong while adding the private key.` wanneer u het onjuiste bestand met de persoonlijke sleutel toevoegt in **Gebruiker bewerken** > **Keystore**. (NPR-41366) NORMAL
+* Er zijn pictogrammen nodig voor Microsoft® SharePoint en Microsoft® One Drive in de AEM 6.5-omgeving. (NPR-41354) NORMAL
+* Niet-gelokaliseerde fout in gebruikersnaam/wachtwoord. tekenreeks in **Beveiliging** > **Gebruiker** > **Maken** in. (NPR-41245) NORMAL
+* Popover code en de managers van de Gebeurtenis worden tweemaal geladen, die user-created Koral3-Gebaseerde gebruikersinterfaces breken. (NPR-41171) NORMAAL
+* Het uitschakelen werkt niet correct nadat u Alles selecteren hebt gebruikt in de AEM Sites-console. (NPR-41304) MINDER
 
-* De wachtrij voor het verwijderen van elementen mag niet worden geblokkeerd en er mag geen fout optreden in het logbestand. (NPR-40570)
+<!--#### Content distribution{#foundation-content-distribution-6519}
 
-<!-- #### Integrations{#integrations-6518}
+* T -->
+
+#### Integrations{#integrations-6519}
+
+* De verbindingen van SMS in een AEM e-mailcampagne worden niet correct geschreven; zij bevatten een HTML ankerelement. (NPR-41211) MAJOR
+* Woorden die op het scherm van de rekeningsconfiguratie worden gebruikt zouden geen nieuw credentieel type moeten gebruiken. (NPR-41210) NORMAAL
+* De het rapportinvoerplanner van de Analyse van de beweging van `ManagedPollConfig` op banen te verliezen. Wanneer twee verschillende analytische kaders met verschillende rapportagesets aan twee verschillende plaatsen werden vastgemaakt, `ManagedPollConfig` maar één van hen is opiniepeild . (NPR-41209) NORMAL
+* Wanneer de standaardwaarde wordt hersteld, blijft de eerder geselecteerde tijdframeknop ingeschakeld. In het inzichtelijke dashboard van de inhoud van AEM, door gebrek wordt het tijdkader geplaatst bij de week en toont inzichten van de inhoud als wekelijkse gegevens. Als de gebruiker nu andere tijdframeopties selecteert, zoals uur, dag, maand en jaar, veranderen de gegevens volgens de geselecteerde waarde. Als de waarden echter standaard opnieuw worden ingesteld, is het zichtbare tijdframe week, maar is de eerder geselecteerde tijdframeoptie nog steeds geselecteerd. (NPR-41246) MINDER
+
+#### Eik{#oak-6519}
+
+* Het nut van de steun aan tariefgrens schrijft aan AEM in het geval dat de async indexering wordt vertraagd. (NPR-40985) MAJOR
+
+#### Platform{#foundation-platform-6519}
+
+* QueryBuilder-query&#39;s met vierkante haakjes worden onjuist vertaald naar xpath. (NPR-41298) NORMAL
+
+<!--#### Replication{#foundation-replication-6519}
+
+* R -->
+
+<!--#### Sling{#foundation-sling-6519}
+
+* W -->
+
+#### Vertaalprojecten{#foundation-translation-6519}
+
+* Tijdens het maken van de taalkopie van pagina &quot;A&quot;, moet deze automatisch de taalkopieën maken van de pagina&#39;s waarnaar wordt verwezen, fragmenten, fragmenten voor inhoud en elementen. Bovendien moet de nieuwe taalkopie van pagina &quot;A&quot; op het nieuwe pad de referenties hebben die zijn ingesteld voor de zojuist gemaakte taalkopieën van de pagina&#39;s, ervaringsfragmenten, inhoudsfragmenten en elementen. (NPR-41076) NORMAL
+
+<!--#### User interface{#foundation-ui-6519}
 
 * A -->
 
-<!-- #### Oak{#oak-6518}
+<!--#### WCM{#wcm-6519}
 
 * A -->
 
-#### Platform{#foundation-platform-6518}
+#### Workflow{#foundation-workflow-6519}
 
-* Nadat Service Pack 17 is geïnstalleerd, worden er fouten weergegeven in de `stderr.log`. Er mogen geen fouten optreden bij Vanilla-installaties. (CQ-4353637)
-* De knop Maken in het scherm Tags toevoegen respecteert geen ACL (Access Control List). (NPR-40973)
-* Onbekwaam om, of toegang, of allebei, geheim voorgeheugenknoop van ContextHub op Experience Manager tot stand te brengen. (NPR-40515)
+* Kan een taak in het Postvak IN niet voltooien. Er wordt alleen een &quot;ongedefinieerde&quot; waarde waargenomen in het keuzemenu wanneer wordt geprobeerd de taak te voltooien en een actie te selecteren. Dit betekent dat de gebruikers niet het AEM 6.5.18 de dienstpak kunnen toepassen. (NPR-41402) MAJOR
+* Kan de taken in Postvak IN niet voltooien. De vervolgkeuzelijst bevat geen waarde (alleen &quot;ongedefinieerd&quot;) wanneer wordt geprobeerd de taak te voltooien voor ZIP-bestanden, Asset-rapporten, verplaatsen (geslaagd of mislukt) of het vervallen van middelen. (NPR-41305) MAJOR
+* Wanneer een gebruiker **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > instanties, selecteert u vervolgens de actieve workflow en selecteert u **[!UICONTROL View Payload]** resulteert dit in een pagina met 500 fouten. (NPR-41325) NORMAL
 
-#### Replicatie{#foundation-replication-6518}
-
-* Met het filter Drijven verwijdert u alle afstammingen van het gevraagde pad. (NPR-40569)
-
-#### Sling{#foundation-sling-6518}
-
-* Wanneer een Rapport van het Aandeel van de Verbinding wordt geproduceerd, bevat de kolomVerbinding niet de correcte waarden. (NPR-40798)
-* Met AEM 6.5.15.0 worden alle vanity URL&#39;s, sling-aliassen en sling-toewijzing verbroken nadat de AEM opnieuw is opgestart. (NPR-40420)
-
-#### Vertaalprojecten{#foundation-translation-6518}
-
-* Vertaling `rules.xml` slecht gesorteerd wanneer de regels van het gebruikersinterface van de vertaalconfiguratie worden toegevoegd. (NPR-40431)
-* De verbindingen van de steun met vraagparameters tijdens vertaling. (NPR-40339)
-* De gebruikersinterface van het woordenboek wordt niet voor de klant geladen nadat de extra basisinhoud van de context is bijgewerkt. (NPR-40650)
-* Fout bij het maken van taalkopieën wanneer een van de elementen een inhoudsfragment is dat een meerveld bevat met de typen ReferenceFragment of ContentFragment. (NPR-40892)
-
-#### Gebruikersinterface{#foundation-ui-6518}
-
-* Zoals beschreven in het [Documentatie van de configuratievenster](https://experienceleague.adobe.com/docs/experience-manager-65/administering/introduction/configurations.html?lang=en#using-configuration-browser), _De naam wordt de knooppuntnaam in de repository_. Nochtans, in Browser van de Configuratie, wordt de Titel van de Configuratie gebruikt voor Weg in CRXDE Lite, en de Naam van de Configuratie wordt genegeerd. (NPR-40607)
-
-<!-- #### WCM{#wcm-6518}
-
-* A -->
-
-#### Workflow{#foundation-workflow-6518}
-
-* Als u een versie van een element omkeert, blijft het element in de verwerkingsmodus staan. (NPR-41029)
-* Probleem met sorteren in de gebruikersinterface Middelen en Projecten. Sommigen hebben de douanekolommen op het de gebruikersinterface van Activa en van Projecten volgens bedrijfsvereisten overlapt. Ze hebben een sortering geïmplementeerd met de eigenschap out-of-the-box `sortable=true`. Ze zien echter inconsistenties in het sorteren wanneer er veel items zijn in de gebruikersinterface Projecten of Elementen. (NPR-41027)
-* Logbestanden worden gevuld met `NullPointerException` in de `EMailNotificationService`, en e-mailberichten, die workflows moeten verzenden, worden niet verzonden. (NPR-40898)
-<!-- REMOVED BY ENGINEERING FROM TOTAL RELEASE CANDIDATE LIST  * The timeline is not providing references to the selected content. (NPR-40806) -->
 
 ## Installeren [!DNL Experience Manager] 6.5.18.0.{#install}
 
 <!-- Remaining content from here to bottom stays the same except for version updating as needed as per update team feedback. -->
 
-* [!DNL Experience Manager] 6.5.18.0 vereist [!DNL Experience Manager] 6.5. Zie [upgradedocumentatie](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
+* [!DNL Experience Manager] 6.5.19.0 vereist [!DNL Experience Manager] 6.5. Zie [upgradedocumentatie](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies. <!-- UPDATE FOR EACH NEW RELEASE -->
 * De download van het de dienstpak is beschikbaar op Adobe [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq650/servicepack/aem-service-pkg-6.5.18.0.zip).
-* Bij een implementatie met MongoDB en meerdere exemplaren, installeert u [!DNL Experience Manager] 6.5.18.0 op één van de instanties van de Auteur die de Manager van het Pakket gebruiken.<!-- UPDATE FOR EACH NEW RELEASE -->
+* Bij een implementatie met MongoDB en meerdere exemplaren, installeert u [!DNL Experience Manager] 6.5.19.0 op één van de instanties van de Auteur die de Manager van het Pakket gebruiken.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 >[!IMPORTANT]
 >
-> Adobe raadt u niet aan de [!DNL Experience Manager] 6.5.18.0-pakket. Voordat u het pakket installeert, moet u daarom een back-up maken van het `crx-repository` voor het geval u het terug moet rollen. <!-- UPDATE FOR EACH NEW RELEASE -->
+> Adobe raadt u niet aan de [!DNL Experience Manager] 6.5.19.0-pakket. Voordat u het pakket installeert, moet u daarom een back-up maken van het `crx-repository` voor het geval u het terug moet rollen. <!-- UPDATE FOR EACH NEW RELEASE -->
 <!-- For instructions to install Service Pack for Experience Manager Forms, see [Experience Manager Forms Service Pack installation instructions](/help/release-notes/aem-forms-current-service-pack-installation-instructions.md). -->
 
 
@@ -304,20 +260,20 @@ Als u de nieuwste software voor uw AEM 6.5 Forms in JEE-omgeving installeert of 
 
 **Automatische installatie**
 
-Er zijn twee verschillende methoden die u automatisch kunt installeren [!DNL Experience Manager] 6.5.18.0.<!-- UPDATE FOR EACH NEW RELEASE -->
+Er zijn twee verschillende methoden die u automatisch kunt installeren [!DNL Experience Manager] 6.5.19.0.<!-- UPDATE FOR EACH NEW RELEASE -->
 
 * Plaats het pakket in `../crx-quickstart/install` als de server online beschikbaar is. Het pakket wordt automatisch geïnstalleerd.
 * Gebruik de [HTTP-API van Package Manager](/help/sites-administering/package-manager.md#package-share). Gebruiken `cmd=install&recursive=true` zodat de geneste pakketten worden geïnstalleerd.
 
 >[!NOTE]
 >
->Experience Manager 6.5.18.0 steunt geen Bootstrap installatie. <!-- UPDATE FOR EACH NEW RELEASE -->
+>Experience Manager 6.5.19.0 ondersteunt geen installatie van Bootstrappen. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 **De installatie valideren**
 
 Als u wilt weten welke platformen gecertificeerd zijn voor deze release, raadpleegt u de [technische voorschriften](/help/sites-deploying/technical-requirements.md).
 
-1. De pagina met productinformatie (`/system/console/productinfo`) geeft de bijgewerkte versietekenreeks weer `Adobe Experience Manager (6.5.18.0)` krachtens [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
+1. De pagina met productinformatie (`/system/console/productinfo`) geeft de bijgewerkte versietekenreeks weer `Adobe Experience Manager (6.5.19.0)` krachtens [!UICONTROL Installed Products]. <!-- UPDATE FOR EACH NEW RELEASE -->
 
 1. Alle OSGi-pakketten zijn **[!UICONTROL ACTIVE]** of **[!UICONTROL FRAGMENT]** in de Console OSGi (de Console van het Gebruik: `/system/console/bundles`).
 
@@ -341,7 +297,7 @@ Als u dit pakket niet installeert, kan dit leiden tot trage of mislukte GraphQL-
 
 ### UberJar{#uber-jar}
 
-The UberJar for [!DNL Experience Manager] 6.5.18.0 is beschikbaar in de [Maven Central-opslagplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
+The UberJar for [!DNL Experience Manager] 6.5.19.0 is beschikbaar in [Maven Central-opslagplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.5.18/). <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
 Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/help/sites-developing/ht-projects-maven.md) en neem het volgende gebiedsdeel in uw project POM op: <!-- CHECK FOR UPDATE EACH NEW RELEASE -->
 
@@ -349,7 +305,7 @@ Om UberJar in een Geweven project te gebruiken, zie [gebruiken van UberJar](/hel
 <dependency>
      <groupId>com.adobe.aem</groupId>
      <artifactId>uber-jar</artifactId>
-     <version>6.5.18</version>
+     <version>6.5.19</version>
      <scope>provided</scope>
 </dependency>
 ```
@@ -370,9 +326,9 @@ Zie [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-
 To retrieve your runtime copy, Adobe recommends to synchronize the design-time copy of the custom workflow model with its runtime copy using the HTTP API:
 `<designModelPath>/jcr:content.generate.json`. -->
 
-* **Page publishing not working in Page Editor after upgrade to Service Pack 18 (6.5.18.0)**
+* **Page publishing not working in Page Editor after upgrade to Service Pack 18 (6.5.19.0)**
 
-  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nadat u een geval van AEM 6.5.0.0-6.5.17.0 aan AEM 6.5.18.0 bevordert, wanneer u klikt **Pagina publiceren** In de Pagina-editor wordt u omgeleid naar een URL die niet bestaat.
+  <!-- https://jira.corp.adobe.com/browse/SITES-15856 REMOVE FOR 6.5.19.0--> Nadat u een geval van AEM 6.5.0.0-6.5.17.0 aan AEM 6.5.19.0 bevordert, wanneer u klikt **Pagina publiceren** In de Pagina-editor wordt u omgeleid naar een URL die niet bestaat.
 
   Voer een van de volgende handelingen uit om dit probleem te verhelpen:
 
@@ -472,7 +428,7 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
 #### Installatie
 
 * Op het JBoss® 7.1.4-platform, wanneer de gebruiker Experience Manager 6.5.16.0 of hoger servicepack installeert, `adobe-livecycle-jboss.ear` implementatie mislukt. (CQ-4351522, CQDOC-20159)
-* Na upgrade naar AEM Forms 6.5.18.0 JBoss volledig installatieprogramma op Windows Server 2022, kan bij het compileren van de code van de Output-clienttoepassing met behulp van Java 11 de volgende compilatiefout optreden:
+* Na de upgrade naar de AEM Forms 6.5.18.0 JBoss® Turnkey-omgeving met volledig installatieprogramma op Windows Server 2022 kan bij het compileren van de code voor de Output client-toepassing met behulp van Java™ 11 de volgende compilatiefout optreden:
 
   ```
   error: error reading [AEM_Forms_Installation_dir]\sdk\client-libs\common\adobe-output-client.jar; java.net.URISyntaxException: 
@@ -488,8 +444,8 @@ Om correcte verrichting te verzekeren, moet u de volgende eigenschappen aan de k
       > U kunt ook een programma voor het op locatie bewerken gebruiken, bijvoorbeeld 7-zip, om het dialoogvenster `Manifest.mf` bestand.
 
    1. Sla de bijgewerkte versie van de `Manifest.mf` in de `adobe-output-client.jar` archief.
-   1. De gewijzigde versie opslaan `adobe-output-client.jar` en voert de installatie opnieuw uit.  (CQDOC-20878)
-* Na installatie van AEM volledige installer van Service Pack 6.5.18.0, ontbreekt de EAR-implementatie op JEE met JBoss® Turnkey.
+   1. De gewijzigde versie opslaan `adobe-output-client.jar` en voer de installatie opnieuw uit. (CQDOC-20878)
+* Nadat u AEM Service Pack 6.5.19.0 volledig installatieprogramma hebt geïnstalleerd, mislukt de EAR-implementatie op JEE met JBoss® Turnkey.
 Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss\bin\standalone.bat` bestand en update `Adobe_Adobe_JAVA_HOME` tot `Adobe_JAVA_HOME` voor alle instanties alvorens de configuratiemanager in werking te stellen. (CQDOC-20803)
 
 #### Adaptieve Forms
@@ -497,7 +453,7 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 * Wanneer een adaptief formulier wordt gepubliceerd, worden alle afhankelijkheden, inclusief het beleid, opnieuw gepubliceerd, zelfs als er geen wijzigingen in zijn aangebracht. (FORMS-10454)
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
 * Wanneer een omleidings-URL wordt ingesteld in de hulplijncontainer van een adaptief formulier, werkt de inlinehandtekening niet meer. (FORMS-10493)
-* Niet alle Document of Record (DoR)-sjablonen publiceren. Alleen Engelstalige, op landinstellingen gebaseerde DoR-sjablonen en de bijbehorende, op Forms gebaseerde DoR-sjablonen worden gepubliceerd. (FORMS-10535)
+* Niet alle Document of Record (DoR)-sjablonen publiceren. Alleen Engelse, op landinstellingen gebaseerde DoR-sjablonen en de bijbehorende op Forms gebaseerde DoR-sjablonen worden gepubliceerd. (FORMS-10535)
 
 #### Interactieve communicatie
 
@@ -510,10 +466,10 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 
-In de volgende tekstdocumenten worden de OSGi-bundels en Content Packages weergegeven die zijn opgenomen in [!DNL Experience Manager] 6.5.18.0: <!-- UPDATE FOR EACH NEW RELEASE -->
+In de volgende tekstdocumenten worden de OSGi-bundels en Content Packages weergegeven die zijn opgenomen in [!DNL Experience Manager] 6.5.19.0: <!-- UPDATE FOR EACH NEW RELEASE -->
 
-* [Lijst van OSGi-bundels opgenomen in Experience Manager 6.5.18.0](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
-* [Lijst met inhoudspakketten opgenomen in Experience Manager 6.5.18.0](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Lijst van OSGi-bundels opgenomen in Experience Manager 6.5.19.0](/help/release-notes/assets/65180_bundles.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
+* [Lijst van inhoudspakketten opgenomen in Experience Manager 6.5.19.0](/help/release-notes/assets/65180_packages.txt) <!-- UPDATE FOR EACH NEW RELEASE -->
 
 ## Beperkte websites{#restricted-sites}
 

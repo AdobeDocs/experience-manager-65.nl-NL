@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1884'
 ht-degree: 0%
@@ -139,7 +139,7 @@ Opschoonfunctie uitvoeren:
 1. Markeer in de Apache Felix OSGi Management Console de **Hoofd** en selecteert u **JMX** in het volgende menu.
 1. Zoek en klik op de knop **Repository Manager** MBean (of ga naar `https://<host>:<port>/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Drepository+manager%2Ctype%3DRepositoryManagement`).
 1. Klikken **startDataStoreGC(booleaanse markeringOnly)**.
-1. enter &quot;`true`&quot; voor de `markOnly` parameter indien vereist:
+1. enter &quot;`true`&quot; voor de `markOnly` parameter indien nodig:
 
    | **Optie** | **Beschrijving** |
    |---|---|

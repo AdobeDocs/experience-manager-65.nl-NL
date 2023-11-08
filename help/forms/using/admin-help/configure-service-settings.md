@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 0%
@@ -610,9 +610,9 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **URL TSP-server:** De URL van de standaardtijdstempelprovider. Wordt alleen gebruikt als er een geldige waarde is opgegeven. Geen standaardwaarde.
 
-**Gebruikersnaam TSP-server:** De gebruikersnaam indien vereist door het tijdstempelbureau. Wordt alleen gebruikt als er een geldige waarde voor de URL is opgegeven. Geen standaardwaarde.
+**Gebruikersnaam TSP-server:** De gebruikersnaam indien nodig door de tijdstempelprovider. Wordt alleen gebruikt als er een geldige waarde voor de URL is opgegeven. Geen standaardwaarde.
 
-**Wachtwoord TSP-server:** Het wachtwoord voor de bovenstaande gebruikersnaam indien vereist door de tijdstempelprovider. Wordt alleen gebruikt als er een geldige waarde voor de URL en de gebruikersnaam is opgegeven. Geen standaardwaarde.
+**Wachtwoord TSP-server:** Het wachtwoord voor de bovenstaande gebruikersnaam indien nodig door de tijdstempelprovider. Wordt alleen gebruikt als er een geldige waarde voor de URL en de gebruikersnaam is opgegeven. Geen standaardwaarde.
 
 **Hash-algoritme aanvragen:** Geeft aan welk hash-algoritme moet worden gebruikt bij het maken van de aanvraag voor de tijdstempelprovider. De standaardwaarde is SHA1.
 

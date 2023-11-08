@@ -5,10 +5,10 @@ contentOwner: AG
 feature: Workflow, Renditions
 role: User, Admin
 exl-id: e7c84385-efb3-4997-83ff-7a7f31582469
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '923'
-ht-degree: 3%
+source-wordcount: '922'
+ht-degree: 2%
 
 ---
 
@@ -77,7 +77,7 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
    ![beginworkflow](assets/start-workflow.png)
 
 1. (Optioneel) Geef een titel voor de workflow op, die kan worden gebruikt om naar de instantie van de workflow te verwijzen.
-1. Klik op **[!UICONTROL Start]** en klik vervolgens op **[!UICONTROL Confirm]** in het dialoogvenster. De workflow wordt uitgevoerd op alle assets die u hebt geselecteerd.
+1. Klik op **[!UICONTROL Start]** en klik vervolgens op **[!UICONTROL Confirm]** in het dialoogvenster. De workflow wordt uitgevoerd op alle elementen die u hebt geselecteerd.
 
 ## Een workflow toepassen op meerdere mappen {#applying-a-workflow-to-multiple-folders}
 
@@ -98,7 +98,7 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
-* Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u ofwel [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de activa te schrappen en die opnieuw te uploaden.
+* Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen de opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u ofwel [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de activa te schrappen en die opnieuw te uploaden.
 * Standaard, [!UICONTROL DAM Update Asset] de workflow bevat enkele stappen om miniaturen en webrengingen te maken. Als er standaarduitvoeringen worden verwijderd uit de workflow, wordt de gebruikersinterface van [!DNL Assets] wordt niet correct weergegeven.
 
 >[!MORELIKETHIS]

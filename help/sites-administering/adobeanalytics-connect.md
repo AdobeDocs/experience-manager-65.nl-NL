@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 6b545a51-3677-4ea1-ac7e-2d01ba19283e
 docset: aem65
 exl-id: 8262bbf9-a982-479b-a2b5-f8782dd4182d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e3a3511a5854432b9c01748f7f5ffaf9182180f8
 workflow-type: tm+mt
-source-wordcount: '1497'
+source-wordcount: '1523'
 ht-degree: 0%
 
 ---
@@ -195,14 +195,18 @@ Zie [Gegevens van paginaanalyse bekijken](/help/sites-authoring/page-analytics-u
 
 ### Het Interval van de Invoer vormen {#configuring-the-import-interval}
 
-Vorm de aangewezen instantie van **Adobe AEM beheerde opiniepeilingconfiguratie** service:
+Vorm de aangewezen instantie van **Adobe AEM Analytics Report Sling Importer** service:
 
-* **Interval opiniepeiling**: Het interval, in seconden, waarmee de service paginaweergavegegevens van Adobe Analytics ophaalt.
-Het standaardinterval is 43200000 ms (12 uur).
+* **Ophaalpogingen**: Aantal pogingen om een een rij gevormd rapport te halen.
+De standaardwaarde is `6`.
 
-* **Inschakelen**: Schakel de service in of uit. Standaard is de service ingeschakeld.
+* **Ophaalvertraging**: Het aantal milliseconden tussen pogingen om een een rij gevormd rapport te halen.
+De standaardwaarde is `10000`. Aangezien dit in milliseconden is beantwoordt het aan 10 seconden.
 
-Om deze dienst te vormen OSGi, kunt u of gebruiken [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of een [osgiConfig-knooppunt in de repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (De service-PID is `com.day.cq.polling.importer.impl.ManagedPollConfigImpl`).
+* **Ophaalfrequentie**: A `cron` om de frequentie voor het ophalen van het Analyserapport te bepalen.
+De standaardwaarde is `0 0 0/12 * * ?`; dit komt overeen met 12 ophaalbeurten per uur.
+
+Om deze dienst te vormen OSGi, kunt u of gebruiken [Webconsole](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) of een [osgiConfig-knooppunt in de repository](/help/sites-deploying/configuring-osgi.md#osgi-configuration-in-the-repository) (De service-PID is `com.day.cq.analytics.sitecatalyst.impl.importer.ReportImporterScheduler`).
 
 ## Adobe Analytics-configuraties en/of frameworks bewerken {#editing-adobe-analytics-configurations-and-or-frameworks}
 

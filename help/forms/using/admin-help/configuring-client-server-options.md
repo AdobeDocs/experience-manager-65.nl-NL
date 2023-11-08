@@ -7,7 +7,7 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '10221'
 ht-degree: 0%
@@ -585,7 +585,7 @@ De volgende instellingen bevinden zich in het gedeelte Algemene instellingen van
 
 **SMTP-host:** De hostnaam van de SMTP-server. De SMTP-server beheert de uitgaande e-mailberichten om uitgenodigde gebruikersaccounts te registreren en activeren.
 
-Indien vereist door uw gastheer SMTP, typ de vereiste informatie in de de Naam van de Rekening van de Server SMTP en de dozen van het Wachtwoord van de Rekening van de Server SMTP om met de server te verbinden SMTP. Sommige organisaties handhaven deze eis niet. Als u informatie nodig hebt, zie uw systeembeheerder.
+Indien nodig door uw gastheer SMTP, typ de vereiste informatie in de dozen van de Naam van de Rekening van de Server SMTP en van het Wachtwoord van de Rekening SMTP om met de server te verbinden SMTP. Sommige organisaties handhaven deze eis niet. Als u informatie nodig hebt, zie uw systeembeheerder.
 
 **Naam van SMTP-serversocketklasse:** Naam van de klasse Socket voor de SMTP-server. Bijvoorbeeld javax.net.ssl.SSLSocketFactory.
 

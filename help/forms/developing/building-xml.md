@@ -2,16 +2,16 @@
 title: Hoe te om de uitvoeren manuscriptdienst in AEM Forms op JEE Workbench te gebruiken om de gegevens van XML te bouwen?
 description: De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
 
 # De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken {#using-execute-script-service-forms-jee-workbench}
 
-AEM Forms heeft bijvoorbeeld veel XML te maken met JEE Process Management-workflows. XML-gegevens kunnen in een proces worden ingebouwd en naar een Flex-toepassing in AEM Forms op de JEE Workspace worden verzonden, voor systeeminstellingen worden gebruikt of voor het doorgeven van informatie van en naar formulieren. Er zijn veel gevallen waarin een AEM Forms on JEE-ontwikkelaar XML moet beheren. Dit vereist vaak dat de XML via een AEM Forms on JEE-proces wordt beheerd.
+Er is bijvoorbeeld veel XML-inhoud met AEM Forms in JEE Process Management-workflows. XML-gegevens kunnen in een proces worden ingebouwd en naar een Flex-toepassing in AEM Forms in de JEE Workspace worden verzonden, voor systeeminstellingen worden gebruikt of voor het doorgeven van informatie van en naar formulieren. Er zijn veel gevallen waarin een AEM Forms on JEE-ontwikkelaar XML moet beheren. Dit vereist vaak dat de XML via een AEM Forms on JEE-proces wordt beheerd.
 
 Wanneer u werkt met eenvoudige XML-instellingen, kunt u `Set Value` service, een standaard AEM Forms op JEE-service. Deze dienst plaatst de waarde van één of meerdere gegevenspunten in het model van procesgegevens. Voor eenvoudige voorwaardelijke logica &quot;als dit, dan dat&quot;scenario&#39;s, kan deze dienst het doel aanpassen.
 

@@ -3,7 +3,7 @@ title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert in Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '4227'
 ht-degree: 0%
@@ -412,7 +412,7 @@ Eenmaal [opgeschort](#suspending-inheritance-from-page-properties) de **Hervatte
 
 ![Hervatten](assets/chlimage_1-229.png)
 
-Als deze optie is geselecteerd, wordt het dialoogvenster weergegeven. U kunt desgewenst een synchronisatie selecteren en de handeling vervolgens bevestigen.
+Als deze optie is geselecteerd, wordt het dialoogvenster weergegeven. U kunt, indien nodig, een synchronisatie selecteren en de actie vervolgens bevestigen.
 
 #### Een Live Copy-pagina hervatten vanuit het Live Copy-overzicht {#resume-a-live-copy-page-from-the-live-copy-overview}
 
@@ -462,7 +462,7 @@ U kunt als volgt de diepte opgeven of wijzigen:
 
 ### Overerving voor een component annuleren {#cancelling-inheritance-for-a-component}
 
-Annuleer de overerving van de live kopie voor een component zodat de component niet meer wordt gesynchroniseerd met de broncomponent. Indien nodig kunt u overerving later inschakelen.
+Annuleer de overerving van de live kopie voor een component zodat de component niet meer wordt gesynchroniseerd met de broncomponent. U kunt overerving indien nodig op een later tijdstip inschakelen.
 
 >[!NOTE]
 >
@@ -522,7 +522,7 @@ Wanneer u overerving annuleert, kunt u de waarde van de eigenschap wijzigen. Een
 
 ![Eigenschap wijzigen wanneer overerving is verbroken](assets/chlimage_1-232.png)
 
-U kunt overerving later opnieuw inschakelen voor een eigenschap als dat nodig is.
+U kunt overerving voor een eigenschap indien nodig later opnieuw inschakelen.
 
 >[!NOTE]
 >

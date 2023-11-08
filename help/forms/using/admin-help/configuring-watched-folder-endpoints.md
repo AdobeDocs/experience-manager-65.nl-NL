@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '7174'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Voor een gecontroleerd mapeindpunt kunnen gebruikers een activering uitvoeren do
 
 Voor gecontroleerde omslageindpunten, als de baan slechts één inputdossier vereist, kan de gebruiker dat dossier aan de wortel van de gecontroleerde omslag kopiëren.
 
-Als de taak meer dan één invoerbestand bevat, moet de gebruiker een map buiten de controlemahiërarchie maken die alle vereiste bestanden bevat. Deze nieuwe map moet de invoerbestanden bevatten (en desgewenst een DDX-bestand als dit vereist is voor het proces). Nadat de taakmap is samengesteld, kopieert de gebruiker deze naar de invoermap van de gecontroleerde map.
+Als de taak meer dan één invoerbestand bevat, moet de gebruiker een map buiten de controlemahiërarchie maken die alle vereiste bestanden bevat. Deze nieuwe map moet de invoerbestanden bevatten (en eventueel een DDX-bestand als dit nodig is voor het proces). Nadat de taakmap is samengesteld, kopieert de gebruiker deze naar de invoermap van de gecontroleerde map.
 
 >[!NOTE]
 >

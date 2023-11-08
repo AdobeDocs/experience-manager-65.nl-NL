@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: da92d751-6f14-4512-9d77-7ecf098bd58e
 docset: aem65
 exl-id: ab4fc41f-e0e9-4577-aab2-f0b4298f9a59
-source-git-commit: 2f3168c9bd39926ee8cf86b48cc0daef9d783a1c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '250'
 ht-degree: 2%
 
 ---
@@ -45,7 +45,7 @@ Als u het niveau van het DEBUG-logbestand wilt activeren, gebruikt u de CRX-verk
 /libs/sling/config/org.apache.sling.commons.log.LogManager/org.apache.sling.commons.log.level
 ```
 
-eigenschap voor foutopsporing. Verlaat het logboek bij het DEBUG logboekniveau niet langer dan nodig, aangezien het veel logboeken produceert.
+eigenschap voor foutopsporing. Verlaat het logboek bij het DEBUG logboekniveau niet langer dan nodig, aangezien het talrijke logboeken produceert.
 
 Een lijn in zuivert dossier begint gewoonlijk met DEBUG, en verstrekt dan het logboekniveau, de installeractie en het logboekbericht. Bijvoorbeeld:
 
@@ -58,7 +58,7 @@ De logniveaus zijn als volgt:
 | 0 | Fatale fout | De handeling is mislukt en het installatieprogramma kan niet doorgaan. |
 |---|---|---|
 | 1 | Fout | De handeling is mislukt. De installatie gaat door, maar een deel van CRX is niet correct geïnstalleerd en werkt niet. |
-| 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk niet correct. |
+| 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. CRX werkt mogelijk wel of niet correct. |
 | 3 | Informatie | De actie is geslaagd. |
 
 ## Uitgebreide optie gebruikt voor probleemoplossing {#verbose-option-used-for-troubleshooting}

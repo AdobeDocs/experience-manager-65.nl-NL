@@ -5,7 +5,7 @@ contentOwner: AG
 role: Admin
 feature: Publishing
 exl-id: 5ba020a3-c36c-402b-a11b-d6b0426b03bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
 source-wordcount: '1557'
 ht-degree: 1%
@@ -66,7 +66,7 @@ Met dit opdrachtscript wordt:
 Om de [!DNL InDesign Server] voor gebruik met [!DNL Experience Manager Assets] en nadat u de proxy hebt geconfigureerd, moet u:
 
 1. [Het InDesign Server installeren](#installing-the-indesign-server).
-1. Indien vereist, [De Experience Manager Assets-workflow configureren](#configuring-the-aem-assets-workflow).
+1. Indien nodig [De Experience Manager Assets-workflow configureren](#configuring-the-aem-assets-workflow).
 Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
 1. Een [proxyworker voor het InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 

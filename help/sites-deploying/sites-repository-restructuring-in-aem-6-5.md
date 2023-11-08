@@ -6,9 +6,9 @@ content-type: reference
 topic-tags: repo_restructuring
 feature: Upgrading
 exl-id: b4531792-06dd-4545-9dbb-57224be20dc7
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
 workflow-type: tm+mt
-source-wordcount: '1460'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Zoals beschreven op het bovenliggende element [Herstructurering van de depositar
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td>
-   <td><p>Als om het even welke nieuwe of gewijzigde Segmenten ContextHub bedoeld zijn om in broncontrole eerder dan wordt uitgegeven in AEM worden uitgegeven, moeten zij aan de nieuwe plaats worden gemigreerd:</p>
+   <td><p>Als om het even welke nieuwe of gewijzigde Segmenten ContextHub in broncontrole eerder dan wordt uitgegeven in AEM, moeten zij aan de nieuwe plaats worden gemigreerd:</p>
     <ol>
      <li>Kopieer om het even welke nieuwe of gewijzigde Segmenten ContextHub van de vorige plaats aan de aangewezen nieuwe plaats (/<code>apps</code>, <code>/conf/global</code> of <code>/conf/&lt;tenant&gt;</code>)</li>
      <li>Verwijzingen van de update naar Segmenten ContextHub in de vorige plaats aan de gemigreerde Segmenten ContextHub in de nieuwe plaatsen (<code>/apps</code>, <code>/conf/global</code>, <code>/conf/&lt;tenant&gt;</code>).</li>

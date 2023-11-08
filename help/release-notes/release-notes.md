@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: d0dc5dfb-25a3-4388-a1d4-abba70081cc3
-source-git-commit: 61f3079a88e39c02b29bfafc7b2b9d4d098cef6b
+source-git-commit: 31bc86f81620bdc6fe9877cdc96f4004a80d60f9
 workflow-type: tm+mt
-source-wordcount: '4620'
+source-wordcount: '4621'
 ht-degree: 0%
 
 ---
@@ -419,10 +419,19 @@ Nieuwe mappen van `cache` en `diff-cache` automatisch worden gemaakt en er is ge
 
 * Een GraphQL-query kan de opdracht `damAssetLucene` index in plaats van de `fragments` index. Deze handeling kan resulteren in GraphQL-query&#39;s die mislukken of die lang duren.
 
-  Om het probleem te verhelpen, `damAssetLucene` moet worden gevormd om de volgende twee eigenschappen te omvatten:
+  Om het probleem te verhelpen, `damAssetLucene` moet worden geconfigureerd om de volgende twee eigenschappen op te nemen onder `/indexRules/dam:Asset/properties`:
 
    * `contentFragment`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/contentFragment"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="Boolean"`
    * `model`
+      * `jcr:primaryType="nt:unstructured"`
+      * `name="jcr:content/data/cq:model"`
+      * `ordered="{Boolean}true"`
+      * `propertyIndex="{Boolean}true"`
+      * `type="String"`
 
   Nadat de indexdefinitie is gewijzigd, is opnieuw indexeren vereist (`reindex` = `true`).
 

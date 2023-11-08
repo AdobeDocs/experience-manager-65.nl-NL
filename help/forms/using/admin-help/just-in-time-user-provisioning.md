@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 exl-id: 7bde0a09-192a-44a8-83d0-c18e335e9afa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '573'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Just-in-Time gebruikersprovisioning {#just-in-time-user-provisioning}
 
-AEM formulieren ondersteunen de just-in-time levering van gebruikers die nog niet in Gebruikersbeheer bestaan. Met just-in-time levering, worden de gebruikers automatisch toegevoegd aan het Beheer van de Gebruiker nadat hun geloofsbrieven met succes voor authentiek worden verklaard. Daarnaast worden relevante rollen en groepen dynamisch toegewezen aan de nieuwe gebruiker.
+AEM formulieren ondersteunen de just-in-time levering van gebruikers die nog niet in Gebruikersbeheer bestaan. Met just-in-time levering, worden de gebruikers automatisch toegevoegd aan het Beheer van de Gebruiker nadat hun geloofsbrieven met succes worden verklaard. Daarnaast worden relevante rollen en groepen dynamisch toegewezen aan de nieuwe gebruiker.
 
 ## De behoefte aan just-in-time gebruikerslevering {#need-for-just-in-time-user-provisioning}
 
@@ -38,11 +38,11 @@ Zo werkt traditionele verificatie:
 1. Het resultaat dat door de authentificatieleverancier is teruggekeerd wordt geëvalueerd. Als de verificatieprovider het succes van de verificatie heeft geretourneerd, mag de gebruiker zich aanmelden. Anders, controleert het Beheer van de Gebruiker met de volgende authentificatieleverancier (stappen 2-3).
 1. Verificatiefout wordt geretourneerd als geen enkele verificatieprovider de gebruikersgegevens valideert.
 
-Wanneer just-in-time levering wordt uitgevoerd, wordt een nieuwe gebruiker dynamisch gecreeerd in het Beheer van de Gebruiker als één van de authentificatieleveranciers de geloofsbrieven van de gebruiker bevestigt. (Na stap 3 in de traditionele authentificatieprocedure, hierboven.)
+Wanneer just-in-time levering wordt uitgevoerd, wordt een nieuwe gebruiker dynamisch gecreeerd in het Beheer van de Gebruiker als één van de authentificatieleveranciers de geloofsbrieven van de gebruiker bevestigt. (Na stap 3 van de traditionele authenticatieprocedure hierboven.)
 
 ## Implementeer just-in-time gebruikersprovisioning {#implement-just-in-time-user-provisioning}
 
-### API&#39;s voor just-in-time provisioning {#apis-for-just-in-time-provisioning}
+### API&#39;s voor instelbare provisioning {#apis-for-just-in-time-provisioning}
 
 AEM formulieren bevatten de volgende API&#39;s voor instelbare provisioning:
 
@@ -84,12 +84,12 @@ public Boolean assign(User user);
 ### Overwegingen bij het creëren van een just-in-tijd-toegelaten domein {#considerations-while-creating-a-just-in-time-enabled-domain}
 
 * Tijdens het maken van een aangepaste `IdentityCreator` voor een hybride domein, zorg ervoor dat een dummywachtwoord voor de lokale gebruiker wordt gespecificeerd. Laat dit wachtwoordveld niet leeg.
-* Aanbeveling: Gebruiken `DomainSpecificAuthentication` om gebruikersgeloofsbrieven tegen een specifiek domein te bevestigen.
+* Aanbeveling: Gebruik `DomainSpecificAuthentication` om gebruikersgeloofsbrieven tegen een specifiek domein te bevestigen.
 
 ### Een alleen-in-tijd-geschikt domein maken {#create-a-just-in-time-enabled-domain}
 
 1. Schrijf een DSC die APIs in &quot;APIs voor just-in-time levering&quot;sectie uitvoert.
-1. Implementeer de DSC op de formulierserver.
+1. Implementeer de DSC op de Forms-server.
 1. Creeer een just-in-time-Toegelaten domein:
 
    * Klik in Beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer > Nieuw Enterprise-domein.

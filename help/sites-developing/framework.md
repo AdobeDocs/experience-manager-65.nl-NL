@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 feature: Tagging
 exl-id: 53a37449-ef87-4fa6-82de-88fdc24cf988
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1639'
+source-wordcount: '1641'
 ht-degree: 0%
 
 ---
@@ -76,11 +76,11 @@ In AEM is het basispad `/content/cq:tags` en de hoofdnode is van het type `cq:Fo
 
 ### Tagnaamruimte {#tag-namespace}
 
-Met naamruimten kunt u items groeperen. Het meest gangbare geval van gebruik is een naamruimte per site (bijvoorbeeld, public, internal en portal) of per grotere toepassing (bijvoorbeeld, WCM, Assets, Communities). Maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (d.w.z. tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
+Met naamruimten kunt u items groeperen. Het meest gangbare geval van gebruik is een naamruimte per site (bijvoorbeeld, public, internal en portal) of per grotere toepassing (bijvoorbeeld, WCM, Assets, Communities). Maar naamruimten kunnen voor verschillende andere behoeften worden gebruikt. Naamruimten worden in de gebruikersinterface gebruikt om alleen de subset van tags (dat wil zeggen, tags van een bepaalde naamruimte) weer te geven die van toepassing is op de huidige inhoud.
 
 De naamruimte van de tag is het eerste niveau in de taxonomy-substructuur. Dit is het knooppunt direct onder de [taxonomie-hoofdknooppunt](#taxonomy-root-node). A namespace is een knoop van type `cq:Tag` waarvan de ouder geen `cq:Tag` knooppunttype.
 
-Alle tags hebben een naamruimte. Als er geen naamruimte is opgegeven, wordt de tag toegewezen aan de standaardnaamruimte, namelijk TagID `default` met de titel `Standard Tags`, dat wil zeggen `/content/cq:tags/default`.
+Alle tags hebben een naamruimte. Als er geen naamruimte is opgegeven, wordt de tag toegewezen aan de standaardnaamruimte, namelijk TagID `default` met de titel `Standard Tags`, dat wil zeggen: `/content/cq:tags/default`.
 
 ### Containerlabels {#container-tags}
 

@@ -10,16 +10,16 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 6ed09b5d-5089-43d2-b9d5-e7db57be5c02
 exl-id: 8e54bccf-0ff1-448d-a237-ec42fd3bfa23
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
 
 # SAML 2.0-verificatiehandler{#saml-authentication-handler}
 
-AEM schepen [SAML](https://saml.xml.org/saml-specifications) verificatiehandler. Deze handler biedt ondersteuning voor de [SAML](https://saml.xml.org/saml-specifications) 2.0 het Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend `HTTP POST` binding.
+AEM schepen [SAML](https://saml.xml.org/saml-specifications) verificatiehandler. Deze handler ondersteunt de [SAML](https://saml.xml.org/saml-specifications) 2.0 het Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend `HTTP POST` binding.
 
 Het steunt:
 

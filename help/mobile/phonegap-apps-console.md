@@ -1,16 +1,14 @@
 ---
 title: Apps maken en bewerken met de toepassingsconsole
 description: Volg deze pagina voor meer informatie over het maken en bewerken van apps met de toepassingsconsole.
-uuid: 4f7db978-ae2b-4ca6-89f1-26e091d9140a
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
-discoiquuid: 9890d045-cead-4d70-b797-95319284e0d8
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2687'
+source-wordcount: '2685'
 ht-degree: 0%
 
 ---
@@ -174,7 +172,7 @@ Deze functie is beschikbaar in Apps 6.1 Feature Pack 2 en biedt een eenvoudige m
 Wat is een toepassingssjabloon? Beschouw het als een verzameling paginasjablonen en componenten die een basislijn of basis van een app vormen.
 Wanneer u een app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
 
-U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingssjabloon) hebben om van deze functie gebruik te kunnen maken.
+U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingssjabloon) hebben om deze functie te kunnen gebruiken.
 
 Het meest recente AEM Apps 6.1 voorbeeldenpakket bevat een bijgewerkte versie van de Geometrixx-app met een toepassingssjabloon. U kunt ook de StarterKit installeren die ook een sjabloon biedt.
 

@@ -9,9 +9,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: adbe8416-c8d7-4581-940b-df62eadf0e26
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '5872'
+source-wordcount: '5869'
 ht-degree: 0%
 
 ---
@@ -218,7 +218,7 @@ Schakel deze opties in om de weergave van het venster op te geven:
 
 ## Video&#39;s Flash naar PDF-instellingen {#flash-videos-to-pdf-settings}
 
-PDF Generator ondersteunt de mogelijkheid om een video te verzenden voor Adobe Flash (SWF of FLV-bestand) en een PDF-bestand te maken met een video waarin de Adobe Flash is ingesloten. Voor deze conversie hoeft Adobe Flash Player niet te worden geïnstalleerd op de formulierserver. Zie voor instructies over het openen van deze optie [Instellingen voor bestandstypen maken of bewerken](configuring-file-type-settings.md#create-or-edit-file-type-settings).
+PDF Generator ondersteunt de mogelijkheid om een video te verzenden voor Adobe Flash (SWF of FLV-bestand) en een PDF-bestand te maken met een video waarin de Adobe Flash is ingesloten. Voor deze conversie hoeft de Adobe Flash Player niet op de Forms-server te worden geïnstalleerd. Zie voor instructies over het openen van deze optie [Instellingen voor bestandstypen maken of bewerken](configuring-file-type-settings.md#create-or-edit-file-type-settings).
 
 **Bestandsnaamextensies:** Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
 
@@ -253,7 +253,7 @@ Voor instructies over het verkrijgen van toegang tot deze instelling raadpleegt 
 
    * Selecteer zo nodig een andere map met lettertypen in het menu **Fontbron** vervolgkeuzelijst. In dit vervolgkeuzemenu worden de mappen met fonts weergegeven die zijn opgegeven in **Home > Settings > Core System > Core Configurations**.
    * Selecteer een of meer lettertypen in het menu **Beschikbare lettertypen** lijst en klik op **Toevoegen**. Deze lettertypen worden toegevoegd aan de **Te verwijderen ingesloten fonts** lijst.
-   * Als u de insluiting van bepaalde fonts ongedaan wilt maken die niet op de formulierserver staan, voert u de namen van deze fonts in het dialoogvenster **Fonts toevoegen aan niet-insluiting** doos. Klikken **Toevoegen**.
+   * Als u de insluiting van sommige lettertypen die niet op de Forms-server bestaan, ongedaan wilt maken, voert u de namen van die lettertypen in het dialoogvenster **Fonts toevoegen aan niet-insluiting** doos. Klikken **Toevoegen**.
 
    >[!NOTE]
    >
@@ -315,7 +315,7 @@ Overdruk behouden: hiermee laat u de kleur van transparante illustraties overvlo
 
 In de volgende tabel ziet u de meestgebruikte printertypen en de resolutie van deze printers in dpi, de standaard rasterliniatuur in regels per inch (lpi) en een resamplingresolutie voor afbeeldingen in pixels per inch (ppi). Als u bijvoorbeeld afdrukt op een 600-dpi laserprinter, voert u 170 in voor de resolutie waarmee u het aantal pixels in afbeeldingen wilt wijzigen.
 
-**Afbeeldingen** Selecteer Afbeeldingen om opties voor compressie en resampling op te geven voor afbeeldingen in kleur, grijswaarden en monochroom. U kunt met deze opties experimenteren om een juiste balans te vinden tussen bestandsgrootte en afbeeldingskwaliteit. De resolutie-instelling voor kleuren- en grijswaardenafbeeldingen moet 1,5 tot 2 keer zo hoog zijn als de rasterliniatuur waarop het bestand wordt afgedrukt. De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat, maar houd er rekening mee dat als u een monochrome afbeelding opslaat met een resolutie hoger dan 1500 dpi, het bestand groter wordt zonder dat de beeldkwaliteit merkbaar toeneemt. Voor afbeeldingen die worden vergroot, zoals kaarten, is mogelijk een hogere resolutie vereist.
+**Afbeeldingen** Selecteer Afbeeldingen om opties voor compressie en resampling op te geven voor afbeeldingen in kleur, grijswaarden en monochroom. U kunt met deze opties experimenteren om een juiste balans te vinden tussen bestandsgrootte en afbeeldingskwaliteit. De resolutie-instelling voor kleuren- en grijswaardenafbeeldingen moet 1,5 tot 2 keer zo hoog zijn als de rasterliniatuur waarop het bestand wordt afgedrukt. De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat, maar als u een monochrome afbeelding opslaat met een resolutie hoger dan 1500 dpi, neemt de bestandsgrootte toe zonder dat de beeldkwaliteit merkbaar toeneemt. Voor afbeeldingen die worden vergroot, zoals kaarten, is mogelijk een hogere resolutie vereist.
 
 >[!NOTE]
 >

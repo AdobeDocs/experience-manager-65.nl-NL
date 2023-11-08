@@ -10,9 +10,9 @@ discoiquuid: 05303b29-9058-4723-b134-4ba605fe40c7
 docset: aem65
 feature: Adaptive Forms
 exl-id: 255be73f-3169-457c-aaa7-a2fb59f1f2cd
-source-git-commit: e7a3558ae04cd6816ed73589c67b0297f05adce2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '738'
 ht-degree: 0%
 
 ---
@@ -21,11 +21,11 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-<span class="preview"> Adobe raadt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
+<span class="preview"> Adobe beveelt aan moderne en uitbreidbare gegevensvastlegging te gebruiken [Kernonderdelen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/introduction.html) for [nieuwe Adaptieve Forms maken](/help/forms/using/create-an-adaptive-form-core-components.md) of [Aangepaste Forms toevoegen aan AEM Sites-pagina&#39;s](/help/forms/using/create-or-add-an-adaptive-form-to-aem-sites-page.md). Deze componenten betekenen een aanzienlijke vooruitgang in de aanmaak van Adaptive Forms en zorgen voor indrukwekkende gebruikerservaring. In dit artikel wordt een oudere aanpak beschreven voor de auteur Adaptive Forms die gebruikmaakt van stichtingscomponenten. </span>
 
-Adaptieve formulieren bieden ondersteuning voor verschillende XFA-gebeurtenissen, -eigenschappen, -scripts en -validaties die zijn gedefinieerd in een XDP-bestand, waaronder:
+Adaptieve formulieren ondersteunen diverse XFA-gebeurtenissen, -eigenschappen, -scripts en -validaties die zijn gedefinieerd in een XDP-bestand, zoals:
 
-* Uitvoering van scripts die zijn gedefinieerd voor gebeurtenissen in het XDP-bestand.
+* Uitvoering van scripts gedefinieerd voor gebeurtenissen in het XDP-bestand.
 * Standaardwaarden en gedragseigenschappen vastleggen voor velden in het XDP-bestand.
 * Uitvoering van validatiescripts die zijn gedefinieerd in het XDP-bestand.
 
@@ -42,7 +42,7 @@ Wanneer een adaptief formulier wordt gemaakt met een XDP-bestand, kunt u een XFA
 <table>
  <tbody>
   <tr>
-   <td><p><strong>XFA-veld of -container</strong></p> </td>
+   <td><p><strong>XFA veld of container</strong></p> </td>
    <td><p><strong>Overeenkomende adaptieve formuliercomponent</strong></p> </td>
   </tr>
   <tr>
@@ -139,7 +139,7 @@ In de volgende tabel wordt vastgelegd hoe verschillende XFA-scripts die in de XD
    <td><p>Toegewezen aan de aangepaste toegankelijkheidstekst in aangepaste vorm.</p> </td>
   </tr>
   <tr>
-   <td><p>Toegankelijkheid: toolTip </p> </td>
+   <td><p>Toegankelijkheid: knopinfo </p> </td>
    <td><p>Toegewezen aan de korte beschrijvingseigenschap in adaptieve vorm.</p> </td>
   </tr>
   <tr>

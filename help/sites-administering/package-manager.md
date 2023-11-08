@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 6694a135-d1e1-4afb-9f5b-23991ee70eee
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3570'
 ht-degree: 0%
 
 ---
@@ -173,8 +173,8 @@ Wanneer u filters maakt, kunt u een pad definiëren of een reguliere expressie g
 
 | Type regel | Beschrijving |
 |---|---|
-| include | Als u een map opneemt, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
-| uitsluiten | Als u een map uitsluit, worden die map en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten. |
+| include | Als u een map opneemt, worden die map en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) opgenomen, maar **niet** andere bestanden of mappen vanuit het opgegeven hoofdpad opnemen. |
+| uitsluiten | Als u een map uitsluit, worden die map en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) uitgesloten. |
 
 Pakketfilters worden meestal gedefinieerd wanneer u voor het eerst [Maak het pakket.](#creating-a-new-package) U kunt ze echter ook later bewerken, waarna het pakket opnieuw moet worden samengesteld om de inhoud bij te werken op basis van de nieuwe filterdefinities.
 

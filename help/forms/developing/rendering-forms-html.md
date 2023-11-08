@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 0%
@@ -67,13 +67,13 @@ U moet expliciet van deelvenster naar deelvenster gaan met de opdracht `xfa.host
 >
 >Als u de weergave van de knop HTML Digital Signature op een HTML-formulier wilt aanpassen, moet u de volgende eigenschappen wijzigen in het bestand fscdigsig.css (in het bestand adobe-forms-ds.ear > adobe-forms-ds.war):
 
-**.fsc-ds-ssb**: Dit stijlblad is van toepassing in het geval van een leeg tekenveld.
+**.fsc-ds-ssb**: Dit stijlblad is van toepassing als er een leeg tekenveld is.
 
-**.fsc-ds-ssv**: Dit stijlblad is van toepassing in het geval van een geldig handtekeningveld.
+**.fsc-ds-ssv**: Dit stijlblad is van toepassing als er een geldig handtekeningveld is.
 
-**.fsc-ds-ssc**: Dit stijlblad is van toepassing in het geval van een geldig handtekeningveld, maar er zijn gegevens gewijzigd.
+**.fsc-ds-ssc**: Dit stijlblad is van toepassing als er een geldig handtekeningveld is maar er gegevens zijn gewijzigd.
 
-**.fsc-ds-ssi**: Dit stijlblad is van toepassing in het geval van een ongeldig handtekeningveld.
+**.fsc-ds-ssi**: Dit stijlblad is van toepassing als er een ongeldig handtekeningveld is.
 
 **.fsc-ds-popup-bg**: Deze stijlbladeigenschap wordt niet gebruikt.
 

@@ -7,9 +7,9 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2047'
+source-wordcount: '2046'
 ht-degree: 10%
 
 ---
@@ -183,7 +183,7 @@ De metagegevens aanpassen [!UICONTROL Properties] de pagina, met inbegrip van he
 
 U kunt inzamelingen van de console van Inzamelingen zoeken. Wanneer u met trefwoorden zoekt in het vak Zoeken, [!DNL Assets] zoekt naar verzamelingsnamen, metagegevens en de tags die aan de verzamelingen zijn toegevoegd.
 
-Als u zoekt naar verzamelingen op het hoogste niveau, worden alleen afzonderlijke verzamelingen geretourneerd in zoekresultaten. [!DNL Assets] of mappen in de verzamelingen worden uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
+Als u naar inzamelingen van top-level zoekt, slechts zijn de individuele inzamelingen teruggekeerd in onderzoeksresultaten. [!DNL Assets] of mappen in de verzamelingen worden uitgesloten. In alle andere gevallen (bijvoorbeeld in een afzonderlijke verzameling of in een mappenhiërarchie) worden alle relevante elementen, mappen en verzamelingen geretourneerd.
 
 ## Zoeken in verzamelingen {#searching-within-collections}
 

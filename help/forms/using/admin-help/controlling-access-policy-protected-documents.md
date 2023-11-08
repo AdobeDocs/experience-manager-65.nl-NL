@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2168'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Met behulp van de pagina Documenten kunt u de volgende taken uitvoeren:
 
 * Zoek naar en bekijk de details van beleid-beschermde documenten. U kunt informatie over de documentnaam, de uitgeversnaam, de beleidsnaam, en de datum zien het beleid werd toegepast. Als het beleid dat een document beschermde wordt geschrapt, kunt u schrapte beleidsidentiteitskaart onder de beleidsnaam ook zien. Gebruikers kunnen hun eigen documenten die met een beleid zijn beveiligd, weergeven en beheren. Beheerders kunnen alle documenten die met een beleid zijn beveiligd, weergeven en beheren.
 * Wijzig de details van het beleid dat op een document wordt toegepast. De gebruikers kunnen hun eigen beleid uitgeven, de beheerders kunnen gedeeld en persoonlijk beleid uitgeven, en de coördinatoren van de beleidsreeks kunnen gedeeld beleid in de beleidsreeksen uitgeven zij toestemmingen voor hebben. U hebt rechtstreeks vanuit de pagina Documentdetails toegang tot het beleid dat aan een document is gekoppeld.
-* De toegang tot een document dat met een beleid is beveiligd, intrekken en opnieuw instellen. Beheerders kunnen de toegang tot elk document intrekken en opnieuw instellen. Coördinatoren van beleidssets (die gemachtigd zijn om documenten te beheren) kunnen de toegang tot documenten die met een beleid zijn beveiligd en die gedeeld beleid uit hun beleidssets gebruiken, intrekken en opnieuw instellen. Gebruikers kunnen de toegang tot documenten die met een beleid zijn beveiligd, intrekken als zij het beleid hebben gemaakt dat het document beveiligt of als het beleid een gedeeld beleid is dat deze mogelijkheid toestaat.
+* De toegang tot een document dat met een beleid is beveiligd, intrekken en opnieuw instellen. Beheerders kunnen de toegang tot elk document intrekken en opnieuw instellen. Coördinatoren van beleidssets (die gemachtigd zijn om documenten te beheren) kunnen de toegang tot documenten die met een beleid zijn beveiligd en die gedeeld beleid uit hun beleidssets gebruiken, intrekken en herstellen. Gebruikers kunnen de toegang tot documenten die met een beleid zijn beveiligd, intrekken als zij het beleid hebben gemaakt dat het document beveiligt of als het beleid een gedeeld beleid is dat deze mogelijkheid toestaat.
 * Van beleid veranderen dat op een document wordt toegepast. De gebruikers die beleid op documenten toepassen kunnen een beleid schakelen als zij het creeerden of als het een gedeeld beleid is dat dit vermogen toelaat. Coördinatoren van beleidssets kunnen van hun beleidsreeksen overschakelen. Beheerders kunnen een ander beleid kiezen dat op elk document wordt toegepast.
 
 Wanneer een document door een beleid wordt beschermd en u toegangsvoorrechten intrekt of het toegepaste beleid verandert, worden de veranderingen van kracht als volgt:
@@ -60,7 +60,7 @@ U kunt ook meer details, die hieronder worden beschreven, weergeven over een bep
 
 **Verwante herhalingen:** Als het document verwante herhalingen heeft, wordt dit item ook in de lijst weergegeven. Klik op de koppeling om de lijst met verwante herhalingen voor het document weer te geven.
 
-Gebruikers kunnen informatie over hun beveiligde documenten bekijken. Beheerders kunnen informatie weergeven over documenten die door gebruikers zijn beveiligd met een beleid. Coördinatoren van beleidssets kunnen informatie bekijken over documenten die door beleid worden beschermd tegen hun beleidssets.
+Gebruikers kunnen informatie over hun beveiligde documenten bekijken. Beheerders kunnen informatie weergeven over documenten die door elke gebruiker zijn beveiligd met een beleid. Coördinatoren van beleidssets kunnen informatie bekijken over documenten die door beleid worden beschermd tegen hun beleidssets.
 
 1. Klik op Documenten op de pagina Documentbeveiliging.
 1. Klik in de lijst met documenten op het gewenste document. De pagina Documentdetails wordt geopend en er wordt gedetailleerde informatie over het document weergegeven. Deze pagina bevat ook opties voor het intrekken van de documenttoegang, het wijzigen van het beleid en het weergeven van gebeurtenissen die betrekking hebben op dit document.
@@ -69,7 +69,7 @@ Gebruikers kunnen informatie over hun beveiligde documenten bekijken. Beheerders
 
 Als het bijhouden van verwante herhalingen is ingeschakeld, kunt u versies bijhouden van een document dat door verschillende gebruikers is opgeslagen. Deze functie wordt alleen ondersteund door bepaalde toepassingen, zoals PTC Pro/ENGINEER Wildfire.
 
-Deze functie is handig wanneer meerdere gebruikers samenwerken en verschillende versies van hetzelfde document opslaan. de documentbeveiliging kan de verschillende versies bijhouden; daarom kunt u gemakkelijk documentinformatie voor de verschillende versies bekijken.
+Deze functie is handig wanneer meerdere gebruikers samenwerken en verschillende versies van hetzelfde document opslaan. Met documentbeveiliging kunt u de verschillende versies bijhouden. Hierdoor kunt u gemakkelijk de documentgegevens voor de verschillende versies bekijken.
 
 Als deze functie is ingeschakeld, kunt u de verwante versies van een document bekijken vanaf de pagina Documenten.
 
@@ -154,7 +154,7 @@ Enkele aanvullende zoekopties zijn alleen beschikbaar voor beheerders:
 
 **Beleid-id:** Id-nummer van het beleid dat aan het document is gekoppeld.
 
-**Beleidsnaam:** Naam van het beleid dat aan het document is verbonden.
+**Beleidsnaam:** Naam van het beleid dat aan het document wordt vastgemaakt.
 
 **Alle documenten:** Alle documenten die zijn beveiligd door beheerders en gebruikers. Als u de optie Alle documenten gebruikt om te zoeken, wordt mogelijk een lange lijst met documenten geretourneerd.
 
@@ -184,7 +184,7 @@ U kunt de lijst met documenten sorteren op kolomkop. De driehoekspictogrammen na
 
 ## Voorblad toevoegen aan documenten die met een beleid zijn beveiligd {#add-cover-page-to-policy-protected-documents}
 
-Als u een met documentbeveiliging beveiligd document opent in het geval van de meeste niet-Adobe PDF-viewers, wordt de eerste pagina weergegeven als een lege pagina of wordt de toepassing afgebroken zonder het document te openen.
+Als er de meeste niet-Adobe PDF-viewers zijn, als u een met documentbeveiliging beveiligd document opent, wordt de eerste pagina als een lege pagina weergegeven of wordt de toepassing afgebroken zonder het document te openen.
 
 Met de ondersteuning Pagina 0 (Omsluitend document) kunnen niet-Adobe PDF-viewers een beveiligd document openen en een omslagpagina in het document weergeven.
 

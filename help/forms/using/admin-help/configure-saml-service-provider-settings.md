@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
 exl-id: dd302cfb-eae1-4189-aa7b-9f2533ebd164
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Voor een uitleg van SAML, zie [SAML (Security Assertion Markup Language) V2.0 - 
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > SAML Service Provider Settings.
 1. Typ in het vak Id van Service Provider-entiteit een unieke id die u wilt gebruiken als id voor de implementatie van de AEM-provider. U geeft deze unieke id ook op wanneer u uw IDP configureert (bijvoorbeeld `um.lc.com`.) U kunt ook de URL gebruiken die wordt gebruikt om toegang te krijgen tot AEM formulieren (bijvoorbeeld `https://AEMformsserver`).
-1. Typ in het vak Basis-URL van serviceprovider de basis-URL voor uw formulierserver (bijvoorbeeld `https://AEMformsserver:8080`).
+1. Typ in het vak Basis-URL van de Serviceleverancier de basis-URL voor uw Forms-server (bijvoorbeeld `https://AEMformsserver:8080`).
 1. (Optioneel) Als u wilt dat AEM formulieren ondertekende verificatieaanvragen naar de IDP kunnen verzenden, voert u de volgende taken uit:
 
    * Gebruik Betrouwbaarheidsbeheer om een referentie in de PKCS #12-indeling te importeren, waarbij Referentie voor documenthandtekening is geselecteerd als Betrouwbaarheidswinkeltype. (Zie [Lokale referenties beheren](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)

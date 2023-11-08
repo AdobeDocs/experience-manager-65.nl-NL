@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7661'
+source-wordcount: '7662'
 ht-degree: 0%
 
 ---
@@ -153,7 +153,7 @@ In deze sectie worden technieken beschreven die u tijdens het AEM Forms-installa
 
 Nadat u AEM Forms met succes op JEE installeert, is het belangrijk om het milieu uit veiligheidsperspectief periodiek te handhaven.
 
-In de volgende sectie worden de verschillende taken beschreven die worden aanbevolen om de geïmplementeerde formulierserver te beveiligen.
+De volgende sectie beschrijft in detail de verschillende taken die worden geadviseerd om de opgestelde Server van Forms te beveiligen.
 
 ### AEM Forms-beveiliging {#aem-forms-security}
 
@@ -169,7 +169,7 @@ AEM Forms on JEE installeert standaard een service via de LocalSystem-account. D
 
 Volg de onderstaande instructies om de toepassingsserver uit te voeren waarop AEM Forms op JEE wordt geïmplementeerd met een specifieke niet-beheeraccount:
 
-1. Maak in de Microsoft Management Console (MMC) een lokale gebruiker voor de service van de formulierserver om u aan te melden als:
+1. Maak in de Microsoft Management Console (MMC) een lokale gebruiker voor de Forms Server-service om u aan te melden als:
 
    * Selecteren **Gebruiker kan wachtwoord niet wijzigen**.
    * Op de **Lid van** zorgt u ervoor dat de **Gebruikers** wordt weergegeven.
@@ -182,7 +182,7 @@ Volg de onderstaande instructies om de toepassingsserver uit te voeren waarop AE
 1. Dubbelklik op JBoss voor AEM Forms op JEE en stop de service.
 1. Op de **Aanmelden** tab, selecteert u **Dit account** Blader naar de gebruikersaccount die u hebt gemaakt en voer het wachtwoord voor de account in.
 1. In de MMC, open **Lokale beveiligingsinstellingen** en selecteert u **Lokaal beleid** > **Toewijzing gebruikersrechten**.
-1. Wijs de volgende rechten toe aan de gebruikersaccount waarop de formulierserver wordt uitgevoerd:
+1. Wijs de volgende rechten toe aan de gebruikersaccount waarop de Forms Server wordt uitgevoerd:
 
    * Ontken login door de EindDiensten
    * Aanmelden lokaal weigeren
@@ -273,7 +273,7 @@ U kunt de externe toegang tot alle Trust Store-services uitschakelen door de sta
 
 **Alle niet-essentiële anonieme toegang uitschakelen**
 
-Sommige diensten van de vormenserver hebben verrichtingen die door een anonieme bezoeker kunnen worden aangehaald. Als anonieme toegang tot deze diensten niet wordt vereist, maak het onbruikbaar door de stappen in te volgen [Niet-essentiële anonieme toegang tot services uitschakelen](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
+Sommige diensten van de Server van Forms hebben verrichtingen die door een anonieme bezoeker kunnen worden aangehaald. Als anonieme toegang tot deze diensten niet wordt vereist, maak het onbruikbaar door de stappen in te volgen [Niet-essentiële anonieme toegang tot services uitschakelen](https://helpx.adobe.com/aem-forms/6-1/hardening-security/configuring-secure-administration-settings-aem.html#disabling_non_essential_anonymous_access_to_services).
 
 #### Het standaardbeheerderswachtwoord wijzigen {#change-the-default-administrator-password}
 
@@ -401,7 +401,7 @@ Op WebSphere, kunt u geïntegreerde veiligheid vormen slechts wanneer u een exte
 
 ### Toegang tot gevoelige inhoud in de database beveiligen {#protecting-access-to-sensitive-content-in-the-database}
 
-Het AEM Forms-databaseschema bevat gevoelige informatie over systeemconfiguratie en bedrijfsprocessen en moet achter de firewall worden verborgen. De database moet worden beschouwd binnen dezelfde vertrouwensgrens als de formulierserver. Om tegen informatieonthulling en diefstal van bedrijfsgegevens te beschermen, moet het gegevensbestand door de gegevensbestandbeheerder (DBA) worden gevormd om toegang slechts door erkende beheerders toe te staan.
+Het AEM Forms-databaseschema bevat gevoelige informatie over systeemconfiguratie en bedrijfsprocessen en moet achter de firewall worden verborgen. De database moet worden beschouwd binnen dezelfde vertrouwensgrens als de Forms-server. Om tegen informatieonthulling en diefstal van bedrijfsgegevens te beschermen, moet het gegevensbestand door de gegevensbestandbeheerder (DBA) worden gevormd om toegang slechts door erkende beheerders toe te staan.
 
 Als toegevoegde voorzorg, zou u het gebruiken van gegevensbestand verkoper-specifieke hulpmiddelen moeten overwegen om kolommen in lijsten te coderen die de volgende gegevens bevatten:
 
@@ -537,13 +537,13 @@ Bepaalde URL&#39;s worden gemarkeerd als eindgebruikers gerichte webtoepassingen
   </tr> 
   <tr> 
    <td><p>/zeep/*</p> </td> 
-   <td><p>Informatiepagina voor webservices voor formulierserver</p> </td> 
+   <td><p>Informatiepagina voor Forms Server-webservices</p> </td> 
    <td><p>Nee</p> </td> 
    <td><p>Nee</p> </td> 
   </tr> 
   <tr> 
    <td><p>/soap/services/*</p> </td> 
-   <td><p>Webservice-URL voor alle services van formulierservers</p> </td> 
+   <td><p>Webservice-URL voor alle Forms Server-services</p> </td> 
    <td><p>Nee</p> </td> 
    <td><p>Nee</p> </td> 
   </tr> 
@@ -674,7 +674,7 @@ De volgende kenmerken komen voor in KVP:
 AEM Forms on JEE gebruikt de functie Filter referentie om CSRF-aanvallen te blokkeren. In deze sectie worden de volgende termen gebruikt om het filtermechanisme van de verwijzer te beschrijven:
 
 * **Toegestane referentie:** Een verwijzing is het adres van de bronpagina die een verzoek naar de server verzendt. Voor JSP-pagina&#39;s of -formulieren is de referentie meestal de vorige pagina in de browsergeschiedenis. Verwijzers voor afbeeldingen zijn meestal de pagina&#39;s waarop de afbeeldingen worden weergegeven. U kunt de Referrer identificeren die toegang tot uw servermiddelen door hen aan de Toegestane lijst van de Referant wordt verleend toe te voegen.
-* **Uitzonderingen toegestane verwijzer:** U wilt mogelijk het bereik van toegang voor een bepaalde referentie beperken in uw lijst Toegestane referentie. Als u deze beperking wilt toepassen, kunt u afzonderlijke paden van die referentie toevoegen aan de lijst Toegestane uitzonderingen Referrer. Verzoeken die afkomstig zijn van paden in de lijst Toegestane uitzonderingen voor referenties kunnen geen bron op de formulierserver aanroepen. U kunt de Uitzonderingen van de Verwijzer van de Toestemming voor een specifieke toepassing bepalen en ook een globale lijst van uitzonderingen gebruiken die op alle toepassingen van toepassing zijn.
+* **Uitzonderingen toegestane verwijzer:** U wilt mogelijk het bereik van toegang voor een bepaalde referentie beperken in uw lijst Toegestane referentie. Als u deze beperking wilt toepassen, kunt u afzonderlijke paden van die referentie toevoegen aan de lijst Toegestane uitzonderingen Referrer. Verzoeken die afkomstig zijn van paden in de lijst Toegestane uitzonderingen door verwijzers kunnen geen bron op de Forms-server aanroepen. U kunt de Uitzonderingen van de Verwijzer van de Toestemming voor een specifieke toepassing bepalen en ook een globale lijst van uitzonderingen gebruiken die op alle toepassingen van toepassing zijn.
 * **Toegestane URI&#39;s:** Dit is een lijst met bronnen die moeten worden gebruikt zonder de koptekst van de verwijzer te controleren. De middelen, bijvoorbeeld, hulppagina&#39;s, die niet in staatsveranderingen op de server resulteren, kunnen aan deze lijst worden toegevoegd. De bronnen in de lijst Toegestane URI&#39;s worden nooit geblokkeerd door het filter Referrer, ongeacht wie de Referrer is.
 * **Null-referentie:** Een serveraanvraag die niet is gekoppeld aan of niet afkomstig is van een bovenliggende webpagina, wordt beschouwd als een aanvraag van een Null-referentie. Wanneer u bijvoorbeeld een nieuw browservenster opent, typt u een adres en drukt u op Enter, is de referentie die naar de server is verzonden null. Een Desktoptoepassing (.NET of SWING) die een HTTP- verzoek aan een Webserver indienen, verzendt ook een Null Referrer naar de server.
 
@@ -682,12 +682,12 @@ AEM Forms on JEE gebruikt de functie Filter referentie om CSRF-aanvallen te blok
 
 Het filterproces Referrer kan als volgt worden beschreven:
 
-1. De formulierserver controleert de HTTP-methode die wordt gebruikt voor oproepen:
+1. De Forms-server controleert de HTTP-methode die wordt gebruikt voor oproepen:
 
-   1. Als het POST is, voert de formulierserver de koptekstcontrole Referrer uit.
-   1. Als dit GET is, wordt de controle Referrer door de formulierserver overgeslagen, tenzij *CSRF_CHECK_GETS* is ingesteld op true, in welk geval de koptekstcontrole Referrer wordt uitgevoerd. *CSRF_CHECK_GETS* wordt opgegeven in het dialoogvenster *web.xml* bestand voor uw toepassing.
+   1. Als het POST is, voert de Server van Forms de de kopbalcontrole van de Referteur uit.
+   1. Als het GET is, wordt de controle Referrer door de Forms-server overgeslagen, tenzij *CSRF_CHECK_GETS* is ingesteld op true, in welk geval de koptekstcontrole Referrer wordt uitgevoerd. *CSRF_CHECK_GETS* wordt opgegeven in het dialoogvenster *web.xml* bestand voor uw toepassing.
 
-1. De formulierserver controleert of de aangevraagde URI bestaat in de lijst van gewenste personen:
+1. De server van Forms controleert of gevraagde URI in lijst van gewenste personen bestaat:
 
    1. Als URI wordt gevoegd op lijst van gewenste personen, accepteert de server de aanvraag.
    1. Als gevraagde URI niet wordt gevoegd op lijst van gewenste personen, wint de server de Referrer van het verzoek terug.
@@ -706,7 +706,7 @@ Het filterproces Referrer kan als volgt worden beschreven:
 
 AEM Forms on JEE biedt een Referrer Filter om Referrer op te geven die toegang krijgen tot uw serverbronnen. Standaard filtert het filter Referenter geen aanvragen die een veilige HTTP-methode gebruiken, bijvoorbeeld GET, tenzij *CSRF_CHECK_GETS* is ingesteld op true. Als het havenaantal voor een Toegestane ingang van de Verwijzing aan 0 wordt geplaatst, zal AEM Forms op JEE alle verzoeken met Referrer van die gastheer ongeacht het havenaantal toestaan. Als er geen poortnummer is opgegeven, zijn alleen aanvragen van standaardpoort 80 (HTTP) of poort 443 (HTTPS) toegestaan. Filteren met verwijzing is uitgeschakeld als alle items in de lijst Toegestane verwijzing worden verwijderd.
 
-Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane lijst van de Verwijzing bijgewerkt met het adres van de server waarop de Diensten van het Document geïnstalleerd is. De ingangen voor de server omvatten de servernaam, het IPv4 adres, het IPv6 adres als IPv6 wordt toegelaten, het loopbackadres, en een localhost ingang. De namen die aan de lijst Toegestane verwijzing worden toegevoegd, worden geretourneerd door het hostbesturingssysteem. Bijvoorbeeld, zal een server met een IP adres van 10.40.54.187 de volgende ingangen omvatten: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Voor om het even welke niet gekwalificeerde naam die door het werkende systeem van de Gastheer (namen wordt teruggegeven die geen IPv4 adres, IPv6 adres of gekwalificeerde domeinnaam) hebben wordt de lijst van gewenste personen niet bijgewerkt. Wijzig de Toegestane lijst van Referiteers om uw bedrijfsomgeving aan te passen. Implementeer de formulierserver niet in de productieomgeving met de standaardlijst Toegestane verwijzing. Nadat u een van de toegestane referentie-, referentie-uitzonderingen of URI&#39;s hebt gewijzigd, zorgt u ervoor dat de server opnieuw wordt gestart zodat de wijzigingen van kracht worden.
+Wanneer u de Diensten van het Document eerst installeert, wordt de Toegestane lijst van de Verwijzing bijgewerkt met het adres van de server waarop de Diensten van het Document geïnstalleerd is. De ingangen voor de server omvatten de servernaam, het IPv4 adres, het IPv6 adres als IPv6 wordt toegelaten, het loopbackadres, en een localhost ingang. De namen die aan de lijst Toegestane verwijzing worden toegevoegd, worden geretourneerd door het hostbesturingssysteem. Bijvoorbeeld, zal een server met een IP adres van 10.40.54.187 de volgende ingangen omvatten: `https://server-name:0, https://10.40.54.187:0, https://127.0.0.1:0, http://localhost:0`. Voor om het even welke niet gekwalificeerde naam die door het werkende systeem van de Gastheer (namen wordt teruggegeven die geen IPv4 adres, IPv6 adres of gekwalificeerde domeinnaam) hebben wordt de lijst van gewenste personen niet bijgewerkt. Wijzig de Toegestane lijst van Referiteers om uw bedrijfsomgeving aan te passen. Implementeer de Forms-server niet in de productieomgeving met de standaardlijst Toegestane verwijzing. Nadat u een van de toegestane referentie-, referentie-uitzonderingen of URI&#39;s hebt gewijzigd, zorgt u ervoor dat de server opnieuw wordt gestart zodat de wijzigingen van kracht worden.
 
 **Toegestane verwijzingslijst beheren**
 
@@ -727,7 +727,7 @@ AEM Forms on JEE biedt API&#39;s voor het beheer van de lijst Uitzondering toege
 
 Raadpleeg de* AEM Forms on JEE API Reference* voor meer informatie over de API&#39;s.
 
-Gebruik de ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lijst voor toegestane uitzonderingen door verwijzers op algemeen niveau, d.w.z. om uitzonderingen te bepalen die op alle toepassingen van toepassing zijn. Deze lijst bevat alleen URI&#39;s met een absoluut pad (bijvoorbeeld `/index.html`) of een relatief pad (bijvoorbeeld `/sample/`). U kunt bijvoorbeeld ook een reguliere expressie aan het einde van een relatieve URI toevoegen. `/sample/(.)*`.
+Gebruik de ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lijst voor de Uitzonderingen van de Verwijzer van de Toegestane Verwijzing op het globale niveau dat, uitzonderingen bepaalt die op alle toepassingen van toepassing zijn. Deze lijst bevat alleen URI&#39;s met een absoluut pad (bijvoorbeeld `/index.html`) of een relatief pad (bijvoorbeeld `/sample/`). U kunt bijvoorbeeld ook een reguliere expressie aan het einde van een relatieve URI toevoegen. `/sample/(.)*`.
 
 De ***LC_GLOBAL_ALLOWED_REFERER_EXCEPTION*** lijst-id is gedefinieerd als een constante in het dialoogvenster `UMConstants` klasse van de `com.adobe.idp.um.api` naamruimte, gevonden in `adobe-usermanager-client.jar`. Met de AEM Forms API&#39;s kunt u deze lijst maken, wijzigen of bewerken. Als u bijvoorbeeld de lijst Uitzonderingen globale toegestane verwijzingsverwijzing wilt maken, gebruikt u:
 
@@ -739,7 +739,7 @@ Gebruik de ***CSRF_ALLOWED_REFERER_EXCEPTIONS*** lijst voor toepassingsspecifiek
 
 **Het filter Referrer uitschakelen**
 
-Als het filter Referrer de toegang tot de formulierserver volledig blokkeert en u de lijst Toegestane verwijzing niet kunt bewerken, kunt u het opstartscript van de server bijwerken en het filteren van referenties uitschakelen.
+Als het filter Referrer de toegang tot de Forms-server volledig blokkeert en u de lijst Toegestane verwijzing niet kunt bewerken, kunt u het opstartscript van de server bijwerken en het filteren van referenties uitschakelen.
 
 Inclusief de `-Dlc.um.csrffilter.disabled=true` JAVA-argument in het opstartscript en start de server opnieuw. Zorg ervoor dat u het argument JAVA schrapt nadat u correct de Toegestane lijst van de Verwijzing hebt aangepast.
 
@@ -749,7 +749,7 @@ Mogelijk hebt u aangepaste WAR-bestanden gemaakt die u met AEM Forms op JEE kunt
 
 **CSRF_CHECK_GETS** controleert de controle van de Referateur op verzoeken van GET. Wanneer deze parameter niet is gedefinieerd, wordt de standaardwaarde op false ingesteld. Neem deze parameter alleen op als u uw GET-aanvragen wilt filteren.
 
-**CSRF_ALLOWED_REFERER_EXCEPTIONS** Dit is de id van de lijst Uitzonderingen toegestane verwijzing. Met het filter Referrer voorkomt u dat aanvragen die afkomstig zijn van referenties in de lijst die met de lijst-id wordt aangegeven, een bron op de formulierserver aanroepen.
+**CSRF_ALLOWED_REFERER_EXCEPTIONS** Dit is de id van de lijst Uitzonderingen toegestane verwijzing. Het filter Referrer verhindert verzoeken afkomstig van Verwijzers in de lijst die door lijstidentiteitskaart wordt geïdentificeerd, om het even welke middelen op de Server van Forms te roepen.
 
 **CSRF_ALLOWED_URIS_LIST_NAME** Dit is de id van de lijst Toegestane URI&#39;s. Het filter Referrer blokkeert geen aanvragen voor een van de bronnen in de lijst die door de lijst-id wordt geïdentificeerd, ongeacht de waarde van de verwijzaarheader in de aanvraag.
 
@@ -835,7 +835,7 @@ Wanneer u een veilige netwerkarchitectuur zoals die in de vorige sectie wordt be
     <ul> 
      <li><p>De de dienstcliënttoepassingen van het Web, zoals .NET toepassingen</p> </li> 
      <li><p>Adobe Reader® gebruikt SOAP voor AEM Forms op JEE-server webservices</p> </li> 
-     <li><p>Adobe Flash®-toepassingen gebruiken SOAP voor webservices van formulierservers</p> </li> 
+     <li><p>Adobe Flash®-toepassingen gebruiken SOAP voor Forms Server-webservices</p> </li> 
      <li><p>AEM Forms op JEE SDK-aanroepen bij gebruik in SOAP-modus</p> </li> 
      <li><p>Workbench ontwerpomgeving</p> </li> 
     </ul> </td> 
@@ -995,7 +995,7 @@ Bij de turnkey-installatie van AEM Forms op JEE wordt standaard een serviceaccou
 
 #### De toepassingsserver uitvoeren met een niet-beheeraccount {#run-the-application-server-using-a-non-administrative-account}
 
-1. Maak in de Microsoft Management Console (MMC) een lokale gebruiker voor de service van de formulierserver om u aan te melden als:
+1. Maak in de Microsoft Management Console (MMC) een lokale gebruiker voor de Forms Server-service om u aan te melden als:
 
    * Selecteren **Gebruiker kan wachtwoord niet wijzigen**.
    * Op de **Lid van** selecteert, controleert u of de gebruikersgroep wordt weergegeven.
@@ -1003,7 +1003,7 @@ Bij de turnkey-installatie van AEM Forms op JEE wordt standaard een serviceaccou
 1. Selecteren **Instellingen** > **Administratieve gereedschappen** > **Services**.
 1. Dubbelklik op de service van de toepassingsserver en stop de service.
 1. Op de **Aanmelden** tab, selecteert u **Dit account** Blader naar de gebruikersaccount die u hebt gemaakt en voer het wachtwoord voor de account in.
-1. Geef in het venster Lokale beveiligingsinstellingen onder Toewijzing gebruikersrechten de volgende rechten op de gebruikersaccount waarop de formulierserver wordt uitgevoerd:
+1. Geef in het venster Lokale beveiligingsinstellingen onder Toewijzing gebruikersrechten de volgende rechten op de gebruikersaccount waarop de Forms-server wordt uitgevoerd:
 
    * Ontken login door de EindDiensten
    * Aanmelding lokaal weigeren
@@ -1040,7 +1040,7 @@ AEM Forms on JEE gebruikt het bestandssysteem op de volgende manieren:
 * Slaat dossiers in het globale archiefopslag op die worden gebruikt om de oplossingscomponenten te steunen die worden geïnstalleerd
 * Gecontroleerde mappen slaan neergezette bestanden op die worden gebruikt als invoer voor een service vanaf de locatie van een bestandssysteemmap
 
-Als u gecontroleerde mappen gebruikt als een manier om documenten met een service van de formulierserver te verzenden en te ontvangen, moet u extra voorzorgsmaatregelen treffen met betrekking tot de beveiliging van het bestandssysteem. Wanneer een gebruiker inhoud in de controlemap neerzet, wordt die inhoud via de controlemap weergegeven. In dit geval wordt de werkelijke eindgebruiker niet geverifieerd door de service. In plaats daarvan, baseert het zich op ACL en het niveauveiligheid van het Aandeel op het omslagniveau om te bepalen wie de dienst kan effectief aanhalen.
+Als u gecontroleerde mappen gebruikt als een manier om documenten te verzenden en te ontvangen met een Forms Server-service, moet u extra voorzorgsmaatregelen treffen met betrekking tot de beveiliging van het bestandssysteem. Wanneer een gebruiker inhoud in de controlemap neerzet, wordt die inhoud via de controlemap weergegeven. In dit geval wordt de werkelijke eindgebruiker niet geverifieerd door de service. In plaats daarvan, baseert het zich op ACL en het niveauveiligheid van het Aandeel op het omslagniveau om te bepalen wie de dienst kan effectief aanhalen.
 
 ## JBoss-specifieke veiligheidsaanbevelingen {#jboss-specific-security-recommendations}
 

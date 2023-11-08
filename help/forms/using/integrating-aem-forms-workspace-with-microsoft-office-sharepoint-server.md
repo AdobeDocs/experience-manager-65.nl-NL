@@ -10,7 +10,7 @@ topic-tags: Configuration
 discoiquuid: 8990b422-f4f6-4080-871a-33cdf7ca6455
 docset: aem65
 exl-id: d080932f-d5fb-482d-9329-62da5df10362
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '542'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Voer de volgende stappen uit om AEM Forms Workspace in een Deel van het Web te i
    >
    >44299 is het standaardpoortnummer voor de SharePoint-server. Het poortnummer is afhankelijk van uw installatie van SharePoint Server.
 
-1. Klik in de rechterbovenhoek van de webpagina op **Site-handelingen** en selecteert u **Pagina bewerken**.
+1. Klik rechtsboven op de webpagina op **Site-handelingen** en selecteert u **Pagina bewerken**.
 1. Klik op de knop **Een webonderdeel toevoegen** knop.
 1. Selecteer onder Dialoogvenster Dialoogvenster Webonderdelen toevoegen - webpagina onder Dialoogvenster Dialoogvenster Diversen de optie **Webonderdeel van paginaviewer** en klik vervolgens op **Toevoegen**.
 1. Klik in het vak Webonderdeel van de paginaviewer op **bewerken** en selecteert u **Gedeeld webonderdeel wijzigen**.
@@ -58,7 +58,7 @@ Voer de volgende stappen uit om AEM Forms Workspace in een Deel van het Web te i
 
 1. Voer op de pagina Paginaviewer de volgende taken uit:
 
-   1. Typ in het vak Koppeling de URL van de AEM Forms-werkruimte, zoals `https://[AEM_forms_Server]:8080/lc/ws` waar `[AEM_forms_Server]` staat voor de IP of naam van AEM formulierserver.
+   1. Typ in het vak Koppeling de URL van de AEM Forms-werkruimte, zoals `https://[AEM_forms_Server]:8080/lc/ws` waar `[AEM_forms_Server]` vertegenwoordigt IP of Naam van de Server van AEM Forms.
    1. Klikken **Weergave** en wijzigt u de hoogte, breedte en titel, zodat u de volledige gebruikersinterface van de werkruimte kunt zien. U kunt de hoogte en breedte bijvoorbeeld instellen op respectievelijk 6 en 11 inch.
    1. Klikken **Koppeling testen**. Er wordt een nieuw webbrowservenster weergegeven met Workspace erin.
    1. (Optioneel) Klik op **Layout** en wijzig de lay-out van Werkruimte in het Deel van het Web.

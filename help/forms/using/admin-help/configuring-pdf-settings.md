@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
 exl-id: 1bcb8429-c06e-4bd3-b422-4c512084dd09
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '7285'
+source-wordcount: '7282'
 ht-degree: 0%
 
 ---
@@ -226,7 +226,7 @@ Met deze opties configureert u afbeeldingen in kleur, grijswaarden en monochroom
 
 **Subsampling naar:** Hiermee selecteert u een pixel in het midden van het monstergebied en vervangt u het gehele gebied door die pixel bij de opgegeven resolutie. Subsampling vermindert significant de omzettingstijd in vergelijking met downsampling, maar het resulteert in beelden die minder vlot en ononderbroken zijn.
 
-De resolutie-instelling voor kleur en grijswaarden moet 1,5 tot 2 keer de rasterliniatuur zijn waarmee het bestand wordt afgedrukt. (Als u deze aanbevolen resolutie-instelling niet overschrijdt, worden afbeeldingen zonder rechte lijnen of geometrische of herhalende patronen niet beïnvloed door een lagere resolutie.) De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat. Houd er echter rekening mee dat als u een monochrome afbeelding opslaat met een resolutie die hoger is dan 1500 dpi, de bestandsgrootte toeneemt zonder dat de beeldkwaliteit merkbaar toeneemt.
+De resolutie-instelling voor kleur en grijswaarden moet 1,5 tot 2 keer de rasterliniatuur zijn waarmee het bestand wordt afgedrukt. (Als u deze aanbevolen resolutie-instelling niet overschrijdt, worden afbeeldingen zonder rechte lijnen of geometrische of herhalende patronen niet beïnvloed door een lagere resolutie.) De resolutie voor monochrome afbeeldingen moet gelijk zijn aan die van het uitvoerapparaat. Als u echter een monochrome afbeelding opslaat met een resolutie die hoger is dan 1500 dpi, neemt de bestandsgrootte toe zonder dat de beeldkwaliteit merkbaar toeneemt.
 
 Overweeg ook of gebruikers een pagina moeten vergroten. Als u bijvoorbeeld een PDF-document van een kaart maakt, kunt u een hogere afbeeldingsresolutie gebruiken, zodat gebruikers kunnen inzoomen op de kaart.
 

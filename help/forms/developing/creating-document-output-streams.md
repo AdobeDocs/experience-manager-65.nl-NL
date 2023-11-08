@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '18965'
+source-wordcount: '18956'
 ht-degree: 0%
 
 ---
@@ -257,7 +257,7 @@ Een PDF-document maken met de Output API (Java):
 
    >[!NOTE]
    >
-   >Wanneer het produceren van een document van de PDF door te halen `generatePDFOutput` , moet u er rekening mee houden dat u geen gegevens kunt samenvoegen met een ondertekend of gecertificeerd XFA PDF-formulier. (Zie [Documenten digitaal ondertekenen en certificeren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Wanneer het produceren van een document van de PDF door te halen `generatePDFOutput` -methode, kunt u geen gegevens samenvoegen met een ondertekend of gecertificeerd XFA PDF-formulier. (Zie [Documenten digitaal ondertekenen en certificeren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -354,7 +354,7 @@ Maak een PDF-document met de Output API (webservice):
 
    >[!NOTE]
    >
-   >Wanneer het produceren van een document van de PDF door te halen `generatePDFOutput` , moet u er rekening mee houden dat u geen gegevens kunt samenvoegen met een ondertekend of gecertificeerd XFA PDF-formulier. (Zie [Documenten digitaal ondertekenen en certificeren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
+   >Wanneer het produceren van een document van de PDF door te halen `generatePDFOutput` -methode, kunt u geen gegevens samenvoegen met een ondertekend of gecertificeerd XFA PDF-formulier. (Zie [Documenten digitaal ondertekenen en certificeren ](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-and-certifying-documents)*.)*
 
    >[!NOTE]
    >
@@ -1505,7 +1505,7 @@ Nadat u een document hebt opgehaald om af te drukken, kunt u de service Uitvoer 
 
 >[!NOTE]
 >
->Als PDFG op de vormenserver en de serverlooppas op de Server 2008 van Vensters wordt geïnstalleerd, kunt u niet het bezit SharedPrinter gebruiken. In deze situatie, gebruik een verschillend printerprotocol.
+>Als PDFG op de Server van Forms en de serverlooppas op de Server 2008 van Vensters wordt geïnstalleerd, kunt u niet het bezit SharedPrinter gebruiken. In deze situatie, gebruik een verschillend printerprotocol.
 
 >[!NOTE]
 >
@@ -2173,7 +2173,7 @@ Maak zoekregels met de Output API (webservice):
 
    >[!NOTE]
    >
-   >Wanneer het produceren van een document van de PDF door te halen `generatePDFOutput` , moet u er rekening mee houden dat u geen gegevens kunt samenvoegen met een XFA PDF-formulier dat is ondertekend, gecertificeerd of gebruiksrechten bevat. Voor informatie over gebruiksrechten raadpleegt u [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
+   >Wanneer het produceren van een document van de PDF door te halen `generatePDFOutput` U kunt geen gegevens samenvoegen met een XFA PDF-formulier dat is ondertekend, gecertificeerd of gebruiksrechten bevat. Voor informatie over gebruiksrechten raadpleegt u [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).
 
 1. De resultaten van de bewerking ophalen
 

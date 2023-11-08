@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: f244cfb5-5550-4f20-92f0-bb296e2bf76e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5295'
+source-wordcount: '5294'
 ht-degree: 0%
 
 ---
@@ -383,7 +383,7 @@ Wanneer een element aan Experience Manager Assets wordt toegevoegd, wordt het au
 
 1. Selecteer het Experience Manager-pictogram en navigeer naar **[!UICONTROL Deployment]** > **[!UICONTROL Cloud Services]**.
 1. Onder de rubriek van Dynamic Media, onder Beschikbare Configuraties, selecteer **[!UICONTROL dms7 (Dynamic Media]**).
-1. Selecteer de **[!UICONTROL Advanced]** selecteert u de **[!UICONTROL Enable Automatic Upload]** selectievakje en selecteer vervolgens **[!UICONTROL OK]**. U moet nu de DAM Asset-workflow zodanig configureren dat het uploaden naar Dynamic Media Classic wordt opgenomen.
+1. Selecteer de **[!UICONTROL Advanced]** selecteert u de **[!UICONTROL Enable Automatic Upload]** selectievakje en selecteer vervolgens **[!UICONTROL OK]**. U moet de DAM Asset-workflow zodanig configureren dat het uploaden naar Dynamic Media Classic wordt opgenomen.
 
    >[!NOTE]
    >

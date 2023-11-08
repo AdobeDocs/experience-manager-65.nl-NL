@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: 43fb4fa3-269a-4635-b055-4b7d787da21f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2670'
+source-wordcount: '2668'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,7 @@ Het is ook mogelijk om meerdere instanties van de opslagplaats voor inhoud te co
 
 **Dispatcher** - De verzender is zowel een caching als lading-in evenwicht brengend hulpmiddel, en verstrekt bepaalde veiligheidswaarborgen.
 
-**ExtJS-widgets** - De meeste gebruikersinterface-elementen in AEM maken gebruik van ExtJS, een externe widgetbibliotheek die in JavaScript is geschreven. ExtJS biedt krachtige, aanpasbare UI-widgets en een goed ontworpen en uitbreidbaar componentmodel.
+**ExtJS-widgets** - De meeste gebruikersinterface-elementen in AEM gebruiken ExtJS, een externe widgetbibliotheek die in JavaScript is geschreven. ExtJS biedt krachtige, aanpasbare UI-widgets en een goed ontworpen en uitbreidbaar componentmodel.
 
 **JCR, Java™ Content Repository** - De Java™ Content Repository Specification (JSR-283) biedt zowel een abstract gegevensmodel als een Application Programming Interface voor het realiseren van een enorm schaalbare NoSQL-gegevensopslagruimte waarin functies van een bestandssysteem en een objectdatabase worden gecombineerd. Hoewel u JSR-283 niet in detail hoeft te begrijpen, moet u de tijd nemen om vertrouwd te maken met de basismogelijkheden van de JCR en het gegevensmodel dat eraan ten grondslag ligt, omdat JCR de filosofie van &quot;alles is inhoud&quot; van AEM mogelijk maakt.
 

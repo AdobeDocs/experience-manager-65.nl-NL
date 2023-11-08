@@ -8,7 +8,7 @@ geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: dcf15c42-9ec6-4d1c-ad41-083aa0b8c7ae
 exl-id: 33583a12-4f20-4146-baa4-c9854e454bbf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '3775'
 ht-degree: 0%
@@ -116,11 +116,11 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **SMTP SSL ingeschakeld:** Als deze optie is geselecteerd, wordt SSL ingeschakeld via SMTP.
 
-**De originele e-mailtekst opnemen als bijlage:** Wanneer u een e-mail naar de formulierserver verzendt, wordt standaard de oorspronkelijke tekst van het bericht in de hoofdtekst van het bericht opgenomen. Als u de tekst in plaats daarvan als bijlage wilt opnemen, selecteert u deze optie.
+**De originele e-mailtekst opnemen als bijlage:** Wanneer u een e-mail naar de Forms Server verzendt, wordt standaard de oorspronkelijke tekst van het bericht opgenomen in de hoofdtekst van het bericht. Als u de tekst in plaats daarvan als bijlage wilt opnemen, selecteert u deze optie.
 
 **Gebruik de originele onderwerpregel voor resultaate-mails:** Standaard gebruikt de Forms-server de waarden die zijn opgegeven in de instellingen voor E-mailonderwerp met succes en E-mailonderwerp met fouten als onderwerpregel bij het verzenden van e-mailberichten met resultaatmeldingen. Selecteer deze optie als u in plaats daarvan dezelfde onderwerpregel wilt gebruiken als de oorspronkelijke e-mail die naar de server is verzonden.
 
-**E-mailonderwerp geslaagd:** Nadat u een e-mail naar een e-maileindpunt hebt verzonden om een proces te starten of voort te zetten, ontvangt u een e-mailbericht van de server voor AEM formulieren. Als uw e-mail succesvol is, ontvangt u een succesbericht. Als uw e-mail mislukt, ontvangt u een foutbericht waarin u opgeeft waarom dit is mislukt. Met deze instelling kunt u de onderwerpregel van e-mailberichten opgeven die voor dit eindpunt worden verzonden.
+**E-mailonderwerp geslaagd:** Nadat u een e-mail naar een e-maileindpunt verzendt om een proces te beginnen of voort te zetten, ontvangt u een terugkeer e-mailbericht van de Server van AEM Forms. Als uw e-mail succesvol is, ontvangt u een succesbericht. Als uw e-mail mislukt, ontvangt u een foutbericht waarin u opgeeft waarom dit is mislukt. Met deze instelling kunt u de onderwerpregel van e-mailberichten opgeven die voor dit eindpunt worden verzonden.
 
 **Tekst voor e-mail met succes:** Laat u toe om de lichaamstekst van succes te specificeren e-mailberichten die voor dit eindpunt worden verzonden.
 
@@ -130,9 +130,9 @@ Als u wilt dat de formulierwerkstroom binnenkomende e-mailberichten van gebruike
 
 **Fout in e-mailhoofdtekst:** Laat u toe om de eerste lijn in de lichaamstekst van mislukkings e-mailberichten te specificeren die voor dit eindpunt worden verzonden.
 
-**E-mailoverzichtsgegevens:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de formulierserver hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
+**E-mailoverzichtsgegevens:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de Forms Server hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
 
-**Valideer Inbox alvorens dit eindpunt tot stand te brengen/bij te werken:** Als deze optie is geselecteerd, controleert de formulierserver of de SMTP/POP3-instellingen correct zijn voordat het eindpunt wordt gemaakt. Wanneer u op Toevoegen klikt, wordt een bericht weergegeven waarin wordt aangegeven of de Postvak IN-account geldig is. Als deze optie niet is geselecteerd, maakt de AEM-formulierserver het eindpunt zonder het postvak in te vullen.
+**Valideer Inbox alvorens dit eindpunt tot stand te brengen/bij te werken:** Wanneer deze optie wordt geselecteerd, controleert de Server van Forms of uw montages SMTP/POP3 correct zijn alvorens het eindpunt te creëren. Wanneer u op Toevoegen klikt, wordt een bericht weergegeven waarin wordt aangegeven of de Postvak IN-account geldig is. Als deze optie niet wordt geselecteerd, leidt de Server van AEM Forms tot het eindpunt zonder inbox te bevestigen.
 
 **Codering tekenset:** De coderingsindeling die voor het e-mailbericht moet worden gebruikt. Het gebrek is UTF-8, die de meeste gebruikers buiten Japan zullen gebruiken. Gebruikers in een Japanse omgeving kunnen kiezen voor ISO2022-JP.
 
@@ -206,11 +206,11 @@ Bijvoorbeeld, wordt een e-maileindpunt gecreeerd voor de dienst die één enkel 
 
 De standaardwaarde is asynchroon.
 
-**De originele e-mailtekst opnemen als bijlage:** Wanneer u een e-mail naar de formulierserver verzendt, wordt standaard de oorspronkelijke tekst van het bericht in de hoofdtekst van het bericht opgenomen. Als u de tekst in plaats daarvan als bijlage wilt opnemen, selecteert u deze optie.
+**De originele e-mailtekst opnemen als bijlage:** Wanneer u een e-mail naar de Forms Server verzendt, wordt standaard de oorspronkelijke tekst van het bericht opgenomen in de hoofdtekst van het bericht. Als u de tekst in plaats daarvan als bijlage wilt opnemen, selecteert u deze optie.
 
 **Gebruik de originele onderwerpregel voor resultaate-mails:** Standaard gebruikt de Forms-server de waarden die zijn opgegeven in de instellingen voor E-mailonderwerp met succes en E-mailonderwerp met fouten als onderwerpregel bij het verzenden van e-mailberichten met resultaatmeldingen. Selecteer deze optie als u in plaats daarvan dezelfde onderwerpregel wilt gebruiken als de oorspronkelijke e-mail die naar de server is verzonden.
 
-**E-mailonderwerp geslaagd:** Nadat u een e-mail naar een e-maileindpunt hebt verzonden om een proces te starten of voort te zetten, ontvangt u een e-mailbericht van de server voor AEM formulieren. Als uw e-mail succesvol is, ontvangt u een succesbericht. Als uw e-mail mislukt, ontvangt u een foutbericht waarin u opgeeft waarom dit is mislukt. Met deze instelling kunt u de onderwerpregel van e-mailberichten opgeven die voor dit eindpunt worden verzonden.
+**E-mailonderwerp geslaagd:** Nadat u een e-mail naar een e-maileindpunt verzendt om een proces te beginnen of voort te zetten, ontvangt u een terugkeer e-mailbericht van de Server van AEM Forms. Als uw e-mail succesvol is, ontvangt u een succesbericht. Als uw e-mail mislukt, ontvangt u een foutbericht waarin u opgeeft waarom dit is mislukt. Met deze instelling kunt u de onderwerpregel van e-mailberichten opgeven die voor dit eindpunt worden verzonden.
 
 **Tekst voor e-mail met succes:** Laat u toe om de lichaamstekst van succes te specificeren e-mailberichten die voor dit eindpunt worden verzonden.
 
@@ -220,9 +220,9 @@ De standaardwaarde is asynchroon.
 
 **Fout in e-mailhoofdtekst:** Laat u toe om de eerste lijn in de lichaamstekst van mislukkings e-mailberichten te specificeren die voor dit eindpunt worden verzonden.
 
-**E-mailoverzichtsgegevens:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de formulierserver hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
+**E-mailoverzichtsgegevens:** Elk succes- of foutbericht bevat een sectie met de originele e-mailtekst die u naar de Forms Server hebt verzonden. Deze instelling geeft de tekst aan die boven die sectie wordt weergegeven.
 
-**Valideer Inbox alvorens dit eindpunt tot stand te brengen/bij te werken:** Als deze optie is geselecteerd, controleert de formulierserver of de SMTP/POP3-instellingen correct zijn voordat het eindpunt wordt gemaakt. Wanneer u op Toevoegen klikt, wordt een bericht weergegeven waarin wordt aangegeven of de Postvak IN-account geldig is. Als deze optie niet is geselecteerd, maakt de AEM-formulierserver het eindpunt zonder het postvak in te vullen.
+**Valideer Inbox alvorens dit eindpunt tot stand te brengen/bij te werken:** Wanneer deze optie wordt geselecteerd, controleert de Server van Forms of uw montages SMTP/POP3 correct zijn alvorens het eindpunt te creëren. Wanneer u op Toevoegen klikt, wordt een bericht weergegeven waarin wordt aangegeven of de Postvak IN-account geldig is. Als deze optie niet wordt geselecteerd, leidt de Server van AEM Forms tot het eindpunt zonder inbox te bevestigen.
 
 **Bedrijfsnaam:** Deze instelling is verplicht. Een lijst van verrichtingen die aan het e-maileindpunt kunnen worden toegewezen. De bewerking die u hier selecteert, bepaalt welke velden worden weergegeven in de secties Toewijzingen invoerparameter en Toewijzingen uitvoerparameter.
 

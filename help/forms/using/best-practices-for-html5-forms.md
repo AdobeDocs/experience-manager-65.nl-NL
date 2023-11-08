@@ -12,7 +12,7 @@ discoiquuid: db22f775-fab1-4a78-b334-a9c4fa613e43
 docset: aem65
 feature: Mobile Forms
 exl-id: 62ff6306-9989-43b0-abaf-b0a811f0a6a4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1416'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Daarom is het verkleinen van de omvang van de externe middelen en het gebruik va
 
 * Gebruiken [gecomprimeerde afbeeldingen](/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md). Het vermindert de netwerkactiviteit en de hoeveelheid geheugen die nodig is om een formulier te genereren. Daarom neemt de laadtijd van het formulier aanzienlijk af.
 * Gebruik de minify optie in AEM Configuration Manager (Day CQ HTML Library Manager) om JavaScript- en CSS-bestanden te comprimeren. Zie voor meer informatie [OSGi-configuratie-instellingen](/help/sites-deploying/osgi-configuration-settings.md).
-* Webcompressie inschakelen. Hiermee verkleint u de grootte van de aanvragen en reacties die afkomstig zijn van een formulier. Zie voor meer informatie [Prestaties van AEM formulierserver](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
+* Webcompressie inschakelen. Hiermee verkleint u de grootte van de aanvragen en reacties die afkomstig zijn van een formulier. Zie voor meer informatie [Prestaties afstemmen op AEM Forms Server](https://helpx.adobe.com/aem-forms/6-3/performance-tuning-aem-forms.html).
 
 ## Houd de interesse levend, toon alleen de vereiste velden  {#keep-the-interest-alive-show-only-required-fields}
 

@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release AEM Inhoud en Handel 2020
 description: Opmerkingen bij de release Adobe Experience Manager Content and Commerce 2020.
 exl-id: 440ecd8e-55dc-4606-8678-c65cda1d2b3a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1353'
+source-wordcount: '1352'
 ht-degree: 8%
 
 ---
@@ -143,7 +143,7 @@ Dit is de eerste versie van CIF Core Components die op Adobe Experience Manager 
 
 * Categoriefiltering toegevoegd als facet, zodat kopers op basis van categorie kunnen filteren.
 
-* Toegevoegde de dienstgebruikerstoewijzing als deel van veiligheidsvereiste om toegang tot /conf via de dienstgebruikers te verzekeren en niet door ACLs direct te manipuleren. CIF Core Components moet nu een de dienstgebruiker gebruiken om tot configuraties toegang te hebben.
+* Toegevoegde de dienstgebruikerstoewijzing als deel van veiligheidsvereiste om toegang tot /conf via de dienstgebruikers te verzekeren en niet door ACLs direct te manipuleren. CIF de Componenten van de Kern moeten een de dienstgebruiker gebruiken om tot configuraties toegang te hebben.
 
 ### Verbeterde functies {#what-is-improved-june}
 

@@ -3,9 +3,9 @@ title: Configureer Rich Text Editor om toegankelijke webpagina's en sites te mak
 description: Configureer Rich Text Editor om toegankelijke webpagina's en sites te maken.
 contentOwner: AG
 exl-id: d2451710-5abf-4816-8052-57d8f04a228e
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '932'
+source-wordcount: '933'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Adobe Experience Manager ondersteunt de meeste standaardtoegankelijkheidsfunctie
 
 Wanneer het ontwerpen van Web-pagina&#39;s en het toevoegen van inhoud aan de pagina&#39;s, kunnen de inhoudsontwikkelaars en de auteurs eigenschappen van RTE gebruiken om op toegankelijkheid betrekking hebbende informatie te verstrekken. Voeg bijvoorbeeld structuurinformatie toe via koppen en alinea-elementen.
 
-Om deze eigenschappen te vormen en aan te passen, [vorm de stop RTE](#configure-the-plugin-features) voor de component. De `paraformat` Met de plug-in kunt u extra semantische elementen op blokniveau toevoegen, waaronder het uitbreiden van het aantal kopniveaus dat boven de basisniveaus wordt ondersteund `H1`, `H2`, en `H3` standaard opgegeven.
+Deze functies configureren en aanpassen [vorm de stop RTE](#configure-the-plugin-features) voor de component. Bijvoorbeeld de `paraformat` Met de plug-in kunt u extra semantische elementen op blokniveau toevoegen, waaronder het uitbreiden van het aantal kopniveaus dat boven de basisniveaus wordt ondersteund `H1`, `H2`, en `H3` standaard opgegeven.
 
 RTE is beschikbaar in een verscheidenheid van componenten voor aanraking-toegelaten gebruikersinterface en het Klassieke gebruikersinterface. Nochtans, is de primaire component om RTE te gebruiken **Tekst** component die voor beide interfaces beschikbaar is. In de volgende afbeeldingen ziet u de RTE met een reeks ingeschakelde plug-ins, waaronder `paraformat`:
 
@@ -26,7 +26,7 @@ RTE is beschikbaar in een verscheidenheid van componenten voor aanraking-toegela
 
 ![Dialoogvenster voor bewerken (RTE) van de tekstcomponent in de klassieke UI.](assets/chlimage_1-207.png)
 
-*Afbeelding: De component Text in de klassieke gebruikersinterface.*
+*Figuur: De component van de Tekst in het Klassieke gebruikersinterface.*
 
 Voor de verschillen tussen de eigenschappen van RTE beschikbaar in de diverse interfaces, zie [Plug-ins en bijbehorende functies](/help/sites-administering/rich-text-editor.md#aboutplugins).
 
@@ -53,7 +53,7 @@ Nieuwe semantische blokformaten kunnen voor selectie beschikbaar worden gesteld 
 1. De paragraafformaten zijn dan beschikbaar aan de inhoudauteur van de selectiegebieden in RTE. Zij kunnen worden betreden:
 
    * Het pictogram voor het schuiven van alinea&#39;s gebruiken in de interface voor aanraakbediening.
-   * Met de **Indeling** veld (pop-upkiezer) in de klassieke gebruikersinterface.
+   * Met de **Indeling** veld (pop-upkiezer) in de klassieke interface.
 
 Met de structuurelementen beschikbaar in RTE via de opties van het paragraafformaat, AEM verstrekt een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan moeten ze de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen. Zo zorgt u voor meer opmaak, betere opties voor gebruikers die met hun eigen stijlpagina&#39;s en correct gestructureerde inhoud bladeren.
 
@@ -73,7 +73,7 @@ De volgende procedure laat zien hoe u de **Tabel** component met een **Bijschrif
 
 ### Voorbeeld: het bijschrift toevoegen aan het dialoogvenster Tabeleigenschappen {#example-adding-the-caption-to-the-table-properties-dialog}
 
-In de constructor van de `TablePropertiesDialog`voegt u een extra tekstinvoerveld toe dat wordt gebruikt voor het bewerken van het bijschrift. Let op: `itemId` moet worden ingesteld op `caption` (d.w.z. de naam van het DOM-kenmerk) om de inhoud ervan automatisch af te handelen.
+In de constructor van de `TablePropertiesDialog`voegt u een extra tekstinvoerveld toe dat wordt gebruikt voor het bewerken van het bijschrift. Let op: `itemId` moet worden ingesteld op `caption` (de naam van het DOM-kenmerk) om de inhoud ervan automatisch af te handelen.
 
 In **Tabel**, stelt u het kenmerk expliciet in op het DOM-element of verwijdert u dit. De waarde wordt doorgegeven door het dialoogvenster in het dialoogvenster `config` object. DOM-kenmerken moeten worden ingesteld/verwijderd met de corresponderende `CQ.form.rte.Common` methoden ( `com` is een sneltoets voor `CQ.form.rte.Common`) om gemeenschappelijke valkuilen bij browserimplementaties te voorkomen.
 
@@ -190,7 +190,7 @@ RTE kan `strong` en `em` -tags in plaats van `b` en `i`. Voeg de volgende knoop 
 >
 >Als u bewerkingsmogelijkheden voor meer aanvullende elementen en kenmerken wilt toevoegen, moet u ervoor zorgen dat:
 >
->* De `itemId` eigenschap voor elk overeenkomend veld wordt ingesteld op de naam van het desbetreffende DOM-kenmerk (`TablePropertiesDialog`).
+>* De `itemId` eigenschap voor elk overeenkomstig veld wordt ingesteld op de naam van het desbetreffende DOM-kenmerk (`TablePropertiesDialog`).
 >* Het kenmerk wordt expliciet ingesteld en/of verwijderd op het DOM-element (`Table`).
 
 >[!MORELIKETHIS]

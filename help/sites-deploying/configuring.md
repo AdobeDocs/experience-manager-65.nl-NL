@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 3777a1ba-cc4e-41b9-9098-236f8141925f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2116'
+source-wordcount: '2113'
 ht-degree: 0%
 
 ---
@@ -54,7 +54,7 @@ Afhankelijk van de specifieke configuratie, kunnen deze veranderingen worden aan
 
 >[!NOTE]
 >
->Het configureren van AEM is eenvoudig. Houd er echter rekening mee dat bepaalde wijzigingen grote gevolgen kunnen hebben voor de toepassingen. Om deze reden, verzeker u de noodzakelijke ervaring en de kennis alvorens u begint AEM te vormen, en slechts de veranderingen aan te brengen die u weet worden vereist. Alle wijzigingen die via de OSGi-console zijn aangebracht, zijn **onmiddellijk** toegepast op het actieve systeem (opnieuw opstarten is niet vereist).
+>Het configureren van AEM is eenvoudig. Bepaalde wijzigingen kunnen echter grote gevolgen hebben voor de toepassingen. Om deze reden, verzeker u de noodzakelijke ervaring en de kennis alvorens u begint AEM te vormen, en slechts de veranderingen aan te brengen die u weet worden vereist. Alle wijzigingen die via de OSGi-console zijn aangebracht, zijn **onmiddellijk** toegepast op het actieve systeem (opnieuw opstarten is niet vereist).
 
 ## Primaire overwegingen met betrekking tot configuratie {#primary-configuration-considerations}
 

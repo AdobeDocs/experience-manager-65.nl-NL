@@ -11,7 +11,7 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
 exl-id: 703b6798-d40f-4769-96fc-e440090ca983
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 0%
@@ -75,11 +75,11 @@ In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolde
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -93,7 +93,7 @@ In het volgende Java-codevoorbeeld wordt een map gemaakt met de naam *FormsFolde
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -181,11 +181,11 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de r
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -199,7 +199,7 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *loan.xdp* in de r
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -309,11 +309,11 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Appli
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -327,7 +327,7 @@ In het volgende Java-codevoorbeeld worden bronnen weergegeven die zich in `Appli
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -408,11 +408,11 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *Lening.xdp* uit d
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -426,7 +426,7 @@ In het volgende Java-codevoorbeeld wordt een bron met de naam *Lening.xdp* uit d
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -509,11 +509,11 @@ De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplicati
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -527,7 +527,7 @@ De volgende Java-codevoorbeelden worden bijgewerkt `/Applications/FormsApplicati
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -621,11 +621,11 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -639,7 +639,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -745,11 +745,11 @@ In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -763,7 +763,7 @@ In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -886,11 +886,11 @@ In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/Form
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -904,7 +904,7 @@ In het volgende Java-codevoorbeeld wordt /Applications/FormsApplication/1.0/Form
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -997,11 +997,11 @@ Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (AC
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -1015,7 +1015,7 @@ Het volgende codevoorbeeld van Java leest en leidt tot toegangsbeheerlijsten (AC
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following
@@ -1112,11 +1112,11 @@ In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/F
      * 2. adobe-livecycle-client.jar
      * 3. adobe-usermanager-client.jar
      * 4. adobe-utilities.jar
-     * 5. jboss-client.jar (use a different JAR file if the forms server is not deployed
+     * 5. jboss-client.jar (use a different JAR file if the Forms Server is not deployed
      * on JBoss)
      * 6. commons-code-1.3.jar
-     * 7. jacorb.jar (use a different JAR file if the forms server is not deployed on JBoss)
-     * 8. jnp-client.jar (use a different JAR file if the forms server is not deployed on JBoss)
+     * 7. jacorb.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
+     * 8. jnp-client.jar (use a different JAR file if the Forms Server is not deployed on JBoss)
      *
      * The JBoss files must be kept in the jboss\client folder. You can copy the client folder to
      * your local development environment and then include the 3 JBoss JAR files in your class path
@@ -1130,7 +1130,7 @@ In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/F
      * The jboss-client.jar file is in the following path:
      * <install directory>/jboss/bin/client
      *
-     * If you want to invoke a remote forms server instance and there is a
+     * If you want to invoke a remote Forms Server instance and there is a
      * firewall between the client application and the server, then it is
      * recommended that you use the SOAP mode. When using the SOAP mode,
      * you have to include additional JAR files in the following

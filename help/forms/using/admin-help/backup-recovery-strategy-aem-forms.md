@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 01ec6ebc-6d80-4417-9604-c8571aebb57e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1486'
 ht-degree: 0%
@@ -61,11 +61,11 @@ Om gegevensverlies te voorkomen, moeten de specifieke gegevens van de AEM formul
 
 Gebruik de volgende richtlijnen als u AEM formulieren in een andere omgeving moet herstellen vanwege de volgende wijzigingen:
 
-* Wijziging in het IP-adres, de hostnaam of de poort van de AEM formulierserver
+* Wijziging in het IP-adres, de hostnaam of de poort van de AEM Forms-server
 * Wijziging in stationsletters of mappad
 * Wijzigen in een andere databasehost, -poort of -naam
 
-Dergelijke herstelscenario&#39;s worden doorgaans veroorzaakt door hardwarestoringen van de server die de toepassingsserver, databaseserver of formulierserver host. Naast de AEM formulieren-specifieke configuraties die in deze sectie worden beschreven, zou u ook de noodzakelijke veranderingen voor andere delen van de plaatsing van AEM vormen zoals ladingsbalancers en firewalls moeten aanbrengen, als hostname of IP adres van een AEM vormenserver verandert.
+Dergelijke herstelscenario&#39;s worden doorgaans veroorzaakt door hardwarestoringen van de server die de toepassingsserver, databaseserver of Forms Server host. Naast de AEM vormen-specifieke configuraties die in deze sectie worden beschreven, zou u ook de noodzakelijke veranderingen voor andere delen van de AEM vormenplaatsing zoals ladingsbalancers en firewalls moeten aanbrengen, als hostname of IP adres van een Server van AEM Forms verandert.
 
 ### Wat niet kan worden gewijzigd {#what-cannot-be-changed}
 
@@ -73,7 +73,7 @@ Hoewel u de databaseserver en veel andere parameters kunt wijzigen, kunt u het s
 
 ### Opnieuw opstarten na herstel {#restarting-after-a-recovery}
 
-Ga als volgt te werk voordat u de formulierserver opnieuw start na een herstelbewerking:
+Ga als volgt te werk voordat u de Forms Server opnieuw start na een herstelbewerking:
 
 1. Start het systeem in de onderhoudsmodus.
 1. Ga als volgt te werk om ervoor te zorgen dat Form Manager wordt gesynchroniseerd met AEM formulieren in de onderhoudsmodus:
@@ -104,4 +104,4 @@ Gebruik de `LCSetGDS`in het `[*aem-forms root]*\sdk\misc\Foundation\SetGDSComman
 >
 >Deze omstandigheid is de enige waaronder u dit script moet gebruiken om de GDS-locatie te wijzigen. Als u de GDS-locatie wilt wijzigen terwijl AEM formulieren worden uitgevoerd, gebruikt u de beheerconsole. (Zie [Algemene instellingen voor AEM configureren](/help/forms/using/admin-help/configure-general-aem-forms-settings.md#configure-general-aem-forms-settings)*.) *
 
-Nadat u het GDS-pad hebt ingesteld, start u de formulierserver in de onderhoudsmodus en gebruikt u de beheerconsole om de resterende bestandsysteempaden voor het nieuwe knooppunt bij te werken. Nadat u hebt gecontroleerd of alle benodigde configuraties zijn bijgewerkt, start u AEM formulieren opnieuw en test u deze.
+Nadat u het GDS-pad hebt ingesteld, start u de Forms-server in de onderhoudsmodus en gebruikt u de beheerconsole om de resterende bestandsysteempaden voor het nieuwe knooppunt bij te werken. Nadat u hebt gecontroleerd of alle benodigde configuraties zijn bijgewerkt, start u AEM formulieren opnieuw en test u deze.

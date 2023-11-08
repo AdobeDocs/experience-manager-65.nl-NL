@@ -5,9 +5,9 @@ feature: Content Fragments,Assets HTTP API
 role: Developer
 exl-id: 0f9efb47-a8d1-46d9-b3ff-a6c0741ca138
 hide: true
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1959'
+source-wordcount: '1961'
 ht-degree: 1%
 
 ---
@@ -178,7 +178,7 @@ De reactie zal het pagineren informatie als deel van bevatten `properties` van d
 
 >[!NOTE]
 >
->Paginering wordt doorgaans toegepast op containerentiteiten (d.w.z. mappen of elementen met uitvoeringen), aangezien deze betrekking hebben op de onderliggende elementen van de aangezochte entiteit.
+>Pagina&#39;s worden doorgaans toegepast op containerentiteiten (dat wil zeggen mappen of elementen met uitvoeringen), omdat ze betrekking hebben op de onderliggende elementen van de aangezochte entiteit.
 
 #### Voorbeeld: Pagelen {#example-paging}
 
@@ -231,7 +231,7 @@ Inhoudsfragmenten:
 * Maak geen binaire gegevens beschikbaar.
 * volledig ingesloten in de JSON-uitvoer (binnen de `properties` eigenschap).
 
-* Wordt ook als atomisch beschouwd, d.w.z. de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment ten opzichte van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
+* Wordt ook als atomisch beschouwd, dat wil zeggen dat de elementen en variaties worden blootgesteld als onderdeel van de eigenschappen van het fragment in plaats van als koppelingen of onderliggende entiteiten. Op deze manier hebt u efficiënt toegang tot de lading van een fragment.
 
 #### Inhoudsmodellen en inhoudsfragmenten {#content-models-and-content-fragments}
 

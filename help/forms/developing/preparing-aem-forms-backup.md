@@ -11,7 +11,7 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 role: Developer
 exl-id: aeab003d-ba64-4760-9c56-44638501e9ff
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2519'
 ht-degree: 0%
@@ -24,15 +24,15 @@ ht-degree: 0%
 
 ## Over de service Back-up en herstel {#about-the-backup-and-restore-service}
 
-Met de service Back-up en Herstellen kunt u AEM Forms in *back-upmodus*, waardoor hot back-ups kunnen worden uitgevoerd. De service Back-up en herstel voert geen back-up van AEM Forms uit of herstelt uw systeem niet. In plaats daarvan wordt de server in een status gezet voor consistente en betrouwbare back-ups, terwijl de server verder kan worden uitgevoerd. U bent verantwoordelijk voor de acties om een back-up te maken van de Global Document Storage (GDS) en de database die is verbonden met de formulierserver. De GDS is een map waarin bestanden worden opgeslagen die worden gebruikt in een langlevend proces.
+Met de service Back-up en Herstellen kunt u AEM Forms in *back-upmodus*, waardoor hot back-ups kunnen worden uitgevoerd. De service Back-up en herstel voert geen back-up van AEM Forms uit of herstelt uw systeem niet. In plaats daarvan wordt de server in een status gezet voor consistente en betrouwbare back-ups, terwijl de server verder kan worden uitgevoerd. U bent verantwoordelijk voor de acties om een back-up te maken van de Global Document Storage (GDS) en de database die is verbonden met de Forms Server. De GDS is een map waarin bestanden worden opgeslagen die worden gebruikt in een langlevend proces.
 
-De back-upmodus is een toestand die de server invoert zodat bestanden in de GDS niet worden gewist terwijl een back-upprocedure plaatsvindt. In plaats daarvan worden submappen gemaakt onder de GDS-map om een record bij te houden van bestanden die moeten worden gewist nadat de back-upmodus is beëindigd. Een bestand is bedoeld om het systeem opnieuw te laten opstarten en kan dagen, of zelfs jaren, beslaan. Deze bestanden vormen een essentieel onderdeel van de algemene status van de formulierserver en kunnen PDF-bestanden, beleidsregels of formuliersjablonen bevatten. Als een van deze bestanden verloren gaat of beschadigd raakt, kunnen de processen op de formulierserver instabiel worden en kunnen er gegevens verloren gaan.
+De back-upmodus is een toestand die de server invoert zodat bestanden in de GDS niet worden gewist terwijl een back-upprocedure plaatsvindt. In plaats daarvan worden submappen gemaakt onder de GDS-map om een record bij te houden van bestanden die moeten worden gewist nadat de back-upmodus is beëindigd. Een bestand is bedoeld om het systeem opnieuw te laten opstarten en kan dagen, of zelfs jaren, beslaan. Deze bestanden vormen een essentieel onderdeel van de algemene status van de Forms Server en kunnen PDF-bestanden, beleidsregels of formuliersjablonen bevatten. Als een van deze bestanden verloren gaat of beschadigd raakt, kunnen de processen op de Forms-server instabiel worden en kunnen gegevens verloren gaan.
 
 U kunt ervoor kiezen back-ups van momentopnamen uit te voeren, waarbij u doorgaans de back-upmodus gedurende een periode start en vervolgens de back-upmodus verlaat nadat u de back-upactiviteiten hebt voltooid. Het verlaten van reservewijze wordt vereist zodat de dossiers van GDS kunnen worden gezuiverd om ervoor te zorgen dat het niet onnodig groot groeit. U kunt of reservewijze uitdrukkelijk verlaten of op de tijd wachten om op een reservewijzesessie te verlopen.
 
 U kunt de server ook in de modus voor onbeperkte back-up laten. Dit is standaard het geval bij back-upstrategieën voor rolback-ups of continue systeemdekking. Rolling backup mode wijst erop dat het systeem altijd in reservewijze is, met een nieuwe reservewijzesessie die wordt geïnitieerd zodra de vorige zitting wordt vrijgegeven. In de modus voor continue back-up wordt een bestand na twee back-upmodussessies gewist en wordt er niet langer naar verwezen.
 
-Met de service Back-up en herstel kunt u bestaande of nieuwe toepassingen uitbreiden die u maakt om back-ups te maken van de GDS of database die is verbonden met de formulierserver.
+Met de service Back-up en herstel kunt u bestaande of nieuwe toepassingen uitbreiden die u maakt voor het maken van back-ups van de GDS of database die op de Forms-server is aangesloten.
 
 >[!NOTE]
 >
@@ -51,15 +51,15 @@ U kunt deze taken uitvoeren met behulp van de service Back-up en herstel:
 >
 >Ga voor meer informatie over de service Back-up en herstel naar [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
-## Back-upmodus invoeren op de formulierserver {#entering-backup-mode-on-the-forms-server}
+## Back-upmodus activeren op de Forms-server {#entering-backup-mode-on-the-forms-server}
 
-U gaat reservewijze in om voor hete steunen van een vormenserver toe te staan. Wanneer u de back-upmodus activeert, geeft u de volgende informatie op op basis van de back-upprocedures van uw organisatie:
+U gaat reservewijze in om voor hete steunen van een Server van Forms toe te staan. Wanneer u de back-upmodus activeert, geeft u de volgende informatie op op basis van de back-upprocedures van uw organisatie:
 
 * Een uniek label om de back-upmodussessie te identificeren die nuttig kan zijn voor uw back-upprocessen.
 * De tijd voor de reserveprocedure om te voltooien.
 * Een vlag om erop te wijzen of om op ononderbroken reservewijze te zijn, die slechts nuttig is als u het rollen steunen uitvoert.
 
-Voordat u toepassingen gaat schrijven om in de back-upmodus te gaan, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de formulierserver in de back-upmodus hebt geplaatst. Ga voor meer informatie over wat u moet overwegen wanneer u back-ups maakt voor AEM Forms naar [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).
+Voordat u toepassingen gaat schrijven om in de back-upmodus te gaan, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de Forms-server in de back-upmodus hebt gezet. Ga voor meer informatie over wat u moet overwegen wanneer u back-ups maakt voor AEM Forms naar [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
 >[!NOTE]
 >
@@ -88,7 +88,7 @@ Als u de back-upmodus programmatisch wilt verlaten, maakt u een BackupService-cl
 
 **Beslissen op een uniek etiket, bepalen de hoeveelheid tijd om de steun uit te voeren, en beslissen of om op ononderbroken reservewijze te zijn**
 
-Voordat u de back-upmodus activeert, moet u een uniek label kiezen, bepalen hoeveel tijd u wilt toewijzen om de back-up uit te voeren en bepalen of de formulierserver in de back-upmodus moet blijven. Deze overwegingen zijn belangrijk om met de reserveprocedures te integreren die door uw organisatie worden gevestigd. (Zie [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).)
+Voordat u de back-upmodus activeert, moet u een uniek label kiezen, bepalen hoeveel tijd u wilt toewijzen om de back-up uit te voeren en bepalen of u de Forms-server in de back-upmodus wilt laten staan. Deze overwegingen zijn belangrijk om met de reserveprocedures te integreren die door uw organisatie worden gevestigd. (Zie [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **Back-upmodus openen**
 
@@ -100,7 +100,7 @@ Nadat u de back-upmodus hebt geactiveerd, kunt u informatie over de sessie ophal
 
 **Maak een back-up van de GDS en de database**
 
-Nadat u de back-upmodus hebt geactiveerd, kunt u een back-up maken van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. Deze stap is specifiek voor uw organisatie, aangezien u deze stap manueel kunt uitvoeren of u andere hulpmiddelen kunt in werking stellen om de reserveprocedure uit te voeren.
+Nadat u met succes de reservewijze ingaat, kunt u een steun van de Globale Opslag van het Document (GDS) en het gegevensbestand uitvoeren dat de Server van Forms met wordt verbonden. Deze stap is specifiek voor uw organisatie, aangezien u deze stap manueel kunt uitvoeren of u andere hulpmiddelen kunt in werking stellen om de reserveprocedure uit te voeren.
 
 ### Back-upmodus starten met de Java API {#enter-backup-mode-using-the-java-api}
 
@@ -125,7 +125,7 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
 
 1. Beslissen op een uniek etiket, bepalen de hoeveelheid tijd om de steun uit te voeren, en beslissen of om op ononderbroken reservewijze te zijn
 
-   Bepaal de hoeveelheid tijd die u wilt toewijzen om de back-up uit te voeren en bepaal of de formulierserver in de continue back-upmodus moet blijven.
+   Beslis op een uniek etiket, bepaal de hoeveelheid tijd die u wilt toewijzen om de steun uit te voeren, en besluit of u de Server van Forms op ononderbroken reservewijze wilt blijven.
 
 1. Back-upmodus openen
 
@@ -143,7 +143,7 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
 
 1. Maak een back-up van de GDS en de database
 
-   Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
+   Maak een back-up van de Global Document Storage (GDS) en de database waarmee uw Forms Server is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
 
 ### Back-upmodus starten met de webservice-API {#enter-backup-mode-using-the-web-service-api}
 
@@ -160,7 +160,7 @@ Voer de back-upmodus in met behulp van de webservice van de API voor back-up en 
 
 1. Beslissen op een uniek etiket, bepalen de hoeveelheid tijd om de steun uit te voeren, en beslissen of om op ononderbroken reservewijze te zijn
 
-   Bepaal de hoeveelheid tijd die u wilt toewijzen om de back-up uit te voeren en bepaal of de formulierserver in de continue back-upmodus moet blijven.
+   Beslis op een uniek etiket, bepaal de hoeveelheid tijd die u wilt toewijzen om de steun uit te voeren, en besluit of u de Server van Forms op ononderbroken reservewijze wilt blijven.
 
 1. Back-upmodus openen
 
@@ -178,11 +178,11 @@ Voer de back-upmodus in met behulp van de webservice van de API voor back-up en 
 
 1. Maak een back-up van de GDS en de database
 
-   Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
+   Maak een back-up van de Global Document Storage (GDS) en de database waarmee uw Forms Server is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
 
-## Back-upmodus op de formulierserver laten staan {#leaving-backup-mode-on-the-forms-server}
+## Back-upmodus op de Forms-server laten staan {#leaving-backup-mode-on-the-forms-server}
 
-U verlaat de back-upmodus, zodat de formulierserver bestanden hervat van de GDS (Global Document Storage) op de formulierserver.
+U verlaat de back-upmodus, zodat de Forms-server de bestanden hervat van de GDS (Global Document Storage) op de Forms-server.
 
 Voordat u toepassingen schrijft om in de modus Verlaten te gaan, is het raadzaam de back-upprocedures te begrijpen die bij AEM Forms worden gebruikt. Ga voor meer informatie over wat u moet overwegen wanneer u back-ups maakt voor AEM Forms naar [administratie Help](https://www.adobe.com/go/learn_aemforms_admin_63).
 
@@ -197,7 +197,7 @@ Voer de volgende stappen uit om de back-upmodus te verlaten:
 1. Inclusief projectbestanden.
 1. Maak een BackupService-clientobject.
 1. Laat de back-upmodus staan.
-1. (Optioneel) Haal informatie op over de back-upmodussessie die op de formulierserver werd uitgevoerd.
+1. (Optioneel) Haal informatie op over de back-upmodussessie die op de Forms-server werd uitgevoerd.
 
 **Projectbestanden opnemen**
 

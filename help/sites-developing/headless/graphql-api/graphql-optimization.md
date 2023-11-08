@@ -2,9 +2,9 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1966'
+source-wordcount: '1964'
 ht-degree: 0%
 
 ---
@@ -177,7 +177,7 @@ Zie:
 
 De reactietijd van complexe vragen, met grote resultaatreeksen, kan worden verbeterd door reacties in brokken te segmenteren gebruikend paginering, een norm van GraphQL.
 
-GraphQL in AEM biedt ondersteuning voor twee typen paginering:
+GraphQL in AEM ondersteunt twee typen paginering:
 
 * [paginering op basis van limiet/verschuiving](/help/sites-developing/headless/graphql-api/graphql-api-content-fragments.md#list-offset-limit)
 Dit wordt gebruikt voor lijstvragen; deze eindigen met `List`; bijvoorbeeld `articleList`.

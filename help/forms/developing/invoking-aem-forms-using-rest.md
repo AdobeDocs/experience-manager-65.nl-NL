@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 991fbc56-f144-4ae6-b010-8d02f780d347
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2505'
+source-wordcount: '2503'
 ht-degree: 0%
 
 ---
@@ -117,9 +117,9 @@ Als de taak is verwijderd, retourneert deze URL een leeg bericht.
 
 ## Foutmelding {#error-reporting}
 
-Als een synchrone of asynchrone aanroepingsaanvraag niet kan worden voltooid wegens een uitzondering die op de server wordt geworpen, wordt de uitzondering gerapporteerd als deel van het HTTP- antwoordbericht. Als de oproepings-URL (of de `async_result` De URL (in het geval van een asynchrone aanroep) heeft geen .xml achtervoegsel, de REST-provider retourneert de HTTP-code `500 Internal Server Error` gevolgd door een uitzonderingsbericht.
+Als een synchrone of asynchrone aanroepingsaanvraag niet kan worden voltooid wegens een uitzondering die op de server wordt geworpen, wordt de uitzondering gerapporteerd als deel van het HTTP- antwoordbericht. Als de oproepings-URL (of de `async_result` URL (als er een asynchrone aanroeping) is heeft geen .xml achtervoegsel, keert de REST Provider de code van HTTP terug `500 Internal Server Error` gevolgd door een uitzonderingsbericht.
 
-Als de oproepings-URL (of de `async_result` De URL (in het geval van een asynchrone aanroep) heeft het .xml-achtervoegsel, de REST-provider retourneert de HTTP-code `200 OK`gevolgd door een XML-document waarin de uitzondering in de volgende indeling wordt beschreven.
+Als de oproepings-URL (of de `async_result` URL (als er een asynchrone aanroeping) heeft .xml achtervoegsel, keert de REST Leverancier de code van HTTP terug `200 OK`gevolgd door een XML-document waarin de uitzondering in de volgende indeling wordt beschreven.
 
 ```xml
  <exception>
@@ -143,7 +143,7 @@ De `DSCError` element is optioneel en alleen aanwezig als de uitzondering een in
 
 ## Beveiliging en verificatie {#security-and-authentication}
 
-Om REST-aanroepen te voorzien van een beveiligd transport, kan een beheerder van AEM formulieren het HTTPS-protocol inschakelen op de J2EE-toepassingsserver die als host fungeert voor AEM Forms. Deze configuratie is specifiek voor de J2EE-toepassingsserver; het maakt geen deel uit van de configuratie van de formulierserver.
+Om REST-aanroepen te voorzien van een beveiligd transport, kan een beheerder van AEM formulieren het HTTPS-protocol inschakelen op de J2EE-toepassingsserver die als host fungeert voor AEM Forms. Deze configuratie is specifiek voor de J2EE-toepassingsserver; het maakt geen deel uit van de Forms Server-configuratie.
 
 >[!NOTE]
 >

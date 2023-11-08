@@ -1,18 +1,14 @@
 ---
 title: Correspondentie maken
-seo-title: Create Correspondence
 description: Nadat u een lettertypesjabloon hebt gemaakt, kunt u dit gebruiken om correspondentie te maken in AEM Forms door gegevens, inhoud en bijlagen te beheren.
-seo-description: After you have created a letter template, you can use it to create correspondence in AEM Forms by managing data, content, and attachments.
-uuid: 48cf2b26-c9b4-4127-9ea0-1b36addbff60
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: correspondence-management
-discoiquuid: 87742cb2-357b-421f-b79d-e355887ddec0
 docset: aem65
 feature: Correspondence Management
 exl-id: da966787-a3b9-420f-8b7c-f00d05c61d43
-source-git-commit: 1807919078996b1cf1cbd1f2d90c3b14cb660e2c
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3811'
+source-wordcount: '3807'
 ht-degree: 0%
 
 ---
@@ -265,7 +261,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    Voor meer informatie, zie de Instantie van het Ontwerp onder het Opslaan van concepten en het voorleggen van brievenexemplaren.
 
-   U kunt de brief ook opslaan als concept om de brief later te wijzigen.
+   U kunt de brief als ontwerp ook bewaren om de brief later te veranderen.
 
    Nadat u de vereiste wijzigingen hebt aangebracht, kunt u de letter verzenden vanuit de HTML5-voorvertoning of nogmaals op Voorvertoning tikken om de afgevlakte PDF-uitvoer te bekijken.
 

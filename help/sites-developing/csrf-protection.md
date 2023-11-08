@@ -1,18 +1,14 @@
 ---
 title: Het CSRF-beschermingskader
-seo-title: The CSRF Protection Framework
 description: Het framework maakt gebruik van tokens om te garanderen dat het verzoek van de klant legitiem is
-seo-description: The framework makes use of tokens to guarantee that the client request is legitimate
-uuid: 7cb222ba-fc7a-46ee-8b49-a5f39a53580b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
-discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 exl-id: e6b0f8f7-54b0-4dd6-86ad-5516954c6d90
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '253'
+source-wordcount: '251'
 ht-degree: 0%
 
 ---
@@ -35,7 +31,7 @@ Elke component die afhankelijk is van de component `granite.jquery` de afhankeli
 
 ### De crypto-sleutel repliceren {#replicating-crypto-keys}
 
-Om gebruik van de tokens te maken, moet u het binaire getal HMAC aan alle instanties in uw plaatsing herhalen. Zie [Replicatie van de HMAC-sleutel](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) voor meer informatie .
+Om de tokens te gebruiken, moet u het binaire getal HMAC aan alle instanties in uw plaatsing herhalen. Zie [Replicatie van de HMAC-sleutel](/help/sites-administering/encapsulated-token.md#replicating-the-hmac-key) voor meer informatie .
 
 >[!NOTE]
 >

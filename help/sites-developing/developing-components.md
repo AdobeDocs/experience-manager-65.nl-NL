@@ -12,9 +12,9 @@ discoiquuid: 8cdb6db4-adaa-4eda-af7d-310a0b44b80b
 docset: aem65
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 exl-id: 573cdc36-e9c3-4803-9c4e-cebd0cf0a56f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3446'
+source-wordcount: '3447'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ newComponent (cq:Component)
             description
 ```
 
-Het aanpassen van een dialoog is gelijkaardig aan het ontwikkelen van een component aangezien de dialoog zelf een component is (d.w.z. prijsverhoging die door een componentenmanuscript samen met gedrag/stijl die door een cliëntbibliotheek wordt verstrekt) wordt teruggegeven.
+Het aanpassen van een dialoog is gelijkaardig aan het ontwikkelen van een component aangezien de dialoog zelf een component is (namelijk prijsverhoging die door een componentenmanuscript samen met gedrag/stijl door een cliëntbibliotheek wordt teruggegeven).
 
 Zie voor voorbeelden:
 
@@ -228,7 +228,7 @@ Zodra u uw middeltype hebt gecreeerd, kunt u uw gebied concretiseren door een ni
 
 Als u stijlen en gedrag voor uw component wilt definiëren, kunt u een speciale [clientbibliotheek](/help/sites-developing/clientlibs.md) die uw aangepaste CSS/LESS en JS definieert.
 
-Als u de clientbibliotheek alleen voor het dialoogvenster van de component wilt laden (de bibliotheek wordt dus niet voor een andere component geladen), moet u de eigenschap instellen `extraClientlibs` van het dialoogvenster naar de categorienaam van de clientbibliotheek die u hebt gemaakt. Dit is aan te raden als uw clientbibliotheek erg groot is en/of als uw veld specifiek is voor dat dialoogvenster en niet nodig is in andere dialoogvensters.
+Als u de clientbibliotheek alleen voor het dialoogvenster van de component wilt laden (dat wil zeggen dat deze niet voor een andere component wordt geladen), moet u de eigenschap instellen `extraClientlibs` van het dialoogvenster naar de categorienaam van de clientbibliotheek die u hebt gemaakt. Dit is aan te raden als uw clientbibliotheek erg groot is en/of als uw veld specifiek is voor dat dialoogvenster en niet nodig is in andere dialoogvensters.
 
 Als u de clientbibliotheek voor alle dialoogvensters wilt laden, stelt u de categorie-eigenschap van de clientbibliotheek in op `cq.authoring.dialog`. Dit is de categorienaam van de clientbibliotheek die standaard wordt opgenomen wanneer alle dialoogvensters worden weergegeven. U wilt dat doen als uw clientbibliotheek klein is en/of uw veld algemeen is en opnieuw kan worden gebruikt in andere dialoogvensters.
 
@@ -243,7 +243,7 @@ Zie voor een voorbeeld:
 Afhankelijk van uw vereisten kunt u:
 
 * Een bepaald veld voor een graniet-UI uitbreiden naar componentovererving ( `sling:resourceSuperType`)
-* Een bepaalde widget uitbreiden vanuit de onderliggende widgetbibliotheek (in het geval van een graniet-interface is dit de Coral-UI) door de API voor de widgetbibliotheek (JS/CSS-overerving) te volgen
+* Een bepaalde widget uitbreiden vanuit de onderliggende widgetbibliotheek (als er Granite UI is, is dit Coral UI), door de widgetbibliotheek-API (JS/CSS-overerving) te volgen
 
 #### Toegang tot dialoogvelden {#access-to-dialog-fields}
 

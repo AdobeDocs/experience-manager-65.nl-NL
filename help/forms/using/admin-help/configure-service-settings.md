@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '10692'
 ht-degree: 0%
@@ -35,7 +35,7 @@ U kunt de pagina van het Beheer van de Dienst gebruiken om montages voor elk van
 
 ## Instellingen voor workflowservice controleren {#audit-workflow-service-settings}
 
-Workbench biedt de mogelijkheid om procesinstanties op te nemen terwijl ze bij uitvoering worden uitgevoerd en deze vervolgens af te spelen om het gedrag van het proces te observeren. (Zie [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).) Als u ruimte wilt besparen op het bestandssysteem van de formulierserver, kunt u de hoeveelheid opgeslagen procesopnamegegevens beperken. U kunt de volgende eigenschappen van de dienst van de Dienst van het Werkschema van de Controle vormen ( `AuditWorkflowService`):
+Workbench biedt de mogelijkheid om procesinstanties op te nemen terwijl ze bij uitvoering worden uitgevoerd en deze vervolgens af te spelen om het gedrag van het proces te observeren. (Zie [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63).) Om ruimte op het het dossiersysteem van de Server van Forms te besparen, kunt u de hoeveelheid gegevens van de procesopname beperken die wordt opgeslagen. U kunt de volgende eigenschappen van de dienst van de Dienst van het Werkschema van de Controle vormen ( `AuditWorkflowService`):
 
 **maxNumberOfRecordingInstances:** Het maximumaantal opnamen dat wordt opgeslagen. Wanneer het maximumaantal wordt opgeslagen, wordt de oudste opname verwijderd uit het dossiersysteem wanneer een nieuwe opname wordt gecreeerd. Deze eigenschap is handig als u veel opnamen wilt maken en oude opnamen automatisch wilt verwijderen. De standaardwaarde is 50.
 
@@ -265,7 +265,7 @@ De volgende montages zijn beschikbaar voor de Generate dienst van PDF.
 
 **Grootte OCR-pool:** De poolgrootte van de PaperCaptureService die de PDF Generator voor OCR gebruikt. De standaardwaarde van deze instelling (aanbevolen voor systemen met één processor) is 3, die u kunt verhogen voor systemen met meerdere processors. Deze instelling is alleen geldig op Windows-systemen.
 
-**Fontfamilie voor conversie van HTML naar PDF:** De naam van de lettertypefamilie die in PDF-documenten wordt gebruikt wanneer het lettertype dat in de oorspronkelijke HTML wordt gebruikt, niet beschikbaar is op de AEM formulierserver. Geef een lettertypefamilie op als u HTML-pagina&#39;s wilt converteren waarin niet-beschikbare lettertypen worden gebruikt. Pagina&#39;s die zijn geschreven in regionale talen kunnen bijvoorbeeld niet-beschikbare lettertypen gebruiken.
+**Fontfamilie voor conversie van HTML naar PDF:** De naam van de lettertypefamilie die in PDF-documenten wordt gebruikt wanneer het lettertype dat in de oorspronkelijke HTML wordt gebruikt, niet beschikbaar is op de AEM Forms-server. Geef een lettertypefamilie op als u HTML-pagina&#39;s wilt converteren waarin niet-beschikbare lettertypen worden gebruikt. Pagina&#39;s die zijn geschreven in regionale talen kunnen bijvoorbeeld niet-beschikbare lettertypen gebruiken.
 
 **Logica opnieuw proberen voor native conversies** Regeert het genereren van PDF opnieuw als de eerste poging tot conversie is mislukt:
 
@@ -283,7 +283,7 @@ Voer de PDF-conversie opnieuw uit als de tijd die voor de eerste omzetpoging is 
 
 ## Instellingen voor hulplijnen ES4-hulpprogramma&#39;s {#guides-es4-utilities-service-settings}
 
-Wanneer u een Guide maakt, worden sommige bronnen, zoals de definitie van de Guide, ingesloten in de Guide. Bronnen kunnen ook bestaan als verwijzingen naar toepassingselementen die lokaal of op de AEM formulierserver zijn opgeslagen. De Guide bevat geen gegevens en de waarden voor de verzendlocatie en -invoer zijn niet geschikt voor alle externe omgevingen.
+Wanneer u een Guide maakt, worden sommige bronnen, zoals de definitie van de Guide, ingesloten in de Guide. Bronnen kunnen ook bestaan als verwijzingen naar toepassingselementen die lokaal of op de AEM Forms-server zijn opgeslagen. De Guide bevat geen gegevens en de waarden voor de verzendlocatie en -invoer zijn niet geschikt voor alle externe omgevingen.
 
 In de meeste gevallen zijn de standaardservices voor het weergeven van hulplijnen voldoende om een hulplijn voor te bereiden voor gebruik in Workspace of andere externe omgevingen. (In de mening van de Diensten, in Workbench, is de standaarddienst Gidsen (systeem)/Processes/Gids van de Rendering - 1.0.) De Guide Utilities-service ( `GuidesUtility`) kunt u, indien nodig, een aangepast proces maken voor het renderen van een Guide.
 
@@ -340,7 +340,7 @@ De JDBC-service ( `JdbcService`) laat processen toe om met gegevensbestanden in 
 
 De volgende instelling is beschikbaar voor de JDBC-service.
 
-**datasourceName:** Een tekenreekswaarde die de JNDI-naam vertegenwoordigt van de gegevensbron die moet worden gebruikt om verbinding te maken met de databaseserver. De gegevensbron moet worden gedefinieerd op de toepassingsserver waarop de formulierserver wordt gehost. De standaardwaarde is de JNDI-naam van de gegevensbron voor de AEM formulierdatabase.
+**datasourceName:** Een tekenreekswaarde die de JNDI-naam vertegenwoordigt van de gegevensbron die moet worden gebruikt om verbinding te maken met de databaseserver. De gegevensbron moet op de toepassingsserver worden bepaald die gastheren de Server van Forms. De standaardwaarde is de JNDI-naam van de gegevensbron voor de AEM formulierdatabase.
 
 ## JMS-service-instellingen {#jms-service-settings}
 
@@ -482,7 +482,7 @@ De volgende instellingen zijn beschikbaar voor de service PDFG Config ( `PDFGCon
 
 **Time-out serverconversie:** De maximale time-out voor taakconversie (in seconden) voor de service PDF genereren en de Distiller-service. Dit het plaatsen beperkt de maximumomzettingstijd die in het config.xml- dossier en in de pagina&#39;s van de beleidsconsole voor PDF Generator kan worden gespecificeerd. De standaardwaarde is 270.
 
-**Globale time-out server:** Tijdens het uitvoeren van PDF-conversies houdt een formulierserver rekening met de time-outlimiet. Vorm de onderbrekingswaarde om de kwestie op te lossen.
+**Globale time-out server:** Bij het uitvoeren van PDF-conversies houdt een Forms-server rekening met de time-outlimiet. Vorm de onderbrekingswaarde om de kwestie op te lossen.
 
 **Voorvoegsel taakopties:** Een voorvoegsel dat wordt gebruikt door de service PDF genereren om een korte tekenreeks voor te bereiden voor de bestanden met taakopties die tijdelijk worden gemaakt voor gebruik door Acrobat Distiller. De standaardwaarde is pdfg.
 
@@ -704,7 +704,7 @@ In een clusterconfiguratie, schrapt de partijgrootte voor een gecontroleerd omsl
 
 **Dubbele bestandsnamen overschrijven:** Een Booleaanse tekenreeks die aangeeft of de gecontroleerde map dubbele resultaatbestandsnamen overschrijft en of behouden documenten met dezelfde naam moeten worden overschreven.
 
-**Map behouden:** De standaardwaarde voor de map preserve. Deze map wordt gebruikt om de bronbestanden te kopiëren naar in geval van een geslaagde verwerking van de invoer. Deze waarde kan een leeg, relatief of absoluut pad zijn met een bestandspatroon zoals beschreven voor de instelling Map met resultaten.
+**Map behouden:** De standaardwaarde voor de map preserve. Deze map wordt gebruikt om de bronbestanden naar te kopiëren als de invoer met succes is verwerkt. Deze waarde kan een leeg, relatief of absoluut pad zijn met een bestandspatroon zoals beschreven voor de instelling Map met resultaten.
 
 **Map mislukt:** De naam van de map waarnaar de foutbestanden worden gekopieerd. Deze waarde kan een leeg, relatief of absoluut pad zijn met een bestandspatroon zoals beschreven voor de instelling Map met resultaten.
 
@@ -751,11 +751,11 @@ De dienst van de Dienst van het Web wisselt met Webdiensten door de berichten va
 
 De volgende montages zijn beschikbaar voor de dienst van de Dienst van het Web.
 
-**Topwinkel:** Het volledige pad van het sleutelarchiefbestand dat de persoonlijke sleutel voor verificatie bevat. De formulierserver moet toegang hebben tot het bestand.
+**Topwinkel:** Het volledige pad van het sleutelarchiefbestand dat de persoonlijke sleutel voor verificatie bevat. De Forms-server moet toegang hebben tot het bestand.
 
 **Wachtwoord sleutelarchief:** Het wachtwoord voor het sleutelarchiefbestand.
 
-**Type sleutelwinkel:** Het type sleutelarchief. Geef geen waarde op om het standaardsleutelarchieftype te gebruiken dat is geconfigureerd voor de JVM die de formulierserver uitvoert. Geef anders een van de volgende waarden op:
+**Type sleutelwinkel:** Het type sleutelarchief. Verstrek geen waarde om het standaardsleutelarchieftype te gebruiken dat voor JVM wordt gevormd die de Server van Forms in werking stelt. Geef anders een van de volgende waarden op:
 
 * jks
 * pkcs12
@@ -766,7 +766,7 @@ De volgende montages zijn beschikbaar voor de dienst van de Dienst van het Web.
 
 **Wachtwoord voor winkel vertrouwen:** Het wachtwoord voor het bestand truststore.
 
-**Type vertrouwde winkel:** Het type van truststore. Geef geen waarde op om het standaardsleutelarchieftype te gebruiken dat is geconfigureerd voor de JVM die de formulierserver uitvoert. Geef anders een van de volgende waarden op:
+**Type vertrouwde winkel:** Het type van truststore. Verstrek geen waarde om het standaardsleutelarchieftype te gebruiken dat voor JVM wordt gevormd die de Server van Forms in werking stelt. Geef anders een van de volgende waarden op:
 
 * jks
 * pkcs12
@@ -779,11 +779,11 @@ De XSLT Transformation Service ( `XSLTService`) biedt processen de mogelijkheid 
 
 De volgende instelling is beschikbaar voor de service XSLT-transformatie.
 
-**Fabrieksnaam:** De volledig gekwalificeerde naam van de Java-klasse die moet worden gebruikt voor het uitvoeren van XSLT-transformaties. Als er geen waarde is opgegeven, wordt de standaardfabriek gebruikt die is geconfigureerd in de Java Virtual Machine die de formulierserver uitvoert.
+**Fabrieksnaam:** De volledig gekwalificeerde naam van de Java-klasse die moet worden gebruikt voor het uitvoeren van XSLT-transformaties. Als geen waarde wordt gespecificeerd, wordt de standaardfabriek die in de Virtuele Machine van Java wordt gevormd die de Server van Forms in werking stelt gebruikt.
 
 ## Beveiligingsinstellingen voor een service wijzigen {#modifying-security-settings-for-a-service}
 
-De server van vormen laat u toe om veiligheidsmontages voor elke dienst te vormen, die u verfijnd toegangsbeheer op een dienst-door-dienst niveau laat vormen.
+De Server van Forms laat u toe om veiligheidsmontages voor elke dienst te vormen, die u verfijnd toegangsbeheer op een dienst-door-dienst niveau laat vormen.
 
 Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen worden geconfigureerd om aan uw systeembehoeften te voldoen. Elk beveiligingsprofiel heeft een gekoppeld domein en wordt op gebruikersniveau of groepsniveau gemaakt.
 

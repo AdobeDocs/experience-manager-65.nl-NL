@@ -7,7 +7,7 @@ topic-tags: spa
 content-type: reference
 docset: aem65
 exl-id: 7b34be66-bb61-4697-8cc8-428f7c63a887
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1651'
 ht-degree: 0%
@@ -177,7 +177,7 @@ Aanvullende aangepaste kiezers kunnen worden gedefinieerd en gebruikt als onderd
 
 Als u de op plaats-editor wilt gebruiken van een tekstcomponent die in SPA is gemaakt, is er aanvullende configuratie vereist.
 
-1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. Voor de WKND Journal-voorbeeldinhoud is het een `<div>` element en de kiezer die is gebruikt, `data-rte-editelement`.
+1. Stel een willekeurig kenmerk in op het containerelement dat de tekst HTML bevat. Als er de WKND Journal steekproefinhoud is, is het a `<div>` element en de kiezer die is gebruikt, `data-rte-editelement`.
 1. De configuratie instellen `editElementQuery` op de overeenkomstige AEM tekstcomponent `cq:InplaceEditingConfig` dat bijvoorbeeld naar die kiezer wijst, `data-rte-editelement`. Dit laat de redacteur weten welk element van HTML de HTML tekst verpakt.
 
 Voor een voorbeeld van hoe dit wordt gedaan, zie [WKND Journal-voorbeeldinhoud.](https://github.com/adobe/aem-sample-we-retail-journal/pull/16/files)

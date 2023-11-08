@@ -9,9 +9,9 @@ content-strategy: max-2018
 docset: aem65
 role: Admin
 exl-id: 0f9aab7d-8e41-449a-804b-7e1bfa90befd
-source-git-commit: 65c5a4442f17e6bc52deaa1588f535a05698083f
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1734'
 ht-degree: 0%
 
 ---
@@ -27,19 +27,19 @@ Het migratiehulpprogramma converteert het [Aangepaste Forms-middelen](../../form
 
 >[!NOTE]
 >
->In het geval van een upgrade op een externe locatie kunt u voor Correspondence Management-middelen de migratie uitvoeren wanneer u de middelen importeert. Voor de migratie van Correspondence Management moet het Forms-compatibiliteitspakket zijn geïnstalleerd.
+>Als er een upgrade op een externe locatie is voor Correspondence Management-middelen, kunt u de migratie altijd uitvoeren wanneer u de middelen importeert. Voor de migratie van Correspondence Management moet het Forms-compatibiliteitspakket zijn geïnstalleerd.
 
 ## Migratieaanpak {#approach-to-migration}
 
 U kunt [upgrade](../../forms/using/upgrade.md) naar de nieuwste versie van AEM Forms 6.5 van AEM Forms 6.4, 6.3 of 6.2 of een nieuwe installatie. Afhankelijk van of u uw vorige installatie upgradet of een nieuwe installatie hebt uitgevoerd, moet u een van de volgende handelingen uitvoeren:
 
-**In het geval van een upgrade ter plaatse**
+**Als er een verbetering op zijn plaats is**
 
 Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Voordat u de elementen en documenten kunt gebruiken, moet u echter de opdracht [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inclusief het compatibiliteitspakket voor Correspondentenbeheer)
 
 Vervolgens moet u de elementen en documenten bijwerken vóór [Het migratiehulpprogramma uitvoeren](#runningmigrationutility).
 
-**In het geval van een installatie buiten de plaats**
+**Als er een installatie buiten de locatie is**
 
 Als de installatie op de verkeerde plaats staat (vers), moet u de [AEMFD-compatibiliteitspakket](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en) (inclusief het pakket Correspondence Management Compatibility).
 

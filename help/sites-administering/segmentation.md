@@ -1,18 +1,14 @@
 ---
 title: Het vormen Segmentatie met ContextHub
-seo-title: Configuring Segmentation with ContextHub
 description: Leer hoe te om segmentatie met de Hub van de Context te vormen.
-seo-description: Learn how to configure segmentation with Context Hub.
-uuid: 196cfb18-317c-443d-b6f1-f559e4221baa
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 exl-id: 8bd6c88b-f36a-422f-ae6c-0d59f365079a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1774'
+source-wordcount: '1772'
 ht-degree: 0%
 
 ---
@@ -52,7 +48,7 @@ De **Segment-editor** Hiermee kunt u een segment gemakkelijk wijzigen. Om een se
 
 Met de componentenbrowser kunt u toevoegen **EN** en **OF** containers om de segmentlogica te bepalen, dan voeg extra componenten toe om eigenschappen en waarden of verwijzingsmanuscripten en andere segmenten te vergelijken om de selectiecriteria te bepalen (zie [Een nieuw segment maken](#creating-a-new-segment)) om het exacte scenario voor het selecteren van het segment te bepalen.
 
-Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. Wanneer meerdere segmenten van toepassing zijn, dan **Verhogen** wordt ook gebruikt. Zie [Een nieuw segment maken](#creating-a-new-segment) voor meer informatie over de [stimulerende factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
+Wanneer de volledige verklaring aan waar evalueert dan heeft het segment opgelost. Als er meerdere toepasselijke segmenten zijn, **Verhogen** wordt ook gebruikt. Zie [Een nieuw segment maken](#creating-a-new-segment) voor meer informatie over de [stimulerende factor.](/help/sites-administering/campaign-segmentation.md#boost-factor)
 
 >[!CAUTION]
 >
@@ -106,7 +102,7 @@ De volgende segmentvergelijkingen zijn beschikbaar uit-van-de-doos om segmenteig
 
 >[!NOTE]
 >
->Wanneer het vergelijken van waarden, als het gegevenstype van de vergelijking niet (d.w.z. wordt geplaatst om auto te ontdekken) wordt geplaatst, zal de segmenteringsmotor van ContextHub eenvoudig de waarden zoals javascript vergelijken. Er worden geen waarden naar de verwachte typen gecast, wat tot misleidende resultaten kan leiden. Bijvoorbeeld:
+>Wanneer het vergelijken van waarden, als het gegevenstype van de vergelijking niet wordt geplaatst (d.w.z. wordt geplaatst om auto te ontdekken), zal de de segmenteringsmotor van ContextHub eenvoudig de waarden zoals javascript vergelijken. Er worden geen waarden naar de verwachte typen gecast, wat tot misleidende resultaten kan leiden. Bijvoorbeeld:
 >
 >`null < 30 // will return true`
 >

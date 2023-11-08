@@ -2,9 +2,9 @@
 title: Decoratietag
 description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component binnen zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten.
 exl-id: d049ebf1-7fa6-4d2c-86f9-b18e107092ea
-source-git-commit: 43a30b5ba76ea470cc50a962d4f04b4a1508964d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '876'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element wor
 Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten. Of en hoe de versietag wordt teruggegeven wordt bepaald door de combinatie twee factoren, die deze pagina in duiken:
 
 * De component zelf kan zijn versietag met een reeks eigenschappen vormen.
-* De scripts die componenten bevatten (HTL, JSP, dispatcher, enz.) kunnen de aspecten van de decoratietag definiëren met daarin parameters.
+* De manuscripten die componenten (HTL, JSP, verzender, etc.) omvatten kunnen de aspecten van de decoratietag met omvat parameters bepalen.
 
 ## Recommendations {#recommendations}
 
@@ -60,9 +60,9 @@ Het gedrag van de omslag kan ook volledig worden geregeld.
 * Het HTML-script heeft volledige controle over het resulterende gedrag van de omvattende tag.
 * Componenteigenschappen (zoals `cq:noDecoration` en `cq:tagName`) kunt u ook de omsluitende tag definiëren.
 
-Het is mogelijk het gedrag van de omvattende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
+Het is mogelijk om het gedrag van de omsluitende tags van HTML-scripts en de bijbehorende logica volledig te bepalen.
 
-Voor meer informatie over het ontwikkelen in HTML raadpleegt u de [HTML-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
+Zie voor meer informatie over het ontwikkelen in HTML de [HTML-documentatie](https://experienceleague.adobe.com/docs/experience-manager-htl/content/overview.html).
 
 #### Beslissingsboom {#decision-tree}
 
@@ -94,9 +94,9 @@ Alle volgende voorbeelden nemen de volgende inhoudsstructuur, en componenten aan
       @class = "component-two"
 ```
 
-#### Hoofdlettergebruik 1: Component opnemen voor hergebruik van code {#use-case-include-a-component-for-code-reuse}
+#### Hoofdlettergebruik 1: Een component opnemen voor hergebruik van code {#use-case-include-a-component-for-code-reuse}
 
-Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik. In dat geval is het niet de bedoeling dat de opgenomen component bewerkbaar is met een eigen werkbalk en dialoogvenster, zodat er geen omloop nodig is en de component `cq:htmlTag` wordt genegeerd. Dit kan als standaardgedrag worden beschouwd.
+Het meest gangbare geval is wanneer een component een andere component bevat om redenen van hergebruik van code. In dat geval is het niet de bedoeling dat de opgenomen component bewerkbaar is met een eigen werkbalk en dialoogvenster, zodat er geen omloop nodig is en de component `cq:htmlTag` wordt genegeerd. Dit kan als standaardgedrag worden beschouwd.
 
 `one.html: <sly data-sly-resource="child"></sly>`
 
@@ -108,11 +108,11 @@ Resulterende uitvoer op `/content/test.html`:
 
 Een voorbeeld zou een component zijn die een component van het kernbeeld omvat om een beeld te tonen, typisch in dat geval door een synthetisch middel te gebruiken, dat in het omvatten van een virtuele kindcomponent bestaat door tot gegeven-slim-middel een voorwerp van de Kaart over te gaan dat alle eigenschappen vertegenwoordigt die de component zou hebben.
 
-#### Hoofdlettergebruik 2: Een bewerkbare component opnemen {#use-case-include-an-editable-component}
+#### Hoofdlettergebruik 2: een bewerkbare component opnemen {#use-case-include-an-editable-component}
 
 Een ander veelvoorkomend geval van gebruik is wanneer de containercomponenten editable kindcomponenten, zoals een Container van de Lay-out omvatten. In dit geval heeft elk inbegrepen kind een omslag ondoordringbaar voor de redacteur nodig om te werken (tenzij uitdrukkelijk gehandicapt met `cq:noDecoration` eigenschap).
 
-Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Om dit gedrag te activeren, is er de `decoration=true` optie.
+Aangezien de inbegrepen component in dit geval een onafhankelijke component is, heeft het een omslagelement voor de redacteur nodig om te werken, en zijn lay-out en stijl te bepalen om toe te passen. Om dit gedrag te activeren, is er de `decoration=true` -optie.
 
 `one.html: <sly data-sly-resource="${'child' @ decoration=true}"></sly>`
 
@@ -122,7 +122,7 @@ Resulterende uitvoer op `/content/test.html`:
 
 **`<article class="component-two">Hello World!</article>`**
 
-#### Hoofdlettergebruik 3: Aangepast gedrag {#use-case-custom-behavior}
+#### Hoofdlettergebruik 3: aangepast gedrag {#use-case-custom-behavior}
 
 Er kan een aantal complexe gevallen zijn, die gemakkelijk kunnen worden verwezenlijkt door HTL de mogelijkheid te bieden om expliciet het volgende te verstrekken:
 
@@ -146,6 +146,6 @@ Wanneer een component wordt opgenomen met `cq:includ`e of `sling:include`Het sta
 
 ### Beslissingsboom {#decision-tree-1}
 
-De volgende beslisboom illustreert hoe `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, en `decorationTagName` het gedrag van de omslag beïnvloeden.
+De volgende beslisboom illustreert hoe `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, en `decorationTagName` heeft invloed op het gedrag van de omslag.
 
 ![chlimage_1-3](assets/chlimage_1-3a.jpeg)

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 exl-id: 8bcf70ef-94d2-4958-90b5-bc375b360916
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1246'
+source-wordcount: '1244'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ De getoonde platforms worden gedreven door de inhoud PhoneGap config.xml:
 </widget>
 ```
 
-Elke winkel van leverancierstoepassingen, bijvoorbeeld Apple App Store of Google Play Store, vereist een of meer schermafbeeldingen van uw mobiele toepassing om uw toepassingsdetails aan klanten te tonen. Deze schermafbeeldingen kunnen strikte vereisten hebben rond afmetingen en inhoud (in feite moeten ze de toepassing echt vertegenwoordigen). AEM Apps biedt ondersteuning voor het selecteren en beheren van deze schermafbeeldingen voor de ondersteunde platforms en het bekijken van poortafmetingen, zoals vereist door de toepassingsopslag van elke leverancier.
+Elke winkel van leverancierstoepassingen, bijvoorbeeld Apple App Store of Google Play Store, vereist een of meer schermafbeeldingen van uw mobiele toepassing om uw toepassingsdetails aan klanten te tonen. Deze schermafbeeldingen kunnen strikte vereisten hebben rond afmetingen en inhoud (in feite moeten ze de toepassing echt vertegenwoordigen). AEM toepassingen ondersteunen het selecteren en beheren van deze schermafbeeldingen voor de ondersteunde platforms en het bekijken van de poortafmetingen die vereist zijn voor de toepassingsopslag van elke leverancier.
 
 >[!NOTE]
 >

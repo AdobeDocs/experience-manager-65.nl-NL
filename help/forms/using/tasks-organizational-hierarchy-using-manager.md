@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 docset: aem65
 exl-id: e50974a7-01ac-4a08-bea2-df9cc975c69e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 
 In de werkruimte van AEM Forms, kunnen de managers tot de taken nu toegang hebben die aan iedereen in hun hiërarchie worden toegewezen - directe of indirecte rapporten - en diverse acties op hen uitvoeren. De taken zijn beschikbaar op het tabblad Te doen in de AEM Forms-werkruimte. De acties die op de taken van directe rapporten worden gesteund zijn:
 
-**Doorsturen** Een taak door:sturen van direct rapport aan om het even welke gebruiker.
+**Doorsturen** - Een taak doorsturen van direct rapport naar elke gebruiker.
 
-**Claim** Vordering van een rechtstreekse verslaglegging.
+**Claim** - eisen dat een verslag rechtstreeks wordt opgesteld.
 
-**Claim &amp; Openen** Vordeer een taak van een direct rapport en open het automatisch in de te doen lijst van de manager.
+**Claim &amp; Openen** - Vordering een taak van een direct rapport en open het automatisch in de te doen lijst van de manager.
 
-**Afwijzen** Weiger een taak die aan een direct rapport door één of andere andere gebruiker wordt doorgestuurd. Deze optie is beschikbaar voor de taken die door andere gebruikers aan een direct rapport door:sturen.
+**Afwijzen** - Een taak die door een andere gebruiker naar een direct rapport is doorgestuurd, afwijzen. Deze optie is beschikbaar voor de taken die door andere gebruikers aan een direct rapport door:sturen.
 
 AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de gebruiker toegangsbeheer (ACL) heeft. Een dergelijke controle zorgt ervoor dat een gebruiker alleen de taken kan ophalen waarop de gebruiker toegangsmachtigingen heeft. Met behulp van externe webservices en implementaties om de hiërarchie te definiëren, kan een organisatie de definitie van manager en directe rapporten aanpassen aan hun behoeften.
 

@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Metadata
 exl-id: 312fff5f-39c1-48c1-aa99-40feb72c2f59
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2706'
+source-wordcount: '2705'
 ht-degree: 6%
 
 ---
@@ -220,7 +220,7 @@ XMP standaardiseren hoe metagegevens worden gedefinieerd, gemaakt en verwerkt do
 
 Alle verouderde meta-gegevens van EXIF, ID3, of Microsoft Office wordt automatisch vertaald aan XMP, die kan worden uitgebreid om klant-specifiek meta-gegevensschema, zoals productcatalogi te steunen.
 
-Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een bepaalde entiteit die als middel wordt bedoeld; namelijk zijn de eigenschappen &quot;over&quot;de middel. In het geval van XMP is de bron altijd het middel.
+Metagegevens in XMP bestaan uit een set eigenschappen. Deze eigenschappen worden altijd geassocieerd met een bepaalde entiteit die als middel wordt bedoeld; namelijk zijn de eigenschappen &quot;over&quot;de middel. Als er XMP is, is de bron altijd het element.
 
 ### XMP ecosysteem {#xmp-ecosystem}
 

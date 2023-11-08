@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: f17726c0-3591-4d25-a8b5-3a7024249a56
-source-git-commit: 6caf3ef4a00275f0f73be52b6a9ccba77d277f1a
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '838'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Met het tabblad Toepassingen kunt u toepassingen importeren en beheren die in Wo
 
    Op het tabblad Eigenschappen aan de rechterkant worden de eigenschappen van het geselecteerde CRX-knooppunt weergegeven.
 
-   De **syncState** Deze eigenschap geeft de status aan van de synchronisatie van gegevens tussen de AEM formulierserver en de CRX-opslagplaats. Zodra het importproces begint, wordt deze status ingesteld op 0 (nul). Deze status geeft aan dat de gegevens momenteel niet zijn gesynchroniseerd. Wanneer de gegevens worden gesynchroniseerd, wordt de status ingesteld op 1.
+   De **syncState** Deze eigenschap geeft de status aan van de synchronisatie van gegevens tussen de AEM Forms Server en de CRX-opslagplaats. Zodra het importproces begint, wordt deze status ingesteld op 0 (nul). Deze status geeft aan dat de gegevens momenteel niet zijn gesynchroniseerd. Wanneer de gegevens worden gesynchroniseerd, wordt de status ingesteld op 1.
 
 ## Een toepassing implementeren {#deploy-an-application}
 

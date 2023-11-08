@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: d2dd381d-a7d2-4fec-a8ba-7ca037fd9dc1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2065'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Overweeg de volgende punten met betrekking tot back-up en herstel:
 
 ## Globale map voor documentopslag {#global-document-storage-directory}
 
-De GDS is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. De levensduur van bestanden met een lange levensduur moet een of meer keren worden gestart met een AEM formuliersysteem en kan dagen en zelfs jaren beslaan. Deze bestanden van lange duur kunnen PDF, beleidsregels en formuliersjablonen bevatten. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de formulierserver instabiel worden.
+De GDS is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. De levensduur van bestanden met een lange levensduur moet een of meer keren worden gestart met een AEM formuliersysteem en kan dagen en zelfs jaren beslaan. Deze bestanden van lange duur kunnen PDF, beleidsregels en formuliersjablonen bevatten. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de Forms-server instabiel worden.
 
 Invoerdocumenten voor asynchrone aanroep van taken worden ook opgeslagen in de GDS en moeten beschikbaar zijn voor het verwerken van aanvragen. Daarom is het belangrijk dat u de betrouwbaarheid van het bestandssysteem dat de GDS host en een redundante array van onafhankelijke schijven (RAID) of andere technologie gebruikt, als geschikt beschouwt voor uw vereisten op het gebied van kwaliteit en serviceniveau.
 

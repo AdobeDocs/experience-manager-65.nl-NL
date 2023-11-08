@@ -10,7 +10,7 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '2008'
 ht-degree: 0%
@@ -359,7 +359,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Voltooit het het werkpunt waarvan URI als parameter wordt verzonden <code>item</code> en gaat de instantie volgens workflow verder naar de volgende node(s), die wordt gedefinieerd door de parameter <code>route</code> of <code>backroute</code> in geval van een stap terug.<br /> Als de parameter <code>delegatee</code> wordt verzonden, het het werkpunt dat door de parameter wordt geïdentificeerd <code>item</code> wordt gedelegeerd aan de opgegeven deelnemer.</td>
+   <td>Voltooit het het werkpunt waarvan URI als parameter wordt verzonden <code>item</code> en gaat de instantie volgens workflow verder naar de volgende node(s), die wordt gedefinieerd door de parameter <code>route</code> of <code>backroute</code> als er een stap terug is.<br /> Als de parameter <code>delegatee</code> wordt verzonden, het het werkpunt dat door de parameter wordt geïdentificeerd <code>item</code> wordt gedelegeerd aan de opgegeven deelnemer.</td>
   </tr>
  </tbody>
 </table>

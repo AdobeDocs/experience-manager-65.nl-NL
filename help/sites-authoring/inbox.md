@@ -2,9 +2,9 @@
 title: Uw Postvak In om taken te beheren
 description: Uw taken beheren met de Postvak IN Adobe Experience Manager 6.5.
 exl-id: 80b7f179-b011-4f90-b5ab-9ef8a669d271
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1144'
+source-wordcount: '1143'
 ht-degree: 7%
 
 ---
@@ -44,7 +44,7 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 
 ## Postvak IN van koptekst {#inbox-in-the-header}
 
-Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om snel toegang te krijgen tot de pagina(&#39;s) waarvoor een actie(s) vereist is of om toegang te krijgen tot het Postvak IN:
+Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om of snelle toegang tot de pagina&#39;s te verlenen die acties of toegang tot inbox vereisen:
 
 ![wf-80](assets/wf-80.png)
 

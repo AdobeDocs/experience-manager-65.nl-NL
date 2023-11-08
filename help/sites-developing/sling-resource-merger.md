@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 exl-id: 1eed754e-9a7d-4b65-a929-757fc962614d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1252'
+source-wordcount: '1255'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Sling Resource Merger verleent de diensten om tot middelen toegang te hebben en 
 
 Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getreden middelen en/of de eigenschappen samengevoegd met de originele middelen/eigenschappen:
 
-* De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van het origineel (d.w.z. *bedekkingen* of *overschrijvingen* het).
+* De inhoud van de aangepaste definitie heeft een hogere prioriteit dan die van het origineel (dat wil zeggen *bedekkingen* of *overschrijvingen* het).
 
 * Indien nodig [eigenschappen](#properties) Geef aan hoe inhoud die is samengevoegd met het origineel, moet worden gebruikt.
 
@@ -62,7 +62,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
+>1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
 >
 >1. Breng wijzigingen aan in `/apps`
 >
@@ -134,7 +134,7 @@ In het bovenstaande overlayvoorbeeld zijn dus de volgende knooppunten nodig:
 
 >[!NOTE]
 >
->Wanneer u de samenvoeging van de slingerende bron gebruikt (d.w.z. wanneer u werkt met de standaard, interface met aanraakbediening), wordt het niet aanbevolen om de volledige structuur te kopiëren van `/libs` omdat het zou leiden tot te veel informatie in `/apps`. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
+>Wanneer u de samenvoeging van het Sling Resource (dat wil zeggen, wanneer u werkt met de standaard, interface met aanraakbediening) gebruikt, wordt het niet aanbevolen om de volledige structuur te kopiëren van `/libs` omdat het zou leiden tot te veel informatie in `/apps`. Dit kan problemen veroorzaken wanneer het systeem op om het even welke manier wordt bevorderd.
 
 ### Gevallen gebruiken {#use-cases}
 

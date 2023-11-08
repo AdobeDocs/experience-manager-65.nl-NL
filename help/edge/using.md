@@ -2,9 +2,9 @@
 title: Edge Delivery Services gebruiken
 description: Edge Delivery Services gebruiken (EDS)
 exl-id: 6c9178b0-c8f3-4fc7-8614-8e71ffc2f0b8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '609'
+source-wordcount: '608'
 ht-degree: 1%
 
 ---
@@ -20,7 +20,7 @@ Met Edge Delivery is ontwerpen eenvoudig, snel en flexibel. U kunt binnen de con
 * Op documenten gebaseerde authoring (zoals Microsoft Word of Google Docs) - [Raadpleeg deze koppeling voor meer informatie](https://www.hlx.live/docs/authoring).
 * De Redacteur van de pagina/Universele Redacteur - contacteer uw Vertegenwoordiger van de Adobe.
 
-In het geval van op documenten gebaseerde authoring kunt u werken met diverse bronnen, zoals Microsoft Word en Google Docs. Documenten uit deze bronnen worden pagina&#39;s op uw website. Koppen, lijsten, afbeeldingen, lettertype-elementen en video&#39;s kunnen allemaal van de oorspronkelijke bron naar uw website worden overgebracht. U kunt metagegevens toevoegen voor SEO-doeleinden of blokken gebruiken om met gestructureerde inhoud te werken en functionaliteit toe te voegen.
+Als er op documenten gebaseerde ontwerpen zijn, kunt u met diverse bronnen werken, zoals Microsoft Word en Google Docs. Documenten uit deze bronnen worden pagina&#39;s op uw website. Koppen, lijsten, afbeeldingen, lettertype-elementen en video&#39;s kunnen allemaal van de oorspronkelijke bron naar uw website worden overgebracht. U kunt metagegevens toevoegen voor SEO-doeleinden of blokken gebruiken om met gestructureerde inhoud te werken en functionaliteit toe te voegen.
 
 ## Publiceren {#publishing-edge}
 

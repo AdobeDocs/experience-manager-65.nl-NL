@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 exl-id: cb642289-4137-4ba7-8bde-0e458c8c94fe
-source-git-commit: 2a2f8538b6554540b546f4d345c0b3c0d3e706f3
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1000'
+source-wordcount: '997'
 ht-degree: 0%
 
 ---
@@ -21,15 +21,15 @@ ht-degree: 0%
 
 Als u domeinen wilt synchroniseren, kunt u een handmatige of geplande synchronisatie uitvoeren. A *handmatige synchronisatie* Hiermee synchroniseert u geselecteerde domeinen. A *geplande synchronisatie* Hiermee worden alle domeinen gesynchroniseerd.
 
-De synchronisatie van de folder wordt gebruikt om details van de indexservers te trekken die u in uw foldermontages in het gegevensbestand van het Beheer van de Gebruiker specificeerde. Later kunt u ook handmatig synchroniseren als er wijzigingen of updates optreden op de directoryservers. U kunt bijvoorbeeld een handmatige synchronisatie uitvoeren als gebruikers en groepen worden toegevoegd of als er wijzigingen worden aangebracht in de account van een gebruiker.
+De synchronisatie van de folder wordt gebruikt om details van de folderservers te trekken die u in uw foldermontages in het gegevensbestand van het Beheer van de Gebruiker specificeerde. Later kunt u ook handmatig synchroniseren als er wijzigingen of updates optreden op de directoryservers. U kunt bijvoorbeeld een handmatige synchronisatie uitvoeren als gebruikers en groepen worden toegevoegd of als er wijzigingen worden aangebracht in de account van een gebruiker.
 
-U kunt ook een dagelijkse synchronisatieplanning instellen om de gebruikersbeheerdatabase automatisch te synchroniseren met wijzigingen of updates van de brondirectoryservers. Houd er echter rekening mee dat dit proces netwerk- en serverbronnen gebruikt. Kies periodes met weinig gebruikstijd en vermijd het plannen van onnodige synchronisaties die systeem en netwerkmiddelen opbinden. Als u overbodige synchronisaties wilt minimaliseren, gebruikt u in plaats daarvan de optie Direct synchroniseren.
+U kunt ook een dagelijkse synchronisatieplanning instellen om de gebruikersbeheerdatabase automatisch te synchroniseren met wijzigingen of updates van de brondirectoryservers. Dit proces gebruikt echter netwerk- en serverbronnen. Kies periodes met weinig gebruikstijd en vermijd het plannen van onnodige synchronisaties die systeem en netwerkmiddelen opbinden. Als u overbodige synchronisaties wilt minimaliseren, gebruikt u in plaats daarvan de optie Direct synchroniseren.
 
-U kunt ook opgeven of gebruikers- en groepsgegevens moeten worden doorgegeven naar Adobe LiveCycle Content Services 9 (afgekeurd) bij het synchroniseren van domeinen.
+U kunt ook specificeren of om gebruiker en groepsinformatie in de (afgekeurde) Diensten 9 van de Inhoud van het LiveCycle van de Adobe te duwen wanneer het synchroniseren van domeinen.
 
 >[!NOTE]
 >
->Maak geen meerdere lokale gebruikers en groepen terwijl er een LDAP-directorysynchronisatie wordt uitgevoerd. Als u dit proces probeert uit te voeren, kunnen er fouten optreden.
+>Maak geen meerdere lokale gebruikers en groepen terwijl er een LDAP-directorysynchronisatie wordt uitgevoerd. Als u dit proces probeert uit te voeren, kunnen fouten optreden.
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ U kunt ook opgeven of gebruikers- en groepsgegevens moeten worden doorgegeven na
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Levenscyclusdocument van product Adoben](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html).
 
 ## Synchronisatie van delta-directory inschakelen {#enable-delta-directory-synchronization}
 
@@ -51,18 +51,18 @@ Gebruikersbeheer voert de volgende stappen uit wanneer de synchronisatie van de 
 
 >[!NOTE]
 >
->De gebruikers en de groepen die uit de folder werden verwijderd worden niet geschrapt uit het gegevensbestand van het Beheer van de Gebruiker tot u een volledige foldersynchronisatie uitvoert.
+>Gebruikers en groepen die uit de map zijn verwijderd, worden pas verwijderd uit de gebruikersbeheerdatabase als u een volledige directorysynchronisatie uitvoert.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Schakel het selectievakje Delta Synch in en klik op Opslaan.
-1. Bewerk de directory-instellingen voor elk van de bedrijfsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en typ `modify TimeStamp` als de waarde. Zie voor meer informatie over het bewerken van ondernemingsdomeinen [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
+1. Bewerk de directoryinstellingen voor elk van de ondernemingsdomeinen die de functie voor synchronisatie van de delta-directory gebruiken. Zoek op de pagina Gebruikersinstellingen en Groepinstellingen de instelling Tijdstempel wijzigen en typ `modify TimeStamp` als de waarde. Zie voor meer informatie over het bewerken van ondernemingsdomeinen [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).
 
 ## Gedetailleerde logboekregistratie tijdens synchronisatie inschakelen of uitschakelen {#enable-or-disable-detailed-logging-during-synchronization}
 
 Door gebrek, registreert het Beheer van de Gebruiker gedetailleerde statistieken tijdens het synchronisatieproces.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
-1. Schakel onder Synchronisatiestatistieken vastleggen het selectievakje uit om de gedetailleerde logboekregistratie uit te schakelen of selecteer deze optie om logboekregistratie in te schakelen en klik op Opslaan.
+1. Schakel onder Synch Statistics Logging het selectievakje uit om de gedetailleerde logboekregistratie uit te schakelen of selecteer deze optie om logboekregistratie in te schakelen en klik op Opslaan.
 
 ## De optie voor het opnieuw proberen van de directorysynchronisatie configureren {#configure-the-directory-synchronization-retry-option}
 
@@ -71,7 +71,7 @@ U kunt Gebruikersbeheer configureren om periodiek te controleren op mislukte pog
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
 1. Onder de Uitdrukking van de Uitsnede van de Finisher van de Synch, ga een kroonuitdrukking in die het interval vertegenwoordigt waarmee het Beheer van de Gebruiker mislukte synchronisaties opnieuw probeert. Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
-   De standaardwaarde is 0 0/13 &amp;oost; ? &amp;asteren; , wat betekent dat de controle elke 13 minuten plaatsvindt.
+   De standaardwaarde is 0 0/13 &amp;last; ? &amp;ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
 
 ## Mappen handmatig synchroniseren {#manually-synchronize-directories}
 
@@ -95,7 +95,7 @@ Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taa
 * (Optioneel) Als u gebruikers- en groepsgegevens wilt overbrengen naar Content Services (Afgekeurd), selecteert u de optie Deze optie selecteren voor gebruikers en groepen overslaan naar geregistreerde externe belangrijkste opslagproviders. Deze optie is ook van toepassing wanneer u nieuwe gebruikers en groepen toevoegt via de pagina Gebruikers en groepen.
 * Klik op Opslaan.
 
-## Alle momenteel uitgevoerde directorysynchronisaties stoppen {#stop-all-directory-synchronizations-currently-in-progress}
+## Alle synchronisatie van directory&#39;s die momenteel worden uitgevoerd stoppen {#stop-all-directory-synchronizations-currently-in-progress}
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op Afbreken. Deze knop wordt alleen weergegeven als er een mappensynchronisatie wordt uitgevoerd.

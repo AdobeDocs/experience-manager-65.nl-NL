@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '6092'
+source-wordcount: '6087'
 ht-degree: 0%
 
 ---
@@ -405,7 +405,7 @@ Bovendien is het mogelijk om deze rol te bepalen gebaseerd toegang op een per po
 
 ### De toepassing AEM portlet aanpassen {#customizing-the-aem-portlet-application}
 
-De verstrekte AEM portlet toepassing begint een container OSGi binnen de Webtoepassing enkel zoals AEM. Deze architectuur laat u van alle voordelen van OSGi gebruik maken:
+De verstrekte AEM portlet toepassing begint een container OSGi binnen de Webtoepassing enkel zoals AEM. Deze architectuur laat u alle voordelen van OSGi gebruiken:
 
 * Eenvoudig bij te werken en uit te breiden
 * Verstrekt hete updates van portlet zonder enige interactie van de portalserver
@@ -737,7 +737,7 @@ Standaard maakt de portlet verbinding met de publicatieinstantie op localhost:45
 
 >[!NOTE]
 >
->Bij deze procedures wordt het Websphere-portaal als voorbeeld gebruikt, hoewel deze zo algemeen mogelijk zijn; houd er rekening mee dat de procedures voor andere webportalen verschillen. Hoewel de stappen in wezen identiek zijn voor alle webportalen, moet u de stappen voor uw specifieke webportaal opnieuw gebruiken.
+>Bij deze procedures wordt het Websphere-portaal als voorbeeld gebruikt, hoewel deze zo algemeen mogelijk zijn; de procedures variëren voor andere webportalen. Hoewel de stappen in wezen identiek zijn voor alle webportalen, moet u de stappen voor uw specifieke webportaal opnieuw gebruiken.
 
 #### De portlet installeren {#installing-the-portlet}
 

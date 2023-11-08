@@ -1,18 +1,14 @@
 ---
 title: Werken met de werkruimte van AEM Forms
-seo-title: Working with AEM Forms workspace
 description: Ga aan de slag met de AEM Forms-werkruimte met dit korte overzicht van de procesworkflows.
-seo-description: Get started with AEM Forms workspace with this quick overview of the process workflows.
-uuid: 36381e7b-1533-459c-80de-92e806a49cd5
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
-discoiquuid: 866cd9cb-6661-4b0f-a3af-e39453e6e51b
 docset: aem65
 exl-id: 0bedcbd9-2cf8-47da-9440-c773982e550c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -51,7 +47,7 @@ U kunt meerdere taken van hetzelfde type goedkeuren. Zodra u één taak voor goe
 
 Flex Workspace wordt niet ondersteund voor AEM Forms-klanten. Alle klanten die de Flex Workspace gebruiken, moeten naar de AEM Forms Workspace gaan.
 
-In de werkruimte van AEM Forms zijn de standaardservices voor renderen en verzenden, in het standaardactieprofiel, gewijzigd die zijn gekoppeld aan XDP-formulieren en zijn nieuwe services geïntroduceerd. Zie voor meer informatie [Nieuwe renderservice en verzendservice](/help/forms/using/new-render-submit-service.md). Als u uw bestaande processen, die werken met XDP-formulieren, wilt migreren om van deze services gebruik te maken, kunt u het volgende doen [deze stappen](new-render-submit-service.md).
+In de werkruimte van AEM Forms zijn de standaardservices voor renderen en verzenden, in het standaardactieprofiel, gewijzigd die zijn gekoppeld aan XDP-formulieren en zijn nieuwe services geïntroduceerd. Zie voor meer informatie [Nieuwe renderservice en verzendservice](/help/forms/using/new-render-submit-service.md). Als u uw bestaande processen, die werken met XDP-formulieren, wilt migreren om deze services te gebruiken, kunt u de volgende [deze stappen](new-render-submit-service.md).
 
 **Flex Workspace-aanpassingen toewijzen met de AEM Forms-werkruimte**
 

@@ -12,9 +12,9 @@ discoiquuid: 6bcf0fcc-481a-4283-b30d-80b517701280
 docset: aem65
 feature: Multi Site Manager
 exl-id: ac24b8b4-b3ed-47fa-9a73-03f0c9e68ac8
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2693'
+source-wordcount: '2694'
 ht-degree: 0%
 
 ---
@@ -320,7 +320,7 @@ In de volgende tabel worden de eigenschappen beschreven die u kunt configureren:
 
 Verscheidene eigenschappen en knooptypes worden uitgesloten door gebrek, worden deze bepaald in de configuratie OSGi van **Update-actie CQ MSM-inhoud**, onder **Eigenschappen van uitgesloten pagina**.
 
-Standaard worden eigenschappen die overeenkomen met de volgende reguliere expressies uitgesloten (d.w.z. niet bijgewerkt) bij rollout:
+Standaard worden eigenschappen die overeenkomen met de volgende reguliere expressies uitgesloten (dat wil zeggen niet bijgewerkt) bij rollout:
 
 ![Update-actie CQ MSM-inhoud](assets/chlimage_1.png)
 

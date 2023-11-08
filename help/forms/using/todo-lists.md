@@ -11,7 +11,7 @@ topic-tags: forms-workspace
 discoiquuid: d8546227-d78d-4fe2-a092-222482bb69c9
 docset: aem65
 exl-id: c80bf347-d1ed-488f-a41a-ceb05a6df9e4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '4031'
 ht-degree: 0%
@@ -194,7 +194,7 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
    >[!NOTE]
    >
-   >U kunt werkruimte zodanig configureren dat de gegevens die een gebruiker heeft ingevoerd, periodiek automatisch worden opgeslagen als concept. Als automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen. In het geval van automatisch opslaan wordt de standaardnaam van de taak automatisch gebruikt.
+   >U kunt werkruimte zodanig configureren dat de gegevens die een gebruiker heeft ingevoerd, periodiek automatisch worden opgeslagen als concept. Als automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen. Als er automatisch wordt opgeslagen, wordt de standaardnaam van de taak automatisch gebruikt.
    >
    >
    >Zie Concept periodiek opslaan voor meer informatie in [Voorkeuren beheren](/help/forms/using/getting-started-livecycle-html-workspace.md).

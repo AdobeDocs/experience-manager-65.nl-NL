@@ -7,7 +7,7 @@ activity: setup
 audience: administrator
 feature: Commerce Integration Framework
 exl-id: 1d4e9b7b-848b-4007-b884-dd48682d62e8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 0%
@@ -36,11 +36,11 @@ Voer de onderstaande stappen uit om een AEM-site te verbinden en CIF Core Compon
 
 3. Creeer een kindconfiguratie van CIF Cloud Service config die deze stappen volgt:
 
-   * Ga AEM naar Gereedschappen -> Algemeen -> [Configuratiebrowser](/help/sites-administering/configurations.md#using-configuration-browser)
+   * Ga AEM naar Gereedschappen > Algemeen > [Configuratiebrowser](/help/sites-administering/configurations.md#using-configuration-browser)
    * Selecteer de basisconfiguratie die u hebt gemaakt
    * Een configuratie maken met de stappen die hierboven in punt 2 worden beschreven
 
-   Deze nieuwe configuratie wordt gecreeerd als kindconfiguratie van de basis. U kunt nu naar Extra -> Algemeen -> Browser van de Configuratie gaan en de configuratiemontages creëren.
+   Deze nieuwe configuratie wordt gecreeerd als kindconfiguratie van de basis. U kunt nu naar Extra > Algemeen > de Browser van de Configuratie gaan en de configuratiemontages creëren.
 
    >[!TIP]
    >

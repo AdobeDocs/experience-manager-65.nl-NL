@@ -1,20 +1,18 @@
 ---
 title: Hoe kunt u Aangepaste formulierthema's maken of aanpassen?
-seo-title: How to create a theme for Adaptive Forms Core Components?
 description: Leer om thema's voor Adaptive Forms Core Components te maken of aan te passen met BEM-specificaties
-seo-description: Learn to create or customize themes for Adaptive Forms Core Components using BEM specifications
 keywords: thema's maken voor adaptieve formulieren, kerncomponenten maken, nieuw thema maken, thema aanpassen, nieuw thema uploaden, thema gebruiken in formulieren, een thema verwijderen, een thema maken in AEM 6.5-formulieren
 contentOwner: Khushwant Singh
 topic-tags: Adaptive Forms
 docset: aem65
 role: Admin, Developer
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+exl-id: 9f9b35a3-0479-4179-9fad-994a482c96b6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1967'
+source-wordcount: '1965'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulierthema maken of aanpassen {#introduction-to-theme}
 
@@ -62,7 +60,7 @@ U kunt [al deze thema&#39;s aanpassen om een thema te maken](#customize-a-theme-
 
 ## Een thema aanpassen {#customize-a-theme-core-components-based-adaptive-forms}
 
-Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpassen van de weergave van een thema. Wanneer u een thema aanpast, brengt u wijzigingen aan in de ontwerpelementen, lay-out, kleuren, typografie en soms in de onderliggende code. Zo kunt u een unieke en op maat gemaakte vormgeving voor uw website of toepassing maken met behoud van de basisstructuur en -functionaliteit die door het thema worden geboden.
+Wanneer u een thema aanpast, wordt hiermee verwezen naar het wijzigen en aanpassen van de weergave van een thema. Wanneer u een thema aanpast, wijzigt u de ontwerpelementen, lay-out, kleuren, typografie en soms de onderliggende code. Zo kunt u een unieke en op maat gemaakte vormgeving voor uw website of toepassing maken met behoud van de basisstructuur en -functionaliteit die door het thema worden geboden.
 
 >[!NOTE]
 >
@@ -339,4 +337,3 @@ Ongebruikte of ongewenste thema&#39;s verwijderen:
 * [Een sjabloon maken voor Adaptief Forms op basis van Core Components](template-editor.md)
 * [Een adaptief formulier maken of toevoegen aan een AEM Sites-pagina of -ervaringsfragment](create-or-add-an-adaptive-form-to-aem-sites-page.md)
 * [Voorbeeldthemasjablonen en formuliergegevensmodellen](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/adaptive-forms/sample-themes-templates-form-data-models-core-components.html)
-

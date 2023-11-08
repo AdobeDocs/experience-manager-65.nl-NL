@@ -2,7 +2,7 @@
 title: Meer informatie over het maken van modellen voor inhoudsfragmenten in AEM
 description: Leer over de concepten en de mechanica van het modelleren van inhoud voor uw Zwaarloze CMS gebruikend de Modellen van de Fragments van de Inhoud.
 exl-id: b377e01f-e392-4ef5-a259-73ce9ff941d0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '690'
 ht-degree: 2%
@@ -28,7 +28,7 @@ Dit artikel bouwt op deze voort zodat begrijpt u hoe te om uw eigen Modellen van
 <!--
 ## Enabling Content Fragment Models {#enabling-content-fragment-models}
 
-At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools -> General -> Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
+At the very start you need to enable Content Fragment Models for your site, this is done in the Configuration Browser; under Tools > General > Configuration Browser. You can either select to configure the global entry, or create a configuration. For example:
 
 ![Define configuration](/help/assets/content-fragments/assets/cfm-conf-01.png)
 
@@ -39,7 +39,7 @@ At the very start you need to enable Content Fragment Models for your site, this
 
 ## Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U doet dit onder Gereedschappen -> Middelen -> Modellen voor inhoudsfragmenten.
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U kunt dit doen via Gereedschappen > Middelen > Modellen voor inhoudsfragmenten.
 
 ![Modellen van inhoudsfragmenten in gereedschappen](assets/cfm-tools.png)
 

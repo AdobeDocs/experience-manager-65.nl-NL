@@ -1,18 +1,14 @@
 ---
 title: Een interactieve communicatie maken
-seo-title: Create an Interactive Communication
 description: Creeer een Interactieve Mededeling gebruikend de Interactieve Communicatie redacteur. Gebruik de functie voor slepen en neerzetten om de interactieve communicatie te maken en een voorvertoning van zowel afdruk- als webuitvoer weer te geven voor verschillende apparaattypen.
-seo-description: Create an Interactive Communication using the Interactive Communication editor. Use drag-and-drop functionality to build the Interactive Communication, and preview both print and web outputs on different device types.
-uuid: d524a3de-00b4-444f-b3c7-be443fa24ec8
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: f4d98cb9-84d8-4735-91d2-b9ceec861e5e
 docset: aem65
 feature: Interactive Communication
 exl-id: 1f89c3bf-e67e-4d13-9285-3367be1ac8f8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5994'
+source-wordcount: '5989'
 ht-degree: 0%
 
 ---
@@ -141,7 +137,7 @@ Met de ontwerpinterface kunt u onderscheid maken tussen de niet-gebonden en gebo
 
 Wanneer u de muisaanwijzer op deze elementen plaatst, wordt bovendien knopinfo weergegeven met het bericht Veld (niet geconsolideerd) of Variabele (niet geconsolideerd).
 
-Een niet-gebonden variabele die in een documentfragment wordt gebruikt, wordt soms niet weergegeven in de ontwerpinterface. Dit kan gebeuren door een inline tekstregel in een documentfragment of in het geval van een voorwaardelement. In dergelijke gevallen wordt knopinfo, gemarkeerd in blauw, weergegeven als onderdeel van het documentfragment. In de knopinfo wordt het aantal niet-gebonden variabelen weergegeven dat in een documentfragment wordt gebruikt.
+Een niet-gebonden variabele die in een documentfragment wordt gebruikt, wordt soms niet weergegeven in de ontwerpinterface. Dit kan gebeuren door een inline tekstregel in een documentfragment of als er een voorwaardelement is. In dergelijke gevallen wordt knopinfo, gemarkeerd in blauw, weergegeven als onderdeel van het documentfragment. In de knopinfo wordt het aantal niet-gebonden variabelen weergegeven dat in een documentfragment wordt gebruikt.
 
 ![Niet-gebonden variabele](assets/df_unbound_variable_new.png)
 
@@ -199,7 +195,7 @@ Tik op het documentfragment en tik op ![configure_icon](assets/configure_icon.pn
    | Deelvenster | Hiermee kunt u een [Deelvenster](../../forms/using/create-interactive-communication.md#add-panel-component-to-the-web-channel) naar de interactieve communicatie. |
    | Tabel | Hiermee voegt u een tabel toe waarin u gegevens in rijen en kolommen kunt ordenen. |
    | Doelgebied | Hiermee voegt u een doelgebied in een webkanaal in om de webkanaalspecifieke componenten te ordenen. Het doelgebied is een normale container waarmee u webkanaalspecifieke componenten kunt groeperen. |
-   | Tekst | Voegt rijke tekst aan het Webkanaal van een Interactieve Mededeling toe. Tekst kan ook gebruikmaken van formuliergegevensmodelobjecten om de inhoud dynamisch te maken. |
+   | Tekst | Voegt rijke tekst aan het Webkanaal van een Interactieve Mededeling toe. Tekst kan ook formuliergegevensmodelobjecten gebruiken om de inhoud dynamisch te maken. |
    | Knop | Hiermee kunt u een [Knop](../../forms/using/create-interactive-communication.md#add-button-component-to-the-web-channel) naar de interactieve communicatie. Met de component Button kunt u naar andere interactieve communicatie, adaptieve formulieren, andere elementen zoals afbeeldingen of documentfragmenten of een externe URL navigeren. |
    | Scheidingsteken | Hiermee kunt u een horizontale lijn in een interactieve communicatie invoegen. Gebruik deze component om onderscheid te maken tussen secties in een correspondentie. U kunt bijvoorbeeld de sectie Scheidingsteken gebruiken om onderscheid te maken tussen Customer Details en Credit Card Details in een creditcardoverzicht. |
 
@@ -562,7 +558,7 @@ Tik op **[!UICONTROL Yes]**.
 
 ### Synchroniseren {#synchronize-1}
 
-Als u Afdrukken als stramien voor webkanaal gebruikt en wijzigingen aanbrengt in het kanaal Afdrukken, kunt u de inhoud synchroniseren om de zojuist aangebrachte wijzigingen door te voeren in het webkanaal.
+Als u Afdrukken als stramien voor webkanaal gebruikt en het kanaal Afdrukken wijzigt, kunt u de inhoud synchroniseren om de zojuist aangebrachte wijzigingen door te voeren in het webkanaal.
 
 1. Als u het webkanaal wilt synchroniseren met het kanaal Afdrukken, schakelt u over naar het kanaal Web en tikt u op het pictogram Meer opties.
 

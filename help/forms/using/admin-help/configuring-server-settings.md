@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 exl-id: 362b7b91-c58b-4e47-a6ef-56a4b54a100c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '2623'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Via de pagina Serverinstellingen hebt u toegang tot verschillende instellingen v
 
 ## E-mailinstellingen configureren {#configuring-email-settings}
 
-U kunt een e-mailaccount opgeven voor de formulierserver, waarmee e-mailberichten worden verzonden naar AEM gebruikers en beheerders van formulieren. Deze e-mailberichten worden gebruikt om gebruikers op de hoogte te brengen van en te herinneren aan taken die zij moeten voltooien, de gebruiker op de hoogte te stellen van taken die een deadline hebben bereikt en de beheerder op de hoogte te stellen van eventuele procesfouten.
+U kunt een e-mailaccount opgeven voor de Forms Server, waarmee e-mailberichten worden verzonden naar AEM gebruikers en beheerders van formulieren. Deze e-mailberichten worden gebruikt om gebruikers op de hoogte te brengen van en te herinneren aan taken die zij moeten voltooien, de gebruiker op de hoogte te stellen van taken die een deadline hebben bereikt en de beheerder op de hoogte te stellen van eventuele procesfouten.
 
 Als u het verzenden van e-mailberichten tussen AEM formulieren en gebruikers wilt inschakelen, configureert u de instellingen voor uitgaande e-mail op de pagina E-mailinstellingen. Uitgaande e-mail moet een server SMTP gebruiken.
 
@@ -288,7 +288,7 @@ Op de pagina van de Montages van de Configuratie BAM, plaatst u de verbindingen 
 1. Klik in de beheerconsole op Services > Forms workflow > Serverinstellingen > BAM Configuration Settings.
 1. Typ in het vak BAM-host de naam van de server waarop BAM wordt uitgevoerd. De standaardwaarde is localhost.
 1. Typ in het vak BAM-poort de poort die u wilt gebruiken om verbinding te maken met de server waarop BAM wordt uitgevoerd. De standaard BAM-poort voor JBoss is 8080, WebLogic is 7001 en WebSphere is 9080.
-1. Typ in het vak Serverhost de naam of het IP-adres van de server met hostformulieren. De standaardwaarde is localhost.
-1. Typ in het vak Serverpoort het poortnummer dat door de formulierserver wordt gebruikt.
+1. Typ in het vak Serverhost de naam of het IP-adres van de Forms-hostserver. De standaardwaarde is localhost.
+1. Typ in het vak Serverpoort het poortnummer dat door de Forms-server wordt gebruikt.
 1. Typ in de vakken Gebruikersnaam en Wachtwoord de juiste gebruikersnaam en het juiste wachtwoord voor toegang tot de BAM-server. De standaardgebruikersnaam is CognosNowAdmin en het standaardwachtwoord is manager.
 1. Klik op Opslaan.

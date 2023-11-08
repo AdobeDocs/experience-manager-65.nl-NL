@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: c303e967-944d-40b0-96ca-f91e2f42a0d0
 exl-id: 05f8b430-141e-4921-98b1-a0d8f636e478
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '296'
 ht-degree: 0%
@@ -28,7 +28,7 @@ Health Monitor biedt kritieke informatie over het AEM formuliersysteem, zoals se
 
 De pagina Health Monitor in de beheerconsole heeft drie tabbladen:
 
-* Het lusje van het Systeem toont middel controlerende grafieken en informatie over de vormenserver (of knoop in een gegroepeerde milieu). (Zie [Systeeminformatie weergeven](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
+* Het lusje van het Systeem toont middel controlerende grafieken en informatie over de Server van Forms (of knoop in een gegroepeerde milieu). (Zie [Systeeminformatie weergeven](/help/forms/using/admin-help/view-system-information.md#view-system-information).)
 * Op het tabblad Werkbeheer worden gegevens weergegeven die betrekking hebben op Werkbeheer, zoals het aantal werkitems in de werkbeheerwachtrij. U kunt de informatie filteren door diverse criteria te gebruiken of individuele het werkpunten te beheren door de verrichtingshulpmiddelen te gebruiken. (Zie [Statistieken weergeven met betrekking tot Werkbeheer](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 * Met het tabblad Planning voor taakverwijdering kunt u verouderde records uit de database van Taakbeheer verwijderen. (Zie [Records uit de taakbeheerdatabase wissen](/help/forms/using/admin-help/purge-records-job-manager-database.md#purge-records-from-the-job-manager-database).)
 
@@ -36,4 +36,4 @@ De webpagina Health Monitor wordt gevuld met statistieken die via een Gemfire-AP
 
 **Toegangsmonitor**
 
-1. Klik in de beheerconsole op Health Monitor in de rechterbovenhoek van de pagina.
+1. Klik in de beheerconsole op Health Monitor rechtsboven op de pagina.

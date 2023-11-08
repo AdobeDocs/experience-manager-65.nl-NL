@@ -10,16 +10,16 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 exl-id: 292874bf-2ee6-4638-937c-f8f26c93ca65
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '483'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
 
 # Weergaven van pagina-eigenschappen aanpassen{#customizing-views-of-page-properties}
 
-Elke pagina heeft een set [eigenschappen](/help/sites-authoring/editing-page-properties.md) die door gebruikers kunnen worden bekeken en bewerkt; Sommige zijn vereist voor het maken van de pagina (de weergave Maken), andere kunnen in een later stadium worden weergegeven en bewerkt (de weergave Bewerken). Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster ( `cq:dialog`) van het desbetreffende pagina-onderdeel.
+Elke pagina heeft een set [eigenschappen](/help/sites-authoring/editing-page-properties.md) die door gebruikers kunnen worden weergegeven en bewerkt; sommige zijn vereist voor het maken van de pagina (weergave maken), andere kunnen in een later stadium worden weergegeven en bewerkt (weergave bewerken). Deze pagina-eigenschappen worden gedefinieerd en beschikbaar gesteld door het dialoogvenster ( `cq:dialog`) van het desbetreffende pagina-onderdeel.
 
 >[!CAUTION]
 >
@@ -60,7 +60,7 @@ U kunt ook de beschikbare velden configureren door het dialoogvenster van de pag
 Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring/managing-pages.md#creating-a-new-page) geeft de velden weer die onder zijn gegroepeerd **Meer titels en beschrijving**. Om deze te verbergen vormt u:
 
 1. De pagina-component maken onder `/apps`.
-1. Overschrijven maken (met *Diff* door de [Samenvoegen van verkoopbronnen](/help/sites-developing/sling-resource-merger.md)) voor de `basic` sectie van uw paginacomponent; bijvoorbeeld:
+1. Overschrijven maken (met *Diff* door de [Samenvoeging van verkoopbronnen](/help/sites-developing/sling-resource-merger.md)) voor de `basic` sectie van uw paginacomponent; bijvoorbeeld:
 
    ```xml
    <your-page-component>/cq:dialog/content/items/tabs/items/basic
@@ -72,13 +72,13 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
    >
    >    `/libs/wcm/foundation/components/basicpage/v1/basicpage/cq:dialog`
    >
-   U ***moet*** niets wijzigen in de `/libs` pad.
+   U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
    >
    Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >
    De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
+   1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
    1. Breng wijzigingen aan in `/apps`
 
 1. Stel de `path` eigenschap op `basic` om naar de opheffing van het basislusje te wijzen (zie ook de volgende stap). Bijvoorbeeld:
@@ -87,7 +87,7 @@ Standaard worden bijvoorbeeld de [**Pagina maken** wizard](/help/sites-authoring
    /apps/demos/components/page/tabs/basic
    ```
 
-1. Een overschrijving maken van de `basic` - `moretitles` het desbetreffende pad; bijvoorbeeld:
+1. Een overschrijving maken van de `basic` - `moretitles` het desbetreffende pad, bijvoorbeeld:
 
    ```xml
    /apps/demos/components/page/tabs/basic/items/column/items/moretitles
@@ -107,7 +107,7 @@ Zie wanneer u pagina-eigenschappen configureert voor gebruik met live kopieën [
 
 ## Voorbeeldconfiguratie van pagina-eigenschappen {#sample-configuration-of-page-properties}
 
-In dit voorbeeld ziet u de dialoochtechniek van het dialoogvenster [Samenvoegen van verkoopbronnen](/help/sites-developing/sling-resource-merger.md); inclusief het gebruik van [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Het illustreert ook het gebruik van beide `cq:showOnCreate` en `cq:hideOnEdit`.
+In dit voorbeeld ziet u de dialoochtechniek van het dialoogvenster [Samenvoeging van verkoopbronnen](/help/sites-developing/sling-resource-merger.md); inclusief het gebruik van [`sling:orderBefore`](/help/sites-developing/sling-resource-merger.md#properties). Het illustreert ook het gebruik van beide `cq:showOnCreate` en `cq:hideOnEdit`.
 
 CODE VOOR GITHUB
 

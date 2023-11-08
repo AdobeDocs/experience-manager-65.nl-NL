@@ -1,20 +1,16 @@
 ---
 title: Formuliergegevens berekenen
-seo-title: Calculating Form Data
 description: Met de Forms-service kunt u waarden berekenen die een gebruiker in een formulier invoert en de resultaten weergeven. De dienst van Forms berekent de waarden gebruikend Java API en de Dienst API van het Web.
-seo-description: Use the Forms service to calculate values that a user enters into a form and display the results. Forms service calculates the values using the Java API and Web Service API.
-uuid: ccd85bc7-8ccc-44d9-9424-dfc1f603e688
 contentOwner: admin
 content-type: reference
 geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
-discoiquuid: b4f57e42-60a6-407d-9764-15a11615827d
 role: Developer
 exl-id: 28abf044-6c8e-4578-ae2e-54cdbd694c5f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1878'
+source-wordcount: '1876'
 ht-degree: 0%
 
 ---
@@ -29,7 +25,7 @@ Tijdens het ontwerpen van formulieren kunt u berekeningen en scripts gebruiken o
 
 De gebruiker voert waarden in het formulier in en klikt op de knop Berekenen om de resultaten weer te geven. In het volgende proces wordt een voorbeeldtoepassing beschreven waarmee een gebruiker gegevens kan berekenen:
 
-* De gebruiker heeft toegang tot een HTML-pagina met de naam StartLoan.html die fungeert als de startpagina van de webtoepassing. Deze pagina roept een Java-server aan met de naam `GetLoanForm`.
+* De gebruiker heeft toegang tot een HTML-pagina met de naam StartLoan.html die fungeert als startpagina van de webtoepassing. Deze pagina roept een Java-server aan met de naam `GetLoanForm`.
 * De `GetLoanForm` servlet geeft een leningformulier weer . Dit formulier bevat een script, interactieve velden, een knop Berekenen en een knop Verzenden.
 * De gebruiker voert waarden in de velden van het formulier in en klikt op de knop Berekenen. Het formulier wordt verzonden naar de `CalculateData` Java Server waar het script wordt uitgevoerd. Het formulier wordt teruggestuurd naar de gebruiker met de berekeningsresultaten die in het formulier worden weergegeven.
 * De gebruiker gaat verder met het invoeren en berekenen van waarden totdat een bevredigend resultaat wordt weergegeven. Als de gebruiker tevreden is, klikt u op de knop Verzenden om het formulier te verwerken. Het formulier wordt verzonden naar een andere Java-server met de naam `ProcessForm` die verantwoordelijk is voor het ophalen van de verzonden gegevens. (Zie [Verzendde Forms afhandelen](/help/forms/developing/rendering-forms.md#handling-submitted-forms).)
@@ -139,7 +135,7 @@ Formuliergegevens berekenen met de Forms API (Java):
 
 1. Projectbestanden opnemen
 
-   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project.
+   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassepad van uw Java-project.
 
 1. Een Forms Client API-object maken
 
@@ -163,7 +159,7 @@ Formuliergegevens berekenen met de Forms API (Java):
 1. De formuliergegevensstroom terugschrijven naar de webbrowser van de client
 
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
-   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
+   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object `getOutputContent` methode.
    * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
    * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read` en de bytearray doorgeven als een argument.
    * De `javax.servlet.ServletOutputStream` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.

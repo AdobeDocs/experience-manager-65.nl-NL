@@ -9,9 +9,9 @@ feature: Commerce Integration Framework
 kt: 4933
 thumbnail: 34350.jpg
 exl-id: 0125021a-1c00-4ea3-b7fb-1533b7b9f4f2
-source-git-commit: 1ef5593495b4bf22d2635492a360168bccc1725d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '898'
+source-wordcount: '896'
 ht-degree: 3%
 
 ---
@@ -28,11 +28,11 @@ ht-degree: 3%
 
 ## Configuratie {#configuration}
 
-Om het `UrlProvider` De dienst volgens de SEO vereisten en vereist een project moet een configuratie OSGI voor de &quot;configuratie van de Leverancier CIF&quot;verstrekken.
+Om te vormen `UrlProvider` De dienst volgens de eisen van SEO en vereist een project moet een configuratie OSGI voor de &quot;CIF configuratie van de Leverancier URL&quot;verstrekken.
 
 >[!NOTE]
 >
->Sinds versie 2.0.0 van de AEM CIF Core Components, verstrekt de configuratie van de Leverancier URL slechts vooraf bepaalde url formaten, in plaats van vrij-tekst configureerbare formaten die van 1.x versies worden gekend. Bovendien is het gebruik van kiezers voor het doorgeven van gegevens in URL&#39;s vervangen door achtervoegsels.
+>Sinds versie 2.0.0 van de AEM CIF Core Components, verstrekt de configuratie van de Leverancier URL slechts vooraf bepaalde formaten url, in plaats van vrij-tekst configureerbare formaten die van 1.x versies bekend worden. Bovendien is het gebruik van kiezers voor het doorgeven van gegevens in URL&#39;s vervangen door achtervoegsels.
 
 ### URL-indeling van productpagina {#product}
 
@@ -44,7 +44,7 @@ Hiermee configureert u de URL&#39;s van de productpagina&#39;s en ondersteunt u 
 * `{{page}}.html/{{url_path}}.html#{{variant_sku}}`
 * `{{page}}.html/{{sku}}/{{url_path}}.html#{{variant_sku}}`
 
-In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
+Als er een [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/product-page`
 * `{{sku}}` wordt bijvoorbeeld vervangen door de SKU van het product, `VP09`
@@ -52,7 +52,7 @@ In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-gui
 * `{{url_path}}` wordt vervangen door `url_path`, bijvoorbeeld `venia-bottoms/venia-pants/lenora-crochet-shorts`
 * `{{variant_sku}}` wordt vervangen door bijvoorbeeld de geselecteerde variant; `VP09-KH-S`
 
-Aangezien `url_path` verouderd zijn, de vooraf gedefinieerde product-URL-indelingen gebruiken de `url_rewrites` en kies het pad met de meeste padsegmenten als alternatief `url_path` is niet beschikbaar.
+Aangezien de `url_path` verouderd zijn, de vooraf gedefinieerde product-URL-indelingen gebruiken de indeling van een product `url_rewrites` en kies het pad met de meeste padsegmenten als alternatief `url_path` is niet beschikbaar.
 
 Met de bovenstaande voorbeeldgegevens ziet een product-variant-URL die is opgemaakt met de standaard-URL-indeling eruit als `/content/venia/us/en/products/product-page.html/VP09.html#VP09-KH-S`.
 
@@ -63,7 +63,7 @@ Hiermee configureert u de URL&#39;s van de pagina&#39;s in de categorie- of prod
 * `{{page}}.html/{{url_path}}.html` (standaard)
 * `{{page}}.html/{{url_key}}.html`
 
-In het geval van de [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
+Als er een [Venia Reference Store](https://github.com/adobe/aem-cif-guides-venia):
 
 * `{{page}}` wordt vervangen door `/content/venia/us/en/products/category-page`
 * `{{url_key}}` wordt vervangen door de categorie `url_key` eigenschap
@@ -73,15 +73,15 @@ Met de bovenstaande voorbeeldgegevens ziet een categoriepagina-URL die is opgema
 
 >[!NOTE]
 > 
->De `url_path` is een aaneenschakeling van `url_keys` van een product of categorie en het product of de categorie `url_key` gescheiden door `/` schuine streep.
+>De `url_path` is een aaneenschakeling van `url_keys` van een product of categorie en het product of de categorie `url_key` gescheiden door `/` slash.
 
 ### Specifieke categorie-/productpagina&#39;s {#specific-pages}
 
-Het is mogelijk om [meerdere categorieën en productpagina&#39;s](multi-template-usage.md) alleen voor een specifieke subset van categorieën of producten van een catalogus.
+Het is mogelijk [meerdere categorieën en productpagina&#39;s](multi-template-usage.md) alleen voor een specifieke subset van categorieën of producten van een catalogus.
 
 De `UrlProvider` vooraf geconfigureerd is om diepgaande koppelingen naar dergelijke pagina&#39;s te genereren op instanties van de auteurslaag. Dit is handig voor editors die in de modus Voorbeeld door een site bladeren, naar een specifiek product of een bepaalde categoriepagina navigeren en terugschakelen naar de modus Bewerken om de pagina te bewerken.
 
-Bij publicatie-klasseninstanties daarentegen moeten URL&#39;s van cataloguspagina&#39;s stabiel worden gehouden om bijvoorbeeld geen winsten op beoordelingen van zoekmachines te verliezen. Vanwege deze publicatie-tier-instanties worden er geen diepgaande koppelingen naar specifieke cataloguspagina&#39;s per standaard weergegeven. Als u dit gedrag wilt wijzigen, _Specifieke paginastrategie CIF URL-provider_ kan worden gevormd om specifieke paginaURL&#39;s altijd te produceren.
+Bij publicatie-klasseninstanties daarentegen moeten URL&#39;s van cataloguspagina&#39;s stabiel worden gehouden om bijvoorbeeld geen winsten op beoordelingen van zoekprogramma&#39;s te verliezen. Vanwege deze publicatie-tier-instanties worden er geen diepgaande koppelingen naar specifieke cataloguspagina&#39;s per standaard weergegeven. Als u dit gedrag wilt wijzigen, _Specifieke paginastrategie voor URL-provider CIF_ kan worden gevormd om specifieke paginaURL&#39;s altijd te produceren.
 
 ## Aangepaste URL-indelingen {#custom-url-format}
 
@@ -91,11 +91,11 @@ De de formaatimplementaties van douaneURL moeten een paar methodes uitvoeren om 
 
 ## Combineren met Sling Mappings {#sling-mapping}
 
-Naast de `UrlProvider`is het ook mogelijk [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) om URL&#39;s te herschrijven en te verwerken. Het project AEM Archetype biedt ook [een voorbeeldconfiguratie](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Wijzen van het Monteren voor haven 4503 (publiceren) en 80 (Verzender) te vormen.
+Naast de `UrlProvider`is het ook mogelijk om [Sling Mappings](https://sling.apache.org/documentation/the-sling-engine/mappings-for-resource-resolution.html) om URL&#39;s te herschrijven en te verwerken. Het project AEM Archetype biedt ook [een voorbeeldconfiguratie](https://github.com/adobe/aem-cif-project-archetype/tree/master/src/main/archetype/samplecontent/src/main/content/jcr_root/etc/map.publish) om sommige Wijzen van het Monteren voor haven 4503 (publiceren) en 80 (Verzender) te vormen.
 
 ## Combineren met AEM Dispatcher {#dispatcher}
 
-URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` module. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basisomvat [herschrijfregels](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de gegenereerde grootte.
+URL herschrijft kan ook worden bereikt door AEM Dispatcher HTTP-server met `mod_rewrite` -module. De [Projectarchetype AEM](https://github.com/adobe/aem-project-archetype) verstrekt een verwijzing AEM Dispatcher config die reeds basisomvat [herschrijfregels](https://github.com/adobe/aem-project-archetype/tree/master/src/main/archetype/dispatcher.cloud) voor de gegenereerde grootte.
 
 ## Voorbeeld
 

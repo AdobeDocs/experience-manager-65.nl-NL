@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: d51460d9-c96c-4661-b93e-e015427878ab
 exl-id: 27a2e81c-47b0-4de8-95bd-7cb34b9450da
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
@@ -51,9 +51,9 @@ In het linkerdeelvenster van het tabblad Systeem wordt de volgende informatie ov
 
 **Tijd compileren:** De hoeveelheid tijd die in compilatie wordt doorgebracht.
 
-**Aantal actieve draden:** Het totale aantal draden dat momenteel in het systeem van AEM formulieren aanwezig is.
+**Aantal Live Threads:** Het totale aantal draden dat momenteel in het systeem van AEM formulieren aanwezig is.
 
-**Aantal draden Piek:** Het grootste aantal live threads dat ooit op het systeem is opgenomen.
+**Aantal Threads Peak:** Het grootste aantal live threads dat ooit op het systeem is opgenomen.
 
 **Aantal geladen klassen:** Aantal klassen dat in JVM wordt geladen.
 
@@ -63,9 +63,9 @@ In het linkerdeelvenster van het tabblad Systeem wordt de volgende informatie ov
 
 **Maximale heap:** De maximale hoeveelheid heap die is gebruikt.
 
-**Naam besturingssysteem:** De naam van het besturingssysteem dat op de AEM formulierserver wordt uitgevoerd.
+**Naam besturingssysteem:** De naam van het besturingssysteem dat op de AEM Forms-server wordt uitgevoerd.
 
-**Versie besturingssysteem:** Versienummer van het besturingssysteem dat op de AEM formulierserver wordt uitgevoerd.
+**Versie besturingssysteem:** Versienummer van het besturingssysteem dat op de AEM Forms-server wordt uitgevoerd.
 
 **Arch besturingssysteem:** De architectuur van het besturingssysteem waarop de JVM wordt uitgevoerd.
 
@@ -87,13 +87,13 @@ In het linkerdeelvenster van het tabblad Systeem wordt de volgende informatie ov
 
 **Datum installatie:** Datum (in jjjj-mm-dd formaat) waarop AEM formulieren zijn geïnstalleerd.
 
-**Versie AEM formulieren:** Versie van AEM formulieren die is geïnstalleerd.
+**Versie AEM formulieren:** Versie van AEM geïnstalleerde formulieren.
 
 **Patchversie:** AEM formulier patchnummer.
 
-**Databasenaam:** Type database dat door AEM formulieren wordt gebruikt.
+**Databasenaam:** Het type database dat door AEM formulieren wordt gebruikt.
 
-**Databaseversie:** Versienummer van de database die door AEM formulieren wordt gebruikt.
+**Versie database:** Versienummer van de database die door AEM formulieren wordt gebruikt.
 
 **Naam databasestation:** De naam van het stuurprogramma dat door de JVM wordt gebruikt om verbinding te maken met de database.
 

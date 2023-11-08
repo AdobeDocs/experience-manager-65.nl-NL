@@ -6,7 +6,7 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: facbeab2-de95-4778-894c-faa771d3391e
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1323'
 ht-degree: 0%
@@ -23,7 +23,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 
 >[!NOTE]
 >
->Nadat u de HSM-configuratie hebt gewijzigd, start u de AEM-formulierserver opnieuw.
+>Nadat u de HSM-configuratie hebt gewijzigd, start u de AEM Forms Server opnieuw.
 
 ## Een alias maken voor een HSM-referentie wanneer het HSM-apparaat online is {#create-an-alias-for-an-hsm-credential-when-the-hsm-device-is-online}
 
@@ -50,7 +50,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 1. Selecteer in de lijst Slot-type de optie Groef-id, Slot-index of Token-naam en geef een waarde op in het vak Slot-info. AEM formulieren gebruiken deze instellingen om te bepalen waar de referenties op de HSM worden opgeslagen.
 
    * **Tokennaam:** Komt overeen met een verdelingsnaam (bijvoorbeeld, HSMPART1).
-   * **Groef-id:** De sleuf-id is een geheel getal dat overeenkomt met de sleuf en dat op zijn beurt weer overeenkomt met een partitie. De client (formulierserver) is bijvoorbeeld eerst geregistreerd bij de HSMPART1-partitie. Dit brengt groef 1 aan de verdeling HSMPART1, voor deze cliënt in kaart. Omdat HSMPART1 de eerste geregistreerde verdeling is, is identiteitskaart van de Slot 1 en u zou Informatie van de Slot aan 1 plaatsen.
+   * **Groef-id:** De sleuf-id is een geheel getal dat overeenkomt met de sleuf en dat op zijn beurt weer overeenkomt met een partitie. Bijvoorbeeld, de cliënt (de Server van Forms) die met de verdeling HSMPART1 eerst wordt geregistreerd. Dit brengt groef 1 aan de verdeling HSMPART1, voor deze cliënt in kaart. Omdat HSMPART1 de eerste geregistreerde verdeling is, is identiteitskaart van de Slot 1 en u zou Informatie van de Slot aan 1 plaatsen.
 
      De groef ID wordt geplaatst op een cliënt-door-cliënt basis. Als u een tweede machine aan een verschillende verdeling (bijvoorbeeld, HSMPART2 op het zelfde apparaat HSM) registreerde, dan zou groef 1 met de verdeling HSMPART2 voor die cliënt worden geassocieerd.
 
@@ -73,7 +73,7 @@ AEM formulieren Digitale handtekeningen kunnen referenties gebruiken die op een 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidswinkelbeheer > HSM-referenties.
 1. Klik op het selectievakje naast de referentie die u wilt controleren en klik op Status controleren.
 
-De kolom Status geeft de huidige status van de referentie aan. Bij een fout wordt een rode X weergegeven in de kolom Status. Houd de muis boven de X om knopinfo weer te geven die de oorzaak van de fout bevat.
+De kolom Status geeft de huidige status van de referentie aan. Als er een fout optreedt, wordt een rode X weergegeven in de kolom Status. Houd de muis boven de X om knopinfo weer te geven die de oorzaak van de fout bevat.
 
 ## Eigenschappen van HSM-referentie-aliassen bijwerken {#update-hsm-credential-alias-properties}
 
@@ -83,7 +83,7 @@ De kolom Status geeft de huidige status van de referentie aan. Bij een fout word
 
 ## Alle HSM-verbindingen herstellen {#reset-all-hsm-connections}
 
-Herstel de open verbindingen aan een apparaat HSM na om het even welke verstoring aan de netwerkzitting tussen de vormenserver en het apparaat HSM. Bijvoorbeeld, kunnen de onderbrekingen gebeuren toe te schrijven aan een netwerkstroomonderbreking of het apparaat HSM dat offline voor een softwareupdate wordt genomen. Na een onderbreking, zijn de bestaande verbindingen stabiel en om het even welke ondertekenende verzoeken tegen die verbindingen ontbreken. Met de optie Alle HSM-verbindingen herstellen wist u de oude verbindingen.
+Herstel de open verbindingen aan een apparaat HSM na om het even welke verstoring aan de netwerkzitting tussen de Server van Forms en het apparaat HSM. Bijvoorbeeld, kunnen de onderbrekingen gebeuren toe te schrijven aan een netwerkstroomonderbreking of het apparaat HSM dat offline voor een softwareupdate wordt genomen. Na een onderbreking, zijn de bestaande verbindingen stabiel en om het even welke ondertekenende verzoeken tegen die verbindingen ontbreken. Met de optie Alle HSM-verbindingen herstellen wist u de oude verbindingen.
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidswinkelbeheer > HSM-referenties.
 1. Klik op Alle HSM-verbindingen herstellen.

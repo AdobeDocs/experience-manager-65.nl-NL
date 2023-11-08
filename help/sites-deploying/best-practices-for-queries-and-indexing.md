@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 6dfaa14d-5dcf-4e89-993a-8d476a36d668
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4600'
+source-wordcount: '4598'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ In het algemeen, wordt het geadviseerd u de indexen van Lucene tenzij er een dwi
 
 ### Solr Indexering {#solr-indexing}
 
-AEM biedt standaard ook ondersteuning voor Solr-indexering. Dit wordt gebruikt om volledige tekstonderzoek te steunen, maar het kan ook worden gebruikt om om het even welk type van vraag te steunen JCR. Solr zou moeten worden overwogen wanneer de AEM instanties niet de capaciteit van cpu hebben om het aantal vragen te behandelen die in onderzoek intensieve plaatsingen zoals onderzoek gedreven websites met een hoog aantal gezamenlijke gebruikers worden vereist. Alternatief, kan Solr in een op kruipper-gebaseerde benadering worden uitgevoerd om enkele meer geavanceerde eigenschappen van het platform te gebruiken.
+AEM ondersteunt standaard ook Solr-indexering. Dit wordt gebruikt om volledige tekstonderzoek te steunen, maar het kan ook worden gebruikt om om het even welk type van vraag te steunen JCR. Solr zou moeten worden overwogen wanneer de AEM instanties niet de capaciteit van cpu hebben om het aantal vragen te behandelen die in onderzoek intensieve plaatsingen zoals onderzoek gedreven websites met een hoog aantal gezamenlijke gebruikers worden vereist. Alternatief, kan Solr in een op kruipper-gebaseerde benadering worden uitgevoerd om enkele meer geavanceerde eigenschappen van het platform te gebruiken.
 
 Solr indexen kunnen worden gevormd om ingebed op de AEM server voor ontwikkelingsmilieu&#39;s in werking te stellen of aan een verre instantie kunnen worden geoffload om onderzoeksscalability op de productie en het opvoeren milieu&#39;s te verbeteren. Hoewel het offloaden van onderzoek scalability verbetert, introduceert het latentie en wegens dit, wordt niet geadviseerd tenzij vereist. Voor meer informatie over hoe te om de integratie van Solr te vormen en hoe te om de indexen van Solr tot stand te brengen zie [Oak- en indexeringsdocumentatie](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 

@@ -11,9 +11,9 @@ discoiquuid: f79828d8-2230-4477-8ffa-eeb6a0413acd
 docset: aem65
 feature: Adaptive Forms, Acrobat Sign
 exl-id: a8decba9-229d-40a2-992a-3cc8ebefdd6d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '3733'
+source-wordcount: '3734'
 ht-degree: 0%
 
 ---
@@ -201,7 +201,7 @@ U kunt slechts één ondertekenaar of meerdere ondertekenaars hebben voor een ad
 
    * **[!UICONTROL Is the signer and the person filling the form same?]:** Selecteren **Ja**, als de invuller van het formulier en de eerste ondertekenaar dezelfde persoon zijn. Als de optie is ingesteld op **Nee,** gebruikt u de component voor de stap Handtekening vervolgens niet in het adaptieve formulier. Als het formulier een component Handtekeningstap bevat, wordt het veld automatisch ingesteld op Ja.
 
-   * **[!UICONTROL Signer Email address]:** Geef het e-mailadres van de ondertekenaar op. Ondertekenaar ontvangt om ondertekende documenten/formulier te zijn op het opgegeven e-mailadres. U kunt een e-mailadres gebruiken dat wordt opgegeven in een formulierveld, in AEM gebruikersprofiel van de aangemelde gebruiker, of handmatig een e-mailadres invoeren. Het is een verplichte stap. Zorg ervoor dat het e-mailadres van de eerste ondertekenaar of de enige ondertekenaar (in het geval van één ondertekenaar) niet hetzelfde is als [!DNL Adobe Sign] account gebruikt om AEM cloudservices te configureren.
+   * **[!UICONTROL Signer Email address]:** Geef het e-mailadres van de ondertekenaar op. Ondertekenaar ontvangt om ondertekende documenten/formulier te zijn op het opgegeven e-mailadres. U kunt een e-mailadres gebruiken dat wordt opgegeven in een formulierveld, in AEM gebruikersprofiel van de aangemelde gebruiker, of handmatig een e-mailadres invoeren. Het is een verplichte stap. Zorg ervoor dat het e-mailadres van de eerste ondertekenaar of de enige ondertekenaar (als er één ondertekenaar is) niet hetzelfde is als [!DNL Adobe Sign] account gebruikt om AEM cloudservices te configureren.
 
    * **[!UICONTROL Signer Authentication Method]:** Geef de methode op voor het verifiëren van een gebruiker voordat u een formulier voor ondertekening opent. U kunt tussen telefoon, kennisbasis, en sociale op identiteit-gebaseerde authentificatie kiezen. Voor Adobe Acrobat Sign Solutions for Government zijn alleen opties voor telefoon en verificatie op basis van kennis beschikbaar.
 
@@ -355,7 +355,7 @@ Wanneer [!DNL Adobe Sign] de service is geconfigureerd voor een adaptief formuli
 * Zorg ervoor dat de API-toepassing ingeschakeld is [!DNL Adobe Sign] server gebruikt om te vormen [!DNL Adobe Sign] Cloud-service heeft vereiste machtigingen.
 * Als u meerdere [!DNL Adobe Sign] Cloudservices, wijs naar de **[!UICONTROL oAuth URL]** van alle diensten **[!UICONTROL Adobe Sign Shard]**.
 
-* Afzonderlijke e-mailadressen gebruiken om te configureren [!DNL Adobe Sign] account en voor de eerste ondertekenaar en één ondertekenaar. Het e-mailadres van de eerste ondertekenaar of de enige ondertekenaar (in het geval van de enkele ondertekenaar) mag niet hetzelfde zijn als [!DNL Adobe Sign] account gebruikt om AEM cloudservices te configureren.
+* Afzonderlijke e-mailadressen gebruiken om te configureren [!DNL Adobe Sign] account en voor de eerste ondertekenaar en één ondertekenaar. Het e-mailadres van de eerste ondertekenaar of de enige ondertekenaar (als er één ondertekenaar is) mag niet hetzelfde zijn als [!DNL Adobe Sign] account gebruikt om AEM cloudservices te configureren.
 
 ### AEM [!DNL Forms] workflow geconfigureerd voor een [!DNL Adobe Sign] ingeschakeld adaptief formulier wordt niet gestart {#adobe-sign-aem-form-workflow-failures}
 

@@ -3,9 +3,9 @@ title: Actieve kopieën maken en synchroniseren
 description: Leer hoe u Actieve kopieën maakt en synchroniseert in Adobe Experience Manager.
 feature: Multi Site Manager
 exl-id: 896b35dd-4510-4c94-8615-03d9649c2f64
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4226'
+source-wordcount: '4227'
 ht-degree: 0%
 
 ---
@@ -424,7 +424,7 @@ De [Handeling voor hervatten is ook beschikbaar via het Live Copy-overzicht](/he
 
 ### Overervingsdiepte wijzigen (Ondiep/Ondiep) {#changing-inheritance-depth-shallow-deep}
 
-Op een bestaande live kopie kunt u de diepte van een pagina wijzigen, zodat u kunt zien of onderliggende pagina&#39;s worden opgenomen.
+Op een bestaande live kopie kunt u de diepte van een pagina wijzigen, dat wil zeggen of onderliggende pagina&#39;s worden opgenomen.
 
 * Schakelen naar een oppervlakkige live kopie:
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: components
 exl-id: a8d50c09-72d0-406e-874e-50a985227a56
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2318'
+source-wordcount: '2319'
 ht-degree: 0%
 
 ---
@@ -300,7 +300,7 @@ Gebruik de volgende procedure om talen toe te voegen of te verwijderen.
 
    >[!NOTE]
    >
-   >De vertaler slaat alleen vertalingen op voor daadwerkelijk gebruikte talen [aanwezig in het woordenboek](#creating-a-dictionary) (d.w.z. onder het woordenboekpad, zoals `/apps/myProject/i18n`).
+   >De vertaler slaat alleen vertalingen op voor daadwerkelijk gebruikte talen [aanwezig in het woordenboek](#creating-a-dictionary) (dus onder het woordenboekpad, bijvoorbeeld `/apps/myProject/i18n`).
    >
    >Zorg ervoor dat deze overeenkomen met de talen die worden weergegeven in het raster.
 

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-on-demand-services-app
 exl-id: 397def36-45b2-47a7-b103-99ca22b6dae1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2658'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ In de publicatiemodus (bijvoorbeeld wanneer de app wordt geëxporteerd met Conte
 
 Er is slechts één pagina van HTML in een SPA (een pagina die het `<html>` element). Deze pagina wordt de &#39;lay-outsjabloon&#39; genoemd. In de terminologie van de Angular, is het &quot;...een malplaatje dat voor alle meningen in onze toepassing gemeenschappelijk is.&quot; Beschouw deze pagina als de &#39;toepassingspagina op het hoogste niveau&#39;. Volgens afspraak is de toepassingspagina op het hoogste niveau de `cq:Page` knooppunt van uw toepassing dat zich het dichtst bij de hoofdmap bevindt (en geen omleiding is).
 
-Aangezien de werkelijke URI van uw app niet verandert in de publicatiemodus, moeten verwijzingen naar externe elementen van deze pagina gebruikmaken van relatieve paden. Daarom is er een speciale afbeeldingscomponent die rekening houdt met deze pagina op het hoogste niveau wanneer u afbeeldingen rendert voor exporteren.
+Aangezien de werkelijke URI van uw app niet verandert in de publicatiemodus, moeten verwijzingen naar externe elementen van deze pagina gebruikmaken van relatieve paden. Daarom is er een speciale afbeeldingscomponent die rekening houdt met deze pagina op hoofdniveau wanneer u afbeeldingen rendert die u wilt exporteren.
 
 Als SPA, produceert deze pagina van het lay-outmalplaatje eenvoudig een div element met een ng-meningsrichtlijn.
 
@@ -128,7 +128,7 @@ Indien nodig, kunt u dit manuscript met voeten treden om complexere wegen, met i
 
 ### angular-app-controllers.js.jsp {#angular-app-controllers-js-jsp}
 
-In Angular, telegraferen de Controllers omhoog variabelen in \$scope, die hen aan de mening blootstellen. Het angular-app-controllers.js.jsp-script volgt het patroon dat wordt geïllustreerd door angular-app-module.js.jsp in die zin dat het elke afstammende pagina (inclusief zichzelf) doorloopt en het controllerfragment uitvoert dat elke pagina definieert (via controller.js.jsp). De module die het bepaalt wordt geroepen `cqAppControllers` en moet worden vermeld als een afhankelijkheid van de app-module van het hoogste niveau, zodat de paginakaartcontrollers beschikbaar worden gemaakt.
+In Angular, telegraferen de Controllers omhoog variabelen in \$scope, die hen aan de mening blootstellen. Het angular-app-controllers.js.jsp-script volgt het patroon dat wordt geïllustreerd door angular-app-module.js.jsp in die zin dat het elke afstammende pagina (inclusief zichzelf) doorloopt en het controllerfragment uitvoert dat elke pagina definieert (via controller.js.jsp). De module die het bepaalt wordt geroepen `cqAppControllers` en moet worden vermeld als een afhankelijkheid van de app-module op het hoogste niveau, zodat de paginakaartcontrollers beschikbaar worden gemaakt.
 
 ### controller.js.jsp {#controller-js-jsp}
 
@@ -160,11 +160,11 @@ Dit manuscript output eenvoudig de Angular gebiedsdelen van de top-level Angular
 
 ### header.jsp {#header-jsp}
 
-Een script waarmee statische inhoud boven aan de app wordt geplaatst. Deze inhoud wordt opgenomen door de pagina op het hoogste niveau, buiten het bereik van de niet-weergave.
+Een script waarmee statische inhoud boven aan de app wordt geplaatst. Deze inhoud wordt opgenomen door de pagina op hoofdniveau, buiten het bereik van de niet-weergegeven weergave.
 
 ### footer.jsp {#footer-jsp}
 
-Een script waarmee statische inhoud onder aan de app wordt geplaatst. Deze inhoud wordt opgenomen door de pagina op het hoogste niveau, buiten het bereik van de niet-weergave.
+Een script waarmee statische inhoud onder aan de app wordt geplaatst. Deze inhoud wordt opgenomen door de pagina op hoofdniveau, buiten het bereik van de niet-weergegeven weergave.
 
 ### js_clientlibs.jsp {#js-clientlibs-jsp}
 
@@ -191,7 +191,7 @@ Noteer GUID &#39;24BA22ED-7D06-4330-B7EB-F6FC73251CA3&#39; in het pad.
 
 Als ontwikkelaar van PhoneGap, wordt de inhoud die u betrokken bent gevestigd onder de folder www. Gebruik relatieve paden om toegang te krijgen tot de elementen van de app.
 
-Uw PhoneGap-toepassing gebruikt het toepassingspatroon (SPA) van één pagina om het probleem te verhelpen, zodat de basis-URI (exclusief de hash) nooit wordt gewijzigd. Daarom elk middel, malplaatje, of manuscript dat u van verwijzingen voorziet **moet relatief zijn ten opzichte van de pagina op het hoogste niveau.** De pagina op het hoogste niveau initialiseert de Angular die en controlemechanismen wegens `*<name>*.angular-app-module.js` en `*<name>*.angular-app-controllers.js`. Deze pagina zou de dichtstbijzijnde pagina moeten zijn van de basis van de repository die *geen *extend een sling:redirect.
+Uw PhoneGap-toepassing gebruikt het toepassingspatroon (SPA) van één pagina om het probleem te verhelpen, zodat de basis-URI (exclusief de hash) nooit wordt gewijzigd. Daarom elk middel, malplaatje, of manuscript dat u van verwijzingen voorziet **moet relatief zijn ten opzichte van de pagina op het hoogste niveau.** De top-level pagina initialiseert de Angular die en controlemechanismen wegens `*<name>*.angular-app-module.js` en `*<name>*.angular-app-controllers.js`. Deze pagina zou de dichtstbijzijnde pagina moeten zijn van de basis van de repository die *geen *extend een sling:redirect.
 
 Er zijn verschillende helpermethoden beschikbaar voor het omgaan met relatieve paden:
 

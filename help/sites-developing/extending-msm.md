@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2577'
+source-wordcount: '2582'
 ht-degree: 0%
 
 ---
@@ -195,7 +195,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
    >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
-   >* Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
+   >* Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
    >* Breng wijzigingen aan in `/apps`
 
 1. Krachtens deze **Maken** een knooppunt met de volgende eigenschappen:
@@ -655,11 +655,11 @@ Als bijvoorbeeld twee nieuwe pagina-eigenschappen worden toegevoegd:
 
 * E-mailadres contactpersoon:
 
-   * Dit onroerend goed hoeft niet te worden uitgevoerd, omdat het per land (of merk, enz.) anders zal zijn.
+   * Deze eigenschap hoeft niet te worden uitgevoerd, omdat deze in elk land (of merk, enzovoort) anders zal zijn.
 
 * Belangrijke visuele stijl:
 
-   * Het projectvereiste is dat dit onroerend goed moet worden uitgevoerd zoals het (gewoonlijk) gemeenschappelijk is voor alle landen (of merken, enz.).
+   * Het projectvereiste is dat dit eigendom wordt uitgevoerd zoals het (gewoonlijk) voor alle landen (of merken, enzovoort) gemeenschappelijk is.
 
 Daarna moet u ervoor zorgen dat:
 

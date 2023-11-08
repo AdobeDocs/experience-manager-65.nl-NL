@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 role: Admin
 exl-id: 40bc01b4-a59e-4420-81d6-2887857bddce
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '847'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Over het algemeen gebruiken ontwikkelaars de productieomgeving niet om hun toepa
 
 Dit artikel beschrijft methodes om de algemene aanvalsoppervlakte door beleidsopties te verminderen die AEM Forms op JEE verstrekt.
 
-## Het onbruikbaar maken van niet essentiële verre toegang tot de diensten {#disabling-non-essential-remote-access-to-services}
+## Niet-essentiële externe toegang tot services uitschakelen {#disabling-non-essential-remote-access-to-services}
 
 Nadat AEM Forms op JEE is geïnstalleerd en geconfigureerd, zijn veel services beschikbaar voor externe aanroeping via SOAP en Enterprise JavaBeans™ (EJB). De term extern verwijst in dit geval naar elke aanroeper die netwerktoegang heeft tot de SOAP-, EJB- of AMF-poorten (Action Message Format) voor de toepassingsserver.
 
@@ -68,7 +68,7 @@ Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Dienst
 
 ## Niet-essentiële anonieme toegang tot services uitschakelen {#disabling-non-essential-anonymous-access-to-services}
 
-Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroeping toe voor bepaalde bewerkingen. Dit betekent dat één of meerdere verrichtingen die door de dienst worden blootgesteld als om het even welke voor authentiek verklaarde gebruiker of als geen voor authentiek verklaarde gebruiker kunnen worden aangehaald.
+Sommige Forms Server-services staan niet-geverifieerde (anonieme) aanroeping toe voor bepaalde bewerkingen. Dit betekent dat één of meerdere verrichtingen die door de dienst worden blootgesteld als om het even welke voor authentiek verklaarde gebruiker of als geen voor authentiek verklaarde gebruiker kunnen worden aangehaald.
 
 1. Meld u aan bij de beheerconsole door de volgende URL te typen in een webbrowser:
 

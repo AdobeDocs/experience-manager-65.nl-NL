@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 5b2ccac0-bf1d-4f06-8743-7fce6fb68378
-source-git-commit: 260f71acd330167572d817fdf145a018b09cbc65
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '344'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Toepassingen met één pagina die de JavaScript SPA SDK voor AEM gebruiken, zijn
 1. Voorste-end componenten registreren zich aan [Opslag voor componenttoewijzing](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Vervolgens worden de [Container](/help/sites-developing/spa-blueprint.md#container), zodra het door de [Modelleverancier](/help/sites-developing/spa-blueprint.md#the-model-provider), herhaalt de modelinhoud ( `:items`).
 
-1. In het geval van een pagina, de onderliggende `:children`) krijgt eerst een componentklasse van de [Componenttoewijzing](/help/sites-developing/spa-blueprint.md#componentmapping) en instantiëren.
+1. Als er een pagina is, zijn onderliggende elementen ( `:children`) krijgt eerst een componentklasse van de [Componenttoewijzing](/help/sites-developing/spa-blueprint.md#componentmapping) en instantiëren.
 
 ## Toepassingsinitialisatie {#app-initialization}
 

@@ -2,7 +2,7 @@
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: fd8bb7d3d9040e0a7a6b2f65751445f41aeab73e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '1809'
 ht-degree: 0%
@@ -206,7 +206,7 @@ Het gegevenstype kan worden geconfigureerd om fragmentauteurs toe te staan:
 
 ### Modellen voor inhoudsfragmenten maken {#creating-content-fragment-models}
 
-Aan het begin moet u Modellen van inhoudsfragmenten voor uw site inschakelen. Dit wordt gedaan toelaat in Browser van de Configuratie; onder Hulpmiddelen -> Algemeen -> Browser van de Configuratie. U kunt of selecteren om de globale ingang te vormen, of een configuratie creëren. Bijvoorbeeld:
+Aan het begin moet u Modellen van inhoudsfragmenten voor uw site inschakelen. Dit wordt gedaan enablement in Browser van de Configuratie; onder Hulpmiddelen > Algemeen > Browser van de Configuratie. U kunt of selecteren om de globale ingang te vormen, of een configuratie creëren. Bijvoorbeeld:
 
 ![Configuratie definiëren](assets/cfm-configuration.png)
 
@@ -214,7 +214,7 @@ Aan het begin moet u Modellen van inhoudsfragmenten voor uw site inschakelen. Di
 >
 >Zie Extra Middelen - de Fragmenten van de Inhoud in Browser van de Configuratie
 
-Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U doet dit onder Gereedschappen -> Middelen -> Modellen voor inhoudsfragmenten. Bijvoorbeeld:
+Vervolgens kunt u de modellen van Content Fragments maken en de structuur definiëren. U kunt dit doen via Gereedschappen > Middelen > Modellen voor inhoudsfragmenten. Bijvoorbeeld:
 
 ![Inhoudsfragmentmodel](assets/cfm-model.png)
 
@@ -228,7 +228,7 @@ Inhoudsfragmenten zijn altijd gebaseerd op een inhoudsfragmentmodel. Het model b
 
 ### Het juiste model selecteren {#select-model}
 
-De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit gebeurt met Maken -> Inhoudsfragment in de vereiste map onder Middelen -> Bestanden. De wizard begeleidt u door de stappen.
+De eerste stap voor het maken van uw inhoud is het maken van een inhoudsfragment. Dit doet u door Maken > Inhoudsfragment te kiezen in de vereiste map onder Middelen > Bestanden. De wizard begeleidt u door de stappen.
 
 Een inhoudsfragment is gebaseerd op een specifiek inhoudsfragmentmodel dat u selecteert als de eerste stap van het ontwerpproces.
 

@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: b76d7d93-23a5-4c08-81f5-a56267b1556a
 feature: Document Security
 exl-id: 616e8821-ca96-4471-9120-0e1076a06178
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '324'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Een voordeel van deze aanpak is dat de grootte van de documentbeveiligingsdataba
 
 Documentbeveiliging ondersteunt ook Abstract beleid. Abstract beleid is beleidssjablonen die alle beleidskenmerken bevatten, zoals documentbeveiligingsinstellingen en gebruiksrechten, maar die geen lijst met principes bevatten. De beheerders kunnen om het even welk aantal beleid van het abstracte beleid met verschillende hoofden tot stand brengen die toegang tot de documenten zouden moeten hebben. Wijzigingen in het abstracte beleid hebben geen invloed op het feitelijke beleid dat wordt gegenereerd op basis van het abstracte beleid.
 
-In het geval van maandelijkse factuurgeneratie voor een telecombedrijf, creeert u een abstract beleid, creeert gebruikers, en produceert dan unieke vergunningen voor elke gebruiker. De licenties worden later toegepast op documenten voor elke gebruiker.
+Als er een maandelijkse factuurgeneratie voor een telecombedrijf is, creeert u een abstract beleid, creeert gebruikers, en produceert dan unieke vergunningen voor elke gebruiker. De licenties worden later toegepast op documenten voor elke gebruiker.
 
 Het maken van een abstract beleid wordt alleen ondersteund door Java SDK voor documentbeveiliging. U kunt echter wel het beleid beheren dat u maakt op basis van het abstracte beleid van de webpagina&#39;s voor documentbeveiliging. Beleid dat met deze methode wordt gemaakt, werkt hetzelfde als het beleid dat op basis van webpagina&#39;s voor documentbeveiliging wordt gemaakt.
 

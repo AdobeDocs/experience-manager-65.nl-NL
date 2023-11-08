@@ -2,9 +2,9 @@
 title: Samengestelde onderdelen in SPA
 description: Leer hoe u uw eigen samengestelde componenten maakt, componenten die uit andere componenten bestaan, die werken met de AEM Single-Page Application (SPA) Editor.
 exl-id: 02b6c698-d169-467a-9168-9fa6181bed6c
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '781'
+source-wordcount: '782'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ De volgende secties geven voorbeelden van het uitvoeren van elk geval gebruikend
 
 ### De component bestaat niet in uw AEM project. {#component-does-not-exist}
 
-Begin door de componenten te creëren die omhoog de samengestelde component, d.w.z. componenten voor het beeld en zijn tekst zullen maken.
+Begin door de componenten te creëren die de samengestelde component, namelijk componenten voor het beeld en zijn tekst zullen vormen.
 
 1. Maak de tekstcomponent in uw AEM project.
 1. Voeg de bijbehorende `resourceType` van het project in de componenten `editConfig` knooppunt.

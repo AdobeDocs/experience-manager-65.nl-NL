@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '3498'
+source-wordcount: '3493'
 ht-degree: 0%
 
 ---
@@ -547,7 +547,7 @@ Als het ontwerppakket een parsys componentenprijsverhoging bevat, dan na het inv
 Als er fouten zijn opgetreden (het geïmporteerde pakket is bijvoorbeeld geen geldige postcode), importeert het ontwerppakket niet. In plaats daarvan wordt boven op de pagina net boven het vak Slepen en neerzetten een foutbericht weergegeven. Hier worden voorbeelden van foutscenario&#39;s gegeven. Nadat u de fout hebt gecorrigeerd, kunt u de bijgewerkte zip opnieuw importeren op dezelfde lege landingspagina. Er zijn verschillende scenario&#39;s waarin fouten worden gegenereerd:
 
 * Geïmporteerd ontwerppakket is geen geldig zip-archief.
-* Het geïmporteerde ontwerppakket bevat geen index.html op het hoofdniveau.
+* Het geïmporteerde ontwerppakket bevat geen index.html op het hoogste niveau.
 
 ### Waarschuwingen weergegeven na importeren {#warnings-displayed-after-import}
 
@@ -598,4 +598,4 @@ Vervolgens `box img` wordt gebruikt in de ontwerpimportmodule, lijkt de resulter
 
 >[!NOTE]
 >
->Ontwerpers dienen zich er ook van bewust te zijn dat alleen code binnen de **id=cqcanvas** wordt door de importeur erkend, anders blijft het ontwerp niet behouden.
+>Ontwerpers mogen alleen code binnen de **id=cqcanvas** wordt door de importeur erkend, anders blijft het ontwerp niet behouden.

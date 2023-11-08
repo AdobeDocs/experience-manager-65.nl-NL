@@ -1,24 +1,22 @@
 ---
 title: Upgrade naar AEM 6,5 Forms in JEE
 description: U kunt een directe verbetering van AEM 6.1 Forms, AEM 6.2 Forms, en LiveCycle ES4 SP1 aan AEM 6.3 Forms uitvoeren.
-uuid: 1435246a-9215-4d88-b52c-59a5c329bb77
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
-discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 role: Admin
 exl-id: 722e75a0-bcb3-465e-bb74-ea94a3b99fd3
-source-git-commit: fbc371e59c4f80195fe90da5f635267141c8849e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '367'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
 
 # Upgrade naar AEM 6,5 Forms in JEE {#upgrade-to-aem-forms-jee}
 
-AEM 6.5.18.0 Forms op JEE biedt twee typen installatieprogramma&#39;s: het installatieprogramma voor de volledige installatie en het patchinstallatieprogramma.
+AEM 6.5.18.0 Forms op JEE biedt twee typen installatieprogramma&#39;s: volledig installatieprogramma en Patch-installatieprogramma.
 
 **Volledig installatieprogramma**: U kunt de opdracht [AEM 6.5.18.0 op volledig JEE-installatieprogramma](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) om nieuwe AEM Forms-instanties in te stellen of upgrades uit te voeren van AEM 6.5.x.x Forms op JEE naar AEM 6.5.18.0 Forms op JEE.
 

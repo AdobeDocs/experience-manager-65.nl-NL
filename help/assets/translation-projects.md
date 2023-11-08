@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Translation
 exl-id: 8990feca-cfda-4974-915e-27aa9d8f2ee1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1732'
+source-wordcount: '1730'
 ht-degree: 9%
 
 ---
@@ -234,7 +234,7 @@ Als u deze optie gebruikt, worden de elementen toegevoegd aan een bestaand verta
 
 ## Tijdelijke taalkopieën maken {#creating-temporary-language-copies}
 
-Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van de originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Adobe Experience Manager Assets] Hiermee slaat u de nieuw vertaalde elementen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de elementen expliciet hebt goedgekeurd. Als u de elementen afwijst, blijft de taalkopie ongewijzigd.
+Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerkte versies van originele elementen, blijft de bestaande taalkopie behouden totdat u de vertaalde elementen goedkeurt. [!DNL Adobe Experience Manager Assets] Hiermee slaat u de nieuw vertaalde elementen op een tijdelijke locatie op en werkt u de bestaande taalkopie bij nadat u de elementen expliciet hebt goedgekeurd. Als u de elementen afwijst, blijft de taalkopie ongewijzigd.
 
 1. Klik op de hoofdmap van de bron onder **[!UICONTROL Language Copies]** waarvoor u al een taalkopie hebt gemaakt en vervolgens op **[!UICONTROL Reveal in Assets]** om de map te openen in [!DNL Experience Manager Assets].
 

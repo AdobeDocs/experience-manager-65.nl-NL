@@ -2,7 +2,7 @@
 title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '786'
 ht-degree: 0%
@@ -36,7 +36,7 @@ De **GraphiQL** kunt u testen en fouten opsporen in uw GraphQL-query&#39;s door 
 
 U kunt tot de vraagredacteur van één van beiden toegang hebben:
 
-* **Gereedschappen** -> **Algemeen** -> **GraphQL Query Editor**
+* **Gereedschappen** > **Algemeen** > **GraphQL Query Editor**
 * rechtstreeks; bijvoorbeeld `http://localhost:4502/aem/graphiql.html`
 
 ![GraphiQL Interface](assets/cfm-graphiql-interface.png "GraphiQL Interface")
@@ -104,7 +104,7 @@ Bijvoorbeeld:
 >
 >Custom rewrite rules on the Dispatcher might override defaults from AEM publish. 
 >
->In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern, then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
+>In the case that you are sending TTL-based cache-control headers from the dispatcher, based on a location match pattern then, if necessary, you might want to exclude `/graphql/execute.json/*` from the matches.
 
 Using GraphQL you can configure the HTTP Cache Headers  to control these parameters for your individual persisted query.
 
@@ -125,7 +125,7 @@ Using GraphQL you can configure the HTTP Cache Headers  to control these paramet
    * **surrogate-control** - **stale-while-revalidate**
      Caches may continue to serve a cached response after it becomes stale, for up to the specified number of seconds.
    * **surrogate-control** - **stale-if-error**
-     Caches may continue to serve a cached response in case of or origin error, for up to the specified number of seconds.
+     Caches may continue to serve a cached response if there is an origin error, for up to the specified number of seconds.
 
 1. Select **Save** to persist the changes.
 -->

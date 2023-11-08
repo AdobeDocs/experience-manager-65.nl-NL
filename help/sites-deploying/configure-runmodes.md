@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: 6d03cb1d-500e-4a23-80e5-347a43dff30e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -69,9 +69,9 @@ De aangepaste looppaswijzen kunnen ook bij elk opstarten worden geselecteerd.
 
 ## Inhoud en geen samplinginhoud gebruiken {#using-samplecontent-and-nosamplecontent}
 
-Met deze modi kunt u het gebruik van voorbeeldinhoud beheren. De voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enz. omvatten:
+Met deze modi kunt u het gebruik van voorbeeldinhoud beheren. De voorbeeldinhoud wordt gedefinieerd voordat de quickstart wordt gemaakt en kan pakketten, configuraties, enzovoort bevatten:
 
-* De `samplecontent` Deze inhoud wordt in de uitvoermodus geïnstalleerd (de standaardmodus).
+* De `samplecontent` Deze inhoud wordt geïnstalleerd in de uitvoermodus (de standaardmodus).
 
 * De `nosamplecontent` de voorbeeldinhoud wordt niet geïnstalleerd.
 

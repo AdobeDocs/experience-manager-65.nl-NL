@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '10228'
+source-wordcount: '10221'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Voor een bespreking van hoe de off-line huur en de synchronisatie werken, zie [P
 
 **Uitgebreide verificatie toestaan** Selecteer deze optie om uitgebreide verificatie in te schakelen en voer vervolgens de URL voor uitgebreide verificatie-landing in.
 
-Als u deze optie selecteert, kunnen clienttoepassingen uitgebreide verificatie gebruiken. Uitgebreide verificatie biedt aangepaste verificatieprocessen en verschillende verificatieopties die op de AEM formulierserver zijn geconfigureerd. Bijvoorbeeld, kunnen de gebruikers de op SAML-Gebaseerde authentificatie in plaats van AEM vormen gebruikersbenaming/Wachtwoord, van Acrobat en de Cliënt van de Reader nu ervaren. Standaard bevat de URL voor landingen *localhost* als de servernaam. Vervang de servernaam door een volledig gekwalificeerde hostnaam. De hostnaam in de bestemmings-URL wordt automatisch ingevuld vanaf de basis-URL als uitgebreide verificatie nog niet is ingeschakeld. Zie [De uitgebreide verificatieprovider toevoegen](configuring-client-server-options.md#add-the-extended-authentication-provider).
+Als u deze optie selecteert, kunnen clienttoepassingen uitgebreide verificatie gebruiken. Uitgebreide verificatie biedt aangepaste verificatieprocessen en verschillende verificatieopties die op de AEM Forms-server zijn geconfigureerd. Bijvoorbeeld, kunnen de gebruikers de op SAML-Gebaseerde authentificatie in plaats van AEM vormen gebruikersbenaming/Wachtwoord, van Acrobat en de Cliënt van de Reader nu ervaren. Standaard bevat de URL voor landingen *localhost* als de servernaam. Vervang de servernaam door een volledig gekwalificeerde hostnaam. De hostnaam in de bestemmings-URL wordt automatisch ingevuld vanaf de basis-URL als uitgebreide verificatie nog niet is ingeschakeld. Zie [De uitgebreide verificatieprovider toevoegen](configuring-client-server-options.md#add-the-extended-authentication-provider).
 
 ***notitie **: uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.*
 
@@ -99,7 +99,7 @@ AEM formulieren bieden een voorbeeldconfiguratie die u kunt aanpassen aan uw omg
 >Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
 
 1. Vraag het WAR-voorbeeldbestand aan om dit te implementeren. Raadpleeg de installatiegids die geschikt is voor uw toepassingsserver.
-1. Zorg ervoor dat de formulierserver een volledig gekwalificeerde naam heeft in plaats van IP-adressen als de basis-URL en dat het een HTTPS-URL is. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
+1. Zorg ervoor dat de Forms-server een volledig gekwalificeerde naam heeft in plaats van IP-adressen als de basis-URL en dat het een HTTPS-URL is. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
 1. Schakel Uitgebreide verificatie in vanaf de pagina Serverconfiguratie. Zie [Serverconfiguratie-instellingen](configuring-client-server-options.md#server-configuration-settings).
 1. Voeg de vereiste URL&#39;s voor omleiding naar SSO toe in het configuratiebestand voor gebruikersbeheer. Zie [URL&#39;s voor doorsturen naar SSO toevoegen voor uitgebreide verificatie](configuring-client-server-options.md#add-sso-redirect-urls-for-extended-authentication).
 
@@ -154,7 +154,7 @@ Als u een document dat met een beleid is beveiligd offline wilt openen, moet de 
 
 Een manier om de bedreiging van offlinedocumenten te verminderen, is door het toestaan van offline toegang tot bijzonder gevoelige documenten te vermijden. Een andere methode is om de belangrijkste sleutels periodiek te rollen. Wanneer de sleutel door de documentbeveiliging wordt omgedraaid, hebben bestaande toetsen geen toegang meer tot documenten die met een beleid zijn beveiligd. Bijvoorbeeld, als een dader een belangrijkste sleutel van een gestolen laptop verkrijgt, kan die sleutel niet worden gebruikt om tot de documenten toegang te hebben die worden beschermd nadat het omvergooien voorkomt. Als u vermoedt dat een bepaalde hoofdsleutel is gecompromitteerd, kunt u manueel over de sleutel rollen.
 
-Nochtans, moet u zich ook bewust zijn dat een zeer belangrijke het omvergooien alle belangrijkste sleutels beïnvloedt, niet slechts één. Het vermindert ook de scalability van het systeem omdat de cliënten meer sleutels voor off-line toegang moeten opslaan. De standaardfrequentie voor rollover is 20 dagen. Het wordt aanbevolen deze waarde niet in te stellen op een lagere waarde dan 14 dagen, omdat mensen mogelijk geen offline documenten kunnen bekijken en de systeemprestaties mogelijk worden beïnvloed.
+Een sleutelrollover beïnvloedt echter alle hoofdtoetsen, niet slechts één. Het vermindert ook de scalability van het systeem omdat de cliënten meer sleutels voor off-line toegang moeten opslaan. De standaardfrequentie voor rollover is 20 dagen. Het wordt aanbevolen deze waarde niet in te stellen op een lagere waarde dan 14 dagen, omdat mensen mogelijk geen offline documenten kunnen bekijken en de systeemprestaties mogelijk worden beïnvloed.
 
 In het volgende voorbeeld, is Key1 de ouder van de twee belangrijkste sleutels, en Key2 is nieuwere. Wanneer u de eerste keer op de knop Rollover-sleutels nu klikt, wordt Key1 ongeldig en wordt een nieuwere, geldige hoofdtoets (Key3) gegenereerd. Gebruikers krijgen Key3 wanneer ze synchroniseren met documentbeveiliging, meestal door een beveiligd document online te openen. Gebruikers worden echter niet gedwongen te synchroniseren met documentbeveiliging totdat ze de maximale offline leaseperiode bereiken die in een beleid is opgegeven. Na de eerste sleutelomvergooien, kunnen de gebruikers die offline blijven offline documenten, met inbegrip van die nog openen die door Key3 worden beschermd, tot zij de maximumoff-line huurperiode bereiken. Wanneer u nogmaals op de knop Rollover-toetsen klikt, wordt Key2 ongeldig en wordt Key4 gemaakt. Gebruikers die offline blijven tijdens de twee sleutelrollovers, kunnen documenten die met Key3 of Key4 zijn beveiligd, pas openen nadat ze zijn gesynchroniseerd met documentbeveiliging.
 
@@ -258,7 +258,7 @@ U kunt auditgebeurtenissen exporteren naar een bestand voor archiveringsdoeleind
 
    * de minimumleeftijd waarop de uit te voeren auditgebeurtenissen moeten worden uitgevoerd
    * het maximumaantal auditgebeurtenissen dat in één bestand mag worden opgenomen. De server genereert een of meer bestanden op basis van deze waarde.
-   * de map waarin het bestand wordt gemaakt. Deze map staat op de formulierserver. Als het mappad relatief is, is dit relatief ten opzichte van de hoofdmap van de toepassingsserver.
+   * de map waarin het bestand wordt gemaakt. Deze map staat op de Forms Server. Als het mappad relatief is, is dit relatief ten opzichte van de hoofdmap van de toepassingsserver.
    * het voorvoegsel van het bestand dat moet worden gebruikt voor de bestanden met auditgebeurtenissen
    * de indeling van het bestand, ofwel een CSV-bestand (comma-separated values, door komma&#39;s gescheiden waarden) dat compatibel is met Microsoft Excel of een XML-bestand.
 

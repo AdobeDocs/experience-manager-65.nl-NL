@@ -10,10 +10,10 @@ content-type: reference
 discoiquuid: 2aef9048-9d6e-4f5d-b443-5e73f8066d76
 docset: aem65
 exl-id: 9ef9ae75-cd8c-4adb-9bcb-e951d200d492
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '460'
-ht-degree: 5%
+source-wordcount: '461'
+ht-degree: 4%
 
 ---
 
@@ -41,7 +41,7 @@ Dit wordt gedaan door te vormen [OSGi Service - Configuratie van de Component va
 
 De diensten die de registratie van een component vereisen zijn:
 
-* De afhankelijkheden correct bepalen tijdens de publicatie (zorg er dus voor dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
+* De afhankelijkheden correct bepalen tijdens de publicatie (dat wil zeggen dat fragmenten en modellen automatisch met een pagina kunnen worden gepubliceerd als ze zijn gewijzigd sinds de laatste publicatie).
 * Ondersteuning voor inhoudsfragmenten in volledige tekstzoekopdracht.
 * Het beheer/de verwerking van *tussenliggende inhoud.*
 * Het beheer/de verwerking van *gemengde media-elementen.*
@@ -76,22 +76,22 @@ De configuratie OSGi is:
   <tr>
    <td><strong>Het type Resource</strong></td>
    <td><code>dam.cfm.component.resourceType</code></td>
-   <td>Het type bron dat moet worden geregistreerd; bijvoorbeeld: <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
+   <td>Het brontype dat moet worden geregistreerd, bijvoorbeeld <br /> <p><span class="cmp-examples-demo__property-value"><code>core/wcm/components/contentfragment/v1/contentfragment</code></code></p> </td>
   </tr>
   <tr>
    <td><strong>Verwijzing, eigenschap</strong></td>
    <td><code>dam.cfm.component.fileReferenceProp</code></td>
-   <td>De naam van de eigenschap die de verwijzing naar het fragment bevat; bijvoorbeeld: <code>fragmentPath</code> of <code>fileReference</code></td>
+   <td>De naam van de eigenschap die de verwijzing naar het fragment bevat, bijvoorbeeld <code>fragmentPath</code> of <code>fileReference</code></td>
   </tr>
   <tr>
    <td><strong>Element(en), eigenschap</strong></td>
    <td><code>dam.cfm.component.elementsProp</code></td>
-   <td>De naam van de eigenschap die de naam of namen bevat van het element of de elementen die moeten worden gerenderd; bijvoorbeeld:<code>elementName</code></td>
+   <td>De naam van de eigenschap die de naam/namen bevat van het element/de elementen die moeten worden gerenderd, bijvoorbeeld<code>elementName</code></td>
   </tr>
   <tr>
    <td><strong>Variatie, eigenschap</strong><br /> </td>
    <td><code>dam.cfm.component.variationProp</code></td>
-   <td>De naam van de eigenschap die de naam bevat van de wijziging die moet worden gerenderd; bijvoorbeeld:<code>variationName</code></td>
+   <td>De naam van de eigenschap die de naam bevat van de variatie die moet worden gerenderd, bijvoorbeeld<code>variationName</code></td>
   </tr>
  </tbody>
 </table>
@@ -116,8 +116,8 @@ Voor bepaalde functionaliteit (bijvoorbeeld om alleen een alineabereik te render
    <td><code>paragraphScope</code></td>
    <td><p>Een tekenreekseigenschap die definieert hoe alinea's moeten worden uitgevoerd als ze zich in <em>rendermodus voor één element</em>.</p> <p>Waarden:</p>
     <ul>
-     <li><code>all</code> : om alle alinea's te renderen</li>
-     <li><code>range</code> : om het bereik van alinea's te bepalen dat wordt verschaft door <code>paragraphRange</code></li>
+     <li><code>all</code> : alle alinea's renderen</li>
+     <li><code>range</code> : voor het weergeven van het bereik van alinea's die worden geleverd door <code>paragraphRange</code></li>
     </ul> </td>
   </tr>
   <tr>

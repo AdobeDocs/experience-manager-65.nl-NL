@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
 exl-id: 89561ed0-d094-4ef7-9bc1-bde11f3c5bc3
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -35,19 +35,19 @@ U kunt SSO ook toelaten door SPNEGO te gebruiken. (Zie [SSO inschakelen met SPNE
 1. Selecteer Ja om SSO in te schakelen. Als u Nee selecteert, zijn de overige instellingen op de pagina niet beschikbaar.
 1. Stel de resterende opties op de pagina naar wens in en klik op OK:
 
-   * **Type SSO:** (Verplicht) Selecteer HTTP-koptekst om SSO in te schakelen via HTTP-headers.
-   * **HTTP-header voor de id van de gebruiker:** (Verplicht) Naam van de koptekst waarvan de waarde de unieke id van de aangemelde gebruiker bevat. Het Beheer van de gebruiker gebruikt deze waarde om de gebruiker in het gegevensbestand van het Beheer van de Gebruiker te vinden. De waarde die via deze header wordt verkregen, moet overeenkomen met de unieke id van de gebruiker die vanuit de LDAP-directory is gesynchroniseerd. (Zie [Gebruikersinstellingen](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
+   * **SSO-type:** (Verplicht) Selecteer HTTP-koptekst om SSO in te schakelen via HTTP-headers.
+   * **HTTP-header voor de id van de gebruiker:** (Verplicht) Naam van de koptekst waarvan de waarde de unieke id van de aangemelde gebruiker bevat. Het Beheer van de gebruiker gebruikt deze waarde om de gebruiker in het gegevensbestand van het Gebruikersbeheer te vinden. De waarde die via deze header wordt verkregen, moet overeenkomen met de unieke id van de gebruiker die vanuit de LDAP-directory is gesynchroniseerd. (Zie [Gebruikersinstellingen](/help/forms/using/admin-help/adding-configuring-users.md#user-settings).)
    * **De id-waarde wordt toegewezen aan de gebruikersnaam van de gebruiker in plaats van aan de unieke id van de gebruiker:** Wijst de unieke-id van de gebruiker toe aan de gebruikersnaam. Selecteer deze optie als het unieke herkenningsteken van de gebruiker een binaire waarde is die niet gemakkelijk door de kopballen van HTTP kan worden verspreid (bijvoorbeeld, objectGUID als u gebruikers van Actieve Folder synchroniseert).
    * **HTTP-header voor domein:** (Niet verplicht) Naam van de koptekst waarvan de waarde de domeinnaam bevat. Gebruik deze instelling alleen als geen enkele HTTP-header de gebruiker uniek identificeert. Gebruik deze instelling voor gevallen waarin meerdere domeinen bestaan en de unieke id alleen binnen een domein uniek is. In dit geval geeft u de headernaam op in dit tekstvak en geeft u domeintoewijzing op voor de meerdere domeinen in het vak Domeintoewijzing. (Zie [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains).)
    * **Domeintoewijzing:** (Verplicht) Geeft toewijzing voor meerdere domeinen in de notatie aan *header value=domain name*.
 
-      Neem bijvoorbeeld een situatie waarin de HTTP-header voor een domein domain domainName is en waarden van domain1, domain2 of domain3 kan hebben. In dit geval, gebruik domeinafbeelding om de domainName waarden aan de domeinnamen van het Beheer van de Gebruiker in kaart te brengen. Elke toewijzing moet op een andere regel staan:
+     Neem bijvoorbeeld een situatie waarin de HTTP-header voor een domein domain domainName is en waarden van domain1, domain2 of domain3 kan hebben. In dit geval, gebruik domeinafbeelding om de domainName waarden aan de domeinnamen van het Beheer van de Gebruiker in kaart te brengen. Elke toewijzing moet op een andere regel staan:
 
-      domain1=UMdomain1
+     domain1=UMdomain1
 
-      domain2=UMdomain2
+     domain2=UMdomain2
 
-      domain3=UMdomain3
+     domain3=UMdomain3
 
 ### Toegestane verwijzingen configureren {#configure-allowed-referers}
 
@@ -63,8 +63,8 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
 >
 >AEM Forms op JEE steunt het vormen SSO gebruikend Kerberos/SPNEGO in een veelvoudige milieu&#39;s van het kinddomein niet.
 
-1. Bepaal welk domein om SSO toe te laten te gebruiken. De AEM formulierserver en de gebruikers moeten deel uitmaken van hetzelfde Windows-domein of vertrouwde domein.
-1. In Actieve Folder, creeer een gebruiker die de AEM vormenserver vertegenwoordigt. (Zie [Een gebruikersaccount maken](enabling-single-sign-on-aem.md#create-a-user-account).) Als u meer dan één domein om SPNEGO te gebruiken vormt, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
+1. Bepaal welk domein om SSO toe te laten te gebruiken. De AEM Forms-server en de gebruikers moeten deel uitmaken van hetzelfde Windows-domein of vertrouwde domein.
+1. In Actieve Folder, creeer een gebruiker die de Server van AEM Forms vertegenwoordigt. (Zie [Een gebruikersaccount maken](enabling-single-sign-on-aem.md#create-a-user-account).) Als u meer dan één domein om SPNEGO te gebruiken vormt, zorg ervoor dat de wachtwoorden voor elk van deze gebruikers verschillend zijn. Als de wachtwoorden niet verschillend zijn, werkt SPNEGO SSO niet.
 1. Wijs de de dienstbelangrijkste naam toe. (Zie [Wijs een Belangrijkste Naam van de Dienst (SPN) toe](enabling-single-sign-on-aem.md#map-a-service-principal-name-spn).)
 1. Configureer de domeincontroller. (Zie [Vermijd Kerberos integriteit-controle mislukkingen](enabling-single-sign-on-aem.md#prevent-kerberos-integrity-check-failures).)
 1. Een ondernemingsdomein toevoegen of bewerken zoals beschreven in [Domeinen toevoegen](/help/forms/using/admin-help/adding-domains.md#adding-domains) of [Bestaande domeinen bewerken en converteren](/help/forms/using/admin-help/editing-converting-existing-domains.md#editing-and-converting-existing-domains). Wanneer u creeert of het ondernemingsdomein uitgeeft, voer deze taken uit:
@@ -91,7 +91,7 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
 1. Typ de voornaam/achternaam en de gebruikersnaam en klik op Volgende. Stel bijvoorbeeld de volgende waarden in:
 
    * **Voornaam**: umspnego
-   * **Gebruikersnaam voor aanmelding**: spnegodemo
+   * **Naam gebruikersaanmelding**: spnegodemo
 
 1. Typ een wachtwoord. Stel bijvoorbeeld in op *password*. Zorg ervoor dat de optie Wachtwoord nooit verloopt is geselecteerd en dat er geen andere opties zijn geselecteerd.
 1. Klik op Volgende en vervolgens op Voltooien.
@@ -109,7 +109,7 @@ U kunt SSO ook toelaten door de kopballen van HTTP te gebruiken. (Zie [SSO insch
 
    De waarden die u moet verstrekken worden beschreven als volgt:
 
-   **host:** Volledig gekwalificeerde naam van de formulierserver of elke unieke URL. In dit voorbeeld is deze ingesteld op lcserver.um.lc.com.
+   **host:** Volledig gekwalificeerde naam van de Forms-server of elke unieke URL. In dit voorbeeld is deze ingesteld op lcserver.um.lc.com.
 
    **REALM:** Het Actieve domein van de Folder voor het domeincontrolemechanisme. In dit voorbeeld is deze ingesteld op UM.LC.COM. Zorg ervoor dat u het domein in hoofdletters invoert. Voer de volgende stappen uit om het domein voor Windows 2003 te bepalen:
 
@@ -138,7 +138,7 @@ ktpass -princ HTTP/lcserver.um.lc.com@UM.LC.COM -mapuser spnegodemo
 1. Klik met de rechtermuisknop op de gebruikersaccount die u in een vorige taak hebt gemaakt. In dit voorbeeld is de gebruikersaccount `spnegodemo`.
 1. Klik op Wachtwoord opnieuw instellen.
 1. Typ en bevestig hetzelfde wachtwoord dat u eerder hebt getypt. In dit voorbeeld wordt ingesteld op `password`.
-1. Schakel de optie Wachtwoord wijzigen bij volgende aanmelding uit en klik op OK.
+1. Schakel Wachtwoord wijzigen bij volgende aanmelding uit en klik op OK.
 
 ### Instellingen van SPNEGO-clientbrowser configureren {#configuring-spnego-client-browser-settings}
 
@@ -150,9 +150,9 @@ Als de server wordt betreden door de computernaam, zoals https://lcserver:8080 t
 
 1. Ga naar Extra > Internetopties en klik op het tabblad Beveiliging.
 1. Klik op het pictogram Lokaal intranet en klik vervolgens op Sites.
-1. Klik op Geavanceerd en typ in het vak Deze website toevoegen aan zone de URL van de formulierserver. Typ bijvoorbeeld `https://lcserver.um.lc.com`
+1. Klik op Geavanceerd en typ in het vak Deze website toevoegen aan zone de URL van uw Forms-server. Typ bijvoorbeeld `https://lcserver.um.lc.com`
 1. Klik op OK totdat alle dialoogvensters zijn gesloten.
-1. Test de configuratie door de URL van uw AEM formulierserver te openen. Typ bijvoorbeeld in het vak URL van de browser `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
+1. Test de configuratie door de URL van uw AEM Forms-server te openen. Typ bijvoorbeeld in het vak URL van de browser `https://lcserver.um.lc.com:8080/um/login?um_no_redirect=true`
 
 **Mozilla Firefox configureren**
 
@@ -163,7 +163,7 @@ Als de server wordt betreden door de computernaam, zoals https://lcserver:8080 t
 1. Typ in het vak Filter `negotiate`
 1. In de getoonde lijst, klik network.onderhandelingen-auth.trusted-uri en typ één van de volgende bevelen zoals aangewezen voor uw milieu:
 
-   `.um.lc.com`- Vormt Firefox om SPNEGO voor om het even welke URL toe te staan die met um.lc.com beëindigt. Zorg ervoor dat u de punt (&quot;.&quot;) aan het begin.
+   `.um.lc.com`- Configureert Firefox om SPNEGO toe te staan voor elke URL die eindigt met um.lc.com. Zorg ervoor dat u de punt (&quot;.&quot;) opneemt aan het begin.
 
    `lcserver.um.lc.com` - Vormt Firefox om SPNEGO voor uw specifieke server slechts toe te staan. Begin deze waarde niet met een punt (&quot;.&quot;).
 

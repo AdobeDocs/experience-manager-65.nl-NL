@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: a975ea2e-5e24-4a96-bd62-63bb98836ff2
 docset: aem65
 exl-id: 1b75721c-b223-41f0-88d9-bd855b529f31
-source-git-commit: a2b1bd5462ae1837470e31cfeb87a95af1c69be5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '675'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ ht-degree: 0%
 >
 >Sjablonen voor inhoudsfragmenten zijn nu afgekeurd. Ze kunnen nog steeds worden gebruikt voor het maken van fragmenten, maar het gebruik van Content Fragment Models wordt aangeraden. Er worden geen nieuwe functies toegevoegd aan fragmentsjablonen en deze worden in een toekomstige versie verwijderd.
 
-Sjablonen worden geselecteerd wanneer u een inhoudsfragment maakt. Ze bieden het nieuwe fragment de basisstructuur, elementen en variatie. De sjablonen die voor inhoudsfragmenten worden gebruikt, zijn afhankelijk van de Granite Configuration Manager.
+Sjablonen worden geselecteerd wanneer u een inhoudsfragment maakt. Zij verstrekken het nieuwe fragment de basisstructuur, element(en) en variatie. De sjablonen die voor inhoudsfragmenten worden gebruikt, zijn afhankelijk van de Granite Configuration Manager.
 
 De out-of-the-box sjablonen worden bewaard onder:
 
@@ -50,18 +50,16 @@ De rangorde is (in aflopende volgorde) `/conf`, `/apps`, `/libs`.
 
 >[!CAUTION]
 >
->U ***moet*** niets wijzigen in de `/libs` pad.
+>U ***moet*** niets wijzigen in het dialoogvenster `/libs` pad.
 >
 >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (bijvoorbeeld zoals het bestaat in `/libs`) onder `/apps`
+>1. Het vereiste item opnieuw maken (dat wil zeggen, zoals het bestaat in `/libs`) onder `/apps`
 >
 >1. Breng wijzigingen aan in `/apps`
-
 >
-
 
 De basisstructuur van een template wordt aangehouden onder:
 
@@ -109,7 +107,7 @@ Meer details over de knopen en hun eigenschappen zijn:
 
 * **Sjabloon**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Naam</th>
@@ -139,7 +137,7 @@ Meer details over de knopen en hun eigenschappen zijn:
     <tr>
      <td><code>precreateElements</code></td>
      <td><p><code>Boolean</code></p> <p>vereist</p> </td>
-     <td><p><code>true</code>, als de subassets die de elementen (behalve het master element) van het inhoudsfragment vertegenwoordigen, moeten worden gemaakt wanneer het inhoudsfragment wordt gemaakt; <em>false</em> als ze "ter plekke" moeten worden gemaakt.</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>true</code>.</p> </td>
+     <td><p><code>true</code>, als de subelementen die de elementen (behalve het hoofdelement) van het inhoudsfragment vertegenwoordigen, moeten worden gemaakt wanneer het inhoudsfragment wordt gemaakt; <em>false</em> als ze "ter plekke" moeten worden gemaakt.</p> <p><strong>Opmerking</strong>: momenteel moet deze parameter worden ingesteld op <code>true</code>.</p> </td>
     </tr>
     <tr>
      <td><code>version</code></td>
@@ -151,7 +149,7 @@ Meer details over de knopen en hun eigenschappen zijn:
 
 * **Elementen**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Naam</th>
@@ -159,16 +157,16 @@ Meer details over de knopen en hun eigenschappen zijn:
      <th>Waarde</th>
     </tr>
     <tr>
-     <td><code>elements</code> </td>
+     <td><code>elements</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>vereist</p> </td>
-     <td><p>Knooppunt dat de definitie van de elementen van het inhoudsfragment bevat. Het is verplicht en moet ten minste één onderliggend knooppunt voor het <strong>Hoofd</strong> element, but can contain [1..n] onderliggende knooppunten.</p> <p>Wanneer de sjabloon wordt gebruikt, wordt de elementensubvertakking gekopieerd naar de modelsubvertakking van het fragment.</p> <p>Het eerste element (zoals weergegeven in CRXDE Lite) wordt automatisch beschouwd als het eerste element <i>hoofd</i> element; de knooppuntnaam is irrelevant en het knooppunt zelf heeft geen speciale betekenis, afgezien van het feit dat het wordt vertegenwoordigd door het hoofdactief; de overige elementen worden behandeld als subactiva.</p> </td>
+     <td><p>Knooppunt dat de definitie van de elementen van het inhoudsfragment bevat. Het is verplicht en moet ten minste één onderliggend knooppunt voor het <strong>Hoofd</strong> element, but can contain [1..n] onderliggende knooppunten.</p> <p>Wanneer de sjabloon wordt gebruikt, wordt de elementensubvertakking gekopieerd naar de modelsubvertakking van het fragment.</p> <p>Het eerste element (zoals weergegeven in CRXDE Lite) wordt automatisch beschouwd als het <i>hoofd</i> element; de knooppuntnaam is irrelevant en de knoop zelf heeft geen speciale betekenis, behalve het feit dat het door het belangrijkste actief wordt vertegenwoordigd; de andere elementen worden behandeld als subactiva.</p> </td>
     </tr>
    </tbody>
   </table>
 
 * **Elementnaam**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Naam</th>
@@ -187,13 +185,13 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>defaultContent</code></td>
-     <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: ""</p> </td>
-     <td>de initiële inhoud van het element; alleen worden gebruikt als <code>precreateElements</code><i> = </i><code>true</code></td>
+     <td><p><code>String</code></p> <p>optioneel</p> <p>default: ""</p> </td>
+     <td>Oorspronkelijke inhoud van het element; alleen gebruikt als <code>precreateElements</code><i> = </i><code>true</code></td>
     </tr>
     <tr>
      <td><code>initialContentType</code></td>
      <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: <code>text/html</code></p> </td>
-     <td><p>Eerste inhoudstype van het element; alleen worden gebruikt als <code>precreateElements</code><i> = </i><code>true</code>; momenteel ondersteund:</p>
+     <td><p>Oorspronkelijk inhoudstype van het element; alleen gebruikt als <code>precreateElements</code><i> = </i><code>true</code>; momenteel ondersteund:</p>
       <ul>
        <li><code>text/html</code></li>
        <li><code>text/plain</code></li>
@@ -210,7 +208,7 @@ Meer details over de knopen en hun eigenschappen zijn:
 
 * **Variaties**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Naam</th>
@@ -218,7 +216,7 @@ Meer details over de knopen en hun eigenschappen zijn:
      <th>Waarde</th>
     </tr>
     <tr>
-     <td><code>variations</code> </td>
+     <td><code>variations</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>optioneel</p> </td>
      <td>Dit optionele knooppunt bevat de definitie van de initiële variaties van het inhoudsfragment.</td>
     </tr>
@@ -227,7 +225,7 @@ Meer details over de knopen en hun eigenschappen zijn:
 
 * **Naam variatie**
 
-   <table>
+  <table>
    <tbody>
     <tr>
      <th>Naam</th>
@@ -235,7 +233,7 @@ Meer details over de knopen en hun eigenschappen zijn:
      <th>Waarde</th>
     </tr>
     <tr>
-     <td><code>&lt;<i>variation-name</i>&gt;</code> </td>
+     <td><code>&lt;<i>variation-name</i>&gt;</code><br /> </td>
      <td><p><code>nt:unstructured</code></p> <p>vereist als er een variatieknooppunt aanwezig is</p> </td>
      <td><p>Definieert een oorspronkelijke variatie.<br /> De variatie wordt standaard toegevoegd aan alle elementen van het inhoudsfragment.</p> <p>De wijziging heeft dezelfde initiële inhoud als het betreffende element (zie <code class="code">defaultContent/
        initialContentType</code>)</p> </td>
@@ -247,8 +245,8 @@ Meer details over de knopen en hun eigenschappen zijn:
     </tr>
     <tr>
      <td><code>jcr:desciption</code></td>
-     <td><p><code>String</code></p> <p>optioneel</p> <p>standaard: ""</p> </td>
-     <td>Een tekst die een beschrijving van de wijziging bevat <span>(weergegeven in de <strong>Variatie</strong> tab (linkerspoor).</code></td>
+     <td><p><code>String</code></p> <p>optioneel</p> <p>default: ""</p> </td>
+     <td>Een tekst die een beschrijving van de wijziging bevat <span>(wordt weergegeven in de <strong>Variatie</strong> tab (linkerspoor).</code></td>
     </tr>
    </tbody>
   </table>

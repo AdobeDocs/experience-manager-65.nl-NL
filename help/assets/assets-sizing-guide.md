@@ -5,9 +5,9 @@ contentOwner: AG
 role: Architect, Admin
 feature: Asset Management
 exl-id: fd58ead9-5e18-4f55-8d20-1cf4402fad97
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1609'
 ht-degree: 0%
 
 ---
@@ -80,11 +80,11 @@ Voor AWS-bewerkingen kan het implementeren van één centrale locatie (via Amazo
 
 #### Prestatieproblemen {#performance-concerns}
 
-Een gedeelde datastore vereist dat de binaire getallen op een netwerk-opgezette aandrijving worden opgeslagen die tussen alle instanties wordt gedeeld. Omdat deze binaire getallen over een netwerk worden betreden, worden de systeemprestaties nadelig beïnvloed. U kunt het effect gedeeltelijk verlichten door een snelle netwerkverbinding aan een snelle serie van schijven te gebruiken. Dit is echter een kostbaar voorstel. In het geval van AWS-bewerkingen zijn alle schijven extern en vereisen ze netwerkconnectiviteit. Ephemeral-volumes verliezen gegevens wanneer de instantie start of stopt.
+Een gedeelde datastore vereist dat de binaire getallen op een netwerk-opgezette aandrijving worden opgeslagen die tussen alle instanties wordt gedeeld. Omdat deze binaire getallen over een netwerk worden betreden, worden de systeemprestaties nadelig beïnvloed. U kunt het effect gedeeltelijk verlichten door een snelle netwerkverbinding aan een snelle serie van schijven te gebruiken. Dit is echter een kostbaar voorstel. Als er AWS-bewerkingen zijn, zijn alle schijven extern en vereisen ze netwerkconnectiviteit. Ephemeral-volumes verliezen gegevens wanneer de instantie start of stopt.
 
 #### Latentie {#latency}
 
-De latentie in S3 implementaties wordt geïntroduceerd door de achtergrond schrijvend draden. Bij de back-upprocedures moet rekening worden gehouden met deze latentie. Bovendien kunnen de indexen van Lucene onvolledig blijven wanneer het maken van een steun. Het is van toepassing op elk tijdgevoelig dossier dat aan S3 datastore wordt geschreven en van een andere instantie wordt betreden.
+De latentie in S3 implementaties wordt geïntroduceerd door de achtergrond schrijvend draden. Back-upprocedures moeten rekening houden met deze vertraging. Bovendien kunnen de indexen van Lucene onvolledig blijven wanneer het maken van een steun. Het is van toepassing op elk tijdgevoelig dossier dat aan S3 datastore wordt geschreven en van een andere instantie wordt betreden.
 
 ### Node Store of document Store {#node-store-document-store}
 

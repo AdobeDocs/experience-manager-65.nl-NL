@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 08c88e70-4df9-4627-8a66-1fabe3aee50b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2793'
+source-wordcount: '2794'
 ht-degree: 0%
 
 ---
@@ -78,7 +78,7 @@ CFM (Content Fragment Management) maakt deel uit van AEM Assets als:
 
 ![fragment-aan-activa-gestructureerd](assets/fragment-to-assets-structured.png)
 
-Inhoudsfragmenten met gestructureerde inhoud (d.w.z. gebaseerd op een inhoudsfragmentmodel) worden toegewezen aan één element:
+Inhoudsfragmenten met gestructureerde inhoud (gebaseerd op een inhoudsfragmentmodel) worden toegewezen aan één element:
 
 * Alle inhoud wordt opgeslagen onder de `jcr:content/data` knooppunt van het element:
 

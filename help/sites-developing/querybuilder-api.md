@@ -1,6 +1,6 @@
 ---
 title: Query Builder-API
-description: De functionaliteit van Asset Share Query Builder wordt via een Java&trade weergegeven. API en een REST-API.
+description: De functionaliteit van de Asset Share Query Builder wordt weergegeven via een Java&trade; API en een REST API.
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: platform
@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: a66814fa065b7545ec39fe9109b4c5815fa199da
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2284'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worde
 
 ## Gem-sessie {#gem-session}
 
-[Adobe Experience Manager (AEM) Gems](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is nuttig voor een overzicht en gebruik van het hulpmiddel.
+[Adobe Experience Manager (AEM) Duitsland](https://experienceleague.adobe.com/docs/experience-manager-gems-events/gems/overview.html) Dit is een reeks technische diepteduiken in Adobe Experience Manager die door experts van de Adobe worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is nuttig voor een overzicht en gebruik van het hulpmiddel.
 
 >[!NOTE]
 >
@@ -59,7 +59,7 @@ Voor de `QueryBuilder` JSON Servlet, elk voorbeeld bevat een koppeling naar uw l
 
 ### Alle resultaten retourneren {#returning-all-results}
 
-De volgende query **tien resultaten retourneren** (of, om precies te zijn, een maximum van tien), maar u op de hoogte brengen van **Aantal treffers:** die beschikbaar zijn:
+De volgende query **tien resultaten opleveren** (of, om precies te zijn, een maximum van tien), maar u op de hoogte brengen van **Aantal treffers:** die beschikbaar zijn:
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&orderby=path`
 
@@ -71,7 +71,7 @@ path=/content
 orderby=path
 ```
 
-Dezelfde query (met de parameter `p.limit=-1`) **Alle resultaten retourneren** (dit kan een hoog aantal zijn, afhankelijk van uw instantie):
+Dezelfde query (met de parameter `p.limit=-1`) zal **Alle resultaten retourneren** (dit kan een hoog aantal zijn, afhankelijk van uw instantie):
 
 `http://localhost:4502/bin/querybuilder.json?path=/content&1_property=sling:resourceType&1_property.value=foundation/components/text&1_property.operation=like&p.limit=-1&orderby=path`
 
@@ -129,7 +129,7 @@ Het keert een aantal de zelfde standaardgrens van tien resultaten met een 0 comp
 
 ### Paginering uitvoeren {#implementing-pagination}
 
-Door gebrek zou de Bouwer van de Vraag ook het aantal treffers verstrekken. Afhankelijk van de resultaatgrootte, zou dit lange tijd kunnen vergen aangezien het bepalen van de nauwkeurige telling het controleren van elk resultaat voor toegangsbeheer impliceert. Meestal wordt het totaal gebruikt om paginering voor de eindgebruiker UI uit te voeren. Omdat het bepalen van de nauwkeurige telling langzaam kan zijn, wordt het geadviseerd om van de gokTotal eigenschap gebruik te maken om de paginering uit te voeren.
+Door gebrek zou de Bouwer van de Vraag ook het aantal treffers verstrekken. Afhankelijk van de resultaatgrootte, zou dit lange tijd kunnen vergen aangezien het bepalen van de nauwkeurige telling het controleren van elk resultaat voor toegangsbeheer impliceert. Meestal wordt het totaal gebruikt om paginering voor de eindgebruiker UI uit te voeren. Omdat het bepalen van de nauwkeurige telling langzaam kan zijn, wordt het geadviseerd om de gokTotal eigenschap te gebruiken om de paginering uit te voeren.
 
 De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
@@ -138,7 +138,7 @@ De interface kan bijvoorbeeld de volgende benadering aanpassen:
 
 * De reactie kan het volgende resultaat hebben:
 
-   * `total=43`, `more=false` - Geeft aan dat het totale aantal treffers 43 is. De interface kan tot tien resultaten als deel van de eerste pagina tonen en paginering voor de volgende drie pagina&#39;s verstrekken. U kunt deze implementatie ook gebruiken om een beschrijvende tekst weer te geven, zoals **&quot;43 resultaten gevonden&quot;**.
+   * `total=43`, `more=false` - Geeft aan dat het totale aantal treffers 43 is. De interface kan tot tien resultaten als deel van de eerste pagina tonen en paginering voor de volgende drie pagina&#39;s verstrekken. U kunt deze implementatie ook gebruiken om een beschrijvende tekst weer te geven zoals **&quot;43 resultaten gevonden&quot;**.
    * `total=100`, `more=true` - Geeft aan dat het totale aantal treffers groter is dan 100 en dat het exacte aantal niet bekend is. De interface kan maximaal tien pagina&#39;s weergeven als onderdeel van de eerste pagina en paginering voor de volgende tien pagina&#39;s bieden. U kunt dit ook gebruiken om tekst als **&quot;meer dan 100 resultaten gevonden&quot;**. Aangezien de gebruiker naar de volgende pagina vraag gaat die aan de Bouwer van de Vraag wordt gemaakt zou de grens van verhogen `guessTotal` en van de `offset` en `limit` parameters.
 
 `guessTotal` moet worden gebruikt in gevallen waarin de gebruikersinterface oneindig schuiven moet gebruiken om te voorkomen dat de Query Builder het exacte aantal treffers bepaalt.
@@ -216,7 +216,7 @@ Deze query gebruikt een *groep* (met de naam &quot; `group`&quot;), die fungeert
 
 In de groep in het voorbeeld worden de `path` predikaat wordt meerdere keren gebruikt. Om de twee instanties van predikaat (het opdracht geven tot wordt vereist voor sommige predikaten) te onderscheiden en te rangschikken, moet u prefixeren predikaten met *N* `_ where`*N* is de bestelindex. In het vorige voorbeeld zijn de resulterende voorspellingen `1_path` en `2_path`.
 
-De `p` in `p.or` is een speciaal scheidingsteken dat aangeeft wat volgt (in dit geval `or`) is *parameter* van de groep, in tegenstelling tot een subpredicaat van de groep, zoals `1_path`.
+De `p` in `p.or` is een speciaal scheidingsteken dat aangeeft wat volgt (in dit geval `or`) is *parameter* van de groep, in tegenstelling tot een subgroep van de groep, zoals `1_path`.
 
 Indien niet `p.or` Alle voorspellingen worden dan samen ENed gegeven, dat wil zeggen dat elk resultaat aan alle voorspellingen moet voldoen.
 
@@ -224,7 +224,7 @@ Indien niet `p.or` Alle voorspellingen worden dan samen ENed gegeven, dat wil ze
 >
 >U kunt niet hetzelfde numerieke voorvoegsel in één query gebruiken, zelfs niet voor verschillende voorspellingen.
 
-### Eigenschappen zoeken {#search-for-properties}
+### Zoeken naar eigenschappen {#search-for-properties}
 
 Hier zoekt u naar alle pagina&#39;s van een bepaalde sjabloon met de opdracht `cq:template` eigenschap:
 
@@ -355,7 +355,7 @@ p.nodedepth=5
 
 ## Meer voorspellingen {#morepredicates}
 
-Voor meer voorspellingen raadpleegt u de [Voorspelde referentiepagina van Query Builder](/help/sites-developing/querybuilder-predicate-reference.md).
+Zie voor meer voorspellingen de [Voorspelde referentiepagina van Query Builder](/help/sites-developing/querybuilder-predicate-reference.md).
 
 U kunt ook de [Javadoc voor de `PredicateEvaluator` klassen](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/PredicateEvaluator.html). Javadoc voor deze klassen bevat de lijst met eigenschappen die u kunt gebruiken.
 
@@ -435,7 +435,7 @@ U kunt query&#39;s opslaan in de opslagplaats, zodat u ze later kunt gebruiken. 
 void storeQuery(Query query, String path, boolean createFile, Session session) throws RepositoryException, IOException;
 ```
 
-Wanneer u de [`QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) methode, de `Query` in de opslagplaats wordt opgeslagen als een bestand of als een eigenschap volgens de `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een `Query` naar het pad `/mypath/getfiles` als bestand:
+Wanneer u de opdracht [`QueryBuilder#storeQuery`](https://helpx.adobe.com/experience-manager/6-5/sites/developing/using/reference-materials/javadoc/com/day/cq/search/QueryBuilder.html#storequerycomdaycqsearchqueryjavalangstringbooleanjavaxjcrsession) methode, de `Query` in de opslagplaats wordt opgeslagen als een bestand of als een eigenschap volgens de `createFile` argumentwaarde. In het volgende voorbeeld wordt getoond hoe u een `Query` naar het pad `/mypath/getfiles` als bestand:
 
 ```java
 builder.storeQuery(query, "/mypath/getfiles", true, session);

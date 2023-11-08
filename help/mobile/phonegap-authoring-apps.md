@@ -1,16 +1,14 @@
 ---
 title: Mobiele toepassingen ontwerpen
 description: Met het AEM Mobile-dashboard kunt u uw mobiele toepassing maken, bouwen en implementeren, toepassingsmetagegevens maken, verwijderen en bewerken. Volg deze pagina voor meer informatie.
-uuid: 293b5d29-df7e-42dd-ae64-8c677317e7a5
 contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
-discoiquuid: abfeea65-102d-4800-abeb-304d61afcc13
 exl-id: 073daff7-0c1d-4715-bfd4-3e2336e4cb88
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1013'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -67,7 +65,7 @@ Inhoud kan in AEM Mobile op dezelfde manier worden gemaakt, bijgewerkt en verwij
 
 Nadat u de inhoud hebt toegevoegd of gewijzigd via de Content Tile van de Pagina beheren, kunt u deze wijzigingen doorsturen naar uw klanten met een update voor de inhoudsversie.
 
-Met het inhoudspakket kan de AEM App Author pagina-inhoud beheren in AEM en kan uw ontwikkelingsteam wijzigingen aanbrengen in uw PhoneGap Shell-toepassing (dat wil zeggen, toepassingsframework of infrastructuur) en deze wijzigingen vervolgens snel en zonder dat een ontwikkelaar zich hoeft aan te melden bij de verschillende winkels voor distributie.
+Het Pakket van de inhoud staat de AEM App Author toe om paginacontent in AEM te beheren en, uw ontwikkelingsteam uw Toepassing van Shell te hebben PhoneGap (namelijk app kader of infrastructuur) en dan die veranderingen uit te duwen aan uw klanten snel en zonder het moeten een ontwikkelaar ertoe aanzetten om aan de diverse opslag voor distributie opnieuw voor te leggen.
 
 Met Inhoudspakket wordt voor elke update een ZIP-bestand gemaakt, dat wordt beschouwd als een pakket met de inhoudsversie. Deze pakketten bevatten HTML-bronnen en HTML-pagina&#39;s die tijdens het renderen van de app worden gegenereerd en zijn intelligent genoeg om alleen die bestanden te verpakken die sinds de laatste update zijn gewijzigd.
 

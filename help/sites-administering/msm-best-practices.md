@@ -4,9 +4,9 @@ description: Zoek naar beste praktijken die door Adobe engineering en adviesteam
 topic-tags: site-features, best-practices
 feature: Multi Site Manager
 exl-id: 3fedc1ba-64f5-4fbe-9ee5-9b96b75dda58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
-source-wordcount: '1609'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ Wijzigingen in de inhoudsstructuur in een blauwdruk-/bronstructuur worden anders
 
 ## Rollen aanpassen {#customizing-rollouts}
 
-MSM-rollout-configuraties zijn in hoge mate aanpasbaar. Het automatiseren van rollouts kan verstrekkende gevolgen hebben. Als beste praktijken, zou u moeten plannen *zeer* zorgvuldig vóór, bijvoorbeeld:
+MSM-rollout-configuraties zijn in hoge mate aanpasbaar. Het automatiseren van rollouts kan verreikende gevolgen hebben. Als beste praktijken, zou u moeten plannen *zeer* zorgvuldig vóór, bijvoorbeeld:
 
 * rollouts automatiseren, bijvoorbeeld met [onModify-triggers](#onmodify),
 * aanpassen [knooppunttypen/eigenschappen](#node-types-properties),

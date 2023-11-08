@@ -9,9 +9,9 @@ docset: aem65
 feature: Interactive Videos
 role: User, Admin
 exl-id: d118879d-c17b-43f3-9cc8-0405531b4d9f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '5993'
+source-wordcount: '5992'
 ht-degree: 2%
 
 ---
@@ -533,7 +533,7 @@ De gekopieerde insluitcode wordt ingesteld voor een responsieve omgeving, zodat 
 >
 Als u nu alleen interactiviteit met hypergekoppelde webpagina&#39;s hebt toegevoegd, bent u klaar.
 >
-Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, worden de miniaturen naast de interactieve video alleen weergegeven. Ze zijn nog niet geïntegreerd met de bestaande Snelle weergave. In dat geval moet u de interactieve video nu integreren met de bestaande QuickView op uw website.
+Als u echter interactiviteit hebt toegevoegd om een Snelle weergave te activeren, worden de miniaturen naast de interactieve video alleen weergegeven. Ze zijn nog niet geïntegreerd met de bestaande Snelle weergave. In dat geval moet u de interactieve video integreren met de bestaande QuickView op uw website.
 
 **Voorbeeld**
 

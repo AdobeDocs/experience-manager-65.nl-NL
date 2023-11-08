@@ -2,7 +2,7 @@
 title: Hoe te om de uitvoeren manuscriptdienst in AEM Forms op JEE Workbench te gebruiken om de gegevens van XML te bouwen?
 description: De service Script uitvoeren in AEM Forms op JEE Workbench gebruiken om XML-gegevens te maken
 exl-id: 2ec57cd4-f41b-4e5c-849d-88ca3d2cfe19
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
 workflow-type: tm+mt
 source-wordcount: '979'
 ht-degree: 0%
@@ -124,7 +124,7 @@ if (currentChild.getNodeType() == Node.ELEMENT_NODE)
 
 {
 
-// found the top level node
+// found the top-level node
 
 Element newResource = document.createElement("resource");
 

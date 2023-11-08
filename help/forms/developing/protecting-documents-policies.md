@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: ff42579e-6aaf-433d-8b5d-9e9dd0957250
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '15468'
+source-wordcount: '15464'
 ht-degree: 0%
 
 ---
@@ -323,7 +323,7 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ## Beleid wijzigen {#modifying-policies}
 
-U kunt een bestaand beleid wijzigen met de Java API voor documentbeveiliging of de webservice-API. Om veranderingen in een bestaand beleid aan te brengen, wint u het terug, wijzigt het, en werkt dan het beleid op de server bij. Stel dat u een bestaand beleid ophaalt en de geldigheidsperiode ervan verlengt. Voordat de wijziging van kracht wordt, moet u het beleid bijwerken.
+U kunt een bestaand beleid wijzigen met de Java API voor documentbeveiliging of de webservice-API. Om een bestaand beleid te veranderen, wint u het terug, wijzigt het, en werkt dan het beleid op de server bij. Stel dat u een bestaand beleid ophaalt en de geldigheidsperiode ervan verlengt. Voordat de wijziging van kracht wordt, moet u het beleid bijwerken.
 
 U kunt een beleid wijzigen wanneer de bedrijfsvereisten veranderen en het beleid niet meer op deze vereisten wijst. In plaats van een beleid te maken, kunt u gewoon een bestaand beleid bijwerken.
 
@@ -1477,7 +1477,7 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 ## Watermerken wijzigen {#modifying-watermarks}
 
-U kunt een bestaand watermerk wijzigen met de Java API voor documentbeveiliging of de webservice-API. Als u wijzigingen wilt aanbrengen in een bestaand watermerk, haalt u het watermerk op, wijzigt u de kenmerken ervan en werkt u het watermerk vervolgens bij op de server. Stel dat u een watermerk ophaalt en het kenmerk Dekking wijzigt. Voordat de wijziging van kracht wordt, moet u het watermerk bijwerken.
+U kunt een bestaand watermerk wijzigen met de Java API voor documentbeveiliging of de webservice-API. Als u een bestaand watermerk wilt wijzigen, haalt u het op, wijzigt u de kenmerken en werkt u het vervolgens bij op de server. Stel dat u een watermerk ophaalt en het kenmerk Dekking wijzigt. Voordat de wijziging van kracht wordt, moet u het watermerk bijwerken.
 
 Wanneer u een watermerk wijzigt, is de wijziging van invloed op toekomstige documenten waarop het watermerk is toegepast. Dat wil zeggen dat bestaande PDF-documenten die het watermerk bevatten, niet worden beïnvloed.
 

@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 6e4b4dfa-3af5-4c21-a2a1-b90ef02d8514
 exl-id: bf69de86-2ca6-4d21-936c-07c1debacfa0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '855'
 ht-degree: 0%
@@ -58,7 +58,7 @@ U kunt zo veel zoeksjablonen maken als u wilt.
       * (Optioneel) Als u wilt dat gebruikers de operandwaarde in Workspace kunnen wijzigen, selecteert u De gebruiker toestaan de operand te wijzigen.
       * (Optioneel) Als u gebruikers wilt toestaan de relationele operator te wijzigen, selecteert u Toestaan dat de gebruiker een andere relationele operator selecteert. Selecteer in de lijst die wordt weergegeven de operatoren die beschikbaar zijn voor de gebruiker.
 
-     **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Nadat u een proces hebt geselecteerd, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, beschikbaar voor selectie onder Procesvariabelen in de bovenste sectie van het tabblad Criteria.*
+     **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de Forms-server wordt uitgevoerd. Nadat u een proces hebt geselecteerd, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, beschikbaar voor selectie onder Procesvariabelen in de bovenste sectie van het tabblad Criteria.*
 
      **Tip**: *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
 

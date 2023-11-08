@@ -7,9 +7,9 @@ topic-tags: upgrading
 content-type: reference
 feature: Upgrading
 exl-id: 85bc041e-0ab1-42de-8bcc-c98a175d7494
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1338'
+source-wordcount: '1337'
 ht-degree: 0%
 
 ---
@@ -160,7 +160,7 @@ merge-index-definitions_target: JSON file having merged definitions for the targ
 
 Gebruik van de `--doc-traversal-mode` Deze parameter is handig bij MongoMK-installaties omdat de herindextijd hierdoor aanzienlijk wordt verbeterd doordat opslagruimteinhoud in een lokaal, plat bestand wordt gespoold. Er is echter meer schijfruimte nodig van tweemaal de grootte van de opslagplaats.
 
-In het geval van MongoMK kan dit proces worden versneld als deze stap wordt uitgevoerd in een instantie dichter bij de instantie MongoDB. Als de looppas op de zelfde machine, netwerkoverheadkosten kan worden vermeden.
+Als er MongoMK is, kan dit proces worden versneld als deze stap in een instantie dichter bij de instantie MongoDB wordt uitgevoerd. Als de looppas op de zelfde machine, netwerkoverheadkosten kan worden vermeden.
 
 Aanvullende technische details zijn te vinden in het [documentatie voor indexering door eikenuitvoering](https://jackrabbit.apache.org/oak/docs/query/oak-run-indexing.html).
 

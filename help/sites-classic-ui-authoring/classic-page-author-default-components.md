@@ -2,23 +2,21 @@
 title: Onderdelen
 description: AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden aan auteurs van websites.
 page-status-flag: de-activated
-uuid: 02720edd-853c-4893-bf28-0e7b018029ea
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
-discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
 exl-id: 9e0a01da-7940-47aa-8604-788d74e5daa0
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
 # Onderdelen{#components}
 
-Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Deze zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en worden gegroepeerd per hoofdfunctionele zone (d.w.z. componentgroep) om te filteren.
+Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Deze zijn beschikbaar wanneer [pagina&#39;s bewerken](/help/sites-classic-ui-authoring/classic-page-author-edit-content.md) en worden gegroepeerd per hoofdfunctionele zone (d.w.z. componentengroep) om te helpen filteren.
 
 >[!CAUTION]
 >
@@ -32,11 +30,11 @@ De volgende pagina&#39;s bevatten snelle koppelingen naar enkele van de belangri
 
 * [Componenten voor paginaontwerp](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md)
 
-   Componenten die worden gebruikt voor het maken van standaardpagina-inhoud zijn voornamelijk opgenomen in de groepen **Algemeen**, **Kolommen** en **Forms**.
+  Componenten die worden gebruikt voor het maken van standaardpagina-inhoud zijn voornamelijk opgenomen in de groepen **Algemeen**, **Kolommen** en **Forms**.
 
 * [eCommerce](/help/commerce/cif-classic/administering/ecommerce.md)
 
-   De eCommerce-functie binnen AEM omvat ook een reeks componenten die in de **Handel** groep. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
+  De eCommerce-functie binnen AEM omvat ook een reeks componenten die in de **Handel** groep. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
 
 ## Ontwerpmodus gebruiken om componenten te configureren {#using-design-mode-to-configure-components}
 

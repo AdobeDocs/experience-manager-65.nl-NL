@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
 exl-id: 760b8419-5cf8-49c5-8d4f-6691f5256c53
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1795'
+source-wordcount: '1797'
 ht-degree: 6%
 
 ---
@@ -81,13 +81,13 @@ Met AEM kunt u lay-outs definiëren die afhankelijk zijn van de breedte van het 
    * Het bereik van een onderbrekingspunt loopt door tot het volgende onderbrekingspunt.
    * U kunt het onderbrekingspunt niet specifiek selecteren, zal selecteren een apparaat en de richtlijn automatisch het aangewezen breekpunt selecteren.
 
-Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op het standaardonderbrekingspunt (d.w.z. alles boven het laatste gevormde breekpunt).
+Het apparaat **Desktop**, die geen specifieke breedte heeft, heeft betrekking op het standaardbreekpunt (dat wil zeggen alles boven het laatst geconfigureerde onderbrekingspunt).
 
 >[!NOTE]
 >
 >Het zou mogelijk zijn om breekpunten voor elk individueel apparaat te bepalen, maar dit zou drastisch de inspanning die voor lay-outdefinitie en onderhoud wordt vereist verhogen.
 
-Wanneer u de emulator gebruikt, selecteert u een specifiek apparaat voor de definitie van emulatie en layout en wordt het desbetreffende onderbrekingspunt ook gemarkeerd. Alle layoutwijzigingen die u aanbrengt, zijn van toepassing op andere apparaten waarop het onderbrekingspunt van toepassing is, dat wil zeggen apparaten die links van de actieve onderbrekingspuntmarkering zijn geplaatst, maar vóór de volgende onderbrekingspuntmarkering.
+Wanneer u de emulator gebruikt, selecteert u een specifiek apparaat voor de definitie van emulatie en layout en wordt het desbetreffende onderbrekingspunt ook gemarkeerd. Alle layoutwijzigingen die u aanbrengt, zijn van toepassing op andere apparaten waarop het onderbrekingspunt van toepassing is. Dit zijn apparaten die zich links van de actieve onderbrekingspuntmarkering bevinden, maar vóór de volgende onderbrekingspuntmarkering.
 
 Wanneer u bijvoorbeeld het apparaat selecteert **iPhone 6 Plus** (gedefinieerd met een breedte van 540 pixels) voor emulatie en lay-out, het onderbrekingspunt **Telefoon** (gedefinieerd als 768 pixels) wordt ook geactiveerd. Alle indelingswijzigingen die u aanbrengt voor de **IPHONE 6** van toepassing zijn op andere voorzieningen in het kader van de **Telefoons** onderbrekingspunten, zoals **IPHONE 5** (gedefinieerd als 320 pixels).
 

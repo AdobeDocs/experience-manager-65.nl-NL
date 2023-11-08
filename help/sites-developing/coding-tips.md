@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: 85ca35e5-6e2b-447a-9711-b12601beacdd
-source-git-commit: b703f356f9475eeeafb1d5408c650d9c6971a804
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '861'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
@@ -92,7 +92,7 @@ Voor code Java™, AEM steunt slf4j als standaard API voor het registreren van b
 * FOUTOPSPORING: informatie op een lager niveau over verwerking. Nuttig wanneer het zuiveren van een kwestie met steun.
 * TRACE: Het laagste niveau van informatie, dingen zoals het invoeren/afsluiten van methoden. Dit zal gewoonlijk slechts door ontwikkelaars worden gebruikt.
 
-In het geval van JavaScript *console.log* dienen alleen tijdens de ontwikkeling te worden gebruikt en alle loginstructies dienen vóór de release te worden verwijderd.
+Als er JavaScript is, *console.log* dienen alleen tijdens de ontwikkeling te worden gebruikt en alle loginstructies dienen vóór de release te worden verwijderd.
 
 ### Ladingencatalogus vermijden {#avoid-cargo-cult-programming}
 

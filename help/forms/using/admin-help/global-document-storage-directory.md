@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '676'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Algemene map voor documentopslag{#global-document-storage-directory}
 
-De *algemene documentopslag (GDS)* map is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. Deze bestanden bevatten PDF, beleidsregels en formuliersjablonen. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de formulierserver instabiel worden. Invoerdocumenten voor asynchrone taakaanroepen worden ook opgeslagen in de GDS-map en moeten beschikbaar zijn voor het verwerken van aanvragen. Het is belangrijk dat u rekening houdt met de betrouwbaarheid van het bestandssysteem dat de GDS-map host. Gebruik een redundante array met onafhankelijke schijven (RAID) of andere technologie die geschikt is voor uw servicekwaliteit en serviceniveau.
+De *algemene documentopslag (GDS)* map is een map die wordt gebruikt voor het opslaan van bestanden met een lange levensduur die in een proces worden gebruikt. Deze bestanden bevatten PDF, beleidsregels en formuliersjablonen. Bestanden met een lange levensduur vormen een essentieel onderdeel van de algemene status van veel AEM formulieren. Als sommige of alle documenten met een lange levensduur verloren gaan of beschadigd raken, kan de Forms-server instabiel worden. Invoerdocumenten voor asynchrone taakaanroepen worden ook opgeslagen in de GDS-map en moeten beschikbaar zijn voor het verwerken van aanvragen. Het is belangrijk dat u rekening houdt met de betrouwbaarheid van het bestandssysteem dat de GDS-map host. Gebruik een redundante array met onafhankelijke schijven (RAID) of andere technologie die geschikt is voor uw servicekwaliteit en serviceniveau.
 
 Bestanden met een lange levensduur kunnen vertrouwelijke gebruikersgegevens bevatten. Deze informatie kan speciale geloofsbrieven vereisen wanneer betreden door de AEM vormen APIs of gebruikersinterfaces te gebruiken. Het is belangrijk dat de GDS-map correct wordt beveiligd via het besturingssysteem. Alleen de beheerdersaccount die wordt gebruikt om de toepassingsserver uit te voeren, moet lees-/schrijftoegang hebben tot de GDS-map.
 
@@ -98,7 +98,7 @@ AEM formulieren bestaan uit twee typen implementatiebestanden, de servicecontain
 * adobe-core *[appserver]*.ear
 * adobe-core *[appserver]*-*[OS]*.ear
 
-Bij het implementeren van AEM formulieren moeten de geassembleerde EAB-bestanden en ondersteunende bestanden worden geïmplementeerd op de toepassingsserver waar u de oplossing voor AEM formulieren wilt uitvoeren. Als u vormde en veelvoudige modules assembleerde, worden de plaatsbare modules verpakt binnen de plaatsbare EAR dossiers. Als u deze bestanden wilt implementeren, kopieert u deze naar de *[appserverhome]*\server\all\deploy directory.
+Bij het implementeren van AEM formulieren moeten de geassembleerde EAB-bestanden en ondersteunende bestanden worden geïmplementeerd op de toepassingsserver waar u de oplossing voor AEM formulieren wilt uitvoeren. Als u vormde en veelvoudige modules assembleerde, worden de plaatsbare modules verpakt binnen de plaatsbare EAR dossiers. Als u deze bestanden wilt implementeren, kopieert u deze naar de *[appserverhome]*\server\all\deploy.
 
 Modules en AEM formulierarchiefbestanden worden verpakt in JAR-bestanden. Omdat het geen J2EE-typebestanden zijn, worden deze niet geïmplementeerd op de toepassingsserver. In plaats daarvan worden ze naar de GDS-map gekopieerd en wordt een verwijzing naar de locatie ervan opgeslagen in de database met AEM formulieren. Daarom moet de GDS-map worden gedeeld tussen alle knooppunten van de cluster. Alle knopen moeten toegang tot de centrale opslagfolder voor DSCs hebben.
 

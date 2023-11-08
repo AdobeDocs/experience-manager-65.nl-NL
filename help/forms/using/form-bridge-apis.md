@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: developer-reference
 discoiquuid: c05c9911-7c49-4342-89de-61b8b9953c83
 exl-id: b598ef47-49ff-4806-8cc7-4394aa068eaa
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
 source-wordcount: '940'
 ht-degree: 0%
@@ -61,7 +61,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 * **Invoer**:
 
    * **handler**: Functie die moet worden uitgevoerd nadat Form Bridge is verbonden
-   * **context**: Het object waarop de context (deze) van de *handler* functie worden ingesteld.
+   * **context**: Het object waarop de context (deze) van de component *handler* functie worden ingesteld.
 
 * **Uitvoer**: Geen
 * **Fout**: Geen
@@ -72,10 +72,10 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
    * **opties:** JavaScript-object met de volgende eigenschappen:
 
-      * **Fout**: Error Handler Function
-      * **succes**: Handlerfunctie voor succes. Deze functie wordt doorgegeven aan een object dat XML bevat in *data* eigenschap.
-      * **context**: Het object waarop de context (deze) van de *succes* function is set
-      * **validationChecker**: Functie om validatiefouten te controleren die van de server zijn ontvangen. Validatiefunctie wordt doorgegeven aan een array met fouttekenreeksen.
+      * **Fout**: functie Error Handler
+      * **succes**: Handlerfunctie voor succesmeldingen. Deze functie wordt doorgegeven aan een object dat XML bevat in *data* eigenschap.
+      * **context**: Het object waarop de context (deze) van de component *succes* function is set
+      * **validationChecker**: Functie die moet worden aangeroepen om validatiefouten te controleren die van de server zijn ontvangen. Validatiefunctie wordt doorgegeven aan een array met fouttekenreeksen.
       * **formState**: De JSON-status van het XFA-formulier waarvoor gegevens-XML moet worden geretourneerd. Als deze optie niet is opgegeven, worden de gegevens-XML geretourneerd voor het momenteel gegenereerde formulier.
 
 * **Uitvoer:** Geen
@@ -89,45 +89,44 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
       * **widgetConfig:** Hiermee kan de gebruiker de standaardwidgets in het formulier overschrijven met aangepaste widgets. De configuratie wordt als volgt overschreven:
 
-         *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
+        *formBridge.registerConfig(&quot;widgetConfig&quot;:{/&amp;ast;configuration&amp;ast;/})*
 
       * **pagingConfig:** Hiermee kan de gebruiker het standaardgedrag negeren waarbij alleen de eerste pagina wordt weergegeven. De configuratie wordt als volgt overschreven:
 
-         *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, shrinkPageDisabled: &lt;true false=&quot;&quot;> }).*
+        *window.formBridge.registerConfig(&quot;pagingConfig&quot;:{pagingDisabled: &lt;true false=&quot;&quot;>, krimpPageDisabled: &lt;true false=&quot;&quot;> }).*
 
       * **LoggingConfig:** Staat de gebruiker toe om het niveau van het registreren met voeten te treden, het registreren voor een categorie onbruikbaar te maken, of om de logboekconsole te tonen of naar server te verzenden. De configuratie kan als volgt worden overschreven:
 
-      ```javascript
-      formBridge.registerConfig{
-        "LoggerConfig" : {
-      {
-      "on":`<true *| *false>`,
-      "category":`<array of categories>`,
-      "level":`<level of categories>`, "
-      type":`<"console"/"server"/"both">`
-      }
-        }
-      ```
+     ```javascript
+     formBridge.registerConfig{
+       "LoggerConfig" : {
+     {
+     "on":`<true *| *false>`,
+     "category":`<array of categories>`,
+     "level":`<level of categories>`, "
+     type":`<"console"/"server"/"both">`
+     }
+       }
+     ```
 
       * **SubmitServiceProxyConfig:** Gebruikers toestaan verzendingen te registreren en proxyservices te registreren.
 
-         ```javascript
-         window.formBridge.registerConfig("submitServiceProxyConfig",
-         {
-         "submitServiceProxy" : "`<submitServiceProxy>`",
-         "logServiceProxy": "`<logServiceProxy>`",
-         "submitUrl" : "`<submitUrl>`"
-         });
-         ```
+        ```javascript
+        window.formBridge.registerConfig("submitServiceProxyConfig",
+        {
+        "submitServiceProxy" : "`<submitServiceProxy>`",
+        "logServiceProxy": "`<logServiceProxy>`",
+        "submitUrl" : "`<submitUrl>`"
+        });
+        ```
+
    * **config:** Waarde van de configuratie
-
-
 
 * **Uitvoer:** Object met oorspronkelijke waarde van de configuratie in *data* eigenschap.
 
 * **Fout:** Geen
 
-**hideFields(fieldArray)** Hiermee worden de velden verborgen waarvan de SOM-expressies worden opgegeven in de fieldArray. Hiermee wordt de aanwezigheidseigenschap van de opgegeven velden ingesteld op onzichtbaar
+**hideFields(fieldArray)** Hiermee worden de velden verborgen waarvan de SOM-expressies worden opgegeven in de fieldArray. Hiermee wordt de eigenschap presence van de opgegeven velden ingesteld op onzichtbaar
 
 * **Invoer:**
 
@@ -164,9 +163,9 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
    * **Opties:** JavaScript-object met de volgende eigenschappen:
 
-      * **Fout**: Error Handler Function
-      * **succes**: Handlerfunctie voor succes
-      * **context**: Het object waarop de context (deze) van de *succes* function are set
+      * **Fout**: functie Error Handler
+      * **succes**: Handlerfunctie Succes
+      * **context**: Het object waarop de context (deze) van de component *succes* function are set
       * **formState**: JSON-status van het formulier. Het formulier wordt teruggezet naar de JSON-status.
 
 * **Uitvoer:** Geen
@@ -176,7 +175,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
 
 * **Invoer:** Enkele expressie van het veld waarop de focus moet worden ingesteld
 * **Uitvoer:** Geen
-* **Fout:** Genereert een uitzondering in geval van onjuiste SOM-expressie
+* **Fout:** Genereert een uitzondering als er een onjuiste SOM-expressie is
 
 **setFieldValue (som, value)** Hiermee wordt de waarde ingesteld van de velden voor de opgegeven SOM-expressies
 
@@ -186,7 +185,7 @@ Hiermee wordt het versienummer van de scriptbibliotheek geretourneerd
    * **waarde:** Array die waarden bevat die overeenkomen met SOM-expressies die zijn opgegeven in een **som** array. Als het gegevenstype van de waarde niet hetzelfde is als het fieldType, wordt de waarde niet gewijzigd.
 
 * **Uitvoer:** Geen
-* **Fout:** Genereert een uitzondering in het geval van een onjuiste SOM-expressie
+* **Fout:** Genereert een uitzondering als er een onjuiste SOM-expressie is
 
 **getFieldValue (som)** Hiermee wordt de waarde van de velden voor de opgegeven SOM-expressies geretourneerd
 

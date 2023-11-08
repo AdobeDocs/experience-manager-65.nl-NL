@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: be4994de-12f8-436e-926a-49a6783b006e
 exl-id: f4045df5-a35b-41d7-910e-971017148597
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
 workflow-type: tm+mt
 source-wordcount: '735'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM formulieren en
 
 >[!NOTE]
 >
->In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In deze versie worden de elementen opgeslagen in de systeemeigen opslagruimte voor AEM formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de opslagplaats voor AEM formulieren vindt plaats wanneer u een upgrade uitvoert naar AEM formulieren. Zie de handleiding voor het upgraden van AEM formulieren voor uw toepassingsserver voor meer informatie.
+>In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In deze versie worden de elementen opgeslagen in de systeemeigen opslagruimte voor AEM formulieren en zijn de services van de opslagprovider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de opslagplaats voor AEM formulieren vindt plaats wanneer u een upgrade uitvoert naar AEM formulieren. Zie de handleiding voor het upgraden van AEM formulieren voor uw toepassingsserver voor meer informatie.
 
 ## De verbinding met de inhoudsengine configureren {#configure-the-connection-to-the-content-engine}
 
@@ -48,7 +48,7 @@ IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijf
 1. Voer in het vak Locatie van versleutelingsbestand het pad naar het versleutelingsbestand in:
 
    * Als u Wissen hebt geselecteerd als de regeling voor bescherming tegen referentie, worden dit trefwoord en de bijbehorende waarde genegeerd.
-   * Als u Symmetrisch hebt geselecteerd als de regeling voor bescherming van referenties, verwijst het pad dat u invoert naar de locatie van een versleutelingsbestand op de formulierserver dat de te gebruiken cryptografische sleutels bevat.
+   * Als u Symmetrisch als regeling van de credentiebescherming selecteerde, richt de weg u aan de plaats van een encryptiedossier op de Server van Forms die de cryptografische te gebruiken sleutels bevat.
 
 1. Voer in het vak Standaardobjectarchief de opslagconnector in van het object waarmee AEM formulieren standaard verbinding maken.
 1. Voer in het vak Gebruikersnaam de gebruikersnaam in van een gebruiker die toegangsrechten heeft tot de standaardobberwinkel die u in de vorige stap hebt opgegeven.

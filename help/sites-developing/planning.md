@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: testing
 content-type: reference
 exl-id: ed662279-0679-4ba3-b744-6649fb8dda17
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '977'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Hoewel toekomstige getallen niet met 100% nauwkeurigheid kunnen worden voorspeld
 
 Het is de verantwoordelijkheid van de projectbeheerder om afhankelijk van de resultaten een besluit te nemen over een actie of acties.
 
-**Betrokken worden** - Hoewel het de verantwoordelijkheid van de projectbeheerder is om ervoor te zorgen dat alle partijen volledig betrokken zijn bij alle vergaderingen (status, workshops, enz.), moet u ook proberen zo vroeg mogelijk in de projectcyclus betrokken te raken, inclusief de processen voor het verzamelen van informatie en het analyseren van de vereisten.
+**Betrokken worden** - Hoewel het de verantwoordelijkheid van de projectbeheerder is om ervoor te zorgen dat alle partijen volledig betrokken zijn bij alle vergaderingen (status, workshops, enzovoort), moet u ook proberen zo vroeg mogelijk deel te nemen aan de projectcyclus, met inbegrip van de processen voor het verzamelen van informatie en het analyseren van de vereisten.
 
 **De klant betrekken** - Probeer bij een vergelijkbaar thema de klant (waar mogelijk) te betrekken bij het definiëren van uw testcase en -plan.
 

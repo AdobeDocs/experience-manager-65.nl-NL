@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: c200f345-40ab-46fd-b6ed-f3af0a23796b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '17029'
+source-wordcount: '17027'
 ht-degree: 0%
 
 ---
@@ -351,7 +351,7 @@ U kunt handtekeningvelden in een PDF-document wijzigen met de Java API en de web
 
 A *veldvergrendelingswoordenboek* Hiermee geeft u een lijst op met velden die zijn vergrendeld wanneer het handtekeningveld wordt ondertekend. Een vergrendeld veld voorkomt dat gebruikers wijzigingen in het veld aanbrengen. A *zaadwaardewoordenboek* bevat beperkende informatie die wordt gebruikt op het moment dat de handtekening wordt toegepast. U kunt bijvoorbeeld machtigingen wijzigen die de acties bepalen die kunnen plaatsvinden zonder een handtekening ongeldig te maken.
 
-Door een bestaand handtekeningveld te wijzigen, kunt u wijzigingen aanbrengen in het PDF-document om rekening te houden met veranderende zakelijke vereisten. Voor een nieuwe bedrijfsvereiste moeten bijvoorbeeld mogelijk alle documentvelden worden vergrendeld nadat het document is ondertekend.
+Door een bestaand handtekeningveld te wijzigen, kunt u het PDF-document aanpassen aan veranderende zakelijke vereisten. Voor een nieuwe bedrijfsvereiste moeten bijvoorbeeld mogelijk alle documentvelden worden vergrendeld nadat het document is ondertekend.
 
 In deze sectie wordt uitgelegd hoe u een handtekeningveld kunt wijzigen door de woordenboekwaarden voor veldvergrendeling en zaadwaarden te wijzigen. Als u wijzigingen aanbrengt in het vergrendelingswoordenboek van het handtekeningveld, worden alle velden in het PDF-document vergrendeld wanneer een handtekeningveld wordt ondertekend. Wijzigingen in het woordenboek voor zaadwaarden staan bepaalde typen wijzigingen in het document niet toe.
 

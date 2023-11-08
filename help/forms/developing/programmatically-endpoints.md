@@ -1,19 +1,15 @@
 ---
 title: Programmaticaal het leiden Eindpunten
-seo-title: Programmatically Managing Endpoints
 description: Gebruik de dienst van de Registratie van het Eindpunt om EJB eindpunten toe te voegen, het eindpunt van de ZEEP toe te voegen, Gecontroleerde eindpunten van de Omslag toe te voegen, E-maileindpunten toe te voegen, verwijderende eindpunten van de Manager van de Taak toe te voegen, eindpunten te wijzigen, eindpunten te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
-seo-description: Use the Endpoint Registry service to add EJB endpoints, add SOAP endpoint, add Watched Folder endpoints, add Email endpoints, add  Remoting endpoints, add Task Manager endpoints, modify endpoints, remove endpoints, and retrieve endpoint connector information.
-uuid: 5dc50946-3323-4c5d-a43b-31c1c980bd04
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
 exl-id: b94dcca2-136b-4b7d-b5ce-544804575876
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '10790'
+source-wordcount: '10791'
 ht-degree: 0%
 
 ---
@@ -146,7 +142,7 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 
 1. Laat het eindpunt toe.
 
-   Laat het eindpunt toe door het aan te halen `EndpointRegistryClient` de methode Enable van het object en het doorgeven van `Endpoint` object dat is geretourneerd door de `createEndpoint` methode.
+   Laat het eindpunt toe door het aan te halen `EndpointRegistryClient` methode inschakelen van object en het doorgeven van `Endpoint` object dat is geretourneerd door de `createEndpoint` methode.
 
 **Zie ook**
 
@@ -251,7 +247,7 @@ Voeg een eindpunt van de ZEEP aan de dienst toe door Java API te gebruiken:
 
 1. Laat het eindpunt toe.
 
-   Laat het eindpunt toe door het aan te halen `EndpointRegistryClient` de methode Enable van het object en geeft het `Endpoint` object dat is geretourneerd door de `createEndpoint` methode.
+   Laat het eindpunt toe door het aan te halen `EndpointRegistryClient` methode inschakelen van object en de methode doorgeven `Endpoint` object dat is geretourneerd door de `createEndpoint` methode.
 
 **Zie ook**
 
@@ -271,7 +267,7 @@ Voor programmatically het toevoegen van een Gecontroleerd eindpunt van de Omslag
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
-Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de coderingsservice `EncryptPDFUsingPassword` -bewerking. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document`. De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document`.
+Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de Encryption Service `EncryptPDFUsingPassword` -bewerking. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document`. De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -339,7 +335,7 @@ De volgende lijst specificeert configuratiewaarden die wanneer programmatically 
 * **resultFolderName**: De map waarin de opgeslagen resultaten zijn opgeslagen. Deze locatie kan een absoluut of relatief mappad zijn. Als de resultaten niet in deze map worden weergegeven, controleert u de map met foutmeldingen. Alleen-lezen bestanden worden niet verwerkt en worden opgeslagen in de map met foutmeldingen. De standaardwaarde is `result/%Y/%M/%D/`. Dit is de resultatenmap in de controlemap.
 * **preserveFolderName**: De locatie waar bestanden worden opgeslagen nadat bestanden zijn gescand en opgehaald. Deze locatie kan een absoluut, relatief of null-mappad zijn. De standaardwaarde is `preserve/%Y/%M/%D/`.
 * **failureFolderName**: De map waarin bestanden met fouten worden opgeslagen. Deze locatie is altijd relatief ten opzichte van de gecontroleerde map. Alleen-lezen bestanden worden niet verwerkt en worden opgeslagen in de map met foutmeldingen. De standaardwaarde is `failure/%Y/%M/%D/`.
-* **preserveOnFailed**: Invoerbestanden behouden als de bewerking niet op een service wordt uitgevoerd. De standaardwaarde is true.
+* **preserveOnFailed**: Invoerbestanden behouden als de bewerking niet kan worden uitgevoerd op een service. De standaardwaarde is true.
 * **overwriteDuplicateFilename**: Als de waarde true is, worden bestanden in de resultatenmap en de opslagmap overschreven. Als deze optie is ingesteld op false, worden bestanden en mappen met een numeriek indexachtervoegsel gebruikt voor de naam. De standaardwaarde is false.
 
 **Invoerparameterwaarden definiëren**
@@ -377,7 +373,7 @@ Geef de volgende waarden op om een uitvoerparameterwaarde te definiëren die voo
 
 **Een eindpunt van een gecontroleerde map maken**
 
-Nadat u de attributen van het eindpunt, configuratiewaarden, en de waarden van input en outputparameter plaatst, moet u het Gecontroleerde eindpunt van de Omslag tot stand brengen.
+Nadat u de attributen, de configuratiewaarden van het eindpunt plaatst, en input en outputparameterwaarden bepaalt, moet u het Gecontroleerde eindpunt van de Omslag tot stand brengen.
 
 **Het eindpunt inschakelen**
 
@@ -504,7 +500,7 @@ Voor programmatically het toevoegen van een E-maileindpunt aan de dienst, overwe
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
-Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de coderingsservice `EncryptPDFUsingPassword` -bewerking. Met dit proces wordt het PDF-document versleuteld met een wachtwoord en wordt het met een wachtwoord gecodeerde PDF als uitvoerwaarde geretourneerd. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document`. De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document`.
+Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de Encryption Service `EncryptPDFUsingPassword` -bewerking. Met dit proces wordt het PDF-document versleuteld met een wachtwoord en wordt het met een wachtwoord gecodeerde PDF als uitvoerwaarde geretourneerd. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document`. De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document`.
 
 >[!NOTE]
 >
@@ -760,7 +756,7 @@ Voor programmatically het toevoegen van een Remoting eindpunt aan de dienst, ove
 
 ![ar_ar_encryptdocumentprocess](assets/ar_ar_encryptdocumentprocess.png)
 
-Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de coderingsservice `EncryptPDFUsingPassword` -bewerking. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document`. De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document`.
+Tijdens dit proces wordt een onbeveiligd PDF-document geaccepteerd als een invoerwaarde en wordt het onbeveiligde PDF-document vervolgens doorgegeven aan de Encryption Service `EncryptPDFUsingPassword` -bewerking. Het PDF-document wordt versleuteld met een wachtwoord en de met een wachtwoord gecodeerde PDF is de uitvoerwaarde van dit proces. De naam van de invoerwaarde (het onbeveiligde PDF-document) is `InDoc` en het gegevenstype is `com.adobe.idp.Document`. De naam van de uitvoerwaarde (het met een wachtwoord gecodeerde PDF-document) is `SecuredDoc` en het gegevenstype is `com.adobe.idp.Document`.
 
 Om aan te tonen hoe te om een Remoting eindpunt aan de dienst toe te voegen, voegt deze sectie een Remoting eindpunt aan de dienst genoemd EncryptDocument toe.
 

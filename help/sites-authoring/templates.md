@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '4840'
+source-wordcount: '4834'
 ht-degree: 6%
 
 ---
@@ -53,7 +53,7 @@ De volgende punten zijn belangrijk om te overwegen alvorens u begint:
 
 * Voor het maken van een sjabloon is samenwerking vereist. Daarom [Rol](#roles) wordt aangegeven voor elke taak.
 
-* Afhankelijk van hoe uw instantie wordt gevormd, zou het nuttig kunnen zijn om zich ervan bewust te zijn dat AEM nu verstrekt [twee basistypen sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates). Dit heeft geen invloed op hoe je eigenlijk [een sjabloon gebruiken om een pagina te maken](#using-a-template-to-create-a-page), maar dit is van invloed op het type sjabloon dat u kunt maken en op de manier waarop een pagina betrekking heeft op de sjabloon.
+* Afhankelijk van hoe uw instantie wordt gevormd, AEM nu verstrekt [twee basistypen sjabloon](/help/sites-authoring/templates.md#editable-and-static-templates). Dit heeft geen invloed op hoe je eigenlijk [een sjabloon gebruiken om een pagina te maken](#using-a-template-to-create-a-page), maar dit is van invloed op het type sjabloon dat u kunt maken en op de manier waarop een pagina betrekking heeft op de sjabloon.
 
 ### Rollen {#roles}
 
@@ -97,7 +97,7 @@ AEM biedt nu twee basistypen sjablonen:
 
    * Kan [gemaakt](#creatinganewtemplate) en [bewerkt](#editingatemplate) door sjabloonauteurs die de **Sjabloon** console en editor. De **Sjabloon** de console is toegankelijk in **Algemeen** van de **Gereedschappen** console.
 
-   * Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. Dit betekent dat wijzigingen in de sjabloonstructuur en/of vergrendelde inhoud worden doorgevoerd op alle pagina&#39;s die met die sjabloon zijn gemaakt. Wijzigingen in de ontgrendelde (dat wil zeggen initiële) inhoud worden niet doorgevoerd.
+   * Nadat de nieuwe pagina is gemaakt, wordt een dynamische verbinding onderhouden tussen de pagina en de sjabloon. Dit betekent dat wijzigingen in de sjabloonstructuur en/of vergrendelde inhoud worden doorgevoerd op alle pagina&#39;s die met die sjabloon zijn gemaakt. Wijzigingen in de ontgrendelde (initiële) inhoud worden niet doorgevoerd.
    * Het inhoudsbeleid van het gebruik, dat u deze van de malplaatjeredacteur kunt bepalen, om de ontwerpeigenschappen voort te zetten. De ontwerpmodus in de pagina-editor wordt niet meer gebruikt voor bewerkbare sjablonen.
 
 * Statische sjablonen

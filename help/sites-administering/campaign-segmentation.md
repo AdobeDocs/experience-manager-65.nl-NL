@@ -1,19 +1,15 @@
 ---
 title: Segmentatie configureren
-seo-title: Configuring Segmentation
 description: Leer hoe te om segmentatie voor AEM Campagne te vormen.
-seo-description: Learn how to configure segmentation for AEM Campaign.
-uuid: 604ca34d-cdb9-49ff-8f75-02a44b60a8a2
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
-discoiquuid: c68d5853-684f-42f2-a215-c1eaee06f58a
 docset: aem65
 exl-id: 6d759907-8796-4749-bd80-306ec7f2c819
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '1132'
+source-wordcount: '1129'
 ht-degree: 0%
 
 ---
@@ -110,7 +106,7 @@ De volgende segmentkenmerken zijn beschikbaar buiten het vak; ze kunnen van het 
 
 U kunt deze kenmerken combineren met behulp van de Booleaanse operatoren OR en AND (zie [Een nieuw segment maken](#creating-a-new-segment)) om het exacte scenario voor het selecteren van dit segment te bepalen.
 
-Wanneer de volledige verklaring aan waar evalueert dan heeft dit segment opgelost. Wanneer meerdere segmenten van toepassing zijn, dan **[Verhogen](/help/sites-administering/campaign-segmentation.md#boost-factor)** wordt ook gebruikt.
+Wanneer de volledige verklaring aan waar evalueert dan heeft dit segment opgelost. Als er meerdere toepasselijke segmenten zijn, **[Verhogen](/help/sites-administering/campaign-segmentation.md#boost-factor)** wordt ook gebruikt.
 
 >[!CAUTION]
 >

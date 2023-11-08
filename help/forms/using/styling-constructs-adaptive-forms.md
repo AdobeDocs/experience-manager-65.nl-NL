@@ -1,18 +1,15 @@
 ---
 title: Constructies voor stijlen voor adaptieve formulieren
-seo-title: Styling constructs for adaptive forms
 description: Met het LESS-framework kunt u de weergave van aangepaste formulieren aanpassen.
-seo-description: Use LESS framework to customize appearance of adaptive forms.
-uuid: d2e45ad9-7322-43ce-a1dd-ad97e2eea742
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: develop
 discoiquuid: ed50fa70-a8dd-4cc6-82a9-d59de0fa417d
 docset: aem65
 feature: Adaptive Forms
 exl-id: 691608a6-be82-4d81-b876-427de997e5be
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '2363'
+source-wordcount: '2361'
 ht-degree: 0%
 
 ---
@@ -58,7 +55,7 @@ Momenteel zijn LESS-variabelen alleen voor deze eigenschappen van de verschillen
 
 ## Componentstijl wijzigen {#changing-component-style}
 
-U kunt de weergave, lay-out, positionering en zichtbaarheid van elementen wijzigen. U kunt deze taak uitvoeren door uw aangepaste CSS-bestanden te maken of bij te werken, zodat deze de opmaakconstructies bevatten die in dit artikel worden vermeld.
+U kunt de vormgeving, lay-out, positionering en zichtbaarheid van elementen wijzigen. U kunt deze taak uitvoeren door uw aangepaste CSS-bestanden te maken of bij te werken, zodat deze de opmaakconstructies bevatten die in dit artikel worden vermeld.
 
 Als u een stijl wilt toepassen op een adaptief formulier, opent u het adaptieve formulier in voor bewerking, opent u eigenschappen van adaptieve formuliercontainer en geeft u het pad van het aangepaste CSS-bestand op op het tabblad Standaard. Standaardstijlconstructies van het adaptieve formulier die worden overschreven door de constructies in het bestand custom.css.
 

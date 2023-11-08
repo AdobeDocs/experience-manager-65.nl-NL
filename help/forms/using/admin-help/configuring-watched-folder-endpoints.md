@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: ec169a01-a113-47eb-8803-bd783ea2c943
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '7176'
+source-wordcount: '7174'
 ht-degree: 0%
 
 ---
@@ -211,7 +211,7 @@ Alleen-lezen bestanden worden niet verwerkt en worden opgeslagen in de map met f
 
 De standaardwaarde is error/%Y/%M/%D/.
 
-**Behouden bij fout:** Invoerbestanden behouden als de bewerking niet op een service wordt uitgevoerd. De standaardwaarde is true.
+**Behouden bij fout:** Invoerbestanden behouden als de bewerking niet op een service kan worden uitgevoerd. De standaardwaarde is true.
 
 **Dubbele bestandsnamen overschrijven:** Als u de waarde True instelt, worden de bestanden in de map results en preserve overschreven. Wanneer ingesteld op Onwaar, worden bestanden en mappen met het numerieke indexachtervoegsel gebruikt voor de naam. De standaardwaarde is False.
 
@@ -225,7 +225,7 @@ De waarde -1 dagen geeft aan dat u de resultatenmap nooit wilt verwijderen. De s
 
 **Letterlijk:** De controlemap gebruikt de waarde die in het veld wordt ingevoerd terwijl deze wordt weergegeven. Alle basistypen van Java worden ondersteund. Als een API bijvoorbeeld invoer gebruikt zoals String, long, int en Boolean, wordt de tekenreeks omgezet in het juiste type en wordt de service aangeroepen.
 
-**Variabele:** De ingevoerde waarde is een bestandspatroon waarmee de gecontroleerde map de invoer kan selecteren. Bijvoorbeeld, in het geval van de encrypt wachtwoorddienst, waar het inputdocument een dossier van PDF moet zijn, kan de gebruiker &amp;ast;.pdf als dossierpatroon gebruiken. De gecontroleerde map pakt alle bestanden in de gecontroleerde map op die overeenkomen met dit patroon en roept de service voor elk bestand aan. Wanneer een variabele wordt gebruikt, worden alle invoerbestanden geconverteerd naar documenten. Alleen API&#39;s die Document als invoertype gebruiken, worden ondersteund.
+**Variabele:** De ingevoerde waarde is een bestandspatroon waarmee de gecontroleerde map de invoer kan selecteren. Als er bijvoorbeeld de coderingswachtwoordservice is, waarbij het invoerdocument een PDF-bestand moet zijn, kan de gebruiker &amp;ast;.pdf gebruiken als bestandspatroon. De gecontroleerde map pakt alle bestanden in de gecontroleerde map op die overeenkomen met dit patroon en roept de service voor elk bestand aan. Wanneer een variabele wordt gebruikt, worden alle invoerbestanden geconverteerd naar documenten. Alleen API&#39;s die Document als invoertype gebruiken, worden ondersteund.
 
 **Toewijzingen uitvoerparameter:** Gebruikt om de output van de dienst en de verrichting te vormen. Welke instellingen beschikbaar zijn, is afhankelijk van de service die het gecontroleerde mapeindpunt gebruikt.
 
@@ -271,7 +271,7 @@ Als het toewijzingspatroon van de uitvoerparameter eindigt met &quot;File.separa
 
 ## Over vertragen {#about-throttling}
 
-Wanneer throttling voor een eindpunt van de controlemap wordt toegelaten, beperkt het het aantal gelete op omslagbanen die op om het even welk bepaald ogenblik kunnen worden verwerkt. Het maximumaantal banen wordt bepaald door de waarde van de Grootte van de Partij, ook configureerbaar in het Gecontroleerde eindpunt van de Omslag. Binnenkomende documenten in de invoermap van de controlemap worden niet gepolled wanneer de limiet voor het vertragen is bereikt. De documenten blijven ook in de invoermap totdat andere controlemaptaken zijn voltooid en een andere opiniepeilingpoging is uitgevoerd. In het geval van synchrone verwerking, zullen alle banen die in één enkele opiniepeiling worden verwerkt op de vertragingsgrens tellen, alhoewel de banen achtereenvolgens in één enkele draad worden verwerkt.
+Wanneer throttling voor een eindpunt van de controlemap wordt toegelaten, beperkt het het aantal gelete op omslagbanen die op om het even welk bepaald ogenblik kunnen worden verwerkt. Het maximumaantal banen wordt bepaald door de waarde van de Grootte van de Partij, ook configureerbaar in het Gecontroleerde eindpunt van de Omslag. Binnenkomende documenten in de invoermap van de controlemap worden niet gepolled wanneer de limiet voor het vertragen is bereikt. De documenten blijven ook in de invoermap totdat andere controlemaptaken zijn voltooid en een andere opiniepeilingpoging is uitgevoerd. Als er synchrone verwerking is, zullen alle banen die in één enkele opiniepeiling worden verwerkt tot de vertragingsgrens tellen, alhoewel de banen achtereenvolgens in één enkele draad worden verwerkt.
 
 >[!NOTE]
 >
@@ -284,15 +284,15 @@ Gecontroleerde map scant de invoermap bij elk herhalingsinterval, haalt het aant
 Door deze functie voorkomt u dat Gecontroleerde map nieuwe taken aanroept wanneer de vorige taken niet zijn voltooid. Gecontroleerde map detecteert taken die worden uitgevoerd en verwerkt nieuwe taken op basis van de batchgrootte min de taken die worden uitgevoerd. Als het aantal voltooide taken in de tweede aanroep bijvoorbeeld slechts drie is en er nog één taak actief is, worden er door de gecontroleerde map slechts drie extra taken aangeroepen.
 
 * Controlemap is afhankelijk van het aantal bestanden in de werkgebiedmap om te bepalen hoeveel taken worden uitgevoerd. Als bestanden niet worden verwerkt in de werkgebiedmap, worden er geen taken meer aangeroepen in de gecontroleerde map. Als de batchgrootte bijvoorbeeld vier en drie taken is, wordt bij volgende aanroepen slechts één taak aangeroepen als de controlemap vier en drie taken is geïnstalleerd. Er zijn meerdere scenario&#39;s die ertoe kunnen leiden dat bestanden niet worden verwerkt in de werkgebiedmap. Wanneer taken zijn vastgezet, kan de beheerder het proces op de pagina met beheer van de formulierwerkstroom beëindigen, zodat de bestanden uit de werkgebiedmap worden verplaatst met de gecontroleerde map.
-* Als de formulierserver uitvalt voordat de taken kunnen worden aangeroepen door de gecontroleerde map, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie voor meer informatie [Foutpunten en herstel](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
-* Als de formulierserver actief is maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen, wat gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie voor meer informatie [Foutpunten en herstel](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Als de Forms-server naar beneden gaat voordat de taken kunnen worden aangeroepen door de gecontroleerde map, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie voor meer informatie [Foutpunten en herstel](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
+* Als de Forms-server wordt uitgevoerd maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen. Dit gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie voor meer informatie [Foutpunten en herstel](configuring-watched-folder-endpoints.md#failure-points-and-recovery).
 
 
 ## Prestaties en schaalbaarheid {#performance-and-scalability}
 
-Gecontroleerde map kan in totaal 100 mappen aanleveren op één knooppunt. De prestaties van de gecontroleerde map zijn afhankelijk van de prestaties van de formulierserver. Voor asynchrone aanroep zijn de prestaties meer afhankelijk van de systeembelasting en de taken in de taakbeheerwachtrij.
+Gecontroleerde map kan in totaal 100 mappen aanleveren op één knooppunt. De prestaties van de gecontroleerde map zijn afhankelijk van de prestaties van de Forms Server. Voor asynchrone aanroep zijn de prestaties meer afhankelijk van de systeembelasting en de taken in de taakbeheerwachtrij.
 
-De prestaties van gecontroleerde mappen kunnen worden verbeterd door knooppunten toe te voegen aan de cluster. De gecontroleerde banen van de Omslag worden verdeeld over de clusterknopen door de planner van het Kwartz en, in het geval van asynchrone verzoeken, door de dienst van de Manager van de Baan. Alle taken blijven behouden in de database.
+De prestaties van gecontroleerde mappen kunnen worden verbeterd door knooppunten toe te voegen aan de cluster. De gecontroleerde banen van de Omslag worden verdeeld over de clusterknopen door de planner van het Kwartz en, als er asynchrone verzoeken zijn, door de dienst van de Manager van de Baan. Alle taken blijven behouden in de database.
 
 De gecontroleerde Omslag hangt van de dienst van de Planner voor het plannen, het uit plannen, en het opnieuw plannen van de banen af. Andere diensten, zoals de dienst van het Beheer van de Gebeurtenis, de dienst van de Manager van de Gebruiker, en de dienst van de E-mailLeverancier, zijn beschikbaar die de de draadpool van de de dienstdraad van de Planner delen. Dit kan van invloed zijn op de prestaties van gecontroleerde mappen. De de dienstdraadpool van de Planner het stemmen zal nodig zijn wanneer alle diensten beginnen het te gebruiken.
 
@@ -408,7 +408,7 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
 
 ## Servicespecifieke aanbevelingen voor gecontroleerde mappen {#service-specific-recommendations-for-watched-folders}
 
-Voor alle services moet u de batchgrootte en het herhalingsinterval van de gecontroleerde map aanpassen, zodat de snelheid waarmee gecontroleerde map nieuwe bestanden en mappen oppakt voor verwerking niet hoger is dan de snelheid van de taken die door de AEM formulierserver kunnen worden verwerkt. Welke parameters werkelijk moeten worden gebruikt, is afhankelijk van het aantal gecontroleerde mappen dat wordt geconfigureerd, welke services gecontroleerde mappen gebruiken en hoe intensief de taken zijn voor de processor.
+Voor alle services moet u de batchgrootte en het herhalingsinterval van de gecontroleerde map aanpassen, zodat de snelheid waarmee gecontroleerde map nieuwe bestanden en mappen oppakt voor verwerking niet hoger is dan de snelheid van de taken die door de AEM Forms Server kunnen worden verwerkt. Welke parameters werkelijk moeten worden gebruikt, is afhankelijk van het aantal gecontroleerde mappen dat wordt geconfigureerd, welke services gecontroleerde mappen gebruiken en hoe intensief de taken zijn voor de processor.
 
 ### Aanbevelingen voor PDF-service genereren {#generate-pdf-service-recommendations}
 

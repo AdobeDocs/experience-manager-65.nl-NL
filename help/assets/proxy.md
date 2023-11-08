@@ -4,9 +4,9 @@ description: Een proxy is een [!DNL Experience Manager] instantie die proxyworke
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '842'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Adobe Experience Manager Assets] gebruikt een volmacht om verwerking voor bepaalde taken te verdelen.
 
-Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processoren die een taak afhandelen en een resultaat maken. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een [!DNL Assets] Deze proxy kan worden gebruikt voor het laden van elementen voor rendering binnen elementen. Bijvoorbeeld de [IDS-proxyworker](indesign.md) gebruikt een [!DNL Adobe InDesign] Server om bestanden te verwerken voor gebruik in middelen.
+Een proxy is een specifieke (en soms aparte) Experience Manager-instantie die proxyworkers gebruikt als processoren die een taak afhandelen en een resultaat maken. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. Als er een [!DNL Assets] Deze proxy kan worden gebruikt voor het laden van elementen voor rendering binnen elementen. Bijvoorbeeld de [IDS-proxyworker](indesign.md) gebruikt een [!DNL Adobe InDesign] Server om bestanden te verwerken voor gebruik in middelen.
 
 Wanneer de proxy een aparte [!DNL Experience Manager] -instantie wordt de belasting op de [!DNL Experience Manager] ontwerpinstantie(s). Standaard, [!DNL Assets] voert de taken voor middelenverwerking uit in dezelfde JVM (extern via Proxy) om de belasting op de [!DNL Experience Manager] ontwerpinstantie.
 

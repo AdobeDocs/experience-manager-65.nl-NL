@@ -1,16 +1,12 @@
 ---
 title: AEM Forms versterken op JEE-omgeving
-seo-title: Hardening Your AEM Forms on JEE Environment
 description: Leer een verscheidenheid van veiligheid-verhardende montages om de veiligheid van AEM Forms op JEE te verbeteren die in een collectieve Intranet loopt.
-seo-description: Learn a variety of security-hardening settings to enhance the security of AEM Forms on JEE running in a corporate intranet.
-uuid: f6c63690-6376-4fe1-9df2-a14fbfd62aff
 content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
-discoiquuid: 6b380e92-f90d-4875-b7a2-f3958daf2364
 role: Admin
 exl-id: 6fb260f9-d0f8-431e-8d4e-535b451e4124
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '7662'
 ht-degree: 0%
@@ -318,8 +314,8 @@ De generatie van de Definitie van de Taal van de Dienst van het Web (WSDL) zou s
    https://[host name]:[port]/adminui
    ```
 
-1. Klikken **Settings > Core System Settings > Configurations**.
-1. Deselecteren **WSDL inschakelen** en klik op **OK**.
+1. Selecteren **Settings > Core System Settings > Configurations**.
+1. Deselecteren **WSDL inschakelen** selecteert u vervolgens **OK**.
 
 ### Beveiliging toepassingsserver {#application-server-security}
 

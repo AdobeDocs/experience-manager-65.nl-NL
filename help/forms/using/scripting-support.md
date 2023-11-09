@@ -1,19 +1,15 @@
 ---
 title: Scriptondersteuning voor HTML5-formulieren
-seo-title: Scripting support for HTML5 forms
 description: JavaScript, FormCalc-eigenschappen en andere methoden die worden ondersteund in HTML5 Forms.
-seo-description: JavaScript, FormCalc properties, and other methods that are supported in HTML5 Forms.
-uuid: 697d5ec4-c818-41e4-b813-883c01b7ff3a
 contentOwner: robhagat
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: hTML5_forms
-discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 feature: Mobile Forms
 exl-id: bcb5afc5-2190-4269-aba2-63842db9df3f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '3887'
+source-wordcount: '3896'
 ht-degree: 1%
 
 ---
@@ -36,7 +32,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td>Hiermee geeft u de inhoud van het veld op voordat deze wordt gewijzigd als reactie op de acties van een gebruiker. Deze waarde kan worden teruggeroepen, vergelijkbaar met een functie voor ongedaan maken.</td>
    <td><p>Werkt niet voor vervolgkeuzelijsten en keuzelijsten. <code>PrevText </code>werkt niet correct in de volgende gevallen:</p>
     <ul>
-     <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (,), &amp;, @ en meer) in numerieke velden op de iPad, en </li>
+     <li>Bij het typen van bepaalde speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden op de iPad, en </li>
      <li>Voor het veld Datum (wanneer de datum door de kalender wordt ingevoerd).<br /> </li>
     </ul> <p>Het instellen van waarde via script wordt niet ondersteund.</p> </td>
   </tr>
@@ -52,7 +48,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
     <ul>
      <li>Bij het selecteren en vervangen van tekst</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
-     <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (, ), &amp;, @ en meer) in numerieke velden<br /> </li>
+     <li>Bij het typen van bepaalde speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden<br /> </li>
      <li>Bij gebruik van de combinatie shift+alfanumeriek. </li>
      <li>Bij het gebruik van datum-/tijdvelden.</li>
     </ul>
@@ -67,7 +63,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
     <ul>
      <li>Bij het selecteren en vervangen van tekst</li>
      <li>Bij het verwijderen, kopiëren en plakken van tekst.</li>
-     <li>Bij het typen van enkele speciale tekentoetsen (bijvoorbeeld $, (,), &amp;, @ en meer) in numerieke velden<br /> </li>
+     <li>Bij het typen van bepaalde speciale tekentoetsen (bijvoorbeeld $ of , of &amp; of @ en meer) in numerieke velden<br /> </li>
      <li>Bij gebruik van de combinatie shift+alfanumeriek. </li>
      <li>Bij het gebruik van datum-/tijdvelden.</li>
     </ul> <p>Het instellen van waarde via script wordt niet ondersteund.</p> </td>
@@ -994,7 +990,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr>
   <tr>
    <td>berekenen</td>
-   <td>Het object calculate bepaalt de berekening van de waarde van een veld.<br /> </td>
+   <td>Het object calculate bestuurt de berekening van de waarde van een veld.<br /> </td>
    <td>Geen</td>
   </tr>
  </tbody>

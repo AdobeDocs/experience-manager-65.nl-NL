@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '677'
 ht-degree: 0%
@@ -118,7 +118,7 @@ De algemene workflow voor het verwijderen van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
 1. Selecteer het artikel dat u wilt verwijderen in het dialoogvenster **Artikelen beheren** tegel.
-1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
+1. Zorg ervoor dat deze optie in de lijst is geselecteerd en selecteer de andere opties die u wilt verwijderen.
 1. Klikken **Verwijderen** in de actiebalk.
 1. Controleer of u gegevens uit AEM en mobiel op aanvraag wilt verwijderen.
 1. Klikken **Verwijderen**.

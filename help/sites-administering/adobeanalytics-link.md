@@ -1,18 +1,14 @@
 ---
 title: Koppeling bijhouden configureren voor Adobe Analytics
-seo-title: Configuring Link Tracking for Adobe Analytics
 description: Leer over het vormen van verbinding het volgen voor SiteCatalyst.
-seo-description: Learn about configuring link tracking for SiteCatalyst.
-uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
 exl-id: 9fa3e531-11b3-4b8d-a87c-a08faf06f5b7
-source-git-commit: 5e94a0cdb363e95ce398ea4ed0bce4a6aba9e7ce
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1612'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
@@ -24,7 +20,7 @@ Wanneer gebruikers op koppelingen op pagina&#39;s van uw website klikken, kunt u
 
 ## Koppelingen bijhouden configureren voor een Adobe Analytics-framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Gebruiken **Navigatie**, ga via **Implementatie**, **Cloud Services** aan de **Adobe Analytics** sectie.
+1. Gebruiken **Navigatie**, ga via **Implementatie**, **Cloud Servicen** aan de **Adobe Analytics** sectie.
 
 1. Gebruiken **Configuraties tonen**, opent u het vereiste Adobe Analytics-kader.
 1. Breid uit **Configuratie van bijhouden koppeling** sectie en configureer indien nodig (op deze pagina vindt u meer informatie):
@@ -93,7 +89,7 @@ Definieert filters voor het afstemmen van de URL&#39;s van interne koppelingen. 
 * **Query-tekenreeks behouden**
 Neemt URL-parameters op bij het evalueren van overeenkomsten met interne en externe filters.
 
-  Schakel deze optie in om URL-parameters op te nemen wanneer u URL&#39;s van koppelingsdoelen evalueert op basis van externe en interne filters.
+  Schakel deze optie in als u URL-parameters wilt opnemen wanneer u URL&#39;s van koppelingsdoelen evalueert op basis van externe en interne filters.
 
 De externe eigenschappen voor het bijhouden van koppelingen worden als code geïmplementeerd in het dialoogvenster `analytics.sitecatalyst.js` bestand dat voor een pagina wordt gegenereerd. De volgende voorbeeldcode wordt geproduceerd voor een pagina die met een kader wordt geassocieerd dat externe verbinding het volgen met de volgende configuratie heeft toegelaten:
 
@@ -112,7 +108,7 @@ s.linkLeaveQueryString= false;
 
 U kunt AEM configureren om gebeurtenis- en variabele gegevens naar Adobe Analytics te verzenden wanneer een gebruiker op een koppeling klikt. De **Configuratie van bijhouden koppeling** Met eigenschappen kunt u opgeven welke Adobe Analytics-gebeurtenissen en -variabelen moeten worden bijgehouden wanneer op een koppeling wordt geklikt.
 
-De frameworktoewijzingen bepalen de gebeurtenis- en veranderlijke waarden. U kunt Adobe Analytics-variabelen toewijzen aan de variabelen van de inhoudscomponenten die de gegevens opslaan die u wilt bijhouden wanneer op koppelingen wordt geklikt.
+De frameworktoewijzingen bepalen de gebeurtenis- en de veranderlijke waarden. U kunt Adobe Analytics-variabelen toewijzen aan de variabelen van de inhoudscomponenten die de gegevens opslaan die u wilt bijhouden wanneer op koppelingen wordt geklikt.
 
 Om veranderlijke gegevens met verbinding te verzenden klikt:
 
@@ -157,7 +153,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
    >
    >Als dit niet het geval is, wordt er een eigen component weergegeven (door een subknooppunt Analytics in de paginacomponent te definiëren).
 
-   Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) uit het linkerzijpaneel te slepen:
+   Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) vanuit het linkerzijpaneel te slepen:
 
 <table>
  <tbody>
@@ -179,7 +175,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
  </tbody>
 </table>
 
-1. Sleep de component Search naar het toewijzingsgebied van het framework. De component van het Onderzoek behoort tot de Algemene componentengroep in Sidekick. Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) uit het linkerzijpaneel te slepen:
+1. Sleep de component Search naar het toewijzingsgebied van het framework. De component van het Onderzoek behoort tot de Algemene componentengroep in Sidekick. Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) vanuit het linkerzijpaneel te slepen:
 
 <table>
  <tbody>
@@ -206,7 +202,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
  </tbody>
 </table>
 
-### Externe koppelingcontrole configureren {#configure-external-link-tracking}
+### Externe koppelingstracering configureren {#configure-external-link-tracking}
 
 1. Breid in uw framework de **Configuratie voor het bijhouden van koppelingen** gebied.
 1. Deselecteren **Downloads volgen**.
@@ -215,7 +211,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
 1. Deselecteren **Query-tekenreeks behouden**.
 1. Gebruik de volgende waarde voor de **Externe filters** lijst om deze te identificeren als een externe URL:
 
-   `‘yahoo.com’`
+   `'yahoo.com'`
 
 1. Voeg de volgende waarde toe aan de **Gebeurtenissen track koppelen** veld:
 
@@ -261,7 +257,7 @@ De vraagdetails die in Foutopsporing van Adobe Marketing Cloud verschijnen zijn 
 
 Bij het bijhouden van ad-hockoppelingen kunnen auteurs van inhoud het bijhouden van koppelingen voor een component configureren. De configuratie van de component overschrijft de **Configuratie van bijhouden koppeling** van het framework, dus op pagina&#39;s die met het framework zijn geassocieerd, **Tekst** componenten kunnen voor verbinding het volgen van URLs worden gevormd.
 
-Met Ad-hockoppelingen kunt u downloadkoppelingen, externe koppelingen en gebeurtenis- en variabelen bijhouden.
+Bij het bijhouden van ad-hockoppelingen kunt u downloadkoppelingen, externe koppelingen en gebeurtenis- en variabelen bijhouden.
 
 Als u ad-hockoppelingen wilt bijhouden, moet u:
 
@@ -313,7 +309,7 @@ Configureer uw Adobe Analytics-framework om het bijhouden van ad-hockoppelingen 
 
 ### Koppeling bijhouden configureren voor een tekstcomponent {#configuring-link-tracking-for-a-text-component}
 
-Voordat u het bijhouden van ad-hockoppelingen kunt configureren voor **Tekst** de componenten zelf, moeten de volgende configuraties reeds worden uitgevoerd:
+Voordat u het bijhouden van ad-hockoppelingen kunt configureren **Tekst** de componenten zelf, moeten de volgende configuraties reeds worden uitgevoerd:
 
 * De [Adobe Analytics-framework is geconfigureerd om ad-hockoppelingen te kunnen bijhouden](#enabling-ad-hoc-link-tracking).
 * De [pagina die de **Tekst** wordt gekoppeld aan het framework](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
@@ -338,19 +334,19 @@ Gebruik de volgende procedure om verbinding het volgen voor een te vormen **Teks
 
 1. Inschakelen **Aangepaste koppeling bijhouden** om de configuratie voor het bijhouden van koppelingen van het Adobe Analytics-framework te overschrijven en om het bijhouden van koppelingen voor de huidige koppeling in te schakelen.
 
-1. (Optioneel) Als u gebeurtenissen wilt bijhouden met de klik op de koppeling, voegt u Adobe Analytics-gebeurtenisnamen toe in het dialoogvenster **Inclusief Adobe Analytics-variabelen** veld. Meerdere gebeurtenisnamen van elkaar scheiden met komma&#39;s, bijvoorbeeld
+1. (Optioneel) Als u gebeurtenissen wilt bijhouden met de klik op de koppeling, voegt u Adobe Analytics-gebeurtenisnamen toe in het dialoogvenster **Inclusief Adobe Analytics-variabelen** veld. Plaats bijvoorbeeld een komma tussen de verschillende gebeurtenisnamen
 
    `event1, event22`.
 
 1. (Optioneel) Als u variabele gegevens wilt bijhouden met de koppelingsklik, voegt u Adobe Analytics-variabelen toe aan het dialoogvenster **Inclusief Adobe Analytics-variabelen** veld. Gebruik een van de volgende indelingen:
 
    * *`<Variable-name>`*: *`<Dynamic Value>`*
-   * *`<Variable-name>`*: *`‘CONSTANT'`*
+   * *`<Variable-name>`*: *`'CONSTANT'`*
 
    Aan de hand van de volgende voorbeelden wordt elke indeling geïllustreerd:
 
    * `eVar10:pagedata.title`
-   * `prop1: ‘Aubergine'`
+   * `prop1: 'Aubergine'`
 
    Scheid meerdere waarden met een komma.
 

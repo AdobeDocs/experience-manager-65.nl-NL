@@ -1,17 +1,13 @@
 ---
 title: Bereid en verzend Interactieve Communicatie gebruikend de Agent UI voor
-seo-title: Prepare and send Interactive Communication using the Agent UI
 description: De agent UI staat de agenten toe om Interactieve Communicatie aan het postproces voor te bereiden en te verzenden. De agent brengt de vereiste wijzigingen aan zoals toegestaan, en legt de Interactieve Mededeling aan een postproces, zoals e-mail of druk voor.
-seo-description: Prepare and send Interactive Communication using the Agent UI
-uuid: d1a19b83-f630-4648-9ad2-a22374e31aa9
 topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
-discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 feature: Interactive Communication
 exl-id: 4fb82e9b-f870-47db-ac92-2d7510acace8
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
-source-wordcount: '1991'
+source-wordcount: '1992'
 ht-degree: 0%
 
 ---
@@ -27,7 +23,7 @@ Nadat een Interactieve Communicatie wordt gecreeerd, kan de Agent de Interactiev
 Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, beheert de agent de volgende aspecten van de Interactieve Mededeling in de Agent UI alvorens het aan een postproces voor te leggen:
 
 * **Gegevens**: Het lusje van Gegevens van de Agent UI toont om het even welke agent-editable variabelen en ontgrendelde eigenschappen van het model van vormgegevens in de Interactieve Mededeling. Deze variabelen/eigenschappen worden gemaakt tijdens het bewerken of maken van documentfragmenten die zijn opgenomen in de interactieve communicatie. Het tabblad Gegevens bevat ook alle velden die zijn ingebouwd in de XDP/afdruksjabloon. Het tabblad Gegevens wordt alleen weergegeven wanneer er variabelen, eigenschappen van het formuliergegevensmodel of velden in de interactieve communicatie zijn die door de agent kunnen worden bewerkt.
-* **Inhoud**: In het lusje van de Inhoud, beheert de Agent de inhoud zoals documentfragmenten en inhoudsvariabelen in de Interactieve Mededeling. De agent kan de wijzigingen in het documentfragment doorvoeren zoals is toegestaan tijdens het maken van de interactieve communicatie in de eigenschappen van die documentfragmenten. De agent kan ook een documentfragment opnieuw ordenen, toevoegen/verwijderen en pagina-einden toevoegen, indien toegestaan.
+* **Inhoud**: Op het tabblad Inhoud beheert de Agent de inhoud, zoals documentfragmenten en inhoudsvariabelen in de interactieve communicatie. De agent kan de wijzigingen in het documentfragment doorvoeren zoals is toegestaan tijdens het maken van de interactieve communicatie in de eigenschappen van die documentfragmenten. De agent kan ook een documentfragment opnieuw ordenen, toevoegen/verwijderen en pagina-einden toevoegen, indien toegestaan.
 * **Bijlagen**: Het lusje van Bijlagen verschijnt in de Agent UI slechts als de Interactieve Communicatie om het even welke gehechtheid heeft of de Agent bibliotheektoegang heeft. De agent mag de bijlagen wel of niet wijzigen of bewerken.
 
 ## Bereid Interactieve Communicatie gebruikend de Agent UI voor {#prepare-interactive-communication-using-the-agent-ui}
@@ -41,7 +37,7 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
    ![openagentiui](assets/openagentiui.png)
 
-   Gebaseerd op de inhoud en de eigenschappen van de Interactieve Mededeling, verschijnt de agent UI met de volgende drie lusjes: Gegevens, inhoud en bijlage.
+   Gebaseerd op de inhoud en de eigenschappen van de Interactieve Mededeling, verschijnt de agent UI met de volgende drie lusjes: Gegevens, Inhoud, en Bijlage.
 
    ![agentuitabs](assets/agentuitabs.png)
 
@@ -49,7 +45,7 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 ### Gegevens invoeren {#enter-data}
 
-1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte velden die zijn gemarkeerd met een sterretje (&amp;ast;) in om de optie **Verzenden** knop.
+1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte velden met een sterretje (&amp;ast;) in om de optie **Verzenden** knop.
 
    Tik op de waarde van een gegevensveld in de voorvertoning Interactieve communicatie om het bijbehorende gegevensveld op het tabblad Gegevens te markeren of om de andere reden.
 
@@ -63,13 +59,13 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 1. Bewerk de documentfragmenten desgewenst op het tabblad Inhoud. Als u het relevante fragment in de inhoudshiërarchie de focus wilt geven, kunt u op de relevante regel of alinea in de voorvertoning Interactieve communicatie tikken of rechtstreeks in de inhoudshiërarchie op het fragment tikken.
 
-   Het documentfragment met de regel &quot;Nu een betaling online verrichten... &quot; is geselecteerd in de voorvertoning in de onderstaande afbeelding en hetzelfde documentfragment is geselecteerd op het tabblad Inhoud.
+   Het documentfragment met de regel &quot;Nu online betalen...&quot; wordt bijvoorbeeld geselecteerd in de voorvertoning in de onderstaande afbeelding en hetzelfde documentfragment is geselecteerd op het tabblad Inhoud.
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
    Tik op Geselecteerde modules in inhoud markeren op het tabblad Inhoud of Gegevens ( ![highlightSelectedModesincontentcr](assets/highlightselectedmodulesincontentccr.png)) linksboven in de voorvertoning kunt u de functionaliteit uitschakelen of inschakelen om naar het documentfragment te gaan wanneer in de voorvertoning op de desbetreffende tekst, alinea of gegevensveld wordt getikt of geselecteerd.
 
-   De fragmenten die door de agent mogen worden uitgegeven terwijl het creëren van de Interactieve Mededeling hebben de Edit Geselecteerde Inhoud ( ![iconeditselected content](assets/iconeditselectedcontent.png)). Tik op het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
+   De fragmenten die door de agent terwijl het creëren van de Interactieve Communicatie kunnen worden uitgegeven hebben de Edit Geselecteerde Inhoud ( ![iconeditselected content](assets/iconeditselectedcontent.png)). Tik op het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
 
    * [Opmaakopties](#formattingtext)
 
@@ -101,7 +97,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    >[!NOTE]
    >
-   >Het pictogram Bibliotheektoegang is alleen beschikbaar als bibliotheektoegang is ingeschakeld tijdens het maken van de interactieve communicatie (in de eigenschappen Documentcontainer van het afdrukkanaal).
+   >Bibliotheektoegangspictogram is alleen beschikbaar als bibliotheektoegang is ingeschakeld tijdens het maken van de interactieve communicatie (in de eigenschappen Documentcontainer van het afdrukkanaal).
 
 1. Als de volgorde van de bijlagen niet is vergrendeld tijdens het maken van de interactieve communicatie, kunt u de bijlagen opnieuw ordenen door een bijlage te selecteren en op de pijl-omlaag en -omhoog te tikken.
 1. Met Webvoorvertoning en Afdrukvoorbeeld kunt u zien of de twee uitvoerbestanden aan uw eisen voldoen.
@@ -151,26 +147,26 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 ![ ](do-not-localize/contentoptionsdocfragments.png)
 
 * **Pijlen omhoog en omlaag**: Pijlt om documentfragmenten omhoog of omlaag te verplaatsen in de interactieve communicatie.
-* **Verwijderen**: Verwijder, indien toegestaan, het documentfragment uit de interactieve communicatie.
-* **Pagina-einde voor** (van toepassing op onderliggende fragmenten van het doelgebied): Hiermee voegt u een pagina-einde in vóór het documentfragment.
+* **Verwijderen**: Verwijder het documentfragment uit de interactieve communicatie, indien toegestaan.
+* **Pagina-einde voor** (van toepassing op onderliggende fragmenten van het doelgebied): voegt pagina-einde in vóór het documentfragment.
 * **Inspringen**: De inspringing van een documentfragment vergroten of verkleinen.
-* **Pagina-einde na** (van toepassing op onderliggende fragmenten van het doelgebied): Hiermee voegt u een pagina-einde in na het documentfragment.
+* **Pagina-einde na** (van toepassing op onderliggende fragmenten van het doelgebied): voegt pagina-einde in na het documentfragment.
 
 ![docfragoptions](assets/docfragoptions.png)
 
-* Bewerken (alleen tekstfragmenten): Open een RTF-editor voor het bewerken van het tekstdocumentfragment. Zie voor meer informatie [Tekst opmaken](#formattingtext).
+* Bewerken (alleen tekstfragmenten): RTF-editor openen voor het bewerken van het tekstdocumentfragment. Zie voor meer informatie [Tekst opmaken](#formattingtext).
 
-* Selectie (oogpictogram): Hiermee\nHiermee sluit u het documentfragment uit van de interactieve communicatie.
-* Niet-gevulde waarden (info): Hiermee geeft u het aantal niet-gevulde variabelen in het documentfragment aan.
+* Selectie (oogpictogram): hiermee wordt het\ndocumentfragment uitgesloten van de interactieve communicatie.
+* Niet-gevulde waarden (info): geeft het aantal niet-gevulde variabelen in het documentfragment aan.
 
 ### Documentfragmenten weergeven {#list-document-fragments}
 
 ![listopties](assets/listoptions.png)
 
-* Lege regel invoegen: Hiermee voegt u een nieuwe lege regel in.
-* Selectie (oogpictogram): Hiermee\nHiermee sluit u het documentfragment uit van de interactieve communicatie.
-* Opsommingstekens/nummering overslaan: Schakel deze optie in om opsommingstekens/nummering in het lijstdocumentfragment over te slaan.
-* Niet-gevulde waarden (info): Hiermee geeft u het aantal niet-gevulde variabelen in het documentfragment aan.
+* Lege regel invoegen: voegt nieuwe lege regel in.
+* Selectie (oogpictogram): hiermee wordt het\ndocumentfragment uitgesloten van de interactieve communicatie.
+* Opsommingstekens/nummering overslaan: inschakelen als u opsommingstekens/nummering in het documentfragment van de lijst wilt overslaan.
+* Niet-gevulde waarden (info): geeft het aantal niet-gevulde variabelen in het documentfragment aan.
 
 ## Interactieve communicatie opslaan als concept {#save-as-draft}
 
@@ -198,11 +194,11 @@ Voer de volgende stappen uit om een Interactieve Mededeling als ontwerp te bewar
 
 1. Selecteer een interactieve communicatie in Forms Manager en tik op **[!UICONTROL Open Agent UI]**.
 
-1. Breng aangewezen veranderingen in de UI van de Agent aan en tik **[!UICONTROL Save as Draft]**.
+1. Breng aangewezen veranderingen in de gebruikersinterface van de Agent aan en tik **[!UICONTROL Save as Draft]**.
 
 1. Geef de naam van het concept op in het dialoogvenster **[!UICONTROL Name]** veld en tik **[!UICONTROL Done]**.
 
-Tik op **[!UICONTROL Save Changes]** om eventuele verdere wijzigingen in het concept op te slaan.
+Tik op de knop Interactieve communicatie als concept **[!UICONTROL Save Changes]** om eventuele verdere wijzigingen in het concept op te slaan.
 
 ### Het concept van een interactieve communicatie ophalen {#retrieve-draft}
 
@@ -214,7 +210,7 @@ Nadat u een interactieve communicatie als concept hebt opgeslagen, kunt u deze o
 
 ### Voorbeeld crDocumentInstance SPI-implementatie {#sample-ccrDocumentInstance-spi}
 
-Implementeer de `ccrDocumentInstance` SPI om een Interactieve Mededeling als ontwerp te bewaren. Hieronder volgt een voorbeeldimplementatie van de `ccrDocumentInstance` SPI.
+Implementeer de `ccrDocumentInstance` SPI om een Interactieve Mededeling als ontwerp te bewaren. Hier volgt een voorbeeldimplementatie van de `ccrDocumentInstance` SPI.
 
 ```javascript
 package Implementation;
@@ -325,7 +321,7 @@ In de volgende tabel wordt het voorbeeld uitgelegd `ccrDocumentInstance` SPI-imp
   <td><p><strong>Voorbeelden van databaseservices</strong></p></td> 
    </tr>
   <tr>
-   <td><p>U kunt een concept voor een interactieve communicatie maken of deze rechtstreeks verzenden. De API voor sparen verrichting controleert als Interactieve Communicatie als ontwerp wordt voorgelegd en het een ontwerp naam omvat. De API roept dan de dienst mySQLDataBaseServiceCRUD met sparen als inputmethode.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
+   <td><p>U kunt een concept voor een interactieve communicatie maken of deze rechtstreeks verzenden. De API voor de opslagbewerking controleert of de interactieve communicatie als concept wordt verzonden en of deze een conceptnaam bevat. De API roept dan de dienst mySQLDataBaseServiceCRUD met sparen als inputmethode.</p></br><img src="assets/save-as-draft-save-operation.png"/></td>
    <td><p>De mySQLDataBaseServiceCRUD-service verifieert Opslaan als de invoermethode en genereert een automatisch gegenereerde concept-id en retourneert deze naar AEM. De logica om een ontwerpID te produceren kan variëren gebaseerd op het gegevensbestand.</p></br><img src="assets/save-operation-service.png"/></td>
    </tr>
   <tr>

@@ -7,7 +7,7 @@ topic-tags: administering
 content-type: reference
 role: Admin
 exl-id: aed9247c-eb81-470c-9fa4-a98c3df2dcaa
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
 workflow-type: tm+mt
 source-wordcount: '2620'
 ht-degree: 0%
@@ -326,8 +326,8 @@ Als bewerken nodig is, wordt op elke AEM-publicatie-instantie het volgende weerg
 
      Locatie in de opslagplaats waar gebruikersgegevens worden opgeslagen. Voor een communautaire plaats, om toestemmingen voor leden te verzekeren om elkaars profiel te bekijken, zou de weg het gebrek moeten zijn `/home/users/community`.
 
-   * **[!UICONTROL Enable Params]** niet bewerken
-   * **[!UICONTROL URL Parameters]** niet bewerken
+   * **[!UICONTROL Enable Params]** - niet bewerken
+   * **[!UICONTROL URL Parameters]** - niet bewerken
    * **[!UICONTROL Update User]**
 
      Als deze optie is ingeschakeld, worden de gebruikersgegevens in de dataopslag bij elke aanmelding vernieuwd om rekening te houden met profielwijzigingen of aanvullende aangevraagde gegevens. De standaardinstelling is uitgeschakeld.

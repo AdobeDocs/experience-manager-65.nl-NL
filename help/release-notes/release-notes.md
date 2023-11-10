@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
 workflow-type: tm+mt
-source-wordcount: '3405'
+source-wordcount: '3408'
 ht-degree: 0%
 
 ---
@@ -285,7 +285,8 @@ Voor instructies voor het installeren van het servicepakket op Experience Manage
 
 >[!NOTE]
 >
->De functie Adaptive Forms, die beschikbaar is in AEM 6.5 QuickStart, is alleen ontworpen voor exploratie- en evaluatiedoeleinden. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De AEM Forms-functie, zoals Adaptive Forms, is beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html)uitsluitend voor exploratie- en evaluatiedoeleinden worden gebruikt. Voor productiedoeleinden is het van essentieel belang een geldige vergunning voor AEM Forms te verkrijgen.
+
 
 ### GraphQL-indexpakket voor Experience Manager-inhoudsfragmenten installeren{#install-aem-graphql-index-add-on-package}
 

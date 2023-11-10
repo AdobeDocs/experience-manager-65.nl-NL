@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
+source-git-commit: 6f45b0f8dad44e66570f6436a560060cbed56161
 workflow-type: tm+mt
-source-wordcount: '956'
+source-wordcount: '952'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,10 @@ AEM Forms combineert mogelijkheden voor formulierontwerp, -beheer en -publicatie
 In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen.
 
 AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Zie voor meer informatie [Inleiding tot het beheren van formulieren](../../forms/using/introduction-managing-forms.md).
+
+>[!NOTE]
+>
+>De AEM Forms-functie, zoals Adaptive Forms, is beschikbaar in [AEM 6.5 QuickStart](/help/sites-deploying/deploy.md)uitsluitend voor exploratie- en evaluatiedoeleinden worden gebruikt. Voor productiedoeleinden is het van essentieel belang een geldige vergunning voor AEM Forms te verkrijgen.
 
 ![Formuliermogelijkheden AEM](do-not-localize/4th-draft.gif)
 
@@ -124,6 +128,3 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 
 Gestroomlijnde workflow voor persoonlijke communicatie
 
->[!NOTE]
->
->De functie Adaptive Forms, die beschikbaar is in AEM 6.5 QuickStart, is alleen ontworpen voor exploratie- en evaluatiedoeleinden. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.

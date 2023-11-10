@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: 3df0662a-0768-4b56-8b94-c517657b4bd9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1803'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,7 @@ Op basis van deze basis biedt AEM ook verschillende functies op toepassingsnivea
 * **Websites**
 * **Mobiele toepassingen**
 * **Digitale publicaties**
-* **Forms**
+* **Forms &amp; Documenten**
 * **Digitale middelen**
 * **Gemeenschappen**
 * **Online Commerce**
@@ -81,6 +81,10 @@ Op basis van deze basis biedt AEM ook verschillende functies op toepassingsnivea
 Tot slot kunnen de klanten deze infrastructuur en toepassing-vlakke bouwstenen gebruiken om aangepaste oplossingen tot stand te brengen door toepassingen van hun te bouwen.
 
 De AEM server is **op Java gebaseerd** en wordt uitgevoerd op de meeste besturingssystemen die dat platform ondersteunen. Alle clientinteractie met AEM gebeurt via een **webbrowser**.
+
+>[!NOTE]
+>
+>De functie Adaptive Forms, die beschikbaar is in AEM 6.5 QuickStart, is alleen ontworpen voor exploratie- en evaluatiedoeleinden. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### Typische implementatiescenario&#39;s {#typical-deployment-scenarios}
 

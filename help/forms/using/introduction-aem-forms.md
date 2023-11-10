@@ -11,9 +11,9 @@ discoiquuid: a20383f2-f86a-45bf-a39e-725ee764503b
 docset: aem65
 feature: Adaptive Forms
 exl-id: e5533b4f-93b7-4ea9-a01d-fdf9528652c8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: e4e2e8b58c0283182b2fbd4262a4ef9b607dac26
 workflow-type: tm+mt
-source-wordcount: '919'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
@@ -123,3 +123,7 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 ![Layout twee](do-not-localize/layout-02.png)
 
 Gestroomlijnde workflow voor persoonlijke communicatie
+
+>[!NOTE]
+>
+>De functie Adaptive Forms, die beschikbaar is in AEM 6.5 QuickStart, is alleen ontworpen voor exploratie- en evaluatiedoeleinden. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.

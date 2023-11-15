@@ -2,13 +2,13 @@
 sub-product: AEM Headless Journeys
 user-guide-title: AEM Headless Journeys
 breadcrumb-title: AEM Headless Journeys
-user-guide-description: Begin hier voor een geleide reis door de krachtige en flexibele headless eigenschappen van AEM, hun mogelijkheden, en hoe te om hen op uw project te gebruiken.
+user-guide-description: Begin hier voor een begeleid traject door de krachtige en flexibele eigenschappen van AEM, de mogelijkheden en hoe u deze kunt gebruiken voor uw project.
 feature: Developer Tools
 role: Developer, Architect
 source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
 workflow-type: tm+mt
 source-wordcount: '225'
-ht-degree: 7%
+ht-degree: 18%
 
 ---
 

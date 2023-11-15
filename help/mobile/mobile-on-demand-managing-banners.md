@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 exl-id: c65a24e6-3041-4774-aeed-8e188ea19b78
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '663'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ De workflow voor het bewerken van een artikel:
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
 1. Selecteer een AEM banner uit de tegel** Banners beheren**.
 1. Klik op de gemarkeerde banner in de lijstweergave om deze te openen in de inhoudseditor.
-1. Gebruik de inhoudeditor om bannerinhoud (manuscripten, afbeeldingen, tekst, enz.) te slepen.
+1. Gebruik de inhoudeditor om bannerinhoud (manuscripten, afbeeldingen, tekst, enzovoort) te slepen.
 
 ### De metagegevens weergeven en bewerken in een banner {#viewing-and-editing-the-metadata-within-a-banner}
 

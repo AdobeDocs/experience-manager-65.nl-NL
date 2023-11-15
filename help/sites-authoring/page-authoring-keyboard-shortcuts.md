@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 
 | Locatie | Sneltoets | Beschrijving |
 |---|---|---|
-| Willekeurige modus van venster bewerken | `Ctrl-Shift-m` | Schakelen tussen **Voorvertoning** en de momenteel geselecteerde [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (bijvoorbeeld **Bewerken**, **Layout**, enz.* |
+| Willekeurige modus van venster bewerken | `Ctrl-Shift-m` | Schakelen tussen **Voorvertoning** en de momenteel geselecteerde [mode](/help/sites-authoring/author-environment-tools.md#page-modes)</a> (bijvoorbeeld **Bewerken**, **Layout**, enzovoort) |
 | **Bewerken** mode | `Ctrl-z` | [Laatste wijziging ongedaan maken](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-y` | [Laatste wijziging opnieuw](/help/sites-authoring/editing-content.md#undoing-and-redoing-page-edits) |
 |  | `Ctrl-Click` | Meerdere alinea&#39;s selecteren |
@@ -41,7 +41,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 
 >[!NOTE]
 >
->&amp;asteren; Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
+>&amp;ast; als de gebruiker begint te communiceren met de pagina in de voorvertoningsmodus, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
 
 Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 
@@ -51,7 +51,7 @@ Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de 
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 
-De wijzigingstoetsen die voor de toetsenbordkortere weg worden gebruikt variëren afhankelijk van het werkende systeem dat door de cliënt wordt gebruikt.
+De wijzigingstoetsen die worden gebruikt voor de sneltoetsen, zijn afhankelijk van het besturingssysteem dat wordt gebruikt door de client.
 
 | Windows en Linux | macOS |
 |---|---|

@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: 0b4aa1a4-449a-4882-8f7c-3ceea6ac7f83
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
@@ -75,7 +75,7 @@ De workflow voor het bewerken van een verzameling:
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
 1. Selecteer een AEM artikel in het menu **Verzamelingen beheren** tegel.
 1. Klik op de gemarkeerde verzameling in de lijstweergave om deze te openen in de inhoudseditor.
-1. Gebruik de inhoudeditor om inhoud van verzamelingen (manuscripten, afbeeldingen, tekst, enz.) te slepen.
+1. Gebruik de inhoudeditor om verzamelingsinhoud te slepen (manuscripten, afbeeldingen, tekst, enzovoort).
 
 ### De metagegevens in een verzameling weergeven en bewerken {#viewing-and-editing-the-metadata-within-a-collection}
 

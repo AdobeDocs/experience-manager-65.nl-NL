@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: authoring-on-demand-services-app
 exl-id: ea6c8aa3-f86e-4878-8550-fe1662f10696
-source-git-commit: 451fb472e170a79f9854efadf9be1d4fe0628b94
+source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -80,11 +80,11 @@ De workflow voor het bewerken van een artikel:
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
 1. Selecteer een AEM artikel in het menu **Artikelen beheren** tegel.
 1. Klik op het gemarkeerde artikel in de lijstweergave om het te openen in de inhoudseditor.
-1. Gebruik de inhoudeditor om artikelinhoud (manuscripten, afbeeldingen, tekst, enz.) te slepen.
+1. Gebruik de inhoudeditor om artikelinhoud (manuscripten, afbeeldingen, tekst, enzovoort) te slepen.
 
 ### De metagegevens weergeven en bewerken in een artikel {#viewing-and-editing-the-metadata-within-an-article}
 
-Inhoud zoals artikelen, banners, enz. heeft talrijke eigenschappen, zoals titels, beschrijvingen, afbeeldingen. Deze handeling wordt gebruikt om dergelijke eigenschappen weer te geven en te wijzigen. Deze wijzigingen kunnen optioneel worden geüpload naar Mobile On-Demand tijdens het opslaan.
+Inhoud zoals artikelen, banners, enzovoort, heeft veel eigenschappen, zoals titels, beschrijvingen en afbeeldingen. Deze handeling wordt gebruikt om dergelijke eigenschappen weer te geven en te wijzigen. Deze wijzigingen kunnen optioneel worden geüpload naar Mobile On-Demand tijdens het opslaan.
 
 De algemene workflow voor het weergeven/bewerken van een artikel:
 

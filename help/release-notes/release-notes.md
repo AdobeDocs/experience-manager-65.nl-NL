@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 41ef1b05e4082bb50b93ff6511542ed56a77497c
+source-git-commit: 7c5d45788583cce3403b8beca0c122a9ddf1ca49
 workflow-type: tm+mt
-source-wordcount: '3409'
+source-wordcount: '3589'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,19 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 **Belangrijkste kenmerken**
 
-* A
+* Middelen, Dynamic Media - [Ondersteuning voor multi-subtitle en multi-audiotrack voor video&#39;s in Dynamic Media](/help/assets/video.md#about-msma)—U kunt nu eenvoudig meerdere ondertitels en meerdere audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
+
+* Middelen - Vanuit de zoekresultaten kunt u nu naar de maplocatie navigeren die een element bevat waarmee u verschillende taken voor middelenbeheer kunt uitvoeren. (ACTIVA-23182)
 
 **Belangrijke verbeteringen**
 
-* S
+* De Plukker van Polaris van Plaatsen in de Fragmenten van de Inhoud heeft betere prestaties. (SITES-14092)
+
+* Gebruikers van de Pagina-editor/afbeeldingscomponent van Sites konden naar elementen van de Cloud Service voor externe middelen verwijzen. (SITES-13448, SITES-13433)
+
+* Om snel een project in de mening van de Lijst te vinden, waar u vele projecten in uw systeem kunt hebben, steunt de Adobe nu server-zijhet sorteren. Projectknooppunten worden op de achtergrond gesorteerd op basis van de kolom die door de gebruiker is geselecteerd voordat ze in de gebruikersinterface worden weergegeven. (NPR-41027)
+
+* AEM 6.5.18.0 ondersteunt MongoDB 5.0 tot 6.0.
 
 **Verouderde functie**
 
@@ -57,7 +65,6 @@ Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
 ### [!DNL Sites]{#sites-6519}
 
-* U
 
 #### Toegankelijkheid{#sites-accessibility-6519}
 

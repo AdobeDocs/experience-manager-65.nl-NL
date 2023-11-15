@@ -2,9 +2,9 @@
 title: Uw inhoud modelleren
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u uw inhoud voor AEM levering zonder kop kunt modelleren met behulp van Content Modeling with Content Fragment Models and Content Fragments.
 exl-id: f75b433f-5a81-4259-a9f5-b58954b87970
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1809'
+source-wordcount: '1810'
 ht-degree: 0%
 
 ---

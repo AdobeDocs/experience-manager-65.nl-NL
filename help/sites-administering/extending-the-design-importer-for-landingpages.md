@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3493'
+source-wordcount: '3495'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Hier volgen de logische stappen waarmee ontwerpimporters uw aangepaste component
 
 1. Een TagHandler maken
 
-   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een genest &lt;p> -tag, de &lt;p> -tag wordt ook naar uw TagHandler gegenereerd en het is aan u hoe u ervoor wilt zorgen.
+   * Een markeringsmanager is POJO die HTML markeringen van een specifieke soort behandelt. Het &quot;type&quot;van HTML markeringen uw TagHandler kan behandelen wordt bepaald via het bezit OSGi van TagHandlerFactory &quot;tagpattern.name&quot;. Deze eigenschap OSGi is in wezen een regex die de invoer-HTML-tag moet aanpassen die u wilt verwerken. Alle geneste tags worden naar de taghandler gegenereerd voor verwerking. Als u zich bijvoorbeeld registreert voor een div-element dat een genest &lt;p> -tag, de &lt;p> tag wordt ook naar uw TagHandler gegenereerd en het is aan u hoe u ervoor wilt zorgen.
    * De interface van de markeringsmanager is gelijkaardig aan een interface van de inhoudsmanager van SAX. Het ontvangt SAX-gebeurtenissen voor elke HTML-tag. Als leverancier van labelafhandelingen moet u bepaalde levenscyclusmethoden implementeren die automatisch worden aangeroepen door het framework van ontwerporters.
 
 1. Maak de bijbehorende TagHandlerFactory.

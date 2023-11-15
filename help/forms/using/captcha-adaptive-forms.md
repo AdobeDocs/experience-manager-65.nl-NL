@@ -7,9 +7,9 @@ topic-tags: adaptive_forms, author
 docset: aem65
 feature: Adaptive Forms
 exl-id: 9b4219b8-d5eb-4099-b205-d98d84e0c249
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1910'
+source-wordcount: '1909'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ AEM Forms-gebruikers kunnen de reCAPTCHA-service van Google gebruiken om CAPTCHA
    1. Tik op **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die u in de vorige stap hebt gemaakt en tik op **[!UICONTROL Create]**.
    1. Selecteer versie als reCAPTCHA Enterprise en geef Naam; Project ID, Site Key en API-sleutel (verkregen in stap 2 en 3) op voor de reCAPTCHA Enterprise-service.
    1. Selecteer sleuteltype, zou het zeer belangrijke type moeten zijn zoals de plaatssleutel die in het Google wolkenproject wordt gevormd, bijvoorbeeld **Sitetoets selectievakje** of **Score-gebaseerde sitesleutel**.
-   1. Geef een drempelscore op in het bereik 0 tot en met 1 ([Klik voor meer informatie over de score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
+   1. Geef een drempelscore op in het bereik 0-1 ([Klik voor meer informatie over de score](https://cloud.google.com/recaptcha-enterprise/docs/interpret-assessment#interpret_scores)). Scores groter dan of gelijk aan de drempelscores identificeren menselijke interactie, anders beschouwd als beide interactie.
 
       > Opmerking:
       >

@@ -2,9 +2,9 @@
 title: Grondbeginselen van ontwerpen leren
 description: Leer over de concepten en de mechanica van creatie inhoud voor uw Zwaarloze CMS gebruikend Inhoudsfragmenten.
 exl-id: 125c4d0b-1572-4dba-823d-cdef2778f275
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1689'
+source-wordcount: '1691'
 ht-degree: 1%
 
 ---
@@ -108,7 +108,7 @@ Er wordt een dialoogvenster geopend waarin u de details kunt invoeren en vervolg
 
 #### Paden en tags gebruiken om de in de map beschikbare modellen van inhoudsfragmenten te beperken {#tags-paths-for-models-in-folder}
 
-Deze sectie is iets geavanceerder. U hebt het niet echt nodig als u gewoon begint en dingen probeert, maar het is vooral handig als u veel fragmenten hebt. Dus het is goed om over te weten - zelfs als je het nog niet helemaal gebruikt.
+Deze sectie is iets geavanceerder. U hebt het niet echt nodig als u gewoon begint en dingen probeert, maar het is vooral handig als u veel fragmenten hebt. Het is dus goed om dat te weten, ook al gebruikt u het nog niet helemaal.
 
 Uw Content Architect zal alle Content Fragment Models hebben gecreeerd die voor uw huidige project worden vereist, en misschien ook sommige andere projecten. Om de zaken voor zich, en andere auteurs eenvoudig te houden, kunt u de lijst van modellen beperken beschikbaar voor een specifieke omslag.
 
@@ -199,7 +199,7 @@ Modellen van inhoudsfragmenten zijn in feite van vitaal belang voor inhoudsfragm
 
 * **Gekoppelde inhoud**
 
-  Dit is duidelijk aangezien het een lusje in de redacteur is.
+  Dit is heel duidelijk, omdat het een tabblad in de editor is.
 
   Inhoudsfragmenten zijn in AEM al een aantal versies beschikbaar. Oorspronkelijk zijn ze beschikbaar gesteld voor &quot;traditioneel&quot; gebruik bij het ontwerpen van pagina&#39;s...en zij worden in dit verband nog steeds gebruikt . Hierbij kan het gaan om het koppelen van elementen (bijvoorbeeld afbeeldingen) die weliswaar niet in het fragment zijn ingesloten, maar die wel beschikbaar moeten zijn voor de auteur wanneer deze een pagina ontwerpt.
 

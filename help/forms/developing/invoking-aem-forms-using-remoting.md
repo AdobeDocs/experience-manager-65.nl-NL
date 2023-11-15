@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: coding
 role: Developer
 exl-id: 94a48776-f537-4b4e-8d71-51b08e463cba
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '4593'
 ht-degree: 0%
@@ -311,7 +311,7 @@ U laat douaneauthentificatie in beleidsconsole toe door de authentificatiemethod
 >
 In de vorige versie van AEM Forms hebt u referenties naar een doel verzonden door de `RemoteObject.setCredentials` methode. De `setCredentials` De methode heeft de gegevens pas daadwerkelijk doorgegeven aan de server als de component voor het eerst probeert verbinding te maken met de server. Daarom als de component een foutengebeurtenis uitbracht, kon u niet zeker zijn als de fout wegens een authentificatiefout, of om een andere reden gebeurde. De `ChannelSet.login` De methode verbindt met de server wanneer u het roept zodat u een authentificatiekwestie kunt onmiddellijk behandelen. Hoewel u het `setCredentials` wordt aangeraden de `ChannelSet.login` methode.
 
-Omdat de veelvoudige bestemmingen de zelfde kanalen, en het overeenkomstige voorwerp kunnen gebruiken ChannelSet, het programma openen aan één bestemming registreert de gebruiker aan een andere bestemming die het zelfde kanaal of de kanalen gebruikt. Als twee componenten verschillende geloofsbrieven op het zelfde voorwerp toepassen ChannelSet, worden de laatste toegepaste geloofsbrieven gebruikt. Als meerdere componenten hetzelfde geverifieerde ChannelSet-object gebruiken, wordt het `logout` de methode registreert alle componenten uit de bestemmingen.
+Omdat de veelvoudige bestemmingen de zelfde kanalen, en het overeenkomstige voorwerp kunnen gebruiken ChannelSet, het programma openen aan één bestemmings login de gebruiker aan een andere bestemming die het zelfde kanaal of de kanalen gebruikt. Als twee componenten verschillende geloofsbrieven op het zelfde voorwerp toepassen ChannelSet, worden de laatste toegepaste geloofsbrieven gebruikt. Als meerdere componenten hetzelfde geverifieerde ChannelSet-object gebruiken, wordt het `logout` de methode registreert alle componenten uit de bestemmingen.
 
 In het volgende voorbeeld wordt het `ChannelSet.login` en `ChannelSet.logout` methoden met een RemoteObject-besturingselement. Deze toepassing voert de volgende handelingen uit:
 

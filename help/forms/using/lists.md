@@ -8,7 +8,7 @@ discoiquuid: 0d5436c6-1976-496c-b9a7-7dc6e830bb5d
 docset: aem65
 feature: Correspondence Management
 exl-id: 71754e41-45d7-4cc5-ba49-0748bd51c0cf
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '6908'
 ht-degree: 0%
@@ -271,7 +271,7 @@ Tik op het pijlpictogram en houd de muisknop ingedrukt ( ![dragndrop](assets/dra
    * **Geselecteerd:** Als deze optie is geselecteerd, wordt de inhoud vooraf geselecteerd in de gebruikersinterface Correspondentie maken.
    * **Stijl overslaan:** Als deze optie is geselecteerd, slaat de inhoud opsommingstekens en nummering over in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor afbeeldingsmodules. Tussen Stijl overslaan, Samengesteld en Lijststijl negeren kan slechts een van de opties worden toegepast op een module. Een van deze opties kan voor een module worden gebruikt wanneer u Opsommingstekens toevoegen voor een module selecteert.)
    * **Inspringing:** U kunt het inspringingsniveau wijzigen van elke module of inhoud die als onderdeel van de lijst is geselecteerd. De inspringing wordt opgegeven in termen van niveaus (te beginnen met nul), zodat elk inspringingsniveau overeenkomt met een opvulling van 36 punten.
-   * **Samengesteld:** Als deze optie is geselecteerd, wordt de samengestelde nummering toegepast als een combinatie van de stijl van de buitenste (bovenliggende) lijst en is het een eigen stijl. De samengestelde nummering in deze geneste lijst is gebaseerd op de volgorde waarin deze geneste lijst wordt weergegeven in de buitenste lijst.
+   * **Samengesteld:** Als deze optie is geselecteerd, wordt de samengestelde nummering toegepast als een combinatie van de stijl van de buitenste (bovenliggende) lijst en de bijbehorende stijl. De samengestelde nummering in deze geneste lijst is gebaseerd op de volgorde waarin deze geneste lijst wordt weergegeven in de buitenste lijst.
    * **Lijststijl negeren:** Als de optie Samengestelde nummering is uitgeschakeld, is de optie Lijststijl negeren ingeschakeld. Bij deze selectie wordt de eigen stijl van de geneste lijst genegeerd. De nummering gaat verder vanaf de buitenste lijst. Daarom worden de modules van de genestelde lijst behandeld als deel van de buitenlijst zelf, die om het even welke stijlen veronachtzamen die op de genestelde Lijst worden gespecificeerd. Als de optie Lijststijl negeren is uitgeschakeld voor een geneste lijst, hebben de modules die deel uitmaken van die geneste lijst een eigen nummeringsstijl.
    * **Houden bij: Volgende** Hiermee stelt u het pagina-einde in voor de elementen in een lijst. Als u de eigenschap Houden bij volgende van één element in een lijst instelt op **Aan**, dat element en het volgende element op dezelfde pagina blijven staan. Dit houdt in dat de inhoud van het geselecteerde element en het volgende element niet worden verdeeld over pagina&#39;s.
 

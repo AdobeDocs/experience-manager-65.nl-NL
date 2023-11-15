@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: Security
 content-type: reference
 exl-id: e24d815c-83e2-4639-8273-b4c0a6bb008a
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '790'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 Door gebrek, gebruikt AEM de Symbolische Handler van de Authentificatie om elk verzoek voor authentiek te verklaren. Nochtans, om authentificatieverzoeken te dienen vereist de Symbolische Handler van de Authentificatie toegang tot de bewaarplaats voor elk verzoek. Dit gebeurt omdat de koekjes worden gebruikt om de authentificatiestatus te handhaven. Logischerwijze moet de status in de opslagplaats worden voortgezet om volgende aanvragen te valideren. In feite betekent dit dat het verificatiemechanisme stateful is.
 
-Dit is van bijzonder belang voor horizontale schaalbaarheid. In een opstelling van meerdere instanties zoals het hieronder afgebeeld publicatielandbouwbedrijf, kan lading het in evenwicht brengen niet op een optimale manier worden bereikt. Met stateful authentificatie, zal de persisted authentificatiestatus slechts op de instantie beschikbaar zijn waar de gebruiker eerst voor authentiek wordt verklaard.
+Dit is van bijzonder belang voor horizontale schaalbaarheid. In een multi-instance opstelling zoals hieronder afgebeeld publiceert landbouwbedrijf, lading het in evenwicht brengen kan niet op een optimale manier worden bereikt. Met stateful authentificatie, zal de persisted authentificatiestatus slechts op de instantie beschikbaar zijn waar de gebruiker eerst voor authentiek wordt verklaard.
 
 ![chlimage_1-33](assets/chlimage_1-33a.png)
 

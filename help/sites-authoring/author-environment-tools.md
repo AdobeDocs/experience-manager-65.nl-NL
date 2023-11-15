@@ -7,9 +7,9 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2227'
 ht-degree: 5%
 
 ---
@@ -174,7 +174,7 @@ De inhoudsstructuur is een tabblad in het zijpaneel (samen met de browser met co
 
 ![Inhoudsstructuur](do-not-localize/screen_shot_2018-03-22at142042.png)
 
-Wanneer u het zijpaneel opent, schuift het open (van de linkerkant). Selecteer de **Inhoudsstructuur** indien nodig. Wanneer open kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Op een complexe pagina is het bovendien gemakkelijker om tussen componenten van de pagina te schakelen.
+Wanneer u het zijpaneel opent, schuift het open (van de linkerkant). Selecteer de **Inhoudsstructuur** indien nodig. Wanneer geopend kunt u een vertegenwoordiging van de boommening van uw pagina of malplaatje zien, zodat het gemakkelijker is om te begrijpen hoe zijn inhoud hiërarchisch gestructureerd is. Op een complexe pagina is het bovendien gemakkelijker om tussen componenten van de pagina te schakelen.
 
 ![ateat-11](assets/ateat-11.png)
 

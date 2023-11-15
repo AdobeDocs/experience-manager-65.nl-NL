@@ -5,7 +5,7 @@ contentOwner: AG
 role: Architect, Admin
 feature: Developer Tools
 exl-id: 1313842c-18b1-4727-ba63-b454d0f5a2cc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '992'
 ht-degree: 0%
@@ -71,9 +71,9 @@ De topologie van de [!DNL Experience Manager] milieu vereist gedetailleerde kenn
 
 Het steekproefscenario omvat publiceer landbouwbedrijf met vijf servers, een S3 binaire opslag, en gevormde Dynamic Media.
 
-De dispatcher deelt het 100Mbps verbinding met twee entiteiten, de buitenwereld en [!DNL Experience Manager] implementatie. Voor gelijktijdige upload- en downloadbewerkingen moet u dit getal door twee delen. De externe opslag in de bijlage gebruikt een aparte verbinding.
+De verzender deelt zijn verbinding 100Mbps met twee entiteiten, de buitenwereld en [!DNL Experience Manager] implementatie. Voor gelijktijdige upload- en downloadbewerkingen moet u dit getal door twee delen. De externe opslag in de bijlage gebruikt een aparte verbinding.
 
-De [!DNL Experience Manager] de plaatsing deelt het verbinding 1Gbps met de veelvoudige diensten. Vanuit een perspectief van de netwerktopologie, is het gelijkwaardig aan het delen van één enkel kanaal met de verschillende diensten.
+De [!DNL Experience Manager] de plaatsing deelt zijn verbinding 1Gbps met de veelvoudige diensten. Vanuit een perspectief van de netwerktopologie, is het gelijkwaardig aan het delen van één enkel kanaal met de verschillende diensten.
 
 Het bekijken van het netwerk van het cliëntapparaat aan [!DNL Experience Manager] de implementatie, het kleinste onderdrukkingspunt lijkt de 10 Mbit bedrijfsfirewallvertraging te zijn. U kunt deze waarden gebruiken in de functie voor het berekenen van de grootte in het dialoogvenster [Hulplijn voor middelengrootte](assets-sizing-guide.md) om de gebruikerservaring te bepalen.
 

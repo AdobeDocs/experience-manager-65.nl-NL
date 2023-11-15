@@ -8,9 +8,9 @@ topic-tags: upgrading
 docset: aem65
 feature: Upgrading
 exl-id: 0dea2b3e-fd7c-4811-a04a-6852ffc1e6d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2395'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Controleer de technische vereisten voor AEM 6.5 en zorg ervoor dat uw huidige ha
 
 #### Overwegingen bij de herstructurering van inhoud {#content-restructuring-considerations}
 
-AEM heeft wijzigingen aangebracht in de structuur van de opslagplaats die zullen helpen om upgrades naadloos te maken. De veranderingen impliceren het bewegen van inhoud uit de /etc omslag naar omslagen met inbegrip van /libs, /apps, en /content, die op worden gebaseerd of de Adobe of een klant de inhoud bezit, zo het beperken van de kansen om inhoud tijdens versies te beschrijven. De reorganisatie van de repository is zo uitgevoerd dat er geen codesamenstelling nodig is op het moment van de upgrade van 6.5, hoewel het aanbevolen is de details te bekijken op [Herstructurering van AEM](/help/sites-deploying/repository-restructuring.md) tijdens het plannen van een upgrade.
+AEM heeft wijzigingen aangebracht in de structuur van de opslagplaats die zullen helpen om upgrades naadloos te maken. De veranderingen impliceren het bewegen van inhoud uit de /etc omslag naar omslagen met inbegrip van /libs, /apps, en /content, die op worden gebaseerd of de Adobe of een klant de inhoud bezit, zo het beperken van de kansen om inhoud tijdens versies te beschrijven. De reorganisatie van de repository is zo uitgevoerd dat er geen codesamenstelling nodig is op het moment van de upgrade van 6.5, hoewel het aanbevolen wordt de details te herzien op [Herstructurering van AEM](/help/sites-deploying/repository-restructuring.md) tijdens het plannen van een upgrade.
 
 ### Complexiteit van upgrade beoordelen {#assessing-upgrade-complexity}
 

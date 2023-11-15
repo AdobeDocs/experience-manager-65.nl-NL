@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 role: Admin
 exl-id: d3bb6664-6c01-4bcf-840c-072fc491fc99
-source-git-commit: 0a4aca939c564720f63f055e9522e56942eaa128
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1069'
+source-wordcount: '1068'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ Het gebrek wordt geplaatst aan ADD werkwoord voor QnA en forumcomponenten.
   De standaardwaarde is 216000 uur (~24 jaar).
 
 * **Toename van scores**
-Dit specificeert de score tussen 0 en het scoren waaier, waarvoorbij de groei vertraagt om het aantal deskundigen te beperken.
+Dit specificeert de score tussen 0-scoring waaier, waarvoorbij de groei vertraagt om het aantal deskundigen te beperken.
 
   De standaardwaarde is 50.
 

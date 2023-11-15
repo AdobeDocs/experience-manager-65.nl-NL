@@ -2,9 +2,9 @@
 title: Hoe u met uw headless toepassing kunt gaan werken
 description: In dit deel van de AEM Headless Developer Journey leert u hoe u een toepassing zonder kop kunt implementeren.
 exl-id: ec3356ef-9e60-4151-984d-3ebdab593b96
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1874'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Zie voor een diepgaander overzicht van het instellen van een lokale ontwikkelomg
 
 <!-- Start of CDN Review -->
 
-Nu is het tijd om uw AEM toepassing zonder kop klaar te maken voor de introductie, door de onderstaande aanbevolen procedures te volgen.
+Nu is het tijd om uw AEM toepassing zonder koppen klaar te maken voor de introductie, door de onderstaande aanbevolen procedures te volgen.
 
 ### Beveilig uw toepassing zonder koppen voordat u de toepassing start {#secure-and-scale-before-launch}
 

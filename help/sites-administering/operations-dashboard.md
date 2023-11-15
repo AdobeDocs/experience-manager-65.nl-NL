@@ -1,20 +1,16 @@
 ---
 title: Operations-dashboard
-seo-title: Operations Dashboard
 description: Leer hoe u het vectordashboard voor bewerkingen in Adobe Experience Manager kunt gebruiken.
-seo-description: Learn how to use the Operations Dashboard.
-uuid: ef24813f-a7a8-4b26-a496-6f2a0d9efef6
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: b210f5d7-1d68-49ee-ade7-667c6ab11d2b
 docset: aem65
 exl-id: f9a88156-91a2-4c85-9bc9-8f23700c2cbd
 feature: Operations
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '6057'
+source-wordcount: '6061'
 ht-degree: 0%
 
 ---
@@ -230,7 +226,7 @@ Een Composite Health Check heeft als taak verschillende afzonderlijke Health Che
      <li>Hiermee wordt de status Kritiek geretourneerd als ten minste één indexstrook mislukt</li>
      <li>controleert de <code>lastIndexedTime</code> voor alle indexeringsstroken en:
       <ul>
-       <li>Geeft de status Kritiek als deze meer dan 2 uur geleden is </li>
+       <li>Hiermee wordt de kritieke status geretourneerd als deze meer dan twee uur geleden is </li>
        <li>retourneert de waarschuwingsstatus als deze tussen 2 uur en 45 minuten geleden ligt </li>
        <li>Geeft de status OK als deze minder dan 45 minuten geleden is </li>
       </ul> </li>
@@ -443,7 +439,7 @@ Voorbeelden:
 
 >[!NOTE]
 >
->De instellingen op de diagnospagina hebben geen invloed op wat wordt geregistreerd voor de logbestanden en omgekeerd. Zo, terwijl het foutenlogboek de berichten van INFO zou kunnen vangen, zou u hen niet in de logboekberichten UI kunnen zien. Ook, door UI is het mogelijk om te vangen DEBUG berichten van bepaalde pakketten zonder het het foutenlogboek beïnvloedt. Voor meer informatie over hoe te om de logboekdossiers te vormen, zie [Logboekregistratie](/help/sites-deploying/configure-logging.md).
+>De instellingen op de diagnospagina hebben geen invloed op wat wordt geregistreerd voor de logbestanden en omgekeerd. Zo, terwijl het foutenlogboek de berichten van INFO zou kunnen vangen, zou u hen niet in de logboekberichten UI kunnen zien. Ook, door UI is het mogelijk om DEBUG- berichten van bepaalde pakketten te vangen zonder het het foutenlogboek beïnvloedt. Voor meer informatie over hoe te om de logboekdossiers te vormen, zie [Logboekregistratie](/help/sites-deploying/configure-logging.md).
 
 >[!NOTE]
 >

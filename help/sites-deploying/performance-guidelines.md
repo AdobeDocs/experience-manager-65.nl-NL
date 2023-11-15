@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configuring
 exl-id: 5a305a5b-0c3d-413b-88c1-1f5abf7e1579
-source-git-commit: 9defa6d1843007e9375d839f72f6993c691a37c0
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2913'
+source-wordcount: '2914'
 ht-degree: 1%
 
 ---
@@ -132,7 +132,7 @@ Hieronder ziet u de implementatieopties die beschikbaar zijn voor AEM (schuiven 
   <tr>
    <td><p>Handel</p> </td>
    <td><p>MSRP</p> </td>
-   <td><p>Apple OS</p> </td>
+   <td><p>APPLE OS</p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
    <td><p> </p> </td>
@@ -266,17 +266,17 @@ Hieronder ziet u de implementatieopties die beschikbaar zijn voor AEM (schuiven 
 
 Gebruik de prestatierichtlijnen in de volgende situaties:
 
-* **Eerste implementatie**: Wanneer u AEM Sites of Middelen voor het eerst wilt implementeren, is het belangrijk dat u de beschikbare opties begrijpt. Vooral bij het configureren van de Micro Kernel, Node Store en Data Store (in vergelijking met de standaardinstellingen). Bijvoorbeeld, veranderend de standaardmontages van het Opslag van Gegevens voor TarMK in de Opslag van de Gegevens van het Dossier.
+* **Eerste implementatie**: Wanneer u AEM Sites of Middelen voor het eerst wilt implementeren, is het belangrijk dat u de beschikbare opties begrijpt. Vooral bij het configureren van de Micro Kernel, Node Store en Data Store (in vergelijking met de standaardinstellingen). Zo wijzigt u de standaardinstellingen van de gegevensopslag voor TarMK in de gegevensopslag van het bestand.
 * **Bijwerken naar een nieuwe versie**: Wanneer u een upgrade uitvoert naar een nieuwe versie, is het belangrijk dat u de verschillen in prestaties begrijpt ten opzichte van de actieve omgeving. Bijvoorbeeld, bevordering van AEM 6.1 aan 6.2, of van AEM 6.0 CRX2 aan 6.2 OAK.
 * **Responstijd is traag**: Wanneer de geselecteerde architectuur van Nodestore niet aan uw vereisten voldoet, is het belangrijk om de prestatiesverschillen te begrijpen vergeleken met andere topologieopties. U kunt bijvoorbeeld TarMK gebruiken in plaats van MongoMK, of een File Data Sore gebruiken in plaats van een Amazon S3 of Microsoft® Azure Data Store.
 * **Meer auteurs toevoegen**: Wanneer de geadviseerde topologie TarMK niet aan de prestatiesvereisten voldoet en het upsizing van de knoop van de Auteur de maximumbeschikbare capaciteit heeft bereikt, begrijp de prestatiesverschillen. Ben met het gebruiken van MongoMK met drie of meer knopen van de Auteur vergelijkbaar. U kunt bijvoorbeeld MongoMK gebruiken in plaats van TarMK.
-* **Meer inhoud toevoegen**: Wanneer de aanbevolen gegevensopslagarchitectuur niet aan uw vereisten voldoet, is het belangrijk dat u de prestatieverschillen begrijpt ten opzichte van andere opties voor gegevensopslag. Voorbeeld: met de Amazon S3 of Microsoft® Azure Data Store in plaats van een File Data Store.
+* **Meer inhoud toevoegen**: Wanneer de aanbevolen gegevensopslagarchitectuur niet aan uw vereisten voldoet, is het belangrijk dat u de prestatieverschillen begrijpt ten opzichte van andere opties voor gegevensopslag. Voorbeeld: Amazon S3 of Microsoft® Azure Data Store gebruiken in plaats van een File Data Store.
 
 ## Inleiding {#introduction}
 
 In dit hoofdstuk wordt een algemeen overzicht gegeven van de AEM architectuur en de belangrijkste onderdelen ervan. Zij bevat ook ontwikkelingsrichtsnoeren en beschrijft de testscenario&#39;s die in de TarMK- en MongoMK-benchmarktests worden gebruikt.
 
-### Het Platform AEM {#the-aem-platform}
+### Het AEM {#the-aem-platform}
 
 Het AEM platform bestaat uit de volgende onderdelen:
 
@@ -292,21 +292,21 @@ Er zijn drie belangrijke bouwstenen aan een AEM plaatsing. De **Instantie van au
 
 ### Micro Kernels {#micro-kernels}
 
-Micro Kernels fungeert als persistentiemanagers in AEM. Er worden drie soorten Micro Kernels gebruikt met AEM: TarMK, MongoDB, en Relationele Gegevensbestand (onder beperkte steun). Het kiezen van één om uw behoefte te passen hangt van het doel van uw instantie en het plaatsingstype af u overweegt. Voor meer informatie over Micro Kernels raadpleegt u de [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md) pagina.
+Micro Kernels fungeert als persistentiemanagers in AEM. Er zijn drie soorten Micro Kernels die met AEM worden gebruikt: TarMK, MongoDB, en Relationele Gegevensbestand (onder beperkte steun). Het kiezen van één om uw behoefte te passen hangt van het doel van uw instantie en het plaatsingstype af u overweegt. Voor meer informatie over Micro Kernels raadpleegt u de [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md) pagina.
 
 ![chlimage_1-2](assets/chlimage_1-2a.png)
 
 ### Nodestore {#nodestore}
 
-In AEM kunnen binaire gegevens onafhankelijk van inhoudsknooppunten worden opgeslagen. De locatie waar de binaire gegevens worden opgeslagen, wordt aangeduid als de locatie **Gegevensopslag**, terwijl de locatie van de inhoudknooppunten en -eigenschappen de **Node Store**.
+In AEM kunnen binaire gegevens onafhankelijk van inhoudsknooppunten worden opgeslagen. De locatie waar de binaire gegevens worden opgeslagen, wordt aangeduid als de **Gegevensopslag**, terwijl de locatie van de inhoudknooppunten en -eigenschappen de **Node Store**.
 
 >[!NOTE]
 >
->Adobe raadt TarMK aan de standaardpersistentietechnologie te zijn die door klanten voor zowel de auteur AEM als de Publish instanties wordt gebruikt.
+>De Adobe raadt TarMK aan om de standaardpersistentietechnologie te zijn die door klanten voor zowel de AEM Auteur als de Publish instanties wordt gebruikt.
 
 >[!CAUTION]
 >
->De relationele Database Micro Kernel wordt beperkt ondersteund. Contact [Adobe Klantenservice](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) voordat u dit type Micro Kernel gebruikt.
+>De relationele Database Micro Kernel wordt beperkt ondersteund. Contact [Klantenservice Adoben](https://experienceleague.adobe.com/?support-solution=General&amp;support-tab=home#support) voordat u dit type Micro Kernel gebruikt.
 
 ![chlimage_1-3](assets/chlimage_1-3a.png)
 
@@ -314,23 +314,23 @@ In AEM kunnen binaire gegevens onafhankelijk van inhoudsknooppunten worden opges
 
 Wanneer het behandelen van groot aantal binaire getallen, adviseert men dat u een externe gegevensopslag in plaats van de standaardknoopopslag gebruikt om prestaties te maximaliseren. Als uw project bijvoorbeeld veel media-elementen vereist, kunt u deze sneller openen dan ze rechtstreeks in een MongoDB opslaan als de File of Azure/S3 Data Store.
 
-Voor meer informatie over de beschikbare configuratieopties raadpleegt u [Knooppunt en gegevensopslag configureren](/help/sites-deploying/data-store-config.md).
+Zie voor meer informatie over de beschikbare configuratieopties [Knooppunt en gegevensopslag configureren](/help/sites-deploying/data-store-config.md).
 
 >[!NOTE]
 >
->Adobe raadt u aan de optie te kiezen voor het implementeren van AEM op Azure of Amazon Web Services (AWS) met Adobe Managed Services. Klanten profiteren van een team dat de ervaring en vaardigheden heeft om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [aanvullende documentatie over Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
+>Adobe raadt u aan de optie te kiezen om AEM in Azure of Amazon Web Services (AWS) te implementeren met behulp van Adobe Managed Services. Klanten profiteren van een team dat de ervaring en vaardigheden heeft om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Zie [aanvullende documentatie over Adobe Managed Services](https://business.adobe.com/products/experience-manager/managed-services.html?aemClk=t).
 >
->Voor aanbevelingen voor de implementatie van AEM op Azure of AWS, buiten Adobe Managed Services, raadt Adobe u aan rechtstreeks met de cloud provider te werken. Of werk met een van de Adobe die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur zij steunen om aan uw specifieke prestaties, lading, scalability, en veiligheidseisen te voldoen.
->Zie ook de [technische voorschriften](/help/sites-deploying/technical-requirements.md#supported-platforms) pagina.
+>Voor aanbevelingen voor de implementatie van AEM in Azure of AWS, buiten Adobe Managed Services, raadt Adobe aan rechtstreeks met de cloud provider te werken. Of werk met een van de partners van de Adobe die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde wolkenleverancier of partner is verantwoordelijk voor de rangschikkingsspecificaties, het ontwerp, en de implementatie van de architectuur zij steunen om aan uw specifieke prestaties, lading, scalability, en veiligheidseisen te voldoen.
 >
->
->
+>>Zie ook de [technische voorschriften](/help/sites-deploying/technical-requirements.md#supported-platforms) pagina.
+
 ### Zoeken {#search-features}
 
 In deze sectie worden de aangepaste indexproviders vermeld die met AEM worden gebruikt. Zie voor meer informatie over indexering [Oak-query&#39;s en indexering](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
-Voor de meeste plaatsingen, adviseert Adobe het gebruiken van de Index van Lucene. Gebruik Solr alleen voor schaalbaarheid in gespecialiseerde en complexe implementaties.
+>
+>Voor de meeste plaatsingen, adviseert de Adobe het gebruiken van de Index van Lucene. Gebruik Solr alleen voor schaalbaarheid in gespecialiseerde en complexe implementaties.
 
 ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -338,13 +338,13 @@ Voor de meeste plaatsingen, adviseert Adobe het gebruiken van de Index van Lucen
 
 Ontwikkelen voor AEM gericht op **prestaties en schaalbaarheid**. Hier volgt een overzicht van aanbevolen procedures:
 
-**DO**
+**DOEN**
 
 * Scheiding van presentatie, logica en inhoud toepassen
-* Bestaande AEM-API&#39;s gebruiken (bijvoorbeeld: Sling) en gereedschap (bv. Replicatie)
+* Bestaande AEM-API&#39;s (bijvoorbeeld Verdelen) en gereedschappen (bijvoorbeeld Replicatie) gebruiken
 * Ontwikkelen in de context van werkelijke inhoud
 * Ontwikkelen voor optimale kakkerbaarheid
-* Aantal spaarbestanden minimaliseren (bijv.: door gebruik te maken van tijdelijke workflows)
+* Minimaliseer het aantal spaarbestanden (bijv. door tijdelijke workflows te gebruiken)
 * Zorg ervoor dat alle eindpunten van HTTP RESTful zijn
 * Het bereik van de GCR-waarneming beperken
 * Onthoud asynchrone thread
@@ -363,12 +363,13 @@ Ontwikkelen voor AEM gericht op **prestaties en schaalbaarheid**. Hier volgt een
    * een ServiceTracker
    * directe toegang tot het OSGi-serviceregister
 
-Lees voor meer informatie over het ontwikkelen op AEM [Ontwikkelen - De basisbeginselen](/help/sites-developing/the-basics.md). Zie voor meer tips en trucs [Aanbevolen werkwijzen voor ontwikkeling](/help/sites-developing/best-practices.md).
+Lees voor meer informatie over het ontwikkelen op AEM [Ontwikkelen - De basisbeginselen](/help/sites-developing/the-basics.md). Zie voor aanvullende aanbevolen procedures [Aanbevolen werkwijzen voor ontwikkeling](/help/sites-developing/best-practices.md).
 
 ### Benchmark Scenarios {#benchmark-scenarios}
 
 >[!NOTE]
-Alle benchmarktests die op deze pagina worden weergegeven, zijn uitgevoerd in een laboratoriumomgeving.
+>
+>Alle benchmarktests die op deze pagina worden weergegeven, zijn uitgevoerd in een laboratoriumomgeving.
 
 De hieronder beschreven testscenario&#39;s worden gebruikt voor de benchmarksecties van de hoofdstukken TarMK, MongoMk en TarMK vs MongoMk. Om te zien welk scenario voor een bepaalde benchmarktest werd gebruikt, lees het gebied van het Scenario van [Technische specificaties](/help/sites-deploying/performance-guidelines.md#tarmk-performance-benchmark) tabel.
 
@@ -376,15 +377,15 @@ De hieronder beschreven testscenario&#39;s worden gebruikt voor de benchmarksect
 
 AEM Assets:
 
-* Gebruikersinteracties: Blader middelen / zoekmiddelen / element downloaden / Metagegevens van element lezen / Metagegevens van element bijwerken / element uploaden / workflow voor uploaden van element uitvoeren
+* Gebruikersinteracties: Zoeken in middelen / Zoeken in middelen / Elementen downloaden / Metagegevens van element lezen / Metagegevens van element bijwerken / Element uploaden / Workflow voor uploaden van element uitvoeren
 * Uitvoermodus: gelijktijdige gebruikers, enkele interactie per gebruiker
 
 **Productscenario mixen**
 
 AEM Sites + Middelen:
 
-* Gebruikersinteracties voor sites: Artikelpagina lezen / Pagina lezen / Alinea maken / Alinea bewerken / Pagina Inhoud maken / Pagina Inhoud plaatsen/Zoeken in auteur activeren
-* Gebruikersinteracties voor middelen: Blader middelen / zoekmiddelen / element downloaden / Metagegevens van element lezen / Metagegevens van element bijwerken / element uploaden / workflow voor uploaden van element uitvoeren
+* Gebruikersinteracties voor sites: Artikelpagina lezen / Pagina lezen / Alinea maken / Alinea bewerken / Pagina Inhoud maken / Pagina Inhoud activeren / Zoeken auteur
+* Interacties van gebruikers van middelen: Browse Assets / Search Assets / Download Asset / Read Asset Metadata / Update Asset Metadata / Upload Asset / Run Upload Asset Workflow
 * Uitvoermodus: gelijktijdige gebruikers, gemengde interacties per gebruiker
 
 **Het verticale Scenario van het Geval van het Gebruik**
@@ -398,14 +399,15 @@ Media:
 
 Dit hoofdstuk geeft algemene prestatiesrichtlijnen voor TarMK die de minimumarchitectuurvereisten en de montageconfiguratie specificeren. Er wordt ook voorzien in benchmarktests voor verdere verduidelijking.
 
-Adobe raadt TarMK aan om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel auteur AEM als Publish instanties wordt gebruikt.
+De Adobe raadt TarMK aan om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel de AEM Auteur als Publish instanties wordt gebruikt.
 
 Voor meer informatie over TarMK, zie [Implementatiescenario&#39;s](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) en [Teeropslag](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
 ### Richtlijnen voor minimale architectuur van TarMK {#tarmk-minimum-architecture-guidelines}
 
 >[!NOTE]
-De hieronder voorgestelde minimale architectuurrichtlijnen zijn voor productiemilieu&#39;s en hoge verkeersplaatsen. Deze richtsnoeren zijn **niet** de [minimumspecificaties](/help/sites-deploying/technical-requirements.md#prerequisites) om AEM uit te voeren.
+>
+>De hieronder voorgestelde minimale architectuurrichtlijnen zijn voor productiemilieu&#39;s en hoge verkeersplaatsen. Deze richtsnoeren zijn **niet** de [minimumspecificaties](/help/sites-deploying/technical-requirements.md#prerequisites) om AEM uit te voeren.
 
 Om goede prestaties te vestigen wanneer het gebruiken van TarMK, zou u van de volgende architectuur moeten beginnen:
 
@@ -416,7 +418,8 @@ Om goede prestaties te vestigen wanneer het gebruiken van TarMK, zou u van de vo
 Hieronder ziet u de architectuurrichtlijnen voor AEM sites en AEM Assets.
 
 >[!NOTE]
-Binair-less replicatie zou moeten worden gedraaid **ON** als de datastore van het Dossier wordt gedeeld.
+>
+>Binair-less replicatie zou moeten worden gedraaid **ON** als de datastore van het Dossier wordt gedeeld.
 
 **Richtlijnen voor de Tar Architecture voor AEM Sites**
 
@@ -489,7 +492,7 @@ Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moet
 
 De benchmarktests werden uitgevoerd op de volgende specificaties:
 
-|  | **Auteursknooppunt** |
+| | **Auteursknooppunt** |
 |---|---|
 | Server | Hardware voor onbewerkte metalen (HP) |
 | Besturingssysteem | Red Hat® Linux® |
@@ -501,12 +504,13 @@ De benchmarktests werden uitgevoerd op de volgende specificaties:
 | Product | AEM 6,2 |
 | Nodestore | TarMK |
 | Datastore | Bestand DS |
-| Scenario | Enkel product: Elementen / 30 gelijktijdige threads |
+| Scenario | Enkel product: elementen / 30 gelijktijdige threads |
 
 #### Resultaten prestatie-benchmark {#performance-benchmark-results}
 
 >[!NOTE]
-De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn niet de daadwerkelijke productienummers.
+>
+>De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn niet de daadwerkelijke productienummers.
 
 ![chlimage_1-7](assets/chlimage_1-7a.png) ![chlimage_1-8](assets/chlimage_1-8a.png)
 
@@ -526,10 +530,12 @@ Om goede prestaties te vestigen wanneer het gebruiken van MongoMK, zou u van de 
 * Twee verzenders
 
 >[!NOTE]
-In productieomgevingen wordt MongoDB altijd gebruikt als een replicaset met een primaire en twee secundaire server. Lezen en schrijven gaan naar de primaire website en lezen kan naar de secundaire medewerkers gaan. Als opslag niet beschikbaar is, kan een van de secundaire bestanden worden vervangen door een arbiter, maar MongoDB-replicasets moeten altijd uit een oneven aantal instanties bestaan.
+>
+>In productieomgevingen wordt MongoDB altijd gebruikt als een replicaset met een primaire en twee secundaire server. Lezen en schrijven gaan naar de primaire website en lezen kan naar de secundaire medewerkers gaan. Als opslag niet beschikbaar is, kan een van de secundaire bestanden worden vervangen door een arbiter, maar MongoDB-replicasets moeten altijd uit een oneven aantal instanties bestaan.
 
 >[!NOTE]
-Binair-less replicatie zou moeten worden gedraaid **ON** als de datastore van het Dossier wordt gedeeld.
+>
+>Binair-less replicatie zou moeten worden gedraaid **ON** als de datastore van het Dossier wordt gedeeld.
 
 ![chlimage_1-9](assets/chlimage_1-9a.png)
 
@@ -596,30 +602,31 @@ Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moet
 
 De benchmarktests werden uitgevoerd op de volgende specificaties:
 
-|  | **Auteur-knooppunt** | **MongoDB-knooppunt** |
+| | **Auteur-knooppunt** | **MongoDB-knooppunt** |
 |---|---|---|
 | Server | Hardware voor onbewerkte metalen (HP) | Hardware voor onbewerkte metalen (HP) |
 | Besturingssysteem | Red Hat® Linux® | Red Hat® Linux® |
 | CPU/kernen | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 kernen | Intel(R) Xeon(R) CPU E5-2407 @2,40 GHz, 8 kernen |
 | RAM | 32 GB | 32 GB |
 | Schijf | Magnetisch - >1k IOPS | Magnetisch - >1k IOPS |
-| Java™ | Oracle JRE versie 8 | N.v.t. |
-| JVM Heap | 16 GB | N.v.t. |
+| Java™ | Oracle JRE versie 8 | NVT |
+| JVM Heap | 16 GB | NVT |
 | Product | AEM 6,2 | MongoDB 3.2 WiredTiger |
-| Nodestore | MongoMK | N.v.t. |
-| Datastore | Bestand DS | N.v.t. |
-| Scenario | Enkel product: Elementen / 30 gelijktijdige threads | Enkel product: Elementen / 30 gelijktijdige threads |
+| Nodestore | MongoMK | NVT |
+| Datastore | Bestand DS | NVT |
+| Scenario | Enkel product: elementen / 30 gelijktijdige threads | Enkel product: elementen / 30 gelijktijdige threads |
 
 ### Resultaten prestatie-benchmark {#performance-benchmark-results-1}
 
 >[!NOTE]
-De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn niet de daadwerkelijke productienummers.
+>
+>De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn niet de daadwerkelijke productienummers.
 
 ![chlimage_1-10](assets/chlimage_1-10a.png) ![chlimage_1-11](assets/chlimage_1-11a.png)
 
 ## TarMK vs MongoMK {#tarmk-vs-mongomk}
 
-De basisregel om voor rekening te brengen wanneer het kiezen tussen twee is dat TarMK voor prestaties wordt ontworpen, terwijl MongoMK voor scalability wordt gebruikt. Adobe raadt TarMK aan om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel auteur AEM als Publish instanties wordt gebruikt.
+De basisregel om voor rekening te brengen wanneer het kiezen tussen twee is dat TarMK voor prestaties wordt ontworpen, terwijl MongoMK voor scalability wordt gebruikt. De Adobe raadt TarMK aan om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel de AEM Auteur als Publish instanties wordt gebruikt.
 
 De primaire reden voor het kiezen van de MongoMK persistence backend over TarMK is de instanties horizontaal te schalen. Deze functionaliteit houdt in dat twee of meer actieve auteur-instanties altijd worden uitgevoerd en dat MongoDB wordt gebruikt als het opslagsysteem voor persistentie. De noodzaak om meer dan één auteurinstantie in werking te stellen vloeit over het algemeen voort uit het feit dat de cpu en geheugencapaciteit van één enkele server, die alle gezamenlijke auteursactiviteiten steunt, niet meer duurzaam is.
 
@@ -633,20 +640,21 @@ Voor meer informatie over TarMK vs MongoMK, zie [Aanbevolen implementaties](/hel
 * Bestanden zijn altijd consistent en er kunnen back-ups van worden gemaakt met elk bestandsgebaseerd back-upprogramma
 * Verstrekt een failovermechanisme - zie [Koude stand-by](/help/sites-deploying/tarmk-cold-standby.md) voor meer informatie
 * Biedt hoge prestaties en betrouwbare gegevensopslag met minimale operationele overhead
-* Lagere totale eigendomskosten (totale eigendomskosten)
+* Lagere totale eigendomskosten
 
 **Criteria voor de keuze van MongoMK**
 
-* Aantal benoemde gebruikers verbonden in een dag: in duizenden of meer
+* Aantal benoemde gebruikers verbonden op een dag: in de duizenden of meer
 * Aantal gelijktijdige gebruikers: in honderden of meer
 * Omvang van de ingenomen activa per dag: in honderdduizenden of meer
 * Volume van paginabewerkingen per dag: in honderdduizenden of meer
-* Volume zoekopdrachten per dag: in tienduizenden of meer
+* Aantal zoekopdrachten per dag: in tienduizenden of meer
 
 ### TarMK vs MongoMK Benchmarks {#tarmk-vs-mongomk-benchmarks}
 
 >[!NOTE]
-De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn geen daadwerkelijke productienummers.
+>
+>De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn geen daadwerkelijke productienummers.
 
 ### Scenario 1 — Technische specificaties {#scenario-technical-specifications}
 
@@ -691,13 +699,13 @@ De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn 
   <tr>
    <td>Java™</td>
    <td>Oracle JRE versie 8</td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
    <td> </td>
   </tr>
   <tr>
    <td>JVM Heap16 GB</td>
    <td>16 GB</td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
    <td> </td>
   </tr>
   <tr>
@@ -709,18 +717,18 @@ De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn 
   <tr>
    <td>Nodestore</td>
    <td>TarMK of MongoMK</td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
    <td> </td>
   </tr>
   <tr>
    <td>Datastore</td>
    <td>Bestand DS </td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
    <td> </td>
   </tr>
   <tr>
    <td>Scenario</td>
-   <td><p><br /> Enkel product: Elementen / 30 gelijktijdige threads per run</p> </td>
+   <td><p><br /> Enkel product: middelen / 30 gelijktijdige threads per run</p> </td>
    <td> </td>
    <td> </td>
   </tr>
@@ -734,7 +742,8 @@ De hieronder vermelde aantallen zijn genormaliseerd aan 1 als basislijn en zijn 
 ### Scenario 2 — Technische specificaties {#scenario-technical-specifications-1}
 
 >[!NOTE]
-Als u hetzelfde aantal auteurs met MongoDB wilt inschakelen als met één TarMK-systeem, hebt u een cluster met twee AEM knooppunten nodig. Een cluster met vier knooppunten in MongoDB kan 1,8 keer het aantal auteurs afhandelen dan één TarMK-instantie. Een achtnodencluster MongoDB kan 2.3 keer het aantal Auteurs behandelen dan één instantie TarMK.
+>
+>Als u hetzelfde aantal auteurs met MongoDB wilt inschakelen als met één TarMK-systeem, hebt u een cluster met twee AEM knooppunten nodig. Een cluster met vier knooppunten in MongoDB kan 1,8 keer het aantal auteurs afhandelen dan één TarMK-instantie. Een achtnodencluster MongoDB kan 2.3 keer het aantal Auteurs behandelen dan één instantie TarMK.
 
 <table>
  <tbody>
@@ -778,13 +787,13 @@ Als u hetzelfde aantal auteurs met MongoDB wilt inschakelen als met één TarMK-
    <td>Java™</td>
    <td>Oracle JRE versie 8</td>
    <td><br /> Oracle JRE versie 8</td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
   <tr>
    <td>JVM Heap16 GB</td>
    <td>30 GB</td>
    <td>30 GB</td>
-   <td>N.v.t.</td>
+   <td>NVT</td>
   </tr>
   <tr>
    <td>Product </td>
@@ -796,13 +805,13 @@ Als u hetzelfde aantal auteurs met MongoDB wilt inschakelen als met één TarMK-
    <td>Nodestore</td>
    <td>TarMK </td>
    <td>MongoMK</td>
-   <td><br /> N.v.t.</td>
+   <td><br /> NVT</td>
   </tr>
   <tr>
    <td>Datastore</td>
    <td>Bestand DS </td>
    <td><br /> Bestand DS</td>
-   <td><br /> N.v.t.</td>
+   <td><br /> NVT</td>
   </tr>
   <tr>
    <td>Scenario</td>
@@ -827,7 +836,7 @@ De richtsnoeren op deze pagina kunnen als volgt worden samengevat:
 
 * **TarMK met bestandsdatastore** - De aanbevolen architectuur voor de meeste klanten:
 
-   * Minimale topologie: één instantie Auteur, twee instanties Publish, twee Verzenders
+   * Minimale topologie: één instantie van de Auteur, twee Publish instanties, twee Verzenders
    * Binair-less replicatie aangezet als de Datastore van het Dossier wordt gedeeld
 
 * **MongoMK met bestandsdatastore** - De aanbevolen architectuur voor horizontale schaalbaarheid van het niveau Auteur:

@@ -7,9 +7,9 @@ role: User
 feature: Collections,Asset Management
 exl-id: 2117b2de-8024-4aa8-9ce0-68a156928356
 hide: true
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2048'
 ht-degree: 10%
 
 ---
@@ -222,7 +222,7 @@ Wanneer u een verzameling downloadt, wordt de volledige hiërarchie van elemente
 
 ## Geneste verzamelingen maken {#creating-nested-collections}
 
-U kunt een verzameling toevoegen aan een andere verzameling en zo een geneste verzameling maken.
+U kunt een verzameling toevoegen aan een andere verzameling, zodat u een geneste verzameling maakt.
 
 1. Selecteer in de verzamelingsconsole de gewenste verzameling of groep verzamelingen en klik op **[!UICONTROL To Collection]** in de werkbalk.
 

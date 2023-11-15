@@ -2,9 +2,9 @@
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '4675'
+source-wordcount: '4676'
 ht-degree: 1%
 
 ---
@@ -187,7 +187,7 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 
 * De [Referentie](/help/sites-authoring/author-environment-tools.md#references) rail heeft een nieuwe sectie om interne verbindingen te vermelden die aan de geselecteerde pagina richten. Dit is handig wanneer u een pagina offline of verwijderd wilt maken. Zo kunt u zien welke pagina&#39;s moeten worden aangepast voordat u de pagina&#39;s offline plaatst.
 * De [lijstweergave](/help/sites-authoring/basic-handling.md#list-view) heeft een nieuwe werkstroomkolom die de status toont wanneer de pagina in een werkschema is.
-* In de [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md)kunt u nu bladeren naar bestaande elementen wanneer u een miniatuur aan de pagina toewijst (tabblad Miniatuur).
+* In de [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md)kunt u nu naar bestaande elementen bladeren wanneer u een miniatuur toewijst aan de pagina (tabblad Miniatuur).
 
 #### Pagina-editor {#page-editor}
 

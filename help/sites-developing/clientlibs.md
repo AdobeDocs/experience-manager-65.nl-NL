@@ -7,7 +7,7 @@ topic-tags: introduction
 content-type: reference
 docset: aem65
 exl-id: 408ac30c-60ab-4d6c-855c-d544af8d5cf9
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2853'
 ht-degree: 0%
@@ -36,7 +36,7 @@ De standaardmanier om een bibliotheek aan de clientzijde (dat wil zeggen een JS-
 
 Deze aanpak werkt AEM, maar kan problemen veroorzaken wanneer pagina&#39;s en de bestanddelen ervan complex worden. In dergelijke gevallen bestaat het gevaar dat meerdere exemplaren van dezelfde JS-bibliotheek in de uiteindelijke HTML-uitvoer worden opgenomen. Om dit te vermijden en logische organisatie van cliënt-zijbibliotheken toe te staan AEM gebruik **clientbibliotheekmappen**.
 
-Een bibliotheekmap op de client is een opslagplaats van het type `cq:ClientLibraryFolder`. Het is definitie in [CND-notatie](https://jackrabbit.apache.org/node-type-notation.html) is
+Een bibliotheekmap op de client is een opslagplaats van het type `cq:ClientLibraryFolder`. De definitie ervan in [CND-notatie](https://jackrabbit.apache.org/node-type-notation.html) is
 
 ```shell
 [cq:ClientLibraryFolder] > sling:Folder

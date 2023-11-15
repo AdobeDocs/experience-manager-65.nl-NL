@@ -6,7 +6,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: f37f239f-065b-44f8-acb1-93485b713b49
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 0%
@@ -27,7 +27,7 @@ De pagina&#39;s van uw toepassing moeten zich onder /content/mobileapps bevinden
 
 ![chlimage_1-52](assets/chlimage_1-52.png)
 
-Volgens AEM conventie moet de eerste pagina van uw app een omleiding zijn naar een van de onderliggende items van de app die als de standaardtaal van de app fungeren (en in zowel de gevallen Geometrixx en Starter Kit). De landinstellingspagina op hoofdniveau overerft doorgaans de &#39;splash-page&#39;-component (/libs/mobileapps/components/splash-page) die zorgt voor de initialisatie die nodig is voor de installatie van updates voor de synchronisatie van over-the-air inhoud (contentInit-code vindt u op /etc/clientlibs/mobile/content-sync/js/contentInit.js).
+Volgens AEM conventie moet de eerste pagina van uw app een omleiding zijn naar een van de onderliggende items die als standaardtaal van de app fungeren (en in zowel de gevallen Geometrixx als Starter Kit). De landinstellingspagina op hoofdniveau overerft doorgaans de &#39;splash-page&#39;-component (/libs/mobileapps/components/splash-page) die zorgt voor de initialisatie die nodig is voor de installatie van updates voor de synchronisatie van over-the-air inhoud (contentInit-code vindt u op /etc/clientlibs/mobile/content-sync/js/contentInit.js).
 
 ## Sjablonen en componenten {#templates-and-components}
 
@@ -45,7 +45,7 @@ In clientbibliotheken zijn er een paar opties beschikbaar voor de ontwikkelaar v
 
 Als uw cliëntside code op zijn kan staan en niet op een specifieke component van uw toepassing betrekking heeft-betekenis kan het in andere toepassing-Adobe worden opnieuw gebruikt adviseert het opslaan in /etc/clientlibs/&lt;brand name=&quot;&quot;>/&lt;lib name=&quot;&quot;>. Als de clientlib echter specifiek is voor één toepassing, kunt u deze nesten als een onderliggend element van het ontwerpknooppunt van uw app; /etc/designs/phonegap/&lt;brand name=&quot;&quot;>/&lt;app name=&quot;&quot;>/clientlibs. Gebruik de categorie van deze client niet met andere bibliotheken, maar sluit indien nodig andere bibliotheken in. Als u dit patroon volgt, hoeft de ontwikkelaar niet telkens nieuwe configuraties voor Content Sync toe te voegen wanneer een clientbibliotheek aan de app wordt toegevoegd, maar werkt u gewoon de eigenschap &#39;embeds&#39; van de ontwerpclient van de app bij. Kijk bijvoorbeeld naar het configuratieknooppunt voor Geometrixx clientlibs-all Content Sync op /content/phonegap/geometrixx-outdoor/en/jcr:content/pge-app/app-config/clientlibs-all.
 
-Als uw clientcode nauw aan een specifieke component is gekoppeld, plaatst u die code in een clientbibliotheek die onder de locatie van de component is genest in /apps/ en sluit u de categorie van de component in de &#39;design&#39; clientlib van uw app in.
+Als uw clientcode nauw aan een specifieke component is gekoppeld, plaatst u die code in een clientbibliotheek die onder de locatie van de component is genest in /apps/ en sluit u de categorie in de client lib &#39;design&#39; van uw app in.
 
 ## PhoneGap-configuratie {#phonegap-configuration}
 

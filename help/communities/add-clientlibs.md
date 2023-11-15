@@ -7,9 +7,9 @@ topic-tags: developing
 content-type: reference
 docset: aem65
 exl-id: 569f2052-b4fe-4f7f-aec9-657217cba091
-source-git-commit: 62d4a8b3af5031ccc539d78f7d06a8cd1fec7af1
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ In de **Eigenschappen** tab voor de nieuwe `clientlibs` knoop, ga in **categorie
 * Klikken **Toevoegen**
 * Klikken **Alles opslaan**
 
-Opmerking: geef de waarde voor categorieën een voorvoegsel met &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs. BELANGRIJK: tijdelijke aanduiding toevoegen `js.tx`t en **`css.txt`** bestanden. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
+Opmerking: geef de waarde voor categorieën een voorvoegsel met &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs. BELANGRIJK: tijdelijke aanduiding toevoegen `js.tx`t en **`css.txt`** bestanden. (Zonder deze bestanden is het officieel geen cq:ClientLibraryFolder.)
 
 1. Klikken met rechtermuisknop **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Selecteren **Bestand maken...**

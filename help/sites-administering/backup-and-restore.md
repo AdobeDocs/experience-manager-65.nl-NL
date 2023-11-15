@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: dd26dade-b769-483e-bc11-dcfa5ed1f87e
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '2282'
 ht-degree: 0%
@@ -217,7 +217,7 @@ Voor de online back-up wordt het volgende algoritme gebruikt:
 
      Een leeg bestand met de naam `backupInProgress.txt` wordt in de doelmap gemaakt wanneer de back-up wordt gestart. Dit bestand wordt verwijderd wanneer de back-up is voltooid.
 
-1. De bestanden worden van de bronmap naar de doelmap (of de tijdelijke map wanneer u een ZIP-bestand maakt) gekopieerd. De segmentstore wordt gekopieerd vóór de datastore om beschadiging van de opslagplaats te voorkomen. De index- en cachegegevens worden weggelaten wanneer u de back-up maakt. Dientengevolge, gegevens van `crx-quickstart/repository/cache` en `crx-quickstart/repository/index` is niet opgenomen in de back-up. De voortgangsbalkindicator van het proces ligt tussen 0% - 70% wanneer u een ZIP-bestand maakt, of 0% - 100% als er geen ZIP-bestand wordt gemaakt.
+1. De bestanden worden van de bronmap naar de doelmap (of de tijdelijke map wanneer u een ZIP-bestand maakt) gekopieerd. De segmentstore wordt gekopieerd vóór de datastore om beschadiging van de opslagplaats te voorkomen. De index- en cachegegevens worden weggelaten wanneer u de back-up maakt. Dientengevolge, gegevens van `crx-quickstart/repository/cache` en `crx-quickstart/repository/index` is niet opgenomen in de back-up. De voortgangsbalkindicator van het proces ligt tussen 0% en 70% wanneer u een ZIP-bestand maakt, of tussen 0% en 100% wanneer geen ZIP-bestand wordt gemaakt.
 
 1. Als de back-up wordt gemaakt naar een bestaande map, worden de &quot;oude&quot; bestanden in de doelmap verwijderd. Oude bestanden zijn bestanden die niet in de bronmap staan.
 

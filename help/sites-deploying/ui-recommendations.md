@@ -11,7 +11,7 @@ topic-tags: best-practices
 discoiquuid: 8f06d4b6-7d30-4ebc-9c6a-3bb8607a9be8
 docset: aem65
 exl-id: 7b71119a-ff58-47c0-aeef-a705ed8c40e0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '781'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Mogelijkheid om informatie over de bezoeker samen te voegen en voor verschillend
 
 ## Algemeen {#general}
 
-In de afgelopen jaren heeft Adobe alle Adobe Experience Cloud-oplossingen bijgewerkt met één gebruikersinterface. De gebruikers over de oplossingen van de Experience Cloud genieten een verenigbare ervaring met gemeenschappelijke patronen op hoe te om de toepassingen te gebruiken en in werking te stellen. Met elke versie, heeft de Adobe het gebruikersinterface verfijnd die op terugkoppelen van klanten wordt gebaseerd die over de diverse oplossingen werken.
+In de afgelopen jaren heeft Adobe alle Adobe Experience Cloud-oplossingen bijgewerkt met één gebruikersinterface. De gebruikers over de oplossingen van de Experience Cloud genieten een verenigbare ervaring met gemeenschappelijke patronen op hoe te om de toepassingen te gebruiken en in werking te stellen. Met elke versie, heeft de Adobe zijn gebruikersinterface verfijnd die op terugkoppelen van klanten wordt gebaseerd die over de diverse oplossingen werken.
 
 De oorspronkelijke gebruikersinterface voor Adobe Experience Manager (voorheen CQ5 genoemd), die in 2008 werd geïntroduceerd en door klanten met versies 5.0-5.6.1 werd gebruikt, staat in AEM 6.5. Dit garandeert dat klanten een update naar versie 6.5 kunnen uitvoeren en kunnen profiteren van een bijgewerkt platform met nieuwe mogelijkheden en dezelfde gebruikersinterface kunnen blijven gebruiken.
 

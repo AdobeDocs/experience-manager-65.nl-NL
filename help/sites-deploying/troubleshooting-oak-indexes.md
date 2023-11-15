@@ -1,17 +1,14 @@
 ---
 title: Probleemoplossing voor Oak-indexen
-seo-title: Troubleshooting Oak Indexes
 description: Leer hoe u kunt vaststellen of indexering traag is, de oorzaak kunt achterhalen en het probleem kunt oplossen.
-uuid: 6567ddae-128c-4302-b7e8-8befa66b1f43
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
-discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 exl-id: 85981463-189c-4f50-9d21-1d2f734b960a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1473'
+source-wordcount: '1474'
 ht-degree: 0%
 
 ---
@@ -22,7 +19,7 @@ ht-degree: 0%
 
 AEM intern herindexeringsproces verzamelt gegevens in de gegevensopslagruimte en slaat deze op in eiken-indexen ter ondersteuning van het opvragen van inhoud door uitvoerders. In uitzonderlijke omstandigheden kan het proces langzaam of zelfs vastlopen. Deze pagina fungeert als gids voor het oplossen van problemen, zodat u kunt zien of de indexering langzaam verloopt, de oorzaak vindt en het probleem verhelpt.
 
-Het is belangrijk om een onderscheid te maken tussen opnieuw indexeren die een ongepast lange hoeveelheid tijd vergt, en opnieuw indexeren die een lange hoeveelheid tijd vergt omdat het enorme hoeveelheden inhoud indexeert. De tijd die nodig is om de inhoud te indexeren, wordt bijvoorbeeld geschaald met de hoeveelheid inhoud. Het duurt dus langer om grote productieopslagplaatsen opnieuw te indexeren dan kleine opslagplaatsen.
+Het is belangrijk om onderscheid te maken tussen opnieuw indexeren die een onredelijk lange hoeveelheid tijd vergt, en opnieuw indexeren die een lange hoeveelheid tijd vergt omdat het enorme hoeveelheden inhoud indexeert. De tijd die nodig is om de inhoud te indexeren, wordt bijvoorbeeld geschaald met de hoeveelheid inhoud. Het duurt dus langer om grote productieopslagplaatsen opnieuw te indexeren dan kleine opslagplaatsen.
 
 Zie de [Beste praktijken op Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md) voor aanvullende informatie over wanneer en hoe inhoud opnieuw moet worden geindexeerd.
 

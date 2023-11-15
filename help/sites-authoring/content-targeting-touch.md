@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: edde225d-0be7-4306-8dda-d18d46fae977
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '5383'
+source-wordcount: '5374'
 ht-degree: 5%
 
 ---
@@ -38,7 +38,7 @@ De activiteiten en ervaringen die u in de modus Doel ziet, weerspiegelen de [Act
 
 >[!NOTE]
 >
->Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId`naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, wordt de thirdPartyId niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. De naam van de campagne kan daarom niet opnieuw worden gebruikt in verschillende typen campagnes.
+>Wanneer u een campagne maakt in Adobe Target, wordt een eigenschap toegewezen met de naam `thirdPartyId`naar elke campagne. Wanneer u de campagne in Adobe Target verwijdert, wordt de thirdPartyId niet verwijderd. U kunt de `thirdPartyId` voor campagnes van verschillende types (AB, XT) en het kan niet manueel worden verwijderd. Om dit probleem te voorkomen, geeft u elke campagne een unieke naam. U kunt de campagnemenamen niet opnieuw gebruiken in verschillende typen campagnes.
 >
 >Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
 >
@@ -79,7 +79,7 @@ Een activiteit toevoegen:
 
    >[!NOTE]
    >
-   >Het wordt aanbevolen [merk maken via de activiteitenconsole](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
+   >Adobe beveelt aan [merk maken via de activiteitenconsole](/help/sites-authoring/activitylib.md#creating-a-brand-using-the-activities-console).
    >
    >
    >Als u op een andere manier een merk maakt, moet u ervoor zorgen dat het knooppunt `/campaigns/<brand>/master` bestaat of er een fout optreedt wanneer u een activiteit probeert te maken.
@@ -140,7 +140,7 @@ Na u [start het doelproces](/help/sites-authoring/content-targeting-touch.md#the
 
 >[!CAUTION]
 >
->Wees voorzichtig wanneer u het richten voor een component onbruikbaar maakt die reeds in de auteursinstantie gericht is. De respectievelijke activiteit wordt automatisch ook uit het publicatieexemplaar verwijderd.
+>Wees voorzichtig wanneer u het richten voor een component onbruikbaar maakt die reeds in de auteursinstantie gericht is. De respectievelijke activiteit wordt automatisch ook uit de publicatie-instantie verwijderd.
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Voer de volgende procedure uit na [starten van het doelproces](/help/sites-autho
 
    ![Doel](do-not-localize/chlimage_1.png)
 
-   De inhoud van de component is de aanbieding voor de Standaardervaring. Wanneer een component wordt gericht, zal zijn standaardknoop voor elke ervaring worden herhaald. Dit is nodig voor het bewerken van het juiste inhoudsknooppunt tijdens specifieke ontwerphandelingen. Voor deze niet-standaard ervaringen geldt het volgende: [een aangepaste aanbieding toevoegen](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) of [een bibliotheekaanbieding toevoegen](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
+   De inhoud van de component is de aanbieding voor de Standaardervaring. Wanneer een component wordt gericht, wordt zijn standaardknoop herhaald voor elke ervaring. Dit is nodig voor het bewerken van het juiste inhoudsknooppunt tijdens specifieke ontwerphandelingen. Voor deze niet-standaard ervaringen geldt het volgende: [een aangepaste aanbieding toevoegen](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) of [een bibliotheekaanbieding toevoegen](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library).
 
 #### Een aanbieding maken door een doelcomponent toe te voegen {#creating-an-offer-by-adding-a-target-component}
 
@@ -406,7 +406,7 @@ Bepaal een publiek gebruikend een segment. De wolkenconfiguratie voor de pagina 
 
 Voor informatie over motoren, zie [Richtingsmotor](/help/sites-authoring/personalization.md#targeting-engine).
 
-Een publiek mag niet door meer dan één ervaring worden gebruikt. Er verschijnt een waarschuwingssymbool naast een ervaring wanneer het wordt toegewezen aan een publiek dat is toegewezen aan een andere ervaring.
+Gebruik geen publiek meer dan één ervaring. Er verschijnt een waarschuwingssymbool naast een ervaring wanneer het wordt toegewezen aan een publiek dat is toegewezen aan een andere ervaring.
 
 ![Waarschuwingssymbool wanneer toegewezen aan een publiek dat is toegewezen aan een andere ervaring](do-not-localize/chlimage_1-6.png)
 
@@ -517,7 +517,7 @@ Gebruik de geavanceerde instellingen om te bepalen wat er gebeurt **na** een geb
     </ul> </td>
   </tr>
   <tr>
-   <td><strong>Toename, Geen gebruiker &amp; Bar opnieuw invoeren</strong></td>
+   <td><strong>Toename, Geen gebruiker &amp; Staafherinvoer</strong></td>
    <td>Bepaal wat de gebruiker ziet in plaats van de inhoud van de activiteit:
     <ul>
      <li>Dezelfde ervaring, zonder bijhouden</li>

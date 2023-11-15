@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 docset: aem65
 feature: Correspondence Management
 exl-id: 9e1b0067-c7dc-4bbb-a209-d674592be858
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2171'
+source-wordcount: '2170'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Voer de volgende stappen uit om subformulier in een XDP-sjabloon te gebruiken:
    1. Geef een naam op voor het subformulier in het dialoogvenster **Naam** veld.
    1. Selecteren **Geen gegevensbinding** van de **Gegevensbinding** vervolgkeuzelijst.
 
-   Herhaal stap 2 tot en met 5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Toevoegen [tekst, documentfragmenten, afbeeldingen en grafieken](create-interactive-communication.md#step2) aan de doelgebieden slechts terwijl het ontwerpen van de Interactieve Mededeling.
+   Herhaal stap 2-5 om meer subformulieren aan de XDP-sjabloon toe te voegen. Toevoegen [tekst, documentfragmenten, afbeeldingen en grafieken](create-interactive-communication.md#step2) aan de doelgebieden slechts terwijl het ontwerpen van de Interactieve Mededeling.
 
 1. Selecteren **Bestand** > **Opslaan als** om het bestand op te slaan op het lokale bestandssysteem:
 

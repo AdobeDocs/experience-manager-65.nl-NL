@@ -8,9 +8,9 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '3568'
+source-wordcount: '3574'
 ht-degree: 0%
 
 ---
@@ -362,7 +362,7 @@ Pakketbeheer kan de volgende validaties uitvoeren:
 
 Deze validatie inspecteert het pakket voor alle JAR-bestanden (OSGi-bundels), extraheert de bestanden `manifest.xml` (die de versioned gebiedsdelen bevat waarop OSGi bundel baseert), en verifieert de AEM instantie uitvoert genoemde gebiedsdelen met de correcte versies.
 
-**Hoe het is gemeld**
+**Hoe wordt het gemeld**
 
 Om het even welke versioned gebiedsdelen die niet door de AEM instantie kunnen worden tevredengesteld zijn vermeld in het Logboek van de Activiteit van de Manager van het Pakket.
 
@@ -382,7 +382,7 @@ Deze validatie bepaalt of het pakket dat wordt geïnstalleerd een bestand bevat 
 
 Als u bijvoorbeeld een bestaande overlay hebt van `/apps/sling/servlet/errorhandler/404.jsp`, een pakket dat `/libs/sling/servlet/errorhandler/404.jsp`, zodat het bestaande bestand wordt gewijzigd in `/libs/sling/servlet/errorhandler/404.jsp`.
 
-**Hoe het is gemeld**
+**Hoe het wordt gerapporteerd**
 
 Dergelijke overlays worden beschreven in het activiteitenlogboek van Package Manager.
 
@@ -404,7 +404,7 @@ U kunt dit probleem oplossen door het bestand met de overlay in `/apps` moet de 
 
 Deze bevestiging controleert welke toestemmingen worden toegevoegd, hoe zij zullen worden behandeld (samenvoegen/vervangen), en als de huidige toestemmingen zullen worden beïnvloed.
 
-**Hoe het is gemeld**
+**Hoe wordt het gemeld**
 
 De toestemmingen worden beschreven in het Logboek van de Activiteit van de Manager van het Pakket.
 

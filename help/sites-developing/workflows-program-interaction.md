@@ -1,18 +1,14 @@
 ---
 title: Programmatische interactie met Workflows
-seo-title: Interacting with Workflows Programmatically
 description: Leer hoe u programmatisch kunt werken met workflows in Adobe Experience Manager.
-seo-description: null
-uuid: a0f19fc6-b9bd-4b98-9c0e-fbf4f7383026
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 exl-id: 2b396850-e9fb-46d9-9daa-ebd410a9e1a5
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '2008'
+source-wordcount: '2007'
 ht-degree: 0%
 
 ---
@@ -359,7 +355,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr>
   <tr>
    <td><code>POST</code></td>
-   <td>Voltooit het het werkpunt waarvan URI als parameter wordt verzonden <code>item</code> en gaat de instantie volgens workflow verder naar de volgende node(s), die wordt gedefinieerd door de parameter <code>route</code> of <code>backroute</code> als er een stap terug is.<br /> Als de parameter <code>delegatee</code> wordt verzonden, het het werkpunt dat door de parameter wordt geïdentificeerd <code>item</code> wordt gedelegeerd aan de opgegeven deelnemer.</td>
+   <td>Voltooit het het werkpunt waarvan URI als parameter wordt verzonden <code>item</code> en gaat de instantie volgens workflow verder naar de volgende knooppunten, die worden gedefinieerd door de parameter <code>route</code> of <code>backroute</code> als er een stap terug is.<br /> Als de parameter <code>delegatee</code> wordt verzonden, het het werkpunt dat door de parameter wordt geïdentificeerd <code>item</code> wordt gedelegeerd aan de opgegeven deelnemer.</td>
   </tr>
  </tbody>
 </table>

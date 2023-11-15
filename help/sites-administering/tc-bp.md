@@ -3,9 +3,9 @@ title: Aanbevolen werkwijzen voor vertaling
 description: Zoek naar beste praktijken die door Adobe engineering en consultancyteams worden samengesteld om u te helpen met vertaalprojecten in gebruik worden genomen.
 feature: Language Copy
 exl-id: 01a81c4b-cb30-4f7e-b281-7194ebb5fc70
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '837'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 * Bepaal hoe inhoud wordt verdeeld over regio&#39;s en landen. Bedenk welke landen talen delen. U wordt aangeraden om taalstramienen te maken, een laag van niet-geactiveerde pagina&#39;s, waarin vertaalde inhoud kan worden gecontroleerd en gewijzigd en vervolgens kan worden geduwd of naar een landsite met dezelfde taal kan worden gesleept.
 * Er zijn twee manieren om taalmeesters te maken: het gebruiken van taalexemplaren, en het gebruiken van MSM/levende exemplaren.
 
-   * De taalkopieerbenadering wordt gebruikt door AEM out-of-the-box vertaalintegratieframework, en daarom is het de eenvoudigste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface waarmee u in eerste instantie gemakkelijk inhoudwijzigingen van de hoofdtaal (bijvoorbeeld het Engels) kunt doorgeven en vertalen naar de hoofdtaal. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
+   * De taalkopieerbenadering wordt gebruikt door AEM out-of-the-box vertaalintegratiekader, en daarom is het de eenvoudigste manier om aan de slag te gaan. Het framework biedt een gebruikersinterface waarmee u in eerste instantie gemakkelijk inhoudwijzigingen van de hoofdtaal (bijvoorbeeld het Engels) kunt doorgeven en vertalen naar de hoofdtaal. Naarmate het project groeit, wordt workflowautomatisering echter steeds noodzakelijker om de vertaling van het toegenomen aantal pagina&#39;s en/of talen te beheren.
    * De MSM/levende exemplaarbenadering kan een alternatief voor geavanceerde gebruiksgevallen zijn, waar de plaatsen groter en complexer zijn. Sterk bestuur en automatisering van de workflow zijn van meet af aan nodig om de complexe overervingsrelaties tussen Engelse en taalmeesters aan te pakken en om het risico van het overschrijven van bestaande vertalingen te verminderen. Deze behandeling kan met de hulp van sommige vertaalschakelaars worden verwezenlijkt. Zie [MSM en meertalige sites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites) voor meer informatie .
 
 * Als uw hoofdtaal globale variaties heeft, is een optie MSM te gebruiken om een levende kopie van het globale stramien tot stand te brengen voor vertaling. Als bijvoorbeeld wereldwijd schrijven wordt uitgevoerd in een Amerikaanse Engelse master, maakt u een internationale Engelse master als een live kopie en basis voor vertaling naar andere talen.

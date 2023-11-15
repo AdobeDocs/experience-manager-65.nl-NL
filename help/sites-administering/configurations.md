@@ -2,9 +2,9 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 474a726058b141985f52a0faec6161a34be1e9dc
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1482'
+source-wordcount: '1483'
 ht-degree: 0%
 
 ---
@@ -157,7 +157,7 @@ Nu een blik op de overeenkomstige inhoud JCR:
 
 In dit voorbeeld kunt u hier een WKND-specifieke DAM-map en een bijbehorende configuratie aannemen. Vanaf die map `/content/dam/wknd`kunt u zien dat er een tekenreekseigenschap is met de naam `cq:conf` dat verwijst naar de configuratie die voor de substructuur zou moeten van toepassing zijn. De eigenschap wordt ingesteld op het tabblad `jcr:content` van een elementmap of -pagina. Deze `conf` De verbindingen zijn uitdrukkelijk, zodat is het gemakkelijk om hen te volgen door de inhoud in CRXDE te bekijken.
 
-Binnenin pompen `/conf`, kunt u de verwijzing volgen en zien dat er een `/conf/wknd` knooppunt. Deze configuratie. De zoekopdracht is transparant voor de toepassingscode. De voorbeeldcode heeft er nooit een specifieke referentie naar, maar is verborgen achter het `Conf` object. Welke configuratie van toepassing is, wordt bepaald door de JCR-inhoud.
+Binnenin pompen `/conf`, kunt u de verwijzing volgen en zien dat er een `/conf/wknd` knooppunt. Deze configuratie. De zoekopdracht is transparant voor de toepassingscode. De voorbeeldcode heeft er nooit een specifieke verwijzing naar, het is verborgen achter de `Conf` object. Welke configuratie van toepassing is, wordt bepaald door de JCR-inhoud.
 
 U kunt zien dat de configuratie een fixed-named bevat `settings` knooppunt dat de werkelijke items bevat, inclusief de `dam/imageserver` dat u in dit geval nodig hebt. Een dergelijk item kan worden beschouwd als een &quot;instellingendocument&quot; en wordt voorgesteld door een `cq:Page` inclusief `jcr:content` de feitelijke inhoud bezitten.
 

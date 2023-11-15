@@ -1,12 +1,10 @@
 ---
 title: Services integreren met de JMX-console
-seo-title: Integrating Services with the JMX Console
 description: Stel de dienstattributen en verrichtingen bloot om beleidstaken toe te laten om worden uitgevoerd door tot stand te brengen en in te voeren MBans om de diensten te beheren gebruikend de Console JMX
-seo-description: Expose service attributes and operations to enable administration tasks to be performed by creating and deploying MBeans to manage services using the JMX Console
 topic-tags: extending-aem
 content-type: reference
 exl-id: fe727406-09cb-4516-8278-806fd78cfc12
-source-git-commit: a2e5a5ae7585299de869dbf8744d7be4b86c5bf8
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
 source-wordcount: '1659'
 ht-degree: 0%
@@ -27,7 +25,7 @@ Op het Apache Felix-platform implementeert u MBans als OSGi-services. Wanneer ee
 
 ## Bezig met het maken van MBans voor CQ5 en CRX {#creating-mbeans-for-cq-and-crx}
 
-MBeans die u voor het beheren van CQ5 of CRX middelen creeert zijn gebaseerd op de interface javax.management.DynamicMBean. Om hen te creëren volgt u de gebruikelijke ontwerppatronen die in de specificatie JMX worden vermeld:
+MBeans die u voor het beheren van CQ5 of CRX middelen creeert zijn gebaseerd op de interface javax.management.DynamicMBean. Als u deze wilt maken, volgt u de gebruikelijke ontwerppatronen die in de JMX-specificatie worden beschreven:
 
 * Maak de beheerinterface, inclusief get, set en is methoden om kenmerken te definiëren en andere methoden om bewerkingen te definiëren.
 * Maak de implementatieklasse. De klasse moet DynamicMBean implementeren of een implementatieklasse van DynamicMBean uitbreiden.
@@ -61,8 +59,8 @@ De klassen worden verstrekt voor het creëren van Dynamische MBans die de annota
 
 Typisch, is uw MBean een bezinning op de dienst OSGi die u wilt beheren. Op het platform van Felix, creeert u MBean zoals u voor plaatsing op andere de serverplatforms van Java zou willen. Een primair verschil is dat u annotaties kunt gebruiken om MBean-informatie op te geven:
 
-* Beheerinterface: Definieert kenmerken met behulp van getter, setter en is methoden. Bepaalt verrichtingen gebruikend een andere openbare methode. Gebruikt annotaties om metagegevens voor het BeanInfo-object te verschaffen.
-* MBean-klasse: Implementeert de beheerinterface. Breidt de klasse AnnotatedStandardMBean uit zodat het de annotaties op de interface verwerkt.
+* Beheerinterface: definieert kenmerken met behulp van getter, setter en is methoden. Bepaalt verrichtingen gebruikend een andere openbare methode. Gebruikt annotaties om metagegevens voor het BeanInfo-object op te geven.
+* MBean-klasse: implementeert de beheerinterface. Breidt de klasse AnnotatedStandardMBean uit zodat het de annotaties op de interface verwerkt.
 
 Het volgende voorbeeld MBean verstrekt informatie over de bewaarplaats CRX. De interface gebruikt de aantekening van de Beschrijving om informatie aan de console te verstrekken JMX.
 
@@ -124,11 +122,11 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 }
 ```
 
-De volgende afbeelding toont de pagina voor deze MBean in de JMX-console.
+In de volgende afbeelding ziet u de pagina voor deze MBean in de JMX-console.
 
 ![jmxdescription](assets/jmxdescription.png)
 
-### Bezig met registreren van MBeans {#registering-mbeans}
+### Registreren van MBeans {#registering-mbeans}
 
 Wanneer u MBeans als dienst OSGi registreert, worden zij automatisch geregistreerd met de Server MBean. Om een MBean op CQ5 te installeren, omvat het in een bundel en voert de dienst MBean uit zoals u een andere dienst OSGi.
 
@@ -190,7 +188,7 @@ Gebruik BundleContext om MBean als dienst te registreren OSGi. Neem de JMX-gerel
 
 In het volgende codevoorbeeld, wordt de dienst ExampleMBean programmatically geregistreerd. Het componentContext-object is ComponentContext, dat toegang biedt tot BundleContext.
 
-#### Codefragment: Programmatische MBean de Registratie van de Dienst {#code-snippet-programmatic-mbean-service-registration}
+#### Codefragment: Programmatische MBean Service Registration {#code-snippet-programmatic-mbean-service-registration}
 
 ```java
 Dictionary mbeanProps = new Hashtable();
@@ -204,14 +202,14 @@ Het voorbeeld MBean in de volgende sectie verstrekt meer details.
 
 Een MBean de dienstmanager is nuttig wanneer de dienstconfiguraties in de bewaarplaats worden opgeslagen. De manager kan de dienstinformatie terugwinnen en het gebruiken om het overeenkomstige MBean te vormen en tot stand te brengen. De manager-klasse kan ook luisteren naar wijzigingsgebeurtenissen in de repository en de MBean-services dienovereenkomstig bijwerken.
 
-## Voorbeeld: Workflowmodellen volgen met JMX {#example-monitoring-workflow-models-using-jmx}
+## Voorbeeld: workflowmodellen controleren met JMX {#example-monitoring-workflow-models-using-jmx}
 
 In dit voorbeeld geeft de MBean informatie over de CQ5-workflowmodellen die in de opslagplaats zijn opgeslagen. Een MBean managerklasse leidt tot MBans die op de modellen van het Werkschema wordt gebaseerd die in de bewaarplaats worden opgeslagen en hun dienst OSGi bij runtime registreert. Dit voorbeeld bestaat uit één bundel die de volgende leden bevat:
 
 * WorkflowMBean: De beheerinterface.
 * WorkflowMBeanImpl: De implementatieklasse MBean.
 * WorkflowMBeanManager: De interface van de MBean managerklasse.
-* WorkflowMBeanManagerImpl: De implementatieklasse van de MBean manager.
+* WorkflowMBeanManagerImpl: De implementatieklasse van de MBean-manager.
 
 **Opmerking:** Voor de eenvoud voert de code in dit voorbeeld geen logboekregistratie uit of reageert op gegenereerde uitzonderingen.
 
@@ -276,13 +274,14 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 
 De dienst WorkflowMBeanManager omvat de methode van de componentenactivering die tot de diensten WorkflowMBean leidt. De de dienstimplementatie omvat de volgende methodes:
 
-* activeren: De componentactivator. Maakt de JCR-sessie voor het lezen van Workflowmodel-configuratieknooppunten. Het basisknooppunt waar modelconfiguraties worden opgeslagen, wordt gedefinieerd in een statisch veld. De naam van het configuratieknooppunt wordt ook gedefinieerd in een statisch veld. Deze methode roept andere methodes die de wegen van het knoopmodel verkrijgen en modelWorkflowMBans creëren.
-* getModelIds: Doorloopt de repository onder het basisknooppunt en haalt het pad van elk modelknooppunt op.
+* activeren: de componentactivator. Maakt de JCR-sessie voor het lezen van Workflowmodel-configuratieknooppunten. Het basisknooppunt waar modelconfiguraties worden opgeslagen, wordt gedefinieerd in een statisch veld. De naam van het configuratieknooppunt wordt ook gedefinieerd in een statisch veld. Deze methode roept andere methodes die de wegen van het knoopmodel verkrijgen en modelWorkflowMBans creëren.
+* getModelIds: doorloopt de gegevensopslagruimte onder het hoofdknooppunt en haalt het pad van elk modelknooppunt op.
 * makeMBean: Gebruikt de modelweg om een voorwerp te creëren WorkflowModel, creeert een WorkflowMBean voor het, en registreert zijn dienst OSGi.
 
 >[!NOTE]
 >
 >De implementatie WorkflowMBeanManager leidt slechts tot de diensten MBean voor modelconfiguraties die bestaan wanneer de component wordt geactiveerd. Een robuustere implementatie luistert naar opslagplaatsgebeurtenissen met betrekking tot nieuwe modelconfiguraties en wijzigingen of verwijderingen van bestaande modelconfiguratie. Wanneer een verandering voorkomt, kan de manager, de overeenkomstige dienst creëren wijzigen of verwijderen WorkflowMBean.
+>
 
 #### WorkflowMBeanManager Interface {#workflowmbeanmanager-interface}
 
@@ -425,9 +424,9 @@ Voor uw gemak, kunt u de volgende code van XML in uw project pom.xml- dossier ko
 
 **Insteekmodules:**
 
-* Apache Maven Compiler Plugin: Compileert Java-klassen uit broncode.
-* Apache Felix Maven Bundle Plugin: Maakt de bundel en het manifest
-* Apache Felix Maven SCR-insteekmodule: Creeert het dossier van de componentenbeschrijver en vormt de dienst-component duidelijke kopbal.
+* Apache Maven Compiler Plugin: compileert Java-klassen uit broncode.
+* Apache Felix Maven Bundle Plugin: maakt de bundel en het manifest
+* Apache Felix Maven SCR Insteekmodule: Creeert het dossier van de componentenbeschrijver en vormt de dienst-component duidelijke kopbal.
 
 **Opmerking:** Op het moment dat u schrijft, is de gemeten scr-insteekmodule niet compatibel met de m2e-insteekmodule voor Eclipse. (Zie [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Om winde van de Verduistering te gebruiken, installeer Geweven en gebruik de interface van de bevellijn om bouwstijlen uit te voeren.
 
@@ -542,7 +541,7 @@ Voor uw gemak, kunt u de volgende code van XML in uw project pom.xml- dossier ko
 </project>
 ```
 
-Voeg het volgende profiel toe aan het instellingenbestand van uw afbeelding om de openbare opslagplaats voor Adobe te gebruiken.
+Voeg het volgende profiel toe aan het instellingenbestand van uw image om de opslagplaats voor openbare Adoben te gebruiken.
 
 #### Geweven profiel {#maven-profile}
 

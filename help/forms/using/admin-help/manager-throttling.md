@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 1f765de2-1362-4318-9302-c5036e6fa7d6
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1021'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
  <tbody>
   <tr>
    <td><code> adobe.work-manager.queue-refill-interval</code></td>
-   <td><p>Geeft het tijdinterval, in milliseconden, aan dat de Manager van het Werk gebruikt wanneer het controleren op nieuwe punten in zijn rij.</p><p>De waarde voor deze optie is een geheel getal. De standaardwaarde is <code>1000</code> milliseconden (1 seconde). </p><p>Als het volume van asynchrone aanroepen laag is, kunt u deze waarde verhogen. U kunt de waarde bijvoorbeeld verhogen naar een waarde tussen 2000 en 5000 (2 tot 5 seconden). </p><p>Als het volume van asynchrone aanroepen hoog is, zou de standaardwaarde voldoende moeten zijn, maar u kunt een lagere waarde gebruiken indien nodig. Als u deze waarde te veel verlaagt (bijvoorbeeld tot minder dan 50, wat resulteert in een opiniepeilingsfrequentie van 20 keer per seconde), veroorzaakt dit een aanzienlijke overhead op het systeem.</p></td>
+   <td><p>Geeft het tijdinterval, in milliseconden, aan dat de Manager van het Werk gebruikt wanneer het controleren op nieuwe punten in zijn rij.</p><p>De waarde voor deze optie is een geheel getal. De standaardwaarde is <code>1000</code> milliseconden (1 seconde). </p><p>Als het volume van asynchrone aanroepen laag is, kunt u deze waarde verhogen. U kunt de waarde bijvoorbeeld verhogen naar een waarde tussen 2000 en 5000 (2-5 seconden). </p><p>Als het volume van asynchrone aanroepen hoog is, zou de standaardwaarde voldoende moeten zijn, maar u kunt een lagere waarde gebruiken indien nodig. Als u deze waarde te veel verlaagt (bijvoorbeeld tot minder dan 50, wat resulteert in een opiniepeilingsfrequentie van 20 keer per seconde), veroorzaakt dit een aanzienlijke overhead op het systeem.</p></td>
   </tr>
   <tr>
    <td><code> adobe.workmanager.debug-mode-enabled</code></td>

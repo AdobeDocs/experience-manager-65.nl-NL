@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
 workflow-type: tm+mt
-source-wordcount: '4774'
+source-wordcount: '4848'
 ht-degree: 0%
 
 ---
@@ -715,7 +715,28 @@ Om het in cache plaatsen van persistente query&#39;s in te schakelen, definieert
 
 >[!NOTE]
 >
->Als u zich aan de [Vereisten van de verzender voor documenten die in cache kunnen worden geplaatst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), voegt de Dispatcher het achtervoegsel toe `.json` aan alle persisted query-URL&#39;s, zodat het resultaat in de cache kan worden opgeslagen.
+>Wanneer het cachegeheugen van de Verzender voor voortgezette vragen door te gebruiken wordt toegelaten `Define CACHE_GRAPHQL_PERSISTED_QUERIES` een `ETag` wordt toegevoegd aan de reactie van de Dispatcher.
+>
+>Standaard worden de `ETag` header is geconfigureerd met de volgende instructie:
+>
+>```
+>FileETag MTime Size 
+>```
+>
+>Nochtans, kan dit het plaatsen problemen veroorzaken wanneer gebruikt op de voortgezette vraagreacties, omdat het geen rekening voor kleine veranderingen in de reactie houdt.
+>
+>Om individuele `ETag` berekeningen *elk* unieke reactie `FileETag Digest` instelling moet worden gebruikt in de configuratie van de verzender:
+>
+>```xml
+><Directory />    
+>   ...    
+>   FileETag Digest
+></Directory> 
+>```
+
+>[!NOTE]
+>
+>Als u zich aan de [Vereisten van de verzender voor documenten die in cache kunnen worden geplaatst](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/troubleshooting/dispatcher-faq.html#how-does-the-dispatcher-return-documents%3F), voegt de Dispatcher het achtervoegsel toe `.json` aan alle voortgezette vraag URLs, zodat het resultaat in het voorgeheugen kan worden opgeslagen.
 >
 >Dit achtervoegsel wordt toegevoegd door herschrijft regel, zodra het voortbestaan vraagcaching wordt toegelaten.
 

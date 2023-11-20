@@ -7,10 +7,10 @@ breadcrumb-title: Opmerkingen bij de release
 user-guide-description: Meer informatie over de nieuwste functies in AEM 6.5 in de opmerkingen bij de release.
 feature: Release Information
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-source-git-commit: f618dbaafbbcd1511ea2a678db398b4bcbfda366
+source-git-commit: f6069758853181f96376a77da8d46cc5228b9605
 workflow-type: tm+mt
-source-wordcount: '71'
-ht-degree: 26%
+source-wordcount: '76'
+ht-degree: 25%
 
 ---
 
@@ -41,5 +41,6 @@ ht-degree: 26%
    + [6.5.0](previous/ga.md)
 + [Installatie-instructies voor AEM Forms-servicepack](aem-forms-current-service-pack-installation-instructions.md)
 + [AEM Forms JEE-patch installeren](jee-patch-installer-65.md)
++ [AEM Forms Service Pack Hotfix](/help/release-notes/aem-forms-hotfix.md)
 + [Verouderde en verwijderde functies](deprecated-removed-features.md)
 + [Status van Touch UI-functie](touch-ui-features-status.md)

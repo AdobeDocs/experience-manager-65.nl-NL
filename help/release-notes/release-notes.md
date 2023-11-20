@@ -2,9 +2,9 @@
 title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
-source-git-commit: 31131af52ecb4f9c4caaf8e75e0a9213874b3a1e
+source-git-commit: c78d5f1d94ffb92a1e034b0ccb6131ac811d708f
 workflow-type: tm+mt
-source-wordcount: '3535'
+source-wordcount: '3506'
 ht-degree: 0%
 
 ---
@@ -462,17 +462,13 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 
 * Wanneer een adaptief formulier wordt gepubliceerd, worden alle afhankelijkheden, inclusief het beleid, opnieuw gepubliceerd, zelfs als er geen wijzigingen in zijn aangebracht. (FORMS-10454)
 * Wanneer een gebruiker een veld voor het eerst in een adaptief formulier configureert, wordt de optie voor het opslaan van een configuratie niet weergegeven in de eigenschappenbrowser. Als u een ander veld van het adaptieve formulier in dezelfde editor selecteert, wordt het probleem opgelost.
-* Wanneer een omleidings-URL wordt ingesteld in de hulplijncontainer van een adaptief formulier, werkt de inlinehandtekening niet meer. (FORMS-10493)
-* Niet alle Document of Record (DoR)-sjablonen publiceren. Alleen Engelse, op landinstellingen gebaseerde DoR-sjablonen en de bijbehorende op Forms gebaseerde DoR-sjablonen worden gepubliceerd. (FORMS-10535)
+* Wanneer een omleidings-URL wordt ingesteld in de hulplijncontainer van een adaptief formulier, werkt de inlinehandtekening niet meer. (FORMS-10493) Download en installeer de [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Niet alle Document of Record (DoR)-sjablonen publiceren. Alleen Engelstalige, op landinstellingen gebaseerde DoR-sjablonen en de bijbehorende, op Forms gebaseerde DoR-sjablonen worden gepubliceerd. (FORMS-10535) Download en installeer de [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+
 
 #### Interactieve communicatie
 
-* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om de Interactieve Communicatie met grote gealigneerde beelden op Edit wijze te openen. (FORMS-10578) Voer de volgende stappen uit om het probleem op te lossen:
-
-   1. Downloaden [Hotfix-FORMS-10578](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html) via SD-koppeling.
-   1. Extraheer het Hotfix-archiefbestand zodat u een Experience Manager-pakket (.zip) en -bundelbestanden (.jar) kunt verkrijgen.
-   1. Upload en installeer het pakket (.zip) via Package Manager.
-   1. De configuratiemanager-bundels openen `https://server:host/system/console/bundles`, uploadt en installeert de bundel (.jar).
+* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om de Interactieve Communicatie met grote gealigneerde beelden op Edit wijze te openen. (FORMS-10578) Download en installeer de [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

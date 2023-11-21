@@ -4,9 +4,9 @@ description: Leer hoe u inhoud voorbereidt voor vertaling in Adobe Experience Ma
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '683'
+source-wordcount: '684'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ De voorbeeldsite voor demo-demo bevat verschillende taalvertakkingen en gebruikt
              |- zh
 ```
 
-Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/geometrixx/fr` Dit is de hoofdtaalkennis van de Franse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](/help/sites-administering/tc-prep.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van een bronsite worden uitgevoerd.
+Elke taalvertakking van een site wordt een taalkopie genoemd. De hoofdpagina van een taalkopie, ook wel de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: `/content/geometrixx/fr` Dit is de hoofdtaalkennis van de Franse taalkopie. Taalkopieën moeten een [correct gevormde taalwortel](/help/sites-administering/tc-prep.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van een bronsite worden uitgevoerd.
 
 De taalkopie waarvoor u oorspronkelijk site-inhoud hebt gemaakt, is de hoofdtaal. De taalmaster is de bron die in andere talen wordt vertaald.
 

@@ -5,9 +5,9 @@ contentOwner: AG
 role: User, Admin
 feature: Projects
 exl-id: eee768e3-3eb4-46fa-b9ae-9ef8764a3a94
-source-git-commit: bb46b0301c61c07a8967d285ad7977514efbe7ab
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '429'
+source-wordcount: '430'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags i
 
 In [!DNL Adobe Experience Manager Assets]Meertalige middelen worden opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
-Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdmap van de taal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: */content/dam/it* is de Italiaanse taalbasis voor de Italiaanse taalkopie. Taalkopieën moeten een [correct geconfigureerde taalhoofdmap](preparing-assets-for-translation.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van bronelementen worden uitgevoerd.
+Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: */content/dam/it* is de Italiaanse taalbasis voor de Italiaanse taalkopie. Taalkopieën moeten een [correct gevormde taalwortel](preparing-assets-for-translation.md#creating-a-language-root) zodat de juiste taal wordt gebruikt wanneer vertalingen van bronelementen worden uitgevoerd.
 
 De taalkopie waarvoor u oorspronkelijk elementen toevoegt, is de primaire taal. De primaire taal is de bron die in andere talen wordt vertaald. Een voorbeeld van een maphiërarchie bevat verschillende taalwortels:
 
@@ -43,7 +43,7 @@ Voer de volgende stappen uit om uw middelen voor vertaling voor te bereiden:
 
 ## Een hoofdmap voor talen maken {#creating-a-language-root}
 
-Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-taalcode als waarde voor de eigenschap Naam. Nadat u de hoofdtaal hebt gemaakt, kunt u op elk niveau in de hoofdmap van de taal een kopie van de taal maken.
+Als u de hoofdmap van de taal wilt maken, maakt u een map en gebruikt u een ISO-taalcode als waarde voor de eigenschap Naam. Nadat u de hoofdmap van de taal hebt gemaakt, kunt u op elk niveau in de hoofdmap van de taal een kopie van de taal maken.
 
 De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bijvoorbeeld `it` als de eigenschap Name. Het bezit van de Naam wordt gebruikt als naam van de activaknoop in de bewaarplaats, en bepaalt daarom de weg van de activa. (`https://[aem_server]:[port]/assets.html/content/dam/it/`).
 
@@ -55,7 +55,7 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
    ![Taalcode toevoegen in map](assets/Add-language-code-in-folder.png)
 
-1. Klik op **[!UICONTROL Create]**. De hoofdmap van de taal wordt gemaakt in het dialoogvenster [!DNL Assets] console.
+1. Klik op **[!UICONTROL Create]**. De taalhoofdmap wordt gemaakt in het dialoogvenster [!DNL Assets] console.
 
 ## Taalwortels weergeven {#viewing-language-roots}
 

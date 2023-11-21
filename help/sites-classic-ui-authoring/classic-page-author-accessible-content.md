@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '9152'
+source-wordcount: '9151'
 ht-degree: 6%
 
 ---
@@ -606,7 +606,7 @@ Wanneer kleur wordt gebruikt als een actiepunt om informatie te verschaffen, moe
 * Contrast (Minimum): de visuele presentatie van tekst en afbeeldingen van tekst heeft een contrastverhouding van ten minste 4,5:1, behalve voor de volgende:
 
    * Grote tekst: tekst op grote schaal en afbeeldingen van grote tekst hebben een contrastverhouding van ten minste 3:1.
-   * Incidental: voor tekst of afbeeldingen van tekst die deel uitmaken van een niet-actieve gebruikersinterface-component, die uitsluitend versiering zijn, die voor niemand zichtbaar zijn of die deel uitmaken van een afbeelding die belangrijke andere visuele inhoud bevat, is geen contrast vereist.
+   * Incidenteel - Voor tekst of afbeeldingen van tekst die deel uitmaken van een niet-actieve gebruikersinterfacecomponent die voor iedereen zuiver decoratief zijn of niet zichtbaar zijn, of die deel uitmaken van een afbeelding die belangrijke andere visuele inhoud bevat, is geen contrast vereist.
    * Logotypes: tekst die deel uitmaakt van een logo of merknaam, heeft geen minimumvereiste voor contrast.
 
 #### Doel - Contrast (minimaal) (1.4.3) {#purpose-contrast-minimum}

@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 feature: Context Hub
 exl-id: b472d96f-b1a5-40b7-be2a-52f3396f6884
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
 workflow-type: tm+mt
-source-wordcount: '5002'
+source-wordcount: '5004'
 ht-degree: 0%
 
 ---
@@ -248,7 +248,7 @@ Hiermee wordt de gegevensstructuur uit de opslagruimte opgehaald. Naar keuze kun
 
 **Parameters**
 
-* `includeInternals:` Een waarde van `true` neemt intern-gebruikte sleutel/waardeparen in de resultaten op. De sleutels van deze gegevens beginnen met het onderstrepingsteken (&quot;_&quot;) karakter. De standaardwaarde is `false`.
+* `includeInternals:` Een waarde van `true` neemt intern gebruikte sleutel/waardeparen in de resultaten op. De sleutels van deze gegevens beginnen met het onderstrepingsteken (&quot;_&quot;) karakter. De standaardwaarde is `false`.
 
 **Retourneert**
 

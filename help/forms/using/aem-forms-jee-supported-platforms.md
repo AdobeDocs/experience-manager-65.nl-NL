@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/jee
 docset: aem65
 role: Admin
 exl-id: 74d22cf4-56b2-48f5-92d9-928eaa134866
-source-git-commit: b886336b5a66f16eb7b076aefc2ae326dedb2f52
+source-git-commit: 7ac81860e127f47aecfd948ddda34241627f457c
 workflow-type: tm+mt
-source-wordcount: '3695'
+source-wordcount: '3973'
 ht-degree: 0%
 
 ---
@@ -36,6 +36,22 @@ In dit document worden de ondersteunde client- en serverplatforms voor AEM Forms
 >
 >- Voor een volledige lijst met uitzonderingen op ondersteunde serverplatforms raadpleegt u [Uitzonderingen op ondersteunde serverplatforms](../../forms/using/aem-forms-jee-supported-platforms.md#p-exceptions-to-supported-server-platforms-p).
 >- AEM Forms on JEE biedt alleen ondersteuning voor Engelse, Franse, Duitse en Japanse versies van de ondersteunde besturingssystemen en toepassingen.
+
+### Beleid voor upgrades en ondersteuning
+
+#### Volledig installatieprogramma
+
+- **Upgrade-ondersteuning voor volledige installatieprogramma&#39;s**: Een volledig installatieprogramma wordt vrijgegeven bij elke 6e AEM Service Pack Release. Er is bijvoorbeeld een volledig installatieprogramma uitgebracht met 6.5.12.0 en 6.5.18.0 SP-releases. AEM Forms staat rechtstreekse upgrades uitsluitend toe vanaf de laatste twee volledige installatieprogramma&#39;s. AEM Forms maakt bijvoorbeeld alleen directe upgrades naar versie 6.5.18.0 mogelijk vanaf de laatste twee volledige installatieprogramma&#39;s, namelijk 6.5.12.0 en 6.5.6.0. Als u van een vroegere verbetering moet bevorderen, kunt u een multi-hop verbetering gebruiken om eerst naar een gesteunde volledige installateursversie en dan aan de recentste versie te gaan.
+
+- **Verdringing en verwijdering**: De platformondersteuning wordt bijgewerkt met elke volledige installerrelease. Alle software die tijdens een volledige installateursrelease in de platformmatrix is afgekeurd, mag in een volgende volledige installateursrelease uit de ondersteunde platformmatrix worden verwijderd, wat het einde van de ondersteuning voor de software aangeeft.
+
+#### Servicepacks
+
+- **Service Pack-dekking**: Adobe biedt technische ondersteuning voor AEM Forms-omgevingen met behulp van de nieuwste zes servicepacks. Als uw huidige versie de laatste zes de dienstpakken voorafgaat, adviseert de Adobe sterk bevordering aan de recentste versie voor optimale prestaties, veiligheid, en ononderbroken steun.
+
+- **Richtlijnen voor patchinstallatieprogramma**: Wanneer u de patchinstallatieprogramma&#39;s gebruikt om bij te werken, is het van cruciaal belang om te controleren of de onderliggende volledige installateursversie niet meer dan twee versies oud is. Zorg er bijvoorbeeld tijdens de installatie van servicepack 6.5.19.0 voor dat de onderliggende versie van het volledige installatieprogramma 6.5.18.0 of 6.5.12.0 is.
+
+- **Ondersteuning voor patchupgrade**: U kunt een upgrade uitvoeren naar het nieuwste servicepakket totdat u ook een upgrade uitvoert naar de meest recente ondersteunde platforms. Bijvoorbeeld, is het bevorderen van de dienstpak 6.5.12.0 aan 6.5.19.0 mogelijk, op voorwaarde dat u naar een platformcombinatie overgaat die voor 6.5.19.0 wordt gesteund.
 
 ### Aanbevolen configuraties {#recommendedconfigurations}
 

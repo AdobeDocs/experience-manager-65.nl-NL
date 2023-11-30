@@ -2,9 +2,9 @@
 title: Vervangen en verwijderde functies in Adobe Experience Manager 6.5-release.
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.5.
 exl-id: d9b6140a-c37d-4b90-a60c-01f471d65621
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: bbd18486a77d7b46454aacff23147b38860bd895
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1736'
 ht-degree: 2%
 
 ---
@@ -31,6 +31,7 @@ Klanten wordt aangeraden na te gaan of zij de functie/functionaliteit in hun hui
 
 | Gebied | Functie | Vervanging | Versie (SP) |
 |---|---|---|---|
+| Sites | De **Adobe AEM beheerde opiniepeilingconfiguratie** service: `com.day.cq.polling.importer.impl.ManagedPollConfigImpl` | De **Adobe AEM Analytics Report Sling Importer** service. Zie Verbinding maken met Adobe Analytics en Frameworks maken - [Het Interval van de Invoer vormen](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval) | 6.5.19.0 |
 | Schermen | ActiveMQ in AEM. ActiveMQ is gebruikt voor communicatie tussen twee AEM Publish-instanties. | Adobe raadt klanten aan een taakverdelingsmechanisme te gebruiken. |  |
 | [!DNL Sites] | Eigenschappen van Experience Fragments voor **Status van sociale media**. |   | 6.5.11.0 |
 | [!DNL Sites] | Inhoudsfragmentsjablonen voor het maken van eenvoudige inhoudsfragmenten. | [Op modellen gebaseerde gestructureerde inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md) nu. | 6.5.11.0 |

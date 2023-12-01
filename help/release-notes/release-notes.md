@@ -3,9 +3,9 @@ title: Opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: Zoek naar releasegegevens, wat is nieuw, installeer hoe kan worden gewijzigd en een gedetailleerde wijzigingslijst voor [!DNL Adobe Experience Manager] 6.5
 mini-toc-levels: 4
 exl-id: cac14ac1-9cda-46ae-8aa3-94674bb79157
-source-git-commit: 8d06457241919095fd9802f69df426a1cc6851da
+source-git-commit: f8f82ad5805095f331432471b614225f761e645c
 workflow-type: tm+mt
-source-wordcount: '3647'
+source-wordcount: '3502'
 ht-degree: 0%
 
 ---
@@ -38,23 +38,12 @@ ht-degree: 0%
 
 * _REVIEWERS: WHAT ARE THE KEY FEATURES AND ENHANCEMENTS YOU WANT TO HIGHLIGHT IN THIS RELEASE?_ -->
 
+**Belangrijke functies en verbeteringen**
+
 Enkele belangrijke functies en verbeteringen in deze release zijn onder andere:
 
-**Belangrijkste kenmerken**
-
-* Middelen, Dynamic Media - [Ondersteuning voor multi-subtitle en multi-audiotrack voor video&#39;s in Dynamic Media](/help/assets/video.md#about-msma)—U kunt nu eenvoudig meerdere ondertitels en meerdere audiotracks toevoegen aan een primaire video. Dit betekent dat uw video&#39;s toegankelijk zijn voor een breed publiek. U kunt één gepubliceerde primaire video aanpassen aan een wereldwijd publiek in meerdere talen en de richtlijnen voor toegankelijkheid voor verschillende geografische regio&#39;s naleven. Auteurs kunnen de ondertitels en audiotracks ook beheren vanaf één tabblad in de gebruikersinterface.
-
-* Middelen - Vanuit de zoekresultaten kunt u nu naar de maplocatie navigeren die een element bevat waarmee u verschillende taken voor middelenbeheer kunt uitvoeren. (ACTIVA-23182)
-
-**Belangrijke verbeteringen**
-
-* De Plukker van Polaris van Plaatsen in de Fragmenten van de Inhoud heeft betere prestaties. (SITES-14092)
-
 * Gebruikers van de Pagina-editor/afbeeldingscomponent van Sites konden naar elementen van de Cloud Service voor externe middelen verwijzen. (SITES-13448, SITES-13433)
-
-* Om snel een project in de mening van de Lijst te vinden, waar u vele projecten in uw systeem kunt hebben, steunt de Adobe nu server-zijhet sorteren. Projectknooppunten worden op de achtergrond gesorteerd op basis van de kolom die door de gebruiker is geselecteerd voordat ze in de gebruikersinterface worden weergegeven. (NPR-41027)
-
-* AEM 6.5.19.0 ondersteunt MongoDB 5.0 tot 6.0.
+* AEM ondersteunt nu sorteren op de server voor snellere projectnavigatie in de lijstweergave. Projectknooppunten worden gesorteerd op basis van de door de gebruiker geselecteerde kolom voordat ze in de interface worden weergegeven.
 
 **Verouderde functie**
 
@@ -292,7 +281,7 @@ Voor instructies voor het installeren van het servicepakket op Experience Manage
 
 >[!NOTE]
 >
->De functie Adaptive Forms is beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.corp.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is uitsluitend ontworpen voor exploratie en evaluatie. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
+>De functie Adaptive Forms is beschikbaar in [AEM 6.5 QuickStart](https://experienceleague.adobe.com/docs/experience-manager-65/deploying/deploying/deploy.html), is uitsluitend ontworpen voor exploratie en evaluatie. Voor productiegebruik is het van essentieel belang een geldige licentie voor AEM Forms te verkrijgen, aangezien voor de adaptieve Forms-functionaliteit een correcte licentie vereist is.
 
 ### GraphQL-indexpakket voor Experience Manager-inhoudsfragmenten installeren{#install-aem-graphql-index-add-on-package}
 
@@ -458,7 +447,7 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 
 #### Installeer het serverfragment (AEM Service Pack 6.5.14.0 of eerder)
 
-* Als u een upgrade uitvoert naar AEM Service Pack 6.5.15.0 of een hogere versie en uw AEM-exemplaar werkt op Tomcat 8.5.88, is het verplicht het servletfragment te installeren *voor* gaat u verder met de installatie van Service Pack 6.5.15.0 of een hogere versie.
+* Als u een upgrade uitvoert naar AEM Service Pack 6.5.15.0 of hoger en uw AEM-instantie werkt op Tomcat 8.5.88, is het verplicht het servletfragment te installeren *voor* u gaat verder met de installatie van Service Pack 6.5.15.0 of hoger.
 * Het is verplicht het servletfragment te installeren voor alle toepassingsservers behalve voor servers die op JBoss® EAP 7.4.0 worden uitgevoerd.
 
 **U installeert als volgt het servletfragment:**
@@ -484,7 +473,7 @@ Als u het probleem wilt oplossen, zoekt u de `<AEM_Forms_Installation_dir>\jboss
 
 #### Interactieve communicatie
 
-* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om de Interactieve Communicatie met grote gealigneerde beelden op Edit wijze te openen. (FORMS-10578) Download en installeer de [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
+* Na de bevordering aan AEM Service Pack 18, is het niet mogelijk om de Interactieve Communicatie met grote gealigneerde beelden op Edit wijze te openen. (FORMS-10578) Installeer de [hotfix voor 6.5.18.0](/help/release-notes/aem-forms-hotfix.md).
 
 ## OSGi-bundels en inhoudspakketten inbegrepen{#osgi-bundles-and-content-packages-included}
 

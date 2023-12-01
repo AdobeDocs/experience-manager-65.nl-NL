@@ -2,9 +2,9 @@
 title: Inhoudspagina's publiceren
 description: Leer hoe u pagina's met inhoud publiceert in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '1662'
+source-wordcount: '1660'
 ht-degree: 5%
 
 ---
@@ -60,7 +60,7 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
    * Als de pagina verwijzingen bevat die moeten worden gepubliceerd, worden deze weergegeven in het dialoogvenster **Publiceren** wizard, waarbij u:
 
-      * Geef op welke elementen/tags/enzovoort u samen met de pagina wilt publiceren en gebruik vervolgens **Publiceren** om het proces te voltooien.
+      * Geef op welke elementen of tags u samen met de pagina wilt publiceren en gebruik vervolgens **Publiceren** om het proces te voltooien.
 
       * Gebruiken **Annuleren** om de handeling af te breken.
 

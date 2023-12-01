@@ -4,7 +4,7 @@ description: Begrijp hoe de redacteur van het Fragment van de Inhoud markeringss
 feature: Content Fragments
 role: User
 exl-id: e4340828-fe16-4edf-94c9-b0b145740e74
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '522'
 ht-degree: 3%
@@ -31,7 +31,7 @@ U kunt het volgende definiëren:
 
 ## Kop {#heading-notation}
 
-Een koptekst maken door een hashtag (#) vóór de kop te plaatsen. Eén hashtag (#) wordt gebruikt voor een H1-, twee hash-tags (##) voor een H2-tag enzovoort. U kunt maximaal 6 hashtags gebruiken. Bijvoorbeeld:
+Een koptekst maken door een hashtag (#) vóór de kop te plaatsen. Eén hashtag (#) wordt gebruikt voor een H1-, twee hash-tags (##) voor een H2-tag, enzovoort. U kunt maximaal 6 hashtags gebruiken. Bijvoorbeeld:
 
     `## This is an H2`
 

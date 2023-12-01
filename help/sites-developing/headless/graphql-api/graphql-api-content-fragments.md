@@ -3,9 +3,9 @@ title: GraphQL API AEM voor gebruik met inhoudsfragmenten
 description: Leer hoe u inhoudsfragmenten in Adobe Experience Manager (AEM) kunt gebruiken met de AEM GraphQL API voor het leveren van inhoud zonder kop.
 feature: Content Fragments,GraphQL API
 exl-id: beae1f1f-0a76-4186-9e58-9cab8de4236d
-source-git-commit: 5bfd8216c9d3540ac6d795d434dab5afb7bce309
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '4848'
+source-wordcount: '4847'
 ht-degree: 0%
 
 ---
@@ -554,7 +554,7 @@ De sorteercriteria:
    * het eerste veld in de lijst definieert de primaire sorteervolgorde
       * het tweede veld wordt gebruikt als twee waarden van het primaire sorteercriterium gelijk zijn
       * het derde veld wordt gebruikt als de eerste twee criteria gelijk zijn , enzovoort .
-   * puntnotatie, d.w.z. veld1.subveld.subveld, enzovoort..
+   * puntnotatie, dat wil zeggen: `field1.subfield.subfield`, enzovoort.
 * met een optionele bestelrichting
    * ASC (oplopend) of DESC (aflopend); als standaard ASC wordt toegepast
    * de richting kan per gebied worden gespecificeerd; dit vermogen betekent dat u één gebied in stijgende orde kunt sorteren, een andere in dalende orde (naam, firstName DESC)

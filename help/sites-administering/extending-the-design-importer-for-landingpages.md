@@ -7,7 +7,7 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '3495'
 ht-degree: 0%
@@ -249,7 +249,7 @@ Ondersteunde eigenschappen
 * Doel-URL, ondersteunt derden en AEM URL
 * Renderopties voor pagina (zelfde venster, nieuw venster, enzovoort)
 
-HTML-tag om de component op te nemen, klikt u door de component in de geïmporteerde postcode. Hier ziet u hoe u URL&#39;s als doel instelt, &#39;Productdetails weergeven&#39; verwijst naar label enzovoort.
+HTML-tag om de component op te nemen, klikt u door de component in de geïmporteerde postcode. Hier ziet u hoe u URL&#39;s als doel instelt, &#39;Productdetails weergeven&#39; verwijst naar label, enzovoort.
 
 ```xml
 <div id="cqcanvas">
@@ -282,7 +282,7 @@ Ondersteunde eigenschappen
 * Doel-URL, ondersteunt derden en AEM URL
 * Renderopties voor pagina (zelfde venster, nieuw venster, enzovoort)
 
-HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zip. Hier wordt href toegewezen aan doel-URL, img src is de renderingafbeelding, &#39;title&#39; wordt gebruikt als aanwijstekst enzovoort.
+HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zip. Hier wordt href toegewezen aan doel-URL, img src is de renderafbeelding, &quot;titel&quot; wordt als aanwijstekst gebruikt, enzovoort.
 
 ```xml
 <div id="cqcanvas">

@@ -5,7 +5,7 @@ contentOwner: AG
 role: User, Admin
 feature: Asset Insights,Asset Reports
 exl-id: 80e8f84e-3235-4212-9dcd-6acdb9067893
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Voer deze stappen uit om Elementeninzichten door DTM toe te laten.
    >
    >* `AppMeasurement.js` wordt verwijderd. Naar verwachting is het beschikbaar via het Adobe Analytics-hulpprogramma van DTM.
    >* De oproep tot `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
-   >* Afhankelijk van de locatie waar Assets Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
+   >* Afhankelijk van de locatie waar Assets Insights Page Tracker wordt gehost (bijvoorbeeld Experience Manager, CDN, enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* In het geval van door Experience Managers gehoste paginanummering, moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzenderinstantie.
 
 1. Ga naar `https://dtm.adobe.com`. Klikken **[!UICONTROL Overview]** in de webeigenschap en klik op **[!UICONTROL Add Tool]** of open een bestaande Adobe Analytics Tool. Tijdens het maken van het gereedschap kunt u instellen **[!UICONTROL Configuration Method]** tot **[!UICONTROL Automatic]**.

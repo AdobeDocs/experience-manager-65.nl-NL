@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 4e83ed7b-3f48-4bf6-be4c-89f79949c1df
 docset: aem65
 exl-id: 674d28dc-7353-49de-9e12-b1998e1509c7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '295'
 ht-degree: 0%
@@ -51,7 +51,7 @@ De Rapportering van het proces verstrekt ook de optie om het rapport en vraaggeg
 
 Gebruik filters om een specifieke weergave van uw gegevens op te halen.
 
-U kunt processen of taken zoeken op ID, duur, begin- en einddatum, initiator van het proces enzovoort.
+U kunt processen of taken op identiteitskaart, duur, begin en einddata, procesinitiator, etc. zoeken.
 
 U kunt meerdere filters combineren om specifieke rapporten te maken.
 

@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: d7c5bb84-a988-4b2e-a587-f4e5b50fea58
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6218'
 ht-degree: 0%
@@ -101,7 +101,7 @@ In de configuratie XML die het Beheer van de Gebruiker uitvoert, de wortelknoop 
 
 Wanneer het gebruiken van Actieve Folder, is het belangrijk om te begrijpen dat een `objectSID` value is geen uniek kenmerk in meerdere domeinen. Met deze waarde wordt de beveiligings-id van een object opgeslagen. In een omgeving met meerdere domeinen (bijvoorbeeld een boomstructuur met domeinen) kan de instelling `objectSID` waarde kan verschillend zijn.
 
-An `objectSID` De waarde zou veranderen als een voorwerp van één Actief domein van de Folder aan een ander domein wordt bewogen. Sommige objecten hebben hetzelfde `objectSID` waarde overal in het domein. Bijvoorbeeld, zouden de groepen zoals de Beheerders van BUILTIN \, de Gebruikers van de Macht van BUILTIN \ etc. het zelfde hebben `objectSID` waarde ongeacht de domeinen. Deze `objectSID` de waarden zijn bekend .
+An `objectSID` De waarde zou veranderen als een voorwerp van één Actief domein van de Folder aan een ander domein wordt bewogen. Sommige objecten hebben hetzelfde `objectSID` waarde overal in het domein. Bijvoorbeeld, zouden de groepen zoals de Beheerders van BUILTIN \, de Gebruikers van de Macht van BUILTIN \, etc. het zelfde hebben `objectSID` waarde ongeacht de domeinen. Deze `objectSID` de waarden zijn bekend .
 
 ## Gebruikers toevoegen {#adding-users}
 
@@ -576,7 +576,7 @@ Om gebruikers, groepen, en domeinen programmatically te beheren gebruikend de Di
 
 1. Roep de juiste gebruikers- of groepsbewerkingen aan.
 
-   Als u een gebruiker of groep wilt zoeken, roept u een van de `DirectoryManagerServiceService` de methodes van objecten om hoofden (aangezien een hoofd een gebruiker of een groep kan zijn) te vinden. In het onderstaande voorbeeld wordt `findPrincipalsWithFilter` methode wordt aangeroepen met een zoekfilter (een `PrincipalSearchFilter` object). Wanneer u een `PrincipalSearchFilter` object, lokale hoofden worden alleen geretourneerd als de `isLocal` eigenschap is ingesteld op `true`. Dit gedrag is anders dan wat er zou gebeuren met de Java API.
+   Als u een gebruiker of groep wilt zoeken, roept u een van de `DirectoryManagerServiceService` de methodes van objecten om hoofden (aangezien een hoofd een gebruiker of een groep kan zijn) te vinden. In het onderstaande voorbeeld wordt `findPrincipalsWithFilter` methode wordt aangeroepen met een zoekfilter (een `PrincipalSearchFilter` object). Wanneer u een `PrincipalSearchFilter` object, lokale hoofden worden alleen geretourneerd als de `isLocal` eigenschap is ingesteld op `true`. Dit gedrag verschilt van wat er zou gebeuren met de Java API.
 
    >[!NOTE]
    >

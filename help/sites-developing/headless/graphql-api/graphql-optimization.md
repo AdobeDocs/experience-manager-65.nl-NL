@@ -2,7 +2,7 @@
 title: GraphQL-query's optimaliseren
 description: Leer hoe u uw GraphQL-query's kunt optimaliseren tijdens het filteren, pagineren en sorteren van uw Content Fragments in Adobe Experience Manager as a Cloud Service voor levering van inhoud zonder kop.
 exl-id: 47d0570b-224e-4109-b94e-ccc369d7ac5f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '1965'
 ht-degree: 0%
@@ -315,7 +315,7 @@ Er zijn verschillende andere situaties waarin een filterexpressie niet op het JC
 
 ### Nesten van inhoudsfragmenten minimaliseren {#minimize-content-fragment-nesting}
 
-Het nesten van Inhoudsfragmenten is een uitstekende manier om aangepaste inhoudsstructuren te modelleren. U kunt zelfs een fragment hebben met een genest fragment dat een genest fragment bevat, dat... enzovoort heeft.
+Het nesten van Inhoudsfragmenten is een uitstekende manier om aangepaste inhoudsstructuren te modelleren. U kunt zelfs een fragment hebben met een genest fragment dat een genest fragment bevat, dat... heeft enzovoort.
 
 Als u echter een structuur met te veel niveaus maakt, kunnen de verwerkingstijden voor een GraphQL-query toenemen, aangezien GraphQL de volledige hiërarchie van alle geneste Content Fragments moet doorlopen.
 

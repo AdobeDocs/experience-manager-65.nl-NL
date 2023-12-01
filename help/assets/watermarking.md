@@ -6,7 +6,7 @@ role: User, Admin
 feature: Asset Management
 exl-id: bc0cfb0e-3f70-4377-8831-326a7cae73bd
 hide: true
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 1%
@@ -45,7 +45,7 @@ Als u een watermerk wilt toepassen op elementen, voegt u de stap Watermerken toe
    *Afbeelding: geef de argumenten op in de stap Watermerk toevoegen in [!DNL Assets].*
 
 1. Sla de **[!UICONTROL DAM Update Asset]** workflow met het watermerk.
-1. Van de [!DNL Assets] -gebruikersinterface, uploadt u een voorbeeldelement. Het watermerk wordt weergegeven met de tekengrootte, de kleur enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
+1. Van de [!DNL Assets] -gebruikersinterface, uploadt u een voorbeeldelement. Het watermerk wordt weergegeven met de tekengrootte, kleur, enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
 
 Als u PDF-documenten met watermerk programmatisch of met dynamische informatie wilt gebruiken, kunt u [Experience Manager Document Services](/help/forms/using/overview-aem-document-services.md) aanbieden.
 

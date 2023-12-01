@@ -7,7 +7,7 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: b5f3d3a6-39c0-4aa5-8562-3cc6fa2b9e46
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '6087'
 ht-degree: 0%
@@ -106,7 +106,7 @@ De portlet kan met de volgende voorkeur worden gevormd:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dit is het beginpad van de portlet: het definieert de inhoud die in eerste instantie wordt weergegeven.</p> <p><strong>Belangrijk</strong>: Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan lopen<strong> /</strong>, moet u de kracht inschakelen <strong>CQUrlInfo</strong> in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.</p> </td>
+   <td><p>Dit is het beginpad van de portlet: het definieert de inhoud die in eerste instantie wordt weergegeven.</p> <p><strong>Belangrijk</strong>: Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend van lopen<strong> /</strong>, moet u de kracht inschakelen <strong>CQUrlInfo</strong> in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -149,7 +149,7 @@ Open de **Configuraties** en selecteert u **Configuratie CQ-server voor poortmap
 
 Om geautomatiseerde plaatsingen en configuratielevering te steunen, heeft AEM inhoudsplet ingebouwde configuratiesteun die probeert om configuraties van klassenpad te lezen die aan de portlettoepassing wordt verstrekt.
 
-Bij het opstarten, het systeembezit **com.day.cq.portet.config** wordt gelezen om de huidige omgeving te detecteren. Gewoonlijk is de waarde van deze eigenschap iets als **dev**, **prod**, **test** enzovoort. Als er geen omgeving is ingesteld, worden er geen configuraties gelezen.
+Bij het opstarten, het systeembezit **com.day.cq.portet.config** wordt gelezen om de huidige omgeving te detecteren. Gewoonlijk is de waarde van deze eigenschap iets als **dev**, **prod**, **test**, enzovoort. Als er geen omgeving is ingesteld, worden er geen configuraties gelezen.
 
 Als een milieu wordt geplaatst, wordt een configuratiedossier gezocht in classpath bij* ***com/day/cq/portlet/{env}.config** waar **env** wordt vervangen door de werkelijke waarde voor het milieu. In dit bestand moeten alle configuratiebestanden voor deze omgeving worden vermeld. Deze bestanden worden gezocht op basis van de locatie van het configuratiebestand. Als het bestand bijvoorbeeld een regel bevat `my.service.xml,` dit bestand wordt gelezen vanuit het klassepad op `com/day/cq/portlet/my.service.config.` De naam van het bestand bestaat uit de persistentie-id van de service, gevolgd door **.config**. In het vorige voorbeeld is de persistentie-id **my.service**. De indeling van het configuratiebestand is de indeling die wordt gebruikt door het installatieprogramma van Apache Sling OSGi.
 
@@ -501,7 +501,7 @@ In de HTML kunt u de volgende plaatsaanduidingen gebruiken, die door de portlet 
 
 | Tekenreeks voor plaatsaanduiding | Beschrijving |
 |---|---|
-| {name} | Naam van de knop, bijvoorbeeld* auteur, back, refresh** enzovoort. |
+| {name} | Naam van de knop, bijvoorbeeld **auteur, back, refresh**, enzovoort. |
 | {id} | CSS-id van de knop. |
 | {url} | URL voor het doel van de knop. |
 | {text} | Label van de knop. |
@@ -762,7 +762,7 @@ Om portlet te vormen:
 
    >[!NOTE]
    >
-   >Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan** /** lopen, moet u de macht toelaten **CQUrlInfo** in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.
+   >Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend van lopen **/**, moet u de kracht inschakelen **CQUrlInfo** in de HTML Library Manager-configuratie van deze AEM-instanties (bijvoorbeeld via Felix Webconsole) of bewerkingen werken niet en wordt het dialoogvenster met voorkeuren niet weergegeven.
 
 1. Sla de configuratiewijzigingen op in de toepassingsserver.
 

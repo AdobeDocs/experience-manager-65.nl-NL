@@ -7,9 +7,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: page-authoring
 content-type: reference
 exl-id: 01c69aa9-2623-42dc-9e2d-62bc5e01cf0e
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '9151'
+source-wordcount: '9148'
 ht-degree: 6%
 
 ---
@@ -577,15 +577,15 @@ Zorg er bijvoorbeeld voor dat informatie die door kleur wordt verschaft, ook exp
    <td><p><strong>Beschikbaarheid</strong></p> </td>
   </tr>
   <tr>
-   <td><p>Dinsdag 16 maart<sup>th</sup></p> </td>
+   <td><p>Dinsdag 16 maart</p> </td>
    <td><p>BESCHIKBARE ZITPLAATSEN</p> </td>
   </tr>
   <tr>
-   <td><p>Woensdag 17 maart<sup>th</p> </td>
+   <td><p>Woensdag 17 maart</p> </td>
    <td><p>BESCHIKBARE ZITPLAATSEN</p> </td>
   </tr>
   <tr>
-   <td><p>Donderdag 18 maart<sup>th</sup></p> </td>
+   <td><p>Donderdag 18 maart</p> </td>
    <td><p>VERKOCHT</p> </td>
   </tr>
  </tbody>

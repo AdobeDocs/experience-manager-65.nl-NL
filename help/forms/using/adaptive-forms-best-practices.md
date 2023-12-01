@@ -5,7 +5,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: author
 feature: Adaptive Forms
 exl-id: 5c75ce70-983e-4431-a13f-2c4c219e8dde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 0%
@@ -257,7 +257,7 @@ Een recorddocument (DoR) is een afgevlakte PDF-versie van een adaptief formulier
    * **XSD-schema**: Gebruik de bijbehorende XFA-sjabloon die hetzelfde XML-schema gebruikt als het adaptieve formulier.
    * **Geen**: Automatisch gegenereerde doR gebruiken.
 
-* Configureer kop-, voettekst-, afbeeldingen, kleur-, lettertype- en dergelijke rechts op het tabblad Document of Record van de adaptieve formuliereditor.
+* Configureer kop-, voettekst-, afbeeldingen, kleur-, lettertype-, enzovoort, rechts van het tabblad Document of Record van de adaptieve formuliereditor.
 * Gebruiken `DoRService` om DoR programmatically te produceren.
 * Verborgen velden uitsluiten van de DoR.
 * Gebruiken `afAcceptLang` request parameter to view DoR in another locale.

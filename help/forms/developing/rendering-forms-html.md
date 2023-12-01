@@ -12,7 +12,7 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '4143'
 ht-degree: 0%
@@ -83,7 +83,7 @@ U moet expliciet van deelvenster naar deelvenster gaan met de opdracht `xfa.host
 
 Een auteur van een formulier geeft aan of een script op de server of de client wordt uitgevoerd. De Forms-service maakt een gedistribueerde, gebeurtenisverwerkingsomgeving voor de uitvoering van formulierintelligentie die tussen de client en de server kan worden gedistribueerd met behulp van de `runAt` kenmerk. Voor informatie over dit kenmerk of het maken van scripts in formulierontwerpen raadpleegt u [Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-De Forms-service kan scripts uitvoeren terwijl het formulier wordt gegenereerd. Hierdoor kunt u een formulier vooraf invullen met gegevens door verbinding te maken met een database of met webservices die mogelijk niet beschikbaar zijn op de client. U kunt ook de knoppen instellen `Click` gebeurtenis die op de server moet worden uitgevoerd zodat de client gegevens voor retournering naar de server doorvoert. Hierdoor kan de client scripts uitvoeren waarvoor mogelijk serverbronnen nodig zijn, zoals een ondernemingsdatabase, terwijl een gebruiker communiceert met een formulier. Voor HTML-formulieren kunnen formele scripts alleen op de server worden uitgevoerd. Als gevolg hiervan moet u deze scripts markeren om te worden uitgevoerd `server` of `both`.
+De Forms-service kan scripts uitvoeren terwijl het formulier wordt gegenereerd. Hierdoor kunt u een formulier vooraf invullen met gegevens door verbinding te maken met een database of met webservices die mogelijk niet beschikbaar zijn op de client. U kunt ook knoppen instellen `Click` gebeurtenis die op de server moet worden uitgevoerd zodat de client gegevens voor retournering naar de server doorvoert. Hierdoor kan de client scripts uitvoeren waarvoor mogelijk serverbronnen nodig zijn, zoals een ondernemingsdatabase, terwijl een gebruiker communiceert met een formulier. Voor HTML-formulieren kunnen formele scripts alleen op de server worden uitgevoerd. Als gevolg hiervan moet u deze scripts markeren om te worden uitgevoerd `server` of `both`.
 
 U kunt formulieren ontwerpen die tussen pagina&#39;s (deelvensters) bewegen door `xfa.host.pageUp` en `xfa.host.pageDown` methoden. Dit script wordt in de knop geplaatst `Click` en de `runAt` kenmerk is ingesteld op `Both`. De reden die u kiest `Both` is zo dat Adobe Reader of Acrobat (voor formulieren die worden weergegeven als PDF) pagina&#39;s kan wijzigen zonder naar de server te gaan. HTML-formulieren kunnen pagina&#39;s wijzigen door gegevens naar de server af te snijden. Een formulier wordt dus naar de Forms-service verzonden en een formulier wordt als HTML weergegeven met de nieuwe pagina.
 
@@ -156,7 +156,7 @@ U wordt aangeraden de formulierlogica in Calculate-gebeurtenissen te plaatsen, d
 
 ## Presentatiewijzigingen behouden {#maintaining-presentation-changes}
 
-Bij het schakelen tussen HTML-pagina&#39;s (deelvensters) blijft alleen de status van de gegevens behouden. Instellingen zoals achtergrondkleur of verplichte veldinstellingen blijven niet behouden (als deze afwijken van de oorspronkelijke instellingen). Als u de presentatiestatus wilt behouden, moet u (gewoonlijk verborgen) velden maken die de presentatiestatus van velden aangeven. Als u een script toevoegt aan de opdrachten van `Calculate` Als u de presentatie wijzigt op basis van verborgen veldwaarden, kunt u de presentatiestatus behouden wanneer u heen en weer gaat tussen HTML pagina&#39;s (deelvensters).
+Bij het schakelen tussen HTML-pagina&#39;s (deelvensters) blijft alleen de status van de gegevens behouden. Instellingen zoals achtergrondkleur of verplichte veldinstellingen blijven niet behouden (als deze afwijken van de oorspronkelijke instellingen). Als u de presentatiestatus wilt behouden, moet u (gewoonlijk verborgen) velden maken die de presentatiestatus van velden aangeven. Als u een script toevoegt aan de `Calculate` Als u de presentatie wijzigt op basis van verborgen veldwaarden, kunt u de presentatiestatus behouden wanneer u heen en weer gaat tussen HTML pagina&#39;s (deelvensters).
 
 In het volgende script wordt het `fillColor` van een veld op basis van de waarde van `hiddenField`. Stel dat dit script zich in een veld bevindt `Calculate` gebeurtenis.
 
@@ -268,7 +268,7 @@ Een HTML-formulier renderen met de Forms API (Java):
 
 1. Projectbestanden opnemen
 
-   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project.
+   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassepad van uw Java-project.
 
 1. Een Forms Client API-object maken
 
@@ -302,9 +302,9 @@ Een HTML-formulier renderen met de Forms API (Java):
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
 
-   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object &#39;s `getOutputContent` methode.
+   * Een `com.adobe.idp.Document` door het object aan te roepen `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `com.adobe.idp.Document` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van de `com.adobe.idp.Document` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Een `java.io.InputStream` door het object aan te roepen `com.adobe.idp.Document` object `getInputStream` methode.
    * Maak een bytearray en vul deze met de formuliergegevensstroom door de `InputStream` object `read` en de bytearray doorgeven als een argument.
@@ -369,7 +369,7 @@ Een HTML-formulier renderen met de Forms API (webservice):
    * Een `FormResult` object door de waarde van het object op te halen `com.adobe.idp.services.holders.FormsResultHolder` object `value` lid.
    * Een `BLOB` object dat formuliergegevens bevat door het `FormsResult` object `getOutputContent` methode.
    * Hiermee wordt het inhoudstype van het dialoogvenster `BLOB` object aanroepen `getContentType` methode.
-   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object door het aan te roepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
+   * Stel de `javax.servlet.http.HttpServletResponse` inhoudstype van object aanroepen `setContentType` en geeft u het inhoudstype van de `BLOB` object.
    * Een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de formuliergegevensstroom naar de webbrowser van de client te schrijven door het aanroepen van de `javax.servlet.http.HttpServletResponse` object `getOutputStream` methode.
    * Maak een bytearray en vul deze door het `BLOB` object `getBinaryData` methode. Deze taak wijst de inhoud van toe `FormsResult` object naar de bytearray.
    * De `javax.servlet.http.HttpServletResponse` object `write` methode om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.

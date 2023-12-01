@@ -7,7 +7,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
 role: Developer
 exl-id: a521bfac-f417-4002-9c5c-8d7794d3eec7
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
 source-wordcount: '18956'
 ht-degree: 0%
@@ -1744,7 +1744,7 @@ Een XML-element moet bestaan voor elk formulierveld dat u wilt vullen met gegeve
 Stel de volgende uitvoeringsopties voor de service Uitvoer in om meerdere bestanden te maken op basis van een XML-gegevensbron:
 
 * **Veel bestanden**: Geeft aan of de service Uitvoer een of meer documenten maakt. U kunt waar of onwaar opgeven. Geef true op als u een afzonderlijk document wilt maken voor elke gegevensrecord in de XML-gegevensbron.
-* **Bestands-URI**: Hiermee geeft u de locatie op van de bestanden die de uitvoerservice genereert. Stel bijvoorbeeld dat u C:\\Adobe\forms\Loan.pdf opgeeft. In dit geval maakt de service Uitvoer een bestand met de naam Loan.pdf en wordt het bestand in de map C:\\Adobe\forms geplaatst. Als er meerdere bestanden zijn, zijn de bestandsnamen Loan0001.pdf, Loan0002.pdf, Loan0003.pdf enzovoort. Als u een bestandslocatie opgeeft, worden de bestanden op de server geplaatst, niet op de clientcomputer.
+* **Bestands-URI**: Hiermee geeft u de locatie op van de bestanden die de uitvoerservice genereert. Stel bijvoorbeeld dat u C:\\Adobe\forms\Loan.pdf opgeeft. In dit geval maakt de service Uitvoer een bestand met de naam Loan.pdf en wordt het bestand in de map C:\\Adobe\forms geplaatst. Als er meerdere bestanden zijn, zijn de bestandsnamen Loan0001.pdf, Loan0002.pdf, Loan0003.pdf, enzovoort. Als u een bestandslocatie opgeeft, worden de bestanden op de server geplaatst, niet op de clientcomputer.
 * **Recordnaam**: Geeft de naam van het XML-element op in de gegevensbron die de gegevensrecords scheidt. In het voorbeeld-XML-gegevensbron dat eerder in deze sectie wordt weergegeven, wordt bijvoorbeeld het XML-element dat gegevensrecords scheidt, aangeroepen `LoanRecord`. (In plaats van de runtime voor opnamen in te stellen, kunt u het niveau opnemen instellen door er een numerieke waarde aan toe te wijzen die het elementniveau aangeeft dat gegevensrecords bevat. U kunt echter alleen de recordnaam of het recordniveau instellen. U kunt niet beide waarden instellen.)
 
 **Renderopties tijdens runtime instellen**

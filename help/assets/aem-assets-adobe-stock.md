@@ -6,9 +6,9 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 3d5e9ad8ee19756b05e5a77a3f748bc647fcf734
+source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
 workflow-type: tm+mt
-source-wordcount: '2326'
+source-wordcount: '2328'
 ht-degree: 3%
 
 ---
@@ -32,7 +32,7 @@ Organizations can integrate their [!DNL Adobe Stock] enterprise plan with [!DNL 
 <!-- New overview content
 -->
 
-[!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
+[!DNL Adobe Stock] biedt ontwerpers en bedrijven toegang tot miljoenen hoogwaardige, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten.
 
 [!DNL Adobe Stock] voor het aanbieden van een bedrijf, door gebrek, omvat het delen van rechten over de organisatie. Zodra een middel door een gebruiker van uw organisatie is vergunning gegeven, kunnen andere gebruikers van uw organisatie, dit middel identificeren downloaden en gebruiken zonder het moeten het opnieuw vergunning geven. Zodra een activa door uw organisatie zijn vergunning gegeven, is het recht om het te gebruiken onvoorwaardelijk.
 
@@ -59,11 +59,11 @@ De integratie vereist:
 Een onderneming [!DNL Adobe Stock] plan,
 
 * Biedt productrechten voor [!DNL Adobe Stock] (Met Experience Manager verbonden voorraden)
-* Crediteringen die zijn gekocht in de [!DNL Adobe Admin Console] voor je aandelenrecht
+* Crediteringen die zijn aangeschaft in de [!DNL Adobe Admin Console] voor je aandelenrecht
 * Maakt verificatie voor serviceaccount (JWT) binnen mogelijk [!DNL Adobe Developer Console] voor je aandelenrecht
 * Maakt het beheer van de credits en licenties wereldwijd mogelijk vanuit de [!DNL Adobe Admin Console]
 
-Binnen de machtiging wordt een standaardproductprofiel voor [!DNL Adobe Stock] bestaat in [!DNL Admin Console]. U kunt meerdere profielen maken en deze profielen bepalen wie een licentie voor de middelen van Stock kan verkrijgen. Een gebruiker die rechtstreeks toegang heeft tot het productprofiel heeft toegang tot [https://stock.adobe.com/](https://stock.adobe.com/) en de activa van de vergunning van de Voorraad. Terwijl er een andere methode is om de toegang van de Ontwikkelaar te gebruiken om integratie (API) tot stand te brengen voor authentiek communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock].
+Binnen de machtiging wordt een standaardproductprofiel voor [!DNL Adobe Stock] bestaat in [!DNL Admin Console]. Er kunnen meerdere profielen worden gemaakt en deze profielen bepalen wie een licentie voor de activa van Stock kan verkrijgen. Een gebruiker die rechtstreeks toegang heeft tot het productprofiel heeft toegang tot [https://stock.adobe.com/](https://stock.adobe.com/) en de activa van de vergunning van de Voorraad. Terwijl er een andere methode is om de toegang van de Ontwikkelaar te gebruiken om integratie (API) tot stand te brengen voor authentiek communicatie tussen [!DNL Experience Manager] en [!DNL Adobe Stock].
 
 >[!NOTE]
 >
@@ -89,7 +89,7 @@ Om te integreren [!DNL Experience Manager] en [!DNL Adobe Stock]voert u de volge
 
 1. [Verbinding voor serviceaccount (JWT) maken](#createnewintegration)
 
-   In [!DNL Adobe Developer Console], maak een project voor uw [!DNL Adobe Stock] organisatie. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening (JWT) tot stand te brengen. Krijg de geloofsbrieven van de de dienstrekening en JWT payload informatie.
+   In [!DNL Adobe Developer Console], maakt u een project voor uw [!DNL Adobe Stock] organisatie. Onder het project, vorm API gebruikend de openbare sleutel om een verbinding van de de dienstrekening (JWT) tot stand te brengen. Krijg de geloofsbrieven van de de dienstrekening en JWT payload informatie.
 
 1. [IMS-account configureren](#create-ims-account-configuration)
 
@@ -102,7 +102,7 @@ Om te integreren [!DNL Experience Manager] en [!DNL Adobe Stock]voert u de volge
 
 ### Een IMS-configuratie maken {#create-an-ims-configuration}
 
-De configuratie IMS verifieert uw [!DNL Experience Manager Assets] instantie van de auteur met [!DNL Adobe Stock] machtiging.
+De configuratie IMS verifieert uw [!DNL Experience Manager Assets] auteur instantie met [!DNL Adobe Stock] machtiging.
 
 De IMS-configuratie omvat twee stappen:
 
@@ -113,7 +113,7 @@ De IMS-configuratie omvat twee stappen:
 
 Met de openbare sleutel (certificaat) wordt uw productprofiel geverifieerd in Adobe Developer Console.
 
-1. Meld u aan bij uw [!DNL Experience Manager Assets] instantie van auteur. De standaard-URL is `http://localhost:4502/aem/start.html`.
+1. Aanmelden bij uw [!DNL Experience Manager Assets] instantie van auteur. De standaard-URL is `http://localhost:4502/aem/start.html`.
 
 1. Van de **[!UICONTROL Tools]** deelvenster, navigeren naar **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**.
 
@@ -123,7 +123,7 @@ Met de openbare sleutel (certificaat) wordt uw productprofiel geverifieerd in Ad
 
 1. U kunt een certificaat maken of een bestaand certificaat opnieuw gebruiken voor de configuratie.
 
-   Als u een certificaat wilt maken, selecteert u de optie **[!UICONTROL Create new certificate]** selectievakje en geef een **alias** voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
+   Als u een certificaat wilt maken, selecteert u de **[!UICONTROL Create new certificate]** selectievakje en geef een **alias** voor de openbare sleutel. De alias fungeert als naam voor de openbare sleutel.
 
 1. Klik op **[!UICONTROL Create certificate]**. Klik vervolgens op **[!UICONTROL OK]** om de openbare sleutel te produceren.
 
@@ -164,13 +164,13 @@ Om de geloofsbrieven van de de dienstrekening en JWT lading te produceren:
 
 1. De openbare sleutel controleren en klikken **[!UICONTROL Next]**.
 
-1. Standaard selecteren **[!UICONTROL Adobe Stock]** productprofiel en klik op **[!UICONTROL Save configured API]**.
+1. De standaardinstelling selecteren **[!UICONTROL Adobe Stock]** productprofiel en klik op **[!UICONTROL Save configured API]**.
 
-1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Vanaf de linkernavigatie onder **[!UICONTROL Credentials]**, klikt u op de knop **[!UICONTROL Service Account (JWT)]** optie. Hier, kunt u de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, en terugwinnen cliëntgeheim.
+1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Vanaf de linkernavigatie onder **[!UICONTROL Credentials]**, klikt u op de knop **[!UICONTROL Service Account (JWT)]** -optie. Hier, kunt u de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, en terugwinnen cliëntgeheim.
 
-1. Van de **[!UICONTROL Client Credentials]** kopiëren **[!UICONTROL client ID]**.
+1. Van de **[!UICONTROL Client Credentials]** -tabblad, kopieert u de **[!UICONTROL client ID]**.
 
-   Klikken **[!UICONTROL Retrieve Client Secret]** en kopieert u de **[!UICONTROL client secret]**.
+   Klikken **[!UICONTROL Retrieve Client Secret]** en kopieer de **[!UICONTROL client secret]**.
 
    ![generate-jwt-credentials](assets/aem-stock-jwt-credential.png)
 
@@ -180,7 +180,7 @@ U kunt nu de client-id (API-sleutel), het clientgeheim en de JWT-payload gebruik
 
 ### IMS-account configureren {#create-ims-account-configuration}
 
-U moet beschikken over de [certificaat](#public-certificate) en [JWT-referenties (Service Account)](#createnewintegration) om de IMS-account te configureren.
+U moet beschikken over [certificaat](#public-certificate) en [JWT-referenties (Service Account)](#createnewintegration) om de IMS-account te configureren.
 
 De IMS-account configureren:
 
@@ -205,11 +205,11 @@ De IMS-account configureren:
 
 ### Cloudservice configureren {#configure-the-cloud-service}
 
-Om het [!DNL Adobe Stock] cloudservice:
+Om te vormen [!DNL Adobe Stock] cloudservice:
 
 1. In de [!DNL Experience Manager] gebruikersinterface, navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
 
-1. In de [!DNL Adobe Stock Configurations] pagina, klikt u op **[!UICONTROL Create]**.
+1. In de [!DNL Adobe Stock Configurations] pagina, klikt u **[!UICONTROL Create]**.
 
 1. Geef een **[!UICONTROL Title]** voor de cloudconfiguratie.
 
@@ -223,15 +223,15 @@ Om het [!DNL Adobe Stock] cloudservice:
 
    Uw [!DNL Experience Manager Assets] schrijverinstantie is nu geïntegreerd met [!DNL Adobe Stock]. U kunt meerdere [!DNL Adobe Stock] configuraties (bijvoorbeeld configuraties op basis van landinstellingen). U kunt nu de opdracht [!DNL Adobe Stock] activa van binnen [!DNL Experience Manager] gebruikersinterface.
 
-   ![search-stock-assets](assets/aem-stock-searchstocks.png)
+   ![zoekmiddelen](assets/aem-stock-searchstocks.png)
 
    >[!NOTE]
    >
    >In deze fase van integratie hebben alleen de beheerders toegang tot de [!DNL Adobe Stock] activa, activa van de onderzoeksVoorraad (gebruikend alwetzoekend), en vergunning het [!DNL Adobe Stock] activa.
    >
-   >Beheerders kunnen gebruikers of groepen toevoegen aan de [!DNL Adobe Stock] cloudservice en geef machtigingen aan deze gebruikers die geen beheerder zijn in [!DNL Experience Manager] om tot de configuratie van de Voorraad toegang te hebben.
+   >Beheerders kunnen gebruikers of groepen verder toevoegen aan de [!DNL Adobe Stock] cloudservice en geef machtigingen aan deze gebruikers die geen beheerder zijn in [!DNL Experience Manager] om tot de configuratie van de Voorraad toegang te hebben.
 
-1. Als u gebruikers of groepen wilt toevoegen, selecteert u de optie [!DNL Adobe Stock] cloudconfiguratie en klik op **[!UICONTROL Properties]**.
+1. Als u gebruikers of groepen wilt toevoegen, selecteert u de [!DNL Adobe Stock] cloudconfiguratie en klik op **[!UICONTROL Properties]**.
 
 1. Zoek om de gebruikers of de groepen toe te voegen aan wie u toestemmingen hebt toegewezen om tot de configuratie van Adobe Stock toegang te hebben. Zie [machtigingen toewijzen aan gebruikersgroep](#assign-permissions-to-group).
 
@@ -243,8 +243,8 @@ Beheerders kunnen gebruikersgroepen maken en bepaalde gebruikers of groepen mach
 Hieronder vindt u de machtigingen die een gebruiker nodig heeft om Adobe Stock-middelen te zoeken en te licentiëren:
 
 * Vorm de weg: `/conf/global/settings/stock`
-* Bevoegdheden: `jcr:read`
-* Machtigingstype: `Allow`
+* Rechten: `jcr:read`
+* Type machtiging: `Allow`
 
 U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande gebruikersgroep. Machtigingen kunnen worden toegewezen via de [!DNL Experience Manager Assets] of van de [!DNL User Admin] Console.
 
@@ -257,14 +257,14 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
 1. Zoeken naar de gebruikersgroep in het linkerdeelvenster en nieuwe gebruikersgroep toevoegen **[!UICONTROL Access Control Entry (ACE)]** voor Adobe Stock.
 
    * Vorm de weg: `/conf/global/settings/stock`
-   * Bevoegdheden: `jcr:read`
-   * Machtigingstype: `Allow`
+   * Rechten: `jcr:read`
+   * Type machtiging: `Allow`
 
    Klik op **[!UICONTROL Add]**.
 
    ![gebruikersmachtigingen](assets/aem-stock-user-permissions.png)
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Selecteer [!DNL Adobe Stock] cloudconfiguratie en klik op **[!UICONTROL Properties]**.
+1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**. Selecteer de [!DNL Adobe Stock] cloudconfiguratie en klik op **[!UICONTROL Properties]**.
 
 1. De nieuwe gebruikersgroep toevoegen aan de [!DNL Adobe Stock] configuratie. Klik op **[!UICONTROL Save & Close]**.
 
@@ -274,7 +274,7 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
 
 1. Open de [!DNL Experience Manager] Admin Console gebruiker. De standaard-URL is `http://localhost:4502/userdamin`.
 
-1. Zoek in het linkerdeelvenster naar de gebruiker door het `user_id` of `name`. Dubbelklik om de gebruikerseigenschappen te openen.
+1. Zoek in het linkerdeelvenster naar de gebruiker door het dialoogvenster `user_id` of `name`. Dubbelklik om de gebruikerseigenschappen te openen.
 
 1. Ga naar de **[!UICONTROL Permissions]** tab en allow `read` machtigingen voor de [!DNL Adobe Stock] cloudconfiguratie: `/conf/global/settings/stock`.
 
@@ -293,7 +293,7 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
 
 ## Adobe Stock-middelen openen {#access-stock-assets}
 
-Een gebruiker die geen beheerder is en over machtigingen beschikt voor de [!DNL Adobe Stock] cloudconfiguratie kan de [!DNL Adobe Stock] activa van de [!DNL Experience Manager] interface.
+Een gebruiker die geen beheerder is en over machtigingen beschikt voor de [!DNL Adobe Stock] de wolkenconfiguratie kan zoeken en vergunning geven [!DNL Adobe Stock] activa van de [!DNL Experience Manager] interface.
 
 De gebruiker moet een extra stap uitvoeren om het [!DNL Adobe Stock] cloudconfiguratie voor toegang tot [!DNL Adobe Stock] activa. Het is een eenmalige activiteit. Als aan de gebruiker machtigingen worden toegewezen voor meerdere [!DNL Adobe Stock] wolkenconfiguraties, kan de gebruiker de gewenste configuratie van de **[!UICONTROL User Preferences]**.
 
@@ -303,7 +303,7 @@ Als u het dialoogvenster [!DNL Adobe Stock] cloudconfiguratie:
 
 1. Klik op het gebruikerspictogram in de rechterbovenhoek en klik vervolgens op **[!UICONTROL My Preferences]**. De **[!UICONTROL User Preferences]** wordt geopend.
 
-1. Selecteer het gewenste **[!UICONTROL Stock Configuration]** in de vervolgkeuzelijst en klik op **[!UICONTROL Accept]** om de configuratie te activeren.
+1. Selecteer het gewenste **[!UICONTROL Stock Configuration]** in de vervolgkeuzelijst en klik op **[!UICONTROL Accept]** de configuratie activeren.
 
    ![gebruikersvoorkeuren](assets/aem-stock-preferences.png)
 
@@ -313,9 +313,9 @@ In de volgende tabel wordt uitgelegd hoe de gebruikersmachtigingen werken bij he
 
 | Gebruiker | Groep | Machtigingen | Stock-configuratie accepteren in de gebruikersvoorkeuren | Toegangsmiddelen | Toegang tot Adobe Stock |
 | --- | --- | --- | --- | --- | --- |
-| beheerder | N.v.t. | Alles | N.v.t. | Ja | Ja |
+| admin | NVT | Alles | NVT | Ja | Ja |
 | test-doc1 | DAM-gebruiker | /conf/global/settings/stock/cloud-config | Ja | Ja | Ja |
-| test-doc1 | DAM-gebruiker | /conf/global/settings/stock/cloud-config | Nee | Fout: Kan gegevens niet laden | Nee |
+| test-doc1 | DAM-gebruiker | /conf/global/settings/stock/cloud-config | Nee | Fout: kan gegevens niet laden | Nee |
 | test-doc1 | DAM-gebruiker | **toestaan**: /conf/global/settings/stock     **ontkennen**: /cloud-config | De voorraadconfiguratie is niet zichtbaar | Ja | Nee |
 
 
@@ -323,7 +323,7 @@ In de volgende tabel wordt uitgelegd hoe de gebruikersmachtigingen werken bij he
 
 Met behulp van deze mogelijkheid kunnen organisaties hun gebruikers toestaan te werken met [!DNL Adobe Stock] activa in [!DNL Experience Manager Assets]. Van binnen [!DNL Experience Manager] gebruikersinterface, gebruikers kunnen zoeken [!DNL Adobe Stock] activa en de vereiste activa in licentie geven.
 
-Eenmaal [!DNL Adobe Stock] activum is in licentie gegeven in [!DNL Experience Manager], kan het als typisch activa worden gebruikt en worden beheerd. In [!DNL Experience Manager]kunnen de gebruikers de middelen zoeken en voorvertonen; de elementen kopiëren en publiceren; delen van de activa op [!DNL Brand Portal]; toegang tot en gebruik de middelen via [!DNL Experience Manager] bureaubladtoepassing; enzovoort.
+Eenmaal [!DNL Adobe Stock] actief in licentie gegeven [!DNL Experience Manager], kan het als typisch activa worden gebruikt en worden beheerd. In [!DNL Experience Manager], kunnen de gebruikers de elementen zoeken en voorvertonen, de elementen kopiëren en publiceren, de elementen delen op [!DNL Brand Portal]; toegang tot en gebruik van de activa door [!DNL Experience Manager] bureaubladtoepassing, enzovoort.
 
 ![Zoeken naar [!DNL Adobe Stock] elementen en filterresultaten van uw [!DNL Adobe Experience Manager] werkruimte](assets/adobe-stock-search-results-workspace.png)
 
@@ -373,13 +373,13 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 ## Bekende beperkingen {#known-limitations}
 
-* **Problemen met integratie met [!DNL Experience Manager] Service Pack 6.5.7.0 en hoger**: Er is een onverwacht probleem vastgesteld tijdens de integratie met [!DNL Experience Manager] 6.5.7.0 en hoger. Het probleem wordt momenteel getest en is naar verwachting beschikbaar in [!DNL Experience Manager] 6.5.11.0. Contact [!DNL Customer Support] voor een directe hotfix.
+* **Problemen met integratie met [!DNL Experience Manager] Service Pack 6.5.7.0 en hoger**: Tijdens de integratie met [!DNL Experience Manager] 6.5.7.0 en hoger Het probleem wordt momenteel getest en zal naar verwachting beschikbaar zijn in [!DNL Experience Manager] 6.5.11.0. Contactpersoon [!DNL Customer Support] voor een directe hotfix.
 
 * **Functies om gebruikers te beperken tot het verlenen van licenties werken niet correct**: Alle gebruikers die `read` machtigingen voor de voorraadconfiguratie mogen de [!DNL Adobe Stock] activa.
 
-* **Gebruikers die geen beheerder zijn, moeten het [!DNL Adobe Stock] cloudconfiguratie**: In de **[!UICONTROL User Preferences]** venster, **[!UICONTROL Stock Configuration]** toont de [!DNL Adobe Stock] cloudconfiguratie is ingeschakeld, maar werkt niet voor gebruikers die geen beheerder zijn. De gebruiker moet op **[!UICONTROL Accept]** om de voorraadconfiguratie te activeren. Als deze stap ontbreekt, geeft het systeem een foutbericht weer over de toegang tot **[!UICONTROL Assets]**.
+* **Gebruikers die geen beheerder zijn, moeten het [!DNL Adobe Stock] cloudconfiguratie**: In de **[!UICONTROL User Preferences]** venster, het **[!UICONTROL Stock Configuration]** toont de [!DNL Adobe Stock] cloudconfiguratie is ingeschakeld, maar werkt niet voor gebruikers die geen beheerder zijn. De gebruiker moet op **[!UICONTROL Accept]** om de voorraadconfiguratie te activeren. Als deze stap ontbreekt, geeft het systeem een foutbericht weer over de toegang tot **[!UICONTROL Assets]**.
 
-* **Waarschuwing voor redactionele afbeelding wordt niet weergegeven**: Wanneer gebruikers een licentie voor een afbeelding verlenen, kunnen ze niet controleren of een afbeelding alleen voor gebruik als redactie is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele activa van de Admin Console uitschakelen.
+* **Waarschuwing voor redactionele afbeelding wordt niet weergegeven**: Wanneer gebruikers een licentie voor een afbeelding verlenen, kunnen ze niet controleren of een afbeelding alleen voor gebruik als redactie is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele activa van de Admin Console uitzetten.
 
 * **Onjuist licentietype wordt weergegeven**: Het is mogelijk dat een onjuist licentietype wordt weergegeven in [!DNL Experience Manager] voor een actief. Gebruikers kunnen zich aanmelden bij de [!DNL Adobe Stock] website om het licentietype te zien.
 
@@ -390,7 +390,6 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 >* [Videozelfstudie bij gebruik [!DNL Adobe Stock] activa met [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-learn/assets/creative-workflows/adobe-stock.html)
 >* [[!DNL Adobe Stock] Help bij bedrijfsplan](https://helpx.adobe.com/enterprise/using/adobe-stock-enterprise.html)
 >* [[!DNL Adobe Stock] Veelgestelde vragen](https://helpx.adobe.com/stock/faq.html)
-
 
 
 <!--old content

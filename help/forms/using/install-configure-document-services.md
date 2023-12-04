@@ -4,9 +4,9 @@ description: Installeer AEM Forms-documentservices voor het maken, samenstellen,
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
 workflow-type: tm+mt
-source-wordcount: '5355'
+source-wordcount: '5364'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ AEM Forms biedt een set OSGi-services voor het uitvoeren van verschillende bewer
 
   De handtekeningsdienst heeft toegang tot certificaten en geloofsbrieven die in de vertrouwde opslag worden opgeslagen. Zie voor meer informatie [Handtekeningenservice](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst met mogelijkheden raadpleegt u [Inleiding tot AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms is een krachtig platform op bedrijfsniveau en documentservices zijn slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst met mogelijkheden raadpleegt u [Inleiding tot AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Implementatietopologie {#deployment-topology}
 
@@ -284,7 +284,7 @@ Voer de volgende stappen uit om IBM® SSL-socketprovider te configureren:
 
 Wijzig de instellingen van het Microsoft® Office-vertrouwenscentrum om de PDF Generator in staat te stellen bestanden die zijn gemaakt met oudere versies van Microsoft® Office, om te zetten.
 
-1. Open een Microsoft® Office-toepassing. Bijvoorbeeld Microsoft® Word. Ga naar **[!UICONTROL File]**> **[!UICONTROL Options]**. Het dialoogvenster Opties wordt geopend.
+1. Open een Microsoft® Office-toepassing. Bijvoorbeeld Microsoft® Word. Navigeren naar **[!UICONTROL File]**> **[!UICONTROL Options]**. Het dialoogvenster Opties wordt geopend.
 
 1. Klikken **[!UICONTROL Trust Center]** en klik op **[!UICONTROL Trust Center Settings]**.
 1. In de **[!UICONTROL Trust Center settings]**, klikt u op **[!UICONTROL File Block Settings]**.
@@ -315,7 +315,7 @@ U kunt een niet beheerdergebruiker toelaten om de dienst van de PDF Generator te
 
    1. Microsoft® raadt u aan een back-up van het register te maken voordat u het wijzigt. Zie voor meer informatie [Hoe te file en herstel de registratie in Vensters](https://support.microsoft.com/en-us/help/322756).
    1. Open Microsoft® Windows Registry Editor. Als u de registereditor wilt openen, gaat u naar Start > Uitvoeren, typt u regedit en klikt u op OK.
-   1. Ga naar `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Zorg ervoor dat de waarde van EnableLUA is ingesteld op 0 (nul).
+   1. Navigeren naar `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\policies\system\`. Zorg ervoor dat de waarde van EnableLUA is ingesteld op 0 (nul).
    1. Waarde van garanderen **EnableLUA** is ingesteld op 0 (nul). Als de waarde niet 0 is, wijzigt u de waarde in 0. Sluit de registereditor.
 
 1. Start de computer opnieuw op.
@@ -491,7 +491,7 @@ Met het Betrouwbaarheidsopslagbeheer kunt u certificaten die u op de server vert
 
 1. Meld u als beheerder aan bij een AEM Forms-instantie.
 1. Ga naar  **[!UICONTROL Tools]** >  **[!UICONTROL Security]** >  **[!UICONTROL Trust Store]**.
-1. Klik op  **[!UICONTROL Create TrustStore]**. Wachtwoord instellen en tikken **[!UICONTROL Save]**.
+1. Klikken  **[!UICONTROL Create TrustStore]**. Wachtwoord instellen en tikken **[!UICONTROL Save]**.
 
 ### Certificaten instellen voor de extensie en coderingsservice van Readers {#set-up-certificates-for-reader-extension-and-encryption-service}
 
@@ -563,7 +563,7 @@ De dienst van de Assembler hangt van de dienst van de Uitbreidingen van de Reade
 
 * Op UNIX-besturingssystemen vindt u de volgende handelingen om ontbrekende bibliotheken te zoeken:
 
-1. Ga naar `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
+1. Navigeren naar `[crx-repository]/bedrock/svcnative/HtmlToPdfSvc/bin/`.
 
 1. Voer de volgende opdracht uit om alle bibliotheken weer te geven die PhantomJS nodig heeft voor conversie van HTML naar PDF.
 
@@ -591,7 +591,7 @@ De [Gereedschap Systeem](#srt-configuration) controleert of de machine behoorlij
    >
    * Als het Hulpmiddel van de Gereedheid van het Systeem meldt dat het pdfgen.api- dossier niet beschikbaar in de Acrobat stop-ins omslag is, dan kopieer het pdfgen.api- dossier van het `[extracted-adobe-aemfd-pdfg-common-pkg]\jcr_root\libs\fd\pdfg\tools\adobe-aemfd-pdfg-utilities-[version]\plugins\x86_win32` aan de `[Acrobat_root]\Acrobat\plug_ins` directory.
 
-1. Ga naar `[Path_of_reports_folder]`. Open het bestand SystemReadyTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
+1. Navigeren naar `[Path_of_reports_folder]`. Open het bestand SystemReadyTool.html. Verifieer het rapport en los de bovengenoemde kwesties op.
 
 ### Opties configureren voor het SRT-gereedschap {#srt-configuration}
 
@@ -668,6 +668,10 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeem](#SR
 * Als er problemen zijn met de installatie van OpenOffice, controleert u of [32-bits bibliotheken](#extrarequirements) is vereist voor OpenOffice-installatie.
 
 +++
+
++++Microsoft Office 2019 wordt niet uitgevoerd op Microsoft Windows Server 2019
+
+* Zorg ervoor dat u geen actieve externe verbinding met AEM server hebt.
 
 +++HTML naar aanleiding van problemen met PDF-conversie
 
@@ -787,8 +791,23 @@ Wanneer de gebruiker Word- of Excel-bestanden naar PDF probeert om te zetten op 
 
 *Foutbericht van de primaire converter: ALC-PDG-015-003-Het systeem kan het invoerbestand niet openen. Verzend het bestand opnieuw of neem contact op met de systeembeheerder.*
 
-Ga voor een oplossing van het probleem naar [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Als u de problemen wilt oplossen, raadpleegt u [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
 
++++ Kan Excel-bestanden niet converteren naar PDF op Windows Server 2019
+
+Wanneer u Microsoft Excel 2019 omzet in PDF op de Server 2019 van Microsoft Windows, moet u het volgende verzekeren:
+
+* Tijdens het gebruiken van de dienst van de PDF Generator, zou uw machine van Vensters geen actieve verre verbinding met de AEM server (de zitting van RDP van Vensters) moeten hebben.
+* De standaardprinter moet op Adobe PDF worden ingesteld.
+
+>[!NOTE]
+* Voor Apple macOS en Ubuntu OS hoeft u de bovenstaande instellingen niet te configureren.
+
++++ Kan XPS-bestanden niet omzetten in PDF
+
+Om het probleem op te lossen, [creeer een eigenschap-specifieke registratiesleutel op Vensters](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
+
++++
 
 ## Volgende stappen {#next-steps}
 

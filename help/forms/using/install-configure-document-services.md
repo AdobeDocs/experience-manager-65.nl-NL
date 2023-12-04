@@ -4,9 +4,9 @@ description: Installeer AEM Forms-documentservices voor het maken, samenstellen,
 topic-tags: installing
 role: Admin
 exl-id: 5d48e987-16c2-434b-8039-c82181d2e028
-source-git-commit: 03ed3606e89d87bf2f95b56a1eeb6b7dc4bec13a
+source-git-commit: 2ad9cea10bcd152f4d2d874553bdbd3133dbe847
 workflow-type: tm+mt
-source-wordcount: '5364'
+source-wordcount: '5342'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ AEM Forms biedt een set OSGi-services voor het uitvoeren van verschillende bewer
 
   De handtekeningsdienst heeft toegang tot certificaten en geloofsbrieven die in de vertrouwde opslag worden opgeslagen. Zie voor meer informatie [Handtekeningenservice](/help/forms/using/aem-document-services-programmatically.md).
 
-AEM Forms is een krachtig platform op bedrijfsniveau en documentservices zijn slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst met mogelijkheden raadpleegt u [Inleiding tot AEM Forms](/help/forms/using/introduction-aem-forms.md).
+AEM Forms is een krachtig platform op bedrijfsniveau en de documentservices zijn slechts een van de mogelijkheden van AEM Forms. Voor de volledige lijst met mogelijkheden raadpleegt u [Inleiding tot AEM Forms](/help/forms/using/introduction-aem-forms.md).
 
 ## Implementatietopologie {#deployment-topology}
 
@@ -669,10 +669,6 @@ Controleer voordat u de volgende controles uitvoert of [Gereedschap Systeem](#SR
 
 +++
 
-+++Microsoft Office 2019 wordt niet uitgevoerd op Microsoft Windows Server 2019
-
-* Zorg ervoor dat u geen actieve externe verbinding met AEM server hebt.
-
 +++HTML naar aanleiding van problemen met PDF-conversie
 
 * Zorg ervoor dat de folders van doopvonten in PDF Generator config UI worden toegevoegd.
@@ -791,7 +787,9 @@ Wanneer de gebruiker Word- of Excel-bestanden naar PDF probeert om te zetten op 
 
 *Foutbericht van de primaire converter: ALC-PDG-015-003-Het systeem kan het invoerbestand niet openen. Verzend het bestand opnieuw of neem contact op met de systeembeheerder.*
 
-Als u de problemen wilt oplossen, raadpleegt u [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+Ga voor een oplossing van het probleem naar [Kan Word- of Excel-bestand niet converteren naar PDF op Windows Server](/help/forms/using/disable-uac-for-pdfgconfiguration.md).
+
++++
 
 +++ Kan Excel-bestanden niet converteren naar PDF op Windows Server 2019
 
@@ -800,14 +798,17 @@ Wanneer u Microsoft Excel 2019 omzet in PDF op de Server 2019 van Microsoft Wind
 * Tijdens het gebruiken van de dienst van de PDF Generator, zou uw machine van Vensters geen actieve verre verbinding met de AEM server (de zitting van RDP van Vensters) moeten hebben.
 * De standaardprinter moet op Adobe PDF worden ingesteld.
 
->[!NOTE]
-* Voor Apple macOS en Ubuntu OS hoeft u de bovenstaande instellingen niet te configureren.
+  >[!NOTE]
+  * Voor Apple macOS en Ubuntu OS hoeft u de bovenstaande instellingen niet te configureren.
+
++++
 
 +++ Kan XPS-bestanden niet omzetten in PDF
 
 Om het probleem op te lossen, [creeer een eigenschap-specifieke registratiesleutel op Vensters](https://helpx.adobe.com/in/acrobat/kb/unable-convert-xps-to-pdfs.html).
 
 +++
+
 
 ## Volgende stappen {#next-steps}
 

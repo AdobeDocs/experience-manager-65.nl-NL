@@ -2,9 +2,9 @@
 title: Ga aan de slag met AEM headless vertaling
 description: Leer hoe u uw inhoud zonder kop kunt ordenen en hoe AEM vertaalgereedschappen werken.
 exl-id: 764f78a7-1d3d-4406-85b1-b80dffae2350
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1489'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -78,15 +78,15 @@ De inhoudarchitect werkt in een vroeg stadium van het project om deze structuur 
 
 Omdat de inhoudsmodellen de structuur van uw inhoud bepalen, moet u weten welke gebieden van uw modellen moeten worden vertaald. In het algemeen werkt u met de inhoudarchitect om dit te definiëren. Volg onderstaande stappen om door de velden van uw inhoudsmodellen te bladeren.
 
-1. Navigeren naar **Gereedschappen** -> **Activa** -> **Modellen van inhoudsfragmenten**.
-1. Modellen van inhoudsfragmenten worden over het algemeen opgeslagen in een mapstructuur. Tik of klik op de map voor uw project.
-1. De modellen worden vermeld. Tik of klik op het model om de details weer te geven.
+1. Navigeren naar **Gereedschappen** > **Activa** > **Modellen van inhoudsfragmenten**.
+1. Modellen van inhoudsfragmenten worden over het algemeen opgeslagen in een mapstructuur. Klik op de map voor uw project.
+1. De modellen worden vermeld. Klik op het model om de details weer te geven.
    ![Modellen van contentfragmenten](assets/content-fragment-models.png)
 1. De **Inhoudsfragmentmodeleditor** wordt geopend.
    1. De linkerkolom bevat de velden van het model. Deze kolom interesseert ons.
    1. De rechterkolom bevat de velden die aan het model kunnen worden toegevoegd. Deze kolom kunnen wij negeren.
       ![Inhoudsfragmentmodeleditor](assets/content-fragment-model-editor.png)
-1. Tik of klik op een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
+1. Klik op een van de velden van het model. AEM worden het en de details van dat gebied getoond in de juiste kolom.
    ![Details van de Editor van het inhoudsfragmentmodel](assets/content-fragment-model-editor-detail.png)
 
 Let op het veld **Eigenschapnaam** voor alle velden die moeten worden vertaald. U zult deze informatie later in de reis nodig hebben. Deze **Eigenschapnaam** s wordt vereist om AEM te informeren welke gebieden van uw inhoud moeten worden vertaald.
@@ -95,7 +95,7 @@ Let op het veld **Eigenschapnaam** voor alle velden die moeten worden vertaald. 
 >
 >Over het algemeen biedt de architect van de inhoud de vertaler **Eigenschapnaam** s van alle velden die vereist zijn voor vertaling. Deze veldnamen zijn nodig voor latere reizen. De voorafgaande stappen zijn bedoeld voor het begrijpen van de vertaalspecialist.
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
 Inhoudsmodellen worden door de auteurs van de inhoud gebruikt om de inhoud zonder kop te maken. Inhoudsauteurs selecteren op welk model ze hun inhoud willen baseren en maken vervolgens Inhoudsfragmenten. Inhoudsfragmenten zijn exemplaren van de modellen en vertegenwoordigen feitelijke inhoud die zonder kop moet worden geleverd.
 

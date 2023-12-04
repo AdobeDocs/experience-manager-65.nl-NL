@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 30813c44-51ac-4e6e-8ee6-4e8baacb1ff9
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
@@ -34,10 +34,10 @@ De clientcode identificeert de Adobe Target-klantenaccount wanneer de Adobe Targ
 
 Test en doel [replicatieagent](/help/sites-deploying/replication.md) moet zijn ingeschakeld op de instantie van de auteur. Merk op dat deze replicatieagent niet door gebrek wordt toegelaten als u gebruikte [nosamplcontent](/help/sites-deploying/configure-runmodes.md#using-samplecontent-and-nosamplecontent) uitvoeringsmodus voor het installeren van AEM. Voor meer informatie over het beveiligen van uw productieomgeving raadpleegt u de [Beveiligingscontrolelijst](/help/sites-administering/security-checklist.md).
 
-1. Klik of tik op de AEM startpagina **Gereedschappen** > **Implementatie** > **Replicatie**.
-1. Klikken of tikken **Medewerkers op auteur**.
-1. Klik of tik op **Test en doel (test en doel)** replicatieagent, en dan klikken of tikken **Bewerken**.
-1. Selecteer de optie Ingeschakeld en klik of tik op **OK**.
+1. Klik op de AEM homepage op **Gereedschappen** > **Implementatie** > **Replicatie**.
+1. Klikken **Medewerkers op auteur**.
+1. Klik op de knop **Test en doel (test en doel)** replicatieagent, en klik dan **Bewerken**.
+1. Selecteer de optie Ingeschakeld en klik op **OK**.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Test en doel [replicatieagent](/help/sites-deploying/replication.md) moet zijn i
 
 ## Het knooppunt Activiteitsinstellingen beveiligen {#securing-the-activity-settings-node}
 
-U moet het knooppunt met activiteiteninstellingen beveiligen **cq:ActivitySettings** op de publicatie-instantie zodat deze niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
+Het knooppunt met activiteiteninstellingen beveiligen **cq:ActivitySettings** op de publicatie-instantie zodat deze niet toegankelijk is voor normale gebruikers. Het knooppunt activity settings mag alleen toegankelijk zijn voor de service die de activiteitensynchronisatie afhandelt voor Adobe Target.
 
 De **cq:ActivitySettings** knooppunt beschikbaar in CRXDE-lijst onder `/content/campaigns/*nameofbrand*`* *onder de activiteiten jcr:content node;* *bijvoorbeeld, `/content/campaign/we-retail/master/myactivity/jcr:content/cq:ActivitySettings`. Dit knooppunt wordt alleen gemaakt nadat u een component als doel hebt ingesteld.
 

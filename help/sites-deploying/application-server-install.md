@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: deploying
 exl-id: 3a90f1d2-e53f-4cc4-8122-024ad6500de0
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1164'
+source-wordcount: '1168'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,7 @@ Voordat een implementatie de [Algemene beschrijving](#general-description) hierb
 
 * Laat de Basiskopballen van de Auditie door overgaan:
 
-   * Één manier om AEM te laten een gebruiker voor authentiek verklaren is de globale administratieve veiligheid van de server onbruikbaar te maken WebSphere®, om dit te doen: ga naar Veiligheid -> Globale Veiligheid en uncheck Enable administratieve veiligheidscheckbox, sparen, en herstart de server.
+   * Één manier om AEM te laten een gebruiker voor authentiek verklaren is de globale administratieve veiligheid van de server onbruikbaar te maken WebSphere®, om dit te doen: ga naar Veiligheid > Globale Veiligheid en uncheck Enable administratieve veiligheidscheckbox, sparen, en herstart de server.
 
 * set `"JAVA_OPTS= -Xmx2048m"`
 * Als u AEM wilt installeren met gebruik van contextroot = /, wijzigt u de basis van de context van de bestaande standaardwebtoepassing.

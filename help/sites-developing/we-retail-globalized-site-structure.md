@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: best-practices
 exl-id: e1de20b0-6d7a-4bda-b62f-c2808fd0af28
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ We.Retail is gebouwd met een geglobaliseerde sitestructuur die een taalmaster bi
 
 ## Uitproberen {#trying-it-out}
 
-1. De siteconsole openen vanuit **Algemene navigatie -> Sites**.
+1. De siteconsole openen vanuit **Algemene navigatie > Sites**.
 1. Schakelaar aan kolommening (als niet reeds actief) en selecteer Wij.Retail. Neem nota van de structuur van het voorbeeldland met Zwitserland, de Verenigde Staten, Frankrijk, etc., langs de Meester van de Taal.
 
    ![chlimage_1-87](assets/chlimage_1-87a.png)
@@ -46,7 +46,7 @@ We.Retail is gebouwd met een geglobaliseerde sitestructuur die een taalmaster bi
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Voor elke taalvertaling wordt een project gemaakt. Bekijk ze onder **Navigatie -> Projecten**.
+1. Voor elke taalvertaling wordt een project gemaakt. Bekijk ze onder **Navigation > Projecten**.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 

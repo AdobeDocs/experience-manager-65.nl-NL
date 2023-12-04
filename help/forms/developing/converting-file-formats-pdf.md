@@ -1,19 +1,15 @@
 ---
 title: Bestandsindelingen omzetten in PDF
-seo-title: Converting Between File Formats and PDF
 description: Met de service PDF genereren kunt u eigen bestandsindelingen converteren naar PDF. Met de service PDF genereren zet u ook PDF om in andere bestandsindelingen en optimaliseert u de grootte van PDF-documenten.
-seo-description: Use the Generate PDF service to convert native file formats to PDF. Generate PDF service also converts PDF to other file formats and optimizes the size of PDF documents.
-uuid: f72ad603-c996-4d48-9bfc-bed7bf776af6
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: operations
-discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
 exl-id: 10535740-e3c2-4347-a88f-86706ad699b4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7847'
+source-wordcount: '7812'
 ht-degree: 0%
 
 ---
@@ -544,7 +540,7 @@ Een PDF-document converteren naar een RTF-bestand met de Generate PDF API (webse
    * A `BLOB` object dat staat voor het PDF-bestand dat moet worden omgezet.
    * Een tekenreeks die de padnaam bevat van het bestand dat moet worden omgezet.
    * A `java.lang.String` -object dat de bestandslocatie opgeeft.
-   * Een tekenreeksobject dat het doelbestandstype voor de conversie opgeeft. Geef het volgende op `RTF`.
+   * Een tekenreeksobject dat het doelbestandstype voor de conversie opgeeft. Opgeven `RTF`.
    * Een optioneel `BLOB` -object dat instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
    * Een uitvoerparameter van het type `BLOB` die wordt gevuld door de `ExportPDF2` methode. De `ExportPDF2` Hiermee wordt dit object gevuld met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
 
@@ -634,7 +630,7 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
   <tr>
    <td><p>Aanvullende toepassingsspecifieke dialoogvensterinstructies </p></td>
    <td><p>Hiermee geeft u overschrijvingen en toevoegingen aan de instructies in het specifieke dialoogvenster voor de toepassing op. De sectie bevat een voorbeeld van dergelijke informatie. </p><p>Het bestand dat deze informatie bevat, is appmon.<i>`[appname]`</i>.optellen<i>`[locale]`</i>.xml. Een voorbeeld is appmon.adding.nl_NL.xml.</p></td>
-   <td><p>Bestanden van dit type kunnen worden gemaakt en gewijzigd met een XML-bewerkingstoepassing. (Zie <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing</a>.) </p><p><strong>Belangrijk</strong>: U moet aanvullende toepassingsspecifieke dialoogvensterinstructies maken voor elke native toepassing die uw server ondersteunt. </p></td>
+   <td><p>Bestanden van dit type kunnen worden gemaakt en gewijzigd met een XML-bewerkingstoepassing. (Zie <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">Een XML-bestand voor een extra dialoogvenster maken of wijzigen voor een native toepassing</a>.) </p><p><strong>Belangrijk</strong>: Maak aanvullende toepassingsspecifieke dialoogvensterinstructies voor elke native toepassing die uw server ondersteunt. </p></td>
   </tr>
  </tbody>
 </table>
@@ -673,7 +669,7 @@ De service PDF genereren biedt ondersteuning voor script-XML-bestanden door een 
 
 De stappen in een script-XML-bestand worden in de juiste volgorde uitgevoerd, zonder dat er sprake is van vertakking. De enige voorwaardelijke test die wordt ondersteund, is for time-out/retry. Hiermee wordt een script beëindigd als een stap niet binnen een bepaalde periode en na een bepaald aantal keren is voltooid.
 
-Naast stappen die opeenvolgend zijn, worden de instructies binnen een stap ook uitgevoerd in volgorde. U moet ervoor zorgen dat de stappen en de instructies de orde weerspiegelen waarin een gebruiker die zelfde stappen zou uitvoeren.
+Naast stappen die opeenvolgend zijn, worden de instructies binnen een stap ook uitgevoerd in volgorde. Zorg ervoor dat de stappen en instructies de volgorde weerspiegelen waarin een gebruiker dezelfde stappen zou uitvoeren.
 
 Elke stap in een XML-scriptbestand identificeert het vensterelement dat wordt weergegeven als de instructies van de stap correct zijn uitgevoerd. Als een onverwacht dialoogvenster wordt weergegeven tijdens het uitvoeren van een scriptstap, zoekt de dienst PDF genereren de XML-bestanden van het dialoogvenster zoals beschreven in de volgende sectie.
 
@@ -796,7 +792,7 @@ U kunt reguliere expressies gebruiken in bijschriftspecificaties. De dienst Gene
 
 #### De elementen window en windowList ordenen {#ordering-the-window-and-windowlist-elements}
 
-U moet bestellen `window` en `windowList` de volgende elementen:
+Volgorde `window` en `windowList` de volgende elementen:
 
 * Wanneer meerdere `window` elementen worden weergegeven als onderliggende elementen in een `windowList` of `dialog` -element, deze ordenen `window` elementen in aflopende volgorde, met de lengte van de `caption` namen die de positie in de volgorde aangeven.
 * Wanneer meerdere `windowList` elementen worden weergegeven in een `window` -element, deze ordenen `windowList` elementen in aflopende volgorde, met de lengte van de `caption` kenmerken van de eerste `indexes/`element dat de positie in de volgorde aangeeft.
@@ -864,7 +860,7 @@ De naam van het XML-bestand van het extra dialoogvenster moet de indeling gebrui
 >
 Geen van de generische toepassingen die in het configuratiebestand native2pdfconfig.xml zijn opgegeven, hebben een primair XML-bestand voor de dialoog. De sectie [Ondersteuning voor een eigen bestandsindeling toevoegen of wijzigen](converting-file-formats-pdf.md#adding-or-modifying-support-for-a-native-file-format) worden deze specificaties beschreven.
 
-U moet bestellen `windowList` elementen die als onderliggende elementen in een `window` element. (Zie [De elementen window en windowList ordenen](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
+Volgorde `windowList` elementen die als onderliggende elementen in een `window` element. (Zie [De elementen window en windowList ordenen](converting-file-formats-pdf.md#ordering-the-window-and-windowlist-elements).)
 
 ### Het algemene dialoogvenster-XML-bestand wijzigen {#modifying-the-general-dialog-xml-file}
 
@@ -1062,7 +1058,7 @@ In dit voorbeeld wordt aangegeven hoe de service PDF genereren moet werken met K
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the Print dialog and click on the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
+    <!-- In this step, we acquire the Print dialog and click the 'Preferences' button and the expected window in this case is the dialog with the caption '"Printing Preferences' -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1080,7 +1076,7 @@ In dit voorbeeld wordt aangegeven hoe de service PDF genereren moet werken met K
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which  has the caption '"View Adobe PDF results' and we click on the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
+    <!-- In this step, we acquire the dialog "Printing Preferences' and select the combo box which is the 10th child of window with caption '"Adobe PDF Settings' and select the first index. (Note: All indeces start with 0.) Besides this we uncheck the box which has the caption '"View Adobe PDF results' and we click the button OK. The expectation is that 'Printing Preferences' dialog disappears. -->
     <step>
         <acquiredWindow>
             <window caption="Printing Preferences">
@@ -1104,7 +1100,7 @@ In dit voorbeeld wordt aangegeven hoe de service PDF genereren moet werken met K
         </expectedWindow>
     </step>
 
-    <!-- In this step, we acquire the 'Print' dialog and click on the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
+    <!-- In this step, we acquire the 'Print' dialog and click the Print button. The expectation is that the dialog with caption 'Print' disappears. In this case we use the regular expression '^Print$' for specifying the caption given there could be multiple dialogs with caption that includes the word Print. -->
     <step>
         <acquiredWindow>
             <window caption="Print">
@@ -1123,7 +1119,7 @@ In dit voorbeeld wordt aangegeven hoe de service PDF genereren moet werken met K
             <window caption="Save PDF File As"/>
         </expectedWindow>
     </step>
-    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click on the Save button. The expectation is that the dialog disappears-->
+    <!-- Finally in this step, we acquire the dialog with caption "Save PDF File As" and in the Edit widget type the destination path for the output PDF file and click the Save button. The expectation is that the dialog disappears-->
     <step>
         <acquiredWindow>
             <window caption="Save PDF File As">

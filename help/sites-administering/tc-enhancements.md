@@ -5,9 +5,9 @@ topic-tags: site-features
 content-type: reference
 feature: Language Copy
 exl-id: 2011a976-d506-4c0b-9980-b8837bdcf5ad
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '686'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Deze pagina biedt incrementele verbeteringen en verfijningen voor AEM vertaalbeh
 
 Er zijn opties toegevoegd om de productiviteit bij vertaalprojecten te verbeteren, zoals het automatisch promoten en verwijderen van lanceringen van vertalingen en het plannen van de terugkerende uitvoering van een vertaalproject.
 
-1. Klik of tik in het vertaalproject op de ellips onder aan het **Omzettingsoverzicht** tegel.
+1. In uw vertaalproject, klik de ellips bij de bodem van **Omzettingsoverzicht** tegel.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -40,7 +40,7 @@ Er zijn opties toegevoegd om de productiviteit bij vertaalprojecten te verbetere
 
 Het is mogelijk om veelvoudige doeltalen in een vertaalproject te vormen, om het totale aantal gecreeerde vertaalprojecten te verminderen.
 
-1. Klik of tik in uw vertaalproject op de stippen onder aan het **Omzettingsoverzicht** tegel.
+1. Klik in het vertaalproject op de stippen onder aan het **Omzettingsoverzicht** tegel.
 
    ![screen_shot_2018-04-19at222622](assets/screen_shot_2018-04-19at222622.jpg)
 
@@ -110,11 +110,11 @@ Een eigenschap kan nu worden geselecteerd in de lijstweergave Sites, die aangeef
 
    ![screen_shot_2018-04-23at130646](assets/screen_shot_2018-04-23at130646.jpg)
 
-1. Klikken of tikken **Instellingen weergeven**.
+1. Klikken **Instellingen weergeven**.
 
    ![screen_shot_2018-04-23at130844](assets/screen_shot_2018-04-23at130844.jpg)
 
-1. Controleren **Vertaald** selectievakje onder **Vertaling** en tik/klik **Bijwerken**.
+1. Controleren **Vertaald** selectievakje onder **Vertaling** en klik op **Bijwerken**.
 
    ![screen_shot_2018-04-23at130955](assets/screen_shot_2018-04-23at130955.jpg)
 

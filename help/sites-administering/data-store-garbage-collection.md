@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 5b1e46c5-7e56-433e-b62e-2a76ea7be0fd
 docset: aem65
 exl-id: 0dc4a8ce-5b0e-4bc9-a6f5-df2a67149e22
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1884'
+source-wordcount: '1890'
 ht-degree: 0%
 
 ---
@@ -109,12 +109,12 @@ Als u de inzameling van de opslagvuilnisophaling van gegevens buiten deze tijd m
 
 Voordat u de opschoonfunctie voor gegevensopslag uitvoert, moet u controleren of er op dat moment geen back-ups worden uitgevoerd.
 
-1. Open het vectordashboard op **Navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Onderhoud**.
-1. Klik of tik op **Wekelijks onderhoudvenster**.
+1. Open het vectordashboard op **Navigatie** > **Gereedschappen** > **Bewerkingen** > **Onderhoud**.
+1. Klik op de knop **Wekelijks onderhoudvenster**.
 
    ![chlimage_1-64](assets/chlimage_1-64.png)
 
-1. Selecteer de **Opruimverzameling gegevensopslag** en klik of tik op de knop **Uitvoeren** pictogram.
+1. Selecteer de **Opruimverzameling gegevensopslag** en klik vervolgens op de knop **Uitvoeren** pictogram.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: e56986b2-397e-4802-992b-05a9ea7b2e36
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ U kunt de nieuwsbrief met gerichte inhoud in zowel aanraking-toegelaten als klas
 
 Een nieuwsbrief met doelinhoud maken:
 
-1. Een nieuwsbrief met de gewenste inhoud maken: klik of tik onder E-mailcampagnes in Geometrixx Outdoors **Maken** > **Pagina** en selecteer een van de Adobe Campaign Mail-sjablonen.
+1. Een nieuwsbrief met de gewenste inhoud maken: klik onder E-mailcampagnes in Geometrixx Outdoors op **Maken** > **Pagina** en selecteer een van de Adobe Campaign Mail-sjablonen.
 
    >[!NOTE]
    >
@@ -84,7 +84,7 @@ Een nieuwsbrief met doelinhoud maken:
 
    >[!NOTE]
    >
-   >Standaard gebruiken de e-mailvoorbeelden die bij AEM worden geleverd Adobe Campaign als de doelengine. Voor aangepaste nieuwsbrieven moet u wellicht Adobe Campaign selecteren als de doelengine. Tik of klik op + wanneer u een doel instelt op de werkbalk, voer een titel in voor de nieuwe activiteit en selecteer **Adobe Campaign** als de doelmotor.
+   >Standaard gebruiken de e-mailvoorbeelden die bij AEM worden geleverd Adobe Campaign als de doelengine. Voor aangepaste nieuwsbrieven moet u wellicht Adobe Campaign selecteren als de doelengine. Klik + op de werkbalk als u een doel instelt, voer een titel in voor de nieuwe activiteit en selecteer **Adobe Campaign** als de doelmotor.
 
 1. Klikken **Standaard** en dan de component van de Tekst en van de Personalisatie u toevoegde en u ziet de Bullseye met een pijl in het. Klik op het pictogram om deze component als doel in te stellen.
 

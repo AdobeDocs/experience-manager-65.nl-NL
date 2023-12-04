@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: 61208bd5-475b-40be-ba00-31bbbc952adf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1788'
+source-wordcount: '1726'
 ht-degree: 0%
 
 ---
@@ -28,10 +28,10 @@ There are two options to disable ContextHub:
 
 * Edit the ContextHub's configuration and check the option **Disable ContextHub**
 
-    1. In the rail click or tap **Tools &gt; Sites &gt; ContextHub**
-    1. Click or tap the appropriate **Configuration Container**
-    1. Select the **ContextHub Configuration** and click or tap **Edit Selected Element**
-    1. Click or tap **Disable ContextHub** and click or tap **Save**
+    1. In the rail click **Tools &gt; Sites &gt; ContextHub**
+    1. Click the appropriate **Configuration Container**
+    1. Select the **ContextHub Configuration** and click **Edit Selected Element**
+    1. Click **Disable ContextHub** and click **Save**
 
 or
 -->
@@ -74,10 +74,10 @@ Pictogrammen zijn verwijzingen uit de [Pictogrambibliotheek van Koral UI](https:
 
 Voeg een wijze UI aan groep verwante modules ContextHub toe. Wanneer u de wijze UI creeert, verstrekt u de titel en het pictogram die in de toolbar ContextHub verschijnen.
 
-1. Klik of tik op Gereedschappen > Sites > Context Hub in de Experience Manager.
-1. Klik of tik de standaardContainer van de Configuratie.
-1. Klik of tik de Configuratie van de Hub van de Context.
-1. Klik of tik de Create knoop, en klik of tik dan de Wijze UI van de Hub van de Context.
+1. Voor de spoorstaaf van de Experience Manager, klik Hulpmiddelen > Plaatsen > de Hub van de Context.
+1. Klik de standaardContainer van de Configuratie.
+1. Klik de Configuratie van de Hub van de Context.
+1. Klik de Create knoop, en klik dan de Wijze UI van de Hub van de Context.
 
    ![chlimage_1-320](assets/chlimage_1-320.png)
 
@@ -87,7 +87,7 @@ Voeg een wijze UI aan groep verwante modules ContextHub toe. Wanneer u de wijze 
    * Pictogram Modus: De kiezer voor de [Pictogram Koraalinterface](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableIcons) bijvoorbeeld `coral-Icon--user`
    * Toegelaten: Uitgezocht om de wijze UI op de toolbar te tonen ContextHub
 
-1. Klik of tik op Opslaan.
+1. Klik op Opslaan.
 
 ### Een UI-module toevoegen {#adding-a-ui-module}
 
@@ -108,11 +108,11 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
 | [contexthub.tagcloud](/help/sites-developing/ch-samplemodules.md#contexthub-tagcloud-ui-module-type) | Statistieken over paginatags weergeven | tagcloud |
 | [graniet.profile](/help/sites-developing/ch-samplemodules.md#granite-profile-ui-module-type) | Hiermee wordt de profielinformatie voor de huidige gebruiker weergegeven, inclusief authorizableID, displayName en familyName. U kunt de waarde van displayName en familyName wijzigen. | profiel |
 
-1. Klik of tik op Extra > Sites > ContextHub in de Experience Manager.
-1. Klik of tik de Container van de Configuratie waaraan u een module UI wilt toevoegen.
+1. Voor de spoorstaaf van de Experience Manager, klik Hulpmiddelen > Plaatsen > ContextHub.
+1. Klik de Container van de Configuratie waaraan u een module UI wilt toevoegen.
 1. Klik of typ de Configuratie ContextHub waaraan u de module UI wilt toevoegen.
-1. Klik of tik de wijze UI waaraan u de module UI toevoegt.
-1. Klik of tik de Create knoop, dan klik of tik de Module van ContextHub UI (algemeen).
+1. Klik de wijze UI waaraan u de module UI toevoegt.
+1. Klik de Create knoop, dan klik de Module van ContextHub (algemeen).
 
    ![chlimage_1-321](assets/chlimage_1-321.png)
 
@@ -123,7 +123,7 @@ De eigenschappen van de module UI omvatten een detailconfiguratie waar u waarden
    * Toegelaten: Uitgezocht om de module UI in de toolbar te tonen ContextHub
 
 1. (Optioneel) Als u de standaardwinkelconfiguratie wilt overschrijven, voert u een JSON-object in om de UI-module te configureren.
-1. Klik of tik op Opslaan.
+1. Klik op Opslaan.
 
 ## Een ContextHub-winkel maken {#creating-a-contexthub-store}
 
@@ -151,14 +151,14 @@ AEM verstrekt de volgende kandidaten van de steekproefopslag waarop u een opslag
 | [contexthub.surferinfo](/help/sites-developing/ch-samplestores.md#contexthub-surferinfo-sample-store-candidate) | Hiermee wordt informatie over de client opgeslagen, zoals apparaatinformatie, browsertype en vensterrichting |
 | [contexthub.tagcloud](/help/sites-developing/ch-samplestores.md#contexthub-tagcloud-sample-data-store) | Hiermee worden paginatags en tellingen van tags opgeslagen |
 
-1. Klik of tik op Extra > Sites > ContextHub in de Experience Manager.
-1. Klik of tik de standaardconfiguratiecontainer.
-1. Klik of tik Configuratie Contexthub
-1. Als u een winkel wilt toevoegen, klikt of tikt u op het pictogram Maken en klikt of tikt u op ContexHub Store Configuration.
+1. Voor de spoorstaaf van de Experience Manager, klik Hulpmiddelen > Plaatsen > ContextHub.
+1. Klik op de standaardconfiguratiecontainer.
+1. Klik op Contexthub-configuratie
+1. Om een opslag toe te voegen, klik het Create pictogram en klik dan de Configuratie van de Winkel ContexHub.
 
    ![chlimage_1-322](assets/chlimage_1-322.png)
 
-1. Geef waarden op voor de basisconfiguratie-eigenschappen en klik of tik op Volgende:
+1. Geef waarden op voor de basisconfiguratie-eigenschappen en klik op Volgende:
 
    * **Configuratitel:** De titel die de winkel identificeert
    * **Winkeltype:** De waarde van het storeType bezit van de opslagkandidaat waarop om de opslag te baseren
@@ -166,7 +166,7 @@ AEM verstrekt de volgende kandidaten van de steekproefopslag waarop u een opslag
    * **Ingeschakeld:** Selecteren om de winkel in te schakelen
 
 1. (Optioneel) Als u de standaardopslagconfiguratie wilt overschrijven, voert u een JSON-object in het vak Detail Configuration (JSON) in.
-1. Klik of tik op Opslaan.
+1. Klik op Opslaan.
 
 ## Voorbeeld: een JSONP-service gebruiken  {#example-using-a-jsonp-service}
 
@@ -241,10 +241,10 @@ Een het zuiveren wijze voor ContextHub kan worden toegelaten om voor het oplosse
 
 Bewerk de configuratie van ContextHub en controleer de optie **Foutopsporing**
 
-1. Klik of tik in de spoorstaaf **Extra > Sites > ContextHub**
-1. Klik of tik de standaard **Configuratie-container**
-1. Selecteer de **ContextHub-configuratie** en klik of tik **Geselecteerd element bewerken**
-1. Klikken of tikken **Foutopsporing** en klik of tik **Opslaan**
+1. Klik in het spoor **Extra > Sites > ContextHub**
+1. Klik op de standaardinstelling **Configuratie-container**
+1. Selecteer de **ContextHub-configuratie** en klik op **Geselecteerd element bewerken**
+1. Klikken **Foutopsporing** en klik op **Opslaan**
 
 ### Via CRXDE {#via-crxde}
 

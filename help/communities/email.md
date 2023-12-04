@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Configuring Email
 role: Admin
 exl-id: bf97d388-f8ca-4e37-88e2-0c536834311e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '752'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ Voor de e-mail die naar de gegevensopslagplaats moet worden gebracht, is het noo
 
   Bijvoorbeeld: [http://localhost:4503/etc/importers/polling.html](http://localhost:4503/etc/importers/polling.html)
 
-* Selecteer **[!UICONTROL Add]**
+* Selecteren **[!UICONTROL Add]**
 
   ![opiniepeiling-importeur](assets/polling-importer.png)
 
@@ -180,7 +180,7 @@ Voor de e-mail die naar de gegevensopslagplaats moet worden gebracht, is het noo
 
 * **[!UICONTROL URL]**
 
-  *(Vereist)* De uitgaande mailserver. Bijvoorbeeld, `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
+  *(Vereist)* De uitgaande mailserver. Bijvoorbeeld: `pop.gmail.com:995/INBOX?username=community-emailgmail.com&password=****`.
 
 * **[!UICONTROL Import to Path]**&amp;asteren;
 
@@ -199,7 +199,7 @@ door naar de `postEmails`map en selecteer **OK**.
 
   *(Optioneel)*
 
-* Selecteer **[!UICONTROL OK]**.
+* Selecteren **[!UICONTROL OK]**.
 
 ### Protocol aanpassen voor nieuwe pollingimportmodule {#adjust-protocol-for-new-polling-importer}
 
@@ -217,4 +217,4 @@ Gebruiken [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md
 
 De rode driehoeken geven de gewijzigde eigenschappen aan. Sla de wijzigingen op:
 
-* Selecteer **[!UICONTROL Save All]**.
+* Selecteren **[!UICONTROL Save All]**.

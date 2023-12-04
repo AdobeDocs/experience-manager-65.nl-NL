@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: personalization
 content-type: reference
 exl-id: a4717cb8-b70c-4150-b816-35e9b871e792
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1163'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,7 @@ Daarnaast moet u mogelijk ook de Adobe Campaign-sjabloon selecteren en het onder
 
    >[!NOTE]
    >
-   >Tik of klik op **OK** of **Toepassen** na het toevoegen van de cloudservice. Hierdoor wordt de **Adobe Campaign** gebruiken om correct te werken.
+   >Zorg ervoor dat u op **OK** of **Toepassen** na het toevoegen van de cloudservice. Hierdoor wordt de **Adobe Campaign** gebruiken om correct te werken.
 
 1. Als u een specifieke sjabloon voor e-maillevering wilt toepassen (vanuit Adobe Campaign), anders dan de standaardsjabloon **post** sjabloon, selecteert u **Pagina-eigenschappen** opnieuw. In de **Adobe Campaign** voert u de interne naam van de sjabloon voor e-maillevering in het gerelateerde Adobe Campaign-exemplaar in.
 

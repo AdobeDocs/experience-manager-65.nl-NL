@@ -4,9 +4,9 @@ description: De test van de Dag van de Stevige simuleert de dagelijkse lading va
 topic-tags: testing
 content-type: reference
 exl-id: ceb9671c-57f9-4d81-94c0-0dbccd4d90a2
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1822'
+source-wordcount: '1824'
 ht-degree: 0%
 
 ---
@@ -130,7 +130,7 @@ U vindt de relevante parameters in de onderstaande lijst:
 | `--port=<Val>` | De poort van de host. | 4502 |  |
 | `--user=<Val>` | De gebruikersnaam voor de instantie. | admin |  |
 | `--password=<Val>` | Wachtwoord voor de opgegeven gebruiker. | admin |  |
-| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**) seconden, (**m**)minuten, (**h**) en (**d**). | 1d |  |
+| `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**) seconden, (**m**)minuten, (**h**) en (**d**). | 1 quinquies |  |
 | `--timeout=<Val>` | Hoe lang een test zal lopen alvorens het zal worden onderbroken en als ontbroken gemerkt. Uitgedrukt in seconden. | 180 |  |
 | `--suite=<Val>` | De waarde kan één of een lijst (gescheiden door komma&#39;s) van vooraf bepaalde testsuites zijn. | nachtmerrie |  |
 | `--configfile=<Val>` | Het doelafbeeldingsconfiguratiebestand. |  |  |
@@ -238,7 +238,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met de `config`* *parameter. U moet ook de naam van de suite en de werkelijke naam van de test opgeven (niet de naam van de testklasse). U kunt de testnaam vinden in het dialoogvenster `name` eigenschap van de klasse Test. Voor meer informatie over het zoeken naar testeigenschappen leest u de [Testeigenschappen wijzigen](/help/sites-developing/tough-day.md#changing-the-test-properties) sectie.
+Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met de `config`* *parameter. Geef ook de naam van de suite en de werkelijke naam van de test op (niet de naam van de klasse Test). U kunt de testnaam vinden in het dialoogvenster `name` eigenschap van de klasse Test. Voor meer informatie over het zoeken naar testeigenschappen leest u de [Testeigenschappen wijzigen](/help/sites-developing/tough-day.md#changing-the-test-properties) sectie.
 
 In het voorbeeld onder de standaardelementtitel voor de `CreatePageTreeTest` (benoemd `UploadAsset`) is gewijzigd in &quot;NewAsset&quot;.
 
@@ -260,7 +260,7 @@ tests:
       title : NewAsset
 ```
 
-Ook, kunt u tests uit vooraf bepaalde reeksen of uitgevers van de standaardconfiguratie met het gebruik van verwijderen `exclude` parameter. U moet ook de naam van de suite en de werkelijke naam van de test opgeven (niet de test C) `lass` naam). U kunt de testnaam vinden in het dialoogvenster `name` eigenschap van de testklasse. In het onderstaande voorbeeld wordt `CreatePageTreeTest` (benoemd `UploadAsset`) wordt verwijderd uit de toughday-suite.
+Ook, kunt u tests uit vooraf bepaalde reeksen of uitgevers van de standaardconfiguratie met het gebruik van verwijderen `exclude` parameter. Geef ook de naam van de suite en de werkelijke naam van de test op (niet de test C) `lass` naam). U kunt de testnaam vinden in het dialoogvenster `name` eigenschap van de testklasse. In het onderstaande voorbeeld wordt `CreatePageTreeTest` (benoemd `UploadAsset`) wordt verwijderd uit de toughday-suite.
 
 Door opdrachtregelparameters te gebruiken:
 
@@ -360,7 +360,7 @@ Op ruwe Dag 2 worden momenteel negen testmetriek gerapporteerd die u kunt evalue
 | StdDev&#42; | De standaardafwijking. |
 | 90p&#42; | 90 percentiel. |
 | 99p&#42; | 99 percentiel. |
-| 99.9p&#42; | 99,9 percentiel. |
+| 99,9p&#42; | 99,9 percentiel. |
 | Reële doorvoer&#42; | Het aantal regels gedeeld door de verstreken uitvoeringstijd. |
 
 Deze metriek wordt geschreven met behulp van uitgevers die met de `add` parameter (vergelijkbaar met het toevoegen van tests). Er zijn momenteel twee opties:

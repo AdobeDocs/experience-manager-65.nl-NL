@@ -10,14 +10,14 @@ discoiquuid: 5d2364b7-4497-4f8b-85ef-6e780bfb8c36
 docset: aem65
 feature: Configuring
 exl-id: d3375935-090d-4052-8234-68ef4ddbab6a
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '5939'
+source-wordcount: '5793'
 ht-degree: 0%
 
 ---
 
-# Uw Adobe Experience Manager-instantie controleren en onderhouden{#monitoring-and-maintaining-your-aem-instance}
+# Uw Adobe Experience Manager-exemplaar controleren en onderhouden{#monitoring-and-maintaining-your-aem-instance}
 
 Nadat uw AEM instanties worden opgesteld, moet u hun verrichting, prestaties, en integriteit controleren en handhaven.
 
@@ -98,7 +98,7 @@ Deze sectie behandelt onderhoudswerkzaamheden met betrekking tot de versieeigens
 
 ### Overzicht {#overview}
 
-De **Purperen** is beschikbaar als wekelijkse onderhoudstaak. Voordat u deze voor de eerste keer kunt gebruiken, moet u deze toevoegen en vervolgens configureren. Daarna kan het op verzoek of wekelijks worden uitgevoerd.
+De **Purperen** is beschikbaar als wekelijkse onderhoudstaak. Alvorens voor het eerst te gebruiken, moet het worden toegevoegd, dan gevormd. Daarna kan het op verzoek of wekelijks worden uitgevoerd.
 
 ### Versies van een website wissen {#purging-versions-of-a-web-site}
 
@@ -294,7 +294,7 @@ In bepaalde omstandigheden, kunt u een dossier van het douanelogboek met een ver
 
      Wanneer `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten).
 
-     Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
+     Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.config-MINE`
 
    * Type: `sling:OsgiConfig`
 
@@ -391,7 +391,7 @@ In bepaalde omstandigheden, kunt u een dossier van het douanelogboek met een ver
 
    * Naam: `org.apache.sling.commons.log.LogManager.factory.writer-<identifier>` (een schrijver)
 
-     Net als bij de Logger, `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
+     Net als bij de Logger, `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld: `org.apache.sling.commons.log.LogManager.factory.writer-MINE`
 
    * Type: `sling:OsgiConfig`
 
@@ -483,7 +483,7 @@ Deze vermeldingen bevatten dezelfde gegevens als bij het bewerken van een pagina
 
 #### OSGi-auditrecords van de webconsole {#osgi-audit-records-from-the-web-console}
 
-OSGi-gebeurtenissen genereren ook controlegegevens die kunnen worden afgeleid uit de **Configuratiestatus** tab -> **Logbestanden** in de AEM webconsole:
+OSGi-gebeurtenissen genereren ook controlegegevens die kunnen worden afgeleid uit de **Configuratiestatus** tab > **Logbestanden** in de AEM webconsole:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -1138,7 +1138,7 @@ Als er onvoldoende schijfruimte beschikbaar is op uw systeem, of als u merkt dat
    * [Configuratie van Apache Sling-logboekregistratie](/help/sites-deploying/osgi-configuration-settings.md#apacheslingloggingconfiguration)
    * [Bibliotheekbeheer CQ HTML](/help/sites-deploying/osgi-configuration-settings.md#daycqhtmllibrarymanager)
    * [CQ WCM-foutopsporingsfilter](/help/sites-deploying/osgi-configuration-settings.md#daycqwcmdebugfilter)
-   * [Logboeken](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
+   * [Loggers](/help/sites-deploying/monitoring-and-maintaining.md#activating-the-debug-log-level)
 
 * Of en hoe u Versie zuiveren [hebt geconfigureerd](/help/sites-deploying/version-purging.md)
 * De Knowledge Base:

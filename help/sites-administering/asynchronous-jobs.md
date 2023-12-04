@@ -2,10 +2,10 @@
 title: Asynchrone taken
 description: Adobe Experience Manager optimaliseert prestaties door sommige resource-intensieve taken asynchroon te voltooien.
 exl-id: 4af1bcfe-9f2e-44a4-8666-881f2dccc3bc
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '722'
-ht-degree: 89%
+source-wordcount: '715'
+ht-degree: 83%
 
 ---
 
@@ -21,7 +21,7 @@ Deze bewerkingen omvatten:
 * Assets die boven de ingestelde drempelwaarde liggen, importeren vanaf een externe Experience Manager-implementatie
 * Actieve exemplaren uitrollen
 
-U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Job Status]**-dashboard via **Algemene navigatie** -> **Tools** -> **Bewerkingen** -> **Taken**.
+U kunt de status van asynchrone taken weergeven in het menu **[!UICONTROL Async Job Status]** dashboard op **Algemene navigatie** > **Gereedschappen** > **Bewerkingen** > **Taken**.
 
 >[!NOTE]
 >
@@ -29,7 +29,7 @@ U kunt de status van asynchrone taken weergeven vanaf het **[!UICONTROL Async Jo
 >
 >Voor meer informatie raadpleegt u [wachtrijconfiguraties](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## De status van asynchrone bewerkingen bewaken {#monitor-the-status-of-asynchronous-operations}
+## De status van asynchrone bewerkingen controleren {#monitor-the-status-of-asynchronous-operations}
 
 Wanneer AEM een bewerking asynchroon verwerkt, ontvangt u een bericht in uw [inbox](/help/sites-authoring/inbox.md) en via e-mail (mits ingeschakeld).
 
@@ -90,7 +90,7 @@ U kunt het schema wijzigen voor de opschoontaak en hoe lang details van voltooid
 
 U kunt het drempelaantal elementen, pagina&#39;s of verwijzingen voor AEM configureren om een bepaalde bewerking asynchroon te verwerken en e-mailmeldingen in en uit te schakelen wanneer de taken worden verwerkt.
 
-### Asynchrone verwijderingsbewerkingen van assets configureren {#configuring-synchronous-delete-operations}
+### Asynchrone bewerkingen voor het verwijderen van elementen configureren {#configuring-synchronous-delete-operations}
 
 Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wordt de verwijderingsbewerking asynchroon uitgevoerd.
 
@@ -103,7 +103,7 @@ Als het aantal te verwijderen assets of mappen de drempelwaarde overschrijdt, wo
 1. Schakel de optie **E-mailmeldingen inschakelen** in om e-mailmeldingen te ontvangen voor deze taakstatus. succes bijvoorbeeld, mislukt.
 1. Sla de wijzigingen op.
 
-### Asynchrone verplaatsingsbewerkingen van assets configureren {#configuring-asynchronous-move-operations}
+### Asynchrone verplaatsingsbewerkingen voor middelen configureren {#configuring-asynchronous-move-operations}
 
 Als het aantal te verplaatsen assets/mappen de drempelwaarde overschrijdt, wordt de verplaatsingsbewerking asynchroon uitgevoerd.
 

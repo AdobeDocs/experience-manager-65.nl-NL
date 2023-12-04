@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 exl-id: de1ae7e3-db3a-4b5e-8a4f-ae111227181f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '632'
 ht-degree: 0%
 
 ---
@@ -65,15 +65,15 @@ In de modus Annotatie kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
    >[!NOTE]
    >
-   >Tik op het pictogram Annotatie (x-symbool) rechts van de bovenste werkbalk om de modus Annotatie af te sluiten.
+   >Als u de modus Annotatie wilt afsluiten, klikt u op het pictogram Annotatie (x-symbool) rechts van de bovenste werkbalk.
 
-1. Klik of tik op het pictogram Annotatie toevoegen (plus symbool links op de werkbalk) om annotaties toe te voegen.
+1. Klik op het pictogram Annotatie toevoegen (plus symbool links op de werkbalk) om annotaties toe te voegen.
 
    >[!NOTE]
    >
-   >Tik op of klik op het pictogram Annuleren (x-symbool in een witte cirkel) links van de bovenste werkbalk om het toevoegen van annotaties (en terug te keren naar de weergave) te stoppen.
+   >Klik op het pictogram Annuleren (x-symbool in een witte cirkel) links van de bovenste werkbalk om het toevoegen van annotaties (en terug te keren naar de weergave) te stoppen.
 
-1. Klik of tik op de vereiste component (componenten die kunnen worden geannoteerd, worden gemarkeerd met een blauwe rand) om de annotatie toe te voegen en het dialoogvenster te openen:
+1. Klik op de vereiste component (componenten die kunnen worden geannoteerd, worden gemarkeerd met een blauwe rand) om de annotatie toe te voegen en het dialoogvenster te openen:
 
    ![screen_shot_2018-03-22at110606](assets/screen_shot_2018-03-22at110606.png)
 
@@ -100,17 +100,17 @@ In de modus Annotatie kunt u annotaties voor uw inhoud maken, bewerken, verplaat
 
 1. Nadat u een specifieke annotatie hebt bewerkt, kunt u:
 
-   * Klik of tik op de tekstmarkering om de annotatie te openen. Nadat u de volledige tekst hebt geopend, kunt u de annotatie wijzigen of verwijderen.
+   * Klik op de tekstmarkering om de annotatie te openen. Nadat u de volledige tekst hebt geopend, kunt u de annotatie wijzigen of verwijderen.
 
       * Schetsen kunnen niet onafhankelijk van de annotatie worden verwijderd.
 
    * Verander de positie van de tekstmarkering.
-   * Klik of tik op een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
+   * Klik op een schetslijn om die schets te selecteren en sleep deze naar de gewenste positie.
    * Een component verplaatsen of kopiëren
 
       * Eventuele verwante annotaties en de bijbehorende schetsen worden ook verplaatst of gekopieerd en hun positie ten opzichte van de alinea blijft dezelfde.
 
-1. Tik op het pictogram Annotatie (x-symbool) rechts van de bovenste werkbalk of klik op het pictogram Annotatie om de Annotatiemodus te sluiten en terug te keren naar de eerder gebruikte modus.
+1. Als u de Annotatiemodus wilt afsluiten en wilt terugkeren naar de eerder gebruikte modus, klikt u op het pictogram Annotatie (x-symbool) rechts van de bovenste werkbalk.
 
 >[!NOTE]
 >

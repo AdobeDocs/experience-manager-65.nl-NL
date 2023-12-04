@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: bba64ce6-8b74-4be1-bf14-cfdf3b9b60e1
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2582'
+source-wordcount: '2444'
 ht-degree: 0%
 
 ---
@@ -181,7 +181,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 1. Open CRXDE Lite, bijvoorbeeld:
    [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 
-1. Ga naar :
+1. Navigeren naar:
    `/apps/msm/<your-project>/rolloutconfigs`
 
    >[!NOTE]
@@ -191,7 +191,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
    >[!NOTE]
    >
-   >U mag niets wijzigen in het dialoogvenster `/libs` pad.
+   >Wijzig niets in de `/libs` pad.
    >Dit komt omdat de inhoud van `/libs` wordt de volgende keer overschreven wanneer u een upgrade uitvoert van uw exemplaar (en kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
    >De aanbevolen methode voor configuratie en andere wijzigingen is:
    >
@@ -212,7 +212,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
      **Waarde**: Een optionele beschrijving.
    * **Naam**: `cq:trigger`
      **Type**: `String`
-     **Waarde**: De [Rollouttrigger](/help/sites-administering/msm-sync.md#rollout-triggers) te gebruiken. Selecteer  vanuit:
+     **Waarde**: De [Rollouttrigger](/help/sites-administering/msm-sync.md#rollout-triggers) te gebruiken. Selecteren uit:
       * `rollout`
       * `modification`
       * `publish`

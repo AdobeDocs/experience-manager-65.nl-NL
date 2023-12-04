@@ -2,7 +2,7 @@
 title: Ervaringen op het gebied van authoringhandel
 description: De CIF add-on breidt Adobe Experience Manager-authoring uit met specifieke handelsmogelijkheden.
 exl-id: 2db51bd7-8fc7-4ae8-8d6f-e5035fbe954d
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '713'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Als u op de bovenliggende categorie klikt, gaat de auteur terug naar het product
 
 ![Teasercomponent zonder selectie](/help/commerce/cif/assets/authoring/teaser_component_without_selection.png)
 
-Het configuratiedialoogvenster van deze component vereist een product. CIF gebruikt SKU als product herkenningsteken. Auteurs kunnen de skin handmatig invoeren of op het mappictogram klikken om de productkiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster met componenten de naam van het geselecteerde product weergegeven
+Het configuratiedialoogvenster van deze component vereist een product. CIF gebruikt SKU als product-id. Auteurs kunnen de skin handmatig invoeren of op het mappictogram klikken om de productkiezer te openen. Nadat u de kiezer hebt geselecteerd en gesloten, wordt in het dialoogvenster met componenten de naam van het geselecteerde product weergegeven
 
 ![Taser-component met selectie](/help/commerce/cif/assets/authoring/teaser_component_with_selection.png)
 

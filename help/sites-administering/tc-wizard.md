@@ -3,9 +3,9 @@ title: Wizard Taalkopie
 description: Leer over het gebruiken van de Tovenaar van het Exemplaar van de Taal in het Manager van de Ervaring van de Adobe.
 feature: Language Copy
 exl-id: 99f9929f-26de-4e95-9ee3-d70512d53bb7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ De wizard Taalkopie is een begeleide ervaring voor het maken van meertalige cont
 
 U kunt als volgt deze wizard openen:
 
-1. Selecteer een pagina in Sites en tik op Maken.
+1. Selecteer een pagina in Sites en klik op Maken.
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 

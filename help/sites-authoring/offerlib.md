@@ -11,10 +11,10 @@ topic-tags: personalization
 discoiquuid: 81102d77-e856-4c85-b932-f22de8ca6462
 docset: aem65
 exl-id: 34293432-cfdc-466b-96bd-2c43b566a420
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '865'
-ht-degree: 1%
+source-wordcount: '834'
+ht-degree: 0%
 
 ---
 
@@ -33,21 +33,21 @@ Maak een merk waaraan uw aanbiedingen zijn gekoppeld. Open een merk in de consol
 
 Wanneer u een merk maakt met de console Aanbiedingen, wordt dit ook weergegeven in het dialoogvenster [Activiteitenconsole](/help/sites-authoring/activitylib.md) waar u activiteiten voor het merk kunt toevoegen en beheren.
 
-1. Klik of tik in de navigatieconsole op **Personalisatie** > **Aanbiedingen**.
+1. Klik in de navigatieconsole op **Personalisatie** > **Aanbiedingen**.
 
    ![screen-shot_2019-03-05at124139-1](assets/screen-shot_2019-03-05at124139-1.png)
 
-1. Klikken of tikken **Maken** en vervolgens **Maken** **Merk**.
-1. Selecteer de merksjabloon en klik of tik op **Volgende**.
+1. Klikken **Maken** en vervolgens **Maken** **Merk**.
+1. Selecteer de merksjabloon en klik op **Volgende**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles van Aanbiedingen en Activiteiten. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
-1. Klikken of tikken **Maken**.
+1. Klikken **Maken**.
 
 ## Een map toevoegen aan een aanbiedingsbibliotheek {#add-a-folder-to-an-offer-library}
 
 Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te organiseren en op te slaan. U kunt een map maken onder het merk of onder andere mappen.
 
 1. Open in de console Aanbiedingen de locatie waar u de map wilt maken. Open bijvoorbeeld het merk om een map op hoofdniveau te maken of open een andere map in de bibliotheek.
-1. Klikken of tikken **Maken** > **Map of voorstel maken**.
+1. Klikken **Maken** > **Map of voorstel maken**.
 
    ![screen-shot_2019-03-05at124557](assets/screen-shot_2019-03-05at124557.png)
 
@@ -56,7 +56,7 @@ Voeg een map toe aan de aanbiedingsbibliotheek van een merk om aanbiedingen te o
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
-1. Klikken of tikken **Maken**.
+1. Klikken **Maken**.
 
 ## Een voorstel toevoegen aan een bibliotheek met aanbiedingen {#add-an-offer-to-an-offer-library}
 
@@ -65,13 +65,13 @@ Voeg een aanbieding toe aan de aanbiedingsbibliotheek van een merk zodat deze aa
 Nadat u het voorstel hebt gemaakt, kunt u het openen om de inhoud te ontwerpen.
 
 1. In de console van Aanbiedingen, open de plaats waar u de aanbieding wilt tot stand brengen. Open bijvoorbeeld het merk om een aanbieding op hoofdniveau te maken of open een map in de bibliotheek.
-1. Klikken of tikken **Maken** > **Map of voorstel maken**.
+1. Klikken **Maken** > **Map of voorstel maken**.
 
    ![screen-shot_2019-03-05at124557-1](assets/screen-shot_2019-03-05at124557-1.png)
 
-1. Selecteer de **Pagina voorstellen** sjabloon en klik of tik op **Volgende**.
-1. Typ een titel voor de aanbieding en selecteer of typ desgewenst een of meer tags die u aan de aanbieding wilt koppelen. Klik of tik vervolgens op **Maken**.
-1. Klik of tik in het bevestigingsdialoogvenster om de aanbieding voor bewerken te openen **Pagina openen**.
+1. Selecteer de **Pagina voorstellen** sjabloon en klik vervolgens op **Volgende**.
+1. Typ een titel voor de aanbieding en selecteer desgewenst een of meer tags die u aan de aanbieding wilt koppelen. Klik vervolgens op **Maken**.
+1. Klik in het bevestigingsdialoogvenster op **Pagina openen**.
 
 ## Een voorstel bewerken {#editing-an-offer}
 
@@ -79,7 +79,7 @@ Open een aanbieding en bewerk de inhoud zoals u die in de ervaringen wilt weerge
 
 U kunt een voorstel van een omslag in een aanbiedingsbibliotheek of van onderzoeksresultaten openen. Je kunt ook een voorstel openen vanuit een ervaring die gebruikmaakt van het voorstel.
 
-1. Tik of klik op het pictogram naast de aanbieding in de console Aanbiedingen en klik of tik op **Bewerken**.
+1. Klik in de console Aanbiedingen op het pictogram naast de aanbieding en klik op **Bewerken**.
 1. Voeg componenten toe aan de aanbieding en bewerk de componenteninhoud zoals gebruikelijk.
 
 ## Een voorstel verwijderen {#deleting-an-offer}
@@ -88,15 +88,15 @@ Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u een aanbiedin
 
 U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibliotheek of de zoekresultaten bekijkt.
 
-1. Tik of klik op het pictogram naast de aanbieding in de console Aanbiedingen en klik of tik op **Verwijderen**.
+1. Klik in de console Aanbiedingen op het pictogram naast de aanbieding en klik op **Verwijderen**.
 
-   Selecteer de aanbieding en klik of tik op **Verwijderen**.
+   Selecteer de aanbieding en klik op **Verwijderen**.
 
-1. Klik of tik op **Verwijderen** om de schrapping te bevestigen.
+1. Klik op **Verwijderen** om de schrapping te bevestigen.
 1. Als de aanbieding in een of meer ervaringen wordt gebruikt, verschijnt er een dialoogvenster waarin wordt aangegeven dat naar de aanbieding wordt verwezen:
 
-   * Als u de aanbieding wilt verwijderen en deze uit de ervaringen wilt verwijderen, klikt u of tikt u op **Verwijderen forceren**.
-   * Klik of tik op **Annuleren**.
+   * Als u het voorstel wilt verwijderen en uit de ervaringen wilt verwijderen, klikt u op **Verwijderen forceren**.
+   * Klik op **Annuleren**.
 
 ## Zoeken naar voorstellen {#searching-for-offers}
 
@@ -108,5 +108,5 @@ De huidige zoekcriteria worden naast de zoekresultaten weergegeven. U kunt de re
 
 Zoekvoorstellen:
 
-1. Klik of tik op het vergrootglaspictogram boven aan de console Aanbiedingen. Standaard is de zoekopdracht beperkt tot voorstellen.
+1. Klik boven aan de console van Offers op het vergrootglaspictogram. Standaard is de zoekopdracht beperkt tot voorstellen.
 1. Voer uw trefwoord in om naar voorstellen te zoeken. Maak een keuze uit de resultaten.

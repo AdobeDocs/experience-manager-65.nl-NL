@@ -7,14 +7,14 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: e1b5aea0-983c-4e7b-9d35-d7beeee45dc7
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1831'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
 
-# Paginacontent bewerken{#editing-page-content}
+# Pagina-inhoud bewerken{#editing-page-content}
 
 Nadat u de pagina hebt gemaakt (nieuw of als onderdeel van een opstart of live kopie), kunt u de inhoud bewerken en de gewenste updates uitvoeren.
 
@@ -181,7 +181,7 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
 1. **Live kopie**
 
-   Als een component deel uitmaakt van een livecopy of lancering, wordt het aangegeven met een hangslotpictogram. U kunt op de hangslot klikken om de overerving te annuleren.
+   Als een component deel uitmaakt van een livecopy of lancering, wordt het aangegeven met een hangslotpictogram. U kunt op het hangslot klikken om de overerving te annuleren.
 
    * Het hangslotpictogram wordt weergegeven wanneer de component is geselecteerd, bijvoorbeeld:
 

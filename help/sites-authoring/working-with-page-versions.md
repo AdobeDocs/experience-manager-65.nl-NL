@@ -2,9 +2,9 @@
 title: Werken met versies van inhoudspagina's
 description: Maak, vergelijk en herstel versies van een pagina in Adobe Experience Manager.
 exl-id: cb7a9da2-7112-4ef0-b1cf-211a7df93625
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1501'
+source-wordcount: '1510'
 ht-degree: 2%
 
 ---
@@ -31,7 +31,7 @@ U kunt een versie van uw bron maken op basis van:
 1. Navigeer naar de pagina waarvoor u een versie wilt maken.
 1. Selecteer de pagina in [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open de **Tijdlijn** kolom.
-1. Klik op de pijlpunt of tik op het veld Opmerking om de opties weer te geven:
+1. Klik op de pijlpunt bij het veld Opmerking om de opties weer te geven:
 
    ![Tijdlijn - Opslaan als versie](assets/screen-shot_2019-03-05at112335.png)
 
@@ -210,7 +210,7 @@ Timewaring is een [mode](/help/sites-authoring/author-environment-tools.md#page-
 
    ![Selecteer Timewaring in de wijzeselectie](assets/wwpv-01.png)
 
-1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd als standaardwaarde genomen.
+1. Stel in het dialoogvenster een datum en tijd in en klik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd als standaardwaarde genomen.
 
    ![Datum instellen](assets/wwpv-02.png)
 

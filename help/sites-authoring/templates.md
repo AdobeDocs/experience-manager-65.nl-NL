@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: 363b8fab-6ce7-4338-8478-3f25f2a1f117
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4834'
+source-wordcount: '4825'
 ht-degree: 6%
 
 ---
@@ -65,7 +65,7 @@ Een sjabloon maken met de opdracht **Sjabloonconsole** en de **Sjablooneditor** 
 
    * Dergelijke taken kunnen vaak ook door een ontwikkelaar worden uitgevoerd
 
-* **Developer**:
+* **Ontwikkelaar**:
 
    * Concentraties op de technische/interne details
    * Heeft ervaring nodig met de ontwikkelomgeving.
@@ -151,7 +151,7 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 
 ### Een nieuwe sjabloon maken - Sjabloonauteur {#creating-a-new-template-template-author}
 
-1. Open de **sjabloonconsole** (via **Gereedschappen ->** **Algemeen**) en ga vervolgens naar de vereiste map.
+1. Open de **Sjabloonconsole** (via **Gereedschappen >** **Algemeen**) en navigeer naar de vereiste map.
 
    >[!NOTE]
    >
@@ -221,14 +221,14 @@ De sjabloonminiatuur definiëren:
 1. Bewerk de sjablooneigenschappen.
 1. Kies of u een miniatuur wilt uploaden of wilt dat deze wordt gegenereerd op basis van de sjablooninhoud.
 
-   * Als u een miniatuur wilt uploaden, klikt u of tikt u op **Afbeelding uploaden**
-   * Als u een miniatuur wilt genereren, klikt u of tikt u op **Voorvertoning genereren**
+   * Als u een miniatuur wilt uploaden, klikt u **Afbeelding uploaden**
+   * Als u een miniatuur wilt genereren, klikt u op **Voorvertoning genereren**
 
 1. Voor beide methoden wordt een voorbeeld van de miniatuur weergegeven.
 
-   Klik of tik op **Wissen** om een andere afbeelding te uploaden of de miniatuur opnieuw te genereren.
+   Als het niet bevredigend is, klikt u op **Wissen** om een andere afbeelding te uploaden of de miniatuur opnieuw te genereren.
 
-1. Als u tevreden bent met de miniatuur, klikt u of tikt u op **Opslaan en sluiten**.
+1. Als u tevreden bent met de miniatuur, klikt u op **Opslaan en sluiten**.
 
 ### Een sjabloon inschakelen en toestaan - Sjabloonauteur {#enabling-and-allowing-a-template-template-author}
 
@@ -463,13 +463,13 @@ In **Structuur** modus van de sjablooneditor:
 
   Voor een afbeeldingscomponent kunnen bijvoorbeeld de toegestane breedten worden gedefinieerd en kan het laden worden ingeschakeld.
 
-  Als een instelling meerdere configuraties toestaat, klikt of tikt u op de knop **Toevoegen** om een andere configuratie toe te voegen.
+  Als het plaatsen voor veelvoudige configuraties toestaat, klik **Toevoegen** om een andere configuratie toe te voegen.
 
   ![chlimage_1-141](assets/chlimage_1-141.png)
 
-  Als u een configuratie wilt verwijderen, klikt of tikt u op de knop **Verwijderen** knoop die aan het recht van de configuratie wordt gevestigd.
+  Om een configuratie te verwijderen, klik **Verwijderen** knoop die aan het recht van de configuratie wordt gevestigd.
 
-  Als u een configuratie wilt verwijderen, klikt of tikt u op de knop** Verwijderen**.
+  Als u een configuratie wilt verwijderen, klikt u op de knop** Verwijderen**.
 
   ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -529,9 +529,9 @@ In **Structuur** modus van de sjablooneditor:
 
   Op de **Standaardcomponenten** , bepaalt u welke componenten automatisch aan bepaalde media types worden geassocieerd zodat wanneer een auteur activa van elementenbrowser sleept, AEM weet met welke component om het te associëren. Merk op dat slechts de componenten met dalingsstreken voor dergelijke configuratie beschikbaar zijn.
 
-  Klikken of tikken **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
+  Klikken **Toewijzing toevoegen** om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
 
-  Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
+  Selecteer een component in de lijst en klik op **Tekst toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
   ![chlimage_1-145](assets/chlimage_1-145.png)
 
@@ -692,7 +692,7 @@ Met de **Oorspronkelijke pagina-eigenschappen** kunt u het eerste [pagina-eigens
 
 1. Bevestig uw definities met **Gereed**.
 
-## Best practices voor {#best-practices}
+## Aanbevolen procedures {#best-practices}
 
 Houd bij het maken van sjablonen rekening met:
 

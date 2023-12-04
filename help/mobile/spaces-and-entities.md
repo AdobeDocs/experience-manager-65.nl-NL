@@ -1,17 +1,13 @@
 ---
 title: Spaties en entiteiten
-seo-title: Developing AEM Mobile Content Services
 description: Deze pagina dient een openingspagina voor het ontwikkelen van AEM Mobile Content Services.
-seo-description: This page serves a landing page for developing AEM Mobile Content Services.
-uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
-discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 exl-id: 44591900-b01b-4a33-9910-839564477e7d
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1206'
 ht-degree: 0%
 
 ---
@@ -56,7 +52,7 @@ Nadat u de spaties in het dashboard hebt geconfigureerd, voert u de volgende sta
 
 ## Een spatie beheren {#managing-a-space}
 
-Wanneer u een spatie hebt gemaakt, klikt u links om de ruimte in de lijst te beheren.
+Nadat u een spatie hebt gemaakt, klikt u links om de ruimte in de lijst te beheren.
 
 U kunt de eigenschappen van de ruimte weergeven, de ruimte verwijderen of de ruimte en de inhoud ervan publiceren naar een AEM-publicatie-instantie.
 
@@ -111,7 +107,7 @@ De **Taalkopie** kunnen auteurs hun hoofdtaalkopie kopiëren en vervolgens een p
 
 ### Taalkopie toevoegen {#adding-language-copy}
 
-1. Wanneer u ruimte hebt gemaakt, klikt u op die ruimte om een taalkopie te maken.
+1. Nadat u ruimte hebt gemaakt, klikt u op die ruimte om een taalkopie te maken.
 
    Klikken **Maken** en kiest u **Taalkopie**.
 
@@ -158,13 +154,13 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
 ### Entiteiten maken {#creating-an-entity}
 
-1. Open de Ruimteconsole en klik op de titel van de ruimte.
+1. Open de Ruimteconsole en klik de titel van de ruimte.
 
    U kunt desgewenst naar de map navigeren door op de titel van de map in de lijst te klikken.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Kies het model voor de entiteit. Dit is het type entiteit dat u wilt maken. Klik op Next.
+1. Kies het model voor de entiteit. Dit is het type entiteit dat u wilt maken. Klik op Volgende.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 

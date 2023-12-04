@@ -1,20 +1,20 @@
 ---
-title: Zoekformulieren configureren
+title: Zoeken in Forms configureren
 description: Leer hoe u Zoeken in Forms kunt gebruiken om de selectie van zoekvoorspelden aan te passen die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in AEM consoles en deelvensters van de auteursomgeving.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: f82391d7-e30d-48d2-8f66-88fcae3dfb5f
-source-git-commit: 06a6d4e0ba2aeaefcfb238233dd98e8bbd6731da
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2073'
+source-wordcount: '2072'
 ht-degree: 1%
 
 ---
 
 
-# Zoekformulieren configureren{#configuring-search-forms}
+# Zoeken in Forms configureren{#configuring-search-forms}
 
 Gebruiken **Zoeken in Forms** om de selectie aan te passen van zoekvoorspelden die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in verschillende AEM en/of deelvensters van de auteursomgeving. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
 
@@ -26,7 +26,7 @@ U kunt [de zoekformulieren configureren](#configuring-your-search-forms) worden 
 
    * **Algemeen**
 
-      * **Zoeken in formulieren**
+      * **Zoeken in Forms**
 
 Wanneer u eerst tot deze console toegang hebt, kunt u zien dat alle configuraties een hangslotsymbool hebben. Dit wijst erop dat de aangewezen configuratie de standaardconfiguratie (uit-van-de-doos) is - en kan niet worden geschrapt. Nadat u de configuratie hebt aangepast, verdwijnt het slot tenzij u [verwijder uw aangepaste configuratie](#deleting-a-configuration-to-reinstate-the-default). In dat geval wordt de standaardinstelling (en de hangslotindicator) hersteld.
 
@@ -506,7 +506,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
 1. Open de **Zoeken in Forms** console en selecteer de configuratie u wilt bijwerken. Bijvoorbeeld: **Sites Admin Search Rail**.
 
-   Klik vervolgens op **Zoekformulieren bewerken** pictogram.
+   Klik vervolgens op de knop **Zoekformulieren bewerken** pictogram.
 
 1. Afhankelijk van de configuratie voegt u een **Opties** of **Opties, eigenschap** naar de configuratie.
 1. Werk de velden bij, met name:

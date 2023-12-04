@@ -8,9 +8,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 exl-id: f4ca5c11-e3ff-4da5-bc4a-fd7e0aefffb5
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '221'
+source-wordcount: '220'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing b
 
 >[!NOTE]
 >
->&amp;ast; als de gebruiker begint te communiceren met de pagina in de voorvertoningsmodus, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
+>&amp;ast; als de gebruiker begint te communiceren met de pagina in de voorvertoningsmodus, wordt de `Ctrl-Shift-m` sneltoets is niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar wanneer de gebruiker op de bovenste editor-balk klikt of terugkeert naar de modus Bewerken.
 
 Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers die de opdracht [consoles](/help/sites-authoring/keyboard-shortcuts.md).
 

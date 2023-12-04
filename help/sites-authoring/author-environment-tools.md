@@ -7,10 +7,10 @@ topic-tags: page-authoring
 content-type: reference
 docset: aem65
 exl-id: 3b3c118b-ca35-484b-a62e-7bec98953123
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2227'
-ht-degree: 5%
+source-wordcount: '2246'
+ht-degree: 3%
 
 ---
 
@@ -26,7 +26,7 @@ Bijvoorbeeld, kolommening:
 
 ![ateat-01](assets/ateat-01.png)
 
-## Paginacontent bewerken {#editing-page-content}
+## Pagina-inhoud bewerken {#editing-page-content}
 
 U kunt een pagina bewerken met de pagina-editor. Bijvoorbeeld:
 
@@ -95,7 +95,7 @@ De werkelijke weergave en afhandeling zijn afhankelijk van het apparaattype dat 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de vervolgkeuzelijst.
 
-  Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de **Componentbrowser** klikken of tikken (indien beschikbaar). Bijvoorbeeld voor de **Lay-outcontainer**:
+  Voor een gedetailleerdere beschrijving van de component klikt u op het informatiepictogram naast de component in het dialoogvenster **Componenten** browser (indien beschikbaar). Bijvoorbeeld voor de **Lay-outcontainer**:
 
   ![ateat-06](assets/ateat-06.png)
 
@@ -344,7 +344,7 @@ De padbrowser is geordend als de [kolomweergave](/help/sites-authoring/basic-han
 
 ![screen_shot_2018-03-22at154521](assets/screen_shot_2018-03-22at154521.png)
 
-* Wanneer een bron is geselecteerd, wordt de **Selecteren** in de rechterbovenhoek van het dialoogvenster wordt geactiveerd. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
+* Wanneer een bron is geselecteerd, wordt de **Selecteren** in de rechterbovenhoek van het dialoogvenster wordt geactiveerd. Klik om de selectie te bevestigen of **Annuleren** om af te breken.
 * Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop **Selecteren**, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klikken **X** naast het getal dat u wilt uitschakelen.
 * Wanneer u door de boom navigeert, wordt uw plaats weerspiegeld in de broodkruimels bij de bovenkant van de dialoog. Deze broodkruimels kunnen ook worden gebruikt om snel binnen de middelhiërarchie te springen.
 * U kunt op elk gewenst moment het zoekveld boven in het dialoogvenster gebruiken. Klik op de knop **X** in het zoekveld om de zoekopdracht te wissen.

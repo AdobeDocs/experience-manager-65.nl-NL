@@ -9,9 +9,9 @@ docset: aem65
 role: User, Admin
 feature: Workflow,Asset Management,Renditions
 exl-id: 3d9367ed-5a02-43aa-abd9-24fae457d4c5
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1320'
+source-wordcount: '1337'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Een profiel is een recept voor welke opties u kunt toepassen op middelen die naa
 
 Deze regels kunnen het toevoegen van metagegevens, het slim uitsnijden van afbeeldingen of het instellen van videocoderingsprofielen omvatten. In Adobe Experience Manager kunt u drie typen profielen maken, die in detail worden besproken op de volgende koppelingen:
 
-* [Metadataprofielen](/help/assets/metadata-config.md#metadata-profiles)
+* [Metagegevensprofielen](/help/assets/metadata-config.md#metadata-profiles)
 * [Afbeeldingsprofielen](/help/assets/image-profiles.md)
 * [Videoprofielen](/help/assets/video-profiles.md)
 
-U moet beheerdersrechten hebben om metagegevens, afbeeldingen of videoprofielen te maken, te bewerken en te verwijderen.
+U hebt beheerdersrechten nodig om metagegevens, afbeeldingen of videoprofielen te maken, te bewerken en te verwijderen.
 
 Nadat u de metagegevens, de afbeelding of het videoprofiel hebt gemaakt, wijst u deze toe aan een of meer mappen die u gebruikt als bestemming voor nieuw geüploade elementen.
 
@@ -80,7 +80,7 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
    ![Workflow 1 voor opnieuw verwerken van middelen](/help/assets/assets/reprocess-assets1.png)
 
-1. Selecteer **[!UICONTROL Start Workflow]**.
+1. Selecteren **[!UICONTROL Start Workflow]**.
 1. Van de **[!UICONTROL Start Workflow]** vervolgkeuzelijst kiest u **[!UICONTROL Scene7: Reprocess Assets]**.
 1. (Optioneel) In het dialoogvenster **Titel van workflow invoeren** in het tekstveld een naam voor de workflow invoeren. U kunt de naam gebruiken om naar de werkstroominstantie te verwijzen, indien nodig.
 

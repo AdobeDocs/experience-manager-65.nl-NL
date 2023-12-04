@@ -2,9 +2,9 @@
 title: Vertaalprojecten beheren
 description: Leer hoe u vertaalprojecten beheert in Adobe Experience Manager.
 exl-id: 968bba02-98fe-4eaf-9937-ce5cfdf5b413
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3578'
+source-wordcount: '3504'
 ht-degree: 0%
 
 ---
@@ -80,12 +80,12 @@ Na het vertalen kunt u [de vertaling bekijken](#reviewing-and-promoting-updated-
 
    Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Geometrixx demo-site > Engels.
 
-1. Klik of tik op Verwijzingen op de werkbalk.
+1. Klik op Referenties op de werkbalk.
 
    ![chlimage_1-241](assets/chlimage_1-241.png)
 
 1. Selecteer Exemplaren van de Taal, en selecteer dan de taalexemplaren waarvoor u de bronpagina&#39;s vertaalt.
-1. Klik of tik op Maken en vertalen en configureer de vertaaltaak:
+1. Klik op Maken en vertalen en configureer de vertaaltaak vervolgens:
 
    * Gebruik de drop-down Talen om een taalexemplaar te selecteren waarvoor u wilt vertalen. Selecteer desgewenst extra talen. Talen in de lijst komen overeen met de [door u gemaakte taalwortels](/help/sites-administering/tc-prep.md#creating-a-language-root).
    * Selecteer Alle subpagina&#39;s selecteren als u de geselecteerde pagina en alle onderliggende pagina&#39;s wilt vertalen. Als u alleen de geselecteerde pagina wilt vertalen, schakelt u de optie uit.
@@ -94,7 +94,7 @@ Na het vertalen kunt u [de vertaling bekijken](#reviewing-and-promoting-updated-
 
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
-1. Klik of tik op Maken.
+1. Klik op Maken.
 
 ### Vertaalprojecten maken voor een bestaande taalkopie {#create-translation-projects-for-an-existing-language-copy}
 
@@ -102,12 +102,12 @@ Na het vertalen kunt u [de vertaling bekijken](#reviewing-and-promoting-updated-
 
    Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Geometrixx demo-site > Engels.
 
-1. Klik of tik op Verwijzingen op de werkbalk.
+1. Klik op Referenties op de werkbalk.
 
    ![chlimage_1-243](assets/chlimage_1-243.png)
 
 1. Selecteer Exemplaren van de Taal, en selecteer dan de taalexemplaren waarvoor u de bronpagina&#39;s vertaalt.
-1. Klik of tik de Exemplaren van de Taal van de Update en vorm dan de vertaalbaan:
+1. Klik op Taalkopieën bijwerken en configureer de vertaaltaak vervolgens:
 
    * Selecteer Alle subpagina&#39;s selecteren als u de geselecteerde pagina en alle onderliggende pagina&#39;s wilt vertalen. Als u alleen de geselecteerde pagina wilt vertalen, schakelt u de optie uit.
    * Selecteer Nieuw vertaalproject maken bij Project.
@@ -115,7 +115,7 @@ Na het vertalen kunt u [de vertaling bekijken](#reviewing-and-promoting-updated-
 
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
-1. Klik of tik op Start.
+1. Klik op Start.
 
 ## Pagina&#39;s toevoegen aan een vertaalproject {#adding-pages-to-a-translation-project}
 
@@ -129,7 +129,7 @@ Net als bij het maken van een project worden bij het toevoegen van pagina&#39;s 
 
    Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Geometrixx demo-site > Engels.
 
-1. Klik of tik op Verwijzingen op de werkbalk.
+1. Klik op Referenties op de werkbalk.
 
    ![chlimage_1-245](assets/chlimage_1-245.png)
 
@@ -137,7 +137,7 @@ Net als bij het maken van een project worden bij het toevoegen van pagina&#39;s 
 
    ![chlimage_1-35](assets/chlimage_1-35.jpeg)
 
-1. Klik of tik de Exemplaren van de Taal van de Update en vorm dan de eigenschappen:
+1. Klik op Taalkopieën bijwerken en configureer vervolgens de eigenschappen:
 
    * Selecteer Alle subpagina&#39;s selecteren als u de geselecteerde pagina en alle onderliggende pagina&#39;s wilt vertalen. Als u alleen de geselecteerde pagina wilt vertalen, schakelt u de optie uit.
    * Selecteer bij Project de optie Toevoegen aan bestaand vertaalproject.
@@ -149,21 +149,21 @@ Net als bij het maken van een project worden bij het toevoegen van pagina&#39;s 
 
    ![chlimage_1-36](assets/chlimage_1-36.jpeg)
 
-1. Klik of tik op Start.
+1. Klik op Start.
 
 ## Pagina&#39;s/middelen toevoegen aan een vertaaltaak {#adding-pages-assets-to-a-translation-job}
 
 U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vertaaltaak van uw vertaalproject. Pagina&#39;s of elementen toevoegen:
 
-1. Klik of tik op de ellips onder aan de tegel Vertaaltaak van het vertaalproject.
+1. Klik onder aan de tegel Vertaal taak van het vertaalproject op de ellips.
 
    ![chlimage_1-246](assets/chlimage_1-246.png)
 
-1. Klik of tik op Toevoegen en Pagina&#39;s/middelen.
+1. Klik op Toevoegen en Pagina&#39;s/elementen.
 
    ![chlimage_1-247](assets/chlimage_1-247.png)
 
-1. Selecteer het bovenste item van de vertakking die u wilt toevoegen en klik of tik op het pictogram van het vinkje. U kunt meerdere selecties maken.
+1. Selecteer het bovenste item van de vertakking die u wilt toevoegen en klik op het pictogram van het vinkje. U kunt meerdere selecties maken.
 
    ![chlimage_1-248](assets/chlimage_1-248.png)
 
@@ -177,15 +177,15 @@ Uw pagina&#39;s en/of middelen worden toegevoegd aan uw vertaalbaan.
 
 U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vertaaltaak van uw vertaalproject. Een i18n-woordenboek toevoegen:
 
-1. Klik of tik op de ellips onder aan de tegel Vertaaltaak van het vertaalproject.
+1. Klik onder aan de tegel Vertaal taak van het vertaalproject op de ellips.
 
    ![chlimage_1-250](assets/chlimage_1-250.png)
 
-1. Klik of tik op Toevoegen en I18N-woordenboek.
+1. Klik op Toevoegen en I18N-woordenboek.
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Selecteer het woordenboek dat u wilt toevoegen en klik op de knop Toevoegen of tik op Toevoegen.
+1. Selecteer het woordenboek dat u wilt toevoegen, en klik dan toevoegen knoop.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -201,15 +201,15 @@ Uw woordenboek staat nu in uw vertaalbaan.
 
 U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vertaaltaak van uw vertaalproject. Tags toevoegen:
 
-1. Klik of tik op de ellips onder aan de tegel Vertaaltaak van het vertaalproject.
+1. Klik onder aan de tegel Vertaal taak van het vertaalproject op de ellips.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
-1. Klik op Toevoegen of tik op Toevoegen en vervolgens op Labels.
+1. Klik op Toevoegen en vervolgens op Labels.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Selecteer de tags die u wilt toevoegen en klik of tik op het pictogram van het vinkje. U kunt meerdere selecties maken.
+1. Selecteer de tags die u wilt toevoegen en klik op het pictogram van het vinkje. U kunt meerdere selecties maken.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
@@ -255,7 +255,7 @@ In de volgende tabel wordt elke status beschreven die een taak of een item in de
 | Foutupdate | Er is een fout opgetreden bij het overdragen van bestanden tussen AEM en de vertaalservice. |
 | Onbekende status | Er is een onbekende fout opgetreden. |
 
-Als u de status van elk bestand in de taak wilt zien, klikt of tikt u op de ellips onder aan de tegel.
+Als u de status van elk bestand in de taak wilt zien, klikt u op de ellips onder aan de tegel.
 
 ## Vaststelling van de vervaldatum van de vertaaltaken {#setting-the-due-date-of-translation-jobs}
 
@@ -268,7 +268,7 @@ Het instellen van de vervaldatum werkt alleen correct wanneer de leverancier van
 
 In de volgende procedure wordt de vervaldatum voor een project vastgesteld.
 
-1. Klik of tik op de ellips onder aan de tegel Vertaaloverzicht.
+1. Klik op de ellips onder aan de tegel Vertaaloverzicht.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -276,15 +276,15 @@ In de volgende procedure wordt de vervaldatum voor een project vastgesteld.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Klik of tik op Gereed.
+1. Klik op Gereed.
 
 De volgende procedure stelt de vervaldatum voor een vertaalbaan vast.
 
-1. Klik of tik op het menu Opdrachten in het onderdeel Vertaaltaak en klik of tik op Vervaldatum.
+1. Klik in de tegel Vertaaltaak op het menu Opdrachten en klik vervolgens op Vervaldatum.
 
    ![chlimage_1-262](assets/chlimage_1-262.png)
 
-1. Klik of tik in het dialoogvenster op het kalenderpictogram, selecteer vervolgens de datum en tijd die u als vervaldatum wilt gebruiken en klik op Opslaan.
+1. Klik in het dialoogvenster op het kalenderpictogram, selecteer vervolgens de datum en tijd die u als vervaldatum wilt gebruiken en klik op Opslaan.
 
    ![chlimage_1-263](assets/chlimage_1-263.png)
 
@@ -303,11 +303,11 @@ Wanneer u een vertaaltaak instelt, is de status van de taak `Scope Requested`. W
 De functie Scoping werkt alleen correct wanneer de leverancier van de vertaling die u gebruikt deze functie ondersteunt.
 
 1. In de console van Projecten, open uw vertaalproject.
-1. Klik of tik op het menu Opdrachten in het onderdeel Vertaaltaak en klik of tik op Toepassingsgebied aanvragen.
+1. Klik in de tegel Vertaaltaak op het menu met opdrachten en klik vervolgens op Toepassingsgebied aanvragen.
 
    ![chlimage_1-264](assets/chlimage_1-264.png)
 
-1. Als de taakstatus verandert in SCOPE_COMPLETED, klikt of tikt u op het onderdeel Vertaal taak op het menu Opdrachten en klikt of tikt u op Bereik tonen.
+1. Wanneer de baanstatus in SCOPE_COMPLETED verandert, op de tegel van de Taak van de Vertaling klikt het bevelenmenu, dan klik tonen Werkgebied.
 
 ## Een vertaaltaak starten {#starting-a-translation-job}
 
@@ -318,19 +318,19 @@ Nadat u de vertaaltaak hebt gestart, wordt in de tegel Vertaal-taak de status Ve
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 1. In de console van Projecten, open het vertaalproject.
-1. Klik of tik op het menu Opdrachten in het onderdeel Vertaaltaak en klik op Start.
+1. Klik in de tegel Vertaal taak op het menu met opdrachten en klik vervolgens op Start.
 
    ![chlimage_1-266](assets/chlimage_1-266.png)
 
-1. Klik of tik op Sluiten in het dialoogvenster Handeling waarin het starten van de vertaling wordt bevestigd.
+1. Klik op Sluiten in het dialoogvenster Handeling waarin het starten van de vertaling wordt bevestigd.
 
 ## Een vertaaltaak annuleren {#canceling-a-translation-job}
 
 Een vertaaltaak annuleren om het vertaalproces te stoppen en te voorkomen dat de leverancier van de vertaling verdere vertalingen uitvoert. U kunt een taak annuleren als de taak de `Committed For Translation` of `Translation In Progress` status.
 
 1. In de console van Projecten, open het vertaalproject.
-1. Klik of tik op het menu Opdrachten in het onderdeel Vertaaltaak en klik op Annuleren.
-1. Klik of tik op OK in het dialoogvenster Handeling dat de annulering van de vertaling bevestigt.
+1. Klik in de tegel Vertaaltaak op het menu met opdrachten en klik vervolgens op Annuleren.
+1. Klik op OK in het dialoogvenster Handeling waarin de annulering van de vertaling wordt bevestigd.
 
 ## Workflow accepteren/afwijzen {#accept-reject-workflow}
 
@@ -350,18 +350,18 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Selecteer de pagina in het taalstramien, klik op Referenties of tik op Referenties en klik of tik op Taalkopieën.
-1. Klik of tik op de taalkopie om te reviseren.
+1. Selecteer de pagina in het taalstramien, klik op Verwijzingen en klik vervolgens op Taalkopieën.
+1. Klik op de taalkopie die u wilt reviseren.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
 
-1. Klik op Starten of tik op Starten om de opdrachten voor Starten weer te geven.
+1. Klik op Starten om de opdrachten voor het starten weer te geven.
 
    ![chlimage_1-271](assets/chlimage_1-271.png)
 
 1. Klik op Pagina openen om het startexemplaar van de pagina te openen om de inhoud te bekijken en bewerken.
 1. Klik op Promote nadat u de inhoud hebt bekeken en de benodigde wijzigingen hebt aangebracht om de opstartafbeelding te promoten.
-1. Geef op de pagina Starten bevorderen op welke pagina&#39;s u wilt promoten en klik of tik op Promote.
+1. Geef op de pagina Starten bevorderen op welke pagina&#39;s u wilt promoten en klik vervolgens op Promote.
 
 ## Taalkopieën vergelijken {#comparing-language-copies}
 
@@ -393,7 +393,7 @@ Archiveer een vertaaltaak nadat deze is voltooid en u hoeft de gegevens over de 
 Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. Voordat u uw taalkopie kunt vullen, moet u beschikken over [heeft de hoofdmap van de taal gemaakt](/help/sites-administering/tc-prep.md#creating-a-language-root) van de taalkopie.
 
 1. Gebruik de console van Plaatsen om de taalwortel van de hoofdtaal te selecteren die u als bron gebruikt. Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Inhoud > Geometrixx demo-site > Engels.
-1. Klik of tik op Verwijzingen op de werkbalk.
+1. Klik op Referenties op de werkbalk.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
@@ -401,14 +401,14 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. 
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
-1. Klik of tik de Exemplaren van de Taal van de Update om de vertaalhulpmiddelen te openbaren, en de eigenschappen te vormen:
+1. Klik op Taalkopieën bijwerken om de vertaalgereedschappen weer te geven en de eigenschappen te configureren:
 
    * Selecteer de optie Alle subpagina&#39;s selecteren.
    * Selecteer bij Project de optie Alleen structuur maken.
 
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
-1. Klik of tik op Start.
+1. Klik op Start.
 
 ## Een bronpagina verplaatsen of de naam ervan wijzigen {#move-source}
 
@@ -442,24 +442,24 @@ Wanneer u handmatig een vertaalproject maakt, moet u naast de eigenschappen voor
 * **Doeltaal:** De taal waarin de inhoud wordt vertaald.
 * **Omzettingsmethode:** Selecteer Menselijke vertaling om erop te wijzen dat de vertaling manueel moet worden uitgevoerd.
 
-1. Klik of tik op Maken op de werkbalk van de projectenconsole.
-1. Selecteer de sjabloon Vertaalproject en klik of tik op Volgende.
+1. Klik op de werkbalk van de projectenconsole op Maken.
+1. Selecteer het malplaatje van het Project van de Vertaling en klik dan daarna.
 1. Voer waarden in voor de eigenschappen Standaard.
-1. Klik op Geavanceerd of tik op Geavanceerd en geef waarden op voor de eigenschappen die betrekking hebben op vertaling.
-1. Klik of tik op Maken. Klik of tik op Gereed in het bevestigingsvak om terug te keren naar de Projectconsole of klik op Project openen of tik op Project openen om het project te openen en te beheren.
+1. Klik op Geavanceerd en geef waarden op voor de eigenschappen die betrekking hebben op vertaling.
+1. Klik op Maken. Klik in het bevestigingsvak op Gereed om terug te keren naar de projectenconsole of klik op Project openen om het project te openen en te beheren.
 
 ## Een vertaaltaak exporteren {#exporting-a-translation-job}
 
 U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld, om naar een vertaalleverancier te verzenden die niet met AEM via een schakelaar geïntegreerd is, of de inhoud te herzien.
 
-1. Klik of tik op Exporteren in het vervolgkeuzemenu van het onderdeel Vertaal taak.
-1. Klik of tik in het dialoogvenster Exporteren op Geëxporteerd bestand downloaden en gebruik indien nodig het dialoogvenster van de webbrowser om het bestand op te slaan.
-1. Klik of tik op Sluiten in het dialoogvenster Exporteren.
+1. Klik in het keuzemenu van het onderdeel Vertaal taak op Exporteren.
+1. Klik in het dialoogvenster Exporteren op Geëxporteerd bestand downloaden en gebruik indien nodig het dialoogvenster van de webbrowser om het bestand op te slaan.
+1. Klik in het dialoogvenster Exporteren op Sluiten.
 
 ## Een vertaaltaak importeren {#importing-a-translation-job}
 
 U kunt vertaalde inhoud bijvoorbeeld importeren in AEM, wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet is geïntegreerd met AEM via een connector.
 
-1. Klik of tik op Importeren in het vervolgkeuzemenu van het onderdeel Vertaal taak.
+1. Klik in het keuzemenu van het onderdeel Vertaal taak op Importeren.
 1. Selecteer in het dialoogvenster van de webbrowser het bestand dat u wilt importeren.
-1. Klik of tik op Sluiten in het dialoogvenster Importeren.
+1. Klik in het dialoogvenster Importeren op Sluiten.

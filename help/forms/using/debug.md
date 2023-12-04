@@ -11,9 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5260d981-da40-40ab-834e-88e091840813
 feature: Mobile Forms
 exl-id: 7330c03f-7102-43c0-aac6-825cce8a113d
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '818'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Dit document bevat verschillende scenario&#39;s voor probleemoplossing. Voor elk scenario, worden sommige stappen verstrekt om het probleem problemen op te lossen. Volg deze stappen en, als het probleem voortduurt, vorm Logger om logboeken voor fouten/waarschuwingen te krijgen en te herzien. Voor meer informatie over het registreren van HTML5 formulieren, zie [Logbestanden genereren voor HTML5-formulieren](/help/forms/using/enable-logs.md).
 
-## Probleem: Bij het weergeven van het formulier zie ik de pagina met uitzonderingen org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
+## Probleem: bij het weergeven van het formulier zie ik de pagina met uitzonderingen org.apache.sling.api.SlingException {#problem-when-rendering-the-form-i-see-org-apache-sling-api-slingexception-exception-page}
 
 In de uitzonderingsdetails, onderzoek naar woord **veroorzaakt door**.
 
@@ -46,7 +46,7 @@ Controleer de volgende parameters:
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Absoluut pad van het gegevensbestand dat met de sjabloon is samengevoegd.<br /> Opmerking: Het pad definieert het absolute pad van het gegevensbestand.</td>
+   <td>Absoluut pad van het gegevensbestand dat met de sjabloon is samengevoegd.<br /> Opmerking: pad definieert het absolute pad van het gegevensbestand.</td>
   </tr>
   <tr>
    <td>data</td>
@@ -79,7 +79,7 @@ Controleer de volgende parameters:
 
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
-## Probleem: Formulierweergaven zonder stijlen {#problem-form-renders-without-styles}
+## Probleem: formulierweergaven zonder stijlen {#problem-form-renders-without-styles}
 
 1. In uw browser, open **Gereedschappen voor ontwikkelaars**. Controleer of profile.css beschikbaar is.
 1. Als het bestand profile.css niet beschikbaar is, meldt u zich aan bij CRX DE op https://&lt;server>:&lt;port>/crx/de.
@@ -104,27 +104,27 @@ Controleer de volgende parameters:
 
 1. Als de vermelde bestanden niet beschikbaar zijn, installeert u de adobe-lc-forms-runtime-pkg-&lt;version>.zip package again.
 
-### Probleem: Onverwachte fout aangetroffen {#problem-unexpected-error-encountered}
+### Probleem: onverwachte fout aangetroffen {#problem-unexpected-error-encountered}
 
-1. Voeg in de formulier-URL een queryparameter debugClientLibs toe en stel de waarde ervan in op true (bijvoorbeeld: https://&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; xdp=&quot;&quot; file=&quot;&quot;>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
-1. Ga in de desktopbrowser, zoals chroom, naar Developer Tools -> Console.
+1. Voeg in de formulier-URL een queryparameter debugClientLibs toe en stel de waarde ervan in op true (bijvoorbeeld https://)&lt;server>:&lt;port>/content/xfaforms/profiles/test.html?contentRoot=&lt;some path=&quot;&quot;>&amp;template=&lt;name of=&quot;&quot; xdp=&quot;&quot; file=&quot;&quot;>&amp;log=1-a9-b9-c9&amp;debugClientLibs=true)
+1. Ga in de desktopbrowser, zoals chroom, naar Developer Tools > Console.
 1. Open de logboeken om het type van fout te identificeren. Voor gedetailleerde informatie over logboeken raadpleegt u [logboeken voor HTML5-formulieren](/help/forms/using/enable-logs.md).
-1. Ga naar Developer Tools -> Console. Gebruik stacktracering om de code te zoeken die de fout veroorzaakt. Foutopsporing de fout om het probleem op te lossen.
+1. Ga naar Developer Tools > Console. Gebruik stacktracering om de code te zoeken die de fout veroorzaakt. Foutopsporing de fout om het probleem op te lossen.
 
    >[!NOTE]
    >
    >Als het script is mislukt, controleert u of hetzelfde probleem optreedt tijdens de uitvoering van de PDF van het formulier. Zo ja, dan is er een probleem in de logica van het formulierscript.
 
-## Probleem: Kan het formulier niet verzenden {#problem-unable-to-submit-the-form}
+## Probleem: kan het formulier niet verzenden {#problem-unable-to-submit-the-form}
 
 1. Zorg ervoor dat u toegangsrechten hebt tot de AEM server en dat u verbinding hebt met de server.
 1. Controleer of de parameter submitUrl correct is.
-1. Logbestanden aan de clientzijde inschakelen, zoals vermeld in [Logboeken voor de HTML5-formulieren](/help/forms/using/enable-logs.md) de optie Foutopsporing gebruiken als **1-a5-b5-c5**. Geef het formulier vervolgens weer en klik op Verzenden. Open browser zuivert console en controleer als er een fout is.
+1. Logbestanden aan de clientzijde inschakelen, zoals vermeld in [Logboeken voor de HTML5-formulieren](/help/forms/using/enable-logs.md) gebruiken zuivert optie als **1-a5-b5-c5**. Geef het formulier vervolgens weer en klik op Verzenden. Open browser zuivert console en controleer als er een fout is.
 1. Zoek de serverlogboeken zoals vermeld op [Logboeken voor de HTML5-formulieren](/help/forms/using/enable-logs.md). Controleer of er tijdens de verzending een fout is opgetreden in de serverlogboeken.
 
-## Probleem: Gelokaliseerde foutberichten worden niet weergegeven {#problem-localized-error-messages-do-not-display}
+## Probleem: gelokaliseerde foutberichten worden niet weergegeven {#problem-localized-error-messages-do-not-display}
 
-1. Het formulier weergeven met een aanvullende queryparameter **debugClientLibs=true** in de desktopbrowser en ga vervolgens naar Developer Tools -> Resources en controleer het bestand I18N.css.
+1. Het formulier weergeven met een aanvullende queryparameter **debugClientLibs=true** in de desktopbrowser en ga vervolgens naar Developer Tools > Resources en controleer het bestand I18N.css.
 1. Als het bestand niet beschikbaar is, meldt u zich aan bij CRX DE op https://&lt;server>:&lt;port>/crx/de.
 1. Navigeer in de mappenhiërarchie links naar /libs/fd/xfaforms/clientlibs/I18N en zorg ervoor dat de volgende bestanden en mappen bestaan:
 
@@ -146,7 +146,7 @@ Controleer de volgende parameters:
    ../LogMessages.js
    ```
 
-## Probleem: Afbeelding niet zichtbaar {#problem-image-not-showing-up}
+## Probleem: afbeelding wordt niet weergegeven {#problem-image-not-showing-up}
 
 1. Controleer of de URL van de afbeelding juist is.
 1. Controleer of uw browser dit type afbeelding ondersteunt.
@@ -172,7 +172,7 @@ Controleer de volgende parameters:
   </tr>
   <tr>
    <td>dataRef</td>
-   <td>Absoluut pad van het gegevensbestand dat met de sjabloon is samengevoegd.<br /> Opmerking: Het pad definieert het absolute pad van het gegevensbestand.</td>
+   <td>Absoluut pad van het gegevensbestand dat met de sjabloon is samengevoegd.<br /> Opmerking: pad definieert het absolute pad van het gegevensbestand.</td>
   </tr>
   <tr>
    <td>data</td>
@@ -181,6 +181,6 @@ Controleer de volgende parameters:
  </tbody>
 </table>
 
-1. Ga in de desktopbrowser naar Developer Tools -> Resources.
+1. Ga in de desktopbrowser naar Developer Tools > Resources.
 
    Schakel de linkerzijde in Frames in als die afbeelding wordt weergegeven.

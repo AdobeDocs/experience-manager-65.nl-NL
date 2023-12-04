@@ -2,9 +2,9 @@
 title: Snelstartgids voor mappen zonder middelenkoppen maken
 description: Met Modellen AEM inhoudsfragmenten kunt u de structuur van inhoudsfragmenten definiëren als de basis voor inhoud zonder kop.
 exl-id: 8d913056-fcfa-4cdd-b40a-771f13dfd0f4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -25,8 +25,8 @@ Elementenmappen worden gebruikt om [traditionele inhoudselementen ordenen](/help
 
 Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordenen terwijl deze wordt gemaakt. Voor deze gids Aan de slag hoeven we slechts één map te maken.
 
-1. Meld u aan bij AEM en selecteer in het hoofdmenu **Navigation -> Middelen -> Bestanden**.
-1. Tik of klik op **Maken -> Map**.
+1. Meld u aan bij AEM en selecteer in het hoofdmenu **Navigation > Middelen > Bestanden**.
+1. Klikken **Maken > Map**.
 1. Geef een **Titel** en **Naam** voor uw map.
    * De **Titel** moeten beschrijvend zijn.
    * De **Naam** wordt de knooppuntnaam in de repository.
@@ -38,8 +38,8 @@ Een beheerder hoeft alleen maar af en toe mappen te maken om de inhoud te ordene
 1. In de **Eigenschappen** venster, selecteert u de **Cloud Servicen** tab.
 1. Voor de **Cloud Configuration** Selecteer de [eerder gemaakte configuratie.](create-configuration.md)
    ![Map met middelen configureren](assets/assets-folder-configure.png)
-1. Tik of klik op **Opslaan en sluiten**.
-1. Tik of klik op **OK** in het bevestigingsvenster.
+1. Klikken **Opslaan en sluiten**.
+1. Klikken **OK** in het bevestigingsvenster.
 
    ![Bevestigingsvenster](assets/assets-folder-confirmation.png)
 

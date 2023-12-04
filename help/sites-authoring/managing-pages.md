@@ -2,14 +2,14 @@
 title: Pagina's maken en ordenen met AEM
 description: Leer hoe u pagina's maakt en beheert met Adobe Experience Manager.
 exl-id: 74576e51-4b4e-464e-a0b8-0fae748a505d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2412'
-ht-degree: 2%
+source-wordcount: '2417'
+ht-degree: 1%
 
 ---
 
-# Pagina&#39;s maken en indelen {#creating-and-organizing-pages}
+# Pagina&#39;s maken en ordenen {#creating-and-organizing-pages}
 
 In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Adobe Experience Manager (AEM), zodat u vervolgens [inhoud maken](/help/sites-authoring/editing-content.md) op die pagina&#39;s.
 
@@ -192,7 +192,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
 1. Vanaf de eerste fase van de wizard kunt u:
 
-   * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik/tik **Volgende** om verder te gaan.
+   * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik vervolgens op **Volgende** om verder te gaan.
 
    * **Annuleren** om het proces af te breken.
 
@@ -200,7 +200,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
 1. Vanaf het laatste werkgebied van de wizard kunt u:
 
-   * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) u wilt toewijzen aan de nieuwe pagina en klikt/tikt u vervolgens op **Maken** om de pagina te maken.
+   * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) u wilt toewijzen aan de nieuwe pagina en klikt u vervolgens op **Maken** om de pagina te maken.
 
    * Gebruiken **Vorige** om terug te keren naar de sjabloonselectie.
 
@@ -325,7 +325,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 1. Van de **Naam wijzigen** het werkgebied van de wizard dat u kunt instellen:
 
-   * Geef de naam op die de pagina moet hebben nadat deze is verplaatst en klik/tik op **Volgende** om verder te gaan.
+   * Geef de naam op die de pagina moet krijgen nadat deze is verplaatst en klik vervolgens op **Volgende** om verder te gaan.
 
    * **Annuleren** om het proces af te breken.
 
@@ -386,7 +386,7 @@ Handelingen voor het verplaatsen van pagina&#39;s worden altijd asynchroon verwe
 
   ![Asynchrone verplaatsing van pagina](assets/asynchronous-page-move.png)
 
-De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** -> **Gereedschappen** -> **Bewerkingen** -> **Taken**
+De status van asynchrone taken kan worden gecontroleerd in het dialoogvenster [**Async-taakstatus** dashboard](/help/sites-administering/asynchronous-jobs.md#monitor-the-status-of-asynchronous-operations) om **Algemene navigatie** > **Gereedschappen** > **Bewerkingen** > **Taken**
 
 >[!NOTE]
 >

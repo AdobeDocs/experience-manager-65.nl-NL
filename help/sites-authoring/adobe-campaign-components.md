@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: personalization
 docset: aem65
 exl-id: d1132fcd-e6a0-44a2-8753-d250f68fbd78
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2857'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ U kunt een afbeelding slepen en neerzetten vanuit de [Middelenbrowser](/help/sit
 
 >[!NOTE]
 >
->U moet gegevens invoeren in het dialoogvenster **Alt-tekst** of de afbeelding kan niet worden opgeslagen.
+>Voer gegevens in het dialoogvenster **Alt-tekst** of de afbeelding kan niet worden opgeslagen.
 
 Nadat de afbeelding is geüpload (en niet eerder), kunt u [plaatsen, bewerken](/help/sites-authoring/editing-content.md#editcontenttouchoptimizedui) om de afbeelding naar wens uit te snijden of te roteren:
 
@@ -127,7 +127,7 @@ Hiermee stelt u de hoogte en de breedte van de afbeelding in.
 
 >[!NOTE]
 >
->U moet gegevens invoeren in het dialoogvenster **Alt-tekst** in het veld **Geavanceerd** of de afbeelding kan niet worden opgeslagen. Het volgende foutbericht wordt weergegeven:
+>Voer gegevens in het dialoogvenster **Alt-tekst** in het veld **Geavanceerd** of de afbeelding kan niet worden opgeslagen. Het volgende foutbericht wordt weergegeven:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >
@@ -156,7 +156,7 @@ Voeg aanvullende URL-parameters toe. Klik op Item toevoegen om meerdere items to
 
 >[!NOTE]
 >
->U moet gegevens invoeren in het dialoogvenster **Koppelingstype** in het veld **URL-info** of de component kan niet worden opgeslagen. Het volgende foutbericht wordt weergegeven:
+>Voer gegevens in het dialoogvenster **Koppelingstype** in het veld **URL-info** of de component kan niet worden opgeslagen. Het volgende foutbericht wordt weergegeven:
 >
 >`Validation failed. Verify the values of the marked fields.`
 >

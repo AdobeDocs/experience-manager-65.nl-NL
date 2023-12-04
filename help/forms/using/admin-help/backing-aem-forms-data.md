@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 exl-id: 536615a4-ab42-4b72-83b1-fad110b011ee
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1533'
+source-wordcount: '1515'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ Als de database in een logmodus wordt uitgevoerd, zoals in de vorige sectie word
 
 ## Maak een back-up van de directory&#39;s database, GDS, AEM opslagplaats en Content Storage Root {#back-up-the-database-gds-aem-repository-and-content-storage-root-directories}
 
-U moet AEM Forms in de modus voor veilige back-up (momentopname) of in de modus voor rolback-up (continue dekking) plaatsen. Controleer het volgende voordat u AEM Forms instelt op een van de back-upmodi:
+Plaats AEM Forms in de modus voor veilige back-up (momentopname) of in de modus voor rolback-up (continue dekking). Controleer het volgende voordat u AEM Forms instelt op een van de back-upmodi:
 
 * Controleer de systeemversie en registreer de patches of updates die zijn toegepast sinds de laatste volledige back-up van het image van het systeem is uitgevoerd.
 * Als u of het rollen of momentopnamemodesteunen gebruikt, zorg ervoor dat uw gegevensbestand met de correcte logboekmontages wordt gevormd om voor hete steunen van het gegevensbestand toe te staan. (Zie [AEM Forms-database](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).)

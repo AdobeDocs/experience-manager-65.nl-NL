@@ -10,9 +10,9 @@ content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 description: Catalogusproducent
 exl-id: 76a46c62-d47d-4970-8a3a-d56015639548
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '881'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -41,28 +41,28 @@ Als onderdeel van het integratieproces, configureert u de **DAM Update-element**
 
 De Producent van de Catalogus gebruikt de gegevens van het productinformatiebeheer (PIM) om producteigenschappen met de eigenschappen in kaart te brengen van XML die in het malplaatje worden getoond. Voer de volgende stappen uit om een catalogus te maken:
 
-1. Tik in de gebruikersinterface Middelen op de knop **AEM logo** en ga naar **Middelen > Catalogi**.
-1. In de **Catalogi** pagina, tikken/klikken **Maken** op de werkbalk en selecteer vervolgens **Catalogus** in de lijst.
+1. Klik in de gebruikersinterface Middelen op de knop **AEM logo** en ga naar **Middelen > Catalogi**.
+1. In de **Catalogi** pagina, klikt u **Maken** op de werkbalk en selecteer vervolgens **Catalogus** in de lijst.
 1. In de **Catalogus maken** voert u een naam en beschrijving (optioneel) voor de catalogus in en geeft u eventueel tags op. U kunt ook een miniatuurafbeelding toevoegen voor de catalogus.
 
    ![create_catalog](assets/create_catalog.png)
 
-1. Tikken/klikken **Opslaan**. Er verschijnt een bevestigingsvenster met de melding dat de catalogus is gemaakt. Tikken/klikken **Gereed** het dialoogvenster sluiten.
-1. Als u de gemaakte catalogus wilt openen, tikt u erop of klikt u erop in het dialoogvenster **Catalogi** pagina.
+1. Klikken **Opslaan**. Er verschijnt een bevestigingsvenster met de melding dat de catalogus is gemaakt. Klikken **Gereed** het dialoogvenster sluiten.
+1. Als u de gemaakte catalogus wilt openen, klikt u op de catalogus in het **Catalogi** pagina.
 
    >[!NOTE]
    >
-   >Als u de catalogus wilt openen, kunt u ook tikken of erop klikken **Openen** in het bevestigingsdialoogvenster dat in de vorige stap is vermeld.
+   >Als u de catalogus wilt openen, klikt u ook op **Openen** in het bevestigingsdialoogvenster dat in de vorige stap is vermeld.
 
-1. Tik op pagina&#39;s of klik op **Maken** in de werkbalk en kies vervolgens de optie **Nieuwe pagina** -optie.
-1. Selecteer in de wizard een sjabloon InDesign voor uw pagina. Tik vervolgens/klik **Volgende**.
+1. Als u pagina&#39;s wilt toevoegen aan de catalogus, klikt u op **Maken** in de werkbalk en kies vervolgens de optie **Nieuwe pagina** -optie.
+1. Selecteer in de wizard een sjabloon InDesign voor uw pagina. Klik vervolgens op **Volgende**.
 1. Geef een naam voor de pagina en een optionele beschrijving op. Geef eventueel tags op.
-1. Tik/klik op de knop **Maken** op de werkbalk. Tik vervolgens/klik **Openen** in het dialoogvenster. De eigenschappen van het product worden weergegeven in het linkerdeelvenster. De vooraf gedefinieerde eigenschappen voor de sjabloon InDesign worden weergegeven in het rechterdeelvenster.
+1. Klik op de knop **Maken** op de werkbalk. Klik vervolgens op **Openen** in het dialoogvenster. De eigenschappen van het product worden weergegeven in het linkerdeelvenster. De vooraf gedefinieerde eigenschappen voor de sjabloon InDesign worden weergegeven in het rechterdeelvenster.
 1. Sleep vanuit het linkerdeelvenster de producteigenschappen naar de sjablooneigenschappen van het InDesign en maak een koppeling tussen deze eigenschappen.
 
-   Tik op of klik op de knop **Voorvertoning** in het rechterdeelvenster.
+   Als u wilt zien hoe de pagina in real-time wordt weergegeven, klikt u op de knop **Voorvertoning** in het rechterdeelvenster.
 
-1. Herhaal stap 6-9 om meer pagina&#39;s te maken. Als u vergelijkbare pagina&#39;s voor andere producten wilt maken, selecteert u de pagina en tikt u op de knop **Vergelijkbare pagina&#39;s maken** op de werkbalk.
+1. Herhaal stap 6-9 om meer pagina&#39;s te maken. Als u vergelijkbare pagina&#39;s voor andere producten wilt maken, selecteert u de pagina en klikt u op de knop **Vergelijkbare pagina&#39;s maken** op de werkbalk.
 
    ![create_similar_pages](assets/create_similar_pages.png)
 
@@ -70,19 +70,19 @@ De Producent van de Catalogus gebruikt de gegevens van het productinformatiebehe
    >
    >U kunt alleen vergelijkbare pagina&#39;s maken voor producten met een vergelijkbare structuur.
 
-   Tik/klik op het pictogram Toevoegen, selecteer producten in de productkiezer en tik/klik op **Selecteren** op de werkbalk.
+   Klik op het pictogram Toevoegen, selecteer producten in de productkiezer en klik vervolgens op **Selecteren** op de werkbalk.
 
    ![select_product](assets/select_product.png)
 
-1. Klik/tik vanuit de werkbalk **Maken**. Tikken/klikken **Gereed** het dialoogvenster sluiten. Vergelijkbare pagina&#39;s worden opgenomen in uw catalogus.
-1. Tik op een bestaand InDesign of klik op **Maken** in de werkbalk en kiest u **Toevoegen aan bestaande pagina** -optie.
-1. Selecteer het bestand InDesign en tik/klik op **Toevoegen** op de werkbalk. Tik vervolgens/klik **OK** het dialoogvenster sluiten.
+1. Klik op de werkbalk op **Maken**. Klikken **Gereed** het dialoogvenster sluiten. Vergelijkbare pagina&#39;s worden opgenomen in uw catalogus.
+1. Als u een bestaand InDesign aan de catalogus wilt toevoegen, klikt u op **Maken** in de werkbalk en kiest u **Toevoegen aan bestaande pagina** -optie.
+1. Selecteer het bestand InDesign en klik op **Toevoegen** op de werkbalk. Klik vervolgens op **OK** het dialoogvenster sluiten.
 
    Als de metagegevens van de producten waarnaar u verwijst in de cataloguspagina&#39;s worden gewijzigd, worden de wijzigingen niet automatisch doorgevoerd in de cataloguspagina&#39;s. Een banner met het label **Stale** wordt weergegeven op de productafbeeldingen in de cataloguspagina&#39;s waarnaar wordt verwezen, om aan te geven dat de metagegevens voor de producten waarnaar wordt verwezen niet up-to-date zijn.
 
    ![chlimage_1-117](assets/chlimage_1-117a.png)
 
-   Om ervoor te zorgen dat de productbeelden op de recentste meta-gegevensveranderingen wijzen, selecteer de pagina in de console van de Catalogus en klik/tik **Pagina bijwerken** op de werkbalk.
+   Om ervoor te zorgen dat de productbeelden op de recentste meta-gegevensveranderingen wijzen, selecteer de pagina in de console van de Catalogus en klik **Pagina bijwerken** op de werkbalk.
 
    ![chlimage_1-118](assets/chlimage_1-118a.png)
 
@@ -90,10 +90,10 @@ De Producent van de Catalogus gebruikt de gegevens van het productinformatiebehe
    >
    >Als u de metagegevens voor een product waarnaar wordt verwezen wilt wijzigen, navigeert u naar de Producten-console (**AEM** > **Handel** > **Producten**) en selecteert u het product. Klik vervolgens op de knop **Eigenschappen weergeven** op de werkbalk en bewerk de metagegevens op de pagina Eigenschappen van het element.
 
-1. Tik op of klik op de knop **Maken** pictogram in de werkbalk en kies **Samenvoegen** in het menu. In de tovenaar, laat de carrousel op bovenkant u pagina&#39;s opnieuw rangschikken door hen te slepen. U kunt ook pagina&#39;s verwijderen.
+1. Als u de pagina&#39;s in de catalogus opnieuw wilt rangschikken, klikt u op de knop **Maken** pictogram in de werkbalk en kies **Samenvoegen** in het menu. In de tovenaar, laat de carrousel op bovenkant u pagina&#39;s opnieuw rangschikken door hen te slepen. U kunt ook pagina&#39;s verwijderen.
 
-1. Tikken/klikken **Volgende**. Tik/klik op een bestaand InDesign als u een omslagbestand wilt toevoegen **Bladeren** naast de **Voorblad kiezen** en geeft u het pad op voor de sjabloon voor de omslagpagina.
-1. Tikken/klikken **Opslaan** en tikken/klikken **Gereed** om het bevestigingsvenster te sluiten.
+1. Klikken **Volgende**. Als u een bestaand InDesign wilt toevoegen als omslagpagina, klikt u op **Bladeren** naast de **Voorblad kiezen** en geeft u het pad op voor de sjabloon voor de omslagpagina.
+1. Klikken **Opslaan** en klik vervolgens op **Gereed** om het bevestigingsvenster te sluiten.
 Bij het selecteren van de **Gereed** wordt een dialoogvenster geopend waarin u kunt opgeven of de PDF-weergave moet worden uitgevoerd.
    ![exporteren naar pdf](assets/CatalogPDF.png)
 Als de optie Acrobat(PDF) is geselecteerd, wordt een PDF-uitvoering gemaakt in  **/jcr:content/renditions** naast indesign-uitvoering. U kunt alle uitvoeringen downloaden door het selectievakje Uitvoeringen te selecteren in het dialoogvenster Downloaden.
@@ -102,4 +102,4 @@ Als de optie Acrobat(PDF) is geselecteerd, wordt een PDF-uitvoering gemaakt in  
 
    ![chlimage_1-119](assets/chlimage_1-119a.png)
 
-   Bekijk de pagina&#39;s in de catalogus in de voorvertoning. Tikken/klikken **Sluiten** om de voorvertoning te sluiten.
+   Bekijk de pagina&#39;s in de catalogus in de voorvertoning. Klikken **Sluiten** om de voorvertoning te sluiten.

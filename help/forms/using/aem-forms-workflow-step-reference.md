@@ -5,9 +5,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: publish
 docset: aem65
 exl-id: 470fcfda-dfde-437c-b539-d5af1e13a7d6
-source-git-commit: e2a3470784beb04c2179958ac6cb98861acfaa71
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '7562'
+source-wordcount: '7512'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Als u bijvoorbeeld het pad van een map opgeeft, worden alle bestanden die rechts
 
 **Gegenereerd document van record opslaan met onderstaande opties:** Geef de locatie op waar u een document van een recordbestand wilt bewaren. U kunt ervoor kiezen om de ladingsomslag te beschrijven, document van verslag bij een plaats binnen de ladingsfolder te plaatsen, of het document van verslag in een variabele van het gegevenstype van het Document op te slaan.
 
-**Landinstelling**: Geef de taal van het document met records op. Selecteren **Letterlijk** om de landinstelling te selecteren in een vervolgkeuzelijst of selecteer **Variabele** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
+**Landinstelling**: Geef de taal van het document met records op. Selecteren **Letterlijk** om de landinstelling te selecteren in een vervolgkeuzelijst of selecteer **Variabele** om de landinstelling op te halen uit de waarde die is opgeslagen in een variabele van het gegevenstype String. Definieer de landinstellingscode terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
 
 ## De stap Service van het formuliergegevensmodel aanroepen {#invoke-form-data-model-service-step}
 
@@ -279,7 +279,7 @@ Met de stap Document ondertekenen kunt u Adobe Sign gebruiken om documenten te o
 
 * **Naam overeenkomst:** Geef de titel van de overeenkomst op. De naam van de overeenkomst wordt onderdeel van het onderwerp en de hoofdtekst van de e-mail die naar de ontvangers wordt verzonden. U kunt de naam opslaan in een variabele van het gegevenstype String of **Letterlijk** om de naam handmatig toe te voegen.
 
-* **Landinstelling:** Geef de taal op voor de opties voor e-mail en verificatie. U kunt de landinstelling opslaan in een variabele van het gegevenstype String of **Letterlijk** om de landinstelling te kiezen in de lijst met beschikbare opties. U moet de landinstellingscode definiëren terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
+* **Landinstelling:** Geef de taal op voor de opties voor e-mail en verificatie. U kunt de landinstelling opslaan in een variabele van het gegevenstype String of **Letterlijk** om de landinstelling te kiezen in de lijst met beschikbare opties. Definieer de landinstellingscode terwijl u de waarde voor de landinstelling in een variabele opslaat. Geef bijvoorbeeld **nl_NL** voor het Engels en **fr_FR** voor Frans.
 
 * **Adobe Sign Cloud Configuration**: Kies een Adobe Sign Cloud-configuratie. Als u Adobe Sign for AEM Forms niet hebt geconfigureerd, raadpleegt u [Adobe Sign integreren met AEM Forms](../../forms/using/adobe-sign-integration-adaptive-forms.md).
 

@@ -1,5 +1,5 @@
 ---
-title: Audiences beheren
+title: Soorten publiek beheren
 seo-title: Managing Audiences
 description: Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub of Client beheren
 seo-description: The Audiences console enables you to create, organize, and manage audiences for your Adobe Target account or manage segments for ContextHub or Client Context
@@ -11,14 +11,14 @@ topic-tags: personalization
 discoiquuid: 9a7a31f9-aeb8-455f-a07e-7b1d1f0a88b6
 docset: aem65
 exl-id: 97e02986-049f-4747-a67a-6aa0677b281e
-source-git-commit: 4fa868f3ae4778d3a637e90b91f7c5909fe5f8aa
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '979'
+source-wordcount: '903'
 ht-degree: 7%
 
 ---
 
-# Audiences beheren{#managing-audiences}
+# Soorten publiek beheren{#managing-audiences}
 
 Met de console Soorten publiek kunt u soorten publiek voor uw Adobe Target-account maken, organiseren en beheren of segmenten voor ContextHub- of Client-context beheren:
 
@@ -43,8 +43,8 @@ U kunt een segment ContextHub of in de console van het publiek of tijdens het he
 
 Om een segment ContextHub in de console van het publiek tot stand te brengen:
 
-1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
-1. Tik of klik op **ContextHub-segment maken**.
+1. Klik in de navigatieconsole op **Personalisatie**. Klikken **Soorten publiek**.
+1. Klikken **ContextHub-segment maken**.
 
    ![screen-shot_2019-03-05at124034](assets/screen-shot_2019-03-05at124034.png)
 
@@ -70,20 +70,20 @@ Wanneer u meer dan één regel gebruikt, worden deze regels gecombineerd door de
 
 Een Adobe Target-publiek maken:
 
-1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
+1. Klik in de navigatieconsole op **Personalisatie**. Klikken **Soorten publiek**.
 
    ![screen-shot_2019-03-05at124139](assets/screen-shot_2019-03-05at124139.png)
 
-1. Tik of klik in de console Soorten publiek op **Maken** en vervolgens** Doelpubliek maken**.
+1. Klik in de console Soorten publiek op **Maken** en vervolgens** Doelpubliek maken**.
 
    ![chlimage_1-168](assets/chlimage_1-168.png)
 
-1. In de **Adobe Target-configuratie** Selecteer de doelconfiguratie en tik of klik op **OK**.
-1. Tik of klik in het gebied Rule#1 op het kenmerktype en voer in de velden die beschikbaar zijn kenmerkgegevens in. Als u klaar bent, selecteert u het vinkje rechts van het kenmerk om het op te slaan. Zie [Kenmerken en de bijbehorende opties](#attributes-and-their-options) voor informatie over alle kenmerken.
+1. In de **Adobe Target-configuratie** de doelconfiguratie selecteren en klikken **OK**.
+1. In het gebied Rule#1, klik het attributentype en ga om het even welke attributeninformatie op de gebieden in die beschikbaar zijn. Als u klaar bent, selecteert u het vinkje rechts van het kenmerk om het op te slaan. Zie [Kenmerken en de bijbehorende opties](#attributes-and-their-options) voor informatie over alle kenmerken.
 1. Klik op **Regel toevoegen** om nog een regel toe te voegen. Voer zoveel regels in als nodig is. De regels worden gecombineerd met de booleaanse operator AND, wat betekent dat de doelgroep aan alle vereisten van elke regel moet voldoen om voor een activiteit in aanmerking te komen.
-1. Tik of klik op **Volgende**.
-1. Voer een naam in voor het publiek en tik of klik op **Opslaan**.
-1. Tik of klik op **Opslaan**. Uw publiek wordt vermeld in de lijst van het Publiek.
+1. Klik op **Next**.
+1. Voer een naam in voor het publiek en klik op **Opslaan**.
+1. Klikken **Opslaan**. Uw publiek wordt vermeld in de lijst van het Publiek.
 
 ### Kenmerken en hun opties {#attributes-and-their-options}
 
@@ -97,7 +97,7 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 | **Sitepagina&#39;s** | Doelbezoekers die zich op een specifieke pagina bevinden of een specifieke parameter mbox hebben. | Zie [Documentatie over sitepagina&#39;s](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/site-pages.html) in Adobe Target. |
 | **Browser** | U kunt zich richten op gebruikers die een specifieke browser of specifieke browseropties gebruiken wanneer zij uw pagina bezoeken. | Zie [Documentatie voor browseropties](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/browser.html?lang=en) in Adobe Target. |
 | **Bezoekerprofiel** | Doelbezoekers die voldoen aan specifieke profielparameters. | Zie [Documentatie bezoekersprofiel](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/visitor-profile.html) in Adobe Target. |
-| **Verkeersbronnen** | Doelbezoekers op basis van het zoekprogramma of de bestemmingspagina die hen naar uw site verwijst. | Zie [Documentatie verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) in Adobe Target. |
+| **verkeersbronnen** | Doelbezoekers op basis van het zoekprogramma of de bestemmingspagina die hen naar uw site verwijst. | Zie [Documentatie verkeersbronnen](https://experienceleague.adobe.com/docs/target/using/audiences/create-audiences/categories-audiences/traffic-sources.html) in Adobe Target. |
 
 ## Een publiek wijzigen in de console Soorten publiek {#modifying-an-audience-in-the-audiences-console}
 
@@ -107,6 +107,6 @@ U kunt het richten regels voor elk van de volgende attributen tot stand brengen:
 
 U kunt om het even welk Contextpubliek van ContextHub of van de Cliënt van de console van het publiek uitgeven. U kunt ook het Adobe Target-publiek bewerken, maar alleen het publiek dat is gemaakt in AEM:
 
-1. Klik of tik in de navigatieconsole op **Personalisatie**. Klikken of tikken **Soorten publiek**.
-1. Tik of klik op het pictogram naast het ContextHub- of Client-segment dat u wilt bewerken en tik of klik op **Bewerken**.
-1. Breng desgewenst wijzigingen aan in de segmenteditor. Zie [Clientcontext](/help/sites-administering/campaign-segmentation.md) of [ContextHub](/help/sites-developing/ch-configuring.md) documentatie.
+1. Klik in de navigatieconsole op **Personalisatie**. Klikken **Soorten publiek**.
+1. Klik het pictogram naast het segment van de ContextHub of van de Cliënt Context u uitgeven, en klik **Bewerken**.
+1. Breng om het even welke veranderingen in de segmentredacteur aan. Zie [Clientcontext](/help/sites-administering/campaign-segmentation.md) of [ContextHub](/help/sites-developing/ch-configuring.md) documentatie.

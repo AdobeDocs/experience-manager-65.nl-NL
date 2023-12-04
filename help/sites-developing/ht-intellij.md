@@ -8,9 +8,9 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 exl-id: 5a79c79b-df65-4cb2-b9d4-eda994c992ec
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Volg de instructies op [Hoe kan ik-werken met JSPs](/help/sites-developing/ht-pr
 1. Open de **Importeren** dialoog in IntelliJ IDEA door
 
    * selecteren **Project importeren** op het welkomstscherm als u nog geen project hebt geopend
-   * selecteren **Bestand -> Project importeren** in het hoofdmenu
+   * selecteren **Bestand > Project importeren** in het hoofdmenu
 
 1. Selecteer in het dialoogvenster Importeren het POM-bestand van uw project.
 
@@ -86,7 +86,7 @@ De volgende stappen zijn noodzakelijk voor het zuiveren JSPs met IntelliJ IDEA
 
 IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat IDEA het `content-package-maven-plugin` instellingen, moet deze handmatig worden geconfigureerd.
 
-1. Ga naar **Bestand -> Projectstructuur**
+1. Ga naar **Bestand > Projectstructuur**
 1. Selecteer de **Inhoud** module
 1. Klikken **+** boven de lijst van modules en selecteer **Web**
 1. Als Folder van het Middel van het Web, selecteer `content/src/main/content/jcr_root subdirectory` van uw project zoals aangetoond in het hieronder opgenomen scherm.
@@ -104,7 +104,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Omdat 
 
 #### Een foutopsporingsprofiel configureren {#configure-a-debug-profile}
 
-1. Ga naar **Uitvoeren -> Configuraties bewerken**
+1. Ga naar **Uitvoeren > Configuraties bewerken**
 1. Druk op **+** en selecteert u **JSR45 extern**
 1. Selecteer in het dialoogvenster Configuratie **Configureren** naast **Toepassingsserver** en een generieke server configureren
 1. Stel de startpagina in op een geschikte URL als u een browser wilt openen wanneer u de foutopsporing start
@@ -141,7 +141,7 @@ CQ_JVM_OPTS="$CQ_JVM_OPTS -Xdebug -Xrunjdwp:transport=dt_socket,address=58242,su
 
 U bent nu allen opstelling voor het zuiveren van uw JSPs in AEM.
 
-1. Selecteren **Uitvoeren -> Foutopsporing -> Uw foutopsporingsprofiel**
+1. Selecteren **Uitvoeren > Foutopsporing > Uw foutopsporingsprofiel**
 1. Onderbrekingspunten instellen in de componentcode
 1. Een pagina openen in uw browser
 

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: personalization
 exl-id: d7e4d424-0ca7-449f-95fb-c4fe19dd195d
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2749'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -102,7 +102,7 @@ Vanuit de nieuwsbrief/e-mail in de ontwerpfase kunt u de Adobe Campaign-cloudser
 
    ![chlimage_1-19](assets/chlimage_1-19a.png)
 
-1. Selecteren **Cloud-services** en klik op **+** een configuratie toevoegen. Selecteer om het even welke zichtbare configuratie (maakt niet uit welke). Klik of tik op **+** ondertekenen om een andere configuratie toe te voegen en dan selecteren **Adobe Campaign**.
+1. Selecteren **Cloud-services** en klik op **+** een configuratie toevoegen. Selecteer om het even welke zichtbare configuratie (maakt niet uit welke). Klik op de knop **+** ondertekenen om een andere configuratie toe te voegen en dan selecteren **Adobe Campaign**.
 
    >[!NOTE]
    >
@@ -201,7 +201,7 @@ U kunt voorvertonen hoe de nieuwsbrief eruit zal zien en een voorvertoning van d
 
    ![chlimage_1-29](assets/chlimage_1-29a.png)
 
-1. U kunt de zaadgegevens van Adobe Campaign bekijken die aan de momenteel geselecteerde persoon worden geassocieerd. Om dit te doen, klik/tik de module van Adobe Campaign in de bar ContextHub. Hiermee wordt een dialoogvenster geopend waarin alle zaadgegevens van het huidige profiel worden weergegeven. De gegevens worden opnieuw aangepast wanneer naar een andere persoon wordt overgeschakeld.
+1. U kunt de zaadgegevens van Adobe Campaign bekijken die aan de momenteel geselecteerde persoon worden geassocieerd. Om dit te doen, klik de module van Adobe Campaign in de bar ContextHub. Hiermee wordt een dialoogvenster geopend waarin alle zaadgegevens van het huidige profiel worden weergegeven. De gegevens worden opnieuw aangepast wanneer naar een andere persoon wordt overgeschakeld.
 
    ![chlimage_1-30](assets/chlimage_1-30a.png)
 

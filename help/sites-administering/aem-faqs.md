@@ -2,9 +2,9 @@
 title: Veelgestelde vragen AEM
 description: Gebruik deze veelgestelde vragen om algemene workflows of problemen in AEM te begrijpen, te configureren en op te lossen.
 exl-id: 182c464a-ff7a-467b-9eb5-8ffac335a87a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1085'
+source-wordcount: '1011'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Als de gebruiker, die de filmdossiers uploadt geen toestemmingen onder activakno
 
 #### Wat zijn de standaardmontages voor configuraties OTB terwijl het creëren van het Exemplaar van de Taal? {#what-are-the-default-settings-for-ootb-configurations-while-creating-language-copy}
 
-Wanneer u een taalkopie maakt via de aanraakinterface (**Verwijzingen** -> **Taalkopie bijwerken**), wordt er een nieuwe DAM-map gemaakt onder de nieuwe taal en er wordt naar elementen verwezen.
+Wanneer u een taalkopie maakt via de aanraakinterface (**Verwijzingen** > **Taalkopie bijwerken**), wordt er een nieuwe DAM-map gemaakt onder de nieuwe taal en er wordt naar elementen verwezen.
 
 Dit is de standaardinstelling voor OOTB-configuraties. U kunt instellen **Pagina-elementen vertalen** = **Niet vertalen** in vertaalconfiguraties.
 Voor AEM 6.4: **Gereedschappen** > **Cloud Servicen** > **Cloudservices voor vertaling**.

@@ -7,9 +7,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 feature: Document Security
 exl-id: fe132f13-5f9a-4c86-a385-0a0026c812e2
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10221'
+source-wordcount: '10266'
 ht-degree: 0%
 
 ---
@@ -730,7 +730,7 @@ U kunt de volgende wijzigingen aanbrengen met behulp van het configuratiebestand
 
 >[!NOTE]
 >
->Wanneer u het configuratiebestand importeert, wordt uw systeem op basis van de gegevens in het bestand opnieuw geconfigureerd. De uitzonderingen zijn dynamische watermerkconfiguratie en informatie van douanegebeurtenissen, die niet met het uitgevoerde configuratiedossier worden bewaard. U moet deze informatie manueel in uw nieuw systeem vormen. Slechts zou een systeembeheerder of een professionele de dienstenconsultant die met documentveiligheid en XML vertrouwd is de inhoud van een configuratiedossier, zoals om een bedorven plaatsen opnieuw te vormen of parameters voor een bepaald scenario van de ondernemingsplaatsing te stemmen moeten wijzigen.
+>Wanneer u het configuratiebestand importeert, wordt uw systeem op basis van de gegevens in het bestand opnieuw geconfigureerd. De uitzonderingen zijn dynamische watermerkconfiguratie en informatie van douanegebeurtenissen, die niet met het uitgevoerde configuratiedossier worden bewaard. Configureer deze gegevens handmatig in uw nieuwe systeem. Slechts zou een systeembeheerder of een professionele de dienstenconsultant die met documentveiligheid en XML vertrouwd is de inhoud van een configuratiedossier, zoals om een bedorven plaatsen opnieuw te vormen of parameters voor een bepaald scenario van de ondernemingsplaatsing te stemmen moeten wijzigen.
 
 **Een configuratiebestand exporteren**
 
@@ -856,7 +856,7 @@ Acrobat Reader DC-extensies voor Microsoft Office zijn een insteekmodule die wor
    * Sun Solaris
    * HP-UX
 
-   `SDKVersions` geeft de versie van de C++ Client-API voor documentbeveiliging aan die door de clienttoepassing wordt gebruikt. Bijvoorbeeld, `"8.2"`.
+   `SDKVersions` geeft de versie van de C++ Client-API voor documentbeveiliging aan die door de clienttoepassing wordt gebruikt. Bijvoorbeeld: `"8.2"`.
 
    `APPFamilies` wordt gedefinieerd door de client-API.
 

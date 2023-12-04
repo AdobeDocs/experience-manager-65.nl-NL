@@ -6,9 +6,9 @@ topic-tags: e-commerce
 content-type: reference
 docset: aem65
 exl-id: c29f6213-1df6-45af-91c8-14b255276d82
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2929'
+source-wordcount: '2907'
 ht-degree: 0%
 
 ---
@@ -194,7 +194,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
    ![productconsole met open verwijzingen](/help/sites-administering/assets/chlimage_1-88.png)
 
-1. Klik/tik op het referentietype (bijvoorbeeld Productpagina&#39;s) om de lijst uit te vouwen.
+1. Klik op het referentietype (bijvoorbeeld Productpagina&#39;s) om de lijst uit te vouwen.
 1. Selecteer een specifieke referentie zodat u de opties kunt weergeven:
 
    * Naar productpagina navigeren
@@ -219,7 +219,7 @@ Voor elk afzonderlijk producttype is een steiger nodig. Het geschikte substraat 
 
 U kunt een bestaand facet wijzigen of nieuwe facetten toevoegen met behulp van CRXDE Lite:
 
-1. Ga naar:
+1. Navigeren naar:
 
    `http://localhost:4502/crx/de/index.jsp#/libs/commerce/gui/content/products/aside/items/search/items/searchpanel/facets`
 
@@ -463,7 +463,7 @@ Een catalogus genereren:
    ![wizard Catalogus maken](/help/sites-administering/assets/chlimage_1-99.png)
 
 1. Navigeer naar de gewenste blauwdruk van de catalogus.
-1. Selecteer de **Selecteren** en tik/klik op de gewenste blauwdruk van de catalogus.
+1. Selecteer de **Selecteren** en klikt u op de gewenste blauwdruk van de catalogus.
 1. Selecteren **Volgende**.
 
    ![wizard Cataloguseigenschappen](/help/sites-administering/assets/chlimage_1-100.png)
@@ -491,7 +491,7 @@ Een catalogus genereren:
 
 1. Een pagina maken met de opdracht **Sectie vervagen** sjabloon.
 
-   Bijvoorbeeld, `Swimwear`.
+   Bijvoorbeeld: `Swimwear`.
 
 1. De nieuwe openen `Swimwear` pagina, en klik vervolgens op **Vervaging bewerken**. De **Eigenschappen** wordt geopend zodat u het dialoogvenster **Producten** selectie.
 
@@ -524,7 +524,7 @@ Een catalogus uitrollen:
 
    ![rollout](/help/sites-administering/do-not-localize/chlimage_1-24.png)
 
-1. Stel in de wizard de rollout naar wens in en tik/klik op **Wijzigingen in rollout**.
+1. Stel in de wizard de rollout naar wens in en klik op **Wijzigingen in rollout**.
 1. Er wordt een dialoogvenster geopend. Selecteren **Gereed** wanneer het proces is voltooid.
 
 #### Een catalogus uitrollen - klassieke gebruikersinterface {#rolling-out-a-catalog-classic-ui}
@@ -549,7 +549,7 @@ Een catalogus uitrollen:
 
    ![Pictogram Blauwafdrukken importeren](/help/sites-administering/do-not-localize/chlimage_1-13.png)
 
-1. Selecteer in de wizard de gewenste bron en tik/klik op **Volgende**.
+1. Selecteer in de wizard de gewenste bron en klik op **Volgende**.
 
    ![blauwdruk, wizard](/help/sites-administering/assets/chlimage_1-102.png)
 

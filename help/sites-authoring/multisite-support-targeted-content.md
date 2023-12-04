@@ -1,5 +1,5 @@
 ---
-title: Werken met getargete content in meerdere sites
+title: Werken met gerichte inhoud in meerdere sites
 seo-title: Working with Targeted Content in Multisites
 description: Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen
 seo-description: If you need to manage targeted content, such as activities, experiences, and offers between your sites, you can take advantage of AEM's built-in multisite support for targeted content
@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
 exl-id: 5e345ffd-4e9c-467f-8ebb-c798eeb61dea
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2855'
-ht-degree: 5%
+source-wordcount: '2837'
+ht-degree: 3%
 
 ---
 
-# Werken met getargete content in meerdere sites{#working-with-targeted-content-in-multisites}
+# Werken met gerichte inhoud in meerdere sites{#working-with-targeted-content-in-multisites}
 
 Als u gerichte inhoud, zoals activiteiten, ervaringen, en aanbiedingen tussen uw plaatsen moet beheren, kunt u uit AEM ingebouwde multisite steun voor gerichte inhoud voordeel halen.
 
@@ -157,18 +157,18 @@ Gebieden kunnen activiteiten en aanbiedingen omvatten. Nadat u een gebied in é�
 
 >[!NOTE]
 >
->Het standaardgebied genaamd Mastergebied wordt standaard samengevouwen wanneer u op de naam van een merk tikt of klikt **totdat** u een ander gebied maakt. Wanneer u vervolgens een merk selecteert in de console **Activiteit** of **Aanbiedingen**, ziet u de console **Gebied**.
+>Het standaardgebied Master Area wordt standaard samengevouwen wanneer u op de naam van een merk klikt **tot** u maakt een ander gebied. Wanneer u vervolgens een merk selecteert in de console **Activiteit** of **Aanbiedingen**, ziet u de console **Gebied**.
 
 Een gebied maken:
 
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
-1. Tik of klik op **Gebied maken**.
+1. Klikken **Gebied maken**.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
 1. Klik op de knop **Gebied** pictogram en klik **Volgende**.
 1. In de **Titel** voert u een naam in voor het nieuwe gebied. Selecteer optioneel tags.
-1. Tik of klik op **Maken**.
+1. Klikken **Maken**.
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks in de merkenconsole maken.
 
@@ -181,7 +181,7 @@ U maakt een gebied als een live kopie om de doelinhoud over te nemen in de sites
 Een gebied maken als een livecopy:
 
 1. Ga naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en ga vervolgens naar uw merk.
-1. Tik of klik op **Gebied maken als actieve kopie**.
+1. Klikken **Gebied maken als actieve kopie**.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
@@ -203,7 +203,7 @@ Een gebied maken als een livecopy:
    >
    >Wanneer een pagina wordt uitgerold naar een Live Copy en het gebied dat voor de pagina van de Vervaging wordt gevormd ook de Vervaging voor het gebied is dat voor Levende Exemplaar van Pagina&#39;s wordt gevormd, LiveAction **personalizationContentRollout** activeert een synchrone subRollout, die deel van uitmaakt **Standaardconfiguratie voor rollout**.
 
-1. Tik of klik op **Maken**.
+1. Klikken **Maken**.
 
    AEM wordt omgeleid naar het merkvenster, waar de gemaakte gebieden worden vermeld. Als er een ander gebied buiten het hoofdgebied is, kunt u gebieden rechtstreeks vanuit het merkvenster maken.
 
@@ -222,13 +222,13 @@ Als u een koppeling maakt, zijn alleen die activiteiten, ervaringen en aanbiedin
 Een site koppelen aan een gebied:
 
 1. Navigeer naar de site (of pagina) die u wilt koppelen aan een gebied.
-1. Selecteer de site of pagina en tik of klik op **Eigenschappen weergeven**.
-1. Tik of klik op de knop **Personalisatie** tab.
+1. Selecteer de site of pagina en klik op **Eigenschappen weergeven**.
+1. Klik op de knop **Personalisatie** tab.
 1. In de **Merk** selecteert u het merk waaraan u uw gebied wilt koppelen. Nadat u het merk hebt geselecteerd, zijn de beschikbare gebieden beschikbaar in het dialoogvenster **Verwijzing gebied** -menu.
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Selecteer het gebied in het menu **Verwijzing gebied** vervolgkeuzelijst en tik of klik op **Opslaan**.
+1. Selecteer het gebied in het menu **Verwijzing gebied** vervolgkeuzelijst en klik op **Opslaan**.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
@@ -252,8 +252,8 @@ Een activiteit die overerft van een andere site wordt groen gemarkeerd naast de 
 
 Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
 
-1. Navigeer naar de pagina waar u de overerving los wilt maken of wilt onderbreken en tik of klik op **Targeting** in het vervolgkeuzemenu Modus.
-1. Als de pagina is gekoppeld aan een gebied dat een live kopie is, ziet u de overervingsstatus. Tik of klik op **Doelstelling starten**.
+1. Navigeer naar de pagina waar u overerving wilt loskoppelen of onderbreken en klik **Targeting** in het vervolgkeuzemenu Modus.
+1. Als de pagina is gekoppeld aan een gebied dat een live kopie is, ziet u de overervingsstatus. Klikken **Doelstelling starten**.
 1. Voer een van de volgende handelingen uit om een activiteit op te schorten:
 
    1. Selecteer een element van de activiteit, zoals het publiek. AEM geeft automatisch een bevestigingsvenster voor Live kopie onderbreken weer. (U kunt livekopieën opschorten door tijdens het doelproces op een element te tikken of te klikken.)
@@ -261,7 +261,7 @@ Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Tik of klik op **Onderbreken** om de activiteit op te schorten. Uitgestelde activiteiten worden rood gemarkeerd.
+1. Klikken **Onderbreken** om de activiteit op te schorten. Uitgestelde activiteiten worden rood gemarkeerd.
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -269,10 +269,10 @@ Om erfenis van gerichte inhoud in een activiteit op te schorten of los te maken:
 
 Overerving van doelinhoud in een activiteit onderbreken:
 
-1. Navigeer naar de pagina waar u de live kopie van het stramien wilt loskoppelen en tik of klik op **Targeting** in het vervolgkeuzemenu Modus.
-1. Als de pagina is gekoppeld aan een gebied dat een live kopie is, ziet u de overervingsstatus. Tik of klik op **Doelstelling starten**.
+1. Navigeer naar de pagina waar u de live kopie van het stramien wilt loskoppelen en klik op **Targeting** in het vervolgkeuzemenu Modus.
+1. Als de pagina is gekoppeld aan een gebied dat een live kopie is, ziet u de overervingsstatus. Klikken **Doelstelling starten**.
 1. Selecteer **Livekopie loskoppelen** in het vervolgkeuzemenu op de werkbalk. AEM bevestigt dat u de livekopie wilt loskoppelen.
-1. Tik of klik op **Loskoppelen** om de actieve kopie van de activiteit los te koppelen. Nadat deze is losgekoppeld, wordt het vervolgkeuzemenu met betrekking tot overerving niet meer weergegeven. De activiteit is nu een lokale activiteit.
+1. Klikken **Loskoppelen** om de actieve kopie van de activiteit los te koppelen. Nadat deze is losgekoppeld, wordt het vervolgkeuzemenu met betrekking tot overerving niet meer weergegeven. De activiteit is nu een lokale activiteit.
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
@@ -282,13 +282,13 @@ Als u de overerving van de doelinhoud van een activiteit hebt opgeschort, kunt u
 
 Om erfenis van gerichte inhoud in een activiteit te herstellen:
 
-1. Navigeer naar de pagina waar u overerving wilt herstellen en tik of klik op **Targeting** in het vervolgkeuzemenu Modus.
-1. Tik of klik op **Doelstelling starten**.
+1. Navigeer naar de pagina waar u overerving wilt herstellen en klik op **Targeting** in het vervolgkeuzemenu Modus.
+1. Klikken **Doelstelling starten**.
 1. Selecteer **Livekopie hervatten** in het vervolgkeuzemenu op de werkbalk.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
 
-1. Tik of klik op **Hervatten** om te bevestigen dat u levende exemplaarovererving wilt hervatten. Eventuele wijzigingen aan de huidige activiteit gaan verloren als u de overerving hervat.
+1. Klikken **Hervatten** om te bevestigen dat u levende exemplaarovererving wilt hervatten. Eventuele wijzigingen aan de huidige activiteit gaan verloren als u de overerving hervat.
 
 ## Gebieden verwijderen {#deleting-areas}
 
@@ -297,5 +297,5 @@ Wanneer u een gebied verwijdert, verwijdert u alle activiteiten in dat gebied. A
 Een gebied verwijderen:
 
 1. Navigeren naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en dan je merk.
-1. Tik of klik op het pictogram naast het gebied dat u wilt verwijderen.
-1. Tik of klik op **Verwijderen** en bevestig dat u het gebied wilt verwijderen.
+1. Klik op het pictogram naast het gebied dat u wilt verwijderen.
+1. Klikken **Verwijderen** en bevestig dat u het gebied wilt verwijderen.

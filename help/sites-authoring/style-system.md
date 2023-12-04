@@ -9,9 +9,9 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: e3ccddb6-be5e-4e5f-a017-0eed263555ce
 exl-id: 1772368a-f5c9-440c-a92a-0f1d34cc4bf8
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1304'
+source-wordcount: '1293'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
    ![Stijlsysteem voor de auteur](assets/style-system-author.png)
 
-1. Tik of klik op de knop **Stijlen** op de werkbalk van de **Lijst** om het stijlmenu te openen en de weergave van de component te wijzigen.
+1. Klik op de knop **Stijlen** op de werkbalk van de **Lijst** om het stijlmenu te openen en de weergave van de component te wijzigen.
 
    ![Stijlen selecteren](assets/style-system-author2.png)
 
@@ -90,7 +90,7 @@ Ga als volgt te werk als u het Stijlsysteem voor uw eigen componenten wilt gebru
 
 ### Als sjabloonauteur {#as-a-template-author}
 
-1. Tijdens het bewerken van de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens -> Sjabloon bewerken**.
+1. Tijdens het bewerken van de hoofdpagina voor de Engelse taal van WKND op `http://<host>:<port>/sites.html/content/wknd/language-masters/en`, bewerkt u de sjabloon van de pagina via **Paginagegevens > Sjabloon bewerken**.
 
    ![Sjabloon bewerken](assets/style-system-edit-template.png)
 

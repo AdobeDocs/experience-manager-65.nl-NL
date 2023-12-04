@@ -3,9 +3,9 @@ title: Configureer de Rich Text Editor voor het schrijven van inhoud in Adobe Ex
 description: Leer hoe u de Adobe Experience Manager Rich Text Editor configureert voor het schrijven van inhoud in Adobe Experience Manager.
 contentOwner: AG
 exl-id: 2e7ec22f-0856-44c4-bb15-1086dae0b85a
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2921'
+source-wordcount: '2883'
 ht-degree: 0%
 
 ---
@@ -56,13 +56,13 @@ Auteurs kunnen tekstinhoud in Experience Manager maken en bewerken met de versch
 
 ### Inline bewerken {#inline-editing}
 
-Als u de inhoud opent (met een langzaam dubbeltikken/klikken), kan deze op de pagina worden bewerkt. Er wordt een compacte werkbalk weergegeven met zeer basisopties.
+Als u de inhoud opent (met een langzaam dubbelklikken), kan deze op de pagina worden bewerkt. Er wordt een compacte werkbalk weergegeven met zeer basisopties.
 
 ![Inline bewerken met de standaardwerkbalk in Touch-gebruikersinterface](assets/chlimage_1-36.png)
 
 *Afbeelding: Inline bewerken met standaardwerkbalk in Touch-gebruikersinterface*
 
-In de klassieke gebruikersinterface kunt u met een trage dubbelklik op de component inline bewerken en met een oranje omtrek de inhoud markeren. Als de Inhoudszoeker is geopend, wordt boven in het venster een werkbalk weergegeven met de beschikbare RTE-opmaakopties. Als de Inhoudszoeker niet is geopend, worden de opmaakopties niet weergegeven en kunt u alleen standaardtekstbewerkingen uitvoeren.
+In de klassieke gebruikersinterface kunt u langzaam dubbelklikken op de component om inline te bewerken en wordt de inhoud gemarkeerd met een oranje omtrek. Als de Inhoudszoeker is geopend, wordt boven in het venster een werkbalk weergegeven met de beschikbare RTE-opmaakopties. Als de Inhoudszoeker niet is geopend, worden de opmaakopties niet weergegeven en kunt u alleen standaardtekstbewerkingen uitvoeren.
 
 ### Volledig scherm bewerken {#full-screen-editing}
 
@@ -110,7 +110,7 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 | bewerken | cut copy paste-default paste-plaintext paste-wordhtml | [De drie plakmodi knippen, kopiëren en](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | findreplace | zoeken, vervangen | Zoeken en vervangen. |
 | format | vet cursief onderstrepen | [Basistekstopmaak](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| afbeelding | afbeelding | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Finder). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
+| image | image | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Finder). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
 | toetsen |  | Zie voor het definiëren van deze waarde [tabgrootte](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize). |
 | uitvullen | uitvullen, links uitvullen, rechts uitvullen | Alinea-uitlijning. |
 | koppelingen | ontkoppelingsanker wijzigen | [Hyperlinks en ankers](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |

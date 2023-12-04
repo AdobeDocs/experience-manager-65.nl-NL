@@ -8,9 +8,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: d53ef3e2-14ca-4444-b563-be67be15c040
 exl-id: 7d60673e-484a-4447-83cf-d62a0d7ad745
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -96,7 +96,7 @@ In deze sectie worden alleen specifieke koppelingen naar Adobe Campaign beschrev
    * **Adobe Campaign: Abonnement op services opzeggen**: Hiermee kunt u de abonnementen van een ontvanger in Adobe Campaign annuleren.
 
 1. U moet een **Gecodeerde primaire sleutel** op elk formulier. Deze component definieert welke URL-parameter wordt gebruikt om de gecodeerde primaire sleutel van een Adobe Campaign-profiel te accepteren. Selecteer in Componenten de optie Adobe Campaign, zodat alleen de componenten zichtbaar zijn.
-1. Sleep de component **Gecodeerde primaire sleutel** naar het formulier (waar dan ook) en klik of tik op het **Configuratie** pictogram. In de **Adobe Campaign** op, geeft u een naam voor de URL-parameter op. Klik of tik het vinkje om uw veranderingen te bewaren.
+1. Sleep de component **Gecodeerde primaire sleutel** naar het formulier (overal) en klik op de knop **Configuratie** pictogram. In de **Adobe Campaign** op, geeft u een naam voor de URL-parameter op. Klik op het vinkje om de wijzigingen op te slaan.
 
    Gegenereerde koppelingen naar dit formulier moeten deze URL-parameter gebruiken en er de gecodeerde primaire sleutel van een Adobe Campaign-profiel aan toewijzen. De gecodeerde primaire sleutel moet correct (percent) gecodeerd zijn URL.
 

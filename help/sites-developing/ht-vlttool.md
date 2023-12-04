@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: development-tools
 content-type: reference
 exl-id: efbba312-9fc8-4670-b8f1-d2a86162d075
-source-git-commit: 69a249e63e2e6b96ba08f9846baa3e91d42b865f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2709'
+source-wordcount: '2687'
 ht-degree: 0%
 
 ---
@@ -135,7 +135,7 @@ Nadat u de opslagplaats hebt uitgecheckt en gesynchroniseerd, moet u testen of a
 
 De synchronisatie testen:
 
-1. Ga naar `.../jcr_content/libs/foundation/components/text`.
+1. Navigeren naar `.../jcr_content/libs/foundation/components/text`.
 1. Iets bewerken in `text.jsp`.
 1. De gewijzigde bestanden bekijken door te typen `vlt st`
 1. De wijzigingen bekijken door te typen `vlt diff text.jsp`
@@ -313,7 +313,7 @@ In de volgende tabel worden alle beschikbare VLT-opdrachten beschreven. Zie de a
 | Opdracht | Afkorting van opdracht | Beschrijving |
 | `export` |  | Exporteert van een JCR-opslagplaats (vault file system) naar het lokale bestandssysteem zonder controlebestanden. |
 | `import` |  | Hiermee wordt een lokaal bestandssysteem geïmporteerd naar een JCR-opslagplaats (vault file system). |
-| `checkout` | `co` | Hiermee wordt een Vault-bestandssysteem uitgecheckt. Gebruik dit voor een eerste JCR-opslagplaats naar het lokale bestandssysteem. (Opmerking: u moet de repository eerst uitchecken in subversion.) |
+| `checkout` | `co` | Hiermee wordt een Vault-bestandssysteem uitgecheckt. Gebruik dit voor een eerste JCR-opslagplaats naar het lokale bestandssysteem. (Opmerking: check de repository eerst uit in subversion.) |
 | `analyze` |  | Hiermee analyseert u pakketten. |
 | `status` | `st` | Hiermee wordt de status van bestanden en mappen met werkkopieën afgedrukt. |
 | `update` | `up` | Hiermee importeert u wijzigingen uit de opslagplaats in de werkkopie. |

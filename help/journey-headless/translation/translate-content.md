@@ -2,9 +2,9 @@
 title: Inhoud vertalen
 description: Gebruik de vertaalaansluiting en de regels om uw inhoud zonder kop te vertalen.
 exl-id: a2c2bb9f-97b9-42fd-9bd1-e75c113fb514
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2162'
+source-wordcount: '2115'
 ht-degree: 0%
 
 ---
@@ -52,15 +52,15 @@ Beide benaderingen worden in de volgende secties verkend.
 
 Voor eigenaars van inhoud die ook verantwoordelijk zijn voor vertaling, is het vaak gemakkelijker om het vertaalproject automatisch AEM maken. AEM automatisch een vertaalproject maken op basis van het inhoudspad:
 
-1. Navigeren naar **Navigatie** -> **Activa** -> **Bestanden**. Onthoud dat inhoud zonder kop in AEM wordt opgeslagen als elementen die Content Fragments worden genoemd.
+1. Navigeren naar **Navigatie** > **Activa** > **Bestanden**. Onthoud dat inhoud zonder kop in AEM wordt opgeslagen als elementen die Content Fragments worden genoemd.
 1. Selecteer de taalwortel van uw project. In dit geval: `/content/dam/wknd/en` is geselecteerd.
-1. Tik of klik op de railkiezer en toon de **Verwijzingen** deelvenster.
-1. Tik of klik op **Taalkopieën**.
+1. Klik op de railkiezer en geef de **Verwijzingen** deelvenster.
+1. Klikken **Taalkopieën**.
 1. Controleer de **Taalkopieën** selectievakje.
 1. De sectie uitbreiden **Taalkopieën bijwerken** onder aan het venster Verwijzingen.
 1. In de **Project** vervolgkeuzelijst, selecteren **Vertaalproject(en) maken**.
 1. Geef een geschikte titel op voor uw vertaalproject.
-1. Tik of klik op **Start**.
+1. Klikken **Start**.
 
 ![Een vertaalproject maken](assets/create-translation-project.png)
 
@@ -76,16 +76,16 @@ U ontvangt een bericht dat het project werd gecreeerd.
 
 Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhoud manueel te selecteren om in een vertaalproject te omvatten. Als u een dergelijk handmatig vertaalproject wilt maken, moet u eerst een leeg project maken en vervolgens de inhoud selecteren die u aan het project wilt toevoegen.
 
-1. Navigeren naar **Navigatie** -> **Projecten**.
-1. Tik of klik op **Maken** -> **Map** om een map voor uw projecten te maken.
+1. Navigeren naar **Navigatie** > **Projecten**.
+1. Klikken **Maken** > **Map** om een map voor uw projecten te maken.
    * Dit is optioneel, maar handig om uw vertaalwerkzaamheden te organiseren.
-1. In de **Map maken** venster, een **Titel** voor de map en tik of klik op **Maken**.
+1. In de **Map maken** venster, een **Titel** voor de map en klik vervolgens op **Maken**.
 
    ![Projectmap maken](assets/create-project-folder.png)
 
-1. Tik of klik op de map om de map te openen.
-1. Tik of klik op **Maken** -> **Project**.
-1. Projecten zijn gebaseerd op sjablonen. Tik of klik op de knop **Omzettingsproject** sjabloon om het te selecteren en vervolgens te tikken of te klikken **Volgende**.
+1. Klik op de map om de map te openen.
+1. Klik in de nieuwe projectmap op **Maken** > **Project**.
+1. Projecten zijn gebaseerd op sjablonen. Klik op de knop **Omzettingsproject** om het te selecteren en klik vervolgens op **Volgende**.
 
    ![Sjabloon voor vertaalproject selecteren](assets/select-translation-project-template.png)
 
@@ -93,11 +93,11 @@ Voor managers van vertaalprojecten, is het vaak noodzakelijk om specifieke inhou
 
    ![Tabblad Projectbasis](assets/project-basic-tab.png)
 
-1. Op de **Geavanceerd** gebruiken **Doeltaal** vervolgkeuzelijst om de talen te selecteren waarin de inhoud moet worden vertaald. Tik of klik op **Maken**.
+1. Op de **Geavanceerd** gebruiken **Doeltaal** vervolgkeuzelijst om de talen te selecteren waarin de inhoud moet worden vertaald. Klikken **Maken**.
 
    ![Tabblad Project geavanceerd](assets/project-advanced-tab.png)
 
-1. Tik of klik op **Openen** in het bevestigingsdialoogvenster.
+1. Klikken **Openen** in het bevestigingsdialoogvenster.
 
    ![Dialoogvenster Projectbevestiging](assets/project-confirmation-dialog.png)
 
@@ -109,8 +109,8 @@ Vertaalprojecten zijn ontworpen om alle inhoud en taken in verband met een verta
 
 Het vertaalproject weergeven:
 
-1. Navigeren naar **Navigatie** -> **Projecten**.
-1. Tik of klik op het project dat in de vorige sectie is gemaakt.
+1. Navigeren naar **Navigatie** > **Projecten**.
+1. Klik op het project dat in de vorige sectie is gemaakt.
 
 ![Vertaalproject](assets/translation-project.png)
 
@@ -129,16 +129,16 @@ Wanneer het automatisch tot stand brengen van het vertaalproject, evalueert AEM 
 
 U kunt als volgt de details van de inhoud zonder kop in dit project bekijken:
 
-1. Tik of klik op de ovaalknop onder aan het dialoogvenster **Vertaaltaak** kaart.
+1. Klik op de knop voor ovaal onder aan het dialoogvenster **Vertaaltaak** kaart.
 1. De **Vertaaltaak** worden alle items in de taak weergegeven.
    ![Taakdetails voor vertaling](assets/translation-job-detail.png)
-1. Tik of klik op een regel om de details van die regel weer te geven. Houd er rekening mee dat één regel meerdere inhoudsitems kan vertegenwoordigen die moeten worden vertaald.
-1. Tik of klik op het selectiekader voor een regelitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles Inhoudsfragmenten of Elementen weer te geven.
+1. Klik op een regel om de details van die regel weer te geven. Houd er rekening mee dat één regel meerdere inhoudsitems kan vertegenwoordigen om te vertalen.
+1. Klik op het selectievak voor een lijstitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles Inhoudsfragmenten of -elementen weer te geven.
    ![Opties voor vertaaltaken](assets/translation-job-options.png)
 
 De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door **Staat** in de **Vertaaltaak** venster.
 
-Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
+Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en klikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
 ![Vertaaltaak starten](assets/start-translation-job.png)
 
@@ -154,16 +154,16 @@ Als u handmatig een vertaalproject maakt, AEM de benodigde taken, maar selecteer
 
 Inhoud toevoegen aan een vertaaltaak:
 
-1. Tik of klik op de ovaalknop onder aan een van de **Vertaaltaak** kaarten.
-1. Controleer of de taak geen inhoud bevat. Tik of klik op de knop **Toevoegen** boven aan het venster en vervolgens **Middelen/Pagina&#39;s** in de vervolgkeuzelijst.
+1. Klik op de knop voor de ovaal onder aan een van de opties **Vertaaltaak** kaarten.
+1. Controleer of de taak geen inhoud bevat. Klik op de knop **Toevoegen** boven aan het venster en vervolgens **Middelen/Pagina&#39;s** in de vervolgkeuzelijst.
 
    ![Lege vertaaltaak](assets/empty-translation-job.png)
 
-1. Er wordt een padbrowser geopend waarin u specifiek kunt selecteren welke inhoud u wilt toevoegen. Zoek de inhoud en tik of klik om deze te selecteren.
+1. Er wordt een padbrowser geopend waarin u specifiek kunt selecteren welke inhoud u wilt toevoegen. Zoek de inhoud en klik om deze te selecteren.
 
    ![Padbrowser](assets/path-browser.png)
 
-1. Tik of klik op **Selecteren** om de geselecteerde inhoud aan de baan toe te voegen.
+1. Klikken **Selecteren** om de geselecteerde inhoud aan de baan toe te voegen.
 1. In de **Vertalen** , geeft u aan dat u **Taalkopie maken**.
 
    ![Taalkopie maken](assets/translate-copy-master.png)
@@ -172,14 +172,14 @@ Inhoud toevoegen aan een vertaaltaak:
 
    ![Inhoud toegevoegd aan vertaaltaak](assets/content-added.png)
 
-1. Tik of klik op het selectiekader voor een regelitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles Inhoudsfragmenten of Elementen weer te geven.
+1. Klik op het selectievak voor een lijstitem om andere opties weer te geven, zoals de optie om het item uit de taak te verwijderen of in de consoles Inhoudsfragmenten of -elementen weer te geven.
    ![Opties voor vertaaltaken](assets/translation-job-options-manual.png)
 
 1. Herhaal deze stappen om alle vereiste inhoud in de taak op te nemen.
 
 >[!TIP]
 >
->De padbrowser is een krachtig hulpmiddel waarmee u uw inhoud kunt zoeken, filteren en doorbladeren. Tik of klik op de knop **Alleen inhoud/filters** om het zijpaneel in en uit te schakelen en geavanceerde filters zoals **Wijzigingsdatum** of **Vertaalstatus**.
+>De padbrowser is een krachtig hulpmiddel waarmee u uw inhoud kunt zoeken, filteren en doorbladeren. Klik op de knop **Alleen inhoud/filters** om het zijpaneel in en uit te schakelen en geavanceerde filters zoals **Wijzigingsdatum** of **Vertaalstatus**.
 >
 >Meer informatie over de padbrowser vindt u in het dialoogvenster [sectie aanvullende bronnen.](#additional-resources)
 
@@ -187,7 +187,7 @@ U kunt de voorafgaande stappen gebruiken om de noodzakelijke inhoud aan alle tal
 
 De inhoud van de vertaaltaak wordt meestal gestart in het dialoogvenster **Concept** staat zoals aangegeven door **Staat** in de **Vertaaltaak** venster.
 
-Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en tikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
+Als u de vertaaltaak wilt starten, gaat u terug naar het overzicht van het vertaalproject en klikt u op de knop chevron boven aan het dialoogvenster **Vertaaltaak** kaart en selecteer **Start**.
 
 ![Vertaaltaak starten](assets/start-translation-job-manual.png)
 
@@ -205,7 +205,7 @@ Ga eenvoudig naar de voltooide vertaalbaan en selecteer een lijnpunt door te tik
 
 ![Tonen in inhoudsfragment](assets/reveal-in-content-fragment.png)
 
-Tik of klik op dat pictogram om het vertaalde inhoudsfragment in de editorconsole te openen en de details van de vertaalde inhoud weer te geven.
+Klik op dat pictogram om het vertaalde inhoudsfragment te openen in de editorconsole om de details van de vertaalde inhoud weer te geven.
 
 ![Een vertaald inhoudsfragment](assets/translated-content-fragment.png)
 
@@ -217,7 +217,7 @@ Het doel van het project is om alle middelen in verband met een vertaling op é�
 /content/dam/wknd/es
 ```
 
-Als u via **Navigatie** -> **Activa** -> **Bestanden**, ziet u de vertaalde inhoud.
+Als u via **Navigatie** > **Activa** > **Bestanden**, ziet u de vertaalde inhoud.
 
 ![Omslagstructuur voor vertaalde inhoud](assets/translated-file-content.png)
 

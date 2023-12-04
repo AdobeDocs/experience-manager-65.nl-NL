@@ -9,9 +9,9 @@ topic-tags: components, testing
 discoiquuid: 938100ad-94f9-408a-819d-72657dc115f7
 docset: aem65
 exl-id: 2d28cee6-31b0-4288-bad3-4d2ecad7b626
-source-git-commit: 4fd5e9a1bc603202ee52e85a1c09125b13cec315
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '771'
+source-wordcount: '759'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Vanaf AEM 6.5 is het testframework voor de gebruikersinterface van hobbes.js afgekeurd. Adobe is niet van plan haar verder te verbeteren en raadt klanten aan seleniumautomatisering te gebruiken.
+>Vanaf AEM 6.5 is het testframework voor de interface hobbes.js afgekeurd. De Adobe is niet van plan haar verder te verbeteren en raadt klanten aan seleniumautomatisering te gebruiken.
 >
 >Zie [Verouderde en verwijderde functies](/help/release-notes/deprecated-removed-features.md).
 
@@ -38,7 +38,7 @@ Wanneer het gebruiken van geautomatiseerde tests binnen AEM, zijn de volgende te
 
 | Handeling | An **Handeling** is een specifieke activiteit op een Web-pagina zoals het klikken van een verbinding of een knoop. |
 |---|---|
-| Testcase | A **Testcase** een specifieke situatie is die kan bestaan uit een of meer **Handelingen**. |
+| Testcase | A **Testcase** een specifieke situatie is die uit een of meer **Handelingen**. |
 | Testsuite | A **Testsuite** is een groep van verwante **Testgevallen** die samen een specifiek gebruiksgeval testen. |
 
 ## Tests uitvoeren {#executing-tests}
@@ -47,7 +47,7 @@ Wanneer het gebruiken van geautomatiseerde tests binnen AEM, zijn de volgende te
 
 Open de testconsole om de geregistreerde testsuites te zien. Het deelvenster Tests bevat een lijst met testreeksen en de bijbehorende testdoosjes.
 
-Ga via **Algemene navigatie -> Gereedschappen > Bewerkingen -> Testen**.
+Ga via **Algemene navigatie > Gereedschappen > Bewerkingen > Testen**.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -69,7 +69,7 @@ Een X-pictogram geeft aan dat een test is mislukt:
 
 Een testsuite uitvoeren:
 
-1. Klik of tik in het deelvenster Tests op de naam van de testcase die u wilt uitvoeren om de details van de handelingen uit te vouwen.
+1. Klik in het deelvenster Tests op de naam van de testcase die u wilt uitvoeren om de details van de handelingen uit te vouwen.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -91,7 +91,7 @@ Testsets worden opeenvolgend uitgevoerd in de volgorde waarin ze in de console w
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
-1. Tik op het deelvenster Tests of klik op **Alle tests uitvoeren** of de **Tests uitvoeren** onder de titel van de testsuite die u wilt uitvoeren.
+1. Klik in het deelvenster Tests op de knop **Alle tests uitvoeren** of de **Tests uitvoeren** onder de titel van de testsuite die u wilt uitvoeren.
 
    ![Een afbeelding van de knop Alle tests uitvoeren en de knop Test uitvoeren, die wordt aangegeven door een naar rechts wijzende aanwijzer in een cirkel.](do-not-localize/chlimage_1-5.png)
 
@@ -101,13 +101,13 @@ Testsets worden opeenvolgend uitgevoerd in de volgorde waarin ze in de console w
 
 ## Een eenvoudige testsuite maken en gebruiken {#creating-and-using-a-simple-test-suite}
 
-De volgende procedure doorloopt u het maken en uitvoeren van een testsuite met [Wij.Detailinhoud](/help/sites-developing/we-retail.md), maar u kunt de test gemakkelijk wijzigen om een andere webpagina te gebruiken.
+De volgende procedure doorloopt u het maken en uitvoeren van een testsuite met [Wij.Handelsinhoud](/help/sites-developing/we-retail.md), maar u kunt de test gemakkelijk wijzigen om een andere webpagina te gebruiken.
 
 Voor volledige informatie over het maken van uw eigen testsuites raadpleegt u de [Documentatie Hobbes.js API](https://developer.adobe.com/experience-manager/reference-materials/6-5/test-api/index.html).
 
 1. Open CRXDE Lite. ([https://localhost:4502/crx/de](https://localhost:4502/crx/de))
 1. Klik met de rechtermuisknop op de knop `/etc/clientlibs` map en klik op **Maken > Map maken**. Type `myTests` voor de naam en klik op **OK**.
-1. Klik met de rechtermuisknop op de knop `/etc/clientlibs/myTests` map en klik op **Maken > knooppunt maken**. Gebruik de volgende eigenschapwaarden en klik vervolgens op **OK**:
+1. Klik met de rechtermuisknop op de knop `/etc/clientlibs/myTests` map en klik op **Maken > Knooppunt maken**. Gebruik de volgende eigenschapwaarden en klik vervolgens op **OK**:
 
    * Naam: `myFirstTest`
    * Type: `cq:ClientLibraryFolder`

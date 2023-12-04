@@ -2,7 +2,7 @@
 title: Registreren als gebruiker
 seo-title: Registering as a User
 description: Leer hoe u met beleid beveiligde documenten kunt gebruiken die u van een gebruiker van de documentveiligheid ontvangt, zelfs als u zich buiten de organisatie van de gebruiker bevindt.
-seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user’s organization.
+seo-description: Learn how you can use policy-protected documents that you receive from an document security user, even if you are external to the user's organization.
 uuid: 4648b358-f545-434f-a3b2-2937e961dc64
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 content-type: reference
@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Document Security
 exl-id: 320d8fa4-e200-4993-b018-a9718cddc5c1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -43,11 +43,11 @@ Als u een uitgenodigde gebruiker bent en u ontvangt een e-mailregistratiebericht
 1. Open de e-mail met documentbeveiligingsregistratie. De URL die het bericht bevat, is een koppeling naar de pagina Registratie van externe gebruikers in documentbeveiliging.
 1. Klik op de URL of kopieer deze en plak deze in uw browser. De pagina External Users Registration wordt weergegeven.
 1. Typ uw naam, telefoonnummer, adres, organisatie en wachtwoord in de daarvoor bestemde vakken en typ uw wachtwoord nogmaals in het vak Wachtwoord bevestigen. Uw wachtwoord kan elke combinatie van acht tekens zijn.
-1. Klik op Opslaan. Er verschijnt een dankwoord waarin u wordt geïnformeerd om uw e-mail te controleren op een activeringsbericht. U moet nu uw account activeren om het registratieproces te voltooien.
+1. Klik op Opslaan. Er verschijnt een dankwoord waarin u wordt geïnformeerd om uw e-mail te controleren op een activeringsbericht. Activeer nu uw account om het registratieproces te voltooien.
 
 ## Je uitgenodigde gebruikersaccount activeren {#activate-your-invited-user-account}
 
-Nadat u zich hebt geregistreerd, stuurt documentbeveiliging u een activeringse-mail. U moet uw account activeren met de URL in het bericht. Vervolgens kunt u zich aanmelden bij de documentbeveiliging om documenten te gebruiken die met een beleid zijn beveiligd en waartoe u toegang hebt. Afhankelijk van de eigenschappen die de beheerder voor externe gebruikers toelaat, kunt u toestemming hebben om beleid tot stand te brengen, beleid op documenten toe te passen, en andere externe gebruikers toe te voegen aan uw beleid.
+Nadat u zich hebt geregistreerd, stuurt documentbeveiliging u een activeringse-mail. Activeer uw account met de URL in het bericht. Vervolgens kunt u zich aanmelden bij de documentbeveiliging om documenten te gebruiken die met een beleid zijn beveiligd en waartoe u toegang hebt. Afhankelijk van de eigenschappen die de beheerder voor externe gebruikers toelaat, kunt u toestemming hebben om beleid tot stand te brengen, beleid op documenten toe te passen, en andere externe gebruikers toe te voegen aan uw beleid.
 
 Uw account blijft actief totdat de beheerder de account deactiveert of verwijdert.
 

@@ -8,9 +8,9 @@ topic-tags: content
 content-type: reference
 docset: aem65
 exl-id: e8929d7c-9920-4c02-95a9-6f7f7a365203
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3574'
+source-wordcount: '3565'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ Gebruikers moeten over de juiste machtigingen beschikken voor het maken, wijzige
 
 U kunt tot de Manager van het Pakket op drie manieren toegang hebben:
 
-1. Vanuit het AEM hoofdmenu -> **Gereedschappen** -> **Implementatie** -> **Pakketten**
+1. Vanuit het AEM hoofdmenu > **Gereedschappen** > **Implementatie** > **Pakketten**
 1. Van [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md) de bovenste schakelbalk gebruiken
 1. Direct door toegang te krijgen tot `http://<host>:<port>/crx/packmgr/`
 
@@ -283,7 +283,7 @@ Nadat een pakket is gemaakt, kan het opnieuw worden verpakt. Wanneer u de pakket
 
 1. Klikken **Opslaan** opslaan.
 
-1. Klikken **Meer** -> **Omloop** en een dialoog zal om bevestiging vragen.
+1. Klikken **Meer** > **Omloop** en een dialoog zal om bevestiging vragen.
 
 ### Andere pakketversies weergeven {#other-versions}
 
@@ -293,7 +293,7 @@ Omdat elke versie van een pakket in de lijst verschijnt zoals elk ander pakket, 
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
-1. Klikken **Meer** -> **Andere versies** en er wordt een dialoogvenster geopend met een lijst van andere versies van hetzelfde pakket met statusinformatie.
+1. Klikken **Meer** > **Andere versies** en er wordt een dialoogvenster geopend met een lijst van andere versies van hetzelfde pakket met statusinformatie.
 
 ### Inhoud van pakket weergeven en installatie testen {#viewing-package-contents-and-testing-installation}
 
@@ -303,11 +303,11 @@ Nadat een pakket is samengesteld, kunt u de inhoud bekijken.
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
-1. Klik op **Meer** -> **Inhoud** en Package Manager geeft de volledige inhoud van het pakket weer in het activiteitenlogboek.
+1. Klik op **Meer** > **Inhoud** en Package Manager geeft de volledige inhoud van het pakket weer in het activiteitenlogboek.
 
    ![Inhoud van pakket](assets/package-contents.png)
 
-1. Om een droge looppas van de installatie uit te voeren klik **Meer** -> **Installeren testen** en de rapporten van de Manager van het Pakket in het activiteitenlogboek de resultaten alsof de installatie werd uitgevoerd.
+1. Om een droge looppas van de installatie uit te voeren klik **Meer** > **Installeren testen** en de rapporten van de Manager van het Pakket in het activiteitenlogboek de resultaten alsof de installatie werd uitgevoerd.
 
    ![Testinstallatie](assets/test-install.png)
 
@@ -435,7 +435,7 @@ Validatie moet altijd plaatsvinden na het uploaden van het pakket, maar voordat 
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
-1. Klik op **Meer** -> **Valideren**,
+1. Klik op **Meer** > **Valideren**,
 
 1. In het modale dialoogvenster dat dan wordt weergegeven, gebruikt u de selectievakjes om het type of de typen validatie te selecteren en de validatie te starten door op **Valideren**.
 
@@ -473,13 +473,13 @@ Pakketten worden gedefinieerd door hun filters. U kunt Package Manager filters v
 
 1. Open de pakketdetails uit de pakketlijst door op de pakketnaam te klikken.
 
-1. Klikken **Meer** -> **Dekking**.
+1. Klikken **Meer** > **Dekking**.
 
 1. De dekkingsdetails worden vermeld in het activiteitenlog.
 
 ### Pakketten installeren {#installing-packages}
 
-Wanneer u een pakket uploadt, wordt alleen de pakketinhoud aan de opslagplaats toegevoegd, maar deze is niet toegankelijk. U moet het geüploade pakket installeren om de inhoud van het pakket te kunnen gebruiken.
+Wanneer u een pakket uploadt, wordt alleen de pakketinhoud aan de opslagplaats toegevoegd, maar deze is niet toegankelijk. Installeer het geüploade pakket om de inhoud van het pakket te gebruiken.
 
 >[!CAUTION]
 >
@@ -543,7 +543,7 @@ Als u het pakket verwijdert, wordt de inhoud van de opslagplaats teruggezet naar
 
 1. Open de pakketdetails van het pakket dat u uit de pakketlijst wilt verwijderen door op de pakketnaam te klikken.
 
-1. Klikken **Meer** -> **Verwijderen** om de inhoud van dit pakket uit de opslagplaats te verwijderen.
+1. Klikken **Meer** > **Verwijderen** om de inhoud van dit pakket uit de opslagplaats te verwijderen.
 
 1. In een dialoogvenster wordt bevestiging gevraagd en worden alle aangebrachte wijzigingen vermeld.
 
@@ -569,7 +569,7 @@ Kopieer de inhoud van een pakket en installeer het op de publicatie-instantie.
 
 1. Open de pakketdetails van het pakket dat u wilt repliceren uit de pakketlijst door op de pakketnaam te klikken.
 
-1. Klikken **Meer** -> **Repliceren**.
+1. Klikken **Meer** > **Repliceren**.
 
 1. Het pakket wordt gerepliceerd en de details worden gerapporteerd in het activiteitenlog.
 

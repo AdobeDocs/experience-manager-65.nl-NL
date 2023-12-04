@@ -4,9 +4,9 @@ description: Leer hoe u inhoud voorbereidt voor vertaling in Adobe Experience Ma
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 81978733-89a6-4436-bcf1-4bde962ed54f
-source-git-commit: 7d46ba0eaa73d9f7a67034ba81d7fa379aa0112c
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '669'
 ht-degree: 0%
 
 ---
@@ -56,20 +56,20 @@ U kunt beide indelingen gebruiken op basis van de structuur die u voor uw global
 In de volgende procedure wordt de voor aanrakingen geoptimaliseerde interface gebruikt om een taalkopie van een website te maken. Voor instructies die de klassieke gebruikersinterface gebruiken, raadpleegt u [Een taalbasis maken met de klassieke gebruikersinterface](/help/sites-administering/tc-lroot-classic.md).
 
 1. Navigeer naar sites.
-1. Klik of tik op de site waarvoor u een taalkopie wilt maken.
+1. Klik op de site waarvoor u een taalkopie wilt maken.
 
-   Als u bijvoorbeeld een taalkopie van de site Geometrixx Outdoors wilt maken, klikt of tikt u op Site van Geometrixx Outdoors.
+   Als u bijvoorbeeld een taalkopie van de site Geometrixx Outdoors wilt maken, klikt u op Site Geometrixx Outdoors.
 
-1. Klik of tik op Maken en klik of tik vervolgens op Pagina maken.
+1. Klik op Maken en klik vervolgens op Pagina maken.
 
    ![chlimage_1-21](assets/chlimage_1-21a.png)
 
-1. Selecteer de paginasjabloon en klik of tik op Volgende.
+1. Selecteer de paginasjabloon en klik op Volgende.
 1. Typ in het veld Naam de landcode in de notatie `<language-code>` of `<language-code>_<country-code>`, bijvoorbeeld `en`, `en_US`, `en_us`, `en_GB`, `en_gb`. Typ een titel voor de pagina.
 
    ![chlimage_1-22](assets/chlimage_1-22a.png)
 
-1. Klik of tik op Maken. Klik of tik in het bevestigingsdialoogvenster op **Gereed** om naar de console van Plaatsen terug te keren, of **Openen** om de taalkopie te openen.
+1. Klik op Maken. Klik in het bevestigingsdialoogvenster op **Gereed** om naar de console van Plaatsen terug te keren, of **Openen** om de taalkopie te openen.
 
 ## De status van taalwortels bekijken {#seeing-the-status-of-language-roots}
 
@@ -79,8 +79,8 @@ De interface die is geoptimaliseerd voor aanrakingen biedt een paneel Referentie
 
 In de volgende procedure wordt de geoptimaliseerde interface voor aanrakingen gebruikt om het deelvenster Verwijzingen voor een pagina te openen.
 
-1. Selecteer in de Sites-console een pagina van de site en klik of tik op **Verwijzingen**.
+1. Selecteer in de Sites-console een pagina van de site en klik vervolgens op **Verwijzingen**.
 
    ![chlimage_1-24](assets/chlimage_1-24a.png)
 
-1. Klik of tik in het venster Referenties op **Taalkopieën**. In het deelvenster Taalkopieën worden de taalkopieën van de website weergegeven.
+1. Klik in het venster Referenties op **Taalkopieën**. In het deelvenster Taalkopieën worden de taalkopieën van de website weergegeven.

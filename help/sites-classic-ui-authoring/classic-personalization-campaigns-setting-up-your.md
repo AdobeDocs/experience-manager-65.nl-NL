@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b607a52-f065-4e35-8215-d54df7c8403d
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2223'
+source-wordcount: '2194'
 ht-degree: 0%
 
 ---
@@ -231,15 +231,15 @@ Om lood van een komma-gescheiden lijst te importeren:
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. Klik op **Next**. Hier kunt u de leads bekijken om te controleren of ze accuraat zijn.
+1. Klikken **Volgende**. Hier kunt u de leads bekijken om te controleren of ze accuraat zijn.
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. Klik op **Next**. Selecteer de lijst waartoe de leads moeten behoren. Als u niet wilt dat ze tot een lijst behoren, verwijdert u de gegevens in het veld. AEM maakt standaard een lijstnaam die de datum en tijd bevat. Klikken **Importeren**.
+1. Klikken **Volgende**. Selecteer de lijst waartoe de leads moeten behoren. Als u niet wilt dat ze tot een lijst behoren, verwijdert u de gegevens in het veld. AEM maakt standaard een lijstnaam die de datum en tijd bevat. Klikken **Importeren**.
 
    ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
-   De nieuwe lead wordt weergegeven in het deelvenster Leads. Als u op de vermelding klikt, wordt alle ingevoerde informatie weergegeven in het rechterdeelvenster. Nadat u een lead hebt gemaakt, kunt u deze aan een lijst toevoegen.
+   De nieuwe lead wordt weergegeven in het deelvenster Leads. Als u op het item klikt, worden alle ingevoerde gegevens in het rechterdeelvenster weergegeven. Nadat u een lead hebt gemaakt, kunt u deze aan een lijst toevoegen.
 
 ### Leads toevoegen aan lijsten {#adding-leads-to-lists}
 

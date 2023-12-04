@@ -6,10 +6,10 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: projects
 content-type: reference
 exl-id: a0719745-8d67-44bc-92ba-9ab07f31f8d2
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '594'
-ht-degree: 3%
+source-wordcount: '586'
+ht-degree: 2%
 
 ---
 
@@ -52,7 +52,7 @@ Klik op de knop met de ellips rechtsonder in de takentegel om uw Postvak IN weer
 
 #### Taakdetails {#task-details}
 
-Tik in het Postvak IN of klik op de taak om deze te selecteren en tik of klik op **Openen** in de werkbalk.
+Voor meer informatie over een bepaalde taak klikt u in het Postvak IN op de taak die u wilt selecteren en klikt u vervolgens op **Openen** in de werkbalk.
 
 ![Taakdetails](assets/project-task-detail.png)
 
@@ -70,12 +70,12 @@ U kunt nieuwe taken aan projecten toevoegen. Deze taken worden vervolgens weerge
 Een taak toevoegen:
 
 1. Zoek in het project de locatie **Taken** tegel
-1. Tik of klik op het neerwaartse chevron rechtsboven in de tegel en selecteer **Taak maken**.
+1. Klik op het neerwaartse chevron rechtsboven in de tegel en selecteer **Taak maken**.
 1. In de **Taak toevoegen** en geeft u taakdetails op, zoals prioriteit, toewijzing en vervaldatum.
 
    ![Een taak toevoegen](assets/project-add-task.png)
 
-1. Tik of klik op **Verzenden**.
+1. Klikken **Verzenden**.
 
 ## Werken met taken in het Postvak In {#working-with-tasks-in-the-inbox}
 

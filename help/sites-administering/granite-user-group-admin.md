@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 exl-id: f3477d21-7e9a-4588-94e8-496bc42434a8
 feature: Security
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '951'
 ht-degree: 0%
 
 ---
@@ -222,7 +222,7 @@ U kunt de account markeren als **actief** of **inactief**.
 
 1. De **Groepsinstellingen bewerken** formulier wordt geopend.
 
-   De groep-id is hetzelfde als het origineel, maar heeft het voorvoegsel `Copy of`. U moet dit bewerken omdat de id geen spaties mag bevatten. Alle andere details zullen het zelfde als origineel zijn.
+   De groep-id is hetzelfde als het origineel, maar heeft het voorvoegsel `Copy of`. Bewerk deze id omdat deze geen spaties kan bevatten. Alle andere details zijn het zelfde als origineel.
 
    U kunt de details nu bewerken en opslaan zoals in [Een nieuwe groep toevoegen](#adding-a-new-group).
 

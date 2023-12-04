@@ -2,9 +2,9 @@
 title: Inhoudspagina's publiceren
 description: Leer hoe u pagina's met inhoud publiceert in Adobe Experience Manager 6.5.
 exl-id: 61144bbe-6710-4cae-a63e-e708936ff360
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1660'
+source-wordcount: '1673'
 ht-degree: 5%
 
 ---
@@ -44,7 +44,7 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 
 Afhankelijk van uw locatie kunt u publiceren:
 
-* [Vanuit de pagina-editor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
+* [Vanuit de paginaeditor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [Van de plaatsenconsole](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
 
 ### Publiceren vanuit de Editor {#publishing-from-the-editor}
@@ -200,7 +200,7 @@ Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw 
 
 In een [vergelijkbare manier van publiceren](/help/sites-authoring/publishing-pages.md#publishing-pages), kunnen een of meer pagina&#39;s niet worden gepubliceerd:
 
-* [Vanuit de pagina-editor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
+* [Vanuit de paginaeditor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Van de plaatsenconsole](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
 ### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}

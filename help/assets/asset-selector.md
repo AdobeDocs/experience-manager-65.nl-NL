@@ -5,10 +5,10 @@ contentOwner: Adobe
 feature: Asset Management,Metadata,Search
 role: User
 exl-id: 4b518ac0-5b8b-4d61-ac31-269aa1f5abe4
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '488'
-ht-degree: 0%
+source-wordcount: '485'
+ht-degree: 1%
 
 ---
 
@@ -57,4 +57,4 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
-1. Tikken/klikken **[!UICONTROL Select]** op de werkbalk.
+1. Klik op **[!UICONTROL Select]** op de werkbalk.

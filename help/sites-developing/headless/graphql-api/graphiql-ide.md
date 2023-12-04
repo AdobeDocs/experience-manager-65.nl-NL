@@ -2,9 +2,9 @@
 title: GraphiQL IDE gebruiken in AEM
 description: Leer hoe u de GraphiQL IDE in Adobe Experience Manager gebruikt.
 exl-id: d4b01485-658b-4245-b2e6-04be8abc8ecf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '786'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,7 @@ U kunt een nieuwe vraag in werking stellen onmiddellijk, of u kunt een voortgeze
 
 In beide gevallen is de query die wordt weergegeven in het editorpaneel de query die wordt uitgevoerd wanneer u een van de volgende twee doet:
 
-* klikken/tikken op de knop **Query uitvoeren** pictogram
+* klik op de **Query uitvoeren** pictogram
 * de toetsenbordcombinatie gebruiken `Control-Enter`
 
 ## Query-variabelen {#query-variables}

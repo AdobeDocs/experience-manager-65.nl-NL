@@ -2,7 +2,7 @@
 title: Inhoudspagina's ontwerpen in AEM
 description: De taken die bij het ontwerpen van een inhoudspagina in Adobe Experience Manager 6.5 betrokken zijn.
 exl-id: 07528cf0-e67a-46b5-a3b2-d1b74ad2228f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Aan de linkerkant van een bewerkbare pagina kan een schuivende browser worden ge
 Aan de linkerkant van een bewerkbare pagina kan een schuivende browser worden geopend. Vanuit deze pagina kunnen elementen naar de pagina worden gesleept, bijvoorbeeld om elementen te plaatsen of koppelingen naar andere pagina&#39;s te maken.
 
 * **Werkbalk Component**
-Bij een enkele of bij een trage dubbelklik/tik wordt de juiste werkbalk weergegeven (enkele voor de werkbalk voor het bewerken van de plaats en vervolgens twee voor de volledige werkbalk).
+Bij een enkelvoudige of een langzame dubbelklik wordt de juiste werkbalk weergegeven (enkelvoudig voor de werkbalk Verplaatsen bewerken en vervolgens langzaam voor de volledige werkbalk).
 
 * **[Responsieve lay-out](/help/sites-authoring/responsive-layout.md)**
 Dit biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen.

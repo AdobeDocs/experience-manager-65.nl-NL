@@ -1,6 +1,6 @@
 ---
 title: Werken met Dynamic Media
-description: Leer hoe u met Dynamic Media middelen kunt leveren voor gebruik op internet, mobiele apparaten en sociale sites.
+description: Leer hoe u Dynamic Media kunt gebruiken om middelen te leveren voor gebruik op internet, mobiele apparaten en sociale sites.
 uuid: 4dc0f436-d20e-4e8b-aeff-5515380fa44d
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.5/ASSETS
@@ -10,10 +10,10 @@ discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 role: User, Admin
 exl-id: f8a80b22-b1a6-475f-b3f1-b2f47822f21d
 feature: Collaboration,Asset Management
-source-git-commit: f4b7566abfa0a8dbb490baa0e849de6c355a3f06
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '418'
-ht-degree: 4%
+source-wordcount: '417'
+ht-degree: 0%
 
 ---
 
@@ -29,18 +29,18 @@ Dynamic Media biedt interactieve kijkervaringen, zoals zoomen, 360 graden draaie
 
 ## Wat u met Dynamic Media kunt doen {#what-you-can-do-with-dynamic-media}
 
-Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe met middelen in het algemeen kan worden gewerkt, wordt in detail besproken [Werken met digitale middelen](manage-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van middelen; weergeven en bewerken van eigenschappen en zoeken naar elementen.
+Met Dynamic Media kunt u uw elementen beheren voordat u ze publiceert. Hoe met middelen in het algemeen kan worden gewerkt, wordt in detail besproken [Werken met digitale middelen](manage-assets.md). Algemene onderwerpen zijn het uploaden, downloaden, bewerken en publiceren van elementen, het weergeven en bewerken van eigenschappen en het zoeken naar elementen.
 
 Alleen Dynamic Media biedt de volgende functies:
 
-* [Carousel-banners](carousel-banners.md)
-* [Image Sets](image-sets.md)
+* [Carousel Banners](carousel-banners.md)
+* [Afbeeldingssets](image-sets.md)
 * [Interactieve afbeeldingen](interactive-images.md)
 * [Interactieve video&#39;s](interactive-videos.md)
-* [Mixed Media Sets](mixed-media-sets.md)
+* [Gemengde mediasets](mixed-media-sets.md)
 * [Panoramische afbeeldingen](panoramic-images.md)
 
-* [Spin Sets](spin-sets.md)
+* [Sets draaien](spin-sets.md)
 * [Video](video.md)
 * [Dynamic Media-middelen leveren](delivering-dynamic-media-assets.md)
 * [Elementen beheren](managing-assets.md)
@@ -76,13 +76,13 @@ Afbeeldingssets, centrifuges en gemengde mediasets zijn beschikbaar als Dynamic 
 
 ### PTIFF-uitvoeringen {#ptiff-renditions}
 
-Tot de elementen die geschikt zijn voor Dynamic Media behoren `pyramid.tiffs`.
+Tot de elementen behoren Dynamic Media `pyramid.tiffs`.
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
 ### Weergave van element wijzigen {#asset-views-change}
 
-Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knop `+` en `-` knoppen. U kunt ook op een bepaald gebied klikken of erop tikken. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld ziet er als volgt uit:
+Als Dynamic Media is ingeschakeld, kunt u in- en uitzoomen door op de knop `+` en `-` knoppen. U kunt ook klikken om in te zoomen op een bepaald gebied. Met Omkeren gaat u naar de oorspronkelijke versie en u kunt de afbeelding op het volledige scherm weergeven door op de diagonale pijlen te klikken. Dynamic Media ingeschakeld ziet er als volgt uit:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 

@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: f2921349-de8f-4bc1-afa2-aeace99cfc5c
-source-git-commit: fc2f26a69c208947c14e8c6036825bb217901481
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1539'
+source-wordcount: '1513'
 ht-degree: 0%
 
 ---
@@ -152,19 +152,19 @@ Een ervaringsfragment van AEM naar doel exporteren (nadat u de Cloud-configurati
    >
    >Het moet een variant van het Web van het Fragment van de Ervaring zijn.
 
-1. Tikken/klikken **Exporteren naar Adobe Target**.
+1. Klikken **Exporteren naar Adobe Target**.
 
    >[!NOTE]
    >
    >Als het Experience Fragment al is geëxporteerd, selecteert u **Bijwerken in Adobe Target**.
 
-1. Tikken/klikken **Exporteren zonder publiceren** of **Publiceren** zoals vereist.
+1. Klikken **Exporteren zonder publiceren** of **Publiceren** zoals vereist.
 
    >[!NOTE]
    >
    >Selecteren **Publiceren** publiceert het Experience Fragment meteen en verzendt het naar Target.
 
-1. Tikken/klikken **OK** in het bevestigingsdialoogvenster.
+1. Klikken **OK** in het bevestigingsdialoogvenster.
 
    Het ervaringsfragment moet nu Doel zijn.
 

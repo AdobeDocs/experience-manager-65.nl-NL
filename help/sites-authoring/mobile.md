@@ -8,7 +8,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 9554cdb3-b604-4d50-9760-89b9e7a7755f
 exl-id: 9c6c6386-5ffd-4fa6-9aa1-f5b0e31d1046
-source-git-commit: e1a0b114ce16d0e7f6a464e9d30b8f111297bcc6
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -30,9 +30,9 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
 1. Via globale navigatie opent u de **Sites** console.
-1. De pagina openen **Wij.Detailhandel** -> **Verenigde Staten** -> **Engels**.
+1. De pagina openen **Wij.Detailhandel** > **Verenigde Staten** > **Engels**.
 
-1. Overschakelen op **Voorvertoning** in.
+1. Overschakelen op **Voorvertoning** -modus.
 1. Schakel over naar de gewenste emulator door op het apparaatpictogram boven aan de pagina te klikken.
 1. Sleep componenten van de componentbrowser naar de pagina.
 

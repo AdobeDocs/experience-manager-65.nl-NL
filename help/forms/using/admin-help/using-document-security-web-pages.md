@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 feature: Document Security
 exl-id: caa31752-a02d-4d20-b7d9-c4aad5d0fae6
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '923'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging o
 
 >[!NOTE]
 >
->U kunt zich ook aanmelden bij de documentbeveiliging via Acrobat en andere clienttoepassingen met uw gebruikersaanmeldingsaccount. (Zie [Toegang tot documentbeveiliging instellen vanuit clienttoepassingen](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>U kunt zich ook aanmelden bij de documentbeveiliging via Acrobat en andere clienttoepassingen met uw aanmeldingsaccount voor de gebruiker. (Zie [Toegang tot documentbeveiliging instellen vanuit clienttoepassingen](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Als u de webpagina&#39;s wilt openen, hebt u voor documentbeveiliging een browser en de URL en uw aanmeldingsgegevens nodig. De URL voor gebruikers is anders dan de URL voor beheerders.
 
@@ -65,11 +65,11 @@ Wanneer u zich aanmeldt bij de webpagina&#39;s van de gebruiker, ziet u koppelin
 
 Wanneer u login aan beleidsconsole en aan de belangrijkste pagina van de documentveiligheid navigeert, kunt u één of twee extra verbindingen, voor de pagina van de Configuratie en voor de Uitgenodigde en Lokale pagina van Gebruikers ook zien. De pagina Uitgenodigde en Lokale gebruikers wordt alleen weergegeven als de uitgenodigde gebruikersregistratie is ingeschakeld.
 
-Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s, waar u beleidsdocumenten en documenten die met een beleid zijn beveiligd maakt en beheert.
+Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s, waar u beleidsdocumenten en documenten met een beleidsbescherming maakt en beheert.
 
 **Een pagina weergeven**
 
-1. Klik op de naam van de pagina. zoals klikken op Beleid.
+1. Klik op de naam van de pagina, bijvoorbeeld op Beleid.
 
 **Terug naar de vorige pagina**
 
@@ -85,9 +85,9 @@ Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s
 
 ## Toegang tot documentbeveiliging instellen vanuit clienttoepassingen {#setting-up-access-to-document-security-from-client-applications}
 
-Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Acrobat Help* of *RightsManagementExtension Help* voor informatie over het vormen van de verbinding binnen de cliënttoepassing.
+Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie *Acrobat Help* of de passende *RightsManagementExtension Help* voor informatie over het vormen van de verbinding binnen de cliënttoepassing.
 
-Documentbeveiliging is toegankelijk via SSL (Secure Sockets Layer). U moet het certificaat van de website installeren in het certificaatarchief, zodat u toegang hebt tot documentbeveiliging via de clienttoepassingen.
+Documentbeveiliging is toegankelijk via SSL (Secure Sockets Layer). Installeer het certificaat van de website in het certificaatarchief, zodat u via de clienttoepassingen toegang hebt tot documentbeveiliging.
 
 <!-- Fix broken link See Configuring SSL for information on SSL.-->
 
@@ -105,4 +105,4 @@ Deze instructies gelden specifiek voor Internet Explorer, maar u kunt het certif
 Meld u af wanneer u klaar bent met het gebruik van de webpagina&#39;s, zodat u uw webbrowser veilig voor andere doeleinden kunt gebruiken. Afhankelijk van hoe de documentveiligheid wordt gevormd, kunt u uw browser moeten sluiten om volledig uit te loggen.
 
 1. Klik in de rechterbovenhoek van de pagina op Afmelden.
-1. Als er een bericht verschijnt op de aanmeldingspagina, sluit u het browservenster om u volledig af te melden. Anders kunt u de browser voor andere doeleinden gebruiken.
+1. Als er een bericht wordt weergegeven op de aanmeldingspagina, sluit u het browservenster om u volledig af te melden. Anders kunt u de browser voor andere doeleinden gebruiken.

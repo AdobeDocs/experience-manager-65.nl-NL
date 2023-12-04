@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 role: Developer
 exl-id: dd32808e-b773-48a2-90e1-7a277d349493
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1915'
+source-wordcount: '1911'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Voordat u via programmacode een bewerking met een service voor streepjescodes ku
 
 **Een PDF-formulier ophalen dat gecodeerde gegevens bevat**
 
-U moet een PDF-formulier ophalen dat een streepjescode bevat die is gevuld met gebruikersgegevens.
+Vraag een PDF-formulier aan dat een streepjescode bevat die is gevuld met gebruikersgegevens.
 
 **De gegevens decoderen uit het PDF-formulier**
 
@@ -147,7 +147,7 @@ Formuliergegevens decoderen met de API voor streepjescodes (Java):
 
    De gedecodeerde gegevens converteren naar XDP- of XFDF-gegevens door het `BarcodedFormsServiceClient` object `extractToXML` en geeft de volgende waarden door:
 
-   * De `org.w3c.dom.Document` object dat gedecodeerde gegevens bevat (gebruik de `decode` retourwaarde van de methode).
+   * De `org.w3c.dom.Document` object dat gedecodeerde gegevens bevat (gebruik de `decode` geretourneerde waarde van methode).
    * A `com.adobe.livecycle.barcodedforms.Delimiter` opsommingswaarde die het regelscheidingsteken aangeeft. U wordt aangeraden `Delimiter.Carriage_Return`.
    * A `com.adobe.livecycle.barcodedforms.Delimiter` opsommingswaarde die het veldscheidingsteken aangeeft. Geef bijvoorbeeld `Delimiter.Tab`.
    * A `com.adobe.livecycle.barcodedforms.XMLFormat` opsommingswaarde die aangeeft of de streepjescodegegevens moeten worden omgezet in XDP- of XFDF XML-gegevens. Geef bijvoorbeeld `XMLFormat.XDP` om de gegevens om te zetten in XDP-gegevens.
@@ -214,7 +214,7 @@ Formuliergegevens decoderen met de API voor gecodeerde formulieren (webservice):
 
    De gedecodeerde gegevens converteren naar XDP- of XFDF-gegevens door het `BarcodedFormsServiceService` object `extractToXML` en geeft de volgende waarden door:
 
-   * Een tekenreekswaarde die gedecodeerde gegevens bevat (gebruik de optie `decode` retourwaarde van de methode).
+   * Een tekenreekswaarde die gedecodeerde gegevens bevat (gebruik de optie `decode` geretourneerde waarde van methode).
    * A `Delimiter` opsommingswaarde die het regelscheidingsteken aangeeft. U wordt aangeraden `Delimiter.Carriage_Return`.
    * A `Delimiter` opsommingswaarde die het veldscheidingsteken aangeeft. Geef bijvoorbeeld `Delimiter.Tab`.
    * A `XMLFormat` opsommingswaarde die aangeeft of de streepjescodegegevens moeten worden omgezet in XDP- of XFDF XML-gegevens. Geef bijvoorbeeld `XMLFormat.XDP` om de gegevens om te zetten in XDP-gegevens.

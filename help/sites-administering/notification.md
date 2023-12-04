@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: operations
 content-type: reference
 exl-id: 918fcbbc-a78a-4fab-a933-f183ce6a907f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2067'
+source-wordcount: '2037'
 ht-degree: 0%
 
 ---
@@ -287,7 +287,7 @@ U kunt OAuth configureren voor meerdere e-mailproviders, zoals hieronder wordt b
 Eerst, vorm de Dienst van de Post:
 
 1. Open de AEM webconsole door naar `http://serveraddress:serverport/system/console/configMgr`
-1. Zoeken naar en klik op **Day CQ Mail Service**
+1. Zoeken naar en klik vervolgens op **Day CQ Mail Service**
 1. Voeg de volgende instellingen toe:
    * Naam SMTP-serverhost: `smtp.gmail.com`
    * SMTP-serverpoort: `25` of `587`, afhankelijk van de vereisten
@@ -297,7 +297,7 @@ Eerst, vorm de Dienst van de Post:
 Daarna, vorm uw leverancier SMTP OAuth door de hieronder procedure te volgen:
 
 1. Open de AEM webconsole door naar `http://serveraddress:serverport/system/console/configMgr`
-1. Zoeken naar en klik op **SMTP OAuth2-provider van CQ-mailer**
+1. Zoeken naar en klik vervolgens op **SMTP OAuth2-provider van CQ-mailer**
 1. Vul de vereiste informatie als volgt in:
    * Autorisatie-URL: `https://accounts.google.com/o/oauth2/auth`
    * Token-URL: `https://accounts.google.com/o/oauth2/token`
@@ -370,7 +370,7 @@ Om opnieuw te verpakken, moet u de volgende informatie hebben om OAuth2 voor de 
 Vervolgens integreert u uw OAuth2-instellingen met AEM:
 
 1. Ga naar de webconsole van uw lokale instantie door naar `http://serveraddress:serverport/system/console/configMgr`
-1. Zoeken en klikken op **Day CQ Mail Service**
+1. Zoeken en klikken **Day CQ Mail Service**
 1. Voeg de volgende instellingen toe:
    * Naam SMTP-serverhost: `smtp.office365.com`
    * SMTP-gebruiker: uw gebruikersnaam in e-mailindeling
@@ -378,7 +378,7 @@ Vervolgens integreert u uw OAuth2-instellingen met AEM:
    * SMTP-serverpoort: `25` of `587` afhankelijk van de vereisten
    * Schakel de vakjes in voor **SMPT gebruik StarTLS** en **SMTP vereist StarTLS**
    * Controleren **OAuth-flow** en klik op **Opslaan**.
-1. Zoeken naar en klik op **SMTP OAuth2-provider van CQ-mailer**
+1. Zoeken naar en klik vervolgens op **SMTP OAuth2-provider van CQ-mailer**
 1. Vul de vereiste informatie als volgt in:
    * Vul de URL van de autorisatie-URL, de token-URL en de token-URL in door deze te maken zoals beschreven in [het einde van deze procedure](#microsoft-outlook)
    * Clientid en clientgeheim: configureer deze velden met de waarden die u hebt opgehaald zoals hierboven beschreven.

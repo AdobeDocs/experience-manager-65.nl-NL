@@ -2,9 +2,9 @@
 title: Standaardcomponenten configureren in ontwerpmodus
 description: Adobe Experience Manager-componenten configureren in ontwerpmodus.
 exl-id: 5e232886-75c1-4f0f-b359-4739ae035fd3
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '914'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -56,11 +56,11 @@ Een component in- of uitschakelen:
 
    ![screen_shot_2018-03-22at103113](assets/screen_shot_2018-03-22at103113.png)
 
-1. Tik of klik op een component. Wanneer de component is geselecteerd, krijgt deze een blauwe rand.
+1. Klik op een component. Wanneer de component is geselecteerd, heeft deze een blauwe rand.
 
    ![screen_shot_2018-03-22at103204](assets/screen_shot_2018-03-22at103204.png)
 
-1. Klik of tik op **Bovenliggend** pictogram.
+1. Klik op de knop **Bovenliggend** pictogram.
 
    ![Bovenliggend](do-not-localize/screen_shot_2018-03-22at103204.png)
 
@@ -109,7 +109,7 @@ Een component in- of uitschakelen:
 
    ![screen_shot_2018-03-22at103113-1](assets/screen_shot_2018-03-22at103113-1.png)
 
-1. Tik of klik op een component met een blauwe rand. In dit voorbeeld wordt een hoofdafbeeldingscomponent geselecteerd.
+1. Klik op een component met een blauwe rand. In dit voorbeeld wordt een hoofdafbeeldingscomponent geselecteerd.
 
    ![screen_shot_2018-03-22at103434](assets/screen_shot_2018-03-22at103434.png)
 
@@ -153,4 +153,4 @@ Een component in- of uitschakelen:
 
    ![Verplaatsen](do-not-localize/screen_shot_2018-03-22at103816.png)
 
-1. Klik of tik op **Gereed** om het dialoogvenster op te slaan en te sluiten.
+1. Klik op de knop **Gereed** om het dialoogvenster op te slaan en te sluiten.

@@ -11,9 +11,9 @@ topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 role: Developer
 exl-id: d3cbca7f-9277-4d61-b198-abf4bb008f15
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '8184'
+source-wordcount: '8133'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,7 @@ Om programmatically een de dienstverrichting van de Encryptie uit te voeren, moe
 
 **Een PDF-document ophalen om te versleutelen**
 
-U moet een niet-gecodeerd PDF-document verkrijgen om het document met een wachtwoord te versleutelen. Als u probeert een PDF-document te beveiligen dat al is versleuteld, veroorzaakt u een uitzondering.
+Verkrijg een niet-gecodeerd document van de PDF om het document met een wachtwoord te coderen. Als u probeert een PDF-document te beveiligen dat al is versleuteld, veroorzaakt u een uitzondering.
 
 **Opties voor codering tijdens runtime instellen**
 
@@ -289,7 +289,7 @@ Om programmatically een de dienstverrichting van de Encryptie uit te voeren, moe
 
 **Een PDF-document ophalen om te versleutelen**
 
-U moet een niet-gecodeerd PDF-document verkrijgen om te versleutelen. Als u probeert een PDF-document te beveiligen dat al is versleuteld, wordt een uitzondering gegenereerd.
+Vraag een niet-gecodeerd PDF-document aan om te versleutelen. Als u probeert een PDF-document te beveiligen dat al is versleuteld, wordt een uitzondering gegenereerd.
 
 **Verwijzing naar het certificaat**
 
@@ -499,7 +499,7 @@ Om programmatically een de dienstverrichting van de Encryptie uit te voeren, moe
 
 **Het versleutelde PDF-document ophalen**
 
-U moet een versleuteld PDF-document verkrijgen om op een certificaat gebaseerde versleuteling te verwijderen. Als u probeert versleuteling te verwijderen uit een niet-versleuteld PDF-document, wordt een uitzondering gegenereerd. Op dezelfde manier wordt een uitzondering gegenereerd als u probeert versleuteling op basis van een certificaat te verwijderen uit een met een wachtwoord gecodeerd document.
+Vraag een gecodeerd PDF-document aan om versleuteling op basis van certificaten te verwijderen. Als u probeert versleuteling te verwijderen uit een niet-versleuteld PDF-document, wordt een uitzondering gegenereerd. Op dezelfde manier wordt een uitzondering gegenereerd als u probeert versleuteling op basis van een certificaat te verwijderen uit een met een wachtwoord gecodeerd document.
 
 **Codering verwijderen**
 
@@ -660,7 +660,7 @@ Om programmatically een de dienstverrichting van de Encryptie uit te voeren, moe
 
 **Het versleutelde PDF-document ophalen**
 
-U moet een gecodeerd PDF-document verkrijgen om op een wachtwoord gebaseerde versleuteling te verwijderen. Als u probeert versleuteling te verwijderen uit een niet-versleuteld PDF-document, wordt een uitzondering gegenereerd.
+Vraag een gecodeerd PDF-document aan om op wachtwoord gebaseerde versleuteling te verwijderen. Als u probeert versleuteling te verwijderen uit een niet-versleuteld PDF-document, wordt een uitzondering gegenereerd.
 
 **Het wachtwoord verwijderen**
 
@@ -807,7 +807,7 @@ Om programmatically een de dienstverrichting van de Encryptie uit te voeren, moe
 
 **Het versleutelde PDF-document ophalen**
 
-U moet een versleuteld PDF-document verkrijgen om het te ontgrendelen. Als u probeert een PDF-document te ontgrendelen dat niet is versleuteld, wordt een uitzondering gegenereerd.
+Vraag een versleuteld PDF-document aan om dit te ontgrendelen. Als u probeert een PDF-document te ontgrendelen dat niet is versleuteld, wordt een uitzondering gegenereerd.
 
 **Het document ontgrendelen**
 
@@ -984,7 +984,7 @@ Om programmatically een de dienstverrichting van de Encryptie uit te voeren, moe
 
 **Het versleutelde PDF-document ophalen**
 
-U moet een document van de PDF verkrijgen om het type van encryptie te bepalen dat het beschermt.
+Vraag een PDF-document aan om het type codering te bepalen dat deze beveiligt.
 
 **Het versleutelingstype bepalen**
 

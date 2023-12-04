@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 20c8eb1d-5847-4902-b7d3-4c3286423b46
 exl-id: 0f710685-dc4f-4333-9847-d002b2637d08
-source-git-commit: 50d29c967a675db92e077916fb4adef6d2d98a1a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2199'
+source-wordcount: '2122'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ De [Wizard Inschakelen](/help/sites-administering/opt-in.md) dat [AEM met Adobe 
 
 U kunt Adobe Target ook configureren om Adobe Target te gebruiken als rapportagebron wanneer u inhoud als doel instelt door de A4T Analytics Cloud-configuratie te configureren.
 
-Navigeer naar de locatie van de cloudconfiguratie en het framework **Cloud Servicen** via **Gereedschappen** > **Implementatie** > **Wolk**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Onder Adobe Target, klikken of tikken **Configuraties tonen**.
+Navigeer naar de locatie van de cloudconfiguratie en het framework **Cloud Servicen** via **Gereedschappen** > **Implementatie** > **Wolk**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html)) Onder Adobe Target klikt u op **Configuraties tonen**.
 
 ### Eigenschappen van provisioned Target Configuration {#provisioned-target-configuration-properties}
 
@@ -90,7 +90,7 @@ Hiervoor geeft u op met welke A4T-cloudconfiguratie uw Adobe Target-cloudconfigu
    >1. Navigeren naar **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
    1. Ga naar de [Dialoogvenster Configuratie A4T-analyse](#a4t-analytics-config-dialog) (zie hieronder)
    1. De eigenschap instellen **disable** tot **false**.
-   1. Tik of klik op **Alles opslaan**.
+   1. Klikken **Alles opslaan**.
 
 #### Dialoogvenster Configuratie A4T-analyse {#a4t-analytics-config-dialog}
 
@@ -153,7 +153,7 @@ Gebruik de volgende procedure om een de wolkenconfiguratie van het Doel in AEM t
    1. Navigeren naar **Gereedschappen** > **Algemeen** > **CRXDE Lite**.
    1. Navigeren naar **/libs/cq/analytics/components/testandtargetPage/dialog/items/tabs/items/tab1_general/items/a4tAnalyticsConfig**
    1. De eigenschap instellen **disable** tot **false**.
-   1. Tik of klik op **Alles opslaan**.
+   1. Klikken **Alles opslaan**.
 
 1. Geef in het dialoogvenster waarden op voor deze eigenschappen.
 
@@ -243,8 +243,8 @@ Wanneer u een pagina aan het framework koppelt, nemen de onderliggende pagina&#3
 1. In de **Sites** navigeren naar de site die u wilt configureren.
 1. beide gebruiken [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions) of [selectiemodus](/help/sites-authoring/basic-handling.md), selecteert u **Eigenschappen weergeven.**
 1. Selecteer de **Cloud Servicen** tab.
-1. Tikken/klikken **Bewerken**.
-1. Tikken/klikken **Configuratie toevoegen** krachtens **Configuraties van Cloud Servicen** en selecteert u **Adobe Target**.
+1. Klikken **Bewerken**.
+1. Klikken **Configuratie toevoegen** krachtens **Configuraties van Cloud Servicen** en selecteert u **Adobe Target**.
 
    ![Configuratie toevoegen](assets/chlimage_1-165.png)
 
@@ -254,7 +254,7 @@ Wanneer u een pagina aan het framework koppelt, nemen de onderliggende pagina&#3
    >
    Zorg ervoor dat u de specifieke **kader** die u hebt gemaakt en niet de doelwolkenconfiguratie waaronder deze is gemaakt.
 
-1. Tikken/klikken **Gereed**.
+1. Klikken **Gereed**.
 1. Activeer de hoofdpagina van de website zodat u deze naar de publicatieserver kopieert. (Zie [Pagina&#39;s publiceren](/help/sites-authoring/publishing-pages.md).)
 
    >[!NOTE]

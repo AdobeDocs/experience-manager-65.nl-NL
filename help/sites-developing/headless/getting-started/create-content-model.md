@@ -2,9 +2,9 @@
 title: Modellen voor inhoudsfragmenten maken, headless Quick Start Guide
 description: Definieer de structuur van de inhoud die u maakt en gebruikt met behulp van de mogelijkheden zonder kop in Adobe Experience Manager (AEM), met behulp van Content Fragment Models.
 exl-id: 653e35c9-7b6a-49ae-b55d-af2ec40e257d
-source-git-commit: b66ec42c35b5b60804015d340b8194bbd6ef3e28
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '488'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -23,15 +23,15 @@ Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en i
 
 Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de nieuwe modellen worden vereist. Voor deze gids Aan de slag, creeert u slechts één model.
 
-1. Meld u aan bij AEM en selecteer in het hoofdmenu **Gereedschappen -> Middelen -> Modellen van inhoudsfragmenten**.
-1. Tik of klik op de map die u hebt gemaakt door uw configuratie te maken.
+1. Meld u aan bij AEM en selecteer in het hoofdmenu **Gereedschappen > Elementen > Modellen van inhoudsfragmenten**.
+1. Klik op de map die u hebt gemaakt door uw configuratie te maken.
 
    ![De map Modellen](assets/models-folder.png)
-1. Tik of klik op **Maken**.
+1. Klikken **Maken**.
 1. Geef een **Modeltitel**, **Tags**, en **Beschrijving**. U kunt ook selecteren/deselecteren **Model inschakelen** om te bepalen of het model onmiddellijk na verwezenlijking wordt toegelaten.
 
    ![Een model maken](assets/models-create.png)
-1. Tik in het bevestigingsvenster op **Openen** om uw model te configureren.
+1. Klik in het bevestigingsvenster op **Openen** om uw model te configureren.
 
    ![Bevestigingsvenster](assets/models-confirmation.png)
 1. Met de **Inhoudsfragmentmodeleditor** kunt u het inhoudsfragmentmodel samenstellen door velden te slepen en neer te zetten vanaf het tabblad **Gegevenstypen** kolom.
@@ -41,14 +41,14 @@ Een informatiearchitect zou deze taken slechts sporadisch uitvoeren aangezien de
 1. Nadat u een veld hebt geplaatst, moet u de eigenschappen ervan configureren. De redacteur schakelt automatisch aan **Eigenschappen** voor het toegevoegde veld waarin u de verplichte velden kunt opgeven.
 
    ![Eigenschappen configureren](assets/models-configure-properties.png)
-1. Tik of klik op **Opslaan**.
+1. Wanneer u klaar bent met het samenstellen van uw model, klikt u op **Opslaan**.
 
 1. De modus van het nieuwe model is afhankelijk van of u **Model inschakelen** bij het maken van het model:
    * geselecteerd - het nieuwe model is al **Ingeschakeld**
    * niet geselecteerd - het nieuwe model wordt gecreeerd in **Concept** mode
 
 1. Als dit nog niet het geval is, moet het model **Ingeschakeld** om het te gebruiken.
-   1. Selecteer het model dat u hebt gemaakt en tik of klik op **Inschakelen**.
+   1. Selecteer het model dat u hebt gemaakt en klik op **Inschakelen**.
 
       ![Het model inschakelen](assets/models-enable.png)
    1. Bevestig het toelaten van het model door te tikken of te klikken **Inschakelen** in het bevestigingsdialoogvenster.

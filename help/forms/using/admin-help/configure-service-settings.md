@@ -6,9 +6,9 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 exl-id: a6a10ff0-6f4d-42df-9b4e-f98a53cf1806
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '10692'
+source-wordcount: '10702'
 ht-degree: 0%
 
 ---
@@ -147,7 +147,7 @@ De volgende instellingen zijn beschikbaar voor de Distiller-service.
 
 U kunt nieuwe instellingen maken via de gebruikersinterface van de PDF Generator.
 
-**Beveiligingsinstellingen:** Vooraf geconfigureerde beveiligingsinstellingen die worden toegepast op gegenereerde PDF-documenten. De standaardwaarde is Geen beveiliging. U moet beveiligingsinstellingen maken met PDF Generator en vervolgens hier de instelling invoeren.
+**Beveiligingsinstellingen:** Vooraf geconfigureerde beveiligingsinstellingen die worden toegepast op gegenereerde PDF-documenten. De standaardwaarde is Geen beveiliging. Maak beveiligingsinstellingen met PDF Generator en voer hier de instelling in.
 
 **Poolgrootte:** De aanvankelijke grootte van de pool. Wanneer de dienst van Distiller wordt opgesteld, wordt dit aantal gebruikt om het aantal instanties van de de dienstimplementatie te bepalen die worden gecreeerd en aan de vrije pool toegewezen wachtend op aanroepingsverzoeken. De de dienstcontainer kan dan onmiddellijk aan aanroepingsverzoeken antwoorden zonder het moeten een de dienstinstantie eerst initialiseren.
 
@@ -332,7 +332,7 @@ De macKeySeed-waarde is het zaad voor de random number generator die wordt gebru
 
 Wijzig de macKeySeed-waarde wanneer u de beveiligde URL&#39;s moet vernieuwen. Het vernieuwen van veilige URLs hangt van uw veiligheidsbeleid af, en is gelijkaardig aan verfrist beleid voor het veranderen van het hoofdwortelwachtwoord van de server. De macSeedValue is analoog aan het hoofdwachtwoord voor veilige URLs, omdat het wordt gebruikt om een nieuw uniek willekeurig aantal voor gebruik in veilige het produceren van URL en herwinning te produceren.
 
-U moet de cluster opnieuw starten omdat macSeedValue alleen-lezen is bij het opstarten van het systeem. Alle knopen moeten opnieuw beginnen om de waarde te lezen, omdat zij het onafhankelijk gebruiken om hun interne willekeurige aantallen met de zaadwaarde te initialiseren.
+Start de cluster opnieuw omdat macSeedValue alleen-lezen is bij het opstarten van het systeem. Alle knopen moeten opnieuw beginnen om de waarde te lezen, omdat zij het onafhankelijk gebruiken om hun interne willekeurige aantallen met de zaadwaarde te initialiseren.
 
 ## JDBC-service-instellingen {#jdbc-service-settings}
 

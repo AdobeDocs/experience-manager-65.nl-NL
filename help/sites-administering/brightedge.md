@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: cf25c9a8-0555-4c67-8aa5-55984fd8d301
 exl-id: f14cc5fd-aeab-4619-b926-b6f1df7e50e5
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '495'
+source-wordcount: '490'
 ht-degree: 0%
 
 ---
@@ -23,11 +23,11 @@ Maak een BrightEdge-cloudconfiguratie zodat AEM verbinding kunnen maken met de r
 
 Wanneer u de configuratie creeert, specificeert u een titel. De titel moet beschrijvend zijn, zodat mensen de configuratie kunnen correleren met de BrightStor-account. Wanneer een auteur of beheerder van een pagina een webpagina maakt met het BrightStor-account, wordt deze titel weergegeven in een vervolgkeuzelijst.
 
-1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
+1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
 1. Klik op de koppeling die wordt weergegeven in de sectie BrightEdge Content Optimizer. De koppelingstekst wordt bepaald door het feit of er een BrightEdge-configuratie is gemaakt:
 
-   * Nu configureren: Deze koppeling wordt weergegeven wanneer er geen configuratie is gemaakt.
-   * Configuraties tonen: Deze koppeling wordt weergegeven wanneer een of meer configuraties zijn gemaakt.
+   * Nu configureren: deze koppeling wordt weergegeven wanneer er geen configuratie is gemaakt.
+   * Configuraties tonen: deze koppeling wordt weergegeven wanneer een of meer configuraties zijn gemaakt.
 
    ![chlimage_1-4](assets/chlimage_1-4a.png)
 
@@ -39,7 +39,7 @@ Wanneer u de configuratie creeert, specificeert u een titel. De titel moet besch
 
 Wijzig indien nodig de gebruikersnaam en het wachtwoord van een BrightStor-configuratie. De wijzigingen zijn van invloed op alle pagina&#39;s die de configuratie gebruiken.
 
-1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
+1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
 1. Klik in de sectie BrightEdge Content Optimizer op Configuraties tonen.
 
    ![chlimage_1-5](assets/chlimage_1-5a.png)
@@ -54,7 +54,7 @@ Koppel pagina&#39;s aan een BrightStor-configuratie om paginagegevens naar de Br
 1. Open de klassieke websiteconsole. ([http://localhost:4502/siteadmin#/content](http://localhost:4502/siteadmin#/content))
 1. Selecteer in de boomstructuur Websites de map of pagina die de pagina bevat die u aan de configuratie van BrightStor wilt koppelen.
 1. Klik in de lijst met pagina&#39;s met de rechtermuisknop op de pagina die u wilt configureren en klik op Eigenschappen.
-1. Klik op het tabblad Cloud Services op de knop Service toevoegen en selecteer BrightEdge Content Optimizer in het dialoogvenster Cloud Services en klik vervolgens op OK.
+1. Klik op het tabblad Cloud Servicen op de knop Service toevoegen en selecteer BrightEdge Content Optimizer in het dialoogvenster Cloud Servicen en klik vervolgens op OK.
 1. Selecteer in de lijst BrightEdge Content Optimizer de BrightEdge-configuratie die u aan de pagina wilt koppelen en klik op OK.
 
    ![chlimage_1-6](assets/chlimage_1-6a.png)
@@ -64,7 +64,7 @@ Koppel pagina&#39;s aan een BrightStor-configuratie om paginagegevens naar de Br
 Activeer een BrightEdge-configuratie om deze te repliceren op de publicatie-instantie en om gepubliceerde pagina&#39;s in staat te stellen te communiceren met de BrightStor-service.
 
 1. Klik op Sites in de track en blader naar de pagina die u aan de configuratie van BrightStor Edge hebt gekoppeld en selecteer deze.
-1. Klik of tik op het pictogram Publiceren en klik vervolgens op Publiceren.
+1. Klik op het pictogram Publiceren en klik vervolgens op Publiceren.
 
    ![chlimage_1-7](assets/chlimage_1-7a.png)
 

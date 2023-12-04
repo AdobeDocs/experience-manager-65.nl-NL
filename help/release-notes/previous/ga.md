@@ -2,10 +2,10 @@
 title: Algemene opmerkingen bij de release [!DNL Adobe Experience Manager] 6,5
 description: "[!DNL Adobe Experience Manager] 6.5 notities waarin de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen worden beschreven."
 exl-id: b3d4a527-44ca-4eb6-b393-f3e8117cf1a6
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4676'
-ht-degree: 1%
+source-wordcount: '4484'
+ht-degree: 0%
 
 ---
 
@@ -15,7 +15,7 @@ ht-degree: 1%
 
 | Product | [!DNL Adobe Experience Manager] |
 |---|---|
-| Versie | 6.5 |
+| Versie | 6,5 |
 | Type | Grote release |
 | Algemene beschikbaarheidsdatum | 8 april 2019 |
 | Aanbevolen updates | Zie [Recente updates AEM](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/aem-releases-updates.html?lang=en). |
@@ -203,7 +203,7 @@ Voor meer informatie over wijzigingen in AEM Screens raadpleegt u de opmerkingen
 * In het rapport Downloaden van middelen worden nu inhoudsfragmenten dienovereenkomstig weergegeven
 * Toevoegen [Ondersteuning voor inhoudsfragmenten op HTTP-API voor middelen](/help/assets/assets-api-content-fragments.md) via /api.json. Er zijn API&#39;s voor het maken, bijwerken, lezen en verwijderen van inhoudsfragmenten.
 
-#### Ervaringsfragmenten {#experience-fragments}
+#### Ervaar fragmenten {#experience-fragments}
 
 * Verbeterde indexering van [Ervaar fragmenten](/help/sites-authoring/experience-fragments.md), zodat wordt hun inhoud gevonden in onderzoek naar pagina&#39;s waar zij worden gebruikt.
 * De [Exporteren naar doel](/help/sites-administering/experience-fragments-target.md) Hiermee kunt u het ervaringsfragment nu verzenden als JSON (standaard is HTML) of beide.
@@ -359,17 +359,17 @@ Zie voor meer informatie [Adobe Stock-middelen gebruiken in Experience Manager A
 
 Zie voor meer informatie [Nieuwe functies in Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/whats-new.html?lang=en).
 
-#### Gekoppelde assets {#connectedassets}
+#### Verbonden elementen {#connectedassets}
 
 In grote ondernemingen kan de infrastructuur die nodig is om websites te maken, worden gedistribueerd. Soms bevinden de mogelijkheden voor het maken van websites en de vereiste digitale middelen zich in verschillende silo&#39;s.
 
-[!DNL Experience Manager Sites] biedt functies voor het maken van webpagina&#39;s en is het DAM-systeem (Digital Asset Management) dat de vereiste assets voor websites levert. [!DNL Experience Manager Assets] [!DNL Experience Manager] ondersteunt nu het bovenstaande gebruiksgeval door integratie van [!DNL Sites] en [!DNL Assets]. Zie [hoe te om de Verbonden eigenschap van Activa te vormen en te gebruiken](/help/assets/use-assets-across-connected-assets-instances.md).
+[!DNL Experience Manager Sites] biedt mogelijkheden om webpagina&#39;s te maken en [!DNL Experience Manager Assets] is het DAM-systeem (Digital Asset Management) dat de vereiste middelen voor websites levert. [!DNL Experience Manager] ondersteunt nu het bovenstaande gebruiksgeval door integratie van [!DNL Sites] en [!DNL Assets]. Zie [hoe te om de Verbonden eigenschap van Activa te vormen en te gebruiken](/help/assets/use-assets-across-connected-assets-instances.md).
 
 ![Een element slepen vanuit een [!DNL Experience Manager] implementatie op een [!DNL Sites] pagina van een andere [!DNL Experience Manager] implementatie](/help/release-notes/assets/connected-assets-drag-and-drop-only.gif)
 
 *Figuur: Sleep activa van een activa [!DNL Experience Manager] implementatie op een [!DNL Sites] pagina op een andere pagina [!DNL Experience Manager] implementatie.*
 
-####  Dynamic Media  {#dynamic-media}
+#### Dynamic Media {#dynamic-media}
 
 [!DNL Dynamic Media] biedt verbeterde mogelijkheden voor het schrijven en leveren van rijke media in [!DNL Experience Manager Assets] om geavanceerde ervaringen te stimuleren die diepgaand en gepersonaliseerd zijn. Door één primaire bron van hoge kwaliteit te uploaden en de geavanceerde cloudweergave en viewers van Adobe te gebruiken, kunt u elke combinatie van uitvoeringen ter plekke aanbieden ter ondersteuning van de mediabeleid van uw organisatie.
 
@@ -428,7 +428,7 @@ AEM 6.5 Forms biedt verschillende nieuwe functies en verbeteringen. De hooglicht
 
 Zie de [Overzicht van nieuwe functies en verbeteringen in AEM 6.5 Forms](/help/forms/using/whats-new.md) voor informatie over nieuwe en verbeterde functies en documentatiebronnen.
 
-### Gebruik klantgerichte ontwikkeling {#leverage-customer-focused-development}
+### Gebruik klantgerichte ontwikkeling {#use-customer-focused-development}
 
 Adobe gebruikt een klantgericht ontwikkelingsmodel dat klanten toestaat om aan alle stadia van het ontwikkelingsproces, tijdens specificatie, ontwikkeling, en het testen bij te dragen. Onze dank gaat uit naar alle klanten en partners die een bijdrage leveren aan dit proces.
 
@@ -468,7 +468,7 @@ Dit proces van prioritering heeft meer dan 750 klantgerichte veranderingen opgel
 
 * AEM Tools Suite moderniseren, bijvoorbeeld Dialog Conversion Tool. ([GitHub-project](https://github.com/adobe/aem-modernize-tools))
 
-**Assets**
+**Activa**
 
 * Pakket maken om verbeterde PDF Rasterizer toe te voegen ([meer lezen](/help/assets/aem-pdf-rasterizer.md))
 * Pakket maken om uitgebreide ondersteuning voor RAW-afbeeldingen toe te voegen ([meer lezen](/help/assets/camera-raw.md))

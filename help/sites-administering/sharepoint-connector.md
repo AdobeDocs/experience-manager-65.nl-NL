@@ -11,16 +11,16 @@ content-type: reference
 discoiquuid: 907316d1-3d23-4c46-bccb-bad6fe1bd1bb
 docset: aem65
 exl-id: 10ea7d2e-6e44-4d5c-a2b2-63c73b18f172
-source-git-commit: 259f257964829b65bb71b5a46583997581a91a4e
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1482'
 ht-degree: 0%
 
 ---
 
 # SharePoint Connector{#sharepoint-connector}
 
-Dit artikel bevat details over de Adobe JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
+Dit artikel bevat informatie over de Adobe JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
 
 De SharePoint-connector ondersteunt de volgende basisfuncties:
 
@@ -47,7 +47,7 @@ Ga als volgt te werk om aan de slag te gaan met de connector:
 * Download het distributiebestand van het schakelaarpakket van de Distributie van de Software.
 * Een geldige kopie maken *license.properties* bestand naar de map die het *cq-quickstart-6.4.0.jar* bestand.
 
-* Dubbelklik op of tik op het .jar-bestand om het te AEM of start het bestand via de opdrachtregel.
+* Dubbelklik op het .jar-bestand om het AEM te starten of start het bestand via de opdrachtregel.
 * Installeer het aansluitingspakket via Package Manager.
 * Configureer de verbindingsopties.
 
@@ -67,7 +67,7 @@ De schakelaar vereist het volgende:
 
 De SharePoint-aansluiting kan worden gedownload van [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
-### Ondersteunde Platforms {#supported-platforms}
+### Ondersteunde platforms {#supported-platforms}
 
 De schakelaar steunt het volgende:
 
@@ -95,14 +95,14 @@ Softwaredistributie wordt gebruikt om productfuncties, voorbeelden en hotfixes t
 
 Om het pakket van de schakelaarinhoud te installeren.
 
-1. Open een Adobe Support-ticket om een aanvraag in te dienen voor het connectorfunctiepakket.
+1. Open een kaartje van de Steun van de Adobe om om het schakelaarkenmerkpak te verzoeken.
 1. Download het pakket wanneer het beschikbaar is en open dan de Manager van het Pakket voor uw AEM instantie.
-1. Tikken/klikken **Installeren** op de pagina met pakketbeschrijving.
-1. Van de **Pakket installeren** dialoogvenster, tikken/klikken **Installeren**.
+1. Klikken **Installeren** op de pagina met pakketbeschrijving.
+1. Van de **Pakket installeren** dialoogvenster, klikt u op **Installeren**.
 
    **Opmerking**: Controleer of u bent aangemeld als beheerder.
 
-1. Tik/klik op het moment dat het pakket is geïnstalleerd **Sluiten**.
+1. Wanneer het pakket is geïnstalleerd, klikt u **Sluiten**.
 
 ## SharePoint-connector configureren {#configuring-sharepoint-connector}
 
@@ -118,7 +118,7 @@ Voer de volgende stappen uit om de URL van de SharePoint-server en de geavanceer
 1. Zoeken naar **Day JCR Connector voor Microsoft Sharepoint** bundel.
 1. Bewerk de configuratiewaarden.
 1. Stel de URL van de SharePoint-server in als de waarde van **Werkruimten**.
-1. Tikken/klikken **Opslaan**.
+1. Klikken **Opslaan**.
 
 ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -131,11 +131,11 @@ De schakelaar kan ook voor veelvoudige werkruimten worden gevormd. In dit geval 
 `<name>` is de naam van de JCR-werkruimte en
 `<url>` is de URL van de SharePoint-server voor die werkruimte.
 
-Voer in AEM nog een stap uit, apart van de bovenstaande configuratiestappen. Lijst van gewenste personen &#39;**com.day.cq.dam.cq-dam-jcr-connectors** bundel.
+Voer in AEM nog een stap uit, apart van de bovenstaande configuratiestappen. LIJST VAN GEWENSTE PERSONEN &#39;**com.day.cq.dam.cq-dam-jcr-connectors** bundel.
 
 Voer de volgende stappen uit om bundels in AEM te lijsten van gewenste personen:
 
-1. Navigeer naar de OSGi Management Console: http://localhost:4502/system/console/configMgr.
+1. Ga naar de OSGi Management Console: http://localhost:4502/system/console/configMgr.
 1. Zoek naar de service &quot;Apache Sling Login Admin Whitelist&quot;.
 1. Selecteren **De whitelist omzeilen**.
 1. Toevoegen `com.day.cq.dam.cq-dam-jcr-connectors` in whitelist-bundels standaard
@@ -195,16 +195,16 @@ Met name zijn de volgende verificatietypen beschikbaar:
 * Vorderingen — Basis
 * Op Forms gebaseerde claims
 
-De AEM JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0. biedt ondersteuning voor verificatie op basis van claims (wat door Microsoft wordt voorgesteld), die in de volgende modi werkt:
+De AEM JCR Connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0. ondersteunt op claims gebaseerde verificatie (wat door Microsoft wordt voorgesteld), die in de volgende modi werkt:
 
 * **Basic-/NTLM-verificatie**: De schakelaar probeert eerst om het gebruiken van basisauthentificatie te verbinden. Als deze optie niet beschikbaar is, wordt overgeschakeld naar verificatie op basis van NTLM.
-* **Op Forms gebaseerde verificatie**: SharePoint valideert gebruikers op geloofsbrieven die de gebruikers in een login vorm (typisch een Web-pagina) typen. Het systeem geeft een teken voor voor authentiek verklaarde verzoeken uit die een sleutel voor het opnieuw vestigen van de identiteit voor verdere verzoeken bevat.
+* **Op Forms gebaseerde verificatie**: SharePoint valideert gebruikers op basis van referenties die gebruikers in een aanmeldingsformulier typen (doorgaans een webpagina). Het systeem geeft een teken voor voor authentiek verklaarde verzoeken uit die een sleutel voor het opnieuw vestigen van de identiteit voor verdere verzoeken bevat.
 
 **Op Forms gebaseerde verificatie configureren**
 
 Ga naar: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
-1. Klik op OSGI -> Configuration
+1. Klik op OSGI > Configuration
 1. Zoeken naar &quot;Day JCR Connector for Microsoft Sharepoint&quot;
 1. Klik op &quot;De configuratiewaarden bewerken&quot;
 1. Stel de waarde van &quot;Sharepoint Connection Factory&quot; in op &quot;com.day.crx.spi.sharepoint.security.FormsBasedAuthenticationConnectionFactory&quot;
@@ -245,7 +245,7 @@ De gebruiker toevoegen in de beheergroep:
 
 ### Tokenverificatie uitschakelen {#disable-token-authentication}
 
-1. Het pakket downloaden en installeren `basic auth`. `zip` van Software Distribution.
+1. Het pakket downloaden en installeren `basic auth`. `zip` van Softwaredistributie.
 
 1. Sluit QuickStart.
 1. Het bestand openen *\crx-quickstart\repository\repository.xml*.

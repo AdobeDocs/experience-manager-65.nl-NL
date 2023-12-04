@@ -1,17 +1,17 @@
 ---
-title: Modellen van contentfragmenten
+title: Modellen van inhoudsfragmenten
 description: Leer hoe de Modellen van het Fragment van de Inhoud als basis voor uw inhoud zonder kop in AEM dienen en hoe te om de Fragmenten van de Inhoud met gestructureerde inhoud tot stand te brengen.
 feature: Content Fragments
 role: User
 exl-id: 6fd1fdb2-d1d3-4f97-b119-ecfddcccec9e
-source-git-commit: b00ed4ed146b89aece9af1d267c890a360a236e9
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2305'
-ht-degree: 2%
+source-wordcount: '2310'
+ht-degree: 1%
 
 ---
 
-# Modellen van contentfragmenten {#content-fragment-models}
+# Modellen van inhoudsfragmenten {#content-fragment-models}
 
 Content Fragment Models in AEM de structuur van de inhoud voor uw [inhoudsfragmenten,](/help/assets/content-fragments/content-fragments.md) fungeren als basis voor uw inhoud zonder kop.
 
@@ -86,7 +86,7 @@ Het inhoudsfragmentmodel definieert effectief de structuur van de resulterende i
 
 1. **Een veld verwijderen**
 
-   Selecteer het gewenste veld en klik op het pictogram van de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
+   Selecteer het vereiste veld en klik op het prullenbakpictogram. U wordt gevraagd de actie te bevestigen.
 
    ![remove](assets/cfm-models-06.png)
 

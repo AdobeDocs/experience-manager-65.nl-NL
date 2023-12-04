@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configuring
 exl-id: 5ecd09a3-c4be-4361-9816-03106435346f
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1971'
+source-wordcount: '1954'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Om een configuratie met de Webconsole bij te werken:
 
 1. Toegang krijgen tot de **Configuratie** tabblad van de webconsole door:
 
-   * De webconsole openen via de koppeling op het tabblad **Gereedschap -> Bewerkingen** -menu. Na het registreren in de console, kunt u het drop-down menu gebruiken van:
+   * De webconsole openen via de koppeling op het tabblad **Gereedschap > Bewerkingen** -menu. Na het registreren in de console, kunt u het drop-down menu gebruiken van:
 
      **OSGi >**
 

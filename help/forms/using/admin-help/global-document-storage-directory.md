@@ -10,9 +10,9 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: a33b8834-6e39-47eb-a53b-0982d32e80ad
 exl-id: 7a64a643-808b-4644-8fd3-0dafe83e8dd9
-source-git-commit: c4cd9a61a226ace2a72d60b5b7b7432de12cb873
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '676'
+source-wordcount: '672'
 ht-degree: 0%
 
 ---
@@ -79,7 +79,7 @@ De locatie van de GDS-map kan handmatig worden geconfigureerd tijdens het instal
 
 ## De standaard GDS-locatie wijzigen {#change-the-default-gds-location}
 
-U kunt de GDS-locatie wijzigen in de beheerconsole nadat de installatie van AEM formulieren is voltooid. U moet de gegevens handmatig verplaatsen om het proces te voltooien.
+U kunt de GDS-locatie wijzigen in de beheerconsole nadat de installatie van AEM formulieren is voltooid. Verplaats de gegevens handmatig om het proces te voltooien.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: De Rich Text Editor gebruiken om inhoud te ontwerpen
 description: De Rich Text Editor gebruiken om inhoud te ontwerpen in Adobe Experience Manager 6.5.
 exl-id: 90cb8893-65f3-4d82-9880-ce8dd80891b1
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '264'
 ht-degree: 0%
 
 ---
@@ -19,11 +19,11 @@ De Rich Text Editor (RTE) is een basisbouwsteen voor het invoegen van tekstuele 
 
 ## Plaatselijk bewerken {#in-place-editing}
 
-Als u een op tekst gebaseerde component met één tik of klik selecteert, wordt de knop [componentwerkbalk](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) zoals bij elke component.
+Als u een op tekst gebaseerde component met één klik selecteert, wordt de knop [componentwerkbalk](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) zoals bij elke component.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
-Als u nogmaals tikt of erop klikt, of de component aanvankelijk selecteert met een langzaam dubbeltikken/klikken, wordt de bewerking op de plaats geopend met een eigen werkbalk. Hier kunt u de inhoud bewerken en basisopmaakwijzigingen aanbrengen.
+Als u nogmaals tikt of erop klikt, of de component aanvankelijk selecteert met een langzaam dubbelklikken, wordt ter plekke bewerken geopend met een eigen werkbalk. Hier kunt u de inhoud bewerken en basisopmaakwijzigingen aanbrengen.
 
 ![screen_shot_2018-03-21at163214](assets/screen_shot_2018-03-21at163214.png)
 

@@ -1,17 +1,17 @@
 ---
-title: Variaties - Authoring van content voor fragmenten
+title: Variaties - Fragmentinhoud ontwerpen
 description: Begrijp hoe de variaties uw inhoud zonder kop in AEM nog flexibeler kunnen maken door u toe te staan om inhoud voor het fragment te ontwerpen en dan variaties van die inhoud volgens doel tot stand te brengen.
 feature: Content Fragments
 role: User
 exl-id: 50982ede-7ccf-45b2-b0dd-a49d23e0f971
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2388'
+source-wordcount: '2309'
 ht-degree: 4%
 
 ---
 
-# Variaties - Authoring van content voor fragmenten{#variations-authoring-fragment-content}
+# Variaties - Fragmentinhoud ontwerpen{#variations-authoring-fragment-content}
 
 [Variaties](/help/assets/content-fragments/content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van AEM inhoudsfragmenten, aangezien u hiermee kopieën van de basisinhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s, waardoor de levering van inhoud zonder kop nog flexibeler wordt.
 
@@ -75,7 +75,7 @@ U kunt:
 
 ### Volledige schermeditor {#full-screen-editor}
 
-Wanneer u een tekstveld met meerdere regels bewerkt, kunt u de volledige schermeditor openen. Tik of klik in de werkelijke tekst en selecteer vervolgens het volgende actiepictogram:
+Wanneer u een tekstveld met meerdere regels bewerkt, kunt u de volledige schermeditor openen, in de werkelijke tekst klikken en vervolgens het volgende actiepictogram selecteren:
 
 ![pictogram van volledige schermeditor](assets/cfm-variations-03.png)
 

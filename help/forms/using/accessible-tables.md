@@ -10,9 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 feature: Mobile Forms
 exl-id: 3b8e3323-9ac4-4f5c-8c52-e2186e9169ea
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als 
  </extras>
 ```
 
-De tabellen die zijn gemarkeerd als *complexTable* volgt de native HTML-uitvoering en biedt betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Merge Cells]**.
+De tabellen die als *complexTable* volgt de native HTML-uitvoering en biedt betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op **[!UICONTROL Merge Cells]**.
 
 >[!NOTE]
 >
@@ -48,6 +48,6 @@ Beperkingen in nieuw *AccessibleTable* indeling:
 
 * Gebrek aan steun voor kweekbare gebieden als het rowspan in de lijst wordt gebruikt
 * Geen ondersteuning voor geneste tabellen (tabellen in tabelcellen)
-* Ondersteuning voor rowspan is beperkt tot de koptekstrijen en kopcellen
+* De ondersteuning voor de rowspan is beperkt tot de koptekstrijen en kopcellen
 * De ondersteuning is beperkt tot reguliere tabellen
 * Geen ondersteuning voor gegevensvooraf ingevulde tabellen met rowspan > 1

@@ -7,9 +7,9 @@ topic-tags: extending-aem
 content-type: reference
 docset: aem65
 exl-id: 6790202f-0542-4779-b3ce-d394cdba77b4
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2414'
+source-wordcount: '2425'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Een workflow maken met de editor:
 >
 >`/var/workflow/models`
 >
->Bijvoorbeeld, `/var/workflow/models/prototypes`
+>Bijvoorbeeld: `/var/workflow/models/prototypes`
 >
 >Deze map kan vervolgens worden gebruikt voor [toegang tot de modellen in die map beheren](/help/sites-administering/workflows-managing.md#create-a-subfolder-in-var-workflow-models-and-apply-the-acl-to-that).
 
@@ -97,7 +97,7 @@ Selecteren **Bewerken** zal:
 
 ### Een stap toevoegen aan een model {#adding-a-step-to-a-model}
 
-U moet stappen aan uw model toevoegen om de uit te voeren activiteit te vertegenwoordigen - elke stap voert een specifieke activiteit uit. Een selectie van stapcomponenten is beschikbaar in een standaard AEM instantie.
+Voeg stappen aan uw model toe om de uit te voeren activiteit te vertegenwoordigen - elke stap voert een specifieke activiteit uit. Een selectie van stapcomponenten is beschikbaar in een standaard AEM instantie.
 
 Wanneer u een model bewerkt, worden de beschikbare stappen weergegeven in de verschillende groepen van de **Stappen, browser**. Bijvoorbeeld:
 
@@ -144,7 +144,7 @@ U kunt **Configureren** en pas het gedrag van een werkschemastap aan gebruikend 
 
 1. Als u het dialoogvenster **Step Properties** dialoogvenster voor een stap:
 
-   * Klik/tik de *stap in het workflowmodel en selecteer **Configureren** op de werkbalk van de component.
+   * Klik op de stap* *in het workflowmodel en selecteer **Configureren** op de werkbalk van de component.
 
    * Dubbelklik op de stap.
 
@@ -185,12 +185,12 @@ Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontb
 
 1. Bevestig dat het model niet beschikbaar is in een interface met aanraakbediening. Middelen benaderen met `/assets.html/content/dam` pad. Selecteer een element. Openen **[!UICONTROL Timeline]** in linkerspoor. Klikken **[!UICONTROL Start Workflow]** en bevestigt dat de **[!UICONTROL Request for Activation]** model is niet aanwezig in de pop-uplijst.
 
-1. Navigeren door **[!UICONTROL Tools > General > Tagging]**. Selecteer **[!UICONTROL Workflow]**.
+1. Navigeren door **[!UICONTROL Tools > General > Tagging]**. Selecteren **[!UICONTROL Workflow]**.
 
-1. Selecteer **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** als `DAM` en **[!UICONTROL Name]** als `dam`. Selecteer **[!UICONTROL Submit]**.
+1. Selecteer **[!UICONTROL Create > Create Tag]**. Set **[!UICONTROL Title]** als `DAM` en **[!UICONTROL Name]** als `dam`. Selecteren **[!UICONTROL Submit]**.
    ![Tag maken in workflowmodel](assets/workflow_create_tag.png)
 
-1. Ga naar **[!UICONTROL Tools > Workflow > Models]**. Selecteren **[!UICONTROL Request for Activation]** selecteert u vervolgens **[!UICONTROL Edit]**.
+1. Navigeren naar **[!UICONTROL Tools > Workflow > Models]**. Selecteren **[!UICONTROL Request for Activation]** selecteert u vervolgens **[!UICONTROL Edit]**.
 
 1. Selecteren **[!UICONTROL Edit]**, opent u de **[!UICONTROL Page Information]** en vervolgens selecteert u **[!UICONTROL Open Properties]** en ga naar de **[!UICONTROL Basic]** tab (als deze nog niet geopend is).
 
@@ -340,7 +340,7 @@ Om enkele mogelijkheden voor het maken van een workflow te illustreren, maakt u 
 1. U opent als volgt het dialoogvenster Eigenschappen:
 
    * Klik op de deelnemersstap en selecteer **Configureren** op de werkbalk van de component.
-   * Dubbelklik op de stap voor deelnemers.
+   * Dubbelklik op de stap Deelnemer.
 
 1. In de **Vaak** tabs openen `Validate Content` voor beide **Titel** en **Beschrijving**.
 1. Open de **Gebruiker/groep** tab:

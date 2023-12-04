@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: b25d3f8e-5687-49ab-95e1-19ec75c87f6e
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '843'
-ht-degree: 6%
+source-wordcount: '831'
+ht-degree: 4%
 
 ---
 
@@ -34,9 +34,9 @@ Launches kunnen ook:
 
 In deze sectie wordt beschreven hoe u (en indien nodig) [delete](/help/sites-authoring/launches-creating.md#deleting-a-launch)) pagina&#39;s starten vanuit de Sites-console of [de Startconsole](#the-launches-console):
 
-* [Lanceringen maken](/help/sites-authoring/launches-creating.md)
-* [Lanceringen bewerken](/help/sites-authoring/launches-editing.md)
-* [Lanceringen promoten](/help/sites-authoring/launches-promoting.md)
+* [Starten maken](/help/sites-authoring/launches-creating.md)
+* [Starten bewerken](/help/sites-authoring/launches-editing.md)
+* [Starten promoten](/help/sites-authoring/launches-promoting.md)
 
 ## Starten - de volgorde van gebeurtenissen {#launches-the-order-of-events}
 
@@ -71,7 +71,7 @@ Met Launches kunt u:
       * De **Starten**(**Live**) **date** veld: deze kan worden ingesteld wanneer u een opstart maakt of bewerkt.
 
       * De **Gereed voor productie** markering: deze kan alleen worden ingesteld tijdens het bewerken van een opstart.
-      * Als de **Gereed voor productie** markering is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.\
+      * Als de **Gereed voor productie** markering is ingesteld, wordt de lancering automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **Starten**(**Live**) **date**. Na de promotie worden de productiepagina&#39;s automatisch gepubliceerd.\
         Als er geen datum is ingesteld, heeft de markering geen effect.
 
 * Werk de bron- en startpagina&#39;s parallel bij:
@@ -121,6 +121,6 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en laat u 
 
    ![Referentie, tabblad - Starten](assets/screen-shot_2019-03-05at121901-1.png)
 
-1. Tik/klik op de gewenste opstart. De lijst met mogelijke acties wordt weergegeven:
+1. Klik op de juiste start en de lijst met mogelijke acties wordt weergegeven:
 
    ![Selecteer Starten om mogelijke acties weer te geven](assets/screen-shot_2019-03-05at121952-1.png)

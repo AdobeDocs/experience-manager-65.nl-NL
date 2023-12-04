@@ -1,7 +1,7 @@
 ---
 title: Aan de slag met de AEM Forms-werkruimte
 seo-title: Getting started with AEM Forms workspace
-description: Hoe te beginnen met het gebruiken van de werkruimte van LiveCycle AEM Forms om uw bedrijfsautomatiseringsprocessen te beheren.
+description: Hoe te beginnen met het gebruiken van de werkruimte van AEM Forms van het LiveCycle om uw bedrijfsautomatiseringsprocessen te beheren.
 seo-description: How to get started with using the LiveCycle AEM Forms workspace to manage your business automation processes.
 uuid: 35ca1a51-92c3-40d8-8de3-604be8704752
 contentOwner: robhagat
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
 exl-id: d2a962b6-16be-4866-a856-5064f81c9610
-source-git-commit: b220adf6fa3e9faf94389b9a9416b7fca2f89d9d
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '993'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Wanneer u in de AEM Forms-werkruimte navigeert met een toetsenbord, voldoet de n
 * De Help van de AEM Forms-werkruimte wordt in een apart browservenster geopend. Nadat u de Help hebt weergegeven, keert de focus terug naar het browservenster dat de AEM Forms-werkruimte bevat. Het menu Help blijft gefocust wanneer de focus terugkeert.
 * Wanneer u een formulier opent om een proces te starten of een taak te voltooien, blijft de focus bij het bestaande element en verandert de focus niet in het formulier. Gebruik tab om de focus naar het formulier te verplaatsen en er doorheen te bladeren. De tabvolgorde door het formulier is afhankelijk van het type en het ontwerp van het formulier.
 
-   Wanneer u met de Tab-toets tot het einde van het formulier of het formulier verzendt, springt de cursorfocus voor PDF forms naar de adresbalk van de browser. U moet de menu&#39;s opnieuw doorlopen (maar niet het hele formulier) om naar de knoppen voor formulierhandelingen te gaan, zoals Opslaan als concept en Voltooien. Als het formulier nog steeds geopend is, kunt u ook met de Tab-toets voorbij de knoppen heen en weer in het formulier gaan.
+  Wanneer u in PDF forms met de Tab-toets tot het einde van het formulier gaat of het formulier verzendt, springt de cursorfocus naar de adresbalk van de browser. Tik nogmaals door de menu&#39;s (maar niet door het hele formulier) om naar de knoppen voor formulierhandelingen te gaan, zoals Opslaan als concept en Voltooien. Als het formulier nog steeds geopend is, kunt u ook met de Tab-toets voorbij de knoppen heen en weer in het formulier gaan.
 
 ## Voorkeuren beheren {#managing-preferences}
 
@@ -76,7 +76,7 @@ Stel de voorkeuren voor de gebruikersinterface in op het tabblad Voorkeuren > UI
 * **Startlocatie:** Hiermee geeft u de pagina op die wordt weergegeven wanneer u zich aanmeldt bij de AEM Forms-werkruimte. De vier beschikbare opties zijn Start Process, To Do, Tracking en Favorites.
 * **Afmeldingsvraag:** Hiermee geeft u aan of u wordt gevraagd te bevestigen dat u zich wilt afmelden nadat u op Afmelden hebt geklikt.
 * **Datumnotatie:** Hiermee geeft u de indeling op voor de datumweergave die wordt gebruikt in de AEM Forms-werkruimte.
-* **Tijdnotatie**: Hiermee geeft u de weergaveformaat voor de tijd op die in de AEM Forms-werkruimte wordt gebruikt.
-* **Taakgebeurtenissen via e-mail op de hoogte stellen:** Hiermee geeft u aan of u e-mailmeldingen voor taakgebeurtenissen ontvangt, inclusief taaktoewijzingen, herinneringen en deadlines voor taken in de lijst Aan-taak en in de lijst Van-taak waarvan u deel uitmaakt.
+* **Tijdnotatie**: Geeft de weergaveformaat voor de tijd op die in de AEM Forms-werkruimte wordt gebruikt.
+* **Taakgebeurtenissen via e-mail op de hoogte stellen:** Hiermee geeft u aan of u e-mailmeldingen voor taakgebeurtenissen ontvangt, inclusief taaktoewijzingen, herinneringen en deadlines voor taken in de lijst Aan-taak en in de lijst Aan-uit-groep waartoe u behoort.
 * **Forms bijvoegen in e-mail:** Hiermee geeft u aan of een kopie van het formulier bij e-mailmeldingsberichten moet worden gevoegd. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
 * **Concepten periodiek opslaan:** Hiermee geeft u aan of uw formulierconcepten regelmatig automatisch worden opgeslagen. Als u uw concepten periodiek wilt opslaan, schakelt u deze optie in en stelt u de duur voor automatisch opslaan in op 1 tot 30 minuten. Wanneer automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen na het opgegeven aantal minuten. Het concept wordt alleen automatisch opgeslagen wanneer het concept is gewijzigd sinds de laatste keer dat het is opgeslagen of automatisch is opgeslagen. Wanneer het concept wordt opgeslagen, verschijnt er een waarschuwingsbericht op het scherm.

@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: spa
 content-type: reference
 exl-id: 3d66e861-aaf4-4227-b31a-3545bb3561d0
-source-git-commit: 69346a710708ee659ee97e9fdc193c8ea2658fe6
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '144'
+source-wordcount: '112'
 ht-degree: 0%
 
 ---
@@ -21,10 +21,10 @@ Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules v
 
 >[!NOTE]
 >
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
 * [Componenttoewijzing](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
-* [Paginamodellenbeheer](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
+* [Paginamodel](https://www.npmjs.com/package/@adobe/aem-spa-model-manager)
 * [Bewerkbare componenten Reageren](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 * [Bewerkbare angulars](https://www.npmjs.com/package/@adobe/aem-angular-editable-components)
 
@@ -33,7 +33,7 @@ Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules v
 Het volgende is open-bron bewaarplaatsen op GitHub voor de SPA bibliotheken.
 
 * [Componenttoewijzing](https://github.com/adobe/aem-spa-component-mapping)
-* [Paginamodellenbeheer](https://github.com/adobe/aem-spa-page-model-manager)
+* [Paginamodel](https://github.com/adobe/aem-spa-page-model-manager)
 * [Bewerkbare componenten Reageren](https://github.com/adobe/aem-react-editable-components)
 * [Bewerkbare angulars](https://github.com/adobe/aem-angular-editable-components)
 * [SPA Project Core](https://github.com/adobe/aem-spa-project-core)

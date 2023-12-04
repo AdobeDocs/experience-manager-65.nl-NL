@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
 exl-id: e6887e45-a472-41d4-9620-c56fd5b72b4c
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4143'
+source-wordcount: '4102'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Op een formulier met meerdere pagina&#39;s blijven wijzigingen die door JavaScri
 
 U kunt aangepaste scripts aanroepen voordat u een formulier verzendt. Deze functie werkt op alle beschikbare browsers. Deze kan echter alleen worden gebruikt wanneer gebruikers het HTML-formulier met de bijbehorende `Output Type` eigenschap ingesteld op `Form Body`. Het werkt niet als de `Output Type` is `Full HTML`. Zie Formulieren configureren in de Help voor het beheer voor stappen om deze functie te configureren.
 
-U moet eerst een callback-functie definiëren die wordt aangeroepen voordat u het formulier verzendt, waarbij de naam van de functie `_user_onsubmit`. Er wordt aangenomen dat de functie geen uitzondering genereert of dat de uitzondering wordt genegeerd als dit het geval is. Het wordt aangeraden de JavaScript-functie in de kopsectie van de HTML te plaatsen, maar u kunt deze functie overal vóór het einde van de scripttags declareren die ook scripttags bevatten `xfasubset.js`.
+Definieer eerst een callback-functie die wordt aangeroepen voordat het formulier wordt verzonden, waarbij de naam van de functie `_user_onsubmit`. Er wordt aangenomen dat de functie geen uitzondering genereert of dat de uitzondering wordt genegeerd als dit het geval is. Het wordt aangeraden de JavaScript-functie in de kopsectie van de HTML te plaatsen, maar u kunt deze functie overal vóór het einde van de scripttags declareren die ook scripttags bevatten `xfasubset.js`.
 
 Wanneer de formserver een XDP teruggeeft die een drop-down lijst bevat, naast het creëren van de drop-down lijst, leidt het ook tot twee verborgen tekstgebieden. In deze tekstvelden worden de gegevens van de vervolgkeuzelijst opgeslagen (in de ene tekstveld wordt de weergavenaam van de opties opgeslagen en in de andere tekstveld wordt de waarde voor de opties opgeslagen). Elke keer dat een gebruiker het formulier verzendt, worden dus de volledige gegevens van de vervolgkeuzelijst verzonden. Ervan uitgaande dat u niet zoveel gegevens elke keer wilt verzenden, kunt u een aangepast script schrijven om dat uit te schakelen. De naam van de vervolgkeuzelijst is bijvoorbeeld `drpOrderedByStateProv` en de subformulierkoptekst wordt ingepakt. De naam van het HTML-invoerelement wordt `header[0].drpOrderedByStateProv[0]`. De naam van de verborgen velden waarin de gegevens van het vervolgkeuzemenu worden opgeslagen en verzonden, heeft de volgende namen: `header[0].drpOrderedByStateProv_DISPLAYITEMS_[0] header[0].drpOrderedByStateProv_VALUEITEMS_[0]`
 
@@ -127,7 +127,7 @@ Scripts die op de client worden uitgevoerd of op zowel de client als de server w
 
 Wanneer scripts op de client worden uitgevoerd, kan alleen het huidige deelvenster dat wordt weergegeven, een script gebruiken. U kunt bijvoorbeeld geen script uitvoeren op velden in deelvenster A wanneer deelvenster B wordt weergegeven. Wanneer scripts op de server worden uitgevoerd, zijn alle deelvensters toegankelijk.
 
-U moet ook voorzichtig zijn wanneer het gebruiken van de uitdrukkingen van het Model van Objecten Scripting (SOM) binnen manuscripten die op de cliënt lopen. Alleen een vereenvoudigde subset van SOM-expressies wordt ondersteund door scripts die op de client worden uitgevoerd.
+Wees voorzichtig bij het gebruik van SOM-expressies (Scripting Object Model) in scripts die op de client worden uitgevoerd. Alleen een vereenvoudigde subset van SOM-expressies wordt ondersteund door scripts die op de client worden uitgevoerd.
 
 ## Gebeurtenistiming {#event-timing}
 
@@ -236,7 +236,7 @@ Als u een AHTML-formulier genereert, wordt u aangeraden geen werkbalk aan het fo
 
 **Een HTML-formulier renderen**
 
-Als u een HTML-formulier wilt genereren, moet u een formulierontwerp opgeven dat in Designer is gemaakt en als XDP-bestand is opgeslagen. U moet ook een transformatietype HTML selecteren. U kunt bijvoorbeeld het transformatietype HTML opgeven waarmee een dynamische HTML wordt weergegeven voor Internet Explorer 5.0 of hoger.
+Als u een HTML-formulier wilt genereren, geeft u een formulierontwerp op dat in Designer is gemaakt en als XDP-bestand is opgeslagen. Selecteer een transformatietype HTML. U kunt bijvoorbeeld het transformatietype HTML opgeven waarmee een dynamische HTML wordt weergegeven voor Internet Explorer 5.0 of hoger.
 
 Voor het weergeven van een HTML-formulier zijn ook waarden vereist, zoals URI-waarden die vereist zijn om andere formuliertypen te genereren.
 

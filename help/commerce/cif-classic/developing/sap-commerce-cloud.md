@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: platform
 exl-id: b3de1a4a-f334-44bd-addc-463433204c99
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2288'
+source-wordcount: '2303'
 ht-degree: 0%
 
 ---
@@ -562,7 +562,7 @@ Er wordt gezorgd voor integratie tussen AEM en verschillende systemen voor e-han
 
 Een AEM front-end kan vóór een bestaande hybris-implementatie worden geplaatst. Ook kan een hybris-engine aan een bestaande AEM-installatie worden toegevoegd. Hiertoe moeten de systemen bestaande gebruikers in elk systeem netjes kunnen verwerken:
 
-* AEM -> hybris
+* AEM > hybriden
 
    * Wanneer u zich aanmeldt bij hybris, als de AEM gebruiker niet bestaat:
 
@@ -571,7 +571,7 @@ Een AEM front-end kan vóór een bestaande hybris-implementatie worden geplaatst
 
    * Zie: `com.adobe.cq.commerce.hybris.impl.HybrisSessionImpl#login()`
 
-* hybris -> AEM
+* hybris > AEM
 
    * Wanneer het programma openen aan AEM, als het systeem de gebruiker erkent:
 

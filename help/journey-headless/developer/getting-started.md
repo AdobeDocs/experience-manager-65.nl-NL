@@ -2,9 +2,9 @@
 title: Aan de slag met AEM Headless
 description: In dit deel van de AEM Headless Developer Journey, leer over AEM Headless eerste vereisten.
 exl-id: a94794a4-bf8b-4f3b-a761-3f02feedd5c0
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3032'
+source-wordcount: '2998'
 ht-degree: 0%
 
 ---
@@ -64,11 +64,11 @@ AEM Headless bouwt voort op deze technische basis door krachtige tools te bieden
 
 De headless mogelijkheden van AEM zijn gebaseerd op een paar zeer belangrijke eigenschappen. Deze worden in latere delen van de reis uitgebreid toegelicht. Het is nu belangrijk om alleen maar te weten wat ze doen en wat ze noemen.
 
-### Modellen van contentfragmenten {#content-fragment-models}
+### Modellen van inhoudsfragmenten {#content-fragment-models}
 
 Met Content Fragment Models wordt de structuur gedefinieerd van de gegevens en inhoud die u maakt en beheert in AEM. Ze dienen als een soort basisstructuur voor je inhoud. Wanneer u ervoor kiest inhoud te maken, selecteren de auteurs een van de door u gedefinieerde modellen van inhoudsfragmenten die u als hulplijnen bij het maken van inhoud gebruikt.
 
-### Contentfragmenten {#content-fragments}
+### Inhoudsfragmenten {#content-fragments}
 
 Met inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en publiceren. Hiermee kunt u inhoud voorbereiden en deze op meerdere locaties en via meerdere kanalen gebruiken.
 
@@ -240,7 +240,7 @@ Voor een [een typische implementatie zonder kop met AEM;](#level-1) de ontwikkel
 
 Om een project tot een succes te maken, moeten de prestaties worden overwogen alvorens om het even welke inhoud wordt gecreeerd.
 
-U moet uw gebruikers/bezoekers verwachtingen en ontwerp voor hen begrijpen. Plaats de doelstellingen van het de dienstniveau (SLOs) en meet hen om te begrijpen als u aan de verwachtingen van uw gebruiker voldoet.
+Zorg ervoor dat u de verwachtingen van uw gebruikers/bezoekers en uw ontwerp voor deze gebruikers/bezoekers begrijpt. Plaats de doelstellingen van het de dienstniveau (SLOs) en meet hen om te begrijpen als u aan de verwachtingen van uw gebruiker voldoet.
 
 #### Verkeerspatronen {#traffic-patterns}
 

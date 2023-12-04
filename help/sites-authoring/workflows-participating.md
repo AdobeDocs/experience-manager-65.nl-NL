@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e47270e8-bace-4d0f-a088-7269b6356315
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1519'
+source-wordcount: '1521'
 ht-degree: 1%
 
 ---
@@ -44,7 +44,7 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
    * Het aantal werkstromen dat op de pagina van toepassing is. U kunt:
 
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
-      * Klik/tik op het daadwerkelijke aantal om een drop-down lijst van alle toepasselijke werkschema&#39;s te openen, dan selecteer het werkschema u in de statusbar wilt tonen.
+      * Klik op het daadwerkelijke aantal om een drop-down lijst van alle toepasselijke werkschema&#39;s te openen, dan selecteer het werkschema u in de statusbar wilt tonen.
 
   ![wf-59](assets/wf-59.png)
 
@@ -55,7 +55,7 @@ Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), wo
   >
   >Handelingen worden weergegeven wanneer de huidige gebruiker rechtstreeks betrokken is bij de huidige stap van de workflow.
 
-* Wanneer **Tijdlijn** is open voor het middel, wordt de werkschemastap getoond. Wanneer u op de waarschuwingsbanner klikt of tikt, worden ook de beschikbare acties weergegeven:
+* Wanneer **Tijdlijn** is open voor het middel, wordt de werkschemastap getoond. Wanneer u op de waakzame banner klikt, zullen de beschikbare acties ook worden getoond:
 
   ![screen-shot_2019-03-05at120453](assets/screen-shot_2019-03-05at120453.png)
 
@@ -80,7 +80,7 @@ U kunt een deelnemersstap uitvoeren vanuit:
 Voer de volgende procedure uit om het werkitem te voltooien:
 
 1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
+1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (klik op de miniatuur).
 1. Selecteren **Voltooid** op de werkbalk.
 1. De **Voltooid het werkitem** wordt geopend. Selecteer de **Volgende stap** van de drop-down selecteur en voeg toe **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
@@ -102,7 +102,7 @@ U kunt ook de tijdlijn gebruiken om een stap te voltooien en uit te voeren:
 
    ![screen-shot_2019-03-05at120744](assets/screen-shot_2019-03-05at120744.png)
 
-1. Klik of tik op de waarschuwingsbanner om beschikbare handelingen weer te geven. Selecteren **Vooruitgang**:
+1. Klik op de waarschuwingsbanner om beschikbare acties weer te geven. Selecteren **Vooruitgang**:
 
    ![screen-shot_2019-03-05at120453-1](assets/screen-shot_2019-03-05at120453-1.png)
 
@@ -139,7 +139,7 @@ U kunt een deelnemersstap delegeren vanuit:
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
 1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
+1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (klik op de miniatuur).
 1. Selecteren **Delegeren** op de werkbalk.
 1. Het dialoogvenster wordt geopend. Geef de **Gebruiker** in de keuzelijst (dit kan ook een groep zijn) en voeg een **Opmerking** indien nodig.
 1. Gebruiken **OK** om de stap te voltooien (of **Annuleren** om de handeling af te breken).
@@ -158,7 +158,7 @@ Gebruik de volgende procedure om een het werkpunt te delegeren:
 U kunt de tijdlijn ook gebruiken om een stap te delegeren en/of toe te wijzen:
 
 1. Selecteer de gewenste pagina en open **Tijdlijn** (of open **Tijdlijn** en selecteert u de pagina).
-1. Klik of tik op de waarschuwingsbanner om beschikbare handelingen weer te geven. Selecteren **Toewijzing wijzigen**:
+1. Klik op de waarschuwingsbanner om beschikbare acties weer te geven. Selecteren **Toewijzing wijzigen**:
 
    ![screen-shot_2019-03-05at120453-2](assets/screen-shot_2019-03-05at120453-2.png)
 
@@ -189,7 +189,7 @@ U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 Gebruik de volgende procedure om terug te gaan:
 
 1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
+1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (klik op de miniatuur).
 1. Selecteren **Stap terug** het dialoogvenster openen.
 
 1. Geef de **Vorige stap** en voeg een **Opmerking** indien nodig.
@@ -209,7 +209,7 @@ Gebruik de volgende procedure om terug te gaan:
 U kunt de tijdlijn ook gebruiken om terug te gaan (stap) naar een vorige stap:
 
 1. Selecteer de gewenste pagina en open **Tijdlijn** (of open **Tijdlijn** en selecteert u de pagina).
-1. Klik of tik op de waarschuwingsbanner om beschikbare handelingen weer te geven. Selecteren **Terugdraaien**:
+1. Klik op de waarschuwingsbanner om beschikbare acties weer te geven. Selecteren **Terugdraaien**:
 
    ![screen-shot_2019-03-05at121131](assets/screen-shot_2019-03-05at121131.png)
 
@@ -251,7 +251,7 @@ U kunt de details van het werkitem openen vanuit:
 U opent als volgt een workflowitem en bekijkt de details:
 
 1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
+1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (klik op de miniatuur).
 1. Selecteren **Openen** om de informatietabbladen te openen.
 
 1. Selecteer zo nodig de gewenste actie, geef details en bevestig deze met **OK** (of **Annuleren**).
@@ -274,7 +274,7 @@ U kunt details van de lading bekijken verbonden aan de werkschemainstantie. In e
 Om de lading, en middelen, van de werkschemainstantie te bekijken:
 
 1. Open de **[AEM Inbox](/help/sites-authoring/inbox.md)**.
-1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
+1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (klik op de miniatuur).
 1. Selecteren **Payload weergeven** op de werkbalk om het dialoogvenster te openen.
 
    Aangezien een workflowpakket slechts een verzameling aanwijzers naar paden in de repository is, kunt u de items hier toevoegen/verwijderen/wijzigen om aan te passen wat er in het workflowpakket naar wordt verwezen. Gebruik de **Brondefinitie** toe te voegen.

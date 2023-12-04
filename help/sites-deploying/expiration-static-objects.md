@@ -7,9 +7,9 @@ topic-tags: configuring
 content-type: reference
 feature: Configuring
 exl-id: bfd5441c-19cc-4fa8-b597-b1221465f75d
-source-git-commit: 3885cc51f7e821cdb352737336a29f9c4f0c2f41
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '419'
+source-wordcount: '416'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Dit heeft het volgende effect:
 * Offloadt aanvragen van de serverinfrastructuur.
 * Hiermee verbetert u de prestaties van het laden van pagina&#39;s, aangezien de browser objecten in het cachegeheugen van de browser opslaat.
 
-De vervaldatums worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldatum&quot;van dossiers (bijvoorbeeld, zie hoofdstuk 14.21 van [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd. dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole op de oorspronkelijke server wordt uitgevoerd.
+De vervaldatums worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldatum&quot;van dossiers (bijvoorbeeld, zie hoofdstuk 14.21 van [RFC 2616](https://www.ietf.org/rfc/rfc2616.txt) &quot; Hypertext Transfer Protocol — HTTP 1.1&quot;). Deze standaard gebruikt de header om clients toe te staan objecten in cache te plaatsen totdat ze als &#39;stale&#39; worden beschouwd; dergelijke objecten worden gedurende de opgegeven tijd in cache geplaatst zonder dat er een statuscontrole naar de oorspronkelijke server wordt uitgevoerd.
 
 >[!NOTE]
 >
@@ -35,7 +35,7 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
 
 >[!CAUTION]
 >
->U moet voorzichtig zijn wanneer u de tijdsperiode definieert waarin een object als up-to-date wordt beschouwd. Als er *geen controle tot de opgegeven periode is verstreken* kan de client de oude inhoud uit de cache presenteren.
+>Wees voorzichtig wanneer u de tijdsperiode definieert waarin een object als up-to-date wordt beschouwd. Als er *geen controle tot de opgegeven periode is verstreken* kan de client de oude inhoud uit de cache presenteren.
 
 1. **Voor een instantie Auteur:**
 

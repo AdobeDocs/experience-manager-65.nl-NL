@@ -8,9 +8,9 @@ content-type: reference
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/develop/mobile/mobile
 exl-id: 21b2037a-685a-441d-aecd-865884253e03
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3787'
+source-wordcount: '3720'
 ht-degree: 0%
 
 ---
@@ -576,7 +576,7 @@ De **Statistieken** is nu beschikbaar.
 
 ### Ondersteunende pagina-caching voor koppelingen naar vrienden verzenden {#supporting-page-caching-for-send-link-to-a-friend-links}
 
-Mobiele pagina&#39;s kunnen in cache worden geplaatst op Dispatcher, omdat pagina&#39;s die voor een apparaatgroep worden weergegeven in de pagina-URL bijvoorbeeld worden onderscheiden door de kiezer van de apparaatgroep. `/content/mobilepage.touch.html`. Een aanvraag naar een mobiele pagina zonder kiezer wordt nooit in de cache geplaatst, aangezien in dit geval de apparaatdetectie werkt en ten slotte wordt omgeleid naar de overeenkomende apparaatgroep (of &quot;nomatch&quot; voor dat geval). Een mobiele pagina die wordt weergegeven met een apparaatgroepkiezer, wordt verwerkt door de koppelingenrewriter, die alle koppelingen binnen de pagina herschrijft om ook de apparaatgroepkiezer te bevatten, zodat apparaatdetectie niet opnieuw kan worden uitgevoerd voor elke klik op een reeds gekwalificeerde pagina.
+Mobiele pagina&#39;s kunnen in cache worden geplaatst op Dispatcher, omdat pagina&#39;s die voor een apparaatgroep worden weergegeven in de pagina-URL bijvoorbeeld worden onderscheiden door de kiezer van de apparaatgroep. `/content/mobilepage.touch.html`. Een aanvraag naar een mobiele pagina zonder kiezer wordt nooit in de cache geplaatst, aangezien in dit geval de apparaatdetectie werkt en ten slotte wordt omgeleid naar de overeenkomende apparaatgroep (of &quot;nomatch&quot; voor dat geval). Een mobiele pagina die wordt weergegeven met een apparaatgroepkiezer, wordt verwerkt door de koppelingenrewriter, die alle koppelingen binnen de pagina herschrijft om ook de apparaatgroepkiezer te bevatten, zodat apparaatdetectie niet opnieuw kan worden uitgevoerd voor elke klik van een reeds gekwalificeerde pagina.
 
 Daarom zou u het volgende scenario kunnen ontmoeten:
 

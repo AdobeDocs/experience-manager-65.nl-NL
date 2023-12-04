@@ -8,9 +8,9 @@ topic-tags: site-features
 docset: aem65
 legacypath: /content/help/en/experience-manager/6-4/help/sites-authoring/pa-using.html
 exl-id: 2e406512-47fb-451d-b837-0a3898ae1f08
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '445'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -36,9 +36,9 @@ In elke kolom wordt een waarde voor de lopende rapportageperiode weergegeven en 
 >U wijzigt de updateperiode als volgt: [het importinterval configureren](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
 1. Open de **Sites** console; bijvoorbeeld [https://localhost:4502/sites.html/content](https://localhost:4502/sites.html/content)
-1. Rechtsboven op de werkbalk (in de rechterbovenhoek) klikt of tikt u op het pictogram om het te selecteren **Lijstweergave** (het weergegeven pictogram is afhankelijk van het [huidige weergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
+1. Rechtsboven op de werkbalk (in de rechterbovenhoek) klikt u op het pictogram om het te selecteren **Lijstweergave** (het weergegeven pictogram is afhankelijk van het [huidige weergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
-1. Klik of tik nogmaals in de rechterbovenhoek van de werkbalk op het pictogram en selecteer vervolgens **Instellingen weergeven**. De **Kolommen configureren** wordt geopend. Breng vereiste wijzigingen aan en bevestig deze met **Bijwerken**.
+1. Nogmaals, uiterst rechts op de werkbalk (rechterbovenhoek), klikt u op het pictogram en selecteert u **Instellingen weergeven**. De **Kolommen configureren** wordt geopend. Breng vereiste wijzigingen aan en bevestig deze met **Bijwerken**.
 
    ![spad-02](assets/spad-02.png)
 

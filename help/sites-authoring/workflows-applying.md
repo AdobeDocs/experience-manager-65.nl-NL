@@ -7,10 +7,10 @@ content-type: reference
 topic-tags: site-features
 docset: aem65
 exl-id: e00da2b3-046a-4d93-aed0-07dd8c66899f
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '645'
-ht-degree: 11%
+source-wordcount: '647'
+ht-degree: 5%
 
 ---
 
@@ -103,7 +103,7 @@ U kunt details specificeren:
 
    >[!NOTE]
    >
-   >De optie **Workflowpakket bijhouden** is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere resources en er meerdere resources zijn geselecteerd.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
+   >De **Workflowpakket behouden** Deze optie is beschikbaar wanneer de workflow is geconfigureerd voor [Ondersteuning voor meerdere bronnen](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) en er zijn meerdere bronnen geselecteerd.
 
    Na voltooiing gebruiken **Volgende** om verder te gaan.
 

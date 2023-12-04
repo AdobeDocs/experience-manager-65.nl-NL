@@ -8,10 +8,10 @@ content-type: reference
 feature: Content Fragments
 role: User, Admin
 exl-id: 19bb58da-8220-404e-bddb-34be94a3a7d7
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '917'
-ht-degree: 1%
+source-wordcount: '926'
+ht-degree: 0%
 
 ---
 
@@ -56,12 +56,12 @@ Als het inhoudsfragment een verzameling bevat, worden de elementen in de verzame
 
 Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst het standaardvertaalframework om de vertaling van inline-elementen en -verzamelingen met betrekking tot inhoudsfragmenten mogelijk te maken.
 
-1. Klik op het AEM of tik op het logo en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]**.
-1. Zoeken **[!UICONTROL Translation Integration]** krachtens **[!UICONTROL Adobe Marketing Cloud]** en klik/tik **[!UICONTROL Show Configurations]**.
+1. Klik op het AEM logo en navigeer naar **[!UICONTROL Tools > Deployment > Cloud Services]**.
+1. Zoeken **[!UICONTROL Translation Integration]** krachtens **[!UICONTROL Adobe Marketing Cloud]** en klik op **[!UICONTROL Show Configurations]**.
 
    ![chlimage_1-444](assets/chlimage_1-444.png)
 
-1. Klik/tik in de lijst met beschikbare configuraties **[!UICONTROL Default configuration (Translation Integration configuration)]** om de **[!UICONTROL Default configuration]** pagina.
+1. Klik in de lijst met beschikbare configuraties op **[!UICONTROL Default configuration (Translation Integration configuration)]** om de **[!UICONTROL Default configuration]** pagina.
 
    ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -69,7 +69,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-446](assets/chlimage_1-446.png)
 
-1. Ga naar de **[!UICONTROL Assets]** en kiest u **[!UICONTROL Inline Media Assets and Associated Collections]** van de **[!UICONTROL Translate Content Fragment Assets]** lijst. Klik of tik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. Ga naar de **[!UICONTROL Assets]** en kiest u **[!UICONTROL Inline Media Assets and Associated Collections]** van de **[!UICONTROL Translate Content Fragment Assets]** lijst. Klikken **[!UICONTROL OK]** om de wijzigingen op te slaan
 
    ![chlimage_1-447](assets/chlimage_1-447.png)
 
@@ -89,24 +89,24 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-451](assets/chlimage_1-451.png)
 
-1. Klik of tik op **[!UICONTROL Associate Content]**.
+1. Klik op **[!UICONTROL Associate Content]**.
 
    ![chlimage_1-452](assets/chlimage_1-452.png)
 
-1. Selecteer een verzameling en neem deze op in het inhoudsfragment. Klik of tik op **[!UICONTROL Save]**.
+1. Selecteer een verzameling en neem deze op in het inhoudsfragment. Klik op **[!UICONTROL Save]**.
 
    ![chlimage_1-453](assets/chlimage_1-453.png)
 
-1. Selecteer het inhoudsfragment en klik/tik op het **[!UICONTROL GlobalNav]** pictogram.
+1. Selecteer het inhoudsfragment en klik op de knop **[!UICONTROL GlobalNav]** pictogram.
 1. Selecteren **[!UICONTROL References]** in het menu om de **[!UICONTROL References]** venster.
 
    ![chlimage_1-454](assets/chlimage_1-454.png)
 
-1. Klikken/tikken **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]** om de taalkopieën weer te geven.
+1. Klikken **[!UICONTROL Language Copies]** krachtens **[!UICONTROL Copies]** om de taalkopieën weer te geven.
 
    ![chlimage_1-455](assets/chlimage_1-455.png)
 
-1. Klikken/tikken **[!UICONTROL Create & Translate]** van onderaan in het deelvenster om de **[!UICONTROL Create & Translate]** in.
+1. Klikken **[!UICONTROL Create & Translate]** van onderaan in het deelvenster om de **[!UICONTROL Create & Translate]** in.
 
    ![chlimage_1-456](assets/chlimage_1-456.png)
 
@@ -126,7 +126,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-460](assets/chlimage_1-460.png)
 
-1. Klik of tik op de projecttegel om de pagina met projectdetails te openen.
+1. Klik de projectegel om de pagina van projectdetails te openen.
 
    ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -139,7 +139,7 @@ Als u inhoudsfragmenten met gemengde media wilt kunnen vertalen, bewerkt u eerst
 
    ![chlimage_1-463](assets/chlimage_1-463.png)
 
-1. Klik of tik op het inhoudsfragment om het pad van de vertaalde gekoppelde elementen te controleren.
+1. Klik op het inhoudsfragment om het pad van de vertaalde gekoppelde elementen te controleren.
 
    ![chlimage_1-464](assets/chlimage_1-464.png)
 

@@ -4,9 +4,9 @@ description: Leer hoe u het Translation Integration Framework in Adobe Experienc
 contentOwner: Guillaume Carlino
 feature: Language Copy
 exl-id: 7562754b-d9fd-441b-8ae5-c7eebe458cef
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -180,14 +180,14 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie voor meer in
  </tbody>
 </table>
 
-1. Klik of tik in de zijbalk op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
+1. Klik in de zijbalk op Opties > Bewerkingen > Wolk > Cloud Servicen.
 1. In het gebied van de Integratie van de Vertaling, bepaalt de vraag of om het even welke configuraties zijn gecreeerd welke verbinding verschijnt:
 
-   * Als er geen configuraties zijn gemaakt, klikt u of tikt u op Nu configureren.
-   * Als er al configuraties zijn, klikt of tikt u op Configuraties tonen en klikt of tikt u op de +-koppeling naast Beschikbare configuraties.
+   * Als er geen configuraties zijn gemaakt, klikt u op Nu configureren.
+   * Als er al configuraties zijn, klikt u op Configuraties tonen en vervolgens op de koppeling + naast Beschikbare configuraties.
 
-1. Typ een naam voor de configuratie en klik of tik op Maken.
-1. Configureer de eigenschappen op het tabblad Sites, Communities en Assets en klik of tik op OK.
+1. Typ een naam voor de configuratie en klik vervolgens op Maken.
+1. Configureer de eigenschappen op het tabblad Sites, Communities en Assets en klik op OK.
 
 ## Pagina&#39;s voor omzetting configureren {#configuring-pages-for-translation}
 
@@ -208,16 +208,16 @@ Voor alle gemeenschappen [SCF-componenten](/help/communities/scf.md) op de pagin
 
 Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstammende pagina&#39;s te vertalen.
 
-1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik of tik op Bewerken en klik of tik op het tabblad Cloud Servicen.
-1. Klik of tik Add Configuratie > Vertaalintegratie.
-1. Selecteer de te gebruiken vertaalprovider en klik op Gereed of tik op Gereed.
+1. Selecteer in de Sites-console de pagina die u wilt configureren en klik op Eigenschappen weergeven.
+1. Klik op Bewerken en klik vervolgens op het tabblad Cloud Servicen.
+1. Klik op Configuratie toevoegen > Translation Integration.
+1. Selecteer de te gebruiken vertaalprovider en klik op Gereed.
 
 ### Pagina&#39;s koppelen aan een vertaalintegratieframework {#associating-pages-with-a-translation-integration-framework}
 
 Koppel een pagina aan het vertaalintegratieframework dat definieert hoe u de vertaling van de pagina en afstammende pagina&#39;s wilt uitvoeren.
 
-1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik of tik op Bewerken en klik of tik op het tabblad Cloud Servicen.
-1. Klik of tik Add Configuratie > Vertaalintegratie.
-1. Selecteer het vertaalintegratieframework dat u wilt gebruiken en klik of tik op Gereed.
+1. Selecteer in de Sites-console de pagina die u wilt configureren en klik op Eigenschappen weergeven.
+1. Klik op Bewerken en klik vervolgens op het tabblad Cloud Servicen.
+1. Klik op Configuratie toevoegen > Translation Integration.
+1. Selecteer het te gebruiken kader van de vertaalintegratie, en klik dan Gedaan.

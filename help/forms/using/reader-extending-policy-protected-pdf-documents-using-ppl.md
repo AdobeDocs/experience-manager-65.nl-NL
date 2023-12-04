@@ -11,16 +11,16 @@ topic-tags: document_services
 discoiquuid: 83ca522e-d16e-4196-9aa7-84f85de8dee2
 feature: Document Security
 exl-id: fe5d83e8-5e36-4146-a20a-dab2213055e2
-source-git-commit: 9d142ce9e25e048512440310beb05d762468f6a2
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '796'
+source-wordcount: '783'
 ht-degree: 0%
 
 ---
 
 # Reader voor het uitbreiden van met beleid beveiligde PDF-documenten met behulp van Portable Protection Library {#reader-extending-policy-protected-pdf-documents-using-portable-protection-library}
 
-U moet vertrouwd zijn met concepten documentveiligheid, reader uitbreiding, en de programmeertaal van Java om reader-uit te breiden de documenten van de document veiligheidsbeleid-beschermde PDF documenten.
+Houd u vertrouwd met concepten als documentbeveiliging, Reader-extensie en de programmeertaal Java om de documenten die met beveiligingsbeleid zijn beveiligd, door het document uit te breiden met PDF.
 
 Met documentbeveiliging kunt u de toegang van specifieke PDF-documenten beperken tot alleen geautoriseerde gebruikers. U kunt ook bepalen hoe een ontvanger een beveiligd document kan gebruiken. U kunt bijvoorbeeld opgeven of ontvangers tekst van een document dat met een beveiligingsbeleid is beveiligd, kunnen afdrukken, kopiëren of bewerken. Ga voor meer informatie over documentbeveiliging naar [over documentbeveiliging](/help/forms/using/admin-help/document-security.md).
 
@@ -58,7 +58,7 @@ U kunt de `applyUsageRights`Java API om gebruiksrechten toe te passen op met bel
   </tr>
   <tr>
    <td><p>inputFile</p> </td>
-   <td><p>Geef InputStream op die het PDF-document vertegenwoordigt waarop gebruiksrechten moeten worden toegepast. U kunt documenten met een beveiliging tegen LiveCycle Rights Management of AEM Forms-documenten gebruiken.</p> </td>
+   <td><p>Geef InputStream op die het PDF-document vertegenwoordigt waarop gebruiksrechten moeten worden toegepast. U kunt documenten die met LiveCycle Rights Management of AEM Forms-documentbeveiliging zijn beveiligd, gebruiken.</p> </td>
   </tr>
   <tr>
    <td><p>certFile</p> </td>
@@ -89,7 +89,7 @@ U kunt de `getDocumentUsageRights`Java API om de gebruiksrechten voor de reader-
   </tr>
   <tr>
    <td><p>inDoc</p> </td>
-   <td><p>Geef InputStream op die het PDF-document vertegenwoordigt waaruit gebruiksrechten moeten worden opgehaald. U kunt documenten met een beveiliging tegen LiveCycle Rights Management of AEM Forms-documenten gebruiken.</p> </td>
+   <td><p>Geef InputStream op die het PDF-document vertegenwoordigt waaruit gebruiksrechten moeten worden opgehaald. U kunt documenten die met LiveCycle Rights Management of AEM Forms-documentbeveiliging zijn beveiligd, gebruiken.</p> </td>
   </tr>
  </tbody>
 </table>
@@ -154,7 +154,7 @@ U kunt de `removeUsageRights`Java API om gebruiksrechten te verwijderen uit een 
   </tr>
   <tr>
    <td><p> </p> <p>inputFile</p> </td>
-   <td>InputStream opgeven die het PDF-document vertegenwoordigt waarvan het gebruik<br /> de rechten moeten worden geschrapt . U kunt documenten met een beveiliging tegen LiveCycle Rights Management of AEM Forms-documenten gebruiken.</td>
+   <td>InputStream opgeven die het PDF-document vertegenwoordigt waarvan het gebruik<br /> de rechten moeten worden geschrapt . U kunt documenten die met LiveCycle Rights Management of AEM Forms-documentbeveiliging zijn beveiligd, gebruiken.</td>
   </tr>
  </tbody>
 </table>

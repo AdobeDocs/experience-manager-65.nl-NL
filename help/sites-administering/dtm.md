@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
 exl-id: 1e0821f5-627f-4262-ba76-62303890e112
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2148'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Indien gewenst, kan uw auteurinstantie de productiebibliotheken gebruiken. De br
 
 Wanneer AEM gastheren de Dynamische bibliotheken van Tag Management, kunt u de Dynamic Tag Management plaatsingshakendienst gebruiken om bibliotheekupdates aan AEM automatisch te duwen. De bibliotheekupdates worden geduwd wanneer de veranderingen in de bibliotheken zoals worden aangebracht wanneer de Dynamische eigenschappen van het Web van Tag Management worden uitgegeven.
 
-Om de plaatsingshaak te gebruiken, moet Dynamische Tag Management met de AEM instantie kunnen verbinden die gastheren de bibliotheken. U moet [toegang tot AEM](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) voor de Dynamic Tag Management-servers.
+Om de plaatsingshaak te gebruiken, moet Dynamische Tag Management met de AEM instantie kunnen verbinden die gastheren de bibliotheken. [Toegang tot AEM inschakelen](/help/sites-administering/dtm.md#enabling-access-for-the-deployment-hook-service) voor de Dynamic Tag Management-servers.
 
 In sommige omstandigheden AEM onbereikbaar, zoals wanneer AEM achter een firewall ligt. In deze gevallen kunt u de optie voor het importeren van opiniepeilingen AEM gebruiken om de bibliotheken regelmatig op te halen. Een uitsnijdtaakexpressie schrijft het programma voor het downloaden van bibliotheken voor.
 

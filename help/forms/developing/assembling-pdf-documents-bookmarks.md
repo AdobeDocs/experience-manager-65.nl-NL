@@ -12,9 +12,9 @@ topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 role: Developer
 exl-id: 2b938410-f51b-420b-b5d4-2ed13ec29c5a
-source-git-commit: 10227bcfcfd5a9b0f126fee74dce6ec7842f5e95
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2558'
+source-wordcount: '2519'
 ht-degree: 0%
 
 ---
@@ -152,7 +152,7 @@ Als u een PDF wilt samenstellen die nieuwe bladwijzers bevat, moet u naar een XM
 
 **Het PDF-document en het XML-bladwijzerdocument toevoegen aan een Map-verzameling**
 
-U moet zowel het PDF-document toevoegen waaraan bladwijzers worden toegevoegd als het XML-bladwijzerdocument aan de Kaartenverzameling. Het verzamelingsobject Map bevat daarom twee elementen: een PDF-document en het XML-bladwijzerdocument.
+Voeg zowel het PDF-document toe waaraan bladwijzers worden toegevoegd als het XML-bladwijzerdocument aan de Map-verzameling. Het verzamelingsobject Map bevat daarom twee elementen: een PDF-document en het XML-bladwijzerdocument.
 
 **Uitvoeringsopties instellen**
 
@@ -164,7 +164,7 @@ Als u een PDF-document wilt samenstellen dat nieuwe bladwijzers bevat, gebruikt 
 
 **PDF-document met bladwijzers opslaan**
 
-U moet de resultaten extraheren uit het geretourneerde kaartobject en het bijbehorende PDF-document opslaan. (Zie De resultaten extraheren in [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
+Extraheer de resultaten van het geretourneerde object Map en sla het bijbehorende PDF-document op. (Zie De resultaten extraheren in [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md).)
 
 **Zie ook**
 

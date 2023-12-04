@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: integration
 content-type: reference
 exl-id: a7281ca0-461f-4762-a631-6bb539596200
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1552'
 ht-degree: 0%
 
 ---
@@ -70,11 +70,11 @@ Het integratiepakket is nu geïnstalleerd.
 
 ## De operator voor AEM in campagne maken {#create-operator}
 
-Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt om verbinding te maken met Adobe Campaign. U moet een veiligheidsstreek voor deze exploitant bepalen en zijn wachtwoord plaatsen.
+Het integratiepakket maakt automatisch de `aemserver` operator die AEM gebruikt om verbinding te maken met Adobe Campaign. Definieer een beveiligingszone voor deze operator en stel het wachtwoord ervan in.
 
 1. Meld u met de clientconsole aan bij Adobe Campaign als beheerder.
 
-1. Selecteren **Gereedschappen** -> **Verkenner** in de menubalk.
+1. Selecteren **Gereedschappen** > **Verkenner** in de menubalk.
 
 1. Ga in de verkenner naar de **Administratie** > **Toegangsbeheer** > **Operatoren** knooppunt.
 
@@ -162,17 +162,17 @@ Om replicatie van uw AEM auteursinstantie aan te vormen publiceer instantie:
 
 1. Meld u als beheerder aan bij de AEM ontwerpinstantie.
 
-1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Implementatie** > **Replicatie** > **Medewerkers op auteur** tikken of klikken **Standaardagent (publiceren)**.
+1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Implementatie** > **Replicatie** > **Medewerkers op auteur** en klik vervolgens op **Standaardagent (publiceren)**.
 
    ![Replicatieagent configureren](assets/acc-replication-config.png)
 
-1. Tik of klik op **Bewerken** Selecteer vervolgens de **Vervoer** tab.
+1. Klikken **Bewerken** Selecteer vervolgens de **Vervoer** tab.
 
 1. Vorm **URI** veld door de standaardwaarde te vervangen `localhost` waarde met het IP adres van de AEM het publiceren instantie.
 
    ![Tabblad Vervoer](assets/acc-transport-tab.png)
 
-1. Tik of klik op **OK** om de veranderingen in de agentenmontages te bewaren.
+1. Klikken **OK** om de veranderingen in de agentenmontages te bewaren.
 
 U hebt replicatie aan de AEM gevormd publiceer instantie zodat kunnen uw campagneontvangers tot uw inhoud toegang hebben.
 
@@ -184,7 +184,7 @@ U hebt replicatie aan de AEM gevormd publiceer instantie zodat kunnen uw campagn
 
 ## De AEM ExternalAlizer configureren {#externalizer}
 
-[De externalizer](/help/sites-developing/externalizer.md) is de dienst OSGi in AEM die een middelweg in externe en absolute URL omzet, die voor AEM noodzakelijk is om inhoud te dienen die de Campagne kan gebruiken. U moet het vormen opdat de integratie van de Campagne werkt.
+[De externalizer](/help/sites-developing/externalizer.md) is de dienst OSGi in AEM die een middelweg in externe en absolute URL omzet, die voor AEM noodzakelijk is om inhoud te dienen die de Campagne kan gebruiken. Vorm het zodat de integratie van de Campagne werkt.
 
 1. Meld u als beheerder aan bij de AEM-ontwerpinstantie.
 1. Selecteer vanuit de globale spoorstaaf voor de navigatie **Gereedschappen** > **Bewerkingen** > **Webconsole** > **OSGi-configuratie** en zoek naar **Day CQ-koppeling ExternalAlizer**.
@@ -192,7 +192,7 @@ U hebt replicatie aan de AEM gevormd publiceer instantie zodat kunnen uw campagn
 
    ![Het vormen van Externalzer](assets/acc-externalizer-config.png)
 
-1. Tik of klik op **Opslaan**.
+1. Klikken **Opslaan**.
 
 U hebt de Externalzer geconfigureerd en Adobe Campaign heeft nu toegang tot uw inhoud.
 
@@ -205,8 +205,8 @@ De publicatie-instantie moet bereikbaar zijn vanaf de Adobe Campaign-server. Als
 Als campagne moet communiceren met AEM, moet u een wachtwoord instellen voor de `campaign-remote` gebruiker in AEM.
 
 1. Meld u aan bij AEM als beheerder.
-1. Klik op de hoofdnavigatieconsole op **Gereedschappen** in het linkerspoor.
-1. Klik vervolgens op **Beveiliging** -> **Gebruikers** om de gebruikersbeheerconsole te openen.
+1. Klik in de hoofdnavigatieconsole op **Gereedschappen** in het linkerspoor.
+1. Klik vervolgens op **Beveiliging** > **Gebruikers** om de gebruikersbeheerconsole te openen.
 1. Zoek de `campaign-remote` gebruiker.
 1. Selecteer de `campaign-remote` gebruiker en klik op **Eigenschappen** om de gebruiker te bewerken.
 1. In de **Gebruikersinstellingen bewerken** venster, klikt u op **Wachtwoord wijzigen**.
@@ -220,7 +220,7 @@ Wanneer [installeren **AEM integratie** pakket in campagne,](#install-package) e
 
 1. Meld u met de clientconsole aan bij Adobe Campaign als beheerder.
 
-1. Selecteren **Gereedschappen** -> **Verkenner** in de menubalk.
+1. Selecteren **Gereedschappen** > **Verkenner** in de menubalk.
 
 1. Ga in de verkenner naar de **Administratie** > **Platform** > **Externe rekeningen** knooppunt.
 

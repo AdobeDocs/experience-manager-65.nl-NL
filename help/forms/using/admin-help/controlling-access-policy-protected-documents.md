@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.5/FORMS
 discoiquuid: f34058c3-384a-4b73-a386-5bc9125acbf8
 feature: Document Security
 exl-id: 0eb6e769-97c1-41ee-8d12-91bece984947
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2168'
+source-wordcount: '2167'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ U kunt ook meer details, die hieronder worden beschreven, weergeven over een bep
 
 >[!NOTE]
 >
->U moet de verbinding van de Naam van het Beleid op de pagina van het Detail van het Document gebruiken om tot beleid toegang te hebben dat in Microsoft Outlook voor ontvangers van een document auto-geproduceerd is dat aan een e-mailbericht in bijlage is. Dit beleid wordt niet weergegeven op de pagina met beleidsregels.
+>Gebruik de koppeling Beleidsnaam op de pagina Documentdetails om toegang te krijgen tot beleid dat automatisch wordt gegenereerd in Microsoft Outlook voor ontvangers van een document dat aan een e-mailbericht is gekoppeld. Dit beleid wordt niet weergegeven op de pagina met beleidsregels.
 
 **Documentnaam:** De naam van het geselecteerde document.
 
@@ -52,7 +52,7 @@ U kunt ook meer details, die hieronder worden beschreven, weergeven over een bep
 
 **Uitgever:** Naam van de gebruiker die het beleid aan het document vastmaakte.
 
-**Beleidsnaam:** De naam van het beleid waarmee het document wordt beveiligd. U kunt op de naam klikken om het beleid te openen. U moet deze koppeling gebruiken om toegang te krijgen tot beleid dat Acrobat genereert voor ontvangers van een document dat in Outlook is gekoppeld aan een e-mailbericht. Dit beleid wordt niet weergegeven op de pagina Beleid.
+**Beleidsnaam:** De naam van het beleid waarmee het document wordt beveiligd. U kunt op de naam klikken om het beleid te openen. Met deze koppeling krijgt u toegang tot het beleid dat Acrobat genereert voor ontvangers van een document dat is gekoppeld aan een e-mailbericht in Outlook. Dit beleid wordt niet weergegeven op de pagina Beleid.
 
 **Beleidstype:** Het type beleid dat is toegepast op het document.
 

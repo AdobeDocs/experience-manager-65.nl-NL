@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 873ce073-0055-4e1b-b3c6-ae7967700894
 docset: aem65
 exl-id: eabd8335-6140-4c15-8cff-21608719aa5f
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4963'
+source-wordcount: '4830'
 ht-degree: 0%
 
 ---
@@ -602,7 +602,7 @@ Alleen-lezen.
 * Argumenten: geen
 * Geretourneerde waarde: geen
 
-**joinCluster** Voegt deze opslagplaats aan een cluster toe als een knoop die door de clustermeester wordt gecontroleerd. Voor verificatiedoeleinden moet u een gebruikersnaam en wachtwoord opgeven. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
+**joinCluster** Voegt deze opslagplaats aan een cluster toe als een knoop die door de clustermeester wordt gecontroleerd. Geef een gebruikersnaam en wachtwoord op voor verificatiedoeleinden. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
 
 * Argumenten:
 

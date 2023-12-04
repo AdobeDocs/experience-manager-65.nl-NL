@@ -6,10 +6,10 @@ feature: Search, Adobe Stock
 role: User, Admin
 exl-id: 8ec597df-bb64-4768-bf9c-e8cca4fea25b
 hide: true
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2328'
-ht-degree: 3%
+source-wordcount: '2291'
+ht-degree: 2%
 
 ---
 
@@ -166,7 +166,7 @@ Om de geloofsbrieven van de de dienstrekening en JWT lading te produceren:
 
 1. De standaardinstelling selecteren **[!UICONTROL Adobe Stock]** productprofiel en klik op **[!UICONTROL Save configured API]**.
 
-1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Vanaf de linkernavigatie onder **[!UICONTROL Credentials]**, klikt u op de knop **[!UICONTROL Service Account (JWT)]** -optie. Hier, kunt u de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, en terugwinnen cliëntgeheim.
+1. Nadat de API is geconfigureerd, wordt u omgeleid naar de API-overzichtspagina. Vanaf de linkernavigatie onder **[!UICONTROL Credentials]** klikt u op de knop **[!UICONTROL Service Account (JWT)]** -optie. Hier, kunt u de geloofsbrieven bekijken en acties uitvoeren zoals produceren JWT tokens, exemplaar credentiedetails, en terugwinnen cliëntgeheim.
 
 1. Van de **[!UICONTROL Client Credentials]** -tabblad, kopieert u de **[!UICONTROL client ID]**.
 
@@ -252,7 +252,7 @@ U kunt een gebruikersgroep maken of machtigingen toewijzen aan een bestaande geb
 
 1. In de [!DNL Experience Manager] gebruikersinterface, navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Groups]**. Een gebruikersgroep maken voor [!DNL Adobe Stock].
 
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Permissions]**.
+1. Navigeren naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Permissions]**.
 
 1. Zoeken naar de gebruikersgroep in het linkerdeelvenster en nieuwe gebruikersgroep toevoegen **[!UICONTROL Access Control Entry (ACE)]** voor Adobe Stock.
 
@@ -307,7 +307,7 @@ Als u het dialoogvenster [!DNL Adobe Stock] cloudconfiguratie:
 
    ![gebruikersvoorkeuren](assets/aem-stock-preferences.png)
 
-1. Ga naar **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock]**. U kunt nu een licentie bekijken, zoeken en licentiëren [!DNL Adobe Stock] activa.
+1. Navigeren naar **[!UICONTROL Assets]** > **[!UICONTROL Adobe Stock]**. U kunt nu een licentie bekijken, zoeken en licentiëren [!DNL Adobe Stock] activa.
 
 In de volgende tabel wordt uitgelegd hoe de gebruikersmachtigingen werken bij het openen van de [!DNL Adobe Stock] activa:
 
@@ -377,7 +377,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 * **Functies om gebruikers te beperken tot het verlenen van licenties werken niet correct**: Alle gebruikers die `read` machtigingen voor de voorraadconfiguratie mogen de [!DNL Adobe Stock] activa.
 
-* **Gebruikers die geen beheerder zijn, moeten het [!DNL Adobe Stock] cloudconfiguratie**: In de **[!UICONTROL User Preferences]** venster, het **[!UICONTROL Stock Configuration]** toont de [!DNL Adobe Stock] cloudconfiguratie is ingeschakeld, maar werkt niet voor gebruikers die geen beheerder zijn. De gebruiker moet op **[!UICONTROL Accept]** om de voorraadconfiguratie te activeren. Als deze stap ontbreekt, geeft het systeem een foutbericht weer over de toegang tot **[!UICONTROL Assets]**.
+* **Gebruikers die geen beheerder zijn, moeten het [!DNL Adobe Stock] cloudconfiguratie**: In de **[!UICONTROL User Preferences]** venster, het **[!UICONTROL Stock Configuration]** toont de [!DNL Adobe Stock] cloudconfiguratie is ingeschakeld, maar werkt niet voor gebruikers die geen beheerder zijn. De gebruiker moet op de knop **[!UICONTROL Accept]** om de voorraadconfiguratie te activeren. Als deze stap ontbreekt, geeft het systeem een foutbericht weer over de toegang tot **[!UICONTROL Assets]**.
 
 * **Waarschuwing voor redactionele afbeelding wordt niet weergegeven**: Wanneer gebruikers een licentie voor een afbeelding verlenen, kunnen ze niet controleren of een afbeelding alleen voor gebruik als redactie is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele activa van de Admin Console uitzetten.
 

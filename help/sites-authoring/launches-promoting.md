@@ -1,23 +1,21 @@
 ---
 title: Starten promoten
 description: U promoot opstartiepagina's om de inhoud vóór publicatie terug te plaatsen naar de bron (productie).
-uuid: 2dc41817-fcfb-4485-a085-7b57b9fe89ec
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.5/SITES
 content-type: reference
 topic-tags: site-features
-discoiquuid: 3d4737ef-f758-4540-bc8f-ecd9f05f6bb0
 docset: aem65
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 exl-id: f59f12a2-ecd6-49cf-90ad-621719fe51bf
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '772'
-ht-degree: 1%
+ht-degree: 0%
 
 ---
 
-# Lanceringen promoten{#promoting-launches}
+# Starten promoten{#promoting-launches}
 
 U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar de bron (productie) te verplaatsen. Wanneer een startpagina wordt bevorderd, wordt de bijbehorende pagina van de bronpagina&#39;s vervangen door de inhoud van de gepromoveerde pagina. De volgende opties zijn beschikbaar bij het promoten van een startpagina:
 
@@ -50,7 +48,7 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 
 U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** console:
 
-1. Open:
+1. Openen:
 
    * de **Sites** console:
 
@@ -62,7 +60,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
 
    * de **Starten** console:
 
-      1. Selecteer de start (tik op de miniatuur of klik erop).
+      1. Selecteer de start (klik op de miniatuur).
       1. Selecteren **Bevorderen**.
 
 1. In de eerste stap kunt u het volgende opgeven:
@@ -71,7 +69,7 @@ U kunt lanceringen van één van beide bevorderen **Sites** of de **Starten** co
 
       * **Starten na promotie verwijderen**
 
-   * **Scope**
+   * **Toepassingsgebied**
 
       * **Volledige introductie bevorderen**
       * **Gewijzigde pagina&#39;s promoten**
@@ -145,7 +143,7 @@ Hier kunt u kiezen of u de volledige opstart wilt bevorderen of alleen pagina&#3
 
    ![Startconsole](assets/chlimage_1-107.png)
 
-## Promotiepagina&#39;s verwerken met AEM-workflow {#processing-promoted-pages-using-aem-workflow}
+## Promotiepagina&#39;s verwerken met AEM workflow {#processing-promoted-pages-using-aem-workflow}
 
 Gebruik workflowmodellen voor bulkverwerking van geconverteerde startpagina&#39;s:
 

@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: 1099cc44-de6d-499e-8b52-f2f5811ae086
 docset: aem65
 exl-id: dcb66b6d-d731-493e-8936-12d529f6cbde
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3219'
+source-wordcount: '3186'
 ht-degree: 0%
 
 ---
@@ -216,7 +216,7 @@ Ga als volgt te werk om een map te maken:
 
 ### De configuratiebrowser gebruiken {#using-the-configuration-browser}
 
-1. Ga naar **Algemene navigatie** -> **Gereedschappen** > **Configuratiebrowser**.
+1. Ga naar **Algemene navigatie** > **Gereedschappen** > **Configuratiebrowser**.
 
    De bestaande mappen worden links weergegeven, inclusief **globaal** map.
 
@@ -633,7 +633,7 @@ Bij het weergeven van een pagina:
 
    * De `cq:template` eigendom van zijn `jcr:content` node wordt referenced to access the template that corresponding to that page.
 
-* **Onderdelen**:
+* **Componenten**:
 
    * De component Pagina voegt de `structure/jcr:content` structuur van de sjabloon met de `jcr:content` boomstructuur van de pagina.
 

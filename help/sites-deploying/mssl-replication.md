@@ -11,9 +11,9 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configuring
 exl-id: 0a8d7831-d076-45cf-835c-8063ee13d6ba
-source-git-commit: b8027a8564f2dce408e7cd5b01f3b86c703c9e3a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1392'
+source-wordcount: '1319'
 ht-degree: 1%
 
 ---
@@ -27,15 +27,15 @@ Wanneer u MSSL configureert voor replicatie, moet u de volgende stappen uitvoere
 1. Maak of verkrijg persoonlijke sleutels en certificaten voor de auteur en publiceer instanties.
 1. Installeer de sleutels en de certificaten op de auteur en publiceer instanties:
 
-   * Auteur: Persoonlijke sleutel van auteur en certificaat publiceren.
-   * Publiceren: Persoonlijke sleutel en certificaat van auteur publiceren. Het certificaat is gekoppeld aan de gebruikersaccount die is geverifieerd met de replicatieagent.
+   * Auteur: persoonlijke sleutel van auteur en certificaat publiceren.
+   * Publiceren: persoonlijke sleutel en certificaat van auteur publiceren. Het certificaat is gekoppeld aan de gebruikersaccount die is geverifieerd met de replicatieagent.
 
 1. Configureer de op Jetty gebaseerde HTTP-service op de instantie Publish.
 1. Vorm het vervoer en SSL eigenschappen van de replicatieagent.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-U moet bepalen welke gebruikersaccount de replicatie uitvoert. Wanneer u het certificaat van de vertrouwde auteur op de publicatie-instantie installeert, is het certificaat gekoppeld aan dit gebruikersaccount.
+Bepaal welke gebruikersaccount de replicatie uitvoert. Wanneer u het certificaat van de vertrouwde auteur op de publicatie-instantie installeert, is het certificaat gekoppeld aan dit gebruikersaccount.
 
 ## Credentials verkrijgen of maken voor MSSL {#obtaining-or-creating-credentials-for-mssl}
 
@@ -54,8 +54,8 @@ Voer de volgende stappen uit met Java `keytool` om de persoonlijke sleutel en de
 1. Genereer een sleutelpaar private-public in een KeyStore.
 1. Het certificaat maken of verkrijgen:
 
-   * Zelfondertekende: Exporteer het certificaat uit de KeyStore.
-   * Door CA ondertekend: Genereer een certificaatverzoek en verzend het naar CA.
+   * Zelfondertekend: het certificaat exporteren vanuit de KeyStore.
+   * Met CA-handtekening: Genereer een certificaatverzoek en verzend het naar CA.
 
 1. Importeer het certificaat in een TrustStore.
 
@@ -67,7 +67,7 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Optie | Auteur | Publicatie |
+   | Optie | Auteur | Publiceren |
    |---|---|---|
    | -alias | auteur | publish |
    | -keystore | author.keystore | publish.keystore |
@@ -78,7 +78,7 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Optie | Auteur | Publicatie |
+   | Optie | Auteur | Publiceren |
    |---|---|---|
    | -alias | auteur | publish |
    | -file | author.cer | publish.cer |
@@ -94,7 +94,7 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Optie | Auteur | Publicatie |
+   | Optie | Auteur | Publiceren |
    |---|---|---|
    | -out | author.key | publish.key |
 
@@ -104,9 +104,9 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Optie | Auteur | Publicatie |
+   | Optie | Auteur | Publiceren |
    |---|---|---|
-   | -key | author.key | publish.key |
+   | -toets | author.key | publish.key |
    | -out | auteur_request.csr | publish_request.csr |
 
    Onderteken het certificaatverzoek of verzend het verzoek naar CA.
@@ -117,7 +117,7 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Optie | Auteur | Publicatie |
+   | Optie | Auteur | Publiceren |
    |---|---|---|
    | -signkey | author.key | publish.key |
    | -in | auteur_request.csr | publish_request.csr |
@@ -129,7 +129,7 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Optie | Auteur | Publicatie |
+   | Optie | Auteur | Publiceren |
    |---|---|---|
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
@@ -138,7 +138,7 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
 
 ## Privésleutel en TrustStore installeren op auteur {#install-the-private-key-and-truststore-on-author}
 
-Installeer de volgende items op de auteurinstantie:
+Installeer de volgende items op de instantie van de auteur:
 
 * De persoonlijke sleutel van de auteurinstantie.
 * Het certificaat van het publicatieexemplaar.
@@ -148,7 +148,7 @@ Om de volgende procedure uit te voeren, moet u als beheerder van de auteursinsta
 ### De persoonlijke sleutel van de auteur installeren {#install-the-author-private-key}
 
 1. Open de pagina Gebruikersbeheer voor de auteurinstantie. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Als u de eigenschappen van uw gebruikersaccount wilt openen, klikt of tikt u op uw gebruikersnaam.
+1. Klik op uw gebruikersnaam om de eigenschappen van uw gebruikersaccount te openen.
 1. Als de koppeling Create KeyStore wordt weergegeven in het gedeelte Account Settings, klikt u op de koppeling. Configureer een wachtwoord en klik op OK.
 1. Klik in het gedeelte Account Settings op Manage Keystore.
 
@@ -167,7 +167,7 @@ Om de volgende procedure uit te voeren, moet u als beheerder van de auteursinsta
 ### Het publicatiecertificaat installeren {#install-the-publish-certificate}
 
 1. Open de pagina Gebruikersbeheer voor de auteurinstantie. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
-1. Als u de eigenschappen van uw gebruikersaccount wilt openen, klikt of tikt u op uw gebruikersnaam.
+1. Klik op uw gebruikersnaam om de eigenschappen van uw gebruikersaccount te openen.
 1. Als de koppeling TrustStore maken wordt weergegeven in het gedeelte Accountinstellingen, klikt u op de koppeling, maakt u een wachtwoord voor de TrustStore en klikt u op OK.
 1. Klik in het gedeelte Accountinstellingen op Betrouwbaarheidsopslag beheren.
 1. Klik op Certificaat toevoegen uit CER-bestand.
@@ -184,14 +184,14 @@ Om de volgende procedure uit te voeren, moet u als beheerder van de auteursinsta
 Installeer de volgende items op de publicatie-instantie:
 
 * De persoonlijke sleutel van de publicatie-instantie.
-* Het certificaat van de instantie van de auteur. Koppel het certificaat aan de gebruiker die wordt gebruikt om replicatieverzoeken uit te voeren.
+* Het certificaat van de auteurinstantie. Koppel het certificaat aan de gebruiker die wordt gebruikt om replicatieverzoeken uit te voeren.
 
 Als u de volgende procedure wilt uitvoeren, moet u zijn aangemeld als beheerder van de publicatieinstantie.
 
 ### De persoonlijke sleutel voor publiceren installeren {#install-the-publish-private-key}
 
 1. Open de pagina Gebruikersbeheer voor de publicatie-instantie. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
-1. Als u de eigenschappen van uw gebruikersaccount wilt openen, klikt of tikt u op uw gebruikersnaam.
+1. Klik op uw gebruikersnaam om de eigenschappen van uw gebruikersaccount te openen.
 1. Als de koppeling Create KeyStore wordt weergegeven in het gedeelte Account Settings, klikt u op de koppeling. Configureer een wachtwoord en klik op OK.
 1. Klik in het gedeelte Account Settings op Manage Keystore.
 1. Klik op Persoonlijke sleutel toevoegen uit sleutelarchiefbestand.

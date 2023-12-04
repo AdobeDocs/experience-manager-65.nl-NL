@@ -2,9 +2,9 @@
 title: Configuraties en de Configuratiebrowser
 description: Begrijp AEM configuraties en hoe zij werkruimtemontages in AEM beheren.
 exl-id: 1be5849b-748c-48e8-afa8-35a9026c27b3
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1483'
+source-wordcount: '1472'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Configuraties kunnen worden gemaakt voor vele verschillende functies in AEM.
 
 * [Cloudconfiguraties](/help/sites-administering/configurations.md)
 * [Context Hub Segments](/help/sites-administering/segmentation.md)
-* [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+* [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
 * [Bewerkbare sjablonen](/help/sites-authoring/templates.md)
 
 ### Voorbeeld {#administrator-example}
@@ -68,8 +68,8 @@ Browser van de Configuratie staat een beheerder toe om, toegangsrechten aan conf
 
 Het is eenvoudig om een configuratie in AEM tot stand te brengen door Browser van de Configuratie te gebruiken.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
-1. Tik of klik op **Maken**.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
+1. Klikken **Maken**.
 1. Geef een **Titel** en **Naam** voor uw configuratie.
 
    ![Configuratie maken](assets/configuration-create.png)
@@ -81,9 +81,9 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen door Browser va
 1. Controleer het type configuraties dat u wilt toestaan.
    * [Cloudconfiguraties](/help/sites-administering/configurations.md)
    * [Context Hub Segments](/help/sites-administering/segmentation.md)
-   * [Modellen van contentfragmenten](/help/assets/content-fragments/content-fragments-models.md)
+   * [Modellen van inhoudsfragmenten](/help/assets/content-fragments/content-fragments-models.md)
    * [Bewerkbare sjablonen](/help/sites-authoring/templates.md)
-1. Tik of klik op **Maken**.
+1. Klikken **Maken**.
 
 >[!TIP]
 >
@@ -93,8 +93,8 @@ Het is eenvoudig om een configuratie in AEM tot stand te brengen door Browser va
 
 Als u configuraties als werkruimten beschouwt, kunnen de toegangsrechten op die configuraties worden geplaatst om af te dwingen wie tot die werkruimten kan en niet kan toegang hebben.
 
-1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** -> **Algemeen** -> **Configuratiebrowser**.
-1. Selecteer de configuratie die u wilt wijzigen en tik dan of klik **Eigenschappen** in de werkbalk.
+1. Log in AEM as a Cloud Service en selecteer in het hoofdmenu **Gereedschappen** > **Algemeen** > **Configuratiebrowser**.
+1. Selecteer de configuratie die u wilt wijzigen en klik dan **Eigenschappen** in de werkbalk.
 1. Selecteer om het even welke extra eigenschappen die u aan de configuratie wilt toevoegen.
 
    >[!NOTE]

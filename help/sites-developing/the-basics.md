@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: introduction
 content-type: reference
 exl-id: f6f32290-422e-4037-89d8-d9f414332e8e
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3251'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ De Server van de Ervaring verstrekt de Diensten van de Ervaring die AEM worden v
 
 ### Inleiding tot verkoop {#introduction-to-sling}
 
-AEM is gemaakt met [Sling](https://sling.apache.org/index.html), een toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Bij Sling wordt als gegevensopslagruimte een JCR-opslagplaats gebruikt, zoals Apache Jackrabbit of, indien AEM, de CRX Content Repository. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
+AEM is gemaakt met [Sling](https://sling.apache.org/index.html), een Web-toepassing kader-gebaseerd op de principes van REST die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Bij Sling wordt als gegevensopslagruimte een JCR-opslagplaats gebruikt, zoals Apache Jackrabbit of, indien AEM, de CRX Content Repository. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
 Met Verschuiving is het type inhoud dat moet worden gerenderd niet de eerste verwerkingsoverweging. De belangrijkste overweging is in plaats daarvan of de URL wordt omgezet in een inhoudsobject waarvoor vervolgens een script kan worden gevonden om de rendering uit te voeren. Dit biedt uitstekende ondersteuning voor auteurs van webinhoud om pagina&#39;s samen te stellen die eenvoudig aan hun vereisten kunnen worden aangepast.
 
@@ -181,7 +181,7 @@ Met het bovenstaande voorbeeld, als `sling:resourceType` is `hr/jobs` vervolgens
 
 * URL&#39;s in andere indelingen, niet eindigend met .html
 
-  Bijvoorbeeld, `../content/corporate/jobs/developer.pdf`
+  Bijvoorbeeld: `../content/corporate/jobs/developer.pdf`
 
   Het script is `/apps/hr/jobs/jobs.pdf.esp`; het achtervoegsel wordt toegevoegd aan de scriptnaam.
 

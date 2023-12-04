@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: spa
 docset: aem65
 exl-id: ca4c3161-90a8-4c02-8554-125eac62dff7
-source-git-commit: 2810e34f642f4643fa4dc24b31a57a68e9194e39
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Adobe Experience Platform Launch is de aanbevolen manier om Analytics, Target en
 
 >[!NOTE]
 >
->De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA op kader-gebaseerde cliënt-zijteruggeven (bijvoorbeeld, Reageren of Angular) vereisen.
 
 ## Zelfstudie {#tutorial}
 
-Ga voor meer informatie over hoe u uw SPA kunt integreren met Adobe Experience Platform Launch naar [dit kennisbasisartikel en deze zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html), die u door de opstelling begeleidt van de Lancering en de Experience Cloud die met Angular of Reageren wordt gebouwd uitvoert.
+Ga voor meer informatie over hoe u uw SPA kunt integreren met Adobe Experience Platform Launch naar [dit kennisbasisartikel en deze zelfstudie](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/spa-editor/spa-editor-framework-feature-video-use.html), die u door de opstelling van de Lancering begeleidt en het Experience Cloud uitvoeren dat met Angular of Reageren wordt gebouwd.
 
 >[!NOTE]
 >

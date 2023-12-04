@@ -8,9 +8,9 @@ content-type: reference
 pagetitle: Query Builder API
 tagskeywords: querybuilder
 exl-id: b2288442-d055-4966-8057-8b7b7b6bff28
-source-git-commit: 7f35fdee9dbca9dfd3992b56579d6d06633f8dec
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2285'
+source-wordcount: '2033'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,7 @@ De REST API biedt toegang tot dezelfde functies via HTTP, waarbij reacties worde
 
 Deze voorbeelden worden gegeven in de stijlnotatie van Java™-eigenschappen. Als u deze wilt gebruiken met de Java™ API, gebruikt u een Java™ `HashMap` zoals in het volgende API-voorbeeld.
 
-Voor de `QueryBuilder` JSON Servlet, elk voorbeeld bevat een koppeling naar uw lokale CQ-installatie (op de standaardlocatie), `http://localhost:4502`). U moet zich aanmelden bij uw CQ-exemplaar voordat u deze koppelingen kunt gebruiken.
+Voor de `QueryBuilder` JSON Servlet, elk voorbeeld bevat een koppeling naar uw lokale CQ-installatie (op de standaardlocatie), `http://localhost:4502`). Meld u aan bij uw CQ-exemplaar voordat u deze koppelingen gebruikt.
 
 >[!CAUTION]
 >
@@ -289,7 +289,7 @@ property.3_value=bar
 
 Door gebrek, keert QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (bijvoorbeeld, weg, naam, en titel) terug. Als u de controle wilt verkrijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
 
-Geef het volgende op
+Opgeven
 
 ```
 p.hits=full

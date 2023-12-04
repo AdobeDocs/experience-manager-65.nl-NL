@@ -3,9 +3,9 @@ title: Een Uitnodigingshandler voor externe gebruikers maken
 description: Leer hoe u een Invite External Users Handler maakt. Het laat de dienst van het Rights Management toe om externe gebruikers uit te nodigen om Rights Management gebruikers te worden.
 role: Developer
 exl-id: b0416716-dcc9-4f80-986a-b9660a7c8f6b
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1084'
 ht-degree: 0%
 
 ---
@@ -170,7 +170,7 @@ public class InviteExternalUsersSample implements InvitedUserProvider
 
 ## Het XML-bestand van de component definiëren voor de machtigingshandler {#define-component-xml-authorization-handler}
 
-U moet een dossier van componentXML bepalen om de uitnodigings externe gebruikersmanagercomponent op te stellen. Er bestaat een XML-componentbestand voor elke component en er worden metagegevens over de component weergegeven.
+Bepaal een dossier van componentXML om de uitnodigings externe gebruikersmanagercomponent op te stellen. Er bestaat een XML-componentbestand voor elke component en er worden metagegevens over de component weergegeven.
 
 Het volgende `component.xml` wordt gebruikt voor de uitnodigen externe gebruikers manager. Bericht dat de de dienstnaam is `InviteExternalUsersSample` en de bewerking die deze service beschikbaar stelt, krijgt een naam `invitedUser`. De invoerparameter is een `java.util.List` -instantie en de uitvoerwaarde een array is van `com.adobe.edc.server.spi.esrp.InvitedUserProviderResult` instanties.
 
@@ -203,7 +203,7 @@ Het volgende `component.xml` wordt gebruikt voor de uitnodigen externe gebruiker
 
 ## De uitnodigen van externe gebruikers-handler in een pakket plaatsen {#packaging-invite-external-users-handler}
 
-Als u de uitnodigen van externe gebruikers-handler wilt implementeren in AEM Forms, moet u uw Java-project in een JAR-bestand plaatsen. U moet ervoor zorgen dat de externe JAR-bestanden waarvan de bedrijfslogica van de uitnodigen van externe gebruikers afhankelijk is, zoals de `edc-server-spi.jar` en `adobe-rightsmanagement-client.jar` worden ook opgenomen in het JAR-bestand. Het XML-bestand van de component moet ook aanwezig zijn. De `component.xml` bestand en externe JAR-bestanden moeten zich in de hoofdmap van het JAR-bestand bevinden.
+Als u de uitnodigen van externe gebruikers-handler wilt implementeren in AEM Forms, moet u uw Java-project in een JAR-bestand plaatsen. Zorg ervoor dat de externe JAR-bestanden waarvan de bedrijfslogica van de uitnodigen van externe gebruikers afhankelijk is, zoals de `edc-server-spi.jar` en `adobe-rightsmanagement-client.jar` worden ook opgenomen in het JAR-bestand. Het XML-bestand van de component moet ook aanwezig zijn. De `component.xml` bestand en externe JAR-bestanden moeten zich in de hoofdmap van het JAR-bestand bevinden.
 
 >[!NOTE]
 >
@@ -215,7 +215,7 @@ In de volgende afbeelding ziet u de inhoud van het Java-project die is verpakt i
 
 A. Externe JAR-bestanden vereist door component B. JAVA-bestand
 
-U moet de uitnodigen externe gebruikers-handler verpakken in een JAR-bestand. In het vorige diagram worden .JAVA-bestanden weergegeven. Nadat de bestanden in een JAR-bestand zijn verpakt, moeten ook de bijbehorende .CLASS-bestanden worden opgegeven. Zonder de .CLASS dossiers, werkt de vergunningsmanager niet.
+Plaats de uitnodigen van externe gebruikers-handler in een JAR-bestand. In het vorige diagram worden .JAVA-bestanden weergegeven. Nadat de bestanden in een JAR-bestand zijn verpakt, moeten ook de bijbehorende .CLASS-bestanden worden opgegeven. Zonder de .CLASS dossiers, werkt de vergunningsmanager niet.
 
 >[!NOTE]
 >

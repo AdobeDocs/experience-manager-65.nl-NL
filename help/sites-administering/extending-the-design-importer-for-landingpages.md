@@ -7,9 +7,9 @@ topic-tags: personalization
 content-type: reference
 docset: aem65
 exl-id: 1b8c6075-13c6-4277-b726-8dea7991efec
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '3495'
+source-wordcount: '3443'
 ht-degree: 0%
 
 ---
@@ -58,10 +58,10 @@ Openingspagina — Cheat Sheet
 
 Een voorbeeldlay-out van de ZIP is als volgt:
 
-* /index.html -> HTML-bestand van bestemmingspagina
-* /css -> om toe te voegen aan de CSS-clientlib
-* /img -> alle afbeeldingen en middelen
-* /js -> om toe te voegen aan de JS clientlib
+* /index.html > HTML-bestand van bestemmingspagina
+* /css > aan toe te voegen in CSS clientlib
+* /img > alle afbeeldingen en elementen
+* /js > om in JS clientlib toe te voegen
 
 De indeling is gebaseerd op de schermindeling met aanbevolen werkwijzen van HTML5 Boilerplate. Lees meer op [https://html5boilerplate.com/](https://html5boilerplate.com/)
 
@@ -156,8 +156,8 @@ Als u de bovenstaande markering opneemt in de HTML, gaat u als volgt te werk:
 
 Een tekst met een lijst toevoegen:
 
-* 1st
-* 2nd
+* 1e
+* 2de
 
 die in de redacteur RTE kunnen uitgeven:
 
@@ -300,7 +300,7 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde zi
 >
 >Als u een klikdoorgehaalde grafische verbinding wilt tot stand brengen, moet u een ankermarkering en de beeldmarkering in div met verpakken `data-cq-component="clickthroughgraphicallink"` kenmerk.
 >
->Bijvoorbeeld, `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
+>Bijvoorbeeld: `<div data-cq-component="clickthroughlink"> <a href="https://myURLhere/"><img src="image source here"></a> </div>`
 >
 >Andere manieren om een afbeelding aan een ankertag te koppelen met CSS worden niet ondersteund. De volgende markering werkt bijvoorbeeld niet:
 >
@@ -450,7 +450,7 @@ Stel dat u een component hebt waarnaar u in uw HTML wilt verwijzen met het kenme
 
 Het pad in de data-cq-component moet het resourceType van de component zijn.
 
-### Best practices voor {#best-practices}
+### Aanbevolen procedures {#best-practices}
 
 Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor componentconversie tijdens het importeren.
 

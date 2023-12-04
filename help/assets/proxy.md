@@ -4,9 +4,9 @@ description: Een proxy is een [!DNL Experience Manager] instantie die proxyworke
 contentOwner: AG
 role: Admin, Architect
 exl-id: 42fff236-b4e1-4f42-922c-97da32a933cf
-source-git-commit: 38f0496d9340fbcf383a2d39dba8efcbdcd20c6f
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '824'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 
    Zie als voorbeeld `IDSJob.IDS_EXTENDSCRIPT_JOB` voor de IDS-proxyworker.
 
-1. De externe stap wordt gebruikt om de gebeurtenis te activeren en dan te wachten tot dat wordt gebeëindigd; dit wordt gedaan door op identiteitskaart te pollen. U moet uw eigen stap ontwikkelen om nieuwe functionaliteit uit te voeren.
+1. De externe stap wordt gebruikt om de gebeurtenis te activeren en dan te wachten tot dat wordt gebeëindigd; dit wordt gedaan door op identiteitskaart te pollen. Ontwikkel uw eigen stap om nieuwe functionaliteit uit te voeren.
 
    Een `WorkflowExternalProcess`, dan gebruik de API JobService en uw baanonderwerp om een baangebeurtenis voor te bereiden en het te verzenden naar JobService (een dienst OSGi).
 

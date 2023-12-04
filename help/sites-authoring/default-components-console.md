@@ -1,19 +1,19 @@
 ---
-title: Onderdelenconsole
+title: Componentenconsole
 description: De console van Componenten laat u door alle componenten doorbladeren die voor uw instantie worden bepaald en zeer belangrijke informatie voor elke component bekijken.
 exl-id: d79107b9-dfa4-4e80-870e-0b7ea72f0bc7
-source-git-commit: eaffc71c23c18d26ec5cbb2bbb7524790c4826fe
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
 source-wordcount: '280'
-ht-degree: 20%
+ht-degree: 15%
 
 ---
 
-# Onderdelenconsole{#components-console}
+# Componentenconsole{#components-console}
 
 De console van Componenten laat u door alle componenten doorbladeren die voor uw instantie worden bepaald en zeer belangrijke informatie voor elke component bekijken.
 
-U kunt deze openen via **Gereedschappen ->** **Algemeen ->** **Componenten**. In de console zijn de kaart- en de lijstweergave beschikbaar. Omdat er geen boomstructuur voor componenten is, is de kolomweergave niet beschikbaar.
+Het kan worden benaderd van **Gereedschappen >** **Algemeen >** **Componenten**. In de console zijn de kaart- en de lijstweergave beschikbaar. Omdat er geen boomstructuur voor componenten is, is de kolomweergave niet beschikbaar.
 
 ![screen-shot_2019-03-05at113145](assets/screen-shot_2019-03-05at113145.png)
 
@@ -29,7 +29,7 @@ Met het pictogram **Alleen content** (linksboven) kunt u het deelvenster **Zoeke
 
 ### Componentdetails {#component-details}
 
-Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste bron of klikt u op deze. Drie tabbladen bieden:
+Klik op de gewenste bron om details over een specifieke component weer te geven. Drie tabbladen bieden:
 
 * **Eigenschappen**
 

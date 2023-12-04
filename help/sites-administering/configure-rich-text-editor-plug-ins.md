@@ -3,9 +3,9 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer hoe u de insteekmodules van de Adobe Experience Manager Rich Text Editor configureert voor het inschakelen van afzonderlijke functies.
 contentOwner: AG
 exl-id: 6bfd6caa-a68a-40ba-9826-4ba02cd1dbfb
-source-git-commit: 49688c1e64038ff5fde617e52e1c14878e3191e5
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '4380'
+source-wordcount: '4376'
 ht-degree: 0%
 
 ---
@@ -191,7 +191,7 @@ Een voorbeeld van een geldige waarde `htmlPasteRules` de structuur is hieronder 
 
 ## Tekststijlen configureren {#textstyles}
 
-Auteurs kunnen stijlen toepassen om de weergave van een deel van de tekst te wijzigen. De stijlen zijn gebaseerd op CSS-klassen die u vooraf definieert in uw CSS-stijlpagina. Stileerde inhoud staat in `span` -tags gebruiken `class` kenmerk dat naar de CSS-klasse moet verwijzen. Bijvoorbeeld, `<span class=monospaced>Monospaced Text Here</span>`.
+Auteurs kunnen stijlen toepassen om de weergave van een deel van de tekst te wijzigen. De stijlen zijn gebaseerd op CSS-klassen die u vooraf definieert in uw CSS-stijlpagina. Stileerde inhoud staat in `span` -tags gebruiken `class` kenmerk dat naar de CSS-klasse moet verwijzen. Bijvoorbeeld: `<span class=monospaced>Monospaced Text Here</span>`.
 
 Wanneer de plug-in Stijlen voor de eerste keer is ingeschakeld, zijn er geen standaardstijlen beschikbaar. De pop-uplijst is leeg. Ga als volgt te werk om de auteurs stijlen te voorzien:
 
@@ -587,7 +587,7 @@ Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en
 >
 De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Als u spellingcontrole wilt uitvoeren, klikt u op [!UICONTROL Spellchecker] op de werkbalk. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
 >
-Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
+Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Klik nogmaals op de knop Spellingcontrole om de spellingcontrole uit te voeren.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 

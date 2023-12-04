@@ -6,9 +6,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.5/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 exl-id: 49e0b3f6-7ac7-4417-9c31-cc3d3c2305f3
-source-git-commit: 941e5d7574d31622f50e50e717c21cd2eba2e602
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '2685'
+source-wordcount: '2675'
 ht-degree: 0%
 
 ---
@@ -107,16 +107,16 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 
 #### De titel, beschrijving en het pictogram wijzigen {#change-the-title-description-and-icon}
 
-1. Klik of tik op Apps op de rail.
+1. Klik op Apps op de rail.
 1. Selecteer de toepassing die u wilt configureren en klik op het pictogram Pagina-eigenschappen weergeven.
 
    ![Het pictogram Pagina-eigenschappen weergeven dat wordt aangegeven met de letter I in een cirkel.](do-not-localize/chlimage_1-8.png)
 
-1. Als u eigenschapswaarden wilt wijzigen, klikt of tikt u op het pictogram Bewerken.
+1. Klik op het pictogram Bewerken om eigenschapswaarden te wijzigen.
 
    ![Het pictogram Bewerken dat wordt aangegeven door een potlood.](do-not-localize/chlimage_1-9.png)
 
-1. Configureer de eigenschappen Standaard en Geavanceerd en klik of tik op het pictogram Gereed.
+1. Configureer de eigenschappen Standaard en Geavanceerd en klik op het pictogram Gereed.
 
    ![Het pictogram Done dat wordt aangeduid door een vinkje.](do-not-localize/chlimage_1-10.png)
 
@@ -127,11 +127,11 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 
    ![Het pictogram Toepassingseigenschappen weergeven dat wordt aangegeven met de letter I in een cirkel.](do-not-localize/chlimage_1-11.png)
 
-1. Als u eigenschapswaarden wilt wijzigen, klikt of tikt u op het pictogram Bewerken.
+1. Klik op het pictogram Bewerken om eigenschapswaarden te wijzigen.
 
    ![Het pictogram Bewerken dat wordt aangegeven door een potlood.](do-not-localize/chlimage_1-12.png)
 
-1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Samenstellen en Analyse en klik of tik op het pictogram Gereed.
+1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Samenstellen en Analyse en klik vervolgens op het pictogram Gereed.
 
    ![Het pictogram Done dat wordt aangeduid door een vinkje.](do-not-localize/chlimage_1-13.png)
 
@@ -139,8 +139,8 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 
 Nadat u de mobiele toepassing hebt gemaakt, voegt u inhoud toe die wordt gebruikt als de interface van de toepassing.
 
-1. Klik of tik op Apps op de rail.
-1. Klik of tik op de toepassing en klik of tik op Engels.
+1. Klik op Apps op de rail.
+1. Klik op de toepassing en vervolgens op Engels.
 1. Bewerk de startpagina of voeg naar wens onderliggende pagina&#39;s toe.
 
 ### Inhoud verplaatsen naar mobiele toepassingen {#moving-content-to-mobile-applications}
@@ -160,8 +160,8 @@ Met Content Sync wordt ook bijgehouden wanneer de updates plaatsvinden. Met deze
 
 Voer de volgende procedure uit op de instantie waar u het cachegeheugen wilt bijwerken. Als uw toepassing bijvoorbeeld updates vraagt van de instantie publish, voert u de procedure uit op de instantie publish.
 
-1. Klik of tik op Apps op de rail en klik of tik op uw toepassing.
-1. Selecteer de welkomstpagina en klik of tik op het pictogram Cache bijwerken.
+1. Klik op Apps (Apps) in de track en klik vervolgens op uw toepassing.
+1. Selecteer de welkomstpagina en klik op het pictogram Cache bijwerken.
 
    ![Het pictogram Cache bijwerken dat wordt aangegeven door een gestreepte streepte streepjeslijn met daarop een recyclingsymbool.](do-not-localize/chlimage_1-14.png)
 
@@ -188,7 +188,7 @@ Stappen voor het maken van een app op basis van een toepassingssjabloon:
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
-1. Klik op Next.
+1. Klik op Volgende.
 1. Geef een app-id en -titel op, maar u wilt mogelijk ook een naam en een beschrijving opnemen.
 
    1. U kunt ook een PNG-bestand (ondersteunde PhoneGap-pictogramindeling) opgeven als pictogram door AEM elementen te bladeren.

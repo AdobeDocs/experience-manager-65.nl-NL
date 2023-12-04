@@ -7,9 +7,9 @@ topic-tags: integration
 content-type: reference
 docset: aem65
 exl-id: 0f3aaa0a-ccfb-4162-97a6-ee5485595d28
-source-git-commit: c7c32130a3257c14c98b52f9db31d80587d7993a
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1553'
+source-wordcount: '1530'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Als u AEM gebruikers wilt exporteren als leider van Salesforce:
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
-1. Selecteer de AEM gebruiker die u als lead wilt maken als de **Payload** voor deze workflow (home -> gebruikers). Zorg ervoor dat u het profielknooppunt van de gebruiker selecteert omdat het informatie bevat zoals **givenName**, en  **familyName**, die zijn toegewezen aan Salesforce lead **FirstName** en **LastName** velden.
+1. Selecteer de AEM gebruiker die u als lead wilt maken als de **Payload** voor deze workflow (home > users). Zorg ervoor dat u het profielknooppunt van de gebruiker selecteert omdat het informatie bevat zoals **givenName**, en  **familyName**, die zijn toegewezen aan Salesforce lead **FirstName** en **LastName** velden.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
 
@@ -127,7 +127,7 @@ Indien nodig, vorm het Salesforce.com werkschema van de Uitvoer om het aan de co
 
 De Salesforce.com-exportworkflow configureren:
 
-1. Ga naar `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
+1. Navigeren naar `http://localhost:4502/cf#/etc/workflow/models/salesforce-com-export.html.`
 
    ![chlimage_1-16](assets/chlimage_1-16.jpeg)
 

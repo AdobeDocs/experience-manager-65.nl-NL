@@ -7,9 +7,9 @@ content-type: reference
 topic-tags: deploying
 docset: aem65
 exl-id: baec7fc8-d48c-4bc6-b12b-4bf4eff695ea
-source-git-commit: 5e56441d2dc9b280547c91def8d971e7b1dfcfe3
+source-git-commit: 10b370fd8f855f71c6d7d791c272137bb5e04d97
 workflow-type: tm+mt
-source-wordcount: '1778'
+source-wordcount: '1759'
 ht-degree: 0%
 
 ---
@@ -177,7 +177,7 @@ Een reeks eerste vereisten en aanbevelingen is beschikbaar als u een plaatsing M
 1. De deskundigheid MongoDB moet binnen de partner of het klantenteam aanwezig zijn om vertrouwen in het kunnen een bestaande of nieuwe milieu te kunnen handhaven MongoDB;
 1. U kunt ervoor kiezen om de commerciële of open-sourceversie van MongoDB te implementeren (AEM ondersteunt beide), maar u moet rechtstreeks een MongoDB-onderhouds- en ondersteuningscontract aanschaffen bij MongoDB Inc;
 1. De algemene AEM en MongoDB-architecturen en -infrastructuren moeten duidelijk gedefinieerd en gevalideerd worden door een Adobe AEM architect;
-1. U moet het supportmodel voor AEM implementaties met MongoDB controleren.
+1. Controleer het supportmodel voor AEM implementaties die MongoDB bevatten.
 
 **Sterke aanbevelingen voor MongoDB-implementaties:**
 
